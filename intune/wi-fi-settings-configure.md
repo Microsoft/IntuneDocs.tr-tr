@@ -1,59 +1,56 @@
 ---
-title: Intune Wi-Fi ayarlarını yapılandırma
-titleSuffix: Microsoft Intune
-description: Microsoft Intune’u yönettiğiniz cihazlarda Wi-Fi bağlantılarını yapılandırmak için kullanmayı öğrenin.
+title: Microsoft Intune - Azure’da cihazlar için Wi-Fi profili oluşturma | Microsoft Docs
+description: Microsoft Intune’da Wi-Fi cihaz yapılandırma profilleri oluşturmak için adımları inceleyin. Android, Android Kurumsal, Android bilgi noktası, iOS, macOS, Windows 10 ve sonrası ve Windows Holographic for Business için profil oluşturun. Bu profilleri kullanarak sertifika kullanmak için bir Wi-Fi bağlantısı oluşturmak, EAP türü seçmek, kimlik doğrulama yöntemi seçmek, proxy etkinleştirmek gibi pek çok şey yapabilirsiniz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.openlocfilehash: 16273910220dae238e15910af0557dd8b73646b9
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505742"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425266"
 ---
-# <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune’da Wi-Fi ayarlarını yapılandırma
+# <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune’da cihazlarınız için Wi-Fi ayarları ekleme ve kullanma
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcılara kablosuz ağ ayarlarını atamak için kullanın. Bir Wi-Fi profili atadığınızda, kullanıcılarınız ağı kendileri yapılandırmadan kuruluşunuzun Wi-Fi ağına erişebilirler.
 
-Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcılara kablosuz ağ ayarlarını atamak için kullanın. Bir Wi-Fi profili atadığınızda, kullanıcılarınız ağı kendileri yapılandırmak zorunda kalmadan kurumsal Wi-Fi ağınıza erişir.
-
-Örneğin, Contoso Wi-Fi adlı yeni bir Wi-Fi ağı kurdunuz ve tüm iOS cihazlarını bu ağa bağlanacak şekilde ayarlamak istiyorsunuz. İşlem şöyledir:
+Örneğin Contoso Wi-Fi adında yeni bir Wi-Fi ağı kurdunuz. Ağı kurduktan sonra tüm iOS cihazları bu ağa bağlanacak şekilde ayarlamak isteyeceksiniz. İşlem şöyledir:
 
 1. Contoso Wi-Fi kablosuz ağına bağlanmak için gerekli ayarları içeren bir Wi-Fi profili oluşturun.
-2. Profili, iOS cihazlarının tüm kullanıcılarını içeren bir gruba atayın.
-3. Kullanıcılar yeni Contoso Wi-Fi ağını cihazlarındaki kablosuz ağ listesinde bulur ve bu ağa kolayca bağlanabilir.
+2. Profili, tüm iOS cihaz kullanıcılarını içeren bir gruba atayın.
+3. Kullanıcılar, yeni Contoso Wi-Fi ağını cihazlarındaki kablosuz ağ listesinde bulabilirler. Daha sonra seçtiğiniz kimlik doğrulama yöntemini kullanarak ağa bağlanabilirler.
+
+Bir Wi-Fi profili oluşturmak için bu makaledeki adımları kullanın. Daha sonra platformlara özgü ayarlar ve ayrıntılarla ilgili konuları gözden geçirin.
 
 ## <a name="supported-device-platforms"></a>Desteklenen cihaz platformları
 
 Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
 - Android 4 ve üzeri
-- Android iş profilleri
+- Android Kurumsal ve bilgi noktası
 - iOS 8.0 ve üzeri
 - macOS (Mac OS X 10.11 ve üzeri)
+- Windows 10 ve sonrası, Windows 10 Mobile ve Windows Holographic for Business
 
-Windows 8.1, Windows 10, Windows 10 Mobile ve Windows Holographic for Business çalıştıran cihazlarda, daha önce başka bir cihazdan dışarı aktarılmış olan bir Wi-Fi yapılandırmasını içeri aktarabilirsiniz.
+> [!NOTE]
+> Windows 8.1 çalıştıran cihazlarda daha önce başka bir cihazdan dışarı aktarılmış olan bir Wi-Fi yapılandırmasını içeri aktarabilirsiniz.
 
-Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapılandırmanın temellerini öğrenin ve sonra cihaza özgü bilgiler için her platformla ilgili olarak sağlanan konuları okuyun.
+## <a name="create-a-wi-fi-device-profile"></a>Bir Wi-Fi cihaz profili oluşturma
 
-## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Wi-Fi ayarlarını içeren bir cihaz profili oluşturma
+1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin. 
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+3. Wi-Fi profili için bir **Ad** ve **Açıklama** girin.
+4. Açılan **Platform** listesinde Wi-Fi ayarlarının uygulanacağı cihaz platformunu seçin. Seçenekleriniz şunlardır:
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
-2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
-3. Profiller bölmesinde **Profil oluştur**’u seçin.
-4. **Profil oluştur** bölmesinde, Wi-Fi profili için **Ad** ve **Açıklama** girin.
-5. **Platform** açılan listesinden, Wi-Fi ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, Wi-Fi ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
     - **Android**
     - **Android kurumsal**
     - **iOS**
@@ -62,19 +59,24 @@ Bu konu başlığı altında verilen bilgileri kullanarak Wi-Fi profilini yapıl
     - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
 
+5. **Profil Türü** olarak **Wi-Fi**’ı seçin.
 
-6. Apple ve Android cihazlarda, açılan **WiFi türü** listesinden **Temel** veya **Kurumsal** türlerinden birini seçin. Ağ adı ve SSID gibi temel özellikleri sağlamak için **Temel**’i kullanabilirsiniz. **Kurumsal**, Wi-Fi ağınız bu protokolü kullanıyorsa Genişletilebilir Kimlik Doğrulama Protokolü (EAP) gibi daha gelişmiş bilgileri sağlamanıza olanak tanır. 
+    - Bilgi noktası olarak çalışan **Android Kurumsal** cihazlarda **Yalnızca cihaz sahibi** > **Wi-Fi**’ı seçebilirsiniz.
+    - **Windows 8.1 ve sonrasında** **Wi-Fi içeri aktar**’ı seçebilirsiniz. Bu seçenek, Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
 
-   **Wi-Fi içeri aktarma** profili (Windows 8.1 ve üzeri için), Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
-1. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
-    - [Android ve Android iş profili ayarları](wi-fi-settings-android.md)
-    - [iOS ayarları](wi-fi-settings-ios.md)
-    - [macOS ayarları](wi-fi-settings-macos.md)
-    - [Windows 8.1 ve üzeri ayarları](wi-fi-settings-import-windows-8-1.md) (Windows Holographic for Business dahil)
-1. Bitirdiğinizde **Profil Oluştur** bölmesine dönün ve **Oluştur**’a basın.
+6. Bazı Wi-Fi ayarları platformdan platforma farklılık gösterir. Belirli bir platforma yönelik ayarları görmek için aşağıdakilerden birini seçin:
 
-Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
+    - [Android](wi-fi-settings-android.md)
+    - [Android Kurumsal ve bilgi noktası](wi-fi-settings-android-enterprise.md)
+    - [iOS](wi-fi-settings-ios.md)
+    - [macOS](wi-fi-settings-macos.md)
+    - [Windows 10 ve üzeri](wi-fi-settings-windows.md)
+    - [Windows 8.1 ve sonrası](wi-fi-settings-import-windows-8-1.md), Windows Holographic for Business dahil
+
+    Çoğu platformda **Temel** ve **Kurumsal** ayarları bulunur. **Temel**, ağ adı ve SSID gibi özellikler içerir. **Kurumsal**, Genişletilebilir Kimlik Doğrulama Protokolü (EAP) gibi daha gelişmiş bilgiler sağlamanıza olanak tanır.
+
+7. Wi-Fi ayarlarınızı ekledikten sonra **Profil oluştur** > **Oluştur**’u seçerek yapılandırma profilini ekleyin. Profil oluşturulur ve profiller listesinde (**Cihaz yapılandırması** > **Profiller**) gösterilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Devam edip bu profili gruplara atamak isterseniz, bkz. [Cihaz profillerini atama](device-profile-assign.md).
+Profil oluşturuldu ancak hiçbir şey yapmıyor. Daha sonra [bu profili atayın](device-profile-assign.md).

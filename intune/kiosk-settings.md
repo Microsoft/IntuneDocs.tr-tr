@@ -1,27 +1,31 @@
 ---
 title: Microsoft Intune'da Windows 10 için bilgi noktası ayarları - Azure | Microsoft Docs
-description: Windows 10 (ve üzeri) cihazlarınızı, Başlat menüsü özelleştirme, uygulama ekleme, görev çubuğu ve bir web tarayıcısı yapılandırma da dahil olmak üzere tekli uygulama veya çoklu uygulama bilgi noktaları olarak yapılandırın. Ayrıca, Microsoft Intune’da Windows Holographic for Business cihazlarını çoklu uygulama bilgi noktası olarak yapılandırın.
+description: Windows 10 (ve sonrası) cihazlarınızı başlat menüsü özelleştirme, uygulama ekleme, görev çubuğu ve bir web tarayıcısı yapılandırma da dahil olmak üzere tekli uygulama veya çoklu uygulama bilgi noktaları olarak yapılandırın. Ayrıca, Microsoft Intune’da Windows Holographic for Business cihazlarını çoklu uygulama bilgi noktası olarak yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/2/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 59e2ab4635c8488b99781ac123aacd0854967dc8
+ms.sourcegitcommit: c3ac9e5f6240223cb5dfed8b44c7425066d6ea86
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562876"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49380040"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune’da Windows 10 (ve sonrası) için bilgi noktası ayarları
 
-Bilgi noktası profilleri, Windows 10 cihazlarını bir veya birden çok uygulama çalıştıracak şekilde yapılandırmak için kullanılır. Bilgi noktası profilini oluştururken, bir başlat menüsünün gösterilip gösterilmeyeceğini, web tarayıcısının yüklenip yüklenmeyeceğini ve daha fazlasını belirtebilirsiniz.
+Windows 10 cihazlarda Intune kullanarak cihazları bilgi noktası olarak çalıştırabilirsiniz. Bilgi noktası, tek bir uygulama veya birkaç uygulama çalıştırabilir. Ayrıca bir başlat menüsü gösterme ve özelleştirme, Win32 uygulamaları dahil farklı uygulamalar ekleme, bir Web tarayıcısına belirli bir giriş sayfası ekleme gibi pek çok şey yapabilirsiniz. 
+
+Bu makaledeki adımları kullanarak Intune’da tekli uygulama bilgi noktası veya çoklu uygulama bilgi noktası oluşturabilirsiniz.
+
+Intune, cihaz başına bir bilgi noktası profili destekler. Tek bir cihazda birden fazla bilgi noktası profiline ihtiyacınız varsa bir [Özel OMA-URI](custom-settings-windows-10.md) kullanabilirsiniz.
 
 ## <a name="kiosk-settings"></a>Bilgi noktası ayarları
 
@@ -30,100 +34,161 @@ Bilgi noktası profilleri, Windows 10 cihazlarını bir veya birden çok uygulam
 3. Aşağıdaki özellikleri girin:
 
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-   - **Açıklama**: Profil için bir açıklama girin. Bu isteğe bağlıdır ancak önerilir.
+   - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
    - **Platform**: **Windows 10 ve üzeri**’ni seçin
    - **Profil türü**: **Bilgi Noktası (Önizleme)** seçin
-   
-4. **Bilgi Noktası** > **Ekle**’yi seçin.
-5. Bilgi noktanız için **Bilgi noktası yapılandırma adı**'nı girin. Bu ad bir uygulama grubunu, bu uygulamaların başlat menüsündeki düzenini ve bu bilgi noktası yapılandırmasına atanan kullanıcıları tanımlar.
-6. **Bilgi noktası modu**'nu seçin. **Bilgi noktası modu**, ilke tarafından desteklenen bilgi noktası modu türünü belirler. Şu seçenekler mevcuttur:
+
+4. Bir **bilgi noktası modu** seçin. **Bilgi noktası modu**, ilke tarafından desteklenen bilgi noktası modu türünü belirler. Şu seçenekler mevcuttur:
 
     - **Yapılandırılmamış** (varsayılan): İlke, bilgi noktası modunu etkinleştirmez.
-    - **Tekli tam ekran uygulama bilgi noktası**: Profil, cihazın tek bir kullanıcı hesabı gibi davranmasına olanak tanır ve cihazı tek bir Evrensel Windows Platformu (UWP) uygulamasını çalıştıracak şekilde kilitler. Dolayısıyla kullanıcı oturum açtığında belirli bir uygulama başlar. Bu mod ayrıca kullanıcının yeni uygulamalar açmasını veya çalışan uygulamayı değiştirmesini önler.
-    - **Çok uygulamalı bilgi noktası**: Profil, cihazın birden çok Evrensel Windows Platformu (UWP) uygulaması veya Win32 uygulaması çalıştırmasına olanak tanır. Ayrıca, farklı kullanıcı hesaplarına farklı uygulamalar atayabilirsiniz. Kullanıcılar yalnızca eklediğiniz uygulamaları kullanabilir. Çok uygulamalı bilgi noktasının veya sabit amaçlı cihazın yararı, yalnızca ihtiyaç duyulan uygulamalara erişim sağlayarak kullanıcılara anlaşılması kolay bir deneyim sunmasıdır. Bir de ihtiyaçları olmayan uygulamaları görünümden kaldırmasıdır.
+    - **Tekli uygulama, tam ekran bilgi noktası**: Cihaz tek kullanıcı hesabı olarak çalışır ve tek bir Mağaza uygulamasına kilitlenir. Dolayısıyla kullanıcı oturum açtığında belirli bir uygulama başlar. Bu mod ayrıca kullanıcının yeni uygulamalar açmasını veya çalışan uygulamayı değiştirmesini önler.
+    - **Çoklu uygulama bilgi noktası**: Cihaz, Uygulama Kullanıcı Modeli Kimliği (AUMID) kullanarak birden fazla Store, Win32 veya Windows uygulaması çalıştırır. Cihazda yalnızca eklediğiniz uygulamalar kullanılabilir.
 
-#### <a name="single-full-screen-app-kiosks"></a>Tekli tam ekran uygulama bilgi noktaları
-Aşağıdaki ayarları girin:
+        Çok uygulamalı bilgi noktasının veya sabit amaçlı cihazın yararı, yalnızca ihtiyaç duyulan uygulamalara erişim sağlayarak kullanıcılara anlaşılması kolay bir deneyim sunmasıdır. Bir de ihtiyaçları olmayan uygulamaları görünümden kaldırmasıdır.
 
-- **Evrensel Windows Platformu (UWP) uygulama tanımlayıcısı**: Bilgi noktası uygulamasının **Uygulama kullanıcı modeli kimliği (AUMID)** değerini girin. Veya [İstemci Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz yönetilen uygulamalardan birini seçin.
+## <a name="single-full-screen-app-kiosks"></a>Tekli tam ekran uygulama bilgi noktaları
+Tekli uygulama bilgi noktası modunu seçtiğinizde aşağıdaki ayarları girin:
 
-    Bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+- **Kullanıcı oturum açma türü**: Eklediğiniz uygulamalar, girdiğiniz kullanıcı hesabı olarak çalışır. Seçenekleriniz şunlardır:
 
-- **Kullanıcı hesabı türü**: Seçenekleriniz:
+  - **Otomatik oturum açma (Windows 10 sürüm 1803 ve sonrası)**: Kullanıcının oturum açmasını gerektirmeyen, genel kullanıma açık ortamlardaki bilgi noktaları içindir, konuk hesabına benzerdir. Bu ayar, [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) kullanır.
+  - **Yerel kullanıcı hesabı**: Cihaz için yerel kullanıcı hesabını girin. Girdiğiniz hesap, bilgi noktasında oturum açmak için kullanılır.
 
-  - **Otomatik oturum açma**: Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `AzureAD\user@contoso.com` biçimini kullanın.
-  - **Yerel kullanıcı hesabı**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgilerini girin. Azure AD etki alanlarına katılmış hesapları `domain\username@tenant.org` biçiminde girin.
+- **Uygulama türü**: **Mağaza uygulaması**’nı seçin.
 
-#### <a name="multi-app-kiosks"></a>Çoklu uygulama bilgi noktaları
-Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca kullanıcıların açabildiği uygulamalardır. 
+- **Bilgi noktası modunda çalışacak uygulama**: **Bir mağaza uygulaması ekle**’yi seçin ve listeden bir uygulama seçin.
 
-[Çoklu uygulama bilgi noktaları](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune), izin verilen uygulamaları ve diğer ayarları listeleyen bir bilgi noktası yapılandırması kullanır.
+    Listede hiç uygulama yok mu? [İstemci Uygulamaları](apps-add.md)’ndaki adımları kullanarak birkaç uygulama ekleyin.
 
-Aşağıdaki ayarları girin:
+    Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-- **Win32 uygulaması ekle**: Win32 uygulaması, geleneksel bir masaüstü uygulamasıdır. **Uygulama adı**'nı ve **Tanımlayıcı**'yı girin. **Tanımlayıcı**, yürütülebilir dosyanın cihaza göre tam yol adıdır.
-- **Yönetilen uygulama ekle**: [Intune'da İstemci Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz yönetilen uygulamalardan birini seçin.
-- **AUMID ile uygulama ekle**: [Uygulamanın AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) değerini girin (UWP uygulamaları).
-- **Görev Çubuğu**: Bilgi noktasında görev çubuğunu **Etkinleştirmeyi** (göster) veya **Yapılandırılmadı** (gizli) olarak bırakmayı seçebilirsiniz.
-- **Başlangıç menüsü düzeni**: Uygulamaların sırası da dahil olmak üzere Başlat menüsünde nasıl göründüğünü açıklayan bir XML dosyası girin. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout), rehberlik ve örnek XML sağlar.
+- **Bilgi noktası tarayıcı ayarları**: Bu ayarlar bilgi noktasındaki web tarayıcısı uygulamasını denetler. Store’dan [Bilgi noktası tarayıcı uygulamasını](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) edindiğinize, Intune’a [İstemci Uygulaması](apps-add.md) olarak eklediğinize ve uygulamayı bilgi noktası cihazlarına atadığınıza emin olun.
 
-  [Birden fazla uygulama çalıştıran bir Windows 10 bilgi noktası oluşturma](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file), XML dosyaları kullanma ve oluşturma hakkında daha fazla ayrıntı sağlar.
+  Aşağıdaki ayarları girin:
 
-- **Kullanıcı hesap türü**: Eklediğiniz uygulamaları kullanabilecek bir veya birden çok kullanıcı hesabı belirtin. Hesap oturum açtığında, yalnızca yapılandırmada tanımlanmış uygulamalar kullanılabilir durumda olur. Hesap, cihazda yerel bir hesap olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgileri olabilir.
+  - **Varsayılan giriş sayfası URL’si**: Bilgi noktası tarayıcısı açıldığında veya yeniden başlatıldığında gösterilen varsayılan URL’yi girin. Örneğin `http://bing.com` veya `http://www.contoso.com` girin.
 
-    Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `domain\user@tenant.com` biçimini kullanın.
+  - **Giriş düğmesi**: Bilgi noktası tarayıcısının giriş düğmesini **gösterin** veya **gizleyin**. Varsayılan olarak düğme gösterilmez.
 
-## <a name="kiosk-web-browser-settings"></a>Bilgi noktası web tarayıcısı ayarları
+  - **Gezinti düğmeleri**: İleri ve geri düğmelerini **gösterin** veya **gizleyin**. Varsayılan olarak gezinti düğmeleri gösterilmez.
 
-Bu ayarlar bilgi noktasındaki web tarayıcısı uygulamasını denetler. Bilgi noktasına web tarayıcısı uygulamasını [İstemci Uygulamalar](apps-add.md)'ı kullanarak dağıttığınızdan emin olun.
+  - **Oturumu sonlandır düğmesi**: Oturumu sonlandır düğmesini **gösterin** veya **gizleyin**. Gösterildiğinde, kullanıcı düğmeyi seçer ve uygulama oturumun sonlandırılmasını ister. Onaylandığında tarayıcı, tüm göz atma verilerini (çerezler, önbellek vb.) temizler ve daha sonra varsayılan URL’yi açar. Varsayılan olarak düğme gösterilmez.
 
-1. Aşağıdaki ayarları girin:
+  - **Boşta kalma süresi geçince tarayıcıyı yenile**: Bilgi noktası tarayıcısı temiz bir durumda yeniden başlatılana kadar geçecek oturum başka kalma süresini (1-1440 dakika) girin. Boşta kalma süresi, kullanıcının son etkileşiminden sonra geçen dakika sayısıdır. Varsayılan olarak değer boştur veya boşluktur ve bu, boşta kalma süresinin olmadığı anlamına gelir.
 
-    - **Varsayılan giriş sayfası URL'si**: Tarayıcı açıldığında veya yeniden başlatıldığında açılan bilgi noktası tarayıcısının varsayılan URL'sini girin.
+  - **İzin verilen web siteleri**: Belirli Web sitelerinin açılmasına izin vermek için bu ayarı kullanın. Diğer bir deyişle, cihazda web sitelerine erişimi kısıtlamak veya tamamen önlemek için bu özelliği kullanın. Örneğin `http://contoso.com*` adresindeki tüm Web sitelerinin açılmasına izin verebilirsiniz. Varsayılan olarak tüm Web sitelerine izin verilir.
 
-    - **Giriş düğmesi**: Bilgi noktası tarayıcısının giriş düğmesini gösterin (**İzin ver**) veya gizleyin (**Yapılandırılmadı**). Varsayılan olarak düğme Yapılandırılmamıştır.
+    Belirli Web sitelerine izin vermek için izin verilen Web siteleri listesini içeren bir .csv dosyasını karşıya yükleyin. Bir .csv dosyası eklemezseniz tüm Web sitelerine izin verilir. Intune, joker karakter olarak * (yıldız işareti) destekler.
 
-    - **Gezinti düğmesi**: İleri ve geri düğmelerini gösterin (**İzin ver**) veya gizleyin (**Yapılandırılmadı**). Varsayılan olarak gezinti düğmeleri Yapılandırılmamıştır.
+  Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-    - **Oturumu sonlandır düğmesi**: Oturumu sonlandır düğmesini gösterin (**İzin ver**) veya gizleyin (**Yapılandırılmadı**). Gösterildiğinde, kullanıcı düğmeyi seçer ve uygulama oturumun sonlandırılmasını ister. Onaylandığında tarayıcı, tüm göz atma verilerini (çerezler, önbellek, vb.) temizler ve varsayılan URL’ye geri gider. Varsayılan olarak düğme Yapılandırılmamıştır. 
+## <a name="multi-app-kiosks"></a>Çoklu uygulama bilgi noktaları
 
-    - **Kullanıcı, boşta kalma süresi sınırını aşarsa tarayıcıyı yenile**: Bilgi noktası tarayıcısının temiz bir durumda yeniden başlatılana kadar geçecek olan oturum başka kalma süresini dakika cinsinden girin. Değer tam sayı olarak 1-1440 dakikadır. Varsayılan değer boş veya boşluktur ve bu, boşta kalma süresinin olmadığı anlamına gelir.
+Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca kullanıcıların açabildiği uygulamalardır.
 
-    - **Engellenen web siteleri**: Engellenen web sitesi URL'lerinin listesi (joker karakter desteğiyle). Tarayıcının belirli siteleri açmasını engellemek için bu ayarı kullanın. Liste içeren bir .csv dosyasını da **içeri aktarabilirsiniz**. İsterseniz, eklediğiniz siteleri içeren bir .csv dosyası da oluşturabilirsiniz (**Dışarı Aktarma**).
+Çoklu uygulama bilgi noktası modunu seçtiğinizde aşağıdaki ayarları girin:
 
-    - **Web sitesi özel durumları**: Engellenen web sitesi URL'leri arasındaki özel durumları listeleyin (joker karakter desteğiyle). Tarayıcının belirli siteleri açmasına izin vermek için bu ayarı kullanın. Bu özel durumlar, engellenen URL'lerin bir alt kümesidir. Bir URL engellenen web sitesi listesinde ve web sitesi özel durum listesinde yer alıyorsa, özel durum geçerlilik kazanır.
+- **S modu cihazlarında Windows 10 hedefle**: Bilgi noktası profilinde mağaza uygulamaları ve AUMID uygulamalarına (Win32 uygulamaları harici) izin vermek için **Evet**’i seçin. Bilgi noktası profilinde mağaza uygulamaları, Win32 uygulamaları ve AUMID uygulamalarına izin vermek için **Hayır**’ı seçin. **Hayır**’ı seçtiğinizde bilgi noktası profili S modu cihazlarına dağıtılmaz.
 
-    Liste içeren bir .csv dosyasını da **içeri aktarabilirsiniz**. İsterseniz, eklediğiniz siteleri içeren bir .csv dosyası da oluşturabilirsiniz (**Dışarı Aktarma**).
+- **Kullanıcı oturum açma türü**: Eklediğiniz uygulamalar, girdiğiniz kullanıcı hesabı olarak çalışır. Seçenekleriniz şunlardır:
 
-2. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+  - **Otomatik oturum açma (Windows 10 sürüm 1803 ve sonrası)**: Kullanıcının oturum açmasını gerektirmeyen, genel kullanıma açık ortamlardaki bilgi noktaları içindir, konuk hesabına benzerdir. Bu ayar, [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) kullanır.
+  - **Yerel kullanıcı hesabı**: Cihaz için yerel kullanıcı hesabını **ekleyin**. Girdiğiniz hesap, bilgi noktasında oturum açmak için kullanılır.
+  - **Azure Active Directory kullanıcı veya grubu (Windows 10 sürüm 1803 ve sonrası)**: **Ekle**’ye tıklayarak listeden Azure Active Directory kullanıcıları veya grupları seçin. Birden çok kullanıcı ve grup seçebilirsiniz. Değişikliklerinizi kaydetmek için **Seçin**’e tıklayın.
+  - **HoloLens ziyaretçisi**: Ziyaretçi hesabı, [paylaşılan PC modu kavramlarında](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts) anlatıldığı gibi, kullanıcı kimlik bilgileri veya kimlik doğrulaması gerektirmeyen bir konuk hesabıdır.
+
+- **Uygulamalar**: Bilgi noktası cihazında çalışacak uygulamaları ekleyin. Birden fazla uygulama ekleyebileceğinizi unutmayın.
+
+  - **Mağaza uygulaması ekle**: İş İçin Microsoft Store’dan bir uygulama ekleyin. Listede hiç uygulama yoksa uygulama edilebilir ve [bunları Intune’a ekleyebilirsiniz](store-apps-windows.md). Örneğin Bilgi Noktası Tarayıcısı, Excel, OneNote gibi pek çok uygulama ekleyebilirsiniz.
+
+  - **Win32 uygulaması ekle**: Win32 uygulamaları, Visual Studio Code veya Google Chrome gibi geleneksel masaüstü uygulamalarıdır. Aşağıdaki özellikleri girin:
+
+    - **Uygulama adı**: Gereklidir. Uygulama için bir ad girin.
+    - **Yerel yol**: Gereklidir. Yürütülebilir dosyanın yolunu girin, örneğin `C:\Program Files (x86)\Microsoft VS Code\Code.exe` veya `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
+    - **Uygulama kullanıcı modeli kimliği (AUMID)**: İsteğe bağlıdır. Win32 uygulamasının uygulama kullanıcı modeli kimliğini (AUMID) girin. Bu ayar, masaüstündeki kutucuk başlangıç düzenini belirler. Bu kimliği almak için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Kutucuk boyutu**: Gereklidir. Küçük, Orta, Geniş veya Büyük uygulama kutucuk boyutu seçin.
+  
+  - **AUMID’e göre ekle**: Notepad veya Hesap Makinesi gibi gelen kutusu Windows uygulamalarını eklemek için bu seçeneği kullanın. Aşağıdaki özellikleri girin: 
+
+    - **Uygulama adı**: Gereklidir. Uygulama için bir ad girin.
+    - **Uygulama kullanıcı modeli kimliği (AUMID)**: Gereklidir. Windows uygulamasının uygulama kullanıcı modeli kimliğini (AUMID) girin. Bu kimliği almak için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Kutucuk boyutu**: Gereklidir. Küçük, Orta, Geniş veya Büyük uygulama kutucuk boyutu seçin.
+
+  > [!TIP]
+  > Tüm uygulamaları ekledikten sonra tıklayıp sürükleme yoluyla listedeki uygulamaların görüntülenme sırasını değiştirebilirsiniz.  
+
+  Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+- **Bilgi noktası tarayıcı ayarları**: Bu ayarlar bilgi noktasındaki web tarayıcısı uygulamasını denetler. Bilgi noktasına web tarayıcısı uygulamasını [İstemci Uygulamaları](apps-add.md)’nı kullanarak dağıttığınıza emin olun.
+
+  Aşağıdaki ayarları girin:
+
+  - **Varsayılan giriş sayfası URL’si**: Bilgi noktası tarayıcısı açıldığında veya yeniden başlatıldığında gösterilen varsayılan URL’yi girin. Örneğin `http://bing.com` veya `http://www.contoso.com` girin.
+
+  - **Giriş düğmesi**: Bilgi noktası tarayıcısının giriş düğmesini **gösterin** veya **gizleyin**. Varsayılan olarak düğme gösterilmez.
+
+  - **Gezinti düğmeleri**: İleri ve geri düğmelerini **gösterin** veya **gizleyin**. Varsayılan olarak gezinti düğmeleri gösterilmez.
+
+  - **Oturumu sonlandır düğmesi**: Oturumu sonlandır düğmesini **gösterin** veya **gizleyin**. Gösterildiğinde, kullanıcı düğmeyi seçer ve uygulama oturumun sonlandırılmasını ister. Onaylandığında tarayıcı, tüm göz atma verilerini (çerezler, önbellek vb.) temizler ve daha sonra varsayılan URL’yi açar. Varsayılan olarak düğme gösterilmez.
+
+  - **Boşta kalma süresi geçince tarayıcıyı yenile**: Bilgi noktası tarayıcısı temiz bir durumda yeniden başlatılana kadar geçecek oturum başka kalma süresini (1-1440 dakika) girin. Boşta kalma süresi, kullanıcının son etkileşiminden sonra geçen dakika sayısıdır. Varsayılan olarak değer boştur veya boşluktur ve bu, boşta kalma süresinin olmadığı anlamına gelir.
+
+  - **İzin verilen web siteleri**: Belirli Web sitelerinin açılmasına izin vermek için bu ayarı kullanın. Diğer bir deyişle, cihazda web sitelerine erişimi kısıtlamak veya tamamen önlemek için bu özelliği kullanın. Örneğin `contoso.com*` adresindeki tüm Web sitelerinin açılmasına izin verebilirsiniz. Varsayılan olarak tüm Web sitelerine izin verilir.
+
+    Belirli Web sitelerine izin vermek için izin verilen Web siteleri listesini içeren bir .csv dosyasını karşıya yükleyin. Bir .csv dosyası eklemezseniz tüm Web sitelerine izin verilir.
+
+  Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+- **Alternatif Başlangıç menüsü düzeni kullan**: Uygulamaların sırası da dahil olmak üzere Başlat menüsünde nasıl göründüğünü açıklayan bir XML dosyası girmek için **Evet**’i seçin. Başlangıç menünüzü daha fazla özelleştirmeniz gerekiyorsa bu seçeneği kullanın. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout), rehberlik ve örnek XML sağlar.
+
+- **Windows Görev Çubuğu**: Görev çubuğunu **Göstermeyi** veya **Gizlemeyi** seçin. Varsayılan olarak görev çubuğu gösterilmez.
 
 ## <a name="windows-holographic-for-business"></a>Windows 10 Holographic for Business
 
-Windows Holographic for Business cihazlarında, bu cihazları tekli uygulama bilgi noktası modunda veya çoklu uygulama bilgi noktası modunda çalıştırılacak şekilde yapılandırabilirsiniz. 
+Windows Holographic for Business cihazlarında, bu cihazları tekli uygulama bilgi noktası modunda veya çoklu uygulama bilgi noktası modunda çalıştırılacak şekilde yapılandırabilirsiniz. Bazı özellikler, Windows Holographic for Business’ta desteklenmez.
 
 #### <a name="single-full-screen-app-kiosks"></a>Tekli tam ekran uygulama bilgi noktaları
-Aşağıdaki ayarları girin:
+Tekli uygulama bilgi noktası modunu seçtiğinizde aşağıdaki ayarları girin:
 
-- **Evrensel Windows Platformu (UWP) uygulama tanımlayıcısı**: Bilgi noktası uygulamasının **Uygulama kullanıcı modeli kimliği (AUMID)** değerini girin. İsterseniz, [Mobil Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz mevcut yönetilen uygulamalardan birini seçin.
+- **Kullanıcı oturum açma türü**: Cihaz için yerel kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Microsoft Hesabı’nı (MSA) girmek için **Yerel kullanıcı hesabı**’nı seçin. **Otomatik oturum açma** kullanıcı hesabı türleri Windows Holographic for Business’da desteklenmez.
 
-    Kimliği almak için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+- **Uygulama türü**: **Mağaza uygulaması**’nı seçin.
 
-- **Kullanıcı hesabı türü**: Yerel (cihaz için) kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Microsoft Hesabı (MSA) hesap oturum açma bilgilerini girmek için **Yerel kullanıcı hesabı**’nı seçin. **Otomatik oturum açma** kullanıcı hesabı türleri Windows Holographic for Business’da desteklenmez.
+- **Bilgi noktası modunda çalışacak uygulama**: **Bir mağaza uygulaması ekle**’yi seçin ve listeden bir uygulama seçin.
+
+    Listede hiç uygulama yok mu? [İstemci Uygulamaları](apps-add.md)’ndaki adımları kullanarak birkaç uygulama ekleyin.
+
+    Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 #### <a name="multi-app-kiosks"></a>Çoklu uygulama bilgi noktaları
-Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca kullanıcıların açabildiği uygulamalardır.
+Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca kullanıcıların açabildiği uygulamalardır. Çoklu uygulama bilgi noktası modunu seçtiğinizde aşağıdaki ayarları girin:
 
-Aşağıdaki ayarları girin:
+- **S modu cihazlarında Windows 10’u hedefle**: **Hayır**’ı seçin. S modu, Windows Holographic for Business’ta desteklenmez.
 
-- **Yönetilen uygulama ekle**: [Intune'da İstemci Uygulamalar](apps-add.md)'ı kullanarak eklediğiniz yönetilen uygulamalardan birini seçin.
-- **AUMID ile uygulama ekle**: [Uygulamanın AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) değerini girin (UWP uygulamaları).
-- **Başlangıç menüsü düzeni**: Uygulamaların sırası da dahil olmak üzere Başlat menüsünde nasıl göründüğünü açıklayan bir XML dosyası girin. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens), Windows Holographic for Business cihazları için rehberlik sağlar ve belirli bir XML dosyası içerir.
-- **Kullanıcı hesap türü**: Eklediğiniz uygulamaları kullanabilecek bir veya birden çok kullanıcı hesabı belirtin. Desteklenen seçenekler şunlardır: 
+- **Kullanıcı oturum açma türü**: Eklediğiniz uygulamaları kullanabilecek bir veya birden çok kullanıcı hesabı belirtin. Seçenekleriniz şunlardır: 
+
+  - **Otomatik oturum açma**: Windows Holographic for Business’ta desteklenmez.
+  - **Yerel kullanıcı hesapları**: Cihaz için yerel kullanıcı hesabını **ekleyin**. Girdiğiniz hesap, bilgi noktasında oturum açmak için kullanılır.
+  - **Azure Active Directory kullanıcı veya grubu (Windows 10, sürüm 1803 ve sonrası)**: Cihazda oturum açmak için kullanıcı kimlik bilgilerini gerektirir. Listeden Azure Active Directory kullanıcılarını veya gruplarını seçmek için **Ekle**’yi seçin. Birden çok kullanıcı ve grup seçebilirsiniz. Değişikliklerinizi kaydetmek için **Seçin**’e tıklayın.
   - **HoloLens ziyaretçisi**: Ziyaretçi hesabı, [paylaşılan PC modu kavramlarında](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts) anlatıldığı gibi, kullanıcı kimlik bilgileri veya kimlik doğrulaması gerektirmeyen bir konuk hesabıdır.
-  - **Azure AD kullanıcıları**: Cihazda oturum açabilmek için kullanıcı kimlik bilgilerini gerektirir. `domain\user@tenant.com` biçimini kullanın.
-  - **Yerel Kullanıcı Hesapları**: Cihazda oturum açabilmek için kullanıcı kimlik bilgilerini gerektirir. 
 
-Hesap oturum açtığında, yalnızca yapılandırmada tanımlanmış uygulamalar kullanılabilir durumda olur.
+- **Uygulamalar**: Bilgi noktası cihazında çalışacak uygulamaları ekleyin. Birden fazla uygulama ekleyebileceğinizi unutmayın.
+
+  - **Store uygulamaları ekle**: [İstemci Uygulamaları](apps-add.md)’nı kullanarak eklediğiniz mevcut uygulamalardan birini seçin. Listede hiç uygulama yoksa uygulama edilebilir ve [bunları Intune’a ekleyebilirsiniz](store-apps-windows.md).
+  - **Win32 uygulaması ekle**: Windows Holographic for Business’ta desteklenmez.
+  - **AUMID’e göre ekle**: Gelen kutusu Windows uygulamalarını eklemek için bu seçeneği kullanın. Aşağıdaki özellikleri girin: 
+
+    - **Uygulama adı**: Gereklidir. Uygulama için bir ad girin.
+    - **Uygulama kullanıcı modeli kimliği (AUMID)**: Gereklidir. Windows uygulamasının uygulama kullanıcı modeli kimliğini (AUMID) girin. Bu kimliği almak için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Kutucuk boyutu**: Gereklidir. Küçük, Orta, Geniş veya Büyük uygulama kutucuk boyutu seçin.
+
+- **Bilgi noktası tarayıcı ayarları**: Windows Holographic for Business’ta desteklenmez.
+
+- **Alternatif Başlangıç menüsü düzeni kullan**: Uygulamaların sırası da dahil olmak üzere Başlat menüsünde nasıl göründüğünü açıklayan bir XML dosyası girmek için **Evet**’i seçin. Başlangıç menünüzü daha fazla özelleştirmeniz gerekiyorsa bu seçeneği kullanın. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens), Windows Holographic for Business cihazları için rehberlik sağlar ve belirli bir XML dosyası içerir.
+
+- **Windows Görev Çubuğu**: Windows Holographic for Business’ta desteklenmez.
+
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).

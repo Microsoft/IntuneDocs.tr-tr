@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune’da Android cihazları için Wi-Fi ayarlarını yapılandırma - Azure | Microsoft Docs
+title: Microsoft Intune - Azure - Android Kurumsal ve bilgi noktası cihazları için Wi-Fi ayarlarını yapılandırma | Microsoft Docs
 titleSuffix: ''
-description: Android için bir Wi-Fi cihaz yapılandırma profili oluşturun veya ekleyin. Microsoft Intune’da sertifika ekleme, EAP türü seçme ve bir kimlik doğrulama yöntemi seçme gibi farklı ayarları görün.
+description: Android Kurumsal ve Android Bilgi Noktası için bir Wi-Fi cihaz yapılandırma profili oluşturun veya ekleyin. Microsoft Intune’da sertifika ekleme, EAP türü seçme ve bir kimlik doğrulama yöntemi seçme gibi farklı ayarları inceleyin. Bilgi noktası cihazlarında ağınızın Önceden paylaşılan anahtarını da girin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,18 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7c0d11e7670134c6a2cd9ce2eb72714ba64aa03
+ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
 ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424994"
+ms.locfileid: "49431968"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune’da Android çalıştıran cihazlar için Wi-Fi ayarları ekleme
+# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Microsoft Intune’da Android Kurumsal ve Android Bilgi Noktası çalıştıran cihazlar için Wi-Fi ayarları ekleme
 
-Belirli Wi-Fi ayarları ile bir profil oluşturabilir ve ardından bu profili Android cihazlarınıza dağıtabilirsiniz. Microsoft Intune; ağınızda kimlik doğrulama, bir PKS veya SCEP sertifikası ekleme ve daha fazlası gibi pek çok özellik sunar.
-
-Bu Wi-Fi ayarları iki kategoriye ayrılır: Temel ayarlar ve Kurumsal düzeydeki ayarlar.
+Belirli Wi-Fi ayarları ile bir profil oluşturabilir ve ardından bu profili Android Kurumsal ve Android bilgi noktası cihazlarınıza dağıtabilirsiniz. Microsoft Intune; ağınızda kimlik doğrulama, bir önceden paylaşılan anahtar kullanma ve daha fazlası gibi pek çok özellik sunar.
 
 Bu makalede bu ayarlar açıklanır.
 
@@ -32,7 +30,25 @@ Bu makalede bu ayarlar açıklanır.
 
 [Cihaz profili oluşturma](device-profile-create.md).
 
-## <a name="basic-profile"></a>Temel profil
+## <a name="device-owner-only---kiosk"></a>Yalnızca cihaz sahibi - bilgi noktası
+
+Bir Android Kurumsal cihazı bilgi noktası olarak kullanıyorsanız bu seçeneği belirleyin.
+
+- **Ağ adı**: Bu Wi-Fi bağlantısı için bir ad girin. Bu değer, kullanıcıların cihazlarında kullanılabilir bağlantılar listesine göz attıklarında görecekleri addır.
+- **SSID**: **Hizmet kümesi tanımlayıcısının** kısaltması. Bu ayar, cihazların bağlandığı kablosuz ağın gerçek adıdır. Ancak bağlantıyı seçen kullanıcılar yalnızca yapılandırdığınız **ağ adını** görür.
+- **Otomatik olarak bağlan**: Cihaz alana girdiğinde bu ağa otomatik olarak bağlanmak için **Etkinleştir**’i seçin. Cihazların otomatik olarak bağlanmasını önlemek için **Devre dışı bırak**’ı seçin.
+- **Gizli ağ**: Cihazdaki kullanılabilir ağlar listesinde bu ağı gizlemek için **Etkinleştir**’i seçin. SSID yayınlanmaz. Cihazdaki kullanılabilir ağlar listesinde bu ağı göstermek için **Devre dışı bırak**’ı seçin.
+- **Wi-Fi türü**: Wi-Fi ağında kimlik doğrulamak için kullanılacak güvenlik protokolünü seçin. Seçenekleriniz şunlardır:
+
+  - **Açık (kimlik doğrulamasız)**: Bu seçeneği yalnızca ağ güvenlik altına alınmamış olduğunda kullanın.
+  - **WEP-Önceden paylaşılan anahtar**: **Önceden paylaşılan anahtar** olarak parolayı girin. Kuruluşunuzun ağı ayarlandığında veya yapılandırıldığında bir parola veya ağ anahtarı da yapılandırılır. PSK değeri için bu parolayı veya ağ anahtarını girin.
+  - **WPA-Önceden paylaşılan anahtar**: **Önceden paylaşılan anahtar** olarak parolayı girin. Kuruluşunuzun ağı ayarlandığında veya yapılandırıldığında bir parola veya ağ anahtarı da yapılandırılır. PSK değeri için bu parolayı veya ağ anahtarını girin.
+
+Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+## <a name="work-profile-only"></a>Yalnızca iş profili
+
+### <a name="basic-settings"></a>Temel ayarlar
 
 - **Wi-Fi türü**: **Temel**’i seçin.
 - **SSID**: **Hizmet kümesi tanımlayıcısının** kısaltması. Bu ayar, cihazların bağlandığı kablosuz ağın gerçek adıdır.
@@ -103,6 +119,5 @@ Profil oluşturuldu ancak hiçbir şey yapmıyor. Daha sonra [bu profili atayın
 
 ## <a name="more-resources"></a>Daha fazla kaynak
 
+- Android cihazlarda kullanılabilir ayarlar için [Android çalıştıran cihazlar için Wi-Fi ayarları](wi-fi-settings-android.md) bölümüne bakın.
 - Diğer platformlar dahil olmak üzere [Wi-Fi ayarlarına genel bakış](wi-fi-settings-configure.md).
-
-- Android Kurumsal veya Android bilgi noktası cihazları mı kullanıyorsunuz? Cevabınız evetse [Android Kurumsal ve Android Bilgi Noktası çalıştıran cihazlar için Wi-Fi ayarları ekleme](wi-fi-settings-android-enterprise.md) bölümüne bakın.

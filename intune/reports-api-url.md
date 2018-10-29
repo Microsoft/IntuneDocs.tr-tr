@@ -15,12 +15,12 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c6709d68ce4bf847be3eb5cd5ae427db6d11aba8
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: d552ec61d148d0489dc263405eac52448c10f9ef
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903599"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642918"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
 
@@ -71,7 +71,7 @@ Mevcut sürüm, aşağıdaki OData sorgu parametrelerini destekler: `$filter, $o
 ## <a name="filter-examples"></a>Filtre örnekleri
 
 > [!NOTE]
-> Filtre örneklerinde günün tarihinin 21/2/2018 olduğu varsayılır.
+> Filtre örneklerinde tarihin 21.2.2018 olduğu varsayılır.
 
 |                             Filtrele                             |           Performansı En İyi Duruma Getirme           |                                          Açıklama                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|

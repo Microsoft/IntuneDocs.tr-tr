@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058906"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425232"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -77,7 +77,7 @@ Intune Şirket Portalı uygulamasını Windows Phone ve Windows 10 Mobile cihazl
 
     -   WinPhoneCompanyPortal.ps1 – Windows Phone 8.1 cihazlarına dağıtılabilmesi amacıyla Şirket Portalı uygulama dosyasını imzalamak için kullanabileceğiniz bir PowerShell betiği.
 
-    Alternatif olarak, Windows Phone 8.1 Şirket Portalı (çevrimdışı lisanslı paket) uygulamasını veya Windows 10 Şirket Portalı’nı (çevrimdışı lisanslı paket) [İş İçin Microsoft Mağazası](http://businessstore.microsoft.com/)'ndan indirebilirsiniz. Şirket Portalı uygulamasının çevrimdışı lisansla alınması ve çevrimdışı kullanım için uygun paketin indirilmesi gerekir. Seçilen Windows 8 ve Windows Phone 8 platformu örnekleri, 8.1 yerine kullanılamaz. Bunun Intune’da nasıl yapılacağına ilişkin ayrıntılar için bkz. [İş için Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Alternatif olarak, Windows Phone 8.1 Şirket Portalı (çevrimdışı lisanslı paket) uygulamasını veya Windows 10 Şirket Portalı’nı (çevrimdışı lisanslı paket) [İş İçin Microsoft Mağazası](http://businessstore.microsoft.com/)'ndan indirebilirsiniz. Şirket Portalı uygulamasının çevrimdışı lisansla alınması ve çevrimdışı kullanım için uygun paketin indirilmesi gerekir. Seçilen Windows 8 ve Windows Phone 8 platformu örnekleri, 8.1 yerine kullanılamaz. Bunun Intune’da nasıl yapılacağına ilişkin ayrıntılar için bkz. [İş için Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme](windows-store-for-business.md).
 
 2.  **Windows Phone SDK’sını indirme** [Windows Phone SDK’sı 8.0’ı indirin] (http://go.microsoft.com/fwlink/?LinkId=615570)) ve SDK’yı bilgisayarınıza yükleyin. Bu SDK, bir uygulama kaydı belirteci oluşturmak için gereklidir.
 
@@ -119,7 +119,7 @@ Intune Şirket Portalı uygulamasını Windows Phone ve Windows 10 Mobile cihazl
 
     -   `-EnterpriseId` - Kuruluş kimliği. Bu bağımsız değişken veya ‘AetxPath’ sağlanmalıdır. Bu bağımsız değişken sağlanmazsa, AETX dosyasından kuruluş kimliği okunur. Örneğin, 1000000001
 
-6.  Windows Phone 8.1 Şirket Portalı (SSP.appx) uygulamasını dağıtın. Yönergeler için bkz. [Windows Phone iş kolu (LOB) uygulamaları ekleme](lob-apps-windows-phone.md) ([klasik portal](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
+6.  Windows Phone 8.1 Şirket Portalı (SSP.appx) uygulamasını dağıtın. Rehber için bkz. [Windows Phone iş kolu (LOB) uygulamaları ekleme](lob-apps-windows-phone.md).
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Symantec kurumsal kod imzalama sertifikasını yenileme
 
@@ -191,7 +191,7 @@ Uygulamanın bu şekilde nasıl imzalanıp dağıtılacağı aşağıda açıkla
 2. Windows 10 Şirket Portalı uygulamasını yukarıda açıklandığı biçimde İş İçin Microsoft Mağazası'ndan indirin.  
 3. Betik üst bilgisinde açıklanan giriş parametrelerini (ayıklanmış hali aşağıdadır) kullanıp betiği çalıştırarak Windows 10 Şirket Portalı uygulamasını imzalayın. Bağımlılıkların betiğe geçirilmesi gerekmez. Bunlar, yalnızca uygulama Intune Yönetici Konsolu’na yüklenirken gereklidir.
 
-|       Parametre       |                                                                    Description                                                                    |
+|       Parametre       |                                                                    Açıklama                                                                    |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | InputWin10AppxBundle  |                                             Kaynak appxbundle dosyasının bulunduğu yol.                                              |
 | OutputWin10AppxBundle |                                                  İmzalı appxbundle dosyası için çıkış yolu.                                                  |

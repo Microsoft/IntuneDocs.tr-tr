@@ -15,12 +15,12 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: efecd454c2e6ba8454cfd68291a96c6d4c8a2703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a7af46f0f9db0d849e3c75da36c5fe9354554107
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030268"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643119"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune için yardımlı telefon desteği ile iletişim kurun
 
@@ -76,7 +76,7 @@ Bu konu, Microsoft Intune yardımlı telefon desteği için iletişim bilgilerin
 |    Liechtenstein    |                        7 x 24                         |  Pazartesi - Cuma<br /><br />09:00 – 17:00 CET (UTC +1)   | Fransızca&#42;, Almanca&#42;, İtalyanca&#42;, İngilizce |                                                                       0800000300                                                                       |                                                                          0227614114                                                                           |
 |      Litvanya      |                        7 x 24                         |  Pazartesi - Cuma<br /><br />09:00 – 17:00 EET (UTC +2)   |            Litvanca&#42;, İngilizce             |                                                                       880030960                                                                        |                                                                                                                                                               |
 |     Lüksemburg      |                        7 x 24                         |  Pazartesi - Cuma<br /><br />09:00 – 17:00 CET (UTC +1)   |        Fransızca&#42;, Almanca&#42;, İngilizce        |                                                                        80021094                                                                        |                                                                           24871510                                                                            |
-|      Makedonya Cumhuriyeti      |                        7 x 24                         |  Pazartesi - Cuma<br /><br />09:00 – 17:00 CET (UTC +1)   |                     İngilizce                     |                  0800-94288<br /><br />1. Adım: Telefon numarasını tuşlayın<br /><br />2. Adım: 001 girin<br /><br />3. Adım: 877-663-5075 girin                   |                                                                                                                                                               |
+|      Makedonya      |                        7 x 24                         |  Pazartesi - Cuma<br /><br />09:00 – 17:00 CET (UTC +1)   |                     İngilizce                     |                  0800-94288<br /><br />1. Adım: Telefon numarasını tuşlayın<br /><br />2. Adım: 001 girin<br /><br />3. Adım: 877-663-5075 girin                   |                                                                                                                                                               |
 |      Malezya       |                        7 x 24                         |  Pazartesi - Cuma<br /><br />09:00 – 18:00 MYT (UTC +8)   |        Bahasa dili&#42;, Malayca&#42;, İngilizce         |                                                                      1800 220030                                                                       |                                                                           362074606                                                                           |
 |        Malta        |                        7 x 24                         |  Pazartesi - Cuma<br /><br />09:00 – 17:00 CET (UTC +1)   |                     İngilizce                     |                                                                       0 80062231                                                                       |                                                                                                                                                               |
 |       Meksika        |                        7 x 24                         |  Pazartesi - Cuma<br /><br />09:00 – 17:00 CST (UTC -6)   |              İspanyolca&#42;, İngilizce              |                                                                     01-8005630605                                                                      |                                                                          55473856567                                                                          |

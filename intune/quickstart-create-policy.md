@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581787"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391561"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>Hızlı Başlangıç: Windows 10 cihazları için cihaz uyumluluk ilkesi ekleme
 Windows için Intune cihaz uyumluluk ilkesi, Windows cihazlarının uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar. Bu ilkeleri şirket kaynaklarına erişime izin vermek veya bunu engellemek için [koşullu erişim](https://docs.microsoft.com/intune/conditional-access) ile kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz.
@@ -53,4 +53,4 @@ Artık gerekli olmadığında, ilkeyi silin. Bunu yapmak için **Windows 10 uyum
 Bu hızlı başlangıçta basit bir cihaz uyumluluk ilkesi oluşturdunuz ve atadınız. İlkeyi alacak bir Windows 10 cihazı kaydetmek için otomatik kaydı kurmak üzere hızlı başlangıca geçin. 
  
 > [!div class="nextstepaction"]
-> [Intune'da otomatik kayıt kurma](quickstart-setup-auto-enrollment.md)
+> [Cihaz parola uzunluğunu ayarlama](quickstart-set-password-length-android.md)

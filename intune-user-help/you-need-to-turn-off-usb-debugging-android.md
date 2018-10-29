@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: c377c2a4e9640443eb38a85b2e1806c9d9e64a82
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88ceb6516857f34f56e59dd6ba377e045467f6bd
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147202"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643017"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>USB hata ayıklamayı kapatmanız gerekir
 
@@ -28,6 +28,6 @@ _USB hata ayıklama_, Android uygulamalarının geliştiriciler için daha kolay
 
 **Ayarlar** > **Geliştirici seçenekleri**’ne gidip **USB hata ayıklama** seçeneğini kapatarak USB hata ayıklamayı devre dışı bırakabilirsiniz.
 
-**USB hata ayıklama** devre dışı bıraktıktan sonra birkaç dakika bekleyin. Ardından, şirket veya okul verilerine erişmek üzere Android cihazınızı her zamanki şekilde kullanabilirsiniz.
+**USB hata ayıklama** devre dışı bıraktıktan sonra birkaç dakika bekleyin. Ardından, şirket veya okul verilerine erişmek üzere Android cihazınızı her zamanki gibi kullanabilirsiniz.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.
