@@ -15,12 +15,12 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2774a8172eb389742a3fdbf805717b6bc134b43
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866380"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357113"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
@@ -32,7 +32,7 @@ Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bu
 - Windows 10 istemcisi: 
     - Azure Active Directory’ye (AAD) veya Hibrit Azure Active Directory’ye katılmış olmalıdır
     - Intune’da kayıtlı (MDM ile yönetilen) olmalıdır
-- Windows uygulaması boyutu, genel önizlemede 8 GB ile sınırlıdır 
+- Windows uygulaması boyutu, genel önizlemede uygulama başına 2 GB ile sınırlıdır 
 
 > [!NOTE]
 > Şu anda Windows 10 sürüm 1607 Pro ve Education sürümlerini test ediyoruz ve geri bildirimlerinizi bekliyoruz.
@@ -51,7 +51,7 @@ Win32 uygulamalarını önceden işlemek için [Microsoft Intune Win32 Uygulama 
 |    `-h`     |    Yardım    |
 |    `-c <setup_folder>`     |    Tüm kurulum dosyaları için kurulum klasörü.    |
 |   ` -s <setup_file>`     |    Kurulum dosyası (*setup.exe* veya *setup.msi* gibi).    |
-|    `-o <output_file>`     |    Oluşturulan *.intunewin* dosyası için çıkış klasörü.    |
+|    `-o <output_folder>`     |    Oluşturulan *.intunewin* dosyası için çıkış klasörü.    |
 |    `-q`       |    Sessiz mod    |
 
 ### <a name="example-commands"></a>Örnek komutlar

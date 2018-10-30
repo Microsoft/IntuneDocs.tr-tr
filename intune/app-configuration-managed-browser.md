@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863170"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357096"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Microsoft Intune ile korumalı tarayıcı ilkelerini kullanarak İnternet erişimini yönetme  
+# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak İnternet erişimini yönetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -36,26 +36,37 @@ Intune ilkesiyle korunan bir tarayıcı (Microsoft Edge veya Intune Managed Brow
 
 ## <a name="getting-started"></a>Başlarken
 
+Microsoft Edge ve Intune Managed Browser, kuruluşunuzda kullanılmak üzere sizin ve son kullanıcılarınızın genel uygulama mağazalarından indirebileceği web tarayıcısı uygulamalarıdır. 
+
+Tarayıcı ilkeleri için işletim sistemi gereksinimleri:
+- Android 4 ve üzeri veya
+- iOS 8.0 ve üzeri.
+
+Android ve iOS’un daha eski sürümleri Managed Browser'ı kullanmaya devam edebilecek, ancak uygulamanın yeni sürümlerini yükleyemeyecek ve uygulamanın tüm özelliklerine erişemeyecektir. Bu cihazları desteklenen işletim sistemi sürümüne güncelleştirmenizi öneririz.
+
+>[!NOTE]
+>Managed Browser, Güvenli Yuva Katmanı sürüm 3 (SSLv3) şifreleme protokolünü desteklemez.
+
+
+## <a name="application-protection-policies-for-protected-browsers"></a>Korumalı tarayıcılar için uygulama koruma ilkeleri
+
+Edge ve Managed Browser'ın Intune SDK’sıyla tümleştirmesi olduğundan, bunlara aşağıdakiler de dahil olmak üzere uygulama koruma ilkeleri de uygulayabilirsiniz:
+- Kesme, kopyalama ve yapıştırma işlemlerini denetleme.
+- Ekran yakalamayı önleme.
+- Şirket bağlantılarının yalnızca yönetilen uygulama ve tarayıcılarda açılmasını sağlama.
+
+Ayrıntılar için bkz. [Uygulama koruma ilkesi nedir?](app-protection-policy.md)
+
 Bu ayarları şunlara uygulayabilirsiniz:
 
 - Intune’a kayıtlı cihazlar
 - Başka bir MDM ürününe kayıtlı cihazlar
 - Yönetilmeyen cihazlar
 
-Kullanıcılar Managed Browser’ı uygulama mağazasından yüklemişse ve Intune tarafından yönetilmiyorsa Microsoft MyApps sitesi üzerinden Çoklu Oturum Açma desteğiyle birlikte temel bir web tarayıcısı olarak kullanılabilir. Kullanıcılar, sağlanan tüm SaaS uygulamalarını görebilecekleri MyApps sitesine doğrudan yönlendirilir.
+>[!NOTE]
+>Kullanıcılar Managed Browser’ı uygulama mağazasından yüklemişse ve Intune tarafından yönetilmiyorsa Microsoft MyApps sitesi üzerinden Çoklu Oturum Açma desteğiyle birlikte temel bir web tarayıcısı olarak kullanılabilir. Kullanıcılar, sağlanan tüm SaaS uygulamalarını görebilecekleri MyApps sitesine doğrudan yönlendirilir.
 Managed Browser veya Edge, Intune tarafından yönetilmediğinde Intune tarafından yönetilen diğer uygulamaların verilerine erişemez. 
 
-Managed Browser, Güvenli Yuva Katmanı sürüm 3 (SSLv3) şifreleme protokolünü desteklemez.
-
-Aşağıdaki cihaz türleri için korumalı tarayıcı ilkeleri oluşturabilirsiniz:
-
--   Android 4 ve üzeri çalıştıran cihazlar
-
--   iOS 10.0 ve üzerini çalıştıran cihazlar
-
->[!IMPORTANT]
->Android ve iOS’un daha eski sürümleri Managed Browser'ı kullanmaya devam edebilecek, ancak uygulamanın yeni sürümlerini yükleyemeyecek ve uygulamanın tüm özelliklerine erişemeyecektir. Bu cihazları desteklenen işletim sistemi sürümüne güncelleştirmenizi öneririz.
-    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Korumalı tarayıcılar için Koşullu Erişim
 
@@ -82,7 +93,7 @@ Azure AD bağlantılı web uygulamalarının mobil platformlarda Intune Managed 
 8. **Atamalar** bölümünde **Kullanıcılar ve gruplar**’ı seçin ve ardından bu ilkeyi atayacağınız kullanıcı veya grupları seçin. 
 
     > [!NOTE]
-    > Kullanıcıların da Intune Uygulama Koruma ilkesi ile hedeflenmesi gerekir. Intune Uygulama Koruma ilkeleri oluşturma hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md)
+    > Kullanıcıların, Uygulama Yapılandırma ilkelerini alabilmeleri için ayrıca Intune Uygulama Koruması ilkesi ile hedeflenmeleri gerekir. Intune Uygulama Koruma ilkeleri oluşturma hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md)
 
 9. **Atamalar** bölümünde **Bulut uygulamaları**’nı seçerek bu ilkeyle hangi uygulamaları koruyacağınızı seçin.
 
@@ -101,6 +112,9 @@ SSO, cihazınızın iOS'de Microsoft Authenticator, Android'de Intune Şirket Po
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Korumalı tarayıcı uygulama yapılandırması oluşturma
 
+>[!IMPORTANT]
+>Uygulama yapılandırmalarının uygulanması için kullanıcının korumalı tarayıcısının veya cihazdaki başka bir uygulamanın [Intune uygulama koruma ilkesi]( app-protection-policy.md) tarafından yönetiliyor olması gerekir
+
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3.  Yönetim listesinin **İstemci uygulamaları** dikey penceresinde **Uygulama yapılandırma ilkeleri**’ni seçin.
@@ -114,8 +128,6 @@ SSO, cihazınızın iOS'de Microsoft Authenticator, Android'de Intune Şirket Po
 11. **Yapılandırma ilkesi ekle** dikey penceresinde, **Ekle**’yi seçin.
 12. Yeni yapılandırma oluşturulur ve **Uygulama yapılandırması** dikey penceresinde görüntülenir.
 
->[!IMPORTANT]
->Mevcut durumda Managed Browser, otomatik kayıt kullanmaktadır. Uygulama yapılandırmalarının uygulanması için cihazdaki başka bir uygulamanın Intune uygulama koruma ilkeleri tarafından yönetiliyor olması gerekir.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Oluşturduğunuz yapılandırma ayarlarını atama
 
@@ -275,18 +287,7 @@ Uygulama günlüklerinde saklanan ayarların bir listesi için, bkz. [Yönetilen
 ### <a name="turn-off-usage-data"></a>Kullanım verilerini kapatma
 Microsoft, ürün ve hizmetlerini geliştirmek için Managed Browser’ın performansı ve kullanımı hakkında otomatik olarak anonim bilgiler toplar. Kullanıcılar cihazlarındaki **Kullanım Verileri** ayarını kullanarak veri toplamayı kapatabilir. Bu verilerin toplanması üzerinde denetiminiz yoktur.
 
-
 -   iOS cihazlarda, kullanıcıların ziyaret ettiği süresi dolmuş veya güvenilmeyen sertifikalara sahip web siteleri açılmaz.
--   Managed Browser, kullanıcıların cihazlarındaki yerleşik tarayıcı için yaptığı ayarları kullanmaz. Managed Browser bu ayarlara erişemez.
-
--   Managed Browser ile ilişkilendirilmiş bir uygulama koruma ilkesinde **Erişim için basit PIN gerektir** veya **Erişim için şirket kimlik bilgilerini gerektir** seçeneklerini yapılandırırsanız ve bir kullanıcı kimlik doğrulama sayfasındaki yardım bağlantısını seçerse bu kullanıcı, ilkede bir engelleme listesine eklenmiş olup olmamasından bağımsız olarak herhangi bir İnternet sitesine gözatabilir.
-
--   Managed Browser sitelere yalnızca doğrudan erişildiğinde erişimi engelleyebilir. Siteye erişmek için ara hizmetler (örneğin bir çeviri hizmeti) kullanıldığında erişimi engellemez.
-
--   Kimlik doğrulama ve Intune belgelerine erişime izin vermek için **&#42;.microsoft.com** izin ver/engelle liste ayarlarının dışında tutulur. Adrese her zaman izin verilir.
-
-### <a name="turn-off-usage-data"></a>Kullanım verilerini kapatma
-Microsoft, ürün ve hizmetlerini geliştirmek için Managed Browser’ın performansı ve kullanımı hakkında otomatik olarak anonim bilgiler toplar. Kullanıcılar cihazlarındaki **Kullanım Verileri** ayarını kullanarak veri toplamayı kapatabilir. Bu verilerin toplanması üzerinde denetiminiz yoktur.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

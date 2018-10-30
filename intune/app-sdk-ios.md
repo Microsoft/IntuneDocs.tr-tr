@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: b707fcae4af332b13d10e343a84ace801c88c2fd
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 4b7a759b574b44a07499597e89627f70b99e5496
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866431"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643102"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -144,7 +144,9 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
 5. Uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Sonraki adıma ilerlemeden önce değişikliklerinizi kaydettiğinizden emin olun.
 
-6. Uygulamanızın Info.plist dosyasını yapılandırmayı bitirmek için, [SDK deposuna](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) eklenen IntuneMAMConfigurator aracını kullanın. Aracın 3 parametresi vardır:
+6. Uygulamanız zaten FaceID kullanmıyorsa [NSFaceIDUsageDescription info.plist anahtarının](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) bir varsayılan iletiyle yapılandırıldığından emin olun. Bu, iOS’un kullanıcıya uygulamanın FaceID’yi nasıl kullanacağını bildirmesi için gereklidir. Intune uygulama koruma ilke ayarları, bir BT yöneticisi tarafından yapılandırılırsa FaceID’nin uygulama erişimi için bir yöntem olarak kullanılmasına imkan verir.
+
+7. Uygulamanızın Info.plist dosyasını yapılandırmayı bitirmek için, [SDK deposuna](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) eklenen IntuneMAMConfigurator aracını kullanın. Araç, üç parametreye sahiptir:
 
    |Özellik|Kullanımı|
    |---------------|--------------------------------|
@@ -153,9 +155,6 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
    |- o |  (İsteğe bağlı) `<Path to the output plist>` |
 
 '-o' parametresi belirtilmezse, giriş dosyası yerinde değiştirilir. Araç bir kez etkilidir ve uygulamanın Info.plist dosyası her değiştirildiğinde veya yetkilendirmeler yapıldığında yeniden çalıştırılmalıdır. En son sürümde Info.plist yapılandırma gereksinimlerinin değişmesi durumunda, Intune SDK'sını güncelleştirirken de aracın en son sürümünü indirmeniz ve çalıştırmanız gerekir.
-
-> [!NOTE]
-> Uygulamanız zaten FaceID kullanmıyorsa `NSFaceIDUsageDescription` info.plist anahtarının bir varsayılan iletiyle yapılandırıldığından emin olun. Bu, iOS’un kullanıcıya uygulamanın FaceID’yi nasıl kullanacağını bildirmesi için gereklidir. Intune uygulama koruma ilke ayarları, bir BT yöneticisi tarafından yapılandırılırsa FaceID’nin uygulama erişimi için bir yöntem olarak kullanılmasına imkan verir.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Kimlik Doğrulama Kitaplığı'nı (ADAL) Yapılandırma
 

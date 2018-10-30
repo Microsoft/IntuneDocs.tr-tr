@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307415"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -45,7 +45,7 @@ Yıldız işareti (*) ile işaretlenmiş alanlar zorunludur.
 | Alan adı | Uzunluk üst sınırı | Daha fazla bilgi |
 |---|---|---|
 |**Şirket adı**| 40 | Bu ad Şirket Portalı'nın başlığı olarak görüntülenir ve Intune kullanıcı deneyiminin her yerinde metin olarak gösterilir. |
-| **Gizlilik bildirimi URL'si** |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz.  `<https://www.contoso.com>` biçiminde geçerli bir URL girmeniz gerekir. |
+| **Gizlilik bildirimi URL'si** |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz.   `<https://www.contoso.com>` biçiminde geçerli bir URL girmeniz gerekir. |
 
 ## <a name="support-information"></a>Destek bilgileri      
 Çalışanınıza Intune'la ilgili sorularında bir başvuru noktası sağlamak için şirketinizin destek bilgilerini girin.       
@@ -61,7 +61,7 @@ Yıldız işareti (*) ile işaretlenmiş alanlar zorunludur.
 
 
 ## <a name="company-branding-customization"></a>Şirket markasıyla özelleştirme       
-Şirket Portalınızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz.     
+Şirket Portalınızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz. Markalama yapılandırmasının önizlemesini bir test cihazı olmadan görüntülemek için [portal.manage.microsoft.com](https://portal.manage.microsoft.com) adresine gidebilirsiniz. Karşıya yüklediğiniz logonun e-posta şablonlarında kullanılacağını unutmayın.      
 
 ### <a name="theme-color"></a>Tema rengi
 Şirket Portalı’na bir tema rengi uygulayın. Standart renklerden birini seçin veya özel renk için alt basamaklı onaltılık kodu girin.
@@ -82,3 +82,30 @@ Intune kullanıcı deneyiminin her yerinde görünür olmasını sağlamak için
 |**Logonun yanında şirket adını göster**| Girdiğiniz şirket adını karşıya yüklenen logonun yanında görüntülemek için bu seçeneği kullanın. |
 
 Değişikliklerinizi kaydettikten sonra, yapılandırmalarınızın nasıl görüneceğine bakmak için, dikey pencerenin üst kısmındaki **Intune Web Portalı'nda ayarlarınızın önizlemesini görüntüleyin** öğesini seçebilirsiniz.
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows Şirket Portalı klavye kısayolları
+
+Son kullanıcılar, Windows Şirket Portalı’nda klavye kısayollarını (hızlandırıcılar) kullanarak gezinti, uygulama ve cihaz eylemlerini tetikleyebilirler.
+
+Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir.
+
+| Alan | Açıklama | Klavye kısayolu |
+|:------------------:|:--------------:|:-----------------:|
+| Gezinti menüsü | Gezinme | Alt+M |
+|  | Giriş | Alt+H |
+|  | Tüm uygulamalar | Alt+A |
+|  | Yüklenen uygulamalar | Alt+I |
+|  | Geri bildirim gönder | Alt+F |
+|  | Profilim | Alt+U |
+|  | Ayarlar | Alt+T |
+| Giriş - Cihaz kutucuğu | Yeniden Adlandır | F2 |
+|  | Kaldır | Ctrl+D veya Delete |
+|  | Erişimi denetle | Ctrl+M veya F9 |
+| Cihaz ayrıntıları | Yeniden Adlandır | F2 |
+|  | Kaldır | Ctrl+D veya Delete |
+|  | Erişimi denetle | Ctrl+M veya F9 |
+| Uygulama ayrıntıları | Yükle | Ctrl+I |
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme](store-apps-company-portal-app.md)

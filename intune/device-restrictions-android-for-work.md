@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6a633b73856b5f9f50ffe0b9993713b888b969b
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 2a521eadea2bcf118b4b0c643802fd8478f7ace2
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652113"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune'da Work cihaz kısıtlama ayarları
 
@@ -124,6 +124,7 @@ Bu makalede, Android Kurumsal profilli cihazlar için yapılandırabileceğiniz 
     > [!IMPORTANT]
     >  - Seçtiğiniz VPN istemcisinin cihaza yüklenmesi ve cihazın uygulama başına VPN iş profillerini desteklemesi gerekir. Aksi takdirde bir hata oluşur. 
     >  - VPN istemci uygulamasını yine de **Yönetilen Google Play Mağazası**'nda onaylamanız, uygulamayı Intune ile eşitlemeniz ve cihaza dağıtmanız gerekir. Bu yapıldıktan sonra uygulama kullanıcının iş profiline yüklenir.
+    >  - Android 3.0.3 için F5 Access ile uygulama başına VPN kullanırken karşılaşabileceğiniz bazı bilinen sorunlar vardır. Daha fazla bilgi için bkz. [Android 3.0.3 için F5 Access’e yönelik F5 sürüm notları](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android).
 
 - **Kilitleme modu**: Tüm ağ trafiğini VPN tünelini kullanmaya zorlamak için **Etkinleştir**'i seçin. VPN'e bir bağlantı oluşturulmazsa, cihazın ağ erişimi olmaz.
 
