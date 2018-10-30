@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 85d0df026e49b36e148620ce2d06b4afaaf98ace
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 50fc19410b280e984c8dc3abe620baad7c3267de
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827896"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959545"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Şirket kaynaklarınıza iOS cihaz erişimi ayarlayın
 
@@ -60,34 +60,34 @@ Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamas
 
 |Gördüğünüz|Açıklama|
 |---|---|
-|![Şirket Portalı oturum açma ekranında, alttaki “Oturum aç” düğmesi.](./media/ios-01-cp-enroll-1802.png)|Şirket Portalı uygulamasını açın ve **Oturum Aç**’a dokunun.|
-|![Azure AD oturum açma istemi.](./media/ios-02-cp-enroll-1802.png)|Şirket e-posta adresinizi girin ardından **İleri**’ye dokunun.|
-|![Azure AD parola istemi.](./media/ios-03-cp-enroll-1802.png)|Parolanızı girin ve ardından **Oturum Aç**’a dokunun.|
-|![Şirket kaynaklarının açılış ekranı yükleniyor.](./media/ios-04-cp-enroll-1802.png)|Bu ekranın yüklenmesini bekleyin.|
-|![Hüküm ve koşullar sayfası.](./media/ios-05-cp-enroll-1802.png)|Hüküm ve Koşulları okuyun ve **Hepsini Kabul Edin**.|
-|![Şirket erişim ekranını ayarla. Hem yönetim hem de ayarlar şu anda çözülmeye ihtiyaç duyuyor.](./media/ios-06-cp-enroll-1802.png)|Cihazınızın şirket kaynaklarına erişebilmesi sürecini başlatmak için **Başlat**’a dokunun. Bunu şimdi yapamazsan, işlemi **Erteleyebilirsin**, ancak e-posta,belge ve daha pek çok şey alamayacağınız anlamına gelir.|
-|![Şirket ekranım ne görebilir?](./media/ios-07-cp-enroll-1802.png)|En altındaki bağlantıya dokunarak şirketinizin neyi görebileceği hakkında **daha fazla bilgi edinebilirsiniz**. Aksi takdirde **Devam**’a dokunun.|
-|![Sırada ne var ekranı.](./media/ios-08-cp-enroll-1802.png)|Bu ekran, kurulumda olan biten hakkında sizi bilgilendirir. Safari'de, Ayarlar uygulamasında ve Şirket Portalı uygulamasında zaman geçireceksiniz. **Devam**’a dokunun.|
-|![Sırada ne var?'a dokunduktan sonra yükleme ekranı.](./media/ios-09-cp-enroll-1802.png)|Bu ekranın yüklenmesini bekleyin.|
+|![Şirket Portalı oturum açma ekranında, alttaki “Oturum aç” düğmesi.](./media/ios-01-cp-enroll-1802.PNG)|Şirket Portalı uygulamasını açın ve **Oturum Aç**’a dokunun.|
+|![Azure AD oturum açma istemi.](./media/ios-02-cp-enroll-1802.PNG)|Şirket e-posta adresinizi girin ardından **İleri**’ye dokunun.|
+|![Azure AD parola istemi.](./media/ios-03-cp-enroll-1802.PNG)|Parolanızı girin ve ardından **Oturum Aç**’a dokunun.|
+|![Şirket kaynaklarının açılış ekranı yükleniyor.](./media/ios-04-cp-enroll-1802.PNG)|Bu ekranın yüklenmesini bekleyin.|
+|![Hüküm ve koşullar sayfası.](./media/ios-05-cp-enroll-1802.PNG)|Hüküm ve Koşulları okuyun ve **Hepsini Kabul Edin**.|
+|![Şirket erişim ekranını ayarla. Hem yönetim hem de ayarlar şu anda çözülmeye ihtiyaç duyuyor.](./media/ios-06-cp-enroll-1802.PNG)|Cihazınızın şirket kaynaklarına erişebilmesi sürecini başlatmak için **Başlat**’a dokunun. Bunu şimdi yapamazsan, işlemi **Erteleyebilirsin**, ancak e-posta,belge ve daha pek çok şey alamayacağınız anlamına gelir.|
+|![Şirket ekranım ne görebilir?](./media/ios-07-cp-enroll-1802.PNG)|En altındaki bağlantıya dokunarak şirketinizin neyi görebileceği hakkında **daha fazla bilgi edinebilirsiniz**. Aksi takdirde **Devam**’a dokunun.|
+|![Sırada ne var ekranı.](./media/ios-08-cp-enroll-1802.PNG)|Bu ekran, kurulumda olan biten hakkında sizi bilgilendirir. Safari'de, Ayarlar uygulamasında ve Şirket Portalı uygulamasında zaman geçireceksiniz. **Devam**’a dokunun.|
+|![Sırada ne var?'a dokunduktan sonra yükleme ekranı.](./media/ios-09-cp-enroll-1802.PNG)|Bu ekranın yüklenmesini bekleyin.|
 |![Kaydolmak için Safari'ye geçildi.](./media/ios-cp-sent-to-safari-1808.png)|Cihazınız için yönetim bilgisi almak için Safari'ye gönderildiniz.|
-|![Sistem, Ayarlar uygulaması açılmasını isteyecektir.](./media/ios-8-cp-enroll-1711.png)|Yapılandırma profilini indirmek için Ayarlar uygulamasını açmasına **izin ver**’e dokunun. Şirketinizin şirket bilgilerinizi cihazınızda yönetmesine izin vermek için bunu yükleyin.|
-|![Cihaz ayarlarındaki Profili Yükle ekranının görüntüsü.](./media/ios-9-cp-enroll-1711.png)|**Yükle**’ye dokunun.|
-|![Profil kalıcı iletişim kutusunu ekranın alt kısmında yükleme.](./media/ios-10-cp-enroll-1711.png)|**Yükle**’ye dokunun.|
-|![Profili yükleme ekranını yüklüyor.](./media/ios-11-cp-enroll-1711.png)|Bu ekranın yüklenmesini bekleyin.|
-|![Profil yönetimi uyarı ekranı.](./media/ios-12-cp-enroll-1711.png)|Apple tarafından yazılan bu uyarı, yönetilen bir cihazda hangi tür işlemlerin yapılabileceği hakkında daha fazla bilgi sağlar. [Şirketinizin hangi bilgileri görebileceği](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) hakkında daha fazla bilgi.|
-|![Uzaktan yönetim güveni hakkında soran sistem istemi.](./media/ios-13-cp-enroll-1711.png)|Şirketinizin cihazınızdaki kurumsal bilgileri ve ayarları yönetmesine izin vermek için **Güven** 'e dokunun.|
-|![Profil sonlandırma yükleme ekranını yüklüyor.](./media/ios-14-cp-enroll-1711.png)|Bu ekranın yüklenmesini bekleyin.|
-|![Profil ekranı yükledi.](./media/ios-15-cp-enroll-1711.png)|Profiliniz yüklendi ve cihazınızın kurumsal bilgileri ve ayarları yönetilmeye çok daha yakın.|
-|![Kaydolmak için Safari'ye geçildi.](./media/ios-16-cp-enroll-1711.png)|Cihazınızla ilgili yönetim bilgilerini almak için Safari'ye geri gönderildiniz. |
-|![Şirket portalını açmak için sistem istemi.](./media/ios-17-cp-enroll-1711.png)|**Aç**’a dokunun.|
-|![Şirket kaynaklarının ekranı yükleniyor.](./media/ios-21-cp-enroll-1802.png)|Bu ekranın yüklenmesini bekleyin.|
-|![Şirket portalı uygulamasında cihaz kategorisini seçin.](./media/ios-22-cp-enroll-1802.png)|Cihazınız için en uygun kategoriyi seçin. Bu genellikle cihazın sahibi kiminle veya genelde nerede bulunduğuyla ilgilidir.|
-|![Kategori seçildi.](./media/ios-23-cp-enroll-1802.png)||
-|![Cihaz yönetimi başarılı; şimdi ayarları güncelleştirmeniz gerekir.](./media/ios-24-cp-enroll-1802.png)|Cihazınızı başarıyla yönettiniz. Şirketinizin güncelleştirme yapması gerekebileceği, şifrenizin uzunluğu gibi muhtemel ayarlar hala mevcut. Devam etmek için **Devam**’a dokunun.|
-|![Cihaz ayarları onaylanıyor.](./media/ios-25-cp-enroll-1802.png)|Şirket Portalı, ayarlarınızdan herhangi birinin güncelleştirilmesinin gerekip gerekmediğini kontrol edecektir.|
-|![Ayarlar denetimi, yanlış bir işletim sistemi sürümü ile tamamlandı](./media/ios-26-cp-enroll-1802.png)|Şirket Portalı, ayarlarınızla ilgili tüm sorunları nasıl çözebileceğiniz konusunda yönergeler verecektir. Sorunlarını giderme tamamladıktan sonra **Ayarları Denetle**’ye dokunun.|
-|![Cihaz ayarları yükleme ekranını onaylama](./media/ios-27-cp-enroll-1802.png)|Cihazınız ayarlarınızın şirket kaynaklarına erişecek kadar güvenli olup olmadığını kontrol edecektir.|
-|![Başarıyla kaydedilmiş ve güncelleştirilmiş ayarlar](./media/ios-28-cp-enroll-1802.png)|Tebrikler! Cihazınız artık Intune'a kaydedilmiştir.|
+|![Sistem, Ayarlar uygulaması açılmasını isteyecektir.](./media/ios-8-cp-enroll-1711.PNG)|Yapılandırma profilini indirmek için Ayarlar uygulamasını açmasına **izin ver**’e dokunun. Şirketinizin şirket bilgilerinizi cihazınızda yönetmesine izin vermek için bunu yükleyin.|
+|![Cihaz ayarlarındaki Profili Yükle ekranının görüntüsü.](./media/ios-9-cp-enroll-1711.PNG)|**Yükle**’ye dokunun.|
+|![Profil kalıcı iletişim kutusunu ekranın alt kısmında yükleme.](./media/ios-10-cp-enroll-1711.PNG)|**Yükle**’ye dokunun.|
+|![Profili yükleme ekranını yüklüyor.](./media/ios-11-cp-enroll-1711.PNG)|Bu ekranın yüklenmesini bekleyin.|
+|![Profil yönetimi uyarı ekranı.](./media/ios-12-cp-enroll-1711.PNG)|Apple tarafından yazılan bu uyarı, yönetilen bir cihazda hangi tür işlemlerin yapılabileceği hakkında daha fazla bilgi sağlar. [Şirketinizin hangi bilgileri görebileceği](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) hakkında daha fazla bilgi.|
+|![Uzaktan yönetim güveni hakkında soran sistem istemi.](./media/ios-13-cp-enroll-1711.PNG)|Şirketinizin cihazınızdaki kurumsal bilgileri ve ayarları yönetmesine izin vermek için **Güven** 'e dokunun.|
+|![Profil sonlandırma yükleme ekranını yüklüyor.](./media/ios-14-cp-enroll-1711.PNG)|Bu ekranın yüklenmesini bekleyin.|
+|![Profil ekranı yükledi.](./media/ios-15-cp-enroll-1711.PNG)|Profiliniz yüklendi ve cihazınızın kurumsal bilgileri ve ayarları yönetilmeye çok daha yakın.|
+|![Kaydolmak için Safari'ye geçildi.](./media/ios-16-cp-enroll-1711.PNG)|Cihazınızla ilgili yönetim bilgilerini almak için Safari'ye geri gönderildiniz. |
+|![Şirket portalını açmak için sistem istemi.](./media/ios-17-cp-enroll-1711.PNG)|**Aç**’a dokunun.|
+|![Şirket kaynaklarının ekranı yükleniyor.](./media/ios-21-cp-enroll-1802.PNG)|Bu ekranın yüklenmesini bekleyin.|
+|![Şirket portalı uygulamasında cihaz kategorisini seçin.](./media/ios-22-cp-enroll-1802.PNG)|Cihazınız için en uygun kategoriyi seçin. Bu genellikle cihazın sahibi kiminle veya genelde nerede bulunduğuyla ilgilidir.|
+|![Kategori seçildi.](./media/ios-23-cp-enroll-1802.PNG)||
+|![Cihaz yönetimi başarılı; şimdi ayarları güncelleştirmeniz gerekir.](./media/ios-24-cp-enroll-1802.PNG)|Cihazınızı başarıyla yönettiniz. Şirketinizin güncelleştirme yapması gerekebileceği, şifrenizin uzunluğu gibi muhtemel ayarlar hala mevcut. Devam etmek için **Devam**’a dokunun.|
+|![Cihaz ayarları onaylanıyor.](./media/ios-25-cp-enroll-1802.PNG)|Şirket Portalı, ayarlarınızdan herhangi birinin güncelleştirilmesinin gerekip gerekmediğini kontrol edecektir.|
+|![Ayarlar denetimi, yanlış bir işletim sistemi sürümü ile tamamlandı](./media/ios-26-cp-enroll-1802.PNG)|Şirket Portalı, ayarlarınızla ilgili tüm sorunları nasıl çözebileceğiniz konusunda yönergeler verecektir. Sorunlarını giderme tamamladıktan sonra **Ayarları Denetle**’ye dokunun.|
+|![Cihaz ayarları yükleme ekranını onaylama](./media/ios-27-cp-enroll-1802.PNG)|Cihazınız ayarlarınızın şirket kaynaklarına erişecek kadar güvenli olup olmadığını kontrol edecektir.|
+|![Başarıyla kaydedilmiş ve güncelleştirilmiş ayarlar](./media/ios-28-cp-enroll-1802.PNG)|Tebrikler! Cihazınız artık Intune'a kaydedilmiştir.|
 
 > [!Note]
 > Cihazınız tamamen yönetilmeden önce birkaç adım daha kaldı. [Telekom gider yönetimini kullanarak cihazınızı kaydetme](enroll-your-device-with-telecom-expense-management-ios.md) hakkında daha fazla bilgi edinin. Kuruluşunuz Apple’ın Aygıt Kayıt Programı’nı kullanıyorsa [buraya](enroll-your-device-dep-ios.md) tıklayarak daha fazla bilgi edinebilirsiniz.
