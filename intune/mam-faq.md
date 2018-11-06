@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643034"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225463"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -181,6 +181,15 @@ Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını 
 Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya erişmeyi denediklerinde, erişim için Intune uygulama koruma ilkeleri bu cihazlara belirli bir sırada uygulanır. Genel olarak öncelik temizlemededir; ardından engelleme, sonra da kapatılabilen uyarı gelir. Örneğin, belirli bir kullanıcı/uygulama için uygunsa, kullanıcıyı iOS sürümünü güncelleştirmesi için uyaran en düşük iOS işletim sistemi ayarı, kullanıcının erişimini engelleyen en düşük iOS işletim sistemi ayarından sonra uygulanacaktır. Dolayısıyla, BT yöneticisinin en düşük iOS işletim sistemi olarak 11.0.0.0 ve en düşük iOS işletim sistemi (yalnızca Uyarı) olarak 11.1.0.0'ı ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın işletim sistemi iOS 10 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük iOS işletim sistemi sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir.
 
 Farklı ayar türleriyle ilgilenirken, Intune Uygulama SDK'sı sürümü gereksinimi önceliklidir ve bunu uygulama sürümü gereksinimi ile iOS işletim sistemi sürümü gereksinimi izler. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir. Intune Uygulama SDK'sı sürümü gereksiniminin, yalnızca temel engelleme senaryoları için Intune ürün ekibinin yönlendirmesiyle yapılandırılmasını öneririz.
+
+## <a name="app-protection-policies---policy-refresh"></a>Uygulama koruma ilkeleri - İlke yenileme
+- Uygulamalar her 30 dakikada bir APP hizmetine iade eder.
+- 30 dakikalık eşik, bir zamanlayıcıyı temel alır.
+    - Uygulama 30. dakikada etkinse 30. dakikada iade eder.
+    - Uygulama 30. dakikada uyku durumundaysa bir sonraki 30. dakikada iade eder.
+- Kullanıcıya atanmış bir ilke yoksa iade her sekiz saatte bir gerçekleşir.
+- Atanmış bir Intune lisansı yoksa iade 24 saatte bir gerçekleşir.
+
 
 ## <a name="see-also"></a>Ayrıca bkz:
 - [Intune planınızı uygulama](planning-guide-onboarding.md)

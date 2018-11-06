@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3165c29da5cc23e9f206dbe3e1dc0ba72c758d47
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 800d044860a8a264facdeb49f1f59526ee53acdd
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643153"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149130"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,17 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. [Yaklaşan değişiklik
 ### Role-based access control
 
 -->     
+## <a name="week-of-october-22-2018"></a>22 Ekim 2018 haftası
+
+### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>Cihazda sadece bir e-posta profilinin olduğu durumlar dahil olmak üzere e-posta profilini kaldırma <!-- 1818139 -->
+Önceden, cihazda sadece bir e-posta profilinin *olması* durumunda bu e-posta profilini cihazdan kaldırmak mümkün değildi. Bu güncelleştirme ile bu davranış değişiyor. Artık cihazdaki tek e-posta profilini bile kaldırabilirsiniz. Ayrıntılar için bkz. [Intune kullanarak cihazlara e-posta ayarları ekleme](email-settings-configure.md).
+
+### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>Cihazlarınızdan PKCS ve SCEP sertifikalarını kaldırma <!-- 3218390 -->
+Bazı senaryolarda, bir gruptan ilke kaldırılması, bir yapılandırma veya uyumluluk dağıtımının silinmesi veya mevcut SCEP veya PKCS profillerinin yönetici tarafından güncelleştirilmesi durumlarında bile PKCS ve SCEP sertifikaları cihazlarda kalıyordu. Bu güncelleştirme ile bu davranış değişiyor. PKCS ve SCEP sertifikalarının cihazda kaldığı veya bu sertifikaların cihazdan kaldırıldığı bazı senaryolar da vardır. Bu senaryolar için bkz. [Microsoft Intune’da SCEP ve PKCS sertifikalarını kaldırma](remove-certificates.md).
+
+### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>Intune için PowerShell modülü - Önizleme kullanılabilir <!-- wnready 951068 -->
+Intune API’si için Microsoft Graph yoluyla destek sağlayan yeni bir PowerShell modülü artık [GitHub]( https://aka.ms/intunepowershell)’da önizleme olarak kullanılabilir. Bu modülü kullanma hakkında daha fazla ayrıntı için modülün bulunduğu konumdaki README dosyasına bakın. 
+
 ## <a name="week-of-october-15-2018"></a>15 Ekim 2018 haftası
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>Bir iOS cihazda parmak izlerini veya yüz kimliğini değiştirdiğinizde PIN istemi <!-- 2637704  -->

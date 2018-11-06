@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune’a Win32 uygulamaları ekleme
 titlesuffix: ''
-description: Microsoft Intune’a Win32 uygulamaları ekleyip yönetmeyi öğrenin.
+description: Microsoft Intune ile Win32 uygulamaları eklemeyi, teslim etmeyi ve yönetmeyi öğrenin. Bu konu, Intune Win32 uygulaması teslim ve yönetim özelliklerine yönelik genel bir bakışın yanı sıra, Win32 uygulaması sorun giderme bilgilerini sağlar.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357113"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959596"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
-Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bulut bağlantılı müşterilerin Win32 uygulama yönetiminde Configuration Manager'ı kullanmaları mümkün olsa da, yanızca Intune kullanan müşteriler Win32 iş kolu (LOB) uygulamalarında daha fazla yönetim özelliğinden yararlanabilir. Bu belgede, Intune Win32 uygulaması yönetim özelliklerine genel bir bakış sağlanır ve sorun giderme bilgileri verilir.
+Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bulut bağlantılı müşterilerin Win32 uygulama yönetiminde Configuration Manager'ı kullanmaları mümkün olsa da, yanızca Intune kullanan müşteriler Win32 iş kolu (LOB) uygulamalarında daha fazla yönetim özelliğinden yararlanabilir. Bu konu, Intune Win32 uygulaması yönetim özelliklerine yönelik genel bir bakışın yanı sıra, sorun giderme bilgileri sağlar.
 
 ## <a name="prerequisites-for-public-preview"></a>Genel önizleme için önkoşullar
 
