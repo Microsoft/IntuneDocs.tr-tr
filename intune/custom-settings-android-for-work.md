@@ -1,12 +1,11 @@
 ---
-title: Android iş profilleri için Intune özel profil ayarları
-titlesuffix: Microsoft Intune
-description: Android iş profili cihazlar için Microsoft Intune özel profil ayarları oluşturmayı öğrenin.
+title: Microsoft Intune - Azure’da Android Kurumsal cihazlara özel ayarlar ekleme | Microsoft Docs
+description: Microsoft Intune’da Android Kurumsal cihazlara bir özel profil ekleme veya oluşturma
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,42 +14,85 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 109c50acf194598017aa507a0979ad3b9298de9e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a622264ed7cc091849bacbd02f8ae7bdb33603fe
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905300"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983151"
 ---
-# <a name="create-intune-custom-profile-settings-for-android-work-profile-devices"></a>Android iş profili cihazları için Intune özel profil ayarları oluşturma
+# <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Microsoft Intune’da Android Kurumsal cihazlar için özel ayarlar kullanma
 
-Android iş profili cihazlarındaki özellikleri denetlemek için kullanılabilen OMA-URI ayarlarını atamak için Intune Android iş profili özel yapılandırma ilkesini kullanın. Bunlar, birçok mobil cihaz üreticisinin, cihaz özelliklerini denetlemek için kullandığı standart ayarlardır.
+Microsoft Intune’u kullanarak, bir “özel profil” kullanan Android Kurumsal cihazlarınız için özel ayarlar ekleyebilir veya oluşturabilirsiniz. Özel profiller, bir Intune özelliğidir. Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini eklemek için tasarlanmıştır.
 
-Bu özellik, Intune ilkeleri ile yapılandırılamayan Android ayarlarını atamanıza olanak sağlamak için tasarlanmıştır. Intune, şu anda sınırlı sayıda Android özel ilkesi destekler. Hangi ilkeleri yapılandırabileceğinizi öğrenmek için bu makaledeki örneklere bakın.
+Android Kurumsal özel profilleri, Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) ayarlarını kullanarak Android Kurumsal cihazlardaki özellikleri denetler. Bu ayarlar normalde mobil cihaz üreticileri tarafından bu özellikleri denetlemek için kullanılır.
 
-## <a name="create-a-custom-profile"></a>Özel profil oluşturma
+Intune, sınırlı sayıda Android özel profilini destekler.
 
-1. Başlamak için, [Özel cihaz ayarlarını yapılandırma](custom-settings-configure.md) konusunda verilen yönergeleri kullanın. **Platform** olarak **Android kurumsal**’ı ve **Profil türü** olarak **Özel**’i seçin.
-2. Yeni ayar eklemek için **Özel OMA-URI Ayarları** dikey penceresinde **Ekle**’yi seçin.
-3. **Satır Ekle** dikey penceresinde aşağıdakileri yapılandırın:
-    - **Ad** - Azure portalında tanımlamanıza yardımcı olması için Android iş profili özel ayarlarına benzersiz bir ad girin.
-    - **Açıklama** - Android özel ilkesine genel bakış ve onu bulmanıza yardımcı olacak diğer ilgili bilgileri sunan bir açıklama sağlayın.
-    - **OMA-URI** - Ayar sağlamak istediğiniz OMA-URI’yi girin.
-    - **Veri türü** - Bu OMA-URI ayarını belirteceğiniz veri türünü seçin. **Dize**, **Dize (XML dosyası)**, **Tarih ve saat**, **Tamsayı**, **Kayan nokta**, **Boole** veya **Base64 (dosya)** seçeneklerinden birini belirleyin.
-    - **Değer** - Önceden belirttiğiniz OMA-URI ile ilişkilendirilecek değeri belirtin. Bu değeri sağlamak için kullandığınız yöntem, seçtiğiniz veri türüne göre farklılık gösterir. Örneğin, **Tarih ve saat**’i seçerseniz, değeri tarih seçiciden belirlersiniz.
-4. İşiniz bittiğinde **Özel OMA-URI Ayarları**’na dönmek için Tamam’ı seçin ve ardından daha fazla seçenek ekleyin veya özel profili oluşturmak için **Oluştur**’u seçin.
+Bu makale, Android Kurumsal cihazlar için özel profil oluşturma işlemini gösterir. Ayrıca kopyalama ve yapıştırmayı engelleyen bir özel profil örneği sağlar.
 
+## <a name="create-the-profile"></a>Profili oluşturma
+
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+3. Aşağıdaki ayarları girin:
+
+    - **Ad**: Profil için `android enterprise custom profile` gibi bir ad girin
+    - **Açıklama**: Profil için bir açıklama girin
+    - **Platform**: **Android Kurumsal**’ı seçin
+    - **Profil Türü**: **Özel**’i seçin
+
+4. **Özel OMA-URI Ayarları**’nda **Ekle**’yi seçin. Aşağıdaki ayarları girin:
+
+    - **Ad**: Kolayca bulabilmek için OMA-URI ayarına benzersiz bir ad girin.
+    - **Açıklama**: Ayara genel bir bakış sağlayan ve diğer önemli ayrıntıları veren bir açıklama girin.
+    - **OMA-URI**: Ayar olarak kullanmak istediğiniz OMA-URI’yi girin.
+    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü girin. Seçenekleriniz şunlardır:
+
+      - Dize
+      - Dize (XML dosyası)
+      - Tarih ve saat
+      - Tamsayı
+      - Kayan nokta
+      - Boole değeri
+      - Base64 (dosya)
+
+    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değerini girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
+
+    Bazı ayarları ekledikten sonra **Dışarı Aktar**’ı seçebilirsiniz. **Dışarı Aktar**, virgülle ayrılmış değerler (.csv) dosyasına eklediğiniz tüm değerlerin listesini oluşturur.
+
+5. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin. Gerekirse diğer ayarları eklemeye devam edin.
+6. İşiniz bittiğinde, Intune profilini oluşturmak için **Tamam** > **Oluştur**’u seçin. Profiliniz oluşturulduğunda **Cihaz yapılandırması - Profiller** listesinde görünür.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, Android iş profili cihazlarında izin verilen iş uygulamaları ve kişisel uygulamalar arasında kopyala ve yapıştır eylemlerini kısıtlamak için kullanılabilecek özel bir profil oluşturacaksınız.
+Bu örnekte, Android Kurumsal cihazlarda iş uygulamaları ve kişisel uygulamalar arasında kopyalama ve yapıştırma eylemlerini kısıtlayan bir özel profil oluşturacaksınız.
 
-1. Aşağıdaki değerleri kullanarak Android iş profili cihazları için özel bir profil oluşturmak üzere bu makaledeki yordamı kullanın:
-    - **Ad** - "Kopyala ve yapıştır eylemini engelle" veya istediğiniz bir metni girin.
-    - **Açıklama** - "İş uygulamaları ve kişisel uygulamalar arasında kopyala/yapıştır eylemini engelle" veya istediğiniz bir metni girin.
-    - **OMA-URI** - **./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste** girin.
-    - **Veri türü** - Bu OMA-URI değerinin **True** veya **False** olduğunu belirtmek için **Boole** seçeneğini belirleyin.
-    - **Değer**: **True**’yu seçin.
-2. Bu resme benzer bir ayar görmeniz gerekir.
-![Android iş profili için kopyala ve yapıştır eylemini engelleyin.](./media/custom-policy-afw-copy-paste.png)
-3. Bu özel profili yönettiğiniz Android iş profili cihazlarına atadığınızda, iş uygulamaları ve kişisel profiller arasında kopyala ve yapıştır eylemleri engellenir.
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+3. Aşağıdaki ayarları girin:
+
+    - **Ad**: Profil için `android ent block copy paste custom profile` gibi bir ad girin.
+    - **Açıklama**: Profil için bir açıklama girin.
+    - **Platform**: **Android Kurumsal**’ı seçin.
+    - **Profil türü**: **Özel**’i seçin.
+
+4. **Özel OMA-URI Ayarları**’nda **Ekle**’yi seçin. Aşağıdaki ayarları girin:
+
+    - **Ad**: `Block copy and paste` gibi bir ad girin.
+    - **Açıklama**: `Blocks copy/paste between work and personal apps` gibi bir açıklama girin.
+    - **OMA-URI**: `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste` girin.
+    - **Veri türü**: Bu OMA-URI değerinin **True** veya **False** olması için **Boole** seçeneğini belirleyin.
+    - **Değer**: **True** seçeneğini belirleyin.
+
+5. Ayarları girdikten sonra ortamınız, aşağıdakine benzer bir şekilde görünecektir:
+
+    ![Android iş profili için kopyalama ve yapıştırmayı engelleyin.](./media/custom-policy-afw-copy-paste.png)
+
+Bu profili yönettiğiniz Android Kurumsal cihazlara atadığınızda, kopyalama ve yapıştırma eylemleri iş uygulamaları ve kişisel profiller arasında engellenir.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Daha sonra, [profili atayın](device-profile-assign.md).
+
+Bkz. [Android cihazlarda profil oluşturma](custom-settings-android.md).

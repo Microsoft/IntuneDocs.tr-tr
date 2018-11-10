@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/24/2016
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,60 +14,71 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: maxles
+ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c57c8bfa9f2727ec201acb506f5a41327fddc75
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146662"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959511"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android cihazınızdaki yönetilen uygulamaları kullanma
+Yönetilen uygulamalar, kuruluşunuzun güvenlik gereksinimlerini karşılamak ve iş veya okul verilerini korumak üzere yapılandırılmıştır. Bu uygulamalar, otomatik olarak yüklemeniz veya kullanmanız için cihazınızda sunulmuştur. 
 
-Yönetilen uygulamalar, şirketinizin destek biriminin ilgili uygulamada erişebildiğiniz şirket verilerini korumak üzere ayarlayabildiği uygulamalardır. Android cihazınızdaki yönetilen bir uygulamada bulunan şirket verilerine eriştiğinizde uygulamanın beklediğinizden biraz farklı çalıştığını fark edebilirsiniz. Örneğin, korunan şirket verilerini kopyalayıp yapıştıramayabilir veya bu verileri belirli konumlara kaydedemeyebilirsiniz.
+Siz bir yönetilen uygulamayı alıp yüklemeden önce kuruluşunuz bu uygulamanın izinlerini yapılandırır. Kuruluşunuz, uygulama verilerinin yetkisiz kişiler tarafından paylaşılmasını veya görülmesini engellemek için uygulama işlevselliğini veya kullanıcı etkileşimlerini kısıtlayabilir. Örneğin bir kuruluş, uygulama içerisinde kopyalama ve yapıştırma işlemlerini engelleyebilir. Veya cihazınızın yerel depolama alanına veri kaydetmenizi önleyebilir.
 
-Ayrıca, günlük görevlerinizi yapmanıza imkan tanırken şirket verilerinizi korumayı sürdürmek için cihazınızda farklı yönetilen uygulamalar birlikte çalışabilir. Örneğin, yönetilen bir uygulamada bir şirket dosyası açarsanız ve bu dosyayı görüntülemek için başka bir yönetilen uygulama gerekli olursa, dosyayı görüntülemenizi sağlayan yönetilen uygulama otomatik olarak açılır. Gerekli bir uygulama kullanılabilir değilse, belge açma veya yönetilen bir belgeden bir web bağlantısına erişme gibi bazı eylemler gerçekleştirilemeyebilir.
+Veri korumasını en üst düzeye çıkarmak için kuruluşunuz, birkaç yönetilen uygulamayı birlikte çalışmak üzere yapılandırabilir. Örneğin:
+1. Kuruluşunuzun ağına Microsoft Edge gibi bir yönetilen tarayıcı uygulaması ile bağlanırsınız.
+2. İş arkadaşınızın sunu dosyasını açmak için bir bağlantıya tıklarsınız.
+3. Microsoft PowerPoint gibi uygun bir yönetilen uygulama bu dosyayı açar.
 
-Yönetilen bir uygulamadaki şirket verilerine eriştiğinizde, açmakta olduğunuz uygulamanın yönetildiğini bildiren aşağıdaki gibi bir ileti görürsünüz.
+Kuruluşlar, bir iş dosyasını açmak veya bir web bağlantısına erişmek gibi işlemler için yönetilen uygulamalar kullanmanızı gerektirebilir. Gereken uygulamaya sahip değilseniz işleme devam edemeyebilirsiniz. Bazı yönetilen uygulamalar yüklenmeye açık olsa da gerekli değildir.
 
-![open-managed-apps-message](./media/managed-apps-message.png)
+## <a name="how-do-i-know-im-using-a-managed-app"></a>Yönetilen uygulama kullandığımı nasıl anlarım?
+Yönetilen uygulamalarda iş veya okul verilerinize ilk eriştiğinizde, aşağıdaki ekran görüntüsündekine benzer bir ileti alırsınız. İleti, devam etmek için uygulamayı yeniden başlatmanızı ister.
 
-## <a name="how-do-i-get-managed-apps"></a>Yönetilen uygulamaları nasıl edinirim?
-Yönetilen uygulamaları birkaç farklı yöntemle edinebilirsiniz:
+![Bir kullanıcı cihazında yönetilen uygulama açtığında görüntülenen iletinin ekran görüntüsü. İletide “Kuruluşunuz artık bu uygulama içerisindeki verilerini korumuyor. Devam etmek için uygulamayı yeniden başlatmanız gerekiyor.” ifadesi ve ardından Tamam düğmesi yer alır.](./media/managed-apps-message.png)
 
--   Cihazınız Microsoft Intune’a kaydolduğunda uygulamayı Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden yükleyebilirsiniz ya da uygulama şirketinizin destek birimi tarafından cihazınıza yüklenebilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Cihazınızı Intune’a kaydetme](enroll-your-device-in-Intune-android.md).
+## <a name="commonly-managed-apps"></a>Yaygın olarak yönetilen uygulamalar  
+Okullar ve iş yerlerinde yaygın olarak gerekli veya kullanılabilir hale getirilen yönetilen uygulama örnekleri:
 
--   Bir uygulamayı Play Store’dan yükleyin ve ardından Intune tarafından yönetilen şirket kullanıcı hesabınızla oturum açın.
+-   Microsoft Edge
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?
-Şirketinizin destek biriminin bir uygulamada yönetebileceği ve cihazınızdaki şirket verileriyle etkileşimlerinizi etkileyebilecek seçeneklerin bazı örnekleri aşağıda verilmiştir:
-
--   Belirli web sitelerine erişim
-
--   Uygulamalar arasında veri aktarımları
-
--   Dosyaları kaydetme
-
--   Kopyalama ve yapıştırma işlemleri
-
--   PIN erişimi gereksinimleri
-
--   Şirket kimlik bilgilerini kullanarak oturum açma
-
--   Buluta yedekleme özelliği
-
--   Ekran görüntüleri alma özelliği
-
--   Veri şifreleme gereksinimleri
-
-BT bölümünüzün yönetebileceği bazı ortak uygulamalar şunlardır:
-
--   Intune Yönetilen Tarayıcı
-
--   Microsoft Azure Information Protection Görüntüleyicisi
+-   Microsoft Outlook
 
 -   Microsoft Word, Excel ve PowerPoint
+
+## <a name="how-do-i-get-managed-apps"></a>Yönetilen uygulamaları nasıl edinirim?
+Önce Şirket Portalı uygulamasını yüklemeniz ve daha sonra gerekirse cihazınızı yönetime kaydetmeniz gerekir. Sonrasında yönetilen uygulama edinmenin üç yolu vardır.
+* Kuruluşunuz, kayıt sırasında cihazınıza uygulamaları otomatik olarak yükler. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Cihazınızı Intune’a kaydetme](enroll-your-device-in-Intune-android.md).
+* Kuruluşunuz, yönetilen uygulamaları Şirket Portalı’nda sizin için kullanılabilir hale getirir. Şirket Portalı uygulamasına veya Web sitesine giderek bu uygulamaları arayabilir, görüntüleyebilir ve yükleyebilirsiniz. 
+* Google Play mağazasından bir uygulama yükleyip uygulamada iş veya okul hesabınızla oturum açarsınız.  
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?
+Aşağıdaki liste, şirketinizin destek biriminin bir uygulama içerisinde yönetebileceği ayarları açıklar. Bu ayarlar, cihazınızda iş veya okul verilerini görüntülemenizi, bunlara erişiminizi ve bunları nasıl kullanacağınızı etkiler:
+
+* Belirli web sitelerine erişim  
+
+* Edge ve Azure Active Directory ara sunucusunu kullanarak dahili şirket web sitelerine erişim  
+
+* En düşük uygulama sürümü, işletim sistemi sürümü
+
+* Uygulamalar arasında veri paylaşımı ve aktarımı özelliği  
+
+* Dosyaların nasıl ve nereye kaydedileceği  
+
+* Kopyalama ve yapıştırma işlevi  
+
+* PIN erişimi gereksinimleri  
+
+* Şirket kimlik bilgilerini kullanarak oturum açma  
+
+* Buluta veri yedekleme özelliği  
+
+* Ekran görüntüleri alma özelliği  
+
+* Veri şifreleme gereksinimleri  
 
 Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için şirketinizin destek birimiyle iletişim kurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

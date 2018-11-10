@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/24/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: 6df3f16940a9478756cc1f268ad98b7c9d3f044e
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168956"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001567"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>Android cihazınızı Intune Şirket Portalı ile kullanma
 
@@ -30,9 +30,9 @@ Bu makale, Android için Şirket Portalı'na özgü görev ve bilgileri listelem
 
 ## <a name="supported-versions"></a>Desteklenen sürümler
 
-Şirket Portalı şu anda Android 4.4 ve sonraki sürümleri desteklemektedir. Samsung Knox 4.4 ve üzeri cihazlar için destek de buna dahildir.
+Şirket Portalı şu anda Android 4.4 ve sonraki sürümleri desteklemektedir. Bu, Android 4.4 ve üzeri sürümleri çalıştıran Samsung Knox cihazları içerir.
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune'a kaydolma ve Şirket Portalı'nı yükleme
+## <a name="enrolling-in-intune-and-installing-the-company-portal"></a>Intune’a kaydolma ve Şirket Portalı’nı yükleme
 
 - [Cihazınızı Intune’a kaydetme](enroll-your-device-in-Intune-android.md)
 - [Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme](create-a-work-profile-and-enroll-your-device-in-intune-android.md)

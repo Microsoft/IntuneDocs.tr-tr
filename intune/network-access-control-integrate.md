@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a2d2d7eb609db07d4f41254f2937120412f2f4b1
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643051"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236161"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Ağ erişim denetimini (NAC) Intune ile tümleştirme
 
@@ -27,7 +27,7 @@ Intune, cihazlar şirket içi kaynaklara erişmeye çalıştığında kuruluşla
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune ve NAC çözümleri kuruluş kaynaklarınızı korumaya nasıl yardımcı olur?
 
-NAC çözümleri, erişim denetimi kararları vermek için cihaz kaydını ve Intune ile uyumluluk durumunu kontrol eder. Cihaz kayıtlı değilse veya kayıtlı ama Intune cihaz uyumluluk ilkeleriyle uyumlu değilse bu cihazın kayıt ve/veya cihaz uyumluluk denetimi için yeniden Intune’a yönlendirilmesi gerekir.
+NAC çözümleri, erişim denetimi kararları vermek için cihaz kaydını ve Intune ile uyumluluk durumunu kontrol eder. Cihaz kayıtlı değilse veya kayıtlı ama Intune cihaz uyumluluk ilkeleriyle uyumlu değilse bu cihazın kayıt veya cihaz uyumluluk denetimi için yeniden Intune’a yönlendirilmesi gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -37,7 +37,7 @@ Cihaz kayıtlı ve Intune ile uyumlu ise NAC çözümü, cihazın şirket kaynak
 
 Intune’la etkin olarak eşitleme yapan cihazlar **Uyumlu** / **Uyumsuz**’dan **Eşitlenmedi** (veya **Bilinmiyor**) durumuna taşınamaz. Yeni kaydedilmiş ve uyumluluğu henüz değerlendirilmemiş cihazlar için **Bilinmiyor** durumu korunur.
 
-Kaynaklara erişimi engellenmiş cihazlar için, engelleme hizmetinin tüm kullanıcıları cihazın neden engellendiğini belirlemek üzere [yönetim portalına](https://portal.manage.microsoft.com) yönlendirmesi gerekir.  Kullanıcılar bu sayfayı ziyaret ederse, cihazları zaman uyumlu olarak uyumluluk için yeniden değerlendirilir.
+Kaynaklara erişimi engellenmiş cihazlar için, engelleme hizmetinin tüm kullanıcıları cihazın neden engellendiğini belirlemek üzere [yönetim portalına](https://portal.manage.microsoft.com) yönlendirmesi gerekir.  Kullanıcılar bu sayfayı ziyaret ederse, cihazları zaman uyumlu olarak uyumluluk için yeniden değerlendirilir.
 
 ## <a name="nac-and-conditional-access"></a>NAC ve koşullu erişim
 
@@ -55,13 +55,23 @@ Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin na
 4. Kullanıcı, şirket Wi-Fi erişim noktasına bağlanır veya bir VPN bağlantısı isteği yapar.
 5. NAC iş ortağı çözümü, cihaz bilgilerini Intune’a iletir ve cihaz kaydı ve uyumluluk durumunu Intune’a sorar.
 6. Cihaz uyumlu veya kayıtlı değilse NAC iş ortağı çözümü kullanıcıya kaydolmasını veya cihaz uyumluluğunu sağlamasını söyler.
-7. Cihaz, uyumluluk ve/veya kayıt durumunu yeniden doğrulamayı dener.
+7. Cihaz, uygun olduğunda uyumluluk ve kayıt durumunu yeniden doğrulamayı dener.
 8. Cihaz kayıtlı ve uyumlu hale geldikten sonra NAC iş ortağı çözümü, durumu Intune’dan alır.
 9. Bağlantı başarılı bir şekilde kurulur ve böylece cihazın şirket kaynaklarına erişimi sağlanır.
+
+## <a name="use-nac-on-your-ios-devices"></a>iOS cihazlarınızda NAC kullanma
+
+Ağ erişim denetimi şu anda aşağıdaki iOS VPN istemcilerinde desteklenmez:
+-   Cisco AnyConnect
+-   F5 Access
+-   Citrix SSO  
+
+Bu daha yeni istemcilere bir NAC çözümü yayınlamak için iş ortaklarımızla çalışıyoruz. Çözümler hazır olduğunda bu makaleyi ek ayrıntılarla güncelleştireceğiz. 
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Cisco ISE’yi Intune ile tümleştirme](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Citrix NetScaler’ı Intune ile tümleştirme](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-- [HP Aruba Clear Pass’i Intune ile tümleştirme](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [HP Aruba ClearPass’i Intune ile tümleştirme](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Squadra güvenlik Çıkarılabilir Medya Yöneticisi’ni (secRMM) Intune ile tümleştirme](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

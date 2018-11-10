@@ -15,17 +15,17 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562910"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959562"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune'da telekom gider yönetimi hizmeti ayarlama
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune, şirkete ait mobil cihazlarda veri kullanımından kaynaklanan telekom giderlerini yönetmenizi sağlar. Bu özelliği etkinleştirmek için Intune, üçüncü taraf yazılım geliştiricisi Saaswedo’nun Datalert telekom gider yönetimi çözümüyle tümleştirilmiştir. Datalert, telekom veri kullanımını yönetmenize olanak tanıyan gerçek zamanlı bir telekom gider yönetimi yazılımıdır. Intune tarafından yönetilen cihazlarınızda pahalı ve beklenmedik düzeyde fazla veri ve dolaşım kullanımlarını önlemeye yardımcı olur.
+Intune, şirkete ait mobil cihazlarda veri kullanımından kaynaklanan telekom giderlerini yönetmenizi sağlar. Bu özelliği etkinleştirmek için Intune, üçüncü taraf yazılım geliştiricisi Saaswedo’nun [Datalert telekom gider yönetimi](http://datalert.biz/get-started) çözümüyle tümleştirilmiştir. Datalert, telekom veri kullanımını yönetmenize olanak tanıyan gerçek zamanlı bir telekom gider yönetimi yazılımıdır. Intune tarafından yönetilen cihazlarınızda pahalı ve beklenmedik düzeyde fazla veri ve dolaşım kullanımlarını önlemeye yardımcı olur.
 
 Intune'un Datalert’le tümleştirilmesi, dolaşım ve yerel veri kullanım sınırlarını merkezi olarak ayarlamanıza, izlemenize ve zorunlu tutmanıza olanak tanır. Sınırlar önceden tanımlanmış eşikleri aştığında otomatik uyarılar tetiklenir. Tek tek son kullanıcılara veya son kullanıcı gruplarına farklı eylemler (dolaşımı devre dışı bırakma veya eşiği aşma gibi) uygulanacak şekilde hizmeti yapılandırabilirsiniz. Datalert yönetim konsolundan veri kullanım ve izleme bilgilerini içeren raporlar sağlanır.
 
@@ -61,19 +61,31 @@ Başlamadan önce, bir Intune ve bir Datalert telekomünikasyon gider yönetimi 
 
 2. Datalert yönetim konsolunda **Ayarlar** sekmesine ve sonra **MDM yapılandırması**’na gidin.
 
-3. Sayfada ayarları girebilmek için **Engellemeyi Kaldır**’ı seçin.
+3. Sayfanın altında bulunan ve sayfadaki ayarları değiştirmenize yarayan **Engeli Kaldır**’ı seçin.
 
-4. **Sunucu MDM** için **Microsoft Intune**’u seçin.
+4. **Intune / Datalert Bağlantısı** bölümünde **Sunucu MDM** için **Microsoft Intune**’u seçin.    
 
-5. **Azure AD etki alanı** için Azure kiracı kimliğinizi girin ve ardından **Bağlantı** düğmesini seçin.
+5. **Azure Active Directory etki alanı** için Azure kiracı kimliğinizi girin ve ardından **Bağlantı**’yı seçin.
 
-    **Bağlantı**’nın seçilmesi, önceden Intune ile Datalert bağlantılarının olmadığından emin olmak için Intune ile Datalert hizmetini denetler. Birkaç saniye sonra Microsoft oturum açma sayfası görüntülenir ve onun ardından Datalert Azure kimlik doğrulaması gelir.
+    **Bağlantı**’yı seçtiğinizde Datalert hizmeti, Intune ile Datalert arasında mevcut bir bağlantı olmadığından emin olmak için Intune’u denetler. Birkaç saniye sonra Microsoft oturum açma sayfası ve ardından Datalert Azure kimlik doğrulaması görüntülenir.
 
-6. Microsoft kimlik doğrulaması sayfasında **Kabul Et**’i seçin. Datalert “teşekkür ederiz” sayfasına yönlendirilirsiniz ve bu sayfa birkaç saniye sonra kapatılır. Datalert bağlantıyı doğrular ve doğrulanan öğe listesinin yanında yeşil onay işaretleri görüntülenir. Doğrulama başarısız olursa, kırmızı renkli bir ileti görürsünüz ve yardım için Datalert Desteği'ne başvurmanız gerekir.
+6. Microsoft kimlik doğrulaması sayfasında **Kabul Et**’i seçin. Datalert **teşekkür ederiz** sayfasına yönlendirilirsiniz ve bu sayfa birkaç saniye sonra kapatılır. Datalert bağlantıyı doğrular ve doğrulanan öğe listesinin yanında yeşil onay işaretleri görüntülenir. Doğrulama başarısız olursa, kırmızı renkli bir ileti görürsünüz ve yardım için Datalert Desteği'ne başvurmanız gerekir.
 
     Aşağıdaki ekran görüntüsünde, bağlantı başarılı olduktan sonra görmeniz gereken yeşil onay işaretleri gösterilir.
 
-   ![Başarılı bağlantıyı gösteren Datalert sayfası](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Başarılı bağlantıyı gösteren Datalert sayfası](./media/tem-datalert-connection.png)
+
+7. **Datalert App / ADAL Onayı** bölümünde, ayarı **Açık** olarak belirleyin. Microsoft kimlik doğrulaması sayfasında **Kabul Et**’i seçin. Datalert **teşekkür ederiz** sayfasına yönlendirilirsiniz ve bu sayfa birkaç saniye sonra kapatılır. Datalert bağlantıyı doğrular ve doğrulanan öğe listesinin yanında yeşil onay işaretleri görüntülenir. Doğrulama başarısız olursa, kırmızı renkli bir ileti görürsünüz ve yardım için Datalert Desteği'ne başvurmanız gerekir.    
+
+    Aşağıdaki ekran görüntüsünde, bağlantı başarılı olduktan sonra görmeniz gereken yeşil onay işaretleri gösterilir.
+
+   ![Başarılı bağlantıyı gösteren Datalert sayfası](./media/tem-datalert-adal-consent.png)
+
+8. **MDM Profil yönetimi (isteğe bağlı)** bölümünde ayarı **Açık** olarak belirleyerek Datalert’in ilke ayarlamanıza yardımcı olması için Intune’daki kullanılabilir profilleri okumasına izin verin. Microsoft kimlik doğrulaması sayfasında **Kabul Et**’i seçin. Datalert **teşekkür ederiz** sayfasına yönlendirilirsiniz ve bu sayfa birkaç saniye sonra kapatılır. Datalert bağlantıyı doğrular ve doğrulanan öğe listesinin yanında yeşil onay işaretleri görüntülenir. Doğrulama başarısız olursa, kırmızı renkli bir ileti görürsünüz ve yardım için Datalert Desteği'ne başvurmanız gerekir.    
+
+    Aşağıdaki ekran görüntüsünde, bağlantı başarılı olduktan sonra görmeniz gereken yeşil onay işaretleri gösterilir.
+
+   ![Başarılı bağlantıyı gösteren Datalert sayfası](./media/tem-datalert-mdm-profiles.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. Adım: Telekomünikasyon gider yönetimi özelliğinin Intune’da etkin olup olmadığını denetleme
 

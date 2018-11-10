@@ -1,39 +1,72 @@
 ---
-title: macOS çalıştıran cihazlar için Microsoft Intune özel ayarları
+title: Microsoft Intune - Azure’da macOS cihazlara özel ayarlar ekleme | Microsoft Docs
 titleSuffix: ''
-description: Microsoft Intune’da bir macOS özel profilinde kullanabileceğiniz ayarları öğrenin.
+description: Apple Configurator veya Apple Profile Manager araçlarından macOS ayarlarını dışarı aktarın ve daha sonra bu ayarları Microsoft Intune’a aktarın. Bu ayarlar macOS cihazlarda özel ayar ve özellikler oluşturabilir, kullanabilir ve denetleyebilir. Daha sonra bu özel profil, bir ana hat veya standart oluşturmak için kuruluşunuzdaki macOS cihazlara atanabilir veya dağıtılabilir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 849bf23429ed689ee995784c3a47a802ba7dbf71
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3bb4691ff46b4d28254d11fb94fa5b2fbcffaa6f
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832428"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983185"
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>macOS çalıştıran cihazlar için Microsoft Intune özel cihaz ayarları
+# <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune’da macOS cihazlar için özel ayarlar kullanma
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Microsoft Intune’u kullanarak, bir “özel profil” kullanan macOS cihazlarınız için özel ayarlar ekleyebilir veya oluşturabilirsiniz. Özel profiller, bir Intune özelliğidir. Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini eklemek için tasarlanmıştır.
 
-[Apple Configurator aracını](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12) kullanarak oluşturduğunuz ayarları macOS cihazlarına atamak için Microsoft Intune macOS özel profilini kullanın. Bu araç, bu cihazların işlemini denetleyen ve bunları bir yapılandırma profiline dışarı aktaran birçok ayar oluşturmanızı sağlar. Daha sonra bu yapılandırma profilini bir Intune macOS özel profiline aktarabilir ve ayarları kuruluşunuzdaki kullanıcılara ve cihazlara atayabilirsiniz.
+macOS cihazlarda Intune’a özel ayarlar eklemenin iki yolu vardır:
 
-Bu özellik, diğer Intune profil türleriyle yapılandırılamayan macOS ayarlarını atamanıza olanak tanır.
+- [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
+- [Apple Profile Manager](https://support.apple.com/profile-manager)
 
+Bir yapılandırma profiline ayar aktarmak için bu araçları kullanabilirsiniz. Intune’da bu dosyayı içeri aktarır ve sonra profili, macOS kullanıcılarınıza ve cihazlarınıza atarsınız. Profil atandıktan sonra ayarlar dağıtılır ve kuruluşunuzda macOS için bir ana hat veya standart oluşturulur.
 
-1. Başlamak için, [Microsoft Intune’da özel cihaz ayarlarını yapılandırma](custom-settings-configure.md) başlığı altında verilen yönergeleri kullanın.
-2. **Özel Yapılandırma Profili** bölmesinde aşağıdaki ayarların her birini yapılandırın:
+Bu makale, macOS cihazlar için özel profil oluşturma işlemini gösterir. Ayrıca Apple Configurator ve Apple Profile Manager’ı nasıl kullanacağınız konusunda rehberlik sağlar.
 
-- **Özel yapılandırma profili adı** - Cihazda ve Intune durum bilgisinde gösterildiği haliyle ilke için bir ad girin.
-- **Yapılandırma profili dosyası** - Apple Configurator’ı kullanarak oluşturduğunuz yapılandırma profiline gidin.
-Apple Configurator aracından dışarı aktardığınız ayarların, macOS özel ilkesini atadığınız cihazlardaki macOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların nasıl çözümleneceği hakkında bilgi için, [Apple Developer](https://developer.apple.com/) web sitesinde **Yapılandırma Profili Başvurusu** ve **Mobil Cihaz Yönetim Protokolü Başvurusu** öğelerini arayın.
+## <a name="before-you-begin"></a>Başlamadan önce
 
-İçeri aktardığınız dosya, bölmenin **Dosya içeriği** alanında görüntülenir.
+- Yapılandırma profilini oluşturmak için **Apple Configurator** kullanırken dışarı aktardığınız ayarların kullandığınız cihazın macOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
+
+- **Apple Profile Manager**’ı kullanırken şunları yapmayı unutmayın:
+
+  - Profile Manager’da [mobil cihaz yönetimini](https://help.apple.com/serverapp/mac/5.7/#/apd05B9B761-D390-4A75-9251-E9AD29A61D0C) etkinleştirin.
+  - Profile Manager’a [macOS cihazlar](https://help.apple.com/profilemanager/mac/5.7/#/pm9onzap1984) ekleyin.
+  - Profile Manager’a cihaz ekledikten sonra **Under the Library (Kitaplık Altında)** > **Devices** (Cihazlar) seçeneğine gidip cihazınızı seçin ve **Settings** (Ayarlar) seçeneğine gidin. Cihaz için genel ayarlar ile güvenlik, gizlilik, dizin ve sertifika ayarlarını girin.
+
+    Bu dosyayı indirin ve kaydedin. Intune profilinde bu dosyayı girmeniz istenir. 
+
+  - Apple Profile Manager’dan dışarı aktardığınız ayarların kullandığınız cihazların macOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
+
+## <a name="create-the-profile"></a>Profili oluşturma
+
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+3. Aşağıdaki ayarları girin:
+
+    - **Ad**: Profil için `macos custom profile` gibi bir ad girin.
+    - **Açıklama**: Profil için bir açıklama girin.
+    - **Platform**: **macOS**’u seçin.
+    - **Profil türü**: **Özel**’i seçin.
+
+4. **Özel yapılandırma**’da şu ayarları girin:
+
+    - **Özel yapılandırma profili adı**: İlke için bir ad girin. Bu ad, cihazda ve Intune durumunda gösterilir.
+    - **Yapılandırma profili dosyası**: Apple Configurator veya Apple Profile Manager’ı kullanarak oluşturduğunuz yapılandırma profiline gidin. İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
+
+5. **Tamam** > **Oluştur**’a tıklayarak Intune profilini oluşturun. Profiliniz oluşturulduğunda **Cihaz yapılandırması - Profiller** listesinde görünür.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Daha sonra, [profili atayın](device-profile-assign.md).
+
+Bkz. [iOS cihazlarda profil oluşturma](custom-settings-ios.md).

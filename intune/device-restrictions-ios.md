@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46330006"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001618"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
 
@@ -215,8 +215,8 @@ Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygu
 -   **Yapılandırma profilleri kullanarak yalnızca Wi-Fi ağlarına katılma (yalnızca denetimli)** - Cihazın yalnızca Intune Wi-Fi profili ile yapılandırılmış Wi-Fi ağlarına katılmasına izin verin.
 
 - **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)** - Hücresel ağa bağlıyken yönetilen uygulamaların kullanabileceği veri türlerini tanımlamanızı sağlar. Aşağıdakilerden birini seçin:
-    - **Hücresel veri kullanımını engelleme** - Hücresel verilerin kullanımını ** Tüm yönetilen uygulamalar** için engelleyebilir veya **Belirli uygulamalar seçebilirsiniz**.
-    - **Dolaşım sırasında hücresel veri kullanımını engelleme** - Dolaşım sırasında hücresel verilerin kullanımını ** Tüm yönetilen uygulamalar** için engelleyebilir veya **Belirli uygulamalar seçebilirsiniz**.
+    - **Hücresel veri kullanımını engelleyin** - Hücresel veri kullanımını **Tüm yönetilen uygulamalar** için engelleyebilir veya **Belirli uygulamalar seçebilirsiniz**.
+    - **Dolaşım sırasında hücresel veri kullanımını engelleyin** - Dolaşım sırasında hücresel veri kullanımını **Tüm yönetilen uygulamalar** için engelleyebilir veya **Belirli uygulamalar seçebilirsiniz**.
 
 ## <a name="connected-devices"></a>Bağlı Cihazlar
 

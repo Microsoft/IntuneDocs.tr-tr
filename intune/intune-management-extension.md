@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289032"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236348"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 cihazlar için Intune’da PowerShell betiklerini yönetme
 Intune yönetim uzantısı, Intune’da PowerShell betiklerini Windows 10 cihazlarda çalıştırmak için karşıya yüklemenize olanak sağlar. Yönetim uzantısı Windows 10 mobil cihaz yönetimi (MDM) özelliklerini tamamlar ve modern yönetime geçiş yapmayı kolaylaştırır.
@@ -33,7 +33,7 @@ Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. İh
 
 ## <a name="prerequisites"></a>Önkoşullar
 Intune yönetim uzantısı şu önkoşullara sahiptir:
-- Cihazların Azure AD’ye katılmış olması gerekir. Hibrit AD’ye katılmış cihazlar buna dahil değildir.
+- Cihazların Azure AD’ye katılmış olması gerekir. Intune yönetim uzantısı Azure Active Directory’ye ve Karma Etki Alanına katılmış Windows cihazlar ile Ortak Yönetilen kayıtlı Windows cihazları destekler.
 - Cihazlar Windows 10, sürüm 1607 veya üzerini çalıştırmalıdır.
 - Otomatik MDM kaydı [Azure AD'de etkinleştirilmeli](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment) ve cihazlar Intune'a otomatik olarak kaydedilmelidir.
 
@@ -56,7 +56,8 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 
 > [!NOTE]
 > - PowerShell betikleri, bilgisayar gruplarına uygulanamaz.
-> - PowerShell betikleri, yalnızca bir Azure Active Directory (AD) kullanıcısı cihazda oturum açtığında yürütülür.
+> - Son kullanıcıların PowerShell betiklerini yürütmek için cihazda oturum açmış olmaları gerekmez. 
+> - Intune’da PowerShell betikleri AAD cihaz güvenlik grupları tarafından hedeflenebilir.
 
 Intune yönetim uzantısı saatte bir kez Intune ile eşitlenir. İlkeyi Azure AD gruplarına atadıktan sonra, PowerShell betiği çalıştırılır ve çalıştırma sonuçları raporlanır. 
  
