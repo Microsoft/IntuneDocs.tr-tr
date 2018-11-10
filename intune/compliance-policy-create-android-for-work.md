@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da Android iş profili uyumluluk ilkesi oluşturma | Microsoft Docs
-description: Android iş profili cihazları için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Jailbreak uygulanmış cihazlara izin vermek, kabul edilebilir tehdit düzeyi ayarlamak, Google Play’i denetlemek, en düşük ve en yüksek işletim sistemi sürümü girmek, parola gereksinimlerinizi seçmek ve uygulamaları dışarıdan yüklemeye izin vermek için ilkeler yapılandırın.
+title: Microsoft Intune - Azure’da Android Kurumsal uyumluluk ilkesi oluşturma | Microsoft Docs
+description: Android Kurumsal veya iş profili cihazları için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Jailbreak uygulanmış cihazlara izin vermek, kabul edilebilir tehdit düzeyi ayarlamak, Google Play’i denetlemek, en düşük ve en yüksek işletim sistemi sürümü girmek, parola gereksinimlerinizi seçmek ve uygulamaları dışarıdan yüklemeye izin vermek için ilkeler yapılandırın.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,24 +14,28 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ff1f4f6a728fc041241371a413ce9d2dfdf89605
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828168"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236467"
 ---
-# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Intune’daki Android iş profili cihazlarına yönelik uyumluluk ilkesi ekleme
+# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Intune’daki Android Kurumsal cihazları için uyumluluk ilkesi ekleme
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune’da cihazların uyumlu olarak değerlendirilmesi için uyması gereken parola uzunluğu gibi kurallar ve ayarlar oluşturabilirsiniz. Cihaz uyumlu değilse [koşullu erişimi](conditional-access.md) kullanarak veri ve kaynaklara erişimi engelleyebilirsiniz. 
 
-Android iş profili cihazları için Intune cihaz uyumluluk ilkesi, bu cihazların uyumlu kabul edilmek için uymak zorunda olduğu kuralları ve ayarları belirtir. Şirket kaynaklarına erişime izin vermek veya bunu engellemek için bu ilkeleri koşullu erişimle birlikte kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Farklı platformlar için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+Ayrıca cihaz raporları alabilir ve uyumsuzluğa yönelik, kullanıcıya bildirim göndermek gibi önlemler alabilirsiniz. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+
+Bu makale, Android Kurumsal çalıştıran cihazlar için bir uyumluluk ilkesinde kullanabileceğiniz ayarları listeler.
+
+## <a name="non-compliance-and-conditional-access"></a>Uyumsuzluk ve koşullu erişim
 
 Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
 
 --------------------------
 
-|**ilke ayarı**| **Android iş profili** |
+|**ilke ayarı**| **Android Kurumsal profili** |
 | --- | --- |
 | **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
 | **Cihaz şifrelemesi** |  Karantinaya Alındı |
@@ -41,47 +45,39 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 | **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |
 | **Windows durum kanıtlama** |Geçerli değil |
 
-**Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. (Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.)+
+**Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.
 
-**Karantinaya alındı** = Cihazın işletim sistemi uyumluluğu mecbur kılmaz. (Örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz.) Cihaz uyumsuz olduğunda, aşağıdaki işlemler yapılır:
+**Karantinaya alındı** = Cihazın işletim sistemi, uyumluluğu zorunlu kılmaz. Örneğin Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz. Cihaz uyumsuz olduğunda aşağıdaki işlemler yapılır:
 
-- Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
-- Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
+  - Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
+  - Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
 
 ## <a name="create-a-device-compliance-policy"></a>Cihaz uyumluluğu ilkesi oluşturma
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **Platform** olarak **Android kurumsal**’ı seçin. **Ayarları Yapılandır**’ı seçin ve **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını girin. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
-
-<!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
-6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
-7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
-8. Choose **Add** to finish creating the action.
-9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
+4. **Platform** olarak **Android kurumsal**’ı seçin. 
+5. **Ayarları Yapılandır**’ı seçin. **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını bu makalede açıklandığı gibi girin.
 
 ## <a name="device-health"></a>Device health
 
-- **Kök erişim izni verilmiş cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumsuz olarak değerlendirilir.
-- **Cihazın Cihaz Tehdit Düzeyinde veya bunun altında olmasını gerektir**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin:
-  - **Güvenli**: Bu seçenek en güvenlisidir ve cihazda hiçbir tehdit olmaması anlamına gelir. Herhangi bir tehdit düzeyi algılanırsa cihaz, uyumsuz olarak değerlendirilir.
+- **Kök erişim izni verilmiş cihazlar**: Kök erişim izni verilmiş (jailbreak uygulanmış) cihazları uyumsuz olarak işaretlemek için **Engelle**’yi seçin. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
+- **Cihazın Cihaz Tehdit Düzeyinde veya bunun altında olmasını gerektir**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez. Bu ayarı kullanmak için izin verilen tehdit düzeyini seçin:
+  - **Güvenli**: Bu seçenek en güvenlisidir ve cihazda hiçbir tehdit olmaması gerektiği anlamına gelir. Herhangi bir tehdit düzeyi algılanırsa cihaz uyumsuz olarak değerlendirilir.
   - **Düşük**: Cihaz, yalnızca düşük düzeyde tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
-  - **Orta**: Cihazdaki tehditler düşük veya orta düzeydeyse cihaz, uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
+  - **Orta**: Cihazdaki tehditler düşük veya orta düzeydeyse cihaz, uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
   - **Yüksek**: Tüm tehdit düzeylerine izin verdiği için bu seçenek en düşük güvenliğe sahiptir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
-- **Google Play Hizmetleri yapılandırıldı**: Google Play hizmetleri uygulamasının yüklenmiş ve etkinleştirilmiş olmasını gerektirin. Google Play hizmetleri, güvenlik güncelleştirmelerine olanak sağlar ve sertifikalı Google cihazlarında birçok güvenlik özelliği için temel düzeyde bir bağımlılıktır.
-- **Güncel güvenlik sağlayıcısı**: Güncel bir güvenlik sağlayıcısının cihazları bilinen güvenlik açıklarına karşı korumasını gerektirin.
+- **Google Play Hizmetleri yapılandırıldı**: Google Play hizmetleri uygulamasının yüklenmiş ve etkinleştirilmiş olmasını **gerektirir**. Google Play hizmetleri, güvenlik güncelleştirmelerine olanak sağlar ve sertifikalı Google cihazlarında birçok güvenlik özelliği için temel düzeyde bir bağımlılıktır. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
+- **Güncel güvenlik sağlayıcısı**: Güncel bir güvenlik sağlayıcısının cihazları bilinen güvenlik açıklarına karşı korumasını **gerektirir**. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 - **SafetyNet cihaz kanıtı**: Uyulması gereken [SafetyNet kanıtı](https://developer.android.com/training/safetynet/attestation.html) düzeyini ayarlayın. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı**
+  - **Yapılandırılmadı** (varsayılan): Ayar, uyumluluk veya uyumsuzluk açısından değerlendirilmez.
   - **Temel bütünlük denetimi**
   - **Temel bütünlük ve sertifikalı cihaz denetimi**
 
 #### <a name="threat-scan-on-apps"></a>Uygulamalarda tehdit taraması
 
-Android iş profili olan cihazlarda **Uygulamalarda tehdit taraması** ayarı bir yapılandırma ilkesi ayarı olarak bulunabilir. Yöneticiler, bu ayarı bir cihaz için etkinleştirebilirler.
+Android Kurumsal cihazlardaki **Uygulamalarda tehdit taraması** ayarı, bir yapılandırma ilkesidir. Bkz. [Android için Intune cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
 
-Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız için **Uygulamalarda tehdit taraması**’nı etkinleştirebilirsiniz. Bir cihaz profili oluşturun ve sistem güvenlik ayarının gerekli olmasını sağlayın. Daha fazla bilgi için bkz. [Intune’da iş profili cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
-
-## <a name="device-property-settings"></a>Cihaz özelliği ayarları
+## <a name="device-properties-settings"></a>Cihaz özellikleri ayarları
 
 - **En düşük işletim sistemi sürümü**: Cihaz, en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, cihazını yükselttikten sonra şirket kaynaklarına erişebilir.
 - **En yüksek işletim sistemi sürümü**: Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir. Ve kullanıcıdan BT yöneticisine başvurması istenir. İşletim sistemine izin veren bir kural değişikliği oluncaya kadar bu cihaz şirket kaynaklarına erişemez.
@@ -90,43 +86,78 @@ Kuruluşunuzda Android iş profilleri kullanılıyorsa, kayıtlı cihazlarınız
 
 ### <a name="password"></a>Parola
 
-- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in.
-- **En düşük parola uzunluğu**: Kullanıcı parolasında bulunması gereken rakam veya karakter sayısı alt sınırını girin.
-- **Gerekli parola türü**: Parolanın yalnızca sayısal karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından mı oluşacağını seçin. Aşağıdakilerden birini seçin:
+- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
+- **En az parola uzunluğu**: Kullanıcı parolasında bulunması gereken rakam veya karakter sayısı alt sınırını girin.
+- **Gerekli parola türü**: Parolanın yalnızca sayısal karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından mı oluşacağını seçin. Seçenekleriniz şunlardır:
   - **Cihaz Varsayılanı**
   - **Düşük güvenlik biyometriği**
-  - **En az sayısal**
+  - **En az sayısal** (varsayılan)
   - **Sayısal karmaşıklık**
   - **En az alfabetik**
   - **En az alfasayısal**
   - **En az simgeler ile alfasayısal**
-- **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
+
+- **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 - **Parola kullanım süresi (gün)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
 - **Yeniden kullanılması engellenen eski parola sayısı**: Önceki parolalardan kaç tanesinin kullanılamayacağını girin. Son kullanıcının daha önce kullanılmış parolalar oluşturmasını önlemek için bu ayarı kullanın.
 
 ### <a name="encryption"></a>Şifreleme
 
-- **Mobil cihazda şifreleme gerektir**: Android iş profili cihazlarında şifreleme zorunlu olduğundan bu ayarı yapılandırmanız gerekmez.
+- **Cihazda veri deposu şifreleme**: Cihazlarınızdaki veri deposunu şifrelemek için **Gerekli Kıl**’ı seçin. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez. 
+
+  Android iş profili cihazlarında şifreleme zorunlu olduğundan bu ayarı yapılandırmanız gerekmez.
 
 ### <a name="device-security"></a>Cihaz Güvenliği
 
-- **Bilinmeyen kaynaklardan gelen uygulamaları engelle**: Android iş profili cihazları bilinmeyen kaynaklardan yüklemeyi her zaman kısıtladığı için bu Android ayarını yapılandırmanız gerekmez.
-- **Şirket Portalı uygulaması çalışma zamanı bütünlüğü**: Şirket Portalı uygulamasında varsayılan çalışma zamanı ortamının yüklü olup olmadığını, doğru şekilde oturum açılıp açılmadığını ve uygulamanın bilinen bir kaynaktan indirilip indirilmediğini denetler.
-- **Cihazda USB hata ayıklamayı engelle**: Android iş profili cihazlarında USB hata ayıklama zaten devre dışı olduğundan bu ayarları yapılandırmanız gerekmez.
-- **En düşük güvenlik düzeltme eki düzeyi**: Bir cihazda olabilecek en eski güvenlik düzeltme eki düzeyini seçin. En az bu düzeltme eki düzeyinde olmayan cihazlar uyumsuz kabul edilir. Tarihin *YYYY-AA-GG* biçiminde girilmesi gerekir.
-- **Kısıtlı uygulamalar**: Uygulamaların paket kimliklerini ilkeye ekleyerek bunları kısıtlayabilirsiniz. Bu durumda bir cihazda bu uygulama yüklüyse cihaz uyumsuz olarak işaretlenir. 
-   - **Uygulama Adı**: Paket kimliğini ayırt etmenize yardımcı olacak bir kolay ad ekleyin. 
-   - **Uygulama Paket Kimliği**: Uygulama sağlayıcısının benzersiz paket tanımlayıcısını girin. Android için, uygulama paket kimliği uygulamanın mağaza URL’sinden alınır. Örneğin uygulamanın mağazadaki URL’si *https://play.google.com/store/apps/details?id=com.Slack* ise Uygulama Paket Kimliği = *com.Slack* olur.
+- **Bilinmeyen kaynaklardan gelen uygulamaları engelle**: “Güvenlik > Bilinmeyen Kaynaklar” etkin kaynaklara sahip cihazları **engellemeyi** seçin (Android 4.0 ve Android 7.x sürümlerinde desteklenir; Android 8.0 ve üzeri sürümlerde desteklenmez). **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 
+  Uygulamaları dışarıdan yüklemek için bilinmeyen kaynaklara izin verilmesi gerekir. Cihazlara dışarıdan Android uygulaması yüklemiyorsanız bu uyumluluk ilkesini etkinleştirmek için bu özelliği **Engelle** olarak ayarlayın. 
+
+  > [!IMPORTANT]
+  > Dışarıdan uygulama yükleme, **Bilinmeyen kaynaklardan gelen uygulamaları engelle** ayarının etkinleştirilmesini gerektirir. Bu uyumluluk ilkesini yalnızca cihazlara dışarıdan Android uygulaması yüklemiyorsanız zorunlu kılın.
+
+  Android iş profili cihazları bilinmeyen kaynaklardan yüklemeyi her zaman kısıtladığından, bu ayarı yapılandırmanız gerekmez.
+
+- **Şirket portalı uygulaması çalışma zamanı bütünlüğü**: Şirket Portalı uygulamasının aşağıdaki tüm gereksinimleri karşıladığını onaylamak için **Gerekli Kıl**’ı seçin:
+
+  - Varsayılan çalışma zamanı ortamı yüklü
+  - Doğru şekilde imzalanmış
+  - Hata ayıklama modunda değil
+  - Bilinen bir kaynaktan yüklenmiş
+
+  **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
+
+- **Cihazda USB hata ayıklamasını engelle**: Cihazların USB hata ayıklama özelliğini kullanmasını önlemek için **Engelle**’yi seçin. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
+
+  Android iş profili cihazlarında USB hata ayıklama zaten devre dışı olduğundan bu ayarı yapılandırmanız gerekmez.
+
+- **En düşük güvenlik düzeltme eki düzeyi**: Bir cihazda olabilecek en eski güvenlik düzeltme eki düzeyini seçin. Bu yama düzeyinin altındaki cihazlar uyumsuz kabul edilir. Tarihin *YYYY-AA-GG* biçiminde girilmesi gerekir.
+
+İşiniz bittiğinde değişikliklerinizi kaydetmek için **Tamam** > **Tamam**’ı seçin.
+
+## <a name="actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemler
+
+**Uyumsuzluğa yönelik eylemler**'i seçin. Varsayılan eylem cihazı hemen uyumsuz olarak işaretler.
+
+Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örneğin, bir gün sonra olarak). Ayrıca, cihaz uyumlu olmadığında kullanıcıya e-posta gönderen ikinci bir eylem de yapılandırabilirsiniz.
+
+[Uyumsuz cihazlar için eylem ekleme](actions-for-noncompliance.md) makalesinde, kullanıcılarınıza e-posta ile gönderilecek bir bildirim oluşturma da dahil olmak üzere daha fazla bilgi sağlanmıştır.
+
+## <a name="scope-tags"></a>Kapsam etiketleri
+
+Satış, Mühendislik, İK gibi belirli gruplara ilke atamanın ideal bir yolu olarak kapsam etiketlerini kullanabilirsiniz. Uyumluluk ilkelerine kapsam etiketleri ekleyebilirsiniz. Bkz. [İlke filtrelemek için kapsam etiketleri kullanma](scope-tags.md). 
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
+
+Oluşturulan ilke, atanana kadar herhangi bir eylem gerçekleştirmez. İlkeyi atamak için: 
 
 1. Yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler **Cihaz uyumluluğu** > **İlkeler**’de bulunur.
 2. İlkeyi, sonra da **Atamalar**’ı seçin. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
 3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar**’ı seçin. Bu ilkeyi uygulamak istediğiniz kullanıcı gruplarını seçin ve daha sonra ilkeyi kullanıcılara dağıtmak için **Kaydet**’i seçin.
 
-İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenir.
+İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için değerlendirilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme](actions-for-noncompliance.md)  
-[Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)
+[Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)  
+[Android için uyumluluk ilkesi ayarları](compliance-policy-create-android.md)

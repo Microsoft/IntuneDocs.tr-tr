@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581800"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410778"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Hızlı Başlangıç: Özel rol oluşturma ve atama
 
@@ -47,7 +47,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 Güvenlik işletmeninizin yeni izinleri kullanabilmesi için önce rolü güvenlik kullanıcısını içeren bir gruba atamalısınız.
 
-1. Intune'da **Roller** > **Tüm roller** > **Uzak cihaz yardım masası**'nı seçin.
+1. Intune’da **Roller** > **Tüm roller** > **Güvenlik işlemleri**’ni seçin.
 2. **Intune rolleri** altında **Atamalar** > **Ata**'yı seçin.
 3. **Atama adı** kutusuna *Güvenlik işletmenleri* ifadesini girin.
 4. **Üye (Gruplar)** > **Ekle**'yi seçin.

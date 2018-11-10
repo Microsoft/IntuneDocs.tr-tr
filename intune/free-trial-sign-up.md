@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 11/01/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581402"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915691"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune'u ücretsiz deneyin 
 
@@ -70,20 +70,27 @@ Intune'u 30 gün boyunca ücretsiz deneyebilirsiniz. Zaten bir iş veya okul hes
 
 Deneme için kaydolduğunuzda, hesap bilgilerinizi ve kayıt işlemi sırasında verdiğiniz e-posta adresini içeren bir e-posta iletisi de alırsınız. Bu e-posta, denemenizin etkin olduğunu doğrular.
 
+> [!TIP]
+> Azure portalıyla çalışırken tarayıcınızda özel mod yerine normal modda çalışırsanız daha iyi sonuçlar elde edebilirsiniz.
+
 ## <a name="set-the-mdm-authority-to-intune"></a>MDM yetkilisini Intune olarak ayarlama
 
-Mobil cihaz yönetimi (MDM) yetkili ayarı, cihazlarınızı yönetme şeklinizi belirler. Kullanıcıların yönetilmek üzere cihaz kaydedebilmeleri için, BT yöneticisi olarak bir MDM yetkilisi ayarlamanız gerekir.
+Azure portalında oturum açıp Intune’u seçtikten sonra henüz bir MDM yetkilisi ayarlamadığınızı gösteren turuncu bir başlık görebilirsiniz. Mobil cihaz yönetimi (MDM) yetkili ayarı, cihazlarınızı yönetme şeklinizi belirler. Kullanıcıların yönetime cihaz kaydetmeleri için bir MDM yetkilisi ayarlanması gerekir.
 
 MDM yetkilisini Intune'a ayarlamak için aşağıdaki adımları izleyin.
 
 1. Yeni bir tarayıcı penceresi açın ve adres çubuğuna **https://portal.azure.com** ifadesini girin. 
 2. **Tüm hizmetler** > **Microsoft Intune**'u seçin.
-3. **Mobil Cihaz Yönetim Yetkilisi** ayarını açmak için turuncu başlığı seçin. 
+3. Cihaz yönetimini etkinleştirmediğinizi gösteren başlığı veya başlığı göremiyorsanız **Cihaz kaydı**’nı seçin. Cihaz yönetimini henüz etkinleştirmediyseniz **MDM Yetkilisi seçin** dikey penceresi görüntülenir.
 
     > [!NOTE]
     > Turuncu başlık, ancak henüz MDM yetkilisini ayarlamadıysanız görüntülenir.
 
-4. **Mobil Cihaz Yönetim Yetkilisi**'nin altından MDM yetkilinizi **Intune MDM Yetkilisi** olarak ayarlayın.
+    ![MDM Yetkilisi seçin dikey penceresinin görüntüsü](./media/choose-mdm-authority.png) 
+
+4. **MDM Yetkilisi seçin** dikey penceresinin altında MDM yetkilinizi **Intune MDM Yetkilisi** olarak ayarlayın.
+
+MDM yetkilisi hakkında daha fazla bilgi için bkz. [Mobil cihaz yönetimi yetkilisini ayarlama](mdm-authority-set.md).
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Özel etki alanı adınızı yapılandırma (İsteğe bağlı)
 
@@ -120,4 +127,4 @@ Kullanabileceğiniz iki portal vardır:
 Bu hızlı başlangıçta Intune'u bir test ortamında denemek için ücretsiz bir abonelik oluşturdunuz ve isteğe bağlı olarak bir özel etki alanı adı yapılandırdınız. Intune hakkında daha fazla bilgi edinmek için sonraki kullanıcı ekleme ve lisans atama hızlı başlangıcına geçin.
 
 > [!div class="nextstepaction"]
-> [Kullanıcı oluşturma](get-started-users.md)
+> [Kullanıcı oluşturma](quickstart-create-user.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321450"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236416"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune ile macOS cihazlara cihaz uyumluluk ilkesi ekleme
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune macOS cihaz uyumluluk ilkesi, macOS cihazlarının uyumlu olmak için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini koşullu erişimle birlikte kullandığınızda, şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
@@ -90,6 +88,17 @@ Güvenlik Duvarı, cihazları yetkisiz erişimine karşı korur. Güvenlik Duvar
 - **Güvenlik duvarı**: Cihazları yetkisiz erişimine karşı korumaya yardımcı olmak için **etkinleştirin**. Bu özelliği etkinleştirdiğinizde gelen İnternet bağlantılarını işleyebilir ve gizli modu kullanabilirsiniz. **Yapılandırılmamış** (varsayılan), güvenlik duvarını devre dışı bırakır ve ağ trafiğine izin verilir (engellenmedi).
 - **Gelen bağlantılar**: DHCP, Bonjour ve IPSec gibi temel İnternet hizmetleri için gerekenler dışında tüm gelen ağ bağlantılarını **engelleyin**. Bu ayar, ekran paylaşımı, uzaktan erişim, iTunes müzik paylaşımı gibi tüm paylaşım hizmetlerini engeller. **Yapılandırılmamış** (varsayılan) gelen bağlantılara ve paylaşım hizmetlerine izin verir. 
 - **Gizli Mod**: Cihazın kötü niyetli kullanıcılar tarafından oluşturulmuş yoklama isteklerine yanıt vermesini önlemek için gizli modu **etkinleştirin**. Etkinleştirildiğinde, cihaz yetkilendirilmiş uygulamalardan gelen istekleri yanıtlamaya devam eder. **Yapılandırılmamış** (varsayılan) gizli modu devre dışı bırakır.
+
+### <a name="gatekeeper"></a>Ağ Geçidi Denetleyicisi
+
+**Şu konumlardan indirilen uygulamalara izin ver**: Desteklenen uygulamaların farklı konumlardan cihazlarınıza yüklenmesine izin verir. Konum seçenekleriniz:
+
+- **Yapılandırılmadı**: Varsayılan seçenektir. Ağ geçidi denetleyicisi seçeneğinin uyumluluk veya uyumsuzluk üzerinde herhangi bir etkisi yoktur. 
+- **Mac App Store**: Yalnızca Mac uygulama mağazası uygulamaları yüklenebilir. Üçüncü taraf veya tanımlı geliştirici uygulamaları yüklenemez. Bir kullanıcı, Gatekeeper’ı Mac App Store dışından uygulama yüklemesi için seçerse cihaz uyumsuz olarak değerlendirilir.
+- **Mac App Store ve tanımlı geliştiriciler**: Mac uygulama mağazası ve tanımlı geliştirici uygulamalarını yükler. macOS, geliştiricilerin kimliğini denetler ve uygulama bütünlüğünü doğrulamak için başka denetimler de gerçekleştirir. Bir kullanıcı, Gatekeeper’ı bu seçenekler haricindeki uygulamaları yüklemesi için seçerse cihaz uyumsuz olarak değerlendirilir.
+- **Her yerden**: Herhangi bir yerden, herhangi bir geliştiriciye ait uygulamalar yüklenebilir. Bu, güvenliği en düşük olan seçenektir.
+
+Apple belgelerinde daha fazla ayrıntı için bkz. [macOS üzerinde Gatekeeper](https://support.apple.com/HT202491).
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 

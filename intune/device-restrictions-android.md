@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313708"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915742"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android ve Samsung Knox Standard cihaz kısıtlama ayarları - Intune
 
@@ -39,7 +39,7 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 - **Coğrafi konum (yalnızca Samsung Knox)** - Cihazın konum bilgilerini kullanmasına izin verir.
 - **Kapatma (yalnızca Samsung Knox)** - Kullanıcının cihazı kapatmasına izin verir.<br>Devre dışı bırakılırsa **Cihaz silinmeden önceki oturum açma hatası sayısı** ayarlanamaz.
 - **Ekran yakalama (yalnızca Samsung Knox)** - Kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
-- **Sesli yardımcı (yalnızca Samsung Knox)** - Cihazda sesli yardım yazılımının kullanımına izin verir.
+- **Sesli yardımcı (yalnızca Samsung Knox)** - Cihazda S Voice hizmeti ve uygulamasının kullanımına izin verir. Bu, Bixby veya ekrandaki içeriği sesli okuyan erişilebilirliğe yönelik sesli yardımcı için geçerli değildir.
 - **YouTube (yalnızca Samsung Knox)** - Cihazda YouTube uygulamasının kullanımına izin verir.
 - **Paylaşılan cihazlar (yalnızca Samsung Knox)** - Yönetilen bir Samsung Knox Standard cihazını paylaşılan cihaz olarak yapılandırın. Bu modda, son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da yönetilmeye devam eder.<br>SCEP sertifika profiliyle birlikte kullanıldığında, bu özellik son kullanıcıların, tüm kullanıcılar için aynı uygulama kümesini içeren ancak kendi SCEP kullanıcı sertifikası olan bir cihazı paylaşmalarına olanak tanır.  Kullanıcılar oturumu kapattığında tüm veriler silinir.  Bu özellik yalnızca LOB uygulamalarıyla sınırlıdır.
 - **Tarih ve saat değişikliklerini engelle (Samsung Knox)** - Kullanıcının cihazda tarih ve saat ayarlarını değiştirmesini engelleyin. 

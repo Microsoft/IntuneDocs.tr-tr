@@ -5,24 +5,24 @@ services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: 6a1d591e635dccd99551d9b8d40e099724a85d77
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: fb88f703048eaa122bb406d8adb1fc9face764c4
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581811"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410761"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Hızlı Başlangıç: Kullanıcı oluşturun ve ona bir lisans atayın
 
-Bu hızlı başlangıçta bir kullanıcı oluşturacak ve ona bir lisans atayacaksınız. Intune'u kullanırken, şirket verilerine erişimi olmasını istediğiniz her kişinin bir kullanıcı hesabı olması gerekir. Intune yöneticileri daha sonra, erişim denetimini yönetmek için bu kullanıcıları yapılandırabilir.
+Bu hızlı başlangıçta bir kullanıcı oluşturacak ve ona bir lisans atayacaksınız. Intune'u kullanırken, şirket verilerine erişimi olmasını istediğiniz her kişinin bir kullanıcı hesabı olması gerekir. Daha sonra Intune yöneticileri, erişim denetimini yönetmek için bu kullanıcıları yapılandırabilir.
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](free-trial-sign-up.md).
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
-[Intune](https://aka.ms/intuneportal)'da Genel Yönetici veya Intune Hizmet Yöneticisi olarak oturum açın.
+[Intune](https://aka.ms/intuneportal)’da [Genel Yönetici veya Intune Hizmet yöneticisi](users-add.md#types-of-administrators) olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
 ## <a name="create-a-user"></a>Bir kullanıcı oluşturun
 
@@ -30,11 +30,14 @@ Intune cihaz Yönetimi'ne kaydolmak için bir kullanıcı hesabı gerekir.
 
 1. Intune'da, **Kullanıcılar** > **Tm kullanıcılar** > **Yeni kullanıcı**'yı seçin.
 ![Tarayıcı](media/quickstart-create-user/create-user.png)
-2. **Ad** kutusuna *Dewey Kellum* adını girin.
-3. **Kullanıcı adı** kutusuna *Dewey@contoso.onmicrosoft.com* girin.
-4. **Gruplar** > **Herkes** > **Seç**'i seçin.
-5. **Parolayı göster**'i seçin ve bir test cihazında oturum açabilmek için otomatik olarak oluşturulan parolayı not edin.
-6. **Oluştur**’u seçin.
+2. **Ad** kutusuna *Dewey Kellum* gibi bir ad girin.
+3. **Kullanıcı adı** kutusuna Dewey@contoso.onmicrosoft.com gibi bir kullanıcı tanımlayıcısı girin.
+
+    > [!NOTE]
+    > Müşteri etki alanı adınızı yapılandırmadıysanız Intune aboneliğini (veya [ücretsiz denemeyi](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)) oluşturmak için kullandığınız doğrulanmış etki alanı adını kullanın. 
+
+4. **Parolayı göster**'i seçin ve bir test cihazında oturum açabilmek için otomatik olarak oluşturulan parolayı not edin.
+5. **Oluştur**’u seçin.
 
 ## <a name="assign-a-license-to-the-user"></a>Kullanıcıya lisans atama
 
@@ -42,15 +45,19 @@ Bir kullanıcı oluşturduktan sonra, bu kullanıcıya bir Intune lisansı atama
 
 1. Intune'da oturum açmak için kullandığınız kimlik bilgileriyle [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)'nda oturum açın.
 2. **Kullanıcılar** > **Etkin Kullanıcılar**'ı > oluşturduğunuz kullanıcıyı seçin.
-3. **Konum** altında kullanıcı için bir konum seçin.
-3. **Ürün lisansları**'nı seçip **Enterprise Mobility + Security E3**'ü (veya elinizdeki Intune'u içeren başka bir lisansı) **Açık** olarak ayarlayın.
+3. **Ürün lisansları**’nın yanında bulunan **Düzenle**’yi seçin.
+4. **Konum** altında kullanıcı için bir konum seçin.
+5. Intune lisansının (veya elinizdeki Intune’u içeren başka bir lisansın) yanındaki **Açık** seçeneğine tıklayın. Görüntülenen [ürün adı](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** Azure yönetiminde hizmet planı olarak kullanılır 
+
    > [!NOTE]
-   > Bu işlem, kullanıcı için lisanslarınızdan birini kullanır. Yayındaki ortamınızı kullanıyorsanız bu lisansın kullanımını, daha sonra gerçek bir kullanıcıya yeniden atayabilmek için kapatabilirsiniz.
-5. **Kaydet**’i seçin.
+   > Bu ayar, bu kullanıcı için lisanslarınızdan birini kullanır. Deneme ortamındaysanız bu lisansı daha sonra canlı ortamda gerçek bir kullanıcıya yeniden atayın.
+6. **Kaydet** > **Kapat**’ı seçin.
+
+Yeni etkin Intune kullanıcısı artık bir **Intune** lisansı kullandığını gösterir.
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme
 
-Bu kullanıcı artık gerekmiyorsa, **Kullanıcılar** > **Tüm kullanıcılar** > kullanıcıyı listeden seçin > **Kullanıcı sil** > **Evet**'i seçerek silebilirsiniz.
+Artık bu kullanıcıya ihtiyacınız kalmadıysa [Office 365 portalına](http://go.microsoft.com/fwlink/p/?LinkId=698854) gidip sırasıyla şunları seçerek kullanıcıyı silebilirsiniz: **Kullanıcılar** > **Etkin kullanıcılar** > *listeden kullanıcıyı seçin* > **Kullanıcıyı sil** > **Kullanıcıyı sil** > **Değişiklikleri onayla** > **Kapat**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

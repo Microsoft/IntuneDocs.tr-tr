@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
-ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229084"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236671"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Şirketinizdeki kullanıcılara yardımcı olmak için sorun giderme portalını kullanma
 
@@ -96,13 +96,14 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 | Sahibi          | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
 | Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
 | Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
+| Uygulama yükleme | Söz konusu cihazda başarılı veya başarısız bir yükleme olup olmadığını gösterir. |
 | İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
 | İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
 | Son iade      | Cihaz türünün adı.                                                                                                     |
 
 ### <a name="app-protection-status"></a>Uygulama koruma durumu
 
-Enterprise Mobility Solution (EMS) teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
+Enterprise Mobility Solution (EMS) teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
 
 | Özellik    | Açıklama                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -115,7 +116,7 @@ Enterprise Mobility Solution (EMS) teknolojileri ile tümleşen mobil uygulamala
 
 ## <a name="app-protection-policies-reference"></a>Uygulama koruma ilkeleri başvurusu
 
-Bir uygulama koruma ilkesi, EMS teknolojileriyle tümleşen mobil uygulamalar tarafından kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin koruması için bir taban çizgi sağlar. 
+Bir uygulama koruma ilkesi, EMS teknolojileriyle tümleşen mobil uygulamalar tarafından kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin koruması için bir taban çizgi sağlar. 
 
 ### <a name="properties"></a>Özellikler
 
@@ -148,7 +149,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 
 ## <a name="compliance-policies-reference"></a>Uyumluluk ilkeleri başvurusu
 
-Şirket uygulamalarına ve verilerine erişmek için kullanılan cihazların, cihaza erişim için PIN kullanma ve cihazda depolanan verileri şifreleme gibi belirli kurallara uyduğundan emin olmanız gerekir.
+Şirket uygulamalarına ve verilerine erişmek için kullanılan cihazların, cihaza erişim için PIN kullanma ve cihazda depolanan verileri şifreleme gibi belirli kurallara uyduğundan emin olmanızı sağlar.
 
 ### <a name="properties"></a>Özellikler
 
@@ -180,7 +181,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 
 ### <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
 
-EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
+EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
 
 | Özellik    | Açıklama                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -193,7 +194,7 @@ EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi 
 
 ## <a name="configuration-policies-reference"></a>Yapılandırma ilkeleri başvurusu
 
-Satıcıya özgü yapılandırmaları olan mobil uygulamalar için bir uygulama koruma ilkesi kullanılabilir. 
+Satıcıya özgü yapılandırmaları olan mobil uygulamalar için bir uygulama koruma ilkesi kullanılabilir. 
 
 ### <a name="properties"></a>Özellikler
 
@@ -226,7 +227,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 
 ### <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
 
-EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
+EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
 
 | Özellik    | Açıklama                                                                           |
 |-------------|---------------------------------------------------------------------------------------|

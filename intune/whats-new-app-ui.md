@@ -15,17 +15,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 924326de480073d7bca8e6bec2d6f7e9c11d0cc1
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425096"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236654"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu güncelleştirmeleri anlamak, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-october-22-2018"></a>22 Ekim 2018 haftası
+
+### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Şirket Portalı uygulaması için özel marka resmi ekleme <!-- 1916266 -->
+Microsoft Intune yöneticisi olarak, iOS Şirket Portalı uygulamasındaki kullanıcı profil sayfasında bir arka plan görüntüsü olarak kullanılacak özel bir marka görüntüsünü karşıya yükleyebilirsiniz. Şirket Portalı uygulamasını yapılandırma hakkında daha fazla bilgi için bkz. [Microsoft Intune Şirket Portalı uygulamasını yapılandırma](company-portal-app.md).
+
+
 
 ## <a name="week-of-august-27-2018"></a>27 Ağustos 2018 Haftası  
 
@@ -163,7 +170,7 @@ Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıy
 ## <a name="week-of-october-16-2017"></a>16 Ekim 2017 Haftası
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Şirket Portalı web sitesine arama iyileştirmeleri <!-- 1331697 -->
-[Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) başlayarak uygulama arama becerilerimizi iyileştiriyoruz. Artık aramalar, Ad ve Açıklama alanlarına ek olarak uygulama kategorilerinde de gerçekleştirilecek. Varsayılan olarak sonuçlar, azalan ilgi düzeyine göre sıralanacak. 
+[Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) başlayarak uygulama arama becerilerimizi iyileştiriyoruz. Artık aramalar, Ad ve Açıklama alanlarına ek olarak uygulama kategorilerinde de gerçekleştirilecek. Varsayılan olarak sonuçlar, azalan ilgi düzeyine göre sıralanacak. 
 
 Şirket Portalı web sitesi, iOS için Şirket Portalı uygulamasının da bir parçası olarak kullanıldığı için bu değişikliği iOS kullanıcıları da alacaktır. Android ve Windows için Şirket Portalı uygulamaları, gelecek aylar içerisinde benzer güncelleştirmeler alacaktır.
 
@@ -177,7 +184,7 @@ Bu sürümde iOS Şirket Portalı’nın uygulama kutucuğunda simgeleri görün
 ## <a name="week-of-october-2-2017"></a>2 Ekim 2017 haftası
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Şirket Portalı’nda cihaz kurulum iş akışı iyileştirmeleri <!-- 1490692 -->
-Android için Şirket Portalı uygulamasında cihaz kurulum iş akışını iyileştirdik. Dil kolay anlaşılır ve şirketinize özgü bir durumdadır ve ekranlar mümkün olduğunca birleştirilmiştir. 
+Android için Şirket Portalı uygulamasında cihaz kurulum iş akışını iyileştirdik. Dil kolay anlaşılır ve şirketinize özgü bir durumdadır ve ekranlar mümkün olduğunca birleştirilmiştir. 
 
 |Önce|Sonra|
 |---|---|
@@ -205,7 +212,7 @@ Ayrıca koşullu erişim e-posta etkinleştirme ekranını da güncelleştirdik.
 
 ## <a name="week-of-september-11-2017"></a>11 Eylül 2017 haftası
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android için Şirket Portalı uygulamasında daha kolay anlaşılır bir dil <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android için Şirket Portalı uygulamasında daha kolay anlaşılır bir dil <!-- 1396349 -->  
 
 Android için Şirket Portalı uygulamasında kayıt işlemi, son kullanıcıların kaydını kolaylaştırmak adına yeni metinlerle düzenlendi. Özel kayıt belgeleriniz varsa bunları, değişiklikleri yansıtması için güncelleştirmelisiniz. Örnek görüntüleri aşağıda bulabilirsiniz:
 
@@ -222,7 +229,7 @@ Android için Şirket Portalı uygulamasında kayıt işlemi, son kullanıcılar
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail uygulaması OAuth destekleyecek <!-- 1196951 -->
 
-Intune ile koşullu erişim, OAuth bulunan iOS cihazlarda daha güvenli kimlik doğrulamasını destekler. Bunu desteklemek üzere daha güvenli kimlik doğrulamasına imkan vermek için artık iOS için Şirket Portalı uygulamasında farklı bir akış bulunacak. Son kullanıcılar, Mail uygulamasında yeni bir Exchange hesabıyla oturum açmaya çalıştığında web görünümlü bir istem alacaklar. Intune’a kaydolduktan sonra kullanıcılar, yerel Mail uygulamasının sertifikaya erişmesine izin vermek için bir komut istemi görecekler. Pek çok son kullanıcı artık, karantinaya alınmış e-posta görmeyecek. Mevcut posta hesapları, temel kimlik doğrulama protokolünü kullanmaya devam edecek, bu yüzden bu kullanıcılar karantinaya alınmış e-postalar almaya devam edecektir. Son kullanıcılar için bu oturum açma deneyimi, Office mobil uygulamalarına benzerdir.
+Intune ile koşullu erişim, OAuth bulunan iOS cihazlarda daha güvenli kimlik doğrulamasını destekler. Bunu desteklemek üzere daha güvenli kimlik doğrulamasına imkan vermek için artık iOS için Şirket Portalı uygulamasında farklı bir akış bulunacak. Son kullanıcılar, Mail uygulamasında yeni bir Exchange hesabıyla oturum açmaya çalıştığında web görünümlü bir istem alacaklar. Intune’a kaydolduktan sonra kullanıcılar, yerel Mail uygulamasının sertifikaya erişmesine izin vermek için bir komut istemi görecekler. Pek çok son kullanıcı artık, karantinaya alınmış e-posta görmeyecek. Mevcut posta hesapları, temel kimlik doğrulama protokolünü kullanmaya devam edecek, bu yüzden bu kullanıcılar karantinaya alınmış e-postalar almaya devam edecektir. Son kullanıcılar için bu oturum açma deneyimi, Office mobil uygulamalarına benzerdir.
 
 ![Yerel posta uygulamasında hesap türü seçme.](./media/ios-11-ca-email-after-1708-01.png)
 

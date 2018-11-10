@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: b722dad629006ac3ea12d59e02a87f359f02e485
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028656"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971423"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -44,7 +44,7 @@ Knox Dağıtım Programı’nda yer alan yetkili satıcılardan cihaz satın al�
 KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirketinizi Samsung Knox portalına kaydetmeniz gerekir:
 1.  [KME’nin bölgenizde kullanılabilir olduğundan emin olun](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME, 55’ten fazla ülkede kullanılabilir. Dağıtım yapacağınız ülkenin desteklendiğinden emin olun.
 
-2.  [Desteklenen cihazlar](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME, en düşük Knox 2.4 çalıştıran tüm Samsung cihazlarda kullanılabilir.
+2.  [Desteklenen cihazlar](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME, en az Knox 2.4 (Android kaydı için) veya Knox 2.8 (Android Kurumsal kaydı için) sürümüne sahip tüm Samsung cihazlarda kullanılabilir.
 
 3.  [Ağ gereksinimleri](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): Ağınızda gerekli güvenlik duvarı ve ağ erişim kurallarına izin verildiğinden emin olun.
 
@@ -54,7 +54,25 @@ KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirket
 
 ## <a name="create-mdm-profile"></a>MDM profili oluşturma
 
-Şirketiniz başarıyla kaydolduktan sonra, aşağıdaki bilgileri kullanarak Knox Portalı’nda Microsoft Intune için MDM profilinizi oluşturabilirsiniz. Adım adım rehber için [ Samsung Knox Profil Kurulum Sihirbazı](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) yönergelerine bakın.
+Şirketiniz başarıyla kaydolduktan sonra, aşağıdaki bilgileri kullanarak Knox portalında Microsoft Intune için MDM profilinizi oluşturabilirsiniz. Knox portalında hem Android hem de Android Kurumsal için MDM profilleri oluşturabilirsiniz. 
+
+### <a name="for-android-enterprise"></a>Android Kurumsal için
+
+| MDM Profil Alanları| Gerekli mi? | Değerler | 
+|-------------------|-----------|-------| 
+|MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın. 
+|Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin. 
+|Açıklama        | Hayır        |Profili açıklayan bir metin girin. 
+|MDM Aracı APK’sı      | Evet       |https://aka.ms/intune_kme_deviceowner 
+|Bu uygulamayı Google Cihaz Sahibi olarak etkinleştir | Evet | Android Kurumsal’a kaydolmak için bu seçeneği belirleyin. 
+|Desteklenen MDM      | Evet       |Microsoft Intune 
+|Tüm sistem uygulamalarını etkin bırak | Hayır | Tüm uygulamaların profil için etkin ve kullanılabilir olmasını sağlamak için bu seçeneği belirleyin. Bu seçenek belirlenmezse cihazın uygulamalar tepsisinde yalnızca sınırlı bir grup uygulama görüntülenir. E-posta gibi uygulamalar gizlenir. 
+|Özel JSON        | Hayır        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Enter Intune enrollment token string"}. [Kayıt profili oluşturma](android-kiosk-enroll.md) hakkında bilgi edinin. 
+| Yasal sözleşmeler ekle | Hayır | Burayı boş bırakın. 
+
+### <a name="for-android"></a>Android için
+
+Adım adım rehber için [ Samsung Knox Profil Kurulum Sihirbazı](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) yönergelerine bakın.
 
 | MDM Profil Alanları| Gerekli mi? | Değerler |
 |-------------------|-----------|-------|
@@ -62,10 +80,11 @@ KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirket
 |Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin.
 |açıklama        | Hayır        |Profili açıklayan bir metin girin.
 |MDM Aracı APK’sı      | Evet       |https://aka.ms/intune_kme
+|Bu uygulamayı Google Cihaz Sahibi olarak etkinleştir | Hayır | Android için bu seçeneği belirtmeyin. Bu, yalnızca Android Kurumsal için geçerlidir.
 |Kurulum sihirbazını atlama  | Hayır        |Son kullanıcı adına standart cihaz kurulum istemlerini atlamak için bunu seçin.
 |Son Kullanıcının Kaydı İptal Etmesine İzin Ver | Hayır | Kullanıcıların KME’yi iptal etmesine izin vermek için bunu seçin.
 |Özel JSON        | Hayır        |Burayı boş bırakın.
-| EULA’lar, Hizmet Koşulları ve Kullanıcı Sözleşmeleri| Hayır | Knox ile ilgili sözleşmeleri kullanıcıların kabulüne sunmak için bunu seçin.
+| Yasal sözleşmeler ekle | Hayır | Burayı boş bırakın.
 Bu profil ile bir Knox lisansını ilişkilendir | Hayır | Bunu seçmeyin. KME kullanarak Intune’a kaydolurken bir Knox lisansı gerekmez.
 
 ## <a name="add-devices"></a>Cihazları ekleme
@@ -80,7 +99,7 @@ Eklenen cihazların kaydedilebilmesi için önce Knox Portalı’nda bu cihazlar
 
 ## <a name="configure-how-end-users-sign-in"></a>Son kullanıcıların nasıl oturum açacağını yapılandırma
 
-Intune’a KME kullanarak kaydedilen cihazlarda son kullanıcıların nasıl oturum açacağını aşağıdaki gibi yapılandırabilirsiniz:
+Android için KME kullanarak Intune’a kaydedilmiş cihazlarda bir kullanıcının nasıl oturum açacağını aşağıdaki gibi yapılandırabilirsiniz:
 
 - **Kullanıcı adı ilişkisi olmadan:** Knox Portalı’nda **Cihaz ayrıntıları** altında, eklenen cihazlar için **Kullanıcı kimliği** ve **Parola** alanlarını boş bırakın. Bu, son kullanıcının Intune’a kaydolurken kullanıcı adı ve parola girmesini gerektirir.
 
@@ -88,7 +107,7 @@ Intune’a KME kullanarak kaydedilen cihazlarda son kullanıcıların nasıl otu
 
 > [!NOTE]
 >
->Kullanıcı ilişkisi tanımlandığında, cihaz yalnızca ilişkili kullanıcı tarafından KME kullanarak kaydedilebilir. Bu, cihaz silinip sıfırlandıktan sonra bile geçerlidir. Knox Portalı’nda kullanıcı ilişkisi tanımlanmadığında ise geçerli bir Intune lisansı olan tüm kullanıcılar KME kullanarak cihazı kaydedebilir.
+>Kullanıcı ilişkisi, yalnızca Android kaydı için geçerlidir. Kullanıcı ilişkisi tanımlandığında, cihaz yalnızca ilişkili kullanıcı tarafından KME kullanarak kaydedilebilir. Bu, cihazda fabrika sıfırlaması yapıldıktan sonra bile geçerlidir. Knox portalında kullanıcı ilişkisi tanımlanmadığında ise geçerli bir Intune lisansı olan tüm kullanıcılar KME kullanarak cihazı kaydedebilir.
 >
 
 ## <a name="distribute-devices"></a>Cihazları dağıtma
@@ -98,13 +117,15 @@ Intune’da bir MDM profili oluşturup atadıktan, bir kullanıcı adıyla iliş
 Bu bilgiler yardımcı olmadı mı? [Knox Mobil Kayıt Kullanıcı Kılavuzu](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)’na göz atın.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
-- **Google Play Hesabı:** Google Play hesabı, cihazı Microsoft Intune’a kaydetmek için gerekli değildir. Ancak Intune Şirket Portalı’na gelecek güncelleştirmeler, cihazda bir Google Play hesabı gerektirebilir.
 
-- **Google Cihaz Sahibi modu:** KME kullanarak Google Cihaz Sahibi moduna kaydolmak, bu Önizleme’de desteklenmez. Bu senaryo şu anda incelenmektedir.
+- **Cihaz Sahibi desteği**: Intune, Android Kurumsal kullanarak cihazların yalnızca bilgi noktası moduna kaydedilmesini destekler. Diğer Android Kurumsal cihaz sahibi modları, Intune’da kullanılabilir hale geldikçe desteklenmeye başlayacaktır.
 
-- **“Parola” alanı yoksayılır:** Knox Portalı’ndaki **Cihaz ayrıntıları**’nda **parola** alanı doldurulursa Intune Şirket Portalı uygulaması bunu yoksayar. Cihaz kaydını tamamlamak için kullanıcının cihazda bir parola girmesi gerekir.
+- **Android Kurumsal’a kaydolmak için fabrika sıfırlaması**: Önceden ayarlanmış cihazları yeniden amaçlandırıyorsanız Android Kurumsal’a kaydolurken bu cihazlarda fabrika sıfırlaması yapılması gerekir.
 
-- **"Android Enterprise Kaydı:** KME, Android Enterprise Kaydını desteklemez.
+- **Google Play hesabı kullanılarak yapılan güncelleştirmeler:** Google Play hesabı, cihazı Microsoft Intune’a kaydetmek için gerekli değildir. Ancak Intune Şirket Portalı’na gelecek güncelleştirmeler, cihazda bir Google Play hesabı gerektirebilir. Google Play hesabı, Google Cihaz Sahibi’ne kaydolurken gerekli değildir.
+
+- **“Parola” alanı yoksayılır:** Knox Portalı’ndaki **Cihaz ayrıntıları**’nda **parola** alanı doldurulursa Intune Şirket Portalı uygulaması Android kaydı sırasında bunu yoksayar. Cihaz kaydını tamamlamak için kullanıcının cihazda bir parola girmesi gerekir.
+
 
 ## <a name="getting-support"></a>Destek alma
 [Samsung KME için destek alma](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm) hakkında daha fazla bilgi edinin.

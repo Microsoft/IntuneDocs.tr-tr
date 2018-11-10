@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391578"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915708"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -153,7 +153,7 @@ Cihaz uyumluluk ilkelerini koşullu erişim olmadan da kullanabilirsiniz. Uyumlu
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini dağıtma yolları
 Kullanıcı gruplarındaki kullanıcılara veya cihaz gruplarındaki cihazlara uyumluluk ilkesi dağıtabilirsiniz. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının tüm cihazlarında uyumluluk denetimi yapılır. Windows 10 sürüm 1803 ve daha yeni cihazlarda, birincil kullanıcı cihazı *kaydetmemişse* cihaz gruplarına dağıtmanız önerilir. Bu senaryoda cihaz gruplarını kullanmak, uyumluluk raporlamasına yardımcı olur.
 
-Varsayılan **Uyumluluk ilkesi ayarları** (Azure portalı > Cihaz uyumluluğu) şunları barındırır:
+Yerleşik bir **Uyumluluk ilkesi ayarları** kümesi (Azure portalı > Cihaz uyumluluğu), Intune’a kayıtlı tüm cihazlarda değerlendirmeye alınır. Bu görevler şunlardır:
 
 - **Kendisine hiçbir uyumluluk ilkesi atanmamış cihazları şöyle işaretle**: Bu özelliğin iki değeri vardır:
 
@@ -171,7 +171,7 @@ Varsayılan **Uyumluluk ilkesi ayarları** (Azure portalı > Cihaz uyumluluğu) 
 
 - **Uyumluluk durumu geçerlilik süresi (gün)**: Alınan tüm uyumluluk ilkeleri için cihazların durum rapor etme süresini girin. Bu süre içinde durum döndürmeyen cihazlar uyumsuz olarak kabul edilir. Varsayılan değer 30 gündür.
 
-Tüm cihazlarda bir **Varsayılan Cihaz Uyumluluk İlkesi** (Azure portalı > Cihaz uyumluluğu > İlke uyumluluğu) vardır. Bu varsayılan ilkeyi kullanarak bu ayarları izleyin.
+Tüm cihazlarda bir **Yerleşik Cihaz Uyumluluk İlkesi** (Azure portalı > Cihaz uyumluluğu > İlke uyumluluğu) vardır. Bu yerleşik ilkeyi kullanarak bu ayarları izleyin.
 
 İlke dağıtıldıktan sonra mobil cihazların ilke almasının ne kadar sürdüğü hakkında bilgi edinmek için bkz. [Cihaz profillerindeki sorunları giderme](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 

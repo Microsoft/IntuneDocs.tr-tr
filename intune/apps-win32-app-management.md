@@ -1,27 +1,10 @@
 ---
-title: Microsoft Intune’a Win32 uygulamaları ekleme
-titlesuffix: ''
-description: Microsoft Intune ile Win32 uygulamaları eklemeyi, teslim etmeyi ve yönetmeyi öğrenin. Bu konu, Intune Win32 uygulaması teslim ve yönetim özelliklerine yönelik genel bir bakışın yanı sıra, Win32 uygulaması sorun giderme bilgilerini sağlar.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/23/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
-ms.translationtype: HT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959596"
+title: Microsoft Intune’a Win32 uygulamaları ekleme titlesuffix: description: Microsoft Intune’da Win32 uygulamalarını ekleme, teslim etme ve yönetmeyi öğrenin. Bu konu, Intune Win32 uygulaması teslim ve yönetim özelliklerine yönelik genel bir bakışın yanı sıra, Win32 uygulaması sorun giderme bilgilerini sağlar. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 23.10.2018 ======= ms.date: 19.10.2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
 Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bulut bağlantılı müşterilerin Win32 uygulama yönetiminde Configuration Manager'ı kullanmaları mümkün olsa da, yanızca Intune kullanan müşteriler Win32 iş kolu (LOB) uygulamalarında daha fazla yönetim özelliğinden yararlanabilir. Bu konu, Intune Win32 uygulaması yönetim özelliklerine yönelik genel bir bakışın yanı sıra, sorun giderme bilgileri sağlar.
@@ -32,7 +15,7 @@ Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bu
 - Windows 10 istemcisi: 
     - Azure Active Directory’ye (AAD) veya Hibrit Azure Active Directory’ye katılmış olmalıdır
     - Intune’da kayıtlı (MDM ile yönetilen) olmalıdır
-- Windows uygulaması boyutu, genel önizlemede uygulama başına 2 GB ile sınırlıdır 
+- Windows uygulaması boyutu, genel önizlemede uygulama başına 8 GB ile sınırlıdır 
 
 > [!NOTE]
 > Şu anda Windows 10 sürüm 1607 Pro ve Education sürümlerini test ediyoruz ve geri bildirimlerinizi bekliyoruz.
@@ -109,6 +92,11 @@ Win32 uygulamalarını önceden işlemek için [Microsoft Intune Win32 Uygulama 
 3.  Uygulamanın GUID'si temelinde uygulamayı kaldırmak için kaldırma komut satırının tamamını ekleyin. 
 
     Örneğin: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > Bir Win32 uygulamasını **Kullanıcı** veya **Sistem** bağlamında yüklenecek şekilde yapılandırabilirsiniz. **Kullanıcı** bağlamı yalnızca belirli bir kullanıcıyı ifade eder. **Sistem** bağlamı bir Windows 10 cihazın tüm kullanıcılarını ifade eder.
+    >
+    > Son kullanıcıların Win32 uygulamalarını yüklemek için cihazda oturum açmış olmaları gerekmez.
 
 4.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
@@ -233,7 +221,6 @@ Aşağıdaki resimde, son kullanıcıya cihazda uygulama değişiklikleri yapıl
 ### <a name="troubleshooting-areas-to-consider"></a>Dikkate alınacak sorun giderme alanları
 - Aracının cihazda yüklü olduğundan emin olmak için hedefi denetleyin - Bir grubu hedefleyen Win32 uygulaması veya bir grubu hedefleyen PowerShell Betiği, güvenlik grubu için aracı yükleme ilkesi oluşturur.
 - İşletim sistemi sürümünü denetleyin – Windows 10 1607 veya üzeri.  
-- AAD kullanıcısı istemci makinesinde oturum açtı mı?
 - Windows 10 SKU'sunu denetleyin - Windows 10 S veya S modu etkinleştirilmiş olarak çalışan Windows sürümleri MSI yüklemesini desteklemez.
 
 ## <a name="next-steps"></a>Sonraki adımlar

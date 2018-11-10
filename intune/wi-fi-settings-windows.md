@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,28 +13,66 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329656"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236484"
 ---
-# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune’da Windows 10 ve üzeri cihazlar için Wi-Fi ayarları
+# <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune’da Windows 10 ve üzeri cihazlar için Wi-Fi ayarları ekleme
 
-Wi-Fi ayarları, Windows 10 ve üzerini çalıştıran cihazlara uygulanan yapılandırma profilinde kullanılır. Seçenekleriniz şunlardır:
+Belirli Wi-Fi ayarları ile bir profil oluşturabilir ve ardından bu profili Windows 10 ve üzeri cihazlarınıza dağıtabilirsiniz. Microsoft Intune; ağınızda kimlik doğrulama, bir önceden paylaşılan anahtar kullanma ve daha fazlası gibi pek çok özellik sunar.
 
-- Temel
-- Kurumsal
+Bu makalede bu ayarlar açıklanır.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 [Cihaz profili oluşturma](device-profile-create.md).
 
-## <a name="settings-for-basic-and-enterprise-profiles"></a>Temel ve kurumsal profiller için ayarlar
+## <a name="basic-profile"></a>Temel profil
+
+- **Wi-Fi türü**: **Temel**’i seçin. 
 
 - **Wi-Fi adı (SSID)**: Hizmet kümesi tanımlayıcısının kısaltması. Bu değer, cihazların bağlandığı kablosuz ağın gerçek adıdır. Bununla birlikte, bağlantıyı seçen kullanıcılar yalnızca yapılandırdığınız **Bağlantı adını** görür.
+
 - **Bağlantı adı**: Bu Wi-Fi bağlantısı için bir kolay ad girin. Girdiğiniz metin, kullanıcıların cihazlarında kullanılabilir bağlantılara göz attıklarında görecekleri addır.
+
+- **Aralığa girdiğinde otomatik bağlan**: **Evet** olduğunda, bu ağın aralığına giren cihazlar otomatik olarak bağlanır. **Hayır** olduğunda, cihazlar otomatik olarak bağlanmaz.
+
+  - **Mevcutsa daha fazla tercih edilen ağa bağlan**: Cihazlar tercih edilen birden çok ağın aralığında yer alıyorsa, tercih edilen ağı kullanmak için **Evet**'i seçin. Bu yapılandırma profilindeki Wi-Fi ağını kullanmak için **Hayır**'ı seçin.
+
+    Örneğin, **ContosoCorp** Wi-Fi ağını oluşturduğunuzu ve bu yapılandırma profili içinde **ContosoCorp**'u kullandığınızı varsayalım. Ayrıca, aralık içinde bir de **ContosoGuest** Wi-Fi ağınız olsun. Şirket cihazlarınız aralık içinde olduğunda, bunların otomatik olarak **ContosoCorp**'a bağlanmasını istiyorsunuz. Bu senaryoda, **Mevcutsa daha fazla tercih edilen ağa bağlan** özelliğini **Hayır** olarak ayarlayın.
+
+  - **SSID'sini yayınlamıyor olsa bile bu ağa bağlanın**: Ağınız gizli (SSID'si herkese açık şekilde yayınlanmıyor) olduğunda bile, ağınıza otomatik olarak bağlanmak üzere yapılandırma profili için **Evet**'i seçin. Bu yapılandırma profilinin gizli ağınıza bağlanmasını istemiyorsanız **Hayır**'ı seçin.
+
+- **Tarifeli Bağlantı Sınırı**: Bir yönetici, ağ trafiğinin nasıl tarifelendirileceğini belirleyebilir. Daha sonra uygulamalar ağ trafiği davranışlarını bu ayara göre ayarlayabilir. Seçenekleriniz şunlardır:
+
+  - **Sınırsız**: Varsayılan ayar. Bağlantı tarifeli değildir ve trafikte kısıtlama yoktur.
+  - **Sabit**: Ağ, ağ trafiği için sabit sınırla yapılandırılmışsa bu seçeneği kullanın. Bu sınıra ulaşıldıktan sonra ağ erişimi engellenir.
+  - **Değişken**: Ağ trafiği bayt başına ücretlendiriliyorsa (bayt başına maliyet) bu seçeneği kullanın.
+
+- **Kablosuz Güvenlik Türü**: Ağınızda cihazların kimliğini doğrulamak için kullanılan güvenlik protokolünü girin. Seçenekleriniz şunlardır:
+  - **Açık (kimlik doğrulamasız)**: Bu seçeneği yalnızca ağ güvenlik altına alınmamış olduğunda kullanın.
+  - **WPA/WPA2-Kişisel**: Daha güvenli bir seçenektir ve genellikle Wi-Fi bağlantısı için kullanılır. Daha fazla güvenlik için önceden paylaşılan bir anahtar parolası veya ağ anahtarı girebilirsiniz. 
+
+    - **Önceden paylaşılan anahtar** (PSK): İsteğe bağlıdır. Güvenlik türü olarak **WPA/WPA2-Kişisel**’i seçtiğinizde gösterilir. Kuruluşunuzun ağı ayarlandığında veya yapılandırıldığında bir parola veya ağ anahtarı da yapılandırılır. PSK değeri için bu parolayı veya ağ anahtarını girin. 8-64 karakter arasında bir dize girin. Parolanız veya ağ anahtarınız 64 karakterden oluşuyorsa, onaltılık karakterler girin.
+
+- **Şirket ara sunucu ayarları**: Kuruluşunuz içinde ara sunucu ayarlarını kullanmak için seçin. Seçenekleriniz şunlardır:
+  - **Hiçbiri**: Hiçbir ara sunucu ayarı yapılandırılmaz.
+  - **El ile yapılandır**: **Ara sunucu IP adresini** ve onun **Bağlantı noktası numarasını** girin.
+  - **Otomatik olarak yapılandır**: Proxy otomatik yapılandırma (PAC) betiğine işaret eden URL’yi girin. Örneğin, şunu girin: `http://proxy.contoso.com/proxy.pac`.
+
+Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil oluşturuldu ve profiller listesinde gösteriliyor.
+
+## <a name="enterprise-profile"></a>Kurumsal profil
+
+- **Wi-Fi türü**: **Kurumsal**’ı seçin. 
+
+- **Wi-Fi adı (SSID)**: Hizmet kümesi tanımlayıcısının kısaltması. Bu değer, cihazların bağlandığı kablosuz ağın gerçek adıdır. Bununla birlikte, bağlantıyı seçen kullanıcılar yalnızca yapılandırdığınız **Bağlantı adını** görür.
+
+- **Bağlantı adı**: Bu Wi-Fi bağlantısı için bir kolay ad girin. Girdiğiniz metin, kullanıcıların cihazlarında kullanılabilir bağlantılara göz attıklarında görecekleri addır.
+
 - **Aralığa girdiğinde otomatik bağlan**: **Evet** olduğunda, bu ağın aralığına giren cihazlar otomatik olarak bağlanır. **Hayır** olduğunda, cihazlar otomatik olarak bağlanmaz.
   - **Mevcutsa daha fazla tercih edilen ağa bağlan**: Cihazlar tercih edilen birden çok ağın aralığında yer alıyorsa, tercih edilen ağı kullanmak için **Evet**'i seçin. Bu yapılandırma profilindeki Wi-Fi ağını kullanmak için **Hayır**'ı seçin.
 
@@ -42,18 +80,11 @@ Wi-Fi ayarları, Windows 10 ve üzerini çalıştıran cihazlara uygulanan yapı
 
   - **SSID'sini yayınlamıyor olsa bile bu ağa bağlanın**: Ağınız gizli (SSID'si herkese açık şekilde yayınlanmıyor) olduğunda bile, ağınıza otomatik olarak bağlanmak üzere yapılandırma profili için **Evet**'i seçin. Bu yapılandırma profilinin gizli ağınıza bağlanmasını istemiyorsanız **Hayır**'ı seçin.
 
-- **Şirket ara sunucu ayarları**: Kuruluşunuz içinde ara sunucu ayarlarını kullanmak için seçin. Seçenekleriniz şunlardır:
-  - **Hiçbiri**: Hiçbir ara sunucu ayarı yapılandırılmaz.
-  - **El ile yapılandır**: **Ara sunucu IP adresini** ve onun **Bağlantı noktası numarasını** girin.
-  - **Otomatik olarak yapılandır**: Ara sunucu otomatik yapılandırma (PAC) betiğine işaret eden URL'yi girin. Örneğin, şunu girin: `http://proxy.contoso.com/proxy.pac`.
+- **Tarifeli Bağlantı Sınırı**: Bir yönetici, ağ trafiğinin nasıl tarifelendirileceğini belirleyebilir. Daha sonra uygulamalar ağ trafiği davranışlarını bu ayara göre ayarlayabilir. Seçenekleriniz şunlardır:
 
-## <a name="settings-for-basic-profiles-only"></a>Yalnızca temel profiller için ayarlar
-
-- **Kablosuz Güvenlik Türü**: Ağınızda cihazların kimliğini doğrulamak için kullanılan güvenlik protokolünü girin. Seçenekleriniz şunlardır:
-  - **Açık (kimlik doğrulamasız)**: Bu seçeneği yalnızca ağ güvenlik altına alınmamış olduğunda kullanın.
-  - **WPA/WPA2-Kişisel**
-
-## <a name="settings-for-enterprise-profiles-only"></a>Yalnızca kurumsal profiller için ayarlar
+  - **Sınırsız**: Varsayılan ayar. Bağlantı tarifeli değildir ve trafikte kısıtlama yoktur.
+  - **Sabit**: Ağ, ağ trafiği için sabit sınırla yapılandırılmışsa bu seçeneği kullanın. Bu sınıra ulaşıldıktan sonra ağ erişimi engellenir.
+  - **Değişken**: Ağ trafiği bayt başına ücretlendiriliyorsa bu seçeneği kullanın.
 
 - **Çoklu oturum açma (SSO)**: Kimlik bilgilerinin bilgisayar ve Wi-Fi ağı oturum açma işleminde paylaşıldığı çoklu oturum açmayı (SSO) yapılandırmanıza olanak tanır. Seçenekleriniz şunlardır:
   - **Devre dışı bırak**: SSO davranışını devre dışı bırakır. Kullanıcının ağda ayrıca kimlik doğrulaması yapması gerekir.
@@ -107,11 +138,24 @@ Wi-Fi ayarları, Windows 10 ve üzerini çalıştıran cihazlara uygulanan yapı
 
         **Kimlik gizliliği (dış kimlik)**: **EAP-TTLS** EAP türü ile kullanın. Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
 
+- **Şirket ara sunucu ayarları**: Kuruluşunuz içinde ara sunucu ayarlarını kullanmak için seçin. Seçenekleriniz şunlardır:
+  - **Hiçbiri**: Hiçbir ara sunucu ayarı yapılandırılmaz.
+  - **El ile yapılandır**: **Ara sunucu IP adresini** ve onun **Bağlantı noktası numarasını** girin.
+  - **Otomatik olarak yapılandır**: Ara sunucu otomatik yapılandırma (PAC) betiğine işaret eden URL'yi girin. Örneğin, şunu girin: `http://proxy.contoso.com/proxy.pac`.
+
 - **Wi-Fi profilinin Federal Bilgi İşleme Standardı (FIPS) ile uyumlu olmasını zorla** FIPS 140-2 standardıyla doğrulama yaparken bunu **Evet** olarak ayarlayın. Bu standart, şifreleme tabanlı güvenlik sistemleri kullanan tüm ABD federal resmi kurumlarında dijital olarak saklanan, hassas fakat gizli olmayan bilgileri korumak için gereklidir. **Hayır**’ı seçerseniz FIPS ile uyumlu olamazsınız.
+
+Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil oluşturuldu ve profiller listesinde gösteriliyor.
 
 ## <a name="use-an-imported-settings-file"></a>İçeri aktarılan ayarlar dosyasını kullanma
 
 Intune'da sağlanmayan tüm ayarlar için, başka bir Windows cihazından Wi-Fi ayarlarını dışarı aktarabilirsiniz. Bu dışarı aktarma, tüm ayarlarıyla birlikte bir XML dosyası oluşturur. Ardından, bu dosyayı Intune'da içeri aktarın ve bunu Wi-Fi profili olarak kullanın. Bkz. [Windows cihazları için Wi-Fi ayarlarını dışarı ve içeri aktarma](wi-fi-settings-import-windows-8-1.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Intune'da Wi-Fi ayarlarını yapılandırma](wi-fi-settings-configure.md)
+
+Profil oluşturuldu ancak hiçbir şey yapmıyor. Daha sonra [bu profili atayın](device-profile-assign.md).
+
+## <a name="more-resources"></a>Daha fazla kaynak
+
+- [Windows 8.1](wi-fi-settings-import-windows-8-1.md) için kullanılabilir ayarlara göz atın.
+- Diğer platformlar dahil olmak üzere [Wi-Fi ayarlarına genel bakış](wi-fi-settings-configure.md)

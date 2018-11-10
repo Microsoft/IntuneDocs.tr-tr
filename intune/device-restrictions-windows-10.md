@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652164"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679398"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune’da Windows 10 (ve üzeri) cihaz kısıtlama için ayarlar
 Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.

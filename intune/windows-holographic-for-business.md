@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425300"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236399"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune ile Windows Holographic ve HoloLens cihazlarını yönetme ve kullanma
 
@@ -68,6 +68,10 @@ Intune kullanarak Windows Holographic for Business çalıştıran cihazlarınız
 
 Microsoft Intune, Windows Holographic for Business çalıştıran Microsoft HoloLens cihazlara Evrensel Windows Uygulamaları dağıtabilir. Uygulama paketlerinizi doğrudan Intune Azure portalından karşıya yükleyebilir veya İş İçin Microsoft Store’dan dağıtabilirsiniz. İlgili alanlar hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 - Intune Azure portalını kullanarak İş Kolu (LOB) uygulamalarını dağıtmak için bkz. [Windows iş kolu uygulamalarını Microsoft Intune’a ekleme](lob-apps-windows.md).
+
+    > [!NOTE]
+    > Intune, en fazla 8 GB’lık paket boyutuna izin verir. Bu paket boyutu, yalnızca Intune’a yüklenen LOB uygulamaları için geçerlidir.
+
 - İş İçin Microsoft Store kullanarak uygulama dağıtmak için bkz. [Microsoft Intune ile İş İçin Microsoft Mağazası’ndan satın aldığınız uygulamaları yönetme](windows-store-for-business.md). 
 - Microsoft Intune ile uygulama yönetimi hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune’da uygulama yönetimi nedir?](app-management.md).
 - Microsoft HoloLens için uygulama geliştirmek hakkında daha fazla bilgi edinmek için bkz. [Microsoft HoloLens için karma gerçeklik uygulamaları](https://www.microsoft.com/hololens/apps). 

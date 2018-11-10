@@ -15,36 +15,50 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5460db2d646d8bd417baa50d8188acbf69a251d
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827998"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236501"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durum sayfası ayarlama
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Cihaz kurulumu sırasında, kayıt durumu sayfası cihazda yükleme bilgilerini görüntüler. Bir kullanıcı kaydedildiğinde bazı uygulamalar, profiller ve sertifikalar tamamen yüklenmemiş olabilir. Durum sayfası, kullanıcıların kayıt sırasında ve sonrasında cihazlarının durumunu anlamasına yardımcı olabilir. Durum sayfasını tüm kullanıcılarınız için etkinleştirebilir veya belirli kullanıcı gruplarını hedefleyen profiller oluşturabilirsiniz.  Yükleme ilerleme durumunu göstermek, yükleme tamamlanana kadar kullanımı engellemek ve sıfırlamalara izin vermek gibi işlemler için profiller ayarlayabilirsiniz.
+Cihaz kurulumu sırasında, Kayıt Durumu Sayfası cihazdaki yükleme bilgilerini görüntüler. Bir kullanıcı ilk kaydı tamamlayıp cihazda oturum açtığında bazı uygulama, profil ve sertifikalar henüz yüklenmemiş olabilir. Kayıt durumu sayfası, kullanıcıların cihaz kurulumu sırasında cihazlarının durumunu anlamasına yardımcı olabilir. Kayıt durumu sayfası için birden çok profil oluşturabilir ve bunları farklı gruplara uygulayabilirsiniz. Profiller, şunları yapacak şekilde ayarlanabilir:
+- Yüklemenin ilerleme durumunu görüntüleme.
+- Yükleme tamamlanana kadar kullanımı engelleme.
+- Cihaz kurulumu başarısız olursa kullanıcının ne yapabileceğini belirtme.
+
+Aynı kullanıcı veya cihazdaki farklı profil atamaları arasında oluşabilecek çakışmaların önüne geçmek amacıyla her bir profil için öncelik sırasını da ayarlayabilirsiniz.
+
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Tüm kullanıcılar için varsayılan kayıt durumu sayfasını etkinleştirme
 
-Tüm son kullanıcılarınız için kayıt durumu sayfasını açmak için aşağıdaki adımları izleyin.
+Kayıt durumu sayfasını açmak için aşağıdaki adımları izleyin.
  
-1.  [Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Windows kaydı** > **Kayıt Durumu Sayfası (Önizleme)**’yi seçin.
-2.  **Kayıt Durumu Sayfası** dikey penceresinde, **Varsayılan** > **Ayarlar**’ı seçin.
-3.  **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**’i seçin.
-4.  Açmak istediğiniz diğer ayarları seçin ve **Kaydet**’i seçin.
+1. [Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Windows kaydı** > **Kayıt Durumu Sayfası (Önizleme)**’yi seçin.
+2. **Kayıt Durumu Sayfası** dikey penceresinde, **Varsayılan** > **Ayarlar**’ı seçin.
+3. **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**’i seçin.
+4. Açmak istediğiniz diğer ayarları seçin ve **Kaydet**’i seçin.
 
-## <a name="create-enrollment-status-page-profile-to-target-specific-users"></a>Belirli kullanıcıları hedeflemek için kayıt durumu sayfası profili oluşturma
+## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Kayıt durumu sayfası profili oluşturma ve bunu bir gruba atama
 
-1.  [Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Windows kaydı** > **Kayıt Durumu Sayfası (Önizleme)** > **Profil oluştur**’u seçin.
+1. [Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Windows kaydı** > **Kayıt Durumu Sayfası (Önizleme)** > **Profil oluştur**’u seçin.
 2. Bir **Ad** ve **Açıklama** sağlayın.
 3. **Oluştur**’u seçin.
 4. **Kayıt Durumu Sayfası** listesinde yeni profili seçin.
 5. **Atamalar** > **Grup seçin** > bu profili benimsemesini istediğiniz grupları seçin > **Seç** > **Kaydet**’i seçin.
 6. **Ayarlar** > bu profile uygulamak istediğiniz ayarları seçin > **Kaydet**’i seçin.
+
+## <a name="set-the-enrollment-status-page-priority"></a>Kayıt durumu sayfası önceliğini ayarlama
+
+Bir cihaz veya kullanıcı, birden fazla grupta bulunabilir ve birden fazla kayıt durumu sayfası profiline sahip olabilir. Bu gibi çakışmaları ele almak için her bir profile yönelik öncelikleri ayarlayabilirsiniz. Bir kişi birden çok kayıt durumu sayfa profiline sahipse yalnızca en yüksek önceliğe sahip profil uygulanır.
+
+1. [Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Windows kaydı** > **Kayıt Durumu Sayfası (Önizleme)**’yi seçin.
+2. Listede profilin üzerine gelin.
+3. Üç dikey noktayı kullanarak, profili listede dilediğiniz konuma sürükleyin.
 
 
 ## <a name="enrollment-status-page-tracking-information"></a>Kayıt durumu sayfası izleme bilgileri
@@ -65,8 +79,9 @@ Cihaz kurulumu için, kayıt durumu sayfası Tüm Cihazlar’a atandıysa şu ö
     - Makine başına iş kolu (LoB) MSI uygulamaları.
     - Yükleme bağlamı ile LoB mağaza uygulamaları = Cihaz.
     - Yükleme bağlamı ile çevrimdışı mağaza ve LoB mağaza uygulamaları = Cihaz.
-- Bağlantı profilleri (VPN ve Wi-Fi) henüz izlenmiyor, bu nedenle bunlar her zaman "0/0" olarak belirtilir.
-- Sertifikalar henüz izlenmiyor, bu nedenle bunlar her zaman "0/0" olarak belirtilir.
+- Bağlantı profilleri
+    - **Tüm Cihazlar**’a atanmış VPN veya Wi-Fi profilleri veya kaydedilen cihazın üyesi olduğu bir cihaz grubu (yalnızca Autopilot cihazları için)
+- **Tüm Cihazlar**’a atanmış sertifika profilleri veya kaydedilen cihazın üyesi olduğu bir cihaz grubu (yalnızca Autopilot cihazları için)
 
 ### <a name="account-setup"></a>Hesap kurulumu
 Hesap kurulumu için kayıt durumu sayfası şu öğeleri izler:
