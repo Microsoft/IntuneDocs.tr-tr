@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d1224c00a1f7e8cf303304b3a0f038ade79b9633
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e4330d8e8095df49b14ab60c4b08aae44d134452
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834619"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679228"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>macOS çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın
 
@@ -56,6 +56,6 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 
 ## <a name="proxy-settings"></a>Proxy ayarları
 
-- **Otomatik yapılandırma betiği** - Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL’si** (örneğin **http://proxy.contoso.com**) değerini girin.
+- **Otomatik yapılandırma betiği** - Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL’si** (örneğin `** http://proxy.contoso.com**`) değerini girin.
 - **Adres** - Proxy sunucusu adresini (IP adresi olarak) girin.
 - **Bağlantı noktası numarası** - Proxy sunucusuyla ilişkilendirilmiş bağlantı noktası numarasını girin.

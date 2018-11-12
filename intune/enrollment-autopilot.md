@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075906"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025194"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları kaydetme  
 Windows Autopilot cihaz kaydını basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -26,6 +26,12 @@ Windows Autopilot cihaz kaydını basitleştirir. Özelleştirilmiş işletim si
 ## <a name="prerequisites"></a>Önkoşullar
 - [Windows otomatik kayıt etkin olmalıdır](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium aboneliği olmalıdır](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>Intune’da içeri aktarma için CSV dosyasını alma
+
+PowerShell cmdlet’ini nasıl kullanacağınızı anlamak için bu cmdlet’e göz atın.
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
 ## <a name="add-devices"></a>Cihazları ekleme
 
@@ -41,13 +47,13 @@ Bilgilerini içeren CSV dosyasını içeri aktararak Windows Autopilot cihazlar�
 
 3. Cihaz bilgilerini içeri aktarmayı başlatmak için **İçeri Aktar**'ı seçin. İçeri aktarma birkaç dakika sürebilir.
 
-4. İçeri aktarma tamamlandıktan sonra **Cihaz kaydı** > **Windows kaydı** > **Windows Autopilot** > **Cihazlar** > **Eşitle**'yi seçin. Eşitlemenin sürdüğüne dair bir ileti görüntülenir. Kaç tane cihazın eşitlendiğine bağlı olarak işlemin tamamlanması birkaç dakikayı bulabilir.
+4. İçeri aktarma tamamlandıktan sonra **Cihaz kaydı** > **Windows kaydı** > **Windows Autopilot** > **Cihazlar** > **Eşitle**’yi seçin. Eşitlemenin sürdüğüne dair bir ileti görüntülenir. Kaç tane cihazın eşitlendiğine bağlı olarak işlemin tamamlanması birkaç dakikayı bulabilir.
 
 5. Yeni cihazları görmek için görüntüyü yenileyin.
 
 ## <a name="create-an-autopilot-device-group"></a>Bir Autopilot cihaz grubu oluşturma
 
-1. [Azure portalında Intune](https://aka.ms/intuneportal)'da **Gruplar** > **Yeni grup**'u seçin.
+1. [Azure portalında Intune](https://aka.ms/intuneportal)’da **Gruplar** > **Yeni grup**’u seçin.
 2. **Gruplar** dikey penceresinde:
     1. **Grup türü** olarak **Güvenlik**’i seçin.
     2. Bir **Grup adı** ve **Grup açıklaması** girin.
@@ -140,7 +146,7 @@ Kayıtlı olmayan Windows Autopilot cihazları silebilirsiniz.
 
 2. [Azure portalında Intune'da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar**'ı seçin.
 
-3. **Windows Autopilot cihazları** bölümünde silmek istediğiniz cihazları, sonra da **Sil**'i seçin.
+3. **Windows Autopilot cihazları** bölümünde silmek istediğiniz cihazları, sonra da **Sil**’i seçin.
 
 4. **Evet**'i seçerek silme işlemini onaylayın. Silme işlemi birkaç dakika sürebilir.
 
@@ -153,15 +159,14 @@ Mobil cihaz yönetimi ile ilgilenmiyorsanız, Autopilot'ı diğer portallarda ku
 - Başka bir portalda yapılmış profil atamalarını eşitleme
 - Başka bir portal üzerinden cihaz listesine yapılmış değişiklikleri görüntüleme
 
-## <a name="redeploying-windows-autopilot"></a>Windows Autopilot’ı yeniden dağıtma
+## <a name="windows-autopilot-for-existing-devices"></a>Mevcut cihazlar için Windows Autopilot
 
-Configuration Manager aracılığıyla [mevcut cihazlar için Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) kullanarak kaydederken Windows cihazlarını, ilişkilendirici kimliğine göre gruplayabilirsiniz. İlişkilendirici kimliği, Autopilot yapılandırma dosyasının bir parametresidir. [Azure AD cihaz özniteliği enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) değeri, “OfflineAutopilotprofile-<correlator ID>” değerine eşit olacak şekilde otomatik olarak ayarlanır. Bu, rastgele Azure AD dinamik gruplarının, çevrimdışı Autopilot kayıtları için enrollmentprofileName özniteliği kullanılarak ilişkilendirici kimliğine göre oluşturulmasını sağlar.
+Configuration Manager aracılığıyla [mevcut cihazlar için Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) kullanarak kaydederken Windows cihazlarını, ilişkilendirici kimliğine göre gruplayabilirsiniz. İlişkilendirici kimliği, Autopilot yapılandırma dosyasının bir parametresidir. [Azure Active Directory cihaz özniteliği enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects), otomatik olarak “OfflineAutopilotprofile-\<correlator ID\>” şeklinde ayarlanır. Bu, enrollmentprofileName özniteliği kullanılarak elde edilen ilişkilendirici kimliğine göre rastgele Azure Active Directory dinamik grupları oluşturulmasını sağlar.
 
-Autopilot kaydını desteklemeyen eski Windows sürümlerini yükseltiyorsanız çevrimdışı bir Autopilot profili kullanabilirsiniz. Autopilot, Windows 10 1809 veya daha üzeri bir sürümün temiz bir yüklemesi sırasında yardımcı olabilir. Çevrimdışı profilin bir parçası olarak bir ilişkilendirici kimliği belirtebilirsiniz. 
-
-UYARI: İlişkilendirici kimliği Intune’da önceden listelenmediğinden, kullanıcılar istedikleri ilişkilendirici kimliği altında kaydolabilirler. Kullanıcı, bir Autopilot veya Apple DEP profil adıyla eşleşen bir ilişkilendirici kimliği oluşturursa cihaz, enrollmentProfileName özniteliğine bağlı olarak herhangi bir dinamik Azure Active Directory cihaz grubuna eklenir. Bu çakışmayı önlemek için:
-- Her zaman enrollmentProfileName değerinin *tamamıyla* eşleşen dinamik grup kuralları oluşturun
-- Autopilot ve Apple DEP profillerini hiçbir zaman “OfflineAutopilotprofile-” ile başlayarak adlandırmayın.
+>[!WARNING] 
+> İlişkilendirici kimliği Intune’da önceden listelenmediğinden, cihaz herhangi bir ilişkilendirici kimliğini raporlayabilir. Kullanıcı, bir Autopilot veya Apple DEP profil adıyla eşleşen bir ilişkilendirici kimliği oluşturursa cihaz, enrollmentProfileName özniteliğine bağlı olarak herhangi bir dinamik Azure Active Directory cihaz grubuna eklenir. Bu çakışmayı önlemek için:
+> - Her zaman enrollmentProfileName değerinin *tamamıyla* eşleşen dinamik grup kuralları oluşturun
+> - Autopilot ve Apple DEP profillerini hiçbir zaman “OfflineAutopilotprofile-” ile başlayarak adlandırmayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Windows Autopilot'ı kayıtlı Windows 10 cihazları için yapılandırdıktan sonra bu cihazları nasıl yöneteceğinizi öğrenin. Daha fazla bilgi için bkz. [Microsoft Intune cihaz yönetimi nedir?](https://docs.microsoft.com/intune/device-management)
