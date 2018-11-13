@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024813"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298080"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
 
@@ -48,9 +48,6 @@ Grupları bir atamadan dışladığınızda, yalnızca kullanıcıları dışlay
 Dışlama işlemi yalnızca grupların doğrudan üyesi olanları değerlendirmeye alır ve bir kullanıcıyla ilişkili cihazları dikkate almaz. Ancak, bir kullanıcısı olmayan cihazlara ilke uygulanmaz. Bunun nedeni, bu cihazların **Tüm Kullanıcılar** grubuyla ilişkisi olmamasıdır.
 
 **Tüm Cihazlar** grubunu dahil edip **Tüm Kullanıcılar** grubunu dışlarsanız ilkeyi tüm gruplar alacaktır. Bu senaryodaki amaç, ilişkili kullanıcısı olan cihazları bu ilkeden dışlamaktır. Ancak cihazlar dışlanmaz çünkü dışlama, yalnızca grupların doğrudan üyesi olanları hesaba katar.
-
->[!TIP]
->Dışlamalar, uyumluluk ilkeleri ve uygulama atama için kullanılabilir değildir. Üyeleri bir atamadan dışlamak için **Kullanılabilir** ve **Uygulanamaz** atamalarını kullanabilirsiniz. Örneğin bir uygulamayı **Kullanılabilir** amacıyla **Tüm şirket kullanıcıları** grubuna ve uygulamayı **Uygulanamaz** amacıyla **Üst Düzey Yönetim Kadrosu** grubuna atarsınız. Uygulama, **Üst Düzey Yönetim Kadrosu** grubundaki kullanıcılar *hariç* tüm kullanıcılara atanır. Uygulamayı **Gerekli** amacıyla **Tüm şirket kullanıcıları** grubuna atarsanız **Üst Düzey Yönetim Kadrosu** grubundaki kullanıcılar da dahil edilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Cihaz profili atamaları izleme hakkında yönergeler için [Cihaz profillerini izleme](device-profile-monitor.md) konusuna bakın.
