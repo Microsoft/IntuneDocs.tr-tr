@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune'da Android cihazları için VPN ayarlarını yapılandırma - Azure | Microsoft Docs
-description: Android ve Android for Work cihazlarına VPN yapılandırma profili oluştururken, bağlantı adını girin, VPN sunucusunun FQDN veya IP adresini girin, kullanıcıların VPN sunucusunda nasıl kimlik doğrulayacağını belirleyin ve ardından SonicWall, Check Point Capsule, Pulse Secure ve Edge bağlantı türlerini seçin.
+description: Android ve Android for Work cihazları için VPN yapılandırma profili oluştururken bağlantı adını girin, VPN sunucusunun IP adresini veya FQDN’sini girin, kullanıcıların VPN sunucusunda nasıl kimlik doğrulayacağını belirleyin ve daha sonra Citrix, SonicWall, Check Point Capsule, Pulse Secure ve Microsoft Edge bağlantı türlerini seçin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f02a76def463c4ef1c3ee24b021df3185d263ecf
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
-ms.translationtype: HT
+ms.openlocfilehash: 113d2e52783f3c7e9f013d2cc239efad45408c87
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279330"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576826"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>Intune’da Android çalıştıran cihazlar için VPN ayarları yapılandırma
 

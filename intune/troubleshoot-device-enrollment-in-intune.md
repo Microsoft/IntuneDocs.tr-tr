@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
-ms.translationtype: HT
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237672"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511052"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
@@ -391,6 +391,28 @@ VPP belirteci ile sorunları düzelttikten sonra engellenen cihazları silmeniz 
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Kullanıcılara kayıt işlemini yeniden başlatmalarını söyleyin
 Engellenen cihazları sildikten sonra kullanıcılara kayıt işlemini yeniden başlatmalarını söyleyebilirsiniz.
+
+## <a name="macos-issues"></a>macOS sorunları
+
+### <a name="macos-enrollment-errors"></a>macOS kayıt hataları
+**Hata iletisi 1:** *Bir sanal makine kullanıyorsunuz gibi görünüyor. Sanal makinenizi, seri numarası ve donanım modeli dahil olmak üzere tamamen yapılandırdığınıza emin olun. Bu bir sanal makine değilse lütfen desteğe başvurun.*  
+
+**Hata iletisi 2:** *Cihazınızı yönetmeye çalışırken sorun yaşıyoruz. Sanal makine kullanıyorsanız, kısıtlı bir seri numaranız varsa veya cihaz başkasına atanmışsa bu sorun ortaya çıkabilir. Bu sorunları nasıl çözeceğinizi öğrenin veya şirketinizin destek birimiyle iletişime geçin.*
+
+**Sorun:** Bu ileti, aşağıdaki sebeplerden birinin sonucu olabilir:  
+* Bir macOS sanal makine (VM) doğru yapılandırılmadı  
+* Cihazın şirkete ait olmasını veya Intune’da kayıtlı cihaz seri numarası olmasını gerektiren bazı cihaz kısıtlamaları etkinleştirdiniz  
+* Cihaz zaten kayıtlı ve Intune’da başka bir kişiye atanmış  
+
+**Çözüm:** İlk olarak cihazı hangi sorunun etkilediğini belirlemek için kullanıcınızla temasa geçin. Daha sonra aşağıdaki çözümlerden size en uygun olanını tamamlayın:
+* Kullanıcı test amaçlı bir VM kaydediyorsa, Intune’un VM seri numarasını ve donanım modelini tanıyabilmesi için bunun tamamen yapılandırıldığına emin olun. Intune’da [VM ayarlama](macos-enroll.md#enroll-virtual-macos-machines-for-testing) hakkında daha fazla bilgi edinin.  
+* Kuruluşunuz, kişisel macOS cihazları engelleyen bazı kayıt kısıtlamaları etkinleştirdiyse, Intune’a [kişisel cihazın seri numarasını el ile eklemelisiniz](corporate-identifiers-add.md#manually-enter-corporate-identifiers).  
+* Cihaz hala Intune’da başka bir kullanıcıya atanmış durumdaysa, eski kullanıcı Şirket Portalı uygulamasını kullanarak cihazı kaldırmamış veya sıfırlamamış demektir. Eski cihaz kaydını Intune’dan kaldırmak için:  
+
+    1. [Azure portalda Intune](https://portal.manage.microsoft.com)’a gidin ve yönetici kimlik bilgilerinizle oturum açın.
+    2. Intune’a gidin > **Cihazlar** > **Tüm cihazlar**’ı seçin.  
+    3. Kayıt sorunu yaşayan cihazı bulun. Sonuçları daraltmak için cihaz adına veya MAC/Donanım Adresine göre arayın.
+    4. Cihazı seçin > **Sil**’e tıklayın. Cihazla ilişkili diğer tüm girişleri silin.  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager’ı Intune kullanırken oluşan sorunlar
 ### <a name="mobile-devices-disappear"></a>Mobil cihazlar kayboluyor

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/26/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
-ms.translationtype: HT
+ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679398"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576894"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune’da Windows 10 (ve üzeri) cihaz kısıtlama için ayarlar
 Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
@@ -31,8 +31,8 @@ Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz 
 - **Ekran yakalama (yalnızca mobil)** - Kullanıcının cihaz ekranını resim olarak yakalamasına olanak sağlar.
 - **Kopyala ve yapıştır (yalnızca mobil)** - Cihazda uygulamalar arasında kopyalama ve yapıştırma eylemlerine izin verin.
 - **El ile kayıt kaldırma** - Kullanıcının iş yeri hesabını cihazdan el ile silmesine olanak sağlar.
-   - Cihaz Azure Active Directory’ye katılmışsa ve otomatik kayıt etkinse, bu ilke ayarı uygulanmaz. 
-   - Bu ilke ayarı, Windows 10 Home çalıştıran bilgisayarlara uygulanmaz.
+   - Bilgisayar Azure AD’ye katılmışsa ve otomatik kayıt etkinse, bu ilke ayarı uygulanmaz. 
+   - Bu ilke ayarı, Windows 10 Home çalıştıran bilgisayarlarda geçerli değildir.
 - **Elle kök sertifika yüklemesi (yalnızca mobil)** - Kullanıcının elle kök sertifikaları ve ara CAP sertifikaları yüklemesini engeller.
 
 - **Kamera** - Cihazdaki kameranın kullanılmasına izin verin veya bunu engelleyin.
@@ -51,9 +51,9 @@ Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz 
 - **Cihaz bulma** - Bir cihazın diğer cihazlar tarafından bulunmasını engelleyin.
 - **Görev Değiştirici (yalnızca mobil)** - Cihazdaki görev değiştiriciyi engeller.
 - **SIM kart hatası iletişim kutusu (yalnızca mobil)** -SIM kart algılanmazsa cihazda bir hata iletisinin görüntülenmesini engeller.
-- **Ink Çalışma Alanı** - Kullanıcıların Ink çalışma alanına erişmesini engelleyin. Bu ayar yapılandırılmadığında, Ink çalışma alanı etkinleştirilir (özellik açılır) ve kullanıcının bunu kilit ekranının üst tarafında kullanmasına izin verilir.
+- **Ink Çalışma Alanı** - Kullanıcıların Ink çalışma alanına erişmesini engelleyin. **Yapılandırılmadı** olarak ayarlandığında, Ink çalışma alanı etkinleştirilir (özellik açılır) ve kullanıcının bunu kilit ekranının üst tarafında kullanmasına izin verilir.
 - **Otomatik yeniden dağıtım** - Yönetici haklarına sahip olan kullanıcıların cihaz kilidi ekranında **CTRL + Win + R** tuşunu kullanarak tüm kullanıcı verilerini ve ayarlarını silmelerini sağlar. Cihaz otomatik olarak yeniden yapılandırılacak ve yönetime yeniden kaydedilir.
-- **Cihaz kurulumu sırasında kullanıcıların ağa bağlanmasını gerektir (yalnızca Windows Insider)** - Windows 10 kurulumu sırasında Ağ sayfasından ileriye gitmek için cihazın bir ağa bağlanmasını gerekli kılmak için **Gerektir** olarak ayarlayın. Bu özellik önizlemedeyken bu ayarı kullanmak için Windows Insider derleme 1809 veya sonrası gerekir.
+- **Cihaz kurulumu sırasında kullanıcıların ağa bağlanmasını gerekli kıl (yalnızca Windows Insider)** - Windows 10 kurulumu sırasında cihazın Ağ sayfasından ileriye gidebilmesi için bir ağa bağlanmasını gerekli kılmak için **Gerekli Kıl** olarak ayarlayın. Bu özellik önizlemedeyken bu ayarı kullanmak için Windows Insider derleme 1809 veya sonrası gerekir.
 
 ## <a name="password"></a>Parola
 -   **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
@@ -70,14 +70,14 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
 ## <a name="personalization"></a>Kişiselleştirme
 
-- **Masaüstü arka plan resmi URL’si (Yalnızca masaüstü)** - Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz JPEG biçiminde bir resmin URL’sini belirtin. Kullanıcılar bunu değiştiremez.
+- **Masaüstü arka plan resmi URL’si (Yalnızca masaüstü)** - Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz JPEG biçiminde bir resmin URL’sini girin. Kullanıcılar bu resmi değiştiremez.
 
 ## <a name="privacy"></a>Gizlilik
 
 -   **Girişi kişiselleştirme** – Cortana, dikte veya Microsoft Mağazası uygulamaları için bulut tabanlı konuşma hizmeti kullanılmasına izin vermez. Bu hizmetlere izin verirseniz Microsoft, hizmeti geliştirmek için sesli veri toplayabilir.
 -   **Eşleştirme ve gizlilik kullanıcı onayı istemlerini otomatik kabul et** – Windows'un, uygulama çalıştırırken eşleştirme ve gizlilik onay iletilerini otomatik olarak kabul etmesine izin ver.
-- **Kullanıcı etkinliklerini yayımla**: Bunu **Engelle** şeklinde ayarlayarak, görev değiştiricide paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önleyin.
-- **Yalnızca yerel etkinlikler**: Bunu **Engelle** şeklinde ayarlayarak, görev değiştiricide yalnızca yerel etkinliklere bağlı olan paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önleyin.
+- **Kullanıcı etkinliklerini yayımla**: Görev değiştiricide paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önlemek için **Engelle** olarak belirleyin.
+- **Yalnızca yerel etkinlikler**: Görev değiştiricide yalnızca yerel etkinliklere bağlı olan paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önlemek için **Engelle** olarak belirleyin.
 
 Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **Uygulama başına gizlilik özel durumları**'nı kullanarak uygulama başına özel durumlar tanımlayabilirsiniz.
 
@@ -98,8 +98,8 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 - **Telefon** - Bu uygulamanın kameraya erişip erişemeyeceğini tanımlayın.
 - **Radyolar** - Bazı uygulamalar verileri gönderip almak için cihazınızdaki radyoları (örneğin, Bluetooth) kullanır ve bu radyoları açması veya kapatması gerekir. Bu uygulamanın bu radyoları denetleyip denetleyemeyeceğini tanımlayın.
 - **Görevler** - Bu uygulamanın görevlerinize erişip erişemeyeceğini tanımlayın.
-- **Güvenilen cihazlar** - Bu uygulamanın güvenilen cihazları (zaten bağlantılı olduğunuz ya da bu PC, tablet veya telefonla birlikte gelen donanımlar) kullanıp kullanamayacağını tanımlayın. Örneğin: televizyonlar, projektörler, vb.
-- **Geri bildirim ve tanılamalar** - Bu uygulamanın tanılama bilgilerine erişip erişemeyeceğini tanımlayın.
+- **Güvenilen cihazlar** - Bu uygulamanın güvenilen cihazları (zaten bağlandığınız ya da bu PC, tablet veya telefonla birlikte gelen donanım) kullanıp kullanamayacağını seçin. Örneğin: televizyonlar, projektörler, vb.
+- **Geri bildirim ve tanılamalar** - Bu uygulamanın tanılama bilgilerine erişip erişemeyeceğini seçin.
 - **Cihazlarla eşitle** - Bu uygulamanın bu PC, tablet veya telefonla açıkça eşleştirilmemiş kablosuz cihazlarla otomatik olarak bilgi paylaşma ve eşitleme işlemleri yapıp yapamayacağını tanımlayın.
 
 ## <a name="per-app-privacy-exceptions"></a>Uygulama başına gizlilik özel durumları
@@ -136,7 +136,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 - **Kilit ekranı resmi URL'si (yalnızca masaüstü)** - Windows kilit ekranı duvar kağıdı olarak kullanılacak JPEG biçiminde bir resim URL'si belirtin. Kullanıcılar bunu değiştiremez.
 -   **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** – Kullanıcıların süreyi yapılandırmasına izin verir 
 -   **Kilitleme ekranında Cortana (yalnızca masaüstü)**  – Cihaz kilitleme ekranındayken kullanıcının Cortana ile etkileşim kurmasına izin vermez (yalnızca Windows 10 masaüstü).
--   **Kilitli ekranda bildirimler** – Cihaz kilitleme ekranında uyarı iletileri gösterilmesini engelleyin.
+-   **Kilitli ekranda bildirimler** – Cihaz kilitleme ekranında uyarı iletilerinin gösterilmesini engelleyin.
 -   **Ekran zaman aşımı (yalnızca mobil)** - Ekranın kapanarak kilitlenmesi için geçecek süreyi saniye olarak belirtir.
 
 ## <a name="app-store"></a>Uygulama Mağazası
@@ -146,45 +146,45 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 -   **Güvenilir uygulama yüklemesi** - Güvenilir bir sertifikayla imzalanan uygulamaların dışarıdan yüklenmesine izin verir.
 -   **Geliştirici kilidini açma** - Dışarıdan yüklenen uygulamaların son kullanıcı tarafından değiştirilmesine izin verme gibi Windows geliştirici ayarlarına izin verir.
 -   **Paylaşılan kullanıcı uygulaması verileri** - Uygulamaların aynı cihazdaki farklı kullanıcılar arasında veri paylaşmasına izin verir.
--   **Yalnızca özel mağaza kullan** - Son kullanıcıların yalnızca özel mağazanızdan uygulama indirmesine izin vermek için bu ayarı etkinleştirin.
+-   **Yalnızca özel mağazayı kullan** - Son kullanıcıların yalnızca özel mağazanızdan uygulama indirmesine izin vermek için bu ayarı etkinleştirin.
 -   **Mağaza kaynaklı uygulama başlatma** - Cihaza önceden yüklenmiş veya Microsoft Mağazası'ndan indirilmiş tüm uygulamaları devre dışı bırakmak için kullanılır.
 -   **Uygulama verilerini sistem birimine yükle** - Uygulamaların cihazın sistem birimine veri depolamasını engeller.
 -   **Uygulamaları sistem sürücüsüne yükle** - Uygulamaların cihazın sistem sürücüsüne veri depolamasını engeller.
 -   **Oyun DVR (yalnızca masaüstü)** - Oyun kaydetme ve yayınlamaya izin verilip verilmediğini yapılandırır.
 -   **Yalnızca mağazadan yüklenebilen uygulamalar** - Kullanıcıların uygulama mağazası dışındaki yerlerden uygulama yükleyip yükleyemeyeceğini yapılandırır.
 
-## <a name="edge-browser"></a>Edge Tarayıcısı
+## <a name="microsoft-edge-browser"></a>Microsoft Edge Tarayıcısı
 
 -   **Microsoft Edge tarayıcısı (yalnızca mobil)** - Cihazda Microsoft Edge web tarayıcısının kullanılmasına izin verin.
--   **Adres çubuğu aşağı açılan listesi (yalnızca masaüstü)** – Yazdığınızda Edge'in açılan bir listede bir dizi öneri göstermesini durdurmak için bunu kullanın. Edge ile Microsoft hizmetleri arasında ağ bant genişliği kullanımını en aza indirmeye yardımcı olur.
--   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü)**  – Windows'un Internet Explorer ve Edge arasında sık kullanılanları eşitlemesine izin verir.
--   **Kullanıcıyı-izleme üst bilgileri gönderme** - Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine izleme (DNT) üst bilgileri gönderecek şekilde yapılandırır.
+-   **Adres çubuğu aşağı açılan listesi (yalnızca masaüstü)** – Siz bir şeyler yazarken Microsoft Edge’in açılır listeyle bir dizi öneri göstermesini engeller. Bu seçenek, Microsoft Edge ile Microsoft hizmetleri arasında ağ bant genişliği kullanımını en aza indirmeye yardımcı olur.
+-   **Microsoft tarayıcıları arasında sık kullanılanları eşitle (yalnızca masaüstü)**  – Windows’un Internet Explorer ve Microsoft Edge arasında sık kullanılanları eşitlemesine izin verir.
+-   **Do-not-track (izleme) üst bilgileri gönderme** - Microsoft Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine do-not-track (izleme) üst bilgileri gönderecek şekilde yapılandırır.
 -   **Tanılama bilgileri** - Tarayıcının İnternet tanımlama bilgilerini cihaza kaydetmesine olanak tanır.
--   **JavaScript** - Edge tarayıcısında JavaScript gibi betiklerin çalıştırılmasına izin verir.
+-   **JavaScript** - Microsoft Edge tarayıcısında JavaScript gibi betiklerin çalıştırılmasına izin verir.
 -   **Açılır pencereler** - Tarayıcıdaki açılır pencereleri engeller (yalnızca Windows 10 masaüstü için geçerlidir).
 -   **Arama önerileri** - Siz arama sözcükleri yazarken arama motorunuzun site önerilerinde bulunmasına olanak sağlar.
 -   **Intranet trafiğini Internet Explorer'a gönder** - Kullanıcıların Internet Explorer’da intranet web siteleri açmasına olanak sağlar (Yalnızca Windows 10 masaüstü).
 -   **Otomatik Doldurma** - Kullanıcıların tarayıcıdaki otomatik tamamlama ayarlarını değiştirmesine izin verin (Yalnızca Windows 10 masaüstü).
--   **Parola Yöneticisi** - Edge Parola Yöneticisi özelliğini etkinleştirin veya devre dışı bırakın.
+-   **Parola Yöneticisi** - Microsoft Edge Parola Yöneticisi özelliğini etkinleştirin veya devre dışı bırakın.
 -   **Kurumsal mod site listesi konumu** - Kurumsal modda açılan web siteleri listesinin nerede bulunacağını belirtir. Kullanıcılar bu listeyi düzenleyemez.<br>(Yalnızca Windows 10 masaüstü).
--   **Geliştirici araçları** - Son kullanıcının Edge geliştirici araçlarını açmasını engelleyin.
--   **Uzantılar** - Son kullanıcının cihaza Edge uzantıları yüklemesine izin verin.
+-   **Geliştirici araçları** - Son kullanıcının Microsoft Edge geliştirici araçlarını açmasını engelleyin.
+-   **Uzantılar** - Son kullanıcının cihaza Microsoft Edge uzantıları yüklemesine izin verin.
 -   **InPrivate gözatma** - Son kullanıcının InPrivate gözatma oturumları açmasını engelleyin.
--   **İlk çalıştırma sayfasını göster** – Edge'i ilk kez çalıştırdığınızda giriş sayfasının görüntülenmesini durdurur.
-    -   **İlk çalıştırma URL'si** – Bir kullanıcı ilk kez Edge’i çalıştırdığında görüntülenen sayfanın URL'sini belirtir (yalnızca Windows 10 Mobile).
--   **Ana sayfalar** - Edge tarayıcısında giriş sayfası olarak kullanmak istediğiniz sitelerin bir listesini ekler (yalnızca masaüstü).
--   **Başlangıç sayfasındaki değişiklikler** – Kullanıcıların Edge açıldığında görüntülenen başlangıç sayfalarını değiştirmesine izin verir. Edge başladığında açılan sayfayı veya sayfa listesini oluşturmak için Giriş sayfaları ayarını kullanın.
--   **About flags sayfasına erişimi engelle** - Son kullanıcının Edge’deki geliştirici ayarları ve deneysel ayarlar içeren about:flags sayfasına erişimini engelleyin.
+-   **İlk çalıştırma sayfasını göster** – Microsoft Edge’i ilk kez çalıştırdığınızda giriş sayfasının görüntülenmesini durdurur.
+    -   **İlk çalıştırma URL'si** – Bir kullanıcı Microsoft Edge’i ilk kez çalıştırdığında görüntülenen sayfanın URL’sini belirtir (yalnızca Windows 10 Mobile).
+-   **Ana sayfalar** - Microsoft Edge tarayıcısında giriş sayfası olarak kullanmak istediğiniz sitelerin bir listesini ekler (yalnızca masaüstü).
+-   **Başlangıç sayfasındaki değişiklikler** – Kullanıcıların Microsoft Edge açıldığında görüntülenen başlangıç sayfalarını değiştirmesine izin verir. Microsoft Edge başladığında açılan sayfayı veya sayfa listesini oluşturmak için Giriş sayfaları ayarını kullanın.
+-   **About flags (bayraklar hakkında) sayfasına erişimi engelle** - Son kullanıcıların Microsoft Edge’deki geliştirici ayarlarını ve deneysel ayarları içeren about:flags sayfasına erişimini engelleyin.
 -   **WebRtc localhost IP adresi** - Web RTC protokolü kullanarak telefon araması yaparken kullanıcıların localhost IP adresinin görüntülenmesini engelleyin.
 -   **Varsayılan arama motoru** - Kullanılacak varsayılan arama motorunu belirtin. Son kullanıcılar bu değeri istediği zaman değiştirebilir.
--   **Çıkışta tarama verilerini temizle** – Kullanıcı Edge'den çıktığında geçmişi ve tarama verilerini temizler.
--   **Canlı Kutucuk verisi toplama** – Kullanıcı, Edge'den başlatma menüsüne bir site sabitlediğinde Windows'un Canlı Kutucuk’tan bilgi toplamasını durdurur.
+-   **Çıkışta tarama verilerini temizle** – Kullanıcı Microsoft Edge’den çıktığında geçmişi ve tarama verilerini temizler.
+-   **Canlı Kutucuk verisi toplama** – Kullanıcı Microsoft Edge’den başlatma menüsüne bir site sabitlediğinde Windows’un Canlı Kutucuk’tan bilgi toplamasını durdurur.
 -  **Sık Kullanılanlar Listesi** - Sık Kullanılanlar dosyasının yolunu tanımlar. Örneğin, http://contoso.com/favorites.html.
--  **Sık Kullanılanlarda değişikliği kısıtlama** - Kullanıcıların Sık Kullanılanlar listesine ekleme, sıralama veya düzenleme işlemleri uygulamasını engellemek için bunu **Engelle** olarak ayarlayın. 
+-  **Sık Kullanılanlarda değişikliği kısıtlama** -  Kullanıcıların Sık Kullanılanlar listesine ekleme, sıralama veya düzenleme işlemleri uygulamasını engellemek için bu ayarı **Engelle** olarak belirleyin. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
-- **SmartScreen for Microsoft Edge** - Site ve dosya indirmelerine erişmek için Edge SmartScreen'i etkinleştirin.
+- **Microsoft Edge için SmartScreen** - Site ve dosya indirmelerine erişmek için Microsoft Edge SmartScreen’i etkinleştirin.
 - **Kötü niyetli site erişimi** - Kullanıcıların Windows Defender SmartScreen Filtresi uyarılarını yoksaymasını ve siteye gitmesini engelleyin.
 - **Doğrulanmamış dosyayı indirme** - Kullanıcıların Windows Defender SmartScreen Filtresi uyarılarını yoksaymasını ve doğrulanmamış dosyaları indirmesini engelleyin.
 
@@ -235,7 +235,27 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 
 ## <a name="start"></a>Başlangıç
 
-- **Uygulamaları görev çubuğundan kaldır** - Kullanıcıların uygulamaları Başlat menüsünden kaldırmasını engelleyin.
+- **Başlangıç menüsü düzeni** - Masaüstü cihazlarda Başlat menüsünü özelleştirmek için uygulamaların hangi sırayla listeleneceği dahil olmak üzere özelleştirmelerinizi ve daha fazlasını içeren bir XML dosyasını karşıya yükleyebilirsiniz. Kullanıcılar, girdiğiniz Başlat menüsü düzenini değiştiremezler.
+- **Başlat menüsünde kutucuklara web sitesi sabitleme** - Microsoft Edge’den, masaüstü cihazların Windows Başlat menüsünde bağlantı olarak görünen görüntüler aktarın.
+- **Uygulamaları görev çubuğundan kaldır** - Kullanıcıların uygulamaları Başlat menüsünden kaldırmasını engellemek için bu ayarı **Engelle** olarak belirleyin.
+- **Hızlı kullanıcı geçişi** - Eş zamanlı olarak oturum açmış kullanıcılar arasında oturum kapatmadan geçiş yapılmasını önlemek için bu ayarı **Engelle** olarak belirleyin.
+- **En çok kullanılan uygulamalar** - En çok kullanılan uygulamaların başlat menüsünde gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin. Bu ayrıca Ayarlar uygulamasında aynı ada sahip iki durumlu ayarı da devre dışı bırakır.
+- **Son eklenen uygulamalar** - Son eklenen uygulamaların başlat menüsünde gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin. Bu ayrıca Ayarlar uygulamasında aynı ada sahip iki durumlu ayarı da devre dışı bırakır.
+- **Başlangıç ekranı modu** - Başlangıç ekranının nasıl gösterileceğini belirleyin. Bunu **Tam ekran** veya **Tam ekran değil** şeklinde belirleyebilirsiniz.
+- **Atlama Listelerinde son açılan öğeler** - Son açılan atlama listelerinin başlat menüsünde ve görev çubuğunda gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin. Bu ayrıca Ayarlar uygulamasında aynı ada sahip iki durumlu ayarı da devre dışı bırakır.
+- **Uygulama listesi** - Ayarlar uygulamasının nasıl gösterileceğini belirleyin. Seçenekleriniz şunlardır: 
+  - Daralt
+  - Ayarlar uygulamasını daralt ve devre dışı bırak 
+  - Ayarlar uygulamasını kaldırır ve devre dışı bırakır
+- **Güç düğmesi** - Güç düğmesinin başlat menüsünde gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
+- **Kullanıcı Kutucuğu** - Kullanıcı kutucuğunun başlat menüsünde gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
+  - **Kilitle** - `Lock` seçeneğinin başlat menüsündeki kullanıcı kutucuğunda gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
+  - **Oturumu kapat** - `Sign out` seçeneğinin başlat menüsündeki kullanıcı kutucuğunda gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
+- **Sistemi Kapat** - `Update and shut down` ve `Shut down` seçeneklerinin başlat menüsündeki güç düğmesinde gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
+- **Uykuya Geç** - `Sleep` seçeneğinin başlat menüsündeki güç düğmesinde gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
+- **Hazırda Beklet** - `Hibernate` seçeneğinin başlat menüsündeki güç düğmesinde gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
+- **Hesap Değiştir** - `Switch account` seçeneğinin başlat menüsündeki kullanıcı kutucuğunda gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
+- **Yeniden Başlatma Seçenekleri** - `Update and restart` ve `Restart` seçeneklerinin başlat menüsündeki güç düğmesinde gösterilmesini önlemek için bu ayarı **Engelle** olarak belirleyin.
 - **Başlat Menüsünde Belgeler** - Windows Başlat menüsündeki Belgeler klasörünü gösterin veya gizleyin.
 - **Başlat Menüsünde İndirilenler** - Windows Başlat menüsündeki İndirilenler klasörünü gösterin veya gizleyin.
 - **Başlat Menüsünde Dosya Gezgini** - Windows Başlat menüsündeki Dosya Gezgini uygulamasını gösterin veya gizleyin.
@@ -269,7 +289,7 @@ Bir bilgi noktası cihazı genellikle tek bir uygulama veya belirli bir uygulama
 #### <a name="single-app-kiosks"></a>Tek uygulama bilgi noktaları
 Aşağıdaki ayarları girin:
 
-- **Kullanıcı hesabı** - Yerel (cihaz için) kullanıcı hesabını, bir AD etki alanı hesabını veya bilgi noktası uygulamasıyla ilişkili bir Azure AD hesabının oturum açma bilgilerini girin.
+- **Kullanıcı hesabı** - Cihaz için yerel kullanıcı hesabını, bir AD etki alanı hesabını veya bilgi noktası uygulamasıyla ilişkili bir Azure Active Directory hesabını girin.
   - Yerel hesap: `devicename\accountname`, `.\accountname` veya `accountname` olarak girin
   - Etki alanı hesabı: `domain\accountname` olarak girin
   - Azure AD hesabı: `AzureAD\emailaddress` olarak girin. Sabit bir etki alanıymış gibi “AzureAD” girdiğinizden emin olun. Daha sonra Azure AD e-posta adresiyle devam edin. Örneğin, şunu girin: `AzureAD\user@contoso.onmicrosoft.com`.
@@ -300,7 +320,7 @@ Aşağıdaki ayarları girin:
 
   [Birden fazla uygulama çalıştıran bir Windows 10 bilgi noktası oluşturma](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file), XML dosyaları kullanma ve oluşturma hakkında daha fazla ayrıntı sağlar.
 
-- **Atanmış kullanıcılar**: Eklediğiniz uygulamaları kullanabilecek bir veya daha fazla kullanıcı hesabı ekleyin. Hesap oturum açtığında, yalnızca yapılandırmada tanımlanmış uygulamalar kullanılabilir durumda olur. Hesap, cihazda yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesap oturum açma bilgileri olabilir.
+- **Atanmış kullanıcılar**: Eklediğiniz uygulamaları kullanabilecek bir veya daha fazla kullanıcı hesabı ekleyin. Hesap oturum açtığında, yalnızca yapılandırmada tanımlanmış uygulamalar kullanılabilir durumda olur. Hesap, cihaz için yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesabı olabilir.
 
     Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `domain\user@tenant.com` biçimini kullanın.
 
@@ -347,9 +367,9 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
 ## <a name="network-proxy"></a>Ağ proxy’si
 
 -   **Proxy ayarlarını otomatik olarak algıla** - Etkinleştirildiğinde, cihaz bir PAC betiğinin yolunu bulmayı dener.
--   **Proxy betiği kullan** - Proxy sunucusunu yapılandırmak için PAC betiği yolu belirtmek isterseniz bu seçeneği belirleyin.
+-   **Proxy betiği kullan** - Proxy sunucusunu yapılandırmak amacıyla bir PAC betiği yolu girmek için bu seçeneği belirleyin.
     -   **Kurulum betiği adresi URL’si** - Proxy sunucusunu yapılandırmak için kullanmak istediğiniz bir PAC betiğinin URL’sini girin.
--   **El ile proxy sunucusu kullan** - Proxy sunucusu bilgilerini el ile sağlamak istiyorsanız, bunu seçin.
+-   **El ile ayarlanan proxy sunucusu kullan** - Proxy sunucusu bilgilerini el ile girmek istiyorsanız bu seçeneği belirleyin.
     -   **Adres** - Proxy sunucusu adını veya IP adresini girin.
     -   **Bağlantı noktası numarası** - Proxy sunucunuzun bağlantı noktası numarasını girin.
     -   **Proxy özel durumları** - Proxy sunucusunu kullanmaması gereken herhangi bir URL girin. Her birini ayırmak için noktalı virgül kullanın.
@@ -374,12 +394,15 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
 
 ## <a name="cloud-printer"></a>Bulut Yazıcı
 
-- **Yazıcı bulma URL'si** -Bulut yazıcılarını bulma uç noktası.
-- **Yazıcı erişim yetkilisi URL'si** - OAuth belirteçlerini almak için kimlik doğrulama uç noktası.
-- **Azure yerel istemci uygulama GUID'si** - OAuthAuthority'den OAuth belirteçlerini almak için yetkilendirilen istemci uygulamasının GUID'si.
-- **Yazdırma hizmeti kaynak URI'si** - Azure Portal'da yapılandırıldığı şekliyle yazdırma hizmetinin OAuth kaynak URI'si.
-- **Sorgulanacak en fazla yazıcı sayısı (Yalnızca mobil)** - Bulma uç noktasından sorgulanacak yazıcı sayısı üst sınırı.
-- **Yazıcı bulma hizmeti kaynak URI'si** - Azure Portal'da yapılandırıldığı şekliyle yazıcı bulma hizmetinin OAuth kaynak URI'si.
+- **Yazıcı bulma URL’si** - Bulut yazıcılarını bulmak için URL’yi girin.
+- **Yazıcı erişim yetkilisi URL’si** - OAuth belirteçleri almak için Kimlik Doğrulama uç noktası URL’sini girin. Örneğin `https://login.microsoftonline.com/your Azure AD Tenant ID` gibi bir URL girebilirsiniz.
+- **Azure yerel istemci uygulama GUID’si** - OAuthAuthority’den OAuth belirteçlerini almak için yetkilendirilen istemci uygulamasının GUID’sini girin.
+- **Yazdırma hizmeti kaynak URI'si** - Azure portal’da yapılandırıldığı şekliyle yazdırma hizmetinin OAuth kaynak URI’sini girin. Örneğin `http://MicrosoftEnterpriseCloudPrint/CloudPrint` gibi bir URI girebilirsiniz.
+- **Sorgulanacak en fazla yazıcı sayısı (Yalnızca mobil)** - Sorgulanmasını istediğiniz yazıcı sayısı üst sınırını girin. Örneğin, şunu girin: `10`.
+- **Yazıcı bulma hizmeti kaynak URI’si** - Azure portal’da yapılandırıldığı şekliyle yazıcı bulma hizmetinin OAuth kaynak URI’sini girin. Örneğin `http://MopriaDiscoveryService/CloudPrint` gibi bir URI girebilirsiniz.
+
+> [!TIP]
+> [Windows Server Hibrit Bulut Yazdırma](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview)’yı ayarladıktan sonra bu ayarları yapılandırabilir ve daha sonra Windows cihazlarına dağıtabilirsiniz.
 
 ## <a name="local-printer"></a>Yerel Yazıcı
 - **Yazıcılar** - Eklenmiş olan yerel yazıcı listesi.
@@ -400,7 +423,7 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
 
 ## <a name="messaging"></a>İleti
 
-- **İleti eşitleme (yalnızca mobil)** - Her Yerden Mesajlaşma ve metin iletisi yedekleme ve kurtarmayı devre dışı bırakın.
+- **İleti eşitleme (yalnızca mobil)** - Her Yerden Mesajlaşma ile metin iletisi yedekleme ve kurtarmayı devre dışı bırakın.
 - **MMS (yalnızca mobil)** - Cihazdaki MMS gönderme ve alma işlevini devre dışı bırakın.
 - **RCS (yalnızca mobil)** - Cihazdaki Zengin İletişim Hizmetleri gönderme ve alma işlevini devre dışı bırakın.
 

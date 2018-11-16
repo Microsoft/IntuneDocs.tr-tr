@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 6/06/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 0e82a63cfbbb0780566f9dc1f4ddf0b914e4ca2c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425164"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576843"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune’da yazılım güncelleştirmelerini yönetme
 
@@ -36,7 +36,7 @@ Hizmet olarak Windows, Windows 10 cihazları güncelleştirmenin yoludur. Window
       
   Kullanılabilir hizmet kanalları hakkında ayrıntılar için bkz. [Hizmet olarak Windows’a genel bakış](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Erteleme Ayarları**: Cihaz gruplarının güncelleştirme yüklemelerini erteleyen erteleme ayarlarını yapılandırın. Güncelleştirme dağıtımınızı aşamalandırarak güncelleştirme boyunca ilerleme durumunu gözden geçirmek için bu ayarları kullanın.
-- **Duraklatma**: Güncelleştirme dağıtımı sırasında herhangi bir noktada bir sorun keşfederseniz güncelleştirmelerin yüklenmesini erteleyin.
+- **Duraklatma**: Güncelleştirme dağıtımı sırasında bir sorun varsa, güncelleştirme yüklemesini erteleyebilirsiniz. 
 - **Bakım penceresi**: Güncelleştirmelerin hangi saatler arasında yüklenebileceğini yapılandırın.
 - **Güncelleştirme türü**: Yüklenecek güncelleştirme türlerini seçin. Örneğin, Kalite Güncelleştirmeleri, Özellik Güncelleştirmeleri veya sürücüleri seçebilirsiniz.
 - **Yükleme davranışı**: Güncelleştirmelerin nasıl yükleneceğini yapılandırır. Örneğin, cihaz yüklemeden sonra otomatik olarak yeniden başlatılacak mı?
@@ -59,30 +59,23 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
     ![Tanılama ve kullanım verileri için Windows ayarı](./media/telemetry-basic.png)
 
-    Bu ayarı el ile yapılandırabilir veya Windows 10 ve üzeri sürümlerine yönelik bir Intune cihaz kısıtlama profili kullanabilirsiniz. Bunu gerçekleştirmek için **Genel** > **Tanılama verisi gönderme** ayarını en az **Temel** olarak yapılandırın. Cihaz profilleri hakkında daha fazla bilgi için bkz. [cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md).
+    Bu ayarı el ile yapılandırabilir veya Windows 10 ve üzeri için bir Intune profili kullanabilirsiniz (**Cihaz kısıtlamaları** > **Raporlama ve Telemetri** > **Kullanım verilerini paylaş**’ı en az **Temel** olarak ayarlayın). Cihaz profilleri hakkında daha fazla bilgi için bkz. [cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md).
 
-- Intune yönetim konsolunda yazılım güncelleştirmelerinin davranışını denetleyen dört ayar vardır. Bu ayarlar, Windows 10 masaüstü ve Windows 10 Mobile cihazlarına ait genel yapılandırma ilkesinin bir parçasıdır:
-  - **Otomatik güncelleştirmelere izin ver**
-  - **Yayın öncesi özelliklere izin ver**
-  - **Zamanlanan Yükleme Günü**
-  - **Zamanlanan Yükleme Saati**
+- Ayrıca Azure klasik portalındaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. Azure portala geçerken bu ayarlardan herhangi biri yapılandırılmışsa aşağıdakileri yapmanızı kesinlikle öneririz:
 
-  Ayrıca Azure klasik portalındaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. Bu ayarlardan herhangi birini yapılandırdıysanız Azure portalına geçiş sırasında aşağıdakileri yapmanız kesinlikle önerilir:
-
-1. Azure portalında ihtiyaç duyduğunuz ayarlara sahip Windows 10 güncelleştirme kademeleri oluşturun. **Yayın öncesi özelliklere izin ver** ayarı, en son Windows 10 derlemelerinde geçerli olmadığından Azure portalında desteklenmez. Windows 10 güncelleştirme kademeleri oluştururken kalan üç ayarı ve diğer Windows 10 güncelleştirme ayarlarını yapılandırabilirsiniz.
+  1. Azure portalında ihtiyaç duyduğunuz ayarlara sahip Windows 10 güncelleştirme kademeleri oluşturun. **Yayın öncesi özelliklere izin ver** ayarı, en son Windows 10 derlemelerinde geçerli olmadığından Azure portal’da desteklenmez. Güncelleştirme halkalarını oluştururken kalan ayarları ve diğer Windows 10 güncelleştirme ayarlarını yapılandırabilirsiniz.
 
    > [!NOTE]
    > Klasik portalda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak bu ayarlar uygulanır. Bu ayarlardan herhangi birini geçirir ve geçirilen ilkeyi Azure portalından düzenlerseniz söz konusu ayarlar ilkeden kaldırılır.
 
-2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme halkasına ekledikten sonra, olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. Örneğin aynı ayar farklı değerlerle yapılandırılırsa bir çakışma olur. Bunu anlamanın kolay bir yolu yoktur çünkü klasik portalda yapılandırılan ayarlar Azure portalında görüntülenmez.
+  2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme halkasına ekledikten sonra, olası ilke çakışmalarını önlemek için ayarları klasik portaldan silin. Örneğin aynı ayar farklı değerlerle yapılandırılırsa bir çakışma olur. Bunu anlamanın kolay bir yolu yoktur çünkü klasik portalda yapılandırılan ayarlar Azure portalda görüntülenmez.
 
 ## <a name="create-and-assign-update-rings"></a>Güncelleştirme halkaları oluşturma ve atama
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve ardından **Microsoft Intune**’u seçin.
-3. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** > **Oluştur**’u seçin.
-4. Bir ad ve açıklama (isteğe bağlı) girin ve ardından **Yapılandır**’ı seçin.
-5. **Ayarlar**’da aşağıdaki bilgileri girin:
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve daha sonra **Microsoft Intune**’u seçin.
+2. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** > **Oluştur**’u seçin.
+3. Bir ad ve açıklama (isteğe bağlı) girin ve ardından **Yapılandır**’ı seçin.
+4. **Ayarlar**’da aşağıdaki bilgileri girin:
 
    - **Hizmet kanalı**: Cihazın Windows güncelleştirmelerini alacağı kanalı ayarlayın.
    - **Microsoft ürün güncelleştirmeleri**: Microsoft Update’ten uygulama güncelleştirmeleri için tarama yapmayı seçin.
@@ -94,19 +87,19 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
    - **Kalite güncelleştirmesi geciktirme süresi (gün)**: Kalite güncelleştirmelerinin kaç gün geciktirileceğini girin. Bu Kalite Güncelleştirmelerini almayı, yayımlanmalarından sonra 30 güne kadar geciktirebilirsiniz.
 
-     Kalite Güncelleştirmeleri, genellikle mevcut Windows işlevselliğine yönelik düzeltme ve iyileştirmelerdir ve her ayın ilk Salı günü yayımlanır. Ancak Microsoft tarafından herhangi bir zamanda yayımlanmaları mümkündür. Kalite Güncelleştirmeleri, Windows Update’te kullanılabilir olduktan sonra bunları geciktirmeyi seçebilir ve ne kadar süre geciktireceğinizi belirtebilirsiniz.
+     Kalite Güncelleştirmeleri, genellikle mevcut Windows işlevselliğine yönelik düzeltme ve iyileştirmelerdir ve her ayın ikinci salı günü yayımlanır. İş için Windows Update yoluyla dağıtılan Kalite Güncelleştirmeleri, Microsoft tarafından herhangi bir anda başka güncelleştirmeler yayımlansa bile yalnızca bu güncelleştirmeleri (‘B’ yayını) alır. Kalite Güncelleştirmeleri, Windows Update’te kullanılabilir olduktan sonra bunları geciktirmeyi seçebilir ve ne kadar süre geciktireceğinizi belirtebilirsiniz. Daha fazla bilgi için bkz. [İş için Windows Update’i kullanarak güncelleştirme dağıtma](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 
    - **Özellik güncelleştirmesi geciktirme süresi (gün)**: Özellik Güncelleştirmelerinin kaç gün geciktirileceğini girin. Bu Özellik Güncelleştirmelerini almayı, yayımlanmalarından sonra 180 güne kadar geciktirebilirsiniz.
 
      Özellik Güncelleştirmeleri genellikle Windows’un yeni özellikleridir. **Hizmet kanalı** ayarını yapılandırdıktan sonra Özellik Güncelleştirmeleri, Windows Update’te kullanılabilir olduktan sonra bunları geciktirmeyi seçebilir ve ne kadar süre geciktireceğinizi belirtebilirsiniz.
 
-     Örneğin: **Hizmet kanalı, Yarı Yıllık Kanal (Hedefli) olarak ayarlı ve geciktirme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde Ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. Cihaz bu güncelleştirmeyi Şubat ayına kadar (30 gün sonra) almaz.
+     Örneğin: **Hizmet kanalı, Yarı Yıllık Kanal (Hedefli) olarak ayarlı ve geciktirme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi Windows Update’te önce herkese açık şekilde Ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. Cihaz bu güncelleştirmeyi Şubat ayına kadar (30 gün sonrası) almaz.
 
      **Hizmet kanalı, Yarı Yıllık Kanal olarak ayarlı ve geciktirme süresi 30 gün ise**: Diyelim ki X Özellik Güncelleştirmesi, Windows Update’te önce herkese açık şekilde Ocak ayında Yarı Yıllık Kanal (Hedefli) olarak yayımlandı. X Özellik Güncelleştirmesi, dört ay sonra nisanda Yarı Yıllık Kanal kapsamında yayımlanıyor. Cihaz, Özellik Güncelleştirmesini bu Yarı Yıllık Kanal sürümünden 30 gün sonra alır ve Mayıs ayında güncelleştirilir.
 
    - **Teslim iyileştirme indirme modu**: Cihazların Windows güncelleştirmelerini indirme yöntemini seçin. Ayrıntılar için bkz. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
-6. İşiniz bittiğinde **Tamam**’ı seçin. **Güncelleştirme Halkası Oluştur**’da **Oluştur**’u seçin.
+5. İşiniz bittiğinde **Tamam**’ı seçin. **Güncelleştirme Halkası Oluştur**’da **Oluştur**’u seçin.
 
 Yeni güncelleştirme kademesi, güncelleştirme kademeleri listesinde görünür.
 
@@ -120,10 +113,9 @@ Güncelleştirme uyumluluğunu, Intune’da Güncelleştirme Uyumluluğu adlı �
 ### <a name="review-update-compliance-in-intune"></a>Intune’da güncelleştirme uyumluluğunu gözden geçirme 
 <!-- 1352223 --> Yapılandırdığınız Windows 10 güncelleştirme halkalarının dağıtım durumunu görüntülemek için bir ilke raporunu gözden geçirin.
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Yazılım güncelleştirmeleri** > **Genel bakış**’ı seçin. Atadığınız tüm güncelleştirme halkalarının durumu hakkında genel bilgileri görebilirsiniz.
-4. Aşağıdaki raporlardan birini açın:
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve daha sonra **Microsoft Intune**’u seçin.
+2. **Yazılım güncelleştirmeleri** > **Genel bakış**’ı seçin. Atadığınız tüm güncelleştirme halkalarının durumu hakkında genel bilgileri görebilirsiniz.
+3. Aşağıdaki raporlardan birini açın:
 
    **Tüm dağıtım halkaları için**:  
    1. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları**’nda
@@ -158,17 +150,16 @@ Ticari kimliği yapılandırmaya ilişkin OMA-URI (büyük/küçük harfe duyarl
 ## <a name="pause-updates"></a>Güncelleştirmeleri duraklatma
 Bir cihazın Özellik Güncelleştirmeleri veya Kalite Güncelleştirmeleri almasını en çok 35 günlük bir süre boyunca duraklatabilirsiniz. En fazla gün sayısı geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmeleri’ni tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz.
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları**’nı seçin.
-4. Güncelleştirme halkaları listesinde, duraklatmak istediğiniz halkayı seçin ve sonra duraklatmak istediğiniz güncelleştirme türünü bağlı olarak **...** > **Kaliteyi Duraklat** > veya **Özelliği Duraklat**’ı seçin.
+1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve daha sonra **Microsoft Intune**’u seçin.
+2. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları**’nı seçin.
+3. Güncelleştirme halkaları listesinde, duraklatmak istediğiniz halkayı seçin ve sonra duraklatmak istediğiniz güncelleştirme türünü bağlı olarak **...** > **Kaliteyi Duraklat** > veya **Özelliği Duraklat**’ı seçin.
 
 > [!IMPORTANT]
 > Bir duraklatma komutu verdiğinizde, cihazlar bu komutu hizmete bir sonraki giriş yaptıkları sırada alır. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür.
 > Ayrıca, hedeflenen bir cihaz duraklatma komutunu verdiğiniz sırada kapalıysa bu cihaz açıldığında Intune’u denetlemeden önce, zamanlanmış güncelleştirmeleri indirip yükleyebilir.
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>En son Windows 10 yazılım güncelleştirmesini kaldırma 
-Windows 10 makinelerinizde çalışmanın kesilmesine neden olan bir sorun keşfederseniz, en son özellik güncelleştirmesini veya en son kalite güncelleştirmesini kaldırmayı (geri almayı) seçebilirsiniz. Özellik veya kalite güncelleştirmesini kaldırma işlemi yalnızca hizmetin içinde açıldığı hizmet kanalında kullanılabilir. Kaldırma işlemi, Windows 10 makinelerinizde önceki güncelleştirmeyi geri yüklemeye yönelik bir ilkeyi tetikler. Özellik güncelleştirmeleri için, en son sürümü kaldırma işleminin uygulanabilme süresini 2-60 gün arasıyla sınırlandırabilirsiniz. Yazılım güncelleştirmesini kaldırma seçeneklerini ayarlamak için:
+Windows 10 makinelerinizde çalışmanın kesilmesine neden olan bir sorun varsa, en son özellik güncelleştirmesini veya en son kalite güncelleştirmesini kaldırmayı (geri almayı) seçebilirsiniz. Özellik veya kalite güncelleştirmesini kaldırma işlemi yalnızca hizmetin içinde açıldığı hizmet kanalında kullanılabilir. Kaldırma işlemi, Windows 10 makinelerinizde önceki güncelleştirmeyi geri yüklemeye yönelik bir ilkeyi tetikler. Özellik güncelleştirmeleri için, en son sürümü kaldırma işleminin uygulanabilme süresini 2-60 gün arasıyla sınırlandırabilirsiniz. Yazılım güncelleştirmesini kaldırma seçeneklerini ayarlamak için:
 
 1. Intune’da **Yazılım güncelleştirmeleri**’ni seçin.
 2. **Windows 10 Güncelleştirme Halkaları**’nı, mevcut bir güncelleştirme halkasını ve **Kaldır**’ı seçin.

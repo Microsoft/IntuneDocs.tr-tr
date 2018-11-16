@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
-ms.translationtype: HT
+ms.openlocfilehash: 17b99c4a089fc426ecfeea803737fa8704f3b0a6
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505725"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212317"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>macS cihazınızdaki yaygın sorunları çözme
 
@@ -33,3 +33,6 @@ Kayıt sırasında ve sonrasında ortaya çıkan yaygın Mac OS sorunlarını gi
 - [Jamf tarafından yönetilen cihazım uyumlu değil](device-little-different-jamf.md)
 - [Seri numarasını bulamıyorum](how-do-i-find-the-serial-number-on-my-device-macos.md)
 - [Cihazımı tanımlamam istendi](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [macOS sanal makine kaydederken bir hata aldım](unable-to-get-macOS-device-managed.md)  
+- [macOS cihazımın seri numarasının kısıtlı olduğunu belirten bir ileti aldım](unable-to-get-macOS-device-managed.md)  
+- [Cihazım bir başkasına atanmış olabilir](unable-to-get-macOS-device-managed.md)  

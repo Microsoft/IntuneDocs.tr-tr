@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c58cc56672409d954c4bf0b2829ea23d1b0a93df
-ms.sourcegitcommit: b01c607fc666254c560f5b60bd8a0def8e48197c
-ms.translationtype: HT
+ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132478"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51577013"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
@@ -46,7 +46,7 @@ Android Enterprise (önceki adıyla Android for Work), grupları dahil etme ve h
 
 ### <a name="device-management"></a>Cihaz yönetimi
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>IE, Edge veya Chrome’da tüm cihazları CSV dosyalarına aktarma <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>IE, Microsoft Edge veya Chrome’da tüm cihazları CSV dosyalarına aktarma <!-- 2258071 -->
 **Cihazlar** > **Tüm cihazlar**’da cihazları CSV biçimli bir listeye **Dışarı Aktarabilirsiniz**. 10.000’den fazla cihazı olan Internet Explorer (IE) kullanıcıları, cihazlarını birden çok dosyaya başarıyla aktarabilirler. Her dosyada en fazla 10.000 cihaz bulunur.
 
 30.000’den fazla cihazı olan Edge ve Chrome kullanıcıları, cihazlarını birden çok dosyaya başarıyla aktarabilirler. Her dosyada en fazla 30.000 cihaz bulunur.
@@ -296,8 +296,8 @@ Cihazlar için [iki yeni gizlilik ayarı](device-restrictions-windows-10.md#priv
 - **Kullanıcı etkinliklerini yayımla**: Bunu **Engelle** şeklinde ayarlayarak, görev değiştiricide paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önleyin.
 - **Yalnızca yerel etkinlikler**: Bunu **Engelle** şeklinde ayarlayarak, görev değiştiricide yalnızca yerel etkinliklere bağlı olan paylaşılan deneyimleri ve yakın zamanda kullanılan kaynakların bulunmasını önleyin.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Edge tarayıcısı için yeni ayarlar <!--1469166 -->
-Edge tarayıcısı kullanan cihazlar için [iki yeni ayar artık](device-restrictions-windows-10.md#edge-browser) kullanılabilir: **Sık kullanılanlar dosyasının yolu** ve **Sık kullanılanlarda değişiklikler**.
+#### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Microsoft Edge tarayıcısı için yeni ayarlar <!--1469166 -->
+Microsoft Edge tarayıcısı kullanan cihazlar için [iki yeni ayar](device-restrictions-windows-10.md#microsoft-edge-browser) artık kullanılabilir: **Sık kullanılanlar dosyasının yolu** ve **Sık Kullanılanlarda değişiklikler**.
 
 ### <a name="app-management"></a>Uygulama yönetimi
 
@@ -1267,7 +1267,7 @@ Bu sürümde, Windows 10 cihaz kısıtlama profili için aşağıdaki kategorile
 -  Gizlilik
 -  Ara
 -  Windows Spot
--  Edge tarayıcısı
+-  Microsoft Edge tarayıcısı
 
 Windows 10 ayarları hakkında daha fazla bilgi için bkz. [Windows 10 ve üzeri sürümler için cihaz kısıtlama ayarları](device-restrictions-windows-10.md).
 

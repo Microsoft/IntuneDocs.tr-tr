@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
-ms.translationtype: HT
+ms.openlocfilehash: 6b6e270e01102ae05f04253ec57759aad35c26cf
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915691"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511001"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune'u ücretsiz deneyin 
 
@@ -51,7 +51,7 @@ Intune'u 30 gün boyunca ücretsiz deneyebilirsiniz. Zaten bir iş veya okul hes
 
     ![Microsoft Intune Deneme hesabına kaydolma web sayfasının ekran görüntüsü](./media/account-sign-up-site-user-id.png)
 
-    Kuruluşunuzun **.onmicrosoft.com** dizesi olmadan kullanmak istediğiniz kendi özel etki alanı varsa, bunu bu makalede aşağıda anlatılan Office 365 Yönetim Portalı'nda değiştirebilirsiniz.
+    Kuruluşunuzun **.onmicrosoft.com** dizesi olmadan kullanmak istediğiniz kendi özel etki alanı varsa, bunu bu makalenin devamında anlatılan Office 365 Yönetim Portalı’nda değiştirebilirsiniz.
 
 3. Kaydolma işleminin sonunda yeni hesap bilgilerinizi görüntüleyin.
 
@@ -124,7 +124,9 @@ Kullanabileceğiniz iki portal vardır:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıçta Intune'u bir test ortamında denemek için ücretsiz bir abonelik oluşturdunuz ve isteğe bağlı olarak bir özel etki alanı adı yapılandırdınız. Intune hakkında daha fazla bilgi edinmek için sonraki kullanıcı ekleme ve lisans atama hızlı başlangıcına geçin.
+Bu hızlı başlangıçta Intune’u bir test ortamında denemek için ücretsiz bir abonelik oluşturdunuz. Intune’u ayarlama hakkında daha fazla bilgi için bkz. [Intune’u ayarlama](setup-steps.md).
+
+Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Kullanıcı oluşturma](quickstart-create-user.md)
+> [Hızlı Başlangıç: Kullanıcı oluşturun ve ona bir lisans atayın](quickstart-create-user.md)

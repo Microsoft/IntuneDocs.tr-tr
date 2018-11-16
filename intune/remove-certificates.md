@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
-ms.translationtype: HT
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150124"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561950"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune’da SCEP ve PKCS sertifikalarını kaldırma
 
@@ -131,7 +131,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Yönetici, kullanıcıyı veya grubu Azure AD’den kaldırdığında
   - Yönetici, PKCS profilini değiştirdiğinde veya güncelleştirdiğinde
 
-## <a name="android--android-enterprise-devices"></a>Android ve Android Kurumsal cihazlar
+## <a name="android-knox-devices"></a>Android KNOX cihazları
 
 #### <a name="scep-certificates"></a>SCEP sertifikaları
 
@@ -177,6 +177,10 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Yönetici, PKCS profilini değiştirdiğinde veya güncelleştirdiğinde
   - Yapılandırma profili, grup atamasından kaldırıldığında
   - Uyumluluk ilkesi, grup atamasından kaldırıldığında 
+  
+  
+> [!NOTE]
+> Yukarıdaki senaryolar, Android for work cihazları için geçerli değildir. Eski Android cihazlarında (Samsung olmayan, iş profili olmayan herhangi bir cihaz) sertifika kaldırma etkin değildir. 
 
 ## <a name="macos-certificates"></a>macOS sertifikaları
 

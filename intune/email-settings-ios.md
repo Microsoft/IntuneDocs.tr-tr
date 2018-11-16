@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/21/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d27e90655e54051d73989202d2bc849a66208f5
-ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
-ms.translationtype: HT
+ms.openlocfilehash: a6fd10ab6a1e9dd7249e2ae1d4bf558d190276ed
+ms.sourcegitcommit: b0ee8626191961dc07f9f7f9d8e6a5fb09c63350
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910811"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51505887"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>iOS cihazlar için e-posta profili ayarları - Intune
 
@@ -44,15 +44,32 @@ iOS çalıştıran cihazlarınızı yapılandırmak için e-posta profili ayarla
       **Özel** öznitelikler kullanmayı seçerseniz şunları girin:
       - **Kullanılacak özel etki alanı adı**: Intune’un etki alanı adı olarak kullanacağı bir değer seçin; örneğin `contoso.com` veya `contoso`
 
-- **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) veya Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin.
+- **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) seçin. Exchange’de oturum açmak için birincil SMTP adresini kullanmak amacıyla **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin.
 - **Kimlik doğrulama yöntemi**: E-posta profili tarafından kullanılan kimlik doğrulama yöntemi olarak **Kullanıcı Adı ve Parola**’yı veya **Sertifikalar**’ı seçin. Azure çok faktörlü kimlik doğrulaması desteklenmez.
   - **Sertifika**’yı seçtiyseniz, Exchange bağlantısının kimliğini doğrulamak için kullanılan, daha önce oluşturduğunuz istemci SCEP veya PKCS sertifika profilini seçin.
-- **SSL**: E-posta gönderirken, e-posta alırken ve Exchange sunucusuyla iletişim kurarken Güvenli Yuva Katmanı (SSL) iletişimini kullanmak için **etkinleştirin**.
+- **SSL**: **Etkinleştir** olarak belirlenirse e-posta gönderirken, alırken ve Exchange sunucusuyla iletişim kurulurken Güvenli Yuva Katmanı (SSL) iletişimi kullanılır.
+- **OAuth**: **Etkinleştir** olarak belirlenirse e-posta gönderirken, alırken ve Exchange ile iletişim kurulurken Open Authorization (OAuth) iletişimi kullanılır. OAuth sunucunuz sertifika kimlik doğrulaması kullanıyorsa, **Kimlik doğrulama yöntemi** olarak **Sertifika**’yı belirleyin ve sertifikayı profile ekleyin. Diğer durumlarda **Kimlik doğrulama yöntemi** olarak **Kullanıcı adı ve parola**’yı belirleyin. OAuth kullanılırken şunları yaptığınızdan emin olun:
+
+  - Bu profili kullanıcılarınıza hedeflemeden önce e-posta çözümünüzün OAuth standardını desteklediğini onaylayın. Office 365 Exchange Online, OAuth standardını destekler. Şirket içi Exchange ve diğer iş ortağı veya üçüncü taraf çözümler ise OAuth’u desteklemeyebilir. Şirket içi Exchange, Modern Kimlik Doğrulaması için yapılandırılabilir ([Şirket İçi Exchange için Karma Modern Kimlik Doğrulaması Duyurusu](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/) blog gönderisine bakın).
+
+    E-posta profili OAuth kullanıyorsa ancak e-posta hizmeti bunu desteklemiyorsa, **Parolayı yeniden gir** seçeneği bozuk görünür. Örneğin kullanıcı Apple’ın cihaz ayarlarında **Parolayı yeniden gir**’i seçerse hiçbir şey olmaz.
+
+  - OAuth etkin olduğunda son kullanıcılar çok faktörlü kimlik doğrulamasını (MFA) destekleyen, farklı bir “Modern Kimlik Doğrulaması” e-posta oturum açma deneyimine sahip olurlar. 
+
+  - Bazı kuruluşlar, son kullanıcının [self servis uygulama erişimi](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-self-service-access) sağlama becerisini devre dışı bırakır. Bu senaryoda bir Yönetici “iOS Hesapları” kurumsal uygulamasını oluşturup kullanıcıya Azure AD’de uygulama erişimi verene kadar Modern Kimlik Doğrulaması oturum açma denemesi başarısız olabilir.
+
+    Varsayılan eylem, [Uygulama Erişim Paneli](https://docs.microsoft.com/azure/active-directory/user-help/active-directory-saas-access-panel-introduction) **Uygulama Ekle** özelliğini **iş onayı olmadan** kullanarak uygulama eklemektir. Daha fazla bilgi için bkz. [uygulamalara kullanıcı atama](https://docs.microsoft.com/azure/active-directory/manage-apps/ways-users-get-assigned-to-applications).
+
+  > [!NOTE]
+  > OAuth’u etkinleştirdiğinizde şunlar olur:  
+  > 1. Hedeflenmiş cihazlara yeni bir profil verilir.
+  > 2. Son kullanıcılardan kimlik bilgilerini yeniden girmeleri istenir.
+
 - **S/MIME**: S/MIME imzalama kullanarak giden e-posta göndermek için **S/MIME'yi etkinleştirin**. Etkinleştirildiğinde, şifrelenmiş e-posta alabilen alıcılara gönderdiğiniz e-postaları şifreleyebilir ve göndericilerden aldığınız e-postaların şifresini çözebilirsiniz.
-  - **Sertifika**'yı seçtiyseniz Exchange bağlantısının kimliğini doğrulamak ve/veya e-posta iletilerini şifrelemek için daha önce oluşturduğunuz bir PKCS sertifika profilini seçin.
+  - **Sertifika**’yı seçerseniz Exchange bağlantısının kimliğini doğrulamak ve/veya e-posta iletilerini şifrelemek için mevcut bir PKCS sertifika profilini seçin.
 - **Eşitlenecek e-posta miktarı**: Eşitlemek istediğiniz e-posta için gün sayısını seçin. Veya **Sınırsız**’ı seçerek kullanılabilir tüm e-postaları eşitleyin.
-- **İletilerin diğer e-posta hesaplarına taşınmasına izin ver**: **Etkinleştir** seçeneği, kullanıcıların e-posta iletilerini cihazlarında yapılandırdıkları farklı hesaplara taşımasına izin verir.
-- **Üçüncü taraf uygulamalarından e-posta gönderilmesine izin ver**: **Etkinleştir** seçeneği, kullanıcının bu profili e-posta göndermek için varsayılan hesap olarak seçmesini sağlayın ve üçüncü taraf uygulamaların yerel e-posta uygulamasında e-posta açmasına izin verir (örneğin e-postaya dosya eklemek için).
+- **İletilerin diğer e-posta hesaplarına taşınmasına izin ver**: **Etkinleştir** olarak belirlenirse, kullanıcıların e-posta iletilerini cihazlarında yapılandırdıkları farklı hesaplara taşımalarına izin verilir.
+- **Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver**: **Etkinleştir** olarak belirlenirse, kullanıcıların e-posta göndermek için varsayılan hesap olarak bu profili seçmelerine izin verilir. Üçüncü taraf uygulamaların, örneğin e-postaya dosya eklemek için yerel e-posta uygulamasında e-posta açmasına izin verilir.
 - **Son kullanılan e-posta adreslerini eşitle**: **Etkinleştir** seçeneği, kullanıcıların cihazda son kullanılan e-posta adreslerinin listesini sunucuyla eşitlemelerine olanak tanır.
 
 ## <a name="next-steps"></a>Sonraki adımlar

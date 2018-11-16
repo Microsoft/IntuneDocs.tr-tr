@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
-ms.translationtype: HT
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617218"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225686"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune cihaz kayıtları için çok faktörlü kimlik doğrulaması isteme
 
@@ -48,24 +48,18 @@ Bir cihaz kaydedildiğinde MFA istemek için şu adımları izleyin:
 >Microsoft Intune kaydı için **Cihaz tabanlı erişim kuralları** yapılandırmayın.
 
 1. Kimlik bilgilerinizle [Microsoft Azure portalında](https://portal.azure.com) oturum açın.
-2. Portalda **Azure Active Directory**’yi seçin.
-2. **Azure Active Directory**’de **Yönet** > **Kuruluş uygulamaları**’nı seçin.
-3. **Kuruluş uygulamaları**’nda **Yönet** > **Tüm uygulamalar**’ı seçin. Yönettiğiniz tüm Azure uygulamalarının listesini görürsünüz.
-3. Listeden **Microsoft Intune kaydı**’nı seçin.
-4. **Microsoft Intune kaydı**’nda **Güvenlik** > **Koşullu erişim**’i seçin.
-5. **Yeni ilke**’yi seçin.
-6. **Yeni** ilkede, ilke için açıklayıcı bir ad yazın.
-7. **Atamalar** kısmında **Kullanıcılar ve gruplar**’ı seçin.
-8. **Kullanıcılar ve gruplar**’da, ilkeyi alacak kullanıcı ve grupları seçin ve daha sonra **Bitti**’yi seçin.
-9. **Atamalar** kısmında **Bulut uygulamaları**’nı seçin.
-10. **Bulut uygulamaları**‘nın **Ekleme** sekmesinde, **Uygulama seç**’i, daha sonra **Seçin** > **Microsoft Intune Kaydı**’nı ve son olarak **Bitti**’yi seçin.
-11. **Atamalar** kısmında **Koşullar**’ı seçin.
-12. **Koşullar**’da MFA için hiçbir ayar yapılandırmanız gerekmez.
-13. **Erişim denetimleri** kısmında **Ver**’i seçin.
-14. **Ver** kısmında **Erişim ver**’i ve daha sonra **Çok faktörlü kimlik doğrulamasını gerektir**’i seçin.
-    **Cihazın uyumlu olarak işaretlenmesini gerektir**’i seçmeyin çünkü bir cihaz kaydedilene kadar cihazın uyumluluğu değerlendirilemez.
-15. **Seçin** öğesini belirleyin.
-16. **Yeni ilke**’de **İlkeyi etkinleştir** > **Açık**’ı ve daha sonra **Oluştur**’u seçin.
+2. Portalda **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**’ye gidin.
+3. **Azure Active Directory**’de, Güvenlik altında **[Koşullu erişim](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**’i seçin.
+4. **Yeni ilke**’yi seçin.
+5. **Yeni** ilkede, ilke için açıklayıcı bir ad yazın.
+6. **Atamalar** kısmında **Kullanıcılar ve gruplar**’ı seçin.
+7. **Kullanıcılar ve gruplar**’da **Kullanıcı veya grup seçin**’e tıklayın ve **Kullanıcılar ve gruplar**’ı işaretleyin. Daha sonra, bu ilkeyi alacak kullanıcı ve/veya grupları seçin ve **Bitti**’ye tıklayın.
+8. **Atamalar** kısmında **Bulut uygulamaları**’nı seçin.
+9. **Bulut uygulamaları**‘nın **Ekleme** sekmesinde, **Uygulama seç**’i, daha sonra **Seçin** > **Microsoft Intune Kaydı**’nı ve son olarak **Bitti**’yi seçin.
+10. **Atamalar** bölümünde, **Koşullar** altında MFA için hiçbir ayar yapılandırmanız gerekmez.
+11. **Erişim denetimleri** kısmında **Ver**’i seçin.
+12. **Ver** kısmında **Erişim ver**’i ve daha sonra **Çok faktörlü kimlik doğrulamasını gerektir**’i seçin. **Cihazın uyumlu olarak işaretlenmesini gerektir**’i seçmeyin çünkü bir cihaz kaydedilene kadar cihazın uyumluluğu değerlendirilemez. Daha sonra **Seç**’e tıklayın.
+13. **Yeni ilke**’de **İlkeyi etkinleştir** > **Açık**’ı ve daha sonra **Oluştur**’u seçin.
 
 
 

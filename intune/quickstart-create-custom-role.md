@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
-ms.translationtype: HT
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410778"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561933"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Hızlı Başlangıç: Özel rol oluşturma ve atama
 
@@ -64,7 +64,9 @@ Yeni özel rolü artık kullanmak istemiyorsanız, silebilirsiniz. **Roller** > 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıçta özel bir güvenlik işlemleri rolü oluşturup bir gruba atadınız. Güvenlik sorunları hakkında aşağıdaki makalede daha fazla bilgi edinebilirsiniz.
+Bu hızlı başlangıçta özel bir güvenlik işlemleri rolü oluşturup bir gruba atadınız. Intune’daki roller hakkında daha fazla bilgi için bkz. [Microsoft Intune ile rol tabanlı yönetim denetimi (RBAC)](role-based-access-control.md)
+
+Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md)
+> [Hızlı Başlangıç: iOS için bir e-posta cihaz profili oluşturma](quickstart-email-profile.md)

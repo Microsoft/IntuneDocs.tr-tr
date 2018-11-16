@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure’da Windows Holographic for Business için cihaz kısıtlamaları | Microsoft Docs
-description: Windows Holographic for Business için Microsoft Intune’da kayıt, coğrafi konum, parolalar, uygulama mağazasından uygulama yükleme, Edge’de çerezler ve açılır pencereler, Windows Defender, arama, bulut ve depolama, bluetooth bağlantısı, sistem saati ve kullanım verileri gibi cihaz kısıtlama ayarları hakkında bilgi edinin ve bu ayarları yapılandırın.
+description: Windows Holographic for Business için Microsoft Intune’da kaydı kaldırma, coğrafi konum, parolalar, uygulama mağazasından uygulama yükleme, Microsoft Edge’de çerezler ve açılır pencereler, Windows Defender, arama, bulut ve depolama, bluetooth bağlantısı, sistem saati ve Azure’da kullanım verileri gibi cihaz kısıtlama ayarları hakkında bilgi edinin ve bu ayarları yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
-ms.translationtype: HT
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321854"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576809"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune’da Windows Holographic for Business için cihaz kısıtlama ayarları
 
@@ -41,17 +41,17 @@ Microsoft HoloLens gibi Windows Holographic for Business çalıştıran cihazlar
 -   **Güvenilir uygulama yüklemesi** - Güvenilir bir sertifikayla imzalanan uygulamaların dışarıdan yüklenmesine izin verir.
 -   **Geliştirici kilidini açma** - Dışarıdan yüklenen uygulamaların son kullanıcı tarafından değiştirilmesine izin verme gibi Windows geliştirici ayarlarına izin verir.
 
-## <a name="edge-browser"></a>Edge Tarayıcısı
+## <a name="microsoft-edge-browser"></a>Microsoft Edge Tarayıcısı
 
 -   **Tanılama bilgileri** - Tarayıcının İnternet tanımlama bilgilerini cihaza kaydetmesine olanak tanır.
 -   **Açılır pencereler** - Tarayıcıdaki açılır pencereleri engeller (yalnızca Windows 10 masaüstü için geçerlidir).
 -   **Arama önerileri** - Siz arama sözcükleri yazarken arama motorunuzun site önerilerinde bulunmasına olanak sağlar.
--   **Parola Yöneticisi** - Edge Parola Yöneticisi özelliğini etkinleştirin veya devre dışı bırakın.
-- **Kullanıcıyı-izleme üst bilgileri gönderme** - Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine izleme (DNT) üst bilgileri gönderecek şekilde yapılandırır.
+-   **Parola Yöneticisi** - Microsoft Edge Parola Yöneticisi özelliğini etkinleştirin veya devre dışı bırakın.
+- **Do-not-track (izleme) üst bilgileri gönderme** - Microsoft Edge tarayıcısını, kullanıcıların ziyaret ettiği web sitelerine do-not-track (izleme) üst bilgileri gönderecek şekilde yapılandırır.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
-- **SmartScreen for Microsoft Edge** - Site ve dosya indirmelerine erişmek için Edge SmartScreen'i etkinleştirin.
+- **Microsoft Edge için SmartScreen** - Site ve dosya indirmelerine erişmek için Microsoft Edge SmartScreen’i etkinleştirin.
 
 ## <a name="search"></a>Ara
 - **Arama konumu** - Aramanın konumu kullanıp kullanamayacağını belirtin. bilgiler

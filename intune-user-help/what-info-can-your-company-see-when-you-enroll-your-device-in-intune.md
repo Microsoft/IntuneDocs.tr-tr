@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
-ms.translationtype: HT
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679262"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276124"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Cihazımı kaydettiğimde şirketim hangi bilgileri görebilir?
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Cihazımı kaydettiğimde kuruluşum hangi bilgileri görebilir?
 
-Bir cihazı Microsoft Intune’a kaydettiğinizde şirketiniz kişisel bilgilerinizi göremez. Bir cihaz kaydettiğinizde şirketinize cihazınızdaki cihaz modeli ve seri numarası gibi bazı bilgileri görüntüleme izni vermiş olursunuz. Şirketiniz, cihazdaki şirket bilgilerini korumaya yardımcı olması için bu bilgileri kullanır.
+Bir cihazı Microsoft Intune’a kaydettiğinizde kuruluşunuz kişisel bilgilerinizi göremez. Bir cihaz kaydettiğinizde kuruluşunuza cihazınızdaki cihaz modeli ve seri numarası gibi bazı bilgileri görüntüleme izni vermiş olursunuz. Kuruluşunuz, cihazdaki şirket bilgilerini korumaya yardımcı olması için bu bilgileri kullanır.
 
-**Şirketinizin asla göremeyeceği şeyler:**
+**Kuruluşunuzun asla göremeyeceği şeyler:**
 
 - Arama ve web tarama geçmişi
 - E-posta ve kısa mesajlar
@@ -35,20 +35,23 @@ Bir cihazı Microsoft Intune’a kaydettiğinizde şirketiniz kişisel bilgileri
 - Takvim
 -   Parolalar
 - Fotoğraflar uygulamasında veya film rulosunda yer alanları da içeren resimler
+- Dosyalar
 
-**Şirketinizin her zaman görebileceği şeyler:**
+**Kuruluşunuzun her zaman görebileceği şeyler:**
 
 - Google Pixel gibi cihaz modeli
-- Üretici, Microsoft gibi
-- İşletim sistemi, iOS gibi
-- Uygulama adları, Microsoft Word gibi
+- Cihaz üreticisi, örneğin Microsoft
+- İşletim sistemi ve sürümü, örneğin iOS 12.0.1
+- Microsoft Word gibi uygulama adları: Kişisel cihazlarda kuruluşunuz yalnızca yönetilen uygulama envanterinizi görebilir. Şirkete ait cihazlarda kuruluşunuz tüm uygulama envanterinizi görebilir.
 - Cihaz sahibi
 - Cihaz adı
-- Seri numarası
+- Cihaz seri numarası
+- IMEI
 
-**Şirketinizin görme olasılığı olan şeyler:**
+**Kuruluşunuzun görme olasılığı olan şeyler:**
 
--  Telefon numarası: **Şirkete** ait cihazlarda tam telefon numaranız görülebilir. **Kişisel** cihazlarda ise numaranızın yalnızca son dört hanesi şirketiniz tarafından görülebilir. Tüm cihazlarda **Cihaz Ayrıntıları** sayfasını açarak cihazın **Sahiplik Türü**’nü görebilirsiniz.
--  Konum: Şirketiniz asla cihazınızın konumunu göremez ancak denetimli bir iOS cihazını kaybetmeniz durumunda cihaz konumu görülebilir. [Nasıl bilgi edinirim?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Uygulama envanteri: Şirketiniz Mobil Tehdit Savunması kullanıyorsa iOS cihazınızdaki uygulamalar hakkında daha fazla ayrıntı görüntüleyebilecektir. [Mobil Tehdit Savunması](you-are-prompted-to-install-mtd-ios.md) hakkında daha fazla bilgi edinin.
-- Ağ bilgisi: Android cihazlar için ağ bağlantılarıyla ilgili bazı bilgiler şirket desteğiniz tarafından kullanılabilir olabilir. Örneğin, şirketiniz cihazların belli bir derleme içinde kalmasını gerektiriyorsa, cihazınız bağlı olduğu şebekeyi tanımlar. 
+-  Telefon numarası: **Şirkete** ait cihazlarda tam telefon numaranız görülebilir. **Kişisel** cihazlarda ise numaranızın yalnızca son dört hanesi kuruluşunuz tarafından görülebilir. Tüm cihazlarda **Cihaz Ayrıntıları** sayfasını açarak cihazın **Sahiplik Türü**’nü görebilirsiniz.
+- Cihaz depolama alanı: Gerekli bir uygulamayı yükleyemiyorsanız kuruluşunuz, yeterli alan olup olmadığını anlamak için cihazınızın depolama alanına bakabilir.  
+-  Konum: Kuruluşunuz cihazınızın konumunu asla göremez ancak denetimli bir iOS cihazını kaybetmeniz durumunda cihaz konumu görülebilir. [Nasıl bilgi edinirim?](https://go.microsoft.com/fwlink/?linkid=853816)
+- Uygulama envanteri: Kuruluşunuz Mobil Tehdit Savunması kullanıyorsa iOS cihazınızdaki uygulamalar hakkında daha fazla ayrıntı görüntüleyebilecektir. [Mobil Tehdit Savunması](you-are-prompted-to-install-mtd-ios.md) hakkında daha fazla bilgi edinin.
+- Ağ bilgisi: Android cihazlar için ağ bağlantılarıyla ilgili bazı bilgiler kuruluşunuzun destek birimi tarafından görülebilir. Örneğin kuruluşunuz cihazların belli bir bina içerisinde kalmasını gerektiriyorsa cihazınız, bağlı olduğu şebekeyi tanımlar. 

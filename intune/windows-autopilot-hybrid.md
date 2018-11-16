@@ -15,22 +15,22 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 120478644743619dbcfc5e8e36806a1109924331
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50972783"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298097"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Karma Azure Active Directory’ye olan katılmış cihazları Intune ve Windows Autopilot kullanarak dağıtma (Önizleme)
 Karma Azure Active Directory alanına katılmış olan cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin.
 
 > [!NOTE]
-> Bu özellik, gelecek birkaç gün içinde kullanıcı tabanının kullanımına sunulacaktır. Dolayısıyla bu özellik hesabınız için kullanılabilir olana kadar bu adımları uygulayamayabilirsiniz.
+> Bu özellik, gelecek birkaç gün içinde kullanıcı tabanının kullanımına sunulacaktır. Bu nedenle, bu özellik hesabınız için kullanılabilir olana kadar bu adımları uygulayamayabilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- [Karma Azure Active Directory’ye katılmış olan cihazları](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains) başarıyla yapılandırın.
+- [Karma Azure Active Directory’ye katılmış olan cihazları](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) başarıyla yapılandırın.
     - [Get-MsolDevice cmdlet’ini kullanarak kaydı doğruladığınızdan]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) emin olun.
 
 Kaydedilecek cihazlar ayrıca:
@@ -65,7 +65,7 @@ Kaydedilecek cihazlar ayrıca:
 
 ## <a name="increase-the-computer-account-limit-in-the-organizational-unit"></a>Kuruluş Birimi’nde bilgisayar hesabı sınırını artırma
 
-Active Directory için Intune Bağlayıcısı, Autopilot’ı oluşturur ve Şirket İçi Active Directory etki alanına bilgisayarları kaydeder. Intune bağlayıcısını barındıran bilgisayar, etki alanı içinde bilgisayar nesneleri oluşturma hakkına sahip olmalıdır. 
+Active Directory için Intune Bağlayıcısı, Şirket İçi Active Directory etki alanında Autopilot ile kaydedilen bilgisayarlar oluşturur. Intune bağlayıcısını barındıran bilgisayar, etki alanı içinde bilgisayar nesneleri oluşturma haklarına sahip olmalıdır. 
 
 Bazı etki alanlarında bilgisayarlara bilgisayar oluşturma hakkı verilmez. Ya da Yöneticiler etki alanı genelinde bilgisayar hesabı sınırını artırmak istemiyor olabilir. Bu gibi durumlarda haklar, Karma Azure Active Directory’ye katılmış olan cihazların oluşturulduğu kuruluş birimine devredilebilir.
 
@@ -110,7 +110,7 @@ Bilgisayar oluşturma hakkı verilen kuruluş birimi şunlarla eşleşmelidir:
 
 Active Directory için Intune Bağlayıcısı, Windows Server 2016 çalıştıran ve hem Internet’e hem de Active Directory hizmetinize bağlı olan bir bilgisayara yüklenmelidir. Birden fazla Active Directory etki alanını desteklemek üzere ölçek ve kullanılabilirliği artırmak için ortamınıza birden fazla bağlayıcı yükleyebilirsiniz. Bağlayıcıyı, herhangi bir başka Intune bağlayıcısı çalıştırmayan bir sunucuya yüklemenizi öneririz.
 
-1. Azure portalında Intune’da **Cihaz kaydı** > **Windows kaydı** > **Active Directory için Intune Bağlayıcısı** > **Bağlayıcı ekle**’yi seçin. 
+1. [Intune](https://aka.ms/intuneportal)’da **Cihaz kaydı** > **Windows kaydı** > **Active Directory için Intune Bağlayıcısı (Önizleme)** > **Bağlayıcı ekle**’yi seçin. 
 2. Bağlayıcıyı indirmek için yönergeleri izleyin.
 3. Bağlayıcıyı indirmek için indirilen bağlayıcı kurulum dosyasını açın (ODJConnectorBootstrapper.exe).
 4. Kurulumun sonunda **Yapılandır**’ı seçin.
@@ -124,7 +124,7 @@ Ağ ortamınızda bir Web proxy varsa şuradaki yönergeleri izleyerek Active Di
 
 
 ## <a name="create-a-device-group"></a>Bir cihaz grubu oluşturma
-1. [Azure portalında Intune](https://aka.ms/intuneportal)’da **Gruplar** > **Yeni grup**’u seçin.
+1. [Intune](https://aka.ms/intuneportal)’da **Gruplar** > **Yeni grup**’u seçin.
 2. **Gruplar** dikey penceresinde:
     1. **Grup türü** olarak **Güvenlik**’i seçin.
     2. Bir **Grup adı** ve **Grup açıklaması** girin.
@@ -175,7 +175,7 @@ AutoPilot cihazları kaydedildikten sonra cihaz adları, cihazın ana bilgisayar
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Bir Autopilot dağıtım profili oluşturma ve atama
 Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için kullanılır.
 
-1. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri** > **Profil Oluştur**’u seçin.
+1. [Intune’da](https://aka.ms/intuneportal) **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri** > **Profil Oluştur**’u seçin.
 2. Bir **Ad** ve isteğe bağlı olarak bir **Açıklama** girin.
 3. **Dağıtım modu** olarak **Kullanıcı temelli**’yi seçin.
 4. **Azure AD'ye katılma türü:** kutusunda **Karma Azure AD’ye katılmış (Önizleme)** seçeneğini belirleyin.
@@ -188,21 +188,21 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 
 ## <a name="turn-on-the-enrollment-status-page-optional"></a>Kayıt durumu sayfasını açma (isteğe bağlı)
 
-1.  [Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Windows kaydı** > **Kayıt Durumu Sayfası (Önizleme)**’yi seçin.
-2.  **Kayıt Durumu Sayfası** dikey penceresinde, **Varsayılan** > **Ayarlar**’ı seçin.
-3.  **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**’i seçin.
+1. [Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Windows kaydı** > **Kayıt Durumu Sayfası (Önizleme)**’yi seçin.
+2. **Kayıt Durumu Sayfası** dikey penceresinde, **Varsayılan** > **Ayarlar**’ı seçin.
+3. **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**’i seçin.
 4. Diğer seçenekleri gerektiği şekilde yapılandırın.
-5.  **Kaydet**’i seçin.
+5. **Kaydet**’i seçin.
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Etki Alanına Katılım profili oluşturma ve atama
 
-1. **Microsoft Intune**’da **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**’u seçin.
+1. [Intune](https://aka.ms/intuneportal)’da **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**’u seçin.
 2. Aşağıdaki özellikleri girin:
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
    - **Açıklama**: Profil için bir açıklama girin.
    - **Platform**: **Windows 10 ve üzeri** seçeneğini belirleyin.
    - **Profil türü**: **Etki Alanına Katılım (Önizleme)** seçeneğini belirleyin.
-3.  **Ayarlar**’ı seçin ve **Bilgisayar adı ön eki**, **Etki alanı adı** ve **Kuruluş birimi** (isteğe bağlı) öğelerini sağlayın. 
+3. **Ayarlar**’ı seçin ve **Bilgisayar adı ön eki**, **Etki alanı adı** ve **Kuruluş birimi** (isteğe bağlı) öğelerini sağlayın. 
 4. **Tamam** > **Oluştur**'u seçin. Profil oluşturulur ve listede görüntülenir.
 5. Profili atamak için [Cihaz profili atama](device-profile-assign.md#assign-a-device-profile) altındaki adımları izleyin. 
 

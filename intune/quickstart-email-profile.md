@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231959"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225756"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Hızlı Başlangıç: iOS için bir e-posta cihaz profili oluşturma
 
@@ -69,7 +69,7 @@ Oluşturulan profili ek öğreticiler veya testler için kullanmayı düşünmü
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıçta iOS cihazları için bir e-posta profili oluşturdunuz. Artık bu profili, profile uymayan tüm iOS cihazlarını uyumsuz olarak işaretleyen bir uyumluluk ilkesi oluşturarak bir iOS cihazının uyumlu olup olmadığını belirlemek için kullanabilirsiniz. Daha fazla koruma için uyumlu olmayan iOS cihazlarının e-posta erişimini engelleyen bir koşullu erişim ilkesi oluşturabilirsiniz.
+Bu hızlı başlangıçta iOS cihazları için bir e-posta profili oluşturdunuz. Artık bu profili, profile uymayan tüm iOS cihazlarını uyumsuz olarak işaretleyen bir uyumluluk ilkesi oluşturarak bir iOS cihazının uyumlu olup olmadığını belirlemek için kullanabilirsiniz. Daha fazla koruma için uyumlu olmayan iOS cihazlarının e-posta erişimini engelleyen bir koşullu erişim ilkesi oluşturabilirsiniz. Cihaz uyumluluk ilkeleri hakkında daha fazla bilgi için bkz. [Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
-> [Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md)
+> [Öğretici: Yönetilen cihazlarda Exchange Online e-postalarını koruma](tutorial-protect-email-on-enrolled-devices.md)

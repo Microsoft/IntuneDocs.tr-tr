@@ -5,14 +5,14 @@ services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 11/05/2018
 ms.author: erikje
-ms.openlocfilehash: 3b713f090fb6ada884a269e286f55f6e1b1087c4
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
-ms.translationtype: HT
+ms.openlocfilehash: c219629968fbd66ee14abf61786a791bf7f5e2e0
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581776"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510797"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Hızlı Başlangıç: Windows 10 cihazları için otomatik kayıt ayarlama
 
@@ -22,6 +22,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 ## <a name="prerequisites"></a>Önkoşullar
 
+- Microsoft Intune aboneliği - [ücretsiz deneme hesabına kaydolun](free-trial-sign-up.md).
 - Bu hızlı başlangıcı tamamlamak için önce [bir kullanıcı oluşturun](quickstart-create-user.md) ve [bir grup oluşturun](quickstart-create-group.md).
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
@@ -30,17 +31,33 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 otomatik kaydını ayarlama
 
-Bu örnekte gerek kurumsal gerekse "kendininkini getir" cihazlarının otomatik kaydolabilmesi için MDM kaydını kullanacaksınız.
+Bu örnekte kurumsal ve kendi cihazını getir türü cihazların otomatik kaydolabilmesi için MDM kaydını kullanacaksınız. Ücretsiz bir Azure Active Directory Premium aboneliğine kaydolacaksınız.
 
-1. Azure'da **Azure Active Directory** > **Mobilite (MDM ve MAM)** > **Microsoft Intune** > **Bazı**'yı seçin.
-![Tarayıcı](media/quickstart-setup-auto-enrollment/setup-automatic-enrollment-win10.png)
-2. **Grupları seç** > **Contoso Testers** > **Seç**'i işaretleyin.
-3. Aşağıdaki URL'ler için varsayılan değerleri kullanın:
-    - MDM kullanım koşulları URL'si
-    - MDM bulma URL'si
-    - MDM uyumluluğu URL'si
-4. **Kaydet**’i seçin.
-5. Bir Windows 10 cihazında grupta bir kullanıcı olarak oturum açın ve yönergeleri izleyin.
+1. Azure’da **Azure Active Directory** > **Taşınabilirlik (MDM ve MAM)** seçeneklerine tıklayın.
+2. **Bu özelliği kullanmak için ücretsiz bir Premium deneme sürümü edinin**’i seçin. Bu seçeneğin belirlenmesi, Azure Active Directory ücretsiz Premium deneme sürümü kullanılarak otomatik kayıt yapılmasına imkan verir. 
+
+    ![Azure Active Directory ücretsiz Premium deneme sürümünü seçin](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
+
+    **Enterprise Mobility + Security E5** ücretsiz deneme seçeneğine tıklayın. Buna ek olarak ücretsiz denemeyi **Etkinleştir** seçeneğini belirlemeniz gerekir.
+
+    ![Enterprise Mobility + Security E5 ücretsiz deneme sürümünü seçin](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
+
+3. **Microsoft Intune**'u seçin. 
+
+    ![Listeden Microsoft Intune’u seçin](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
+
+4. Çalışanlarınızın Windows cihazlarındaki kurumsal verileri yönetmek için MDM otomatik kaydı kullanmak üzere **MDM kullanıcı kapsamı** olarak **Bazıları**’nı seçin. MDM otomatik kaydı, AAD’ye katılmış cihazlar ve kendi cihazını getir senaryoları için yapılandırılır.
+
+    ![Yapılandırma listesinden “Bazıları”nı seçin](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
+
+5. Atanmış grup olarak Contoso Sınama Aracı’nı belirlemek için **Grup seçin** > **Contoso Sınama Aracı** > **Seçin**’e tıklayın.
+
+    ![Kaydedilecek grubu seçin](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
+
+6. İş gücünüzün cihazlarında verileri yönetmek için **MAM Kullanıcıları kapsamı**’nı **Bazıları** olarak belirleyin.
+7. Atanmış grup olarak Contoso Sınama Aracı’nı belirlemek için **Grup seçin** > **Contoso Sınama Aracı** > **Seçin**’e tıklayın. 
+8. Geri kalan yapılandırma değerleri için varsayılan değerleri kullanabilirsiniz.
+9. **Kaydet**’i seçin.
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme
 
@@ -48,7 +65,9 @@ Intune otomatik kaydını yeniden yapılandırmak için [Windows cihazları içi
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıçta Windows 10 cihazları için otomatik kaydı ayarlamayı öğrendiniz. Tüm platformlar genelinde cihaz kaydetmenin başka yolları hakkında bilgi edinebilirsiniz.
+Bu hızlı başlangıçta Windows 10 cihazları için otomatik kaydı ayarlamayı öğrendiniz. Cihaz kaydı hakkında daha fazla bilgi için bkz. [Cihaz kaydı nedir?](device-enrollment.md)
+
+Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Cihaz kaydı nedir? makalesi](device-enrollment.md)
+> [Hızlı Başlangıç: Windows 10 cihazınızı kaydetme](quickstart-enroll-windows-device.md)
