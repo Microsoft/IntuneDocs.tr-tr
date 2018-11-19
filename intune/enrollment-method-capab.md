@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c9e440aef7f434cbe675506fd6f22a9bd26b2c31
-ms.sourcegitcommit: 528d2bc70bfd25803a2d9f0fe9372c8a5f5e7dad
-ms.translationtype: HT
+ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446829"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811538"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Windows cihazlarına için kayıt yöntemine göre özellikler
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47446829"
 Intune; iş gücünüzün cihazları, uygulamaları ve şirket verilerinize erişimini yönetmenizi sağlar. Cihazların önce Intune hizmetine kaydedilmesi gerekir. İş gücünüzün cihazlarını kaydetmek için çeşitli yöntemler vardır. Aşağıdaki tabloda gösterildiği gibi her yöntemin farklı en iyi yöntemleri ve özellikleri vardır.
 
 ## <a name="best-practices-by-enrollment-method"></a>Kayıt yöntemine göre en iyi yöntemler
-| **En iyi uygulamalar** | **[Azure AD'ye katılanlar](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD'ye AutoPilot ile katılanlar](enrollment-autopilot.md)** |**[Toplu](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[KCG](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **En iyi uygulamalar** | **[Azure AD'ye katılanlar](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD'ye AutoPilot ile katılanlar](enrollment-autopilot.md)** |**[Toplu](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[KCG](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Eğitimde yaygın olarak kullanılanlar|![X](media/xmark.png)|![Onay işareti](media/checkmark.png)|![Onay işareti](media/checkmark.png)|![Onay işareti](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Cihazlar, paylaşılan cihazlar olarak kullanılabilir|![X](media/xmark.png)|![X](media/xmark.png)|![Onay işareti](media/checkmark.png)|![Onay işareti](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
@@ -36,7 +36,7 @@ Intune; iş gücünüzün cihazları, uygulamaları ve şirket verilerinize eri�
 
 ## <a name="capabilities-by-enrollment-method"></a>Kayıt yöntemine göre özellikler
 
-| **Yetenekler** | **[Azure AD'ye katılanlar](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD'ye AutoPilot ile katılanlar](enrollment-autopilot.md)** |**[Toplu](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[KCG](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Yetenekler** | **[Azure AD'ye katılanlar](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD'ye AutoPilot ile katılanlar](enrollment-autopilot.md)** |**[Toplu](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[KCG](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Koşullu erişim                                      |![Onay işareti](media/checkmark.png)|![Onay işareti](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Onay işareti](media/checkmark.png)|![Onay işareti](media/checkmark.png)|
 |Kullanıcılar cihazla ilişkilendirilir                    |![Onay işareti](media/checkmark.png)|![Onay işareti](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Onay işareti](media/checkmark.png)|![Onay işareti](media/checkmark.png)|
@@ -52,5 +52,5 @@ Intune; iş gücünüzün cihazları, uygulamaları ve şirket verilerinize eri�
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Kayıt seçenekleri](enrollment-options.md)
+[Windows kaydını ayarlama ](windows-enroll.md)
 

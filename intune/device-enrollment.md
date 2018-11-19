@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a9761c57b15700e147bc092b7577fe1b32c78c18
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: c46a90d36ba8b50703e62fc663b1d090ac1bcfc7
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254165"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610133"
 ---
 # <a name="what-is-device-enrollment"></a>Cihaz kaydı nedir?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,6 @@ Varsayılan olarak tüm platform cihazları Intune'a kaydedilebilir. Ancak [ciha
 |**[USB-Direct](#usb-direct)**| Hayır |    Hayır  | Hayır|[Daha fazla bilgi](./apple-configurator-direct-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>macOS kayıt yöntemleri
-
 | **Yöntem** |  **Sıfırlama Gerekli** |  **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[KCG](#bring-your-own-device)** | Hayır| Evet | Hayır | [Daha fazla bilgi](./macos-enroll.md)|
@@ -56,7 +55,11 @@ Varsayılan olarak tüm platform cihazları Intune'a kaydedilebilir. Ancak [ciha
 |**[KCG](#bring-your-own-device)** | Hayır |  Evet |   Hayır | [Daha fazla bilgi](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Hayır |Hayır |Hayır  |[Daha fazla bilgi](device-enrollment-manager-enroll.md)|
 |**Otomatik kayıt** | Hayır |Evet |Hayır | [Daha fazla bilgi](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**AutoPilot** |Evet |Evet |Hayır | [Daha fazla bilgi](enrollment-autopilot.md)]
 |**Toplu kayıt** |Hayır |Hayır |Hayır | [Daha fazla bilgi](./windows-bulk-enroll.md) |
+|**Ortak yönetim** |Hayır |Evet |Hayır | [Daha fazla bilgi](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
+|**GPO** |Hayır |Evet |Hayır | [Daha fazla bilgi](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+
 
 ## <a name="android-enrollment-methods"></a>Android kayıt yöntemleri
 

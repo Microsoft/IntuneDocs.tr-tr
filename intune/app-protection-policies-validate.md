@@ -6,8 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/23/2017
-ms.topic: article
+ms.date: 11/13/2018
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cac03f35cdec3c1a4815559abc83108bd27d3472
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 5e0a207d3e845e3983dfe6ce3abbb70fcbbe65cf
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231162"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618982"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Uygulama koruma ilkesi kurulumunuzu doğrulama
 
@@ -29,12 +28,12 @@ ms.locfileid: "48231162"
 Uygulama koruma ilkenizin doğru kurulduğunu ve çalıştığını doğrulayın. Bu kılavuz, Azure portaldaki uygulama koruma ilkeleri için geçerlidir.
 
 ### <a name="checking-for-symptoms"></a>Belirtileri denetleme
-Uygulama koruma bir veri koruması aracı olduğundan, kullanıcıların soruları bildirme olasılığı düşüktür. Uygulama koruma yapılandırmasında bir sorun varsa, kullanıcılar uygulama korumanın olmadığı durumlardaki gibi sınırsız erişime sahip olur ve bir sorun olduğunun farkına varmazlar. Bu nedenle uygulama koruma kısıtlamalarını bilinçli olarak sınayabilecek küçük bir grup kullanıcıya uygulama koruma ilkelerinizin pilot dağıtımını yaparak, uygulama koruma yapılandırmanızı doğrulamanızı öneririz.
+Uygulama koruma bir veri koruması aracı olduğundan, kullanıcıların soruları bildirme olasılığı düşüktür. Uygulama koruma yapılandırmasında bir sorun varsa olmadan uygulama koruması gerekir ve bir sorun bilmiyorum kullanıcı sınırsız erişime. Bu nedenle, kullanıcılar uygulama korumanın kısıtlamalarını bilinçli sınayabilirsiniz küçük bir grupla uygulama koruma ilkelerinizin Pilot dağıtımını yaparak uygulama koruma yapılandırmanızı doğrulamanızı öneririz.
 
 
 ### <a name="what-to-check"></a>Denetlenmesi gerekenler
 
-Sınama, uygulama koruma ilkelerinizin davranışının beklendiği gibi olmadığını gösteriyorsa şu öğeleri kontrol etmenizi öneririz:
+Uygulama koruma İlkesi davranış'ınızı beklendiği gibi olmayan gösteriyorsa şu öğeleri kontrol:
 
 - Kullanıcılar uygulama koruma için lisanslı mı?
 - Kullanıcılar O365 için lisanslı mı?
@@ -43,20 +42,20 @@ Sınama, uygulama koruma ilkelerinizin davranışının beklendiği gibi olmadı
 #### <a name="user-app-protection-status"></a>Kullanıcı uygulama koruma durumu
 1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-1. **Uygulamaları yönetme** > **İzleme** >  **Uygulama koruma durumu** > **Atanan kullanıcılar**’ı seçin.
-
-2. Listeden bir kullanıcı seçin veya bir kullanıcı arayıp seçin, sonra **Kullanıcı seçin**’i belirtin. **Uygulama raporlama** sütunun en üstünde kullanıcının uygulama koruması için lisanslı olup olmadığını görebilirsiniz. Ayrıca, kullanıcının O365 için lisanslı olup olmadığını ve kullanıcının tüm cihazları için uygulama durumunu göreceksiniz.
+3. Seçin **istemci uygulamaları** > **İzleyici** >  **uygulama koruma durumu**ve ardından **atanan kullanıcılar**Döşe. 
+4. Üzerinde **uygulama raporlama** sayfasında **Kullanıcı Seç** kullanıcıların ve grupların listesini getirmek için. 
+5. Arayın ve listeden bir kullanıcı seçin ve sonra seçin **Kullanıcı Seç**. Üst kısmındaki **uygulama raporlama** bölmesinde, kullanıcıya uygulama koruma için lisanslı olup olmadığını görebilirsiniz. Ayrıca, kullanıcının O365 için tüm kullanıcı cihazlarına uygulama durumunu için bir lisans olup olmadığını görebilirsiniz.
 
 
 
 ### <a name="what-to-do"></a>Yapılması gereken
 Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 
-- Kullanıcı uygulamayı koruma için lisanslı değilse, kullanıcıya bir Intune lisansı atayın.
-- Kullanıcı O365 için lisanslı değilse, kullanıcı için bir lisans edinin.
+- Kullanıcının uygulama koruması için lisanslı değilse, kullanıcıya bir Intune lisansı atayın.
+- Kullanıcının O365 için lisanslı değilse, kullanıcının bir lisansı alır.
 - Kullanıcının lisansı **İade edilmedi** olarak listeleniyorsa bu uygulama için doğru biçimde bir uygulama koruma ilkesi yapılandırıp yapılandırmadığınıza bakın.
-- Bu koşulların, uygulama koruma ilkelerinin geçerli olmasını istediğiniz tüm kullanıcılara uygulandığından emin olun.
+- Bu koşulların, uygulama koruma ilkelerinin geçerli olmasını istediğiniz tüm kullanıcılara uygulanacağını emin olun.
 
-### <a name="see-also"></a>Ayrıca bkz:
+### <a name="see-also"></a>Ayrıca bkz.
 
 [Intune uygulama koruma ilkesi nedir?](app-protection-policies.md)

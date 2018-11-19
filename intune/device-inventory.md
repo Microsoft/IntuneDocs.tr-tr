@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
-ms.translationtype: HT
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187810"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610099"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -45,23 +45,25 @@ Bu makalede, tüm cihazlarınızı ve özelliklerini Azure portalında nasıl g�
      - Uzaktan yardım oturumu başlatma
    - **Özellikler**’i kullanarak [oluşturduğunuz bir cihaz kategorisini](device-group-mapping.md) atayabilir ve cihazın sahipliğini kişisel veya şirket olarak değiştirebilirsiniz.
    - **Donanımda** cihaz hakkında pek çok bilgi bulunur. Örneğin cihaz kimliği, işletim sistemi ve sürümü, depolama alanı, model ve üretici, koşullu erişim ayarları vb.
-   - **Bulunan uygulamalar**, Intune’un cihazda yüklü olduğunu bulduğu tüm uygulamaları ve uygulama sürümlerini listeler. Uygulama listesini bir .csv dosyası olarak **Dışarı Aktarabilirsiniz**.
+   - **Bulunan uygulamalar**, Intune’un cihazda yüklü olduğunu bulduğu tüm uygulamaları ve uygulama sürümlerini listeler. Uygulama listesini bir .csv dosyası olarak **Dışarı Aktarabilirsiniz**. Bu liste, 7 günde bir güncelleştirilir.
    - **Cihaz uyumluluğu**, atanmış tüm uyumluluk ilkelerini ve cihazın uyumlu olup olmadığını listeler.
    - **Cihaz yapılandırması**, cihaza atanmış tüm yapılandırma ilkelerini ve ilkenin başarılı olup olmadığını gösterir.
 
 Intune, yalnızca şirkete ait cihazlarda uygulama listesi toplar. Kişisel cihazlarda uygulamalar denetlenmez. Windows 10 bilgisayarlarda, şirkete ait cihazlar için yalnızca modern uygulamalar listelenir. Intune, cihazdaki Win32 uygulamalar hakkında bilgi toplamaz. Cihazlarda kullanılan operatöre bağlı olarak, tüm uygulamalar toplanamayabilir.
 
-|Platform|Kişiye Ait Cihazlar İçin|Şirkete Ait Cihazlar İçin|  
+|Platform|Kişiye ait cihazlar için|Şirketinize ait cihazlar için|  
 |--------------|---------------------------------|--------------------------------|  
 |Windows 10 (Configuration Manager istemcisi olmadan)|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|
 |Windows 8.1 (Configuration Manager istemcisi olmadan)|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|  
-|Windows Phone 8|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|  
+|Windows Phone 8|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|  
 |Windows RT|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|  
-|iOS|Yalnızca yönetilen uygulamalar|Cihazda yüklü tüm uygulamalar|
-|Mac OS|Cihazda yüklü tüm uygulamalar|Cihazda yüklü tüm uygulamalar|  
-|Android|Yalnızca yönetilen uygulamalar|Cihazda yüklü tüm uygulamalar|  
+|iOS|Yalnızca yönetilen uygulamalar|Cihazda yüklü tüm uygulamaları|
+|Mac OS|Cihazda yüklü tüm uygulamaları|Cihazda yüklü tüm uygulamaları|  
+|Android|Yalnızca yönetilen uygulamalar|Cihazda yüklü tüm uygulamaları|  
+|Android Kurumsal|Yalnızca yönetilen uygulamalar|Yalnızca iş profilinde yüklü uygulamalar|  
 
 ## <a name="hardware-device-details"></a>Donanım cihazı durumu
+Cihazlar tarafından kullanılan operatöre bağlı olarak, tüm ayrıntıları toplanabilir
 
 |Ayrıntı|Açıklama|Platform| 
 |--------------|----------------------|----|  

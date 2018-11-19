@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811521"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -29,7 +29,7 @@ ms.locfileid: "50236297"
 Microsoft Intune şirket portalı, kullanıcıların şirket verilerine eriştiği ve cihaz kaydetmek, uygulama yüklemek ve BT departmanınızdan yardım için bilgi bulmak gibi genel görevleri gerçekleştirebilecekleri yerdir.        
 
 > [!Tip]        
-> Şirket Portalı’nı özelleştirdiğinizde, yapılandırmalar hem Şirket Portalı web sitesi hem de Şirket Portalı uygulamaları için geçerli olur.       
+> Şirket Portalı’nı özelleştirdiğinizde, yapılandırmalar hem Şirket Portalı web sitesi hem de Şirket Portalı uygulamaları için geçerli olur. Kullanıcılar Şirket portalı Web sitesine erişim için atanmış bir Intune lisansı olması gerektiğini unutmayın.
 
 Şirket Portalı’nı özelleştirmek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlamaya yardımcı olur. Bunu yapmak için, **İstemci uygulamaları** iş yükünde **Kurulum** > **Şirket Portalı Markalaması**’nı seçin ve gerekli ayarları yapılandırın.  
 
@@ -48,7 +48,7 @@ Yıldız işareti (*) ile işaretlenmiş alanlar zorunludur.
 | **Gizlilik bildirimi URL'si** |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz.  `<https://www.contoso.com>` biçiminde geçerli bir URL girmeniz gerekir. |
 
 ## <a name="support-information"></a>Destek bilgileri      
-Çalışanınıza Intune'la ilgili sorularında bir başvuru noktası sağlamak için şirketinizin destek bilgilerini girin.       
+Intune ile ilgili sorular için çalışan bir kişi sağlamak için şirketinizin destek bilgilerini girin.          
 
 |Alan adı|Uzunluk üst sınırı|Daha fazla bilgi|
 |---|---|---|
@@ -68,7 +68,7 @@ Yıldız işareti (*) ile işaretlenmiş alanlar zorunludur.
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
-|**Standart renklerden birini seçin veya altı basamaklı onaltılık kod girin**| Bir renk seçmek için **Standart**’ı seçin. Onaltılık kod değerine göre belirli bir renk belirtmek için **Özel**’i seçin.|
+|**Standart renklerden birini seçin veya altı basamaklı onaltılık kod girin**| Seçin **standart** görsel olarak bir renk seçin. Onaltılık kod değerine göre belirli bir renk belirtmek için **Özel**’i seçin.|
 |**Tema rengi seçin**| Şirket Portalı’na uygulamak için bir tema rengi seçin. Standart renk seçebilir veya belirli bir onaltılık kodu girebilirsiniz. |
 |**Görüntüleme**| Hangisinin görüntüleneceğini seçin: **Şirket logosu ve adı**, **Yalnızca şirket logosu** veya **Yalnızca şirket adı**. |
 |**Şirket logonuzu karşıya yükleyin**|Size ait Şirket Portalı’nda görüntülenmek üzere şirket logonuzu yükleyebilirsiniz. En yüksek kontrast düzeyini sağlamak için metin renginin otomatik olarak seçildiğini unutmayın. En iyi görünümü elde etmek için saydam bir arka plana sahip bir logo yükleyin.<p><ul><li>En büyük görüntü boyutu: 400 piksel x 400 piksel</li><li>En büyük dosya boyutu: 750 KB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
@@ -84,34 +84,43 @@ Beyaz veya açık renk arka planlarda en iyi görünecek logoyu seçin.
 
 ### <a name="brand-image-for-company-portal"></a>Şirket Portalı için marka imajı
 
-Şirket markanızı yansıtan bir marka imajı kullanın. Şirket Portalı uygulamalarına marka imajı desteği eklenmektedir ve bazı platformlarda bu imaj görünmeyebilir.
+Şirket markanızı yansıtan bir marka imajı kullanın. Değişikliklerinizi kaydettikten sonra, yapılandırmalarınızın nasıl görüneceğine bakmak için dikey pencerenin üst kısmındaki Intune Web Portalı’nda **Ayarlarınızın önizlemesini görüntüleyin** öğesini seçebilirsiniz. Marka imajını Intune Web Portalı’nda değil, yalnızca bir iOS cihazında görüntüleyebileceğinizi unutmayın. 
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
-|**Marka imajınızı karşıya yükleyin**| Bu seçenek, Şirket Portalı uygulamasındaki kullanıcı profili sayfasında bir arka plan görüntüsü kullanmanıza imkan verir.<p><ul><li>Önerilen imaj genişliği: 1125 pikselden büyük olması önerilir ancak 640 pikselden az olmamalıdır</li><li>En yüksek görüntü boyutu: 1,3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
+|**Marka imajınızı karşıya yükleyin**| Bu seçenek, Şirket Portalı uygulamasındaki kullanıcı profili sayfasında bir arka plan görüntüsü kullanmanıza imkan verir.<p>*Not*: görüntüyü farklı platformları için farklı şekilde görüntülenebilir.<p><ul><li>Önerilen imaj genişliği: 1125 pikselden büyük olması önerilir ancak 640 pikselden az olmamalıdır</li><li>En yüksek görüntü boyutu: 1,3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
 
 Doğru bir marka imajı sayesinde şirket markanızı güçlü bir şekilde tanıtarak Şirket Portalı’nda kullanıcı güvenini artırabilirsiniz. Aşağıda, Şirket Portalı için imaj elde etme, seçme ve iyileştirme hakkında bazı ipuçları bulabilirsiniz. 
 
-- Pazarlama veya sanat departmanınıza ulaşın. Bu departmanların elinde zaten onaylanmış birkaç marka imajı olabilir. Departmanlar ayrıca görüntüleri ihtiyaca göre iyileştirme konusunda size yardım edebilir. 
+- Pazarlama veya sanat departmanınıza ulaşın. Bunlar zaten onaylı bir marka görüntü kümesi olabilir. Departmanlar ayrıca görüntüleri ihtiyaca göre iyileştirme konusunda size yardım edebilir. 
 
-- Yatay ve dikey kompozisyonları değerlendirin. İmajın odak noktasını çevreleyen arka planın yeterli olmasına dikkat edin. İmaj, cihaz boyutuna ve hizalamasına göre farklı şekillerde kırpılabilir. 
+- Yatay ve dikey kompozisyonları değerlendirin. İmajın odak noktasını çevreleyen arka planın yeterli olmasına dikkat edin. Farklı cihaz boyut, Yönlendirme ve platform göre resim kırpılmış. 
 
 - Sıradan, hazır bir imaj seçmekten kaçının. İmaj, şirketinizin markasını yansıtmalı ve kullanıcılara yakın hissettirmelidir. Elinizde bir imaj yoksa, kullanıcılarınıza hiçbir şey ifade etmeyen sıradan bir görüntü kullanmak yerine hiçbir şey kullanmamak daha iyi olacaktır. 
 
 - Gereksiz meta verileri kaldırın. İmaj dosyası; kamera profili, coğrafi konum, başlık, açıklama gibi meta veriler içerebilir. Kaliteyi korumak ve dosya boyutu sınırını aşmamak için bir görüntü iyileştirme aracını kullanarak bu bilgileri kaldırın. 
 
-Değişikliklerinizi kaydettikten sonra, yapılandırmalarınızın nasıl görüneceğine bakmak için dikey pencerenin üst kısmındaki Intune Web Portalı’nda **Ayarlarınızın önizlemesini görüntüleyin** öğesini seçebilirsiniz. Marka imajını Intune Web Portalı’nda değil, yalnızca bir iOS cihazında görüntüleyebileceğinizi unutmayın. 
+Marka resmi eklendiğinde veya Intune'a değiştirilen sonra şirket Portalı'kurmak başlangıç değişikliğin tarafından tanınan ve ardından marka görüntüyü görüntülemek için yeniden kadar son kullanıcı değişikliği iOS cihazlarında göremeyebilirsiniz. 
 
+### <a name="brand-image-examples"></a>Marka resmi örnekleri
+
+Aşağıdaki resimde örnek İpad'de marka resmi gösterir:
+
+![Marka resmi örnek iPhone ekran görüntüsü](media/company-portal-app/company-portal-app-03.png)
+
+Aşağıdaki görüntüde, marka resmi İphone'da örnek gösterilmektedir:
+
+![Marka resmi örnek iPad ekran görüntüsü](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows Şirket Portalı klavye kısayolları
 
-Son kullanıcılar, Windows Şirket Portalı’nda klavye kısayollarını (hızlandırıcılar) kullanarak gezinti, uygulama ve cihaz eylemlerini tetikleyebilirler.
+Son kullanıcılar, klavye kısayolları (Hızlandırıcıları) kullanarak Windows Şirket portalı'nda gezinti, uygulama ve cihaz eylemleri tetikleyebilirsiniz.
 
 Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir.
 
 | Alan | Açıklama | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
-| Gezinti menüsü | Gezinme | Alt+M |
+| Gezinti menüsü | Gezinti | Alt+M |
 |  | Giriş | Alt+H |
 |  | Tüm uygulamalar | Alt+A |
 |  | Yüklenen uygulamalar | Alt+I |
@@ -125,6 +134,10 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
 | Uygulama ayrıntıları | Yükle | Ctrl+I |
+
+Son kullanıcılar Windows Şirket portalı uygulamasında kullanılabilir kısayolları görmeniz mümkün olacaktır.
+
+![Windows Şirket portalı uygulamasında kullanılabilir kısayolları ekran görüntüsü](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

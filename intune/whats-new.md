@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: c929fd8c01eda062d54b818996bebe02807e2f55
+ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576979"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "51859571"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -120,9 +120,6 @@ Bu güncelleştirme, cihazları uyumluluk açısından değerlendirmek için mac
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>Kayıttan vazgeçme raporu <!-- 1382924 -->
 Bırakılmış kayıtların ayrıntılarını sağlayan yeni bir rapor, **Cihaz kaydı** > **İzle** altında bulunabilir. Daha fazla bilgi için bkz. [Şirket portalı bırakma raporu](enrollment-report-company-portal-abandon.md).
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Tüm cihazlar sanal grubuna Autopilot profilleri atama <!--2715522 -->
-Tüm cihazlar sanal grubuna Autopilot profilleri atayabileceksiniz. Bunu yapmak için **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri**'i seçin > bir profil seçin > **Atamalar**'ı seçin > **Atama hedefi** altından **Tüm cihazlar**'ı seçin. Autopilot profilleri hakkında daha fazla bilgi için bkz. [Windows AutoPilot kullanarak Windows cihazları kaydetme](enrollment-autopilot.md).
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Yeni Azure Active Directory kullanım koşulları özelliği <!-- 2870393 -->
 Azure Active Directory’de mevcut Intune hüküm ve koşulları yerine kullanabileceğiniz bir kullanım koşulları özelliği vardır. Azure AD kullanım koşulları özelliği, hangi koşulların ne zaman gösterileceği konusunda daha fazla esneklik, daha iyi yerelleştirme desteği, koşulların ekrana çizilmesi üzerinde daha fazla denetim ve daha iyi raporlama sağlamaktadır. Azure AD kullanım koşulları özelliği, Enterprise Mobility + Security E3 paketinin de parçası olan Azure Active Directory Premium P1'i gerektirir. Daha fazla bilgi edinmek için bkz. [Kullanıcı erişimi için şirketinizin hüküm ve koşullarını yönetme makalesi](terms-and-conditions-create.md).
@@ -298,7 +295,7 @@ Uyarılar ve kayıt hataları artık Cihaz kaydı genel bakış sayfasında ayr�
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-android-devices----2451462----"></a>Android cihazlarda uygulamaları kısıtlar ve şirket kaynaklarına erişimi engeller <!-- 2451462  -->  
 **Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Android** > **Sistem Güvenliği**'nde *Cihaz Güvenliği* bölümünde **Kısıtlı uygulamalar** adlı yeni bir ayar vardır. **Kısıtlı uygulamalar** ayarı, üzerinde belirli uygulamalar yüklü olduğunda cihazın şirket kaynaklarına erişimini engelleyecek bir uyumluluk ilkesi kullanır. Cihaz, kısıtlı uygulamalar kaldırılana kadar uyumsuz sayılır.
-Şunun için geçerlidir: 
+Uygulama hedefi: 
 - Android
 
 
@@ -642,10 +639,10 @@ Bu özelliği kullanmak için, şirket içi Active Directory ortamınızdan Azur
 
 #### <a name="new-status-for-devices-in-device-compliance----2308882---"></a>Cihaz uyumluluğunda cihazlar için yeni durum <!-- 2308882 -->
 **Cihaz uyumluluğu** > **İlkeler**'de bir ilke seçin ve **Genel Bakış**’ı seçin; aşağıdaki yeni durumlar eklenir:
-- başarılı
+- Başarılı oldu
 - hata
 - çakışma
-- bekleniyor
+- Beklemede
 - uygulanamaz Farklı bir platformun cihaz sayısını gösteren bir resim de görüntülenir. Örneğin bir iOS profiline bakıyorsanız, yeni kutucuk yine bu profile atanmış olan iOS dışı cihazların sayısını gösterir. Bkz. [Cihaz uyumluluk ilkeleri](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Cihaz uyumluluğu üçüncü taraf virüsten koruma çözümlerini destekler <!-- 2325484 -->
@@ -1064,7 +1061,7 @@ Aralık ayından sonra yukarıda listelenenler dışında cihazları olan son ku
 - Etkilenmiş olabilecek cihazları veya kullanıcıları görmek için Azure konsolunda Intune'daki Intune raporlamanıza bakın. Cihazlar > Tüm cihazlar'a gidin ve işletim sistemine göre filtre uygulayın. Kuruluşunuzda hangi cihazların macOS 10.11 çalıştırdığını belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. 
 - Hibrit bir mobil cihaz yönetimi (MDM) kullanıyorsanız, Configuration Manager konsolunda Varlık ve Uyumluluk > Cihazlar'a gidin, İşletim Sistemi ve İstemci Sürümü sütunlarını eklemek için sütunlara sağ tıklayın ve işletim sistemine göre listeyi sıralayın. Hibrit MDM'nin artık kullanımdan kaldırıldığını ve olabildiğince kısa bir süre içinde Azure'da Intune'a geçmeniz gerektiğini hatırlatalım. 
  
-#### <a name="additional-information"></a>Ek Bilgi
+#### <a name="additional-information"></a>Ek bilgi
 Daha fazla bilgi için bkz. [Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
  
 
@@ -1084,7 +1081,7 @@ Yalnızca Genel Yönetici, Intune Hizmet Yöneticisi ve Hizmet Destek Yöneticis
 - MPO’da destek istekleri oluşturmakta olan Genel Yönetici veya Intune Hizmet Yöneticisi rollerine sahip kullanıcılarınız varsa onları Azure Active Directory’de Hizmet Destek Yöneticisi rolüne atayın, böylece Azure portalında destek biletleri oluşturmaya devam edebilirler.
 - Daha fazla bilgi ve yardımcı bağlantılar için Ek Bilgiler’e tıklayın.
 
-#### <a name="additional-information"></a>Ek Bilgi
+#### <a name="additional-information"></a>Ek bilgi
 Daha fazla bilgi için bkz. [Microsoft Intune destek ekibi blog gönderisi](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
@@ -1131,7 +1128,7 @@ Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayac
 
 
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform yol haritası](https://www.microsoft.com/cloud-platform/roadmap)
 * [Şirket Portalı kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md)

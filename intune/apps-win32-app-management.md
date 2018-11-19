@@ -1,10 +1,27 @@
 ---
-title: Microsoft Intune’a Win32 uygulamaları ekleme titlesuffix: description: Microsoft Intune’da Win32 uygulamalarını ekleme, teslim etme ve yönetmeyi öğrenin. Bu konu, Intune Win32 uygulaması teslim ve yönetim özelliklerine yönelik genel bir bakışın yanı sıra, Win32 uygulaması sorun giderme bilgilerini sağlar. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 23.10.2018 ======= ms.date: 19.10.2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Microsoft Intune’a Win32 uygulamaları ekleme
+titlesuffix: ''
+description: Microsoft Intune ile Win32 uygulamaları eklemeyi, teslim etmeyi ve yönetmeyi öğrenin. Bu konu, Intune Win32 uygulaması teslim ve yönetim özelliklerine yönelik genel bir bakışın yanı sıra, Win32 uygulaması sorun giderme bilgilerini sağlar.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830126"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
 Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bulut bağlantılı müşterilerin Win32 uygulama yönetiminde Configuration Manager'ı kullanmaları mümkün olsa da, yanızca Intune kullanan müşteriler Win32 iş kolu (LOB) uygulamalarında daha fazla yönetim özelliğinden yararlanabilir. Bu konu, Intune Win32 uygulaması yönetim özelliklerine yönelik genel bir bakışın yanı sıra, sorun giderme bilgileri sağlar.
@@ -43,6 +60,13 @@ Win32 uygulamalarını önceden işlemek için [Microsoft Intune Win32 Uygulama 
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Bu komut aracın kullanım bilgilerini gösterir.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Bu komut, belirtilen kaynak klasörden ve kurulum dosyasından `.intunewin` dosyasını oluşturur. MSI kurulum dosyası için, bu araç Intune'a gereken bilgileri alır. `-q` belirtilirse, komut sessiz modda çalıştırılır ve çıkış dosyası zaten varsa, bu dosyanın üzerine yazılır. Ayrıca, çıkış klasörü yoksa otomatik olarak oluşturulur.    |
+
+Oluştururken bir *.intunewin* dosyası, Kurulum klasörünün bir alt klasöre başvurmak için ihtiyacınız olan tüm dosyaları yerleştirin. Ardından, gerek duyduğunuz belirli bir dosyaya başvurmak için göreli bir yol kullanın. Örneğin:
+
+**Kurulum kaynak klasörü:** *c:\testapp\v1.0*<br>
+**Lisans dosyası:** *c:\testapp\v1.0\licenses\license.txt*
+
+Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Win32 uygulamasını oluşturma, atama ve izleme
 

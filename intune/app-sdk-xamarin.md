@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: d2531cc203c5c2b255378e836099feb0a9216d45
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
-ms.translationtype: HT
+ms.openlocfilehash: 07fe31d8b668d14a51a5c31fa321e4789a0302c0
+ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298131"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "51859520"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -53,7 +53,7 @@ Intune Uygulama SDK’sı Xamarin Bağlamaları ile derlenen Xamarin uygulamalar
 
 [Lisans koşullarını](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf) gözden geçirin. Kendi kayıtlarınız için lisans koşullarının bir kopyasını yazdırmalı ve saklamalısınız. Intune Uygulama SDK’sı Xamarin Bağlamalarını indirip kullandığınızda bu lisans koşullarını kabul etmiş olursunuz. Kabul etmiyorsanız, yazılımı kullanmayın.
 
-SDK; [kimlik doğrulaması](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) ve koşullu başlatma senaryolarında, uygulamaların [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) ile yapılandırılmasını gerektiren [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) özelliğini kullanır. Yapılandırma değerleri, AndroidManifest meta verileri üzerinden SDK’ya iletilir. [Uygulamanız için ADAL'yi yapılandırma](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) belgelerinizi okuyun.
+SDK'ın bağımlı [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) için kendi [kimlik doğrulaması](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) ve koşullu başlatma senaryolarında, uygulamaların ile yapılandırılması gereken [Azure Active Dizin](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS mobil uygulamanızda Intune uygulama koruma ilkelerini etkinleştirme
 1. [Microsoft.Intune.MAM.Xamarin.iOS NuGet paketini](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) Xamain.iOS projenize ekleyin.
@@ -85,16 +85,17 @@ SDK; [kimlik doğrulaması](https://azure.microsoft.com/documentation/articles/a
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Android mobil uygulamanızda Intune uygulama koruma ilkelerini etkinleştirme
 
-UI çerçevesi kullanmayan Xamarin tabanlı Android uygulamaları için [Android Geliştiricisi için Intune Uygulama SDK’sı Kılavuzu](app-sdk-android.md) belgesini okumanız ve gerekli adımları uygulamanız gerekir. Xamarin tabanlı Android uygulamanız için sınıf, yöntem ve etkinlikleri kılavuzda yer alan [tabloya](app-sdk-android.md#class-and-method-replacements) göre MAM eşdeğerleriyle değiştirmeniz gerekir. Uygulamanızda `android.app.Application` sınıfı tanımlanmıyorsa bir tane oluşturup `MAMApplication` kaynağından devraldığından emin olmanız gerekir.
+UI çerçevesi kullanmayan Xamarin tabanlı Android uygulamaları için [Android Geliştiricisi için Intune Uygulama SDK’sı Kılavuzu](app-sdk-android.md) belgesini okumanız ve gerekli adımları uygulamanız gerekir. Xamarin tabanlı Android uygulamanız için sınıf, yöntem ve etkinlikleri, göre MAM eşdeğerleriyle değiştirmeniz gereken [sınıf ve metod değişiklik tablosu](app-sdk-android.md#class-and-method-replacements) kılavuzda yer. Uygulamanızda `android.app.Application` sınıfı tanımlanmıyorsa bir tane oluşturup `MAMApplication` kaynağından devraldığından emin olmanız gerekir. ADAL yapılandırma değerleri, AndroidManifest meta verileri üzerinden SDK'ya iletilir. [Uygulamanız için ADAL'yi yapılandırma](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) belgelerinizi okuyun.
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android tümleştirmesi
 
 1. [Microsoft.Intune.MAM.Xamarin.Android NuGet paketinin](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) son sürümünü Xamain.Android projenize ekleyin. Bu, Intune’un uygulamanızı etkinleştirmesi için gereken başvuruları sağlar.
 
 2. [Android Geliştirici Kılavuzu için Intune Uygulama SDK’sını](app-sdk-android.md) tam olarak okuyun ve uygulayın, şu kısımlara da özellikle dikkat edin:
+
     1. [Bütün sınıf ve yönetim değişimleri bölümü](app-sdk-android.md#class-and-method-replacements). 
     2. [MAMApplication bölümü](app-sdk-android.md#mamapplication). Alt sınıfınızın `[Application]` özniteliği ile doğru şekilde donatıldığından ve `(IntPtr, JniHandleOwnership)` oluşturucusunu geçersiz kıldığından emin olun.
-    3. [ADAL tümleştirmesi bölümü](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal), uygulamanız AAD’ye karşı kimlik doğrulaması gerçekleştiriyorsa.
+    3. [ADAL tümleştirmesi bölümü](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal), uygulamanız AAD’ye karşı kimlik doğrulaması gerçekleştiriyorsa. 
     4. [MAM-WE kaydı bölümü](app-sdk-android.md#app-protection-policy-without-device-enrollment), uygulamanıza MAM hizmetinden ilke almak istiyorsanız.
 
 > [!NOTE]
@@ -114,9 +115,6 @@ UI çerçevesi kullanmayan Xamarin tabanlı Android uygulamaları için [Android
 > [!NOTE]
 > Bu işlem, Visual Studio’nun Intellisense otomatik tamamlama için kullandığı bir bağımlılığı yeniden yazdığı için yeniden eşleyici değişiklikleri doğru biçimde algılamak amacıyla Intellisense’i ilk kez çalıştırdıktan sonra Visual Studio’yu yeniden başlatmanız gerekebilir. 
 
-
-## <a name="support"></a>Support
-
 Bileşeni uygulamanıza eklemek için temel adımları tamamladınız. Şimdi Xamarin Android örnek uygulamasındaki adımları uygulayabilirsiniz. Biri Xamarin.Forms, diğeri Android için olmak üzere iki örnek sağladık.
 
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Xamarin tabanlı Android LOB uygulamanızı kullanmak için Intune uygulama koruma ilkelerini gerektirme (isteğe bağlı) 
@@ -124,22 +122,12 @@ Bileşeni uygulamanıza eklemek için temel adımları tamamladınız. Şimdi Xa
 Aşağıda, Xamarin tabanlı Android LOB uygulamalarını yalnızca Intune korumalı kullanıcıların cihazlarında kullanabildiğinden emin olmayı sağlayan yönergeler verilmiştir. 
 
 ### <a name="general-requirements"></a>Genel Gereksinimler
-* Uygulamanızın Uygulama Kimliğini kaydedin. Bunu [Azure Portalı](https://portal.azure.com/)'nda **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütununda bulabilirsiniz. Azure portalında:
-1.  **Azure Active Directory** dikey penceresine gidin.
-2.  Uygulama için **Uygulama kaydı** ayarını seçin.
-3.  **API Erişimi** başlığının altındaki **Ayarlar**’da **Gerekli İzin**’i seçin. 
-4.  **+ Ekle**’ye tıklayın.
-5.  **Bir API Seç**’e tıklayın. 
-6.  Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** yazın.
-7.  API’ler listesinde **Microsoft Mobil Uygulama Yönetimi**’ni seçin ve seçime tıklayın.
-8.  **Kullanıcının Uygulama Yönetim Verilerini Okuma ve Yazma**'yı seçin.
-9.  **Bitti**’ye tıklayın.
-10. **İzin ver**'e, ardından **Evet**'e tıklayın. 
+* Uygulama koruma İlkesi (uygulama) hizmeti için Xamarin uygulama izinleri vermek için adımları izlendiğinden emin olun. Yönergeleri kullanın [Intune SDK'sı Kılavuzu ile çalışmaya başlama](app-sdk-get-started.md#next-steps-after-integration) altında "verin, uygulama erişimini Intune uygulama koruma hizmeti için (isteğe bağlı)". 
     
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
 Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulamalarına özgüdür.
 
-1. [Android için Intune SDK’sı kılavuzu](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)’nda açıklanan adımları kullanarak ADAL’ı yapılandırın.
+1. [Android için Intune SDK’sı kılavuzu](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)’nda açıklanan adımları kullanarak ADAL’ı yapılandırın.
 > [!NOTE] 
 > “istemci kimliği” terimi, Azure portalında uygulamanıza bağlanan “uygulama kimliği” terimi ile aynı şeydir. 
 * SSO’yu etkinleştirmek için gereken şey “Yaygın ADAL yapılandırması” #2’dir.
@@ -159,5 +147,5 @@ Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri g
 > [!NOTE] 
 > .NET ADAL'ın kullanıma sunulacak bir sonraki sürümünün (3.17.4), bu çalışmayı yapmak için gereken düzeltmeyi içermesi bekleniyor.
 
+## <a name="support"></a>Support
 Kuruluşunuz zaten bir Intune müşterisiyse destek bileti açmak ve [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) bir sorun bileti oluşturmak için Microsoft desteği temsilcinizle birlikte çalışın, mümkün olduğunca kısa sürede size yardım ederiz. 
-

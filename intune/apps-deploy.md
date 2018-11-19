@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
-ms.translationtype: HT
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903429"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610116"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -58,7 +58,7 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin.
 7. Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
 8. Belirli bir uygulama için **atama türü** seçin:
-   - **Kayıtlı cihazlar için bulunur**: Kullanıcılar, Şirket Portalı uygulamasından veya web sitesinden uygulamayı yükler.
+   - **Kayıtlı cihazlar için kullanılabilir**: uygulama uygulamayı Şirket portalı uygulamasından veya Web sitesinden yükleyebilir kullanıcı gruplarına atayın.
    - **Kayıtlı veya kayıtsız olarak kullanılabilir**: Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. Yönetilen Google Play’deki uygulamalar bu seçeneği desteklemez. 
    - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir.
    - **Kaldırma**: Uygulama, seçilen gruplardaki cihazlardan kaldırılır.

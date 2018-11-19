@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
-ms.translationtype: HT
+ms.openlocfilehash: 1a10d434fbdb5d827c7ecb89d1ae2f7e43c0f951
+ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298097"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51654917"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Karma Azure Active Directory’ye olan katılmış cihazları Intune ve Windows Autopilot kullanarak dağıtma (Önizleme)
 Karma Azure Active Directory alanına katılmış olan cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin.
@@ -110,12 +110,13 @@ Bilgisayar oluşturma hakkı verilen kuruluş birimi şunlarla eşleşmelidir:
 
 Active Directory için Intune Bağlayıcısı, Windows Server 2016 çalıştıran ve hem Internet’e hem de Active Directory hizmetinize bağlı olan bir bilgisayara yüklenmelidir. Birden fazla Active Directory etki alanını desteklemek üzere ölçek ve kullanılabilirliği artırmak için ortamınıza birden fazla bağlayıcı yükleyebilirsiniz. Bağlayıcıyı, herhangi bir başka Intune bağlayıcısı çalıştırmayan bir sunucuya yüklemenizi öneririz.
 
-1. [Intune](https://aka.ms/intuneportal)’da **Cihaz kaydı** > **Windows kaydı** > **Active Directory için Intune Bağlayıcısı (Önizleme)** > **Bağlayıcı ekle**’yi seçin. 
-2. Bağlayıcıyı indirmek için yönergeleri izleyin.
-3. Bağlayıcıyı indirmek için indirilen bağlayıcı kurulum dosyasını açın (ODJConnectorBootstrapper.exe).
-4. Kurulumun sonunda **Yapılandır**’ı seçin.
-5. **Oturum Aç**’ı seçin.
-6. Genel Yönetici veya Intune Yöneticisi rolüne ait kimlik bilgilerini girin.
+1. Bir dil paketi yüklü ve açıklandığı gibi yapılandırılmış olduğundan emin olun [Intune Bağlayıcısı (Önizleme) dil gereksinimleri](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
+2. [Intune](https://aka.ms/intuneportal)’da **Cihaz kaydı** > **Windows kaydı** > **Active Directory için Intune Bağlayıcısı (Önizleme)** > **Bağlayıcı ekle**’yi seçin. 
+3. Bağlayıcıyı indirmek için yönergeleri izleyin.
+4. Bağlayıcıyı indirmek için indirilen bağlayıcı kurulum dosyasını açın (ODJConnectorBootstrapper.exe).
+5. Kurulumun sonunda **Yapılandır**’ı seçin.
+6. **Oturum Aç**’ı seçin.
+7. Genel Yönetici veya Intune Yöneticisi rolüne ait kimlik bilgilerini girin.
 8. **Cihaz kaydı** > **Windows kaydı** > **Active Directory için Intune Bağlayıcısı (Önizleme)** seçeneğine giderek bağlantı durumunun **Etkin** olduğunu onaylayın.
 
 ### <a name="configure-web-proxy-settings"></a>Web proxy ayarlarını yapılandırma

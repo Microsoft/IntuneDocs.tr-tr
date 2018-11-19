@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
-ms.translationtype: HT
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978255"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610031"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune yazılımı istemcisi ile Windows PC’leri bilgisayar olarak yönetme
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Aşağıda açıklandığı gibi Windows bilgisayarlarını [mobil cihaz yönetimi (MDM) ile mobil cihazlar olarak](windows-enroll.md) ya da Intune yazılım istemcisi ile bilgisayarlar olarak yönetmek için Microsoft Intune’u kullanabilirsiniz. Ancak Microsoft, müşterilerin mümkün olan her durumda [MDM yönetim çözümünü kullanmasını](windows-enroll.md) önerir.
+> Aşağıda açıklandığı gibi Windows bilgisayarlarını [mobil cihaz yönetimi (MDM) ile mobil cihazlar olarak](windows-enroll.md) ya da Intune yazılım istemcisi ile bilgisayarlar olarak yönetmek için Microsoft Intune’u kullanabilirsiniz. Ancak Microsoft, müşterilerin mümkün olan her durumda [MDM yönetim çözümünü kullanmasını](windows-enroll.md) önerir. Daha fazla bilgi için [Windows PC'leri bilgisayarlar veya mobil cihazlar olarak yönetmeyi karşılaştırma](pc-management-comparison.md) 
 
 Intune, mobil cihazların yönetimi için kuruluşlara yönelik kapsamlı bir çözüm sağlar. Intune, Windows 10 işletim sistemine yerleşik modern cihaz yönetim özelliklerini kullanarak Windows PC’leri mobil cihaz olarak yönetebilir. Kuruluşunuzun yönetim gereksinimlerini karşılamak için Intune, Intune yazılım istemcisi ile Windows PC’leri bilgisayar olarak da yönetebilir. Bu yönetim yöntemi eski Windows işletim sistemindeki geleneksel bilgisayar yönetimi özelliklerini kullanır.
 
@@ -40,7 +40,8 @@ Intune, yazılım istemcisi kullanılarak Windows PC’lerin bilgisayar olarak y
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Intune bilgisayar istemcisi yönetimi gereksinimleri
 
-**Donanım**: Intune istemci yazılımını yüklemeye yönelik en düşük donanım gereksinimleri aşağıda verilmiştir:
+**Donanım**:  
+Intune istemci yazılımını yüklemeye yönelik en düşük donanım gereksinimleri şunlardır:
 
 |Gereksinim|Daha fazla bilgi|
 |---------------|--------------------|
@@ -48,7 +49,8 @@ Intune, yazılım istemcisi kullanılarak Windows PC’lerin bilgisayar olarak y
 |İşlemci ve Bellek|Bilgisayarın işletim sistemine ait işlemci ve RAM gereksinimlerine bakın.|
 |Disk alanı|İstemci yazılımı yüklenmeden önce 200 MB kullanılabilir disk alanı.|
 
-**Yazılım**: İstemci yazılımını yüklemeye ilişkin yazılım gereksinimleri aşağıda verilmiştir:
+**Yazılım**:  
+İstemci yazılımını yüklemeye ilişkin yazılım gereksinimleri şunlardır:
 
 |Gereksinim|Daha fazla bilgi|
 |---------------|--------------------|

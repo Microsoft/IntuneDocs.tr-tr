@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
+ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232231"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51709147"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
 
@@ -66,7 +66,7 @@ Koşullu erişim yapılandırabilmek için önce aşağıdakileri doğrulayın:
 - EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **iş profilindeki** **Gmail** ve **Android Enterprise için Nine Work** desteklenir. Android iş profili cihazlarında koşullu erişimin çalışması için Gmail veya Android Enterprise için Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız. Ayrıca bu uygulamaları da zorunlu yükleme olarak dağıtmanız gerekir.
 
 > [!NOTE]
-> Android ve iOS için Microsoft Outlook uygulaması desteklenmez. 
+> Android ve iOS için Microsoft Outlook, Exchange şirket içi bağlayıcısı aracılığıyla desteklenmiyor. Azure Active Directory koşullu erişim ilkeleri ve iOS için Outlook ve Android için şirket içi kutularınıza ile Intune uygulama koruma ilkelerini kullanmak istiyorsanız, bkz. Lütfen [kullanarak karma iOS için Outlook ile Modern kimlik doğrulaması ve Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
 
 ### <a name="support-for-pcs"></a>Bilgisayarlar için destek
 
@@ -77,11 +77,11 @@ Windows 8.1 ve üstündeki yerel **Posta** uygulaması (Intune ile kaydedildiği
 
 1. [Azure portalı](https://portal.azure.com/)’na gidin ve Intune kimlik bilgilerinizle oturum açın.
 
-1. Oturumunuz başarıyla açıldıktan sonra **Azure Panosu**'nu görürsünüz.
+1. Oturumunuz başarıyla açıldıktan sonra gördüğünüz **Azure Panosu**.
 
-1. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
+1. Seçin **tüm hizmetleri** sol menüden yazın **Intune** metin kutusu filtresine.
 
-1. **Intune**’u seçin, **Intune Panosu**’nu görürsünüz.
+1. Seçin **Intune**, gördüğünüz **Intune Panosu**.
 
 1. **Şirket içi erişim**'i seçin. **Şirket içi erişim** bölmesinde koşullu erişim ilkesinin durumu ve bundan etkilenen cihazlar gösterilir.
 
@@ -124,6 +124,6 @@ Intune 1704 sürümünden başlayarak, yöneticiler Intune Azure portalından Az
 
 2. **İlkeler** bölmesinde **Yeni ilke**’yi seçerek yeni Azure AD koşullu erişim ilkenizi oluşturun.
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Azure Active Directory’de Koşullu Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
-ms.translationtype: HT
+ms.openlocfilehash: 2c05912e62f9887ff7af0532dc759c2e852c1b29
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915725"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51619033"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -106,9 +106,6 @@ Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri topla
 
     * Son kullanıcılar bu verileri göndermemeyi tercih ederse, Şirket Portalı uygulamasının Ayarlar bölümünde telemetriyi kapatmaları gerekir. Daha fazla bilgi için bkz. [Microsoft kullanım verilerini toplamayı devre dışı bırakma](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
-
- iOS ve Android iş kolu uygulaması sürüm numarası görünürdür <!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>İş kolu uygulaması sürüm numaraları
 
 Intune’da iş kolu uygulamaları artık iOS ve Android uygulamaları için sürüm numarasını görüntüler. Numara, Azure portalındaki uygulama listesinde ve uygulama genel bakış dikey penceresinde görüntülenir. Son kullanıcılar, uygulama numarasını Şirket Portalı uygulamasında ve web portalında görebilir.
@@ -164,6 +161,23 @@ iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek içi
 * **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak amacıyla her ilke ayarı için beklenen davranışı bilmeniz gerekir. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](app-protection-policy-settings-android.md).
 
 * **Sorun giderme**: Uygulamanızın kullanıcı deneyimini el ile test ederken herhangi bir sorunla karşılaşırsanız bkz. [Uygulama yükleme sorunlarını giderme](troubleshoot-app-install.md). 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Uygulama erişimlerini Intune uygulama koruma hizmeti için (isteğe bağlı)
+
+Kimlik doğrulaması için uygulamanızı kendi özel Azure Active Directory (AAD) ayarları kullanıyorsa, aşağıdaki adımları hem ortak mağaza uygulamaları, hem de için dahili LOB uygulamalarında gerçekleştirilmelidir. Adımları **uygulamanız Intune SDK'sı varsayılan istemci Kimliğini kullanıyorsanız alınması gerekmez**. 
+
+Uygulamanızı bir Azure kiracısı içinde kaydettikten sonra altında bazılarındaki **tüm uygulamaları**, kendi uygulama erişimini Intune uygulama koruma Hizmeti'ne (daha önce MAM hizmeti olarak da bilinir) vermeniz gerekir. Azure portalında:
+
+1.  **Azure Active Directory** dikey penceresine gidin.
+2.  Uygulama için **Uygulama kaydı** ayarını seçin.
+3.  **API Erişimi** başlığının altındaki **Ayarlar**’da **Gerekli İzin**’i seçin. 
+4.  **+ Ekle**’ye tıklayın.
+5.  **Bir API Seç**’e tıklayın. 
+6.  Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** yazın.
+7.  API’ler listesinde **Microsoft Mobil Uygulama Yönetimi**’ni seçin ve seçime tıklayın.
+8.  **Kullanıcının Uygulama Yönetim Verilerini Okuma ve Yazma**'yı seçin.
+9.  **Bitti**’ye tıklayın.
+10. **İzin ver**'e, ardından **Evet**'e tıklayın. 
 
 ### <a name="badge-your-app-optional"></a>Uygulamanıza rozet ekleyin (isteğe bağlı)
 
