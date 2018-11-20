@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212538"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167544"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -232,7 +232,7 @@ Bu adımda şunları yapacaksınız:
     ![IIS en fazla URL ve sorgu uzunluğu](./media/SCEP_IIS_max_URL.png)
 
 5. Sunucuyu yeniden başlatın. Değişiklikleri sonlandırmadığından **iisreset** kullanmayın.
-6. `http://*FQDN*/certsrv/mscep/mscep.dll` konumuna gözatın. Şuna benzeyen bir NDES sayfası görmelisiniz:
+6. konumuna gözatın `http://*FQDN*/certsrv/mscep/mscep.dll`. Şuna benzeyen bir NDES sayfası görmelisiniz:
 
     ![Test NDES](./media/SCEP_NDES_URL.png)
 
@@ -321,7 +321,7 @@ Bu adımda şunları yapacaksınız:
     > [!TIP]
     > Sertifika Bağlayıcısı Kullanıcı Arabirimi'ni başlatmadan sihirbazı kapatırsanız, aşağıdaki komutu çalıştırarak yeniden açabilirsiniz:
     >
-    > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
+    > < install_Path > \NDESConnectorUI\NDESConnectorUI.exe
 
 7. **Sertifika Bağlayıcısı** kullanıcı arabiriminde:
 
@@ -365,6 +365,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
      - iOS
      - Windows 8.1 ve üzeri
      - Windows 10 ve üzeri
+     - Android Kurumsal
 
    - **Konu adı biçimi**: Sertifika isteğindeki konu adının Intune tarafından otomatik olarak nasıl oluşturulacağını seçin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
 

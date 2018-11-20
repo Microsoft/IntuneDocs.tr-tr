@@ -5,23 +5,45 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b794ec40d05358ddd1aa3179c2f4060b2cd6fe1d
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 23e993f883b149e86ce83e0e028572f55468b84b
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236518"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947318"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlardaki VPN ayarlarını yapılandırma
 
 Microsoft Intune, iOS cihazlarınıza dağıtılabilir pek çok VPN ayarı içerir. Bu ayarlar, kuruluşunuzun ağına yönelik VPN bağlantıları oluşturmak ve yapılandırmak için kullanılır. Bu makalede bu ayarlar açıklanır. Bazı ayarlar yalnızca Citrix ve Zscaler gibi bazı VPN istemcileri için kullanılabilir.
+
+## <a name="connection-type"></a>Bağlantı türü
+
+Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
+
+- **Check Point Capsule VPN**
+- **Cisco Eski AnyConnect**: [Cisco Eski AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) uygulama sürümü 4.0.5x ve öncesi için geçerlidir.
+- **Cisco AnyConnect**: [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) uygulama sürümü 4.0.7x ve sonrası için geçerlidir.
+- **SonicWall Mobile Connect**
+- **F5 Access Eski**: F5 Access uygulama sürümü 2.1 ve öncesi için geçerlidir.
+- **F5 Access**: F5 Access uygulama sürümü 3.0 ve sonrası için geçerlidir.
+- **Palo Alto Networks GlobalProtect (Eski)**: Palo Alto Networks GlobalProtect uygulama sürümü 4.1 ve öncesi için geçerlidir.
+- **Palo Alto Networks GlobalProtect**: Palo Alto Networks GlobalProtect uygulama sürümü 5.0 ve sonrası için geçerlidir.
+- **Pulse Secure**
+- **Cisco (IPSec)**
+- **Citrix VPN**
+- **Citrix SSO**
+- **Zscaler**: Zscaler Private Access’i (ZPA) Azure Active Directory hesabınızla tümleştirmenizi gerektirir. Ayrıntılı adımlar için bkz. [Zscaler belgeleri](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Özel VPN**
+
+> [!NOTE]
+> Cisco, Citrix, F5 ve Palo Alto; eski istemcilerinin iOS 12 sürümünde çalışmadığını duyurdu. En kısa zamanda yeni uygulamalara geçmeniz gerekir. Daha fazla bilgi için bkz. [Microsoft Intune Destek Ekibi Blogu](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
 
 ## <a name="base-vpn-settings"></a>Temel VPN ayarları
 
@@ -37,44 +59,28 @@ Aşağıdaki listede gösterilen ayarlar, seçtiğiniz VPN bağlantı türüne g
 
     > [!NOTE]
     > Cisco IPsec VPN için kimlik doğrulama yöntemi olarak kullanıcı adı ve parola kullanılacaksa bunlar, özel bir Apple Configurator profili ile SharedSecret’ı teslim etmelidir.
-  
-- **Bağlantı türü**: Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
-  - **Check Point Capsule VPN**
-  - **Cisco Eski AnyConnect**: [Cisco Eski AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) uygulama sürümü 4.0.5x ve öncesi için geçerlidir.
-  - **Cisco AnyConnect**: [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) uygulama sürümü 4.0.7x ve sonrası için geçerlidir.
-  - **SonicWall Mobile Connect**
-  - **F5 Access Eski**: F5 Access uygulama sürümü 2.1 ve öncesi için geçerlidir.
-  - **F5 Access**: F5 Access uygulama sürümü 3.0 ve sonrası için geçerlidir.
-  - **Palo Alto Networks GlobalProtect (Eski)**: Palo Alto Networks GlobalProtect uygulama sürümü 4.1 ve öncesi için geçerlidir.
-  - **Palo Alto Networks GlobalProtect**: Palo Alto Networks GlobalProtect uygulama sürümü 5.0 ve sonrası için geçerlidir.
-  - **Pulse Secure**
-  - **Cisco (IPSec)**
-  - **Citrix VPN**
-  - **Citrix SSO**
-  - **Zscaler**: Zscaler Private Access’i (ZPA) Azure Active Directory hesabınızla tümleştirmenizi gerektirir. Ayrıntılı adımlar için bkz. [Zscaler belgeleri](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
-  - **Özel VPN**    
 
-    > [!NOTE]
-    > Cisco, Citrix, F5 ve Palo Alto; eski istemcilerinin iOS 12 sürümünde çalışmadığını duyurdu. En kısa zamanda yeni uygulamalara geçmeniz gerekir. Daha fazla bilgi için bkz. [Microsoft Intune Destek Ekibi Blogu](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
-
-* **Dışlanan URL’ler** (yalnızca Zscaler): Zscaler VPN’e bağlıyken, listelenen URL’lere Zscaler bulutu dışında da erişilebilir. 
+- **Dışlanan URL’ler** (yalnızca Zscaler): Zscaler VPN’e bağlıyken, listelenen URL’lere Zscaler bulutu dışında da erişilebilir. 
 
 - **Bölünmüş tünel**: Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlamak için bu seçeneği **Etkinleştirin** veya **Devre Dışı Bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, web’e göz atmak için ise otelin standart ağını kullanır.
 
-- **Ağ erişim denetimini (NAC) etkinleştir**: Bu ayar, bir cihaz kimliğinin ağ erişim denetimi (NAC) ile birlikte kullanılmak üzere VPN profilinde yer almasına izin vermek amacıyla Citrix gibi VPN istemcileri için yer tutucudur. **Kabul ediyorum** seçeneğini belirlediğinizde bu cihaz kimliği, VPN profilinde yer alır. Şu anda bu yeni kimliği destekleyen bir VPN istemcisi veya NAC iş ortağı çözümü yoktur; cihazlar uyumluluk durumuna bakılmaksızın VPN’e bağlanabilirler. İş ortaklarımız kimliğe yönelik destek eklediğinde bu belgeyi güncelleştireceğiz.
+- **VPN tanımlayıcısı** (özel VPN, Zscaler ve Citrix): VPN uygulamasının tanımlayıcısıdır, kullanmakta olduğunuz ve VPN sağlayıcınız tarafından verilir.
+  - **Kuruluşunuzun özel VPN öznitelikleri için anahtar/değer çiftlerini girin**: VPN bağlantınızı özelleştiren **Anahtarlar** ve **Değerler**’i ekleyin veya içeri aktarın. Bu değerlerin genelde VPN sağlayıcınız tarafından verildiğini unutmayın.
+
+- **Ağ erişim denetimi (NAC) etkinleştirme** (yalnızca Citrix SSO): seçtiğinizde **kabul ediyorum**, cihaz kimliği VPN profilinde yer almaktadır. Bu kimliği kimlik doğrulaması için VPN izin vermek veya ağ erişimi engellemek için kullanılabilir.
+
+  **Citrix SSO ile ağ geçidi kullanırken**, yaptığınızdan emin olun:
+
+  - Citrix ağ geçidi 12.0.59 kullandığınızı onaylayın veya üzeri.
+  - Kullanıcılarınızın Citrix SSO 1.1.6 veya daha sonra kullanıcıların cihazlarında yüklü onaylayın.
+  - Citrix ağ geçidi açıklandığı gibi Intune ile NAC için tümleştirme [NetScaler (LDAP + OTP senaryosu) ile Microsoft Intune/Enterprise Mobility Suite tümleştirme](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix dağıtım kılavuzu.
+  - NAC, VPN profilinde etkinleştirin.
 
   Önemli ayrıntılar:  
 
-  - Bu ayar etkinleştirildiğinde VPN bağlantısı her 24 saatte bir kesilir.
-  - Cihaz kimliği profilin bir parçasıdır ancak Intune’da veya profilde görülemez. Bu kimlik Microsoft tarafından herhangi bir yerde depolanmaz ve paylaşılmaz. Kimlik, VPN iş ortakları tarafından desteklenmeye başladığında Citrix SSO gibi VPN istemcileri kimliği alabilir ve cihazın kayıtlı ve VPN profilinin uyumlu/uyumsuz olduğunu onaylamak için Intune’u sorgulayabilir.
+  - NAC etkinleştirildiğinde, VPN 24 saatte kesilir.
+  - Cihaz kimliği profilinin bir parçasıdır, ancak Intune'da görünmeyecek. Bu kimlik Microsoft tarafından herhangi bir yerde depolanmaz ve paylaşılmaz. Kimlik, VPN iş ortakları tarafından desteklenmeye başladığında Citrix SSO gibi VPN istemcileri kimliği alabilir ve cihazın kayıtlı ve VPN profilinin uyumlu/uyumsuz olduğunu onaylamak için Intune’u sorgulayabilir.
   - Bu ayarı kaldırmak için profili yeniden oluşturun ve **Kabul ediyorum**’u seçmeyin. Daha sonra profili yeniden atayın.
-
-## <a name="custom-vpn-settings"></a>Özel VPN ayarları
-
-Bağlantı türü olarak **Özel VPN**’i seçtiyseniz şu ayarları yapılandırın. Bu ayarlar, Zscaler ve Citrix bağlantıları için de görünürdür.
-
-- **VPN tanımlayıcısı**: Kullandığınız VPN uygulamasının tanımlayıcısıdır ve VPN sağlayıcınız tarafından verilir.
-- **Kuruluşunuzun özel VPN öznitelikleri için anahtar/değer çiftlerini girin**: VPN bağlantınızı özelleştiren **Anahtarlar** ve **Değerler**’i ekleyin veya içeri aktarın. Bu değerlerin genelde VPN sağlayıcınız tarafından verildiğini unutmayın.
 
 ## <a name="automatic-vpn-settings"></a>Otomatik VPN ayarları
 
@@ -94,7 +100,7 @@ Bağlantı türü olarak **Özel VPN**’i seçtiyseniz şu ayarları yapıland�
     - Bağlanma
     - Bağlantıyı değerlendir
     - Yoksay
-    - Bağlantıyı kes
+    - Bağlantıyı Kes
 
 ## <a name="proxy-settings"></a>Proxy ayarları
 

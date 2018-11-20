@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fdfa89654df1f62979240f364c2e28b5a15e78f
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
-ms.translationtype: HT
+ms.openlocfilehash: 6668848bcb381299417ca7a641e267c41f9a1e79
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058923"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167408"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uygulamalarınızın süresinin dolmasını engellemek için iOS uygulama sağlama profillerini kullanma
 
@@ -49,7 +49,7 @@ Yönetici olarak, iOS uygulama sağlama yapılandırmasını atamak için güven
 3. **Profil oluştur** bölmesinde aşağıdakileri değerleri yapılandırın:
     - **Ad** - Bu mobil sağlama profiline bir ad verin.
     - **Açıklama** - İsteğe bağlı olarak, ilke için bir açıklama sağlayın.
-    - **Profili dosyasını karşıya yükleme** - **İçeri Aktar**’ı seçin, sonra da Apple Developer web sitesinden indirdiğiniz bir Apple Mobil Yapılandırma Profili dosyasını (uzantısı **.mobileprovision** olmalı) seçin.
+    - **Profil dosyasını karşıya yükle** -seçin **alma**, bir Apple mobil yapılandırma profili dosyasını seçin (uzantısı ile `.mobileprovision`) Apple Developer Web sitesinden indirdiğiniz.
 4. İşiniz bittiğinde **Oluştur**’u seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar

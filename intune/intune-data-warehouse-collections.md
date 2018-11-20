@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 5fb0de1af9c8336cb277572faf526f1471108591
-ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
-ms.translationtype: HT
+ms.openlocfilehash: 89be4d6940910df4166ec9a485b78e066f94b755
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51225960"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167578"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
@@ -408,8 +408,8 @@ Microsoft Intune yoluyla Mobil Uygulama Yönetimini kullanarak bir hedef cihaz t
 | AppKey             | AppRevision örneğini tanımlamak için kullanılan mobil uygulamanın anahtarı.                                                          |
 | DeviceTypeKey      | Mobil Uygulama ile ilişkili Cihaz Türü anahtarı.                                                              |
 | AppInstallStateKey | MobileAppInstallState örneğini tanımlamak için kullanılan uygulama yükleme durumunun anahtarı.                                         |
-| ErrorCode          | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |
-| Sayı              | Toplam miktar.                                                                                                                  |
+| hata kodu          | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |
+| Sayısı              | Toplam miktar.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
 **ownerType** varlığı; bir cihazın sahipliğinin şirket, kişisel veya bilinmeyen olduğunu gösterir.

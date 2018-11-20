@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236161"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947335"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Ağ erişim denetimini (NAC) Intune ile tümleştirme
 
@@ -59,14 +59,23 @@ Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin na
 8. Cihaz kayıtlı ve uyumlu hale geldikten sonra NAC iş ortağı çözümü, durumu Intune’dan alır.
 9. Bağlantı başarılı bir şekilde kurulur ve böylece cihazın şirket kaynaklarına erişimi sağlanır.
 
-## <a name="use-nac-on-your-ios-devices"></a>iOS cihazlarınızda NAC kullanma
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>NAC iOS cihazlarınızdaki VPN için kullanın.  
+VPN profilinde NAC etkinleştirmek gerek kalmadan NAC Cisco eski AnyConnect ve F5'e erişim eski Citrix VPN için desteklenir.
 
-Ağ erişim denetimi şu anda aşağıdaki iOS VPN istemcilerinde desteklenmez:
+NAC Citrix SSO için de desteklenir. NAC, iOS için Citrix SSO için etkinleştirmek için:
+- Citrix ağ geçidi 12.0.59 kullanın veya daha yüksek.  
+- Kullanıcılar, Citrix SSO 1.1.6 olmalıdır veya sonraki bir sürümü yüklü.
+- [NetScaler NAC için Intune ile tümleştirme](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) Citrix ürün belgelerinde açıklandığı gibi.
+- Temel VPN ayarları yapılandırması için **etkinleştirme ağ erişim denetimi (NAC)**, için onay kutusunu işaretleyin **kabul ediyorum**.
+
+İOS için Citrix SSO kullandığınızda, 24 saatte bir güvenlik nedenleriyle VPN bağlantısı kesilir. VPN hemen yeniden.
+
+
+**Ağ erişim denetimi şu anda desteklenmiyor aşağıdaki iOS VPN istemcilerine**:
 -   Cisco AnyConnect
 -   F5 Access
--   Citrix SSO  
 
-Bu daha yeni istemcilere bir NAC çözümü yayınlamak için iş ortaklarımızla çalışıyoruz. Çözümler hazır olduğunda bu makaleyi ek ayrıntılarla güncelleştireceğiz. 
+NAC çözümü için daha yeni bu istemcilerden serbest bırakmak için iş ortaklarımızla çalışıyoruz. Çözümler hazır olduğunda bu makaleyi ek ayrıntılarla güncelleştireceğiz. 
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c929fd8c01eda062d54b818996bebe02807e2f55
-ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
+ms.openlocfilehash: b96e9b79d70c538982aac52ca822b403d1c0e4f8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "51859571"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167595"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,15 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-12-2018"></a>12 Kasım 2018 haftası
+
+### <a name="network-access-control-nac-support-for-citrix-sso-for-ios----3259404---"></a>İOS için Citrix SSO için erişim denetimi (NAC) desteği ağ <!-- 3259404 -->
+
+Citrix Citrix Citrix SSO için ağ erişim denetimi (NAC) ıntune iOS izin vermek için ağ geçidi için bir güncelleştirme yayımladı. Intune'da bir cihaz kimliği bir VPN profili içinde dahil kabul etmek ve ardından bu profili iOS cihazlarınıza gönderin. Citrix bu işlevselliği kullanmak için ağ geçidi için en son güncelleştirmesini yüklemeniz gerekir.
+
+[İOS cihazlarında VPN ayarlarını yapılandırma](vpn-settings-ios.md#base-vpn-settings) NAC, bazı ek gereksinimleri de dahil olmak üzere kullanma hakkında daha fazla bilgi sağlar. 
+
 ## <a name="week-of-november-5-2018"></a>5 Kasım 2018 Haftası
 
 ### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>iOS e-posta profillerinde iOS 12 OAuth için destek <!--2155106 -->
@@ -53,11 +62,7 @@ Intune’un iOS e-posta profilleri, iOS 12 Open Authorization (OAuth) standardı
 Artık karma Azure Active Directory’ye katılmış olan cihazları Autopilot kullanarak ayarlayabilirsiniz. Hibrit Autopilot özelliğini kullanmak için cihazların kuruluşunuzun ağına katılmış olması gerekir. Daha fazla bilgi için bkz. [Karma Azure Active Directory’ye katılmış olan cihazları Intune ve Windows Autopilot kullanarak dağıtma](windows-autopilot-hybrid.md).
 Bu özellik, kullanıcı tabanının kullanımına gelecek birkaç gün içinde sunulacaktır. Bu nedenle, bu özellik hesabınız için kullanılabilir olana kadar bu adımları uygulayamayabilirsiniz.
 
-### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>Web verileri için Uygulama Koruma İlkesi (APP) ayarları <!-- 2662995  -->
-Android ve iOS cihazlarında web içeriği için APP ilke ayarları, gerek http gerekse https web bağlantılarını, ayrıca iOS Evrensel Bağlantıları ve Android Uygulama Bağlantıları aracılığıyla veri aktarımını daha iyi işleyecek şekilde güncelleştirildi.  
-
 ## <a name="week-of-october-29-2018"></a>29 Ekim 2018 haftası
-
 
 ### <a name="app-management"></a>Uygulama yönetimi
 
@@ -501,17 +506,6 @@ Android P sürümünü desteklemek amacıyla Android için Intune Uygulama SDK's
 
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
-
-#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>Bir kullanıcının birden fazla cihazını şifrelemek ve imzalamak için S/MIME kullanın <!-- 1333642 -->
-Bu güncelleştirme, içeri aktarılmış yeni bir sertifika profili kullanan S/MIME e-posta şifrelemesi içerir (**Cihaz yapılandırması** > **Profiller** > **Profil oluşturun** > platform seçin > **PKCS içeri aktarılan sertifika** profil türü). Intune’da sertifikaları PFX biçiminde içeri aktarabilirsiniz. Intune, aynı sertifikaları tek bir kullanıcı tarafından kaydedilen birden fazla cihaza teslim edebilir. Ayrıca şunları da içerir:
-
-- Yerel iOS e-posta profili, PFX biçiminde içeri aktarılan sertifikaları kullanan S/MIME şifrelemesini etkinleştirmeyi destekler.
-- Windows Phone 10 cihazlarındaki yerel posta uygulaması, S/MIME sertifikalarını otomatik olarak kullanır.
-- Özel sertifikalar, birden fazla platforma teslim edilebilir. Ancak tüm e-posta uygulamaları, S/MIME’yi desteklemez.
-- Diğer platformlarda S/MIME’yi etkinleştirmek için posta uygulamasını el ile yapılandırmanız gerekebilir.  
-- S/MIME şifrelemesini destekleyen e-posta uygulamaları, S/MIME e-posta şifrelemesi için sertifika alma işlemini MDM’nin destekleyemeyeceği bir şekilde halleder, ör. yayımcılarının sertifika deposundan okuma.
-
-Desteklenir: Windows, Windows Phone 10, macOS, iOS, Android
 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>macOS cihazlarında Güvenlik Duvarı ayarlarını kullanarak cihaz uyumluluk ilkesi oluşturma <!-- 1497640 -->
 Yeni bir macOS uyumluluk ilkesi oluşturduğunuzda (**Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Platform: macOS** > **Sistem güvenliği**), bazı yeni **Güvenlik Duvarı** ayarları sağlanır: 
