@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: dd0ce8cd25739113349663de989546dfa9d73d36
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
-ms.translationtype: HT
+ms.openlocfilehash: 05cc1971f107c7bc3da371de0a916149c879aae0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310649"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187132"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma
 
@@ -176,7 +177,7 @@ Bir uzak görevin durumunu, Intune konsolunun sağ alt köşesindeki **Uzak Gör
   ![Endpoint Protection’ı izleme](media/pol-sa-ep-monitor.png)
 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Bilgisayarlarda kötü amaçlı yazılımların En Son Algılama Yollarını görüntüleme
-Intune, cihazda en son algılanan kötü amaçlı yazılım yollarının en fazla 10’unu görüntüleyebilir. **En Son Algılama Yolu** varsayılan olarak devre dışı bırakılır. Bu görünümü etkinleştirmek için:
+Intune, cihazda en son algılanan kötü amaçlı yazılım yollarının en fazla 10’unu görüntüleyebilir.  **En Son Algılama Yolu** varsayılan olarak devre dışı bırakılır. Bu görünümü etkinleştirmek için:
 
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/)**Gruplar** > **Tüm Cihazlar** > **Tüm Bilgisayarlar**'ı seçin.
 2. Son algılama yollarını görmek istediğiniz bilgisayara sağ tıklayın ve **Özellikler**’i seçin.
@@ -195,5 +196,5 @@ Intune, Intune istemcinin yüklü olduğu uzaktan yönetilen bir bilgisayarda En
 ## <a name="need-more-help"></a>Daha fazla yardıma mı ihtiyacınız var?
 Daha fazla yardım ve destek için bkz. [Microsoft Intune Endpoint Protection’da sorun giderme](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
-### <a name="see-also"></a>Ayrıca bkz:
+### <a name="see-also"></a>Ayrıca Bkz.
 [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)

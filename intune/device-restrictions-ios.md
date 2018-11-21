@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
-ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
-ms.translationtype: HT
+ms.openlocfilehash: 8f9e9533793a8792e9ad354392b9d8e911cd07f4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50001618"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188713"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
 
@@ -90,7 +91,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 > - Müstehcen içerik
 > - iCloud belgeleri ve verileri
 > - Çok oyunculu oyun
-> - Oyun Merkezi Arkadaşları Ekleyin
+> - Oyun merkezi arkadaşları ekleyin
 > - Siri
 
 ## <a name="password"></a>Parola

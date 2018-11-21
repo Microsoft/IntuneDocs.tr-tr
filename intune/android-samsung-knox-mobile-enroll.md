@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b722dad629006ac3ea12d59e02a87f359f02e485
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
-ms.translationtype: HT
+ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50971423"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189750"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -58,7 +59,7 @@ KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirket
 
 ### <a name="for-android-enterprise"></a>Android Kurumsal için
 
-| MDM Profil Alanları| Gerekli mi? | Değerler | 
+| MDM Profil Alanları| Gerekli mi? | Değerleri | 
 |-------------------|-----------|-------| 
 |MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın. 
 |Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin. 
@@ -74,7 +75,7 @@ KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirket
 
 Adım adım rehber için [ Samsung Knox Profil Kurulum Sihirbazı](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) yönergelerine bakın.
 
-| MDM Profil Alanları| Gerekli mi? | Değerler |
+| MDM Profil Alanları| Gerekli mi? | Değerleri |
 |-------------------|-----------|-------|
 |MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın.
 |Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin.

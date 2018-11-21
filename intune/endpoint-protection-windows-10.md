@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a7c7ebca1c6472b58021a57b1b4a59fc42966b0
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: fdfe822c9633e22e611acfe7f915068a4a183ae2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576962"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190005"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Intune’da Windows 10 (ve sonrası) için Endpoint Protection ayarları
 
@@ -54,7 +55,7 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
 Aşağıdaki Windows 10 sürümlerinde desteklenir:
 - Giriş
 - Professional
-- İşletme
+- İş
 - Kurumsal
 - Eğitim
 - Mobil
@@ -101,7 +102,7 @@ Bu ayarlar; **Etki alanı (iş yeri) ağı**, **Özel (keşfedilebilir) ağ** ve
 Microsoft Edge’in yüklü olduğu şu Windows 10 sürümlerinde desteklenir:
 - Giriş
 - Professional
-- İşletme
+- İş
 - Kurumsal
 - Eğitim
 - Mobil
@@ -119,7 +120,7 @@ Microsoft Edge’in yüklü olduğu şu Windows 10 sürümlerinde desteklenir:
 Aşağıdaki Windows 10 sürümlerinde desteklenir:
 
 - Professional
-- İşletme
+- İş
 - Kurumsal
 - Eğitim
 - Mobil
@@ -229,7 +230,7 @@ Aşağıdaki Windows 10 sürümlerinde desteklenir:
 
 - Giriş
 - Professional
-- İşletme
+- İş
 - Kurumsal
 - Eğitim
 - Mobil
@@ -304,7 +305,7 @@ Aşağıdaki Windows 10 sürümlerinde desteklenir:
 
 **Mobil Cihaz Yönetimi (MDM)**: 
 - Professional
-- İşletme
+- İş
 - Kurumsal
 - Eğitim
 - Mobil
@@ -349,7 +350,7 @@ Aşağıdaki Windows 10 sürümlerinde desteklenir:
 
 - Giriş
 - Professional
-- İşletme
+- İş
 - Kurumsal
 - Eğitim
 - Mobil
@@ -382,7 +383,7 @@ Aşağıdaki Windows 10 sürümlerinde desteklenir:
  
 - Giriş
 - Professional
-- İşletme
+- İş
 - Kurumsal
 - Eğitim
 

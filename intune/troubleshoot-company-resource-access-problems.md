@@ -13,19 +13,20 @@ ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: ca4b289f059cc4fc8bc77518e06e9cee0f8e7864
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
-ms.translationtype: HT
+ms.openlocfilehash: f4ead71e626316b515646d474cc006be7cf2f774
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291638"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190379"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
 
 Microsoft Intune eylemi bir hata kodu döndürdüğünde sorunları gidermenize yardımcı olması için bu konu başlığı altında verilen hata ve durum kodlarını kullanın.
 
-Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](get-support.md).
+Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM ile yönetilen Windows cihazları için durum kodları
 
@@ -377,7 +378,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek
 |-2016345907|0x87D100CD|Kaynak, içeriğini GÜNCELLEŞTİRMELİDİR. Talebi gönderene, güncel sürümü edinmek için içeriğinin eşitlenmesi GEREKTİĞİ bildiriliyor.|
 |-2016345908|0x87D100CC|İstek başarıyla tamamlandı ancak hiçbir veri döndürülmüyor. Yanıt kodu aynı zamanda, hedefte içerik olmadığında bir Get’e yanıt olarak da döndürülür.|
 |-2016345909|0x87D100CB|Yetkili olmayan yanıt. Hedeflenenden farklı bir varlık isteğe yanıt veriyor. Yanıt yalnızca istek yetkili hedeften 200 yanıt kodu ile sonuçlanacaksa döndürülür.|
-|-2016345910|0x87D100CA|İşleme için kabul edildi. Bir uygulamanın uzaktan yürütmesini çalıştırma veya kullanıcı ya da uygulamaya bildirme isteği başarıyla gerçekleştirildi.|
+|-2016345910|0x87D100CA| İşleme için kabul edildi. Bir uygulamanın uzaktan yürütmesini çalıştırma veya kullanıcı ya da uygulamaya bildirme isteği başarıyla gerçekleştirildi.|
 |-2016345911|0x87D100C9|İstenen öğe eklendi.|
 |-2016345912|0x87D100C8|SyncML komutu başarıyla tamamlandı.|
 |-2016346011|0x87D10065|Belirtilen SyncML komutu yürütülüyor, ancak henüz tamamlanmadı.|

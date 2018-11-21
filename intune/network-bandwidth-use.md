@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 6eb6e07b3bb9da2723e57d9203288bebd8c7ab70
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: 243e9602a253fecf2eda1dd73dfb49a488db0974
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253638"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190260"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune ağ yapılandırma gereksinimleri ve bant genişliği
 
@@ -164,11 +165,11 @@ Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hiz
 
 ### <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
 
-|         Ana Bilgisayar Adı         |                                        URL (IP adresi/alt ağ)                                        |  Protokol  |     Bağlantı Noktası     |                          Cihaz                           |
+|         Ana bilgisayar adı         |                                        URL (IP adresi/alt ağ)                                        |  Protokol  |     Bağlantı Noktası     |                          Cihaz                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
-|      Yönetim Konsolu       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS ve macOS                    |
-|      Yönetim Konsolu       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS ve macOS                    |
-|      Yönetim Konsolu       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS ve macOS                    |
+|      Yönetici Konsolu       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS ve macOS                    |
+|      Yönetici Konsolu       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS ve macOS                    |
+|      Yönetici Konsolu       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS ve macOS                    |
 |        PI Sunucusu         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Apple iOS ve macOS bulut mesajlaşma için.          |
 |     Cihaz Hizmetleri      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
 |     Cihaz Hizmetleri      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |

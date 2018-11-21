@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 590ce850b97502b357dec86932e1445718860af2
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: ec3535004dccedb5b0310f4ecc10bb5c93f0ea43
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253553"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186894"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
 
@@ -64,7 +65,7 @@ Bu özellik şunları destekler:
 - iOS
 - Mac OS
 - Windows 10
-- Windows 10 Team
+- Windows 10 ekibi
 
 ## <a name="endpoint-protection"></a>Endpoint protection
 [Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md) Windows 10 cihazları için BitLocker'ı ve Windows Defender ayarlarını yapılandırır.

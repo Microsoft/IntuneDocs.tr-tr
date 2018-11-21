@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5020b1653dd92587805e471e80808e34f3007a84
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
-ms.translationtype: HT
+ms.openlocfilehash: e2c4335b17397833fdae9e95fecc2677c8068150
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494039"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187353"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI ile Veri Ambarına bağlanma
 
@@ -53,7 +54,7 @@ Power BI dosyası (pbix), kiracınızın bağlantısı bilgisini ve Veri Ambarı
 > [!Important]  
 > Her Power BI dosyası (pbix) kiracı konumuna bağlı olarak farklı olabilir. Birden çok Intune kiracısı yönetiyorsanız, bu kiracı için oturum açık durumdayken Azure portalından indirilen dosyayı kullandığınızdan emin olun.  
 
-1.  Azure portalında oturum açın ve **İzleme + Yönetim** > **Intune**’u seçin. Ayrıca **Intune** için kaynak araması da yapabilirsiniz.  
+1.  Azure portalında oturum açın ve seçin **izleme + Yönetim** > **Intune**. Kaynaklar için arama da yapabilirsiniz **Intune**.  
 2.  **Microsoft Intune Veri Ambarı API’si (Önizleme)** dikey penceresini açın.
 3.  **Power BI dosyasını indir**’e tıklayın. (pbix) uzantılı dosya, belirttiğiniz konuma indirme yapar.
 4.  Dosyayı Power BI ile açın. *Intune Veri Ambarı Raporları* yüklenir ancak kiracı verilerinizi alması birkaç saniye sürebilir.
@@ -64,7 +65,7 @@ Power BI dosyası (pbix), kiracınızın bağlantısı bilgisini ve Veri Ambarı
 
 Azure AD’de istemci kimliği doğrulandığı zaman OData URL’si, Veri Ambarı API’sinde rapor istemcinizin veri modelini açığa çıkaran RESTful uç noktasına bağlanır. Bağlantı kurmak ve kendi raporlarınızı oluşturmak üzere Power BI Desktop’ı kullanmak için bu yönergeleri izleyin. Kullanabilecekleriniz yalnızca Power BI Desktop ile sınırlı değil. İstemcinin OAUTH2.0 kimlik doğrulama ve OData v4.0 standardı destekliyor olması kaydıyla OData ile URL ile en sevdiğiniz analiz aracını kullanabilirsiniz.
 
-1.  Azure portalında oturum açın ve **İzleme + Yönetim** > **Intune**’u seçin. Ayrıca **Intune** için kaynak araması da yapabilirsiniz.  
+1.  Azure portalında oturum açın ve seçin **izleme + Yönetim** > **Intune**. Kaynaklar için arama da yapabilirsiniz **Intune**.  
 2.  **Microsoft Intune Veri Ambarı API’si (Önizleme)** dikey penceresini açın.
 3. Raporlama dikey penceresinden özel akış URL’sini alın, örneğin `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4. **Power BI Desktop**’ı açın.
@@ -76,7 +77,7 @@ Azure AD’de istemci kimliği doğrulandığı zaman OData URL’si, Veri Ambar
     1.  **Kuruluş hesabını** seçin.  
     2.  Kullanıcı adınızı ve parolanızı yazın.  
     3.  **Oturum aç**’ı seçin.  
-    4.  **Bağlan**’ı seçin.  
+    4.  Seçin **bağlanma**.  
 10. **Yükle**’yi seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar

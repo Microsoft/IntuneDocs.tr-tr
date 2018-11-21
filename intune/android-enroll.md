@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
-ms.translationtype: HT
+ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400360"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190124"
 ---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
@@ -30,7 +31,7 @@ Intune yöneticisi olarak, aşağıdaki Android cihazları yönetebilirsiniz:
 - Samsung Knox Standard cihazlar dahil olmak üzere Android cihazlar.
 - [Android iş profili cihazları](#enable-enrollment-of-android-for-work-devices) ve Android bilgi noktası cihazları dahil olmak üzere Android kurumsal cihazlar.
 
-Samsung Knox Standard çalıştıran cihazlarda Intune ile birden çok kullanıcı yönetimi gerçekleştirilebilir. Yani son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da merkezi olarak yönetilir. Son kullanıcılar oturum açtıklarında, uygulamalara erişir ve ek olarak kendilerine uygulanan ilkeler varsa bunları alırlar. Kullanıcılar oturumu kapattığında tüm veriler silinir.
+Samsung Knox Standard çalıştıran cihazlarda Intune ile birden çok kullanıcı yönetimi gerçekleştirilebilir. Yani son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da merkezi olarak yönetilir. Son kullanıcılar oturum açtıklarında, uygulamalara erişir ve ek olarak kendilerine uygulanan ilkeler varsa bunları alırlar. Kullanıcılar oturumu kapattığında tüm veriler silinir.
 
 ## <a name="prerequisite"></a>Önkoşul
 

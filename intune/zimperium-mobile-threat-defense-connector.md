@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231483"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187472"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune ile Zimperium Mobile Threat Defense bağlayıcısı
 
@@ -58,7 +59,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 
-Ağda **bağlantıyı izinsiz izleme** gibi tehditleri algılayın ve cihaz riskine dayalı olarak Wi-Fi ağlarına erişimi koruyun.
+Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı olarak Wi-Fi ağlarına erişimi koruyun.
 
 **Wi-Fi üzerinden ağ erişimini engelleme:**
 
@@ -70,7 +71,7 @@ Ağda **bağlantıyı izinsiz izleme** gibi tehditleri algılayın ve cihaz risk
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme
 
-Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine dayalı olarak kurumsal dosyaların eşitlenmesini engeller.
+Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı olarak Kurumsal dosyaların eşitlenmesini engeller.
 
 **Ağ tehditleri algılandığında SharePoint Online’ı engelle:**
 
@@ -94,7 +95,7 @@ Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine
 
 -   Zimperium Mobile Threat Defense aboneliği
 
-    -   Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips)'ne bakın.
+    -   Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips) daha fazla bilgi için.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

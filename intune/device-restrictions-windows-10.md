@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: c49da9c323e1c4124ad76ae64e63a177edfcaa71
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576894"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189988"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune’da Windows 10 (ve üzeri) cihaz kısıtlama için ayarlar
 Bu makalede, Windows 10 çalıştıran cihazlar için yapılandırabileceğiniz tüm Microsoft Intune cihaz kısıtlama ayarları gösterilir.
@@ -81,7 +82,7 @@ Windows 10 Mobile çalıştıran cihazlar için: Belirttiğiniz oturum açma say
 
 Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **Uygulama başına gizlilik özel durumları**'nı kullanarak uygulama başına özel durumlar tanımlayabilirsiniz.
 
-### <a name="exceptions"></a>Özel Durumlar
+### <a name="exceptions"></a>Özel durumlar
 
 - **Hesap bilgileri** - Bu uygulamanın kullanıcı adına, resmine ve diğer kişi bilgilerine erişip erişemeyeceğini tanımlayın.
 - **Arka plan uygulamaları** - Bu uygulamanın arka planda çalıştırılıp çalıştırılamayacağını tanımlayın.
@@ -109,7 +110,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 - **Paket Adı** -Uygulama paketi ailesi adı.
 - **Uygulama Adı** - Uygulamanın adı.
 
-### <a name="exceptions"></a>Özel Durumlar
+### <a name="exceptions"></a>Özel durumlar
 
 - **Hesap bilgileri** - Bu uygulamanın kullanıcı adına, resmine ve diğer kişi bilgilerine erişip erişemeyeceğini tanımlayın.
 - **Arka plan uygulamaları** - Bu uygulamanın arka planda çalıştırılıp çalıştırılamayacağını tanımlayın.
@@ -179,7 +180,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgiler tanımlayabilirsiniz. **U
 -   **Varsayılan arama motoru** - Kullanılacak varsayılan arama motorunu belirtin. Son kullanıcılar bu değeri istediği zaman değiştirebilir.
 -   **Çıkışta tarama verilerini temizle** – Kullanıcı Microsoft Edge’den çıktığında geçmişi ve tarama verilerini temizler.
 -   **Canlı Kutucuk verisi toplama** – Kullanıcı Microsoft Edge’den başlatma menüsüne bir site sabitlediğinde Windows’un Canlı Kutucuk’tan bilgi toplamasını durdurur.
--  **Sık Kullanılanlar Listesi** - Sık Kullanılanlar dosyasının yolunu tanımlar. Örneğin, http://contoso.com/favorites.html.
+-  **Sık Kullanılanlar Listesi** - Sık Kullanılanlar dosyasının yolunu tanımlar. Örneğin: http://contoso.com/favorites.html
 -  **Sık Kullanılanlarda değişikliği kısıtlama** -  Kullanıcıların Sık Kullanılanlar listesine ekleme, sıralama veya düzenleme işlemleri uygulamasını engellemek için bu ayarı **Engelle** olarak belirleyin. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
@@ -421,7 +422,7 @@ Sürücüdeki dosyalar salt okunursa Defender bunlarda bulunan kötü amaçlı y
    IPv4: 192.246.246.106:100<br>
  IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN: www.contoso.com:345
 
-## <a name="messaging"></a>İleti
+## <a name="messaging"></a>Mesajlaşma
 
 - **İleti eşitleme (yalnızca mobil)** - Her Yerden Mesajlaşma ile metin iletisi yedekleme ve kurtarmayı devre dışı bırakın.
 - **MMS (yalnızca mobil)** - Cihazdaki MMS gönderme ve alma işlevini devre dışı bırakın.

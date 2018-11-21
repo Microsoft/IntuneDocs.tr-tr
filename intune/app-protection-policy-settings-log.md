@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/15/2017
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,17 +14,26 @@ ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05502c901f01ba134475ec69df3c42aa6e0e7480
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231786"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189852"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
-Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin. Mobil istemcideki bir uygulama için Intune Tanı Modu'nu etkinleştirerek günlüklere erişin. Aşağıdaki tabloda, günlüğe kaydedilen ayarların adları ve açıklamaları gösterilmektedir.
+Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin. Bir mobil istemcide Intune tanılamayı etkinleştirerek erişim günlükleri'ni kullanın. 
+
+İşlemi etkinleştirmek ve günlükleri toplamak için platforma göre değişiklik gösterir:
+- **Android cihazları** -kullanım *Şirket portalı*. Bkz: [günlükleri şirketinizin Destek birimine e-posta](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
+- **iOS deices** -Managed Browser kullanmasını veya *Microsoft Edge* günlükleri toplamak için. Ayrıntılar için bkz: Intune destek ekibi blogu [günlüğü gönderisine Intune Managed Browser için yeni Intune tanılama konsolunu](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser). 
+- **Windows 10 cihazları** -kullanım *MDMDiag* ve olay günlükleri. Bkz, [Windows 10 MDM tanılama hataları](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) Windows istemci yönetim içeriği ve blog [Windows 10 Intune İlkesi hatalarını giderme](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
+
+
+Aşağıdaki tabloda, adları ve açıklamaları günlüğe kaydedilen ayarların listeler.
 
 ## <a name="app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarları
 
