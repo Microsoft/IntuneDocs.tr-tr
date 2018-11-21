@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236348"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179414"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 cihazlar için Intune’da PowerShell betiklerini yönetme
 Intune yönetim uzantısı, Intune’da PowerShell betiklerini Windows 10 cihazlarda çalıştırmak için karşıya yüklemenize olanak sağlar. Yönetim uzantısı Windows 10 mobil cihaz yönetimi (MDM) özelliklerini tamamlar ve modern yönetime geçiş yapmayı kolaylaştırır.
@@ -27,9 +28,9 @@ Intune yönetim uzantısı, Intune’da PowerShell betiklerini Windows 10 cihazl
 ## <a name="moving-to-modern-management"></a>Modern yönetime geçiş
 Son kullanıcı işlemi dijital bir dönüşüm geçiriyor. Klasik, geleneksel BT tek bir cihaz platformu, şirkete ait cihazlar, ofisten çalışan kullanıcılar ve elle gerçekleştirilen çeşitli geriye dönük BT süreçlerine odaklanır. Ancak yeni çalışma alanı hem kullanıcıya hem de şirkete ait çoklu cihaz platformlarını kullanmaya olanak sağlar, kullanıcıların her yerden çalışmalarına olanak sağlar ve otomatik ve öngörülü BT süreçleri sunar. 
 
-Microsoft Intune gibi MDM hizmetleri MDM protokolünü kullanarak Windows 10 cihazlarını yönetebilir. Yerleşik Windows 10 yönetim istemcisi kurumsal yönetim görevlerini gerçekleştirmek için Intune’la iletişim kurabilir. Windows 10 cihazlarda modern yönetime geçiş yapmanıza yardımcı olur. Ancak gelişmiş cihaz yapılandırma, sorun giderme ve eski Win32 uygulama yönetimi gibi şu anda Windows 10 MDM’de desteklenmeyen belirli özelliklere ihtiyacınız olabilir. Bu özellikler için, Intune yazılım istemcinizi Windows 10 cihazlarınızda çalıştırmanız gerekebilir. Sonuç olarak, Windows 10 MDM’nin sağladığı yeni özelliklerden yararlanamazsınız. [Intune yazılım istemcisi ile Windows 10 MDM arasındaki farkları karşılaştırın](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison).
+Microsoft Intune gibi MDM hizmetleri MDM protokolünü kullanarak Windows 10 cihazlarını yönetebilir. Yerleşik Windows 10 yönetim istemcisi kurumsal yönetim görevlerini gerçekleştirmek için Intune’la iletişim kurabilir. Windows 10 cihazlarda modern yönetime geçiş yapmanıza yardımcı olur. Ancak, Windows 10 yerleşik MDM özelliklerinde kullanılamayan Gelişmiş cihaz yapılandırma gibi gerekebilecek bazı özellikleri vardır.
 
-Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. İhtiyacınız olan özellikleri sağlayan Windows 10 cihazlarda çalışan PowerShell betikleri oluşturabilirsiniz. Örneğin, Windows 10 cihazlarınıza eski bir Win32 uygulaması yükleyen bir PowerShell betiği oluşturabilir, betiği Intune’a yükleyebilir, betiği bir Azure Active Directory (AD) grubuna atayabilir ve Windows 10 cihazlarında çalıştırabilirsiniz. Daha sonra betiğin Windows 10 cihazlarda çalışma durumunu baştan sona izleyebilirsiniz.
+Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. İhtiyacınız olan özellikleri sağlayan Windows 10 cihazlarda çalışan PowerShell betikleri oluşturabilirsiniz. Özel ayarları yapılandıran bir PowerShell betiği oluşturmak, betiği Intune'a yükleyebilir, betiği bir Azure Active Directory (AD) grubuna atayın ve Windows 10 cihazlarda betiği çalıştırın. Betik, başlangıçtan bitişe kadar Windows 10 cihazlarında betik çalıştırma durumunu görmek için izlenebilir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 Intune yönetim uzantısı şu önkoşullara sahiptir:
@@ -55,9 +56,8 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 3. Cihazları betiği alan kullanıcıların yer aldığı bir veya birden çok grubu seçin. İlkeyi seçili gruplara atamak için **seçin**.
 
 > [!NOTE]
-> - PowerShell betikleri, bilgisayar gruplarına uygulanamaz.
 > - Son kullanıcıların PowerShell betiklerini yürütmek için cihazda oturum açmış olmaları gerekmez. 
-> - Intune’da PowerShell betikleri AAD cihaz güvenlik grupları tarafından hedeflenebilir.
+> - Intune’da PowerShell betikleri AAD cihaz güvenlik gruplarına hedeflenebilir.
 
 Intune yönetim uzantısı saatte bir kez Intune ile eşitlenir. İlkeyi Azure AD gruplarına atadıktan sonra, PowerShell betiği çalıştırılır ve çalıştırma sonuçları raporlanır. 
  

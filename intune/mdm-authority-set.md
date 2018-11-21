@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41296e2c5fd1bddfc65bb343d86f4891fff9452d
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 0eb3ccf85c8851f16dcfe303603f65517fcf7312
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425198"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183766"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
@@ -103,7 +104,7 @@ MDM yetkilisindeki değişikliğe hazırlanmak için aşağıdaki bilgileri göz
 2. Intune’da MDM yetkilisini ayarlarken kullandığınız Intune kiracısında oturum açın ve **İleri**’ye tıklayın.
 3. **MDM Yetkilimi Configuration Manager olarak değiştir**’i seçin ve **İleri**’ye tıklayın.
 4. Yeni karma MDM yetkilisi tarafından yönetilmeye devam eden tüm kullanıcıları içerecek şekilde kullanıcı koleksiyonunu ayarlayın.
-5. **İleri** 'yi tıklatın ve sihirbazı tamamlayın. Artık MDM yetkilisi, **Configuration Manager** olarak değiştirildi.
+5. Tıklayın **sonraki** ve Sihirbazı tamamlayın. Artık MDM yetkilisi, **Configuration Manager** olarak değiştirildi.
 6. Aynı Intune kiracısını kullanarak [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) oturum açın ve MDM yetkilisinin **Configuration Manager olarak ayarla** şeklinde değiştirildiğini doğrulayın.
 7. MDM yetkilisini Configuration Manager olarak değiştirdikten sonra [iOS kaydını](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) ve [Android kaydını](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android) ayarlayabilirsiniz.
 8. Configuration Manager konsolunda yeni MDM yetkilisinden (karma) gelen ayarları ve uygulamaları yapılandırın ve dağıtın.

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: cbefc5ae5ef159c3c58a475f01a1513abb46ee90
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254080"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181505"
 ---
 # <a name="configure-a-custom-domain-name"></a>Özel bir etki alanı adı yapılandırma
 
@@ -32,7 +33,7 @@ Kuruluşunuz, Microsoft’un Intune gibi bulut tabanlı bir hizmete kaydolduğun
 
 Kullanıcı hesapları oluşturmadan veya şirket içi Active Directory'nizden eşitlemeden önce, yalnızca .onmicrosoft.com etki alanı adını kullanmaya veya bir veya daha fazla özel etki alanı eklemeye karar vermenizi önemle öneririz. Kullanıcı yönetimini kolaylaştırmak için kullanıcı eklemeden önce özel bir etki alanı ayarlayın. Böylece kullanıcılar, diğer etki alanı kaynaklarına erişmek için kullandıkları kimlik bilgileri ile oturum açabilir.
 
-Microsoft'un sunduğu bulut tabanlı bir hizmete abone olduğunuzda, sizin hizmet örneğiniz bulut tabanlı hizmetiniz için kimlik ve dizin hizmetleri sağlayan bir Microsoft [Azure AD kiracısı](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant) olur. Ayrıca, kuruluşunuzun özel etki alanını kullanmak için Intune’u yapılandırma görevleri diğer Azure AD kiracılarıyla aynı olduğunda, [Etki alanınızı ekleme](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) konu başlığı altında bulunan bilgi ve yordamları kullanabilirsiniz.
+Microsoft'un sunduğu bulut tabanlı bir hizmete abone olduğunuzda, sizin hizmet örneğiniz bulut tabanlı hizmetiniz için kimlik ve dizin hizmetleri sağlayan bir Microsoft [Azure AD kiracısı](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant) olur. Kuruluşunuzun özel etki alanı kullanmak için Intune'u yapılandırma görevleri diğer Azure AD kiracılarıyla aynı olduğundan, bilgileri kullanabilir ve yordamları ve [etki alanınızı ekleme](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 > [!TIP]
 > Özel etki alanları hakkında daha fazla bilgi için bkz. [Azure Active Directory’de özel etki alanlarına kavramsal bir genel bakış](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/).

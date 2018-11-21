@@ -13,13 +13,14 @@ ms.technology: ''
 ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 600c6a00910647983cc2329f9256b613560aaf14
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
-ms.translationtype: HT
+ms.openlocfilehash: ec5127adcb12bc1196604d27ae2ac6501de03d08
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866329"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187118"
 ---
 # <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Microsoft Intune belgeleri &#40;Ignite özel sürümü&#41;
 Microsoft Ignite 2018'e hoş geldiniz! Bize görmeye geldiğiniz için mutluyuz. Burada Microsoft Ignite 2018'deyken sizin için topladığımız Intune kaynaklarından bazılarına bir göz atın.
@@ -60,6 +61,6 @@ Bazı hızlı başlangıçları güncelleştirdik ve yeni bazı hızlı başlang
 - [Intune Destek Blogu](https://blogs.technet.microsoft.com/intunesupport/)
 - [Intune Topluluk Forumları](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/ct-p/EMS)
 
-## <a name="developer-resources"></a>Geliştirici kaynakları
+## <a name="developer-resources"></a>Geliştirici Kaynakları
 - [Intune grafik örnekleri](https://github.com/microsoftgraph/powershell-intune-samples)
 - [Intune uygulama SDK'sı](app-sdk-get-started.md)

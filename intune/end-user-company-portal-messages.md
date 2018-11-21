@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 3ed729e437fcdbc4352bf5fa8ceada4ddf336708
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: 44e7307997df67ad1c1ae6170da3bcc13e99070d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224927"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185058"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma
 
@@ -109,5 +110,5 @@ Kullanıcılarınızı [Günlükleri e-posta ile BT yöneticinize gönderme](/in
 
 Şirket Portalı’nı Windows Bilgi Koruması (WIP) uygulama koruma ilkesindeki **İzin verilen uygulamalar** veya **Muaf uygulamalar** listelerine ekleyin. Daha fazla bilgi için bkz. [Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
-### <a name="see-also"></a>Ayrıca bkz:
+### <a name="see-also"></a>Ayrıca bkz.
 [Son kullanıcılarınıza Intune kullanma hakkında söylemeniz gerekenler](end-user-educate.md)

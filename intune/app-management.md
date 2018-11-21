@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
-ms.translationtype: HT
+ms.openlocfilehash: 366fab51d88587233f945fe7d880e3b6881bef45
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025177"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179193"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -101,9 +102,9 @@ Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama yönetme](app-managem
 
 Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama izleme](apps-monitor.md).
 
-### <a name="set-up"></a>Ayarlama
+### <a name="set-up"></a>Kurulum
 - **iOS VPP belirteçleri**: iOS Volume Purchase Program (VPP) lisanslarınızı uygulayın ve görüntüleyin. Daha fazla bilgi için bkz.:
-    - [Toplu satın alınan iOS uygulamaları](vpp-apps-ios.md)
+    - [iOS toplu satın alınan uygulamalar](vpp-apps-ios.md)
 - **Windows Enterprise sertifikası**: Yönetilen Windows cihazlarınıza iş kolu uygulamalarını dağıtmak için kullanılan kod imzalama sertifikasını uygulayın veya durumunu görüntüleyin.
 - **Windows Symantec sertifikası**: Windows 10 Mobile cihazlarına XAP ve WP8.x appx dosyalarını dağıtmak için gereken kod imzalama sertifikasını uygulayın veya durumunu görüntüleyin.
 - **İş İçin Microsoft Mağazası**: İş İçin Microsoft Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz. Daha fazla bilgi için bkz.:

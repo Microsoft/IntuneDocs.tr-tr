@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5766c4ebe7b261356248b00d0ca2d8937d3db79a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 3600cae373dceb88122852e3d260e91e2618d516
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231547"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180434"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense bağlayıcısı ile Intune
 
@@ -59,7 +60,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 
-Ağda **bağlantıyı izinsiz izleme** gibi tehditleri algılayın ve cihaz riskine dayalı olarak Wi-Fi ağlarına erişimi koruyun.
+Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı olarak Wi-Fi ağlarına erişimi koruyun.
 
 **Wi-Fi üzerinden ağ erişimini engelleme:**
 
@@ -71,7 +72,7 @@ Ağda **bağlantıyı izinsiz izleme** gibi tehditleri algılayın ve cihaz risk
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme
 
-Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine dayalı olarak kurumsal dosyaların eşitlenmesini engeller.
+Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı olarak Kurumsal dosyaların eşitlenmesini engeller.
 
 **Ağ tehditleri algılandığında SharePoint Online’ı engelle:**
 

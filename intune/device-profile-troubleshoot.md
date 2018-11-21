@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
-ms.translationtype: HT
+ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679313"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181488"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da cihaz profilleri ile ilgili sık karşılaşılan sorunlar ve çözüm yolları
 
@@ -100,7 +101,7 @@ Profili sildiğinizde veya bir cihazı profile sahip olan gruptan kaldırdığı
         - Basit parolalara izin ver
         - Parola uzunluğu alt sınırı
         - Gerekli parola türü
-        - Parola geçerlilik süresi (gün)
+        - Parola zaman aşımı (gün sayısı)
         - Parola geçmişini anımsa
         - Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı
         - Parola istenmeden önce geçen işlem yapılmayan dakika sayısı
@@ -109,7 +110,7 @@ Profili sildiğinizde veya bir cihazı profile sahip olan gruptan kaldırdığı
         - Cihazda şifrelemeyi gerektir
         - Çıkarılabilir depolama birimine izin ver
         - Web tarayıcısına izin ver
-        - Uygulama depolamaya izin ver
+        - Uygulama mağazasına izin ver
         - Ekran yakalamaya izin ver
         - Coğrafi konuma izin ver
         - Microsoft Hesabına izin ver
@@ -130,7 +131,7 @@ Profili sildiğinizde veya bir cihazı profile sahip olan gruptan kaldırdığı
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Cihaz kısıtlama profilini değiştirdim ama değişiklikler uygulanmadı
 Windows Phone cihazlarında, MDM veya EAS kullanarak ayarlamış olduğunuz güvenlik ilkelerinin azaltılmasına izin verilmez. Örneğin, **Parolanın karakter sayısı alt sınırı** olarak 8 ayarlayın ve sonra bunu 4’e indirmeyi deneyin. Cihaza zaten daha kısıtlayıcı bir profil uygulanmıştır.
 
-Profili daha az güvenli bir değerle değiştirmek isterseniz güvenlik ilkelerini sıfırlayın. Örneğin Windows 8.1’de, masaüstünde sağdan içeri doğru kaydırın ve **Ayarlar** > **Denetim Masası**’nı seçin. **Kullanıcı Hesapları** uygulamasını seçin. Sol taraftaki gezinti menüsünde, bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır (en alta doğru). Bunu seçin ve ardından **İlkeleri Sıfırla**’yı seçin.
+Profili daha az güvenli bir değerle değiştirmek isterseniz güvenlik ilkelerini sıfırlayın. Örneğin Windows 8.1’de, masaüstünde sağdan içeri doğru kaydırın ve **Ayarlar** > **Denetim Masası**’nı seçin.  **Kullanıcı Hesapları** uygulamasını seçin. Sol taraftaki gezinti menüsünde, bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır (en alta doğru). Bunu seçin ve ardından **İlkeleri Sıfırla**’yı seçin.
 
 Android, Windows Phone 8.1 ve üzeri, iOS ve Windows 10 gibi diğer MDM cihazlarında, daha az kısıtlayıcı bir profil uygulamak için cihazın devre dışı bırakılması ve sonra hizmete yeniden kaydedilmesi gerekebilir.
 

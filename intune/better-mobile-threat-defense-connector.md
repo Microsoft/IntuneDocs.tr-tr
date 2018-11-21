@@ -12,12 +12,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: ae1c45d6449f7ad3661c89cb514524fb13c9a3fb
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: 8eeb55ca9e2c698d2d9e1814e9ea17f779326732
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231568"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52178503"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Intune ile Better Mobile Threat Defense bağlayıcısı
 

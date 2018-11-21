@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 53c99d63-c312-442a-8a71-de1b10fcd39b
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 0354bf10601ed9a31cdc3beba1bf6825896a2016
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
-ms.translationtype: HT
+ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310955"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186656"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows bilgisayarlar için kullanıcı-cihaz bağlamayı yönetme
 
@@ -49,6 +50,6 @@ Bir kullanıcıyı bir bilgisayara bağlamak için:
 > [!TIP]
 > Son kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtlamak istiyorsanız **Microsoft Intune Aracı Ayarları** ilkesinde **Kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtla** seçeneğini etkinleştirin.
 
-### <a name="see-also"></a>Ayrıca bkz:
+### <a name="see-also"></a>Ayrıca bkz.
 
 [Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 10f19c0b9823adcd40ce38bae1c6cbaacd59c0db
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
-ms.translationtype: HT
+ms.openlocfilehash: 17d88b4e4da81f878e8bbdb5e4fde5ad2375dde7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310496"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179875"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Intune istemci yazılımını çalıştıran Windows bilgisayarlarını korumaya yardımcı olmak için ilkeleri kullanma
 
@@ -43,5 +44,5 @@ Bir BT yöneticisi olarak en önemli önceliklerinizden biri, [yönettiğiniz Wi
 
 
 
-### <a name="see-also"></a>Ayrıca bkz:
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

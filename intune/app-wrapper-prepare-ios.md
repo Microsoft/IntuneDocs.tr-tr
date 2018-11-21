@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
-ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
-ms.translationtype: HT
+ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169507"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182117"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -436,7 +437,7 @@ Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini alma
 > [!NOTE]
 > Günlük işlevi, Intune Uygulama Sarmalama Aracı sürüm 7.1.13 veya üstüyle sarmalanmış uygulamalar için etkinleştirilir.
 
-### <a name="see-also"></a>Ayrıca bkz:
+### <a name="see-also"></a>Ayrıca bkz.
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)</br>
 - [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

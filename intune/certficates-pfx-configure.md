@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 573cdf8746b9eaf593a33cd943b69a2dd83030ae
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
-ms.translationtype: HT
+ms.openlocfilehash: 70d1594220b3315db2c7d7eeb01a915aaf2ec995
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391612"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186742"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -117,7 +118,7 @@ VPN, WiFi veya diğer kaynakların kimliğini doğrulamak için her cihazda bir 
 ### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Sertifika Bağlayıcısı
 
 > [!IMPORTANT] 
-> Microsoft Intune Sertifika Bağlayıcısı, ayrı bir Windows sunucusunda yüklü olmak **zorundadır**. Sertifika veren Sertifika Yetkilisi’ne (CA) yüklenemez.
+> Microsoft Intune Sertifika Bağlayıcısı, ayrı bir Windows sunucusunda yüklü **olmalıdır**. Sertifika veren Sertifika Yetkilisi’ne (CA) yüklenemez.
 
 1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 2. **Cihaz Yapılandırması** > **Sertifika Yetkilisi** > **Ekle**’yi seçin.
@@ -142,7 +143,7 @@ VPN, WiFi veya diğer kaynakların kimliğini doğrulamak için her cihazda bir 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>Microsoft Intune için PFX Sertifika Bağlayıcısı
 
 1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-2. **Cihaz Yapılandırması** > **Sertifika Yetkilisi** > **Ekle**
+2. **Cihaz Yapılandırması** > **Sertifika Yetkilisi** > **Ekle** seçeneğini belirleyin
 3. Microsoft Intune için PFX Sertifika Bağlayıcısı’nı indirin ve kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
 4. İndirme tamamlandıktan sonra sunucuda oturum açın. Daha sonra:
 

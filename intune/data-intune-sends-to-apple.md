@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e2829ffe4c8dfffd4d23f4c86b2985d41e983799
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023946"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181539"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune’un Apple’a gönderdiği veriler
 
@@ -37,11 +38,11 @@ Microsoft Intune’un bir bağlantı kurabilmesi için, önce Apple hizmetlerini
 
 Aşağıdaki tabloda Microsoft Intune'un bir cihazdan etkinleştirilmiş Apple hizmetlerine gönderdiği veriler listelenir. 
 
-| Hizmet | Apple’a gönderilen veriler | Ne için kullanılır |
+| Hizmet | Apple’a gönderilen veriler | İçin kullanılan |
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Belirteç, PushMagic | Sunucu cihazı kabul ederse cihaz, anında iletme bildirimi cihaz belirtecini sunucuya sağlar. Sunucu, cihaza anında iletme mesajı göndermek için bu belirteci kullanmalıdır. Bu iade etme iletisi ayrıca bir PushMagic dizesi içerir. Sunucu bu dizeyi hatırlamalı ve cihaza gönderdiği tüm anında iletme mesajlarına eklemelidir. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Sunucu belirteci | Apple hizmetinde kimlik doğrulaması için kullanılan anında iletme bildirimi cihaz belirteci. |
-| ASM/DEP | server_name | MDM sunucusu için tanımlanabilir bir ad. |
+| ASM/DEP | SERVER_NAME | MDM sunucusu için tanımlanabilir bir ad. |
 | ASM/DEP | server_uuid | Sistem tarafından oluşturulan sunucu tanımlayıcısı. |
 | ASM/DEP | admin_id | Kullanılmakta olan geçerli belirteçleri oluşturan kişinin Apple kimliği. |
 | ASM/DEP | org_name | Kuruluş adı. |

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e88108d6c438bf2c192516be44908c4d76dfa9f
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
-ms.translationtype: HT
+ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652130"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181879"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Öğretici: Yönetilen cihazlarda Exchange Online e-postalarını koruma
 iOS cihazların yalnızca Intune tarafından yönetildiğinde ve onaylı bir e-posta uygulaması kullandığında Exchange Online’a erişebilmesini sağlamak için koşullu erişim ile cihaz uyumluluk ilkelerini kullanma hakkında bilgi edinin. 
@@ -133,7 +134,7 @@ Test ilkelerine artık ihtiyacınız kalmadığında bunları kaldırabilirsiniz
 2. **Cihaz Uyumluluğu** > **İlkeler**’i seçin.
 3. **İlke Adı** listesinde test ilkenizin açılır menüsünü (**...**) seçin ve daha sonra **Sil**’e tıklayın. Onaylamak için **Tamam**’ı seçin.
 4. **Koşullu Erişim** > **İlkeler**’i seçin.
-5. **İlke Adı** listesinde test ilkenizin açılır menüsünü (**...**) seçin ve daha sonra **Sil**’e tıklayın. Onaylamak için **Evet**'i seçin.
+5. **İlke Adı** listesinde test ilkenizin açılır menüsünü (**...**) seçin ve daha sonra **Sil**’e tıklayın. Seçin **Evet** onaylamak için.
 
  ## <a name="next-steps"></a>Sonraki adımlar 
 Bu öğreticide, iOS cihazların Exchange Online e-postalarına erişmek için Intune’a kaydolmasını ve Outlook uygulamasını kullanmasını gerektiren ilkeler oluşturdunuz. Office 365 Exchange Online için Exchange ActiveSync istemcileri dahil olmak üzere diğer uygulama ve hizmetleri korumak için koşullu erişim ile Intune’u kullanma hakkında daha fazla bilgi edinmek için bkz. [Koşullu erişimi ayarlama](conditional-access.md).

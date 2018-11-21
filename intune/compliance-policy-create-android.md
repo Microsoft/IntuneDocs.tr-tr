@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1108a208a324b5ed4c46248dc986dcf08e6293fe
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: cb5fc7256e68b8ea10ba1b3ddd7cfe6ed44bd544
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236552"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180621"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune’da Android cihazlar için cihaz uyumluluk ilkesi ekleme
 
@@ -132,7 +133,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 İşiniz bittiğinde değişikliklerinizi kaydetmek için **Tamam** > **Tamam**’ı seçin.
 
-## <a name="locations"></a>Konumlar
+## <a name="locations"></a>konumları
 
 İlkenizde, mevcut konumlar arasından seçim yapın. Henüz bir konumunuz yok mu? [Intune'da Konumları (ağ yalıtımı) kullanma](use-network-locations.md) başlığı altında bazı yönergeler sağlanır.
 

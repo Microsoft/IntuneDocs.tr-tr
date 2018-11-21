@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
-ms.translationtype: HT
+ms.openlocfilehash: 07a1c0a0825faafa85b3fb2904dcb517268617bf
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028707"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180060"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı yönetim denetimi (RBAC)
 
@@ -143,6 +144,6 @@ Belirli bir işi yapmak için gereken izinleri içeren özel bir rol oluşturabi
 
 [Sorun giderme portalında Intune Yardım Masası Operatörü rolünü kullanma](help-desk-operators.md)
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Azure AD kullanarak roller atama](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 97bddc1a183e3a546e76b346f53f80aba6a81c50
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: cd605542a0711e27f87d68af51662fd318f3250e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312882"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184888"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune’da VPN profilleri oluşturma
 
@@ -46,7 +47,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 |Check Point Capsule VPN|Evet|Evet|Evet|Evet|Evet|Evet|
 |Cisco AnyConnect|Evet|Evet|Evet|Hayır|Hayır|Hayır|
 |SonicWall Mobile Connect|Evet|Evet|Evet|Evet|Evet|Evet|
-|F5 Edge İstemcisi|Evet|Evet|Evet|Evet|Evet|Evet|
+|F5 Edge Client|Evet|Evet|Evet|Evet|Evet|Evet|
 |Palo Alto Networks GlobalProtect|Hayır|Evet|Hayır|Hayır|Hayır|Evet|
 |Pulse Secure|Evet|Evet|Evet|Evet|Evet|Evet|
 |Cisco (IPSec)|Hayır|Evet|Hayır|Hayır|Hayır|Hayır|

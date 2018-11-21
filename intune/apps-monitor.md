@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09e4cfc314ea21294cd3de62611a089ec724a683
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
-ms.translationtype: HT
+ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075636"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181896"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -41,13 +42,13 @@ Intune, yönettiğiniz uygulamanın özelliklerini izlemeniz ve uygulama atama d
 
 Uygulama bölmesinde, ortamınızdaki bir uygulamanın durumu hakkındaki ayrıntıları gözden geçirebilirsiniz.
 
-### <a name="essentials"></a>Temel Parçalar
+### <a name="essentials"></a>Essentials
 **Temel Parçalar** bölümünde, uygulama hakkında aşağıdaki bilgiler yer alır:
 
  | **Uygulama ayrıntıları**            | **Açıklama**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Yayımcı**          | Uygulamanın yayımcısı.                                            |
-| **İşletim sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
+| **İşletim Sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
 | **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat.                         |
 | **Atanan**           | Uygulamanın atanıp atanmadığı (**Evet** veya **Hayır**).                  |
 
@@ -56,9 +57,9 @@ Grafikler aşağıdaki durumlar için uygulamaların sayısını gösterir:
 
 | **Cihaz durumu**       | **Açıklama**                                       |
 |-----------------------|-------------------------------------------------------|
-| **Yüklendi**         | Yüklenen uygulamaların sayısı.                         |
+| **Yüklü**         | Yüklenen uygulamaların sayısı.                         |
 | **Yüklü Değil**     | Yüklenmemiş uygulamaların sayısı.                     |
-| **Başarısız**            | Başarısız olan yüklemelerin sayısı.                   |
+| **Başarısız oldu**            | Başarısız olan yüklemelerin sayısı.                   |
 | **Yükleme Bekletiliyor**   | Yüklenme sürecinde olan uygulamaların sayısı. |
 | **Uygulanamaz**           | Durumun uygulanamadığı uygulamaların sayısı.            |
 
@@ -67,7 +68,9 @@ Grafikler aşağıdaki durumlar için uygulamaların sayısını gösterir:
 >    - Yüklü yönetilen uygulamada bir hedefleme değişikliği, durum dikey penceresindeki yükleme sayısının azalmasına neden olabilir ama algılanan uygulamalarda bildirilmeye devam eder.
 >    - Kiracıda aynı uygulamanın birden çok örneğinin hedeflenmesi, kullanıcı veya cihazların olası örtüşmesi nedeniyle farklı sayım sonuçları verebilir. Uygulamanın her örneği örtüşen kullanıcıları sayar ama bulunan uygulamaların yinelenen sayımları ortaya çıkar.
 >    - Bulunan uygulamalarla uygulama durumu farklı zaman çerçevelerinde toplanır ve bu da uygulama sayılarında tutarsızlığa neden olabilir.
- 
+> 
+> Ayrıca, Android uygulamaları olarak dağıtılan unutmayın **kayıtlı veya Kayıtsız kullanılabilir** yalnızca kayıtlı cihazlar için uygulama yükleme durumu raporu. Uygulama yükleme durumu, Intune'a kayıtlı olmayan cihazlar için kullanılabilir değil.
+
 ### <a name="device-install-status"></a>Cihaz yükleme durumu
 
 Menünün **İzleme** bölümünde **Cihaz yükleme durumu**’nu seçtiğinizde cihaz durum listesi gösterilir. Ayrıntı tablosunda aşağıdaki sütunlar vardır:

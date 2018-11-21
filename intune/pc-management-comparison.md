@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 0643c9aaff2a795fa44a8ed6cac09cf143c4ce56
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
-ms.translationtype: HT
+ms.openlocfilehash: a5c06844c253951dfe7d5998aa4e275a6281067f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310479"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184650"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows bilgisayarlarını bilgisayar olarak yönetme ile mobil cihaz olarak yönetmeyi karşılaştırma
 
@@ -44,7 +45,7 @@ Kuruluşlar Microsoft Intune'u Windows bilgisayarlarını mobil cihaz yönetimi 
 |**Uzaktan yardım** |TeamViewer<br>[Windows bilgisayarlar için uzaktan yardım isteme ve sağlama](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Intune cihazlarını uzaktan yönetmek için TeamViewer kullanma](device-profile-android-teamviewer.md) |
 |**Uygulama dağıtımı** | İş İçin Microsoft Mağazası'nda bulunmaz,<br>yalnızca .exe, .appx ve çok dosyalı .msi<br>[Intune yazılım istemcisini çalıştıran Windows bilgisayarlarına uygulama yükleme](add-apps-for-windows-pcs-in-microsoft-intune.md)|Microsoft Mağazası uygulamaları ve iş kolu uygulamaları içindir<br>[Windows mağazası uygulamaları ekleme](store-apps-windows.md)<br>[Windows iş kolu (LOB) uygulamaları ekleme](lob-apps-windows.md)|
 |**Uygulama koruma**|Yok|Kullanılabilir <br>[Uygulama koruma ilkeleri nedir?](app-protection-policy.md)|
-|**Sistem durumu kanıtlama**|Yok|Kullanılabilir|
+|**Cihaz durumu kanıtlama**|Yok|Kullanılabilir|
 
 
 ### <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows bilgisayarı yönetiminin avantajları

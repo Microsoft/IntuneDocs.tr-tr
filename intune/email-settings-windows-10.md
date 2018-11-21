@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 04834f21e5fd2f6ed0f7454988936397d3249987
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
-ms.translationtype: HT
+ms.openlocfilehash: 849e3feed23b46585f9b737cb0ee91ecdf47ecae
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37904977"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186146"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Windows 10 çalıştıran cihazlar için e-posta profili ayarları - Intune
 
@@ -39,7 +40,7 @@ Windows 10 çalıştıran cihazlarınızı yapılandırmak için e-posta profili
       **Özel** öznitelikler kullanmayı seçerseniz şunları girin:
       - **Kullanılacak özel etki alanı adı**: Intune’un etki alanı adı olarak kullanacağı bir değer seçin; örneğin `contoso.com` veya `contoso`
 
-- **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı Asıl Adı**’nı (`user1@contoso.com` veya `user1`) veya Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP Adresi**’ni (`user1@contoso.com`) seçin.
+- **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) veya Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin.
 
 ## <a name="security-settings"></a>Güvenlik ayarları
 

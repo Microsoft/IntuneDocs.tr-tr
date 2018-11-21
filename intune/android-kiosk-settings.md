@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602189"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185245"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune’da Android cihazlar için bilgi noktası ayarları
 
@@ -47,7 +48,7 @@ Bir bilgi noktası cihazının kısıtlama profili **Bilgi noktası modu** = **�
 
 Bir Android bilgi noktası cihazını çoklu uygulama olarak ayarlamak için şu ana adımları izleyin:
 
-1. [Yönetilen Google Play’den Yönetilen Ana Ekran uygulamasını içeri aktarma ve dağıtma](#import-and -deploy-the-managed-home-screen-app)
+1. [Yönetilen Google Play’den Yönetilen Ana Ekran uygulamasını içeri aktarma ve dağıtma](#import-and-deploy-the-managed-home-screen-app)
 2. [Bilgi noktası modunda kullanılabilecek uygulamalar ekleme ve atama](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (İsteğe bağlı) [Bilgi noktası modunda kullanılabilecek web bağlantıları ekleme](#add-web-links-that-can-be-used-in-kiosk-mode)
 

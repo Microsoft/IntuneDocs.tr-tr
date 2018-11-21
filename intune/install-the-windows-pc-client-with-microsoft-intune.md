@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425028"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179101"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 
@@ -86,7 +87,7 @@ Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara
 
 1.  **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert** istemci yükleme dosyalarını, referans bilgisayarındaki **%Systemdrive%\Temp\Microsoft_Intune_Setup** klasörüne kopyalayın.
 
-2.  **SetupComplete.cmd** betiğine aşağıdaki komutu ekleyerek **WindowsIntuneEnrollPending** kayıt defteri girişini oluşturun:
+2.   **SetupComplete.cmd** betiğine aşağıdaki komutu ekleyerek **WindowsIntuneEnrollPending** kayıt defteri girişini oluşturun:
 
     ```
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
@@ -117,9 +118,9 @@ Kullanıcılar, Intune istemci yazılımını [Şirket Portalı web sitesine](ht
 
 Kullanıcılara bir Intune lisansı atanmamışsa veya kuruluşun MDM Yetkilisi, Intune olarak ayarlanmamışsa, kullanıcılara kaydolmaya yönelik herhangi bir seçenek gösterilmez.
 
-Kullanıcılara bir Intune lisansı atanmışsa ve kuruluşun MDM Yetkilisi, Intune olarak ayarlanmışsa:
+Kullanıcılar bir Intune lisansı atanmışsa ve kuruluşun MDM yetkilisi, Intune için ayarlanmış ise:
 
-- Windows 7 veya Windows 8 bilgisayarı kullanıcılarına, YALNIZCA kuruluşlarına özel bilgisayar istemci yazılımını indirip yükleyerek Intune’a kaydolma seçeneği gösterilir.
+- Windows 7 veya Windows 8 bilgisayarı kullanıcılarına, yalnızca indirip kuruluşlarına özel bilgisayar istemci yazılımını yükleyerek Intune'a kaydolma seçeneği gösterilir.
 
 - Windows 10 veya Windows 8.1 bilgisayarı kullanıcılarına iki kayıt seçeneği gösterilir:
 
@@ -256,7 +257,7 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
 
 Kayıt silme işlemi OnlineManagement klasörünü kaldırmaz. Kaldırma sonrasında 30 dakika bekleyin ve ardından bu komutu çalıştırın. Çok erken çalıştırırsanız, kaldırma işlemi bilinmeyen bir durumda kalabilir. Klasörü kaldırmak için yükseltilmiş bir komut istemi başlatın ve çalıştırın:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Sonraki adımlar
 [Microsoft Intune ile cihazları yönetme](device-management.md)

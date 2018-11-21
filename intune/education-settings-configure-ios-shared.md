@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029817"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181233"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 
@@ -183,7 +184,7 @@ Cihaz artık cihaz kategorisiyle ilişkilendirilmiştir. Bu işlemi, oluşturdu�
 5. Profiller bölmesinde **Profil Oluştur**’u seçin.
 6. **İlişkilendirme Oluştur** bölmesinde, bir **Ad** ve **Açıklama** girin.
 7. Grupları Sepet Profili ile ilişkilendirmek için **Sınıf Seç** > **Yapılandır** seçeneklerini belirleyin.
-8. Sepet Profili'ne dahil edilecek sınıfları seçin sonra **Seç**'i işaretleyin. 
+8. Sepet Profili'ne dahil edilecek sınıfları seçin sonra **Seç**'i işaretleyin. 
 9. Grupları Sepet Profili ile ilişkilendirmek için **Sepet Seç** > **Yapılandır**'ı seçin.
 10. Sepet Profili'ne dahil etmek istediğiniz grupları seçin, sonra **Seç**'i işaretleyin.
 11. **İlişkilendirme Oluştur** bölmesinde, Sepet Profili'ni kaydetmek için **Kaydet**'i seçin.
@@ -198,7 +199,7 @@ Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 4. **Cihaz yapılandırması** bölmesinde, **İzle** > **Atama durumu**'nu seçin.
 5. **Atama durumu** bölmesinde, oluşturduğunuz **Sepet Profili**'ni seçin.
 6. **Sepet Profili** bölmesinde **Atamalar**'ı seçin, sonra **Dahil Et**'in altından **Dahil edilecek grupları seç**'i seçin.
-7. Sepet profilinin hedeflemesini istediğiniz sınıfları seçin (bir grup seçmeyin), sonra **Seç**'i işaretleyin. 
+7. Sepet profilinin hedeflemesini istediğiniz sınıfları seçin (bir grup seçmeyin), sonra **Seç**'i işaretleyin. 
 8. İşiniz bittiğinde **Kaydet**’i seçin.
 
 Atama tamamlanır ve Intune, sınıf atamasını temel alarak Classroom profilini hedeflenen cihazlara dağıtır.

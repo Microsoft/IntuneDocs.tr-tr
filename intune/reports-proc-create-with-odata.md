@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f4425f508164332295899a6132782833889aa830
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602274"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183001"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>OData akışına Power BI ile bir rapor oluşturma
 
@@ -67,7 +68,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adres
 
     ![Kuruluş hesabı kimlik bilgileri](media/reports-create-02-org-account.png)
 
-11. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
+11. Seçin **bağlanma**. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
 
     ![Gezgin](media/reports-create-02-loadentities.png)
 

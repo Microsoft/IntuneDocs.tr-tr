@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 878e4d0854722d82eab0545cf3a1ba743f2c52db
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
-ms.translationtype: HT
+ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224729"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183409"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android kullanıcılarınız uygulamalarını nasıl alır
 
@@ -55,7 +56,7 @@ Uygulamalar, aşağıda açıklandığı gibi yönetilebilir veya yönetilmeyebi
 
 **Yönetilmeyen uygulamalar** - İlkeler aracılığıyla yönetilemeyen uygulamalardır. Bunlar, Intune tarafından sarmalanmamış veya Intune MAM SDK’sı içermeyen uygulamalardır. Uygulama ilkeleri bu uygulamalara uygulanamaz.
 
-### <a name="see-also"></a>Ayrıca bkz:
+### <a name="see-also"></a>Ayrıca bkz.
 [Microsoft Intune’la uygulama ekleme](apps-add.md)
 
 [iOS kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-ios.md)

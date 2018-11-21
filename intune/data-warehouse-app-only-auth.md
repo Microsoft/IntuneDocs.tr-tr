@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a8e386e2d9b161debf65d3e639a90cb8de313ad2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602291"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185211"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Veri Ambarı uygulaması - yalnızca kimlik doğrulama
 
@@ -74,7 +75,7 @@ Bu bölümde Azure AD, uygulamanız için bir anahtar değeri oluşturur.
 Bu bölümde, uygulamalara izinler vereceksiniz.
 
 1.  **Ayarlar** dikey penceresinde **Gerekli izinler**’i seçin.
-2.  **Ekle**'yi tıklatın.
+2.  Tıklayın **ekleme**.
 3.  **Bir API ekle**’yi seçerek **Bir API seç** dikey penceresini görüntüleyin.
 4.  **Microsoft Intune API (MicrosoftIntuneAPI)**’yi seçin ve daha sonra **Bir API seç** dikey penceresinden **Seç**’e tıklayın. **İzinleri seç** adımı seçilir ve **Erişim Ver** dikey penceresi görüntülenir.
 5.  **Uygulama İzinleri** bölümüden **Microsoft Intune’dan veri ambarı bilgileri al**’ı seçin.

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232197"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181080"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 
@@ -50,11 +51,11 @@ Lookout Mobil Uç Nokta Güvenliği kiracınız, Lookout hizmetini Intune ile et
 
 Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki adımları kullanın.
 
-1. [Azure portalı](https://portal.azure.com)'nda oturum açın ve aboneliğinizi seçin. 
+1. [Azure portalı](https://portal.azure.com)'nda oturum açın ve aboneliğinizi seçin. 
 
-2. Aboneliğinizin adını seçtiğinizde sağlanan URL abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) bakın.
+2. Aboneliğinizin adını seçtiğinizde sağlanan URL abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) bakın.
 
-3. Azure AD Grup Kimliğinizi bulun. Lookout konsolu 2 erişim düzeyini destekler:  
+3. Azure AD Grup Kimliğinizi bulun. Lookout konsolu 2 erişim düzeyini destekler:  
    * **Tam Erişim:** Azure AD yöneticisi, Tam Erişimi olan kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak Sınırlı Erişimi olacak kullanıcılar için bir grup oluşturur.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
    * **Kısıtlı Erişim:** Bu gruptaki kullanıcılar, Lookout konsolundaki yapılandırma ve kayıtla ilgili modüllerin çoğuna erişemez. Konsolun **Güvenlik İlkesi** modülü için ise salt okunur erişimine sahip olurlar.  
 

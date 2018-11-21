@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 06/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology: ''
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 613d64e396e969b8b6bde76ee6c4474a60be8ba9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: 7a6fffaa0ae35675538d04b91980799d7d8aa80d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181301"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Kullanıcıları ve cihazları düzenlemek için grup ekleme
 Intune, cihaz ve kullanıcıları yönetmek için Azure Active Directory (AD) gruplarını kullanır. Bir Intune yöneticisi olarak grupları, kuruluş gereksinimlerinize uyacak şekilde ayarlayabilirsiniz. Kullanıcı veya cihazları coğrafi konum, departman veya donanım özelliklerine göre düzenlemek için grup oluşturun. Büyük ölçekli görevleri yönetmek için grupları kullanın. Örneğin pek çok kullanıcı için ilkeler ayarlayabilir veya bir cihaz kümesine uygulamalar dağıtabilirsiniz.
-
-Bu konuda, Intune'da kullanmak üzere nasıl grup ekleyeceğiniz açıklanmaktadır.
 
 Aşağıdaki grup türlerini ekleyebilirsiniz:
 - **Atanan gruplar** - Kullanıcı veya cihazları statik bir gruba el ile ekleme
@@ -37,9 +37,13 @@ Yeni bir grup oluşturmak için aşağıdaki adımları kullanın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde, **Gruplar**’ı, ardından da **Tüm gruplar** bölmesinde **Yeni grup**’u seçin.
    ![Yeni Grup seçeneğinin belirlendiği Intune portalı ekran görüntüsü](./media/groups-add-new.png)
-4. Yeni grup için bir **Grup türü**, **Ad** ve **Açıklama** belirtin. Bu özellikler, yalnızca yönetim portalında görüntülenir ve kullanıcılara gösterilmez.
+4. İçin **grup türü**, aşağıdaki seçeneklerden birini belirleyin:
+    - **Güvenlik**: güvenlik grupları olan kullanıcı gruplarını doldururken kullanmak iyi bir kaynaktır. Güvenlik gruplarınız kimlerin hangi kaynaklara erişiminin olacağını tanımladığından, güvenlik grupları iyi bir şekilde Intune kullanıcı gruplarına çevrilebilir. Active Directory’den Azure Active Directory’ye eşitlenen veya Office 365 yönetici merkezi ya da Azure portalı aracılığıyla doğrudan Azure Active Directory’de oluşturduğunuz güvenlik gruplarını Intune’da kullanıcı grubu oluşturmak için kullanabilirsiniz.
+    - **Office 365**
 
-5. **Üyelik türü** seçin:
+5. Tür a **adı** ve **açıklama** yeni grup için. Bu özellikler, yalnızca yönetim portalında görüntülenir ve kullanıcılara gösterilmez.
+
+6. **Üyelik türü** seçin:
    - **Atanan** üyelik türünde, oluşturacağınız gruba üyeleri el ile atarsınız. [Azure AD atanan grupları](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) hakkında daha fazla bilgi edinin.
    - **Dinamik Kullanıcı** üyelik türünde, **Dinamik sorgu** ile tanımlanan bir kullanıcı grubu oluşturursunuz.
    - **Dinamik Cihaz** üyelik türünde, **Dinamik sorgu** ile tanımlanan bir cihaz grubu oluşturursunuz.
@@ -48,9 +52,17 @@ Yeni bir grup oluşturmak için aşağıdaki adımları kullanın.
 
    Azure AD, üyeliği tanımlayan kurallara dayalı dinamik gruplar oluşturmanıza imkan verir. [Öznitelik tabanlı dinamik gruplar oluşturmayı](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) öğrenin.
 
-6. **Office özelliklerini etkinleştir** ayarını seçerek grup üyelerine paylaşılan Office 365 uygulamaları için erişim sağlarsınız. [Office 365 Grupları](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) hakkında daha fazla bilgi edinin.
-7. Yeni grubu eklemek için **Oluştur**’u seçin.
+7. **Office özelliklerini etkinleştir** ayarını seçerek grup üyelerine paylaşılan Office 365 uygulamaları için erişim sağlarsınız. [Office 365 Grupları](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) hakkında daha fazla bilgi edinin.
+8. Yeni grubu eklemek için **Oluştur**’u seçin.
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="groups-and-policies"></a>Gruplarınızı ve ilkelerinizi
+
+Gruplarınızı oluştururken, nasıl uygulayacağınızı göz önünde bulundurun [ilkeleri](device-compliance-get-started.md). Örneğin, cihaz işletim sistemine özgü ilkeleriniz veya Active Directory’de zaten tanımlamış olduğunuz kuruluşunuzdaki farklı rollere veya kuruluş birimlerine özgü ilkeleriniz olabilir. iOS, Android ve Windows için ayrı cihaz gruplarına ve her bir kurumsal rol için kullanıcı gruplarına sahip olmak yararlı olabilir.
+
+Ayrıca kuruluşunuzun temel uyumluluk gereksinimlerini belirlemek için tüm gruplara ve cihazlara uygulanan varsayılan bir ilke oluşturmak isteyebilirsiniz. Ardından, en geniş kullanıcı ve cihaz kategorileri için daha özel ilkeler oluşturabilirsiniz. Örneğin, her cihaz işletim sistemi için e-posta ilkeleri oluşturabilirsiniz.
+
+
+
+## <a name="see-also"></a>Ayrıca bkz.
 - [Azure Active Directory grupları ile kaynaklara erişimi yönetme](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
 - [Azure portalında klasik Intune grupları](groups-get-started.md)

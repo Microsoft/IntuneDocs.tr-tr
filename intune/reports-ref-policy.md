@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 8c72e68871f28d0537aa7f15e6d3a56f50a84c86
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
-ms.translationtype: HT
+ms.openlocfilehash: 046dbe79dbaaee7de97fc83b80c40d5bf902c931
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799651"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183511"
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 

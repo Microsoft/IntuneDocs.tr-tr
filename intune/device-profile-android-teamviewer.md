@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
-ms.translationtype: HT
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744644"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186197"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Intune cihazlarını uzaktan yönetmek için TeamViewer kullanma
 
@@ -58,7 +59,10 @@ Bağlayıcı yapılandırıldıktan sonra bir cihazı uzaktan yönetebilirsiniz.
 
 ![TeamViewer kullanarak Android cihazı uzaktan yönetme - örnek](./media/android-teamviewer.png)
 
-Bir uzak oturumu başlattığınızda, bir son kullanıcı kendi cihazında Şirket Portalı uygulaması simgesinde bir bildirim bayrağı görür. Uygulama açıldığında da bir bildirim görüntülenir. Daha sonra kullanıcı uzaktan yardım isteğini kabul edebilir.
+Uzak oturumu başlattığınızda, kullanıcılar kendi cihazında Şirket portalı uygulaması simgesinde bir bildirim bayrağı görür. Bir bildirim, uygulama açıldığında da görünür. Kullanıcılar, sonra Uzaktan Yardım isteğini kabul edebilir.
+
+> [!NOTE]
+> DEM ve WCD, gibi "Kullanıcısız" yöntemler kullanılarak kaydedilen Windows cihazlar, Şirket portalı uygulamasında TeamViewer bildirim gösterme. Bu senaryolarda, TeamViewer portalı oturum oluşturmak için kullanılması önerilir.
 
 TeamViewer'da, cihazın kontrolünü ele almak da dahil olmak üzere, cihazda bir dizi işlem gerçekleştirebilirsiniz. Neler yapabileceğinizin tam ayrıntıları için bkz. [TeamViewer rehberi](https://www.teamviewer.com/support/documents/).
 

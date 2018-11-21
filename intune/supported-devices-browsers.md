@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: c83584688818e35fa9672fcf9de2ff34d9c3260f
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: 5983a31aeb2bf6c10d3f6fe828157c88a5a9364f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254012"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179278"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Desteklenen işletim sistemleri ve tarayıcılar
 
@@ -96,7 +97,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 Farklı yönetim görevleri aşağıdaki yönetim web sitelerinden birini kullanmanızı gerektirir.
 
 - [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Azure portalı](https://portal.azure.com/)
+- [Azure portal](https://portal.azure.com/)
 
 Bu portallar için aşağıdaki tarayıcılar desteklenir:
 - Microsoft Edge (en son sürüm)

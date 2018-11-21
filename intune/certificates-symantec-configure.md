@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9c9027964648ad83c552f7dd7067598cacf560e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
-ms.translationtype: HT
+ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836534"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186877"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Symantec PKI Manager Web Hizmeti için Intune Sertifika Bağlayıcı'yı Ayarlama
 
@@ -113,8 +114,7 @@ Symantec CA'dan kayıt yetkilendirme (RA) sertifikasını almak için aşağıda
 
    b. Belirtilen metin kutusunda Sertifika Kolay Adı sağlar.
 
-   c. 
-              **Devam**'a tıklayın.
+   c. **Devam**'a tıklayın.
 
       Bu, RA Sertifikası için indirilebilir bir bağlantı gösterir.
 
@@ -195,7 +195,7 @@ Intune Sertifika Bağlayıcı varsayılan olarak `%ProgramFiles%\Microsoft Intun
    value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
    ```
 
-    b. Dosyayı kaydedin ve kapatın.
+    b. Dosyasını kaydedin ve kapatın.
 
 2. Services.msc dosyasını açın.
 
@@ -282,7 +282,7 @@ Sertifika Profili OID Symantec CA’da Sertifika Profili şablonuyla ilişkilend
    > [!IMPORTANT]
    > PKCS Sertifika Profilinin aşağıdaki parametreleri, Symantec CA'dan Intune Sertifika Bağlayıcısı aracılığıyla PKCS Sertifikaları yayınlamak için ekran görüntüsünde gösterildiği gibi aşağıdaki tabloda belirtilen değerlerle yapılandırılmalıdır. 
 
-    |PKCS Sertifika Parametresi | Değer | Description |
+    |PKCS Sertifika Parametresi | Değer | Açıklama |
     | --- | --- | --- |
     | Sertifika yetkilisi | pki-ws.symauth.com | Bu değer sondaki eğik çizgi olmadan Symantec CA temel hizmet FQDN'si olmalıdır.  Symantec CA aboneliğiniz için doğru temel hizmet FQDN'si olup olmadığından emin değilseniz, Symantec Müşteri desteğine başvurun. <br><br> Bu FQDN yanlışsa, Intune Sertifika Bağlayıcı Symantec CA'sından PKCS sertifikasını yayımlamaz.| 
     | Sertifika yetkilisi adı | Symantec | Bu değer bir dize olmalıdır **Symantec**. <br><br> Bu değerde herhangi bir değişiklik varsa, Intune Sertifika Bağlayıcı, Symantec CA'dan PKCS Sertifikaları yayımlamaz.|
@@ -297,7 +297,7 @@ Sertifika Profili OID Symantec CA’da Sertifika Profili şablonuyla ilişkilend
 
 ### <a name="pkcs-certificate-profile-supported-attributes"></a>Desteklenen PKCS Sertifika Profili öznitelikleri
 
-|Öznitelik | Intune Desteklenen biçimler | Symantec Bulut CA Desteklenen biçimler | Result |
+|Öznitelik | Intune Desteklenen biçimler | Symantec Bulut CA Desteklenen biçimler | Sonuç |
 | --- | --- | --- | --- |
 | Konu Adı |Intune, konu adını yalnızca aşağıdaki üç formatta destekler: <br><br> 1. Ortak Ad <br> 2. E-postayı içeren Ortak Ad <br> 3. E-posta olarak Ortak Ad <br><br> Aşağıda bir örnek verilmiştir: <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | Symantec CA ek öznitelikler destekler.  Ek nitelikler seçmek isterseniz, Symantec Sertifika Profili şablonunda sabit değerlerle tanımlanmaları gerekir.| PKCS Sertifika isteğinden Ortak Adı veya e-posta kullanıyoruz. <br><br> Intune Sertifika Profili ve Symantec Sertifika Profili şablonu arasındaki öznitelik seçimindeki herhangi bir uyuşmazlık, Symantec CA'dan hiçbir sertifikanın yayımlanmamasına neden olur.|
 | SAN | Intune yalnızca aşağıdaki SAN alan değerlerini destekler: <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName (kodlanmış değer) | Symantec Bulut CA, ayrıca bu parametreleri destekler. Ek nitelikler seçmek isterseniz, Symantec Sertifika Profili şablonunda sabit değerlerle tanımlanmaları gerekir. <br><br> AltNameTypeEmail: Bu tür SAN'da bulunmazsa AltNameTypeUpn değerini kullanır.  AltNameTypeUpn de SAN'da bulunmazsa ve e-posta biçimindeyse Konu Adı değerini kullanır.  Hâlâ bulunamazsa, Intune Sertifika Bağlayıcı sertifikaları yayımlamayı başaramaz. <br><br> Örneğin: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: Bu tür SAN'da bulunmazsa AltNameTypeEmail değerini kullanır. AltNameTypeEmail de SAN'da bulunmazsa ve e-posta biçimindeyse Konu Adı değerini kullanır.  Hâlâ bulunamazsa, Intune Sertifika Bağlayıcı sertifikaları yayımlamayı başaramaz.  <br><br> Örneğin: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: Bu tür SAN' dabulunmazsa, Intune Sertifika Bağlayıcı sertifikaları yayımlamada başarısız olur. <br><br> Örneğin: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **Önemli Not:** Bu alanın değeri yalnızca Symantec CA tarafından kodlanmış biçiminde (onaltılık değer) desteklenir. Bu nedenle, bu alandaki herhangi bir değer için, Intune Sertifika Bağlayıcı, sertifika talebini göndermeden önce onu temel kodlanmış 64 biçimine çevirir. **Intune Sertifika Bağlayıcı, bu değerin zaten kodlanmış olup olmadığını doğrulamaz.** | Yok. |

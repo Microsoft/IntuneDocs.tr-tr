@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
-ms.translationtype: HT
+ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505776"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180740"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
 
@@ -103,7 +104,7 @@ Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güve
 9. Kök Sertifika’ya tıklayın ve bir SCEP sertifikası seçin. **Tamam**'ı tıklatın.
 10. **Genişletilmiş anahtar kullanımı**’nın **Ad**’ına `Client Authentication` yazın.
 11. **Nesne tanımlayıcısı**’na `1.3.6.1.5.5.7.3.2` yazın.
-12. **Ekle**'yi tıklatın.
+12. Tıklayın **ekleme**.
 13. ***Sunucu URL’sini*** yazın ve **Ekle**’ye tıklayın.
 14. **Tamam**'ı tıklatın.
 15. **Oluştur**'a tıklayın.

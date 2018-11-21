@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
-ms.translationtype: HT
+ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843132"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183681"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune'da Konumları (ağ yalıtımı) kullanma
 
@@ -27,7 +28,7 @@ Cihaz bir konumdan ayrıldığında şirket ağına erişimini engelleyebilirsin
 
 Ağ yalıtımı olarak da bilinen, ağ konumu tabanlı bir uyumluluk ilkesi oluşturabilirsiniz. İlke, cihazların uyumlu olabilmesi için iş ağına bağlı olmasını zorunlu tutar. Bu ilke koşullu erişim ilkeleriyle birlikte kullanıldığında, cihazlar *yalnızca* iş ağına bağlı olduğunda iş kaynaklarına erişim sahibi olabilir. İş ağına bağlı olmayan cihaz, uyumsuz duruma geçer ve iş kaynaklarına erişimi kaybeder.
 
-Aşağıdaki senaryoyu ele alalım:
+Aşağıdaki senaryoyu göz önünde bulundurun:
 
 Üretim tesisinizde bazı çalışanlar Android cihazını kullanıyor. Bir çalışan Android cihazını tesisin dışına çıkarıyor. Yetkisiz erişimi önlemeye yardımcı olmak için şunları yapabilirsiniz:
 
@@ -51,7 +52,7 @@ Konum tabanlı bir uyumluluk ilkesi oluşturmak için:
 
 2. Aşağıdaki özellikleri girin:  
 
-   - Zorunlu. Konum için **Üretim katı** veya **Bina 44-güvenli** gibi bir **Ad** girin.
+   - Gerekli. Konum için **Üretim katı** veya **Bina 44-güvenli** gibi bir **Ad** girin.
    - İsteğe bağlı. CIDR (Sınıfsız Etki Alanları Arası Yönlendirme) gösterimiyle `aaa.bbb.ccc.ddd/n` gibi bir **IPv4 Aralığı** girin.
    - İsteğe bağlı. `aaa.bbb.ccc.ddd` gibi bir **IPv4 Ağ Geçidi** adresi girin.
    - İsteğe bağlı. `aaa.bbb.ccc.ddd` gibi bir **IPv4 DHCP Sunucusu** adresini girin.

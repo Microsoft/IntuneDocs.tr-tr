@@ -14,13 +14,14 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ROBOTS: ''
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e8a7a7405fe40d3568e736c244d9fcb308350709
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: 3b1115a91707c639caba6410ace3c2e255e40a39
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43318007"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185007"
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-intune-policies"></a>Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme
 
@@ -102,7 +103,7 @@ Bir ilkeyi sildiğinizde veya dağıtılmış ilkesi olan bir gruptan bir cihaz�
     - Basit parolalara izin ver
     - Parola uzunluğu alt sınırı
     - Gerekli parola türü
-    - Parola geçerlilik süresi (gün)
+    - Parola zaman aşımı (gün sayısı)
     - Parola geçmişini anımsa
     - Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı
     - Parola istenmeden önce geçen işlem yapılmayan dakika sayısı
@@ -111,7 +112,7 @@ Bir ilkeyi sildiğinizde veya dağıtılmış ilkesi olan bir gruptan bir cihaz�
     - Cihazda şifrelemeyi gerektir
     - Çıkarılabilir depolama birimine izin ver
     - Web tarayıcısına izin ver
-    - Uygulama depolamaya izin ver
+    - Uygulama mağazasına izin ver
     - Ekran yakalamaya izin ver
     - Coğrafi konuma izin ver
     - Microsoft Hesabına izin ver

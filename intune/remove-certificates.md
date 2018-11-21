@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
-ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561950"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180995"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune’da SCEP ve PKCS sertifikalarını kaldırma
 
@@ -81,7 +82,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Uyumluluk ilkesi, grup atamasından kaldırıldığında 
 
 
-## <a name="ios-devices"></a>iOS aygıtları:
+## <a name="ios-devices"></a>iOS cihazları
 
 #### <a name="scep-certificates"></a>SCEP sertifikaları
 

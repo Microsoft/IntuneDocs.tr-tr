@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
-ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
+ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811521"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185432"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -45,7 +46,7 @@ Yıldız işareti (*) ile işaretlenmiş alanlar zorunludur.
 | Alan adı | Uzunluk üst sınırı | Daha fazla bilgi |
 |---|---|---|
 |**Şirket adı**| 40 | Bu ad Şirket Portalı'nın başlığı olarak görüntülenir ve Intune kullanıcı deneyiminin her yerinde metin olarak gösterilir. |
-| **Gizlilik bildirimi URL'si** |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz.  `<https://www.contoso.com>` biçiminde geçerli bir URL girmeniz gerekir. |
+| **Gizlilik bildirimi URL'si** |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz.   `<https://www.contoso.com>` biçiminde geçerli bir URL girmeniz gerekir. |
 
 ## <a name="support-information"></a>Destek bilgileri      
 Intune ile ilgili sorular için çalışan bir kişi sağlamak için şirketinizin destek bilgilerini girin.          

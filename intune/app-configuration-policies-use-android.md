@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f08e6275bb8f3dfb689dcc7e14d92ab65d588471
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
-ms.translationtype: HT
+ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50149113"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179958"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -75,7 +76,7 @@ Android cihazlarda aşağıdaki anahtar/değer çiftlerini kullanın:
 
 | **Anahtar** | com.microsoft.intune.mam.AllowedAccountUPNs |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Değerler** | <ul><li>Bir veya daha fazla <code>;</code> ile sınırlandırılmış UPN.</li><li>Yalnızca bu anahtar ile tanımlanan yönetilen kullanıcı hesaplarına izin verilir.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul> |
+| **Değerleri** | <ul><li>Bir veya daha fazla <code>;</code> ile sınırlandırılmış UPN.</li><li>Yalnızca bu anahtar ile tanımlanan yönetilen kullanıcı hesaplarına izin verilir.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul> |
 
    > [!NOTE]
    > Çoklu kimlik ile yalnızca yapılandırılmış kuruluş hesaplarına izin vermek için Android için Outlook 2.2.222 veya üzeri sürümleri kullanmanız gerekir.<p></p>

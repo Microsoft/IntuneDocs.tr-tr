@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00ae29b831bebb770b70c38b5e76d7f19bab10ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231406"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180162"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile'ın Intune ile tümleştirmesini ayarlama
 
@@ -83,7 +84,7 @@ SEP Mobile, Intune ile iki tümleştirme modunu destekler:
 
 SEP Mobile çalıştıran tüm cihazların yer aldığı Azure AD güvenlik grubunu eklemelisiniz.
 
--  SEP Mobile çalıştıran cihazların tüm güvenlik gruplarını girin ve seçin, ardından değişiklikleri kaydedin.
+-  SEP Mobile'nın çalıştığını ve değişiklikleri kaydedin cihazların tüm güvenlik gruplarını seçin ve girin.
 
     ![SEP Mobile uygulamaları için kullanıcı gruplarını gösteren resim](./media/symantec-portal-basic-groups.png)   
 

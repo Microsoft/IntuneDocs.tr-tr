@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a38ff69b878880ffa16e327eace0afe64d336f43
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
-ms.translationtype: HT
+ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310581"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181131"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma
 
@@ -38,7 +39,7 @@ Windows Güvenlik Duvarı ilkesi, yönetilen bilgisayarlarda Windows Güvenlik D
 > [!NOTE]
 > Microsoft Intune ilkesi ve Grup İlkesi, bilgisayarda aynı ayarı yönetecek biçimde yapılandırıldıysa, Grup İlkesi ayarı Microsoft Intune ilkesini geçersiz kılar. Intune ilkeleri ve Grup İlkesi arasındaki çakışmaları önleme hakkında daha fazla bilgi içi, bkz. [GPO ve Microsoft Intune ilke çakışmalarını çözümleme](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
-> Windows Vista çalıştıran bilgisayarlara Windows Güvenlik Duvarı ayarlarını dağıtmak istiyorsanız, önce bu bilgisayarlarda [KB971800 Düzeltmesi](http://support2.microsoft.com/kb/971800)'ni yüklemeniz gerekir.
+> Windows Vista çalıştıran, önce yüklemelisiniz, bilgisayarlara Windows Güvenlik Duvarı ayarlarını dağıtmak istiyorsanız [düzeltme KB971800](http://support2.microsoft.com/kb/971800) bu bilgisayarlardaki.
 
 > [!IMPORTANT]
 > Windows Güvenlik Duvarı'nı Intune ile yönetmek için, yönettiğiniz bilgisayarlarda aşağıdaki iki hizmetin etkin olduğundan emin olun:
@@ -79,7 +80,7 @@ Bu ilke ayarları, aşağıdaki durumlardan birinde olan yönetilen bilgisayarla
 Bu ayarların her biri için varsayılan değer **Evet**’tir, bu en güvenli değerdir
 
 > [!IMPORTANT]
-> Ortamınızda hizmet paketi yüklü olmayan Windows Vista çalıştıran yönetilen bilgisayarlar varsa, Microsoft Bilgi Bankası'nda [971800 numaralı makale](http://go.microsoft.com/fwlink/?LinkId=188405) ile ilişkili güncelleştirmeyi yüklemeniz ya da bu bilgisayarlara dağıtılan ilkelerdeki **Tüm gelen bağlantıları engelle** ilke ayarlarını devre dışı bırakmanız gerekir.
+> Ortamınızda hizmet paketi yüklü olmayan Windows Vista çalıştıran yönetilen bilgisayarlar varsa, ile ilişkili güncelleştirmeyi yüklemeniz ya da gerekir [makale 971800](http://go.microsoft.com/fwlink/?LinkId=188405) Microsoft Bilgi Bankası veya devre dışı bırak **Tüm gelen bağlantıları engelle** ilke ayarlarını bu bilgisayarlara dağıtılan ilkelerinde.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Windows Güvenlik Duvarı yeni bir programı engellediğinde kullanıcıya bildirme
 
@@ -135,5 +136,5 @@ Daha önce yapılandırılmış değerlerden bağımsız olarak belirli türlerd
 |**Windows Virtual PC**<br>(Windows 7 veya üzeri)|Sanal makinelerin diğer bilgisayarlarla iletişim kurmasına olanak tanır.|
 |**Taşınabilir Kablosuz Cihazlar**|Medya Aktarım Protokolü (MTP) ile ağ bağlantısı etkin kamera veya medya cihazı verilerinin yönetilen bilgisayarlara aktarılmasına olanak tanır. Bu ayar SSDP ve UPnP ağ protokollerini kullanır.|
 
-### <a name="see-also"></a>Ayrıca bkz:
+### <a name="see-also"></a>Ayrıca bkz.
 [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)
