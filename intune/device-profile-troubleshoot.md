@@ -131,7 +131,7 @@ Profili sildiğinizde veya bir cihazı profile sahip olan gruptan kaldırdığı
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Cihaz kısıtlama profilini değiştirdim ama değişiklikler uygulanmadı
 Windows Phone cihazlarında, MDM veya EAS kullanarak ayarlamış olduğunuz güvenlik ilkelerinin azaltılmasına izin verilmez. Örneğin, **Parolanın karakter sayısı alt sınırı** olarak 8 ayarlayın ve sonra bunu 4’e indirmeyi deneyin. Cihaza zaten daha kısıtlayıcı bir profil uygulanmıştır.
 
-Profili daha az güvenli bir değerle değiştirmek isterseniz güvenlik ilkelerini sıfırlayın. Örneğin Windows 8.1’de, masaüstünde sağdan içeri doğru kaydırın ve **Ayarlar** > **Denetim Masası**’nı seçin.  **Kullanıcı Hesapları** uygulamasını seçin. Sol taraftaki gezinti menüsünde, bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır (en alta doğru). Bunu seçin ve ardından **İlkeleri Sıfırla**’yı seçin.
+Profili daha az güvenli bir değerle değiştirmek isterseniz güvenlik ilkelerini sıfırlayın. Örneğin Windows 8.1’de, masaüstünde sağdan içeri doğru kaydırın ve **Ayarlar** > **Denetim Masası**’nı seçin. **Kullanıcı Hesapları** uygulamasını seçin. Sol taraftaki gezinti menüsünde, bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır (en alta doğru). Bunu seçin ve ardından **İlkeleri Sıfırla**’yı seçin.
 
 Android, Windows Phone 8.1 ve üzeri, iOS ve Windows 10 gibi diğer MDM cihazlarında, daha az kısıtlayıcı bir profil uygulamak için cihazın devre dışı bırakılması ve sonra hizmete yeniden kaydedilmesi gerekebilir.
 

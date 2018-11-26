@@ -106,10 +106,10 @@ Intune şirket içi Exchange bağlayıcısını yüklemek için aşağıdaki ad�
 
    2. Sol üst taraftaki **?** simgesini ve ardından **Hakkında**’yı seçin.
 
-   3.  **POP Dış Sunucu** değerini bulun.
+   3. **POP Dış Sunucu** değerini bulun.
 
    4. Barındırılan Exchange sunucunuzun proxy sunucusu ayarlarını belirtmek için **Proxy Sunucusu**'nu seçin.
-       1.  **Mobil cihaz bilgileri eşitlenirken proxy sunucusu kullan**'ı seçin.
+       1. **Mobil cihaz bilgileri eşitlenirken proxy sunucusu kullan**'ı seçin.
 
        2. Sunucuya erişmek için kullanılan **proxy sunucusu adı** ve **bağlantı noktası numarasını** belirtin.
 
