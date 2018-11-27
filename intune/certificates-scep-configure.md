@@ -14,12 +14,12 @@ ms.reviewer: kmyrup
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ca22bdb03bc726e17fef8a854bc9478c395f5234
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
+ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188696"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303881"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -67,7 +67,7 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 |**Sertifika Şablonu**|Bu şablonu sertifika veren CA'nız üzerinde yapılandırın.|
 |**İstemci kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu sertifikayı NDES Sunucusu'na yüklersiniz.|
 |**Sunucu kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu SSL sertifikasını NDES Sunucusu'ndaki IIS'de yüklersiniz ve bağlarsınız. Sertifikada istemci ve sunucu kimlik doğrulaması anahtar kullanımları ayarlıysa (**Gelişmiş Anahtar Kullanımları**) aynı sertifikayı kullanabilirsiniz.|
-|**Güvenilen Kök CA sertifika**|Bu sertifikayı, kök CA’sından veya kök CA’sına güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarırsınız. Daha sonra Güvenilen CA sertifika profilini kullanarak bunu cihazlara atarsınız.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
+|**Güvenilen Kök CA sertifika**|Bu sertifikayı, kök CA’sından veya kök CA’sına güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarırsınız. Ardından, kullanıcılar, cihazlar veya her iki kullanarak güvenilen CA sertifika profili için atayın.<br /><b>Not:<b />bir SCEP sertifika profili atandığında, aynı kullanıcı veya cihaz grubuna SCEP sertifika profilinde başvurulan güvenilen kök sertifika profilini atadığınızdan emin olun.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
 
 ### <a name="accounts"></a>Hesaplar
 
@@ -482,7 +482,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
      - **Dijital imza**: Yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verin
    - **Anahtar boyutu (bit)**: Anahtarın içerdiği bit sayısını seçin
    - **Karma algoritması** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için uygun karma algoritması türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
-   - **Kök Sertifika**: Daha önceden yapılandırdığınız ve kullanıcıya veya cihaza atadığınız kök CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır.
+   - **Kök sertifika**: kök daha önce yapılandırdığınız ve kullanıcıya ve/veya cihaz atanan CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır. SCEP sertifikası profilinde atanan aynı gruba bu güvenilen kök sertifika profilini atama emin olun.
    - **Genişletilmiş anahtar kullanımı**: Sertifikaların hedeflenen amacına yönelik değerler eklemek için **Ekle**’yi seçin. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
    - **Kayıt Ayarları**
      - **Yenileme eşiği (%)**: Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini girin.
