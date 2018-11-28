@@ -172,7 +172,7 @@ Intune’u etkin olmayan, eski veya yanıt vermeyen cihazları otomatik olarak s
 1.  Yönetici kimlik bilgilerinizi kullanarak [Azure portalında Azure Active Directory](http://aka.ms/accessaad)’de oturum açın. [Office 365 portalında](https://portal.office.com) da oturum açabilirsiniz. Menüden **Yönetim merkezleri** > **Azure AD**'yi seçin.
 2.  Azure aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez ( **Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
 3.  **Azure Active Directory**’yi ve sonra da kuruluşunuzu seçin.
-4.   **Kullanıcılar** sekmesini seçin.
+4.  **Kullanıcılar** sekmesini seçin.
 5. Silmek istediğiniz cihazla ilişkilendirilmiş olan kullanıcıyı seçin.
 6.  **Cihazlar**’ı seçin.
 7.  Gereken cihazları kaldırın. Örneğin, artık kullanımda olmayan veya tanımları yanlış olan cihazları kaldırabilirsiniz.
