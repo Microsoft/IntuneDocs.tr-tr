@@ -84,7 +84,7 @@ Kullanıcıların sorunlarına yardımcı olurken, bilgisayarlarını ara sıra 
 
 3.  Görev durumunu görüntülemek için, sayfanın sağ alt köşesinde **Uzak Görevler**'i seçin.
 
-4.   **Görev Durumu** iletişim kutusunda, geçerli uzak görevler, görev durumu, cihaz adı ve bildirilen hataları gözden geçirin.
+4.  **Görev Durumu** iletişim kutusunda, geçerli uzak görevler, görev durumu, cihaz adı ve bildirilen hataları gözden geçirin.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 

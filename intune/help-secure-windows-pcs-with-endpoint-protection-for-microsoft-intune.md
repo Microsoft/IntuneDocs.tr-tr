@@ -177,7 +177,7 @@ Bir uzak görevin durumunu, Intune konsolunun sağ alt köşesindeki **Uzak Gör
   ![Endpoint Protection’ı izleme](media/pol-sa-ep-monitor.png)
 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Bilgisayarlarda kötü amaçlı yazılımların En Son Algılama Yollarını görüntüleme
-Intune, cihazda en son algılanan kötü amaçlı yazılım yollarının en fazla 10’unu görüntüleyebilir.  **En Son Algılama Yolu** varsayılan olarak devre dışı bırakılır. Bu görünümü etkinleştirmek için:
+Intune, cihazda en son algılanan kötü amaçlı yazılım yollarının en fazla 10’unu görüntüleyebilir. **En Son Algılama Yolu** varsayılan olarak devre dışı bırakılır. Bu görünümü etkinleştirmek için:
 
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/)**Gruplar** > **Tüm Cihazlar** > **Tüm Bilgisayarlar**'ı seçin.
 2. Son algılama yollarını görmek istediğiniz bilgisayara sağ tıklayın ve **Özellikler**’i seçin.
