@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180995"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579175"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune’da SCEP ve PKCS sertifikalarını kaldırma
 
@@ -43,8 +43,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Yönetici [silme](devices-wipe.md#wipe) eylemini çalıştırdığında
   - Yönetici [devre dışı bırakma](devices-wipe.md#retire) eylemini çalıştırdığında
   - Cihaz Azure Active Directory (AD) grubundan kaldırıldığında
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında
-  - Yapılandırma profili, grup atamasından kaldırıldığında
+  - Sertifika profili Grup ataması kaldırıldı
 
 - Bir SCEP sertifikası şu durumlarda iptal edilir:
   - Yönetici, SCEP profilini değiştirdiğinde veya güncelleştirdiğinde
@@ -53,7 +52,6 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Bir son kullanıcı kaydını kaldırdığında
   - Yönetici [silme](devices-wipe.md#wipe) eylemini çalıştırdığında
   - Yönetici [devre dışı bırakma](devices-wipe.md#retire) eylemini çalıştırdığında
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında
 
 - SCEP sertifikaları şu durumlarda cihazda **kalır** (iptal edilmez veya kaldırılmaz):
   - Bir son kullanıcı Intune lisansını kaybettiğinde
@@ -78,8 +76,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Yönetici Intune lisansını geri aldığında
   - Yönetici, kullanıcıyı veya grubu Azure AD’den kaldırdığında
   - Yönetici, PKCS profilini değiştirdiğinde veya güncelleştirdiğinde
-  - Yapılandırma profili, grup atamasından kaldırıldığında
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında 
+  - Sertifika profili Grup ataması kaldırıldı
 
 
 ## <a name="ios-devices"></a>iOS cihazları
@@ -92,8 +89,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Yönetici [silme](devices-wipe.md#wipe) eylemini çalıştırdığında
   - Yönetici [devre dışı bırakma](devices-wipe.md#retire) eylemini çalıştırdığında
   - Cihaz Azure Active Directory (AD) grubundan kaldırıldığında
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında
-  - Yapılandırma profili, grup atamasından kaldırıldığında
+  - Sertifika profili Grup ataması kaldırıldı
 
 - Bir SCEP sertifikası şu durumlarda iptal edilir:
   - Yönetici, SCEP profilini değiştirdiğinde veya güncelleştirdiğinde
@@ -102,7 +98,6 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Bir son kullanıcı kaydını kaldırdığında
   - Yönetici [silme](devices-wipe.md#wipe) eylemini çalıştırdığında
   - Yönetici [devre dışı bırakma](devices-wipe.md#retire) eylemini çalıştırdığında
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında
 
 - SCEP sertifikaları şu durumlarda cihazda **kalır** (iptal edilmez veya kaldırılmaz):
   - Bir son kullanıcı Intune lisansını kaybettiğinde
@@ -118,8 +113,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Yönetici [devre dışı bırakma](devices-wipe.md#retire) eylemini çalıştırdığında
 
 - Bir PKCS sertifikası şu durumlarda kaldırılır:
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında
-  - Yapılandırma profili, grup atamasından kaldırıldığında
+  - Sertifika profili Grup ataması kaldırıldı
   
 - Kök sertifika şu durumlarda kaldırılır:
   - Bir son kullanıcı kaydını kaldırdığında
@@ -143,8 +137,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
 - Bir SCEP sertifikası şu durumlarda iptal edilir:
   - Yönetici [devre dışı bırakma](devices-wipe.md#retire) eylemini çalıştırdığında
   - Cihaz Azure Active Directory (AD) grubundan kaldırıldığında
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında
-  - Yapılandırma profili, grup atamasından kaldırıldığında
+  - Sertifika profili Grup ataması kaldırıldı
   - Yönetici, kullanıcıyı veya grubu Azure Active Directory’den (AD) kaldırdığında
   - Yönetici, SCEP profilini değiştirdiğinde veya güncelleştirdiğinde
 
@@ -176,8 +169,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Yönetici Intune lisansını geri aldığında
   - Yönetici, kullanıcıyı veya grubu Azure AD’den kaldırdığında
   - Yönetici, PKCS profilini değiştirdiğinde veya güncelleştirdiğinde
-  - Yapılandırma profili, grup atamasından kaldırıldığında
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında 
+  - Sertifika profili Grup ataması kaldırıldı
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikal
   - Bir son kullanıcı kaydını kaldırdığında
   - Yönetici [devre dışı bırakma](devices-wipe.md#retire) eylemini çalıştırdığında
   - Cihaz Azure Active Directory (AD) grubundan kaldırıldığında
-  - Uyumluluk ilkesi, grup atamasından kaldırıldığında
-  - Yapılandırma profili, grup atamasından kaldırıldığında
+  - Sertifika profili Grup ataması kaldırıldı
 
 - Bir SCEP sertifikası şu durumlarda iptal edilir:
   - Yönetici, SCEP profilini değiştirdiğinde veya güncelleştirdiğinde

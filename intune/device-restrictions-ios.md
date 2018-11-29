@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8f9e9533793a8792e9ad354392b9d8e911cd07f4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 209179f6ae5492e26d0d11b0b45711a096c65936
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188713"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579209"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune iOS cihaz kısıtlama ayarları
 
@@ -102,7 +102,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
     -   **En az parola uzunluğu** - Parolada bulunacak karakter sayısı için alt sınır belirtin.
     -   **Cihaz silinmeden önceki başarısız oturum açma sayısı** - Bu ayar, cihazı silmeden önce gerçekleşebilecek benzersiz yanlış parola girişimlerinin sayısını belirtin.
     -   **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**<sup>1</sup> - Kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalabileceğini belirtin.
-    -   **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**<sup>1</sup> - Cihazın ekranı kapatılmadan önce beklenecek dakika sayısını belirtin.
+    -   **Ekran kilitlenmeden işlem yapılmayan dakika**<sup>1</sup> -ekran kilitlenmeden kadar en fazla dakika etkin olmama girin. Ardından bu değeri girdiğiniz zaman ne şu anda cihazda ayarlı olan süreden uzunsa cihaz tarafından yoksayılır. Ayarlandığında **hemen**, cihazlar, cihaz başına olası en küçük değerin kullanın.
     -   **Parola kullanım süresi sonu (gün)** - Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtin.
     -   **Önceki parolaların yeniden kullanılmasını engelle** - Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtin.
     -   **Parmak iziyle kilit açma** - Uyumlu cihazların kilidini açmak için parmak izi kullanmaya izin verin.
@@ -308,7 +308,7 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.MapsMaps          |              | Apple     |
+| com.apple.Maps              | Harita         | Apple     |
 | com.apple.MobileSMS         | İletiler     | Apple     |
 | com.apple.Music             | Müzik        | Apple     |
 | com.apple.news              | News         | Apple     |
