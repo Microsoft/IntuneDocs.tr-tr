@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1cb30c1125add982a40fa2319e1f9b8b9edae1e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b6b833794b6ed903ca2915bc95d1faa67648104f
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190430"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630094"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1016,6 +1016,27 @@ Güncelleştirilmiş görünümü görmek için [Uygulama kullanıcı arabirimin
 Şirket içi Exchange verilerine erişimi Outlook Mobile ile korumak için artık Intune Uygulama İlke Koruması (APP) ve Koşullu Erişim (CA) kullanabilirsiniz. Azure portalına bir uygulama koruma ilkesi eklemek veya ilkeyi değiştirmek için **Microsoft Intune** > **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ni seçin. Bu özelliği kullanmadan önce [iOS ve Android için Outlook gereksinimlerini](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) karşıladığınızdan emin olun.
 
 ## <a name="notices"></a>Bildirimler
+
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Değişiklik planı: Exchange Online için Intune bağlayıcısını Intune'da kullanılabilir olmayacak <!-- 3105122 -->
+Exchange Online ve koşullu erişim ile deneyiminizi kolaylaştırmak için biz Exchange Online için Intune 'Hizmet' bağlayıcısını devre dışı bırakacağız. Bu değişiklik, aralık hizmet güncelleştirmesiyle başlar ve Şubat 2019 hizmet güncelleştirmesiyle tamamlanamadı.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+'Hizmet' bağlayıcı işlevini ortamınızda kullanmakta olduğunuz, Kayıtlarımıza göre bu yana bu iletiyi alıyorsunuz. 'Hizmet' Bağlayıcısı, Exchange Online için Exchange Active Sync yalnızca cihazların Intune yönetimini destekler ve şirket içi altyapı desteklemez. Koşullu erişim (CA) için gerekli olduğu konsolunda görüntülenme şeklini nedeniyle bu bağlayıcı görünür olduğunda gerçekte, bu CA için gerekli değildir. Intune hizmeti için aralık güncelleştirmesiyle konsolda bu netleştirmek için yeni bağlayıcılar belirlemek için bu düğmeyi devre dışı bırakırız. Ardından Şubat 2019 ' tüm mevcut Exchange Online için Intune bağlayıcıları devre dışı bırakılır.
+
+Ortamınızda bu bağlayıcılar kullanıyorsanız, izlemek veya Şubat ayında bağlayıcıları devre dışı bıraktıktan sonra Intune'da Exchange Active Sync yalnızca cihazları temizlemek mümkün olmayacaktır. Bu değişiklik sırasında son kullanıcılarınıza beklenen hiçbir etkisi yoktur.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+
+Hizmetten hizmete bağlayıcı ayarlama ve Exchange Active Sync yalnızca cihazınız varsa, cihazlarınızı yönetmek için diğer yöntemler geçin. Aşağıdaki seçenekleriniz vardır:
+
+- Mobil cihaz Yönetimi (MDM) cihazlarını kaydetme
+- Cihazlarınızı yönetmek için Intune uygulama koruma ilkelerini kullanma
+- Burada belgelerinde belirtildiği gibi Exchange denetimleri kullanın. 
+
+#### <a name="additional-information"></a>Ek bilgi
+[Intune ve Exchange Online için Exchange hizmeti Bağlayıcısı'nı yapılandırma](https://docs.microsoft.com/intune/exchange-service-connector-configure)
+
+
 
 ### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Değişiklik planı: Eğitim için Intune’da performans güncelleştirmeleri <!--1750215-->
 Eğitim için Intune’da kullanıcılarınıza veya cihazlarınıza ayar atamanız sırasında hızı ve güvenilirliği artırmak için bazı güncelleştirmeler ekliyoruz. Bu değişikliğin bir parçası olarak Kasım sonuna doğru ilke veya ayar atamalarınızı yeni gruplara taşıyacağız.
