@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182287"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728880"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune'da iOS cihazları için cihaz uyumluluk ilkesi ekleme
 
@@ -54,7 +54,8 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 ## <a name="create-a-device-compliance-policy"></a>Cihaz uyumluluğu ilkesi oluşturma
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **Platform** olarak **iOS**’u seçin. **Ayarları Yapılandır**’ı seçin ve **E-posta**, **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını girin. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
+4. **Platform** olarak **iOS**’u seçin. 
+5. Seçin **ayarlarını yapılandırma**girin **e-posta**, **cihaz sistem durumu**, **cihaz özelliklerini**, ve **sistem Güvenlik** bu konuda açıklanan ayarlar. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ E-posta profili hakkında ayrıntılı bilgi için bkz. [Microsoft Intune ile e-
 
 - **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumlu değil olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Kullanıcı cihazını yükseltmeyi seçebilir. Bundan sonra, şirket kaynaklarına erişebilir.
 - **İzin verilen en yüksek işletim sistemi sürümü**: Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişemez.
+- **En düşük işletim sistemi derleme sürümü**: güvenlik güncelleştirmeleri, Apple yayımlar, yapı numarası genellikle güncelleştirilir, işletim sistemi sürümü. Cihazda bir izin verilen en düşük yapı numarası girmek için bu özelliği kullanın. Bu uygunluk denetimi, iOS 8.0 ve sonraki sürümleri çalıştıran cihazları destekler. 
+- **En yüksek işletim sistemi derleme sürümü**: güvenlik güncelleştirmeleri, Apple yayımlar, yapı numarası genellikle güncelleştirilir, işletim sistemi sürümü. Cihazda bir izin verilen en fazla yapı numarası girmek için bu özelliği kullanın. Bu uygunluk denetimi, iOS 8.0 ve sonraki sürümleri çalıştıran cihazları destekler.
 
 ## <a name="system-security"></a>Sistem güvenliği
 

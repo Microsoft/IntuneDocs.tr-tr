@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ff7876ef5c04eb59d1e89ac03b640d4f443cca6
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184752"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728965"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ Bu makalede açıklanan ilke ayarları Azure portalındaki **İlke Ekle** > **Ay
 
 İlke ayarları üç kategoriye ayrılır: *Veri yeniden konumlandırma*, *Erişim gereksinimleri* ve *Koşullu başlatma*. Bu makalede ***ilkeyle yönetilen uygulamalar*** terimi, uygulama koruma ilkeleriyle yapılandırılan uygulamaları ifade eder.
 
-##  <a name="data-relocation-settings"></a>Verileri yeniden konumlandırma ayarları
+##  <a name="data-protection-settings"></a>Veri koruma ayarları
 
 | Ayar | Nasıl kullanılır? |  
 |------|------| 
@@ -47,7 +47,7 @@ Bu makalede açıklanan ilke ayarları Azure portalındaki **İlke Ekle** > **Ay
 
 
 > [!NOTE]
-> Verileri yeniden konumlandırma ayarlarının hiçbiri iOS cihazlarında Apple tarafından yönetilen birlikte aç özelliğini denetlemez. Apple birlikte aç özelliğini kullanmak için bkz. [Microsoft Intune ile iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md).
+> Veri koruma ayarlarını hiçbiri Apple yönetilen birlikte Aç özelliğini iOS cihazlarında denetler. Apple birlikte aç özelliğini kullanmak için bkz. [Microsoft Intune ile iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md).
 
 ## <a name="data-transfer-exemptions"></a>Veri aktarımı muafiyetleri
 

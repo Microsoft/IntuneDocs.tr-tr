@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: b6b833794b6ed903ca2915bc95d1faa67648104f
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 656c08fbc59b5656d4fc69c5e8e45d9d4903eab8
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630094"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729084"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,75 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-26-2018"></a>26 Kasım 2018 haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="downloading-intune-win32-app-content----2617320---"></a>Intune Win32 uygulama içeriği indiriliyor <!-- 2617320 -->
+Windows 10 RS3 ve üzerindeki istemciler Windows 10 istemci üzerinde bir teslim iyileştirme bileşenini kullanarak Intune Win32 uygulama içeriği karşıdan yükler. Teslim iyileştirme, varsayılan olarak açık eşler arası işlevsellik sağlar. Dağıtım iyileştirme Grup İlkesi ve gelecek Intune MDM aracılığıyla yapılandırılabilir Daha fazla bilgi için [Windows 10 için teslim iyileştirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>Son kullanıcı cihaz ve uygulama içeriği menüsü <!-- 2771453 -->
+Son kullanıcılar artık bağlam menüsü üzerinde cihaz ve uygulamaları bir cihazı yeniden adlandırma ya da uyumluluk denetimi gibi yaygın eylemleri tetiklemek için kullanabilirsiniz.
+
+#### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Yönetilen Giriş Ekranı uygulamasında özel arka plan ayarlama  <!-- 3041945 -->
+Arka plan Android kuruluş, birden çok uygulamalı bilgi noktası modu cihazlarına giriş ekranı yönetilen uygulamayı özelleştirme olanak sağlayan bir ayar ekliyoruz.  **Özel URL arka planı**’nı yapılandırmak için Azure portalı > Cihaz yapılandırması’ndaki Intune’a gidin. Geçerli cihaz yapılandırma profilini seçin veya bilgi noktası ayarlarını yapılandırmak için yeni profil oluşturun.
+Bilgi noktası ayarları görmek için bkz: [Android Kurumsal cihaz kısıtlamaları](device-restrictions-android-for-work.md).
+
+#### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Uygulama koruma ilkesi atamasını kaydetme ve uygulama <!-- 3104570 -->
+Artık daha iyi üzerinde denetiminiz, [uygulama koruma ilke atamalarını](app-protection-policies.md#deploy-a-policy-to-users). Seçtiğinizde, *atamaları* ayarlamak veya bir ilke atamalarını düzenlemek için **Kaydet** değişikliği uygulamadan önce yapılandırma. Kullanım **at** tüm değişiklikleri temizlemek için dahil etme için değişiklikleri kaydetmeden yaptığınız veya dışlama listeler.  Gerektiren kaydetme veya atma tarafından bir uygulama koruma ilkesi yalnızca düşündüğünüz kullanıcılara atanır.
+
+#### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Windows 10 ve üzeri için yeni Microsoft Edge tarayıcı ayarları <!-- 3174639 -->
+Bu güncelleştirme denetimi yardımcı olmak ve cihazlarınızın Microsoft Edge tarayıcısı yönetmek için yeni ayarları içerir. Bu ayarların listesi için bkz. [(ve üzeri) için Windows 10 cihaz kısıtlama](device-restrictions-windows-10.md#microsoft-edge-browser).
+
+#### <a name="new-apps-support-with-app-protection-policies----3330037---"></a>Yeni uygulamaları ile uygulama koruma ilkelerini destekler <!-- 3330037 -->
+Artık aşağıdaki uygulamaları ile yönetebileceğiniz [Intune uygulama koruma ilkeleri](app-protection-policies.md):
+- Stream (iOS)
+- YAPILACAKLAR (Android, iOS)
+- PowerApps (Android, iOS)
+- Akış (Android, iOS)
+
+Kurumsal veri ve kontrol veri aktarımı için Intune ilkeyle yönetilen diğer uygulamalar gibi bu uygulamaları korumak için uygulama koruma ilkelerini kullanın. Not: Akışı henüz konsolda görünür değilse, oluşturduğunuzda veya düzenlediğinizde akış ve uygulama koruma ilkeleri eklersiniz. Bunu yapmak için **+ daha fazla uygulama** seçeneğini ve ardından belirtin *uygulama kimliği* giriş alanını akış. Android kullanım için *com.microsoft.flow*, ve iOS kullanımı için *com.microsoft.procsimo*.
+
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>iOS ve macOS sürüm numaraları ve derleme numaraları gösterilir <!-- 1892471 -->
+**Cihaz uyumluluğu** > **Cihaz uyumluluğu**’nda iOS ve macOS işletim sistemi sürümleri gösteriliyor ve uyumluluk ilkelerinde kullanılabilir durumda. Bu güncelleştirme içerir, her iki platform için yapılandırılabilir derleme numarası.
+Güvenlik güncelleştirmeleri kullanıma sunulduğunda Apple genellikle sürüm numarasını olduğu gibi bırakır ancak derleme numarasını güncelleştirir. Bir uyumluluk ilkesinde derleme numarasını kullanarak güvenlik açığı güncelleştirmesinin yüklenip yüklenmediğini kolayca denetleyebilirsiniz.
+Bu özelliği kullanmak için bkz: [iOS](compliance-policy-create-ios.md#device-health) ve [macOS](compliance-policy-create-mac-os.md#device-properties) uyumluluk ilkeleri.
+
+#### <a name="update-rings-are-being-replaced-with-delivery-optimization-settings-for-windows-10-and-later----2753807---"></a>Teslim iyileştirme ayarları ile Windows 10 ve üzeri için güncelleştirme halkaları değiştirildi <!-- 2753807 -->
+Teslim iyileştirme Windows 10 ve üzeri için yeni bir yapılandırma profili ' dir. Bu özellik, kuruluşunuzdaki cihazlara yazılım güncelleştirmeleri iletmek için daha kolaylaştırılmış bir deneyim sunar. Bu güncelleştirme ayrıca ayarları içinde bir yapılandırma profili kullanarak yeni ve var olan güncelleştirme halkaları sunmanıza yardımcı olur.
+Teslim iyileştirme yapılandırma profili yapılandırmak için bkz [Windows 10 (ve üzeri) delivery optimization ayarları](delivery-optimization-windows.md).
+
+
+### <a name="device-enrollment"></a>Cihaz kaydı
+
+#### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Kayıt Durumu Sayfasıda izlenen uygulamaları seçme <!-- 2531007 -->
+Hangi uygulamaların kayıt durumu sayfasında izlenen seçebilirsiniz. Bu uygulamalar yüklenene kadar kullanıcı cihazı kullanamaz. Daha fazla bilgi için [ayarlama bir kayıt durumu sayfası](windows-enrollment-status.md).
+
+#### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>Autopilot cihaz seri numarasına göre ara <!--2595788 -->
+Artık, Autopilot cihazları seri numarasına göre arayabilirsiniz. Bunu yapmak için **cihaz kaydı** > **Windows kayıt** > **cihazları** > bir seri numarası yazın **göre ara seri numarası** kutusu > Enter tuşuna basın.
+
+#### <a name="track-installation-of-office-proplus---2620217---"></a>Office ProPlus yüklemesini izleme <!--2620217 -->
+Kullanıcılar, yükleme işleminin ilerlemesini izleyebilirsiniz [Office ProPlus](apps-add-office365.md) kullanarak [kayıt durumu sayfası](windows-enrollment-status.md). Daha fazla bilgi için [ayarlama bir kayıt durumu sayfası](windows-enrollment-status.md).
+
+#### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>Süresi dolan VPP belirteci veya yetersiz Şirket portalı lisansı uyarıları <!-- 2237572 -->
+Intune Şirket portalı DEP kaydı sırasında önceden sağlamak için Volume Purchase Program (VPP) kullanıyorsanız, VPP belirtecinin süresi dolmak üzere olduğunda ve Şirket portalı için lisans azalıyor uyaracaktır. Daha fazla bilgi için [Apple School Manager ile macOS cihazlara veya cihaz kayıt programı otomatik olarak kaydetme](device-enrollment-program-enroll-macos.md).
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Yeni Intune cihaz Aboneliği SKU <!--3312071-->
+Kuruluşlarda cihaz yönetim maliyetini düşürmeye yardımcı olmak için yeni, cihaz tabanlı bir abonelik SKU’su kullanıma sunulmuştur. Bu Intune cihaz SKU’su cihaz başına aylık olarak lisanslandırılır. Fiyat ise lisanslama programına göre değişir. Direct Channel, Kurumsal Anlaşma (EA), Microsoft Ürün ve Hizmetleri Programı (MPSA) ve Açık ve Bulut Çözümü Sağlayıcısı (CSP) ortamlarında bulunabilir.
+
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Değişiklikleri yapmak için Android cihazlarda bilgi noktası modunu geçici olarak duraklatma <!-- 3041935 -->
+Android cihazlarını çok uygulamalı bilgi noktası modunda kullanırken bir BT uzmanının cihazda değişiklikler yapması gerekebilir. Bu güncelleştirme, geçici olarak bilgi noktası modu bir PIN kullanarak duraklatmak ve cihazın tamamını erişmek bir BT yöneticisi izin veren yeni çoklu uygulama bilgi noktası ayarları içerir.
+Bilgi noktası ayarları görmek için bkz: [Android Kurumsal cihaz kısıtlamaları](device-restrictions-android-for-work.md).
+
+#### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Android Kurumsal bilgi noktası cihazlarında sanal giriş düğmesini etkinleştirme  <!-- 3042021 -->
+Yeni bir ayar, kullanıcıların Yönetilen Giriş Ekranı uygulaması ve çok uygulamalı bilgi noktası cihazlarındaki diğer atanan uygulamalar arasında bir yazılım tuşuna dokunarak geçiş yapmalarını sağlar. Bu ayar, özellikle kullanıcının bilgi noktası uygulaması “geri” düğmesine uygun şekilde yanıt vermediği durumlarda yararlı olur. Bu ayarı şirkete ait, tek kullanımlı Android cihazlarında yapılandırabilirsiniz. **Sanal giriş düğmesi**’ni etkinleştirmek veya devre dışı bırakmak için Azure portalı > Cihaz yapılandırması’ndaki Intune’a gidin. Geçerli cihaz yapılandırma profilini seçin veya bilgi noktası ayarlarını yapılandırmak için yeni profil oluşturun.
+Bilgi noktası ayarları görmek için bkz: [Android Kurumsal cihaz kısıtlamaları](device-restrictions-android-for-work.md).
 
 ## <a name="week-of-november-12-2018"></a>12 Kasım 2018 haftası
 
@@ -84,7 +153,7 @@ Artık son kullanıcıların Win32 uygulamalarını yüklemek veya PowerShell be
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
-#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>iOS VPN istemcilerinde ağ erişim denetimi desteği <!-- 1333693 wnready -->
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693---"></a>iOS VPN istemcilerinde ağ erişim denetimi desteği <!-- 1333693 -->
 Bu güncelleştirmeyle, iOS için Cisco AnyConnect, F5 Access ve Citrix SSO’ya yönelik bir VPN yapılandırma profili oluştururken Ağ Erişim Denetimini (NAC) etkinleştirmek için kullanabileceğiniz yeni bir ayar kullanıma sunuldu. Bu ayar, cihazın NAC kimliğinin VPN profiline dahil edilmesini sağlar. Şu anda bu yeni NAC kimliğini destekleyen bir VPN istemcisi veya NAC iş ortağı çözümü yok, ancak olduğunda sizi [destek blog gönderimiz](ttps://aka.ms/iOS12_and_vpn) yoluyla bilgilendireceğiz.
 
 NAC’yi kullanmak için şunları yapmanız gerekir:
@@ -173,7 +242,7 @@ Dağıtıma dahil edilen müşteriler için bu yeni deneyim, Yardım ve Desteği
 
 Daha fazla bilgi için Microsoft Intune için destek alma makalesindeki [Yeni Yardım ve Destek deneyimi](get-support.md#new-help-and-support-experience) konusuna bakın.  
 
-### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>Intune için PowerShell modülü - Önizleme kullanılabilir <!-- wnready 951068 -->
+### <a name="powershell-module-for-intune--preview-available----951068---"></a>Intune için PowerShell modülü - Önizleme kullanılabilir <!-- 951068 -->
 Intune API’si için Microsoft Graph yoluyla destek sağlayan yeni bir PowerShell modülü artık [GitHub]( https://aka.ms/intunepowershell)’da önizleme olarak kullanılabilir. Bu modülü kullanma hakkında daha fazla ayrıntı için modülün bulunduğu konumdaki README dosyasına bakın. 
 
 
@@ -355,7 +424,7 @@ Kullanabileceğiniz geçerli VPN profil ayarları hakkında bilgi için bkz. [Wi
 
 #### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>macOS Şirket Portalı yükleyicisi artık sürüm numarası ve yükleyici dosya adını içeriyor <!--2652728-->
 
-#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>iOS otomatik uygulama güncelleştirmeleri <!-- 2729759 wnready -->
+#### <a name="ios-automatic-app-updates----2729759---"></a>iOS otomatik uygulama güncelleştirmeleri <!-- 2729759 -->
 Otomatik uygulama güncelleştirmeleri, iOS sürüm 11.0 ve üzerinde cihaz ve kullanıcı lisanslı uygulamalar için kullanılabilir.
 
 
@@ -733,7 +802,7 @@ Bu güncelleştirmeyle birlikte kullanıcı grafiği geri geldi ve Azure portal�
 
 ### <a name="device-enrollment"></a>Cihaz kaydı
 
-#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>Kullanıcı kimlik doğrulaması olmadan Windows Autopilot kaydı desteği <!-- 1165118 wnready -->
+#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118---"></a>Kullanıcı kimlik doğrulaması olmadan Windows Autopilot kaydı desteği <!-- 1165118 -->
 Intune şimdi kullanıcı kimlik doğrulaması olmadan Windows Autopilot kaydını destekliyor. Bu, Windows Autopilot dağıtım profilinde "Autopilot Dağıtım modu" değerinin "Kendi Kendine Dağıtım" olduğu yeni bir seçenektir.  Bu kayıt türünü başarıyla tamamlamak için cihaz, Windows 10 Insider Preview Derleme 17672 veya üzeri çalıştırmalı ve TPM 2.0 yongasına sahip olmalıdır. Kullanıcı kimlik doğrulaması gerekmediğinden, bu seçeneği yalnızca üzerinde fiziksel denetim sahibi olduğunuz cihazlara atamalısınız.
 
 #### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Autopilot için OOBE yapılandırırken yeni dil / bölge ayarı <!-- 1821766 -->
@@ -781,7 +850,7 @@ Intune şirket içi Exchange bağlayıcısıyla, cihazın Intune'a kayıtlı olu
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Tüm kullanıcıları ve tüm cihazları kapsam grupları olarak atama <!-- 2196803 -->
 Şimdi tüm kullanıcıları, tüm cihazları ve tüm kullanıcılar ile tüm cihazları kapsam gruplarına atayabilirsiniz. Bunu yapmak için **Intune rolleri** > **Tüm roller** > **İlke ve profil yöneticisi** > **Atamalar** > atama seçin > **Kapsam (gruplar)** öğesini seçin.
 
-#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>Şimdi iOS ve macOS cihazlar için UDID bilgileri eklendi <!-- 2219806 wnready-->
+#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806---"></a>Şimdi iOS ve macOS cihazlar için UDID bilgileri eklendi <!-- 2219806 -->
 iOS ve macOS cihazlarının Benzersiz Cihaz Tanımlayıcısını (UDID) görmek için, **Cihazlar** > **Tüm cihazlar** > cihaz seçin > **Donanım**'a gidin. UDID yalnızca şirket cihazları için sağlanır (şirket cihazları **Cihazlar** > **Tüm cihazlar** > bir cihaz seçin > **Özellikler** > **Cihaz sahipliği** altında ayarlanır).
 
 ### <a name="intune-apps"></a>Intune uygulamaları
@@ -955,7 +1024,7 @@ macOS cihazları için Şirket Portalı uygulaması, kullanıcıların Intune il
 
 Daha fazla bilgi için bkz. [macOS için hataları gönderme](/intune-user-help/send-errors-macos).
 
-#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Intune, Windows 10 için Şirket Portalı uygulamasında Fluent Design System'e uyum sağlar <!-- 1195010 WNready -->
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010---"></a>Intune, Windows 10 için Şirket Portalı uygulamasında Fluent Design System'e uyum sağlar <!-- 1195010 -->
 Windows 10 için Intune Şirket Portalı, [Fluent Design System'in gezinti görünümü](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) ile güncelleştirildi. Uygulamanın yan tarafı boyunca tüm en üst düzey sayfaların statik, dikey bir listesini göreceksiniz. Sayfaları hızla görüntülemek ve aralarında geçiş yapmak için herhangi bir bağlantıya tıklayın. Bu, Intune'da sürekli daha iyi uyarlanmış, anlayışlı ve tanıdık bir deneyim oluşturma çabalarımız kapsamında göreceğiniz birkaç güncelleştirmeden ilkidir. Güncelleştirilmiş görünümü görmek için [Uygulama kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md)’e gidin.
 
 ## <a name="week-of-april-16-2018"></a>16 Nisan 2018 Haftası
@@ -1111,14 +1180,8 @@ Android'inizde ve Android kurumsal cihaz kısıtlaması ve uyumluluk ilkelerinde
 #### <a name="additional-information"></a>Ek bilgiler
 https://aka.ms/PasswordSettings 
 
-### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Değişiklik Planı: Sonraki Kimlik Doğrulamasında Parolayı Değiştir, Intune’a eklendi<!-- 1873216 -->
-Eylül hizmet sürümünde Intune, macOS sürüm 10.13 ve üzerini çalıştıran cihazlar için Apple’ın yeni çıkan **Sonraki Kimlik Doğrulamasında Parolayı Değiştir** ayarını tümleştirmeyi planlıyor. Bu ayar olmadan MDM sağlayıcıları cihazın geçiş kodunun uyumlu olacak şekilde değiştirildiğini doğrulayamıyorlar. Intune’un yapılandırma ve uyumluluk ilkeleri, yalnızca cihazın parolası bir sonraki sefer değiştiğinde uyumlu olarak işaretleneceğini doğrular. Bu yeni Apple özelliği eklendiğinde, macOS kullanıcılarınız uyumlu olsa bile parolalarını güncelleştirmek için bir istek alır.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Bu, Intune veya karma MDM kullanan ve macOS cihaz ilkesine sahip ortamları etkileyecek. Artık Apple’ın **Sonraki Kimlik Doğrulamasında Parolayı Değiştir** ayarı olduğu için Intune, bir parola ilkesi gönderildiğinde kullanıcıları parolalarını değiştirmeye zorlayabilir. Cihaz uyumlu olarak işaretlenene kadar şirket kaynaklarını engellerseniz, son kullanıcılarınız parolalarını sıfırlayana kadar e-posta veya SharePoint siteleri gibi şirket kaynaklarına erişemeyebilirler. Gelecekte, tüm yapılandırma ve uyumluluk parola ilkeleri hedeflenen kullanıcıları parolalarını değiştirmeye zorlayacak.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Durumu yardım masanıza bildirin. Bu macOS cihaz ilkesini kullanmak istemiyorsanız, geçerli macOS ilkenizin atamasını kaldırmanızı veya bu ilkeyi silmenizi öneririz. Müşteri araştırmalarına göre çoğu müşteri bu değişiklikten etkilenmeyecek. Pek çok son kullanıcı, uyumlu kalmak için parolayla kaydolmaya veya parolalarını sıfırlamaya yönelik istek aldıktan sonra parolasını güncelleştiriyor.
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->
+Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler. [Intune destek web günlüğümüzü](https://aka.ms/compportalats) ayrıntılarla güncelleyeceğiz.
 
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>Değişiklik Planı: Intune’u TLS 1.2’ye taşıma
 31 Ekim 2018 tarihinden itibaren Intune; sınıfının en iyisi şifrelemeyi sağlamak, hizmetin varsayılan olarak daha güvenli olduğundan emin olmak ve Microsoft Office 365 gibi diğer Microsoft hizmetleriyle uyum sağlamak için Aktarım Katmanı Güvenliği (TLS) protokol sürümü 1.2’yi destekleyecektir. Office, bu değişikliği MC128929 sürümünde gerçekleştirmişti.
@@ -1134,13 +1197,6 @@ Durumu yardım masanıza bildirin. Bu macOS cihaz ilkesini kullanmak istemiyorsa
 Ortamlarınızdaki TLS 1.0 ve 1.1 bağımlılıklarını önceden kaldırmanızı ve mümkün olan her yerde işletim sistemi düzeyinde TLS 1.0 ve 1.1’i devre dışı bırakmanızı öneririz. TLS 1.2’ye geçişinizi planlamaya hemen başlayın. Şu anda Intune tarafından desteklenmeyen ancak yine de ilke alma ihtimali olan ve TLS sürüm 1.2 ile iletişim kuramayacak olan cihazlar listesi için aşağıdaki web günlüğü gönderisine bakın. Bu son kullanıcıları, şirket kaynaklarına erişimi kaybedecekleri konusunda bilgilendirmeniz gerekebilir.
 
 **Ek Bilgi**: [Şifreleme için Intune’un TLS 1.2’ye taşınması](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Değişiklik Planı: Artık MDM yönetiminiz için Azure’da Intune kullanabilirsiniz <!-- 1227338 -->
-Bir yılı aşkın bir süre önce [Azure’da Intune’un genel önizlemesini](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) duyurup altı ay önce Intune için [yeni yönetici deneyiminin genel kullanılabilirliğini](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) yayımlamıştık. 31 Ağustos 2018 itibarıyla, tek başına Intune kullanan müşteriler için klasik Silverlight konsolunda mobil cihaz yönetimini (MDM) kaldıracağız. Bunun yerine MDM ihtiyaçlarınız için [Azure’da Intune](https://aka.ms/Intune_on_Azure) kullanabilirsiniz. MDM için hala klasik konsolu kullanıyorsanız, lütfen bundan vazgeçin ve Azure üzerinden Intune kullanmaya alışın. Bu değişiklik ile hiçbir son kullanıcı etkisi beklemiyoruz. Klasik bilgisayar yönetimi Silverlight’ta kalacaktır. [Buraya](https://aka.ms/Intune_on_Azure_mdm) tıklayarak bu değişikliğin sizi nasıl etkileyeceği hakkında daha fazla bilgi alabilirsiniz.
-
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->
-Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler. [Intune destek web günlüğümüzü](https://aka.ms/compportalats) ayrıntılarla güncelleyeceğiz.
 
 
 

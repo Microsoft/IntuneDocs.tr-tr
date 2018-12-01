@@ -1,12 +1,12 @@
 ---
-title: macOS cihazlarını kaydetme - Aygıt Kayıt Programı
+title: -Cihaz kayıt programı veya Apple School Manager macOS cihazlarını kaydetme
 titleSuffix: Microsoft Intune
 description: Şirkete ait macOS cihazlarını Aygıt Kayıt Programı’nı kullanarak kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180774"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728761"
 ---
-# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>macOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
+# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>MacOS cihazlarını cihaz kayıt programı veya Apple School Manager ile otomatik olarak kaydetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu makale, Apple’ın [Aygıt Kayıt Programı (DEP)](https://deploy.apple.com) yoluyla satın alınan cihazlar için macOS cihaz kaydını ayarlamanıza yardımcı olur. DEP kaydını cihazlara hiç dokunmadan çok sayıda cihaz için ayarlayabilirsiniz. macOS cihazlarını doğrudan kullanıcılara gönderebilirsiniz. Kullanıcı cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz Intune yönetimine kaydedilir.
+Bu makale Apple satın alınan cihazlar için macOS cihaz kaydını ayarlamanıza yardımcı olur. [cihaz kayıt programı (DEP)](https://deploy.apple.com) veya [Apple School Manager](https://school.apple.com/). Bu kayıtlar, çok sayıda cihazı için hiç dokunmadan kullanabilirsiniz. macOS cihazlarını doğrudan kullanıcılara gönderebilirsiniz. Kullanıcı cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz Intune yönetimine kaydedilir.
 
-DEP kaydını ayarlamak için Intune ve Apple DEP portallarını birlikte kullanmanız gerekir. Kayıt sırasında cihazlara uygulanan ayarları içeren DEP kayıt profilleri oluşturun.
+Kayıt kurulumu için Intune ve Apple DEP portallarını kullanın. Kayıt sırasında cihazlara uygulanan ayarları içeren bir kayıt profilleri oluşturun.
 
-DEP kaydı [cihaz kayıt yöneticisi](device-enrollment-manager-enroll.md) veya [Apple School Manager](apple-school-manager-set-up-ios.md) ile çalışmaz.
+DEP kaydı ya da Apple School Manager çalışın [cihaz kayıt Yöneticisi](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -42,19 +42,19 @@ DEP kaydı [cihaz kayıt yöneticisi](device-enrollment-manager-enroll.md) veya 
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## <a name="prerequisites"></a>Önkoşullar
-- [Apple Aygıt Kayıt Programı](http://deploy.apple.com)’nda satın alınmış cihazlar
+- Satın alınan cihazlar [Apple School Manager](https://school.apple.com/) veya [Apple aygıt kayıt programı](http://deploy.apple.com)
 - Seri numarası listesi veya satın alma sipariş numarası. 
 - [MDM Yetkilisi](mdm-authority-set.md)
 - [Apple MDM Anında İletme sertifikası](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>Bir Apple DEP belirteci alma
 
-macOS cihazlarını DEP ile kaydedebilmeniz için bir Apple DEP belirteci dosyasına (.p7m) ihtiyacınız vardır. Bu belirteç, Intune'un şirketinize ait olan DEP cihazları hakkındaki bilgileri eşitlemesini sağlar. Ayrıca Intune'un kayıt profillerini Apple’a yüklemesini ve bu profilleri cihazlara atamasını da sağlar.
+DEP veya Apple School Manager ile macOS cihazları kaydedebilmeniz için önce Apple'dan bir DEP belirteci (.p7m) dosyasına gerekir. Bu belirteç Intune'un kuruluşunuza ait cihazlar hakkındaki bilgileri eşitlemesini sağlar. Ayrıca Intune'un kayıt profillerini Apple’a yüklemesini ve bu profilleri cihazlara atamasını da sağlar.
 
-DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları yönetim için Intune’a atamak için DEP portalını da kullanabilirsiniz.
+Apple portalı, bir belirteç oluşturmak için kullanın. Ayrıca cihazları Yönetim için Intune'a atamak için Apple portalı kullanın.
 
 > [!NOTE]
-> Belirteci Azure’a geçirmeden önce klasik Intune portalında silerseniz Intune, silinen bir Apple DEP belirtecini geri yükleyebilir. DEP belirtecini Azure portalından tekrar silebilirsiniz.
+> Belirteç, Azure'a geçiş yapmadan önce Klasik Intune portalında silerseniz Intune, silinen bir Apple belirteci geri yükleyebilir. Belirteci Azure portalından tekrar silebilirsiniz.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1. Adım Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
 
@@ -66,15 +66,14 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
    ![Apple Sertifikaları çalışma alanındaki Kayıt Programı Belirteci panelinde bulunan ortak anahtarı indirme öğesinin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. Şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtarınızı indirin** öğesini seçin. .pem dosyası Apple Cihaz Kayıt Programı portalından güven ilişkisi sertifikası istemek için kullanılır.
+3. Şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtarınızı indirin** öğesini seçin. .Pem dosyası Apple Portalı'ndan bir güven ilişkisi sertifikası istemek için kullanılır.
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>2. Adım Anahtarınızı kullanarak Apple’dan bir belirteç indirin.
 
-1. Apple’ın Dağıtım Programı portalını açmak için **Apple’ın Aygıt Kayıt Programı için bir belirteç oluştur**’u seçin ve şirket Apple Kimliğinizle oturum açın. DEP belirtecinizi yenilemek için de bu Apple kimliğini kullanabilirsiniz.
-2.  Apple’ın [Dağıtım Programları portalında](https://deploy.apple.com), **Aygıt Kayıt Programı** için **Kullanmaya Başla**’yı seçin.
-
-3. **Sunucuları Yönet** sayfasında **MDM Sunucusu Ekle**’yi seçin.
+1. Seçin **için Apple'nın cihaz kayıt programı belirteç oluşturma** veya **Apple School Manager aracılığıyla belirteç oluşturma** uygun Apple portalı açın ve şirket Apple kimliğinizle oturum açın Belirtecinizi yenilemek için bu Apple Kimliğini kullanabilirsiniz.
+2.  Apple portalında DEP için seçin **Başlarken** için **cihaz kayıt programı** > **sunucuları Yönet** > **MDM Ekle Sunucu**.
+3.  Apple School yönetmek için Apple portalında seçin **MDM sunucuları** > **MDM Sunucusu Ekle**.
 4. **MDM Sunucu Adı**'nı girin ve ardından **İleri**'yi seçin. Sunucu adı, mobil cihaz yönetimi (MDM) sunucusunu tanımlarken kullanmanız içindir. Microsoft Intune sunucusunun adı veya URL'si değildir.
 
 5. **Ekle &lt;ServerName&gt;** iletişim kutusu açılır ve **Ortak Anahtarınızı Yükleyin** ifadesi yazar. **Dosya Seç…** öğesini seçin .pem dosyasını karşıya yükleyin ve ardından **İleri**'yi seçin.
@@ -89,9 +88,7 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
 8. **Eylem Seç** işlemi için **Sunucuya Ata**’yı ve Microsoft Intune için belirtilen &lt;ServerName&gt; öğesini belirleyip **Tamam**'ı seçin. Apple portalı, belirtilen cihazları Intune sunucusunda yönetilmek üzere bu sunucuya atar ve **Atama Tamamlandı** ifadesini görüntüler.
 
-   Apple portalında **Dağıtım Programları** &gt; **Aygıt Kayıt Programı** &gt; **Atama Geçmişini Görüntüle**’ye giderek cihazların listesi ile MDM sunucu atamalarına göz atabilirsiniz.
-
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. Adım. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. Adım. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin
 
 Azure portalında Intune’da ileride başvurmak üzere Apple kimliğini sağlayın.
 
@@ -102,7 +99,7 @@ Azure portalında Intune’da ileride başvurmak üzere Apple kimliğini sağlay
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
 
-Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
+Belirtecinizi yüklediğinize göre cihazlar için bir kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
 
 1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple kaydı** > **Kayıt programı belirteçleri**’ni seçin.
 2. Bir belirteç seçin, **Profiller**’e ve daha sonra **Profil oluştur**’a tıklayın.
@@ -185,7 +182,7 @@ Belirli bir belirteç ile kaydedilen tüm cihazlara uygulanacak varsayılan bir 
 2. **Varsayılan Profil Ayarla**’yı seçin, açılan listeden bir profil seçin ve daha sonra **Kaydet**’e tıklayın. Profil, bu belirteçle kaydedilen tüm cihazlara uygulanacaktır.
 
 ## <a name="distribute-devices"></a>Cihazları dağıtma
-Apple ve Intune arasında eşitlemeyi ve yönetimi etkinleştirdiniz ve DEP cihazlarınızın kaydolmasına izin vermek için bir profil atadınız. Artık cihazları kullanıcılara dağıtabilirsiniz. Kullanıcı benzeşimli cihazlar, her kullanıcıya bir Intune lisansı atanmasını gerektirir. Kullanıcı benzeşimi olmayan cihazlar, cihaz lisansı gerektirir. Etkinleştirilmiş bir cihaz, silinene kadar bir kayıt profili uygulayamaz.
+Yönetim ve Apple ve Intune arasında eşitlemeyi etkinleştirdiniz ve cihazlarınızı kaydetme izin vermek için bir profil atadınız. Artık cihazları kullanıcılara dağıtabilirsiniz. Kullanıcı benzeşimli cihazlar, her kullanıcıya bir Intune lisansı atanmasını gerektirir. Kullanıcı benzeşimi olmayan cihazlar, cihaz lisansı gerektirir. Etkinleştirilmiş bir cihaz, silinene kadar bir kayıt profili uygulayamaz.
 
 ## <a name="renew-a-dep-token"></a>DEP belirtecini yenileme  
 1. deploy.apple.com adresine gidin.  

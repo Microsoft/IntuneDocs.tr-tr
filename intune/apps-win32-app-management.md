@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 11/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ef26e42b2e500d841aa32fa6239e6970e0cfb577
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187303"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728999"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
@@ -186,7 +186,7 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
     - **Özel algılama betiği kullan** – Bu uygulamayı algılamak için kullanılacak PowerShell betiğini belirtin. 
     
         1.  **Betik dosyası** – İstemcide uygulamanın varlığını algılayacak PowerShell betiğini seçin. Betik hem 0 değerinde çıkış kodu döndürdüğünde hem de STDOUT'a bir dize değeri yazdığında uygulama algılanır.
-        2.  **Betiği 64 bitlik istemcilerde 32 bitlik işlem olarak çalıştır** - Betiği oturum açmış olan son kullanıcının kimlik bilgilerini kullanarak çalıştırmak için **Evet**'i seçin. Betiği sistem bağlamında çalıştırmak için **Hayır**'ı (varsayılan) seçin.
+        2.  **Komut dosyası 64 bitlik istemcilerde 32 bitlik işlem olarak çalıştır** - seçin **Evet** oturum açan son kullanıcı kimlik bilgilerini kullanarak betiği çalıştırmak için. Betiği sistem bağlamında çalıştırmak için **Hayır**'ı (varsayılan) seçin.
         3.  **Betik imzası denetimini zorla** - Betiğin güvenilen bir yayımcı tarafından imzalandığını doğrulamak için **Evet**'i seçin. Bu doğrulama betiğin hiçbir uyarı veya istem gösterilmeden çalıştırılmasına olanak tanır. Betik engellenmeden çalıştırılır. Betiği imza doğrulaması yapılmadan son kullanıcının onayıyla çalıştırmak için **Hayır**'ı (varsayılan) seçin.
     
         Intune sepeti betikten gelen sonuçları denetler. Betik tarafından standart çıkış (STDOUT) akışına, standart hata (STDERR) akışına ve çıkış koduna yazılan değerleri okur. Betikten sıfırdan farklı bir değerle çıkılırsa, betik başarısız olur ve uygulama algılama durumu Yüklü Değil olur. Çıkış kodu sıfırsa ve STDOUT veri içeriyorsa, uygulama algılama durumu Yüklü'dür. 
@@ -200,7 +200,7 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 
 1.  **Uygulama ekle** bölmesinde **Dönüş kodları**'nı seçerek, uygulama yüklemesi yeniden deneme davranışını veya yükleme sonrası davranışını belirtmek için kullanılan dönüş kodlarını ekleyin. Dönüş kodu girdileri varsayılan olarak uygulama oluşturma işlemi sırasında eklenir. Bununla birlikte, başka dönüş kodları ekleyebilir veya mevcut dönüş kodlarını değiştirebilirsiniz. 
 2.  **Dönüş kodları** bölmesinde, başka dönüş kodları ekleyin veya mevcut dönüş kodlarında değişiklik yapın.
-    - **Başarısız** – Uygulama yüklemesinin başarısız olduğunu belirten dönüş kodu.
+    - **Başarısız** – bir uygulama yükleme hatası gösteren dönüş değeri.
     - **Donanımdan önyükleme** – Donanımdan önyükleme dönüş kodu, istemcide önyükleme yapılmadan sonraki Win32 uygulamalarının yüklenmesine izin vermez. 
     - **Yazılımdan önyükleme** – Yazılımdan önyükleme dönüş kodu, istemci önyüklemesine gerek kalmadan sonraki Win32 uygulamasının yüklenmesine izin verir. Geçerli uygulamanın yüklemesini tamamlamak için önyükleme gereklidir.
     - **Yeniden deneme** – Yeniden deneme dönüş koduyla aracı uygulamayı yüklemeyi üç kez dener. Her denemeden sonra 5 dakika bekler. 
@@ -228,15 +228,19 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 
 Bu noktada Intune'a Win32 uygulaması ekleme adımlarını tamamlamış oldunuz. Uygulama atama ve izleme hakkında bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](https://docs.microsoft.com/intune/apps-deploy) ve [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](https://docs.microsoft.com/intune/apps-monitor).
 
+## <a name="delivery-optimization"></a>Teslim iyileştirme
+
+Windows 10 RS3 ve üzerindeki istemciler Windows 10 istemci üzerinde bir teslim iyileştirme bileşenini kullanarak Intune Win32 uygulama içeriği karşıdan yükler. Teslim iyileştirme, varsayılan olarak açık eşler arası işlevsellik sağlar. Dağıtım iyileştirme Grup İlkesi ve gelecek Intune MDM aracılığıyla yapılandırılabilir Daha fazla bilgi için [Windows 10 için teslim iyileştirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Gerekli ve kullanılabilir uygulamaları cihazlara yükleme
 
-Son kullanıcı gerekli ve kullanılabilir uygulama yüklemeleriyle ilgili Windows Bildirimleri görecektir. Aşağıdaki resimde, cihaz yeniden başlatılana kadar uygulama yüklemesinin tamamlanmayacağına ilişkin bildirim örneği gösterilir. 
+Son kullanıcı gerekli ve kullanılabilir uygulama yüklemeleri için Windows kutlama bildirimleri görürsünüz. Aşağıdaki resimde, cihaz yeniden başlatılana kadar uygulama yüklemesinin tamamlanmayacağına ilişkin bildirim örneği gösterilir. 
 
 ![Uygulama yüklemesiyle ilgili Windows bildirimleri örneğinin ekran görüntüsü](./media/apps-win32-app-08.png)    
 
-Aşağıdaki resimde, son kullanıcıya cihazda uygulama değişiklikleri yapıldığı bildirilir.
+Aşağıdaki görüntüde, cihaza uygulama değişiklikler yapılmıştır son kullanıcıyı uyarır.
 
-![Son kullanıcıya cihazda uygulama değişiklikleri yapıldığı bildirme örneğinin ekran görüntüsü](./media/apps-win32-app-09.png)    
+![Son kullanıcının cihaza uygulama değişiklikler yapılmıştır bildiren örnek ekran görüntüsü](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 uygulamasında sorun giderme
 İstemci makinesindeki aracı günlükleri genellikle `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` yolunda bulunur. Bu günlük dosyalarını görüntülemek için `CMTrace.exe` dosyasından yararlanabilirsiniz. *CMTrace.exe*, [SCCM İstemci Araçları](https://docs.microsoft.com/sccm/core/support/tools)'ndan indirilebilir. 

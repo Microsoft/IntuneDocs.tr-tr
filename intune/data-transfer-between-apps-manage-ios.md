@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d5a2bc0939da5ee4cb35585a930f145b832a58ad
-ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
+ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281114"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728676"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 
@@ -38,7 +38,7 @@ iOS cihazları için **Yönetimde açma** özelliği, dosya aktarımlarını yal
 
 -   **Herhangi bir MDM çözümüyle yönetilmeyen, çalışana ait cihazlar:** Uygulama koruma ilkesi ayarlarını **Uygulamanın yalnızca İlkeyle Yönetilen uygulamalara veri aktarmasına izin ver** olarak belirleyebilirsiniz. *Açma* davranışı ilke ile yönetilen bir uygulamada yalnızca diğer ilkeyle yönetilen uygulamalara paylaşmak için seçenekleri sunar. Bir kullanıcı, ilkeyle korunan bir dosyayı yerel posta uygulaması onedrive'dan bir ek olarak göndermeye çalışırsa, dosya okunamaz durumda.
 
--   **Intune tarafından yönetilen cihazlar:** Intune’a kayıtlı cihazlar için uygulama koruma ilkelerine sahip uygulamalarla Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları arasında veri aktarımına otomatik olarak izin verilir. Diğer uygulamalara veri aktarımına izin nasıl istediğinizi belirtmek için etkinleştirin **uygulamanın diğer uygulamalara veri aktarmasına izin ver** paylaşımı, tercih edilen düzeyini seçin. Bir uygulamanın diğer uygulamalardan veri almasına izin vermek nasıl istediğinizi belirtmek için etkinleştirin **uygulamanın diğer uygulamalardan veri almasına izin ver** veri almak, tercih edilen düzeyini seçin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz. Uygulama verilerinin alınması ve paylaşılması hakkında daha fazla bilgi için bkz. [Verileri yeniden konumlandırma ayarları](app-protection-policy-settings-ios.md#data-relocation-settings).   
+-   **Intune tarafından yönetilen cihazlar:** Intune’a kayıtlı cihazlar için uygulama koruma ilkelerine sahip uygulamalarla Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları arasında veri aktarımına otomatik olarak izin verilir. Diğer uygulamalara veri aktarımına izin nasıl istediğinizi belirtmek için etkinleştirin **uygulamanın diğer uygulamalara veri aktarmasına izin ver** paylaşımı, tercih edilen düzeyini seçin. Bir uygulamanın diğer uygulamalardan veri almasına izin vermek nasıl istediğinizi belirtmek için etkinleştirin **uygulamanın diğer uygulamalardan veri almasına izin ver** veri almak, tercih edilen düzeyini seçin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz. Uygulama verilerinin alınması ve paylaşılması hakkında daha fazla bilgi için bkz. [Verileri yeniden konumlandırma ayarları](app-protection-policy-settings-ios.md#data-protection-settings).   
 
 -   **Bir üçüncü taraf MDM çözümü tarafından yönetilen cihazlar:** iOS kullanarak veri aktarımını yalnızca yönetilen uygulamalarla kısıtlayabilirsiniz **yönetimde açma** özelliği.
 Bir üçüncü taraf MDM çözümünüzü kullanarak dağıttığınız uygulamalar da Intune uygulama koruma ilkeleri ile ilişkili olduğundan emin olmak için Kullanıcı UPN ayarını aşağıdaki bölümde anlatılan şekilde yapılandırın [Kullanıcı UPN ayarını yapılandırma](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Uygulamalar Kullanıcı UPN ayarı ile dağıttığınızda, kullanıcı iş hesabını kullanarak oturum açtığında, uygulama koruma ilkeleri uygulamaya uygulanır.
@@ -50,9 +50,9 @@ Kullanıcı UPN ayarını yapılandırmak, Intune veya üçüncü taraf EMM çö
 
 2.  Uygulamaları ve yönetilen Intune veya aşağıdaki Genelleştirilen adımları kullanarak, üçüncü taraf MDM çözümünüz istediğiniz e-posta profilini dağıtın. Bu deneyimi de kapsamına giren *örnek 1*.
 
-3.  Uygulamayı, aşağıdaki uygulama yapılandırma ayarlarıyla dağıtın:
+3.  Uygulamayı şu uygulama yapılandırma ayarlarıyla dağıtın:
 
-      **anahtar** = IntuneMAMUPN,  **değer** = <username@company.com>
+      **anahtar** = ıntunemamupn, **değeri** = <username@company.com>
 
       Örnek: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -65,7 +65,7 @@ Kullanıcı UPN ayarını yapılandırmak, Intune veya üçüncü taraf EMM çö
 
 2. Uygulama Yapılandırması bölümünde aşağıdaki ayarı girin:
 
-   **anahtar** = IntuneMAMUPN,  **değer** = <username@company.com>
+   **anahtar** = ıntunemamupn, **değeri** = <username@company.com>
 
    Anahtar/değer çiftinin tam söz dizimi, üçüncü taraf MDM sağlayıcınıza göre farklılık gösterebilir. Aşağıdaki tabloda, üçüncü taraf MDM sağlayıcıları örnekleri ve anahtar/değer çifti için girmeniz tam değerlerini gösterir.
 

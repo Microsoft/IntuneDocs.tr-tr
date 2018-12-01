@@ -16,12 +16,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fbe8cc0fc3e835ee5807dfbe56ea1aa3c728547e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 542efda11e6d1c6b61f8cbc08ea6c29e36e1f8fc
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184735"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728727"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Microsoft Intune için erken sürüm - Kasım 2018
 
@@ -45,30 +45,14 @@ Bu sayfa düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha 
 ### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Şirkete ait, denetimli iOS cihazlarından uygulamaları kaldırma <!-- 1281677 -->
 Şirkete ait, denetimli iOS cihazlarından herhangi bir uygulamayı kaldırabileceksiniz. **Kaldırma** atama türüyle kullanıcı veya cihaz gruplarını hedefleyerek herhangi bir uygulamayı kaldırabilirsiniz. Kişisel veya denetimsiz iOS cihazlarında yalnızca Intune kullanarak yüklenen uygulamaları kaldırabilirsiniz.
 
-### <a name="track-installation-of-office-proplus---2620217--"></a>Office ProPlus yüklemesini izleme <!--2620217-->
-[Kayıt Durumu Sayfasını](windows-enrollment-status.md) kullanarak [Office ProPlus](apps-add-office365.md) yüklemesinin durumunu izleyebilirsiniz.
-
 ### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133--"></a>Apple School Manager hesapları için macOS Aygıt Kayıt Programı desteği <!--3006133-->
 Intune, Apple School Manager hesapları için macOS cihazlarında Aygıt Kayıt Programı kullanımını destekleyecektir.
-
-### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Değişiklikleri yapmak için Android cihazlarda bilgi noktası modunu geçici olarak duraklatma <!-- 3041935 -->
-Android cihazlarını çok uygulamalı bilgi noktası modunda kullanırken bir BT uzmanının cihazda değişiklikler yapması gerekebilir. BT Yöneticisinin PIN kullanarak geçici olarak bilgi noktası modunu duraklatmasını ve cihazın tamamına erişmesini sağlayan yeni bir çok uygulamalı bilgi noktası ayarı.
-Geçerli bilgi noktası ayarlarını görmek için bkz. [Android bilgi noktası ayarları](android-kiosk-settings.md).
 
 ### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Yönetilen Giriş Ekranı uygulamasında özel arka plan ayarlama  <!-- 3041945 -->
 Android Kurumsal çok uygulamalı bilgi noktası modu cihazlarında Yönetilen Giriş Ekranı arka planının görünümünü özelleştirmenizi sağlayan bir ayar ekleyeceğiz.  **Özel URL arka planı**’nı yapılandırmak için Azure portalı > Cihaz yapılandırması’ndaki Intune’a gidin. Geçerli cihaz yapılandırma profilini seçin veya bilgi noktası ayarlarını yapılandırmak için yeni profil oluşturun.
 
-### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Android Kurumsal bilgi noktası cihazlarında sanal giriş düğmesini etkinleştirme  <!-- 3042021 -->
-Yeni bir ayar, kullanıcıların Yönetilen Giriş Ekranı uygulaması ve çok uygulamalı bilgi noktası cihazlarındaki diğer atanan uygulamalar arasında bir yazılım tuşuna dokunarak geçiş yapmalarını sağlar. Bu ayar, özellikle kullanıcının bilgi noktası uygulaması “geri” düğmesine uygun şekilde yanıt vermediği durumlarda yararlı olur. Bu ayarı şirkete ait, tek kullanımlı Android cihazlarında yapılandırabilirsiniz. **Sanal giriş düğmesi**’ni etkinleştirmek veya devre dışı bırakmak için Azure portalı > Cihaz yapılandırması’ndaki Intune’a gidin. Geçerli cihaz yapılandırma profilini seçin veya bilgi noktası ayarlarını yapılandırmak için yeni profil oluşturun.
-
-### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Uygulama koruma ilkesi atamasını kaydetme ve uygulama <!-- 3104570 -->
-Uygulama koruma ilkesi atamalarınız üzerinde daha iyi bir denetime sahip olacaksınız. Uygulama koruma ilkesi atamalarınızı kaydedip uygulayarak yalnızca hedeflenen kullanıcıların bir uygulama koruma ilkesi tarafından etkilenmesini sağlarsınız.
-
 ### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Windows 10 ve üzeri için yeni Microsoft Edge tarayıcı ayarları <!-- 3174639 -->
 Cihazlarınızda Microsoft Edge tarayıcısını denetlemenize ve yönetmenize yardımcı olan yeni bir ayar eklenecektir. Geçerli ayarların listesi için bkz. [Windows 10 (ve üzeri) için cihaz kısıtlaması](device-restrictions-windows-10.md#microsoft-edge-browser).
-
-### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Kayıt Durumu Sayfasıda izlenen uygulamaları seçme <!-- 2531007 -->
-Kayıt Durumu Sayfasıda hangi uygulamaların izlendiğini seçebileceksiniz.
 
 ### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune uygulama koruma ilkeleri kullanıcı arabirimi güncelleştirmesi <!-- 3251427 -->
 
@@ -108,11 +92,6 @@ Gerek Android gerekse iOS cihazlarında Web içeriği için uygulama ilke ayarla
 
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Başka bir MDM tarafından kullanılan Apple VPP belirteci <!-- 1488946 -->
 Bir Apple toplu satın alınan program (VPP) belirteci hem Intune hem de başka bir MDM tarafından kullanıldığında Intune bunu algılayacak ve ayrıntıları gösterecek.
-
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>iOS ve macOS sürüm numaraları ve derleme numaraları, uyumluluk ilkelerinde kullanılabilir <!-- 1892471 -->
-**Cihaz uyumluluğu** > **Cihaz uyumluluğu**’nda iOS ve macOS işletim sistemi sürümleri gösteriliyor ve uyumluluk ilkelerinde kullanılabilir durumda. Gelecek bir güncelleştirme ile her iki platform için derleme numarası da yapılandırılabilir olacaktır.
-
-Güvenlik güncelleştirmeleri kullanıma sunulduğunda Apple genellikle sürüm numarasını olduğu gibi bırakır ancak derleme numarasını güncelleştirir. Bir uyumluluk ilkesinde derleme numarasını kullanarak güvenlik açığı güncelleştirmesinin yüklenip yüklenmediğini kolayca denetleyebilirsiniz.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Cihaz uyumluluk panosunda kullanımdan kaldırılan cihazlar <!-- 1981119 -->
 Gelecek bir güncelleştirme ile kullanımdan kaldırılan cihazlar uyumluluk panosundan da kaldırılacak. Bu durum, uyumluluk numaralarınızı değiştirecek.

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d35ecbb830af7df2f81e2e9412eef8e7a252cbe
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 3d10962db06230341b0faf41431355e123b69e8f
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630043"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728863"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
-İlke ayarlarının, verileri yeniden konumlandırma ayarları ve erişim ayarları olmak üzere iki kategorisi vardır. Bu makalede *ilkeyle yönetilen uygulamalar* terimi, uygulama koruma ilkeleriyle yapılandırılan uygulamaları ifade eder.
+İlke ayarlarının iki kategorisi vardır: veri koruma ayarları ve erişim ayarları. Bu makalede *ilkeyle yönetilen uygulamalar* terimi, uygulama koruma ilkeleriyle yapılandırılan uygulamaları ifade eder.
 
-##  <a name="data-relocation-settings"></a>Verileri yeniden konumlandırma ayarları
+##  <a name="data-protection-settings"></a>Veri koruma ayarları
 
 | Ayar | Nasıl kullanılır? | Varsayılan değer (veya değerler) |
 |------|------|------|

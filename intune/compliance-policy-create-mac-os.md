@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 469c0b7c3e67135c53de7c58583d820e1750ad7f
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184191"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728812"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune ile macOS cihazlara cihaz uyumluluk ilkesi ekleme
 
@@ -49,7 +49,8 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 ## <a name="create-a-device-compliance-policy"></a>Cihaz uyumluluğu ilkesi oluşturma
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **Platform** olarak **macOS**’u seçin. **Ayarları Yapılandır**’ı seçin ve **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını girin. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
+4. **Platform** olarak **macOS**’u seçin. 
+5. Seçin **ayarlarını yapılandırma**girin **cihaz sistem durumu**, **cihaz özelliklerini**, ve **sistem güvenliği** ayarları açıklanmıştır Bu makalede. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
 
 ## <a name="device-health"></a>Cihaz Sistem Durumu
 
@@ -59,6 +60,8 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 - **En düşük işletim sistemi sürümü**: Cihaz, en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Son kullanıcı, cihazını yükseltmeyi seçip şirket kaynaklarına erişebilir.
 - **En yüksek işletim sistemi sürümü**: Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. İşletim sistemine izin veren bir kural değişikliği oluncaya kadar bu cihaz şirket kaynaklarına erişemez.
+- **En düşük işletim sistemi derleme sürümü**: güvenlik güncelleştirmeleri, Apple yayımlar, yapı numarası genellikle güncelleştirilir, işletim sistemi sürümü. Cihazda bir izin verilen en düşük yapı numarası girmek için bu özelliği kullanın.
+- **En yüksek işletim sistemi derleme sürümü**: güvenlik güncelleştirmeleri, Apple yayımlar, yapı numarası genellikle güncelleştirilir, işletim sistemi sürümü. Cihazda bir izin verilen en fazla yapı numarası girmek için bu özelliği kullanın.
 
 ## <a name="system-security-settings"></a>Sistem güvenliği ayarları
 

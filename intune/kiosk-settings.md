@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7552c9c1fa8e94560505a8971143886160cff6ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 574bc38fb9ce47d2b051a74f3f931139c0de7224
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185969"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728846"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune’da Windows 10 (ve sonrası) için bilgi noktası ayarları
 
@@ -200,3 +200,5 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
+
+Bilgi noktası profilleri de oluşturabilirsiniz [Android](device-restrictions-android.md#kiosk) ve [Android Kurumsal](device-restrictions-android-for-work.md#kiosk-settings) cihazlar.

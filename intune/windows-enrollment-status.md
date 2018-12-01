@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186104"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729050"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durum sayfası ayarlama
  
@@ -61,6 +61,16 @@ Bir cihaz veya kullanıcı, birden fazla grupta bulunabilir ve birden fazla kay�
 2. Listede profilin üzerine gelin.
 3. Üç dikey noktayı kullanarak, profili listede dilediğiniz konuma sürükleyin.
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Belirli bir uygulama bir cihaza erişimi engelleme yüklenir
+
+Hangi uygulamaların kullanıcının masaüstü erişebilmeniz için önce yüklenmesi gereken belirtebilirsiniz.
+
+1. Intune'da, **cihaz kaydı** > **Windows kayıt** > **kayıt durumu sayfası (Önizleme)**.
+2. Bir profili seçin > **ayarları**.
+3. Seçin **Evet** için **Göster uygulama ve profil yükleme ilerleme durumu**.
+4. Seçin **Evet** için **tüm uygulamalar ve Profiller yüklenene kadar cihaz kullanımını engelle**.
+5. Seçin **seçili** için **bu uygulamaları yüklü kullanıcı/cihaz atanmışsa gerekli kadar cihaz kullanımını engelle**.
+ 6. Seçin **uygulamaları Seç** > uygulamalar'ı seçin > **seçin** > **Kaydet**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Kayıt durumu sayfası izleme bilgileri
 
