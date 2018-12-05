@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189206"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861022"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -81,7 +81,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 
 |Veri türü|iOS|
 |-------------|-------|
-|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|Uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.<br /><br />Mobil uygulama yönetimini kullanan Microsoft uygulamalarından gelen uygulama verileri kaldırılır. Uygulama kaldırılmaz.|
+|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket portalını kullanarak yüklenen uygulamalar:** tüm uygulama verileri ve uygulamaları kaldırılır. Bu uygulamaları App Store ' başlangıçta yüklenen ve daha sonra şirket uygulamalarını yönetilen uygulamaları içerir. <br /><br /> **Mobil uygulama yönetimi kullanan ve App Store ' yüklenen Microsoft uygulamaları:** kişisel uygulama verileri kaldırılır. Şirket uygulama verilerini ve uygulamaları kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|

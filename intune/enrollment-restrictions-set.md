@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e813d64d3019748eed3c985dcefda744188ad850
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187846"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861039"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -123,7 +123,7 @@ Aşağıdaki adımları izleyerek bir cihaz sınırı kısıtlamasının ayarlar
 6. **Kaydet**’i seçin.
 
 
-Kullanıcılar, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görür. Örneğin, iOS'ta şöyle görünür:
+KCG kayıtları sırasında kullanıcılar, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görür. Örneğin, iOS'ta şöyle görünür:
 
 ![iOS cihazı sınır bildirimi](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

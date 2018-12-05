@@ -16,12 +16,12 @@ ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f9665c407e80fcfd7cc5d0af4c66d626d2e996e6
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189750"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861073"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -120,6 +120,8 @@ Bu bilgiler yardımcı olmadı mı? [Knox Mobil Kayıt Kullanıcı Kılavuzu](ht
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
 - **Cihaz Sahibi desteği**: Intune, Android Kurumsal kullanarak cihazların yalnızca bilgi noktası moduna kaydedilmesini destekler. Diğer Android Kurumsal cihaz sahibi modları, Intune’da kullanılabilir hale geldikçe desteklenmeye başlayacaktır.
+
+- **İş profili desteği yoktur:** KME Kurumsal cihaz kayıt yöntemi ve Android iş profiline kayıtlı cihazlar emin olun, iş ve kişisel cihazlarda kişisel verileri ayrıdır. Bu nedenle, cihaz kaydı KME kullanarak iş profiline ıntune'da desteklenen bir senaryo değildir.
 
 - **Android Kurumsal’a kaydolmak için fabrika sıfırlaması**: Önceden ayarlanmış cihazları yeniden amaçlandırıyorsanız Android Kurumsal’a kaydolurken bu cihazlarda fabrika sıfırlaması yapılması gerekir.
 

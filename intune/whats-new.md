@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 656c08fbc59b5656d4fc69c5e8e45d9d4903eab8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 939ef9d164038f795ef9c591993751425ed6e89f
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729084"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861107"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -46,6 +46,10 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 ## <a name="week-of-november-26-2018"></a>26 Kasım 2018 haftası
 
 ### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Şirkete ait, denetimli iOS cihazlarından uygulamaları kaldırma <!-- 1281677 -->
+
+Şirkete denetimli iOS cihazlarında herhangi bir uygulamayı kaldırabilirsiniz. **Kaldırma** atama türüyle kullanıcı veya cihaz gruplarını hedefleyerek herhangi bir uygulamayı kaldırabilirsiniz. Kişisel veya denetimsiz iOS cihazlarında yalnızca Intune kullanarak yüklenen uygulamaları kaldırabilirsiniz.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Intune Win32 uygulama içeriği indiriliyor <!-- 2617320 -->
 Windows 10 RS3 ve üzerindeki istemciler Windows 10 istemci üzerinde bir teslim iyileştirme bileşenini kullanarak Intune Win32 uygulama içeriği karşıdan yükler. Teslim iyileştirme, varsayılan olarak açık eşler arası işlevsellik sağlar. Dağıtım iyileştirme Grup İlkesi ve gelecek Intune MDM aracılığıyla yapılandırılabilir Daha fazla bilgi için [Windows 10 için teslim iyileştirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
@@ -72,6 +76,13 @@ Artık aşağıdaki uygulamaları ile yönetebileceğiniz [Intune uygulama korum
 
 Kurumsal veri ve kontrol veri aktarımı için Intune ilkeyle yönetilen diğer uygulamalar gibi bu uygulamaları korumak için uygulama koruma ilkelerini kullanın. Not: Akışı henüz konsolda görünür değilse, oluşturduğunuzda veya düzenlediğinizde akış ve uygulama koruma ilkeleri eklersiniz. Bunu yapmak için **+ daha fazla uygulama** seçeneğini ve ardından belirtin *uygulama kimliği* giriş alanını akış. Android kullanım için *com.microsoft.flow*, ve iOS kullanımı için *com.microsoft.procsimo*.
 
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune uygulama koruma ilkeleri kullanıcı arabirimi güncelleştirmesi <!-- 3251427 -->
+Özelliğin ayarları için etiketleri ve anlamak her kolaylaştırmak Intune uygulama koruması için düğmeler değiştirdik. Değişikliklerden bazıları şunlardır:  
+
+- Denetimleri değiştirildi **Evet** / **hiçbir** için öncelikle denetimleri **blok** / ** izin ver ** ve **devre dışı**  /  **etkinleştirme** kontrol eder. Etiketler de güncelleştirilir.  
+- Ayarları biçimlendirilir, yan yana ayarı ve etiketini olacak şekilde daha iyi Gezinti sağlamak için denetimi.   
+
+Varsayılan ayarlar ve ayar aynı kalır, ancak bu değişiklik anlamak, kodlarda gezinin ve seçili uygulama koruma ilkeleri kolayca uygulamak için daha fazla ayarları kullanmasına izin verir.
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
@@ -97,7 +108,10 @@ Artık, Autopilot cihazları seri numarasına göre arayabilirsiniz. Bunu yapmak
 Kullanıcılar, yükleme işleminin ilerlemesini izleyebilirsiniz [Office ProPlus](apps-add-office365.md) kullanarak [kayıt durumu sayfası](windows-enrollment-status.md). Daha fazla bilgi için [ayarlama bir kayıt durumu sayfası](windows-enrollment-status.md).
 
 #### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>Süresi dolan VPP belirteci veya yetersiz Şirket portalı lisansı uyarıları <!-- 2237572 -->
-Intune Şirket portalı DEP kaydı sırasında önceden sağlamak için Volume Purchase Program (VPP) kullanıyorsanız, VPP belirtecinin süresi dolmak üzere olduğunda ve Şirket portalı için lisans azalıyor uyaracaktır. Daha fazla bilgi için [Apple School Manager ile macOS cihazlara veya cihaz kayıt programı otomatik olarak kaydetme](device-enrollment-program-enroll-macos.md).
+Intune Şirket portalı DEP kaydı sırasında önceden sağlamak için Volume Purchase Program (VPP) kullanıyorsanız, VPP belirtecinin süresi dolmak üzere olduğunda ve Şirket portalı için lisans azalıyor uyaracaktır.
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133---"></a>Apple School Manager hesapları için macOS Aygıt Kayıt Programı desteği <!--3006133 -->
+Intune macOS cihazları için Apple School Manager hesabı cihaz kayıt programı kullanarak destekler.  Daha fazla bilgi için [Apple School Manager ile macOS cihazlara veya cihaz kayıt programı otomatik olarak kaydetme](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Yeni Intune cihaz Aboneliği SKU <!--3312071-->
 Kuruluşlarda cihaz yönetim maliyetini düşürmeye yardımcı olmak için yeni, cihaz tabanlı bir abonelik SKU’su kullanıma sunulmuştur. Bu Intune cihaz SKU’su cihaz başına aylık olarak lisanslandırılır. Fiyat ise lisanslama programına göre değişir. Direct Channel, Kurumsal Anlaşma (EA), Microsoft Ürün ve Hizmetleri Programı (MPSA) ve Açık ve Bulut Çözümü Sağlayıcısı (CSP) ortamlarında bulunabilir.
@@ -214,9 +228,6 @@ Intune uygulama koruma ilkeleri, Microsoft Outlook ve Microsoft Word gibi Intune
 - **Koşullu başlatma** - Bu grup en düşük işletim sistemi ayarları, jailbreak uygulanmış ve kök erişim izni verilmiş cihazları algılama ve çevrimdışı yetkisiz kullanım süreleri gibi ayarları içerir.  
   
 Ayarların işlevselliği değişmedi, ancak ilke yazma akışında çalışırken bu ayarları bulmanız artık daha kolay.
-
-### <a name="new-intune-device-subscription-sku---3312071--"></a>Yeni Intune cihaz aboneliği SKU’su !--3312071-->
-Kuruluşlarda cihaz yönetim maliyetini düşürmeye yardımcı olmak için yeni, cihaz tabanlı bir abonelik SKU’su kullanıma sunulmuştur. Bu Intune cihaz SKU’su cihaz başına aylık olarak lisanslandırılır. Fiyat ise lisanslama programına göre değişir. Direct Channel, Kurumsal Anlaşma (EA), Microsoft Ürün ve Hizmetleri Programı (MPSA) ve Açık ve Bulut Çözümü Sağlayıcısı (CSP) ortamlarında bulunabilir.
 
 ### <a name="intune-apps"></a>Intune uygulamaları
 
@@ -1151,6 +1162,8 @@ Daha fazla bilgi için bkz. [Şirket Portalı uygulaması ile macOS cihazınız�
  
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Değişiklik Planı: Premier müşteriler için yeni Intune destek deneyimi 
+12/4/18 güncelleştirme: destek isteği oluşturma MPO de aralık 3 ancak daha sonraki bir tarihte bunun yerine devre dışı bırakılır değil için bu işlemi daha iyi hale getirmek çalışıyoruz. İleti Merkezi biliyor ve kısa süre içinde bu değişikliğin zaman çizelgeleri paylaşmak için bu gönderiyi güncelleştirmenize vereceğiz.
+
 Bir Microsoft Premier müşterisi olarak şu anda Microsoft Premier Online (MPO) portalını (premier.microsoft.com) ve Azure’da Intune’u (portal.azure.com) kullanarak Intune için destek istekleri oluşturabilirsiniz. 3 Aralık 2018 itibarıyla Premier destek deneyimini geliştirmeye devam etmek adına yalnızca Azure’da Intune ile destek istekleri oluşturabileceksiniz.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?

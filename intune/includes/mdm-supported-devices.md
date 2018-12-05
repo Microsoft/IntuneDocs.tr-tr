@@ -26,7 +26,7 @@
 - Windows Phone 8.1, Windows 8.1 RT, Windows 8.1 (Sürdürme modu) çalıştıran bilgisayarlar
 
 > [!NOTE]
-> Intune Windows Server işletim sistemlerini yönetmek için kullanılamaz.
+> Intune Windows Server işletim sistemlerini yönetmek için kullanılamaz. Giriş SKU tüm Intune özelliklerini desteklemiyor
 
 Enterprise Management + Security (EMS) kullanan müşteriler ayrıca [Azure Active Directory’yi (Azure AD) kullanarak Windows 10 cihazları kaydedebilirler](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
