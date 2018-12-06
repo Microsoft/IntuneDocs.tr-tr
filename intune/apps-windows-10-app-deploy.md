@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184633"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977295"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı 
 
@@ -49,7 +49,7 @@ Uygulama türüne bağlı olarak, uygulama Windows 10 cihazına iki yoldan biriy
     - Modern iş kolu uygulamaları ve İş için Microsoft Store uygulamaları (hem çevrimiçi hem de çevrimdışı) kullanıcı bağlamında dağıtılabilir ve hem Gerekli hem de Kullanılabilir amacını destekler.
     - **Kullanıcı Modu** veya **İkili Mod** olarak oluşturulan Win32 uygulamaları kullanıcı bağlamında dağıtılabilir ve hem **Gerekli** hem de **Kullanılabilir** amaçlarını destekler. 
 - **Cihaz Bağlamı**: Uygulama cihaz bağlamında dağıtılırsa, yönetilen uygulama Intune tarafından doğrudan cihaza yüklenir.
-    - Yalnızca modern iş kolu uygulamaları ve İş için Microsoft Store uygulamaları cihaz bağlamında dağıtılabilir ve yalnızca Gerekli amacını destekler.
+    - Yalnızca modern iş kolu satır uygulama ve iş kolu uygulamaları için çevrimdışı lisanslı Microsoft Store cihaz bağlamında dağıtılabilir ve yalnızca gerekli hedefini destekler.
     - **Makine Modu** veya **İkili Mod** olarak oluşturulan Win32 uygulamaları kullanıcı bağlamında dağıtılabilir ve yalnızca **Gerekli** amacını destekler.
 
 > [!NOTE]

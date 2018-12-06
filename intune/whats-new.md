@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 939ef9d164038f795ef9c591993751425ed6e89f
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 54aa1bef0e7877fea38c54c6b6bf02674c989eaf
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861107"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977448"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -114,7 +114,7 @@ Intune Şirket portalı DEP kaydı sırasında önceden sağlamak için Volume P
 Intune macOS cihazları için Apple School Manager hesabı cihaz kayıt programı kullanarak destekler.  Daha fazla bilgi için [Apple School Manager ile macOS cihazlara veya cihaz kayıt programı otomatik olarak kaydetme](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Yeni Intune cihaz Aboneliği SKU <!--3312071-->
-Kuruluşlarda cihaz yönetim maliyetini düşürmeye yardımcı olmak için yeni, cihaz tabanlı bir abonelik SKU’su kullanıma sunulmuştur. Bu Intune cihaz SKU’su cihaz başına aylık olarak lisanslandırılır. Fiyat ise lisanslama programına göre değişir. Direct Channel, Kurumsal Anlaşma (EA), Microsoft Ürün ve Hizmetleri Programı (MPSA) ve Açık ve Bulut Çözümü Sağlayıcısı (CSP) ortamlarında bulunabilir.
+Kuruluşlarda cihaz yönetim maliyetini düşürmeye yardımcı olmak için yeni, cihaz tabanlı bir abonelik SKU’su kullanıma sunulmuştur. Bu Intune cihaz SKU’su cihaz başına aylık olarak lisanslandırılır. Fiyat ise lisanslama programına göre değişir. Office Yönetim Portalı aracılığıyla doğrudan ve aracılığıyla kullanılabilir [Kurumsal Anlaşma](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA) [Microsoft Products and Services sözleşmesi](https://www.microsoft.com/licensing/mpsa/default) (MPSA) [Microsoft açık anlaşmaları ](https://partner.microsoft.com/licensing/licensing-agreements), ve [bulut çözümü sağlayıcısı](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
 
 ### <a name="device-management"></a>Cihaz yönetimi
 

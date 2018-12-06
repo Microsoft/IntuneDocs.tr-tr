@@ -16,12 +16,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 24cc45f8f769d08c083bdddc27a12900613b98b0
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: 4110f1298ffa3e8497463d4751bc711a6c19baf1
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887160"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977380"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Erken sürüm Microsoft Intune - aralık 2018'e
 
@@ -70,9 +70,6 @@ Windows Şirket portalı uygulamasında yeni bir sayfa eklenir. Yardım ve Deste
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Windows 10 cihazlarda VPN profilleri için güvenilen Ağ algılama kullanın <!-- 1500165 -->
 Güvenilen ağ algılama kullanırken, VPN profilleri kullanıcı zaten güvenilen bir ağda olduğunda otomatik olarak bir VPN bağlantısı oluşturmasını önlemek mümkün olacaktır. Windows 10 çalıştıran cihazlarda güvenilen Ağ algılama etkinleştirmek için DNS soneklerini eklemek için ve sonraki sürümler (**cihaz Yapılandırması** > **profilleri**  >   **Profil oluşturma** > **Windows 10 ve üzeri** Platform > **VPN** profil türü için).
 [Windows 10 VPN ayarları](vpn-settings-windows-10.md) geçerli VPN ayarlarını listeler.
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>Şirkete ait ve tamamen yönetilen Android cihazları için destek <!-- 574342 -->
-Intune, tam olarak yönetilen Android cihazları, bir kuruluşa ait destekleyeceği yeri sıkı bir şekilde tarafından yönetilen cihazları "cihaz sahibi" senaryo BT ve tek tek kullanıcılarla bağlı. Bu durum, yöneticilerin tüm cihazı yönetebilir, ilke denetimlerini iş profilleri kullanılamaz genişletilmiş bir aralığını zorla olanak sağlar ve kullanıcıları, yalnızca yönetilen Google Play uygulamaları yüklemek için sınırlar. Ayarlamak için Android tam olarak yönetilen cihazlar, Git **cihaz kaydı** > **Android kaydını** > **şirkete, tam olarak yönetilen kullanıcı cihazları**.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune uygulama SDK'sı, 256 bit şifreleme anahtarları destekleyecek <!-- 1832174 -->
 Şifreleme uygulama koruma ilkeleri tarafından etkinleştirilmişse iOS için Intune uygulama SDK'sı, 256 bit şifreleme anahtarları kullanır. SDK'sı, 128 bit anahtar içeriği ve eski SDK sürümleri kullanan uygulamalar ile uyumluluk için destek sağlamak üzere devam eder.

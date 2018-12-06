@@ -5,22 +5,22 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183477"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977346"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Hızlı Başlangıç: Windows 10 cihazınızı kaydetme
 
@@ -29,7 +29,7 @@ Bu hızlı başlangıçta önce bir Intune kullanıcısı rolünü üstlenecek v
 Windows 10 cihazlarınızı Microsoft Intune'a kaydederek e-postalar, dosyalar ve diğer kaynaklar gibi kuruluşunuzun güvenli verilerine erişebilirsiniz. Bu durum hem Windows 10 masaüstü hem de Windows 10 Mobile cihazlar için geçerlidir. Cihazlarınızı kaydetmeniz hem sizin hem de kuruluşunuz için güvenli erişim sağlamanıza ve iş verilerinizi kişisel verilerinizden ayırmanıza yardımcı olur.
 
 > [!TIP]
-> [Cihazınızı Intune'a kaydettiğinizde](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) neler olacağını ve [cihazınızdaki bilgilerin](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) nasıl etkileneceğini öğrenin.
+> [Cihazınızı Intune'a kaydettiğinizde](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) neler olacağını ve [cihazınızdaki bilgilerin](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) nasıl etkileneceğini öğrenin.
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](free-trial-sign-up.md).
 
@@ -58,7 +58,7 @@ Windows 10 Masaüstü cihazınızı kaydetmeden önce yüklü olan Windows sür�
 4. Windows 10’un **Sürüm** bölümünün **1607 veya üzeri** olduğunu onaylayın.
 
     > [!IMPORTANT]
-    > Bu hızlı başlangıçta sunulan adımlar Windows 10 **1607 veya üzeri** sürümler içindir, **1511 veya daha düşük** sürüme sahipseniz [şu adımları](/intune-user-help/enroll-your-w10-device-your-account.md) izleyin.
+    > Bu hızlı başlangıçta sunulan adımlar Windows 10 **1607 veya üzeri** sürümler içindir, **1511 veya daha düşük** sürüme sahipseniz [şu adımları](/intune-user-help/enroll-your-w10-device-your-account) izleyin.
 
 ## <a name="enroll-windows-10-desktop"></a>Windows 10 Masaüstü’nü kaydetme
 
@@ -85,7 +85,7 @@ Windows 10 Masaüstü cihazınızı kaydetmeden önce yüklü olan Windows sür�
 
    ![Yeni eklenen hesabın ekran görüntüsü](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    Önceki adımları uygulamanıza rağmen iş veya okul e-posta hesabınıza ve dosyalarınıza erişemiyorsanız, [İşe veya okula erişim görüyorsanız izlenecek sorun giderme adımları](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) bölümündeki adımları uygulayın.
+    Önceki adımları uygulamanıza rağmen iş veya okul e-posta hesabınıza ve dosyalarınıza erişemiyorsanız, [İşe veya okula erişim görüyorsanız izlenecek sorun giderme adımları](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) bölümündeki adımları uygulayın.
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Intune’da cihaz kaydınızı onaylama
 
@@ -97,11 +97,11 @@ Windows 10 Masaüstü cihazınızı kaydetmeden önce yüklü olan Windows sür�
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme
 
-Windows cihazınızın kaydını silmek için bkz. [Windows cihazınızı yönetimden kaldırma](/intune-user-help/unenroll-your-device-from-intune-windows.md).
+Windows cihazınızın kaydını silmek için bkz. [Windows cihazınızı yönetimden kaldırma](/intune-user-help/unenroll-your-device-from-intune-windows).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıçta Windows 10 cihazları Intune’a kaydetmeyi öğrendiniz. Tüm platformlar genelinde cihaz kaydetmenin başka yolları hakkında bilgi edinebilirsiniz. Cihazları Intune ile kullanma hakkında daha fazla bilgi için bkz. [İşlerinizi tamamlamak için yönetilen cihazlar kullanma](/intune-user-help/use-managed-devices-to-get-work-done.md).
+Bu hızlı başlangıçta Windows 10 cihazları Intune’a kaydetmeyi öğrendiniz. Tüm platformlar genelinde cihaz kaydetmenin başka yolları hakkında bilgi edinebilirsiniz. Cihazları Intune ile kullanma hakkında daha fazla bilgi için bkz. [İşlerinizi tamamlamak için yönetilen cihazlar kullanma](/intune-user-help/use-managed-devices-to-get-work-done).
 
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 

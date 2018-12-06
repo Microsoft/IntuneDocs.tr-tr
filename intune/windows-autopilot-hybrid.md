@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a656a53062e8529541cd067fa32bfc83aee2ea0
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189971"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977329"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Karma Azure Active Directory’ye olan katılmış cihazları Intune ve Windows Autopilot kullanarak dağıtma (Önizleme)
 Karma Azure Active Directory alanına katılmış olan cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin.
@@ -68,7 +68,7 @@ Kaydedilecek cihazlar ayrıca:
 
 Active Directory için Intune Bağlayıcısı, Şirket İçi Active Directory etki alanında Autopilot ile kaydedilen bilgisayarlar oluşturur. Intune bağlayıcısını barındıran bilgisayar, etki alanı içinde bilgisayar nesneleri oluşturma haklarına sahip olmalıdır. 
 
-Bazı etki alanlarında bilgisayarlara bilgisayar oluşturma hakkı verilmez. Ya da Yöneticiler etki alanı genelinde bilgisayar hesabı sınırını artırmak istemiyor olabilir. Bu gibi durumlarda haklar, Karma Azure Active Directory’ye katılmış olan cihazların oluşturulduğu kuruluş birimine devredilebilir.
+Bazı etki alanlarında bilgisayarlara bilgisayar oluşturma hakkı verilmez. Ayrıca, etki alanları yerleşik bir tüm kullanıcı ve bilgisayar nesneleri oluşturmak için temsilci haklarına olmayan bilgisayarlar için geçerli sınır (varsayılan değer olan 10) sahip. Bu nedenle, hakları burada hibrit Azure AD'ye katılmış cihazların kuruluş birimi Intune connector'ı barındıran bilgisayarlar için temsilci gerek oluşturulur.
 
 Bilgisayar oluşturma hakkı verilen kuruluş birimi şunlarla eşleşmelidir:
 - Etki Alanına Katılım profilinde girilen kuruluş birimi

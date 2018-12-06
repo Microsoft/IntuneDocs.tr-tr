@@ -5,23 +5,25 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730111"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977278"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Windows 10 (ve üzeri) delivery optimization ayarları Microsoft Intune
 
-Bu makale, listeler ve Windows 10 cihazlar için yapılandırabileceğiniz tüm delivery optimization ayarları açıklar. Bu ayarları bir cihaz yapılandırma profili eklendiğinde ve sonra atanan veya Microsoft Intune kullanarak cihazlarınızı dağıtılmış.
+Bu makale, listeler ve Windows 10 cihazlar için yapılandırabileceğiniz tüm delivery optimization ayarları açıklar. Bu ayarları bir cihaz yapılandırma profili eklendiğinde ve sonra atanan veya Microsoft Intune kullanarak cihazlarınızı dağıtılmış. 
+
+[Teslim iyileştirme güncelleştirmeleri](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) Windows 10 teslim iyileştirme hakkında daha fazla bilgi edinmek için harika bir kaynaktır.
 
 ## <a name="settings"></a>Ayarlar
 
