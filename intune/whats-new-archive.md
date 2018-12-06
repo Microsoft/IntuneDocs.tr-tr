@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09cd1177157897886631f804cd335ae78562a233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b06df0fea0a81757ab098ab84c17875c913eed2c
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182151"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977465"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
@@ -233,10 +233,10 @@ Daha kullanıcı dostu ve şirketinize özgü olabilmesi için Windows 10 için 
 #### <a name="new-additions-to-our-docs-about-user-privacy----1440709---"></a>Kullanıcı gizliliği belgelerimize yeni eklemeler <!-- 1440709 -->
 Kullanıcılarımıza verileri ve gizlilikleri üzerinde daha fazla denetim kazandırma çabalarımızın bir parçası olarak, Şirket Portalı tarafından yerel olarak depolanan verilerin nasıl görüntüleneceğini ve kaldırılacağını açıklayan güncelleştirmeler yayımladık. Bu güncelleştirmeleri bulabileceğiniz yerler şöyledir:
 
-- **Android**: [Android cihazınızı Intune’dan kaldırma](/intune-user-help/unenroll-your-device-from-intune-android.md)
-- **Android, kullanıcı kullanım koşullarını reddettiyse**: [“Kullanım Koşulları”nı reddettiyseniz cihaz yönetiminizi kaldırma](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
-- **iOS**: [iOS cihazınızı Intune’dan kaldırma](/intune-user-help/unenroll-your-device-from-intune-ios.md)
-- **Windows**: [Windows cihazınızı Intune’dan kaldırma](/intune-user-help/unenroll-your-device-from-intune-windows.md)
+- **Android**: [Android cihazınızı Intune’dan kaldırma](/intune-user-help/unenroll-your-device-from-intune-android)
+- **Android, kullanıcı kullanım koşullarını reddettiyse**: [“Kullanım Koşulları”nı reddettiyseniz cihaz yönetiminizi kaldırma](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **iOS**: [iOS cihazınızı Intune’dan kaldırma](/intune-user-help/unenroll-your-device-from-intune-ios)
+- **Windows**: [Windows cihazınızı Intune’dan kaldırma](/intune-user-help/unenroll-your-device-from-intune-windows)
 
 ## <a name="february-2018"></a>Şubat 2018
 
@@ -1039,7 +1039,7 @@ Dayanıklılık moduna geçtikten sonra bu uygulamalar, yalnızca kritik güvenl
 
 ### <a name="block-unsupported-samsung-knox-device-enrollment----1490695---"></a>Desteklenmeyen Samsung Knox cihaz kaydını engelleme  <!-- 1490695 -->
 
-Şirket Portalı uygulaması, yalnızca desteklenen Samsung Knox cihazları kaydetmeye çalışır. MDM kaydını önleyen Knox etkinleştirme hatalarının önüne geçmek için, yalnızca cihazın [Samsung tarafından yayınlanan cihazlar listesinde](https://www.samsungknox.com/knox-supported-devices/knox-workspace) yer aldığı durumlarda cihaz kaydı denenir. Samsung cihazların Knox destekleyen model numaraları olabilir ancak diğerlerinin olamaz. Satın alma dağıtma işlemlerinden önce, cihazınızın kurumsal bayisinden Knox uyumluluğunu doğrulayın. [Android ve Samsung Knox Standard ilke ayarları](/intune/supported-devices-browsers.md#intune-supported-web-browsers)’nda doğrulanan cihazların tam listesini bulabilirsiniz.
+Şirket Portalı uygulaması, yalnızca desteklenen Samsung Knox cihazları kaydetmeye çalışır. MDM kaydını önleyen Knox etkinleştirme hatalarının önüne geçmek için, yalnızca cihazın [Samsung tarafından yayınlanan cihazlar listesinde](https://www.samsungknox.com/knox-supported-devices/knox-workspace) yer aldığı durumlarda cihaz kaydı denenir. Samsung cihazların Knox destekleyen model numaraları olabilir ancak diğerlerinin olamaz. Satın alma dağıtma işlemlerinden önce, cihazınızın kurumsal bayisinden Knox uyumluluğunu doğrulayın. [Android ve Samsung Knox Standard ilke ayarları](supported-devices-browsers.md#intune-supported-web-browsers)’nda doğrulanan cihazların tam listesini bulabilirsiniz.
 
 ### <a name="end-of-support-for-android-43-and-lower----1171126-1326920---"></a>Android 4.3 ve altı sürümler için desteğin son bulması<!-- 1171126, 1326920 -->
 Yönetilen uygulamalar ve Android için Şirket Portalı uygulaması, şirket kaynaklarına erişim için Android 4.4 ve üzeri sürümleri gerektirecek. Aralık ayında ise tüm kayıtlı cihazlar zorla devre dışı bırakılacak ve böylece şirket kaynaklarına erişimi kaybedeceklerdir. MDM’siz uygulama koruma ilkeleri kullanıyorsanız uygulamalar güncelleştirme almayacak ve deneyimlerinin kalitesi zamanla düşecek.
@@ -1060,7 +1060,7 @@ Windows 10 için Şirket Portalı uygulaması, mobil cihazlarda aşağı çekere
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>iOS için hangi cihaz bilgilerinin görülebileceği hakkında son kullanıcıları bilgilendirme <!--739894-->
 
-iOS için Şirket Portalı’nda Cihaz Ayrıntıları ekranına   **Sahiplik Türü** ekledik. Bu, kullanıcıların doğrudan bu sayfadaki Intune son kullanıcı belgelerinden gizlilik hakkında daha fazla bilgi edinmesini sağlar. Kullanıcılar bu bilgileri Hakkında ekranında da bulabilir.
+Ekledik **sahiplik türü** iOS için şirket Portalı'nda cihaz ayrıntıları ekranına. Bu, kullanıcıların doğrudan bu sayfadaki Intune son kullanıcı belgelerinden gizlilik hakkında daha fazla bilgi edinmesini sağlar. Kullanıcılar bu bilgileri Hakkında ekranında da bulabilir.
 
 ### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>Son kullanıcıların kayıt yapmadan Android için Şirket Portalı uygulamasına erişmelerine izin verme <!---1169910--->
 
@@ -1154,7 +1154,7 @@ Intune artık iOS ve Android kaydını işletim sistemi sürüm numarasına gör
 ### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment-----1333272-1333275-1245709---"></a>Kişisel Android, iOS ve macOS cihaz kaydını kısıtlama  <!--- 1333272,  1333275, 1245709 --->
 Intune, şirket cihazı IMEI numaralarını güvenilir listeye ekleyerek kişisel cihaz kaydını kısıtlayabilir. Intune artık bu işlevi cihaz seri numarası kullanan iOS, Android ve macOS için genişletmiştir. Intune’a seri numaralarını yükleyerek cihazların şirkete ait olduğunu önceden bildirmiş olursunuz. Kayıt kısıtlamaları yoluyla kişisel (KCG) cihazları engelleyerek yalnızca şirkete ait cihazların kaydına izin verebilirsiniz. [Cihaz kaydı kısıtlamaları](enrollment-restrictions-set.md) hakkında daha fazla bilgi edinin.
 
-Seri numaralarını içeri aktarmak için **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** ’na gidin, **Ekle** ’ye tıklayın ve bir .CSV dosyası yükleyin (üst bilgi, seri numarası ve IMEI numaraları gibi ayrıntılar için iki sütun).  Kişisel cihazları kısıtlamak için **Cihaz kaydı** > **Kayıt kısıtlamaları**’na gidin. **Cihaz Türü Kısıtlamaları** altında **Varsayılan**’ı ve daha sonra **Platform Yapılandırmaları**’nı seçin. iOS, Android ve macOS kişisel cihazlar için **İzin Ver** veya **Engelle** seçeneklerinden birini belirtebilirsiniz. 
+Seri numaralarını içeri aktarmak için **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** ’na gidin, **Ekle** ’ye tıklayın ve bir .CSV dosyası yükleyin (üst bilgi, seri numarası ve IMEI numaraları gibi ayrıntılar için iki sütun). Kişisel cihazları kısıtlamak için **Cihaz kaydı**  >  **Kayıt kısıtlamaları**’na gidin. **Cihaz Türü Kısıtlamaları** altında **Varsayılan**’ı ve daha sonra **Platform Yapılandırmaları**’nı seçin. iOS, Android ve macOS kişisel cihazlar için **İzin Ver** veya **Engelle** seçeneklerinden birini belirtebilirsiniz.
 
 
 ### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>Cihazları Intune ile eşitlemeye zorlayan yeni bir cihaz eylemi <!-- 711369 -->
