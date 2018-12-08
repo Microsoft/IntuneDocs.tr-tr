@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24fb627d0fcf0fe3b24a8242d8ac22ccf6f3ff91
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181233"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032389"
 ---
-# <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
+# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> Classroom uygulaması için Intune ayarlarını Intune'da artık kullanılmıyor. Bu makale, yalnızca Intune’da mevcut eğitim profilleri olan kullanıcılar için geçerlidir.
 
 Intune, öğretmenlerin sınıfta öğrenimi yönlendirmesine ve öğrenci cihazlarını denetlemesine yardımcı olan iOS Classroom uygulamasını destekler. Classroom uygulamasına ek olarak Apple, öğrenci iPad cihazlarının, birden çok öğrenci tek bir cihazı paylaşacak şekilde yapılandırılmasını destekler. Bu belge, Intune ile bu hedefe ulaşmada size yol gösterir.
 

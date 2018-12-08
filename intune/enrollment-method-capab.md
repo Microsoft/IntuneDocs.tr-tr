@@ -1,7 +1,7 @@
 ---
-title: Windows cihazlarına için kayıt yöntemine göre Intune özellikleri
+title: Windows cihazları için Intune kayıt yöntemi özellikleri
 titlesuffix: Microsoft Intune
-description: Windows cihazları için her kayıt yönteminin hangi özellikleri desteklediğine bakın.
+description: Windows cihazlar için her bir kayıt yöntemi için özellikleri.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189818"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032138"
 ---
-# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Windows cihazlarına için kayıt yöntemine göre özellikler
+# <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Windows cihazları için Intune kayıt yöntemi özellikleri
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune; iş gücünüzün cihazları, uygulamaları ve şirket verilerinize erişimini yönetmenizi sağlar. Cihazların önce Intune hizmetine kaydedilmesi gerekir. İş gücünüzün cihazlarını kaydetmek için çeşitli yöntemler vardır. Aşağıdaki tabloda gösterildiği gibi her yöntemin farklı en iyi yöntemleri ve özellikleri vardır.
+İş gücünüzün cihazlarını Intune'a kaydetmek için çeşitli yöntemler vardır. Aşağıdaki tabloda gösterildiği gibi her yöntemin farklı en iyi yöntemleri ve özellikleri vardır.
 
 ## <a name="best-practices-by-enrollment-method"></a>Kayıt yöntemine göre en iyi yöntemler
 | **En iyi uygulamalar** | **[Azure AD'ye katılanlar](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD'ye AutoPilot ile katılanlar](enrollment-autopilot.md)** |**[Toplu](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[KCG](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |

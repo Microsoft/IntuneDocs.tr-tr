@@ -1,28 +1,32 @@
 ---
-title: Microsoft Intune - Azure’da Android iş profili cihaz kısıtlamaları | Microsoft Docs
-description: Android Kurumsal profili cihazlarda kopyalama ve yapıştırma, bildirim gösterme, uygulama izinleri, veri paylaşımı, parola uzunluğu, oturum açma hataları, kilidi açmak için parmak izi kullanma, parolaları yeniden kullanma ve iş kişileriyle Bluetooth paylaşımını etkinleştirme gibi bazı ayarları kısıtlayabilirsiniz.
+title: Android Kurumsal cihaz ayarları Microsoft Intune - Azure | Microsoft Docs
+description: Android Kurumsal veya Android for Work cihazlar, cihazın ayarlarını kısıtlamak, dahil olmak üzere kopyalama ve yapıştırma, bildirimleri, uygulama izinleri, veri paylaşımı, parola uzunluğu, Göster başarısız oturum açma, yeniden parolalar, kilidini açmak için parmak izi'ni kullanın ve bluetooth etkinleştir Work kişileriyle paylaşma. Cihazları tek bir uygulama ya da birden fazla uygulama çalıştırmak için bir bilgi noktası yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5f153e738aff28cae6481c0502f0682d10b8f104
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: c9e2e0df79625329310171c509327395989f3a7c
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729101"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032546"
 ---
-# <a name="work-device-restriction-settings-in-intune"></a>Intune'da Work cihaz kısıtlama ayarları
+# <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
-Bu makalede, Android Kurumsal profilli cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları listelenmektedir.
+Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, izin vermek veya özellikleri, bilgi noktası modu, güvenliği denetlemeye ve diğer çalışma uygulamaları devre dışı bırakmak için bu ayarları kullanın.
+
+## <a name="before-you-begin"></a>Başlamadan önce
+
+[Bir cihaz yapılandırma profili oluşturma](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>Yalnızca cihaz sahibi
 
@@ -243,7 +247,7 @@ Bu parola ayarlar, bir iş profili kullanan cihazlardaki kişisel profiller içi
   > [!IMPORTANT]
   >  - Seçtiğiniz VPN istemcisinin cihaza yüklenmesi ve cihazın uygulama başına VPN iş profillerini desteklemesi gerekir. Aksi takdirde bir hata oluşur. 
   >  - VPN istemci uygulamasını yine de **Yönetilen Google Play Mağazası**'nda onaylamanız, uygulamayı Intune ile eşitlemeniz ve cihaza dağıtmanız gerekir. Bu yapıldıktan sonra uygulama kullanıcının iş profiline yüklenir.
-  >  - Android 3.0.3 için F5 Access ile uygulama başına VPN kullanırken karşılaşabileceğiniz bazı bilinen sorunlar vardır. Daha fazla bilgi için bkz. [Android 3.0.3 için F5 Access’e yönelik F5 sürüm notları](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android).
+  >  - Bilinen sorunlar vardır uygulama başına VPN Android 3.0.4 için F5'e erişim ile kullanırken. Bkz: [Android 3.0.4 için F5'e erişim için F5'ın sürüm notları](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) daha fazla bilgi için.
 
 - **Kilitleme modu**: Tüm ağ trafiğini VPN tünelini kullanmaya zorlamak için **Etkinleştir**'i seçin. VPN'e bir bağlantı oluşturulmazsa, cihazın ağ erişimi olmaz.
 

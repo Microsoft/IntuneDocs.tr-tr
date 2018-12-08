@@ -1,11 +1,12 @@
 ---
 title: iOS cihazınızı güncelleştirmeniz gerekiyor | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: İOS cihazınız gerekli en düşük işletim sistemi sürümüne sahip değil.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 24064cb3cf02f0ac5c0ef94107d047435dec3ba0
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: 685f3a95e525f64ead427c7d2b32a62c7f85b59e
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146931"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031929"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS cihazınız, gerekli en düşük işletim sistemi sürümüne sahip değil
 

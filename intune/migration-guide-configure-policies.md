@@ -1,5 +1,5 @@
 ---
-title: Bir Intune geçişi sırasında cihaz uyumluluk ve uygulama yönetimi ilkelerini yapılandırma
+title: Bir Intune geçişi sırasında cihaz ve uygulama uyumluluğunu yapılandırma
 titlesuffix: Microsoft Intune
 description: Bu makale, bir Microsoft Intune geçişi sırasında cihaz uyumluluk ve uygulama yönetimi ilkelerini yapılandırmak için gerekli adımları sağlar.
 keywords: ''
@@ -15,12 +15,13 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183809"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031832"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune’a geçerken cihaz uyumluluk ve uygulama yönetimi ilkelerini yapılandırma
 

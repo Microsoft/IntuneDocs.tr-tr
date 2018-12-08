@@ -1,5 +1,5 @@
 ---
-title: Tasarım oluşturma
+title: Microsoft Intune tasarımı oluşturma
 titlesuffix: Microsoft Intune
 description: Bu makale, Microsoft Intune yalnızca bulut tasarımı ve uygulaması için bir tasarım oluşturmanıza yardımcı olur.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 1693c61b43b7470bc70dad3bc08ca040fce1d102
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186503"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032563"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -310,7 +310,7 @@ Wi-Fi profilleri, bir mobil cihazı otomatik olarak kablosuz ağa bağlamak içi
 
 Bir Wi-Fi profili için bir tasarım örneği aşağıda verilmiştir:
 
-| **Tür** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |   
+| **Türü** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |   
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | Asya Wi-Fi profili | Android | Kurumsal, KCG Asya bölgesi|                                                           
 | Wi-Fi | Kuzey Amerika Wi-Fi profili | Android, iOS, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika bölgesi |                                                           
@@ -324,7 +324,7 @@ VPN profilleri, kullanıcıların ağınıza uzak konumlardan güvenli bir şeki
 
 Bir VPN profili tasarımının belgelenmesine ilişkin bir örnek aşağıda verilmiştir.
 
-| **Tür** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |   
+| **Türü** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |   
 |:---:|:---:|:---:|:---:|
 | VPN | VPN Cisco herhangi bir bağlantı Profili | Android, iOS, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika ve Almanya|                                                           
 | VPN | Pulse Secure | Android | Kurumsal, KCG Asya bölgesi |                                                           
@@ -337,7 +337,7 @@ E-posta profilleri, bir e-posta istemcisinin bağlantı bilgileriyle ve e-posta 
 
 E-posta profillerinin tasarımının belgelenmesine dair bir örnek aşağıda verilmiştir:
 
-| **Tür** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |   
+| **Türü** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |   
 |:---:|:---:|:---:|:---:|
 | E-posta profili | iOS e-posta profili | iOS | Kurumsal – KCG bilgi çalışanı |                                                           
 | E-posta profili | Android Knox e-posta profili | Android Knox | KCG |
@@ -346,7 +346,7 @@ E-posta profillerinin tasarımının belgelenmesine dair bir örnek aşağıda v
 E-posta profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 ### <a name="apps"></a>Uygulamalar
 
-Kullanıcılara veya cihazlara uygulamaları çeşitli yollarla sunmak için Intune kullanabilirsiniz. Uygulama türü yazılım yükleme uygulamalarını, genel uygulama mağazası uygulamalarını, dış bağlantıları veya yönetilen iOS uygulamalarını içerir. Tek tek uygulama dağıtımlarına ek olarak, iOS ve Windows için toplu satın alma programları aracılığıyla edinilen toplu satın alınan uygulamaları yönetilebilir ve dağıtılabilirsiniz. Daha fazla bilgi:
+Kullanıcılara veya cihazlara uygulamaları çeşitli yollarla sunmak için Intune kullanabilirsiniz. Uygulama türü yazılım yükleme uygulamalarını, genel uygulama mağazası uygulamalarını, dış bağlantıları veya yönetilen iOS uygulamalarını içerir. Tek tek uygulama dağıtımlarına ek olarak, iOS ve Windows için toplu satın alma programları aracılığıyla edinilen toplu satın alınan uygulamaları yönetilebilir ve dağıtılabilirsiniz. Aşağıdakiler hakkında daha fazla bilgi edinin:
 
 -   [Sağlayabileceğiniz uygulama türleri](app-management.md)
 

@@ -1,33 +1,37 @@
 ---
-title: Microsoft Intune - Azure’da Android ve Android iş profili cihazları için e-posta ayarları | Microsoft Docs
-description: Exchange sunucularını kullanan ve Azure Active Directory’den öznitelik alan bir cihaz yapılandırma e-posta profili oluşturun. Microsoft Intune kullanarak ayrıca SSL veya SMIME’yi etkinleştirebilir, sertifika veya kullanıcı adı/parola ile kullanıcı kimliği doğrulayabilir, Android ve Android iş profili cihazlarında e-posta ve zamanlamaları eşitleyebilirsiniz.
+title: Android ve Microsoft Intune - Azure'da Android Kurumsal e-posta ayarları | Microsoft Docs
+description: Bir cihaz Exchange sunucularının kullandığı yapılandırma e-posta profilleri oluşturma ve Azure Active Directory öznitelikleri alınamıyor. SSL veya SMIME etkinleştirmek, sertifikalar veya kullanıcı adı/parola ile kullanıcıların kimliğini doğrulamak ve e-posta ve zamanlamaları eşitlemek üzerinde Android ve Android iş profili cihazları Intune kullanma.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b8ab8dfadb113d81922119a54aefcac43d15b5a1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187438"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032036"
 ---
-# <a name="email-profile-settings-for-devices-running-android-and-android-enterprise---intune"></a>Android ve Android Kurumsal çalıştıran cihazlar için e-posta profili ayarları - Intune
+# <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android ve Android Kurumsal cihaz ayarları Intune'da e-posta, kimlik doğrulama ve eşitlemeyi yapılandırma
 
-Android çalıştıran cihazlarınızı yapılandırmak için e-posta profili ayarlarını kullanın.
+Bu makalede, listeler ve Android ve Android Kurumsal cihazlarda kontrol edebilir farklı bir e-posta ayarları açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları ve e-postaları şifrelemek için SSL kullanmak, bir e-posta sunucusu yapılandırmak için kullanın.
 
 Bir Intune yöneticisi olarak, e-posta ayarları oluşturup bunları aşağıdaki Android cihazlarına atayabilirsiniz:
 
 - Android Samsung Knox Standard
 - Android Kurumsal
+
+## <a name="before-you-begin"></a>Başlamadan önce
+
+[Bir cihaz yapılandırma profili oluşturma](email-settings-configure.md).
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 

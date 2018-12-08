@@ -1,25 +1,25 @@
 ---
-title: Microsoft Intune - Azure - Android Kurumsal ve bilgi noktası cihazları için Wi-Fi ayarlarını yapılandırma | Microsoft Docs
-titleSuffix: ''
+title: Android Enterprise ve bilgi noktası cihazları için Wi-Fi ayarlarını yapılandırma
+titleSuffix: Microsoft Intune
 description: Android Kurumsal ve Android Bilgi Noktası için bir Wi-Fi cihaz yapılandırma profili oluşturun veya ekleyin. Microsoft Intune’da sertifika ekleme, EAP türü seçme ve bir kimlik doğrulama yöntemi seçme gibi farklı ayarları inceleyin. Bilgi noktası cihazlarında ağınızın Önceden paylaşılan anahtarını da girin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: be26522555766c6a3661857ba7722c2425cc984e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 89a89312bde2c69f4301e12416b9dc8ed57a492e
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180451"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032155"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Microsoft Intune’da Android Kurumsal ve Android Bilgi Noktası çalıştıran cihazlar için Wi-Fi ayarları ekleme
 

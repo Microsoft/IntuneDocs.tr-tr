@@ -1,12 +1,12 @@
 ---
-title: Uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme
+title: Uygulama koruma İlkesi erişim eylemlerini kullanarak veri silme
 titleSuffix: Microsoft Intune
 description: Microsoft Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silmeyi öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: f8173b409eb82a3bb98ef0a30570e489fac1fc49
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189708"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032070"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -31,7 +31,7 @@ Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından ş
 
 ## <a name="create-an-app-protection-policy-using-access-actions"></a>Erişim eylemlerini kullanarak uygulama koruma ilkesi oluşturma
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin.  
     Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ni seçin.

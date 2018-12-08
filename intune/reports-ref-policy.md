@@ -1,12 +1,12 @@
 ---
-title: İlke
+title: İlke varlıkları için başvuru
 titlesuffix: Microsoft Intune
 description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının İlke kategorisi için başvuru konusu.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 046dbe79dbaaee7de97fc83b80c40d5bf902c931
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 9fb05991b3e289d4a24cc2f3a5b2c398c12b1a15
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183511"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032444"
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
@@ -53,7 +53,7 @@ ms.locfileid: "52183511"
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | PolicyTypeId |İlkenin kaynak sistemindeki benzersiz tanımlayıcısı. |123 |
-| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1 |
+| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1. |
 | PolicyTypeName |İlke türünün adı. |Windows 10 Uyumluluk ilkesi. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
@@ -106,7 +106,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu özetler. Ve
 |Özellik     |Açıklama  |Örnek  |
 |---------|---------|---------|
 |DateKey  |Uyumluluk ilkesi için özetin oluşturulduğu tarihin anahtarı.|20161204 |
-|Bilinmiyor  |Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı. |5|
+|Bilinmeyen  |Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı. |5|
 |NotApplicable      |Yönetici tarafından hedeflenen cihaz uyumluluk ilkelerinin uygulanabilir olmadığı cihaz sayısı.|201 |
 |Uyumlu      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesini başarıyla uygulayan cihaz sayısı. |4083 |
 |InGracePeriod      |Uyumlu olmayan ancak yönetici tarafından belirlenen mehil süresinde olan cihaz sayısı. |57|
@@ -124,7 +124,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 |DateKey  |Uyumluluk ilkesi için özetin oluşturulduğu tarihin anahtarı.|20161219|
 |PolicyKey     |Özetin oluşturulduğu uyumluluk ilkesi için anahtar. |10178 |
 |PolicyPlatformKey      |Özetin oluşturulduğu uyumluluk ilkesinin platform türü için anahtar.|5|
-|Bilinmiyor     |Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı.|13|
+|Bilinmeyen     |Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı.|13|
 |NotApplicable     |Yönetici tarafından hedeflenen cihaz uyumluluk ilkelerinin uygulanabilir olmadığı cihaz sayısı.|3|
 |Uyumlu      |Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesini başarıyla uygulayan cihaz sayısı. |45|
 |YetkisizKullanımSüresinde      |Uyumlu olmayan ancak yönetici tarafından belirlenen mehil süresinde olan cihaz sayısı. |3|
@@ -139,7 +139,7 @@ Aşağıdaki tablo, tüm atanmış ilkelerin platform türlerini içerir. Hiçbi
 |Özellik  |Açıklama  |Örnek  |
 |---------|---------|---------|
 |PolicyPlatformTypeKey      |İlke platform türü için benzersiz anahtar. |20170519 |
-|PolicyPlatformTypeId      |İlke platform türü için benzersiz tanımlayıcı.|1|
+|PolicyPlatformTypeId      |İlke platform türü için benzersiz tanımlayıcı.|1.|
 |PolicyPlatformTypeName      |İlke platform türünün adı.|AndroidForWork |
 
 ### <a name="policydeviceactivity"></a>PolicyDeviceActivity

@@ -1,12 +1,12 @@
 ---
 title: -Cihaz kayıt programı veya Apple School Manager macOS cihazlarını kaydetme
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: Şirkete ait macOS cihazlarını Aygıt Kayıt Programı’nı kullanarak kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728761"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032359"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>MacOS cihazlarını cihaz kayıt programı veya Apple School Manager ile otomatik olarak kaydetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu makale Apple satın alınan cihazlar için macOS cihaz kaydını ayarlamanıza yardımcı olur. [cihaz kayıt programı (DEP)](https://deploy.apple.com) veya [Apple School Manager](https://school.apple.com/). Bu kayıtlar, çok sayıda cihazı için hiç dokunmadan kullanabilirsiniz. macOS cihazlarını doğrudan kullanıcılara gönderebilirsiniz. Kullanıcı cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz Intune yönetimine kaydedilir.
+Apple satın alınan macOS cihazları için Intune kaydı ayarlamadan [cihaz kayıt programı (DEP)](https://deploy.apple.com) veya [Apple School Manager](https://school.apple.com/). Bu kayıtlar, çok sayıda cihazı için hiç dokunmadan kullanabilirsiniz. macOS cihazlarını doğrudan kullanıcılara gönderebilirsiniz. Kullanıcı cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz Intune yönetimine kaydedilir.
 
 Kayıt kurulumu için Intune ve Apple DEP portallarını kullanın. Kayıt sırasında cihazlara uygulanan ayarları içeren bir kayıt profilleri oluşturun.
 
@@ -56,7 +56,7 @@ Apple portalı, bir belirteç oluşturmak için kullanın. Ayrıca cihazları Y�
 > [!NOTE]
 > Belirteç, Azure'a geçiş yapmadan önce Klasik Intune portalında silerseniz Intune, silinen bir Apple belirteci geri yükleyebilir. Belirteci Azure portalından tekrar silebilirsiniz.
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1. Adım Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Adım 1. Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
 
 1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Apple kaydı** > **Kayıt Programı Belirteçleri** > **Ekle**’yi seçin.
 
@@ -69,7 +69,7 @@ Apple portalı, bir belirteç oluşturmak için kullanın. Ayrıca cihazları Y�
 3. Şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtarınızı indirin** öğesini seçin. .Pem dosyası Apple Portalı'ndan bir güven ilişkisi sertifikası istemek için kullanılır.
 
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>2. Adım Anahtarınızı kullanarak Apple’dan bir belirteç indirin.
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Adım 2. Anahtarınızı kullanarak Apple’dan bir belirteç indirin.
 
 1. Seçin **için Apple'nın cihaz kayıt programı belirteç oluşturma** veya **Apple School Manager aracılığıyla belirteç oluşturma** uygun Apple portalı açın ve şirket Apple kimliğinizle oturum açın Belirtecinizi yenilemek için bu Apple Kimliğini kullanabilirsiniz.
 2.  Apple portalında DEP için seçin **Başlarken** için **cihaz kayıt programı** > **sunucuları Yönet** > **MDM Ekle Sunucu**.
@@ -88,13 +88,13 @@ Apple portalı, bir belirteç oluşturmak için kullanın. Ayrıca cihazları Y�
 
 8. **Eylem Seç** işlemi için **Sunucuya Ata**’yı ve Microsoft Intune için belirtilen &lt;ServerName&gt; öğesini belirleyip **Tamam**'ı seçin. Apple portalı, belirtilen cihazları Intune sunucusunda yönetilmek üzere bu sunucuya atar ve **Atama Tamamlandı** ifadesini görüntüler.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3. Adım. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Adım 3. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin
 
 Azure portalında Intune’da ileride başvurmak üzere Apple kimliğini sağlayın.
 
 ![Kayıt programı belirtecini oluşturmak için kullanılan Apple kimliğini belirtme ve kayıt programı belirtecine gözatma işleminin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>Adım 4. Belirtecinizi karşıya yükleyin.
+### <a name="step-4-upload-your-token"></a>4. adımı. Belirtecinizi karşıya yükleyin.
 **Apple belirteci** kutusunda sertifika (.pem) dosyasına gözatın, **Aç**’ı ve daha sonra **Oluştur**’u seçin. Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı cihazlara ileterek macOS cihazlarını kaydedebilir ve yönetebilir. Intune, kayıt programı hesabınızı görmek için Apple ile otomatik olarak eşitlenir.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
@@ -121,7 +121,7 @@ Belirtecinizi yüklediğinize göre cihazlar için bir kayıt profili oluşturab
 
     ![Cihaz Yönetimi Ayarları ekran görüntüsü.](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
-7. **Tamam**’ı seçin.
+7. Seçin **Tamam**.
 
 8. Şu profil ayarlarını yapılandırmak için **Kurulum Yardımcısı Ayarları**’nı seçin: ![Kurulum Yardımcısı Özelleştirme.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
@@ -139,12 +139,12 @@ Belirtecinizi yüklediğinize göre cihazlar için bir kayıt profili oluşturab
     |------------------------------------------|------------------------------------------|
     | <strong>Geçiş kodu</strong> | Kullanıcıdan geçiş kodu ister. Cihazın güvenliği sağlanmayacaksa veya erişim denetimi başka bir yolla (cihazı tek uygulamayla sınırlandıran bilgi noktası modu) uygulanmayacaksa her zaman geçiş kodu gerektirir. |
     | <strong>Konum Hizmetleri</strong> | Kullanıcıdan konum ister. |
-    | <strong>Geri Yükle</strong> | **Uygulamalar ve Veriler** ekranını görüntüler. Bu ekran kullanıcıya cihazı kurarken iCloud Backup'tan verileri geri yükleme veya aktarma seçeneği sağlar. |
+    | <strong>Geri yükleme</strong> | **Uygulamalar ve Veriler** ekranını görüntüler. Bu ekran kullanıcıya cihazı kurarken iCloud Backup'tan verileri geri yükleme veya aktarma seçeneği sağlar. |
     | <strong>iCloud ve Apple Kimliği</strong> | Kullanıcıya **Apple Kimliği** ile oturum açma ve **iCloud**'u kullanma seçenekleri sağlar.                         |
     | <strong>Hüküm ve Koşullar</strong> | Kullanıcının Apple'ın hüküm ve koşullarını kabul etmesini gerektirir. |
     | <strong>Touch ID</strong> | Kullanıcıya cihaz için parmak izi tanımlama özelliğini ayarlama seçeneği sağlar. |
     | <strong>Apple Pay</strong> | Kullanıcıya cihazda Apple Pay ayarlama seçeneği sağlar. |
-    | <strong>Yakınlaştır</strong> | Kullanıcıya cihazı ayarlarken ekranı yakınlaştırma seçeneği sağlar. |
+    | <strong>Yakınlaştırma</strong> | Kullanıcıya cihazı ayarlarken ekranı yakınlaştırma seçeneği sağlar. |
     | <strong>Siri</strong> | Kullanıcıya Siri'yi ayarlama seçeneği sağlar. |
     | <strong>Tanılama Verileri</strong> | Kullanıcıya **Tanılama** ekranını görüntüler. Bu ekran kullanıcıya Apple'a tanılama verileri gönderme seçeneği sağlar. |
     | <strong>FileVault</strong> | Kullanıcıya FileVault şifrelemesini ayarlama seçeneği sağlar. |
@@ -153,7 +153,7 @@ Belirtecinizi yüklediğinize göre cihazlar için bir kayıt profili oluşturab
 
    
 
-10. **Tamam**’ı seçin.
+10. Seçin **Tamam**.
 
 11. Profili kaydetmek için **Oluştur**’u seçin.
 

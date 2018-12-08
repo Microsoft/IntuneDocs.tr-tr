@@ -5,22 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fd99a168747bd4a0f5852404e767d658b8400ba2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180842"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032274"
 ---
-# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune ile Windows Holographic ve HoloLens cihazlarını yönetme ve kullanma
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Yönetme ve farklı bir cihaz yönetim özellikleri, Windows Holographic ve HoloLens cihazları Intune ile kullanma
 
 Microsoft Intune, [Microsoft HoloLens](https://docs.microsoft.com/hololens/) gibi Windows Holographic for Business çalıştıran cihazları yönetmenize yardımcı olan birçok özelliğe sahiptir. Intune ile cihazlarınızın kuruluş kurallarına uygun olduğunu onaylayabilir ve VPN veya WiFi profili ekleyerek cihazları özelleştirebilirsiniz. Bir diğer önemli özellik de cihazı Bilgi noktası olarak kullanmak ve belirli bir uygulamayı veya belirli bir uygulama dizisini çalıştırmaktır.
 
@@ -32,9 +32,9 @@ Windows Holographic cihazlarını Intune ile birlikte kullanmak için bir Sürü
 
 Azure Active Directory (AD), Windows Holographic for Business çalıştıran cihazlarınızı yönetmeye ve denetlemeye yardımcı olmak için mükemmel bir kaynaktır. Intune ve Azure AD kullanarak şunları yapabilirsiniz: 
 
-- **[Azure Active Directory katılımlı cihazlar ayarlama](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: Azure Active Directory’de (AD) Windows Holographic for Business çalıştıran cihazlar dahil olmak üzere şirkete ait Windows 10 cihazlarınızı ekleyebilirsiniz. Bu özellik, Azure AD’nin cihazı denetlemesini sağlar. Kullanıcıların şirket kaynaklarına güvenlik ve uyumluluk standartlarına uygun cihazlardan eriştiğini doğrulamaya yardımcı olur.
+- **[Cihazları Azure Active Directory'ye katılmasını](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: Azure Active Directory (AD), Windows Holographic for Business çalıştıran cihazlar dahil olmak üzere iş ait Windows 10 cihazlarınızı ekleyebilirsiniz. Bu özellik, Azure AD’nin cihazı denetlemesini sağlar. Kullanıcıların şirket kaynaklarına güvenlik ve uyumluluk standartlarına uygun cihazlardan eriştiğini doğrulamaya yardımcı olur.
 
-  [Azure AD’de yönetime giriş](https://docs.microsoft.com/azure/active-directory/device-management-introduction), daha fazla ayrıntı sağlar.
+  [Azure AD'de cihaz Yönetimi](https://docs.microsoft.com/azure/active-directory/devices/overview) daha fazla ayrıntı sağlar.
 
 - **[Windows cihazlar için toplu kayıt](windows-bulk-enroll.md)**: Çok sayıda yeni Windows cihazı Azure Active Directory (AD) ve Intune’a dahil edebilirsiniz. Bu özellik, toplu kayıt olarak adlandırılır ve sağlama paketleri kullanır. Bu paketler, Windows Holographic for Business çalıştıran cihazları Azure AD kiracınıza dahil eder ve Intune’a kaydeder.
 
@@ -49,7 +49,6 @@ Intune; kullanıcıların şirket verilerine erişmesi, cihaz kaydetmesi, uygula
 - [Bir cihazı yeniden adlandırma](/intune-user-help/rename-your-device-cpapp)
 - Bir cihaza [uygulama yükleme](/intune-user-help/install-apps-cpapp-windows)
 - Ayarlar uygulamasını veya Şirket Portalı uygulamasını kullanarak [cihazları el ile eşitleme](/intune-user-help/sync-your-device-manually-windows)
-
 
 ## <a name="compliance-policy"></a>Uyumluluk ilkesi
 **[Cihaz uyumluluğu ilkesi oluşturma](compliance-policy-create-windows.md)**

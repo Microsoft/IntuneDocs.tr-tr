@@ -1,6 +1,7 @@
 ---
 title: Erken sürüm
-description: ''
+titlesuffix: Microsoft Intune
+description: Microsoft Intune erken sürüm
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,13 +16,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 4110f1298ffa3e8497463d4751bc711a6c19baf1
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.custom: seodec18
+ms.openlocfilehash: ddd1af82c700b0398ca7250f577c712e4a428788
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977380"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032483"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Erken sürüm Microsoft Intune - aralık 2018'e
 
@@ -112,6 +113,9 @@ Hangi atlamak için ekranları seçmek için Git **cihaz kaydı** > **Apple kayd
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Windows 10 Pro sürümü bazı BitLocker ayarları desteği<!-- 2727036 -->
 Endpoint protection ayarları BitLocker dahil olmak üzere Windows 10 cihazlarda ayarlar bir yapılandırma profili oluşturmanız mümkün olacaktır. Bu, Windows 10 Professional edition bazı BitLocker ayarları için destek ekler. Geçerli Windows 10 sürüm ayarlarını görmek için bkz: [Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md#windows-encryption).
+Intune, Android üreticisi, modeli ve güvenlik düzeltme eki sürümü yanı sıra iOS modeli de dahil olmak üzere alanlar, raporlama ek cihaz sağlayacaktır. Intune, bu alanları seçerek kullanılabilir **istemci uygulamaları** > **uygulama koruma durumu** seçip **uygulama koruma raporu: iOS, Android**. Bu parametreleri yapılandırma Ayrıca, yardımcı olacak **izin ver** cihaz üreticisi (Android) için liste **izin** cihaz modeli (Android ve iOS) ve en düşük Android güvenlik düzeltme eki için listesi Sürüm ayarı. 
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Intune cihaz alanları raporlama <!-- 2748738 -->
 Intune, Android üreticisi, modeli ve güvenlik düzeltme eki sürümü yanı sıra iOS modeli de dahil olmak üzere alanlar, raporlama ek cihaz sağlayacaktır. Intune, bu alanları seçerek kullanılabilir **istemci uygulamaları** > **uygulama koruma durumu** seçip **uygulama koruma raporu: iOS, Android**. Bu parametreleri yapılandırma Ayrıca, yardımcı olacak **izin ver** cihaz üreticisi (Android) için liste **izin** cihaz modeli (Android ve iOS) ve en düşük Android güvenlik düzeltme eki için listesi Sürüm ayarı. 
 
 ### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>Azure portalında iOS cihazları için paylaşılan cihaz yapılandırması kilit ekranı iletisi için yeniden adlandırılır <!-- 2809362 -->

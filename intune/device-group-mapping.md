@@ -1,5 +1,5 @@
 ---
-title: Intune’daki cihazları gruplar halinde kategorilere ayırma
+title: Cihazları ıntune'da gruplar halinde kategorilere ayırma
 titleSuffix: Microsoft Intune
 description: Daha kolay yönetim için cihazları gruplar halinde kategorilere ayırmayı öğrenin.
 keywords: ''
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189529"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031774"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>Daha kolay yönetim için cihazları gruplar halinde kategorilere ayırma
+# <a name="categorize-devices-into-groups"></a>Cihazları gruplar halinde kategorilere ayırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Tanımladığınız cihaz kategorilerine dayanarak cihazları gruplara otomatik olarak eklemek için Microsoft Intune cihaz gruplarını kullanın. Böylece bu cihazları yönetmeniz kolaylaşır.
+Cihazlarını yönetmeyi kolaylaştırmak için cihazları kendi tanımladığınız kategorilere göre gruplara otomatik olarak eklemek için Microsoft Intune cihaz kategorileri kullanabilirsiniz.
 
 Cihaz kategorileri aşağıdaki iş akışını kullanır:
 1. Kullanıcıların cihazlarını kaydederken arasından seçim yapabileceği kategoriler oluşturun.

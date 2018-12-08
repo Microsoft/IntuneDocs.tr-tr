@@ -1,7 +1,7 @@
 ---
 title: Intune’a kurumsal tanımlayıcılar ekleme
-titlesuffix: Microsoft Intune
-description: Microsoft Intune’a kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin.
+titlesuffix: ''
+description: Microsoft Intune Kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: cc65cc3440d260adc3bd2c7de3a311374681327d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183460"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032257"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -114,7 +114,7 @@ Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** gör
 
 **Cihaz sahipliğini değiştirmek için:**
 1. [Azure portalında Intune](https://portal.azure.com)’da, **Cihazlar**’a gidin ve cihazı seçin.
-2. **Özellikler**’i seçin.
+2. Seçin **özellikleri**.
 3. **Cihaz sahipliği**’ni **Kişisel** veya **Şirkete ait** olarak belirtin.
 
    ![Cihaz kategorisi ve Cihaz sahipliği seçeneklerini gösteren cihaz özellikleri](./media/device-properties.png)

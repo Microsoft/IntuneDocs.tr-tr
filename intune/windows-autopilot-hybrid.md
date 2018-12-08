@@ -1,12 +1,12 @@
 ---
-title: Karma Active Directory’ye katılmış olan cihazların Intune kaydını Windows Autopilot kullanarak ayarlama
+title: Windows Autopilot'ı kullanarak cihazları kayıt için karma Active Directory birleştirilmiş
 titleSuffix: Microsoft Intune
 description: Karma Active Directory’ye katılmış olan cihazları Intune’a kaydetmek için Windows Autopilot’ı kullanın.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 2a656a53062e8529541cd067fa32bfc83aee2ea0
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.custom: seodec18
+ms.openlocfilehash: ed404d97b2fe0ccf38a5d3946819fd8225127581
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977329"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032325"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Karma Azure Active Directory’ye olan katılmış cihazları Intune ve Windows Autopilot kullanarak dağıtma (Önizleme)
 Karma Azure Active Directory alanına katılmış olan cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin.
@@ -101,7 +101,7 @@ Bilgisayar oluşturma hakkı verilen kuruluş birimi şunlarla eşleşmelidir:
 
     ![Denetim temsilcisi seç ekran görüntüsü](media/windows-autopilot-hybrid/only-following-objects.png)
     
-9. **İleri**’yi seçin.
+9. Seçin **sonraki**.
 
 10. **İzinler** altında **Tam Denetim**’i işaretleyin (böylece tüm diğer seçenekler işaretlenir) > **Sonraki** > **Son**’u seçin.
 

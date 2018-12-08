@@ -1,7 +1,7 @@
 ---
 title: Kayıt durum sayfası ayarlama
 titleSuffix: Microsoft Intune
-description: Windows 10 cihaz kaydeden kullanıcılarınızı selamlayın.
+description: Windows 10 cihazlarını kaydeden kullanıcılar için bir karşılama sayfası ayarlayın.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729050"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032104"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durum sayfası ayarlama
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Cihaz kurulumu sırasında, Kayıt Durumu Sayfası cihazdaki yükleme bilgilerini görüntüler. Bir kullanıcı ilk kaydı tamamlayıp cihazda oturum açtığında bazı uygulama, profil ve sertifikalar henüz yüklenmemiş olabilir. Kayıt durumu sayfası, kullanıcıların cihaz kurulumu sırasında cihazlarının durumunu anlamasına yardımcı olabilir. Kayıt durumu sayfası için birden çok profil oluşturabilir ve bunları farklı gruplara uygulayabilirsiniz. Profiller, şunları yapacak şekilde ayarlanabilir:
+Intune kullanarak cihaz kurulumu sırasında cihazda kayıt durumu sayfası yükleme bilgileri görüntüler. Bir kullanıcı ilk kaydı tamamlayıp cihazda oturum açtığında bazı uygulama, profil ve sertifikalar henüz yüklenmemiş olabilir. Kayıt durumu sayfası, kullanıcıların cihaz kurulumu sırasında cihazlarının durumunu anlamasına yardımcı olabilir. Kayıt durumu sayfası için birden çok profil oluşturabilir ve bunları farklı gruplara uygulayabilirsiniz. Profiller, şunları yapacak şekilde ayarlanabilir:
 - Yüklemenin ilerleme durumunu görüntüleme.
 - Yükleme tamamlanana kadar kullanımı engelleme.
 - Cihaz kurulumu başarısız olursa kullanıcının ne yapabileceğini belirtme.

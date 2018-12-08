@@ -1,11 +1,12 @@
 ---
 title: Cihazınızda gerekli bir sertifika eksik | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: Cihazınızda şirketinizin destek birimi tarafından gerekli bir sertifika eksik.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +17,19 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150761"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032223"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>Cihazınızda gerekli bir sertifika eksik
 
 ## <a name="whats-a-certificate"></a>Sertifika nedir?
 
-[Şifreleme](https://technet.microsoft.com/library/cc962030.aspx), bilgiler için güvenlik sağlama bilimidir. Geleneksel olarak şifreleme, [iletişimin gizli tutulduğundan emin olmak için](https://technet.microsoft.com/library/cc962019.aspx) kodlanmış iletileri geçirmek üzere kullanılır. En basit şekliyle şifreleme, kodlanmış bir iletiyi okunamaz, anlaşılmaz veya gizli bir iletiye dönüştürmek için harflerin kendisini veya sırasını değiştirir. Yalnızca bir kod çözme anahtarına, yani _sertifikaya_ sahip kişiler, kodlanmış iletiyi özgün, okunabilir biçimine geri dönüştürebilir. Android cihazınız, Intune’daki sertifikaları kullanarak cihazınız ile e-posta ve belgeler gibi kurumsal kaynaklarınız arasındaki iletişimlerin bir uçtan diğerine geçiş yolculuğunda güvende tutulmasını sağlar.
+[Şifreleme](https://technet.microsoft.com/library/cc962030.aspx), bilgiler için güvenlik sağlama bilimidir. Geleneksel olarak şifreleme, [iletişimin gizli tutulduğundan emin olmak için](https://technet.microsoft.com/library/cc962019.aspx) kodlanmış iletileri geçirmek üzere kullanılır. Kendi simplist formunda şifreleme değiştirir veya kodlanmış bir iletiyi okunamaz, anlaşılmaz veya gizli iletisine için harflerin kendisini veya sırasını değiştirir. Yalnızca bir kod çözme anahtarına, yani _sertifikaya_ sahip kişiler, kodlanmış iletiyi özgün, okunabilir biçimine geri dönüştürebilir. Android cihazınız, Intune’daki sertifikaları kullanarak cihazınız ile e-posta ve belgeler gibi kurumsal kaynaklarınız arasındaki iletişimlerin bir uçtan diğerine geçiş yolculuğunda güvende tutulmasını sağlar.
 
 ## <a name="fixing-certificate-issues"></a>Sertifika sorunlarını giderme
 
@@ -38,6 +39,6 @@ Android cihazınız Intune’a kayıtlı değilse ve şirketinizin destek birimi
 
 Denemeniz gereken ilk adım, [genellikle cihazınıza önceden yüklenmiş olarak gelen bir sertifikanın eksik olup olmadığını kontrol etmektir](your-device-is-missing-a-preinstalled-certificate-android.md).
 
-Bu işe yaramazsa, şirketinizin destek birimi [ek güvenlik için ikinci bir sertifika yüklemenizi gerekli kılabilir](your-device-is-missing-an-IT-required-certificate-android.md).
+Sertifika sorunlarını çözme işe yaramazsa, şirketinizin destek birimi [ek güvenlik için ikinci bir sertifika yüklemek ihtiyaç duyduğunuz](your-device-is-missing-an-IT-required-certificate-android.md).
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

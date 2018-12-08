@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da Windows Holographic for Business cihazlar için özel ayarlar | Microsoft Docs
+title: Özel ayarları - Windows Holographic for Business cihazlar - Microsoft Intune
 description: Microsoft Intune’da Microsoft Hololens dahil olmak üzere Windows Holographic for Business çalıştıran cihazlar için OMA-URI ayarlarını kullanmak üzere bir özel profil ekleyin veya oluşturun. AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates ve ApplicationLaunchRestrictions ilke yapılandırma hizmet sağlayıcısı (CSP) ayarlarını ayarlayabilirsiniz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 2c4e6041f00ad55b18f8b20996da8002f5ce0247
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185585"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032206"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune’da Windows Holographic for Business cihazlar için özel ayarlar kullanma
 
@@ -56,7 +56,7 @@ Bu makale, Windows Holographic for Business cihazlar için özel profil oluştur
         - Tarih ve saat
         - Tamsayı
         - Kayan nokta
-        - Boole değeri
+        - Boole
         - Base64 (dosya)
 
     - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değerini girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
@@ -138,7 +138,7 @@ Bu ayarlar, Windows Holographic for Business çalıştıran cihazlar için fayda
 > [!div class="mx-tableFixed"]
 > |OMA URI|Veri türü|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|Boole değeri<br/>True - etkinleştir<br/>False - devre dışı bırak (varsayılan)|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|Boole<br/>True - etkinleştir<br/>False - devre dışı bırak (varsayılan)|
 
 ### <a name="profileinactivitythresholdhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[ProfileInactivityThreshold](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 

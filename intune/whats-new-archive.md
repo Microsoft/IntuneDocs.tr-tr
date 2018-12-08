@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b06df0fea0a81757ab098ab84c17875c913eed2c
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: 56bf46be841cb5acd5e6ec3a5d32eb4f7f525516
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977465"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032597"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
@@ -148,7 +148,7 @@ Cihaz Yapılandırmanızda, hata kodlarını ve hata iletilerini daha ayrıntıl
    Bilgisayarın yoklama isteklerine yanıt vermesini önlemek için bunu etkinleştirin. Bilgisayar, yetkili uygulamalardan gelen istekleri yanıtlamaya devam eder. ICMP (ping) gibi beklenmedik istekler yoksayılır.
 
 #### <a name="disable-checks-on-device-restart---1805490---"></a>Cihazı yeniden başlatma sırasında denetimleri devre dışı bırakma <!--1805490 -->
-Intune size [yazılım güncelleştirmelerini yönetme]](windows-update-for-business-configure.md) denetimi verir. Bu güncelleştirme ile <strong>Yeniden başlatma denetimleri</strong> özelliği kullanılabilir ve varsayılan olarak etkindir. Bir cihazı yeniden başlattığınızda yapılan denetimleri (etkin kullanıcılar, pil düzeyleri vb. gibi) atlamak için <strong>Atla</strong>’yı seçin.
+Intune, size [yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md) denetimi sağlar. Bu güncelleştirme ile <strong>Yeniden başlatma denetimleri</strong> özelliği kullanılabilir ve varsayılan olarak etkindir. Bir cihazı yeniden başlattığınızda yapılan denetimleri (etkin kullanıcılar, pil düzeyleri vb. gibi) atlamak için <strong>Atla</strong>’yı seçin.
 
 #### <a name="new-windows-10-insider-preview-channels-available-for-deployment-rings----1746293---"></a>Yeni Windows 10 Insider Önizleme kanalları dağıtım halkaları için kullanılabilir <!-- 1746293 -->
 Artık bir Windows 10 dağıtım halkası seçtiğinizde şu Windows 10 Insider Önizleme bakım kanallarını belirleme seçeneğiniz var:

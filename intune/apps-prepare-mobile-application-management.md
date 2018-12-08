@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme
+title: Uygulamaları Microsoft Intune ile mobil uygulama yönetimi için hazırlama
 description: Bu konu başlığı altındaki bilgiler, özel iş kolu uygulamalarınızın mobil uygulama yönetimi ilkelerini kullanabilmesini sağlamak için, Uygulama sarmalama aracını ve Uygulama SDK'sını ne zaman kullanmanız gerektiğine karar vermenize yardımcı olur.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 8841354b268f70634a61040fb06ed857120e9cfc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: cf930b7625d474d66abef0d65efb009474bf79b0
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181981"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032189"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 

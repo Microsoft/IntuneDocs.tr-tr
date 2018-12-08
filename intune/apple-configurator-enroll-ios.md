@@ -1,5 +1,5 @@
 ---
-title: iOS cihazları kaydetme - Apple Configurator-Kurulum Yardımcısı
+title: İOS cihaz kaydını ayarlama - Apple Configurator-Kurulum Yardımcısı
 titleSuffix: Microsoft Intune
 description: Kurulum Yardımcısı ile şirkete ait iOS cihazlarını kaydetmek için Apple Configurator’ı kullanmayı öğrenin.
 keywords: ''
@@ -15,15 +15,15 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: c36a87f6b0bd3e869275f5ac8089cc4fa4926698
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f3da65c010ed14300b7de014aa9b3c4c8c43024f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180393"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032410"
 ---
-# <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator ile iOS cihazlarını kaydetme
+# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator ile iOS cihaz kaydını ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -56,7 +56,7 @@ Bir cihaz kayıt profili kayıt sırasında uygulanan ayarları tanımlar. Bu ay
 
 3. **Kullanıcı Benzeşimi** için bu profile sahip cihazların atanan kullanıcıyla mı yoksa atanan kullanıcı olmadan mı kaydedilmesi gerektiğini seçin.
 
-    - **Kullanıcı benzeşimi ile kaydetme** - Uygulamaları yükleme gibi hizmetler için Şirket Portalı’nı kullanmak isteyen kullanıcılara ait cihazlar için bu seçeneği seçin. Cihaz Kurulum Yardımcısı ile bir kullanıcıya bağlanmalıdır. Böylece, cihaz şirket verilerine ve e-postalara erişebilir. Yalnızca Kurulum Yardımcısı kaydı için desteklenir. Kullanıcı benzeşimi [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    - **Kullanıcı benzeşimi ile kaydetme** - Uygulamaları yükleme gibi hizmetler için Şirket Portalı’nı kullanmak isteyen kullanıcılara ait cihazlar için bu seçeneği seçin. Cihaz Kurulum Yardımcısı ile bir kullanıcıya bağlanmalıdır. Böylece, cihaz şirket verilerine ve e-postalara erişebilir. Yalnızca Kurulum Yardımcısı kaydı için desteklenir. Kullanıcı benzeşimi [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazlasını bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
     - **Kullanıcı Benzeşimi Olmadan Kaydetme** - Tek bir kullanıcıyla bağlantılı olmayan cihazlar için bu seçeneği seçin. Yerel kullanıcı verilerine erişmeden görevleri yerine getiren cihazlar için bunu kullanın. Kullanıcı benzeşimi gerektiren uygulamalar (iş kolu uygulamalarını yüklemek için kullanılan Şirket Portalı uygulaması da dahil) çalışmaz. Doğrudan kayıt için gereklidir.
 
@@ -118,8 +118,8 @@ Profil oluşturup seri numaralarını atadıktan sonra profili Intune'dan URL ol
     > [!WARNING]
     > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. Cihazı bağladığınızda cihazın **Merhaba** ekranında olması gerekir.
 
-2. **Tercihler** bölmesinde **Sunucular**’ı seçin ve MDM Sunucusu sihirbazını başlatmak için (+) artı simgesini seçin. **İleri**’yi seçin.
-3. Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı altındaki MDM sunucusunun **Konak adı veya URL’si** ve **kayıt URL'sini** girin. Kayıt URL’si olarak Intune’dan dışarı aktarılan kayıt profili URL’sini girin. **İleri**’yi seçin.  
+2. **Tercihler** bölmesinde **Sunucular**’ı seçin ve MDM Sunucusu sihirbazını başlatmak için (+) artı simgesini seçin. Seçin **sonraki**.
+3. Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı altındaki MDM sunucusunun **Konak adı veya URL’si** ve **kayıt URL'sini** girin. Kayıt URL’si olarak Intune’dan dışarı aktarılan kayıt profili URL’sini girin. Seçin **sonraki**.  
     “Sunucu URL'si doğrulanmadı” uyarısı alırsanız göz ardı edebilirsiniz. Devam etmek için sihirbaz tamamlanana kadar **İleri**’yi seçin.
 4.  iOS mobil cihazları bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
 5.  Yönetmek istediğiniz iOS cihazları ve ardından **Hazırla**’yı seçin. **iOS Cihazını Hazırla** bölmesinde **El ile**’yi ve daha sonra **İleri**’yi seçin.

@@ -1,12 +1,12 @@
 ---
-title: Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
+title: Otomatik olarak Samsung'ın Knox mobil kaydı'nı kullanarak Android cihazlarını kaydetme
 titlesuffix: Microsoft Intune
 description: Samsung KME kullanarak Android cihazları kaydetmeyi öğrenin
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 05/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: f9665c407e80fcfd7cc5d0af4c66d626d2e996e6
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.custom: seodec18
+ms.openlocfilehash: 47627bc9f223c301fd04b88c0080b3a6fea26fe8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861073"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032485"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -59,7 +59,7 @@ KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirket
 
 ### <a name="for-android-enterprise"></a>Android Kurumsal için
 
-| MDM Profil Alanları| Gerekli mi? | Değerleri | 
+| MDM Profil Alanları| Gerekli mi? | Değerler | 
 |-------------------|-----------|-------| 
 |MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın. 
 |Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin. 
@@ -75,7 +75,7 @@ KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirket
 
 Adım adım rehber için [ Samsung Knox Profil Kurulum Sihirbazı](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) yönergelerine bakın.
 
-| MDM Profil Alanları| Gerekli mi? | Değerleri |
+| MDM Profil Alanları| Gerekli mi? | Değerler |
 |-------------------|-----------|-------|
 |MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın.
 |Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin.

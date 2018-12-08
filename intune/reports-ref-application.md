@@ -1,12 +1,12 @@
 ---
-title: Uygulama
+title: Uygulama varlıkları için başvuru
 titlesuffix: Microsoft Intune
 description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Uygulama kategorisi için başvuru konusu.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 32f41e4f299af4802dd270ec4a46c0cf4d467bc9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 1a6019365b03a54e5897bc8788c171ef969e0d1e
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179142"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032393"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -41,10 +41,10 @@ ms.locfileid: "52179142"
 |---------|------------|--------|
 | AppKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
 | ApplicationId |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| Revizyon |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
+| Gözden geçirme |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
 | Başlık |Uygulama başlığı. |Excel |
 | Yayımcı |Uygulama yayımcısı. |Microsoft |
-| UploadState |Uygulamanın karşıya yüklenme durumu. |1 |
+| UploadState |Uygulamanın karşıya yüklenme durumu. |1. |
 | AppTypeKey |Aşağıdaki bölümde açıklanan AppType özelliğine başvuru. | |
 | VppProgramTypeKey |Aşağıda açıklanan VppProgramType özelliğine başvuru. | |
 | CreationTime |Düzeltmenin oluşturulduğu zaman. |23.11.2016 12:00:00 |
@@ -70,7 +70,7 @@ ms.locfileid: "52179142"
 | AppTypeID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Android mağazası uygulaması | Bir Android mağazası uygulaması. |
-| 1 |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
+| 1. |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
 | 2 |Yönetilen Android mağazası uygulaması (MAM) | Yönetimi etkin bir Android mağazası uygulaması. |
 | 3 |iOS mağazası uygulaması | Bir iOS mağazası uygulaması. |
 | 4 |iOS LOB uygulaması | Bir iOS iş kolu uygulaması. |

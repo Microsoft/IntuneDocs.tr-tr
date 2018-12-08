@@ -1,7 +1,7 @@
 ---
 title: Cihaz kayıt yöneticisi hesabı kullanarak cihazları kaydetme
 titlesuffix: Microsoft Intune
-description: Intune'a cihaz kaydetmek için cihaz kayıt yöneticisi hesabını kullanın. "
+description: Intune'a cihaz kaydetmek için cihaz kayıt yöneticisi hesabını kullanın.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,15 +15,15 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 1d3e01cdbc7c9e30034e83e9609c0df5f031c18a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184922"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031849"
 ---
-# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Cihaz kayıt yöneticisi hesabı kullanarak cihazları kaydetme
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Bir cihaz kayıt yöneticisi hesabı kullanarak cihazları ıntune'a kaydetme
 
 Bir cihaz kayıt yöneticisi (DEM) hesabı kullanarak tek bir Azure Active Directory hesabıyla 1.000 adede kadar mobil cihaz kaydedebilirsiniz. DEM, bir AAD kullanıcı hesabına uygulanabilen ve kullanıcının 1.000 adede kadar cihaz kaydetmesine imkan veren bir Intune iznidir. DEM hesapları, cihazların kullanıcılarına teslim edilmeden önce kaydedilip hazırlandığı senaryolarda kullanışlıdır.
 
@@ -42,7 +42,7 @@ DEM kullanıcı hesapları ve bir DEM kullanıcı hesabıyla kaydedilen cihazlar
 
 1.  [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı** > **Cihaz kayıt yöneticileri**’ni seçin.
 
-2.  **Ekle**’yi seçin.
+2.  **Add (Ekle)** seçeneğini belirleyin.
 
 3.  **Kullanıcı Ekle** dikey penceresinde, DEM kullanıcısı için bir kullanıcı asıl adı girin ve **Ekle**’yi seçin. DEM kullanıcısı, DEM kullanıcıları listesine eklenir.
 

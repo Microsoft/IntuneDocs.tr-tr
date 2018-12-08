@@ -1,12 +1,12 @@
 ---
-title: Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma
+title: Windows 10 için uygulama koruma ilkelerini yapılandırma
 titleSuffix: Microsoft Intune
 description: Azure AD’de mobil uygulama yönetimi (MAM) sağlayıcısı kurun.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5953038f3627f98f0e034aeba4c2c92ea3dca2d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: e6e725d2e499c7f004ebf982bc0e70457c166f67
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184395"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031985"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma 
 
@@ -51,7 +51,7 @@ Azure AD’de MAM sağlayıcısını ayarlayarak Windows 10 için mobil uygulama
    **MAM uyumluluğu URL’si**  
    MAM uyumluluk URL’si Microsoft Intune’da desteklenmez. Koruma ilkelerinin uygulanması için bu giriş kutusu boş bırakılmalıdır. 
 
-5.  **Kaydet**'e tıklayın.
+5.  **Kaydet**’e tıklayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
