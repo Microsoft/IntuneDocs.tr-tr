@@ -16,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 019f09444f96d8bb3bca046ef5be20af373a3bff
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183716"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112570"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure’da Intune şirket içi Exchange bağlayıcısını ayarlama
 
@@ -45,7 +45,7 @@ Aşağıdaki tabloda şirket içi Exchange bağlayıcısını yüklediğiniz bil
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         İşletim sistemleri          |                                                               Intune; Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 veya Windows Server 2016’nın herhangi bir sürümünü çalıştıran bilgisayarlarda şirket içi Exchange bağlayıcısını destekler.<br /><br />Bağlayıcı hiçbir Sunucu Çekirdeği yüklemesinde desteklenmez.                                                                |
 |         Microsoft Exchange         |                                                                           Şirket içi bağlayıcılar için Microsoft Exchange 2010 SP3 veya üzeri ya da eski Exchange Online Ayrılmış gerekir. Exchange Online Dedicated ortamınızın <strong>yeni</strong> yapılandırmada mı yoksa <strong>eski</strong> yapılandırmada mı olduğunu belirlemek için hesap yöneticinize başvurun.                                                                           |
-| Mobil cihaz yönetimi yetkilisi |                                                                                                                              [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).                                                                                                                               |
+| Mobil cihaz yönetimi yetkilisi |                                                                                                                              [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](mdm-authority-set.md).                                                                                                                               |
 |              Donanım              |                                                                                                                                                     Bağlayıcıyı yüklediğiniz bilgisayar 2 GB RAM ve 10 GB boş disk alanı ile birlikte 1,6 GHz CPU gerektirir.                                                                                                                                                      |
 |  Active Directory eşitlemesi  |                                                                                      Intune’u Exchange Server'a bağlamak üzere bağlayıcıyı kullanabilmeniz için yerel kullanıcılarınızın ve güvenlik gruplarınızın Azure Active Directory örneğinizle eşitlenebilmesi amacıyla [Active Directory eşitlemesini ayarlamanız](users-add.md) gerekir.                                                                                      |
 |        Ek yazılım         |                                                                                                                                           Bağlayıcıyı barındıran bilgisayara Microsoft .NET Framework 4.5 ve Windows PowerShell 2.0 tam yüklemesi yapılmalıdır.                                                                                                                                           |

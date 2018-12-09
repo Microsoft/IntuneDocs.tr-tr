@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181460"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112944"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
@@ -48,10 +48,10 @@ ms.locfileid: "52181460"
 
 ## <a name="example"></a>Örnek
 
-| deviceTypeID  | Ad | Açıklama |
+| deviceTypeID  | Name | Açıklama |
 |---------|------------|--------|
 | 0 |Masaüstü |Windows Masaüstü cihaz |
-| 1 |WindowsRT |WindowsRT cihaz |
+| 1. |WindowsRT |WindowsRT cihaz |
 | 2 |WinMO6 |Windows Mobile 6.0 cihaz |
 | 3 |Nokia |Nokia cihaz |
 | 4 |WindowsPhone |Windows Phone cihaz |
@@ -83,10 +83,10 @@ ms.locfileid: "52181460"
 
 ## <a name="example"></a>Örnek
 
-| ClientRegisterationStateID  | Ad | Açıklama |
+| ClientRegisterationStateID  | Name | Açıklama |
 |---------|------------|--------|
 | 0 |NotRegistered |NotRegistered |
-| 1 |SMSIDConflict |SMS ID çakışması |
+| 1. |SMSIDConflict |SMS ID çakışması |
 | 2 |Kaydedildi |Kaydedildi |
 | 3 |İptal Edildi |Durum, BT yöneticisinin istemciyi engellediği anlamına gelir ve istemcinin engeli kaldırılabilir. Bir cihaz ayrıca, silindikten veya devre dışı bırakıldıktan sonra İptal Edildi durumunda olabilir. |
 | 4 |KeyConflict |Anahtar Çakışması |
@@ -107,10 +107,10 @@ ms.locfileid: "52181460"
 
 ## <a name="example"></a>Örnek
 
-| enrollmentTypeID  | Ad | Açıklama |
+| enrollmentTypeID  | Name | Açıklama |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Kayıt türü toplanmadı |
-| 1 |UserEnrollment |Kullanıcı tarafından başlatılan kayıt |
+| 1. |UserEnrollment |Kullanıcı tarafından başlatılan kayıt |
 | 2 |DeviceEnrollment |Kullanıcısız profille DEP Cihaz kaydı |
 | 3 |DeviceEnrollmentWithUDA |UDA profiliyle cihaz kaydı. |
 | 4 |AzureDomainJoined |Azure Active Directory yoluyla kullanıcı tarafından başlatılan cihaz kaydı |
@@ -145,7 +145,7 @@ ms.locfileid: "52181460"
 | MdmStatusID  | ComplianceStatus | Açıklama |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Cihaz uyumluluk durumu bilinmiyor. |
-| 1 |Uyumlu |Cihaz uyumlu. |
+| 1. |Uyumlu |Cihaz uyumlu. |
 | 2 |Uyumsuz |Cihaz uyumsuz. |
 | 3 |Çakışma |Cihazın uyumluluğu çakışma ile sonuçlandı. |
 | 4 |Hata |Cihazın uyumluluk durumunu okumada bir hata oluştu. |
@@ -163,14 +163,14 @@ ms.locfileid: "52181460"
 
 ## <a name="example"></a>Örnek
 
-| managementStateID  | Ad | Açıklama |
+| managementStateID  | Name | Açıklama |
 |---------|------------|--------|
 | 0 |Yönetilen | Hiçbir bekleyen uzak eylem olmadan yönetilir. |
 | 1 |RetirePending | Cihaz için bekleyen bir devre dışı bırakma komutu vardır. |
 | 2 |RetireFailed | Devre dışı bırakma komutu cihazda başarısız oldu. |
 | 3 |WipePending | Cihaz için bekleyen bir silme komutu vardır. |
 | 4 |WipeFailed | Silme komutu cihazda başarısız oldu. |
-| 5 |Sağlıksız | Kötü durumda. |
+| 5 |İyi durumda değil | Kötü durumda. |
 | 6 |DeletePending | Cihaz için bekleyen bir silme komutu vardır. |
 | 7 |RetireIssued | Cihaz için bir devre dışı bırakma komutu verildi. |
 | 8 |WipeIssued | Bir silme komutu verildi. |
@@ -190,10 +190,10 @@ ms.locfileid: "52181460"
 
 ## <a name="example"></a>Örnek
 
-| workPlaceJoinStateID  | Ad | Açıklama |
+| workPlaceJoinStateID  | Name | Açıklama |
 |---------|------------|--------|
 | 0 |Bilinmiyor |Bir cihaz iş yerine katılmamışsa, Bilinmeyen durumundadır |
-| 1 |Başarılı |İş yerine katılma başarılı |
+| 1. |Başarılı |İş yerine katılma başarılı |
 | 2 |FailureToGetScepMetadata |SCEP meta verileri alma başarısız |
 | 3 |FailureToGetScepChallenge |SCEP sınama alma başarısız |
 | 4 |DeviceFailureToInstallScepCommand |Cihazda SCEP komutu yükleme başarısız |
@@ -214,9 +214,9 @@ ms.locfileid: "52181460"
 
 ## <a name="example"></a>Örnek
 
-| ManagementAgentTypeID  | Ad | Açıklama |
+| ManagementAgentTypeID  | Name | Açıklama |
 |---------|------------|--------|
-| 1 |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
+| 1. |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
 | 2 |MDM | Cihaz bir MDM aracısı kullanılarak yönetiliyor |
 | 3 |EasMdm | Cihaz, Exchange Active Sync ve bir MDM aracısıyla yönetiliyor |
 | 4 |IntuneClient | Cihaz, Intune bilgisayar aracısı tarafından yönetilir |
@@ -258,7 +258,7 @@ ms.locfileid: "52181460"
 | EasID | Cihaz Exchange Active Sync ile yönetiliyorsa cihazın EAS kimliği. |
 | GraphDeviceIsManaged | Intune’un Azure AD’de ayarladığı son yönetim durumu. |
 | GraphDeviceIsCompliant | Intune’un Azure AD’de ayarladığı son uyumluluk durumu. |
-| SerialNumber | Mevcutsa cihazın seri numarası. |
+| seri numarası | Mevcutsa cihazın seri numarası. |
 | EnrolledByUser | Kullanıcı tablosundaki userId sütununa başvuran ve cihazı kaydeden kullanıcının kimliği. |
 | RowLastModifiedDateTimeUTC | Bu kaydın son değiştirildiği tarih. |
 | ProcessorArchitecture | İşlemci mimarisi. |
@@ -296,7 +296,7 @@ ms.locfileid: "52181460"
 | CertExpirationDate |MDM yönetim sertifikasının sona erme tarihi. |
 | MdmStatusKey |MdmStatus anahtarı. |
 | OSFamily |İşletim Sistemi Ailesi (Windows, iOS, Android vb.) |
-| OSVersion |İşletim sistemi sürümü. |
+| İşletim sistemi sürümü |İşletim sistemi sürümü. |
 | OSMajorVersion |İşletim sistemi sürümünün ana sürüm bileşeni (major.minor.build.revision). |
 | OSMinorVersion |İşletim sistemi sürümünün alt sürüm bileşeni (major.minor.build.revision). |
 | OSBuildNumber |İşletim sistemi sürümünün derleme sürümü bileşeni (major.minor.build.revision). |
@@ -304,7 +304,7 @@ ms.locfileid: "52181460"
 | EasID |Cihaz Exchange Active Sync ile yönetiliyorsa cihazın EAS kimliği. |
 | GraphDeviceIsManaged |Intune’un Azure AD’de ayarladığı son yönetim durumu. |
 | GraphDeviceIsCompliant |Intune’un Azure AD’de ayarladığı son uyumluluk durumu. |
-| SerialNumber |Mevcutsa cihazın seri numarası. |
+| seri numarası |Mevcutsa cihazın seri numarası. |
 | EnrolledByUser |Kullanıcı tablosundaki userId sütununa başvuran ve cihazı kaydeden kullanıcının kimliği. |
 | RowLastModifiedDateTimeUTC |Bu kaydın son değiştirildiği tarih. |
 | ProcessorArchitecture |İşlemci mimarisi. |
@@ -316,14 +316,14 @@ ms.locfileid: "52181460"
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-**MdmDeviceInventoryHistories** varlığı, MDM ile yönetilen cihazların envanter verileri için son 90 günlük anlık görüntülerini barındırır. DateKey sütunu, satır için günü gösterir. Bazı özellikler tüm cihazlarda uygulanamayabilir veya doldurulamayabilir, o nedenle daha fazla ayrıntı için bu sayfadan yardım alın. Daha fazla bilgi için bkz. [Microsoft Intune’da envanterli cihazlarınızı anlama](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
+**MdmDeviceInventoryHistories** varlığı, MDM ile yönetilen cihazların envanter verileri için son 90 günlük anlık görüntülerini barındırır. DateKey sütunu, satır için günü gösterir. Bazı özellikler tüm cihazlarda uygulanamayabilir veya doldurulamayabilir, o nedenle daha fazla ayrıntı için bu sayfadan yardım alın. Daha fazla bilgi için bkz. [Microsoft Intune’da envanterli cihazlarınızı anlama](device-inventory.md).
 
 | Özellik  | Açıklama |
 |---------|------------|
 | DateKey | Günü gösteren tarih tablosuna başvuru. |
 | DeviceKey |Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur. |
 | DeviceModel |Cihazın modeli. |
-| İşletim sistemi |Cihazın işletim sistemi. |
+| İşletim Sistemi |Cihazın işletim sistemi. |
 | DeviceName |Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılabilir olamaz. |
 | SoftwareVersion |Bu, çoğu zaman işletim sistemi sürümüdür ancak Apple platformlarında işletim sistemi sürümünden farklıdır. |
 | Imei |IMEI numarası |
@@ -354,7 +354,7 @@ ms.locfileid: "52181460"
 | CertExpiry |MDM yönetim sertifikasının sona erme tarihi. |
 | DeviceClientAgentVersion |İstemci Aracısı Sürümü. |
 | DeviceClientID |Cihaz İstemci Kimliği. |
-| SerialNumber |Seri Numarası. |
+| seri numarası |Seri Numarası. |
 | DeviceManufacturer |Cihaz Üreticisi. |
 | DMVersion |DM sürümü. |
 | FirmwareVersion |Üretici Yazılımı Sürümü. |

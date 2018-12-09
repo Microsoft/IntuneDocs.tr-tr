@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187013"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112417"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune’da macOS cihazların kaydını ayarlama
 
@@ -37,7 +37,7 @@ macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın
 
 - [Etki alanlarını yapılandırma](custom-domain-name-configure.md)
 - [MDM Yetkilisini ayarlama](mdm-authority-set.md)
-- [Grup oluşturma](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [Grup oluşturma](groups-add.md)
 - [Şirket Portalı’nı yapılandırma](company-portal-app.md)
 - [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
 - [Bir MDM anında iletme sertifikası alma](apple-mdm-push-certificate-get.md)

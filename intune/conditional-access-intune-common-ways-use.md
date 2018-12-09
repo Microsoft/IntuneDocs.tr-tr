@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune ile koşullu erişim
-titlesuffix: ''
+title: Koşullu erişim senaryoları
+titlesuffix: Microsoft Intune
 description: Intune koşullu erişimin cihaz tabanlı ve uygulama tabanlı koşullu erişim için yaygın olarak nasıl kullanıldığını öğrenin.
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187676"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112485"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?
 
@@ -45,7 +45,7 @@ Exchange Online ve diğer Office 365 ürünleri için cihaz tabanlı koşullu er
 
 -   [Intune cihaz uyumluluğu](device-compliance.md) hakkında daha fazla bilgi edinin.
 
--   [E-postayı, Office 365'i ve diğer hizmetleri Intune ile koşullu erişim kullanarak koruma](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) hakkında daha fazla bilgi edinin.
+-   [E-postayı, Office 365'i ve diğer hizmetleri Intune ile koşullu erişim kullanarak koruma](app-based-conditional-access-intune.md) hakkında daha fazla bilgi edinin.
 
 > [!NOTE]
 > Android cihazlarda, Sharepoint Online için Cihaz Tabanlı Erişim'i etkinleştirdiğinizde, kullanıcıların kayıtlı cihazda **Tarayıcı Erişimini Etkinleştir** seçeneğini aşağıdaki şekilde etkinleştirmesi gerekir:
@@ -125,7 +125,7 @@ Mobil cihazlar Mobil Tehdit Savunması aracısını yüklediklerinde, aracı, mo
 
 Intune ve mobil tehdit savunması tümleştirmesi, cihaz riskine bağlı olarak alınan koşullu kararlarında rol oynar.
 
--   [Intune mobil tehdit savunması](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense) hakkında daha fazla bilgi edinin.
+-   [Intune mobil tehdit savunması](mobile-threat-defense.md) hakkında daha fazla bilgi edinin.
 
 ### <a name="conditional-access-for-windows-pcs"></a>Windows Bilgisayarlar için koşullu erişim
 

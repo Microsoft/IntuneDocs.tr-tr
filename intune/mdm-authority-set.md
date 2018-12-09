@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0eb3ccf85c8851f16dcfe303603f65517fcf7312
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183766"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112587"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
@@ -41,7 +41,7 @@ Olası yapılandırmalar şunlardır:
 - **Office 365 için Mobil Cihaz Yönetimi** - Office 365’in Intune bulut çözümüyle tümleştirmesi. Office 365 Yönetim Merkezi’nden Intune’u siz yapılandırırsınız. Intune Tek Başına ile sağlanan özelliklerin bir alt kümesini içerir. MDM yetkilisini Office 365 Yönetim Merkezi’nden ayarlama.
 
 > [!IMPORTANT]
-> Configuration Manager'ın 1610 veya sonraki bir sürümü ve Microsoft Intune'un 1705 sürümünde, MDM yetkilisini, Microsoft Destek ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Ayrıntılar için bkz. [Yanlış MDM yetkilisi ayarı seçilirse yapılacaklar](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
+> Configuration Manager'ın 1610 veya sonraki bir sürümü ve Microsoft Intune'un 1705 sürümünde, MDM yetkilisini, Microsoft Destek ile iletişim kurmaya ve mevcut yönetilen cihazlarınızın kaydını silip tekrar kaydetmeye gerek kalmadan değiştirebilirsiniz. Ayrıntılar için bkz [MDM yetkilisini Configuration Manager olarak değiştirme hazırlanma](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM yetkilisini Intune olarak ayarlama
 
@@ -90,8 +90,8 @@ MDM yetkilisindeki değişikliğe hazırlanmak için aşağıdaki bilgileri göz
     > [!NOTE]    
     > MDM yetkiliniz **Intune ve Office 365 tarafından yönetiliyor** olarak görünüyorsa MDM yetkilinizi **Configuration Manager** (karma) olarak değiştirdiğinizde, Office 365 tarafından yönetilen MDM cihazlarınız artık yönetilmez. MDM yetkilisini değiştirmeden önce bu kullanıcılara Intune veya Enterprise Mobility Suite lisansı atamanızı öneririz.   
 
-- [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) Cihaz Kayıt Yöneticisi rolünü kaldırın. Ayrıntılar için bkz. [Intune’dan bir cihaz kayıt yöneticisini silme](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune).
-- Yapılandırılmış tüm cihaz grup eşlemelerini kapatın. Ayrıntılar için bkz. [Microsoft Intune’da cihazları cihaz grubu eşleme ile kategorilere ayırma](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
+- [Microsoft Intune yönetim konsolunda](http://manage.microsoft.com) Cihaz Kayıt Yöneticisi rolünü kaldırın. Ayrıntılar için bkz. [Intune’dan bir cihaz kayıt yöneticisini silme](device-enrollment-manager-enroll.md#remove-device-enrollment-manager-permissions).
+- Yapılandırılmış tüm cihaz grup eşlemelerini kapatın. Ayrıntılar için bkz. [Microsoft Intune’da cihazları cihaz grubu eşleme ile kategorilere ayırma](device-group-mapping.md).
 - MDM yetkilisindeki değişiklik sırasında son kullanıcılar etkilenmeyecektir. Ancak, cihazlarının açık olduğundan ve değişiklikten hemen sonra hizmete bağlandıklarından emin olmak için son kullanıcılara bu değişikliği bildirmek isteyebilirsiniz. Bu önlemi almanız, olabildiğince çabuk bir şekilde olabildiğince fazla cihazın değişiklik sonrasında hizmete bağlanmasını ve kaydolmasını sağlar.
 - MDM yetkilisindeki değişiklikten önce iOS cihazları yönetmek için tek başına Intune kullanıyorsanız, Intune’da önceden kullanılan bu Apple Anında İletilen Bildirim hizmetinin (APNs) Configuration Manager’da (karma) yenilendiğinden ve kiracıyı ayarlamak için kullanıldığından emin olmalısınız.    
 

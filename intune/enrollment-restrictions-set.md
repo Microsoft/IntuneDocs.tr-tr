@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e813d64d3019748eed3c985dcefda744188ad850
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861039"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112961"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -52,7 +52,7 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
 
 ## <a name="create-a-restriction"></a>Kısıtlama oluşturma
 
-1. Azure portalında oturum açın.
+1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. **Kısıtlama oluştur**'u seçin.
@@ -67,14 +67,14 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
 
 ## <a name="set-device-type-restrictions"></a>Cihaz türü kısıtlamalarını ayarlama
 
-Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarlarını değiştirebilirsiniz. Bu kısıtlamalar, zaten kayıtlı olan cihazları etkilemez. Bu özellikle [Intune PC aracısı](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) ile kaydedilen cihazlar engellenemez.
+Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarlarını değiştirebilirsiniz. Bu kısıtlamalar, zaten kayıtlı olan cihazları etkilemez. Bu özellikle [Intune PC aracısı](manage-windows-pcs-with-microsoft-intune.md) ile kaydedilen cihazlar engellenemez.
 
-1. Azure portalında oturum açın.
+1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. **Cihaz Türü Kısıtlamaları** > ayarlamak istediğiniz kısıtlamayı seçin > **Özellikler** > **Platform seçin**. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
     ![Bir platforma izin verme veya platformu engelleme ekran görüntüsü](media/enrollment-restrictions-set/platform-allow-block.png)
-5. **Tamam**’ı seçin.
+5. Seçin **Tamam**.
 6. **Platformları yapılandır**’ı seçin.
     ![Platform yapılandırma ekran görüntüsü](media/enrollment-restrictions-set/configure-platforms.png)
 7. Listelenen platformlar için en düşük ve en yüksek **Sürümler**’i seçin. Desteklenen sürüm biçimleri:
@@ -82,7 +82,7 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
     - iOS major.minor.rev destekler. İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir.
     - Windows, yalnızca Windows 10 için major.minor.rev.build destekler.
 8. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**’yi seçin.
-9. **Tamam**’ı seçin.
+9. Seçin **Tamam**.
 
 ### <a name="blocking-personal-android-devices"></a>Kişisel Android cihazlarını engelleme
 - Kişisel Android cihazların kaydını engellerseniz kişisel Android iş profili cihazları hala kaydedilebilir durumda olacaktır.
@@ -114,7 +114,7 @@ Aşağıdaki kişisel kayıt yöntemleri de engellenir:
 
 Aşağıdaki adımları izleyerek bir cihaz sınırı kısıtlamasının ayarlarını değiştirebilirsiniz:
 
-1. Azure portalında oturum açın.
+1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. **Cihaz Sınırı Kısıtlamaları**'nın altında, ayarlamak istediğiniz kısıtlamayı seçin.
@@ -137,7 +137,7 @@ Cihaz kaydı, hem cihaz türü hem de cihaz sınırı kısıtlamaları için var
 
 Varsayılan kısıtlamalar dışındaki tüm kısıtlamaların önceliğini değiştirebilirsiniz.
 
-1. Azure portalında oturum açın.
+1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. Öncelik listesinde kısıtlamanın üzerine gelin.

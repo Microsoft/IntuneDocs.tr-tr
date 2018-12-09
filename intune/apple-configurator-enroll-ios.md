@@ -1,5 +1,5 @@
 ---
-title: İOS cihaz kaydını ayarlama - Apple Configurator-Kurulum Yardımcısı
+title: iOS cihaz kaydı - Apple Configurator-Kurulum Yardımcısı
 titleSuffix: Microsoft Intune
 description: Kurulum Yardımcısı ile şirkete ait iOS cihazlarını kaydetmek için Apple Configurator’ı kullanmayı öğrenin.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f3da65c010ed14300b7de014aa9b3c4c8c43024f
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 6a49ee917540c9378f69dc6a025fbe5f8429767c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032410"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112825"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator ile iOS cihaz kaydını ayarlama
 

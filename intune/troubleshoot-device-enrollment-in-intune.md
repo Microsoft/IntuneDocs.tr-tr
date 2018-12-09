@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: df84438ca93e50c392b085eb439abe02f074e5c3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189733"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112934"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
@@ -73,7 +73,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 
 > [!NOTE]
 > 
-> Cihaz kaydı için üst sınır uygulanmasını istemiyorsanız [Şirkete ait cihazları Microsoft Intune’da Cihaz Kayıt Yöneticisi’ne kaydetme](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) bölümünde açıklandığı gibi Cihaz Kayıt Yöneticisi hesabı kullanabilirsiniz.
+> Cihaz kaydı için üst sınır uygulanmasını istemiyorsanız [Şirkete ait cihazları Microsoft Intune’da Cihaz Kayıt Yöneticisi’ne kaydetme](device-enrollment-manager-enroll.md) bölümünde açıklandığı gibi Cihaz Kayıt Yöneticisi hesabı kullanabilirsiniz.
 > 
 > Bir kullanıcı oturumu için Koşullu Erişim ilkesi zorunlu tutulduysa, söz konusu kullanıcı hesabı, Cihaz Kayıt Yöneticileri hesabına eklendiğinde kaydı tamamlayamaz.
 

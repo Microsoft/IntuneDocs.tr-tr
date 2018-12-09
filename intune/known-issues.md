@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183052"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112383"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune’da bilinen sorunlar
 
@@ -29,9 +29,9 @@ ms.locfileid: "52183052"
 
 Microsoft Intune’daki tüm bilinen sorunlar hakkında bilgi edinmek için bu makaleyi kullanın.
 
-Burada listelenmeyen bir hatayı bildirmek istiyorsanız, [bir destek isteği açın](get-support.md).
+Burada listelenmeyen bir hatayı bildirmek istiyorsanız [bir destek isteği açın](get-support.md).
 
-Intune için yeni bir özellik talep etmek istiyorsanız, [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) sitesinde bir rapor doldurabilirsiniz.
+Intune için yeni bir özellik talep etmek istiyorsanız, dosyalama göz önünde bir [Intune Feedback](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) rapor.
 
 ## <a name="migration"></a>Geçiş
 
@@ -44,13 +44,13 @@ Azure klasik portalında oluşturulan ilkeler artık kullanım dışı olacak. M
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune eski PC istemcisi özellikleri yalnızca Silverlight konsolunda bulunur
 
-Azure Portal üzerinde Intune'da Windows 10'u yönetme özelliği, Windows MDM kaydıyla sağlanır. Daha fazla bilgi için bkz. [Azure konsolu ve eski Intune PC İstemcisi'ndeki Intune](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+Azure Portal üzerinde Intune'da Windows 10'u yönetme özelliği, Windows MDM kaydıyla sağlanır. Daha fazla bilgi için bkz. [Azure konsolu ve eski Intune PC İstemcisi'ndeki Intune](intune-legacy-pc-client.md).
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Geçiş sırasında Intune tarafından oluşturulan gruplar diğer Microsoft ürünlerinin işlevlerini etkileyebilir
 
 Intune’dan Azure portalına geçiş yaptığınızda **Tüm Kullanıcılar - b0b08746-4dbe-4a37-9adf-9e7652c0b421** adlı yeni bir grup görebilirsiniz. Bu grupta yalnızca Intune lisanslı kullanıcılar değil Azure Active Directory'niz içindeki tüm kullanıcılar bulunur. Mevcut kullanıcılardan bazılarının veya yeni kullanıcıların herhangi bir gruba üye olmamasını bekliyorsanız bu kullanım diğer Microsoft ürünlerinde sorunlara neden olabilir.
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>Geçirilen ilkeler için durum dikey pencereleri çalışmıyor
+### <a name="status-blades-for-migrated-policies-dont-work"></a>Geçirilen ilkeler için durum dikey pencereleri çalışmıyor
 
 Azure portalındaki Azure klasik portalından geçirilen ilkeler için durum bilgilerini görüntüleyemezsiniz. Ancak, bu ilkelerin raporlarını klasik portalda görüntülemeye devam edebilirsiniz. Geçirilen yapılandırma ilkelerinin durum bilgilerini görüntülemek için bunları Azure portalında yeniden oluşturun.
 
@@ -58,11 +58,11 @@ Azure portalındaki Azure klasik portalından geçirilen ilkeler için durum bil
 
 
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Belirli VPP uygulamaları için birden çok uygulama yükleme istemi
-Son kullanıcı cihazlarında zaten yüklü olan bazı VPP uygulamaları için birden çok uygulama yükleme istemi görebilirsiniz. Bu sorun, Intune Azure portalına yüklediğiniz VPP belirteci için **Otomatik uygulama güncelleştirmeleri** seçeneğini **Açık** olarak ayarladıysanız ortaya çıkar.    
+Birden çok uygulama yükleme belirli son kullanıcı cihazlarında yüklü olan VPP uygulamaları, ister görebilirsiniz. Bu sorun, Intune Azure portalına yüklediğiniz VPP belirteci için **Otomatik uygulama güncelleştirmeleri** seçeneğini **Açık** olarak ayarladıysanız ortaya çıkar.    
 
-Bu soruna geçici çözüm olarak VPP belirteci için **Otomatik uygulama güncelleştirmeleri** seçeneğini devre dışı bırakabilirsiniz. Bunu yapmak için Azure portalında Microsoft Intune’u açın. Intune’da **İstemci uygulamaları** > **iOS VPP belirteçleri**’ni seçin. Daha sonra etkilenen uygulamayı dağıtan VPP Belirtecini seçin, **Düzenle** > **Otomatik uygulama güncelleştirmeleri** > **Kapalı** > **Kaydet**’i seçin. Alternatif olarak, etkilenen uygulamanın VPP uygulaması olarak dağıtımını durdurabilirsiniz. Böylece istemler sona erer.    
+Bu sorunu geçici olarak çözmek için devre dışı bırakabilirsiniz **otomatik uygulama güncelleştirmeleri** VPP belirteci için seçeneği. Bunu yapmak için Azure portalında Microsoft Intune’u açın. Intune’da **İstemci uygulamaları** > **iOS VPP belirteçleri**’ni seçin. Daha sonra etkilenen uygulamayı dağıtan VPP Belirtecini seçin, **Düzenle** > **Otomatik uygulama güncelleştirmeleri** > **Kapalı** > **Kaydet**’i seçin. Alternatif olarak, etkilenen uygulamanın VPP uygulaması olarak dağıtımını durdurabilirsiniz. Böylece istemler sona erer.    
 
-Bu, geçerli sürümde bilinen bir sorundur. Bu sorunu çözmek yakında bir düzeltme sunacağız. Düzeltme uygulandığında, kullanıcılarınız artık birden çok uygulama yükleme istemi görmeyecektir.
+Bu, geçerli sürümde bilinen bir sorundur. Bu sorunu gideren bir düzeltme sahibiz. Düzeltme uygulandığında, kullanıcılarınız artık birden çok uygulama yükleme istemi görmeyecektir.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>iOS toplu satın alınan uygulamaları, yalnızca varsayılan Intune kiracı dilinde bulunuyor
 iOS toplu satın alınan uygulamaları, yalnızca Intune hesabınız ile aynı ülke kodunda görüntülenir ve atanabilir. Intune yalnızca Intune kiracı hesabı ülke kodu ile aynı iTunes bölgesindeki uygulamaları eşitler. Örneğin, Intune hesabınız Almanca ise ve yalnızca ABD mağazasında bulunan bir uygulamayı satın alırsanız Intune bu uygulamayı göstermez.

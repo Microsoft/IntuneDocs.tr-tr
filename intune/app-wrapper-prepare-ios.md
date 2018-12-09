@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182117"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112893"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182117"
 
 Şirket içi iOS uygulamaları için Intune uygulama koruma özelliklerini uygulamanın kodunu değiştirmeden etkinleştirmek üzere iOS için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanın.
 
-Araç, bir uygulama etrafında sarmalayıcı oluşturan bir Mac OS komut satırı uygulamasıdır. İşleme alındıktan sonra bir uygulamanın işlevselliğini [uygulama koruma ilkeleri](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) dağıtarak değiştirebilirsiniz.
+Araç, bir uygulama etrafında sarmalayıcı oluşturan bir Mac OS komut satırı uygulamasıdır. İşleme alındıktan sonra bir uygulamanın işlevselliğini [uygulama koruma ilkeleri](app-protection-policies.md) dağıtarak değiştirebilirsiniz.
 
 Aracı indirmek için bkz. GitHub üzerinde [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
@@ -102,7 +102,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
    ![Apple Geliştirici portalı](./media/iOS-signing-cert-1.png)
 
-5. SCP ![Sağ üst köşedeki Apple Geliştirici portalı artı işaretine](./media/iOS-signing-cert-2.png) tıklayarak bir iOS sertifikası ekleyin.
+5. &nbsp; ![Sağ üst köşedeki Apple Geliştirici portalı artı işaretine](./media/iOS-signing-cert-2.png) tıklayarak bir iOS sertifikası ekleyin.
 
 6. **Üretim** altında **Şirket İçi ve Geçici** bir sertifika oluşturmayı seçin.
 
@@ -127,7 +127,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
     ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](./media/iOS-signing-cert-6.png)
 
-12. Apple Geliştirici sitesine dönün. **Devam**'a tıklayın. Ardından CSR dosyasını karşıya yükleyin.
+12. Apple Geliştirici sitesine dönün. **Devam**’a tıklayın. Ardından CSR dosyasını karşıya yükleyin.
 
 13. Apple imzalama sertifikanızı oluşturur. Bunu indirin ve Mac OS bilgisayarınızda hatırlayacağınız bir konuma kaydedin.
 
@@ -157,7 +157,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
    ![Şirket içi sağlama profilini seçin](./media/iOS-provisioning-profile-1.png)
 
-5. **Devam**'a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
+5. **Devam**’a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
 
 6. Profilinizi (.mobileprovision uzantısı ile) Mac OS bilgisayarınıza yükleme adımlarını izleyin.
 
@@ -220,9 +220,9 @@ IntuneMAMPackager/Contents/MacOS klasöründe, `Parameters.plist` öğesini (bo�
 | Çıkış Uygulama Paketi Yolu |boş| -o ile aynı|
 | Profil Yolu Sağlama |boş| -p ile aynı|
 | SHA-1 Sertifika Karması |boş| -c ile aynı|
-| Ayrıntılı Mod Etkin |yanlış| -v ile aynı|
-| Eksik Yetkilendirmeleri Kaldır | yanlış| -c ile aynı|
-| Varsayılan Derlemeyi Engelle |yanlış | Bağımsız değişkenler olmadan -b kullanma ile eşdeğerdir|
+| Ayrıntılı Mod Etkin |false| -v ile aynı|
+| Eksik Yetkilendirmeleri Kaldır | false| -c ile aynı|
+| Varsayılan Derlemeyi Engelle |false | Bağımsız değişkenler olmadan -b kullanma ile eşdeğerdir|
 |Dize Geçersiz Kılmayı Derle | boş| Sarmalanan çıkış uygulaması için özel CFBundleVersion |
 |Uzantı Sağlayan Profil Yolları | boş| Uygulamanın uzantı sağlama profillerinin bir dizisi.
 
@@ -439,5 +439,5 @@ Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini alma
 
 ### <a name="see-also"></a>Ayrıca bkz.
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)</br>
-- [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Microsoft Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](app-sdk.md)
