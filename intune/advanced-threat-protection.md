@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180243"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168003"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune’da Windows Defender ATP’yi koşullu erişim ile etkinleştirme
 
 Windows Defender Gelişmiş Tehdit Koruması (ATP) ve Microsoft Intune, bir kuruluşta güvenlik ihlallerini önlemeye ve ihlallerin etkisini sınırlamaya yardımcı olmak için birlikte çalışır.
 
-Bu özellik şunlarda geçerlidir: Windows 10 cihazlar
+Bu özellik şu platformlarda geçerlidir: Windows 10 cihazlar
 
 Örneğin biri, kuruluşunuzdaki bir kullanıcıya kötü amaçlı kod içeren bir Word eki gönderir. Kullanıcı eki açar ve içeriği etkinleştirir. Bir yükseltilmiş ayrıcalık saldırısı başlar ve uzak makinedeki saldırgan, kurbanın cihazında yönetici haklarına sahip olur. Daha sonra saldırgan, kullanıcının diğer cihazlarına uzaktan erişir.
 
@@ -51,7 +51,7 @@ ATP’yi Intune ile birlikte kullanmak için aşağıdakilerin yapılandırılm�
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Intune’da Windows Defender ATP’yi etkinleştirme
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihaz uyumluluğu** > **Windows Defender ATP** > **Windows Defender Güvenlik Merkezi'ni açın** öğesini seçin.
 
@@ -89,13 +89,13 @@ Yapılandırma paketini kullanarak bir cihaz ekledikten sonra bunu tekrar yapman
 5. **Profil türü** olarak **Windows Defender ATP (Windows 10 Masaüstü)**’nü seçin.
 6. Şu ayarları yapılandırın:
 
-  - **Windows Defender ATP istemci yapılandırma paketi türü**: Yapılandırma paketini profile eklemek için **Ekle**’yi seçin. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
+  - **Windows Defender ATP istemci yapılandırma paketi türü**: Seçin **katmanına** profile yapılandırma paketi eklemek için. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
   
     > [!NOTE] 
-    > Windows Defender ATP ile doğru bir şekilde bağlantı kurduysanız Intune yapılandırma profilini sizin için otomatik olarak **Ekler**.
+    > Windows Defender ATP ile bağlantı düzgün belirlediğinize, Intune otomatik olarak ayarlanır **katmanına** , yapılandırma profili ve **Windows Defender ATP istemci yapılandırma paketi türü** ayarı kullanılabilir olmayacak.
   
-  - **Tüm dosyalar için örnek paylaşımı**: Örneklerin toplanmasına ve Windows Defender ATP ile paylaşılmasına izin vermek için **Etkinleştir**’i seçin. Örneğin şüpheli bir dosya görürseniz, bunu ayrıntılı analiz için Windows Defender ATP’ye gönderebilirsiniz. **Yapılandırılmadı** seçeneği, Windows Defender ATP ile örnek paylaşmaz.
-  - **Telemetri raporlama sıklığını artırma**: Yüksek riskli cihazlarda bu ayar için **Etkinleştir** seçeneğini belirterek cihazların Windows Defender ATP hizmetine daha sık telemetri raporlamasını sağlayın.
+  - **Tüm dosyalar için örnek paylaşımı**: **Etkinleştirme** örnekleri toplanmasına ve Windows Defender ATP ile paylaşılmasına olanak tanır. Örneğin şüpheli bir dosya görürseniz, bunu ayrıntılı analiz için Windows Defender ATP’ye gönderebilirsiniz. **Yapılandırılmadı** seçeneği, Windows Defender ATP ile örnek paylaşmaz.
+  - **Telemetri raporlama sıklığını hızlandır**: Yüksek riskli cihazlarda **etkinleştirme** telemetri Windows Defender ATP hizmetine daha sık rapor için bu ayarı.
 
     [System Center Configuration Manager kullanarak Windows 10 makineler ekleme](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) makalesi, bu Windows Defender ATP ayarları hakkında daha fazla bilgi içermektedir.
 
@@ -110,10 +110,10 @@ Uyumluluk ilkesi, cihazda kabul edilebilir bir risk düzeyi belirler.
 4. **Platform** olarak **Windows 10 ve üzerini** seçin.
 5. **Windows Defender ATP** ayarlarında **Cihazın şu makine risk puanında veya bu değerin altında olmasını gerektirin** seçeneğini dilediğiniz düzeye ayarlayın:
 
-  - **Temiz**: En güvenli düzeydir. Cihazda mevcut bir tehdit olamaz ancak cihaz şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
+  - **NET**: Bu en güvenli düzeydir. Cihazda mevcut bir tehdit olamaz ancak cihaz şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
   - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumludur. Orta veya yüksek tehdit düzeyindeki cihazlar uyumsuzdur.
-  - **Orta**: Cihazda bulunan tehditler düşük veya orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
-  - **Yüksek**: Tüm tehdit düzeylerine izin verdiği için bu düzey en düşük güvenliğe sahiptir. Yüksek, orta ve düşük tehdit düzeyindeki cihazlar uyumlu olarak değerlendirilir.
+  - **Orta**: Cihazda bulunan tehditler düşük veya Orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
+  - **Yüksek**: Bu düzey en az güvenli seçenektir ve tüm tehdit düzeylerine izin verir. Yüksek, orta ve düşük tehdit düzeyindeki cihazlar uyumlu olarak değerlendirilir.
 
 6. **Tamam**’ı ve **Oluştur**’u seçerek değişikliklerinizi kaydedin (ve ilkeyi oluşturun).
 

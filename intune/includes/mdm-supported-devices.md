@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 10.0 ve üzeri
-- Mac OS X 10.11 ve üzeri (Desteklenen sürüm, Aralık 2018’de 10.12 ve üzeri olarak değişecektir)
+- Mac OS X 10.12 ve üzeri
 
 ### <a name="google"></a>Google
 - Android 4.4 ve üzeri (Samsung Knox Standard 4.4 ve üzeri dahil)

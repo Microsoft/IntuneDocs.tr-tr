@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: f6cb413e4cdd4c465254786e3f6abe1cf52db78e
-ms.sourcegitcommit: ea4dac7c6106f060698266a78a6693c10cd84a0b
+ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
+ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "53003581"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53200615"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,14 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-december-10-2018"></a>10 Aralık 2018 haftası
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Microsoft otomatik güncelleştirme sürümü macOS cihazlar için gereken 4.50 <!-- 3503442 -->
+Şirket portalı ve diğer Office uygulamaları için güncelleştirmeleri almaya devam etmek için Intune tarafından yönetilen macOS cihazları için Microsoft otomatik güncelleştirme 4.5.0 yükseltmeniz gerekir. Kullanıcılar bu sürümü, Office uygulamaları için zaten sahip olabilirsiniz.
+
+### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Intune, macOS 10.12 veya üzerini gerektirir. <!-- 2827778 -->
+Intune artık macOS 10.12 veya sonraki bir sürümü gerektirir. Önceki macOS sürümlerini kullanarak cihazlarını Intune'a kaydetmek için Şirket portalı kullanamazsınız. Desteği ve yeni özellikleri almak için kullanıcıların macOS 10.12 veya üzeri için cihazını yükseltmeyi ve Şirket portalı en son sürüme yükseltin.
 
 ## <a name="week-of-november-26-2018"></a>26 Kasım 2018 haftası
 
@@ -74,7 +82,7 @@ Artık aşağıdaki uygulamaları ile yönetebileceğiniz [Intune uygulama korum
 - PowerApps (Android, iOS)
 - Akış (Android, iOS)
 
-Kurumsal veri ve kontrol veri aktarımı için Intune ilkeyle yönetilen diğer uygulamalar gibi bu uygulamaları korumak için uygulama koruma ilkelerini kullanın. Not: Akışı henüz konsolda görünür değilse, oluşturduğunuzda veya düzenlediğinizde akış ve uygulama koruma ilkeleri eklersiniz. Bunu yapmak için **+ daha fazla uygulama** seçeneğini ve ardından belirtin *uygulama kimliği* giriş alanını akış. Android kullanım için *com.microsoft.flow*, ve iOS kullanımı için *com.microsoft.procsimo*.
+Kurumsal veri ve kontrol veri aktarımı için Intune ilkeyle yönetilen diğer uygulamalar gibi bu uygulamaları korumak için uygulama koruma ilkelerini kullanın. Not: Akış henüz konsolda görünür değilse, oluşturduğunuzda veya düzenlediğinizde akış ve uygulama koruma ilkeleri eklersiniz. Bunu yapmak için **+ daha fazla uygulama** seçeneğini ve ardından belirtin *uygulama kimliği* giriş alanını akış. Android kullanım için *com.microsoft.flow*, ve iOS kullanımı için *com.microsoft.procsimo*.
 
 #### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune uygulama koruma ilkeleri kullanıcı arabirimi güncelleştirmesi <!-- 3251427 -->
 Özelliğin ayarları için etiketleri ve anlamak her kolaylaştırmak Intune uygulama koruması için düğmeler değiştirdik. Değişikliklerden bazıları şunlardır:  
@@ -187,9 +195,9 @@ Intune’da PowerShell betikleri AAD cihaz güvenlik gruplarına hedeflenebilir.
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Android, Android kurumsal için yeni "Gerekli parola türü" varsayılan ayarı<!-- 2649963 -->
 Yeni bir uyumluluk ilkesi oluşturduğunuzda (**Intune** > **Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Android** veya Platform > Sistem Güvenliği için **Android kurumsal**), **Gerekli parola türü** varsayılan değeri değişir:
 
-Cihaz varsayılanı’ndan En az sayısal’a
+Kaynak: Cihaz varsayılanı için: En az sayısal
 
-Şunlar için geçerlidir: Android, Android Kurumsal
+Uygulama hedefi: Android, Android Kurumsal
 
 Bu ayarları görmek için [Android](compliance-policy-create-android.md) veya [Android Kurumsal](compliance-policy-create-android-for-work.md)’a gidin.
 
@@ -304,7 +312,7 @@ Son kullanıcılar artık Windows Şirket Portalı’nda klavye kısayollarını
 #### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10---1333668---"></a>Windows 10 çalıştıran cihazlardaki VPN yapılandırma profillerinde DNS son ekleri oluşturma<!-- 1333668 -->
 Bir VPN cihaz yapılandırma profili oluşturduğunuzda (**Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **Windows 10 ve üzeri** platform > **VPN** profil türü) bazı DNS ayarları girersiniz. Bu güncelleştirme ile Intune'da birden çok **DNS soneki** de girebilirsiniz. DNS son ekleri kullanırken bir ağ kaynağını tam etki alanı adı (FQDN) yerine kısa adını kullanarak arayabilirsiniz. Bu güncelleştirme ayrıca Intune’da DNS son eklerinin sırasını değiştirmenize de imkan verir.
 [Windows 10 VPN ayarları](vpn-settings-windows-10.md#dns-settings) makalesi, geçerli DNS ayarlarını listeler.
-Şunlar için geçerlidir: Windows 10 cihazlar
+Uygulama hedefi: Windows 10 cihazlar
 
 #### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>Android kurumsal iş profillerinde her zaman açık VPN desteği <!-- 1333705 -->
 Bu güncelleştirmede yönetilen iş profilleri olan Android kurumsal cihazlarda Her Zaman Açık VPN bağlantıları kullanabilirsiniz. Her zaman açık VPN bağlantıları; kullanıcı cihazının kilidini açtığında, cihaz yeniden başlatıldığında veya kablosuz ağ değiştiğinde bağlı kalır veya hemen tekrar bağlanır. Bağlantıyı “kilitli”moduna da alabilirsiniz, böylece VPN bağlantısı etkin olana kadar tüm ağ trafiği engellenir.
@@ -345,7 +353,7 @@ Yeni cihaz sertifika değişkenleri:
 
 [Bir SCEP sertifika profili oluşturma](certificates-scep-configure.md#create-a-scep-certificate-profile) makalesi, bir SCEP yapılandırma profili oluştururken geçerli değişkenleri listeler. 
 
-Şunlar için geçerlidir: Windows 10 ve üzeri ve iOS, Wi-Fi desteklenir
+Uygulama hedefi: Windows 10 ve üzeri ve iOS, Wi-Fi için desteklenir
 
 #### <a name="remotely-lock-uncompliant-devices----2064495---"></a>Uyumsuz cihazları uzaktan kilitleme <!-- 2064495 -->
 Cihazın uyumlu olmadığı durumlarda, uyumluluk ilkesinde cihazı uzaktan kilitleyen bir eylem oluşturabilirsiniz. Intune > **Cihaz uyumluluğu**'nda yeni bir ilke oluşturun veya mevcut bir ilkeyi > **Özellikler**'i seçin. **Uyumsuzluğa yönelik eylemler** > **Ekle**’yi ve cihazı uzaktan kilitlemeyi seçin.
@@ -361,7 +369,7 @@ Bu güncelleştirmede Windows 10 Bilgi Noktası cihaz yapılandırma profilinde 
 - Şu anda aynı cihazda birden fazla bilgi noktası profili oluşturabiliyorsunuz. Bu güncelleştirme ile Intune, cihaz başına yalnızca bir bilgi noktası profilini destekleyecek. Tek bir cihazda birden fazla bilgi noktası profiline ihtiyacınız varsa bir Özel URI kullanabilirsiniz.
 - **Çok uygulamalı bilgi noktası** profilinde, uygulama kılavuzundaki **Başlangıç menüsü düzeni** için uygulama kutucuğu boyutunu ve sırasını seçebilirsiniz. Daha fazla özelleştirme isterseniz bir XML dosyasını karşıya yükleyebilirsiniz.
 - Bilgi Noktası Tarayıcısı ayarları, **Bilgi Noktası** ayarlarına taşınıyor. Şu anda **Bilgi Noktası web tarayıcısı** ayarlarının Azure portalında kendi kategorisi var.
-Şunlar için geçerlidir: Windows 10 ve üzeri
+Uygulama hedefi: Windows 10 ve üzeri
 
 
 
@@ -594,9 +602,9 @@ Android P sürümünü desteklemek amacıyla Android için Intune Uygulama SDK's
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>macOS cihazlarında Güvenlik Duvarı ayarlarını kullanarak cihaz uyumluluk ilkesi oluşturma <!-- 1497640 -->
 Yeni bir macOS uyumluluk ilkesi oluşturduğunuzda (**Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Platform: macOS** > **Sistem güvenliği**), bazı yeni **Güvenlik Duvarı** ayarları sağlanır: 
 
-- **Güvenlik Duvarı**: Gelen bağlantıların ortamınızda nasıl işleneceğini yapılandırın.
-- **Gelen bağlantılar**: DHCP, Bonjour ve IPSec gibi temel İnternet hizmetleri için gerekenler dışında tüm gelen bağlantıları **engelleyin**. Bu ayar tüm paylaşım hizmetlerini de engeller.
-- **Gizli Mod**: Cihazın yoklama isteklerine yanıt vermesini önlemek için gizli modu **etkinleştirin**. Cihaz, yetkilendirilmiş uygulamalardan gelen istekleri yanıtlamaya devam eder.
+- **Güvenlik Duvarı**: Gelen bağlantıları yapılandırma ortamınıza işlenir.
+- **Gelen bağlantıları**: **Blok** DHCP, Bonjour ve IPSec gibi temel internet Hizmetleri için gerekli olanlar dışındaki tüm gelen bağlantıları. Bu ayar tüm paylaşım hizmetlerini de engeller.
+- **Gizli mod**: **Etkinleştirme** cihaz yoklama isteklerine yanıt vermesini önlemek için gizli modu. Cihaz, yetkilendirilmiş uygulamalardan gelen istekleri yanıtlamaya devam eder.
 
 Şunlar için geçerlidir: macOS 10.12 ve üstü
 
@@ -692,8 +700,8 @@ Microsoft Intune yöneticisi olarak, Volume Purchase Program (VPP) üzerinden sa
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>Şirket Portalı uygulamasında uyumsuzluk iletilerine güncelleştirmeler <!-- 1832222 -->
 Cihaz uyumlu olmadığında cihaz kullanıcılarının gördüğü iletileri düzelttik. İletiler özgün anlamlarını koruyor ancak daha kolay bir dil ve daha az teknik terminoloji ile güncelleştirildi. Ayrıca belge bağlantılarını ve bunları güncel tutmaya yönelik düzeltme adımlarını da yeniledik.
 Aşağıda öncesi ve sonrası gösterilen metin, göreceğiniz ileti iyileştirmelerinin bir örneğidir:
-- **Öncesi**: *Bu cihaz, BT yöneticiniz tarafından belirlenen süre içinde Intune ile iletişime geçmedi. Bu sorunu çözmek için lütfen cihazınızda şirket portalı uygulamasını açın ve Uyumluluğu Denetle düğmesine tıklayın.*
-- **Sonrası**: *Cihazınız bir süredir kuruluşunuza iade edilmedi. Bağlantıyı yeniden kurmak üzere cihazınızda Şirket Portalı uygulamasını açın ve cihazınız için Ayarları Denetle’ye dokunun.*
+- **Önce**: *Bu cihaz Intune hizmetine BT yöneticiniz tarafından gerekli belirtilen bir zaman dönemi içindeki bağlantı kurmadı. Bu sorunu çözmek için lütfen cihazınızda şirket portalı uygulamasını açın ve Uyumluluğu Denetle düğmesine tıklayın.*
+- **Sonra**: *Cihazınız bir süredir kuruluşunuz oturum iade. Bağlantıyı yeniden kurmak üzere cihazınızda Şirket Portalı uygulamasını açın ve cihazınız için Ayarları Denetle’ye dokunun.*
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>iOS VPP uygulama lisansını iptal etme <!-- 1863797 -->
 Yönetici olarak, bir kullanıcı veya cihaza atanmış olan iOS VPP uygulama lisansını geri kazanabilirsiniz. iOS VPP uygulamasını kaldırmak uygulama lisansını geri kazanmanıza da olanak tanıyacak. Uygulamayı kaldırmadan önce, kullanıcının veya cihazın uygulamayla hedeflenen gruptan kaldırılması gerekir. Kullanıcı veya cihazın gruptan kaldırılması, uygulamanın yeniden yüklenmesini önler. Bu adımlar tamamlandıktan sonra, uygulama lisansını başka bir kullanıcı veya cihaza atamayı seçebilirsiniz. iOS VPP uygulama lisansları hakkında daha fazla bilgi için bkz. [Microsoft Intune'da toplu satın alınan iOS uygulamalarını yönetme](vpp-apps-ios.md).
@@ -724,11 +732,11 @@ Bu özelliği kullanmak için, şirket içi Active Directory ortamınızdan Azur
 - uygulanamaz Farklı bir platformun cihaz sayısını gösteren bir resim de görüntülenir. Örneğin bir iOS profiline bakıyorsanız, yeni kutucuk yine bu profile atanmış olan iOS dışı cihazların sayısını gösterir. Bkz. [Cihaz uyumluluk ilkeleri](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Cihaz uyumluluğu üçüncü taraf virüsten koruma çözümlerini destekler <!-- 2325484 -->
-Yeni bir cihaz uyumluluğu ilkesi oluşturduğunuzda (**Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Platform: Windows 10 ve üzeri** > **Ayarlar** > **Sistem Güvenliği**) yeni **[Cihaz Güvenliği](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** seçenekleri olur: 
-- **Virüsten koruma**: **Gerektir** olarak ayarlandığında, Windows Güvenlik Merkezi’ne kaydedilmiş Symantec ve Windows Defender gibi virüsten koruma çözümlerini kullanarak uyumluluğu denetleyebilirsiniz. 
-- **Casus yazılımdan koruma**: **Gerektir** olarak ayarlandığında, Windows Güvenlik Merkezi’ne kaydedilmiş Symantec ve Windows Defender gibi casus yazılımdan koruma çözümlerini kullanarak uyumluluğu denetleyebilirsiniz. 
+Cihaz uyumluluk ilkesi oluşturduğunuzda (**cihaz uyumluluğu** > **ilkeleri** > **ilkesi oluşturma**  >  **Platformu: Windows 10 ve üzeri** > **ayarları** > **sistem güvenliği**), vardır yeni **[cihaz güvenliği](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** seçenekleri: 
+- **Virüsten koruma**: Ayarlandığında **gerektiren**, uyumluluk Windows Symantec ve Windows Defender gibi Güvenlik Merkezi ile kaydedilen virüsten koruma çözümleri kullanarak denetleyebilirsiniz. 
+- **Casus yazılımdan koruma**: Ayarlandığında **gerektiren**, uyumluluk Windows Symantec ve Windows Defender gibi Güvenlik Merkezi ile kaydedilen casus yazılımdan koruma çözümlerini kullanarak denetleyebilirsiniz. 
 
-Şunlar için geçerlidir: Windows 10 ve üzeri 
+Uygulama hedefi: Windows 10 ve üzeri 
 
 ### <a name="device-enrollment"></a>Cihaz kaydı
 
@@ -833,7 +841,7 @@ AutoPilot dağıtım profilleri AutoPilot cihazları içeren Azure AD grupların
 #### <a name="set-compliance-by-device-location----851881----"></a>Cihaz konumuna göre uyumluluk ayarlama <!-- 851881 ! -->
 Bazı durumlarda, ağ bağlantısı tarafından belirlenen bir konumdan şirket kaynaklarına erişimi kısıtlamak isteyebilirsiniz. Artık cihazın IP adresine bağlı olarak bir uyumluluk ilkesi (**Cihaz uyumluluğu** > **Konumlar**) oluşturabilirsiniz. Cihaz, IP aralığı dışına çıktığında şirket kaynaklarına erişemez.
 
-Uygulandığı öğe: Android cihazlar 6.0 ve üzeri, güncelleştirilmiş Şirket Portalı uygulaması ile
+Uygulama hedefi: Android cihazlar 6.0 ve üzeri, güncelleştirilmiş Şirket Portalı uygulaması ile
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Windows 10 Enterprise RS4 Autopilot cihazlarda tüketici uygulamaları ve deneyimlerini engelleme<!-- 1621980 -->
 Windows 10 Enterprise RS4 AutoPilot cihazlarınızda tüketici uygulama ve deneyimlerinin yüklenmesini önleyebileceksiniz. Bu özelliği görmek için **Intune** > **Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **Platform** = **Windows 10 veya üzeri** > **Profil türü** = **Cihaz kısıtlamaları** > **Yapılandır** > **Windows Spot** > **Tüketici özellikleri**'ne gidin. 
@@ -847,7 +855,7 @@ Artık Tüm cihazlar dikey penceresinde IMEI ve seri numaraları için arama yap
 #### <a name="management-name-field-will-be-editable----1875989---"></a>Yönetim adı alanı düzenlenebilir olacak <!-- 1875989 -->
 Artık bir cihazın **Özellikler** dikey penceresindeki yönetim adı alanını düzenleyebilirsiniz. Bu alanı düzenlemek için **Cihazlar** > **Tüm cihazlar** > cihazı seçin > **Özellikler** seçeneğini belirleyin. Bir cihazı benzersiz olarak tanımlamak için yönetim adı alanını kullanabilirsiniz.
 
-#### <a name="new-all-devices-filter-device-category----1878520---"></a>Yeni Tüm cihazlar filtresi: Cihaz kategorisi <!-- 1878520 -->
+#### <a name="new-all-devices-filter-device-category----1878520---"></a>Yeni tüm cihazları Filtresi: Cihaz kategorisi <!-- 1878520 -->
 Şimdi **Tüm cihazlar** listesini cihaz kategorisine göre filtreleyebilirsiniz. Bunu yapmak için, **Cihazlar** > **Tüm cihazlar** > **Filtre** > **Cihaz kategorisi**'ni seçin.
 
 #### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>iOS ve MacOS cihazlarda ekran paylaşımı için TeamViewer kullanma <!-- 1985547 -->
@@ -858,7 +866,7 @@ Artık kiracı başına tek bir Microsoft Intune Exchange Connector’la sınır
 
 Intune şirket içi Exchange bağlayıcısıyla, cihazın Intune'a kayıtlı olup olmadığına ve Intune cihaz uyumluluk ilkelerine uyup uymadığına bağlı olarak şirket içi Exchange posta kutularınıza cihaz erişimini ayarlayabilirsiniz. Bağlayıcıyı ayarlamak için, Intune şirket içi Exchange bağlayıcısını Azure portalından indirir ve Exchange kuruluşunuzdaki bir sunucuya yüklersiniz. Microsoft Intune panosunda **Şirket içi erişim**'i seçin ve ardından **Kurulum**'un altında **Exchange ActiveSync bağlayıcısı**'nı seçin. Exchange şirket içi bağlayıcısını indirin ve Exchange kuruluşunuzdaki bir sunucuya yükleyin. Artık kiracı başına tek Exchange bağlayıcısıyla sınırlı olmadığınıza göre, başka Exchange kuruluşlarınız varsa her ek Exchange kuruluşu için aynı süreci izleyip bağlayıcı indirebilir ve yükleyebilirsiniz.
 
-#### <a name="new-device-hardware-detail-ccid----2156657---"></a>Yeni cihaz donanım ayrıntısı: CCID <!-- 2156657 -->
+#### <a name="new-device-hardware-detail-ccid----2156657---"></a>Yeni cihaz donanım Ayrıntısı: CCID <!-- 2156657 -->
 Çip Kartı Arabirim Cihazı (CCID) bilgileri şimdi her cihaza eklendi. Bunu görmek için, **Cihazlar** > **Tüm cihazlar**'ı seçin, bir cihaz belirtin, **Donanım**'ı seçin ve **Ağ ayrıntıları**>'nın altına bakın.
 
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Tüm kullanıcıları ve tüm cihazları kapsam grupları olarak atama <!-- 2196803 -->
@@ -937,7 +945,7 @@ Bu güncelleştirmeyle yöneticiler, Windows 10 VPN profilleri için Her Zaman A
 
 #### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Eğitim profilleri için yeni yazıcı ayarları <!-- 1308900 -->
 
-Eğitim profilleri için yeni ayarlar, **Yazıcılar** kategori: **Yazıcılar**, **Varsayılan yazıcı**, **Yeni yazıcı ekle** altında sağlanır.
+Eğitim profilleri için yeni ayarlar altında kullanılabilir **Yazıcılar** kategorisi: **Yazıcılar**, **varsayılan yazıcı**, **yeni Yazıcı Ekle**.
 
 #### <a name="show-caller-id-in-personal-profile---android-enterprise-work-profile---1098984---"></a>Kişisel profilde arayan kimliğini gösterme - Android Kurumsal iş profili <!--1098984 -->
 Bir cihazda kişisel profil kullanan son kullanıcılar, işle ilgili bir kişiden gelen aramalarda arayan kimliğini göremeyebilir. 
@@ -947,23 +955,23 @@ Bu güncelleştirme ile **Android Kurumsal** > **Cihaz kısıtlamaları** > **İ
 
 Etkinleştirildiğinde (yapılandırılmadığında), iş kişisi arayan ayrıntıları kişisel profilde görüntülenir. Engellendiğinde ise iş kişisi arayan numarası kişisel profilde görüntülenmez. 
 
-Şunlar için geçerlidir: Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları
+Uygulama hedefi: Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>Endpoint Protection ayarlarına yeni Windows Defender Credential Guard ayarları eklendi <!--1102252 --><!--from 1802 and 1804-->
 
 Bu güncelleştirmeyle, [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) (**Cihaz yapılandırması** > **Profiller** > **Endpoint Protection**) aşağıdaki ayarları içerir: 
 
-- **Windows Defender Credential Guard**: Credential Guard'ı sanallaştırma tabanlı güvenlikle açar. Bu özelliğin etkinleştirilmesi, **Güvenli Önyükleme ile Platform Güvenlik Düzeyi** ve **Sanallaştırma Tabanlı Güvenlik** ayarının her ikisi de etkinleştirildiğinde bir sonraki önyüklemede kimlik bilgilerinin korunmasına yardımcı olur. Şu seçenekler mevcuttur:
-  - **Devre Dışı**: Credential Guard daha önce **Kilitsiz etkin**" seçeneğiyle açıldıysa, Credential Guard'ı uzaktan kapatır.
+- **Windows Defender Credential Guard**: Sanallaştırma tabanlı güvenlik ile Credential Guard açar. Bu özelliğin etkinleştirilmesi, **Güvenli Önyükleme ile Platform Güvenlik Düzeyi** ve **Sanallaştırma Tabanlı Güvenlik** ayarının her ikisi de etkinleştirildiğinde bir sonraki önyüklemede kimlik bilgilerinin korunmasına yardımcı olur. Şu seçenekler mevcuttur:
+  - **Devre dışı bırakılmış**: Credential Guard daha önce ile açılmışsa **kilit olmadan etkin**"Credential Guard uzaktan kapatır seçeneği.
 
-  - **UEFI kilidi ile etkin**: Credential Guard’ın kayıt defteri anahtarı veya Grup İlkesi kullanılarak devre dışı bırakılamamasını sağlar. Bu ayarı kullandıktan sonra Credential Guard'ı devre dışı bırakmak için, Grup İlkesi'ni "Devre Dışı" olarak ayarlamalısınız. Ardından, fiziksel olarak kullanıcısı olan her bilgisayardan güvenlik işlevselliğini kaldırın. Bu adımlar UEFI'de kalıcı olan yapılandırmayı temizler. UEFI yapılandırması devam ettiği sürece, Credential Guard etkindir.
+  - **UEFI kilidi ile etkin**: Credential Guard bir kayıt defteri anahtarı kullanarak veya Grup İlkesi kullanılarak devre dışı bırakılamaz, sağlar. Bu ayarı kullandıktan sonra Credential Guard'ı devre dışı bırakmak için, Grup İlkesi'ni "Devre Dışı" olarak ayarlamalısınız. Ardından, fiziksel olarak kullanıcısı olan her bilgisayardan güvenlik işlevselliğini kaldırın. Bu adımlar UEFI'de kalıcı olan yapılandırmayı temizler. UEFI yapılandırması devam ettiği sürece, Credential Guard etkindir.
 
-  - **Kilitsiz etkin**: Credential Guard’ın Grup İlkesi kullanılarak uzaktan devre dışı bırakılmasına olanak tanır. Bu ayarı kullanan cihazların en az Windows 10 (Sürüm 1511) çalıştırıyor olması gerekir.
+  - **Kilit olmadan etkin**: Credential Guard ' ın Grup İlkesi kullanılarak uzaktan devre dışı bırakılmasına olanak verir. Bu ayarı kullanan cihazların en az Windows 10 (Sürüm 1511) çalıştırıyor olması gerekir.
 
 Credential Guard yapılandırılırken aşağıdaki bağımlı teknolojiler otomatik olarak etkinleştirilir: 
 
-  - **Sanallaştırma Tabanlı Güvenliği (VBS) etkinleştir**: Bir sonraki yeniden başlatmada sanallaştırma tabanlı güvenliği (VBS) açar. Sanallaştırma tabanlı güvenlik, güvenlik hizmetlerine destek sağlamak için Windows Hiper Yöneticisi'ni kullanır ve Güvenli Önyükleme gerektirir.
-  - **Doğrudan Bellek Erişimi (DMA) ile Güvenli Önyükleme**: VBS'yi Güvenli Önyükleme ve doğrudan bellek erişimi ile açar. DMA koruması, donanım desteği gerektirir ve yalnızca düzgün yapılandırılmış cihazlarda etkinleştirilir. 
+  - **Sanallaştırma tabanlı güvenlik (VBS) etkinleştirme**: Sanallaştırma tabanlı güvenlik (VBS) sonraki önyüklemede açar. Sanallaştırma tabanlı güvenlik, güvenlik hizmetlerine destek sağlamak için Windows Hiper Yöneticisi'ni kullanır ve Güvenli Önyükleme gerektirir.
+  - **Güvenli Önyükleme doğrudan bellek erişimi (DMA) ile**: Güvenli Önyükleme ve doğrudan bellek erişimi ile VBS açar. DMA koruması, donanım desteği gerektirir ve yalnızca düzgün yapılandırılmış cihazlarda etkinleştirilir. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>SCEP sertifikasında özel bir konu adı kullanma <!-- 2064190 -->
 Bir SCEP sertifika profilinde özel bir konuda **OnPremisesSamAccountName** ortak adını kullanabilirsiniz. Örneğin `CN={OnPremisesSamAccountName})` kullanabilirsiniz.
@@ -971,7 +979,7 @@ Bir SCEP sertifika profilinde özel bir konuda **OnPremisesSamAccountName** orta
 ####  <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles----1098977---"></a>Android Kurumsal iş profillerinde kamera ve ekran yakalamayı engelleme <!-- 1098977 -->
 Android cihazlar için cihaz kısıtlamaları yapılandırırken iki yeni engelleme özelliği kullanılabilir: 
 - Kamera: Cihazdaki tüm kameralara erişimi engeller
-- Ekran yakalama: Ekran yakalamayı ve güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller
+- Ekran yakalama: Ekran yakalamayı engeller ve ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller
 
 Android Kurumsal iş profili cihazlarda geçerlidir.
 
@@ -1045,7 +1053,7 @@ Windows 10 için Intune Şirket Portalı, [Fluent Design System'in gezinti gör�
 
 #### <a name="use-cisco-anyconnect-client-for-ios----1333708---"></a>iOS için Cisco AnyConnect istemcisini kullanma <!-- 1333708 -->
 
-iOS için yeni bir VPN profili oluştururken, şimdi iki seçenek vardır: **Cisco AnyConnect** ve **Cisco Eski AnyConnect**. Cisco AnyConnect profilleri 4.0.7x ve daha yeni sürümleri destekler. Mevcut iOS Cisco AnyConnect VPN profilleri **Cisco Eski AnyConnect** olarak etiketlenir ve Cisco AnyConnect 4.0.5x ve daha eski sürümlerle bugün olduğu gibi çalışmaya devam eder.
+İOS için yeni bir VPN profili oluşturduğunuzda da artık iki seçenek vardır: **Cisco AnyConnect** ve **Cisco eski AnyConnect**. Cisco AnyConnect profilleri 4.0.7x ve daha yeni sürümleri destekler. Mevcut iOS Cisco AnyConnect VPN profilleri **Cisco Eski AnyConnect** olarak etiketlenir ve Cisco AnyConnect 4.0.5x ve daha eski sürümlerle bugün olduğu gibi çalışmaya devam eder.
 
 > [!NOTE]
 > Bu değişiklik yalnızca iOS'ye yöneliktir. Android, Android Kurumsal iş profilleri ve macOS platformlarında yine tek Cisco AnyConnect seçeneği olacaktır.
@@ -1100,7 +1108,7 @@ Güncelleştirilmiş görünümü görmek için [Uygulama kullanıcı arabirimin
 
 ## <a name="notices"></a>Bildirimler
 
-### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Değişiklik planı: Exchange Online için Intune bağlayıcısını Intune'da kullanılabilir olmayacak <!-- 3105122 -->
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Değişiklik planı: Exchange Online için Intune Bağlayıcısı Intune tarafından kullanılamaz <!-- 3105122 -->
 Exchange Online ve koşullu erişim ile deneyiminizi kolaylaştırmak için biz Exchange Online için Intune 'Hizmet' bağlayıcısını devre dışı bırakacağız. Bu değişiklik, aralık hizmet güncelleştirmesiyle başlar ve Şubat 2019 hizmet güncelleştirmesiyle tamamlanamadı.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
@@ -1121,12 +1129,12 @@ Hizmetten hizmete bağlayıcı ayarlama ve Exchange Active Sync yalnızca cihaz�
 
 
 
-### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Değişiklik planı: Eğitim için Intune’da performans güncelleştirmeleri <!--1750215-->
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Değişiklik planı: Eğitim için Intune performans güncelleştirmeleri <!--1750215-->
 Eğitim için Intune’da kullanıcılarınıza veya cihazlarınıza ayar atamanız sırasında hızı ve güvenilirliği artırmak için bazı güncelleştirmeler ekliyoruz. Bu değişikliğin bir parçası olarak Kasım sonuna doğru ilke veya ayar atamalarınızı yeni gruplara taşıyacağız.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
 
-Eğitim için Intune müşterisi olarak iki dinamik Azure Active Directory (Azure AD) grubunuz olacak: “Tüm Kullanıcılar” ve “Tüm Cihazlar”. Güncelleştirmeler sonrasında bu “Tüm Kullanıcılar” ve “Tüm Cihazlar” Azure AD grupları, Eğitim için Intune konsolunda görünür olmayacak. Ancak Azure konsolunda Intune’da görünür olmaya devam edecek ve “Tüm Kullanıcılar (Eski, kullanmayın)” ve “Tüm Cihazlar (Eski, kullanmayın)” olarak yeniden adlandırılacak.
+Müşteri eğitim için Intune iki dinamik Azure Active Directory (Azure AD) grupları vardır: "Tüm kullanıcılar" ve "Tüm cihazlar". Güncelleştirmeler sonrasında bu “Tüm Kullanıcılar” ve “Tüm Cihazlar” Azure AD grupları, Eğitim için Intune konsolunda görünür olmayacak. Ancak Azure konsolunda Intune’da görünür olmaya devam edecek ve “Tüm Kullanıcılar (Eski, kullanmayın)” ve “Tüm Cihazlar (Eski, kullanmayın)” olarak yeniden adlandırılacak.
 
 Güncelleştirmeler çıktıktan sonra Intune’da uygulama ve ayar atamak için Azure AD grupları kullanmanıza gerek kalmayacak. Bunun yerine Ayarlar atamalarınızı Eğitim için Intune’da sizin için oluşturacağımız ve önceki gibi “Tüm Kullanıcılar” ve “Tüm Cihazlar” olarak görünen yeni gruplara taşıyacağız. Bu değişiklikler arka uçta olduğu için Eğitim için Intune konsolunda bir farklılık olmayacaktır. Değişikliklerin son kullanıcılarınız veya kayıtlı cihazlarınız üzerinde herhangi bir etkisi olması beklenmemektedir. 
 
@@ -1136,7 +1144,7 @@ Biz ilke atamalarınızı taşırken sizin hiçbir şey yapmanıza gerek yoktur.
 Şu anda Azure’da Intune üzerinde yukarıda bahsedilen Azure AD gruplarına ilke atıyorsanız, bunları Eğitim için Intune konsolundaki Tüm Kullanıcılar ve Tüm Cihazlar gruplarına atamaya başlayın. Azure AD gruplarının konsolda eski olarak yeniden adlandırıldığını görürseniz Azure AD’de ilke atamayı bırakın. Yeniden adlandırılan grupları şu anda başka bir amaçla kullanmıyorsanız silin.
 
 
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Değişiklik Planı: Intune, Aralık'ta macOS 10.12 ve üstünü desteklemeye geçecektir <!--2970975--> 
+### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Değişiklik planı: Intune, macOS 10.12 ve daha yüksek aralık desteklemek taşınır <!--2970975--> 
 
 Apple macOS 10.14'ü çok yakın bir geçmişte piyasaya sürmüştür. Bunu nedenle Intune Aralık 2018'de macOS 10.12 ve üstünü desteklemeye geçecektir. 
 
@@ -1164,8 +1172,8 @@ Aralık ayından sonra yukarıda listelenenler dışında cihazları olan son ku
 Daha fazla bilgi için bkz. [Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
  
 
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Değişiklik Planı: Premier müşteriler için yeni Intune destek deneyimi 
-12/4/18 güncelleştirme: destek isteği oluşturma MPO de aralık 3 ancak daha sonraki bir tarihte bunun yerine devre dışı bırakılır değil için bu işlemi daha iyi hale getirmek çalışıyoruz. İleti Merkezi biliyor ve kısa süre içinde bu değişikliğin zaman çizelgeleri paylaşmak için bu gönderiyi güncelleştirmenize vereceğiz.
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Değişiklik planı: Yeni bir Intune destek deneyimi için Premier müşterileri 
+12/4/18 güncelleştirme: Destek isteği oluşturma MPO de aralık 3 ancak daha sonraki bir tarihte bunun yerine devre dışı bırakılır değil için bu işlemi daha iyi hale getirmek çalışıyoruz. İleti Merkezi biliyor ve kısa süre içinde bu değişikliğin zaman çizelgeleri paylaşmak için bu gönderiyi güncelleştirmenize vereceğiz.
 
 Bir Microsoft Premier müşterisi olarak şu anda Microsoft Premier Online (MPO) portalını (premier.microsoft.com) ve Azure’da Intune’u (portal.azure.com) kullanarak Intune için destek istekleri oluşturabilirsiniz. 3 Aralık 2018 itibarıyla Premier destek deneyimini geliştirmeye devam etmek adına yalnızca Azure’da Intune ile destek istekleri oluşturabileceksiniz.
 
@@ -1186,7 +1194,7 @@ Yalnızca Genel Yönetici, Intune Hizmet Yöneticisi ve Hizmet Destek Yöneticis
 Daha fazla bilgi için bkz. [Microsoft Intune destek ekibi blog gönderisi](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
-### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Eylem gerekiyor: Lütfen Intune'da Android cihazınızın kısıtlama veya uyumluluk ilkesi parolasını güncelleştirin
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Eylemi gerçekleştir: Lütfen, Android cihaz kısıtlama veya uyumluluk İlkesi parola ayarlarını ıntune'da güncelleştirin
 Intune, Android 4.4 ve üstü cihazlarında sağlanan "cihaz varsayılanı" parola türünü kaldıracak. Android platformlarıyla cihaz varsayılanları arasındaki farklardan dolayı, bu ilke cihaz tarafından genellikle isteğe bağlı olarak kabul edilir. Bu ayarın Android'de ne zaman zorunlu tutulacağı konusundaki karışıklığı gidermek için, önümüzdeki sürümlerden birinde kullanıcı arabiriminden bu ayarı kaldıracağız. 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
 - Cihazlarda parolanın gerekli olmasını amaçlıyorsanız, "cihaz varsayılanı" kullanmak yerine Android platformu profillerinizi düzenleyip gerekli parola türünü açıkça ifade etmenizi öneririz.
@@ -1199,7 +1207,7 @@ https://aka.ms/PasswordSettings
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->
 Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler. [Intune destek web günlüğümüzü](https://aka.ms/compportalats) ayrıntılarla güncelleyeceğiz.
 
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>Değişiklik Planı: Intune’u TLS 1.2’ye taşıma
+### <a name="plan-for-change-intune-moving-to-tls-12"></a>Değişiklik planı: Intune için TLS 1.2 taşıma
 31 Ekim 2018 tarihinden itibaren Intune; sınıfının en iyisi şifrelemeyi sağlamak, hizmetin varsayılan olarak daha güvenli olduğundan emin olmak ve Microsoft Office 365 gibi diğer Microsoft hizmetleriyle uyum sağlamak için Aktarım Katmanı Güvenliği (TLS) protokol sürümü 1.2’yi destekleyecektir. Office, bu değişikliği MC128929 sürümünde gerçekleştirmişti.
 
 Şirket Portalı ayrıca 31 Ekim 2018'de TLS 1.2 desteği vermeye de başlayacaktır.
@@ -1212,7 +1220,7 @@ Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayac
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Ortamlarınızdaki TLS 1.0 ve 1.1 bağımlılıklarını önceden kaldırmanızı ve mümkün olan her yerde işletim sistemi düzeyinde TLS 1.0 ve 1.1’i devre dışı bırakmanızı öneririz. TLS 1.2’ye geçişinizi planlamaya hemen başlayın. Şu anda Intune tarafından desteklenmeyen ancak yine de ilke alma ihtimali olan ve TLS sürüm 1.2 ile iletişim kuramayacak olan cihazlar listesi için aşağıdaki web günlüğü gönderisine bakın. Bu son kullanıcıları, şirket kaynaklarına erişimi kaybedecekleri konusunda bilgilendirmeniz gerekebilir.
 
-**Ek Bilgi**: [Şifreleme için Intune’un TLS 1.2’ye taşınması](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
+**Ek bilgi**: [Intune için şifreleme TLS 1.2 taşıma](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
 
 
