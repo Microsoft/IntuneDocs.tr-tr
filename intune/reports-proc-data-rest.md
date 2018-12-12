@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bcd4d9177bcefc1e026bc55831e589a5bcb57105
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e5040626a27f50fae4df2ec2472d167269a282e4
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186002"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247280"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -61,13 +61,13 @@ Artık Azure’da tanımlanan bir uygulamanız var. Yerel uygulamadan Microsoft 
 4.  **Bir API Seç**’e tıklayın.
 5.  Web uygulaması adını aratın. Bu uygulamanın adı **Microsoft Intune API’sidir**.
 6.  Listeden uygulamaya tıklayın.
-7.  **Seç**’e tıklayın.
+7.  Seçin **seçin**.
 8.  **Microsoft Intune’dan veri ambarı bilgileri almak** için **Temsilcili İzinler**’e tıklayın.
 
     ![Erişimi etkinleştirme - Microsot Intune API'si](./media/reports-get_rest_data_client_access.png)
 
-9.  **Seç**’e tıklayın.
-10.  **Bitti**’yi seçin.
+9.  Seçin **seçin**.
+10.  **Done** (Bitti) öğesini seçin.
 11.  İsteğe bağlı olarak Gerekli izinler bölmesinde **İzin Ver**’i seçin. Böylece geçerli dizindeki tüm hesaplara erişim verirsiniz. Bu, kiracıdaki her kullanıcı için bir onay iletişim kutusu oluşturmayı önler. Daha fazla bilgi için bkz. [Uygulamaları Azure Active Directory ile tümleştirme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12.  **Evet**’i seçin.
 
@@ -93,7 +93,7 @@ Postman kullanarak REST araması yapmak için aşağıdaki bilgilere ihtiyacın�
 
 Uç nokta da gerekir. Veri Ambarı uç noktanızı almak için özel akış URL’si gereklidir. OData uç noktasını Veri Ambarı bölmesinden alabilirsiniz.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Diğer görevler** altında bulunan **Intune Veri Ambarı’nı Ayarlama**’yı seçin.
 4. **Üçüncü taraf raporlama hizmetleri kullan** altında özel akış URL’sini kopyalayın. Bu, şuna benzer olmalıdır: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
@@ -116,7 +116,7 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4.  **Yetkilendirme** sekmesini seçin ve **Tür** listesinden **OAuth 2.0**’ı seçin.
-5.  **Yeni Erişim Belirteci Al**’a tıklayın.
+5.  Seçin **yeni erişim belirteci alın**.
 6.  Azure’da uygulamanıza Geri Arama URL’si eklediğinizi doğrulayın. Geri Çağırma URL’si şudur: `https://www.getpostman.com/oauth2/callback`.
 7.  **Belirteç Adı** için Taşıyıcıyı yazın.
 8.  **Kimlik Doğrulama URL’sini** ekleyin. Bu, aşağıdakine benzer olmalıdır:  

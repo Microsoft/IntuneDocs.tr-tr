@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 11/13/2018
 ms.prod: ''
 ms.service: microsoft-intune
+ms.topic: article
 ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9f6d5bc8c124e3ba26b7e3fc110510c7d5e0e6a3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183171"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247076"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Uygulama koruma ilkesi kurulumunuzu doğrulama
 
@@ -41,7 +42,7 @@ Uygulama koruma İlkesi davranış'ınızı beklendiği gibi olmayan gösteriyor
 - Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir.
 
 #### <a name="user-app-protection-status"></a>Kullanıcı uygulama koruma durumu
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. Seçin **istemci uygulamaları** > **İzleyici** >  **uygulama koruma durumu**ve ardından **atanan kullanıcılar**Döşe. 
 4. Üzerinde **uygulama raporlama** sayfasında **Kullanıcı Seç** kullanıcıların ve grupların listesini getirmek için. 

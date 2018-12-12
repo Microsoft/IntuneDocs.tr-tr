@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 86f0892fe855201b9bdb28d61301353f6588954a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188135"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267020"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Uygulama yükleme sorunlarını giderme
 
@@ -30,7 +30,7 @@ Microsoft Intune MDM ile yönetilen cihazlarda bazen uygulama yüklemeleri başa
 
 Intune, belirli bir kullanıcının cihazında yüklü uygulamalar temelinde sorun giderme ayrıntıları sağlar.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **Sorun gider**’i seçin.
 4. Sorun gidermek üzere bir kullanıcı belirlemek için **Seçin**’e tıklayın. **Seçili kullanıcılar** bölmesi görüntülenir.
@@ -84,6 +84,19 @@ Aşağıdaki hata iletileri ve açıklamaları, Android ve iOS yükleme hatalar�
 |    Kullanıcı, uygulamayı güncelleştirme teklifini reddetti. (0x87D13B63)    |    Güncelleştirme işlemi sırasında son kullanıcı iptal düğmesine tıkladı.     |
 |    Bilinmeyen hata (0x87D103E8)    |    Bilinmeyen uygulama yükleme hatası oluştu. Bu, diğer hatanın oluşması sonucu ortaya çıkan hatadır.    |
 
+### <a name="other-installation-errors"></a>Diğer yükleme hataları
+
+|    Hata iletisi/kodu    |    Açıklama    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF, 0x80CF201C (istemci hatası)    |    Bu uygulamayı yüklemek için dışarıdan yükleme özellikli bir sisteme sahip olmanız gerekir. Uygulama paketinin güvenilir bir imza ile imzalandığından ve sahip etki alanına katılmış bir cihazda yüklü olduğundan emin olun **AllowAllTrustedApps** etkin ilke veya bir Windows dışarıdan yükleme lisansına sahip olan bir cihazda  **AllowAllTrustedApps** etkin ilke. Daha fazla bilgi için [paketleme, dağıtım ve sorgu Windows Store uygulamalarının sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).     |
+|    0x80073CF0    |    Paket açılamadı. Olası nedenler:<ul><li> Paket imzasız.</li><li> Yayımcı adı, imzalama sertifikası konusuyla eşleşmiyor.</li></ul> Denetleme **AppxPackagingOM** bilgi için olay günlüğünü. Daha fazla bilgi için [paketleme, dağıtım ve sorgu Windows Store uygulamalarının sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CF3    |    Paket güncelleştirme, bağımlılık veya çakışma doğrulaması başarısız oldu. Olası nedenler:<ul><li> Yüklü bir paketle gelen paket çakışıyor.</li><li> Belirtilen paket bağımlılığı bulunamadı.</li><li> Paket doğru işlemci mimarisini desteklemiyor.</li></ul> Denetleme **AppXDeployment-Server** bilgi için olay günlüğünü. Daha fazla bilgi için [paketleme, dağıtım ve sorgu Windows Store uygulamalarının sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CFB    |    Sağlanan paket zaten yüklü ve paketin yeniden yüklenmesi engellendi. Zaten yüklü olan paketten değil bir paket yüklüyorsanız bu hatayı alabilir. Dijital imzanın paketin bir parçası olduğunu da onaylayın. Bir paket yeniden oluşturulduğunda veya yeniden imzalandığında, bu paket artık önceden yüklenmiş paket ile aynı bit düzeyinde değildir. Bu hatayı düzeltmek için kullanılabilecek iki seçenek aşağıda belirtilmiştir:<ul><li> Uygulama sürüm numarasını Artır daha sonra yeniden oluşturun ve paketi yeniden imzalayın.</li><li> Yeni paketi yüklemeden önce sistem üzerindeki her kullanıcı için eski paketi kaldırın.</li></ul> Daha fazla bilgi için [paketleme, dağıtım ve sorgu Windows Store uygulamalarının sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x87D1041C    |    Uygulama yükleme başarılı oldu ancak uygulama algılanmadı. Uygulaması Intune tarafından başarıyla dağıtıldı, daha sonra kaldırıldı. Kaldırılmakta uygulama nedenleri şunlardır:<ul><li> Son kullanıcı uygulamayı kaldırıldı.</li><li> Hatalı uygulamalar için hangi cihaz raporları paketinde kimlik bilgileri eşleşmiyor.</li><li>Intune dışında güncelleştirildikten sonra kendi kendini güncelleştirme Msı'ler için uygulama bilgilerini ürün sürümü eşleşmiyor.</li></ul> Kullanıcıya uygulamayı şirket portalından yeniden yüklemesini söyleyin. Sonraki cihaz giriş yaptığında, gerekli uygulamaları'nin otomatik olarak yeniden yüklenecektir unutmayın.    |
+
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Microsoft Mağazası'ndan uygulama sorunlarını giderme
+
+[Microsoft Mağazası uygulamalarının paketleme, dağıtım ve sorgu sorunlarını giderme](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) konusunda yer alan bilgiler, Intune’u veya diğer araçları kullanarak Microsoft Mağazası’nden uygulama yüklerken karşılaşabileceğiniz genel sorunları gidermenize yardımcı olur.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

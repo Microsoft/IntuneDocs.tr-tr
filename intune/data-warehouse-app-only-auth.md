@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8da448ece30c1ae90c447f27056f19f74b16dd90
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185211"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247144"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Veri Ambarı uygulaması - yalnızca kimlik doğrulama
 
@@ -40,7 +40,7 @@ Aşağıdaki işlem, bir uygulama anahtarını işlemek ve dönüştürmek için
 
 Bu bölümde, Intune’da yönlendirme yapmak istediğiniz Web uygulaması hakkında ayrıntılar sağlayacaksınız. Web uygulaması, bir istemci-sunucu uygulamasıdır. Sunucu; kullanıcı arabirimi, içerik ve işlevleri içeren web uygulamasını sağlar. Bu tür bir uygulama Web’de ayrı olarak korunur. Intune’a web uygulaması erişimi vermek için Intune’u kullanırsınız. Veri akışı, web uygulaması tarafından başlatılır. 
 
-1.  [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1.  [Azure Portal](https://portal.azure.com) oturum açın.
 2.  Azure portalının üst tarafında yer alan **Arama kaynakları, hizmetler ve belgeler** alanını kullanarak **Azure Active Directory**’yi aratın.
 3.  Açılan menüde **Hizmetler**’in altında **Azure Active Directory**’yi seçin.
 4.  **Uygulama kayıtları**’nı seçin.
@@ -75,7 +75,7 @@ Bu bölümde Azure AD, uygulamanız için bir anahtar değeri oluşturur.
 Bu bölümde, uygulamalara izinler vereceksiniz.
 
 1.  **Ayarlar** dikey penceresinde **Gerekli izinler**’i seçin.
-2.  Tıklayın **ekleme**.
+2.  **Ekle**'yi tıklatın.
 3.  **Bir API ekle**’yi seçerek **Bir API seç** dikey penceresini görüntüleyin.
 4.  **Microsoft Intune API (MicrosoftIntuneAPI)**’yi seçin ve daha sonra **Bir API seç** dikey penceresinden **Seç**’e tıklayın. **İzinleri seç** adımı seçilir ve **Erişim Ver** dikey penceresi görüntülenir.
 5.  **Uygulama İzinleri** bölümüden **Microsoft Intune’dan veri ambarı bilgileri al**’ı seçin.

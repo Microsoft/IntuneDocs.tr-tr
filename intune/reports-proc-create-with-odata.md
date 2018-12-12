@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fc6b5aac1d75fc67c469f6ecd24e331d1cc35d30
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183001"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247246"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>OData akışına Power BI ile bir rapor oluşturma
 
@@ -45,17 +45,17 @@ _Varlık_ ve _tablo_ terimlerinin kullanımı aklınızı karıştırabilir. Ver
 
 ## <a name="install-power-bi-desktop"></a>Power BI Desktop’ı yükleme
 
-En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adresten indirebilirsiniz: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebilirsiniz: [Powerbı.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>Kiracınız için Intune Veri Ambarı OData akışına bağlanma
 
 > [!Note]  
 > Intune’da **Raporlar** izniniz olmalıdır. Daha fazla bilgi için bkz. [Yetkilendirme](reports-api-url.md).
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune Veri Ambarı** bölmesini açın.
-4. Özel akış URL’sini kopyalayın. Örneğin: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Özel akış URL’sini kopyalayın. Örneğin, `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Power BI Desktop’ı açın.
 6. **Veri Al** > **OData akışı**’nı seçin.
 7. Özel akış URL’sini **OData akışı** penceresindeki URL kutusuna yapıştırın.
@@ -68,7 +68,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adres
 
     ![Kuruluş hesabı kimlik bilgileri](media/reports-create-02-org-account.png)
 
-11. Seçin **bağlanma**. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
+11. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
 
     ![Gezgin](media/reports-create-02-loadentities.png)
 

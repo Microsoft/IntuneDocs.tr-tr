@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
-ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
+ms.openlocfilehash: d95bc665d271eac55682fa8f0aeee2bf267c48ef
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200615"
+ms.locfileid: "53267098"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,11 +45,20 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 
 ## <a name="week-of-december-10-2018"></a>10 Aralık 2018 haftası
 
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="updates-for-application-transport-security----748318---"></a>Uygulama taşıma güvenliği için güncelleştirmeler <!-- 748318 -->
+
+Aktarım Katmanı Güvenliği (Intune, varsayılan olarak daha güvenli olduğundan emin olun ve Microsoft Office 365 gibi diğer Microsoft hizmetleriyle hizalamak için sınıfının en iyisi şifreleme sağlamak için TLS) 1.2 + Intune destekler. Bu gereksinimi karşılamak için iOS ve macOS Şirket portalı, TLS 1.2 + gerektiren Apple'nın güncelleştirilmiş uygulama taşıma güvenliği (ATS) gereksinimleri zorlar. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS ve macOS Şirket portalı uygulamaları kullanan Intune müşterilerini etkiler. Daha fazla bilgi için [Intune destek blogu](https://aka.ms/compportalats).
+
+#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune uygulama SDK'sı, 256 bit şifreleme anahtarları destekleyecek <!-- 1832174 -->
+Şifreleme uygulama koruma ilkeleri tarafından etkinleştirilmişse Android için Intune uygulama SDK'sı artık 256 bit şifreleme anahtarları kullanır. SDK'sı, 128 bit anahtar içeriği ve eski SDK sürümleri kullanan uygulamalar ile uyumluluk için destek sağlamak üzere devam eder.
+
 ### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Microsoft otomatik güncelleştirme sürümü macOS cihazlar için gereken 4.50 <!-- 3503442 -->
 Şirket portalı ve diğer Office uygulamaları için güncelleştirmeleri almaya devam etmek için Intune tarafından yönetilen macOS cihazları için Microsoft otomatik güncelleştirme 4.5.0 yükseltmeniz gerekir. Kullanıcılar bu sürümü, Office uygulamaları için zaten sahip olabilirsiniz.
 
 ### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Intune, macOS 10.12 veya üzerini gerektirir. <!-- 2827778 -->
-Intune artık macOS 10.12 veya sonraki bir sürümü gerektirir. Önceki macOS sürümlerini kullanarak cihazlarını Intune'a kaydetmek için Şirket portalı kullanamazsınız. Desteği ve yeni özellikleri almak için kullanıcıların macOS 10.12 veya üzeri için cihazını yükseltmeyi ve Şirket portalı en son sürüme yükseltin.
+Intune artık macOS 10.12 veya sonraki bir sürümü gerektirir. Önceki macOS sürümlerini kullanarak cihazlarını Intune'a kaydetmek için Şirket portalı kullanamazsınız. Destek Yardımı ve yeni özellikleri almak için kullanıcıların macOS 10.12 veya üzeri için cihazını yükseltmeyi ve Şirket portalı en son sürüme yükseltin.
 
 ## <a name="week-of-november-26-2018"></a>26 Kasım 2018 haftası
 
@@ -103,6 +112,23 @@ Bu özelliği kullanmak için bkz: [iOS](compliance-policy-create-ios.md#device-
 Teslim iyileştirme Windows 10 ve üzeri için yeni bir yapılandırma profili ' dir. Bu özellik, kuruluşunuzdaki cihazlara yazılım güncelleştirmeleri iletmek için daha kolaylaştırılmış bir deneyim sunar. Bu güncelleştirme ayrıca ayarları içinde bir yapılandırma profili kullanarak yeni ve var olan güncelleştirme halkaları sunmanıza yardımcı olur.
 Teslim iyileştirme yapılandırma profili yapılandırmak için bkz [Windows 10 (ve üzeri) delivery optimization ayarları](delivery-optimization-windows.md).
 
+#### <a name="new-device-restriction-settings-added-to-ios-and-macos-devices----2827760---"></a>İOS ve macOS cihazları için eklenen yeni cihaz kısıtlama ayarları <!-- 2827760 -->
+Bu güncelleştirme ile iOS 12 yayımlanan iOS ve macOS cihazları için yeni ayarları içerir:
+
+**iOS ayarları**: 
+- Genel: Blok uygulama kaldırma (yalnızca denetimli)
+- Genel: Blok USB kısıtlı modu (yalnızca denetimli)
+- Genel: Zorla otomatik tarih ve saat (yalnızca denetimli)
+- Parola: Blok parola otomatik doldurma (yalnızca denetimli)
+- Parola: (Yalnızca denetimli) parola yakınlık isteklerini engelleyin
+- Parola: (Yalnızca denetimli) parola Paylaşımı Engelle
+
+**macOS ayarları**: 
+- Parola: Blok parola otomatik doldurma
+- Parola: Parola yakınlık isteklerini engelleyin
+- Parola: Parola Paylaşımı Engelle
+
+Bu ayarlar hakkında daha fazla bilgi için bkz: [iOS](device-restrictions-ios.md) ve [macOS](device-restrictions-macos.md) cihaz kısıtlama ayarları.
 
 ### <a name="device-enrollment"></a>Cihaz kaydı
 
@@ -1143,35 +1169,6 @@ Biz ilke atamalarınızı taşırken sizin hiçbir şey yapmanıza gerek yoktur.
 
 Şu anda Azure’da Intune üzerinde yukarıda bahsedilen Azure AD gruplarına ilke atıyorsanız, bunları Eğitim için Intune konsolundaki Tüm Kullanıcılar ve Tüm Cihazlar gruplarına atamaya başlayın. Azure AD gruplarının konsolda eski olarak yeniden adlandırıldığını görürseniz Azure AD’de ilke atamayı bırakın. Yeniden adlandırılan grupları şu anda başka bir amaçla kullanmıyorsanız silin.
 
-
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Değişiklik planı: Intune, macOS 10.12 ve daha yüksek aralık desteklemek taşınır <!--2970975--> 
-
-Apple macOS 10.14'ü çok yakın bir geçmişte piyasaya sürmüştür. Bunu nedenle Intune Aralık 2018'de macOS 10.12 ve üstünü desteklemeye geçecektir. 
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-
-Aralık ayından başlayarak macOS 10.11 ve öncesi cihazlardaki son kullanıcıların Intune'a kaydolmak için Şirket Portalını kullanması mümkün olmayacaktır. Bu kullanıcıların destek ve yeni özellikler almaya devam etmek için cihazlarını macOS 10.12 veya üzerine ve Şirket Portalı uygulamasını en son sürüme yükseltmesi gerekecektir. 
-
-macOS 10.12 ve üzeri sürümler şu anda aşağıdakilerde desteklenmektedir: 
-- MacBook (2009 sonu veya daha yenisi). 
-- iMac (2009 sonu veya daha yenisi)
-- MacBook Air (2010 sonu veya daha yenisi).  
-- MacBook Pro (2010 sonu veya daha yenisi). 
-- Mac Mini (2010 sonu veya daha yenisi). 
-- Mac Pro (2010 sonu veya daha yenisi). 
-
-Aralık ayından sonra yukarıda listelenenler dışında cihazları olan son kullanıcılar macOS için Şirket Portalı uygulamasının en son sürümüne erişemeyecektir. MacOS 10.12 öncesi desteklenmeyen sürümleri çalıştıran mevcut kayıtlı cihazlar yönetilmeye ve Intune Yönetim Konsolu'nda listelenmeye devam edecektir.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-
-- Son kullanıcılarınızdan Aralık 2018'den önce cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmelerini isteyin. 
-- Etkilenmiş olabilecek cihazları veya kullanıcıları görmek için Azure konsolunda Intune'daki Intune raporlamanıza bakın. Cihazlar > Tüm cihazlar'a gidin ve işletim sistemine göre filtre uygulayın. Kuruluşunuzda hangi cihazların macOS 10.11 çalıştırdığını belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. 
-- Hibrit bir mobil cihaz yönetimi (MDM) kullanıyorsanız, Configuration Manager konsolunda Varlık ve Uyumluluk > Cihazlar'a gidin, İşletim Sistemi ve İstemci Sürümü sütunlarını eklemek için sütunlara sağ tıklayın ve işletim sistemine göre listeyi sıralayın. Hibrit MDM'nin artık kullanımdan kaldırıldığını ve olabildiğince kısa bir süre içinde Azure'da Intune'a geçmeniz gerektiğini hatırlatalım. 
- 
-#### <a name="additional-information"></a>Ek bilgi
-Daha fazla bilgi için bkz. [Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
- 
-
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Değişiklik planı: Yeni bir Intune destek deneyimi için Premier müşterileri 
 12/4/18 güncelleştirme: Destek isteği oluşturma MPO de aralık 3 ancak daha sonraki bir tarihte bunun yerine devre dışı bırakılır değil için bu işlemi daha iyi hale getirmek çalışıyoruz. İleti Merkezi biliyor ve kısa süre içinde bu değişikliğin zaman çizelgeleri paylaşmak için bu gönderiyi güncelleştirmenize vereceğiz.
 
@@ -1204,28 +1201,3 @@ Android'inizde ve Android kurumsal cihaz kısıtlaması ve uyumluluk ilkelerinde
 #### <a name="additional-information"></a>Ek bilgiler
 https://aka.ms/PasswordSettings 
 
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->
-Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler. [Intune destek web günlüğümüzü](https://aka.ms/compportalats) ayrıntılarla güncelleyeceğiz.
-
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>Değişiklik planı: Intune için TLS 1.2 taşıma
-31 Ekim 2018 tarihinden itibaren Intune; sınıfının en iyisi şifrelemeyi sağlamak, hizmetin varsayılan olarak daha güvenli olduğundan emin olmak ve Microsoft Office 365 gibi diğer Microsoft hizmetleriyle uyum sağlamak için Aktarım Katmanı Güvenliği (TLS) protokol sürümü 1.2’yi destekleyecektir. Office, bu değişikliği MC128929 sürümünde gerçekleştirmişti.
-
-Şirket Portalı ayrıca 31 Ekim 2018'de TLS 1.2 desteği vermeye de başlayacaktır.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-31 Ekim 2018 tarihinden itibaren Intune artık TLS protokol sürümü 1.0 veya 1.1’i desteklemeyecektir. Intune’a sorunsuz bir şekilde bağlanmak için tüm istemci-sunucu ve tarayıcı-sunucu birleşimlerinin TLS 1.2 sürümünü kullanması gerekir. Bu değişikliğin, artık Intune tarafından desteklenmeyen ancak Intune yoluyla ilke almaya devam eden ve TLS sürüm 1.2’yi kullanamayacak olan son kullanıcı cihazlarını etkileyeceğine dikkat edin. Android 4.3 ve öncesi çalıştıran cihazlar gibi cihazlar buna dahildir. Etkilenen cihazlar ve tarayıcılar listesi için aşağıdaki Ek Bilgiler kısmına bakın.
-
-31 Ekim 2018’den itibaren, eski bir TLS sürümünün kullanımıyla ilgili bir sorun yaşarsanız, çözümün bir parçası olarak sizden TLS 1.2’ye güncelleştirmeniz veya TLS 1.2 destekleyen bir cihaza geçmeniz istenecektir.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Ortamlarınızdaki TLS 1.0 ve 1.1 bağımlılıklarını önceden kaldırmanızı ve mümkün olan her yerde işletim sistemi düzeyinde TLS 1.0 ve 1.1’i devre dışı bırakmanızı öneririz. TLS 1.2’ye geçişinizi planlamaya hemen başlayın. Şu anda Intune tarafından desteklenmeyen ancak yine de ilke alma ihtimali olan ve TLS sürüm 1.2 ile iletişim kuramayacak olan cihazlar listesi için aşağıdaki web günlüğü gönderisine bakın. Bu son kullanıcıları, şirket kaynaklarına erişimi kaybedecekleri konusunda bilgilendirmeniz gerekebilir.
-
-**Ek bilgi**: [Intune için şifreleme TLS 1.2 taşıma](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-
-## <a name="see-also"></a>Ayrıca bkz.
-* [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Cloud Platform yol haritası](https://www.microsoft.com/cloud-platform/roadmap)
-* [Şirket Portalı kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md)
-* [Önceki aylardaki yenilikler](whats-new-archive.md)

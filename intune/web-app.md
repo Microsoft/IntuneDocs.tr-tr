@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ace65aab5ded1449b1e1fd092936e9e2a019f6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69a08955144bea9b98f881219583e666d18dfd5b
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187642"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247059"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune’a web uygulamaları ekleme
 
@@ -37,7 +37,7 @@ Kullanıcılarınız için uygulamaları yönetebilmek ve atayabilmek için önc
 ## <a name="add-a-web-app-to-intune"></a>Intune’a bir web uygulaması ekleme
 Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin.  
     Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
@@ -46,17 +46,17 @@ Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
 6. **Uygulama ekle** bölmesinde, **Uygulama türü** açılan listesinden **Web bağlantısı** türünü seçin.
 7. **Yapılandır**’ı seçin.
 8. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri ekleyin:
-    - **Ad**: Şirket portalında görüntülendiği şekliyle uygulamanın adını girin. 
+    - **Ad**:  Şirket portalı'nda görüntülenecek olduğu gibi bir uygulama adı girin. 
     
         > [!NOTE]
         > Uygulamayı dağıttıktan ve yükledikten sonra Intune Azure portalı aracılığıyla uygulamanın adını değiştirirseniz, uygulama artık komutlar kullanılarak hedeflenemez.
     
     - **Açıklama**: Uygulama için bir açıklama girin. Bu açıklama Şirket Portalı’nda kullanıcılara görüntülenir.Açıklama şirket portalında kullanıcılara görüntülenir.
     - **Yayımcı**: Bu uygulamanın yayımcısının adını girin.
-    - **Uygulama URL’si**: Atamak istediğiniz uygulamayı barındıran web sitesinin URL’sini girin.
-    - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Böylelikle, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Bu seçenek uygulama paketini, kullanıcılar uygulamalara göz atarken Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüler.
-    - **Bu bağlantının açılabilmesi için bir yönetilen tarayıcı gerektir**: Kullanıcılara, Intune ile yönetilen tarayıcıda açabilecekleri bir web sitesi veya web uygulaması bağlantısı atayın. Bu tarayıcı cihazlarında yüklü olmalıdır.
+    - **Uygulama URL'sini**: Atamak istediğiniz uygulamayı barındıran Web sitesinin URL'sini girin.
+    - **Kategori**: İsteğe bağlı olarak, bir veya daha fazla yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz bir kategoriyi seçin. Böylelikle, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
+    - **Bunu şirket Portalı'nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken uygulama paketinin şirket Portalı'nın ana sayfasında göze çarpacak şekilde görüntüleyin için. Bu seçeneği belirleyin.
+    - **Bu bağlantının açılabilmesi için yönetilen tarayıcı gerektir**: Intune ile yönetilen tarayıcıda açmak bir Web sitesi veya web uygulaması için bir bağlantı, kullanıcılara atamak için bu seçeneği belirleyin. Bu tarayıcı cihazlarında yüklü olmalıdır.
     - **Logo**: Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
 9. **Tamam**’ı seçin.
 10. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.

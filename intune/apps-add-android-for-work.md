@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 67855a7c52a1fad16f64106230658a730d55afd6
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180154"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266945"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Intune ile Android iş profili cihazlarına uygulama atama
 
@@ -56,13 +56,13 @@ Intune ve Android iş profillerini Azure portalın **Cihaz kaydı** iş yüküyl
 
     ![Yeni uygulama izni isteklerini işleme seçenekleri](media/approve-app-settings.png)
 
-    Uygulama onaylanır ve BT yönetici konsolunuzda görüntülenir. Ardından [Android iş profili uygulamasını Intune ile eşitleyebilirsiniz](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+    Uygulama onaylanır ve BT yönetici konsolunuzda görüntülenir. Ardından [Android iş profili uygulamasını Intune ile eşitleyebilirsiniz](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Yönetilen Google Play uygulamalarını Intune ile eşitleme
 
 Mağazadan bir uygulamayı onayladıysanız ve **İstemci uygulamaları** iş yükünün **Lisanslı uygulamalar** düğümünde göremiyorsanız, aşağıdaki gibi bir anında eşitleme zorlayın:
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükü bölmesinde, **Kurulum** altında **Yönetilen Google Play**’i seçin.

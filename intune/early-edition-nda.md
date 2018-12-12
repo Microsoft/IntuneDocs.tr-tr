@@ -17,17 +17,17 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 77aa0d1544351adaa8d338bc7c4c7182d35941e8
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112842"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267030"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Erken sürüm Microsoft Intune - aralık 2018'e
 
 > [!Note]
-> NDA bildirimi: Aşağıdaki değişiklikler, Intune için geliştirilme aşamasındadır. Bu bilgiler NDA kapsamında çok kısıtlı bir kapsamla paylaşılır. Bu bilgilerin hiçbirini sosyal medyada veya Twitter, UserVoice, Reddit vb. gibi kamuya açık web sitelerinde paylaşmayın. 
+> NDA bildirimi: Intune için aşağıdaki değişiklikler geliştirilme aşamasındadır. Bu bilgiler NDA kapsamında çok kısıtlı bir kapsamla paylaşılır. Bu bilgilerin hiçbirini sosyal medyada veya Twitter, UserVoice, Reddit vb. gibi kamuya açık web sitelerinde paylaşmayın. 
 
 **Erken sürüm**, NDA altında paylaşılan Microsoft Intune'un gelecek sürümlerinde kullanıma sunulacak yeni özelliklerin bir listesini sunar. Bu bilgiler kısıtlı bir kapsamla verilmektedir ve değiştirilebilir. Bu bilgileri Twitter veya UserVoice’da ya da şirketiniz dışında paylaşmayın. Burada listelenen özelliklerden bazılarının son tarihe yetişememe riski vardır ve gelecek sürüme ertelenebilir. Diğer özellikler, müşterinin kullanımına hazır olduğundan emin olmak için pilot (sürüyor) aşamasında test edilmektedir. Herhangi bir sorunuz veya endişeniz varsa lütfen Microsoft ürün grubu ilgili kişisiyle bağlantı kurun.
 
@@ -49,12 +49,12 @@ Bir kayıtlı olmayan uygulama koruma İlkesi kayıt olmadan Android cihazlar i�
 ### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Otomatik olarak bağlanıp kuralları DNS ayarlarını Windows 10 ve üzeri cihazlarda kullanırken kalıcı hale getirmek için yeni seçenekler <!-- 1333665, 2999078 -->
 Windows 10 ve üzeri cihazlarda, etki alanı, contoso.com gibi çözümlemek için DNS sunucularının bir listesini içeren bir VPN yapılandırma profili oluşturmanız mümkün olacaktır. Bu ad çözümlemesi için yeni ayarlar dahil edilir (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > Seç **Windows 10 ve üzeri** Platform > Seç **VPN** profil türü için > **DNS ayarlarını** >**Ekle**): 
 
-- **Otomatik olarak bağlan**: zaman **etkin**, bir cihaz, girin, örneğin contoso.com etki alanı ile iletişim kurarken cihaz VPN otomatik olarak bağlanır.
-- **Kalıcı**: varsayılan olarak, bu VPN profili kullanarak cihaz bağlı olduğu sürece tüm ad çözümleme İlkesi tablosu (NRPT) kuralları etkindir. Bu ayar olduğunda **etkin** bir NRPT kuralı kural VPN bağlantısını keser veya VPN profilini kaldırılmış olsa bile cihaz üzerinde etkin kalır. El ile yapılabilir kaldırılana kadar kural kalır PowerShell kullanarak.
+- **Otomatik olarak bağlan**: Zaman **etkin**, bir cihaz, girin, örneğin contoso.com etki alanı ile iletişim kurarken cihaz VPN otomatik olarak bağlanır.
+- **Kalıcı**: Bu VPN profili kullanarak cihaz bağlı olduğu sürece varsayılan olarak, tüm ad çözümleme İlkesi tablosu (NRPT) kuralları etkindir. Bu ayar olduğunda **etkin** bir NRPT kuralı kural VPN bağlantısını keser veya VPN profilini kaldırılmış olsa bile cihaz üzerinde etkin kalır. El ile yapılabilir kaldırılana kadar kural kalır PowerShell kullanarak.
 
 [Windows 10 VPN ayarları](vpn-settings-windows-10.md) ayarlarının geçerli listesi açıklar. 
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>Bir kullanıcının birden fazla cihazını şifrelemek ve imzalamak için S/MIME kullanın <!-- 1333642 eeready -->
+### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>Bir kullanıcı için birden çok cihaz imzalamak ve şifrelemek için S/MIME kullan <!-- 1333642 eeready -->
 Yeni içeri aktarılan sertifika profili kullanarak S/MIME e-posta şifreleme desteklenir (**cihaz Yapılandırması** > **profilleri** > **profilioluşturma** > platformu seçin > **PKCS içe aktarılan sertifikası** profil türü). Intune’da sertifikaları PFX biçiminde içeri aktarabilirsiniz. Intune, aynı sertifikaları tek bir kullanıcı tarafından kaydedilen birden fazla cihaza teslim edebilir. Ayrıca şunları da içerir:
 
 - Yerel iOS e-posta profili, PFX biçiminde içeri aktarılan sertifikaları kullanan S/MIME şifrelemesini etkinleştirmeyi destekler.
@@ -63,7 +63,7 @@ Yeni içeri aktarılan sertifika profili kullanarak S/MIME e-posta şifreleme de
 - Diğer platformlarda S/MIME’yi etkinleştirmek için posta uygulamasını el ile yapılandırmanız gerekebilir.  
 - S/MIME şifrelemesini destekleyen e-posta uygulamaları, S/MIME e-posta şifrelemesi için sertifika alma işlemini MDM’nin destekleyemeyeceği bir şekilde halleder, ör. yayımcılarının sertifika deposundan okuma.
 
-Desteklenir: Windows, Windows Phone 10, macOS, iOS, Android
+Şu platformlarda desteklenir: Windows, Windows Phone 10, macOS, iOS, Android
 
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Yardım ve Destek sayfasının Windows Şirket portalı uygulamasında <!-- 1488939 -->
 Windows Şirket portalı uygulamasında yeni bir sayfa eklenir. Yardım ve Destek sayfasına Yardım Masası bilgilerini sağlar. Ayrıca, son kullanıcılara sorunları yaşamaya olay, Şirket portalı günlükleri göndermek mümkün olacaktır. Sayfa, son kullanıcılara yardımcı olmak için bir SSS bölümü de sağlar.
@@ -77,10 +77,10 @@ Güvenilen ağ algılama kullanırken, VPN profilleri kullanıcı zaten güvenil
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Intune profilinde etkinleştirilmiş paylaşılan bilgisayar ayarları <!-- 1907917 -->
 Şu anda, özel bir OMA-URI ayarını kullanarak Windows 10 Masaüstü cihazlarında bilgisayar paylaşılan ayarları yapılandırabilirsiniz. Paylaşılan bilgisayar ayarları yapılandırmak için yeni bir profil eklenir (**cihaz Yapılandırması** > **profilleri** > **profili oluştur**  >  **Windows 10 ve üzeri** > **paylaşılan çok kullanıcılı cihaz**).
-İçin geçerlidir: Windows 10 ve üzeri, Windows Holographic for Business
+Uygulama hedefi: Windows 10 ve üzeri, Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune ilkeleri, kimlik doğrulama yöntemi ve şirket Portalı Uygulama yüklemesi güncelleştirme  <!-- 1927359 -->
-Yüklü olduğunda Intune Şirket portalı uygulaması artık destekler, bazı cihazlarda uygulama Mağazası'ndan. Bu değişiklik, yalnızca kayıt sırasında Apple Kurulum Yardımcısı ile doğrulandığında geçerlidir. Bu değişiklik, yalnızca aracılığıyla kaydedilmiş iOS cihazları etkiler:  
+Kurulum Yardımcısı ile Apple'nın Kurumsal cihaz kayıt yöntemleri biri aracılığıyla kayıtlı cihazlarda, el ile uygulama Mağazası'ndan son kullanıcılar tarafından yüklendiğinde, Intune Şirket portalı artık destekleyecektir. Bu değişiklik, yalnızca kayıt sırasında Apple Kurulum Yardımcısı ile doğrulandığında geçerlidir. Bu değişiklik, yalnızca aracılığıyla kaydedilmiş iOS cihazları etkiler:  
 * Apple configurator
 * Apple İşletme Yöneticisi
 * Apple School Manager
@@ -108,7 +108,7 @@ Farklı ayarlar içeren bir e-posta profilini oluşturmak mümkün olacaktır. B
 [iOS e-posta yapılandırma ayarları](email-settings-ios.md) geçerli ayarlarını listeler.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>İOS DEP cihazı üzerinde daha fazla Kurulum Yardımcısı ekranları atlamak <!-- 2687509 -->
-Şu anda atlayabilirsiniz ekranlar yanı sıra, iOS Kurulum Yardımcısı'nı aşağıdaki ekranlarda bir kullanıcı cihaz kaydedilirken atlamak için DEP cihazları ayarlamak mümkün olacaktır: görüntü ton, gizlilik, Android geçiş, giriş düğmesi, iMessage ve FaceTime, ekleme, Geçiş, görünüm, ekran zaman, yazılım güncelleştirmesi, SIM Kurulum izleyin.
+Şu anda atlayabilirsiniz ekranlar yanı sıra, iOS Kurulum Yardımcısı'nı aşağıdaki ekranlarda bir kullanıcı cihaz kaydedilirken atlamak için DEP cihazları ayarlamak mümkün olacaktır: Sesi, gizlilik, Android geçişi, giriş düğmesi, iMessage & FaceTime, ekleme, Watch geçişi, görünüm, ekran zaman, yazılım güncelleştirmesi, SIM Kurulum görüntüler.
 Hangi atlamak için ekranları seçmek için Git **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** > bir belirteç seçin > **Profilleri** > bir profili seçin > **özellikleri** > **Kurulum Yardımcısı özelleştirme** > seçin **Gizle**  atlamak istediğiniz tüm ekranlar için > **Tamam**.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Windows 10 Pro sürümü bazı BitLocker ayarları desteği<!-- 2727036 -->
@@ -145,7 +145,7 @@ Her zaman açık VPN etkinleştirebilirsiniz **cihaz Yapılandırması** > **pro
 ### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Yeni Windows 10 cihazlarında Görev Yöneticisi'nde son işlemler için ayarlama <!-- 3285177 --> 
 Bu güncelleştirme, Windows 10 cihazlarda Görev Yöneticisi'ni kullanarak işlemleri sonlandırmak için yeni bir ayar içerir. Bir cihaz yapılandırma profili kullanarak (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > içinde **platformu** , seçin **Windows 10** > içinde **profil türü**, seçin **cihaz kısıtlamaları** > **genel** ayarları), izin verme veya engelleme bu ayarı seçin.
 Geçerli ayarları görmek için Git [Windows 10 cihaz kısıtlama ayarları](device-restrictions-windows-10.md).
-Şunlar için geçerlidir: Windows 10 ve üzeri
+Uygulama hedefi: Windows 10 ve üzeri
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Yönetim Şablonları genel Önizleme aşamasındadır ve kendi yapılandırma profiline taşınır <!-- 3322847 -->
 Intune Yönetim Şablonları (**cihaz Yapılandırması** > **Yönetim Şablonları**) şu anda özel Önizleme aşamasındadır. Bu güncelleştirme ile: Yönetim Şablonları, Intune'da yönetilebilir 300 ayarları içerir. Daha önce bu ayarlar, yalnızca Grup İlkesi Düzenleyicisi'nde vardı.
@@ -166,10 +166,10 @@ Kapsam etiketini bir yapılandırma profiline eklemek için **Cihaz yapılandır
 
 ### <a name="tenant-health-dashboard----1124854---"></a>Kiracı Sistem Durumu panosu <!-- 1124854 -->
 Intune Kiracı Durumu sayfası tek bir yerde kiracı durumu bilgileri sağlayacaktır. Sayfa 4 bölüme ayrılmıştır:  
-- **Kiracı Ayrıntıları**: MDM Yetkiliniz, kiracınızdaki toplam kayıtlı cihaz sayısı ve lisans sayınız gibi bilgileri içerir. Bu bölüm, kiracınız için geçerli hizmet sürümünü de sağlanır.
-- **Bağlayıcı Durumu**: Apple VPP, İş için Windows Store ve Sertifika bağlayıcıları gibi yapılandırılmış bağlayıcıların bilgilerini içerir. Bunların geçerli durumu temel alındığında bağlayıcılar *Sağlıklı*, *Uyarı* veya *Sağlıksız* olarak işaretlenir.
-- **Intune Hizmet Durumu**: Kiracınız için etkin olayları ve kesintileri içerir. Bu bölümdeki bilgiler doğrudan Office İleti Merkezi'nden ([https://portal.office.com](https://portal.office.com)) alınır.
-- **Intune Haberleri**: Kiracınızın en yeni Intune özelliklerini aldığı bildirimleri gibi şeyler dahil, kiracınız için etkin iletileri içerir. Bu bölümdeki bilgiler doğrudan Office İleti Merkezi'nden ([https://portal.office.com](https://portal.office.com)) alınır.
+- **Kiracı ayrıntıları**: Bilgisi içermiyorsa, MDM yetkiliniz gibi toplam kayıtlı cihazlar kiracınızdaki ve lisansınızı sayar. Bu bölüm, kiracınız için geçerli hizmet sürümünü de sağlanır.
+- **Bağlayıcı durumu**: Apple VPP, iş için Windows Store gibi yapılandırılmış bağlayıcıların bilgilerini içeren ve sertifika bağlayıcılar. Bunların geçerli durumu temel alındığında bağlayıcılar *Sağlıklı*, *Uyarı* veya *Sağlıksız* olarak işaretlenir.
+- **Intune hizmet durumu**: Kiracınız için etkin olaylar veya kesintileri içerir. Bu bölümdeki bilgiler doğrudan Office İleti Merkezi'nden ([https://portal.office.com](https://portal.office.com)) alınır.
+- **Intune haber**: Kiracınıza en yeni Intune özellikleri aldı bildirimleri gibi şeyler dahil, kiracınız için etkin iletileri içerir. Bu bölümdeki bilgiler doğrudan Office İleti Merkezi'nden ([https://portal.office.com](https://portal.office.com)) alınır.
 
 
 ### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Kullanıcı kaydı olmadan dağıtılan WIP ilkeleri <!-- 1434452 -->

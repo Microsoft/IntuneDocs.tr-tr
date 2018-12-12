@@ -1,12 +1,12 @@
 ---
 title: Geçerli Kullanıcı - Intune Veri Ambarı
 titlesuffix: Microsoft Intune
-description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Kullanıcı kategorisi için başvuru konusu.
+description: Intune veri ambarı API'sindeki varlık koleksiyonlarının geçerli kullanıcı kategorisi için başvuru konusu.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-classic; seodec18
+ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189784"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266911"
 ---
 # <a name="reference-for-current-user-entity"></a>Geçerli Kullanıcı varlığı için başvuru
 
@@ -38,8 +38,8 @@ ms.locfileid: "52189784"
 | UserId |Kullanıcının benzersiz tanımlayıcısı - UserKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Kullanıcının e-posta adresi. |John@constoso.com |
 | UPN | Kullanıcının kullanıcı asıl adı. | John@constoso.com |
-| GörünenAd |Kullanıcının görünen adı. |John |
-| IntuneLicensed |Kullanıcının Intune lisansı olup olmadığını belirtir. |Doğru/Yanlış |
+| displayName |Kullanıcının görünen adı. |John |
+| IntuneLicensed |Kullanıcının Intune lisansı olup olmadığını belirtir. |True/False |
 | StartDateInclusiveUTC |Veri ambarında kullanıcının oluşturulduğu tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 | RowLastModifiedDateTimeUTC |Kullanıcının veri ambarında son değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 
