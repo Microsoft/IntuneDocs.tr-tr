@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182015"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829113"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme
 
@@ -40,7 +40,7 @@ Intune App SDK’sını destekleyen yönetilen uygulamalarla uygulama yapıland�
       Azure portalında görünecek profil açıklaması.
     - **Cihaz kaydı türü**  
       **Uygulamaları yönet**’i seçin.
-6. Yapılandıracağınız uygulamayı seçmek için  **İlişkili uygulama** ’ya tıklayın. Onayladığınız ve Intune ile eşitlenmiş uygulamalar listesinden uygulamayı seçin.
+6. Seçin **ilişkili uygulama** yapılandırmak için oluşturacağınız uygulamasını seçin. Onayladığınız ve Intune ile eşitlenmiş uygulamalar listesinden uygulamayı seçin.
 7. Uygulamanın desteklediği her bir yapılandırma ayarı için **Ad** ve **Değer** yazın ve üç nokta simgesini (**...**) seçin.  
     Bir yapılandırmayı silmek için üç nokta simgesini (**…**) seçip **Sil**’e tıklayın.  
     

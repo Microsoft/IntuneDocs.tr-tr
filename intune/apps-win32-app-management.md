@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef26e42b2e500d841aa32fa6239e6970e0cfb577
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728999"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829156"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
@@ -29,15 +29,11 @@ Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bu
 
 ## <a name="prerequisites-for-public-preview"></a>Genel önizleme için önkoşullar
 
-- Windows 10 sürüm 1607 veya üzeri (Enterprise)
+- Windows 10 sürüm 1607 veya üzeri (Enterprise, Pro ve Education sürümleri)
 - Windows 10 istemcisi: 
     - Azure Active Directory’ye (AAD) veya Hibrit Azure Active Directory’ye katılmış olmalıdır
     - Intune’da kayıtlı (MDM ile yönetilen) olmalıdır
 - Windows uygulaması boyutu, genel önizlemede uygulama başına 8 GB ile sınırlıdır 
-
-> [!NOTE]
-> Şu anda Windows 10 sürüm 1607 Pro ve Education sürümlerini test ediyoruz ve geri bildirimlerinizi bekliyoruz.
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Karşıya yükleme için Win32 uygulaması içeriğini hazırlama
 

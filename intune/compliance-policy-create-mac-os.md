@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 469c0b7c3e67135c53de7c58583d820e1750ad7f
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728812"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829003"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune ile macOS cihazlara cihaz uyumluluk ilkesi ekleme
 
@@ -97,7 +97,7 @@ Güvenlik Duvarı, cihazları yetkisiz erişimine karşı korur. Güvenlik Duvar
 
 **Şu konumlardan indirilen uygulamalara izin ver**: Desteklenen uygulamaların farklı konumlardan cihazlarınıza yüklenmesine izin verir. Konum seçenekleriniz:
 
-- **Yapılandırılmadı**: Varsayılan seçenektir. Ağ geçidi denetleyicisi seçeneğinin uyumluluk veya uyumsuzluk üzerinde herhangi bir etkisi yoktur. 
+- **Yapılandırılmadı**: Varsayılan seçenektir. Ağ geçidi seçeneği, uyumluluk veya uyumsuzluk herhangi bir etkisi yoktur. 
 - **Mac App Store**: Yalnızca Mac uygulama mağazası uygulamaları yüklenebilir. Üçüncü taraf veya tanımlı geliştirici uygulamaları yüklenemez. Bir kullanıcı, Gatekeeper’ı Mac App Store dışından uygulama yüklemesi için seçerse cihaz uyumsuz olarak değerlendirilir.
 - **Mac App Store ve tanımlı geliştiriciler**: Mac uygulama mağazası ve tanımlı geliştirici uygulamalarını yükler. macOS, geliştiricilerin kimliğini denetler ve uygulama bütünlüğünü doğrulamak için başka denetimler de gerçekleştirir. Bir kullanıcı, Gatekeeper’ı bu seçenekler haricindeki uygulamaları yüklemesi için seçerse cihaz uyumsuz olarak değerlendirilir.
 - **Her yerden**: Herhangi bir yerden, herhangi bir geliştiriciye ait uygulamalar yüklenebilir. Bu, güvenliği en düşük olan seçenektir.
