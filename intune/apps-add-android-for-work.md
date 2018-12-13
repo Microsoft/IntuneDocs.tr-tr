@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 67855a7c52a1fad16f64106230658a730d55afd6
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266945"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305939"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Intune ile Android iş profili cihazlarına uygulama atama
 
@@ -84,7 +84,7 @@ Bir uygulama geliştiricisi bir uygulamanın yeni bir sürümüyle izinleri gün
 
 Yeni izinleri denetlemek için yönetilen Google Play konsolunu düzenli aralıklarla ziyaret edin. Google Play’i onaylanmış bir uygulama için yeni izinler gerekli olduğunda, size veya başkalarına e-posta göndermesi için yapılandırabilirsiniz. Bir uygulamayı atar ve cihazlarda yüklü olmadığını görürseniz, aşağıdaki adımları izleyerek yeni izinleri denetleyin:
 
-1. [Google Play](http://play.google.com/work)’e gidin.
+1. [Google Play](https://play.google.com/work)’e gidin.
 2. Uygulamaları yayınlamak ve onaylamak için kullandığınız Google hesabıyla oturum açın.
 3. **Güncelleştirmeler** sekmesini seçin ve herhangi bir uygulamanın güncelleştirme gerektirip gerektirmediğine bakın.  
     Listelenen tüm uygulamalar yeni izinler gerektirir ve uygulama, yeni izinler uygulanana kadar atanmaz.

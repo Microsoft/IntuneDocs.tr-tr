@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bcafad38be9d971e98405ee4b79655cb5d8e5554
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189954"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53306041"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune Veri Ambarı API’si için değişiklik günlüğü
 
@@ -95,4 +95,4 @@ Artık kullanıcı ve cihaz varlık koleksiyonlarını ilişkilendiren kullanıc
 
 ## <a name="next-steps"></a>Sonraki adımlar
  - [Intune’daki haftalık yenilikleri](whats-new.md) öğrenin. Yaklaşan değişiklikler, hizmet hakkında önemli bildirimler ve geçmiş sunumlar hakkında bilgiler de alabilirsiniz.
- - [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)’nu okuyun.
+ - [Microsoft Intune Blogu](https://go.microsoft.com/fwlink/?LinkID=273882)’nu okuyun.

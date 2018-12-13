@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dd18b882af8c685bb640468ef7076ed6317126a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184616"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324948"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -47,7 +47,7 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **İstemci uygulamaları** iş yükünü seçin.
 4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
@@ -77,7 +77,7 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 
     >[!NOTE]
     >Bir grup eklerken, herhangi bir atama türü için başka bir grup önceden dahil edilmişse bu grup, diğer dahil etme atama türleri için önceden seçili ve değiştirilemez bir biçimde görüntülenir. Dolayısıyla bu grup zaten kullanılmıştır ve dışlanmış bir grup olarak kullanılamaz.
-16. **Kaydet**'e tıklayın.
+16. **Kaydet**’e tıklayın.
 
 ## <a name="use-configuration-designer"></a>Yapılandırma tasarımcısı kullanma
 
@@ -100,14 +100,14 @@ Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Micros
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Çok kimlikli uygulamalarda yalnızca yapılandırılmış kuruluş hesaplarına izin verme 
 
-Android cihazlarda aşağıdaki anahtar/değer çiftlerini kullanın:
+İOS cihazları için aşağıdaki anahtar/değer çiftleri kullanın:
 
 | **Anahtar** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Değerleri** | <ul><li>**Enabled**: İzin verilen tek hesap, [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarıyla tanımlanan yönetilen kullanıcı hesabıdır.</li><li>**Disabled** (veya **Enabled** ile eşleşmeyen bir değer): Tüm hesaplara izin verilir.</li></ul> |
+| **Değerler** | <ul><li>**Etkin**: İzin verilen tek hesap tarafından tanımlanan yönetilen kullanıcı hesabıdır [Intunemamupn](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarı.</li><li>**Devre dışı bırakılmış** (veya büyük küçük harfe duyarlı bir eşleşme değil herhangi bir değer **etkin**): Herhangi bir hesaba izin verilir.</li></ul> |.
 
    > [!NOTE]
-   > Çoklu kimlik ile yalnızca yapılandırılmış kuruluş hesaplarına izin vermek için iOS için OneDrive 10.34 veya üzeri ile iOS için Outlook 2.99.0 veya üzeri sürümleri kullanmanız gerekir.
+   > İOS 10.34 veya üzeri OneDrive ve Outlook 2.99.0 iOS için kullanmanız gerekir ya da daha sonra ve uygulama ile hedeflenmelidir [Intune uygulama koruma ilkeleri](app-protection-policy.md) ne zaman izin vererek yalnızca yapılandırılan kuruluş hesapları ile birden çok kimliği.
 
 ## <a name="enter-xml-data"></a>XML verilerini girme
 
@@ -123,7 +123,7 @@ XML özellik listeleri hakkında daha fazla bilgi edinmek için:
 
 Uygulama yapılandırma dosyasını oluşturduğunuzda, bu biçimi kullanarak aşağıdaki değerlerden birini veya daha fazlasını belirtebilirsiniz:
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>

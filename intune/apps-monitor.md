@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181896"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325186"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -29,14 +29,14 @@ ms.locfileid: "52181896"
 
 Intune, yönettiğiniz uygulamanın özelliklerini izlemeniz ve uygulama atama durumunu yönetmeniz için birkaç yol sağlar.
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** menüsünde **İstemci uygulamaları**’nı seçin.
 4. Menünün **Yönet** bölümünde **Uygulamalar**’ı seçin.
 5. Uygulama listesinde, izlenecek uygulamayı seçin. Cihaz durumuna ve kullanıcı durumuna genel bakışı içeren uygulama bölmesini göreceksiniz.
 
 > [!NOTE]
-> **Kullanılabilir** olarak dağıtılan Android Mağazası uygulamaları yükleme durumlarını bildirmez.
+> Olarak dağıtılan android Store uygulamaları **kullanılabilir** ve Android LOB uygulamaları olarak dağıtılmış **kayıtlı veya Kayıtsız kullanılabilir** yükleme durumunu bildirmeyen.
 
 ## <a name="app-overview-pane"></a>Uygulamaya genel bakış bölmesi
 
@@ -57,9 +57,9 @@ Grafikler aşağıdaki durumlar için uygulamaların sayısını gösterir:
 
 | **Cihaz durumu**       | **Açıklama**                                       |
 |-----------------------|-------------------------------------------------------|
-| **Yüklü**         | Yüklenen uygulamaların sayısı.                         |
+| **Yüklendi**         | Yüklenen uygulamaların sayısı.                         |
 | **Yüklü Değil**     | Yüklenmemiş uygulamaların sayısı.                     |
-| **Başarısız oldu**            | Başarısız olan yüklemelerin sayısı.                   |
+| **Başarısız**            | Başarısız olan yüklemelerin sayısı.                   |
 | **Yükleme Bekletiliyor**   | Yüklenme sürecinde olan uygulamaların sayısı. |
 | **Uygulanamaz**           | Durumun uygulanamadığı uygulamaların sayısı.            |
 
@@ -81,7 +81,7 @@ Menünün **İzleme** bölümünde **Cihaz yükleme durumu**’nu seçtiğinizde
 | **Kullanıcı adı**        | Kullanıcının adı.                                                                                                                                                                                                                                      |
 | **Platform**         | Cihazın işletim sistemi (Windows, iOS, Android, vb.).                                                                                                                                                                                           |
 | **Sürüm**          | Uygulamanın sürüm numarası. İş kolu uygulamaları için, uygulamanın tam sürüm numarası gösterilir. Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800). |
-| **Durum**           | Uygulamanın durumu.                                                                                                                                                                                                                                     |
+| **Durumu**           | Uygulamanın durumu.                                                                                                                                                                                                                                     |
 | **Durum ayrıntıları**   | Durumun ayrıntıları.                                                                                                                                                                                                                                     |
 | **Son iade etme**    | Cihazın Intune ile son eşitlenme tarihi.                                                                                                                                                                                                                  |
 

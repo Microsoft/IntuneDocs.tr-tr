@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 456e3922b74bb8c8ebbbca4718b36b3fb0dcdc29
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829156"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324999"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
@@ -69,16 +69,16 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 
 İş kolu (LOB) uygulamalarına çok benzer bir biçimde, Win32 uygulamalarını da Microsoft Intune'a ekleyebilirsiniz. Bu gibi uygulamalar normalde şirket içinde veya üçüncü taraflarca yazılır. Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olacak yönergeler sağlar.
 
-### <a name="step-1-specify-the-software-setup-file"></a>1. Adım: Yazılım kurulum dosyasını belirtme
+### <a name="step-1-specify-the-software-setup-file"></a>1. adım: Yazılım Kurulum dosyasını belirtme
 
-1.  [Azure portalı](https://portal.azure.com/)’nda oturum açın.
+1.  [Azure Portal](https://portal.azure.com/) oturum açın.
 2.  **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.
 3.  **Intune** bölmesinde **İstemci uygulamaları** > **Uygulamalar** > **Ekle**'yi seçin.
 4.  **Uygulama ekle** bölmesinde, sağlanan açılan pencereden **Windows uygulaması (Win32) - önizleme**'yi seçin.
 
     ![Ekran görüntüsü Uygulama ekle - Tür ekle açılan kutusu](./media/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>2. Adım: Uygulama paketi dosyasını karşıya yükleme
+### <a name="step-2-upload-the-app-package-file"></a>2. adım: Uygulama paketi dosyasını karşıya yükle
 
 1.  **Uygulama ekle** bölmesinde dosya seçmek için **Uygulama paketi dosyası**’nı seçin. Uygulama paketi dosyası bölmesi görüntülenir.
 
@@ -87,24 +87,24 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 2.  **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra *.intunewin* uzantılı bir Windows yükleme dosyası seçin.
 3.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-3-configure-app-information"></a>3. Adım: Uygulama bilgilerini yapılandırma
+### <a name="step-3-configure-app-information"></a>3. adım: Uygulama bilgilerini yapılandırma
 
 1.  Uygulamayı yapılandırmak için **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
 2.  **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
-    - **Ad**: Uygulamanın Şirket Portalı’nda görünen adını girin. Aynı uygulama adı iki kez kullanılmışsa, iki uygulama da Şirket Portalı’nda görüntülenir.
+    - **Ad**: Şirket portalı'nda göründüğü gibi bir uygulama adı girin. Aynı uygulama adı iki kez kullanılmışsa, iki uygulama da Şirket Portalı’nda görüntülenir.
     - **Açıklama**: Uygulama için bir açıklama girin. Açıklama, Şirket Portalı’nda görünür.
-    - **Yayımcı**: Uygulama yayımcısının adını girin.
-    - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL Şirket Portalı’nda görünür.
-    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
+    - **Publishe**r: Uygulama yayımcısının adını girin.
+    - **Kategori**: Bir veya daha fazla yerleşik uygulama kategorilerinden birini seçin veya oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
+    - **Bunu şirket Portalı'nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
+    - **Bilgi URL'si**: İsteğe bağlı olarak, uygulama hakkında bilgi içeren bir Web sitesinin URL'sini girin. URL, Şirket Portalı’nda görünür.
+    - **Gizlilik URL'si**: İsteğe bağlı olarak, uygulamayla ilgili gizlilik bilgilerini içeren bir Web sitesinin URL'sini girin. URL, Şirket Portalı’nda görünür.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
-    - **Sahip**: İsteğe bağlı olarak uygulama sahibinin adını girin. Örneğin **İK departmanı**.
-    - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Sahibi**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin. Örneğin **İK departmanı**.
+    - **Notları**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na gözatarken uygulamayla birlikte görüntülenir.
 3.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-4-configure-app-installation-details"></a>4. Adım: Uygulama yükleme ayrıntılarını yapılandırma
+### <a name="step-4-configure-app-installation-details"></a>4. adım: Uygulama yükleme ayrıntılarını Yapılandır
 1.  **Uygulama ekle** bölmesinde, uygulamanın yükleme ve kaldırma komutlarını yapılandırmak için **Program**'ı seçin.
 2.  Uygulamayı yüklemek için yükleme komut satırının tamamını ekleyin. 
 
@@ -112,7 +112,7 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 
 3.  Uygulamanın GUID'si temelinde uygulamayı kaldırmak için kaldırma komut satırının tamamını ekleyin. 
 
-    Örneğin: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    Örneğin, `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
     > [!NOTE]
     > Bir Win32 uygulamasını **Kullanıcı** veya **Sistem** bağlamında yüklenecek şekilde yapılandırabilirsiniz. **Kullanıcı** bağlamı yalnızca belirli bir kullanıcıyı ifade eder. **Sistem** bağlamı bir Windows 10 cihazın tüm kullanıcılarını ifade eder.
@@ -121,19 +121,19 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 
 4.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-5-configure-app-requirements"></a>5. Adım: Uygulama gereksinimlerini yapılandırma
+### <a name="step-5-configure-app-requirements"></a>5. adım: Uygulama gereksinimlerini yapılandırma
 
 1.  **Uygulama ekle** bölmesinde, uygulamayı yüklemeden önce cihazların karşılaması gereken gereksinimleri yapılandırmak için **Gereksinimler**'i seçin.
 2.  **Gereksinimler** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
-    - **İşletim sistemi mimarisi**: Uygulamayı yüklemek için gereken mimarileri seçin.
-    - **Minimum işletim sistemi**: Uygulamayı yüklemek için gereken minimum işletim sistemini seçin.
-    - **Gerekli disk alanı (MB)**: İsteğe bağlı olarak, uygulamayı yüklemek için sistem sürücüsünde gereken boş disk alanını ekleyin.
+    - **İşletim sistemi mimarisi**: Mimarileri uygulaması yüklemeniz gerektiğini seçin.
+    - **En düşük işletim sistemi**: Uygulamayı yüklemek için gereken en düşük işletim sistemi seçin.
+    - **Gerekli disk alanı (MB)**: İsteğe bağlı olarak, sistem sürücüsünde, uygulamayı yüklemek için gereken boş disk alanı ekleyin.
     - **Gerekli fiziksel bellek (MB)**: İsteğe bağlı olarak, uygulamayı yüklemek için gereken fiziksel belleği (RAM) ekleyin.
-    - **Gereken en düşük mantıksal işlemci sayısı**: İsteğe bağlı olarak, uygulamayı yüklemek için gereken en düşük mantıksal işlemci sayısını ekleyin.
-    - **Gereken en düşük CPU hızı (MHz)**: İsteğe bağlı olarak, uygulamayı yüklemek için gereken en düşük CPU hızını ekleyin.
+    - **En düşük gerekli mantıksal işlemcilerin sayısını**: İsteğe bağlı olarak, en az sayıda uygulamayı yüklemek için gereken bir mantıksal işlemci ekleyin.
+    - **Gerekli en düşük CPU hızı (MHz)**: İsteğe bağlı olarak, uygulamayı yüklemek için gereken en düşük CPU hızı ekleyin.
 3.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-6-configure-app-detection-rules"></a>6. Adım: Uygulama algılama kurallarını yapılandırma
+### <a name="step-6-configure-app-detection-rules"></a>6. adım: Uygulama algılama kuralları yapılandırma
 
 1.  **Uygulama ekle** bölmesinde, uygulamanın varlığını algılamaya yönelik kuralları yapılandırmak için **Algılama kuralları**'nı seçin.
 2.  **Kuralların biçimi** alanında uygulamanın varlığının nasıl algılanacağını seçin. Algılama kurallarını el ile yapılandırmayı seçebileceğiniz gibi uygulamanın varlığını algılamak için özel bir betik de kullanabilirsiniz. En az bir algılama kuralı seçmelisiniz. 
@@ -182,17 +182,19 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
     - **Özel algılama betiği kullan** – Bu uygulamayı algılamak için kullanılacak PowerShell betiğini belirtin. 
     
         1.  **Betik dosyası** – İstemcide uygulamanın varlığını algılayacak PowerShell betiğini seçin. Betik hem 0 değerinde çıkış kodu döndürdüğünde hem de STDOUT'a bir dize değeri yazdığında uygulama algılanır.
-        2.  **Komut dosyası 64 bitlik istemcilerde 32 bitlik işlem olarak çalıştır** - seçin **Evet** oturum açan son kullanıcı kimlik bilgilerini kullanarak betiği çalıştırmak için. Betiği sistem bağlamında çalıştırmak için **Hayır**'ı (varsayılan) seçin.
+
+        2.  **Komut dosyası 64 bitlik istemcilerde 32 bitlik işlem olarak çalıştır** - seçin **Evet** betiği, 64 bitlik istemcilerde 32-bit işlem içinde çalıştırmak için. Seçin **Hayır** betiği, 64 bitlik istemcilerde 64-bit işlem içinde çalıştırmak için (varsayılan). 32 bitlik istemcilerde 32-bit işlem içinde betiği çalıştırın.
+
         3.  **Betik imzası denetimini zorla** - Betiğin güvenilen bir yayımcı tarafından imzalandığını doğrulamak için **Evet**'i seçin. Bu doğrulama betiğin hiçbir uyarı veya istem gösterilmeden çalıştırılmasına olanak tanır. Betik engellenmeden çalıştırılır. Betiği imza doğrulaması yapılmadan son kullanıcının onayıyla çalıştırmak için **Hayır**'ı (varsayılan) seçin.
     
-        Intune sepeti betikten gelen sonuçları denetler. Betik tarafından standart çıkış (STDOUT) akışına, standart hata (STDERR) akışına ve çıkış koduna yazılan değerleri okur. Betikten sıfırdan farklı bir değerle çıkılırsa, betik başarısız olur ve uygulama algılama durumu Yüklü Değil olur. Çıkış kodu sıfırsa ve STDOUT veri içeriyorsa, uygulama algılama durumu Yüklü'dür. 
-    
-        > [!NOTE]
-        > Betikten 0 değeriyle çıkılırsa, betiğin yürütülmesi başarılı olmuştur. İkinci çıkış kanalı uygulamanın algılandığını gösterir - STDOUT verileri uygulamanın istemcide bulunduğunu gösterir. STDOUT akışından belirli bir dize beklemeyiz.
-    
-3.  Kurallarınızı ekledikten sonra **Ekle** > **Tamam**'ı seçin.
+            Intune Aracısı komut dosyası sonuçlarını denetler. Betik tarafından standart çıkış (STDOUT) akışına, standart hata (STDERR) akışına ve çıkış koduna yazılan değerleri okur. Betikten sıfırdan farklı bir değerle çıkılırsa, betik başarısız olur ve uygulama algılama durumu Yüklü Değil olur. Çıkış kodu sıfırsa ve STDOUT veri içeriyorsa, uygulama algılama durumu Yüklü'dür. 
 
-### <a name="step-7-configure-app-return-codes"></a>7. Adım: Uygulama dönüş kodlarını yapılandırma
+            > [!NOTE]
+            > Betikten 0 değeriyle çıkılırsa, betiğin yürütülmesi başarılı olmuştur. İkinci çıkış kanalı uygulamanın algılandığını gösterir - STDOUT verileri uygulamanın istemcide bulunduğunu gösterir. STDOUT akışından belirli bir dize beklemeyiz.
+
+        4.  Kurallarınızı ekledikten sonra **Ekle** > **Tamam**'ı seçin.
+
+### <a name="step-7-configure-app-return-codes"></a>7. adım: Uygulama dönüş kodları yapılandırın
 
 1.  **Uygulama ekle** bölmesinde **Dönüş kodları**'nı seçerek, uygulama yüklemesi yeniden deneme davranışını veya yükleme sonrası davranışını belirtmek için kullanılan dönüş kodlarını ekleyin. Dönüş kodu girdileri varsayılan olarak uygulama oluşturma işlemi sırasında eklenir. Bununla birlikte, başka dönüş kodları ekleyebilir veya mevcut dönüş kodlarını değiştirebilirsiniz. 
 2.  **Dönüş kodları** bölmesinde, başka dönüş kodları ekleyin veya mevcut dönüş kodlarında değişiklik yapın.
@@ -203,18 +205,18 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
     - **Başarılı** – Uygulamanın başarıyla yüklendiğini belirten dönüş kodu.
 3.  Dönüş kodları listenizdeki eklemeleri veya değişiklikleri yaptıktan sonra **Tamam**'ı seçin.
 
-### <a name="step-8-add-the-app"></a>8. Adım: Uygulamayı ekleme
+### <a name="step-8-add-the-app"></a>8. adım: Uygulama ekleme
 
 1.  **Uygulama ekle** bölmesinde, uygulama bilgilerini doğru yapılandırdığınızı onaylayın.
 2.  Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
 
-### <a name="step-9-assign-the-app"></a>9. Adım: Uygulamayı atama
+### <a name="step-9-assign-the-app"></a>9. adım: Uygulama atama
 
 1.  Uygulama bölmesinde **Atamalar**’ı seçin.
 2.  Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
 3.  Belirli bir uygulama için **atama türü** seçin:
-    - **Kayıtlı cihazlar için bulunur**: Kullanıcılar, Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden uygulamayı yükler.
-    - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir.
+    - **Kayıtlı cihazlar için kullanılabilir**: Kullanıcılar uygulamayı şirket Portalı Web sitesine veya Şirket portalı uygulamasını yükleyin.
+    - **Gerekli**: Uygulama seçilen gruplardaki cihazlara yüklenir.
     - **Kaldırma**: Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
 4.  **Eklenen Gruplar**'ı seçin ve bu uygulamayı kullanacak grupları atayın.
 5.  Dahil edilen gruplar seçimini tamamlamak için **Ata** bölmesinde **Tamam**'ı seçin.

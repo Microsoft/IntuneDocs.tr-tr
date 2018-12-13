@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 890c0eeb104838640ddd1f4daa312c1cab1288c8
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180689"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305956"
 ---
 # <a name="intune-app-sdk-overview"></a>Intune Uygulama SDK'sına genel bakış
 iOS ve Android için kullanılabilen Intune uygulama SDK'sı, uygulamanızı Intune uygulama koruma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için API’leri kullanarak uygulamanızın davranışını, uygulama katılımınızı gerektiren özelliklere göre özelleştirebilirsiniz.
@@ -75,4 +75,4 @@ Cihaz kaydı olmadan uygulama koruma, Microsoft Intune hizmetinin uygulama korum
 ### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Citrix mVPN ile isteğe bağlı uygulama VPN bağlantıları 
 Cihazları ve uygulamaları Citrix XenMobile MDX ve Microsoft Intune bileşimi ile yönetebilirsiniz. Bu bileşim, Citrix’in mVPN teknolojisini kullanırken uygulamaları Intune uygulama koruma ilkesiyle yönetebileceğiniz anlamına gelir. Citrix ile tümleştirme, iOS ve Android için Intune Uygulama SDK’sının yanı sıra iOS ve Android için Intune Uygulama Sarmalama Aracı (-citrix bayrağı olan) ile kullanılabilir.
  
-Citrix MDX hakkında daha fazla bilgi edinmek için bkz. [MDX Toolkit hakkında](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [iOS için Citrix MDX uygulama sarmalayıcı](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) ve [Android için Citrix MDX uygulama sarmalayıcı](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html).
+Citrix MDX hakkında daha fazla bilgi edinmek için bkz. [MDX Toolkit hakkında](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [iOS için Citrix MDX uygulama sarmalayıcı](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) ve [Android için Citrix MDX uygulama sarmalayıcı](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html).

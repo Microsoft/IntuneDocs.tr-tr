@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a4d40915cce17846ca2aaab29bb597c6580e8920
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 30155227f68f5b98eb1808cfc255b368f134ce91
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180672"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305922"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma aracılığıyla satın aldığınız iOS e-Kitaplarını yönetme
 
@@ -35,7 +35,7 @@ Microsoft Intune; bu program aracılığıyla satın aldığınız kitapları e�
 Kitap yönetme yordamı da [VPP uygulamaları yönetiminin](vpp-apps-ios.md) benzeridir.
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>iOS cihazları için toplu satın alınan kitapları yönetme
-iOS kitapları için çok sayıda lisansı [Apple İş İçin Volume Purchase Program](http://www.apple.com/business/vpp/) veya [Apple Eğitim İçin Volume Purchase Program](http://volume.itunes.apple.com/us/store) aracılığıyla satın alırsınız. Bu sürece Apple web sitesinden bir Apple VPP hesabının ayarlanması ve Apple VPP belirtecinin Intune’a yüklenmesi dahildir.  Daha sonra toplu satın alma bilgilerinizi Intune ile eşitleyebilir ve toplu satın alınan kitaplarınızın kullanımını izleyebilirsiniz.
+iOS kitapları için çok sayıda lisansı [Apple İş İçin Volume Purchase Program](https://www.apple.com/business/vpp/) veya [Apple Eğitim İçin Volume Purchase Program](https://volume.itunes.apple.com/us/store) aracılığıyla satın alırsınız. Bu sürece Apple web sitesinden bir Apple VPP hesabının ayarlanması ve Apple VPP belirtecinin Intune’a yüklenmesi dahildir.  Daha sonra toplu satın alma bilgilerinizi Intune ile eşitleyebilir ve toplu satın alınan kitaplarınızın kullanımını izleyebilirsiniz.
 
 ## <a name="before-you-start"></a>Başlamadan önce
 Başlamadan önce, Apple'dan bir VPP belirteci alın ve Intune hesabınıza yükleyin. Ek olarak:
@@ -54,7 +54,7 @@ Başlamadan önce, Apple'dan bir VPP belirteci alın ve Intune hesabınıza yük
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP belirtecini almak ve karşıya yüklemek için
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 1.  **İstemci uygulamaları** iş yükünde **Kurulum** > **iOS VPP Belirteçleri**’ni seçin.

@@ -14,12 +14,12 @@ ms.reviewer: kmyrup
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: 49e80c364c02902a185b85c7aed09a292ad9c6c8
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303881"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325118"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -29,21 +29,21 @@ Bu makale, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile
 
 - **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucular (Web Uygulaması Ara Sunucusu hariç), Active Directory etki alanınıza katılmalıdır.
 
-- **Sertifika Yetkilisi** (CA): Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan Microsoft Enterprise Sertifika Yetkilisi (CA) olmalıdır. Tek Başına CA desteklenmez. Ayrıntılar için bkz. [Sertifika Yetkilisi'ni yükleme](http://technet.microsoft.com/library/jj125375.aspx).
+- **Sertifika yetkilisi** (CA): Bir Microsoft sertifika yetkilisi (Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan kuruluş CA) olması gerekir. Tek Başına CA desteklenmez. Ayrıntılar için bkz. [Sertifika Yetkilisi'ni yükleme](http://technet.microsoft.com/library/jj125375.aspx).
     CA'nız Windows Server 2008 R2 çalıştırıyorsa, [KB2483564 ile gelen düzeltmeyi yüklemeniz](http://support.microsoft.com/kb/2483564/)gerekir.
 
-- **NDES Sunucusu**: Windows Server 2012 R2 veya üzeri sürümlerde Ağ Cihazı Kayıt Hizmeti (NDES) sunucu rolünü ayarlayın. Intune, Enterprise CA çalıştıran bir sunucuda NDES kullanımını desteklemez. Windows Server 2012 R2’yi NDES’yi barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](http://technet.microsoft.com/library/hh831498.aspx).
+- **NDES sunucusu**: Bir Windows Server 2012 R2 veya sonraki sürümlerde, ağ cihazı kayıt hizmeti (NDES) sunucusu rolü ayarlayın. Intune, Enterprise CA çalıştıran bir sunucuda NDES kullanımını desteklemez. Windows Server 2012 R2’yi NDES’yi barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](http://technet.microsoft.com/library/hh831498.aspx).
 NDES sunucusu, Enterprise CA ile aynı ormanda bulunan bir etki alanına katılmış olmalıdır. NDES sunucusunu ayrı bir ormanda, yalıtılmış ağda veya iç etki alanında dağıtma hakkında daha fazla bilgi, [Ağ Cihazı Kayıt Hizmeti ile İlke Modülü Kullanma](https://technet.microsoft.com/library/dn473016.aspx) başlığı altında bulunabilir.
 
-- **Microsoft Intune Sertifika Bağlayıcısı**: Intune yönetim portalından **Sertifika Bağlayıcısı** yükleyicisini (**NDESConnectorSetup.exe**) indirin. NDES rolüne sahip bir sunucuda bu yükleyiciyi çalıştırın.  
+- **Microsoft Intune sertifika Bağlayıcısı**: İndirme **sertifika Bağlayıcısı** Yükleyicisi (**NDESConnectorSetup.exe**) Intune Yönetim Portalı'ndan. NDES rolüne sahip bir sunucuda bu yükleyiciyi çalıştırın.  
 
   - NDES Sertifika bağlayıcısı, Federal Bilgi İşleme Standardı (FIPS) modunu da destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
 
-- **Web Uygulaması Ara Sunucusu** (isteğe bağlı): Web Uygulaması Ara Sunucusu (WAP) olarak Windows Server 2012 R2 veya sonrasını çalıştıran bir sunucu kullanın. Bu yapılandırma:
+- **Web uygulaması Ara sunucusu** (isteğe bağlı): Windows Server 2012 R2 çalıştıran bir sunucu kullanın veya daha yeni bir Web uygulaması Ara sunucusu (WAP) sunucusu olarak. Bu yapılandırma:
   - Cihazların bir İnternet bağlantısını kullanarak sertifikaları almasını sağlar.
   - Cihazlar sertifikaları almak ve yenilemek için İnternet üzerinden bağlanıyorsa güvenlik açısından önerilir.
   
-- **Azure Active Directory Uygulama Ara Sunucusu** (isteğe bağlı): Azure Active Directory Uygulama Ara Sunucusu, NDES Sunucusunu İnternet’te yayımlamak için adanmış bir Web Uygulaması Ara Sunucusu (WAP) yerine kullanılabilir. Daha fazla bilgi için bkz. [Şirket içi uygulamalara güvenli uzaktan erişim sağlama](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+- **Azure AD uygulama proxy'si** (isteğe bağlı): Azure AD uygulama proxy'si, NDES sunucusunun Internet'e yayımlamak için ayrılmış bir Web uygulaması Ara sunucusu (WAP) sunucusu yerine kullanılabilir. Daha fazla bilgi için bkz. [Şirket içi uygulamalara güvenli uzaktan erişim sağlama](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 #### <a name="additional"></a>Ek
 
@@ -223,7 +223,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Konum                        |      Değer      | Tür  |      Veri       |
+   |                        Konum                        |      Değer      | Tür  |      Veriler       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |
@@ -261,9 +261,9 @@ Bu adımda şunları yapacaksınız:
 
     İstemci kimlik doğrulama sertifikasının aşağıdaki özelliklere sahip olması gerekir:
 
-    - **Gelişmiş Anahtar Kullanımı**: Bu değer, **İstemci Kimlik Doğrulaması**’nı içermelidir
+    - **Gelişmiş anahtar kullanımı**: Bu değeri içermelidir **istemci kimlik doğrulaması**
 
-    - **Konu Adı**: Değer, sertifikayı yüklediğiniz sunucunun (NDES Sunucusu) DNS adına eşit olmalıdır
+    - **Konu adı**: Değer (NDES sunucusu) sertifika yüklemekte sunucunun DNS adına eşit olmalıdır
 
 ##### <a name="configure-iis-request-filtering"></a>IIS istek filtrelemeyi yapılandırma
 
@@ -280,8 +280,8 @@ Bu adımda şunları yapacaksınız:
 
     Aşağıdaki değerlerin DWORD girişleri olarak ayarlandığını doğrulayın:
 
-    - Ad: **MaxFieldLength**, **65534**'ün ondalık bir değeri ile
-    - Ad: **MaxRequestBytes**, **65534**'ün ondalık bir değeri ile
+    - Adı: **MaxFieldLength**, ondalık bir değer ile **65534**
+    - Adı: **MaxRequestBytes**, ondalık bir değer ile **65534**
 
 4. NDES sunucusunu yeniden başlatın. Sunucu artık Sertifika Bağlayıcısı'nı desteklemeye hazırdır.
 
@@ -362,13 +362,13 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 5. **Profil** türü açılan listesinde **SCEP sertifikası**’nı seçin.
 6. Aşağıdaki ayarları girin:
 
-   - **Sertifika türü**: Kullanıcı sertifikaları için **Kullanıcı**'yı seçin. Bilgi noktası gibi kullanıcısız cihazlar için **Cihaz**'ı seçin. **Cihaz** sertifikaları aşağıdaki platformlar için bulunur:  
+   - **Sertifika türü**: Seçin **kullanıcı** kullanıcı sertifikaları için. Bilgi noktası gibi kullanıcısız cihazlar için **Cihaz**'ı seçin. **Cihaz** sertifikaları aşağıdaki platformlar için bulunur:  
      - iOS
      - Windows 8.1 ve üzeri
      - Windows 10 ve üzeri
      - Android Kurumsal
 
-   - **Konu adı biçimi**: Sertifika isteğindeki konu adının Intune tarafından otomatik olarak nasıl oluşturulacağını seçin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
+   - **Konu adı biçimi**: Nasıl Intune otomatik olarak konu adı sertifika isteğindeki seçin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
 
         **Kullanıcı sertifika türü**  
 
@@ -380,17 +380,17 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         - **E-posta olarak ortak ad**
         - **IMEI (Uluslararası Mobil Donanım Kimliği)**
         - **Seri numarası**
-        - **Özel**: Bu seçeneği işaretlediğinizde bir **Özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim, şu iki değişkeni destekler: **Ortak Ad (CN)** ve **E-posta (E)**. **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
+        - **Özel**: Bu seçeneği belirlediğinizde bir **özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim iki değişkeni destekler: **Ortak ad (CN)** ve **e-posta (E)**. **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
 
-            - **CN={{UserName}}**: Kullanıcının kullanıcı asıl adı, örneğin janedoe@contoso.com
-            - **CN={{AAD_Device_ID}}**: Azure Active Directory’ye (AD) yeni bir cihaz kaydettiğinizde atanan bir kimlik. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
-            - **CN={{SERIALNUMBER}}**: Genellikle üretici tarafından bir cihazı tanımlamak için kullanılan benzersiz seri numarası (SN)
-            - **CN={{IMEINumber}}**: Bir cep telefonunu tanımlamak için kullanılan Uluslararası Mobil Ekipman Kimliği (IMEI) benzersiz numarası
-            - **CN={{OnPrem_Distinguished_Name}}**: `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com` gibi virgülle ayrılmış bir göreli ayırt edici ad dizisi
+            - **CN = {{UserName}}**: Kullanıcının kullanıcı asıl adı gibi janedoe@contoso.com
+            - **CN = {{aad_devıce_ıd}}**: Azure Active Directory (AD) bir cihaz kaydettiğinizde atanan bir kimliği. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
+            - **CN = {{SERIALNUMBER}}**: Genellikle bir cihazı tanımlamak için üretici tarafından kullanılan benzersiz seri numarası (SN)
+            - **CN = {{Imeınumber}}**: Cep telefonunu tanımlamak için kullanılan uluslararası mobil ekipman kimliği (IMEI) benzersiz numarası
+            - **CN = {{OnPrem_Distinguished_Name}}**: Virgül ile ayrılmış bir göreli ayırt edici ad dizisi `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
-            - **CN={{onPremisesSamAccountName}}**: Yöneticiler `onPremisesSamAccountName` adlı bir öznitelikte Azure AD Connect kullanarak Active Directory'deki samAccountName özniteliğini Azure AD'yle eşitleyebilir. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
+            - **CN = {{onPremisesSamAccountName}}**: Yöneticiler, Azure Active Directory'den samAccountName özniteliğini eşitlenebilmesi Azure AD kullanarak AD connect adlı bir öznitelikte `onPremisesSamAccountName`. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
 
                 `{{onPremisesSamAccountName}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onPremisesSamAccountName` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
@@ -428,7 +428,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         >  - Belirtilen cihaz değişkenleri desteklenmiyorsa profil cihaza yüklenmez. Örneğin IMEI numarası olmayan bir cihaza atanmış SCEP profilinde konu adı olarak {{IMEI}} kullanılırsa profil yüklemesi başarısız olur. 
 
 
-   - **Konu diğer adı**: Intune uygulamasının, sertifika isteğinde konu diğer adı (SAN) için değerleri otomatik olarak nasıl oluşturacağını girin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
+   - **Konu alternatif adı**: Intune otomatik olarak nasıl konu alternatif adı (SAN) değerlerini sertifika isteğinde oluşturacağını girin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
 
         **Kullanıcı sertifika türü**  
 
@@ -470,23 +470,23 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         >  -  Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
         >  - Belirtilen cihaz değişkenleri desteklenmiyorsa profil cihaza yüklenmez. Örneğin IMEI numarası olmayan bir cihaza atanmış SCEP profilinde konu diğer adı olarak {{IMEI}} kullanılırsa profil yüklemesi başarısız olur.  
 
-   - **Sertifika geçerlilik süresi**: Veren CA’da özel bir geçerlilik süresine izin veren `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` komutunu çalıştırdıysanız, sertifikanın süresi dolmadan önce kalan zamanı girebilirsiniz.<br>Sertifika şablonundaki geçerlilik süresinden düşük bir değer girebilirsiniz ancak daha yüksek bir değer giremezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa beş yıl değerini giremezsiniz ancak bir yıl değerini girebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir. 
-   - **Anahtar depolama sağlayıcısı (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): Sertifika anahtarının depolandığı yeri girin. Aşağıdaki değerlerden birini seçin:
+   - **Sertifika geçerlilik süresi**: Çalıştırdıysanız `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` komutu veren bir özel bir geçerlilik süresine izin veren CA ' nın sertifikanın süresi dolmadan önce kalan süreyi girebilirsiniz.<br>Sertifika şablonundaki geçerlilik süresinden düşük bir değer girebilirsiniz ancak daha yüksek bir değer giremezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa beş yıl değerini giremezsiniz ancak bir yıl değerini girebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir. 
+   - **Anahtar depolama sağlayıcısı (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): Sertifika anahtarının depolandığı girin. Aşağıdaki değerlerden birini seçin:
      - **Varsa Güvenilir Platform Modülü (TPM) KSP'sine, aksi halde Yazılım KSP'sine kaydol**
      - **Güvenilir Platform Modülü (TPM) KSP'sine kaydol, aksi halde hata ver**
      - **Passport'a kaydet, aksi halde hata ver (Windows 10 ve üzeri)**
      - **Software KSP’ye kaydol**
 
    - **Anahtar kullanımı**: Sertifika için anahtar kullanımı seçeneklerini girin. Seçenekleriniz şunlardır:
-     - **Anahtar şifreleme**: Yalnızca anahtar şifreli olduğunda anahtar değişimine izin verin
-     - **Dijital imza**: Yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verin
+     - **Anahtar şifreleme**: Yalnızca anahtar şifreli olduğunda anahtar değişimine izin verir.
+     - **Dijital imza**: Yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verir.
    - **Anahtar boyutu (bit)**: Anahtarın içerdiği bit sayısını seçin
-   - **Karma algoritması** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için uygun karma algoritması türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
-   - **Kök sertifika**: kök daha önce yapılandırdığınız ve kullanıcıya ve/veya cihaz atanan CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır. SCEP sertifikası profilinde atanan aynı gruba bu güvenilen kök sertifika profilini atama emin olun.
-   - **Genişletilmiş anahtar kullanımı**: Sertifikaların hedeflenen amacına yönelik değerler eklemek için **Ekle**’yi seçin. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
+   - **Karma algoritması** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için kullanılabilir karma algoritma türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
+   - **Kök sertifika**: Kök daha önce yapılandırdığınız ve kullanıcıya ve/veya cihaz atanan CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır. SCEP sertifikası profilinde atanan aynı gruba bu güvenilen kök sertifika profilini atama emin olun.
+   - **Genişletilmiş Anahtar Kullanımı**: **Ekleme** sertifikanın değerlerini sertifikaların hedeflenen amacına. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
    - **Kayıt Ayarları**
-     - **Yenileme eşiği (%)**: Cihazın, sertifikanın yenilenmesini istemesi için kalan sertifika ömrünün yüzde kaç olması gerektiğini girin.
-     - **SCEP Sunucu URL’leri**: SCEP aracılığıyla sertifika veren NDES Sunucuları için bir veya birden çok URL girin.
+     - **Yenileme eşiği (%)**: Cihaz yenilenmesini sertifikasının kalan sertifika ömrünün yüzde kaç olması girin.
+     - **SCEP sunucu URL'leri**: SCEP aracılığıyla sertifika verecek NDES sunucuları için bir veya daha fazla URL girin. Örneğin, aşağıdakine benzer girin `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
      - **Tamam**’ı seçin ve profilinizi **Oluşturun**.
 
 Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
@@ -556,7 +556,7 @@ Sürüm 6.1806.x.x’ten itibaren Intune Bağlayıcısı Hizmeti, olayları **Ol
 | 0x00000409 | CRPSCEPSigningCert_NotFound  | İmzalama sertifikası alınamadı. Intune Bağlayıcı Hizmeti'nin düzgün yapılandırıldığını ve Intune Bağlayıcı Hizmeti'nin çalıştığını doğrulayın. Ayrıca sertifika indirme olaylarının başarılı olduğunu da doğrulayın. |
 | 0x00000410 | CRPSCEPDeserialize_Failed  | SCEP sınama isteği seri durumdan çıkarılamadı. NDES ile Intune Connector'ın düzgün kurulduğunu doğrulayın. |
 | 0x00000411 | CRPSCEPChallenge_Expired  | Sertifika sınamasının süresi dolduğundan istek reddedildi. İstemci cihazı yönetim sunucusundan yeni bir sınama aldıktan sonra bir kez daha deneyebilir. |
-| 0x0FFFFFFFF | Unknown_Error  | Bir sunucu tarafı hatası oluştuğundan isteğinizi tamamlayamadık. Lütfen tekrar deneyin. |
+| 0x0FFFFFFFF | Unknown_Error  | Bir sunucu tarafı hatası oluştuğundan isteğinizi tamamlayamadık. Lütfen yeniden deneyin. |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

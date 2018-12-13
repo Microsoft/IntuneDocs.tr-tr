@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 40e189a3bb9e45851011ae1961ef89576dbcb5d0
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630026"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267047"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak İnternet erişimini yönetme
 
@@ -150,7 +150,7 @@ Microsoft Edge ve Intune Managed Browser ile [Azure AD Uygulama Ara Sunucusu]( h
 ### <a name="before-you-start"></a>Başlamadan önce
 
 - Dahili uygulamalarınızı Azure AD Uygulama Proxy’si aracılığıyla ayarlayın.
-    - Uygulama Proxy’sini yapılandırmak ve uygulama yayımlamak için bkz. [kurulum belgeleri](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
+    - Uygulama Proxy’sini yapılandırmak ve uygulama yayımlamak için bkz. [kurulum belgeleri](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started). 
 - Managed Browser uygulamasının 1.2.0 veya üzeri bir sürümünü kullanıyor olmanız gerekir.
 - Managed Browser veya Microsoft Edge uygulamalarının kullanıcıları, uygulamaya atanmış bir [Intune uygulama koruma ilkesine]( app-protection-policy.md) sahiptir.
 
@@ -158,10 +158,10 @@ Microsoft Edge ve Intune Managed Browser ile [Azure AD Uygulama Ara Sunucusu]( h
     > Güncelleştirilmiş Uygulama Ara Sunucusu’nun yeniden yönlendirme verilerinin Managed Browser’da veya Microsoft Edge'de etkinleşmesi 24 saati bulabilir.
 
 
-#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1. adım: Outlook'tan korumalı tarayıcıya otomatik yeniden yönlendirmeyi etkinleştirme
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Adım 1: Outlook'tan korumalı tarayıcıya otomatik yeniden yönlendirmeyi etkinleştirme
 Outlook’un, **Managed Browser’da görüntülenecek içeriği kısıtla** ayarına imkan veren bir uygulama koruma ilkesiyle yapılandırılması gereklidir.
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>2. adım: Korumalı tarayıcıya atanmış bir uygulama koruma ilkesini atama.
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Adım 2: Korumalı tarayıcıya atanmış bir uygulama koruma ilkesini atama.
 Bu yordam ile Managed Browser veya Microsoft Edge uygulamasını, uygulama ara sunucusu yeniden yönlendirmesini kullanmak üzere yapılandırabilirsiniz. Microsoft Edge veya Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
 | Anahtar                                                             | Değer    |

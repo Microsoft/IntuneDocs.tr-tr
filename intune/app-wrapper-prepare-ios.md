@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: acf850c8981a68456c8be9bda54c21ad49aba5e9
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112893"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325084"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -179,16 +179,16 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 macOS Terminali'ni açın ve aşağıdaki komutu çalıştırın:
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
 > Bazı parametreler aşağıdaki tabloda gösterildiği gibi isteğe bağlıdır.
 
-**Örnek:** Aşağıdaki örnek komut, MyApp.ipa adlı uygulamanın üzerinde Uygulama Sarmalama Aracı'nı çalıştırır. Bir sağlama profili ve imzalama sertifikasının SHA-1 karması belirtilir ve sarmalanan uygulamayı imzalamak için kullanılır. Uygulama çıktısı (MyApp_Wrapped.ipa) oluşturulur ve Masaüstü klasörünüzde depolanır.
+**Örnek:** Aşağıdaki örnek komut, MyApp.ipa adlı uygulamanın üzerinde uygulama sarmalama aracını çalıştırır. Bir sağlama profili ve imzalama sertifikasının SHA-1 karması belirtilir ve sarmalanan uygulamayı imzalamak için kullanılır. Uygulama çıktısı (MyApp_Wrapped.ipa) oluşturulur ve Masaüstü klasörünüzde depolanır.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -278,7 +278,7 @@ Uygulama sarmalama aracı başarılı bir şekilde tamamlanamazsa, konsolda aşa
 |Belirttiğiniz giriş uygulaması imzalı değil. Geçerli bir imzalı uygulama belirtin.|Uygulama sarmalama aracı, uygulamaların imzalı olmasını gerektirir. Sarmalanan bir uygulamanın nasıl imzalanacağını öğrenmek için geliştirici belgelerinize başvurun.|
 |Belirttiğiniz giriş uygulaması .ipa veya .app biçiminde olmalıdır.|Uygulama sarmalama aracı tarafından yalnızca .app ve .ipa uzantıları kabul edilir. Giriş dosyanızın geçerli bir uzantısı olduğundan ve bir .app veya .ipa dosyası olarak derlendiğinden emin olun.|
 |Belirttiğiniz giriş uygulaması zaten sarmalanmış ve ilke şablonunun son sürümünde yer alıyor.|Uygulama Sarmalama Aracı, var olan bir sarmalanmış uygulamayı ilkesi şablonunun son sürümü ile yeniden sarmalamaz.|
-|UYARI: SHA1 sertifika karması belirtmediniz. Sarmalanan uygulamanızı dağıtmadan önce mutlaka imzalayın.|Geçerli bir SHA1 karması belirttiğinizden –c komut satırı bayrağını takip ederek emin olun. |
+|UYARI: SHA1 Sertifika Karması belirtmediniz. Sarmalanan uygulamanızı dağıtmadan önce mutlaka imzalayın.|Geçerli bir SHA1 karması belirttiğinizden –c komut satırı bayrağını takip ederek emin olun. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için günlük dosyaları
 Uygulama Sarmalama Aracı kullanılarak sarmalanan uygulamalar, iOS istemci cihaz konsoluna yazılan günlükler oluşturur. Bu bilgiler, uygulamayla ilgili sorun yaşadığınızda ve sorunun Uygulama Sarmalama Aracı ile ilişkili olup olmadığını belirlemeniz gerektiğinde yararlıdır. Bu bilgileri almak için aşağıdaki adımları kullanın:
@@ -289,7 +289,7 @@ Uygulama Sarmalama Aracı kullanılarak sarmalanan uygulamalar, iOS istemci ciha
 
 3.  Konsola aşağıdaki betiği girerek Uygulama Kısıtlamaları çıkışı için kaydedilen günlükleri filtreleyin:
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     Filtrelenmiş günlükleri Microsoft'a gönderebilirsiniz.
@@ -368,20 +368,20 @@ iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıd
 
 3.  .app paketinde yetkilendirmeleri denetlemek için kod imzalama aracını kullanın; burada `YourApp.app`, .app paketinizin gerçek adıdır:
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  Uygulamanın gömülü sağlama profilinin yetkilendirmelerini denetlemek için güvenlik aracını kullanın; burada `YourApp.app`, .app paketinizin gerçek adıdır.
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Uygulamadan yetkilendirmeleri kaldırmak için –e parametresini kullanma
 Bu komut, uygulamada etkinleştirilmiş olan ve yetkilendirmeler dosyasında yer almayan tüm yetenekleri kaldırır. Uygulama tarafından kullanılmakta olan yetenekleri kaldırırsanız, uygulamanız bozulabilir. Eksik yetenekleri kaldırabileceğiniz durumlara örnek olarak, tüm yeteneklere varsayılan olarak sahip olan, satıcı tarafından oluşturulmuş bir uygulama verilebilir.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ Bu özellik, iOS için Citrix MDX uygulama sarmalayıcıyla bir tümleştirmedir
 Yalnızca genel uygulama sarmalama komutunu sonuna `-citrix` bayrağı eklenmiş olarak çalıştırın. `-citrix` bayrağı şu anda hiçbir bağımsız değişken almamaktadır.
 
 **Kullanım biçimi**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Örnek komut**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 

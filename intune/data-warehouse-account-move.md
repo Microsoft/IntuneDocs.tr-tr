@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 470bafba548c38870e57a545c4514459dde219b4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 76f155d84a3f447cf067970c614d2bd7fd4f1798
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189402"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305905"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune Veri Ambarı hesabı verilerinizi taşıma 
 
@@ -81,4 +81,4 @@ X müşterisi, hesap taşımasının 1.06.2018 tarihinde başlamasını ister. B
 ## <a name="next-steps"></a>Sonraki adımlar
 
  - [Intune’daki haftalık yenilikleri](whats-new.md) öğrenin. Yaklaşan değişiklikler, hizmet hakkında önemli bildirimler ve geçmiş sunumlar hakkında bilgiler de alabilirsiniz.
- - [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)’nu okuyun.
+ - [Microsoft Intune Blogu](https://go.microsoft.com/fwlink/?LinkID=273882)’nu okuyun.

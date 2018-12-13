@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 175491e53ba9b1fbd41ac8bec8841c600b6916fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b2ec10ec1174e5e689802d2c4f17a21de8312a15
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184565"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305973"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 
@@ -56,7 +56,7 @@ Ayrıca, Apple Volume Purchase Program (VPP) mağazasından satın aldığınız
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>iOS cihazlar için Apple Volume Purchase Program ile toplu satın alınan uygulamaları destekler
 
-[Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) veya [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store) aracılığıyla iOS uygulamaları için birden çok lisans satın alın. Bu sürece Apple web sitesinden bir Apple VPP hesabının ayarlanması ve Apple VPP belirtecinin Intune’a yüklenmesi dahildir.  Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz.
+[Apple Volume Purchase Program for Business](https://www.apple.com/business/vpp/) veya [Apple Volume Purchase Program for Education](https://volume.itunes.apple.com/us/store) aracılığıyla iOS uygulamaları için birden çok lisans satın alın. Bu sürece Apple web sitesinden bir Apple VPP hesabının ayarlanması ve Apple VPP belirtecinin Intune’a yüklenmesi dahildir.  Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz.
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS cihazlar için İşletmeler Arası toplu satın alınan uygulamaları destekler
 
@@ -81,7 +81,7 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve Intune hesabınıza y�
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP belirtecini almak ve karşıya yüklemek için
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3.  **Intune** bölmesinde **Kurulum** altında bulunan **İstemci uygulamaları** > **iOS VPP belirteçleri**’ni seçin.
 4.  VPP belirteçleri listesi bölmesinde **Oluştur**’u seçin.
@@ -123,11 +123,11 @@ Son kullanıcı, birkaç senaryoda VPP uygulama yüklemesi için istem alır. A�
 
 | # | Senaryo                                | Bir Apple VPP programına davet                              | Uygulama yükleme istemi | Apple kimliği istemi |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | KCG – kullanıcı lisanslı                             | Y                                                                                               | Y                                           | Y                                 |
-| 2 | Şirket – kullanıcı lisanslı (denetimsiz cihaz)     | Y                                                                                               | Y                                           | Y                                 |
-| 3 | Şirket – kullanıcı lisanslı (denetimli cihaz)         | Y                                                                                               | N                                           | Y                                 |
-| 4 | KCG – cihaz lisanslı                           | N                                                                                               | Y                                           | N                                 |
-| 5 | ŞİRKET – cihaz lisanslı (denetimsiz cihaz)                           | N                                                                                               | Y                                           | N                                 |
+| 1 | KCG – kullanıcı lisanslı                             | E                                                                                               | E                                           | E                                 |
+| 2 | Şirket – kullanıcı lisanslı (denetimsiz cihaz)     | E                                                                                               | E                                           | E                                 |
+| 3 | Şirket – kullanıcı lisanslı (denetimli cihaz)         | E                                                                                               | N                                           | E                                 |
+| 4 | KCG – cihaz lisanslı                           | N                                                                                               | E                                           | N                                 |
+| 5 | ŞİRKET – cihaz lisanslı (denetimsiz cihaz)                           | N                                                                                               | E                                           | N                                 |
 | 6 | ŞİRKET – cihaz lisanslı (denetimli cihaz)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Bilgi noktası modu (denetimli cihaz) – cihaz lisanslı | N                                                                                               | N                                           | N                                 |
 | 8 | Bilgi noktası modu (denetimli cihaz) – kullanıcı lisanslı   | --- | ---                                          | ---                                |

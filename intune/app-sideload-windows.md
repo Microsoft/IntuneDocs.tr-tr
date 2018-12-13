@@ -5,7 +5,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c96d66a11f49db68d20511aeae9b2abbab53b172
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c15c8915c1fefabf301525b3ef03f74038d31dc
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181251"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325060"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -34,10 +34,10 @@ Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalaman
 
 
 1. **Microsoft geliştiricisi olarak kaydolma**<br>
-   Şirket hesabınızı satın alırken oturum açtığınız kurumsal hesap bilgilerini kullanarak [bir Microsoft geliştiricisi olarak kaydolun](http://go.microsoft.com/fwlink/?LinkId=268442). Bu istek, kod imzalama sertifikası sizin tarafınızdan alınmadan önce bir şirket yetkilisi tarafından yetkilendirilmelidir.
+   Şirket hesabınızı satın alırken oturum açtığınız kurumsal hesap bilgilerini kullanarak [bir Microsoft geliştiricisi olarak kaydolun](https://go.microsoft.com/fwlink/?LinkId=268442). Bu istek, kod imzalama sertifikası sizin tarafınızdan alınmadan önce bir şirket yetkilisi tarafından yetkilendirilmelidir.
 
 2. **Şirket Symantec sertifikası alma**<br>
-  Symantec ID'nizi kullanarak [Symantec web sitesinden](http://go.microsoft.com/fwlink/?LinkId=268441) bir sertifika satın alın. Sertifikayı satın aldıktan sonra, Microsoft geliştiricisi olarak kaydolurken belirlediğiniz kurum onay sorumlusu sertifika isteğini onaylamasını isteyen bir e-posta alır. Symantec sertifika gereksinimi hakkında daha fazla bilgi için bkz. [Windows Phone neden Symantec sertifikası gerektiriyor?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows cihaz kaydı SSS.
+  Symantec ID'nizi kullanarak [Symantec web sitesinden](https://go.microsoft.com/fwlink/?LinkId=268441) bir sertifika satın alın. Sertifikayı satın aldıktan sonra, Microsoft geliştiricisi olarak kaydolurken belirlediğiniz kurum onay sorumlusu sertifika isteğini onaylamasını isteyen bir e-posta alır. Symantec sertifika gereksinimi hakkında daha fazla bilgi için bkz. [Windows Phone neden Symantec sertifikası gerektiriyor?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows cihaz kaydı SSS.
 
 3.  **Sertifikaları içeri aktarma**<br>
     İstek onaylandıktan sonra sertifikaları içeri aktarmaya yönelik yönergeler içeren bir e-posta alacaksınız. Sertifikaları içeri aktarmak için e-postadaki yönergeleri izleyin.
@@ -52,7 +52,7 @@ Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalaman
 
     ![İmzalama sertifikasını dışarı aktarma](./media/wit-walk-cert2.gif)
 
-    **Sertifika Dışarı Aktarma Sihirbazı**'nda **Evet, özel anahtarı dışarı aktar** 'ı seçin ve ardından **İleri**'ye tıklayın. **Personal Information Exchange –PKCS #12 (.PFX) seçeneğini belirleyin** ve **Mümkünse sertifika yolundaki tüm sertifikaları dahil et**'i işaretleyin. Sihirbazı tamamlayın. Daha fazla bilgi için bkz. [Özel Anahtara Sahip Bir Sertifikayı Dışarı Aktarma](http://go.microsoft.com/fwlink/?LinkID=203031).
+    **Sertifika Dışarı Aktarma Sihirbazı**'nda **Evet, özel anahtarı dışarı aktar** 'ı seçin ve ardından **İleri**'ye tıklayın. **Personal Information Exchange –PKCS #12 (.PFX) seçeneğini belirleyin** ve **Mümkünse sertifika yolundaki tüm sertifikaları dahil et**'i işaretleyin. Sihirbazı tamamlayın. Daha fazla bilgi için bkz. [Özel Anahtara Sahip Bir Sertifikayı Dışarı Aktarma](https://go.microsoft.com/fwlink/?LinkID=203031).
 
 6.  **Uygulamayı Intune'a yükleme**<br>
     İmzalanmış uygulama dosyasını ve kod imzalama sertifikanızı karşıya yükleyerek uygulamayı son kullanıcılarınızın kullanımına sunun.
@@ -65,39 +65,39 @@ Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalaman
 
     4.  Sihirbazı tamamlayın.
 
-## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Örnek: Windows cihazlar için Şirket Portalı uygulamasını indirme, imzalama ve dağıtma
+## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Örnek: İndirme, oturum ve Windows cihazları için Şirket portalı uygulamasını dağıtma
 
 Intune Şirket Portalı uygulamasını Windows Phone ve Windows 10 Mobile cihazları dahil olmak üzere Windows cihazlarına Microsoft Mağazası’ndan yüklemek yerine Intune ile dağıtabilirsiniz. Şirket Portalı uygulamasını indirmeniz ve sertifikanızla imzalamanız gerekir.  Bu yalnızca, kullanıcılar Şirket Deposunu kullanmayacaksa ve Şirket Portalı’nı Windows Phone 8.1 cihazlara dağıtmak istiyorsanız gereklidir.
 
 
 1.  **Şirket Portalı’nı indirme**
 
-    Şirket Portalı uygulamasını Intune'u kullanarak dağıtmak için İndirme Merkezi’nden [Windows Phone 8.1 için Microsoft Intune Şirket Portalı Uygulaması](http://go.microsoft.com/fwlink/?LinkId=615799)'nı indirebilir ve kendiliğinden açılan (.exe) dosyayı çalıştırabilirsiniz. Bu dosya iki dosya içerir:
+    Şirket Portalı uygulamasını Intune'u kullanarak dağıtmak için İndirme Merkezi’nden [Windows Phone 8.1 için Microsoft Intune Şirket Portalı Uygulaması](https://go.microsoft.com/fwlink/?LinkId=615799)'nı indirebilir ve kendiliğinden açılan (.exe) dosyayı çalıştırabilirsiniz. Bu dosya iki dosya içerir:
 
     -   CompanyPortal.appx– Windows Phone 8.1 için Şirket Portalı yükleme uygulaması
 
     -   WinPhoneCompanyPortal.ps1 – Windows Phone 8.1 cihazlarına dağıtılabilmesi amacıyla Şirket Portalı uygulama dosyasını imzalamak için kullanabileceğiniz bir PowerShell betiği.
 
-    Alternatif olarak, Windows Phone 8.1 Şirket Portalı (çevrimdışı lisanslı paket) uygulamasını veya Windows 10 Şirket Portalı’nı (çevrimdışı lisanslı paket) [İş İçin Microsoft Mağazası](http://businessstore.microsoft.com/)'ndan indirebilirsiniz. Şirket Portalı uygulamasının çevrimdışı lisansla alınması ve çevrimdışı kullanım için uygun paketin indirilmesi gerekir. Seçilen Windows 8 ve Windows Phone 8 platformu örnekleri, 8.1 yerine kullanılamaz. Bunun Intune’da nasıl yapılacağına ilişkin ayrıntılar için bkz. [İş için Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme](windows-store-for-business.md).
+    Alternatif olarak, Windows Phone 8.1 Şirket Portalı (çevrimdışı lisanslı paket) uygulamasını veya Windows 10 Şirket Portalı’nı (çevrimdışı lisanslı paket) [İş İçin Microsoft Mağazası](https://businessstore.microsoft.com/)'ndan indirebilirsiniz. Şirket Portalı uygulamasının çevrimdışı lisansla alınması ve çevrimdışı kullanım için uygun paketin indirilmesi gerekir. Seçilen Windows 8 ve Windows Phone 8 platformu örnekleri, 8.1 yerine kullanılamaz. Bunun Intune’da nasıl yapılacağına ilişkin ayrıntılar için bkz. [İş için Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme](windows-store-for-business.md).
 
-2.  **Windows Phone SDK’sını indirme** [Windows Phone SDK’sı 8.0’ı indirin] (http://go.microsoft.com/fwlink/?LinkId=615570)) ve SDK’yı bilgisayarınıza yükleyin. Bu SDK, bir uygulama kaydı belirteci oluşturmak için gereklidir.
+2.  **Windows Phone SDK’sını indirme** [Windows Phone SDK’sı 8.0’ı indirin] (https://go.microsoft.com/fwlink/?LinkId=615570)) ve SDK’yı bilgisayarınıza yükleyin. Bu SDK, bir uygulama kaydı belirteci oluşturmak için gereklidir.
 
 3.  **AETX dosyası oluşturma** Windows Phone SDK 8.0’ın parçası olan AETGenerator.exe dosyasını kullanarak Symantec PFX dosyasından bir uygulama kaydı belirteci (.aetx) dosyası oluşturun. AETX dosyasının nasıl oluşturulacağına ilişkin yönergeler için bkz. [Windows Phone için uygulama kaydı belirteci oluşturma](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
 
-4.  **Windows 8.1 için Windows SDK’sını indirme** [Windows Phone SDK’sını](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525)) indirin ve yükleyin. Şirket Portalı uygulamasına dahil edilen PowerShell betiğinin varsayılan yükleme konumunu (`${env:ProgramFiles(x86)}\Windows Kits\8.1`) kullandığını unutmayın. Başka bir yere yüklerseniz, bir cmdlet parametresinde konumu eklemeniz gerekir.
+4.  **Windows 8.1 için Windows SDK’sını indirme** [Windows Phone SDK’sını](https://go.microsoft.com/fwlink/?LinkId=613525) (https://go.microsoft.com/fwlink/?LinkId=613525)) indirin ve yükleyin. Şirket Portalı uygulamasına dahil edilen PowerShell betiğinin varsayılan yükleme konumunu (`${env:ProgramFiles(x86)}\Windows Kits\8.1`) kullandığını unutmayın. Başka bir yere yüklerseniz, bir cmdlet parametresinde konumu eklemeniz gerekir.
 
 5.  **PowerShell kullanarak uygulama kodunu imzalama** Yönetici olarak, Windows SDK’sı ve Symantec Kurumsal Mobil Kod İmzalama Sertifikası yüklenmiş ana bilgisayarda **Windows PowerShell**’i açın, Sign-WinPhoneCompanyPortal.ps1 dosyasına gidin ve betiği çalıştırın.
 
     **Örnek 1**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
     ```
     Bu örnek, C:\temp\ konumundaki CompanyPortal.appx dosyasını imzalar ve CompanyPortalEnterpriseSigned.appx dosyasını üretir. PFX parolası olarak 1234’ü kullanır ve PFX dosyasından yayımcı kimliğini okur. Cert.aetx dosyasından kuruluş kimliğini de okur.
 
     **Örnek 2**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
     ```
     Bu örnek, C:\temp\ konumundaki CompanyPortal.appx dosyasını imzalar ve CompanyPortalEnterpriseSigned.appx dosyasını üretir. PFX parolası olarak 1234’ü ve belirtilen yayımcı kimliğini kullanır.
@@ -128,7 +128,7 @@ Belirli Windows ve Windows Phone mobil uygulamalarını dağıtmak için kullan�
 
 1.  Sertifikanın süresi dolmadan yaklaşık 14 gün önce Symantec tarafından gönderilen yenileme e-postasını bulun. Bu e-posta, kurumsal sertifikanızı yenileme hakkında Symantec tarafından gönderilen yönergeleri içerir.
 
-    Symantec sertifikaları hakkında ek bilgi için [www.symantec.com](http://www.symantec.com) adresini ziyaret edin veya 1-877-438-8776 ya da 1-650-426-3400 numaralı telefonları arayın.
+    Symantec sertifikaları hakkında ek bilgi için [www.symantec.com](https://www.symantec.com) adresini ziyaret edin veya 1-877-438-8776 ya da 1-650-426-3400 numaralı telefonları arayın.
 
 2.  Web sitesine gidin (örneğin: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) ve sertifikayla ilişkili Symantec Yayımcı Kimliği ve e-posta adresi ile oturum açın. Yenileme işlemini başlatmak için, sertifika indirmek için kullanacağınız makineyle aynı makineyi kullanmayı unutmayın.
 

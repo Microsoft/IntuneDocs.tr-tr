@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032257"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324869"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -43,7 +43,7 @@ Kayıttan sonra **Kişisel** veya **Şirket** arasında [sahiplik ayarını değ
 
 Bir Intune yöneticisi olarak, IMEI numaralarını veya seri numaraları listeleyen bir virgülle ayrılmış değer (.csv) dosyası oluşturup içeri aktarabilirsiniz. Intune, cihaz kaydı sırasında cihaz sahipliğini şirket olarak belirtmek için bu tanımlayıcıları kullanır. Desteklenen tüm platformlar için IMEI numaraları bildirebilirsiniz. Yalnızca iOS, macOS ve Android cihazlar için seri numarası bildirebilirsiniz. Listede her IMEI numarası veya seri numarasının yönetim amacıyla belirtilen ayrıntıları bulunabilir.
 
-<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
 [Apple cihaz seri numarasını bulmayı öğrenin](https://support.apple.com/HT204308).<br>
 [Android cihaz seri numaranızı bulmayı öğrenin](https://support.google.com/store/answer/3333000).
@@ -67,7 +67,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 > [!IMPORTANT]
 > Bazı Android cihazları birden çok IMEI numarasına sahiptir. Intune, kayıtlı cihaz başına yalnızca bir IMEI numarasını okur. IMEI numarasını içeri aktarıyorsanız ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse cihaz şirkete ait değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değerini görüntüler.<br>
->Ayrıca unutmayın: Android Seri numaralarının mevcut veya benzersiz olacağı garanti değildir. Seri numarasının güvenilir bir cihaz kimliği olup olmadığını anlamak için cihaz sağlayıcınızla görüşün.
+>Ayrıca unutmayın: Android seri numaralarının mevcut veya benzersiz olacağı garanti edilmez. Seri numarasının güvenilir bir cihaz kimliği olup olmadığını anlamak için cihaz sağlayıcınızla görüşün.
 >Cihazın Intune’a gönderdiği seri numaralar, cihazdaki Android Ayarları/Hakkında menülerinde gösterilen kimlikle eşleşmeyebilir. Cihaz üreticisi tarafından belirtilen seri numarasının türünü doğrulayın.
 >Nokta (.) içeren seri numaralara sahip bir dosya yükleme denemesi, karşıya yükleme işleminin başarısız olmasına yol açar. Nokta içeren seri numaraları desteklenmez.
 
@@ -77,7 +77,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
    ![Kurumsal cihaz tanımlayıcısı çalışma alanı ile Ekle düğmesinin vurgulanmış hali](./media/add-corp-id.png)
 
-2. **Tanımlayıcı ekle** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI**veya **Seri**.
+2. İçinde **tanımlayıcılar ekleme** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI** veya **seri**.
 
 3. Klasör simgesine tıklayın ve içeri aktarmak istediğiniz listenin yolunu belirtin. .csv dosyasına gidin ve **Ekle**’yi seçin. 
 
@@ -87,7 +87,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 1. [Azure portalında Intune’da](https://portal.azure.com) **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > **Ekle** > **El ile gir**’i seçin.
 
-2. **Tanımlayıcı ekle** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI**veya **Seri**.
+2. İçinde **tanımlayıcılar ekleme** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI** veya **seri**.
 
 3. Eklemek istediğiniz tüm tanımlayıcılar için **Tanımlayıcı** ve **Ayrıntılar**’ı girin. Tanımlayıcıları girmeyi tamamladığınızda **Ekle**’yi seçin.
 

@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/09/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: 24af17395cee1e84d72fdb066c0a4ffb949f3045
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168037"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325152"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -86,7 +86,7 @@ Araçlar yalnızca [dolaysız değiştirmeleri](#class-and-method-replacements))
 ### <a name="gradle-build-plugin"></a>Gradle Derleme Eklentisi
 Uygulamanız Gradle ile derlenmiyorsa [Komut Satırı Aracı ile tümleştirme](#command-line-build-tool) bölümüne atlayın. 
 
-Uygulama SDK'sı eklentisi **GradlePlugin/com.microsoft.intune.mam.build.jar** adıyla SDK'nın bir parçası olarak dağıtılır. Gradle'ın eklentiyi bulabilmesi için eklentinin derleme betiği sınıf yoluna eklenmesi gerekir. Eklenti, kendisi de eklenmesi gereken [Javassist](http://jboss-javassist.github.io/javassist/)'e bağımlıdır. Bunları sınıf yoluna eklemek için aşağıdakileri uygulamanızın kök dizinine ekleyin `build.gradle`
+Uygulama SDK'sı eklentisi **GradlePlugin/com.microsoft.intune.mam.build.jar** adıyla SDK'nın bir parçası olarak dağıtılır. Gradle'ın eklentiyi bulabilmesi için eklentinin derleme betiği sınıf yoluna eklenmesi gerekir. Eklenti, kendisi de eklenmesi gereken [Javassist](https://jboss-javassist.github.io/javassist/)'e bağımlıdır. Bunları sınıf yoluna eklemek için aşağıdakileri uygulamanızın kök dizinine ekleyin `build.gradle`
 
 ```groovy
 buildscript {
@@ -170,7 +170,7 @@ Her iki soruyu da 'evet' ile yanıtlıyorsanız, bu kitaplığı `includeExterna
 
 #### <a name="dependencies"></a>Bağımlılıkları
 
-Gradle eklentisini [Javassist](http://jboss-javassist.github.io/javassist/)'e bağımlıdır ve bunun (yukarıda açıklandığı gibi) Gradle'ın bağımlılık çözümlemesinde bulunması gerekir. Javassist yalnızca derleme zamanında, eklenti çalıştırılırken kullanılır. Uygulamanıza hiçbir Javassist kodu eklenmeyecektir.
+Gradle eklentisini [Javassist](https://jboss-javassist.github.io/javassist/)'e bağımlıdır ve bunun (yukarıda açıklandığı gibi) Gradle'ın bağımlılık çözümlemesinde bulunması gerekir. Javassist yalnızca derleme zamanında, eklenti çalıştırılırken kullanılır. Uygulamanıza hiçbir Javassist kodu eklenmeyecektir.
 
 > [!NOTE]
 > Android Gradle eklentisinin 3.0 veya daha yeni bir sürümünü ve Gradle'ın 4.1 veya daha yeni bir sürümünü kullanmalısınız.
@@ -338,7 +338,7 @@ Bu izinler, Azure Active Directory Kimlik Doğrulama Kitaplığı ([ADAL](https:
 
 Günlüğe kaydedilen verilerden en iyi şekilde yararlanmak için günlüğün erken başlatılması gerekir. `Application.onMAMCreate()` normalde günlüğü başlatmak için en iyi konumdur.
 
-Uygulamanıza MAM günlüklerini almak için, [Java İşleyicisi](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) oluşturun ve bunu `MAMLogHandlerWrapper` konumuna ekleyin. Bu, her günlük iletisi için uygulama işleyicisinde `publish()` çağrısı yapar.
+Uygulamanıza MAM günlüklerini almak için, [Java İşleyicisi](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) oluşturun ve bunu `MAMLogHandlerWrapper` konumuna ekleyin. Bu, her günlük iletisi için uygulama işleyicisinde `publish()` çağrısı yapar.
 
 ```java
 /**
@@ -502,9 +502,9 @@ SaveLocation service, String username);
 ... burada `service`, aşağıdaki SaveLocation değerlerinden biridir:
 
 
-    * SaveLocation.ONEDRIVE_İŞ
-    * SaveLocation.YEREL
-    * SaveLocation.SHAREPOINT
+    * `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+    * `SaveLocation.LOCAL`
+    * `SaveLocation.SHAREPOINT`
 
 Kullanıcının ilkesinin çeşitli konumlara veri kaydetmesine izin verip vermediğini belirlemeye yönelik önceki yöntem, aynı **AppPolicy** sınıfındaki `getIsSaveToPersonalAllowed()` yöntemiydi. Bu işlev artık **kullanım dışı bırakılmıştır** ve kullanılmamalıdır; aşağıdaki çağrı `getIsSaveToPersonalAllowed()` ile eşdeğerdir:
 
@@ -798,7 +798,7 @@ Result getRegisteredAccountStatus(String upn);
 
 [Bağımsız bulut kullanan](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) uygulamalar, `authority` öğesini `registerAccountForMAM()` öğesine **sağlamalıdır**.  Bu ADAL'ın [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters içinde `instance_aware=true` sağlayıp AuthenticationCallback AuthenticationResult üzerinde `getAuthority()` çağrılarak alınabilir.
 
-```
+```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
         new AuthenticationCallback<AuthenticationResult>() {
             @Override
@@ -817,7 +817,8 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 > [!NOTE]
 > AndroidManifest.xml meta veri yetkilisini ayarlamayın.
 <br/>
-```
+
+```xml
 <meta-data
     android:name="com.microsoft.intune.mam.aad.Authority"
     android:value="https://AAD authority/" />
@@ -892,7 +893,7 @@ Kayıt bildirimi alındığında kayıtlı kullanıcı hesabının durumu deği�
 
 ## <a name="protecting-backup-data"></a>Yedekleme verilerini koruma
 
-Android Marshmallow (API 23) sürümünden itibaren Android’deki bir uygulama, verileri iki yolla yedekleyebilir. Her bir seçenek uygulamanızda kullanılabilir ve Intune veri korumasının doğru bir şekilde uygulandığından emin olmak için farklı adımlar gerektirir. Doğru veri koruma davranışı için gerekli olan ilgili eylemler için aşağıdaki tabloyu gözden geçirebilirsiniz.  Yedekleme yöntemleri hakkında daha fazla bilgi için bkz. [Android API kılavuzu](http://developer.android.com/guide/topics/data/backup.html).
+Android Marshmallow (API 23) sürümünden itibaren Android’deki bir uygulama, verileri iki yolla yedekleyebilir. Her bir seçenek uygulamanızda kullanılabilir ve Intune veri korumasının doğru bir şekilde uygulandığından emin olmak için farklı adımlar gerektirir. Doğru veri koruma davranışı için gerekli olan ilgili eylemler için aşağıdaki tabloyu gözden geçirebilirsiniz.  Yedekleme yöntemleri hakkında daha fazla bilgi için bkz. [Android API kılavuzu](https://developer.android.com/guide/topics/data/backup.html).
 
 ### <a name="auto-backup-for-apps"></a>Uygulamalar için Otomatik Yedekleme
 
@@ -1413,7 +1414,7 @@ Uygulama **ContentProvider** aracılığıyla **ParcelFileDescriptor** dışınd
 Intune konsolunda uygulamaya özgü anahtar-değer çiftleri yapılandırılabilir. Bu anahtar-değer çiftleri Intune tarafından değiştirilmeden yalnızca uygulamaya geçirilir. Bu tip bir yapılandırma almak isteyen uygulamalar bunun için `MAMAppConfigManager` ve `MAMAppConfig` sınıflarını kullanabilir. Aynı uygulamaya birden çok ilke hedeflenmişse aynı anahtar için birden çok çakışan değer olabilir.
 
 ### <a name="example"></a>Örnek
-```
+```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
@@ -1434,7 +1435,7 @@ LOGGER.info("Found value " + valueToUse);
 
 ### <a name="mamappconfig-reference"></a>MAMAppConfig Başvurusu
 
-```
+```java
 public interface MAMAppConfig {
     /**
      * Conflict resolution types for Boolean values.
@@ -1609,20 +1610,27 @@ Bu yönergeler, bir son kullanıcı cihazında uygulama kullanımı için Intune
    > Uygulamanıza bağlanan “istemci kimliği” terimi, Azure portalındaki “uygulama kimliği” terimi ile aynı şeydir. 
 2. SSO’yu etkinleştirmek için gereken şey “Yaygın ADAL yapılandırması” #2’dir.
 
-3. Bildirime şu değeri koyarak varsayılan kaydı etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+3. Bildirime şu değeri koyarak varsayılan kaydı etkinleştirin:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > Bu, uygulamadaki tek MAM-WE tümleştirmesi olmalıdır. Başka MAMEnrollmentManager API’lerini çağırma denemeleri olursa çakışmalar ortaya çıkabilir.
 
-4. Bildirime şu değeri koyarak gereken MAM ilkesini etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+4. Gerekli MAM ilkesini, bildirime aşağıdaki kuralı koyarak etkinleştirin:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > Böylece kullanıcı, cihaza Şirket Portalı’nı indirmeye ve bunu kullanmadan önce varsayılan kayıt akışını tamamlamaya zorlanır.
    >
    > Bu, uygulamadaki tek MAM-WE tümleştirmesi olmalıdır. Başka MAMEnrollmentManager API'si çağırma denemeleri olursa, çakışmalar ortaya çıkar.
 
 3. Gerekli MAM ilkesini, bildirime aşağıdaki kuralı koyarak etkinleştirin:
-```xml
-<meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-```
+
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
 
 > [!NOTE] 
 > Böylece kullanıcı, cihaza Şirket Portalı’nı indirmeye ve bunu kullanmadan önce varsayılan kayıt akışını tamamlamaya zorlanır.

@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: df2701f3eb98201076487981eab9c4b2b6c1227b
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 941b99365326d9f97009b2d10c90cccbb17126e0
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247110"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305888"
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune Veri Ambarı API’si
 
@@ -66,6 +66,6 @@ OData, istemcilerin herhangi bir veri kaynağı tarafından kullanıma sunulan b
 
 [Azure AD için Kimlik Doğrulaması Senaryoları](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios) makalesini okuyarak Azure AD ile çalışma hakkında daha fazla bilgi edinin.
 
-[odata.org](http://www.odata.org)’da OData kaynaklarını bulabilirsiniz.
+[odata.org](https://www.odata.org)’da OData kaynaklarını bulabilirsiniz.
   
-OData Sürüm 4.0 standardını gözden geçirin: [OData Sürüm 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+OData Sürüm 4.0 standardını gözden geçirin: [OData Sürüm 4.0] (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

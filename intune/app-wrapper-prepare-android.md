@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 42b554f025f80546a0a2dd93de92549f2f037b3f
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112892"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324914"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile Android uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -45,7 +45,7 @@ Aracı çalıştırmadan önce bkz. [Uygulama Sarmalama Aracını çalıştırma
 
 -   Uygulama, şirketiniz tarafından veya şirketiniz için geliştirilmiş olmalıdır. Bu aracı Google Play Store’dan indirilen uygulamalarda kullanamazsınız.
 
--   Uygulama Sarmalama Aracını çalıştırmak için en son [Java Çalışma Zamanı Ortamı](http://java.com/download/) sürümünü yüklemeniz ve ardından Windows ortam değişkenlerinizdeki Java yolu değişkeninin C:\ProgramData\Oracle\Java\javapath olarak ayarlandığından emin olmanız gerekir. Daha fazla yardım için bkz. [Java belgeleri](http://java.com/download/help/).
+-   Uygulama Sarmalama Aracını çalıştırmak için en son [Java Çalışma Zamanı Ortamı](https://java.com/download/) sürümünü yüklemeniz ve ardından Windows ortam değişkenlerinizdeki Java yolu değişkeninin C:\ProgramData\Oracle\Java\javapath olarak ayarlandığından emin olmanız gerekir. Daha fazla yardım için bkz. [Java belgeleri](https://java.com/download/help/).
 
     > [!NOTE]
     > Bazı durumlarda, Java’nın 32 bit sürümü bellek sorunlarına yol açabilir. 64-bit sürümü yüklemek iyi bir fikirdir.
@@ -63,7 +63,7 @@ Aracı çalıştırmadan önce bkz. [Uygulama Sarmalama Aracını çalıştırma
 
 2.  Lisans sözleşmesini kabul edip, yüklemeyi tamamlayın.
 
-Aracı yüklediğiniz klasörü not edin. Varsayılan konum: C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
+Aracı yüklediğiniz klasörü not edin. Varsayılan konumu şudur: C:\Program dosyaları (x86) \Microsoft Intune Mobile Application Management\Android\App sarmalama aracı.
 
 ## <a name="run-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını çalıştırma
 
@@ -71,12 +71,12 @@ Aracı yüklediğiniz klasörü not edin. Varsayılan konum: C:\Program Files (x
 
 2. Aracı yüklediğiniz klasörden Uygulama Sarmalama Aracı PowerShell modülünü içeri aktarın:
 
-   ```
+   ```PowerShell
    Import-Module .\IntuneAppWrappingTool.psm1
    ```
 
 3. Aşağıdaki kullanım söz dizimine sahip **invoke-AppWrappingTool** komutunu kullanarak aracı çalıştırın:
-   ```
+   ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
    ```
@@ -99,18 +99,18 @@ Aracı yüklediğiniz klasörü not edin. Varsayılan konum: C:\Program Files (x
 
 - Araca yönelik ayrıntılı kullanım bilgilerini görmek için komutu girin:
 
-    ```
+    ```PowerShell
     Help Invoke-AppWrappingTool
     ```
 
 **Örnek:**
 
 PowerShell modülünü içeri aktarın.
-```
+```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
 Uygulama Sarmalama Aracını HelloWorld.apk yerel uygulamasında çalıştırın.
-```
+```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
 
@@ -142,7 +142,7 @@ Olası yanıltma, bilgi ifşası ve ayrıcalıkların yükseltilmesi saldırıla
 
 -   Çıkış uygulamasını, aracın çalıştığı makinede Intune’a aktarın. Java keytool hakkında daha fazla bilgi için bkz. [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html).
 
--   Çıkış uygulaması ve araç, Evrensel Adlandırma Kuralı (UNC) yolundaysa ve aracı ve giriş dosyalarını aynı bilgisayarda çalıştırmıyorsanız, [İnternet Protokolü Güvenliği (IPsec)](http://wikipedia.org/wiki/IPsec) veya [Sunucu İleti Bloğu (SMB) imzalamayı](https://support.microsoft.com/kb/887429)kullanarak ortamı güvenli olacak şekilde ayarlayın.
+-   Çıkış uygulaması ve araç, Evrensel Adlandırma Kuralı (UNC) yolundaysa ve aracı ve giriş dosyalarını aynı bilgisayarda çalıştırmıyorsanız, [İnternet Protokolü Güvenliği (IPsec)](https://wikipedia.org/wiki/IPsec) veya [Sunucu İleti Bloğu (SMB) imzalamayı](https://support.microsoft.com/kb/887429)kullanarak ortamı güvenli olacak şekilde ayarlayın.
 
 -   Uygulamanın güvenilir bir kaynaktan geldiğine emin olun.
 
@@ -167,11 +167,17 @@ Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri g
 > Uygulamanıza bağlanan “istemci kimliği” terimi, Azure portalından uygulamanıza bağlanan “uygulama kimliği” terimi ile aynı şeydir. 
 > * SSO’yu etkinleştirmek için gereken şey “Yaygın ADAL yapılandırması” #2’dir.
 
-2. Bildirime şu değeri koyarak varsayılan kaydı etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+2. Bildirime şu değeri koyarak varsayılan kaydı etkinleştirin:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > Bu, uygulamadaki tek MAM-WE tümleştirmesi olmalıdır. Başka MAMEnrollmentManager API’lerini çağırma denemeleri olursa çakışmalar ortaya çıkabilir.
 
-3. Bildirime şu değeri koyarak gereken MAM ilkesini etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+3. Gerekli MAM ilkesini, bildirime aşağıdaki kuralı koyarak etkinleştirin:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > Böylece kullanıcı, cihaza Şirket Portalı’nı indirmeye ve bunu kullanmadan önce varsayılan kayıt akışını tamamlamaya zorlanır.
 

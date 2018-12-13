@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: b6e9901bfea3ec129246494d6d8077a440c8a675
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267263"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324931"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -51,7 +51,7 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 
 ## <a name="to-assign-an-app"></a>Uygulama atamak için
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** menüsünde **İstemci uygulamaları**’nı seçin.
 4. Menünün **Yönet** bölümünde **Uygulamalar**’ı seçin.
@@ -59,15 +59,15 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin.
 7. Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
 8. Belirli bir uygulama için **atama türü** seçin:
-   - **Kayıtlı cihazlar için kullanılabilir**: uygulama uygulamayı Şirket portalı uygulamasından veya Web sitesinden yükleyebilir kullanıcı gruplarına atayın.
-   - **Kayıtlı veya kayıtsız olarak kullanılabilir**: Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. Yönetilen Google Play’deki uygulamalar bu seçeneği desteklemez. 
-   - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir.
-   - **Kaldırma**: Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
+   - **Kayıtlı cihazlar için kullanılabilir**: Uygulama, uygulamayı Şirket portalı uygulamasından veya Web sitesinden yükleyebilir kullanıcı gruplarına atayın.
+   - **Kayıtlı veya Kayıtsız kullanılabilir**: Bu uygulama, cihazları Intune'a kayıtlı olmayan kullanıcı gruplarına atayın. Yönetilen Google Play’deki uygulamalar bu seçeneği desteklemez. Kullanıcılar, bir Intune lisansı atanmalıdır bkz [Intune lisanslarını](licenses.md).
+   - **Gerekli**: Uygulama seçilen gruplardaki cihazlara yüklenir. Bazı platformlarda son kullanıcının uygulama yükleme başlamadan önce onaylamak için ek istekler olabilir.
+   - **Kaldırma**: Intune uygulamayı cihaza aracılığıyla "Kullanılabilir" kayıtlı cihazlar için daha önce yüklendiyse, uygulama seçilen gruplardaki cihazlardan kaldırılır ya da aynı dağıtım kullanarak "Required" atama. Web bağlantıları, dağıtımdan sonra kaldırılamaz.
 
      > [!NOTE]
-     > **Yalnızca iOS uygulamaları için**: Uygulamaya göre VPN ayarlarını barındıran bir iOS VPN profili oluşturduysanız **VPN**'nin altında VPN profilini seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
+     > **Yalnızca iOS uygulamaları için**: Bir iOS uygulama başına VPN ayarları içeren bir VPN profili oluşturduysanız, VPN profili altında seçebileceğiniz **VPN**. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
      >
-     > **Yalnızca Android uygulamaları için**: bir Android uygulaması olarak dağıtırsanız **kayıtlı veya Kayıtsız kullanılabilir**, raporlama durumu yalnızca kayıtlı cihazlarda kullanıma sunulacaktır.
+     > **Yalnızca Android uygulamaları için**: Bir Android uygulaması olarak dağıtırsanız **kayıtlı veya Kayıtsız kullanılabilir**, raporlama durumu yalnızca kayıtlı cihazlarda kullanıma sunulacaktır.
 
 9. Bu uygulama atamasından etkilenecek kullanıcı gruplarını belirtmek için, **Dahil Edilen Gruplar**'ı seçin.
 10. Dahil etmek üzere bir veya daha fazla grup belirttikten sonra **Seç** düğmesini seçin.

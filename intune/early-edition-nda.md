@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 77aa0d1544351adaa8d338bc7c4c7182d35941e8
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 1e72160dd88c14f7160f75ea30b803551f49392a
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267030"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325033"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Erken sürüm Microsoft Intune - aralık 2018'e
 
@@ -73,7 +73,7 @@ Güvenilen ağ algılama kullanırken, VPN profilleri kullanıcı zaten güvenil
 [Windows 10 VPN ayarları](vpn-settings-windows-10.md) geçerli VPN ayarlarını listeler.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune uygulama SDK'sı, 256 bit şifreleme anahtarları destekleyecek <!-- 1832174 -->
-Şifreleme uygulama koruma ilkeleri tarafından etkinleştirilmişse iOS için Intune uygulama SDK'sı, 256 bit şifreleme anahtarları kullanır. SDK'sı, 128 bit anahtar içeriği ve eski SDK sürümleri kullanan uygulamalar ile uyumluluk için destek sağlamak üzere devam eder.
+Android için Intune uygulama SDK'sı, şifreleme uygulama koruma ilkeleri tarafından etkinleştirilmişse 256 bit şifreleme anahtarları kullanır. SDK'sı, 128 bit anahtar içeriği ve eski SDK sürümleri kullanan uygulamalar ile uyumluluk için destek sağlamak üzere devam eder.
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Intune profilinde etkinleştirilmiş paylaşılan bilgisayar ayarları <!-- 1907917 -->
 Şu anda, özel bir OMA-URI ayarını kullanarak Windows 10 Masaüstü cihazlarında bilgisayar paylaşılan ayarları yapılandırabilirsiniz. Paylaşılan bilgisayar ayarları yapılandırmak için yeni bir profil eklenir (**cihaz Yapılandırması** > **profilleri** > **profili oluştur**  >  **Windows 10 ve üzeri** > **paylaşılan çok kullanıcılı cihaz**).

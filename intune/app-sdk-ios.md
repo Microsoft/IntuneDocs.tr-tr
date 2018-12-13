@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: b2b160417551274457924ad69f7a905bac427b89
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 2e4729ffbbf7a3b00a7b6d49d287266831375e47
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267064"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325101"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -484,7 +484,7 @@ Sürüm 8.0.2'den başlayarak, yalnızca Intune tarafından yönetilen paylaşı
 
 6. `NSExtensionActivationRule` kuralını, tek dosyayı ve uygulamanın `com.microsoft.intune.mam` ön ekli `CFBundleDocumentTypes` listesindeki tüm türleri destekleyecek şekilde yapılandırın. Örneğin uygulama public.text ve public.image destekliyorsa, etkinleştirme kuralı şu şekilde olur:
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -500,7 +500,7 @@ Sürüm 8.0.2'den başlayarak, yalnızca Intune tarafından yönetilen paylaşı
 
 Uygulamanız zaten Paylaşım ve Eylem uzantılarını barındırıyorsa bunların `NSExtensionActivationRule` ayarları, Intune türlerine izin verecek şekilde değiştirilmelidir. Uzantının desteklediği her tür için `com.microsoft.intune.mam` ön ekli bir tür daha ekleyin. Örneğin mevcut etkinleştirme kuralı şu ise:  
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -517,7 +517,7 @@ Uygulamanız zaten Paylaşım ve Eylem uzantılarını barındırıyorsa bunlar�
 
 Şu şekilde değiştirilmelidir:
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,

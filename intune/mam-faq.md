@@ -15,12 +15,12 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181199"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53306024"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -39,7 +39,7 @@ MAM, bir uygulama içindeki kuruluş verilerini korur. Kayıtsız MAM (MAM-WE) i
 Intune MAM iki yapılandırmayı destekler:
 - **Intune MDM + MAM**: BT yöneticileri, yalnızca Intune mobil cihaz yönetiminde (MDM) kayıtlı cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetebilir. Uygulamaları MAM-WE kullanarak yönetmek için, müşterilerin https://portal.azure.com adresindeki Azure portalında Intune konsolunu kullanması gerekir.
 
-- **Cihaz kaydı olmadan MAM**: Cihaz kaydı olmadan MAM ya da diğer adıyla MAM-WE, BT yöneticilerinin Intune MDM’de kayıtlı olmayan cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetmesine olanak sağlar. Bu, uygulamaların üçüncü taraf EMM sağlayıcılarında kayıtlı cihazlarda Intune tarafından yönetilebileceği anlamına gelir. Uygulamaları MAM-WE kullanarak yönetmek için, müşterilerin http://portal.azure.com adresindeki Azure portalında Intune konsolunu kullanması gerekir. Ayrıca uygulamalar, üçüncü taraf Enterprise Mobility Management (EMM) sağlayıcıları ile kaydedilmiş veya hiçbir MDM ile kaydedilmemiş cihazlarda uygulamalar Intune ile yönetilebilir.
+- **Cihaz kaydı olmadan MAM**: Cihaz kaydı olmadan MAM veya MAM-WE, BT yöneticilerinin Intune MDM'de kayıtlı olmayan cihazlarda MAM ve uygulama koruma ilkelerini kullanarak uygulamaları yönetmek izin verir Bu, uygulamaların üçüncü taraf EMM sağlayıcılarında kayıtlı cihazlarda Intune tarafından yönetilebileceği anlamına gelir. Uygulamaları MAM-WE kullanarak yönetmek için, müşterilerin https://portal.azure.com adresindeki Azure portalında Intune konsolunu kullanması gerekir. Ayrıca uygulamalar, üçüncü taraf Enterprise Mobility Management (EMM) sağlayıcıları ile kaydedilmiş veya hiçbir MDM ile kaydedilmemiş cihazlarda uygulamalar Intune ile yönetilebilir.
 
 
 ## <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
@@ -61,7 +61,7 @@ Her uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uy
 
 - Son kullanıcının Azure Active Directory hesabına atanmış bir Microsoft Intune lisansının olması gerekir. Son kullanıcılara Intune lisanslarını nasıl atayacağınızı öğrenmek için [Intune lisanslarını yönetme](/intune/licenses-assign) konusuna bakın.
 
-- Son kullanıcı bir uygulama koruma ilkesi tarafından hedeflenen bir güvenlik grubuna ait olmalıdır. Aynı uygulama koruma ilkesi, kullanılan belirli uygulamayı hedeflemelidir. Uygulama koruma ilkeleri [Azure portalındaki](http://portal.azure.com) Intune konsolunda oluşturulabilir ve dağıtılabilir. Güvenlik grupları şu anda [Office portalında](http://portal.office.com) oluşturulabilir.
+- Son kullanıcı bir uygulama koruma ilkesi tarafından hedeflenen bir güvenlik grubuna ait olmalıdır. Aynı uygulama koruma ilkesi, kullanılan belirli uygulamayı hedeflemelidir. Uygulama koruma ilkeleri [Azure portalındaki](https://portal.azure.com) Intune konsolunda oluşturulabilir ve dağıtılabilir. Güvenlik grupları şu anda [Office portalında](https://portal.office.com) oluşturulabilir.
 
 - Son kullanıcının AAD hesabını kullanarak uygulamada oturum açması gerekir.
 
@@ -76,7 +76,7 @@ Her uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uy
 
 **[Word, Excel ve PowerPoint](https://products.office.com/business/office) uygulamalarını kullanmak için ek gereksinimler nelerdir?**
 
-- Son kullanıcının Azure Active Directory hesabına bağlı bir [Office 365 İş veya Kurumsal](https://products.office.com/business/compare-more-office-365-for-business-plans) lisansına sahip olması gerekir. Aboneliğin mobil cihazlarda Office uygulamalarını içermesi gerekir ve [OneDrive İş](https://onedrive.live.com/about/business/)’te bir bulut depolama hesabını içerebilir. Office 365 lisansları [Office portalında](http://portal.office.com) bu [yönergeler](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) izlenerek atanabilir.
+- Son kullanıcının Azure Active Directory hesabına bağlı bir [Office 365 İş veya Kurumsal](https://products.office.com/business/compare-more-office-365-for-business-plans) lisansına sahip olması gerekir. Aboneliğin mobil cihazlarda Office uygulamalarını içermesi gerekir ve [OneDrive İş](https://onedrive.live.com/about/business/)’te bir bulut depolama hesabını içerebilir. Office 365 lisansları [Office portalında](https://portal.office.com) bu [yönergeler](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) izlenerek atanabilir.
 
 - Son kullanıcı, “Farklı Kaydet Seçeneğini Engelle” uygulama koruma ilkesi ayarı altından ayrıntılı kaydet özelliğini kullanarak yönetilen bir konum ayarlamalıdır. Örneğin, yönetilen konum OneDrive ise [OneDrive](https://onedrive.live.com/about/) uygulaması son kullanıcının Word, Excel veya PowerPoint uygulamasında yapılandırılmalıdır.
 
@@ -109,9 +109,9 @@ Kişisel Kimlik Numarası (PIN), bir uygulamadaki kuruluş verilerine doğru kul
 
 - **Kullanıcıdan ne sıklıkta Intune PIN’i istenecek?**<br></br> BT yöneticisi, Intune yönetici konsolunda “(dakika) sonra erişim gereksinimlerini yeniden denetle” Intune uygulama koruma ilkesini tanımlayabilir. Bu ayar, cihazda erişim gereksinimlerini denetlenmeden önce geçmesi gereken süresi belirtir ve uygulama PIN ekranı yeniden gösterilir. Ancak kullanıcıdan PIN istenme sıklığını etkileyen önemli PIN ayrıntıları şöyledir: 
 
-    - **Kullanılabilirliği iyileştirmek için PIN, aynı yayımcının uygulamaları arasında paylaşılır:** iOS’ta bir uygulama PIN’i **aynı uygulama yayımcısına ait** tüm uygulamalar arasında paylaşılır. Android’de bir uygulama PIN’i tü uygulamalar arasında paylaşılır.
-    - **Cihaz yeniden başlatma işleminden sonra '(dakika) sonra erişim gereksinimlerini yeniden denetle' davranışı:** Bir "PIN zamanlayıcısı" Intune uygulama PIN’inin tekrar ne zaman gösterileceğini belirleyen işlem yapılmadan geçen dakika sayısını izler. iOS’ta PIN zamanlayıcısı, cihaz yeniden başlatma işleminden etkilenmez. Bu nedenle cihazı yeniden başlatmak, Intune PIN ilkesine sahip bir iOS uygulamasında kullanıcının işlem yapmadan geçirdiği dakika sayısı üzerinde hiçbir etki yapmaz. Android’de ise PIN zamanlayıcısı, cihaz yeniden başlatıldığında sıfırlanır. Dolayısıyla Intune PIN ilkesine sahip Android uygulamaları, **cihaz yeniden başlatma işleminden sonra** büyük olasılıkla ‘(dakika) sonra erişim gereksinimlerini yeniden denetle’ ayarının değerini dikkate almaksızın bir uygulama PIN’i isteyecektir.  
-    - **PIN ile ilişkili zamanlayıcının kayıt yapısı:** Bir uygulamaya (uygulama A) erişmek için bir PIN girildiğinde ve uygulama ön plandan (ana girdi odağı) ayrıldığında, bu PIN için PIN zamanlayıcısı sıfırlanır. Bu PIN’i paylaşan başka bir uygulama (uygulama B), zamanlayıcı sıfırlandığı için kullanıcıdan PIN girmesini istemeyecektir. “(dakika) sonra erişim gereksinimlerini yeniden denetle” değeri yeniden karşılandığında istem yeniden görüntülenecektir.
+    - **PIN kullanılabilirliği iyileştirmek için aynı yayımcının uygulamaları arasında paylaşılır:** İos'ta bir uygulama PIN'i tüm uygulamalar arasında paylaşılır **aynı uygulama yayımcısının**. Android’de bir uygulama PIN’i tü uygulamalar arasında paylaşılır.
+    - **Cihaz yeniden başlatma işleminden sonra "(dakika) sonra erişim gereksinimlerini yeniden denetle" davranışı:** "PIN Zamanlayıcısı" ne zaman Intune uygulama PIN'i sonraki gösterileceğini belirlemek, işlem yapılmayan dakika sayısını izler. iOS’ta PIN zamanlayıcısı, cihaz yeniden başlatma işleminden etkilenmez. Bu nedenle cihazı yeniden başlatmak, Intune PIN ilkesine sahip bir iOS uygulamasında kullanıcının işlem yapmadan geçirdiği dakika sayısı üzerinde hiçbir etki yapmaz. Android’de ise PIN zamanlayıcısı, cihaz yeniden başlatıldığında sıfırlanır. Dolayısıyla Intune PIN ilkesine sahip Android uygulamaları, **cihaz yeniden başlatma işleminden sonra** büyük olasılıkla ‘(dakika) sonra erişim gereksinimlerini yeniden denetle’ ayarının değerini dikkate almaksızın bir uygulama PIN’i isteyecektir.  
+    - **PIN ile ilişkili Zamanlayıcının çalışırken yapısı:** Bir uygulamaya (Uygulama A) erişmek için bir PIN girildiğinde ve uygulama cihazda ön plandan (ana girdi odağı) ayrıldığında sonra bu PIN için PIN zamanlayıcısı sıfırlanır. Bu PIN’i paylaşan başka bir uygulama (uygulama B), zamanlayıcı sıfırlandığı için kullanıcıdan PIN girmesini istemeyecektir. “(dakika) sonra erişim gereksinimlerini yeniden denetle” değeri yeniden karşılandığında istem yeniden görüntülenecektir.
 
 iOS cihazlarda PIN, farklı yayımcılardan gelen uygulamalar arasında paylaşılsa bile **(dakika) sonra erişim gereksinimlerini yeniden denetle** süresi geçtikten sonra ana giriş odağı olmayan uygulamada istem yeniden görüntülenir. Yani, örneğin bir kullanıcıda _X_ yayımcısının _A_ uygulaması ve _Y_ yayımcısının _B_ uygulaması varsa bu iki uygulama aynı PIN’i paylaşır. Kullanıcı, _A_ uygulamasına odaklanmıştır (uygulama ön plandadır) ve _B_ uygulaması simge durumuna küçültülmüştür. **(dakika) sonra erişim gereksinimlerini yeniden denetle** süresi geçtikten sonra kullanıcı _B_ uygulamasına geçerse PIN gerekir.
 
