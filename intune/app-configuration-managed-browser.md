@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 40e189a3bb9e45851011ae1961ef89576dbcb5d0
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267047"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324982"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak İnternet erişimini yönetme
 
@@ -261,6 +261,19 @@ Microsoft Edge veya Managed Browser uygulama yapılandırması oluşturma yordam
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>Bağlantıları Intune Managed Browser’da açma veya şu tarayıcıda açma: Microsoft Edge 
+
+Hem Intune Managed Browser hem de Microsoft Edge, ilke ile yönetilen tarayıcılar/korunan tarayıcılar olarak geçer. Artık mevcut uygulama koruma ilkeleri, Intune yönetilen uygulamalardaki web bağlantılarının, senaryo ve platformunuza bağlı olarak belirli bir tarayıcıda açılmasına neden olur. 
+
+Android’de: 
+* İlke ile yönetilen tarayıcıların gerektiği tüm Intune yönetilen uygulamalar için uygulama yapılandırma ayarı “com.microsoft.intune.useEdge” “true” olarak ayarlanmadıysa ve hem MB hem de Edge cihazdaysa Managed Browser.  
+* Yalnızca Microsoft Edge cihazdaysa ve ilke ile hedeflendiyse Microsoft Edge.
+* Yalnızca Managed Browser cihazdaysa ve ilke ile hedeflendiyse Managed Browser. 
+
+Intune SDK’sını iOS v için tümleştiren uygulamalarda iOS’ta. 9.0.9+: 
+* İlke ile yönetilen tarayıcıların gerektiği tüm Intune yönetilen uygulamalar için uygulama yapılandırma ayarı “com.microsoft.intune.useEdge” “true” olarak ayarlanmadıysa ve hem MB hem de Edge cihazdaysa Managed Browser **veya** Microsoft Edge yüklüyse ve ilke aldıysa Microsoft Edge. 
+* Yalnızca Microsoft Edge cihazdaysa, ilke ile hedeflendiyse ve ilke aldıysa Microsoft Edge. 
+* Yalnızca Managed Browser cihazdaysa, ilke ile hedeflendiyse ve ilke aldıysa Managed Browser.
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS’ta Managed Browser kullanarak yönetilen uygulama günlüklerine erişme
 
