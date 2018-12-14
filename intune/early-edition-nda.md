@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1e72160dd88c14f7160f75ea30b803551f49392a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 633ce26a98f9cc7895e9ac4706498bf8c8c773d6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325033"
+ms.locfileid: "53378241"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Erken sürüm Microsoft Intune - aralık 2018'e
 
@@ -113,6 +113,9 @@ Hangi atlamak için ekranları seçmek için Git **cihaz kaydı** > **Apple kayd
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Windows 10 Pro sürümü bazı BitLocker ayarları desteği<!-- 2727036 -->
 Endpoint protection ayarları BitLocker dahil olmak üzere Windows 10 cihazlarda ayarlar bir yapılandırma profili oluşturmanız mümkün olacaktır. Bu, Windows 10 Professional edition bazı BitLocker ayarları için destek ekler. Geçerli Windows 10 sürüm ayarlarını görmek için bkz: [Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md#windows-encryption).
+
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Intune cihaz alanları raporlama <!-- 2748738 -->
 Intune, Android üreticisi, modeli ve güvenlik düzeltme eki sürümü yanı sıra iOS modeli de dahil olmak üzere alanlar, raporlama ek cihaz sağlayacaktır. Intune, bu alanları seçerek kullanılabilir **istemci uygulamaları** > **uygulama koruma durumu** seçip **uygulama koruma raporu: iOS, Android**. Bu parametreleri yapılandırma Ayrıca, yardımcı olacak **izin ver** cihaz üreticisi (Android) için liste **izin** cihaz modeli (Android ve iOS) ve en düşük Android güvenlik düzeltme eki için listesi Sürüm ayarı. 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Intune cihaz alanları raporlama <!-- 2748738 -->

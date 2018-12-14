@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 24af17395cee1e84d72fdb066c0a4ffb949f3045
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325152"
+ms.locfileid: "53378292"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -499,12 +499,12 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
 ```
 
-... burada `service`, aşağıdaki SaveLocation değerlerinden biridir:
+`service` Parametresi aşağıdakilerden biri olmalıdır `SaveLocation` değerleri:
 
 
-    * `SaveLocation.ONEDRIVE_FOR_BUSINESS`
-    * `SaveLocation.LOCAL`
-    * `SaveLocation.SHAREPOINT`
+- `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+- `SaveLocation.LOCAL`
+- `SaveLocation.SHAREPOINT`
 
 Kullanıcının ilkesinin çeşitli konumlara veri kaydetmesine izin verip vermediğini belirlemeye yönelik önceki yöntem, aynı **AppPolicy** sınıfındaki `getIsSaveToPersonalAllowed()` yöntemiydi. Bu işlev artık **kullanım dışı bırakılmıştır** ve kullanılmamalıdır; aşağıdaki çağrı `getIsSaveToPersonalAllowed()` ile eşdeğerdir:
 

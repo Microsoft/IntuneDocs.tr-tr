@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 2e4729ffbbf7a3b00a7b6d49d287266831375e47
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 084294ca6b715f05957e973635a05abd8c0762a2
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325101"
+ms.locfileid: "53378275"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -127,21 +127,21 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
 4. Anahtarlık paylaşımını etkinleştirdikten sonra Intune Uygulama SDK'sı verilerinin depolanacağı ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. UI öğelerini anahtarlık erişim grubu oluşturmak için kullanıyorsanız aşağıdaki adımları izleyin:
 
-   1. Mobil uygulamanız tüm Anahtarlık erişim gruplarını tanımlanan, uygulamanın ekleme yoksa kimliği olarak paket **ilk** grubu.
-
-   2. `com.microsoft.intune.mam` paylaşılan anahtarlık grubunu var olan erişim gruplarınıza ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
-
-   3. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
-
-       ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](./media/intune-app-sdk-ios-keychain-sharing.png)
-
-   4. Anahtarlık erişim gruplarını oluşturmak için yukarıda gösterilen Xcode UI'ı kullanmak yerine doğrudan yetkilendirme dosyalarını düzenliyorsanız, anahtarlık erişim gruplarını `$(AppIdentifierPrefix)` öğesinin önüne ekleyin (Xcode bunu otomatik olarak işler). Örneğin:
-
-           * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-           * `$(AppIdentifierPrefix)com.microsoft.adalcache`
-
-      > [!NOTE]
-      > Yetkilendirme dosyası, mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır. Uygulamanızın önceden bir yetkilendirme dosyası yoksa, anahtarlık paylaşımının etkinleştirilmesi (3. adım) Xcode'un uygulamanız için bir dosya oluşturmasına neden olacaktır. Uygulamanın paket Kimliğini ilk girdi listesinde olduğundan emin olun.
+    1. Mobil uygulamanız tüm Anahtarlık erişim gruplarını tanımlanan, uygulamanın ekleme yoksa kimliği olarak paket **ilk** grubu.
+    
+    2. `com.microsoft.intune.mam` paylaşılan anahtarlık grubunu var olan erişim gruplarınıza ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
+    
+    3. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
+    
+        ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](./media/intune-app-sdk-ios-keychain-sharing.png)
+    
+    4. Anahtarlık erişim gruplarını oluşturmak için yukarıda gösterilen Xcode UI'ı kullanmak yerine doğrudan yetkilendirme dosyalarını düzenliyorsanız, anahtarlık erişim gruplarını `$(AppIdentifierPrefix)` öğesinin önüne ekleyin (Xcode bunu otomatik olarak işler). Örneğin:
+    
+        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+    
+        > [!NOTE]
+        > Yetkilendirme dosyası, mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır. Uygulamanızın önceden bir yetkilendirme dosyası yoksa, anahtarlık paylaşımının etkinleştirilmesi (3. adım) Xcode'un uygulamanız için bir dosya oluşturmasına neden olacaktır. Uygulamanın paket Kimliğini ilk girdi listesinde olduğundan emin olun.
 
 5. Uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Sonraki adıma ilerlemeden önce değişikliklerinizi kaydettiğinizden emin olun.
 
@@ -500,41 +500,41 @@ Sürüm 8.0.2'den başlayarak, yalnızca Intune tarafından yönetilen paylaşı
 
 Uygulamanız zaten Paylaşım ve Eylem uzantılarını barındırıyorsa bunların `NSExtensionActivationRule` ayarları, Intune türlerine izin verecek şekilde değiştirilmelidir. Uzantının desteklediği her tür için `com.microsoft.intune.mam` ön ekli bir tür daha ekleyin. Örneğin mevcut etkinleştirme kuralı şu ise:  
 
-    ```objc
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
     ).@count > 0
-    ```
+).@count > 0
+```
 
 Şu şekilde değiştirilmelidir:
 
-    ```objc
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
     ).@count > 0
-    ```
+).@count > 0
+```
 
 > [!NOTE]
 > Intune türlerini etkinleştirme kuralına eklemek için IntuneMAMConfigurator aracı kullanılabilir. Mevcut etkinleştirme kuralınız önceden tanımlı dize sabitleri (ör. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText vb.) kullanıyorsa, koşul sözdizimi hayli karmaşıklaşabilir. IntuneMAMConfigurator aracı ayrıca, Intune türlerini eklerken etkinleştirme kuralını dize sabitlerinden koşul dizesine dönüştürmek için kullanılabilir.
