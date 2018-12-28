@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 456e3922b74bb8c8ebbbca4718b36b3fb0dcdc29
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324999"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734298"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
@@ -76,13 +76,13 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 3.  **Intune** bölmesinde **İstemci uygulamaları** > **Uygulamalar** > **Ekle**'yi seçin.
 4.  **Uygulama ekle** bölmesinde, sağlanan açılan pencereden **Windows uygulaması (Win32) - önizleme**'yi seçin.
 
-    ![Ekran görüntüsü Uygulama ekle - Tür ekle açılan kutusu](./media/apps-win32-app-01.png)
+    ![Ekran görüntüsü Ekle uygulama dikey penceresi - ekleme türü açılan kutusu](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>2. adım: Uygulama paketi dosyasını karşıya yükle
 
 1.  **Uygulama ekle** bölmesinde dosya seçmek için **Uygulama paketi dosyası**’nı seçin. Uygulama paketi dosyası bölmesi görüntülenir.
 
-    ![Uygulama paketi dosyası ekran görüntüsü](./media/apps-win32-app-02.png)
+    ![Uygulama paket dosyası dikey penceresinin ekran görüntüsü](./media/apps-win32-app-02.png)
 
 2.  **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra *.intunewin* uzantılı bir Windows yükleme dosyası seçin.
 3.  İşiniz bittiğinde **Tamam**’a tıklayın.
@@ -234,16 +234,16 @@ Windows 10 RS3 ve üzerindeki istemciler Windows 10 istemci üzerinde bir teslim
 
 Son kullanıcı gerekli ve kullanılabilir uygulama yüklemeleri için Windows kutlama bildirimleri görürsünüz. Aşağıdaki resimde, cihaz yeniden başlatılana kadar uygulama yüklemesinin tamamlanmayacağına ilişkin bildirim örneği gösterilir. 
 
-![Uygulama yüklemesiyle ilgili Windows bildirimleri örneğinin ekran görüntüsü](./media/apps-win32-app-08.png)    
+![Bir uygulama yükleme için ekran görüntüsü, Windows kutlama bildirimleri](./media/apps-win32-app-08.png)    
 
 Aşağıdaki görüntüde, cihaza uygulama değişiklikler yapılmıştır son kullanıcıyı uyarır.
 
-![Son kullanıcının cihaza uygulama değişiklikler yapılmıştır bildiren örnek ekran görüntüsü](./media/apps-win32-app-09.png)    
+![Uygulama değişikliklerini yapılan kullanıcıya bildirimde ekran görüntüsü](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 uygulamasında sorun giderme
 İstemci makinesindeki aracı günlükleri genellikle `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` yolunda bulunur. Bu günlük dosyalarını görüntülemek için `CMTrace.exe` dosyasından yararlanabilirsiniz. *CMTrace.exe*, [SCCM İstemci Araçları](https://docs.microsoft.com/sccm/core/support/tools)'ndan indirilebilir. 
 
-![Aracı günlükleri ekran görüntüsü](./media/apps-win32-app-10.png)    
+![Aracısı'nın ekran görüntüsü istemci makinesine kaydeder](./media/apps-win32-app-10.png)    
 
 ### <a name="troubleshooting-areas-to-consider"></a>Dikkate alınacak sorun giderme alanları
 - Aracının cihazda yüklü olduğundan emin olmak için hedefi denetleyin - Bir grubu hedefleyen Win32 uygulaması veya bir grubu hedefleyen PowerShell Betiği, güvenlik grubu için aracı yükleme ilkesi oluşturur.

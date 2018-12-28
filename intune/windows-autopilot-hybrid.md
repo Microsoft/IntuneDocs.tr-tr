@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112451"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642566"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Karma Azure Active Directory’ye olan katılmış cihazları Intune ve Windows Autopilot kullanarak dağıtma (Önizleme)
 Karma Azure Active Directory alanına katılmış olan cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin.
@@ -122,7 +122,7 @@ Active Directory için Intune Bağlayıcısı, Windows Server 2016 çalıştıra
 
 ### <a name="configure-web-proxy-settings"></a>Web proxy ayarlarını yapılandırma
 
-Ağ ortamınızda bir Web proxy varsa şuradaki yönergeleri izleyerek Active Directory için Intune Bağlayıcısı’nın düzgün şekilde çalışmasını sağlayın: [Mevcut şirket içi proxy sunucularıyla çalışma](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Ağ ortamınızda bir web proxy varsa, Active Directory için Intune bağlayıcısını düzgün çalışmasını Buradaki yönergeleri izleyin: [Mevcut iş şirket içi proxy sunucuları](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
 
 
 ## <a name="create-a-device-group"></a>Bir cihaz grubu oluşturma
@@ -202,9 +202,9 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 2. Aşağıdaki özellikleri girin:
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
    - **Açıklama**: Profil için bir açıklama girin.
-   - **Platform**: **Windows 10 ve üzeri** seçeneğini belirleyin.
-   - **Profil türü**: **Etki Alanına Katılım (Önizleme)** seçeneğini belirleyin.
-3. **Ayarlar**’ı seçin ve **Bilgisayar adı ön eki**, **Etki alanı adı** ve **Kuruluş birimi** (isteğe bağlı) öğelerini sağlayın. 
+   - **Platform**: Seçin **Windows 10 ve üzeri**.
+   - **Profil türü**: Seçin **etki alanına (Önizleme)**.
+3. Seçin **ayarları** ve sağlayan bir **bilgisayar adı ön eki**, **etki alanı adı**, ve **kuruluş birimi** DN biçiminde (isteğe bağlı). 
 4. **Tamam** > **Oluştur**'u seçin. Profil oluşturulur ve listede görüntülenir.
 5. Profili atamak için [Cihaz profili atama](device-profile-assign.md#assign-a-device-profile) altındaki adımları izleyin. 
 

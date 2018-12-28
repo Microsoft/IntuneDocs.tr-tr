@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181525"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737942"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama
 
@@ -43,14 +43,14 @@ Intune, grupları dışlarken kullanıcı-cihaz ilişkisini dikkate almaz. Kulla
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Uygulama atarken grupları dahil etme ve dışlama 
 Dahil etme ve dışlama atamasını kullanarak gruplara uygulama atamak için:
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** menüsünde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** bölmesinde **Uygulamalar**’ı seçin. Eklenen uygulamalar listesi gösterilir.
 5. Atamak istediğiniz uygulamayı seçin. Bir panoda uygulama hakkındaki bilgiler görüntülenir. 
 6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin. 
 
-    ![Intune uygulama atamaları](./media/apps-inc-exl-01.png)
+    ![Uygulama atarken uygulama atamalarını dahil](./media/apps-inc-exl-01.png)
 7. **Grup ekle**’yi seçerek uygulamaya atanmış kullanıcı gruplarını ekleyin. 
 8. **Grup ekle** bölmesindeki kullanılabilir atama türlerinden bir **Atama türü** seçin.
 9. Atama türü olarak **Kayıtlı veya kayıtsız olarak kullanılabilir**’i seçin.

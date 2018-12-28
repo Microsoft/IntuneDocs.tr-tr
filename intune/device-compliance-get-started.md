@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
+ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977363"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531337"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -98,10 +98,10 @@ Bir cihaz Intune’a kaydedildiğinde Azure AD kayıt işlemi başlar. Bu işlem
 
 Bir cihazda birden fazla yapılandırma profili varsa ve cihazın bu atanmış yapılandırma profillerinden iki veya daha fazlası için farklı uyumluluk durumları varsa cihaza tek bir uyumluluk durumu atanır. Bu atama, uyumluluk durumlarına atanan kavramsal önem derecesi düzeyine dayalı olarak yapılır. Uyumluluk durumlarının önem derecesi aşağıdaki gibidir:
 
-|Durum  |Önem Derecesi  |
+|Durum  |Severity  |
 |---------|---------|
-|Bekleniyor     |1|
-|Başarılı     |2|
+|Bekleniyor     |1.|
+|Başarılı oldu     |2|
 |Başarısız     |3|
 |Hata     |4|
 
@@ -133,9 +133,9 @@ Cihaz uyumluluk ilkelerini izleme hakkında daha fazla bilgi için bkz. [Intune 
 
 Bir cihazda birden fazla uyumluluk ilkesi varsa ve cihazın bu atanmış uyumluluk ilkelerinden iki veya daha fazlası için farklı uyumluluk durumları varsa, cihaza tek bir uyumluluk durumu atanır. Bu atama, uyumluluk durumlarına atanan kavramsal önem derecesi düzeyine dayalı olarak yapılır. Uyumluluk durumlarının önem derecesi aşağıdaki gibidir:
 
-|Durum  |Önem Derecesi  |
+|Durum  |Severity  |
 |---------|---------|
-|Bilinmiyor     |1|
+|Bilinmiyor     |1.|
 |NotApplicable     |2|
 |Uyumlu|3|
 |YetkisizKullanımSüresinde|4|
@@ -157,23 +157,23 @@ Cihaz uyumluluk ilkelerini koşullu erişim olmadan da kullanabilirsiniz. Uyumlu
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini dağıtma yolları
 Kullanıcı gruplarındaki kullanıcılara veya cihaz gruplarındaki cihazlara uyumluluk ilkesi dağıtabilirsiniz. Bir uyumluluk ilkesi kullanıcıya dağıtıldığında, kullanıcının tüm cihazlarında uyumluluk denetimi yapılır. Windows 10 sürüm 1803 ve daha yeni cihazlarda, birincil kullanıcı cihazı *kaydetmemişse* cihaz gruplarına dağıtmanız önerilir. Bu senaryoda cihaz gruplarını kullanmak, uyumluluk raporlamasına yardımcı olur.
 
-Yerleşik bir **Uyumluluk ilkesi ayarları** kümesi (Azure portalı > Cihaz uyumluluğu), Intune’a kayıtlı tüm cihazlarda değerlendirmeye alınır. Bu görevler şunlardır:
+Yerleşik bir **Uyumluluk ilkesi ayarları** kümesi (Azure portalı > Cihaz uyumluluğu), Intune’a kayıtlı tüm cihazlarda değerlendirmeye alınır. Bunlar:
 
-- **Kendisine hiçbir uyumluluk ilkesi atanmamış cihazları şöyle işaretle**: Bu özelliğin iki değeri vardır:
+- **Cihaz uyumluluk ilkesi atanmamış olarak işaretlemek**: Bu özelliğin iki değeri vardır:
 
   - **Uyumlu**: güvenlik özelliği kapalı
   - **Uyumsuz** (varsayılan): güvenlik özelliği açık
 
   Bir cihaza atanmış uyumluluk ilkesi yoksa, bu cihaz uyumsuz olarak değerlendirilir. Varsayılan olarak cihazlar, **Uyumlu** olarak işaretlenir. Koşullu erişim kullanıyorsanız ayarı **Uyumlu değil** olarak değiştirmenizi öneririz. Bir ilke atanmadığı için son kullanıcı uyumsuzsa, Şirket Portalı `No compliance policies have been assigned` ifadesine yer verir.
 
-- **Gelişmiş jailbreak algılama**: Etkinleştirildiğinde bu ayar, iOS cihazların Intune’a daha sık iade edilmesine yol açar. Bu özellik etkinleştirildiğinde cihazın konum hizmetleri kullanılır ve pil kullanımı bundan etkilenir. Kullanıcı konum verileri, Intune tarafından depolanmaz.
+- **Gelişmiş jailbreak algılama**: Bu ayar etkinleştirildiğinde, iOS cihazları Intune'a daha sık iade edilmesine neden olur. Bu özellik etkinleştirildiğinde cihazın konum hizmetleri kullanılır ve pil kullanımı bundan etkilenir. Kullanıcı konum verileri, Intune tarafından depolanmaz.
 
   Bu ayarın etkinleştirilmesi, cihazlarda şunları gerektirir:
   - Konum hizmetlerinin işletim sistemi düzeyinde etkinleştirilmesi
   - Şirket Portalı’nın konum hizmetlerini kullanmasına izin verilmesi
-  - Cihazın jailbreak durumunun en az 72 saatte bir değerlendirilip Intune’a rapor edilmesi. Aksi takdirde cihaz uyumsuz olarak işaretlenir. Değerlendirme, Şirket Portalı uygulaması açıldığında veya cihaz fiziksel olarak 500 metre veya daha uzağa taşındığında tetiklenir.
+  - Cihazın jailbreak durumunun en az 72 saatte bir değerlendirilip Intune’a rapor edilmesi. Aksi takdirde cihaz uyumsuz olarak işaretlenir. Değerlendirme, Şirket Portalı uygulaması açıldığında veya cihaz fiziksel olarak 500 metre veya daha uzağa taşındığında tetiklenir. Cihaz 500 ölçümleri 72 saat içinde hareket etmediği, kullanıcı Gelişmiş jailbreak sonu değerlendirme için Şirket portalı uygulamasını açması gerekir.
 
-- **Uyumluluk durumu geçerlilik süresi (gün)**: Alınan tüm uyumluluk ilkeleri için cihazların durum rapor etme süresini girin. Bu süre içinde durum döndürmeyen cihazlar uyumsuz olarak kabul edilir. Varsayılan değer 30 gündür.
+- **Uyumluluk durumu geçerlilik süresi (gün)**: Cihazların alınan tüm uyumluluk ilkeleri için durum rapor bir süre girin. Bu süre içinde durum döndürmeyen cihazlar uyumsuz olarak kabul edilir. Varsayılan değer 30 gündür.
 
 Tüm cihazlarda bir **Yerleşik Cihaz Uyumluluk İlkesi** (Azure portalı > Cihaz uyumluluğu > İlke uyumluluğu) vardır. Bu yerleşik ilkeyi kullanarak bu ayarları izleyin.
 
@@ -184,7 +184,7 @@ Uyumluluk raporları, cihazların durumunu denetlemek için harika bir yoldur. Y
 ### <a name="actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemler
 Uyumluluk ilkesi ölçütlerini sağlamayan cihazlarda geçerli, zamana göre sıralı bir dizi eylem yapılandırabilirsiniz. Bu uyumsuzluk eylemleri, [Uyumsuzluk eylemlerini otomatikleştirme](actions-for-noncompliance.md) makalesinde açıklandığı gibi otomatikleştirilebilir.
 
-## <a name="azure-classic-portal-vs-azure-portal"></a>Klasik Azure portalı ve Azure portalı
+## <a name="azure-classic-portal-vs-azure-portal"></a>Klasik Azure portalı ve Azure portal
 
 Cihaz uyumluluk ilkelerini Azure portalında kullanırken göreceğiniz temel fark:
 

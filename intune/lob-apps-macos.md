@@ -1,7 +1,7 @@
 ---
 title: macOS iş kolu uygulamalarını Microsoft Intune’a ekleme
 titlesuffix: ''
-description: macOS iş kolu (LOB) uygulamalarını Microsoft Intune’a eklemeyi öğrenin.
+description: Microsoft Intune macOS iş kolu (LOB) uygulamalarını ekleme hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c6fb5616bc17fadd413bd94af20fafe37e1ea769
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 356f21067f0e0d625882822fd8747661d72005e8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247093"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642668"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>macOS iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 

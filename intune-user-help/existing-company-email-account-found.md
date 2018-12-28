@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,32 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f44b281bc8a0edd39e25bf966841a5f458c6677e
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
-ms.translationtype: HT
+ms.openlocfilehash: 3c06bb8efd0d6f7795094f36dcb513c5dca63e77
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903480"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570800"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Bir mevcut şirket e-posta hesabı bulundu
 
-Kuruluşunuz veya şirketiniz için zaten bir e-posta hesabınız var ve şimdi mobil cihazınızdan o hesaba erişmek istiyorsunuz. Şirketinizin destek birimi, e-postayı cihazınıza gönderen kişiden sonraki süreçte e-posta erişiminizi güvende tutmak için yardımınıza ihtiyacı duyar. Geçerli e-postanız çalışmış olabilir, ancak bu adımları uygulamak bilgilerinizin güvenliğini artıracaktır.
+İş için mobil cihaz erişimini sahip ya da Okul hesabı e-posta *önce* yönetilen cihazınız alındı. Cihazınız artık yönetiliyorsa olmasını öneririz:
 
-1.  Cihazınızdaki **Ayarlar**’ı bulun ve daha önce şirket e-postanız için ayarlamış olduğunuz bağlantıyı kaldırın.  Örneğin, iOS cihazda **Ayarlar** > **Posta** > **Hesaplar**’a dokunun. İş e-posta hesabınızı seçip ardından **Sil**’e dokunun.
+* Var olan iş e-posta hesabı cihazınızın bağlantısını kesin.
+* Cihaz ayarları Şirket portalı uygulamasından yeniden eşitleyin.  
 
-2.  **Ayarlar** sayfasından çıkın ve cihazınızda Şirket Portalı uygulamasını açın.  
+Bu adımlar, Cihazınızı şirketinizin güvenlik gereksinimlerini karşıladığından ve e-güvenli kalmasını sağlayacaktır.
 
-3. **Cihaz**'a gidin ve güncelleştirmek istediğiniz cihazı seçin.
+1.  Cihazınızda, Git **ayarları** bağlı hesaplarınızı bulun. Örneğin, bir iOS 11 + cihazında seçin **parola & hesapları**.
+ 
+2. Seçin ve iş e-posta hesabınızı kaldırın.
 
-4. **Ayarları Denetle**'yi seçin. Birkaç dakika içinde cihazınız yeni e-posta ayarlarıyla güncelleştirilir.
+3. Cihazınızda Şirket Portalı uygulamasını açın.  
+
+4. Cihazlarınızın listesini altında güncelleştirmek istediğiniz cihazı seçin.
+
+5. Seçin **ayarlarını kontrol edin**. Birkaç dakika içinde cihaz yeni e-posta ayarlarınızı eşitler.
+
+6. Oturum açmak için iş veya Okul e-posta hesabı.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

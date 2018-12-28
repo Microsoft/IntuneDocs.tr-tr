@@ -1,12 +1,12 @@
 ---
 title: Windows 10 Şirket Portalı uygulamasını el ile ekleme
 titleSuffix: Microsoft Intune
-description: Windows 10 Şirket Portalı uygulamasını el ile eklemeyi öğrenin.
+description: Nasıl iş gücünüzün el ile Windows 10 Şirket portalı uygulamasını Bilgisayarlarını için Microsoft Store eklemeyi öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190277"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642600"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme
 
@@ -51,7 +51,7 @@ Kullanıcılarınız, cihaz yönetmek ve uygulama yüklemek için Intune Şirket
 
 7. **İndir**’i seçerek “Gerekli Çerçeveler” başlığı altındaki tüm paketleri indirin.  
     Bu eylem x86, x64 ve ARM mimarileri için gerçekleştirilmelidir. Yani toplam 12 paket gerekir.
-8. Şirket Portalı uygulamasını Intune’a yüklemeden önce, paketlerin aşağıdaki şekilde yapılandırıldığı bir klasör (ör: C:\Şirket Portalı) oluşturun:
+8. Şirket portalı uygulamasını Intune'a yüklemeden önce bir klasör oluşturun (örneğin: C:\Company Portal adresine) paketlerin aşağıdaki şekilde yapılandırıldığı:
    - Şirket Portalı paketini C:\Company Portal adresine koyun. Bu konumda bir *Bağımlılıklar* alt klasörü oluşturun.  
 
      ![APPXBUN dosyasıyla kaydedilen Bağımlılıklar klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)

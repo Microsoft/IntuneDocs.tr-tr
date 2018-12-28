@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fc6b5aac1d75fc67c469f6ecd24e331d1cc35d30
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247246"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429721"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>OData akışına Power BI ile bir rapor oluşturma
 
@@ -106,7 +106,7 @@ Artık kuruluşunuzdaki cihaz üreticileri dağılımını gösteren bir görsel
 Uygulamanızı kullanarak ilave sorular yanıtlayabilmek için ağaç haritanıza bir filtre ekleyebilirsiniz.
 
 
-1. Filtre eklemek için rapor tuvalini seçin ve ardından **Görselleştirmeler** altında bulunan **Dilimleyici simgesine** (![Verilerle ağaç haritası](media/reports-create-slicer.png)) tıklayın.
+1. Filtre eklemek için rapor tuvalini seçin ve ardından **Dilimleyici simgesini** (![ağaç veri modeli ve desteklenen ilişkileri](media/reports-create-slicer.png)) altında **görselleştirmeler**.
 2. **ownerTypes** tablosunu bulun ve **ownerTypeName** veri alanını **Görselleştirmeler** panelindeki **Filtreler**’in altına sürükleyin.  
 
    Cihazlar tablosu altında **OwnerTypeKey** adlı bir veri alanı vardır. Bu veri alanı, cihazın şirkete ait veya kişisel olmasıyla ilgili bir kod barındırır. Bu filtrede kolay adlar kullanmayı tercih edeceğiniz için **ownerTypes** tablosunu bulun ve **ownerTypeName**’i sürükleyin. Bu örnek, veri modelinin tablolar arasındaki ilişkiyi nasıl desteklediğini gösterir.

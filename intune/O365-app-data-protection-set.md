@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune’da Office 365 uygulamalarının veri yönetimi
 titlesuffix: ''
-description: Microsoft Intune’da Office 365 uygulamalarının veri yönetimi hakkında bilgi edinin.
+description: Veri Yönetimi ve Office 365 uygulamalarını Intune koruma hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a3eed03deb3f619f75502e8a9d1d66fefc38a081
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180080"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642482"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Kullanıcılarınızın Microsoft Intune’da yönetilen Office 365 uygulamalarındaki temel koruma deneyimi
 

@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune’da uygulama yönetimi nedir?
 titlesuffix: ''
-description: Microsoft Intune ile uygulama yönetimi hakkındaki temel bilgileri öğrenin.
+description: İstemci uygulama yönetim özelliklerini Intune için platforma göre öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 366fab51d88587233f945fe7d880e3b6881bef45
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f156accf5b51e7fff51db738c70b0b0840d7e365
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179193"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642838"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -60,11 +60,11 @@ Intune, ihtiyacınız olan uygulamaları çalıştırmak istediğiniz cihazlara 
 
 <sup>2</sup> Yalnızca Intune tarafından yönetilen cihazlar için geçerlidir.
 
-## <a name="get-started"></a>Başlarken
+## <a name="get-started"></a>başlarken
 
 Aşağıda gösterilen yolla erişilen **İstemci uygulamaları** iş yükünde, uygulamayla ilgili bilgilerin çoğunu bulabilirsiniz:
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin.  
     Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Microsoft Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
@@ -74,51 +74,51 @@ Aşağıda gösterilen yolla erişilen **İstemci uygulamaları** iş yükünde,
 Sıradaki dört bölüm, **İstemci uygulamaları** bölmesindeki kullanılabilir seçenekleri açıklar.
 
 ### <a name="manage"></a>Bilgisayarlarda
-- **Uygulamalar**: İş gücünüz tarafından kullanılan uygulamaları eklemek, görüntülemek, atamak ve izlemek için bu seçeneği belirleyin. Daha fazla bilgi için bkz.:
+- **Uygulamaları**: Eklemek, görüntülemek, atamak ve gücünüz tarafından kullanılan uygulamaları izlemek için bu seçeneği belirleyin. Daha fazla bilgi için bkz.
     - [Uygulama ekleme](apps-add.md).
     - [Uygulama atama](apps-deploy.md).
     - [Uygulama izleme](apps-monitor.md).
-- **Uygulama yapılandırma ilkeleri**: Kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamak için bu ayarı kullanın. Daha fazla bilgi için bkz.:
+- **Uygulama yapılandırma ilkeleri**: Bir kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamak için bu seçeneği belirleyin. Daha fazla bilgi için bkz.
     - [Intune için uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md).
         - [iOS uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md).
         - [Android uygulama yapılandırma ilkeleri](app-configuration-policies-use-android.md).
-- **Uygulama koruma ilkeleri**: Ayarları uygulamayla ilişkilendirmek ve kullandığı şirket verilerini korumaya yardımcı olmak için bu seçeneği seçin. Örneğin, bir uygulamanın diğer uygulamalarla iletişim kurma özelliklerini kısıtlayabilir veya kullanıcının şirket uygulamasına erişmek için PIN girmesini isteyebilirsiniz. Daha fazla bilgi için bkz.:
+- **Uygulama koruma ilkeleri**: Ayarları bir uygulamayla ilişkilendirmek için bu seçeneği seçin ve uygulamanın kullandığı şirket verilerini korumaya yardımcı olur. Örneğin, bir uygulamanın diğer uygulamalarla iletişim kurma özelliklerini kısıtlayabilir veya kullanıcının şirket uygulamasına erişmek için PIN girmesini isteyebilirsiniz. Daha fazla bilgi için bkz.
     - [Uygulama koruma ilkeleri](app-protection-policies.md).
-- **Uygulama seçmeli silme**: Seçili bir kullanıcının cihazından yalnızca şirket verilerini kaldırmak için bu seçeneği kullanın. Daha fazla bilgi için bkz.:
+- **Uygulama seçmeli silme**: Seçilen kullanıcının cihazından yalnızca şirket verilerini kaldırmak için bu seçeneği belirleyin. Daha fazla bilgi için bkz.
     - [Uygulama seçmeli silme](apps-selective-wipe.md).
-- **iOS uygulama sağlama profilleri**: iOS uygulamaları, bir sağlama profili ve bir sertifika tarafından imzalanmış kod içerir. Sertifikanın süresi dolduğunda, uygulama artık çalıştırılamaz. Intune size süresi dolmak üzere olan uygulamaların bulunduğu cihazlara yeni sağlama profili ilkesini önceden atamak için araçlar verir. Daha fazla bilgi için bkz.:
+- **iOS uygulama sağlama profilleri**: iOS uygulamaları, bir sağlama profili ve bir sertifika tarafından imzalanmış kod içerir. Sertifikanın süresi dolduğunda, uygulama artık çalıştırılamaz. Intune size süresi dolmak üzere olan uygulamaların bulunduğu cihazlara yeni sağlama profili ilkesini önceden atamak için araçlar verir. Daha fazla bilgi için bkz.
     - [iOS uygulama sağlama profilleri](app-provisioning-profile-ios.md).
 
 Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama yönetme](app-management.md).
 
-### <a name="monitor"></a>İzle
-- **Uygulama lisansları**: Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, atayın ve izleyin. Daha fazla bilgi için bkz.:
+### <a name="monitor"></a>İzleme
+- **Uygulama lisansları**: Görüntüleyin, atayın ve uygulama mağazalarından toplu satın alınan uygulamaları izleyin. Daha fazla bilgi için bkz.
     - [iOS Volume-Purchased Program (VPP) uygulamaları](vpp-apps-ios.md).
     - [İş İçin Microsoft Store’dan toplu satın alınan uygulamalar](windows-store-for-business.md).
-- **Bulunan Uygulamalar**: Intune tarafından atanan veya bir cihaza yüklenen uygulamaları görüntüleyin. Daha fazla bilgi için bkz. [Microsoft Intune ile cihaz ayrıntılarını görüntüleme](device-inventory.md).
-- **Uygulama Yükleme Durumu** - Oluşturduğunuz uygulama atamasının durumunu gösterir. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md#device-and-user-status-graphs).
+- **Bulunan uygulamalar**: Intune tarafından atanan veya bir cihazda yüklü uygulamaları görüntüleme. Daha fazla bilgi için bkz. [Microsoft Intune ile cihaz ayrıntılarını görüntüleme](device-inventory.md).
+- **Uygulama yükleme durumu**: Oluşturduğunuz uygulama atamasının durumunu görüntüleyin. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md#device-and-user-status-graphs).
 - **Uygulama koruma durumu**: Seçtiğiniz kullanıcı için uygulama koruma ilkesinin durumunu görüntüleyin.
-- **Denetim günlükleri**: Tüm BT yöneticileri tarafından gerçekleştirilen Intune uygulamasıyla ilgili etkinlikleri görüntüleyin.
+- **Denetim günlükleri**: Tüm BT yöneticileri, Intune uygulamasıyla ilgili etkinlikleri görüntüleyin.
 
 Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama izleme](apps-monitor.md).
 
-### <a name="set-up"></a>Kurulum
-- **iOS VPP belirteçleri**: iOS Volume Purchase Program (VPP) lisanslarınızı uygulayın ve görüntüleyin. Daha fazla bilgi için bkz.:
+### <a name="set-up"></a>Ayarlama
+- **iOS VPP belirteçleri**: Uygulayın ve iOS Volume Purchase Program (VPP) lisanslarınızı görüntüleyin. Daha fazla bilgi için bkz.
     - [iOS toplu satın alınan uygulamalar](vpp-apps-ios.md)
-- **Windows Enterprise sertifikası**: Yönetilen Windows cihazlarınıza iş kolu uygulamalarını dağıtmak için kullanılan kod imzalama sertifikasını uygulayın veya durumunu görüntüleyin.
-- **Windows Symantec sertifikası**: Windows 10 Mobile cihazlarına XAP ve WP8.x appx dosyalarını dağıtmak için gereken kod imzalama sertifikasını uygulayın veya durumunu görüntüleyin.
-- **İş İçin Microsoft Mağazası**: İş İçin Microsoft Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz. Daha fazla bilgi için bkz.:
+- **Windows enterprise sertifikası**: Uygulama veya yönetilen Windows cihazlarınıza satır iş kolu uygulamalarını dağıtmak için kullanılan kod imzalama sertifikası durumunu görüntüleyin.
+- **Windows Symantec sertifikası**: Uygulama veya Windows 10 Mobile cihazlarına XAP ve WP8.x appx dosyalarını dağıtmak için gerekli olan bir Symantec kod imzalama sertifikası durumunu görüntüleyin.
+- **İş için Microsoft Store**: İş için Microsoft Store tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz. Daha fazla bilgi için bkz.
     - [İş İçin Microsoft Store’dan toplu satın alınan uygulamalar](windows-store-for-business.md).
-- **Windows dışarıdan yükleme anahtarları**: Uygulamayı Windows mağazasından yayımlamak ve indirmek yerine doğrudan cihazlara yüklemek için kullanılabilecek bir Windows dışarıdan yükleme anahtarı ekleyin. Daha fazla bilgi için bkz.:
+- **Windows dışarıdan yükleme anahtarları**: Cihazlar yerine, yayımlamak ve Windows Mağazası'ndan uygulama indirmek için doğrudan bir uygulama yüklemek için kullanılan bir Windows dışarıdan yükleme anahtarı ekleyin. Daha fazla bilgi için bkz.
     - [Bir Windows uygulamasını dışarıdan yükleme](app-sideload-windows.md).
-- **Şirket Portalı markası**: Şirket Portalı’nı özelleştirerek şirketinizin markasını ekleyin. Daha fazla bilgi için bkz.:
+- **Şirket portalı markası**: Şirket portalı, şirketinizin markasını özelleştirin. Daha fazla bilgi için bkz.
     - [Şirket Portalı yapılandırması](company-portal-app.md).
-- **Uygulama kategorileri**: Uygulama kategorisi adlarını ekleyin, sabitleyin ve silin.
-- **Android iş profili**: Kuruluşunuz için onayladığınız uygulamaları onaylayın ve eşitleyin. Daha fazla bilgi için bkz.:
+- **Uygulama kategorileri**: Ekleme, PIN ve uygulama kategorisi adlarını silin.
+- **Android iş profili**: Onayla ve kuruluşunuz için onayladığınız uygulamaları eşitleyin. Daha fazla bilgi için bkz.
     - [Android iş profili uygulamaları](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>Yardım ve destek
-- **Yardım ve destek**: Sorun giderin, destek isteyin veya Intune durumunu görüntüleyin. Daha fazla bilgi için bkz.:
+- **Yardım ve Destek**: Sorun giderme, destek isteyin veya Intune durumunu görüntüleyin. Daha fazla bilgi için bkz.
     - [Sorunları giderme](help-desk-operators.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar

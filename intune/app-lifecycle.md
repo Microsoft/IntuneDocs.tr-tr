@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
-ms.openlocfilehash: 048b8472be00c544611fe2ea8763b16019cebc0b
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: e122f2c0c62fbde04a328b1423416be82dcfa1f9
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887058"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734230"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune'da uygulama yaşam döngüsüne genel bakış
 
@@ -28,13 +28,13 @@ ms.locfileid: "52887058"
 
 Microsoft Intune uygulama yaşam döngüsü, bir uygulama eklendiğinde başlar, ek aşamalardan geçerek siz uygulamayı kaldırana kadar devam eder. Bu aşamalar anlayarak, ıntune'da uygulama yönetimini kullanmaya başlamak için gereken Ayrıntılar sahip olacaksınız.
 
-![Uygulama yaşam döngüsü](./media/app-lifecycle.png "Intune uygulama yaşam döngüsü")
+![Uygulama yaşam döngüsü - eklemek, dağıtmak, yapılandırmak, korumak ve devre dışı bırakma. ](./media/app-lifecycle.png "Intune uygulama yaşam döngüsü")
 
 ## <a name="add"></a>Ekle
 
 Uygulama dağıtımında ilk adım, yönetmek ve atamak istediğiniz uygulamayı Intune’a eklemektir. Birçok farklı uygulama türüyle çalışabilecek olmanıza karşın, temel yordamlar aynıdır. Intune ile şirket içinde yazılmış uygulamalar dahil olmak üzere farklı uygulama türlerini (satır iş kolu), uygulama mağazası, yerleşik olarak bulunan uygulama ve uygulamalar web üzerindeki ekleyebilirsiniz. Bu uygulama türlerinden her biri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md). 
 
-## <a name="deploy"></a>Dağıt
+## <a name="deploy"></a>Dağıtma
 
 Uygulamayı Intune’a ekledikten sonra, [yönettiğiniz kullanıcılara ve cihazlara atayabilirsiniz](apps-deploy.md). Intune bu işlemi kolaylaştırır ve uygulama dağıtıldıktan sonra [başarısını izleyebilirsiniz](apps-monitor.md) Azure portalı içinde ıntune'dan dağıtımın. Buna ek olarak, [Apple](vpp-apps-ios.md) ve [Windows](windows-store-for-business.md) uygulama mağazaları gibi bazı uygulama mağazalarında şirketinize toplu uygulama lisansları satın alabilirsiniz. Bu tür uygulamalarda doğrudan Intune yönetim konsolundan lisans dağıtımı yapabilmeniz ve lisans kullanımını izleyebilmeniz için Intune verileri bu mağazalarla eşitleyebilir.
 
@@ -44,7 +44,7 @@ Uygulama yaşam döngüsü kapsamında, uygulamaların yeni sürümleri düzenli
 - [iOS uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md), uyumlu iOS uygulamaları için uygulama çalıştırıldığında kullanılan ayarlar sağlar. Örneğin, uygulama için belirli marka ayarları veya bağlanması gereken sunucunun adı gerekiyor olabilir.
 - [Yönetilen tarayıcı ilkeleri](app-configuration-managed-browser.md), varsayılan cihaz tarayıcısının yerini alan ve kullanıcılarınızın ziyaret edebileceği web sitelerini kısıtlayan Intune yönetilen tarayıcısı için ayarları yapılandırmanıza yardımcı olur.
 
-## <a name="protect"></a>Koruma
+## <a name="protect"></a>koruma
 
 Intune, uygulamalarınızdaki verileri korumaya yardımcı olmanın yollarını sağlar. Ana yöntemler şunlardır:
 - Belirttiğiniz koşullara bağlı olarak e-postaya ve diğer hizmetlere erişimi denetleyen [koşullu erişim](conditional-access.md). Bu koşullara cihaz türleri veya dağıttığınız bir [cihaz uyumluluk ilkesi](device-compliance.md) ile uyumluluk dahildir.

@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188118"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738010"
 ---
-# <a name="data-warehouse-data-model"></a>Veri Ambarı veri modeli
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune veri ambarı veri modeli
 
 Intune Veri Ambarı, sürekli olarak değişen mobil cihazların bulunduğu ortamın tarihsel bir görünümünü sağlamak için verileri örnekler. Görünüm, zaman içinde ilgili varlıklardan oluşur.
 
@@ -48,7 +48,7 @@ Bu alanlar, Intune ortamınızla ilişkili olan varlıkları içerir. Varlıklar
   -  [Geçerli Kullanıcı](reports-ref-current-user.md)
   -  [Kullanıcı Cihaz İlişkileri](reports-ref-user-device.md)
 
-## <a name="relationships-star-schema-model"></a>İlişkiler: Yıldız şema modeli
+## <a name="relationships-star-schema-model"></a>İlişkiler: Yıldız şeması modeli
 
 Ambar, ilişki içindeki varlıkları, sormak istediğiniz soru türüyle alakalı ilişki içindeki varlıkları düzenler. Örneğin, şirket tarafından geliştirilen bir Android uygulamasının yükleme sayısını inceleyebilirsiniz. Veri ambarının yapısı, mobil ortamınız hakkında öngörü kazanmanızı sağlayacak şekildedir. Buna karşılık olarak Microsoft Power BI gibi analiz araçları ise Veri Ambarı veri modelini kullanarak görselleştirmeler ve dinamik panolar oluşturur.
 
@@ -56,7 +56,7 @@ Varlıklar ve ilişkiler bir yıldız şeması modeli kullanır. Bir yıldız ş
 
 Yıldız şeması modeli, esneklik ve veri çözümlemesi için iyileştirilmiştir. Böylece değişen mobil ortamınızı anlamanız için gereken raporları oluşturabilirsiniz.
 
-## <a name="time-daily-snapshots"></a>Süre: Günlük anlık görüntüler
+## <a name="time-daily-snapshots"></a>Süre: Günlük anlık görüntüleri
 
 Ambar, Intune'daki verilerden aşağı akıştadır. Intune gece yarısı UTC'de günlük anlık görüntü alır ve anlık görüntüyü ambarda saklar. Tutulan anlık görüntülerin süresi, olgu tablosundan olgu tablosuna farklılık gösterir. Bazıları yedi gün, diğerleri 30 gün ve daha uzun süreli olabilir.
 

@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112553"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626056"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
@@ -55,7 +55,7 @@ Intune, Windows 10 Oluşturucu güncelleştirmesi çalıştıran ve Azure Active
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium olmadan Windows kaydını kolaylaştırma
 Kaydolmayı basitleştirmek için, kayıt isteklerini Intune sunucularına yönlendiren bir etki alanı adı sunucusu (DNS) diğer adı (CNAME kayıt türü) oluşturun. Aksi takdirde Intune'a bağlanmaya çalışan kullanıcıların kayıt sırasında Intune sunucu adını girmeleri gerekir.
 
-**1. Adım: CNAME oluşturma** (isteğe bağlı)<br>
+**1. adım: CNAME oluşturma** (isteğe bağlı)<br>
 Şirketinizin etki alanı için CNAME DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin web sitesi contoso.com ise, DNS’de, EnterpriseEnrollment.contoso.com adresinden enterpriseenrollment-s.manage.microsoft.com adresine yeniden yönlendiren bir CNAME oluşturursunuz.
 
 CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. CNAME kaydı bulunamazsa, kullanıcıların MDM sunucu adını (enrollment.manage.microsoft.com) el ile girmesi istenir.
@@ -69,7 +69,7 @@ CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıt
 
 - name@contoso.com
 - name@us.contoso.com
-- name@eu.constoso.com\
+- name@eu.contoso.com
 
 Contoso DNS yöneticisinin aşağıdaki CNAME'leri oluşturması gerekir:
 
@@ -83,7 +83,7 @@ Contoso DNS yöneticisinin aşağıdaki CNAME'leri oluşturması gerekir:
 
 DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yayılıncaya kadar DNS değişikliğini Intune'da doğrulayamazsınız.
 
-**2. Adım: CNAME'i doğrulama** (isteğe bağlı)<br>
+**2. adım: CNAME'i doğrulama** (isteğe bağlı)<br>
 1. [Azure portalında Intune](https://aka.ms/intuneportal)'da **Cihaz kaydı** > **Windows kaydı** > **CNAME Doğrulaması**'nı seçin.
 2. **Etki Alanı** kutusuna şirket Web sitesini girin ve ardından **Test Et**'i seçin.
 

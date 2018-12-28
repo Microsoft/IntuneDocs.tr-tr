@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı
 titlesuffix: ''
-description: Microsoft Intune ile sağlanan Windows 10 uygulaması senaryoları hakkında bilgi edinin.
+description: Windows 10 uygulama dağıtım senaryolarında Microsoft Intune kullanılabilir hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: 0ece7f3d5b7f0d01359a342da5e3dca9b8193a27
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977295"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642617"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı 
 
@@ -45,10 +45,10 @@ Windows 10 LOB uygulamaları imzalanır ve Intune yönetim konsoluna yüklenir. 
 ## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 cihazlarına uygulamaları yükleme
 Uygulama türüne bağlı olarak, uygulama Windows 10 cihazına iki yoldan biriyle yüklenebilir:
 
-- **Kullanıcı Bağlamı**: Uygulama kullanıcı bağlamında dağıtılırsa, kullanıcı cihazda oturum açtığında yönetilen uygulama cihaza o kullanıcı için yüklenir. Kullanıcı cihazda oturum açana kadar uygulama yükleme işleminin başarılı olmayacağını unutmayın. 
+- **Kullanıcı bağlamı**: Kullanıcı bağlamında uygulama dağıtıldığında, kullanıcının aygıtına oturum açtığında yönetilen uygulamayı cihazda söz konusu kullanıcı için yüklenir. Kullanıcı cihazda oturum açana kadar uygulama yükleme işleminin başarılı olmayacağını unutmayın. 
     - Modern iş kolu uygulamaları ve İş için Microsoft Store uygulamaları (hem çevrimiçi hem de çevrimdışı) kullanıcı bağlamında dağıtılabilir ve hem Gerekli hem de Kullanılabilir amacını destekler.
     - **Kullanıcı Modu** veya **İkili Mod** olarak oluşturulan Win32 uygulamaları kullanıcı bağlamında dağıtılabilir ve hem **Gerekli** hem de **Kullanılabilir** amaçlarını destekler. 
-- **Cihaz Bağlamı**: Uygulama cihaz bağlamında dağıtılırsa, yönetilen uygulama Intune tarafından doğrudan cihaza yüklenir.
+- **Cihaz bağlamı**: Cihaz bağlamında uygulama dağıtıldığında, Intune tarafından yönetilen bir uygulama, doğrudan cihaza yüklenir.
     - Yalnızca modern iş kolu satır uygulama ve iş kolu uygulamaları için çevrimdışı lisanslı Microsoft Store cihaz bağlamında dağıtılabilir ve yalnızca gerekli hedefini destekler.
     - **Makine Modu** veya **İkili Mod** olarak oluşturulan Win32 uygulamaları kullanıcı bağlamında dağıtılabilir ve yalnızca **Gerekli** amacını destekler.
 
@@ -57,11 +57,11 @@ Uygulama türüne bağlı olarak, uygulama Windows 10 cihazına iki yoldan biriy
 
 Bir uygulama cihaz bağlamında dağıtıldığında, yüklemenin başarılı olması için cihaz bağlamını destekleyen bir cihazın hedeflenmesi gerekir. Buna ek olarak, cihaz bağlamında dağıtım aşağıdaki koşulları destekler:
 - Uygulama cihaz bağlamında dağıtılıyorsa ve bir kullanıcıyı hedefliyorsa, yükleme işlemi başarısız olur ve yönetici konsolunda şu durum ve hata görüntülenir:
-    - Durum: Başarısız.
-    - Error: Cihaz bağlamı yüklemesinde kullanıcı hedeflenemez.
+    - Durum: Başarısız oldu.
+    - Hata: Bir kullanıcı bir cihaz bağlamı yükleme ile hedeflenemez.
 - Uygulama cihaz bağlamında dağıtılıyorsa ama cihaz bağlamını desteklemeyen bir cihazı hedefliyorsa, yükleme işlemi başarısız olur ve yönetici konsolunda şu durum ve hata görüntülenir:
-    - Durum: Başarısız.
-    - Hata: Bu platform cihaz bağlamı yüklemelerini desteklemiyor. 
+    - Durum: Başarısız oldu.
+    - Hata: Bu platform, cihaz bağlam yükler desteklemez. 
 
 > [!Note]
 > Uygulama ataması belirli bir dağıtımla kaydedildikten sonra, modern uygulamalar dışında bu atama için bağlam değiştirilemez. Modern uygulamalar söz konusu olduğunda, bağlam değiştirilip kullanıcı bağlamından cihaz bağlamına geçilebilir. 

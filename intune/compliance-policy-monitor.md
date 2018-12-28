@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977312"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642821"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
@@ -56,28 +56,33 @@ Bu raporda gezindikçe her bir ayar için uyumluluk durumu da dahil olmak üzere
 
 ### <a name="device-compliance-status-report"></a>Cihaz uyumluluk durumu raporu
 
-Grafik, Intune’a kayıtlı tüm cihazlar için uyumluluk durumunu gösterir. Cihaz uyumluluk durumları iki farklı veritabanında tutulur: Intune ve Azure Active Directory. 
+Grafik, Intune’a kayıtlı tüm cihazlar için uyumluluk durumunu gösterir. Cihaz uyumluluk durumları iki farklı veritabanlarında saklanır: Intune ve Azure Active Directory. 
 
 > [!IMPORTANT]
 > Intune, cihazda tüm uyumluluk değerlendirme için cihaz iade zamanlama izler. [Cihaz iade zamanlama hakkında daha fazla bilgi](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 Farklı cihaz uyumluluk ilkesi durumlarının açıklamaları:
 
-- **Uyumlu**: Cihaz, bir veya daha fazla cihaz uyumluluk ilkesi ayarını başarıyla uyguladı.
+- **Uyumlu**: Cihaz, bir veya daha fazla cihaz uyumluluk İlkesi ayarları başarıyla uygulandı.
 
-- **Yetkisiz kullanım süresinde:** Cihaz, bir veya daha fazla cihaz uyumluluk ilkesi ayarı tarafından hedefleniyor. Ancak kullanıcı henüz bu ilkeleri uygulamadı. Bu, cihazın uyumsuz ancak yönetici tarafından belirlenen yetkisiz kullanım süresinde olduğunu gösterir.
+- **İçinde yetkisiz kullanım süresi:** Cihaz, cihaz uyumluluk İlkesi ayarlarını bir veya daha fazla yöneliktir. Ancak kullanıcı henüz bu ilkeleri uygulamadı. Bu, cihazın uyumsuz ancak yönetici tarafından belirlenen yetkisiz kullanım süresinde olduğunu gösterir.
 
   - [Uyumlu olmayan cihazlara yönelik eylemler](actions-for-noncompliance.md) hakkında daha fazla bilgi edinin.
 
-- **Değerlendirilmedi**: Yeni kaydedilen cihazlar için ilk durum. Veya uyumluluk ilkesi atanmamış ve uyumluluk denetimi tetikleyicisi olmayan cihazlar.
+- **Değerlendirilmedi**: Yeni kaydedilen cihazlar için başlangıç durumu. Diğer olası nedenler durumu:
 
-- **Uyumsuz**: Cihaz, bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamadı. Veya kullanıcı ilkelere uyum sağlamadı.
+  - Uyumluluk denetimi için bir tetikleyici yok ve bir uyumluluk ilkesi atanmamış cihazlar
+  - Uyumluluk ilkesinin son güncelleştirmesinden sonra İade edilmeyen cihazları
+  - Gücüne özel kullanıcıya ilişkili olmayan cihazlar
+  - Cihaz kayıt Yöneticisi (DEM) hesabı ile kayıtlı cihazlar
 
-- **Cihaz eşitlenmedi:** Cihaz, aşağıdaki nedenlerden biri sonucunda cihaz uyumluluk ilkesi durumunu bildiremedi:
+- **Uyumlu değil:** Cihaz, bir veya daha fazla cihaz uyumluluk İlkesi ayarları uygulamak başarısız oldu. Veya kullanıcı ilkelere uyum sağlamadı.
 
-  - **Bilinmeyen**: Cihaz çevrimdışı veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramadı.
+- **Cihaz eşitlenmedi:** Cihazın cihaz uyumluluk İlkesi durumunu bildiremedi aşağıdaki nedenlerden biri:
 
-  - **Hata**: Cihaz, Intune ve Azure AD ile iletişim kuramadı ve bunun nedenini açıklayan bir hata iletisi aldı.
+  - **Bilinmeyen**: Cihaz çevrimdışı veya Intune ya da başka bir nedenle Azure AD ile iletişim kurmak için başarısız.
+
+  - **Hata**: Cihaz, Intune ve Azure AD ile iletişim kuramadı ve neden olan bir hata iletisi aldı.
 
 > [!IMPORTANT]
 > Intune’a kaydedilmiş olan ancak hiçbir cihaz uyumluluk ilkesi tarafından hedeflenmeyen cihazlar, **Uyumlu** demeti altında bu rapora dahil edilir.
@@ -155,11 +160,11 @@ Bu özellik cihaz durumu bildirimine eklenmiştir:
 1. **Cihaz uyumluluğu** > **İlkeler**'i seçin. Platform da dahil olmak üzere ilkelerin listesi, ilkenin atanıp atanmadığı ve diğer ayrıntılar gösterilir.
 2. Bir ilke seçin ve **Genel Bakış**'ı seçin. Bu görünümde, ilke ataması aşağıdaki durumları içerir:
 
-    - Başarılı: İlke uygulandı
-    - Hata: İlke uygulanamadı. Bu ileti, genellikle bir açıklamaya bağlantı veren bir hata kodu görüntüler. 
-    - Çakışma: İki ayar aynı cihaza uygulanır ve Intune çakışmayı sıralayamaz. Yöneticinin gözden geçirmesi gerekir.
-    - Bekleyen: Cihaz, ilkeyi almak için henüz Intune’a iade edilmemiş. 
-    - Uygulanamaz: Cihaz ilkeyi alamaz. Örneğin ilke, iOS 11.1’e özel bir ayarı güncelleştiriyor ancak cihaz iOS 10 kullanıyor. 
+    - Başarılı: İlke uygulanır
+    - Hata: İlkeyi uygulamak başarısız oldu. Bu ileti, genellikle bir açıklamaya bağlantı veren bir hata kodu görüntüler. 
+    - Çakışma: İki ayar aynı cihaza uygulanır ve Intune çakışma sıralayamazsınız. Yöneticinin gözden geçirmesi gerekir.
+    - Bekleyen: Cihaz İlkesi henüz almak için Intune hizmetine giriş iade edilmemiş. 
+    - Uygulanamaz: Cihaz, ilkeyi alamaz. Örneğin ilke, iOS 11.1’e özel bir ayarı güncelleştiriyor ancak cihaz iOS 10 kullanıyor. 
 
 3. Bu ilkeyi kullanan cihazlarla ilgili ayrıntıları görmek için, durumlardan birini seçin. Örneğin **Başarılı**'yı seçin. Sonraki pencerede, cihaz adı ve dağıtım durumu gibi belirli cihaz ayrıntıları listelenir.
 

@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553665"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -47,7 +47,7 @@ Silme, cihazı yeni bir kullanıcıya vermeden önce veya cihaz kaybolduğunda/�
 
 ### <a name="wiping-a-device"></a>Bir cihazı silme
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihazlar** > **Tüm cihazlar**’ı seçin.
 4. Silme eylemini uygulamak istediğiniz cihazın adını seçin.
@@ -81,12 +81,12 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 
 |Veri türü|iOS|
 |-------------|-------|
-|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket portalını kullanarak yüklenen uygulamalar:** tüm uygulama verileri ve uygulamaları kaldırılır. Bu uygulamaları App Store ' başlangıçta yüklenen ve daha sonra şirket uygulamalarını yönetilen uygulamaları içerir. <br /><br /> **Mobil uygulama yönetimi kullanan ve App Store ' yüklenen Microsoft uygulamaları:** kişisel uygulama verileri kaldırılır. Şirket uygulama verilerini ve uygulamaları kaldırılmaz.|
+|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket portalını kullanarak yüklenen uygulamalar:** tüm uygulama verileri ve uygulamaları kaldırılır. Bu uygulamaları App Store ' başlangıçta yüklenen ve daha sonra şirket uygulamalarını yönetilen uygulamaları içerir. <br /><br /> **Mobil Uygulama Yönetimi'ni kullanın ve App Store ' yüklenen Microsoft uygulamaları:** Şirket uygulama verileri kaldırılır. Kişisel uygulama verilerinin ve uygulamaları kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Yönetim profili kaldırılır.|
-|E-posta|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
+|Email|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
 |Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır. Bu, önce Outlook mobil uygulamasının iOS kullanıcılarına Gerekli uygulama olarak dağıtılmasını gerektirir.|
 |Azure AD'den ayrılma|Azure AD kaydı kaldırılır.|
 |Kişiler |Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
@@ -104,7 +104,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikaları iptal edilir ama kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
-|E-posta|Yok (E-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
+|Email|Yok (E-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
 |Outlook|Yalnızca Outlook MAM ilkeleriyle korunuyorsa, Android için Outlook uygulaması tarafından alınan e-posta kaldırılır. Aksi takdirde, cihazın kaydı kaldırıldığında Outlook temizlenmez.|Yalnızca Outlook MAM ilkeleriyle korunuyorsa, Android için Outlook uygulaması tarafından alınan e-posta kaldırılır. Aksi takdirde, cihazın kaydı kaldırıldığında Outlook temizlenmez.|
 |Azure AD'den ayrılma|Azure AD kaydı kaldırılır.|Azure AD kaydı kaldırılır.|
 |Kişiler |Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
@@ -135,10 +135,10 @@ Yalnızca bilgi noktası cihazlarını silebilirsiniz. Android bilgi noktası ci
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|EFS tarafından korunan dosyalar için anahtarlar iptal edilir. Kullanıcı dosyaları açamaz.|Şirket uygulamaları kaldırılmaz.|Başlangıçta Şirket Portalı üzerinden yüklenen uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.|Uygulamalar kaldırılır. Dışarıdan yükleme anahtarları kaldırılır.<br>Windows 10 sürüm 1703 (Creators Update) ve üzerinde Office 365 ProPlus uygulamaları kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
-|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|Desteklenmez.|Kaldırıldı.|
-|Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|Sertifikalar kaldırılır ve iptal edilir.|Desteklenmez.|Sertifikalar kaldırılır ve iptal edilir.|
-|E-posta|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir.|Desteklenmez.|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir. Intune tarafından sağlanan posta hesaplarını kaldırır.|
-|Azure AD'den ayrılma|Hayır.|Hayır.|Azure AD kaydı kaldırılır.|Yok. Windows 10’da Azure AD katılımlı cihazları kullanımdan kaldıramazsınız.|
+|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|Desteklenmiyor.|Kaldırıldı.|
+|Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|Sertifikalar kaldırılır ve iptal edilir.|Desteklenmiyor.|Sertifikalar kaldırılır ve iptal edilir.|
+|Email|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir.|Desteklenmiyor.|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir. Intune tarafından sağlanan posta hesaplarını kaldırır.|
+|Azure AD'den ayrılma|Hayır.|Hayır.|Azure AD kaydı kaldırılır.|Geçerli değildir. Windows 10’da Azure AD katılımlı cihazları kullanımdan kaldıramazsınız.|
 
 ### <a name="retire"></a>Devre dışı bırakma
 

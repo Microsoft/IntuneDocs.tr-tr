@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 084294ca6b715f05957e973635a05abd8c0762a2
-ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
+ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378275"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657840"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -543,11 +543,11 @@ SUBQUERY (
 
 Eski UI:
 
-![Eski paylaşım UI](./media/sharing-UI-old.png)
+![Veri - iOS paylaşım kullanıcı Arabirimi eski paylaşma](./media/sharing-UI-old.png)
 
 Yeni UI:
 
-![Yeni paylaşım UI](./media/sharing-UI-new.png)
+![Veri - yeni kullanıcı Arabirimi paylaşımı iOS paylaşım](./media/sharing-UI-new.png)
 
 ## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>iOS uygulamalarınız için hedeflenen yapılandırmayı (APP/MAM uygulama yapılandırması) etkinleştirme
 
@@ -602,7 +602,7 @@ Kullanıcı yönetilse de yönetilmese de kimlikleri uygun olarak ayarlamak uygu
 
 Herhangi bir zamanda, her iş parçacığı UI görevleri ve dosya görevleri için etkili bir kimliğe sahiptir. Bu, varsa hangi ilkelerin uygulanması gerektiğini denetlemek için kullanılan kimliktir. Kimlik, “kimliksiz” ise veya kullanıcı yönetilmiyorsa hiçbir ilke uygulanmaz. Aşağıdaki diyagramlar etkin kimliklerin nasıl belirlendiğini gösterir.
 
-  ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](./media/ios-thread-identities.png)
+  ![Intune uygulama SDK'sı iOS: Kimliği belirleme işlemi](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>İş parçacığı kuyrukları
 

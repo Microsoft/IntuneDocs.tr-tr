@@ -1,7 +1,7 @@
 ---
 title: Uygulamalardan yalnızca şirket verilerini temizleme
 titleSuffix: Microsoft Intune
-description: Microsoft Intune ile uygulamaları seçmeli olarak silme hakkında bilgi edinin.
+description: Intune Intune tarafından yönetilen uygulamalardan yalnızca şirket verilerini seçmeli olarak silme hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 19d173cabda71b4e6a24008eb94f9665c54ba924
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57e22c7b999f2f672c67dc623a20bf643e739376
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184361"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642583"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune tarafından yönetilen uygulamalardan kurumsal verileri temizleme
 
@@ -39,7 +39,7 @@ Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıld�
 
 ## <a name="create-a-wipe-request"></a>Temizleme isteği oluşturma
 
-1.  [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1.  [Azure Portal](https://portal.azure.com) oturum açın.
 
 2.  **Tüm hizmetler**’i seçin, filtre metin kutusuna **Intune** yazın ve **Intune**’u seçin. Intune bölmesi açıldığında **İstemci uygulamaları** bölmesini seçin.
 

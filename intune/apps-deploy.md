@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune’da uygulamaları gruplara atama
 titlesuffix: ''
-description: Intune uygulamasını kullanıcı veya cihaz gruplarına atamayı öğrenin.
+description: Intune uygulama kullanıcı ya da Microsoft Intune kullanarak cihazları gruplara öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b6e9901bfea3ec129246494d6d8077a440c8a675
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324931"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734281"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -29,20 +29,22 @@ ms.locfileid: "53324931"
 
 Microsoft Intune’a [bir uygulama ekledikten](apps-add.md) sonra uygulamayı kullanıcılara ve cihazlara atayabilirsiniz. Unutmayın; cihaz Intune tarafından yönetiliyor olsa da olmasa da uygulamayı cihaza atayabilirsiniz. 
 
+> [!NOTE]
+> Kullanılabilir dağıtım amacı, cihaz grupları için desteklenmiyor, yalnızca kullanıcı gruplarına desteklenir.
+
 Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik çeşitli seçenekler listelenir:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Intune’a kayıtlı cihazlar**|**Intune’a kayıtlı olmayan cihazlar**|
-|Kullanıcılara atama|Evet|Evet|
-|Cihazlara atama|Evet|Hayır|
-|Sarmalanan uygulamaları veya Intune SDK’sını birleştiren uygulamaları atama (uygulama koruma ilkeleri için)|Evet|Evet|
-|Uygulamaları Kullanılabilir olarak atama|Evet|Evet|
-|Uygulamalarını Gerekli olarak atama|Evet|Hayır|
-|Uygulamaları kaldırma|Evet|Hayır|
-|Intune’dan uygulama güncelleştirmelerini alma|Evet|Hayır|
-|Son kullanıcıların Şirket Portalı uygulamasından kullanılabilir uygulamaları yüklemesi|Evet|Hayır|
-|Son kullanıcıların web tabanlı Şirket Portalı’ndan kullanılabilir uygulamaları yüklemesi|Evet|Evet|
+|   | Intune’a kayıtlı cihazlar | Intune’a kayıtlı olmayan cihazlar |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Kullanıcılara atama | Evet | Evet |
+| Cihazlara atama | Evet | Hayır |
+| Sarmalanan uygulamaları veya Intune SDK’sını birleştiren uygulamaları atama (uygulama koruma ilkeleri için) | Evet | Evet |
+| Uygulamaları Kullanılabilir olarak atama | Evet | Evet |
+| Uygulamalarını Gerekli olarak atama | Evet | Hayır |
+| Uygulamaları kaldırma | Evet | Hayır |
+| Intune’dan uygulama güncelleştirmelerini alma | Evet | Hayır |
+| Son kullanıcıların Şirket Portalı uygulamasından kullanılabilir uygulamaları yüklemesi | Evet | Hayır |
+| Son kullanıcıların web tabanlı Şirket Portalı’ndan kullanılabilir uygulamaları yüklemesi | Evet | Evet |
 
 > [!NOTE]
 > Şu anda, iOS ve Android uygulamalarını (iş kolu uygulamaları ve mağazadan satın alınan uygulamalar), Intune’a kayıtlı olmayan cihazlara atayabilirsiniz.
@@ -83,9 +85,8 @@ Uygulama artık seçtiğiniz gruplara atanır. Uygulama atamalarını dahil etme
 
 Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. Aşağıdaki tabloda verilen bilgiler, bu durum ortaya çıktığında sonuçta söz konusu olan amacı anlamanıza yardımcı olabilir:
 
-||||
-|-|-|-|
-|**Grup 1 amacı**|**Grup 2 amacı**|**Ortaya çıkan amaç**|
+| Grup 1 amacı | Grup 2 amacı | Ortaya çıkan amaç |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Kullanıcı Gerekli|Kullanıcı Mevcut|Gerekli ve Kullanılabilir|
 |Kullanıcı Gerekli|Kullanıcı Mevcut Değil|Gerekli|
 |Kullanıcı Gerekli|Kullanıcı Kaldır|Gerekli|

@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032002"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626093"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Android kurumsal bilgi noktası cihazları Intune kaydını ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android; Şirkete Ait, Tek Kullanımlık çözüm kümesi ile bilgi noktası türü cihazlarını destekler. Bu tür cihazlar tek bir amaca hizmet eder; örneğin dijital işaretler, bilet yazdırma veya envanter yönetimi gibi. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
+Android kiosk stili cihazlarla destekler, [ayrılmış cihazları](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use) çözüm kümesi. Bu tür cihazlar tek bir amaca hizmet eder; örneğin dijital işaretler, bilet yazdırma veya envanter yönetimi gibi. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
 
 Intune, Android bilgi noktası cihazlarına uygulama ve ayar dağıtmanıza yardımcı olur. Android kurumsal hakkında belirli ayrıntıları öğrenmek için bkz. [Android kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
@@ -56,8 +56,8 @@ Bilgi noktası cihazlarınızı kaydedebilmek için bir kayıt profili oluşturm
 
 1. [Intune portalı](https://portal.azure.com)’na gidip **Cihaz kaydı** > **Android kaydı** > **Bilgi noktası ve görev cihazı kayıtları**’nı seçin.
 2. **Oluştur**’u seçin ve gerekli alanları doldurun.
-    - **Ad**: Profili dinamik cihaz grubuna atarken kullanacağınız bir ad yazın.
-    - **Belirteç sona erme tarihi**: Belirteç süresinin dolduğu tarih. Google, en fazla 90 günü kabul eder.
+    - **Ad**: Dinamik cihaz grubuna profili atamasını yaparken kullanacağınız bir ad yazın.
+    - **Belirteç sona erme tarihi**: Belirtecin süresinin sona erdiği tarih. Google, en fazla 90 günü kabul eder.
 3. **Oluştur**’u seçerek profili kaydedin.
 
 ### <a name="create-a-device-group"></a>Bir cihaz grubu oluşturma
@@ -67,11 +67,11 @@ Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsin
 1. [Intune portalı](https://portal.azure.com)’na gidin ve **Gruplar** > **Tüm gruplar** > **Yeni grup**’u seçin.
 2. **Grup** dikey penceresinde gerekli alanları aşağıdaki gibi doldurun:
     - **Grup türü**: Güvenlik
-    - **Grup adı**: Kullanımı kolay bir ad yazın (Fabrika 1 cihazlar gibi)
+    - **Grup adı**: (Fabrika 1 cihaz gibi) kullanımı kolay bir ad yazın
     - **Üyelik türü**: Dinamik cihaz
 3. **Dinamik sorgu ekle**’yi seçin.
 4. **Dinamik üyelik kuralları** dikey penceresindeki alanları aşağıdaki gibi doldurun:
-    - **Dinamik üyelik kuralı ekle**: Basit kural
+    - **Dinamik Üyelik Kuralı Ekle**: Basit kural
     - **Cihaz eklenecek konum**: enrollmentProfileName
     - Ortadaki kutudan **Eşleştir**’i seçin.
     - Son alana ise daha önce oluşturduğunuz kayıt profili adını girin.
@@ -82,8 +82,8 @@ Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsin
 
 Belirteçleri veya QR kodlarını yenisiyle değiştirebilir ya da kaldırabilirsiniz.
 
-- **Belirteci değiştir**: Belirteci Değiştir’i kullanarak süresi dolmak üzere olan belirteç/QR kodu yerine yenisini oluşturabilirsiniz.
-- **Belirteci iptal et**: Belirtecin/QR kodunun süresinin hemen dolmasını sağlayabilirsiniz. Bu noktadan itibaren belirteç/QR kodu kullanılabilir olmaktan çıkar. Şu durumlarda bu seçeneği kullanmak isteyebilirsiniz:
+- **Belirtecin yerini**: Bir belirteci Değiştir'i kullanarak süre sonu yaklaştığında, yeni bir belirteç/QR kodu oluşturabilirsiniz.
+- **Belirteci iptal et**: Belirteç/QR kodunu hemen süresinin dolmasını sağlayabilir. Bu noktadan itibaren belirteç/QR kodu kullanılabilir olmaktan çıkar. Şu durumlarda bu seçeneği kullanmak isteyebilirsiniz:
     - belirteci/QR kodunu yanlışlıkla yetkisiz taraflarla paylaşırsanız
     - tüm kayıtları tamamlayıp belirtece/QR koduna artık ihtiyaç duymazsanız
 

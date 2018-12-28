@@ -1,12 +1,12 @@
 ---
 title: Veri Ambarı Kullanıcı Varlığı Zaman Çizelgesi
 titlesuffix: Microsoft Intune
-description: Intune Veri Ambarı’nın bir zaman çizelgesinde Kullanıcıları nasıl temsil ettiğini öğrenin.
+description: Nasıl Microsoft Intune veri ambarı bir zaman çizelgesinde kullanıcıları temsil öğrenin.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4493ea8442642c09ee7a94b9b73fe0412c015649
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d270aef9bd7102148466006f4057f1c598b02b0e
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189920"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642710"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
 
@@ -35,13 +35,13 @@ Bir varlığın ömrünü incelerseniz bu senaryoyu daha iyi anlayabilirsiniz.
 
 **John Smith** adlı bir kullanıcıya 06/01/2017 tarihinde bir lisans atandığını ve ardından **Kullanıcı** tablosunun aşağıdaki girdiye sahip olacağını varsayalım: 
  
-| GörünenAd | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| displayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | 12/31/9999 | TRUE
  
 John Smith, 25/07/2017 tarihinde lisansından vazgeçti. **Kullanıcı** tablosunda aşağıdaki girdiler bulunur. Var olan kayıtlardaki değişiklikler `marked`. 
 
-| GörünenAd | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| displayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | `07/26/2017` | `FALSE` 
 | John Smith | TRUE | 07/26/2017 | 12/31/9999 | TRUE 
@@ -50,7 +50,7 @@ John Smith, 25/07/2017 tarihinde lisansından vazgeçti. **Kullanıcı** tablosu
 
 Şimdi, John Smith'in 08/31/2017 tarihinde atanmış yeni bir lisans aldığını varsayalım, ardından Kullanıcı tablosunda aşağıdaki girdiler bulunur:
  
-| GörünenAd | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| displayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | 07/26/2017 | FALSE 
 | John Smith | TRUE | 07/26/2017 | `08/31/2017` | `FALSE` 

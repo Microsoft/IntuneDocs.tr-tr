@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: acf850c8981a68456c8be9bda54c21ad49aba5e9
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325084"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738061"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -100,7 +100,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 4. **Sertifikalar, Kimlikler ve Profiller**’e tıklayın.
 
-   ![Apple Geliştirici portalı](./media/iOS-signing-cert-1.png)
+   ![Apple Geliştirici Portalı - sertifikalar, kimlikler ve Profiller](./media/iOS-signing-cert-1.png)
 
 5. &nbsp; ![Sağ üst köşedeki Apple Geliştirici portalı artı işaretine](./media/iOS-signing-cert-2.png) tıklayarak bir iOS sertifikası ekleyin.
 
@@ -125,7 +125,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 11. Bir CSR dosyasının nasıl oluşturulacağını öğrenmek için Apple geliştirici sitesindeki yönergeleri izleyin. CSR dosyasını Mac OS bilgisayarınıza kaydedin.
 
-    ![Anahtarlık Erişimi’nde bir Sertifika Yetkilisinden bir sertifika isteyin](./media/iOS-signing-cert-6.png)
+    ![Aşağıda sertifika bilgilerini girin](./media/iOS-signing-cert-6.png)
 
 12. Apple Geliştirici sitesine dönün. **Devam**’a tıklayın. Ardından CSR dosyasını karşıya yükleyin.
 
@@ -141,7 +141,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 16. Bir bilgi iletisi görüntülenir. En alta kaydırın ve **Parmak izleri** etiketinin altına bakın. Uygulama Sarmalama Aracı’nda "-c" için bağımsız değişken olarak kullanmak üzere **SHA1** dizesini (bulanıklaştırılmış) kopyalayın.
 
-    ![Sertifikanızı bir anahtarlığa ekleyin](./media/iOS-signing-cert-9.png)
+    ![iPhone bilgiler - parmak izleri SHA1 dizesi](./media/iOS-signing-cert-9.png)
 
 
 

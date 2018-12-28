@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2c15c8915c1fefabf301525b3ef03f74038d31dc
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 4e37675186ef21d219627ec3ec1973e6e9944d1d
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325060"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737976"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -45,7 +45,7 @@ Aşağıdaki adımlar, gerekli sertifikayı almanıza ve uygulamaları imzalaman
 4.  **Sertifikaların içeri aktarıldığını doğrulama**<br>
     Sertifikaların düzgün bir şekilde içeri aktarıldığını doğrulamak için **Sertifikalar** ek bileşenine gidin, **Sertifikalar**'a sağ tıklayın ve **Sertifikaları Bul**'u seçin. **İçerir** alanına "Symantec" yazın ve **Şimdi Bul**'a tıklayın. İçeri aktardığınız sertifikaların sonuçlarda görüntülenmesi gerekir.
 
-    ![Symantec sertifikasını bulma](./media/wit.gif)
+    ![Sertifika sonuçları sertifikaları Bul iletişim kutusunda listelenir.](./media/wit.gif)
 
 5. **İmzalama sertifikasını dışarı aktarma**<br>
     Sertifikaların mevcut olduğunu doğruladıktan sonra, şirket portalını imzalamak için .pfx dosyasını dışarı aktarabilirsiniz. **Hedeflenen amaç** "kod imzalama" ibaresine sahip Symantec sertifikasını seçin. Kod imzalama sertifikasına sağ tıklayıp **Dışarı Aktar**'ı seçin.
@@ -155,7 +155,7 @@ Intune ile İş İçin Microsoft Mağazası’nı tümleştirmiş olmasanız bil
 1. [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store)’ndaki hesabınızda oturum açın ve Intune Şirket Portalı uygulamasının **çevrimdışı lisanslı** sürümünü edinin.  
 2. Uygulamayı aldıktan sonra **Envanter** sayfasında uygulamayı seçin.  
 3. **Platform** olarak **Windows 10 tüm cihazlar**’ı ve uygun **Mimari**’yi seçip sonra indirin. Bu uygulama için bir uygulama lisans dosyası gerekmez.
-![İndirme işlemi için Windows 10 tüm cihazlar ve Mimari X86 Paketi ayrıntılarının görüntüsü](./media/Win10CP-all-devices.png)
+![Windows 10 X86 Paket ayrıntılarını indirmek için görüntüsü](./media/Win10CP-all-devices.png)
 4. "Gerekli Çerçeveler" başlığı altındaki tüm paketleri indirin. Bu işlem x86, x64 ve ARM mimarileri için gerçekleştirilmelidir. Böylece aşağıda gösterildiği gibi toplam 9 paket gerekir.
 
 ![İndirilecek bağımlılık dosyalarının görüntüsü ](./media/Win10CP-dependent-files.png)
@@ -164,7 +164,7 @@ Intune ile İş İçin Microsoft Mağazası’nı tümleştirmiş olmasanız bil
    ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)
    2. Dokuz bağımlılık paketini Dependencies klasörüne yerleştirin.  
    Bağımlılıklar, bu biçimde yerleştirilmezse Intune tarafından tanınamazlar ve paketin karşıya yüklenmesi sırasında karşıya yüklenemezler. Bu durumda, karşıya yükleme aşağıdaki hatayı vererek başarısız olur.  
-   ![Bu yazılım yükleyicisine ait Windows uygulama bağımlılığı, uygulama klasöründe bulunamadı. Bu uygulamayı oluşturmaya ve dağıtmaya devam edebilirsiniz ancak uygulama, eksik Windows uygulama bağımlılığı sağlanmadıkça çalışmayacaktır.](./media/Win10CP-error-message.png)
+   ![Hata iletisi - Windows uygulama bağımlılığı sağlanmalıdır.](./media/Win10CP-error-message.png)
 6. Intune'a dönün ve Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulamayı, istenen hedef kullanıcı kümesine gerekli bir uygulama olarak dağıtın.  
 
 Intune’un Evrensel uygulamaların bağımlılıklarını nasıl işlediği hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune MDM aracılığıyla bağımlılıkları olan bir appxbundle dağıtma](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  

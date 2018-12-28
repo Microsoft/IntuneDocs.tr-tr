@@ -5,7 +5,7 @@ keywords: Intune nedir?
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 12/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: travisj
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 084084254b519fdcb441119d79c298010c367063
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 705149f3399c016879f4743065630f66ecefd263
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570783"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Eğitim için Intune ile Intune'daki tam cihaz yönetimi deneyimi arasında ne fark vardır?
 

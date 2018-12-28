@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032070"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734247"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -84,10 +84,10 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 -  Cihaz üreticisi/üreticileri
 
 **Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
-Örnek giriş: *Üretici A;Üretici B* 
+Örnek Giriş: *Bir üretici; Üretici B* 
 
 >[!NOTE]
-> Intune kullanan cihazlardan bildirilen ve giriş olarak kullanılabilen bazı yaygın üreticiler şunlardır: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
+> Bunlar Intune kullanarak cihazları bildirilen bazı yaygın üreticileri ve giriş olarak kullanılabilir: Asus; BlackBerry; Bq; Gionee; Google; Genel HMD; Htc; Huawei Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola Oneplus; Oppo; Samsung; NET; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
 Aşağıdaki eylemlerden birini ayarlayın: 
@@ -110,7 +110,7 @@ Aşağıdaki listede yaygın eylemler verilmiştir:
 
 Bazı durumlarda, örneğin **En düşük işletim sistemi sürümü** ayarında, farklı sürüm numaralarına bağlı olarak ayarı uygulanabilir tüm eylemleri gerçekleştirecek şekilde yapılandırabilirsiniz. 
 
-![Intune uygulama koruma erişim eylemleri - En düşük işletim sistemi sürümünün ekran görüntüsü](./media/apps-selective-wipe-access-actions05.png)
+![Uygulama koruma erişimi eylemleri - en düşük işletim sistemi sürümü görüntüsü](./media/apps-selective-wipe-access-actions05.png)
 
 Bir ayar tamamen yapılandırıldıktan sonra ayara ait satır, salt okunur görünüme geçer ve her zaman düzenlenebilir. Ayrıca satırdaki **Ayar** sütununda seçilebilir bir açılan menü bulunur. Yapılandırılmış ve birden fazla eyleme izin vermeyen ayarlarda ise bu açılan menü seçimi bulunmaz.
 

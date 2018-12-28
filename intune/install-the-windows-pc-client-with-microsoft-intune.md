@@ -14,19 +14,19 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 66402d9e2bc66ec96de88f64dd61c41e1ddb34e5
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179101"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553648"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Aşağıda açıklandığı gibi Windows bilgisayarlarını [mobil cihaz yönetimi (MDM) ile mobil cihazlar olarak](windows-enroll.md) ya da Intune yazılım istemcisi ile bilgisayarlar olarak yönetmek için Microsoft Intune’u kullanabilirsiniz. Ancak Microsoft, müşterilerin mümkün olan her durumda [MDM yönetim çözümünü kullanmasını](windows-enroll.md) önerir.
+> Aşağıda açıklandığı gibi Windows bilgisayarlarını [mobil cihaz yönetimi (MDM) ile mobil cihazlar olarak](windows-enroll.md) ya da Intune yazılım istemcisi ile bilgisayarlar olarak yönetmek için Microsoft Intune’u kullanabilirsiniz. Ancak Microsoft, müşterilerin mümkün olan her durumda [MDM yönetim çözümünü kullanmasını](windows-enroll.md) önerir. Daha fazla bilgi için [Windows PC'leri bilgisayarlar veya mobil cihazlar olarak yönetmeyi karşılaştırma](pc-management-comparison.md) 
 
 
 Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Intune istemci yazılımı aşağıdaki yöntemler kullanılarak yüklenebilir:
@@ -124,8 +124,8 @@ Kullanıcılar bir Intune lisansı atanmışsa ve kuruluşun MDM yetkilisi, Intu
 
 - Windows 10 veya Windows 8.1 bilgisayarı kullanıcılarına iki kayıt seçeneği gösterilir:
 
-  -  **Bilgisayarı mobil bir cihaz olarak kaydetme**: Kullanıcılar, **Nasıl Kaydolacağınızı Öğrenin** düğmesini seçer ve bilgisayarlarını mobil bir cihaz olarak kaydetme yönergelerine yönlendirilir. MDM kaydı varsayılan ve tercih edilen kayıt seçeneği olduğundan bu düğme göze çarpacak bir şekilde görüntülenir. Ancak MDM seçeneği, yalnızca istemci yazılımı yüklemeyi kapsayan bu makale için kapsam dışıdır.
-  - **Bilgisayarı Intune istemci yazılımını kullanarak kaydetme**: Kullanıcılarınıza **İndirmek için buraya tıklayın** bağlantısını seçmelerini söylemeniz gerekir. Bu bağlantı, kullanıcılara istemci yazılımı yüklemesi boyunca yol gösterir.
+  -  **Bilgisayarı mobil cihaz olarak kaydetme**: Kullanıcıların **Bul nasıl kaydolacağınızı** düğmesine tıklayın ve Bilgisayarlarını mobil bir cihaz olarak kaydetme yönergelerine alınır. MDM kaydı varsayılan ve tercih edilen kayıt seçeneği olduğundan bu düğme göze çarpacak bir şekilde görüntülenir. Ancak MDM seçeneği, yalnızca istemci yazılımı yüklemeyi kapsayan bu makale için kapsam dışıdır.
+  - **Bilgisayar Intune istemci yazılımını kullanarak kaydetme**: Kullanıcılarınıza söylemeniz gerekir **indirmek için buraya tıklayın** istemci yazılımı yüklemesi boyunca götüren bir bağlantı,.
 
 Aşağıdaki tabloda seçenekler özetlenmektedir.
 
@@ -260,4 +260,4 @@ Kayıt silme işlemi OnlineManagement klasörünü kaldırmaz. Kaldırma sonras�
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Sonraki adımlar
-[Microsoft Intune ile cihazları yönetme](device-management.md)
+[Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

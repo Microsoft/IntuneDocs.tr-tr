@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a0fb9aca406c1a49c979b59e5d879d66a730c1c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9cd03d4953376d20e96ec146ece91120d592cb99
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185899"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429789"
 ---
-# <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme
+# <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -99,9 +99,9 @@ Her bir kullanım örneği ve alt kullanım örneği uygulama senaryosu ile ili�
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Çözümünüz için uygulama türünü belirleme
 
 Aşağıdaki uygulama türlerinden birini seçebilirsiniz:
-- **Mağazadan uygulamalar**: Microsoft mağazası, iOS mağazası veya Android mağazasına yüklenmiş uygulamalar mağaza uygulamalarıdır. Bir mağaza uygulamasının sağlayıcısı, uygulama güncelleştirmeleriyle ilgilenir ve bunları sağlar. Uygulamayı mağaza listesinden seçer ve Intune aracılığıyla bunu kullanıcılarınız için mevcut bir uygulama olarak eklersiniz.
-- **Şirket içinde yazılmış uygulamalar (iş kolu)**: Şirket içinde oluşturulmuş uygulamalar, iş kolu (LOB) uygulamalarıdır. Bu uygulama türünün işlevselliği; Windows, iOS veya Android gibi Intune tarafından desteklenen platformlardan biri için oluşturulmuştur. Kuruluşunuz, güncelleştirmeleri ayrı bir dosya olarak oluşturur ve size gönderir. Siz de Intune aracılığıyla güncelleştirmeleri ekleyerek ve dağıtarak, bunları kullanıcılara gönderirsiniz.
-- **Web uygulamaları**: Web uygulamaları, istemci-sunucu uygulamalarıdır. Sunucu; kullanıcı arabirimi, içerik ve işlevleri içeren web uygulamasını sağlar. Ayrıca modern web barındırma platformları çoğu zaman güvenlik, yük dengeleme ve diğer yararlar da sunar. Bu tür bir uygulama web’de ayrı olarak korunur. Bu uygulama türüne ulaşmak için Intune kullanırsınız. Bu uygulamaya erişebilecek kullanıcı gruplarını da atarsınız. Android’in web uygulamalarını desteklemediğini hatırlatırız.
+- **Mağazadan uygulamalar**: Microsoft mağazası, iOS mağazası veya Android mağazası için yüklenmiş uygulamalar mağaza uygulamalardır. Bir mağaza uygulamasının sağlayıcısı, uygulama güncelleştirmeleriyle ilgilenir ve bunları sağlar. Uygulamayı mağaza listesinden seçer ve Intune aracılığıyla bunu kullanıcılarınız için mevcut bir uygulama olarak eklersiniz.
+- **Şirket içi (satır iş kolu) yazılmış uygulamalar**: Şirket içinde oluşturulan satır iş kolu (LOB) uygulamaları uygulamalardır. Bu uygulama türünün işlevselliği; Windows, iOS veya Android gibi Intune tarafından desteklenen platformlardan biri için oluşturulmuştur. Kuruluşunuz, güncelleştirmeleri ayrı bir dosya olarak oluşturur ve size gönderir. Siz de Intune aracılığıyla güncelleştirmeleri ekleyerek ve dağıtarak, bunları kullanıcılara gönderirsiniz.
+- **Web uygulamaları**: Web apps, istemci-sunucu uygulamalarıdır. Sunucu; kullanıcı arabirimi, içerik ve işlevleri içeren web uygulamasını sağlar. Ayrıca modern web barındırma platformları çoğu zaman güvenlik, yük dengeleme ve diğer yararlar da sunar. Bu tür bir uygulama web’de ayrı olarak korunur. Bu uygulama türüne ulaşmak için Intune kullanırsınız. Bu uygulamaya erişebilecek kullanıcı gruplarını da atarsınız. Android’in web uygulamalarını desteklemediğini hatırlatırız.
 
 Kuruluşunuz için gereken uygulamaları belirlerken bu uygulamaların bulut hizmetleriyle tümleşme durumuna, hangi verilere eriştiğine, KCG kullanıcıları için mevcut olup olmadığına ve İnternet erişimi gerektirip gerektirmediğine dikkat edin.
 
@@ -118,9 +118,9 @@ Intune ile yönetilen uygulamalar ayrıca kayıt gerekmeksizin uygulama korumas�
 
 ### <a name="understanding-licensed-apps"></a>Lisanslı uygulamaları anlama
 Web uygulamaları, mağaza uygulamaları ve LOB uygulamalarını anlamaya ek olarak toplu satın alma programı uygulamalarının hedefi ve lisanslı uygulamalar hakkında da bilgi sahibi olmalısınız, örneğin: 
-- **İş İçin Apple Volume Purchasing Program (iOS)**: iOS App Store, şirketinizde çalıştırmak istediğiniz uygulama için birden fazla lisans satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [iOS toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
-- **Android iş profili**: Android iş profili cihazlara uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Android iş profili için yüklediğiniz tüm uygulamalar Yönetilen Google Play mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
-- **İş için Microsoft Store (Windows 10)**: İş için Microsoft Store, kuruluşunuz için tek tek veya toplu olarak uygulamalar bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayı Microsoft Intune’a bağlayarak toplu satın alınan uygulamaları Azure portalında yönetebilirsiniz. Daha fazla bilgi için bkz. [İş İçin Microsoft Mağazası’ndan uygulamaları yönetme](windows-store-for-business.md).
+- **Apple Volume Purchasing Program (iOS) iş**: İOS App Store, şirketinizde çalıştırmak istediğiniz uygulamanın birden çok lisansını satın almanıza olanak tanır. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [iOS toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
+- **Android iş profili**: Android iş profili cihazlarına uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Android iş profili için yüklediğiniz tüm uygulamalar Yönetilen Google Play mağazasından gelir. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
+- **(Windows 10) iş için Microsoft Store**: İş için Microsoft Store, bulmak ve kendi Kurumunuz için uygulamaları tek tek veya toplu satın alma için bir yer sağlar. Mağazayı Microsoft Intune’a bağlayarak toplu satın alınan uygulamaları Azure portalında yönetebilirsiniz. Daha fazla bilgi için bkz. [İş İçin Microsoft Mağazası’ndan uygulamaları yönetme](windows-store-for-business.md).
 
     > [!NOTE]
     > Windows uygulamaları için dosya uzantıları **.msi**, **.appx**, **.appxbundle**, **.msix** ve **.msixbundle**'dır.  
@@ -148,7 +148,7 @@ Uygulama kategorileri, kullanıcıların uygulamaları şirket portalında daha 
 
 Uygulamayı Intune’a eklediğinizde, size istediğiniz kategoriyi belirtme seçeneği sağlanır. Uygulama eklemek ve kategorileri atamak için, platforma özgü konu başlıklarını kullanın. Kendi kategorilerinizi oluşturmak ve düzenlemek için aşağıdaki yordamı kullanın:
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükünde, **Kurulum** altında **Uygulama kategorileri**’ni seçin.  

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f27d8b2334ff38146949c28898040da6a714e0a
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032495"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642855"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -153,8 +153,8 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
     Kullanıcılara cihazlarının denetimli olduğu iki yolla bildirilir:
 
-   - Kilit ekranında “Bu iPhone, Contoso tarafından yönetilmektedir.” yazar.
-   - **Ayarlar** > **Genel** > **Hakkında** kısmında “Bu iPhone denetimlidir.” yazar. ifadesi ve
+   - Kilit ekranında sonucu: "Bu iPhone, Contoso tarafından yönetilmektedir."
+   - **Ayarları** > **genel** > **hakkında** kısmında: "Bu iPhone denetimlidir. ifadesi ve
 
      > [!NOTE]
      > Denetim olmadan kaydedilen bir cihaz, yalnızca Apple Configurator kullanılarak sıfırlanıp denetimli yapılabilir. Cihazı bu şekilde sıfırlamak için bir iOS cihazı USB kablosu ile bir Mac’e bağlamak gerekir. Bu konu hakkında daha fazla bilgi için [Apple Configurator belgelerine](http://help.apple.com/configurator/mac/2.3) bakın.
@@ -165,9 +165,9 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
 11. Önceki adımda **Sertifikaya göre Apple Configurator’a izin ver**’i seçtiyseniz içeri aktaracak bir Apple Configurator Sertifikası seçin.
 
-12. Seçin **Tamam**.
+12. **Tamam**’ı seçin.
 
-13. Şu profil ayarlarını yapılandırmak için **Kurulum Yardımcısı özelleştirme**’yi seçin: ![Kurulum Yardımcısı Özelleştirme.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+13. Seçin **Kurulum Yardımcısı özelleştirme** aşağıdaki profil ayarlarını yapılandırmak için: ![Kurulum Yardımcısını özelleştirme.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     | Departman ayarları | Açıklama |

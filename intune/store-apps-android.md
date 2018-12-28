@@ -1,12 +1,12 @@
 ---
 title: Android mağazası uygulamalarını Microsoft Intune’a ekleme
 titleSuffix: ''
-description: Microsoft Intune'a Android mağazası uygulamaları ekleme hakkında bilgi edinin.
+description: Android mağaza uygulamaları Google Play Store'dan Microsoft Intune eklemeyi öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,42 +16,46 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5f191a8e03710d97842ad31083fe3c07008afb56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2391f6ec7de5a9d1b4d544f1ca07fd9f4e58ace8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190192"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642419"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Android mağazası uygulamalarını Microsoft Intune’a ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bir cihaza veya kullanıcı grubuna uygulama atamadan önce uygulamayı ilk olarak Microsoft Intune’a eklemeniz gerekir. Aşağıdakileri yaparak, Azure portalından Intune’a bir Android mağaza uygulaması ekleyebilirsiniz:
+Bir cihaza veya kullanıcı grubuna uygulama atamadan önce uygulamayı ilk olarak Microsoft Intune’a eklemeniz gerekir. 
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+## <a name="add-an-app"></a>Uygulama ekleme
+
+Aşağıdakileri yaparak, Azure portalından Intune’a bir Android mağaza uygulaması ekleyebilirsiniz:
+
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin.  
     Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
-5. **Ekle**’yi seçin.
+5. **Add (Ekle)** seçeneğini belirleyin.
 6. **Uygulama Ekle** bölmesindeki kullanılabilir **Mağaza uygulaması** türlerinden **Android**’i seçin.
 7. Uygulama bilgilerini yapılandırmak için **Yapılandırma**’yı seçin ve ardından aşağıdaki bilgileri sağlayın. Android uygulamaları için [Google Play mağazası](https://play.google.com/store)’na gidin ve dağıtmak istediğiniz uygulamayı arayın. Uygulamayı seçin ve uygulama ayrıntılarını not edin. Seçtiğiniz uygulamaya bağlı olarak, bazı değerler otomatik olarak doldurulmuş olabilir:
-    - **Ad**: Şirket Portalı’nda görüntülendiği şekliyle uygulamanın adını girin. Kullandığınız uygulama adlarının benzersiz olduğundan emin olun. Bir uygulama adı iki kez kullanılırsa, Şirket Portalı’nda kullanıcılara yalnızca bir ad gösterilir.
+    - **Ad**: Şirket portalı'nda görüntülenecek olduğu gibi bir uygulama adı girin. Kullandığınız uygulama adlarının benzersiz olduğundan emin olun. Bir uygulama adı iki kez kullanılırsa, Şirket Portalı’nda kullanıcılara yalnızca bir ad gösterilir.
     - **Açıklama**: Uygulama için bir açıklama girin. Bu açıklama Şirket Portalı’nda kullanıcılara görüntülenir.Açıklama şirket portalında kullanıcılara görüntülenir.
     - **Yayımcı**: Uygulama yayımcısının adını girin.
-    - **Uygulama mağazası URL’si**: Oluşturmak istediğiniz uygulamanın uygulama mağazası URL’sini girin.
-    - **En düşük işletim sistemi**: Listeden uygulamanın yüklenebileceği en eski işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
-    - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Böylelikle, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Bu seçenek uygulama paketini, kullanıcılar uygulamalara göz atarken Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüler.
-    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Appstore URL**: Oluşturmak istediğiniz uygulamanın uygulama mağazası URL'sini girin.
+    - **En düşük işletim sistemi**: Listede uygulamanın yüklenebilmesi için en eski işletim sistemi sürümü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
+    - **Kategori**: İsteğe bağlı olarak, bir veya daha fazla yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz bir kategoriyi seçin. Böylelikle, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
+    - **Bunu şirket Portalı'nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken uygulama paketinin şirket Portalı'nın ana sayfasında göze çarpacak şekilde görüntüleyin için. Bu seçeneği belirleyin.
+    - **Bilgi URL'si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Gizlilik URL'si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
-    - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin, örneğin *İK departmanı*.
-    - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Sahibi**: İsteğe bağlı olarak, örneğin, bu uygulamanın sahibi için bir ad girin *ik departmanı*.
+    - **Notları**: İsteğe bağlı olarak, bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: İsteğe bağlı olarak, uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
 1. **Tamam**’ı seçin.
-2. **Ekle**’yi seçin.
+2. **Add (Ekle)** seçeneğini belirleyin.
 
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/20/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189189"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737925"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune'u ücretsiz deneyin 
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune ücretsiz olarak deneyin 
 
 Microsoft Intune, cihaz ve uygulamaları yöneterek iş gücünüzün şirket verilerini korumanıza yardımcı olur. Bu hızlı başlangıçta Intune'u bir test ortamında denemek için ücretsiz bir abonelik oluşturacaksınız.
 
@@ -50,7 +50,7 @@ Intune'u 30 gün boyunca ücretsiz deneyebilirsiniz. Zaten bir iş veya okul hes
 
 2. Şirketinizin adını ve arından **. onmicrosoft.com** dizesini kullanarak bir hesap oluşturun. 
 
-    ![Microsoft Intune Deneme hesabına kaydolma web sayfasının ekran görüntüsü](./media/account-sign-up-site-user-id.png)
+    ![Microsoft Intune deneme hesabı yeni kimlik bilgisi işleminin ekran görüntüsü](./media/account-sign-up-site-user-id.png)
 
     Kuruluşunuzun **.onmicrosoft.com** dizesi olmadan kullanmak istediğiniz kendi özel etki alanı varsa, bunu bu makalenin devamında anlatılan Office 365 Yönetim Portalı’nda değiştirebilirsiniz.
 
@@ -58,7 +58,7 @@ Intune'u 30 gün boyunca ücretsiz deneyebilirsiniz. Zaten bir iş veya okul hes
 
     ![Hesap bilgilerinizin görüntüsü](./media/intune-end-of-sign-up-process.png) 
 
-## <a name="sign-in-to-the-azure-portal"></a>Azure portalında oturum açma
+## <a name="sign-in-to-the-azure-portal"></a>Azure portalında oturum açın
 
 1. Yeni bir tarayıcı penceresi açın ve adres çubuğuna **https://portal.azure.com** ifadesini girin. 
 2. Oturum açmak için yukarıdaki adımlarda verilen kimlik bilgilerini kullanın.
@@ -106,13 +106,13 @@ Yukarıda değinildiği gibi kuruluşunuzun **. onmicrosoft.com** olmadan kullan
 
 3. Özel etki alanı adınızı yazın. Ardından **İleri**'yi seçin.
 
-   ![Office 365 Yönetim Merkezi’nde Ayarlar > Etki Alanları’nın seçili olduğu ve yeni bir etki alanının eklenmesini gösteren ekran görüntüsü](./media/domain-custom-add.png)
+   ![Ekran görüntüsü Office 365 Yönetim Merkezi - etki alanı ekleme](./media/domain-custom-add.png)
 
 4. Önceki adımda girdiğiniz etki alanının sahibi olduğunuzu doğrulayın. 
     
     **Kodu e-posta yoluyla gönder** seçilirse, etki alanınızın kayıtlı iletişim sorumlusuna bir e-posta gönderilir. E-postayı aldıktan sonra kodu kopyalayın ve **Doğrulama kodunuzu buraya yazın** etiketli alana girin. Doğrulama kodu eşleşirse, etki alanı kiracınıza eklenir. Görüntülenen e-posta tanıdık görünmeyebilir. Bazı kaydediciler etki alanı kaydedilirken sağlanan gerçek e-posta adresini gizler.
 
-   ![Office 365 Yönetim Merkezi'nin eklenen etki alanı adı doğrulanırken ekran görüntüsü](./media/domain-custom-verify.png)
+   ![Ekran görüntüsü Office 365 Yönetim Merkezi - etki alanını doğrulama](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > TXT kaydı doğrulama ayrıntıları için bkz. [Office 365 için DNS barındırma sağlayıcılarında DNS kayıtları oluşturma](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -130,4 +130,4 @@ Bu hızlı başlangıçta Intune’u bir test ortamında denemek için ücretsiz
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Kullanıcı oluşturun ve ona bir lisans atayın](quickstart-create-user.md)
+> [Hızlı Başlangıç: Bir kullanıcı oluşturun ve ona bir lisans atayın](quickstart-create-user.md)

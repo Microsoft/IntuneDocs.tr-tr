@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune’a bir iOS iş kolu uygulaması ekleme
 titlesuffix: ''
-description: Bir iOS iş kolu uygulamasını Microsoft Intune’a eklemeyi öğrenin.
+description: Bir iOS iş kolu (LOB) uygulaması Microsoft Intune ekleme hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7e3f00f129b5b344fc357be83c4d66f220035bd0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e5daa24261d2a26e289649ec6f964c5de55f0da0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180723"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642736"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir iOS iş kolu uygulaması ekleme
 
@@ -32,41 +32,41 @@ Bir iOS iş kolu uygulamasını Microsoft Intune’a eklemek için bu makaledeki
 >[!NOTE]
 >iOS kullanıcıları, Stocks ve Harita gibi bazı yerleşik iOS uygulamalarını kaldırabilir. Ancak siz bu uygulamaları yeniden dağıtmak için Intune’u kullanamazsınız. Kullanıcılar bu uygulamaları silerse uygulama mağazasına gidip el ile yeniden indirmeleri gerekir.
 
-## <a name="step-1-specify-the-software-setup-file"></a>1. Adım: Yazılım kurulum dosyasını belirtme
+## <a name="step-1-specify-the-software-setup-file"></a>1. adım: Yazılım Kurulum dosyasını belirtme
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
 6. **Uygulama Ekle** bölmesinde **İş kolu uygulaması**’nı seçin.
 
-## <a name="step-2-configure-the-app-package-file"></a>2. Adım: Uygulama paketi dosyasını yapılandırma
+## <a name="step-2-configure-the-app-package-file"></a>2. adım: Uygulama paketi dosyasını yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
 2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra **.ipa** uzantısına sahip bir iOS yükleme dosyası seçin.
 3. İşiniz bittiğinde **Tamam**’a tıklayın.
 
 
-## <a name="step-3-configure-app-information"></a>3. Adım: Uygulama bilgilerini yapılandırma
+## <a name="step-3-configure-app-information"></a>3. adım: Uygulama bilgilerini yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
 2. **Uygulama bilgileri** bölmesinde uygulamanızın ayrıntılarını ekleyin. Seçtiğiniz uygulamaya bağlı olarak bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
-    - **Ad**: Uygulamanın Şirket Portalı’nda görünen adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri Şirket Portalı’nda kullanıcılara görüntülenir.
+    - **Ad**: Şirket portalı'nda göründüğü gibi bir uygulama adı girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri Şirket Portalı’nda kullanıcılara görüntülenir.
     - **Açıklama**: Uygulama için bir açıklama girin. Açıklama, Şirket Portalı’nda görünür.
-    - **Yayımcı**: Uygulama yayıncısının adını girin.
-    - **En Düşük İşletim Sistemi**: Listeden uygulamanın yüklenebileceği en düşük işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
-    - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
-    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
+    - **Yayımcı**: Uygulama yayımcısının adını girin.
+    - **En düşük işletim sistemi**: Listeden uygulamanın yüklenebilmesi için en düşük işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
+    - **Kategori**: Bir veya daha fazla yerleşik uygulama kategorilerinden birini seçin veya oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
+    - **Bunu şirket Portalı'nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
+    - **Bilgi URL'si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
+    - **Gizlilik URL'si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
-    - **Sahip**: İsteğe bağlı olarak uygulama sahibinin adını girin. Örneğin **İK departmanı**.
-    - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Sahibi**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin. Örneğin **İK departmanı**.
+    - **Notları**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na göz atarken uygulamayla birlikte görüntülenir.
 3. İşiniz bittiğinde **Tamam**’a tıklayın.
 
-## <a name="step-4-finish-up"></a>4. Adım: Bitirme
+## <a name="step-4-finish-up"></a>4. adım: Bitirme
 
 1. **Uygulama ekle** bölmesinde uygulama ayrıntılarınızı doğrulayın.
 2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
@@ -76,7 +76,7 @@ Oluşturduğunuz uygulama artık uygulamalar listesinde görünür. Bu listede, 
 > [!NOTE]
 > iOS LOB uygulamaları için profiller sağlanırken, bunların süresi dolmadan önce 30 günlük bir bildirim süresi vardır.
 
-## <a name="step-5-update-a-line-of-business-app"></a>5. Adım: Bir iş kolu uygulamasını güncelleştirme
+## <a name="step-5-update-a-line-of-business-app"></a>5. adım: Bir satır iş kolu uygulamasını güncelleştirme
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
