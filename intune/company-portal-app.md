@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185432"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738027"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -46,7 +46,7 @@ Yıldız işareti (*) ile işaretlenmiş alanlar zorunludur.
 | Alan adı | Uzunluk üst sınırı | Daha fazla bilgi |
 |---|---|---|
 |**Şirket adı**| 40 | Bu ad Şirket Portalı'nın başlığı olarak görüntülenir ve Intune kullanıcı deneyiminin her yerinde metin olarak gösterilir. |
-| **Gizlilik bildirimi URL'si** |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz.   `<https://www.contoso.com>` biçiminde geçerli bir URL girmeniz gerekir. |
+| **Gizlilik bildirimi URL'si** |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. `<https://www.contoso.com>` biçiminde geçerli bir URL girmeniz gerekir. |
 
 ## <a name="support-information"></a>Destek bilgileri      
 Intune ile ilgili sorular için çalışan bir kişi sağlamak için şirketinizin destek bilgilerini girin.          
@@ -72,7 +72,7 @@ Intune ile ilgili sorular için çalışan bir kişi sağlamak için şirketiniz
 |**Standart renklerden birini seçin veya altı basamaklı onaltılık kod girin**| Seçin **standart** görsel olarak bir renk seçin. Onaltılık kod değerine göre belirli bir renk belirtmek için **Özel**’i seçin.|
 |**Tema rengi seçin**| Şirket Portalı’na uygulamak için bir tema rengi seçin. Standart renk seçebilir veya belirli bir onaltılık kodu girebilirsiniz. |
 |**Görüntüleme**| Hangisinin görüntüleneceğini seçin: **Şirket logosu ve adı**, **Yalnızca şirket logosu** veya **Yalnızca şirket adı**. |
-|**Şirket logonuzu karşıya yükleyin**|Size ait Şirket Portalı’nda görüntülenmek üzere şirket logonuzu yükleyebilirsiniz. En yüksek kontrast düzeyini sağlamak için metin renginin otomatik olarak seçildiğini unutmayın. En iyi görünümü elde etmek için saydam bir arka plana sahip bir logo yükleyin.<p><ul><li>En büyük görüntü boyutu: 400 piksel x 400 piksel</li><li>En büyük dosya boyutu: 750 KB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
+|**Şirket logonuzu karşıya yükleyin**|Size ait Şirket Portalı’nda görüntülenmek üzere şirket logonuzu yükleyebilirsiniz. En yüksek kontrast düzeyini sağlamak için metin renginin otomatik olarak seçildiğini unutmayın. En iyi görünümü elde etmek için saydam bir arka plana sahip bir logo yükleyin.<p><ul><li>En yüksek görüntü boyutu: 400 piksel ölçülerinden küçük x 400px</li><li>En büyük dosya boyutu: 750KB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
 
 Logo yüklendikten sonra önizleme alanında tema rengiyle logo görüntülenir. Şirketinizin adını görüntülemeyi seçerseniz bu ad, Şirket Portalı’nda siyah veya beyaz renkte görüntülenir. Tema renginizle en yüksek kontrastı sağlayan renk otomatik olarak seçilir. Ekrandaki önizleme alanında şirketinizin adı görüntülenmez. 
 
@@ -81,7 +81,7 @@ Beyaz veya açık renk arka planlarda en iyi görünecek logoyu seçin.
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
-|**Logonuzu karşıya yükleyin**| Bu seçeneğin kullanılabilmesi için şirket logosunu göstermeyi seçmiş olmalısınız. En iyi görünümü elde etmek için saydam bir arka plana sahip bir logo yükleyin.<p><ul><li>En büyük görüntü boyutu: 400 piksel x 400 piksel</li><li>En büyük dosya boyutu: 750 KB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
+|**Logonuzu karşıya yükleyin**| Bu seçeneğin kullanılabilmesi için şirket logosunu göstermeyi seçmiş olmalısınız. En iyi görünümü elde etmek için saydam bir arka plana sahip bir logo yükleyin.<p><ul><li>En yüksek görüntü boyutu: 400 piksel ölçülerinden küçük x 400px</li><li>En büyük dosya boyutu: 750KB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>Şirket Portalı için marka imajı
 
@@ -89,7 +89,7 @@ Beyaz veya açık renk arka planlarda en iyi görünecek logoyu seçin.
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
-|**Marka imajınızı karşıya yükleyin**| Bu seçenek, Şirket Portalı uygulamasındaki kullanıcı profili sayfasında bir arka plan görüntüsü kullanmanıza imkan verir.<p>*Not*: görüntüyü farklı platformları için farklı şekilde görüntülenebilir.<p><ul><li>Önerilen imaj genişliği: 1125 pikselden büyük olması önerilir ancak 640 pikselden az olmamalıdır</li><li>En yüksek görüntü boyutu: 1,3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
+|**Marka imajınızı karşıya yükleyin**| Bu seçenek, Şirket Portalı uygulamasındaki kullanıcı profili sayfasında bir arka plan görüntüsü kullanmanıza imkan verir.<p>*Not*: Görüntü, farklı platformları için farklı görüntülenebilir.<p><ul><li>Önerilen görüntü genişliği: Ancak 640 piksel en az bir 1125px büyüktür</li><li>En yüksek görüntü boyutu: 1.3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
 
 Doğru bir marka imajı sayesinde şirket markanızı güçlü bir şekilde tanıtarak Şirket Portalı’nda kullanıcı güvenini artırabilirsiniz. Aşağıda, Şirket Portalı için imaj elde etme, seçme ve iyileştirme hakkında bazı ipuçları bulabilirsiniz. 
 
@@ -122,8 +122,8 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 | Alan | Açıklama | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
 | Gezinti menüsü | Gezinti | Alt+M |
-|  | Giriş | Alt+H |
-|  | Tüm uygulamalar | Alt+A |
+|  | Ana Sayfası | Alt+H |
+|  | Tüm uygulamalar | Alt + A |
 |  | Yüklenen uygulamalar | Alt+I |
 |  | Geri bildirim gönder | Alt+F |
 |  | Profilim | Alt+U |
@@ -134,11 +134,11 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 | Cihaz ayrıntıları | Yeniden Adlandır | F2 |
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
-| Uygulama ayrıntıları | Yükle | Ctrl+I |
+| Uygulama ayrıntıları | Yükleme | Ctrl+I |
 
 Son kullanıcılar Windows Şirket portalı uygulamasında kullanılabilir kısayolları görmeniz mümkün olacaktır.
 
-![Windows Şirket portalı uygulamasında kullanılabilir kısayolları ekran görüntüsü](media/company-portal-app/company-portal-app-01.png)
+![Windows Şirket portalı'nda kullanılabilir kısayolları ekran görüntüsü](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
