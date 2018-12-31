@@ -1,7 +1,7 @@
 ---
 title: REST istemcisi ile Veri Ambarı API’sinden veri alma
 titlesuffix: Microsoft Intune
-description: Bir RESTful API’si kullanarak Intune Veri Ambarı’ndan veri alın.
+description: Bu konu, Microsoft Intune veri bir RESTful API'si kullanarak ambarı API'sinden veri almak açıklar.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e5040626a27f50fae4df2ec2472d167269a282e4
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247280"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642889"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
