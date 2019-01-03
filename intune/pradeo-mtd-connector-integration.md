@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
-ms.openlocfilehash: d7b88b73c260a6a84fdb835069de23c52775929a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 65b480b60b195ab012743f9a4006fb69aa929dbb
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816812"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Intune ile Pradeo’yu tümleştirme
 
@@ -67,7 +67,7 @@ Pradeo uygulama yetkilendirme işlemi şu şekildedir:
 
 4.  **EMM (Enterprise Mobility Yönetimi - Intune)** penceresindeki **1. Adım** altında bulunan **Pradeo Bağlayıcısı** düğmesini seçin. 
 
-    ![Pradeo EMM Intune penceresi](./media/pradeo_setup.png)
+    ![Pradeo EMM Intune penceresinin ekran görüntüsü](./media/pradeo_setup.png)
 
 5. Microsoft Intune bağlantı penceresinde Intune kimlik bilgilerinizi girin.
 

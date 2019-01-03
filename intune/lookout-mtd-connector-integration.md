@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune ile Lookout tümleştirmenizi ayarlama
-titlesuffix: ''
+title: Microsoft Intune ile Lookout tümleştirmenizi ayarlama | Microsoft Intune
 description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Lookout Mobile Threat Defense’i Intune ile tümleştirme hakkında bilgi edinin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 84bc12d568fce0f5cd6e460595eedf0af0d6296e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816880"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 
@@ -29,7 +28,7 @@ Lookout Mobile Threat Defence aboneliğini ayarlamak için gerekli adımlar aşa
 
 | #        |Adım  |
 | ------------- |:-------------|
-| 1 | [Azure AD bilgileri toplama](#collect-azure-ad-information) |
+| 1. | [Azure AD bilgileri toplama](#collect-azure-ad-information) |
 | 2 | [Aboneliğinizi yapılandırma](#configure-your-subscription) |
 | 3 | [Kayıt gruplarını yapılandırma](#configure-enrollment-groups) |
 | 4 | [Durum eşitlemeyi yapılandırma](#configure-state-sync) |
@@ -56,8 +55,8 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 2. Aboneliğinizin adını seçtiğinizde sağlanan URL abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) bakın.
 
 3. Azure AD Grup Kimliğinizi bulun. Lookout konsolu 2 erişim düzeyini destekler:  
-   * **Tam Erişim:** Azure AD yöneticisi, Tam Erişimi olan kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak Sınırlı Erişimi olacak kullanıcılar için bir grup oluşturur.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
-   * **Kısıtlı Erişim:** Bu gruptaki kullanıcılar, Lookout konsolundaki yapılandırma ve kayıtla ilgili modüllerin çoğuna erişemez. Konsolun **Güvenlik İlkesi** modülü için ise salt okunur erişimine sahip olurlar.  
+   * **Tam erişim:** Azure AD Yöneticisi tam erişime sahip kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak sınırlı erişimi olacak kullanıcılar için bir grup oluşturun.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
+   * **Kısıtlı erişim:** Bu gruptaki kullanıcılar birkaç yapılandırma ve kayıtla ilgili modüllerin çoğuna erişebilir ve salt okunur erişiminiz olmayacak **Güvenlik İlkesi** Lookout konsolunun modülü.  
 
      > [!TIP] 
      > İzinler hakkında daha fazla ayrıntı için Lookout Web sitesindeki [bu makaleyi](https://personal.support.lookout.com/hc/articles/114094105653) okuyun.
@@ -77,11 +76,11 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 
 3. [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünde, **Bağlayıcılar** sekmesine tıklayın ve **Intune**’u seçin.
 
-   ![Lookout MTP konsolunu bağlayıcılar sekmesi açık ve Intune seçeneği vurgulanmış olarak gösteren ekran görüntüsü](./media/lookout_mtp_setup-intune-connector.png)
+   ![Lookout MTP konsolunu bağlayıcılar sekmesi Intune seçeneğini görüntüsü](./media/lookout_mtp_setup-intune-connector.png)
 
 4. **Bağlayıcılar** > **Bağlantı Ayarları**’na gidin ve **Sinyal Sıklığı**’nı dakika cinsinden belirtin.
 
-   ![bağlantı ayarları sekmesinin sinyal sıklığını gösterecek şekilde yapılandırılmış ekran görüntüsü](./media/lookout-mtp-connection-settings.png)
+   ![Bağlantı ayarları sekmesinin sinyal sıklığını yapılandırılmış ile görüntüsü](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Kayıt gruplarını yapılandırma
 1. En iyi uygulama olarak, Lookout tümleştirmesini sınamak için [Azure AD yönetim portalında](https://manage.windowsazure.com) az sayıda kullanıcı içeren bir Azure AD güvenlik grubu oluşturun.
@@ -95,10 +94,10 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 
     >[!IMPORTANT]
     > **Görünen Ad**, Azure portalındaki güvenlik grubunun **Özellikler** sayfasında gösterildiği gibi büyük/küçük harfe duyarlıdır. Aşağıdaki resimde gösterildiği gibi, başlığı tamamen küçük harflerden oluşurken, güvenlik grubunun **Görünen Ad**’ı küçük ve büyük harflerin kombinasyonundan oluşur. Lookout konsolunda **Görünen Ad** harflerini güvenlik grubu için eşleştirin.
-    >![Azure portalı, Azure Active Directory hizmeti, özellikler sayfasının ekran görüntüsü](./media/aad-group-display-name.png)
+    >![Azure portalı, Azure Active Directory Hizmeti, Özellikler sayfasının görüntüsü](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >Yeni cihazları denetleme aralığı olarak varsayılan değeri (5 dakika) kullanmak en iyi yöntemdir. Geçerli sınırlamalar; **Lookout grup görünen adlarını doğrulayamıyor:** Azure portalındaki **GÖRÜNEN AD** alanının Azure AD güvenlik grubu ile tam olarak eşleştiğinden emin olun. **İç içe grup oluşturma desteklenmiyor:** Lookout'taki Azure AD güvenlik grupları yalnızca kullanıcı içermelidir. Diğer grupları içeremezler.
+    >Yeni cihazları denetleme aralığı olarak varsayılan değeri (5 dakika) kullanmak en iyi yöntemdir. Geçerli sınırlamalar **Lookout, grupların görünen adlarını doğrulayamıyor:** Azure portalındaki **GÖRÜNEN AD** alanının Azure AD güvenlik grubuyla eşleştiğinden emin olun. **İç içe yerleştirilmiş gruplar oluşturmak desteklenmez:**  Lookout’ta kullanılan Azure AD güvenlik gruplarının yalnızca kullanıcı içermesi gerekir. Diğer grupları içeremezler.
 
 3.  Bir grup eklendikten sonra, kullanıcı Lookout for Work uygulamasını desteklenen cihazında sonraki açışında cihaz Lookout’ta etkinleştirilir.
 
@@ -115,7 +114,7 @@ Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki 
 ## <a name="configure-enrollment-settings"></a>Kayıt ayarlarını yapılandırma
 **Sistem** modülünde, **Bağlayıcılar** sayfasında, bir cihazın bağlantısı kesilmiş olarak kabul edilmesinden önce geçmesi gereken gün sayısını belirtin.  Bağlantısı kesilmiş cihazlar uyumsuz olarak kabul edilir ve Intune koşullu erişim ilkelerine bağlı olarak şirket uygulamalarınıza erişimleri engellenir. 1 ila 90 gün arasında bir değer belirtebilirsiniz.
 
-![Lookout kayıt ayarları](./media/lookout-console-enrollment-settings.png)
+![Lookout kayıt ayarları sistem Modülü](./media/lookout-console-enrollment-settings.png)
 
 ## <a name="configure-email-notifications"></a>E-posta bildirimlerini yapılandırma
 Tehditler hakkında e-posta uyarıları almak istiyorsanız bildirimlerin gönderileceği kullanıcı hesabını kullanarak [Lookout konsolunda](https://aad.lookout.com) oturum açın. **Sistem** modülünün **Tercihler** sekmesinde tehdit düzeylerinin bildirimlerini seçin ve bunları **AÇIK** olarak ayarlayın. Yaptığınız değişiklikleri kaydedin.
@@ -123,7 +122,7 @@ Tehditler hakkında e-posta uyarıları almak istiyorsanız bildirimlerin gönde
 ![kullanıcı hesabının görüntülendiği tercihler sayfasının ekran görüntüsü](./media/lookout-mtp-email-notifications.png) Artık e-posta bildirimleri almak istemiyorsanız bildirimleri **KAPALI** olarak ayarlayın ve değişikliklerinizi kaydedin.
 
 ### <a name="configure-threat-classification"></a>Tehdit sınıflandırmasını yapılandırma
-Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflandırır. [Lookout tehdit sınıflandırmaları](http://personal.support.lookout.com/hc/articles/114094130693) ile ilişkilendirilen varsayılan risk düzeyleri bulunur. Bunlar, şirket gereksinimlerinize uyacak şekilde herhangi bir zamanda değiştirilebilir.
+Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflandırır. [Lookout tehdit sınıflandırmaları](https://personal.support.lookout.com/hc/articles/114094130693) ile ilişkilendirilen varsayılan risk düzeyleri bulunur. Bunlar, şirket gereksinimlerinize uyacak şekilde herhangi bir zamanda değiştirilebilir.
 
 ![tehdit ve sınıflandırmaları gösteren ilke sayfasının ekran görüntüsü](./media/lookout-mtp-threat-classification.png)
 

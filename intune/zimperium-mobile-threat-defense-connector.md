@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817254"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune ile Zimperium Mobile Threat Defense bağlayıcısı
 
 Microsoft Intune ile tümleşen Mobile Threat Defense (MTD) çözümü olan Zimperium tarafından yapılan risk değerlendirmesine göre koşullu erişim kullanarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Zimperium uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-Koşullu erişim ilkelerini, Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Zimperium risk değerlendirmesine göre yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumlu olmayan cihazların şirket kaynaklarına erişmesine izin vermek veya erişimini engellemek için bu ilkeleri kullanabilirsiniz.
+Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Zimperium risk değerlendirmesine dayalı koşullu erişim ilkelerini yapılandırabilirsiniz. Risk değerlendirmesi ilke izin verebilir veya uyumlu olmayan cihazların algılanan tehditlere dayalı olarak şirket kaynaklarına erişmesini engelleyin.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune ve Zimperium şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
@@ -51,11 +51,11 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
-![Kötü amaçlı uygulamalar algılandı](./media/Maliciousapps_blocked_Zimperium.png)
+![Kötü amaçlı uygulamalar algılandı kavramsal resmi](./media/Maliciousapps_blocked_Zimperium.png)
 
 **Düzeltme ile erişim izni verildi:**
 
-![Kötü amaçlı uygulamalar algılandı erişim izni verildi](./media/maliciousapps_unblocked_Zimperium.png)
+![Kavramsal resmi düzeltme sonra erişim izni verildi](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 
@@ -95,7 +95,7 @@ Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı ol
 
 -   Zimperium Mobile Threat Defense aboneliği
 
-    -   Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips) daha fazla bilgi için.
+    -   Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -1,5 +1,6 @@
 ---
 title: Intune ile uygulama tabanlı koşullu erişim
+titlesuffix: Microsoft Intune
 description: Intune ile uygulama tabanlı koşullu erişimin nasıl çalıştığı hakkında bilgi edinin.
 keywords: ''
 author: brenduns
@@ -15,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4f52d9dc39245a374fa7a6a9705a43c7cea95a35
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 30f5b902619c84e6d1d193c252e76475d2e54e82
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816746"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim
 

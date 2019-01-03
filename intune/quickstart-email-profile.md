@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3da4208b3036b0252e2e5bd26d8361d04642183a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817050"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Hızlı Başlangıç: iOS için bir e-posta cihaz profili oluşturma
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Hızlı Başlangıç: İOS için bir e-posta cihaz profili oluşturma
 
 Bu hızlı başlangıçta iOS cihazları için e-posta cihaz profili oluşturmayı göreceksiniz. Bu profil, iOS cihazındaki yerleşik e-posta uygulamasının şirket e-postasına bağlanması için gerekli olan ayarları belirler. E-posta cihaz profilleri cihaz ayarlarını standartlaştırır ve son kullanıcıların kişisel cihazlarında şirket e-postasına bir kurulum yapmaları gerekmeden erişmelerini sağlar. E-postanızın güvenliğini daha da artırmak için cihazların uyumlu olup olmadığını belirlemek için bir e-posta profili kullanabilir, ondan sonra da e-postaya yalnızca uyumlu cihazların erişmesine izin vermek için koşullu erişim ayarlayabilirsiniz. E-posta profilleri hakkında bilgi için bkz. [Microsoft Intune'da e-posta ayarlarını yapılandırma](email-settings-configure.md)
 
@@ -45,16 +45,16 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
    - **Platform** olarak **iOS**’u seçin.
    - **Profil türü** için **E-posta**'yı seçin.
     
-     ![iOS için e-posta profili oluşturma](media/quickstart-email-profile/ios-email-profile-name.png)
+     ![İOS ile kullanmak için bir e-posta profili oluşturma](media/quickstart-email-profile/ios-email-profile-name.png)
 
 5. **Ayarlar**'ı seçin ve aşağıdaki ayarları girin (diğer ayarlarda varsayılanları bırakın):
-   - **E-posta sunucusu**: Bu hızlı başlangıç için **outlook.office365.com** girin. Bu ayar, iOS mail uygulamasında e-postaya bağlanmak için kullanılacak e-posta sunucusunun Exchange konumunu (URL) belirtir.
-   - **Hesap adı**: girin **şirket e-posta**.
-   - **AAD'den kullanıcı adı özniteliği**: Bu ad, Intune'un Azure Active Directory'den (Azure AD) aldığı özniteliktir. Intune, bu profilin kullanıcı adını bu adı kullanarak dinamik olarak oluşturur. Bu hızlı başlangıçta **Kullanıcı Asıl Adı**'nın profilin kullanıcı adı olarak kullanılmasını istediğimizi (örneğin user1@contoso.com) varsayacağız.
-   - **AAD'den e-posta adresi özniteliği**: Bu ayar Exchange'de oturum açmak için kullanılacak Azure AD e-posta adresidir. Bu hızlı başlangıçta **Kullanıcı Asıl Adı**'nı seçin.
-   - **Kimlik doğrulama yöntemi**: Bu hızlı başlangıçta **Kullanıcı adı ve parola**'yı seçin. (Önceden Intune için bir sertifika ayarladıysanız **Sertifika**'yı da seçebilirsiniz.)
+   - **E-posta sunucusu**: Bu hızlı başlangıçta girin **outlook.office365.com**. Bu ayar, iOS mail uygulamasında e-postaya bağlanmak için kullanılacak e-posta sunucusunun Exchange konumunu (URL) belirtir.
+   - **Hesap adı**: Girin **şirket e-posta**.
+   - **Aad'den kullanıcı adı özniteliği**: Bu ad, Azure Active Directory'den (Azure AD) Intune alır özniteliğidir. Intune, bu profilin kullanıcı adını bu adı kullanarak dinamik olarak oluşturur. Bu hızlı başlangıçta **Kullanıcı Asıl Adı**'nın profilin kullanıcı adı olarak kullanılmasını istediğimizi (örneğin user1@contoso.com) varsayacağız.
+   - **Aad'den e-posta adresi özniteliği**: Bu ayar, Exchange'de oturum açmak için kullanılan Azure ad e-posta adresidir. Bu hızlı başlangıçta **Kullanıcı Asıl Adı**'nı seçin.
+   - **Kimlik doğrulama yöntemi**: Bu hızlı başlangıçta seçin **kullanıcı adı ve parola**. (Önceden Intune için bir sertifika ayarladıysanız **Sertifika**'yı da seçebilirsiniz.)
     
-     ![iOS için e-posta profili oluşturma](media/quickstart-email-profile/ios-email-profile.png)
+     ![İOS kullanmak için bir e-posta profili oluşturma](media/quickstart-email-profile/ios-email-profile.png)
 
 6. **Tamam**’ı seçin.
 7. **Oluştur**’u seçin. Yeni profil, iOS cihazlarına ve kullanıcılarına nasıl atandığını izleyebilmeniz için görüntülenen panodaki profil listesinde görünür.
@@ -73,4 +73,4 @@ Oluşturulan profili ek öğreticiler veya testler için kullanmayı düşünmü
 Bu hızlı başlangıçta iOS cihazları için bir e-posta profili oluşturdunuz. Artık bu profili, profile uymayan tüm iOS cihazlarını uyumsuz olarak işaretleyen bir uyumluluk ilkesi oluşturarak bir iOS cihazının uyumlu olup olmadığını belirlemek için kullanabilirsiniz. Daha fazla koruma için uyumlu olmayan iOS cihazlarının e-posta erişimini engelleyen bir koşullu erişim ilkesi oluşturabilirsiniz. Cihaz uyumluluk ilkeleri hakkında daha fazla bilgi için bkz. [Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
-> [Öğretici: Yönetilen cihazlarda Exchange Online e-postalarını koruma](tutorial-protect-email-on-enrolled-devices.md)
+> [Öğretici: Yönetilen cihazlarda Exchange Online e-postaları koruma](tutorial-protect-email-on-enrolled-devices.md)

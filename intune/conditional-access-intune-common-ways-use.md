@@ -1,6 +1,5 @@
 ---
-title: Koşullu erişim senaryoları
-titlesuffix: Microsoft Intune
+title: Koşullu erişim senaryoları | Microsoft Intune
 description: Intune koşullu erişimin cihaz tabanlı ve uygulama tabanlı koşullu erişim için yaygın olarak nasıl kullanıldığını öğrenin.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817169"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?
 
@@ -133,11 +132,11 @@ Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetene
 
 #### <a name="corporate-owned"></a>Şirkete ait olanlar
 
--   **Şirket içi AD etki alanına katılanlar:** Bu seçenek kendi bilgisayarlarını zaten AD grup ilkeleri ve/veya System Center Configuration Manager aracılığıyla yönettikleri için makul düzeyde kendinden emin olan kuruluşlar tarafından yaygın olarak kullanılır.
+-   **Şirket içi AD etki alanına katılmış:** Bu seçenek, makul bir şekilde nasıl Bunlar zaten AD grup ilkeleri aracılığıyla, bilgisayarlarını ve/veya System Center Configuration Manager yönetiyor olsanız ile deneyimliyseniz kuruluşlar tarafından yaygın olarak kullanılır.
 
--   **Azure AD etki alanına katılan ve Intune yönetiminde olanlar:** Bu senaryo, tipik olarak cihazların kurumsal ağa ender olarak bağlandıkları Kendi Cihazını Seç (CYOD) ve dolaşım halinde dizüstü bilgisayar senaryolarına yöneliktir. Cihaz Azure AD'ye katılır ve Intune'a kaydolur; bu da şirket içi AD'ye ve etki alanı denetleyicisine olan tüm bağımlılıkları ortadan kaldırır. Bu seçenek, kurumsal kaynaklara erişirken bir koşullu erişim ölçütü olarak kullanılabilir.
+-   **Azure AD etki alanına katılan ve Intune Yönetimi:** Bu senaryo genellikle kendi cihazını Seç (CYOD) ve bu cihazların şirket ağına nadiren burada bağlı Dolaşım halinde dizüstü bilgisayar senaryolarına yöneliktir. Cihaz Azure AD'ye katılır ve Intune'a kaydolur; bu da şirket içi AD'ye ve etki alanı denetleyicisine olan tüm bağımlılıkları ortadan kaldırır. Bu seçenek, kurumsal kaynaklara erişirken bir koşullu erişim ölçütü olarak kullanılabilir.
 
--   **AD etki alanına katılmış ve System Center Configuration Manager:** System Center Configuration Manager, güncel dal itibariyle, etki alanına katılmış bir bilgisayar olmanın yanı sıra belirli uyumluluk ölçütlerini değerlendirebilen koşullu erişim yetenekleri sağlar:
+-   **AD etki alanına katılmış ve System Center Configuration Manager:** Güncel dal itibariyle, System Center Configuration Manager etki alanına katılmış bir bilgisayar olmanın yanı sıra belirli uyumluluk ölçütlerini değerlendirebilirsiniz koşullu erişim yetenekleri sağlar:
 
     -   Bilgisayar şifrelenmiş mi?
 
@@ -147,7 +146,7 @@ Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetene
 
 #### <a name="bring-your-own-device-byod"></a>Kendi Cihazını Getir (KCG)
 
--   **Çalışma alanına katılma ve Intune yönetimi:** Burada kullanıcı kişisel cihazlarına ve kurumsal kaynak ve hizmetlere erişebilir. Koşullu erişim ölçütlerini değerlendirmenin bir başka seçeneği olan cihaz düzeyinde ilkeler almak için, Çalışma alanına katılmayı ve cihazları Intune'a kaydetmeyi kullanabilirsiniz.
+-   **Çalışma alanına katılma ve Intune Yönetimi:** Burada kullanıcı kişisel cihazlarından şirket kaynaklarına ve hizmetlerine erişmek için katılabilirsiniz. Koşullu erişim ölçütlerini değerlendirmenin bir başka seçeneği olan cihaz düzeyinde ilkeler almak için, Çalışma alanına katılmayı ve cihazları Intune'a kaydetmeyi kullanabilirsiniz.
 
 ## <a name="app-based-conditional-access"></a>Uygulamaya bağlı koşullu erişim
 

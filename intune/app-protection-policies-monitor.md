@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 765fae6f0e860935f5ceccadfdf1d9c3fe45d60e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816849"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,22 +41,22 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 
 ## <a name="summary-view"></a>Özet görünümü
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükünde özet görünümü görmek için **İzle** > **Uygulama koruma durumu**’nu seçin:
 
 ![Intune mobil uygulama yönetimi bölmesinde Özet kutucuğu](./media/app-protection-user-status-summary.png)
 
--   **Kullanıcılar**: Şirketinizde, iş bağlamında bir ilkeyle ilişkili uygulama kullanan kullanıcıların toplam sayısı.
+-   **Kullanıcılar**: Şirketinizin, iş bağlamında bir ilkeyle ilişkili olan bir uygulama kullanan kullanıcıların toplam sayısı.
 
--   **İLKEYLE YÖNETİLEN**: Kendisine iş bağlamında bir ilke atanmış bir uygulama kullanan kullanıcı sayısı.
+-   **İLKE TARAFINDAN YÖNETİLEN**: Bir iş bağlamında atanmış bir ilkeye sahip bir uygulama kullanmış olan kullanıcıların sayısı.
 
--   **İLKE YOK**: İş bağlamında hiçbir ilke tarafından hedeflenmeyen bir uygulamayı kullanan kullanıcı sayısı. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
+-   **İLKE YOK**: İş bağlamında hiçbir ilke tarafından hedeflenmeyen bir uygulamayı kullanan kullanıcıların sayısı. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
     > [!NOTE]
     > Platform başına birden çok ilkeniz varsa bir kullanıcıya atanmış en az bir ilke olduğunda bu kullanıcının ilke ile yönetildiği kabul edilir.
 
-- **Bayrak eklenen kullanıcılar:** Sorun yaşayan kullanıcıların sayısı. Şu anda yalnızca jailbreak uygulanmış cihazlara sahip kullanıcılar, **Bayrak eklenen kullanıcılar** kapsamında raporlanır.
+- **Bayrak eklenen kullanıcılar**: Sorun yaşayan kullanıcıların sayısı. Şu anda yalnızca jailbreak uygulanmış cihazlara sahip kullanıcılar, **Bayrak eklenen kullanıcılar** kapsamında raporlanır.
 
 
 ## <a name="detailed-view"></a>Ayrıntılı görünüm
@@ -70,9 +70,9 @@ Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetl
 
 - Durum:
 
-  - **Giriş yaptı:** İlke kullanıcıya dağıtılmış ve uygulama en az bir kez iş bağlamında kullanılmıştır.
+  - **İade**: İlkenin kullanıcıya dağıtıldığını ve uygulamanın iş bağlamında en az bir kez kullanıldı.
 
-  - **Giriş yapmadı**: İlke kullanıcıya dağıtılmış, ancak o zaman beri uygulamanın iş bağlamında kullanılmamıştır.
+  - **İade değil**: İlkenin kullanıcıya dağıtıldığını, ancak uygulamanın o zamandan bu yana iş bağlamında kullanılmamış.
 
 >[!NOTE]
 > Aradığınız kullanıcıya MAM ilkesi dağıtılmamışsa, kullanıcının herhangi bir MAM ilkesi tarafından hedeflenmediğini bildiren bir ileti görürsünüz.
@@ -81,11 +81,11 @@ Kullanıcının raporlamasını görmek için şu adımları izleyin:
 
 1.  Kullanıcı seçmek için **Özet** kutucuğunu işaretleyin.
 
-    ![Intune mobil uygulama yönetiminde Özet kutucuğunu vurgulayan ekran görüntüsü, Ayarlar dikey penceresi](./media/MAM-reporting-6.png)
+    ![Intune mobil uygulama yönetimi Özet kutucuğu ekran görüntüsü](./media/MAM-reporting-6.png)
 
 2. Açılan **Uygulama raporlama** bölmesinde bir Azure Active Directory kullanıcısını aramak için **Kullanıcı seçin** öğesini belirleyin.
 
-    ![Uygulama raporlama bölmesinde Seçili kullanıcı seçeneğinin vurgulandığı ekran görüntüsü](./media/MAM-reporting-2.png)
+    ![Uygulama raporlama bölmesinde seçili kullanıcı seçeneğinin ekran görüntüsü](./media/MAM-reporting-2.png)
 
 3. Listeden kullanıcı seçin. Bu kullanıcı için uyumluluk durumuna ilişkin ayrıntıları görebilirsiniz.
 
@@ -98,28 +98,28 @@ Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumu
 
 ![Ayarlar bölmesinde kullanılabilir 2 raporun vurgulandığı ekran görüntüsü](./media/MAM-reporting-7.png)
 
--   **Uygulama koruması kullanıcı raporu:** Yukarıdaki Ayrıntılı görünüm bölümünde gösterilen **Kullanıcı durumu** raporunda bulabileceğiniz bilgileri özetler.
+-   **Uygulama Koruması kullanıcı raporu:** Bulabileceğiniz bilgileri özetler **kullanıcı durumu** yukarıdaki ayrıntılı görünüm bölümünde rapor.
 
--   **Uygulama koruması uygulama raporu:** Yöneticilerin, raporu oluşturmadan önce seçebileceği iki farklı uygulama koruma durumu sağlar. Durumlar korumalı veya korumasız olabilir.
+-   **Uygulama koruması uygulama raporu:** Bu, yöneticilerin, raporu oluşturmadan önce seçebileceği iki farklı uygulama koruma durumu sağlar. Durumlar korumalı veya korumasız olabilir.
 
-    -   Yönetilen MAM etkinliği için kullanıcı durumu (Korumalı): Bu rapor, yönetilen her bir MAM uygulamasının etkinliğini kullanıcı temelinde özetler.
+    -   Yönetilen MAM etkinliği (korumalı) için kullanıcı durumu: Bu rapor, kullanıcı başına temelinde her yönetilen MAM uygulamasının etkinliğini özetler.
 
         -   Her bir kullanıcı için, MAM ilkeleri tarafından hedeflenen tüm uygulamaları göstermenin yanı sıra uygulamaların durumunu, MAM ilkelerine giriş yapmış veya MAM ilkesi ile hedeflenmiş ancak henüz giriş yapmamış olarak özetler.
 <br></br>
-    -   Yönetilmeyen MAM etkinliği için kullanıcı durumu (Korumasız): Bu rapor, MAM’in etkinleştirildiği yönetilmeyen uygulamaların etkinliğini kullanıcı temelinde özetler. Bu, aşağıdaki nedenlere bağlı olarak gerçekleşebilir:
+    -   Yönetilmeyen MAM etkinliği (korumasız) için kullanıcı durumu: Bu rapor, MAM özellikli uygulamalar, kullanıcı başına esasına göre şu anda yönetilmeyen etkinliğini özetler. Bu, aşağıdaki nedenlere bağlı olarak gerçekleşebilir:
 
         -   Bu uygulamalar, henüz bir MAM ilkesi tarafından hedeflenmemiş olan bir kullanıcı veya uygulama tarafından kullanılıyor olabilir.
 
         -   Tüm uygulamalar giriş yapmış, ancak henüz MAM ilkelerini almıyor olabilir.
 
-![Bir kullanıcının Uygulama raporlama dikey penceresini 3 kayıtlı uygulama için bir ayrıntı tablosuyla gösteren ekran görüntüsü](./media/MAM-reporting-4.png)
+![Bir kullanıcının uygulama raporlama dikey penceresinin ekran görüntüsü ayrıntıları 3 için uygulamalar](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tablo gruplandırma
 
 **Uygulama koruması kullanıcı raporu** verileri gösterilince, verileri aşağıdakilere göre toplayabilirsiniz:
 
-- **Doğrulama sonucu:** Veriler, uygulama koruması durumuna (başarısız, uyarı veya başarılı olabilir) göre gruplandırılmış olarak gösterilir.
-- **Uygulama adı:** Veriler, uygulamalara (asıl uygulama adı) göre başarısız, hata veya başarılı olarak gruplandırılmış olarak gösterilir.
+- **Doğrulama sonucu:** Veri başarısız, uyarı veya başarılı olabilir. uygulama koruma durumu tarafından gruplandırılmış olarak gösterilir.
+- **Uygulama adı:** Veri başarısız, uyarı veya başarılı olan uygulamalara (asıl uygulama adı) göre gruplandırılmış olarak gösterilir.
 
 ## <a name="export-app-protection-activities-to-csv"></a>Uygulama koruması etkinliklerini CSV’ye dışarı aktarma
 
@@ -129,7 +129,7 @@ Uygulama koruması raporu oluşturmak için bu adımları izleyin:
 
 1. Intune mobil uygulama yönetimi bölmesinde **Uygulama koruması raporu**’nu seçin.
 
-    ![Intune mobil uygulama yönetimi bölmesindeki Uygulama koruma indirme bağlantısını vurgulayan ekran görüntüsü](./media/app-protection-report-csv-2.png)
+    ![Uygulama koruma indirme bağlantısının ekran görüntüsü](./media/app-protection-report-csv-2.png)
 
 2. Raporunuzu kaydetmek için Evet’i seçin, ardından Farklı Kaydet’i seçin ve raporun kaydedilmesini istediğiniz klasörü belirtin.
 

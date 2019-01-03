@@ -1,23 +1,23 @@
 ---
-title: Microsoft Intune ile işletim sistemi sürümlerini yönetme
+title: Intune işletim sistemi sürümlerini yönetme | Microsoft Intune
 description: Microsoft Intune ile platformlar arasında işletme sistemlerini nasıl yöneteceğinizi öğrenin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
-ms.openlocfilehash: c75956cd1e3e9bba0017a624b99dcc090d32978b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 27a581a72c20c940a04a791ef9e63a2dc8bf5b24
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816999"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune ile işletim sistemi sürümlerini yönetme
 Modern mobil ve masaüstü platformlarda önemli güncelleştirmeler, düzeltme ekleri ve yeni sürümler sık sık yayınlanır. Windows üzerinde güncelleştirmeleri ve düzeltme eklerini yönetmek için tam denetiminiz olsa da iOS ve Android gibi diğer platformlarda son kullanıcılarınızın da bu işlemde yer alması gerekir.  Microsoft Intune, farklı platformlarda işletim sistemi sürümü yönetiminizi yapılandırmak için farklı işlevlere sahiptir.
@@ -59,13 +59,12 @@ Ayrıntılar için bkz. [Cihaz uyumluluğuna başlama](https://docs.microsoft.co
 Intune uygulama koruma ilkeleri ve mobil uygulama yönetimi (MAM) erişim ayarları, uygulama katmanında en düşük işletim sistemi düzeyini belirtmenize imkan verir. Böylece son kullanıcılarınızın işletim sistemlerini belirtilen bir en düşük sürüme güncelleştirmelerini teşvik edebilir veya gerekli kılabilirsiniz.
  
 İki farklı seçeneğiniz vardır: 
+- **Uyar** -uyar, uygulama koruma İlkesi veya MAM erişim ayarı belirtilen sürümden düşük işletim sistemine sahip bir cihazda uygulama açarsanız, açıldığında yükseltme yapması için son kullanıcıyı uyarır. Uygulama ve kuruluş verileri için erişime izin verilir.
+  ![Android güncelleştirme uyarısı iletişim kutusunun görüntüsü](./media/os-version-update-warning.png) 
 
-|Uyar  |Engelle  |
-|---------|---------|
-|Uyar seçeneği, belirtilen sürümden düşük işletim sistemine sahip bir cihazda uygulama koruma ilkesi veya MAM erişim ayarı olan bir uygulama açıldığında yükseltme yapması için son kullanıcıyı uyarır. Uygulama ve kuruluş verileri için erişime izin verilir.|Engelle seçeneği, belirtilen sürümden düşük işletim sistemine sahip bir cihazda uygulama koruma ilkesi veya MAM erişim ayarı olan bir uygulama açıldığında yükseltme yapması için son kullanıcıyı uyarır. Uygulama ve kuruluş verileri için erişime izin verilmez.|
-|![Android güncelleştirme uyarısı diyaloğu](./media/os-version-update-warning.png)    |![Uygulama erişimi engellendi diyaloğu](./media/os-version-access-blocked.png)          |
+- **Blok** -blok bildiren son kullanıcı, uygulama koruma İlkesi veya MAM erişim ayarı belirtilen sürümden düşük işletim sistemine sahip bir cihazda uygulamayı açtığınızda, yükseltmeniz gerekir. Uygulama ve kuruluş verileri için erişime izin verilmez.
+  ![İletişim görüntüsü uygulama erişimi engellendi](./media/os-version-access-blocked.png)
 
- 
 ### <a name="in-practice"></a>Uygulama
 Günümüzde kuruluşlar, uygulama koruma ilkesi ayarlarını uygulamalar açıldığında veya devam ettirildiğinde, uygulamaları güncel tutmaları konusunda son kullanıcıları eğitmek amacıyla kullanır. Örnek yapılandırma: Son kullanıcıların sürümleri güncel sürümün bir altı olduğunda uyarılır ve güncel sürümün iki altı olduğunda engellenir.
  
@@ -73,12 +72,12 @@ Ayrıntılar için bkz. [Uygulama koruma ilkeleri oluşturma ve atama](https://d
 
 ## <a name="managing-a-new-operating-system-version-rollout"></a>Yeni bir işletim sistemi sürümü dağıtımını yönetme
 Belirlediğiniz zaman çizelgesi içinde kuruluşunuzu yeni bir işletim sistemi sürümüne geçirmenize yardımcı olması için bu makaledeki Intune işlevlerini kullanabilirsiniz. Aşağıdaki adımlar, kullanıcılarınızı yedi gün içinde işletim sistemi v1’den işletim sistemi v2’ye taşımanız için örnek bir dağıtım modeli sağlar.
-- **Adım 1**: Cihaz kaydı için işletim sistemi v2’yi en düşük sürüm olarak gerektirmek amacıyla kayıt kısıtlamalarını kullanın. Böylece kayıt zamanında yeni son kullanıcı cihazlarının uyumlu olması sağlanır.
-- **Adım 2a**: Kullanıcılar uygulamayı açtığında veya devam ettirdiğinde işletim sistemi v2’nin gerekli olduğu konusunda uyarı almaları için Intune uygulama koruma ilkelerini kullanın.
+- **1. adım**: İşletim sistemi v2 cihaz kaydı için en düşük sürüm olarak gerektirmek amacıyla kayıt kısıtlamalarını kullanın. Böylece kayıt zamanında yeni son kullanıcı cihazlarının uyumlu olması sağlanır.
+- **Adım 2a**: Kullanıcılar uygulamayı açtığında veya işletim sistemi v2 sürdürür uyarmak üzere kullanım Intune uygulama koruma ilkeleri gereklidir.
 - **Adım 2b:**. Cihazın uyumlu olması için işletim sistemi v2’yi en düşük sürüm olarak belirtmek amacıyla cihaz uyumluluk ilkelerini kullanın. Uyumsuzluk durumunda yedi günlük bir mehil süresi sağlamak ve kullanıcılara zaman çizelgeniz ile gereksinimlerinize dair bir e-posta bildirimi göndermek için **Eylemler**’i kullanın.
   -  Bu ilkeler, uygulama koruma ilkesi etkin uygulamalar açıldığında mevcut cihazların Intune Şirket Portalı yoluyla güncelleştirilmesi gerektiği konusunda son kullanıcıları bilgilendirir.
   - Uyumsuz cihazlara sahip kullanıcıları belirlemek için bir uyumluluk raporu çalıştırabilirsiniz. 
-- **Adım 3a**: Cihaz, işletim sistemi v2 kullanmıyorsa bir uygulama açıldığında veya devam ettirildiğinde kullanıcıları engellemek için Intune uygulama koruma ilkelerini kullanın.
+- **Adım 3a**: Bir uygulama kullanıcıları engellemek kullanım Intune uygulama koruma ilkeleri açar veya cihazın işletim sistemi v2 kullanmıyorsa sürdürür.
 - **Adım 3b**: Cihazın uyumlu olması için işletim sistemi v2’yi en düşük sürüm olarak belirtmek amacıyla cihaz uyumluluk ilkelerini kullanın.
   - Bu ilkeler, kuruluş verilerine erişimi sürdürmeleri için cihazların güncelleştirilmesini gerektirir. Cihaz koşullu erişimi ile kullanıldığında korumalı hizmetler engellenir. Açıldıklarında veya kuruluş verilerine eriştiklerinde uygulama koruma ilkesi etkin uygulamalar engellenir.
 

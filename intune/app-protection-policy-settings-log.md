@@ -1,5 +1,5 @@
 ---
-title: Uygulama koruma ilkesi günlüklerini gözden geçirme
+title: Uygulama koruma İlkesi günlüklerini gözden geçirin | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3e7b6ec1063b4337f44de0a4502bcbf7c2a45edf
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817220"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
@@ -39,8 +39,8 @@ Aşağıdaki tabloda, adları ve açıklamaları günlüğe kaydedilen ayarları
 
 | Ad                        | Olası değer(ler)                                                                                                                                                                                                                                                                                           | Azure Intune Mobil Uygulama Yönetimi portalında ayarlama                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x dakika                                                                                                                                                                                                                                                                                                   | [Erişim] Erişim gereksinimlerini tekrar kontrol edin - Çevrimdışı Kullanım Süresi<br>Not: Bu, cihaz çevrimdışıysa uygulamanın erişim gereksinimlerinin tekrar kontrol edilmesinden önceki zamandır.             |
-| AccessRecheckOnlineTimeout  | _x_ dakika                                                                                                                                                                                                                                                                                                   | [Access] Erişim gereksinimlerini tekrar kontrol edin - Zaman aşımı.<br>Not: Bu, cihaz çevrimiçi olduğu takdirde uygulama başlatıldıktan sonra uygulamanın erişim gereksinimlerinin tekrar kontrol edilmesinden önceki zamandır. |
+| AccessRecheckOfflineTimeout | x dakika                                                                                                                                                                                                                                                                                                   | [Erişim] Erişim gereksinimlerini tekrar kontrol edin - Çevrimdışı Kullanım Süresi<br>Not: Cihaz çevrimdışı ise uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını budur.             |
+| AccessRecheckOnlineTimeout  | _x_ dakika                                                                                                                                                                                                                                                                                                   | [Access] Erişim gereksinimlerini tekrar kontrol edin - Zaman aşımı.<br>Not: Cihaz çevrimiçiyse uygulama başlatıldıktan sonra uygulamaya yönelik erişim gereksinimleri yeniden denetlenmeden önceki zaman aralığını budur. |
 | AppPinDisabled              | 0 = Hayır<br>1 = Evet                                                                                                                                                                                                                                                                                           | [Erişim] Cihaz PIN'i yönetilirken uygulama PIN'ini devre dışı bırak.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Uygulama yok<br>1 = Yönetilen uygulamalar<br>2 = Herhangi bir uygulama                                                                                                                                                                                                                                                              | [Verileri Yeniden Konumlandırma] Bu uygulamanın diğer uygulamalardan veri almasına izin ver.                                                                                                                        |
 | AppSharingToLevel           | 0 = Uygulama yok<br>1 = Yönetilen uygulamalar<br>2 = Herhangi bir uygulama                                                                                                                                                                                                                                                              | [Verileri Yeniden Konumlandırma] Bu uygulamanın verileri diğer uygulamalara aktarmasına izin ver.                                                                                                                         |

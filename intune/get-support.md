@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune için destek alma
-titlesuffix: Microsoft Intune
+title: Microsoft Intune için destek alma | Microsoft Intune
 description: Microsoft Intune ücretli ve ücretsiz deneme abonelikleri için çevrimiçi destek ve telefon desteği alın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2feb18f9c21929d803bbb3605842effa8f63d75d
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 6a57a3a26a786e86775ce1509c5f751d2856f95b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817305"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
@@ -49,11 +48,11 @@ Yaygın çözümleri yardımcı olmuyorsa, seçebileceğiniz **destek isteği** 
 
 1. Intune yönetici kimlik bilgilerinizle Azure portalında (<https://portal.azure.com>) oturum açın ve **?** işaretini seçin simgesini seçin ve daha sonra **Yardım + destek**’i seçerek [Azure Yardım + destek](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
 
-   ![Yardım + destek bağlantısının vurgulandığı Azure portal yardım ve destek soru işareti bağlantısının ekran görüntüsü](./media/azure-get-support.png)
+   ![Soru işareti bağlantısının Yardım + destek bağlantısının vurgulandığı görüntü](./media/azure-get-support.png)
 
 2. Azure'da **Yardım + Destek** sayfasında **yeni destek isteği**.
 
-   ![Yeni destek talebi bağlantısının vurgulandığı Azure portalı yardım ve destek sayfasının ekran görüntüsü](media/azure-support-ticket-link.png)
+   ![Yeni görüntüsü destek isteği bağlantı vurgulandığı Yardım ve Destek sayfası](media/azure-support-ticket-link.png)
 
 3. Üzerinde **Temelleri** çoğu Intune teknik destek sorunları için sekmesinde aşağıdaki seçenekleri belirleyin:
    - **Sorun türü**: **Teknik**
@@ -63,18 +62,18 @@ Yaygın çözümleri yardımcı olmuyorsa, seçebileceğiniz **destek isteği** 
    - **Sorun alt**: Sorun alt aşağı açılan menüden seçin.
    - **Konu**: Kısaca karşılaştığınız sorunu açıklayın.
 
-   ![Yardım + destek - yeni destek isteği sayfası temelleri sekmesinin Ekran görüntüsü](./media/get-support/help-new-support-case-basics.png)
+   ![Temel bilgiler sekmesinde Yardım + destek - yeni destek isteği sayfası görüntüsü](./media/get-support/help-new-support-case-basics.png)
 
    Seçin **sonraki: Çözümleri** devam etmek için.
 4. Üzerinde **çözümleri** sekmesinde, bileti gerek kalmadan sorununuzu çözmenize yardımcı olabilecek önerilen adımları gözden geçirin. Hala istiyorsanız adım adım arama bir destek isteği oluşturmak **sonraki: Ayrıntılar**.
 
-   ![Yardım + destek - yeni destek isteği sayfası çözümleri sekmesinin Ekran görüntüsü](./media/get-support/help-new-support-case-solutions.png)
+   ![Yardım + destek - yeni destek isteği sayfası çözümleri sekmesinin resmi](./media/get-support/help-new-support-case-solutions.png)
 5. Üzerinde **ayrıntıları** sekmesinde Ayrıntılar, sorununuzu destek yöntemi, iletişim bilgilerinizi doldurun ve ardından **sonraki: Gözden geçir + Oluştur**.
 
-   ![Yardım + destek - yeni destek isteği sayfası ayrıntıları sekmesinin Ekran görüntüsü](./media/get-support/help-new-support-case-details.png)
+   ![Yardım + destek - yeni destek isteği sayfası ayrıntıları sekmesinin resmi](./media/get-support/help-new-support-case-details.png)
 6. Bilgileri gözden geçirin, düzeltin ve ardından olduğundan emin olun **Oluştur** destek isteğinizi gönderebilirsiniz.
 
-   ![Ekran görüntüsü gözden geçir + sekme Yardım + destek - yeni destek isteği sayfası oluştur](./media/get-support/help-new-support-case-create.png)
+   ![Gözden geçirmeyi görüntüsü + yeni desteğini sekmesi oluşturma isteği sayfası](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
@@ -117,7 +116,7 @@ Bir destek isteğini Azure portalının içinden görüntüleyebilirsiniz. Bunu 
 ## <a name="new-help-and-support-experience"></a>Yeni Yardım ve Destek deneyimi
 *Aşağıdaki bilgiler, yalnızca Cihaz Yönetim portalını kullandığınızda ve yeni Yardım ve Destek deneyimi dağıtımının parçası olduğunuzda geçerlidir. Yeni deneyime katılacak kişiler, uygun Intune kiracıları arasından rastgele seçilir.*  
 
-Intune için Yardım ve Destek güncelleştirmesi, [Microsoft 365 Cihaz Yönetimi portalında](http://devicemanagement.microsoft.com) bazı kiracılara sunulan yeni bir deneyimdir. Bu yeni deneyim, [Microsoft 365 yönetim merkezindekine](https://portal.office.com/AdminPortal/Home) benzerdir ve Cihaz Yönetimi konsolunun bazı konumlarından erişildiğinde önceki Yardım ve Destek deneyiminin yerini alır.  
+Intune için Yardım ve Destek güncelleştirmesi, [Microsoft 365 Cihaz Yönetimi portalında](https://devicemanagement.microsoft.com) bazı kiracılara sunulan yeni bir deneyimdir. Bu yeni deneyim, [Microsoft 365 yönetim merkezindekine](https://portal.office.com/AdminPortal/Home) benzerdir ve Cihaz Yönetimi konsolunun bazı konumlarından erişildiğinde önceki Yardım ve Destek deneyiminin yerini alır.  
 
 Cihaz Yönetim portalında, **Tüm hizmetler** > **Cihaz Yönetimi** altında, **Sorun giderme** hariç herhangi bir dikey pencereden **Yardım ve Destek** seçeneğini belirlediğinizde yeni deneyime erişirsiniz. Konsol başlığındaki **?** seçeneğini kullanarak **Sorun giderme** gibi diğer konumlardan Yardım ve Destek’e eriştiğinizde veya soldaki hizmetler listesinden **Yardım ve Destek**’i seçtiğinizde, asıl deneyime ulaşırsınız.  
 
@@ -143,7 +142,7 @@ Aşağıda, gönderebileceğiniz sorgu örnekleri verilmiştir:
 
 ### <a name="view-context-sensitive-help"></a>Bağlama duyarlı yardım görüntüleme
 Sunulan seçeneklerden birini belirlediğinizde veya kendi sorgunuzu gönderdiğinizde **Çözümleri görüntüle** altında bağlama duyarlı sonuçlar çıkar. Bu sonuçlar, hem Intune’a özgü kendi kendine yardım rehberini hem de sorgu kriterlerine dayalı olarak yapılan bir Web aramasından gelen ek sonuçları içerir.  
-![Sonuçları görüntüle](./media/get-support/view-results.png)
+![Sonuçları görüntüleme bölmesinde görüntüsü](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>Destek alın
 Kendi kendine yardım veya Web tabanlı rehber sorunu çözmenize yaramazsa, e-posta veya telefon yoluyla bir destek sorunu açmak için konsolu kullanabilirsiniz.  
@@ -151,16 +150,16 @@ Kendi kendine yardım veya Web tabanlı rehber sorunu çözmenize yaramazsa, e-p
 
 - E-posta isteği için e-posta adresi adresinizi ve isteğe bağlı olarak ek dosyaları sağlayın. İsteği açmak için **Gönder**’e tıklayın.  
 
-  ![E-posta isteği](./media/get-support/email-support.png)
+  ![E-posta isteği bölmesinin resmi](./media/get-support/email-support.png)
   
 - Telefon isteği için telefon numaranızı sağlayın. İsteğe bağlı olarak e-posta adresinizi ve ek dosyaları sağlayın. İsteği göndermek için Beni ara düğmesine tıklayın.  
 
-   ![Telefon isteği](./media/get-support/phone-support.png)
+   ![Telefon isteği bölmesinin resmi](./media/get-support/phone-support.png)
 
 ### <a name="view-support-cases"></a>Destek olaylarını görüntüleme
 Oluşturduğunuz destek olaylarını görüntülemek için geçmiş düğmesini seçin.  
 
-![Destek olaylarını görüntüleme](./media/get-support/view-support-tickets.png)
+![Görünüm destek çalışmaları bölmesini görüntüsü](./media/get-support/view-support-tickets.png)
 
 - Bu iş akışında yalnızca yeni iş akışını kullanarak açtığınız destek olayları görünür. Bunları görüntülemek için yeni deneyimin parçası olan Cihaz Yönetimi konsolunda Yardım ve Destek görünümünü kullanın. Bu olaylar, sekiz basamaktan oluşan numaralara sahiptir. Olayları Microsoft 365 yönetim merkezinden de görüntüleyebilirsiniz.  
 
@@ -173,5 +172,5 @@ Oluşturduğunuz destek olaylarını görüntülemek için geçmiş düğmesini 
 ## <a name="additional-resources"></a>Ek kaynaklar
 - [Microsoft Intune için yardımlı telefon desteği ile iletişim kurun](phone-support-contact.md)
 - [Faturalama ve abonelik yönetimi desteği](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- [Toplu lisanslama](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Toplu lisanslama](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Intune sorunlarını giderme](help-desk-operators.md)

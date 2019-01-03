@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817390"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -89,7 +89,7 @@ Beyaz veya açık renk arka planlarda en iyi görünecek logoyu seçin.
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
-|**Marka imajınızı karşıya yükleyin**| Bu seçenek, Şirket Portalı uygulamasındaki kullanıcı profili sayfasında bir arka plan görüntüsü kullanmanıza imkan verir.<p>*Not*: Görüntü, farklı platformları için farklı görüntülenebilir.<p><ul><li>Önerilen görüntü genişliği: Ancak 640 piksel en az bir 1125px büyüktür</li><li>En yüksek görüntü boyutu: 1.3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
+|**Marka imajınızı karşıya yükleyin**| Bu seçenek, Şirket Portalı uygulamasındaki kullanıcı profili sayfasında bir arka plan görüntüsü kullanmanıza imkan verir.<p>*Not*: Görüntü, farklı platformları için farklı görüntülenebilir.<p><ul><li>Önerilen görüntü genişliği: 640 piksel 1125px küçüktür, ancak hiçbir küçüktür</li><li>En yüksek görüntü boyutu: 1.3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
 
 Doğru bir marka imajı sayesinde şirket markanızı güçlü bir şekilde tanıtarak Şirket Portalı’nda kullanıcı güvenini artırabilirsiniz. Aşağıda, Şirket Portalı için imaj elde etme, seçme ve iyileştirme hakkında bazı ipuçları bulabilirsiniz. 
 

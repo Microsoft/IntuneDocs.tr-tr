@@ -1,5 +1,5 @@
 ---
-title: Exchange koşullu erişim ilkesi oluşturma
+title: Exchange koşullu erişim ilkesi oluşturma | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Intune'da Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişimi yapılandırın.
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817067"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
 
@@ -64,7 +64,7 @@ Koşullu erişim yapılandırabilmek için önce aşağıdakileri doğrulayın:
 - Windows Phone 8.1 ve üzeri
 - iOS’ta yerel e-posta uygulaması.
 - Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri.
-- EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **iş profilindeki** **Gmail** ve **Android Enterprise için Nine Work** desteklenir. Android iş profili cihazlarında koşullu erişimin çalışması için Gmail veya Android Enterprise için Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız. Ayrıca bu uygulamaları da zorunlu yükleme olarak dağıtmanız gerekir.
+- EAS posta istemcileri **Android iş profili cihazları:** Yalnızca **Gmail** ve **Nine Work Android Enterprise için** içinde **iş profilindeki** Android iş profili cihazları üzerinde desteklenir. Android iş profili cihazlarında koşullu erişimin çalışması için Gmail veya Android Enterprise için Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız. Ayrıca bu uygulamaları da zorunlu yükleme olarak dağıtmanız gerekir.
 
 > [!NOTE]
 > Android ve iOS için Microsoft Outlook, Exchange şirket içi bağlayıcısı aracılığıyla desteklenmiyor. Azure Active Directory koşullu erişim ilkeleri ve iOS için Outlook ve Android için şirket içi kutularınıza ile Intune uygulama koruma ilkelerini kullanmak istiyorsanız, bkz. Lütfen [kullanarak karma iOS için Outlook ile Modern kimlik doğrulaması ve Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 

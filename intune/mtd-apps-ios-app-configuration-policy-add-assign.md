@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune'a MTD uygulamaları ekleme ve atama
-titleSuffix: ''
+title: Ekleme ve Microsoft Intune MTD uygulamaları atama | Microsoft Intune
 description: Azure portalında Intune kullanarak Mobile Threat Defense (MTD) uygulamalarını, Microsoft Authenticator uygulamasını ve iOS yapılandırma ilkesini ekleyin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181182"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996006"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama
 
 > [!NOTE] 
 > Bu konu, tüm Mobile Threat Defense iş ortakları için geçerlidir.
 
-Son kullanıcıların mobil cihazlarında bir tehdit algılandığında bildirim ve bu tehditleri ortadan kaldıracak rehberlik alması için MTD uygulamaları eklemek ve dağıtmak üzere Intune’u kullanabilirsiniz.
+Intune, ekleyin ve böylece, mobil cihazlarında bir tehdit tanımlandığında, son kullanıcılara bildirim alabilir, Mobile Threat Defense (MTD) uygulamaları dağıtma ve tehditleri ortadan kaldıracak rehberlik almak için kullanabilirsiniz.
 
 
 ## <a name="before-you-begin"></a>Başlamadan önce
@@ -38,13 +37,12 @@ Aşağıdaki adımların [Azure portalında](https://portal.azure.com/) tamamlan
   -   [Intune’a uygulama ekleme](apps-add.md).
   -   [Intune’a iOS uygulama yapılandırma ilkesi ekleme](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
   -   [Intune ile uygulama atama](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
-  -   [ iOS uygulama yapılandırma ilkesi ekleme](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
-> Intune şirket portalı, Android cihazlarda kullanıcı kimliklerinin Azure AD tarafından denetlenebilmesi için aracı olarak çalışır.
+> Intune Şirket portalı, kullanıcıların kimliklerinin Azure AD tarafından denetlenebilmesi aracısı olarak Android cihazlarda çalışır.
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>iOS için Microsoft Authenticator’ı yapılandırma
-iOS cihazlarında, Azure AD'nin kullanıcıların kimlikleri denetleyebilmesi için [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) olması gerekir. Ayrıca, Intune ile kullanılacak MTD iOS uygulamasını bildiren iOS uygulama yapılandırma ilkesi gerekir.
+iOS cihazlarında, Azure AD'nin kullanıcıların kimlikleri denetleyebilmesi için [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) olması gerekir. Ayrıca, kullandığınız Intune ile MTD iOS uygulamasını ayarlar bir iOS uygulama yapılandırma İlkesi gerekir.
 
 Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). Bu [Microsoft Authenticator uygulama mağazası URL'sini](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) **Uygulama bilgilerini yapılandır** bölümünün altındaki **12. adımda** kullanın.
 
@@ -145,11 +143,11 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work uygulama yapılandırma ilkesi
 
-- iOS uygulama yapılandırma ilkesini [iOS uygulama yapılandırma ilkesini kullanma](app-configuration-policies-use-ios.md) konusunda anlatıldığı gibi oluşturun.
+- İOS uygulama yapılandırma İlkesi açıklandığı gibi oluşturmak [iOS uygulama yapılandırma ilkesini kullanarak](app-configuration-policies-use-ios.md) makalesi.
 
 ### <a name="sep-mobile-app-configuration-policy"></a>SEP Mobile uygulama yapılandırma ilkesi
 
--   Daha önce [Symantec Endpoint Protection Yönetim konsolunda](https://aad.skycure.com) yapılandırılmış olan Azure AD hesabını kullanın. Bu, klasik Intune portalında oturum açarken kullanılan hesap olmalıdır.
+-   Daha önce yapılandırılmış aynı Azure AD hesabını kullanın [Symantec uç nokta koruma Yönetimi Konsolu](https://aad.skycure.com), Klasik Intune portalında oturum açmak için kullanılan hesabın aynısı olmalıdır.
 
 -   iOS uygulama yapılandırma ilkesi dosyasını **indirmeniz** gerekir: 
     -   [Symantec Endpoint Protection Yönetim konsoluna](https://aad.skycure.com) gidin ve yönetici kimlik bilgilerinizle oturum açın.

@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune ile Symantec tümleştirmesini ayarlama
-titlesuffix: ''
+title: Intune Symantec tümleştirmesini kurma | Microsoft Intune
 description: Şirket kaynaklarınıza mobil cihaz erişimini denetlemek için Microsoft Intune ile Symantec Endpoint Protection Mobile çözümünü ayarlama.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4b519c30f432a6d8584c2bd5bca94ead95a862b1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817356"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile'ın Intune ile tümleştirmesini ayarlama
 
@@ -41,19 +40,19 @@ Symantec'in [Ağ yapılandırmanızı ayarlama](https://portal.skycure.com/artic
 
 SEP Mobile, Intune ile iki tümleştirme modunu destekler:
 
--   **Salt okunur tümleştirme (Temel kurulum):** Yalnızca Azure Active Directory’den cihazların envanterini çıkarır ve Symantec Endpoint Protection Mobile Yönetim konsolunu bunlarla doldurur.
+-   **Salt okunur tümleştirme (temel kurulum):** Yalnızca Azure Active Directory'den cihazların envanterini oluşturur ve bunları Symantec Endpoint Protection Mobile yönetim konsolunda doldurur.
 <br>
     -   Symantec Endpoint Protection Mobile Yönetim konsolunda **Cihazların durumunu ve riskini Intune’a raporla** ve **Güvenlik olaylarını da Intune’a raporla** kutuları seçili değilse tümleştirme salt okunur moddadır ve dolayısıyla Intune’da cihazların durumunu (uyumlu veya uyumsuz) asla değiştirmez.
 <br></br>
--   **Tam tümleştirme:** SEP Mobile'ın riskli cihazları ve güvenlik olayı ayrıntılarını Intune’a raporlamasına olanak tanır; bu da, iki bulut hizmeti arasında çift yönlü bir iletişim oluşturur.
+-   **Tam tümleştirme:** SEP Mobile cihazları risk ve güvenlik olayı ayrıntılarını ıntune'a her iki bulut Hizmetleri arasındaki çift yönlü iletişimi oluşturur sağlar.
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile uygulamaları Azure AD ve Intune ile nasıl kullanılır?
 
--   **iOS uygulaması:** Son kullanıcıların iOS uygulaması kullanarak Azure AD’de oturum açmasına olanak tanır.
+-   **iOS uygulaması:** İOS uygulaması kullanarak Azure AD'de oturum açmasına olanak tanır.
 
--   **Android uygulaması:** Son kullanıcıların Android uygulaması kullanarak Azure AD’de oturum açmasına olanak tanır.
+-   **Android uygulaması:** Bir Android uygulaması kullanarak Azure AD'de oturum açmasına olanak tanır.
 
--   **Yönetim uygulaması:** Bu, Intune ile hizmetler arası iletişime olanak tanıyan SEP Mobile Azure AD çok kiracılı uygulamasıdır.
+-   **Yönetim uygulaması:** Intune ile hizmetten hizmete iletişimi sağlayan SEP Mobile Azure AD çok kiracılı uygulama budur.
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>Intune ile SEP Mobile arasında salt okunur tümleştirme ayarlamak için
 
@@ -68,7 +67,7 @@ SEP Mobile, Intune ile iki tümleştirme modunu destekler:
 
 4.  **iOS Uygulaması**'nın yanında **Active Directory'ye Ekle**'yi seçin.
 
-    ![[Symantec Endpoint Protection Mobile Management Console] üzerinde iOS uygulamasının resmi](./media/symantec-portal-basic-add.png)
+    ![Symantec Endpoint Protection Mobil Yönetim konsolunun resmi](./media/symantec-portal-basic-add.png)
 
 5.  Oturum açma sayfası açıldığında Intune kimlik bilgilerinizi girin ve **Kabul Et**’i seçin.
 
@@ -90,17 +89,17 @@ SEP Mobile çalıştıran tüm cihazların yer aldığı Azure AD güvenlik grub
 
 SEP Mobile, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD güvenlik gruplarıyla eşitler.
 
-![SEP Mobile yönetim konsolunda güvenlik grubu yapılandırmasının tamamlandığını gösteren resim](./media/symantec-portal-basic-status.png)
+![SEP Mobile yönetim konsolunda güvenlik grubu yapılandırma görüntüsü](./media/symantec-portal-basic-status.png)
 
 ## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Intune ile SEP Mobile arasında tam tümleştirmeyi ayarlamak için
 
 ### <a name="retrieve-the-directory-id-in-azure-ad"></a>Azure AD'de Dizin Kimliğini alma
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 
 2. Arama kutusuna "Active Directory" yazın ve ardından **Azure Active Directory**'yi seçin.
 
-3. **Özellikler**’i seçin.
+3. Seçin **özellikleri**.
 
 4. **Dizin Kimliği**'nin yanında, kopyala simgesini seçin ve bunu güvenli bir konuma yapıştırın. Bu kimliğe sonraki bir adımda ihtiyacınız olacaktır.
 

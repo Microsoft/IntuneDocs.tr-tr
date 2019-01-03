@@ -1,5 +1,5 @@
 ---
-title: Koşullu erişim sorunlarını giderme
+title: Koşullu erişim sorunlarını giderme | Microsoft Intune
 description: Kullanıcıların, kaynaklara Intune koşullu erişimi üzerinden erişemediklerinde ne yapacakları açıklanır.
 keywords: ''
 author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 642a4da6a1ca3c368e90f2d3007c1fc6a068af78
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d24b96408ed02413f25957e2558704385c5e1bfd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817152"
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
 
@@ -73,7 +73,7 @@ Uyumlu olmayan ancak erişimi olan bir cihazla karşılaşırsanız, aşağıdak
 - Hedef ve Dışlama gruplarını gözden geçirin. Kullanıcı doğru hedef grupta değilse veya dışlama grubundaysa, engellenmez. Yalnızca Hedef grupta olan kullanıcıların cihazlarında uyumluluk denetimi yapılır.
 - Cihazın bulunabildiğinden emin olun. Exchange Connector bir Exchange 2010 CAS’ine, buna karşın kullanıcı bir Exchange 2013 sunucusuna mı işaret ediyor? Bu durumda, varsayılan Exchange kuralı İzin Ver ise, kullanıcı Hedef grupta olsa bile Intune cihazın Exchange’a bağlandığının farkında olamaz.
 - Exchange’de Cihazın Varlığı/Erişim Durumu’nu kontrol edin:
-  - Bir posta kutusunun tüm mobil cihazlarının listesini almak için şu PowerShell cmdlet’ini kullanın: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Cihaz listede yoksa Exchange’e erişmiyordur.
+  - Bir posta kutusunun tüm mobil cihazlarının listesini almak için bu PowerShell cmdlet'ini kullanın: "Get-ActiveSyncDeviceStatistics-posta kutusu mbx'. Cihaz listede yoksa Exchange’e erişmiyordur.
   - Cihaz listeleniyorsa, erişim durumu hakkında ayrıntılı bilgi almak için Get-CASmailbox -identity:’upn’ | fl cmdlet’ini kullanın ve bu bilgileri Microsoft Desteği’ne verin.
 
 ## <a name="next-steps"></a>Sonraki adımlar

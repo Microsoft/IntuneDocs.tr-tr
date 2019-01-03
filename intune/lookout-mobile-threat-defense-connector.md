@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune ile Lookout MTD bağlayıcısı
-titlesuffix: ''
+title: Lookout MTD bağlayıcısını Intune | Microsoft Intune
 description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Lookout Mobile Threat Defense’i (MTD) Intune ile tümleştirme hakkında bilgi edinin.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817084"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Intune ile Lookout Mobile Threat Defense bağlayıcısı
 
@@ -63,34 +62,34 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
-![cihazdaki kötü amaçlı uygulamalar nedeniyle cihazın uyumlu olmadığı belirlendiğinde erişimi engelleyen koşullu erişim ilkesini gösteren diyagram](./media/malicious-apps-blocked.png)
+![Kötü amaçlı uygulamalar nedeniyle erişimi engelleme İlkesi kavramsal resmi](./media/malicious-apps-blocked.png)
 
 **Düzeltme ile erişim izni verildi:**
 
-![Düzeltme sonrası cihazın uyumlu olduğu belirlenince erişim izni veren koşullu erişim ilkesini gösteren diyagram](./media/malicious-apps-unblocked.png)
+![Düzeltmeden sonra cihazlar için izin verilen erişim gösteren kavramsal resim](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri algılayın ve cihaz riskine dayalı olarak WiFi ağlarına erişimi koruyun.
 
 **WiFi üzerinden ağ erişimini engelleme:**
 
-![ağ tehditlerine dayalı olarak WiFi erişimini engelleyen koşullu erişimi gösteren diyagram](./media/network-wifi-blocked.png)
+![Ağ tehditlerine dayalı olarak WiFi erişimini engelleyen gösteren resim](./media/network-wifi-blocked.png)
 
 **Düzeltme ile erişim izni verildi:**
 
-![Tehdidin düzeltilmesinin ardından erişim izni veren koşullu erişimi gösteren diyagram](./media/network-wifi-unblocked.png)
+![Düzeltmeden sonra erişim izni veren koşullu erişimi kavramsal resmi](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme
 
 Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri algılar ve cihaz riskine dayalı olarak kurumsal dosyaların eşitlenmesini engeller.
 
 **Ağ tehditleri algılandığında SharePoint Online’ı engelle:**
 
-![Tehdit algılamasına dayalı olarak SharePoint Online’a cihaz erişimini engelleyen koşullu erişimi gösteren diyagram](./media/network-spo-blocked.png)
+![SharePoint Online'a erişimi engelleyen kavramsal resmi](./media/network-spo-blocked.png)
 
 
 **Düzeltme ile erişim izni verildi:**
 
-![Ağ tehdidi düzeltildikten sonra erişim izni veren koşullu erişimi gösteren diyagram](./media/network-spo-unblocked.png)
+![Ağ tehdidi düzeltildikten sonra erişim veren kavramsal resmi](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:

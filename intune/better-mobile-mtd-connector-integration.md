@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: aa447721449b2b3733e20d9f65f0253e9123228b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 761605a74e6aeda65d9c6361b18b51e255873ac1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816540"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile'ı Intune ile tümleştirme
 
@@ -62,14 +62,14 @@ Better Mobile uygulama yetkilendirme işlemi şu şekildedir:
 1. [Better Mobile yönetim konsoluna](https://aad.bmobi.net) gidin ve kimlik bilgilerinizle oturum açın.
 2. **Integration** > **EMM/MDM** > **ADD ACCOUNT** öğesini seçin.
 
-     ![Better Mobile yönetim konsolu](media/better_mobile_console.png)
+     ![Daha iyi mobil Yönetim konsolunun resmi](media/better_mobile_console.png)
  
 3. **Intune**'u seçin.
 4. **ACCOUNT NAME** alanının yanına bir tanımlayıcı yazın. 
 5. **Microsoft Oturum Açma** penceresinde Intune kimlik bilgilerinizi girin.
 6. **İstenen izinler** penceresinde **Kabul Et**'i seçin.
 7. Better Mobile'ın cihazları hangi Azure AD Güvenlik gruplarından eşitlemesini istiyorsanız, o gruplar için arama yapın ve listeden bunları seçin. Sonra **Devam**'ı seçin.
-8. **Bitti**’yi seçin.
+8. **Done** (Bitti) öğesini seçin.
 9. **Hesap ekle** sayfası yeniden görüntülenir. Sayfayı kapatın. 
 
 ## <a name="next-steps"></a>Sonraki adımlar

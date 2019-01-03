@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 2a06855ce9f25a5e7ee79d5b0344650fcb42900c
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817186"
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -37,14 +37,14 @@ Intune uygulama koruma ilkelerini **mobil cihaz yönetimi (MDM) çözümlerinden
 
 Aşağıdaki özelliklere sahip cihazlarda çalıştırılan uygulamalar için uygulama koruma ilkeleri yapılandırılabilir:
 
-- **Microsoft Intune’a kayıtlı:** Bu cihazlar genellikle şirkete aittir.
+- **Microsoft Intune'a kayıtlı:** Bu genellikle şirket aygıtlardır ait.
 
-- **Bir üçüncü taraf mobil cihaz Yönetimi (MDM) çözümde kayıtlı:** Bu cihazlar genellikle şirkete aittir.
+- **Bir üçüncü taraf mobil cihaz Yönetimi (MDM) çözümde kayıtlı:** Bu genellikle şirket aygıtlardır ait.
 
   > [!NOTE]
   > Mobil uygulama yönetimi ilkeleri, üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
 
-- **Herhangi bir mobil cihaz yönetimi çözümünde kayıtlı değil:** Bu cihazlar normalde Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
+- **Herhangi bir mobil cihaz yönetim çözümüne kayıtlı değil:** Normalde Intune veya diğer MDM çözümlerinde kayıtlı veya yönetilen çalışana ait cihazlardır.
 
 > [!IMPORTANT]
 > Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. iOS ve Android için Outlook'a yönelik olarak karma Modern Kimlik Doğrulaması ile etkinleştirilen Intune uygulama koruma ilkeleri oluşturarak Exchange şirket içi posta kutularına erişimi de koruyabilirsiniz. Bu özelliği kullanmadan önce [iOS ve Android için Outlook gereksinimlerini](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) karşıladığınızdan emin olun. Uygulama koruma ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan diğer uygulamalar için desteklenmez.
@@ -75,14 +75,14 @@ Windows cihazları şu anda desteklenmez. Ancak, benzer bir işlevsellik sunan W
 
 #### <a name="apps-without-app-protection-policies"></a>Uygulama koruma ilkelerinin bulunmadığı uygulamalar
 
-![Uygulama koruma ilkeleri devrede olmadığında verilerin uygulamalar arasında serbestçe taşınabildiğini gösteren resim](./media/apps-without-protection-policies.png)
+![Yerinde hiçbir ilkelerine sahip uygulamalar arasında veri taşıma için kavramsal resmi](./media/apps-without-protection-policies.png)
 
 Uygulamalar kısıtlama olmadan kullanıldığında, şirket verileri ile kişisel veriler birbirine karışabilir. Şirket verileri, kişisel depolama alanı gibi konumlara düşebilir veya kapsamınızın ötesindeki uygulamalara aktarılarak veri kaybına neden olabilir. Yukarıda şemada yer alan oklar, kurumsal ve kişisel uygulamalar arasındaki ve depolama konumlarına yönelik kısıtlanmamış veri hareketlerini gösterir.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Uygulama koruma ilkeleriyle verileri koruma
 
-![Uygulama koruma ilkeleri uygulandığında şirket verilerinin nasıl korunduğunu gösteren resim ](./media/apps-with-protection-policies.png)
+![İlkeleri tarafından korunan şirket verilerini gösteren kavramsal resim](./media/apps-with-protection-policies.png)
 
 
 Uygulama koruma ilkelerini kullanarak şirket verilerinin cihazın yerel depolama alanına kaydedilmesini engelleyebilirsiniz. Ayrıca Uygulama koruma ilkesi kapsamında olmayan diğer uygulamalara veri taşımayı da kısıtlayabilirsiniz. Uygulama koruma ilkesi ayarları aşağıdakileri içerir:

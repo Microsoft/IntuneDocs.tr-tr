@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817373"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -72,11 +72,11 @@ Oluşturduğunuz yeni ilkeler siz açıkça dağıtana kadar herhangi bir kullan
 
 2. ***Intune Uygulama Koruması** bölmesinde, **Intune Uygulama Koruması - Atamalar** bölmesini açmak için **Atamalar**’ı seçin. *Ekle* sekmesinde **Dahil edilecek gruplar**’ı seçin. 
 
-   ![Dahil edilecek grupları seçin menü seçeneği vurgulanmış olarak Atamalar bölmesinin ekran görüntüsü](./media/app-protection-policy-add-users.png)
+   ![Grupları seçin menü eklemek için atamalar bölmesinin ekran görüntüsü](./media/app-protection-policy-add-users.png)
 
 3.  **Azure Active Directory**’nizdeki tüm güvenlik gruplarının listesi görüntülenir. Bu ilkenin geçerli olmasını istediğiniz kullanıcı gruplarını seçin ve sonra da **Seç**'i kullanın. 
 
-    ![Azure Active Directory kullanıcılarının listesini gösteren Kullanıcı grubu ekle bölmesinin ekran görüntüsü](./media/azure-ad-user-group-list.png)
+    ![Kullanıcı grubu Ekle bölmesinin ekran görüntüsü ile Azure AD kullanıcı listesi](./media/azure-ad-user-group-list.png)
 
 4.  Dahil ve grupları dışlama sonra seçin **Kaydet** yapılandırmayı kaydedin ve ilkeyi kullanıcılara dağıtma. Seçerseniz **at** yapılandırmanızı kaydetmeden önce için yaptığınız tüm değişiklikleri atacak *INCLUDE* ve *hariç* sekmeler.   
  
@@ -89,7 +89,7 @@ Yalnızca Microsoft Intune lisansları atanmış kullanıcılar ilkeden etkileni
 >[!IMPORTANT]
 > Cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
-Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.:
+Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.
 * [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-android.md)
 * [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-ios.md)
 
@@ -138,11 +138,11 @@ Intune uygulama koruma ilkeleri, bir kullanıcının kimliğini hedeflendiği i�
 
 Bu ilkeleri oluşturmak için Intune konsolunda **İstemci uygulamaları** > **Uygulama koruma ilkeleri**'ne gidin ve **İlke Oluştur**’u seçin. Mevcut bir koruma ilkesini de düzenleyebilirsiniz. Uygulama koruma ilkesinin hem yönetilen hem yönetilmeyen cihazlara uygulanması için, **Tüm uygulama türlerini hedefle**’nin varsayılan değer olan **Evet** değerine ayarlandığını doğrulayın. Yönetim durumuna bağlı olarak ayrı atamalar yapmak istiyorsanız **Tüm uygulama türlerini hedefle** seçeneğini **Hayır** olarak ayarlayın. 
 
-![Tüm uygulama türlerini hedefle'nin seçili olduğu İlke Ekle penceresinin ekran görüntüsü](./media/app-protection-policies-target-all.png)
+![Tüm uygulama türleri için hedef Ekle İlkesi dikey penceresinin ekran görüntüsü](./media/app-protection-policies-target-all.png)
 
 Uygulama ayarlarının Intune'a kayıtlı cihazlardaki uygulamalara yansıtılması için iOS cihazlarda ek uygulama yapılandırma ayarları gereklidir:
 - MDM ile yönetilen tüm uygulamalarda **IntuneMAMUPN** yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
-- Üçüncü taraf ve LOB MDM ile yönetilen tüm uygulamalarda **IntuneMAMDeviceID** yapılandırılmalıdır. **IntuneMAMDeviceID**, cihaz kimliği belirtecinde yapılandırılmalıdır. Örneğin: `key=IntuneMAMDeviceID, value={{deviceID}}`. Daha fazla bilgi için bkz. [Yönetilen iOS cihazlar için uygulama yapılandırma ilkeleri ekleme](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
+- Üçüncü taraf ve LOB MDM ile yönetilen tüm uygulamalarda **IntuneMAMDeviceID** yapılandırılmalıdır. **IntuneMAMDeviceID**, cihaz kimliği belirtecinde yapılandırılmalıdır. Örneğin, `key=IntuneMAMDeviceID, value={{deviceID}}`. Daha fazla bilgi için bkz. [Yönetilen iOS cihazlar için uygulama yapılandırma ilkeleri ekleme](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
 - Yalnızca **IntuneMAMDeviceID** yapılandırıldığında Intune uygulaması cihazı yönetilmeyen cihaz olarak görür.  
 
 > [!NOTE]

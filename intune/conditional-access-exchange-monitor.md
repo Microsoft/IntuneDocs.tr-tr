@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune’da Exchange koşullu erişimi izleme
-titlesuffix: ''
+title: Microsoft Intune Exchange koşullu erişimi izleme | Microsoft Intune
 description: Intune Azure portalı üzerinden şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleyin.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c9602dbe183501cc779fcb9b5d5a1e6e4bf6154
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816779"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune'da şirket içi Exchange ve Exchange Online için koşullu erişim uyumluluğunu izleme
 
@@ -56,16 +55,16 @@ Ayrıca daha fazla ayrıntı görmek için belirli cihazlarda detaya gidebilirsi
 
 Cihaz ayrıntıları bölmesinde, daha fazla bilgi görebilirsiniz:
 
--   **Genel Bakış:** İşletim Sistemi sürümü, cihaz modeli, sahibi, seri numarası, cihaz üreticisi, telefon numarası ve cihazın en son giriş yaptığı zaman gibi cihaz özelliklerini görebilirsiniz.
+-   **Genel Bakış:** Gibi cihaz özelliklerini görebilirsiniz: İşletim sistemi sürümü, cihaz modeli, sahipliği, seri numarası, cihaz üreticisi, telefon numarası ve son iade cihaz saat.
 
--   **Özellikler:** Cihazın sahibini (Kişisel veya Kurumsal) ayarlayabilirsiniz.
+-   **Özellikler:** Cihaz sahipliği (Kişisel veya Kurumsal) ayarlayabilirsiniz.
 
--   **Donanım:** Genel Bakış’ta gördüğünüz bilgileri, ayrıca depolama bilgileri (toplam alan ve boş alan), sistem kapatma, ağ ayrıntıları, ağ hizmeti ve diğer koşullu erişim engelleme ayrıntılarını sunar.
+-   **Donanım:** Sistem kutusu, ağ ayrıntıları, ağ hizmeti ve daha fazla koşullu erişim engelleme ayrıntılarını genel bakış ve depolama ayrıntıları (toplam alan ve boş alan), ayrıca bkz bilgilere yer verilmiştir.
 
--   **Bulunan Uygulamalar:** Cihazınıza yüklü olan tüm uygulamaları gösterir. Ayrıca yüklü uygulamaların listesini .CSV biçiminde dışa aktarabilirsiniz.
+-   **Bulunan uygulamalar:** Bu, cihazınıza yüklü tüm uygulamaları gösterir. Ayrıca yüklü uygulamaların listesini .CSV biçiminde dışa aktarabilirsiniz.
 
--   **Uyumluluk:** Tüm cihaz uyumluluk ilkesi ayrıntılarını gösterir.
+-   **Uyumluluk:** Bu, tüm cihaz uyumluluk ilkesi ayrıntılarını gösterir.
 
--   **Cihaz Yapılandırması:** Tüm cihaz yapılandırma ayrıntılarını gösterir.
+-   **Cihaz yapılandırması:** Bu, tüm cihaz yapılandırma ayrıntılarını gösterir.
 
--   **Exchange Erişimi:** Burada cihazın koşullu erişim ilkeleri uygulandıktan sonraki durumu hakkında daha fazla bilgi alabilirsiniz.
+-   **Exchange erişimi:** Burada, cihaz durumu hakkında daha fazla koşullu erişim ilkeleri uygulandıktan sonra öğrenebilirsiniz.

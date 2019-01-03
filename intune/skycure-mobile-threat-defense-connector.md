@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune ile Symantec bağlayıcısı
-titlesuffix: ''
+title: Symantec bağlayıcı Intune | Microsoft Intune
 description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Symantec Endpoint Protection Mobile’ı Intune ile tümleştirme hakkında bilgi edinin.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817135"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile bağlayıcısı
 
@@ -67,11 +66,11 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
-![Kötü amaçlı uygulamalar algılandı](./media/symantec-arch-1.png)
+![Kötü amaçlı uygulamalar algılandı kavramsal resmi](./media/symantec-arch-1.png)
 
 **Düzeltme ile erişim izni verildi:**
 
-![Kötü amaçlı uygulamalar algılandıktan sonra düzeltme ile erişim izni verildi](./media/symantec-arch-2.png)
+![Düzeltme sonra kötü amaçlı uygulamalar algılandı erişim görüntüsü](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 

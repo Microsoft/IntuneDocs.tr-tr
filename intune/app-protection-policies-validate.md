@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816965"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Uygulama koruma ilkesi kurulumunuzu doğrulama
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247076"
 
 Uygulama koruma ilkenizin doğru kurulduğunu ve çalıştığını doğrulayın. Bu kılavuz, Azure portaldaki uygulama koruma ilkeleri için geçerlidir.
 
-### <a name="checking-for-symptoms"></a>Belirtileri denetleme
+## <a name="checking-for-symptoms"></a>Belirtileri denetleme
 Uygulama koruma bir veri koruması aracı olduğundan, kullanıcıların soruları bildirme olasılığı düşüktür. Uygulama koruma yapılandırmasında bir sorun varsa olmadan uygulama koruması gerekir ve bir sorun bilmiyorum kullanıcı sınırsız erişime. Bu nedenle, kullanıcılar uygulama korumanın kısıtlamalarını bilinçli sınayabilirsiniz küçük bir grupla uygulama koruma ilkelerinizin Pilot dağıtımını yaparak uygulama koruma yapılandırmanızı doğrulamanızı öneririz.
 
 
-### <a name="what-to-check"></a>Denetlenmesi gerekenler
+## <a name="what-to-check"></a>Denetlenmesi gerekenler
 
 Uygulama koruma İlkesi davranış'ınızı beklendiği gibi olmayan gösteriyorsa şu öğeleri kontrol:
 
@@ -41,7 +41,7 @@ Uygulama koruma İlkesi davranış'ınızı beklendiği gibi olmayan gösteriyor
 - Kullanıcılar O365 için lisanslı mı?
 - Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir.
 
-#### <a name="user-app-protection-status"></a>Kullanıcı uygulama koruma durumu
+### <a name="user-app-protection-status"></a>Kullanıcı uygulama koruma durumu
 1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. Seçin **istemci uygulamaları** > **İzleyici** >  **uygulama koruma durumu**ve ardından **atanan kullanıcılar**Döşe. 
@@ -50,7 +50,7 @@ Uygulama koruma İlkesi davranış'ınızı beklendiği gibi olmayan gösteriyor
 
 
 
-### <a name="what-to-do"></a>Yapılması gereken
+## <a name="what-to-do"></a>Yapılması gereken
 Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 
 - Kullanıcının uygulama koruması için lisanslı değilse, kullanıcıya bir Intune lisansı atayın.
@@ -58,6 +58,6 @@ Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 - Kullanıcının lisansı **İade edilmedi** olarak listeleniyorsa bu uygulama için doğru biçimde bir uygulama koruma ilkesi yapılandırıp yapılandırmadığınıza bakın.
 - Bu koşulların, uygulama koruma ilkelerinin geçerli olmasını istediğiniz tüm kullanıcılara uygulanacağını emin olun.
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Intune uygulama koruma ilkesi nedir?](app-protection-policies.md)

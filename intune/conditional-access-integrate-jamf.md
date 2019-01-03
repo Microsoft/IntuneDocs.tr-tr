@@ -1,6 +1,5 @@
 ---
-title: Uyumluluk için Jamf Pro’yu Microsoft Intune ile tümleştirme
-titlesuffix: ''
+title: Jamf Pro'yu uyumluluk için Microsoft Intune tümleştirme | Microsoft Intune
 description: Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e936ecd4ce6a9b0fa447ecfe8e45e04a78999a2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816829"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -50,7 +49,7 @@ Intune'u Jamf Pro’ya şu şekilde bağlayabilirsin:
 1. **Azure Active Directory** > **Uygulama Kayıtları**'nı açın.
 2. **+Yeni uygulama kaydı**'na tıklayın.
 3. **Jamf Koşullu Erişim** gibi bir **görünen ad** girin.
-4. **Web uygulaması / API**’yi seçin.
+4. Seçin **Web uygulaması / API**.
 5. Jamf Pro örneği URL'nizi kullanarak **Oturum Açma URL'si** değerini belirtin.
 6. **Uygulama oluştur**’a tıklayın.
 7. Yeni oluşturulan **Uygulama Kimliği**'ni kaydedin, ardından yeni bir Uygulama Anahtarı oluşturmak için **Ayarlar**'ı açın ve **API Erişimi** > **Anahtarlar**'a gidin. **Açıklama**'yı ve **Süresi Dolmadan** ne kadar bekleneceğini girin, sonra da Uygulama Anahtarı'nı kaydedin.
@@ -74,14 +73,14 @@ Intune'u Jamf Pro’ya şu şekilde bağlayabilirsin:
 
 1. Microsoft Azure portalında **Microsoft Intune** > **Cihaz Uyumluluğu** > **İş ortağı cihaz yönetimi**’ni açın.
 2. Uygulama Kimliği'ni **Jamf Azure Active Directory Uygulama Kimliği** alanına yapıştırarak Jamf için Uygunluk Bağlayıcı'yı etkinleştirin.
-3. **Kaydet**'e tıklayın.
+3. **Kaydet**’e tıklayın.
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro'da Microsoft Intune tümleştirmesini yapılandırma
 
 1. Jamf Pro'da **Küresel Yönetim** > **Şartlı Erişim**'e gidin. **Microsoft Intune Tümleştirmesi** sekmesinde **Düzenle** düğmesine tıklayın.
 2. **Microsoft Intune Tümleştirmesini Etkinleştir** onay kutusunu seçin.
 3. Önceki adımlardan kaydettiğiniz **Yer**, **Alan Adı**, **Uygulama Kimliği** ve **Uygulama Anahtarı** de dahil olmak üzere Azure kiracısı hakkında gerekli bilgileri sağlayın.
-4. **Kaydet**'e tıklayın. Jamf Pro, ayarlarınızı test edecek ve başarınızı doğrulayacaktır.
+4. **Kaydet**’e tıklayın. Jamf Pro, ayarlarınızı test edecek ve başarınızı doğrulayacaktır.
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Uyumluluk ilkelerini ayarlama ve cihazları kaydetme
 
@@ -115,13 +114,13 @@ Jamf Pro, yönetilen MacOS cihazları hakkında envanter bilgileri alır. Jamf P
 * Etki alanına katılma
 * Jamf kimliği
 * MAC adresi
-* Olun
+* Yapın
 * Model
 * Model Tanımlayıcısı
 * NIC Hızı
 * Çekirdek Sayısı
 * İşlemci Sayısı
-* İşletim sistemi
+* İşletim Sistemi
 * Platform
 * İşlemci Hızı
 * İşlemci türü
