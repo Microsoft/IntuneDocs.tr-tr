@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bfde1e935c782643e06030659082907365b1903e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e3d0b47bcb8ecbf3d8f76a83f0247f98c0c698f3
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180010"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006361"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
@@ -53,7 +53,7 @@ Intune’la uygulama yapılandırmalarını kullanmak için iki seçeneğiniz va
 
 Destekleyen uygulamalar için uygulama yapılandırma ilkelerini kullanabilirsiniz. Intune uygulamalarında uygulama yapılandırmasını desteklemek için uygulamalar, uygulama yapılandırmaları kullanımını desteklemek üzere yazılmış olmalıdır. Ayrıntılar için uygulama satıcınıza başvurun.
 
-Intune Uygulama SDK’sını uygulamaya ekleyerek veya uygulamayı geliştirildikten sonra sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. iOS ve Android için kullanılabilen Intune uygulama SDK’sı, uygulamanızı Intune uygulama yapılandırma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md).
+Intune Uygulama SDK’sını uygulamaya ekleyerek veya uygulamayı geliştirildikten sonra sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. Intune uygulama SDK'sı, iOS ve Android için kullanılabilir, uygulamanızı Intune uygulama yapılandırma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Uygulama yapılandırması için Graph API desteği
 

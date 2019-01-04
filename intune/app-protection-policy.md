@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 2a06855ce9f25a5e7ee79d5b0344650fcb42900c
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817186"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006293"
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -146,7 +146,7 @@ Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Ancak
 
 Uygulama koruma ilkeleri uygulamalar yalnızca iş bağlamında kullanılırken uygulanırken, birden çok kimliği destekleyen uygulamalar aynı uygulamalara erişmek için farklı hesaplar (iş ve kişisel) kullanmanıza izin verir.
 
-Yeni bir belge Word'de başlatan bir kullanıcı bir kişisel bağlam örneğini düşünün için Intune uygulama koruma ilkeleri uygulanmaz şekilde bu kişisel bağlam kabul edilir. Sonra şirket OneDrive hesabı Belge kaydedildikten sonra consieered corporatte bağlam olacaktır ve Intune uygulama koruma ilkeleri uygulanır.
+Yeni bir belge Word'de başlatan bir kullanıcı bir kişisel bağlam örneğini düşünün için Intune uygulama koruma ilkeleri uygulanmaz şekilde bu kişisel bağlam kabul edilir. Sonra şirket OneDrive hesabı Belge kaydedildikten sonra kurumsal bağlam kabul edilir ve Intune uygulama koruma ilkeleri uygulanır.
 
 İş bağlamı bir örneği için kendi iş hesabını kullanarak OneDrive uygulamasını başlatan kullanıcı göz önünde bulundurun. Bu kullanıcı iş bağlamında dosyaları kişisel depolama alanına taşıyamaz. Daha sonra OneDrive'ı kendi kişisel hesabıyla kullandığında, kişisel OneDrive'ından kısıtlamasız olarak veri kopyalayabilir ve taşıyabilir.
 
