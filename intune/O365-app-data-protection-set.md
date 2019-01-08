@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642482"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067474"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Kullanıcılarınızın Microsoft Intune’da yönetilen Office 365 uygulamalarındaki temel koruma deneyimi
 
@@ -82,7 +82,7 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 >[!NOTE]
 >OneDrive İş uygulamasını bir sonraki açışınızda, BT’niz gerektiriyorsa bir PIN ayarlamanız istenebilir. PIN’i ayarlayıp onayladıktan sonra, OneDrive İş’i açmaya devam edebilirsiniz.
 
-![PIN isteminin resmi](./media/pin-prompt-android.png)
+![Ayarlayın ve PIN'i Onayla isteminin resmi](./media/pin-prompt-android.png)
 
 
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->

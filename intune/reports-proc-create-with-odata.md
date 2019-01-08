@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429721"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067457"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>OData akışına Power BI ile bir rapor oluşturma
 
@@ -59,9 +59,9 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebili
 5. Power BI Desktop’ı açın.
 6. **Veri Al** > **OData akışı**’nı seçin.
 7. Özel akış URL’sini **OData akışı** penceresindeki URL kutusuna yapıştırın.
-8. **Temel**’i seçin.
+8. **Temel**'i seçin.
 
-    ![OData akışı](media/reports-create-01-odatafeed.png)
+    ![Kiracınız için Intune veri ambarı için OData akışı](media/reports-create-01-odatafeed.png)
 
 9. **Tamam**’ı seçin.
 10. **Kuruluş hesabı**’nı seçin ve Intune kimlik bilgilerinizle oturum açın.
@@ -70,7 +70,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebili
 
 11. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
 
-    ![Gezgin](media/reports-create-02-loadentities.png)
+    ![Gezgin - veri ambarı tabloların listesini ekran görüntüsü](media/reports-create-02-loadentities.png)
 
 12. **cihazlar** ve **ownerTypes** tablolarını seçin.  **Yükle**’yi seçin. Power BI modele veri yükler.
 
@@ -78,7 +78,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebili
 
 Çözümlemek için birden fazla tabloyu içeri aktarabilirsiniz, yani yalnızca bir tablodaki verileri değil, farklı tablolardaki ilişkili verileri alabilirsiniz.  Power BI’ın sizin için ilişkileri arayan ve oluşturan **otomatik algılama** özelliği mevcuttur. Veri Ambarı’ndaki tablolar, Power BI’ın otomatik algılama özelliğiyle birlikte çalışabilecek şekilde derlenmiştir. Ancak Power BI ilişkileri otomatik olarak bulamasa bile bunları yönetebilirsiniz.
 
-![İlişkileri yönetme](media/reports-create-03-managerelationships.png)
+![Tablolar arasında ilişkiler ilgili veri yönetme](media/reports-create-03-managerelationships.png)
 
 1. **İlişkileri Yönet**’i seçin.
 2. Power BI ilişkileri henüz algılamadıysa **Otomatik algıla...** seçeneğine tıklayın.
@@ -99,7 +99,7 @@ Bir ağaç haritası, hiyerarşik verileri kutu içinde kutu olarak gösterir. H
 
 Artık kuruluşunuzdaki cihaz üreticileri dağılımını gösteren bir görseliniz var.
 
-![Verilerle ağaç haritası](media/reports-create-06-treemapwdata.png)
+![Verilerle - cihaz üreticileri dağılımını ağaç Haritası](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Bir filtre ekleme
 
@@ -111,7 +111,7 @@ Uygulamanızı kullanarak ilave sorular yanıtlayabilmek için ağaç haritanız
 
    Cihazlar tablosu altında **OwnerTypeKey** adlı bir veri alanı vardır. Bu veri alanı, cihazın şirkete ait veya kişisel olmasıyla ilgili bir kod barındırır. Bu filtrede kolay adlar kullanmayı tercih edeceğiniz için **ownerTypes** tablosunu bulun ve **ownerTypeName**’i sürükleyin. Bu örnek, veri modelinin tablolar arasındaki ilişkiyi nasıl desteklediğini gösterir.
 
-![Filtreyle ağaç haritası](media/reports-create-08_ownertype.png)
+![Ağaç Haritası filtresiyle - tablolar arasındaki ilişkileri destekler](media/reports-create-08_ownertype.png)
 
 Artık şirkete ait ve kişisel cihazlar arasında geçiş yapmak üzere kullanılacak bir filtreniz var. Dağılımın nasıl değiştiğini görmek için bu filtreyi kullanın.
 
