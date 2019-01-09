@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817169"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122596"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?
 
@@ -39,15 +39,14 @@ Intune ve Azure Active Directory; e-postaya, Office 365 hizmetlerine, Hizmet Ola
 Intune, cihazların uyumluluk durumunu değerlendiren cihaz uyumluluk ilkesi özellikleri sunar. Uyumluluk durumu, bunu kullanıcı şirket kaynaklarına erişmeye çalıştığında Azure Active Directory'de oluşturulmuş koşullu erişim ilkesini zorlamak için kullanan Azure Active Directory'ye bildirilir.
 
 Exchange Online ve diğer Office 365 ürünleri için cihaz tabanlı koşullu erişim ilkeleri, [Azure portalında](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) yapılandırılır.
-
--   [Azure Active Directory'de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) hakkında daha fazla bilgi edinin.
+-   Daha fazla bilgi edinin [gerektiren yönetilen cihazlar Azure Active Directory'de koşullu erişim ile](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices).
 
 -   [Intune cihaz uyumluluğu](device-compliance.md) hakkında daha fazla bilgi edinin.
 
--   [E-postayı, Office 365'i ve diğer hizmetleri Intune ile koşullu erişim kullanarak koruma](app-based-conditional-access-intune.md) hakkında daha fazla bilgi edinin.
+-   Daha fazla bilgi edinin [tarayıcıları koşullu erişim ile desteklenen Azure Active Directory'de](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers).
 
 > [!NOTE]
-> Android cihazlarda, Sharepoint Online için Cihaz Tabanlı Erişim'i etkinleştirdiğinizde, kullanıcıların kayıtlı cihazda **Tarayıcı Erişimini Etkinleştir** seçeneğini aşağıdaki şekilde etkinleştirmesi gerekir:
+> Android cihazlarda, kullanıcıların Sharepoint Online için cihaz tabanlı erişim etkinleştirdiğinizde ya da tarayıcı tabanlı Exchange Online'a erişimini etkinleştirmelisiniz **tarayıcı erişimini etkinleştir** kayıtlı cihazda seçeneğini etkinleştirmelidir:
 > 1. **Şirket Portal uygulamasını** başlatın.
 > 2. Üç nokta (...) veya donanım menüsü düğmesinden **Ayarlar** sayfasına gidin.
 > 3. **Tarayıcı Erişimi Etkinleştir** düğmesine basın. 
@@ -146,7 +145,9 @@ Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetene
 
 #### <a name="bring-your-own-device-byod"></a>Kendi Cihazını Getir (KCG)
 
--   **Çalışma alanına katılma ve Intune Yönetimi:** Burada kullanıcı kişisel cihazlarından şirket kaynaklarına ve hizmetlerine erişmek için katılabilirsiniz. Koşullu erişim ölçütlerini değerlendirmenin bir başka seçeneği olan cihaz düzeyinde ilkeler almak için, Çalışma alanına katılmayı ve cihazları Intune'a kaydetmeyi kullanabilirsiniz.
+-   **Çalışma alanına katılma ve Intune Yönetimi:** Burada kullanıcı kişisel cihazlarından şirket kaynaklarına ve hizmetlerine erişmek için katılabilirsiniz. Çalışma alanına katılma ve ayrıca koşullu erişim ölçütlerini değerlendirmenin bir başka seçeneği olan cihaz düzeyinde ilkeler almak için Intune MDM'ye cihaz kaydetme kullanabilirsiniz.
+
+Daha fazla bilgi edinin [cihaz Yönetimi Azure Active Directory'de](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview).
 
 ## <a name="app-based-conditional-access"></a>Uygulamaya bağlı koşullu erişim
 

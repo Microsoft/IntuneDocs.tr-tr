@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 2fda0fbc40137c8b5a2acd32cacf12bf7d04b0d0
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642566"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122613"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Karma Azure Active Directory’ye olan katılmış cihazları Intune ve Windows Autopilot kullanarak dağıtma (Önizleme)
 Karma Azure Active Directory alanına katılmış olan cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin.
@@ -204,7 +204,7 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
    - **Açıklama**: Profil için bir açıklama girin.
    - **Platform**: Seçin **Windows 10 ve üzeri**.
    - **Profil türü**: Seçin **etki alanına (Önizleme)**.
-3. Seçin **ayarları** ve sağlayan bir **bilgisayar adı ön eki**, **etki alanı adı**, ve **kuruluş birimi** DN biçiminde (isteğe bağlı). 
+3. Seçin **ayarları** ve sağlayan bir **bilgisayar adı ön eki**, **etki alanı adı**ve (isteğe bağlı) **kuruluş birimi** içinde[DN biçiminde](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 4. **Tamam** > **Oluştur**'u seçin. Profil oluşturulur ve listede görüntülenir.
 5. Profili atamak için [Cihaz profili atama](device-profile-assign.md#assign-a-device-profile) altındaki adımları izleyin. 
 

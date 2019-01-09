@@ -15,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b12cec7a01d809eb5a6b6523a73dd224c10c972e
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3f19425fad2cd5d8d2d832eac42c84f4a0f827b0
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817203"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122630"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium'u Intune ile tümleştirme
 
@@ -64,24 +64,24 @@ Onay ve Azure Active Directory uygulamaları hakkında daha fazla bilgi için bk
 
 ## <a name="to-set-up-zimperium-integration"></a>Zimperium tümleştirmesini ayarlamak için
 
-1.  Git [Zimperium MTD konsolunda](https://sso.zimperium.com/signon/aad/) ve kimlik bilgilerinizle oturum açın. Zimperium tümleştirme Kurulum işlemi gerçekleştirmek için genel Yönetici rolüne sahip bir Azure Active Directory kullanıcının oturum açması gerekir. Bu tek seferlik Kurulum işlemi, kuruluşunuzda Intune ile iletişim kurmak Zimperium uygulama izni vermek için genel yönetici hakları kullanır. 
+1.  [Zimperium MTD konsolu](https://sso.zimperium.com/signon/aad/)'na gidin ve kimlik bilgilerinizle oturum açın. Zimperium tümleştirme Kurulum işlemi gerçekleştirmek için genel Yönetici rolüne sahip bir Azure Active Directory kullanıcının oturum açması gerekir. Bu tek seferlik Kurulum işlemi, kuruluşunuzda Intune ile iletişim kurmak Zimperium uygulama izni vermek için genel yönetici hakları kullanır. 
 
 2.  Soldaki menüden **Yönetim**'i seçin.
 
-3.  Seçin **MDM ayarları** sekmesi.
+3.  **MDM ayarları** sekmesini seçin.
 
 4.  **MDM Ekle**'yi, sonra **MDM sağlayıcı** listesinden **Microsoft Intune**'u seçin.
 
-5.  MDM hizmeti olarak Microsoft Intune sonra **Microsoft Intune Yapılandırması** penceresi açılır öğesini **Azure Active Directory Ekle** her seçeneği: **Zimperium zConsole**, **Zıps iOS ve Android uygulamaları** Intune ve Azure AD ile Azure AD çoklu oturum açma ile iletişim kurma yetkisi vermek için.
+5.  MDM hizmeti olarak Microsoft Intune sonra **Microsoft Intune Yapılandırması** penceresi açılır öğesini **Azure Active Directory Ekle** her seçeneği: **Zimperium zConsole**, **Zıps iOS ve Android uygulamaları** Intune ve Azure AD ile Azure AD çoklu oturum açma ile iletişim kurma yetkisi vermek için.
 
     > [!IMPORTANT]  
     > Zimperium zConsole, Zıps iOS ve Android uygulamalarını Intune ile tümleştirme sürecini tamamlamak için eklemeniz gerekir.
 
-6.  Seçin **kabul** Zimperium uygulamasına Intune ve Azure Active Directory ile iletişim kurma yetkisi vermek için.
+6.  Zimperium uygulamasına Intune ve Azure Active Directory ile iletişim kurma yetkisi vermek için **Kabul Et**'i işaretleyin.
 
 7.  Siz ekledikten sonra **Zimperium zConsole** ve **Zıps iOS ve Android** uygulamaları Azure AD'ye, Azure AD güvenlik gruplarına ekleyin. Bu işlem, Zimperium'un Azure AD güvenlik grubunu kendi hizmetiyle eşitleyebilmesini sağlar.
 
-8.  Seçin **son** yapılandırmasını kaydetmek ve İlk Azure AD güvenlik grubu eşitlemesini başlatmak için.
+8.  Yapılandırmayı kaydetmek ve ilk Azure AD güvenlik grubu eşitlemesini başlatmak için **Sonlandır**'ı seçin.
 
 9.  Dışında Zimperium MTD konsolunda oturum açın.
 
