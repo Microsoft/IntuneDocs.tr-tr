@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
+ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626093"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54098326"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Android kurumsal bilgi noktası cihazları Intune kaydını ayarlama
 
@@ -112,7 +112,7 @@ NFC destekleyen Android 5.1 ve üzeri cihazlarda özel olarak biçimlendirilmiş
 
 ### <a name="enroll-by-using-a-token"></a>Belirteç kullanarak kaydetme
 
-Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. **aft#setup** kayıt yöntemi kullanıldığında Android 6.1 ve üstü sürümler QR kodu taramasından da yararlanabilir.
+Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. Android 6.1 ve üzeri sürümleri kullanılırken tarama QR kodunu da yararlanabilir **afw #setup** kayıt yöntemi.
 
 1. Silinmiş cihazınızı açın.
 2. **Hoş Geldiniz** ekranında dili seçin.
