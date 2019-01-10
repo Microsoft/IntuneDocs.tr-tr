@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186656"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149636"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows bilgisayarlar için kullanıcı-cihaz bağlamayı yönetme
 
@@ -43,7 +43,7 @@ Bir kullanıcıyı bir bilgisayara bağlamak için:
 
    - Bilgisayarın bağlı olduğu bir kullanıcı varsa bilgisayarı bu kullanıcıya bağlı olarak bırakmak için **İptal**'i seçin.
 
-   - Geçerli kullanıcının (varsa) bağlantısını kaldırmak için <strong>Bağlantıyı Kaldır **&gt; **Tamam</strong>’ı seçin.
+   - Varsa geçerli kullanıcının bağlantısını kaldırmak için <strong>bağlantıyı Kaldır **&gt;** Tamam</strong>.
 
    - Bilgisayarı yeni bir kullanıcıya bağlamak için **Tüm kullanıcılar** listesinde bir kullanıcı seçin. Kullanıcı verilerinin doğru olduğundan emin olun ve ardından **Tamam**'ı seçin.
 
