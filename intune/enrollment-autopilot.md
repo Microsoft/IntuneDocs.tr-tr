@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9ac60cd3355b27cd6c99e0e0255e08d7335127e8
-ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
+ms.openlocfilehash: 636767a783f3c2f2454423f0f6bbda9da781c8e2
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54098343"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149739"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -100,6 +100,9 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 1. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri**’ni ve daha sonra bir profili seçin.
 2. Profile ait dikey pencerede **Atamalar**’ı seçin. 
 3. **Grupları seçin**’e tıklayın, daha sonra **Grupları seçin** dikey penceresinde uygulamayı atamak istediğiniz grubu/grupları seçin ve **Seçin**’e tıklayın.
+
+> [!NOTE]
+> Intune atanan gruplar yeni cihazlar için düzenli aralıklarla denetleyin ve ardından bu cihazlara profil atama işlemi başlar. Bu işlemin tamamlanması birkaç dakika sürebilir. Bir cihazı dağıtmadan önce bu işlemin tamamlandığını emin olun.  Altında denetleyebilirsiniz **cihaz kaydı** > ** Windows Kayıt ** > **cihazları** nerede döndürüldüğünü görürsünüz "Atama" için "Unassigned" değiştirme profili durumu ve son olarak için "Atandı."
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Bir Autopilot dağıtım profilini düzenleme
 Bir Autopilot dağıtım profili oluşturduktan sonra bu profilin bazı kısımlarını düzenleyebilirsiniz.   
