@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 636767a783f3c2f2454423f0f6bbda9da781c8e2
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: 17e60e489b024b5f70c0c3c9a1fe564ed227172e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210865"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -79,20 +79,20 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 3. Atanan gruplardaki tüm cihazların otomatik olarak Autopilot'a dönüştürülmesini istiyorsanız **Hedeflenen tüm cihazları Autopilot'a dönüştür** seçeneğini **Evet** olarak ayarlayın. Atanan gruplardaki Autopilot olmayan tüm cihazlar Autopilot dağıtım hizmeti ile kaydedilir. Kaydın işlenmesi için 48 saat kadar bekleyin. Kaydı kaldırılıp sıfırlandığında Autopilot cihazı kaydeder. Bir cihaz bu şekilde kaydedildikten sonra bu seçeneğin devre dışı bırakılması veya profil atamasının kaldırılması cihazı Autopilot dağıtım hizmetinden kaldırmaz. Bunun yerine [cihazı doğrudan kaldırmanız](enrollment-autopilot.md#delete-autopilot-devices) gerekir.
 4. **Dağıtım modu** için şu iki seçenekten birini belirtin:
     - **Kullanıcı temelli**: Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkilidir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekir.
-    - **Kendi kendine dağıtım (önizleme)**: (en son [Windows 10 Insider Önizleme Derlemesini](https://docs.microsoft.com/windows-insider/at-work-pro/) gerektirir) Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkili değildir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekmez.
+    - **Kendi kendine (Önizleme) dağıtımı**: (Windows 10, 1809 veya sonraki bir sürümü gerektirir) bu profile sahip cihazların olmayan ilişkili kullanıcı ile cihazı kaydetme. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekmez.
 5. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
 6. **İlk kez çalıştırma deneyimi (OOBE)** öğesini seçin, aşağıdaki seçenekleri yapılandırın ve **Kaydet**’e tıklayın:
     - **Dil (bölge)**\*: Cihaz için kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
     - **Klavyeyi otomatik olarak yapılandırma**\*: Varsa bir **dil (bölge)** olan seçili seçin **Evet** için klavye seçimi sayfasını atlayın. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
     - **Son Kullanıcı Lisans Sözleşmesi (EULA)**: (Windows 10, 1709 veya üzeri) EULA'ın kullanıcılara gösterilip gösterilmeyeceğini isteyip istemediğinizi seçin.
     - **Gizlilik ayarları**: Gizlilik ayarlarının kullanıcılara gösterilip gösterilmeyeceğini isteyip istemediğinizi seçin.
-    - **Değişiklik hesabı seçenekleri (yalnızca Windows Insider) Gizle**: Seçin **Gizle** değişiklik hesabı seçenekleri şirket, oturum açma ve etki alanı hata sayfalarında görüntülenmesini önlemek için. Bu seçenek, [Azure Active Directory’de şirket markasının yapılandırılmasını](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) gerektirir.
+    - **Değişiklik hesabı seçeneklerini gizle (Windows 10, 1809 veya sonraki bir sürümü gerektirir)**: Seçin **Gizle** değişiklik hesabı seçenekleri şirket, oturum açma ve etki alanı hata sayfalarında görüntülenmesini önlemek için. Bu seçenek, [Azure Active Directory’de şirket markasının yapılandırılmasını](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) gerektirir.
     - **Kullanıcı hesabı türü**: Kullanıcının hesap türünü seçin (**yönetici** veya **standart** kullanıcı).
-    - **Bilgisayar adı (yalnızca Windows Insider) şablon**: Seçin **Evet** bir cihaz kayıt sırasında adlandırırken kullanılacak bir şablon oluşturmak için. Adlar en çok 15 karakter olmalıdır; harf, rakam ve tire içerebilir. Ancak tamamen sayıdan oluşamaz. Donanıma özgü seri numarası eklemek için [%SERIAL% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanın. Veya x değerinin eklenecek basamak sayısına karşılık geldiği [%RAND:x% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanarak rastgele bir sayı dizesi ekleyin. 
+    - **(Windows 10, 1809 veya sonraki bir sürümü gerektirir) bilgisayar adı şablon**: Seçin **Evet** bir cihaz kayıt sırasında adlandırırken kullanılacak bir şablon oluşturmak için. Adlar en çok 15 karakter olmalıdır; harf, rakam ve tire içerebilir. Ancak tamamen sayıdan oluşamaz. Donanıma özgü seri numarası eklemek için [%SERIAL% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanın. Veya x değerinin eklenecek basamak sayısına karşılık geldiği [%RAND:x% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanarak rastgele bir sayı dizesi ekleyin. 
 
 6. Profili oluşturmak için **Oluştur**’a tıklayın. Autopilot dağıtım profili artık cihazlara atanmak üzere hazırdır.
 
-*Hem **Dil (Bölge)** hem de **Klavyeyi otomatik olarak yapılandır** seçenekleri, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir (en son [Windows 10 Insider Önizleme Derlemesini](https://docs.microsoft.com/windows-insider/at-work-pro/) gerektirir).
+* Hem **dil (bölge)** ve **klavyeyi otomatik olarak yapılandırma** yalnızca seçerseniz, kullanılabilir **Self (Önizleme) dağıtımı** için **dağıtım modu**  (Windows 10, 1809 veya sonraki bir sürümü gerektirir).
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Autopilot dağıtım profilini bir cihaz grubuna atama
@@ -128,7 +128,7 @@ Atanmamış cihazlar için uyarı görmek istiyorsanız [Azure portalında Intun
 
 Belirli bir Autopilot cihazına kullanıcı atayabilirsiniz. Bu atama, Windows kurulumu sırasında [şirket markalı](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) oturum açma sayfasında Azure Active Directory’den bir kullanıcıyı önceden doldurur. Ayrıca özel bir karşılama adı ayarlamanıza imkan verir. Windows oturum açmayı önceden doldurmaz ve değiştirmez. Yalnızca lisanslı Intune kullanıcıları bu yolla atanabilir.
 
-Önkoşullar: Azure Active Directory Şirket portalı yapılandırılmış ve en son [Windows 10 Insider Önizleme derlemesi](https://docs.microsoft.com/windows-insider/at-work-pro/).
+Önkoşullar: Azure Active Directory Şirket portalı yapılandırılmış ve Windows 10, 1809 veya sonraki bir sürümü.
 
 1. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar** > cihazı seçin **Kullanıcı ata**’yı seçin.
 

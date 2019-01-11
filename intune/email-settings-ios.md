@@ -1,55 +1,58 @@
 ---
 title: Microsoft Intune - Azure’da iOS cihazları için e-posta ayarları | Microsoft Docs
-description: Exchange sunucularını kullanan ve Azure Active Directory’den öznitelik alan bir cihaz yapılandırma e-posta profili oluşturun. Microsoft Intune kullanarak ayrıca SSL’yi etkinleştirebilir, sertifika veya kullanıcı adı/parola ile kullanıcıların kimliği doğrulayabilir ve iOS cihazlarda e-posta eşitleyebilirsiniz.
+description: Yapılandırmak ve iOS cihazlara Exchange sunucularını kullanarak ve Azure Active Directory öznitelikleri alınırken dahil olmak üzere Microsoft Intune ekleyin tüm e-posta ayarları bir listesini görürsünüz. SSL'yi, sertifikalar veya kullanıcı adı/parola ile kullanıcıların kimliğini doğrulamak ve Intune cihaz yapılandırma profilleri kullanarak iOS cihazlarda e-postaları eşitler.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b3aa3e7a4cd79ab990afe7f02a1d6960bc66494a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: c54ccf5bba53d5d638f011d3bd0d308adf6cb013
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180196"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203374"
 ---
-# <a name="email-profile-settings-for-ios-devices---intune"></a>iOS cihazlar için e-posta profili ayarları - Intune
+# <a name="email-profile-settings-for-ios-devices-in-intune"></a>Intune'da iOS cihazları için e-posta profili ayarları
 
-iOS çalıştıran cihazlarınızı yapılandırmak için e-posta profili ayarlarını kullanın.
+Microsoft Intune oluşturma ve bir e-posta sunucusuna bağlanmak için kullanıcıların kimliklerini nasıl doğrulayacaklarını seçin, e-posta yapılandırma S/MIME şifreleme ve daha fazla bilgi için kullanın.
 
-> [!IMPORTANT]
-> S/MIME özelliğinde, bu makalede açıklanan bazı geliştirmeler yapıyoruz. Bunun sonucu olarak, S/MIME özelliği Intune'da geçici olarak kaldırıldı. Özellik kullanıma sunulduğunda bu notu kaldıracağız.
+Bu makale, listeler ve iOS çalıştıran cihazlar için kullanılabilir tüm e-posta ayarlarını açıklar. Anında iletme veya bu e-posta ayarları iOS cihazlarına dağıtmak için bir cihaz yapılandırma profili oluşturabilirsiniz.
+
+## <a name="before-you-begin"></a>Başlamadan önce
+
+[Bir cihaz yapılandırma profili oluşturma](email-settings-configure.md#create-a-device-profile).
 
 ## <a name="email-settings"></a>E-posta ayarları
 
-- **E-posta sunucusu**: Exchange sunucunuzun konak adını girin.
-- **Hesap adı**: E-posta hesabı için görünen adı girin. Bu ad, cihazlarda kullanıcılara gösterilir.
-- **AAD’den kullanıcı adı özniteliği**: Bu ad, Intune’un Azure Active Directory’den (AAD) aldığı özniteliktir. Intune, bu profil tarafından kullanılan kullanıcı adını dinamik olarak oluşturur. Seçenekleriniz şunlardır:
-  - **Kullanıcı Asıl Adı**: Adı alır; örneğin `user1` veya `user1@contoso.com`
-  - **Birincil SMTP adresi**: Adı e-posta adresi biçiminde alır; örneğin `user1@contoso.com`
-  - **sAM Hesap Adı**: Etki alanı gerektirir; örneğin `domain\user1`.
+- **E-posta sunucusu**: Exchange sunucunuzun konak adı girin.
+- **Hesap adı**: E-posta hesabı için görünen ad girin. Bu ad, cihazlarda kullanıcılara gösterilir.
+- **Aad'den kullanıcı adı özniteliği**: Bu ad, Azure Active Directory (AAD gelen) Intune alır özniteliğidir. Intune, bu profil tarafından kullanılan kullanıcı adını dinamik olarak oluşturur. Seçenekleriniz şunlardır:
+  - **Kullanıcı asıl adı**: Adı aşağıdaki gibi alır `user1` veya `user1@contoso.com`
+  - **Birincil SMTP adresi**: Adı gibi e-posta adresi biçiminde alır `user1@contoso.com`
+  - **sAM hesabı adı**: Etki alanı gibi gerektirir `domain\user1`.
 
     Şunları da girin:  
-    - **Kullanıcı etki alanı adı kaynağı**: **AAD** (Azure Active Directory) veya **Özel**’i seçin.
+    - **Kullanıcı etki alanı adı kaynağı**: Seçin **AAD** (Azure Active Directory) veya **özel**.
 
       Öznitelikleri **AAD**’den almayı seçerseniz şunları girin:
-      - **AAD’den kullanıcı etki alanı adı**: Kullanıcının **Tam etki alanı adı** veya **NetBIOS adı** özniteliğini alma arasında seçim yapın
+      - **Kullanıcı etki alanı adı AAD özniteliğinden**: Almak için seçtiğiniz **tam etki alanı adı** veya **NetBIOS adı** kullanıcı özniteliği
 
       **Özel** öznitelikler kullanmayı seçerseniz şunları girin:
-      - **Kullanılacak özel etki alanı adı**: Intune’un etki alanı adı olarak kullanacağı bir değer seçin; örneğin `contoso.com` veya `contoso`
+      - **Kullanılacak özel etki alanı adı**: Intune için etki alanı adı gibi kullanan bir değer girin `contoso.com` veya `contoso`
 
-- **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) seçin. Exchange’de oturum açmak için birincil SMTP adresini kullanmak amacıyla **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin.
+- **Aad'den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) seçin. Exchange’de oturum açmak için birincil SMTP adresini kullanmak amacıyla **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin.
 - **Kimlik doğrulama yöntemi**: E-posta profili tarafından kullanılan kimlik doğrulama yöntemi olarak **Kullanıcı Adı ve Parola**’yı veya **Sertifikalar**’ı seçin. Azure çok faktörlü kimlik doğrulaması desteklenmez.
   - **Sertifika**’yı seçtiyseniz, Exchange bağlantısının kimliğini doğrulamak için kullanılan, daha önce oluşturduğunuz istemci SCEP veya PKCS sertifika profilini seçin.
-- **SSL**: **Etkinleştir** olarak belirlenirse e-posta gönderirken, alırken ve Exchange sunucusuyla iletişim kurulurken Güvenli Yuva Katmanı (SSL) iletişimi kullanılır.
-- **OAuth**: **Etkinleştir** olarak belirlenirse e-posta gönderirken, alırken ve Exchange ile iletişim kurulurken Open Authorization (OAuth) iletişimi kullanılır. OAuth sunucunuz sertifika kimlik doğrulaması kullanıyorsa, **Kimlik doğrulama yöntemi** olarak **Sertifika**’yı belirleyin ve sertifikayı profile ekleyin. Diğer durumlarda **Kimlik doğrulama yöntemi** olarak **Kullanıcı adı ve parola**’yı belirleyin. OAuth kullanılırken şunları yaptığınızdan emin olun:
+- **SSL**: **Etkinleştirme** e-posta alırken ve Exchange sunucusuyla iletişim kurarken gönderirken, Güvenli Yuva Katmanı (SSL) iletişimini kullanır.
+- **OAuth**: **Etkinleştirme** açık yetkilendirme (OAuth) iletişim e-posta alırken ve Exchange ile iletişim kurarken gönderirken kullanır. OAuth sunucunuz sertifika kimlik doğrulaması kullanıyorsa, **Kimlik doğrulama yöntemi** olarak **Sertifika**’yı belirleyin ve sertifikayı profile ekleyin. Diğer durumlarda **Kimlik doğrulama yöntemi** olarak **Kullanıcı adı ve parola**’yı belirleyin. OAuth kullanılırken şunları yaptığınızdan emin olun:
 
   - Bu profili kullanıcılarınıza hedeflemeden önce e-posta çözümünüzün OAuth standardını desteklediğini onaylayın. Office 365 Exchange Online, OAuth standardını destekler. Şirket içi Exchange ve diğer iş ortağı veya üçüncü taraf çözümler ise OAuth’u desteklemeyebilir. Şirket içi Exchange, Modern Kimlik Doğrulaması için yapılandırılabilir ([Şirket İçi Exchange için Karma Modern Kimlik Doğrulaması Duyurusu](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/) blog gönderisine bakın).
 
@@ -66,12 +69,32 @@ iOS çalıştıran cihazlarınızı yapılandırmak için e-posta profili ayarla
   > 1. Hedeflenmiş cihazlara yeni bir profil verilir.
   > 2. Son kullanıcılardan kimlik bilgilerini yeniden girmeleri istenir.
 
-- **S/MIME**: S/MIME imzalama kullanarak giden e-posta göndermek için **S/MIME'yi etkinleştirin**. Etkinleştirildiğinde, şifrelenmiş e-posta alabilen alıcılara gönderdiğiniz e-postaları şifreleyebilir ve göndericilerden aldığınız e-postaların şifresini çözebilirsiniz.
-  - **Sertifika**’yı seçerseniz Exchange bağlantısının kimliğini doğrulamak ve/veya e-posta iletilerini şifrelemek için mevcut bir PKCS sertifika profilini seçin.
-- **Eşitlenecek e-posta miktarı**: Eşitlemek istediğiniz e-posta için gün sayısını seçin. Veya **Sınırsız**’ı seçerek kullanılabilir tüm e-postaları eşitleyin.
-- **İletilerin diğer e-posta hesaplarına taşınmasına izin ver**: **Etkinleştir** olarak belirlenirse, kullanıcıların e-posta iletilerini cihazlarında yapılandırdıkları farklı hesaplara taşımalarına izin verilir.
-- **Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver**: **Etkinleştir** olarak belirlenirse, kullanıcıların e-posta göndermek için varsayılan hesap olarak bu profili seçmelerine izin verilir. Üçüncü taraf uygulamaların, örneğin e-postaya dosya eklemek için yerel e-posta uygulamasında e-posta açmasına izin verilir.
-- **Son kullanılan e-posta adreslerini eşitle**: **Etkinleştir** seçeneği, kullanıcıların cihazda son kullanılan e-posta adreslerinin listesini sunucuyla eşitlemelerine olanak tanır.
+- **S/MIME**: **S/MIME'yi etkinleştir** kullanıcıların oturum açmak ve/veya iOS yerel posta uygulamasında e-posta şifreleme izin vermek için. 
+
+  S/MIME içeren bir e-posta iletisi kullandığınızda, gönderen ve bütünlüğü güvenilirliğini ve ileti gizliliğini onaylayın.
+
+  - **S/MIME imzalama etkinleştirilmiş**: Seçin **etkinleştirme** dijital olarak giden e-posta girdiğiniz hesap için oturum açmasına izin vermek için. İletileri almasına yardımcı kullanıcılar imzalama ileti belirli gönderen ndan birisi göndereni gibi davranan ve gelen emin olun. **Devre dışı** iletinin dijital olarak oturum açmasına izin vermez.
+    - **Kullanıcı ayarı değiştirmek izin**: Seçin **etkinleştirme** S/MIME imzalama davranışını değiştirmek kullanıcıların. **Devre dışı** kullanıcıların yapılandırılmış ayar S/MIME imzalama değiştirmesini engeller. İOS 12 bulunan ve daha yeni.
+
+  - **S/MIME imzalama sertifikası**: E-posta iletileri imzalamak için kullanılan bir varolan PKCS veya SCEP sertifika profilini seçin.
+    - **Kullanıcı ayarı değiştirmek izin**: Seçin **etkinleştirme** kullanıcıların imzalama sertifikasını değiştirilecek. **Devre dışı** kullanıcıların imzalama sertifikasının değiştirmelerini engeller ve kullanıcılar, yapılandırdığınız sertifikayı kullanmak için zorlar. İOS 12 bulunan ve daha yeni.
+
+  - **Varsayılan olarak şifreleme**: **Etkinleştirme** varsayılan davranış olarak tüm iletileri şifreler. **Devre dışı** tüm iletileri varsayılan davranış olarak şifrelemez.
+    - **Kullanıcı ayarı değiştirmek izin**: Seçin **etkinleştirme** kullanıcıların varsayılan şifreleme davranışını değiştirmesine izin vermek için. **Devre dışı** kullanıcıların varsayılan davranışı şifreleme değiştirmesini engeller ve kullanıcılar, yapılandırdığınız ayarını kullanmak için zorlar. İOS 12 bulunan ve daha yeni.
+
+  - **İleti başına şifrelemeyi zorlama**: İleti başına şifreleme hangi e-postalar gönderilmeden önce şifrelenir seçmelerini sağlar. Seçin **etkinleştirme** oluştururken yeni bir e-posta, ileti başına şifreleme seçeneği gösterilecek. Kullanıcılar, ardından kabul et veya ileti başına şifreleme kullanmamak seçebilirsiniz. **Devre dışı** gösteren ileti başına şifreleme seçeneği engeller.
+
+    Varsa **şifreleme varsayılan olarak** ayarı etkinleştirildiğinde, ileti başına şifreleme etkinleştirilmesi, kullanıcıların her ileti şifreleme dışında iyileştirilmiş sağlar. Varsa **şifreleme varsayılan olarak** ayarı devre dışı, ileti başına şifrelemeyi etkinleştirme şifreleme her ileti kabul etmek kullanıcıların sağlar.
+
+  - **S/MIME şifreleme sertifikası**: E-posta iletileri şifrelemek için kullanılan bir varolan PKCS veya SCEP sertifika profilini seçin.
+    - **Kullanıcı ayarı değiştirmek izin**: Seçin **etkinleştirme** kullanıcıların şifreleme sertifikasını değiştirilecek. **Devre dışı** kullanıcıların şifreleme sertifikası değiştirmelerini engeller ve kullanıcılar, yapılandırdığınız sertifikayı kullanmak için zorlar. İOS 12 bulunan ve daha yeni.
+- **Eşitlenecek e-posta miktarı**: Eşitlemek istediğiniz e-postanın gün sayısını seçin. Veya **Sınırsız**’ı seçerek kullanılabilir tüm e-postaları eşitleyin.
+- **İletilerin diğer e-posta hesaplarına taşınmasına izin ver**: **Etkinleştirme** kullanıcıların cihazlarında yapılandırılmış kullanıcılar e-posta iletilerini farklı hesaplar arasında taşımasına izin verir.
+- **E-postanın üçüncü taraf uygulamalardan gönderilmesine izin ver**: **Etkinleştirme** kullanıcıların bu profili e-posta göndermek için varsayılan hesap olarak seçmesini sağlar. Üçüncü taraf uygulamaların, örneğin e-postaya dosya eklemek için yerel e-posta uygulamasında e-posta açmasına izin verilir.
+- **Son kullanılan e-posta adreslerini Eşitle**: **Etkinleştirme** kullanıcıların sunucu ile bir cihazda yakın zamanda kullanılmış e-posta adreslerinin listesini eşitlemek olanak tanır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Intune’da e-posta ayarlarını yapılandırma](email-settings-configure.md)
+
+Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Ardından, [profili atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
+
+E-posta ayarlarını yapılandırmak [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md), ve [Windows Phone 8.1](email-settings-windows-phone-8-1.md) cihazlar.
