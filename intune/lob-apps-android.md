@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d1bc4762f46062cc80bb584da0a71423140c234
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 8ed3bb57010535806d082f706b317839747fa881
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210831"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir Android iş kolu uygulaması ekleme
 
@@ -31,6 +31,9 @@ ms.locfileid: "53642787"
 
 > [!Note]
 > Yönetilen Google Play mağazasındaki LOB uygulamaları hakkında daha fazla bilgi edinmek için bkz. [Yönetilen Google Play mağazasından bir iş kolu uygulaması ile çalışma](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store). 
+
+> [!Note]
+> İçin Android for Work cihazlar izleyin [bu makalede](https://docs.microsoft.com/intune/apps-add-android-for-work). 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1. adım: Yazılım Kurulum dosyasını belirtme
 

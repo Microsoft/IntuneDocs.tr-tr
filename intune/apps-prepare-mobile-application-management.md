@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210763"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -98,7 +98,7 @@ Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğini
 |Ekran yakalamayı engelle (yalnızca Android)|X|X|
 |Cihaz kaydı olmadan MAM desteği|X|X|
 |Tam Temizleme|X|X|
-|Seçmeli Silme <br></br>**Not:** iOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
+|Seçmeli Silme <br><br>**Not:** İOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
 |“Farklı Kaydet”i önleme|X||
 |Hedeflenen Uygulama Yapılandırması|X||
 |Çoklu Kimlik Desteği|X||
@@ -115,6 +115,6 @@ Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğini
 
 Uygulama koruma ilkeleri ve Intune hakkında daha fazla bilgi edinmek için aşağıdaki konulara bakın:
 
-  - [Android uygulama sarmalama aracı](app-wrapper-prepare-android.md)</br>
-  - [iOS uygulama sarmalama aracı](app-wrapper-prepare-ios.md)</br>
+  - [Android uygulama sarmalama aracı](app-wrapper-prepare-android.md)<br>
+  - [iOS uygulama sarmalama aracı](app-wrapper-prepare-ios.md)<br>
   - [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](app-sdk.md)

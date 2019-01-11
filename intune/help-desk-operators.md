@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190311"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203561"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Şirketinizdeki kullanıcılara yardımcı olmak için sorun giderme portalını kullanma
 
@@ -45,11 +45,11 @@ Bir kullanıcı, Intune ile ilgili teknik bir sorun için destekle bağlantı ku
 
 Sorun giderme bölmesinde **Kullanıcı seçin**’e tıklayarak kullanıcı bilgilerini görüntüleyin. Kullanıcı bilgileri, kullanıcıların ve cihazlarının geçerli durumunu anlamanıza yardımcı olabilir.  
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **Sorun gider**’i seçin.
 4. Sorun gidermek üzere bir kullanıcı belirlemek için **Seçin**’e tıklayın.
-5. Adını veya e-posta adresini yazarak bir kullanıcı seçin. **Seçin**’e tıklayın. Kullanıcı için sorun giderme bilgileri, Sorun Giderme bölmesinde görüntülenir. Bilgiler aşağıdaki tablolarda açıklanmıştır.
+5. Adını veya e-posta adresini yazarak bir kullanıcı seçin. Tıklayın **seçin**. Kullanıcı için sorun giderme bilgileri, Sorun Giderme bölmesinde görüntülenir. Bilgiler aşağıdaki tablolarda açıklanmıştır.
 
 > [!Note]  
 > **Sorun giderme** bölmesine tarayıcınızı [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) adresine yönlendirerek de erişebilirsiniz.
@@ -81,7 +81,7 @@ Cihaz çalıştıran uygulamalar
 | Özellik      | Açıklama                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ad          | Uygulamanın adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| İşletim sistemi            | Cihazda yüklü işletim sistemi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Tür          | Her uygulama için bir atama türü seçebilirsiniz.  <br> **Kullanılabilir** Kullanıcılar Şirket Portalı’ndan veya web sitesinden uygulamayı yükler.  <br> **Uygulanamaz** - Uygulama yüklenmez veya Şirket Portalı’nda gösterilmez. <br> **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.  <br> **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. |
 | Son değiştirme | Cihaz türünün adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
@@ -98,7 +98,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 | Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
 | Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
 | Uygulama yükleme | Söz konusu cihazda başarılı veya başarısız bir yükleme olup olmadığını gösterir. |
-| İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim Sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
 | İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
 | Son iade      | Cihaz türünün adı.                                                                                                     |
 
@@ -144,7 +144,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 | Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
 | Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
 | Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim Sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
 | İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
 | Son İade      | Cihaz türünün adı.                                                                                                     |
 
@@ -160,7 +160,7 @@ Uyumluluk ilkelerinin özellikleri.
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
 | Ad          | Uygulamanın adı.                                                                                                        |
-| İşletim sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
 | İlke Türü   | Cihaz sahiplik türü (**Şirket**, **Kişisel** ve **Bilinmiyor**).                                               |
 | Son değiştirme | Cihaz türünün adı.                                                                                                     |
 
@@ -176,7 +176,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 | Sahibi          | Cihaz sahiplik türü (**Şirket**, **Kişisel** ve **Bilinmiyor**).                                               |
 | Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
 | Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim Sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
 | İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
 | Son iade      | Cihaz türünün adı.                                                                                                     |
 
@@ -205,7 +205,7 @@ Yapılandırma ilkelerinin özellikleri.
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
 | Ad          | Uygulamanın adı.                                                                                                        |
-| İşletim sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
 | İlke Türü   | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
 | Son değiştirme | Cihaz türünün adı.                                                                                                     |
 
@@ -221,7 +221,7 @@ Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullan�
 | Sahibi          | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
 | Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
 | Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| İşletim sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
+| İşletim Sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
 | İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
 | Son iade      | Cihaz türünün adı.                                                                                                     |
 
@@ -246,7 +246,7 @@ Kayıt Hataları tablosu, başarısız olan kayıt denemelerini listeler. Aşağ
 | Tablo sütunu | Açıklama |
 |-------------|----------|
 | Kayıt başlangıç | Kullanıcının kaydı ilk kez başlattığı saat. |
-| İşletim sistemi | Cihazın işletim sistemi. |
+| İşletim Sistemi | Cihazın işletim sistemi. |
 | İşletim sistemi sürümü | Cihazın işletim sistemi sürümü. |
 | hata | Hatanın nedeni. |
 
@@ -254,7 +254,7 @@ Kayıt Hataları tablosu, başarısız olan kayıt denemelerini listeler. Aşağ
 
 Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 
-| Bölüm | Açıklama |
+| Section | Açıklama |
 |-------------|----------|
 | Hata ayrıntıları | Hatanın daha ayrıntılı bir açıklaması. |
 | Toplam düzeltme sayısı | Hatayı gidermek için önerilen adımlar. Bazı hataların düzeltmeleri olmayabilir. |
@@ -271,6 +271,15 @@ Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 | Kayıt yetkilendirmesi başarısız oldu | Şirket portalının eski bir sürümü kullanılarak bir kayıt girişiminde bulunuldu. |
 | Cihaz desteklenmiyor | Cihaz, Intune kaydı için en düşük gereksinimleri karşılamıyor. |
 | Kayıt kısıtlamaları karşılanmadı | Bu kayıt, yönetici tarafından yapılandırılmış bir kayıt kısıtlaması nedeniyle engellendi. |
+| Cihaz sürümü çok düşük | Yönetici, daha yüksek bir cihaz sürümü gerektiren bir kayıt kısıtlama yapılandırdı. |
+| Cihaz sürümü çok yüksek | Yönetici, daha düşük bir cihaz sürümü gerektiren bir kayıt kısıtlama yapılandırdı. |
+| Cihaz olarak kişisel kaydedilemiyor. | Yönetici kişisel kayıtları engellemek için bir kayıt kısıtlama yapılandırmış ve başarısız cihaza şirkete önceden tanımlanmış değildi. |
+| Engellenen cihaz platformu | Yönetici bu cihazın platform engelleyen bir kayıt kısıtlama yapılandırdı. |
+| Toplu belirteç süresi doldu | Sağlama Paketi toplu belirteç süresi doldu. |
+| AutoPilot cihaz veya ayrıntılar bulunamadı | Autopilot cihazı kaydetmeye çalışırken bulunamadı. |
+| AutoPilot profili bulunamadı veya atanmadı | Cihaz etkin Autopilot profili yok. |
+| Beklenmeyen AutoPilot kayıt yöntemi | Cihaz, izin verilen olmayan bir yöntem kullanılarak kaydetmeye çalıştı. |
+| Autopilot cihaz kaldırıldı | Cihaz kaydetmeye çalıştıklarında bu hesap için Autopilot programından kaldırıldı. |
 | Cihaz sınırına ulaşıldı | Bu kayıt, yönetici tarafından yapılandırılmış bir cihaz sınırı nedeniyle engellendi. |
 | Apple ekleme işlemi | Intune bir Apple MDM anında iletme sertifikası eksik olduğu veya sertifikanın süresi dolduğu için tüm iOS cihazlarının kaydı dönemde engellendi. |
 | Cihaz önceden kayıtlı değil | Kurumsal önceden şirkete ait olarak kaydedilmediğinden tüm kişisel kayıtlar bir yönetici tarafından engellendi. |

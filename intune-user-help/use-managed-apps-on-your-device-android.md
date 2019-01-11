@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
-ms.translationtype: HT
+ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959511"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203510"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android cihazınızdaki yönetilen uygulamaları kullanma
 Yönetilen uygulamalar, kuruluşunuzun güvenlik gereksinimlerini karşılamak ve iş veya okul verilerini korumak üzere yapılandırılmıştır. Bu uygulamalar, otomatik olarak yüklemeniz veya kullanmanız için cihazınızda sunulmuştur. 
@@ -56,7 +56,15 @@ Okullar ve iş yerlerinde yaygın olarak gerekli veya kullanılabilir hale getir
 * Kuruluşunuz, yönetilen uygulamaları Şirket Portalı’nda sizin için kullanılabilir hale getirir. Şirket Portalı uygulamasına veya Web sitesine giderek bu uygulamaları arayabilir, görüntüleyebilir ve yükleyebilirsiniz. 
 * Google Play mağazasından bir uygulama yükleyip uygulamada iş veya okul hesabınızla oturum açarsınız.  
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?
+ ## <a name="available-apps"></a>Kullanılabilir uygulamalar   
+ Kuruluşunuz sizin için işe veya okula uygun ve kullanışlı uygulamalar seçer. Bu uygulamalar, şirket Portalı'nda bulabilirsiniz yalnızca olanlardır.   
+
+ Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, Android için Şirket portalı uygulamasını kullanıyorsanız, Android uygulamaları, ancak iOS uygulamaları için erişim gerekir.   
+
+ ## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek   
+ Bir uygulama gerekir, ancak şirket portalında görmüyorum varsa, isteyebilirsiniz. İletişim ayrıntılarını bulun, **Yardım Masası** Şirket portalı uygulamasının **BT'ye** sekmesi. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?  
 Aşağıdaki liste, şirketinizin destek biriminin bir uygulama içerisinde yönetebileceği ayarları açıklar. Bu ayarlar, cihazınızda iş veya okul verilerini görüntülemenizi, bunlara erişiminizi ve bunları nasıl kullanacağınızı etkiler:
 
 * Belirli web sitelerine erişim  

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146748"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203323"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Windows 10 cihazlar için Ayarlar uygulamasından şirketinizin destek birimine günlük gönderme
 
-Şirketiniz tarafından yönetilen Windows 10 cihazınızı kullanırken bir hata alırsanız, şirketinizin destek birimine e-posta ile bilgi göndererek sorunu gidermelerine yardımcı olabilirsiniz. Bu bilgiler, cihazınızda _tanılama günlüğü_ adlı özel bir belgede tutulur.
+Windows 10 için Şirket portalı sorunlarını gidermek için ayarlar uygulamasını kullanın. Uygulamayı Windows 10 Cihazınızı kullanırken bir sorunla karşılaşırsanız çalıştırırsanız, Yardım için destek ekibinize e-posta gönderebilirsiniz. Olayları ve Şirket portalı uygulamasında oluşan hatalar, Cihazınızda adlı özel bir belgede kaydedilir bir _tanılama günlüğü_. İçerebilirler takımları desteklemek ek Öngörüler ve hataya ilişkin verildiğinde kullanışlıdır.
 
-1. Windows **Ayarları** uygulamasını, **Başlat menüsüne** gidip **Ayarlar** düğmesini seçerek açın. Arama çubuğunda "ayarlar" için arama da yapabilirsiniz.
+1. Açmak için **ayarları** uygulama, Git **Başlat** menüsü > **ayarları**. Ayrıca arayabilirsiniz *ayarları* arama çubuğunda.
 2. **Hesaplar** > **İşe veya okula erişmeye** gidin.
-3. "Yönetim günlük dosyalarınızı dışarı aktarın"ı seçin.
+3. Seçin **yönetim günlük dosyalarınızı dışarı aktarın**.
 
    !["İlgili ayarlar" başlığının altından Dışa Aktarma seçeneğini sunan "İşe veya okula erişme" ekranı.](./media/w10-export-logs.png)
 

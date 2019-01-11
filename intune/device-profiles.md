@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da cihaz profilleri | Microsoft Docs
-description: Özellikler, kısıtlamalar, e-posta, wifi, VPN, eğitim, sertifikalar, Windows 10, BitLocker ve Windows defender, Windows Bilgi Koruması ve Azure portalındaki özel cihaz yapılandırma ayarları gibi farklı Microsoft Intune cihaz profillerine genel bakış. Şirketinizdeki verileri ve cihazları yönetmek ve korumak için bu profili kullanın.
+title: Cihaz özellikleri ve ayarları Microsoft Intune - Azure | Microsoft Docs
+description: Farklı Microsoft Intune cihaz profilleri de dahil olmak üzere genel bakış özellikler, sınırlamalar, Wi-Fi, VPN, e-posta eğitim, sertifikalar, Windows 10, BitLocker ve Windows defender, Windows Information Protection, Yönetim Şablonları, yükseltme ve Azure portalındaki özel cihaz yapılandırma ayarları. Bu profiller, yönetmek ve verileri ve cihazları şirketinizin korumak için kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,42 +15,101 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c9a3146b1ad5f6f7c439d2e49cf534e14d154f76
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728710"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203527"
 ---
-# <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune cihaz profilleri nedir?
+# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Cihaz profillerini kullanarak Intune cihazlarınızda özellikleri ayarlar uygulanır
 
-Microsoft Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve özellikler, profiller kullanılarak yönetilir. Bazı profil örnekleri şunlardır: 
+Microsoft Intune ayarları ve özellikleri etkinleştirebilir veya kuruluşunuzdaki farklı cihazlarda devre dışı bırak'ı içerir. Bu ayarlar ve Özellikler "yapılandırma profillerini" eklenir. Profilleri, farklı cihazlar için oluşturabileceğiniz farklı platformları dahil olmak üzere iOS, Android, Windows ve Intune profili, kuruluşunuzdaki cihazlara uygulamak için kullanın.
 
-- Kurumsal WiFi'nize farklı cihazlara erişim sağlayan bir WiFi profili
-- Kurumsal ağınızda VPN sunucunuza farklı cihaz erişimi veren bir VPN profili
+Bazı profil örnekleri şunlardır:
 
-Bu makalede, cihazlarınız için oluşturabileceğiniz farklı profillere genel bir bakış sağlanır. Cihazlardaki bazı özelliklere izin vermek veya bunları engellemek için bu profilleri kullanın.
+- Windows 10 cihazlarda Internet Explorer'da profil şablonu engelleyen ActiveX denetimlerini kullanın.
+- İOS ve macOS cihazlarda AirPrint yazıcıları kuruluşunuzda kullandığınız açmasına imkan tanıyın.
+- İzin verme veya cihazda bluetooth için erişimi engelleme.
+- Şirket ağınıza farklı cihazlara erişim sağlayan bir WiFi veya VPN profili oluşturun.
+- Yüklendiklerinde dahil olmak üzere, yazılım güncelleştirmelerini yönetir.
+- Bir Android cihazı, bir uygulama çalıştırmasına veya daha fazla uygulama çalıştırma bir adanmış bilgi noktası cihazı çalıştırın.
 
-## <a name="before-you-begin"></a>Başlamadan önce
-
-Kullanılabilir özellikleri görmek için [Azure portalı](https://portal.azure.com)'nı açın ve Intune kaynağınızı açın. 
-
-**Cihaz yapılandırması** aşağıdaki seçenekleri içerir:
-
-- **Genel Bakış**: Profillerinizin durumunu listeler, kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar
-- **Yönet**: Cihaz profilleri oluşturun ve profil içinde çalışmak üzere özel [PowerShell betiklerini](intune-management-extension.md) karşıya yükleyin
-- **İzle**: Bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profillerinize ilişkin günlükleri görüntüleyin
-- **Kurulum**: Bir sertifika yetkilisi (SCEP veya PFX) ekleyin veya profilde Telekomünikasyon Gider Yönetimi’ni etkinleştirin
+Bu makalede, profil oluşturma adımları listelenir ve profilleri oluşturabileceğiniz farklı türde genel bir bakış sağlar. İzin vermek veya bazı özellikler cihazlara önlemek için bu profilleri kullanın.
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-[Cihaz profilleri oluşturma](device-profile-create.md), bir profil oluşturmak için adım adım yönergeler sağlar. 
+1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
 
-## <a name="device-features---ios-and-macos"></a>Cihaz özellikleri - iOS ve macOS
+2. **Cihaz yapılandırması**’nı seçin. Aşağıdaki seçenekleriniz vardır:
 
-[Cihaz özellikleri](device-features-configure.md), iOS ve macOS cihazlarda AirPrint, bildirimler ve paylaşılan cihaz yapılandırmaları gibi özellikleri denetler.
+    - **Genel Bakış**: Profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız Profiller hakkında ek ayrıntılar sağlar.
+    - **Yönetme**: Cihaz profilleri oluşturma, özel yükleme [PowerShell betikleri](intune-management-extension.md) profil içinde çalışmak ve veri planları kullanarak cihazlara [Esım](esim-device-configuration.md).
+    - **İzleyici**: Bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profillerinize ilişkin günlükleri görüntüleyin.
+    - **Kurulum**: Bir SCEP veya PFX sertifika yetkilisi ekleyin veya etkinleştirme [Telekom Gider Yönetimi](telecom-expenses-monitor.md) profilinde.
+
+3. Seçin **profilleri** > **profili oluşturma**. Aşağıdaki özellikleri girin:
+
+   - **Ad**: Profil için açıklayıcı bir ad girin.
+   - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+   - **Platform**: Cihazlarınızın platformu seçin. Seçenekleriniz şunlardır:  
+
+       - **Android**
+       - **Android kurumsal**
+       - **iOS**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 ve üzeri**
+       - **Windows 10 ve üzeri**
+
+   - **Profil türü**: Oluşturmak istediğiniz ayarlarının türünü seçin. Gösterilen listesi bağımlı **platform** seçtiğiniz:
+
+       - [Yönetim Şablonları](administrative-templates-windows.md)
+       - [Özel](custom-settings-configure.md)
+       - [Teslim iyileştirme](delivery-optimization-windows.md)
+       - [Cihaz özellikleri](device-features-configure.md)
+       - [Cihaz kısıtlamaları](device-restrictions-configure.md)
+       - [Sürüm yükseltme ve modu anahtarı](edition-upgrade-configure-windows-10.md)
+       - [Eğitim](education-settings-configure.md)
+       - [E-posta](email-settings-configure.md)
+       - [Uç nokta koruması](endpoint-protection-configure.md)
+       - [Kimlik koruması](identity-protection-configure.md)  
+       - [Bilgi noktası](kiosk-settings.md)
+       - [PKCS sertifikası](certficates-pfx-configure.md)
+       - [SCEP sertifikası](certificates-scep-configure.md)
+       - [Güvenilir sertifika](certificates-configure.md)
+       - [Güncelleştirme ilkeleri](software-updates-ios.md)
+       - [VPN](vpn-settings-configure.md)
+       - [Wi-Fi](wi-fi-settings-configure.md)
+       - [Windows Defender ATP](advanced-threat-protection.md)
+       - [Windows Bilgi Koruması](windows-information-protection-configure.md)
+
+     Örneğin, **iOS** platformu, profil türü seçeneklerinizi aşağıdakine benzer:
+
+     ![Intune'da iOS profili oluşturma](./media/create-device-profile.png)
+
+4. Seçin **ayarları**. Ayarları, kategoriye göre düzenlenir. Yapılandırabileceğiniz ayarların listesi görmek için bir kategori seçin.
+
+5. İşiniz bittiğinde seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin.
+
+Farklı bir profil türleri hakkında daha fazla bilgi edinmek için bu makalenin sonraki bölümleri inceleyin.
+
+## <a name="administrative-templates-preview"></a>Yönetim Şablonları (Önizleme)
+
+[Yönetim Şablonları](administrative-templates-windows.md) yüzlerce Internet Explorer, OneDrive, Uzak Masaüstü, Word, Excel ve diğer Office programları ve çok daha fazlası için yapılandıran ayarları içerir.
+
+Bu şablonları Yöneticiler ayarları Grup İlkesi'ne benzer kolay ve Basitleştirilmiş bir görünümünü sağlar, ancak bunlar %100 bulut tabanlı. 
 
 Bu özellik şunları destekler:
+
+- Windows 10 ve üzeri
+
+## <a name="device-features"></a>Cihaz özellikleri
+
+[Cihaz özellikleri](device-features-configure.md) iOS ve macOS cihazlarda AirPrint, bildirimler ve kilit ekranı iletileri gibi özellikleri denetler.
+
+Bu özellik şunları destekler:
+
 - iOS 
 - Mac OS
 
@@ -106,7 +165,7 @@ Bu özellik şunları destekler:
 
 Bilgi noktası ayarları için cihaz kısıtlamaları olarak da kullanılabilir [Android](device-restrictions-android.md#kiosk), [Android Kurumsal](device-restrictions-android-for-work.md#kiosk-settings), ve [ios](device-restrictions-ios.md#kiosk-supervised-only).
 
-## <a name="email"></a>E-posta
+## <a name="email"></a>Email
 
 [E-posta ayarları](email-settings-configure.md) oluşturur, atar ve cihazlarda Exchange ActiveSync e-posta ayarlarını izler. Profilleri Yardım tutarlılık ile e-posta, destek çağrılarını azaltır ve son kullanıcılara erişim şirket e-postasına herhangi bir kurulum yapmalarına gerek kalmadan kişisel cihazlarından sağlar. 
 
@@ -167,6 +226,8 @@ Bu özellik şunları destekler:
 
 [iOS güncelleştirme ilkeleri](software-updates-ios.md), iOS cihazlarınıza yazılım güncelleştirmelerini yüklemek için iOS ilkelerini nasıl oluşturacağınızı ve atayacağınızı gösterir. Ayrıca yükleme durumunu da gözden geçirebilirsiniz.
 
+Windows cihazlarda güncelleştirme ilkeleri için bkz: [teslim iyileştirme](delivery-optimization-windows.md). 
+
 Bu özellik şunları destekler:
 - iOS
 
@@ -184,10 +245,22 @@ Bu özellik şunları destekler:
 
 ## <a name="windows-information-protection-profile"></a>Windows Bilgi Koruması profili
 
-[Windows Bilgi Koruması](windows-information-protection-configure.md), çalışanın deneyimine müdahale etmeden veri sızıntılarına karşı koruma sağlamaya yardımcı olur. Ayrıca, kurumsal uygulamalar ve veriler kuruluşa ait cihazlardaki ve çalışanların İşte kullandıkları kişisel cihazlardaki kazayla veri sızıntılarına karşı korunmasına yardımcı olur. Windows Information Protection'ı kullanarak, ortamınızda veya diğer uygulamalar için shanges gerektirmez.
+[Windows Bilgi Koruması](windows-information-protection-configure.md), çalışanın deneyimine müdahale etmeden veri sızıntılarına karşı koruma sağlamaya yardımcı olur. Ayrıca, kurumsal uygulamalar ve veriler kuruluşa ait cihazlardaki ve çalışanların İşte kullandıkları kişisel cihazlardaki kazayla veri sızıntılarına karşı korunmasına yardımcı olur. Windows Information Protection'ı kullanarak, ortamınızda veya diğer uygulamalar için değişiklik yapılması gerekmez.
 
 Bu özellik şunları destekler:
+
 - Windows 10 ve üzeri
+
+## <a name="shared-multi-user-device"></a>Paylaşılan birden çok kullanıcı cihaz
+
+[Windows 10](shared-user-device-settings-windows.md) ve [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) birden çok kullanıcıyla olarak da bilinen paylaşılan cihazlar veya paylaşılan bilgisayarlar cihazları yönetmek için ayarlar içerir. Kullanıcı cihazı açtığında, kullanıcı uyku seçenekleri değiştirebilir veya cihazdaki dosyaların kaydedin, seçin. Başka bir örnekte, etkin olmayan kimlik alanı kaydetmek için Windows HoloLens cihazlardan silen bir ilke oluşturabilirsiniz.
+
+Bu paylaşılan birden çok kullanıcı cihaz ayarları, yöneticinin, bazı cihaz özelliklerini denetlemek izin ve bu paylaşılan cihazları Intune kullanarak yönetmek.
+
+Bu özellik şunları destekler:
+
+- Windows 10 ve üzeri
+- Windows 10 Holographic for Business
 
 ## <a name="custom-profile"></a>Özel profil
 
@@ -203,3 +276,7 @@ Bu özellik şunları destekler:
 ## <a name="manage-and-troubleshoot"></a>Yönetme ve sorun giderme
 
 [Profillerinizi yöneterek](device-profile-monitor.md) cihazların ve atanan profillerin durumunu denetleyin. Ayrıca, çakışma yaratan ayarları ve bu ayarları içeren profilleri görerek çakışmaların çözümlenmesine yardımcı olun. [Genel sorunlar ve çözümleri](device-profile-troubleshoot.md) soru- cevap iş profilleriyle bir profil silindiğinde, ne de dahil olmak üzere cihazları ve daha fazlası için gönderilecek hangi nedenleri bildirimleri yardımcı olmak için sağlar.
+
+## <a name="next-steps"></a>Sonraki adımlar
+Platformunuzu seçin ve kullanmaya başlayın:
+

@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 080205e601b857d4765eb6b97eeeeeb8f4e6fc1b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0da6861b6c49fc37691b8c6e464a506670643fa3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187166"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203340"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>İlke filtrelemek için kapsam etiketleri kullanma
 
-Kapsam etiketleri, oluşturduğunuz özel etiketlerle ilkeleri filtrelemenize imkan verir.
+Kapsam etiketleri, oluşturduğunuz özel etiketlerle ilkeleri filtrelemenize imkan verir. Kapsam etiketleri, rolleri ve uygulamalara uygulayabilirsiniz.
 
 Örneğin “Mühendislik Departmanı” adlı bir kapsam etiketi oluşturun ve mühendislik departmanı ile ilgili yapılandırma profillerine bunu atayın. Aynı etiketi “Mühendislik Yöneticileri” rolüne de atayın. Bu kişiler, yalnızca “Mühendislik Departmanı” etiketli ilkeleri görebilecektir.
 
@@ -38,6 +38,11 @@ Kapsam etiketleri, oluşturduğunuz özel etiketlerle ilkeleri filtrelemenize im
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Kapsam etiketini bir role atamak için
 
 **Roller** > **Tüm roller** > **İlke ve Profil Yöneticisi** > **Atamalar** > **Kapsam (Etiketler)** öğesini seçin.
+
+## <a name="to-assign-a-scope-tag-to-an-app"></a>Uygulama için bir kapsam etiketi atama
+
+Seçin **istemci uygulamaları** > **uygulamaları** > bir uygulama seçin > **özellikleri** > **kapsam (etiketler)**  >  **Ekle** > etiketleri seçin > **seçin** > **Tamam** > **Kaydet**.
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +15,27 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303864"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203221"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>Profili oluşturma
-1. [Azure portalında](https://portal.azure.com), **Tüm Hizmetler**’i seçin ve **Microsoft Intune** araması yapın.
 
-2. **Microsoft Intune**’da, **Cihaz yapılandırması**’nı ve **Profiller**’i seçin. Ardından **Profil Oluştur**'u seçin.
+1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+
+2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
 
 3. Aşağıdaki özellikleri girin:
 
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-   - **Açıklama**: Profil için bir açıklama girin. (Bu isteğe bağlıdır ama kullanılması önerilir.)
+   - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
    - **Platform**: Platform türünü seçin:  
 
        - **Android**
@@ -46,7 +47,7 @@ ms.locfileid: "52303864"
        - **Windows 10 ve üzeri**
 
    - **Profil türü**: Oluşturmak istediğiniz türü seçin. Liste, seçtiğiniz platforma bağlıdır.
-   - **Ayarlar**: Aşağıdaki konu başlıkları her profil türü için ayarları açıklar:
+   - **Ayarları**: Aşağıdaki makaleler her profil türü için ayarları açıklar:
 
        -  [Cihaz özellikleri](device-features-configure.md)
        -  [Cihaz kısıtlamaları](device-restrictions-configure.md)

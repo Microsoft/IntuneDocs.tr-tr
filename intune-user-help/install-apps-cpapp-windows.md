@@ -1,11 +1,11 @@
 ---
 title: Windows için Intune Şirket Portalı’ndan uygulama yükleme
-description: Windows için Şirket Portalı uygulamasından uygulama yükleme ve paylaşmayı öğrenin
+description: Yükleme ve Windows için Şirket portalı uygulamasından uygulama paylaşma
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
-ms.translationtype: HT
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863102"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203238"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
 Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
@@ -34,11 +34,11 @@ Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
     ![Windows 10 için Şirket Portalı uygulaması giriş sayfası.](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. Şirket Portalı uygulamasının aşağıdaki bölümlerinden birinde uygulamaları bulup yükleyin:  
 
-    * **Giriş**: Kuruluşunuzun öne çıkan uygulamalar listesinden bir seçim yapın.  
-    * **Tümünü göster**: **Giriş sayfası** > **Uygulamalar** bölümünde **Tümünü göster**'e tıklayarak bulunan tüm uygulamaları görüntüleyin.  
-    * **Tüm uygulamalar**: Yüklü olanlar ve öne çıkanlar dahil bulunan tüm uygulamaları görmek için gezinti bölmesinde bu sayfayı seçin.  
-    * **Uygulama ara**: Uygulamanın gezinti bölmesinde statik bir arama çubuğu durur.  Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
-    * **Tüm uygulamalar**: Kullanılabilir tüm uygulamaları görüntüleyin, sıralayın ve filtreleyin. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
+    * **Giriş**: Kuruluşunuzun öne çıkan uygulamalar listesinden seçin.  
+    * **Tümünü Göster**: Gelen **giriş sayfası** > **uygulamaları** bölümünde **Tümünü Göster** tüm kullanılabilir uygulamaları görmek için.  
+    * **Tüm uygulamalar**: Bu sayfa, yüklü ve öne çıkan dahil olmak üzere tüm kullanılabilir uygulamaları görmek için Gezinti bölmesinde seçin.  
+    * **Uygulama arama**: Statik Arama çubuğuna uygulamanın Gezinti Bölmesi'nde bulunur.  Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
+    * **Tüm uygulamalar**: Görüntüleme, sıralama ve tüm kullanılabilir uygulamaları filtreleyin. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
 
 3. Bir uygulama seçin.   
 4. Uygulama ayrıntıları sayfasında **Yükle**'ye tıklayın. Yükleme tamamlandıktan sonra **Yüklendi** durumunu göreceksiniz.  
@@ -63,4 +63,16 @@ Uygulamaları iş veya okuldaki tanıdığınız kişilerle paylaşın veya bu k
 
 Paylaşmadan sonra alıcı bir bağlantı ve uygulama ayrıntılarını görüntülemek için bir ileti alır. Bağlantı Şirket Portalı **Uygulama ayrıntıları** sayfasını açar. 
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.
+## <a name="available-apps"></a>Kullanılabilir uygulamalar  
+
+Kuruluşunuz sizin için işe veya okula uygun ve kullanışlı uygulamalar seçer. Bu uygulamalar, şirket Portalı'nda bulabilirsiniz yalnızca olanlardır.  
+
+Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, Windows için Şirket portalı uygulamasını kullanıyorsanız, Windows uygulamaları, ancak iOS uygulamaları için erişim gerekir.  
+
+## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek  
+Uygulama gerekiyor, ancak şirket portalında görmüyorum varsa, bu istek. İletişim ayrıntılarını bulun, **Yardım Masası** Şirket portalı uygulamasında Yardım ve Destek sayfasında. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).    
+
+  ![Windows 10, Yardım ve Destek sayfasında, Yardım Masası ayrıntıları vurgulamak için Şirket portalı uygulaması. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

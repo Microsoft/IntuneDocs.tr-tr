@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210797"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da cihaz profilleri ile ilgili sık karşılaşılan sorunlar ve çözüm yolları
 
@@ -49,16 +49,16 @@ Bir ilke veya uygulama atandığında Intune, Intune hizmetine iade için cihaza
 İlk bildirim gönderildikten sonra cihaz ilkeyi almak üzere giriş yapmazsa, Intune üç deneme daha yapar. Cihaz çevrimdışıysa (örneğin, kapalıysa veya ağa bağlı değilse), bildirimleri almayabilir. Bu durumda cihaz, ilkeyi bir sonraki zamanlanmış Intune hizmeti girişinde aşağıdaki gibi alır:
 
 - iOS ve macOS: Altı saatte bir
-- Android: Sekiz saatte bir
-- Windows Phone: Sekiz saatte bir
-- Cihaz olarak kaydedilen Windows 8.1 ve Windows 10 bilgisayarları: Sekiz saatte bir
+- Android: Her sekiz saatte bir
+- Windows Phone: Her sekiz saatte bir
+- Windows 8.1 ve Windows 10 bilgisayarlarını cihaz olarak kaydedilen: Her sekiz saatte bir
 
 Cihaz daha yeni kaydedilmişse, giriş sıklığı aşağıda gösterildiği gibi daha fazla olur:
 
-- iOS ve macOS: Altı saat boyunca 15 dakikada bir ve daha sonra altı saatte bir
-- Android: 15 dakika boyunca üç dakikada bir, sonraki iki saat boyunca 15 dakikada bir ve daha sonra sekiz saatte bir
-- Windows Phone: 15 dakika boyunca beş dakikada bir, sonraki iki saat boyunca 15 dakikada bir ve daha sonra sekiz saatte bir
-- Cihaz olarak kaydedilen Windows bilgisayarları: 30 dakika boyunca üç dakikada bir ve daha sonra sekiz saatte bir
+- iOS ve macOS: Her 15 dakikada bir altı saat ve daha sonra altı saatte
+- Android: 15 dakika boyunca üç dakikada sonra iki saat boyunca 15 dakikada ve daha sonra sekiz saatte
+- Windows Phone: 15 dakika boyunca beş dakikada sonra iki saat boyunca 15 dakikada ve daha sonra sekiz saatte
+- Cihaz olarak kaydedilen Windows bilgisayarları: Daha sonra sekiz saatte yanı sıra 30 dakika boyunca üç dakikada
 
 Ayrıca, kullanıcılar ilkeyi istedikleri zaman denetlemek için Şirket Portalı uygulamasını açıp cihazı eşitleyebilir.
 
@@ -72,11 +72,11 @@ Cihazlar Intune hizmetine giriş yapmaları gerektiğini söyleyen bir bildirim 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Aynı kullanıcı veya cihaza birden çok ilke atanıyorsa hangi ayarların uygulanacağını nasıl bilebilirim?
 Aynı kullanıcı veya cihaza iki veya daha fazla ilke atandığında, hangi ayarın uygulanacağı tek ayar düzeyinde belirlenir:
 
--   Uyumluluk ilkesi ayarları, her zaman yapılandırma ilkesi ayarlarından önceliklidir
+- Uyumluluk ilkesi ayarları, her zaman yapılandırma ilkesi ayarlarından önceliklidir
 
--   Bir uyumluluk ilkesi, farklı bir uyumluluk ilkesinde aynı ayara karşı değerlendirilirse, en kısıtlayıcı uyumluluk ilkesi ayarı uygulanır.
+- Bir uyumluluk ilkesi, farklı bir uyumluluk ilkesinde aynı ayara karşı değerlendirilirse, en kısıtlayıcı uyumluluk ilkesi ayarı uygulanır.
 
--   Bir yapılandırma ilkesi ayarı farklı bir yapılandırma ilkesindeki bir ayarla çakışıyorsa bu çakışma Azure portalında görüntülenir. Bu senaryoda, bu çakışmaları el ile çözün.
+- Bir yapılandırma ilkesi ayarı farklı bir yapılandırma ilkesindeki bir ayarla çakışıyorsa bu çakışma Azure portalında görüntülenir. Bu senaryoda, bu çakışmaları el ile çözün.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Uygulama koruma ilkeleri birbiriyle çakışırsa ne olur? Uygulamaya hangisi uygulanır?
 Bir uygulama koruma ilkesinde, sayı giriş alanları (sıfırlamadan önce PIN deneme sayısı gibi) haricinde, en kısıtlayıcı ayarlar çakışma değerleridir. Sayı giriş alanları, konsolda önerilen ayarlar seçeneğini kullanarak bir MAM ilkesi oluşturduğunuzda alacağı değerlerle aynı değerlere ayarlanır.
@@ -95,38 +95,41 @@ Profili sildiğinizde veya bir cihazı profile sahip olan gruptan kaldırdığı
 
 - Wi-Fi, VPN, sertifika ve e-posta profilleri: Bu profiller tüm desteklenen kayıtlı cihazlardan kaldırılır.
 - Diğer tüm profil türleri:  
-    - **Windows ve Android cihazları**: Ayarlar cihazdan kaldırılmaz
-    - **Windows Phone 8.1 cihazları**: Aşağıdaki ayarlar kaldırılır:  
-        - Mobil cihazların kilidini açmak için bir parola gerektir
-        - Basit parolalara izin ver
-        - Parola uzunluğu alt sınırı
-        - Gerekli parola türü
-        - Parola zaman aşımı (gün sayısı)
-        - Parola geçmişini anımsa
-        - Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı
-        - Parola istenmeden önce geçen işlem yapılmayan dakika sayısı
-        - Gerekli parola türü – minimum karakter kümesi sayısı
-        - Kameraya izin ver
-        - Cihazda şifrelemeyi gerektir
-        - Çıkarılabilir depolama birimine izin ver
-        - Web tarayıcısına izin ver
-        - Uygulama mağazasına izin ver
-        - Ekran yakalamaya izin ver
-        - Coğrafi konuma izin ver
-        - Microsoft Hesabına izin ver
-        - Kopyalama ve yapıştırmaya izin ver
-        - Wi-Fi İnternet paylaşımına izin ver
-        - Ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmaya izin ver
-        - Wi-Fi etkin noktası bildirimine izin ver
-        - Silmeye izin ver
-        - Bluetooth'a izin ver
-        - NFC'ye izin ver
-        - Wi-Fi'a izin ver
 
-    - **iOS**: Aşağıdakiler dışında tüm ayarlar kaldırılır:
-        - Sesli dolaşıma izin ver
-        - Veri dolaşımına izin ver
-        - Dolaşım sırasında otomatik eşitlemeye izin ver
+  - **Windows ve Android cihazlarda**: Ayarlar CİHAZDAN kaldırılmaz
+  - **Windows Phone 8.1 cihazları**: Aşağıdaki ayarlar kaldırılır:  
+  
+    - Mobil cihazların kilidini açmak için bir parola gerektir
+    - Basit parolalara izin ver
+    - Parola uzunluğu alt sınırı
+    - Gerekli parola türü
+    - Parola zaman aşımı (gün sayısı)
+    - Parola geçmişini anımsa
+    - Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı
+    - Parola istenmeden önce geçen işlem yapılmayan dakika sayısı
+    - Gerekli parola türü – minimum karakter kümesi sayısı
+    - Kameraya izin ver
+    - Cihazda şifrelemeyi gerektir
+    - Çıkarılabilir depolama birimine izin ver
+    - Web tarayıcısına izin ver
+    - Uygulama mağazasına izin ver
+    - Ekran yakalamaya izin ver
+    - Coğrafi konuma izin ver
+    - Microsoft Hesabına izin ver
+    - Kopyalama ve yapıştırmaya izin ver
+    - Wi-Fi İnternet paylaşımına izin ver
+    - Ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmaya izin ver
+    - Wi-Fi etkin noktası bildirimine izin ver
+    - Silmeye izin ver
+    - Bluetooth'a izin ver
+    - NFC'ye izin ver
+    - Wi-Fi'a izin ver
+
+  - **iOS**: Tüm ayarlar kaldırılır, hariç:
+  
+    - Sesli dolaşıma izin ver
+    - Veri dolaşımına izin ver
+    - Dolaşım sırasında otomatik eşitlemeye izin ver
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Cihaz kısıtlama profilini değiştirdim ama değişiklikler uygulanmadı
 Windows Phone cihazlarında, MDM veya EAS kullanarak ayarlamış olduğunuz güvenlik ilkelerinin azaltılmasına izin verilmez. Örneğin, **Parolanın karakter sayısı alt sınırı** olarak 8 ayarlayın ve sonra bunu 4’e indirmeyi deneyin. Cihaza zaten daha kısıtlayıcı bir profil uygulanmıştır.
@@ -134,6 +137,14 @@ Windows Phone cihazlarında, MDM veya EAS kullanarak ayarlamış olduğunuz güv
 Profili daha az güvenli bir değerle değiştirmek isterseniz güvenlik ilkelerini sıfırlayın. Örneğin Windows 8.1’de, masaüstünde sağdan içeri doğru kaydırın ve **Ayarlar** > **Denetim Masası**’nı seçin. **Kullanıcı Hesapları** uygulamasını seçin. Sol taraftaki gezinti menüsünde, bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır (en alta doğru). Bunu seçin ve ardından **İlkeleri Sıfırla**’yı seçin.
 
 Android, Windows Phone 8.1 ve üzeri, iOS ve Windows 10 gibi diğer MDM cihazlarında, daha az kısıtlayıcı bir profil uygulamak için cihazın devre dışı bırakılması ve sonra hizmete yeniden kaydedilmesi gerekebilir.
+
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Bazı ayarlar Windows 10 profili "Uygulanamaz" döndürür
+Bazı ayarlar Windows 10 cihazlarında "uygulanamaz" gösterebilir. Böyle bir durumda, bu ayar sürüm veya cihaz üzerinde çalışan Windows sürümü desteklenmiyor. Bu ileti, aşağıdaki nedenlerle oluşabilir:
+
+- Ayar, yalnızca daha yeni sürümleri, Windows ve geçerli işletim sistemi (OS) sürümünü cihazda değil için kullanılabilir.
+- Ayar, yalnızca belirli Windows sürümleri veya Home, Professional, Enterprise ve eğitim gibi belirli SKU'lara için kullanılabilir.
+
+Sürüm ve farklı ayarlar için SKU gereksinimleri hakkında daha fazla bilgi için bkz: [yapılandırma hizmet sağlayıcısı (CSP) başvuru](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Ek yardım mı gerekiyor? Bkz. [Microsoft Intune için destek alma](get-support.md).

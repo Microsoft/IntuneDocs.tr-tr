@@ -1,41 +1,46 @@
 ---
-title: S/MIME e-posta imzalama ve şifreleme - Azure | Micrososft Docs
-description: Microsoft Intune’da e-postaları imzalamak ve şifrelemek için S/MIME'yi kullanma veya etkinleştirme
+title: İmzalamak ve şifrelemek S/MIME - Microsoft Intune - Azure'ı kullanarak e-posta | Microsoft Docs
+description: E-posta dijital sertifikalar Intune imzalamak ve şifrelemek cihazlarda e-postaları için nasıl kullanılacağını öğrenin. Bu sertifikalar, S/MIME adı verilir ve cihaz yapılandırma profilleri kullanılarak yapılandırılır. İmzalama ve şifreleme sertifikalarını PKCS veya özel sertifikaları kullanın ve sertifikaları içeri aktarmak için bağlayıcı kullanma.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: eaa85870b289bb3b65ce997d8610324f43d69452
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: 0339be98bf045d280912bf88e88b5ba544b0a1f4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185653"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203136"
 ---
-# <a name="smime-email-signing-and-encryption-in-intune"></a>Intune’da S/MIME e-posta imzalama ve şifreleme
+# <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Oturum açmak ve e-posta ıntune şifrelemek için S/MIME genel bakış
 
-> [!IMPORTANT]
-> S/MIME özelliğinde, bu makalede açıklanan bazı geliştirmeler yapıyoruz. Bunun sonucu olarak, S/MIME özelliği Intune'da geçici olarak kaldırıldı. Özellik kullanıma sunulduğunda bu notu kaldıracağız.
+E-posta sertifikaları, S/MIME sertifikası olarak da bilinen, şifreleme ve şifre çözme kullanarak, e-posta iletişimi için ek güvenlik sağlar. Intune S/MIME sertifikaları imzalamak ve aşağıdaki platformları çalıştıran mobil cihazlar için e-postaları şifrelemek için kullanabilirsiniz:
 
-S/MIME, şifreleme ve şifre çözme yordamlarını kullanarak e-posta iletişimleriniz için yeni bir güvenlik katmanı sağlar. Microsoft Intune; iOS, Windows, Windows Phone, Android, ve macOS çalıştıran mobil cihazlara gönderilen e-postaları imzalamak veya şifrelemek için S/MIME kullanabilir.
+- Android
+- iOS
+- Mac OS
+- Windows 10 ve üzeri
+- Windows Phone
 
-iOS cihazlarında, gelen ve gönderilen e-postaları imzalamak ve şifrelemek için S/MIME ve sertifikaları kullanan, Intune tarafından yönetilen bir e-posta profili oluşturabilirsiniz. Diğer platformlarda S/MIME desteklenmiyor olabilir. Destekleniyorsa, S/MIME imzalama ve şifreleme kullanan sertifikaları yükleyebilirsiniz. Ardından, son kullanıcı e-posta uygulaması için S/MIME’yi etkinleştirebilir.
+iOS cihazlarında, gelen ve gönderilen e-postaları imzalamak ve şifrelemek için S/MIME ve sertifikaları kullanan, Intune tarafından yönetilen bir e-posta profili oluşturabilirsiniz. Diğer platformlarda S/MIME desteklenmiyor olabilir. Destekleniyorsa, S/MIME imzalama ve şifreleme kullanan sertifikaları yükleyin. Ardından, bir son kullanıcı kendi e-posta uygulamasında S/MIME sağlar.
 
-S/MIME e-posta imzalama ve şifreleme hakkında daha fazla bilgi için bkz. [İleti imzalama ve şifreleme için S/MIME](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+E-posta S/MIME imzalama ve şifreleme Exchange ile ilgili daha fazla bilgi için bkz. [S/MIME iletisi imzalama ve şifreleme için](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+
+Bu makalede, oturum ve cihazlarınızı şirket e-postaları şifrelemek için S/MIME sertifikaları kullanarak genel bir bakış sağlar.
 
 ## <a name="signing-certificates"></a>İmzalama sertifikaları
 
 İmzalama için kullanılan sertifikalar, istemci e-posta uygulamasının e-posta sunucusuyla güvenli bir iletişim kurmasını sağlar.
 
-İmzalama sertifikalarını kullanmak için sertifika yetkilinizde imzalamaya odaklanan bir şablon oluşturun. Microsoft Active Directory Sertifika Yetkilisinde [Sunucu sertifikası şablonu yapılandırma](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) başlığı altında sertifika şablonları oluşturmak için gerekli adımlar listelenir.
+İmzalama sertifikaları kullanmak için oturum açmada odaklanan sertifika yetkiliniz (CA) bir şablon oluşturun. Microsoft Active Directory Sertifika Yetkilisinde [Sunucu sertifikası şablonu yapılandırma](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) başlığı altında sertifika şablonları oluşturmak için gerekli adımlar listelenir.
 
 Intune’da imzalama sertifikaları PKCS sertifikalarını kullanır. [PKCS sertifikaları yapılandırma ve kullanma](certficates-pfx-configure.md) başlığı altında, Intune ortamınızda nasıl PKCS sertifikası dağıtıp kullanacağınız açıklanır. Bu adımlar şunları içerir:
 
@@ -43,7 +48,7 @@ Intune’da imzalama sertifikaları PKCS sertifikalarını kullanır. [PKCS sert
 - Cihazlarınız için bir güvenilen kök sertifika profili oluşturma. Bu adım, sertifika yetkiliniz için güvenilen kökü ve ara sertifikaları kullanma ve ardından profili cihazlara dağıtma işlemlerini içerir.
 - Oluşturduğunuz sertifika şablonunu kullanarak PKCS sertifika profili oluşturma. Bu profil imzalama sertifikalarını cihazlara verir ve PKCS sertifika profilini cihazlara dağıtır.
 
-Ayrıca, belirli bir kullanıcı için de imzalama sertifikası içeri aktarabilirsiniz. İmzalama sertifikası kullanıcının kaydettiği tüm cihazlara dağıtılır. Intune’a sertifika aktarmak için [GitHub’daki PowerShell cmdlet'lerini](https://github.com/Microsoft/Intune-Resource-Access) kullanın. E-posta imzalama amacıyla kullanılmak üzere Intune’da içeri aktarılan bir PKCS sertifikasını dağıtmak için [Intune ile PKCS sertifikalarını yapılandırma ve kullanma](certficates-pfx-configure.md) bölümündeki adımları izleyin. Bu adımlar şunları içerir:
+Ayrıca, belirli bir kullanıcı için de imzalama sertifikası içeri aktarabilirsiniz. İmzalama sertifikasının bir kullanıcısının kaydettiği her cihaz arasında dağıtılır. Intune’a sertifika aktarmak için [GitHub’daki PowerShell cmdlet'lerini](https://github.com/Microsoft/Intune-Resource-Access) kullanın. E-posta imzalama amacıyla kullanılmak üzere Intune’da içeri aktarılan bir PKCS sertifikasını dağıtmak için [Intune ile PKCS sertifikalarını yapılandırma ve kullanma](certficates-pfx-configure.md) bölümündeki adımları izleyin. Bu adımlar şunları içerir:
 
 - Microsoft Intune için PFX Sertifika Bağlayıcısı'nı indirin ve yükleyin. Bu bağlayıcı, içeri aktarılan PKCS sertifikalarını cihazlara verir.
 - S/MIME e-posta imzalama sertifikalarını Intune’a aktarın.
@@ -57,7 +62,7 @@ Başka bir kullanıcıya şifrelenmiş bir e-posta gönderirken o kullanıcını
 
 E-posta şifreleme sertifikalarının Intune’da oluşturulmaması önerilir. Intune, şifreleme destekli PKCS sertifikası vermeyi desteklese de cihaz başına benzersiz bir sertifika oluşturur. Cihaz başına benzersiz bir sertifika, şifreleme sertifikasının kullanıcının tüm cihazları arasında paylaşıldığı bir S/MIME şifreleme senaryosu için ideal bir yöntem değildir.
 
-S/MIME sertifikalarını Intune kullanarak dağıtmak için kullanıcının şifreleme sertifikalarının tümünü Intune’a aktarmalısınız. Intune daha sonra bu sertifikaların tümünü kullanıcının kaydettiği her cihaza dağıtır. Intune’a sertifika aktarmak için [GitHub’daki PowerShell cmdlet'lerini](https://github.com/Microsoft/Intune-Resource-Access) kullanın.
+S/MIME sertifikalarını Intune kullanarak dağıtmak için kullanıcının şifreleme sertifikalarının tümünü Intune’a aktarmalısınız. Intune daha sonra tüm sertifikaların bir kullanıcısının kaydettiği her cihaz için dağıtır. Intune’a sertifika aktarmak için [GitHub’daki PowerShell cmdlet'lerini](https://github.com/Microsoft/Intune-Resource-Access) kullanın.
 
 E-posta şifreleme amacıyla kullanılan, Intune’a aktarılmış bir PKCS sertifikasını dağıtmak için [Intune ile PKCS sertifikalarını yapılandırma ve kullanma](certficates-pfx-configure.md) bölümündeki adımları izleyin. Bu adımlar şunları içerir:
 
@@ -71,3 +76,10 @@ E-posta şifreleme amacıyla kullanılan, Intune’a aktarılmış bir PKCS sert
 ## <a name="smime-email-profiles"></a>S/MIME e-posta profilleri
 
 S/MIME imzalama veya şifreleme sertifikası profillerini oluşturduktan sonra [iOS yerel postası için S/MIME’yi etkinleştirebilirsiniz](email-settings-ios.md).
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [SCEP sertifikaları kullan](certificates-scep-configure.md)
+- [PKCS sertifikalarını kullanma](certficates-pfx-configure.md)
+- [Bir ortak CA kullanın](certificate-authority-add-scep-overview.md)
+- [PKCS sertifikaları Symantec PKI manager web hizmeti verme](certificates-symantec-configure.md)

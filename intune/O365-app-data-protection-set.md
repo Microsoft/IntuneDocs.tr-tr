@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210814"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Kullanıcılarınızın Microsoft Intune’da yönetilen Office 365 uygulamalarındaki temel koruma deneyimi
 
@@ -89,33 +89,32 @@ Bu makalede, Intune tarafından yönetilen bir uygulamada kullanıcının deneyi
 
 ## <a name="what-policies-does-this-wizard-set"></a>Bu sihirbaz hangi ilkeleri ayarlar?
 
-|     |       | |
-|----|--------|-|
-|**Ad**|Office 365 uygulamalarını yönetme| |
-| **Açıklama**|Office 365 uygulamalarını yönetme sihirbazı tarafından oluşturuldu| |
-| |  | |
-| **Ayar Adı** |**iOS ilke değeri** | **Android ilke değeri** |
-|iTunes ve iCloud yedeklemelerini engelle| Hayır | Yok |
-|Android yedeklemelerini engelle |Yok | Hayır|
-|Uygulamanın diğer uygulamalara veri aktarmasına izin ver | Tüm uygulamalar | Tüm uygulamalar|
-|Uygulamanın diğer uygulamalardan veri almasına izin ver| Tüm uygulamalar | Tüm uygulamalar|
-|“Farklı kaydet”’i Engelle | Hayır | Hayır|
-|Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla | Herhangi bir uygulama | Herhangi bir uygulama |
-|Web içeriğini kurumsal olarak yönetilen bir tarayıcıda görüntülemek üzere kısıtlayın | Hayır| Hayır|
-|Uygulama verilerini şifreleme | Cihaz kilitliyken | Evet|
-|Kişilerin eşitlenmesini devre dışı bırak | Hayır| Hayır|
-|Yazdırmayı devre dışı bırak | Hayır | Hayır|
-|Erişim için PIN gerektir | Hayır | Evet|
-|PIN sıfırlanmadan önce deneme sayısı | Yok |5|
-|Basit PIN’e izin ver | Yok |Evet|
-|PIN uzunluğu | Yok | 4|
-|PIN yerine parmak izine izin ver | Yok | Evet |
-|Erişim için kurumsal kimlik bilgileri gerektir | Hayır | Hayır|
-|Yönetilen cihazların, jailbreak uygulanmış veya kökü belirtilmiş cihazlarda çalışmasını engelle | Hayır | Hayır|
-|Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika) - Zaman aşımı | 30 | 30|
-|Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika) - Çevrimdışı tanınan süre | 720 |720|
-|Uygulama verileri temizlenmeden önce geçen çevrimdışı süre (gün cinsinden) | 90 | 90|
-|Ekran yakalamayı engelle (yalnızca Android cihazlar) | Yok | Hayır |
+**Ad**: Office 365 uygulamalarını yönetme<br>
+**Açıklama**: Office 365 uygulamalarını yönetme sihirbazı tarafından oluşturuldu
+
+| Ayar adı | iOS ilke değeri | Android ilke değeri |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| iTunes ve iCloud yedeklemelerini engelle | Hayır | Yok |
+| Android yedeklemelerini engelle | Yok | Hayır |
+| Uygulamanın diğer uygulamalara veri aktarmasına izin ver | Tüm uygulamalar | Tüm uygulamalar |
+| Uygulamanın diğer uygulamalardan veri almasına izin ver | Tüm uygulamalar | Tüm uygulamalar |
+| “Farklı kaydet”’i Engelle | Hayır | Hayır |
+| Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla | Herhangi bir uygulama | Herhangi bir uygulama |
+| Web içeriğini kurumsal olarak yönetilen bir tarayıcıda görüntülemek üzere kısıtlayın | Hayır | Hayır |
+| Uygulama verilerini şifreleme | Cihaz kilitliyken | Evet |
+| Kişilerin eşitlenmesini devre dışı bırak | Hayır | Hayır |
+| Yazdırmayı devre dışı bırak | Hayır | Hayır |
+| Erişim için PIN gerektir | Hayır | Evet |
+| PIN sıfırlanmadan önce deneme sayısı | Yok | 5 |
+| Basit PIN’e izin ver | Yok | Evet |
+| PIN uzunluğu | Yok | 4 |
+| PIN yerine parmak izine izin ver | Yok | Evet |
+| Erişim için kurumsal kimlik bilgileri gerektir | Hayır | Hayır |
+| Yönetilen cihazların, jailbreak uygulanmış veya kökü belirtilmiş cihazlarda çalışmasını engelle | Hayır | Hayır |
+| Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika) - Zaman aşımı | 30 | 30 |
+| Erişim gereksinimlerini şu süreden sonra yeniden denetle (dakika) - Çevrimdışı tanınan süre | 720 | 720 |
+| Uygulama verileri temizlenmeden önce geçen çevrimdışı süre (gün cinsinden) | 90 | 90 |
+| Ekran yakalamayı engelle (yalnızca Android cihazlar) | Yok | Hayır |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Uygulama PIN ilkesi neden yalnızca Android cihazlar için yapılandırılır?
 Şifreleme iOS ile Android’de ayrı çalışır.

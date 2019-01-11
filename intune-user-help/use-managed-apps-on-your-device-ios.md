@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147511"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203272"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS cihazınızdaki yönetilen uygulamaları kullanma
 
@@ -34,7 +34,7 @@ Yönetilen bir uygulamadaki şirket verilerine eriştiğinizde, açmakta olduğu
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>Yönetilen uygulamaları nasıl edinirim?
+## <a name="how-do-i-get-managed-apps"></a>Yönetilen uygulamaları nasıl edinirim?  
 Yönetilen uygulamaları birkaç farklı yöntemle edinebilirsiniz:
 
 -   Cihazınız Microsoft Intune’a kaydolduğunda uygulamayı Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden yükleyebilirsiniz ya da uygulama şirketinizin destek birimi tarafından cihazınıza yüklenebilir. Kayıt hakkında bilgi edinmek için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-macos.md).
@@ -43,7 +43,16 @@ Yönetilen uygulamaları birkaç farklı yöntemle edinebilirsiniz:
 
 Şirketinizin destek birimi bazen, yüklediğiniz bir uygulama için birden çok lisans satın almış olabilir. Apple Volume Purchase Program sözleşmesini kabul etmenizi isteyen bir ileti görürseniz bu normaldir, kabul edebilirsiniz. Kabul etmediğiniz takdirde uygulamayı yükleyemezsiniz.
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?
+## <a name="available-apps"></a>Kullanılabilir uygulamalar   
+ Kuruluşunuz sizin için işe veya okula uygun ve kullanışlı uygulamalar seçer. Bu uygulamalar, şirket Portalı'nda bulabilirsiniz yalnızca olanlardır.   
+
+ Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, iOS için Şirket portalı uygulamasını kullanıyorsanız, iOS uygulamaları, ancak değil Android uygulamaları için erişim gerekir.   
+
+## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek   
+ Bir uygulama gerekir, ancak şirket portalında görmüyorum varsa, isteyebilirsiniz. İletişim ayrıntılarını bulun, **Yardım Masası** Şirket portalı uygulamasının **Destek** sekmesi. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?  
 Şirketinizin destek biriminin bir uygulamada yönetebileceği ve cihazınızdaki şirket verileriyle etkileşimlerinizi etkileyebilecek seçeneklerin bazı örnekleri aşağıda verilmiştir:
 
 -   Belirli web sitelerine erişim

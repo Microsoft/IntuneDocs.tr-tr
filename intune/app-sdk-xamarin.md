@@ -15,19 +15,19 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: d8e9dd1e38fdc693bd30372f2961244e4e809771
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a698d7a57c59a27dbd39036b1e2607e80570029f
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210780"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
 > [!NOTE]
 > Öncelikle, desteklenen platformlarda tümleştirme için nasıl hazırlık yapıldığını açıklayan [Intune Uygulama SDK’sını Kullanmaya Başlama](app-sdk-get-started.md) makalesini okumanız önerilir.
 
-## <a name="overview"></a>Genel bakış
+## <a name="overview"></a>Genel Bakış
 [Intune App SDK’sı Xamarin Bağlamaları](https://github.com/msintuneappsdk/intune-app-sdk-xamarin), Xamarin ile oluşturulan iOS ve Android uygulamalarındaki [Intune uygulama koruma ilkesini](app-protection-policy.md) etkinleştirir. Bu bağlamalar, geliştiricilerin Intune uygulama koruma özelliklerini Xamarin tabanlı uygulamalarına kolayca eklemesini sağlar.
 
 Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları, Intune uygulama koruma ilkelerini (APP veya MAM ilkeleri olarak da bilinir) Xamarin ile geliştirilen uygulamalarınıza eklemenizi sağlar. MAM özellikli uygulamalar Intune Uygulama SDK’sı ile tümleşiktir. Intune uygulamayı etkin bir şekilde yönetirken, BT yöneticileri mobil uygulamanıza uygulama koruma ilkeleri dağıtabilir.
@@ -56,10 +56,12 @@ Intune Uygulama SDK’sı Xamarin Bağlamaları ile derlenen Xamarin uygulamalar
 
 SDK'ın bağımlı [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) için kendi [kimlik doğrulaması](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) ve koşullu başlatma senaryolarında, uygulamaların ile yapılandırılması gereken [Azure Active Dizin](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
+Uygulamanız zaten ADAL veya MSAL kullanacak şekilde yapılandırıldı ve kendi özel istemci kimliği Azure Active Directory ile kimlik doğrulaması için kullanılan varsa, Intune mobil uygulama yönetimi (MAM) hizmetine Xamarin uygulama izinleri vermek için adımlar emin olun ardından. Yönergeleri kullanın "[uygulama erişimlerini Intune Uygulama Koruması hizmetine](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" bölümünü [Intune SDK'sı Kılavuzu ile çalışmaya başlama](app-sdk-get-started.md).
+
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS mobil uygulamanızda Intune uygulama koruma ilkelerini etkinleştirme
 1. [Microsoft.Intune.MAM.Xamarin.iOS NuGet paketini](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) Xamain.iOS projenize ekleyin.
 2.  Intune Uygulama SDK'sını iOS mobil uygulamasına tümleştirmek için gereken genel adımları izleyin. [iOS için Intune Uygulama SDK'si Geliştirici Kılavuzu](app-sdk-ios.md#build-the-sdk-into-your-mobile-app)'nda verilen tümleştirme yönergelerinin 3. adımıyla başlayabilirsiniz. Bu araç, Microsoft.Intune.MAM.Xamarin.iOS paketinde bulunduğu ve derleme sırasında otomatik olarak çalıştırılacağı için IntuneMAMConfigurator’ı çalıştırma bölümündeki son adımı atlayabilirsiniz.
-    **Önemli**: Visual Studio'da uygulama için anahtarlık paylaşımını etkinleştirme işlemi Xcode'dakinden biraz farklıdır. Uygulamanın Yetkilendirmeler plist dosyasını açın, "Anahtarlığı Etkinleştir" seçeneğinin etkinleştirildiğinden ve uygun anahtarlık paylaşım gruplarının bu bölüme eklendiğinden emin olun. Ardından, tüm uygun Yapılandırma/Platform bileşimleri için projenin "iOS Paketi İmzalama" seçeneklerindeki "Özel Yetkilendirmeler" alanında Yetkilendirmeler plist dosyasının belirtildiğinden emin olun.
+    **Önemli**: Bir uygulama için Anahtarlık paylaşımını etkinleştirdikten Xcode'dan Visual Studio'da biraz farklı olacaktır. Uygulamanın Yetkilendirmeler plist dosyasını açın, "Anahtarlığı Etkinleştir" seçeneğinin etkinleştirildiğinden ve uygun anahtarlık paylaşım gruplarının bu bölüme eklendiğinden emin olun. Ardından, tüm uygun Yapılandırma/Platform bileşimleri için projenin "iOS Paketi İmzalama" seçeneklerindeki "Özel Yetkilendirmeler" alanında Yetkilendirmeler plist dosyasının belirtildiğinden emin olun.
 3.  Bağlamalar eklendikten ve uygulama düzgün bir şekilde yapılandırıldıktan sonra, uygulamanız Intune SDK’sının API’lerini kullanmaya başlayabilir. Bunu yapmak için, aşağıdaki ad alanını eklemelisiniz:
 
       ```csharp
@@ -121,9 +123,6 @@ Bileşeni uygulamanıza eklemek için temel adımları tamamladınız. Şimdi Xa
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Xamarin tabanlı Android LOB uygulamanızı kullanmak için Intune uygulama koruma ilkelerini gerektirme (isteğe bağlı) 
 
 Aşağıda, Xamarin tabanlı Android LOB uygulamalarını yalnızca Intune korumalı kullanıcıların cihazlarında kullanabildiğinden emin olmayı sağlayan yönergeler verilmiştir. 
-
-### <a name="general-requirements"></a>Genel Gereksinimler
-* Uygulama koruma İlkesi (uygulama) hizmeti için Xamarin uygulama izinleri vermek için adımları izlendiğinden emin olun. Yönergeleri kullanın [Intune SDK'sı Kılavuzu ile çalışmaya başlama](app-sdk-get-started.md#next-steps-after-integration) altında "verin, uygulama erişimini Intune uygulama koruma hizmeti için (isteğe bağlı)". 
     
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
 Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulamalarına özgüdür.
@@ -148,5 +147,5 @@ Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri g
 > [!NOTE] 
 > .NET ADAL'ın kullanıma sunulacak bir sonraki sürümünün (3.17.4), bu çalışmayı yapmak için gereken düzeltmeyi içermesi bekleniyor.
 
-## <a name="support"></a>Support
+## <a name="support"></a>Destek
 Kuruluşunuz zaten bir Intune müşterisiyse destek bileti açmak ve [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) bir sorun bileti oluşturmak için Microsoft desteği temsilcinizle birlikte çalışın, mümkün olduğunca kısa sürede size yardım ederiz. 

@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: e0bb198b078695b567756c6a7db832d00e7a8c5b
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210848"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -158,6 +158,8 @@ iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek içi
     * iOS veya Android mağazası uygulamalarınızı Intune uygulama koruma ilkesi için etkinleştiren bir ISV iseniz Microsoft Intune kaydını, kayıt adımında belirtilen şekilde bitirdikten sonra bir promosyon kodu alırsınız. Promosyon kodu, bir yıllık uzatılmış kullanım sağlayan Microsoft Intune denemesine kaydolmanıza olanak tanır.
 
     * Mağazaya gönderilmeyecek bir iş kolu uygulaması geliştiriyorsanız kuruluşunuz aracılığıyla Microsoft Intune’a erişiminizin olması beklenir. [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) ile bir aylık ücretsiz deneme için de kaydolabilirsiniz.
+    
+    * Bir son kullanıcı hesabı kullanarak mobil bir cihazda uygulamanızı test ediyorsanız, o hesabı, bir yönetici hesabı ile oturum açtıktan sonra Office Yönetim Portalı Web sitesinde bir Intune lisansı tarafından verdiğiniz, bkz: sağlamak [atama Microsoft Intune lisans](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak için her ilke ayarı için beklenen davranış ne olduğunu bilmeniz. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](app-protection-policy-settings-android.md).
 

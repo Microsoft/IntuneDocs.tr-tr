@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
-ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
+ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53996040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210916"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,131 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 ### Role-based access control
 
 -->     
+
+
+## <a name="week-of-january-7-2019"></a>7 Ocak 2019 haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="intune-app-pin----2298397---"></a>Intune uygulama PIN'i <!-- 2298397 -->
+BT yöneticisi olarak, bir son kullanıcının PIN kodunun değiştirilmesi gerekmeden, Intune uygulama kadar bekleyebilirsiniz gün sayısını yapılandırabilirsiniz. Yeni ayar *PIN sıfırlamayı kaç gün sonra* ve seçerek Azure Portalı'nda kullanılabilir **Intune** > **istemci uygulamaları**  >   **Uygulama koruma ilkeleri** > **ilke Oluştur** > **ayarları** > **erişim gereksinimlerini**. Kullanılabilir [iOS](app-protection-policy-settings-ios.md) ve [Android](app-protection-policy-settings-android.md) cihazları, bu özellik, artı bir tamsayı değeri destekler.
+
+
+#### <a name="intune-device-reporting-fields----2748738---"></a>Intune cihaz alanları raporlama <!-- 2748738 -->
+Intune, ek cihaz alanları, uygulama kayıt kimliği, Android üreticisi, modeli ve güvenlik düzeltme eki sürümü yanı sıra iOS model dahil olmak üzere raporlama sağlar. Intune, bu alanlar seçerek kullanılabilir **istemci uygulamaları** > **uygulama koruma durumu** seçip **uygulama koruma raporu: iOS, Android**. Bu parametreleri yapılandırma Ayrıca, yardımcı olacak **izin ver** cihaz üreticisi (Android) için liste **izin** cihaz modeli (Android ve iOS) ve en düşük Android güvenlik düzeltme eki için listesi Sürüm ayarı. 
+
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Yönetim Şablonları genel Önizleme aşamasındadır ve kendi yapılandırma profiline taşınır <!-- 3322847 -->
+
+Intune Yönetim Şablonları (**cihaz Yapılandırması** > **Yönetim Şablonları**) şu anda özel Önizleme aşamasındadır. Bu güncelleştirme ile:
+
+- Yönetim Şablonları, Intune'da yönetilebilir 300 ayarları içerir. Daha önce bu ayarlar, yalnızca Grup İlkesi Düzenleyicisi'nde vardı.
+- Yönetim Şablonları genel önizlemede kullanılabilir.
+- Yönetim Şablonları hareket etmesini **cihaz Yapılandırması** > **Yönetim Şablonları** için **cihaz Yapılandırması**  >   **Profilleri** > **profili oluşturma** > içinde **Platform**, seçin **Windows 10 ve üzeri** > içinde **profili tür**, seçin **Yönetim Şablonları**.
+- Raporlama etkindir
+
+Daha fazla bilgi için bu özellik hakkında Git [Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonları](administrative-templates-windows.md).
+
+Uygulama hedefi: Windows 10 ve üzeri
+
+#### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user-----1333642---"></a>Bir kullanıcı için birden çok cihaz imzalamak ve şifrelemek için S/MIME kullan  <!-- 1333642 -->
+Bu güncelleştirme, içeri aktarılmış yeni bir sertifika profili kullanan S/MIME e-posta şifrelemesi içerir (**Cihaz yapılandırması** > **Profiller** > **Profil oluşturun** > platform seçin > **PKCS içeri aktarılan sertifika** profil türü). Intune’da sertifikaları PFX biçiminde içeri aktarabilirsiniz. Intune, aynı sertifikaları tek bir kullanıcı tarafından kaydedilen birden fazla cihaza teslim edebilir. Ayrıca şunları da içerir:
+- Yerel iOS e-posta profili, PFX biçiminde içeri aktarılan sertifikaları kullanan S/MIME şifrelemesini etkinleştirmeyi destekler.
+- Windows Phone 10 cihazlarındaki yerel posta uygulaması, S/MIME sertifikalarını otomatik olarak kullanır.
+- Özel sertifikalar, birden fazla platforma teslim edilebilir. Ancak tüm e-posta uygulamaları, S/MIME’yi desteklemez.
+- Diğer platformlarda S/MIME’yi etkinleştirmek için posta uygulamasını el ile yapılandırmanız gerekebilir.  
+- S/MIME şifrelemesini destekleyen e-posta uygulamaları, S/MIME e-posta şifrelemesi için sertifika alma işlemini MDM’nin destekleyemeyeceği bir şekilde halleder, ör. yayımcılarının sertifika deposundan okuma.
+Bu özellik hakkında daha fazla bilgi için bkz. [imzalamak ve şifrelemek e-posta için S/MIME genel bakış](certificates-s-mime-encryption-sign.md).
+Şu platformlarda desteklenir: Windows, Windows Phone 10, macOS, iOS, Android
+
+#### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Otomatik olarak bağlanıp kuralları DNS ayarlarını Windows 10 ve üzeri cihazlarda kullanırken kalıcı hale getirmek için yeni seçenekler <!-- 1333665, 2999078 -->
+Windows 10 ve üzeri cihazlarda, etki alanı, contoso.com gibi çözümlemek için DNS sunucularının bir listesini içeren bir VPN yapılandırma profili oluşturabilirsiniz. Bu güncelleştirme, ad çözümlemesi için yeni ayarları içerir (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > Seç **Windows 10 ve üzeri** Platform > Seç **VPN** profil türü için > **DNS ayarlarını** >**Ekle**): 
+- **Otomatik olarak bağlan**: Zaman **etkin**, bir cihaz, girin, örneğin contoso.com etki alanı ile iletişim kurarken cihaz VPN otomatik olarak bağlanır.
+- **Kalıcı**: Bu VPN profili kullanarak cihaz bağlı olduğu sürece varsayılan olarak, tüm ad çözümleme İlkesi tablosu (NRPT) kuralları etkindir. Bu ayar olduğunda **etkin** bile VPN kesildiğinde bir NRPT kuralı kural cihazda etkin kalır. VPN profili kaldırılana veya kural manuel olarak kaldırılana kadar yapılabilir kadar kural kalır PowerShell kullanarak.
+[Windows 10 VPN ayarları](vpn-settings-windows-10.md) ayarlar açıklanmaktadır. 
+
+#### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Windows 10 cihazlarda VPN profilleri için güvenilen Ağ algılama kullanın <!-- 1500165 -->
+Güvenilen ağ algılama kullanırken, VPN profilleri kullanıcı zaten güvenilen bir ağda olduğunda otomatik olarak bir VPN bağlantısı oluşturmasını engelleyebilirsiniz. Bu güncelleştirmeyle Windows 10 ve üstünü çalıştıran cihazlarda güvenilen Ağ algılama etkinleştirmek için DNS son eklerini ekleyebilirsiniz (**cihaz Yapılandırması** > **profilleri**  >  **Profil oluşturma** > **Windows 10 ve üzeri** Platform > **VPN** profil türü için).
+[Windows 10 VPN ayarları](vpn-settings-windows-10.md) geçerli VPN ayarlarını listeler.
+
+#### <a name="manage-windows-holographic-for-business-devices-used-by-multiple-users----1907917-1063203---"></a>Birden çok kullanıcı tarafından kullanılan cihazları Windows Holographic for Business ' ı yönetme <!-- 1907917, 1063203 -->
+Şu anda, paylaşılan bilgisayar ayarlarını Windows 10 ve Windows Holographic for Business cihazlar kullanarak özel bir OMA-URI ayarı yapılandırabilirsiniz. Bu güncelleştirmeyle, paylaşılan cihaz ayarları yapılandırmak için yeni bir profil eklenir (**cihaz Yapılandırması** > **profilleri** > **profili oluştur**  >  **Windows 10 ve üzeri** > **paylaşılan çok kullanıcılı cihaz**).
+Bu özellik hakkında daha fazla bilgi için şuraya gidin [paylaşılan cihazları yönetmek için Intune ayarları](shared-user-device-settings.md).
+Uygulama hedefi: Windows 10 ve üzeri, Windows Holographic for Business
+
+#### <a name="new-windows-10-update-settings---2626030--2512994----"></a>Yeni Windows 10 güncelleştirme ayarları <!--2626030  2512994  -->
+İçin [Windows 10 güncelleştirme halkaları](windows-update-for-business-configure.md), yapılandırabilirsiniz:
+- **Otomatik Güncelleştirme davranışı** -yeni bir seçenek kullanın *Varsayılana Sıfırla* özgün otomatik güncelleştirme ayarları bir Windows 10 çalıştıran makineleri makinede geri *Ekim 2018 güncelleştirmesi*
+- **Kullanıcıyı engelle duraklatma Windows Update'ten** -yapılandırma ayarı güncelleştirmeleri engellemek ya da kullanıcılarınızın duraklatma güncelleme yüklemesinden olanak sağlar, yeni bir yazılım *ayarları* makinelerinin. 
+
+#### <a name="ios-email-profiles-can-use-smime-signing-and-encryption----2662949---"></a>iOS e-posta profilleri, S/MIME imzalama ve şifreleme kullanabilirsiniz. <!-- 2662949 -->
+Farklı ayarları içeren bir e-posta profili oluşturabilirsiniz. Bu güncelleştirme, S/MIME imzalama ve iOS cihazlarında e-posta iletişimleri şifrelemek için kullanılan ayarları içerir (**cihaz Yapılandırması** > **profilleri**  >  **Profil oluşturma** > Seç **iOS** Platform > **e-posta** profil türü için).
+[iOS e-posta yapılandırma ayarları](email-settings-ios.md) ayarlar listelenir.
+
+#### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Windows 10 Pro sürümü bazı BitLocker ayarları desteği<!-- 2727036 -->
+Endpoint protection ayarları BitLocker dahil olmak üzere Windows 10 cihazlarda ayarlar bir yapılandırma profili oluşturabilirsiniz. Bu güncelleştirme, Windows 10 Professional edition bazı BitLocker ayarları için destek ekler. Bu koruma ayarlarını görmek için Git [Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md#windows-encryption).
+
+#### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal---2809362---"></a>Azure portalında iOS cihazları için paylaşılan cihaz yapılandırması kilit ekranı iletisi için yeniden adlandırılır<!-- 2809362 -->
+İOS cihazları için bir yapılandırma profili oluşturduğunuzda, ekleyebileceğiniz **paylaşılan cihaz Yapılandırması** kilit ekranında belirli bir metin göstermek için ayarları. Bu güncelleştirme aşağıdaki değişiklikleri içerir: 
+- **Paylaşılan cihaz Yapılandırması** ayarları Azure portalında "(yalnızca denetimli) kilit ekranı iletisi için" yeniden adlandırılmış (**cihaz Yapılandırması** > **profilleri**  >  **Profili oluşturma** > Seç **iOS** platformuna yönelik > Seç **cihaz özellikleri** profil türü için > **Kilitle Ekran ileti**).
+- Kilit ekranı iletileri eklerken, seri numarası, cihaz adı veya başka bir cihaza özgü değer bir değişken olarak ekleyebilirsiniz **varlık etiketi bilgileri** ve **kilit ekranı dipnotu**. Örneğin, girdiğiniz `Device name: {{devicename}}` veya `Serial number is {{serialnumber}}` süslü ayraçlar kullanarak. [iOS belirteçleri](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) kullanılabilecek kullanılabilir belirteçler listeler.
+[Kilit ekranında iletilerin gösterilmesi için ayarları](shared-device-settings-ios.md) ayarlar listelenir.
+
+#### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>Yeni App Store, belge görüntüleme, oyun cihaz kısıtlama ayarları iOS cihazlarına eklendi <!-- 2827760-->
+İçinde **cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > **iOS** için Platform > **cihaz kısıtlamaları** profil türü için > **App Store, belge görüntüleme, oyun**, aşağıdaki ayarlar eklendi: Kişiler yönetilen kişiler hesaplarından okumak için yönetilmeyen kişiler hesapları (yalnızca denetimli) izin yönetilmeyen uygulamaları yazmak yönetilen uygulamalar izin ver (denetimli yalnızca) bu ayarları görmek için Git [iOS cihaz kısıtlamaları](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+#### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android Kurumsal cihaz sahibi cihazlar için yeni bildirim, ipuçları ve tuş korumasını ayarları <!-- 3201839 3201843 -->
+Bu güncelleştirme, cihaz sahibi olarak çalıştırırken Android Kurumsal cihazlarda çeşitli yeni özellikler içerir. Bu özellikleri kullanmak için Git **cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > içinde **platformu**, seçin **Android Kurumsal** > içinde **profil türü**, seçin **yalnızca cihaz sahibi** > **cihaz Kısıtlamaları**.
+Yeni özellikler içerir: 
+- Gösteren gelen çağrıları, sistem uyarıları, sistem hataları ve daha fazlası dahil olmak üzere, sistem bildirimleri devre dışı bırak
+- Başlangıç öğreticileri ve ilk kez açan uygulamalar için ipuçları Atla önerir
+- Gelişmiş Tuş korumasını ayarlarını devre dışı bırakmak, kamera, bildirimler gibi parmak iziyle kilit açma ve ayarları görmek için daha fazla Git [Android Kurumsal cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
+
+#### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android Kurumsal cihaz sahibi cihazlar her zaman açık VPN bağlantıları kullanabilirsiniz. <!-- 3202194 -->
+Bu güncelleştirmede Android Kurumsal cihaz sahibi cihazlarda her zaman açık VPN bağlantıları kullanabilirsiniz. Her zaman açık VPN bağlantıları; kullanıcı cihazının kilidini açtığında, cihaz yeniden başlatıldığında veya kablosuz ağ değiştiğinde bağlı kalır veya hemen tekrar bağlanır. Bağlantıyı “kilitli”moduna da alabilirsiniz, böylece VPN bağlantısı etkin olana kadar tüm ağ trafiği engellenir.
+Her zaman açık VPN etkinleştirebilirsiniz **cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >   **Android Kurumsal** Platform > **cihaz kısıtlamaları** yalnızca cihaz sahibi > **bağlantı** ayarları. Ayarları görmek için Git [Android Kurumsal cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
+
+#### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices----3285177---"></a>Yeni Windows 10 cihazlarında Görev Yöneticisi'nde son işlemler için ayarlama <!-- 3285177 --> 
+Bu güncelleştirme, Windows 10 cihazlarda Görev Yöneticisi'ni kullanarak işlemleri sonlandırmak için yeni bir ayar içerir. Bir cihaz yapılandırma profili kullanarak (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > içinde **platformu** , seçin **Windows 10** > içinde **profil türü**, seçin **cihaz kısıtlamaları** > **genel** ayarları), izin verme veya engelleme bu ayarı seçin.
+Bu ayarları görmek için Git [Windows 10 cihaz kısıtlama ayarları](device-restrictions-windows-10.md).
+Uygulama hedefi: Windows 10 ve üzeri
+
+
+### <a name="device-enrollment"></a>Cihaz kaydı
+
+#### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>Daha ayrıntılı kayıt kısıtlama hata iletileri <!-- 3111564 -->
+Daha ayrıntılı hata iletileri, kayıt kısıtlamaları karşılanmadı seçtiğinizde kullanılabilir. Bu iletileri görmek için Git **Intune** > **sorun giderme** > ve kayıt hataları tabloyu gözden geçirin. Daha fazla bilgi için [kayıt hatalarının listesi](help-desk-operators.md#configuration-policies-reference).
+
+#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>İOS DEP cihazı üzerinde daha fazla Kurulum Yardımcısı ekranları atlamak <!-- 2687509 -->
+Şu anda atlayabilirsiniz ekranlar ek olarak, bir kullanıcı cihaz kaydedilirken Kurulum Yardımcısı'nı aşağıdaki ekranlarda atlamak için DEP cihazları iOS ayarlayabilirsiniz: Sesi, gizlilik, Android geçişi, giriş düğmesi, iMessage & FaceTime, ekleme, Watch geçişi, görünüm, ekran zaman, yazılım güncelleştirmesi, SIM Kurulum görüntüler.
+Hangi atlamak için ekranları seçmek için Git **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** > bir belirteç seçin > **Profilleri** > bir profili seçin > **özellikleri** > **Kurulum Yardımcısı özelleştirme** > seçin **Gizle**  atlamak istediğiniz tüm ekranlar için > **Tamam**.
+
+
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+#### <a name="tenant-status-dashboard-----1124854---"></a>Kiracı durumu Panosu  <!-- 1124854 -->
+Yeni [Kiracı durumu sayfası](tenant-status.md) görüntüleyebileceğiniz durumu ve ilgili ayrıntıları kiracınız için tek bir konum sağlar.  Pano dört alana ayrılır:
+- **Kiracı ayrıntıları** -Kiracı adı ve konumu içeren daha fazla bilgi görüntüler MDM yetkilinizi toplam kayıtlı cihazlara kiracınızdaki ve lisansınızı sayar. Bu bölümde, kiracınız için geçerli hizmet sürümü de listelenir.
+- **Bağlayıcı durumu** -yapılandırdıysanız ve ayrıca hangi henüz etkin listeleyebilirsiniz kullanılabilir bağlayıcılar hakkında daha fazla bilgi görüntüler.  
+   Her bağlayıcı geçerli durumuna bağlı olarak, bunlar sağlıklı, uyarı veya sağlıksız işaretlenir. Detaylandırma ve ayrıntıları görüntülemek veya daha fazla bilgi için bu yapılandırma için bir bağlayıcı seçin.
+-  **Intune hizmet durumu** -kiracınız için etkin olaylar veya kesinti ayrıntılarını görüntüler. Bu bölümdeki bilgiler, Office ileti Merkezi'nden doğrudan alınır.
+-  **Intune haber** -kiracınız için etkin bir ileti görüntüler. Kiracınıza en yeni Intune özellikleri aldığında, iletileri bildirimleri gibi şeyleri içerir.  Bu bölümdeki bilgiler, Office ileti Merkezi'nden doğrudan alınır.
+
+#### <a name="new-help-and-support-experience-in-company-portal-for-windows-10----1488939--"></a>Yeni Yardım ve destek deneyimi Windows 10 için Şirket portalı <!-- 1488939-->
+Yeni Şirket portalı Yardım ve Destek sayfasında ilgili sorunları gidermek ve uygulama ve erişim sorunları için yardım iste kullanıcılara yardımcı olur. Yeni sayfasından, hata ve tanılama günlüğü ayrıntıları e-posta ve kuruluşun Yardım Masası ayarıntılarını bulun. Bunlar, bir SSS bölümü ile ilgili Intune belgelerine bağlantılar da bulabilirsiniz. 
+
+#### <a name="new-help-and-support-experience-for-intune------3307080---"></a>Intune için yeni Yardım ve destek deneyimi   <!-- #3307080 -->
+Yeni Yardım ve destek deneyimi görmek için tüm kiracılar sonraki birkaç gün içinde görüşlerine sunuyoruz. Bu yeni deneyim, Intune için kullanılabilir ve Intune dikey pencerelerinde kullanırken erişilebilir [Azure portalında](https://portal.azure.com/).
+Yeni deneyim, sorununuzu kendi kelimelerinizle açıklamanıza ve sorun giderme içgörüleri ile Web tabanlı düzeltme içeriği almanıza olanak tanır. Bu çözümler sunulan bir kural tabanlı makine öğrenme algoritmasına, kullanıcı tarafından Yönetilen vazgeçilmez. Sorun özgü yönergeler ek olarak, e-posta veya telefon ile bir destek olayı açmak için yeni durum oluşturma iş akışı kullanın. Bu yeni deneyim, önceki Yardım ve destek deneyimi, Yardım ve Destek açtığınızda olan alan konsolunun dayalı önceden seçili seçenekler statik bir kümesini değiştirir. Daha fazla bilgi için [Intune için destek alma](get-support.md).
+
+### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
+
+#### <a name="scope-tags-for-apps----1081941---"></a>Uygulamalar için kapsam etiketleri <!-- 1081941 -->
+Rolleri ve uygulamalar için erişimi sınırlandırmak için kapsamı etiketleri oluşturabilirsiniz. Böylece kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama erişimi için bir uygulama bir kapsam etiketi ekleyebilirsiniz. Daha fazla bilgi için [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
+
+
 
 ## <a name="week-of-december-10-2018"></a>10 Aralık 2018 haftası
 
@@ -244,7 +369,7 @@ Azure Active Directory’de mevcut Intune hüküm ve koşulları yerine kullanab
 Samsung Knox Mobil Kaydı için Intune artık cihazları Android Cihaz Sahibi yönetim modunda kaydetmeyi destekliyor. WiFi veya hücresel ağ kullanan kullanıcılar, cihazlarını ilk kez açtıklarında yalnızca birkaç dokunuşla kayıt yapabilir. Daha fazla bilgi için bkz. [Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme](android-samsung-knox-mobile-enroll.md).
 
 ### <a name="device-management"></a>Cihaz yönetimi
-#### <a name="new-settings-for-software-updates------1907869--wnready---"></a>Yazılım güncelleştirmeleri için yeni ayarlar   <!-- 1907869  wnready -->  
+#### <a name="new-settings-for-software-updates------1907869---"></a>Yazılım güncelleştirmeleri için yeni ayarlar   <!-- 1907869 -->  
 - Bazı bildirimler en son yazılım güncelleştirmeleri yüklemesini tamamlamak üzere gereken yeniden başlatma hakkında uyarı son kullanıcılara artık yapılandırabilirsiniz.   
 - KCG senaryolarını destekleyen bir yeniden başlatma için uyarı istemini iş saatleri dışında gerçekleşen bir yeniden başlatma artık yapılandırabilirsiniz.
 
@@ -281,7 +406,7 @@ Dağıtıma dahil edilen müşteriler için bu yeni deneyim, Yardım ve Desteği
 
 *Bu yeni Yardım ve Destek deneyimi, bazı kiracıların (tamamının değil) kullanımına sunulmaktadır ve Cihaz Yönetimi portalında kullanılabilir. Yeni deneyime katılacak kişiler, uygun Intune kiracıları arasından rastgele seçilir. Dağıtım kapsamı genişledikçe yeni kiracılar eklenecektir.*  
 
-Daha fazla bilgi için Microsoft Intune için destek alma makalesindeki [Yeni Yardım ve Destek deneyimi](get-support.md#new-help-and-support-experience) konusuna bakın.  
+Daha fazla bilgi için [Yardım ve destek deneyimi](get-support.md#help-and-support-experience) nasıl Intune için destek alma.  
 
 ### <a name="powershell-module-for-intune--preview-available----951068---"></a>Intune için PowerShell modülü - Önizleme kullanılabilir <!-- 951068 -->
 Intune API’si için Microsoft Graph yoluyla destek sağlayan yeni bir PowerShell modülü artık [GitHub]( https://aka.ms/intunepowershell)’da önizleme olarak kullanılabilir. Bu modülü kullanma hakkında daha fazla ayrıntı için modülün bulunduğu konumdaki README dosyasına bakın. 

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210746"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme
 
@@ -47,7 +47,7 @@ Kullanıcılarınız, cihaz yönetmek ve uygulama yüklemek için Intune Şirket
 5. **Platform** olarak **Windows 10 tüm cihazlar**’ı seçin ve ardından uygun **En düşük sürüm**, **Mimari** ve **Uygulama indirme meta verileri** değerlerini seçin. 
 6. Dosyayı yerel makinenize kaydetmek için **İndir**’i seçin.
 
-    ![İndirme işlemi için seçili “Windows 10 tüm cihazlar” ve Mimari X86 paketi ayrıntıları](./media/Win10CP-all-devices.png)
+    ![Windows 10 cihazları, burada mimarisi X86 eşittir, seçili](./media/Win10CP-all-devices.png)
 
 7. **İndir**’i seçerek “Gerekli Çerçeveler” başlığı altındaki tüm paketleri indirin.  
     Bu eylem x86, x64 ve ARM mimarileri için gerçekleştirilmelidir. Yani toplam 12 paket gerekir.

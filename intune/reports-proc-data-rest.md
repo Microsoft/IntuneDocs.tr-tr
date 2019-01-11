@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f587fdf7c1690dbb0a31388a9c70b780179e541e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642889"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210882"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -47,7 +47,7 @@ Azure’da yerel bir uygulama oluşturun. Bu yerel uygulama, istemci uygulamadı
     3.  **Oturum açma URL’si** için bir URL girin. Oturum açma URL’si belirli bir senaryoya bağlıdır ancak Postman kullanmayı planlıyorsanız `https://www.getpostman.com/oauth2/callback` yazın. Azure AD’de kimlik doğrularken istemci kimlik doğrulaması adımı için geri aramayı kullanacaksınız.
 4.  **Oluştur**’u seçin.
 
-     ![Intune Veri Ambarı API’si](./media/reports-get_rest_data_client_overview.png)
+     ![Intune veri ambarı istemci uygulaması](./media/reports-get_rest_data_client_overview.png)
 
 5. Bu uygulamanın **Uygulama kimliğini** not edin. Bu kimliği sonraki bölümde kullanacaksınız.
 
@@ -134,7 +134,7 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 
 12. **Belirteç İste**’ye tıklayın.
 
-    ![Belirteç için bilgiler](./media/reports-postman_getnewtoken.png)
+    ![Bilgi için erişim belirteci](./media/reports-postman_getnewtoken.png)
 
 13. Active AD yetkilendirme sayfasında kimlik bilgilerinizi girin. Postman’deki belirteçler listesinde artık `Bearer` adlı belirteç de yer alır.
 14. **Belirteç Kullan**’a tıklayın. Üst bilgiler listesi, yeni Yetkilendirme anahtar değeri ve `Bearer <your-authorization-token>` değerini barındırır.
@@ -144,7 +144,7 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 1.  **Gönder**’i seçin.
 2.  Dönüş verileri Postman yanıt gövdesi içinde görüntülenir.
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Postman istemci durum 200 Tamam eşittir](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Intune Veri Ambarı API’sinden veri almak için bir REST istemcisi (C#) oluşturma
 
@@ -161,7 +161,7 @@ Aşağıdaki örnek, bir basit REST istemcisi içerir. Kod, .Net kitaplığında
 6. NuGet paket lisansını kabul etmek için **Kabul Ediyorum**’a tıklayın.
 7. Çözüm Gezgini’nde `Program.cs` öğesini açın.
 
-    ![Visual Studio’da Proje](./media/reports-get_rest_data_in.png)
+    ![Progam.cs ve Visual Studio'daki Çözüm Gezgini'nde](./media/reports-get_rest_data_in.png)
 
 8. Program.cs’deki kodu aşağıdaki kodla değiştirin:  
    ```csharp

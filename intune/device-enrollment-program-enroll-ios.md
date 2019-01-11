@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642855"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203425"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -192,9 +192,17 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
     | <strong>Yakınlaştırma</strong> | Kullanıcıya cihazı ayarlarken ekranı yakınlaştırma seçeneği sağlar. |
     | <strong>Siri</strong> | Kullanıcıya Siri'yi ayarlama seçeneği sağlar. |
     | <strong>Tanılama Verileri</strong> | Kullanıcıya **Tanılama** ekranını görüntüler. Bu ekran kullanıcıya Apple'a tanılama verileri gönderme seçeneği sağlar. |
+    | <strong>Sesi görüntüleme</strong> | Kullanıcı üzerinde görünen sesini kapat seçeneği sunar. |
+    | <strong>Gizlilik</strong> | Gizlilik ekran, kullanıcıya göstermek. |
+    | <strong>Android geçiş</strong> | Geçiş seçeneği kullanıcıya vermek bir Android cihazından tarih. |
+    | <strong>iMessage ve FaceTime</strong> | Kullanıcı iMessage ve FaceTime ayarlama seçeneğini sunar. |
+    | <strong>Ekleme</strong> | Onboarding bilgi ekranları kapak sayfası ve çoklu ve denetim merkezi gibi kullanıcı eğitimi görüntüleyin. |
+    | <strong>Geçiş izleme</strong> | Kullanıcı verileri, watch CİHAZDAN geçirmek için seçeneği sunar. |
+    | <strong>Ekran zaman</strong> | Ekran zaman ekranı görüntüler. |
+    | <strong>Yazılım güncelleştirmesi</strong> | Zorunlu yazılım güncelleştirme ekranı görüntüler. |
+    | <strong>SIM Kurulumu</strong> | Kullanıcının hücresel bir plana eklemek için seçeneği sunar. |
 
-
-14. Seçin **Tamam**.
+14. **Tamam**’ı seçin.
 
 15. Profili kaydetmek için **Oluştur**’u seçin.
 

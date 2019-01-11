@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 5dfce7475e0ee7e39ea6d99c6d12f4ef513c2713
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816849"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203255"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ Uyumluluk durumu üç farklı yerden izlenebilir:
 1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükünde özet görünümü görmek için **İzle** > **Uygulama koruma durumu**’nu seçin:
+4. İçinde **istemci uygulamaları** iş yükünü seçin **uygulama koruma durumu** gelen **İzleyici** bölümünde Özet görünümü görmek için:
 
 ![Intune mobil uygulama yönetimi bölmesinde Özet kutucuğu](./media/app-protection-user-status-summary.png)
 
--   **Kullanıcılar**: Şirketinizin, iş bağlamında bir ilkeyle ilişkili olan bir uygulama kullanan kullanıcıların toplam sayısı.
+-   **Atanan kullanıcılar**: Şirketinizde iş bağlamında bir ilkeyle ilişkili korumalı ve lisanslı, korunmasız ve lisanssız atanan kullanıcılar yanı sıra bir uygulama kullanan atanmış kullanıcıların toplam sayısı.
+-   **Bayrak eklenen kullanıcılar**: Sorun yaşayan kullanıcıların sayısı. Jailbreak uygulanmış cihazlar kapsamında raporlanır **riskli oldukları belirlenen kullanıcılar**.
+-   **İOS için kullanıcı durumu** ve **Android için kullanıcı durumu**: İlgili platformuna yönelik iş bağlamında atanmış bir ilkeye sahip bir uygulama kullanmış olan kullanıcıların sayısı. Bu bilgileri, iş bağlamında hiçbir ilke tarafından hedeflenmeyen bir uygulamayı kullanan kullanıcıların sayısını yanı sıra, ilke tarafından yönetilen kullanıcı sayısını gösterir. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
 
--   **İLKE TARAFINDAN YÖNETİLEN**: Bir iş bağlamında atanmış bir ilkeye sahip bir uygulama kullanmış olan kullanıcıların sayısı.
-
--   **İLKE YOK**: İş bağlamında hiçbir ilke tarafından hedeflenmeyen bir uygulamayı kullanan kullanıcıların sayısı. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
     > [!NOTE]
     > Platform başına birden çok ilkeniz varsa bir kullanıcıya atanmış en az bir ilke olduğunda bu kullanıcının ilke ile yönetildiği kabul edilir.
-
-- **Bayrak eklenen kullanıcılar**: Sorun yaşayan kullanıcıların sayısı. Şu anda yalnızca jailbreak uygulanmış cihazlara sahip kullanıcılar, **Bayrak eklenen kullanıcılar** kapsamında raporlanır.
-
 
 ## <a name="detailed-view"></a>Ayrıntılı görünüm
 **Kullanıcı durumu** kutucuğunu (cihazın işletim sistemi platformuna göre ve **Bayrak eklenen kullanıcılar** kutucuğunu seçerek özetin ayrıntılı görünümünü elde edebilirsiniz.
@@ -79,7 +75,7 @@ Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetl
 
 Kullanıcının raporlamasını görmek için şu adımları izleyin:
 
-1.  Kullanıcı seçmek için **Özet** kutucuğunu işaretleyin.
+1.  Kullanıcı seçmek için Seç **kullanıcı durumu** Özet kutucuğu.
 
     ![Intune mobil uygulama yönetimi Özet kutucuğu ekran görüntüsü](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ Ayrıntılı görünümde; hata iletisi, hata oluştuğunda erişilmiş olan uyg
 
 ## <a name="reporting-view"></a>Raporlama görünümü
 
-Ayrıntılı görünümde, aynı raporlara ek olarak MAM ilkesi uyumluluk durumuyla ilgili bilgi almanıza yardımcı olacak diğer raporları bulabilirsiniz:
+Raporların aynılarına bulabilirsiniz **uygulama koruma durumu** dikey penceresi.
 
-![Ayarlar bölmesinde kullanılabilir 2 raporun vurgulandığı ekran görüntüsü](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Intune, ek cihaz alanları, uygulama kayıt kimliği, Android üreticisi, modeli ve güvenlik düzeltme eki sürümü yanı sıra iOS model dahil olmak üzere raporlama sağlar. Intune, bu alanlar seçerek kullanılabilir **istemci uygulamaları** > **uygulama koruma durumu** seçip **uygulama koruma raporu: iOS, Android**. Bu parametreleri yapılandırma Ayrıca, yardımcı olacak **izin ver** cihaz üreticisi (Android) için liste **izin** cihaz modeli (Android ve iOS) ve en düşük Android güvenlik düzeltme eki için listesi Sürüm ayarı. 
 
--   **Uygulama Koruması kullanıcı raporu:** Bulabileceğiniz bilgileri özetler **kullanıcı durumu** yukarıdaki ayrıntılı görünüm bölümünde rapor.
+MAM İlkesi uyumluluk durumuyla ilgili yardımcı olacak ek raporlar kullanılabilir. Bu raporları görüntülemek için seçin **istemci uygulamaları** > **uygulama koruma durumu** > **raporları**. 
 
--   **Uygulama koruması uygulama raporu:** Bu, yöneticilerin, raporu oluşturmadan önce seçebileceği iki farklı uygulama koruma durumu sağlar. Durumlar korumalı veya korumasız olabilir.
+**Raporları** dikey pencere, kullanıcı ve uygulama, aşağıdakiler dahil olmak üzere dayanan çeşitli raporlar sağlar:
+
+
+-   **Kullanıcı raporu**: Bu rapor bulabileceğiniz bilgileri özetler **kullanıcı durumu** yukarıdaki ayrıntılı görünüm bölümünde rapor.
+
+-   **Uygulama raporu**: Bu rapor, yöneticilerin, raporu oluşturmadan önce seçebileceği iki farklı uygulama koruma durumu sağlar. Durumlar korumalı veya korumasız olabilir.
 
     -   Yönetilen MAM etkinliği (korumalı) için kullanıcı durumu: Bu rapor, kullanıcı başına temelinde her yönetilen MAM uygulamasının etkinliğini özetler.
 
         -   Her bir kullanıcı için, MAM ilkeleri tarafından hedeflenen tüm uygulamaları göstermenin yanı sıra uygulamaların durumunu, MAM ilkelerine giriş yapmış veya MAM ilkesi ile hedeflenmiş ancak henüz giriş yapmamış olarak özetler.
-<br></br>
+<br><br>
     -   Yönetilmeyen MAM etkinliği (korumasız) için kullanıcı durumu: Bu rapor, MAM özellikli uygulamalar, kullanıcı başına esasına göre şu anda yönetilmeyen etkinliğini özetler. Bu, aşağıdaki nedenlere bağlı olarak gerçekleşebilir:
 
         -   Bu uygulamalar, henüz bir MAM ilkesi tarafından hedeflenmemiş olan bir kullanıcı veya uygulama tarafından kullanılıyor olabilir.

@@ -1,11 +1,11 @@
 ---
 title: Windows 10 cihazlar için şirketinizin destek birimine günlük gönderme | Microsoft Docs
-description: Send hata ayrıntılarını şirket destek yardımcı olmak için uygulama sorunlarını düzeltme
+description: Şirket destek yardımcı olmak için e-posta hata ve günlük ayrıntıları uygulama sorunlarını düzeltme
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,32 +17,44 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cc1af3dee9dc8c591322c26b65a354130b05786a
-ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
+ms.openlocfilehash: 3c68f5f89098a5e294644973f23f57c038936d40
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54006327"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54202983"
 ---
-# <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Şirket portalı Windows için şirketinizin Destek birimine tanılama günlükleri gönderin
+# <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Şirketinizin destek biriminin sorunu için Şirket portalı Windows hakkında e-posta
 
-Windows 10 için Şirket portalı uygulamasında uygulama sorunlarını giderin. Windows 10 Cihazınızda uygulamasını kullanırken bir sorunla karşılaşırsanız Yardım için destek ekibinize e-posta gönderebilirsiniz. Olayları ve Şirket portalı uygulamasında oluşan hatalar, Cihazınızda adlı özel bir belgede kaydedilir bir _tanılama günlüğü_. Yardım istediğinde, hızlı bir şekilde, ihtiyacınız olan Yardımı alabilmeniz amacıyla, uygulama önceden doldurulmuş bir e-posta, tanılama kimliği ile açılır.
+Windows 10 için Şirket portalı uygulamasında, uygulama sorunlarını giderin. Windows 10 Cihazınızda sırada bir sorunla karşılaşırsanız Yardım için destek ekibinize e-posta gönderebilirsiniz. 
+
+Yardım istediğinde, burada ayrıntılı sorunu açıklayabilmesi önceden doldurulmuş bir e-posta açılır. Ayrıca bir tanılama günlüğü kimliği içerir Destek ekibinizin, açıklamasına göre sorunu çözemezseniz, Yardım için Microsoft başvurun. Microsoft, uygulama günlükleri başvurmak için tanılama kimliği gerekir.   
+
 
 > [!Note]       
-> Tıkladıktan sonra **Yardım Al**, Şirket portalı Microsoft Destek ekibine günlüklerinizi otomatik olarak gönderir. Ve Microsoft ilgili sorunları gidermek kolaylaştırır proaktif bir adımdır.  
+> Tıkladıktan sonra **Yardım Al**, Şirket portalı Microsoft Destek ekibine günlüklerinizi otomatik olarak gönderir. Bu adım ilerletilmiş sorunları gidermek ve çözmek kolaylaştıran bir proaktif, Microsoft desteği. Yukarıda belirtildiği gibi Microsoft Destek ekibine e-postanızda tanılama Kimliğini kullanarak günlükleri çekebilirsiniz.  
+
+## <a name="what-is-a-diagnostic-log"></a>Tanılama Günlüğü nedir?
+
+Olayları ve Şirket portalı uygulamasında oluşan hatalar, Cihazınızda adlı özel bir belgede kaydedilir bir _tanılama günlüğü_. Günlükleri ortaya çıkarabilir:  
+* Ne zaman bir sorun oluştu.  
+* Sorunu sonlanan adımlar.  
+* Sorun görüntülendiğinde uygulamanın durumu.   
+
+## <a name="steps-to-get-help"></a>Yardım almak için adımlar  
 
 1. **Şirket Portalı** uygulamasını açın.
-2. Seçin **ayarları** > **Yardım Al**.  
+2. Seçin **Yardım ve Destek** > **Yardım Al**.  
 
-   ![Ayarları ve Yardım alın vurgulayan ekran görüntüsü Ayarlar sayfasında bölümü ve düğmesi.](./media/1811_Get_Help_Windows_Cpapp.png)    
+   ![Bölümü, başlamanıza yardımcı olmak ve sol gezinti çubuğunda vurgulayan ekran görüntüsü Yardım ve Destek sayfasının.](./media/1812_UCP_Help_Support_Get_Help_Logs.png)    
 
-3. Zaman **paylaşımı** ekranı görüntülenirse, seçin **posta**. **Posta** uygulama bir e-posta iletisi sizin için oluşturur. Destek ekibine günlüklerde dikkat edilmesi gerekenler hakkında fikir sahip olacak şekilde karşılaştığınız sorunun açıklamasını yazın.
+3. Zaman **paylaşımı** ekranı görüntülenirse, seçin **posta**. **Posta** uygulama bir e-posta iletisi sizin için oluşturur. Destek ekibine dikkat edilmesi gerekenler hakkında fikir sahip olacak şekilde karşılaştığınız sorunun açıklamasını yazın.  
 
    ![Posta uygulama simgesine vurgulama ekranının ekran görüntüsü paylaşımı.](./media/1811_Mail_Logs_Windows_CPapp.png)  
 
 
    ![Posta uygulamasında açılır önceden doldurulmuş bir e-postanın ekran görüntüsü.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
 
-Şirket uygulama veya cihaz etkinliği hakkında ek bilgi gerekiyorsa, ayrıca göndermek ihtiyacınız olabilecek [ayarlar uygulamasından günlükler](send-logs-to-your-it-admin-settings-windows.md).  
+Şirket uygulama veya cihaz etkinliği hakkında ek bilgi gerekiyorsa göndermek ihtiyacınız olabilecek [ayarlar uygulamasından günlükler](send-logs-to-your-it-admin-settings-windows.md).  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150675"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203158"
 ---
-# <a name="use-managed-devices-to-get-work-done"></a>İşleri halletmek için yönetilen cihazları kullanma
-Microsoft Intune, kuruluşların cihazları (akıllı telefonlar, tabletler ve bilgisayarlar gibi), uygulamaları ve e-posta gibi diğer şirket kaynaklarını yönetmesine olanak tanıyan bir yazılım parçasıdır. Bu yazılım, çalışanların hemen her yerden ve hemen her cihazdan çalışma bilgilerine erişmesini sağlarken, kurumsal bilgilerin güvenliğini korumaya da yardımcı olur.
+# <a name="use-managed-devices-to-access-work-or-school-resources"></a>İş veya Okul kaynaklarına yönetilen cihazları kullanma
+Microsoft Intune kuruluşların cihazları, uygulamaları ve e-posta erişimi yönetmesine olanak sağlayan bir cihaz yönetim sistemidir. Cihaz yönetimi ve diğer çalışanlara ve öğrencilere, neredeyse her yerden ve neredeyse tüm cihazlardan gelen iş bilgilerinize erişim sağlar. Hatta, uzaktan çalışırken, sizin ve kuruluşunuzun bilgilerini güvenli kalır.
 
-Cihazlarınızı Intune ile yönetilmek üzere kaydettiğinizde, BT departmanınız bu iş veya okul kaynaklarını yönetebilir, cihazın güvenli kalmasını sağlayabilir ve siz çalışanlara işlerinizi halletmek için tercih ettiğiniz cihazı kullanma özgürlüğünü tanıyabilir. Bunu yapmanın birincil yolu, Şirket Portalı aracılığıyla cihazı yönetime kaydetmektir.
+Microsoft Intune kendi güvenlik ve cihaz gereksinimleri yapılandırmak için şirketinizin kullandığı yazılımdır. Cihazınızın yönetilmesini hazır olduğunuzda, Intune Şirket portalı uygulamasını kullanırsınız. Bu uygulamayla iş veya Okul kaynaklarını tercih ettiğiniz cihazı kullanabilirsiniz. 
 
-## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Cihazımı Intune’a kaydettiğimde şirketim hangi bilgileri görebilir?
-Şirketinizin destek birimi işle ilgili bilgileri görebilir, ancak kişisel bilgilerinizi göremez. Özellikle işte kullanmak için kişisel bir cihazı kaydettiğinizde bunu bilmeniz önemlidir. [Ne görüp ne göremedikleri bir sonraki kullanıcı yardımı makalesinde](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) ayrıntılı olarak açıklanmıştır.
+## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>Yönetilen cihazımı aldığımda Şirketim hangi bilgileri görebilir?
+Şirket portalı'nda kurduktan sonra şirketinizin destek birimi, yalnızca çalışmak ilgili bilgiler görebilirsiniz. Bunlar, kişisel bilgilerinizi göremez. Özellikle işte kullanmak için kişisel bir cihazı kaydettiğinizde bunu bilmeniz önemlidir. Tam olarak hangi kullanıcılar bilgi [sonraki makalede görebilecekleri ve göremeyecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-## <a name="how-do-i-get-the-company-portal"></a>Şirket Portalı’nı nasıl alabilirim?
-Şirket Portalı’nı iki farklı yolla alabilirsiniz:
+## <a name="how-do-i-get-company-portal"></a>Şirket portalı'nı nasıl alabilirim?
+Get Şirket portalı tarafından ya da:
 
-- Cihazınıza Şirket Portalı uygulamasını yükleyerek. Normalde Şirket Portalı uygulamasını cihazınızda uygulama mağazasına giderek alabilirsiniz ancak şirketinizin destek birimi de Şirket Portalı uygulamasını sizin için yükleyebilir.
-- Şirketinizin destek biriminin ayarladığı [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) giderek.
+- Cihazınıza Şirket portalı uygulamasını yükleme. Normalde Şirket Portalı uygulamasını cihazınızda uygulama mağazasına giderek alabilirsiniz ancak şirketinizin destek birimi de Şirket Portalı uygulamasını sizin için yükleyebilir.
+- Gidip [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) şirketinizin yedekleme kümesini destekler.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Uygulamayla web sitesi arasındaki fark nedir?
 Şirket Portalı uygulamasıyla Şirket Portalı web sitesi arasında birkaç küçük fark vardır, ama aynı görevleri çoğunlukla her ikisinde de gerçekleştirebilirsiniz. Gerçekleştirebileceğiniz görevlerden bazıları:
