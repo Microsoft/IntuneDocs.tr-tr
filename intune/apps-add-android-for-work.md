@@ -1,12 +1,12 @@
 ---
-title: Android iş profili cihazlarına uygulama atama
+title: Kurumsal Android cihazlar için yönetilen Google Play uygulamaları atama
 titlesuffix: Microsoft Intune
-description: Yönetilen Google Play mağazasından Android iş profili cihazlarına uygulama eşitlemeyi ve atamayı öğrenin.
+description: Uygulama eşitlemeyi ve kurumsal Android cihazlar için yönetilen Google Play Mağazası'ndan atamayı öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305939"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239583"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Intune ile Android iş profili cihazlarına uygulama atama
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Android kuruluş cihazlarının Intune ile yönetilen Google Play uygulamaları atama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android kurumsal, Android iş profili cihazları ve bilgi noktası cihazları için bir programdır. Android iş profili cihazları için Android kurumsal, kişisel uygulamaları ve verileri iş uygulama ve verilerinden ayıran bir özellik ve hizmet kümesidir. Android iş profili, kullanıcılar Android cihazlarını iş için kullandıklarında ek yönetim seçenekleri ve gizlilik sağlar. Intune, iş bilgileriyle kişisel bilgilerin ayrı olmasını sağlamak için Android iş profili cihazlarına uygulamalar ve ayarlar dağıtmanıza yardımcı olur. Android iş profili cihazları için yüklediğiniz tüm uygulamalar Yönetilen Google Play mağazasından gelir. Android iş profili cihazlarına uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
+Android Kurumsal Android iş profili cihazları, ayrılmış/bilgi noktası cihazları için bir program olan ve tam olarak yönetilen cihazlar. Android iş profili cihazları için Android kurumsal, kişisel uygulamaları ve verileri iş uygulama ve verilerinden ayıran bir özellik ve hizmet kümesidir. Android iş profili, kullanıcılar Android cihazlarını iş için kullandıklarında ek yönetim seçenekleri ve gizlilik sağlar. Intune, iş bilgileriyle kişisel bilgilerin ayrı olmasını sağlamak için Android iş profili cihazlarına uygulamalar ve ayarlar dağıtmanıza yardımcı olur. Android iş profili cihazları için yüklediğiniz tüm uygulamalar Yönetilen Google Play mağazasından gelir. Android iş profili cihazlarına uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Mağazada oturum açar, istediğiniz uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
 
 Ayrıca, kendi iş kolu (LOB) uygulamalarınızı oluşturduysanız, bunları aşağıdaki gibi atayabilirsiniz:
 - Google Play Store'daki özel bir alanda uygulama yayımlamanıza olanak tanıyan bir Google Developer hesabı için kaydolun.

@@ -15,16 +15,16 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3e66dd3d77cc36a6d311afea82e0f2087b469495
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817271"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239600"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure’da Intune şirket içi Exchange bağlayıcısını ayarlama
 
-Şirket içi Exchange Server ortamında, Exchange şirket içi posta kutularına erişime izin vermek veya bu erişimi engellemek için Intune koşullu erişimi kullanılabilir. Exchange Active Sync şirket içi bağlayıcılarını kullanarak Intune'u Exchange kuruluşlarınıza bağlayın ve cihaz uyumluluk ilkeleriyle birlikte Intune koşullu erişimini ayarlayın. Ardından, bir cihaz Exchange'e bağlanmayı denediğinde Intune cihazın Intune'a kayıtlı ve uyumlu olup olmadığını saptar. Hangi cihazların Intune'a kayıtlı olduğunu saptamak için, şirket içi Exchange bağlayıcısı Exchange Server'daki Exchange Active Sync (EAS) kayıtlarını Intune kayıtlarına eşler. Bunun nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?](conditional-access-intune-common-ways-use.md)
+Şirket içi Exchange Server ortamında, Exchange şirket içi posta kutularına erişime izin vermek veya bu erişimi engellemek için Intune koşullu erişimi kullanılabilir. Exchange Active Sync şirket içi bağlayıcılarını kullanarak Intune'u Exchange kuruluşlarınıza bağlayın ve cihaz uyumluluk ilkeleriyle birlikte Intune koşullu erişimini ayarlayın. Ardından, bir cihaz, Exchange bağlanmaya çalıştığında, Intune cihaz Intune'a kayıtlı ve uyumlu olmadığını belirler. Hangi cihazların Intune'a kayıtlı olduğunu saptamak için, şirket içi Exchange bağlayıcısı Exchange Server'daki Exchange Active Sync (EAS) kayıtlarını Intune kayıtlarına eşler. Bunun nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?](conditional-access-intune-common-ways-use.md)
 
 > [!IMPORTANT]
 > Intune artık abonelik başına birden çok şirket içi Exchange bağlayıcısını destekler. Birden çok şirket içi Exchange kuruluşunuz varsa, her Exchange kuruluşu için ayrı bağlayıcılar ayarlayabilirsiniz.
@@ -78,7 +78,7 @@ Aşağıdaki tabloda şirket içi Exchange bağlayıcısını yüklediğiniz bil
 
 4. **Kurulum**'un altında, **Exchange ActiveSync bağlayıcıları**’nı ve **Şirket içi bağlayıcıyı indir**’i seçin.
 
-5.  Şirket içi Exchange bağlayıcısı, açılabilen veya kaydedilebilen sıkıştırılmış (.zip) bir klasörde yer alır. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
+5.  Şirket içi Exchange Bağlayıcısı'nı açık veya kaydedilebilen bir sıkıştırılmış (.zip) klasörde ' dir. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
 
     > [!IMPORTANT]
     > Şirket içi Exchange bağlayıcısı klasöründeki dosyaları yeniden adlandırmayın veya taşımayın. Klasörün içeriğini taşımak veya yeniden adlandırmak, Exchange bağlayıcısı yüklemesinin başarısız olmasına neden olur.
@@ -97,7 +97,7 @@ Intune şirket içi Exchange bağlayıcısını yüklemek için aşağıdaki ad�
 
    ![Exchange Server türünü nerede seçeceğinizi gösteren resim](./media/intune-sa-exchange-connector-config.png)
 
-   Şirket içi Exchange sunucusu için **İstemci Erişimi Sunucu** rolünü barındıran Exchange sunucusunun sunucu adını veya tam etki alanı adını belirtin.
+   Şirket içi Exchange sunucusu için, **İstemci Erişimi Sunucu** rolünü barındıran Exchange sunucusunun sunucu adını veya tam etki alanı adını belirtin.
 
    Barındırılan bir Exchange sunucusu için, Exchange sunucusunun adresini belirtin. Barındırılan Exchange sunucusunun URL'sini bulmak için:
 
@@ -116,20 +116,20 @@ Intune şirket içi Exchange bağlayıcısını yüklemek için aşağıdaki ad�
 
        4. **Tamam**’ı seçin.
 
-   5. **Kullanıcı (Etki alanı\kullanıcı)** ve **Parola** alanlarında Exchange sunucunuza bağlanmak için gereken kimlik bilgilerini sağlayın.
+4. **Kullanıcı (Etki alanı\kullanıcı)** ve **Parola** alanlarında Exchange sunucunuza bağlanmak için gereken kimlik bilgilerini sağlayın.
 
-   6.  Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken kimlik bilgilerini sağlayın. Bu kullanıcı yalnızca bildirimlere ayrılabilir. Bildirim kullanıcısına, e-postayla bildirim gönderebilmesi için bir Exchange posta kutusu gerekir. Bu bildirimleri Intune’da koşullu erişim ilkeleriyle yapılandırabilirsiniz.  
+5. Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken kimlik bilgilerini sağlayın. Bu kullanıcı yalnızca bildirimlere ayrılabilir. Bildirim kullanıcısına, e-postayla bildirim gönderebilmesi için bir Exchange posta kutusu gerekir. Bu bildirimleri Intune’da koşullu erişim ilkeleriyle yapılandırabilirsiniz.  
 
-       Otomatik Bulma hizmeti ve Exchange Web Hizmetleri'nin Exchange İstemci Erişimi Sunucusu'nda yapılandırıldığından emin olun. Daha fazla bilgi için bkz. [İstemci Erişimi sunucusu](https://technet.microsoft.com/library/dd298114.aspx).
+       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
-   7.  **Parola** alanında, Intune’un Exchange Server'a erişmesini etkinleştirmek için bu hesabın parolasını sağlayın.
+6. **Parola** alanında, Intune’un Exchange Server'a erişmesini etkinleştirmek için bu hesabın parolasını sağlayın.
 
-   8. **Bağlan**’ı seçin.
+7. **Bağlan**’ı seçin.
 
    > [!NOTE]
    > Bağlantının yapılandırılması birkaç dakika sürebilir.
 
-Yapılandırma sırasında Exchange bağlayıcısı İnternet erişimini sağlamak için proxy ayarlarınızı depolar. Proxy ayarlarınız değişirse, güncelleştirilen proxy ayarlarını Exchange bağlayıcısına uygulamak için Exchange bağlayıcısını yeniden yapılandırmanız gerekir.
+Yapılandırma sırasında Exchange bağlayıcısı İnternet erişimini sağlamak için proxy ayarlarınızı depolar. Proxy ayarlarınız değişirse, güncelleştirilen proxy ayarlarını Exchange Connector'a uygulamak için Exchange connector'ı yeniden yapılandırmanız gerekir.
 
 Exchange bağlayıcısı bağlantıyı ayarladıktan sonra, Exchange'de yönetilen kullanıcılarla ilişkili mobil cihazlar otomatik olarak eşitlenir ve Exchange bağlayıcısına eklenir. Bu eşitlemenin tamamlanması biraz sürebilir.
 
@@ -142,7 +142,7 @@ Intune abonelik başına birden çok şirket içi Exchange bağlayıcısını de
 Aşağıdaki bölümlerde açıklanan yüksek kullanılabilirlik, izleme ve el ile eşitleme özellikleri, Intune'a bağlanan her Exchange kuruluşu için desteklenir.
 
 ## <a name="on-premises-exchange-connector-high-availability-support"></a>Şirket içi Exchange bağlayıcısı yüksek kullanılabilirlik desteği 
-Exchange bağlayıcısı belirtilen CAS'yi kullanarak Exchange bağlantısı oluşturduktan sonra, bağlayıcı diğer CAS'leri bulabilir. Birincil CAS kullanılamaz duruma gelirse, birincil CAS kullanılabilir duruma gelene kadar varsa bağlayıcı başka bir CAS'ye yük devreder. Bu özellik varsayılan olarak açıktır. Aşağıdaki yordamı kullanarak bu özelliği kapatabilirsiniz:
+Exchange Bağlayıcısı belirtilen CAS'yi kullanarak Exchange bağlantısı oluşturduktan sonra bağlayıcıyı diğer CASs bulabilir. Birincil CAS kullanılamaz duruma gelirse, birincil CAS kullanılabilir duruma gelene kadar varsa bağlayıcı başka bir CAS'ye yük devreder. Bu özellik varsayılan olarak açıktır. Aşağıdaki yordamı kullanarak bu özelliği kapatabilirsiniz:
 1. Exchange Connector'ın yüklü olduğu sunucuda %*ProgramData*%\Microsoft\Windows Intune Exchange Connector konumuna gidin. 
 2. Bir metin düzenleyicisi kullanarak **OnPremisesExchangeConnectorServiceConfiguration.xml** dosyasını açın.
 3. Özelliği devre dışı bırakmak için &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; değerini &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; olarak değiştirin.    
@@ -157,12 +157,12 @@ Exchange bağlayıcılarını başarıyla yapılandırdıktan sonra, bağlantıl
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
 
-### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) yönetim paketi
+### <a name="system-center-operations-manager-management-pack"></a>System Center Operations Manager Yönetim Paketi
 
-Intune 1710 sürümünden itibaren [Exchange bağlayıcısı ve Intune için SCOM yönetim paketi](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) kullanabilirsiniz. Bu yönetim paketi, sorun gidermeniz gerektiğinde Exchange bağlayıcısını izlemek için size farklı yollar sunar.
+Intune 1710 sürümünden itibaren kullanabilirsiniz [Exchange Bağlayıcısı ve Intune için Operations Manager Yönetim Paketi](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Bu yönetim paketi, sorun gidermeniz gerektiğinde Exchange bağlayıcısını izlemek için size farklı yollar sunar.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Hızlı eşitlemeyi veya tam eşitlemeyi el ile zorlama
-Şirket içi Exchange bağlayıcısı EAS ile Intune cihaz kayıtlarını düzenli aralıklarla eşitler. Cihazın uyumluluk durumu değişirse, otomatik eşitleme işlemi kayıtları düzenli aralıklarla eşitler. Bu şekilde, cihazın erişimi uygun şekilde engellenebilir veya erişimine izin verilebilir.
+Bir şirket içi Exchange connector EAS ve Intune cihaz kayıtları düzenli aralıklarla otomatik olarak eşitler. Cihazın uyumluluk durumu değişirse, otomatik eşitleme işlemi kayıtları düzenli aralıklarla eşitler. Bu şekilde, cihazın erişimi uygun şekilde engellenebilir veya erişimine izin verilebilir.
 
    - **Hızlı eşitleme** günde birkaç kez düzenli aralıklarla yapılır. Hızlı eşitleme, Intune lisanslı olan, şirket içi Exchange koşullu erişimi için hedeflenen ve son eşitlemeden sonra değiştirilmiş olan kullanıcıların cihaz bilgilerini alır.
 
