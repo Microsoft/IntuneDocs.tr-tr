@@ -130,6 +130,7 @@
 ### [Cihazınızı sıfırlarsanız ne olur?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Microsoft kullanım verilerini toplamayı devre dışı bırakma](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Cihazınızı el ile eşitleme](sync-your-device-manually-windows.md)
+### [Yardım ve destek alma](help-support-windows-cpapp.md)
 
 ### [Windows için yaygın sorunları giderme](troubleshoot-your-device-windows.md)
 #### [Erişim noktası kısıtlamalarını çözme](resolve-access-point-restrictions.md)

@@ -374,9 +374,11 @@ items:
   - name: Cihazları yapılandırma
     href: device-profiles.md
     items:
-    - name: Cihaz profillerini yapılandırma
+    - name: Cihaz profilleri
       href: device-profile-create.md
-    - name: Cihaz özelliklerini yapılandırma
+    - name: Yönetim şablonları
+      href: administrative-templates-windows.md
+    - name: iOS ve macOS için cihaz özellikleri
       href: device-features-configure.md
       items:
       - name: iOS ve MacOS için AirPrint
@@ -387,13 +389,13 @@ items:
         href: home-screen-settings-ios.md
       - name: iOS için uygulama bildirimleri
         href: app-notification-settings-ios.md
-      - name: iOS için paylaşılan cihazlar
+      - name: iOS için kilit ekranı iletisi
         href: shared-device-settings-ios.md
       - name: Intune'u iOS cihazında tekli oturum açma için yapılandırma
         href: sso-ios.md
       - name: iOS için web filtresi ayarları
         href: web-content-filter-settings-ios.md
-    - name: Cihaz kısıtlamalarını yapılandırma
+    - name: Cihaz kısıtlamaları
       href: device-restrictions-configure.md
       items:
       - name: Android
@@ -416,18 +418,18 @@ items:
         href: device-restrictions-windows-holographic.md
     - name: Teslim iyileştirme
       href: delivery-optimization-windows.md
-    - name: Endpoint protection’ı yapılandırma
+    - name: Endpoint protection
       href: endpoint-protection-configure.md
       items:
       - name: Mac OS
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
-    - name: Kimlik korumasını yapılandırma
+    - name: Kimlik koruması
       href: identity-protection-configure.md
     - name: Windows 10 kiosk ayarları
       href: kiosk-settings.md
-    - name: E-posta ayarlarını yapılandırma
+    - name: E-posta ayarları
       href: email-settings-configure.md
       items:
       - name: Android
@@ -438,7 +440,7 @@ items:
         href: email-settings-windows-phone-8-1.md
       - name: Windows 10
         href: email-settings-windows-10.md
-    - name: VPN ayarlarını yapılandırma
+    - name: VPN ayarları
       href: vpn-settings-configure.md
       items:
       - name: Android
@@ -455,7 +457,7 @@ items:
         href: vpn-settings-windows-phone-8-1.md
       - name: Windows 10
         href: vpn-settings-windows-10.md
-    - name: Wi-Fi ayarlarını yapılandırma
+    - name: Wi-Fi ayarları
       href: wi-fi-settings-configure.md
       items:
       - name: Android
@@ -470,7 +472,7 @@ items:
         href: wi-fi-settings-windows.md
       - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
-    - name: eSIM hücresel profili yapılandırma
+    - name: eSIM hücresel profilleri
       href: esim-device-configuration.md
     - name: Eğitim
       items:
@@ -478,27 +480,34 @@ items:
         href: education-settings-configure-ios-shared.md
       - name: Windows 10
         href: education-settings-configure.md
-    - name: Windows 10 sürüm yükseltme ayarlarını yapılandırma
+    - name: Windows 10 sürüm yükseltme ayarları
       href: edition-upgrade-configure-windows-10.md
-    - name: iOS güncelleştirme ilkelerini yapılandırma
+    - name: iOS güncelleştirme ilkeleri
       href: software-updates-ios.md
-    - name: Sertifikaları yapılandırın
+    - name: Sertifikalar
       href: certificates-configure.md
       items:
       - name: SCEP
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
-      - name: E-posta şifrelemek için S/MIME kullanma
+      - name: E-posta şifrelemek için S/MIME
         href: certificates-s-mime-encryption-sign.md
-      - name: SCEP ile üçüncü taraf sertifika yetkilisi kullanma
+      - name: SCEP ile üçüncü taraf CA’lar
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Hizmeti
         href: certificates-symantec-configure.md
       - name: SCEP ya da PKCS sertifikalarını kaldırma
         href: remove-certificates.md
-    - name: Windows Bilgi Koruması ayarlarını yapılandırma
+    - name: Windows Bilgi Koruması ayarları
       href: windows-information-protection-configure.md
+    - name: Paylaşılan çok kullanıcılı cihazlar
+      href: shared-user-device-settings.md
+      items:
+      - name: Windows 10
+        href: shared-user-device-settings-windows.md
+      - name: Windows 10 Holographic for Business
+        href: shared-user-device-settings-windows-holographic.md
     - name: PowerShell betiklerini yönetme
       href: intune-management-extension.md
     - name: Telekom giderlerini izleme
@@ -512,17 +521,17 @@ items:
   - name: Cihaz uyumluluğu ayarlama
     href: device-compliance-get-started.md
     items:
-    - name: Android ilkesi oluşturma
+    - name: Android ilkesi
       href: compliance-policy-create-android.md
-    - name: Android Kurumsal profili ilkesi oluşturma
+    - name: Android Kurumsal profili ilkesi
       href: compliance-policy-create-android-for-work.md
-    - name: Google Play Koruma’yı etkinleştirmek için bir ilke oluşturun
+    - name: Google Play Korumasını etkinleştirme
       href: compliance-policy-create-google-play-protect.md
-    - name: iOS ilkesi oluşturma
+    - name: iOS ilkesi
       href: compliance-policy-create-ios.md
-    - name: macOS ilkesi oluşturma
+    - name: macOS ilkesi
       href: compliance-policy-create-mac-os.md
-    - name: Windows ilkesi oluşturma
+    - name: Windows ilkesi
       href: compliance-policy-create-windows.md
     - name: Konum tabanlı ilke
       href: use-network-locations.md
@@ -693,6 +702,10 @@ items:
         href: custom-settings-windows-holographic.md
       - name: Windows Phone 8.1
         href: custom-settings-windows-phone-8-1.md
+- name: Yardım ve destek
+  items:
+  - name: Kiracı durumu
+    href: tenant-status.md
 - name: Geliştirici kılavuzu
   items:
   - name: Üçüncü taraf sertifika yetkilisi ekleme API'si
@@ -841,9 +854,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: İlke çakışmalarını çözme
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: ada41d711516760e9d928c78968b0a24d719d783
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 1f17ae67e609e9836c29f6afd810bbea5ece99b4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325067"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203595"
