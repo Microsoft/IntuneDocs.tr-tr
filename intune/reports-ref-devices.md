@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 44dc3f82b8d51007d3eaf1d71f1a416ebfe319b4
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738078"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297528"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
@@ -46,7 +46,7 @@ ms.locfileid: "53738078"
 | DeviceTypeKey |Veri ambarındaki cihaz türünün benzersiz tanımlayıcısı - vekil anahtar |
 | DeviceTypeName |Cihaz türü |
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 | deviceTypeID  | Name | Açıklama |
 |---------|------------|--------|
@@ -81,7 +81,7 @@ ms.locfileid: "53738078"
 | clientRegisterationStateKey |Veri ambarındaki kayıt durumunun benzersiz tanımlayıcısı - vekil anahtar |
 | clientRegisterationStateName |Kayıt durumu |
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 | ClientRegisterationStateID  | Name | Açıklama |
 |---------|------------|--------|
@@ -95,6 +95,93 @@ ms.locfileid: "53738078"
 | 7 |NotRegisteredPendingEnrollment |Kaydedilmedi kayıt bekleniyor |
 | 8 |Bilinmiyor |Bilinmeyen durum |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+**EnrollmentActivity** varlığı, cihaz kaydı etkinliğini gösterir.
+
+| Özellik                      | Açıklama                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | Bu kayıt etkinlik zaman kaydedildiği tarihin anahtarı.               |
+| deviceEnrollmentTypeKey       | Kayıt türünün anahtarı.                                        |
+| DeviceTypeKey                 | Cihaz türünün anahtarı.                                                |
+| enrollmentEventStatusKey      | Başarı veya başarısızlık kayıt gösteren durum anahtarı.    |
+| enrollmentFailureCategoryKey  | Anahtar (kayıt başarısız olursa) kayıt hata kategorisi.        |
+| enrollmentFailureReasonKey    | (Kayıt başarısız olursa) kayıt hatanın nedenini anahtarı.          |
+| osVersion                     | Cihazın işletim sistemi sürümü.                               |
+| count                         | Kayıt etkinliklerini yukarıdaki sınıflandırmaları eşleşen toplam sayısı.  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+**EnrollmentEventStatus** varlığı, cihaz kaydı sonucunu gösterir.
+
+| Özellik                   | Açıklama                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | (Yedek anahtar) veri ambarındaki kayıt durumunun benzersiz tanımlayıcısı  |
+| enrollmentEventStatusName  | Kayıt durumu adı. Aşağıdaki örneklere bakın.                            |
+
+### <a name="example"></a>Örnek
+
+| enrollmentEventStatusName  | Açıklama                            |
+|----------------------------|----------------------------------------|
+| Başarılı                    | Başarılı cihaz kaydı         |
+| Başarısız                     | Başarısız cihaz kaydı             |
+| Kullanılamıyor              | Kayıt durumu kullanılamıyor.  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+**EnrollmentFailureCategory** varlığı gösteren neden bir cihaz kaydı başarısız oldu. 
+
+| Özellik                       | Açıklama                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | Kayıt hatası kategorisi (yedek anahtar) veri ambarındaki benzersiz tanımlayıcısı  |
+| enrollmentFailureCategoryName  | Kayıt hatası kategori adı. Aşağıdaki örneklere bakın.                            |
+
+### <a name="example"></a>Örnek
+
+| enrollmentFailureCategoryName   | Açıklama                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Uygulanamaz                  | Kayıt hatası kategorisi geçerli değil.                                                            |
+| Kullanılamıyor                   | Kayıt hatası kategori kullanılamıyor.                                                             |
+| Bilinmiyor                         | Bilinmeyen hata.                                                                                                |
+| Kimlik doğrulaması                  | Kimlik doğrulaması başarısız oldu.                                                                                        |
+| Yetkilendirme                   | Çağrı kimliği doğrulanmış ancak kaydetmek için yetkili değil.                                                         |
+| AccountValidation               | Kayıt hesabı doğrulanamadı. (Hesabı engellenen kayıt etkin değil)                      |
+| UserValidation                  | Kullanıcı doğrulanamadı. (Kullanıcı yok, lisans eksik)                                           |
+| DeviceNotSupported              | Cihaz mobil cihaz yönetimi için desteklenmiyor.                                                         |
+| InMaintenance                   | Hesap bakımda.                                                                                    |
+| BadRequest                      | İstemci, hizmeti tarafından anlaşılan/desteklenen değil bir istek gönderdi.                                        |
+| FeatureNotSupported             | Bu kayıt tarafından kullanılan özellikleri, bu hesap için desteklenmez.                                        |
+| EnrollmentRestrictionsEnforced  | Yönetici tarafından yapılandırılan kayıt kısıtlamaları, bu kayıt engellendi.                                          |
+| ClientDisconnected              | İstemci zaman aşımına uğradı veya kayıt son kullanıcı tarafından iptal edildi.                                                        |
+| UserAbandonment                 | Kayıt, son kullanıcı tarafından bırakıldı. (Son kullanıcı ekleme başlatıldı ancak iadelerinin zamanında tamamlanmasına başarısız oldu)  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+**EnrollmentFailureReason** varlığı, bir cihaz kayıt hatası verilen hata kategorisi için ayrıntılı bir neden gösterir.  
+
+| Özellik                     | Açıklama                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | Kayıt hatanın nedenini (yedek anahtar) veri ambarındaki benzersiz tanıtıcısı  |
+| enrollmentFailureReasonName  | Kayıt hatanın nedenini adı. Aşağıdaki örneklere bakın.                            |
+
+### <a name="example"></a>Örnek
+
+| enrollmentFailureReasonName      | Açıklama                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Uygulanamaz                   | Kayıt hatanın nedenini geçerli değildir.                                                                                                                                                       |
+| Kullanılamıyor                    | Kayıt hatanın nedenini kullanılamıyor.                                                                                                                                                        |
+| Bilinmiyor                          | Bilinmeyen hata.                                                                                                                                                                                         |
+| UserNotLicensed                  | Kullanıcı, Intune'da bulunamadı veya geçerli bir lisansa sahip değil.                                                                                                                                     |
+| UserUnknown                      | Kullanıcı Intune için bilinmiyor.                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | Yalnızca bir kullanıcı bir cihaz kaydedebilir. Bu cihaz, daha önce başka bir kullanıcı tarafından kaydedildi.                                                                                                                |
+| EnrollmentOnboardingIssue        | Intune mobil cihaz Yönetimi (MDM) yetkilisi henüz yapılandırılmadı.                                                                                                                                 |
+| AppleChallengeIssue              | İOS yönetim profili yüklemesi geciktirildi veya başarısız oldu.                                                                                                                                         |
+| AppleOnboardingIssue             | Intune'a kaydetmek için Apple MDM anında iletme sertifikası gereklidir.                                                                                                                                       |
+| DeviceCap                        | İzin verilen en yüksek sayıdan daha fazla cihaz kaydetmeye çalıştı. kullanıcı.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | Intune kayıt hizmeti, bu isteği yetkilendirmek başarısız oldu.                                                                                                                                            |
+| UnsupportedDeviceType            | Bu cihaz, Intune kaydı için en düşük gereksinimleri karşılamıyor.                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | Bu cihaz, bir kayıt kısıtlama kuralı nedeniyle kaydedilemedi.                                                                                                                          |
+| BulkDeviceNotPreregistered       | Bu cihazın uluslararası mobil ekipman tanımlayıcısı (IMEI) veya seri numarası bulunamadı.  Bu tanımlayıcı olmadan, cihazlar, şu anda engelleniyor kişiye ait cihazlar kabul edilir.  |
+| FeatureNotSupported              | Kullanıcı, tüm müşteriler için henüz yayımlanmayan veya Intune yapılandırmanız ile uyumlu olmayan bir özelliğe erişmeye çalışıyordu.                                                            |
+| UserAbandonment                  | Kayıt, son kullanıcı tarafından bırakıldı. (Son kullanıcı ekleme başlatıldı ancak iadelerinin zamanında tamamlanmasına başarısız oldu)                                                                                           |
+| APNSCertificateExpired           | Apple cihazlar süresi dolmuş bir Apple MDM anında iletme sertifikasıyla yönetilemez.                                                                                                                            |
+
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
 **EnrollmentTypes** varlığı, bir cihazın nasıl kaydedildiğini gösterir. Kayıt türü, kayıt yöntemini yakalar. Örnekler, farklı kayıt türlerini ve bunların ne anlama geldiğini listeler.
@@ -105,7 +192,7 @@ ms.locfileid: "53738078"
 | managementStateKey |Veri ambarındaki yönetim durumunun benzersiz tanımlayıcısı - vekil anahtar. |
 | managementStateName |Cihaza uygulanan uzak eylemin durumunu gösterir. |
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 | enrollmentTypeID  | Name | Açıklama |
 |---------|------------|--------|
@@ -140,7 +227,7 @@ ms.locfileid: "53738078"
 | ComplianceStatus |Cihaz uyumluluk durumu aşağıdaki tablodaki değerlerden birine sahip olmalıdır | 
 
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 | MdmStatusID  | ComplianceStatus | Açıklama |
 |---------|------------|--------|
@@ -161,7 +248,7 @@ ms.locfileid: "53738078"
 | managementStateKey | Veri ambarındaki yönetim durumunun benzersiz tanımlayıcısı - vekil anahtar. |
 | managementStateName | Cihaza uygulanan uzak eylemin durumunu gösterir. |
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 | managementStateID  | Name | Açıklama |
 |---------|------------|--------|
@@ -188,7 +275,7 @@ ms.locfileid: "53738078"
 | WorkPlaceJoinStateKey | Veri ambarındaki iş yeri katılım durumunun benzersiz tanımlayıcısı - vekil anahtar |
 | WorkPlaceJoinStateName | İş yeri katılım durumu |
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 | workPlaceJoinStateID  | Name | Açıklama |
 |---------|------------|--------|
@@ -212,7 +299,7 @@ ms.locfileid: "53738078"
 | ManagementAgentTypeKey | Veri ambarındaki yönetim aracısı türünün benzersiz tanımlayıcısı - vekil anahtar. |
 | ManagementAgentTypeName |Cihazı yönetmek için ne tür bir aracı kullanıldığını gösterir. |
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 | ManagementAgentTypeID  | Name | Açıklama |
 |---------|------------|--------|

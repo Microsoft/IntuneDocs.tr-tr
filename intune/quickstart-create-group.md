@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 01/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6c51a2823e95526b76e5e71e35420d1744b70f6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f7d7ccb4c94300d00f02dcace5c3a089cd9f2a2
+ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178395"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270580"
 ---
-# <a name="quickstart-create-a-group-to-manage-users"></a>Hızlı Başlangıç: Kullanıcıları yönetmek için grup oluşturma
+# <a name="quickstart-create-a-group-to-manage-users"></a>Hızlı Başlangıç: Kullanıcıları yönetmek için bir grup oluşturun
 
 Bu hızlı başlangıçta mevcut bir kullanıcıya dayanan bir grup oluşturmak için Intune kullanacaksınız. Gruplar, kullanıcılarınızı yönetmek ve çalışanlarınızın şirket kaynaklarınıza erişimini denetlemek için kullanılır. Bu kaynaklar şirketinizin intranetinin bir parçası veya SharePoint siteleri, SaaS uygulamaları ve web uygulamaları gibi dış kaynaklar olabilir.
 
@@ -38,7 +38,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
-[Intune](https://aka.ms/intuneportal)’da [Genel Yönetici veya Intune Hizmet yöneticisi](users-add.md#types-of-administrators) olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
+Oturum [Intune portalı](https://aka.ms/intuneportal) olarak bir [genel yönetici veya Intune Hizmet Yöneticisi](users-add.md#types-of-administrators). Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
 ## <a name="create-a-group"></a>Grup oluşturma
 
@@ -63,4 +63,4 @@ Bu hızlı başlangıçta mevcut bir kullanıcıya dayanan bir grup oluşturmak 
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Windows 10 cihazları için otomatik kaydı ayarlama](quickstart-setup-auto-enrollment.md)
+> [Hızlı Başlangıç: Windows 10 cihazları için otomatik kaydını ayarlama](quickstart-setup-auto-enrollment.md)

@@ -2,10 +2,10 @@
 title: Microsoft Intune - Azure’da İş İçin Windows Update’i yapılandırma | Microsoft Docs
 description: Windows 10 cihazlarda Microsoft Intune kullanarak İş İçin Windows Update ayarlarında bir güncelleştirme halkası oluşturmak, uyumluluğu gözden geçirmek ve güncelleştirmeleri duraklatmak için bir profildeki Yazılım Güncelleştirme ayarlarını güncelleştirin.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c0ab63ab8832db69ecf27361dc4fe4c9a1196db3
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203493"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297392"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune’da yazılım güncelleştirmelerini yönetme
 
@@ -106,7 +106,7 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
    - **Kullanıcıyı engelle duraklatma Windows Update'ten**: Varsayılan olarak izin verilir. Engellemek veya kullanıcılarınız, duraklatma güncelleme yüklemesinden izin vermek için bu ayarı kullanın *ayarları* makinelerinin. 
       
-   - **Teslim iyileştirme indirme modu**: Kendisi için cihazları Windows güncelleştirmelerini indirme yöntemini seçin. Ayrıntılar için bkz. [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Teslim iyileştirme indirme modu**: Teslim iyileştirme, artık bir Windows 10 güncelleştirme halkası yazılım güncelleştirmelerini altında bir parçası olarak yapılandırılır. Teslim iyileştirme artık cihaz yapılandırması ayarlanır. Ancak, önceki yapılandırmaların konsolda kullanılabilir kalır. Olmalarını düzenleyerek bu önceki yapılandırmaları kaldırabilirsiniz *yapılandırılmadı*, ancak Aksi halde değiştirilemez. Yeni ve eski İlkesi arasındaki çakışmaları önlemek için bkz: [mevcut güncelleştirme halkaları için teslim iyileştirme taşıma](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) ve ardından ayarlarınızı bir teslim iyileştirme profiline taşıyın. 
 
 5. İşiniz bittiğinde **Tamam**’ı seçin. **Güncelleştirme Halkası Oluştur**’da **Oluştur**’u seçin.
 

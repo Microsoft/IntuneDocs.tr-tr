@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642770"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297239"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune Veri Ambarı API’si için değişiklik günlüğü
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune Veri Ambarı hakkında güncel bilgiler edinin.
+
+## <a name="1812"></a>1812 
+_Aralık 2018'de yayınlanan_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>V1.0 için yayımlanan kayıt etkinlikler koleksiyonu 
+
+Kayıt etkinliklerini koleksiyon v1.0 kullanıma sunulmuştur. Bu koleksiyon, ortamınızda kayıt hatası birim ve eğilimleri anlamak için kullanabilirsiniz. Daha fazla bilgi için [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories), ve [ enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
 
 ## <a name="1808"></a>1808
 _Yayınlanma tarihi: Ağustos 2018_
@@ -36,9 +43,9 @@ _Yayınlanma tarihi: Ağustos 2018_
 
 Artık `api-version=v1.0` sorgu parametresini ayarlayarak Intune Veri Ambarı’nın v1.0 sürümünü kullanabilirsiniz. Veri Ambarı’ndaki koleksiyonlara yapılan güncelleştirmeler ek olarak yapılır, yani mevcut senaryoları bozmaz.
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>Kayıt Hatası Koleksiyonu Beta Sürümünde Yayımlandı
+### <a name="enrollment-activities-collection-released-to-beta"></a>Beta için yayımlanan kayıt etkinlikler koleksiyonu
 
-Yeni `Enrollment Failure` koleksiyonu, beta sürümünde yayımlandı. Bu koleksiyonu kullanarak en yaygın hataları görüntüleyebilir ve ortamınızın ne durumda olduğunu anlayabilirsiniz. 
+Yeni `Enrollment Activities` koleksiyonu, beta sürümünde yayımlandı. Bu koleksiyonu kullanarak en yaygın hataları görüntüleyebilir ve ortamınızın ne durumda olduğunu anlayabilirsiniz. 
 
 
 ## <a name="1805"></a>1805

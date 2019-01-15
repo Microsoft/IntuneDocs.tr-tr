@@ -3,10 +3,10 @@ title: Uygulamalar için veri aktarım ilkesi özel durumları
 titleSuffix: Microsoft Intune
 description: Intune Mobil Uygulama Yönetimi (MAM) veri aktarımı ilkesi için özel durumlar oluşturun.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,35 +16,33 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6a2507dc7b920d446b6f7fe78aa7b90f6c31322f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 94798e7745b5802a551c4dda6908ff9f5f803d8f
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178412"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297358"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune Mobil Uygulama Yönetimi (MAM) veri aktarımı ilkesi için özel durumlar oluşturma
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Yönetici olarak, Intune Mobil Uygulama Yönetimi (MAM) veri aktarımı ilkesi için özel durumlar oluşturabilirsiniz. Bir özel durum, hangi yönetilmeyen uygulamaların yönetilen uygulamalara/uygulamalardan veri aktarabileceğini seçmenizi sağlar. Özel durum listesine dahil ettiğiniz yönetilmeyen uygulamalara BT tarafından güvenilmelidir. 
+Yönetici olarak, Intune Mobil Uygulama Yönetimi (MAM) veri aktarımı ilkesi için özel durumlar oluşturabilirsiniz. Bir özel durum, hangi yönetilmeyen uygulamaların yönetilen uygulamalara/uygulamalardan veri aktarabileceğini seçmenizi sağlar. Özel durum listesine dâhil et yönetilmeyen uygulamalara BT güvenmesi gerekir. 
 
 >[!WARNING] 
 > Veri aktarımı özel durum ilkesinde değişiklik yapmaktan siz sorumlusunuz. Bu ilkeye yapılan eklemeler, yönetilmeyen uygulamaların (Intune tarafından yönetilmeyen uygulamalar) yönetilen uygulamalar tarafından korunan verilere erişmesine izin verir. Korunan verilere bu erişim, veri güvenliği sızıntılarına neden olabilir. Yalnızca kuruluşunuzun kullanması gereken, ancak Intune APP'yi (Uygulama Koruma İlkeleri) desteklemeyen uygulamalar için veri aktarımı özel durumları ekleyin. Ayrıca, yalnızca veri sızıntısı riski içerdiğini düşünmediğiniz uygulamalar için özel durumlar ekleyin.
 
-Bir Intune Uygulama Koruma İlkesi içerisinde **Uygulamanın diğer uygulamalara veri aktarmasına izin ver**’i **İlkeyle yönetilen uygulamalar** olarak ayarlamak, uygulamanın yalnızca Intune tarafından yönetilen uygulamalara veri aktarabileceği anlamına gelir. Intune APP’yi desteklemeyen bazı uygulamalara veri aktarımını etkinleştirmeniz gerekiyorsa **Muaf tutulacak uygulama seçin**’i kullanarak bu ilkede özel durumlar oluşturabilirsiniz. Muafiyetler, Intune tarafından yönetilen uygulamaların yönetilmeyen uygulamaları URL protokolüne (iOS) veya paket adına (Android) bağlı olarak çağırmasına imkan verir. Varsayılan olarak Intune, önemli yerel uygulamaları bu özel durumlar listesine ekler. 
+Bir Intune uygulama koruması ilke ayarı içinde **uygulamanın diğer uygulamalara veri aktarmasına izin ver** için **ilke ile yönetilen uygulamalar** uygulamayı yalnızca Intune tarafından yönetilen uygulamalara veri aktarabilir anlamına gelir. Verilerin Intune APP'yi desteklemeyen belirli uygulamalarla aktarılmasına izin vermeniz gerekiyorsa, bu ilke için özel durumları kullanarak oluşturabileceğiniz **dışarıda tutulacak uygulamaları seçin**. Muafiyetler, Intune tarafından yönetilen uygulamaların yönetilmeyen uygulamaları URL protokolüne (iOS) veya paket adına (Android) bağlı olarak çağırmasına imkan verir. Varsayılan olarak Intune, önemli yerel uygulamaları bu özel durumlar listesine ekler. 
 
 > [!NOTE]
 > Veri aktarımı ilkelerini değiştirmek veya eklemek; kesme, kopyalama ve yapıştırma kısıtlamaları gibi diğer Uygulama Koruma İlkelerini etkilemez. 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS veri aktarımı özel durumları
-iOS'u hedefleyen bir ilke için, veri aktarımı özel durumlarını URL protokolü ile yapılandırabilirsiniz. Bir özel durum eklemek için desteklenen URL protokolleri hakkında bilgi bulmak üzere uygulamanın geliştiricisi tarafından sağlanan belgelere bakın. iOS veri aktarımı özel durumları hakkında ek bilgi için bkz. [iOS uygulama koruma İlkesi ayarları - Veri aktarımı muafiyetleri](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+iOS'u hedefleyen bir ilke için, veri aktarımı özel durumlarını URL protokolü ile yapılandırabilirsiniz. Bir özel durum eklemek için desteklenen URL protokolleri hakkında bilgi bulmak üzere uygulamanın geliştiricisi tarafından sağlanan belgelere bakın. İOS veri aktarımı özel durumları hakkında daha fazla bilgi için bkz: [iOS uygulama koruma İlkesi ayarları - veri aktarımı muafiyetleri](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > Microsoft’un üçüncü taraf uygulamalarında uygulama istisnaları oluşturan URL protokollerini el ile bulmak için bir yöntemi yoktur. 
 
 ## <a name="android-data-transfer-exceptions"></a>Android veri aktarımı özel durumları
-Android'i hedefleyen bir ilke için, uygulama paketi adına göre veri aktarımı özel durumları yapılandırabilirsiniz. Uygulama paketi adını bulmak için bir özel durum eklemek istediğiniz uygulamanın **Google Play** mağaza sayfasını kontrol edebilirsiniz. Android veri aktarımı özel durumları hakkında ek bilgi için bkz. [Android uygulama koruma ilkesi ayarları - Veri aktarımı muafiyeti](app-protection-policy-settings-android.md#data-transfer-exemptions).
+Android'i hedefleyen bir ilke için, uygulama paketi adına göre veri aktarımı özel durumları yapılandırabilirsiniz. Uygulama paketi adını bulmak için bir özel durum eklemek istediğiniz uygulamanın **Google Play** mağaza sayfasını kontrol edebilirsiniz. Android veri aktarımı özel durumları hakkında daha fazla bilgi için bkz. [Android uygulama koruma İlkesi ayarları - veri aktarımı muafiyetleri](app-protection-policy-settings-android.md#data-transfer-exemptions).
 
 
 >[!TIP]
@@ -53,13 +51,13 @@ Android'i hedefleyen bir ilke için, uygulama paketi adına göre veri aktarım�
 ### <a name="example"></a>Örnek
 MAM veri aktarımı ilkesine bir özel durum olarak **Webex** paketinin eklenmesiyle, yönetilen bir Outlook e-posta iletisindeki Webex bağlantılarının doğrudan Webex uygulamasında açılmasına izin verilir. Diğer yönetilmeyen uygulamalarda veri aktarımı kısıtlı olmaya devam eder.
 
-- iOS **Webex** örneği: Intune’un yönettiği uygulamalar tarafından çağrılmasına izin verilmesi için **Webex** uygulamasını muaf tutmak üzere, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>wbx</code>
+- iOS **Webex** örneği:   Muaf tutmak üzere **Webex** uygulama Intune tarafından çağrılacak olan izin verilen şekilde yönetilen uygulamalar, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>wbx</code>
     
- - iOS **Maps** örneği: Intune’un yönettiği uygulamalar tarafından çağrılmasına izin verilmesi için yerel **Maps** uygulamasını muaf tutmak üzere, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>maps</code>
+ - iOS **haritalar** örneği:  Yerel muaf tutmak için **haritalar** uygulama Intune tarafından çağrılacak olan izin verilen şekilde yönetilen uygulamalar, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>maps</code>
 
-- Android **Webex** örneği: Intune’un yönettiği uygulamalar tarafından çağrılmasına izin verilmesi için **Webex** uygulamasını muaf tutmak üzere, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>com.cisco.webex.meetings</code>
+- Android **Webex** örneği:   Muaf tutmak üzere **Webex** uygulama Intune tarafından çağrılacak olan izin verilen şekilde yönetilen uygulamalar, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>com.cisco.webex.meetings</code>
     
-- Android **SMS** örneği: Farklı mesajlaşma uygulamaları ve Android cihazlarında Intune’un yönettiği uygulamalar tarafından çağrılmasına izin verilmesi için yerel **SMS** uygulamasını muaf tutmak üzere, aşağıdaki dizeler için veri aktarımı özel durumları eklemeniz gerekir: 
+- Android **SMS** örneği:   Yerel muaf tutmak için **SMS** farklı Mesajlaşma uygulamaları ve Android cihazlarda Intune tarafından çağrılacak olan izin verilen şekilde uygulama yönetilen uygulamalar, veri aktarımı özel durumları için aşağıdaki dizelerden eklemeniz gerekir: 
     <code>com.google.android.apps.messaging</code>
     
     <code>com.android.mms</code>
