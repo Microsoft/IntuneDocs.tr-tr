@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/12/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
-ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
+ms.openlocfilehash: 971dc851714045a8a3b60dfe8ff6c6acc4419294
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270597"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325024"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -83,51 +83,9 @@ Intune'u Jamf Pro ile bağlamak için:
 
 Intune ve Jamf arasındaki tümleştirmeyi yapılandırdıktan sonra yapmanız [Jamf tarafından yönetilen cihazlar için Uyumluluk ilkelerini uygula](conditional-access-assign-jamf.md).
 
-## <a name="information-shared-from-jamf-pro-to-intune"></a>Jamf Pro'dan Intune'a paylaşılan bilgiler
 
-Jamf Pro, yönetilen MacOS cihazları hakkında envanter bilgileri alır. Jamf Pro, Intune'a aşağıdaki bilgileri bildirir:
-
-* Azure AD cihaz kimliği
-* JAMF Envanter Durumu (son 24 saat içinde Jamf Pro ile kontrol edilen bir bilgisayar stok durumu)
-* İşletim Sistemi Sürümü
-* Azure AD cihaz kimliği
-* Şifreli (FileVault 2)
-* Ağ Geçidi Durumu
-* Parola: minimum sayıda karakter kümesi
-* Parola zaman aşımı (gün sayısı)
-* Parola türü - basit, alfasayısal veya bilinmeyen
-* Otomatik oturum açma engelleme
-* Gerekli parola uzunluğu
-* Parola: önceki parolaların yeniden kullanılmasını önlemek için önceki parola sayısı
-* Sistem Bütünlüğü Koruması
-* Son İade Zamanı
-* Mimari Türü
-* Kullanılabilir RAM Yuvaları
-* Pil kapasitesi
-* Önyükleme ROM'u
-* Veri Yolu Hızı
-* Önbellek Boyutu
-* Cihaz adı
-* Etki alanına katılma
-* Jamf kimliği
-* MAC adresi
-* Yapın
-* Model
-* Model Tanımlayıcısı
-* NIC Hızı
-* Çekirdek Sayısı
-* İşlemci Sayısı
-* İşletim Sistemi
-* Platform
-* İşlemci Hızı
-* İşlemci türü
-* İkincil MAC Adresi
-* Seri Numarası
-* SMS Sürümü
-* Toplam RAM
-* UDID
-* Kullanıcı E-postası
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Jamf tarafından yönetilen cihazlar için uyumluluk ilkelerini uygula](conditional-access-assign-jamf.md)
+- [Veri Jamf'ın Intune'a gönderdiği](data-jamf-sends-to-intune.md)

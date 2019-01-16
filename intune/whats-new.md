@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 00367fffa141ed2337c1089710050c9aefc857c5
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210916"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316959"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -164,7 +164,7 @@ Yeni deneyim, sorununuzu kendi kelimelerinizle açıklamanıza ve sorun giderme 
 ### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Uygulamalar için kapsam etiketleri <!-- 1081941 -->
-Rolleri ve uygulamalar için erişimi sınırlandırmak için kapsamı etiketleri oluşturabilirsiniz. Böylece kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama erişimi için bir uygulama bir kapsam etiketi ekleyebilirsiniz. Daha fazla bilgi için [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
+Rolleri ve uygulamalar için erişimi sınırlandırmak için kapsamı etiketleri oluşturabilirsiniz. Böylece kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama erişimi için bir uygulama bir kapsam etiketi ekleyebilirsiniz. Apple Volume Purchase Program (VPP) kullanarak satın aldığınız uygulamaları, kapsam etiketleri atanamaz.  Daha fazla bilgi için [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
 
 
 

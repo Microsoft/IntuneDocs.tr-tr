@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: a698d7a57c59a27dbd39036b1e2607e80570029f
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 65a461928c377dd4a674f8f3f2eeeef148ab56b2
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210780"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316908"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -113,12 +113,10 @@ UI çerçevesi kullanmayan Xamarin tabanlı Android uygulamaları için [Android
 
 1.  [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet paketini projenize ekleyin. Bu, Intune APP SDK’si Xamarin bağlamalarını siz zaten eklemediyseniz otomatik olarak ekler.
 
-2.  Yukarıdaki 2.2 adımında oluşturduğunuz `MAMApplication` sınıfının `OnMAMCreate`işlevindeki `Xamarin.Forms.Forms.Init(Context, Bundle)` için bir çağrı ekleyin. Intune ile uygulamanız, arka plandayken başlatılabileceği için bu gereklidir.
+2.  Yukarıdaki 2.2 adımında oluşturduğunuz `MAMApplication` sınıfının `OnMAMActivity`işlevindeki `Xamarin.Forms.Forms.Init(Context, Bundle)` için bir çağrı ekleyin. Intune ile uygulamanız, arka plandayken başlatılabileceği için bu gereklidir.
 
 > [!NOTE]
 > Bu işlem, Visual Studio’nun Intellisense otomatik tamamlama için kullandığı bir bağımlılığı yeniden yazdığı için yeniden eşleyici değişiklikleri doğru biçimde algılamak amacıyla Intellisense’i ilk kez çalıştırdıktan sonra Visual Studio’yu yeniden başlatmanız gerekebilir. 
-
-Bileşeni uygulamanıza eklemek için temel adımları tamamladınız. Şimdi Xamarin Android örnek uygulamasındaki adımları uygulayabilirsiniz. Biri Xamarin.Forms, diğeri Android için olmak üzere iki örnek sağladık.
 
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Xamarin tabanlı Android LOB uygulamanızı kullanmak için Intune uygulama koruma ilkelerini gerektirme (isteğe bağlı) 
 
@@ -144,8 +142,14 @@ Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri g
 Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen .NET/Xamarin uygulamalarına yönelik bir gereksinimdir.
 
 1. ADAL belgelerinde, [Android için Aracılı Kimlik Doğrulaması](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) altında tanımlanan tüm adımları izleyin.
-> [!NOTE] 
-> .NET ADAL'ın kullanıma sunulacak bir sonraki sürümünün (3.17.4), bu çalışmayı yapmak için gereken düzeltmeyi içermesi bekleniyor.
+
+## <a name="potential-compilation-errors"></a>Olası derleme hataları
+En yaygın olarak görülen derleme hatalarından bazılarını bunlar uygulama tabanlı bir Xamarin geliştirme.
+
+* [Derleyici Hatası CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): Bu hata genellikle bu formda görünen ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
+Xamarin sınıfların devralma remapper değiştirdiğinde, bazı işlevler yapılan `sealed` ve bunun yerine geçersiz kılmak için yeni bir MAM değişken eklenir. Açıklanan şekilde geçersiz kılmaları yalnızca adlandırın [burada](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods). Örneğin `MainActivity.OnCreate()` için yeniden adlandırılması `MainActivity.OnMAMCreate()`
+
+* [Derleyici Hatası CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): Bu hata genellikle bu formda görünen ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. Remapper aracın bazı Xamarin sınıfların devralma değiştikçe, üye işlevleri bazıları değiştirilecek `public`. Bu işlevlerden herhangi birinin geçersiz kılarsanız, olması için bu geçersiz kılmaları değiştirmeniz gerekebilir `public` de.
 
 ## <a name="support"></a>Destek
 Kuruluşunuz zaten bir Intune müşterisiyse destek bileti açmak ve [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) bir sorun bileti oluşturmak için Microsoft desteği temsilcinizle birlikte çalışın, mümkün olduğunca kısa sürede size yardım ederiz. 

@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324914"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316925"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile Android uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -147,39 +147,6 @@ Olası yanıltma, bilgi ifşası ve ayrıcalıkların yükseltilmesi saldırıla
 -   Uygulamanın güvenilir bir kaynaktan geldiğine emin olun.
 
 -   Sarmalanan uygulamayı içeren çıkış dizinini güvenli hale getirin. Çıkış için kullanıcı düzeyinde bir dizin kullanın.
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Otomatik bir APP-WE hizmeti kaydı için kullanıcı oturum açma istemi gerektirme, sarmalanmış Android LOB uygulamanızı kullanmak için Intune uygulama koruma ilkelerini gerektirme ve ADAL SSO’yu etkinleştirme (isteğe bağlı)
-
-Aşağıdakiler; otomatik bir APP-WE hizmet kaydı (buna bu bölümde **varsayılan kayıt** adı veriyoruz) için uygulama başlatırken kullanıcı istemi gerektirme, yalnızca Intune tarafından korunan kullanıcıların sarmalanmış Android LOB uygulamanızı kullanmasına izin vermek için Intune uygulama koruma ilkelerini gerektirme hakkında bir kılavuzdur. Ayrıca sarmalanmış Android LOB uygulamanız için SSO’yu nasıl etkinleştireceğinizi de açıklar. 
-
-> [!NOTE] 
-> **Varsayılan kaydın** faydaları arasında, cihazdaki bir uygulama için APP-WE hizmetinden ilke almanın basitleştirilmiş bir yöntemi de bulunur.
-
-### <a name="general-requirements"></a>Genel Gereksinimler
-* Intune SDK’sı ekibi, uygulamanızın Uygulama Kimliğine gereksinim duyar. Bunu bulmanın bir yolu [Azure Portalı](https://portal.azure.com/)’nda, **Tüm Uygulamalar** altındaki **Uygulama Kimliği** sütunudur. Intune SDK’sı ekibine kolaylıkla ulaşmanın yolu msintuneappsdk@microsoft.com adresine e-posta göndermektir.
-     
-### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
-Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulamalarına özgüdür.
-
-1. [Android için Intune SDK’sı kılavuzu](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)’nda açıklanan adımları kullanarak ADAL’ı yapılandırın.
-
-> [!NOTE]
-> Uygulamanıza bağlanan “istemci kimliği” terimi, Azure portalından uygulamanıza bağlanan “uygulama kimliği” terimi ile aynı şeydir. 
-> * SSO’yu etkinleştirmek için gereken şey “Yaygın ADAL yapılandırması” #2’dir.
-
-2. Bildirime şu değeri koyarak varsayılan kaydı etkinleştirin:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Bu, uygulamadaki tek MAM-WE tümleştirmesi olmalıdır. Başka MAMEnrollmentManager API’lerini çağırma denemeleri olursa çakışmalar ortaya çıkabilir.
-
-3. Gerekli MAM ilkesini, bildirime aşağıdaki kuralı koyarak etkinleştirin:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Böylece kullanıcı, cihaza Şirket Portalı’nı indirmeye ve bunu kullanmadan önce varsayılan kayıt akışını tamamlamaya zorlanır.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)
