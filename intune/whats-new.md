@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 00367fffa141ed2337c1089710050c9aefc857c5
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
+ms.openlocfilehash: 699936a1cef35d0435b329d1f8e09a64174fe2bd
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316959"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387076"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,10 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-14-2019"></a>14 Ocak 2019 haftası
 
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Şirkete ait ve tamamen yönetilen Android cihazları için destek önizlemesi <!-- 1574342  -->
+Tam olarak yönetilen Android cihazlar, bir kuruluşa ait destekler artık Intune yeri sıkı bir şekilde tarafından yönetilen cihazları "cihaz sahibi" senaryo BT ve tek tek kullanıcılarla bağlı. Bu durum, yöneticilerin tüm cihazı yönetebilir, ilke denetimlerini iş profilleri kullanılamaz genişletilmiş bir aralığını zorla olanak sağlar ve kullanıcıları, yalnızca yönetilen Google Play uygulamaları yüklemek için sınırlar. Daha fazla bilgi için [Intune'u ayarlama Android kayıt tam olarak yönetilen cihazlar](android-fully-managed-enroll.md) ve [adanmış cihazlar veya tam olarak yönetilen cihazları kaydetme](android-dedicated-devices-fully-managed-enroll.md).  Bu özelliğin önizlemede olduğunu lütfen unutmayın. Sertifikalar, uyumluluk ve koşullu erişim gibi bazı Intune özellikleri ile şu anda kullanılabilir olmayan Android tam olarak yönetilen kullanıcı cihazları.
 
 ## <a name="week-of-january-7-2019"></a>7 Ocak 2019 haftası
 
@@ -115,7 +118,7 @@ Endpoint protection ayarları BitLocker dahil olmak üzere Windows 10 cihazlarda
 [Kilit ekranında iletilerin gösterilmesi için ayarları](shared-device-settings-ios.md) ayarlar listelenir.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>Yeni App Store, belge görüntüleme, oyun cihaz kısıtlama ayarları iOS cihazlarına eklendi <!-- 2827760-->
-İçinde **cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > **iOS** için Platform > **cihaz kısıtlamaları** profil türü için > **App Store, belge görüntüleme, oyun**, aşağıdaki ayarlar eklendi: Kişiler yönetilen kişiler hesaplarından okumak için yönetilmeyen kişiler hesapları (yalnızca denetimli) izin yönetilmeyen uygulamaları yazmak yönetilen uygulamalar izin ver (denetimli yalnızca) bu ayarları görmek için Git [iOS cihaz kısıtlamaları](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+İçinde **cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > **iOS** için Platform > **cihaz kısıtlamaları** profil türü için > **App Store, belge görüntüleme, oyun**, aşağıdaki ayarlar eklendi: Kişiler yönetilmeyen kişiler hesapları bu ayarları görmek için Git, yönetilen kişiler hesaplarından okumak için izin yönetilmeyen uygulamaları yazmak yönetilen uygulamalar izin [iOS cihaz kısıtlamaları](device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android Kurumsal cihaz sahibi cihazlar için yeni bildirim, ipuçları ve tuş korumasını ayarları <!-- 3201839 3201843 -->
 Bu güncelleştirme, cihaz sahibi olarak çalıştırırken Android Kurumsal cihazlarda çeşitli yeni özellikler içerir. Bu özellikleri kullanmak için Git **cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > içinde **platformu**, seçin **Android Kurumsal** > içinde **profil türü**, seçin **yalnızca cihaz sahibi** > **cihaz Kısıtlamaları**.

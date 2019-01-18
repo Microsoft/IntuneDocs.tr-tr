@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149670"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380462"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Karma Azure Active Directory’ye olan katılmış cihazları Intune ve Windows Autopilot kullanarak dağıtma (Önizleme)
 Karma Azure Active Directory alanına katılmış olan cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin.
@@ -116,6 +116,9 @@ Active Directory için Intune Bağlayıcısı, Windows Server 2016 çalıştıra
 6. **Oturum Aç**’ı seçin.
 7. Genel Yönetici veya Intune Yöneticisi rolüne ait kimlik bilgilerini girin.
 8. **Cihaz kaydı** > **Windows kaydı** > **Active Directory için Intune Bağlayıcısı (Önizleme)** seçeneğine giderek bağlantı durumunun **Etkin** olduğunu onaylayın.
+
+ > [!NOTE]
+ > Çalıştırdıktan sonra **oturum** bağlayıcısında gösterilmesi için birkaç dakika sürebilir [Intune](https://aka.ms/intuneportal). Intune hizmetiyle iletişim kurmak için başarıyla kullanabiliyorsa bağlayıcı olacak yalnızca Göster emin olun.
 
 ### <a name="configure-web-proxy-settings"></a>Web proxy ayarlarını yapılandırma
 

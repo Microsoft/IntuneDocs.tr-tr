@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203680"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380496"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarları
 
@@ -151,12 +151,12 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 - **Müstehcen iTunes müziği, podcast'i veya haber içeriği (yalnızca denetimli)**: Seçin **blok** müstehcen iTunes müziği, podcast'i veya haber içeriği önlemek için. **Yapılandırılmamış** cihazın mağazadaki yetişkinlere yönelik olarak derecelendirilmiş içeriğe erişmesine izin verir.
 - **İBook mağazasından 'Erotik'olarak işaretlenmiş içerik indirme**: Seçin **blok** durakları kullanıcıların iBook mağazasından erotik olarak etiketlenmiş medya yüklenmesini önlemek için. **Yapılandırılmamış** kullanıcının "Erotik" kategorisindeki kitapları indirmesine izin verir.
 - **Yönetilmeyen uygulamalarda Kurumsal belgeleri görüntüleme**: **Blok** yönetilmeyen uygulamalarda Kurumsal olmayan belgeleri görüntüleme engeller. **Yapılandırılmamış** Kurumsal belgelerin tüm uygulamalarda görüntülenmesine izin verir. Örneğin, kullanıcıların OneDrive uygulamasından Dropbox'a dosya kaydetmesini gelen engellemek istiyorsunuz. Bu ayarın olarak **blok**. Cihaz İlkesi (örneğin, bir yeniden başlatma sonrasında) aldıktan sonra artık sağlayan kaydediliyor.
-  - **Yönetilen uygulamaların kişiler yazma yönetilmeyen kişilere izin ver (yalnızca denetimli) hesapları**: Ayarlandığında **izin**, kullanıcılar ekleyebilir veya iş ve kurumsal kişiler, cihazda yerleşik kişiler uygulamasına dahil olmak üzere herhangi bir kişinin Outlook kişi bilgilerini eşitlemek. Ayarlandığında **yapılandırılmadı**, kullanıcılar, cihazda yerleşik kişiler uygulamasına Outlook kişilerini eklenemiyor.
+  - **Yönetilen uygulamaların kişiler yazma yönetilmeyen kişiler hesaplarına izin ver**: Ayarlandığında **izin**, kullanıcılar ekleyebilir veya iş ve kurumsal kişiler, cihazda yerleşik kişiler uygulamasına dahil olmak üzere herhangi bir kişinin Outlook kişi bilgilerini eşitlemek. Ayarlandığında **yapılandırılmadı**, kullanıcılar, cihazda yerleşik kişiler uygulamasına Outlook kişilerini eklenemiyor.
   
     Bu ayarı kullanmak için ayarlanmış **yönetilmeyen uygulamalarda Kurumsal belgeleri görüntüleme** ayarını **blok**.
   
 - **Kurumsal olmayan belgeleri Kurumsal uygulamalarda görüntüleme**: **Blok** Kurumsal olmayan belgeleri Kurumsal uygulamalarda görüntüleme engeller. **Yapılandırılmamış** tüm belgelerin şirketin yönetilen uygulamalarında görüntülenmesine izin verir.
-  - **Yönetilmeyen uygulamalarda yönetilen kişilerden okumaya izin ver (yalnızca denetimli) hesapları**: Ayarlandığında **izin**, kullanıcıların herhangi bir kişinin iContacts uygulama kişi bilgilerini Outlook'a ekleyebilirsiniz. **Yapılandırılmamış** okunurken de dahil olmak üzere kaldırma çoğaltmaları, cihazda yerleşik kişiler uygulamasından engeller.
+  - **Yönetilmeyen uygulamalarda yönetilen kişiler hesaplarından okumaya izin ver**: Ayarlandığında **izin**, kullanıcıların herhangi bir kişinin iContacts uygulama kişi bilgilerini Outlook'a ekleyebilirsiniz. **Yapılandırılmamış** okunurken de dahil olmak üzere kaldırma çoğaltmaları, cihazda yerleşik kişiler uygulamasından engeller.
   
     Bu ayarı kullanmak için ayarlanmış **Kurumsal olmayan belgeleri Kurumsal uygulamalarda görüntüleme** ayarını **blok**.
   

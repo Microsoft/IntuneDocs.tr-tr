@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203612"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387008"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -87,7 +87,7 @@ Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farkl
 
 ### <a name="kiosk-settings"></a>Bilgi noktası ayarları
 
-Bir cihazı tek bir uygulama veya birçok uygulamalarını çalıştırmak için yapılandırabilirsiniz. Yalnızca eklediğiniz uygulamalar bir cihaz bilgi noktası modunda olduğunda kullanılabilir.
+Bir cihazı tek bir uygulama veya birçok uygulamalarını çalıştırmak için yapılandırabilirsiniz. Yalnızca eklediğiniz uygulamalar bir cihaz bilgi noktası modunda olduğunda kullanılabilir. Bu ayarlar, adanmış Android cihazlar için geçerlidir ancak Android için tam olarak yönetilen adanmış cihazlar.
 
 **Bilgi noktası modu**: Cihaz tek bir uygulama ya da birden fazla uygulama çalışıp çalışmayacağını seçin.
 

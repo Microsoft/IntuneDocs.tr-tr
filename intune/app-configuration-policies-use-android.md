@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179958"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386958"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -32,7 +32,7 @@ Android iş profili uygulamalarına ayarları sağlamak için Microsoft Intune�
 > [!Note]  
 > Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın, uygulama yapılandırma ilkelerini destekleyecek şekilde oluşturulup oluşturulmadığını öğrenmek için uygulamanın geliştiricisine başvurun.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **İstemci uygulamaları** iş yükünü seçin.
 4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
@@ -62,13 +62,17 @@ Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
 ### <a name="supported-variables-for-configuration-values"></a>Yapılandırma değerleri için desteklenen değişkenler
 
 Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim yapabilirsiniz:
-- Kullanıcı Asıl Adı — örneğin **John@contoso.com**
-- E-posta — örneğin **John@contoso.com**
-- Kısmi UPN — örneğin **John**
-- Hesap Kimliği — örneğin **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- Cihaz Kimliği — örneğin **b9841cd9-9843-405f-be28-b2265c59ef97**
-- Kullanıcı Kimliği — örneğin **3ec2c00f-b125-4519-acf0-302ac3761822**
-- Kullanıcı Adı — örneğin **John Doe**
+
+| Seçenek | Örnek |
+|----|----|
+| Mail | john@contoso.com |
+| Kullanıcı asıl adı | john@contoso.com |
+| Kısmi UPN | John |
+| Etki Alanı | contoso.com |
+| Kullanıcı adı | John Doe |
+| Hesap kimliği | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| Kullanıcı Kimliği | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| Cihaz kimliği | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Çok kimlikli uygulamalarda yalnızca yapılandırılmış kuruluş hesaplarına izin verme 
 
@@ -76,7 +80,7 @@ Android cihazlarda aşağıdaki anahtar/değer çiftlerini kullanın:
 
 | **Anahtar** | com.microsoft.intune.mam.AllowedAccountUPNs |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Değerleri** | <ul><li>Bir veya daha fazla <code>;</code> ile sınırlandırılmış UPN.</li><li>Yalnızca bu anahtar ile tanımlanan yönetilen kullanıcı hesaplarına izin verilir.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul> |
+| **Değerler** | <ul><li>Bir veya daha fazla <code>;</code> ile sınırlandırılmış UPN.</li><li>Yalnızca bu anahtar ile tanımlanan yönetilen kullanıcı hesaplarına izin verilir.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul> |
 
    > [!NOTE]
    > Çoklu kimlik ile yalnızca yapılandırılmış kuruluş hesaplarına izin vermek için Android için Outlook 2.2.222 veya üzeri sürümleri kullanmanız gerekir.<p></p>
@@ -99,7 +103,7 @@ Atanan uygulama bir cihazda çalıştırıldığında, uygulama yapılandırma i
 
 Uygulamaların Android cihaz özelliklerine erişmesi iznini de önceden yapılandırabilirsiniz. Varsayılan olarak, konuma veya cihaz kamerasına erişim gibi cihaz izinlerine ihtiyacı olan Android uygulamaları kullanıcıdan izinleri kabul etmesini veya reddetmesini ister. Örneğin, uygulama cihazın mikrofonunu kullanıyorsa, kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **İstemci uygulamaları**’nı seçin.
 3. **Yönet** altında, **Uygulama yapılandırma ilkelerini** seçip **Ekle**’ye tıklayın.

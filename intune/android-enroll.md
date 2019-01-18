@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 12/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 79a1a03f74db8e44dc3ee4d6575e193ce7841e24
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3d86afec4e501533ab0048e866969a5bf73c2c57
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031900"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387041"
 ---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
@@ -29,9 +29,10 @@ ms.locfileid: "53031900"
 
 Intune yöneticisi olarak, aşağıdaki Android cihazları yönetebilirsiniz:
 - Samsung Knox Standard cihazlar dahil olmak üzere Android cihazlar.
-- [Android iş profili cihazları](#enable-enrollment-of-android-for-work-devices) ve Android bilgi noktası cihazları dahil olmak üzere Android kurumsal cihazlar.
-
-Samsung Knox Standard çalıştıran cihazlarda Intune ile birden çok kullanıcı yönetimi gerçekleştirilebilir. Yani son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da merkezi olarak yönetilir. Son kullanıcılar oturum açtıklarında, uygulamalara erişir ve ek olarak kendilerine uygulanan ilkeler varsa bunları alırlar. Kullanıcılar oturumu kapattığında tüm veriler silinir.
+- Dahil olmak üzere android kuruluş cihazlarının:
+    - **Android iş profili cihazları**: Kişisel cihazlarından Kurumsal verilere erişim izni verildi. Yöneticileri, iş hesapları, uygulamaları ve verileri yönetebilir. Cihazdaki kişisel verileri iş verilerinizden ayrı tutulur ve yöneticileri, kişisel ayarlar veya veri denetim yok. 
+    - **Android cihazlar ayrılmış**: Dijital Tabela gibi şirketin sahip olduğu ve tek kullanım cihazları yazdırma bilet veya Stok yönetim. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
+    - **Tam olarak yönetilen Android cihazlar**: Şirketin sahip olduğu, tek kullanıcı cihazlarını iş için özel olarak kullanılan ve değil kişisel kullanın. Yöneticileri tüm cihazı yönetebilir ve zorunlu ilke denetimleri iş profilleri kullanılamıyor. 
 
 ## <a name="prerequisite"></a>Önkoşul
 
@@ -52,14 +53,16 @@ Android cihazların veya yalnızca kişisel Android cihazların kaydedilmesini e
 
 ## <a name="set-up-android-enterprise-enrollment"></a>Android kurumsal kaydını ayarlama
 
-Android iş profili, kişisel uygulamaları ve verileri uygulama ve veri içeren iş profilinden ayıran Android cihazı özellik ve hizmet kümesidir. Android kurumsal cihazları, iş profili cihazları ve bilgi noktası cihazlarını içerir. 
+Android iş profili, kişisel uygulamaları ve verileri uygulama ve veri içeren iş profilinden ayıran Android cihazı özellik ve hizmet kümesidir. Android kuruluş cihazlarının iş profili cihazları, tam olarak yönetilen cihazları ve ayrılmış cihazları içerir. 
 
-Android kurumsal cihazların kaydını ayarlamak için önce [Android kurumsalı Intune’a bağlamanız](connect-intune-android-enterprise.md) gerekir. Bu adımı tamamladıktan sonra şunları yapabilirsiniz:
-
-[Android iş profili kayıtlarını ayarlama](android-work-profile-enroll.md)
-[Android bilgi noktası kayıtlarını ayarlama](android-kiosk-enroll.md)
+- [Android iş profili kayıtları ayarlayın](android-work-profile-enroll.md)
+- [Android özel cihaz kayıtlarını ayarlayın](android-kiosk-enroll.md)
+- [Ayarlanmış tam olarak yönetilen Android kayıtları](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Bir Samsung Knox cihazı kaydederken son kullanıcı deneyimi
+
+Samsung Knox Standard cihazları için birden çok kullanıcı yönetimi, Intune tarafından desteklenir. Yani son kullanıcılar kendi Azure AD kimlik bilgileriyle cihazda oturum açabilir ve kapatabilir. Cihaz kullanılsa da kullanılmasa da merkezi olarak yönetilir. Son kullanıcılar oturum açtıklarında, uygulamalara erişir ve ek olarak kendilerine uygulanan ilkeler varsa bunları alırlar. Kullanıcılar oturum açtığınızda tüm uygulama verileri kaldırılır.
+
 Samsung Knox cihazları kaydederken göz önünde bulundurulması gereken birkaç nokta vardır:
 -   Hiçbir ilke PIN gerektirmiyorsa bile cihazın kaydedilebilmesi için en az dört basamaklı bir PIN’i olmalıdır. Cihazın PIN’i yoksa, kullanıcıdan bir PIN oluşturması istenir.
 -   Workplace Join Sertifikaları (WPJ) için kullanıcı etkileşimi yoktur.
@@ -69,3 +72,9 @@ Samsung Knox cihazları kaydederken göz önünde bulundurulması gereken birka�
 -   Şirket Kaynağı Erişimi için bir hizmet tarafından gönderilen sertifikaların yüklenmesi için başka kullanıcı istemi yoktur.
 - Bazı eski Knox cihazlar, kullanıcıdan Şirket Kaynağı Erişimi için kullanılan ek sertifikalar isteyebilir.
 - Bir Samsung Mini cihaz, **Sertifika Bulunamadı** veya **Cihaz Kaydedilemedi** hataları ile WPJ’yi yükleyemezse, en son Samsung Üretici Yazılımı Güncelleştirmelerini yükleyin.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [Android iş profili kayıtları ayarlayın](android-work-profile-enroll.md)
+- [Android özel cihaz kayıtlarını ayarlayın](android-kiosk-enroll.md)
+- [Ayarlanmış tam olarak yönetilen Android kayıtları](android-fully-managed-enroll.md)
