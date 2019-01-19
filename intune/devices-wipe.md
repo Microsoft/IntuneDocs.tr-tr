@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: ''
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: 1866d658503cb2dcdf482a050d7bbd73a914858b
+ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122647"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54400033"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -81,22 +81,20 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 
 |Veri türü|iOS|
 |-------------|-------|
-|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket portalını kullanarak yüklenen uygulamalar:** tüm uygulama verileri ve uygulamaları kaldırılır. Bu uygulamaları App Store ' başlangıçta yüklenen ve daha sonra şirket uygulamalarını yönetilen uygulamaları içerir. <br /><br /> **Mobil Uygulama Yönetimi'ni kullanın ve App Store ' yüklenen Microsoft uygulamaları:** Şirket uygulama verileri kaldırılır. Kişisel uygulama verilerinin ve uygulamaları kaldırılmaz.|
+|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket portalını kullanarak yüklenen uygulamalar:** Yönetim profili, tüm uygulama verileri ve uygulamaları sabitlenmiş Forr uygulamalar kaldırılır. Bu uygulamaları App Store ' başlangıçta yüklenen ve daha sonra şirket uygulamalarını yönetilen uygulamaları içerir. <br /><br /> **Mobil Uygulama Yönetimi'ni kullanın ve App Store ' yüklenen Microsoft uygulamaları:** Şirket portalı tarafından yönetilmeyen uygulamaları için uygulama yerel depolama içinde mobil uygulama yönetimi (MAM) şifrelemesi ile korunan şirket uygulama verilerini kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz. Kişisel uygulama verilerinin ve uygulamaları kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Yönetim profili kaldırılır.|
 |Email|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
-|Outlook|iOS için Microsoft Outlook uygulaması tarafından alınan e-postalar kaldırılır. Bu, önce Outlook mobil uygulamasının iOS kullanıcılarına Gerekli uygulama olarak dağıtılmasını gerektirir.|
 |Azure AD'den ayrılma|Azure AD kaydı kaldırılır.|
-|Kişiler |Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
 ### <a name="android"></a>Android
 
 |Veri türü|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web bağlantıları|Kaldırıldı.|Kaldırıldı.|
-|Yönetilmeyen Google Play uygulamaları|Uygulamalar ve veriler yüklü kalır.|Uygulamalar ve veriler yüklü kalır.|
+|Yönetilmeyen Google Play uygulamaları|Uygulamalar ve veriler yüklü kalır. <br /> <br />Uygulama yerel depolama içinde mobil uygulama yönetimi (MAM) şifrelemesi ile korunan şirket uygulama verileri kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz. |Uygulamalar ve veriler yüklü kalır. <br /> <br />Uygulama yerel depolama içinde mobil uygulama yönetimi (MAM) şifrelemesi ile korunan şirket uygulama verileri kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz.|
 |Yönetilmeyen iş kolu uygulamaları|Uygulamalar ve veriler yüklü kalır.|Uygulamalar kaldırılır ve uygulamada yerel olarak bulunan veriler kaldırılır. Uygulama dışındaki (örneğin, SD kartındaki) hiçbir veri kaldırılmaz.|
 |Yönetilen Google Play uygulamaları|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (örneğin, SD kartında) Mobil Uygulama Yönetimi (MAM) şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz.|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (örneğin, SD kartında) MAM şifrelemesi ile korunan veriler şifrelenmiş durumda kalır ama kaldırılmaz.|
 |Yönetilen iş kolu uygulamaları|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (örneğin, SD kartında) MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz.|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (örneğin, SD kartında) MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz.|
@@ -105,9 +103,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 |Sertifika profili ayarları|Sertifikaları iptal edilir ama kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
 |Email|Yok (E-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
-|Outlook|Yalnızca Outlook MAM ilkeleriyle korunuyorsa, Android için Outlook uygulaması tarafından alınan e-posta kaldırılır. Aksi takdirde, cihazın kaydı kaldırıldığında Outlook temizlenmez.|Yalnızca Outlook MAM ilkeleriyle korunuyorsa, Android için Outlook uygulaması tarafından alınan e-posta kaldırılır. Aksi takdirde, cihazın kaydı kaldırıldığında Outlook temizlenmez.|
 |Azure AD'den ayrılma|Azure AD kaydı kaldırılır.|Azure AD kaydı kaldırılır.|
-|Kişiler |Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.|Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler kaldırılamaz. <br /> <br />Şu anda yalnızca Outlook uygulaması desteklenir.
 
 ### <a name="android-work-profile"></a>Android iş profili
 
