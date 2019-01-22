@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc7cd36390d6807bfc6c92de6c5bf071dec27aa4
-ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
+ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54400067"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418219"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1252,6 +1252,54 @@ Güncelleştirilmiş görünümü görmek için [Uygulama kullanıcı arabirimin
 
 ## <a name="notices"></a>Bildirimler
 
+### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Intune'da macOS 10.14.2 değişiklik gelecek parola zorlama <!--1873216-->
+İçinde MC145129 Temmuz ayında Apple'nın yeni tümleştirmek için Intune planları "Değişiklik parola, sonraki Auth" ayarı yukarıda ve macOS 10.13 sürümleri çalıştıran cihazlar için yayımlanan paylaşılmıştı. Şu anda bu ayar için macOS 10.14.2 Şubat ayında Dışarı Aktar planlıyoruz ve büyük. 
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+10.14.2 macOS çalıştıran cihazlar sahip olmayı planlıyor veya varsa bu, etkiler ve daha büyük. Intune, Apple kullanıma sunulan "Değişiklik parola en yeni Auth" ayarı, kullanıcıların parolalarını bir parola ilkesi gönderildiğinde, uyumlu bir güncelleştirme zorunlu kılabilirsiniz. Biz bu yeni Apple özellik tümleştirdiğinizde parolalarını zaten uyumlu olsa bile parolalarını güncelleştirmek için bir istek, macOS kullanıcılarını alır. Bir parola zaten uyumlu olan ve parolalardan karşı bir gereksinim yoksa, daha sonra son kullanıcıların mevcut parolalarını güncelleştiremezsiniz olacağını unutmayın. Son kullanıcılara çalıştığınızda kimlik doğrulaması veya kendi cihazında oturum açmak parolasını güncelleştirmesi isteği yalnızca görürsünüz. Cihaz uyumlu olarak işaretlenene kadar şirket kaynaklarına engellerseniz, son kullanıcılarınızın 10.14.2 MacOS cihazlarında, kullanıcının parolasını sıfırlamasını kadar e-posta ya da SharePoint siteleri gibi şirket kaynaklarına erişmeniz engellenebilir bildirin. Gelecekte tüm güncelleştirmeleri yapılandırma ve uyumluluğunu parola ilkeleri için hedeflenen kullanıcılara parolalarını güncelleştirmek için zorlar. Bu değişikliği uygulamadan önce müşteri araştırma son kullanıcıların genellikle parolalarını bir parola ile veya uyumluluğun korunması için parolalarını sıfırlayamaz isteğinizi aldıktan sonra güncelleştirilir beri müşterilerin çoğu bu değişiklikten etkilenmez gösterilir.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+Yardım masanıza bildirin izin vermek isteyebilirsiniz. Bu değişiklik kullanıma sunulduğunda Bu yenilikler güncelleştireceğiz. Bu macOS cihaz parola ilkesi uygulanmasını istemiyorsanız, biz powerbı.com'u önerilir veya var olan macOS ilkenizi silin.
+
+
+### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Anımsatıcı: Intune destek MPO yerine Azure müşterileri artık Azure için Premier'i deneyimi <!--2828727-->
+Biz aralık Microsoft Premier Online (MPO) portalına gelen Intune destek istekleri oluşturma olanağı kaldırmayı tercih, Eylül ayının içinde MC147649 paylaşılmıştı. Artık, bir gecikme Ocak, sonunda, yalnızca azure'da Intune destek istekleri oluşturmak için yönlendirilirsiniz. 
+
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Premier geliştirme devam etmek için Ocak bitişinden sonra destek deneyimi olması olmayacak MPO destek istekleri oluşturmak kullanabilirsiniz.  Bunu yapmak çalıştığınızda, azure'da ıntune'a yönlendirilmesi kapatmak mümkün olacaktır değil bir istem göreceksiniz. Burada, sorununuzu vaktinde tanılamak ve çözümlemek için Intune’a ayrılmış Microsoft Desteği’ne yönlendirilecek bir destek isteği oluşturabilirsiniz. MPO portalında oluşturduğunuz destek isteklerini Azure portalında görüntülenebilir unutmayın. 
+
+Azure portalı içinde MC171941 kısa süre önce duyurduk gibi yeni bir destek deneyimi vardır. Bu konu hakkında daha fazla bilgi şu adreste bulunabilir: [ https://aka.ms/new_support_experience ](https://aka.ms/new_support_experience) ve ek bilgi bağlantısı.
+
+Hibrit mobil cihaz yönetimi (hibrit MDM) veya ortak yönetim kullanıyorsanız ConfigMgr için destek istekleri oluşturmak amacıyla MPO kullanmaya devam edebilirsiniz ancak Intune için destek istekleri oluşturmak amacıyla yalnızca Azure portalını kullanın. Karma MDM bir anımsatıcı olan [kullanım dışı](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures), ve olabildiğince çabuk Azure'da Intune'a taşımaya planlamanız gerekir. Daha fazla bilgi için bkz. [Karma Mobil Cihaz Yönetiminden Azure’da Intune’a geçme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+
+Yalnızca Genel Yönetici, Intune Hizmet Yöneticisi ve Hizmet Destek Yöneticisi rollerine sahip kullanıcıların Azure portalında destek biletleri oluşturabileceğini unutmayın.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+- MPO’yu kullanmayı bırakın ve tüm Intune destek isteklerinizi Azure’da Intune kullanarak oluşturun ve yönetin.  
+- Gerekirse yardım masanızı uyarın ve belgeleri güncelleştirin.
+- MPO’da destek istekleri oluşturmakta olan Genel Yönetici veya Intune Hizmet Yöneticisi rollerine sahip kullanıcılarınız varsa onları Azure Active Directory’de Hizmet Destek Yöneticisi rolüne atayın, böylece Azure portalında destek biletleri oluşturmaya devam edebilirler.
+
+#### <a name="additional-information"></a>Ek bilgi
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Değişiklik planı: İOS için Intune Şirket portalı uygulamasında kullanıcı deneyimi güncelleştirmesi
+Bir kullanıcı deneyimi güncelleştirmesi iOS Şirket portalı uygulaması için Intune yakında yayımlar paylaşmak heyecan duyuyoruz. Güncelleştirme Gelişmiş Filtreler ve daha hızlı erişim için uygulamalar ve Kitaplar visual yeniden giriş sayfasının özellik.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Bulunacak geçerli iOS Şirket portalı işlevselliği, bakımı sırasında bu kullanıcı deneyimi güncelleştirmesi:
+- Yerel iOS görünüm ile bir giriş sayfası 
+- İçerik listeleri ve içerik türünü (uygulamaları veya e-Kitaplar) ve kullanılabilirlik (cihaz Yönetimi gerekli veya Kayıtsız kullanılabilir) göre filtreleme özelliği dahil olmak üzere arama filtreleme yetenekleri
+- E-Kitaplar arama özelliği
+- Arama Geçmişi uygulamaları ve e-Kitaplar için Apple TestFlight programı bir parçası kullanıyorsanız kullanılabilir hale geldiğinde, Intune'un güncelleştirilmiş iOS Şirket portalı uygulamasının yayım öncesi sürümü hakkında bildirim alırsınız. Apple TestFlight programı parçası değilseniz çok geç kaydetmek için değil. Kaydetme, son kullanıcılarınız için kullanılabilir olmadan önce güncelleştirilmiş Şirket portalı uygulamasını kullanmaya olanak sağlar. Ayrıca doğrudan Intune ekibine geri bildirim sağlamak için fırsatınız vardır.  
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+Herhangi bir eylemde bulunmanız gerekmez; Bu değişiklikler, gelecek iOS CP uygulama sürümde kullanıma sunulacaktır. 
+
+#### <a name="additional-information"></a>Ek bilgi
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Değişiklik planı: Exchange Online için Intune Bağlayıcısı Intune tarafından kullanılamaz <!-- 3105122 -->
 Exchange Online ve koşullu erişim ile deneyiminizi kolaylaştırmak için biz Exchange Online için Intune 'Hizmet' bağlayıcısını devre dışı bırakacağız. Bu değişiklik, aralık hizmet güncelleştirmesiyle başlar ve Şubat 2019 hizmet güncelleştirmesiyle tamamlanamadı.
 
@@ -1286,27 +1334,6 @@ Güncelleştirmeler çıktıktan sonra Intune’da uygulama ve ayar atamak için
 Biz ilke atamalarınızı taşırken sizin hiçbir şey yapmanıza gerek yoktur. Şu anda Eğitim için Intune konsolunda ilke atıyorsanız atamaya devam edin.
 
 Şu anda Azure’da Intune üzerinde yukarıda bahsedilen Azure AD gruplarına ilke atıyorsanız, bunları Eğitim için Intune konsolundaki Tüm Kullanıcılar ve Tüm Cihazlar gruplarına atamaya başlayın. Azure AD gruplarının konsolda eski olarak yeniden adlandırıldığını görürseniz Azure AD’de ilke atamayı bırakın. Yeniden adlandırılan grupları şu anda başka bir amaçla kullanmıyorsanız silin.
-
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Değişiklik planı: Yeni bir Intune destek deneyimi için Premier müşterileri 
-12/4/18 güncelleştirme: Destek isteği oluşturma MPO de aralık 3 ancak daha sonraki bir tarihte bunun yerine devre dışı bırakılır değil için bu işlemi daha iyi hale getirmek çalışıyoruz. İleti Merkezi biliyor ve kısa süre içinde bu değişikliğin zaman çizelgeleri paylaşmak için bu gönderiyi güncelleştirmenize vereceğiz.
-
-Bir Microsoft Premier müşterisi olarak şu anda Microsoft Premier Online (MPO) portalını (premier.microsoft.com) ve Azure’da Intune’u (portal.azure.com) kullanarak Intune için destek istekleri oluşturabilirsiniz. 3 Aralık 2018 itibarıyla Premier destek deneyimini geliştirmeye devam etmek adına yalnızca Azure’da Intune ile destek istekleri oluşturabileceksiniz.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-3 Aralık’tan sonra MPO’da destek istekleri oluşturamayacaksınız.  Bunu yapmaya çalıştığınızda, kapatamayacağınız bir istem alacak ve Azure’da Intune’a yönlendirileceksiniz. Burada, sorununuzu vaktinde tanılamak ve çözümlemek için Intune’a ayrılmış Microsoft Desteği’ne yönlendirilecek bir destek isteği oluşturabilirsiniz. MPO’da oluşturulan destek istekleri Azure portalında görüntülenemez, bu nedenle MPO’da destek isteği oluşturmayı bırakmanız gerekir.  
-
-Hibrit mobil cihaz yönetimi (hibrit MDM) veya ortak yönetim kullanıyorsanız ConfigMgr için destek istekleri oluşturmak amacıyla MPO kullanmaya devam edebilirsiniz ancak Intune için destek istekleri oluşturmak amacıyla yalnızca Azure portalını kullanın. Hatırlatmış olalım, hibrit MDM kullanımdan kaldırıldığı için en yakın zamanda Azure’da Intune’a geçmeyi planlamalısınız. Daha fazla bilgi için bkz. [Karma Mobil Cihaz Yönetiminden Azure’da Intune’a geçme](https://aka.ms/hybrid_notification).
-
-Yalnızca Genel Yönetici, Intune Hizmet Yöneticisi ve Hizmet Destek Yöneticisi rollerine sahip kullanıcıların Azure portalda destek biletleri oluşturabileceğini unutmayın.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-- MPO’yu kullanmayı bırakın ve tüm Intune destek isteklerinizi Azure’da Intune kullanarak oluşturun ve yönetin.  
-- Gerekirse yardım masanızı uyarın ve belgeleri güncelleştirin.
-- MPO’da destek istekleri oluşturmakta olan Genel Yönetici veya Intune Hizmet Yöneticisi rollerine sahip kullanıcılarınız varsa onları Azure Active Directory’de Hizmet Destek Yöneticisi rolüne atayın, böylece Azure portalında destek biletleri oluşturmaya devam edebilirler.
-- Daha fazla bilgi ve yardımcı bağlantılar için Ek Bilgiler’e tıklayın.
-
-#### <a name="additional-information"></a>Ek bilgi
-Daha fazla bilgi için bkz. [Microsoft Intune destek ekibi blog gönderisi](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Eylemi gerçekleştir: Lütfen, Android cihaz kısıtlama veya uyumluluk İlkesi parola ayarlarını ıntune'da güncelleştirin

@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182407"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418185"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune’da bir cihazın geçiş kodunu sıfırlama veya kaldırma
 
@@ -55,7 +55,8 @@ Yeni bir iş profili geçiş kodu oluşturmak için Geçiş Kodunu Sıfırla eyl
 
 ## <a name="reset-a-passcode"></a>Geçiş kodu sıfırlama
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+
+1. Oturum [Azure portalında](https://portal.azure.com) aşağıdaki rollerden biriyle: Azure Active Directory genel Yöneticisi, Azure Active Directory Intune Hizmet Yöneticisi, Yardım Masası işletmenine veya rol Yöneticisi. Rolleri ve izinleri tam listesi için bkz [Intune RBAC tablosu](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve ardından **Microsoft Intune**’u seçin.
 3. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
 4. Yönettiğiniz cihazların listesinden bir cihaz seçin ve sonra da **...Diğer** öğesini seçin. Ardından **Geçiş kodunu kaldır** cihaz uzak eylemini seçin.
