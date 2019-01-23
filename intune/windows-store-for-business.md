@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460064"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune ile İş İçin Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme
 
@@ -52,18 +52,18 @@ Ayrıca, İş İçin Microsoft Store'dan eşitlenen ilgili kümeler ve Çevrimd�
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>İş İçin Microsoft Mağazası hesabınızı Intune’la ilişkilendirme
 Intune konsolunda eşitlemeyi etkinleştirmek için, önce mağaza hesabınızı yönetim aracı olarak Intune’u kullanacak şekilde yapılandırmanız gerekir:
-1. İş İçin Windows Mağazası’nda oturum açarken, Intune’da oturum açtığınız kiracı hesabını kullandığınızdan emin olun.
-2. İş İçin Windows Mağazası’nda, **Ayarlar** > **Yönetim araçları**’nı seçin.
-3. Yönetim araçları sayfasında, **Yönetim aracı ekle**’yi ve sonra da **Microsoft Intune**’u seçin.
+1. İçine oturum olun [iş için Microsoft Store](https://www.microsoft.com/business-store) Intune'a oturum açmak için kullandığınız Kiracı hesabının aynısını kullandığınızdan.
+2. İş Store içinde seçin **Yönet** sekmesinde **ayarları**ve **Dağıt** sekmesi.
+3. Özellikle yoksa **Intune** kullanılabilir bir mobil cihaz yönetim aracı olarak seçin **Yönetim Aracı Ekle** eklemek için **Intune**. Öğeniz yoksa **Intune** , mobil cihaz yönetim aracı olarak etkinleştirilmiş tıklayın **etkinleştirme** yanındaki **Intune**. Etkinleştirilmesi gerektiğini unutmayın **Intune** yerine **Microsoft Intune kaydı**.
 
 > [!NOTE]
-> Daha önce İş İçin Microsoft Mağazası ile uygulama atamak üzere yalnızca bir yönetim aracı ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz.
+> Daha önce İş İçin Microsoft Mağazası ile uygulama atamak üzere yalnızca bir yönetim aracı ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz. 
 
 Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 ## <a name="configure-synchronization"></a>Eşitlemeyi yapılandırma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 1. **İstemci uygulamaları** bölmesinde **Kurulum** > **İş İçin Microsoft Store**’u seçin.
@@ -92,12 +92,12 @@ Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şek
 
 ## <a name="remove-apps"></a>Uygulamaları kaldırma
 
-İş İçin Microsoft Store’dan eşitlenmiş bir uygulamayı kaldırmak için İş İçin Microsoft Store’da oturum açıp uygulamayı iade etmelisiniz.
+İş İçin Microsoft Store’dan eşitlenmiş bir uygulamayı kaldırmak için İş İçin Microsoft Store’da oturum açıp uygulamayı iade etmelisiniz. Uygulama boş olup olmadığını işlemi aynıdır. Ücretsiz bir uygulama için deponun 0 ABD Doları para iadesi. Aşağıdaki örnek, ücretsiz bir uygulama için para iadesi gösterir. 
 
 ![Uygulama kaldırma ayrıntılarının ekran görüntüsü](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> Özel mağazada uygulamanın görünürlüğü kaldırıldığında Intune’un uygulamayı eşitlemeye devam etmesini engellenmez. Uygulamayı iade etmeniz gerekir.
+> Özel depoda bir uygulamanızın görünürlüğünü kaldırma, Intune uygulama eşitlenmesini tutulmaz. Uygulama uygulamasını tamamen kaldırmak için para iadesi gerekir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

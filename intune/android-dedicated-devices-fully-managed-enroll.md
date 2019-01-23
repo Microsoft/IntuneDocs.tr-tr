@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0366a4394f5046d72c7cf01d2848974d225597a6
+ms.sourcegitcommit: d757c907af6c3c1b20823ffa4fda3acbaa8ecd9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387097"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54444566"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Adanmış Android cihazları kaydetme veya tam olarak yönetilen cihazlar (Önizleme)
 
@@ -42,7 +42,7 @@ NFC destekleyen cihazlar için özel olarak biçimlendirilmiş bir NFC etiketini
 
 ### <a name="enroll-by-using-a-token"></a>Belirteç kullanarak kaydetme
 
-Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. **aft#setup** kayıt yöntemi kullanıldığında Android 6.1 ve üstü sürümler QR kodu taramasından da yararlanabilir.
+Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. Android 6.1 ve üzeri sürümleri kullanılırken tarama QR kodunu da yararlanabilir **afw #setup** kayıt yöntemi.
 
 1. Silinmiş cihazınızı açın.
 2. **Hoş Geldiniz** ekranında dili seçin.
