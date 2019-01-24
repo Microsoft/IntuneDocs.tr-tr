@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: df91908f3d3be7be23e3cecfa83e2d92b656b91e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203391"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831607"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Yönetme ve farklı bir cihaz yönetim özellikleri, Windows Holographic ve HoloLens cihazları Intune ile kullanma
 
@@ -108,7 +108,7 @@ Profillerinizde bazı ayarları özelleştirmek, cihaz kısıtlamaları oluştur
 
 OMA-URI (Açık Mobil Birlik Tekdüzen Kaynak Tanımlayıcısı) ayarlarını yapılandırmak için Intune’da özel bir profil oluşturabilirsiniz. Windows Holographic for Business cihazlarınızda VPN’i etkinleştirmek veya Microsoft Update’te güncelleştirmeleri denetlemek gibi farklı özellikleri kontrol etmek için OMA-URI ayarlarını kullanın.
 
-#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[Bilgi noktası modunu yapılandırma](kiosk-settings.md#windows-holographic-for-business)
+#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Bilgi noktası modunu yapılandırma](kiosk-settings-holographic.md)
 
 Intune’un paylaşılan veya misafir bilgisayar özelliklerini kullanarak Windows Holographic for Business cihazları bilgi noktası olarak çalışacak şekilde yapılandırabilirsiniz. Bu cihazlar, tek uygulama (tekli uygulama bilgi noktası modu) veya birden fazla uygulama (çoklu uygulama bilgi noktası modu) çalıştırabilir.
 
@@ -124,7 +124,7 @@ Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenl
 
 Windows Holographic for Business cihazlarınıza kablosuz ağ ayarları atamak için bir Wi-Fi profili de oluşturabilirsiniz. Bir Wi-Fi profili atadığınızda son kullanıcılarınız, hiçbir ağ yapılandırmasına gerek kalmadan kuruluş ağ erişimi kazanır. Örneğin yalnızca Windows Holographic for Business cihazlarınıza adanmış bir Wi-Fi ağı oluşturabilirsiniz.
 
-## <a name="shared-multi-user-devices"></a>Paylaşılan birden çok kullanıcı cihazları
+## <a name="shared-multi-user-devices"></a>Paylaşılan çok kullanıcılı cihazlar
 [Paylaşılan cihazlar](shared-user-device-settings-windows-holographic.md)
 
 , Microsoft HoloLens gibi Windows Holographic for Business çalıştıran cihazlar birden çok kullanıcı olması. Intune yönetim hesabı yerel depolama ile güç yönetimi gibi paylaşılan bu cihazlarda farklı özellikleri denetlemek için ayarlar içerir. Yapılandırma profilleri, farklı işletim sistemi kullanan cihazları için de uygulanabilir. Örneğin, cihazlar grubu aynı grupta RS2 ve RS3 çalıştıran cihazlara sahip olabilir.

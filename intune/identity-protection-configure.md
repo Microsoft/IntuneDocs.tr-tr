@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da kimlik koruma ayarlarını yapılandırma | Microsoft Docs
-description: Microsoft Intune’da Windows 10 cihazlarda İş İçin Windows Hello ayarlarını ayarlamak için bir cihaz profili ekleme
+title: Windows 10 cihazlarına Microsoft Intune - Azure kullanarak oturum açmak için PIN kullanma | Microsoft Docs
+description: Windows iş için Hello bir PIN, parmak izi ve daha fazlasını kullanarak cihazlara oturum açmalarını sağlamak için kullanın. Intune Windows 10 cihazlar için şu ayarlarla bir kimlik koruma yapılandırma profili oluşturma ve kullanıcı grupları ve cihaz grupları için profil atayın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/29/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,83 +13,54 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188654"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831400"
 ---
-# <a name="configure-identity-protection-settings-in-microsoft-intune"></a>Microsoft Intune - Azure’da kimlik koruma ayarlarını yapılandırma
+# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Windows Hello iş için Windows 10 cihazlarda Microsoft Intune ile kullanma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Kimlik koruma ayarları, yönetilen Windows 10 cihazlarda İş İçin Windows Hello’nun nasıl sağlandığı ve yapılandırıldığını denetler. Bu profili oluşturarak şunları yapılandırabilirsiniz:  
-* Cihazlar ve kullanıcılar için İş İçin Windows Hello kullanılabilirliği.
-* Cihaz PIN gereksinimleri.
-* Kullanıcıların cihazlarında oturum açmak için kullanabileceği ve kullanamayacağı hareketler.  
+Windows iş için Hello Windows cihazlar için parolaları, akıllı kartlar ve sanal akıllı kartları değiştirerek oturum açma yöntemidir. Yöneticiler, yapılandırma ve iş için Windows Hello'yu kullanma Intune yerleşik ayarlarını içerir. Örneğin, bu ayarlar için kullanabilirsiniz:
 
- Bu profili seçilen kullanıcı ve cihaz gruplarına veya tüm kullanıcılara ve tüm cihazlara atayabilirsiniz. Gruplar, Intune’a iade etme işlemi yaptıktan sonra kimlik koruma profilini alır.    
+- Windows iş için Hello'yu cihazlar ve kullanıcılar için etkinleştir
+- Bir minimum veya maksimum PIN uzunluğu'dahil olmak üzere, cihaz PIN gereksinimlerini ayarlama
+- Kullanıcılar (veya kullanamazsınız) bir parmak izi gibi hareketler izin cihazlara oturum açmak için
 
-Bu makaledeki bilgileri kullanarak kimlik koruma profilleri oluşturun. Daha sonra kullanıcı ve cihaz gruplarına [profilinizi atayın](device-profile-assign.md).
+Bu özellik şunları çalıştıran cihazlarda geçerlidir:
 
-Bu özellik şunları çalıştıran cihazlarda geçerlidir:  
 - Windows 10 ve üzeri
-- Windows 10 Holographic for Business  
+- Windows 10 Mobile
+- Windows 10 Holographic for Business
 
-## <a name="create-a-device-profile-with-identity-protection-settings"></a>Kimlik koruma ayarlarını içeren bir cihaz profili oluşturma
+Intune kullanır "yapılandırma profillerini" oluşturabilir ve kuruluşunuzun ihtiyaçları için bu ayarları özelleştirebilirsiniz. Bu özellikler bir profilde ekledikten sonra anında iletme veya kullanıcı ve cihaz grupları, kuruluşunuzda bu ayarları dağıtın.
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
-4. Kimlik koruma profili için bir **Ad** ve **Açıklama** girin.
-5. **Platform** açılan listesinden **Windows 10 ve üzeri**’ni seçin. İş İçin Windows Hello, yalnızca Windows 10 ve üzeri çalıştıran cihazlarda desteklenir.
-6. Açılan **Profil türü** listesinden **Kimlik koruma**’yı seçin.
-7. İş İçin Windows Hello bölmesinde İş İçin Windows Hello’yu yapılandır seçeneği için aşağıdakilerden birini seçin:
-    * Devre dışı. İş İçin Windows Hello’yu kullanmak istemiyorsanız, bu ayarı seçin. Bu durumda, ekrandaki tüm diğer ayarlar kullanılamaz hale gelir.
-    * Etkin. İş İçin Windows Hello ayarlarını yapılandırmak istiyorsanız bu ayarı seçin.  
+Bu makalede bir cihaz yapılandırma profilinin nasıl oluşturulacağını gösterir. Tüm ayarların bir listesi ve ne yaptıkları için bkz. [Windows iş için Hello etkinleştirmek için Windows 10 cihaz ayarları](identity-protection-windows-settings.md).
 
-8. Önceki adımda **Etkin**’i seçtiyseniz, hedeflenen kayıtlı Windows 10 ve Windows 10 Mobile cihazlarına ve kullanıcılarına uygulanacak olan gerekli ayarları yapılandırın.
+## <a name="create-the-device-profile"></a>Cihaz profili oluşturma
 
-> [!NOTE]
-> Kimlik koruma profillerini yalnızca kullanıcılara atarken cihaz bağlamı varsayılan olarak **Yapılandırılmadı** olur.  
+1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+3. Aşağıdaki özellikleri girin:
 
-   - **En düşük PIN uzunluğu**/**En yüksek PIN uzunluğu**. Cihazları, güvenli oturum açma için sizin belirttiğiniz minimum ve maksimum PIN uzunluklarını kullanacak şekilde yapılandırır. Varsayılan PIN uzunluğu altı karakterdir, ancak minimum dört karakterlik bir uzunluğu zorunlu tutabilirsiniz. Maksimum PIN uzunluğu 127 karakterdir.  
+    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: Seçin **Windows 10 ve üzeri**. İş İçin Windows Hello, yalnızca Windows 10 ve üzeri çalıştıran cihazlarda desteklenir.
+    - **Profil türü**: Seçin **kimlik koruması**.
+    - **İş için Windows Hello yapılandırma**: Nasıl Windows iş için Hello yapılandırmak istediğinizi seçin. Seçenekleriniz şunlardır:
 
-   - **PIN’de küçük harfler**/**PIN’de büyük harfler**/**PIN’de özel karakterler**. PIN’de büyük harf, küçük harf ve özel karakter kullanımını gerekli kılarak daha güçlü PIN zorunluluğu getirebilirsiniz. Aşağıdakilerden birini seçin:
+        - **Yapılandırılmamış**: [Sağlayan Windows iş için Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) cihazda. Kimlik koruma profillerini yalnızca kullanıcılara atarken cihaz bağlamı varsayılan olarak **Yapılandırılmadı** olur.
+        - **Devre dışı bırakılmış**: İş için Windows Hello'yu kullanma istemiyorsanız bu seçeneği belirleyin. Bu seçenek Windows iş için Hello tüm kullanıcılar için devre dışı bırakır.
+        - **Etkin**: Bu seçeneği [sağlama]((https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning))ve Windows Hello for Business ayarları ıntune yapılandırın. Yapılandırmak istediğiniz ayarları girin. Tüm ayarların bir listesi ve ne yaptıkları için bkz:
 
-     - **İzin Verildi**. Kullanıcılar PIN kodlarında karakter türü kullanabilir ancak bu zorunlu değildir.
+            - [Windows iş için Hello etkinleştirmek için Windows 10 cihaz ayarları](identity-protection-windows-settings.md)
 
-     - **Gerekli**. Kullanıcılar PIN kodlarında karakter türlerinden en az birini bulundurmalıdır. Örneğin, en az bir büyük harfin ve bir özel karakterin zorunlu kılınması yaygın bir uygulamadır.
+4. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
-     - **İzin verilmiyor** (varsayılan). Kullanıcılar PIN’de bu karakter türlerini kullanmamalıdır. (Bu davranış, ayar yapılandırılmadığında da ortaya çıkar.)<br>Özel karakterler şunlardır: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
-
-   - **PIN süre sonu (gün)**. Son kullanıcıların belirli bir süre sonunda PIN’i değiştirmesini zorunlu tutmak için bir PIN kullanım süresi belirtmek iyi bir uygulamadır. Varsayılan değer 41 gündür.
-
-   - **PIN geçmişini anımsa**. Daha önce kullanılan PIN'lerin yeniden kullanılmasını kısıtlar. Varsayılan olarak, son 5 PIN yeniden kullanılamaz.  
-   - **PIN kurtarmayı etkinleştir**: Kullanıcıların İş İçin Windows Hello PIN kurtarma hizmetini kullanarak PIN’lerini değiştirmelerine izin verir. 
-       - **Etkinleştir**. Bulut hizmeti, cihazda depolanmak üzere bir PIN kurtarma gizli dizisi şifreler. Kullanıcı, gerektiğinde PIN’ini değiştirebilir.  
-       - **Yapılandırılmadı** (varsayılan). PIN kurtarma gizli dizisi oluşturulmaz veya depolanmaz. Kullanıcı PIN’ini unutursa yeni bir PIN almanın tek yolu geçerli PIN’i silmek ve yenisini oluşturmaktır. Kullanıcının eski PIN ile erişim sağladığı bütün hizmetlere yeniden kaydolması gerekir.  
-   
-   - **Güvenilen Platform Modülü (TPM) kullan**. TPM yongası ek bir veri güvenliği katmanı sağlar. Aşağıdaki değerlerden birini seçin:  
-     - **Etkinleştir**. Yalnızca erişilebilir bir TPM’si olan cihazlar İş İçin Windows Hello sağlayabilir.
-     - **Yapılandırılmadı**. Kullanılabilir bir TPM olmadığında bile tüm cihazlar İş İçin Windows Hello sağlayabilir. Cihazlar önce bir TPM kullanmayı dener ancak başaramazsa yazılım şifrelemesi kullanır.  
-
-   - **Biyometrik kimlik doğrulamasına izin ver**. İş İçin Windows Hello için bir PIN koduna alternatif olarak yüz tanıma veya parmak izi gibi biyometrik kimlik doğrulamasını etkinleştirir. Biyometrik kimlik doğrulaması başarısız olsa bile kullanıcılar bir iş PIN kodu yapılandırmalıdır. Aşağıdakilerden birini seçin:
-
-     - **Etkinleştir**. İş İçin Windows Hello biyometrik kimlik doğrulamasına izin verir.
-     - **Yapılandırılmadı** (varsayılan). İş İçin Windows Hello, (tüm hesap türleri için) biyometrik kimlik doğrulamasını engeller.
-
-   - **Varsa, gelişmiş kimlik sahtekarlığına karşı koruma kullan**. Windows Hello’nun yanıltmaya karşı koruma özelliklerinin bunu destekleyen cihazlarda kullanılıp kullanılmayacağını yapılandırır (örneğin, gerçek yüz yerine yüzün fotoğrafı olduğunu algılama).
-       - **Etkinleştir**. Windows, yüz özellikleri destekleniyorsa bunun için tüm kullanıcıların yanıltmaya karşı koruma kullanmasını gerektirir.  
-       - **Yapılandırılmadı** (varsayılan). Windows, cihazdaki yanıltmaya karşı koruma yapılandırmalarını kabul eder.
-
-   - **Şirket içi kaynaklar için sertifika**. 
-       - **Etkinleştir**. İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasına izin verir.
-       - **Yapılandırılmadı** (varsayılan). İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasını önler.  
-9. Profilinizi kaydetmek için **Tamam**’a tıklayın.  
-
-Profil oluşturulur ve **Cihaz yapılandırması - Profiller** listesinde görünür. Devam ederek bu profili gruplara atamak için bkz. [Cihaz profillerini atama](device-profile-assign.md).  
+Profil oluşturulur ve Profiller listede görünür. Ardından, [atama](device-profile-assign.md) bu profili gruplara.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
@@ -100,3 +71,8 @@ In this high-level example, you'll create a device restriction policy that block
 ![How to disable the camera on Android devices](./media/disable-android-camera.png)
 
 -->
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- Tüm listesini görmek [ayarları ve ne yaptıklarını](identity-protection-windows-settings.md).
+- [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).

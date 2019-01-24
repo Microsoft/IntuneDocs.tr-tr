@@ -1,68 +1,64 @@
 ---
 title: Microsoft Intune - Azure’da iOS veya macOS cihaz profili oluşturma | Microsoft Docs
-description: Bir iOS veya macOS cihaz profili ekleyin veya oluşturun ve sonra Microsoft Intune'da AirPrint, AirPlay, giriş ekranı düzeni, uygulama bildirimleri, paylaşılan cihaz, çoklu oturum açma ve web içerik filtresi ayarlarını yapılandırın.
+description: Ekleme veya bir iOS veya macOS cihaz profili oluşturma ve ardından Intune AirPrint, giriş ekranı, uygulama bildirimleri, paylaşılan cihaz, çoklu oturum açma ve web içeriği filtresi ayarları düzeni için ayarları yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: heenamac
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 4542a65afa87668702620a1b50443c9844692a87
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831284"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune’da iOS veya macOS cihaz özelliği ayarları ekleme
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Intune birçok özellik içerir ve yardımcı Yöneticiler ayarları iOS ve macOS cihazlarını denetleyebilirsiniz. Örneğin, yöneticiler şunları yapabilir:
 
-Cihaz özellikleri, iOS ve macOS cihazlarındaki aşağıdaki gibi çeşitli ayarları ve özellikleri denetlemenizi sağlar:
+- Kullanıcılar, ağınızdaki AirPrint yazıcıları erişmesine
+- Uygulama ve klasörleri yeni sayfalar ekleme dahil olmak üzere ana ekrana Ekle
+- Varsa ve uygulama içi bildirimler gösterilen nasıl seçin
+- Kilit ekranında bir ileti veya varlık etiketi, paylaşılan cihazlar için özellikle göstermek için yapılandırma
+- Kullanıcıların kimlik bilgilerini uygulamalar arasında paylaşmak için güvenli çoklu oturum açma deneyimini sağlamak.
+- Yetişkin dili kullanın ve izin veren veya özel web sitelerini engelleme Filtresi web siteleri
 
-- AirPrint ve AirPlay ayarları
-- Giriş ekranı düzeni
-- Uygulamalardan bildirimler
-- Kilit ekranı iletisi
-- Çoklu oturum açmayı ayarlama
-- Web içeriğini filtreleme
+Bu özellikler, Intune'da bulunan ve yönetici tarafından yapılandırılabilir. Intune kullanır "yapılandırma profillerini" oluşturabilir ve kuruluşunuzun ihtiyaçları için bu ayarları özelleştirebilirsiniz. Bu özellikler bir profilde ekledikten sonra daha sonra anında iletme veya kuruluşunuzda iOS ve macOS cihazlarına profil dağıtmak.
 
-Bu makalede, iOS cihaz özelliği profillerini yapılandırmayla ilgili temel bilgiler verilir. Ardından, cihazlarınız için platforma özgü ayarları yapılandırmak üzere ek makalelere göz atabilirsiniz.
+Bu makalede bir cihaz yapılandırma profilinin nasıl oluşturulacağını gösterir. İçin tüm kullanılabilir ayarlar da görebilirsiniz [iOS](ios-device-features-settings.md) ve [macOS](macos-device-features-settings.md) cihazlar.
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve ardından **Microsoft Intune**’u seçin.
-3. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
-4. Aşağıdaki özellikleri girin:
+1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+3. Aşağıdaki özellikleri girin:
 
-   - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-   - **Açıklama**: Profil için bir açıklama girin. (Bu ayar isteğe bağlı ancak önerilen değerdir.)
-   - **Platform**: Platform türünüzü seçin:
-     - **iOS**
-     - **macOS**
-   - **Profil türü**: Seçin **cihaz özellikleri**.
-   - **Ayarları**: Ayarlar seçtiğiniz platforma bağlıdır. Aşağıdaki makaleler her profil türü için ayarları açıklar:
+    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: Platformunuzu seçin:
+        - **iOS**
+        - **macOS**
+    - **Profil türü**: Seçin **cihaz özellikleri**.
+    - **Ayarları**: Yapılandırmak istediğiniz ayarları girin. Tüm ayarların bir listesi ve ne yaptıkları için bkz:
 
-     - [iOS ve MacOS cihazları için AirPrint ayarları](air-print-settings-ios-macos.md)
-     - [iOS için AirPlay ayarları](airplay-settings-ios.md)
-     - [iOS için Giriş ekranı düzen ayarları](home-screen-settings-ios.md)
-     - [iOS için uygulama bildirimi ayarları](app-notification-settings-ios.md)
-     - [İOS için kilit ekranı iletisi ayarları](shared-device-settings-ios.md)
-     - [Intune'u iOS cihazında çoklu oturum açma için yapılandırma](sso-ios.md)
-     - [iOS için web içerik filtresi ayarları](web-content-filter-settings-ios.md)
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
-5. İşiniz bittiğinde **Tamam**’ı ve değişikliklerinizi kaydetmek için **Oluştur**’u seçin.
+4. İşiniz bittiğinde **Tamam**’ı ve değişikliklerinizi kaydetmek için **Oluştur**’u seçin.
 
-Profil oluşturulur ve listede görüntülenir.
+Profil oluşturulur ve listede gösterilen. Mutlaka [profili atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
 
-## <a name="next-step"></a>Sonraki adım
+## <a name="next-steps"></a>Sonraki adımlar
 
-Bu profili gruplara atamak için bkz. [Cihaz profillerini atama](device-profile-assign.md).
+Profil oluşturulduktan sonra atanmak üzere hazırdır. Ardından, [profili atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
+
+İçin tüm cihaz özelliği ayarlarını görüntüleme [iOS](ios-device-features-settings.md) ve [macOS](macos-device-features-settings.md) cihazlar.

@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 87d25fa76b3d2716099178ca428c8032fd99886c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831641"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
@@ -42,7 +42,7 @@ BT yöneticisi, kullandığınız **Yardım ve Destek** için Intune Azure porta
 
 ## <a name="help-and-support-experience"></a>Yardım ve destek deneyimi
 > [!TIP]   
-> Ocak, 2019'ın yeni Yardım ve destek deneyimi tüm kiracılara sunuluyor. Kiracınız bu yeni deneyim henüz yoksa, önceki deneyim hakkında bilgi bulabilirsiniz [Azure Yardım + destek deneyimi](#azure-help-+-support-experience), bu makaledeki.  
+> Yeni Yardım ve destek deneyimi, tüm kiracılar için kullanılabilir. Bu yeni deneyim, kiracınızda görmüyorsanız, tarayıcınızın önbelleğini temizlemek ve sayfayı yeniden yükleyin.
 
 Intune kullanılabilir için Yardım ve destek deneyimi [Microsoft 365 cihaz yönetim portalında](http://devicemanagement.microsoft.com) ve tüm dikey pencereleri (veya sayfaları) Azure portalında Intune altında. 
 

@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831522"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Hüküm ve koşullar kullanıcı erişimi
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032308"
 
 Bir Intune yöneticisi olarak, aşağıdaki eylemleri gerçekleştirebilmeleri için kullanıcıların şirketinizin hüküm ve koşullarını kabul etmesini zorunlu tutabilirsiniz:
 - Cihaz kaydetme
-- Şirket uygulamaları ve e-postası gibi kaynaklara erişme.
+- Şirket uygulamaları ve e-postası gibi kaynaklara erişme.    
 Hüküm ve koşulların yapılandırması isteğe bağlıdır.
 
 Farklı gruplara yönelik olarak, örneğin farklı dillere destek sağlamak için birden çok koşul kümesi oluşturabilirsiniz.
@@ -50,15 +50,15 @@ Hüküm ve koşulları oluşturmak için şu adımları tamamlayın. Görüntü 
 
    - **Görünen ad**: Azure portalında koşulların adı. Kullanıcılar bu adı görmez.
 
-   - **Açıklama**: Azure portalında bu koşul kümesini tanımlamanıza yardımcı olacak isteğe bağlı ayrıntılar.
+   - **Açıklama**: Azure portalında koşul kümesini tanımlamanıza yardımcı olan isteğe bağlı ayrıntılar.
 
 4. Hüküm ve Koşullar bölmesini açmak için **Kullanım koşullarını tanımla**’nın yanındaki oku seçin ve ardından aşağıdaki bilgileri girin:
 
    ![Koşul özetleriyle birlikte son kullanıcı hüküm ve koşullarını kabul etme ekranını gösteren ekran görüntüsü](./media/terms-summary-create.png)
 
-   - **Başlık**: Kullanıcıların Şirket Portalı'nda **Özet**'in yukarısında gördüğü koşullarınızın adı.
-   - **Koşulların Özeti**: Kullanıcılar koşulları kabul ettiğinde bunun ne anlama geldiğini açıklayan metin. Örneğin, “Cihazınızı kaydettiğinizde, Contoso tarafından belirlenmiş kullanım koşullarını kabul etmiş olursunuz. Devam etmeden önce koşulları dikkatle okuyun."
-   - **Hüküm ve Koşullar**: Kullanıcılara gösterilen ve kabul etmeleri veya reddetmeleri gereken hüküm ve koşullar.
+   - **Başlık**: Yukarıdaki şirket portalında kullanıcıların gördüğü koşullarınıza adı **özeti**.
+   - **Koşulların özeti**: Kullanıcılar koşulları kabul ettiğinde ne anlama geldiğini açıklayan metin. Örneğin, “Cihazınızı kaydettiğinizde, Contoso tarafından belirlenmiş kullanım koşullarını kabul etmiş olursunuz. Devam etmeden önce koşulları dikkatle okuyun."
+   - **Hüküm ve koşullar**: Hüküm ve kullanıcılar bakın ve kabul Reddet veya gereken koşulları.
 
 5. **Tamam** > **Oluştur**’u seçin.
 

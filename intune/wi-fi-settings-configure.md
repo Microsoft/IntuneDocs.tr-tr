@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a338cce6249cc7c5214a9d69a897cad3eaa09e93
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 54af9b1ef7872caddb972515d9c4765f8492bf00
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831369"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune’da cihazlarınız için Wi-Fi ayarları ekleme ve kullanma
 
-Microsoft Intune Wi-Fi profillerini, kuruluşunuzdaki cihazlara ve kullanıcılara kablosuz ağ ayarlarını atamak için kullanın. Bir Wi-Fi profili atadığınızda, kullanıcılarınız ağı kendileri yapılandırmadan kuruluşunuzun Wi-Fi ağına erişebilirler.
+Wi-Fi ağ erişim elde etmek için çok sayıda mobil cihaz tarafından kullanılan kablosuz bir ağdır. Microsoft Intune kullanıcılara ve cihazlara kuruluşunuzdaki dağıtılabilir yerleşik Wi-Fi ayarlarını içerir. Bu ayar grubu bir "profili" olarak adlandırılır ve farklı kullanıcılara ve gruplara atanabilir. Kendilerine atandıktan sonra kullanıcılarınızın kuruluşunuzun Wi-Fi ağına kendilerini yapılandırmadan erişin.
 
 Örneğin Contoso Wi-Fi adında yeni bir Wi-Fi ağı kurdunuz. Ağı kurduktan sonra tüm iOS cihazları bu ağa bağlanacak şekilde ayarlamak isteyeceksiniz. İşlem şöyledir:
 
-1. Contoso Wi-Fi kablosuz ağına bağlanmak için gerekli ayarları içeren bir Wi-Fi profili oluşturun.
-2. Profili, tüm iOS cihaz kullanıcılarını içeren bir gruba atayın.
+1. Contoso Wi-Fi kablosuz ağa bağlamak ayarları içeren bir Wi-Fi profili oluşturun.
+2. Profili iOS cihazlarının tüm kullanıcılarını içeren bir gruba atayın.
 3. Kullanıcılar, yeni Contoso Wi-Fi ağını cihazlarındaki kablosuz ağ listesinde bulabilirler. Daha sonra seçtiğiniz kimlik doğrulama yöntemini kullanarak ağa bağlanabilirler.
 
-Bir Wi-Fi profili oluşturmak için bu makaledeki adımları kullanın. Daha sonra platformlara özgü ayarlar ve ayrıntılarla ilgili konuları gözden geçirin.
+Bu makalede bir Wi-Fi profili oluşturma adımları listelenir. Ayrıca, her platform için farklı ayarlar açıklayan bağlantılar içerir.
 
 ## <a name="supported-device-platforms"></a>Desteklenen cihaz platformları
 
@@ -45,7 +45,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 > [!NOTE]
 > Windows 8.1 çalıştıran cihazlarda daha önce başka bir cihazdan dışarı aktarılmış olan bir Wi-Fi yapılandırmasını içeri aktarabilirsiniz.
 
-## <a name="create-a-wi-fi-device-profile"></a>Bir Wi-Fi cihaz profili oluşturma
+## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
 1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin. 
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
@@ -56,7 +56,6 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
     - **Android kurumsal**
     - **iOS**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
 
@@ -80,4 +79,4 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturuldu ancak hiçbir şey yapmıyor. Daha sonra [bu profili atayın](device-profile-assign.md).
+Profil oluşturuldu ancak hiçbir şey yapmıyor. Ardından, [bu profili atarsınız](device-profile-assign.md) ve [atamanın durumunu izlemenize.](device-profile-monitor.md).

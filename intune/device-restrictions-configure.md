@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11b241a14ed70a2e999fa505449cd12cdd1e025e
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 7ab60e64927db5537a106c1257a5624670771f86
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831420"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da cihaz kısıtlama ayarlarını yapılandırma
 
@@ -32,7 +32,7 @@ Cihaz kısıtlamaları, bir dizi kategori altında yönettiğiniz çok çeşitli
 
 Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özellikler hakkında bilgi edinmek için her platform için daha fazla makale okuyun.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Cihaz kısıtlama ayarlarını içeren bir cihaz profili oluşturma
+## <a name="create-the-profile"></a>Profili oluşturma
 
 1. İçinde için [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
@@ -48,7 +48,7 @@ Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özell
     - **Windows 10 ve üzeri**
 
 5. Açılan **Profil** türü listesinden **Cihaz kısıtlamaları**’nı seçin. Bir cihaz oluşturmak için kısıtlamaları profili Surface Hub gibi Windows 10 Team cihazlarının sonra seçin **cihaz kısıtlamaları (Windows 10 Team)**.
-6. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Platformunuzu seçin ayrıntılı ayarları:
+6. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Ayrıntılı ayarları platformunuzu seçin:
 
     - [Android ayarları](device-restrictions-android.md)
     - [Android Kurumsal ayarları](device-restrictions-android-for-work.md)
@@ -60,13 +60,13 @@ Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özell
     - [Windows 10 Team ayarları](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business ayarları](device-restrictions-windows-holographic.md)
 
-7. İşiniz bittiğinde, geri dönüp **profili oluşturma** sayfasında ve seçin **Oluştur**.
+7. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
-Profil oluşturulur ve profil listesi sayfasında görüntülenir. 
+Profil oluşturulur ve profil listesinde gösterilir.
 
-## <a name="next-step"></a>Sonraki adım
+## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturulduktan sonra atanmak üzere hazırdır. Bkz: [cihaz profillerini atama](device-profile-assign.md) adımlar için. 
+Profil oluşturulduktan sonra atanmak üzere hazırdır. Ardından, [profili atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

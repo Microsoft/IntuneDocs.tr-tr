@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
-ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
+ms.openlocfilehash: b6679f0b1d7392bc2db2e39b4c283b702dd21285
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751238"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama
 
@@ -93,21 +93,6 @@ Cihaz uyumluluk ilkelerini kullanmak için şunlar gereklidir:
 Bir cihaz Intune’a kaydedildiğinde Azure AD kayıt işlemi başlar. Bu işlem, Azure AD’de cihazın özniteliklerini güncelleştirir. En önemli bilgilerden biri, cihaz uyumluluk durumudur. Bu uyumluluk durumu, e-posta veya diğer şirket kaynaklarına erişimi engellemek veya mümkün kılmak için koşullu erişim ilkeleri tarafından kullanılır.
 
 [Azure AD kayıt işlemi](https://docs.microsoft.com/azure/active-directory/device-management-introduction) daha fazla bilgi sağlamaktadır.
-
-### <a name="assign-a-resulting-device-configuration-profile-status"></a>Tek bir cihaz yapılandırma profili durumu atama
-
-Bir cihazda birden fazla yapılandırma profili varsa ve cihazın bu atanmış yapılandırma profillerinden iki veya daha fazlası için farklı uyumluluk durumları varsa cihaza tek bir uyumluluk durumu atanır. Bu atama, uyumluluk durumlarına atanan kavramsal önem derecesi düzeyine dayalı olarak yapılır. Uyumluluk durumlarının önem derecesi aşağıdaki gibidir:
-
-|Durum  |Severity  |
-|---------|---------|
-|Bekleniyor     |1.|
-|Başarılı oldu     |2|
-|Başarısız     |3|
-|Hata     |4|
-
-Bir cihazda birden fazla yapılandırma profili varsa bu profillerden en yüksek önem derecesine sahip olanı bu cihaza atanır.
-
-Örneğin bir cihaza üç profil atandığını düşünelim: biri Bekleniyor durumunda (önem derecesi = 1), biri Başarılı durumunda (önem derecesi = 2) ve biri Hatalı durumunda (önem derecesi = 4). Hatalı durumu en yüksek önem derecesine sahip olduğu için bu üç profilde de Hata uyumluluk durumu görünür.
 
 ### <a name="assign-an-ingraceperiod-status"></a>InGracePeriod durumu atama
 

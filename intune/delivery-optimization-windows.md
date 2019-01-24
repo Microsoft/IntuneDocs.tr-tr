@@ -12,46 +12,77 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: 0a59cab5f709897e064b315193b292cb46dc2f2e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831556"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Windows 10 (ve üzeri) delivery optimization ayarları Microsoft Intune
 
-Bu makale, listeler ve Windows 10 cihazlar için yapılandırabileceğiniz tüm delivery optimization ayarları açıklar. Bu ayarları bir cihaz yapılandırma profili eklendiğinde ve sonra atanan veya Microsoft Intune kullanarak cihazlarınızı dağıtılmış. 
+> [!NOTE]
+> **Yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları** değiştirilir **teslim iyileştirme** ayarları. Kullanmak için var olan güncelleştirme halkaları değiştirilebilir **teslim iyileştirme** ayarları. [Var olan güncelleştirme halkaları için teslim iyileştirme taşıma](#move-existing-update-rings-to-delivery-optimization) (Bu makalede) adımları listelenir. 
+
+
+Bu özellik aşağıdaki platformlar için geçerlidir:
+
+- Windows 10 ve üzeri
+
+Bu makale, listeler ve Windows 10 cihazlar için yapılandırabileceğiniz tüm delivery optimization ayarları açıklar. Bu ayarları bir cihaz yapılandırma profili eklendiğinde ve sonra atanan veya Microsoft Intune kullanarak cihazlarınızı dağıtılmış.
 
 [Teslim iyileştirme güncelleştirmeleri](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) Windows 10 teslim iyileştirme hakkında daha fazla bilgi edinmek için harika bir kaynaktır.
 
-## <a name="settings"></a>Ayarlar
+## <a name="create-the-profile"></a>Profili oluşturma
 
-**Teslim iyileştirme indirme modu**: güncelleştirmeleri, cihazlara nasıl teslim edildiğini seçin. Seçenekleriniz şunlardır:
+1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
 
-- **Yapılandırılmamış**: son kullanıcıların cihazlarını kullanmak için kendi yöntemlerini kullanarak güncelleştirme **Windows güncelleştirmeleri** veya **teslim iyileştirme** ayarları OS ile kullanılabilir.
-- **Yalnızca HTTP, eşleme yok**: yalnızca internet'ten güncelleştirmeleri alın. Güncelleştirmeler (eşleme veya eşler arası olarak adlandırılır), ağınızdaki diğer bilgisayarlardan elde etmezsiniz.
-- **Özel bir grup üzerinde eşleme ile karışık NAT HTTP aynı eşleme ile karışık HTTP**: internet'ten ve ağınızdaki diğer bilgisayarlardan güncelleştirmeleri alın. Eşleme, aynı Active Directory (varsa) sitesi veya aynı etki alanında cihazlarda gerçekleşir. Bu seçenek belirlendiğinde, eşleme ağ adresi çevirisi (NAT) IP adreslerinizi çizer.
-- **Internet eşlemesi ile karışık HTTP**: internet'ten ve ağınızdaki diğer bilgisayarlardan güncelleştirmeleri alın.
-- **Eşlemesiz basit indirme modu**: Microsoft gibi güncelleştirme sahibinden doğrudan internet'ten güncelleştirmeleri alır. Bu teslim iyileştirme bulut Hizmetleri iletişim kurmaz.
-- **Atlama modu**: kullanım arka plan Akıllı Aktarım Hizmeti (güncelleştirmeleri almak için BITS). Teslim iyileştirme kullanmayın.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
 
-## <a name="move-from-existing-update-rings-to-delivery-optimization"></a>Var olan güncelleştirme kademeleri için teslim iyileştirme Taşı
+3. Aşağıdaki özellikleri girin:
+
+    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: Platformu seçin:  
+
+        - **Windows 10 ve üzeri**
+
+    - **Profil türü**: Seçin **teslim iyileştirme**.
+    - **Ayarları**: Yüklenen güncelleştirmeleri nasıl istediğinizi seçin. Seçenekleriniz şunlardır: 
+
+        - **Yapılandırılmamış**: Son kullanıcılar cihazlarını kullanmak için kendi yöntemlerini kullanarak güncelleştirme **Windows güncelleştirmeleri** veya **teslim iyileştirme** ayarları OS ile kullanılabilir.
+        - **Yalnızca HTTP, eşleme yok**: Güncelleştirmeleri yalnızca internet'ten alın. Güncelleştirmeler (eşleme veya eşler arası olarak adlandırılır), ağınızdaki diğer bilgisayarlardan elde etmezsiniz.
+        - **Aynı NAT arkasında eşleme ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın. 
+        - **Özel bir grup üzerinde eşleme ile karışık HTTP**: Eşleme, aynı Active Directory (varsa) sitesi veya aynı etki alanında cihazlarda gerçekleşir. Bu seçenek belirlendiğinde, eşleme ağ adresi çevirisi (NAT) IP adreslerinizi çizer.
+        - **Internet eşlemesi ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın.
+        - **Eşlemesiz basit indirme modu**: Güncelleştirmeleri Microsoft update sahibinden doğrudan internet'ten alır. Bu teslim iyileştirme bulut Hizmetleri iletişim kurmaz.
+        - **Atlama modu**: Güncelleştirmeleri almak için arka plan Akıllı Aktarım Hizmeti (BITS) kullanın. Teslim iyileştirme kullanmayın.
+
+4. İşiniz bittiğinde seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin.
+
+Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
+
+## <a name="move-existing-update-rings-to-delivery-optimization"></a>Var olan güncelleştirme halkaları için teslim iyileştirme Taşı
 
 **Yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları** değiştirilir **teslim iyileştirme** ayarları. Mevcut uygulamanızı güncelleştirme halkaları kullanmak için kolayca değiştirilebilir **teslim iyileştirme** ayarları. Adımlar:
 
 1. Teslim iyileştirme yapılandırma profili oluşturun:
 
     1. Intune'da seçin **cihaz Yapılandırması** > **profilleri** > **profili oluşturma**.
-    2. Profil için bir **Ad** ve bir **Açıklama** girin.
-    3. İçin **Platform**, seçin **Windows 10 ve üzeri**. İçin **profil türü**, seçin **teslim iyileştirme**.
-    4. **Ayarlar**’ı seçin. İçin **teslim iyileştirme indirme modu**, mevcut yazılım güncelleştirme kademesi tarafından kullanılan aynı modunu seçin. Seçenekleriniz şunlardır:
-        - **Yapılandırılmadı**
-        - **Yalnızca HTTP, eşleme yok**
-        - **Aynı NAT özel bir grup üzerinde eşleme ile karışık HTTP arkasında eşleme ile karışık HTTP**
-        - **Internet eşlemesi ile karışık HTTP**
-        - **Eşlemesiz basit indirme modu**
-        - **Atlama modu**
+    2. Aşağıdaki özellikleri girin:
+
+        - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+        - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+        - **Platform**: Seçin **Windows 10 ve üzeri**.
+        - **Profil türü**: Seçin **teslim iyileştirme**.
+        - **Ayarları**: İçin **teslim iyileştirme indirme modu**, mevcut yazılım güncelleştirme kademesi tarafından kullanılan aynı modunu seçin. Seçenekleriniz şunlardır:
+            - **Yapılandırılmadı**
+            - **Yalnızca HTTP, eşleme yok**
+            - **Aynı NAT arkasında eşleme ile karışık HTTP**
+            - **Özel bir grup üzerinde eşleme ile karışık HTTP**
+            - **Internet eşlemesi ile karışık HTTP**
+            - **Eşlemesiz basit indirme modu**
+            - **Atlama modu**
 
 2. Bu yeni profili aynı cihazları ve kullanıcıları, mevcut yazılım güncelleştirme kademesi atayın. [Profil atama](device-profile-assign.md) adımları listelenir.
 

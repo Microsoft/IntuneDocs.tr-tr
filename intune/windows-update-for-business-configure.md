@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831573"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune’da yazılım güncelleştirmelerini yönetme
 
@@ -106,7 +106,7 @@ Güncelleştirme kademeleri oluşturduktan sonra bunları cihaz gruplarına atay
 
    - **Kullanıcıyı engelle duraklatma Windows Update'ten**: Varsayılan olarak izin verilir. Engellemek veya kullanıcılarınız, duraklatma güncelleme yüklemesinden izin vermek için bu ayarı kullanın *ayarları* makinelerinin. 
       
-   - **Teslim iyileştirme indirme modu**: Teslim iyileştirme, artık bir Windows 10 güncelleştirme halkası yazılım güncelleştirmelerini altında bir parçası olarak yapılandırılır. Teslim iyileştirme artık cihaz yapılandırması ayarlanır. Ancak, önceki yapılandırmaların konsolda kullanılabilir kalır. Olmalarını düzenleyerek bu önceki yapılandırmaları kaldırabilirsiniz *yapılandırılmadı*, ancak Aksi halde değiştirilemez. Yeni ve eski İlkesi arasındaki çakışmaları önlemek için bkz: [mevcut güncelleştirme halkaları için teslim iyileştirme taşıma](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) ve ardından ayarlarınızı bir teslim iyileştirme profiline taşıyın. 
+   - **Teslim iyileştirme indirme modu**: Teslim iyileştirme, artık bir Windows 10 güncelleştirme halkası yazılım güncelleştirmelerini altında bir parçası olarak yapılandırılır. Teslim iyileştirme artık cihaz yapılandırması ayarlanır. Ancak, önceki yapılandırmaların konsolda kullanılabilir kalır. Olmalarını düzenleyerek bu önceki yapılandırmaları kaldırabilirsiniz *yapılandırılmadı*, ancak Aksi halde değiştirilemez. Yeni ve eski İlkesi arasındaki çakışmaları önlemek için bkz: [mevcut güncelleştirme halkaları için teslim iyileştirme taşıma](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) ve ardından ayarlarınızı bir teslim iyileştirme profiline taşıyın. 
 
 5. İşiniz bittiğinde **Tamam**’ı seçin. **Güncelleştirme Halkası Oluştur**’da **Oluştur**’u seçin.
 
