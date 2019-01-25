@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c7c5f163eef37333367511650ba86e01250ffe18
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831733"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899102"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobil uygulama yönetimi sorunlarını giderme
 
@@ -30,7 +30,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek
 
 ## <a name="common-it-administrator-issues"></a>Yaygın BT yöneticisi sorunları
 
-Bunlar, bir BT yöneticisinin Intune uygulama koruma ilkesini kullanırken karşılaşabileceği yaygın sorunlardır.
+Bunlar BT yöneticisi Intune uygulama koruma ilkelerini kullanırken karşılaşabileceği yaygın sorunlardır.
 
 | Sorun | Açıklama | Çözüm |
 | -- | -- | -- |
@@ -46,11 +46,11 @@ Bunlar, bir BT yöneticisinin Intune uygulama koruma ilkesini kullanırken karş
 
 Yaygın son kullanıcı sorunları aşağıdaki kategorilere ayrılmıştır:
 
-* **Normal kullanım senaryoları**: Bir son kullanıcı bu senaryoları Intune uygulama koruma ilkesine sahip uygulamalarda karşılaşabilirsiniz. Bunlar gerçek sorunlar olmamakla birlikte, hata veya arıza olarak algılanabilir.
+* **Normal kullanım senaryoları**: Bir son kullanıcı bu senaryoları Intune uygulama koruma ilkesi olan uygulamalara karşılaşabilirsiniz. Bunlar gerçek sorunlar olmamakla birlikte, hata veya arıza olarak algılanabilir.
 
-* **Normal kullanım iletişim kutuları**: Bu bir son kullanıcı Intune uygulama koruma ilkesine sahip uygulamalarda görebilirsiniz kullanım iletişim kutularıdır. Bu iletiler ve iletişim kutuları bir hata veya arıza olduğunu **göstermez**.
+* **Normal kullanım iletişim kutuları**: Bu bir son kullanıcı, bir Intune uygulama koruma ilkesine sahip uygulamalarda görebilirsiniz kullanım iletişim kutularıdır. Bu iletiler ve iletişim kutuları bir hata veya arıza olduğunu **göstermez**.
 
-* **Hata iletileri ve iletişim kutuları**: Bunlar hata iletileri ve iletişim kutuları bir son kullanıcı Intune uygulama koruma ilkesine sahip uygulamalar üzerinde görebilirsiniz. Bunlar, genellikle BT yöneticisi tarafından yapılan bir hatayı veya bir Intune uygulama koruma hatasını belirtir.
+* **Hata iletileri ve iletişim kutuları**: Bunlar hata iletileri ve iletişim kutuları bir son kullanıcı Intune uygulama koruma ilkesi olan uygulamalara üzerinde görebilirsiniz. Bunlar, genellikle BT yöneticisi tarafından yapılan bir hatayı veya bir Intune uygulama koruma hatasını belirtir.
 
 ### <a name="normal-usage-scenarios"></a>Normal kullanım senaryoları
 
@@ -63,19 +63,19 @@ Android | MAM uygulama korumasını cihaz kaydı olmadan kullanıyor olsam bile 
 
 Platform | İleti veya iletişim kutusu | Açıklama |
 --- | --- | --- |
-iOS, Android | **Oturum açma**: Kuruluşunuz, verilerini korumak için bu uygulamayı yönetmesi gerekir. Bu işlemi tamamlamak için iş veya okul hesabınızla oturum açın. | Son kullanıcının bu uygulamayı kullanabilmesi için kendi iş veya okul hesabıyla oturum açması gerekir ve bunun için uygulama koruma ilkesi gerekir. İlkenin uygulanabilmesi için kullanıcının Azure Active Directory’de kimlik doğrulaması gerekir.
-iOS, Android |**Yeniden başlatma gerekli**: Kuruluşunuz artık bu uygulamadaki verilerini koruyor. Devam etmek için uygulamayı yeniden başlatmanız gerekir. | Uygulama biraz önce Intune uygulama koruma ilkesini aldı ve ilkenin uygulanması için yeniden başlatmanız gerekir.
-iOS, Android |**Eyleme izin verilmiyor**: Kuruluşunuz yalnızca bu uygulamada iş veya Okul verilerini açmak izin verir. | BT yöneticiniz **Uygulamanın diğer uygulamalardan veri almasına izin ver** değerini **Yalnızca yönetilen uygulamalar** olarak ayarladı. Bu nedenle, son kullanıcı bu uygulamaya yalnızca uygulama koruma ilkesine sahip diğer uygulamalardan veri aktarabilir.
-iOS, Android |**Eyleme izin verilmiyor**: Kuruluşunuz yalnızca verilerini diğer yönetilen uygulamalara aktarmanıza izin veriyor. | BT yöneticiniz **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** değerini **Yalnızca yönetilen uygulamalar** olarak ayarladı. Bu nedenle, son kullanıcı bu uygulamadan yalnızca uygulama koruma ilkesine sahip diğer uygulamalara veri aktarabilir.
+iOS, Android | **Oturum açma**: Kuruluşunuz, verilerini korumak için bu uygulamayı yönetmesi gerekir. Bu işlemi tamamlamak için iş veya okul hesabınızla oturum açın. | Son kullanıcı uygulama koruma İlkesi gerektirir. Bu uygulamayı kullanmak için kendi iş veya Okul hesabınızla oturum açmanız gerekir. İlkenin uygulanabilmesi sırada kullanıcının Azure Active Directory'de kimlik doğrulaması gerekir.
+iOS, Android |**Yeniden başlatma gerekli**: Kuruluşunuz artık bu uygulamadaki verilerini koruyor. Devam etmek için uygulamayı yeniden başlatmanız gerekir. | Uygulama, yalnızca Intune uygulama koruma İlkesi aldı ve ilkenin uygulanabilmesi yeniden başlatmanız gerekir.
+iOS, Android |**Eyleme izin verilmiyor**: Kuruluşunuz yalnızca bu uygulamada iş veya Okul verilerini açmak izin verir. | BT yöneticiniz **Uygulamanın diğer uygulamalardan veri almasına izin ver** değerini **Yalnızca yönetilen uygulamalar** olarak ayarladı. Bu nedenle, son kullanıcı yalnızca verilerin bu uygulamaya bir uygulama koruma ilkesine sahip diğer uygulamalardan aktarabilir.
+iOS, Android |**Eyleme izin verilmiyor**: Kuruluşunuz yalnızca verilerini diğer yönetilen uygulamalara aktarmanıza izin veriyor. | BT yöneticiniz **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** değerini **Yalnızca yönetilen uygulamalar** olarak ayarladı. Bu nedenle, son kullanıcı bir uygulama koruma ilkesine sahip diğer uygulamalara yalnızca bu uygulamadan veri aktarabilir.
 iOS, Android |**Uyarı silme**: Kuruluşunuz bu uygulamayla ilişkili verilerini kaldırdı. Devam etmek için uygulamayı yeniden başlatın. | BT yöneticisi Intune uygulama koruması kullanarak bir uygulama silme işlemi başlattı.
-Android | **Şirket portalı gerekli**: İş veya Okul hesabınızı bu uygulamayla kullanabilmeniz için Intune Şirket portalı uygulamasını yüklemeniz gerekir. Devam etmek için “Mağazaya git” seçeneğine dokunun. | Android’de, uygulama koruma işlevlerinin çoğu Şirket Portalı uygulamasında yerleşik olarak bulunur. **Şirket Portalı uygulaması her zaman gerekli olsa bile cihaz kaydı gerekli değildir**. Kayıt olmadan uygulama koruması için son kullanıcının cihazında Şirket Portalı uygulamasının yüklü olması yeterlidir.
+Android | **Şirket portalı gerekli**: İş veya Okul hesabınızı bu uygulamayla kullanabilmeniz için Intune Şirket portalı uygulamasını yüklemeniz gerekir. "Mağazaya Git"'a tıklayın. devam etmek için. | Android’de, uygulama koruma işlevlerinin çoğu Şirket Portalı uygulamasında yerleşik olarak bulunur. **Şirket Portalı uygulaması her zaman gerekli olsa bile cihaz kaydı gerekli değildir**. Kayıt olmadan uygulama koruması için son kullanıcının cihazında Şirket Portalı uygulamasının yüklü olması yeterlidir.
 
 ### <a name="error-messages-and-dialogs-on-ios"></a>iOS’ta hata iletileri ve iletişim kutuları
 
 Hata iletisi veya iletişim kutusu | Nedeni | Düzeltme |
 -- | --- | --- |
-**Uygulama ayarlanmadı**: Bu uygulamayı kullanabilmeniz için ayarlanmamış. Yardım için BT yöneticinize başvurun. | Uygulama için gerekli uygulama koruma ilkesi algılanamadı. |Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
-**Intune Managed Browser hoşgeldiniz**: Bu uygulama, Microsoft Intune tarafından yönetildiğinde en iyi şekilde çalışır. Bu uygulamayı web'de gezinmek için her zaman kullanabilirsiniz ve uygulama Microsoft Intune tarafından yönetildiğinde ek veri koruma özelliklerine erişiminiz olur. | Intune Managed Browser uygulaması için gerekli uygulama koruma ilkesi algılanamadı. <br><br>Kullanıcı web’de gezinmek için uygulamayı kullanmaya devam edebilir ancak uygulama Intune tarafından yönetilmez. | Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve Intune Managed Browser uygulamasını hedeflediğinden emin olun.
+**Uygulama ayarlanmadı**: Bu uygulamayı kullanabilmeniz için ayarlanmamış. Yardım için BT yöneticinize başvurun. | Gerekli uygulama koruma İlkesi uygulama için algılama hatası. |Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
+**Intune Managed Browser hoşgeldiniz**: Bu uygulama, Microsoft Intune tarafından yönetildiğinde en iyi şekilde çalışır. Bu uygulamayı web'de gezinmek için her zaman kullanabilirsiniz ve uygulama Microsoft Intune tarafından yönetildiğinde ek veri koruma özelliklerine erişiminiz olur. | Intune Managed Browser uygulaması için bir gerekli uygulama koruma İlkesi algılanamadı hatası. <br><br>Kullanıcı web’de gezinmek için uygulamayı kullanmaya devam edebilir ancak uygulama Intune tarafından yönetilmez. | Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve Intune Managed Browser uygulamasını hedeflediğinden emin olun.
 **Başarısız oturum**: Şu anda oturumunuzu açamıyoruz. Lütfen daha sonra tekrar deneyin. | Kullanıcı iş veya okul hesabıyla oturum açmayı denedikten sonra MAM hizmetine kaydedilemiyor. | Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
 **Hesap ayarlanmadı**: Kuruluşunuz hesabınızı iş veya Okul verilerini ayarlı değil. Yardım için lütfen BT yöneticinizle görüşün. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcının hesabına [Office portalında](http://portal.office.com) bir Intune lisansı atandığından emin olun.
 **Cihaz uyumlu**: Jailbreak uygulanmış bir cihaz kullandığınızdan bu uygulama kullanılamıyor. Yardım için BT yöneticinize başvurun. | Intune, kullanıcının jailbreak uygulanmış bir cihaz kullandığını algıladı. | Cihazı fabrika ayarlarına sıfırlayın. Apple destek sitesindeki [bu yönergeleri](https://support.apple.com/HT201274) izleyin.
@@ -90,7 +90,7 @@ Hata iletisi veya iletişim kutusu | Nedeni | Düzeltme |
 
 İletişim/Hata iletisi | Nedeni | Düzeltme |
 -- | --- | --- |
-**Uygulama ayarlanmadı**: Bu uygulamayı kullanabilmeniz için ayarlanmamış. Yardım için BT yöneticinize başvurun. | Uygulama için gerekli uygulama koruma ilkesi algılanamadı. |Kullanıcının güvenlik grubuna bir Android uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
+**Uygulama ayarlanmadı**: Bu uygulamayı kullanabilmeniz için ayarlanmamış. Yardım için BT yöneticinize başvurun. | Gerekli uygulama koruma İlkesi uygulama için algılama hatası. |Kullanıcının güvenlik grubuna bir Android uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
 **Uygulama başlatma başarısız oldu**: Uygulamanız başlatılırken bir sorun oluştu. Uygulamayı ya da Intune Şirket Portalı uygulamasını güncelleştirmeyi deneyin. Yardıma ihtiyacınız olursa BT yöneticinizle iletişime geçin. | Intune uygulama için uygulama koruma ilkesinin geçerli olduğunu algıladı, ancak uygulama MAM başlatılırken kilitleniyor. | Uygulama sürümünün güncel olduğundan emin olun. <br><br> Intune Şirket Portalı uygulamasının cihazda yüklü ve güncel olduğundan emin olun. <br><br> Sorun devam ederse, Intune'a günlükleri göndermek için veya oluşturmak için Şirket portalı uygulamasını kullanan bir [destek bileti](get-support.md#create-an-online-support-ticket).
 **Uygulama bulunamadı**: Kuruluşunuzun bu içeriği açmasına izin verdiği bu cihazda uygulama vardır. Yardım için BT yöneticinize başvurun. | Kullanıcı iş veya okul hesabını başka bir uygulamayla açmayı denedi ancak Intune verileri açma izni olan başka yönetilen uygulama bulamıyor. | Kullanıcının güvenliğine bir Android uygulama koruma ilkesi dağıtıldığından ve bu ilkenin söz konusu veriyi açabilen en azından başka bir MAM özellikli uygulamayı hedeflediğinden emin olun.
 **Başarısız oturum**: Yeniden oturum açmayı deneyin. Sorun devam ederse yardım için BT yöneticinize başvurun. | Kullanıcının oturum açmayı denediği hesabın kimlik doğrulaması başarısız oldu. | Kullanıcının Intune MAM hizmetine zaten kayıtlı bir iş veya okul hesabıyla oturum açtığından emin olun (Bu uygulamada başarıyla oturum açılan ilk iş veya okul hesabı). <br><br> Uygulamanın verilerini temizleyin. <br><br> Uygulama sürümünün güncel olduğundan emin olun. <br><br> Şirket Portalı sürümünün güncel olduğundan emin olun.

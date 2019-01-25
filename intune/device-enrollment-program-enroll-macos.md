@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 064fa53341558ac18a228b56dca6d129cd58a3af
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032359"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899085"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>MacOS cihazlarını cihaz kayıt programı veya Apple School Manager ile otomatik olarak kaydetme
 
@@ -121,9 +121,9 @@ Belirtecinizi yüklediğinize göre cihazlar için bir kayıt profili oluşturab
 
     ![Cihaz Yönetimi Ayarları ekran görüntüsü.](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
-7. Seçin **Tamam**.
+7. **Tamam**’ı seçin.
 
-8. Şu profil ayarlarını yapılandırmak için **Kurulum Yardımcısı Ayarları**’nı seçin: ![Kurulum Yardımcısı Özelleştirme.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
+8. Aşağıdaki profil ayarlarını yapılandırmak için **Kurulum Yardımcısı Ayarları**’nı seçin:  ![Kurulum Yardımcısını özelleştirme.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Departman ayarları | Açıklama |
     |---|---|
@@ -150,10 +150,14 @@ Belirtecinizi yüklediğinize göre cihazlar için bir kayıt profili oluşturab
     | <strong>FileVault</strong> | Kullanıcıya FileVault şifrelemesini ayarlama seçeneği sağlar. |
     | <strong>iCloud Tanılaması</strong> | Kullanıcıya Apple'a iCloud tanılama verileri gönderme seçeneği sağlar. |
     | <strong>Kayıt</strong>| Kullanıcının cihazı kaydetmesini gerektirir. |
+    | <strong>Android geçiş</strong> | Kullanıcı bir Android cihazından verileri geçirme seçeneği sunar. |
+    | <strong>Sesi görüntüleme</strong> | Kullanıcı üzerinde görünen sesini kapat seçeneği sunar. |
+    | <strong>Gizlilik</strong> | Gizlilik ekran, kullanıcıya göstermek. |
+    | <strong>iCloud depolama</strong> | Kullanıcının iCloud depolama kullanma seçeneği sunar. |
 
    
 
-10. Seçin **Tamam**.
+10. **Tamam**’ı seçin.
 
 11. Profili kaydetmek için **Oluştur**’u seçin.
 
