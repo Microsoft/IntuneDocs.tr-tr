@@ -5,24 +5,15 @@ items:
   items:
   - name: Intune nedir?
     href: what-is-intune.md
-  - name: Eğitim için Intune nedir?
-    href: introduction-intune-education.md
-  - name: Ücretsiz deneme için kaydolun
-    href: free-trial-sign-up.md
+  - name: Intune şirketim için ne yapabilir?
+    href: get-started-evaluation.md
   - name: Yenilikler
     href: whats-new.md
     items:
     - name: Uygulama kullanıcı arabirimindeki yenilikler
       href: whats-new-app-ui.md
-  - name: Hizmet açıklaması
-    href: microsoft-intune-service-description.md
-  - name: Bilinen sorunlar
-    href: known-issues.md
-  - name: Destek alın
-    href: get-support.md
   expanded: true
 - name: Hızlı girişler
-  href: get-started-evaluation.md
   items:
   - name: Intune'u ücretsiz olarak deneyin
     href: free-trial-sign-up.md
@@ -54,20 +45,12 @@ items:
     href: tutorial-protect-email-on-unmanaged-devices.md
   - name: Cihaz kaydetmek için Windows Autopilot kullanma
     href: tutorial-use-autopilot-enroll-devices.md
-- name: Senaryo uygulama kılavuzları
-  items:
-  - name: Exchange Online’ı Koruma
-    href: exchange-online-protect.md
-  - name: Yardım masası maliyetlerini azaltma
-    href: password-reset.md
-  - name: Yetkisiz erişimi engelleme
-    href: data-outside-protect.md
-  - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
-    href: data-leak-prevention.md
 - name: Kavramlar
   items:
   - name: Cihaz yönetimi nedir?
     href: what-is-device-management.md
+  - name: Eğitim için Intune nedir?
+    href: introduction-intune-education.md
   - name: Azure portalında gezinme
     href: get-started-azure.md
   - name: Üst düzey mimari
@@ -78,63 +61,72 @@ items:
     href: app-lifecycle.md
   - name: Yaygın senaryolar
     href: common-scenarios.md
-  - name: MDM ve MAM’i karşılaştırın
+  - name: EMS ile KCG için teknoloji kararları
     href: byod-technology-decisions.md
+  - name: İşletim sistemi sürümlerini yönetme
+    href: manage-os-versions.md
+  - name: Windows Holographic’i Yönetme
+    href: windows-holographic-for-business.md
+  - name: Windows Bilgi Koruması ayarları
+    href: windows-information-protection-configure.md
+  - name: MAM İLE İLGİLİ SSS
+    href: mam-faq.md
   - name: İlke ve profil SSS
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
-- name: Dağıtım planlama
+- name: Nasıl yapılır kılavuzları
   items:
-  - name: Planlama kılavuzu
-    href: planning-guide.md
+  - name: Dağıtım planlama
     items:
-    - name: Hedef ve amaçları belirleme
-      href: planning-guide-deployment-goals.md
-    - name: Senaryoları tanımlama
-      href: planning-guide-scenarios.md
-    - name: Gereksinimleri belirleme
-      href: planning-guide-requirements.md
-    - name: Dağıtım planı geliştirme
-      href: planning-guide-rollout-plan.md
-    - name: İletişim planı geliştirme
-      href: planning-guide-communication-plan.md
-    - name: Bir destek planı geliştirme
-      href: planning-guide-support-plan.md
-    - name: Tasarım
-      href: planning-guide-design.md
-    - name: Uygulama
-      href: planning-guide-onboarding.md
-    - name: Sınama ve doğrulama
-      href: planning-guide-test-validation.md
-    - name: Ek kaynaklar
-      href: planning-guide-resources.md
-  - name: Geçiş kılavuzu
-    href: migration-guide.md
-    items:
-    - name: Intune’u Hazırlama
-      href: migration-guide-prepare.md
+    - name: Planlama kılavuzu
+      href: planning-guide.md
       items:
-      - name: Temel kurulum
-        href: migration-guide-setup.md
-      - name: Cihaz ve uygulama yönetimi ilkelerini yapılandırma
-        href: migration-guide-configure-policies.md
-      - name: Uygulama koruma ilkelerini yapılandırma
-        href: migration-guide-app-protection-policies.md
-      - name: Geçiş konuları
-        href: migration-guide-considerations.md
-    - name: Geçiş kampanyası
-      href: migration-guide-campaign.md
+      - name: Hedef ve amaçları belirleme
+        href: planning-guide-deployment-goals.md
+      - name: Senaryoları tanımlama
+        href: planning-guide-scenarios.md
+      - name: Gereksinimleri belirleme
+        href: planning-guide-requirements.md
+      - name: Dağıtım planı geliştirme
+        href: planning-guide-rollout-plan.md
+      - name: İletişim planı geliştirme
+        href: planning-guide-communication-plan.md
+      - name: Bir destek planı geliştirme
+        href: planning-guide-support-plan.md
+      - name: Tasarım
+        href: planning-guide-design.md
+      - name: Uygulama
+        href: planning-guide-onboarding.md
+      - name: Sınama ve doğrulama
+        href: planning-guide-test-validation.md
+      - name: Ek kaynaklar
+        href: planning-guide-resources.md
+    - name: Geçiş kılavuzu
+      href: migration-guide.md
       items:
-      - name: İletişimi planlama
-        href: migration-guide-communication-plan.md
-      - name: Benimsemeyi artırma
-        href: migration-guide-drive-adoption.md
-      - name: Tipik geçiş döngüsü
-        href: migration-guide-cycle.md
-- name: Nasıl Yapılır Kılavuzları
-  items:
+      - name: Intune’u Hazırlama
+        href: migration-guide-prepare.md
+        items:
+        - name: Temel kurulum
+          href: migration-guide-setup.md
+        - name: Cihaz ve uygulama yönetimi ilkelerini yapılandırma
+          href: migration-guide-configure-policies.md
+        - name: Uygulama koruma ilkelerini yapılandırma
+          href: migration-guide-app-protection-policies.md
+        - name: Geçiş konuları
+          href: migration-guide-considerations.md
+      - name: Geçiş kampanyası
+        href: migration-guide-campaign.md
+        items:
+        - name: İletişimi planlama
+          href: migration-guide-communication-plan.md
+        - name: Benimsemeyi artırma
+          href: migration-guide-drive-adoption.md
+        - name: Tipik geçiş döngüsü
+          href: migration-guide-cycle.md
   - name: Intune’u ayarlama
-    href: setup-steps.md
     items:
+    - name: Intune'u ayarlama adımları
+      href: setup-steps.md
     - name: Desteklenen yapılandırmalar
       href: supported-devices-browsers.md
       items:
@@ -154,9 +146,16 @@ items:
       href: licenses.md
     - name: MDM yetkilisini ayarlama
       href: mdm-authority-set.md
+    - name: Rolleri yönetme
+      href: role-based-access-control.md
+    - name: Kapsam etiketlerini kullanma
+      href: scope-tags.md
   - name: Cihazları kaydetme
-    href: device-enrollment.md
     items:
+    - name: Cihaz kaydı nedir?
+      href: device-enrollment.md
+    - name: Cihaz yönetimi özellikleri
+      href: device-management-capabilities.md
     - name: Kayıt seçenekleri
       href: enrollment-options.md
       items:
@@ -196,8 +195,12 @@ items:
         href: connect-intune-android-enterprise.md
       - name: Android iş profili kaydını ayarlama
         href: android-work-profile-enroll.md
-      - name: Android bilgi noktası kaydını ayarlama
+      - name: Android ayrılmış cihaz kaydını ayarlama
         href: android-kiosk-enroll.md
+      - name: Android tam olarak yönetilen kaydı ayarlama
+        href: android-fully-managed-enroll.md
+      - name: Android ayrılmış cihazları veya tam olarak yönetilen cihazları kaydetme
+        href: android-dedicated-devices-fully-managed-enroll.md
       - name: Android iş profili cihazlarını yönetme
         href: android-enterprise-overview.md
       - name: Samsung Knox Mobil Kayıt
@@ -222,51 +225,210 @@ items:
       href: enrollment-report-company-portal-abandon.md
     - name: Cihaz kaydıyla ilgili sorunları giderme
       href: troubleshoot-device-enrollment-in-intune.md
-  - name: Aygıtları yönetin
-    href: device-management.md
+  - name: Cihaz uyumluluğu ayarlama
     items:
-    - name: Cihaz yönetimi özellikleri
-      href: device-management-capabilities.md
-    - name: Etkinleştirme kilidini atlama
-      href: device-activation-lock-bypass.md
-    - name: Windows Yeni Başlangıç’ı Yönetme
-      href: device-fresh-start.md
-    - name: Kayıp iOS cihazı bulma
-      href: device-locate.md
-    - name: iOS kayıp modunu etkinleştirme
-      href: device-lost-mode.md
-    - name: iOS denetimli modunu açma
-      href: device-supervised-mode.md
-    - name: Cihazı kilitleme
-      href: device-remote-lock.md
-    - name: Geçiş kodunu sıfırla
-      href: device-passcode-reset.md
-    - name: Cihazı yeniden başlatma
-      href: device-restart.md
-    - name: Geçerli kullanıcının oturumunu kapatma
-      href: device-logout-user.md
-    - name: Kullanıcıyı kaldır
-      href: device-remove-user.md
-    - name: Cihaz silme
-      href: device-erase.md
-    - name: Uzaktan denetimli mobil cihazlar
-      href: device-profile-android-teamviewer.md
-    - name: Windows 10 PIN sıfırlama
-      href: device-windows-pin-reset.md
-    - name: Exchange hizmeti bağlayıcısını yükleme
-      href: exchange-service-connector-configure.md
-    - name: Cihazı eşitleme
-      href: device-sync.md
-    - name: Cihaz envanterini inceleme
-      href: device-inventory.md
-    - name: Cihazları kaldırma
-      href: devices-wipe.md
+    - name: Cihaz uyumluluğuna genel bakış
+      href: device-compliance-get-started.md
+    - name: Android ilkesi oluşturma
+      href: compliance-policy-create-android.md
+    - name: Android Kurumsal profili ilkesi oluşturma
+      href: compliance-policy-create-android-for-work.md
+    - name: Google Play Koruma’yı etkinleştirmek için bir ilke oluşturun
+      href: compliance-policy-create-google-play-protect.md
+    - name: iOS ilkesi oluşturma
+      href: compliance-policy-create-ios.md
+    - name: Windows ilkesi oluşturma
+      href: compliance-policy-create-windows.md
+    - name: Konum tabanlı ilke
+      href: use-network-locations.md
+    - name: İlkeyi Değerlendir
+      href: policy-evaluate.md
+    - name: Uyumsuzluğa yönelik eylemler
+      href: actions-for-noncompliance.md
+    - name: Cihaz uyumluluğunu izleme
+      href: compliance-policy-monitor.md
+  - name: Cihazları yapılandırma
+    items:
+    - name: Profilleri kullanarak cihazları yapılandırma
+      href: device-profiles.md
+    - name: Cihaz profilleri
+      href: device-profile-create.md
+    - name: Yönetim şablonları
+      href: administrative-templates-windows.md
+    - name: Cihaz özellikleri (iOS ve MacOS)
+      href: device-features-configure.md
+    - name: Cihaz kısıtlamaları
+      href: device-restrictions-configure.md
+    - name: Teslim iyileştirme
+      href: delivery-optimization-windows.md
+    - name: Sürüm yükseltme ve mod değiştirme
+      href: edition-upgrade-configure-windows-10.md
+    - name: E-posta ayarları
+      href: email-settings-configure.md
+    - name: Bilgi noktası ayarları
+      href: kiosk-settings.md
+    - name: VPN ayarları
+      href: vpn-settings-configure.md
+      items:
+      - name: Android için uygulama başına VPN
+        href: android-pulse-secure-per-app-vpn.md
+      - name: iOS için Uygulama Başına VPN
+        href: vpn-setting-configure-per-app.md
+    - name: Wi-Fi ayarları
+      href: wi-fi-settings-configure.md
+      items:
+      - name: Önceden paylaşılan anahtar ile Wi-Fi
+        href: wi-fi-profile-shared-key.md
+    - name: Eğitim ayarları
+      href: education-settings-configure.md
+    - name: Paylaşılan çok kullanıcılı cihazlar
+      href: shared-user-device-settings.md
+    - name: Telekom giderlerini izleme
+      href: telecom-expenses-monitor.md
+    - name: Özel cihaz ayarları
+      href: custom-settings-configure.md
+    - name: Profil atama
+      href: device-profile-assign.md
+    - name: Profil izleme
+      href: device-profile-monitor.md
+    - name: Profil sorunlarını giderme
+      href: device-profile-troubleshoot.md
+  - name: Cihaz verilerini koruma
+    items:
+    - name: Cihaz korumaya genel bakış
+      href: device-protect.md
+    - name: Gizlilik ve kişisel veriler
+      href: privacy-personal-data.md
+      items:
+      - name: Veri toplama
+        href: privacy-data-collect.md
+      - name: Veri depolama ve işleme
+        href: privacy-data-store-process.md
+      - name: Veri güvenliği ve paylaşımı
+        href: privacy-data-secure-share.md
+        items:
+        - name: Apple’ın Intune’a gönderdiği veriler
+          href: data-apple-sends-to-intune.md
+        - name: Google’ın Intune’a gönderdiği veriler
+          href: data-google-sends-to-intune.md
+        - name: Intune’un Apple’a gönderdiği veriler
+          href: data-intune-sends-to-apple.md
+        - name: Intune’un Google’a gönderdiği veriler
+          href: data-intune-sends-to-google.md
+        - name: Jamf Pro'dan Intune'a paylaşılan bilgiler
+          href: conditional-access-integrate-jamf.md
+      - name: Görünüm ve doğru kişisel veriler
+        href: privacy-data-view-correct.md
+      - name: Denetim, dışa aktarma, silme
+        href: privacy-data-audit-export-delete.md
+    - name: Koşullu erişim
+      href: conditional-access.md
+      items:
+      - name: Koşullu erişimi kullanmanın yaygın yolları
+        href: conditional-access-intune-common-ways-use.md
+      - name: Şirket içi Exchange bağlayıcısını yükleme
+        href: exchange-connector-install.md
+      - name: Koşullu erişim ilkesi oluşturma ve atama
+        href: conditional-access-exchange-create.md
+      - name: Klasik Intune portalından koşullu erişim ilkelerini yeniden atama
+        href: conditional-access-intune-reassign.md
+      - name: Uygulamaya bağlı koşullu erişim
+        href: app-based-conditional-access-intune.md
+      - name: Uygulama tabanlı koşullu erişim ayarlama
+        href: app-based-conditional-access-intune-create.md
+      - name: ADAL ve Intune
+        href: app-modern-authentication-block.md
+      - name: Koşullu erişim uyumluluğunu izleme
+        href: conditional-access-exchange-monitor.md
+      - name: Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
+        href: conditional-access-integrate-jamf.md
+      - name: Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
+        href: conditional-access-assign-jamf.md
+    - name: Tehdit koruması
+      items:
+      - name: Mobile Threat Defense
+        href: mobile-threat-defense.md
+        items:
+        - name: Lookout’u ayarlama
+          href: lookout-mobile-threat-defense-connector.md
+          items:
+          - name: Lookout ve Intune tümleştirmesi
+            href: lookout-mtd-connector-integration.md
+        - name: Symantec'i ayarlama
+          href: skycure-mobile-threat-defense-connector.md
+          items:
+          - name: Symantec ve Intune tümleştirmesi
+            href: skycure-mtd-connector-integration.md
+        - name: Check Point’i ayarlama
+          href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+          items:
+          - name: Check Point ve Intune tümleştirmesi
+            href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+        - name: Zimperium’u ayarlama
+          href: zimperium-mobile-threat-defense-connector.md
+          items:
+          - name: Zimperium ve Intune tümleştirmesi
+            href: zimperium-mtd-connector-integration.md
+        - name: Pradeo’yu Ayarlama
+          href: pradeo-mobile-threat-defense-connector.md
+          items:
+          - name: Pradeo ve Intune tümleştirmesi
+            href: pradeo-mtd-connector-integration.md
+        - name: Better Mobile’ı ayarlama
+          href: better-mobile-threat-defense-connector.md
+          items:
+          - name: Better Mobile ve Intune tümleştirmesi
+            href: better-mobile-mtd-connector-integration.md
+        - name: MTD için Intune ayarlama
+          items:
+          - name: MTD uygulamaları ekleme
+            href: mtd-apps-ios-app-configuration-policy-add-assign.md
+          - name: Bir MTD cihaz uyumluluk ilkesi oluşturma
+            href: mtd-device-compliance-policy-create.md
+          - name: Intune’da MTD’yi etkinleştirme
+            href: mtd-connector-enable.md
+      - name: Windows Defender ATP
+        href: advanced-threat-protection.md
+      - name: Endpoint protection
+        href: endpoint-protection-configure.md
+    - name: Ağ erişim denetimi
+      href: network-access-control-integrate.md
+    - name: Windows Hello
+      href: windows-hello.md
+    - name: Sertifikalar
+      href: certificates-configure.md
+      items:
+      - name: SCEP
+        href: certificates-scep-configure.md
+      - name: PKCS
+        href: certficates-pfx-configure.md
+      - name: E-posta şifrelemek için S/MIME kullanma
+        href: certificates-s-mime-encryption-sign.md
+      - name: SCEP ile üçüncü taraf sertifika yetkilisi kullanma
+        href: certificate-authority-add-scep-overview.md
+      - name: Symantec PKI Manager Web Hizmeti
+        href: certificates-symantec-configure.md
+      - name: SCEP ya da PKCS sertifikalarını kaldırma
+        href: remove-certificates.md
+    - name: eSIM hücresel profilleri
+      href: esim-device-configuration.md
+    - name: Kimlik koruması
+      href: identity-protection-configure.md
+    - name: Yazılım güncelleştirmeleri
+      items:
+      - name: İş için Windows Update ayarları
+        href: windows-update-for-business-configure.md
+      - name: iOS güncelleştirme ilkeleri
+        href: software-updates-ios.md
   - name: Uygulamaları yönetme
-    href: app-management.md
     items:
+    - name: Intune uygulama yönetimi nedir?
+      href: app-management.md
     - name: Uygulamaları ekleme
       href: apps-add.md
       items:
+      - name: Intune korumalı uygulamalar
+        href: apps-supported-intune-apps.md
       - name: Mağaza uygulamaları
         items:
         - name: Android mağaza uygulamaları
@@ -306,6 +468,8 @@ items:
         href: web-app.md
       - name: Yerleşik uygulamalar
         href: apps-add-built-in.md
+      - name: PowerShell komut dosyaları
+        href: intune-management-extension.md
     - name: Uygulama dağıtma
       href: apps-deploy.md
       items:
@@ -343,8 +507,6 @@ items:
         href: app-configuration-policies-outlook.md
     - name: Uygulamaları koruma
       items:
-      - name: MAM İLE İLGİLİ SSS
-        href: mam-faq.md
       - name: Uygulamaları seçmeli silme
         href: apps-selective-wipe.md
       - name: Uygulama koruma ilkeleri kullanma
@@ -371,291 +533,10 @@ items:
           href: windows-information-protection-policy-create.md
         - name: iOS uygulamaları arasında veri aktarımını yönetme
           href: data-transfer-between-apps-manage-ios.md
-  - name: Cihazları yapılandırma
-    href: device-profiles.md
-    items:
-    - name: Cihaz profilleri
-      href: device-profile-create.md
-    - name: Yönetim şablonları
-      href: administrative-templates-windows.md
-    - name: iOS ve macOS için cihaz özellikleri
-      href: device-features-configure.md
-      items:
-      - name: iOS ve MacOS için AirPrint
-        href: air-print-settings-ios-macos.md
-      - name: iOS için AirPlay
-        href: airplay-settings-ios.md
-      - name: iOS için giriş ekranı düzeni
-        href: home-screen-settings-ios.md
-      - name: iOS için uygulama bildirimleri
-        href: app-notification-settings-ios.md
-      - name: iOS için kilit ekranı iletisi
-        href: shared-device-settings-ios.md
-      - name: Intune'u iOS cihazında tekli oturum açma için yapılandırma
-        href: sso-ios.md
-      - name: iOS için web filtresi ayarları
-        href: web-content-filter-settings-ios.md
-    - name: Cihaz kısıtlamaları
-      href: device-restrictions-configure.md
-      items:
-      - name: Android
-        href: device-restrictions-android.md
-      - name: Android Kurumsal
-        href: device-restrictions-android-for-work.md
-      - name: iOS
-        href: device-restrictions-ios.md
-      - name: Mac OS
-        href: device-restrictions-macos.md
-      - name: Windows 8.1
-        href: device-restrictions-windows-8-1.md
-      - name: Windows Phone 8.1
-        href: device-restrictions-windows-phone-8-1.md
-      - name: Windows 10
-        href: device-restrictions-windows-10.md
-      - name: Windows 10 Team
-        href: device-restrictions-windows-10-teams.md
-      - name: Windows 10 Holographic for Business
-        href: device-restrictions-windows-holographic.md
-    - name: Teslim iyileştirme
-      href: delivery-optimization-windows.md
-    - name: Endpoint protection
-      href: endpoint-protection-configure.md
-      items:
-      - name: Mac OS
-        href: endpoint-protection-macos.md
-      - name: Windows 10
-        href: endpoint-protection-windows-10.md
-    - name: Kimlik koruması
-      href: identity-protection-configure.md
-    - name: Windows 10 kiosk ayarları
-      href: kiosk-settings.md
-    - name: E-posta ayarları
-      href: email-settings-configure.md
-      items:
-      - name: Android
-        href: email-settings-android.md
-      - name: iOS
-        href: email-settings-ios.md
-      - name: Windows Phone 8.1
-        href: email-settings-windows-phone-8-1.md
-      - name: Windows 10
-        href: email-settings-windows-10.md
-    - name: VPN ayarları
-      href: vpn-settings-configure.md
-      items:
-      - name: Android
-        href: vpn-settings-android.md
-      - name: iOS
-        href: vpn-settings-ios.md
-      - name: iOS cihazlar için Uygulama Başına VPN’i yapılandırma
-        href: vpn-setting-configure-per-app.md
-      - name: Mac OS
-        href: vpn-settings-macos.md
-      - name: Windows 8.1
-        href: vpn-settings-windows-8-1.md
-      - name: Windows Phone 8.1
-        href: vpn-settings-windows-phone-8-1.md
-      - name: Windows 10
-        href: vpn-settings-windows-10.md
-    - name: Wi-Fi ayarları
-      href: wi-fi-settings-configure.md
-      items:
-      - name: Android
-        href: wi-fi-settings-android.md
-      - name: Android Kurumsal ve bilgi noktası
-        href: wi-fi-settings-android-enterprise.md
-      - name: iOS
-        href: wi-fi-settings-ios.md
-      - name: Mac OS
-        href: wi-fi-settings-macos.md
-      - name: Windows 10
-        href: wi-fi-settings-windows.md
-      - name: Windows 8.1
-        href: wi-fi-settings-import-windows-8-1.md
-    - name: eSIM hücresel profilleri
-      href: esim-device-configuration.md
-    - name: Eğitim
-      items:
-      - name: iOS paylaşılan cihazları
-        href: education-settings-configure-ios-shared.md
-      - name: Windows 10
-        href: education-settings-configure.md
-    - name: Windows 10 sürüm yükseltme ayarları
-      href: edition-upgrade-configure-windows-10.md
-    - name: iOS güncelleştirme ilkeleri
-      href: software-updates-ios.md
-    - name: Sertifikalar
-      href: certificates-configure.md
-      items:
-      - name: SCEP
-        href: certificates-scep-configure.md
-      - name: PKCS
-        href: certficates-pfx-configure.md
-      - name: E-posta şifrelemek için S/MIME
-        href: certificates-s-mime-encryption-sign.md
-      - name: SCEP ile üçüncü taraf CA’lar
-        href: certificate-authority-add-scep-overview.md
-      - name: Symantec PKI Manager Web Hizmeti
-        href: certificates-symantec-configure.md
-      - name: SCEP ya da PKCS sertifikalarını kaldırma
-        href: remove-certificates.md
-    - name: Windows Bilgi Koruması ayarları
-      href: windows-information-protection-configure.md
-    - name: Paylaşılan çok kullanıcılı cihazlar
-      href: shared-user-device-settings.md
-      items:
-      - name: Windows 10
-        href: shared-user-device-settings-windows.md
-      - name: Windows 10 Holographic for Business
-        href: shared-user-device-settings-windows-holographic.md
-    - name: PowerShell betiklerini yönetme
-      href: intune-management-extension.md
-    - name: Telekom giderlerini izleme
-      href: telecom-expenses-monitor.md
-    - name: Profil atama
-      href: device-profile-assign.md
-    - name: Profil izleme
-      href: device-profile-monitor.md
-    - name: Profil sorunlarını giderme
-      href: device-profile-troubleshoot.md
-  - name: Cihaz uyumluluğu ayarlama
-    href: device-compliance-get-started.md
-    items:
-    - name: Android ilkesi
-      href: compliance-policy-create-android.md
-    - name: Android Kurumsal profili ilkesi
-      href: compliance-policy-create-android-for-work.md
-    - name: Google Play Korumasını etkinleştirme
-      href: compliance-policy-create-google-play-protect.md
-    - name: iOS ilkesi
-      href: compliance-policy-create-ios.md
-    - name: macOS ilkesi
-      href: compliance-policy-create-mac-os.md
-    - name: Windows ilkesi
-      href: compliance-policy-create-windows.md
-    - name: Konum tabanlı ilke
-      href: use-network-locations.md
-    - name: İlkeyi Değerlendir
-      href: policy-evaluate.md
-    - name: Uyumsuzluğa yönelik eylemler
-      href: actions-for-noncompliance.md
-    - name: Cihaz uyumluluğunu izleme
-      href: compliance-policy-monitor.md
-  - name: Koşullu erişimi ayarlama
-    href: conditional-access.md
-    items:
-    - name: Koşullu erişimi kullanmanın yaygın yolları
-      href: conditional-access-intune-common-ways-use.md
-    - name: Şirket içi Exchange bağlayıcısını yükleme
-      href: exchange-connector-install.md
-    - name: Koşullu erişim ilkesi oluşturma ve atama
-      href: conditional-access-exchange-create.md
-    - name: Cihaz tabanlı koşullu erişim ilkesi
-      href: create-conditional-access-intune.md
-    - name: Klasik Intune portalından koşullu erişim ilkelerini yeniden atama
-      href: conditional-access-intune-reassign.md
-    - name: Uygulamaya bağlı koşullu erişim
-      href: app-based-conditional-access-intune.md
-    - name: Uygulama tabanlı koşullu erişim ayarlama
-      href: app-based-conditional-access-intune-create.md
-    - name: ADAL ve Intune
-      href: app-modern-authentication-block.md
-    - name: Koşullu erişim uyumluluğunu izleme
-      href: conditional-access-exchange-monitor.md
-    - name: Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
-      href: conditional-access-integrate-jamf.md
-    - name: Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
-      href: conditional-access-assign-jamf.md
-  - name: Cihaz verilerini koruma
-    href: device-protect.md
-    items:
-    - name: Gizlilik ve kişisel veriler
-      href: privacy-personal-data.md
-      items:
-      - name: Veri toplama
-        href: privacy-data-collect.md
-      - name: Veri depolama ve işleme
-        href: privacy-data-store-process.md
-      - name: Veri güvenliği ve paylaşımı
-        href: privacy-data-secure-share.md
-        items:
-        - name: Apple’ın Intune’a gönderdiği veriler
-          href: data-apple-sends-to-intune.md
-        - name: Google’ın Intune’a gönderdiği veriler
-          href: data-google-sends-to-intune.md
-        - name: Jamf Pro’nun Intune’a gönderdiği veriler
-          href: data-jamf-sends-to-intune.md
-        - name: Intune’un Apple’a gönderdiği veriler
-          href: data-intune-sends-to-apple.md
-        - name: Intune’un Google’a gönderdiği veriler
-          href: data-intune-sends-to-google.md
-      - name: Görünüm ve doğru kişisel veriler
-        href: privacy-data-view-correct.md
-      - name: Denetim, dışa aktarma, silme
-        href: privacy-data-audit-export-delete.md
-    - name: Mobile Threat Defense
-      href: mobile-threat-defense.md
-      items:
-      - name: Lookout’u ayarlama
-        href: lookout-mobile-threat-defense-connector.md
-        items:
-        - name: Lookout ve Intune tümleştirmesi
-          href: lookout-mtd-connector-integration.md
-      - name: Symantec'i ayarlama
-        href: skycure-mobile-threat-defense-connector.md
-        items:
-        - name: Symantec ve Intune tümleştirmesi
-          href: skycure-mtd-connector-integration.md
-      - name: Check Point’i ayarlama
-        href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-        items:
-        - name: Check Point ve Intune tümleştirmesi
-          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-      - name: Zimperium’u ayarlama
-        href: zimperium-mobile-threat-defense-connector.md
-        items:
-        - name: Zimperium ve Intune tümleştirmesi
-          href: zimperium-mtd-connector-integration.md
-      - name: Pradeo’yu Ayarlama
-        href: pradeo-mobile-threat-defense-connector.md
-        items:
-        - name: Pradeo ve Intune tümleştirmesi
-          href: pradeo-mtd-connector-integration.md
-      - name: Better Mobile’ı ayarlama
-        href: better-mobile-threat-defense-connector.md
-        items:
-        - name: Better Mobile ve Intune tümleştirmesi
-          href: better-mobile-mtd-connector-integration.md
-      - name: MTD için Intune ayarlama
-        items:
-        - name: MTD uygulamaları ekleme
-          href: mtd-apps-ios-app-configuration-policy-add-assign.md
-        - name: Bir MTD cihaz uyumluluk ilkesi oluşturma
-          href: mtd-device-compliance-policy-create.md
-        - name: Intune’da MTD’yi etkinleştirme
-          href: mtd-connector-enable.md
-    - name: Windows Defender ATP
-      href: advanced-threat-protection.md
-    - name: Ağ erişim denetimi
-      href: network-access-control-integrate.md
-    - name: Windows Hello’yu ayarlama
-      href: windows-hello.md
-  - name: Rolleri yönetme
-    href: role-based-access-control.md
-  - name: Kapsam etiketleri
-    href: scope-tags.md
-  - name: İşletim sistemi sürümlerini yönetme
-    href: manage-os-versions.md
-  - name: Yazılım güncelleştirmelerini yönetme
-    href: windows-update-for-business-configure.md
-  - name: Windows Holographic’i Yönetme
-    href: windows-holographic-for-business.md
-    items:
-    - name: Windows Holographic’i Yükseltme
-      href: holographic-upgrade.md
   - name: Kullanıcıları eğitme
-    href: end-user-educate.md
     items:
+    - name: Son kullanıcılarınızı nasıl bilgilendirebilirsiniz
+      href: end-user-educate.md
     - name: Şirket Portalı iletileri
       href: end-user-company-portal-messages.md
     - name: Android uygulama koruması
@@ -676,111 +557,296 @@ items:
       href: data-apple-sends-to-intune.md
     - name: Google’ın Intune’a gönderdiği veriler
       href: data-google-sends-to-intune.md
-  - name: Otomatikleştirme ve özelleştirme
+  - name: Yardım ve destek alma
     items:
-    - name: Özel cihaz ayarlarını yapılandırma
-      href: custom-settings-configure.md
+    - name: Sorunları Gider
       items:
-      - name: Önceden paylaşılan anahtar ile Wi-Fi profili
-        href: wi-fi-profile-shared-key.md
-      - name: Android
-        href: custom-settings-android.md
+      - name: Kullanıcıların sorunları gidermesine yardımcı olma
+        href: help-desk-operators.md
+      - name: Şirket kaynak erişimi sorunlarını giderme
+        href: troubleshoot-company-resource-access-problems.md
+      - name: Sorun giderme uygulaması kurulum sorunları
+        href: troubleshoot-app-install.md
+      - name: Intune etkinlikleri için denetleme günlükleri
+        href: monitor-audit-logs.md
+      - name: Uygulama koruma günlüklerini gözden geçirme
+        href: app-protection-policy-settings-log.md
+      - name: E-posta profilleriyle ilgili sorunları giderme
+        href: troubleshoot-email-profiles-in-microsoft-intune.md
+      - name: Yazılım güncelleştirmesi sorunlarını giderme
+        href: troubleshoot-software-updates-in-microsoft-intune.md
+      - name: Uç nokta koruması sorunlarını giderme
+        href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+      - name: İlkelerle ilgili sorunları giderme
+        href: troubleshoot-policies-in-microsoft-intune.md
+      - name: Koşullu erişim sorunlarını giderme
+        href: troubleshoot-conditional-access.md
+      - name: Exchange bağlayıcısı sorunlarını giderme
+        href: troubleshoot-exchange-connector.md
+    - name: Bilinen sorunlar
+      href: known-issues.md
+    - name: Destek alın
+      href: get-support.md
+- name: Başvuru
+  items:
+  - name: Ayarlar listeleri
+    items:
+    - name: Android
+      items:
+      - name: Uyumluluk ilkesi ayarları
+        href: compliance-policy-create-android.md
+      - name: Yapılandırma profili ayarları
         items:
-        - name: Uygulama başına VPN profili
-          href: android-pulse-secure-per-app-vpn.md
-        - name: Samsung KNOX Standard için uygulamalara izin verme veya uygulamaları engelleme
-          href: samsung-knox-apps-allow-block.md
-      - name: Android Kurumsal
-        href: custom-settings-android-for-work.md
-      - name: iOS
-        href: custom-settings-ios.md
-      - name: Mac OS
-        href: custom-settings-macos.md
-      - name: Windows 10
-        href: custom-settings-windows-10.md
-      - name: Windows 10 Holographic for Business
+        - name: Cihaz kısıtlamaları
+          href: device-restrictions-android.md
+        - name: E-posta
+          href: email-settings-android.md
+        - name: Güvenilir sertifika
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP sertifikası
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: PKCS içeri aktarılmış sertifikası
+          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
+        - name: PKCS sertifikası
+          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+        - name: VPN
+          href: vpn-settings-android.md#android-vpn-settings
+        - name: Wi-Fi
+          href: wi-fi-settings-android.md
+        - name: Özel
+          href: custom-settings-android.md
+          items:
+          - name: Samsung KNOX Standard için uygulamalara izin verme veya uygulamaları engelleme
+            href: samsung-knox-apps-allow-block.md
+    - name: Android Kurumsal
+      items:
+      - name: Uyumluluk ilkesi ayarları
+        href: compliance-policy-create-android-for-work.md
+      - name: Yapılandırma profili ayarları
+        items:
+        - name: Cihaz kısıtlamaları
+          href: device-restrictions-android-for-work.md
+        - name: E-posta
+          href: email-settings-android-enterprise.md
+        - name: Güvenilir sertifika
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP sertifikası
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: PKCS içeri aktarılmış sertifikası
+          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
+        - name: PKCS sertifikası
+          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+        - name: VPN
+          href: vpn-settings-android.md#android-for-work-vpn-settings
+        - name: Wi-Fi
+          href: wi-fi-settings-android-enterprise.md
+        - name: Özel
+          href: custom-settings-android-for-work.md
+    - name: iOS
+      items:
+      - name: Uyumluluk ilkesi ayarları
+        href: compliance-policy-create-ios.md
+      - name: Yapılandırma profili ayarları
+        items:
+        - name: Cihaz özellikleri
+          href: ios-device-features-settings.md
+        - name: Cihaz kısıtlamaları
+          href: device-restrictions-ios.md
+        - name: E-posta
+          href: email-settings-ios.md
+        - name: Güvenilir sertifika
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP sertifikası
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: PKCS sertifikası
+          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+        - name: VPN
+          href: vpn-settings-ios.md
+        - name: Wi-Fi
+          href: wi-fi-settings-ios.md
+        - name: Özel
+          href: custom-settings-ios.md
+    - name: Mac OS
+      items:
+      - name: Uyumluluk ilkesi ayarları
+        href: compliance-policy-create-mac-os.md
+      - name: Yapılandırma profili ayarları
+        items:
+        - name: Cihaz özellikleri
+          href: macos-device-features-settings.md
+        - name: Cihaz kısıtlamaları
+          href: device-restrictions-macos.md
+        - name: Endpoint protection
+          href: endpoint-protection-macos.md
+        - name: Güvenilir sertifika
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP sertifikası
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: VPN
+          href: vpn-settings-macos.md
+        - name: Wi-Fi
+          href: wi-fi-settings-macos.md
+        - name: Özel
+          href: custom-settings-macos.md
+    - name: Windows 10 ve üzeri
+      items:
+      - name: Uyumluluk ilkesi ayarları
+        href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
+      - name: Yapılandırma profili ayarları
+        items:
+        - name: Cihaz kısıtlamaları
+          href: device-restrictions-windows-10.md
+        - name: Cihaz kısıtlamaları (Windows 10 Team)
+          href: device-restrictions-windows-10-teams.md
+        - name: Sürüm yükseltme ve mod değiştirme
+          href: edition-upgrade-windows-settings.md
+        - name: E-posta
+          href: email-settings-windows-10.md
+        - name: Endpoint protection
+          href: endpoint-protection-windows-10.md
+        - name: Kimlik koruması
+          href: identity-protection-windows-settings.md
+        - name: Bilgi noktası
+          href: kiosk-settings-windows.md
+        - name: Güvenilir sertifika
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP sertifikası
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: PKCS sertifikası
+          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+        - name: VPN
+          href: vpn-settings-windows-10.md
+        - name: Wi-Fi
+          href: wi-fi-settings-windows.md
+        - name: Eğitim
+          href: education-settings-windows.md
+        - name: Paylaşılan çok kullanıcılı cihaz
+          href: shared-user-device-settings-windows.md
+        - name: Özel
+          href: custom-settings-windows-10.md
+    - name: Windows 10 Holographic for Business
+      items:
+      - name: Cihaz kısıtlamaları
+        href: device-restrictions-windows-holographic.md
+      - name: Paylaşılan çok kullanıcılı cihaz
+        href: shared-user-device-settings-windows-holographic.md
+      - name: Sürüm yükseltme ve mod değiştirme
+        href: holographic-upgrade.md
+      - name: Bilgi noktası
+        href: kiosk-settings-holographic.md
+      - name: Özel
         href: custom-settings-windows-holographic.md
-      - name: Windows Phone 8.1
-        href: custom-settings-windows-phone-8-1.md
-- name: Yardım ve destek
-  items:
-  - name: Kiracı durumu
-    href: tenant-status.md
-- name: Geliştirici kılavuzu
-  items:
-  - name: Üçüncü taraf sertifika yetkilisi ekleme API'si
-    href: scep-libraries-apis.md
-  - name: Intune Uygulama SDK’sı ile uygulama koruma
-    href: app-sdk.md
-    items:
-    - name: Intune Uygulama SDK’sını kullanmaya başlama
-      href: app-sdk-get-started.md
-    - name: Uygulama koruması için LOB uygulamalarını hazırlama
-      href: apps-prepare-mobile-application-management.md
-    - name: iOS için Uygulama Sarmalama Aracı
-      href: app-wrapper-prepare-ios.md
-    - name: iOS için Intune Uygulama SDK'sı
-      href: app-sdk-ios.md
-    - name: Android için Uygulama Sarmalama Aracı
-      href: app-wrapper-prepare-android.md
-    - name: Android için Intune Uygulama SDK'sı
-      href: app-sdk-android.md
-    - name: Intune Uygulama SDK’sı Xamarin Bağlamaları
-      href: app-sdk-xamarin.md
-  - name: Intune Veri Ambarını kullanma
-    href: reports-nav-create-intune-reports.md
-    items:
-    - name: Değişiklik günlüğü için veri ambarı
-      href: reports-changelog.md
-    - name: Power BI ile Veri Ambarına bağlanma
-      href: reports-proc-get-a-link-powerbi.md
-    - name: OData akışına Power BI ile bir rapor oluşturma
-      href: reports-proc-create-with-odata.md
-  - name: Intune Veri Ambarı API’si kullanarak raporlama
-    href: reports-nav-intune-data-warehouse.md
-    items:
-    - name: REST istemcisi ile Veri Ambarı API’sinden veri alma
-      href: reports-proc-data-rest.md
-    - name: Veri Ambarı API’si uç noktası
-      href: reports-api-url.md
-    - name: Veri ambarı yalnızca kimlik doğrulama uygulaması
-      href: data-warehouse-app-only-auth.md
-    - name: Veri Ambarı veri modeli
-      href: reports-ref-data-model.md
+    - name: Windows 8.1
       items:
-      - name: Veri Ambarı koleksiyonları
-        href: intune-data-warehouse-collections.md
-      - name: Veri Ambarı koleksiyonları (beta)
+      - name: Uyumluluk ilkesi ayarları
+        href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+      - name: Yapılandırma profili ayarları
         items:
-        - name: Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
-          href: reports-ref-user-timeline.md
-        - name: Uygulama varlıkları için başvuru
-          href: reports-ref-application.md
-        - name: Mevcut kullanıcı varlığı için başvuru
-          href: reports-ref-current-user.md
-        - name: Veri varlığı için başvuru
-          href: reports-ref-date.md
-        - name: Cihaz varlıkları için başvuru
-          href: reports-ref-devices.md
-        - name: Intune yönetim uzantısı varlığı için başvuru
-          href: reports-ref-intunemanagementextension.md
-        - name: Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
-          href: reports-ref-mobile-app-management.md
-        - name: İlke varlıkları için başvuru
-          href: reports-ref-policy.md
-        - name: Kullanıcı cihaz ilişkisi varlığı için başvuru
-          href: reports-ref-user-device.md
-        - name: Kullanıcı varlığı için başvuru
-          href: reports-ref-user.md
-    - name: Intune Veri Ambarı hesabı verilerinizi taşıma
-      href: data-warehouse-account-move.md
-  - name: Microsoft Graph Intune API'lere erişmek için Azure AD kullanın
-    href: intune-graph-apis.md
+        - name: Cihaz kısıtlamaları
+          href: device-restrictions-windows-8-1.md
+        - name: Güvenilir sertifika
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP sertifikası
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: VPN
+          href: vpn-settings-windows-8-1.md
+        - name: Wi-Fi üzerinden içeri aktarma
+          href: wi-fi-settings-import-windows-8-1.md
+    - name: Windows Phone 8.1
+      items:
+      - name: Uyumluluk ilkesi ayarları
+        href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+      - name: Yapılandırma profili ayarları
+        items:
+        - name: Cihaz kısıtlamaları
+          href: device-restrictions-windows-phone-8-1.md
+        - name: E-posta
+          href: email-settings-windows-phone-8-1.md
+        - name: Güvenilir sertifika
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP sertifikası
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: VPN
+          href: vpn-settings-windows-phone-8-1.md
+        - name: Özel
+          href: custom-settings-windows-phone-8-1.md
+  - name: Geliştirici kılavuzu
     items:
-    - name: Intune API başvurusu
-      href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: Üçüncü taraf sertifika yetkilisi ekleme API'si
+      href: scep-libraries-apis.md
+    - name: Intune Uygulama SDK’sı ile uygulama koruma
+      href: app-sdk.md
+      items:
+      - name: Intune Uygulama SDK’sını kullanmaya başlama
+        href: app-sdk-get-started.md
+      - name: Uygulama koruması için LOB uygulamalarını hazırlama
+        href: apps-prepare-mobile-application-management.md
+      - name: iOS için Uygulama Sarmalama Aracı
+        href: app-wrapper-prepare-ios.md
+      - name: iOS için Intune Uygulama SDK'sı
+        href: app-sdk-ios.md
+      - name: Android için Uygulama Sarmalama Aracı
+        href: app-wrapper-prepare-android.md
+      - name: Android için Intune Uygulama SDK'sı
+        href: app-sdk-android.md
+      - name: Intune Uygulama SDK’sı Xamarin Bağlamaları
+        href: app-sdk-xamarin.md
+    - name: Intune Veri Ambarını kullanma
+      href: reports-nav-create-intune-reports.md
+      items:
+      - name: Değişiklik günlüğü için veri ambarı
+        href: reports-changelog.md
+      - name: Power BI ile Veri Ambarına bağlanma
+        href: reports-proc-get-a-link-powerbi.md
+      - name: OData akışına Power BI ile bir rapor oluşturma
+        href: reports-proc-create-with-odata.md
+    - name: Intune Veri Ambarı API’si kullanarak raporlama
+      href: reports-nav-intune-data-warehouse.md
+      items:
+      - name: REST istemcisi ile Veri Ambarı API’sinden veri alma
+        href: reports-proc-data-rest.md
+      - name: Veri Ambarı API’si uç noktası
+        href: reports-api-url.md
+      - name: Veri ambarı yalnızca kimlik doğrulama uygulaması
+        href: data-warehouse-app-only-auth.md
+      - name: Veri Ambarı veri modeli
+        href: reports-ref-data-model.md
+        items:
+        - name: Veri Ambarı koleksiyonları
+          href: intune-data-warehouse-collections.md
+        - name: Veri Ambarı koleksiyonları (beta)
+          items:
+          - name: Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
+            href: reports-ref-user-timeline.md
+          - name: Uygulama varlıkları için başvuru
+            href: reports-ref-application.md
+          - name: Mevcut kullanıcı varlığı için başvuru
+            href: reports-ref-current-user.md
+          - name: Veri varlığı için başvuru
+            href: reports-ref-date.md
+          - name: Cihaz varlıkları için başvuru
+            href: reports-ref-devices.md
+          - name: Intune yönetim uzantısı varlığı için başvuru
+            href: reports-ref-intunemanagementextension.md
+          - name: Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
+            href: reports-ref-mobile-app-management.md
+          - name: İlke varlıkları için başvuru
+            href: reports-ref-policy.md
+          - name: Kullanıcı cihaz ilişkisi varlığı için başvuru
+            href: reports-ref-user-device.md
+          - name: Kullanıcı varlığı için başvuru
+            href: reports-ref-user.md
+      - name: Intune Veri Ambarı hesabı verilerinizi taşıma
+        href: data-warehouse-account-move.md
+    - name: Microsoft Graph Intune API'lere erişmek için Azure AD kullanın
+      href: intune-graph-apis.md
+      items:
+      - name: Intune API başvurusu
+        href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Kaynaklar
   items:
+  - name: Microsoft Intune belge kılavuzu
+    href: intune-documentation.md
   - name: Sorunları Gider
     items:
     - name: Kullanıcıların sorunları gidermesine yardımcı olma
@@ -789,6 +855,8 @@ items:
       href: troubleshoot-company-resource-access-problems.md
     - name: Sorun giderme uygulaması kurulum sorunları
       href: troubleshoot-app-install.md
+    - name: Mobil uygulama yönetimi sorunlarını giderme
+      href: troubleshoot-mam.md
     - name: Intune etkinlikleri için denetleme günlükleri
       href: monitor-audit-logs.md
     - name: Uygulama koruma günlüklerini gözden geçirme
@@ -817,6 +885,12 @@ items:
       href: ui-changes.md
     - name: Intune klasik grupları
       href: groups-get-started.md
+    - name: iOS eğitim ayarları
+      items:
+      - name: iPad
+        href: education-settings-configure-ios.md
+      - name: Paylaşılan iPad'ler
+        href: education-settings-configure-ios-shared.md
     - name: Eski Intune bilgisayar istemcisi
       href: intune-legacy-pc-client.md
     - name: Yazılım aracısıyla bilgisayarları yönetme
@@ -854,9 +928,19 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: İlke çakışmalarını çözme
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: 2939459eafe7771c33ec20fd150c36c7808c2b1c
-ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
+  - name: Senaryo uygulama kılavuzları
+    items:
+    - name: Exchange Online’ı Koruma
+      href: exchange-online-protect.md
+    - name: Yardım masası maliyetlerini azaltma
+      href: password-reset.md
+    - name: Yetkisiz erişimi engelleme
+      href: data-outside-protect.md
+    - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
+      href: data-leak-prevention.md
+ms.openlocfilehash: 79bff18a23b6613fbc1e2522b6fd7c6c414ffef5
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54325058"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899136"
