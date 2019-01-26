@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387008"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072567"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -48,7 +48,6 @@ Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farkl
 - **Wi-Fi ayar değişiklikleri**: Seçin **blok** kullanıcıların cihaz sahibi tarafından oluşturulan Wi-Fi ayarları değiştirmesini önlemek için. Kullanıcılar kendi Wi-Fi yapılandırmalarını oluşturabilir. **Yapılandırılmamış** kullanıcıların cihazda Wi-Fi ayarlarını değiştirmesine olanak tanır.
 - **Wi-Fi erişim noktası yapılandırması**: Seçin **blok** kullanıcıların oluşturma veya herhangi bir Wi-Fi yapılandırması değiştirmesini önlemek için. **Yapılandırılmamış** kullanıcıların cihazda Wi-Fi ayarlarını değiştirmesine olanak tanır.
 - **Bluetooth yapılandırma**: Seçin **blok** kullanıcıların cihazda Bluetooth yapılandırmasını önlemek için. **Yapılandırılmamış** cihazda Bluetooth'un kullanımına izin verir.
-- **Bluetooth ile kişi paylaşımı**: Seçin **blok** kişiler bir Android cihaz Bluetooth kullanarak eşleştirilmiş bir araba sistemi gibi başka bir CİHAZDAN iş erişimi önlemek için. **Yapılandırılmamış** kişiler Android cihaza eşleştirilmiş başka bir Bluetooth cihazına çalışmak erişim sağlar.
 - **İnternet paylaşımı ve erişimi noktalarına**: Seçin **blok** taşınabilir etkin noktalarına internet paylaşımı ve erişimi önlemek için. **Yapılandırılmamış** internet paylaşımı ve taşınabilir noktalarına erişim sağlar.
 - **USB depolamasını**: Seçin **izin** cihazdaki USB depolama erişim için. **Yapılandırılmamış** USB depolama alanına erişimini engeller.
 - **USB dosya aktarımı**: Seçin **blok** önlemek için USB üzerinden dosyaları aktarma. **Yapılandırılmamış** dosyaları aktarma sağlar.

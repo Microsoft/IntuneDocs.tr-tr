@@ -14,12 +14,12 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184312"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068280"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Cihazları Intune ile uzaktan başlatma
 
@@ -32,7 +32,7 @@ ms.locfileid: "52184312"
 
 - Windows - Windows 8.1 ve üzerinde desteklenir
 - Windows Phone - Windows Phone 8.1 ve sonraki sürümlerde desteklenir
-- Android bilgi noktası cihazlar - Destekleniyor
+- Android bilgi noktası cihazları - Android 7.0 ve sonraki sürümlerde desteklenir
 - iOS - Desteklenir
 
     > [!Note]  
@@ -42,7 +42,7 @@ ms.locfileid: "52184312"
 
 ## <a name="restart-a-device"></a>Cihazı yeniden başlatma
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihazlar** > **Tüm cihazlar**’ı seçin.
 4. Yönettiğiniz cihazların listesinde bir cihaz seçin, **Daha Fazla**’yı ve ardından **Yeniden Başlat** uzak cihaz eylemini seçin.

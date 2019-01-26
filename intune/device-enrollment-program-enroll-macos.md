@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 064fa53341558ac18a228b56dca6d129cd58a3af
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899085"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068297"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>MacOS cihazlarını cihaz kayıt programı veya Apple School Manager ile otomatik olarak kaydetme
 
@@ -150,14 +150,10 @@ Belirtecinizi yüklediğinize göre cihazlar için bir kayıt profili oluşturab
     | <strong>FileVault</strong> | Kullanıcıya FileVault şifrelemesini ayarlama seçeneği sağlar. |
     | <strong>iCloud Tanılaması</strong> | Kullanıcıya Apple'a iCloud tanılama verileri gönderme seçeneği sağlar. |
     | <strong>Kayıt</strong>| Kullanıcının cihazı kaydetmesini gerektirir. |
-    | <strong>Android geçiş</strong> | Kullanıcı bir Android cihazından verileri geçirme seçeneği sunar. |
-    | <strong>Sesi görüntüleme</strong> | Kullanıcı üzerinde görünen sesini kapat seçeneği sunar. |
-    | <strong>Gizlilik</strong> | Gizlilik ekran, kullanıcıya göstermek. |
-    | <strong>iCloud depolama</strong> | Kullanıcının iCloud depolama kullanma seçeneği sunar. |
-
+    
    
 
-10. **Tamam**’ı seçin.
+10. Seçin **Tamam**.
 
 11. Profili kaydetmek için **Oluştur**’u seçin.
 

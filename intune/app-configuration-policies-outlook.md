@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 433d15d91bc32ef409c9a89c4d71cacb7478e74d
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180332"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068314"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook yapılandırma ayarları 
 
@@ -29,18 +29,9 @@ Yönetilen iOS cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için
 
 ## <a name="configuration-settings"></a>Yapılandırma ayarları
 
-Intune'da bir yapılandırma ilkesi eklerken, Microsoft Outlook'u yapılandırmak için belirli ayarlar yapabilirsiniz. **Yapılandırma ayarları** bölmesinde, e-posta hesap yapılandırmasını ayarlayabilirsiniz.
+Bir yapılandırma İlkesi Intune'a eklenirken Microsoft Outlook iOS ve Android yapılandırma ayarlarını belirtebilirsiniz. Yapılandırma ayarları bölmesinde, e-posta hesabı yapılandırmasını belirtin ve uygulamaya özgü ayarları yapılandırın. Ayrıca, siz bu ayarları yapılandırmak veya ad/değer çiftleri kullanın.
 
-### <a name="basic-authentication-email-account-settings"></a>Temel kimlik doğrulaması e-posta hesabı ayarları
-iOS ve Android için Outlook, Exchange yöneticilerine ActiveSync protokolü ile Temel kimlik doğrulaması kullanan şirket içi kullanıcılarına hesap yapılandırmalarını “gönderme” olanağı sunar. Daha fazla bilgi için bkz. [iOS ve Android için Outlook’ta Temel kimlik doğrulaması kullanılarak hesap kurulumu](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup). Hesap kurulumu yapılandırmasını etkinleştirmek için aşağıdaki ayarları yapılandırabilirsiniz:
-
-- **E-posta sunucusu**: Şirket içi Exchange sunucunuzun ana bilgisayar adını girin (örneğin mail.contoso.com).
-- **E-posta hesap adı**: E-posta hesabı için görünen adı girin. Bu ad, cihazlarda kullanıcılara gösterilir.
-- **AAD'den kullanıcı adı özniteliği**: Bu ad, Intune'un Azure Active Directory'den (Azure AD) aldığı özniteliktir. Intune, bu profil tarafından kullanılan kullanıcı adını dinamik olarak oluşturur. Seçenekleriniz şunlardır:
-  - **Kullanıcı Asıl Adı**: Adı alır; örneğin `user1` veya `user1@contoso.com`
-  - **Birincil SMTP adresi**: Adı e-posta adresi biçiminde alır; örneğin `user1@contoso.com`
-- **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) veya Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin. **Birincil SMTP adresini** seçmeniz önerilir.
-- **Hesap etki alanı**: (İsteğe bağlı) Hesabın etki alanı.
+Outlook hesabı kurulum bilgilerini ve iOS ve Android cihazlarını Microsoft Intune yordamsal adımlar için bkz: [iOS ve Android uygulama yapılandırma ayarları için Outlook dağıtma](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Intune’da e-posta ayarlarını yapılandırma](email-settings-configure.md)

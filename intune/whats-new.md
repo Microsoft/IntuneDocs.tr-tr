@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: cd9aedbc8f02cd116eb3135e30348ca104aa1120
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: c5bced54973818b78190d81ade2fde5358c58443
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899170"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072618"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -43,6 +43,91 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 
 -->     
 ## <a name="week-of-january-21-2019"></a>21 Ocak 2019 haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win32 uygulamaları için kutlama bildirimleri <!-- 3136566   -->
+Uygulama ataması başına gösteren son kullanıcı bildirimleri gösterilmemesini sağlayabilirsiniz. Intune'dan seçin **istemci uygulamaları** > **uygulamaları** > uygulamayı seçin > **atamaları** > **grupları dahil**. 
+
+#### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Intune uygulama koruma ilkeleri kullanıcı arabirimi güncelleştirmesi <!-- 3251427  -->
+Özelliğin ayarları için etiketleri ve anlamak her kolaylaştırmak Intune uygulama koruması için düğmeler değiştirdik. Değişikliklerden bazıları şunlardır:  
+- Denetimleri değiştirildi **Evet** / **hiçbir** için öncelikle denetimleri **blok** / ** izin ver ** ve **devre dışı**  /  **etkinleştirme** kontrol eder. Etiketler de güncelleştirilir.  
+- Ayarları biçimlendirilir, yan yana ayarı ve etiketini olacak şekilde daha iyi Gezinti sağlamak için denetimi.   
+
+Varsayılan ayarlar ve ayar aynı kalır, ancak bu değişiklik anlamak, kodlarda gezinin ve seçili uygulama koruma ilkeleri kolayca uygulamak için daha fazla ayarları kullanmasına izin verir. Bilgi için [iOS ayarları](app-protection-policy-settings-ios.md) ve [Android ayarları](app-protection-policy-settings-android.md).
+
+#### <a name="additional-settings-for-outlook----3301182----"></a>Outlook için ek ayarlar <!-- 3301182  -->
+Artık iOS için Outlook ve Intune kullanarak Android için ek ayarlar da yapılandırabilirsiniz.  Ayarlar aşağıdakileri içerir: Yalnızca Office 365 ve hibrit modern kimlik doğrulaması şirket hesapları kullanmak için Outlook'ta, iOS ve Android dağıtma modern kimlik doğrulaması kullanılması iş veya Okul hesaplarını izin `SAMAccountName` username alan temel kimlik doğrulaması olduğunda e-posta profili için Seçili yapılandırma dış alıcılara posta ipuçları yapılandırma kaydedilmesine izin kişiler **odaklanmış gelen kutusu** bloğu dış resimler iOS için Outlook erişmeye Biyometri gerektirir
+> [!NOTE]
+> Erişim için Kurumsal kimlikleri yönetmek için Intune uygulama koruma ilkeleri kullanıyorsanız değil etkinleştirmeyi düşünebilirsiniz **Biyometri gerektiren**. Daha fazla bilgi için **erişim için Kurumsal kimlik bilgilerini gerektir** için [iOS erişim ayarlarını](app-protection-policy-settings-ios.md#access-settings) ve [Android erişim ayarları](app-protection-policy-settings-android.md#access-settings).
+
+#### <a name="delete-android-enterprise-apps----1352553---"></a>Android Kurumsal uygulamaları Sil <!-- 1352553 -->
+Yönetilen Google Play uygulamaları Microsoft Intune silebilirsiniz. Yönetilen Google Play uygulama silmek için Azure portal ve select Intune açın **istemci uygulamaları** > **uygulamaları**. Uygulama listesinden yönetilen Google Play uygulaması'nın sağındaki üç nokta (...) seçin ve ardından **Sil** görüntülenen listeden. Uygulama listesinden bir yönetilen Google Play uygulaması sildiğinizde, yönetilen Google Play uygulaması otomatik olarak onaylanmadı.
+
+#### <a name="managed-google-play-app-type----1352580---"></a>Yönetilen Google Play uygulaması türü <!-- 1352580 -->
+**Yönetilen Google Play** uygulama türü, özellikle eklemenize olanak sağlayacaktır [yönetilen Google Play uygulamaları](https://play.google.com/work/search?q=microsoft&c=apps) ıntune. Intune Yöneticisi olarak, artık göz atabilir, arama, onaylama, eşitleme ve onaylı bir yönetilen Google Play uygulamaları Intune içerisindeki atayın.  Yönetilen Google Play konsolunu için ayrı olarak göz atmak artık ihtiyacınız ve yeniden kimlik doğrulamaya zorlayabilir artık yok.  Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**. İçinde **uygulama türü** listesinden **yönetilen Google Play** uygulama türü olarak.
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Güvenlik temellerini (genel Önizleme) ile Microsoft tarafından önerilen ayarları kullanma <!-- 2055484   -->
+Intune, Windows Defender ATP ve Office 365 ATP dahil güvenliğe odaklı diğer hizmetlerle tümleşir. Müşteriler, Microsoft 365 hizmetleri çapında ortak bir strateji ve birbiriyle bütünleşen bir dizi uçtan uca güvenlik iş akışı istiyor. Amacımız, stratejileri birbiriyle uyumlu hale getirmek ve güvenlik işlemleri ve sık kullanılan yönetici görevleri arasında bir köprü oluşturan çözümler geliştirmek. Intune olarak bu amaca Microsoft tarafından önerilen bir dizi "Güvenlik taban çizgisini" (**Intune** > **Güvenlik taban çizgileri**) yayımlayarak ulaşmayı hedefliyoruz.  Bir yönetici, doğrudan bu taban çizgisi arasından güvenlik ilkeleri oluşturmak ve bunları kullanıcılarına dağıtabilirsiniz. Ayrıca, kuruluşunuzun ihtiyaçlarını en iyi yöntem önerileri de özelleştirebilirsiniz. Intune, cihazların bu taban çizgilerle uyumlu kalmasını sağlar ve yöneticilere uyumlu olmayan kullanıcıları ve cihazları bildirir.
+
+Güvenlik taban çizgileri hakkında daha fazla bilgi için bkz. [Intune Windows 10 Güvenlik taban çizgisi oluşturma](security-baselines-monitor.md).
+
+Bu özellik şu platformlarda geçerlidir: Windows 10 ve üzeri
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>Yönetici olmayan kullanıcılar Azure AD'ye katılmış Windows 10 cihazlarda BitLocker'ı etkinleştirme<!-- 2147379   -->
+Windows 10 cihazlarda BitLocker ayarları etkinleştirdiğinizde (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >  **Windows 10 ve üzeri** Platform > **uç nokta koruma** profil türü için > **Windows şifreleme**), BitLocker ayarları ekleyin. 
+
+Bu güncelleştirme, şifrelemeyi etkinleştirmek standart kullanıcılar (Yönetici olmayanlar) izin vermek için yeni bir BitLocker ayar içerir. 
+
+Ayarları görmek için Git [Windows 10 için Endpoint protection ayarları](endpoint-protection-windows-10.md#windows-encryption).
+
+#### <a name="check-for-configuration-manager-compliance----2192052--eepublished----"></a>Configuration Manager uyumluluğunu denetleme <!-- 2192052  eepublished  -->
+Bu güncelleştirme, yeni bir System Center Configuration Manager Uyumluluk ayarı içerir (**cihaz uyumluluğu** > **ilkeleri** > **İlkesioluşturma**  >  **Windows 10 ve üzeri** > **Configuration Manager Uyumluluk**). Configuration Manager, Intune uyumluluğuna sinyal gönderir. Bu ayarı kullanarak, "uyumlu" döndürülecek tüm Configuration Manager sinyaller gerektirebilir.
+
+Örneğin, tüm yazılım güncelleştirmelerinin cihazlarda yüklü olmasını gerektirirsiniz. Configuration Manager’da bu gereksinim, “Yüklü” durumundadır. Cihazdaki tüm programları bilinmeyen bir durumda, cihazı Intune'da uyumlu olmadığını.
+
+[Configuration Manager Uyumluluk](compliance-policy-create-windows.md#configuration-manager-compliance) Bu ayar açıklar.
+
+Uygulama hedefi: Windows 10 ve üzeri
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324-----"></a>Duvar kağıdı denetimli iOS cihazlarında cihaz yapılandırma profili kullanarak özelleştirme <!-- 2809324   -->
+İOS cihazları için cihaz yapılandırma profili oluşturduğunuzda, bazı özellikler özelleştirebilirsiniz (**cihaz Yapılandırması** > **profilleri** > **oluştur profili** > **iOS** Platform > **cihaz özellikleri** profil türü için). Bu güncelleştirme yeni eklemeler **duvar kağıdı** giriş ekranına veya kilit ekranında bir .png, .jpg veya .jpeg görüntüsü kullanmak yönetici izin ayarları. Bu duvar kağıdı ayarları yalnızca denetimli cihazlar için geçerlidir. 
+
+Bu ayarların listesi için bkz. [iOS cihaz özelliği ayarlarını](ios-device-features-settings.md).
+
+#### <a name="windows-10-kiosk-is-generally-available----3594661----"></a>Windows 10 bilgi noktası kullanıma sunuldu <!-- 3594661  -->
+Bu güncelleştirme, Windows 10 ve üzeri cihazlarda bilgi noktası özelliği genel kullanıma (GA) ' dir. Ekleme ve yapılandırma tüm ayarları görmek için bkz: [bilgi noktası ayarları (Windows 10 ve üzeri)](kiosk-settings.md).
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396-----"></a>Bluetooth ile kişi paylaşımı cihaz kısıtlamaları kaldırılmış > Android Kurumsal cihaz sahibi <!-- 3598396   -->
+Kurumsal Android cihazlar için cihaz kısıtlama profili oluşturduğunuzda, var olan bir **Bluetooth aracılığıyla kişi paylaşımı** ayarı. Bu güncelleştirmede, **Bluetooth aracılığıyla kişi paylaşımı** ayarı kaldırıldı (**cihaz Yapılandırması** > **profilleri**  >   **Profil oluşturma** > **Android Kurumsal** Platform > **cihaz kısıtlamaları > cihaz sahibi** profil türü için > **genel** ). 
+
+**Bluetooth aracılığıyla kişi paylaşımı** ayarı Android Kurumsal cihaz sahibi yönetimi için desteklenmez. Bu ayar kaldırıldığında, bu ayar etkinleştirildikten ve yapılandırıldıktan sonra ortamınızda olsa bile bu nedenle, herhangi bir cihaz veya kiracıları, etkilemez.
+
+Geçerli ayarları listesini görmek için Git [izin vermek veya özellikleri kısıtlamak için Android Kurumsal cihaz ayarları](device-restrictions-android-for-work.md).
+
+Uygulama hedefi: Android Kurumsal cihaz sahibi
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune uygulama koruma ilkeleri kullanıcı arabirimi güncelleştirmesi <!-- 3251427 -->
+Özelliğin ayarları için etiketleri ve anlamak her kolaylaştırmak Intune uygulama koruması için düğmeler değiştirdik. Değişikliklerden bazıları şunlardır:  
+- Denetimleri değiştirildi **Evet** / **hiçbir** için öncelikle denetimleri **blok** / ** izin ver ** ve **devre dışı**  /  **etkinleştirme** kontrol eder. Etiketler de güncelleştirilir.  
+- Ayarları biçimlendirilir, yan yana ayarı ve etiketini olacak şekilde daha iyi Gezinti sağlamak için denetimi.   
+
+Varsayılan ayarlar ve ayar aynı kalır, ancak bu değişiklik anlamak, kodlarda gezinin ve seçili uygulama koruma ilkeleri kolayca uygulamak için daha fazla ayarları kullanmasına izin verir. Bilgi için [iOS ayarları](app-protection-policy-settings-ios.md) ve [Android ayarları](app-protection-policy-settings-android.md).
+
+### <a name="device-management"></a>Cihaz yönetimi
+#### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Kullanıcı kaydı olmadan dağıtılan WIP ilkeleri <!-- 1434452 -->
+Windows bilgi Koruması (WIP) ilkelerini MDM kullanıcıların Windows 10 cihazlarını kaydetmeye gerek kalmadan dağıtılabilir. Bu yapılandırma, kullanıcıların Windows cihazlarının yönetimini sürdürmesini sağlarken şirketlerin de kurumsal belgelerini WIP yapılandırmasına göre korumasını sağlar. Belgeler bir kez bir WIP ilkesiyle korunduktan sonra korumalı veriler bir Intune yöneticisi tarafından seçmeli olarak silinebilir. Kullanıcı ve cihaz seçilerek ve bir silme isteği gönderilerek WIP İlkesi aracılığıyla korunan tüm veriler kullanılamaz hale getirilir. Azure portalı içinde Intune'dan seçin **istemci uygulaması** > **uygulama seçmeli silme**.
+
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services----3762211----"></a>Yeni işlem günlüklerini ve Azure İzleyici Hizmetleri günlükleri gönderme olanağı <!-- 3762211  -->
+Intune, değişiklikler yapıldıkça olayları izleyen yerleşik denetim günlüğü sahiptir. Bu güncelleştirme, yeni günlük özellikleri içerir: 
+- Kullanıcılar ve cihazlar üzerinde ayrıntıları göster operasyonel günlükler (Önizleme) başarı dahil olmak üzere, kayıtlı ve girişimleri başarısız oldu.
+- Denetim günlükleri ve işlem günlüklerini Azure depolama hesapları, olay hub'ları da dahil olmak üzere İzleyici gönderilebilir ve log analytics. Bu hizmetler, depolamak, Splunk ve QRadar gibi analizi kullanma ve günlüğe kaydetme görselleştirilmiş alma olanak tanır.
+
+[Olay hub'ları, depolama için günlük verileri gönderin veya Intune'da oturum analytics](review-logs-using-azure-monitor.md) bu özellik hakkında daha fazla bilgi sağlar.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>İOS DEP cihazı üzerinde daha fazla Kurulum Yardımcısı ekranları atlamak <!-- 2687509  -->
 Şu anda atlayabilirsiniz ekranlar ek olarak, bir kullanıcı cihaz kaydedilirken Kurulum Yardımcısı'nı aşağıdaki ekranlarda atlamak için DEP cihazları iOS ayarlayabilirsiniz: Sesi, gizlilik, Android geçişi, giriş düğmesi, iMessage & FaceTime, ekleme, Watch geçişi, görünüm, ekran zaman, yazılım güncelleştirmesi, SIM Kurulum görüntüler.

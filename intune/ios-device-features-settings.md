@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 321d5958808d291e6bd6969cfffa66a6bc0194fe
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831730"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072550"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>ıntune'da iOS cihaz özelliği ayarları
 
@@ -29,7 +29,7 @@ Bu makalede, bu ayarları listeler ve her ayarın ne yaptığını açıklar.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[İOS cihaz yapılandırma profili oluşturma](device-features-configure.md).
+[İOS cihaz yapılandırma profili oluşturma](device-features-configure.md#create-a-device-profile).
 
 ## <a name="airprint-settings"></a>AirPrint ayarları
 
@@ -275,6 +275,20 @@ Bu ayarlar, iOS cihazlarında tarayıcı URL erişimini denetler.
       Herhangi bir URL girmeyin sonra son kullanıcıların dışındaki Web sitelerine erişemez `microsoft.com`, `microsoft.net`, ve `apple.com`. Bu URL'lere Intune tarafından otomatik olarak izin verilir.
 
       Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+## <a name="wallpaper-settings"></a>Duvar kağıdı ayarları
+
+Denetimli iOS cihazlarınıza özel bir .png, .jpg veya .jpeg görüntüsü ekleyin. Örneğin, bir şirket logosu, kilit ekranında kullanın.
+
+- **Görüntü konumu duvar kağıdı**: Cihazdaki resim göstermek için bir konum seçin. Seçenekleriniz şunlardır:
+  - **Yapılandırılmamış**: Özel bir görüntü cihaza eklenmez. Cihaz işletim sistemi varsayılan kullanır.
+  - **Kilit ekranında**: Görüntü Kilit ekranına ekler.
+  - **Giriş ekranı**: Görüntü giriş ekranına ekler.
+  - **Kilit ekranı ve giriş ekranındaki**: Kilit ekranı ve giriş ekranı görüntünün aynısını kullanır.
+- **Duvar kağıdı resmi**: Bir mevcut .png, .jpg veya .jpeg görüntü kullanmak istediğiniz karşıya yükleyin. Dosya boyutu 750 KB'den daha az olduğundan emin olun. Ayrıca **Kaldır** eklediğiniz bir resmi.
+
+> [!TIP]
+> Farklı kilit ekranı ve giriş ekranı görüntüler için kilitlenme ekranı görüntüsü ile bir profil oluşturun. Giriş ekranı görüntüyü başka bir profil oluşturun. Her iki profili, iOS kullanıcı veya cihaz grubuna atayın.
 
 ## <a name="bundle-ids-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için paket kimlikleri
 

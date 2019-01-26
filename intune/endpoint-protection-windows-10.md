@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203544"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072584"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
 
@@ -152,6 +152,9 @@ Aşağıdaki Windows 10 sürümlerinde desteklenir:
 Temel ayarlar, tüm veri sürücüsü türleri için evrensel BitLocker ayarlarıdır. Bu ayarlar, tüm veri sürücüsü türlerinde son kullanıcıların değiştirebileceği sürücü şifreleme görevleri veya yapılandırma seçeneklerini yönetir.
 
 - **Diğer disk şifrelemesi için uyarı**: Seçin **blok** başka bir disk şifreleme hizmeti cihazda uyarı istemini devre dışı. **Yapılandırılmadı** (varsayılan) ayarı, uyarının gösterilmesine izin verir.
+    - **Azure AD katılımı sırasında şifrelemeyi etkinleştirmek standart kullanıcıların**: Seçeneğini belirlediğinizde **izin**, kullanıcının oturum açtığı zaman standart kullanıcıların/olmayanların BitLocker şifrelemesini etkinleştirebilir. Bu ayar, yalnızca Azure Active Directory'ye katılmış (Azure düzeltmesi) cihazlar için geçerlidir. **Yapılandırılmamış** cihazda BitLocker şifrelemesi yöneticilerinin yalnızca sağlar.
+      
+      Bu ayar, yalnızca Azure Active Directory'ye katılmış (Azure düzeltmesi) cihazlar için geçerlidir. Bu da gerektiren **diğer disk şifrelemesi için uyarı** ayarı ayarlanması **blok**.
 - **Şifreleme yöntemlerini Yapılandır**: **Etkinleştirme** işletim sistemi, veri ve çıkarılabilir sürücüler için şifreleme algoritmalarını yapılandırmak için bu ayarı. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında BitLocker, varsayılan şifreleme yöntemi olarak XTS-AES 128 bit kullanır veya herhangi bir kurulum betiği tarafından belirtilen şifreleme yöntemini kullanır.
   - **İşletim sistemi sürücüleri için şifreleme**: İşletim sistemi sürücüleri için şifreleme yöntemini seçin. XTS-AES algoritmasını kullanmanızı öneririz.
   - **Sabit veri sürücüleri için şifreleme**: Sabit (yerleşik) veri sürücüleri için şifreleme yöntemini seçin. XTS-AES algoritmasını kullanmanızı öneririz.

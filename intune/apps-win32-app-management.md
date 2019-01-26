@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068331"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
 
@@ -239,6 +239,9 @@ Son kullanıcı gerekli ve kullanılabilir uygulama yüklemeleri için Windows k
 Aşağıdaki görüntüde, cihaza uygulama değişiklikler yapılmıştır son kullanıcıyı uyarır.
 
 ![Uygulama değişikliklerini yapılan kullanıcıya bildirimde ekran görüntüsü](./media/apps-win32-app-09.png)    
+
+## <a name="toast-notifications-for-win32-apps"></a>Win32 uygulamaları için kutlama bildirimleri 
+Gerekirse, uygulama ataması başına gösteren son kullanıcı bildirimleri gösterilmemesini sağlayabilirsiniz. Intune'dan seçin **istemci uygulamaları** > **uygulamaları** > uygulamayı seçin > **Assignemnts** > **grupları dahil**. 
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 uygulamasında sorun giderme
 İstemci makinesindeki aracı günlükleri genellikle `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` yolunda bulunur. Bu günlük dosyalarını görüntülemek için `CMTrace.exe` dosyasından yararlanabilirsiniz. *CMTrace.exe*, [SCCM İstemci Araçları](https://docs.microsoft.com/sccm/core/support/tools)'ndan indirilebilir. 

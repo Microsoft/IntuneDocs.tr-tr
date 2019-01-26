@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
-ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
+ms.openlocfilehash: ee9e72b727f5634721cf3a45c918aeee44e83309
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54239583"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072482"
 ---
-# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Android kuruluş cihazlarının Intune ile yönetilen Google Play uygulamaları atama
+# <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Yönetilen Google Play uygulamaları Intune ile Android kuruluş cihazlarının ekleyin
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -106,6 +106,9 @@ Alternatif olarak, Google Play’i uygulama izinlerini uygulama başına otomati
 4. Uygulamanızı yayımladıktan sonra Intune ve Android kurumsal arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla [Yönetilen Google Play mağazası](https://play.google.com/work)’nda oturum açın.
 5. Mağazanın **Uygulamalar** düğümünde, yayımladığınız uygulamanın görüntülendiğini onaylayın.  
     Uygulama, Intune ile eşitlenmesi için otomatik olarak onaylanır.
+
+## <a name="delete-managed-google-play-apps"></a>Yönetilen Google Play uygulamaları silin 
+Gerektiğinde, yönetilen Google Play uygulamaları Microsoft Intune silebilirsiniz. Yönetilen Google Play uygulama silmek için Azure portal ve select Intune açın **istemci uygulamaları** > **uygulamaları**. Uygulama listesinden yönetilen Google Play uygulaması'nın sağındaki üç nokta (...) seçin ve ardından **Sil** görüntülenen listeden. Uygulama listesinden bir yönetilen Google Play uygulaması sildiğinizde, yönetilen Google Play uygulaması otomatik olarak onaylanmadı.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
