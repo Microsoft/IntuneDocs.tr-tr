@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure'da Windows cihaz uyumluluk ilkesi oluşturma | Microsoft Docs
+title: Microsoft Intune - Azure'da Windows cihazlarda uyumluluğu denetle | Microsoft Docs
 description: Windows Phone 8.1, Windows 8.1 ve sonrası, Windows 10 ve sonrası cihazlar için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Surface Hub ve Windows Holographic for Business da dahil olmak üzere cihazlarda en düşük ve en yüksek işletim sistemi uyumluluğunu denetleyin, parola kısıtlamaları ve uzunluğunu ayarlayın, BitLocker’ı gerekli kılın, üçüncü (3.) taraf virüsten koruma çözümlerini denetleyin, kabul edilebilir tehdit düzeyini ayarlayın ve veri deposunda şifrelemeyi etkinleştirin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,18 +13,20 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e0772f4e577f6660926f6827a7fda8e51bcdd280
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 518bb2ab0f59b5692ff2c2391fe971abba0639c6
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182967"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072533"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Windows için Intune cihaz uyumluluk ilkesi, Windows cihazlarının uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlar. Şirket kaynaklarına erişime izin vermek veya bunu engellemek için bu ilkeleri koşullu erişimle birlikte kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+Intune cihaz uyumluluk İlkesi, cihazlarının uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları içerir. Bu ilkeleri koşullu erişimle izin vermek veya kuruluşunuzun kaynaklarına erişimi engellemek için kullanın. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz.
+
+Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
 Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
 
@@ -71,88 +73,101 @@ Bu ilke ayarları, şu platformları çalıştıran cihazlarda geçerlidir:
 
 ### <a name="device-properties"></a>Cihaz özellikleri
 
-- **Gerekli en düşük işletim sistemi:** Cihaz, en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, cihazını yükseltmeyi seçip şirket kaynaklarına erişebilir.
-- **İzin verilen en yüksek işletim sistemi sürümü**: Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. İşletim sistemine izin veren bir kural değişikliği oluncaya kadar bu cihaz şirket kaynaklarına erişemez.
+- **Gerekli en düşük işletim sistemi**: Bir cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, cihazını yükseltmeyi seçip şirket kaynaklarına erişebilir.
+- **İzin verilen en yüksek işletim sistemi sürümü**: Bir cihaz girilen kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullanarak, şirket kaynaklarına erişimi engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. Cihaz, işletim sistemine izin veren kuralın değiştirene kadar kuruluş kaynaklarına erişemez.
 
 Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işletim sistemi sürüm kuralı Windows 8.1’e ayarlanırsa, cihaz Windows 8.1’e sahip olsa bile uyumsuz olarak bildirilir.
 
 ### <a name="system-security"></a>Sistem güvenliği
 
-#### <a name="password"></a>Parola
+#### <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
-- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in.
-- **Basit parolalar**: Bunu **Engelle** şeklinde ayarlayarak, kullanıcıların **1234** veya **1111** gibi basit parolalar oluşturmalarının önüne geçin. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
-- **Minimum parola uzunluğu**: Parolada bulunması gereken rakam veya karakter sayısı alt sınırını girin.
+- **Mobil cihazların kilidini açmak için parola iste**: **Gerekli** kullanıcıların cihazlarına erişebilmeleri için önce bir parola girin.
+- **Basit parolalar**: Kümesine **blok** kullanıcılar gibi basit parolalar oluşturamıyor **1234** veya **1111**. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
+- **Minimum parola uzunluğu**: En düşük rakam veya karakter bulunması gereken sayısını girin.
 
   Windows çalıştıran ve bir Microsoft hesabı ile erişilen cihazlarda uyumluluk ilkesi, şu durumlarda doğru değerlendirme yapamaz:
   - En düşük parola uzunluğu sekiz karakterden fazlaysa
   - Veya en düşük karakter kümesi sayısı ikiden fazlaysa
 
-- **Parola türü**: Parolanın yalnızca **Sayısal** karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından (**Alfasayısal**) mı oluşması gerektiğini seçin.
+- **Parola türü**: Parola yalnızca olması gerekip gerekmediğini seçin **sayısal** karakter veya sayı ve diğer karakterlerin bir karışımı yoksa (**alfasayısal**).
   
-  - **Paroladaki alfasayısal olmayan karakter sayısı:** **Gerekli parola türü** **Alfasayısal** olarak ayarlandıysa, bu ayar parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtir. Dört karakter kümesi şunlardır:
+  - **Paroladaki alfasayısal olmayan karakter sayısı**: **Gerekli parola türü** **Alfasayısal** olarak ayarlanırsa bu ayar parolanın içermesi gereken en az karakter kümesi sayısını belirtir. Dört karakter kümesi şunlardır:
     - Küçük harfler
     - Büyük harfler
     - Simgeler
     - Sayılar
 
-    Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir. Windows çalıştıran ve bir Microsoft Hesabı ile erişilen cihazlarda, minimum parola uzunluğu sekiz karakterden fazlaysa veya minimum karakter kümesi sayısı ikiden büyükse, uyumluluk ilkesi düzgün değerlendirme yapamaz.
+    Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir. Bir Microsoft hesabı ile güvenliği sağlanan cihazlar için Uyumluluk İlkesi düzgün değerlendirme yapamaz:
 
-- **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
-- **Parola kullanım süresi (gün)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
-- **Yeniden kullanılması engellenen eski parola sayısı**: Önceki parolalardan kaç tanesinin kullanılamayacağını girin.
+    - En düşük parola uzunluğu sekiz karakterden fazlaysa
+    - Veya minimum karakter kümesi sayısı ikiden ise
+
+- **Parola istenmeden önce geçen işlem yapılmayan en fazla dakika**: Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi girin.
+- **Parola süresinin sonu (gün)**: Parolanın süresi dolup yeni bir tane oluşturmanız gerekir önce geçen gün sayısını seçin.
+- **Yeniden kullanılması önlenecek önceki parola sayısı**: Kullanılamaz önceden kullanılmış parola sayısını girin.
 
 #### <a name="encryption"></a>Şifreleme
 
-- **Mobil cihazda şifreleme gerektir:** Cihazın veri deposu kaynaklarına bağlanmak için şifrelenmesini **gerektir**in.
+- **Mobil cihazda şifreleme gerektir**: **Gerekli** veri deposu kaynaklarına bağlanmak için şifrelenmesini cihaz.
 
 ## <a name="windows-10-and-later-policy-settings"></a>Windows 10 ve sonraki ilke ayarları
 
 ### <a name="device-health"></a>Device health
 
-- **BitLocker gerektir**: BitLocker açık olduğunda, sistemin kapalı olduğu veya hazırda beklemeye girdiği durumlarda cihaz sürücüye depolanmış verileri yetkisiz erişimden koruyabilir. Windows BitLocker Sürücü Şifrelemesi, Windows işletim sistemi birimine depolanan tüm verileri şifreler. BitLocker, Windows işletim sistemini ve kullanıcı verilerini korumaya yardımcı olmak için TPM'yi kullanır. Ayrıca boşta bırakılan, kaybolan veya çalınan bilgisayarlara müdahale edilmemesine yardımcı olur. Bilgisayarda uyumlu bir TPM varsa, BitLocker verileri koruyan şifreleme anahtarlarını kilitlemek için TPM kullanır. Sonuç olarak, TPM bilgisayarın durumunu doğrulayana kadar anahtarlara erişilemez.
-- **Cihazda Güvenli Önyüklemenin etkin olmasını gerektir:** Güvenli Önyükleme etkinleştirildiğinde sistem güvenilen fabrika durumuna önyüklenmeye zorlanır. Ayrıca, Güvenli Önyükleme etkinleştirildiğinde makineyi önyüklemek için kullanılan çekirdek bileşenleri cihazı üreten kuruluş tarafından güvenilen doğru şifreleme imzalarına sahip olmalıdır. UEFI üretici yazılımı, makinenin başlatılmasına izin vermeden önce imzayı doğrular. Herhangi dosya ile imzalarını bozacak şekilde oynanmışsa sistem önyüklemesi gerçekleşmez.
+- **BitLocker gerektir**: Cihaz, BitLocker açık olduğunda, sistemin kapalı olduğu veya hazırda yetkisiz erişimden sürücüde depolanan verileri koruyabilirsiniz. Windows BitLocker Sürücü Şifrelemesi, Windows işletim sistemi birimine depolanan tüm verileri şifreler. BitLocker, Windows işletim sistemini ve kullanıcı verilerini korumaya yardımcı olmak için TPM'yi kullanır. Ayrıca, bir bilgisayar değiştirilmiş değil onaylamak yardımcı olsa bile kaybolur veya çalınırsa, sol katılımsız. Bilgisayarda uyumlu bir TPM varsa, BitLocker verileri koruyan şifreleme anahtarlarını kilitlemek için TPM kullanır. Bunun sonucunda, TPM bilgisayarın durumunu onaylayıncaya kadar anahtarlara erişilemez.
+- **Güvenli önyüklemenin cihazda etkinleştirilmesini gerektir**: Güvenli Önyükleme etkinleştirildiğinde sistem güvenilen fabrika durumuna önyüklenmeye zorlanır. Ayrıca, Güvenli Önyükleme etkinleştirildiğinde makineyi önyüklemek için kullanılan çekirdek bileşenleri cihazı üreten kuruluş tarafından güvenilen doğru şifreleme imzalarına sahip olmalıdır. UEFI üretici yazılımı, makinenin başlatılmasına izin vermeden önce imzayı doğrular. Herhangi bir dosya, hangi imzalarına keser uyumlu, sistemin önyükleme yapılamıyor.
 
   > [!NOTE]
   > **Güvenli Önyükleme cihazda etkinleştirilmeli** ayarı TPM 1.2 ve 2.0 cihazlarda desteklenir. TPM 2.0 ve sonrasını desteklemeyen cihazlarda ilke durumu Intune'da **Uyumsuz** olarak gösterilir. Bu, Windows 10'daki [Cihaz Durumu Kanıtlama](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) hizmetinin bir kısıtlamasıdır.
 
-- **Kod bütünlüğü gerektir:** Kod bütünlüğü bir sürücünün veya sistem dosyasının belleğe yüklendiği her durumda bütünlüğünü doğrulayan bir özelliktir. Kod bütünlüğü, imzalanmamış bir sürücünün veya sistem dosyasının çekirdeğe yüklenip yüklenmediğini tespit eder. Veya yönetici ayrıcalıklarına sahip bir kullanıcı hesabı tarafından çalıştırılan sistem dosyalarının kötü amaçlı yazılım tarafından değiştirilip değiştirilmediğini belirler.
+- **Kod bütünlüğü gerektir**: Kod bütünlüğü bir sürücünün veya sistem dosyasının her belleğe yüklendiğinde bütünlüğünü doğrulayan bir özelliktir. Kod bütünlüğü çekirdeğe imzasız bir sürücünün veya sistem dosyasının yüklenip yüklenmediğini algılar. Ayrıca, bir sistem dosyasının yönetici ayrıcalıklarına sahip bir kullanıcı hesabı tarafından çalıştırmak kötü amaçlı yazılım tarafından değiştirilip değiştirilmediğini algılar.
 
 HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Sistem Durumu Kanıtlama CSP’si](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
 ### <a name="device-properties"></a>Cihaz özellikleri
 
-- **En düşük işletim sistemi sürümü**: İzin verilen en düşük sürümü **major.minor.build.CU** biçiminde girin. Doğru değeri almak için, komut istemini açın ve `ver` yazın. `ver` komutu, sürümü şu biçimde döndürür:
+- **En düşük işletim sistemi sürümü**: Sürümünde izin verilen en düşük girin **major.minor.build.CU numarasını** biçimi. Doğru değeri almak için, komut istemini açın ve `ver` yazın. `ver` komutu, sürümü şu biçimde döndürür:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
-  Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihazın uyumsuz olduğu bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
+  Olduğunda bir cihaza girdiğiniz işletim sistemi sürümünü daha eski bir sürüm varsa, bunu uyumlu değil olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Son kullanıcı, cihazını yükseltmeyi seçebilir. Bunlar yükselttikten sonra kullanıcılar şirket kaynaklarına erişim sağlayabilir.
 
-- **En yüksek işletim sistemi sürümü**: İzin verilen en yüksek sürümü **major.minor.build.revision** biçiminde girin. Doğru değeri almak için, komut istemini açın ve `ver` yazın. `ver` komutu, sürümü şu biçimde döndürür:
+- **En yüksek işletim sistemi sürümü**: Sürüm, izin verilen en yüksek girin **major.minor.build.revision numarası** biçimi. Doğru değeri almak için, komut istemini açın ve `ver` yazın. `ver` komutu, sürümü şu biçimde döndürür:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
-  Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisi ile iletişim kurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
+  Bir cihaz girdiğiniz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullanarak, şirket kaynaklarına erişimi engellenir ve kullanıcıya, kullanıcıdan BT yöneticisine başvurması istenir. İşletim sistemine izin veren kuralın değiştirilinceye kadar cihaz şirket kaynaklarına erişemez.
 
-- **Mobil cihazlar için gereken en düşük işletim sistemi**: İzin verilen en düşük sürümü major.minor.build biçiminde girin.
+- **Mobil cihazlar için gereken en düşük işletim sistemi**: En düşük sürümü major.minor.build biçiminde izin girin.
 
-  Cihazdaki işletim sistemi belirtilen sürümden önceki bir sürümdeyse, cihazın uyumsuz olduğu bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, şirket kaynaklarına erişebilmek için cihazını yükseltmeyi seçebilir.
+  Bir cihaz, daha önceki bir sürümü olduğunda işletim sistemi sürümü girdiğiniz, bunu uyumlu değil olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Son kullanıcı, cihazını yükseltmeyi seçebilir. Bunlar yükselttikten sonra kullanıcılar şirket kaynaklarına erişim sağlayabilir.
 
-- **Mobil cihazlar için gereken en yüksek işletim sistemi**: İzin verilen en yüksek sürümü major.minor.build biçiminde girin.
+- **Mobil cihazlar için gereken en yüksek işletim sistemi**: Sürümü Major.Minor.Build biçiminde izin verilen üst sınırı girin.
 
-  Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir ve kullanıcıdan BT yöneticisi ile iletişim kurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişmek için kullanılamaz.
+  Bir cihaz bir işletim sistemi sürümünü kullandığında girdiğiniz olandan daha sonra şirket kaynaklarına erişimi engellenir ve kullanıcıya, kullanıcıdan BT yöneticisine başvurması istenir. İşletim sistemine izin veren kuralın değiştirilinceye kadar cihaz şirket kaynaklarına erişemez.
 
-- **Geçerli işletim sistemi derlemeleri**: İşletim sistemi sürümleri için en düşük ve en yüksek değerler dahil olmak üzere kabul edilebilir bir aralık girin. Kabul edilebilir derleme numaraları için bir virgülle ayrılmış değerler (CSV) dosya listesi **Dışarı Aktarabilirsiniz**.
+- **Geçerli işletim sistemi derlemeleri**: Bir aralığın minimum ve maksimum da dahil olmak üzere kabul edilebilir işletim sistemi sürümleri için girin. Kabul edilebilir derleme numaraları için bir virgülle ayrılmış değerler (CSV) dosya listesi **Dışarı Aktarabilirsiniz**.
+
+### <a name="configuration-manager-compliance"></a>Configuration Manager uyumluluk
+
+Windows 10 ve üzeri çalıştıran yalnızca ortak yönetilen cihazlar için geçerlidir. Yalnızca Intune cihazları kullanılabilir değil durumuna döndürün.
+
+- **System Center Configuration Manager cihaz uyumluluğu gerektir**: Seçin **gerektiren** uyumlu olması için System Center Configuration Manager, tüm ayarlarını (yapılandırma öğelerini) zorlamak için. 
+
+  Örneğin, tüm yazılım güncelleştirmelerinin cihazlarda yüklü olmasını gerektirirsiniz. Configuration Manager’da bu gereksinim, “Yüklü” durumundadır. Cihazdaki tüm programları bilinmeyen bir durumda, cihazı Intune'da uyumlu olmadığını.
+  
+  Zaman **yapılandırılmadı**, Intune değil herhangi bir Configuration Manager uyumluluk ayarlarını denetleyin.
 
 ### <a name="system-security-settings"></a>Sistem güvenliği ayarları
 
-#### <a name="password"></a>Parola
+#### <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
-- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in.
-- **Basit parolalar**: Bunu **Engelle** şeklinde ayarlayarak, kullanıcıların **1234** veya **1111** gibi basit parolalar oluşturmalarının önüne geçin. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
-- **Parola türü**: Parolanın yalnızca **Sayısal** karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından (**Alfasayısal**) mı oluşması gerektiğini seçin.
+- **Mobil cihazların kilidini açmak için parola iste**: **Gerekli** kullanıcıların cihazlarına erişebilmeleri için önce bir parola girin.
+- **Basit parolalar**: Kümesine **blok** kullanıcılar gibi basit parolalar oluşturamıyor **1234** veya **1111**. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
+- **Parola türü**: Parola yalnızca olması gerekip gerekmediğini seçin **sayısal** karakter veya sayı ve diğer karakterlerin bir karışımı yoksa (**alfasayısal**).
 
-  - **Paroladaki alfasayısal olmayan karakter sayısı:** **Gerekli parola türü** **Alfasayısal** olarak ayarlandıysa, bu ayar parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtir. Dört karakter kümesi şunlardır:
+  - **Paroladaki alfasayısal olmayan karakter sayısı**: **Gerekli parola türü** **Alfasayısal** olarak ayarlanırsa bu ayar parolanın içermesi gereken en az karakter kümesi sayısını belirtir. Dört karakter kümesi şunlardır:
     - Küçük harfler
     - Büyük harfler
     - Simgeler
@@ -160,31 +175,31 @@ HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Sis
 
     Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
 
-- **Minimum parola uzunluğu**: Parolada bulunması gereken rakam veya karakter sayısı alt sınırını girin.
-- **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
-- **Parola kullanım süresi (gün)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
-- **Yeniden kullanılması engellenen eski parola sayısı**: Önceki parolalardan kaç tanesinin kullanılamayacağını girin.
-- **Cihaz boşta durumundan çıktığında parola gerektir (Mobil ve Holographic)**: Cihaz boşta durumundan her çıktığında kullanıcıları parola girmeye zorlayın.
+- **Minimum parola uzunluğu**: En düşük rakam veya karakter bulunması gereken sayısını girin.
+- **Parola istenmeden önce geçen işlem yapılmayan en fazla dakika**: Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi girin.
+- **Parola süresinin sonu (gün)**: Parolanın süresi dolup yeni bir tane oluşturmanız gerekir önce geçen gün sayısını seçin.
+- **Yeniden kullanılması önlenecek önceki parola sayısı**: Kullanılamaz önceden kullanılmış parola sayısını girin.
+- **Cihaz (Mobil ve Holographic) boşta kalma durumundan çıktığında parola isteme**: Cihaz boşta durumundan çıkarken parola girmesini zorunlu.
 
 #### <a name="encryption"></a>Şifreleme
 
-- **Bir cihazda veri deposu şifreleme**: Cihazlarınızda veri deposunu şifrelemek için **Gerektir**’i seçin.
+- **Bir cihazdaki veri depolamasının şifrelenmesi**: Seçin **gerektiren** cihazlarınızda veri deposunu şifrelemek için.
 
   > [!NOTE]
   > **Bir cihazdaki veri depolama şifrelemesi** ayarı cihazdaki genel şifreleme varlığını denetler. Daha güçlü bir şifreleme ayarı için **BitLocker’ı gerektir** ayarını kullanmayı göz önünde bulundurabilirsiniz. Bu ayar, TPM düzeyinde BitLocker durumunu doğrulamak için Windows Cihaz Sistem Durumu Kanıtlama özelliğinden yararlanır.
 
 #### <a name="device-security"></a>Cihaz Güvenliği
 
-- **Virüsten koruma**: **Gerektir** olarak ayarlandığında, Windows Güvenlik Merkezi’ne kaydedilmiş Symantec ve Windows Defender gibi virüsten koruma çözümlerini kullanarak uyumluluğu denetleyebilirsiniz. **Yapılandırılmadı** olarak bırakıldığında, Intune cihazda herhangi bir AV çözümünün yüklü olup olmadığını denetlemez.
-- **Casus yazılımdan koruma**: **Gerektir** olarak ayarlandığında, Windows Güvenlik Merkezi’ne kaydedilmiş Symantec ve Windows Defender gibi casus yazılımdan koruma çözümlerini kullanarak uyumluluğu denetleyebilirsiniz. **Yapılandırılmadı** olarak bırakıldığında, Intune cihazda herhangi bir casus yazılımdan koruma çözümünün yüklü olup olmadığını denetlemez.
+- **Virüsten koruma**: Ayarlandığında **gerektiren**, uyumluluk Windows Symantec ve Windows Defender gibi Güvenlik Merkezi ile kaydedilen virüsten koruma çözümleri kullanarak denetleyebilirsiniz. **Yapılandırılmadı** olarak bırakıldığında, Intune cihazda herhangi bir AV çözümünün yüklü olup olmadığını denetlemez.
+- **Casus yazılımdan koruma**: Ayarlandığında **gerektiren**, uyumluluk Windows Symantec ve Windows Defender gibi Güvenlik Merkezi ile kaydedilen casus yazılımdan koruma çözümlerini kullanarak denetleyebilirsiniz. **Yapılandırılmadı** olarak bırakıldığında, Intune cihazda herhangi bir casus yazılımdan koruma çözümünün yüklü olup olmadığını denetlemez.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
-- **Cihazın makine risk puanında veya bunun altında olmasını gerektir**: Tehdit savunması hizmetlerinizden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. İzin verilen en yüksek tehdit düzeyini seçin:
-  - **Temiz**: Cihazda hiçbir tehdit olmamasını gerektirdiği için bu seçenek en güvenlisidir. Herhangi bir tehdit düzeyi algılanırsa cihaz, uyumsuz olarak değerlendirilir.
-  - **Düşük**: Cihaz, yalnızca düşük düzeyde tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
-  - **Orta**: Cihazda mevcut tehditler düşük veya orta düzeydeyse cihaz uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
-  - **Yüksek**: Tüm tehdit düzeylerine izin verdiği için bu seçenek en düşük güvenliğe sahiptir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
+- **Cihaz veya makine risk puanı altında olmasını gerektir**: Savunması alınan risk değerlendirmesini uyumluluk koşulu olarak tehdit Hizmetleri almak için bu ayarı kullanın. İzin verilen en yüksek tehdit düzeyini seçin:
+  - **NET**: Bu seçenek en çok, güvenli, cihazda hiçbir tehdit olmaması gibi. Sahip olan herhangi bir tehdit düzeyi algılanırsa cihaz, uyumsuz olarak değerlendirilir.
+  - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
+  - **Orta**: Cihaz cihazda mevcut tehditler düşük veya Orta düzeydeyse uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
+  - **Yüksek**: Bu seçenek en az güvenli seçenektir ve tüm tehdit düzeylerine izin verir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
   
   Windows Defender ATP’yi (Gelişmiş Tehdit Koruması) tehdit savunma hizmetiniz olarak ayarlamak için bkz. [Koşullu erişimle Windows Defender ATP’yi etkinleştirme](advanced-threat-protection.md).
 
@@ -197,7 +212,7 @@ Windows Holographic for Business, **Windows 10 ve sonrası** platformları kulla
 Microsoft HoloLens’te cihaz şifrelemesini doğrulamak için bkz. [Cihaz şifrelemesini doğrulama](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption).
 
 ## <a name="surface-hub"></a>Surface Hub
-Surface Hub, **Windows 10 ve sonrası** platformları kullanır. Surface Hub’larda uyumluluk ve koşullu erişim desteklenir. Bu özellikleri Surface Hub’larda etkinleştirmek için Intune’da [Windows 10 otomatik kaydını](windows-enroll.md) etkinleştirmenizi (Azure Active Directory (AD) de gerektirir) ve Surface Hub cihazlarını cihaz gruplarıyla hedeflemenizi öneririz. Uyumluluk ve koşullu erişimin işlevsel olması için Surface Hub’ların Azure Active Directory katılımlı olması gerekir.
+Surface Hub, **Windows 10 ve sonrası** platformları kullanır. Surface Hub’larda uyumluluk ve koşullu erişim desteklenir. Bu özellikleri Surface hub'larda etkinleştirmek için öneririz [Windows 10 otomatik kaydı etkinleştirme](windows-enroll.md) ıntune'da (Ayrıca gerektiren Azure Active Directory (Azure AD)) ve Surface Hub cihazlarını cihaz gruplarıyla hedefleyebilirsiniz. Surface hub'ların çalışması için Azure AD'ye katılmış uyumluluk ve koşullu erişim için gereklidir.
 
 Rehber için bkz. [Windows cihazları için kaydı ayarlama](windows-enroll.md).
 
@@ -207,7 +222,7 @@ Rehber için bkz. [Windows cihazları için kaydı ayarlama](windows-enroll.md).
 2. İlkeyi, sonra da **Atamalar**’ı seçin. AD güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
 3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar**’ı seçin. Bu ilkeyi uygulamak istediğiniz kullanıcı gruplarını seçin ve daha sonra ilkeyi dağıtmak için **Kaydet**’i seçin.
 
-İlkeyi uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenir.
+İlkeyi uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için değerlendirilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme](actions-for-noncompliance.md)  
