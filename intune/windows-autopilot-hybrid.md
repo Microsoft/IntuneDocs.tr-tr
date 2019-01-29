@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 171e994be67a24e351b242967c8af934272da356
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380462"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105179"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Karma Azure Active Directory’ye olan katılmış cihazları Intune ve Windows Autopilot kullanarak dağıtma (Önizleme)
 Karma Azure Active Directory alanına katılmış olan cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için aşağıdaki adımları izleyin.
@@ -106,7 +106,7 @@ Bilgisayar oluşturma hakkı verilen kuruluş birimi şunlarla eşleşmelidir:
 
 ## <a name="install-the-intune-connector"></a>Intune Bağlayıcısını yükleme
 
-Active Directory için Intune Bağlayıcısı, Windows Server 2016 çalıştıran ve hem Internet’e hem de Active Directory hizmetinize bağlı olan bir bilgisayara yüklenmelidir. Birden fazla Active Directory etki alanını desteklemek üzere ölçek ve kullanılabilirliği artırmak için ortamınıza birden fazla bağlayıcı yükleyebilirsiniz. Bağlayıcıyı, herhangi bir başka Intune bağlayıcısı çalıştırmayan bir sunucuya yüklemenizi öneririz.
+Active Directory için Intune bağlayıcısını Windows Server 2016 çalıştıran bir bilgisayarda yüklü (veya üzeri), Internet ve Active Directory erişimi gerekir. Birden fazla Active Directory etki alanını desteklemek üzere ölçek ve kullanılabilirliği artırmak için ortamınıza birden fazla bağlayıcı yükleyebilirsiniz. Bağlayıcıyı, herhangi bir başka Intune bağlayıcısı çalıştırmayan bir sunucuya yüklemenizi öneririz.
 
 1. Bir dil paketi yüklü ve açıklandığı gibi yapılandırılmış olduğundan emin olun [Intune Bağlayıcısı (Önizleme) dil gereksinimleri](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
 2. [Intune](https://aka.ms/intuneportal)’da **Cihaz kaydı** > **Windows kaydı** > **Active Directory için Intune Bağlayıcısı (Önizleme)** > **Bağlayıcı ekle**’yi seçin. 
@@ -114,7 +114,7 @@ Active Directory için Intune Bağlayıcısı, Windows Server 2016 çalıştıra
 4. Bağlayıcıyı indirmek için indirilen bağlayıcı kurulum dosyasını açın (ODJConnectorBootstrapper.exe).
 5. Kurulumun sonunda **Yapılandır**’ı seçin.
 6. **Oturum Aç**’ı seçin.
-7. Genel Yönetici veya Intune Yöneticisi rolüne ait kimlik bilgilerini girin.
+7. Genel Yönetici veya Intune Yöneticisi rolüne ait kimlik bilgilerini girin. Kullanıcı hesabı atanmış Intune lisansına sahip olmalıdır.
 8. **Cihaz kaydı** > **Windows kaydı** > **Active Directory için Intune Bağlayıcısı (Önizleme)** seçeneğine giderek bağlantı durumunun **Etkin** olduğunu onaylayın.
 
  > [!NOTE]

@@ -1,11 +1,11 @@
 ---
-title: Store denetim günlükleri Azure İzleyici'yi kullanarak Microsoft Intune - Azure | Microsoft Docs
+title: Rota denetim günlükleri Azure İzleyici'yi kullanarak Microsoft Intune - Azure | Microsoft Docs
 description: Denetim günlükleri ve işlem günlüklerini Intune Azure depolama hesabı, olay hub'ları veya log analytics'e göndermek için tanılama ayarları kullanın. Ne kadar süreyle verileri korumak ve bazı farklı boyutta kiracılar için tahmini maliyetleri görmek istediğinizi seçin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7c801909bfc6df9f3a7e7ae139531630e3f13c4a
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 6323eda16ef54df3cb14f9a8dd4f8349e51d1b01
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55071285"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105162"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Olay hub'ları, depolama için günlük verileri gönderin veya log analytics (Önizleme) Intune'a
 

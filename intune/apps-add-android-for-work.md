@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: ee9e72b727f5634721cf3a45c918aeee44e83309
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: a2f339c9ecf79f3c2e4e87eccd9a5f3b80046aa0
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072482"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105213"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Yönetilen Google Play uygulamaları Intune ile Android kuruluş cihazlarının ekleyin
 
@@ -37,7 +37,36 @@ Ayrıca, kendi iş kolu (LOB) uygulamalarınızı oluşturduysanız, bunları a�
 
 Intune ve Android iş profillerini Azure portalın **Cihaz kaydı** iş yüküyle birlikte çalışacak şekilde yapılandırdığınızdan emin olun. Daha fazla bilgi için bkz. [Android cihazları kaydetme](android-work-profile-enroll.md).
 
-## <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Yönetilen Google Play mağazasından uygulama eşitleme
+>[!NOTE]
+>Microsoft Intune ile çalışırken Microsoft Edge veya Google Chrome tarayıcılarını kullanmanızı öneririz.
+
+## <a name="managed-google-play-app-type"></a>Yönetilen Google Play uygulaması türü 
+**Yönetilen Google Play** uygulama türü, özellikle eklemenize olanak sağlayacaktır [yönetilen Google Play uygulamaları](https://play.google.com/work/search?q=microsoft&c=apps) ıntune. Intune Yöneticisi olarak, artık göz atabilir, arama, onaylama, eşitleme ve onaylı bir yönetilen Google Play uygulamaları Intune içerisindeki atayın.  Yönetilen Google Play konsolunu için ayrı olarak göz atmak artık ihtiyacınız ve yeniden kimlik doğrulamaya zorlayabilir artık yok. 
+
+> [!NOTE]
+> Bir yönetilen Google Play uygulaması Intune ile eşitlemek tercih ediyorsanız, bkz [bir yönetilen Google Play uygulaması Intune ile eşitleyin](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)
+
+## <a name="add-a-managed-google-play-app-using-intune"></a>Intune kullanarak bir yönetilen Google Play uygulaması ekleme
+
+1. [Azure Portal](https://portal.azure.com) oturum açın.
+2. **Tüm hizmetler** > **Intune**’u seçin.  
+    Intune, **İzleme + Yönetim** bölümünde bulunur.
+3. İçinde **Intune** bölmesinde **istemci uygulamaları** > **uygulamaları**.
+5. **Uygulamalar** bölmesinde **Ekle**’yi seçin.
+6. İçinde **uygulama türü** açılır kutusunda, select **yönetilen Google Play**.
+7. Seçin **yönetilen Google Play - uygulamaları onaylamanızı** arama için yönetilen Google Play onaylı uygulamalar için.
+8. Eklemek istediğiniz her bir uygulama üzerinde tıklayın. Ardından, c
+9. Tıklayın **Onayla** yönetilen Google Play uygulaması onaylama tıklatıp **Onayla** uygulama izinlerini kabul etmek için. 
+10. Tıklayın **Tamam** uygulamalarını içerecek şekilde.
+11. Tıklayın **Ekle** üzerinde **uygulama** Bölmesi ile yönetilen Google Play yapılandırmaya eşitlenecek.
+
+## <a name="synchronize-a-managed-google-play-app-with-intune-alternative"></a>Yönetilen Google Play uygulaması (diğer) Intune ile eşitleme
+Intune ile doğrudan Intune kullanarak eklemek yerine bir yönetilen Google Play uygulaması eşitlemek isterseniz, aşağıdaki adımları kullanın.
+
+> [!IMPORTANT]
+> Aşağıda sağlanan bilgiler, yukarıda açıklandığı gibi Intune kullanarak bir yönetilen Google Play uygulaması eklemek için alternatif bir yöntemdir.
+
+### <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Yönetilen Google Play mağazasından uygulama eşitleme
 
 1. [Yönetilen Google Play mağazası](https://play.google.com/work)’na gidin. Intune ve Android kurumsal arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın.
 2. Intune kullanarak atamak istediğiniz uygulamayı mağazada arayın ve seçin.
@@ -58,7 +87,7 @@ Intune ve Android iş profillerini Azure portalın **Cihaz kaydı** iş yüküyl
 
     Uygulama onaylanır ve BT yönetici konsolunuzda görüntülenir. Ardından [Android iş profili uygulamasını Intune ile eşitleyebilirsiniz](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
-## <a name="sync-a-managed-google-play-app-with-intune"></a>Yönetilen Google Play uygulamalarını Intune ile eşitleme
+### <a name="sync-a-managed-google-play-app-with-intune"></a>Yönetilen Google Play uygulamalarını Intune ile eşitleme
 
 Mağazadan bir uygulamayı onayladıysanız ve **İstemci uygulamaları** iş yükünün **Lisanslı uygulamalar** düğümünde göremiyorsanız, aşağıdaki gibi bir anında eşitleme zorlayın:
 
@@ -71,7 +100,9 @@ Mağazadan bir uygulamayı onayladıysanız ve **İstemci uygulamaları** iş y�
 6. **İstemci uygulamaları** iş yükü bölmesinde **Uygulamalar**’ı seçin.  
     Yeni eklenen Yönetilen Google Play uygulaması görüntülenir.
 
-Uygulama, **İstemci uygulamaları** iş yükü bölmesinin **Uygulama lisansları** düğümünde göründüğünde, bunu [diğer herhangi bir uygulamayı atadığınız gibi atayabilirsiniz](/intune-azure/manage-apps/deploy-apps). Uygulamayı yalnızca kullanıcı gruplarına atayabilirsiniz.
+## <a name="assigning-the-managed-google-play-app"></a>Yönetilen Google Play uygulaması atama
+
+Ne zaman uygulama görüntülenir **uygulama lisanslarını** düğümünün **istemci uygulamaları** yapabilecekleriniz iş yükü bölmesinde [yalnızca diğer herhangi bir uygulamayı atadığınız gibi atayabilirsiniz](/intune-azure/manage-apps/deploy-apps) atayarak uygulamaya Kullanıcı grupları.
 
 Uygulama atandıktan sonra hedeflediğiniz cihazlara yüklenir. Cihazın kullanıcısından yüklemeyi onaylaması istenmez.
 

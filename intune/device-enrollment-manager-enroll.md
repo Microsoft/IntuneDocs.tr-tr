@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: be348840df2e1d7864b0c1c57efbb7abcb698392
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031849"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199396"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Bir cihaz kayıt yöneticisi hesabı kullanarak cihazları ıntune'a kaydetme
 
@@ -36,6 +36,7 @@ DEM kullanıcı hesapları ve bir DEM kullanıcı hesabıyla kaydedilen cihazlar
   - DEM kullanıcı hesapları, uygulama yönetimi için kullanıcı başına Apple Kimliği gereksinimlerinden dolayı Apple Volume Purchase Program (VPP) uygulamalarını Apple VPP lisanslarıyla kullanamaz.
   - Cihazlar, Apple VPP cihaz lisansına sahipse VPP uygulamalarını yükleyebilir.
   - Cihazların Windows 10 1803 + hariç olmak üzere koşullu erişim engellenir
+  - Bir DEM hesabıyla kaydedilen her bir cihaz kendi Intune cihaz lisansı olması gerekir.
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisi ekleme

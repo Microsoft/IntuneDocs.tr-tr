@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387093"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146919"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Intune'u ayarlama Android kayıt tam (Önizleme) ile yönetilen cihazlar
 
@@ -38,7 +38,7 @@ Bir Intune olmalıdır Android tam olarak yönetmek için tek başına Kiracı y
 
 Cihaz bir Android cihazı tam olarak yönetilen olarak yönetilecek şu gereksinimleri karşılamanız gerekir:
 
-- Android işletim sistemi sürüm 6.0 ve üstü.
+- Android işletim sistemi sürüm 5.1 ve üzeri.
 - Bir derleme Google Mobile Services'ı (GMS) bağlantısı olan Android cihazları çalıştırmanız gerekir. Cihazlarda GMS kullanılabilir olmalı ve cihazlar GMS’ye bağlanabilmelidir.
 
 Yukarıdaki gereksinimleri karşılandığında cihaz üreticisi/OEM konusunda bir kısıtlama yoktur.

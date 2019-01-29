@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032104"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105196"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durum sayfası ayarlama
  
@@ -32,7 +32,7 @@ Intune kullanarak cihaz kurulumu sırasında cihazda kayıt durumu sayfası yük
 - Yükleme tamamlanana kadar kullanımı engelleme.
 - Cihaz kurulumu başarısız olursa kullanıcının ne yapabileceğini belirtme.
 
-Aynı kullanıcı veya cihazdaki farklı profil atamaları arasında oluşabilecek çakışmaların önüne geçmek amacıyla her bir profil için öncelik sırasını da ayarlayabilirsiniz.
+Ayrıca, aynı kullanıcı veya cihaz için çakışan profili atamaları için hesap her bir profil için öncelik sırasını ayarlayabilirsiniz.
 
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Tüm kullanıcılar için varsayılan kayıt durumu sayfasını etkinleştirme

@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0366a4394f5046d72c7cf01d2848974d225597a6
-ms.sourcegitcommit: d757c907af6c3c1b20823ffa4fda3acbaa8ecd9f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54444566"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146902"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Adanmış Android cihazları kaydetme veya tam olarak yönetilen cihazlar (Önizleme)
 
 Ayarladıktan sonra [Android adanmış cihazlar](android-kiosk-enroll.md) veya [tam olarak yönetilen cihazlar](android-fully-managed-enroll.md) , Intune'da bu cihazları kaydedebilirsiniz. Android cihazları kaydetme biçiminiz, işletim sisteminize bağlıdır.
 
-| Kayıt yöntemi | Adanmış cihazlar için en düşük Android işletim sistemi sürümü | Tam olarak yönetilen cihazlar için en düşük Android işletim sistemi sürümü |
-| ----- | ----- | ----- |
-| Yakın Alan İletişimi | 5.1 | 6.0 |
-| Belirteç girişi | 6.0 | 6.0 |
-| QR kodu | 7.0 | 7.0 |
-| Zero Touch  | 8.0\* | 8.0\* |
+| Kayıt yöntemi | Ayrılmış ve tamamen yönetilen cihazlar için en düşük Android işletim sistemi sürümü |
+| ----- | ----- |
+| Yakın Alan İletişimi | 5.1 |
+| Belirteç girişi | 6.0 |
+| QR kodu | 7.0 |
+| Zero Touch  | 8.0\* |
 
 \* Katılımcı üreticileri üzerinde.
 
