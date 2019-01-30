@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203646"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230129"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
-Bu makalede, listeler ve Windows 10 ve daha yeni cihazlarda denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları kullanın izin ver veya özellikleri devre dışı bırakabilir, parola kuralları ayarla, kilit ekranı özelleştirmek için Windows Defender'ı ve daha fazlasını kullanın.
+Bu makalede, listeler ve Windows 10 ve daha yeni cihazlarda denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları kullanın izin ver veya özellikleri devre dı810şı bırakabilir, parola kuralları ayarla, kilit ekranı özelleştirmek için Windows Defender'ı ve daha fazlasını kullanın.
 
 Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan veya Windows 10 cihazlarına dağıtılabilir.
 
@@ -420,7 +420,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz.
 
 - **Başlangıç menüsü düzeni**: Masaüstü cihazlarda Başlat menüsünü özelleştirmek için listelenen uygulamalar, sipariş dahil olmak üzere özelleştirmelerinizi ve daha fazlasını içeren bir XML dosyasını karşıya yükleyebilirsiniz. Kullanıcılar, girdiğiniz Başlat menüsü düzenini değiştiremez.
 - **Başlat menüsünde Web siteleri için kutucuklar sabitleme**: Görüntüleri Masaüstü cihazları için Windows Başlat menüsündeki bağlantılar olarak gösterilen Microsoft Edge içeri aktarın.
-- **Uygulamaları görev çubuğundan Kaldır**: Seçin **blok** kullanıcı uygulamaları Başlat menüsünden kaldırmasını durdurmak için.
+- **Uygulamaları görev çubuğundan Kaldır**: Seçin **blok** kullanıcı görev çubuğundan uygulamaları kaldırmasını durdurmak için.
 - **Hızlı Kullanıcı Geçişi**: Seçin **blok** aynı anda kapatmadan oturum açmış kullanıcılar arasında geçiş yapma önlemek için.
 - **En çok kullanılan uygulamalar**: Seçin **blok** gösteren Başlat menüsünde en çok kullanılan uygulamalardan gizlemek için. Bu ayrıca Ayarlar uygulamasında aynı ada sahip iki durumlu ayarı da devre dışı bırakır.
 - **Uygulamalar'en son eklenen**: Seçin **blok** gösteren Başlangıç menüsündeki son eklenen uygulamaları Gizle için. Bu ayrıca Ayarlar uygulamasında aynı ada sahip iki durumlu ayarı da devre dışı bırakır.
@@ -503,8 +503,8 @@ Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz.
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender Virüsten Koruma Dışlamaları
 
 - **Dosyalar ve taramaların ve gerçek zamanlı korumanın dışında tutulacak klasörler**: Dışlama listesinde **C:\Yol** veya **%ProgramFiles%\Yol\dosyaadı.exe** gibi bir veya birden çok dosya ve klasör ekler. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
-- **Dosya uzantıları taramaların ve gerçek zamanlı korumanın dışında tutulacak**: Dışlama listesine jpg veya **txt** gibi bir veya birden çok dosya uzantısı ekleyin. Bu uzantıya sahip dosyaların hiçbiri gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
-- **Taramaların ve gerçek zamanlı korumanın dışında bırakılacak işlemler**: Dışlama listesine .exe, **.com** veya **.scr** türünde bir veya birden çok işlem ekleyin. Bu işlemler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
+- **Dosya uzantıları taramaların ve gerçek zamanlı korumanın dışında tutulacak**: Dışlama listesine **jpg** veya **txt** gibi bir veya birden çok dosya uzantısı ekleyin. Bu uzantıya sahip dosyaların hiçbiri gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
+- **Taramaların ve gerçek zamanlı korumanın dışında bırakılacak işlemler**: Dışlama listesine **.exe**, **.com** veya **.scr** türünde bir veya birden çok işlem ekleyin. Bu işlemler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
