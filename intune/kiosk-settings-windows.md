@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 31cfa617e0ca5d8d0848d1ecb781fda701589ccd
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199430"
+ms.locfileid: "55229959"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10 ve üzeri cihaz ayarları ıntune'da bilgi noktası olarak çalıştırmak için
 
@@ -101,7 +101,7 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
 
     - **Uygulama adı**: Gerekli. Uygulama için bir ad girin.
     - **Yerel yol**: Gerekli. Yürütülebilir dosyanın yolunu girin, örneğin `C:\Program Files (x86)\Microsoft VS Code\Code.exe` veya `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **Uygulama kullanıcı modeli kimliği (AUMID'sini)**: Win32 uygulamasının uygulama kullanıcı modeli kimliğini (AUMID) girin. Bu ayar, masaüstündeki kutucuk başlangıç düzenini belirler. Bu kimliği almak için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
+    - **Uygulama kullanıcı modeli kimliği (AUMID'sini)**: Win32 uygulamasının uygulama kullanıcı modeli kimliğini (AUMID) girin. Bu ayar, masaüstündeki kutucuk başlangıç düzenini belirler. Bu kimliği almak için bkz: [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
     - **Döşeme boyutu**: Gerekli. Küçük, Orta, Geniş veya Büyük uygulama kutucuk boyutu seçin.
   
   - **Tarafından AUMID'sini ekleme**: Not Defteri veya hesap makinesi gibi gelen Windows uygulama eklemek için bu seçeneği kullanın. Aşağıdaki özellikleri girin: 

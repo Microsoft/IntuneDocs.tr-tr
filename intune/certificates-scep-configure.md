@@ -2,24 +2,24 @@
 title: Microsoft Intune - Azure ile SCEP sertifikalarını kullanma | Microsoft Docs
 description: Microsoft Intune’da SCEP sertifikalarını kullanmak için şirket içi AD etki alanınızı yapılandırın, bir sertifika yetkilisi oluşturun, NDES sunucusunu ayarlayın ve Intune Sertifika Bağlayıcısı’nı yükleyin. Daha sonra bir SCEP sertifika profili oluşturun ve ardından bu profili gruplara atayın. Ayrıca, farklı olay kimlikleriyle bunların açıklamalarını ve Intune bağlayıcı hizmeti için tanılama kodlarını görün.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.openlocfilehash: f8b4d1aded0198dfc3dcccf6bdeda30bb54ee651
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597384"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230163"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -67,7 +67,7 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 |**Sertifika Şablonu**|Bu şablonu sertifika veren CA'nız üzerinde yapılandırın.|
 |**İstemci kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu sertifikayı NDES Sunucusu'na yüklersiniz.|
 |**Sunucu kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu SSL sertifikasını NDES Sunucusu'ndaki IIS'de yüklersiniz ve bağlarsınız. Sertifikada istemci ve sunucu kimlik doğrulaması anahtar kullanımları ayarlıysa (**Gelişmiş Anahtar Kullanımları**) aynı sertifikayı kullanabilirsiniz.|
-|**Güvenilen Kök CA sertifika**|Bu sertifikayı, kök CA’sından veya kök CA’sına güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarırsınız. Ardından, kullanıcılar, cihazlar veya her iki kullanarak güvenilen CA sertifika profili için atayın.<br /><b>Not:<b />bir SCEP sertifika profili atandığında, aynı kullanıcı veya cihaz grubuna SCEP sertifika profilinde başvurulan güvenilen kök sertifika profilini atadığınızdan emin olun.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
+|**Güvenilen Kök CA sertifika**|Bu sertifikayı, kök CA’sından veya kök CA’sına güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarırsınız. Ardından, kullanıcılar, cihazlar veya her iki kullanarak güvenilen CA sertifika profili atayın.<br /><b>Not:<b />bir SCEP sertifika profili atandığında, aynı kullanıcı veya cihaz grubuna SCEP sertifika profilinde başvurulan güvenilen kök sertifika profilini atadığınızdan emin olun.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
 
 ### <a name="accounts"></a>Hesaplar
 
@@ -223,7 +223,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Konum                        |      Değer      | Tür  |      Veriler       |
+   |                        Konum                        |      Değer      | Type  |      Veriler       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |
@@ -322,7 +322,7 @@ Bu adımda şunları yapacaksınız:
     > [!TIP]
     > Sertifika Bağlayıcısı Kullanıcı Arabirimi'ni başlatmadan sihirbazı kapatırsanız, aşağıdaki komutu çalıştırarak yeniden açabilirsiniz:
     >
-    > < install_Path > \NDESConnectorUI\NDESConnectorUI.exe
+    > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
 
 7. **Sertifika Bağlayıcısı** kullanıcı arabiriminde:
 
@@ -382,15 +382,15 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         - **Seri numarası**
         - **Özel**: Bu seçeneği belirlediğinizde bir **özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim iki değişkeni destekler: **Ortak ad (CN)** ve **e-posta (E)**. **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
 
-            - **CN = {{UserName}}**: Kullanıcının kullanıcı asıl adı gibi janedoe@contoso.com
-            - **CN = {{aad_devıce_ıd}}**: Azure Active Directory (AD) bir cihaz kaydettiğinizde atanan bir kimliği. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
+            - **CN={{UserName}}**: Kullanıcının kullanıcı asıl adı gibi janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}**: Azure Active Directory (AD) bir cihaz kaydettiğinizde atanan bir kimliği. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
             - **CN = {{SERIALNUMBER}}**: Genellikle bir cihazı tanımlamak için üretici tarafından kullanılan benzersiz seri numarası (SN)
-            - **CN = {{Imeınumber}}**: Cep telefonunu tanımlamak için kullanılan uluslararası mobil ekipman kimliği (IMEI) benzersiz numarası
-            - **CN = {{OnPrem_Distinguished_Name}}**: Virgül ile ayrılmış bir göreli ayırt edici ad dizisi `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN={{IMEINumber}}**: Cep telefonunu tanımlamak için kullanılan uluslararası mobil ekipman kimliği (IMEI) benzersiz numarası
+            - **CN={{OnPrem_Distinguished_Name}}**: Virgül ile ayrılmış bir göreli ayırt edici ad dizisi `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
-            - **CN = {{onPremisesSamAccountName}}**: Yöneticiler, Azure Active Directory'den samAccountName özniteliğini eşitlenebilmesi Azure AD kullanarak AD connect adlı bir öznitelikte `onPremisesSamAccountName`. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
+            - **CN={{onPremisesSamAccountName}}**: Yöneticiler, Azure Active Directory'den samAccountName özniteliğini eşitlenebilmesi Azure AD kullanarak AD connect adlı bir öznitelikte `onPremisesSamAccountName`. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
 
                 `{{onPremisesSamAccountName}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onPremisesSamAccountName` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
@@ -560,5 +560,6 @@ Sürüm 6.1806.x.x’ten itibaren Intune Bağlayıcısı Hizmeti, olayları **Ol
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [PKCS sertifikalarını kullanma](certficates-pfx-configure.md) veya [Symantec PKI yöneticisi web hizmetinden PKCS sertifikaları verme](certificates-symantec-configure.md)
-- [Intune’da SCEP kullanmak için üçüncü taraf CA’sı ekleme](certificate-authority-add-scep-overview.md)
+- [PKCS sertifikalarını kullanmak](certficates-pfx-configure.md), veya [Symantec PKI manager web hizmeti PKCS sertifikaları verme](certificates-symantec-configure.md)
+- [Intune ile SCEP kullanılacak bir 3. taraf CA Ekle](certificate-authority-add-scep-overview.md)
+- Ek Yardım için kullanmak [sorun giderme SCEP sertifika profili dağıtımı Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) Kılavuzu.

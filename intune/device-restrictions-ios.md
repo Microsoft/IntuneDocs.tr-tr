@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune; seodec18
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 94e09f413ea0e6b3811c7c19a93d188ac15ee04c
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380496"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230095"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarları
 
@@ -322,12 +322,16 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 | com.apple.compass           | Pusula      | Apple     |
 | com.apple.MobileAddressBook | Kişiler     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | Dosyalar        | Apple     |
 | com.apple.mobileme.fmf1     | Arkadaşları Bul | Apple     |
 | com.apple.mobileme.fmip1    | iPhone’u Bul  | Apple     |
 | com.apple.gamecenter        | Oyun Merkezi  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | Durum       | Apple     |
+| com.apple.Home              | Ana Sayfası         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
 | com.apple.MobileStore       | iTunes Store | Apple     |
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
@@ -345,8 +349,10 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 | com.apple.reminders         | Anımsatıcılar    | Apple     |
 | com.apple.MobileSafari      | Safari       | Apple     |
 | com.apple.Preferences       | Ayarlar     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Borsa       | Apple     |
 | com.apple.tips              | İpuçları         | Apple     |
+| com.apple.TV                | TV           | Apple     |
 | com.apple.videos            | Videolar       | Apple     |
 | com.apple.VoiceMemos        | Sesli Notlar   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |

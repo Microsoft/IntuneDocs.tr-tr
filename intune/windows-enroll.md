@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: bab1656ec141b26cc3e9cb4195da7c1c24e401a1
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626056"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230180"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
@@ -82,6 +82,12 @@ Contoso DNS yöneticisinin aşağıdaki CNAME'leri oluşturması gerekir:
 `EnterpriseEnrollment-s.manage.microsoft.com` – E-postanın etki alanı adından etki alanını tanıma ile Intune hizmetine yeniden yönlendirmeyi destekler
 
 DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yayılıncaya kadar DNS değişikliğini Intune'da doğrulayamazsınız.
+
+## <a name="additional-endpoints-are-supported-but-not-recommended"></a>Ek uç noktalar desteklenir, ancak önerilmez
+EnterpriseEnrollment-s.manage.microsoft.com, kayıt için tercih edilen FQDN'yi olmakla birlikte, müşteriler tarafından daha önce kullanılmış olan ve desteklenen iki diğer uç nokta vardır. Otomatik bulma sunucunun, ancak kullanıcı için hedef üzerinde bir onay iletisi Tamam dokunması olumsuz etkileyeceğinden (olmadan -s) adresinden EnterpriseEnrollment.manage.microsoft.com ve manage.microsoft.com hem de çalışır. EnterpriseEnrollment-s.manage.microsoft.com adresine işaret ederseniz, kullanıcının bu önerilen yapılandırma, bu nedenle ek doğrulama adımı yapmanız gerekmeyecek
+
+## <a name="alternate-methods-of-redirection-are-not-supported"></a>Yeniden yönlendirme alternatif yöntemler desteklenmez
+CNAME yapılandırma dışında bir yöntem kullanılarak desteklenmiyor. Örneğin, için iki enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc yönlendirmek için bir proxy sunucusu kullanarak veya manage.microsoft.com/EnrollmentServer/Discovery.svc desteklenmiyor.
 
 **2. adım: CNAME'i doğrulama** (isteğe bağlı)<br>
 1. [Azure portalında Intune](https://aka.ms/intuneportal)'da **Cihaz kaydı** > **Windows kaydı** > **CNAME Doğrulaması**'nı seçin.

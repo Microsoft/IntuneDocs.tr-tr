@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d78adf8e7d6d2ce05951171e6248dcc8c389945d
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: afc5faff7ea06bca07c06aadb887aa199739c6c0
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55071282"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229934"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune'da Windows 10 Güvenlik taban çizgisi oluşturma
 
@@ -30,7 +30,7 @@ Bu özellik şu platformlarda geçerlidir:
 - Windows 10 sürüm 1809 ve üzeri
 
 > [!NOTE]
-> Önizleme'de güvenlik temellerini olsa da Microsoft profilleri bir üretim ortamında, temel kullanarak, Önizleme boyunca değişebilir önerilir değil.
+> Önizleme'de güvenlik temellerini olsa da Microsoft profilleri bir üretim ortamında, temel kullanarak, Önizleme boyunca değişebilir önerilir değil. Güvenlik temellerini genel kullanıma sunulmuştur, var olan profilleri için desteklenen en son profilleri dönüştürmez.
 
 Güvenlik temellerini kullanma amacıyla bir uçtan uca güvenli iş akışını Microsoft 365 ile çalışırken sağlamaktır. Bazı avantajları şunlardır:
 

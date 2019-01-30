@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203527"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229993"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Cihaz profillerini kullanarak Intune cihazlarınızda özellikleri ayarlar uygulanır
 
@@ -123,7 +123,7 @@ Bu özellik şunları destekler:
 - Android Kurumsal
 - iOS
 - Mac OS
-- Windows 10
+- Windows 10 ve üzeri
 - Windows 10 ekibi
 
 ## <a name="delivery-optimization"></a>Teslim iyileştirme
@@ -174,7 +174,7 @@ Bu özellik şunları destekler:
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 ve üzeri
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ Bu özellik şunları destekler:
 - Mac OS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 ve üzeri
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -201,6 +201,7 @@ Bu özellik şunları destekler:
 - iOS
 - Mac OS
 - Windows 8.1 (yalnızca içeri aktarma)
+- Windows 10 ve üzeri
 
 ## <a name="esim-cellular---public-preview"></a>eSIM hücresel - Genel önizleme
 
@@ -241,7 +242,7 @@ Bu özellik şunları destekler:
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 ve üzeri
 
 ## <a name="windows-information-protection-profile"></a>Windows Bilgi Koruması profili
 
@@ -251,7 +252,7 @@ Bu özellik şunları destekler:
 
 - Windows 10 ve üzeri
 
-## <a name="shared-multi-user-device"></a>Paylaşılan birden çok kullanıcı cihaz
+## <a name="shared-multi-user-device"></a>Paylaşılan çok kullanıcılı cihaz
 
 [Windows 10](shared-user-device-settings-windows.md) ve [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) birden çok kullanıcıyla olarak da bilinen paylaşılan cihazlar veya paylaşılan bilgisayarlar cihazları yönetmek için ayarlar içerir. Kullanıcı cihazı açtığında, kullanıcı uyku seçenekleri değiştirebilir veya cihazdaki dosyaların kaydedin, seçin. Başka bir örnekte, etkin olmayan kimlik alanı kaydetmek için Windows HoloLens cihazlardan silen bir ilke oluşturabilirsiniz.
 

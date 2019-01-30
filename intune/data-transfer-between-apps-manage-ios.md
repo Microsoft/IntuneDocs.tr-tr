@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58d0cbbd503697575cd63e66fff80bd91e742e5e
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831463"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229908"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 
@@ -37,7 +37,7 @@ iOS cihazları için **Yönetimde açma** özelliği, dosya aktarımlarını yal
 
 -   **Çalışana ait herhangi bir MDM çözümü tarafından yönetilmeyen cihazlar:** Uygulama koruma İlkesi ayarlarını ayarlayabilirsiniz **uygulamanın yalnızca ilkeyle yönetilen uygulamalara veri aktarmasına izin ver**. *Açma* davranışı ilke ile yönetilen bir uygulamada yalnızca diğer ilkeyle yönetilen uygulamalara paylaşmak için seçenekleri sunar. Bir kullanıcı, ilkeyle korunan bir dosyayı yerel posta uygulaması onedrive'dan bir ek olarak göndermeye çalışırsa, dosya okunamaz durumda.
 
--   **Intune tarafından yönetilen cihazlar:** Intune'a kayıtlı cihazlar için uygulama koruma ilkelerine sahip uygulamalar arasında veri aktarımı ve Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları otomatik olarak verilir. Diğer uygulamalara veri aktarımına izin nasıl istediğinizi belirtmek için etkinleştirin **uygulamanın diğer uygulamalara veri aktarmasına izin ver** paylaşımı, tercih edilen düzeyini seçin. Bir uygulamanın diğer uygulamalardan veri almasına izin vermek nasıl istediğinizi belirtmek için etkinleştirin **uygulamanın diğer uygulamalardan veri almasına izin ver** veri almak, tercih edilen düzeyini seçin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz. Uygulama verilerinin alınması ve paylaşılması hakkında daha fazla bilgi için bkz. [Verileri yeniden konumlandırma ayarları](app-protection-policy-settings-ios.md#data-protection-settings).   
+-   **Intune tarafından yönetilen cihazlar:** Intune'a kayıtlı cihazlar için uygulama koruma ilkelerine sahip uygulamalar arasında veri aktarımı ve Intune aracılığıyla dağıtılan diğer yönetilen iOS uygulamaları otomatik olarak verilir. Diğer uygulamalara veri aktarımına izin nasıl istediğinizi belirtmek için etkinleştirin **uygulamanın diğer uygulamalara veri aktarmasına izin ver** paylaşımı, tercih edilen düzeyini seçin. Bir uygulamanın diğer uygulamalardan veri almasına izin vermek nasıl istediğinizi belirtmek için etkinleştirin **uygulamanın diğer uygulamalardan veri almasına izin ver** veri almak, tercih edilen düzeyini seçin. **Yönetimde açma** özelliğini kullanarak Intune aracılığıyla dağıtılmış uygulamalar arasındaki veri aktarımını denetleyebilirsiniz. Uygulama verilerinin alınması ve paylaşılması hakkında daha fazla bilgi için bkz. [Verileri yeniden konumlandırma ayarları](app-protection-policy-settings-ios.md#data-protection).   
 
 -   **Bir üçüncü taraf MDM çözümü tarafından yönetilen cihazlar:** İOS kullanarak veri aktarımını yalnızca yönetilen uygulamalarla kısıtlayabilirsiniz **yönetimde açma** özelliği.
 Bir üçüncü taraf MDM çözümünüzü kullanarak dağıttığınız uygulamalar da Intune uygulama koruma ilkeleri ile ilişkili olduğundan emin olmak için Kullanıcı UPN ayarını aşağıdaki bölümde anlatılan şekilde yapılandırın [Kullanıcı UPN ayarını yapılandırma](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Uygulamalar Kullanıcı UPN ayarı ile dağıttığınızda, kullanıcı iş hesabını kullanarak oturum açtığında, uygulama koruma ilkeleri uygulamaya uygulanır.
