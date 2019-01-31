@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba60df2dcec51e1c45e6a84a8fc9831937f70aef
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 25b6ca031b0c31f3ef517c9d2886853ec41c31da
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190091"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303523"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune - Genel önizleme’de eSIM hücresel profilleri yapılandırma
 
@@ -35,7 +35,7 @@ Intune’da cep telefonu operatörünüz tarafından sağlanan tek kullanımlık
 
 Intune kullanarak cihazlarınıza eSIM dağıtmak için aşağıdakiler gereklidir:
 
-- Surface LTE gibi **eSIM özellikli cihazlar** için: Bkz.[Cihazınız eSIM’i destekliyorsa](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). İsterseniz, [bilinen bazı eSIM özellikli cihazlar](#esim-capable-devices) (bu makalede) listesine de bakabilirsiniz.
+- **Esım özellikli cihazlarda**, Surface LTE gibi: Bkz: [cihazınız Esım destekliyorsa](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). İsterseniz, [bilinen bazı eSIM özellikli cihazlar](#esim-capable-devices) (bu makalede) listesine de bakabilirsiniz.
 - Intune'da kayıtlı ve MDM tarafından yönetilen **Windows 10 Fall Creators Update bilgisayarı** (1709 veya üzeri)
 - Cep telefonu operatörünüz tarafından sağlanan **etkinleştirme kodları**. Bu tek kullanımlık etkinleştirme kodları Intune’a eklenir ve eSIM özellikli cihazlarınıza dağıtılır. eSIM etkinleştirme kodları almak için cep telefonu operatörünüze başvurun.
 
@@ -65,12 +65,15 @@ Aşağıdaki cihazların eSIM özellikli olduğu bildirilmiştir ve bugün satı
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
-## <a name="step-1-add-cellular-activation-codes"></a>1. Adım: Hücresel etkinleştirme kodlarını ekleme
+## <a name="step-1-add-cellular-activation-codes"></a>1. adım: Cep telefonu etkinleştirme kodları Ekle
 
 Hücresel etkinleştirme kodları cep telefonu operatörünüz tarafından virgülle ayrılmış bir dosyada (csv) sağlanır. Bu dosyayı aldığınızda aşağıdaki adımları izleyerek Intune’a ekleyin:
 
-1. [Azure portalı](https://portal.azure.com/)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com/) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihaz yapılandırması** > **eSIM hücresel profilleri** > **Ekle**’yi seçin.
 4. Etkinleştirme kodlarınızı içeren CSV dosyasını seçin.
@@ -100,7 +103,7 @@ Etkinleştirme kodlarını içeren csv dosyasıyla çalışırken cep telefonu o
 
     ![Hücresel abonelik havuzu, etkinleştirme kodu örneği csv dosya adını alır](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 
-## <a name="step-2-create-an-azure-ad-device-group"></a>2. Adım: Azure AD cihazı grubunu oluşturma
+## <a name="step-2-create-an-azure-ad-device-group"></a>2. adım: Azure AD cihaz grubu oluşturma
 
 eSIM özellikli cihazları içeren bir Cihaz grubu oluşturun. [Grup ekleme](groups-add.md) altında adımlar listelenir.
 
@@ -108,7 +111,7 @@ eSIM özellikli cihazları içeren bir Cihaz grubu oluşturun. [Grup ekleme](gro
 > - Yalnızca cihazlar hedeflenir: kullanıcılar hedeflenmez.
 > - eSIM cihazlarınızı içeren bir statik Azure AD cihazı grubu oluşturmanızı öneririz. Grup kullanarak, yalnızca eSIM cihazlarını hedefleyebilirsiniz.
 
-## <a name="step-3-assign-esim-activation-codes-to-devices"></a>3. Adım: Cihazlara eSIM etkinleştirme kodları atama
+## <a name="step-3-assign-esim-activation-codes-to-devices"></a>3. adım: Esım etkinleştirme kodları cihazlara atama
 
 eSIM cihazlarınızı içeren Azure AD grubuna profili atayın.
 
@@ -124,13 +127,13 @@ eSIM cihazlarınızı içeren Azure AD grubuna profili atayın.
 
 eSIM etkinleştirme kodları tek bir kez kullanılır. Intune bir cihaza etkinleştirme kodu yüklerse eSIM modülü hücresel profili indirmek için cep telefonu operatörüyle iletişim kurar. Bu iletişimle, cihazı cep telefonu operatörü ağına kaydetme işlemi tamamlanır.
 
-## <a name="step-4-monitor-deployment"></a>4. Adım: Dağıtımı izleme
+## <a name="step-4-monitor-deployment"></a>4. adım: İzleyici dağıtım
 
 #### <a name="review-the-deployment-status"></a>Dağıtım durumunu gözden geçirme
 
 Profili atadıktan sonra abonelik havuzunun dağıtım durumunu izleyebilirsiniz.
 
-1. [Azure portalı](https://portal.azure.com/)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com/) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihaz yapılandırma** > **eSIM hücresel profilleri**’ni seçin. Mevcut tüm eSIM hücresel abonelik havuzlarınız listelenir.
 4. Abonelik seçin ve **Dağıtım Durumu**’nu gözden geçirin.
@@ -145,10 +148,10 @@ Cihaz profilinizi oluşturduktan sonra, Intune grafikler sağlar. Bu grafikler p
 
     Intune, cihazları hedefleyen etkinleştirme kodu için teslim ve yükleme durumunu görüntüler.
 
-    - **Cihaz eşitlenmedi**: Hedeflenen cihaz eSIM dağıtım ilkesinin oluşturulmasından bu yana Intune'la iletişim kurmadı
-    - **Etkinleştirme bekliyor**: Intune'un cihaza etkin bir şekilde etkinleştirme kodunu kurması sırasında geçici bir durum
-    - **Etkin**: Etkinleştirme kodu yüklemesi başarılı
-    - **Etkinleştirme başarısız**: Etkinleştirme kodu yüklemesi başarısız oldu. Sorun giderme kılavuzuna bakın.
+    - **Cihaz eşitlenmedi**: Esım dağıtım ilkesi oluşturulduktan sonra hedeflenen Intune bağlantı kurmadı.
+    - **Etkinleştirme bekliyor**: Intune etkin bir cihazda etkinleştirme kodu yüklenirken geçici bir durum
+    - **Etkin**: Etkinleştirme kodu yükleme başarılı
+    - **Etkinleştirme başarısız**: Etkinleştirme kodu yüklemesi başarısız oldu: yol sorunlarını giderme konusuna bakın.
 
 #### <a name="view-the-detailed-device-status"></a>Ayrıntılı cihaz durumunu görüntüleme
 
@@ -157,12 +160,12 @@ Cihaz Durumu'nda görebildiğiniz cihazların ayrıntılı bir listesini izleyeb
 1. **Cihaz yapılandırma** > **eSIM hücresel profilleri**'ni ve mevcut aboneliği seçin.
 2. **Cihaz Durumu**’nu seçin. Intune cihaz hakkında ek ayrıntılar gösterir:
 
-  - **Cihaz Adı**: Hedeflenen cihazın adı
-  - **Kullanıcı**: Kaydedilen cihazın kullanıcısı
-  - **ICCID**: Cihaza yüklenen etkinleştirme kodu içinde cep telefonu operatörü tarafından sağlanan benzersiz kod
-  - **Etkinleştirme Durumu**: Cihazdaki etkinleştirme kodunun Intune teslim ve yükleme durumu
-  - **Şebeke durumu**: Cep telefonu operatörü tarafından sağlanan durum. Sorunları gidermek için cep telefonu operatörüyle iletişim kurun.
-  - **Son İade Etme**: Cihazın Intune'la son iletişim kurma tarihi
+  - **Cihaz adı**: Hedeflenen cihaz adı
+  - **Kullanıcı**: Kaydedilen cihaz kullanıcısı
+  - **ICCID**: Cihazda yüklü etkinleştirme kodu içinde mobile tarafından sağlanan benzersiz kodu çalıştırma
+  - **Etkinleştirme durumu**: Etkinleştirme kodu cihazın Intune teslim ve yükleme durumu
+  - **Cep telefonu durumu**: Cep telefonu operatörü tarafından sağlanan durumu. Sorunları gidermek için cep telefonu operatörüyle iletişim kurun.
+  - **Son iade**: Cihaz Intune ile son iletilen tarih
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Gerçek cihazda eSIM profil ayrıntılarını izleme
 
@@ -190,8 +193,8 @@ Ayrıca cihaz [kullanımdan kaldırıldığında](devices-wipe.md#retire) veya c
 - CSV dosyanızın düzgün biçimlendirildiğinden emin olun. Dosyanın yinelenen kodlar, birden çok cep telefonu operatörü veya farklı mobil İnternet tarifeleri içermediğini onaylayın. Unutmayın; cep telefonu operatörü ve mobil İnternet tarifesi için her dosya benzersiz olmalıdır.
 - Yalnızca hedeflenen eSIM cihazlarını içeren statik bir cihaz Azure AD grubu oluşturun.
 - Dağıtım durumunda bir sorun olursa aşağıdakileri denetleyin:
-  - **Dosya biçimi doğru değil**: Dosyanızı düzgün biçimlendirme hakkında bilgi için bkz. **1. Adım: Hücresel etkinleştirme kodları ekleme** (bu makalede).
-  - **Hücresel etkinleştirme hatası, cep telefonu operatörüne başvurun**: Etkinleştirme kodu kendi ağı içinde etkinleştirilemiyor olabilir. Belki de profil indirme ve hücresel etkinleştirme başarısız olmuştur.
+  - **Dosya biçimi doğru değil**: Bkz: **1. adım: Cep telefonu etkinleştirme kodları Ekle** (Bu makaledeki) dosyanızı düzgün bir şekilde biçimlendirmek nasıl.
+  - **Cep telefonu etkinleştirme hatası, kişi cep telefonu operatörü**: Etkinleştirme kodu kendi ağları içinde etkin değil. Belki de profil indirme ve hücresel etkinleştirme başarısız olmuştur.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Cihaz profillerini yapılandırma](device-profiles.md)

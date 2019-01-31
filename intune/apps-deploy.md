@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: 9258bf1847e83087404967c0ded50481da3a8dff
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734281"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290749"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -51,7 +51,7 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 >
 > Intune'da kayıtlı olmayan cihazlarda uygulama güncelleştirmeleri almak için, cihaz kullanıcıları kendi kuruluşlarının Şirket Portalı'na gitmeli ve uygulama güncelleştirmelerini el ile yüklemelidir.
 
-## <a name="to-assign-an-app"></a>Uygulama atamak için
+## <a name="assign-an-app"></a>Bir uygulamayı atar
 
 1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
@@ -62,7 +62,7 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 7. Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
 8. Belirli bir uygulama için **atama türü** seçin:
    - **Kayıtlı cihazlar için kullanılabilir**: Uygulama, uygulamayı Şirket portalı uygulamasından veya Web sitesinden yükleyebilir kullanıcı gruplarına atayın.
-   - **Kayıtlı veya Kayıtsız kullanılabilir**: Bu uygulama, cihazları Intune'a kayıtlı olmayan kullanıcı gruplarına atayın. Yönetilen Google Play’deki uygulamalar bu seçeneği desteklemez. Kullanıcılar, bir Intune lisansı atanmalıdır bkz [Intune lisanslarını](licenses.md).
+   - **Kayıtlı veya Kayıtsız kullanılabilir**: Bu uygulama, cihazları Intune'a kayıtlı olmayan kullanıcı gruplarına atayın. Kullanıcılar, bir Intune lisansı atanmalıdır bkz [Intune lisanslarını](licenses.md).
    - **Gerekli**: Uygulama seçilen gruplardaki cihazlara yüklenir. Bazı platformlarda son kullanıcının uygulama yükleme başlamadan önce onaylamak için ek istekler olabilir.
    - **Kaldırma**: Intune uygulamayı cihaza aracılığıyla "Kullanılabilir" kayıtlı cihazlar için daha önce yüklendiyse, uygulama seçilen gruplardaki cihazlardan kaldırılır ya da aynı dağıtım kullanarak "Required" atama. Web bağlantıları, dağıtımdan sonra kaldırılamaz.
 
@@ -122,6 +122,9 @@ Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. A
 > [!NOTE]
 > Yalnızca yönetilen iOS mağazası uygulamalarını Microsoft Intune’a ekleyip **Gerekli** olarak atadığınızda, bu uygulamalar hem **Gerekli** hem de **Kullanılabilir** amaçlarıyla otomatik olarak oluşturulur.<br><br>
 > Gerekli amaçla hedefi belirlenmiş iOS Store uygulamaları (iOS VPP uygulamaları değil), cihazı iade etme sırasında cihazda zorunlu tutulur ve Şirket Portalı uygulamasında da gösterilir.
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Android Kurumsal uygulama-BİZ uygulama dağıtımı
+Bir kayıtlı olmayan uygulama koruma İlkesi kayıt olmadan Android cihazlar için (APP-BİZ) dağıtım senaryosu, artık yönetilen Google Play mağazası uygulamalarını dağıtma ve LOB uygulamaları kullanıcılara için kullanabilirsiniz. Özellikle, son kullanıcıların cihazlarında güvenlik duruşunu bilinmeyen kaynaklardan yüklemeleri vererek çözmek, son kullanıcılar artık gerektiren bir uygulama kataloğu ve yükleme deneyimi ile sağlayabilir. Ayrıca, bu dağıtım senaryosu bir geliştirilmiş son kullanıcı deneyimi sağlar. Uygulama atama adımları için bkz [bir uygulamayı atar](apps-deploy.md#assign-an-app).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

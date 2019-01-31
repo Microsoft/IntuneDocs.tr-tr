@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +16,21 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 2d27b37fe627b6b697bf102be4bd29427c2223c8
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 283239a412f8c7b0a43fa5c88b4a3583b89cac8f
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230197"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290800"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikler, [önemli bildirimler](#notices) ve [geçmiş yayınlar](whats-new-archive.md) hakkında bilgiler de alabilirsiniz. Bazı özelliklerin piyasaya çıkması birkaç haftayı bulabilir ve tüm özellikler ilk hafta bütün müşterilerimize sunulmamış olabilir.
+Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikler, [önemli bildirimler](#notices) ve [geçmiş yayınlar](whats-new-archive.md) hakkında bilgiler de alabilirsiniz. 
 
 > [!Note]
+> Bazı özelliklerin piyasaya çıkması birkaç haftayı bulabilir ve tüm özellikler ilk hafta bütün müşterilerimize sunulmamış olabilir.
+>
 > Karma mobil cihaz yönetimindeki (MDM) yeni işlevler hakkında bilgi için, [karma Yenilikler sayfasını](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) gözden geçirin.
 
 **RSS akışı**: Bu sayfa aşağıdaki URL'yi kullanarak akış okuyucuya yapıştırarak güncelleştirildiğinde bildirim alın: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
@@ -58,7 +60,16 @@ Uygulama ataması başına gösteren son kullanıcı bildirimleri gösterilmemes
 Varsayılan ayarlar ve ayar aynı kalır, ancak bu değişiklik anlamak, kodlarda gezinin ve seçili uygulama koruma ilkeleri kolayca uygulamak için daha fazla ayarları kullanmasına izin verir. Bilgi için [iOS ayarları](app-protection-policy-settings-ios.md) ve [Android ayarları](app-protection-policy-settings-android.md).
 
 #### <a name="additional-settings-for-outlook----3301182----"></a>Outlook için ek ayarlar <!-- 3301182  -->
-Artık iOS için Outlook ve Intune kullanarak Android için ek ayarlar da yapılandırabilirsiniz.  Ayarlar aşağıdakileri içerir: Yalnızca Office 365 ve hibrit modern kimlik doğrulaması şirket hesapları kullanmak için Outlook'ta, iOS ve Android dağıtma modern kimlik doğrulaması kullanılması iş veya Okul hesaplarını izin `SAMAccountName` username alan temel kimlik doğrulaması olduğunda e-posta profili için Seçili yapılandırma dış alıcılara posta ipuçları yapılandırma kaydedilmesine izin kişiler **odaklanmış gelen kutusu** bloğu dış resimler iOS için Outlook erişmeye Biyometri gerektirir
+Artık iOS için Outlook ve Intune kullanarak Android için ek ayarlar da yapılandırabilirsiniz.  Ayarlar aşağıdakileri içerir:
+- Yalnızca iOS ve Android Outlook'ta kullanılacak iş veya Okul hesaplarını izin ver
+- Office 365 modern kimlik doğrulamayı dağıtmak ve hibrit modern kimlik doğrulaması şirket hesapları
+- Kullanım `SAMAccountName` username alan temel kimlik doğrulaması seçildiğinde e-posta profili için
+- Kişiler kaydedilmesine izin verin (kullanılabilir olan en kısa sürede)
+- Dış alıcılara posta ipuçları yapılandırın (kullanılabilir olan en kısa sürede)
+- Yapılandırma **odaklanmış gelen kutusu** (kullanılabilir olan en kısa sürede)
+- İOS için Outlook erişmeye Biyometri gerektirir (kullanılabilir olan en kısa sürede) 
+- Dış görüntüleri engelleyin (Visible ıntune konsolu, tanınan bir ayar değil ancak henüz – kullanılabilir olan en kısa sürede)
+
 > [!NOTE]
 > Erişim için Kurumsal kimlikleri yönetmek için Intune uygulama koruma ilkeleri kullanıyorsanız değil etkinleştirmeyi düşünebilirsiniz **Biyometri gerektiren**. Daha fazla bilgi için **erişim için Kurumsal kimlik bilgilerini gerektir** için [iOS erişim ayarlarını](app-protection-policy-settings-ios.md#access-requirements) ve [Android erişim ayarları](app-protection-policy-settings-android.md#access-requirements).
 
@@ -112,13 +123,6 @@ Geçerli ayarları listesini görmek için Git [izin vermek veya özellikleri k�
 
 Uygulama hedefi: Android Kurumsal cihaz sahibi
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune uygulama koruma ilkeleri kullanıcı arabirimi güncelleştirmesi <!-- 3251427 -->
-Özelliğin nd düğmeleri anlamak her kolaylaştırmak Intune uygulama koruması için ayarları etiketlerini değiştirdik. Değişikliklerden bazıları şunlardır:  
-- Denetimleri değiştirildi **Evet** / **hiçbir** için öncelikle denetimleri **blok** / ** izin ver ** ve **devre dışı**  /  **etkinleştirme** kontrol eder. Etiketler de güncelleştirilir.  
-- Ayarları biçimlendirilir, yan yana ayarı ve etiketini olacak şekilde daha iyi Gezinti sağlamak için denetimi.   
-
-Varsayılan ayarlar ve ayar aynı kalır, ancak bu değişiklik anlamak, kodlarda gezinin ve seçili uygulama koruma ilkeleri kolayca uygulamak için daha fazla ayarları kullanmasına izin verir. Bilgi için [iOS ayarları](app-protection-policy-settings-ios.md) ve [Android ayarları](app-protection-policy-settings-android.md).
-
 ### <a name="device-management"></a>Cihaz yönetimi
 
 #### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Kayıt olmadan WIP cihazlar için seçmeli temizleme desteği <!-- 1434452 -->
@@ -138,6 +142,9 @@ Intune, değişiklikler yapıldıkça olayları izleyen yerleşik denetim günl�
 Hangi atlamak için ekranları seçmek için Git **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** > bir belirteç seçin > **Profilleri** > bir profili seçin > **özellikleri** > **Kurulum Yardımcısı özelleştirme** > seçin **Gizle**  atlamak istediğiniz tüm ekranlar için > **Tamam**.
 Yeni bir profil oluşturun ya da bir profil düzenleme, seçili ekranlar Apple MDM sunucusu ile eşitleme gerek atlayın. Kullanıcılar, böylece gecikme profili değişiklikleri çekme cihazların el ile eşitleme verebilir.
 Bu özellik kullanımına sunmak başlatma, ancak tüm müşteriler için kullanılabilir olması birkaç gün sürebilir.
+
+#### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Android Kurumsal uygulama-BİZ uygulama dağıtımı <!-- 1171203 -->
+Bir kayıtlı olmayan uygulama koruma İlkesi kayıt olmadan Android cihazlar için (APP-BİZ) dağıtım senaryosu, şunları yapabilirsiniz artık yönetilen Google Play'e mağaza uygulamaları ve LOB uygulamaları kullanıcılara kullanın. Özellikle, son kullanıcıların cihazlarında güvenlik duruşunu bilinmeyen kaynaklardan yüklemeleri vererek çözmek, son kullanıcılar artık gerektiren bir uygulama kataloğu ve yükleme deneyimi ile sağlayabilir. Ayrıca, bu dağıtım senaryosu bir geliştirilmiş son kullanıcı deneyimi sağlar.
 
 ## <a name="week-of-january-14-2019"></a>14 Ocak 2019 haftası
 

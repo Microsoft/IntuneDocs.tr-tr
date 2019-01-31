@@ -2,10 +2,10 @@
 title: Microsoft Intune - Azure’da Windows Defender ATP kullanma | Microsoft Docs
 description: ATP’yi Intune ve Windows Defender Güvenlik Merkezi’nden (ATP portalı) açma, bir ATP yapılandırma profili kullanarak cihaz ekleme, Intune cihaz uyumluluk ilkeleri oluşturma, Azure AD koşullu erişim ilkeleri oluşturma ve cihaz uyumluluğunu izlemeyi içeren Windows Defender Gelişmiş Tehdit Koruması’nı (ATP) uçtan uca bir senaryoda etkinleştirmeyi öğrenin.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: 25328bc119b91d7c9c3bb678962b90123a0d1faa
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53168003"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290698"
 ---
-# <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune’da Windows Defender ATP’yi koşullu erişim ile etkinleştirme
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP için ıntune'da koşullu erişim uyumluluğu zorla
 
 Windows Defender Gelişmiş Tehdit Koruması (ATP) ve Microsoft Intune, bir kuruluşta güvenlik ihlallerini önlemeye ve ihlallerin etkisini sınırlamaya yardımcı olmak için birlikte çalışır.
 

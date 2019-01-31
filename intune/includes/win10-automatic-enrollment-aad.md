@@ -28,7 +28,9 @@ Otomatik kayıt, kullanıcıların Windows 10 cihazlarını Intune’a kaydetmes
    - **Tümü** - Tüm kullanıcılar Windows 10 cihazlarını otomatik olarak kaydedebilir
 
       > [!IMPORTANT]
-      > Bir grup için hem **MAM kullanıcı kapsamı** hem de MDM kaydı (**MDM kullanıcı kapsamı**) etkinse yalnızca MAM etkinleştirilir. Gruptaki kullanıcılar kişisel cihazlarını iş yerine eklediklerinde yalnızca MAM eklenir. Cihazlar otomatik olarak MDM’ye kaydedilmez.
+      > MAM kullanıcı kapsamı hem de MDM kullanıcı kapsamı (otomatik MDM kaydını) tüm kullanıcılar (veya aynı kullanıcı gruplarını) etkinleştirilip etkinleştirilmediğini KCG cihazlarında, MAM kullanıcı kapsamı öncelik kazanır. (Bunları yapılandırdıysanız) cihaz MDM'ye olmak yerine Windows bilgi Koruması (WIP) ilkelerini kullanır.
+      >
+      > Her iki kapsam etkinleştirilip etkinleştirilmediğini şirket cihazları için MDM kullanıcı kapsamı öncelik kazanır. MDM kayıtlı cihazlara alın.
 
    ![Azure portalının ekran görüntüsü](../media/auto-enroll-scope.png)
 

@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure ile Windows 10 cihazlarını sıfırlama | Microsoft Docs
 description: Microsoft Intune kullanarak Windows 10 bilgisayarlarındaki uygulamaları silmek veya kaldırmak için Yeni Başlangıç'ı kullanın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd2320e4c3935c4865d785bbb2461bba20afffdb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1eb1e671cc16196974cb15cdc785ba7d99fa8f46
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188747"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303421"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Windows 10 cihazlarını Intune ile sıfırlamak için Fresh Start kullanma
 
@@ -33,10 +33,11 @@ ms.locfileid: "52188747"
 3. **Yeni Başlangıç**'a tıklayın. 
 4. **Bu cihazdaki kullanıcı verilerini sakla**'yı seçerek:
    * Cihazın Azure AD'ye katılmış durumda kalmasını sağlayın
-    * Cihazın mobil cihaz yönetimine kayıtlı kalmasını sağlayın 
+    * Azure Active Directory kullanıcı işaretlerini cihazında etkinleştirildiğinde cihaz mobil cihaz Yönetimi yeniden zaman kaydedilir.
     * Kullanıcının Giriş klasörünün içeriğini saklayın ve uygulamalarla ayarları kaldırın  
   > [!IMPORTANT]
- > Kullanıcı verilerini saklamazsanız, cihaz hazır geldiği duruma geri yüklenir. Azure AD'den ve mobil cihaz yönetiminden kaydı kaldırılır. 
+ > Kullanıcı verilerini saklamazsanız, cihaz hazır geldiği duruma geri yüklenir. KCG cihazları Azure AD'den kaydı ve mobil cihaz yönetimi.
+ > Azure AD'ye katılmış cihazları Azure Active Directory kullanıcı işaretlerini cihazında etkinleştirildiğinde mobil cihazı yönetime yeniden kaydedilir.
  
-5. **Tamam**'ı tıklatın.   
+5. **Tamam** düğmesine tıklayın.   
 6. Bu eylemin durumunu görmek için, **Cihazlar**'a dönün ve **Cihaz eylemleri**'ne tıklayın.  

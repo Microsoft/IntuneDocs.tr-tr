@@ -2,10 +2,10 @@
 title: Windows 10 cihazlarına Microsoft Intune - Azure kullanarak oturum açmak için PIN kullanma | Microsoft Docs
 description: Windows iş için Hello bir PIN, parmak izi ve daha fazlasını kullanarak cihazlara oturum açmalarını sağlamak için kullanın. Intune Windows 10 cihazlar için şu ayarlarla bir kimlik koruma yapılandırma profili oluşturma ve kullanıcı grupları ve cihaz grupları için profil atayın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: c6ca040c91437a35d12626f54b8385311d6631eb
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831400"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290664"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Windows Hello iş için Windows 10 cihazlarda Microsoft Intune ile kullanma
 
@@ -60,7 +60,7 @@ Bu makalede bir cihaz yapılandırma profilinin nasıl oluşturulacağını gös
 
 4. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
-Profil oluşturulur ve Profiller listede görünür. Ardından, [atama](device-profile-assign.md) bu profili gruplara.
+Profil oluşturulur ve Profiller listede görünür. Ardından, [atama](device-profile-assign.md) bu profile ihtiyaçlarınızı karşılamak için kullanıcı ve cihaz grupları.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

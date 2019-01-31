@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
+ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072550"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431499"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>ıntune'da iOS cihaz özelliği ayarları
 
@@ -177,16 +177,23 @@ Bildirim gönderme iOS cihazları nasıl yüklü uygulamaları seçin. Bu ayarla
 
 Oturum açma penceresinde ve kilit ekranı bir özel ileti veya metin göstermek için bu ayarları kullanın. Örneğin, "Kaybedildiğinde dönmek..." iletisi girebilirsiniz ve varlık etiketi bilgileri. 
 
-Bu ayarlar, iOS 9.3 ve üzerini çalıştıran denetimli cihazları destekler.
+Bu özellik çalıştıran denetimli cihazları destekler:
 
-1. İçinde **ayarları**seçin **paylaşılan cihaz yapılandırması (yalnızca denetimli)**.
+- iOS 9.3 ve üzeri
+
+1. İçinde **ayarları**seçin **kilit ekranı iletisi (yalnızca denetimli)**.
 2. Aşağıdaki ayarları girin:
 
-    - **Varlık etiketi bilgileri**: Cihazın varlık etiketi hakkındaki bilgileri girin. Örneğin, şunu girin: `Owned by Contoso Corp`. 
+    - **Varlık etiketi bilgileri**: Cihazın varlık etiketi hakkındaki bilgileri girin. Örneğin `Owned by Contoso Corp` veya `Serial Number: {{serialnumber}}` girin. 
 
       Girdiğiniz metin, oturum açma penceresinde ve kilit ekranında cihazın gösterilir.
 
-    - **Kilit ekranı dipnotu**: Cihaz kaybolur veya çalınırsa, döndürülen cihaz alınmasına yardımcı olabilecek bir not girin. Örneğin `If found, call Contoso at ...` gibi bir URI girebilirsiniz.
+    - **Kilit ekranı dipnotu**: Cihaz kaybolur veya çalınırsa, döndürülen cihaz alınmasına yardımcı olabilecek bir not girin. İstediğiniz herhangi bir metin girebilirsiniz. Örneğin `If found, call Contoso at ...` gibi bir URI girebilirsiniz.
+
+    Cihaz belirteçleri, cihaza özgü bilgiler için bu alanları eklemek için de kullanılabilir. Örneğin, seri numarası göstermek için girin `Serial Number: {{serialnumber}}`. Kilit ekranında, metin benzer gösterir `Serial Number 123456789ABC`. Değişkenleri girerken, süslü ayraçlar kullanmaya özen `{{ }}`. [Uygulama yapılandırma belirteçleri](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) kullanılabilen değişkenleri bir listesini içerir. Ayrıca `deviceName` veya başka bir cihaza özgü değer.
+
+    > [!NOTE]
+    > Değişkenleri kullanıcı Arabiriminde doğrulanmış değil. Sonuç olarak, hatalı giriş ile kaydedilen profilleri görebilirsiniz. Örneğin, girerseniz `{{Devicename}}` yerine `{{devicename}}`, cihazın benzersiz adı yerine sabit dizesini gösterilir.
 
 3. İşiniz bittiğinde seçin **Tamam** yaptığınız değişiklikleri kaydedin.
 
@@ -279,6 +286,8 @@ Bu ayarlar, iOS cihazlarında tarayıcı URL erişimini denetler.
 ## <a name="wallpaper-settings"></a>Duvar kağıdı ayarları
 
 Denetimli iOS cihazlarınıza özel bir .png, .jpg veya .jpeg görüntüsü ekleyin. Örneğin, bir şirket logosu, kilit ekranında kullanın.
+
+Mevcut bir görüntüyü cihazlarla görüntü ile bir profili atandığında beklenmeyen davranışlarla karşılaşabilirsiniz. Örneğin, bir görüntü olmadan bir profil oluşturun. Bu profil bir görüntüsüne zaten sahip cihazlara atanır. Bu senaryoda, cihaz varsayılan görüntü değişebilir veya özgün resmin cihazda haberdar olun. Bu davranış denetlenen ve Apple'nın MDM platformu tarafından sınırlı.
 
 - **Görüntü konumu duvar kağıdı**: Cihazdaki resim göstermek için bir konum seçin. Seçenekleriniz şunlardır:
   - **Yapılandırılmamış**: Özel bir görüntü cihaza eklenmez. Cihaz işletim sistemi varsayılan kullanır.

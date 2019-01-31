@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,34 +13,34 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 849e3feed23b46585f9b737cb0ee91ecdf47ecae
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bf9581fe81aea3d2671da0adb2d37bbc203875c8
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186146"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303540"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Windows 10 çalıştıran cihazlar için e-posta profili ayarları - Intune
 
-Windows 10 çalıştıran cihazlarınızı yapılandırmak için e-posta profili ayarlarını kullanın.
+E-posta profili ayarları, Windows 10 çalıştıran cihazlarınıza posta uygulamasını yapılandırmak için kullanın.
 
-- **E-posta sunucusu**: Exchange sunucunuzun konak adını girin.
-- **Hesap adı**: E-posta hesabı için görünen adı girin. Bu ad, cihazlarda kullanıcılara gösterilir.
-- **AAD’den kullanıcı adı özniteliği**: Bu ad, Intune’un Azure Active Directory’den (AAD) aldığı özniteliktir. Intune, bu profil tarafından kullanılan kullanıcı adını dinamik olarak oluşturur. Seçenekleriniz şunlardır:
-  - **Kullanıcı Asıl Adı**: Adı alır; örneğin `user1` veya `user1@contoso.com`
-  - **Birincil SMTP adresi**: Adı e-posta adresi biçiminde alır; örneğin `user1@contoso.com`
-  - **sAM Hesap Adı**: Etki alanı gerektirir; örneğin `domain\user1`.
+- **E-posta sunucusu**: Exchange sunucunuzun konak adı girin.
+- **Hesap adı**: E-posta hesabı için görünen ad girin. Bu ad, cihazlarda kullanıcılara gösterilir.
+- **Aad'den kullanıcı adı özniteliği**: Bu ad, Azure Active Directory (AAD gelen) Intune alır özniteliğidir. Intune, bu profil tarafından kullanılan kullanıcı adını dinamik olarak oluşturur. Seçenekleriniz şunlardır:
+  - **Kullanıcı asıl adı**: Adı aşağıdaki gibi alır `user1` veya `user1@contoso.com`
+  - **Birincil SMTP adresi**: Adı gibi e-posta adresi biçiminde alır `user1@contoso.com`
+  - **sAM hesabı adı**: Etki alanı gibi gerektirir `domain\user1`.
 
     Şunları da girin:  
-    - **Kullanıcı etki alanı adı kaynağı**: **AAD** (Azure Active Directory) veya **Özel**’i seçin.
+    - **Kullanıcı etki alanı adı kaynağı**: Seçin **AAD** (Azure Active Directory) veya **özel**.
 
       Öznitelikleri **AAD**’den almayı seçerseniz şunları girin:
-      - **AAD’den kullanıcı etki alanı adı**: Kullanıcının **Tam etki alanı adı** veya **NetBIOS adı** özniteliğini alma arasında seçim yapın
+      - **Kullanıcı etki alanı adı AAD özniteliğinden**: Almak için seçtiğiniz **tam etki alanı adı** veya **NetBIOS adı** kullanıcı özniteliği
 
       **Özel** öznitelikler kullanmayı seçerseniz şunları girin:
-      - **Kullanılacak özel etki alanı adı**: Intune’un etki alanı adı olarak kullanacağı bir değer seçin; örneğin `contoso.com` veya `contoso`
+      - **Kullanılacak özel etki alanı adı**: Intune için etki alanı adı gibi kullanan bir değer girin `contoso.com` veya `contoso`
 
-- **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) veya Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin.
+- **Aad'den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. E-posta adresi olarak tam asıl adı kullanmak için **Kullanıcı asıl adı**’nı (`user1@contoso.com` veya `user1`) veya Exchange’de oturum açarken birincil SMTP adresini kullanmak için **Birincil SMTP adresi**’ni (`user1@contoso.com`) seçin.
 
 ## <a name="security-settings"></a>Güvenlik ayarları
 
@@ -48,12 +48,12 @@ Windows 10 çalıştıran cihazlarınızı yapılandırmak için e-posta profili
 
 ## <a name="synchronization-settings"></a>Eşitleme ayarları
 
-- **Eşitlenecek e-posta miktarı**: Eşitlemek istediğiniz e-posta için gün sayısını seçin. Veya **Sınırsız**’ı seçerek kullanılabilir tüm e-postaları eşitleyin.
-- **Eşitleme zamanlaması**: Cihazların Exchange sunucusundan verileri eşitleyeceği zamanlamayı seçin. Ayrıca, verileri ulaşır ulaşmaz eşitleyen **İletiler geldiğinde** veya eşitlemenin cihaz kullanıcısı tarafından başlatılmasını gerektiren **El ile** seçeneklerini de belirleyebilirsiniz.
+- **Eşitlenecek e-posta miktarı**: Eşitlemek istediğiniz e-postanın gün sayısını seçin. Veya **Sınırsız**’ı seçerek kullanılabilir tüm e-postaları eşitleyin.
+- **Eşitleme zamanlaması**: Ayrıca seçebilir Exchange sunucusundan verileri eşitlemek cihazlar için zamanlamayı seçin **iletiler geldiğinde**, verileri eşitleyen, ulaşır ulaşmaz veya **el ile**burada cihazın kullanıcısı eşitlemenin başlatılması gerekir.
 
 ## <a name="content-sync-settings"></a>İçerik eşitleme ayarları
 
-- **Eşitlenecek içerik türü**: Aşağıdaki türler arasından, cihazlara eşitlemek istediğiniz içerik türlerini seçin:
+- **Eşitlenecek içerik türü**: Arasından cihazlara eşitlemek istediğiniz içerik türlerini seçin:
   - **Kişiler**
   - **Takvim**
   - **Görevler**

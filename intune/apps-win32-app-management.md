@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068331"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290766"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Tek başına - Win32 uygulama yönetimi (Genel Önizleme)
+# <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
 Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bulut bağlantılı müşterilerin Win32 uygulama yönetiminde Configuration Manager'ı kullanmaları mümkün olsa da, yanızca Intune kullanan müşteriler Win32 iş kolu (LOB) uygulamalarında daha fazla yönetim özelliğinden yararlanabilir. Bu konu, Intune Win32 uygulaması yönetim özelliklerine yönelik genel bir bakışın yanı sıra, sorun giderme bilgileri sağlar.
 
-## <a name="prerequisites-for-public-preview"></a>Genel önizleme için önkoşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 - Windows 10 sürüm 1607 veya üzeri (Enterprise, Pro ve Education sürümleri)
 - Windows 10 istemcisi: 
     - Azure Active Directory’ye (AAD) veya Hibrit Azure Active Directory’ye katılmış olmalıdır
     - Intune’da kayıtlı (MDM ile yönetilen) olmalıdır
-- Windows uygulaması boyutu, genel önizlemede uygulama başına 8 GB ile sınırlıdır 
+- Windows uygulama boyutu, uygulama 8 GB olarak tavan
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Karşıya yükleme için Win32 uygulaması içeriğini hazırlama
 
-Win32 uygulamalarını önceden işlemek için [Microsoft Intune Win32 Uygulama Karşıya Yükleme Hazırlık Aracı](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool)'nı kullanın. Paketleme aracı uygulama yükleme dosyalarını *.intunewin* biçimine dönüştürür. Ayrıca paketleme aracı Intune'a uygulama yükleme durumunu saptamak için gereken özniteliklerin bazılarını da algılar. Uygulama yükleyicisi klasöründe bu aracı kullandıktan sonra, Intune konsolunda Win32 uygulaması oluşturabilirsiniz.
+Kullanım [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) Win32 uygulamaları önceden işlenecek. Aracı uygulama yükleme dosyalarına dönüştürür *.intunewin* biçimi. Aracın bazı Intune tarafından uygulama yükleme durumunu belirlemek için gerekli öznitelikler algılar. Uygulama yükleyicisi klasöründe bu aracı kullandıktan sonra, Intune konsolunda Win32 uygulaması oluşturabilirsiniz.
 
-[Microsoft Intune Win32 Uygulama Karşıya Yükleme Hazırlık Aracı](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool)'nı GitHub'dan indirebilirsiniz.
+İndirebileceğiniz [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) github'dan.
 
 ### <a name="available-command-line-parameters"></a>Kullanılabilir komut satırı parametreleri 
 
@@ -74,7 +74,7 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 1.  [Azure Portal](https://portal.azure.com/) oturum açın.
 2.  **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.
 3.  **Intune** bölmesinde **İstemci uygulamaları** > **Uygulamalar** > **Ekle**'yi seçin.
-4.  **Uygulama ekle** bölmesinde, sağlanan açılan pencereden **Windows uygulaması (Win32) - önizleme**'yi seçin.
+4.  İçinde **Ekle** uygulama bölmesinde **Windows uygulaması (Win32)** sağlanan aşağı açılan listeden.
 
     ![Ekran görüntüsü Ekle uygulama dikey penceresi - ekleme türü açılan kutusu](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
     ![Uygulama paket dosyası dikey penceresinin ekran görüntüsü](./media/apps-win32-app-02.png)
 
 2.  **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra *.intunewin* uzantılı bir Windows yükleme dosyası seçin.
+
+    > [!IMPORTANT]
+    > Microsoft Win32 içerik hazırlığı aracını en son sürümünü kullandığınızdan emin olun. En son sürümü kullanmıyorsanız, uygulamayı Microsoft Win32 içerik hazırlığı aracının eski bir sürümü kullanılarak paketlendi belirten bir uyarı görürsünüz. 
+
 3.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
 ### <a name="step-3-configure-app-information"></a>3. adım: Uygulama bilgilerini yapılandırma
@@ -171,7 +175,7 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
             
                 ![Algılama kuralı bölmesi - kayıt defteri anahtarı var ekran görüntüsü](./media/apps-win32-app-05.png)    
             
-            2.  Kayıt defteri değerinin var olup olmadığını denetleyin (**Önizlemede sağlanmak**).
+            2.  Kayıt defteri değeri mevcut olup olmadığını denetleyin.
         
                 ![Algılama kuralı bölmesi - kayıt defteri değeri varlığı ekran görüntüsü](./media/apps-win32-app-06.png)    
         

@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure özel ve ortak anahtar sertifikalarını kullanma | Microsoft Docs
 description: Ekleme veya ortak anahtar şifreleme standartları (PKCS) sertifikaları Microsoft kök sertifikasını dışarı aktarma, sertifika şablonunu yapılandırmak, indirin ve yükleyin Microsoft Intune sertifika Bağlayıcısı'nı (NDES), oluşturma adımları da dahil olmak üzere Intune oluşturma bir cihaz yapılandırma profilini, Azure ve sertifika Yetkilinizde PKCS sertifika profili oluşturun.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -11,16 +11,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: f825e66a4668a007dc364e4c42b18ca7c2736016
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203629"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303502"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -82,7 +82,7 @@ VPN, WiFi ve diğer kaynakları ile kimlik doğrulaması için kök veya ara CA 
 3. **Kullanıcı** sertifika şablonunu bulun, şablona sağ tıklayın ve **Şablonu Yinele**’yi seçin. **Yeni Şablon Özellikleri** açılır.
 
     > [!NOTE]
-    > S/MIME e-posta imzalama ve şifreleme senaryolarında, birçok yönetici imzalama ve şifreleme için ayrı sertifikalar kullanır. Microsoft Active Directory Sertifika Hizmetlerini kullanıyorsanız, S/MIME e-posta imzalama sertifikaları için **Yalnızca Exchange İmzası** şablonunu ve S/MIME şifreleme sertifikaları için de **Exchange Kullanıcısı** şablonunu kullanabilirsiniz.  Üçüncü taraf sertifika yetkilisi kullanıyorsanız, imzalama ve şifreleme şablonları ayarlamak için onların kendi yönergelerini gözden geçirmeniz önerilir.
+    > S/MIME e-posta imzalama ve şifreleme senaryolarında, birçok yönetici imzalama ve şifreleme için ayrı sertifikalar kullanır. Microsoft Active Directory Sertifika Hizmetlerini kullanıyorsanız, S/MIME e-posta imzalama sertifikaları için **Yalnızca Exchange İmzası** şablonunu ve S/MIME şifreleme sertifikaları için de **Exchange Kullanıcısı** şablonunu kullanabilirsiniz.  3. taraf sertifika yetkilisi kullanıyorsanız, imzalama ve şifreleme şablonları ayarlamak için kendi yönergeleri gözden geçirmeniz önerilir.
 
 4. **Uyumluluk** sekmesinde:
 
@@ -136,6 +136,7 @@ VPN, WiFi ve diğer kaynakları ile kimlik doğrulaması için kök veya ara CA 
 6. **Gelişmiş** sekmesinde **Bu bilgisayarın SİSTEM hesabını kullan (varsayılan)**’ı seçili bırakmanız önerilir.
 7. **Uygula** > **Kapat**
 8. Azure portalına dönün (**Intune** > **Cihaz Yapılandırması** > **Sertifika Yetkilisi**). Birkaç dakika sonra yeşil bir onay işareti gösterilir ve **bağlantı durumu** olduğu **etkin**. Bağlayıcı sunucunuz artık Intune'la iletişim kurabilir.
+9. Ağ ortamınızda bir web proxy varsa, çalışması bağlayıcıyı etkinleştirmek için ek yapılandırma gerekebilir. Daha fazla bilgi için [iş mevcut şirket içi proxy sunucuları](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) Azure Active Directory belgelerinde.
 
 > [!NOTE]
 > TLS 1.2 desteği, Microsoft Intune Sertifika Bağlayıcısı'na dahil edilmiştir. Bu nedenle Microsoft Intune Sertifika Bağlayıcısı'nın yüklü olduğu sunucu TLS 1.2’yi destekliyorsa TLS 1.2 kullanılır. Sunucu TLS 1.2 desteklemiyorsa TLS 1.1 kullanılır. Şu anda TLS 1.1, cihazlar ve sunucu arasında kimlik doğrulaması için kullanılmaktadır.

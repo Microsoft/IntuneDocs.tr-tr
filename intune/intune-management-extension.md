@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 063a5cbbe18efc5c406c9dc7f2fa40d614b2e48a
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860971"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303404"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 cihazlar için Intune’da PowerShell betiklerini yönetme
 
@@ -38,7 +38,7 @@ Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. Win
 
 Intune yönetim uzantısı şu önkoşullara sahiptir:
 
-- Cihazları Azure AD'ye katılması gerekir ve [otomatik kaydedilmiş](windows-enroll.md#enable-windows-10-automatic-enrollment). Intune yönetim uzantısı, Azure AD'ye katılmış destekler, karma etki alanına katılmamışsa ve kayıtlı Windows cihazları comanaged. GPO ile kaydedilen cihazlar desteklenmez.
+- Cihazlar alanına veya Azure için kaydedilen AD ile Azure AD için yapılandırıldığından [ıntune'a otomatik kayıt](windows-enroll.md#enable-windows-10-automatic-enrollment). Intune yönetim uzantısı, Azure AD'ye katılmış destekler, karma etki alanına katılmamışsa ve kayıtlı Windows cihazları comanaged.
 - Cihazlar Windows 10 sürüm 1607 veya üzeri çalıştırmalıdır.
 - Bir PowerShell Betiği, Intune yönetim uzantısı aracısı yüklü değil veya bir Win32 uygulaması için bir kullanıcı veya cihaz güvenlik grubu olarak dağıtılır.
 
@@ -62,9 +62,9 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 3. Cihazları betiği alacak kullanıcıları içeren bir veya daha fazla grup seçin. İlkeyi seçili gruplara atamak için **seçin**.
 
 > [!NOTE]
-> - PowerShell betikleri, bilgisayar gruplarına uygulanamaz.
 > - Son kullanıcılar, cihaza PowerShell betiklerini yürütmek için oturum açmanız gerekmez.
 > - Azure AD güvenlik gruplarına cihaz ıntune'da PowerShell betiklerini hedefleyebilir.
+> - Azure AD güvenlik gruplarını için ıntune'da PowerShell betiklerini hedefleyebilir.
 
 Intune yönetim uzantısı istemci saatte ıntune'la denetler. İlkeyi Azure AD gruplarına atadıktan sonra, PowerShell betiği çalıştırılır ve çalıştırma sonuçları raporlanır.
 
@@ -113,7 +113,7 @@ PowerShell betikleri, her oturum açmada çalıştırmayın. Bunlar yalnızca ye
 - Betikleri, Surface hub'larında çalışmaz.
 - Günlükleri iade `\ProgramData\Microsoft\IntuneManagementExtension\Logs` hataları.
 - Olası izin sorunları için PowerShell betiğinin özelliklerinin mutlaka `Run this script using the logged on credentials`. Ayrıca oturum açmış olan kullanıcının komut dosyasını çalıştırmak için uygun izinlere sahip olup olmadığını denetleyin.
-- Betik sorunlarını gidermek için bir örnek betiği çalıştırın. Örneğin, oluşturma `C:\Scripts` dizin ve verin herkes tam denetime sahip. Aşağıdaki betiği çalıştırın:
+- Betik sorunlarını gidermek için bir örnek betiği çalıştırın. Örneğin, oluşturma `C:\Scripts` dizin ve verin herkes tam denetime sahip. Şu betiği çalıştırın:
 
   ```powershell
   write-output "Script worked" | out-file c:\Scripts\output.txt
