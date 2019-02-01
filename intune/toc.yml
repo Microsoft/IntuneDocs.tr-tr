@@ -39,12 +39,16 @@ items:
     href: quickstart-email-profile.md
 - name: Öğreticiler
   items:
+  - name: Azure portalında Intune’u gözden geçirme
+    href: tutorial-walkthrough-intune-portal.md
   - name: Yönetilen cihazlarda e-posta koruma
     href: tutorial-protect-email-on-enrolled-devices.md
   - name: Yönetilmeyen cihazlarda e-posta koruma
     href: tutorial-protect-email-on-unmanaged-devices.md
   - name: Cihaz kaydetmek için Windows Autopilot kullanma
     href: tutorial-use-autopilot-enroll-devices.md
+  - name: iOS cihazlarını kaydetmek için DEP kullanma
+    href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Kavramlar
   items:
   - name: Cihaz yönetimi nedir?
@@ -945,9 +949,9 @@ items:
       href: data-outside-protect.md
     - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
       href: data-leak-prevention.md
-ms.openlocfilehash: 70240d3c6969ffe86d3b32b14b50b390020b10b0
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
+ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072499"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504553"
