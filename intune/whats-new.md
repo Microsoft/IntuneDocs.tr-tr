@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 01/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 283239a412f8c7b0a43fa5c88b4a3583b89cac8f
-ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
+ms.openlocfilehash: 9ca959bf28145500df71cb9ce8c7c36d62c9f773
+ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290800"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504587"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -60,15 +60,19 @@ Uygulama ataması başına gösteren son kullanıcı bildirimleri gösterilmemes
 Varsayılan ayarlar ve ayar aynı kalır, ancak bu değişiklik anlamak, kodlarda gezinin ve seçili uygulama koruma ilkeleri kolayca uygulamak için daha fazla ayarları kullanmasına izin verir. Bilgi için [iOS ayarları](app-protection-policy-settings-ios.md) ve [Android ayarları](app-protection-policy-settings-android.md).
 
 #### <a name="additional-settings-for-outlook----3301182----"></a>Outlook için ek ayarlar <!-- 3301182  -->
-Artık iOS için Outlook ve Intune kullanarak Android için ek ayarlar da yapılandırabilirsiniz.  Ayarlar aşağıdakileri içerir:
+Artık iOS için Outlook ve Intune kullanarak Android için followiong ek ayarlar da yapılandırabilirsiniz:
 - Yalnızca iOS ve Android Outlook'ta kullanılacak iş veya Okul hesaplarını izin ver
 - Office 365 modern kimlik doğrulamayı dağıtmak ve hibrit modern kimlik doğrulaması şirket hesapları
 - Kullanım `SAMAccountName` username alan temel kimlik doğrulaması seçildiğinde e-posta profili için
-- Kişiler kaydedilmesine izin verin (kullanılabilir olan en kısa sürede)
-- Dış alıcılara posta ipuçları yapılandırın (kullanılabilir olan en kısa sürede)
-- Yapılandırma **odaklanmış gelen kutusu** (kullanılabilir olan en kısa sürede)
-- İOS için Outlook erişmeye Biyometri gerektirir (kullanılabilir olan en kısa sürede) 
-- Dış görüntüleri engelleyin (Visible ıntune konsolu, tanınan bir ayar değil ancak henüz – kullanılabilir olan en kısa sürede)
+
+Aşağıdaki ayarlar, yine de yavaş yavaş kullanıma sunuluyor ve yakında Konsolunuzda kullanıma sunulacaktır:
+- Kaydedilecek kişiler izin ver
+- Dış alıcılara posta ipuçları yapılandırın
+- Yapılandırma **odaklanmış gelen kutusu**
+- İOS için Outlook erişmeye Biyometri gerektirir
+
+Aşağıdaki ayar Intune konsolunda görünür, ancak yapılandırıldığında, beklendiği gibi çalışmaz. Bu sorun yakında çözülecektir:
+- Bloğu dış görüntüleri
 
 > [!NOTE]
 > Erişim için Kurumsal kimlikleri yönetmek için Intune uygulama koruma ilkeleri kullanıyorsanız değil etkinleştirmeyi düşünebilirsiniz **Biyometri gerektiren**. Daha fazla bilgi için **erişim için Kurumsal kimlik bilgilerini gerektir** için [iOS erişim ayarlarını](app-protection-policy-settings-ios.md#access-requirements) ve [Android erişim ayarları](app-protection-policy-settings-android.md#access-requirements).
@@ -82,9 +86,10 @@ Yönetilen Google Play uygulamaları Microsoft Intune silebilirsiniz. Yönetilen
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
 #### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Güvenlik temellerini (genel Önizleme) ile Microsoft tarafından önerilen ayarları kullanma <!-- 2055484   -->
-Not: Bu özellik hala kullanıma sunuluyor ve kısa bir süre sonra kullanıma sunulacaktır.
 
 Intune, Windows Defender ATP ve Office 365 ATP dahil güvenliğe odaklı diğer hizmetlerle tümleşir. Müşteriler, Microsoft 365 hizmetleri çapında ortak bir strateji ve birbiriyle bütünleşen bir dizi uçtan uca güvenlik iş akışı istiyor. Amacımız, stratejileri birbiriyle uyumlu hale getirmek ve güvenlik işlemleri ve sık kullanılan yönetici görevleri arasında bir köprü oluşturan çözümler geliştirmek. Intune olarak bu amaca Microsoft tarafından önerilen bir dizi "Güvenlik taban çizgisini" (**Intune** > **Güvenlik taban çizgileri**) yayımlayarak ulaşmayı hedefliyoruz.  Bir yönetici, doğrudan bu taban çizgisi arasından güvenlik ilkeleri oluşturmak ve bunları kullanıcılarına dağıtabilirsiniz. Ayrıca, kuruluşunuzun ihtiyaçlarını en iyi yöntem önerileri de özelleştirebilirsiniz. Intune, cihazların bu taban çizgilerle uyumlu kalmasını sağlar ve yöneticilere uyumlu olmayan kullanıcıları ve cihazları bildirir.
+
+Bu özellik genel Önizleme aşamasında olduğundan, oluşturulan herhangi bir profil artık genel kullanıma (GA) için güvenlik temellerini şablonları taşımaz. Bu önizleme şablonları, üretim ortamınızda kullanmayı planlıyorsanız olmamalıdır.
 
 Güvenlik taban çizgileri hakkında daha fazla bilgi için bkz. [Intune Windows 10 Güvenlik taban çizgisi oluşturma](security-baselines-monitor.md).
 
@@ -141,7 +146,6 @@ Intune, değişiklikler yapıldıkça olayları izleyen yerleşik denetim günl�
 Şu anda atlayabilirsiniz ekranlar ek olarak, bir kullanıcı cihaz kaydedilirken Kurulum Yardımcısı'nı aşağıdaki ekranlarda atlamak için DEP cihazları iOS ayarlayabilirsiniz: Sesi, gizlilik, Android geçişi, giriş düğmesi, iMessage & FaceTime, ekleme, Watch geçişi, görünüm, ekran zaman, yazılım güncelleştirmesi, SIM Kurulum görüntüler.
 Hangi atlamak için ekranları seçmek için Git **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** > bir belirteç seçin > **Profilleri** > bir profili seçin > **özellikleri** > **Kurulum Yardımcısı özelleştirme** > seçin **Gizle**  atlamak istediğiniz tüm ekranlar için > **Tamam**.
 Yeni bir profil oluşturun ya da bir profil düzenleme, seçili ekranlar Apple MDM sunucusu ile eşitleme gerek atlayın. Kullanıcılar, böylece gecikme profili değişiklikleri çekme cihazların el ile eşitleme verebilir.
-Bu özellik kullanımına sunmak başlatma, ancak tüm müşteriler için kullanılabilir olması birkaç gün sürebilir.
 
 #### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Android Kurumsal uygulama-BİZ uygulama dağıtımı <!-- 1171203 -->
 Bir kayıtlı olmayan uygulama koruma İlkesi kayıt olmadan Android cihazlar için (APP-BİZ) dağıtım senaryosu, şunları yapabilirsiniz artık yönetilen Google Play'e mağaza uygulamaları ve LOB uygulamaları kullanıcılara kullanın. Özellikle, son kullanıcıların cihazlarında güvenlik duruşunu bilinmeyen kaynaklardan yüklemeleri vererek çözmek, son kullanıcılar artık gerektiren bir uygulama kataloğu ve yükleme deneyimi ile sağlayabilir. Ayrıca, bu dağıtım senaryosu bir geliştirilmiş son kullanıcı deneyimi sağlar.
@@ -1365,27 +1369,37 @@ Güncelleştirilmiş görünümü görmek için [Uygulama kullanıcı arabirimin
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
 Yardım masanıza bildirin izin vermek isteyebilirsiniz. Bu değişiklik kullanıma sunulduğunda Bu yenilikler güncelleştireceğiz. Bu macOS cihaz parola ilkesi uygulanmasını istemiyorsanız, biz powerbı.com'u önerilir veya var olan macOS ilkenizi silin.
 
+###<a name="plan-for-change-update-to-ios-setting-for-supervised-devices-in-the-intune-console"></a>Değişiklik planı: Intune konsolunda denetimli cihazlar için iOS ayarını güncelleştirme  
+Intune hizmetine Şubat güncelleştirmesiyle, denetimli iOS cihazları için 'cihaz ayarlarında Kısıtlamaları Etkinleştirme' ayarı "Ekran süresi (yalnızca denetimli)" olarak adlandırılıyor. Bu değişiklikten sonra son kullanıcı deneyimi iOS sürümüne göre değişir.
 
-### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Anımsatıcı: Intune destek MPO yerine Azure müşterileri artık Azure için Premier'i deneyimi <!--2828727-->
-Biz aralık Microsoft Premier Online (MPO) portalına gelen Intune destek istekleri oluşturma olanağı kaldırmayı tercih, Eylül ayının içinde MC147649 paylaşılmıştı. Artık, bir gecikme Ocak, sonunda, yalnızca azure'da Intune destek istekleri oluşturmak için yönlendirilirsiniz. 
+####<a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+"(Yalnızca denetimli) cihaz ayarlarında kısıtlamaları etkinleştirme" ayarını "deneyimi için cihazlara (Apple kayıt programları ile kaydedilen cihazlar) denetimli (yalnızca denetimli) ekran zaman", burada'nın yeniden adlandırıldıktan sonra: 
+
+İOS 11.4 ve önceki cihazlar için: Bu ayar, kullanıcıların önce olarak cihaz kısıtlamalarını değiştirmesini önlemek için kullanılabilir. Son kullanıcı deneyiminde bir değişiklik tarafından görülmez.
+ 
+12 ve daha sonra iOS cihazlar için: Son kullanıcılar artık ayarları kısıtlamaları sekmesinde bakın > Genel > cihaz Yönetimi > Yönetim profili > kısıtlamaları.
+Bunun yerine, bu ayarları bir parçası olacak > Genel > Ekran zaman. "Blok" için bu ayarın yapılandırılması da içeriği ve gizlilik kısıtlamaları içeren kullanıcıların cihazlarında, ekran saat ayarlarını değiştirmesini engeller.
+
+####<a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+İOS 12 ve sonraki sürümler için yükseltilen cihazlar için deneyiminde değişiklik unutmayın, son kullanıcı kılavuzu güncelleştirin.
 
 
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Premier geliştirme devam etmek için Ocak bitişinden sonra destek deneyimi olması olmayacak MPO destek istekleri oluşturmak kullanabilirsiniz.  Bunu yapmak çalıştığınızda, azure'da ıntune'a yönlendirilmesi kapatmak mümkün olacaktır değil bir istem göreceksiniz. Burada, sorununuzu vaktinde tanılamak ve çözümlemek için Intune’a ayrılmış Microsoft Desteği’ne yönlendirilecek bir destek isteği oluşturabilirsiniz. MPO portalında oluşturduğunuz destek isteklerini Azure portalında görüntülenebilir unutmayın. 
+###<a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Değişiklik planı: Intune'da iOS 12 kayıt için iş akışı değişiklikleri
+Apple iOS cihazlarında mobil cihaz Yönetimi (MDM) hizmetlerine kaydetme ile ilgili bazı değişiklikler açıkladı. Değişiklik büyük olasılıkla tüm gelecek iOS sürümleri yanı sıra iOS spring 2019 sürümü görülür.
 
-Azure portalı içinde MC171941 kısa süre önce duyurduk gibi yeni bir destek deneyimi vardır. Bu konu hakkında daha fazla bilgi şu adreste bulunabilir: [ https://aka.ms/new_support_experience ](https://aka.ms/new_support_experience) ve ek bilgi bağlantısı.
+####<a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Son kullanıcılarınızın cihazlarını iOS 12 Bu yeni sürümüne içinde spring yükseltirseniz, bilmeniz değiştirilmiş bir iş akışı ve ıntune'a kaydı için ek adımlar atmanız gerekir. Apple bu değişiklikleri getirir, son kullanıcıların gerekir: • bir yönetim profili • Git ayarlarına indirmek için Şirket portalı uygulamasında kayıt işlemi başlar > Genel > profiller • doğru profili seçin ve tıklayın • Dönüş Şirket portalı kaydı yüklemek için 
 
-Hibrit mobil cihaz yönetimi (hibrit MDM) veya ortak yönetim kullanıyorsanız ConfigMgr için destek istekleri oluşturmak amacıyla MPO kullanmaya devam edebilirsiniz ancak Intune için destek istekleri oluşturmak amacıyla yalnızca Azure portalını kullanın. Karma MDM bir anımsatıcı olan [kullanım dışı](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures), ve olabildiğince çabuk Azure'da Intune'a taşımaya planlamanız gerekir. Daha fazla bilgi için bkz. [Karma Mobil Cihaz Yönetiminden Azure’da Intune’a geçme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+Önceden kaydedilen cihazların kaydı ve yeni bir kayıt gerekiyor sürece yeni yükseltme iOS sürüm etkilenmez.
+Kayıt deneyimi 12,1 veya önceki iOS çalıştıran cihazlarda, Apple tarafından bu yeni sürümle birlikte değiştirmez.
 
-Yalnızca Genel Yönetici, Intune Hizmet Yöneticisi ve Hizmet Destek Yöneticisi rollerine sahip kullanıcıların Azure portalında destek biletleri oluşturabileceğini unutmayın.
+####<a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+Belgelerinize ve, son kullanıcı kılavuzu yükseltmek planlamanız gerekir. Bu değişiklikler bilmeniz, Yardım Masası izin isteyebilirsiniz. Sizi ileti merkezi bilgilendirmeyi saklayacağız ve bu değişiklik Canlı olduğunda müşterilerimize yenilikler.
 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-- MPO’yu kullanmayı bırakın ve tüm Intune destek isteklerinizi Azure’da Intune kullanarak oluşturun ve yönetin.  
-- Gerekirse yardım masanızı uyarın ve belgeleri güncelleştirin.
-- MPO’da destek istekleri oluşturmakta olan Genel Yönetici veya Intune Hizmet Yöneticisi rollerine sahip kullanıcılarınız varsa onları Azure Active Directory’de Hizmet Destek Yöneticisi rolüne atayın, böylece Azure portalında destek biletleri oluşturmaya devam edebilirler.
+Ekran görüntüleri ve beklenen kayıt akışını video ile bir destek blog gönderisi için ek bilgi tıklayın.
 
-#### <a name="additional-information"></a>Ek bilgi
-[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+####<a name="additional-information"></a>Ek bilgi
+https://aka.ms/iOS_enrollment_changes
 
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Değişiklik planı: İOS için Intune Şirket portalı uygulamasında kullanıcı deneyimi güncelleştirmesi
 Bir kullanıcı deneyimi güncelleştirmesi iOS Şirket portalı uygulaması için Intune yakında yayımlar paylaşmak heyecan duyuyoruz. Güncelleştirme Gelişmiş Filtreler ve daha hızlı erişim için uygulamalar ve Kitaplar visual yeniden giriş sayfasının özellik.
