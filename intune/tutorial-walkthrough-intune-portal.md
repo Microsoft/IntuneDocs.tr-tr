@@ -16,16 +16,16 @@ Customer intent: As an Intune admin, I want to learn where to find the different
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd6230fda65a22bb7cae4f5d130d13bb6f2379e7
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: f9d72ec2f35f15e2515160869fc352360b17e812
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55505257"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645181"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Öğretici: Azure portalında Microsoft Intune gözden geçirme
 
-[Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) bulut bilgi işlem senaryolarına ve olanaklar çeşitli yardımcı olması için bir 100 Hizmetleri üzerinden içerir. Microsoft Intune Azure'da kullanılabilen çeşitli hizmetler biridir. Intune, şirketinizin cihazları, uygulamaları ve verileri, şirketinizin güvenlik gereksinimlerini karşıladığından emin olun yardımcı olur. Sahip olduğunuz bir denetime gereksinimleri denetlenmesi gereken kümesi ve bu gereksinimleri karşılanmadığı ne olur. [Azure portalı](https://portal.azure.com), Microsoft Intune hizmetini bulabileceğiniz yerdir. Intune'da kullanılabilen özellikleri anlama çeşitli mobil cihaz Yönetimi (MDM) ve mobil uygulama yönetimi (MAM) görevleri gerçekleştirmenize yardımcı olur.
+[Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) bulut bilgi işlem senaryolarına ve olanaklar çeşitli yardımcı olması için 100'den fazla hizmet içeriyor. Microsoft Intune Azure'da kullanılabilen çeşitli hizmetler biridir. Intune, şirketinizin cihazları, uygulamaları ve verileri, şirketinizin güvenlik gereksinimlerini karşıladığından emin olun yardımcı olur. Sahip olduğunuz bir denetime gereksinimleri denetlenmesi gereken kümesi ve bu gereksinimleri karşılanmadığı ne olur. [Azure portalı](https://portal.azure.com), Microsoft Intune hizmetini bulabileceğiniz yerdir. Intune'da kullanılabilen özellikleri anlama çeşitli mobil cihaz Yönetimi (MDM) ve mobil uygulama yönetimi (MAM) görevleri gerçekleştirmenize yardımcı olur.
 
 Bu öğreticide şunları yapacaksınız:
 > [!div class="checklist"]
@@ -72,7 +72,7 @@ Intune Azure portalında daha iyi anlamak için aşağıdaki adımları izleyin.
     ![Cihaz uyumluluk bölmesinin ekran görüntüsü](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-03.png)
     
     Uyumluluk gereksinimleri bir cihaz PIN'i veya cihaz şifrelemeyi gerektirme gibi temelde kurallardır. Cihaz uyumluluk ilkeleri, bir cihaz uyumlu olarak değerlendirilmesi için izlemeniz gereken ayarları ve kuralları tanımlar. Cihaz uyumluluğu kullanmak için şunlara sahip olmalısınız:
-    - Intune ve Azure Active Directory (AD) Premium aboneliği
+    - Intune ve Azure Active Directory (Azure AD) Premium aboneliği
     - Desteklenen bir platform çalıştıran cihazlar
     - Cihazları Intune'a kayıtlı olması gerekir
     - Bir kullanıcı veya birincil kullanıcı için kaydedilen cihazlar.
@@ -111,7 +111,7 @@ Intune Azure portalında daha iyi anlamak için aşağıdaki adımları izleyin.
 
     Doğrudan Intune'a kullanıcı ekleme ya da şirket içi Active Directory'den kullanıcıları eşitlemeye. Eklendikten sonra, kullanıcılar cihazlarını kaydedebilir ve şirket kaynaklarına erişebilir. Bu gibi durumlarda, kullanıcılar ayrıca Intune'a erişmek için ek izinler verebilirsiniz. Daha fazla bilgi için [kullanıcı ekleme ve Intune'a yönetici izni verme](users-add.md).
 
-9. Gelen [Intune](https://aka.ms/intuneportal)seçin **grupları** Intune'da bulunan Azure Active Directory (AD) grupları hakkındaki ayrıntıları görüntülemek için. Bir Intune Yöneticisi, cihazları ve kullanıcıları yönetmek için grubu kullanın. 
+9. Gelen [Intune](https://aka.ms/intuneportal)seçin **grupları** Intune'da bulunan Azure Active Directory (Azure AD) grupları hakkındaki ayrıntıları görüntülemek için. Bir Intune Yöneticisi, cihazları ve kullanıcıları yönetmek için grubu kullanın. 
 
     ![Grupları bölmesinin ekran görüntüsü](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 

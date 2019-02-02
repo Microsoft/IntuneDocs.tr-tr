@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 9ca959bf28145500df71cb9ce8c7c36d62c9f773
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: e471c14bddd80e88931326c0fad7a2a4fd85f73b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504587"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652672"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -82,6 +82,9 @@ Yönetilen Google Play uygulamaları Microsoft Intune silebilirsiniz. Yönetilen
 
 #### <a name="managed-google-play-app-type----1352580---"></a>Yönetilen Google Play uygulaması türü <!-- 1352580 -->
 **Yönetilen Google Play** uygulama türü, özellikle eklemenize olanak sağlayacaktır [yönetilen Google Play uygulamaları](https://play.google.com/work/search?q=microsoft&c=apps) ıntune. Intune Yöneticisi olarak, artık göz atabilir, arama, onaylama, eşitleme ve onaylı bir yönetilen Google Play uygulamaları Intune içerisindeki atayın.  Yönetilen Google Play konsolunu için ayrı olarak göz atmak artık ihtiyacınız ve yeniden kimlik doğrulamaya zorlayabilir artık yok.  Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**. İçinde **uygulama türü** listesinden **yönetilen Google Play** uygulama türü olarak.
+
+### <a name="default-android-pin-keyboard----3802457---"></a>Varsayılan Android PIN klavye <!-- 3802457 -->
+Intune uygulama koruma İlkesi (uygulama) PIN, PIN 'Sayısal' türüne sahip Android cihazlarında ayarladığınız son kullanıcılar için artık sabit Android klavye daha önce tasarlanan kullanıcı Arabirimi yerine varsayılan Android klavye görürler. Varsayılan klavye iki PIN türleri 'Sayısal' ve/veya 'Parola' için hem Android hem de iOS, kullanırken tutarlı olması için bu değişiklik yapılmıştır. Android'de uygulama PIN'i gibi son kullanıcıya erişim ayarları hakkında daha fazla bilgi için bkz. [Android erişim gereksinimlerini](app-protection-policy-settings-android.md#access-requirements).
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
@@ -1419,12 +1422,12 @@ Herhangi bir eylemde bulunmanız gerekmez; Bu değişiklikler, gelecek iOS CP uy
 
 
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Değişiklik planı: Exchange Online için Intune Bağlayıcısı Intune tarafından kullanılamaz <!-- 3105122 -->
-Exchange Online ve koşullu erişim ile deneyiminizi kolaylaştırmak için biz Exchange Online için Intune 'Hizmet' bağlayıcısını devre dışı bırakacağız. Bu değişiklik, aralık hizmet güncelleştirmesiyle başlar ve Şubat 2019 hizmet güncelleştirmesiyle tamamlanamadı.
+Exchange Online ve koşullu erişim ile deneyiminizi kolaylaştırmak için biz Exchange Online için Intune 'Hizmet' bağlayıcısını devre dışı bırakacağız.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-'Hizmet' bağlayıcı işlevini ortamınızda kullanmakta olduğunuz, Kayıtlarımıza göre bu yana bu iletiyi alıyorsunuz. 'Hizmet' Bağlayıcısı, Exchange Online için Exchange Active Sync yalnızca cihazların Intune yönetimini destekler ve şirket içi altyapı desteklemez. Koşullu erişim (CA) için gerekli olduğu konsolunda görüntülenme şeklini nedeniyle bu bağlayıcı görünür olduğunda gerçekte, bu CA için gerekli değildir. Intune hizmeti için aralık güncelleştirmesiyle konsolda bu netleştirmek için yeni bağlayıcılar belirlemek için bu düğmeyi devre dışı bırakırız. Ardından Şubat 2019 ' tüm mevcut Exchange Online için Intune bağlayıcıları devre dışı bırakılır.
+'Hizmet' bağlayıcı işlevini ortamınızda kullanmakta olduğunuz, Kayıtlarımıza göre bu yana bu iletiyi alıyorsunuz. 'Hizmet' Bağlayıcısı, Exchange Online için Exchange Active Sync yalnızca cihazların Intune yönetimini destekler ve şirket içi altyapı desteklemez. Koşullu erişim (CA) için gerekli olduğu konsolunda görüntülenme şeklini nedeniyle bu bağlayıcı görünür olduğunda gerçekte, bu CA için gerekli değildir. Intune hizmetine Şubat güncelleştirmesiyle konsolda bu netleştirmek için yeni bağlayıcılar belirlemek için bu düğmeyi devre dışı bırakırız. Ardından, Mart 2019 ' tüm mevcut Exchange Online için Intune bağlayıcıları devre dışı bırakılır.
 
-Ortamınızda bu bağlayıcılar kullanıyorsanız, izlemek veya Şubat ayında bağlayıcıları devre dışı bıraktıktan sonra Intune'da Exchange Active Sync yalnızca cihazları temizlemek mümkün olmayacaktır. Bu değişiklik sırasında son kullanıcılarınıza beklenen hiçbir etkisi yoktur.
+Ortamınızda bu bağlayıcılar kullanıyorsanız, izlemek ve Mart ayında bağlayıcıları devre dışı bıraktıktan sonra Intune'da Exchange Active Sync yalnızca cihazları temizlemek mümkün olmayacaktır. Bu değişiklik sırasında son kullanıcılarınıza beklenen hiçbir etkisi yoktur.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
 

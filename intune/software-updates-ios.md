@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
-ms.openlocfilehash: 12b387a5c09e0d009fa5014ff355104f6bff71f3
-ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
+ms.openlocfilehash: d73dc96c966b93f26269cc53527a787824c94d3b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290647"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652638"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Intune’da iOS güncelleştirme ilkelerini yapılandırma
 
@@ -33,7 +33,10 @@ Bu özellik iOS 10.3 ve sonraki sürümleri çalıştıran cihazları destekler.
 4. İlke için bir ad ve açıklama girin.
 5. **Ayarlar**’ı seçin. 
 
-    iOS cihazlarının en son güncelleştirmeyi yüklemeye zorlanmadığı durumlara ilişkin ayrıntıları girin. Bu ayarlar kısıtlı bir zaman çerçevesi oluşturur. Haftanın **Günlerini**, **Saat dilimini**, **Başlangıç saatini**, **Bitiş saatini** ve **Yazılım güncelleştirmesinin görünürlüğünü geciktirme (gün)** seçeneğini ayarlayabilirsiniz. Yazılım güncelleştirmeleri için 1 ila 90 gün arasında bir geciktirme aralığı seçebilirsiniz. Yazılım güncelleştirmesini geciktirmek istemiyorsanız 0 değerini girin. Bu güncelleştirme ayarları, yalnızca denetimli iOS cihazlarında geçerlidir.
+    iOS cihazlarının en son güncelleştirmeyi yüklemeye zorlanmadığı durumlara ilişkin ayrıntıları girin. Bu ayarlar kısıtlı bir zaman çerçevesi oluşturur. Haftanın **Günlerini**, **Saat dilimini**, **Başlangıç saatini**, **Bitiş saatini** ve **Yazılım güncelleştirmesinin görünürlüğünü geciktirme (gün)** seçeneğini ayarlayabilirsiniz. Yazılım güncelleştirmeleri için 1 ila 90 gün arasında bir geciktirme aralığı seçebilirsiniz. Gecikme süresi dolduğunda kullanıcılar erken gecikme tetiklendiğinde, mevcut işletim sistemi sürümüne güncelleştirmek için bildirim alın. Yazılım güncelleştirmesini geciktirmek istemiyorsanız 0 değerini girin. Bu güncelleştirme ayarları, yalnızca denetimli iOS cihazlarında geçerlidir.
+  
+    Örneğin, iOS 12.a edinilebilir **1 Ocak** ve **gecikme işletim sistemi güncelleştirmeleri** kümesine **5 gün**, bu belirli sürümü herhangi bir ucunda kullanılabilir bir güncelleştirme olarak görünmez Bu profile atanmış cihazların kullanıcı. Üzerinde **altıncı gün** aşağıdaki yayın, güncelleştirme kullanılabilir olarak görünür ve tüm son kullanıcılar, bir güncelleştirme başlatmak ücretsizdir.
+
 
 6. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin. İlkeyi oluşturmak için **Oluştur**’u seçin.
 
@@ -44,7 +47,7 @@ Profil oluşturulur ve ilke listesinde gösterilir. Apple MDM, cihazın güncell
 1. **Yazılım güncelleştirmeleri**’nde **iOS için güncelleştirme ilkeleri**’ni seçin.
 2. Var olan bir ilkeyi > **Ayarlar**’ı seçin.
 3. Kısıtlı süreyi güncelleştirin:
-
+    
     1. Haftanın günlerini seçin
     2. Bu ilkenin uygulandığı saat dilimini seçin
     3. Kara listeye alınan saatler için başlangıç ve bitiş saatlerini girin
