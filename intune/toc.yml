@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Cihaz uyumluluğu ayarlama
     items:
-    - name: Cihaz uyumluluğuna genel bakış
+    - name: Uyumluluğa genel bakış
       href: device-compliance-get-started.md
-    - name: Android ilkesi oluşturma
+    - name: Android uyumluluğu
       href: compliance-policy-create-android.md
-    - name: Android Kurumsal profili ilkesi oluşturma
+    - name: Android Kurumsal uyumluluğu
       href: compliance-policy-create-android-for-work.md
-    - name: Google Play Koruma’yı etkinleştirmek için bir ilke oluşturun
+    - name: Google Play Korumasını etkinleştirme
       href: compliance-policy-create-google-play-protect.md
-    - name: iOS ilkesi oluşturma
+    - name: iOS uyumluluğu
       href: compliance-policy-create-ios.md
-    - name: Windows ilkesi oluşturma
+    - name: Windows uyumluluğu
       href: compliance-policy-create-windows.md
-    - name: Konum tabanlı ilke
+    - name: Konum tabanlı uyumluluk
       href: use-network-locations.md
     - name: İlkeyi Değerlendir
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: Cihaz uyumluluğunu izleme
       href: compliance-policy-monitor.md
-  - name: Cihazları yapılandırma
+  - name: Cihaz ayarlarını yapılandırma
     items:
-    - name: Profilleri kullanarak cihazları yapılandırma
+    - name: Cihaz yapılandırmasına genel bakış
       href: device-profiles.md
     - name: Cihaz profilleri
       href: device-profile-create.md
     - name: Yönetim şablonları
       href: administrative-templates-windows.md
-    - name: Cihaz özellikleri (iOS ve MacOS)
+    - name: Cihaz özellikleri
       href: device-features-configure.md
-    - name: Cihaz kısıtlamaları
+    - name: Cihaz ayarlarını ve özelliklerini kısıtlama
       href: device-restrictions-configure.md
-    - name: Teslim iyileştirme
+    - name: Güncelleştirme sağlama
       href: delivery-optimization-windows.md
-    - name: Sürüm yükseltme ve mod değiştirme
+    - name: Yükseltme sürümleri ve S modu
       href: edition-upgrade-configure-windows-10.md
-    - name: E-posta ayarları
+    - name: E-posta yapılandırma
       href: email-settings-configure.md
-    - name: Bilgi noktası ayarları
+    - name: Bilgi noktası modunu etkinleştirme
       href: kiosk-settings.md
-    - name: VPN ayarları
+    - name: VPN ekleme
       href: vpn-settings-configure.md
       items:
       - name: Android için uygulama başına VPN
         href: android-pulse-secure-per-app-vpn.md
       - name: iOS için Uygulama Başına VPN
         href: vpn-setting-configure-per-app.md
-    - name: Wi-Fi ayarları
+    - name: Kablosuz Wi-Fi ağı ekleme
       href: wi-fi-settings-configure.md
       items:
       - name: Önceden paylaşılan anahtar ile Wi-Fi
         href: wi-fi-profile-shared-key.md
-    - name: Eğitim ayarları
+    - name: Eğitim Sınav Zamanı uygulaması
       href: education-settings-configure.md
     - name: Paylaşılan çok kullanıcılı cihazlar
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: Profil izleme
       href: device-profile-monitor.md
-    - name: Profil sorunlarını giderme
+    - name: Yaygın sorular ve yanıtları
       href: device-profile-troubleshoot.md
   - name: Cihaz verilerini koruma
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Intune API başvurusu
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: Cihazları yapılandırmak için kullanılan Graph API’ler
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Kaynaklar
   items:
   - name: Microsoft Intune belge kılavuzu
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504553"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645198"
