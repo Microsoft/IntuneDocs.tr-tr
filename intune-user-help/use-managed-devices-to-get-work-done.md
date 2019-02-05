@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203158"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690691"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>İş veya Okul kaynaklarına yönetilen cihazları kullanma
 Microsoft Intune kuruluşların cihazları, uygulamaları ve e-posta erişimi yönetmesine olanak sağlayan bir cihaz yönetim sistemidir. Cihaz yönetimi ve diğer çalışanlara ve öğrencilere, neredeyse her yerden ve neredeyse tüm cihazlardan gelen iş bilgilerinize erişim sağlar. Hatta, uzaktan çalışırken, sizin ve kuruluşunuzun bilgilerini güvenli kalır.
@@ -39,16 +39,9 @@ Get Şirket portalı tarafından ya da:
 - Gidip [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) şirketinizin yedekleme kümesini destekler.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Uygulamayla web sitesi arasındaki fark nedir?
-Şirket Portalı uygulamasıyla Şirket Portalı web sitesi arasında birkaç küçük fark vardır, ama aynı görevleri çoğunlukla her ikisinde de gerçekleştirebilirsiniz. Gerçekleştirebileceğiniz görevlerden bazıları:
+Her Windows 10, iOS, macOS ve Android için Şirket portalı uygulaması cihazınızın ilgili platformu ile sorunsuz şekilde entegre olur. Web sitesi herhangi bir CİHAZDAN erişilebilir ve hangi cihazı kullanıyor olursanız ne olursa olsun aynı, Evrensel deneyimi sağlar. 
 
-- Cihazlarınızı yönetime kaydetme
-- Cihazlarınızın durumuna bakma
-- Kuruluşunuz için önerilen ve gerekli olan uygulamaları indirme
-- Cihazınızı yeniden adlandırma
-- Cihazınızın PIN'ini veya parolasını sıfırlama
-- Yardım için BT bölümünüze başvurma
-
-Şirket Portalı web sitesiyle yapabileceklerinizi cihazınızdaki Şirket Portalı uygulamasını kullanarak yapabileceklerinizle karşılaştırmak için aşağıdaki bağlantılardan birini seçin:
+Kayıt adımları, aşağıdaki bağlantıları sürümünden itibaren Şirket portalı kılavuzlar, cihazınızın platforma özgü bulabilirsiniz:  
 
 - [Android cihazınızı kullanma](using-your-android-device-with-intune.md)
 - [iOS cihazınızı kullanma](using-your-ios-device-with-intune.md)

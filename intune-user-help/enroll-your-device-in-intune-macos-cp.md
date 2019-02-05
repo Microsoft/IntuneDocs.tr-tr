@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
-ms.translationtype: HT
+ms.openlocfilehash: d54c778923b0d217187f6e4c70e4bc8730788fbc
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260258"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690810"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -57,7 +57,7 @@ OS X El Capitan 10.11 ve sonrasını çalıştıran macOS cihazları kaydetmek i
 
 4. __Cihazlar__ sayfasında yönetilen cihazlar listesi veya bir başlık görüntülenir. Göreceğiniz şey, yönetilen bir cihazınız olup olmamasına bağlıdır. 
     * Listede olmayan bir cihazı eklemek için **Hangi cihazı kullandığınızı bizimle paylaşmak veya yeni bir cihaz eklemek için buraya dokunun** yazılı başlığı seçin.
-    * Hiç cihazınız yoksa başlıkta şu yazar: **Yönetilen cihazınız yok. Buraya dokunup cihazı ekleyin.** Cihazınızı eklemek için başlığa tıklayın.  
+    * Herhangi bir cihaza yoksa, başlık okur: **Yönetilen cihazınız yok. Buraya dokunup cihazı ekleyin.** Cihazınızı eklemek için başlığa tıklayın.  
 
      ![Tıklanacak yeri vurgulamak için başlık seçeneği etrafında kırmızı kare bulunan Cihazlar sayfasının ekran görüntüsü.](./media/CP-enroll-MACOS-1808.png)  
 5.  Aşağıdaki adımlardan hangisi Şirket Portalı’nda görmekte olduğunuz iletiyle eşleşiyorsa onu tamamlayın.  
@@ -73,7 +73,7 @@ OS X El Capitan 10.11 ve sonrasını çalıştıran macOS cihazları kaydetmek i
 
 7. Yükleyici tamamlandığında **Başlatma çubuğuna** gidin ve **Şirket Portalı**’nı açın.  
 
-8. macOS cihazınız, Şirket Portalı uygulamasını açmak istediğinizi onaylamanızı ister. **Aç**'a tıklayın.  
+8. macOS cihazınız, Şirket Portalı uygulamasını açmak istediğinizi onaylamanızı ister. Tıklayın **açık**.  
 
    > [!TIP]
    > Cihazınızın, kuruluşunuzun kaynaklarına erişmek için yeterli güvenliğe sahip olduğunu doğrulamak için Intune'un bilgisayarınıza erişmesi gerekir. Bilgisayarınız Şirket Portalı uygulamasını açmazsa [ağ geçidi denetleyicisini kapatın](https://support.apple.com/HT202491). Ardından uygulamayı açın.
@@ -93,4 +93,11 @@ MDM kanalı bağlantısını tanımlayan yönetim profilidir. Yönetim profili d
 
 Ayrıca, bu diğer profiller bireysel doğrulama gerektirmediğinden bunlar daha hızlı oluşturulur ve cihazlara teslim edilir. 
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) ulaşabilirsiniz.  
+## <a name="updating-the-company-portal-app"></a>Şirket Portalı uygulamasını güncelleştirme
+
+Şirket Portalı uygulamasını güncelleştirmek, diğer Office uygulamalarında olduğu gibi Mac için Microsoft AutoUpdate yoluyla yapılır. [Buraya tıklayarak macOS için Microsoft uygulamalarını güncelleştirme](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1) hakkında daha fazla bilgi edinin.  
+
+## <a name="next-steps"></a>Sonraki Adımlar  
+Ek Yardım mı gerekiyor? Şirketinizin destek bölümüne danışın. İletişim bilgilerine [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) ulaşabilirsiniz.  
+
+

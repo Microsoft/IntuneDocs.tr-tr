@@ -2,10 +2,10 @@
 title: Microsoft Intune - Azure güvenlik temellerini kullanın | Microsoft Docs
 description: Ekleyebilir veya kullanıcı ve mobil cihaz yönetimi için Microsoft Intune kullanarak cihazlardaki verileri korumak için önerilen grubu güvenlik ayarlarını yapılandırın. BitLocker'ı etkinleştirmek, Windows Defender Gelişmiş tehdit koruması yapılandırma, Internet Explorer denetim, Smart Screen kullanan, yerel güvenlik ilkelerini ayarlama, parola iste, Internet karşıdan yüklemeler ve daha fazlasını engelleyin.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc5faff7ea06bca07c06aadb887aa199739c6c0
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 8102ab88e878f7976ab7946f67080c4d4f23d6b1
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229934"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690725"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune'da Windows 10 Güvenlik taban çizgisi oluşturma
 
-Güvenlik temellerini üzeri ve Windows 10 çalıştıran cihazlar için kullanılabilir bir önizleme özelliğidir. Bu özellik, güvenli ve kullanıcılarınızı ve cihazlarınızı korumaya yardımcı olmak üzere birçok Intune ayarı içerir. Güvenlik ekipleri tarafından önerilen değerleri için bu ayarları da otomatik olarak ayarlar. Örneğin, taban çizgisi BitLocker'ı otomatik olarak etkinleştirir, otomatik olarak bir cihazın kilidini açmak için parola gerektirir, otomatik olarak ve temel kimlik doğrulaması devre dışı bırakır.
+Güvenlik temellerini üzeri ve Windows 10 çalıştıran cihazlar için kullanılabilir bir önizleme özelliğidir. Bu özellik, kullanıcı ve cihazları koruyun ve güvenliğini sağlamaya yardımcı olmak için kullanabileceğiniz Intune tarafından desteklenen çok sayıda ayarları içerir. Güvenlik ekipleri tarafından önerilen değerleri için bu ayarları da otomatik olarak ayarlar. Örneğin, taban çizgisi BitLocker'ı otomatik olarak etkinleştirir, otomatik olarak bir cihazın kilidini açmak için parola gerektirir, otomatik olarak ve temel kimlik doğrulaması devre dışı bırakır.
 
 Bu özellik şu platformlarda geçerlidir:
 
@@ -94,6 +94,12 @@ Profil oluşturulduktan sonra kullanıcılar, cihazlar ve gruplar için atanmak 
 
 Kaydettiğiniz hemen sonra Intune ile iade gönderilirken profili cihazlara gönderilir. Bu nedenle, bunu hemen oluşabilir.
 
+## <a name="available-security-baselines"></a>Kullanılabilir güvenlik temelleri  
+
+Aşağıdaki güvenlik temelleri, Intune ile kullanmak için kullanılabilir olan.
+- **Önizleme: MDM güvenlik temeli**
+  - Sürüm: [Ekim 2018](security-baseline-settings-windows.md)
+
 ## <a name="q--a"></a>Soru - Yanıt
 
 #### <a name="why-these-settings"></a>Neden bu ayarları?
@@ -117,5 +123,5 @@ Kesinlikle, Hayır konuşma. Microsoft Güvenlik takımı, kuruluş, öneriler d
 - Şirket içi Active Directory Grup İlkeleri ' Microsoft Intune Azure Active Directory (AD) kullanarak bir saf bulut çözümü geçiş bir yolculuktur. Yardımcı olmak için GPO'ları hibrit AD'ye ve Azure AD'ye katılmış cihazlar için yayımlanan Yardımcısı vardır. Bu cihazları buluttan (Intune) gelen MDM ayarları ve Grup İlkesi ayarları gerektiği gibi şirket içi etki alanı denetleyicilerinden elde edebilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-
-Durum ve izleme denetimi [taban çizgisi ve profili](security-baselines-monitor.md).
+- Görünüm [Windows Güvenlik taban çizgisi ayarlarını](security-baseline-settings-windows.md) Intune tarafından desteklenen.  
+- Durum ve izleme denetimi [taban çizgisi ve profili](security-baselines-monitor.md).

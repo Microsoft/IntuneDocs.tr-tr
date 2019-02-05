@@ -5,173 +5,142 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
-ms.reviewer: karanda
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: c0177e136d516ba1d4fe44c7301b1534ab1c5e6a
+ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297409"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55737477"
 ---
-# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>iOS cihazlar için Intune’da uygulama başına Sanal Özel Ağ (VPN) ayarlama
+# <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Yedekleme uygulama başına sanal özel ağ (VPN) ıntune'da iOS cihazları için ayarlayın
 
-Intune ile yönetilen iOS cihazlarda hangi yönetilen uygulamaların Sanal Özel Ağınızı (VPN) kullanabileceğini belirtebilirsiniz. Intune’da bir uygulama başına VPN oluşturduğunuzda, şirket belgelerine erişirken son kullanıcılar otomatik olarak VPN’iniz yoluyla bağlanır.
+Microsoft Intune oluşturun ve sanal özel bir uygulamaya atanan ağlar (VPN) kullanın. Bu özellik, "uygulama başına VPN" olarak adlandırılır. Intune tarafından yönetilen cihazlardaki VPN kullanabileceğiniz yönetilen uygulamaları seçin. Uygulama başına VPN kullanırken, son kullanıcılar otomatik olarak VPN üzerinden bağlanır ve belgeler gibi kuruluş kaynaklarına erişin.
 
-Uygulama başına VPN şu anda şu sağlayıcılar için kullanılabilir durumda:
+Bu özellik şu platformlarda geçerlidir:
 
- - Check Point Remote Access VPN
- - Cisco AnyConnect
- - Citrix
- - F5
- - Pulse Connect Secure
- - Palo Alto Networks
- - SonicWall
- - Zscaler özel erişim
+- iOS 9 ve üzeri
+
+VPN uygulama başına VPN destekleyip desteklemediğini görmek için VPN sağlayıcıya ait belgelere bakın.
+
+Bu makalede, uygulama başına VPN profili oluşturma ve uygulamalarınıza bu profili atarsınız işlemini göstermektedir. Son kullanıcılarınız için sorunsuz uygulama başına VPN deneyimi oluşturmak için aşağıdaki adımları kullanın. Uygulama başına VPN desteği çoğu VPN'lerle, kullanıcı bir uygulamayı açan ve VPN için otomatik olarak bağlanır.
+
+Bazı VPN, uygulama başına VPN ile kullanıcı adı ve parola kimlik doğrulamasına izin verin. Diğer bir deyişle kullanıcı adı ve VPN'ye bağlanmak için parola girmeniz gerekir.
+
+## <a name="per-app-vpn-with-zscaler"></a>Zscaler ile uygulama başına VPN
+
+Zscaler özel erişim (ZPA) kimlik doğrulaması için Azure Active Directory (Azure AD) ile tümleşir. ZPA kullanırken, ihtiyacınız olmayan [güvenilen sertifika](#create-a-trusted-certificate-profile) veya [SCEP veya PKCS sertifika](#create-a-scep-or-pkcs-certificate-profile) profilleri (Bu makalede açıklanmıştır). Uygulama başına VPN profili kümesi varsa Zscaler, ilgili uygulamalardan birini açmak için yukarı ZPA için otomatik olarak bağlan değil. Bunun yerine, kullanıcının Zscaler uygulamada oturum açmanız gerekir. Ardından, ilişkili uygulamalar için uzaktan erişim sınırlıdır.
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Uygulama başına VPN önkoşulları
 
 > [!IMPORTANT]
-> VPN satıcınızın uygulama başına VPN için belirli bir donanım veya lisanslama gibi başka bazı gereksinimleri olabilir. Satıcının belgelerini gözden geçirmeyi unutmayın ve Intune'da uygulama başına VPN'yi ayarlamadan önce önkoşulları yerine getirin.
+> VPN satıcınız, belirli donanım ya da lisans gibi uygulama başına VPN için diğer gereksinimleri olabilir. Satıcının belgelerini gözden geçirmeyi unutmayın ve Intune'da uygulama başına VPN'yi ayarlamadan önce önkoşulları yerine getirin.
 
-VPN sunucusu, kimliğini doğrulamak amacıyla cihaz bir istem yapmadan kabul edilmesi gereken sertifikayı sunar. Sertifikanın otomatik olarak onaylanacağından emin olmak için, Sertifika Yetkilisi (CA) tarafından verilen VPN sunucusu kök sertifikasını barındıran bir güvenilir sertifika profili oluşturun. 
+VPN sunucusu, kimliğini doğrulamak amacıyla cihaz bir istem yapmadan kabul edilmesi gereken sertifikayı sunar. Sertifika otomatik olarak onaylanacağından onaylamak için sertifika yetkilisi (CA) tarafından verilen VPN sunucusu kök sertifikasını içeren bir güvenilen sertifika profili oluşturun. 
 
-Sertifikayı dışarı aktarın ve CA’yı ekleyin.
+#### <a name="export-the-certificate-and-add-the-ca"></a>Sertifikayı dışarı aktarın ve CA'yı ekleyin
 
 1. VPN sunucunuzda yönetim konsolunu açın.
-2. VPN sunucunuzun Sertifika Tabanlı Kimlik Doğrulaması kullandığını doğrulayın. 
+2. VPN sunucunuzun sertifika tabanlı kimlik doğrulaması kullandığını onaylayın. 
 3. Güvenilir kök sertifika dosyasını dışarı aktarın. .cer uzantısına sahip bu dosyayı, güvenilir sertifika profili oluştururken eklersiniz.
 4. VPN sunucusunda kimlik doğrulaması için sertifikayı veren CA’nın adını ekleyin.
-    Cihazın sunduğu CA, VPN sunucusundaki Güvenilir CA listesindeki bir CA ile eşleşirse, VPN sunucusu cihazın kimliğini başarıyla doğrular.
+
+    Ardından cihazın sunduğu CA VPN sunucusundaki güvenilir CA listesindeki bir CA eşleşirse, VPN sunucusu cihazın başarıyla kimliğini doğrular.
 
 ## <a name="create-a-group-for-your-vpn-users"></a>VPN kullanıcılarınız için grup oluşturma
 
-Uygulama Başına VPN’e erişimi olan üyeleri barındırması için Azure Active Directory’de (Azure AD) bir grup oluşturun veya mevcut bir grubu seçin.
-
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-2. **Gruplar**’ı seçin ve daha sonra **Yeni grup**’a tıklayın.
-3. Grubun **Grup türü**’nü seçin. 
-3. Grubun **Grup adı**’nı yazın. 
-4. Grubun **Grup açıklaması**’nı yazın. 
-5. **Üyelik türü** için **Atandı**’yı seçin.
-7. **Üyeler** bölmesinde VPN kullanıcılarını adları veya e-posta adresleriyle arayın.
-8. Her bir kullanıcıyı seçin ve **Seç**’e tıklayın.
-9. **Oluştur**'a tıklayın.
+Oluşturun veya mevcut bir grubu Azure Active Directory'de (Azure AD) kullanıcı veya uygulama başına VPN kullanan cihazlar için seçin. Yeni bir grup oluşturmak için bkz: [kullanıcıları ve cihazları düzenlemek için gruplar ekleyin](groups-add.md).
 
 ## <a name="create-a-trusted-certificate-profile"></a>Güvenilen bir sertifika profili oluşturma
 
 CA tarafından verilen VPN sunucusu kök sertifikasını Intune’da oluşturulan bir profile aktarın. Güvenilen sertifika profili, iOS cihaza VPN sunucusu tarafından sunulan CA’ya otomatik olarak güvenmesi talimatını verir.
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
-3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
-    1. **Ad** yazın.
-    2. **Açıklama** yazın.
-    3. **Platform** için **iOS**’u seçin.
-    4. **Profil türü** için **Güvenilen sertifika**’yı seçin.
-4. Klasör simgesine tıklayarak VPN yönetim konsolundan aktardığınız VPN sertifikanıza (.cer dosyası) göz atın. **Tamam** düğmesine tıklayın.
-5. **Oluştur**’a tıklayın.
+1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+3. Aşağıdaki özellikleri girin:
+    - **Ad**
+    - **Açıklama**
+    - **Platform**: Seçin **iOS**.
+    - **Profil türü**: Seçin **güvenilen sertifika**.
+4. Klasör simgesini seçin ve, VPN yönetim konsolundan aktardığınız VPN sertifikanıza (.cer dosyası) göz atın. 
+5. Seçin **Tamam** > **oluşturma**.
 
-    ![Güvenilen bir sertifika profili oluşturma](./media/vpn-per-app-create-trusted-cert.png)
+    ![Microsoft Intune iOS cihazları için bir güvenilen sertifika profili oluşturma](./media/vpn-per-app-create-trusted-cert.png)
 
-## <a name="create-a-scep-certificate-profile"></a>Bir SCEP sertifika profili oluşturma
+## <a name="create-a-scep-or-pkcs-certificate-profile"></a>Bir SCEP veya PKCS sertifika profili oluşturma
 
-Güvenilen kök sertifika profili, iOS’un VPN sunucusuna otomatik olarak güvenmesini mümkün kılar. SCEP sertifikası ise iOS VPN istemcisinden VPN sunucusuna kimlik bilgileri sağlar. Sertifika, iOS cihaz kullanıcısına kullanıcı adı ve parola için istemde bulunmaya gerek kalmaksızın cihazın sessizce kimlik doğrulamasına imkan verir. 
+Güvenilen kök sertifika profili cihaza otomatik olarak VPN sunucusuna güvenmesini sağlar. SCEP veya PKCS sertifika, iOS VPN istemcisinden VPN sunucusuna kimlik bilgilerini sağlar. Sertifika bir kullanıcı adı ve parola istemeden sessizce kimlik izin verir. 
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
-3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
-    1. **Ad** yazın.
-    2. **Açıklama** yazın.
-    3. **Platform** için **iOS**’u seçin.
-    4. **Profil türü** için **SCEP sertifikası**’nı seçin.
-4. **Yıllar**’ı seçin ve **Sertifika geçerlilik süresi** için `2` yazın.
-5. **Konu adı biçimi** için **Ortak ad**’ı seçin.
-6. **Konu alternatif adı** için **Kullanıcı asıl adı (UPN)** seçin.
-7. **Anahtar kullanımı** için **Dijital imza** ve **Anahtar şifreleme**’yi seçin.
-8. **Anahtar boyutu (bit cinsinden)** için **2048**’i seçin.
-9. Kök Sertifika’ya tıklayın ve bir SCEP sertifikası seçin. **Tamam** düğmesine tıklayın.
-10. **Genişletilmiş anahtar kullanımı**’nın **Ad**’ına `Client Authentication` yazın.
-11. **Nesne tanımlayıcısı**’na `1.3.6.1.5.5.7.3.2` yazın.
-12. **Ekle**'yi tıklatın.
-13. ***Sunucu URL’sini*** yazın ve **Ekle**’ye tıklayın.
-14. **Tamam** düğmesine tıklayın.
-15. **Oluştur**’a tıklayın.
+Yapılandırma ve istemci kimlik doğrulama sertifikası atamak için aşağıdaki makalelerden birine bakın:
 
-    ![Bir SCEP sertifika profili oluşturma](./media/vpn-per-app-create-scep-cert.png)
+- [Intune ile SCEP sertifikalarını yapılandırma ve yönetme](certificates-scep-configure.md)
+- [Intune ile PKCS sertifikalarını yapılandırma ve yönetme](certficates-pfx-configure.md)
+
+İstemci kimlik doğrulama sertifikası yapılandırdığınızdan emin olun. Bu doğrudan SCEP sertifika profillerini ayarlayabilirsiniz (**genişletilmiş anahtar kullanımı** listesi > **istemci kimlik doğrulaması**). PKCS için istemci kimlik doğrulaması sertifika şablonunda sertifika yetkilisi (CA) olarak ayarlayın.
+
+![Konu adı biçimi, anahtar kullanımı, genişletilmiş anahtar kullanımı ve daha fazlası dahil olmak üzere Microsoft Intune bir SCEP sertifika profili oluşturma](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>Uygulama başına VPN profili oluşturma
 
-VPN profili; istemci kimlik bilgilerini taşıyan SCEP sertifikasını, VPN’ye bağlantı bilgilerini ve uygulama başına VPN özelliğini iOS uygulaması tarafından kullanılmak üzere etkinleştirecek olan uygulama başına VPN bayrağını barındırır.
+VPN profili SCEP veya PKCS sertifika istemci kimlik bilgileri, VPN bağlantı bilgilerini içerir ve uygulama başına VPN özelliğini etkinleştirmek için uygulama başına VPN bayrağını iOS uygulaması tarafından kullanır.
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-2. **Cihaz yapılandırması**’nı seçin ve daha sonra **Profiller**’e tıklayın.
-3. **Profil oluştur**’a tıklayın. **Profil oluştur**’da:
-    1. **Ad** yazın.
-    2. **Açıklama** yazın.
-    3. **Platform** için **iOS**’u seçin.
-    4. **Profil türü** için **VPN**’i seçin.
-4. **Temel VPN**’i seçin. **Temel VPN**’de:
-    1. **Bağlantı adı**’nı yazın.
-    2. **IP adresi veya FQDN**’yi yazın.
-    3. **Kimlik doğrulama** yöntemi için **Sertifikalar**’ı seçin.
-    4. **Kimlik doğrulama sertifikası** altında SCEP sertifikasını seçin ve **Tamam**’a tıklayın.
-    5. **Bağlantı türü** için VPN’inizi seçin.
-    6. Gerekirse VPN’inizin özniteliklerini yapılandırın.
-    7. **Bölünmüş Tüneli Devre Dışı Bırak**’ı seçin.
-5. **Otomatik VPN**’e tıklayın. **Otomatik VPN**’de:
-    1. **Otomatik VPN türü** için **Uygulama Başına VPN**’i seçin.
-    2. VPN URL’sini yazın ve **Ekle**’ye tıklayın.
-    3. **Tamam** düğmesine tıklayın.
-6. **Tamam** düğmesine tıklayın.
-7. **Oluştur**’a tıklayın.
+1. İçinde **Intune**seçin **cihaz Yapılandırması** > **profilleri** > **profili oluşturma**. 
+2. Aşağıdaki özellikleri girin: 
+    - **Ad**
+    - **Açıklama**
+    - **Platform**: Seçin **iOS**.
+    - **Profil türü**: Seçin **VPN**.
+3. İçinde **bağlantı türü**, VPN istemci uygulamanızı seçin.
+4. **Temel VPN**’i seçin. [iOS VPN ayarları](vpn-settings-ios.md) listeler ve tüm ayarlarını açıklar. Uygulama başına VPN kullanırken, listelenen aşağıdaki özellikleri ayarlayın emin olun: 
+    
+    - **Kimlik doğrulama yöntemi**: Seçin **sertifikaları**. 
+    - **Kimlik doğrulama sertifikası**: Mevcut bir SCEP veya PKCS sertifika seçin > **Tamam**.      
+    - **Bölünmüş tünel**: Seçin **devre dışı** tüm trafiği VPN bağlantısı etkin olduğunda VPN tünelini kullanmasını zorunlu kılmak için. 
 
-    ![Uygulama başına VPN profili oluşturma](./media/vpn-per-app-create-vpn-profile.png)
+      ![Uygulama başına VPN profili, bir bağlantı, IP adresi veya FQDN, kimlik doğrulama yöntemi, girin ve Microsoft Intune tunning Böl](./media/vpn-per-app-create-vpn-profile.png)
 
+    Diğer ayarlar hakkında daha fazla bilgi için bkz: [iOS VPN ayarları](vpn-settings-ios.md).
+
+5. Seçin **otomatik VPN** > **otomatik VPN türü** > **uygulama başına VPN**
+
+    ![Intune'da uygulama başına VPN için otomatik VPN, iOS cihazlarında ayarlayın.](./media/vpn-per-app-automatic.png)
+
+6. Seçin **Tamam** > **Tamam** > **oluşturma**.
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Bir uygulamayı VPN profiliyle ilişkilendirme
 
 VPN profilinizi ekledikten sonra, uygulamayı ve Azure AD grubunu bu profil ile ilişkilendirin.
 
-1. [Azure portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **İstemci uygulamaları**’nı seçin.
-4. **Uygulamalar**’a tıklayın.
-5. Uygulama listesinden uygulamayı seçin.
-6. **Atamalar**’a tıklayın.
-7. **Grup ekle**’ye tıklayın.
-8. **Grup ekle** bölmesindeki **Atama türü** için **Gerekli**’yi seçin.
-9. Daha önce tanımladığınız grubu seçip **Bu uygulamayı gerekli kıl**’ı seçin.
-10. **VPN** için VPN tanımınızı seçin.
- 
-    > [!NOTE]  
-    > Bazen VPN tanımının değeri alması bir dakikayı bulabilir. 3-5 dakika bekledikten sonra **Kaydet**’e tıklayın.
+1. **Intune**’da **İstemci uygulamaları** > **Uygulamalar**’ı seçin.
+2. Listeden bir uygulama seçin > **atamaları** > **Grup Ekle**.
+3. İçinde **atama türü**seçin **gerekli** veya **kayıtlı cihazlar için kullanılabilir**.
+4. Seçin **eklenen gruplar** > **dahil edilecek grupları seçin** > grubu seçin [oluşturduğunuz](#create-a-group-for-your-vpn-users) (Bu makaledeki) > **seçin**.
+5. İçinde **VPN'ler**, uygulama başına VPN profili seçin [oluşturduğunuz](#create-a-per-app-vpn-profile) (Bu makaledeki).
 
-11. **Tamam**’a ve **Kaydet**’e tıklayın.
+    ![Bir uygulamayı Microsoft Intune uygulama başına VPN profili atama](./media/vpn-per-app-app-to-vpn.png)
 
-    ![Bir uygulamayı VPN ile ilişkilendirme](./media/vpn-per-app-app-to-vpn.png)
+6. Seçin **Tamam** > **Kaydet**.
 
-Aşağıdaki koşullar var olduğunda, cihazın bir sonraki iade edilişinde uygulama ile profil arasındaki ilişkilendirme kaldırılacak:
+Aşağıdaki koşulların tümü mevcut olduğunda sonraki cihaz iade sırasında bir profil ile bir uygulama arasındaki ilişkiyi kaldırılır:
+
 - Uygulama gerekli yükleme amacı kullanılarak hedeflendi.
 - Hem profil hem de uygulama aynı grubu hedeflendi.
 - Uygulama başına VPN yapılandırmasını uygulama atamasından kaldırıyorsunuz.
 
-Aşağıdaki koşullar varolduğunda, son kullanıcı şirket portalından bir yeniden yükleme isteğinde bulunana kadar uygulamayla profil arasındaki ilişkilendirme kalır:
+Bir profil ile bir uygulama arasındaki ilişkiyi, aşağıdaki koşulların tümü mevcut olduğunda kullanıcı şirket Portalı'ndan bir yeniden yükleme istekleri kadar devam eder:
+
 - Uygulama sağlanan yükleme amacı kullanılarak hedeflendi.
 - Hem profil hem de uygulama aynı grubu hedeflendi.
-- Son kullanıcı şirket portalından uygulama yüklemesi istedi ve bunun sonucunda uygulama ve profil cihaza yüklenir.
+- Son kullanıcı uygulama ve cihaza yüklenen profil sonuçlanır şirket Portalı'ndan uygulama yükleme istedi.
 - Uygulama başına VPN yapılandırmasını uygulama atamasından kaldırır veya değiştirirsiniz.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>iOS cihazda bağlantıyı doğrulama
@@ -180,35 +149,16 @@ Uygulama başına VPN’niz ayarlı ve uygulamanızla ilişkili olduğunda, bağ
 
 ### <a name="before-you-attempt-to-connect"></a>Bağlanmayı denemeden önce
 
- - iOS 9 veya üzerini çalıştırdığınızdan emin olun.
- - Yukarıda bahsedilen *tüm* ilkeleri aynı grup ve kullanıcılara dağıttığınızdan emin olun. Bunu yapmamanız durumunda uygulama başına VPN deneyimi kesinlikle başarısız olacaktır.  
- - Desteklenen üçüncü taraf VPN uygulamasına sahip olduğunuzdan emin olun. Aşağıdaki VPN uygulamaları desteklenmektedir:
-    - Check Point Capsule Connect
-    - Cisco AnyConnect
-    - Citrix VPN
-    - Citrix SSO
-    - F5 Access
-    - Palo Alto Networks GlobalProtect
-    - Pulse Secure
-    - SonicWall Mobile Connect
-    - Zscaler
-
-    > [!NOTE]
-    > Pulse Secure VPN uygulamasını kullanıyorsanız uygulama katmanı veya paket katmanı tünelini kullanmayı seçebilirsiniz. **ProviderType** değerini uygulama katmanı tüneli için **app-proxy** olarak veya paket katmanı tüneli için **packet-tunnel** ayarlayın.
+ - Yukarıda belirtilen tüm ilkeler için aynı grup dağıttığınızdan emin olun. Aksi takdirde, uygulama başına VPN deneyimi işe yaramaz.
+ - Pulse Secure VPN veya özel VPN istemci uygulaması kullanıyorsanız, uygulama katmanı veya paket Katman Tünel kullanmayı da tercih edebilirsiniz. **ProviderType** değerini uygulama katmanı tüneli için **app-proxy** olarak veya paket katmanı tüneli için **packet-tunnel** ayarlayın. Doğru değeri kullandığınızdan emin olmak için VPN sağlayıcıya ait belgelere bakın.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Uygulama başına VPN kullanarak bağlanma
 
 VPN’i seçmek veya kimlik bilgilerinizi girmek zorunda kalmadan bağlanarak sıfır dokunma deneyimini dpğrulayın. Sıfır dokunma deneyimi ile:
 
- - Cihaz, VPN sunucusuna güvenmenizi istemez. Yani **Dinamik Güven** iletişim kutusunu görmezsiniz.
- - Kimlik bilgileri girmeniz gerekmez.
- - Bağlan düğmesine dokunduktan sonra VPN’e bağlanırsınız.
-
-iOS cihazda bağlantıyı doğrulayın.
-
-1. VPN uygulamasına dokunun.
-2. **Bağlan**’a dokunun.  
-VPN, başka bir istem yapmadan başarıyla bağlanır.
+ - Cihaz VPN sunucusuna güvenmesini ister değil. Diğer bir deyişle, kullanıcının görmez **dinamik güven** iletişim kutusu.
+ - Kullanıcı kimlik bilgilerini türüne sahip değil.
+ - İlişkili uygulamalar biri kullanıcı oturum açtığında kullanıcı cihazının VPN'ye bağlı.
 
 <!-- ## Troubleshooting the per-app VPN
 
@@ -225,4 +175,4 @@ To review event logs:
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - iOS ayarlarını gözden geçirmek için bkz. [Microsoft Intune’da iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
--  VPN ayarı ve Intune hakkında daha fazla bilgi almak için bkz. [Microsoft Intune’da VPN ayarlarını yapılandırma](vpn-settings-configure.md).
+- VPN ayarı ve Intune hakkında daha fazla bilgi için bkz. [Intune VPN ayarlarını yapılandırma](vpn-settings-configure.md).
