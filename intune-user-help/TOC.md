@@ -98,7 +98,7 @@
 ##### [SandBlast Mobile Protect’i Kullanma](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Zimperium zIPS’i Kullanma](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-## [macOS cihazınızı kullanma](using-your-macos-device-with-intune.md)
+## macOS cihazınızı kullanma
 ### [Bir macOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-cp.md)
 ### [Kuruluş tarafından sağlanan macOS cihazınızı kaydetme](enroll-company-device-macos.md)  
