@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 6613b19102aac752e9717fc376d99a178fe9dd3c
+ms.sourcegitcommit: ef85e28df802c974664305270c4a8571c0bb47b9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230129"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742971"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
-Bu makalede, listeler ve Windows 10 ve daha yeni cihazlarda denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları kullanın izin ver veya özellikleri devre dı810şı bırakabilir, parola kuralları ayarla, kilit ekranı özelleştirmek için Windows Defender'ı ve daha fazlasını kullanın.
+Bu makalede, listeler ve Windows 10 ve daha yeni cihazlarda denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları kullanın izin ver veya özellikleri devre dışı bırakabilir, parola kuralları ayarla, kilit ekranı özelleştirmek için Windows Defender'ı ve daha fazlasını kullanın.
 
 Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan veya Windows 10 cihazlarına dağıtılabilir.
 
@@ -70,6 +70,7 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 - **Microsoft hesabı**: Kullanıcının bir Microsoft hesabını cihazla ilişkilendirmesine olanak sağlar.
 - **Microsoft olmayan hesaplar**: Bir Microsoft hesabı ile ilişkili olmayan e-posta hesaplarına cihaza ekleme olanağı sunar.
 - **Microsoft hesabı için ayar eşitlemesi**: Cihazlar arasında eşitlenmesine izin, bir Microsoft hesabıyla ilişkilendirilmiş cihaz ve uygulama ayarlarının izin verin.
+- **Microsoft Account oturum açma Yardımcısı**: Seçin **devre dışı** son kullanıcılar Microsoft oturum açma Yardımcısı hizmetini (wlidsvc) denetlemesini el ile durdurma ve hizmet başlatma gibi önlemek için. Ayarlandığında **yapılandırılmadı**, son kullanıcıların hizmetini başlatma ve durdurma izin verebilir, işletim sistemi (OS) varsayılan, wlidsvc NT hizmeti kullanır. Bu hizmet, kullanıcıların kendi Microsoft hesabınızda oturum açmak işletim sistemi tarafından kullanılır.
 
 ## <a name="cloud-printer"></a>Bulut Yazıcı
 
@@ -192,7 +193,7 @@ Aşağıdaki ayarları girin:
 ## <a name="locked-screen-experience"></a>Kilit ekranı deneyimi
 
 - **İşlem Merkezi bildirimleri (yalnızca mobil)**: Sağlar İşlem Merkezi bildirimleri (yalnızca Windows 10 Mobile) cihaz kilit ekranında görüntülenir.
-- **Ekranı resmi URL'si (yalnızca Masaüstü)**: Windows kilit ekranı duvar kağıdı olarak kullanılan JPEG biçiminde bir resmin URL'sini girin. Kullanıcılar, bu ayarı değiştiremezsiniz.
+- **Ekranı resmi URL'si (yalnızca Masaüstü)**: Windows kilit ekranı duvar kağıdı olarak kullanılan JPEG biçiminde bir resmin URL'sini girin. Bu ayar, görüntünün kilitler. Görüntü daha sonra değiştirilemez.
 - **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)**: Kullanıcıların süreyi yapılandırmasına olanak tanır 
 - **(Yalnızca Masaüstü) kilitli ekranda Cortana**: Kullanıcı, cihaz kilit ekranında (yalnızca Windows 10 Masaüstü) olduğunda Cortana ile etkileşim kurmasına izin vermez.
 - **Kilitli ekranda bildirimler**: Gelen gösteren cihaz kilitleme ekranında uyarı iletileri engelleyin.
@@ -313,7 +314,6 @@ Aşağıdaki ayarları girin:
   - **Önceki parolaların yeniden kullanılmasını engelle**: Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.
   - **Cihaz (yalnızca mobil) boşta kalma durumundan çıktığında parola isteme**: Boşta durumundaki bir cihazın kilidini açmak için kullanıcının parola girmesi gerektiğini belirtir (yalnızca Windows 10 Mobile).
   - **Basit parolalar**: 1111 ve 1234 gibi basit parolaların kullanımına olanak sağlar. Bu ayar, Windows resimli parolalarının kullanımına izin verir veya bunu engeller.
-- **Şifreleme**: Hedeflenen cihazlarda şifrelemeyi etkinleştirin.
 
 ## <a name="per-app-privacy-exceptions"></a>Uygulama başına gizlilik özel durumları
 
