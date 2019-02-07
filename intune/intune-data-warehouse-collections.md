@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: a2a832e773a1a2fb413bfbc761d93988f2230ec7
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297511"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761084"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
@@ -357,7 +357,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | Uygulanamaz                  | Kayıt hatası kategorisi geçerli değil.                                                            |
 | Kullanılamıyor                   | Kayıt hatası kategori kullanılamıyor.                                                             |
 | Bilinmiyor                         | Bilinmeyen hata.                                                                                                |
-| Kimlik doğrulaması                  | Kimlik doğrulaması başarısız oldu.                                                                                        |
+| Authentication                  | Kimlik doğrulaması başarısız oldu.                                                                                        |
 | Yetkilendirme                   | Çağrı kimliği doğrulanmış ancak kaydetmek için yetkili değil.                                                         |
 | AccountValidation               | Kayıt hesabı doğrulanamadı. (Hesabı engellenen kayıt etkin değil)                      |
 | UserValidation                  | Kullanıcı doğrulanamadı. (Kullanıcı yok, lisans eksik)                                           |
@@ -505,7 +505,10 @@ Microsoft Intune yoluyla Mobil Uygulama Yönetimini kullanarak bir hedef cihaz t
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Sahip türünün benzersiz tanımlayıcısı.                                                                                                                                               |                            |
 | ownerTypeKey  | Veri ambarındaki sahip türünün benzersiz tanımlayıcısı - vekil anahtar.                                                                                                       |                            |
-| ownerTypeName | Cihazların sahip türünü temsil eder:  Şirket - cihaz kuruluşa aittir.  Kişisel - Cihaz kişiye aittir (KCG).   Bilinmiyor - Bu cihazda bilgi yok. | Şirket/Kişisel Bilinmiyor |
+| ownerTypeName | Cihazların sahip türünü temsil eder:  Şirket - cihaz kuruluşa aittir.  Kişisel - Cihaz kişiye aittir (KCG).   Bilinmiyor - Bu cihazda bilgi yok. | Kurumsal kişisel bilinmiyor |
+
+> [!Note]  
+> İçin `ownerTypeName` filtre değeri ayarlamak gereken cihazlar için dinamik grupları oluştururken AzureAD `deviceOwnership` olarak `Company`. Daha fazla bilgi için [cihazlar için kuralları](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>ilkeler
 **İlke** varlığı, cihaz yapılandırma profillerini, uygulama yapılandırma profillerini ve uyumluluk ilkelerini listeler. Kuruluşunuzda bir gruba Mobil Cihaz Yönetimi (MDM) ilkeleri atayabilirsiniz.

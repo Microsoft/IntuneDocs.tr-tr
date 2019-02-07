@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 17d64822453c5aeafe4c618879aaef6176e9bbb7
+ms.sourcegitcommit: 09dcc8ba903b66b3fb8b9a71212ccd3194a046fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817067"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55763294"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
 
@@ -80,9 +80,9 @@ Windows 8.1 ve üstündeki yerel **Posta** uygulaması (Intune ile kaydedildiği
 
 1. Oturumunuz başarıyla açıldıktan sonra gördüğünüz **Azure Panosu**.
 
-1. Seçin **tüm hizmetleri** sol menüden yazın **Intune** metin kutusu filtresine.
+1. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 
-1. Seçin **Intune**, gördüğünüz **Intune Panosu**.
+1. **Intune**’u seçin, **Intune Panosu**’nu görürsünüz.
 
 1. **Şirket içi erişim**'i seçin. **Şirket içi erişim** bölmesinde koşullu erişim ilkesinin durumu ve bundan etkilenen cihazlar gösterilir.
 

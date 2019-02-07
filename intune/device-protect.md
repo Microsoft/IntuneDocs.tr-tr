@@ -3,8 +3,8 @@ title: Cihazları Microsoft Intune ile koruma
 titleSuffix: Microsoft Intune
 description: Intune’un cihazlarınızı yetkisiz erişime veya diğer tehditlere karşı korumanıza yardımcı olabileceği yollardan bazılarını öğrenin.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/19/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 06f14b0ba1edcde28c7f2c732ab286e80f186bf2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b751a1637023db138539415a6c52e12d53f1101
+ms.sourcegitcommit: 5b4a6c17bdba2f87e6ae81a3ac0cb88438a0fa27
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188271"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55807775"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Cihazları Microsoft Intune ile koruma
 

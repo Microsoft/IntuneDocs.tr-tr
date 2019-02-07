@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure’da Endpoint Protection ayarlarını yapılandırma | Microsoft Docs
 description: Microsoft Intune’da bir macOS veya Windows 10 cihaz profili oluşturduğunuzda Endpoint Protection ayarları oluşturun.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 3/27/2018
 ms.topic: article
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 033021010698d46f7ecb33546164ee16ad7192c0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1d0111353d874a8236fd87d40bd890deac171bd3
+ms.sourcegitcommit: 5b4a6c17bdba2f87e6ae81a3ac0cb88438a0fa27
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182933"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55807741"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune’da Endpoint Protection ayarları ekleme
 
@@ -30,7 +30,7 @@ Bu makalede, bir profilin nasıl oluşturulacağı gösterilir. Daha sonra kulla
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>Endpoint Protection ayarlarını içeren bir cihaz profili oluşturma
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 4. Endpoint Protection profili için bir **Ad** ve **Açıklama** girin.

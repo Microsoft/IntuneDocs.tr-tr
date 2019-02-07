@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 54282789f4a9b335e2a83232d6dc1fb1000179a9
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199447"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761067"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -66,7 +66,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 ```
 
 > [!IMPORTANT]
-> Bazı Android cihazları birden çok IMEI numarasına sahiptir. Intune, kayıtlı cihaz başına yalnızca bir IMEI numarasını okur. IMEI numarasını içeri aktarıyorsanız ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse cihaz şirkete ait değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değerini görüntüler.<br>
+> Bazı Android cihazları birden çok IMEI numarasına sahiptir. Intune, kayıtlı cihaz başına yalnızca bir IMEI numarasını okur. IMEI numarasını içeri aktarıyorsanız, ancak Intune tarafından envantere alınan IMEI değil, cihazın kişisel bir cihazı şirkete ait cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değerini görüntüler.<br>
 >Ayrıca unutmayın: Android seri numaralarının mevcut veya benzersiz olacağı garanti edilmez. Seri numarasının güvenilir bir cihaz kimliği olup olmadığını anlamak için cihaz sağlayıcınızla görüşün.
 >Cihazın Intune’a gönderdiği seri numaralar, cihazdaki Android Ayarları/Hakkında menülerinde gösterilen kimlikle eşleşmeyebilir. Cihaz üreticisi tarafından belirtilen seri numarasının türünü doğrulayın.
 >Nokta (.) içeren seri numaralara sahip bir dosya yükleme denemesi, karşıya yükleme işleminin başarısız olmasına yol açar. Nokta içeren seri numaraları desteklenmez.

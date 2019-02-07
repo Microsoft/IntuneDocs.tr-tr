@@ -2,8 +2,8 @@
 title: Intune’da gizlilik ve kişisel veriler
 description: Intune’da hangi kişisel verilerin toplanıp işlendiğini öğrenin.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/18/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 98debd35941cacd3b83bd47805cc70ccc9afb5cc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 04923fe8ff570541b14456348c33ac7e7e7773c7
+ms.sourcegitcommit: 5b4a6c17bdba2f87e6ae81a3ac0cb88438a0fa27
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181072"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55807809"
 ---
 # <a name="privacy-and-personal-data-in-intune"></a>Intune’da gizlilik ve kişisel veriler
 

@@ -2,8 +2,8 @@
 title: Başarı veya başarısızlık Microsoft Intune - Azure güvenlik temelleri denetleme | Microsoft Docs
 description: Kullanıcılara ve cihazlara Microsoft Intune MDM, güvenlik temellerini dağıtırken hatası, çakışma ve başarı durumunu denetle Intune istemci günlükleri ve rapor özelliklerini kullanarak sorun giderme konusuna bakın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/24/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28a98a20e5f0b5181628da46ccd662f1f8f503dd
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: db748f7c39cb133c5c7025dbb299f3fd1411ba17
+ms.sourcegitcommit: 5b4a6c17bdba2f87e6ae81a3ac0cb88438a0fa27
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55071284"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55807758"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Güvenlik temeli ve Intune profilinde izleyin
 

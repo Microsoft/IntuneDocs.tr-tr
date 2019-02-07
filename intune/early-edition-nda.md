@@ -17,14 +17,14 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: d50925d9f5422e1bfea01869233c63d6a2889109
-ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
+ms.openlocfilehash: 92644eeed28911d0d49ec2aa20fcfed4a6553486
+ms.sourcegitcommit: fddf90a6aa17b09005723653a0c9a520856bb2ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55737511"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55781513"
 ---
-# <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Erken sürüm Microsoft Intune - Ocak 2019
+# <a name="the-early-edition-for-microsoft-intune---february-2019"></a>Erken sürüm Microsoft Intune - Şubat 2019
 
 > [!Note]
 > NDA bildirimi: Intune için aşağıdaki değişiklikler geliştirilme aşamasındadır. Bu bilgiler NDA kapsamında çok kısıtlı bir kapsamla paylaşılır. Bu bilgilerin hiçbirini sosyal medyada veya Twitter, UserVoice, Reddit vb. gibi kamuya açık web sitelerinde paylaşmayın. 

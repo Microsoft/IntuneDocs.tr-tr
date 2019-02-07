@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 65a461928c377dd4a674f8f3f2eeeef148ab56b2
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
+ms.openlocfilehash: b0b2c7fb0f4122f8651b773f4039be43fc5e2c6b
+ms.sourcegitcommit: fddf90a6aa17b09005723653a0c9a520856bb2ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316908"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55781496"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -88,68 +88,87 @@ Uygulamanız zaten ADAL veya MSAL kullanacak şekilde yapılandırıldı ve kend
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Android mobil uygulamanızda Intune uygulama koruma ilkelerini etkinleştirme
 
-UI çerçevesi kullanmayan Xamarin tabanlı Android uygulamaları için [Android Geliştiricisi için Intune Uygulama SDK’sı Kılavuzu](app-sdk-android.md) belgesini okumanız ve gerekli adımları uygulamanız gerekir. Xamarin tabanlı Android uygulamanız için sınıf, yöntem ve etkinlikleri, göre MAM eşdeğerleriyle değiştirmeniz gereken [sınıf ve metod değişiklik tablosu](app-sdk-android.md#class-and-method-replacements) kılavuzda yer. Uygulamanızda `android.app.Application` sınıfı tanımlanmıyorsa bir tane oluşturup `MAMApplication` kaynağından devraldığından emin olmanız gerekir. ADAL yapılandırma değerleri, AndroidManifest meta verileri üzerinden SDK'ya iletilir. [Uygulamanız için ADAL'yi yapılandırma](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) belgelerinizi okuyun.
+1. [Microsoft.Intune.MAM.Xamarin.Android NuGet paketini](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) Xamain.Android projenize ekleyin.
+    1. Bir Xamarin.Forms uygulaması için ekleme [Microsoft.ıntune.mam.remapper.Tasks NuGet paketini](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) Xamarin.Android projenize de. 
+2. İçin gerekli genel adımları [Intune uygulama SDK'sını tümleştirme](app-sdk-android.md) ek ayrıntılar için bu belgenin başvurma sırasında bir Android mobil uygulamasına.
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android tümleştirmesi
 
-1. [Microsoft.Intune.MAM.Xamarin.Android NuGet paketinin](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) son sürümünü Xamain.Android projenize ekleyin. Bu, Intune’un uygulamanızı etkinleştirmesi için gereken başvuruları sağlar.
+Intune uygulama SDK'sını tümleştirmek için eksiksiz bir genel bakış bulunabilir [Android Geliştirici Kılavuzu için Microsoft Intune App SDK](app-sdk-android.md). Yerel bir Android uygulaması Java dilinde geliştirilen ve geliştirilmiş bir Xamarin uygulaması için uygulanması arasındaki farklar vurgulamak için aşağıdaki bölümleri Kılavuzu okuyun ve Intune uygulama SDK'sı Xamarin uygulamanızla tümleştirin yöneliktir C#. Bu bölümlerde, ek olarak değerlendirilmesi gerektiğini ve tamamen kılavuzda okumak için bir alternatif olarak davranamaz.
 
-2. [Android Geliştirici Kılavuzu için Intune Uygulama SDK’sını](app-sdk-android.md) tam olarak okuyun ve uygulayın, şu kısımlara da özellikle dikkat edin:
+#### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Yeniden adlandırılan yöntemler](app-sdk-android.md#renamed-methods)
+Birçok durumda, Android sınıfında kullanılabilir olan bir yöntem, MAM değiştirme sınıfında kesin olarak işaretlenmiştir. Bu durumda, MAM değiştirme sınıfı benzer ada sahip olup geçersiz kılmanız gereken bir yöntem (`MAM` son ekini alır) sağlar. Örneğin, `MAMActivity`’i geçersiz kılıp `OnCreate()` çağırmak yerine `base.OnCreate()`’den türetilirken, `Activity`, `OnMAMCreate()`’i geçersiz kılmalı ve `base.OnMAMCreate()` çağırmalıdır.
 
-    1. [Bütün sınıf ve yönetim değişimleri bölümü](app-sdk-android.md#class-and-method-replacements). 
-    2. [MAMApplication bölümü](app-sdk-android.md#mamapplication). Alt sınıfınızın `[Application]` özniteliği ile doğru şekilde donatıldığından ve `(IntPtr, JniHandleOwnership)` oluşturucusunu geçersiz kıldığından emin olun.
-    3. [ADAL tümleştirmesi bölümü](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal), uygulamanız AAD’ye karşı kimlik doğrulaması gerçekleştiriyorsa. 
-    4. [MAM-WE kaydı bölümü](app-sdk-android.md#app-protection-policy-without-device-enrollment), uygulamanıza MAM hizmetinden ilke almak istiyorsanız.
+#### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM uygulama](app-sdk-android.md#mamapplication)
+Uygulamanızı tanımlamalıdır bir `Android.App.Application` öğesinden devralınan sınıf `MAMApplication`. Alt sınıfınızın `[Application]` özniteliği ile doğru şekilde donatıldığından ve `(IntPtr, JniHandleOwnership)` oluşturucusunu geçersiz kıldığından emin olun.
+```csharp
+    [Application]
+    class TaskrApp : MAMApplication
+    {
+    public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
+        : base(handle, transfer) { }
+```
 
-> [!NOTE]
-> `Microsoft.Intune.MAM.Xamarin.Android` Bağlamalarındaki [Android Geliştirici Kılavuzu için Intune Uygulama SDK’sından](app-sdk-android.md) eşdeğer API’ler bulmaya çalışırken veya kılavuzdan kod parçacıkları dönüştürürken, Xamarin bağlama oluşturucusunun Android API’lerini şu yollarla değiştirdiğine dikkat edin:
-> * Tüm tanımlayıcılar baş harfleri büyük olmak üzere bitişik yazılır (com.foo.bar -> Com.Foo.Bar)
-> * Tüm alma/ayarlama işlemleri, özellik işlemlerine dönüştürülür (ör. Foo.getBar() -> Foo.Bar, Foo.setBar("zap") -> Foo.Bar = "zap")
-> * Tüm arabirimlerin adının başına “I” karakteri eklenir (FooInterface -> IFooInterface)
+#### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Uygulama katılımı gerektiren özellikleri etkinleştirme](app-sdk-android.md#enable-features-that-require-app-participation)
+Örnek: PIN uygulama için gerekli olup olmadığını belirler
+```csharp
+MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
+```
+Örnek: Birincil Intune kullanıcısını belirleme
+```csharp
+IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
+return info?.PrimaryUser;
+```
+Örnek: Cihazı kaydetme belirlemek veya Bulut depolama izin verilir
+```csharp
+MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
+```
+
+#### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[SDK'dan gelen bildirimlere kaydolması](app-sdk-android.md#register-for-notifications-from-the-sdk)
+Uygulamanızı SDK'dan gelen bildirimlere oluşturarak kaydolması gerekir bir `MAMNotificationReceiver` oluşturup `MAMNotificationReceiverRegistry`. Bu alıcı ve öğesinde istenen bildirim türü belirtilerek yapılır `App.OnMAMCreate`aşağıdaki örnekte gösterildiği gibi:
+```csharp
+public override void OnMAMCreate()
+{
+    // Register the notification receivers
+    IMAMNotificationReceiverRegistry registry = MAMComponents.Get<IMAMNotificationReceiverRegistry>();
+    foreach (MAMNotificationType notification in MAMNotificationType.Values())
+    {
+    registry.RegisterReceiver(new ToastNotificationReceiver(this), notification);
+    }
+    ...
+```
+
+#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM kayıt Yöneticisi](app-sdk-android.md#mamenrollmentmanager)
+```csharp
+IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
+```
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms tümleştirmesi
 
-**Yukarıdaki adımları tamamlamanın yanında**, `Microsoft.Intune.MAM.Remapper` paketinde sağladığımız `Xamarin.Forms` uygulamaları için. Bu paket, `MAM` sınıflarını `FormsAppCompatActivity` ve `FormsApplicationActivity` gibi yaygın olarak kullanılan `Xamarin.Forms` sınıflarındaki sınıf hiyerarşisine ekleyerek sınıf değişimini sizin için yapar. Böylece `OnMAMCreate` ve `OnMAMResume` gibi işlevlerin MAM eşdeğerleri için geçersiz kılmalar sağlayarak bu sınıfları kullanmaya devam edebilirsiniz. Bunu kullanmak için şunları yapın:
-
-1.  [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet paketini projenize ekleyin. Bu, Intune APP SDK’si Xamarin bağlamalarını siz zaten eklemediyseniz otomatik olarak ekler.
-
-2.  Yukarıdaki 2.2 adımında oluşturduğunuz `MAMApplication` sınıfının `OnMAMActivity`işlevindeki `Xamarin.Forms.Forms.Init(Context, Bundle)` için bir çağrı ekleyin. Intune ile uygulamanız, arka plandayken başlatılabileceği için bu gereklidir.
+İçin `Xamarin.Forms` uygulamalar olması koşuluyla `Microsoft.Intune.MAM.Remapper` ekleyerek MAM sınıfı yeni otomatik olarak gerçekleştirmek için paket `MAM` sınıf hiyerarşisini, yaygın olarak kullanılan sınıflara `Xamarin.Forms` sınıfları. 
 
 > [!NOTE]
-> Bu işlem, Visual Studio’nun Intellisense otomatik tamamlama için kullandığı bir bağımlılığı yeniden yazdığı için yeniden eşleyici değişiklikleri doğru biçimde algılamak amacıyla Intellisense’i ilk kez çalıştırdıktan sonra Visual Studio’yu yeniden başlatmanız gerekebilir. 
+> Buna ek olarak yukarıda ayrıntılı Xamarin.Android tümleştirme için yapılması Xamarin.Forms tümleştirmedir.
 
-## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Xamarin tabanlı Android LOB uygulamanızı kullanmak için Intune uygulama koruma ilkelerini gerektirme (isteğe bağlı) 
+Remapper projenize eklendikten sonra MAM eşdeğeri değiştirmeler gerçekleştirmeniz gerekir. Örneğin, `FormsAppCompatActivity` ve `FormsApplicationActivity` sağlanan uygulama geçersiz kılmaları için kullanılmak üzere devam `OnCreate` ve `OnResume` MAM eşdeğerleriyle değiştirilir `OnMAMCreate` ve `OnMAMResume` sırasıyla.
 
-Aşağıda, Xamarin tabanlı Android LOB uygulamalarını yalnızca Intune korumalı kullanıcıların cihazlarında kullanabildiğinden emin olmayı sağlayan yönergeler verilmiştir. 
-    
-### <a name="working-with-the-intune-sdk"></a>Intune SDK’sı ile çalışma
-Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen tüm Android ve Xamarin uygulamalarına özgüdür.
+```csharp
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    {
+        protected override void OnMAMCreate(Bundle savedInstanceState)
+        {
+            base.OnMAMCreate(savedInstanceState);
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            LoadApplication(new App());
+        }
+```
+Değişiklik yapılmamış durumunda bir değişiklik yapana kadar derleme hatalarla karşılaşabilirsiniz:
+* [Derleyici Hatası CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). Bu hata genellikle bu formda görünen ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
+Xamarin sınıfların devralma Remapper değişiklik yaptığında, belirli işlevleri yapıldığı için bu beklenen `sealed` ve bunun yerine geçersiz kılmak için yeni bir MAM değişken eklenir.
+* [Derleyici Hatası CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): Bu hata genellikle bu formda görünen ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. Remapper bazı Xamarin sınıfların devralma değiştiğinde, belirli üye işlevleri değiştirilecek `public`. Bu işlevlerden herhangi birinin geçersiz kılarsanız, bu olması için bu erişim değiştiricileri geçersiz kılmaları değiştirmeniz gerekir `public` de.
 
-1. [Android için Intune SDK’sı kılavuzu](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)’nda açıklanan adımları kullanarak ADAL’ı yapılandırın.
-> [!NOTE] 
-> “istemci kimliği” terimi, Azure portalında uygulamanıza bağlanan “uygulama kimliği” terimi ile aynı şeydir. 
-* SSO’yu etkinleştirmek için gereken şey “Yaygın ADAL yapılandırması” #2’dir.
-
-2. Bildirime şu değeri koyarak varsayılan kaydı etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> Bu, uygulamadaki tek MAM-WE tümleştirmesi olmalıdır. Başka MAMEnrollmentManager API’lerini çağırma denemeleri olursa çakışmalar ortaya çıkabilir.
-
-3. Bildirime şu değeri koyarak gereken MAM ilkesini etkinleştirin: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> Böylece uygulamalar, cihaza Şirket Portalı’nı indirmeye ve bunu kullanmadan önce varsayılan kayıt akışını tamamlamaya zorlanır.
-
-### <a name="working-with-adal"></a>ADAL ile çalışma
-Bu yönergeler, bir son kullanıcı cihazında Intune uygulama koruma ilkeleri gerektirmek isteyen .NET/Xamarin uygulamalarına yönelik bir gereksinimdir.
-
-1. ADAL belgelerinde, [Android için Aracılı Kimlik Doğrulaması](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) altında tanımlanan tüm adımları izleyin.
-
-## <a name="potential-compilation-errors"></a>Olası derleme hataları
-En yaygın olarak görülen derleme hatalarından bazılarını bunlar uygulama tabanlı bir Xamarin geliştirme.
-
-* [Derleyici Hatası CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): Bu hata genellikle bu formda görünen ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
-Xamarin sınıfların devralma remapper değiştirdiğinde, bazı işlevler yapılan `sealed` ve bunun yerine geçersiz kılmak için yeni bir MAM değişken eklenir. Açıklanan şekilde geçersiz kılmaları yalnızca adlandırın [burada](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods). Örneğin `MainActivity.OnCreate()` için yeniden adlandırılması `MainActivity.OnMAMCreate()`
-
-* [Derleyici Hatası CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): Bu hata genellikle bu formda görünen ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. Remapper aracın bazı Xamarin sınıfların devralma değiştikçe, üye işlevleri bazıları değiştirilecek `public`. Bu işlevlerden herhangi birinin geçersiz kılarsanız, olması için bu geçersiz kılmaları değiştirmeniz gerekebilir `public` de.
+> [!NOTE]
+> Remapper IntelliSense otomatik tamamlama için Visual Studio kullanan bir bağımlılık yeniden yazar. Bu nedenle, yeniden yükleyin ve doğru şekilde değişiklikleri tanıyabilmesi IntelliSense için Remapper eklendiğinde projeyi yeniden derleyin gerekebilir.
 
 ## <a name="support"></a>Destek
 Kuruluşunuz zaten bir Intune müşterisiyse destek bileti açmak ve [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) bir sorun bileti oluşturmak için Microsoft desteği temsilcinizle birlikte çalışın, mümkün olduğunca kısa sürede size yardım ederiz. 

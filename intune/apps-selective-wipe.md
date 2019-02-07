@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 51d1c477f490cb23c35ef54a0a5099ee4b4b035b
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: c79f3db99f1023acee189b6e7a49f26d8d3fdd4c
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068263"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55760931"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune tarafından yönetilen uygulamalardan kurumsal verileri temizleme
 
@@ -30,7 +30,7 @@ ms.locfileid: "55068263"
 Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıldığında, şirket uygulama verilerinin cihazdan kaldırıldığından emin olmak istersiniz. Ancak özellikle cihaz çalışana aitse kişisel verilerin kaldırılmasını istemeyebilirsiniz.
 
 >[!NOTE]
-> Şu anda Intune yönetilen uygulamalarından şirket verilerinin silinmesini destekleyen iki platform iOS ve Android platformlarıdır. Intune yönetilen uygulamalar, Intune uygulama SDK'sı eklenip ve kuruluşunuz için bir lisanslı kullanıcı hesabına sahip uygulamalardır. Dağıtım uygulama koruma ilkeleri, uygulama seçmeli silme etkinleştirmek için gerekmez.
+> İOS, Android ve Windows 10 platformlarına Intune tarafından yönetilen uygulamalardan şirket verilerini silme hakkında bilgi için şu anda desteklenen tek platformlar. Intune yönetilen uygulamalar, Intune uygulama SDK'sı eklenip ve kuruluşunuz için bir lisanslı kullanıcı hesabına sahip uygulamalardır. Dağıtım uygulama koruma ilkeleri, uygulama seçmeli silme etkinleştirmek için gerekmez.
 
 Şirket uygulaması verilerini seçmeli olarak silmek için bu konu başlığındaki adımları kullanarak bir silme isteği oluşturun. İstek tamamlandıktan sonra, uygulama cihaz üzerinde ilk kez çalıştığında şirket verileri uygulamadan kaldırılır. Silme isteğine ek olarak, Uygulama Koruma İlkeleri (APP) Erişim ayarlarının koşullarına uyulmadığında yeni bir eylem olarak kuruluşunuzun verilerinin seçmeli silinmesini yapılandırabilirsiniz. Bu özellik, önceden yapılandırılmış ölçütler temelinde hassas kuruluş verilerini otomatik olarak korumanıza ve uygulamalardan kaldırmanıza yardımcı olur.
 

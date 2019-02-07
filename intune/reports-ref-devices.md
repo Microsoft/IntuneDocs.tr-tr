@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: 98c0dafc3430387242bee93d8536cb32151f9a96
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297528"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761101"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
@@ -140,7 +140,7 @@ ms.locfileid: "54297528"
 | Uygulanamaz                  | Kayıt hatası kategorisi geçerli değil.                                                            |
 | Kullanılamıyor                   | Kayıt hatası kategori kullanılamıyor.                                                             |
 | Bilinmiyor                         | Bilinmeyen hata.                                                                                                |
-| Kimlik doğrulaması                  | Kimlik doğrulaması başarısız oldu.                                                                                        |
+| Authentication                  | Kimlik doğrulaması başarısız oldu.                                                                                        |
 | Yetkilendirme                   | Çağrı kimliği doğrulanmış ancak kaydetmek için yetkili değil.                                                         |
 | AccountValidation               | Kayıt hesabı doğrulanamadı. (Hesabı engellenen kayıt etkin değil)                      |
 | UserValidation                  | Kullanıcı doğrulanamadı. (Kullanıcı yok, lisans eksik)                                           |
@@ -214,7 +214,10 @@ ms.locfileid: "54297528"
 |---------|------------|--------|
 | ownerTypeID |Sahip türünün benzersiz tanımlayıcısı. | |
 | ownerTypeKey |Veri ambarındaki sahip türünün benzersiz tanımlayıcısı - vekil anahtar. | |
-| ownerTypeName |Cihazların sahip türünü temsil eder:  <br>Şirket - cihaz kuruluşa aittir. <br>Kişisel - cihaz kişiye aittir (KCG).  <br>Bilinmiyor - bu cihazda bilgi yok. |Şirket/Kişisel Bilinmiyor |
+| ownerTypeName |Cihazların sahip türünü temsil eder:  <br>Şirket - cihaz şirkete aittir olup. <br>Kişisel - cihaz kişiye aittir (KCG).  <br>Bilinmiyor - bu cihazda bilgi yok. |Kurumsal kişisel bilinmiyor |
+
+> [!Note]  
+> İçin `ownerTypeName` cihazlar için dinamik grupları oluştururken AzureAD filtre değeri ayarlamanız gerekir. `deviceOwnership` olarak `Company`. Daha fazla bilgi için [cihazlar için kuralları](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 
