@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c458e77e41d67466ad52a4f0b4089d85a9513f5d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183409"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834883"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android kullanıcılarınız uygulamalarını nasıl alır
 
@@ -37,8 +38,8 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları Android son k
 
 [LOB uygulamalarını](lob-apps-android.md) yüklemek için son kullanıcılarınızın, bilinmeyen kaynaklardan yüklemeye izin vermesi gerekir. Bunlar genellikle iki farklı yerde bulunur:
 
-* **Android 7.1.2 ve altı sürümler**: **Ayarlar** > **Güvenlik** > **Bilinmeyen kaynaklar**
-* **Android 8.0 ve üzeri sürümler**: **Ayarlar** > **Uygulamalar ve bildirimler** > **Özel uygulama erişimi** > **Bilinmeyen uygulama yükleme** > **Şirket Portalı** > **Bu kaynağa izin ver**
+* **Android 7.1.2 ve**: **Ayarları** > **güvenlik** > **bilinmeyen kaynaklar**
+* **Android 8.0 ve üstü**: **Ayarları** > **uygulamalar ve bildirimler** > **özel uygulama erişimi** > **bilinmeyen uygulama yükleme**  >  **Şirket portalı** > **bu kaynağa izin ver**
 
 Bu durumda Şirket Portalı uygulaması, son kullanıcıya bilgi verip onu doğrudan uygun ayara yönlendirecektir. 
 

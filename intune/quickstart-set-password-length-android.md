@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87fb7091079086e5c455376cb5c4ae8e10f28ec1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cccb79ae7337c3b037141cbb7759a856d651f83f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179264"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851024"
 ---
-# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Hızlı Başlangıç: Android cihazları için parola uyumluluk ilkesi oluşturma
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Hızlı Başlangıç: Android cihazlar için parola uyumluluk ilkesi oluşturma
 
 Bu hızlı başlangıçta Microsoft Intune kullanarak iş gücünüzdeki Android kullanıcılarının Android cihazlarındaki bilgilere erişim kazanmak için belirli uzunluğa sahip parolalar girmesini gerektireceksiniz. 
 
@@ -66,4 +67,4 @@ Bu hızlı başlangıçta iş gücünüze ait Android cihazların en az altı ka
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Uyumsuz cihazlara bildirim gönderme](quickstart-send-notification.md)
+> [Hızlı Başlangıç: Bildirimleri göndermek için uyumsuz cihazlar](quickstart-send-notification.md)

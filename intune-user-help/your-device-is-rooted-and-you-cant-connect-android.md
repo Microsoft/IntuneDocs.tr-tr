@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c4cce70abac079ab1761994ba91040c16375e013
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 872fda55e47d517fdc67584c0621975dd065af11
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149764"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840595"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Android cihazınıza kök erişim izni verildiği için bağlanamıyorsunuz
 

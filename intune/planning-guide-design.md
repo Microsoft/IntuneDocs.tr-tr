@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 192e0ac0e67fb519f1dcd2ff9faf0d7748942997
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112995"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834543"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -211,7 +212,7 @@ Cihaz listenizi geliştirmek için [yukarıdaki tablonun bir şablonunu indirebi
 
 Intune, hem şirkete ait cihazları hem de kişisel cihazları destekler. Bir cihaz, cihaz kayıt yöneticisi tarafından veya cihaz kayıt programı ile kaydedilmişse şirkete ait olarak kabul edilir. Örneğin bir cihaz Apple Aygıt Kayıt Programı (DEP) aracılığıyla kaydedilmiş, şirkete ait olarak işaretlenmiş ve hedeflenen şirket ilkelerini ve uygulamalarını alan bir cihaz grubuna yerleştirilmiştir.
 
-Şirket ve KCG kullanım örnekleri hakkında daha fazla bilgi için [Bölüm 3: Kullanım örneği senaryosu gereksinimleri](planning-guide-requirements.md) bölümüne başvurun.
+Başvurmak [3. Bölüm: Kullanım örneği senaryosu gereksinimlerini belirleme](planning-guide-requirements.md) daha fazla bilgi şirket ve KCG kullanım örnekleri.
 
 ### <a name="bulk-enrollment"></a>Toplu kayıt
 
@@ -257,10 +258,10 @@ Platform başına en az bir yapılandırma ilkesi oluşturmanız gerekir. Gereki
 
 | **İlke adı** | **Cihaz platformu** | **Ayarlar** | **Hedef grup** |   
 |:---:|:---:|:---:|:---:|
-| Kurumsal - iOS | iOS | PIN gereklidir, Uzunluğu: 6, Bulut Yedeklemeyi Kısıtla | Kurumsal Cihazlar |                                                           
-| Kurumsal - Android | Android | PIN gereklidir, Uzunluğu: 6, Bulut Yedeklemeyi Kısıtla | Kurumsal Cihazlar |                                                           
-| KCG – iOS  | iOS | PIN gereklidir, Uzunluğu: 4 | KCG cihazlar |
-| KCG – Android  | Android | PIN gereklidir, Uzunluğu: 4 | KCG cihazlar |
+| Kurumsal - iOS | iOS | PIN gereklidir, uzunluğu: 6, bulut yedeklemeyi kısıtla | Kurumsal Cihazlar |                                                           
+| Kurumsal - Android | Android | PIN gereklidir, uzunluğu: 6, bulut yedeklemeyi kısıtla | Kurumsal Cihazlar |                                                           
+| KCG – iOS  | iOS | PIN gereklidir, uzunluğu: 4 | KCG cihazlar |
+| KCG – Android  | Android | PIN gereklidir, uzunluğu: 4 | KCG cihazlar |
 
 
 Yapılandırma ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).

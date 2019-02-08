@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: df6d3eddd2ee8c1c1859539cf0829add9d3ce424
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2f3dda5085a5f054064da1ea24c7c7b09be79519
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180468"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840323"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Intune yazılım istemcisi çalıştıran Windows bilgisayarlarına uygulama ekleme
 
@@ -51,7 +52,7 @@ Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve u
    - **Yazılım kurulum dosyalarının konumunu belirtin**. Yükleme dosyalarının konumunu girin veya **Gözat**’ı seçerek bir listeden konumu seçin.
    - **Aynı klasörden başka dosya ve alt klasör ekleme**. Windows Installer kullanan bazı yazılımlar destekleme dosyaları gerektirir. Bu dosyalar yükleme dosyası ile aynı klasörde bulunmalıdır. Bu destek dosyalarını dağıtmak istiyorsanız bu seçeneği belirtin.
 
-   Örneğin, Intune’a Application.msi adlı bir uygulama yüklemek isterseniz sayfa şöyle görünür: ![Yayımcının yazılım kurulum sayfası](media/publisher-for-pc.png)
+   Örneğin, Application.msi adlı bir uygulamayı Intune’a yayımlamak isterseniz, sayfa şöyle görünebilir: ![Yayımcının yazılım kurulum sayfası](media/publisher-for-pc.png)
 
    Bu yükleme türünde, bulut depolama alanınızın bir bölümü kullanılır.
 
@@ -82,15 +83,15 @@ Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve u
 
    Uygulama yapılandırdığınız kurallardan herhangi birine uyuyorsa, yüklenmez.
 
-6. Yalnızca **Windows Installer** dosya türü için (msi ve exe): **Komut satırı bağımsız değişkenleri** sayfasında, yükleyici için isteğe bağlı komut satırı bağımsız değişkenleri eklemek isteyip istemediğinizi belirtin.
+6. İçin **Windows Installer** dosya türü içindir (.MSI ve .exe): Üzerinde **komut satırı bağımsız değişkenleri** sayfasında, yükleyici için isteğe bağlı komut satırı bağımsız değişkenleri isteyip istemediğinizi seçin.
    Aşağıdaki parametreler, Intune tarafından otomatik olarak eklenmiştir:
    - .exe dosyaları için, **/install** eklenmiştir.
    - .msi dosyaları için, **/quiet** eklenmiştir.
    Bu ayarların, yalnızca uygulama paketini oluşturan kişinin bu işlevi etkinleştirdiğinde çalışacağını unutmayın.
 
-7. Yalnızca **Windows Installer** dosya türü için (yalnızca exe): **Dönüş kodları** sayfasında, uygulama yönetilen bir Windows bilgisayarına yüklenirken Intune tarafından yorumlanacak yeni hata kodları ekleyebilirsiniz.
+7. İçin **Windows Installer** dosya türü içindir (yalnızca .exe): Üzerinde **dönüş kodları** sayfasında, uygulama yönetilen bir Windows Bilgisayarına yüklenirken Intune tarafından yorumlanacak yeni hata kodları ekleyebilirsiniz.
 
-   Intune, varsayılan olarak, bir uygulama paketi yüklemesinin başarılı veya başarısız olduğunu raporlamak için sektör standardı dönüş kodlarını kullanır: **0** (Başarılı) veya **3010** (Yeniden başlatma ile başarılı). Listeye kendi dönüş kodlarınızı da ekleyebilirsiniz. Dönüş kodları listesini belirtirseniz ve uygulama yüklemesi listede olmayan bir kod döndürürse, bu kod hata olarak yorumlanır.
+   Intune, varsayılan olarak, bir uygulama paketi yüklemesinin başarılı veya başarısız olduğunu raporlamak için sektör standardı dönüş kodlarını kullanır: **0** (başarılı) veya **3010** (yeniden başlatma ile başarılı). Listeye kendi dönüş kodlarınızı da ekleyebilirsiniz. Dönüş kodları listesini belirtirseniz ve uygulama yüklemesi listede olmayan bir kod döndürürse, bu kod hata olarak yorumlanır.
 
 8. **Özet** sayfasında, belirttiğiniz bilgileri gözden geçirin. Hazır olduğunuzda **Karşıya Yükle**’yi seçin.
 
@@ -102,4 +103,4 @@ Uygulama, **Uygulamalar** çalışma alanının **Uygulamalar** düğümünde g�
 
 Bir uygulama oluşturduktan sonra, sonraki adım uygulamayı dağıtmaktır. Daha fazla bilgi edinmek için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md).
 
-Windows bilgisayarlara yazılım dağıtmak için ipuçları ve püf noktaları hakkında daha fazla edinmek isterseniz [Destek İpucu: Intune Yazılımının Bilgisayarlara Dağıtımı için En İyi Uygulamalar](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/) blog gönderisini inceleyin.
+İpuçları ve püf noktaları, Windows bilgisayarlara yazılım dağıtma hakkında daha fazla bilgi okumak istiyorsanız, blog gönderisine bakın [destek İpucu: Intune yazılım dağıtımı için için en iyi uygulamalar](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).

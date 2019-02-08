@@ -16,12 +16,13 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44e2d29222cfbab3d22ae9746d3cc42d7c959f04
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190039"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841598"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu güncelleştirmeleri anlamak, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.
@@ -450,11 +451,11 @@ Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kı
 
 ![Solda, Android Şirket Portalı uygulamasının güncelleştirme öncesi görüntüsü. Sağda, Android Şirket Portalı uygulamasının güncelleştirme sonrası görüntüsü. Her iki görüntüde de Uygulamalar, Cihazlar ve BT'ye Başvur sekmelerinden Cihazlar sekmesi seçili olarak gösterilmektedir.](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __Arabirim__: __Uygulamalar__ sekmesindeki __Öne Çıkan Uygulamalar__ ve __Tüm Uygulamalar__ düğmeleri güncelleştirildi. __Arama__ düğmesi artık kayan eylem düğmesi şeklinde.
+* __Arabirimi__: __Öne çıkan uygulamalar__ ve __tüm uygulamalar__ düğmeleri güncelleştirildi __uygulamaları__ sekmesi. __Arama__ düğmesi artık kayan eylem düğmesi şeklinde.
 
 ![Solda, Android Şirket Portalı uygulamasının güncelleştirme öncesi görüntüsü. Sağda, Android Şirket Portalı uygulamasının güncelleştirme sonrası görüntüsü. Her iki görüntüde de Uygulamalar, Cihazlar ve BT'ye Başvur sekmelerinden Uygulamalar sekmesi seçili olarak gösterilmektedir.](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __Gezinti__: Tüm Uygulamalar sayfasında daha kolay gezinme için __Öne Çıkan Uygulamalar__, __Tüm Uygulamalar__ ve __Kategoriler__ sekmeler halinde görüntüleniyor. __BT'ye Başvur__ sekmesi daha kolay okunur hale getirilmiştir.
+* __Gezinti__: Tüm uygulamaları gösterir sekmeler halinde görüntüleniyor __öne çıkan__, __tüm__ ve __kategorileri__ daha kolay gezinme için. __BT'ye Başvur__ sekmesi daha kolay okunur hale getirilmiştir.
 
 <html>
 <body>

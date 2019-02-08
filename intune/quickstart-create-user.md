@@ -11,14 +11,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 982caa46adb29ef1d57ec65ac855adca9cef1883
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189505"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834849"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Hızlı Başlangıç: Kullanıcı oluşturun ve ona bir lisans atayın
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Hızlı Başlangıç: Bir kullanıcı oluşturun ve ona bir lisans atayın
 
 Bu hızlı başlangıçta bir kullanıcı oluşturacak ve ona bir lisans atayacaksınız. Intune'u kullanırken, şirket verilerine erişimi olmasını istediğiniz her kişinin bir kullanıcı hesabı olması gerekir. Daha sonra Intune yöneticileri, erişim denetimini yönetmek için bu kullanıcıları yapılandırabilir.
 
@@ -70,4 +71,4 @@ Bu hızlı başlangıçta bir kullanıcı oluşturdunuz ve ona bir lisans atadı
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Kullanıcıları yönetmek için grup oluşturma](quickstart-create-group.md)
+> [Hızlı Başlangıç: Kullanıcıları yönetmek için bir grup oluşturun](quickstart-create-group.md)

@@ -14,12 +14,13 @@ ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 4cec5c593fd4191a9d73e77b13fd38df81a7fe8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 318806664397e2bb690d4aa7605d8f088c769f4a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179754"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847412"
 ---
 # <a name="basic-setup"></a>Temel kurulum
 
@@ -70,7 +71,7 @@ Intune'a geçebilmek için Intune aboneliği gerekir.
 
 -   Yeni bir Azure Active Directory kiracısı oluşturduysanız [yeni kullanıcılar oluşturma veya şirket içi Active Directory’den (AD) kullanıcı eşitleme.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
-### <a name="task-3-set-your-mdm-authority-to-intune"></a>3. Görev: MDM yetkilinizi Intune olarak ayarlayın
+### <a name="task-3-set-your-mdm-authority-to-intune"></a>3. Görev: MDM yetkiliniz olarak Intune'u ayarlama
 
 Intune, Azure portalından veya Configuration Manager Güncel Dal konsolundan yönetilebilir. Intune’u Configuration Manager Güncel Dal dağıtımı ile tümleştirmeniz gerekmedikçe, Intune'u [Azure portalından](https://portal.azure.com) yönetmenizi öneririz.
 

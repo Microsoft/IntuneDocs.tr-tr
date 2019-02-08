@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 30c2e6ad91990029d5b5445e7b4e0ac2417d5e7c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734247"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847276"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -87,7 +88,7 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 Örnek Giriş: *Bir üretici; Üretici B* 
 
 >[!NOTE]
-> Bunlar Intune kullanarak cihazları bildirilen bazı yaygın üreticileri ve giriş olarak kullanılabilir: Asus; BlackBerry; Bq; Gionee; Google; Genel HMD; Htc; Huawei Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola Oneplus; Oppo; Samsung; NET; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> Bunlar Intune kullanarak cihazları bildirilen bazı yaygın üreticileri ve giriş olarak kullanılabilir: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
 Aşağıdaki eylemlerden birini ayarlayın: 

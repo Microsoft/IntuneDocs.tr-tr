@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 76d63e5d574b6e515d438a896618e87ad2b11473
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181539"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847191"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune’un Apple’a gönderdiği veriler
 
@@ -62,7 +63,7 @@ Aşağıdaki tabloda Microsoft Intune'un bir cihazdan etkinleştirilmiş Apple h
 | ASM/DEP | profile_name | Dize. Profil için okunabilir bir ad. |
 | ASM/DEP | support_phone_number | İsteğe bağlı. Dize. Kuruluş için bir destek telefon numarası. |
 | ASM/DEP | support_email_address | İsteğe bağlı. Dize. Kuruluş için bir destek e-posta adresi. Bu anahtar, X-Server-Protokol-Sürüm 2 ve sonrası için geçerlidir. |
-| ASM/DEP | bölüm | İsteğe bağlı. Dize. Kullanıcı tanımlı departman veya konum adı. |
+| ASM/DEP | Bölüm | İsteğe bağlı. Dize. Kullanıcı tanımlı departman veya konum adı. |
 | ASM/DEP | devices | Cihaz seri numaralarını içeren bir dize dizisi. (Boş olabilir.) |
 | VPP | Intune UserId guid | Intune tarafından oluşturulan GUID. |
 | VPP | Managed AppleId UPN | Apple ile VPP belirteç bağlantısını yapılandırırken Yönetici tarafından belirtilen AppleID (Apple Kimliği). |

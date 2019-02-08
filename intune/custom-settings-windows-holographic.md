@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2c4e6041f00ad55b18f8b20996da8002f5ce0247
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ce08d8c199b6fc680f314141b920ca798137139c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032206"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843570"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune’da Windows Holographic for Business cihazlar için özel ayarlar kullanma
 
@@ -39,17 +40,17 @@ Bu makale, Windows Holographic for Business cihazlar için özel profil oluştur
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: Profil için `hololens custom profile` gibi bir ad girin.
+    - **Ad**: Profil için bir ad girmeniz `hololens custom profile`.
     - **Açıklama**: Profil için bir açıklama girin.
-    - **Platform**: **Windows 10 ve üzeri** seçeneğini belirleyin.
-    - **Profil türü**: **Özel**’i seçin.
+    - **Platform**: Seçin **Windows 10 ve üzeri**.
+    - **Profil türü**: Seçin **özel**.
 
 4. **Özel OMA-URI Ayarları**’nda **Ekle**’yi seçin. Aşağıdaki ayarları girin:
 
-    - **Ad**: Ayarlar listesinde tanımanıza yardımcı olması için OMA-URI ayarına benzersiz bir ad girin.
-    - **Açıklama**: Ayara genel bir bakış sağlayan ve diğer önemli ayrıntıları veren bir açıklama girin.
-    - **OMA-URI**  (büyük/küçük harfe duyarlı): Ayar olarak kullanmak istediğiniz OMA-URI’yi girin.
-    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü girin. Seçenekleriniz şunlardır:
+    - **Ad**: Ayarlar listesinde tanımanıza yardımcı olması için OMA-URI ayarı için benzersiz bir ad girin.
+    - **Açıklama**: Ayar ve diğer önemli ayrıntıları genel bakışını veren bir açıklama girin.
+    - **OMA-URI** (büyük/küçük harfe duyarlı): Bir ayarı olarak kullanmak istediğiniz OMA-URI'yi girin.
+    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü seçin. Seçenekleriniz şunlardır:
 
         - Dize
         - Dize (XML dosyası)
@@ -59,7 +60,7 @@ Bu makale, Windows Holographic for Business cihazlar için özel profil oluştur
         - Boole
         - Base64 (dosya)
 
-    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değerini girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
+    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değeri girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
 
     Bazı ayarları ekledikten sonra **Dışarı Aktar**’ı seçebilirsiniz. **Dışarı Aktar**, virgülle ayrılmış değerler (.csv) dosyasına eklediğiniz tüm değerlerin listesini oluşturur.
 

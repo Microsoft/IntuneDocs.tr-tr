@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
-ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f51d229e745a1e545d0853fa9e710a06cbfe6f8b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378292"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851432"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -34,7 +35,7 @@ Android için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkele
 
 Intune Uygulama SDK’sı aşağıdaki dosyalardan oluşur:
 
-* **Microsoft.ıntune.mam.SDK.AAR**: Destek kitaplığı JAR dosyaları dışındaki SDK Bileşenleri.
+* **Microsoft.Intune.MAM.SDK.aar**: Destek kitaplığı JAR dosyaları dışındaki SDK Bileşenleri.
 * **Microsoft.Intune.MAM.SDK.Suppveyat.v4.jar**: Android v4 kullanan uygulamalarda MAM özelliğini etkinleştirmek için gereken sınıfların, kitaplığı destekler.
 * **Microsoft.Intune.MAM.SDK.Suppveyat.v7.jar**: Android v7 kullanan uygulamalarda MAM özelliğini etkinleştirmek için gereken sınıfların, kitaplığı destekler.
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: Android v17 kullanan uygulamalarda MAM özelliğini etkinleştirmek için gereken sınıfların, kitaplığı destekler. 
@@ -834,7 +835,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 ### <a name="important-implementation-notes"></a>Önemli uygulama notları
 
-#### <a name="authentication"></a>Kimlik doğrulaması
+#### <a name="authentication"></a>Authentication
 
 * Uygulama `registerAccountForMAM()` çağrısı yaptığında, bundan kısa süre sonra farklı bir iş parçacığında `MAMServiceAuthenticationCallback` arabiriminde bir geri çağırma alabilir. İdeal olan, **MAMService belirtecini** alma sürecini hızlandırmak için uygulamanın hesabı kaydetmeden önce ADAL’dan kendi belirtecini almasıdır. Uygulama geri çağırmadan geçerli bir belirteç döndürürse, kayıt işlemine devam edilir ve uygulama bir bildirim yoluyla nihai sonucu alır.
 

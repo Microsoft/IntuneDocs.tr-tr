@@ -15,12 +15,13 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2a733eb92dba91c5e11d6ec463eb538df3845fb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112468"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834322"
 ---
 # <a name="intune-testing-and-validation"></a>Intune’u sınama ve doğrulama
 
@@ -32,17 +33,17 @@ Destek belgelerinin oluşturulması ve BT destek ve yardım masası personelinin
 
 Şunları belgelemenizi öneririz:
 
--   **Sınama ölçütleri:** Karşılaştırılacak kıyaslama noktalarını tanımlayın.
+-   **Sınama ölçütleri:** Karşılaştırılacak Kıyaslama noktalarını tanımlayın.
 
--   **Tasarım bileşenleri:** En az bir sınama ölçütünde bulunmalıdır.
+-   **Tasarım bileşenleri:** En az birinde bulunmalıdır sınama ölçütünde.
 
 Bir tasarım bileşeni; bir gereksinim veya senaryoya uygun en az bir sınama ölçütünde mevcut değilse tasarım bileşeninin gerekli olup olmadığını göz önünde bulundurun. Ayrıca, aşağıdaki öğelere sahip olduğunuzdan emin olun:
 
--   **Hesaplar:** Tüm kullanım örneği senaryolarının sınanması için EMS ve Office 365 lisansına sahip sınama hesapları.
+-   **Hesaplar:** EMS ve Office 365'in tüm kullanım örneği senaryolarını test etmek için lisanslı hesapları test edin.
 
--   **Cihazlar:** Silinebilen veya fabrika ayarlarına sıfırlanabilen sınama cihazları.
+-   **Cihazlar:** Silinebilen veya fabrika ayarlarına sıfırlanabilen sınama cihazlar.
 
--   **Tümleştirme bileşenleri:** Tüm tümleştirme bileşenleri (sertifika bağlayıcısı, barındırılan Exchange için Intune hizmetten hizmete bağlayıcısı ve Intune şirket içi Exchange bağlayıcısı) gerekirse yüklenmeli ve yapılandırılmalıdır.
+-   **Tümleştirme Bileşenleri:** Tüm Tümleştirme Bileşenleri (sertifika Bağlayıcısı, barındırılan Exchange için Intune hizmetten hizmete Bağlayıcısı ve Intune şirket içi Exchange Bağlayıcısı) yüklü ve gerekirse yapılandırılmış.
 
 Öngörülemeyen sorunları ele almak için tasarım değişikliklerine gerek duyabilirsiniz. Ayrıca tüm tasarım değişiklikleri, her değişikliğin nedeniyle birlikte tam olarak belgelenmelidir. Bir değişikliğin neler yapabileceğini gösteren bir örnek aşağıda verilmiştir:
 
@@ -62,7 +63,7 @@ Sınama ve doğrulama aşamasında teknik rehberlik veya özel sorun giderme ger
 
 ## <a name="use-case-validation-testing"></a>Kullanım örneği doğrulama sınaması
 
-Senaryoların tam ve işlevsel olduğunu doğrulamak için kullanım örneği doğrulama sınaması gerçekleştirin. İki tür kullanım örneği senaryosu vardır: BT yöneticisi ve son kullanıcı.
+Senaryoların tam ve işlevsel olduğunu doğrulamak için kullanım örneği doğrulama sınaması gerçekleştirin. İki tür kullanım örneği senaryoları şunlardır: BT yöneticisi ve son kullanıcı.
 
 ### <a name="it-admin"></a>BT yöneticisi
 

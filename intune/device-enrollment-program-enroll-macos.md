@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ab95d04403166781594f88ec98db11b281494b2a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068297"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839915"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>MacOS cihazlarını cihaz kayıt programı veya Apple School Manager ile otomatik olarak kaydetme
 

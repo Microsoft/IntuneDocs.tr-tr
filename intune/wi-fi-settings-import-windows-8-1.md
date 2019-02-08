@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a5042c3b1c125a1699091a8a313df3a0058ecd7d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c2d89149343e0dc425f8ef19cf56d61c2aa08da0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188152"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840272"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için Wi-Fi ayarlarını içeri aktarma
 
@@ -57,8 +58,8 @@ Gerekli WiFi profilinin zaten yüklü olduğu bir Windows bilgisayarda aşağıd
 5. **Profil türü**’nde **Wi-Fi içeri aktarma**’yı seçin.
 6. Aşağıdaki ayarları yapılandırın:
     - **Bağlantı adı**: Wi-Fi bağlantısı için bir ad girin. Bu ad, kullanılabilir Wi-Fi ağlarına göz atan son kullanıcılara görüntülenir.
-    - **Profil XML’i**: Gözat düğmesini seçin ve içeri aktarmak istediğiniz Wi-Fi profil ayarlarını içeren XML dosyasını seçin.
-    - **Dosya içeriği**: Seçtiğiniz yapılandırma profili için XML kodunu görüntüler.
+    - **Profil XML**: Gözat düğmesini seçin ve içeri aktarmak istediğiniz Wi-Fi profili ayarlarını içeren XML dosyasını seçin.
+    - **Dosya içeriği**: Seçtiğiniz yapılandırma profili için XML kodunu gösterir.
 7. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin. Profil oluşturuldu ve profiller listesinde gösteriliyor.
 
 ## <a name="next-steps"></a>Sonraki adımlar

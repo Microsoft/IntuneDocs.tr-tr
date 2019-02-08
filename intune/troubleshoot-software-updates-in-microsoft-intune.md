@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1354c789a6756a6ddf2d9c5d6400ece91c80d57c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cfc38af8a3ac6093fc9212a902d3ebf6a4731745
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188645"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839014"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune’da yazılım güncelleştirmesi sorunlarını giderme
 
@@ -246,12 +247,12 @@ Aşağıdaki tabloda Intune **Güncelleştirme Aracısı** hata kodları listele
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|İndirme iptal edildi.|
 
 ## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>Yenisiyle değiştirilmiş çok fazla güncelleştirmesi olan Windows 7 tabanlı bilgisayarlarda Microsoft Intune konsoluna raporlama durduruluyor
-**Sorun**: Microsoft Intune istemcilerinin aşağıdaki belirtilerden en az biriyle karşılaştığı durumlar yaşayabilirsiniz:
+**Sorunu**: Burada Microsoft Intune istemcilerinin aşağıdaki belirtilerden birini veya deneyimi bir durumla karşılaşabilirsiniz:
 - Aniden Microsoft yönetim konsoluna raporlamayı durduruyorlar.  
 - Yüksek CPU kullanımıyla karşılaşıyorlar.
 - Intune portalı aracılığıyla yüklenen uygulamalar yavaş yükleniyor.
 - Microsoft Intune Center şu hatayı tetikliyor: *Bilgisayarınız güncelleştirilirken bir hata oluştu. Hata bulundu: Kod 0x800705b4*.
-- Intune Yönetim Konsolu > Gruplar > Tüm Cihazlar’ın altındaki durum alanında şu görüntüleniyor: *Bu bilgisayarda yüklü olan bir veya daha çok aracıda hatalar var. Bu bilgisayarla ilgili bilgiler doğru veya güncel olmayabilir*.
+- Intune Yönetici konsolunda altındaki durum alanında > Gruplar > tüm cihazları görüntüler: *Bu bilgisayarda yüklü olan bir veya daha çok aracıda hatalar var. Bu bilgisayarla ilgili bilgiler doğru veya güncel olmayabilir*.
 
 Yenisiyle değiştirilmiş güncelleştirmeler uzun bir süre reddedilmezse, bu sorun ortaya çıkabilir. Uygulama yükleme gibi bazı işlemler sırasında Windows yenisiyle değiştirilmiş tüm güncelleştirmeleri sırayla denetler; böylelikle güncelleştirmeler ve ardılları doğru bir şekilde eşlenir. Yenisiyle değiştirilen güncelleştirmeler listesi çok fazla büyürse, işlem yükü ve gereken süre nedeniyle bu denetim görevi yüksek CPU kullanımına neden olabilir. Bu sorun öncelikle Windows 7 çalıştıran istemcileri etkiler çünkü Windows 7 için yenisiyle değiştirilmiş çok fazla sayıda güncelleştirme vardır. Windows 8 ve sonraki işletim sistemlerinin yenisiyle değiştirilmiş o kadar çok güncelleştirmesi olmadığından, bu sorundan fazla etkilenmez.
 
@@ -261,7 +262,7 @@ Yenisiyle değiştirilmiş güncelleştirmeler uzun bir süre reddedilmezse, bu 
 3. Windows 7’ye veya etkilenen istemcilere yüklenmiş olan uygulamalara (örneğin, Microsoft Office) uygulanabilecek, yenisiyle değiştirilmiş tüm güncelleştirmeleri reddedin.
 4. Etkilenen istemcileri yeniden başlatın.
 
-Buna ek olarak, Windows 7 çalıştırıyorsanız şu güncelleştirmeyi yüklediğinizden emin olun:[3050265 Windows 7 için Windows Update İstemcisi: Haziran 2015](https://support.microsoft.com/kb/3050265).
+Windows 7 çalıştırıyorsanız, ayrıca, şu güncelleştirmeyi sahip olduğunuzdan emin olun:[3050265 Windows Update istemcisi Windows 7 için: Haziran 2015](https://support.microsoft.com/kb/3050265).
 
 ### <a name="next-steps"></a>Sonraki adımlar
 Bu bilgiler işinize yaramazsa [Microsoft Intune desteği de alabilirsiniz](get-support.md).

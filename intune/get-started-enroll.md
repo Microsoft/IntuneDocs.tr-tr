@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bdd8267701b20600d67e6927c8b55d7f9c11a34f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 487ad607bc34d5fc2137f1b3903b0711e793658d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186775"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840587"
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Kullanıcının iOS cihazı kaydetme deneyimini anlama
 
@@ -63,7 +64,7 @@ Cihaz kaydı, şirket kaynaklarına erişirken pek çok son kullanıcının ilk 
 
 [Uygulama eklemeye başlama](get-started-apps.md) - Çalışanlarınızın işlerini yapabilmeleri için uygulamalar bulun ve bunları cihazlara ekleyin.
 
-## <a name="learn-more"></a>Daha fazlasını öğrenin
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
 * [Intune için kayıt seçenekleri](enrollment-options.md)
 * [Intune ile kendi cihazını getirmeyi etkinleştirme](byod-enable.md)

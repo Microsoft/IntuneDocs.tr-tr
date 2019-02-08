@@ -16,33 +16,34 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5735a2059690655a76425b049eff9e26f5ab8179
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b68ca31b03bb3274d48b185335f956e38e140ae8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032580"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848568"
 ---
 # <a name="microsoft-intune-documentation-40ignite-2018-special-edition41"></a>Microsoft Intune belgeleri &#40;Ignite 2018 özel sürümü&#41;
 Microsoft Ignite 2018'e hoş geldiniz! Bize görmeye geldiğiniz için mutluyuz. Burada Microsoft Ignite 2018'deyken sizin için topladığımız Intune kaynaklarından bazılarına bir göz atın.
 
 ## <a name="try-our-hands-on-labs-at-ignite-2018"></a>Ignite 2018 adresindeki sayfamızda uygulamalı laboratuvarlara deneyin!
-- **HOL3004**: Mobil cihazlardaki şirket verilerinizin güvenliğini, Koşullu Erişim'i ve Windows Defender Gelişmiş Tehdit Koruması'nı (ATP) da içeren Microsoft 365 ve Microsoft Intune ile sağlayın
-- **WRK3007**: Center Configuration Manager ve Intune kullanarak ortak yönetime başlama
+- **HOL3004**: Microsoft 365 ve Microsoft Intune koşullu erişim ve Windows Defender Gelişmiş tehdit Koruması (ATP) dahil olmak üzere, mobil cihazlarda Kurumsal verilerinizi güvenli hale getirme
+- **WRK3007**: Ortak yönetimi ile çalışmaya başlama System Center Configuration Manager ile Intune
 
 ## <a name="quickstarts"></a>Hızlı girişler
 Bazı hızlı başlangıçları güncelleştirdik ve yeni bazı hızlı başlangıçlar oluşturduk. Intune'u kullanmaya başlamak ve sık kullanılan bazı görevleri çok kısa bir sürede tamamlamak için aşağıdaki hızlı başlangıçları (sırasıyla) tamamlayın.
 
-- [Intune'u ücretsiz deneyin](free-trial-sign-up.md): Intune'u bir test ortamında denemek için ücretsiz bir abonelik oluşturun.    
-- [Kullanıcı oluşturun](quickstart-create-user.md): Bir kullanıcı oluşturun ve kullanıcıya bir lisans atayın.
-- [Grup oluşturun](quickstart-create-group.md): Intune'u mevcut bir kullanıcıyı temel alarak bir grup oluşturmak için kullanın.
-- [Otomatik kaydı ayarlayın](quickstart-setup-auto-enrollment.md): Microsoft Intune'u, belirli kullanıcılar Windows 10 cihazlarında oturum açtığında bu cihazları otomatik kaydetmeye ayarlayın.
-- [Windows 10 Cihazınızı kaydetme](quickstart-enroll-windows-device.md): bir Intune kullanıcı rolünü yararlanarak, Microsoft Intune Windows 10 Cihazınızı kaydetme ve ardından kaydedilen cihaz onaylamak için Intune'a dönün.
-- [Cihaz uyumluluk ilkesi oluşturma](quickstart-set-password-length-android.md): Android cihazlarındaki bilgilere erişim verilmeden önce belirli bir uzunlukta bir parola girmelerini gerektirmek için cihaz uyumluluk ilkesi oluşturma.
-- [Uyumlu olmayan cihazlara bildirim göndermek](quickstart-send-notification.md): bir bildirim iletisi oluşturun. Ardından, ekleyin ve uyumsuzluk ilke atama.
-- [Ekleme ve bir istemci uygulaması atama](quickstart-add-assign-app.md): ekleyin ve bir istemci uygulaması, şirketinizin iş gücü için atayın.
-- [Bir uygulama koruma ilkesi oluşturma ve atama](quickstart-create-assign-app-policy.md): oluşturabilir ve bir istemci uygulaması son kullanıcının cihazında bir uygulama koruma İlkesi atayabilirsiniz. 
-- [Özel bir rol oluşturun ve atayın](quickstart-create-custom-role.md): Bir güvenlik işlemleri departmanı için belirli izinleri olan özel bir rol oluşturun ve atayın. 
+- [Intune ücretsiz olarak deneyin](free-trial-sign-up.md): Intune, bir test ortamında denemek için ücretsiz bir abonelik oluşturun.    
+- [Bir kullanıcı oluşturma](quickstart-create-user.md): Bir kullanıcı oluşturun ve bir lisans atayın.
+- [Bir grup oluşturmak](quickstart-create-group.md): Var olan bir kullanıcıya bağlı bir grup oluşturmak için Intune kullanın.
+- [Otomatik kaydını ayarlama](quickstart-setup-auto-enrollment.md): Windows 10 cihazları için belirli kullanıcılar oturum açtığında otomatik olarak cihazları kaydetmek için Microsoft Intune ayarlayın.
+- [Windows 10 Cihazınızı kaydetme](quickstart-enroll-windows-device.md): Bir Intune kullanıcı rolünü yararlanarak, Microsoft Intune Windows 10 Cihazınızı kaydetme ve ardından kaydedilen cihaz onaylamak için Intune'a dönün.
+- [Cihaz uyumluluk ilkesi oluşturma](quickstart-set-password-length-android.md): Android cihazlarındaki bilgilere erişim verilmeden önce belirli bir uzunlukta bir parola girmelerini gerektirmek için cihaz uyumluluk ilkesi oluşturun.
+- [Uyumlu olmayan cihazlara bildirim göndermek](quickstart-send-notification.md): Bir bildirim iletisi oluşturun. Ardından, ekleyin ve uyumsuzluk ilke atama.
+- [Ekleme ve bir istemci uygulaması atama](quickstart-add-assign-app.md): Ekleyin ve bir istemci uygulaması, şirketinizin iş gücü için atayın.
+- [Bir uygulama koruma ilkesi oluşturma ve atama](quickstart-create-assign-app-policy.md): Oluşturma ve bir istemci uygulaması son kullanıcının cihazında bir uygulama koruma İlkesi atayabilirsiniz. 
+- [Özel bir rol oluşturup](quickstart-create-custom-role.md): Oluşturun ve güvenlik işlemleri departmanı için belirli izinlerine sahip özel bir rol atayın. 
 - [iOS için bir e-posta cihaz profili oluşturun](quickstart-email-profile.md): iOS cihazları için bir e-posta cihaz profili oluşturun.
 
 ## <a name="learn"></a>Bilgi edinin

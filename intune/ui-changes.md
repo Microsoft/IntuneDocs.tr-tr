@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4a1c5f2b400e73566db88fea8e06383e45b363a3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 218c1959649e5dd8c56c52b414aeeec02c6f4a42
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187761"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841768"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure'daki Intune özelliğim nereye gitti?
 Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu başvuru kılavuzu, klasik portalda Intune’a aşina olanlar ve bir işlemi Azure portalında Intune’da nasıl gerçekleştireceğini merak edenler için hazırlanmıştır. Aradığınız özellik bu makalede yoksa , güncelleştirebilmemiz için makalenin sonuna yorumlarınızı yazın.
@@ -50,7 +51,7 @@ Klasik portalda, mobil ve modern Windows ve macOS cihazlarının MDM kaydını y
 
 ![Klasik mobil cihaz kayıt kuralları görüntüsü](./media/01-classic-rules.png)
 
-Bu kurallar, özel durum olmadan Intune hesabınızdaki tüm kullanıcılar için geçerli oluyordu. Azure portalında bu kurallar iki farklı ilke türü altında listeleniyor: Cihaz Türü Kısıtlamaları ve Cihaz Sınırı Kısıtlamaları.
+Bu kurallar, özel durum olmadan Intune hesabınızdaki tüm kullanıcılar için geçerli oluyordu. Azure portalında bu kurallar iki farklı ilke türü artık görünür: Cihaz türü kısıtlamaları ve cihaz sınırı kısıtlamaları.
 
 ![Azure mobil cihaz kaydı kısıtlamalarının görüntüsü](./media/02-azure-enroll-restrictions.png)
 

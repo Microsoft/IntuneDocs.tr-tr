@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4c65b381afaad4b3ba65fa3d8eb49ba8f52b95d1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 58583569ca32449cddf2af23d65c35b897fac6ed
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183358"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850973"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için özel ayarlar kullanma
 
@@ -54,15 +55,15 @@ Bu makale, iOS cihazlar için özel profil oluşturma işlemini gösterir. Ayrı
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: Profil için `ios custom profile` gibi bir ad girin.
+    - **Ad**: Profil için bir ad girmeniz `ios custom profile`.
     - **Açıklama**: Profil için bir açıklama girin.
-    - **Platform**: **iOS** platformunu seçin.
-    - **Profil türü**: **Özel**’i seçin.
+    - **Platform**: Seçin **iOS**.
+    - **Profil türü**: Seçin **özel**.
 
 4. **Özel yapılandırma**’da şu ayarları girin:
 
     - **Özel yapılandırma profili adı**: İlke için bir ad girin. Bu ad, cihazda ve Intune durumunda gösterilir.
-    - **Yapılandırma profili dosyası**: Apple Configurator veya Apple Profile Manager’ı kullanarak oluşturduğunuz yapılandırma profiline gidin. İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
+    - **Yapılandırma profili dosyası**: Apple Configurator veya Apple profili Manager'ı kullanarak oluşturduğunuz yapılandırma profiline göz atın. İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
 
 5. **Tamam** > **Oluştur**’a tıklayarak Intune profilini oluşturun. Profiliniz oluşturulduğunda **Cihaz yapılandırması - Profiller** listesinde görünür.
 

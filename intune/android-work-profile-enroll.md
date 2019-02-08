@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3592ceb2b1a4e7ba32fc0a8b3de53e0f0329d8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f39e9b5f8ecd49ba84f4e9614e2a63a6cfbfef7a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179737"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837946"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Android iş profili cihazların kaydını ayarlama
 
@@ -33,8 +34,8 @@ Android iş profili yönetimini ayarlamak için aşağıdaki adımları izleyin:
 
 1. [Intune kiracı hesabınızı Android kurumsal hesabınıza bağlayın](connect-intune-android-enterprise.md).
 2. Android iş profili kayıt ayarlarını belirtin. Android iş profilleri, [yalnızca belirli Android cihazlarda desteklenmektedir](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Android iş profili destekleyen tüm cihazlar geleneksel Android yönetimini de destekler. Intune, Android iş profilini destekleyen cihazların [Kayıt Kısıtlamaları](enrollment-restrictions-set.md) içerisinde nasıl yönetileceğini belirtmenize olanak sağlar.
-    - **Engelle (varsayılan ayar)**: Android iş profili destekleyen cihazlar da dahil olmak üzere tüm Android cihazlar, geleneksel Android cihaz olarak kaydedilir.
-    - **İzin ver**: Android iş profili destekleyen tüm cihazlar, Android iş profili cihazları olarak kaydedilir. Android iş profilini desteklemeyen herhangi bir Android cihaz, geleneksel Android cihaz olarak kaydedilir.
+    - **Engelle (varsayılan ayar)**:  Android iş profillerini destekleyen cihazlar da dahil olmak üzere tüm Android cihazlar geleneksel Android cihaz olarak kaydedilir.
+    - **İzin**: Android iş profillerini destekleyen tüm cihazlar Android iş profili cihazları kaydedilir. Android iş profilini desteklemeyen herhangi bir Android cihaz, geleneksel Android cihaz olarak kaydedilir.
 3. [Kullanıcılarınıza cihazlarını nasıl kaydedeceklerini anlatın](/intune-user-help/enroll-your-device-in-intune-android).
 
 

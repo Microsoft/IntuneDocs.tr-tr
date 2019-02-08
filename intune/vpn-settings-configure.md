@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd605542a0711e27f87d68af51662fd318f3250e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2d0bde56c6622648d47fe47458bdac62d7843ca
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184888"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838470"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune’da VPN profilleri oluşturma
 
@@ -65,7 +66,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>VPN ayarlarını içeren bir cihaz profili oluşturma
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 4. VPN profili için bir **Ad** ve **Açıklama** girin.

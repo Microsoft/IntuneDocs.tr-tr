@@ -15,12 +15,13 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5186af2e02363d74f2f046188168efd38eee363
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112910"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843434"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Klasik Intune portalındaki yenilikler - önceki aylar
 
@@ -113,7 +114,7 @@ Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum a�
 
 [Uygulamanın kullanıcı arabirimindeki yenilikler](whats-new-app-ui.md) sayfasında önceki oturum açma deneyiminin, yeni kimlik bilgileriyle oturum açma deneyiminin ve yeni başka bir cihazdan yeni oturum açma deneyiminin ekran görüntülerini bulabilirsiniz.
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Değişiklik planı: Intune, Intune İş Ortağı Portalı deneyimini değiştiriyor <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Değişiklik planı: Intune, Intune iş ortağı portalı deneyimini değiştiriyor <!-- 1050016 -->
 
 2017 Mayıs ayı ortalarındaki hizmet güncelleştirmesinden başlayarak, manage.microsoft.com’dan Intune İş Ortağı sayfasını kaldırıyoruz.  
 
@@ -147,11 +148,11 @@ Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Symantec Endpo
 
 Android için Şirket Portalı uygulamasının kullanıcı arabirimi daha modern görünüm ve daha iyi kullanıcı deneyimi için güncelleştiriliyor. Önemli güncelleştirmeler şunlardır:
 
-- Renkler: Şirket Portalı sekmesinin üstbilgileri BT tarafından tanımlanan marka rengindedir.
-- Uygulamalar: **Uygulamalar** sekmesindeki **Öne Çıkan Uygulamalar** ve **Tüm Uygulamalar** düğmeleri güncelleştirildi.
-- Arama: **Uygulamalar** sekmesinde, **Arama** düğmesi kayan eylem düğmesi şeklinde.
-- Uygulamalarda Gezinme: **Tüm Uygulamalar** görünümü daha kolay gezinme için **Öne Çıkan Uygulamalar**, **Tüm Uygulamalar** ve **Kategoriler** bölümlerini sekmeler halinde gösterir.
-- Destek: **Cihazlarım** ve **BT İletişim** sekmeleri okunabilirliği artırmak için güncelleştirildi.
+- Renkler: Şirket portalı sekmesinin üstbilgileri BT tarafından tanımlanan marka rengindedir.
+- Uygulamalar: İçinde **uygulamaları** sekmesinde **öne çıkan uygulamalar** ve **tüm uygulamalar** düğmeleri güncelleştirildi.
+- Arama: İçinde **uygulamaları** sekmesinde **arama** kayan eylem düğmesi düğmesidir.
+- Uygulamalarda gezinme: **Tüm uygulamalar** görüntüler sekmeler halinde görüntüleniyor **öne çıkan**, **tüm**, ve **kategorileri** daha kolay gezinme için.
+- Destek: **Cihazlarım** ve **BT'ye** sekmeleri okunabilirliği artırmak için güncelleştirildi.
 
 Bu değişiklikler hakkında daha ayrıntılı bilgi için bkz. [Intune son kullanıcı uygulamaları için kullanıcı arabirimi güncelleştirmeleri](whats-new-app-ui.md).
 
@@ -228,9 +229,9 @@ MDM sunucusu adresi olarak __manage.microsoft.com__ giren (sorulursa) Windows ve
 Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kılavuzuna](https://material.io/guidelines/material-design/introduction.html) uygun olarak modern bir tasarıma sahip olacak. Bu gelişmiş kullanıcı deneyimi şunları içeriyor olacak:
 
 * __Renkler__: Sekme başlıklarının renkleri özel renk paletinize göre değiştirilebilir.
-* __Arabirim__: Uygulamalar sekmesindeki Öne Çıkan Uygulamalar ve Tüm Uygulamalar düğmeleri güncelleştirildi. Arama düğmesi artık kayan eylem düğmesi şeklinde.
-* __Gezinti__: Tüm Uygulamalar sayfasında daha kolay gezinme için Öne Çıkan Uygulamalar, Tüm Uygulamalar ve Kategoriler sekmeler halinde görüntüleniyor.
-* __Hizmet__: Cihazlarım ve BT'ye Başvur sekmelerinin okunabilirliği geliştirildi.
+* __Arabirimi__: Uygulamalar sekmesindeki öne çıkan uygulamalar ve tüm uygulamalar düğmeleri güncelleştirildi. Arama düğmesi artık kayan eylem düğmesi şeklinde.
+* __Gezinti__: Tüm uygulamaları gösterir sekmeler halinde görüntüleniyor öne çıkan uygulamalar, tüm ve daha kolay gezinme için kategoriler.
+* __Hizmet__: My cihazlar ve BT'ye BAŞVUR sekmelerinin okunabilirliği geliştirildi.
 
 Önce ve sonra görüntülerini [UI güncelleştirmeleri sayfasında](whats-new-app-ui.md) bulabilirsiniz.
 

@@ -15,12 +15,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41ae1ffc17eee93b45f00e4eef5590f6a5d0b7b4
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28f6cfe3b97381cd60bf485b8110cfa602ea9133
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112519"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838607"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune'da iOS cihazları için cihaz uyumluluk ilkesi ekleme
 
@@ -64,33 +65,33 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="email"></a>E-posta
+## <a name="email"></a>Email
 
-- **Mobil cihazların yönetilen bir e-posta profili olmasını gerektir**: Bunu Gerektir olarak ayarlarsanız, Intune ile yönetilen bir e-posta profiline sahip olmayan cihazlar uyumsuz olarak değerlendirilir. Bir cihaz doğru hedeflenmediğinde veya kullanıcı cihazda e-posta hesabını el ile ayarladığında, cihazda yönetilen bir e-posta profili olmayabilir.
+- **Mobil cihazların yönetilen e-posta profili olmasını gerektir**: Bunu yaparsanız gerektir olarak bir e-posta olmayan cihazlar Intune tarafından yönetilen değerlendirilir uyumlu değil. Bir cihaz doğru hedeflenmediğinde veya kullanıcı cihazda e-posta hesabını el ile ayarladığında, cihazda yönetilen bir e-posta profili olmayabilir.
 
   Aşağıdaki durumlarda cihaz uyumsuz olarak kabul edilir:
   - E-posta profili, uyumluluk ilkesi tarafından hedeflenen kullanıcı grubu dışındaki bir kullanıcı grubuna dağıtılır.
   - Kullanıcı, cihaza dağıtılan Intune e-posta profiliyle eşleşen bir e-posta hesabını cihazda zaten ayarlamıştır. Intune, kullanıcı tarafından sağlanan profilin üzerine yazamaz ve bu nedenle yönetemez. Uyumluluğu güvence altına almak için kullanıcının mevcut e-posta ayarlarını kaldırması gerekir. Ardından, Intune yönetilen e-posta profilini yükleyebilir.
 
-- **Intune tarafından yönetilmesi gereken e-posta profilini seçin**: **E-posta hesabı Intune tarafından yönetilmelidir** ayarı seçildiyse, Intune e-posta profilini belirtmek için **Seçin**’i işaretleyin. E-posta profili cihazda mevcut olmalıdır.
+- **Intune tarafından yönetilmesi gereken e-posta profili seçin**: Varsa **e-posta hesabı Intune tarafından yönetilmelidir** ayarı seçildiyse, **seçin** Intune e-posta profilini belirtmek için. E-posta profili cihazda mevcut olmalıdır.
 
 E-posta profili hakkında ayrıntılı bilgi için bkz. [Microsoft Intune ile e-posta profilleri kullanarak şirket e-postasına erişimi yapılandırma](email-settings-configure.md).
 
 ## <a name="device-health"></a>Device health
 
-- **Jailbreak uygulanmış cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumlu kabul edilmez.
-- **Cihazın Cihaz Tehdit Düzeyinde veya bu düzeyin altında olmasını gerektir** (iOS8.0 ve daha yeni): Cihazları uyumsuz olarak işaretlemek için maksimum tehdit düzeyini seçin. Bu tehdit düzeyini aşan cihazlar, uyumsuz olarak işaretlenir:
-  - **Güvenli**: Cihazda hiçbir tehdit olmamasını gerektirdiği için bu seçenek en güvenlisidir. Herhangi bir tehdit düzeyi algılanırsa cihaz, uyumsuz olarak değerlendirilir.
-  - **Düşük**: Cihaz, yalnızca düşük düzeyde tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
-  - **Orta**: Cihazda mevcut tehditler düşük veya orta düzeydeyse cihaz uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
-  - **Yüksek**: Tüm tehdit düzeylerine izin verdiği için bu seçenek en düşük güvenliğe sahiptir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
+- **Jailbreak uygulanmış cihazlar**: Bu ayarı etkinleştirirseniz, jailbreak uygulanmış cihazlar uyumlu değildir.
+- **Cihazın cihaz tehdit düzeyinde veya bunun altında olmasını gerektir** (iOS 8.0 ve üzeri): Cihaz uyumsuz olarak işaretlemek için maksimum tehdit düzeyini seçin. Bu tehdit düzeyini aşan cihazlar, uyumsuz olarak işaretlenir:
+  - **Güvenli**: Bu seçenek en çok, güvenli, cihazda hiçbir tehdit olmaması gibi. Herhangi bir tehdit düzeyi algılanırsa cihaz, uyumsuz olarak değerlendirilir.
+  - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
+  - **Orta**: Cihaz cihazda mevcut tehditler düşük veya Orta düzeydeyse uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz, uyumlu değil olarak değerlendirilir.
+  - **Yüksek**: Bu seçenek en az güvenli seçenektir ve tüm tehdit düzeylerine izin verir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
 
 ## <a name="device-properties"></a>Cihaz özellikleri
 
-- **Gerekli en düşük işletim sistemi:** Cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumlu değil olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Kullanıcı cihazını yükseltmeyi seçebilir. Bundan sonra, şirket kaynaklarına erişebilir.
-- **İzin verilen en yüksek işletim sistemi sürümü**: Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişemez.
-- **En düşük işletim sistemi derleme sürümü**: güvenlik güncelleştirmeleri, Apple yayımlar, yapı numarası genellikle güncelleştirilir, işletim sistemi sürümü. Cihazda bir izin verilen en düşük yapı numarası girmek için bu özelliği kullanın. Bu uygunluk denetimi, iOS 8.0 ve sonraki sürümleri çalıştıran cihazları destekler. 
-- **En yüksek işletim sistemi derleme sürümü**: güvenlik güncelleştirmeleri, Apple yayımlar, yapı numarası genellikle güncelleştirilir, işletim sistemi sürümü. Cihazda bir izin verilen en fazla yapı numarası girmek için bu özelliği kullanın. Bu uygunluk denetimi, iOS 8.0 ve sonraki sürümleri çalıştıran cihazları destekler.
+- **Gerekli en düşük işletim sistemi**: Bir cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Kullanıcı cihazını yükseltmeyi seçebilir. Bundan sonra, şirket kaynaklarına erişebilir.
+- **İzin verilen en yüksek işletim sistemi sürümü**: Bir cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişimi engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. Kuralda işletim sistemine izin veren bir değişiklik oluncaya kadar bu cihaz şirket kaynaklarına erişemez.
+- **En düşük işletim sistemi derleme sürümü**: Apple güvenlik güncelleştirmeleri yayımlarken, yapı numarası genellikle güncelleştirilir, işletim sistemi sürümü. Cihazda bir izin verilen en düşük yapı numarası girmek için bu özelliği kullanın. Bu uygunluk denetimi, iOS 8.0 ve sonraki sürümleri çalıştıran cihazları destekler. 
+- **En yüksek işletim sistemi derleme sürümü**: Apple güvenlik güncelleştirmeleri yayımlarken, yapı numarası genellikle güncelleştirilir, işletim sistemi sürümü. Cihazda bir izin verilen en fazla yapı numarası girmek için bu özelliği kullanın. Bu uygunluk denetimi, iOS 8.0 ve sonraki sürümleri çalıştıran cihazları destekler.
 
 ## <a name="system-security"></a>Sistem güvenliği
 
@@ -99,22 +100,22 @@ E-posta profili hakkında ayrıntılı bilgi için bkz. [Microsoft Intune ile e-
 > [!NOTE]
 > iOS cihazına uyumluluk veya yapılandırma ilkesi uygulandıktan sonra her 15 dakikada bir kullanıcılardan bir geçiş kodu ayarlamaları istenir. Geçiş kodu ayarlanana kadar kullanıcılara sürekli bu istem gönderilir.
 
-- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in. Parola kullanılan iOS cihazları şifrelenir.
-- **Basit parolalar**: Bunu **Engelle** şeklinde ayarlayarak, kullanıcıların **1234** veya **1111** gibi basit parolalar oluşturmalarının önüne geçin. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
-- **Minimum parola uzunluğu**: Parolada bulunması gereken rakam veya karakter sayısı alt sınırını girin.
-- **Gerekli parola türü**: Parolanın yalnızca **Sayısal** karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından (**Alfasayısal**) mı oluşması gerektiğini seçin.
-- **Paroladaki alfasayısal olmayan karakter sayısı**: Parolada bulunması gereken simge karakterleri (&, #, %, !, vb.) sayısı alt sınırını girin.
+- **Mobil cihazların kilidini açmak için parola iste**: **Gerekli** kullanıcıların cihazlarına erişebilmeleri için önce bir parola girin. Parola kullanılan iOS cihazları şifrelenir.
+- **Basit parolalar**: Kümesine **blok** kullanıcılar gibi basit parolalar oluşturamıyor **1234** veya **1111**. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
+- **Minimum parola uzunluğu**: En düşük rakam veya karakter bulunması gereken sayısını girin.
+- **Gerekli parola türü**: Parola yalnızca olması gerekip gerekmediğini seçin **sayısal** karakter veya sayı ve diğer karakterlerin bir karışımı yoksa (**alfasayısal**).
+- **Paroladaki alfasayısal olmayan karakter sayısı**: En az özel karakter sayısını girin (&, #, %,!, vb.) parolanın içermesi gereken.
 
     Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
 
-- **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
-- **Parola kullanım süresi (gün)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
-- **Yeniden kullanılması engellenen eski parola sayısı**: Önceki parolalardan kaç tanesinin kullanılamayacağını girin.
+- **Parola istenmeden önce geçen işlem yapılmayan en fazla dakika**: Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi girin.
+- **Parola süresinin sonu (gün)**: Parolanın süresi dolup yeni bir tane oluşturmanız gerekir önce geçen gün sayısını seçin.
+- **Yeniden kullanılması önlenecek önceki parola sayısı**: Kullanılamaz önceden kullanılmış parola sayısını girin.
 
 ### <a name="restricted-applications"></a>Kısıtlı uygulamalar 
 Uygulamaların paket kimliklerini ilkeye ekleyerek bunları kısıtlayabilirsiniz. Bu durumda bir cihazda bu uygulama yüklüyse cihaz uyumsuz olarak işaretlenir. 
-- **Uygulama Adı**: Paket kimliğini ayırt etmenize yardımcı olacak bir kolay ad ekleyin. 
-- **Uygulama Paket Kimliği**: Uygulama sağlayıcısı tarafından atanmış benzersiz paket tanımlayıcısını girin. Paket Kimliğini bulmak için bkz. [iOS uygulamalarının paket kimliğini bulma](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).  
+- **Uygulama adı**: Paket kimliğini tanımlamanıza yardımcı olacak bir kolay ad girin 
+- **Uygulama paketi kimliği**: Uygulama sağlayıcısı tarafından atanmış benzersiz paket grubu tanımlayıcısı girin. Paket Kimliğini bulmak için bkz. [iOS uygulamalarının paket kimliğini bulma](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).  
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 

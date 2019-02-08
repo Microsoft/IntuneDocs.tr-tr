@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9202bd19d9c932d167808b602aeccfb8b7ed117
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186129"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834509"
 ---
 # <a name="data-collection-in-intune"></a>Intune’da veri toplama
 
@@ -55,7 +56,7 @@ Intune tarafından toplanan tanımlanan veriler şunları içerebilir ancak bu k
     - Telefon numarası
 - Aşağıdaki etkinliklere ilişkin veriler dahil olmak üzere denetim günlüğü bilgileri
     - Bilgisayarlarda
-    - Oluşturma
+    - Create
     - Güncelleştirme (düzenleme)
     - Sil
     - Ata
@@ -128,9 +129,9 @@ Intune tarafından toplanan toplam veriler şunları içerebilir ancak bu kadarl
     - Tanımlı cihaz platformu sayısı  
     - Yüklü cihaz sayısı
     - installedDeviceCount: Uygulamanın yüklü olduğu cihaz sayısı.
-    - notApplicableDeviceCount: Uygulamanın kullanılamadığı cihaz sayısı.
-    - notInstalledDeviceCount: Uygulamanın kullanılabildiği ancak yüklü olmadığı cihaz sayısı.
-    - pendingInstallDeviceCount: Uygulamanın kullanılabildiği ve yüklemenin beklemede olduğu cihaz sayısı.
+    - notApplicableDeviceCount: Uygulama geçerli değil cihazların sayısı.
+    - notInstalledDeviceCount: Uygulama uygulanabilir ancak yüklü olduğu cihaz sayısı.
+    - pendingInstallDeviceCount: Uygulamanın geçerli olduğu cihazları ve yükleme numberr beklemede.
     
 ## <a name="next-steps"></a>Sonraki adımlar
 

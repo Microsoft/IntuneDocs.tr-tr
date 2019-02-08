@@ -15,12 +15,13 @@ ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f32b1b32475d67404dae4325da59fe3f4fda7065
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187462"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840716"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
 
@@ -138,7 +139,7 @@ Daha fazlasını öğrenin:
 - [Azure AD kimlik doğrulaması](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Uygulama izin kapsamları](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Microsoft Graph’a izin verdiğinizde, Intune özelliklerine erişimi denetlemek için aşağıdaki kapsamları belirtebilirsiniz: Intune API’si izin kapsamları aşağıdaki tabloda özetlenmiştir.  İlk sütun özelliğin adını Azure portalında görüntülenen şekliyle gösterir ve ikinci sütun izin kapsam adını sağlar.
+Microsoft Graph'a izin verdiğinizde, Intune özelliklerine erişimi denetlemek için aşağıdaki kapsamları belirtebilirsiniz: Aşağıdaki tabloda, Intune API'si izin kapsamları özetlenir.  İlk sütun özelliğin adını Azure portalında görüntülenen şekliyle gösterir ve ikinci sütun izin kapsam adını sağlar.
 
 _Erişimi Etkinleştir_ ayarı | Kapsam adı
 :--|:--
@@ -160,7 +161,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune uygulamalarını okuma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune uygulamalarını okuma__
 
 - Aşağıdaki varlık özelliklerine ve durumuna okuma erişimi verir:
     - İstemci Uygulamaları
@@ -170,7 +171,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune uygulamalarını okuma ve yazma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune uygulamalarını okuma ve yazma__
 
 - __DeviceManagementApps.Read.All__ ile aynı işlemlere izin verir
 
@@ -183,7 +184,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune cihaz yapılandırması ve ilkelerini okuma__
+- **Erişimi etkinleştir** ayarı: __Okuma Microsoft Intune cihaz yapılandırması ve ilkelerini__
 
 - Aşağıdaki varlık özelliklerine ve durumuna okuma erişimi verir:
     - Cihaz Yapılandırması
@@ -192,7 +193,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune cihaz yapılandırması ve ilkelerini okuma ve yazma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune cihaz yapılandırması ve ilkelerini okuma ve yazma__
 
 - __DeviceManagementConfiguration.Read.All__ ile aynı işlemlere izin verir
 
@@ -203,7 +204,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune cihazlarda kullanıcıları etkileyen uzak eylemler gerçekleştirme__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune cihazlarında kullanıcıları etkileyen uzak eylemler gerçekleştirme__
 
 - Aşağıdaki uzak eylemlere yönetilen bir cihazda izin verir:
     - Devre dışı bırakma
@@ -217,7 +218,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune cihazlarını okuma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune cihazlarını okuma__
 
 - Aşağıdaki varlık özelliklerine ve durumuna okuma erişimi verir:
     - Yönetilen Cihaz
@@ -228,7 +229,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune cihazlarını okuma ve yazma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune cihazlarını okuma ve yazma__
 
 - __DeviceManagementManagedDevices.Read.All__ ile aynı işlemlere izin verir
 
@@ -243,7 +244,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune RBAC ayarlarını okuma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune RBAC ayarlarını okuma__
 
 - Aşağıdaki varlık özelliklerine ve durumuna okuma erişimi verir:
     - Rol Atamaları
@@ -252,7 +253,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune RBAC ayarlarını okuma ve yazma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune RBAC ayarlarını okuma ve yazma__
 
 - __DeviceManagementRBAC.Read.All__ ile aynı işlemlere izin verir
 
@@ -262,7 +263,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune yapılandırmasını okuma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune yapılandırmasını okuma__
 
 - Aşağıdaki varlık özelliklerine ve durumuna okuma erişimi verir:
     - Aygıt Kaydetme
@@ -278,7 +279,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
-- **Erişimi Etkinleştir** ayarı: __Microsoft Intune yapılandırmasını okuma ve yazma__
+- **Erişimi etkinleştir** ayarı: __Microsoft Intune yapılandırmasını okuma ve yazma__
 
 - DeviceManagementServiceConfig.Read.All_ ile aynı işlemlere izin verir
 

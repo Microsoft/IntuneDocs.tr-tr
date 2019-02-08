@@ -15,12 +15,13 @@ ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bd42aaddee3051d01e9a3d30690735d7acbfb411
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181420"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843740"
 ---
 # <a name="intune-migration-guide"></a>Intune geçiş kılavuzu
 
@@ -34,7 +35,7 @@ Bu kılavuz, bir üçüncü taraf MDM sağlayıcısından Intune’a geçiş ile
 
 Bu kılavuz, geçiş işlemini iki aşamaya ayırır. Bu adımlar, aşamalardan oluşan Intune MDM’ye geçiş işleminde size yardımcı olacak görevler, stratejiler ve taktiksel kılavuz içerir.
 
--   [1. Aşama: Intune’u mobil cihaz yönetimine hazırlama](migration-guide-prepare.md)
+-   [1. Aşama: Intune mobil cihaz yönetimi için hazırlama](migration-guide-prepare.md)
 
     -   [MDM geçiş gereksinimlerinizi değerlendirme](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -70,4 +71,4 @@ Yeni Intune dağıtımınızın eski MDM dağıtımınızdan farklı olabileceğ
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[1. Aşama: Intune’u mobil cihaz yönetimine hazırlama](migration-guide-prepare.md)
+[1. Aşama: Intune mobil cihaz yönetimi için hazırlama](migration-guide-prepare.md)

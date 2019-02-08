@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 157328b1fdf774f46d69e619ec0e44e32cbba101
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179839"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834301"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Dağıtım iletişim planı geliştirme
 

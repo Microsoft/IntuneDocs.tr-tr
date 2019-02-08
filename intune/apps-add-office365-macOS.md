@@ -16,12 +16,13 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4aa5cb24bc153839c6aac193f074128dd46a2e5f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40278904cd3af75451d0323a7665e88f6b526928
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185415"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844267"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune ile macOS cihazlara Office 365 atama
 
@@ -39,26 +40,26 @@ macOS cihazlarına Office 365’i eklemeye başlamadan önce aşağıdaki ayrın
 ## <a name="create-and-configure-the-app-suite"></a>Uygulama paketini oluşturma ve yapılandırma
 
 **Uygulamalar** bölmesinden Office 365 uygulamaları ekleyin.
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin. 
-5. **Ekle**’yi seçin.
+5. **Add (Ekle)** seçeneğini belirleyin.
 6. **Uygulama türü** listesinde, **Office 365 Paketi** grubundan **macOS** öğesini seçin.
 7. Uygulama paketi hakkında bilgi almak için **Uygulama Paketi Bilgileri**’ni seçin.  
     Bu bilgiler, Intune’da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı’nda paketi bulması kolaylaşır.
 8. Aşağıdaki bilgileri girin:
-    - **Paket Adı**: Uygulama paketinin Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm paket adlarının benzersiz olduğundan emin olun. Aynı uygulama paketi adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
-    - **Paket Açıklaması**: Uygulama paketi için bir açıklama girin.
+    - **Paket adı**: Şirket portalı'nda görüntülenen uygulama paketinin adını girin. Kullandığınız tüm paket adlarının benzersiz olduğundan emin olun. Aynı uygulama paketi adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
+    - **Paket açıklaması**: Uygulama paketi için bir açıklama girin.
     - **Yayımcı**: Yayımcı olarak Microsoft gösterilir.
     - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Bu ayar, kullanıcıların şirket portalına göz atarken uygulama paketlerini daha kolay bulabilmesini sağlar.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Bu seçenek uygulama paketini, kullanıcılar uygulamalara göz atarken Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüler.
-    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Geliştirici**: Geliştirici olarak Microsoft gösterilir.
-    - **Sahip**: Sahip olarak Microsoft gösterilir.
-    - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
-    - **Logo**: Kullanıcılar şirket portalına göz attığında uygulamayla birlikte Office 365 logosu görüntülenir.
+    - **Bunu şirket Portalı'nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken uygulama paketinin şirket Portalı'nın ana sayfasında göze çarpacak şekilde görüntüleyin için. Bu seçeneği belirleyin.
+    - **Bilgi URL'si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Gizlilik URL'si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Geliştirici**: Microsoft geliştiricisi olarak gösterilir.
+    - **Sahibi**: Sahibi olarak Microsoft gösterilir.
+    - **Notları**: İsteğe bağlı olarak, bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Logo**: Kullanıcılar şirket portalına göz atarken uygulamayla birlikte Office 365 logosu görüntülenir.
 9. **Tamam**’ı seçin.
 10. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.  
     Paket, uygulama listesinde tek bir girdi olarak gösterilir.

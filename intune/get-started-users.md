@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fc5d2a6f17bdac8711348c136ee390a400fc21bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 646a72eaa3837b48b4af718904064fddaeb98955
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182508"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840391"
 ---
 # <a name="get-started-managing-users"></a>Kullanıcıları yönetmeye başlama
 
@@ -29,10 +30,10 @@ Kuruluşunuzdaki tüm farklı kişileri düşünün. Şirket kaynaklarını kull
 
 ## <a name="how-do-i-create-a-user"></a>Bir kullanıcı nasıl oluşturulur?
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Microsoft Intune** bölmesini açtıktan sonra **Kullanıcılar**’ı seçin. **Tüm Kullanıcılar** sayfasında **+ Yeni kullanıcı**’yı seçin.
-4. Kullanıcının **Ad** ve **Kullanıcı adı** gibi ayrıntılarını girin. Kullanıcı adının etki alanı adı kısmı şu etki alanlarından biri olmalıdır:
+4. **Ad** ve **Kullanıcı adı** gibi kullanıcı ayrıntılarını girin. Kullanıcı adının etki alanı adı kısmı şu etki alanlarından biri olmalıdır:
     - ilk varsayılan etki alanı adı olan “contoso.onmicrosoft.com” etki alanı adı veya
     - doğrulanmış, federasyon olmayan “contoso.com” gibi bir etki alanı adı.
 5. **Gruplar**'ın altından kullanıcının ekleneceği bir [grup](get-started-groups.md) seçin.

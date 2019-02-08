@@ -15,14 +15,15 @@ ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 1e21fef5102b22dfe698a9adb73736508452acfe
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a9f332acdd0deff3885c8fce7e0e7ccddc7c10da
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186384"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846069"
 ---
-# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1. Aşama: Microsoft Intune’u mobil cihaz yönetimi (MDM) için hazırlama
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1. Aşama: Microsoft Intune mobil cihaz Yönetimi (MDM) için hazırlama
 
 Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz yönetimi gereksinimlerini gözden geçirelim. Kritik kullanıcı gruplarını tanımlamak için geçerli MDM sağlayıcınızdaki etkin kullanıcıların raporlarını çalıştırmak faydalı olabilir. Daha sonra [MDM gereksinimlerini değerlendirme ](migration-guide-prepare.md#assess-mdm-requirements) bölümündeki soruları cevaplamaya başlayabilirsiniz.
 

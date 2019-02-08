@@ -16,12 +16,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e8c3c0d511439d6b18c7f04e5a493e2851d7997f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5963cb7de2994feb41c4679e87970aec4f127de5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179455"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848836"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Google Play Koruması'nı etkinleştirmek için cihaz uyumluluk ilkesi oluşturma
 
@@ -31,7 +32,7 @@ Bu ayarları gerektiren uyumluluk ilkesi daha sonra bir grup Android kullanıcı
 
 ## <a name="create-a-compliance-policy"></a>Uyumluluk ilkesi oluşturma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 2. **Yönet** grubunda **Cihaz uyumluluğu**'nu seçin. 
 3. **İlkeler**'i ve **İlke oluştur**'u seçin.

@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b2ddf29157255feaa7d336913640a1cf434f921c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 501638724b6f83e2df1d308a5bbf020adf3ef3d2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185789"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838441"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune dağıtım planlama, tasarım ve uygulama kılavuzu
 
@@ -33,21 +34,21 @@ Başarılı bir Microsoft Intune dağıtımı iyi bir plan ve tasarıma sahip ol
 
 Bu kılavuz Intune'u uçtan uca dağıtma sürecinde size adım adım rehberlik edecek bölümler içerir. Amaçlarınızı, hedeflerinizi ve zorlukları netleştirmek için Bölüm 1 ile başlayın. Ardından ihtiyaçlarınıza en çok uyan sırada 2. – 7. Bölümlere geçin. Bu bölümleri sırayla çalışmanız gerekmez; paralel olarak da tamamlayabilirsiniz.
 
--   [Bölüm 1: Intune dağıtım amaçlarını, hedeflerini ve zorluklarını belirleme](planning-guide-deployment-goals.md)
+-   [1. Bölüm: Dağıtım hedeflerini, amaçlarını ve zorluklarını belirleme](planning-guide-deployment-goals.md)
 
--   [Bölüm 2: Kullanım örneği senaryolarını tanımlama](planning-guide-scenarios.md)
+-   [2. Bölüm: Kullanım örneği senaryolarını tanımlama](planning-guide-scenarios.md)
 
--   [Bölüm 3: Kullanım örneği gereksinimlerini belirleme](planning-guide-requirements.md)
+-   [3. Bölüm: Kullanım örneği gereksinimlerini belirleme](planning-guide-requirements.md)
 
--   [Bölüm 4: Dağıtım planı geliştirme](planning-guide-rollout-plan.md)
+-   [4. Bölüm: Dağıtım planı geliştirme](planning-guide-rollout-plan.md)
 
--   [Bölüm 5: Dağıtım iletişim planı geliştirme](planning-guide-communication-plan.md)
+-   [5. Bölüm: Piyasaya çıkma iletişim planı geliştirme](planning-guide-communication-plan.md)
 
--   [Bölüm 6: Destek planı geliştirme](planning-guide-support-plan.md)
+-   [6. Bölüm: Bir destek planı geliştirme](planning-guide-support-plan.md)
 
 -   [Bölüm 7: Intune tasarımı oluşturma](planning-guide-design.md)
 
--   [Bölüm 8: Intune’un uygulanması](planning-guide-onboarding.md)
+-   [Bölüm 8: Intune uygulaması](planning-guide-onboarding.md)
 
 -   [Bölüm 9: Sınama ve doğrulama](planning-guide-test-validation.md)
 

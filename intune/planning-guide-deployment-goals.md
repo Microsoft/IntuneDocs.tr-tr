@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b30fd61bd00cc32da4d9a85a08ae06327a8aea96
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189359"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850684"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Intune dağıtım hedeflerini, amaçlarını ve zorluklarını belirleme
 
@@ -33,27 +34,27 @@ Dağıtım hedefleri, kuruluşunuza Intune dağıtarak uzun vadede ulaşmak iste
 
 -   **Office 365 ile tümleştirme ve Office mobil uygulamaların kullanımını destekleme**
 
-    -   **Açıklama:** Office 365 ile sıkı bir tümleştirme ve Office mobil uygulamalarının uygulama koruması ile kullanılmasını sağlar.
+    -   **Açıklama:** Office 365 ve Office mobil uygulamalarının uygulama koruması ile kullanımı, sıkı bir tümleştirme sağlar.
 
-    -   **İş değeri:** Kullanıcıların aşina olduğu ve tercih ettiği uygulamaları kullanmasına olanak tanıyarak güvenli ve iyileştirilmiş kullanıcı deneyimi.
+    -   **İş değeri:** İle ilgili bilgi sahibi olduğunuz ve tercih ettiğiniz uygulamaları kullanmasına olanak tanıyarak güvenli ve geliştirilmiş kullanıcı deneyimi.
 
 -   **Mobil cihazlarda iç kurumsal hizmetlere erişimi etkinleştirme**
 
-    -   **Açıklama:** Çalışanların çalışmak istedikleri yerde, kendilerine en uygun gelen cihazı kullanarak daha üretken olmalarını sağlama. Bu proje, mobil üretkenliğe olanak tanımayı ve kurumsal verilere güvenli bir şekilde erişilmesini sağlamayı hedeflemelidir.
+    -   **Açıklama:** Çalışanlar, gelen ve kendilerine en uygun cihazı ile çalışmak ihtiyaç duydukları her yerde üretken olmasını sağlar. Bu proje, mobil üretkenliğe olanak tanımayı ve kurumsal verilere güvenli bir şekilde erişilmesini sağlamayı hedeflemelidir.
 
-    -   **İş değeri:** Çalışanların çevik olmalarını ve çalışmaları gereken yerde çalışabilmelerini sağlamak, işletmenin daha rekabetçi hale gelmesini ve daha doyurucu bir çalışma ortamı sağlamasını olanaklı kılar.
+    -   **İş değeri:** Çalışanların Çevik ve yerde iş etkinleştirilmesi, işletmenin daha rekabetçi hale gelmesini ve daha doyurucu bir çalışma ortamı sağlamasını olanaklı sağlar.
 
 -   **Mobil cihazlarda veri koruması sağlama**
 
-    -   **Açıklama:** Veriler mobil bir cihazda depolandığında, kötü amaçlı ve yanlışlıkla gerçekleşen kayıp veya paylaşımdan korunmalıdır.
+    -   **Açıklama:** Veriler Mobil bir cihazda depolandığında, kötü amaçlı ve yanlışlıkla gerçekleşen kayıp veya paylaşımdan korunmalıdır.
 
-    -   **İş değeri:** Veri koruması rekabetçi kalmamızı sağlamak için hayati öneme sahiptir ve müşterilerimize ve onların verilerine son derece büyük bir titizlikle yaklaşırız.
+    -   **İş değeri:** Veri koruması rekabetçi ve biz müşterilerimize ve onların verilerine hayati dikkatli olmanızı ile kalmamızı sağlamak önemlidir.
 
 -   **Maliyetleri azaltma**
 
     -   **Açıklama:** Mümkün olduğunda, proje, dağıtım ve işletim maliyetlerini azaltır.
 
-    -    **İş değeri:** Kaynakların verimli kullanımı, işletmenin diğer alanlara yatırım yapmasını, daha etkili bir şekilde rekabet etmesini ve müşterilere daha iyi hizmet vermesini sağlar.
+    -    **İş değeri:** Kaynakların verimli kullanımı, işletmenin diğer alanlara yatırım yapmasını, daha etkili olmanıza ve daha iyi hizmet vermesini sağlamak etkinleştirir.
 
 ## <a name="deployment-objectives"></a>Dağıtım amaçları
 
@@ -61,7 +62,7 @@ Dağıtım amaçları, kuruluşunuzun Intune dağıtım hedeflerine ulaşması i
 
 -   **Cihaz yönetim çözümlerinin sayısını azaltma**
 
-    -   **Uygulama:** Tek bir mobil cihaz yönetimi çözümünde birleşin: uygulama ve cihazlara yönelik kurumsal veri koruması için Microsoft Intune kullanın.
+    -   **Uygulama:** İçin bir tek bir mobil cihaz yönetimi çözümü birleştirin: Uygulama ve cihazların kurumsal veri koruma için Microsoft Intune.
 
 -   **Exchange'e ve SharePoint Online’a güvenli erişim sağlama**
 
@@ -69,11 +70,11 @@ Dağıtım amaçları, kuruluşunuzun Intune dağıtım hedeflerine ulaşması i
 
 -   **Kurumsal verilerin mobil cihazda depolanmasını veya kurum dışı hizmetlere iletilmesini engelleme**
 
-    -   **Uygulama:** Microsoft Office ve iş kolu uygulamaları için Intune uygulama koruma ilkeleri uygulayın.
+    -   **Uygulama:** Intune uygulama koruma ilkeleri, Microsoft Office ve satır iş kolu uygulamaları için geçerlidir.
 
 -   **Cihazdan kurumsal veri silme yeteneği sağlama**
 
-    -   **Uygulama:** Cihazları Intune'a kaydedin. Bu, uygun olduğunda şirket verilerini ve kaynaklarını uzaktan silebilmenizi sağlar.
+    -   **Uygulama:** Cihazlarını Intune'a kaydetmeleri. Bu, uygun olduğunda şirket verilerini ve kaynaklarını uzaktan silebilmenizi sağlar.
 
 ## <a name="deployment-challenges"></a>Dağıtım zorlukları
 
@@ -81,16 +82,16 @@ Dağıtım zorlukları, bir kuruluşun önde gelen ve dağıtım üzerinde olums
 
 -   Destek hazırlığı ve son kullanıcı deneyimi, bir projenin başlangıçtaki kapsamına dahil edilmez. Bu, son kullanıcıların çözümü yeterince benimsememesine ve destek grubunuzda zorluklara neden olur.
 
-    -   **Hafifletme:** Destek eğitimini proje bünyesine alın. Son kullanıcı deneyimini, dağıtım planınızdaki başarı ölçümleriyle doğrulayın.
+    -   **Azaltma:** Destek eğitimi ekleyin. Son kullanıcı deneyimini, dağıtım planınızdaki başarı ölçümleriyle doğrulayın.
 
 -   Açıkça tanımlanmış hedeflerin ve başarı ölçümlerinin olmaması, somut olmayan sonuçlar elde edilmesine neden olur. Ayrıca, sorunlar ortaya çıktığında kuruluşunuzu geriye dönük bir tutuma kaydırır.
 
-    -   **Hafifletme:** Hedeflerinizi ve başarı ölçümlerinizi proje kapsamınızda erken aşamada tanımlayın ve bu veri noktalarınızı, diğer sunum aşamalarınızı ayrıntılı hale getirmek için kullanın. Amaçların Net, Ölçülebilir, Ulaşılabilir, Gerçekçi ve Zamanlı olduğundan emin olun. Her aşamada amaçlarınıza kıyasla ölçüm yapmaya göre plan yapın ve dağıtım projenizin yolundan çıkmadığından emin olun.
+    -   **Azaltma:** Hedeflerinizi ve başarı ölçümlerinizi proje kapsamınızda erken tanımlayın ve bu veri noktalarınızı, diğer sunum aşamalarınızı için kullanın. Amaçların Net, Ölçülebilir, Ulaşılabilir, Gerçekçi ve Zamanlı olduğundan emin olun. Her aşamada amaçlarınıza kıyasla ölçüm yapmaya göre plan yapın ve dağıtım projenizin yolundan çıkmadığından emin olun.
 
 -   Kuruluşunuz tarafından benimsenen net bir değer önermesi oluşturmayı, bunu doğrulamayı ve herkesle paylaştığınızdan emin olmayı ihmal ediyorsunuz. Bu, çoğu kez çözümün sınırlı düzeyde benimsenmesine ve bir yatırım getirisi (ROI) oluşmamasına neden olur.
 
-    -   **Hafifletme:** Projenize hemen başlama fikri heyecan verici de olsa, açıkça tanımlanmış hedefleriniz ve amaçlarınız olduğundan emin olun. Bunları kullanıcıların kuruluşunuzun neden Intune’u seçtiğini anlamasına yardımcı olması için tüm farkındalık ve eğitim faaliyetlerine ekleyin.
+    -   **Azaltma:** Projenize geçmek heyecanlı olsanız, açıkça hedefleriniz ve amaçlarınız tanımlanmış olun. Bunları kullanıcıların kuruluşunuzun neden Intune’u seçtiğini anlamasına yardımcı olması için tüm farkındalık ve eğitim faaliyetlerine ekleyin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Artık dağıtım hedeflerinizi, amaçlarınızı ve olası zorlukları tanımladığınıza göre bir sonraki bölüme geçebiliriz: [Kullanım örneği senaryolarını tanımlama](planning-guide-scenarios.md).
+Size, dağıtım hedeflerini, amaçlarını ve olası zorlukları tanımladığınıza göre sonraki bölüme geçelim: [Kullanım örneği senaryolarını tanımlama](planning-guide-scenarios.md).

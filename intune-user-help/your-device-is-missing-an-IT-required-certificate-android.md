@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 19128e9de06239fb82266654fe038b4be9ce7d41
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e0ef2bc644b537787bd5275e95a4ecc72c899393
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149790"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835886"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android cihazınızda şirketinizin destek biriminin gerekli kıldığı bir sertifika eksik
 

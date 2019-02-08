@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 14dedc8a690abe17da7e846957737f6059014859
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e178133e23182b105a18d608ccda93f0a01efa3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146731"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834475"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Cihazımda seri numarasını nasıl bulabilirim?
 

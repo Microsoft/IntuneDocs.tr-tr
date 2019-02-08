@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bb205472c4407dab6ff990e33737a8bd8b24a010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7e09ae2bf46a3621610394e494a332ce4fd6c06
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188662"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840086"
 ---
 # <a name="data-intune-sends-to-google"></a>Intune’un Google’a gönderdiği veriler
 
@@ -34,13 +35,13 @@ Aşağıdaki tabloda, bir cihazda cihaz yönetimi etkinleştirildiğinde Microso
 
 | Google’a gönderilen veriler | Ayrıntılar | İçin kullanılan | Örnek |
 |:---:|:---:|:---:|:---:|
-| EnterpriseId | Gmail hesabınızı Intune’a bağladıktan sonra Google’da oluşturulur. | Intune ve Google arasında iletişim kurmak için kullanılan birincil tanımlayıcı.  Bu iletişim; ilkeleri ayarlama, cihazları yönetme ve Android kuruluşunun Intune’a bağlamasını/bağlamayı kaldırır içerir. | Benzersiz tanımlayıcı, Örnek biçim: LC04eik8a6 |
+| EnterpriseId | Gmail hesabınızı Intune’a bağladıktan sonra Google’da oluşturulur. | Intune ve Google arasında iletişim kurmak için kullanılan birincil tanımlayıcı.  Bu iletişim; ilkeleri ayarlama, cihazları yönetme ve Android kuruluşunun Intune’a bağlamasını/bağlamayı kaldırır içerir. | Benzersiz tanımlayıcı, örnek biçim: LC04eik8a6 |
 | İlke Gövdesi | Yeni bir uygulama veya yapılandırma ilkesi kaydederken Intune’da oluşturulur. | İlkeleri cihazlara uygulama. | Bu, bir uygulama veya yapılandırma ilkesi için tüm yapılandırılmış ayarların bir koleksiyonudur. Ağ adları, uygulama adları ve uygulamaya özel ayarlar gibi bir ilkenin parçası olarak sağlanmışsa müşteri bilgilerini içerebilir. |
-| Cihaz Verileri | İş Profili senaryoları için cihazlar Intune'a kayıt ile başlar. Yönetilen cihaz senaryoları için cihazlar Google'a kayıt ile başlar. | Cihaz Verileri bilgileri; ilkeleri uygulama, cihazı yönetme ve genel raporlama gibi çeşitli eylemler için Intune ve Google arasında gönderilir. | **Cihaz Adını temsil eden benzersiz tanımlayıcı.** Örnek: enterprises/LC04ebru7b/devices/3592d971168f9ae4<br>**Kullanıcı Adını temsil eden benzersiz tanımlayıcı.** Örnek: Enterprises/LC04ebru7b/users/116838519924207449711<br>**Cihaz durumu.** Örnekler: Etkin, Devre Dışı, Sağlanıyor.<br>**Uyumluluk durumları.** Örnekler: Ayar desteklenmiyor, gerekli uygulamalar eksik<br>**Yazılım Bilgileri.** Örnekler: Yazılım sürümleri ve düzeltme eki düzeyi.<br>**Ağ Bilgileri.** Örnekler: IMEI, MEID, WifiMacAddress<br>**Cihaz Ayarları.** Örnekler: Şifreleme düzeyleri ve cihazın bilinmeyen uygulamalara izin verip vermediğine ilişkin bilgiler.<br> Bir JSON ileti örneği için aşağıya bakın. |
+| Cihaz Verileri | İş Profili senaryoları için cihazlar Intune'a kayıt ile başlar. Yönetilen cihaz senaryoları için cihazlar Google'a kayıt ile başlar. | Cihaz Verileri bilgileri; ilkeleri uygulama, cihazı yönetme ve genel raporlama gibi çeşitli eylemler için Intune ve Google arasında gönderilir. | **Cihaz Adını temsil eden benzersiz tanımlayıcı.** Örnek: enterprises/LC04ebru7b/devices/3592d971168f9ae4<br>**Kullanıcı Adını temsil eden benzersiz tanımlayıcı.** Örnek: Kuruluşların/LC04ebru7b/users/116838519924207449711<br>**Cihaz durumu.** Örnekler: Etkin, devre dışı, sağlama.<br>**Uyumluluk durumları.** Örnekler: Gerekli uygulamalar eksik desteklenmiyor, ayarı<br>**Yazılım Bilgileri.** Örnekler: Yazılım sürümleri ve düzeltme eki düzeyi.<br>**Ağ Bilgileri.** Örnekler: IMEI, MEID, WifiMacAddress<br>**Cihaz Ayarları.** Örnekler: Şifreleme düzeyleri ve cihazın bilinmeyen uygulamalara izin verip hakkında bilgiler.<br> Bir JSON ileti örneği için aşağıya bakın. |
 | newPassword | Intune'da oluşturulur. | Cihaz parolası sıfırlanıyor. | Yeni parolayı temsil eden dize. |
 | Google User | Google | İş Profili (KCG) senaryolarında iş profilini yönetme. | Bağlantılı Gmail hesabını temsil eden benzersiz tanımlayıcı. Örnek: 114223373813435875042 |
 | Uygulama verileri | Uygulama ilkesi kaydedilirken Intune’da oluşturulur. |  | Uygulama Adı dizesi. Örnek: app:com.microsoft.windowsintune.companyportal |
-| Kurumsal Hizmet Hesabı | Intune isteği üzerine Google’da oluşturulur. | Bu müşteriyle ilgili işlemler için Intune ve Google arasında kimlik doğrulamasında kullanılır. | Bunun birkaç bölümü vardır:<br> **Kuruluş kimliği**: Daha önce belgelenmiştir.<br>**UPN**: Oluşturulan UPN, müşteri adına yapılan kimlik doğrulamasında kullanılır.<br>Örnek: w49d77900526190e26708c31c9e8a0@pfwp-commicrosoftonedfmdm2.google.com.iam.gserviceaccount.com<br>**Anahtar**: Base64 kodlu blob, hizmette şifrelenmiş olarak saklanan kimlik doğrulama isteklerinde kullanılır, blob görünümü şöyledir:<br> Müşterinin anahtarını temsil eden Benzersiz Tanımlayıcı<br>Örnek: a70d4d53eefbd781ce7ad6a6495c65eb15e74f1f |
+| Kurumsal Hizmet Hesabı | Intune isteği üzerine Google’da oluşturulur. | Bu müşteriyle ilgili işlemler için Intune ve Google arasında kimlik doğrulamasında kullanılır. | Bunun birkaç bölümü vardır:<br> **Kuruluş kimliği**: Daha önce belgelenmiştir.<br>**UPN**: Oluşturulan UPN, müşteri adına yapılan kimlik doğrulamasında kullanılır.<br>Örnek: w49d77900526190e26708c31c9e8a0@pfwp-commicrosoftonedfmdm2.google.com.iam.gserviceaccount.com<br>**Anahtar**: Saklanan kimlik doğrulama isteklerinde kullanılan Base64 kodlu blob hizmette şifrelenmiş, ancak bu ne blob görünümü şöyledir:<br> Müşterinin anahtarını temsil eden Benzersiz Tanımlayıcı<br>Örnek: a70d4d53eefbd781ce7ad6a6495c65eb15e74f1f |
 
 
 Microsoft Intune ile Android kurumsal cihaz yönetimini kullanmayı bırakmak ve verileri silmek için hem Microsoft Intune Android kurumsal cihaz yönetimini devre dışı bırakmanız hem de Google hesabınızı silmeniz gerekir. Hesap yönetimini nasıl gerçekleştireceğinizi görmek için Google hesabına bakın.

@@ -15,12 +15,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73075ed06e98ca987e87a7cfda70c546127bf881
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7016b65bb999ed789dc085831e12c002e2ef5db4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179601"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846783"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Microsoft Intune’da Android Kurumsal cihazlar için özel ayarlar kullanma
 
@@ -38,27 +39,27 @@ Bu makale, Android Kurumsal cihazlar için özel profil oluşturma işlemini gö
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: Profil için `android enterprise custom profile` gibi bir ad girin
+    - **Ad**: Profil için bir ad girin `android enterprise custom profile`
     - **Açıklama**: Profil için bir açıklama girin
-    - **Platform**: **Android Kurumsal**’ı seçin
-    - **Profil Türü**: **Özel**’i seçin
+    - **Platform**: Seçin **Android Kurumsal**
+    - **Profil türü**: Seçin **özel**
 
 4. **Özel OMA-URI Ayarları**’nda **Ekle**’yi seçin. Aşağıdaki ayarları girin:
 
-    - **Ad**: Kolayca bulabilmek için OMA-URI ayarına benzersiz bir ad girin.
-    - **Açıklama**: Ayara genel bir bakış sağlayan ve diğer önemli ayrıntıları veren bir açıklama girin.
-    - **OMA-URI**: Ayar olarak kullanmak istediğiniz OMA-URI’yi girin.
-    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü girin. Seçenekleriniz şunlardır:
+    - **Ad**: Sizi kolayca bulabilmesi için OMA-URI ayarı için benzersiz bir ad girin.
+    - **Açıklama**: Ayar ve diğer önemli ayrıntıları genel bakışını veren bir açıklama girin.
+    - **OMA-URI**: Bir ayarı olarak kullanmak istediğiniz OMA-URI'yi girin.
+    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü seçin. Seçenekleriniz şunlardır:
 
       - Dize
       - Dize (XML dosyası)
       - Tarih ve saat
       - Tamsayı
       - Kayan nokta
-      - Boole değeri
+      - Boole
       - Base64 (dosya)
 
-    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değerini girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
+    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değeri girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
 
     Bazı ayarları ekledikten sonra **Dışarı Aktar**’ı seçebilirsiniz. **Dışarı Aktar**, virgülle ayrılmış değerler (.csv) dosyasına eklediğiniz tüm değerlerin listesini oluşturur.
 
@@ -73,18 +74,18 @@ Bu örnekte, Android Kurumsal cihazlarda iş uygulamaları ve kişisel uygulamal
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: Profil için `android ent block copy paste custom profile` gibi bir ad girin.
+    - **Ad**: Profil için bir ad girmeniz `android ent block copy paste custom profile`.
     - **Açıklama**: Profil için bir açıklama girin.
-    - **Platform**: **Android Kurumsal**’ı seçin.
-    - **Profil türü**: **Özel**’i seçin.
+    - **Platform**: Seçin **Android Kurumsal**.
+    - **Profil türü**: Seçin **özel**.
 
 4. **Özel OMA-URI Ayarları**’nda **Ekle**’yi seçin. Aşağıdaki ayarları girin:
 
-    - **Ad**: `Block copy and paste` gibi bir ad girin.
-    - **Açıklama**: `Blocks copy/paste between work and personal apps` gibi bir açıklama girin.
-    - **OMA-URI**: `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste` girin.
-    - **Veri türü**: Bu OMA-URI değerinin **True** veya **False** olması için **Boole** seçeneğini belirleyin.
-    - **Değer**: **True** seçeneğini belirleyin.
+    - **Ad**: Aşağıdaki gibi girin `Block copy and paste`.
+    - **Açıklama**: Aşağıdaki gibi girin `Blocks copy/paste between work and personal apps`.
+    - **OMA-URI**: Girin `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`.
+    - **Veri türü**: Seçin **Boole** bu OMA-URI değeri, bu nedenle **True** veya **False**.
+    - **Değer**: Seçin **True**.
 
 5. Ayarları girdikten sonra ortamınız, aşağıdakine benzer bir şekilde görünecektir:
 

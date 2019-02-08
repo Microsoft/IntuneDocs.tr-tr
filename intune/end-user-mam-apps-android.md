@@ -15,12 +15,13 @@ ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 06115170300909d1683f44e565161d189f345ab8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8ebbbceff37bea17767ea3d0ff2ec6008030b8ef
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188062"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836022"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler
 
@@ -67,7 +68,7 @@ Bu uygulamayı Google Play mağazasından indirin.
 
 Aşağıdaki dosya türleri desteklenir:
 
-* **Ses:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (gelişmiş AAC+), AAC ELD (gelişmiş düşük gecikme AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Ogg Vorbis, PCM/WAVE
+* **Ses:** AAC LC, HE-AACv1 (AAC +), HE-AACv2 (Gelişmiş AAC +), AAC ELD (Gelişmiş düşük gecikme AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Ogg Vorbis, PCM/WAVE
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8
 * **Resim:** .jpg, .pjpg, .png, .ppng, .bmp, .pbmp, .gif, .pgif, .jpeg, .pjpeg
 * **Belgeler:** PDF, PPDF

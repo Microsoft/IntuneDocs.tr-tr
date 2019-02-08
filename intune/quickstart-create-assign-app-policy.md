@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd39e6f4cff0caf9935ba217b9e94cf3529bf0f1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179104"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844216"
 ---
-# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Hızlı Başlangıç: Uygulama koruma ilkesi oluşturma ve atama
+# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Hızlı Başlangıç: Uygulama koruma ilkesini oluşturma ve atama
 
 Bu hızlı başlangıçta son kullanıcı cihazı üzerinde bir uygulama koruma ilkesi oluşturmak ve bunu bir istemci uygulamasına atamak için Intune’u kullanacaksınız. Intune, uygulamalarınızın kuruluşunuzdaki veri koruma gereksinimlerini karşıladığını onaylamak için uygulama koruma ilkeleri kullanır.
 
@@ -45,7 +46,7 @@ Bir uygulama koruma ilkesi oluşturmak için aşağıdaki adımları izleyin:
 2. Aşağıdaki ayrıntıları girin: 
 
     - **Ad**: *Windows 10 içerik koruma*
-    - **Açıklama**: *Bu ilkeyle ilişkilendirilen kullanıcılar, atanan uygulama ve cihazdaki diğer yönetilmeyen uygulamalar arasında kesme, kopyalama ve yapıştırma eylemleri gerçekleştiremez.*
+    - **Açıklama**: *Bu ilkeyle ilişkilendirilen kullanıcıların kesme, kopyalama veya cihaza atanan uygulama ve diğer yönetilmeyen uygulamalar arasında herhangi bir içeriği yapıştırın mümkün olmayacaktır.*
     - **Platform**: *Windows 10*
     - **Kayıt durumu**: *Kayıt ile*
 
@@ -70,7 +71,7 @@ Uygulama koruma ilkesini atamak için aşağıdaki adımları izleyin:
 3.  **Atamalar**’ı seçin.
 4.  **Ekle** sekmesinde **Dahil edilecek gruplar**’ı seçin.
 5.  Eklenecek grup olarak **Contoso Sınama Aracı**’nı seçin.
-6.  **Seçin**’e tıklayın. 
+6.  Tıklayın **seçin**. 
 
 Uygulama koruma ilkesini şimdi atadınız.
 
@@ -84,4 +85,4 @@ Bu hızlı başlangıçta bir uygulama koruma ilkesi oluşturdunuz ve atadınız
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Özel rol oluşturma ve atama](quickstart-create-custom-role.md)
+> [Hızlı Başlangıç: Oluşturun ve özel bir rol atayın](quickstart-create-custom-role.md)

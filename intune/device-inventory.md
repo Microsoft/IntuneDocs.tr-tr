@@ -14,12 +14,13 @@ ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1954f59a008c699c6dcdeb46686d3f37f941908a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9ad3593dfab0326cec4003b794d50d415cf3c536
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180281"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844131"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -31,7 +32,7 @@ Bu makalede, tüm cihazlarınızı ve özelliklerini Azure portalında nasıl g�
 
 ## <a name="view-the-device-details"></a>Cihaz ayrıntılarını görüntüleme
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihazlar** > **Tüm cihazlar**’a gidin ve listelenen cihazlarınızdan birini seçip ayrıntılarını görüntüleyin:
 

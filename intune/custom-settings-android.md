@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 74d23c8433c741927f28bb1d6b9f55393e38f7db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: afce6f5ebe15d79de462f8168a3028be823430fa
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182984"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834305"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune’da Android cihazlar için özel ayarlar kullanma
 
@@ -45,27 +46,27 @@ Bu makale, Android cihazlar için özel profil oluşturma işlemini gösterir.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: Profil için `android custom profile` gibi bir ad girin.
+    - **Ad**: Profil için bir ad girmeniz `android custom profile`.
     - **Açıklama**: Profil için bir açıklama girin.
-    - **Platform**: **Android**’i seçin.
-    - **Profil türü**: **Özel**’i seçin.
+    - **Platform**: Seçin **Android**.
+    - **Profil türü**: Seçin **özel**.
 
 4. **Özel OMA-URI Ayarları**’nda **Ekle**’yi seçin. Aşağıdaki ayarları girin:
 
-    - **Ad**: Kolayca bulabilmek için OMA-URI ayarına benzersiz bir ad girin.
-    - **Açıklama**: Ayara genel bir bakış sağlayan ve diğer önemli ayrıntıları veren bir açıklama girin.
-    - **OMA-URI**: Ayar olarak kullanmak istediğiniz OMA-URI’yi girin.
-    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü girin. Seçenekleriniz şunlardır:
+    - **Ad**: Sizi kolayca bulabilmesi için OMA-URI ayarı için benzersiz bir ad girin.
+    - **Açıklama**: Ayar ve diğer önemli ayrıntıları genel bakışını veren bir açıklama girin.
+    - **OMA-URI**: Bir ayarı olarak kullanmak istediğiniz OMA-URI'yi girin.
+    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü seçin. Seçenekleriniz şunlardır:
 
       - Dize
       - Dize (XML dosyası)
       - Tarih ve saat
       - Tamsayı
       - Kayan nokta
-      - Boole değeri
+      - Boole
       - Base64 (dosya)
 
-    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değerini girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
+    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değeri girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
 
     Bazı ayarları ekledikten sonra **Dışarı Aktar**’ı seçebilirsiniz. **Dışarı Aktar**, virgülle ayrılmış değerler (.csv) dosyasına eklediğiniz tüm değerlerin listesini oluşturur.
 

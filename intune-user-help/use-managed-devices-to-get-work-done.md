@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690691"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838844"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>İş veya Okul kaynaklarına yönetilen cihazları kullanma
 Microsoft Intune kuruluşların cihazları, uygulamaları ve e-posta erişimi yönetmesine olanak sağlayan bir cihaz yönetim sistemidir. Cihaz yönetimi ve diğer çalışanlara ve öğrencilere, neredeyse her yerden ve neredeyse tüm cihazlardan gelen iş bilgilerinize erişim sağlar. Hatta, uzaktan çalışırken, sizin ve kuruluşunuzun bilgilerini güvenli kalır.

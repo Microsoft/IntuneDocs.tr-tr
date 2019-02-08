@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5984ac8ebe825a187b33945699a5fadc27e0c0cc
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 46f2193a3a13183d41b10f03b6efe7100f0d9f9d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828423"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840374"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Windows cihazınızı yönetimden kaldırma
 
@@ -55,7 +56,7 @@ Bir Windows 10 cihazını yönetimden kaldırmak için aşağıdaki adımları t
 
     ![Windows için Şirket Portalı uygulaması Giriş sayfasının, Cihazlarım bölümü vurgulanmış olarak örnek ekran görüntüsü.](./media/1809_CheckAccess_Context_Select_Device.png)
 
-2. [Bağlam menüsünü](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) açmak için bir cihaza sağ tıklayın veya cihazı basılı tutun.  
+2. [Bağlam menüsünü](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) açmak için cihaza sağ tıklayın veya cihazı basılı tutun.  
 
 3. **Kaldır**’a tıklayın.  
 
@@ -91,8 +92,8 @@ Bir Windows 8.1 telefonunu Intune'dan kaldırmak için aşağıdaki adımları t
 
 Şirket Portalı’nın Windows cihazınızda depoladığı iki tür veri vardır:
 
--   **Tanılama günlükleri**: Microsoft’un topladığı standart uygulama etkinliği verileri. Bu, Şirket Portalı uygulamasını kaldırdığınızda otomatik olarak silinir. Uygulama etkinlik verileri, uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi verilerdir.
--   **Uygulama önbelleği**: Simge ve ayarlar gibi bir uygulamanın çalışması için gereken destek dosyaları.
+-   **Tanılama günlükleri**: Microsoft tarafından toplanan standart uygulama etkinlik verileri. Bu, Şirket Portalı uygulamasını kaldırdığınızda otomatik olarak silinir. Uygulama etkinlik verileri, uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi verilerdir.
+-   **Uygulama önbelleği**: Simge ve ayarlar gibi çalışması uygulama için gerekli olan dosyaları destekler.
 
 Depolanan günlükleri ve önbelleği silmek için aşağıdaki adımlardan birini tamamlayın:
 

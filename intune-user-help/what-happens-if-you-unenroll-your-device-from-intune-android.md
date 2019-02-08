@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50f2304ba5fc174707a007b4c4d791cf2db1c656
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147927"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837455"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını sildiğinizde ne olur?
 
@@ -42,4 +43,4 @@ Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve c
 
 Kaydın nasıl silineceği hakkında yönergeler için bkz. [Şirket Portalı uygulamasını kullanarak cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-android.md).
 
-Yardıma mı ihtiyacınız var? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.
+Yardım mı gerekiyor? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

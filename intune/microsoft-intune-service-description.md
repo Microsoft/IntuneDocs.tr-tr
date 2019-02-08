@@ -15,12 +15,13 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 675e45a7f49a943cb57135c141a9331ba24fabe7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fcd78efe6862e42296764e4791bf8fed940adde4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184242"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850956"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune hizmet açıklaması
 

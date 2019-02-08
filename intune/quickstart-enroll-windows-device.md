@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977346"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841832"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Hızlı Başlangıç: Windows 10 cihazınızı kaydetme
 
@@ -106,4 +107,4 @@ Bu hızlı başlangıçta Windows 10 cihazları Intune’a kaydetmeyi öğrendin
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Android cihazlar için gerekli parola uzunluğunu ayarlama](quickstart-set-password-length-android.md)
+> [Hızlı Başlangıç: Gerekli parola uzunluğu Android cihazları için ayarlayın](quickstart-set-password-length-android.md)

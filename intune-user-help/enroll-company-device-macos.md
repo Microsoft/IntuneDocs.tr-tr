@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 603a501ff8b8b3ebc6b142a823b1c5bea4e48b98
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505759"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848228"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Kuruluş tarafından sağlanan macOS cihazınızı yönetime kaydedin
 
@@ -48,7 +49,7 @@ macOS cihazınızı yönetime kaydetmek için aşağıdaki adımları tamamlayı
 4. Wi-Fi ağınıza seçin. Kuruluma devam etmek için İnternet bağlantınız olmalıdır. Ağınızı görmüyorsanız veya kablolu ağ üzerinden bağlanmanız gerekiyorsa, **Diğer Ağ Seçenekleri**'ne tıklayın. İşiniz bittiğinde **Devam**'a tıklayın.  
 
    ![Aralarından seçim yapılacak kullanılabilir ağlar listesinin gösterildiği macOS cihazı Kurulum Yardımcısı Wi-Fi Ağınızı Seçin ekranının görüntüsü. Ayrıca Diğer Ağ Seçenekleri düğmesi, Geri Düğmesi ve Devam düğmesi de gösterilir.](./media/macos-dep-wifi-1808.png)  
-5. Wi-Fi bağlantısı kurduktan sonra, **Uzaktan Yönetim** ekranı görüntülenir. Uzaktan yönetim, kuruluşunuzun yöneticisinin cihazınızı şirketin gerektirdiği hesaplar, ayarlar, uygulamalar ve ağlarla uzaktan yapılandırmasına olanak tanır. Cihazınızın nasıl yönetildiğini anlamanıza yardımcı olması için uzaktan yönetim açıklamasını okuyun. Ardından **Devam**'a tıklayın.  
+5. Wi-Fi bağlantısı kurduktan sonra, **Uzaktan Yönetim** ekranı görüntülenir. Uzaktan yönetim, kuruluşunuzun yöneticisinin cihazınızı şirketin gerektirdiği hesaplar, ayarlar, uygulamalar ve ağlarla uzaktan yapılandırmasına olanak tanır. Cihazınızın nasıl yönetildiğini anlamanıza yardımcı olması için uzaktan yönetim açıklamasını okuyun. Daha sonra **Devam**’a tıklayın.  
 
    ![Uzaktan yönetimi açıklayan metin ve daha fazla bilgi sağlayan belgelerin bağlantısıyla, macOS cihazı Kurulum Yardımcısı Yönetim ekranının görüntüsü. Ayrıca Geri düğmesi ve Devam düğmesi de gösterilir.](./media/macos-dep-remote-management-1-1808.png)  
 6. İstendiğinde, iş veya okul hesabınızla oturum açın. Kimliğiniz doğrulandıktan sonra cihazınız bir yönetim profili yükler. Profil yapılandırılır ve kuruluşunuzun kaynaklarına erişmenize olanak tanır.  

@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 243e9602a253fecf2eda1dd73dfb49a488db0974
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0ba4cf212f44742ca9feb077a945a1f500ca1a78
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190260"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840952"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune ağ yapılandırma gereksinimleri ve bant genişliği
 

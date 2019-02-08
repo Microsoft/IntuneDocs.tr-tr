@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3136088f307d8e2e83faaccafbda4ad2664c6f62
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5fb7c28663320218412e455c97b38cb62b4826ee
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183222"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837351"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune’da macOS cihazlar için özel ayarlar kullanma
 
@@ -54,15 +55,15 @@ Bu makale, macOS cihazlar için özel profil oluşturma işlemini gösterir. Ayr
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: Profil için `macos custom profile` gibi bir ad girin.
+    - **Ad**: Profil için bir ad girmeniz `macos custom profile`.
     - **Açıklama**: Profil için bir açıklama girin.
-    - **Platform**: **macOS**’u seçin.
-    - **Profil türü**: **Özel**’i seçin.
+    - **Platform**: Seçin **macOS**.
+    - **Profil türü**: Seçin **özel**.
 
 4. **Özel yapılandırma**’da şu ayarları girin:
 
     - **Özel yapılandırma profili adı**: İlke için bir ad girin. Bu ad, cihazda ve Intune durumunda gösterilir.
-    - **Yapılandırma profili dosyası**: Apple Configurator veya Apple Profile Manager’ı kullanarak oluşturduğunuz yapılandırma profiline gidin. İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
+    - **Yapılandırma profili dosyası**: Apple Configurator veya Apple profili Manager'ı kullanarak oluşturduğunuz yapılandırma profiline göz atın. İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
 
 5. **Tamam** > **Oluştur**’a tıklayarak Intune profilini oluşturun. Profiliniz oluşturulduğunda **Cihaz yapılandırması - Profiller** listesinde görünür.
 
