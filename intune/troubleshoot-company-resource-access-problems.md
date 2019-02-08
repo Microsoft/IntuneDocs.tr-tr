@@ -15,12 +15,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: f4ead71e626316b515646d474cc006be7cf2f774
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e600c2db57352eb2348ded9fe55295837223797b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190379"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843094"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
 
@@ -34,7 +35,7 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |---------------|-----------------|--------------|
 |10 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Yükleme devam ediyor||
 |20 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|İçerik bekleniyor||
-|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|İçerik alınıyor|Olası Neden: İş durumu 30, bir uygulamanın kullanıcı tarafından indirmesinin başarısız olduğunu belirtir.<br /><br />Bunun olası nedenleri şunlar olabilir:<br /><br />İndirme devam ederken cihazın İnternet bağlantısı kesilmiştir.<br /><br />Kayıt sırasındaki cihaza verilen sertifikanın süresi sona ermiştir.<br /><br />Sorun Giderme:<br /><br />Cihaz sertifikası süresinin dolmadığını onaylamak için cihazda Denetim Masası’ndan Şirket Uygulamaları uygulamasını başlatın; süresi dolmuşsa cihazı yeniden kaydetmeniz gerekir.<br /><br />Cihazın İnternet’e bağlı olduğunu onaylayın ve uygulamayı yeniden istemeyi deneyin.|
+|30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|İçerik alınıyor|Olası neden: İş durumu 30, bir uygulama bir kullanıcı tarafından indirmesinin başarısız olduğunu belirtir.<br /><br />Bunun olası nedenleri şunlar olabilir:<br /><br />İndirme devam ederken cihazın İnternet bağlantısı kesilmiştir.<br /><br />Kayıt sırasındaki cihaza verilen sertifikanın süresi sona ermiştir.<br /><br />Sorun Giderme:<br /><br />Cihaz sertifikası süresinin dolmadığını onaylamak için cihazda Denetim Masası’ndan Şirket Uygulamaları uygulamasını başlatın; süresi dolmuşsa cihazı yeniden kaydetmeniz gerekir.<br /><br />Cihazın İnternet’e bağlı olduğunu onaylayın ve uygulamayı yeniden istemeyi deneyin.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|İçerik indirme tamamlandı||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Yükleme devam ediyor||
 |60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Yükleme Hatası oluştu|Uygulama yüklemesi, indirmeden sonra başarısız oldu.<br /><br />Uygulamanın imzalandığı kod imzalama sertifikası cihazda yok.<br /><br />Uygulamanın bağlı olduğu bir çerçeve bağımlılığı, cihazda yüklü olarak bulunmadı.<br /><br />Uygulamanızın imzalandığı kod imzalama sertifikasının cihazda mevcut olduğundan emin olun ve bu sertifikanın şirkete kayıtlı Windows RT cihazları için hedeflendiğini yöneticiyle birlikte onaylayın.<br /><br />İş çerçevesi bağımlılığının eksik olması nedeniyle yükleme hatası olması durumunda yöneticinin uygulama paketiyle birlikte iş çerçevesini paketleyerek uygulamayı yeniden yayımlaması gerekir.<br /><br />İndirilen uygulama paketi geçerli bir paket değildir, bozulmuş olabilir veya cihazdaki işletim sistemi sürümüyle uyumlu olmayabilir.|
@@ -307,67 +308,67 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016344010|0x87D10836|DCMO(1402): İşlem başarısız oldu|
 |-2016344011|0x87D10835|DCMO(1401): Kullanıcı, sorulduğunda işlemi reddetmeyi seçti|
 |-2016344012|0x87D10834|DCMO(1400): İstemci hatası|
-|-2016344108|0x87D107D4|DCMO(1204): Cihaz Yeteneği devre dışı bırakıldı, Kullanıcının yeniden etkinleştirmesine izin verildi|
-|-2016344109|0x87D107D3|DCMO(1203): Cihaz Yeteneği devre dışı bırakıldı, Kullanıcının yeniden etkinleştirilmesine izin verilmiyor|
-|-2016344110|0x87D107D2|DCMO(1202): Etkinleştirme işlemi başarıyla gerçekleştirildi, ancak Cihaz Yeteneği şu anda ayrılmış|
-|-2016344111|0xF3FB4D95|DCMO(1201): Etkinleştirme işlemi başarıyla gerçekleştirildi ve Cihaz Yeteneği şu anda eklenmiş|
+|-2016344108|0x87D107D4|DCMO(1204): Cihaz yeteneği devre dışı bırakıldı ve kullanıcının bunu yeniden etkinleştirmesine izin verilir|
+|-2016344109|0x87D107D3|DCMO(1203): Cihaz yeteneği devre dışı bırakıldı ve kullanıcının bunu yeniden etkinleştirmesine izin verilmiyor|
+|-2016344110|0x87D107D2|DCMO(1202): Etkinleştirme işlemi başarıyla gerçekleştirildi ancak cihaz yeteneği şu anda ayrılmış|
+|-2016344111|0xF3FB4D95|DCMO(1201): Etkinleştirme işlemi başarıyla gerçekleştirildi ve cihaz yeteneği şu anda eklenmiş|
 |-2016344112|0x87D107D0|DCMO(1200): İşlem başarıyla gerçekleştirildi|
 |-2016345595|0x87D10205|Syncml(517): Atomik bir komuta verilen yanıt tek iletiye sığmayacak kadar büyük.|
-|-2016345596|0x87D10204|Syncml(516): Komut, Atomik öğe içindeydi ve Atomik başarısız oldu. Bu komut başarıyla geri alınmadı.|
-|-2016345598|0x87D10202|Syncml(514): İşlem, komut işlenmeden önce zaten iptal edilmiş olduğundan, SyncML komutu başarıyla tamamlanamadı.|
-|-2016345599|0x87D10201|Syncml(513): Alıcı, istek SyncML İletisinde kullanılan SyncML Eşitleme Protokolü'nün belirtilen sürümünü desteklemiyor veya desteklemeyi reddediyor.|
+|-2016345596|0x87D10204|Syncml(516): Komut, atomik öğenin içindeydi ve atomik başarısız oldu. Bu komut başarıyla geri alınmadı.|
+|-2016345598|0x87D10202|Syncml(514): İşlem komut işlenmeden önce zaten iptal edilmiş olduğundan, SyncML komutu başarıyla tamamlanamadı.|
+|-2016345599|0x87D10201|Syncml(513): Alıcı desteklemiyor veya belirtilen istek SyncML iletisinde kullanılan SyncML eşitleme protokolü sürümünü desteklemeyi reddediyor.|
 |-2016345600|0x87D10200|Syncml (512): Eşitleme oturumu sırasında bir uygulama hatası oluştu.|
-|-2016345601|0x87D101FF|Syncml(511): İstek işlenirken sunucuda ciddi bir hata oluştu.|
+|-2016345601|0x87D101FF|Syncml(511): Ciddi bir hata, istek işlenirken sunucuda oluştu.|
 |-2016345602|0x87D101FE|Syncml(510): İstek işlenirken bir hata oluştu. Hata, alıcı veri deposundaki bir hatayla ilgilidir.|
-|-2016345603|0x87D101FD|Syncml(509): Daha sonra kullanılmak üzere ayrılmış.|
+|-2016345603|0x87D101FD|Syncml(509): daha sonra Gelecekte kullanılmak üzere ayrılmış.|
 |-2016345604|0x87D101FC|Syncml(508): İstemcinin sunucuyla geçerli eşitleme durumunun yenilenmesini gerektiren bir hata oluştu.|
-|-2016345605|0x87D101FB|Syncml(507): Hata, bir Atomik öğe türü içindeki tüm SyncML komutlarının başarısız olmasına neden oldu.|
+|-2016345605|0x87D101FB|Syncml(507): Hata vermesine içindeki tüm SyncML komutlarının bir atomik öğe türü neden oldu.|
 |-2016345606|0x87D101FA|Syncml(506): İstek işlenirken bir uygulama hatası oluştu.|
-|-2016345607|0x87D101F9|Syncml(505): Alıcı, istek SyncML İletisinde kullanılan SyncML DTD'nin belirtilen sürümünü desteklemiyor veya desteklemeyi reddediyor.|
-|-2016345608|=0x87D101F8|Syncml(504): Bir ağ geçidi veya proxy olarak görev yapan alıcı, URI (örneğin HTTP, FTP, LDAP) veya isteği tamamlamaya çalışırken erişmesi gereken başka bir ikincil alıcı (örneğin DNS) tarafından belirtilen yukarı akış alıcıdan zamanında yanıt almadı.|
-|-2016345609|0x87D101F7|Syncml(503): Alıcı, alıcının geçici olarak aşırı yüklenmesi veya bakımda olması nedeniyle isteği şu anda işleyemiyor.|
-|-2016345610|0x87D101F6|Syncml(502): Bir ağ geçidi veya proxy olarak görev yapan alıcı, isteği gerçekleştirmeye çalışırken eriştiği yukarı akış alıcısından geçersiz bir yanıt aldı.|
-|-2016345611|0x87D101F5|Syncml(501): Alıcı, isteği gerçekleştirmek için gerekli olan komutu desteklemiyor.|
-|-2016345612|0x87D101F4|Syncml(500): Alıcı, karşılaştığı beklenmedik durum nedeniyle isteği gerçekleştiremedi|
+|-2016345607|0x87D101F9|Syncml(505): Alıcı desteklemiyor veya desteklemeyi SyncML DTD'nin belirtilen sürümünü reddediyor istek SyncML iletisinde kullanılan.|
+|-2016345608|=0x87D101F8|Syncml(504): Alıcı, ağ geçidi veya proxy olarak hareket ederken zamanında yanıt URI'si (örneğin HTTP, FTP, LDAP) veya isteği tamamlamaya çalışırken erişmesi gereken başka bir ikincil alıcı (örneğin DNS) tarafından belirtilen Yukarı Akış alıcıdan almadı.|
+|-2016345609|0x87D101F7|Syncml(503): Alıcı bir geçici olarak aşırı yüklenmesi veya bakımda nedeniyle isteği şu anda işleyemiyor.|
+|-2016345610|0x87D101F6|Syncml(502): Alıcı, ağ geçidi veya proxy olarak davranırken isteği gerçekleştirmeye çalışırken eriştiği Yukarı Akış alıcıdan geçersiz bir yanıt aldı.|
+|-2016345611|0x87D101F5|Syncml(501): Alıcı isteği gerçekleştirmek için gerekli olan komutu desteklemiyor.|
+|-2016345612|0x87D101F4|Syncml(500): Alıcı, isteği yerine getirmesini önleyen beklenmedik bir koşulla karşılaştı|
 |-2016345684|0x87D101AC|Syncml(428): Taşıma başarısız oldu|
-|-2016345685|0x87D101AB|Syncml(427): Üst öğe, alt öğeler içerdiğinden silinemiyor.|
+|-2016345685|0x87D101AB|Syncml(427): Üst, alt öğeler içerdiğinden silinemiyor.|
 |-2016345686|0x87D101AA|Syncml(426): Kısmi öğe kabul edilmedi.|
 |-2016345687|0x87D101A9|Syncml(425): Gönderenin alıcı üzerinde yeterli erişim denetimi izinleri (ACL) olmadığından istenen komut başarısız oldu.|
-|-2016345688|0x87D101A8|Syncml(424): Öbekli nesne alındı, ancak alınan nesnenin boyutu, ilk öbekte bildirilen boyutla eşleşmedi.|
-|-2016345689|0x87D101A7|Syncml(423): "Geçici Olarak Silinmiş" öğe daha önce sunucuda "Kalıcı Olarak Silinmiş" olduğundan istenen komut başarısız oldu.|
-|-2016345690|0x87D101A6|Syncml(422): LocURI'deki CGI betiği yanlış biçimde oluşturulduğundan istenen komut sunucuda başarısız oldu.|
+|-2016345688|0x87D101A8|Syncml(424): Öbekli nesne alındı ancak alınan nesnenin boyutu ilk öbekte bildirilen boyutla eşleşmedi.|
+|-2016345689|0x87D101A7|Syncml(423): "Geçici olarak silinmiş" öğe daha önce "Kalıcı olarak silinmiş" sunucu üzerinde olduğundan istenen komut başarısız oldu.|
+|-2016345690|0x87D101A6|Syncml(422): CGI komut dosyası içinde LocURI hatalı oluşturulmuş olduğundan istenen komut sunucuda başarısız oldu.|
 |-2016345691|0x87D101A5|Syncml(421): Belirtilen arama dilbilgisi bilinmediğinden istenen komut sunucuda başarısız oldu.|
-|-2016345692|0x87D101A4|Syncml(420): Alıcı, kalan eşitleme verileri için yeterli depolama alanına sahip değil.|
-|-2016345693|0x87D101A3|Syncml(419): İstemci isteğinin oluşturduğu çakışma, sunucu komutunun üstün gelmesiyle çözümlendi.|
-|-2016345694|0x87D101A2|Syncml(418): Hedef zaten var olduğundan istenen Koy veya Ekle komutu başarısız oldu.|
-|-2016345695|0x87D101A1|Syncml(417): İstek şu anda başarısız oldu, isteği başlatanın isteği daha sonra tekrar denemesi gerekiyor.|
+|-2016345692|0x87D101A4|Syncml(420): Alıcı kalan eşitleme verileri için depolama alanına sahip değil.|
+|-2016345693|0x87D101A3|Syncml(419): İstemci isteğinin oluşturduğu çakışma, başarılı sunucu komutu tarafından çözümlendi.|
+|-2016345694|0x87D101A2|Syncml(418): Hedef zaten var olduğundan istenen koy veya Ekle komutu başarısız oldu.|
+|-2016345695|0x87D101A1|Syncml(417): İstek şu anda başarısız oldu ve gönderene istek daha sonra yeniden denemelidir.|
 |-2016345696|0x87D101A0|Syncml(416): İstekte belirtilen bayt boyutu çok büyük olduğundan istek başarısız oldu.|
 |-2016345697|0x87D1019F|Syncml(415): Desteklenmeyen medya türü veya biçimi.|
-|-2016345698|0x87D1019E|Syncml(414): Hedef URI, alıcının işleyemeyeceği ya da işlemek istemediği kadar uzun olduğundan istenen komut başarısız oldu.|
-|-2016345699|0x87D1019D|Syncml(413): İstenen öğe, alıcının işleyemeyeceği ya da işlemek istemediği kadar büyük olduğundan alıcı istenen komutu gerçekleştirmeyi reddediyor.|
+|-2016345698|0x87D1019E|Syncml(414): ' % S'hedef URI alıcının işleyemeyeceği işlemek ya da istemediği kadar uzun olduğundan istenen komut başarısız oldu.|
+|-2016345699|0x87D1019D|Syncml(413): Alıcı İstenen öğe alıcının işleyemeyeceği işlemek ya da daha büyük olduğundan, istenen komutu gerçekleştirmeyi reddediyor.|
 |-2016345700|0x87D1019C|Syncml(412): İstenen komut eksik veya hatalı oluşturulmuş olduğundan alıcıda başarısız oldu.|
-|-2016345701|0x87D1019B|Syncml(411): İstenen komutla beraber Meta öğesi türünde bayt boyutu veya uzunluk bilgileri eklenmelidir.|
-|-2016345702|0x87D1019A|Syncml(410): İstenen hedef artık alıcıda mevcut değil ve iletme URI'sı bilinmiyor.|
-|-2016345703|0x87D10199|Syncml(409): Veriye ait istemci ve sunucu sürümleri arasındaki bir güncelleme çakışması nedeniyle istenen başarısız oldu.|
+|-2016345701|0x87D1019B|Syncml(411): İstenen komut, Meta öğe türünde bayt boyutu veya uzunluk bilgileri tarafından bulunmalıdır.|
+|-2016345702|0x87D1019A|Syncml(410): İstenen hedef artık alıcı ve iletme URI değil.|
+|-2016345703|0x87D10199|Syncml(409): İstenen istemci ve sunucu arasında bir güncelleme çakışması nedeniyle sürümleri veri başarısız oldu.|
 |-2016345704|0x87D10198|Syncml(408): Beklenen bir ileti gereken süre içinde alınmadı.|
-|-2016345705|0x87D10197|Syncml(407): İstek sahibinin doğru kimlik bilgileri sağlaması gerektiğinden istenen komut başarısız oldu.|
-|-2016345706|0x87D10196|Syncml(406): İstekte yer alan isteğe bağlı özellik desteklenmediğinden istenen komut başarısız oldu.|
+|-2016345705|0x87D10197|Syncml(407): İletiyi gönderen uygun kimlik doğrulaması sağlaması gerektiğinden istenen komut başarısız oldu.|
+|-2016345706|0x87D10196|Syncml(406): İstekteki isteğe bağlı özellik desteklenmediğinden istenen komut başarısız oldu.|
 |-2016345707|0x87D10195|Syncml(405): İstenen komuta hedefte izin verilmiyor.|
 |-2016345708|0x87D10194|Syncml(404): İstenen hedef bulunamadı.|
 |-2016345709|0x87D10193|Syncml(403): İstenen komut başarısız oldu, ancak alıcı istenen komutu anladı.|
 |-2016345710|0x87D10192|Syncml(402): Doğru ödeme gerektiğinden istenen komut başarısız oldu.|
-|-2016345711|0x87D10191|Syncml(401): İstek sahibinin doğru kimlik bilgilerini sağlaması gerektiğinden istenen komut başarısız oldu.|
-|-2016345712|0x87D10190|Syncml(400): Komuttaki yanlış oluşturulmuş söz dizimi nedeniyle istenen komut gerçekleştirilemedi.|
-|-2016345807|0x87D10131|Syncml(305): İstenen hedefe, belirtilen proxy URI'sı ile erişilmesi gerekiyor.|
+|-2016345711|0x87D10191|Syncml(401): İstek sahibinin doğru kimlik doğrulaması sağlaması gerektiğinden istenen komut başarısız oldu.|
+|-2016345712|0x87D10190|Syncml(400): komuttaki Komuttaki yanlış oluşturulmuş söz dizimi nedeniyle istenen komut gerçekleştirilemedi.|
+|-2016345807|0x87D10131|Syncml(305): İstenen hedefe, belirtilen proxy URI üzerinden erişilmelidir.|
 |-2016345808|0x87D10130|Syncml(304):İstenen SyncML komutu, hedefte yürütülmedi.|
 |-2016345809|0x87D1012F|Syncml(303): İstenen hedef başka bir URI'da bulunabilir.|
 |-2016345810|0x87D1012E|Syncml(302): İstenen hedef, geçici olarak başka bir URI'ya taşındı.|
 |-2016345811|0x87D1012D|Syncml(301): İstenen hedef, yeni bir URI'ya sahip.|
-|-2016345812|0x87D1012C|Syncml(300): İstenen hedef, istenen birden çok alternatif istenen hedeften biri.|
-|-2016345896|0x87D100D8|Syncml(216): Komut, Atomik öğenin içindeydi ve Atomik başarısız oldu. Bu komut başarıyla geri alındı.|
-|-2016345897|0x87D100D7|Syncml(215): Kullanıcı etkileşimi ve kullanıcının seçimi kabul etmemeyi seçmesi nedeniyle bir komut yürütülmedi.|
+|-2016345812|0x87D1012C|Syncml(300): İstenen hedef, bir dizi birden çok alternatif istenen hedeften biridir.|
+|-2016345896|0x87D100D8|Syncml(216): Bir komut, atomik öğenin içindeydi ve atomik başarısız oldu. Bu komut başarıyla geri alındı.|
+|-2016345897|0x87D100D7|Syncml(215): Bir komut, kullanıcı etkileşimi sonucunda yürütülmedi ve kullanıcının seçimi kabul etmemeyi.|
 |-2016345898|0x87D100D6|Syncml(214): İşlem iptal edildi. SyncML komutu başarıyla tamamlandı, ancak oturum içinde başka komut işlenmeyecek.|
-|-2016345899|0x87D100D5|Syncml(213): Öbeklenmiş öğe kabul edildi ve arabelleğe alındı.|
+|-2016345899|0x87D100D5|Syncml(213): Kabul edildi ve arabelleğe alındı öbeklenmiş öğe|
 |-2016345900|0x87D100D4|Syncml(212): Kimlik doğrulaması kabul edildi. Eşitleme oturumunun kalanı için başka bir kimlik doğrulaması gerekmiyor. Bu yanıt kodu yalnızca kimlik bilgilerinin sağlandığı bir isteğe verilen yanıtta kullanılabilir.|
 |-2016345901|0x87D100D3|Syncml(211): Öğe silinmedi. İstenen öğe bulunamadı. Daha önce silinmiş olabilir.|
 |-2016345902|0x87D100D2|Syncml(210): Arşiv olmadan silme. Yanıt, istenen verilerin başarıyla silindiğini, ancak bu İSTEĞE BAĞLI özellik uygulama tarafından desteklenmediğinden silinmeden önce arşivlenmediğini belirtiyor.|

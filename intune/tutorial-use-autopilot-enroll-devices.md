@@ -17,14 +17,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 455d3fa3b26ae7b18eb195019bc89100714946b9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187744"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850786"
 ---
-# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Öğretici - Intune’a cihaz kaydetmek için Windows Autopilot kullanma
+# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Öğretici: Intune'da Windows cihazları kaydetmeye AutoPilot'ı kullanın
 Windows Autopilot, cihaz kaydını basitleştirir. Microsoft Intune ve Autopilot ile özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. 
 
 Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
@@ -94,7 +95,7 @@ Bir cihaz grubu oluşturduktan sonra, Autopilot cihazları yapılandırabilmek i
 5. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
 6. **İlk kez çalıştırma deneyimi (OOBE)** öğesini seçin, aşağıdaki seçenekleri yapılandırıp diğerlerini varsayılana ayarlı olarak bırakın ve **Kaydet**’e tıklayın:
     - **Son Kullanıcı Lisans Sözleşmesi (EULA)**: **Gizle**
-    - **Gizlilik ayarları**: **Göster**
+    - **Gizlilik ayarları**: **Show**
     - **Kullanıcı hesabı türü**: **Standart**
 
 6. Profili oluşturmak için **Oluştur**’a tıklayın. Autopilot dağıtım profili artık cihazlara atanmak üzere hazırdır.
