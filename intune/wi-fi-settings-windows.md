@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76d9efc969f68188d9752996267ff7a88363f76f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a0d5c6575ffdeeb06d3abd3caed6b8fe3d3dcd4a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180825"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834373"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune’da Windows 10 ve üzeri cihazlar için Wi-Fi ayarları ekleme
 
@@ -35,78 +36,78 @@ Bu makalede bu ayarlar açıklanır.
 
 - **Wi-Fi türü**: **Temel**’i seçin. 
 
-- **Wi-Fi adı (SSID)**: Hizmet kümesi tanımlayıcısının kısaltması. Bu değer, cihazların bağlandığı kablosuz ağın gerçek adıdır. Bununla birlikte, bağlantıyı seçen kullanıcılar yalnızca yapılandırdığınız **Bağlantı adını** görür.
+- **Wi-Fi adı (SSID)**: İçin hizmet kümesi tanımlayıcısı. Bu değer, cihazların bağlandığı kablosuz ağın gerçek adıdır. Bununla birlikte, bağlantıyı seçen kullanıcılar yalnızca yapılandırdığınız **Bağlantı adını** görür.
 
-- **Bağlantı adı**: Bu Wi-Fi bağlantısı için bir kolay ad girin. Girdiğiniz metin, kullanıcıların cihazlarında kullanılabilir bağlantılara göz attıklarında görecekleri addır.
+- **Bağlantı adı**: Bu Wi-Fi bağlantısı için kullanımı kolay bir ad girin. Girdiğiniz metin, kullanıcıların cihazlarında kullanılabilir bağlantılara göz attıklarında görecekleri addır.
 
-- **Aralığa girdiğinde otomatik bağlan**: **Evet** olduğunda, bu ağın aralığına giren cihazlar otomatik olarak bağlanır. **Hayır** olduğunda, cihazlar otomatik olarak bağlanmaz.
+- **Aralık içinde olduğunda otomatik olarak bağlan**: Zaman **Evet**, cihazları bağlama otomatik olarak bu ağ aralıkta olduklarında. **Hayır** olduğunda, cihazlar otomatik olarak bağlanmaz.
 
-  - **Mevcutsa daha fazla tercih edilen ağa bağlan**: Cihazlar tercih edilen birden çok ağın aralığında yer alıyorsa, tercih edilen ağı kullanmak için **Evet**'i seçin. Bu yapılandırma profilindeki Wi-Fi ağını kullanmak için **Hayır**'ı seçin.
+  - **Varsa, daha tercih edilen bir ağa bağlan**: Cihazlar daha çok tercih edilen ağ aralığında ise ardından **Evet** tercih edilen ağ kullanmak için. Bu yapılandırma profilindeki Wi-Fi ağını kullanmak için **Hayır**'ı seçin.
 
     Örneğin, **ContosoCorp** Wi-Fi ağını oluşturduğunuzu ve bu yapılandırma profili içinde **ContosoCorp**'u kullandığınızı varsayalım. Ayrıca, aralık içinde bir de **ContosoGuest** Wi-Fi ağınız olsun. Şirket cihazlarınız aralık içinde olduğunda, bunların otomatik olarak **ContosoCorp**'a bağlanmasını istiyorsunuz. Bu senaryoda, **Mevcutsa daha fazla tercih edilen ağa bağlan** özelliğini **Hayır** olarak ayarlayın.
 
-  - **SSID'sini yayınlamıyor olsa bile bu ağa bağlanın**: Ağınız gizli (SSID'si herkese açık şekilde yayınlanmıyor) olduğunda bile, ağınıza otomatik olarak bağlanmak üzere yapılandırma profili için **Evet**'i seçin. Bu yapılandırma profilinin gizli ağınıza bağlanmasını istemiyorsanız **Hayır**'ı seçin.
+  - **Bu ağ için bile kendi SSID'si yayınlamadığında Bağlan**: Seçin **Evet** bile ağa (yani, kendi SSID'si değil yayın herkese açık şekilde) olarak gizlendiğinde, ağınıza otomatik olarak bağlanmak yapılandırma profili için. Bu yapılandırma profilinin gizli ağınıza bağlanmasını istemiyorsanız **Hayır**'ı seçin.
 
-- **Tarifeli Bağlantı Sınırı**: Bir yönetici, ağ trafiğinin nasıl tarifelendirileceğini belirleyebilir. Daha sonra uygulamalar ağ trafiği davranışlarını bu ayara göre ayarlayabilir. Seçenekleriniz şunlardır:
+- **Ölçülen bağlantı sınırı**: Bir yönetici, ağ trafiğini nasıl ölçülüp seçebilirsiniz. Daha sonra uygulamalar ağ trafiği davranışlarını bu ayara göre ayarlayabilir. Seçenekleriniz şunlardır:
 
-  - **Sınırsız**: Varsayılan ayar. Bağlantı tarifeli değildir ve trafikte kısıtlama yoktur.
-  - **Sabit**: Ağ, ağ trafiği için sabit sınırla yapılandırılmışsa bu seçeneği kullanın. Bu sınıra ulaşıldıktan sonra ağ erişimi engellenir.
-  - **Değişken**: Ağ trafiği bayt başına ücretlendiriliyorsa (bayt başına maliyet) bu seçeneği kullanın.
+  - **Kısıtlanmamış**: Varsayılan. Bağlantı tarifeli değildir ve trafikte kısıtlama yoktur.
+  - **Sabit**: Ağ trafiği için sabit bir üst sınırı ile yapılandırılmışsa bu seçeneği kullanın. Bu sınıra ulaşıldıktan sonra ağ erişimi engellenir.
+  - **Değişken**: Bu seçenek, ağ trafiğini bayt (bayt başına maliyeti) başına ücretlendirilir gerektiğinde kullanılır.
 
-- **Kablosuz Güvenlik Türü**: Ağınızda cihazların kimliğini doğrulamak için kullanılan güvenlik protokolünü girin. Seçenekleriniz şunlardır:
-  - **Açık (kimlik doğrulamasız)**: Bu seçeneği yalnızca ağ güvenlik altına alınmamış olduğunda kullanın.
-  - **WPA/WPA2-Kişisel**: Daha güvenli bir seçenektir ve genellikle Wi-Fi bağlantısı için kullanılır. Daha fazla güvenlik için önceden paylaşılan bir anahtar parolası veya ağ anahtarı girebilirsiniz. 
+- **Kablosuz güvenlik türü**: Ağınızdaki cihazların kimliklerini doğrulamak için kullanılan güvenlik protokolü girin. Seçenekleriniz şunlardır:
+  - **Açık (kimlik doğrulamasız)**: Ağ güvenli değilse, yalnızca bu seçeneği kullanın.
+  - **WPA/WPA2-Kişisel**: Daha güvenli seçeneği ve Wi-Fi bağlantısı için yaygın olarak kullanılır. Daha fazla güvenlik için önceden paylaşılan bir anahtar parolası veya ağ anahtarı girebilirsiniz. 
 
-    - **Önceden paylaşılan anahtar** (PSK): İsteğe bağlıdır. Güvenlik türü olarak **WPA/WPA2-Kişisel**’i seçtiğinizde gösterilir. Kuruluşunuzun ağı ayarlandığında veya yapılandırıldığında bir parola veya ağ anahtarı da yapılandırılır. PSK değeri için bu parolayı veya ağ anahtarını girin. 8-64 karakter arasında bir dize girin. Parolanız veya ağ anahtarınız 64 karakterden oluşuyorsa, onaltılık karakterler girin.
+    - **Önceden paylaşılan anahtar** (PSK): İsteğe bağlı. Güvenlik türü olarak **WPA/WPA2-Kişisel**’i seçtiğinizde gösterilir. Kuruluşunuzun ağı ayarlandığında veya yapılandırıldığında bir parola veya ağ anahtarı da yapılandırılır. PSK değeri için bu parolayı veya ağ anahtarını girin. 8-64 karakter arasında bir dize girin. Parolanız veya ağ anahtarınız 64 karakterden oluşuyorsa, onaltılık karakterler girin.
     
       > [!NOTE]
       > Wi-Fi profilini kaydettiğinizde, girdiğiniz PSK değeri güvenlik nedeniyle gösterilmez. PSK’nin profile kaydedilmesine rağmen önceden paylaşılan filigran **Yapılandırılmadı** olarak görünür. PSK’yi değiştirmek için yeni bir anahtar girin ve profili kaydedin. PSK’yi kaydeder, ilkeyi düzenler ve PSK’yi boş bırakırsanız mevcut PSK kullanılmaya devam eder.
 
-- **Şirket ara sunucu ayarları**: Kuruluşunuz içinde ara sunucu ayarlarını kullanmak için seçin. Seçenekleriniz şunlardır:
-  - **Hiçbiri**: Hiçbir ara sunucu ayarı yapılandırılmaz.
-  - **El ile yapılandır**: **Ara sunucu IP adresini** ve onun **Bağlantı noktası numarasını** girin.
-  - **Otomatik olarak yapılandır**: Proxy otomatik yapılandırma (PAC) betiğine işaret eden URL’yi girin. Örneğin, şunu girin: `http://proxy.contoso.com/proxy.pac`.
+- **Proxy ayarlarını şirket**: Proxy ayarlarını kuruluşunuz içinde kullanmak bu seçeneği seçin. Seçenekleriniz şunlardır:
+  - **Hiçbiri**: Hiçbir proxy ayarı yapılandırılır.
+  - **El ile yapılandırmanız**: Girin **Proxy server IPADDRESS** ve kendi **bağlantı noktası numarası**.
+  - **Otomatik olarak yapılandırma**: Bir proxy otomatik yapılandırma (PAC) betiği için işaret eden URL girin. Örneğin, şunu girin: `http://proxy.contoso.com/proxy.pac`.
 
 Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil oluşturuldu ve profiller listesinde gösteriliyor.
 
 ## <a name="enterprise-profile"></a>Kurumsal profil
 
-- **Wi-Fi türü**: **Kurumsal**’ı seçin. 
+- **Wi-Fi türü**: Seçin **Kurumsal**. 
 
-- **Wi-Fi adı (SSID)**: Hizmet kümesi tanımlayıcısının kısaltması. Bu değer, cihazların bağlandığı kablosuz ağın gerçek adıdır. Bununla birlikte, bağlantıyı seçen kullanıcılar yalnızca yapılandırdığınız **Bağlantı adını** görür.
+- **Wi-Fi adı (SSID)**: İçin hizmet kümesi tanımlayıcısı. Bu değer, cihazların bağlandığı kablosuz ağın gerçek adıdır. Bununla birlikte, bağlantıyı seçen kullanıcılar yalnızca yapılandırdığınız **Bağlantı adını** görür.
 
-- **Bağlantı adı**: Bu Wi-Fi bağlantısı için bir kolay ad girin. Girdiğiniz metin, kullanıcıların cihazlarında kullanılabilir bağlantılara göz attıklarında görecekleri addır.
+- **Bağlantı adı**: Bu Wi-Fi bağlantısı için kullanımı kolay bir ad girin. Girdiğiniz metin, kullanıcıların cihazlarında kullanılabilir bağlantılara göz attıklarında görecekleri addır.
 
-- **Aralığa girdiğinde otomatik bağlan**: **Evet** olduğunda, bu ağın aralığına giren cihazlar otomatik olarak bağlanır. **Hayır** olduğunda, cihazlar otomatik olarak bağlanmaz.
-  - **Mevcutsa daha fazla tercih edilen ağa bağlan**: Cihazlar tercih edilen birden çok ağın aralığında yer alıyorsa, tercih edilen ağı kullanmak için **Evet**'i seçin. Bu yapılandırma profilindeki Wi-Fi ağını kullanmak için **Hayır**'ı seçin.
+- **Aralık içinde olduğunda otomatik olarak bağlan**: Zaman **Evet**, cihazları bağlama otomatik olarak bu ağ aralıkta olduklarında. **Hayır** olduğunda, cihazlar otomatik olarak bağlanmaz.
+  - **Varsa, daha tercih edilen bir ağa bağlan**: Cihazlar daha çok tercih edilen ağ aralığında ise ardından **Evet** tercih edilen ağ kullanmak için. Bu yapılandırma profilindeki Wi-Fi ağını kullanmak için **Hayır**'ı seçin.
 
     Örneğin, **ContosoCorp** Wi-Fi ağını oluşturduğunuzu ve bu yapılandırma profili içinde **ContosoCorp**'u kullandığınızı varsayalım. Ayrıca, aralık içinde bir de **ContosoGuest** Wi-Fi ağınız olsun. Şirket cihazlarınız aralık içinde olduğunda, bunların otomatik olarak **ContosoCorp**'a bağlanmasını istiyorsunuz. Bu senaryoda, **Mevcutsa daha fazla tercih edilen ağa bağlan** özelliğini **Hayır** olarak ayarlayın.
 
-  - **SSID'sini yayınlamıyor olsa bile bu ağa bağlanın**: Ağınız gizli (SSID'si herkese açık şekilde yayınlanmıyor) olduğunda bile, ağınıza otomatik olarak bağlanmak üzere yapılandırma profili için **Evet**'i seçin. Bu yapılandırma profilinin gizli ağınıza bağlanmasını istemiyorsanız **Hayır**'ı seçin.
+  - **Bu ağ için bile kendi SSID'si yayınlamadığında Bağlan**: Seçin **Evet** bile ağa (yani, kendi SSID'si değil yayın herkese açık şekilde) olarak gizlendiğinde, ağınıza otomatik olarak bağlanmak yapılandırma profili için. Bu yapılandırma profilinin gizli ağınıza bağlanmasını istemiyorsanız **Hayır**'ı seçin.
 
-- **Tarifeli Bağlantı Sınırı**: Bir yönetici, ağ trafiğinin nasıl tarifelendirileceğini belirleyebilir. Daha sonra uygulamalar ağ trafiği davranışlarını bu ayara göre ayarlayabilir. Seçenekleriniz şunlardır:
+- **Ölçülen bağlantı sınırı**: Bir yönetici, ağ trafiğini nasıl ölçülüp seçebilirsiniz. Daha sonra uygulamalar ağ trafiği davranışlarını bu ayara göre ayarlayabilir. Seçenekleriniz şunlardır:
 
-  - **Sınırsız**: Varsayılan ayar. Bağlantı tarifeli değildir ve trafikte kısıtlama yoktur.
-  - **Sabit**: Ağ, ağ trafiği için sabit sınırla yapılandırılmışsa bu seçeneği kullanın. Bu sınıra ulaşıldıktan sonra ağ erişimi engellenir.
-  - **Değişken**: Ağ trafiği bayt başına ücretlendiriliyorsa bu seçeneği kullanın.
+  - **Kısıtlanmamış**: Varsayılan. Bağlantı tarifeli değildir ve trafikte kısıtlama yoktur.
+  - **Sabit**: Ağ trafiği için sabit bir üst sınırı ile yapılandırılmışsa bu seçeneği kullanın. Bu sınıra ulaşıldıktan sonra ağ erişimi engellenir.
+  - **Değişken**: Bu seçenek, ağ trafiğini, bayt Ücretli gerektiğinde kullanılır.
 
-- **Çoklu oturum açma (SSO)**: Kimlik bilgilerinin bilgisayar ve Wi-Fi ağı oturum açma işleminde paylaşıldığı çoklu oturum açmayı (SSO) yapılandırmanıza olanak tanır. Seçenekleriniz şunlardır:
-  - **Devre dışı bırak**: SSO davranışını devre dışı bırakır. Kullanıcının ağda ayrıca kimlik doğrulaması yapması gerekir.
-  - **Kullanıcı cihazda oturum açmadan önce etkinleştir**: Kullanıcı oturum açma işleminden hemen önce ağda kimlik doğrulaması yapmak için SSO kullanın.
-  - **Kullanıcı cihazda oturum açtıktan sonra etkinleştir**: Kullanıcı oturum açma işlemini tamamlandıktan hemen sonra ağda kimlik doğrulaması yapmak için SSO kullanın.
-  - **Zaman aşımından önce kimlik doğrulanması gereken en uzun süre**: Ağda kimlik doğrulaması yapmadan önce beklenecek saniye sayısı üst sınırını (1-120 saniye arası) girin.
-  - **Windows'un kullanıcıdan ek kimlik doğrulama kimlik bilgileri istemesine izin ver**: **Evet** seçildiğinde, kimlik doğrulama yöntemi gerektiriyorsa Windows sisteminin kullanıcıdan ek kimlik bilgileri istemesine izin verilir. Bu istemleri gizlemek için **Hayır**'ı seçin.
+- **Çoklu oturum açma (SSO)**: Tek oturum için bilgisayar Paylaşılan kimlik bilgilerini ve Wi-Fi ağ oturum açma (SSO) yapılandırmanıza olanak sağlar. Seçenekleriniz şunlardır:
+  - **Devre dışı**: SSO davranışı devre dışı bırakır. Kullanıcının ağda ayrıca kimlik doğrulaması yapması gerekir.
+  - **Cihazda oturum önce kullanıcı işaretlerini etkinleştirme**: SSO kullanıcı oturum açma işleminin hemen önce ağ kimlik doğrulaması kullanın.
+  - **Cihazda kullanıcı işaretinden sonra etkinleştirme**: SSO hemen kullanıcı oturum açma işlemi tamamlandıktan sonra ağ kimlik doğrulaması yapmak için kullanın.
+  - **Zaman aşımından önce kimlik doğrulaması için en uzun süreyi**: 1-120 saniye ile ağda kimlik doğrulaması önce beklenecek saniye sayısını girin.
+  - **Windows komut istemi kullanıcıdan ek kimlik doğrulama kimlik bilgilerini izin**: Seçme **Evet** Windows kimlik doğrulama yöntemini gerektiriyorsa kullanıcıdan ek kimlik bilgileri için sisteme izin verir. Bu istemleri gizlemek için **Hayır**'ı seçin.
 
-- **İkili ana anahtar önbelleğe almayı etkinleştir**: Kimlik doğrulamasında kullanılan PMK'yi önbelleğe almak için **Evet**'i seçin. Bu önbellek normalde ağda kimlik doğrulamasının daha hızlı tamamlanmasını sağlar. Wi-Fi ağına her bağlantıda karşılıklı kimlik doğrulamayı zorlamak için **Hayır**'ı seçin.
+- **Eşli Ana anahtarı (PMK) önbelleğe almayı etkinleştir**: Seçin **Evet** kimlik doğrulamasında kullanılan PMK önbellek için. Bu önbellek normalde ağda kimlik doğrulamasının daha hızlı tamamlanmasını sağlar. Wi-Fi ağına her bağlantıda karşılıklı kimlik doğrulamayı zorlamak için **Hayır**'ı seçin.
 
-  - **Bir PMK'nin önbellekte depolanacağı en uzun süre**: İkili ana anahtarın (PMK) önbellekte depolanacağı dakika sayısını (5-1440 dakika arası) girin.
-  - **Önbellekte depolanacak en fazla PMK sayısı**: Önbellekte depolanacak anahtar sayısını (1-255 arası) girin.
+  - **Bir PMK önbelleğinde depolanan en uzun süreyi**: Eşli Ana anahtarı (PMK), 5-1440 dakika arasında önbelleğinde depolanan dakika sayısını girin.
+  - **PMKs önbellekte depolanan en fazla sayısını**: 1-255 önbellekten içinde depolanan anahtarlar sayısını girin.
 
-- **Ön kimlik doğrulamasını etkinleştir**: Ön kimlik doğrulaması profilin bağlantı öncesinde profildeki ağ için tüm erişim noktalarında kimlik doğrulaması yapmasını sağlar. Erişim noktaları arasında hareket ederken, ön kimlik doğrulaması kullanıcının veya cihazların daha hızlı yeniden bağlanmasını sağlar. Profilin aralık içinde yer alan bu ağın tüm erişim noktalarında kimlik doğrulaması yapması için **Evet**'i seçin. Kullanıcı veya cihazın her erişim noktasında ayrıca kimlik doğrulaması yapmasını gerektirmek için **Hayır**'ı seçin.
+- **Ön kimlik doğrulamasını etkinleştirme**: Ön kimlik doğrulama için ağ profilindeki tüm erişim noktalarına bağlanmadan önce kimlik doğrulaması profili sağlar. Erişim noktaları arasında hareket ederken, ön kimlik doğrulaması kullanıcının veya cihazların daha hızlı yeniden bağlanmasını sağlar. Profilin aralık içinde yer alan bu ağın tüm erişim noktalarında kimlik doğrulaması yapması için **Evet**'i seçin. Kullanıcı veya cihazın her erişim noktasında ayrıca kimlik doğrulaması yapmasını gerektirmek için **Hayır**'ı seçin.
 
-  - **En yüksek ön kimlik doğrulaması denemesi**: Ön kimlik doğrulaması için yapılacak deneme sayısını (1-16 arası) girin.
+  - **En fazla ön kimlik doğrulama denemesi**: 1-16 ' preauthenticate için deneme sayısını girin.
 
-- **EAP türü**: Güvenli kablosuz bağlantıların kimliğini doğrulamak için kullanılacak Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin. Seçenekleriniz şunlardır:
+- **EAP türü**: Güvenli kablosuz bağlantıların kimliğini doğrulamak için Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin. Seçenekleriniz şunlardır:
 
   - **EAP-SIM**
   - **EAP-TLS**
@@ -120,34 +121,34 @@ Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil
 
       - **Sunucu Güveni**  
 
-        **Sertifika sunucu adları**: **EAP-TLS**, **EAP-TTLS** veya **PEAP** EAP türleri ile kullanın. Güvenilen sertifika yetkiliniz (CA) tarafından verilen sertifikalarda yaygın olarak kullanılan bir veya birden çok ad girin. Bu bilgiyi girerseniz, bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven iletişim kutusunu atlayabilirsiniz.  
+        **Sertifika sunucu adları**: İle kullanma **EAP-TLS**, **EAP-TTLS**, veya **PEAP** EAP türleri. Güvenilen sertifika yetkiliniz (CA) tarafından verilen sertifikalarda yaygın olarak kullanılan bir veya birden çok ad girin. Bu bilgiyi girerseniz, bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven iletişim kutusunu atlayabilirsiniz.  
 
-        **Sertifika doğrulaması için kök sertifika**: **EAP-TLS**, **EAP-TTLS** veya **PEAP** EAP türleri ile kullanın. Bağlantı kimliğini doğrulamak için kullanılan, güvenilen kök sertifika profilini seçin.  
+        **Sunucu doğrulaması için kök sertifika**: İle kullanma **EAP-TLS**, **EAP-TTLS**, veya **PEAP** EAP türleri. Bağlantı kimliğini doğrulamak için kullanılan, güvenilen kök sertifika profilini seçin.  
 
-        **Kimlik gizliliği (dış kimlik)**: **PEAP** EAP türü ile kullanın. Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.  
+        **Kimlik gizliliği (Dış kimlik)**: İle kullanma **PEAP** EAP türü. Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.  
 
-      - **İstemci Kimlik Doğrulaması**
+      - **İstemci kimlik doğrulaması**
 
-        **İstemci kimlik doğrulaması için istemci sertifikası (Kimlik sertifikası)**: **EAP-TLS** EAP türü ile kullanın. Bağlantı kimliğini doğrulamak için kullanılan sertifika profilini seçin.
+        **İstemci kimlik doğrulaması (kimlik sertifikası) için istemci sertifikası**: İle kullanma **EAP-TLS** EAP türü. Bağlantı kimliğini doğrulamak için kullanılan sertifika profilini seçin.
 
-        **Kimlik doğrulama yöntemi**: **EAP-TTLS** EAP türü ile kullanın. Bağlantı için kimlik doğrulama yöntemini seçin:  
+        **Kimlik doğrulama yöntemi**: İle kullanma **EAP-TTLS** EAP türü. Bağlantı için kimlik doğrulama yöntemini seçin:  
 
-          - **Sertifikalar**: Sunucuya gösterilen kimlik sertifikası olan istemci sertifikasını seçin.
-          - **Kullanıcı Adı ve Parola**: Kimlik doğrulaması için bir **EAP dışı yöntem (iç kimlik)** girin. Seçenekleriniz şunlardır:
+          - **Sertifikaları**: Sunucuya gösterilen kimlik sertifikası olan istemci sertifikası seçin.
+          - **Kullanıcı adı ve parola**: Girin bir **EAP dışı yöntem (iç kimlik)** kimlik doğrulama yöntemi. Seçenekleriniz şunlardır:
 
             - **Şifrelenmemiş parola (PAP)**
             - **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**
             - **Microsoft CHAP (MS-CHAP)**
             - **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**
 
-        **Kimlik gizliliği (dış kimlik)**: **EAP-TTLS** EAP türü ile kullanın. Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
+        **Kimlik gizliliği (Dış kimlik)**: İle kullanma **EAP-TTLS** EAP türü. Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
 
-- **Şirket ara sunucu ayarları**: Kuruluşunuz içinde ara sunucu ayarlarını kullanmak için seçin. Seçenekleriniz şunlardır:
-  - **Hiçbiri**: Hiçbir ara sunucu ayarı yapılandırılmaz.
-  - **El ile yapılandır**: **Ara sunucu IP adresini** ve onun **Bağlantı noktası numarasını** girin.
-  - **Otomatik olarak yapılandır**: Ara sunucu otomatik yapılandırma (PAC) betiğine işaret eden URL'yi girin. Örneğin, şunu girin: `http://proxy.contoso.com/proxy.pac`.
+- **Proxy ayarlarını şirket**: Proxy ayarlarını kuruluşunuz içinde kullanmak bu seçeneği seçin. Seçenekleriniz şunlardır:
+  - **Hiçbiri**: Hiçbir proxy ayarı yapılandırılır.
+  - **El ile yapılandırmanız**: Girin **Proxy server IPADDRESS** ve kendi **bağlantı noktası numarası**.
+  - **Otomatik olarak yapılandırma**: Bir proxy otomatik yapılandırma (PAC) betiği için işaret eden URL girin. Örneğin, şunu girin: `http://proxy.contoso.com/proxy.pac`.
 
-- **Wi-Fi profilinin Federal Bilgi İşleme Standardı (FIPS) ile uyumlu olmasını zorla** FIPS 140-2 standardıyla doğrulama yaparken bunu **Evet** olarak ayarlayın. Bu standart, şifreleme tabanlı güvenlik sistemleri kullanan tüm ABD federal resmi kurumlarında dijital olarak saklanan, hassas fakat gizli olmayan bilgileri korumak için gereklidir. **Hayır**’ı seçerseniz FIPS ile uyumlu olamazsınız.
+- **Wi-Fi profilini Federal Bilgi İşleme Standardı (FIPS ile) uyumlu olmaya zorla**: Seçin **Evet** karşı FIPS 140-2 standardı doğrularken. Bu standart, şifreleme tabanlı güvenlik sistemleri kullanan tüm ABD federal resmi kurumlarında dijital olarak saklanan, hassas fakat gizli olmayan bilgileri korumak için gereklidir. **Hayır**’ı seçerseniz FIPS ile uyumlu olamazsınız.
 
 Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil oluşturuldu ve profiller listesinde gösteriliyor.
 

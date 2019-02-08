@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: f6559b10bb9e3c293a9719235d01d8c7b55ee62f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a858de59c073152c984b9b912da1b2ef3d7a0ed4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185398"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837671"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune’da Windows bilgisayarı yazılımları için lisans sözleşmelerini yönetme
 
@@ -183,6 +184,6 @@ Yazılım lisanslama anlaşmaları, lisans gruplarına eklenebilir. Lisans sözl
 |            Görev            |                                                                                                                                                                                 Ayrıntılar                                                                                                                                                                                  |
 |   Lisans grubu oluşturma   |                                                            <strong>Lisanslar</strong> çalışma alanının <strong>Genel Bakış</strong> sayfasındaki <strong>Görevler</strong> menüsünde <strong>Lisans Grubu Oluştur</strong>’u seçin. <strong>Not:</strong> Toplamda en fazla 500 lisans grubu oluşturabilirsiniz.                                                             |
 |   Lisans grubunu yeniden adlandırma   |                                                                                                      <strong>Lisanslar</strong> çalışma alanında bir lisans grubu seçin ve ardından <strong>Görevler</strong> menüsünde <strong>Lisans Grubunu Düzenle</strong>’yi seçin.                                                                                                       |
-|   Lisans grubunu silme   |                                 <strong>Lisanslar</strong> çalışma alanında bir lisans grubu seçin ve ardından <strong>Görevler</strong> menüsünde <strong>Lisans Grubunu Sil</strong>’i seçin. <strong>İpucu:</strong> Silinen grubun içindeki tüm lisanslar <strong>Atanmamış anlaşmalar</strong> lisans grubuna taşınır.                                 |
-| Lisans sözleşmesini silme | <strong>Lisanslar</strong> çalışma alanında bir anlaşma seçin ve sonra da <strong>Sil</strong>’i seçin. <strong>İpucu:</strong> Toplu Lisanslama anlaşmalarını sildikten sonra, lisans bilgilerini güncelleştirmek için, belirli bir lisans grubu için <strong>Genel</strong> sekmesinde veya <strong>Lisanslara Genel Bakış</strong> sayfasında <strong>Şimdi Yenile</strong>‘yi seçin. |
+|   Lisans grubunu silme   |                                 <strong>Lisanslar</strong> çalışma alanında bir lisans grubu seçin ve ardından <strong>Görevler</strong> menüsünde <strong>Lisans Grubunu Sil</strong>’i seçin. <strong>İpucu:</strong> Silinen grubun içindeki tüm lisanslar taşınır <strong>atanmamış anlaşmalar</strong> lisans grubu.                                 |
+| Lisans sözleşmesini silme | <strong>Lisanslar</strong> çalışma alanında bir anlaşma seçin ve sonra da <strong>Sil</strong>’i seçin. <strong>İpucu:</strong> Lisans bilgilerini güncelleştirmek için Toplu Lisanslama anlaşmalarını sildikten sonra seçin <strong>Şimdi Yenile</strong> üzerinde <strong>lisanslara genel bakış</strong> sayfası veya <strong>genel</strong> için sekmesinde bir belirli bir lisans grubu. |
 

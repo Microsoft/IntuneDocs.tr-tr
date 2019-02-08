@@ -15,12 +15,13 @@ ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 83ac68e1f6efa9e5b0c1ee0e031d36989b634edd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b4f69673e6cb91e18469922d7b2277bc5b6936d9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185228"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845480"
 ---
 # <a name="what-is-device-management"></a>Cihaz yönetimi nedir? 
 
@@ -90,7 +91,7 @@ Cihaz Yönetim panosunda şunları yapabilirsiniz:
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Kullanıcıları yönetme](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Grupları ve üyeleri yönetme](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [Sorun Giderme](https://docs.microsoft.com/intune/help-desk-operators)
+- [Sorun giderme](https://docs.microsoft.com/intune/help-desk-operators)
 
 ## <a name="next-step"></a>Sonraki adım
 Bir MDM veya MAM çözümünü kullanmaya başlamaya, Intune'u kurma adımlarını uygulamaya, cihazlar kaydetmeye ve ilkeler oluşturmaya hazır olduğunuzda [Microsoft 365 için mobil cihaz yönetimi](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)'ne bakın. 

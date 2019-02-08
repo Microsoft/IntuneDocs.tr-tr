@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 44a6d89b649514a08193d7144dff7d89dc3d9c55
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 85a03718185de939612f5431a993f9f34c3048ba
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183375"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840663"
 ---
 # <a name="company-portal-abandonment-report"></a>Şirket portalı bırakma raporu
 
@@ -52,9 +53,9 @@ Raporlar, son iki haftanın verilerini gösterir ancak geçmiş 30 gün içerisi
 
 Raporun üst kısmında, tüm kayıtlar arasından bırakılan raporların sayısını ve yüzdesini görebilirsiniz.
 
--   Başlatılan kayıtlar: Toplam kayıt denemesi sayısı.
--   Bırakılan kayıtlar: Tamamen kaydedilmiş ve uyumlu bir cihazla sonuçlanmayan kayıt denemelerinin sayısı.
--   Bırakma oranı: Bırakılan kayıt denemelerinin yüzdesi (Bırakılan kayıtlar / Başlatılan kayıtlar).
+-   Başlatılan kayıtları: Kayıtları denemesi sayısı.
+-   Terk edilmiş kayıtları: İçinde tam olarak kayıtlı ve uyumlu bir cihaz dik denenen kayıtları sayısı.
+-   Abandonment oranı: (Kayıtlar terk / kayıtları başlatılan) terk edilmiş kayıt girişimlerinin yüzdesi.
 
 ### <a name="line-graph"></a>Çizgi grafik
 

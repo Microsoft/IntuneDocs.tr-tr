@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b865d1a8f2733341e4e9b2bd139884db1cea0b57
-ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6203304922f035a825ca0530c09524f4bfcf25db
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55647370"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842737"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Graph API ve Windows 10 CSP'ler Intune'da kullanılan eşleştirme
 

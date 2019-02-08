@@ -15,12 +15,13 @@ ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7bb551784af2f61b61cfc57b968e32ab4db2f7e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031774"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848058"
 ---
 # <a name="categorize-devices-into-groups"></a>Cihazları gruplar halinde kategorilere ayırma
 
@@ -42,7 +43,7 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 
 ## <a name="how-to-configure-device-categories"></a>Cihaz kategorilerini yapılandırma
 
-### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>1. Adım: Azure portalının Intune dikey penceresinde cihaz kategorileri oluşturma
+### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>1. adım: Azure portalının Intune dikey penceresinde cihaz kategorileri oluşturma
 1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı**’nı seçin.
 2. **Cihaz kaydı** dikey penceresinde **Cihaz kategorileri**’ni seçin.
 3. **Cihaz kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
@@ -51,7 +52,7 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 
 2. adımda Azure Active Directory (Azure AD) güvenlik grupları oluştururken cihaz kategorisi adını kullanacaksınız.
 
-### <a name="step-2-create-azure-active-directory-security-groups"></a>2. Adım: Active Directory güvenlik grupları oluşturma
+### <a name="step-2-create-azure-active-directory-security-groups"></a>2. adım: Azure Active Directory güvenlik grupları oluşturma
 Bu adımda, Azure portalında cihaz kategorisi ve cihaz kategorisi adına dayalı dinamik gruplar oluşturacaksınız.
 
 Devam etmek için Azure AD belgelerindeki [Gelişmiş kurallar oluşturmak için öznitelikleri kullanma](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) konusuna bakın.

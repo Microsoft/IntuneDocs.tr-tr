@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 456281d5b77933ef82ee734add9f8d7eaf18750b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181505"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839482"
 ---
 # <a name="configure-a-custom-domain-name"></a>Özel bir etki alanı adı yapılandırma
 
@@ -46,11 +47,11 @@ onmicrosoft.com ilk etki alanı adını yeniden adlandıramaz veya kaldıramazs�
 
 2. Gezinme bölmesinde, **Kurulum** &gt; **Etki alanları**'nı seçin.
 
-3. **Etki alanı ekle**’yi seçin ve özel etki alanı adınızı yazın. **İleri**'yi seçin.
+3. **Etki alanı ekle**’yi seçin ve özel etki alanı adınızı yazın. **İleri**’yi seçin.
    ![Office 365 Yönetim Merkezi’nde Ayarlar > Etki Alanları’nın seçili olduğu ve yeni bir etki alanının eklenmesini gösteren ekran görüntüsü](./media/domain-custom-add.png)
 4. **Etki alanını doğrula** iletişim kutusu açılarak, DNS barındırma sağlayıcınızdaki TXT kaydını oluşturmak için değerleri verir.
-    - **GoDaddy kullanıcıları**: Office 365 Yönetim portalı, sizi GoDaddy'nin oturum açma sayfasına yönlendirir. Kimlik bilgilerinizi girdikten ve etki alanı değiştirme izni sözleşmesini kabul ettikten sonra, TXT kaydı otomatik olarak oluşturulur. Alternatif olarak, kendiniz [TXT kaydını oluşturabilirsiniz](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
-    - **Register.com kullanıcıları**: TXT kaydını oluşturmak için [adım adım yönergeleri](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) izleyin.
+    - **GoDaddy kullanıcıları**: Office 365 Yönetim Portalı, sizi Godaddy'nin oturum açma sayfasına yönlendirir. Kimlik bilgilerinizi girdikten ve etki alanı değiştirme izni sözleşmesini kabul ettikten sonra, TXT kaydı otomatik olarak oluşturulur. Alternatif olarak, kendiniz [TXT kaydını oluşturabilirsiniz](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
+    - **Register.com kullanıcıları**: İzleyin [adım adım yönergeler](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) TXT kaydını oluşturmak için.
 
 Özel bir etki alanı ekleme ve doğrulama adımları ayrıca [Azure Active Directory'de gerçekleştirilebilir](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 

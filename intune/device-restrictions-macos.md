@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a2a096bfb4b5fafd895425a775abc13afc643e2
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4a7b0f0195db11b556cb4fd6daa580f3620f302b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728545"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846155"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune macOS cihaz kısıtlama ayarları
 
@@ -27,7 +28,7 @@ ms.locfileid: "52728545"
 
 Bu makalede, macOS çalıştıran cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları gösterilir.
 
-## <a name="password"></a>Parola
+## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 - **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
   - **Gerekli parola türü** - Parolanın yalnızca Sayısal olabileceğini ya da Alfasayısal (harfler ve sayılar içeren) olması gerektiğini belirtin. Bu ayar yalnızca Mac OS X sürüm 10.10.3 ve üzerinde desteklenir.
   - **Paroladaki alfasayısal olmayan karakter sayısı** - Parolada bulunması gereken karmaşık karakterlerin sayısını belirtin (**0** ile **4** arasında).<br>Karmaşık bir karakter, “**?**” gibi bir simgedir.
@@ -38,16 +39,16 @@ Bu makalede, macOS çalıştıran cihazlar için yapılandırabileceğiniz Micro
   - **Parola kullanım süresi (gün)** - Kullanıcının kaç gün geçtikten sonra parolayı değiştirmesi gerekeceğini belirtin (**1** ile **255** gün arasında).
   - **Önceki parolaların yeniden kullanılmasını engelle** - Önceden kullanılmış ve yeniden kullanılamayacak olan parola sayısını belirtin (**1** ile **24** arasında).
 
-- **Blok parola otomatik doldurma**: seçin **blok** Macos'ta parola otomatik doldurma özelliğinin kullanılmasını önlemek için. Seçme **blok** aynı zamanda şunları yapar:
+- **Blok parola otomatik doldurma**: Seçin **blok** Macos'ta parola otomatik doldurma özelliğinin kullanılmasını önlemek için. Seçme **blok** aynı zamanda şunları yapar:
 
   - Kullanıcılar, Safari veya herhangi bir uygulama kaydedilmiş bir parola kullanmayı sorulmaz.
   - Otomatik güçlü parolalar devre dışıdır ve kullanıcıların güçlü parolalar önerilen değildir.
 
   **Yapılandırılmamış** bu özellikleri sağlar.
 
-- **Parola yakınlık isteklerini engellemek**: seçin **blok** cihazın yakın cihazlardan parola istemeyen şekilde. **Yapılandırılmamış** bu parola istekleri sağlar.
+- **Parola yakınlık isteklerini engellemek**: Seçin **blok** cihazın yakın cihazlardan parola istemeyen şekilde. **Yapılandırılmamış** bu parola istekleri sağlar.
 
-- **Parola paylaşımı block**: **blok** engeller parolaları Airdrop'a kullanarak cihazlar arasında paylaşma. **Yapılandırılmamış** paylaşılması parola sağlar.
+- **Parola paylaşımı block**: **Blok** engeller parolaları Airdrop'a kullanarak cihazlar arasında paylaşma. **Yapılandırılmamış** paylaşılması parola sağlar.
 
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
@@ -59,7 +60,7 @@ Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini yapılandıra
 
 Listeyi yapılandırmak için **Ekle**’ye tıklayın, sonra tercih ettiğiniz bir adı (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın paket kimliğini (örneğin *com.apple.calculator*) belirtin.
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>Etki Alanları
 
 ### <a name="unmarked-email-domains"></a>İşaretsiz e-posta etki alanları
 

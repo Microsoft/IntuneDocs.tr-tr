@@ -15,12 +15,13 @@ ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b80dfeece38d5cbedd09ca0f7a05d5d867f6cfaa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8fc349636dc9bccc64782dec2c8d54d6f179bfc3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185160"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837620"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Denetimli iOS cihazlarda Intune ile Etkinleştirme Kilidini atlama
 
@@ -71,7 +72,7 @@ Cihazlarda Etkinleştirme Kilidi’ni atlayabilmeniz için aşağıdaki yönerge
 
 Intune **Etkinleştirme Kilidini Atla** uzak cihaz eylemi, bir iOS cihazından Etkinleştirme Kilidini kullanıcının Apple Kimliğini ve parolasını gerektirmeden kaldırır. Etkinleştirme Kilidini atladıktan sonra, iPhone’umu Bul uygulaması başlatıldığında cihaz Etkinleştirme Kilidini yeniden açar. Etkinleştirme Kilidini, yalnızca cihaza fiziksel erişiminiz varsa atlayın.
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin.
 3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
 4. **Cihazlar** dikey penceresinde **Tüm cihazlar**'ı seçin.

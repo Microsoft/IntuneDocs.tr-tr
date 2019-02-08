@@ -16,14 +16,15 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 299147a3f3774177cef5d73696a731afc1732f76
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186265"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847735"
 ---
-# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Hızlı Başlangıç: Uyumsuz cihazlara bildirim gönderme
+# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Hızlı Başlangıç: Bildirimleri uyumsuz cihazlara gönderme
 
 Bu hızlı başlangıçta iş gücünüzün uyumsuz cihazlara sahip üyelerine e-posta bildirimi göndermek için Microsoft Intune’u kullanacaksınız.
 
@@ -49,10 +50,10 @@ Kullanıcılarınıza e-posta göndermek için bir bildirim iletisi şablonu olu
 
    - **Ad**: *Contoso Yöneticisi*
    - **Konu**: *Cihaz uyumluluğu*
-   - **İleti**: *Cihazınız şu anda kuruluşumuzun uyumluluk gereksinimlerini karşılamıyor.*
-   - **E-posta üst bilgisi – Şirket logosunu ekle**: Kuruluşunuzun logosunu göstermek için **Etkin** olarak ayarlayın.
-   - **E-posta alt bilgisi – Şirket adını ekle**: Kuruluşunuzun adını göstermek için **Etkin** olarak ayarlayın.
-   - **E-posta alt bilgisi – Kişi bilgilerini ekle**: Kuruluşunuzdaki kişinin bilgilerini göstermek için **Etkin** olarak ayarlayın.
+   - **İleti**: *Cihazınız şu anda bizim kuruluşların uyumluluk gereksinimlerini karşılamıyor.*
+   - **E-posta üst bilgisi – şirket logosunu Ekle**: Kümesine **etkin** kuruluşunuzun logosu gösterilecek.
+   - **Alt bilgisi – şirket adını ekleyin e-posta**: Kümesine **etkin** kuruluşunuzun adını göstermek için.
+   - **Alt Bilgisi – iletişim bilgilerini ekleyin e-posta**: Kümesine **etkin** kuruluşunuzun bilgilerini göstermek için.
 
    ![Intune'da örnek uyumluluk bildirimi iletisi](./media/quickstart-send-notification-01.png)
 
@@ -74,7 +75,7 @@ Aşağıdaki adımlar, Windows 10 cihazları için uyumluluk ilkesi oluşturmay�
 3. Aşağıdaki bilgileri girin:
 
    - **Ad**: *Windows 10 uyumluluk*
-   - **Açıklama**: *Windows 10 uyumluluk ilkesi*
+   - **Açıklama**: *Windows 10 uyumluluk İlkesi*
    - **Platform**: Windows 10 ve üzeri
 
 4. **Ayarlar** > **Sistem Güvenliği**’ni seçerek cihazın güvenlikle ilgili ayarlarını görüntüleyin.
@@ -84,7 +85,7 @@ Aşağıdaki adımlar, Windows 10 cihazları için uyumluluk ilkesi oluşturmay�
     ![Yeni bir uyumluluk ilkesi için Sistem Güvenliği ayarları](./media/quickstart-send-notification-02.png) 
 
 7. Uyumluluk ilkenizi oluşturmak için **Tamam**, **Tamam** ve **Oluştur**’a tıklayın.
-8. Yeni ilkenizin adını seçin: **Windows 10 uyumluluk**.
+8. Yeni ilkenizin adını seçin: **Windows 10 Uyumluluk**.
 9. **Özellikler** > **Uyumsuzluğa yönelik eylemler** > **Ekle**’yi seçin.
 10. Açılan **Eylem** kutusunda **Son kullanıcılara e-posta gönder** seçeneğinin belirlendiğini doğrulayın.
 11. Bu konunun öncesinde oluşturduğunuz ileti şablonunu seçmek için **İleti şablonu** > **Contoso Yöneticisi** > **Seçin**’i belirleyin.
@@ -101,7 +102,7 @@ Uyumluluk ilkesini belirli bir kullanıcı grubuna veya tüm kullanıcılara ata
     > [!NOTE]
     > Uyumluluk ilkeleri atarken bazı grupları dahil edebilir veya dışlayabilirsiniz.
 
-4. **Kaydet**'e tıklayın.
+4. **Kaydet**’e tıklayın.
 
 İlkeyi başarıyla oluşturduktan ve kaydettikten sonra **Cihaz uyumluluğu - İlkeler** listesinde görebilirsiniz. Listede **Atandı** ayarının **Evet** olarak belirlenmiş olduğuna dikkat edin.
 
@@ -112,4 +113,4 @@ Bu hızlı başlangıçta iş gücünüze ait Windows 10 cihazların en az altı
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: İstemci uygulaması ekleme ve atama](quickstart-add-assign-app.md)
+> [Hızlı Başlangıç: Ekleme ve bir istemci uygulama atama](quickstart-add-assign-app.md)

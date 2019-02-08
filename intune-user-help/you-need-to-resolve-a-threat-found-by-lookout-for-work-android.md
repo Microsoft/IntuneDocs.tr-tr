@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 03463bebfd9279173179dff56ce8df9d80b1707b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148530"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848044"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work tarafından bulunan bir tehdidi çözme  
 
@@ -50,7 +51,7 @@ Lookout for Work uygulaması bir güvenlik veya virüs tehdidi algıladığında
 
 Lookout for Work’ün tehdit olarak algıladığı bir uygulama yüklerseniz, aşağıdaki ekran görüntüsünde gösterilene benzer bir ileti alırsınız.  
 
-![Lookout for Work uygulama arabiriminde Lookout Virüs Uyarısı iletisini gösteren örnek ekran görüntüsü. Üç düğme gösterir: “Kapat”, “Daha fazla bilgi”, “Kaldır”.](./media/lookout-virus-alert-android.png)  
+![Lookout for Work uygulama arabiriminde Lookout Virüs Uyarısı iletisini gösteren örnek ekran görüntüsü. Üç düğme gösterilmektedir: "Kapat" "Daha fazla bilgi" ve "Kaldırın."](./media/lookout-virus-alert-android.png)  
 
 Şirket e-postası ve verilerine erişimi yeniden kazanmak için şüpheli uygulamayı kaldırın. Uygulama cihazınızda olduğu sürece şirket kaynaklarına erişemezsiniz.    
 

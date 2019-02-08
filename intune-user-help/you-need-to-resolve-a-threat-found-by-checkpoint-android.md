@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: be3f728a4f2764a0c2494686c943cdfb43b32bd2
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3fdf06339435d0605c6ac84d82dc2ab6c643b2df
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147564"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839031"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect tarafından bulunan bir tehdidi çözme
 

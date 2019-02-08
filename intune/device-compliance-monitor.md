@@ -16,12 +16,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b6c86b8f365f5ac3e65e91725e9fcd29ccd9ef58
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 534e8316e584259a818130ea9f83c88b44b67fee
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187032"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848092"
 ---
 # <a name="monitor-device-compliance-in-intune"></a>Intune'da cihaz uyumluluğunu izleme
 
@@ -34,9 +35,9 @@ Detaya gitmek için grafiklere tıklayarak etkileşimli çalışabilirsiniz. Yap
 
 Cihaz uyumluluğu raporunun özet görünümü, aşağıdaki durumlardan birinde raporlama yapan cihaz sayısı hakkında toplu bilgileri listeler:
 
-- **Uyumlu**: Cihaz yakın zamanda değerlendirilmiş olup, belirttiğiniz uyumluluk profili ayarları ile uyumludur.
-- **Uyumsuz**: Cihaz değerlendirilmiş ve uyumsuz olduğu saptanmıştır.  Profilde bir yetkisiz kullanım süresi belirtilmişse, yetkisiz kullanım süresi sona erdiğinden cihaz uyumsuz duruma gelmiştir.
-- **Yetkisiz kullanım süresi**: Cihaz değerlendirilmiş ve uyumsuz olduğu saptanmıştır. Bununla birlikte, cihaz uyumsuz olarak işaretlenmeden önce yetkisiz kullanım süresi geçerli olacaktır.
+- **Uyumlu**: Cihaz yakın zamanda Değerlendirilmiş ve belirttiğiniz uyumluluk profili ayarları ile uyumludur.
+- **Uyumsuz**: Cihaz Değerlendirilmiş ve uyumsuz olduğu saptanmıştır.  Profilde bir yetkisiz kullanım süresi belirtilmişse, yetkisiz kullanım süresi sona erdiğinden cihaz uyumsuz duruma gelmiştir.
+- **Yetkisiz kullanım süresi**: Cihaz Değerlendirilmiş ve uyumsuz olduğu saptanmıştır. Bununla birlikte, cihaz uyumsuz olarak işaretlenmeden önce yetkisiz kullanım süresi geçerli olacaktır.
 
 Tek tek cihazlar ve kullanıcılarla ilgili diğer ayrıntıları görmek için, her bölümde detaya gidebilirsiniz.
 

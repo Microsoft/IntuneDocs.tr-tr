@@ -15,14 +15,15 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5b58a92ed59d4485f06370672d8c335ff2fffcc7
-ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 114a5c09ed99b5debe9a13692b8a5400c04382df
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54325065"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833727"
 ---
-# <a name="data-jamf-pro-sends-to-intune"></a>Veri Jamf Pro'nın Intune'a gönderdiği
+# <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro’nun Intune’a gönderdiği veriler
 
 Kullanırken [Jamf Pro](https://www.jamf.com) , son kullanıcılar Mac bilgisayarları Intune ile yönetmek için Jamf Pro, yönetilen macOS cihazları hakkında Envanter bilgileri yakalar. Jamf Pro, Intune'a aşağıdaki bilgileri bildirir:
 

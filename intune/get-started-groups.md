@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fcf6f3071e50304216a182a21dd542cace1b6390
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b7e187bb182db0491e055ce3af3833d82e578de
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186469"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842414"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Kullanıcılarınızı ve veri erişimini yönetmek için bir grup oluşturma
 
@@ -31,7 +32,7 @@ Microsoft Intune, şirket kaynaklarına erişimi yönetmek için Azure Active Di
 
 ## <a name="how-do-i-create-a-group"></a>Nasıl bir grup oluştururum?
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Microsoft Intune** bölmesini açtıktan sonra **Gruplar**’ı seçin.
 4. **Kullanıcılar ve gruplar – Tüm gruplar** bölmesinde **Yeni grup** komutunu seçin.
@@ -39,7 +40,7 @@ Microsoft Intune, şirket kaynaklarına erişimi yönetmek için Azure Active Di
 5. Grup için bir **Ad** ve **Açıklama** ekleyin.
 6. **Üyelik türü**’nü **Atandı** olarak ayarlayın. Sınama grubu için **Office özelliklerini etkinleştir** komutunu seçmeyin.
 7. Grup için **Üyeler**’i seçin.
-7. **Oluştur**'a tıklayın.
+7. **Oluştur**’a tıklayın.
 
 Bir grup başarıyla oluşturulduktan sonra **Tüm gruplar** listesinde yer alır. Grubunuz burada görünmüyorsa başka bir grup oluşturmayı deneyin.
 
@@ -47,7 +48,7 @@ Bir grup başarıyla oluşturulduktan sonra **Tüm gruplar** listesinde yer alı
 
 [İlkeleri kullanmaya başlama](get-started-policies.md) - Kullanıcıların cihazları ile yetkilendirilmedikleri şeyler yapmasını önlemek için ilkeler oluşturun.
 
-## <a name="learn-more"></a>Daha fazlasını öğrenin
+## <a name="learn-more"></a>Daha fazla bilgi edinin
 
 * [Intune’da grupları kullanarak kayıt kısıtlamaları ayarlama](groups-add.md)
 * [Azure Active Directory’de grupları kullanarak şirket kaynaklarına erişimi yönetme](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

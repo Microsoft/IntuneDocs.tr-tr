@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1880d580a8719dcf72f54f9c22306bea001bc3b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031832"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834592"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune’a geçerken cihaz uyumluluk ve uygulama yönetimi ilkelerini yapılandırma
 
@@ -42,7 +43,7 @@ Her cihaz platformu farklı ayarlar sunabilir, ancak Intune cihaz ilkeleri aşa�
 
 ## <a name="task-list-for-device-compliance-policies"></a>Cihaz uyumluluk ilkeleri için görev listesi
 
-### <a name="task-1-add-device-groups-optional"></a>1. Görev: Cihaz grupları oluşturma (isteğe bağlı)
+### <a name="task-1-add-device-groups-optional"></a>1. Görev: (İsteğe bağlı) cihaz gruplarına Ekle
 
 Kullanıcı kimliği yerine cihaz kimliğine dayanan yönetim görevleri gerçekleştirmeniz gerektiğinde, cihaz grupları oluşturabilirsiniz.
 
@@ -54,19 +55,19 @@ Cihaz kaydından önce cihaz gruplarını yapılandırırsanız cihaz kategorile
 
 Kaynak erişim profilleri, sertifikalar sağlar ve kaydedilen cihazların yapılandırmalarına erişir. Sertifika tabanlı kimlik doğrulaması kullanıyorsanız [sertifikaları yapılandırın](certificates-configure.md).
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>3. Görev: Cihaz yapılandırma ilkeleri oluşturma ve dağıtma
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>3. Görev: Cihaz yapılandırma profilleri oluşturabilir ve dağıtabilirsiniz
 
 Cihaz düzeyinde ayarları uygulamak için bir cihaz yapılandırma profili oluşturmanız gerekir, örneğin kamerayı devre dışı bırakma, uygulama mağazası, tek uygulama modu yapılandırma, giriş ekranı vb. [Cihaz profilleri](device-profiles.md) hakkında bilgi edinin.
 
 ####  <a name="directly-import-ios-configuration-profiles-optional"></a>iOS yapılandırma profillerini doğrudan içeri aktarma (isteğe bağlı)
 
--   **Apple Configurator iOS profilleri (iOS 7.1 ve üzeri):** Mevcut MDM çözümünüz Apple Configurator profilleri (.mobileconfig dosyaları) kullanıyorsa Intune, bunları özel yapılandırma ilkeleri olarak doğrudan içeri aktarabilir.
+-   **Apple Configurator iOS profilleri (iOS 7.1 ve üzeri):** Mevcut MDM çözümünüz Apple Configurator profilleri (.mobileconfig dosyaları) kullanıyorsa Intune bunları doğrudan özel yapılandırma ilkeleri olarak içeri aktarabilir.
 
--   **iOS Mobil Uygulama Yapılandırma ilkeleri:** Mevcut MDM çözümünüz iOS Mobil Uygulama Yapılandırma ilkeleri kullanıyorsa özellik listeleri için Apple'ın belirttiği XML biçimini karşıladıkları sürece Intune bunları doğrudan içeri aktarabilir.
+-   **iOS mobil uygulama yapılandırma ilkeleri:** Mevcut MDM çözümünüz iOS mobil uygulama yapılandırma ilkeleri kullanıyorsa özellik listeleri için Apple'nın belirttiği XML biçimini karşıladıkları sürece Intune bunları doğrudan içeri aktarabilir.
 
 - [iOS](custom-settings-ios.md) için özel bir ilke eklemeyi öğrenin.
 
-### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>4. Görev: Cihaz uyumluluk ilkeleri oluşturma ve dağıtma (isteğe bağlı)
+### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>Görev 4: (İsteğe bağlı) cihaz uyumluluk ilkeleri oluşturma ve dağıtma
 
 Cihaz uyumluluk ilkeleri, güvenliğe yönelik ayarları değerlendirir ve cihazların kuruluş standartlarına uyup uymadığını gösteren raporlar sağlar. Bu ayarlar şunlardır:
 
@@ -82,7 +83,7 @@ Cihaz uyumluluk ayarları için ek kaynakları görün:
 
 -   [Cihaz uyumluluk ilkesi oluşturmayı](device-compliance-get-started.md) öğrenin.
 
-### <a name="task-5-publish-and-deploy-apps"></a>5. Görev: Uygulama yayınlama ve dağıtma
+### <a name="task-5-publish-and-deploy-apps"></a>Görev 5: Uygulamalarını yayımlama ve dağıtma
 
 Intune MDM kullanırken, uygulamaların otomatik yüklenmesini gerektirerek veya bunları Şirket Portalı’nda sunarak uygulama sağlayabilirsiniz.
 

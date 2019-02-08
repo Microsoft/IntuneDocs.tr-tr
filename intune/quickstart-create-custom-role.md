@@ -11,14 +11,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e06d40ebcbd16940b7c980f529f7fc44ff5c736e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189937"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848466"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>Hızlı Başlangıç: Özel rol oluşturma ve atama
+# <a name="quickstart-create-and-assign-a-custom-role"></a>Hızlı Başlangıç: Özel bir rol oluşturup atayarak
 
 Bu Intune hızlı başlangıcında bir güvenlik işlemleri departmanı için belirli izinleri olan özel bir rol oluşturup atayacaksınız. Ardından rolü bu tür işletmenlerden oluşan bir gruba atayacaksınız. Hemen kullanabileceğiniz birkaç varsayılan rol bulunur. Ancak bunun gibi özel roller oluşturarak mobil cihaz yönetim sisteminizin tamamı üzerinde doğru ayarlı bir erişim denetiminiz olur.
 
@@ -73,4 +74,4 @@ Bu hızlı başlangıçta özel bir güvenlik işlemleri rolü oluşturup bir gr
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: iOS için bir e-posta cihaz profili oluşturma](quickstart-email-profile.md)
+> [Hızlı Başlangıç: İOS için bir e-posta cihaz profili oluşturma](quickstart-email-profile.md)

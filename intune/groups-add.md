@@ -16,12 +16,13 @@ ms.reviewer: amyros
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7a6fffaa0ae35675538d04b91980799d7d8aa80d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1dd61edf02e8d5344494129715325250fbfdd7bc
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181301"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834424"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Kullanıcıları ve cihazları düzenlemek için grup ekleme
 Intune, cihaz ve kullanıcıları yönetmek için Azure Active Directory (AD) gruplarını kullanır. Bir Intune yöneticisi olarak grupları, kuruluş gereksinimlerinize uyacak şekilde ayarlayabilirsiniz. Kullanıcı veya cihazları coğrafi konum, departman veya donanım özelliklerine göre düzenlemek için grup oluşturun. Büyük ölçekli görevleri yönetmek için grupları kullanın. Örneğin pek çok kullanıcı için ilkeler ayarlayabilir veya bir cihaz kümesine uygulamalar dağıtabilirsiniz.
@@ -33,12 +34,12 @@ Aşağıdaki grup türlerini ekleyebilirsiniz:
 ## <a name="add-a-new-group"></a>Yeni bir grup ekleme
 
 Yeni bir grup oluşturmak için aşağıdaki adımları kullanın.
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde, **Gruplar**’ı, ardından da **Tüm gruplar** bölmesinde **Yeni grup**’u seçin.
    ![Yeni Grup seçeneğinin belirlendiği Intune portalı ekran görüntüsü](./media/groups-add-new.png)
 4. İçin **grup türü**, aşağıdaki seçeneklerden birini belirleyin:
-    - **Güvenlik**: güvenlik grupları olan kullanıcı gruplarını doldururken kullanmak iyi bir kaynaktır. Güvenlik gruplarınız kimlerin hangi kaynaklara erişiminin olacağını tanımladığından, güvenlik grupları iyi bir şekilde Intune kullanıcı gruplarına çevrilebilir. Active Directory’den Azure Active Directory’ye eşitlenen veya Office 365 yönetici merkezi ya da Azure portalı aracılığıyla doğrudan Azure Active Directory’de oluşturduğunuz güvenlik gruplarını Intune’da kullanıcı grubu oluşturmak için kullanabilirsiniz.
+    - **Güvenlik**: Güvenlik grupları, kullanıcı gruplarını doldururken kullanmak için iyi bir kaynaktır. Güvenlik gruplarınız kimlerin hangi kaynaklara erişiminin olacağını tanımladığından, güvenlik grupları iyi bir şekilde Intune kullanıcı gruplarına çevrilebilir. Active Directory’den Azure Active Directory’ye eşitlenen veya Office 365 yönetici merkezi ya da Azure portalı aracılığıyla doğrudan Azure Active Directory’de oluşturduğunuz güvenlik gruplarını Intune’da kullanıcı grubu oluşturmak için kullanabilirsiniz.
     - **Office 365**
 
 5. Tür a **adı** ve **açıklama** yeni grup için. Bu özellikler, yalnızca yönetim portalında görüntülenir ve kullanıcılara gösterilmez.

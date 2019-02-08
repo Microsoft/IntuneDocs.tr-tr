@@ -14,18 +14,19 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 834d9c0012e12620f4ac61de916eabfb598d02f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e99b934597806ea8ee4fbc8d37f53e32cf5c9abf
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179668"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842635"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune’da Android çalıştıran cihazlar için Wi-Fi ayarları ekleme
 
 Belirli Wi-Fi ayarları ile bir profil oluşturabilir ve ardından bu profili Android cihazlarınıza dağıtabilirsiniz. Microsoft Intune; ağınızda kimlik doğrulama, bir PKS veya SCEP sertifikası ekleme ve daha fazlası gibi pek çok özellik sunar.
 
-Bu Wi-Fi ayarları iki kategoriye ayrılır: Temel ayarlar ve Kurumsal düzeydeki ayarlar.
+Bu Wi-Fi ayarları olarak iki kategoriye ayrılır: Temel ayarları ve kurumsal düzeyde ayarlar.
 
 Bu makalede bu ayarlar açıklanır.
 
@@ -36,65 +37,65 @@ Bu makalede bu ayarlar açıklanır.
 ## <a name="basic-profile"></a>Temel profil
 
 - **Wi-Fi türü**: **Temel**’i seçin.
-- **SSID**: **Hizmet kümesi tanımlayıcısının** kısaltması. Bu ayar, cihazların bağlandığı kablosuz ağın gerçek adıdır.
-- **Otomatik olarak bağlan**: Cihaz alana girdiğinde bu ağa otomatik olarak bağlanmak için **Etkinleştir**’i seçin. Cihazların otomatik olarak bağlanmasını önlemek için **Devre dışı bırak**’ı seçin.
-- **Gizli ağ**: Cihazdaki kullanılabilir ağlar listesinde bu ağı gizlemek için **Etkinleştir**’i seçin. SSID yayınlanmaz. Cihazdaki kullanılabilir ağlar listesinde bu ağı göstermek için **Devre dışı bırak**’ı seçin.
+- **SSID**: Kısaltması **hizmet kümesi tanımlayıcısı**. Bu ayar, cihazların bağlandığı kablosuz ağın gerçek adıdır.
+- **Otomatik olarak bağlan**: Seçin **etkinleştirme** cihaz menzil içindeyken otomatik olarak bu ağa bağlanmak için. Cihazların otomatik olarak bağlanmasını önlemek için **Devre dışı bırak**’ı seçin.
+- **Gizli ağ**: Seçin **etkinleştirme** bu ağın, cihazdaki kullanılabilir ağlar listesinde gizlemek için. SSID yayınlanmaz. Cihazdaki kullanılabilir ağlar listesinde bu ağı göstermek için **Devre dışı bırak**’ı seçin.
 
 ## <a name="enterprise-profile"></a>Kurumsal profil
 
-- **Wi-Fi türü**: **Kurumsal**’ı seçin.
-- **SSID**: **Hizmet kümesi tanımlayıcısının** kısaltması. Bu ayar, cihazların bağlandığı kablosuz ağın gerçek adıdır.
-- **Otomatik olarak bağlan**: Cihaz alana girdiğinde bu ağa otomatik olarak bağlanmak için **Etkinleştir**’i seçin. Cihazların otomatik olarak bağlanmasını önlemek için **Devre dışı bırak**’ı seçin.
-- **Gizli ağ**: Cihazdaki kullanılabilir ağlar listesinde bu ağı gizlemek için **Etkinleştir**’i seçin. SSID yayınlanmaz. Cihazdaki kullanılabilir ağlar listesinde bu ağı göstermek için **Devre dışı bırak**’ı seçin.
+- **Wi-Fi türü**: Seçin **Kurumsal**.
+- **SSID**: Kısaltması **hizmet kümesi tanımlayıcısı**. Bu ayar, cihazların bağlandığı kablosuz ağın gerçek adıdır.
+- **Otomatik olarak bağlan**: Seçin **etkinleştirme** cihaz menzil içindeyken otomatik olarak bu ağa bağlanmak için. Cihazların otomatik olarak bağlanmasını önlemek için **Devre dışı bırak**’ı seçin.
+- **Gizli ağ**: Seçin **etkinleştirme** bu ağın, cihazdaki kullanılabilir ağlar listesinde gizlemek için. SSID yayınlanmaz. Cihazdaki kullanılabilir ağlar listesinde bu ağı göstermek için **Devre dışı bırak**’ı seçin.
 - **EAP türü**: Güvenli kablosuz bağlantıların kimliğini doğrulamak için kullanılan Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü seçin. Seçenekleriniz şunlardır: 
 
-  - **EAP-TLS**: Ayrıca şunları girin:
+  - **EAP-TLS**: Şunları da girin:
 
-    - **Sunucu Güveni** - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemci ağa bağlandığında sunucuya sunulur ve bağlantının kimliğini doğrulamak için kullanılır.
-
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
-    - **İstemci Kimlik Doğrulaması** - **İstemci kimlik doğrulaması için istemci sertifikası (Kimlik sertifikası)**: Cihaza da dağıtılmış olan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
+    - **Sunucu güveni** - **sunucu doğrulaması için kök sertifika**: Var olan bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemci ağa bağlandığında sunucuya sunulur ve bağlantının kimliğini doğrulamak için kullanılır.
 
       Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-  - **EAP-TTLS**: Ayrıca şunları girin:
-
-    - **Sunucu Güveni** - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemci ağa bağlandığında sunucuya sunulur ve bağlantının kimliğini doğrulamak için kullanılır.
+    - **İstemci kimlik doğrulaması** - **istemci kimlik doğrulaması (kimlik sertifikası) için istemci sertifikası**: SCEP veya PKCS istemci cihaza da dağıtılmış olan sertifika profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
 
       Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-    - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:
+  - **EAP-TTLS**: Şunları da girin:
 
-      - **Kullanıcı adı ve Parola**: Bağlantının kimliğini doğrulamak için kullanıcıdan bir kullanıcı adı ve parola girmesini isteyin. Şunları da girin:
-        - **EAP dışı yöntem (iç kimlik)**: Bağlantının kimliğini nasıl doğrulayacağınızı seçin. Wi-Fi ağınızda yapılandırılmış olan protokolü seçtiğinizden emin olun.
-
-          Seçenekleriniz şunlardır: **Şifrelenmemiş parola (PAP)**, **Karşılıklı Kimlik Doğrulama Protokolü (CHAP)**, **Microsoft CHAP (MS-CHAP)** veya **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**
-
-      - **Sertifikalar**: Cihaza da dağıtılmış olan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
-
-        Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
-      - **Kimlik gizliliği (dış kimlik)**: EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
-
-  - **PEAP**: Ayrıca şunları girin:
-
-    - **Sunucu Güveni** - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemci ağa bağlandığında sunucuya sunulur ve bağlantının kimliğini doğrulamak için kullanılır.
+    - **Sunucu güveni** - **sunucu doğrulaması için kök sertifika**: Var olan bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemci ağa bağlandığında sunucuya sunulur ve bağlantının kimliğini doğrulamak için kullanılır.
 
       Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
     - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:
 
-      - **Kullanıcı adı ve Parola**: Bağlantının kimliğini doğrulamak için kullanıcıdan bir kullanıcı adı ve parola girmesini isteyin. Şunları da girin:
-        - **Kimlik doğrulaması için EAP dışı yöntem (iç kimlik)**: Bağlantının kimliğini nasıl doğrulayacağınızı seçin. Wi-Fi ağınızda yapılandırılmış olan protokolü seçtiğinizden emin olun.
+      - **Kullanıcı adı ve parola**: Bağlantı kimliğini doğrulamak için bir kullanıcı adı ve parola girmesini. Şunları da girin:
+        - **EAP dışı yöntem (iç kimlik)**: Bağlantı kimliğini nasıl seçin. Wi-Fi ağınızda yapılandırılmış olan protokolü seçtiğinizden emin olun.
 
-          Seçenekleriniz şunlardır: **Hiçbiri** veya **Microsoft CHAP Sürüm 2 (MS-CHAP v2)**
+          Seçenekleriniz şunlardır: **Şifrelenmemiş parola (PAP)**, **karşılıklı kimlik doğrulama protokolü (CHAP)**, **Microsoft CHAP (MS-CHAP)**, veya **Microsoft CHAP Version 2 (MS-CHAP v2)**
 
-      - **Sertifikalar**: Cihaza da dağıtılmış olan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
+      - **Sertifikaları**: SCEP veya PKCS istemci cihaza da dağıtılmış olan sertifika profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
 
         Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-      - **Kimlik gizliliği (dış kimlik)**: EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
+      - **Kimlik gizliliği (Dış kimlik)**: Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
+
+  - **PEAP**: Şunları da girin:
+
+    - **Sunucu güveni** - **sunucu doğrulaması için kök sertifika**: Var olan bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemci ağa bağlandığında sunucuya sunulur ve bağlantının kimliğini doğrulamak için kullanılır.
+
+      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+    - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:
+
+      - **Kullanıcı adı ve parola**: Bağlantı kimliğini doğrulamak için bir kullanıcı adı ve parola girmesini. Şunları da girin:
+        - **Kimlik doğrulaması (iç kimlik) için EAP dışı yöntem**: Bağlantı kimliğini nasıl seçin. Wi-Fi ağınızda yapılandırılmış olan protokolü seçtiğinizden emin olun.
+
+          Seçenekleriniz şunlardır: **Hiçbiri** veya **Microsoft CHAP sürüm 2 (MS-CHAP v2)**
+
+      - **Sertifikaları**: SCEP veya PKCS istemci cihaza da dağıtılmış olan sertifika profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
+
+        Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+      - **Kimlik gizliliği (Dış kimlik)**: Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
 
 Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil oluşturuldu ve profiller listesinde gösteriliyor.
 

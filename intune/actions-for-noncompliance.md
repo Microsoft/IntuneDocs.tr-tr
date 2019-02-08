@@ -13,29 +13,30 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5bd8bfe0230e4d49ce5ae4372e0f373a014c00ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c37a5991adf2efdb5bf38b32d8af4c77af295ea0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187781"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844692"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme - Intune
 
 Zamana göre sıralanmış bir eylem dizisi yapılandıran bir **Uyumsuzluk eylemleri** özelliği vardır. Bu eylemler, uyumluluk ilkenize uymayan cihazlara uygulanır. 
 
-## <a name="overview"></a>Genel bakış
+## <a name="overview"></a>Genel Bakış
 Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Ardından Azure Active Directory (AD) [koşullu erişimi](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) cihazı engeller. Cihaz uyumlu olmadığında, **uyumsuzluk eylemleri** size karar verme esnekliği de sağlar. Örneğin, cihazı hemen engellemeyebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
 Çeşitli türlerde eylemler vardır:
 
-- **Son kullanıcıya e-posta gönder**: Son kullanıcıya göndermeden önce e-posta bildirimini özelleştirin. Şirket logosu da dahil olmak üzere alıcılar, konu ve ileti gövdesi ve kişi bilgilerini özelleştirebilirsiniz.
+- **Son kullanıcıya e-posta gönderme**: Son kullanıcıya göndermeden önce bir e-posta bildirimini özelleştirin. Şirket logosu da dahil olmak üzere alıcılar, konu ve ileti gövdesi ve kişi bilgilerini özelleştirebilirsiniz.
 
     Buna ek olarak Intune, uyumsuz cihaz hakkındaki ayrıntıları da e-posta bildiriminde gösterir.
 
-- **Uyumsuz cihazları uzaktan kilitle**: Uyumsuz cihazlar için uzaktan kilitleme komutu gönderebilirsiniz. Bunun ardından cihazın kilidini açmak için kullanıcıdan PIN veya parola istenir. [Uzaktan Kilitleme](device-remote-lock.md) özelliğinde daha fazla bilgi bulabilirsiniz. 
+- **Uyumsuz bir cihazı uzaktan kilitleme**: Uyumlu olmayan cihazları uzaktan kilitleme verebilir. Bunun ardından cihazın kilidini açmak için kullanıcıdan PIN veya parola istenir. [Uzaktan Kilitleme](device-remote-lock.md) özelliğinde daha fazla bilgi bulabilirsiniz. 
 
-- **Cihazı uyumsuz olarak işaretle**: Cihazın kaç gün sonra uyumsuz olarak işaretleneceğini gösteren bir zamanlama (gün sayısı cinsinden) oluşturun. Hemen gerçekleştirilecek eylemi yapılandırabilir veya kullanıcıya uyumlu hale getirmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
+- **Cihazı uyumsuz işaretle**: Bir zamanlama (gün cinsinden) oluşturun. sonra cihaz uyumsuz olarak işaretlenir. Hemen gerçekleştirilecek eylemi yapılandırabilir veya kullanıcıya uyumlu hale getirmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
 Bu makale, şunları nasıl yapacağınızı gösterir:
 
@@ -94,14 +95,14 @@ Ayrıca, uyumluluk ilkesi oluştururken veya mevcut ilkeyi güncelleştirirken b
 3. **Uyumsuzluk eylemleri** > **Ekle**'yi seçin.
 4. İstediğiniz **Eylem**’i seçin: 
 
-    - **Son kullanıcıya e-posta gönder**: Cihaz uyumsuz olduğunda kullanıcıya e-posta göndermek için bunu seçin. Ayrıca: 
+    - **Son kullanıcılara e-posta Gönder**: Cihaz uyumsuz olduğunda, kullanıcının e-posta seçin. Ayrıca: 
     
          - Daha önce oluşturduğunuz **İleti şablonunu** seçin
          - Grupları seçerek **Ek alıcılar** girin
     
-    - **Uyumsuz cihazları uzaktan kilitle**: Cihaz uyumsuz olduğunda cihazı kilitleyin. Bu seçenek cihazın kilidini açmak için kullanıcıyı PIN veya parola girmeye zorlar. 
+    - **Uyumsuz bir cihazı uzaktan kilitleme**: Cihaz uyumsuz olduğunda, cihazı kilitler. Bu seçenek cihazın kilidini açmak için kullanıcıyı PIN veya parola girmeye zorlar. 
     
-    - **Zamanla**: Eylemi kullanıcının cihazında tetiklemek için uyumsuzluktan sonra geçecek gün sayısını (0 - 365) girin. Bu yetkisiz kullanım süresinden sonra bir koşullu erişim ilkesini zorlayabilirsiniz. Gün sayısı olarak **0** girerseniz, koşullu erişim **hemen** geçerlilik kazanır. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
+    - **Zamanlama**: Kullanıcıların cihazlarında eylemi tetiklemesine uyumsuzluktan sonra (0 ila 365) gün sayısını girin. Bu yetkisiz kullanım süresinden sonra bir koşullu erişim ilkesini zorlayabilirsiniz. Gün sayısı olarak **0** girerseniz, koşullu erişim **hemen** geçerlilik kazanır. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
 
 5. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Ekle** > **Tamam**'ı seçin.
 

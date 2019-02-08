@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d87d8c8da5511f641b785f28bad7d7ef6739d888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 86c822ba197851fe7e05d91ff8aa703fb9fe3811
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184463"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842804"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune’da Windows 10 cihazlar için özel ayarlar kullanma
 
@@ -42,27 +43,27 @@ Bu makale:
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: Profil için `windows 10 custom profile` gibi bir ad girin.
+    - **Ad**: Profil için bir ad girmeniz `windows 10 custom profile`.
     - **Açıklama**: Profil için bir açıklama girin.
-    - **Platform**: **Windows 10 ve üzeri** seçeneğini belirleyin.
-    - **Profil türü**: **Özel**’i seçin.
+    - **Platform**: Seçin **Windows 10 ve üzeri**.
+    - **Profil türü**: Seçin **özel**.
 
 4. **Özel OMA-URI Ayarları**’nda **Ekle**’yi seçin. Aşağıdaki ayarları girin:
 
-    - **Ad**: Ayarlar listesinde tanımanıza yardımcı olması için OMA-URI ayarına benzersiz bir ad girin.
-    - **Açıklama**: Ayara genel bir bakış sağlayan ve diğer önemli ayrıntıları veren bir açıklama girin.
-    - **OMA-URI**  (büyük/küçük harfe duyarlı): Ayar olarak kullanmak istediğiniz OMA-URI’yi girin.
-    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü girin. Seçenekleriniz şunlardır:
+    - **Ad**: Ayarlar listesinde tanımanıza yardımcı olması için OMA-URI ayarı için benzersiz bir ad girin.
+    - **Açıklama**: Ayar ve diğer önemli ayrıntıları genel bakışını veren bir açıklama girin.
+    - **OMA-URI** (büyük/küçük harfe duyarlı): Bir ayarı olarak kullanmak istediğiniz OMA-URI'yi girin.
+    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü seçin. Seçenekleriniz şunlardır:
 
         - Dize
         - Dize (XML dosyası)
         - Tarih ve saat
         - Tamsayı
         - Kayan nokta
-        - Boole değeri
+        - Boole
         - Base64 (dosya)
 
-    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değerini girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
+    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değeri girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
 
     Bazı ayarları ekledikten sonra **Dışarı Aktar**’ı seçebilirsiniz. **Dışarı Aktar**, virgülle ayrılmış değerler (.csv) dosyasına eklediğiniz tüm değerlerin listesini oluşturur.
 

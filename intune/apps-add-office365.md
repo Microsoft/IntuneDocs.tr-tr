@@ -16,12 +16,13 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e2958b536aa6603fc9cde14e679a05e4a9d5f4dd
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2e48df354750698203aae2586bee03075f0cee00
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266979"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848951"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
@@ -137,7 +138,7 @@ Karşınıza çıkabilecek yaygın hata kodları ve anlamları, aşağıdaki tab
 
 | Senaryo | Dönüş kodu | Kullanıcı Arabirimi | Not |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
-| Etkin bir Tıkla-Çalıştır yükleme yokken kaldırma çabası | -2147418113, 0x8000ffff veya 2147549183 | Hata kodu: 30088-1008Error kodu: 30125-1011 değerinin kodunu (404) | Office Dağıtım Aracı |
+| Etkin bir Tıkla-Çalıştır yükleme yokken kaldırma çabası | -2147418113, 0x8000ffff veya 2147549183 | Hata kodu: 30088-1008Error kodu: 30125-1011 (404) | Office Dağıtım Aracı |
 | MSI sürümü yüklü olduğunda yükleyin | 1603 | - | Office Dağıtım Aracı |
 | Yükleme, kullanıcı veya başka bir yükleme tarafından iptal edildi | 17002 | - | Tıkla-Çalıştır |
 | 32 bit yüklü olan bir cihaza 64 bit yüklemeyi deneyin. | 1603 | - | Office Dağıtım Aracı dönüş kodu |

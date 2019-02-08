@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3bb60d3d6bd7321ea3e378c747e87481b659888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c4660706a5c9768949d09dfe2b35ead8b8721901
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181556"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848998"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune’a yerleşik uygulama ekleme
 
@@ -35,11 +36,11 @@ Intune konsolunun önceki sürümlerinde Intune, Outlook ve OneDrive gibi varsay
 ## <a name="add-a-built-in-app"></a>Yerleşik uygulama ekleme
 
 Microsoft Intune’da mümkün olan uygulamalara yerleşik uygulama eklemek için şunları yapın:
-1. Azure portalında oturum açın.
+1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçerek Microsoft Intune bölmesini görüntüleyin.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** bölmesinde **Yönet** altında **Uygulamalar**’ı seçin.
-5. **Ekle**’yi seçin.
+5. **Add (Ekle)** seçeneğini belirleyin.
 6. Uygulama **Ekle** bölmesindeki **Uygulama türü** listesinde **Yerleşik uygulama**’yı seçin.
 7. **Uygulama seç**’e tıklayın.
 8. **Yerleşik uygulama** bölmesinde dahil etmek istediğiniz uygulamaları seçin.
@@ -54,17 +55,17 @@ Yerleşik uygulama hakkındaki bilgileri değiştirebilirsiniz. Bu bilgiler, uyg
 2. **Yönet** altında **Özellikler** seçeneğine tıklayın.
 3. Yerleşik uygulama bilgilerini değiştirmek için **Yapılandır** seçeneğine tıklayın.
 4. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri değiştirebilirsiniz:
-    - **Ad**: Yerleşik uygulamanın Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm adların benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
+    - **Ad**: Şirket portalı'nda görüntülenen yerleşik uygulama adını girin. Kullandığınız tüm adların benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
     - **Açıklama**: Uygulama için bir açıklama girin. 
-    - **Yayımcı**: Uygulama yayıncısının adını girin.
-    - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden birini seçin. Bu seçeneği ayarladığınızda, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Yayımcı**: Uygulama yayımcısının adını girin.
+    - **Kategori**: İsteğe bağlı olarak, bir veya daha fazla yerleşik uygulama kategorilerinden birini seçin. Bu seçeneği ayarladığınızda, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
+    - **Bunu şirket Portalı'nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
+    - **Bilgi URL'si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Gizlilik URL'si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
-    - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin (örneğin *İK departmanı*).
-    - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
-    - **Simge Yükle**: Kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenecek bir simge yükleyin.
+    - **Sahibi**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin (örneğin, *ik departmanı*).
+    - **Notları**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Simgeyi karşıya yükleyin**: Kullanıcılar şirket portalına göz atarken uygulamayla birlikte görüntülenecek bir simgeyi karşıya yükleyin.
 4. **Tamam**’ı seçin.
 5. **Özellikler** bölmesinde **Kaydet**’i seçin.
 

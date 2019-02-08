@@ -1,7 +1,7 @@
 ---
  title: include file description: include file services: azure-policy author: eross-msft
  
-ms.service: azure-policy ms.topic: include ms.date: 05/01/2018 ms.author: lizross ms.custom: include file
+MS.Service: azure İlkesi ms.topic: ms.date içerir: 05/01/2018 ms.author: lizross ms.custom: include file ms.collection: M365 kimlik cihaz Yönetimi
 ---
 
 >[!Note]

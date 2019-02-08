@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dfb70327737bcfe9e6bd2ded964a07a00f9d7610
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148958"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838181"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Android cihazınızı şifreleme kullanarak koruma
 
@@ -41,7 +42,7 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 3.  Ekrandaki yönergeleri takip edin. Şifreleme sırasında, cihazınız birkaç kere yeniden başlatılabilir.
 
 ### <a name="what-to-do-if-you-have-issues"></a>Sorunlarınız varsa yapmanız gerekenler
-**Sorun**: Cihazınızı zaten şifrelediyseniz ve aşağıdakilerden biriyle karşılaşıyorsanız:
+**Sorunu**: Cihazınızı zaten şifrelediyseniz ve aşağıdakilerden birini görürsünüz:
 
 - Şifreleme düğmesi devre dışı.
 - Yine de şifrelemeniz gerektiğini bildiren bir iletiyle karşılaşıyorsunuz.

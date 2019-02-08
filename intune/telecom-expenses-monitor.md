@@ -16,12 +16,13 @@ ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7514aef9ee94e774ff2e2fca1008966a92a24e0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188101"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842023"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune'da telekom gider yönetimi hizmeti ayarlama
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -56,7 +57,7 @@ Intune şu anda aşağıdaki telekom gider yönetimi sağlayıcılarıyla tümle
 
 Başlamadan önce, bir Intune ve bir Datalert telekomünikasyon gider yönetimi hizmeti aboneliğine sahip olduğunuzdan emin olun.
 
-### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>1. Adım: Datalert hizmetini Microsoft Intune’a bağlama
+### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>1. adım: Datalert hizmetini Microsoft Intune bağlama
 
 1. Datalert yönetim konsolunda yönetici kimlik bilgilerinizle oturum açın.
 
@@ -88,11 +89,11 @@ Başlamadan önce, bir Intune ve bir Datalert telekomünikasyon gider yönetimi 
 
    ![Başarılı bağlantıyı gösteren Datalert sayfası](./media/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. Adım: Telekomünikasyon gider yönetimi özelliğinin Intune’da etkin olup olmadığını denetleme
+### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>2. adım: Telekom Gider Yönetimi özelliğinin etkin olup olmadığını denetleme ıntune
 
 Yukarıdaki 1. Adımı tamamladıktan sonra, bağlantınızın otomatik olarak etkinleştirilmiş olması ve bağlantı durumunun Azure portalında **Etkin** olarak gösterilmesi gerekir. Aşağıdaki adımlar, **Etkin** durumunu nasıl denetleyebileceğinizi göstermektedir.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 
@@ -104,7 +105,7 @@ Yukarıdaki 1. Adımı tamamladıktan sonra, bağlantınızın otomatik olarak e
 
    ![Datalert bağlantı durumunu Etkin olarak gösteren Intune sayfası](./media/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>3. Adım: Datalert uygulamasını şirket için kaydedilmiş cihazlara dağıtma
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>3. adım: Datalert uygulamasını şirket için kaydedilmiş cihazlara dağıtma
 
 Yalnızca şirkete ait satırlardan veri kullanımının toplanmasını güvence altına almak için, iki işlem yapmalısınız:
 - Intune'da cihaz kategorileri oluşturma
@@ -152,7 +153,7 @@ Her platform için Intune'da Datalert uygulamasını oluşturmak üzere şu adı
 
    ![İlke ekle bölmesinin ekran görüntüsü](./media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. Adım: Şirket tarafından ödenen telefon hatlarını Datalert konsoluna ekleme
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>4. adım: Şirket tarafından ödenen telefon hatlarını Datalert konsoluna ekleme
 
 Intune ve Datalert hizmetlerini birbiriyle iletişim kuracak şekilde yapılandırdınız. Şimdi şirket tarafından ödenen telefon hatlarınızı Datalert konsoluna eklemeniz ve şebeke kullanımı veya gezici kullanım ihlallerine yönelik eşikler ve eylemler tanımlamanız gerekir. Şirket tarafından ödenen telefon hatlarını Datalert konsoluna el ile ekleyebileceğiniz gibi, cihaz Intune’a kaydedildikten sonra bunları otomatik olarak da ekleyebilirsiniz.
 

@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5b7758d8ee09f450435c6646d43b676a4e3b9dc9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d58c7e0dcb02ec553d1d1cb43b44ecf3258810a8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179525"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838329"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uygulamalarınızın süresinin dolmasını engellemek için iOS uygulama sağlama profillerini kullanma
 
@@ -42,7 +43,7 @@ Yönetici olarak, iOS uygulama sağlama yapılandırmasını atamak için güven
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS mobil uygulama sağlama profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 1.  **İstemci uygulamaları** iş yükünde **Yönet** > **iOS uygulama sağlama profilleri** seçeneğini belirleyin.

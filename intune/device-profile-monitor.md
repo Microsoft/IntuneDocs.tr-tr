@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 73ff5db08d7d4da2cd96c62c1a7f16acd55e58a0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186605"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842465"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune’da cihaz profillerini izleme
 
@@ -30,7 +31,7 @@ Intune'un Azure portalında cihaz yapılandırma profillerinizi izlemeye ve yön
 
 ## <a name="view-existing-profiles"></a>Mevcut profilleri görüntüleme
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihaz yapılandırması** > **Profiller**'i seçin.
 
@@ -64,11 +65,11 @@ Cihaz profilinizi oluşturduktan sonra, Intune grafikler sağlar. Bu grafikler p
     **Kullanıcı durumu** ayrıntılarını kapatın.
 
 5. **Profiller** listesine dönerek belirli bir profil seçin. Ayrıca mevcut özellikleri değiştirebilirsiniz:
-  - **Özellikler**: Adı değiştirin veya mevcut ayarlardan herhangi birini güncelleştirin.
-  - **Atamalar**: İlkenin uygulanacağı cihazları dahil edin veya dışlayın. Belirli grupları seçmek için **Seçili Gruplar**'ı seçin.
+  - **Özellikler**: Adı değiştirmek veya var olan herhangi bir ayarı güncelleştirebilirsiniz.
+  - **Atamalar**: Dahil etmek veya, ilkenin uygulanması gereken cihazları. Belirli grupları seçmek için **Seçili Gruplar**'ı seçin.
   - **Cihaz durumu**: Profile atanmış olan cihazlar listelenir ve profilin başarıyla dağıtılıp dağıtılmadığı gösterilir. Belirli bir cihazı seçerek, yüklü uygulamalar da dahil olmak üzere daha da fazla ayrıntı görebilirsiniz.
-  - **Kullanıcı durumu**: Bu profilden etkilenen cihazlara sahip kullanıcı adlarını listeler ve profilin başarıyla dağıtılıp dağıtılmadığını gösterir. Belirli bir kullanıcı seçerek daha da fazla ayrıntı görebilirsiniz.
-  - **Ayar başına durum**: Profil içindeki tek tek ayarları göstererek çıkışa filtre uygular ve ayarın başarıyla uygulanıp uygulanmadığını gösterir.
+  - **Kullanıcı durumu**: Bu profil tarafından etkilenen cihazlar ile kullanıcı adlarını listeler ve profili başarıyla dağıtıldı. Belirli bir kullanıcı seçerek daha da fazla ayrıntı görebilirsiniz.
+  - **Her bir ayar durumu**: Profil içinde ayrı ayrı ayarlar göstererek çıkış filtreler ve ayarı başarıyla uygulanıp uygulanmadığını gösterir.
 
 ## <a name="view-conflicts"></a>Çakışmaları görüntüleme
 

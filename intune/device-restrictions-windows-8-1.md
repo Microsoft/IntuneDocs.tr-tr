@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e6d42edaa5cdef9a149f3232e1b150e0847e542
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aff862170ec6a4eca8db5b4e8b1b5eaa242203b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180638"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837490"
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 ve üzeri cihaz kısıtlama ayarları
 
@@ -34,7 +35,7 @@ Bu makalede, Windows 8.1 ve üstünü çalıştıran cihazlar için yapılandır
 -   **Güvenlik duvarı** - Windows Güvenlik Duvarı’nın açık olmasını gerektirir.
 -   **Kullanıcı Hesabı Denetimi** - Cihazlarda Kullanıcı Hesap Denetimi’nin (UAC) kullanılmasını zorunlu tutar.
 
-## <a name="password"></a>Parola
+## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 -   **Gerekli parola türü** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
 -   **En az parola uzunluğu** - Parola için gereken uzunluk alt sınırını (karakter cinsinden) yapılandırır.
 -   **Cihaz silinmeden önceki oturum açma hatası sayısı** - Burada belirtilen sayıda oturum açma denemesi başarısız olursa, cihazı temizler.

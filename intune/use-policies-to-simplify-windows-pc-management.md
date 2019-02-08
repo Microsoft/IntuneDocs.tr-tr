@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 56c81c04c4ee6ae319cb54f513b80738f2fbe5fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e8448ec320c953fd22235e6e743306a1f86d6399
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188046"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851313"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma
 
@@ -49,7 +50,7 @@ Microsoft Intune Center, tüm yönetilen bilgisayarlarda yüklüdür. Intune ilk
 |**Ad**|Bilgisayarı yöneten yöneticinin adı.<br />En fazla uzunluk: 40 karakter|
 |**Telefon numarası**|Bilgisayarı yöneten yöneticinin telefon numarası.<br />En fazla uzunluk: 20 karakter|
 |**E-posta adresi**|Bilgisayarı yöneten yöneticinin e-posta adresi.<br />En fazla uzunluk: 40 karakter|
-|**Web sitesinin adı**|Kullanıcılar için destek web sitenizin adı.<br />>En fazla uzunluk: 40 karakter|
+|**Web sitesinin adı**|Kullanıcılar için destek web sitenizin adı.<br />> en fazla uzunluk: 40 karakter|
 |**Web sitesi URL'si**|Destek web sitenizin URL'si.<br />En fazla uzunluk: 150 karakter|
 |**Notlar**|Kullanıcılara gösterilen bir not.<br />En fazla uzunluk: 120 karakter|
 

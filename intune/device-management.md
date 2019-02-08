@@ -14,12 +14,13 @@ ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3dbf299633239ae16553e9fbc8d411c4aa37cd8a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 06d2f634527abf2cec4239166ed53d6efb061975
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189325"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838368"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
@@ -31,7 +32,7 @@ BT yöneticisi olarak, kullanıcılarınızın işlerini yapması için gereken 
 
 ## <a name="get-to-your-devices"></a>Cihazlarınıza ulaşma
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Cihazlar**’ı seçin. Burada ayrı ayrı tüm cihazlar hakkında ayrıntılı bilgiler ve bu cihazlarla yapabilecekleriniz görüntülenir. Yapabilecekleriniz şöyledir:
 

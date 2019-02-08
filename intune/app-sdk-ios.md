@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eaffed2af38e269000dd951cec536e1f80be705f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657840"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841360"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -45,7 +46,7 @@ iOS için Intune Uygulama SDK’sı statik bir kitaplık, kaynak dosyaları, API
 
 Bu kılavuz, iOS için Intune Uygulama SDK'sının aşağıdaki bileşenlerinin kullanımını açıklar:
 
-* **Libıntunemam.a**: Intune uygulama SDK'sı statik kitaplığı. Uygulamanızda uzantılar kullanılmıyorsa, uygulamanızı Intune istemci uygulama yönetimi için etkinleştirmek üzere bu kitaplığı projenize bağlayın.
+* **libIntuneMAM.a**: Intune uygulama SDK'sı statik kitaplığı. Uygulamanızda uzantılar kullanılmıyorsa, uygulamanızı Intune istemci uygulama yönetimi için etkinleştirmek üzere bu kitaplığı projenize bağlayın.
 
 * **Intunemam.Framework**: Intune uygulama SDK'sı çerçevesi. Uygulamanızı Intune istemci uygulama yönetimi için etkinleştirmek üzere bu çerçeveyi projenize bağlayın. Uygulamanızda uzantılar kullanılıyorsa, projenizin birden çok statik kitaplık kopyası oluşturmasını önlemek için statik kitaplık yerine bu çerçeveyi kullanın.
 
@@ -218,7 +219,7 @@ IntuneMAMSettings sözlüğü altında, Intune Uygulama SDK'sını yapılandırm
 
 Bu ayarlardan bazıları önceki bölümlerde ele alınmış olabilir ve bazıları tüm uygulamalar için geçerli değildir.
 
-Ayar  | Tür  | Tanım | Gerekli mi?
+Ayar  | Type  | Tanım | Gerekli mi?
 --       |  --   |   --       |  --
 ADALClientId  | Dize  | Uygulamanın Azure AD istemci tanımlayıcısı. | Uygulama ADAL kullanıyorsa gereklidir. |
 ADALAuthority | Dize | Uygulamanın Azure AD yetkilisi kullanımda. AAD hesaplarının yapılandırıldığı ortamınızı kullanmanız gerekir. | Uygulama ADAL kullanıyorsa gereklidir. Bu değer yoksa, Intune varsayılanı kullanılır.|
@@ -302,7 +303,7 @@ Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. K
 
 Uygulamanızın başlatılması tamamlanmadan önce Intune SDK'sının ADAL kullanarak tüm kimlik doğrulaması ve kayıt işlemlerini yapmasını istiyorsanız ve uygulamanız her zaman APP ilkesi gerektiriyorsa, `loginAndEnrollAccount` API'sini kullanmanız gerekmez. Uygulamanın Info.plist dosyasındaki IntuneMAMSettings sözlüğünde aşağıdaki iki ayarı EVET olarak ayarlamanız yeterli olur.
 
-Ayar  | Tür  | Tanım |
+Ayar  | Type  | Tanım |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Boole değeri| Mevcut bir yönetilen kimlik tespit edilirse ve bu kimlik henüz kaydedilmemişse uygulama başlatıldığında otomatik olarak kaydetmeye çalışılıp çalışılmayacağını belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: Uygulamayı, ayrıca mampolicyrequired ayarı Evet olarak ayarlanmadığı sürece yönetilen kimlik bulunmadıysa veya ADAL önbelleğinde geçerli belirteç için kimlik kullanılabilir, bir kayıt denemesi sessizce kimlik bilgileri için sormadan başarısız olur. |
 MAMPolicyRequired| Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: App Store mampolicyrequired ayarı Evet olarak belirlenmişse uygulamalar gönderilemez. MAMPolicyRequired EVET olarak ayarlandığında AutoEnrollOnLaunch da EVET olarak ayarlanmalıdır. |

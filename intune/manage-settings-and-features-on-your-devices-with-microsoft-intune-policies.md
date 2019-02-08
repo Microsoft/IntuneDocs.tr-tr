@@ -16,12 +16,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3b1115a91707c639caba6410ace3c2e255e40a39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e36580a477db29a52249c4ce809239ae3a524462
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185007"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837909"
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-intune-policies"></a>Intune ilkeleriyle cihazlarınızda ayarları ve özellikleri yönetme
 
@@ -31,10 +32,10 @@ Microsoft Intune *ilkeleri*, mobil cihazlar ve bilgisayarlarda özellikleri dene
 
 Intune ilkeleri aşağıdaki kategorilere ayrılır. Kullandığınız kategori, ilkeyi oluşturma ve dağıtma şeklinizi etkiler.
 
-- **Yapılandırma ilkeleri:** Bunlar yaygın olarak cihazlarınızdaki şirket kaynaklarına erişim gibi güvenlik ayarlarını ve özelliklerini yönetmek için kullanılır. [Intune cihaz profillerini](device-profiles.md) kullanmaya başlayın.
-- **Cihaz uyumluluk ilkeleri**: Bir cihazın koşullu erişim ilkeleriyle uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları tanımlayın. Uyumluluk ilkelerini, koşullu erişimden bağımsız olarak cihazlardaki uyumluluğu izlemek ve sorunları gidermek için de kullanabilirsiniz. [Cihaz uyumluluk ilkelerini](device-compliance-get-started.md) kullanmaya başlayın.
-- **Koşullu erişim ilkeleri**: Belirttiğiniz koşullara bağlı olarak e-posta ve diğer hizmetleri güvenli hale getirmenize yardımcı olur. [Koşullu erişim nedir](conditional-access.md) ve [koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md) makaleleri, koşullu erişimi kullanmaya başlamak için iyi kaynaklardır.
-- **Şirket cihaz kaydı ilkeleri:** Şirket cihaz kaydı ilkeleri hakkında daha fazla bilgi için bkz. [iOS cihazları kaydetme](ios-enroll.md).
+- **Yapılandırma ilkeleri**: Güvenlik ayarları ve özellikleri cihazlarınızda gibi şirket kaynaklarına erişimi yönetmek için yaygın olarak kullanılır. [Intune cihaz profillerini](device-profiles.md) kullanmaya başlayın.
+- **Cihaz uyumluluk ilkelerini**: Bir cihazın koşullu erişim ilkeleriyle uyumlu olarak değerlendirilmesi için uyması gereken ayarları ve kuralları tanımlayın. Uyumluluk ilkelerini, koşullu erişimden bağımsız olarak cihazlardaki uyumluluğu izlemek ve sorunları gidermek için de kullanabilirsiniz. [Cihaz uyumluluk ilkelerini](device-compliance-get-started.md) kullanmaya başlayın.
+- **Koşullu erişim ilkeleri**: Güvenli e-posta ve diğer hizmetleri, girdiğiniz koşullara bağlı olarak yardımcı olur. [Koşullu erişim nedir](conditional-access.md) ve [koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md) makaleleri, koşullu erişimi kullanmaya başlamak için iyi kaynaklardır.
+- **Şirket cihaz kaydı ilkeleri**: Şirket cihaz kaydı ilkeleri hakkında daha fazla bilgi için bkz. [iOS cihazlarını kaydetme](ios-enroll.md).
 
 ## <a name="frequently-asked-questions-about-intune-policies"></a>Intune ilkeleri hakkında sık sorulan sorular
 
@@ -97,7 +98,7 @@ Bir ilkeyi sildiğinizde veya dağıtılmış ilkesi olan bir gruptan bir cihaz�
 
 - Wi-Fi, VPN, sertifika ve e-posta profilleri: Bu profiller tüm desteklenen kayıtlı cihazlardan kaldırılır.
 - Tüm diğer ilke türleri:
-  - **Windows ve Android cihazları**: Ayarlar cihazdan kaldırılmaz.
+  - **Windows ve Android cihazlarda**: Ayarlar CİHAZDAN kaldırılmaz.
   - **Windows Phone 8.1 cihazları**: Aşağıdaki ayarlar kaldırılır:
     - Mobil cihazların kilidini açmak için bir parola gerektir
     - Basit parolalara izin ver
@@ -125,7 +126,7 @@ Bir ilkeyi sildiğinizde veya dağıtılmış ilkesi olan bir gruptan bir cihaz�
     - NFC'ye izin ver
     - Wi-Fi'a izin ver
 
-  - **iOS**: Aşağıdakiler dışında tüm ayarlar kaldırılır:
+  - **iOS**: Tüm ayarlar kaldırılır, hariç:
     - Sesli dolaşıma izin ver
     - Veri dolaşımına izin ver
     - Dolaşım sırasında otomatik eşitlemeye izin ver

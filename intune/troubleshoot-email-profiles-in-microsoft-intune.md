@@ -16,12 +16,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 480b453aa4f08f8d2a2460e26bfdb5f05466df6e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89a522047d88fd3720ea6dc7066f9387027d376f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190107"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840901"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune’da e-posta profilleriyle ilgili sorunları giderme
 
@@ -56,16 +57,16 @@ Otomatik olarak yapılandırılan e-posta hesaplarına sahip kullanıcılar, cih
 
 Kullanıcı bir e-posta profili Intune profilinin provisionining önce yüklediyseniz, Intune e-posta profili dağıtımının sonucu cihaz platformuna bağlıdır:
 
-- **iOS**: Intune, konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğunu algılar. Kullanıcı tarafından oluşturulmuş yinelenen e-posta profili, Intune yöneticisinin oluşturduğu profilin dağıtımını engeller. İOS kullanıcıları genellikle bir e-posta profili oluşturma ardından kaydolduğundan ortak bir sorunu budur. Şirket portalı, kullanıcıların el ile yapılandırılan e-posta profilinden dolayı uyumlu olmayan ve o profili kaldırmasını ister kullanıcı güncelleştirir. Intune profilinin dağıtılabilmesi için kullanıcının e-posta profilini kaldırması gerekir. Bu sorunu önlemek için kullanıcılarınızdan kaydetmeye ve Intune'un profili dağıtmasına izin vermelerini. Ardından, kullanıcı tarafından oluşturulmuş bir e-posta profili yükleyin.
+- **iOS**: Intune, konak adına ve e-posta adresini temel alan bir var olan ve yinelenen e-posta profili olduğunu algılar. Kullanıcı tarafından oluşturulmuş yinelenen e-posta profili, Intune yöneticisinin oluşturduğu profilin dağıtımını engeller. İOS kullanıcıları genellikle bir e-posta profili oluşturma ardından kaydolduğundan ortak bir sorunu budur. Şirket portalı, kullanıcıların el ile yapılandırılan e-posta profilinden dolayı uyumlu olmayan ve o profili kaldırmasını ister kullanıcı güncelleştirir. Intune profilinin dağıtılabilmesi için kullanıcının e-posta profilini kaldırması gerekir. Bu sorunu önlemek için kullanıcılarınızdan kaydetmeye ve Intune'un profili dağıtmasına izin vermelerini. Ardından, kullanıcı tarafından oluşturulmuş bir e-posta profili yükleyin.
 
-- **Windows**: Intune, konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğunu algılar. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
+- **Windows**: Intune, konak adına ve e-posta adresini temel alan bir var olan ve yinelenen e-posta profili olduğunu algılar. Intune kullanıcı tarafından oluşturulmuş, var olan e-posta profilinin üzerine yazar.
 
-- **Samsung KNOX Standard**: Intune e-posta adresini temel alan bir yinelenen bir e-posta hesabı olduğunu algılar ve Intune profili bunun üzerine yazılmıştır. Kullanıcı bu hesabı yapılandırırsa Intune profili tarafından yeniden üzerine yazılır. Bu, hesap yapılandırmasının üzerine yazılan kullanıcı için karışıklığa neden olabilir.
+- **Samsung KNOX Standard**: Intune e-posta adresini temel alan bir yinelenen bir e-posta hesabı olduğunu algılar ve bunu Intune profili bunun üzerine yazar. Kullanıcı bu hesabı yapılandırırsa Intune profili tarafından yeniden üzerine yazılır. Bu, hesap yapılandırmasının üzerine yazılan kullanıcı için karışıklığa neden olabilir.
 
 Samsung KNOX, ana bilgisayar adı, profili tanımlamak için kullanmaz. Bunlar birbirinin üzerine yazılacağından, farklı konaklarda aynı e-posta adresine dağıtmak için birden çok e-posta profilleri oluşturmayın öneririz.
 
 ## <a name="error--0x87d1fde8-for-knox-standard-device"></a>KNOX Standard cihazı için 0x87D1FDE8 hatası
-**Sorunu**: oluşturma ve dağıtma Exchange Active Sync Samsung KNOX Standard için çeşitli Android cihazlarda, hata e-posta profilini sonra **0x87D1FDE8** veya **düzeltme başarısız** olduğu cihazın özelliklerinde bildirilen > ilke sekmesinde.
+**Sorunu**: Oluşturma ve Exchange Active Sync dağıtma sonra e-posta profili Samsung KNOX Standard için çeşitli Android cihazlarda hata **0x87D1FDE8** veya **düzeltme başarısız** cihazın içinde bildirilen Özellikler > ilke sekmesinde.
 
 Samsung KNOX için EAS profili yapılandırmanızı ve kaynak ilkeyi gözden geçirin. Samsung Notes eşitleme seçeneği artık desteklenmez ve profilinizde bu seçenek belirtilmemelidir. Cihazların ilkeyi 24 saate kadar işlemek için yeterli zamana sahip olduğunuzdan emin olun.
 

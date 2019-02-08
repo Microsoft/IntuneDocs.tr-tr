@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2de0d4cb00ea6bdeef40a9e6f6e400304a003b00
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187795"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848551"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP kullanarak Intune'da iş ortağı sertifika yetkilisi ekleme
 
@@ -39,7 +40,7 @@ Azure Active Directory (Azure AD) uygulamasını kullanarak, cihazlardan gelen S
 
 Bu makalede Azure AD uygulaması oluşturma da dahil olmak üzere Yönetici perspektifinden bu özelliğe bir genel bakış sağlanır.
 
-## <a name="overview"></a>Genel bakış
+## <a name="overview"></a>Genel Bakış
 
 Aşağıdaki adımlar Intune'da SCEP sertifikaları verme işlemine genel bir bakış sağlar:
 
@@ -69,16 +70,16 @@ Aşağıdaki diyagramda Intune'la üçüncü taraf SCEP tümleştirmesinin ayrı
 
 Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emin olun. [Gerekli izinler](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) altında adımlar listelenir.
 
-**1. Adım: Azure AD uygulaması oluşturma**
+**1. adım: Azure AD uygulaması oluşturun**
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 2. **Azure Active Directory** > **Uygulama kayıtları** > **Yeni uygulama kaydı**'nı seçin.
 3. Bir ad ve oturum açma URL'si girin. Uygulama türü olarak **Web uygulaması / API**'yi seçin.
 4. **Oluştur**’u seçin.
 
 [Uygulamaları Azure Active Directory ile tümleştirme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications), URL ve ad ipuçlarıyla birlikte uygulama oluşturmayla ilgili bazı yönergeler içerir.
 
-**2 Adım: İzinleri verme**
+**2. adım: İzinleri verme**
 
 Uygulamanızı oluşturduktan sonra, Microsoft Intune API'sine gerekli izinleri verin:
 
@@ -87,13 +88,13 @@ Uygulamanızı oluşturduktan sonra, Microsoft Intune API'sine gerekli izinleri 
 3. **İzinleri seçin** alanında **SCEP sınama doğrulaması** > **Seç** öğesini seçin.
 4. Değişikliklerinizi kaydetmek için **Bitti**’yi seçin.
 
-**3. Adım: Uygulama kimliğini ve kimlik doğrulama anahtarını alma**
+**3. adım: Uygulama kimliği ve kimlik doğrulama anahtarını alma**
 
 Ardından, Azure AD uygulamanızın kimlik ve anahtar değerlerini alın. Aşağıdaki değerler gerekir:
 
 - Uygulama kimliği
 - Kimlik doğrulama anahtarı
-- Kiracı kimliği
+- Kiracı Kimliği
 
 **Uygulama kimliğini ve kimlik doğrulama anahtarını almak için**:
 

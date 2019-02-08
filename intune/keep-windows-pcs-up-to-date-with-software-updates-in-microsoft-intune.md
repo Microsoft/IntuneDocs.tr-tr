@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 7c6bdbde87f6438696b5a262ba1890532dcfccdd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d123f2b373f0f10027dde53081699d819cdb394
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180876"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845457"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune’da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutma
 
@@ -54,7 +55,7 @@ Aşağıdaki tabloda, ilkede yapılandırabileceğiniz değerlerin yanı sıra, 
   |İlke ayarı|Ayrıntılar|
     |------------------|--------------------|
     |**Güncelleştirme ve uygulama algılama sıklığı (saat)** |Intune’un yeni güncelleştirme ve uygulamaları ne sıklıkta (8-22 saat) denetleyeceğini belirtir.<br /><br />Önerilen değer: **8** saat.|
-    |**Uygulamaları ve güncelleştirmeleri otomatik olarak veya istendiğinde yükleme** |Güncelleştirmelerin otomatik olarak mı yükleneceğini yoksa yüklenmeden önce kullanıcıya sorulup sorulmayacağını belirtir. Ek olarak, bu ayar, güncelleştirmelerin ve uygulamaların yüklenmesini zamanlamanıza imkan sağlar.<br /><br />**Güncelleştirmeleri ve uygulamaları zamanlamaya göre otomatik yükle** seçeneği, güncelleştirmeleri ve uygulamaları belirtilen zamanlamayı kullanarak yükler.<br /><br />Bağımlı bir ilke ayarı olarak **Windows bilgisayarları için Otomatik Bakım'ı Kullan**  seçeneği, güncelleştirmelerin ve uygulamaların Windows Otomatik bakım penceresi sırasında yükleneceğini belirtir.<br /><br />**Yükleme için kullanıcıya sor** seçeneği, güncelleştirmeler hazır olduğunuzda bunların yüklenip yüklenmeyeceğini kullanıcıya sorar.<br /><br />Önerilen değerler:<br /><br />**Güncelleştirmeleri ve uygulamaları zamanlamaya göre otomatik yükle** seçili<br /><br />**Zamanlanan gün: Her gün**<br /><br />**Zamanlanan saat: 03:00**<br /><br />**Windows bilgisayarları için Otomatik Bakım'ı kullan** seçili|
+    |**Uygulamaları ve güncelleştirmeleri otomatik olarak veya istendiğinde yükleme** |Güncelleştirmelerin otomatik olarak mı yükleneceğini yoksa yüklenmeden önce kullanıcıya sorulup sorulmayacağını belirtir. Ek olarak, bu ayar, güncelleştirmelerin ve uygulamaların yüklenmesini zamanlamanıza imkan sağlar.<br /><br />**Güncelleştirmeleri ve uygulamaları zamanlamaya göre otomatik yükle** seçeneği, güncelleştirmeleri ve uygulamaları belirtilen zamanlamayı kullanarak yükler.<br /><br />Bağımlı bir ilke ayarı olarak **Windows bilgisayarları için Otomatik Bakım'ı Kullan**  seçeneği, güncelleştirmelerin ve uygulamaların Windows Otomatik bakım penceresi sırasında yükleneceğini belirtir.<br /><br />**Yükleme için kullanıcıya sor** seçeneği, güncelleştirmeler hazır olduğunuzda bunların yüklenip yüklenmeyeceğini kullanıcıya sorar.<br /><br />Önerilen değerler:<br /><br />**Güncelleştirmeleri ve uygulamaları zamanlamaya göre otomatik yükle** seçili<br /><br />**Zamanlanan gün: Her gün**<br /><br />**Zamanlanan saat: 3: 00'DA**<br /><br />**Windows bilgisayarları için Otomatik Bakım'ı kullan** seçili|
     |**Windows'u kesintiye uğratmayan güncelleştirmelerin hemen yüklemesine izin ver** |**İzin ver** seçeneği, Windows'u kesintiye uğratacak veya yeniden başlatacak güncelleştirmeler dışındaki güncelleştirmeleri indirildikten hemen sonra yükler. Bu güncelleştirmeler, **Güncelleştirmelerin otomatik veya istendiğinde yüklenmesi** ayarının yapılandırmasına göre yüklenir.<br /><br />**İzin verme** seçeneği, güncelleştirmeleri **Güncelleştirmelerin otomatik veya istendiğinde yüklenmesi** ayarının yapılandırmasına göre yükler.<br /><br />Önerilen değer: **İzin ver** |
     |**Zamanlanmış güncelleştirmeler ve uygulamalar yüklendikten sonra Windows'u yeniden başlatmayı geciktir (dakika)** |Zamanlanmış güncelleştirmeler ve uygulamalar yüklendikten sonra Windows'u yeniden başlatmak için beklenecek süreyi (1-30 dakika arasında) belirtir.<br /><br />Önerilen değer: **15 dakika** |
     |**Windows yeniden başlatıldıktan sonra kaçırılan zamanlanmış güncelleştirme ve uygulamaların yüklenmeye başlamasını geciktir (dakika)** |Zamanlanmış bir güncelleştirmenin kaçırılması durumunda, Windows yeniden başlatıldıktan sonra güncelleştirme ve uygulamaların yüklenmeye başlaması için ne kadar bekleneceğini (1-60 dakika arasında) belirtir.<br /><br />Önerilen değer: **5 dakika**|
@@ -76,7 +77,7 @@ Yazılım güncelleştirmelerini kullanmaya hazırlanmanıza yardımcı olacak �
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Yönetici**&gt;**Güncelleştirmeler**’i seçin.
 
-2.  **Hizmet Ayarları: Güncelleştirmeler** sayfasında, **Ürün Kategorisi** listesinden, bilgisayarlar için kullanılabilir duruma getirmek istediğiniz güncelleştirme kategorilerini seçin. En yaygın güncelleştirmelerin varsayılan olarak seçildiğini unutmayın.
+2.  Üzerinde **hizmet ayarları: Güncelleştirmeleri** sayfasında **ürün kategorisi** listesinden, bilgisayarlar için kullanılabilir hale getirmek istediğiniz güncelleştirme kategorilerini seçin. En yaygın güncelleştirmelerin varsayılan olarak seçildiğini unutmayın.
 
     > [!IMPORTANT]
     > Bilgisayarların yönetici tarafından onaylanan güncelleştirmeleri aldığından emin olmak için Windows Server Update Services (WSUS) Grup İlkesi ayarı olan **Intranet Microsoft güncelleştirme hizmeti konumunu belirtin** ayarının Intune’a kaydedilen bilgisayarlara uygulanmadığından emin olun.
@@ -89,7 +90,7 @@ Yazılım güncelleştirmelerini kullanmaya hazırlanmanıza yardımcı olacak �
 
 1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Yönetici**&gt;**Güncelleştirmeler**’i seçin.
 
-2.  **Sunucu Ayarları: Güncelleştirmeler** sayfasının **Otomatik Onaylama Kuralları** bölümünde **Yeni**’yi seçin.
+2.  İçinde **otomatik onaylama kuralları** bölümünü **sunucu ayarları: Güncelleştirmeleri** sayfasında **yeni**.
 
 3.  Otomatik Onay Kuralı Oluştur Sihirbazı'nın **Genel** sayfasında, kural için bir ad ve isteğe bağlı bir açıklama belirtin.
 
@@ -110,7 +111,7 @@ Yazılım güncelleştirmelerini kullanmaya hazırlanmanıza yardımcı olacak �
 
 7.  **Özet** sayfasında, yeni kuralın ayarlarını gözden geçirin ve ardından **Son**'u seçin.
 
-Yeni kural, **Sunucu Ayarları: Güncelleştirmeler** sayfasının **Otomatik Onaylama Kuralları** bölümünde gösterilir.
+Yeni kural **otomatik onaylama kuralları** bölümünü **hizmet ayarları: Güncelleştirmeleri** sayfası.
 
 > [!NOTE]
 > Bir otomatik onay kuralı oluşturduğunuzda, kural yalnızca gelecekteki güncelleştirmeleri onaylar ve Intune’da önceden var olan güncelleştirmeleri otomatik olarak onaylamaz. Bu güncelleştirmeleri onaylamak için otomatik onay kuralını çalıştırmanız gerekir.
@@ -207,7 +208,7 @@ Listeden bir güncelleştirme seçtiğinizde, aşağıdaki tabloda gösterildiğ
 |**Düzenle**|Yalnızca Microsoft dışı güncelleştirmeler için. Güncelleştirmenin özelliklerini düzenlemenize olanak sağlar.|
 |**Onayla**|Seçilen güncelleştirmeyi onaylar ve güncelleştirmenin hangi gruplara dağıtılacağını yapılandırmanıza olanak sağlar. Daha fazla bilgi için bu konuda başlığı altındaki **Güncelleştirmeleri onaylamak için** yordamına bakın.|
 |**Reddet**|Güncelleştirme için önceki tüm onayları kaldırır ve güncelleştirmeyi varsayılan görünümlerden gizler. Ayrıca, güncelleştirme için tüm rapor verileri kaldırılır.<br /><br />Reddedilen bir güncelleştirmeyi daha sonra bulmak isterseniz, **Tüm Güncelleştirmeler** sayfasındaki filtreyi **Reddedildi**olarak ayarlayın. Daha sonra bu güncelleştirmeyi gerektiği gibi onaylayabilirsiniz.<br /><br />Bir güncelleştirme Microsoft Update'te süresi dolduğu için reddedildiyse, bu güncelleştirme Intune yönetim konsolunda onaylanamaz.<br /><br />Bilgisayarlara dağıtılan bir güncelleştirme İlkesini silerseniz, bu güncelleştirme ilkesi ayarlarının değerleri, bilgisayarlarda yüklü işletim sistemi için varsayılan duruma sıfırlanır.|
-|**Sil**|Yalnızca Microsoft dışı güncelleştirmeler için. Seçili güncelleştirmeyi siler.|
+|**Silme**|Yalnızca Microsoft dışı güncelleştirmeler için. Seçili güncelleştirmeyi siler.|
 |**Karşıya yükle**|Dağıtmak istediğiniz Microsoft dışı güncelleştirmeleri karşıya yüklemenize olanak sağlayan **Güncelleştirmeyi Karşıya Yükle** sihirbazını başlatır.|
 
 ### <a name="to-approve-updates"></a>Güncelleştirmeleri onaylamak için

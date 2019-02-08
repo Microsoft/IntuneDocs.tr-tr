@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
-ms.openlocfilehash: d9ecfa44e2619e5e123c9e8af169b6a8a95ee466
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9e7269eb6e396557a6bc19daa371a10be7154866
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183902"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844641"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune etkinlikleri için denetleme günlükleri
 Denetim günlükleri size, Microsoft Intune'da değişiklik yaratan etkinliklerin kaydını sağlar. Eylemleri veya uzak görevleri oluşturun, güncelleştirin (düzenleyin), silin ve atayın; gözden geçirebileceğiniz denetim olayları oluşturun. Intune iş yüklerinin çoğunda denetim günlüklerini gözden geçirebilirsiniz. Denetim tüm müşteriler için varsayılan olarak etkindir ve devre dışı bırakılamaz. Denetim olayları özelliği Aralık 2017’deki yayımlanma tarihinde kaydedilmeye başlandı; daha önceki olaylar mevcut değil.
@@ -30,7 +31,7 @@ Aşağıdaki izinlere sahip kullanıcılar denetim günlüklerini gözden geçir
 
 ## <a name="audit-logs-for-intune-workloads"></a>Intune iş yükleri için denetim günlükleri
 Her Intune iş yükü için, İzleme grubunda denetim günlüklerini gözden geçirebilirsiniz.  
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde, denetim günlüklerini gözden geçirmek istediğiniz iş yükünü seçin, örneğin **Cihazlar**.
 4. İş yükünün **İzleme** grubunda **Denetim günlükleri**'ni seçin.

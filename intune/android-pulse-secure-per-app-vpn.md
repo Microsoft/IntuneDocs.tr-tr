@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 48f1227da6260217105120d31301f60b6e06110c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4e973c9fcc31c4aaacc40d89c0b03c23a50dedd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186027"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834067"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune özel profili kullanarak Android cihazları için uygulama başına VPN profili oluşturma
 
@@ -36,10 +37,10 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 > Bu profil için yalnızca Pulse Secure ve Citrix bağlantı türleri desteklenir.
 
 
-## <a name="step-1-create-a-vpn-profile"></a>1. Adım: VPN profili oluşturma
+## <a name="step-1-create-a-vpn-profile"></a>1. adım: VPN profili oluşturma
 
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
@@ -51,9 +52,9 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 
 VPN profilini oluştururken, belirttiğiniz **Bağlantı Adı** değerini bir yere not edin. Bu ad sonraki adımda gerekli olacaktır. Örneğin, **UygulamaVpnProfilim**.
 
-## <a name="step-2-create-a-custom-configuration-policy"></a>2. Adım: Özel yapılandırma ilkesi oluşturma
+## <a name="step-2-create-a-custom-configuration-policy"></a>2. adım: Özel yapılandırma ilkesi oluşturma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
@@ -81,6 +82,6 @@ Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve VPN bağlantısın
 
 
 
-## <a name="step-3-assign-both-policies"></a>3. Adım: Her iki ilkeyi de atama
+## <a name="step-3-assign-both-policies"></a>3. adım: Her iki ilkeyi atayın
 
 Gerekli kullanıcılara veya cihazlara her iki profili de atamak için, [Cihaz profillerini atama](device-profile-assign.md) başlığı altında verilen yönergeleri kullanın.

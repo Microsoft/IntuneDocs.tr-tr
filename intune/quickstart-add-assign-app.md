@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3831b86bd619fae130f7173cee8f7e7cc46dfe6a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184523"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839303"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı Başlangıç: İstemci uygulaması ekleme ve atama
+# <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı Başlangıç: Ekleme ve bir istemci uygulama atama
 
 Bu hızlı başlangıçta şirketinizin iş gücüne bir istemci uygulaması eklemek ve bunu atamak için Intune’u kullanacaksınız. Yöneticinin önceliklerinden biri, son kullanıcıların işlerini yapabilmeleri için gereken uygulamalara erişimleri olduğundan emin olmaktır. 
 
@@ -51,7 +52,7 @@ Intune’a bir uygulama eklemek için aşağıdaki adımları kullanın:
 6. **Paket Adı** olarak **Microsoft Office 365 uygulama paketi** yazın.
 7. **Microsoft Office 365 uygulama paketi.** ifadesini **Paket Açıklaması** kısmına girin.
 8. **Şirket Portalı’nda bu uygulamayı öne çıkan uygulama olarak görüntüle** ayarını **Evet** olarak belirleyin.
-9. **Tamam**'ı tıklatın.
+9. **Tamam** düğmesine tıklayın.
 
     ![Uygulama bilgileri ekleme ekran görüntüsü](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
@@ -90,9 +91,9 @@ Intune yoluyla kullanılabilir olan **Contoso’nun To-Do** uygulamasını yükl
 4. Intune’u kullanarak eklediğiniz uygulamaya tıklayın. Bu hızlı başlangıçta **Microsoft Office 365 uygulama paketi** uygulamasını eklediniz.
 
     > [!NOTE]
-    > Intune kullanıcısına hiçbir uygulama atayamadıysanız şu iletiyi görürsünüz: *BT yöneticiniz hiçbir uygulamayı sizin kullanımınıza sunmadı.*
+    > Başarılı bir şekilde herhangi bir uygulama için Intune kullanıcı atamadığınız, şu iletiyi görürsünüz: *BT yöneticiniz tüm uygulamaları kullanılabilir hale değil.*
 
-5. **Yükle**’ye tıklayın.
+5. **Yükle**'ye tıklatın.
 
 İş gereksinimleriniz Şirket Portalı uygulamasını iş gücünüze atamanızı gerektiriyorsa Windows 10 Şirket Portalı uygulamasını doğrudan Intune’dan el ile atayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme](store-apps-company-portal-app.md).
 
@@ -103,4 +104,4 @@ Bu hızlı başlangıçta Intune’a bazı uygulamalar eklediniz, daha sonra bu 
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Uygulama koruma ilkesi oluşturma ve atama](quickstart-create-assign-app-policy.md)
+> [Hızlı Başlangıç: Bir uygulama koruma ilkesi oluşturma ve atama](quickstart-create-assign-app-policy.md)
