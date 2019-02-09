@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee33525c382b09952a28fad09ee7844e73f2257
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 299e76d55cd5fc61d96a81a49f721bc5c0c69a11
+ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850403"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905858"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -283,7 +283,7 @@ Yeni deneyim, sorununuzu kendi kelimelerinizle açıklamanıza ve sorun giderme 
 ### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Uygulamalar için kapsam etiketleri <!-- 1081941 -->
-Rolleri ve uygulamalar için erişimi sınırlandırmak için kapsamı etiketleri oluşturabilirsiniz. Böylece kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama erişimi için bir uygulama bir kapsam etiketi ekleyebilirsiniz. Apple Volume Purchase Program (VPP) kullanarak satın aldığınız uygulamaları, kapsam etiketleri atanamaz.  Daha fazla bilgi için [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
+Rolleri ve uygulamalar için erişimi sınırlandırmak için kapsamı etiketleri oluşturabilirsiniz. Böylece kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama erişimi için bir uygulama bir kapsam etiketi ekleyebilirsiniz. Şu anda, yönetilen Google Play veya Apple Volume Purchase Program (VPP) kullanarak satın aldığınız uygulamaları Intune'a eklenen uygulamaları kapsam etiketleri atama yapılamaz (ancak desteği gelecekte gelir). Daha fazla bilgi için [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
 
 
 

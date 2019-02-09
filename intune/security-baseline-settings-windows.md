@@ -5,7 +5,7 @@ description: Windows Güvenlik temel ayarları Intune tarafından desteklenen
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,17 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86bfda9d7220ea3557bb12a5d6c8ce6ed8cd3932
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 91a8364927667bbc910d86dc3e95f447eb5cf93a
+ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840612"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905824"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Intune için Windows Güvenlik temel ayarları  
 
 Görünüm [Windows Güvenlik taban çizgisi ayarlarını](security-baselines.md) Intune tarafından desteklenir.  
 
+> [!NOTE]  
+> Windows Güvenlik taban çizgisi ayarlarını Önizleme aşamasındadır. Önizleme ile kullanılabilir ayarlar ve bu ayarlar, bu içerik sunan Sipariş listesini Portalı'nda kullanılabilir olan değişir.  
+>  
+> Temel ayarlar önizlemeden sonra bu içeriği Intune'un desteklediği güvenlik taban çizgisi ayarlarını ön izlemesiz listesiyle birlikte güncelleştirir.  
 
 ## <a name="above-lock"></a>Kilit üzerinde  
 Daha fazla bilgi için [ilke CSP'si - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) Windows belgelerinde.  
@@ -164,11 +168,12 @@ Daha fazla bilgi için [ilke CSP'si - DeviceGuard](https://docs.microsoft.com/wi
   Sanallaştırma açar, bir sonraki önyüklemede güvenlik (VBS) bağlı. Sanallaştırma tabanlı güvenlik, güvenlik hizmetlerine destek sağlamak için Windows Hiper Yöneticisi'ni kullanır.
   - **Varsayılan**: Evet  
 
-- **DMA ile güvenli önyüklemeyi etkinleştirme**  
-  Gelen komutlarda arasında güvenli önyükleme ve Güvenli Önyükleme'yle DMA ayarları seçebilirsiniz. Çoğu durumda, Güvenli Önyükleme seçmenizi öneririz. Bu seçenek Güvenli Önyükleme gibi belirli bir bilgisayarın donanım tarafından desteklenen kadar koruma sağlar. Giriş/Çıkış bellek yönetimi birimi (IOMMUs) bir bilgisayarda DMA korumasıyla Güvenli Önyükleme sahip olur. Bir bilgisayarı IOMMUs olmadan yalnızca güvenli önyükleme etkin olacaktır. Buna karşılık, Güvenli Önyükleme'yle DMA ile ayarı güvenli önyüklemeyi etkinleştirmeniz — ve kendisini VBS — DMA, diğer bir deyişle, bir bilgisayarla IOMMUs destekleyen bir bilgisayarda. Hala etkin WDAC sahip olabilirsiniz, ancak bu ayar, VBS veya HVCI koruma IOMMUs olmadan herhangi bir bilgisayarda olmaz.
+<!-- not yet available 
+- **Enable secure boot with DMA**  
+  Among the commands that follow, you can choose settings for Secure Boot and Secure Boot with DMA. In most situations, we recommend that you choose Secure Boot. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled. In contrast, with Secure Boot with DMA, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.
   
-  - **Varsayılan**: Evet  
-  
+  - **Default**: Yes  
+  -->
 - **Sistem koruma başlatın**  
   - **Varsayılan**: Etkin  
 
@@ -181,11 +186,11 @@ Daha fazla bilgi için [ilke CSP'si - DeviceInstallation](https://docs.microsoft
   
     - **Eşleşen donanım cihazları kaldırma**  
       Bu ayar yalnızca olan *donanım cihaz yükleme cihaz tanımlayıcısı tarafından* ayarlanır *Block donanım cihaz yükleme*.
-      - **Varsayılan**: *Varsayılan yapılandırma*
+      - **Varsayılan**: Evet
   
     - **Engellenen donanım cihaz tanımlayıcıları**  </br>
       Bu ayar yalnızca olan *donanım cihaz yükleme cihaz tanımlayıcısı tarafından* ayarlanır *Block donanım cihaz yükleme*.
-      - **Varsayılan**: *Varsayılan yapılandırma*  
+      - **Varsayılan**: Evet  
   
 - **Kurulum sınıflar tarafından donanım cihaz yükleme**  
   Bu ilke ayarı, cihaz Kurulumu sınıf genel olarak benzersiz tanımlayıcıları (GUID'ler) cihaz sürücülerini Windows yüklenmesini engelleyen bir listesini belirtmenize olanak sağlar. Bu ilke ayarı, bir cihaza yüklemek Windows sağlayan diğer ilke ayarları üzerinden önceliklidir. Bu ilke ayarını etkinleştirirseniz, Windows yükleme veya GUID'leri listede, cihaz Kurulumu sınıfı oluşturduğunuz cihaz sürücüleri güncelleştirme engellenir. İlke ayarı, Uzak Masaüstü sunucuda bu ilke ayarını etkinleştirirseniz, uzak masaüstü istemcisini belirtilen cihazlarından Uzak Masaüstü sunucuya yönlendirilmesini etkiler. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, Windows yükleyebilirsiniz ve güncelleştirme cihazlar olarak izin verilen veya diğer ilke ayarları tarafından engellendi.
@@ -299,23 +304,23 @@ Daha fazla bilgi için [ilke CSP'si - ta dosya Gezgini](https://docs.microsoft.c
 
 ## <a name="internet-explorer"></a>Internet Explorer  
 Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) Windows belgelerinde.  
-
-- **Gelen posta iletilerini tarama**  
-  Erişim izni verdiği veya e-posta taramasına izin vermiyor.
-  - **Varsayılan**: Devre dışı  
+<!-- not yet available 
+- **Scan incoming mail messages**  
+  Allows or disallows scanning of email.
+  - **Default**: Disabled  
   
-- **Office uygulamalarının alt işlem türü başlatın**  
-  Office uygulamalarının alt işlemler oluşturmak için izin verilmiyor. Bu, Word, Excel, PowerPoint, OneNote ve erişim içerir. Özellikle başlatın veya kötü amaçlı bir yürütülebilir dosyaları indirmek için Office uygulamalarını kullanma girişimi makrosu tabanlı saldırılar için tipik bir kötü amaçlı yazılım yer alan bir davranış budur.
-  - **Varsayılan**: Devre Dışı Bırak  
+- **Office apps launch child process type**  
+  Office apps will not be allowed to create child processes. This includes Word, Excel, PowerPoint, OneNote, and Access. This is a typical malware behavior, especially for macro-based attacks that attempt to use Office apps to launch or download malicious executables.
+  - **Default**: Disable  
   
-- **Defender'ın örnek gönderimi onay türü**  
-  Kullanıcı denetimleri, veri göndermek için Windows Defender'ı düzeyinde vermiş olursunuz. Gerekli onay verilmiş, Windows Defender'ın bunları gönderir. Aksi takdirde (ve kullanıcı tarafından hiç sormak için belirtilen değilse), verileri göndermeden önce (Defender/AllowCloudProtection izin verildiğinde) kullanıcı onay için sormak için kullanıcı Arabirimi başlatılır.
-  - **Varsayılan**: Devre Dışı Bırak  
+- **Defender sample submission consent type**  
+  Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.
+  - **Default**: Disable  
   
-- **İmza güncelleştirme aralığı (saat)**  
-  Defender imza güncelleştirme aralığı saat
-  - **Varsayılan**: Devre dışı  
-  
+- **Signature update interval (in hours)**  
+  Defender signature update interval in hours
+  - **Default**: Disabled  
+ -->
 - **Internet Explorer internet bölgesi veri kaynaklarına erişim**  
   Bu ilke ayarı, Internet Explorer Microsoft XML Parser (MSXML) ya da ActiveX Data Objects (ADO) kullanan başka bir güvenlik bölgesi'nden veri erişip erişemeyeceğini yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yükleyebilir. Aşağı açılan kutusunda istemi seçerseniz, kullanıcıların bir sayfanın başka bir siteden bölgedeki verilere erişmek için MSXML veya ADO kullanan bölgesinde yüklenmesine izin verip vermeyeceklerini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yüklenemiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcıların bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yüklenemiyor.
   - **Varsayılan**: Devre Dışı Bırak  
@@ -944,12 +949,12 @@ Daha fazla bilgi için [ilke CSP'si - RemoteManagement](https://docs.microsoft.c
   Bu ilke ayarı Windows Uzaktan Yönetim (WinRM) istemcisi Özet kimlik doğrulaması kullanır yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci Özet kimlik doğrulaması kullanmaz. WinRM istemcisini devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, Özet kimlik doğrulaması kullanır.
   - **Varsayılan**: Etkin
   
-- **Blok istemci Özet kimlik doğrulaması**  
-  Bu ilke ayarı, Windows Uzaktan Yönetim (WinRM) hizmeti ağ üzerinden şifrelenmemiş iletileri alan ve gönderen yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci gönderir ve ağ üzerinden şifrelenmemiş iletileri alır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, WinRM istemci gönderir veya ağ üzerinden yalnızca şifrelenmiş iletileri alır.
+- **Şifrelenmemiş trafiği**  
+  Bu ilke ayarı, Windows Uzaktan Yönetim (WinRM) hizmeti ağ üzerinden şifrelenmemiş iletileri alan ve gönderen yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci gönderir ve ağ üzerinden şifrelenmemiş iletileri alır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, WinRM istemci gönderir veya ağ üzerinden yalnızca şifrelenmiş iletileri alır.  
   - **Varsayılan**: Devre dışı
   
-- **Blok istemci Özet kimlik doğrulaması**  
-  TBu ilke ayarı, Windows Uzaktan Yönetim (WinRM) hizmeti ağ üzerinden şifrelenmemiş iletileri alan ve gönderen yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci gönderir ve ağ üzerinden şifrelenmemiş iletileri alır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, WinRM istemci gönderir veya ağ üzerinden yalnızca şifrelenmiş iletileri alır.
+- **Şifrelenmemiş istemci trafiğini**  
+  Bu ilke ayarı Windows Remote Management (WinRM) istemcisi ağ üzerinden şifrelenmemiş iletileri alan ve gönderen yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci gönderir ve ağ üzerinden şifrelenmemiş iletileri alır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, WinRM istemci gönderir veya ağ üzerinden yalnızca şifrelenmiş iletileri alır.
   - **Varsayılan**: Devre dışı
   
 - **İstemci temel kimlik doğrulaması**  
