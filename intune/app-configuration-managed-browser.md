@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5458bdb4e6f967082fcbfd165589386dcc23cec1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835512"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086225"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak İnternet erişimini yönetme
 
@@ -151,9 +151,9 @@ Microsoft Edge ve Intune Managed Browser ile [Azure AD Uygulama Ara Sunucusu]( h
 ### <a name="before-you-start"></a>Başlamadan önce
 
 - Dahili uygulamalarınızı Azure AD Uygulama Proxy’si aracılığıyla ayarlayın.
-    - Uygulama Proxy’sini yapılandırmak ve uygulama yayımlamak için bkz. [kurulum belgeleri](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started). 
+    - Uygulama Proxy’sini yapılandırmak ve uygulama yayımlamak için bkz. [kurulum belgeleri](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). 
 - Managed Browser uygulamasının 1.2.0 veya üzeri bir sürümünü kullanıyor olmanız gerekir.
-- Managed Browser veya Microsoft Edge uygulamalarının kullanıcıları, uygulamaya atanmış bir [Intune uygulama koruma ilkesine]( app-protection-policy.md) sahiptir.
+- Managed Browser veya Microsoft Edge uygulamalarının kullanıcıları, uygulamaya atanmış bir [Intune uygulama koruma ilkesine](app-protection-policy.md) sahiptir.
 
     > [!NOTE]
     > Güncelleştirilmiş Uygulama Ara Sunucusu’nun yeniden yönlendirme verilerinin Managed Browser’da veya Microsoft Edge'de etkinleşmesi 24 saati bulabilir.
