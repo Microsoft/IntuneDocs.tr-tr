@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 157328b1fdf774f46d69e619ec0e44e32cbba101
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 39e6f5e13544ba2863320d96984611c9a94b4ff4
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834301"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086004"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Dağıtım iletişim planı geliştirme
 
@@ -56,7 +56,7 @@ Bu [son kullanıcı kayıt kılavuzu](https://gallery.technet.microsoft.com/Intu
 
 Intune dağıtım bilgilerini hedeflediğiniz gruplara ve kullanıcılara iletmek için yararlanabileceğiniz çeşitli teslim yöntemleri vardır. Aşağıdaki liste, bazı örnekleri ve yöntemle kullanabileceğiniz dalgayı göstermektedir:
 
--   Açılış dalgası için kuruluş genelinde yüz yüze veya Skype ile yapılan görüşmeler
+-   Kuruluş genelinde yüz yüze veya Microsoft Teams Toplantı başlangıç dalgası için kullanılır
 
 -   Kayıt öncesi, kayıt ve kayıt sonrası dalgaları için kullanılan e-posta
 

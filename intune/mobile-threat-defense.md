@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,29 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8640cf015d03c9d40d7eacbe1a4103d30db63477
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cfe74086393ab3583c6238e6f252406665a3d17f
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840588"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086038"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi nedir?
-
-
-Intune Mobile Threat Defense bağlayıcıları, uyumluluk ilkeleriniz ve koşullu erişim kurallarınız için bilgi kaynağı olarak seçtiğiniz Mobile Threat Defense satıcınızdan yararlanmasına olanak sağlar. Bu, özellikle ele geçirilen mobil cihazlardan olmak üzere, BT yöneticilerinin Exchange ve Sharepoint gibi şirket kaynaklarına bir koruma katmanı eklemesine olanak sağlar.
+Intune uyumluluk ilkeleri ve koşullu erişim kurallarınız için bilgi kaynağı olarak bir Mobile Threat Defense satıcınızdan verilerini tümleştirebilirsiniz. Ele geçirilen mobil cihazlardan erişimi engelleyerek Exchange ve SharePoint gibi şirket kaynaklarını korumaya yardımcı olmak için bu bilgileri kullanabilirsiniz.  
 
 ## <a name="what-problem-does-this-solve"></a>Hangi sorunu çözer?
+Mobile Threat Defense satıcınızdan bilgilerinden tümleştirme, şirket kaynaklarınıza mobil platformları etkileyen tehditlere karşı korumanıza yardımcı olabilir.  
 
-Şirketlerin hassas verileri fiziksel, uygulama tabanlı ve ağ tabanlı tehditlerin yanı sıra işletim sistemi güvenlik açıklarını içeren yeni tehditlerden koruması gerekir.
-
-Geçmişte, şirketler bilgisayarları saldırıdan koruma konusunda proaktif olarak çalışırken, mobil cihazlar izlenmiyor ve korumasız bırakılıyordu. Mobil platformlarda uygulama yalıtımı ve denetlenen tüketici uygulama mağazaları gibi yerleşik korumalar bulunmasına rağmen, bu platformlar hala karmaşık saldırılara karşı savunmasızdır. Bugün, iş için cihaz kullanan çalışan sayısı daha fazladır ve hassas bilgilere daha çok erişim ihtiyacı duyarlar. Cihazların giderek daha karmaşık hale gelen saldırılardan korunması gerekir.
+Genellikle, şirketler bilgisayarları güvenlik açıklarına karşı koruma konusunda proaktif ve mobil cihazlar izlenmiyor ve korumasız genellikle giderken saldırı. Mobil platformlarda uygulama yalıtımı ve denetlenen tüketici uygulama mağazaları gibi yerleşik korumalar sahip olduğu durumlarda bu platformların karmaşık saldırılara karşı savunmasızdır. Daha fazla çalışan iş ve hassas bilgilere erişmek için cihazları kullanma gibi Mobile Threat Defense satıcınızdan bilgilerinden giderek daha karmaşık hale gelen saldırılardan cihazlar ve kaynaklarınızı korumanıza yardımcı olabilir.  
 
 ## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense bağlayıcıları nasıl çalışır?
 
-Bağlayıcı, Intune ve seçtiğiniz Mobile Threat Defense satıcınız arasında bir iletişim kanalı oluşturarak şirket kaynaklarını korur. Intune Mobile Threat Defense iş ortakları, mobil cihazlar için raporlama veya uygulama amaçlarıyla Intune ile paylaşmak üzere tehdit bilgilerini etkin bir şekilde tarayan ve analiz eden sezgisel, dağıtımı kolay uygulamalar sunar. 
+Intune Mobile Threat Defense Bağlayıcısı seçtiğiniz Mobile Threat Defense satıcınız ile Intune arasındaki iletişimin bir kanal oluşturmak için kullanır. Intune Mobile Threat Defense iş ortakları, sezgisel ve kolay mobil cihazlar için uygulamaları dağıtmanıza olanak sağlar. Bu uygulamalar, etkin bir şekilde tarayan ve Intune ile paylaşmak üzere tehdit bilgilerini analiz. Intune verileri raporlama veya uygulama amaçlarıyla kullanabilirsiniz.  
 
-Örneğin bağlı bir Mobile Threat Defense uygulaması, Mobile Threat Defense satıcısına ağınızdaki bir telefonun Bağlantıyı İzinsiz İzleme saldırılarına karşı korunmasız bir ağa bağlandığını bildirirse, bu bilgi paylaşılır ve uygun bir risk düzeyine (düşük/orta/yüksek) sınıflandırılır ve ardından cihaz ele geçirildiği sırada seçtiğiniz belirli kaynaklara erişimin kaldırılıp kaldırılmayacağını belirlemek için Intune’da yapılandırdığınız risk düzeyi izinleriyle karşılaştırılabilir.
+Örneğin: Bağlı bir Mobile Threat Defense uygulaması, Mobile Threat Defense satıcısına ağınızdaki bir telefon şu an için ortadaki adam saldırıları savunmasızdır bir ağa bağlı olduğundan emin bildirir. Bu bilgiler bir uygun bir risk düzeyine düşük, Orta veya yüksek kategorilere ayrılmıştır. Daha sonra bu risk düzeyi, Intune'da ayarladığınız risk düzeyi izinleri ile karşılaştırılır. Cihazın güvenliği aşıldığında sırada Bu karşılaştırmayı bağlı olarak, seçtiğiniz belirli kaynaklara erişimi iptal edilebilir.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune, Mobile Threat Defense için hangi verileri topluyor?
 

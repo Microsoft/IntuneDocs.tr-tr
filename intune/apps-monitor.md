@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 722ab086f0a353eff3ed4737fdd2a92f80bf46ce
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 91923f1569c3f74c0e06aad3b92a77b677488072
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833931"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086072"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -81,7 +81,7 @@ Menünün **İzleme** bölümünde **Cihaz yükleme durumu**’nu seçtiğinizde
 | **Cihaz adı**      | Cihazı adlandırmaya izin veren platformlarda cihazın adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik başka hiçbir cihazda kullanılamaz.                                                                       |
 | **Kullanıcı adı**        | Kullanıcının adı.                                                                                                                                                                                                                                      |
 | **Platform**         | Cihazın işletim sistemi (Windows, iOS, Android, vb.).                                                                                                                                                                                           |
-| **Sürüm**          | Uygulamanın sürüm numarası. İş kolu uygulamaları için, uygulamanın tam sürüm numarası gösterilir. Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800). |
+| **Sürüm**          | Uygulamanın sürüm numarası. İş kolu (LOB) uygulamaları için uygulamanın tam sürüm numarası gösterilir. Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800). Store uygulamaları için hiçbir sürümleri gösterilir. |
 | **Durumu**           | Uygulamanın durumu.                                                                                                                                                                                                                                     |
 | **Durum ayrıntıları**   | Durumun ayrıntıları.                                                                                                                                                                                                                                     |
 | **Son iade etme**    | Cihazın Intune ile son eşitlenme tarihi.                                                                                                                                                                                                                  |

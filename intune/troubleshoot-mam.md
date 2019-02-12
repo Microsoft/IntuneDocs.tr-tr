@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb79dcb2ff858d283fc5a843dca1b3d5acb3ec9c
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845644"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086157"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobil uygulama yönetimi sorunlarını giderme
 
@@ -35,9 +35,9 @@ Bunlar BT yöneticisi Intune uygulama koruma ilkelerini kullanırken karşılaş
 
 | Sorun | Açıklama | Çözüm |
 | -- | -- | -- |
-| İlke, Skype Kurumsal’a uygulanmamış | Azure portalında yapılan cihaz kaydı olmadan uygulama koruma ilkesi, iOS ve Android cihazlardaki Skype Kurumsal uygulaması için uygulanmıyor. | Skype Kurumsal’ın modern kimlik doğrulaması için ayarlanması gerekir.  Skype için modern kimlik doğrulamasını ayarlamak için lütfen [Modern kimlik doğrulaması için kiracınızı etkinleştirme](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) bölümündeki yönergeleri izleyin. |
+| İlke, Skype Kurumsal’a uygulanmamış | Azure portalında yapılan cihaz kaydı olmadan uygulama koruma ilkesi, iOS ve Android cihazlardaki Skype Kurumsal uygulaması için uygulanmıyor. | Skype Kurumsal’ın modern kimlik doğrulaması için ayarlanması gerekir.  Skype için modern kimlik doğrulamasını ayarlamak için lütfen [Modern kimlik doğrulaması için kiracınızı etkinleştirme](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) bölümündeki yönergeleri izleyin. |
 | Office uygulama ilkesi uygulanmamış | Uygulama koruma ilkeleri, tüm kullanıcılar için hiçbir [desteklenen Office Uygulamasına](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) uygulanmıyor. | Kullanıcının Intune lisansı olduğunu ve Office uygulamalarının dağıtılmış bir uygulama koruma ilkesi tarafından hedeflendiğini doğrulayın. Yeni dağıtılmış bir uygulama koruma ilkesinin uygulanması 8 saate kadar sürebilir. |
-| Yönetici, uygulama koruma ilkesini Azure portalında yapılandıramıyor | BT yöneticisi, uygulama koruma ilkelerini Azure Portalı’nda yapılandıramıyor. | Azure Portalı’na aşağıdaki kullanıcı rollerinin erişimi vardır: <ul><li>[Office Portalı](http://portal.office.com/)’nda ayarlayabileceğiniz genel yönetici</li><li>[Azure Portalı](https://portal.azure.com/)’nda ayarlayabileceğiniz sahip.</li><li>[Azure Portalı](https://portal.azure.com/)’nda ayarlayabileceğiniz katkıda bulunan.</li></ul> Başvurmak [Intune rol tabanlı yönetim denetimi (RBAC)](role-based-access-control.md) bu rolleri ayarlama konusunda yardım için.|
+| Yönetici, uygulama koruma ilkesini Azure portalında yapılandıramıyor | BT yöneticisi, uygulama koruma ilkelerini Azure Portalı’nda yapılandıramıyor. | Azure Portalı’na aşağıdaki kullanıcı rollerinin erişimi vardır: <ul><li>[Office Portalı](https://portal.office.com/)’nda ayarlayabileceğiniz genel yönetici</li><li>[Azure Portalı](https://portal.azure.com/)’nda ayarlayabileceğiniz sahip.</li><li>[Azure Portalı](https://portal.azure.com/)’nda ayarlayabileceğiniz katkıda bulunan.</li></ul> Başvurmak [Intune rol tabanlı yönetim denetimi (RBAC)](role-based-access-control.md) bu rolleri ayarlama konusunda yardım için.|
 |Uygulama koruma ilkesi raporlarında eksik kullanıcı hesapları var | Yönetim konsolu raporları, uygulama koruma ilkesinin en son dağıtıldığı kullanıcı hesaplarını göstermiyor. | Kullanıcı bir uygulama koruma ilkesiyle henüz hedeflenmişse, bu kullanıcının raporlarda hedeflenen kullanıcı olarak görünmesi 24 saate kadar sürebilir. |
 | İlke değişiklikleri çalışmıyor | Uygulama koruma ilkesinde yapılan değişikliklerin ve güncelleştirmelerin uygulanması 8 saate kadar sürebilir. | Mümkünse, son kullanıcı uygulama oturumunu kapatıp hizmetle eşitlemeyi zorlayarak tekrar oturum açabilir. |
 | Uygulama koruma ilkesi DEP ile çalışmıyor | Uygulama koruma ilkesi Apple DEP cihazlara uygulanmıyor. | Lütfen Kullanıcı Benzeşimi’ni Apple Aygıt Kayıt Programı (DEP) ile kullandığınızdan emin olun. Kullanıcı benzeşimi, DEP altında kullanıcı kimlik doğrulaması gerektiren her uygulama için gereklidir. <br><br>Başvurmak [otomatik olarak Apple aygıt kayıt programı ile iOS cihazlarını kaydetme](device-enrollment-program-enroll-ios.md) iOS DEP kaydı hakkında daha fazla bilgi için.|

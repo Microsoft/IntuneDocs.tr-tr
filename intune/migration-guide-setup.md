@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 318806664397e2bb690d4aa7605d8f088c769f4a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b5e075bdf834f70cf0c138942338963886662ae3
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847412"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086021"
 ---
 # <a name="basic-setup"></a>Temel kurulum
 
@@ -36,7 +36,7 @@ Intune, kimlik ve kullanıcı gruplama sağlayıcısı olarak Azure Active Direc
 
 -   [Dizin eşitleme gereksinimleri](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [Çok Faktörlü Kimlik Doğrulaması (MFA) gerekli mi?](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+-   [Çok faktörlü kimlik doğrulaması (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 -   [Kullanıcı ve cihaz gruplarınızı planlama](users-add.md)
 

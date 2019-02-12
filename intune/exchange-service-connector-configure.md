@@ -16,17 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a4e8a6baf1c2e958f4984e0182a28e4c221c419
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2706a12f9f4844f96d279f753e7cd99f159ca856
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851415"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986816"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune ve Exchange Online için Exchange hizmet bağlayıcısını yapılandırma
 Bu makale, Microsoft Intune hizmetini Exchange Online veya yeni Exchange Online Dedicated hizmetine nasıl bağlayacağınızı gösterir. Exchange Online Dedicated ortamınızın **yeni** veya **eski** sürüm mü olduğunu belirlemek için hesap yöneticinize başvurun.
 
 **Hizmetten Hizmete Bağlayıcı** ile hem Exchange ActiveSync’i (EAS) hem de Intune tarafından yönetilen cihazları tek bir yönetim konsolundan yönetebilirsiniz.  Exchange Online için Koşullu Erişimi etkinleştirmek için bağlayıcı gerekli değildir.
+
+Koşullu erişim bir dağıtımı planlarken, genellikle hangi kullanıcıların ve kullanıcı sayısı, yeni deneyimi sunacak anlamak önemlidir. Office 365 Yönetim Merkezi bu portal, etkinlik raporları özelliğinin bir parçası olarak Exchange Online bir e-posta uygulama kullanım raporu biçiminde sağlar. Bu raporlar, ortamınızdaki mobil e-posta benimseme önce ve sonra koşullu erişim dağıtımını anlamak için kullanılabilir.
 
 ## <a name="service-to-service-connector-requirements"></a>Hizmetten Hizmete Bağlayıcı gereksinimleri
 **Hizmetten Hizmete Bağlayıcı**, yalnızca Exchange Online veya Exchange Online Dedicated hizmetini destekler ve şirket içi altyapıyla ilgili bir gereksinimi yoktur. 

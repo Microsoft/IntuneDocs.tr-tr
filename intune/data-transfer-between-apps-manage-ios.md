@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eabe1bdba35c40b07c6c8e17e6a58d17ed14a966
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f87b40a32c17ecbdfc3fc9c5bf6937d8793b4e05
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843043"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986850"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 
@@ -50,11 +50,15 @@ Kullanıcı UPN ayarını yapılandırmak, Intune veya üçüncü taraf EMM çö
 
 2.  Uygulamaları ve yönetilen Intune veya aşağıdaki Genelleştirilen adımları kullanarak, üçüncü taraf MDM çözümünüz istediğiniz e-posta profilini dağıtın. Bu deneyimi de kapsamına giren *örnek 1*.
 
-3.  Uygulamayı şu uygulama yapılandırma ayarlarıyla dağıtın:
+3.  Yönetilen cihaz için uygulamayı şu uygulama yapılandırma ayarlarıyla dağıtın:
 
       **anahtar** = ıntunemamupn, **değeri** = <username@company.com>
 
       Örnek: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > Intune, uygulama yapılandırma ilkesi için kayıt türü "Yönetilen cihazlar" olması gerekir.
+       > Addicionally, uygulama ya da Intune şirket Portalı'ndan yüklediyseniz kullanılabilir veya ittiğinizden cihaza gerektiği gibi olarak ayarlanmış olması gerekir. 
 
 4.  Intune veya üçüncü taraf MDM sağlayıcınızı kullanarak kayıtlı cihazlara, **Birlikte açma yönetimi** ilkesini dağıtın.
 

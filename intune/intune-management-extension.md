@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 578d28a333d064ddcaa413bc882c9f2cdbf60ffc
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835138"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986884"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 cihazlar için Intune’da PowerShell betiklerini yönetme
 
@@ -47,7 +47,7 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 
 1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
 2. **Cihaz yapılandırması** > **PowerShell betikleri** > **Ekle**'yi seçin.
-3. PowerShell betiği için **Ad** ve **Açıklama** girin. **Betik konumu** için, PowerShell betiğine göz atın. Betik 200'den küçük olmalıdır KB (ASCII) veya boyut 100 KB (Unicode).
+3. PowerShell betiği için **Ad** ve **Açıklama** girin. **Betik konumu** için, PowerShell betiğine göz atın. Betik boyutu 200 KB'den büyük olmaması gerekir.
 4. **Yapılandır**’ı seçin. Ardından betiği cihazda (**Evet**) veya sistem bağlamında (**Hayır**) kullanıcının kimlik bilgileriyle çalıştırmayı seçin. Varsayılan olarak, betik sistem bağlamında çalıştırılır. Betiğin sistem bağlamında çalıştırılması gerekli değilse **Evet**’i seçin. 
   ![PowerShell betiği ekleme bölmesi](./media/mgmt-extension-add-script.png)
 5. Betiğin güvenilir bir yayımcı tarafından imzalanmış olup olmaması gerektiğini seçin (**Evet**). Varsayılan olarak, betiğin imzalanmasına yönelik bir gereksinim yoktur. 
