@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19994745a232a362d6bba0f09ed3934e492a17ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 605868af91e734a6bd1457a97e9089d69ba81718
+ms.sourcegitcommit: bc863efcf760ba35421d8566581e8768056485f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837263"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227905"
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2019"></a>Erken sürüm Microsoft Intune - Şubat 2019
 
@@ -53,6 +53,9 @@ Kayıtlı Windows 10 cihazı yeniden adlandırmak mümkün olacaktır (RS4 veya 
 
 ### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521-----"></a>SCEP sertifikaları için bir Kullanıcısız macOS cihaz atama    <!-- 2340521   -->
 Basit sertifika kayıt Protokolü (SCEP) sertifikaları için bir Kullanıcısız macOS cihaz atayın ve sertifika, Wi-Fi veya VPN profilleri ile ilişkilendirmek mümkün olacaktır. Bu zaten sahibiz için mevcut desteği genişletir [sertifikaları Windows, iOS ve Android çalıştıran kullanıcısı olmayan cihazlara atamak](certificates-scep-configure.md#create-a-scep-certificate-profile).
+
+### <a name="find-out-which-devices-support-esim----2432018---"></a>Esım hangi cihazların desteklediğini kullanıma Bul <!-- 2432018 -->
+Yeni bir da olacaktır **Esım Envanter** cihazlar için donanım sayfasındaki alan. Dosyalanmış görmek için **Intune** > **cihazları** > bir cihaz seçin > **donanım**.
 
 ### <a name="intune-conditional-access-ui-update------2432313----"></a>Intune koşullu erişim kullanıcı arabirimini güncelleştirme   <!-- 2432313  -->
 Intune konsolunda koşullu erişim için kullanıcı Arabirimi için geliştirmeler yapıyoruz. Bunlar:
