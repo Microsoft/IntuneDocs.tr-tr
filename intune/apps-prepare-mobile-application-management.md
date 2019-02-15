@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 63504acb19125a3971ea6ddc996b42ed8917b2d9
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834781"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302175"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -87,7 +87,6 @@ Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğini
 |Uygulamanın diğer uygulamalardan veri almasına izin ver|X|X|
 |Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla|X|X|
 |Erişim için basit PIN gerektir|X|X|
-|Intune PIN ile yerleşik uygulama PIN kodunu değiştir|X||
 |PIN sıfırlanmadan önceki deneme sayısını belirtin|X|X|
 |PIN yerine parmak izine izin ver|X|X|
 |PIN yerine yüz tanımaya izin ver (yalnızca iOS)|X|X|
@@ -98,8 +97,8 @@ Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğini
 |Çevrimdışı kullanım süresini belirtin|X|X|
 |Ekran yakalamayı engelle (yalnızca Android)|X|X|
 |Cihaz kaydı olmadan MAM desteği|X|X|
-|Tam Temizleme|X|X|
-|Seçmeli Silme <br><br>**Not:** İOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
+|Uygulama verilerinin tam temizleme|X|X|
+|Çok kimlikli senaryolarda iş ad Okul verilerini seçmeli temizleme işlemi <br><br>**Not:** İOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
 |“Farklı Kaydet”i önleme|X||
 |Hedeflenen Uygulama Yapılandırması|X||
 |Çoklu Kimlik Desteği|X||

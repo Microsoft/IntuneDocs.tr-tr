@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986884"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302192"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 cihazlar için Intune’da PowerShell betiklerini yönetme
 
@@ -31,9 +31,9 @@ Intune Yönetim Uzantısı Windows 10 cihazlarda çalıştırmak için ıntune'd
 
 Son kullanıcı işlemi dijital bir dönüşüm geçiriyor. Klasik, geleneksel BT tek bir cihaz platformu, şirkete ait cihazlar, ofisten çalışan kullanıcılar ve elle gerçekleştirilen çeşitli geriye dönük BT süreçlerine odaklanır. Modern çalışma alanına kullanıcı ve işletme sahibi olan birçok platformda kullanır, kullanıcıların her yerden çalışmasına olanak sağlar ve otomatik ve öngörülü BT süreçleri sunar.
 
-Microsoft Intune gibi MDM Hizmetleri, Windows 10 çalıştıran mobil ve Masaüstü cihazları yönetebilirsiniz. Yerleşik Windows 10 yönetim istemcisi kurumsal yönetim görevlerini çalıştırmak için Intune ile iletişim kurar. Gelişmiş cihaz yapılandırma, sorun giderme ve şu anda Windows 10 mdm'de desteklenmeyen değil eski Win32 uygulama yönetimi gibi gerekebilecek bazı görevler vardır. Bu özellikler için Intune yazılım istemcisi, Windows 10 cihazlarında çalıştırabilirsiniz. [Windows PC'leri bilgisayarlar veya mobil cihazlar olarak yönetmeyi karşılaştırma](pc-management-comparison.md) harika bir kaynaktır.
+Microsoft Intune gibi MDM Hizmetleri, Windows 10 çalıştıran mobil ve Masaüstü cihazları yönetebilirsiniz. Yerleşik Windows 10 yönetim istemcisi kurumsal yönetim görevlerini çalıştırmak için Intune ile iletişim kurar. Gelişmiş cihaz yapılandırma ve sorun giderme gibi gerekebilecek bazı görevler vardır. Win32 uygulama yönetimi için kullandığınız [Win32 Uygulama Yönetimi](apps-win32-app-management.md) Windows 10 cihazlarınızda özelliği.
 
-Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. Windows 10 cihazlarda çalışan PowerShell betikleri oluşturabilirsiniz. Örneğin, eski bir Win32 uygulaması yükleyen, betiği Intune'a yükler, betiği bir Azure Active Directory (AD) grubuna atar ve betiği çalıştıran bir PowerShell Betiği oluşturabilirsiniz. Ardından, başlangıçtan bitişe kadar betik çalıştırma durumunu izleyebilirsiniz.
+Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. Windows 10 cihazlarda çalışan PowerShell betikleri oluşturabilirsiniz. Örneğin, Gelişmiş cihaz yapılandırmaları, betiği Intune'a yükler, betiği bir Azure Active Directory (AD) grubuna atar ve betiği çalıştıran bir PowerShell Betiği oluşturabilirsiniz. Ardından, başlangıçtan bitişe kadar betik çalıştırma durumunu izleyebilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
