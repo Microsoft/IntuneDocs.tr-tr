@@ -65,6 +65,8 @@ items:
     href: common-scenarios.md
   - name: EMS ile KCG için teknoloji kararları
     href: byod-technology-decisions.md
+  - name: Uygulama koruma ilkeleri ve çalışma profilleri (Android)
+    href: android-deployment-scenarios-app-protection-work-profiles.md
   - name: İşletim sistemi sürümlerini yönetme
     href: manage-os-versions.md
   - name: Windows Holographic’i Yönetme
@@ -227,6 +229,45 @@ items:
       href: enrollment-report-company-portal-abandon.md
     - name: Cihaz kaydıyla ilgili sorunları giderme
       href: troubleshoot-device-enrollment-in-intune.md
+  - name: Aygıtları yönetin
+    href: device-management.md
+    items:
+    - name: Cihaz yönetimi özellikleri
+      href: device-management-capabilities.md
+    - name: Etkinleştirme kilidini atlama
+      href: device-activation-lock-bypass.md
+    - name: Windows Yeni Başlangıç’ı Yönetme
+      href: device-fresh-start.md
+    - name: Kayıp iOS cihazı bulma
+      href: device-locate.md
+    - name: iOS kayıp modunu etkinleştirme
+      href: device-lost-mode.md
+    - name: iOS denetimli modunu açma
+      href: device-supervised-mode.md
+    - name: Cihazı kilitleme
+      href: device-remote-lock.md
+    - name: Geçiş kodunu sıfırla
+      href: device-passcode-reset.md
+    - name: Cihazı yeniden başlatma
+      href: device-restart.md
+    - name: Geçerli kullanıcının oturumunu kapatma
+      href: device-logout-user.md
+    - name: Kullanıcıyı kaldır
+      href: device-remove-user.md
+    - name: Cihaz silme
+      href: device-erase.md
+    - name: Uzaktan denetimli mobil cihazlar
+      href: device-profile-android-teamviewer.md
+    - name: Windows 10 PIN sıfırlama
+      href: device-windows-pin-reset.md
+    - name: Exchange hizmeti bağlayıcısını yükleme
+      href: exchange-service-connector-configure.md
+    - name: Cihazı eşitleme
+      href: device-sync.md
+    - name: Cihaz envanterini inceleme
+      href: device-inventory.md
+    - name: Cihazları kaldırma
+      href: devices-wipe.md
   - name: Cihaz uyumluluğu ayarlama
     items:
     - name: Uyumluluğa genel bakış
@@ -957,9 +998,9 @@ items:
       href: data-outside-protect.md
     - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
       href: data-leak-prevention.md
-ms.openlocfilehash: ace0bec62318d846cdcc37330abb63b2a89fef14
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986918"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302209"
