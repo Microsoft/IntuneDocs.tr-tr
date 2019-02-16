@@ -13,13 +13,13 @@ items:
     - name: Uygulama kullanıcı arabirimindeki yenilikler
       href: whats-new-app-ui.md
   expanded: true
-- name: Hızlı girişler
+- name: Hızlı başlangıçlar
   items:
   - name: Intune'u ücretsiz olarak deneyin
     href: free-trial-sign-up.md
   - name: Bir kullanıcı oluşturun
     href: quickstart-create-user.md
-  - name: Grup oluşturma
+  - name: Bir grup oluşturun
     href: quickstart-create-group.md
   - name: Otomatik kayıt ayarlama
     href: quickstart-setup-auto-enrollment.md
@@ -173,7 +173,7 @@ items:
         href: corporate-identifiers-add.md
       - name: Çok faktörlü kimlik doğrulaması
         href: multi-factor-authentication.md
-      - name: Cihaz kayıt yöneticisi
+      - name: Cihaz kaydı yöneticisi
         href: device-enrollment-manager-enroll.md
       - name: Cihazları gruplarla eşleme
         href: device-group-mapping.md
@@ -372,7 +372,8 @@ items:
       - name: Şirket içi Exchange bağlayıcısını yükleme
         href: exchange-connector-install.md
       - name: Koşullu erişim ilkesi oluşturma ve atama
-        href: conditional-access-exchange-create.md
+      - name: Cihaz tabanlı koşullu erişim ilkesi
+        href: create-conditional-access-intune.md
       - name: Klasik Intune portalından koşullu erişim ilkelerini yeniden atama
         href: conditional-access-intune-reassign.md
       - name: Uygulamaya bağlı koşullu erişim
@@ -998,9 +999,9 @@ items:
       href: data-outside-protect.md
     - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
       href: data-leak-prevention.md
-ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 1183db94d839619e1130261345f6988a627938bb
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302209"
+ms.locfileid: "56307864"

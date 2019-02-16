@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/28/2019
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85b3aa513781026c5c79cdd41837f9ded945e574
-ms.sourcegitcommit: 2f431f122ce3ee6b5d0cdb04a0b748d00f83e295
+ms.openlocfilehash: 1802da8150c9729a2bed8ff82d39f7946b750e06
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265698"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325512"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -54,9 +54,6 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 | **Yerel kişiler uygulamasına uygulamayla eşitleme** | Seçin **devre dışı** uygulamanın cihazda yerel kişiler uygulamasına veri kaydetmesini engellemek için. Seçerseniz **etkinleştirme**, uygulama verileri cihaz üzerinde yerel kişiler uygulamasına kaydedebilirsiniz. <br><br>Uygulamadan iş veya okul verilerini kaldırmak için seçmeli silme gerçekleştirdiğinizde, yerel Kişiler uygulamasına doğrudan uygulamadan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca Microsoft Outlook uygulaması için geçerlidir. | **Etkinleştirme** |
 | **Organizasyon veri yazdırma** | Seçin **devre dışı** uygulamanın iş veya Okul verilerini yazdırmasını engellemek için. | **Etkinleştirme** |
 |**İlkeyle yönetilen tarayıcıyla Web içerik paylaşma** | İlkeyle yönetilen uygulamalarda web içeriklerinin (http/https bağlantılarının) nasıl açıldığını belirtin. Aşağıdakilerden birini seçin:<ul><li>**Gerekli**: Web içeriği yalnızca ilkeyle yönetilen tarayıcıda açmak izin verin.</li><li>**Yapılandırılmamış**: Bir uygulamanın Web bağlantılara izin ver </li></ul><br><br> Cihazlarınızı yönetmek için Intune kullanıyorsanız bkz. [Microsoft Intune'la Managed Browser ilkelerini kullanarak İnternet erişimini yönetme](app-configuration-managed-browser.md).<br><br>**İlkeyle yönetilen tarayıcılar**<br>İlkeyle yönetilen tarayıcılardan birden fazla dağıtırsanız, bunların yalnızca biri başlatılır.  Başlatma sırası, Intune Managed Browser ve ardından Microsoft Edge şeklindedir.  Android’de, Intune Managed Browser veya Microsoft Edge yüklü değilse son kullanıcılarınız http/https bağlantılarını destekleyen diğer ilkeyle yönetilen uygulamalardan birini seçebilir.<p>İlkeyle yönetilen bir tarayıcı gerekliyse ancak yüklü değilse, son kullanıcılarınızdan Intune Managed Browser’ı yüklemeleri istenir.<p>İlkeyle yönetilen bir tarayıcı gerekliyse Android Uygulama Bağlantıları, **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** ilke ayarı tarafından yönetilir.<p>**Intune cihaz kaydı**<br>Cihazlarınızı yönetmek için Intune kullanıyorsanız bkz. Microsoft Intune ile yönetilen tarayıcı ilkelerini kullanarak İnternet erişimini yönetme. <p>**İlkeyle yönetilen Microsoft Edge**<br>Mobil cihazlar (iOS ve Android) için Microsoft Edge tarayıcısı, Intune uygulama koruma ilkelerini destekliyor. Microsoft Edge tarayıcı uygulamasında şirket Azure AD hesaplarıyla oturum açan kullanıcılar, Intune tarafından korunur. Microsoft Edge tarayıcısı, MAM SDK’sını tümleştirir ve bu SDK’nın tüm veri koruma ilkelerini destekler ancak şu işlevleri engeller:<br><ul><li>**Kaydet-olarak**: Microsoft Edge tarayıcısı depolama sağlayıcıları (OneDrive gibi) buluta doğrudan, uygulama içi bağlantıları eklemek bir kullanıcı izin vermez.</li><li>**Kişi eşitleme**: Microsoft Edge tarayıcısı için yerel kişi listelerini kaydetmez.</li></ul><br>**Not:** *Uygulama SDK'sı, bir hedef uygulaması bir tarayıcı olup olmadığını belirleyemiyor. Android cihazlarda, http/https hedefini destekleyen diğer yönetilen tarayıcı uygulamalara izin verilir.* | **Yapılandırılmadı** |
-| **Üçüncü taraf klavyeler** | Seçin **devre dışı** üçüncü taraf klavyeler yönetilen uygulamalarda kullanılmasını önlemek için. <br><br>Bu ayar etkinleştirildiğinde kullanıcı, üçüncü taraf klavye kullanımının engellendiğini bildiren tek seferlik bir ileti alır. Bu ileti, kullanıcı klavye kullanımı gerektiren kuruluş verileriyle ilk kez etkileşime geçtiğinde görüntülenir. Yönetilen uygulamaları kullanırken yalnızca standart klavye kullanılabilir ve tüm klavye seçenekler devre dışı bırakıldı. Bu ayar, yönetilmeyen uygulamalarda üçüncü taraf klavye kullanımını etkilemez. | **Etkinleştirme** |
-
-
 
   ## <a name="data-transfer-exemptions"></a>Veri aktarımı muafiyetleri
 

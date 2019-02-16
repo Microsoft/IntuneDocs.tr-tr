@@ -32,6 +32,9 @@ Otomatik kayıt, kullanıcıların Windows 10 cihazlarını Intune’a kaydetmes
       >
       > Her iki kapsam etkinleştirilip etkinleştirilmediğini şirket cihazları için MDM kullanıcı kapsamı öncelik kazanır. MDM kayıtlı cihazlara alın.
 
+   > [!NOTE]
+   > MAM kullanıcı kapsamı, bir kullanıcı grubu veya toplama ayarlamanız gerekir.
+
    ![Azure portalının ekran görüntüsü](../media/auto-enroll-scope.png)
 
 5. Aşağıdaki URL'ler için varsayılan değerleri kullanın:

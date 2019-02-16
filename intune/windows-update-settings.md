@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/12/2019
+ms.date: 02/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fcb0c4e44b427b57b065684fe1e57234bbde054
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986961"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325478"
 ---
 # <a name="windows-update-settings-for-intune"></a>Windows Intune için ayarları güncelleştir  
 
@@ -48,6 +48,12 @@ Desteklenen güncelleştirme kanalları:
 - Windows Insider Yayımlama  
 
 Insider kanal'ı seçerseniz, Intune ayarı Windows update otomatik olarak yapılandırır. [güncelleştirme/ManagePreviewBuilds](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds) böylece Insider derlemesi çalışır.  
+
+
+> [!IMPORTANT]  
+> Windows ile sürüm 1903, kullanımını başlayarak *yarı yıllık kanal (hedefli)* (SAC-T) devre dışı bırakılan. Bu değişiklik, SAC-T ile birleştirir. *yarı yıllık kanal*. Bu değişiklik ve iş için Windows Update nasıl etkilediği hakkında daha fazla bilgi için Windows BT Pro Blog gönderisine bakın [SAC-T devre dışı bırakılması ve iş için Windows Update](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
+ 
+
 
 ### <a name="microsoft-product-updates"></a>Microsoft ürün güncelleştirmeleri  
 

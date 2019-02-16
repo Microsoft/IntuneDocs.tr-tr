@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5afb23fd571b03e4fde97cb7800c399819d4cc8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849852"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307898"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -138,6 +138,10 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 - **Ink çalışma alanı**: Kullanıcıların Ink çalışma alanına erişmesini engelleyin. **Yapılandırılmamış** açar Ink çalışma alanına ve kullanıcının kilit ekranının üstünde kullanmasına izin verilir.
 - **Otomatik yeniden dağıtım**: Tüm kullanıcı verilerini ve ayarlarını kullanarak yönetim haklarına sahip kullanıcılara **CTRL + Win + R** cihaz kilit ekranında. Cihaz otomatik olarak yeniden yapılandırılacak ve yönetime yeniden kaydedilir.
 - **Kullanıcıların (yalnızca Windows Insider) cihaz kurulumu sırasında ağa bağlanmasını gerektiren**: Seçin **gerektiren** cihaz Windows 10 kurulumu sırasında geçmiş ağ sayfasına devam etmeden önce bir ağa bağlanacak şekilde. Bu özellik önizlemedeyken bu ayarı kullanmak için Windows Insider derleme 1809 veya sonrası gerekir.
+- **Doğrudan bellek erişimi**: **Blok** Windows kullanıcının oturum açtığı kadar sık erişimli takılabilir PCI aşağı akış için tüm bağlantı doğrudan bellek erişimi (DMA) engeller. **Etkin** (varsayılan), hatta bir kullanıcı oturum açmadı olduğunda DMA, erişim sağlar.
+
+  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **Son işlem Görev Yöneticisi'nden**: Bu ayar, yönetici olmayanların son görevler için Görev Yöneticisi'ni kullanıp kullanamayacağını belirler. **Blok** Görev Yöneticisi'ni kullanarak bir işlem veya cihazdaki görev sona erdirmek için standart kullanıcılar (Yönetici olmayanlar) engeller. **Yapılandırılmamış** (varsayılan), Görev Yöneticisi'ni kullanarak görev ya da bir işlemi sonlandırmak standart kullanıcılar izin verir.
 
 ## <a name="kiosk-preview---obsolete"></a>Bilgi noktası (Önizleme) - Eski

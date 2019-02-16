@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63504acb19125a3971ea6ddc996b42ed8917b2d9
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302175"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325444"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -98,7 +98,7 @@ Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğini
 |Ekran yakalamayı engelle (yalnızca Android)|X|X|
 |Cihaz kaydı olmadan MAM desteği|X|X|
 |Uygulama verilerinin tam temizleme|X|X|
-|Çok kimlikli senaryolarda iş ad Okul verilerini seçmeli temizleme işlemi <br><br>**Not:** İOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
+|Çok kimlikli senaryolarda iş ve Okul verilerini seçmeli temizleme işlemi <br><br>**Not:** İOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
 |“Farklı Kaydet”i önleme|X||
 |Hedeflenen Uygulama Yapılandırması|X||
 |Çoklu Kimlik Desteği|X||
