@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: chrisbal
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34bad76c3b6ff00b42eac70bcd870ef4d59ab017
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
+ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839986"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426935"
 ---
-# <a name="you-need-to-enable-code-integrity"></a>Kod Bütünlüğünü etkinleştirmeniz gerekiyor
+# <a name="enable-code-integrity"></a>Kod bütünlüğünü etkinleştirmeniz
 
-Kuruluş bilgilerinizi kayıt altında tutma, farklı türde sorunları önlemek için farklı güvenlik türleri gerektirir. Ayrıntılı düzeyde programların (sürücüler) ve sistem dosyalarının değiştirilmesini engelleyen Windows Kod Bütünlüğü kullanmak güvenliği sağlama yollarından biridir.
+Kuruluşunuz adlı bir tehdit Koruması özelliği ile etkinleştirilmesi için Bilgisayarınızda gerektirebilir *kod bütünlüğü*. Kod bütünlüğü sürücüleri ve Cihazınızda işaretleri bozulma veya kötü amaçlı yazılım için sistem dosyalarını denetler. Kod bütünlüğü Cihazınızda çalışmak başka bir güvenlik özelliği olarak adlandırılan [ *Güvenli Önyükleme* ](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) etkinleştirilmiş olması da gerekir. 
 
-Sisteminizde Güvenli Önyükleme etkin bir şekilde kullanılıyorsa Kod Bütünlüğü otomatik olarak etkinleştirilir.
+Kod bütünlüğü devre dışı bırakıldığından bilgisayarınıza uyumlu değilse, kuruluşunuzun başvurmalısınız BT destek. Bunlar cihaz kurulumu yeniden başlattığınızda kod bütünlüğü tetikleyecek güvenli önyüklemeyi etkinleştirmeniz yardımcı olacağız. 
 
-> [!Tip]
-> Güvenli Önyükleme özelliğinin etkinleştirilmesi gelişmiş bir görevdir. Bu görevle ilgili yardım almak için şirketinizin destek birimine başvurmanızı öneririz.
+Kendiniz bir Gelişmiş cihaz kullanıcısı olarak tanımlamak ve adımları kendiniz denemek istiyorsanız bkz [güvenli önyüklemeyi yeniden etkinleştirmek](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-Devam etme konusunda kendinize güveniyorsanız [Güvenli Önyüklemeyi Devre Dışı Bırakma](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) sayfasındaki “Güvenli Önyüklemeyi yeniden etkinleştirmek için” bölümüne bakarak Güvenli Önyüklemeyi kendi başınıza etkinleştirmeyi deneyebilirsiniz.
+## <a name="additional-resources-for-it-administrators"></a>BT yöneticileri için ek kaynaklar  
+Bir Intune Yöneticisi ve Intune'un cihaz durumu uyumluluk ayarları hakkında daha fazla bilgi edinmek istiyorsanız, bkz: [Intune'da Windows 10 cihazları için cihaz uyumluluk ilkesi ekleme](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings). Intune'da gerçekleştirebileceğiniz uyumluluk eylemleri ayrıntılı bilgi için bkz: [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
+## <a name="next-steps"></a>Sonraki adımlar  
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -1,7 +1,7 @@
 ---
 title: Kurulum için ayrılmış Android kuruluş cihazlarının Intune kaydı
 titlesuffix: Microsoft Intune
-description: Intune'da Android Kurumsal ayrılmış cihazları kaydetmeyi öğrenin.
+description: Intune'da Android özel Kurumsal cihazları kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e71ae4add82482bf0bfbde25adac69c51570966
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b670b9b36ee2073fe765ab05fdbec59dfa6fa5e
+ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834050"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426952"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Ayrılmış Android kuruluş cihazlarının Intune kaydını ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android cihazlar çözüm kendine şirkete, tek kullanımlık bilgi noktası stili cihazları destekler. Bu tür cihazlar tek bir amaca hizmet eder; örneğin dijital işaretler, bilet yazdırma veya envanter yönetimi gibi. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
+Android Kurumsal adanmış cihazlar çözüm kendine ait, tek kullanımlık bilgi noktası stili cihazları destekler. Bu tür cihazlar tek bir amaca hizmet eder; örneğin dijital işaretler, bilet yazdırma veya envanter yönetimi gibi. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
 
-Intune uygulama ve ayarları adanmış Android cihazlara dağıtmanıza yardımcı olur. Android kurumsal hakkında belirli ayrıntıları öğrenmek için bkz. [Android kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune uygulama ve ayarları Android ayrılmış Kurumsal cihazlara dağıtmanıza yardımcı olur. Belirli Android Enterprise hakkında bilgi için [Android Kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Bu şekilde yönettiğiniz cihazlar, bir kullanıcı hesabı olmadan Intune’a kaydolur ve hiçbir son kullanıcı ile ilişkili değildir. Bu cihazlar, kullanıcıya özgü hesap verileri konusunda katı gereksinimleri olan Outlook veya Gmail gibi kişisel kullanım uygulamalarına uygun değildir.
 
@@ -41,12 +41,12 @@ Cihazlar, Android Kurumsal adanmış cihaz yönetilmesini şu gereksinimleri kar
 - Android işletim sistemi sürüm 5.1 ve üzeri.
 - Cihazlar Android’in Google Mobile Services (GMS) bağlantısı olan bir dağıtımını çalıştırmalıdır. Cihazlarda GMS kullanılabilir olmalı ve cihazlar GMS’ye bağlanabilmelidir.
 
-## <a name="set-up-android-dedicated-device-management"></a>Android özel cihaz yönetimini ayarlama
+## <a name="set-up-android-enterprise-dedicated-device-management"></a>Ayrılmış Android Kurumsal cihaz yönetimini ayarlama
 
-Android özel cihaz yönetimini ayarlamak için aşağıdaki adımları izleyin:
+Ayrılmış Android Kurumsal cihaz Yönetimi ayarlamak için bu adımları izleyin:
 
 1. Mobil cihazların yönetimine hazırlık olarak, yönergeler için [**Microsoft Intune**’a mobil cihaz yönetimi (MDM) yetkilisi ayarlamanız](mdm-authority-set.md) gerekir. Bu öğeyi yalnızca mobil cihaz yönetimi için Intune’u ilk defa kurduğunuzda ayarlarsınız.
-2. [Intune kiracı hesabınızı Android kurumsal hesabınıza bağlayın](connect-intune-android-enterprise.md).
+2. [Intune Kiracı hesabınız için yönetilen Google Play hesabınızı bağlayın](connect-intune-android-enterprise.md).
 3. [Bir kayıt profili oluşturun.](#create-an-enrollment-profile)
 4. [Bir cihaz grubu oluşturun](#create-a-device-group).
 5. [Ayrılmış cihazları kaydetme](#enroll-the-dedicated-devices).
@@ -55,7 +55,7 @@ Android özel cihaz yönetimini ayarlamak için aşağıdaki adımları izleyin:
 
 Böylece adanmış cihazları kaydedebilmeniz için bir kayıt profili oluşturmanız gerekir. Profil oluşturulduktan sonra size bir kayıt belirteci (rastgele dize) ve QR kodu sağlar. Android işletim sistemi ve sürümü cihazın bağlı olarak, belirteç veya QR kodunu kullanabilirsiniz [adanmış cihaz kaydı](#enroll-the-dedicated-devices).
 
-1. [Intune portalı](https://portal.azure.com)’na gidip **Cihaz kaydı** > **Android kaydı** > **Bilgi noktası ve görev cihazı kayıtları**’nı seçin.
+1. Git [Intune portalı](https://portal.azure.com) ve **cihaz kaydı** > **Android kaydını** > **şirketin sahip olduğu adanmış cihazları**.
 2. **Oluştur**’u seçin ve gerekli alanları doldurun.
     - **Ad**: Dinamik cihaz grubuna profili atamasını yaparken kullanacağınız bir ad yazın.
     - **Belirteç sona erme tarihi**: Belirtecin süresinin sona erdiği tarih. Google, en fazla 90 günü kabul eder.
@@ -90,7 +90,7 @@ Belirteçleri veya QR kodlarını yenisiyle değiştirebilir ya da kaldırabilir
 
 Bir belirteci/QR kodunu değiştirmek veya iptal etmek, önceden kaydedilmiş cihazları etkilemez.
 
-1. [Intune portalı](https://portal.azure.com)’na gidip **Cihaz kaydı** > **Android kaydı** > **Bilgi noktası ve görev cihazı kayıtları**’nı seçin.
+1. Git [Intune portalı](https://portal.azure.com) ve **cihaz kaydı** > **Android kaydını** > **Corporate sahip olduğu adanmış cihazları**.
 2. Çalışmak istediğiniz profili seçin.
 3. **Belirteç**’i seçin.
 4. Belirteci değiştirmek için **Belirteci değiştir**’i seçin.
@@ -100,13 +100,13 @@ Bir belirteci/QR kodunu değiştirmek veya iptal etmek, önceden kaydedilmiş ci
 
 Artık [ayrılmış cihazları kaydetme](android-dedicated-devices-fully-managed-enroll.md).
 
-## <a name="managing-apps-on-android-dedicated-devices"></a>Adanmış Android cihazlarında uygulamaları yönetme
+## <a name="managing-apps-on-android-enterprise-dedicated-devices"></a>Android ayrılmış Kurumsal cihazlarda uygulamaları yönetme
 
-Atama türü olan uygulamaları [ayarlamak için gerekli](apps-deploy.md#assign-an-app) adanmış Android cihazlarda yüklenebilir. Uygulamalar, Android iş profili cihazlarında olduğu gibi yönetilen Google Play mağazasından yüklenir.
+Atama türü olan uygulamaları [ayarlamak için gerekli](apps-deploy.md#assign-an-app) Android ayrılmış Kurumsal cihazlarda yüklenebilir. Yüklü uygulamalar aynı şekilde Android Kurumsal olarak yönetilen Google Play Mağazası'ndan profili cihazları çalışma.
 
 Yönetilen cihazlarda uygulamalar, uygulama geliştiricisi Google Play’e bir güncelleştirme yayımladığında otomatik olarak güncelleştirilir.
 
-Adanmış Android cihazlardan bir uygulamayı kaldırmak için aşağıdakilerden birini yapabilirsiniz:
+Android ayrılmış Kurumsal cihazlardan bir uygulamayı kaldırmak için aşağıdakilerden birini yapabilirsiniz:
 -   Gerekli uygulama dağıtımını silin.
 -   Uygulama için bir kaldırma dağıtımı oluşturun.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d346d7f060b5e997577b09c3ee8b006843ab7b
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 65370710f409d028871695de22829f64e82bf54e
+ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302243"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426986"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,8 +31,6 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 
 > [!Note]
 > Bazı özelliklerin piyasaya çıkması birkaç haftayı bulabilir ve tüm özellikler ilk hafta bütün müşterilerimize sunulmamış olabilir.
->
-> Karma mobil cihaz yönetimindeki (MDM) yeni işlevler hakkında bilgi için, [karma Yenilikler sayfasını](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management) gözden geçirin.
 
 **RSS akışı**: Bu sayfa aşağıdaki URL'yi kullanarak akış okuyucuya yapıştırarak güncelleştirildiğinde bildirim alın: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -46,6 +44,18 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-february-19-2019"></a>19 Şubat 2019 haftası
+
+#### <a name="macos-users-are-prompted-to-update-their-password----1873216---"></a>macOS kullanıcılarını parolasını güncelleştirmesi istenir <!-- 1873216 -->
+
+Intune zorlama **ChangeAtNextAuth** macOS cihazlarında ayarlama. Bu ayar, son kullanıcılar ve cihazlar uyumluluk parola ilkeleri veya cihaz kısıtlama parola profilleri etkiler. Son kullanıcılara parolalarını güncelleştirmek için bir kez istenir. Her bir kullanıcı için cihaz oturum açma gibi kimlik doğrulaması gerektiren bir görev ilk çalıştırıldığında bu istem oluşur. Kullanıcılar ayrıca herhangi bir şey yapmak isteyen Anahtarlık erişimi gibi yönetim ayrıcalıklarını gerektirdiğinde parolasını güncelleştirmesi istenecek. 
+
+Yeni veya var olan bir parola ilke değişikliklerinin yönetici tarafından son kullanıcıların parolalarını yeniden güncelleştirmeyi ister.
+
+Uygulama hedefi:  
+Mac OS
+
 ## <a name="week-of-february-4-2019"></a>4 Şubat 2019 haftası
 
 ### <a name="app-management"></a>Uygulama yönetimi

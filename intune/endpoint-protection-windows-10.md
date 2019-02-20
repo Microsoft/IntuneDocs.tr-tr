@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f87c2fa5fcb7e76fa8d398018e87ec0b15c05e9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4ccdb8c40c87bc4f5e778bc1cb7a6966f8a0ad70
+ms.sourcegitcommit: 33bacf9d5db336e73d8c88fa15f6535ae92b4b00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843400"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56418527"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
 
@@ -215,11 +215,11 @@ Aşağıdaki Windows 10 sürümlerinde desteklenir:
   - **Kurtarma parolasının kullanıcı tarafından oluşturulması**: Kullanıcıların izin verilip, gerekli veya 48 basamaklı kurtarma parolası oluşturmalarına izin verilip verilmeyeceğini olup olmadığını yapılandırın.  
   - **Kullanıcının kurtarma anahtarı oluşturması**: Kullanıcıların izin verilip, gerekli veya 256 bitlik kurtarma anahtarı oluşturmalarına izin verilip verilmeyeceğini olup olmadığını yapılandırın.
   - **BitLocker kurulum sihirbazında kurtarma seçeneklerini**: Kümesine **blok** böylece kullanıcılar görebilir ve kurtarma seçeneklerini değiştirin. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcılar BitLocker’ı açtığında kurtarma seçeneklerini göremez ve değiştiremez.
-  - **BitLocker kurtarma bilgilerinin AD DS'ye Kaydet**: Seçin **etkinleştirme** BitLocker kurtarma bilgilerinin Azure Active Directory (Azure AD) depolamak için. Zaman **yapılandırılmadı** (varsayılan), Kurtarma bilgilerini Azure AD'de depolanan değil.
-  - **BitLocker kurtarma bilgilerinin AD DS'ye**: Azure AD'de depolanan BitLocker kurtarma bilgilerinin hangi bölümlerinin yapılandırın. Seçenekleriniz şunlardır:
+  - **BitLocker kurtarma bilgilerinin Azure Active Directory'ye kaydetme**: Seçin **etkinleştirme** BitLocker kurtarma bilgilerinin Azure Active Directory (Azure AD) depolamak için. Zaman **yapılandırılmadı** (varsayılan), Kurtarma bilgilerini Azure AD'de depolanan değil.
+  - **Azure Active Directory'ye depolanan BitLocker kurtarma bilgileri**: Azure AD'de depolanan BitLocker kurtarma bilgilerinin hangi bölümlerinin yapılandırın. Seçenekleriniz şunlardır:
     - **Yedekleme kurtarma parolaları ve anahtar paketleri**
     - **Yalnızca yedekleme kurtarma parolaları**
-  - **Store kurtarma bilgilerini AD DS'de BitLocker'ı etkinleştirmeden önce**: **Gerekli** BitLocker kurtarma bilgilerinin Azure AD'de depolanan başarıyla sürece kullanıcıların BitLocker'ı açmasını engellemek için bu ayarı. **Yapılandırılmamış** kurtarma bilgilerinin Azure AD'de başarıyla depolanmadı bile kullanıcıların BitLocker'ı Aç (varsayılan) sağlar.
+  - **Store kurtarma bilgilerinin Azure Active Directory'de BitLocker'ı etkinleştirmeden önce**: **Gerekli** BitLocker kurtarma bilgilerinin Azure AD'de depolanan başarıyla sürece kullanıcıların BitLocker'ı açmasını engellemek için bu ayarı. **Yapılandırılmamış** kurtarma bilgilerinin Azure AD'de başarıyla depolanmadı bile kullanıcıların BitLocker'ı Aç (varsayılan) sağlar.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>BitLocker çıkarılabilir veri sürücüsü ayarları
 
