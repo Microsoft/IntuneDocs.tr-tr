@@ -1,7 +1,7 @@
 ---
-title: Android iş profili cihazlarını Intune’a kaydetme
+title: Android kurumsal iş profili cihazları ıntune'a kaydetme
 titlesuffix: Microsoft Intune
-description: Android iş profili cihazlarını Intune’a nasıl kaydedeceğinizi öğrenin.
+description: Intune'da Android kurumsal iş profili cihazları kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,46 +17,46 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f39e9b5f8ecd49ba84f4e9614e2a63a6cfbfef7a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6522c3572db715e21b85050cd0c82b4cfb9b9deb
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837946"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458782"
 ---
-# <a name="set-up-enrollment-of-android-work-profile-devices"></a>Android iş profili cihazların kaydını ayarlama
+# <a name="set-up-enrollment-of-android-enterprise-work-profile-devices"></a>Android kurumsal iş profili cihazların kaydını ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune, iş bilgileriyle kişisel bilgilerin ayrı olmasını sağlamak için Android iş profili cihazlarına uygulamalar ve ayarlar dağıtmanıza yardımcı olur. Android kurumsal hakkında belirli ayrıntıları öğrenmek için bkz. [Android kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune, iş ve kişisel bilgilerin ayrı olduğundan emin olmak için Android kurumsal iş profili cihazları için uygulama ve ayarları dağıtmanıza yardımcı olur. Belirli Android Enterprise hakkında bilgi için [Android Kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
-Android iş profili yönetimini ayarlamak için aşağıdaki adımları izleyin:
+Android kurumsal iş profilinin yönetimini ayarlamak için aşağıdaki adımları izleyin:
 
-1. [Intune kiracı hesabınızı Android kurumsal hesabınıza bağlayın](connect-intune-android-enterprise.md).
-2. Android iş profili kayıt ayarlarını belirtin. Android iş profilleri, [yalnızca belirli Android cihazlarda desteklenmektedir](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Android iş profili destekleyen tüm cihazlar geleneksel Android yönetimini de destekler. Intune, Android iş profilini destekleyen cihazların [Kayıt Kısıtlamaları](enrollment-restrictions-set.md) içerisinde nasıl yönetileceğini belirtmenize olanak sağlar.
-    - **Engelle (varsayılan ayar)**:  Android iş profillerini destekleyen cihazlar da dahil olmak üzere tüm Android cihazlar geleneksel Android cihaz olarak kaydedilir.
-    - **İzin**: Android iş profillerini destekleyen tüm cihazlar Android iş profili cihazları kaydedilir. Android iş profilini desteklemeyen herhangi bir Android cihaz, geleneksel Android cihaz olarak kaydedilir.
+1. [Android Enterprise hesabınızı Intune Kiracı hesabınızı bağlayın](connect-intune-android-enterprise.md).
+2. Android kurumsal iş profili kayıt ayarlarını belirtin. Android kurumsal iş profilleri olan [yalnızca belirli Android cihazlarda desteklenen](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Android Enterprise çalışma profillerini destekleyen tüm cihazlar geleneksel Android yönetimini de destekler. Intune, Android Enterprise çalışma profillerini destekleyen cihazlar içinden nasıl yönetileceğinizi belirtmenize olanak tanır [kayıt kısıtlamaları](enrollment-restrictions-set.md).
+    - **Engelle (varsayılan ayar)**:  Android Enterprise çalışma profillerini destekleyen cihazlar da dahil olmak üzere tüm Android cihazlar geleneksel Android cihaz olarak kaydedilir.
+    - **İzin**: Android iş profilleri Android Kurumsal kaydedilen Kurumsal destekleyen tüm cihazlar profili cihazları çalışır. Android kurumsal iş profilleri desteklemeyen herhangi bir Android cihaz, geleneksel Android cihaz olarak kaydedilir.
 3. [Kullanıcılarınıza cihazlarını nasıl kaydedeceklerini anlatın](/intune-user-help/enroll-your-device-in-intune-android).
 
 
-Android iş profiline cihaz kaydetmek istiyorsanız ancak bu cihazlar zaten normal Android cihazlar olarak kayıtlıysa, cihazları kaldırıp yeniden kaydetmeniz gerekir.
+Android kurumsal iş profilleri kullanarak cihazları kaydetme istediğiniz, ancak bu cihazlar zaten normal Android cihazlar olarak kaydedilen cihazları ilk kaydını ve yeniden kaydetmeniz gerekir.
 
-Android iş profili cihazlarını bir [Cihaz Kayıt Yöneticisi](device-enrollment-manager-enroll.md) hesabı kullanarak kaydediyorsanız, hesap başına en fazla 10 cihaz kaydedebilirsiniz.
+Kullanarak Android kurumsal iş profili cihazları kaydetmenin, bir [cihaz kayıt Yöneticisi](device-enrollment-manager-enroll.md) hesabı, hesap başına kayıtlı 10 cihaz sınırı yoktur.
 
 Daha fazla bilgi için bkz. [Intune’un Google’a gönderdiği veriler](data-intune-sends-to-google.md).
 
-## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Yönetilen Google Play Store'da Şirket Portalı uygulamasını onaylama
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Yönetilen Google Play Store'da Şirket portalı uygulamasını onaylama
 
-Kullanıcıların her zaman en güncel Şirket Portalı uygulamasına sahip olduklarından emin olmak için yönetilen Google Play mağazasında Android için Şirket Portalı uygulamasını onaylamanız gerekir. Bunu onaylayarak tüm kullanıcıların otomatik güncelleştirmeler almasını sağlarsınız. Onaylamazsanız, Şirket Portalı zamanla güncelliğini yitirir ve Microsoft'un kullanıma sunduğu önemli hata düzeltmelerini veya yeni özellikleri alamaz.
+Kullanıcıların her zaman erişim için Şirket portalı uygulamasının en güncel sürümüne sahip olmasını sağlamak için yönetilen Google Play Store'da, Android için Şirket portalı uygulamasını onaylamanız gerekir. Bunu onaylayarak tüm kullanıcıların otomatik güncelleştirmeler almasını sağlarsınız. Onaylamazsanız, Şirket Portalı zamanla güncelliğini yitirir ve Microsoft'un kullanıma sunduğu önemli hata düzeltmelerini veya yeni özellikleri alamaz.
 
 Intune Şirket Portalı'nı onaylamak için aşağıdaki adımları izleyin:
 
-1.  [Yönetilen Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)’da Şirket Portalı uygulamasına göz atın.
-2.  Yönetilen Google Play mağazasında, Android kurumsal bağlamasını yapılandırırken kullandığınız Google hesabıyla oturum açın.
+1.  Şirket portalı uygulamasına göz atın [yönetilen Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+2.  Yönetilen Google Play store Android Kurumsal yapılandırmak için kullandığınız aynı Google hesabı ile oturum açın.
 3.  **Onayla**’ya tıkladığınızda yeni bir iletişim kutusu açılır.
 4.  Bu iletişim kutusunda izinleri gözden geçirin ve ardından **Onayla**'ya tıklayın. Şirket Portalı uygulamasının cihazdaki iş profilini yönetmesine olanak tanımak için bu izinlerin verilmesi gerekir.
 5.  **Uygulama yeni izinler istediğinde onaylı durumda tut** öğesini seçin ve **Kaydet**'e tıklayın.
 
-## <a name="next-steps-for-android-work-profiles"></a>Android iş profilleri için sonraki adımlar
-- [Android iş profili uygulamalarını dağıtma](apps-add-android-for-work.md)
-- [Android iş profili yapılandırma ilkeleri ekleme](device-profiles.md)
+## <a name="next-steps-for-android-enterprise-work-profiles"></a>İş profilleri Android Enterprise için sonraki adımlar
+- [Android kurumsal iş profili uygulamaları dağıtma](apps-add-android-for-work.md)
+- [Android kurumsal iş profili yapılandırma ilkeleri ekleme](device-profiles.md)

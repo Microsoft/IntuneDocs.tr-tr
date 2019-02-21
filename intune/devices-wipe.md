@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6d3a7ea65a560ff317bfe9ff2374c6c9cd2e5f4b
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846834"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458867"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -82,7 +82,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 
 |Veri türü|iOS|
 |-------------|-------|
-|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket portalını kullanarak yüklenen uygulamalar:** Yönetim profili, tüm uygulama verileri ve uygulamaları sabitlenmiş Forr uygulamalar kaldırılır. Bu uygulamaları App Store ' başlangıçta yüklenen ve daha sonra şirket uygulamalarını yönetilen uygulamaları içerir. <br /><br /> **Mobil Uygulama Yönetimi'ni kullanın ve App Store ' yüklenen Microsoft uygulamaları:** Şirket portalı tarafından yönetilmeyen uygulamaları için uygulama yerel depolama içinde mobil uygulama yönetimi (MAM) şifrelemesi ile korunan şirket uygulama verilerini kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz. Kişisel uygulama verilerinin ve uygulamaları kaldırılmaz.|
+|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket portalını kullanarak yüklenen uygulamalar:** Tüm uygulama verileri ve uygulamaları için yönetim profili sabitlenmiş uygulamalar kaldırılır. Bu uygulamaları App Store ' başlangıçta yüklenen ve daha sonra şirket uygulamalarını yönetilen uygulamaları içerir. <br /><br /> **Mobil Uygulama Yönetimi'ni kullanın ve App Store ' yüklenen Microsoft uygulamaları:** Şirket portalı tarafından yönetilmeyen uygulamaları için uygulama yerel depolama içinde mobil uygulama yönetimi (MAM) şifrelemesi ile korunan şirket uygulama verilerini kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz. Kişisel uygulama verilerinin ve uygulamaları kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|
@@ -130,7 +130,7 @@ Yalnızca bilgi noktası cihazlarını silebilirsiniz. Android bilgi noktası ci
 
 |Veri türü|Windows 8.1 (MDM) ve Windows RT 8.1|Windows RT|Windows Phone 8.1 ve Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|EFS tarafından korunan dosyalar için anahtarlar iptal edilir. Kullanıcı dosyaları açamaz.|Şirket uygulamaları kaldırılmaz.|Başlangıçta Şirket Portalı üzerinden yüklenen uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.|Uygulamalar kaldırılır. Dışarıdan yükleme anahtarları kaldırılır.<br>Windows 10 sürüm 1703 (Creators Update) ve üzerinde Office 365 ProPlus uygulamaları kaldırılmaz.|
+|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|EFS tarafından korunan dosyalar için anahtarlar iptal edilir. Kullanıcı dosyaları açamaz.|Şirket uygulamaları kaldırılmaz.|Başlangıçta Şirket Portalı üzerinden yüklenen uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.|Uygulamalar kaldırılır. Dışarıdan yükleme anahtarları kaldırılır.<br>Windows 10 sürüm 1703 (Creators Update) ve üzerinde Office 365 ProPlus uygulamaları kaldırılmaz. Intune yönetim uzantısı Win32 uygulamaları kaldırılmaz kayıtlı olmayan cihazlarda yüklü.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|Desteklenmiyor.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|Sertifikalar kaldırılır ve iptal edilir.|Desteklenmiyor.|Sertifikalar kaldırılır ve iptal edilir.|

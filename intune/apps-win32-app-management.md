@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a2abee2e926605a4d7d35baa53f6259ef77db3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 02505cc21865308ef9ea4dbbabe95fc65ea87b58
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840255"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458884"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -39,6 +39,9 @@ Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bu
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Karşıya yükleme için Win32 uygulaması içeriğini hazırlama
 
 Kullanım [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) Win32 uygulamaları önceden işlenecek. Aracı uygulama yükleme dosyalarına dönüştürür *.intunewin* biçimi. Aracın bazı Intune tarafından uygulama yükleme durumunu belirlemek için gerekli öznitelikler algılar. Uygulama yükleyicisi klasöründe bu aracı kullandıktan sonra, Intune konsolunda Win32 uygulaması oluşturabilirsiniz.
+
+> [!IMPORTANT]
+> [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) oluştururken zıps tüm dosyaları ve alt klasörleri *.intunewin* dosya. Böylece aracı veya diğer gereksiz dosyaları ve klasörleri içermez Microsoft Win32 içerik hazırlığı aracını Installer dosyalarını ve klasörlerini ayrı sakladığınızdan emin olun, *.intunewin* dosya.
 
 İndirebileceğiniz [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) github'dan.
 

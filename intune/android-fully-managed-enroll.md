@@ -1,7 +1,7 @@
 ---
-title: Android için Intune kayıt Kurulumu tam olarak yönetilen cihazlar
+title: Kurulum Intune kaydı Android Enterprise için tam olarak yönetilen cihazlar
 titlesuffix: Microsoft Intune
-description: Kaydetmeyi öğrenin tam olarak yönetilen Android cihazları ıntune'a.
+description: Intune'da Android kuruluş tarafından tam olarak yönetilen cihazları kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,39 +17,39 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 482ae185f221b3ff77534c1cfd8cccd8278965b7
-ms.sourcegitcommit: 84ab7a49aad853591a4ae362382f293e29b360df
+ms.openlocfilehash: 23b6bef0bd1b3bad0c5fc616d6b936bbfcd93e2d
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156177"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458833"
 ---
-# <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Intune'u ayarlama Android kayıt tam (Önizleme) ile yönetilen cihazlar
+# <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Intune'u ayarlama Android Kurumsal kaydını tam (Önizleme) ile yönetilen cihazlar
 
-Tam olarak yönetilen Android cihazları, bir tek kullanıcı ve iş için özel olarak kullanılan ve değil kişisel kullanım ile ilişkili ve şirkete ait cihazlardır. Yöneticiler, cihazın tamamını yönetmenize ve ilke denetimleri gibi iş profilleri, kullanılamayan uygulamak:
-- yalnızca yönetilen Google Play mağazasından uygulama yüklemesine izin ver
+Kuruluş tarafından tam olarak yönetilen Android cihazları, bir tek kullanıcı ve iş için özel olarak kullanılan ve değil kişisel kullanım ile ilişkili ve şirkete ait cihazlardır. Yöneticiler, cihazın tamamını yönetmenize ve ilke denetimleri gibi iş profilleri, kullanılamayan uygulamak:
+- yalnızca yönetilen Google Play uygulama yüklemesine izin ver
 - yönetilen uygulamaları kaldırmasını engelleyin
 - Kullanıcıların cihazları fabrika ayarlarına engellemek ve benzeri.
 
-Intune uygulamaları dağıtmanıza yardımcı olur ve tam olarak Android dahil olmak üzere Android kuruluş cihazlarının, ayarlar yönetilen cihazlar. Android kurumsal hakkında belirli ayrıntıları öğrenmek için bkz. [Android kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune uygulamaları dağıtmanıza yardımcı olur ve tam olarak Android Enterprise dahil olmak üzere Android kuruluş cihazlarının, ayarlar yönetilen cihazlar. Belirli Android Enterprise hakkında bilgi için [Android Kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 ## <a name="technical-requirements"></a>Teknik gereksinimler
 
-Bir Intune olmalıdır Android tam olarak yönetmek için tek başına Kiracı yönetilen cihazlar. Tam olarak yönetilen bir cihaz Yönetimi (SCCM bağlı) ya da karma modda ya da eski Silverlight yönetim konsolunda kullanılamaz.
+Tam olarak yönetilen Android kuruluş cihazlarını yönetmek için bir Intune tek başına Kiracı olması gerekir. Tam olarak yönetilen bir cihaz Yönetimi (SCCM bağlı) ya da karma modda ya da eski Silverlight yönetim konsolunda kullanılamaz.
 
-Cihaz bir Android cihazı tam olarak yönetilen olarak yönetilecek şu gereksinimleri karşılamanız gerekir:
+Cihaz bir Android Kurumsal cihaz tam olarak yönetilen olarak yönetilecek şu gereksinimleri karşılamanız gerekir:
 
 - Android işletim sistemi sürüm 5.1 ve üzeri.
 - Bir derleme Google Mobile Services'ı (GMS) bağlantısı olan Android cihazları çalıştırmanız gerekir. Cihazlarda GMS kullanılabilir olmalı ve cihazlar GMS’ye bağlanabilmelidir.
 
 Yukarıdaki gereksinimleri karşılandığında cihaz üreticisi/OEM konusunda bir kısıtlama yoktur.
 
-## <a name="set-up-android-fully-managed-device-management"></a>Ayarlanan Android cihaz Yönetimi tam olarak yönetilen
+## <a name="set-up-android-enterprise-fully-managed-device-management"></a>Tam olarak yönetilen Android Kurumsal cihaz yönetimini ayarlama
 
-Ayarlamak için Android tam cihaz Yönetimi yönetilen, aşağıdaki adımları izleyin:
+Ayarlamak için Android Kurumsal cihaz Yönetimi yapılandırılan, aşağıdaki adımları izleyin:
 
 1. Mobil cihazları yönetmek hazırlamak için şunları yapmanız gerekir [mobil cihaz Yönetimi (MDM) yetkilisini ayarlamak **Intune**](mdm-authority-set.md). Bu öğeyi yalnızca mobil cihaz yönetimi için Intune’u ilk defa kurduğunuzda ayarlarsınız.
-2. [Intune kiracı hesabınızı Android kurumsal hesabınıza bağlayın](connect-intune-android-enterprise.md).
+2. [Android Enterprise hesabınızı Intune Kiracı hesabınızı bağlayın](connect-intune-android-enterprise.md).
 3. [Kullanıcı şirkete ait cihazları etkinleştirme](#enable-corporate-owned-user-devices)
 4. [Tam olarak yönetilen cihazları kaydetme](#enroll-the-fully-managed-devices).
 
@@ -64,9 +64,9 @@ Bu ayar ayarlandığında **Evet**, size bir kayıt belirteci (rastgele bir dize
 Artık [tam olarak yönetilen cihazları kaydetme](android-dedicated-devices-fully-managed-enroll.md).
 
 ## <a name="considerations-for-this-preview-feature"></a>Bu önizleme özelliği için Değerlendirmeler
-Android çözüm kümesi tam olarak yönetilen için bu genel Önizleme özellikleri çekirdek kümesini içerir. Geçerli iletişim kanallarınızın ekibine birini kullanarak önizleme özelliklerini kullanma deneyiminizle ilgili görüşlerinizi almak istiyoruz (gibi [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
+Android Kurumsal çözüm kümesi tam olarak yönetilen için bu genel Önizleme özellikleri çekirdek kümesini içerir. Geçerli iletişim kanallarınızın ekibine birini kullanarak önizleme özelliklerini kullanma deneyiminizle ilgili görüşlerinizi almak istiyoruz (gibi [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
 
-Bu önizleme, tam olarak yönetilen Android cihazlar için aşağıdaki özellikleri destekler:
+Android Kurumsal tam olarak yönetilen cihazlar için bu önizlemede aşağıdaki özellikleri destekler:
 - NFC, belirteç girişi, QR kodunu ve sıfır dokunma kullanarak cihaz kaydetme
 - Kullanıcı grupları için cihaz yapılandırması
 - Uygulama dağıtımı ve kullanıcı grupları için yapılandırma
@@ -74,15 +74,15 @@ Bu önizleme, tam olarak yönetilen Android cihazlar için aşağıdaki özellik
 
 Bu önizleme özelliklerini kullanırken aşağıdakileri göz önünde bulundurun:
 - Önizlemedeki özellikler için önerilen olmayan görev açısından kritik veya üretim dağıtımları. 
-- Önizleme özellikleri Intune üretim standartlarına uygulanır. Ancak, Intune özelliklerinin tamamı Android kullanılabilir tam olarak yönetilen kullanıcı cihazları. Önizleme özellikleri, Intune konsolunda "(Önizleme)" net bir şekilde etiketlenir. 
+- Önizleme özellikleri Intune üretim standartlarına uygulanır. Ancak, tüm Intune özellikleri tam olarak yönetilen Android Enterprise kullanıcı cihazları ile kullanılabilir. Önizleme özellikleri, Intune konsolunda "(Önizleme)" net bir şekilde etiketlenir. 
 - Önizleme özellikleri, tam olarak normal bir Intune destek kanalları desteklenir.
-- Android tam olarak kaydedilmesi yönetilen cihazlar kullanarak Samsung Knox mobil kayıt önizlemede desteklenmiyor. 
-- Yönetilen cihazlara Intune Şirket portalı uygulaması Android üzerinde tam olarak desteklenmez kullanın. 
+- Samsung Knox mobil kaydı kullanarak tam olarak yönetilen Android Enterprise cihazlarını kaydetme, Önizleme'de desteklenmez. 
+- Yönetilen cihazlara Intune Şirket portalı uygulaması Android kuruluş tam olarak desteklenmez kullanın. 
 - Koşullu erişim, uygulama koruma ilkeleri ve dağıtım önizlemede desteklenmeyen sertifika gibi Intune özellikleri. 
 - Herhangi bir profili veya uygulama cihaz grubu hedefleme önizlemede desteklenmiyor. Yalnızca kullanıcı grubu hedefleme desteklenir. 
 - E-posta, WiFi veya VPN yapılandırmak için birinci sınıf kullanıcı Arabirimi yoktur. Desteklenen uygulama yapılandırma ayarlarını yapılandırmak için uygulama yapılandırma ilkelerini kullanın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-- [Android cihaz yapılandırma ilkelerinin tam olarak yönetilen Ekle](device-restrictions-android-for-work.md#device-owner-only)
-- [Tam olarak yönetilen Android cihazlar için uygulama yapılandırma ilkelerini yapılandırma](app-configuration-policies-use-android.md)
+- [Android Kurumsal cihaz yapılandırma ilkelerinin tam olarak yönetilen Ekle](device-restrictions-android-for-work.md#device-owner-only)
+- [Android Kurumsal tam olarak yönetilen cihazlar için uygulama yapılandırma ilkelerini yapılandırma](app-configuration-policies-use-android.md)
 

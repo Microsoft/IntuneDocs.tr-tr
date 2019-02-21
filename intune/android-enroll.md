@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 89825bd77beba9b8653646e9ec7381e9dfd2d6de
+ms.sourcegitcommit: ad213c5be1e1ad2b768661a467878056e6090999
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846766"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56444166"
 ---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
@@ -30,10 +30,10 @@ ms.locfileid: "55846766"
 
 Intune yöneticisi olarak, aşağıdaki Android cihazları yönetebilirsiniz:
 - Samsung Knox Standard cihazlar dahil olmak üzere Android cihazlar.
-- Dahil olmak üzere android kuruluş cihazlarının:
-    - **Android iş profili cihazları**: Kişisel cihazlarından Kurumsal verilere erişim izni verildi. Yöneticileri, iş hesapları, uygulamaları ve verileri yönetebilir. Cihazdaki kişisel verileri iş verilerinizden ayrı tutulur ve yöneticileri, kişisel ayarlar veya veri denetim yok. 
-    - **Android cihazlar ayrılmış**: Dijital Tabela gibi şirketin sahip olduğu ve tek kullanım cihazları yazdırma bilet veya Stok yönetim. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
-    - **Tam olarak yönetilen Android cihazlar**: Şirketin sahip olduğu, tek kullanıcı cihazlarını iş için özel olarak kullanılan ve değil kişisel kullanın. Yöneticileri tüm cihazı yönetebilir ve zorunlu ilke denetimleri iş profilleri kullanılamıyor. 
+- Dahil olmak üzere android Kurumsal cihaz:
+    - **Android kurumsal iş profili cihazları**: Kişisel cihazlarından Kurumsal verilere erişim izni verildi. Yöneticileri, iş hesapları, uygulamaları ve verileri yönetebilir. Cihazdaki kişisel verileri iş verilerinizden ayrı tutulur ve yöneticileri, kişisel ayarlar veya veri denetim yok. 
+    - **Android Kurumsal adanmış cihazlar**: Dijital Tabela gibi şirketin sahip olduğu ve tek kullanım cihazları yazdırma bilet veya Stok yönetim. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
+    - **Android Kurumsal tam olarak yönetilen cihazlar**: Şirketin sahip olduğu, tek kullanıcı cihazlarını iş için özel olarak kullanılan ve değil kişisel kullanın. Yöneticileri tüm cihazı yönetebilir ve zorunlu ilke denetimleri iş profilleri kullanılamıyor. 
 
 ## <a name="prerequisite"></a>Önkoşul
 
@@ -52,13 +52,13 @@ Diğer kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere ba
 
 Android cihazların veya yalnızca kişisel Android cihazların kaydedilmesini engellemek için bkz. [Cihaz türü kısıtlamaları ayarlama](enrollment-restrictions-set.md).
 
-## <a name="set-up-android-enterprise-enrollment"></a>Android kurumsal kaydını ayarlama
+## <a name="set-up-android-enterprise-enrollment"></a>Android Kurumsal kaydını ayarlama
 
-Android iş profili, kişisel uygulamaları ve verileri uygulama ve veri içeren iş profilinden ayıran Android cihazı özellik ve hizmet kümesidir. Android kuruluş cihazlarının iş profili cihazları, tam olarak yönetilen cihazları ve ayrılmış cihazları içerir. 
+Android Kurumsal kullanıcılara en güncel ve güvenli özelliklerle sağlamak kayıt seçenekleri kümesi sunar. Android Kurumsal kayıt seçenekleri iş profili, tam olarak yönetilen ve ayrılmış cihazları içerir.
 
-- [Android iş profili kayıtları ayarlayın](android-work-profile-enroll.md)
-- [Android özel cihaz kayıtlarını ayarlayın](android-kiosk-enroll.md)
-- [Ayarlanmış tam olarak yönetilen Android kayıtları](android-fully-managed-enroll.md)
+- [Android kurumsal iş profili kayıtları ayarlayın](android-work-profile-enroll.md)
+- [Ayrılmış Android Kurumsal cihaz kayıtlarını ayarlayın](android-kiosk-enroll.md)
+- [Tam olarak yönetilen Android Enterprise kayıtları ayarlayın](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Bir Samsung Knox cihazı kaydederken son kullanıcı deneyimi
 
@@ -76,6 +76,6 @@ Samsung Knox cihazları kaydederken göz önünde bulundurulması gereken birka�
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Android iş profili kayıtları ayarlayın](android-work-profile-enroll.md)
-- [Android özel cihaz kayıtlarını ayarlayın](android-kiosk-enroll.md)
-- [Ayarlanmış tam olarak yönetilen Android kayıtları](android-fully-managed-enroll.md)
+- [Android kurumsal iş profili kayıtları ayarlayın](android-work-profile-enroll.md)
+- [Ayrılmış Android Kurumsal cihaz kayıtlarını ayarlayın](android-kiosk-enroll.md)
+- [Tam olarak yönetilen Android Enterprise kayıtları ayarlayın](android-fully-managed-enroll.md)

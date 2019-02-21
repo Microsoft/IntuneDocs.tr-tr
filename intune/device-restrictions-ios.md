@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 302f9b34102240c057f7de80abd03a5dda65945f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a7f5c09dca64b227daf21c8a492221a5e025cb20
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850252"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458935"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarları
 
@@ -348,7 +348,7 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 | com.apple.mobileslideshow   | Fotoğraflar       | Apple     |
 | com.apple.podcasts          | Podcast’ler     | Apple     |
 | com.apple.reminders         | Anımsatıcılar    | Apple     |
-| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Ayarlar     | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Borsa       | Apple     |

@@ -1,7 +1,7 @@
 ---
-title: Adanmış Android cihazlarını kaydetme veya tam olarak yönetilen cihazlar ıntune
+title: Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları ıntune'a kaydetme
 titlesuffix: Microsoft Intune
-description: Ayrılmış Android kuruluş cihazlarının veya ıntune'da yönetilen fulluy cihazları kaydetmeyi öğrenin.
+description: Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları ıntune'a kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 90af5ed5fab21e7b15c0e6d77b170e49b3047c88
+ms.sourcegitcommit: ad213c5be1e1ad2b768661a467878056e6090999
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843451"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56444149"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Adanmış Android cihazları kaydetme veya tam olarak yönetilen cihazlar (Önizleme)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları (Önizleme) kaydetme
 
-Ayarladıktan sonra [Android adanmış cihazlar](android-kiosk-enroll.md) veya [tam olarak yönetilen cihazlar](android-fully-managed-enroll.md) , Intune'da bu cihazları kaydedebilirsiniz. Android cihazları kaydetme biçiminiz, işletim sisteminize bağlıdır.
+Ayarladıktan sonra [Android Kurumsal adanmış cihazlar](android-kiosk-enroll.md) veya [tam olarak yönetilen cihazlar](android-fully-managed-enroll.md) , Intune'da bu cihazları kaydedebilirsiniz. Android Kurumsal cihazlarınızı nasıl kaydedeceğiniz, işletim sistemine bağlıdır.
 
 | Kayıt yöntemi | Ayrılmış ve tamamen yönetilen cihazlar için en düşük Android işletim sistemi sürümü |
 | ----- | ----- |
