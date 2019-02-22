@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: ae8113a603ae4c091005f7c82045708f7e9e3e97
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086157"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655400"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobil uygulama yönetimi sorunlarını giderme
 
@@ -78,7 +78,7 @@ Hata iletisi veya iletişim kutusu | Nedeni | Düzeltme |
 **Uygulama ayarlanmadı**: Bu uygulamayı kullanabilmeniz için ayarlanmamış. Yardım için BT yöneticinize başvurun. | Gerekli uygulama koruma İlkesi uygulama için algılama hatası. |Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
 **Intune Managed Browser hoşgeldiniz**: Bu uygulama, Microsoft Intune tarafından yönetildiğinde en iyi şekilde çalışır. Bu uygulamayı web'de gezinmek için her zaman kullanabilirsiniz ve uygulama Microsoft Intune tarafından yönetildiğinde ek veri koruma özelliklerine erişiminiz olur. | Intune Managed Browser uygulaması için bir gerekli uygulama koruma İlkesi algılanamadı hatası. <br><br>Kullanıcı web’de gezinmek için uygulamayı kullanmaya devam edebilir ancak uygulama Intune tarafından yönetilmez. | Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve Intune Managed Browser uygulamasını hedeflediğinden emin olun.
 **Başarısız oturum**: Şu anda oturumunuzu açamıyoruz. Lütfen daha sonra tekrar deneyin. | Kullanıcı iş veya okul hesabıyla oturum açmayı denedikten sonra MAM hizmetine kaydedilemiyor. | Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
-**Hesap ayarlanmadı**: Kuruluşunuz hesabınızı iş veya Okul verilerini ayarlı değil. Yardım için lütfen BT yöneticinizle görüşün. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcının hesabına [Office portalında](http://portal.office.com) bir Intune lisansı atandığından emin olun.
+**Hesap ayarlanmadı**: Kuruluşunuz hesabınızı iş veya Okul verilerini ayarlı değil. Yardım için lütfen BT yöneticinizle görüşün. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcının hesabına [Office portalında](https://portal.office.com) bir Intune lisansı atandığından emin olun.
 **Cihaz uyumlu**: Jailbreak uygulanmış bir cihaz kullandığınızdan bu uygulama kullanılamıyor. Yardım için BT yöneticinize başvurun. | Intune, kullanıcının jailbreak uygulanmış bir cihaz kullandığını algıladı. | Cihazı fabrika ayarlarına sıfırlayın. Apple destek sitesindeki [bu yönergeleri](https://support.apple.com/HT201274) izleyin.
 **Internet bağlantısı gerekli**: Bu uygulamayı kullanabileceğinizi doğrulamak için Internet'e bağlanması gerekir. | Cihaz, İnternet'e bağlı değil. | Cihazı bir WiFi veya Veri ağına bağlayın.
 **Bilinmeyen hata**: Bu uygulamayı yeniden başlatmayı deneyin. Sorun devam ederse yardım için BT yöneticinize başvurun. | Bilinmeyen bir hata oluştu. | Bir süre bekleyin ve yeniden deneyin. Sorun devam ederse, oluşturun bir [destek bileti](get-support.md#create-an-online-support-ticket) Intune ile.
@@ -97,7 +97,7 @@ Hata iletisi veya iletişim kutusu | Nedeni | Düzeltme |
 **Başarısız oturum**: Yeniden oturum açmayı deneyin. Sorun devam ederse yardım için BT yöneticinize başvurun. | Kullanıcının oturum açmayı denediği hesabın kimlik doğrulaması başarısız oldu. | Kullanıcının Intune MAM hizmetine zaten kayıtlı bir iş veya okul hesabıyla oturum açtığından emin olun (Bu uygulamada başarıyla oturum açılan ilk iş veya okul hesabı). <br><br> Uygulamanın verilerini temizleyin. <br><br> Uygulama sürümünün güncel olduğundan emin olun. <br><br> Şirket Portalı sürümünün güncel olduğundan emin olun.
 **Internet bağlantısı gerekli**: Bu uygulamayı kullanabileceğinizi doğrulamak için Internet'e bağlanması gerekir. | Cihaz, İnternet'e bağlı değil. | Cihazı bir WiFi veya Veri ağına bağlayın.
 **Cihazı uyumsuz olarak**: Kök erişim izni verilmiş bir cihaz kullandığınızdan bu uygulama kullanılamaz. Yardım için BT yöneticinize başvurun. | Intune, kullanıcının kök erişim izni verilmiş bir cihaz kullandığını algılandı. | Cihazı fabrika ayarlarına sıfırlayın.
-**Hesap ayarlanmadı**: Bu uygulamanın Microsoft Intune tarafından yönetilmesi gerekiyor, ancak hesabınız ayarlanmış değil. Yardım için BT yöneticinize başvurun. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcının hesabına [Office portalında](http://portal.office.com) bir Intune lisansı atandığından emin olun.
+**Hesap ayarlanmadı**: Bu uygulamanın Microsoft Intune tarafından yönetilmesi gerekiyor, ancak hesabınız ayarlanmış değil. Yardım için BT yöneticinize başvurun. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcının hesabına [Office portalında](https://portal.office.com) bir Intune lisansı atandığından emin olun.
 **App kaydedilemiyor**: Bu uygulamanın Microsoft Intune tarafından yönetilmesi gerekiyor, ancak Biz bu uygulama şu anda kaydedilemedi. Yardım için BT yöneticinize başvurun. | Uygulama koruma ilkesi gerekli olduğunda uygulama MAM hizmetine otomatik olarak kaydedilemedi. | Uygulamanın verilerini temizleyin. <br><br> Günlükleri Şirket portalı uygulaması ile Intune'a gönderin veya bir destek bileti çıkartın. Daha fazla bilgi için [Intune için destek alma](get-support.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar

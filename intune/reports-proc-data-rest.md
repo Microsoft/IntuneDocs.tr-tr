@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c43b27a07aa5eafc19ce1528bbfe34c1a6dbb1d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: bb10dfe14dc6da3d58e5ae4279a4d89647691cac
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839490"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655366"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -99,7 +99,7 @@ Uç nokta da gerekir. Veri Ambarı uç noktanızı almak için özel akış URL�
 3. **Diğer görevler** altında bulunan **Intune Veri Ambarı’nı Ayarlama**’yı seçin.
 4. **Üçüncü taraf raporlama hizmetleri kullan** altında özel akış URL’sini kopyalayın. Bu, şuna benzer olmalıdır: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-Uç nokta şu biçimdedir: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
+Uç nokta şu biçimdedir: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
 Örneğin **tarihler** varlığı şuna benzerdir: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -164,7 +164,7 @@ Aşağıdaki örnek, bir basit REST istemcisi içerir. Kod, .Net kitaplığında
 
     ![Progam.cs ve Visual Studio'daki Çözüm Gezgini'nde](./media/reports-get_rest_data_in.png)
 
-8. Program.cs’deki kodu aşağıdaki kodla değiştirin:  
+8. Değiştirin *Program.cs* aşağıdaki kod ile:  
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

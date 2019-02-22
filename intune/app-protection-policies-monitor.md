@@ -1,7 +1,7 @@
 ---
 title: Uygulama koruma ilkelerini izleme
 titleSuffix: Microsoft Intune
-description: Intune'da mobil uygulama yönetimi ilkelerinin uyumluluk durumunu izleyin.
+description: Bu konu, ıntune mobil uygulama yönetimi ilkelerinin uyumluluk durumunu izlemek açıklar.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7efa888344b91c74672563730bbdea6c7424214b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0dd0ce79f6bbb381523a92855f38ad6b7f372ac2
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835104"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655332"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

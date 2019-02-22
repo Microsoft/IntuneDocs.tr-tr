@@ -1,7 +1,7 @@
 ---
 title: Uygulama koruma İlkesi günlüklerini gözden geçirin | Microsoft Intune
 titlesuffix: Microsoft Intune
-description: Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin.
+description: Bu konuda, uygulama koruma İlkesi (uygulama) günlüklerini yapılandırma açıklanmaktadır.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d5ffdb67a6243bf34db03fb8394763e1a1c1f0e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 7262693a4e56eee97175a835cfdcd66bfefbcb4c
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847174"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655298"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
@@ -38,7 +38,7 @@ Aşağıdaki tabloda, adları ve açıklamaları günlüğe kaydedilen ayarları
 
 ## <a name="app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarları
 
-| Ad                        | Olası değer(ler)                                                                                                                                                                                                                                                                                           | Azure Intune Mobil Uygulama Yönetimi portalında ayarlama                                                                                                                            |
+| Name                        | Olası değer(ler)                                                                                                                                                                                                                                                                                           | Azure Intune Mobil Uygulama Yönetimi portalında ayarlama                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x dakika                                                                                                                                                                                                                                                                                                   | [Erişim] Erişim gereksinimlerini tekrar kontrol edin - Çevrimdışı Kullanım Süresi<br>Not: Cihaz çevrimdışı ise uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını budur.             |
 | AccessRecheckOnlineTimeout  | _x_ dakika                                                                                                                                                                                                                                                                                                   | [Access] Erişim gereksinimlerini tekrar kontrol edin - Zaman aşımı.<br>Not: Cihaz çevrimiçiyse uygulama başlatıldıktan sonra uygulamaya yönelik erişim gereksinimleri yeniden denetlenmeden önceki zaman aralığını budur. |

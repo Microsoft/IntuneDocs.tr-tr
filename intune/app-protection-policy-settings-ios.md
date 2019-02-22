@@ -1,7 +1,7 @@
 ---
 title: iOS uygulama koruma İlkesi ayarları | Microsoft Intune
 titlesuffix: Microsoft Intune
-description: Bu konu başlığı altında iOS cihazları için uygulama koruma ilkesi ayarları açıklanır.
+description: Bu konu başlığı altında iOS cihazları için iOS uygulama koruma İlkesi (uygulama) ayarları açıklar.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73bc1a3bc03b5136c849fecbbe2a482f242b062f
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: a0b0c2a588398e962da0aaab839343f20aadbbcb
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325529"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655417"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 229659e0021f7386279ffbd5950e4eb849944ef2
+ms.sourcegitcommit: 613b2064df07cfac0081e8549177e1f2d07cf33c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839694"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56590062"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -129,6 +129,16 @@ Aşağıdaki adımları izleyerek bir cihaz sınırı kısıtlamasının ayarlar
 KCG kayıtları sırasında kullanıcılar, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görür. Örneğin, iOS'ta şöyle görünür:
 
 ![iOS cihazı sınır bildirimi](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+Cihaz sınırı kısıtlamaları aşağıdaki Windows Kurumsal kayıt türleri için geçerli değildir:
+
+- Ortak yönetilen kayıtları
+- GPO kayıtları
+- Kayıtları Azure Active Directory'ye katıldı
+- Kayıtları toplu Azure Active Directory'ye katılmış
+- AutoPilot kayıtları
+
+Bu kayıt türleri için cihaz sınırlarını ayarlayabilirsiniz [Azure Active Directory'de](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## <a name="change-enrollment-restriction-priority"></a>Kayıt kısıtlama önceliğini değiştirme
 

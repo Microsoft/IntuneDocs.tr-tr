@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4edf76b2406f07efa68275763da87340bb34f222
+ms.sourcegitcommit: 613b2064df07cfac0081e8549177e1f2d07cf33c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833625"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56590079"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 şablonları yapılandırmak için Grup İlkesi ayarları Microsoft Intune
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Intune Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonları kullanma
 
 Kuruluşunuzdaki cihazları yönetirken, farklı cihaz gruplarına uygulanan ayarları bir grup oluşturmak istiyorsunuz. Örneğin, birkaç cihaz gruplarına sahip. GroupA için ayarları belirli bir kümesini atamak istediğiniz. GroupB için ayarları farklı bir kümesini atamak istediğiniz. Yapılandırabileceğiniz ayarların basit bir görünümünü de istiyor.
 
