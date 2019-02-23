@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838147"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742746"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -72,7 +72,7 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 
 ### <a name="accounts"></a>Hesaplar
 
-|Ad|Ayrıntılar|
+|Name|Ayrıntılar|
 |--------|-----------|
 |**NDES hizmet hesabı**|NDES Hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı girin. |
 
@@ -364,10 +364,12 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 6. Aşağıdaki ayarları girin:
 
    - **Sertifika türü**: Seçin **kullanıcı** kullanıcı sertifikaları için. Bilgi noktası gibi kullanıcısız cihazlar için **Cihaz**'ı seçin. **Cihaz** sertifikaları aşağıdaki platformlar için bulunur:  
+     - Android Kurumsal
      - iOS
+     - Mac OS
      - Windows 8.1 ve üzeri
      - Windows 10 ve üzeri
-     - Android Kurumsal
+
 
    - **Konu adı biçimi**: Nasıl Intune otomatik olarak konu adı sertifika isteğindeki seçin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
 

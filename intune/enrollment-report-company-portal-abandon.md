@@ -1,12 +1,12 @@
 ---
-title: Intune’da Şirket portalı kaydını bırakma
+title: Intune'da tamamlanmamış kullanıcı kayıtları raporu
 titlesuffix: Microsoft Intune
-description: Şirket portalı bırakma raporu hakkında bilgi edinin.
+description: Eksik kullanıcı kayıtları raporu hakkında bilgi edinin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/20/2018
+ms.date: 2/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,34 +16,34 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85a03718185de939612f5431a993f9f34c3048ba
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e08623485f8e3b07af43891e3b09cfed5b94e583
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840663"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742593"
 ---
-# <a name="company-portal-abandonment-report"></a>Şirket portalı bırakma raporu
+# <a name="incomplete-user-enrollments-report"></a>Eksik kullanıcı kayıtları raporu
 
-Bu rapor, Şirket Portalı kaydının hangi aşamasında kullanıcıların kayıt sürecini bıraktığını gösterir.
+Bu rapor, burada şirket Portalı'nda kayıt işlemini kullanıcılar kayıt işlemini tamamlıyorsanız değil bildirir.
 
-Raporu görmek için **Intune** > **Cihaz kaydı** > **Şirket portalı bırakma** seçeneğini belirleyin.
+Raporu görmek için seçin **Intune** > **cihaz kaydı** > **eksik kullanıcı kayıtları**.
 
-Bu bırakma bilgilerini kullanarak, kullanıcıların kaydı tamamlamasına yardımcı olmak için ekleme belgelerinizi güncelleştirebilirsiniz. Örneğin çok sayıda kullanıcı Kullanım Koşulları ekranında kaydı bırakıyorsa bu alanı araştırıp kullanıcılar için kullanımı daha kolay bir hale getirebilirsiniz.
+Bu bilgileri kullanarak, kullanıcı kaydı tamamlamak amacıyla ekleme belgelerinizi güncelleştirebilirsiniz. Örneğin çok sayıda kullanıcı Kullanım Koşulları ekranında kaydı bırakıyorsa bu alanı araştırıp kullanıcılar için kullanımı daha kolay bir hale getirebilirsiniz.
 
-## <a name="what-is-abandonment"></a>Bırakma nedir?
+## <a name="what-is-an-incomplete-enrollment"></a>Tamamlanmamış bir kaydı nedir?
 
-Bırakma, kullanıcıların aşağıdakilerden birini yapmasıdır:
+Bir kullanıcı aşağıdakilerden herhangi birini yaptığında, eksik bir kayıt şöyledir:
 
 -   Kaydı durdurmak için açıkça bir eylem seçmesi
 -   Kayıt sırasında Şirket Portalı’nı kapatması
 -   Kayıt bölümleri arasında 30 dakikadan fazla zaman harcaması
 
-Bir kullanıcı kaydı birçok kez durdurup yeniden başlatmayı seçerse bu, birden fazla girişim ve birden çok bırakma olarak görünür. Bir kullanıcı bir kayıt ekranında 30 dakika harcarsa bu, birden çok bırakma olarak kabul edilir.
+Bir kullanıcı kaydı durdurmak ve birden çok kez yeniden başlatılması seçerse, birden fazla girişimde ve birden fazla tamamlanmamış kayıtları gösterilir. Bir kullanıcı farklı kayıt ekranlar arasında 30 dakika bekler, birden fazla tamamlanmamış kayıtları olarak kabul edilir.
 
 ## <a name="what-does-the-report-show"></a>Rapor neleri gösterir?
 
-Kayıt raporları, iOS ve Android cihazlarına ait veriler içerir.
+Raporlar, iOS ve Android cihazlar için veri içerir.
 
 Raporlar, son iki haftanın verilerini gösterir ancak geçmiş 30 gün içerisindeki herhangi bir dönemi gösterecek şekilde filtrelenebilir.
 
@@ -51,15 +51,15 @@ Raporlar, son iki haftanın verilerini gösterir ancak geçmiş 30 gün içerisi
 
 ### <a name="number-and-percentage-tiles"></a>Sayı ve yüzde kutucukları
 
-Raporun üst kısmında, tüm kayıtlar arasından bırakılan raporların sayısını ve yüzdesini görebilirsiniz.
+Raporun üstündeki sayısı ve yüzdesi ile ilgili olarak tüm kayıtları tamamlanmamış kayıtları görebilirsiniz.
 
 -   Başlatılan kayıtları: Kayıtları denemesi sayısı.
--   Terk edilmiş kayıtları: İçinde tam olarak kayıtlı ve uyumlu bir cihaz dik denenen kayıtları sayısı.
--   Abandonment oranı: (Kayıtlar terk / kayıtları başlatılan) terk edilmiş kayıt girişimlerinin yüzdesi.
+-   Tamamlanmamış kayıtları: İçinde tam olarak kayıtlı ve uyumlu bir cihaz dik denenen kayıtları sayısı.
+-   Tamamlanmamış oranı: (Kayıtlar terk / kayıtları başlatılan) terk edilmiş kayıt girişimlerinin yüzdesi.
 
 ### <a name="line-graph"></a>Çizgi grafik
 
-Çizgi grafik, dört temel kayıt bölümünün her biri için günlük bırakma sayısını gösterir:
+Çizgi grafiği için dört temel kayıt bölümlerin her birinde günlük tamamlanmamış kayıtları gösterir:
 
 -   Kurulum denetim listesi
 -   Platform ekranları
@@ -68,12 +68,12 @@ Raporun üst kısmında, tüm kayıtlar arasından bırakılan raporların sayı
 
 ### <a name="user-abandonment-actions"></a>Kullanıcı bırakma eylemleri
 
-Aşağıdaki tablolar, bırakma olarak değerlendirilen kullanıcı eylemlerini gösterir. Kayıt ekranı örnekleri görmek için [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) ve [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment) kayıt videolarını izleyebilirsiniz. 
+Aşağıdaki tablolar, bir eksik kayıt istemi olarak uygun kullanıcı eylemlerinin listesini gösterir. Kayıt ekranı örnekleri görmek için [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) ve [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment) kayıt videolarını izleyebilirsiniz. 
 
 
 #### <a name="setup-checklist-section"></a>Kurulum denetim listesi bölümü
 
-| Bırakma adı | Ekran veya akış | Platform | Eylem |
+| Eylem adı | Ekran veya akış | Platform | Eylem |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Sayfayı Şirket Portalı’nda açmaya yönelik istem | iOS/Android | **İptal** |
 | EnrollmentWrapUp | **Şirket kaynakları yükleniyor** işlemi tamamlanana kadar gösterilen cihaz kaydetme ekranı | iOS/Android | 30 dakikadan fazla sürdü |
@@ -83,7 +83,7 @@ Aşağıdaki tablolar, bırakma olarak değerlendirilen kullanıcı eylemlerini 
 
 #### <a name="platform-screens-section"></a>Platform ekranları bölümü
 
-| Bırakma adı | Ekran veya akış | Platform | Eylem |
+| Eylem adı | Ekran veya akış | Platform | Eylem |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Bir yapılandırma profilini göstermeye yönelik istem | iOS | **Yoksay** |
 | iOSProfileLaunch | Profili yükleme ekranı | iOS | **İptal** |
@@ -96,14 +96,14 @@ Aşağıdaki tablolar, bırakma olarak değerlendirilen kullanıcı eylemlerini 
 
 #### <a name="terms-of-use-section"></a>Kullanım koşulları bölümü
 
-| Bırakma adı | Ekran veya akış | Platform | Eylem |
+| Eylem adı | Ekran veya akış | Platform | Eylem |
 | ---- |---- |---- |---- |
 | TermsofUse | Kullanım koşulları (yönetici yapılandırmışsa) | iOS/Android | **Tümünü Reddet** |
 | TermsofUse | **Tümünü kabul et** seçeneği belirtilene kadar gösterilen Kullanım koşulları ekranı | iOS/Android | 30 dakikadan fazla sürdü |
 
 #### <a name="complianceactivation-section"></a>Uyumluluk/Etkinleştirme bölümü
 
-| Bırakma adı | Ekran veya akış | Platform | Eylem |
+| Eylem adı | Ekran veya akış | Platform | Eylem |
 | ---- |---- |---- |---- |
 | Uyumluluk | Cihaz uyumluluğu (yönetici yapılandırmışsa), kayıt sonrası erişim kurulumunda yeşil dışındaki bir renkte gösterilir| iOS/Android | **Ertele** |
 | Uyumluluk | Cihaz uyumluluğu, yeşil görünecek şekilde güncelleştirilene kadar yeşil dışındaki bir renkte gösterilir | iOS/Android | 30 dakikadan fazla sürdü |
@@ -112,4 +112,4 @@ Aşağıdaki tablolar, bırakma olarak değerlendirilen kullanıcı eylemlerini 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bırakma oranlarınızı denetledikten sonra kaydı geliştirmek için herhangi bir değişiklik yapıp yapamayacağınızı görmek için [kayıt seçeneklerine](enrollment-options.md) göz atabilirsiniz.
+Eksik kayıt ücretlerinizi denetledikten sonra gözden geçirebileceğiniz [kayıt seçenekleri](enrollment-options.md) kayıt geliştirmek için herhangi bir değişiklik yapmadan, görmek için.

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: dda25e5c40bcff14b71d65c183c5836cf73bf1ae
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307796"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742423"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Cihaz tabanlı koşullu erişim ilkesi oluşturma
 
-Intune ile mobil cihaz uyumluluğu için erişim denetimleri ekleyerek Azure Active Directory'de koşullu erişim geliştirebilirsiniz. Cihazların uyumlu olmasını gereksinimlerini tanımlayan Intune uyumluluk ilkesi oluşturduktan sonra izin vermek veya uygulama ve hizmetlere erişimi engellemek için bir cihazın uyumluluk durumunu kullanabilirsiniz. Bu ayarı kullanan bir koşullu erişim ilkesi oluşturarak bunu yapabilirsiniz **cihazın uyumlu olarak işaretlenmesini gerektir**. 
+Intune ile mobil cihaz uyumluluğu için erişim denetimleri ekleyerek Azure Active Directory'de koşullu erişim geliştirebilirsiniz. Cihazların uyumlu olmasını gereksinimlerini tanımlayan Intune uyumluluk ilkesi oluşturduktan sonra izin vermek veya uygulama ve hizmetlere erişimi engellemek için bir cihazın uyumluluk durumunu kullanabilirsiniz. Bu ayarı kullanan bir koşullu erişim ilkesi oluşturarak bunu yapabilirsiniz **cihazın uyumlu olarak işaretlenmesini gerektir**.  
 
-Koşullu erişim ilkesi uygulama veya hizmetleri korumak istediğiniz, koşullar altında uygulamalarına veya hizmetlerine erişilebilir ve ilkenin uygulandığı kullanıcı belirtir. Koşullu erişim, Azure Active Directory'de yapılandırılabilir bir Azure AD premium özelliği olmakla birlikte aynı bu ilkelerden Intune portalından da ayarlayabilirsiniz. 
+Koşullu erişim ilkesi uygulama veya hizmetleri korumak istediğiniz, koşullar altında uygulamalarına veya hizmetlerine erişilebilir ve ilkenin uygulandığı kullanıcı belirtir. Koşullu erişim, Azure Active Directory'de yapılandırılabilir bir Azure AD premium özelliği olmakla birlikte aynı bu ilkelerden Intune portalından da ayarlayabilirsiniz. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*.  
 
 > [!IMPORTANT]
 > Koşullu erişimi ayarlama önce bunlar belirli gereksinimleri karşılaması üzerinde göre cihazlarını değerlendirmek için Intune cihaz uyumluluk ilkeleri ayarlamak gerekir. Bkz: [ıntune cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md).

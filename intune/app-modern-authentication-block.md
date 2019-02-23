@@ -6,8 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a651f926f8e8cc5beab80a70649c82677e0b2487
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 5717c7471b8fc003572b863c5f317abe1e66bf07
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833061"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742202"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Modern kimlik doğrulaması kullanılmayan uygulamaları engelleme (ADAL)
 
@@ -35,11 +34,11 @@ Uygulama tabanlı koşullu erişim ile uygulama koruma ilkeleri kullanarak uygul
 Modern kimlik doğrulaması kullanmayan uygulamalara erişimi engellemek için aşağıdaki yöntemlerden öneririz:
 
 - Modern olmayan kimlik doğrulama protokollerini engellemek için ADFS talep kurallarını ayarlayın. [O365’e tarayıcı tabanlı uygulamalar dışındaki tüm erişimi engelleme](https://technet.microsoft.com/library/dn592182.aspx) adlı 3. senaryoda ayrıntılı yönergeler verilmiştir.
-- **Exchange ve SharePoint Online** için Azure Active Directory Koşullu Erişimi'ni ve SharePoint Online için PowerShell'in Set-SPOTenant cmdlet'ini kullanın. Ayrıntılı yönergeler için bkz. [SharePoint Online'ı ve Exchange Online'ı Azure Active Directory koşullu erişimi için ayarlama](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
+- İçin **Exchange ve SharePoint Online**, koşullu erişim kullanın ve SharePoint için çevrimiçi Set-SPOTenant PowerShell komutunu kullanın. Ayrıntılı yönergeler için bkz. [SharePoint Online'ı ve Exchange Online'ı Azure Active Directory koşullu erişimi için ayarlama](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
 
 
 >[!IMPORTANT]
->Uygulama tabanlı CA, Azure Active Directory (Azure AD) sertifika tabanlı kimlik doğrulaması ile kullanılmamalıdır. Aynı anda bunlardan yalnızca biri yapılandırılmış olabilir.
+>Uygulama tabanlı koşullu erişim, Azure Active Directory (Azure AD) sertifika tabanlı kimlik doğrulaması ile kullanılmamalıdır. Aynı anda bunlardan yalnızca biri yapılandırılmış olabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

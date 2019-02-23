@@ -6,8 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2026a446ffef3bd845affe45a7732ef3ab8ec24
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: c4ba4d144338c2cd775a5389f3587c94625b94b4
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842926"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742253"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim ilkeleri ayarlama
 
@@ -33,19 +32,18 @@ Onaylı uygulamalar listesinin parçası olan uygulamalar için uygulama tabanl�
 > [!IMPORTANT]
 > Bu makale uygulama tabanlı bir koşullu erişim ilkesini ekleme konusunda size adım adım yol gösterir. Onaylı uygulamalar listesinden SharePoint Online, Microsoft Teams ve Microsoft Exchange Online gibi uygulamaları eklerken de aynı adımları kullanabilirsiniz.
 
-## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Azure AD iş yükünde uygulama tabanlı koşullu erişim ilkeleri oluşturma
-
-BT yöneticileri, Azure AD iş yükünden uygulama tabanlı koşullu erişim ilkeleri oluşturabilir. Bu erişim, Azure ve Intune iş yükleri arasında geçiş yapmanız gerekmediği anlamına gelir.
+## <a name="create-app-based-conditional-access-policies"></a>Uygulama tabanlı koşullu erişim ilkeleri oluşturma
+Koşullu erişim, bir Azure Active Directory (Azure AD) teknolojisidir. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*. Başka bir deyişle, ilkeler yapılandırmak için Intune ve Azure AD arasında değişim yapmanız gerekmez.
 
 > [!IMPORTANT]
-> Intune Azure portalından Azure AD koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.
+> Intune portalından koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>Uygulama tabanlı bir koşullu erişim ilkesi oluşturmak için
 
 > [!IMPORTANT]
 > Uygulama tabanlı koşullu erişim ilkelerini kullanmadan önce uygulamalarınıza [Intune uygulama koruma ilkeleri](app-protection-policies.md) uygulamanız gerekir.
 
-1. **Intune Panosu**’nda, **Koşullu erişim**’i seçin.
+1. İçinde **Intune Panosu**seçin **koşullu erişim**.
 
 2. **İlkeler** bölmesinde **Yeni ilke**’yi seçerek yeni uygulama tabanlı koşullu erişim ilkenizi oluşturun.
 

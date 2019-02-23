@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 016b59a915058c3f2d0647a72e3ead224a010500
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845100"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742458"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Cihaz profillerini kullanarak Intune cihazlarınızda özellikleri ayarlar uygulanır
 
@@ -34,7 +34,7 @@ Bazı profil örnekleri şunlardır:
 - İzin verme veya cihazda bluetooth için erişimi engelleme.
 - Şirket ağınıza farklı cihazlara erişim sağlayan bir WiFi veya VPN profili oluşturun.
 - Yüklendiklerinde dahil olmak üzere, yazılım güncelleştirmelerini yönetir.
-- Bir Android cihazı, bir uygulama çalıştırmasına veya daha fazla uygulama çalıştırma bir adanmış bilgi noktası cihazı çalıştırın.
+- Bir Android cihazı, bir uygulama çalıştırmasına veya daha fazla uygulama çalıştırma adanmış bilgi noktası cihazı çalıştırın.
 
 Bu makalede, profil oluşturma adımları listelenir ve profilleri oluşturabileceğiniz farklı türde genel bir bakış sağlar. İzin vermek veya bazı özellikler cihazlara önlemek için bu profilleri kullanın.
 
@@ -164,7 +164,7 @@ Bu özellik şunları destekler:
 
 - Windows 10 ve üzeri
 
-Bilgi noktası ayarları için cihaz kısıtlamaları olarak da kullanılabilir [Android](device-restrictions-android.md#kiosk), [Android Kurumsal](device-restrictions-android-for-work.md#kiosk-settings), ve [ios](device-restrictions-ios.md#kiosk-supervised-only).
+Bilgi noktası ayarları için cihaz kısıtlamaları olarak da kullanılabilir [Android](device-restrictions-android.md#kiosk), [Android Kurumsal](device-restrictions-android-for-work.md#dedicated-device-settings), ve [ios](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## <a name="email"></a>Email
 

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune; seodec18
@@ -15,48 +15,95 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5c09dca64b227daf21c8a492221a5e025cb20
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: 90405b61bd21a96e27e9654a496068d06e368b61
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458935"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742729"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarları
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bu makalede, listeler ve iOS cihazlarında denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, izin veya özellikleri devre dışı bırakabilir, parola kuralları, izin veya belirli uygulamalar ve daha fazlasını sınırlamak için bu ayarları kullanın.
 
 Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan veya iOS cihazlarınıza dağıtılmış.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
-[Bir cihaz yapılandırma profili oluşturma](device-restrictions-configure.md).
+
+[Cihaz kısıtlamalarını yapılandırma profili oluşturma](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>Genel
 
-- **Kullanım verilerini paylaş**: Seçin **blok** cihazın Apple'a tanılama ve kullanım verileri göndermesini önlemek için. **Yapılandırılmamış** gönderilmek üzere bu verileri sağlar.
-  - **Tanılama verilerinin gönderimine**: **Blok** kullanıcının tanılama gönderiminde ve uygulama analizi ayarlarında değiştirmesini engeller **tanılama ve kullanım** (cihaz ayarları). Bu ayarı kullanabilmeniz için cihazın denetimli modda (iOS 9.3.2+) olmalıdır. **Yapılandırılmamış** bu cihaz ayarlarını değiştirmesine izin verir.
-- **Ekran Yakalama**: Seçin **blok** ekran görüntüleri veya ekran önlemek için cihazda yakalar. **Yapılandırılmamış** kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
-  - **(Yalnızca denetimli) Classroom uygulamasıyla ekranı uzaktan izlemesine**: Seçin **blok** Classroom uygulamasının ekranı cihazda uzaktan görüntülemesini engellemek için. Bu ayarı kullanabilmeniz için cihazın denetimli modda (iOS 9.3 ve üzeri) olmalıdır. **Yapılandırılmamış** ekranını görüntülemek Apple Classroom uygulamasını sağlar.
-  - **İstem olmadan ekranı izleme (yalnızca denetimli) tarafından**: Varsa kümesine **izin**, Öğretmenler sessizce öğrencilerinin bilgisi olmadan Classroom uygulamasını kullanarak, öğrencilerin iOS cihazlarının ekranını inceleyin. Classroom uygulaması kullanılarak otomatik olarak bir sınıfa kaydolan Öğrenci cihazları izni o kursun öğretmenine. **Yapılandırılmamış** bu özellik engeller.
-- **Güvenilmeyen TLS sertifikaları**: Seçin **blok** cihazda güvenilmeyen Aktarım Katmanı Güvenliği (TLS) sertifikalarını önlemek için. **Yapılandırılmamış** TLS sertifikalarına izin verir.
-- **Kurumsal uygulama güveni**: Seçin **blok** kaldırmak için **Kurumsal geliştiriciye güven** ayarları düğmesi > Genel > profiller ve cihazda cihaz yönetimi. **Yapılandırılmamış** kullanıcının uygulama Mağazası'ndan indirilen olmayan uygulamalara güvenmeyi seçmesine olanak sağlar.
-- **Hesap değişikliği (yalnızca denetimli)**: Ayarlandığında **blok**, kullanıcının iOS ayarları uygulamasından cihaza özgü ayarları güncelleştirilemiyor. Örneğin, kullanıcı olamaz yeni cihaz hesapları oluşturma veya kullanıcı adı ve parola ile değiştirin. **Yapılandırılmamış** kullanıcıların bu ayarlarını değiştirmesine olanak sağlar.
+- **Kullanım verilerini paylaş**: Seçin **blok** cihazın Apple'a tanılama ve kullanım verileri göndermesini önlemek için. **Yapılandırılmamış** (varsayılan) bu veriler gönderilmesini sağlar.
+  - **Tanılama gönderimi ayarlarının değiştirilmesi (yalnızca denetimli)**: **Blok** kullanıcının tanılama gönderiminde ve uygulama analizi ayarlarında değiştirmesini engeller **tanılama ve kullanım** (cihaz ayarları). **Yapılandırılmamış** (varsayılan), bu cihaz ayarlarını değiştirmesine izin verir.
+
+    Bu özellik şu platformlarda geçerlidir:  
+    - iOS 9.3.2 ve üstü
+
+- **Ekran Yakalama**: Seçin **blok** ekran görüntüleri veya ekran önlemek için cihazda yakalar. **Yapılandırılmamış** (varsayılan), kullanıcının ekran içeriğini resim olarak yakalamasına olanak sağlar.
+  - **(Yalnızca denetimli) Classroom uygulamasıyla ekranı uzaktan izlemesine**: Seçin **blok** Classroom uygulamasının ekranı cihazda uzaktan görüntülemesini engellemek için. **Yapılandırılmamış** (varsayılan) ekranını görüntülemek Apple Classroom uygulamasını sağlar.
+
+    Bu özellik şu platformlarda geçerlidir:  
+    - iOS 9.3 ve üzeri
+
+  - **İstem olmadan ekranı izleme (yalnızca denetimli) tarafından**: Varsa kümesine **izin**, Öğretmenler sessizce öğrencilerinin bilgisi olmadan Classroom uygulamasını kullanarak, öğrencilerin iOS cihazlarının ekranını inceleyin. Classroom uygulaması kullanılarak otomatik olarak bir sınıfa kaydolan Öğrenci cihazları izni o kursun öğretmenine. **Yapılandırılmamış** (varsayılan), bu özellik engeller.
+- **Güvenilmeyen TLS sertifikaları**: Seçin **blok** cihazda güvenilmeyen Aktarım Katmanı Güvenliği (TLS) sertifikalarını önlemek için. **Yapılandırılmamış** (varsayılan), TLS sertifikalarına izin verir.
+- **Kurumsal uygulama güveni**: Seçin **blok** kaldırmak için **Kurumsal geliştiriciye güven** ayarları düğmesi > Genel > profiller ve cihazda cihaz yönetimi. **Yapılandırılmamış** (varsayılan), kullanıcının uygulama Mağazası'ndan indirilen olmayan uygulamalara güvenmeyi seçmesine olanak sağlar.
+- **Hesap değişikliği (yalnızca denetimli)**: Ayarlandığında **blok**, kullanıcının iOS ayarları uygulamasından cihaza özgü ayarları güncelleştirilemiyor. Örneğin, kullanıcı olamaz yeni cihaz hesapları oluşturma veya kullanıcı adı ve parola ile değiştirin. **Yapılandırılmamış** (varsayılan), bu ayarları değiştirmek kullanıcıların sağlar.
+
   Bu özellik, posta, kişiler, takvim, Twitter ve daha fazla gibi iOS ayarları uygulamasından erişilebilen ayarlar için de geçerlidir. Bu özellik, Microsoft Outlook uygulaması gibi iOS ayarları uygulamasından yapılandırılabilir olmayan hesap ayarları ile uygulamalar için geçerli değildir.
-- **(Yalnızca denetimli) cihaz ayarlarında kısıtlamaları etkinleştirme**: Seçin **blok** kullanıcıların, cihaz ayarlarında kısıtlamaları etkinleştirmesini önlemek için. **Yapılandırılmamış** kullanıcının cihazda cihaz kısıtlamalarını (ebeveyn denetimleri gibi) yapılandırmasına izin verir.
-- **Silme tüm içerik ve ayarlar seçeneğini (yalnızca denetimli) cihazda**: Seçin **blok** nedenle kullanıcılar silme tüm içerik ve ayarları (yalnızca denetimli) cihaz seçeneğini kullanamazsınız. **Yapılandırılmamış** kullanıcılara bu ayarlara erişim sağlar.
-- **Cihaz adının değiştirilmesi (yalnızca denetimli)**: Seçin **blok** cihaz adı değiştirilemez. **Yapılandırılmamış** kullanıcının cihazın adını değiştirmesine izin verir.
-- **Bildirim ayarlarının değiştirilmesi (yalnızca denetimli)**: Seçin **blok** bildirim ayarları değiştirilemez. **Yapılandırılmamış** kullanıcının cihazın bildirim ayarlarını değiştirmesine izin verir.
-- **Duvar kağıdı değişikliği (yalnızca denetimli)**: **Blok** duvar kağıdı değişmesini önler. **Yapılandırılmamış** kullanıcının cihazın duvar kağıdını değiştirmesine izin verir.
-- **Kurumsal uygulama güven ayarlarının değiştirilmesi (yalnızca denetimli)**: **Blok** kullanıcının denetimli cihazlarda Kurumsal uygulama güven ayarlarını değiştirmesini engeller. **Yapılandırılmamış** uygulama Mağazası'ndan indirilen olmayan uygulamalara güvenmeyi izin verir.
-- **Yapılandırma profilindeki değişiklikler (yalnızca denetimli)**: **Blok** cihaz yapılandırma profili değişiklikleri engeller. **Yapılandırılmamış** kullanıcının yapılandırma profilleri yüklemesine izin verir.
+- **Ekran zaman (yalnızca denetimli)**: Seçin **blok** kullanıcıların kendi kısıtlamaları (cihaz ayarları) ekran zamanında ayarlama özelliğinden önlemek için. **Yapılandırılmamış** cihazda cihaz kısıtlamalarını (ebeveyn denetimleri veya içerik ve gizlilik kısıtlamaları gibi) yapılandırma kullanıcıya izin verir.
+
+  Bu ayar adlandırıldı **cihaz ayarlarında kısıtlamaları etkinleştirme**. Bu değişikliğin etkisini:  
+  
+  - iOS 11.4.1 ve önceki sürümleri: **Blok** son kullanıcıların cihaz ayarlarında kısıtlamaları kendi ayarından engeller. Bu aynı şeydir; ve son kullanıcılar için herhangi bir değişiklik yok.
+  - iOS 12.0 ve daha sonra: **Blok** son kullanıcılar kendi önlenmiş **ekran zaman** cihaz ayarlarında (Ayarlar > Genel > Ekran zaman), içerik ve gizlilik kısıtlamaları da dahil olmak üzere. İOS 12.0 yükseltilmiş cihazları görmezsiniz Cihaz ayarlarında kısıtlamaları sekmesinde artık (Ayarlar > Genel > cihaz Yönetimi > Yönetim profili > kısıtlamaları). Bu ayarlar **ekran zaman**.
+  
+- **Silme tüm içerik ve ayarlar seçeneğini (yalnızca denetimli) cihazda**: Seçin **blok** nedenle kullanıcılar silme tüm içerik ve ayarları (yalnızca denetimli) cihaz seçeneğini kullanamazsınız. **Yapılandırılmamış** (varsayılan) bu ayarlara erişimi kullanıcılar verir.
+- **Cihaz adının değiştirilmesi (yalnızca denetimli)**: Seçin **blok** cihaz adı değiştirilemez. **Yapılandırılmamış** (varsayılan), kullanıcının cihazın adını değiştirmesine izin verir.
+- **Bildirim ayarlarının değiştirilmesi (yalnızca denetimli)**: Seçin **blok** bildirim ayarları değiştirilemez. **Yapılandırılmamış** (varsayılan), kullanıcının cihazın bildirim ayarlarını değiştirmesine izin verir.
+- **Duvar kağıdı değişikliği (yalnızca denetimli)**: **Blok** duvar kağıdı değişmesini önler. **Yapılandırılmamış** (varsayılan), kullanıcının cihazın duvar kağıdını değiştirmesine izin verir.
+- **Kurumsal uygulama güven ayarlarının değiştirilmesi (yalnızca denetimli)**: **Blok** kullanıcının denetimli cihazlarda Kurumsal uygulama güven ayarlarını değiştirmesini engeller. **Yapılandırılmamış** (varsayılan), uygulama Mağazası'ndan indirilen olmayan uygulamaları güvenmesini sağlar.
+- **Yapılandırma profilindeki değişiklikler (yalnızca denetimli)**: **Blok** cihaz yapılandırma profili değişiklikleri engeller. **Yapılandırılmamış** (varsayılan), kullanıcının yapılandırma profilleri yüklemesine izin verir.
 - **Etkinleştirme kilidi (yalnızca denetimli)**: Seçin **izin** etkinleştirme Kilidi'ni etkinleştirmek için iOS cihazlarının denetimli. Etkinleştirme kilidi, bir kaybolan veya çalınan cihazın yeniden etkinleştirilmesini zorlaştırır.
-- **Engelle (yalnızca denetimli) uygulama kaldırma**: Seçin **blok** kullanıcılar uygulamaları kaldırmasını önlemek için. **Yapılandırılmamış** kullanıcıların CİHAZDAN uygulamalarının kaldırılmasına olanak tanır.
-- **Blokları USB kısıtlı modu (yalnızca denetimli)**: Seçin **blok** denetimli cihazlarda USB kısıtlı modu devre dışı bırakmak için. USB kısıtlı modu için bir saatten fazla kilitli olan bir cihaz ile veri değişimi gelen USB Donatılar engeller. **Yapılandırılmamış** USB kısıtlı modu sağlar.
+- **Engelle (yalnızca denetimli) uygulama kaldırma**: Seçin **blok** kullanıcılar uygulamaları kaldırmasını önlemek için. **Yapılandırılmamış** (varsayılan), kullanıcıların CİHAZDAN uygulamaları kaldırmak sağlar.
+- **Blokları USB kısıtlı modu (yalnızca denetimli)**: Seçin **blok** denetimli cihazlarda USB kısıtlı modu devre dışı bırakmak için. USB kısıtlı modu için bir saatten fazla kilitli olan bir cihaz ile veri değişimi gelen USB Donatılar engeller. **Yapılandırılmamış** (varsayılan), USB kısıtlı modda izin verir.
 - **Otomatik tarih ve saat (yalnızca denetimli) zorla**: **Gerekli** zorlar denetimli cihazların tarih ve saat otomatik olarak ayarlanır. Cihaz cep telefonu bağlantılarına sahiptir veya konum Hizmetleri ile Wi-Fi etkin olduğundan cihazın saat dilimini güncelleştirilir.
-- **İstek bırakın (yalnızca denetimli) boyunca sınıfta kurs izni Öğrenciler gerektiren**: **Gerekli** kursu bırakmak Öğretmen Classroom uygulamadan izin istemek kullanarak bir yönetilmeyen kursta kayıtlı öğrencilerin zorlar. İOS 11.3 + yalnızca kullanılabilir. **Yapılandırılmamış** Öğrenci izin istemek için zorlamaz.
+- **İstek bırakın (yalnızca denetimli) boyunca sınıfta kurs izni Öğrenciler gerektiren**: **Gerekli** kursu bırakmak Öğretmen Classroom uygulamadan izin istemek kullanarak bir yönetilmeyen kursta kayıtlı öğrencilerin zorlar. **Yapılandırılmamış** (varsayılan), izin istemek için Öğrenci zorla değil.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS 11,3 ve üzeri
+
+- **Bir uygulamaya kilitleyip (yalnızca denetimli) sormadan cihazı kilitlemek sınıf izin**: **Etkinleştirme** uygulamaları kilitlemek veya Öğrenci sormadan Classroom uygulamasını kullanarak cihazı kilitlemek Öğretmen sağlar. Erişim Öğretmen belirtilen uygulamaların yalnızca uygulamaları anlamına gelir kilitleme cihaz kullanabilirsiniz. **Yapılandırılmamış** (varsayılan), uygulamaları veya Öğrenci sormadan Classroom uygulamasını kullanarak cihazlarını kilitlemelerini Öğretmenler engeller. 
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS 11.0 ve sonraki
+
+- **(Yalnızca denetimli) sormadan Classroom sınıfları otomatik olarak birleştirme**: **Etkinleştirme** Classroom uygulamasında Öğretmen sormadan bir sınıfı katılmak öğrencilerin otomatik olarak sağlar. **Yapılandırılmamış** (varsayılan), Öğretmen Classroom uygulamasında bir sınıfı katılmak öğrencilerin istediğiniz ister.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS 11.0 ve sonraki
+
 - **Havadan PKI güncelleştirmelere izin ver**: **İzin** , kullanıcıların cihazlarını bir bilgisayara bağlanmadan yazılım güncelleştirmeleri almasına olanak sağlar.
-- **İzleme sınırı ad**: Seçin **sınırı** cihaz reklam tanımlayıcısı devre dışı bırakmak için. **Yapılandırılmamış** etkin tutar.
-- **(Yalnızca denetimli) blok VPN oluşturma**: **Blok** kullanıcıların VPN yapılandırma ayarlarını oluşturmasını engeller. **Yapılandırılmamış** cihazda VPN oluşturmalarını sağlar.
+- **İzleme sınırı ad**: Seçin **sınırı** cihaz reklam tanımlayıcısı devre dışı bırakmak için. **Yapılandırılmamış** (varsayılan) etkin tutar.
+- **(Yalnızca denetimli) blok VPN oluşturma**: **Blok** kullanıcıların VPN yapılandırma ayarlarını oluşturmasını engeller. **Yapılandırılmamış** (varsayılan), kullanıcıların cihazda VPN oluşturan olanak tanır.
+- **(Yalnızca denetimli) Esım ayarlarını değiştirme**: **Blok** kullanıcıların cihazda Esım için hücresel planı ekleyerek veya çıkararak engeller. **Yapılandırılmamış** (varsayılan), bu ayarları değiştirmek kullanıcıların sağlar.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS 12,1 ve üzeri
+
+- **(Yalnızca denetimli) yazılım güncelleştirmelerinin erteleneceği**: Ayarlandığında **yapılandırılmadı** (varsayılan), yazılım güncelleştirmeleri gösterilir cihazda gibi Apple onları serbest bırakır. Bir iOS güncelleştirme Apple tarafından belirli bir tarihte yayımlanan, örneğin, daha sonra bu güncelleştirmeyi doğal olarak yayın tarihindeki cihazda gösterilir.
+
+  **Etkinleştirme** 0-90 güne ait cihazlarda yazılım güncelleştirmeleri gösterilirken gecikme sağlar. Bu ayar, güncelleştirmeler veya yüklü olmayan denetlemez. 
+
+  - **Yazılım güncelleştirmelerini görünürlüğünü gecikme**: 0-90 gün arasında bir değer girin. Gecikme süresi dolduğunda kullanıcılar gecikme tetiklendiğinde erken kullanılabilir işletim sistemi sürümüne güncelleştirmek için bildirim alın.
+
+    Örneğin, iOS 12.a edinilebilir **1 Ocak**, ve **gecikme görünürlük** ayarlanır **5 gün**, ardından iOS 12.a son kullanıcı cihazlarında kullanılabilir bir güncelleştirme olarak göremiyorsanız. Üzerinde **altıncı gün** sürümünden güncelleştirmesi kullanıma sunuldu ve son kullanıcılar da yükleyebilirsiniz.
+
+    Bu ayar için geçerlidir:  
+    - iOS 11,3 ve üzeri
 
 ## <a name="configurations-requiring-supervision"></a>Denetim gerektiren yapılandırmalar
 
@@ -94,7 +141,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 - Apple Watch ile eşleştirme 
 
 > [!NOTE]
-> Apple, 2019’da bazı ayarların yalnızca denetimli hale geleceğini doğruladı. Apple’ın bu ayarları yalnızca denetimli moduna aktarmasını beklemek yerine ayarları kullanırken, bu durumu göz önünde bulundurmanızı öneririz:
+> Apple, belirli ayarları yalnızca denetimli 2019 içinde taşımak onayladı. Bu ayarları yalnızca denetimli geçirmek Apple için beklemek yerine kullanırken bu göz önünde bulundurarak öneririz:
 > - Son kullanıcılar tarafından uygulama yükleme
 > - Uygulama kaldırma
 > - FaceTime
@@ -108,7 +155,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 
 ## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
-- **Parola**: Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun. Yapılandırılmamış bir parola girmeden cihaz erişmesine olanak tanır.
+- **Parola**: **Gerekli** son kullanıcının cihaza erişmek için bir parola girin. **Yapılandırılmamış** kullanıcıları parola girmeye gerek kalmadan cihazınıza erişim hakkı verir.
   - **Basit parolalar**: Seçin **blok** daha karmaşık bir parola gerektirme. **Yapılandırılmamış** gibi basit parolalara izin verir `0000` ve `1234`.
   - **Gerekli parola türü**: Kuruluşunuzda gerekli parola türünü seçin. Seçenekleriniz şunlardır:
     - **Cihaz varsayılanı**
@@ -122,16 +169,23 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
   - **Parola süresinin sonu (gün)**: Cihaz parolasının değiştirilmesi gerekmeden önce geçen gün sayısını girin.
   - **Önceki parolaların yeniden kullanılmasını engelle**: Eski bir parola yeniden kullanılana kadar kullanılması gereken yeni parola sayısını girin.
   - **Parmak iziyle kilit açma**: Seçin **blok** cihazın kilidini açmak için parmak izi'ni kullanarak önlemek için. **Yapılandırılmamış** parmak izi kullanarak cihaz kilidini açmak kullanıcının sağlar.
-- **Geçiş kodu değişikliği (yalnızca denetimli)**: Seçin **blok** eklenen veya kaldırılan değiştirilmesini geçiş kodunu durdurmak için. Bu özellik engellendikten sonra geçiş kodu kısıtlamalarına yapılan denetimli cihazlarda dikkate alınmaz. **Yapılandırılmamış** eklenmesine, değiştirilmesine veya kaldırılması geçiş kodlarını sağlar.
-  - **Parmak izi değişikliği (yalnızca denetimli)**: **Blok** değiştirme, ekleme veya kaldırma Touchıd parmak izlerini kullanıcının durdurur. **Yapılandırılmamış** kullanıcı güncelleştirme Touchıd parmak izlerini cihazda izin verir.
+- **Geçiş kodu değişikliği (yalnızca denetimli)**: Seçin **blok** eklenen veya kaldırılan değiştirilmesini geçiş kodunu durdurmak için. Bu özellik engellendikten sonra geçiş kodu kısıtlamalarına yapılan denetimli cihazlarda dikkate alınmaz. **Yapılandırılmamış** (varsayılan) eklenmesine, değiştirilmesine veya kaldırılması geçiş kodlarını sağlar.
+
+  - **Parmak izi değişikliği (yalnızca denetimli)**: **Blok** değiştirme, ekleme veya kaldırma Touchıd parmak izlerini kullanıcının durdurur. **Yapılandırılmamış** (varsayılan) cihazda Touchıd parmak izlerini kullanıcı güncelleştirme sağlar.
+
 - **Blok parola otomatik doldurma (yalnızca denetimli)**: Seçin **blok** İos'ta parola otomatik doldurma özelliğinin kullanılmasını önlemek için. Seçme **blok** aynı zamanda şunları yapar:
+
   - Kullanıcılar, Safari veya herhangi bir uygulama kaydedilmiş bir parola kullanmayı sorulmaz.
   - Otomatik güçlü parolalar devre dışıdır ve kullanıcıların güçlü parolalar önerilen değildir.
 
-  **Yapılandırılmamış** bu özellikleri sağlar.
+  **Yapılandırılmamış** (varsayılan), bu özellikleri sağlar.
 
-- **(Yalnızca denetimli) parola yakınlık isteklerini engellemek**: Seçin **blok** cihazın yakın cihazlardan parola istemeyen şekilde. **Yapılandırılmamış** bu parola istekleri sağlar.
-- **Engelle (yalnızca denetimli) parola paylaşımı**: **Blok** engeller parolaları Airdrop'a kullanarak cihazlar arasında paylaşma. **Yapılandırılmamış** paylaşılması parola sağlar.
+- **(Yalnızca denetimli) parola yakınlık isteklerini engellemek**: Seçin **blok** cihazın yakın cihazlardan parola istemeyen şekilde. **Yapılandırılmamış** (varsayılan) Bu parola istekleri sağlar.
+- **Engelle (yalnızca denetimli) parola paylaşımı**: **Blok** engeller parolaları Airdrop'a kullanarak cihazlar arasında paylaşma. **Yapılandırılmamış** (varsayılan), paylaşılan parola sağlar.
+- **Parola veya kredi kartı bilgileri (yalnızca denetimli) otomatik doldurma için Touch ID veya Face ID kimlik doğrulaması gerektiren**: Ayarlandığında **gerektiren**, kullanıcıların kimlik doğrulaması yapması Touchıd veya Faceıd önce parolaları kullanmanızı veya kredi kartı bilgileri, Safari ve diğer uygulamalarda doldurulmuş otomatik olabilir. **Yapılandırılmamış** (varsayılan), kullanıcıların bu özelliği cihaz ayarlarını denetlemek sağlar.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS 11.0 ve sonraki
 
 <sup>1</sup>yapılandırdığınızda **ekran kilitlenmeden, işlem yapılmayan en fazla dakika** ve **dakika ekran kilitlendikten sonra parola istenmeden önce** ayarlarını sırayla uygulayarak. Örneğin, her iki ayarın değeri ayarlarsanız **5** dakika, beş dakika sonra otomatik olarak ekran kapatır ve cihaz kilitli bir ek sonra beş dakika. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan dakikanın sonunda beş dakika sonra cihazı kilitler.
 
@@ -186,6 +240,19 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 - **Spotlight aramasının (yalnızca denetimli) internet'ten sonuç döndürmesine izin**: **Blok** Spotlight Internet aramasının herhangi bir sonuç döndürmesini durdurur. **Yapılandırılmamış** Spotlight arama, arama sonuçları sağlamak için Internet'e bağlanmasına izin verir.
 - **Engelle (yalnızca denetimli) cihaz sistem uygulamalardan kaldırılmasını**: Seçme **blok** sistemi uygulamaları CİHAZDAN kaldırma özelliği devre dışı bırakır. **Yapılandırılmamış** kullanıcıların sistemi uygulamalarının kaldırılmasına olanak tanır.
 
+#### <a name="safari"></a>Safari
+
+- **Safari**: **Blok** cihazda Safari tarayıcısı kullanılarak. **Yapılandırılmamış** Safari tarayıcısı kullanmasına olanak tanır.
+- **Otomatik doldurmaya**: **Blok** cihazda Safari otomatik doldurma özelliğini devre dışı bırakır. **Yapılandırılmamış** kullanıcıların web tarayıcısında otomatik tamamlama ayarlarını değiştirmesine olanak tanır.
+- **Tanımlama bilgilerini**: Tanımlama bilgilerinin cihazda nasıl işleneceğini seçin. Seçenekleriniz şunlardır:
+  - İzin Ver
+  - Tüm tanımlama bilgilerini engelle
+  - Ziyaret edilen web sitelerinin tanımlama bilgilerine izin ver
+  - Geçerli web sitesinden tanımlama bilgilerine izin ver
+- **JavaScript**: **Blok** tarayıcıda Java betiğinin cihazda çalışmasını engeller. **Yapılandırılmamış** Java betiklerini sağlar.
+- **Dolandırıcılık uyarıları**: **Gerekli** sahtekarlık uyarılarına cihazdaki web tarayıcısının gösterilecek. **Yapılandırılmamış** bu özelliği devre dışı bırakır.
+- **Açılır pencereler**: **Blok** web tarayıcısında açılır pencere engelleyicisini devre dışı bırakmak için. **Yapılandırılmamış** açılır pencere engelleyicisine izin verir.
+
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
 Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini yapılandırabilirsiniz:
@@ -225,29 +292,38 @@ Bu listelerden uygulamaları eklemek, şunları yapabilirsiniz:
 
 ## <a name="wireless"></a>Kablosuz
 
-- **Veri dolaşımı**: Seçin **blok** hücresel ağ üzerinde veri dolaşımını önlemek için. **Yapılandırılmamış** cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
-- **Dolaşım sırasında genel arka planda getirme**: **Blok** hücresel ağ üzerinde Dolaşım sırasında genel arka planda getirme özelliğini kullanarak engeller. **Yapılandırılmamış** cihazın bir cep telefonu şebekesinde dolaşımdayken e-posta gibi verileri getirme izin verir.
-- **Sesli arama**: Seçin **blok** kullanıcıların cihazda sesli arama özelliğini kullanmasını önlemek için. **Yapılandırılmamış** cihazda sesle sağlar.
-- **Ses dolaşımı**: Seçin **blok** ses telefonu şebekesinde dolaşımı önlemek için. **Yapılandırılmamış** ses cihaz hücresel ağ kullanırken dolaşımına izin verir.
-- **Uygulama hücresel veri kullanım ayarlarında (yalnızca denetimli) yapılan değişiklikler**: Seçin **blok** uygulama hücresel veri kullanımı ayarlarında yapılan değişiklikleri önlemek için. **Yapılandırılmamış** kullanıcının hangi uygulamaların hücresel veri kullanma izin denetlemesine olanak sağlar.
-- **Kişisel etkin nokta**: **Blok** cihazın kişisel etkin nokta kullanılmasını engeller. Bu ayar, bazı operatörler ile uyumlu olmayabilir. **Yapılandırılmamış** bu özelliği sağlar.
-- **(Yalnızca denetimli) yapılandırma profilleri kullanarak yalnızca Wi-Fi ağlarına Katıl**: **Gerekli** cihaz, yalnızca Intune yapılandırma profilleri aracılığıyla kurulan Wi-Fi ağlarını kullanmaya zorlar. **Yapılandırılmamış** cihazın diğer Wi-Fi ağlarını kullanmaya izin verir.
+- **Veri dolaşımı**: Seçin **blok** hücresel ağ üzerinde veri dolaşımını önlemek için. **Yapılandırılmamış** (varsayılan), cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
+- **Dolaşım sırasında genel arka planda getirme**: **Blok** hücresel ağ üzerinde Dolaşım sırasında genel arka planda getirme özelliğini kullanarak engeller. **Yapılandırılmamış** (varsayılan), cihazın bir cep telefonu şebekesinde dolaşımdayken e-posta gibi verileri getirmek izin verir.
+- **Sesli arama**: Seçin **blok** kullanıcıların cihazda sesli arama özelliğini kullanmasını önlemek için. **Yapılandırılmamış** (varsayılan), cihazda sesle izin verir.
+- **Ses dolaşımı**: Seçin **blok** ses telefonu şebekesinde dolaşımı önlemek için. **Yapılandırılmamış** (varsayılan) ses cihaz hücresel ağ kullanırken dolaşımına izin verir.
+- **Uygulama hücresel veri kullanım ayarlarında (yalnızca denetimli) yapılan değişiklikler**: Seçin **blok** uygulama hücresel veri kullanımı ayarlarında yapılan değişiklikleri önlemek için. **Yapılandırılmamış** (varsayılan), kullanıcının hangi uygulamaların hücresel veri kullanma izin denetlemesine olanak sağlar.
+- **(Yalnızca denetimli) hücresel planı ayarlarında yapılan değişiklikler**: **Blok** kullanıcılar hücresel plandaki tüm ayarlarını değiştirmesini engeller. **Yapılandırılmamış** (varsayılan), kullanıcıların değişiklik yapmasına izin verir.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS 11.0 ve sonraki
+
+- **Kişisel etkin nokta**: **Blok** cihazın kişisel etkin nokta kullanılmasını engeller. Bu ayar, bazı operatörler ile uyumlu olmayabilir. **Yapılandırılmamış** (varsayılan), bu özelliği sağlar.
+- **(Yalnızca denetimli) yapılandırma profilleri kullanarak yalnızca Wi-Fi ağlarına Katıl**: **Gerekli** cihaz, yalnızca Intune yapılandırma profilleri aracılığıyla kurulan Wi-Fi ağlarını kullanmaya zorlar. **Yapılandırılmamış** (varsayılan) diğer Wi-Fi ağlarına kullanmasına izin verir.
 - **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)**: Hücresel ağa bağlıyken yönetilen uygulamalar türleri kullanabilirsiniz verileri tanımlar. Seçenekleriniz şunlardır:
   - **Hücresel veri kullanımını engelleme**: Engellemek için hücresel veri kullanarak **tüm yönetilen uygulamalar** veya **belirli uygulamalar seçebilirsiniz**.
   - **Dolaşım sırasında hücresel veri kullanımını engelleme**: Dolaşım sırasında hücresel veri kullanarak block **tüm yönetilen uygulamalar** veya **belirli uygulamalar seçebilirsiniz**.
 
 ## <a name="connected-devices"></a>Bağlı Cihazlar
 
-- **AirDrop (yalnızca denetimli)**: **Blok** Airdrop'a cihazda kullanarak engeller. **Yapılandırılmamış** yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanımına izin verir.
-- **Apple Watch eşleştirme (yalnızca denetimli)**: **Blok** bir Apple Watch ile eşleştirme engeller. **Yapılandırılmamış** cihazın bir Apple Watch ile eşleşmesine izin verir.
+- **AirDrop (yalnızca denetimli)**: **Blok** Airdrop'a cihazda kullanarak engeller. **Yapılandırılmamış** (varsayılan), yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasını sağlar.
+- **Apple Watch eşleştirme (yalnızca denetimli)**: **Blok** bir Apple Watch ile eşleştirme engeller. **Yapılandırılmamış** (varsayılan), cihazın bir Apple Watch ile eşleşmesine izin verir.
 - **Eşleştirilmiş Apple Watch için bilek algılama**: **Gerekli** bir eşleştirilmiş Apple Watch için bilek algılama kullanmaya zorlar. Bunu değil takılmadığında gerektiğinde, Apple Watch bildirim görüntülenmez. 
-- **Bluetooth değişikliği (yalnızca denetimli)**: **Blok** son kullanıcının cihazda Bluetooth ayarlarını değiştirmesini engeller. **Yapılandırılmamış** bu ayarları değiştirmesine izin verir.
-- **Bir iOS cihazının eşleştirilebildiği (yalnızca denetimli) cihazları denetlemek için konak eşleştirmeye**: **Yapılandırılmamış** bir iOS cihazının eşleştirilebildiği hangi cihazların yöneticinin denetlemesi için konak eşleştirmeye izin verir. **Blok** eşlenebileceği engeller.
-- **Giden AirPlay istekleri parola gerektiren**: **Gerekli** kullanıcının diğer Apple cihazlarına içerik akışı sağlamak üzere airplay'i bir eşleştirme parolası. **Yapılandırılmamış** kullanıcının bir parola girmeden AirPlay kullanarak içerik akışı sağlar.
-- **Engelle (yalnızca denetimli) AirPrint**: Seçin **blok** cihazda AirPrint özelliğini kullanarak önlemek için. **Yapılandırılmamış** AirPrint kullanmasına izin verir.
-  - **Blok depolama AirPrint kimlik bilgileri (yalnızca denetimli) anahtarlıktaki**: **Blok** kullanıcı adı ve parola cihazda Anahtarlık depolama kullanarak engeller. **Yapılandırılmamış** Anahtarlık uygulamada AirPrint kullanıcı adı ve parola depolama sağlar.
+- **Bluetooth değişikliği (yalnızca denetimli)**: **Blok** son kullanıcının cihazda Bluetooth ayarlarını değiştirmesini engeller. **Yapılandırılmamış** (varsayılan), bu ayarları değiştirmek kullanıcının sağlar.
+- **Bir iOS cihazının eşleştirilebildiği (yalnızca denetimli) cihazları denetlemek için konak eşleştirmeye**: **Yapılandırılmamış** (varsayılan) bir iOS cihazının eşleştirilebildiği hangi cihazların yöneticinin denetlemesi için konak eşleştirmeye izin verir. **Blok** eşlenebileceği engeller.
+- **Giden AirPlay istekleri parola gerektiren**: **Gerekli** kullanıcının diğer Apple cihazlarına içerik akışı sağlamak üzere airplay'i bir eşleştirme parolası. **Yapılandırılmamış** (varsayılan), kullanıcının bir parola girmeden AirPlay kullanarak içerik akışı sağlar.
+- **Engelle (yalnızca denetimli) AirPrint**: Seçin **blok** cihazda AirPrint özelliğini kullanarak önlemek için. **Yapılandırılmamış** (varsayılan) AirPrint kullanmasına izin verir.
+  - **Blok depolama AirPrint kimlik bilgileri (yalnızca denetimli) anahtarlıktaki**: **Blok** kullanıcı adı ve parola cihazda Anahtarlık depolama kullanarak engeller. **Yapılandırılmamış** (varsayılan), anahtar zinciri uygulamada AirPrint kullanıcı adı ve parola depolama sağlar.
   - **(Yalnızca denetimli) için AirPrint güvenli TLS sertifika gerektiren**: **Gerekli** TLS yazdırma iletişim için güvenilen sertifikalar kullanmak için cihazın zorlar.
-  - **AirPrint yazıcıları (yalnızca denetimli) iBeacon bulunmasını engelleyin**: **Blok** kimlik avı ağ trafiği için kötü amaçlı AirPrint Bluetooth işaretleri engeller. **Yapılandırılmamış** AirPrint yazıcıları cihazda reklam sağlar.
+  - **AirPrint yazıcıları (yalnızca denetimli) iBeacon bulunmasını engelleyin**: **Blok** kimlik avı ağ trafiği için kötü amaçlı AirPrint Bluetooth işaretleri engeller. **Yapılandırılmamış** (varsayılan), cihaz üzerinde AirPrint yazıcıları reklam sağlar.
+- **Engelleme ayarını ayarlama yeni cihazlar (yalnızca denetimli)**: **Blok** yakında yeni cihazlar Kurulum istemini devre dışı bırakır. **Yapılandırılmamış** (varsayılan) istemleri için yakında diğer Apple cihazlarına bağlanmasına izin verir.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS 11.0 ve sonraki
 
 ## <a name="keyboard-and-dictionary"></a>Klavye ve Sözlük
 
@@ -360,19 +436,6 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 | com.apple.Bridge            | İzleme        | Apple     |
 | com.apple.weather           | Hava durumu      | Apple     |
 
-## <a name="safari"></a>Safari
-
-- **Safari (yalnızca denetimli)**: **Blok** cihazda Safari tarayıcısı kullanılarak. **Yapılandırılmamış** Safari tarayıcısı kullanmasına olanak tanır.
-- **Otomatik doldurmaya**: **Blok** cihazda Safari otomatik doldurma özelliğini devre dışı bırakır. **Yapılandırılmamış** kullanıcıların web tarayıcısında otomatik tamamlama ayarlarını değiştirmesine olanak tanır.
-- **Tanımlama bilgilerini**: Tanımlama bilgilerinin cihazda nasıl işleneceğini seçin. Seçenekleriniz şunlardır:
-  - İzin Ver
-  - Tüm tanımlama bilgilerini engelle
-  - Ziyaret edilen web sitelerinin tanımlama bilgilerine izin ver
-  - Geçerli web sitesinden tanımlama bilgilerine izin ver
-- **JavaScript**: **Blok** tarayıcıda Java betiğinin cihazda çalışmasını engeller. **Yapılandırılmamış** Java betiklerini sağlar.
-- **Dolandırıcılık uyarıları**: **Gerekli** sahtekarlık uyarılarına cihazdaki web tarayıcısının gösterilecek. **Yapılandırılmamış** bu özelliği devre dışı bırakır.
-- **Açılır pencereler**: **Blok** web tarayıcısında açılır pencere engelleyicisini devre dışı bırakmak için. **Yapılandırılmamış** açılır pencere engelleyicisine izin verir.
-
 ## <a name="domains"></a>Etki Alanları
 
 ### <a name="unmarked-email-domains"></a>İşaretsiz e-posta etki alanları
@@ -389,6 +452,6 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Ardından, [profili atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
+[Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
-Şirket cihaz kısıtlamaları ve ayarlarını da ayarlayabilirsiniz [macOS](device-restrictions-macos.md) cihazlar.
+Üzerinde cihaz özelliklerini ve ayarlarını da kısıtlayabilirsiniz [macOS](device-restrictions-macos.md) cihazlar.

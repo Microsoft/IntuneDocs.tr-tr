@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,22 +14,22 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8bdb74c19e6b996bafc9284bfedaf0608fdf8fb
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 28a2ef36de4e664668875d2c9a099a573f5cfeba
+ms.sourcegitcommit: 68ff00ec0f848f9476740691ed1004144684317e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834628"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56667361"
 ---
 # <a name="intune-tenant-status-page"></a>Intune Kiracı durumu sayfası
-Kiracı durumu sayfası, Kiracı, lisans kullanılabilirlik ve kullanımı, bağlayıcı durumu ve Intune hizmeti hakkında önemli iletişimleri hakkında önemli ayrıntıları güncel kalın için merkezi bir merkez olarak kullanın.  
+Kiracı durumu, bir merkezi hub'ı kiracınız hakkında güncel ve önemli ayrıntılar görüntüleyebileceğiniz sayfasıdır. Lisans kullanılabilirlik ve kullanım, bağlayıcı durumunu ve Intune hizmeti hakkında önemli iletişimleri ayrıntıları içerir.  
 
 Azure portal gidin, panoyu görüntülemek için **Intune > Kiracı durumu**.  Kiracı durumu altında görünür **Yardım ve Destek grubu**.  
 
 Sayfa dört alana ayrılır:
 
 ## <a name="tenant-details"></a>Kiracı ayrıntıları
-Kiracınızın ayrıntılarının kiracınız hakkında bir bakışta bilgiler sağlar. Ayrıntıları Görüntüle, Kiracı adınızın ve konumu, MDM yetkilinizi ve kiracılara hizmet sürüm numaranızı gibi. Hizmet sürüm numarasıdır açan bir bağlantıya *Intune'daki yenilikler* burada okuyabilir en son özellikler ve güncelleştirmeler hakkında Microsoft docs'ta makale Intune hizmetine.  
+Kiracınızın ayrıntılarının kiracınız hakkında bir bakışta bilgiler sağlar. Ayrıntıları Görüntüle, Kiracı adınızın ve konumu, MDM yetkilinizi ve kiracılara hizmet sürüm numaranızı gibi. Hizmet sürüm numarasıdır açan bir bağlantıya *Intune'daki yenilikler* Microsoft docs'ta makale. İçinde *yenilikler*, en son özellikler ve güncelleştirmeler hakkında bilgi edinebilirsiniz Intune hizmetine.  
 
 Bu bölüm, ayrıca mevcut lisanslarınızı ve kaç kullanıcılara atanan ve hakkındaki temel bilgileri sağlar. Cihazlar için lisans gösterilmez.
 
@@ -40,11 +40,11 @@ Bağlayıcılar şunlardır:
 - **Dış hizmetler için yapılandırdığınız bağlantı**. Örneğin, *Apple Volume Purchase Program* hizmet veya *Windows Autopilot* hizmeti.  Durum bu tür bir bağlayıcı için son başarılı eşitleme zamanını üzerinde temel alır.
 - **Sertifikaları veya yönetilmeyen bir dış hizmete bağlanmak için gerekli kimlik bilgilerini**gibi *Apple anında iletme bildirimi Hizmetleri* (APNS) sertifikaları. Bu tür bir bağlayıcı için durumu, sertifika veya kimlik bilgisi bitiş zaman damgası üzerinde temel alır.  
 
-Varsayılan olarak, yalnızca beş bağlayıcı görüntülenir. Seçebileceğiniz **tüm bağlayıcıların** kullanılmak üzere yapılandırılmış henüz bağlayıcılar dahil olmak üzere tüm kullanılabilir bağlayıcılar görüntülemek için bu listeyi genişletin.  
-
-Yoktur, herhangi bir türde tek bir bağlayıcıyı birden fazla durum aynı söz konusu bağlayıcıların tümü için özetidir. Tek bir bağlayıcıyı az sağlıklı durumu sistem grubu için kullanılır.  
+Varsayılan olarak, en fazla beş bağlayıcıları gösterir. Seçebileceğiniz **tüm bağlayıcıların** kullanılmak üzere yapılandırılmış henüz bağlayıcılar dahil olmak üzere tüm kullanılabilir bağlayıcılar görüntülemek için bu listeyi genişletin.  
 
 Sağlıksız bağlayıcılar her zaman listenin en üstünde görüntüler. Sonraki bağlayıcılar uyarıları ve Sağlıklı bağlayıcıların listesi var. Bağlayıcılar henüz yapılandırmadıysanız, son görünür.
+
+Yoktur, herhangi bir türde tek bir bağlayıcıyı birden fazla durum aynı söz konusu bağlayıcıların tümü için özetidir. Tek bir bağlayıcıyı az sağlıklı durumu sistem grubu için kullanılır.  
 
 **Bağlayıcı durumu:**
 - **Sağlıksız:**
@@ -73,6 +73,6 @@ Intune hizmet ekibi bilgilendirme iletişimi, Office ileti merkezine gitmek zoru
 
 Varsayılan olarak, son 10 etkin iletileri görüntüleyin. Eski iletileri görüntülemek için seçin **iletilere bakın** açmak için *ileti Merkezi* Microsoft 365 Yönetim Merkezi portalında.  
 
-Intune haber bilgilerini görüntülemek için hesabınızın olması gerekir **genel yönetici** veya **Hizmet Yöneticisi** Azure Active Directory'de rol veya atanmış **ileti merkezi okuyucusu**  rol Office Yönetim Portalı'nda.  Bu izin atamak için oturum açın [Microsoft 365 Yönetim merkezini](https://portal.officeppe.com/AdminPortal/Home#/homepage) yönetici izinlerine sahip. Seçin **kullanıcılar > etkin kullanıcılar**ve ardından erişim gerektiren bir hesabı seçin. Seçin **Düzenle** için *rolleri*seçin *takımlar iletişimleri Yöneticisi*, ardından **Kaydet** izinleri atamak için düzenleme.  
+Intune haber bilgilerini görüntülemek için hesabınızın olması gerekir **genel yönetici** veya **Hizmet Yöneticisi** Azure Active Directory'de rol veya **ileti merkezi okuyucu** rol Office Yönetim Portalı'nda.  Bu izin atamak için oturum açın [Microsoft 365 Yönetim merkezini](https://portal.officeppe.com/AdminPortal/Home#/homepage) yönetici izinlerine sahip. Seçin **kullanıcılar > etkin kullanıcılar**ve ardından erişim gerektiren bir hesabı seçin. Seçin **Düzenle** için *rolleri*seçin *takımlar iletişimleri Yöneticisi*, ardından **Kaydet** izinleri atamak için düzenleme.  
 
 İletişim tercihlerinizi Microsoft 365 Yönetim merkezinden Intune haber yalnızca ayarlayabilirsiniz.

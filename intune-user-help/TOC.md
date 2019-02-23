@@ -25,7 +25,6 @@
 
 ### [Android cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-android.md)
 #### [Cihaz uyumluluğunu denetleme](check-compliance-on-your-device-android.md)
-#### [Outlook e-postasını pil koruyucu modu ile eşitleme](power-saving-mode-android.md)
 #### [Samsung Knox ile sık karşılaşılan sorunları çözme](samsung-knox-errors-android.md)
 #### [Outlook yüklemek için cihazınızı güncelleştirin](update-device-outlook-android.md)
 

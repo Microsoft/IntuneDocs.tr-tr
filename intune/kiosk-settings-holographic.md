@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28ecba61514c9143c21cb77e724fdcddbef42a37
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 8c5fd9998a4816775b3fc1d7803dc26e223b1e39
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845270"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742448"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows Holographic for Business cihaz ayarlarını ıntune'da bilgi noktası olarak çalıştırmak
 
@@ -82,4 +82,4 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
-Bilgi noktası profilleri de oluşturabilirsiniz [Android](device-restrictions-android.md#kiosk), [Android Kurumsal](device-restrictions-android-for-work.md#kiosk-settings), ve [Windows 10 ve üzeri](kiosk-settings-windows.md) cihazlar.
+Bilgi noktası profilleri de oluşturabilirsiniz [Android](device-restrictions-android.md#kiosk), [Android Kurumsal](device-restrictions-android-for-work.md#dedicated-device-settings), ve [Windows 10 ve üzeri](kiosk-settings-windows.md) cihazlar.

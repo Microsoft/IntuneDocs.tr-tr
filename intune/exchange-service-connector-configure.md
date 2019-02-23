@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2706a12f9f4844f96d279f753e7cd99f159ca856
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: e825fa5523edd3907db7754138c76754ec9175e4
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986816"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742100"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune ve Exchange Online için Exchange hizmet bağlayıcısını yapılandırma
 Bu makale, Microsoft Intune hizmetini Exchange Online veya yeni Exchange Online Dedicated hizmetine nasıl bağlayacağınızı gösterir. Exchange Online Dedicated ortamınızın **yeni** veya **eski** sürüm mü olduğunu belirlemek için hesap yöneticinize başvurun.
@@ -58,17 +58,15 @@ Intune Exchange hizmet bağlayıcısı tarafından kullanılan bir Exchange Onli
 
 2. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 
-3. Microsoft Intune panosunu açmak için **Intune**’u seçin. **Koşullu erişim**’i seçin ve daha sonra **Kurulum** altında **Exchange hizmet bağlayıcısı**’nı seçin.
+3. Microsoft Intune panosunu açmak için **Intune**’u seçin. seçin **Exchange erişimi**ve ardından altındaki **Kurulum** seçin **Exchange online Bağlayıcısı**.
 
-4.  **Koşullu erişim - Exchange hizmet bağlayıcısı** sayfasında **Hizmetten Hizmete Bağlayıcıyı Ayarla**’yı seçin. 
-   
-     ![Hizmetten Hizmete Bağlayıcıyı Ayarla bağlantısını seçmeyi gösteren görüntü](media/exchange_service_connector.png)
+4.  Üzerinde **Exchange erişim - Exchange online Bağlayıcısı** sayfasında **hizmetten hizmete Bağlayıcısı'nı Ayarla**. 
 
 Hizmetten Hizmete Bağlayıcı, Exchange Online veya yeni Exchange Online Dedicated ortamınızı otomatik olarak yapılandırır ve eşitler.
 
 ## <a name="validate-your-exchange-connection"></a>Exchange bağlantınızı doğrulama
 
-Exchange Hizmetten Hizmete Bağlayıcıyı başarıyla yapılandırdıktan sonra **Koşullu erişim - Exchange hizmet bağlayıcısı** sayfasındaki Exchange Bağlayıcı Sunucusu bilgilerini doğrulayın.
+Exchange hizmetten hizmete Bağlayıcısı'nı başarıyla yapılandırdıktan sonra Exchange Connector sunucusu bilgileri üzerinde doğrulama **Exchange erişim - Exchange online Bağlayıcısı** sayfası.
 
 **Bağlantı durumu** ile son başarılı eşitleme denemesinin tarih ve saatini de kontrol edebilirsiniz.
 

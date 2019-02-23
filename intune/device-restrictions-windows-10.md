@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: 5fd0812967e6cce0e1eabe0fb04e597535b972f3
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307898"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742780"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -32,7 +32,7 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Bir cihaz yapılandırma profili oluşturma](device-restrictions-configure.md).
+[Bir cihaz yapılandırma profili oluşturma](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="app-store"></a>Uygulama Mağazası
 
@@ -144,56 +144,6 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 
 - **Son işlem Görev Yöneticisi'nden**: Bu ayar, yönetici olmayanların son görevler için Görev Yöneticisi'ni kullanıp kullanamayacağını belirler. **Blok** Görev Yöneticisi'ni kullanarak bir işlem veya cihazdaki görev sona erdirmek için standart kullanıcılar (Yönetici olmayanlar) engeller. **Yapılandırılmamış** (varsayılan), Görev Yöneticisi'ni kullanarak görev ya da bir işlemi sonlandırmak standart kullanıcılar izin verir.
 
-## <a name="kiosk-preview---obsolete"></a>Bilgi noktası (Önizleme) - Eski
-
-Bu ayarlar salt okunurdur ve değiştirilemez. Bilgi noktası modunu yapılandırmak için bkz. [Windows 10 ve üzerinde bilgi noktası ayarları](kiosk-settings.md).
-
-Bir bilgi noktası cihazı genellikle tek bir uygulama veya belirli bir uygulamalar kümesi çalıştırır. Kullanıcılar, başka özellik veya işlevlere cihaza erişimi engellenmiştir.
-
-- **Bilgi noktası modu**: İlke tarafından desteklenen bilgi noktası modu türünü tanımlar. Şu seçenekler mevcuttur:
-
-  - **Yapılandırılmamış** (varsayılan): Cihaz bilgi noktası modu ilke sağlamaz.
-  - **Tek uygulama bilgi noktası**: Profil, cihazın yalnızca bir uygulama çalıştırmasına olanak tanır. Kullanıcı oturum açtığında belirli bir uygulama başlar. Bu mod ayrıca kullanıcının yeni uygulamalar açmasını veya çalışan uygulamayı değiştirmesini önler.
-  - **Çoklu uygulama bilgi noktası**: Profil birçok uygulamaları çalıştırmak için cihazı etkinleştirir. Yalnızca eklediğiniz uygulamalar kullanıcı tarafından kullanılabilir. Bir çoklu uygulama bilgi noktasının veya sabit amaçlı cihazın yararı, yalnızca ihtiyaç duyulan uygulamalara erişim sağlayıp gerek olmayan uygulamaları göz önünden kaldırarak bireylere anlaşılması kolay bir deneyim sunmasıdır.
-
-#### <a name="single-app-kiosks"></a>Tek uygulama bilgi noktaları
-
-Aşağıdaki ayarları girin:
-
-- **Kullanıcı hesabı**: Yerel (cihaz) kullanıcı hesabı, bir AD etki alanı hesabı veya bilgi noktası uygulamasıyla ilişkili bir Azure AD hesabı girin.
-  - Yerel hesap: Girin `devicename\accountname`, `.\accountname`, veya `accountname`
-  - Etki alanı hesabı: Olarak girin `domain\accountname`
-  - Azure AD hesabı: Girin `AzureAD\emailaddress`. Sabit bir etki alanıymış gibi “AzureAD” girdiğinizden emin olun. Daha sonra Azure AD e-posta adresiyle devam edin. Örneğin, şunu girin: `AzureAD\user@contoso.onmicrosoft.com`.
-
-    Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bilgi noktası modu için bir Azure AD hesabı kullanıyorsanız `AzureAD\user@yourorganization.com` girdiğinizden emin olun.
-
-- **Uygulama kullanıcı modeli kimliği (AUMID)**: Bilgi noktası uygulamasının AUMID'sini girin. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-#### <a name="multi-app-kiosks"></a>Çoklu uygulama bilgi noktaları
-
-[Çoklu uygulama bilgi noktaları](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune), izin verilen uygulamaları ve diğer ayarları listeleyen bir bilgi noktası yapılandırması kullanır. 
-
-**Ekle** düğmesini kullanarak bir bilgi noktası yapılandırması oluşturun (veya mevcut bir yapılandırmayı seçin). Daha sonra aşağıdaki ayarları girin:
-
-- **Bilgi noktası yapılandırma adı**: Yapılandırmasını tanımlamak için kullanılan kolay bir ad girin.
-
-- **Bilgi noktası uygulamaları**: Başlat menüsünde kullanılabilir olan uygulamaları girin. Kullanıcılar yalnızca eklediğiniz uygulamaları kullanabilir.
-
-  - **Uygulama türü**: Bilgi noktası uygulamasının türünü seçin:
-    - **Win32 uygulaması**: Geleneksel bir masaüstü uygulaması. Yürütülebilir dosyanın cihaza göre tam yol adına ihtiyacınız vardır.
-    - **UWP uygulaması**: Bir evrensel Windows uygulaması. [Uygulamanın AUMID’sine](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ihtiyacınız vardır.
-
-  - **tanımlayıcı**: Tam yol adını (Win32 uygulamaları), yürütülebilir dosyayı girin veya [uygulamanın AUMID'ini](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP uygulamaları).
-
-- **Görev**: Tercih **etkinleştirme** (Göster) görev veya saklamak **yapılandırılmadı** (gizli bilgi).
-
-- **Başlangıç menüsü düzeni**: Başlat menüsünde uygulamaları nasıl göründüğünü açıklayan bir XML dosyası girin. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout), rehberlik ve örnek XML sağlar.
-
-  [Uygulamaları çalıştıran bir Windows 10 bilgi noktası oluşturma](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) kullanarak ve XML dosyaları oluşturma hakkında daha fazla ayrıntı sağlar.
-
-- **Atanan kullanıcılar**: Eklediğiniz uygulamaları kullanabilecek bir veya daha fazla kullanıcı hesaplarını ekleyin. Hesap oturum açtığında, yalnızca yapılandırmada tanımlanmış uygulamalar kullanılabilir durumda olur. Hesap, cihaz için yerel olabilir veya bilgi noktası uygulamasıyla ilişkili Azure AD hesabı olabilir.
-
-    Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `domain\user@tenant.com` biçimini kullanın.
 
 ## <a name="locked-screen-experience"></a>Kilit ekranı deneyimi
 
@@ -211,6 +161,31 @@ Aşağıdaki ayarları girin:
 - **RCS (yalnızca mobil)**: Cihazdaki zengin iletişim hizmetleri gönderme ve alma işlevini devre dışı bırakın.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge Tarayıcısı
+
+### <a name="use-microsoft-edge-kiosk-mode"></a>Microsoft Edge bilgi noktası modunu kullan
+
+Kullanılabilir ayarlar, seçtiğiniz bağlı olarak değiştirin. Seçenekleriniz şunlardır:
+
+- **Hayır** (varsayılan): Microsoft Edge, bilgi noktası modunda çalışmıyor. Tüm Microsoft Edge ayarları değiştirin ve yapılandırmak için kullanılabilir.
+- **Sayısal/etkileşimli Tabela (tek uygulama bilgi noktası)**: Sayısal/etkileşimli Tabela Edge bilgi noktası modu için geçerli olan filtreleri Edge ayarları yalnızca Windows 10 tek uygulama bilgi noktaları üzerinde kullanın. URL tam ekran açmak için bu ayarı seçin ve yalnızca bu Web sitesinde içerik gösterir. [Dijital ayarlanan](https://docs.microsoft.com/windows/configuration/setup-digital-signage) bu özellik hakkında daha fazla bilgi sağlar.
+- **InPrivate genel (tek uygulama bilgi noktası) gözatma**: Windows 10 tek uygulama bilgi noktaları üzerinde filtreleri Edge InPrivate genel gözatma Edge için bilgi noktası modu için geçerli olan bir ayarları kullanın. Microsoft Edge çoklu sekme sürümünü çalıştırır.
+- **Normal moda (çoklu uygulama bilgi noktası)**: Normal Edge bilgi noktası modu için geçerli olan Edge ayarları filtreler. Microsoft Edge sürümü tam tarama tüm özellikleriyle çalışır.
+- **Genel (çoklu uygulama bilgi noktası) gözatma**: Bir Windows 10 çoklu uygulama bilgi noktası genel göz atmak için geçerli olan Edge ayarları filtreler.  Çoklu sekme sürümü Microsoft Edge InPrivate çalışır.
+
+> [!TIP]
+> Bu seçenekler neler daha fazla bilgi için bkz: [Microsoft Edge bilgi noktası modu yapılandırma türlerine](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+
+Bu cihaz kısıtlamaları profili kullanarak oluşturduğunuz için kiosk profili doğrudan ilgili [Windows bilgi noktası ayarları](kiosk-settings-windows.md). Özetlersek:
+
+1. Oluşturma [Windows bilgi noktası ayarları](kiosk-settings-windows.md) cihaz bilgi noktası modunda çalıştırmak için profili. Microsoft Edge uygulamayı seçin ve uç bilgi noktası modu bilgi noktası profilinde ayarlayın.
+2. Bu makalede açıklanan cihaz kısıtlama profili oluşturun ve belirli özellikler ve Microsoft Edge'de izin ayarlarını yapılandırın. Bilgi noktası profilinizde seçili olarak aynı Edge bilgi noktası modu türünü seçtiğinizden emin olun ([Windows bilgi noktası ayarları](kiosk-settings-windows.md)). 
+
+    [Bilgi noktası modu ayarları desteklenen](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) harika bir kaynaktır.
+
+> [!IMPORTANT] 
+> Bu Microsoft Edge profili aynı cihaz bilgi noktası profilinizin olarak atadığınızdan emin olun ([Windows bilgi noktası ayarları](kiosk-settings-windows.md)).
+
+CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Başlangıç deneyimi
 
@@ -230,6 +205,12 @@ Aşağıdaki ayarları girin:
 - **Kullanıcı Giriş düğmesine değiştirebilirsiniz**: **İzin** kullanıcıların giriş düğmesi değiştirmesine olanak tanır. Kullanıcının yaptığı değişiklikleri giriş düğmesi için herhangi bir yönetici ayarları geçersiz kılar. **Yapılandırılmamış** nasıl giriş düğmesi yönetici tarafından yapılandırılan değiştirmesini kullanıcıları engelleyebilir cihaz işletim sistemi varsayılan davranışı kullanır.
 - **İlk çalıştırma deneyimi sayfasını göster**: **Blok** durdurur ilk gösteren giriş sayfasından, Microsoft Edge çalıştırma süresi. Bu özellik, kuruluşların sıfır emisyon yapılandırmalarına bu sayfayı engellemesine izin, kayıtlı sağlar. **Yapılandırılmamış** giriş sayfasında gösterilir.
   - **İlk çalıştırma deneyimi URL'si**: Microsoft Edge (yalnızca Windows 10 Mobile) kullanıcı ilk kez çalışan göstermek için sayfanın URL'sini girin.
+- **Boşta kalma süresinden sonra tarayıcıyı yenileyin**: Tarayıcı yenilendikten, 0-1440 kadar boşta dakika sayısını girin dakika. Varsayılan değer `5` dakika. Ayarlandığında `0` olmayan tarayıcıyı yenileyin (sıfır) boşta kaldıktan sonra.
+
+  Bu ayar yalnızca çalıştırıldığında kullanılabilir [(tek uygulama bilgi noktası) genel InPrivate Gözatma](#use-microsoft-edge-kiosk-mode).
+
+  CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
+
 - **Açılır pencereler**: Seçin **blok** tarayıcıdaki açılır pencereleri durdurmak için. Yalnızca Windows 10 masaüstü için geçerlidir. **Yapılandırılmamış** web tarayıcısında açılır pencerelere izin verir.
 - **Internet Explorer'a intranet trafiği Gönder**: **İzin** kullanıcıların (yalnızca Windows 10 Masaüstü) Microsoft Edge yerine Internet Explorer'da intranet Web siteleri açmasına olanak sağlar. **Yapılandırılmamış** Microsoft Edge kullanmasına olanak tanır.
 - **Kurumsal mod site listesi konumu**: Kurumsal modda açılan web siteleri listesini içeren bir URL girin. Kullanıcılar bu listeyi değiştiremez. Yalnızca Windows 10 masaüstü için geçerlidir.
@@ -261,6 +242,11 @@ Aşağıdaki ayarları girin:
   - Yahoo
   - Özel değer
 - **Arama önerileri**: **Yapılandırılmamış** adres çubuğunda arama tümcecikleri yazarken arama motorunuzun site olanak tanır. **Blok** bu özellik engeller.
+- **Arama motoru değişikliklere izin**: **Evet** (varsayılan), yeni arama motorları eklemek veya varsayılan arama motorunu Microsoft edge'de değiştirmek kullanıcıların sağlar. Seçin **Hayır** arama motoru özelleştirmesini kullanıcıların önlemek için.
+
+  Bu ayar yalnızca çalıştırıldığında kullanılabilir [Normal modda (çoklu uygulama bilgi noktası)](#use-microsoft-edge-kiosk-mode).
+
+  CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
 ### <a name="privacy-and-security"></a>Gizlilik ve güvenlik
 

@@ -15,16 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9441f1c69e3d445d6174521ad2c9ef5c7a6db2be
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2536a5978bc9af99053e4513f4ceea8c0a40e633
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835546"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742270"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>İlke filtrelemek için kapsam etiketleri kullanma
 
 Kapsam etiketleri, oluşturduğunuz özel etiketlerle ilkeleri filtrelemenize imkan verir. Kapsam etiketleri, rolleri ve uygulamalara uygulayabilirsiniz.
+
+Bir yönetici Intune bir kaynak oluşturduğunda, o yönetici için atanan bir kapsam etiketleri yeni kaynağa otomatik olarak atanır.
 
 Örneğin “Mühendislik Departmanı” adlı bir kapsam etiketi oluşturun ve mühendislik departmanı ile ilgili yapılandırma profillerine bunu atayın. Aynı etiketi “Mühendislik Yöneticileri” rolüne de atayın. Bu kişiler, yalnızca “Mühendislik Departmanı” etiketli ilkeleri görebilecektir.
 

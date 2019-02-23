@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f1243bba6158307797744972bf404735c6b8a68a
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849259"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742678"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -102,8 +102,13 @@ Azure portalında Intune’da ileride başvurmak üzere Apple kimliğini sağlay
 
 ![Kayıt programı belirtecini oluşturmak için kullanılan Apple kimliğini belirtme ve kayıt programı belirtecine gözatma işleminin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>4. adımı. Belirtecinizi karşıya yükleyin.
-**Apple belirteci** kutusunda sertifika (.pem) dosyasına gözatın, **Aç**’ı ve daha sonra **Oluştur**’u seçin. Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir. Intune, kayıt programı hesabınızı görmek için Apple ile otomatik olarak eşitlenir.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>4. adımı. Belirtecinizi karşıya yükleyin ve kapsam etiketleri seçin.
+
+1. İçinde **Apple belirteci** kutusunda sertifika (.pem) dosyasını bulun, seçin **açık**.
+2. Uygulamak istiyorsanız [kapsam etiketleri](scope-tags.md) bu DEP belirteci seçin **kapsam (etiketler)**, istediğiniz kapsam etiketleri seçin. Kapsam etiketleri bir belirtece uygulanan profilleri ve cihazlar için bu belirteci eklenen tarafından devralınır.
+3. **Oluştur**’u seçin.
+
+Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir. Intune, kayıt programı hesabınızı görmek için Apple ile otomatik olarak eşitlenir.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
 

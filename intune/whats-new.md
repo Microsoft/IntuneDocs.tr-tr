@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65370710f409d028871695de22829f64e82bf54e
-ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
+ms.openlocfilehash: f1212f0d2afb1f5201af6c29201564e104b1c26c
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426986"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742797"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,16 +45,147 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 
 -->     
 
-## <a name="week-of-february-19-2019"></a>19 Şubat 2019 haftası
+## <a name="week-of-february-18-2019"></a>18 Şubat 2019 haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="intune-will-leverage-google-play-protect-apis-on-android-devices----2577355-eeready-wnready---"></a>Intune, Android cihazlarda Google Play koruma API'lerini özelliğinden yararlanır <!-- 2577355 eeready wnready -->
+Bazı BT yöneticileri, bir KCG yatay, burada son kullanıcıların kök dizini değiştirme veya jailbreaking, cep telefonu sonlandırabiliriz kalmaktadır. Bu davranış, bazen de hatalı niyetli olsa da, son kullanıcı cihazlarında kuruluşunuzun verilerini korumak için ayarlanan birçok Intune ilkeleri, bir geçiş sonuçlanır. Bu nedenle, Intune kayıtlı ve kayıtsız cihazlar için kök ve jailbreak uygulanmasını algılama sağlar. Bu sürümle birlikte, Intune artık Google Play koruma kayıtlı olmayan cihazlar için mevcut bizim kök algılama denetimleri eklemek için API'leri özelliğinden yararlanır. Google oluşan kök algılama denetimlerin tamamen paylaşmaz, ancak kullanıcılar, cihazlarını daha yeni işletim sistemi güncelleştirmelerini eski cihazlarda alabilmek için herhangi bir nedenle cihaz özelleştirmesinde kökü algılamak için bu API'leri bekliyoruz. Bu kullanıcılar daha sonra kurumsal verilere erişimi engellenebilir veya Kurumsal hesaplarını etkin ilke uygulamalarından silinecek. Ek değer, BT yöneticisinin Intune uygulama koruması dikey penceresi içinde çeşitli raporlama güncelleştirmeler artık sahip - "Bayrak eklenen kullanıcılar" raporu hangi kullanıcıların algılanan gösterir Google Play Protect'ın SafetyNet API tarama ile rapor "potansiyel olarak zararlı uygulamalar" olacaktır hangi uygulamaların Google'nın doğrulayın uygulamaları tarama API aracılığıyla algılanan gösterir. Bu özellik, Android'de kullanılabilir.
+
+#### <a name="win32-app-information-available-in-troubleshooting-blade----2617342-eeready-wnready---"></a>Win32 uygulama bilgileri sorun giderme dikey penceresinde kullanılabilir <!-- 2617342 eeready wnready -->
+Intune uygulama hatası günlük dosyaları için bir Win32 uygulaması yüklemesi artık toplayabilir **sorun giderme** dikey penceresi. Uygulama yükleme sorunlarını giderme hakkında daha fazla bilgi için bkz. [uygulaması yükleme sorunlarını giderme](troubleshoot-app-install.md) ve [uygulama sorunlarını giderme Win32](apps-win32-app-management.md#troubleshoot-win32-app-issues).
+
+#### <a name="app-status-details-for-ios-apps----3761235-eeready-wnready---"></a>İOS uygulamaları için uygulama durumu ayrıntıları <!-- 3761235 eeready wnready -->
+Yeni uygulama yükleme hata iletileri için aşağıdaki ilgili vardır:
+- Paylaşılan iPad üzerinde yüklerken VPP uygulamaları için hata
+- App Store'da devre dışı bırakıldığında hatası
+- Uygulama için VPP lisans bulunamadı hatası
+- MDM sağlayıcısıyla sistemi uygulamaları yükleme hatası
+- Cihaz kayıp modu veya bilgi noktası modunda olduğunda, uygulama yükleme hatası
+- Kullanıcı için App Store oturum açmamış, uygulama yükleme hatası
+
+Intune'da seçin **istemci uygulamaları** > **uygulamaları** > "Uygulama adı" > **cihaz yükleme durumu**. Yeni hata iletileri de kullanılabilir olacak **durumu ayrıntıları** sütun.
+
+#### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready---"></a>Windows 10 için Şirket portalı uygulamasında yeni uygulama kategorileri ekran<!-- 3834780 wnready -->
+Adlı yeni bir ekran **uygulama kategorileri** Windows 10 için Şirket portalı uygulaması gezinme ve seçim deneyimini iyileştirmek üzere eklendi. Kullanıcılar artık kategoriler altında gibi sıralanan uygulamalarını görmek **öne çıkan**, **eğitim**, ve **üretkenlik**. Bu değişikliği Şirket portalı sürümleri 10.3.3451.0 görünür ve daha sonra. Yeni ekran görüntülemek için bkz: [uygulama kullanıcı Arabirimindeki yenilikler](https://docs.microsoft.com/intune/whats-new). Şirket portalı'nda uygulama hakkında daha fazla bilgi için bkz. [yüklemek ve paylaşmak cihazınızdaki uygulamaların](/intune-user-help/install-apps-cpapp-windows).  
+
+#### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI uyumluluk uygulaması <!-- 1455231 doc-work-item -->
+Power BI çevrimiçi kullanarak Intune veri ambarı'nızı erişim [Intune uyumluluk (veri ambarı)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) uygulama. Bu Power BI uygulaması ile artık erişmek ve herhangi bir kurulum yapmadan ve web tarayıcınızı çıkmadan önceden oluşturulmuş raporları paylaşabilirsiniz. Ek bilgi için bkz: [değişiklik günlüğü - Power BI uyumluluğu uygulama](reports-changelog.md#power-bi-compliance-app). Ek Intune veri ambarı güncelleştirmeler için bkz [yaklaşan değişiklikleri Intune veri ambarı API'sine](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
+
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="powershell-scripts-can-run-in-a-64-bit-host-on-64-bit-devices----1862675-eeready-wnready---"></a>PowerShell betiklerini bir 64-bit ana bilgisayar, 64 bit cihazlarda çalıştırabilirsiniz <!-- 1862675 eeready wnready -->
+Bir cihaz yapılandırma profili için bir PowerShell Betiği eklediğinizde, betik, 32-bit, 64-bit işletim sistemlerinde bile her zaman yürütür. Bu güncelleştirme ile bir yönetici komut dosyası bir 64 bit PowerShell ana bilgisayar 64 bit cihazlarda çalıştırabilirsiniz (**cihaz Yapılandırması** > **PowerShell betikleri**  >   **Ekleme** > **yapılandırma** > **64 bit PowerShell konağı betiği**).
+
+PowerShell kullanma hakkında daha fazla ayrıntı için bkz. [ıntune'da PowerShell betiklerini](intune-management-extension.md).
+
+Uygulama hedefi: Windows 10 ve üzeri
 
 #### <a name="macos-users-are-prompted-to-update-their-password----1873216---"></a>macOS kullanıcılarını parolasını güncelleştirmesi istenir <!-- 1873216 -->
-
 Intune zorlama **ChangeAtNextAuth** macOS cihazlarında ayarlama. Bu ayar, son kullanıcılar ve cihazlar uyumluluk parola ilkeleri veya cihaz kısıtlama parola profilleri etkiler. Son kullanıcılara parolalarını güncelleştirmek için bir kez istenir. Her bir kullanıcı için cihaz oturum açma gibi kimlik doğrulaması gerektiren bir görev ilk çalıştırıldığında bu istem oluşur. Kullanıcılar ayrıca herhangi bir şey yapmak isteyen Anahtarlık erişimi gibi yönetim ayrıcalıklarını gerektirdiğinde parolasını güncelleştirmesi istenecek. 
 
 Yeni veya var olan bir parola ilke değişikliklerinin yönetici tarafından son kullanıcıların parolalarını yeniden güncelleştirmeyi ister.
 
 Uygulama hedefi:  
 Mac OS
+
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521--wnready----"></a>SCEP sertifikaları için bir Kullanıcısız macOS cihaz atama    <!-- 2340521  WNready  -->
+Kullanıcı benzeşimi olmayan cihazlar da dahil olmak üzere, macOS cihazları için cihaz öznitelikleri kullanarak basit sertifika kayıt Protokolü (SCEP) sertifikaları atayın ve sertifika profilinin Wi-Fi veya VPN profilleri ile ilişkilendirin. Bu zaten sahibiz için desteği genişletir [SCEP sertifikaları ve kullanıcı benzeşimi olmadan cihazlara atama](certificates-scep-configure.md#create-a-scep-certificate-profile) Windows, iOS ve Android çalıştırın.  Bu güncelleştirme, bir sertifika türü seçme seçeneği ekler *cihaz* macOS için bir SCEP sertifika profili yapılandırırken.
+
+#### <a name="intune-conditional-access-ui-update------2432313--wnready---"></a>Intune koşullu erişim kullanıcı arabirimini güncelleştirme   <!-- 2432313  WNready -->
+Intune konsolunda koşullu erişim için kullanıcı arabirimi geliştirmeleri yaptık. Bunlar:
+-  Intune yerine *koşullu erişim* dikey penceresinden Azure Active Directory içeren dikey pencere. Bu, çeşitli ayarları ve yapılandırmaları için [koşullu erişim] erişim kurcalayabileceğimi sağlar ((hangi kalacak bir Azure AD teknolojisi) içinde Intune konsolunda. 
+- Biz yeniden adlandırdıktan *şirket içi erişim* dikey penceresine *Exchange erişimi*ve yeniden konumlandırılması *Exchange hizmeti Bağlayıcısı* kurulumunu yeniden adlandırılan bu dikey pencere.  Bu değişikliğin nerede birleştirir, [yapılandırmak ve izlemek için Exchange online ve şirket içi ilgili ayrıntıları](exchange-connector-install.md).  
+
+#### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135-eeready-wnready---"></a>Bilgi noktası tarayıcı ve Microsoft Edge tarayıcı uygulamaları, bilgi noktası modu, Windows 10 cihazlarında çalıştırabilirsiniz <!-- 2935135 eeready wnready -->
+Bir uygulama veya birçok uygulamalarını çalıştırmak için Windows 10 cihazları bilgi noktası modunda kullanabilirsiniz. Bu güncelleştirme, bilgi noktası modunda tarayıcı uygulamalarında kullanmanın bazı değişiklikler içerir. dahil olmak üzere:
+
+- Microsoft Edge tarayıcı veya bilgi noktası cihazı uygulamaları çalıştırmak için bilgi noktası tarayıcı ekleyin (**cihaz Yapılandırması** > **profilleri** > **yeni profili**  >  **Windows 10 ve üzeri** Platform > **bilgi noktası** profil türü için).
+- İzin vermek veya kısıtlamak yeni özellikler ve ayarlar kullanılabilir (**cihaz Yapılandırması** > **profilleri** > **yeni profili**  >  **Windows 10 ve üzeri** Platform > **cihaz kısıtlamaları** profil türü için) dahil:
+
+  - Microsoft Edge tarayıcı:
+    - Microsoft Edge bilgi noktası modunu kullan
+    - Boşta kalma süresinden sonra tarayıcıyı yenileyin
+
+ - Sık Kullanılanlar ve ara:
+    - Arama motoru değişiklik izin ver
+
+Bu ayarların listesi için bkz:
+
+- [Windows 10 ve üzeri cihaz ayarları bir bilgi noktası çalıştırmak için](kiosk-settings-windows.md)
+- [Microsoft Edge tarayıcı cihaz kısıtlamaları](device-restrictions-windows-10.md#microsoft-edge-browser)
+- [Sık Kullanılanlar ve arama cihaz kısıtlamaları](device-restrictions-windows-10.md##favorites-and-search)
+
+Uygulama hedefi: Windows 10 ve üzeri
+
+#### <a name="new-device-restriction-settings-for-ios-and-macos-devices----3448774-eeready-wnready---"></a>İOS ve macOS cihazları için yeni cihaz kısıtlama ayarları <!-- 3448774 eeready wnready -->
+Bazı ayarları ve iOS ve macOS çalıştıran cihazlarda özellikleri kısıtlamak (**cihaz Yapılandırması** > **profilleri** > **yeni profili**  >  **iOS** veya **macOS** Platform > **cihaz kısıtlamaları** profil türü için). Bu güncelleştirme, daha fazla özellikleri ve ayarlarını denetleyebileceğiniz, ayar ekran süresi dahil olmak üzere, Esım ayarları ve cep telefonu planları ve daha fazla iOS cihazlarında değiştirme ekler. Ayrıca, yazılım güncelleştirmeleri ve macOS cihazlarda içeriği önbelleğe alma engelleme kullanıcının görünürlüğünü geciktirme. 
+
+Erişimi, ayarları ve özellikleri görmek için bkz:
+
+- [iOS cihaz kısıtlama ayarları](device-restrictions-ios.md)
+- [macOS cihaz kısıtlama ayarları](device-restrictions-macos.md)
+
+Uygulama hedefi:
+
+- iOS
+- Mac OS
+
+#### <a name="kiosk-devices-are-now-called-dedicated-devices-on-android-enterprise-devices----3598402-eeready-wnready---"></a>"Bilgi noktası" cihazları artık "Android kuruluş cihazlarının cihazları ayrılmış" olarak adlandırılır <!-- 3598402 eeready wnready -->
+Android ifadeyle hizalamak için **bilgi noktası** değiştirilir **adanmış cihazlar** Android Kurumsal cihazlarda (**cihaz Yapılandırması**  >  **Profilleri** > **profili oluşturma** > **Android Kurumsal Platform > ** yalnızca cihaz sahibi > cihaz kısıtlamaları**  >  **Adanmış cihazlar**).
+
+Kullanılabilir ayarlar görmek için Git [izin vermek veya özellikleri kısıtlamak için cihaz ayarları](device-restrictions-android-for-work.md#dedicated-device-settings).
+
+Uygulama hedefi:  
+Android Kurumsal
+
+#### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-eeready-wnready---"></a>Görünürlük iOS ayarları Intune kullanıcı Arabiriminde taşıyor Safari ve geciktirme kullanıcı yazılım güncelleştirme <!-- 3640850, 3803313 eeready wnready -->
+İOS cihazları için Safari ayarlarını ve yazılım güncelleştirmelerini yapılandırma. Bu güncelleştirmede, bu ayarlar, Intune kullanıcı arabiriminin farklı bölümlerine taşınıyor:
+
+- Taşıma kaynağı Safari ayarları **Safari** (**cihaz Yapılandırması** > **profilleri** > **yeni profili**  >  **iOS** Platform > **cihaz kısıtlamaları** profil türü için) için  **[yerleşik uygulamaları](device-restrictions-ios.md#built-in-apps)**.
+- **Denetimli iOS cihazları için kullanıcı yazılım güncelleştirme görünürlüğü geciktirme** ayarı (**yazılım güncelleştirmelerini** > **güncelleştirme ilkelerini iOS için**) içintaşıma **Cihaz kısıtlamaları** > **[genel](device-restrictions-ios.md#general)**.  Mevcut ilkeleri etkisi hakkında daha fazla bilgi için bkz: [iOS yazılım güncelleştirmeleri](software-updates-ios.md#configure-the-policy). 
+
+Ayarlar listesi için bkz:
+
+- [iOS cihaz kısıtlamaları](device-restrictions-ios.md) 
+- [iOS yazılım güncelleştirmeleri](software-updates-ios.md)
+
+Bu özellik şu platformlarda geçerlidir: 
+
+- iOS
+
+#### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164-eeready-wnready---"></a>Cihaz ayarlarında kısıtlamaları etkinleştirme ekran süresini iOS cihazlarında yeniden adlandırılır <!-- 3699164 eeready wnready -->
+Yapılandırabileceğiniz **cihaz ayarlarında kısıtlamaları etkinleştirme** üzerinde iOS cihazlarının denetimli (**cihaz Yapılandırması** > **profilleri**  >  **Yeni profili** > **iOS** Platform > **cihaz kısıtlamaları** profil türü için > **genel**). Bu güncelleştirmede, bu ayarı olarak yeniden adlandırıldı **ekran (yalnızca denetimli) zaman**. 
+
+Aynı durum geçerlidir. Özellikle: 
+
+- iOS 11.4.1 ve önceki sürümleri: **Blok** son kullanıcıların cihaz ayarlarında kısıtlamaları kendi ayarından engeller. 
+- iOS 12.0 ve daha sonra: **Blok** son kullanıcılar kendi önlenmiş **ekran zaman** cihaz ayarlarında, içerik ve gizlilik kısıtlamaları da dahil olmak üzere. İOS 12.0 yükseltilmiş cihazları, cihaz ayarlarında kısıtlamaları sekmesinde artık görmezsiniz. Bu ayarlar **ekran zaman**. 
+
+Ayarlar listesi için bkz. [iOS cihaz kısıtlamaları](device-restrictions-ios.md#general).
+
+Uygulama hedefi: 
+- iOS
+
+
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="rename-an-enrolled-windows-device----1911112-eeready-wnready--"></a>Kayıtlı Windows cihazı yeniden adlandır <!-- 1911112 eeready wnready-->
+Kayıtlı Windows 10 cihazı artık yeniden adlandırabilirsiniz (RS4 veya üzeri). Yapmak için **Intune** > **cihazları** > **tüm cihazlar** > bir cihaz seçin > **yeniden adlandırma cihaz**.
+
+#### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope----3173823-eeready-wnready--"></a>Kapsam etiketleri, kapsamlı bir yönetici tarafından oluşturulan kaynakları için otomatik olarak ata <!-- 3173823 eeready wnready-->
+Yönetici kaynak oluşturduğunda, bu yeni kaynaklara Yönetim için atanan bir kapsam etiketleri otomatik olarak atanır.
+
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+#### <a name="failed-enrollment-report-moves-to-the-device-enrollment-blade----3560202-eeready-wnready--"></a>Cihaz kaydı dikey penceresine başarısız kayıt rapor taşır <!-- 3560202 eeready wnready-->
+**Başarısız kayıtları** rapor taşındı **İzleyici** bölümünü **cihaz kaydı** dikey penceresi. (Kayıt yöntemi ve işletim sistemi sürümü) iki yeni sütunlar ekledik.
+
+#### <a name="company-portal-abandonment-report-renamed-to-incomplete-user-enrollments---3815076-eemiss-wnready--"></a>Şirket portalı abandonment raporu için eksik kullanıcı kayıtları olarak yeniden adlandırıldı <!--3815076 eemiss wnready-->
+**Şirket portalı abandonment** rapor adlandırıldı **eksik kullanıcı kayıtları**.
+
+
 
 ## <a name="week-of-february-4-2019"></a>4 Şubat 2019 haftası
 
@@ -894,7 +1025,7 @@ Profili oluşturmak için **Cihaz Yapılandırması** > **Profiller** > **Profil
 Windows 10 ve üzeri için geçerlidir.
 
 #### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998---"></a>Bilgi noktası - eski seçenek gri renkte ve değiştirilemez <!-- 2149998 -->
-[Bilgi noktası özelliği](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Cihaz Yapılandırması** > **Profiller** > **Profil oluştur** > **Windows 10 ve üzeri** > **Cihaz kısıtlamaları**) artık kullanılmıyor ve [Windows 10 ve üzeri için bilgi noktası ayarları](kiosk-settings.md) ile değiştirildi. Bu güncelleştirmeyle **Bilgi Noktası - Eski** özelliği gri gösterilir ve kullanıcı arabirimi değiştirilemez veya güncelleştirilemez. 
+Bilgi noktası (Önizleme) özelliği (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >   **Windows 10 ve üzeri** > **cihaz kısıtlamaları**) artık kullanılmıyor ve ile değiştirilmesi [Windows 10 ve üzeri için bilgi noktası ayarları](kiosk-settings.md). Bu güncelleştirmeyle **Bilgi Noktası - Eski** özelliği gri gösterilir ve kullanıcı arabirimi değiştirilemez veya güncelleştirilemez. 
 
 Bilgi noktası modunu etkinleştirmek için bkz. [Windows 10 ve üzeri için bilgi noktası ayarları](kiosk-settings.md).
 
@@ -1385,6 +1516,13 @@ Güncelleştirilmiş görünümü görmek için [Uygulama kullanıcı arabirimin
 Şirket içi Exchange verilerine erişimi Outlook Mobile ile korumak için artık Intune Uygulama İlke Koruması (APP) ve Koşullu Erişim (CA) kullanabilirsiniz. Azure portalına bir uygulama koruma ilkesi eklemek veya ilkeyi değiştirmek için **Microsoft Intune** > **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ni seçin. Bu özelliği kullanmadan önce [iOS ve Android için Outlook gereksinimlerini](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) karşıladığınızdan emin olun.
 
 ## <a name="notices"></a>Bildirimler
+
+###  <a name="upcoming-change-to-the-intune-data-warehouse-api"></a>Intune veri ambarı API'sine yaklaşan Değiştir
+Biz 1903 zaman çerçevesi içinde iki değişiklik yapacak:
+- Beta filtre kullanımdan kaldırma<br>
+    Kullanımdan kaldırma örneği desteklenmeyen beta filtreler. Etkilenen müşteriler kaydedilse.   
+- 1.0 beta için yansıtma değiştirir.<br>
+    Bizim v1.0 koleksiyonlar için yapılan değişiklikler artık beta yansıtılır.  
 
 ### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Intune'da macOS 10.14.2 değişiklik gelecek parola zorlama <!--1873216-->
 İçinde MC145129 Temmuz ayında Apple'nın yeni tümleştirmek için Intune planları "Değişiklik parola, sonraki Auth" ayarı yukarıda ve macOS 10.13 sürümleri çalıştıran cihazlar için yayımlanan paylaşılmıştı. Şu anda bu ayar için macOS 10.14.2 Şubat ayında Dışarı Aktar planlıyoruz ve büyük. 

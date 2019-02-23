@@ -1,11 +1,11 @@
 ---
 title: Android Kurumsal cihaz ayarları Microsoft Intune - Azure | Microsoft Docs
-description: Android Kurumsal veya Android for Work cihazlar, cihazın ayarlarını kısıtlamak, dahil olmak üzere kopyalama ve yapıştırma, bildirimleri, uygulama izinleri, veri paylaşımı, parola uzunluğu, Göster başarısız oturum açma, yeniden parolalar, kilidini açmak için parmak izi'ni kullanın ve bluetooth etkinleştir Work kişileriyle paylaşma. Cihazları tek bir uygulama ya da birden fazla uygulama çalıştırmak için bir bilgi noktası yapılandırın.
+description: Android Kurumsal veya Android for Work cihazlar, cihazın ayarlarını kısıtlamak, dahil olmak üzere kopyalama ve yapıştırma, bildirimleri, uygulama izinleri, veri paylaşımı, parola uzunluğu, Göster başarısız oturum açma, yeniden parolalar, kilidini açmak için parmak izi'ni kullanın ve bluetooth etkinleştir Work kişileriyle paylaşma. Cihazları tek bir uygulama ya da birden fazla uygulama çalıştırmak için adanmış cihaz bilgi noktası yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e79572b6815f2aded8f3145969beac4233e415b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0c69d45794b1d40915fbd09bae557916a9daa591
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844233"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742712"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
-Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, izin vermek veya özellikleri, bilgi noktası modu, güvenliği denetlemeye ve diğer çalışma uygulamaları devre dışı bırakmak için bu ayarları kullanın.
+Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, izin vermek veya özellikleri, çalışma uygulamaları ayrılmış cihazları, güvenlik denetimi ve daha fazlası devre dışı bırakmak için bu ayarları kullanın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -69,7 +69,7 @@ Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farkl
   - **Cihaz varsayılanı**: Cihazın varsayılan ayarı kullanın.
   - **Otomatik**: Güncelleştirmeler, kullanıcı etkileşimi olmadan otomatik olarak yüklenir. Bu ilkeyi seçmek, bekleyen tüm güncelleştirmeleri hemen yükler.
   - **Ertelenen**: Güncelleştirmeleri 30 gün boyunca Ertelenen. 30 günün sonunda, Android güncelleştirmeyi yüklemek için kullanıcıya sorar. Cihaz üreticilerin veya taşıyıcıların önemli güvenli güncelleştirmelerinin ertelenmesini engellemek (muaf tutmak) mümkündür. Muaf tutulan bir güncelleştirme cihazda kullanıcıya bir sistem bildirimi gösterir. 
-  - **Bakım penceresi**: Intune ile ayarlanan günlük bakım penceresi sırasında güncelleştirmeleri otomatik olarak yükler. Yükleme 30 gün boyunca her gün çalışır ve yeterli alan veya pil düzeyleri varsa başarısız olabilir. 30 gün sonra kullanıcıyı uygulamayı yüklemek için Android ister. Bu pencere ayrıca Oynatma uygulamalarının güncelleştirmelerini yüklemek için de kullanılır. Tek uygulama bilgi noktası ön plan uygulamaları güncelleştirilebilir gibi gibi bilgi noktaları, adanmış cihazlar için bu seçeneği kullanın.
+  - **Bakım penceresi**: Intune ile ayarlanan günlük bakım penceresi sırasında güncelleştirmeleri otomatik olarak yükler. Yükleme 30 gün boyunca her gün çalışır ve yeterli alan veya pil düzeyleri varsa başarısız olabilir. 30 gün sonra kullanıcıyı uygulamayı yüklemek için Android ister. Bu pencere ayrıca Oynatma uygulamalarının güncelleştirmelerini yüklemek için de kullanılır. Tek uygulama adanmış cihaz ön plan uygulamaları güncelleştirilebilir gibi gibi bilgi noktaları, adanmış cihazlar için bu seçeneği kullanın.
 - **Otomatik uygulama güncelleştirmeleri**: Otomatik Güncelleştirmeler yüklü olduğunda seçin. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı**
   - **Kullanıcı Seçimi**
@@ -85,47 +85,48 @@ Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farkl
 
 - **Uygulamalarda tehdit taraması**: **Gerektiren** , zorlar **uygulamaları doğrula** iş ve kişisel profiller için seçeneği etkinleştirilmiştir.
 
-### <a name="kiosk-settings"></a>Bilgi noktası ayarları
+### <a name="dedicated-device-settings"></a>Özel cihaz ayarları
 
-Bir cihazı tek bir uygulama veya birçok uygulamalarını çalıştırmak için yapılandırabilirsiniz. Yalnızca eklediğiniz uygulamalar bir cihaz bilgi noktası modunda olduğunda kullanılabilir. Bu ayarlar, adanmış Android cihazlar için geçerlidir ancak Android için tam olarak yönetilen adanmış cihazlar.
+Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için bu ayarları kullanın. Bir uygulamayı çalıştırmak için bir cihazı yapılandırın veya birçok uygulaması çalıştırın. Yalnızca eklediğiniz uygulamalar bir cihaz bilgi noktası modu ile ayarlandığında kullanılabilir. Bu ayarları Android ayrılmış Kurumsal cihazlar için geçerlidir. Bunlar, tam olarak yönetilen Android Enterprise cihazlar için geçerli değildir.
 
-**Bilgi noktası modu**: Cihaz tek bir uygulama ya da birden fazla uygulama çalışıp çalışmayacağını seçin.
+**Bilgi noktası modu**: Cihaz çalışırken bir veya birden fazla uygulama çalıştıran seçin.
 
-- **Tek uygulama bilgi noktası**: Kullanıcılar yalnızca tek bir uygulama cihazda erişebilir. Cihaz başlatıldığında, yalnızca belirli uygulamayı başlatır. Kullanıcılar yeni uygulamalar açamaz veya çalışan uygulamayı değiştiremez.
+- **Tek uygulama**: Kullanıcılar yalnızca tek bir uygulama cihazda erişebilir. Cihaz başlatıldığında, yalnızca belirli uygulamayı başlatır. Kullanıcılar yeni uygulamalar açamaz veya çalışan uygulamayı değiştiremez.
 
   **Adımları**
   1. Seçin **bir yönetilen uygulama seçin**, yönetilen Google Play uygulaması listeden seçin. 
 
-      Ardından, listelenen tüm uygulamalar yoksa [bazı Android uygulamaları ekleme](apps-add-android-for-work.md) cihaza. Mutlaka [uygulama bilgi noktası cihazlarınız için oluşturduğunuz cihaz grubuna atama](apps-deploy.md).
+      Ardından, listelenen tüm uygulamalar yoksa [bazı Android uygulamaları ekleme](apps-add-android-for-work.md) cihaza. Mutlaka [adanmış cihazlarınız için oluşturduğunuz cihaz grubuna uygulama atamak](apps-deploy.md).
 
   2. Seçin **Tamam** > **Tamam** seçerek uygulamayı ekleyin.
 
-- **Çoklu uygulama bilgi noktası**: Cihazdaki uygulamalar sınırlı sayıda kullanıcıları erişebilir. Cihaz başlatıldığında, yalnızca eklediğiniz uygulamalar başlatın. Ayrıca, kullanıcılar açabilir bazı web bağlantıları da ekleyebilirsiniz. İlkenin geçerli olduğu kullanıcı giriş ekranında simgeleri için izin verilen uygulamalar görürsünüz.
+- **Çoklu uygulama**: Cihazdaki uygulamalar sınırlı sayıda kullanıcıları erişebilir. Cihaz başlatıldığında, yalnızca eklediğiniz uygulamalar başlatın. Ayrıca, kullanıcılar açabilir bazı web bağlantıları da ekleyebilirsiniz. İlkenin geçerli olduğu kullanıcı giriş ekranında simgeleri için izin verilen uygulamalar görürsünüz.
 
-  > [ÖNEMLİ] Çoklu uygulama bilgi noktası cihazları için [giriş ekranı yönetilen uygulama](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) Google play'den **olmalıdır**:
+  > [!IMPORTANT]
+  > Cihazlar, çoklu uygulama için ayrılmış [giriş ekranı yönetilen uygulama](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) Google play'den **olmalıdır**:
   >   - [Bir istemci uygulaması olarak eklenen](apps-add-android-for-work.md) ıntune
-  >   - [Cihaz grubuna atanmış](apps-deploy.md) bilgi noktası cihazlarınız için oluşturuldu
+  >   - [Cihaz grubuna atanmış](apps-deploy.md) adanmış cihazlarınız için oluşturuldu
   > 
   > **Giriş ekranı yönetilen** uygulama yapılandırma profilinde de olması için gerekli değildir, ancak bir istemci uygulaması olarak eklenmesi için gereklidir. Zaman **giriş ekranı yönetilen** uygulama, bir istemci uygulaması olarak eklenir, simgeler olarak gösterilir configiration profilinde eklediğiniz diğer tüm uygulamalar **giriş ekranı yönetilen** uygulama. 
 
   - Seçin **Ekle**ve uygulamalarınızı listeden seçin.
 
-    Varsa **giriş ekranı yönetilen** uygulama listelenmez, ardından [Google Play'den ekleme](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Mutlaka [uygulamayı atamak](apps-deploy.md) bilgi noktası cihazlarınız için oluşturduğunuz cihaz grubuna.
+    Varsa **giriş ekranı yönetilen** uygulama listelenmez, ardından [Google Play'den ekleme](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Mutlaka [uygulamayı atamak](apps-deploy.md) adanmış cihazlarınız için oluşturduğunuz cihaz grubuna.
 
-    Ayrıca diğer ekleyebilirsiniz [Android uygulamaları](apps-add-android-for-work.md) ve [web uygulamaları](web-app.md) cihazla kuruluşunuz tarafından oluşturulmuş. Mutlaka [uygulama bilgi noktası cihazlarınız için oluşturduğunuz cihaz grubuna atama](apps-deploy.md).
+    Ayrıca diğer ekleyebilirsiniz [Android uygulamaları](apps-add-android-for-work.md) ve [web uygulamaları](web-app.md) cihazla kuruluşunuz tarafından oluşturulmuş. Mutlaka [adanmış cihazlarınız için oluşturduğunuz cihaz grubuna uygulama atamak](apps-deploy.md).
 
-  - **Sanal giriş düğmesi**: Seçin **etkinleştirme** bilgi noktası cihazı giriş düğmesi gösterilecek. Kullanıcıların uygulamalar arasında kolayca geçiş yapabilirsiniz için bu onay kutusu seçildiğinde, cihazın giriş ekranına kullanıcı döndürür. Bazı Android cihazlarda, kullanıcıların giriş düğmesini göster ekranda yukarı a doğru çekin gerekebilir. **Devre dışı** kullanıcılar, uygulamalar arasında geçiş yapmak için geri düğmesini kullanmalısınız bir giriş düğmesi göstermez.
-  - **Bilgi noktası modu bırakın**: Seçin **etkinleştirme** yöneticilerin bilgi noktası modu cihaz güncelleştirmek için geçici olarak duraklatmak sağlamak için. Bu özelliği kullanmak için yönetici şunları yapar: 
+  - **Sanal giriş düğmesi**: Seçin **etkinleştirme** adanmış cihazda giriş düğmesi gösterilecek. Kullanıcıların uygulamalar arasında kolayca geçiş yapabilirsiniz için bu onay kutusu seçildiğinde, cihazın giriş ekranına kullanıcı döndürür. Bazı Android cihazlarda, kullanıcıların giriş düğmesini göster ekranda yukarı a doğru çekin gerekebilir. **Devre dışı** kullanıcılar, uygulamalar arasında geçiş yapmak için geri düğmesini kullanmalısınız bir giriş düğmesi göstermez.
+  - **Bilgi noktası modu bırakın**: Seçin **etkinleştirme** yöneticilerin bilgi noktası modu cihaz güncelleştirmek için geçici olarak duraklatmak sağlamak için. Yönetici bu özelliği kullanmak için: 
   
-    1. "Çıkış noktası" düğmesini gösterilen kadar geri düğmesini seçmek devam edin. 
-    2. Düğmeyi seçin ve girin **bırakın bilgi noktası modu kodu** PIN.
+    1. "Çıkış noktası" düğmesini gösterilen kadar geri düğmesini seçmek devam eder. 
+    2. Düğmesini seçer ve girer **bırakın bilgi noktası modu kodu** PIN.
     3. Değişiklikleriniz bittiğinde seçin **giriş ekranı yönetilen** uygulama. Bu adım, cihazı çoklu uygulama bilgi noktası moduna relocks. 
     
     **Devre dışı** bilgi noktası modu duraklatma özelliği vermez. Yönetici geri düğmesini seçmek devam eder ve devre dışı "Çıkış noktası" düğmesini seçerse bir ileti bir geçiş kodu gerekli olduğunu belirtir.
     
     - **Bilgi noktası modu kod**: 4-6 basamaklı girin sayısal PIN. Yönetici bu PIN'i geçici olarak bilgi noktası modu duraklatmak için kullanır.
  
-  - **Özel URL arka plan ayarlamak**: Bilgi noktası cihazı üzerinde arka plan ekranı özelleştirmek için bir URL girin.
+  - **Özel URL arka plan ayarlamak**: Adanmış cihazda arka plan ekranı özelleştirmek için bir URL girin.
 
 ### <a name="device-password-settings"></a>Cihaz parola ayarları
 
@@ -288,4 +289,4 @@ Bu parola ayarlar, bir iş profili kullanan cihazlardaki kişisel profiller içi
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
-Bilgi noktası profilleri de oluşturabilirsiniz [Android](device-restrictions-android.md#kiosk) ve [Windows 10](kiosk-settings.md) cihazlar.
+Ayrılmış bir cihaz bilgi noktası profillerini oluşturabilirsiniz [Android](device-restrictions-android.md#kiosk) ve [Windows 10](kiosk-settings.md) cihazlar.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4ff07dfa48ab213bc65afc58708f490a80fb5ba8
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845185"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742525"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP için ıntune'da koşullu erişim uyumluluğu zorla
 
@@ -126,10 +126,13 @@ Uyumluluk ilkesi, cihazda kabul edilebilir bir risk düzeyi belirler.
 4. Azure AD gruplarınıza ilkeyi atamak için grupları dahil edin veya hariç tutun.
 5. İlkeyi gruplara dağıtmak için **Kaydet**’i seçin. İlkenin hedeflediği kullanıcı cihazlarında uyumluluk denetlenir.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Azure AD koşullu erişim ilkesi oluşturma
-Cihaz *uyumsuzsa* koşullu erişim ilkesi, kaynaklara erişimi engeller. Yani bir cihaz, tehdit düzeyini aşarsa SharePoint veya Exchange Online gibi şirket kaynaklarına erişimi engelleyebilirsiniz.
+## <a name="create-a-conditional-access-policy"></a>Koşullu erişim ilkesi oluşturma
+Cihaz *uyumsuzsa* koşullu erişim ilkesi, kaynaklara erişimi engeller. Yani bir cihaz, tehdit düzeyini aşarsa SharePoint veya Exchange Online gibi şirket kaynaklarına erişimi engelleyebilirsiniz.  
 
-1. [Azure portalı](https://portal.azure.com)’nda **Azure Active Directory** > **Koşullu erişim** > **Yeni ilke**’yi seçin.
+> [!TIP]  
+> Koşullu erişim, bir Azure Active Directory (Azure AD) teknolojisidir. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*.  
+
+1. İçinde [Azure portalında](https://portal.azure.com)açın **Intune** > **koşullu erişim** > **yeni ilke**.
 2. İlke için bir **Ad** girin ve **Kullanıcılar ve gruplar**’ı seçin. İlke için grupları eklemek üzere Dahil Et veya Hariç Tut seçeneklerini kullanın ve **Bitti**’yi seçin.
 3. **Bulut uygulamaları**’nı ve ardından hangi uygulamaların korunacağını seçin. Örneğin **Uygulama seçin**’e tıklayın, **Office 365 SharePoint Online** ve **Office 365 Exchange Online**’ı seçin.
 

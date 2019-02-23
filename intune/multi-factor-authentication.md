@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b6d4497c3cf62e6679ce222cf4185f48bdf846b1
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834101"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742236"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune cihaz kayıtları için çok faktörlü kimlik doğrulaması isteme
 
@@ -50,11 +50,10 @@ Bir cihaz kaydedildiğinde MFA istemek için şu adımları izleyin:
 >Microsoft Intune kaydı için **Cihaz tabanlı erişim kuralları** yapılandırmayın.
 
 1. Kimlik bilgilerinizle [Microsoft Azure portalında](https://portal.azure.com) oturum açın.
-2. Portalda **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**’ye gidin.
-3. **Azure Active Directory**’de, Güvenlik altında **[Koşullu erişim](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**’i seçin.
+2. Portalda, Git **Intune** ve **koşullu erişim**. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*.
 4. **Yeni ilke**’yi seçin.
 5. **Yeni** ilkede, ilke için açıklayıcı bir ad yazın.
-6. **Atamalar** kısmında **Kullanıcılar ve gruplar**’ı seçin.
+6. **Atamalar** kısmında **Kullanıcılar ve gruplar**’ı seçin. 
 7. **Kullanıcılar ve gruplar**’da **Kullanıcı veya grup seçin**’e tıklayın ve **Kullanıcılar ve gruplar**’ı işaretleyin. Daha sonra, bu ilkeyi alacak kullanıcı ve/veya grupları seçin ve **Bitti**’ye tıklayın.
 8. **Atamalar** kısmında **Bulut uygulamaları**’nı seçin.
 9. **Bulut uygulamaları**‘nın **Ekleme** sekmesinde, **Uygulama seç**’i, daha sonra **Seçin** > **Microsoft Intune Kaydı**’nı ve son olarak **Bitti**’yi seçin.

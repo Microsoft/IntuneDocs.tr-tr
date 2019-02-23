@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834662"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742542"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
 Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
@@ -38,6 +38,7 @@ Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
     * **Giriş**: Kuruluşunuzun öne çıkan uygulamalar listesinden seçin.  
     * **Tümünü Göster**: Gelen **giriş sayfası** > **uygulamaları** bölümünde **Tümünü Göster** tüm kullanılabilir uygulamaları görmek için.  
     * **Tüm uygulamalar**: Bu sayfa, yüklü ve öne çıkan dahil olmak üzere tüm kullanılabilir uygulamaları görmek için Gezinti bölmesinde seçin.  
+    * **Uygulama kategorileri**: Gezinti bölmesinde, tür veya işlev göre uygulamaları seçmek için bu sayfayı seçin. Uygulamaları sıralanır kategoriler altında gibi **öne çıkan**, **eğitim**, ve **üretkenlik**.  
     * **Uygulama arama**: Statik Arama çubuğuna uygulamanın Gezinti Bölmesi'nde bulunur.  Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
     * **Tüm uygulamalar**: Görüntüleme, sıralama ve tüm kullanılabilir uygulamaları filtreleyin. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
 

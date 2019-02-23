@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65391ca620892dcd3b95719454dabc30eb35cb6f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 05c2266f9a65bfed98fed62b10e5a4511acd3e57
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839389"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742559"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Uygulama yükleme sorunlarını giderme
 
 Microsoft Intune MDM ile yönetilen cihazlarda bazen uygulama yüklemeleri başarısız olabilir. Bu uygulamaların yüklemesi başarısız olduğunda, başarısızlık sebebini anlamak ve sorunu gidermek zor olabilir. Microsoft Intune, kullanıcı yardım isteklerini ele almak yardım masası operatörleri ve Intune yöneticilerinin uygulama bilgilerini görüntülemek için uygulama yükleme hatası ayrıntıları sağlar. Intune içindeki sorun giderme bölmesi, kullanıcının cihazında yönetilen uygulamalar dahil hata ayrıntılarını sağlar. Bir uygulamanın uçtan uca yaşam döngüsü hakkındaki ayrıntıları, **Yönetilen Uygulamalar** bölmesinde her bir cihaz altında sağlanır. Uygulamanın ne zaman yüklendiği, değiştirildiği, hedeflendiği ve bir cihaza teslim edildiği gibi yükleme sorunlarını görüntüleyebilirsiniz. 
 
-## <a name="to-review-app-troubleshooting-details"></a>Uygulama sorun giderme ayrıntılarını gözden geçirmek için
+## <a name="app-troubleshooting-details"></a>Uygulama sorun giderme ayrıntıları
 
 Intune, belirli bir kullanıcının cihazında yüklü uygulamalar temelinde sorun giderme ayrıntıları sağlar.
 
@@ -52,6 +52,47 @@ Uygulama yükleme hatası ayrıntıları, sorunu gösterecektir. Sorunu çözmek
 > [!Note]  
 > **Sorun giderme** bölmesine tarayıcınızı [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) adresine yönlendirerek de erişebilirsiniz.
 
+## <a name="win32-app-installation-troubleshooting"></a>Win32 uygulama yükleme sorunlarını giderme
+
+Intune Yönetim Uzantısı kullanılarak dağıtılmıştır Win32 uygulaması seçin. Seçebileceğiniz **günlükleri toplayın** seçeneği, Win32 uygulama yüklemesi başarısız olduğunda. 
+
+> [!IMPORTANT]
+> **Günlükleri toplayın** seçeneği etkin olmayabilir, Win32 uygulama cihaza başarıyla yüklendi.<p>Win32 Uygulama günlük bilgileri aktarmadan önce Intune Yönetim Uzantısı Windows istemcisinde yüklü olmalıdır. Bir PowerShell Betiği, Intune yönetim uzantısı yüklü değil veya bir Win32 uygulaması için bir kullanıcı veya cihaz güvenlik grubu olarak dağıtılır. Daha fazla bilgi için [Intune yönetim uzantısı - Önkoşullar](intune-management-extension.md#prerequisites).
+
+### <a name="collect-log-file"></a>Günlük dosyası
+
+Win32 uygulama yükleme günlüklerinizi toplamak için ilk bölümünde verilen adımları izleyin [sorun giderme ayrıntıları uygulama](troubleshoot-app-install.md#app-troubleshooting-details). Ardından, aşağıdaki adımları uygulayın:
+
+1. Tıklayın **günlükleri toplayın** seçeneğini **Yükleme ayrıntıları** dikey penceresi.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
+2. Dosya yolları, günlük dosya toplama işlemi başlar ve dosya adları ile günlük sağlamak **Tamam**.
+    
+    > [!NOTE]
+    > Günlük toplama iki saatten daha kısa sürer. Desteklenen dosya türleri: *.log, .txt, .dmp, .cab, .zip, .xml, .evtx ve .evtl*. En fazla 25 dosya yolları izin verilir.
+
+3. Günlük dosyaları toplandıktan sonra seçebileceğiniz **günlükleri** günlük dosyalarını indirmek için bağlantı.
+
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
+    > [!NOTE]
+    > Uygulama günlük toplama başarıyı gösteren bir bildirim görüntülenir.
+
+#### <a name="win32-log-collection-requirements"></a>Win32 günlük toplama gereksinimleri
+
+Günlük dosyaları toplamak için izlenmesi gereken belirli gereksinimleri vardır:
+
+- Tam günlük dosyası yolu belirtmeniz gerekir. 
+- Aşağıdaki gibi günlük toplama için ortam değişkenlerini belirtebilirsiniz:<br>
+  *% PROGRAMFILES %, % PROGRAMDATA % GENEL %, % WINDIR %, % TEMP %, % TMP %*
+- Yalnızca tam dosya uzantıları gibi verilir:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
+- 60 MB veya 25 dosyayı karşıya yüklemek için en fazla günlük dosyası olduğu hangisi önce gerçekleşirse. 
+- Win32 uygulama yükleme günlük toplama etkin gerekli, uyan uygulamalar için kullanılabilir ve uygulama atama hedefi kaldırın.
+- Depolanan günlükler günlüklerde yer alan tüm PII bilgilerini korumak için şifrelenir.
+- Win32 uygulama hataları için açılış destek biletleri karşın, yukarıda sağlanan adımları kullanarak ilişkili hata günlükleri ekleyin.
+
 ## <a name="app-installation-errors"></a>Uygulama yükleme hataları
 
 Aşağıdaki hata iletileri ve açıklamaları, Android ve iOS yükleme hataları hakkında ayrıntılar sağlar. 
@@ -61,29 +102,38 @@ Aşağıdaki hata iletileri ve açıklamaları, Android ve iOS yükleme hatalar�
 |    Hata iletisi/kodu    |    Açıklama    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Uygulama yüklenemedi. (0xC7D14FB5)    |    Bu hata iletisi Intune Android uygulama yükleme hatasının kök nedenini saptayamadığında görüntülenir. Hata sırasında Android tarafından hiç bilgi sağlanmadı.       APK indirme başarılı olduğunda ama uygulama yüklemesi yapılamadığında bu hata döndürülür. Bu hata yaygın olarak cihaza yüklenemeyen bozuk bir APK dosyasından kaynaklanıyor olabilir. Olası nedenlerinden biri, Google Play Koruması'nın güvenlik nedenleriyle uygulamanın yüklenmesini engellemesidir. Bu hatanın diğer bir olası nedeni cihazın uygulamayı desteklememesidir. Örneğin, uygulamaya API'nin 21+ sürümü gerekirken cihazda şu anda API'nin 19 sürümü yüklü olabilir.         Intune bu hatayı hem DA hem de KNOX cihazları için döndürür ve kullanıcının yeniden denemek için tıklayabileceği bir bildirim olabilir ama sorun APK'den kaynaklanıyorsa bir daha hata vermeyecektir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.        |
-|    Yükleme (APK) dosyası, indirme işleminden sonra ancak yüklemeden önce silindiği için uygulamayı yükleme iptal edildi. (0xC7D14FBA)    |    APK'nin indirilmesi başarılı oldu ama kullanıcı uygulamayı yüklemeden önce dosya cihazdan silindi. İndirme ile yükleme arasında çok uzun bir süre geçtiğinde bu durum ortaya çıkabilir. Örneğin, kullanıcı özgün yüklemeyi iptal etmiş, beklemiş ve ardından yeniden denemek için bildirime tıklamıştır.         Bu hata iletisi yalnızca DA senaryolarında bunu döndürür. KNOX senaryoları sessiz gerçekleştirilebilir. Yeniden denemek için bir bildirim gösteririz, dolayısıyla kullanıcı iptal etmek yerine kabul edebilir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.    |
-|    Uygulamayı yükleme işlemi, yükleme sırasında süreç yeniden başlatıldığı için iptal edildi. (0xC7D14FBB)    |    APK yükleme işleminde cihaz yeniden başlatıldı ve sonuçta bu yüklemenin iptal edilmesine neden oldu.        Bu hata iletisi hem DA hem de KNOX cihazları için döndürülür. Intune kullanıcıların yeniden denemek için tıklayabileceği bir bildirim gösterir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.    |
+|    Uygulama yüklemesi, yükleme (APK) dosyası, indirme işleminden sonra ancak yüklemeden önce silindiği için iptal edildi. (0xC7D14FBA)    |    APK'nin indirilmesi başarılı oldu ama kullanıcı uygulamayı yüklemeden önce dosya cihazdan silindi. İndirme ile yükleme arasında çok uzun bir süre geçtiğinde bu durum ortaya çıkabilir. Örneğin, kullanıcının özgün yükleme iptal edildi, beklenen ve daha sonra yeniden denemek için bildirim tıkladı.         Bu hata iletisi yalnızca DA senaryolarında bunu döndürür. KNOX senaryoları sessiz gerçekleştirilebilir. Yeniden denemek için bir bildirim gösteririz, dolayısıyla kullanıcı iptal etmek yerine kabul edebilir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.    |
+|    Uygulama yüklemesi, yükleme sırasında işlemin yeniden başlatıldığı için iptal edildi. (0xC7D14FBB)    |    İptal edilen bir yüklemede kaynaklanan APK yükleme işlemi sırasında cihaz yeniden başlatıldı.        Bu hata iletisi hem DA hem de KNOX cihazları için döndürülür. Intune kullanıcıların yeniden denemek için tıklayabileceği bir bildirim gösterir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.    |
 |    Bu uygulama, yükleme başarıyla tamamlandıktan sonra algılanmadı. (0x87D1041C)    |    Kullanıcı uygulamayı açıkça kaldırdı. Bu hata istemciden döndürülmedi. Bu, bir noktada uygulama yüklendiğinde ama ardından kullanıcı bu uygulamayı kaldırdığında oluşan bir hatadır. Bu hata, yalnızca gerekli uygulamalar için oluşturulur. Gerekli olmayan uygulamaları kullanıcı kaldırabilir. Bu hata yalnızca DA'da oluşabilir. KNOX, yönetilen uygulamaların kaldırılmasını engeller.       Sonraki eşitlemede kullanıcının yüklemesi için bildirim cihaza yeniden gönderilir.   Kullanıcı bildirimi yoksayabilir. Kullanıcı uygulamayı yükleyene kadar bu hata bildirilmeye devam edecektir.    |
 |    Bilinmeyen bir hata nedeniyle indirme başarısız oldu. (0xC7D14FB2)    |    Bu hata indirme başarısız olduğunda oluşur. Bu hata yaygın olarak Wi-Fi sorunlarından veya yavaş bağlantılardan kaynaklanabilir.       Bu hata yalnızca DA senaryolarında döndürülür. KNOX senaryolarında kullanıcılardan yüklemeleri istenmez; bu işlem sessiz olarak yapılabilir. Intune kullanıcıların yeniden denemek için tıklayabileceği bir bildirim gösterir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.    |
 |    Bilinmeyen bir hata nedeniyle indirme başarısız oldu. Cihazın bir sonraki eşitlenmesinde ilke yeniden denenecektir. (0xC7D15078)    |    Bu hata indirme başarısız olduğunda oluşur. Bu hata yaygın olarak Wi-Fi sorunlarından veya yavaş bağlantılardan kaynaklanabilir.       Bu hata yalnızca DA senaryolarında döndürülür. KNOX senaryolarında kullanıcılardan yüklemeleri istenmez; bu işlem sessiz olarak yapılabilir.    |
-|    Son kullanıcı, uygulama yüklemesini iptal etti. (0xC7D14FB1)    |    Kullanıcı uygulamayı açıkça kaldırdı. Bu hata, Android işletim sistemi yükleme etkinliği kullanıcı tarafından iptal edildiğinde döndürülür. İşletim sistemi yükleme istemi gösterildiğinde kullanıcı iptal düğmesine bastı veya istemin dışına tıkladı.        Bu hata yalnızca DA senaryolarında döndürülür. KNOX senaryolarında kullanıcılardan yüklemeleri istenmez; bu işlem sessiz olarak yapılabilir. Intune kullanıcıların yeniden denemek için tıklayabileceği bir bildirim gösterir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.    |
+|    Son kullanıcı uygulama yüklemesi iptal edildi. (0xC7D14FB1)    |    Kullanıcı uygulamayı açıkça kaldırdı. Android işletim sistemi yüklediğinizde etkinliği kullanıcı tarafından iptal edildi Bu hata oluşur. İşletim sistemi yükleme istemi gösterildiğinde kullanıcı iptal düğmesine bastı veya istemin dışına tıkladı.        Bu hata yalnızca DA senaryolarında döndürülür. KNOX senaryolarında kullanıcılardan yüklemeleri istenmez; bu işlem sessiz olarak yapılabilir. Intune kullanıcıların yeniden denemek için tıklayabileceği bir bildirim gösterir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.    |
 |    Dosya indirme süreci beklenmedik bir şekilde durduruldu. (0xC7D15015)    |    İşletim sistemi, indirme işlemini tamamlanmadan önce durdurdu. Bu hata cihazın pil düzeyi düşük olduğunda veya indirme işlemi fazla uzun sürdüğünde oluşur.       Bu hata yalnızca DA senaryolarında döndürülür. KNOX senaryolarında kullanıcılardan yüklemeleri istenmez; bu işlem sessiz olarak yapılabilir. Intune kullanıcıların yeniden denemek için tıklayabileceği bir bildirim gösterir. Uygulama kullanılabilir bir uygulamaysa, bu bildirim kapatılabilir. Öte yandan uygulama gerekliyse, kapatılamaz.    |
 |    Dosya indirme hizmeti beklenmedik bir şekilde durduruldu. Cihazın bir sonraki eşitlenmesinde ilke yeniden denenecektir. (0xC7D1507C)    |    İşletim sistemi, indirme işlemini tamamlanmadan önce durdurdu. Bu hata cihazın pil düzeyi düşük olduğunda veya indirme işlemi fazla uzun sürdüğünde oluşur.       Bu hata yalnızca DA senaryolarında döndürülür. KNOX senaryolarında kullanıcılardan yüklemeleri istenmez; bu işlem sessiz olarak yapılabilir.    |
 
 ### <a name="ios-errors"></a>iOS hataları
 
-|    Hata iletisi/kodu    |    Açıklama    |
-|:----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|    (0x87D12906)    |    Apple MDM Aracısı yükleme komutunun başarısız olduğu bilgisini döndürdü.        |
-|    (0x87D1313C)    |    Güncelleştirilmiş indirme hizmeti URL'si cihaza gönderilirken ağ bağlantısı koptu. Özel olarak, belirtilen konak adına sahip sunucu bulunamadı.    |
-|    iOS cihazı şu anda meşgul. (0x87D11388)    |    İOS cihazının meşgul olması nedeniyle bir hata oluştu.    |
-|    Uygulama yüklemesi başarısız oldu. (0x87D13B64)    |    Uygulama yükleme hatası oluştu. Bu hatayı gidermek için XCODE günlükleri gerekiyor.    |
-|    Uygulama yönetiliyor, ama süresi doldu veya kullanıcı tarafından kaldırıldı. (0x87D13B66)    |    Kullanıcı uygulamayı açıkça kaldırdı. Öte yandan, uygulamanın süresi dolmuş ama indirilememiş veya uygulama algılaması cihazdan gelen yanıtla eşleşmiyor da olabilir.   Buna ek olarak, bu hata iOS 9.2.2 platform hatası nedeniyle oluşabilir.    |
-|    Uygulama yüklenmek üzere zamanlandı, ancak işlemi tamamlamak için bir kullanım kodu gerekiyor.   (0x87D13B60)    |    Bu hata normalde ücretli uygulamalar olan iOS Store uygulamalarıyla oluşur.     |
-|    Bu uygulama, yükleme başarıyla tamamlandıktan sonra algılanmadı. (0x87D1041C)    |    Uygulama algılama işlemi cihazdan gelen yanıtla eşleşmedi.    |
-|    Kullanıcı, uygulamayı yükleme teklifini reddetti. (0x87D13B62)    |    İlk uygulama yükleme sırasında kullanıcı iptal düğmesine tıkladı.    |
-|    Kullanıcı, uygulamayı güncelleştirme teklifini reddetti. (0x87D13B63)    |    Güncelleştirme işlemi sırasında son kullanıcı iptal düğmesine tıkladı.     |
-|    Bilinmeyen hata (0x87D103E8)    |    Bilinmeyen uygulama yükleme hatası oluştu. Bu, diğer hatanın oluşması sonucu ortaya çıkan hatadır.    |
+| Hata iletisi/kodu | Açıklama/sorun giderme ipuçları |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (0x87D12906) | Apple MDM Aracısı yükleme komutu başarısız olduğunu döndürdü. |
+| (0x87D1313C) | Güncelleştirilmiş indirme hizmeti URL'si cihaza gönderilmiştir ancak ağ bağlantısı kaybedildi. Özellikle, belirtilen ana bilgisayar adına sahip bir sunucu bulunamadı. |
+| iOS cihazı şu anda meşgul. (0x87D11388) | İOS cihazı, bir hata ile sonuçlandır meşgul. |
+| Uygulama yüklemesi başarısız oldu. (0x87D13B64) | Bir uygulama yükleme hatası oluştu. Bu hatayı gidermek için XCODE günlükleri gerekiyor. |
+| Uygulama yönetiliyor ancak süresi doldu veya kullanıcı tarafından kaldırıldı. (0x87D13B66) | Kullanıcı, uygulamayı açıkça kaldırılır. Öte yandan, uygulamanın süresi dolmuş ama indirilememiş veya uygulama algılaması cihazdan gelen yanıtla eşleşmiyor da olabilir.   Buna ek olarak, bu hata iOS 9.2.2 platform hatası nedeniyle oluşabilir. |
+| Uygulama yüklenmek üzere zamanlandı ancak işlemi tamamlamak için bir kullanım kodu gerekiyor. (0x87D13B60) | Bu hata genellikle hangi uygulamaları Ücretli iOS Store uygulamaları ile oluşur. |
+| Yükleme başarıyla tamamlandıktan sonra uygulama algılanmadı.   (0x87D1041C) | Uygulama Algılama işlemi aygıttan yanıt ile eşleşmedi. |
+| Kullanıcı, uygulamayı yükleme teklifini reddetti. (0x87D13B62) | İlk uygulama yükleme sırasında tıklanan kullanıcı iptal edin. |
+| Kullanıcı, uygulamayı güncelleştirme teklifini reddetti. (0x87D13B63) | Tıklanan son kullanıcı güncelleştirme işlemi sırasında iptal edin. |
+| Bilinmeyen hata (0x87D103E8) | Bilinmeyen uygulama yükleme hatası. Diğer hatalar değil oluştuğunda sonuç hatadır. |
+| Yalnızca VPP uygulamaları, paylaşılan iPad (-2016330861) üzerinde yükleyebilirsiniz. | Uygulamaları, paylaşılan iPad üzerinde yüklemek için Apple Volume Purchase Program'ı kullanarak elde edilebilir. |
+| App Store devre dışı bırakıldığında, uygulama yükleyemeyeceğiniz (-2016330860).  | App Store, kullanıcı uygulamayı yüklemek etkinleştirilmesi gerekir. |
+| VPP lisans için (-2016330859) uygulaması bulunamıyor.  | Try iptal etme ve uygulama lisans yeniden atama. |
+| Sistemi uygulamaları MDM sağlayıcınız ile (-2016330858) yükleyemezsiniz. | İOS işletim sistemi tarafından yüklenmiş uygulamaları yükleme, desteklenen bir senaryo değildir. |
+| Cihaz kayıp modu (-2016330857) olduğunda uygulama yükleyemezsiniz. | Kayıp modu, cihazın tüm kullanımı engellenir.   Uygulamaları yüklemek için kayıp modu devre dışı bırakın. |
+| Cihaz bilgi noktası modu (-2016330856) olduğunda uygulama yükleyemezsiniz. | Bu cihaz, uygulama yüklemek için bir dışlama grup için bilgi noktası modu yapılandırma ilkesi için eklemeyi deneyin. |
+| Kullanıcı App Store (-2016330855) oturum açmanız gerekir. | Kullanıcı, uygulamanın cihaza yüklenmesinden önce App Store için oturum açması gerekiyor. |
+| Bilinmeyen bir sorun oluştu. Lütfen yeniden deneyin (-2016330854). | Uygulama yüklemesi, bilinmeyen bir nedenden dolayı başarısız oldu.   Daha sonra tekrar deneyin. |
+| Uygulama yüklemesi başarısız oldu. Intune cihaz eşitlemeler (-2016330853) yeniden deneyecek. | Uygulama yüklemesi, bir cihaz hatasıyla karşılaştı. Uygulamayı yeniden yüklemeyi denemek için cihazı eşitleyebilir. |
 
 ### <a name="other-installation-errors"></a>Diğer yükleme hataları
 

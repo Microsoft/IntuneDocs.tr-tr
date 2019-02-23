@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4481645781e21da4f433f5feae1d685efb73d412
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 5910b4962cc871a370d22efa68a01b78e9b34a0a
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841428"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742372"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure’da Intune şirket içi Exchange bağlayıcısını ayarlama
 
@@ -73,13 +73,11 @@ Aşağıdaki tabloda şirket içi Exchange bağlayıcısını yüklediğiniz bil
 
 1. Şirket içi Exchange bağlayıcısı için desteklenen bir Windows Server işletim sisteminde [Azure portal](https://portal.azure.com)’ı açın ve şirket içi Exchange sunucusunda yönetici olan ve Exchange Server’ı kullanma lisansı bulunan bir kullanıcı hesabıyla oturum açın.
 
-2. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
+2. Git **Intune** > **Exchange erişimi**  
 
-3. **Intune**’u seçin ve Intune Panosu açıldığında **Şirket içi erişim**’i seçin.
+3. Altında **Kurulum**, seçin **Exchange ActiveSync şirket içi Bağlayıcısı**ve ardından **Ekle**.
 
-4. **Kurulum**'un altında, **Exchange ActiveSync bağlayıcıları**’nı ve **Şirket içi bağlayıcıyı indir**’i seçin.
-
-5.  Şirket içi Exchange Bağlayıcısı'nı açık veya kaydedilebilen bir sıkıştırılmış (.zip) klasörde ' dir. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
+4. Üzerinde **ekleme bağlayıcı** sayfasında **şirket içi bağlayıcıyı indir**. Şirket içi Exchange Bağlayıcısı'nı açık veya kaydedilebilen bir sıkıştırılmış (.zip) klasörde ' dir. **Dosya İndirme** iletişim kutusunda **Kaydet**'i seçerek sıkıştırılmış klasörü güvenli bir konuma depolayın.
 
     > [!IMPORTANT]
     > Şirket içi Exchange bağlayıcısı klasöründeki dosyaları yeniden adlandırmayın veya taşımayın. Klasörün içeriğini taşımak veya yeniden adlandırmak, Exchange bağlayıcısı yüklemesinin başarısız olmasına neden olur.
@@ -153,8 +151,8 @@ Exchange Bağlayıcısı belirtilen CAS'yi kullanarak Exchange bağlantısı olu
 
 Exchange bağlayıcılarını başarıyla yapılandırdıktan sonra, bağlantıların durumunu ve son başarılı eşitleme girişimini görüntüleyebilirsiniz. Exchange bağlayıcısı bağlantılarını doğrulamak için:
 
-1. Intune Panosu’nda, **Şirket içi erişim**’i seçin.
-2. **Kurulum**'un altında **Exchange ActiveSync bağlayıcıları**'nı seçerek her Exchange bağlayıcısı için bağlantı durumunu doğrulayın.
+1. Intune panosunda seçin **Exchange erişimi**.
+2. Altında **Kurulum**seçin **Exchange online Bağlayıcısı** her Exchange connector için bağlantı durumunu doğrulayın.
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
 
@@ -171,8 +169,8 @@ Bir şirket içi Exchange connector EAS ve Intune cihaz kayıtları düzenli ara
 
 Intune panosundaki **Hızlı Eşitleme** veya **Tam Eşitleme** seçeneğini kullanarak bağlayıcıyı eşitleme çalıştırmaya zorlamak için aşağıdaki adımları izleyebilirsiniz:
 
-   1. Intune panosunda **Şirket içi erişim**’i seçin.
-   2. **Kurulum**'un altında **Exchange Active Sync Bağlayıcıları**'nı seçin.
+   1. Intune panosunda seçin **Exchange erişimi**.
+   2. Altında **Kurulum**, seçin **Exchange online Bağlayıcısı**.
    3. Eşitlemek istediğiniz bağlayıcıyı seçin ve sonra da **Hızlı Eşitleme**'yi veya **Tam Eşitleme**'yi seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
