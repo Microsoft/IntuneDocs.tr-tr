@@ -197,17 +197,17 @@ items:
       items:
       - name: Android kaydını ayarlama
         href: android-enroll.md
-      - name: Intune’u Android kurumsala bağlama
+      - name: Intune’u Android Kurumsal’a bağlama
         href: connect-intune-android-enterprise.md
-      - name: Android iş profili kaydını ayarlama
+      - name: Android Kurumsal iş profili kaydı
         href: android-work-profile-enroll.md
-      - name: Android ayrılmış cihaz kaydını ayarlama
+      - name: Android Kurumsal ayrılmış cihaz kaydı
         href: android-kiosk-enroll.md
-      - name: Android tam olarak yönetilen kaydı ayarlama
+      - name: Android Kurumsal tam olarak yönetilen kaydı
         href: android-fully-managed-enroll.md
-      - name: Android ayrılmış cihazları veya tam olarak yönetilen cihazları kaydetme
+      - name: Android Kurumsal ayrılmış cihazları veya tam olarak yönetilen cihazları kaydetme
         href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Android iş profili cihazlarını yönetme
+      - name: Android Kurumsal iş profili cihazları yönetme
         href: android-enterprise-overview.md
       - name: Samsung Knox Mobil Kayıt
         href: android-samsung-knox-mobile-enroll.md
@@ -250,6 +250,8 @@ items:
       href: device-remote-lock.md
     - name: Geçiş kodunu sıfırla
       href: device-passcode-reset.md
+    - name: Cihazı yeniden adlandır
+      href: device-rename.md
     - name: Cihazı yeniden başlatma
       href: device-restart.md
     - name: Geçerli kullanıcının oturumunu kapatma
@@ -578,6 +580,8 @@ items:
             href: app-protection-policies-exception.md
         - name: Uygulama koruma ilkelerini doğrulama
           href: app-protection-policies-validate.md
+        - name: Uygulama koruma ilkesi teslimi
+          href: app-protection-policy-delivery.md
         - name: Uygulama koruma kullanıcı durumunu izleme
           href: app-protection-policies-monitor.md
         - name: WIP uygulama koruma ilkelerine hazırlanma
@@ -1001,9 +1005,9 @@ items:
       href: data-outside-protect.md
     - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
       href: data-leak-prevention.md
-ms.openlocfilehash: d10d6c5a1c19430a0413e4f3149035a9e783dfc6
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458918"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742831"
