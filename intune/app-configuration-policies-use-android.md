@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6278d19edd6d55f3aa06b30ee9ffee867f784bd7
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840425"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826181"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -44,13 +44,13 @@ Android iş profili uygulamalarına ayarları sağlamak için Microsoft Intune�
 6. **Platform** için **Android**’i seçin.
 7. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android iş profili uygulamaları listesinden seçim yapın.
 8. **İzinler**’i seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
-    - [Yapılandırma tasarımcısı](#Use-the-configuration-designer)
-    - [JSON düzenleyicisi](#Enter-the-JSON-editor)
+    - [Yapılandırma tasarımcısı](#use-the-configuration-designer)
+    - [JSON düzenleyicisi](#enter-the-json-editor)
 9. **Tamam**’ı ve daha sonra **Ekle**’yi seçin.
 
 ## <a name="use-the-configuration-designer"></a>Yapılandırma tasarımcısını kullanma
 
-Yapılandırmayı destekleyen Android uygulamaları için yapılandırma tasarımcısını kullanabilirsiniz. Yapılandırma, Intune’a kayıtlı cihazlarda uygulanır. Tasarımcı, bir uygulamanın kullanıma sunduğuna kıyasla daha ayrıntılı yapılandırma değerleri yapılandırmanıza imkan tanır.
+Uygulama yapılandırma ayarları desteklemek için tasarlanan Android uygulamaları için yapılandırma tasarımcısını kullanabilirsiniz. Yapılandırma, Intune’a kayıtlı cihazlarda uygulanır. Tasarımcı, bir uygulamanın kullanıma sunduğuna kıyasla daha ayrıntılı yapılandırma değerleri yapılandırmanıza imkan tanır.
 
 **Ekle**’yi seçerek uygulama için belirtmek istediğiniz yapılandırma ayarları listesini seçin.  
 Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:

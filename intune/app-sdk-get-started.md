@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 02/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,31 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9c8ca0b04cbb6f7cf570134a6f4bdce7bf57ed
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 749d76087871fc46dd3e0299ffe43d629868282f
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325461"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826215"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
-Bu kılavuz, mobil uygulamanızı Microsoft Intune ile uygulama koruma ilkeleri için hızlıca etkinleştirmenize yardımcı olur. İlk olarak [Intune Uygulama SDK’sına genel bakış](app-sdk.md) bölümünde açıklanan Intune Uygulama SDK’sı avantajlarını öğrenmeniz yararlı olabilir.
+Bu kılavuz, mobil uygulamanıza uygulama koruma ilkeleri Intune desteklemek hızlı bir şekilde etkinleştirmenize yardımcı olur. İlk olarak [Intune Uygulama SDK’sına genel bakış](app-sdk.md) bölümünde açıklanan Intune Uygulama SDK’sı avantajlarını öğrenmeniz yararlı olabilir.
 
-Intune Uygulama SDK'sı, iOS ve Android’de benzer senaryoları destekler ve BT yöneticilerine platformlar genelinde tutarlı bir deneyim sağlamak amacıyla tasarlanmıştır. Ancak, platform sınırlamaları nedeniyle bazı özelliklerin desteklenmesinde küçük farklılıklar vardır.
+Intune Uygulama SDK'sı, iOS ve Android’de benzer senaryoları destekler ve BT yöneticilerine platformlar genelinde tutarlı bir deneyim sağlamak amacıyla tasarlanmıştır. Ancak, platform farklar ve sınırlamalar nedeniyle bazı özelliklerin desteklenmesinde küçük farklılıklar şunlardır.
 
 ## <a name="register-your-store-app-with-microsoft"></a>Mağaza uygulamanızı Microsoft’a kaydetme
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Uygulamanız kuruluşunuz içinde kullanılıyorsa ve herkese açık olmayacaksa:
 
-Uygulamanızı kaydetmeniz *gerekmez*. BT yöneticisi, uygulamayı dahili iş kolu uygulamaları için içeriden dağıtır. Intune, uygulamanın SDK ile oluşturulduğunu algılar ve BT yöneticisinin buna uygulama koruma ilkesi uygulamasına izin verir. [iOS veya Android uygulamanızı uygulama koruma ilkesi için etkinleştirme](#enable-your-iOS-or-Android-app-for-app-protection-policy) bölümüne geçebilirsiniz.
+_**Gerekmeyen**_ uygulamanızı kaydetmek için. İçin iç [iş kolu (LOB) uygulamaları](apps-add.md#app-types-in-microsoft-intune) , yazılmış tarafından veya şirketiniz için BT yöneticinize dağıtacağınız uygulamayı dahili olarak. Intune uygulama SDK'sı ile oluşturulan ve BT yöneticisinin uygulama koruma ilkeleri uygulamak sağlayacaktır algılar. [iOS veya Android uygulamanızı uygulama koruma ilkesi için etkinleştirme](#enable-your-iOS-or-Android-app-for-app-protection-policy) bölümüne geçebilirsiniz.
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Uygulamanız Apple App Store veya Google Play gibi bir genel uygulama mağazasında yayınlanacaksa:
 
-Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_. Bundan sonra BT yöneticileri, uygulama koruma ilkesini bir Intune uygulama iş ortağı olarak listelenen yönetilen uygulamaya uygulayabilir.
+Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_. BT yöneticileri ardından uygulayabileceğiniz bir uygulama koruma ilkesi olarak listelenen yönetilen uygulamaya bir [Intune iş ortağı uygulaması tarafından korunan](apps-supported-intune-apps.md#partner-apps).
 
 Kayıt tamamlanıp Microsoft Intune ekibi tarafından onaylanana kadar, Intune yöneticilerinin uygulamanızın ayrıntılı bağlantısına uygulama koruma ilkesi uygulama seçeneği olmaz. Microsoft ayrıca uygulamanızı kendi [Microsoft Intune İş Ortakları sayfasına](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) ekler. Sayfada Intune uygulama koruma ilkelerini desteklediğini göstermek üzere uygulamanın simgesi görüntülenir.
 
+### <a name="the-registration-process"></a>Kayıt işlemi
 Henüz birlikte çalıştığınız bir Microsoft ilgili kişisi yoksa kayıt işlemine başlamak için [Microsoft Intune Uygulama İş Ortağı Anketi](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u)’ni doldurun.
 
 Size ulaşmak ve kayıt işlemine devam etmek için anket yanıtlarınızda listelenen e-posta adresini (veya adreslerini) kullanacağız. Ayrıca, herhangi bir sorumuz olursa sizinle iletişim kurmak için kayıt e-posta adresinizi kullanırız.
@@ -94,7 +95,7 @@ Intune Uygulama SDK'sı ile uygulamanızı tümleştirmenize yardımcı olması 
  
  * Uygulama, [Azure Active Directory Kimlik Doğrulama Kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) ile oluşturulur ve AAD aracısı kimlik doğrulaması için etkinleştirilir.
  
- * Uygulamanız için [AAD İstemci kimliği](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application), farklı iOS ve Android platformlarında benzersiz olmalıdır.
+ * Uygulamanız için [AAD İstemci kimliği](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application), farklı iOS ve Android platformlarında benzersiz olmalıdır.
  
 ## <a name="configure-telemetry-for-your-app"></a>Uygulamanızda Telemetriyi yapılandırma
 

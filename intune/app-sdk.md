@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f4ce34abdb0c1b3d7dbc2bbd3f41f618715fb3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 71a21dcdef046205ad511e70e59d787e950d6734
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837416"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826198"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK'ya genel bakış
-iOS ve Android için kullanılabilen Intune uygulama SDK'sı, uygulamanızı Intune uygulama koruma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için API’leri kullanarak uygulamanızın davranışını, uygulama katılımınızı gerektiren özelliklere göre özelleştirebilirsiniz.
+Intune uygulama SDK'sı, iOS ve Android için Intune destek olanak tanır [uygulama koruma ilkeleri](app-protection-policy.md). Uygulamanızı uygulama koruma ilkeleri uygulanmış olduğunda, Intune tarafından yönetilmesi gerektiğini ve yönetilen bir uygulama olarak Intune tarafından tanınan. SDK'sı, uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirmek çalışır. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için uygulama katılımınızı gerektiren özelliklere desteklemek için uygulamanızın davranışını özelleştirmek için SDK'sının API'lerini kullanabilir.
 
-Uygulama koruma ilkeleri için uygulamanızı etkinleştirdikten sonra, BT yöneticileri bu ilkeleri uygulama içindeki kurumsal verileri korumak için dağıtabilir.
+Intune uygulama koruma ilkelerini desteklemek uygulamanızı etkinleştirdikten sonra BT yöneticileri bu ilkeleri uygulama içindeki Kurumsal verileri korumak için dağıtabilir.
 
 ## <a name="app-protection-features"></a>Uygulama koruma özellikleri
 
@@ -51,13 +51,13 @@ BT yöneticileri, uygulamadaki web bağlantılarının [Intune Managed Browser u
 ### <a name="enforce-a-pin-policy"></a>PIN ilkesini zorunlu kılma
 BT yöneticileri, son kullanıcının uygulamadaki kurumsal verilere erişmeden önce bir PIN girmesini zorunlu kılabilir. Bu, uygulamayı kullanan kişinin başlangıçta iş veya okul hesabıyla oturum açan kişi olmasını sağlar. Son kullanıcılar PIN kodlarını yapılandırdığında, Intune Uygulama SDK'sı Azure Active Directory kullanarak son kullanıcıların kimlik bilgilerini kayıtlı Intune hesabıyla karşılaştırarak doğrular.
 
-### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>Kullanıcıların uygulama erişimi için iş veya okul hesabıyla oturum açmasını zorunlu kılma
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>Uygulama erişimi için bir iş veya Okul hesabıyla oturum açmasını zorunlu
 BT yöneticileri, kullanıcıların uygulamaya erişmek için iş veya okul hesaplarıyla oturum açmasını zorunlu kılabilir. Intune Uygulama SDK'sı, girilen kimlik bilgilerinin sonraki oturumlar için yeniden kullanıldığı çoklu oturum açma deneyimini sağlamak üzere Azure Active Directory’i kullanır. Ayrıca Azure Active Directory ile federasyon uygulanmış kimlik yönetimi çözümlerinin kimlik doğrulaması da desteklenir.
 
 ### <a name="check-device-health-and-compliance"></a>Cihaz durumunu ve uyumluluğunu denetleme
 BT yöneticileri, son kullanıcıların uygulamaya erişmesinden önce cihazın durumunu ve Intune ilkeleriyle uyumluluğunu denetleyebilir. iOS’ta bu ilke, cihaza jailbreak uygulanıp uygulanmadığını denetler. Android’de bu ilke, cihaza kök erişim izni verilip verilmediğini denetler.
 
-### <a name="multi-identity-support"></a>Çoklu kimlik desteği
+### <a name="support-multi-identity"></a>Çoklu kimlik desteği
 Çoklu kimlik desteği, ilkeyle yönetilen (şirket) ve yönetilmeyen (kişisel) hesapların tek bir uygulamada birlikte bulunmasını sağlayan bir SDK özelliğidir.
 
 Örneğin, çok sayıda kullanıcı, iOS ve Android için Office mobil uygulamalarında hem şirket hem de kişisel e-posta hesaplarını yapılandırır. Bir kullanıcı kurumsal hesabıyla verilere eriştiğinde, BT yöneticisi uygulama koruma ilkesinin uygulanacağından emin olmalıdır. Ancak, bir kullanıcı kişisel e-posta hesabına erişirken bu veriler BT yöneticisinin denetimi dışında olmalıdır. Intune Uygulama SDK'sı bunu, uygulama koruma ilkesini **yalnızca** uygulamadaki kurumsal kimliğine hedefleyerek sağlar.
@@ -80,4 +80,4 @@ Citrix MDX hakkında daha fazla bilgi edinmek için bkz. [MDX Toolkit hakkında]
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Hakkında bilgi edinin [uygulama koruma ilkeleri](app-protection-policy.md).
+- [Microsoft Intune App SDK ile çalışmaya başlama](app-sdk-get-started.md).
