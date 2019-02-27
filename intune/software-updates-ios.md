@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d39f4c541fd7ccf5ab2d09fdcf4f871ba3ee639c
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: ecb9a06258c10f2ef00d8940238bc22b539ba21b
+ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742406"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838322"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune'da iOS yazılım güncelleştirme ilkelerini ekleme
 
@@ -60,7 +60,9 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Güncelleştirme varsa ve kısıtlan
 
 5. Seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin ve ilkeyi oluşturun.
 
-Profil oluşturulur ve ilke listesinde gösterilir. 
+Profil oluşturulur ve ilke listesinde gösterilir.
+
+Intune destek ekibinden yönergeler için bkz [gecikme denetimli cihazlar için ıntune'da yazılım güncelleştirmeleri görünürlüğünü](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
 
 > [!NOTE]
 > Apple MDM, cihazın güncelleştirmeleri belirli bir saatte veya tarihte yüklemeye zorlanmasına izin vermez.

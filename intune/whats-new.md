@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe292aec26e55e6dfbe03e59fd9e91c0689c33a
-ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
+ms.openlocfilehash: ad47171d1d0cd4f5d3ac19fe3dadea90b3be1cc8
+ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826283"
+ms.locfileid: "56838356"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -46,6 +46,14 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-february-25-2019"></a>25 Şubat 2019 haftası
+
+### <a name="intune-powershell-module----951068-wnready---"></a>Intune PowerShell Modülü <!-- 951068 wnready -->
+Microsoft Graph aracılığıyla Intune API için destek sağlar, Intune PowerShell modülünü kullanıma sunulduğunu [Microsoft PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10).
+
+- [Bu modül hakkında ayrıntılı bilgi kullanın](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
+- [Bu modül kullanılarak senaryo örnekleri](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
+
 ## <a name="week-of-february-18-2019"></a>18 Şubat 2019 haftası
 
 ### <a name="app-management"></a>Uygulama yönetimi
