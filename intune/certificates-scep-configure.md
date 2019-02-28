@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 542eb8e2ae93144709c8e35f22718d6c520cc58a
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742746"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955621"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -72,7 +72,7 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 
 ### <a name="accounts"></a>Hesaplar
 
-|Name|Ayrıntılar|
+|Ad|Ayrıntılar|
 |--------|-----------|
 |**NDES hizmet hesabı**|NDES Hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı girin. |
 
@@ -363,8 +363,8 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 5. **Profil** türü açılan listesinde **SCEP sertifikası**’nı seçin.
 6. Aşağıdaki ayarları girin:
 
-   - **Sertifika türü**: Seçin **kullanıcı** kullanıcı sertifikaları için. Bilgi noktası gibi kullanıcısız cihazlar için **Cihaz**'ı seçin. **Cihaz** sertifikaları aşağıdaki platformlar için bulunur:  
-     - Android Kurumsal
+   - **Sertifika türü**: Seçin **kullanıcı** kullanıcı sertifikaları için. A **kullanıcı** sertifika türü, konu ve SAN sertifika hem kullanıcı hem de cihaz öznitelikleri içerir.  Seçin **cihaz** bilgi noktaları gibi Kullanıcısız cihazlar gibi senaryolar için ya da Windows cihazlar için sertifika yerel bilgisayar sertifika deposunda yerleştirme. **Cihaz** sertifikalar, konu ve SAN sertifikanın cihaz özniteliklerine yalnızca içerebilir.  **Cihaz** sertifikaları aşağıdaki platformlar için bulunur:  
+     - Android Enterprise - iş profili
      - iOS
      - Mac OS
      - Windows 8.1 ve üzeri

@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 02/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ffdd62c06090e58bc5f00a8750c7a3a301ac9ed7
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851449"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955536"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
 
@@ -57,11 +57,13 @@ Bu URL aşağıdaki öğeleri içerir:
 
 ## <a name="api-version-information"></a>API sürüm bilgisi
 
-API’nin geçerli sürümü şudur: `beta`. 
+Artık sorgu parametresini ayarlayarak Intune Veri Ambarı’nın v1.0 sürümünü kullanabilirsiniz `api-version=v1.0`. Veri Ambarı’ndaki koleksiyonlara yapılan güncelleştirmeler ek olarak yapılır, yani mevcut senaryoları bozmaz.
+
+Beta sürümünü kullanarak Veri Ambarı’nın en yeni işlevlerini deneyebilirsiniz. Beta sürümünü kullanabilmeniz için URL’nizin sorgu parametresini içermesi gerekir `api-version=beta`. Özellikler, desteklenen bir hizmet olarak herkesin kullanımına açılmadan önce beta sürümünde sunulur. Intune yeni özellikler ekledikçe beta sürümünün davranışında ve veri anlaşmalarında değişiklikler olabilir. Beta sürümüne bağımlı olan özel kodlar veya raporlama araçları, devam eden güncelleştirmelerle birlikte kesilebilir.
 
 ## <a name="odata-query-options"></a>OData sorgu seçenekleri
 
-Mevcut sürüm, aşağıdaki OData sorgu parametrelerini destekler: `$filter, $orderby, $select, $skip,` ve `$top`.
+Geçerli sürümü aşağıdaki OData sorgu parametrelerini destekler: `$filter`, `$select`, `$skip,` ve `$top`. İçinde `$filter`, yalnızca `DateKey` veya `RowLastModifiedDateTimeUTC` sütunları geçerlidir ve diğer özellikleri bir hatalı istek tetikleyecek desteklenmiyor olabilir.
 
 ## <a name="datekey-range-filters"></a>DateKey Aralık Filtreleri
 
@@ -73,15 +75,12 @@ Mevcut sürüm, aşağıdaki OData sorgu parametrelerini destekler: `$filter, $o
 ## <a name="filter-examples"></a>Filtre örnekleri
 
 > [!NOTE]
-> Filtre örneklerinde tarihin 21.2.2018 olduğu varsayılır.
+> Örnekler varsayar bugün filtre 21/2/2019.
 
 |                             Filtre                             |           Performansı En İyi Duruma Getirme           |                                          Açıklama                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    Tam                                      |    `DateKey` ile 20180214 ve 20180221 arasında veri döndürülür.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    Tam                                      |    `DateKey` ile 20180214’e eşit veri döndürülür.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Tam                                      |    `DateKey` ile 20180214 ve 20180220 arasında veri döndürülür.                                     |
-|    `maxhistorydays=7&$filter=Id gt 1`                            |    Kısmi, 1'den büyük kimlikler en iyi duruma getirilmez    |    `DateKey` ile 20180214 ve 20180221 arasında veri döndürülür ve kimlik 1'den büyüktür.             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Tam                                      |    `DateKey` ile 20180214’e eşit veri döndürülür. `maxhistorydays` yoksayılır.                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    None                                      |    `DateKey` aralık filtresi olarak kabul edilmez, bu nedenle performans artırılmaz.                              |
-|    `$filter=DateKey ne 20180214`                                 |    None                                      |    `DateKey` aralık filtresi olarak kabul edilmez, bu nedenle performans artırılmaz.                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    None                                      |    `DateKey` aralık filtresi olarak kabul edilmez, bu nedenle performans artırılmaz. `maxhistorydays` yoksayılır.    |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Tam                                       |    Dönüş verileri ile `RowLastModifiedDateTimeUTC` büyüktür veya eşittir `2018-02-21T23:18:51.3277273Z`                             |

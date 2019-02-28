@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure'da Windows 10 için dağıtım iyileştirme ayarlarını | Microsoft Docs
-description: Yazılım güncelleştirmeleri için Windows 10 ve üzeri cihazlar ile kullanılabilir teslimat iyileştirme bulut hizmetlerini kullanarak cihazlarınızı nasıl teslim edildiğini yapılandırın. Intune, internet'ten güncelleştirmeleri yüklemek için bir cihaz yapılandırma profili oluşturma. Ayrıca var olan güncelleştirme halkaları teslim iyileştirme profiliyle nasıl değiştirileceğini bakın.
+description: Intune ile yönettiğiniz Windows 10 cihazlarına teslim iyileştirme kullanımını yapılandırın. Intune, internet'ten güncelleştirmeleri yüklemek için bir cihaz yapılandırma profili oluşturma. Ayrıca var olan güncelleştirme halkaları teslim iyileştirme profiliyle nasıl değiştirileceğini bakın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,27 +13,27 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f335c8acf9e979366fe75d1a3da2318b7ec46400
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.reviewer: kerimh
+ms.openlocfilehash: 89eb2f92d47c425fe2d286f1f36c175319c519a6
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836702"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955519"
 ---
-# <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Windows 10 (ve üzeri) delivery optimization ayarları Microsoft Intune
+# <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune Delivery optimization ayarları
+
+Intune ile cihazları, uygulamaları ve güncelleştirmeleri indirdiklerinde, bant genişliği tüketimini azaltmak için Windows 10 cihazlar için dağıtım iyileştirme ayarlarını kullanabilirsiniz. Teslim iyileştirme, cihaz yapılandırma profillerinin bir parçası olarak yapılandırılır.  
+
+Bu makalede, bir cihaz yapılandırma profilinin bir parçası olarak teslim iyileştirme ayarlarını yapılandırmak açıklar. Bir profil oluşturduktan sonra daha sonra atayın veya bu profil Windows 10 cihazlarınıza dağıtın. 
+
+Intune'un desteklediği delivery optimization ayarları listesi için bkz. [Delivery optimization ayarları ıntune](delivery-optimization-settings.md).  
+
+Windows 10 teslim iyileştirme hakkında bilgi edinmek için bkz. [teslim iyileştirme güncelleştirmeleri](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) Windows belgelerinde.  
+
 
 > [!NOTE]
-> **Yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları** değiştirilir **teslim iyileştirme** ayarları. Kullanmak için var olan güncelleştirme halkaları değiştirilebilir **teslim iyileştirme** ayarları. [Var olan güncelleştirme halkaları için teslim iyileştirme taşıma](#move-existing-update-rings-to-delivery-optimization) (Bu makalede) adımları listelenir. 
-
-
-Bu özellik aşağıdaki platformlar için geçerlidir:
-
-- Windows 10 ve üzeri
-
-Bu makale, listeler ve Windows 10 cihazlar için yapılandırabileceğiniz tüm delivery optimization ayarları açıklar. Bu ayarları bir cihaz yapılandırma profili eklendiğinde ve sonra atanan veya Microsoft Intune kullanarak cihazlarınızı dağıtılmış.
-
-[Teslim iyileştirme güncelleştirmeleri](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) Windows 10 teslim iyileştirme hakkında daha fazla bilgi edinmek için harika bir kaynaktır.
-
+> **Yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları** değiştirilir **teslim iyileştirme** ayarları. Kullanmak için var olan güncelleştirme halkaları değiştirilebilir **teslim iyileştirme** ayarları. [Var olan güncelleştirme halkaları için teslim iyileştirme taşıma](#move-existing-update-rings-to-delivery-optimization) (Bu makaledeki) 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
 1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
@@ -49,23 +49,15 @@ Bu makale, listeler ve Windows 10 cihazlar için yapılandırabileceğiniz tüm 
         - **Windows 10 ve üzeri**
 
     - **Profil türü**: Seçin **teslim iyileştirme**.
-    - **Ayarları**: Yüklenen güncelleştirmeleri nasıl istediğinizi seçin. Seçenekleriniz şunlardır: 
-
-        - **Yapılandırılmamış**: Son kullanıcılar cihazlarını kullanmak için kendi yöntemlerini kullanarak güncelleştirme **Windows güncelleştirmeleri** veya **teslim iyileştirme** ayarları OS ile kullanılabilir.
-        - **Yalnızca HTTP, eşleme yok**: Güncelleştirmeleri yalnızca internet'ten alın. Güncelleştirmeler (eşleme veya eşler arası olarak adlandırılır), ağınızdaki diğer bilgisayarlardan elde etmezsiniz.
-        - **Aynı NAT arkasında eşleme ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın. 
-        - **Özel bir grup üzerinde eşleme ile karışık HTTP**: Eşleme, aynı Active Directory (varsa) sitesi veya aynı etki alanında cihazlarda gerçekleşir. Bu seçenek belirlendiğinde, eşleme ağ adresi çevirisi (NAT) IP adreslerinizi çizer.
-        - **Internet eşlemesi ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın.
-        - **Eşlemesiz basit indirme modu**: Güncelleştirmeleri Microsoft update sahibinden doğrudan internet'ten alır. Bu teslim iyileştirme bulut Hizmetleri iletişim kurmaz.
-        - **Atlama modu**: Güncelleştirmeleri almak için arka plan Akıllı Aktarım Hizmeti (BITS) kullanın. Teslim iyileştirme kullanmayın.
+    - **Ayarları**: Güncelleştirmeleri ve uygulamaları indirmek için istediğiniz tanımlayan ayarlarını yapılandırın. Kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. [Delivery optimization ayarları ıntune](delivery-optimization-settings.md).
 
 4. İşiniz bittiğinde seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin.
 
-Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
+Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](device-profile-assign.md) ardından [atamanın durumunu izlemenize](device-profile-monitor.md).
 
 ## <a name="move-existing-update-rings-to-delivery-optimization"></a>Var olan güncelleştirme halkaları için teslim iyileştirme Taşı
 
-**Yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları** değiştirilir **teslim iyileştirme** ayarları. Mevcut uygulamanızı güncelleştirme halkaları kullanmak için kolayca değiştirilebilir **teslim iyileştirme** ayarları. Adımlar:
+**Teslim iyileştirme** ayarlarını değiştir **yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları**. Mevcut uygulamanızı güncelleştirme halkaları kullanmak için kolayca değiştirilebilir **teslim iyileştirme** ayarları. Bunu yapmak için:
 
 1. Teslim iyileştirme yapılandırma profili oluşturun:
 
@@ -84,7 +76,7 @@ Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](devic
             - **Internet eşlemesi ile karışık HTTP**
             - **Eşlemesiz basit indirme modu**
             - **Atlama modu**
-
+    3. Yönetmek istediğiniz ek ayarları yapılandırın.
 2. Bu yeni profili aynı cihazları ve kullanıcıları, mevcut yazılım güncelleştirme kademesi atayın. [Profil atama](device-profile-assign.md) adımları listelenir.
 
 3. Mevcut yazılım halka yapılandırmasını Kaldır:
@@ -95,4 +87,5 @@ Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](devic
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Profil atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md) durumu.
+[Profil atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md) durumu.  
+Görünüm [delivery optimization ayarları](delivery-optimization-settings.md) ıntune.

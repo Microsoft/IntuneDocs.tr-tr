@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf76b2406f07efa68275763da87340bb34f222
-ms.sourcegitcommit: 613b2064df07cfac0081e8549177e1f2d07cf33c
+ms.openlocfilehash: f7b78cdc329e3d6f61dea49ddb28429c2f12d0d6
+ms.sourcegitcommit: 95cc5f1e5e955acdff642191c174249465cc98bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56590079"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56982241"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Intune Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonları kullanma
 
 Kuruluşunuzdaki cihazları yönetirken, farklı cihaz gruplarına uygulanan ayarları bir grup oluşturmak istiyorsunuz. Örneğin, birkaç cihaz gruplarına sahip. GroupA için ayarları belirli bir kümesini atamak istediğiniz. GroupB için ayarları farklı bir kümesini atamak istediğiniz. Yapılandırabileceğiniz ayarların basit bir görünümünü de istiyor.
 
-Kullanarak bu görevi tamamlayabilirsiniz **Yönetim Şablonları** Microsoft Intune. Yönetim Şablonları yüzlerce Internet Explorer, Microsoft Office programları, Uzak Masaüstü özellikleri denetleyen ayar Ekle, Onedrive'a erişmek, resimli parola veya PIN oturum açmak için ve daha fazlasını kullanın. Bu şablonlar, Grup İlkesi (GPO) ayarlarını Active Directory (AD) benzer ve olan [ADMX destekli ayarları](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) XML kullanın. Ancak, Intune şablonlarında %100 bulut tabanlı. Daha fazla basit sundukları ve istediğiniz şekilde ayarları yapılandırın ve ayarları bulmak için modellemeniz.
+Kullanarak bu görevi tamamlayabilirsiniz **Yönetim Şablonları** Microsoft Intune. Yönetim Şablonları yüzlerce Internet Explorer, Microsoft Office programları, Uzak Masaüstü özellikleri denetleyen ayar Ekle, Onedrive'a erişmek, resimli parola veya PIN oturum açmak için ve daha fazlasını kullanın. Bu şablonlar, Grup İlkesi (GPO) ayarlarını Active Directory (AD) benzer ve olan [ADMX destekli ayarları](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (başka bir Docs sitesi açılır) XML kullanın. Ancak, Intune şablonlarında %100 bulut tabanlı. Daha fazla basit sundukları ve istediğiniz şekilde ayarları yapılandırın ve ayarları bulmak için modellemeniz.
 
 **Yönetim Şablonları** Intune'da yerleşiktir ve OMA-URI kullanma dahil olmak üzere, tüm özelleştirmeler gerekmez. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu şablon ayarları, Windows 10 cihazlarınızı yönetmek için bir tek Mağazanız kullanın.
 
@@ -75,6 +75,8 @@ Bu şablonları yüzlerce ayar vardır. Belirli ayarları bulmayı kolaylaştır
   ![Yol alfabetik olarak sıralamak için tıklayın](./media/administrative-templates-windows/search-copy-settings.png)
 
   Başka bir örnekte, arama `microsoft word`. Microsoft Word program için ayarladığınız tüm ayarları görürsünüz. Arama `explorer` tüm Internet Explorer ayarlarını görmek için şablonunuza ekleyebilirsiniz.
+
+Bu özelliği kullanan [CSP'ler Windows İlkesi](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (başka bir Docs sitesi açılır). CSP'ler Windows, Home, Professional, Enterprise vb. gibi farklı sürümleri üzerinde çalışır. Bir CSP belirli bir sürümü üzerinde çalışıp çalışmadığını görmek için Git [CSP'ler Windows İlkesi](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (başka bir Docs sitesi açılır).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

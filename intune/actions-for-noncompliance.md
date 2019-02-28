@@ -14,19 +14,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c37a5991adf2efdb5bf38b32d8af4c77af295ea0
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f42ebd42a6bf12fda5fbfb13198302b0943b7960
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844692"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955553"
 ---
-# <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme - Intune
+# <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>E-postayı otomatikleştirme ve eylemleri uyumsuz cihazlar için Intune'da ekleme
 
-Zamana göre sıralanmış bir eylem dizisi yapılandıran bir **Uyumsuzluk eylemleri** özelliği vardır. Bu eylemler, uyumluluk ilkenize uymayan cihazlara uygulanır. 
+Uyumluluk ilkeleri veya kuralları sağlamayan cihazlarda, eklediğiniz **uyumsuzluğa yönelik Eylemler**. Bu özellik son kullanıcı ile daha fazla e-postayla gönderme gibi eylemleri, zamana göre sıralı bir dizi yapılandırır.
 
 ## <a name="overview"></a>Genel Bakış
-Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Ardından Azure Active Directory (AD) [koşullu erişimi](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) cihazı engeller. Cihaz uyumlu olmadığında, **uyumsuzluk eylemleri** size karar verme esnekliği de sağlar. Örneğin, cihazı hemen engellemeyebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
+
+Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Ardından Azure Active Directory (AD) [koşullu erişimi](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) cihazı engeller. Bir cihaz uyumlu değilse **uyumsuzluğa yönelik Eylemler** ayrıca esnekliği karar verir. Örneğin, cihazı hemen engellemeyebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
 Çeşitli türlerde eylemler vardır:
 
@@ -73,14 +74,14 @@ Kullanıcılarınıza e-posta göndermek için bir bildirim iletisi şablonu olu
 
    ![Intune'da örnek uyumluluk bildirimi iletisi](./media/actionsfornoncompliance-1.PNG)
 
-4. Bilgileri ekledikten sonra **Oluştur**’u seçin. Bildirim iletisi şablonu kullanıma hazırdır. Şirket Portalı markasının bir parçası olarak yüklediğiniz logonun e-posta şablonlarında kullanılacağını unutmayın. Şirket Portalı markası hakkında daha fazla bilgi için bkz. [Şirket kimliği marka özelleştirme](company-portal-app.md#company-identity-branding-customization).  
+4. Bilgileri ekledikten sonra **Oluştur**’u seçin. Bildirim iletisi şablonu kullanıma hazırdır. Şirket portalı markası bir parçası olarak karşıya logo, e-posta şablonları için kullanılır. Şirket Portalı markası hakkında daha fazla bilgi için bkz. [Şirket kimliği marka özelleştirme](company-portal-app.md#company-identity-branding-customization).
 
 > [!NOTE]
-> Daha önceden oluşturulmuş bir Bildirim şablonunu da düzenleyebilirsiniz.
+> Ayrıca, değiştirebilir veya daha önce oluşturulmuş mevcut bir bildirim şablonu güncelleştirin.
 
 ## <a name="add-actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemler ekleme
 
-Cihaz uyumluluğu ilkesi oluşturduğunuzda, Intune uyumsuzluk için otomatik olarak bir eylem oluşturur. Cihazlardan birin uyumluluk ilkenize uymadığında, bu eylem cihazı uyumsuz olarak işaretler. Cihazın ne kadar süreyle uyumsuz olarak işaretleneceğini ayarlayabilirsiniz. Bu eylem kaldırılamaz.
+Cihaz uyumluluğu ilkesi oluşturduğunuzda, Intune uyumsuzluk için otomatik olarak bir eylem oluşturur. Bir cihaz cihazlardan birin uyumluluk ilkenize Bu eylem cihazı uyumsuz olarak işaretler. Cihazın ne kadar süreyle uyumsuz olarak işaretleneceğini ayarlayabilirsiniz. Bu eylem kaldırılamaz.
 
 Ayrıca, uyumluluk ilkesi oluştururken veya mevcut ilkeyi güncelleştirirken başka bir eylem ekleyebilirsiniz. 
 
@@ -100,11 +101,12 @@ Ayrıca, uyumluluk ilkesi oluştururken veya mevcut ilkeyi güncelleştirirken b
          - Daha önce oluşturduğunuz **İleti şablonunu** seçin
          - Grupları seçerek **Ek alıcılar** girin
     
-    - **Uyumsuz bir cihazı uzaktan kilitleme**: Cihaz uyumsuz olduğunda, cihazı kilitler. Bu seçenek cihazın kilidini açmak için kullanıcıyı PIN veya parola girmeye zorlar. 
+    - **Uyumsuz bir cihazı uzaktan kilitleme**: Cihaz uyumsuz olduğunda, cihazı kilitler. Bu eylem, kullanıcının bir PIN veya geçiş kodunu cihazın kilidini açmak için girmesini zorlar. 
     
-    - **Zamanlama**: Kullanıcıların cihazlarında eylemi tetiklemesine uyumsuzluktan sonra (0 ila 365) gün sayısını girin. Bu yetkisiz kullanım süresinden sonra bir koşullu erişim ilkesini zorlayabilirsiniz. Gün sayısı olarak **0** girerseniz, koşullu erişim **hemen** geçerlilik kazanır. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
+    - **Zamanlama**: Kullanıcıların cihazlarında eylemi tetiklemesine uyumsuzluktan sonra (0 ila 365) gün sayısını girin. Bu yetkisiz kullanım süresinden sonra bir koşullu erişim ilkesini zorlayabilirsiniz. Girerseniz **0** gün sonra koşullu erişim (sıfır) sayısı etkinleşir **hemen**. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
 
 5. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Ekle** > **Tamam**'ı seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Cihaz uyumluluk etkinliğini izleme](device-compliance-monitor.md).
+
+[İlkelerinizi izleme](compliance-policy-monitor.md).

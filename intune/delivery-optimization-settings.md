@@ -1,0 +1,70 @@
+---
+title: Windows 10 dağıtım iyileştirme ayarlarını Intune | Microsoft Docs
+description: Windows 10 cihazları, Intune kullanarak dağıtmak için dağıtım iyileştirme ayarlarını.
+keywords: ''
+author: brenduns
+ms.author: brenduns
+manager: dougeby
+ms.date: 02/27/2019
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.reviewer: kerimh
+ms.suite: ems
+search.appverid: MET150
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 56d7ad77a1f1d130c5ac1819b3b4b9de435ab373
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955642"
+---
+# <a name="delivery-optimization-settings-for-intune"></a>Intune için teslim iyileştirme ayarları
+
+Bu makalede, Intune Windows 10 veya sonraki sürümleri çalıştıran cihazlar için destekler delivery optimization ayarları listelenir.  
+
+Intune konsolunda çoğu seçenekleri doğrudan ilgili içeriğe bağlantılar sağlanan Windows belgelerinde kapsamlı kapsanan delivery optimization ayarları eşleyin.  Ayarlar veya Intune'a özgü seçenekler gösterecek içeriğin bağlantıları içermez.  
+
+Aşağıdaki tablolarda şunlardır:  
+
+- **Ayar**: Ayarı olarak Intune görünür. Bağlantılar ayarlarını açın ilgili girişte [yapılandırma teslim iyileştirme için Windows 10 güncelleştirmeleri](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) burada edinebilirsiniz ayarı hakkında daha fazla Windows belgelerinde.
+
+- **Windows sürümü**: En düşük sürümü Windows 10, bu ayar için destek içerir.  
+
+- **Ayrıntılar**: Intune Intune'un varsayılan dahil olmak üzere bu ayarı nasıl uyguladığını kısa bir açıklaması. Kullanılabilir olduğunda, bağlantıları bulunduğuna [teslim iyileştirme ilke yapılandırma hizmet sağlayıcısı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization) (CSP) giriş.  
+
+Bu ayarları kullanmak için Intune'u yapılandırma için bkz: [teslim güncelleştirmeleri](delivery-optimization-windows.md).  
+
+## <a name="delivery-optimization"></a>Teslim iyileştirme  
+
+|Ayar  |Windows sürümü  |Ayrıntılar  |
+|---------|-----------------|---------|
+| [İndirme modu](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)     | 1511         | İndirme yöntemini belirtin, teslim iyileştirme içerik indirmek için kullanır.<br><ul><li>**Yapılandırılmamış**: Son kullanıcılar cihazlarını kullanmak için kendi yöntemlerini kullanarak güncelleştirme *Windows güncelleştirmeleri veya teslim iyileştirme* ayarları işletim sistemi ile kullanılabilir. </li> <li> **Yalnızca HTTP, eşleme yok (0)**: Güncelleştirmeleri yalnızca internet'ten alın. Güncelleştirmeler (eşler arası), ağınızdaki diğer bilgisayarlardan elde etmezsiniz. </li> <li> **(1) aynı NAT arkasında eşleme ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın. </li> <li> **Özel bir grup (2) üzerinde eşleme ile karışık HTTP**: Eşleme, aynı Active Directory (varsa) sitesi veya aynı etki alanında cihazlarda gerçekleşir. Bu seçenek belirlendiğinde, eşleme ağ adresi çevirisi (NAT) IP adreslerinizi çizer. </li> <li> **Internet (3) eşleme ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın. </li> <li> **Hiçbir eşleme (99) ile basit indirme modu**: Güncelleştirmeleri Microsoft update sahibinden doğrudan internet'ten alır. Bu teslim iyileştirme bulut Hizmetleri iletişim kurmaz. </li> <li> **Atlama modu (100)**: Güncelleştirmeleri almak için arka plan Akıllı Aktarım Hizmeti (BITS) kullanın. Teslim iyileştirme kullanmayın. </li></ul> **Varsayılan**: Yapılandırılmadı  <br><br> CSP İlkesi: [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)  <br><br>  |
+| [Eş seçimi kısıtlama](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#select-a-method-to-restrict-peer-selection)          | 1803        | Gerektirir **indirme modu** ayarlanması *(1) aynı NAT arkasında eşleme ile karışık HTTP* veya *özel bir grup (2) üzerinde eşleme ile karışık HTTP*.<br/><br/>Belirli bir cihaz grubuna eş seçimi kısıtlar.<br/><br/>**Varsayılan**: Yapılandırılmadı <br/><br/>CSP İlkesi: [DORestrictPeerSelectionBy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dorestrictpeerselectionby)<br><br>      |
+| [Grup Kimliği kaynak](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#select-the-source-of-group-ids)     | 1803        | Gerektirir **indirme modu** ayarlanması *özel bir grup üzerinde eşleme ile karışık HTTP*.<br><br>Belirli bir gruba göre kaynak cihazların eş seçimi kısıtlar.<br><br>Seçerseniz **özel**, ardından yapılandırma **Grup Kimliği (GUID)**. Farklı etki alanlarında veya aynı LAN üzerinde olmayan dallar için yerel ağ eşlemesi için tek bir grup oluşturmanız gerekiyorsa bir GUID Grup Kimliği kullanın.<br><br>**Varsayılan**: Yapılandırılmadı <br><br>CSP İlkesi: [DOGroupId](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dogroupid)     |
+
+## <a name="bandwidth"></a>Bant genişliği  
+
+|Ayar  |Windows sürümü  |Ayrıntılar  |
+|---------|---------|---------|
+|Bant genişliği iyileştirme türü     | *Ayrıntılarına bakın*        | Intune maksimum nasıl belirlediğini seçebilirsiniz bant genişliği, teslim iyileştirme tüm eş zamanlı indirme etkinliklerinde kullanabilirsiniz.<br><br>Şu seçenekler mevcuttur:<br><ul><li>**Yapılandırılmadı**</li><br><li>**Mutlak**– belirtin [en çok indirme bant genişliği (KB/sn)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#maximum-download-bandwidth) ve [en çok karşıya yükleme bant genişliği (KB/sn)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#max-upload-bandwidth) bir cihaz kendi arasında tüm eş zamanlı teslim iyileştirme indirme kullanabilirsiniz etkinlikler.<br><br>Windows 1607 gerektirir<br><br>CSP İlkesi: [DOMaxDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxdownloadbandwidth) ve [DOMaxUploadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxuploadbandwidth)</li><br><li>**Yüzde** – belirtin [en fazla ön yükleme bant genişliği (%)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#maximum-foreground-download-bandwidth) ve [en fazla arka plan indirme bant genişliği (%)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#maximum-foreground-download-bandwidth) tüm eş zamanlı teslim arasında kullanabileceğiniz bir cihaz iyileştirme etkinlikleri indirir.<br><br>Windows 1803 gerektirir<br><br>CSP İlkesi: [DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth) ve [DOPercentageMaxBackgroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)    <br><br><li>**İş saatleri ile yüzde** – en fazla [ön plan](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#set-business-hours-to-limit-foreground-download-bandwidth) bant genişliği ve en fazla indirme [arka plan](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#set-business-hours-to-limit-background-download-bandwidth) bant genişliği indirin, yapılandırma iş saatleri başlangıç ve bitiş zamanları ve ardından sırasında ve iş saatleriniz dışında kullanmak için bant genişliği yüzdesi. <br><br>Windows 1803 gerektirir <br><br>CSP İlkesi: [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth) ve [DOSetHoursToLimitForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)<br><br>   |
+|[Gecikme (saniye cinsinden) arka plan HTTP indirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#delay-background-download-from-http-in-secs) | 1803        | HTTP üzerinden içerik arka plan indirilmesini gecikme süresi üst sınırını yapılandırmak için bu ayarı kullanın. Bu, bir eşler arası indirme kaynağı destekleyen indirmeler için geçerlidir. Bu gecikme sırasında kullanılabilir içeriği bir eş cihaz arar. Bir eş kaynağı için beklenirken indirme için son kullanıcı durmuş görünüyor.   <br><br>**Varsayılan**:  *Hiçbir değer yapılandırılır*  <br><br>**Önerilen**: 60 saniye   <br><br>CSP İlkesi: [DODelayBackgroundDownloadFromHttp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaybackgrounddownloadfromhttp) <br><br>    |
+| [Gecikme (saniye cinsinden) ön plan HTTP indirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#delay-foreground-download-from-http-in-secs)      | 1803       | HTTP üzerinden içerik ön plan (etkileşimli) yüklenmesini geciktirmek için maksimum süreyi yapılandırın. Bu, bir eşler arası indirme kaynağı destekleyen indirmeler için geçerlidir. Bu gecikme sırasında kullanılabilir içeriği bir eş cihaz arar. Bir eş kaynağı için beklenirken indirme için son kullanıcı durmuş görünüyor.   <br><br>**Varsayılan**:  *Hiçbir değer yapılandırılır*  <br><br>**Önerilen**: 60 saniye   <br><br>CSP İlkesi:  [DODelayForegroundDownloadFromHttp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelayforegrounddownloadfromhttp) <br><br>         |
+
+
+## <a name="caching"></a>Önbelleğe alma  
+
+|Ayar  |Windows sürümü  |Ayrıntılar  |
+|---------|---------|---------|
+|[Eşler arasında önbelleğe alma (GB) için gereken en düşük RAM](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#minimum-ram-allowed-to-use-peer-caching)      | 1703        | En düşük RAM boyutu olmak üzere eş önbelleğe almayı kullanmak için bir cihaz olmalıdır GB cinsinden belirtin. <br><br>**Varsayılan**:   *Hiçbir değer yapılandırılır*  <br><br>**Önerilen**: 4 GB <br><br>CSP İlkesi: [DOMinRAMAllowedToPeer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominramallowedtopeer) <br><br>        |
+|[Eşler arasında önbelleğe alma (GB) için gerekli minimum disk boyutu](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#minimum-disk-size-allowed-to-use-peer-caching)      | 1703        | Minimum disk boyutu, bir cihaz eş önbelleğe almayı kullanmak zorunda GB cinsinden belirtin. <br><br>**Varsayılan**:  *Hiçbir değer yapılandırılır*  <br><br>**Önerilen**: 32 GB   <br><br>CSP İlkesi: [DOMinDiskSizeAllowedToPeer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domindisksizeallowedtopeer) <br><br>    |
+|[Eşler arasında önbelleğe alma (MB) için içerik en küçük dosya boyutu](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#minimum-peer-caching-content-file-size)      | 1703        | En az bir dosya karşılamalıdır veya eşler arasında önbelleğe alma kullanılacağını aşıldı MB cinsinden belirtin.  <br><br>**Varsayılan**:  *Hiçbir değer yapılandırılır*  <br><br>**Önerilen**: 10 MB   <br><br>CSP İlkesi: [DOMinFileSizeToCache](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominfilesizetocache)  <br><br>      |
+|[(%) Karşıya yüklemek için gerekli en düşük pil düzeyi](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)      | 1709        | Bir cihaz eşlere verileri yüklemek için gereken en düşük pil düzeyi olan bir yüzdesi olarak belirtin. Pil düzeyi için belirtilen değer düşerse, tüm etkin karşıya yüklemeler otomatik olarak duraklatır.   <br><br>**Varsayılan**:  *Hiçbir değer yapılandırılır*  <br><br>**Önerilen**:  40%   <br><br>CSP İlkesi: [DOMinBatteryPercentageAllowedToUpload](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominbatterypercentageallowedtoupload) <br><br>        |
+|[Önbellek sürücüsü değiştirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#modify-cache-drive)        | 1607        | Sürücüyü belirtin, teslim iyileştirme için önbelleğini kullanır. Bir ortam değişkeni, sürücü harfini ya da tam yolu kullanabilirsiniz.  <br><br>**Varsayılan**: % SYSTEMDRIVE % <br><br>CSP İlkesi:  [DOModifyCacheDrive](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domodifycachedrive) <br><br>        |
+| [En büyük önbellek yaşı (gün cinsinden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#max-cache-age)    | 1511         | Uzun her dosya başarıyla teslim iyileştirme önbelleğinde bir cihazdaki dosyayı tutulur İndirildikten sonra nasıl için belirtin.   <br><br>Intune ile günde önbellek yaşını yapılandırın. Tanımladığınız gün sayısını nasıl Windows bu Bu ayar tanımlar olduğu saniye cinsinden geçerli sayıya dönüştürülür. Örneğin, bir Intune yapılandırma 3 gün 259200 saniyedir (3 gün) cihaza dönüştürülür.  <br><br>**Varsayılan**:   *Hiçbir değer yapılandırılır*     <br><br>**Önerilen**: 7   <br><br>CSP İlkesi: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+[Teslim iyileştirme Intune yapılandırma](delivery-optimization-windows.md)

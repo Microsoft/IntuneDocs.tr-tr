@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad47171d1d0cd4f5d3ac19fe3dadea90b3be1cc8
-ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
+ms.openlocfilehash: 83168acc6653f750b9cf32d91602464b62aebcfe
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838356"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955638"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -48,11 +48,17 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikl
 <!-- ########################## -->
 ## <a name="week-of-february-25-2019"></a>25 Şubat 2019 haftası
 
-### <a name="intune-powershell-module----951068-wnready---"></a>Intune PowerShell Modülü <!-- 951068 wnready -->
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="intune-powershell-module----951068----"></a>Intune PowerShell Modülü <!-- 951068  -->
 Microsoft Graph aracılığıyla Intune API için destek sağlar, Intune PowerShell modülünü kullanıma sunulduğunu [Microsoft PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10).
 
 - [Bu modül hakkında ayrıntılı bilgi kullanın](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
 - [Bu modül kullanılarak senaryo örnekleri](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
+
+#### <a name="improved-support-for-delivery-optimization----3183757-------"></a>Teslim iyileştirme için gelişmiş destek  <!--3183757     -->
+Biz teslim iyileştirme'yi yapılandırmak için Intune desteği genişletilmiş. Artık genişletilmiş bir listesini yapılandırabilirsiniz [teslim iyileştirme ayarlarını](delivery-optimization-settings.md) ve doğrudan Intune konsolundan cihazlarınıza hedefleyebilirsiniz.
+
 
 ## <a name="week-of-february-18-2019"></a>18 Şubat 2019 haftası
 
@@ -76,7 +82,7 @@ Yeni uygulama yükleme hata iletileri için aşağıdaki ilgili vardır:
 Intune'da seçin **istemci uygulamaları** > **uygulamaları** > "Uygulama adı" > **cihaz yükleme durumu**. Yeni hata iletileri de kullanılabilir olacak **durumu ayrıntıları** sütun.
 
 #### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780----"></a>Windows 10 için Şirket portalı uygulamasında yeni uygulama kategorileri ekran<!-- 3834780  -->
-Adlı yeni bir ekran **uygulama kategorileri** Windows 10 için Şirket portalı uygulaması gezinme ve seçim deneyimini iyileştirmek üzere eklendi. Kullanıcılar artık kategoriler altında gibi sıralanan uygulamalarını görmek **öne çıkan**, **eğitim**, ve **üretkenlik**. Bu değişikliği Şirket portalı sürümleri 10.3.3451.0 görünür ve daha sonra. Yeni ekran görüntülemek için bkz: [uygulama kullanıcı Arabirimindeki yenilikler](https://docs.microsoft.com/intune/whats-new). Şirket portalı'nda uygulama hakkında daha fazla bilgi için bkz. [yüklemek ve paylaşmak cihazınızdaki uygulamaların](/intune-user-help/install-apps-cpapp-windows).  
+Adlı yeni bir ekran **uygulama kategorileri** Windows 10 için Şirket portalı uygulaması gezinme ve seçim deneyimini iyileştirmek üzere eklendi. Kullanıcılar artık kategoriler altında gibi sıralanan uygulamalarını görmek **öne çıkan**, **eğitim**, ve **üretkenlik**. Bu değişikliği Şirket portalı sürümleri 10.3.3451.0 görünür ve daha sonra. Yeni ekran görüntülemek için bkz: [uygulama kullanıcı Arabirimindeki yenilikler](https://docs.microsoft.com/intune/whats-new-app-ui). Şirket portalı'nda uygulama hakkında daha fazla bilgi için bkz. [yüklemek ve paylaşmak cihazınızdaki uygulamaların](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI uyumluluk uygulaması <!-- 1455231 doc-work-item -->
 Power BI çevrimiçi kullanarak Intune veri ambarı'nızı erişim [Intune uyumluluk (veri ambarı)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) uygulama. Bu Power BI uygulaması ile artık erişmek ve herhangi bir kurulum yapmadan ve web tarayıcınızı çıkmadan önceden oluşturulmuş raporları paylaşabilirsiniz. Ek bilgi için bkz: [değişiklik günlüğü - Power BI uyumluluğu uygulama](reports-changelog.md#power-bi-compliance-app). Ek Intune veri ambarı güncelleştirmeler için bkz [yaklaşan değişiklikleri Intune veri ambarı API'sine](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
