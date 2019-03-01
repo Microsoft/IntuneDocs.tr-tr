@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ccdb8c40c87bc4f5e778bc1cb7a6966f8a0ad70
-ms.sourcegitcommit: 33bacf9d5db336e73d8c88fa15f6535ae92b4b00
+ms.openlocfilehash: 57360f2ffae038b57e2a8c57fc5eeba9a0fd5d2f
+ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56418527"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017141"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
 
@@ -404,7 +404,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 ### <a name="accounts"></a>Hesaplar
 
 - **Yeni Microsoft hesapları Ekle**: Kümesine **blok** kullanıcıların, cihaz için yeni Microsoft hesapları eklemesini engellemek için. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcılar cihazda Microsoft hesabı kullanabilir.
-- **Parola olmadan uzaktan oturum açma**: **Etkinleştirme** cihazın klavye kullanarak oturum açmanız, boş parolalı yerel hesaplar sağlar. **Yapılandırılmadı** (varsayılan) ayarı, boş parolası olan yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasına izin verir.
+- **Parola olmadan uzaktan oturum açma**: **Blok** yalnızca yerel hesapları cihazın klavye kullanarak oturum açmanız, boş parolalı sağlar. **Yapılandırılmadı** (varsayılan) ayarı, boş parolası olan yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasına izin verir.
 
 #### <a name="admin"></a>Yönetici
 
@@ -442,7 +442,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 #### <a name="display"></a>Görüntüle
 
 - **Kilit ekranında kullanıcı bilgileri**: Oturum kilitlendiğinde görüntülenen kullanıcı bilgilerini yapılandırın. Yapılandırılmazsa, kullanıcı görünen adı, etki alanı ve kullanıcı adı gösterilir.
-  - **Yapılandırılmadı**
+  - **Yapılandırılmadı**  
   - **Kullanıcı görünen adı, etki alanı ve kullanıcı adı**
   - **Yalnızca kullanıcı görünen adı**
   - **Kullanıcı bilgilerini görüntüleme**
@@ -458,7 +458,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 - **SAM hesaplarının ve paylaşımların anonim listelenmesi**: **Yapılandırılmamış** anonim kullanıcıların etki alanı hesaplarının adlarını numaralandırır ve ağ paylaşımları (varsayılan) anlamına gelir. SAM hesaplarının ve paylaşımlarının anonim listelenmesini önlemek için **Engelle** olarak ayarlayın.
 - **Parola değişiminde depolanan LAN Manager karma değerini**: Sonraki parola değişiminde tercih **izin** LAN Yöneticisi (yeni parola karması değerini depolamak için LM). **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, karma değer depolanmaz.
 - **PKU2U kimlik doğrulama isteklerini**: **Blok** çevrimiçi kimlikleri kullanmak için PKU2U kimlik doğrulama isteklerini cihaz. **Yapılandırılmadı** (varsayılan) ayarı bu isteklere izin verir.
-- **SAM uzak RPC bağlantılarını kısıtla**: **İzin** kullanıcıların ve grupların SAM'ye uzaktan çağrı yapmak için reddetmek için varsayılan güvenlik tanımlayıcısı tanım dili dizesini. **Yapılandırılmadı** (varsayılan) ayarında, kullanıcıların ve grupların SAM'ye uzak çağrı yapmasına izin vermek için varsayılan Güvenlik Tanımlayıcısı Tanım Dili dizesi yapılandırılmaz.
+- **SAM uzak RPC bağlantılarını kısıtla**: Kümesine **izin** kullanıcılar ve gruplar için Güvenlik Hesapları Yöneticisi (kullanıcı hesapları ve parolaları depolayan SAM), uzak RPC çağrıları yapmasını engellemek için. **İzin** açıkça veya kullanıcılar ve gruplar bu uzak çağrı yapmak için reddetmek için varsayılan güvenlik tanımlayıcısı tanım dili (SDDL) dizesi değiştirmek de sağlar. **Yapılandırılmamış** (varsayılan), varsayılan güvenlik tanımlayıcısı kullanır ve kullanıcılar ve grupların SAM'ye uzak RPC çağrı yapmak izin verebilir.
   - **Güvenlik tanımlayıcısı**
 
 ### <a name="recovery-console-and-shutdown"></a>Kurtarma konsolu ve kapatma
@@ -468,8 +468,8 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 
 ### <a name="user-account-control"></a>Kullanıcı hesap denetimi
 
-- **Güvenli konum olmadan UIA bütünlüğü**: Ayarlandığında **etkinleştirme**, dosya sistemindeki güvenli bir konumda uygulamalar yalnızca UIAccess bütünlük ile çalıştırın. **Yapılandırılmadı** (varsayılan) ayarı, uygulamaların dosya sistemindeki güvenli konumlarda bulunmasa bile UIAccess bütünlüğüyle çalıştırılmasına izin verir.
-- **Dosya ve kayıt defteri yazma hatalarını kullanıcı başına konumlarında sanal olarak oluştur**: Ayarlandığında **blok**uygulama hataları yeniden yönlendirme kayıt defteri ve dosya sistemi için çalışma zamanında tanımlanan kullanıcı konumlara yazma. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, korumalı konumlara veri yazan uygulamalar başarısız olur.
+- **Güvenli konum olmadan UIA bütünlüğü**: Ayarlandığında **blok**, dosya sistemindeki güvenli bir konumda uygulamalar yalnızca UIAccess bütünlük ile çalıştırın. **Yapılandırılmadı** (varsayılan) ayarı, uygulamaların dosya sistemindeki güvenli konumlarda bulunmasa bile UIAccess bütünlüğüyle çalıştırılmasına izin verir.
+- **Dosya ve kayıt defteri yazma hatalarını kullanıcı başına konumlarında sanal olarak oluştur**: Ayarlandığında **etkin**, korumalı veri yazan uygulamaları konumları başarısız. Ayarlandığında **yapılandırılmadı** (varsayılan), uygulama yazma hatalarının en yönlendirilir çalışma zamanında tanımlanan kullanıcı konumlara kayıt defteri ve dosya sistemi için.
 - **Yalnızca imzalı ve doğrulanmış yürütülebilir dosyaları Yükselt**: Kümesine **etkin** çalıştırılmadan önce bir yürütülebilir dosya için PKI sertifika yolu doğrulamasını zorunlu kılmak için. Bir yürütülebilir dosyanın çalışabilmesi için PKI sertifika yolu doğrulamasını zorlamamak için **Yapılandırılmadı** olarak ayarlayın.
 
 #### <a name="uia-elevation-prompt-behavior-settings"></a>UIA yükseltme istemi davranışı ayarları
@@ -486,13 +486,13 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
   - **Güvenli masaüstünde kimlik bilgileri iste**
   - **Yapılandırılmamış**: Kimlik bilgisi istemi
 - **Yükseltme istemlerini kullanıcının etkileşimli masaüstüne yönlendir**: **Etkinleştirme** şekilde tüm yükseltme isteklerinin güvenli masaüstü etkileşimli kullanıcının masaüstüne geçin. Yöneticiler ve standart kullanıcılar için herhangi bir istem davranışı ilke ayarı kullanılır. **Yapılandırılmadı** (varsayılan) ayarı, yöneticiler ve standart kullanıcılar için istem davranışı ilke ayarlarına bakılmaksızın tüm yükseltme isteklerini güvenli masaüstüne gitmeye zorlar.
-- **Uygulama yüklemeleri için yükseltilmiş istem**: Ayarlandığında **blok**, uygulama yükleme paketleri algılandı veya yükseltme istenir. Ayarlandığında **yapılandırılmadı** (varsayılan) ve bir uygulaması yükleme paketini yükseltilmiş ayrıcalıklar gerektiren, kullanıcı bir yönetici kullanıcı adı ve parola istenir.
-- **Güvenli Masaüstü olmadan UIA yükseltme istemi**: **Etkinleştirme** UIAccess uygulamalarının güvenli masaüstü kullanmadan, yükseltme isteminde bulunmasına izin verir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yükseltme istemleri bir güvenli masaüstü kullanır.
+- **Uygulama yüklemeleri için yükseltilmiş istem**: Ayarlandığında **etkin**, uygulama yükleme paketleri algılandı veya yükseltme istenir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, bir uygulama paketi yükseltilmiş ayrıcalıklar gerektirdiğinde kullanıcıdan yönetici kullanıcı adı ve parolası istenir.
+- **Güvenli Masaüstü olmadan UIA yükseltme istemi**: **Etkinleştirme** UIAccess uygulamalarının güvenli masaüstü kullanmadan, yükseltme isteminde bulunmasına izin vermek için. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yükseltme istemleri bir güvenli masaüstü kullanır.
 
 #### <a name="admin-approval-mode-settings"></a>Yönetici Onay Modu ayarları
 
 - **Yönetici Onay Modu için yerleşik yönetici**: **Etkin** yönetici onay modu kullanmak için yerleşik Yönetici hesabını sağlar. Ayrıcalık gerektiren herhangi bir işlem, kullanıcıdan işlemi onaylamasını ister. **Yapılandırılmadı** (varsayılan) ayarı, tam yönetici ayrıcalıkları olan tüm uygulamaları çalıştırır.
-- **Tüm yöneticileri Yönetici Onay Modu'nda Çalıştır**: Kümesine **blok** UAC ilke ayarlarının ilgili yönetici onay modu ve tüm devre dışı bırakın. **Yapılandırılmadı** (varsayılan) ayarı, Yönetici Onay Modunu etkinleştirir.
+- **Tüm yöneticileri Yönetici Onay Modu'nda Çalıştır**: Kümesine **etkin** UAC ilke ayarlarının ilgili yönetici onay modu ve tüm devre dışı bırakın. **Yapılandırılmadı** (varsayılan) ayarı, Yönetici Onay Modunu etkinleştirir.
 
 ### <a name="microsoft-network-client"></a>Microsoft Ağ İstemcisi
 

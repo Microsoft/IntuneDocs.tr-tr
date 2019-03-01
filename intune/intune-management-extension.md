@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9b44e4fda5e7ff78a41dd952ea9eabcb820cfb3
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 99e44190f2e87d1b859450bc96bf52e1cd1430f1
+ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742389"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017039"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Windows 10 cihazlarda ıntune'da PowerShell betiklerini kullanın
 
@@ -84,7 +84,7 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 > - Azure AD güvenlik gruplarına cihaz ıntune'da PowerShell betiklerini hedefleyebilir.
 > - Azure AD güvenlik gruplarını için ıntune'da PowerShell betiklerini hedefleyebilir.
 
-Intune yönetim uzantısı istemci saatte ıntune'la denetler. İlkeyi Azure AD gruplarına atadıktan sonra, PowerShell betiği çalıştırılır ve çalıştırma sonuçları raporlanır.
+Intune yönetim uzantısı istemci saatte bir denetler ve yeni komut dosyaları veya değişiklikler için Intune ile her bir yeniden başlatma işleminden sonra. İlkeyi Azure AD gruplarına atadıktan sonra, PowerShell betiği çalıştırılır ve çalıştırma sonuçları raporlanır. Betiğini yürütür sonra olmadığı sürece betik veya ilke değişikliği yeniden yürütülmez.
 
 ## <a name="monitor-run-status"></a>Çalıştırma durumu İzleyicisi
 
