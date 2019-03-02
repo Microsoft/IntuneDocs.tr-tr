@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f87b40a32c17ecbdfc3fc9c5bf6937d8793b4e05
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 0435a571ceb5fb4896fe36f01658e20fafd5c56f
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986850"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233126"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 

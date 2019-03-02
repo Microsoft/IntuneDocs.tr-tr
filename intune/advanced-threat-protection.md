@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ff07dfa48ab213bc65afc58708f490a80fb5ba8
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 24286ab4d491bc3c5e6ecc90e881e95c1af2d2fd
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742525"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233942"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP için ıntune'da koşullu erişim uyumluluğu zorla
 
@@ -130,7 +130,7 @@ Uyumluluk ilkesi, cihazda kabul edilebilir bir risk düzeyi belirler.
 Cihaz *uyumsuzsa* koşullu erişim ilkesi, kaynaklara erişimi engeller. Yani bir cihaz, tehdit düzeyini aşarsa SharePoint veya Exchange Online gibi şirket kaynaklarına erişimi engelleyebilirsiniz.  
 
 > [!TIP]  
-> Koşullu erişim, bir Azure Active Directory (Azure AD) teknolojisidir. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*.  
+> Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır.  
 
 1. İçinde [Azure portalında](https://portal.azure.com)açın **Intune** > **koşullu erişim** > **yeni ilke**.
 2. İlke için bir **Ad** girin ve **Kullanıcılar ve gruplar**’ı seçin. İlke için grupları eklemek üzere Dahil Et veya Hariç Tut seçeneklerini kullanın ve **Bitti**’yi seçin.

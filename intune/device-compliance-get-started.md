@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune - Azure’da cihaz uyumluluk ilkeleri | Microsoft Docs
-description: Cihaz uyumluluk ilkelerini kullanma gereksinimleri, durum ve önem derecesi genel bakışı, InGracePeriod durumunu kullanma, koşullu erişim ile çalışma, atanmış bir ilkesi olmayan cihazları işleme ve Azure portalı ile Microsoft Intune klasik portal arasındaki uyumluluk farkları
+description: Kullanımı cihaz uyumluluk ilkelerini, koşullu erişim, Azure portalında uyumluluk farkları ve atanmış bir ilkesi olmayan cihazları işleme ile çalışma Ingraceperiod durumunu kullanma, durum ve önem derecesi genel bakış kullanmaya başlayın ve Klasik portalda Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,28 +15,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2a3a9838043d4e9b69c6369da87a6f54087f76c
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: c3db2b41b8203b74c0892793a4631dbae691a454
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850011"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57234231"
 ---
-# <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama
+# <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Cihazları Intune kullanarak kuruluşunuzda kaynaklara erişim izni vermek için kuralları ayarlayın
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Çok sayıda mobil cihaz Yönetimi (MDM) çözümleri, kullanıcılara ve cihazlara bazı gereksinimlerini gerektirerek kurumsal verilerin korunmasına yardımcı olur. Intune, bu özellik "uyumluluk ilkeleri" olarak adlandırılır. Uyumluluk ilkeleri, kullanıcılara ve cihazlara uyumlu olabilmesi için karşılaması gereken ayarları ve kuralları tanımlar. Koşullu erişim ile birlikte kullanıldığında, yöneticilerin kullanıcıları ve kurallara uymayan cihazları engelleyebilirsiniz. Örneğin, bir Intune Yöneticisi gerektirebilir:
+Çok sayıda mobil cihaz Yönetimi (MDM) çözümleri, kullanıcılara ve cihazlara bazı gereksinimlerini gerektirerek kurumsal verilerin korunmasına yardımcı olur. Intune, bu özellik "uyumluluk ilkeleri" olarak adlandırılır. Uyumluluk ilkeleri, kullanıcılara ve cihazlara uyumlu olabilmesi için karşılaması gereken ayarları ve kuralları tanımlar. Koşullu erişim ile birlikte kullanıldığında, yöneticilerin kullanıcıları ve kurallara uymayan cihazları engelleyebilirsiniz. 
+
+Örneğin, bir Intune Yöneticisi gerektirebilir:
 
 - Son kullanıcılar, mobil cihazlardaki Kurumsal verilere erişmek için bir parola kullanın.
-
 - Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz değil
-
 - Bir cihazın minimum veya maksimum işletim sistemi sürümü
-
 - Cihazın, veya bu düzeyin altında bir tehdit düzeyi olmasını
 
-Cihaz uyumluluk ilkelerini, cihazlarınızdaki uyumluluk durumunu izlemek için de kullanabilirsiniz.
+Bu özellik, kuruluşunuzdaki cihazların uyumluluk durumunu izlemek için de kullanabilirsiniz.
 
 > [!IMPORTANT]
 > Intune, cihazda tüm uyumluluk değerlendirme için cihaz iade zamanlama izler. [Cihaz iade zamanlama hakkında daha fazla bilgi](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -96,14 +95,26 @@ Bir cihaz Intune’a kaydedildiğinde Azure AD kayıt işlemi başlar. Bu işlem
 
 Uyumluluk denetimi, Intune yapılandırma profili aynı yenileme döngüsü kullanır. Genel olarak, zamanları şunlardır:
 
-- iOS: Altı saatte bir
-- macOS: Altı saatte bir
-- Android: Her sekiz saatte bir
-- Cihaz olarak kaydedilen Windows 10 bilgisayarları: Her sekiz saatte bir
-- Windows Phone: Her sekiz saatte bir
-- Windows 8.1: Her sekiz saatte bir
+| Platform | Yenileme döngüsü|
+| --- | --- |
+| iOS | 6 saatte bir |
+| Mac OS | 6 saatte bir |
+| Android | 8 saatte bir |
+| Cihaz olarak kaydedilen Windows 10 bilgisayarlar | 8 saatte bir |
+| Windows Phone | 8 saatte bir |
+| Windows 8.1 | 8 saatte bir |
 
-Hemen bir cihaz kaydolduktan sonra bir uyumluluk denetimi daha sık gerçekleşir.
+Son olarak cihazın kayıtlı, uyumluluk iade daha sık çalışır:
+
+| Platform | Sıklık |
+| --- | --- |
+| iOS | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir |  
+| Mac OS X | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir | 
+| Android | 15 dakika boyunca 3 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
+| Windows Phone | 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
+| Cihaz olarak kaydedilen Windows bilgisayarları | 30 dakika boyunca 3 dakikada bir, daha sonra 8 saatte bir | 
+
+Her zaman, kullanıcılar Şirket portalı uygulamasını açın ve hemen bir ilkeyi denetlemek için cihazı eşitleyebilir.
 
 ### <a name="assign-an-ingraceperiod-status"></a>InGracePeriod durumu atama
 

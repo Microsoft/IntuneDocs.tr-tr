@@ -6,8 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c586f7f4d72db5d193f02dca06aa868c73cbb09e
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6130e6fde9f6ddb8515914da049b5c7512c401a7
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742508"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232820"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -255,6 +255,16 @@ Gerekirse, uygulama ataması başına gösteren son kullanıcı bildirimleri gö
 İstemci makinesindeki aracı günlükleri genellikle `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` yolunda bulunur. Bu günlük dosyalarını görüntülemek için `CMTrace.exe` dosyasından yararlanabilirsiniz. *CMTrace.exe*, [SCCM İstemci Araçları](https://docs.microsoft.com/sccm/core/support/tools)'ndan indirilebilir. 
 
 ![Aracısı'nın ekran görüntüsü istemci makinesine kaydeder](./media/apps-win32-app-10.png)    
+
+> [!IMPORTANT]
+> Uygun yükleme ve yürütme Win32 LOB uygulamalarını izin vermek için kötü amaçlı yazılımdan koruma ayarları aşağıdaki dizinlerin taranmasını dışlamanız gerekir:<p>
+> **X64 istemci makineleri**:<br>
+> *C:\Program dosyaları (x86) \Microsoft Intune Yönetimi Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **X86 istemci makineleri**:<br>
+> *C:\Program Files\Microsoft Intune Yönetimi Extension\Content*<br>
+> *C:\windows\IMECache*
 
 Win32 uygulamaları sorunlarını giderme hakkında daha fazla bilgi için bkz. [Win32 uygulama yükleme sorunlarını giderme](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 

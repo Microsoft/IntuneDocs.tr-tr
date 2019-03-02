@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/23/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 874d191d79c22dd7b044df2e5a8e813324e35e11
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844182"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230032"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Şirketinizdeki kullanıcılara yardımcı olmak için sorun giderme portalını kullanma
 
@@ -61,7 +61,7 @@ Kullanıcı bilgilerini gözden geçirmek için **Sorun Giderme** bölmesini kul
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Alan | Ad | Açıklama |
+| Alan | Name | Açıklama |
 | ---  | ---  | ---         |
 | 1.   | Hesap durumu  | Geçerli Intune kiracısının durumunu **Etkin** veya **Etkin Değil** olarak gösterir.       |
 | 2.   | Kullanıcı seçimi  | Seçili kullanıcının adı. Yeni bir kullanıcı seçmek için **Kullanıcı değiştir**’e tıklayın.       |
@@ -81,7 +81,7 @@ Cihaz çalıştıran uygulamalar
 
 | Özellik      | Açıklama                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ad          | Uygulamanın adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Name          | Uygulamanın adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Type          | Her uygulama için bir atama türü seçebilirsiniz.  <br> **Kullanılabilir** Kullanıcılar Şirket Portalı’ndan veya web sitesinden uygulamayı yükler.  <br> **Uygulanamaz** - Uygulama yüklenmez veya Şirket Portalı’nda gösterilmez. <br> **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.  <br> **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. |
 | Son değiştirme | Cihaz türünün adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -126,7 +126,7 @@ Tabloda, Intune ile yönetilen cihazlar için uygulama koruma ilkeleri durumu ö
 
 | Özellik    | Açıklama                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Ad        | Uygulamanın adı.                                                                                                        |
+| Name        | Uygulamanın adı.                                                                                                        |
 | Dağıtma    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
 | Platform    | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
 | Kayıt  | Cihaz türünün adı.                                                                                                     |
@@ -160,7 +160,7 @@ Uyumluluk ilkelerinin özellikleri.
 | Özellik      | Açıklama                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Ad          | Uygulamanın adı.                                                                                                        |
+| Name          | Uygulamanın adı.                                                                                                        |
 | İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
 | İlke Türü   | Cihaz sahiplik türü (**Şirket**, **Kişisel** ve **Bilinmiyor**).                                               |
 | Son değiştirme | Cihaz türünün adı.                                                                                                     |
@@ -205,7 +205,7 @@ Yapılandırma ilkelerinin özellikleri.
 | Özellik      | Açıklama                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Ad          | Uygulamanın adı.                                                                                                        |
+| Name          | Uygulamanın adı.                                                                                                        |
 | İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
 | İlke Türü   | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
 | Son değiştirme | Cihaz türünün adı.                                                                                                     |

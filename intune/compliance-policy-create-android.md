@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fc78419f6a8b452f603cdeca24a5d9739dfc542
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 87fecc8b8c2d9bf408b622f6eaf8af1bbe011df0
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842907"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57229573"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune’da Android cihazlar için cihaz uyumluluk ilkesi ekleme
 

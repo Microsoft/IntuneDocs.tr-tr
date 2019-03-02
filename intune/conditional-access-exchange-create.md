@@ -7,7 +7,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc8bbcdd9e6fa8174ff4b6aa7fb0ae20b14fc184
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2bf32bfb885433c670d9a33cd2473ef38d9c12a0
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742865"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57229471"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
 
@@ -117,7 +117,7 @@ Windows 8.1 ve üstündeki yerel **Posta** uygulaması (Intune ile kaydedildiği
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Intune'da Azure AD Koşullu erişim ilkeleri oluşturma
 
-Koşullu erişim, bir Azure Active Directory (Azure AD) teknolojisidir. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*.  
+Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır.  
 
 > [!IMPORTANT]
 > Intune Azure portalından Azure AD koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.

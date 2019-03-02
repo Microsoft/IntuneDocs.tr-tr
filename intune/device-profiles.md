@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 016b59a915058c3f2d0647a72e3ead224a010500
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 7f8f19b1672f8bbbc65db9604c113a3b69813cc4
+ms.sourcegitcommit: 7cfe23215eabf30cbaab733a403012a0ba05f599
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742458"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211406"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Cihaz profillerini kullanarak Intune cihazlarınızda özellikleri ayarlar uygulanır
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Intune cihaz profillerini kullanarak cihazlarınızda özellikleri ve ayarları uygula
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune ayarları ve özellikleri etkinleştirebilir veya kuruluşunuzdaki farklı cihazlarda devre dışı bırak'ı içerir. Bu ayarlar ve Özellikler "yapılandırma profillerini" eklenir. Profilleri, farklı cihazlar için oluşturabileceğiniz farklı platformları dahil olmak üzere iOS, Android, Windows ve Intune profili, kuruluşunuzdaki cihazlara uygulamak için kullanın.
 
-Bazı profil örnekleri şunlardır:
+Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak farklı görevleri tamamlamak için bu yapılandırma profillerini kullanın. Bazı profil örnekleri şunlardır:
 
 - Windows 10 cihazlarda Internet Explorer'da profil şablonu engelleyen ActiveX denetimlerini kullanın.
 - İOS ve macOS cihazlarda AirPrint yazıcıları kuruluşunuzda kullandığınız açmasına imkan tanıyın.
@@ -93,6 +95,32 @@ Bu makalede, profil oluşturma adımları listelenir ve profilleri oluşturabile
 
 5. İşiniz bittiğinde seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin.
 
+#### <a name="refresh-cycle-times"></a>Döngü sürelerini Yenile
+
+Intune, yapılandırma profillerini güncelleştirmeleri denetlemek için aşağıdaki yenileme döngüsü kullanır:
+
+| Platform | Yenileme döngüsü|
+| --- | --- |
+| iOS | 6 saatte bir |
+| Mac OS | 6 saatte bir |
+| Android | 8 saatte bir |
+| Cihaz olarak kaydedilen Windows 10 bilgisayarlar | 8 saatte bir |
+| Windows Phone | 8 saatte bir |
+| Windows 8.1 | 8 saatte bir |
+
+Son olarak cihazın kayıtlı, iade daha sık çalışır:
+
+| Platform | Sıklık |
+| --- | --- |
+| iOS | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir |  
+| Mac OS X | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir | 
+| Android | 15 dakika boyunca 3 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
+| Windows Phone | 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
+| Cihaz olarak kaydedilen Windows bilgisayarları | 30 dakika boyunca 3 dakikada bir, daha sonra 8 saatte bir | 
+
+İstediğiniz zaman, kullanıcılar Şirket portalı uygulamasını açın ve hemen profili güncelleştirmeleri denetlemek için cihazı eşitleyebilir.
+
+### 
 Farklı bir profil türleri hakkında daha fazla bilgi edinmek için bu makalenin sonraki bölümleri inceleyin.
 
 ## <a name="administrative-templates-preview"></a>Yönetim Şablonları (Önizleme)
@@ -255,7 +283,7 @@ Bu özellik şunları destekler:
 
 ## <a name="shared-multi-user-device"></a>Paylaşılan çok kullanıcılı cihaz
 
-[Windows 10](shared-user-device-settings-windows.md) ve [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) birden çok kullanıcıyla olarak da bilinen paylaşılan cihazlar veya paylaşılan bilgisayarlar cihazları yönetmek için ayarlar içerir. Kullanıcı cihazı açtığında, kullanıcı uyku seçenekleri değiştirebilir veya cihazdaki dosyaların kaydedin, seçin. Başka bir örnekte, etkin olmayan kimlik alanı kaydetmek için Windows HoloLens cihazlardan silen bir ilke oluşturabilirsiniz.
+[Windows 10](shared-user-device-settings-windows.md) ve [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) birden çok kullanıcıyla olarak da bilinen paylaşılan cihazlar veya paylaşılan bilgisayarlar cihazları yönetmek için ayarlar içerir. Kullanıcı cihazı açtığında, kullanıcı uyku seçenekleri değiştirebilir veya cihazdaki dosyaların kaydedin, seçin. Başka bir örnekte, etkin olmayan kimlik alanı kaydetmek için Windows HoloLens cihazlardan silen bir profil oluşturabilirsiniz.
 
 Bu paylaşılan birden çok kullanıcı cihaz ayarları, yöneticinin, bazı cihaz özelliklerini denetlemek izin ve bu paylaşılan cihazları Intune kullanarak yönetmek.
 
@@ -280,5 +308,5 @@ Bu özellik şunları destekler:
 [Profillerinizi yöneterek](device-profile-monitor.md) cihazların ve atanan profillerin durumunu denetleyin. Ayrıca, çakışma yaratan ayarları ve bu ayarları içeren profilleri görerek çakışmaların çözümlenmesine yardımcı olun. [Genel sorunlar ve çözümleri](device-profile-troubleshoot.md) soru- cevap iş profilleriyle bir profil silindiğinde, ne de dahil olmak üzere cihazları ve daha fazlası için gönderilecek hangi nedenleri bildirimleri yardımcı olmak için sağlar.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Platformunuzu seçin ve kullanmaya başlayın:
 
+Platformunuzu seçin ve çalışmaya başlayın.

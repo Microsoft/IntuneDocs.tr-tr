@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57360f2ffae038b57e2a8c57fc5eeba9a0fd5d2f
-ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
+ms.openlocfilehash: 2aad4684b1ae0db358a5e0a31a362d610bf109c1
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57017141"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230882"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
 
@@ -290,6 +290,16 @@ E-posta tehditlerini önlemeye yardımcı olmak için aşağıdakileri engelleyi
 #### <a name="attack-surface-reduction-exceptions"></a>Saldırı Yüzeyi Azaltma özel durumları
 
 - **Dosyaları ve saldırıyı tutulacak klasörü yüzeyi azaltma kurallarından**: Yapılandırılan kurallardan muaf tutulacak konumlar listesi içeri aktarma/ekleyin.
+
+> [!IMPORTANT]
+> Uygun yükleme ve yürütme Win32 LOB uygulamalarını izin vermek için kötü amaçlı yazılımdan koruma ayarları aşağıdaki dizinlerin taranmasını dışlamanız gerekir:<p>
+> **X64 istemci makineleri**:<br>
+> *C:\Program dosyaları (x86) \Microsoft Intune Yönetimi Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **X86 istemci makineleri**:<br>
+> *C:\Program Files\Microsoft Intune Yönetimi Extension\Content*<br>
+> *C:\windows\IMECache*
 
 ### <a name="controlled-folder-access"></a>Denetlenen klasör erişimi
 

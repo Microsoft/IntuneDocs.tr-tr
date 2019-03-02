@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52baa8f92401266dbf3043a334eccbc6ddffc873
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
-ms.translationtype: HT
+ms.openlocfilehash: e36105f89221ee5e33a1a6d8afe26b09a08b76b7
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742644"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238957"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak İnternet erişimini yönetme
 
@@ -121,7 +121,7 @@ SSO, cihazınızın iOS'de Microsoft Authenticator, Android'de Intune Şirket Po
 >[!IMPORTANT]
 >Uygulama yapılandırmalarının uygulanması için kullanıcının korumalı tarayıcısının veya cihazdaki başka bir uygulamanın [Intune uygulama koruma ilkesi]( app-protection-policy.md) tarafından yönetiliyor olması gerekir
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Azure portal](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3.  Yönetim listesinin **İstemci uygulamaları** dikey penceresinde **Uygulama yapılandırma ilkeleri**’ni seçin.
 4.  **Uygulama yapılandırma ilkeleri** dikey penceresinde, **Ekle**’yi seçin.
@@ -163,10 +163,10 @@ Microsoft Edge ve Intune Managed Browser ile [Azure AD Uygulama Ara Sunucusu]( h
     > Güncelleştirilmiş Uygulama Ara Sunucusu’nun yeniden yönlendirme verilerinin Managed Browser’da veya Microsoft Edge'de etkinleşmesi 24 saati bulabilir.
 
 
-#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Adım 1: Outlook'tan korumalı tarayıcıya otomatik yeniden yönlendirmeyi etkinleştirme
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1. adım: Outlook'tan korumalı tarayıcıya otomatik yeniden yönlendirmeyi etkinleştirme
 Outlook’un, **Managed Browser’da görüntülenecek içeriği kısıtla** ayarına imkan veren bir uygulama koruma ilkesiyle yapılandırılması gereklidir.
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Adım 2: Korumalı tarayıcıya atanmış bir uygulama koruma ilkesini atama.
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>2. adım: Korumalı tarayıcıya atanmış bir uygulama koruma ilkesini atama.
 Bu yordam ile Managed Browser veya Microsoft Edge uygulamasını, uygulama ara sunucusu yeniden yönlendirmesini kullanmak üzere yapılandırabilirsiniz. Microsoft Edge veya Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
 | Anahtar                                                             | Değer    |
@@ -271,9 +271,9 @@ Microsoft Edge veya Managed Browser uygulama yapılandırması oluşturma yordam
 Hem Intune Managed Browser hem de Microsoft Edge, ilke ile yönetilen tarayıcılar/korunan tarayıcılar olarak geçer. Artık mevcut uygulama koruma ilkeleri, Intune yönetilen uygulamalardaki web bağlantılarının, senaryo ve platformunuza bağlı olarak belirli bir tarayıcıda açılmasına neden olur. 
 
 Android’de: 
-* İlke ile yönetilen tarayıcıların gerektiği tüm Intune yönetilen uygulamalar için uygulama yapılandırma ayarı “com.microsoft.intune.useEdge” “true” olarak ayarlanmadıysa ve hem MB hem de Edge cihazdaysa Managed Browser.  
-* Yalnızca Microsoft Edge cihazdaysa ve ilke ile hedeflendiyse Microsoft Edge.
-* Yalnızca Managed Browser cihazdaysa ve ilke ile hedeflendiyse Managed Browser. 
+* Yönetilen tarayıcı hem de yönetilen tarayıcı bir kullanıcı varsa ve Microsoft Edge cihazlarında indirilen açılır. Microsoft Edge yerine yönetilen tarayıcıda açıldığından emin olun için uygulama yapılandırma ayarı "com.microsoft.intune.useEdge" tüm Intune ile yönetilen uygulamalar için "true" gerekli bir ilkeyle yönetilen tarayıcıyla ayarlayın.  
+* Microsoft Edge, yalnızca Microsoft Edge cihazda olduğu ve ilkeyle hedeflenen açılır.
+* Yalnızca Managed Browser cihazda olduğu ve ilkeyle hedeflenen yönetilen tarayıcıda açılır. 
 
 Intune SDK’sını iOS v için tümleştiren uygulamalarda iOS’ta. 9.0.9+: 
 * İlke ile yönetilen tarayıcıların gerektiği tüm Intune yönetilen uygulamalar için uygulama yapılandırma ayarı “com.microsoft.intune.useEdge” “true” olarak ayarlanmadıysa ve hem MB hem de Edge cihazdaysa Managed Browser **veya** Microsoft Edge yüklüyse ve ilke aldıysa Microsoft Edge. 

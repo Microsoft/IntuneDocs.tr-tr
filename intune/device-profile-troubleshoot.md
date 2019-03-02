@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune - Azure’da cihaz profillerinde sorun giderme | Microsoft Docs
-description: Azure portalında Microsoft InTune ile ilgili bazı kullanıcılara veya cihazlara uygulanmayan profil değişiklikleri de dahil olmak üzere cihaz profilleriyle ilgili yaygın sorunlar, yeni ilkelerin cihazlara ne kadar süre uygulanacağı, birden çok ilke olduğunda hangi ayarların uygulandığı, bir profil silindiğinde veya kaldırıldığında ne olduğu ve daha fazlası
+description: Sık kullanılan sorular ve cevaplar cihaz ilkeleri ve profilleri birden çok ilke olduğunda hangi ayarların uygulandığında, cihazlara gönderilecek bir yeni ilkeleri ne kadar sürer ve cihazlara uygulanmayan profil değişiklikleri de dahil olmak üzere, ne zaman bir Silinen veya kaldırılan ve daha fazla Microsoft Intune profilidir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/10/2019
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,27 +16,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 528e26ddca1b3327fb0afa2f5cff6f2dbdca1660
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 8c95ed6f865795c2e9638e4975b51bee4678013d
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846494"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231545"
 ---
-# <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da cihaz profilleri ile ilgili sık karşılaşılan sorunlar ve çözüm yolları
+# <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Genel Sorular, sorunlar ve çözümleri cihaz ilkeleri ve profilleri Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune cihaz profillerini kullanarak sık karşılaşılan sorunları giderin.
+Cihaz profilleri ve ilkeleri ıntune ile çalışırken sık sorulan soruların yanıtlarını alın. Bu da listeleri iade zaman aralıkları makalesi, çakışmaları ve daha fazlası hakkında daha fazla detains sağlar.
 
-## <a name="why-doesnt-a-user-get-a-new-profile-when-changing-a-password-or-passphrase-on-an-existing-wi-fi-profile"></a>Bir kullanıcı, mevcut bir Wi-Fi profilinde parola değiştirirken neden yeni bir profil almıyor? 
+## <a name="why-doesnt-a-user-get-a-new-profile-when-changing-a-password-or-passphrase-on-an-existing-wi-fi-profile"></a>Bir kullanıcı, mevcut bir Wi-Fi profilinde parola değiştirirken neden yeni bir profil almıyor?
+
 Şirket Wi-Fi profili oluşturur, profili bir gruba dağıtır, parolayı değiştirir ve profili kaydedersiniz. Profil değiştiğinde, bazı kullanıcılar yeni profili alamayabilir.
 
 Bu sorunu azaltmak için konuk Wi-Fi kurulumu yapın. Şirket Wi-Fi başarısız olursa, kullanıcılar konuk Wi-Fi ile bağlanabilir. Otomatik bağlanma ayarlarının tümünü etkinleştirdiğinizden emin olun. Konuk Wi-Fi profilini tüm kullanıcılara dağıtın.
 
 Bazı ek öneriler:  
 
-- Bağlanmakta olduğunuz Wi-Fi ağında bir parola kullanıldığından, Wi-Fi yönlendiricisine otomatik olarak bağlanabildiğinizden emin olun. Bir iOS cihazıyla test edebilirsiniz.
+- Bağlanmakta olduğunuz Wi-Fi ağı bir parola veya parola kullanıyorsa, Wi-Fi yönlendiricisine otomatik olarak bağlanabildiğinizden emin olun. Bir iOS cihazıyla test edebilirsiniz.
 - Bir Wi-Fi uç noktasına (Wi-Fi yönlendiricisi) başarıyla bağlandıktan sonra SSID’yi ve kullanılan kimlik bilgilerini (bu değer erişim kodu veya paroladır) not edin.
 - SSID ve kimlik bilgilerini (parola) Önceden Paylaşılan Anahtar alanına girin. 
 - Profili, tercihen yalnızca BT ekibinden oluşan, sınırlı sayıda kullanıcıları olan bir test grubuna dağıtın. 
@@ -45,54 +46,67 @@ Bazı ek öneriler:
 - Daha büyük gruplara veya sonuçta kuruluşunuzdaki tüm beklenen kullanıcılara dağıtın. 
 
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>İlke veya uygulamalar atandıktan sonra mobil cihazların bunları alması ne kadar sürer?
+
 Bir ilke veya uygulama atandığında Intune, Intune hizmetine iade için cihaza hemen bildirimde bulunmaya başlar. Bu bildirim genellikle beş dakikadan kısa sürer.
 
-İlk bildirim gönderildikten sonra cihaz ilkeyi almak üzere giriş yapmazsa, Intune üç deneme daha yapar. Cihaz çevrimdışıysa (örneğin, kapalıysa veya ağa bağlı değilse), bildirimleri almayabilir. Bu durumda cihaz, ilkeyi bir sonraki zamanlanmış Intune hizmeti girişinde aşağıdaki gibi alır:
+Bir cihaz ilk bildirim sonra ilkeyi almak üzere giriş yapmazsa, Intune üç deneme daha yapar. Çevrimdışı cihaz gibi kapalı veya bir ağa bağlı değilse, bildirimleri almayabilir. Bu durumda cihaz, sonraki zamanlanmış iadeyi olan Intune hizmeti ile şirket ilkesi alır:
 
-- iOS ve macOS: Altı saatte bir
-- Android: Her sekiz saatte bir
-- Windows Phone: Her sekiz saatte bir
-- Windows 8.1 ve Windows 10 bilgisayarlarını cihaz olarak kaydedilen: Her sekiz saatte bir
+| Platform | Yenileme döngüsü|
+| --- | --- |
+| iOS | 6 saatte bir |
+| Mac OS | 6 saatte bir |
+| Android | 8 saatte bir |
+| Cihaz olarak kaydedilen Windows 10 bilgisayarlar | 8 saatte bir |
+| Windows Phone | 8 saatte bir |
+| Windows 8.1 | 8 saatte bir |
 
-Cihaz daha yeni kaydedilmişse, giriş sıklığı aşağıda gösterildiği gibi daha fazla olur:
+Son olarak cihazın kayıtlı, iade daha sık çalışır:
 
-- iOS ve macOS: Her 15 dakikada bir altı saat ve daha sonra altı saatte
-- Android: 15 dakika boyunca üç dakikada sonra iki saat boyunca 15 dakikada ve daha sonra sekiz saatte
-- Windows Phone: 15 dakika boyunca beş dakikada sonra iki saat boyunca 15 dakikada ve daha sonra sekiz saatte
-- Cihaz olarak kaydedilen Windows bilgisayarları: Daha sonra sekiz saatte yanı sıra 30 dakika boyunca üç dakikada
+| Platform | Sıklık |
+| --- | --- |
+| iOS | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir |  
+| Mac OS X | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir | 
+| Android | 15 dakika boyunca 3 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
+| Windows Phone | 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
+| Cihaz olarak kaydedilen Windows bilgisayarları | 30 dakika boyunca 3 dakikada bir, daha sonra 8 saatte bir | 
 
-Ayrıca, kullanıcılar ilkeyi istedikleri zaman denetlemek için Şirket Portalı uygulamasını açıp cihazı eşitleyebilir.
+İstediğiniz zaman, kullanıcılar Şirket portalı uygulamasını açın ve hemen profili güncelleştirmeleri denetlemek için cihazı eşitleyebilir.
 
-Kullanıcı benzeşimi olmayan cihazlar için kaydı takip eden eşitleme sıklığı, birkaç saat ile bir gün veya daha fazlası arasında değişebilir. Intune, bir cihazın hizmete bildirim yapması için belirli aralıklarla istek gönderir. Ancak iade etmek yine de cihaza bağlıdır. Bir cihazın ilk kaydından sonra cihaz kayıt türü ve cihaza atanan ilkelerle profillerin türüne bağlı olarak, cihazın bu iade etme işlemini tamamlama süresi tahmin edilemez. Ancak cihaz, kaydedildikten ve tüm ilk ilkeler uygulandıktan sonra yaklaşık altı saatte bir yeni ilkeleri denetler.
+Kullanıcı benzeşimi olmayan cihazlar için kaydı takip eden eşitleme sıklığı, bir gün veya daha fazlası için saat değişebilir. Intune, Intune hizmetine giriş kontrol etmek bir cihaz için belirli aralıklarla istek gönderir. Ancak iade etmek yine de cihaza kadar olabilir. İlk kayıttan sonra iade işlemini tamamlayabilmeniz için bir cihaz süresini tahmin edilemez. Ayrıca cihaz kaydı ve ilkeleri ve profilleri cihaza atanmış türüne bağlıdır. Cihazı kaydeder ve tüm ilk ilkeler uygulandıktan sonra cihaz genellikle 6-8 saatte bir yeni ilkeleri denetler.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Hangi eylemler cihaza Intune tarafından anında bildirim gönderilmesine neden olur?
-Cihazlar Intune hizmetine giriş yapmaları gerektiğini söyleyen bir bildirim aldığında veya düzenli zamanlanmış giriş zamanlarında hizmete giriş yapar. Bir cihazı veya kullanıcıyı silme, kilitleme, parola sıfırlama, uygulama atama, profil atama veya ilke atama gibi bir eylemle hedeflediğinizde Intune, bu güncelleştirmeleri almak için Intune hizmetini kullanarak giriş yapılacak cihazı derhal bilgilendirir.
+
+Bunlar, ya da zamanlanmış iade sırasında denetlemek için bir bildirim aldığında cihazlar Intune hizmetine giriş kontrol edin. Ardından bir cihaz veya kullanıcı kilitleme, geçiş kodu sıfırlama, uygulama atama, profil veya ilke atama gibi bir eylemle hedeflediğinizde Intune bu güncelleştirmeleri almak için iade için cihaza hemen bildirir.
 
 Şirket portalındaki kişi bilgilerinin düzeltilmesi gibi diğer değişiklikler, cihazlara anında bildirim gönderilmesine neden olmaz.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Aynı kullanıcı veya cihaza birden çok ilke atanıyorsa hangi ayarların uygulanacağını nasıl bilebilirim?
-Aynı kullanıcı veya cihaza iki veya daha fazla ilke atandığında, hangi ayarın uygulanacağı tek ayar düzeyinde belirlenir:
 
-- Uyumluluk ilkesi ayarları, her zaman yapılandırma ilkesi ayarlarından önceliklidir
+Aynı kullanıcı veya cihaza iki veya daha fazla ilke atandığında, geçerli ayar tek ayar düzeyinde yapılır:
 
-- Bir uyumluluk ilkesi, farklı bir uyumluluk ilkesinde aynı ayara karşı değerlendirilirse, en kısıtlayıcı uyumluluk ilkesi ayarı uygulanır.
+- Uyumluluk İlkesi ayarları her zaman yapılandırma profili ayarlarından önceliklidir.
 
-- Bir yapılandırma ilkesi ayarı farklı bir yapılandırma ilkesindeki bir ayarla çakışıyorsa bu çakışma Azure portalında görüntülenir. Bu senaryoda, bu çakışmaları el ile çözün.
+- Ardından bir uyumluluk İlkesi, başka bir uyumluluk ilkesindeki aynı ayarla karşılaştırılarak değerlendirilirse en kısıtlayıcı uyumluluk İlkesi ayarı uygulanır.
+
+- Bir yapılandırma İlkesi ayarı çakışmaları başka bir yapılandırma İlkesi ayarı, bu çakışma Intune gösterilir. Bu çakışmaları el ile çözün.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Uygulama koruma ilkeleri birbiriyle çakışırsa ne olur? Uygulamaya hangisi uygulanır?
-Bir uygulama koruma ilkesinde, sayı giriş alanları (sıfırlamadan önce PIN deneme sayısı gibi) haricinde, en kısıtlayıcı ayarlar çakışma değerleridir. Sayı giriş alanları, konsolda önerilen ayarlar seçeneğini kullanarak bir MAM ilkesi oluşturduğunuzda alacağı değerlerle aynı değerlere ayarlanır.
 
-İki profil ayarı aynıysa çakışmalar oluşur. Örneğin, kopyala/yapıştır ayarı dışında birbirinin aynı olan iki MAM ilkesi yapılandırdığınızı düşünün. Bu senaryoda, kopyala/yapıştır ayarı en kısıtlayıcı değer olarak ayarlanır, ancak ayarların geri kalanı yapılandırıldığı gibi uygulanır.
+Çakışma değerleridir bir uygulama koruma ilkesi en kısıtlayıcı ayarlar *dışında* PIN sıfırlanmadan önce deneme gibi sayı giriş alanları için. Önerilen ayarlar seçeneğini kullanarak bir MAM ilkesi oluşturduğunuzda alacağı sayı giriş alanları aynı değerlere ayarlanır.
 
-Bir profilin uygulamaya atanıp geçerli olmasından sonra ikinci bir ilke atanırsa, ilk atanan ilke öncelikli olup geçerli kalırken ikinci ilke çakışmada görünür. Her ikisi de aynı zamanda uygulanırsa, yani bir profil diğerinden önce değilse, her ikisi de çakışmada olur. Çakışmadaki ayarlarda, en kısıtlayıcı olan değerler kullanılır.
+İki profil ayarı aynıysa çakışmalar meydana gelir. Örneğin, kopyala/yapıştır ayarı dışında birbirinin aynı olan iki MAM ilkesi yapılandırdığınızı düşünün. Bu senaryoda, kopyala/yapıştır ayarı en kısıtlayıcı değer olarak ayarlanır, ancak ayarların geri kalanı yapılandırıldığı gibi uygulanır.
+
+Bir ilke, uygulamaya dağıtılan ve etkili olur. İkinci bir ilke dağıtılır. Bu senaryoda, ilk ilke öncelik kazanır ve görünür. İkinci ilkeyi bir çakışmayı gösterir. Her ikisi de aynı zamanda uygulanırsa, ilke, değilse yani sonra hem de çakışıyor. Çakışmadaki ayarlarda, en kısıtlayıcı olan değerler kullanılır.
 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS özel ilkeleri çakışırsa ne olur?
-Intune, Apple yapılandırma dosyalarının veya özel bir Open Mobile Alliance Uniform Resource Identifier (OMA-URI) profilinin yükünü değerlendirmez. Yalnızca bir teslim mekanizması olarak görev yapar.
 
-Özel bir profil atadığınızda, yapılandırılan ayarların uyumluluk ve yapılandırma ilkeleriyle veya diğer özel ilkelerle çakışmadığından emin olun. Özel bir profil ve ayarları çakışırsa, ayarlar rastgele uygulanır.
+Intune, Apple yapılandırma dosyalarının veya özel bir Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) ilkesinin yükünü değerlendirmez. Yalnızca bir teslim mekanizması olarak görev yapar.
+
+Özel bir ilke atadığınızda, yapılandırılmış ayarlar ile uyumluluğu, yapılandırma veya diğer özel ilkelerle çakışmadığından emin olun. Özel bir ilke ve ayarları çakışırsa, ayarlar rastgele uygulanır.
 
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>Bir profil silindiğinde veya artık geçerli olmadığında ne olur?
-Profili sildiğinizde veya bir cihazı profile sahip olan gruptan kaldırdığınızda, profil ve ayarlar aşağıdaki listelere göre cihazdan kaldırılır:
+
+Profili sildiğinizde veya bir cihazı profile sahip bir gruptan kaldırdığınızda, profil ve ayarları CİHAZDAN açıklandığı kaldırılır:
 
 - Wi-Fi, VPN, sertifika ve e-posta profilleri: Bu profiller tüm desteklenen kayıtlı cihazlardan kaldırılır.
 - Diğer tüm profil türleri:  
@@ -133,13 +147,15 @@ Profili sildiğinizde veya bir cihazı profile sahip olan gruptan kaldırdığı
     - Dolaşım sırasında otomatik eşitlemeye izin ver
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Cihaz kısıtlama profilini değiştirdim ama değişiklikler uygulanmadı
-Windows Phone cihazlarında, MDM veya EAS kullanarak ayarlamış olduğunuz güvenlik ilkelerinin azaltılmasına izin verilmez. Örneğin, **Parolanın karakter sayısı alt sınırı** olarak 8 ayarlayın ve sonra bunu 4’e indirmeyi deneyin. Cihaza zaten daha kısıtlayıcı bir profil uygulanmıştır.
 
-Profili daha az güvenli bir değerle değiştirmek isterseniz güvenlik ilkelerini sıfırlayın. Örneğin Windows 8.1’de, masaüstünde sağdan içeri doğru kaydırın ve **Ayarlar** > **Denetim Masası**’nı seçin. **Kullanıcı Hesapları** uygulamasını seçin. Sol taraftaki gezinti menüsünde, bir **Güvenlik İlkelerini Sıfırla** bağlantısı vardır (en alta doğru). Bunu seçin ve ardından **İlkeleri Sıfırla**’yı seçin.
+Windows Phone cihazları, bir kez ayarlandıktan sonra güvenlik ilkelerinin azaltılmasına, MDM veya EAS kullanarak ayarlamış izin vermez. Örneğin, bir **parolanın karakter sayısı alt sınırı** 8. 4'e indirmeyi deneyin. Zaten daha kısıtlayıcı bir profil cihaza uygulandı.
 
-Android, Windows Phone 8.1 ve üzeri, iOS ve Windows 10 gibi diğer MDM cihazlarında, daha az kısıtlayıcı bir profil uygulamak için cihazın devre dışı bırakılması ve sonra hizmete yeniden kaydedilmesi gerekebilir.
+Profili daha az güvenli bir değerle değiştirmek için güvenlik ilkelerini sıfırlayın. Örneğin, Windows 8.1, masaüstünde sağdan içeri doğru kaydırın > seçin **ayarları** > **Denetim Masası**. **Kullanıcı Hesapları** uygulamasını seçin. Sol taraftaki gezinti menüsünde, var olan bir **güvenlik ilkelerini Sıfırla** bağlantı (alta doğru). Bunu seçin ve ardından **İlkeleri Sıfırla**’yı seçin.
+
+Android, Windows Phone 8.1 ve üzeri, iOS ve Windows 10 gibi diğer MDM cihazlarında, devre dışı bırakılması ve içinde daha az kısıtlayıcı bir profil uygulamak için Intune'a kaydedilmesi gerekebilir.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Bazı ayarlar Windows 10 profili "Uygulanamaz" döndürür
+
 Bazı ayarlar Windows 10 cihazlarında "uygulanamaz" gösterebilir. Böyle bir durumda, bu ayar sürüm veya cihaz üzerinde çalışan Windows sürümü desteklenmiyor. Bu ileti, aşağıdaki nedenlerle oluşabilir:
 
 - Ayar, yalnızca daha yeni sürümleri, Windows ve geçerli işletim sistemi (OS) sürümünü cihazda değil için kullanılabilir.
@@ -148,4 +164,5 @@ Bazı ayarlar Windows 10 cihazlarında "uygulanamaz" gösterebilir. Böyle bir d
 Sürüm ve farklı ayarlar için SKU gereksinimleri hakkında daha fazla bilgi için bkz: [yapılandırma hizmet sağlayıcısı (CSP) başvuru](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
 Ek yardım mı gerekiyor? Bkz. [Microsoft Intune için destek alma](get-support.md).

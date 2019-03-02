@@ -7,7 +7,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ef2fd878a46e7a934dbb6e868356375883bc584
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4d776f30ca81d76fb812e28473546eac84e7f9e4
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836889"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57228265"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Windows 8.1 çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın
 

@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71a21dcdef046205ad511e70e59d787e950d6734
-ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
+ms.openlocfilehash: ebb97794b69919b149590eebe76e52acdaafde8f
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826198"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57228604"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK'ya genel bakış
 Intune uygulama SDK'sı, iOS ve Android için Intune destek olanak tanır [uygulama koruma ilkeleri](app-protection-policy.md). Uygulamanızı uygulama koruma ilkeleri uygulanmış olduğunda, Intune tarafından yönetilmesi gerektiğini ve yönetilen bir uygulama olarak Intune tarafından tanınan. SDK'sı, uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirmek çalışır. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için uygulama katılımınızı gerektiren özelliklere desteklemek için uygulamanızın davranışını özelleştirmek için SDK'sının API'lerini kullanabilir.

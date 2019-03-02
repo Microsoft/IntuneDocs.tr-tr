@@ -5,8 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/01/2019
-ms.topic: article
+ms.date: 01/02/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eda607347a8d3ccf3c5d1fecd31c1a361ed1c2dc
-ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
+ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57017124"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231579"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -115,7 +115,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
 6. Listeden **Masaüstü uygulamaları**’nı seçin.
 7. **Ad**, **Yayımcı**, **Ürün Adı**, **Dosya**, **En Düşük Sürüm**, **En Yüksek Sürüm** ve **Eylem** için değerler girin. Uygulamanın şirket verilerinize erişebilmesi için **Eylem** değerini **İzin Ver** olarak ayarladığınızdan emin olun.
-9. **Tamam**'ı tıklatın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
+9. **Tamam** düğmesine tıklayın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
 10. **Kaydet**’e tıklayın.
 
 ## <a name="wip-learning"></a>WIP Öğrenme

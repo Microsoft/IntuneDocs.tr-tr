@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4f93ab1cd2c662cb97dafd19684b353268087f6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a8b72c4adcba44c1292fc77646c5c1c159d8812e
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842584"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57236169"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Olay hub'ları, depolama için günlük verileri gönderin veya log analytics (Önizleme) Intune'a
 
-Microsoft Intune ortamınız hakkında bilgi sağlayan yerleşik günlükleri içerir. **Denetim günlükleri** farklı olayları veya Intune'a gerçekleşen görevler ayrıntılarını gösterir. **İşlem günlüklerinde (Önizleme)** başarıyla diğer kullanıcılar ve cihazlar üzerinde ayrıntılarını göster (veya başarısız) kaydetmek için.
+Microsoft Intune ortamınız hakkında bilgi sağlayan yerleşik günlükleri içerir. **Denetim günlükleri** farklı olayları veya Intune'a gerçekleşen görevler ayrıntılarını gösterir. **İşlem günlüklerinde (Önizleme)** başarıyla diğer kullanıcılar ve cihazlar üzerinde ayrıntılarını göster (veya başarısız), uyumlu olmayan cihazlar hakkında ayrıntılı bilgi yanı sıra kaydetme.
 
 Bu günlükleri depolama hesapları, olay hub'ları ve log analytics de dahil olmak üzere Azure İzleyici'hizmetine de gönderilir. Özellikle, şunları yapabilirsiniz:
 
@@ -82,7 +82,7 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz bağlı olarak, aşağ
 
       Bir depolama hesabı kullanmayı seçerseniz, ayrıca (bekletme) verilerini saklamak istediğiniz gün sayısı girin. Verileri sonsuza kadar korumak için ayarlayın **bekletme (gün)** için `0` (sıfır).
 
-    - **Günlük** > **OperationalLogs**: İşlem günlüklerini (Önizleme), başarı veya başarısızlık kullanıcı ve cihaz Intune'da gösterir. Log analytics ya da depolama hesabınıza, olay hub'ı kayıt günlüklerini göndermek için bu seçeneği belirleyin.
+    - **Günlük** > **OperationalLogs**: İşlem günlüklerini (Önizleme), uyumlu olmayan cihazlar hakkında ayrıntılı bilgi yanı sıra Intune, başarı veya başarısızlık kullanıcı ve cihaz gösterir. Log analytics ya da depolama hesabınıza, olay hub'ı kayıt günlüklerini göndermek için bu seçeneği belirleyin.
 
       Bir depolama hesabı kullanmayı seçerseniz, ayrıca (bekletme) verilerini saklamak istediğiniz gün sayısı girin. Verileri sonsuza kadar korumak için ayarlayın **bekletme (gün)** için `0` (sıfır).
 

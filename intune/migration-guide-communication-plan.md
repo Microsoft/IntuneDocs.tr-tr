@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c3190f0bac90ef87fcc411423611251c54338e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a55cce627e02730ab3f217381ab8d6f92ddc3bb1
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842074"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238149"
 ---
 # <a name="plan-communications"></a>İletişimi planlama
 
@@ -58,6 +58,8 @@ Intune’un, kullanıcılarınızı cihaz kaydına teşvik etmek için kullanabi
 -   [BT yöneticileri için Intune son kullanıcı kayıt şablonu](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a); Android, iOS ve Mac cihazların Intune’a nasıl kaydedileceğini açıklayan, özelleştirilebilir bir Word dosyasıdır.
 
 -   [EMS için FastTrack nasıl yapılır kılavuzları ve e-postaları](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c), Intune ve EMS’nin kuruluşunuzda benimsenmesini artırmak için şirketinizin logosuyla özelleştirilebilir.
+
+-   Paylaşım [Şirket portalı uygulama URL'si](http://go.microsoft.com/fwlink/?LinkID=396941) Android, iOS ve Windows kullanıcılarınız ile. Bu URL, Android, iOS ve Windows cihazları listeleme uygun Şirket portalı uygulamasını yeniden yönlendirir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

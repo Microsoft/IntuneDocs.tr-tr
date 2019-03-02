@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 10/10/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91923f1569c3f74c0e06aad3b92a77b677488072
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: e05a40953f83581c63f23d20ea7f54d5a66a7d2f
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086072"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233296"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
