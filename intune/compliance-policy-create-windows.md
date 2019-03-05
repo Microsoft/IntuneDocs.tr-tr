@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f965ff2287cd3e6fcf3e3f3ae1b577fb33081716
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d27b4389318a8b4caeb86dec9c2c79efa0ac89f1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230117"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335046"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi ekleme
 
@@ -120,7 +120,7 @@ Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işlet
 - **Güvenli önyüklemenin cihazda etkinleştirilmesini gerektir**: Güvenli Önyükleme etkinleştirildiğinde sistem güvenilen fabrika durumuna önyüklenmeye zorlanır. Ayrıca, Güvenli Önyükleme etkinleştirildiğinde makineyi önyüklemek için kullanılan çekirdek bileşenleri cihazı üreten kuruluş tarafından güvenilen doğru şifreleme imzalarına sahip olmalıdır. UEFI üretici yazılımı, makinenin başlatılmasına izin vermeden önce imzayı doğrular. Herhangi bir dosya, hangi imzalarına keser uyumlu, sistemin önyükleme yapılamıyor.
 
   > [!NOTE]
-  > **Güvenli Önyükleme cihazda etkinleştirilmeli** ayarı TPM 1.2 ve 2.0 cihazlarda desteklenir. TPM 2.0 ve sonrasını desteklemeyen cihazlarda ilke durumu Intune'da **Uyumsuz** olarak gösterilir. Bu, Windows 10'daki [Cihaz Durumu Kanıtlama](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) hizmetinin bir kısıtlamasıdır.
+  > **Güvenli Önyükleme cihazda etkin olmasını gerektiren** ayarı bazı TPM 1.2 ve 2.0 mobil cihazlarda desteklenir. TPM 2.0 ve sonrasını desteklemeyen cihazlarda ilke durumu Intune'da **Uyumsuz** olarak gösterilir. Desteklenen sürümler hakkında daha fazla bilgi için bkz. [cihaz durumu kanıtlama](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation).
 
 - **Kod bütünlüğü gerektir**: Kod bütünlüğü bir sürücünün veya sistem dosyasının her belleğe yüklendiğinde bütünlüğünü doğrulayan bir özelliktir. Kod bütünlüğü çekirdeğe imzasız bir sürücünün veya sistem dosyasının yüklenip yüklenmediğini algılar. Ayrıca, bir sistem dosyasının yönetici ayrıcalıklarına sahip bir kullanıcı hesabı tarafından çalıştırmak kötü amaçlı yazılım tarafından değiştirilip değiştirilmediğini algılar.
 

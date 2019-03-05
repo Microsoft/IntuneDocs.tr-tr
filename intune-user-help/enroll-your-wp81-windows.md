@@ -18,25 +18,20 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1708066ce0065b58f5d7399862ac157d5647341
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 3b7621ce491cceb6d39efa52a7ba6a0265bf84ad
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841326"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335114"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1 cihazınızı Intune'a kaydetme
 
-Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [Şirketinizin destek biriminin cihazınızda görebilecekleri ve göremeyecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [Şirketinizin destek biriminin cihazınızda görebilecekleri ve göremeyecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
+Cihazınızı ıntune'a kaydetmek için belirlenen izinler veya geçerli hesap durumu eşleşen yönergeleri izleyin.
 
-Phone 8.1 cihazınızı Intune’a kaydetmek için, şirketiniz veya okulunuz için geçerli yönergeleri izleyin:
-
--   [Şirketiniz Microsoft Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
-
--   [Windows Phone’unuzdan Microsoft Mağazası’na erişmenize izin verilmiyorsa veya bir Microsoft Hesabınız yoksa](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
-
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Şirketiniz Microsoft Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Şirketiniz Microsoft Mağazası'ndan Şirket Portalı’nı kullanmanıza izin veriyorsa  
 Cihazınıza Şirket Portalı uygulamasını yükleyin:
 
 1.  **Başlat** &gt; **Mağaza**’ya dokunun.

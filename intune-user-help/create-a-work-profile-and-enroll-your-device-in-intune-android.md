@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 683156b968c743c4c82b472c6e566d5762c22c1a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844675"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334961"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme
 
@@ -33,7 +33,7 @@ Android cihazınızı kaydetmek şirket e-postası, uygulamaları ve diğer iş 
 
 Bir iş profili oluşturmak için:
 
-1.  Android Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın. Ücretsiz uygulamayı henüz yüklemediyseniz, [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den indirin ve yükleyin.
+1.  Android Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın. Ücretsiz uygulamayı henüz yüklemediyseniz, [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den indirin ve yükleyin.
 
     ![Android Şirket Portalı uygulaması Hoş Geldiniz ekranı](./media/and-enroll-0-welcome-screen.png)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2018
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2aad4684b1ae0db358a5e0a31a362d610bf109c1
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4794adda447754b5dc72ff1b320ec69553a8b55a
+ms.sourcegitcommit: e8c32bd6db2560570d1e1733f999ae3b2c026908
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230882"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305519"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
 
@@ -46,7 +46,7 @@ Microsoft Edge kullanırken Windows Defender Application Guard, ortamınızı ku
 
 Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. Bu profili kullanmak, Application Guard’ı etkinleştirmek için bir Win32 bileşeni yükler.
 
-- **Application Guard**: **Etkinleştirme** onaylanmamış siteleri bir Hyper-V sanallaştırılmış gözatma kapsayıcısında açar. Bu özelliği açmak için. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında tüm siteler (onaylı veya onaysız) cihazda açılır.
+- **Application Guard**: **Edge için etkin** güvenilmeyen siteleri bir Hyper-V sanallaştırılmış gözatma kapsayıcısında açar. Bu özelliği açmak için. **Yapılandırılmamış** (varsayılan) anlamına gelir (güvenilen ve güvenilmeyen) herhangi bir siteyi cihazda açılır.
 - **Pano davranışı**: Yerel bilgisayar ile Application Guard sanal tarayıcı arasında hangi kopyala/yapıştır eylemlerine izin verileceğini seçin.
 - **Kurumsal sitelerdeki dış içerik**: **Blok** yüklenmesini onaylanmamış Web sitelerinden içerik. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında cihazda kuruluşa ait olmayan siteler açılır.
 - **Sanal tarayıcıdan yazdırma**: Seçin **izin** bunu PDF, XPS, yerel ve ağ yazıcılarının sanal tarayıcı içeriklerini içerik yazdırabilirsiniz. **Yapılandırılmadı** (varsayılan) ayarı, tüm yazdırma özelliklerini devre dışı bırakır.
@@ -309,7 +309,15 @@ E-posta tehditlerini önlemeye yardımcı olmak için aşağıdakileri engelleyi
 
 ### <a name="network-filtering"></a>Ağ filtreleme
 
-Uygulamaların düşük itibarlı IP/etki alanına giden bağlantılarını engelleyin.
+- **Ağ koruması**: Giden bağlantılar, düşük itibarlı IP adreslerini veya etki alanları için herhangi bir uygulamadan korur. Amaç, kimlik avı kuşku verici, yararlanma barındırma siteler ve Internet üzerindeki kötü amaçlı içerik uygulamalardan erişimi olan son kullanıcıların korunmasını sağlamaktır. Ayrıca, üçüncü taraf tarayıcılar'in tehlikeli sitelere bağlanmasını engeller.
+
+  Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan) ayarı, bu özelliği devre dışı bırakır. Kullanıcılar ve uygulamalar tehlikeli etki alanlarına bağlanmasını engellenmez. Yöneticiler, Windows Defender Güvenlik Merkezi'nde bu etkinlik göremez.
+  - **Etkinleştirme** ağ koruması blokları kullanıcıları ve uygulamaları tehlikeli etki alanlarına bağlanmasını etkinleştirir. Yöneticiler, Windows Defender Güvenlik Merkezi'nde bu etkinliği görebilirsiniz.
+  - **Yalnızca denetim**: Kullanıcılar ve uygulamalar tehlikeli etki alanlarına bağlanmasını engellenmez. Yöneticiler, Windows Defender Güvenlik Merkezi'nde bu etkinliği görebilirsiniz.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
 ### <a name="exploit-protection"></a>Exploit protection
 

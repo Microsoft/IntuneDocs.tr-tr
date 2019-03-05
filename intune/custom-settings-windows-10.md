@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5cf54f7c208e488a2687df64664fd2f87c7995a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 8aacb9ae498b5eed7654280ea6cc2c2af6fe61ca
+ms.sourcegitcommit: e8c32bd6db2560570d1e1733f999ae3b2c026908
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235829"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305485"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune’da Windows 10 cihazlar için özel ayarlar kullanma
 
@@ -82,7 +82,7 @@ Aşağıdaki örnekte, **Connectivity/AllowVPNOverCellular** ayarı etkinleştir
 
 Tüm ayarlar, Windows 10 sürümlerinin tümüyle uyumlu değildir. [Yapılandırma hizmet sağlayıcısı başvurusu](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference), her bir CSP için hangi sürümlerin desteklendiğini açıklar.
 
-Ayrıca Intune, [Yapılandırma hizmet sağlayıcısı başvurusu](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) konusundaki tüm ayarları desteklemez. İstediğiniz ayarı Intune’un destekleyip desteklemediğini öğrenmek için ilgili ayarın makalesini açın. Her ayar sayfası, desteklediği işlemi gösterir. Intune’la çalışmak için, ayarın **Ekle** veya **Değiştir** işlemlerini desteklemesi gerekir.
+Ayrıca Intune, [Yapılandırma hizmet sağlayıcısı başvurusu](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) konusundaki tüm ayarları desteklemez. İstediğiniz ayarı Intune’un destekleyip desteklemediğini öğrenmek için ilgili ayarın makalesini açın. Her ayar sayfası, desteklediği işlemi gösterir. Intune ile çalışacak biçimde ayarı desteklemelidir **Ekle**, **değiştirin**, ve **alma** operations. Tarafından döndürülen değer, **alma** işlemi tarafından sağlanan değer eşleşmiyor **Ekle** veya **değiştirin** işlemleri, ardından Intune raporları bir uyumluluk hatası.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

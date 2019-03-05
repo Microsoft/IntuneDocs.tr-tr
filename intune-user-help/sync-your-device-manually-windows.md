@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840221"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335080"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows cihazınızı el ile eşitleme
 
 Uygulama yükleme hızı istediğiniz kadar yüksek değilse el ile eşitlemeyi başlatın. El ile eşitlemeler, en son güncelleştirmeler ve iletişimler için cihazınızı Intune’a bağlanmaya zorlar. Cihaz eşitlemesi tamamlandıktan sonra yükleme hızı artabilir.
 
-Intune; Şirket Portalı uygulamasından, masaüstü görev çubuğu ve Başlat menüsünden ve cihazın Ayarlar uygulamasından el ile eşitlemeyi destekler. 
-
-Şirket Portalı uygulaması işlevselliği, Creator’s Update (1703) ve üzerini çalıştıran Windows 10 cihazlarda desteklenir. 
-* [Şirket Portalı uygulamasından eşitleme](#Sync-from-Company-Portal-app-for-Windows)  
+Intune; Şirket Portalı uygulamasından, masaüstü görev çubuğu ve Başlat menüsünden ve cihazın Ayarlar uygulamasından el ile eşitlemeyi destekler. Şirket Portalı uygulaması işlevselliği, Creator’s Update (1703) ve üzerini çalıştıran Windows 10 cihazlarda desteklenir. 
 
 Aşağıdakiler dahil olmak üzere tüm Windows cihazlar, cihazın Ayarlar uygulamasından eşitlenebilir:
 
@@ -75,11 +72,11 @@ Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ve Windows Phone 8.1 c
 
 3. Masaüstü cihazlar için Windows 10’un birden çok sürümü vardır. Hangi adımlar dizisini takip etmeniz gerektiğini belirlemek için ekranınızı aşağıdaki ekran görüntüleriyle karşılaştırın. 
 
-    * Ekranınızda **İş veya okula erişme** yazıyorsa [İş veya okula erişme](#access-work-or-school) adımlarına atlayın.
+    * Ekranınızda **İş veya okula erişme** yazıyorsa [İş veya okula erişme](#access-work-or-school-steps) adımlarına atlayın.
 
     ![Ayarlar uygulamasında iş veya okula erişme seçeneği](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * Ekranınızda **İş erişimi** yazıyorsa [İş erişimi](#work-access) adımlarına atlayın.  
+    * Ekranınızda **İş erişimi** yazıyorsa [İş erişimi](#work-access-steps) adımlarına atlayın.  
 
     ![Hesap türü olarak iş yeri erişimini seçme](./media/win10pc-sync-3-work-access.png)
 
