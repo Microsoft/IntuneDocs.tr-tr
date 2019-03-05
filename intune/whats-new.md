@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83168acc6653f750b9cf32d91602464b62aebcfe
-ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
+ms.openlocfilehash: 9a6f40ba7ea5e229a4c4d3f25d182d24b2a0a812
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56955638"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335182"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -736,6 +736,9 @@ Windows LOB uygulamaları için dosya uzantıları artık *.msi*, *.appx*, *.app
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Intune kullanarak Windows 10 uygulama dağıtımı <!-- 2309001 -->
 Yöneticiler, iş kolu (LOB) uygulamaları ve İş için Microsoft Store uygulamaları için mevcut destekten yararlanarak kuruluşlarındaki uygulamaların çoğunu Intune ile Windows 10 cihazlarındaki son kullanıcılara dağıtabilir. Yöneticiler, Windows 10 kullanıcıları için MSI, Setup.exe veya MSP gibi çeşitli biçimlerdeki uygulamalar ekleyebilir, yükleyebilir ve kaldırabilir. Intune, indirme ve yükleme öncesinde gereksinim kurallarını değerlendirerek, işlemin durumunu veya yeniden başlatma gereğini Windows 10 Eylem Merkezi aracılığıyla son kullanıcılara bildirebilir. Bu işlevsellik, sonuçta, bu iş yükünü Intune'a ve buluta kaydırmak isteyen kuruluşların engellemesini kaldırmış olur. Bu özellik şu anda genel önizleme aşamasındadır ve önümüzdeki birkaç ay içinde özelliğe önemli yeni olanaklar eklemeyi bekliyoruz. 
 
+#### <a name="app-protection-policy-app-settings-for-web-data----2662995---"></a>Web verileri için Uygulama Koruma İlkesi (APP) ayarları <!-- 2662995 -->
+Gerek Android gerekse iOS cihazlarında Web içeriği için uygulama ilke ayarları, gerek http gerekse https Web bağlantılarını, ayrıca iOS Evrensel Bağlantıları ve Android Uygulama Bağlantıları aracılığıyla veri aktarımını daha iyi işleyecek şekilde güncelleştirilecektir. 
+
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Son kullanıcı cihaz ve uygulama içeriği menüsü <!-- 2771453 -->
 Son kullanıcılar artık cihaz yeniden adlandırma veya uyumluluk denetleme gibi sık kullanılan eylemleri tetiklemek için cihazdaki açılır menüyü kullanabilir. 
 
@@ -833,106 +836,4 @@ Uygulama hedefi:
 <!-- ########################## -->
 ## <a name="notices"></a>Bildirimler
 
-### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Intune, "Yazılım güncelleştirmelerinin gecikme görünürlük" ayarını denetleyin
-Biz size birkaç ayar konsolda gezinmek MC171466 paylaşılmaz. Intune Mart güncelleştirmesinde tamamen "Gecikme görünürlüğünü yazılım güncelleştirmeleri" ayarı iOS güncelleştirme ilkesi dikey penceresinden kaldıracağız. Bu, zamanlanmış yazılım güncelleştirmeleri uygulamaya biçimini değiştirmez, ancak bir güncelleştirme görünürlüğünü son kullanıcılar için ne kadar süreyle geciktirileceğini etkileyebilir. Bu ayarı kullanıyorsanız Mart bitmeden önce harekete gerekebilir.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Şubat Intune hizmet güncelleştirmesinden sonra ayarı konsolunda ve iOS cihaz kısıtlama profillerinde hem de yazılım güncelleştirme dikey penceresinde ilkeleri güncelleştirmek için görüntülendiğini fark edeceksiniz. Konsolunda bu değişikliği gördüğünüzde, işte yapmanız gerekebilir.
-• Mevcut iOS güncelleştirme ilkeleri için: Özel varsa bu ayarı varsayılan dışında bir 30 gün, yapılandırılmış ve Mart sonunda uygulamaya devam etmek gecikme görünürlük ayar için mevcut yapılandırmalarınızı istediğiniz, yeni bir iOS cihaz kısıtlama profili oluşturmak zorunda kalırsınız. Burada, gecikme görünürlük ayarı mevcut iOS güncelleştirme ilkesini olduğu gibi aynı değerlere sahip ve aynı gruplara hedeflenmesi gerekir. Mart hizmet güncelleştirmesinden sonra artık, artık bu dikey pencerede görünür olacak olduğundan bu ayarda mevcut iOS güncelleştirme ilkeleri için değerlerini düzenlemek mümkün olmayacak. Bunun yerine, yeni profillerinde bu ayarı yapılandırır.
-Gün sayısı değeri geciktirebilir görünürlük konumlarının her ikisinde de gecikme ayarı çalışmaz, görünürlük özel yapılandırılmış ayar değerleri eşleşmiyor ve kullanılabilir duruma geldiği son kullanıcılar, cihazlarında güncelleştirmeyi görür. Diğer ayarlar yazılım güncelleştirme ilkesi dikey penceresinde her zaman bu konsolda üzerinden öncelik yaptıktan sonra bu çoğu müşteri için çok az etkisi olabilir.
-• Yeni iOS güncelleştirme ilkeleri için: Intune Şubat hizmet güncelleştirmesinden sonra yazılım güncelleştirmeleri dikey penceresinde yeni ilkeler oluşturacağınız çalışırsanız, bu ayar gri görürsünüz. Konsolunda güncelleştirmeleri görünürlüğünü geciktirmek istiyorsanız cihaz yapılandırma dikey penceresine yeniden yönlendirme Not görürsünüz.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-Bu ayar kullanmayın veya son kullanıcılarınız için görünürlük yazılım güncelleştirmelerinin gecikme istemiyorsanız, eylem gerekmez.
-
-Cihaz kısıtlamaları'nın altında cihaz yapılandırma dikey penceresinde yeni profillerinde ayarını yapılandırma güncelleştirmeleri görünürlüğünü geciktirmek istiyorsanız, başlangıç > Genel. Varsa bu ayarı özel mevcut iOS güncelleştirme ilkeleri yapılandırılmış, kullanıcılarınız için güncelleştirmelerin görünürlüğünü gecikme "gün" için aynı değere sahip yeni bir eşdeğer cihaz kısıtlama profili oluşturun, sonra Şubat ve Mart önce güncelleştirme dağıtılırken. BT Pro rehberi güncelleştirin ve Yardım masanız bildirmek isteyebilirsiniz.
-Bu ayarı yapılandırma hakkında daha fazla ayrıntı için ek bilgileri Gönder destek blog gönderimize göz atabilirsiniz.
- 
-#### <a name="additional-information"></a>Ek bilgi
-https://aka.ms/Delay_visibility_setting_iOS
-
-###  <a name="upcoming-change-to-the-intune-data-warehouse-api"></a>Intune veri ambarı API'sine yaklaşan Değiştir
-Biz 1903 zaman çerçevesi içinde iki değişiklik yapacak:
-- Beta filtre kullanımdan kaldırma<br>
-    Kullanımdan kaldırma örneği desteklenmeyen beta filtreler.   
-- 1.0 beta için yansıtma değiştirir.<br>
-    Bizim v1.0 koleksiyonlar için yapılan değişiklikler artık beta yansıtılır.  
-
-
-###<a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Değişiklik planı: Intune'da iOS 12 kayıt için iş akışı değişiklikleri
-Apple iOS cihazlarında mobil cihaz Yönetimi (MDM) hizmetlerine kaydetme ile ilgili bazı değişiklikler açıkladı. Değişiklik büyük olasılıkla tüm gelecek iOS sürümleri yanı sıra iOS spring 2019 sürümü görülür.
-
-####<a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Son kullanıcılarınızın cihazlarını iOS 12 Bu yeni sürümüne içinde spring yükseltirseniz, bilmeniz değiştirilmiş bir iş akışı ve ıntune'a kaydı için ek adımlar atmanız gerekir. Apple bu değişiklikleri getirir, son kullanıcıların gerekir: • bir yönetim profili • Git ayarlarına indirmek için Şirket portalı uygulamasında kayıt işlemi başlar > Genel > profiller • doğru profili seçin ve tıklayın • Dönüş Şirket portalı kaydı yüklemek için 
-
-Önceden kaydedilen cihazların kaydı ve yeni bir kayıt gerekiyor sürece yeni yükseltme iOS sürüm etkilenmez.
-Kayıt deneyimi 12,1 veya önceki iOS çalıştıran cihazlarda, Apple tarafından bu yeni sürümle birlikte değiştirmez.
-
-####<a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-Belgelerinize ve, son kullanıcı kılavuzu yükseltmek planlamanız gerekir. Bu değişiklikler bilmeniz, Yardım Masası izin isteyebilirsiniz. Sizi ileti merkezi bilgilendirmeyi saklayacağız ve bu değişiklik Canlı olduğunda müşterilerimize yenilikler.
-
-Ekran görüntüleri ve beklenen kayıt akışını video ile bir destek blog gönderisi için ek bilgi tıklayın.
-
-####<a name="additional-information"></a>Ek bilgi
-https://aka.ms/iOS_enrollment_changes
-
-### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Değişiklik planı: İOS için Intune Şirket portalı uygulamasında kullanıcı deneyimi güncelleştirmesi
-Bir kullanıcı deneyimi güncelleştirmesi iOS Şirket portalı uygulaması için Intune yakında yayımlar paylaşmak heyecan duyuyoruz. Güncelleştirme Gelişmiş Filtreler ve daha hızlı erişim için uygulamalar ve Kitaplar visual yeniden giriş sayfasının özellik.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Bulunacak geçerli iOS Şirket portalı işlevselliği, bakımı sırasında bu kullanıcı deneyimi güncelleştirmesi:
-- Yerel iOS görünüm ile bir giriş sayfası 
-- İçerik listeleri ve içerik türünü (uygulamaları veya e-Kitaplar) ve kullanılabilirlik (cihaz Yönetimi gerekli veya Kayıtsız kullanılabilir) göre filtreleme özelliği dahil olmak üzere arama filtreleme yetenekleri
-- E-Kitaplar arama özelliği
-- Arama Geçmişi uygulamaları ve e-Kitaplar için Apple TestFlight programı bir parçası kullanıyorsanız kullanılabilir hale geldiğinde, Intune'un güncelleştirilmiş iOS Şirket portalı uygulamasının yayım öncesi sürümü hakkında bildirim alırsınız. Apple TestFlight programı parçası değilseniz çok geç kaydetmek için değil. Kaydetme, son kullanıcılarınız için kullanılabilir olmadan önce güncelleştirilmiş Şirket portalı uygulamasını kullanmaya olanak sağlar. Ayrıca doğrudan Intune ekibine geri bildirim sağlamak için fırsatınız vardır.  
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-Herhangi bir eylemde bulunmanız gerekmez; Bu değişiklikler, gelecek iOS CP uygulama sürümde kullanıma sunulacaktır. 
-
-#### <a name="additional-information"></a>Ek bilgi
-[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors"></a>Anımsatıcı: Var olan Exchange Online için Intune bağlayıcılar kaldırma
-Biz Exchange Online için Intune 'Hizmet' bağlayıcı işlevini gelecek bir güncelleştirmede kaldırma, MC165575 içinde paylaşılmıştı. Şubat güncelleştirmesiyle Intune hizmetine yeni bağlayıcılar belirlemek için bu düğmeyi devre dışı bırakırız. Tüm mevcut Exchange Online için Intune bağlayıcılar Mart 2019 kaldırmak planlıyorsanız.
- 
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-'Hizmet' bağlayıcı işlevini ortamınızda kullanmakta olduğunuz, Kayıtlarımıza göre bu yana bu iletiyi alıyorsunuz. 
-
-'Hizmet' Bağlayıcısı, Exchange Online için Exchange Active Sync yalnızca cihazların Intune yönetimini destekler ve şirket içi altyapı desteklemez. Koşullu erişim (CA) için gerekli olduğu konsolunda görüntülenme şeklini nedeniyle bu bağlayıcı görünür olduğunda gerçekte, bu CA için gerekli değildir. Bu bağlayıcı kullanımı ve Exchange Online koşullu erişim uygulanmadan önce anlamak için kullanmakta olduğunuz. Bu bilgiler, Microsoft 365 Yönetim Merkezi tarafından zaten sağlanır. Burada, bulabilirsiniz yazın uygulaması dahil olmak üzere Exchange Online 7 ile 180 gün arasında kullanılan kullanım raporları sağlar. Office 365 Yönetim Merkezi - e-posta uygulamaları kullanım raporlarında daha fazla bilgi için bkz.  
-
-Ortamınızda bu bağlayıcıyı kullanmak, izlemek veya Şubat ayında bağlayıcıları devre dışı bıraktıktan sonra Intune'da Exchange Active Sync yalnızca cihazları temizlemek mümkün olmayacaktır. Bu değişiklik sırasında son kullanıcılarınıza beklenen hiçbir etkisi yoktur.
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-Hizmetten hizmete bağlayıcı ayarlama ve Exchange Active Sync yalnızca cihazınız varsa, cihazlarınızı yönetmek için diğer yöntemler geçin. Aşağıdaki seçenekleriniz vardır: • kayıt cihazları yönetmek için kullanım Exchange burayı belgelerinde belirtildiği gibi denetler, cihazları • kullanım Intune uygulama koruma ilkelerini mobil cihaz Yönetimi (MDM) •
-  
-#### <a name="additional-information"></a>Ek bilgi
-https://docs.microsoft.com/intune/exchange-service-connector-configure
- 
-
-
-### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Değişiklik planı: Eğitim için Intune performans güncelleştirmeleri <!--1750215-->
-Eğitim için Intune’da kullanıcılarınıza veya cihazlarınıza ayar atamanız sırasında hızı ve güvenilirliği artırmak için bazı güncelleştirmeler ekliyoruz. Bu değişikliğin bir parçası olarak Kasım sonuna doğru ilke veya ayar atamalarınızı yeni gruplara taşıyacağız.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-
-Müşteri eğitim için Intune iki dinamik Azure Active Directory (Azure AD) grupları vardır: "Tüm kullanıcılar" ve "Tüm cihazlar". Güncelleştirmeler sonrasında bu “Tüm Kullanıcılar” ve “Tüm Cihazlar” Azure AD grupları, Eğitim için Intune konsolunda görünür olmayacak. Ancak Azure konsolunda Intune’da görünür olmaya devam edecek ve “Tüm Kullanıcılar (Eski, kullanmayın)” ve “Tüm Cihazlar (Eski, kullanmayın)” olarak yeniden adlandırılacak.
-
-Güncelleştirmeler çıktıktan sonra Intune’da uygulama ve ayar atamak için Azure AD grupları kullanmanıza gerek kalmayacak. Bunun yerine Ayarlar atamalarınızı Eğitim için Intune’da sizin için oluşturacağımız ve önceki gibi “Tüm Kullanıcılar” ve “Tüm Cihazlar” olarak görünen yeni gruplara taşıyacağız. Bu değişiklikler arka uçta olduğu için Eğitim için Intune konsolunda bir farklılık olmayacaktır. Değişikliklerin son kullanıcılarınız veya kayıtlı cihazlarınız üzerinde herhangi bir etkisi olması beklenmemektedir. 
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Biz ilke atamalarınızı taşırken sizin hiçbir şey yapmanıza gerek yoktur. Şu anda Eğitim için Intune konsolunda ilke atıyorsanız atamaya devam edin.
-
-Şu anda Azure’da Intune üzerinde yukarıda bahsedilen Azure AD gruplarına ilke atıyorsanız, bunları Eğitim için Intune konsolundaki Tüm Kullanıcılar ve Tüm Cihazlar gruplarına atamaya başlayın. Azure AD gruplarının konsolda eski olarak yeniden adlandırıldığını görürseniz Azure AD’de ilke atamayı bırakın. Yeniden adlandırılan grupları şu anda başka bir amaçla kullanmıyorsanız silin.
-
-
-### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Eylemi gerçekleştir: Lütfen, Android cihaz kısıtlama veya uyumluluk İlkesi parola ayarlarını ıntune'da güncelleştirin
-Intune, Android 4.4 ve üstü cihazlarında sağlanan "cihaz varsayılanı" parola türünü kaldıracak. Android platformlarıyla cihaz varsayılanları arasındaki farklardan dolayı, bu ilke cihaz tarafından genellikle isteğe bağlı olarak kabul edilir. Bu ayarın Android'de ne zaman zorunlu tutulacağı konusundaki karışıklığı gidermek için, önümüzdeki sürümlerden birinde kullanıcı arabiriminden bu ayarı kaldıracağız. 
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-- Cihazlarda parolanın gerekli olmasını amaçlıyorsanız, "cihaz varsayılanı" kullanmak yerine Android platformu profillerinizi düzenleyip gerekli parola türünü açıkça ifade etmenizi öneririz.
-- Amacınız parola oluşturup oluşturmama kararını son kullanıcıya bırakmaksa, “Yapılandırılmadı” düğmesini seçin. Bu ayarı kullanıcı arabiriminden kaldırdığınızda, ayar hala ayarlanmış durumdaysa, profili bir sonraki düzenleyişinizde "Cihaz varsayılanı" dışında bir değer seçmeniz istenir.
-Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Android'inizde ve Android kurumsal cihaz kısıtlaması ve uyumluluk ilkelerinde parola ayarlarını gözden geçirin. Bunlar, Uyumluluk ilkeleri için Sistem güvenliğinin altında ve Cihaz kısıtlamaları için Cihaz parolası veya İş profili ayarları altında listelenir. Ek bilgilerde, diğer ayrıntıların bağlantısı ve bu ayarların yapılandırıldığı ekranların görüntüleri vardır.
-#### <a name="additional-information"></a>Ek bilgiler
-https://aka.ms/PasswordSettings 
-
+[!INCLUDE [Intune notices](./includes/intune-notices.md)]

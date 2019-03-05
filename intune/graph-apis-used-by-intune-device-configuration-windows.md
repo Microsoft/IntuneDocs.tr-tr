@@ -1,12 +1,12 @@
 ---
-title: Graph API Microsoft Intune - Azure'da cihaz yapılandırılırken kullanılan | Microsoft Docs
+title: Graph API Microsoft Intune - Azure'da cihazları yapılandırmak için | Microsoft Docs
 titleSuffix: ''
-description: Eşleşen Windows CSP ile Graph API'leri listesini görmek ve cihazları Intune yapılandırırken uzaklığı URI Windows 10 cihazlarında ve kullanılır. Paylaşılan bilgisayarlar, endpoint protection, Windows Defender Gelişmiş tehdit koruması, kimlik koruması, Windows 10 takımlar, bilgi noktası ve iş için Windows Update için eşleşen API ve CSP bakın.
+description: Eşleşen Windows CSP ile Graph API varlıkların listesini görmek ve cihazları Intune yapılandırırken uzaklığı URI Windows 10 cihazlarında ve kullanılır. Paylaşılan bilgisayarlar, endpoint protection, Windows Defender Gelişmiş tehdit koruması, kimlik koruması, Windows 10 takımlar, bilgi noktası ve iş için Windows Update için eşleşen API ve CSP bakın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,30 +15,34 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ccc46914e53e72d941cc726b6a32fa421e23ca4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b2bed795125043eac07fce41a0f101a9b029bd06
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232140"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335318"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Graph API ve Windows 10 CSP'ler Intune'da kullanılan eşleştirme
 
-Microsoft Intune kullanır [Graph API'si](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) cihazları yapılandırmak için (**Intune** > **cihaz Yapılandırması**) Windows 10 ve üzeri çalıştıran. Graph API'sini okumak, ayarlamak, değiştirmek ve/veya cihazlarda yapılandırma ayarlarını silmek için yapılandırma hizmet sağlayıcılarının (CSP'ler) kullanır.
+Microsoft Intune kullanır [Graph API'si varlıkları](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (başka bir Docs sitesi açılır) cihazları yapılandırmak için (**Intune** > **cihaz Yapılandırması**) Windows 10 çalıştıran ve üzeri. Graph API'sini okumak, ayarlamak, değiştirmek ve/veya cihazlarda yapılandırma ayarlarını silmek için yapılandırma hizmet sağlayıcılarının (CSP'ler) kullanır.
 
 Bu liste şunlar için geçerlidir:
 
 - Windows 10 ve üzeri
 
-Bu makalede grafik özellikleri ve eşleşen Windows 10 CSP ile uzaklığını listeler URI'ler.
+Bu makalede grafik varlıkları ve bunların eşleşen Windows 10 CSP'ler listelenir ve URI'leri uzaklığı.
+
+Bu bilgiler, çeşitli senaryolar için yararlıdır. Örneğin, Intune tarafından kullanılan görmek için özel OMA-URI yapılandırmalarında içerir ve benzeri için bkz. 
 
 ## <a name="windows-10-csps"></a>Windows 10 CSP
 
-Windows 10 yapılandırma hizmet sağlayıcıları hakkında daha fazla bilgi için bkz. [yapılandırma hizmet sağlayıcısı başvurusu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+Windows 10 yapılandırma hizmet sağlayıcıları hakkında daha fazla bilgi için bkz. [yapılandırma hizmet sağlayıcısı başvurusu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (başka bir Docs sitesi açılır).
 
 ## <a name="graph-api-properties-to-csp-mapping"></a>Graph API'si özellikleri için CSP eşleme
 
-Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz yapılandırması için Graph API'si özellikleri gösterir. Karşılık gelen Windows 10 CSP ayrıca gösterir ve URI uzaklığı.
+Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz yapılandırması için Graph API varlıkları çoğunu gösterir. Karşılık gelen Windows 10 CSP ayrıca gösterir ve URI uzaklığı.
+
+Aşağıdaki API'leri geçerli Windows 10 sürümlerinden görmek için Windows 10 kullanmak [yapılandırma hizmet sağlayıcısı başvurusu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (başka bir Docs sitesi açılır).
 
 #### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration.License 
 **CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
@@ -237,8 +241,7 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 **URI uzaklığı**: /Config/CredentialsUI/EnumerateAdministrators
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadditionalguardedfolders"></a>Windows10EndpointProtectionConfiguration.DefenderAdditionalGuardedFolders 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI uzaklığı**: /Config/Defender/ControlledFolderAccessProtectedFolders
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/Defender/ControlledFolderAccessProtectedFolders
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadvancedransomewareprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderAdvancedRansomewareProtectionType 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -257,23 +260,21 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 **URI uzaklığı**: /Config/Defender/AttackSurfaceReductionRules (CSP/yapılandırma Graph özellikleri gerektirir: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxml"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXml 
-**CSP**: ./Device/Vendor/MSFT/Policy/ **uzaklığı URI**: /Config/ExploitGuard/ExploitProtectionSettings
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxmlfilename"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXmlFileName 
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI uzaklığı**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardedfoldersallowedapppaths"></a>Windows10EndpointProtectionConfiguration.DefenderGuardedFoldersAllowedAppPaths 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI uzaklığı**: /Config/Defender/ControlledFolderAccessAllowedApplications
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/Defender/ControlledFolderAccessAllowedApplications
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardmyfolderstype"></a>Windows10EndpointProtectionConfiguration.DefenderGuardMyFoldersType 
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI uzaklığı**: /Config/Defender/EnableControlledFolderAccess
 
 #### <a name="windows10endpointprotectionconfigurationdefendernetworkprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderNetworkProtectionType 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI uzaklığı**: /Config/Defender/EnableNetworkProtection
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/Defender/EnableNetworkProtection
 
 #### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunch"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunch 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -340,8 +341,7 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 **URI uzaklığı**: /Config/Defender/AttackSurfaceReductionRules (CSP/yapılandırma Graph özellikleri gerektirir: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterblockexploitprotectionoverride"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterBlockExploitProtectionOverride 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI uzaklığı**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableaccountui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAccountUI 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -416,19 +416,18 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 **URI uzaklığı**: /Config/Defender/AttackSurfaceReductionRules (CSP/yapılandırma Graph özellikleri gerektirir: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablesecurebootwithdma"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableSecureBootWithDMA 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI uzaklığı**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablevirtualizationbasedsecurity"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableVirtualizationBasedSecurity 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI uzaklığı**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlaunchsystemguard"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLaunchSystemGuard 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI uzaklığı**: /Config/DeviceGuard/ConfigureSystemGuardLaunch
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlocalsystemauthoritycredentialguardsettings"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLocalSystemAuthorityCredentialGuardSettings 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI uzaklığı**: /Config/DeviceGuard/LsaCfgFlags
 
 #### <a name="windows10endpointprotectionconfigurationdmaguarddeviceenumerationpolicy"></a>Windows10EndpointProtectionConfiguration.DmaGuardDeviceEnumerationPolicy 
@@ -868,12 +867,10 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 **URI uzaklığı**: /Config/MSSecurityGuide/WDigestAuthentication
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenblockoverrideforfiles"></a>Windows10EndpointProtectionConfiguration.SmartScreenBlockOverrideForFiles 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI uzaklığı**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenenableinshell"></a>Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI uzaklığı**: /Config/SmartScreen/EnableSmartScreenInShell
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/SmartScreen/EnableSmartScreenInShell
 
 #### <a name="windows10endpointprotectionconfigurationsolicitedremoteassistance"></a>windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -1030,6 +1027,9 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 #### <a name="windows10endpointprotectionconfigurationxboxserviceslivenetworkingservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
 **CSP**: ./Vendor/MSFT/Policy  
 **Offset URI**: /Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
+
+#### <a name="windows10enterprisemodernappmanagementconfigurationuninstallbuiltinapps"></a>Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
+**CSP**: Yalnızca yok Graph API çağrısı **uzaklığı URI**: Yalnızca yok Graph API çağrısı
 
 #### <a name="windows10generalconfigurationaccountsblockaddingnonmicrosoftaccountemail"></a>Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
 **CSP**: ./Vendor/MSFT/Policy  
@@ -2924,9 +2924,17 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI uzaklığı**: /Config/Update/PauseFeatureUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
+**CSP**: Yok - Graph API yalnızca **uzaklığı URI**: Yok - yalnızca Graph API'si
+
 #### <a name="windowsupdateforbusinessconfigurationfeatureupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
-**CSP**: ./Device/Vendor/MSFT/Policy  
-**URI uzaklığı**: / Rollback/FeatureUpdate
+**CSP**: Yok - Graph API yalnızca **uzaklığı URI**: Yok - yalnızca Graph API'si
+
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackwindowindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
+**CSP**: Yok - Graph API yalnızca **uzaklığı URI**: Yok - yalnızca Graph API'si
+
+#### <a name="windowsupdateforbusinessconfigurationinstallationschedule"></a>WindowsUpdateForBusinessConfiguration.InstallationSchedule
+**CSP**: ./Device/Vendor/MSFT/Policy **uzaklığı URI**: /Config/Update/ActiveHoursStart, /Config/Update/ActiveHoursEnd, /Config/Update/ScheduledInstallDay, /Config/Update/ScheduledInstallTime
 
 #### <a name="windowsupdateforbusinessconfigurationmicrosoftupdateserviceallowed"></a>WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -2948,9 +2956,11 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI uzaklığı**: /Config/Update/PauseQualityUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationqualityupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
+**CSP**: Yok - Graph API yalnızca **uzaklığı URI**: Yok - yalnızca Graph API'si
+
 #### <a name="windowsupdateforbusinessconfigurationqualityupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
-**CSP**: ./Device/Vendor/MSFT/Policy  
-**URI uzaklığı**: / Rollback/QualityUpdate
+**CSP**: Yok - Graph API yalnızca **uzaklığı URI**: Yok - yalnızca Graph API'si
 
 #### <a name="windowsupdateforbusinessconfigurationscheduleimminentrestartwarninginminutes"></a>WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -2976,4 +2986,4 @@ Aşağıdaki listede Microsoft Intune tarafından kullanılan Windows 10 cihaz y
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Cihazı yapılandırmasına genel bakış](device-profiles.md)
-- [Yapılandırma Hizmet Sağlayıcısı Başvurusu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
+- [Yapılandırma Hizmet Sağlayıcısı Başvurusu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (başka bir Docs sitesi açılır)
