@@ -10,6 +10,7 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e36105f89221ee5e33a1a6d8afe26b09a08b76b7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 63d0d04ff670bedaa3de8b183917b34fed35ba7f
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238957"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461048"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak İnternet erişimini yönetme
 
@@ -72,7 +73,7 @@ Managed Browser veya Microsoft Edge, Intune tarafından yönetilmediğinde Intun
 
 ## <a name="conditional-access-for-protected-browsers"></a>Korumalı tarayıcılar için Koşullu Erişim
 
-Managed Browser artık Koşullu Erişim için onaylı bir istemci uygulaması. Yani Azure AD bağlantılı web uygulamalarında mobil tarayıcı erişimini kısıtlayabilir, böylece kullanıcıların yalnızca Managed Browser kullanmasını sağlayarak Safari veya Chrome gibi korumasız tarayıcılardan erişimi engelleyebilirsiniz. Bu koruma; Exchange Online ve SharePoint Online, Office portalı ve hatta [Azure AD Uygulama Ara Sunucusu](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) yoluyla harici kullanıcılara sunduğunuz şirket içi siteler gibi Azure kaynaklarına uygulanabilir. 
+Managed Browser artık Koşullu Erişim için onaylı bir istemci uygulaması. Yani Azure AD bağlantılı web uygulamalarında mobil tarayıcı erişimini kısıtlayabilir, böylece kullanıcıların yalnızca Managed Browser kullanmasını sağlayarak Safari veya Chrome gibi korumasız tarayıcılardan erişimi engelleyebilirsiniz. Bu koruma, Exchange Online ve SharePoint Online, Microsoft 365 Yönetim Merkezi ve hatta yoluyla harici kullanıcılara sunduğunuz şirket içi siteler gibi Azure kaynaklarına uygulanabilir [Azure AD uygulama proxy'si](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
 Azure AD bağlantılı web uygulamalarının mobil platformlarda Intune Managed Browser kullanmasını kısıtlamak için, onaylı istemci uygulamalarını gerektiren bir Koşullu Erişim ilkesi oluşturabilirsiniz. 
 

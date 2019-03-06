@@ -10,6 +10,7 @@ ms.date: 08/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d23d03169cdbf3c88be257cafe6aa84dc8c5257f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 25891aeffb2d5e826322cc455dff1b8bed70e690
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236772"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460878"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune’da macOS cihazların kaydını ayarlama
 
@@ -40,7 +41,7 @@ macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın
 - [MDM Yetkilisini ayarlama](mdm-authority-set.md)
 - [Grup oluşturma](groups-add.md)
 - [Şirket Portalı’nı yapılandırma](company-portal-app.md)
-- [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
+- Kullanıcı lisanslarını atama [Microsoft 365 Yönetim Merkezi](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Bir MDM anında iletme sertifikası alma](apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>Kullanıcıya ait macOS cihazları (KCG)

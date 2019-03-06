@@ -9,6 +9,7 @@ ms.date: 10/31/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 797ea27103144423d1b43434612999631a4a243d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834502"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57459909"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Cihazlarını Intune’a kaydedebilmeleri için kullanıcılara lisans atama
 
@@ -29,17 +30,17 @@ ms.locfileid: "55834502"
 
 El ile kullanıcı eklediğinizde veya şirket içi Active Directory'nizden eşitlediğinizde, kullanıcıların cihazlarını Intune'a kaydedebilmesi için önce her kullanıcıya bir Intune lisansı atamanız gerekir. Lisans listesi için bkz. [Intune barındıran lisanslar](licenses.md).
 
-## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Office 365 Yönetim merkezinden bir Intune lisansı atama
+## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 Yönetim merkezinden bir Intune lisansı atayın
 
-Bulut tabanlı kullanıcılar eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory’nizden Azure AD’ye eşitlenen hesaplara lisans atamak için [Office 365 portalını](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanabilirsiniz.
+Kullanabileceğiniz [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) el ile bulut tabanlı kullanıcılar eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory'nizden Azure AD'ye eşitlenen hesaplara lisans atamak için.
 
-1. [Office 365 portalında](http://go.microsoft.com/fwlink/p/?LinkId=698854) kiracı yöneticisi kimlik bilgilerinizi kullanarak oturum açın, sonra **Kullanıcılar** > **Etkin Kullanıcılar**’ı seçin.
+1. Oturum [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) Kiracı Yöneticisi kimlik bilgilerinizi kullanarak ve ardından **kullanıcılar** > **etkin kullanıcılar**.
 
 2. Intune kullanıcı lisansı atamak istediğiniz kullanıcı hesabını seçin ve **Ürün lisansları** > **Düzenle**’yi seçin.
 
 3. **Intune** veya **Enterprise Mobility + Security**’i **Açık** konuma getirin ve **Kaydet**’i seçin.
 
-   ![Office 365 portalı Ürün lisansları bölümünün ekran görüntüsü.](./media/office-assign-license.png)
+   ![Lisansları bölümünün ürün Microsoft 365 Yönetim merkezinin ekran görüntüsü.](./media/office-assign-license.png)
 
 4. Kullanıcı hesabı artık hizmeti kullanmak ve yönetime cihaz kaydetmek için gereken izinlere sahiptir.
 

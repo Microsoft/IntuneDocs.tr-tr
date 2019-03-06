@@ -7,9 +7,10 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e86dfe72b43fa4fa1c5e3c48cb20c5e66a7918f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 8c63cb7623fd1f3e4d62edb56356b59a4cda2acf
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231086"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461269"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 

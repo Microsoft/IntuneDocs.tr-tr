@@ -10,6 +10,7 @@ ms.date: 02/26/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c401110799202bd0c8aafc62bfda6d8827247be
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d7b584fe9d56cd02ce8ee066113c033d8b124559
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234775"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461235"
 ---
 # <a name="get-started-managing-users"></a>Kullanıcıları yönetmeye başlama
 
@@ -42,9 +43,9 @@ Kuruluşunuzdaki tüm farklı kişileri düşünün. Şirket kaynaklarını kull
 
 ## <a name="assigning-licenses-to-users"></a>Kullanıcılara lisans atama
 
-Bir kullanıcı oluşturduktan sonra, bu kullanıcıya bir Intune lisansı atamak için [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)'nı kullanmanız gerekir. Kendisine bir lisans atanmazsa kullanıcı cihazını yönetime kaydedemez.
+Bir kullanıcı oluşturduktan sonra kullanmanız gerekir [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) o kullanıcıya bir Intune lisansı atamak için. Kendisine bir lisans atanmazsa kullanıcı cihazını yönetime kaydedemez.
 
-1. Intune'da oturum açmak için kullandığınız kimlik bilgileriyle [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)'nda oturum açın.
+1. Oturum [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) ile aynı kimlik bilgilerini Intune'da oturum açma için kullanılır.
 2. **Kullanıcılar** > **Etkin Kullanıcılar**'ı, sonra daha önce oluşturduğunuz kullanıcıyı seçin.
 3. Kullanıcı bilgilerinin yüklenmesi için bir süre beklemeniz gerekebilir. Yüklendikten sonra kullanıcının **Ürün lisansları** için **Düzenle**'yi seçin.
 4. Kullanıcıyı bir **Konum**'a atayın, sonra Intune'u **açık** hale getirin.

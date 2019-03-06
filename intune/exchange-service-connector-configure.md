@@ -9,6 +9,7 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: muhosabe
@@ -16,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6be4bfdb971e96da0224d146705e7c9fd0606ab
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 828cd17c320bd13b1b7fcce6578727015be3a77b
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229590"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460453"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune ve Exchange Online için Exchange hizmet bağlayıcısını yapılandırma
 Bu makale, Microsoft Intune hizmetini Exchange Online veya yeni Exchange Online Dedicated hizmetine nasıl bağlayacağınızı gösterir. Exchange Online Dedicated ortamınızın **yeni** veya **eski** sürüm mü olduğunu belirlemek için hesap yöneticinize başvurun.
 
 **Hizmetten Hizmete Bağlayıcı** ile hem Exchange ActiveSync’i (EAS) hem de Intune tarafından yönetilen cihazları tek bir yönetim konsolundan yönetebilirsiniz.  Exchange Online için Koşullu Erişimi etkinleştirmek için bağlayıcı gerekli değildir.
 
-Koşullu erişim bir dağıtımı planlarken, genellikle hangi kullanıcıların ve kullanıcı sayısı, yeni deneyimi sunacak anlamak önemlidir. Office 365 Yönetim Merkezi bu portal, etkinlik raporları özelliğinin bir parçası olarak Exchange Online bir e-posta uygulama kullanım raporu biçiminde sağlar. Bu raporlar, ortamınızdaki mobil e-posta benimseme önce ve sonra koşullu erişim dağıtımını anlamak için kullanılabilir.
+Koşullu erişim bir dağıtımı planlarken, genellikle hangi kullanıcıların ve kullanıcı sayısı, yeni deneyimi sunacak anlamak önemlidir. Microsoft 365 Yönetim merkezini bu portal, etkinlik raporları özelliğinin bir parçası olarak Exchange Online bir e-posta uygulama kullanım raporu biçiminde sağlar. Bu raporlar, ortamınızdaki mobil e-posta benimseme önce ve sonra koşullu erişim dağıtımını anlamak için kullanılabilir.
 
 ## <a name="service-to-service-connector-requirements"></a>Hizmetten Hizmete Bağlayıcı gereksinimleri
 **Hizmetten Hizmete Bağlayıcı**, yalnızca Exchange Online veya Exchange Online Dedicated hizmetini destekler ve şirket içi altyapıyla ilgili bir gereksinimi yoktur. 

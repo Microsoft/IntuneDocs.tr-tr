@@ -9,18 +9,19 @@ ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67d8833740dbc5cfad1de4644a48a0683177ddc6
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: a9f16c563ff0416092abe3812b3505c2f6d92587
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335284"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57459926"
 ---
 # <a name="basic-setup"></a>Temel kurulum
 
@@ -59,7 +60,7 @@ Intune ile VPN, Wi-Fi veya e-posta profilleri için sertifika tabanlı kimlik do
 
 Intune'a geçebilmek için Intune aboneliği gerekir.
 
--   Aşağıdakileri nasıl yapacağınızı öğrenmek için [bu sayfayı](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) ziyaret edebilirsiniz:
+-   Aşağıdakileri nasıl yapacağınızı öğrenmek için [bu sayfayı](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) ziyaret edebilirsiniz:
 
     -   Yeni bir AAD kiracısına bağlantılı yeni bir Intune aboneliği oluşturun.
 

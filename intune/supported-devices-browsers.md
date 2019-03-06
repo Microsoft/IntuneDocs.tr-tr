@@ -10,6 +10,7 @@ ms.date: 01/03/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbddbd1bd74044e161b1a18fcf58c5a64bdb8c70
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842501"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460623"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Desteklenen işletim sistemleri ve tarayıcılar ıntune
 
@@ -99,7 +100,7 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 Farklı yönetim görevleri aşağıdaki yönetim web sitelerinden birini kullanmanızı gerektirir.
 
-- [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 Yönetim Merkezi](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure portal](https://portal.azure.com/)
 
 Bu portallar için aşağıdaki tarayıcılar desteklenir:

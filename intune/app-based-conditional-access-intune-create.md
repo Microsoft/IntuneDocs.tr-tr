@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4ba4d144338c2cd775a5389f3587c94625b94b4
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: cc73e24da6cd774811eb30d0ca7f551760b9a274
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742253"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389394"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim ilkeleri ayarlama
 
@@ -33,7 +34,7 @@ Onaylı uygulamalar listesinin parçası olan uygulamalar için uygulama tabanl�
 > Bu makale uygulama tabanlı bir koşullu erişim ilkesini ekleme konusunda size adım adım yol gösterir. Onaylı uygulamalar listesinden SharePoint Online, Microsoft Teams ve Microsoft Exchange Online gibi uygulamaları eklerken de aynı adımları kullanabilirsiniz.
 
 ## <a name="create-app-based-conditional-access-policies"></a>Uygulama tabanlı koşullu erişim ilkeleri oluşturma
-Koşullu erişim, bir Azure Active Directory (Azure AD) teknolojisidir. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*. Başka bir deyişle, ilkeler yapılandırmak için Intune ve Azure AD arasında değişim yapmanız gerekmez.
+Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır. Başka bir deyişle, ilkeler yapılandırmak için Intune ve Azure AD arasında değişim yapmanız gerekmez.
 
 > [!IMPORTANT]
 > Intune portalından koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.

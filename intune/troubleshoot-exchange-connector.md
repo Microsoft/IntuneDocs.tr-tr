@@ -6,9 +6,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/18/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89611dd197c968df43cac6006d3982fe5f1ec5c2
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d2cbe4e213854c4dbf5cc29b8a05aec7fb0d46b3
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232650"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460657"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune şirket içi Exchange bağlayıcısında sorun giderme
 

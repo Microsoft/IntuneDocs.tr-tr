@@ -10,16 +10,17 @@ ms.date: 02/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c57870f32d853b48be96a58afaa7b534250e0c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0cde1977b0c126f478abae06860110acc2f10444
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228131"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460776"
 ---
 # <a name="intune-tenant-status-page"></a>Intune Kiracı durumu sayfası
 Kiracı durumu, bir merkezi hub'ı kiracınız hakkında güncel ve önemli ayrıntılar görüntüleyebileceğiniz sayfasıdır. Lisans kullanılabilirlik ve kullanım, bağlayıcı durumunu ve Intune hizmeti hakkında önemli iletişimleri ayrıntıları içerir.  
@@ -60,19 +61,19 @@ Yoktur, herhangi bir türde tek bir bağlayıcıyı birden fazla durum aynı sö
 Listeden bir bağlayıcı'yı seçtiğinizde, portal, oluşturma veya bu bağlayıcıyı yapılandırma ile ilgili portal sayfasının sunar.  Örneğin, seçtiğinizde, **VPP sona erme tarihi** bağlayıcısını **iOS toplu satın alma programı belirteçleri** sayfası bu Bağlayıcısı hakkında daha fazla ayrıntı görüntüleyebileceğiniz açılır. Ardından yeni bir yapılandırma oluşturmak veya da düzenleyebilir ve mevcut bir sorunları giderin.  
 
 ## <a name="intune-service-health"></a>Intune hizmet durumu  
-Microsoft 365 hizmet durumu panosu veya ileti merkezi gitmek zorunda kalmadan etkin olaylar ve önerileri ayrıntılarını görüntüleyebilir, hem Microsoft 365 Yönetim merkezinde bulunan https://portal.office.com. Burada etkisi kiracınız etkilemek için Not olayları gösterilmektedir.  
+Microsoft 365 hizmet durumu panosu veya ileti merkezi gitmek zorunda kalmadan etkin olaylar ve önerileri ayrıntılarını görüntüleyebilir, bulunan her ikisi de [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com). Burada etkisi kiracınız etkilemek için Not olayları gösterilmektedir.  
 
 Bir olay seçtiğinizde, olay ayrıntılarını Kiracı durumu sayfasında doğrudan sunulur. Önerileri ve olayları görüntülemek için seçin **olaylar/önerileri görmek**. Microsoft 365 Yönetici merkezi açılır ve kiracınız için ardından önerileri ve son 30 güne ait olayları görüntüleyebilir.  
 
-Bilgilerini görüntülemek için *Intune hizmet durumu*, hesabınızın olması gerekir **genel yönetici** veya **Hizmet Yöneticisi** Azure Active Directory'de rolü veya Office Yönetim Portalı. Bu izinleri atamak üzere oturum [Microsoft 365 Yönetim merkezini](https://portal.officeppe.com/AdminPortal/Home#/homepage) genel yönetici izinlerine sahip. Seçin **kullanıcılar > etkin kullanıcılar**ve ardından erişim gerektiren bir hesabı seçin. Seçin **Düzenle** rolleri için seçin *Hizmet Yöneticisi* veya *genel yönetici*, ardından **Kaydet** atamak için Düzenle izinler.  
+Bilgilerini görüntülemek için *Intune hizmet durumu*, hesabınızın olması gerekir **genel yönetici** veya **Hizmet Yöneticisi** Azure Active Directory'de rolü veya Microsoft 365 Yönetim Merkezi. Bu izinleri atamak üzere oturum [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com) genel yönetici izinlerine sahip. Seçin **kullanıcılar > etkin kullanıcılar**ve ardından erişim gerektiren bir hesabı seçin. Seçin **Düzenle** rolleri için seçin *Hizmet Yöneticisi* veya *genel yönetici*, ardından **Kaydet** atamak için Düzenle izinler.  
 
 İletişim tercihlerinizi Microsoft 365 Yönetim merkezinden Intune hizmet durumu yalnızca ayarlayabilirsiniz.
 
 ## <a name="intune-news"></a>Intune Haberleri  
 Intune hizmet ekibi bilgilendirme iletişimi, Office ileti merkezine gitmek zorunda kalmadan görüntüleyin. İletişim, Intune hizmetine yakın zamanda gerçekleşen veya şekilde kiracınız için olan değişiklikler hakkında iletileri içerir.  
 
-Varsayılan olarak, son 10 etkin iletileri görüntüleyin. Eski iletileri görüntülemek için seçin **iletilere bakın** açmak için *ileti Merkezi* Microsoft 365 Yönetim Merkezi portalında.  
+Varsayılan olarak, son 10 etkin iletileri görüntüleyin. Eski iletileri görüntülemek için seçin **iletilere bakın** açmak için *ileti Merkezi* Microsoft 365 Yönetim merkezinde.  
 
-Intune haber bilgilerini görüntülemek için hesabınızın olması gerekir **genel yönetici** veya **Hizmet Yöneticisi** Azure Active Directory'de rol veya **ileti merkezi okuyucu** rol Office Yönetim Portalı'nda.  Bu izin atamak için oturum açın [Microsoft 365 Yönetim merkezini](https://portal.officeppe.com/AdminPortal/Home#/homepage) yönetici izinlerine sahip. Seçin **kullanıcılar > etkin kullanıcılar**ve ardından erişim gerektiren bir hesabı seçin. Seçin **Düzenle** için *rolleri*seçin *takımlar iletişimleri Yöneticisi*, ardından **Kaydet** izinleri atamak için düzenleme.  
+Intune haber bilgilerini görüntülemek için hesabınızın olması gerekir **genel yönetici** veya **Hizmet Yöneticisi** Azure Active Directory'de rol veya **ileti merkezi okuyucu** Microsoft 365 Yönetim merkezinde rol.  Bu izin atamak için oturum açın [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com) yönetici izinlerine sahip. Seçin **kullanıcılar > etkin kullanıcılar**ve ardından erişim gerektiren bir hesabı seçin. Seçin **Düzenle** için *rolleri*seçin *takımlar iletişimleri Yöneticisi*, ardından **Kaydet** izinleri atamak için düzenleme.  
 
 İletişim tercihlerinizi Microsoft 365 Yönetim merkezinden Intune haber yalnızca ayarlayabilirsiniz.

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune nedir?
-description: Intune’un nasıl Enterprise Mobility + Security çözümünün mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) bileşeni olduğu ve şirket verilerinizi korumanıza nasıl yardım ettiği hakkında bilgi edinin.
+description: Nasıl Intune mobil cihaz Yönetimi (MDM) ve Enterprise Mobility + Security çözümünün mobil uygulama yönetimi (MAM) bileşeni olduğu ve şirket verilerinizi korumanıza nasıl yardımcı olduğunu öğrenin.
 keywords: Intune nedir?
 author: dougeby
 ms.author: dougeby
@@ -9,6 +9,7 @@ ms.date: 02/26/2019
 ms.topic: overview
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
@@ -16,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92cd9a5a6c3ee49b2431b43b024c338e06b5dfe2
-ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
+ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56891615"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460589"
 ---
 # <a name="what-is-microsoft-intune"></a>Microsoft Intune nedir?
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olan bulut tabanlı bir kurumsal mobilite yönetim (EMM) hizmetidir. Diğer Azure hizmetleri gibi Microsoft Intune da Azure portalında kullanılabilir. Intune ile şunları yapabilirsiniz:
+Microsoft Intune çalışanlarınızın Kurumsal verilerinizin üretken olmasını sağlarken korunmasına yardımcı olan enterprise mobility Yönetim (EMM) alanında bulut tabanlı bir hizmettir. Diğer Azure hizmetleri gibi Microsoft Intune da Azure portalında kullanılabilir. Intune ile şunları yapabilirsiniz:
 * Çalışanlarınızın şirket verilerine erişmek için kullandığı mobil cihazları ve PC'leri yönetme.
 * Çalışanlarınızın kullandığı mobil uygulamaları yönetebilirsiniz.
 * Çalışanlarınızın erişim ve paylaşım yöntemlerinin denetlenmesine yardımcı olarak şirket bilgilerinizi koruyabilirsiniz.
@@ -44,7 +45,7 @@ Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerin
 
 
 ## <a name="how-does-intune-work"></a>Intune nasıl çalışır?
-Intune, Enterprise Mobility + Security’nin (EMS) mobil cihaz ve uygulamaları yöneten bileşenidir. Kimlik ve erişim denetimi için Azure Active Directory (Azure AD) gibi diğer EMS bileşenleriyle, veri koruma için ise Azure Information Protection ile tümleşir. Office 365 ile birlikte kullanıldığında, çalışanlarınıza tüm cihazlardan üretken bir şekilde çalışma olanağı tanırken kuruluşunuzun bilgilerini de koruma altına alır.
+Intune, Microsoft Enterprise Mobility + Security (EMS) paketi olan mobil cihazları ve uygulamaları yöneten bileşenidir. Kimlik ve erişim denetimi için Azure Active Directory (Azure AD) gibi diğer EMS bileşenleriyle, veri koruma için ise Azure Information Protection ile tümleşir. Office 365 ile birlikte kullanıldığında, çalışanlarınıza tüm cihazlardan üretken bir şekilde çalışma olanağı tanırken kuruluşunuzun bilgilerini de koruma altına alır.
 
 ![Intune mimarisi görüntüsü](./media/intunearch_sm.png)
 
@@ -63,7 +64,7 @@ Intune cihaz yönetimi, mobil işletim sistemlerindeki kullanılabilir protokoll
 * Cihazların kurumsal standartlar açısından uyumluluk durumunu ölçme ve raporlama
 * Yönetilen cihazlardaki kurumsal verileri kaldırma  
 
-Bazen **kurumsal veriler için erişim denetiminin** bir cihaz yönetimi özelliği olduğu düşünülür. Bu hizmet, mobil işletim sistemleri tarafından sunulan bir özellik olmadığı için biz bu şekilde sınıflandırmıyoruz. Bu hizmet, kimlik sağlayıcı tarafından sunulmaktadır. Burada kimlik sağlayıcı, Microsoft'un kimlik ve erişim yönetim sistemi olan Azure Active Directory (Azure AD) olacaktır.  
+Bazı durumlarda, kişilerin düşünme **Kurumsal veriler için erişim denetiminin** bir cihaz yönetimi özelliğidir. Bu hizmet, mobil işletim sistemleri tarafından sunulan bir özellik olmadığı için biz bu şekilde sınıflandırmıyoruz. Bu hizmet, kimlik sağlayıcı tarafından sunulmaktadır. Burada kimlik sağlayıcı, Microsoft'un kimlik ve erişim yönetim sistemi olan Azure Active Directory (Azure AD) olacaktır.  
 
 Intune, Azure AD ile birlikte geniş bir erişim denetim senaryosu kümesi sunar. Örneğin, bir mobil cihazın Exchange gibi kurumsal bir hizmete erişebilmesi için Intune’da tanımladığınız kurumsal standartlara uygun olması şartını koyabilirsiniz. Benzer şekilde kurumsal hizmeti belirli bir mobil uygulama kümesiyle sınırlandırabilirsiniz. Örnek olarak, Exchange Online'a yalnızca Outlook veya Outlook Mobile ile erişilmesini sağlayabilirsiniz.
 
@@ -77,11 +78,11 @@ Uygulama yönetimi dendiğinde şunlar akla gelmelidir:
 * Mobil uygulama envanter raporlarını alma
 * Mobil uygulama kullanımını izleme
 
-Mobil uygulama yönetimi (MAM) teriminin bu işlevlerden herhangi birinin veya birkaçının birlikte kullanıldığı senaryolar için kullanıldığına şahit olduk. Özellikle uygulama yapılandırma kavramının mobil uygulamalar içindeki kurumsal verilerin güvenliğinin sağlanması kavramıyla bir arada kullanılması sık karşılaşılan bir durumdur. Bunun nedeni, bazı mobil uygulamalarda veri güvenliği özelliklerinin yapılandırılmasını sağlayan ayarların yer almasıdır.
+Mobil uygulama yönetimi (MAM) teriminin bu işlevlerden herhangi birinin veya birkaçının birlikte kullanıldığı senaryolar için kullanıldığına şahit olduk. Özellikle, uygulama yapılandırma kavramının mobil uygulamalar içindeki kurumsal verilerin güvenliğinin kavramı ile birleştirmek yeni başlayanlar için yaygındır. Bunun nedeni, bazı mobil uygulamalarda veri güvenliği özelliklerinin yapılandırılmasını sağlayan ayarların yer almasıdır.
 
 Uygulama yapılandırma ve Intune dediğimizde, özel olarak [iOS’ta yönetilen uygulama yapılandırması](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) gibi teknolojilerden bahsediyoruz.
 
-Intune'u diğer EMS hizmetleriyle birlikte kullanarak kuruluşunuz için mobil işletim sistemi ve uygulama yapılandırması yoluyla mobil uygulamalar tarafından sunulandan daha fazla mobil uygulama güvenliği seçeneğine sahip olabilirsiniz. EMS üzerinden yönetilen uygulamalar, aşağıdakiler de dahil olmak üzere daha fazla mobil uygulama ve veri koruma özelliğine sahip olur:
+Intune'u diğer EMS hizmetleriyle birlikte kullanarak kuruluşunuz için mobil işletim sistemi ve uygulama yapılandırması yoluyla mobil uygulamalar tarafından sunulandan daha fazla mobil uygulama güvenliği seçeneğine sahip olabilirsiniz. EMS üzerinden yönetilen bir uygulama içeren kurulmuştur ve mobil uygulama ve veri koruma özelliklerine erişebilir:
 
 * [Çoklu oturum açma](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [Çok faktörlü kimlik doğrulaması](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
@@ -99,16 +100,16 @@ Uygulama güvenliğini sağlama, uygulama yönetimi hizmetlerinden biridir. Intu
 * Kullanıcıların kurumsal bilgilerle gerçekleştirebilecekleri eylemleri (kopyala, kes/yapıştır, kaydet ve görüntüle gibi) sınırlama
 * Mobil uygulamalardaki kurumsal verileri kaldırma (seçmeli silme veya kurumsal verileri silme olarak da bilinir)
 
-Intune'un mobil uygulama güvenliği için sunduğu yöntemlerden biri, **uygulama koruma ilkesi** özelliğidir. Uygulama koruma ilkesi, kurumsal verileri kişisel verilerden ayırmak için Azure AD kimliğini kullanır. Kurumsal kimlik bilgileri kullanılarak erişilen veriler için ek kurumsal koruma önlemleri alınır.
+Tek yönlü Intune sağlar mobil uygulama güvenliği aracılığıyla kendi **uygulama koruma İlkesi** özelliği. Uygulama koruma ilkesi, kurumsal verileri kişisel verilerden ayırmak için Azure AD kimliğini kullanır. Kurumsal kimlik bilgileri kullanılarak erişilen veriler ek Kurumsal koruma önlemleri alınır.
 
-Örneğin kullanıcı, cihazında kurumsal kimlik bilgileriyle oturum açtığında kişisel kimlik bilgileriyle erişemediği kurumsal verilere erişebilir. Bu şirket verileri kullanıldıkça, uygulama koruma ilkeleri bunların nasıl kaydedildiği ve paylaşıldığını denetler. Bu koruma özellikleri, kullanıcı cihazında kişisel kimlik bilgileriyle oturum açtığında eriştiği verilere uygulanmaz. Bu sayede BT departmanı kurumsal verilerin denetimini sağlarken kullanıcı da kişisel verilerinin denetimini ve gizliliğini denetlemiş olur.
+Örneğin, kullanıcı cihazlarının Kurumsal kimlik bilgileriyle oturum açtığında, Kurumsal kimliklerini kimliklerini kişisel verilere erişmesine izin verir. Bu şirket verileri kullanıldıkça, uygulama koruma ilkeleri bunların nasıl kaydedildiği ve paylaşıldığını denetler. Bu koruma özellikleri, kullanıcı kimliklerini kişisel cihazını oturum açtığında, erişilen veriler için uygulanmaz. Bu şekilde, BT son kullanıcı kendi kişisel verilerinin denetimini ve gizliliğini korur ancak şirket verilerinin denetime sahiptir.
 
 ## <a name="emm-with-and-without-device-enrollment"></a>Cihaz kaydı ile ve cihaz kaydı olmadan EMM
 Kurumsal mobilite yönetimi çözümlerinin çoğu, temel mobil cihaz ve mobil uygulama teknolojilerini destekler. Bunlar genelde cihazın kuruluşunuzun mobil cihaz yönetimi (MDM) çözümüne kaydedilmesini gerektirir. Intune bu senaryolara ek olarak birçok "kayıt olmadan" senaryosunu da destekler.  
 
-Kuruluşların "kayıt olmadan" senaryolarını kullanma şekli değişiklik gösterir. Bazı kuruluşlarda standarttır. Bazıları ise kişisel tablet gibi yardımcı cihazlar için izin verir. Diğerleri ise hiç desteklemez. Tüm çalışan cihazlarının MDM sistemine kaydedilmesini gerektiren kuruluşlar bile genelde “kayıt olmadan” senaryolarını yükleniciler, satıcılar ve özel duruma sahip diğer cihazlar için destekler.
+Kuruluşların "kayıt olmadan" senaryolarını kullanma şekli değişiklik gösterir. Bazı kuruluşlarda standarttır. Bazıları ise kişisel tablet gibi yardımcı cihazlar için izin verir. Diğerleri ise hiç desteklemez. Burada bir kuruluşun tüm çalışan cihazlarının MDM sistemine kaydedilmesini gerektiren bile bu son durumda bunlar genelde "kayıt olmadan" senaryolarını Yükleniciler, satıcılar ve özel duruma sahip diğer cihazlar için destekler.
 
-Intune'un "kayıt olmadan" teknolojisini sisteme kaydolan cihazlarda da kullanabilirsiniz. Örneğin, MDM sistemine kayıtlı bir cihazda mobil işletim sistemi tarafından sunulan “birlikte açma” koruması bulunabilir. “Birlikte açma” koruması, Outlook gibi bir uygulamadan Word gibi başka bir uygulamaya belge açmanızı her iki uygulama da MDM sağlayıcısı tarafından yönetilmediği durumlarda kısıtlayan bir iOS özelliğidir. Ayrıca, BT departmanı EMS tarafından yönetilen mobil uygulamalara, uygulama koruma ilkesi uygulayarak farklı kaydetme işlevini denetleyebilir veya çok faktörlü kimlik doğrulaması özelliği ekleyebilir.
+Intune'un "kayıt olmadan" teknolojisini sisteme kaydolan cihazlarda da kullanabilirsiniz. Örneğin, MDM sistemine kayıtlı bir cihazda mobil işletim sistemi tarafından sunulan “birlikte açma” koruması bulunabilir. "Birlikte açma" koruması, her iki uygulama da aynı MDM sağlayıcısı tarafından yönetilen kısıtlayan gibi bir uygulamadan, Outlook, Word gibi başka bir uygulamaya belge açma Apple iOS özelliğidir. Ayrıca, BT EMS yönetilen mobil uygulamaları denetlemek için uygulama koruma İlkesi uygulanabilir-gibi veya çok faktörlü kimlik doğrulaması sağlamak için.
 
 Kuruluşunuzun kayıtlı ve kayıtsız mobil cihazlar ve uygulamalarla ilgili pozisyonu ne olursa olsun, EMS'nin bir parçası olan Intune'da çalışanlarınızın üretkenliğini artırmaya yardımcı olarak kurumsal verilerinizi korumanızı sağlayarak araçlar mevcuttur.
 
@@ -133,7 +134,7 @@ Portal deneyiminizi özelleştirmeye yönelik hızlı bir kılavuz için bkz. [A
 
 ### <a name="before-you-start"></a>Başlamadan önce
 
-Azure Portal’da Intune’u kullanmak için, bir Intune yönetici ve kiracı hesabınız olmalıdır. Hesabınız yoksa [bir hesap için kaydolun](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+Azure Portal’da Intune’u kullanmak için, bir Intune yönetici ve kiracı hesabınız olmalıdır. Hesabınız yoksa [bir hesap için kaydolun](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
 ### <a name="supported-web-browsers-for-the-azure-portal"></a>Azure Portal için desteklenen web tarayıcıları
 

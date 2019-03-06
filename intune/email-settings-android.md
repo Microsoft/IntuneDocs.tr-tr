@@ -9,17 +9,18 @@ ms.date: 01/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53f1c95fdbdd9d779fb339e4820a3e7000573e60
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 617c2d4c87c85ece0dafd65c6cb1836716862956
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236935"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389530"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune'da e-posta, kimlik doğrulama ve eşitleme yapılandırma android cihaz ayarları
 

@@ -9,18 +9,19 @@ ms.date: 02/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf4d63ed680b589dd6743daa491c5eaddb74352e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: a0f15eb4aecc1c4c71420df7036a7d143ba298cd
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231001"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460907"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -166,7 +167,7 @@ Intune’u etkin olmayan, eski veya yanıt vermeyen cihazları otomatik olarak s
 
 İletişim sorunları veya eksik cihazlar nedeniyle, cihazları Azure AD'den silmeniz gerekebilir. Ulaşılamaz olduğunu ve Azure ile yeniden iletişim kurmasının pek olası olmadığını bildiğiniz cihazlarda, cihaz kayıtlarını Azure portalından kaldırmak için **Sil** eylemini kullanabilirsiniz. **Sil** eylemi, cihazı yönetimden kaldırmaz.
 
-1.  Yönetici kimlik bilgilerinizi kullanarak [Azure portalında Azure Active Directory](http://aka.ms/accessaad)’de oturum açın. [Office 365 portalında](https://portal.office.com) da oturum açabilirsiniz. Menüden **Yönetim merkezleri** > **Azure AD**'yi seçin.
+1.  Yönetici kimlik bilgilerinizi kullanarak [Azure portalında Azure Active Directory](http://aka.ms/accessaad)’de oturum açın. Ayrıca için oturum [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com). Menüden **Yönetim merkezleri** > **Azure AD**'yi seçin.
 2.  Azure aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez ( **Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
 3.  **Azure Active Directory**’yi ve sonra da kuruluşunuzu seçin.
 4.  **Kullanıcılar** sekmesini seçin.

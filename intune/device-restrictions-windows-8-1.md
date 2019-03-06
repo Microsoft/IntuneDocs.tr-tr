@@ -10,17 +10,18 @@ ms.date: 3/6/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a42be2997b163f4d932338aa6ec94b3773d8ec2e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0e2381a9c7fd8120d935e818ed47ae1d26c26808
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233789"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57391571"
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 ve üzeri cihaz kısıtlama ayarları
 

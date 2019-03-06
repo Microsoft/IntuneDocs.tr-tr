@@ -10,6 +10,7 @@ ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0ed363acca7fc0021569009b1f672a06101e29f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1dea5f0a794e0b947e1f542b796e946de85f7eb4
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834186"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460386"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune ücretsiz olarak deneyin 
 
@@ -53,7 +54,7 @@ Intune'u 30 gün boyunca ücretsiz deneyebilirsiniz. Zaten bir iş veya okul hes
 
     ![Intune deneme hesabı yeni kimlik bilgisi işleminin ekran görüntüsü](./media/account-sign-up-site-user-id.png)
 
-    Kuruluşunuzun **.onmicrosoft.com** dizesi olmadan kullanmak istediğiniz kendi özel etki alanı varsa, bunu bu makalenin devamında anlatılan Office 365 Yönetim Portalı’nda değiştirebilirsiniz.
+    Kuruluşunuz olmadan kullanmak istiyorsanız, kendi özel etki alanı varsa **. onmicrosoft.com**, Microsoft 365 Yönetim Merkezi'nde bu makalenin sonraki bölümlerinde açıklanan değiştirebilirsiniz.
 
 3. Kaydolma işleminin sonunda yeni hesap bilgilerinizi görüntüleyin.
 
@@ -96,24 +97,24 @@ MDM yetkilisi hakkında daha fazla bilgi için bkz. [Mobil cihaz yönetimi yetki
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Özel etki alanı adınızı yapılandırma (İsteğe bağlı)
 
-Yukarıda değinildiği gibi kuruluşunuzun **. onmicrosoft.com** olmadan kullanmak istediğiniz kendi özel etki alanı varsa, bunu Office 365 Yönetim Portalı'nda değiştirebilirsiniz. Özel etki alanınızın adını kendiniz ekler, doğrular ve yapılandırırsınız.  
+Yukarıdaki söz edildiği gibi kuruluşunuzun olmadan kullanmak istiyorsanız, kendi özel etki alanı erişimi **. onmicrosoft.com**, Microsoft 365 Yönetim merkezinde değiştirebilirsiniz. Özel etki alanınızın adını kendiniz ekler, doğrular ve yapılandırırsınız.  
 
 > [!IMPORTANT]
 > İlk **onmicrosoft.com** etki alanı adını yeniden adlandıramaz ve kaldıramazsınız. İş kimliğinizin açık ve anlaşılır olması adına Intune’da kullanılan özel etki alanı adlarında ekleme, doğrulama veya kaldırma işlemleri yapabilirsiniz.
 
-1. [Office 365 yönetim portalına](https://portal.office.com/Admin/Default.aspx) gidin ve yönetici hesabınızı kullanarak oturum açın.
+1. Git [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com) yönetici hesabınızı kullanarak oturum açın.
 
 2. Gezinme bölmesinde, **Kurulum** > **Etki alanları** > **Etki alanı ekle**'yi seçin.
 
 3. Özel etki alanı adınızı yazın. Ardından **İleri**'yi seçin.
 
-   ![Ekran görüntüsü Office 365 Yönetim Merkezi - etki alanı ekleme](./media/domain-custom-add.png)
+   ![Microsoft 365 ekran Yönetim Merkezi - etki alanı ekleme](./media/domain-custom-add.png)
 
 4. Önceki adımda girdiğiniz etki alanının sahibi olduğunuzu doğrulayın. 
     
     **Kodu e-posta yoluyla gönder** seçilirse, etki alanınızın kayıtlı iletişim sorumlusuna bir e-posta gönderilir. E-postayı aldıktan sonra kodu kopyalayın ve **Doğrulama kodunuzu buraya yazın** etiketli alana girin. Doğrulama kodu eşleşirse, etki alanı kiracınıza eklenir. Görüntülenen e-posta tanıdık görünmeyebilir. Bazı kaydediciler etki alanı kaydedilirken sağlanan gerçek e-posta adresini gizler.
 
-   ![Ekran görüntüsü Office 365 Yönetim Merkezi - etki alanını doğrulama](./media/domain-custom-verify.png)
+   ![Microsoft 365 ekran Yönetim Merkezi - etki alanı doğrulama](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > TXT kaydı doğrulama ayrıntıları için bkz. [Office 365 için DNS barındırma sağlayıcılarında DNS kayıtları oluşturma](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -122,7 +123,7 @@ Yukarıda değinildiği gibi kuruluşunuzun **. onmicrosoft.com** olmadan kullan
 
 Kullanabileceğiniz iki portal vardır:
 - [Intune'un özelliklerini](what-is-intune.md) Azure’daki ([portal.azure.com](https://portal.azure.com)) Intune panosunda bulabilirsiniz. Normalde, işlerinizi Intune panosunda yaparsınız.
-- Kullanıcı eklemek ve yönetmek için Azure Active Directory'yi kullanmıyorsanız, bunları yapabileceğiniz yer Office 365 Yönetim merkezidir ([portal.office.com](https://portal.office.com)). Ayrıca hesabınızın faturalama ve destek gibi diğer yönlerini de yönetebilirsiniz.
+- Microsoft 365 Yönetim merkezini ([admin.microsoft.com](https://admin.microsoft.com)), Azure Active Directory için kullanmıyorsanız, ekleyin ve kullanıcıları yönetme yerdir. Ayrıca hesabınızın faturalama ve destek gibi diğer yönlerini de yönetebilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

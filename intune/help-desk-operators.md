@@ -7,21 +7,22 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/23/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: a566d0630836e8cead8cb369d486374ff4583bfa
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230032"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461065"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Şirketinizdeki kullanıcılara yardımcı olmak için sorun giderme portalını kullanma
 
@@ -126,7 +127,7 @@ Tabloda, Intune ile yönetilen cihazlar için uygulama koruma ilkeleri durumu ö
 
 | Özellik    | Açıklama                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Name        | Uygulamanın adı.                                                                                                        |
+| Ad        | Uygulamanın adı.                                                                                                        |
 | Dağıtma    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
 | Platform    | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
 | Kayıt  | Cihaz türünün adı.                                                                                                     |
@@ -160,7 +161,7 @@ Uyumluluk ilkelerinin özellikleri.
 | Özellik      | Açıklama                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Name          | Uygulamanın adı.                                                                                                        |
+| Ad          | Uygulamanın adı.                                                                                                        |
 | İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
 | İlke Türü   | Cihaz sahiplik türü (**Şirket**, **Kişisel** ve **Bilinmiyor**).                                               |
 | Son değiştirme | Cihaz türünün adı.                                                                                                     |
@@ -205,7 +206,7 @@ Yapılandırma ilkelerinin özellikleri.
 | Özellik      | Açıklama                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Name          | Uygulamanın adı.                                                                                                        |
+| Ad          | Uygulamanın adı.                                                                                                        |
 | İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
 | İlke Türü   | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
 | Son değiştirme | Cihaz türünün adı.                                                                                                     |

@@ -9,6 +9,7 @@ ms.date: 05/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcd78efe6862e42296764e4791bf8fed940adde4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: d43c999cf5dc90d62b9409e3c4565502b773ddf4
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850956"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460538"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune hizmet açıklaması
 
@@ -36,7 +37,7 @@ Intune, kimlik ve erişim denetimi için Azure Active Directory (Azure AD), veri
 Intune ile cihazları ve uygulamaları nasıl yöneteceğiniz ve kurumsal verileri nasıl koruyacağınız hakkında bilgi için bkz. [Intune belgeleri](https://docs.microsoft.com/intune/).
 
 ## <a name="30-day-free-trial"></a>30 günlük ücretsiz deneme sürümü
-Intune'u 100 kullanıcı lisansı içeren 30 günlük ücretsiz bir denemeyle kullanmaya başlayabilirsiniz. Ücretsiz denemeyi başlatmak için [Intune Kayıt sayfasına gidin](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Kuruluşunuzda bir Kurumsal Anlaşma veya eşdeğer toplu lisans sözleşmesi varsa, ücretsiz deneme sürümünüzü ayarlamak için Microsoft temsilcinize başvurun.
+Intune'u 100 kullanıcı lisansı içeren 30 günlük ücretsiz bir denemeyle kullanmaya başlayabilirsiniz. Ücretsiz denemeyi başlatmak için [Intune Kayıt sayfasına gidin](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Kuruluşunuzda bir Kurumsal Anlaşma veya eşdeğer toplu lisans sözleşmesi varsa, ücretsiz deneme sürümünüzü ayarlamak için Microsoft temsilcinize başvurun.
 
 > [!NOTE]
 > Kuruluşunuzda bir Microsoft Online Services iş ya da okul hesabı varsa ve deneme süresi sona erdikten sonra üretimde bu Intune aboneliğiyle devam edecekseniz, ilgili sayfada **Oturum aç**'ı seçin ve kuruluşunuzun Genel Yönetici hesabını kullanarak kimlik doğrulaması yapın. Bu işlem Intune denemenizin mevcut iş veya okul hesabınızla ilişkilendirilmesini sağlar.
@@ -58,7 +59,7 @@ Mobil cihaz yönetimi ekosistemi, işletim sistemi güncelleştirmeleri ve mobil
 
 - [Microsoft Intune'daki yenilikler](whats-new.md). Bu konu, aylık hizmet güncelleştirmesiyle ve örneğin Şirket Portalı uygulaması gibi uygulamalar yayımlandığında haftalık olarak güncelleştirilir.
 
-- [Office 365 yönetim portalı](https://portal.office.com/Admin/Default.aspx) İleti Merkezi'nde ayrıca önemli hizmet güncelleştirmeleri de duyurulur. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz. [Office 365 İleti Merkezi](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates) ile çalışma hakkında bilgi edinin.
+- Önemli hizmet güncelleştirmeleri de duyurulur [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/) ileti Merkezi. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz. [Office 365 İleti Merkezi](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates) ile çalışma hakkında bilgi edinin.
 
     Birkaç faydalı ipucu:
 
@@ -77,7 +78,7 @@ Mobil cihaz yönetimi ekosistemi, işletim sistemi güncelleştirmeleri ve mobil
     - [Intune destek blogu](https://blogs.technet.microsoft.com/intunesupport/)
 
 >[!Note]
->[Office 365 yönetim portalında](https://portal.office.com/Admin/Default.aspx) Intune hizmet durumunu izleyebilirsiniz. Sol bölmede **Hizmet Durumu**’nu seçin. Hizmet durumunu görüntülemek için [Office 365 Yönetici mobil uygulaması](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) da kullanabilirsiniz.
+>Intune hizmet durumunu izleyebilir [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com). Sol bölmede **Hizmet Durumu**’nu seçin. Hizmet durumunu görüntülemek için [Office 365 Yönetici mobil uygulaması](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) da kullanabilirsiniz.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Microsoft’un Intune hizmeti hakkında sağladığı bildirim türleri
 

@@ -9,17 +9,18 @@ ms.date: 02/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a91afc016fe3847488968cbaef08feef8cf4cfc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3af9fbfa5bb1a9c6ebd9ebd0f20a55677c48b755
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238939"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57399056"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Güncelleştirmeler için Intune uyumluluk raporları
 Windows update, Windows 10 cihazlara dağıtmak için Intune kullandığınızda, Intune veya ücretsiz bir çözümü kullanarak güncelleştirme uyumluluğunu ayrıntılarını görüntüleme adlı *güncelleştirme uyumluluğu*, Microsoft Operations Management Suite (OMS) bir parçası olduğu.

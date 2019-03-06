@@ -7,21 +7,22 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/21/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c94fc26543123f0b3cf6a0f08f8089c48d78778b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b4db9845befe7440e615e8deb874971a5b80efdb
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232208"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461184"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobil uygulama yönetimi sorunlarını giderme
 
@@ -37,7 +38,7 @@ Bunlar BT yöneticisi Intune uygulama koruma ilkelerini kullanırken karşılaş
 | -- | -- | -- |
 | İlke, Skype Kurumsal’a uygulanmamış | Azure portalında yapılan cihaz kaydı olmadan uygulama koruma ilkesi, iOS ve Android cihazlardaki Skype Kurumsal uygulaması için uygulanmıyor. | Skype Kurumsal’ın modern kimlik doğrulaması için ayarlanması gerekir.  Skype için modern kimlik doğrulamasını ayarlamak için lütfen [Modern kimlik doğrulaması için kiracınızı etkinleştirme](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) bölümündeki yönergeleri izleyin. |
 | Office uygulama ilkesi uygulanmamış | Uygulama koruma ilkeleri, tüm kullanıcılar için hiçbir [desteklenen Office Uygulamasına](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) uygulanmıyor. | Kullanıcının Intune lisansı olduğunu ve Office uygulamalarının dağıtılmış bir uygulama koruma ilkesi tarafından hedeflendiğini doğrulayın. Yeni dağıtılmış bir uygulama koruma ilkesinin uygulanması 8 saate kadar sürebilir. |
-| Yönetici, uygulama koruma ilkesini Azure portalında yapılandıramıyor | BT yöneticisi, uygulama koruma ilkelerini Azure Portalı’nda yapılandıramıyor. | Azure Portalı’na aşağıdaki kullanıcı rollerinin erişimi vardır: <ul><li>[Office Portalı](https://portal.office.com/)’nda ayarlayabileceğiniz genel yönetici</li><li>[Azure Portalı](https://portal.azure.com/)’nda ayarlayabileceğiniz sahip.</li><li>[Azure Portalı](https://portal.azure.com/)’nda ayarlayabileceğiniz katkıda bulunan.</li></ul> Başvurmak [Intune rol tabanlı yönetim denetimi (RBAC)](role-based-access-control.md) bu rolleri ayarlama konusunda yardım için.|
+| Yönetici, uygulama koruma ilkesini Azure portalında yapılandıramıyor | BT yöneticisi, uygulama koruma ilkelerini Azure Portalı’nda yapılandıramıyor. | Azure Portalı’na aşağıdaki kullanıcı rollerinin erişimi vardır: <ul><li>Nda ayarlayabileceğiniz genel yönetici [Microsoft 365 Yönetim Merkezi](https://admin.microsoft.com/)</li><li>[Azure Portalı](https://portal.azure.com/)’nda ayarlayabileceğiniz sahip.</li><li>[Azure Portalı](https://portal.azure.com/)’nda ayarlayabileceğiniz katkıda bulunan.</li></ul> Başvurmak [Intune rol tabanlı yönetim denetimi (RBAC)](role-based-access-control.md) bu rolleri ayarlama konusunda yardım için.|
 |Uygulama koruma ilkesi raporlarında eksik kullanıcı hesapları var | Yönetim konsolu raporları, uygulama koruma ilkesinin en son dağıtıldığı kullanıcı hesaplarını göstermiyor. | Kullanıcı bir uygulama koruma ilkesiyle henüz hedeflenmişse, bu kullanıcının raporlarda hedeflenen kullanıcı olarak görünmesi 24 saate kadar sürebilir. |
 | İlke değişiklikleri çalışmıyor | Uygulama koruma ilkesinde yapılan değişikliklerin ve güncelleştirmelerin uygulanması 8 saate kadar sürebilir. | Mümkünse, son kullanıcı uygulama oturumunu kapatıp hizmetle eşitlemeyi zorlayarak tekrar oturum açabilir. |
 | Uygulama koruma ilkesi DEP ile çalışmıyor | Uygulama koruma ilkesi Apple DEP cihazlara uygulanmıyor. | Lütfen Kullanıcı Benzeşimi’ni Apple Aygıt Kayıt Programı (DEP) ile kullandığınızdan emin olun. Kullanıcı benzeşimi, DEP altında kullanıcı kimlik doğrulaması gerektiren her uygulama için gereklidir. <br><br>Başvurmak [otomatik olarak Apple aygıt kayıt programı ile iOS cihazlarını kaydetme](device-enrollment-program-enroll-ios.md) iOS DEP kaydı hakkında daha fazla bilgi için.|
@@ -78,7 +79,7 @@ Hata iletisi veya iletişim kutusu | Nedeni | Düzeltme |
 **Uygulama ayarlanmadı**: Bu uygulamayı kullanabilmeniz için ayarlanmamış. Yardım için BT yöneticinize başvurun. | Gerekli uygulama koruma İlkesi uygulama için algılama hatası. |Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
 **Intune Managed Browser hoşgeldiniz**: Bu uygulama, Microsoft Intune tarafından yönetildiğinde en iyi şekilde çalışır. Bu uygulamayı web'de gezinmek için her zaman kullanabilirsiniz ve uygulama Microsoft Intune tarafından yönetildiğinde ek veri koruma özelliklerine erişiminiz olur. | Intune Managed Browser uygulaması için bir gerekli uygulama koruma İlkesi algılanamadı hatası. <br><br>Kullanıcı web’de gezinmek için uygulamayı kullanmaya devam edebilir ancak uygulama Intune tarafından yönetilmez. | Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve Intune Managed Browser uygulamasını hedeflediğinden emin olun.
 **Başarısız oturum**: Şu anda oturumunuzu açamıyoruz. Lütfen daha sonra tekrar deneyin. | Kullanıcı iş veya okul hesabıyla oturum açmayı denedikten sonra MAM hizmetine kaydedilemiyor. | Kullanıcının güvenlik grubuna bir iOS uygulama koruma ilkesi dağıtıldığından ve bu uygulamayı hedeflediğinden emin olun.
-**Hesap ayarlanmadı**: Kuruluşunuz hesabınızı iş veya Okul verilerini ayarlı değil. Yardım için lütfen BT yöneticinizle görüşün. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcının hesabına [Office portalında](https://portal.office.com) bir Intune lisansı atandığından emin olun.
+**Hesap ayarlanmadı**: Kuruluşunuz hesabınızı iş veya Okul verilerini ayarlı değil. Yardım için lütfen BT yöneticinizle görüşün. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcı hesabına atanan bir Intune lisansı olduğundan emin olun [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com).
 **Cihaz uyumlu**: Jailbreak uygulanmış bir cihaz kullandığınızdan bu uygulama kullanılamıyor. Yardım için BT yöneticinize başvurun. | Intune, kullanıcının jailbreak uygulanmış bir cihaz kullandığını algıladı. | Cihazı fabrika ayarlarına sıfırlayın. Apple destek sitesindeki [bu yönergeleri](https://support.apple.com/HT201274) izleyin.
 **Internet bağlantısı gerekli**: Bu uygulamayı kullanabileceğinizi doğrulamak için Internet'e bağlanması gerekir. | Cihaz, İnternet'e bağlı değil. | Cihazı bir WiFi veya Veri ağına bağlayın.
 **Bilinmeyen hata**: Bu uygulamayı yeniden başlatmayı deneyin. Sorun devam ederse yardım için BT yöneticinize başvurun. | Bilinmeyen bir hata oluştu. | Bir süre bekleyin ve yeniden deneyin. Sorun devam ederse, oluşturun bir [destek bileti](get-support.md#create-an-online-support-ticket) Intune ile.
@@ -97,7 +98,7 @@ Hata iletisi veya iletişim kutusu | Nedeni | Düzeltme |
 **Başarısız oturum**: Yeniden oturum açmayı deneyin. Sorun devam ederse yardım için BT yöneticinize başvurun. | Kullanıcının oturum açmayı denediği hesabın kimlik doğrulaması başarısız oldu. | Kullanıcının Intune MAM hizmetine zaten kayıtlı bir iş veya okul hesabıyla oturum açtığından emin olun (Bu uygulamada başarıyla oturum açılan ilk iş veya okul hesabı). <br><br> Uygulamanın verilerini temizleyin. <br><br> Uygulama sürümünün güncel olduğundan emin olun. <br><br> Şirket Portalı sürümünün güncel olduğundan emin olun.
 **Internet bağlantısı gerekli**: Bu uygulamayı kullanabileceğinizi doğrulamak için Internet'e bağlanması gerekir. | Cihaz, İnternet'e bağlı değil. | Cihazı bir WiFi veya Veri ağına bağlayın.
 **Cihazı uyumsuz olarak**: Kök erişim izni verilmiş bir cihaz kullandığınızdan bu uygulama kullanılamaz. Yardım için BT yöneticinize başvurun. | Intune, kullanıcının kök erişim izni verilmiş bir cihaz kullandığını algılandı. | Cihazı fabrika ayarlarına sıfırlayın.
-**Hesap ayarlanmadı**: Bu uygulamanın Microsoft Intune tarafından yönetilmesi gerekiyor, ancak hesabınız ayarlanmış değil. Yardım için BT yöneticinize başvurun. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcının hesabına [Office portalında](https://portal.office.com) bir Intune lisansı atandığından emin olun.
+**Hesap ayarlanmadı**: Bu uygulamanın Microsoft Intune tarafından yönetilmesi gerekiyor, ancak hesabınız ayarlanmış değil. Yardım için BT yöneticinize başvurun. | Kullanıcı hesabının Intune A Direct lisansı yok. | Kullanıcı hesabına atanan bir Intune lisansı olduğundan emin olun [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com).
 **App kaydedilemiyor**: Bu uygulamanın Microsoft Intune tarafından yönetilmesi gerekiyor, ancak Biz bu uygulama şu anda kaydedilemedi. Yardım için BT yöneticinize başvurun. | Uygulama koruma ilkesi gerekli olduğunda uygulama MAM hizmetine otomatik olarak kaydedilemedi. | Uygulamanın verilerini temizleyin. <br><br> Günlükleri Şirket portalı uygulaması ile Intune'a gönderin veya bir destek bileti çıkartın. Daha fazla bilgi için [Intune için destek alma](get-support.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar

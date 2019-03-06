@@ -9,18 +9,19 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101864120bb354bc517f93972e15ffc8f35d6541
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 46b2dbf31d5813a646fc2ea1a97f7ba273c3c6e9
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742576"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394346"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?
 
@@ -31,7 +32,7 @@ Intune ile kullanılan iki tür koşullu erişim vardır: Cihaz tabanlı koşull
 Aşağıdaki bilgiler, Intune mobil *cihaz* uyumluluk özelliklerini ve Intune mobil *uygulama* yönetimi (MAM) özelliklerini nasıl kullanacağınızı anlamanıza yardımcı olur. 
 
 > [!NOTE]
-> Koşullu erişim, Azure Active Directory Premium lisansına eklenmiş olan bir Azure Active Directory özelliğidir. Intune, çözüme mobil cihaz uyumluluğu ve mobil uygulama yönetimi ekleyerek bu özelliği geliştirir. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*.  
+> Koşullu erişim, Azure Active Directory Premium lisansına eklenmiş olan bir Azure Active Directory özelliğidir. Intune, çözüme mobil cihaz uyumluluğu ve mobil uygulama yönetimi ekleyerek bu özelliği geliştirir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır.  
 
 ## <a name="device-based-conditional-access"></a>Cihaz tabanlı koşullu erişim
 

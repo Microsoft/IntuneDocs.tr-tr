@@ -10,6 +10,7 @@ ms.date: 03/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5719d1f662cc644377057b07dd632288a5c16552
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 735c92219222703669ca9b96911872608a59aedf
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238022"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57390389"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM anında iletme sertifikası alma
 

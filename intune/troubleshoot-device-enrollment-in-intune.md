@@ -6,9 +6,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 32f167def5e96061b0d69665c2c5b81a29d03389
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238685"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461371"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
 
@@ -100,7 +101,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 
 1.  MDM Yetkilisinin [uygun şekilde ayarlandığını](mdm-authority-set.md) doğrulayın.
     
-2.  Kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun. Kullanıcının UPN'sinin Office 365 portalındaki Active Directory bilgileriyle eşleştiğini doğrulayabilirsiniz.
+2.  Kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun. Microsoft 365 Yönetim Merkezi'nde Active Directory bilgilerini kullanıcının UPN'sini eşleştiğini doğrulayabilirsiniz.
     UPN Active Directory bilgileriyle eşleşmiyorsa:
 
     1.  Yerel sunucuda DirSync’i kapatın.
@@ -131,7 +132,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Şirket adı özel karakterler içeriyorsa ilke oluşturulamaz veya cihazlar kaydedilemez
 **Sorun:** İlke oluşturamıyor veya cihazları kaydetme.
 
-**Çözüm:** İçinde [Office 365 Yönetim merkezini](https://portal.office.com/), şirket adından özel karakterleri kaldırın ve şirket bilgilerini kaydedin.
+**Çözüm:** İçinde [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/), şirket adından özel karakterleri kaldırın ve şirket bilgilerini kaydedin.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Birden çok doğrulanmış etki alanınız olduğunda oturum açılamaz veya cihazlar kaydedilemez
 **Sorun:** İçin FS'nize ikinci bir doğrulanmış etki alanı eklediğinizde, bu sorun oluşabilir. İkinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir.

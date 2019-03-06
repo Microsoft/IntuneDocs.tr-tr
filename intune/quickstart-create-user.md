@@ -4,6 +4,7 @@ description: Hızlı Başlangıç - Intune'da kullanıcı oluşturma.
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
@@ -12,12 +13,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 982caa46adb29ef1d57ec65ac855adca9cef1883
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834849"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57459994"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Hızlı Başlangıç: Bir kullanıcı oluşturun ve ona bir lisans atayın
 
@@ -46,9 +47,9 @@ Intune cihaz Yönetimi'ne kaydolmak için bir kullanıcı hesabı gerekir.
 
 ## <a name="assign-a-license-to-the-user"></a>Kullanıcıya lisans atama
 
-Bir kullanıcı oluşturduktan sonra, bu kullanıcıya bir Intune lisansı atamak için [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)'nı kullanmanız gerekir. Kendisine bir lisans atanmazsa kullanıcı cihazını Intune'a kaydedemez. 
+Bir kullanıcı oluşturduktan sonra kullanmalısınız [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) o kullanıcıya bir Intune lisansı atamak için. Kendisine bir lisans atanmazsa kullanıcı cihazını Intune'a kaydedemez. 
 
-1. Intune'da oturum açmak için kullandığınız kimlik bilgileriyle [Office 365 portalı](http://go.microsoft.com/fwlink/p/?LinkId=698854)'nda oturum açın.
+1. Oturum [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) ile aynı kimlik bilgilerini Intune'da oturum açma için kullanılır.
 2. **Kullanıcılar** > **Etkin Kullanıcılar**'ı > oluşturduğunuz kullanıcıyı seçin.
 3. **Ürün lisansları**’nın yanında bulunan **Düzenle**’yi seçin.
 4. **Konum** altında kullanıcı için bir konum seçin.
@@ -62,7 +63,7 @@ Yeni etkin Intune kullanıcısı artık bir **Intune** lisansı kullandığını
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme
 
-Artık bu kullanıcıya ihtiyacınız kalmadıysa [Office 365 portalına](http://go.microsoft.com/fwlink/p/?LinkId=698854) gidip sırasıyla şunları seçerek kullanıcıyı silebilirsiniz: **Kullanıcılar** > **Etkin kullanıcılar** > *listeden kullanıcıyı seçin* > **Kullanıcıyı sil** > **Kullanıcıyı sil** > **Değişiklikleri onayla** > **Kapat**.
+Bu kullanıcı artık gerekmiyorsa, giderek kullanıcı silebilir [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) ve **kullanıcılar** > **etkin kullanıcılar**  >  *listeden kullanıcı seçin* > **kullanıcıyı silme** > **kullanıcıyı silme** > **Onayla değişiklikleri** > **Kapat**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

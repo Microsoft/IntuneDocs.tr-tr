@@ -9,18 +9,19 @@ ms.date: 03/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328f196a61f26fa787495e515fb5de3e0d32f7b2
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: e4d0443b100a4a973161ddcbf5e445c4b6136e6f
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231290"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394221"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Intune ile cihazları uzaktan kilitleme
 

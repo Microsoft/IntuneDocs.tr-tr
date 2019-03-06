@@ -37,7 +37,7 @@ Yeni ilerleme çubuğunu [Intune uygulama arabirimindeki yenilikler sayfasında]
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 cihazlarını toplu kaydetme <!-- 747607 -->
 
-Artık, Windows Yapılandırma Tasarımcısı (WCD) kullanarak Windows 10 Creators Update çalıştıran çok sayıda cihazın Azure Active Directory ve Intune’a katılmasını sağlayabilirsiniz. Azure AD kiracınız için [Toplu MDM kaydını](/intune-classic/deploy-use/bulk-enroll-windows) etkinleştirmek için Windows Yapılandırma Tasarımcısı kullanarak cihazların Azure AD kiracınıza katılmasını sağlayan bir sağlama paketi oluşturun ve paketi toplu kaydetmek ve yönetmek istediğiniz şirkete ait cihazlara uygulayın. Paket, cihazlarınıza uygulandıktan sonra cihazlar Azure AD’ye katılır, Intune’a kaydolur ve Azure AD kullanıcılarınızın oturum açmasına hazır hale gelir.  Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan ilkeleri ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
+Artık, Windows Yapılandırma Tasarımcısı (WCD) kullanarak Windows 10 Creators Update çalıştıran çok sayıda cihazın Azure Active Directory ve Intune’a katılmasını sağlayabilirsiniz. Azure AD kiracınız için [Toplu MDM kaydını](/intune-classic/deploy-use/bulk-enroll-windows) etkinleştirmek için Windows Yapılandırma Tasarımcısı kullanarak cihazların Azure AD kiracınıza katılmasını sağlayan bir sağlama paketi oluşturun ve paketi toplu kaydetmek ve yönetmek istediğiniz şirkete ait cihazlara uygulayın. Paket, cihazlarınıza uygulandıktan sonra cihazlar Azure AD’ye katılır, Intune’a kaydolur ve Azure AD kullanıcılarınızın oturum açmasına hazır hale gelir.  Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan ilkeleri ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
 
 ### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure’da Intune yönetici deneyiminin genel önizlemesindeki yenilikler<!--736542-->
 
@@ -73,7 +73,7 @@ Yeni PC dağıtımları gerçekleştirmek istiyorsanız geçiş işleminden sonr
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Yönetim rolleri Azure portalında değiştiriliyor
 
-Klasik Intune portalında (Silverlight) kullanılan mevcut mobil uygulama yönetimi (MAM) yönetim rolleri (Katkıda bulunan, Sahibi ve Salt okunur) yerine Intune Azure portalında yeni rol tabanlı yönetim denetimleri (RBAC) geliyor. Azure portalına geçiş yaptıktan sonra, yöneticilerinizi bu yeni yönetim rollerine yeniden atamanız gerekiyor. RBAC ve yeni roller hakkında daha fazla bilgi için bkz. [Microsoft Intune için rol tabanlı erişim denetimi](/intune/role-based-access-control).
+Mevcut mobil uygulama yönetimi (MAM) yönetim rolleri (Katkıda bulunan, sahibi ve salt okunur) Klasik portalında (Silverlight) yerine tam bir dizi yeni rol tabanlı yönetim denetimi (RBAC) Intune Azure portalında ıntune'da kullanılan Portalı. Azure portalına geçiş yaptıktan sonra, yöneticilerinizi bu yeni yönetim rollerine yeniden atamanız gerekiyor. RBAC ve yeni roller hakkında daha fazla bilgi için bkz. [Microsoft Intune için rol tabanlı erişim denetimi](/intune/role-based-access-control).
 
 ### <a name="whats-coming"></a>Yakında
 
@@ -83,13 +83,13 @@ Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum a�
 
 [Uygulamanın kullanıcı arabirimindeki yenilikler](/intune/whats-new-app-ui) sayfasında önceki oturum açma deneyiminin, yeni kimlik bilgileriyle oturum açma deneyiminin ve yeni başka bir cihazdan yeni oturum açma deneyiminin ekran görüntülerini bulabilirsiniz.
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Değişiklik planı: Intune, Intune İş Ortağı Portalı deneyimini değiştiriyor <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Değişiklik planı: Intune, Intune iş ortağı portalı deneyimini değiştiriyor <!-- 1050016 -->
 
 2017 Mayıs ayı ortalarındaki hizmet güncelleştirmesinden başlayarak, manage.microsoft.com’dan Intune İş Ortağı sayfasını kaldırıyoruz.  
 
 İş ortağı yöneticisiyseniz, artık Intune İş Ortağı sayfasında müşterileriniz adına görüntüleyemeyecek ve işlem yapamayacaksınız; bunun yerine Microsoft’taki diğer iki iş ortağı portalından birinde oturum açmanız gerekecektir.
 
-Hem [Microsoft İş Ortağı Merkezi](https://partnercenter.microsoft.com/) hem de [Microsoft Office 365 İş Ortağı Yönetim Merkezi](https://portal.office.com/), yönettiğiniz müşteri hesaplarında oturum açmanıza olanak tanıyacaktır. İş ortağı olarak ilerlemek için, lütfen müşterilerinizi bu sitelerimizden birini kullanarak yönetin.
+Her iki [Microsoft Partner Center](https://partnercenter.microsoft.com/) ve [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/) , yönettiğiniz müşteri hesaplarında oturum olanak tanıyacaktır. İş ortağı olarak ilerlemek için, lütfen müşterilerinizi bu sitelerimizden birini kullanarak yönetin.
 
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->
@@ -117,11 +117,11 @@ Intune cihaz uyumluluk ilkeleri ile etkinleştirilen Skycure risk değerlendirme
 
 Android için Şirket Portalı uygulamasının kullanıcı arabirimi daha modern görünüm ve daha iyi kullanıcı deneyimi için güncelleştiriliyor. Önemli güncelleştirmeler şunlardır:
 
-- Renkler: Şirket Portalı sekmesinin üstbilgileri BT tarafından tanımlanan marka rengindedir.
-- Uygulamalar: **Uygulamalar** sekmesindeki **Öne Çıkan Uygulamalar** ve **Tüm Uygulamalar** düğmeleri güncelleştirildi.
-- Arama: **Uygulamalar** sekmesinde, **Arama** düğmesi kayan eylem düğmesi şeklinde.
-- Uygulamalarda Gezinme: **Tüm Uygulamalar** görünümü daha kolay gezinme için **Öne Çıkan Uygulamalar**, **Tüm Uygulamalar** ve **Kategoriler** bölümlerini sekmeler halinde gösterir.
-- Destek: **Cihazlarım** ve **BT İletişim** sekmeleri okunabilirliği artırmak için güncelleştirildi.
+- Renkler: Şirket portalı sekmesinin üstbilgileri BT tarafından tanımlanan marka rengindedir.
+- Uygulamalar: İçinde **uygulamaları** sekmesinde **öne çıkan uygulamalar** ve **tüm uygulamalar** düğmeleri güncelleştirildi.
+- Arama: İçinde **uygulamaları** sekmesinde **arama** kayan eylem düğmesi düğmesidir.
+- Uygulamalarda gezinme: **Tüm uygulamalar** görüntüler sekmeler halinde görüntüleniyor **öne çıkan**, **tüm**, ve **kategorileri** daha kolay gezinme için.
+- Destek: **Cihazlarım** ve **BT'ye** sekmeleri okunabilirliği artırmak için güncelleştirildi.
 
 Bu değişiklikler hakkında daha ayrıntılı bilgi için bkz. [Intune son kullanıcı uygulamaları için kullanıcı arabirimi güncelleştirmeleri](/intune/whats-new-app-ui).
 
@@ -198,9 +198,9 @@ MDM sunucusu adresi olarak __manage.microsoft.com__ giren (sorulursa) Windows ve
 Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kılavuzuna](https://material.io/guidelines/material-design/introduction.html) uygun olarak modern bir tasarıma sahip olacak. Bu gelişmiş kullanıcı deneyimi şunları içeriyor olacak:
 
 * __Renkler__: Sekme başlıklarının renkleri özel renk paletinize göre değiştirilebilir.
-* __Arabirim__: Uygulamalar sekmesindeki Öne Çıkan Uygulamalar ve Tüm Uygulamalar düğmeleri güncelleştirildi. Arama düğmesi artık kayan eylem düğmesi şeklinde.
-* __Gezinti__: Tüm Uygulamalar sayfasında daha kolay gezinme için Öne Çıkan Uygulamalar, Tüm Uygulamalar ve Kategoriler sekmeler halinde görüntüleniyor.
-* __Hizmet__: Cihazlarım ve BT'ye Başvur sekmelerinin okunabilirliği geliştirildi.
+* __Arabirimi__: Uygulamalar sekmesindeki öne çıkan uygulamalar ve tüm uygulamalar düğmeleri güncelleştirildi. Arama düğmesi artık kayan eylem düğmesi şeklinde.
+* __Gezinti__: Tüm uygulamaları gösterir sekmeler halinde görüntüleniyor öne çıkan uygulamalar, tüm ve daha kolay gezinme için kategoriler.
+* __Hizmet__: My cihazlar ve BT'ye BAŞVUR sekmelerinin okunabilirliği geliştirildi.
 
 Önce ve sonra görüntülerini [UI güncelleştirmeleri sayfasında](/intune/whats-new-app-ui) bulabilirsiniz.
 

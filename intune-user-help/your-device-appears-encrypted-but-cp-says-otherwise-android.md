@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335012"
+ms.locfileid: "57389475"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android cihazınızı şifreli gibi görünüyor, ancak Şirket Portalı aksini söylüyor
 
@@ -63,16 +63,15 @@ Cihazınız Android 6.0+ sürümüne düşürme seçeneği sunuyorsa, bunu yapı
 
 ### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>Bu sorunu gidermek için güncelleştirilebilir bilinen cihazlar
 
-Aşağıdaki cihazlardan birine sahipseniz cihazınızı Android’in en son sürümüne güncelleştirmediğiniz durumda bu sorunla karşılaşabilirsiniz. Bu cihaz güncelleştirmelerini yüklemek için **Ayarlar** > **Güncelleştirme** bölümüne gidin. 
+Cihazınızı en son Android sürümüne güncelleştirmediyseniz, cihazınızın Git **ayarları** seçin **güncelleştirme**. Güncelleştirilene kadar bu cihazların uyumlu olmayan olarak görünebilir:  
 
-- [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
+- Huawei Honor 8
+- Huawei P9
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Bu sorunu gidermek için şu anda güncelleştirilebilir olmayan bilinen cihazlar
+Aşağıdaki cihazlar, her zaman şifreli görünür ve şirket kaynaklarına erişmek için kullanılamaz. Şirket kaynaklarına erişmek için farklı bir cihaz kullanmanız gerekir.  
 
-Aşağıdaki cihazlarda bu sorun çözülememektedir. Şirket kaynaklarına erişmek için başka bir cihaz kullanmanız gerekebilir. 
-
-- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO cihazları](https://www.oppo.com/en/smartphones)
-- [Vivo cihazları](https://www.vivo.co.in)
-- [Xiaomi Mi akıllı telefonlar](https://xiaomi-mi.com/mi-smartphones/)
+- Huawei Mate 8
+- OPPO cihazları
+- Vivo cihazları
+- Xiaomi Mi smartphones

@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c76e253287f823c4352667205487cce839e14178
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 76f1c113562e70bd819b2519a8b78d5824ef715b
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228944"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460708"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune planınızı uygulama
 
@@ -77,7 +78,7 @@ Intune dağıtımı kullanım örneği senaryolarına ve gereksinimlerine bağl�
 
 ### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Görev 4: Intune ve Office 365 kullanıcı lisansları atama
 
-EMS/Intune ve Office 365 dağıtımı için hedeflediğiniz tüm kullanıcıların kendilerine atanmış bir lisansı olması gerekir. EMS/Intune ve Office 365 lisanslarını, Office 365 Yönetim Merkezi Portalında atayabilirsiniz.
+EMS/Intune ve Office 365 dağıtımı için hedeflediğiniz tüm kullanıcıların kendilerine atanmış bir lisansı olması gerekir. EMS/Intune ve Microsoft 365 Yönetim merkezinde bir Office 365 lisansı atayabilirsiniz.
 
 -   [Intune lisansları atama](licenses-assign.md) hakkında daha fazla bilgi edinin.
 

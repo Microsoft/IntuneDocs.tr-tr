@@ -10,18 +10,19 @@ ms.date: 03/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0b7b149977151fa733bb13d5f60818404466014
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 88f5d7e90adbffea20885aaacc92515807025c2a
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236016"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461456"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
 
@@ -589,7 +590,7 @@ Gerekirse kullanıcıyı diğer rollere de eklemeyi unutmayın. Örneğin, kulla
 
 Ayrıca:
 
-- Kullanıcı hesabınıza bir Intune lisansı atamak için https://portal.office.com adresini kullanın.
+- Kullanıcı hesabınıza bir Intune lisansı atamak için https://admin.microsoft.com adresini kullanın.
 
 - Uygulama kodunu kendinizin değil, istemcinin Azure AD kiracısı etki alanının kimlik doğrulaması için güncelleştirin.
 

@@ -9,6 +9,7 @@ ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: c47f0d55a914714dedaf96f6f7c346b6252e36c6
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57334978"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461337"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
@@ -50,7 +51,7 @@ Intune kullanılabilir için Yardım ve destek deneyimi [Microsoft 365 cihaz yö
 ![Intune dikey pencereleri](./media/get-support/intune-blades.png)
 
 
-Bu yeni deneyim görünen deneyimine benzer [Microsoft 365 Yönetim merkezini](https://portal.office.com/AdminPortal/Home)ve değiştirir [önceki Yardım ve destek deneyimi](#azure-help-+-support-experience). 
+Bu yeni deneyim görünen deneyimine benzer [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/)ve değiştirir [önceki Yardım ve destek deneyimi](#azure-help-+-support-experience). 
 
 Yardım ve Destek erişmek için aşağıdakileri kullanın:  
 - **Cihaz Yönetimi Panosu:**
@@ -117,7 +118,7 @@ Aşağıdaki bilgiler, Azure Yardım + sol gezinti bölmesinde kullandığınız
 
 ### <a name="create-an-online-support-ticket"></a>Çevrimiçi destek bileti oluşturma
 
-1. Intune yönetici kimlik bilgilerinizle Azure portalında (<https://portal.azure.com>) oturum açın ve **?** işaretini seçin simgesini seçin ve daha sonra **Yardım + destek**’i seçerek [Azure Yardım + destek](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
+1. Intune yönetici kimlik bilgilerinizle Azure portalında (<https://portal.azure.com>) oturum açın ve **?** işaretini seçin simgesini seçin ve daha sonra **Yardım + destek**’i seçerek [Azure Yardım + destek](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
 
    ![Soru işareti bağlantısının Yardım + destek bağlantısının vurgulandığı görüntü](./media/azure-get-support.png)
 
@@ -175,12 +176,12 @@ Aşağıdaki bilgiler, Azure Yardım + sol gezinti bölmesinde kullandığınız
 6. Choose **Create** to submit your support request.
 -->
 >[!IMPORTANT]
->Faturalama veya abonelikle ilgili bir sorunuz varsa [Office Yönetim Merkezi](https://portal.office.com/Support/SupportEntry.aspx)’den yardım almak için bir hizmet talebi açabilirsiniz.
+>Bir faturalama veya abonelikle sorunuz varsa, destek alma bir servis talebi açabilir [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### <a name="view-support-requests"></a>Destek isteklerini görüntüleme
 Bir destek isteğini Azure portalının içinden görüntüleyebilirsiniz. Bunu yapmak için:
 
-1. Intune yönetici kimlik bilgilerinizle Azure'da (<https://portal.azure.com>) oturum açın, **?** işaretini seçin simgesini seçin ve daha sonra **Yardım + destek**’i seçerek [Azure Yardım + destek](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
+1. Intune yönetici kimlik bilgilerinizle Azure'da (<https://portal.azure.com>) oturum açın, **?** işaretini seçin simgesini seçin ve daha sonra **Yardım + destek**’i seçerek [Azure Yardım + destek](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
 
 2. **Yardım + destek** sayfasında **Son destek istekleri**'nin listesini görüntüleyebilir ve bunları ek ayrıntılarını görüntülemek üzere seçebilirsiniz.
 

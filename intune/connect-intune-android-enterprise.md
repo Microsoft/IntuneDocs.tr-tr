@@ -10,6 +10,7 @@ ms.date: 6/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f866e23eb0aa1c9bc6ec1b741e288d313691b999
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b461540de40f7a303c6fc68628ff678302e2f5a9
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233815"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57392048"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Yönetilen Google Play hesabınıza Intune hesabınıza bağlanın
 

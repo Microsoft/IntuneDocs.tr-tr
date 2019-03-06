@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9963e482f0f6348a65138cbacecd779fbaa07ae6
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238192"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57391152"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot (Önizleme) kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.

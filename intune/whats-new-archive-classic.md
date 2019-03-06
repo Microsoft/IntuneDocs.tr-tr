@@ -6,9 +6,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 06/08/2017
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56dcf0bb9c35bb12198537e6fdd1d2f72e3cfbb
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 32bee8ea873c728741deac1ef2adfd57bd9bf612
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238872"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461286"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Klasik Intune portalındaki yenilikler - önceki aylar
 
@@ -120,7 +121,7 @@ Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum a�
 
 İş ortağı yöneticisiyseniz, artık Intune İş Ortağı sayfasında müşterileriniz adına görüntüleyemeyecek ve işlem yapamayacaksınız; bunun yerine Microsoft’taki diğer iki iş ortağı portalından birinde oturum açmanız gerekecektir.
 
-Hem [Microsoft İş Ortağı Merkezi](https://partnercenter.microsoft.com/) hem de [Microsoft Office 365 İş Ortağı Yönetim Merkezi](https://portal.office.com/), yönettiğiniz müşteri hesaplarında oturum açmanıza olanak tanıyacaktır. İş ortağı olarak ilerlemek için, lütfen müşterilerinizi bu sitelerimizden birini kullanarak yönetin.
+Her iki [Microsoft Partner Center](https://partnercenter.microsoft.com/) ve [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/) , yönettiğiniz müşteri hesaplarında oturum açmanıza olanak tanıyacaktır. İş ortağı olarak ilerlemek için, lütfen müşterilerinizi bu sitelerimizden birini kullanarak yönetin.
 
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->

@@ -9,17 +9,18 @@ ms.date: 02/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab1672b8ffc212891ac5678ac0c0197d686a89fc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4ce63f836c006c44e88f939c29f3d9648acc045e
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229930"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57400373"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10 ve üzeri cihaz ayarları ıntune'da bilgi noktası olarak çalıştırmak için
 

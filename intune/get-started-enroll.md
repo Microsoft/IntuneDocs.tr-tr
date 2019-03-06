@@ -10,6 +10,7 @@ ms.date: 10/31/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 376d00a03feb78b4e66b3f8a4ed15567d3bc7976
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 79ac078eb9e9b80c39605354f5450d09a4e17579
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230287"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57393269"
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Kullanıcının iOS cihazı kaydetme deneyimini anlama
 

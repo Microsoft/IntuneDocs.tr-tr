@@ -10,18 +10,19 @@ ms.date: 01/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ab396092-907a-44b7-a157-aabee62176a9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4203f559fc9c5f66a9b9317040c0123aecb1940
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3b0aceac9cef968222ee4f183eed87e2ac0b5849
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237010"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57392010"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Bir macOS cihazdan tüm verileri silme
 

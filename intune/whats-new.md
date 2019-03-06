@@ -10,6 +10,7 @@ ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a6f40ba7ea5e229a4c4d3f25d182d24b2a0a812
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: e035166200f1112898e4b2fcf2f8618e2f1cc060
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335182"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461524"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune’daki haftalık yenilikleri öğrenin. Yaklaşan değişiklikler, [önemli bildirimler](#notices) ve [geçmiş yayınlar](whats-new-archive.md) hakkında bilgiler de alabilirsiniz. 
+Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz [yaklaşan değişiklikleri](in-development.md), [önemli bildirimler](#notices)ve hakkında bilgi [eski sürümler](whats-new-archive.md). 
 
 > [!Note]
 > Bazı özelliklerin piyasaya çıkması birkaç haftayı bulabilir ve tüm özellikler ilk hafta bütün müşterilerimize sunulmamış olabilir.
@@ -244,6 +245,8 @@ Aşağıdaki ayar Intune konsolunda görünür, ancak yapılandırıldığında,
 
 > [!NOTE]
 > Erişim için Kurumsal kimlikleri yönetmek için Intune uygulama koruma ilkeleri kullanıyorsanız değil etkinleştirmeyi düşünebilirsiniz **Biyometri gerektiren**. Daha fazla bilgi için **erişim için Kurumsal kimlik bilgilerini gerektir** için [iOS erişim ayarlarını](app-protection-policy-settings-ios.md#access-requirements) ve [Android erişim ayarları](app-protection-policy-settings-android.md#access-requirements).
+
+Daha fazla bilgi için [Microsoft Outlook yapılandırma ayarlarını](app-configuration-policies-outlook.md). 
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Android Kurumsal uygulamaları Sil <!-- 1352553 -->
 Yönetilen Google Play uygulamaları Microsoft Intune silebilirsiniz. Yönetilen Google Play uygulama silmek için Azure portal ve select Intune açın **istemci uygulamaları** > **uygulamaları**. Uygulama listesinden yönetilen Google Play uygulaması'nın sağındaki üç nokta (...) seçin ve ardından **Sil** görüntülenen listeden. Uygulama listesinden bir yönetilen Google Play uygulaması sildiğinizde, yönetilen Google Play uygulaması otomatik olarak onaylanmadı.
@@ -552,7 +555,7 @@ Intune Şirket portalı DEP kaydı sırasında önceden sağlamak için Volume P
 Intune macOS cihazları için Apple School Manager hesabı cihaz kayıt programı kullanarak destekler.  Daha fazla bilgi için [Apple School Manager ile macOS cihazlara veya cihaz kayıt programı otomatik olarak kaydetme](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Yeni Intune cihaz Aboneliği SKU <!--3312071-->
-Kuruluşlarda cihaz yönetim maliyetini düşürmeye yardımcı olmak için yeni, cihaz tabanlı bir abonelik SKU’su kullanıma sunulmuştur. Bu Intune cihaz SKU’su cihaz başına aylık olarak lisanslandırılır. Fiyat ise lisanslama programına göre değişir. Office Yönetim Portalı aracılığıyla doğrudan ve aracılığıyla kullanılabilir [Kurumsal Anlaşma](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA) [Microsoft Products and Services sözleşmesi](https://www.microsoft.com/licensing/mpsa/default) (MPSA) [Microsoft açık anlaşmaları ](https://partner.microsoft.com/licensing/licensing-agreements), ve [bulut çözümü sağlayıcısı](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
+Kuruluşlarda cihaz yönetim maliyetini düşürmeye yardımcı olmak için yeni, cihaz tabanlı bir abonelik SKU’su kullanıma sunulmuştur. Bu Intune cihaz SKU’su cihaz başına aylık olarak lisanslandırılır. Fiyat ise lisanslama programına göre değişir. Microsoft 365 Yönetim Merkezi aracılığıyla doğrudan ve aracılığıyla kullanılabilir [Kurumsal Anlaşma](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA) [Microsoft Products and Services sözleşmesi](https://www.microsoft.com/licensing/mpsa/default) (MPSA) [Microsoft Open Anlaşmaları](https://partner.microsoft.com/licensing/licensing-agreements), ve [bulut çözümü sağlayıcısı](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
 
 ### <a name="device-management"></a>Cihaz yönetimi
 

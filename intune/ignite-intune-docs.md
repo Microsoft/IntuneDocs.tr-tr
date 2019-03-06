@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd1651fa7228dc211636a80d0b27340d13bc13db
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 72848fcbb7cb729613170329257d3dfabfc287e2
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233874"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57390040"
 ---
 # <a name="microsoft-intune-documentation-40ignite-2018-special-edition41"></a>Microsoft Intune belgeleri &#40;Ignite 2018 özel sürümü&#41;
 Microsoft Ignite 2018'e hoş geldiniz! Bize görmeye geldiğiniz için mutluyuz. Burada Microsoft Ignite 2018'deyken sizin için topladığımız Intune kaynaklarından bazılarına bir göz atın.

@@ -7,9 +7,10 @@ ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb556c10a0f30862df819402bb928b84094da6f4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: e4bbb6a09d9f81c5e5309e3ef04a63c8165a1f23
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230933"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461201"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune kullanarak yönetilmeyen cihazlarda veri sızıntılarını önleme
 
