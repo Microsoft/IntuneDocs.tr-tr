@@ -10,6 +10,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
@@ -18,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 455d3fa3b26ae7b18eb195019bc89100714946b9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850786"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57395975"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Öğretici: Intune'da Windows cihazları kaydetmeye AutoPilot'ı kullanın
 Windows Autopilot, cihaz kaydını basitleştirir. Microsoft Intune ve Autopilot ile özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. 
