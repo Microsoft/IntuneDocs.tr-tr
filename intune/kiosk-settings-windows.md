@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ce63f836c006c44e88f939c29f3d9648acc045e
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: ed33ed58141be9463d9f0ce885eb5ccb9951effb
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57400373"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528318"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10 ve üzeri cihaz ayarları ıntune'da bilgi noktası olarak çalıştırmak için
 
@@ -104,7 +104,7 @@ Yalnızca bir uygulama cihazda çalışır.
 
 ## <a name="multi-app-kiosks"></a>Çoklu uygulama bilgi noktaları
 
-Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca kullanıcıların açabildiği uygulamalardır.
+Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca kullanıcıların açabildiği uygulamalardır. Bir uygulamanın başka bir uygulama üzerinde bir bağımlılık varsa, izin verilen uygulamalar listesinde eklenmelidir. Örneğin, hem "C:\Program Files\internet explorer\iexplore.exe" ve "C:\Program Files (x86) \Internet" izin için Internet Explorer 64-bit Internet Explorer 32-bit üzerinde bağımlılığı vardır. 
 
 - **Bilgi noktası modu**: Seçin **çoklu uygulama bilgi noktası**.
 

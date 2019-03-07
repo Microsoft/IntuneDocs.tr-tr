@@ -3,8 +3,8 @@ title: Öğretici - Intune ile yönetilen cihazlarda Exchange Online e-postalar�
 titlesuffix: Microsoft Intune
 description: iOS Intune uyumluluk ilkeleri ve Azure Active Directory koşullu erişim ile yönetilen cihazlar ve Outlook uygulamasını gerektirerek Exchange Online’ın güvenliğini sağlamayı öğrenin.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2018
 ms.topic: tutorial
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d748cc1b9549dfb29d38388a8279cacd8d471b3
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57396650"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528216"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Öğretici: Yönetilen cihazlarda Exchange Online e-postaları koruma
 iOS cihazların yalnızca Intune tarafından yönetildiğinde ve onaylı bir e-posta uygulaması kullandığında Exchange Online’a erişebilmesini sağlamak için koşullu erişim ile cihaz uyumluluk ilkelerini kullanma hakkında bilgi edinin. 
