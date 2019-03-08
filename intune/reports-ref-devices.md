@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50e4a03061e7eaf8b59b3435f57dfd89b329bd89
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: fe16111095051c1fddb4b87d5b4f815ae2798e92
+ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57394941"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57566378"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 

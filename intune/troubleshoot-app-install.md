@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808c5e5c27c7f0ff5c22a0ddc99374da8bfd44bc
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
+ms.sourcegitcommit: 6da78a3c07e9ad9c72ff532867cde754e9deca00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57461490"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57577855"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Uygulama yükleme sorunlarını giderme
 
@@ -132,6 +132,7 @@ Aşağıdaki hata iletileri ve açıklamaları, Android ve iOS yükleme hatalar�
 | Sistemi uygulamaları MDM sağlayıcınız ile (-2016330858) yükleyemezsiniz. | İOS işletim sistemi tarafından yüklenmiş uygulamaları yükleme, desteklenen bir senaryo değildir. |
 | Cihaz kayıp modu (-2016330857) olduğunda uygulama yükleyemezsiniz. | Kayıp modu, cihazın tüm kullanımı engellenir.   Uygulamaları yüklemek için kayıp modu devre dışı bırakın. |
 | Cihaz bilgi noktası modu (-2016330856) olduğunda uygulama yükleyemezsiniz. | Bu cihaz, uygulama yüklemek için bir dışlama grup için bilgi noktası modu yapılandırma ilkesi için eklemeyi deneyin. |
+| 32 bit uygulamaların bu cihaza (-2016330852) yükleyemezsiniz. | Cihaz 32-bit uygulamaları desteklemez. Uygulamasının 64 bit sürümü dağıtmayı deneyin. |
 | Kullanıcı App Store (-2016330855) oturum açmanız gerekir. | Kullanıcı, uygulamanın cihaza yüklenmesinden önce App Store için oturum açması gerekiyor. |
 | Bilinmeyen bir sorun oluştu. Lütfen yeniden deneyin (-2016330854). | Uygulama yüklemesi, bilinmeyen bir nedenden dolayı başarısız oldu.   Daha sonra tekrar deneyin. |
 | Uygulama yüklemesi başarısız oldu. Intune cihaz eşitlemeler (-2016330853) yeniden deneyecek. | Uygulama yüklemesi, bir cihaz hatasıyla karşılaştı. Uygulamayı yeniden yüklemeyi denemek için cihazı eşitleyebilir. |

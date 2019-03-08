@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ab45a65fb9c52a48472c7efc3b6bdc7cead1f6e
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390699"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57566514"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -116,7 +116,7 @@ Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek
 Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
 
 > [!NOTE]
-> Cihazları, bir VPP belirteci için yeterli Şirket portalı lisansları varsa ya da belirtecin süresinin dolması halinde engellenir. Intune, bir uyarı görüntülenir lisansları veya whne bir belirteçtir dolmak üzere çalışan düşük.
+> Cihazları, bir VPP belirteci için yeterli Şirket portalı lisansları varsa ya da belirtecin süresinin dolması halinde engellenir. Intune, bir uyarı görüntülenir, bir belirteç süresi dolmak üzere olduğunda veya lisans düşük çalışıyor.
  
 
 1. Azure portalında Intune’da, **Cihaz kaydı** > **Apple kaydı** > **Kayıt programı belirteçleri**’ni seçin.
@@ -151,6 +151,8 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
 7. **Şirket Portalı’nı VPP ile yükle** seçeneği için bir belirteç seçtiyseniz Kurulum Yardımcısı tamamlandıktan hemen sonra cihazı Tekli Uygulama Moduna (yani Şirket Portalı uygulaması için) kilitleme imkanınız vardır. Bunun için **Kimlik doğrulaması tamamlanana kadar Şirket Portalı’nı Tekli Uygulama Modunda çalıştır** ayarını **Evet** olarak ayarlayın. Cihazı kullanmak için kullanıcının önce Şirket Portalı’nda oturum açarak kimliğini doğrulaması gerekir.
     Bu özellik yalnızca iOS 11.3.1 ve üzerinde desteklenir.
+
+   ![Tek uygulama modu ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. **Cihaz Yönetim Ayarları**’nı seçin ve bu profili kullanan cihazların denetlenmesini isteyip istemediğinizi seçin.
 
