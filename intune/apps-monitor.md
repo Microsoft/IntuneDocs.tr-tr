@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98ae13166d4eb6796d076bfd1dd3bbf71183f480
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 675409bfbd482ec9935db511e569d8bc174b9a30
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390245"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682666"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -51,7 +51,7 @@ Uygulama bölmesinde, ortamınızdaki bir uygulamanın durumu hakkındaki ayrın
 |------------------------|------------------------------------------------------------------|
 | **Yayımcı**          | Uygulamanın yayımcısı.                                            |
 | **İşletim Sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
-| **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat.                         |
+| **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat. <b>**Not**: Bu tarih değeri, bir BT yöneticisi uygulama meta verileri, uygulama kategorisi veya uygulama açıklaması değiştirme gibi değiştiğinde güncelleştirilir.                        |
 | **Atanan**           | Uygulamanın atanıp atanmadığı (**Evet** veya **Hayır**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Cihaz ve kullanıcı durum grafikleri

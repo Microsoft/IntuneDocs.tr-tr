@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: befc07fe1c5d4c25bc082168045acacd353e4654
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 0aff39eeb8a825c4161ee92d798dc817d5928995
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57397303"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682615"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook yapılandırma ayarları 
 
@@ -36,5 +36,5 @@ Bir yapılandırma İlkesi Intune'a eklenirken Microsoft Outlook iOS ve Android 
 Outlook hesabı kurulum bilgilerini ve iOS ve Android cihazlarını Microsoft Intune yordamsal adımlar için bkz: [iOS ve Android uygulama yapılandırma ayarları için Outlook dağıtma](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Intune’da e-posta ayarlarını yapılandırma](email-settings-configure.md)
 
+- Daha fazla bilgi için [Intune için uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1deb8b71e84ec167db8fb0b9963f4435a40efaf4
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 7aa1901a1b9159c2e8ab7398b70f5693708f0657
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57391096"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682683"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -117,7 +117,11 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 1.  **Uygulama ekle** bölmesinde, uygulamanın yükleme ve kaldırma komutlarını yapılandırmak için **Program**'ı seçin.
 2.  Uygulamayı yüklemek için yükleme komut satırının tamamını ekleyin. 
 
-    Örneğin, uygulama dosyanızın adı **MyApp123** ise şunu ekleyin: `msiexec /i “MyApp123.msi”`
+    Örneğin, app filename ise **MyApp123**, aşağıdakileri ekleyin:<br>
+    `msiexec /i “MyApp123.msi”`<p>
+    Ve uygulama `ApplicationName.exe`, komut tarafından paket tarafından desteklenen komut argruments (anahtarlar) ve ardından uygulama adı olur. Örneğin:<br>
+    ' ApplicationName.exe / oldukça '<br>
+    Yukarıdaki komutta `ApplicaitonName.exe` paketini destekler `/quite` argrument komutu.<p> Uygulama paketi tarafından desteklenen belirli agruments için uygulama satıcınıza başvurun.
 
 3.  Uygulamanın GUID'si temelinde uygulamayı kaldırmak için kaldırma komut satırının tamamını ekleyin. 
 

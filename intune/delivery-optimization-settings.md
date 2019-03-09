@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b9480e6eab21ace05456bd74e89d495517a8356
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: e6e90828da8c209b534b830af7fe522b254374bf
+ms.sourcegitcommit: 29d754c2b67aa2d8f4fb68343988c3bb05d5dcec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57566531"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57695288"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune için teslim iyileştirme ayarları
 
@@ -65,6 +65,8 @@ Bu ayarları kullanmak için Intune'u yapılandırma için bkz: [teslim güncell
 |[(%) Karşıya yüklemek için gerekli en düşük pil düzeyi](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)      | 1709        | Bir cihaz eşlere verileri yüklemek için gereken en düşük pil düzeyi olan bir yüzdesi olarak belirtin. Pil düzeyi için belirtilen değer düşerse, tüm etkin karşıya yüklemeler otomatik olarak duraklatır.   <br><br>**Varsayılan**:  *Hiçbir değer yapılandırılır*  <br><br>**Önerilen**:  40%   <br><br>CSP İlkesi: [DOMinBatteryPercentageAllowedToUpload](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominbatterypercentageallowedtoupload) <br><br>        |
 |[Önbellek sürücüsü değiştirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#modify-cache-drive)        | 1607        | Sürücüyü belirtin, teslim iyileştirme için önbelleğini kullanır. Bir ortam değişkeni, sürücü harfini ya da tam yolu kullanabilirsiniz.  <br><br>**Varsayılan**: % SYSTEMDRIVE % <br><br>CSP İlkesi:  [DOModifyCacheDrive](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domodifycachedrive) <br><br>        |
 | [En büyük önbellek yaşı (gün cinsinden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#max-cache-age)    | 1511         | Uzun her dosya başarıyla teslim iyileştirme önbelleğinde bir cihazdaki dosyayı tutulur İndirildikten sonra nasıl için belirtin.   <br><br>Intune ile günde önbellek yaşını yapılandırın. Tanımladığınız gün sayısını nasıl Windows bu Bu ayar tanımlar olduğu saniye cinsinden geçerli sayıya dönüştürülür. Örneğin, bir Intune yapılandırma 3 gün 259200 saniyedir (3 gün) cihaza dönüştürülür.  <br><br>**Varsayılan**:   *Hiçbir değer yapılandırılır*     <br><br>**Önerilen**: 7   <br><br>CSP İlkesi: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
+| En büyük önbellek boyutu türü  | *Ayrıntılarına bakın*    | Bir cihazda teslim iyileştirme tarafından kullanılan disk alanı miktarını yönetmek nasıl seçin. Yapılandırılmadığında, önbellek boyutu kullanılabilir boş disk alanı % 20 oranında varsayılan olarak.  <br><ul><li>**Yapılandırılmamış** (varsayılan)</li><br><li>**Mutlak** – belirtin [mutlak en büyük önbellek boyutu (GB cinsinden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#absolute-max-cache-size) yapılandırma en fazla disk alanı bir cihaz için teslim iyileştirme kullanabilirsiniz. Cihaz üzerinde disk alanı yetersiz olduğunda teslim iyileştirme önbelleği temizlemek olsa da 0 (sıfır) olarak ayarlandığında, önbellek boyutu, sınırsızdır. <br><br>Windows 1607 gerektirir<br><br> CSP İlkesi: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**Yüzde** – belirtin [en büyük önbellek boyutu (%)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#max-cache-size) yapılandırma en fazla disk alanı bir cihaz için teslim iyileştirme kullanabilirsiniz. Kullanılabilir disk alanı olan yüzdesidir ve teslim iyileştirme sürekli kullanılabilir disk alanı değerlendirir ve en yüksek önbellek boyutunu kümesi yüzdesi altında tutmak için önbellek temizler. <br><br>Windows 1511 gerektirir<br><br>CSP İlkesi: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
+| [VPN eşler arasında önbelleğe alma](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | Seçin **etkin** VPN kullanarak etki alanı ağına bağlıyken eş önbelleğe alma katılmak için bir cihaz yapılandırma. Etkin cihazlar, indirin veya diğer etki alanı ağ cihazları, VPN veya şirket etki alanı ağı yükleyin.  <br><br>**Varsayılan**: Yapılandırılmadı  <br><br>CSP İlkesi: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
