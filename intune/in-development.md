@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42200c474b964e6c6bc9610c3e90689c5811a2ee
-ms.sourcegitcommit: 6da78a3c07e9ad9c72ff532867cde754e9deca00
+ms.openlocfilehash: 9c377a8558b1f318b4ddad735b6368a291e34516
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57577838"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756828"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>Microsoft Intune - Mart 2019 geliştirme
 
@@ -35,6 +35,8 @@ ms.locfileid: "57577838"
 
 > [!Note]
 > Bu öğeler, gelecekteki bir sürümde sunulacak Intune özellikleri hakkında daha fazla geçerli beklentileri Microsoft'un yansıtır. Tarih ve tek tek özellikler değişebilir. Geliştirme tüm öğeler, bu sayfada bir özellik açıklaması içerir.
+
+**RSS akışı**: Bu sayfa aşağıdaki URL'yi kullanarak akış okuyucuya yapıştırarak güncelleştirildiğinde bildirim alın: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
 
 
 <!--
@@ -82,7 +84,7 @@ Kullanıcıların görmesi Windows güncelleştirme bildirimleri yapılandırmak
 - Yönetim profili cihaza yüklemek üzere ayarlar uygulamasını açın.
 - Şirket portalı uygulamasının kaydı döndürür.  
 
-Bu değişikliklerin nasıl hazırlama hakkında daha fazla bilgi için [Microsoft Tech Community gönderiye] bakın (https://techcommunity.microsoft.com/]. Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/intune/ios-enroll). Bu docs değişiklikler, Apple iOS sürüm 12.2 yayımlandıktan sonra canlı olacaktır. 
+Bu değişikliklerin nasıl hazırlama hakkında daha fazla bilgi için bkz. [Microsoft Tech Community post](https://techcommunity.microsoft.com/). Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/intune/ios-enroll). Bu docs değişiklikler, Apple iOS sürüm 12.2 yayımlandıktan sonra canlı olacaktır. 
 
 ### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Kiracı durumu sayfasında ek bağlayıcı desteği <!-- 3617202     -->
 Kiracı durumu sayfası dahil olmak üzere, ek bağlayıcıları için durum bilgilerini görüntüler *Windows Defender Gelişmiş tehdit koruması* (ATP) ve diğer Mobile Threat Defense bağlayıcıları.
@@ -108,12 +110,10 @@ Yeni bir seçenek ekliyoruz **denetim günlükleri** dikey penceresinde her dene
 ### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244----"></a>Oluşturma ve Zebra Android cihazlarda ıntune cihaz yapılandırma profillerini kullanma <!-- 3895244  -->
 Intune, Android Zebra cihazların yapılandırılmasını destekler. Özellikle, sizin için mümkün olacaktır: 
 
-- Bir cihaz yapılandırma profili oluşturma ve ayarları OEMConfig kullanarak kurumsal Zebra Android cihazlar için geçerlidir (**cihaz Yapılandırması** > **profilleri**  >  **Profil oluşturma** > **Android Kurumsal** platform için).
 - Bir cihaz yapılandırma profili oluşturma ve ayarlar StageNow tarafından oluşturulan Mobility Uzantıları (MX) profilleri kullanarak Zebra Android cihazları için geçerlidir (**cihaz Yapılandırması** > **profilleri**  >  **Profili oluşturma** > **Android** platform için).
 
 Uygulama hedefi:  
 - Android
-- Android Kurumsal
 
 <!-- 1901 start -->
 

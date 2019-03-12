@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a566d0630836e8cead8cb369d486374ff4583bfa
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 13010655cef307de442896fbc1aed9c666653b92
+ms.sourcegitcommit: f97e03074509ea9ef4d9007fae2644429a060c1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57461065"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57787143"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Şirketinizdeki kullanıcılara yardımcı olmak için sorun giderme portalını kullanma
 
@@ -70,176 +70,180 @@ Kullanıcı bilgilerini gözden geçirmek için **Sorun Giderme** bölmesini kul
 | 4.   | Kullanıcı bilgileri  | Bölmede gözden geçirmek istediğiniz ayrıntıları seçmek için listeyi kullanın. <br>Şunları seçebilirsiniz: <ul><li>İstemci uygulamaları<li>Uyumluluk ilkeleri<li> Yapılandırma ilkeleri<li>Uygulama koruma ilkeleri <li>Kayıt kısıtlamaları</ul>      |
 | 5.   | Grup üyeliği  | Seçili kullanıcının üyesi olduğu geçerli grupları gösterir.       |
 
-## <a name="client-apps-reference"></a>İstemci uygulama başvurusu
+<!-- this section needs to be updated
 
-Cihaz çalıştıran uygulamalar
-- Intune ve Azure Active Directory (AD) tarafından yönetiliyor 
-- Intune ve Azure Active Directory (AD) tarafından yönetilen kullanıcılara ait
+## Client apps reference
 
-### <a name="properties"></a>Özellikler
+The apps that are running devices
+- managed by Intune and Azure Active Directory (AD) 
+- owned by users managed by Intune and Azure Active Directory (AD).
 
-İstemci uygulamaların özellikleri.
+### Properties
 
-| Özellik      | Açıklama                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+The properties of client apps.
+
+| Property      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name          | Uygulamanın adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Type          | Her uygulama için bir atama türü seçebilirsiniz.  <br> **Kullanılabilir** Kullanıcılar Şirket Portalı’ndan veya web sitesinden uygulamayı yükler.  <br> **Uygulanamaz** - Uygulama yüklenmez veya Şirket Portalı’nda gösterilmez. <br> **Kaldırma** - Uygulama, seçilen gruplardaki cihazlardan kaldırılır.  <br> **Kayıtlı veya kayıtsız kullanılabilir** - Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. |
-| Son değiştirme | Cihaz türünün adı.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Name          | The name of the application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| OS            | The operating system installed on the device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type          | You can choose an assignment type for each app.  <br> **Available** - Users install the app from the Company Portal app or website.  <br> **Not Applicable** - The app is not installed or shown in the Company Portal. <br> **Uninstall** - The app is uninstalled from devices in the selected groups.  <br> **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. |
+| Last Modified | The name of the type of device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>Cihazlar
+### Devices
 
-Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Özellik           | Açıklama                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Cihaz adı        | Cihaz türünün adı.                                                                                                     |
-| Tarafından yönetilen         | İlkenin değiştirildiği zaman damgası.                                                                                              |
-| Azure AD katılım türü | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Sahibi          | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
-| Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
-| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Uygulama yükleme | Söz konusu cihazda başarılı veya başarısız bir yükleme olup olmadığını gösterir. |
-| İşletim Sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
-| İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
-| Son iade      | Cihaz türünün adı.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| App install | Denotes whether an app install failure or success has occurred on the individual device. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-status"></a>Uygulama koruma durumu
+### App protection status
 
-Enterprise Mobility Solution (EMS) teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Özellik    | Açıklama                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Durum      | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**). |
-| Uygulama adı    | Uygulamanın adı                                                           |
-| Cihaz adı | Cihaz türünün adı.                                                       |
-| Cihaz türü | Cihaz türünün adı.                                                       |
-| İlkeler    | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**). |
-| Son eşitleme   | Cihazın Intune ile son eşitlendiği zaman damgası.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="app-protection-policies-reference"></a>Uygulama koruma ilkeleri başvurusu
+## App protection policies reference
 
-Bir uygulama koruma ilkesi, EMS teknolojileriyle tümleşen mobil uygulamalar tarafından kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin koruması için bir taban çizgi sağlar. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-### <a name="properties"></a>Özellikler
+### Properties
 
-Tabloda, Intune ile yönetilen cihazlar için uygulama koruma ilkeleri durumu özetlenmiştir.
+The table summarizes app protection policies status for devices managed by Intune.
 
-| Özellik    | Açıklama                                                                                                                                |
+| Property    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Ad        | Uygulamanın adı.                                                                                                        |
-| Dağıtma    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Platform    | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
-| Kayıt  | Cihaz türünün adı.                                                                                                     |
-| Son güncelleştirme | İlkenin değiştirildiği zaman damgası.                                                                                              |
+| Name        | The name of the application.                                                                                                        |
+| Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Platform    | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Enrollment  | The name of the type of device.                                                                                                     |
+| Last Update | The timestamp the policy was modified.                                                                                              |
 
-### <a name="devices"></a>Cihazlar
+### Devices
 
-Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Özellik           | Metin                                                                                                                                |
+| Property           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Cihaz adı        | Cihaz türünün adı.                                                                                                     |
-| Tarafından yönetilen         | İlkenin değiştirildiği zaman damgası.                                                                                              |
-| Azure AD katılım türü | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Sahibi          | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
-| Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
-| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| İşletim Sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
-| İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
-| Son İade      | Cihaz türünün adı.                                                                                                     |
+| Device Name        | The name of the type of device.                                                                                                     |
+| Managed By         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last Check in      | The name of the type of device.                                                                                                     |
 
-## <a name="compliance-policies-reference"></a>Uyumluluk ilkeleri başvurusu
+## Compliance policies reference
 
-Şirket uygulamalarına ve verilerine erişmek için kullanılan cihazların, cihaza erişim için PIN kullanma ve cihazda depolanan verileri şifreleme gibi belirli kurallara uyduğundan emin olmanızı sağlar.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
-### <a name="properties"></a>Özellikler
+### Properties
 
-Uyumluluk ilkelerinin özellikleri.
+The properties of the compliance policies.
 
-| Özellik      | Açıklama                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Ad          | Uygulamanın adı.                                                                                                        |
-| İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
-| İlke Türü   | Cihaz sahiplik türü (**Şirket**, **Kişisel** ve **Bilinmiyor**).                                               |
-| Son değiştirme | Cihaz türünün adı.                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>Cihazlar
+### Devices
 
-Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Özellik           | Açıklama                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Cihaz adı        | Cihaz türünün adı.                                                                                                     |
-| Tarafından yönetilen         | İlkenin değiştirildiği zaman damgası.                                                                                              |
-| Azure AD katılım türü | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Sahibi          | Cihaz sahiplik türü (**Şirket**, **Kişisel** ve **Bilinmiyor**).                                               |
-| Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
-| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| İşletim Sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
-| İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
-| Son iade      | Cihaz türünün adı.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
+### App protection policies
 
-EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Özellik    | Açıklama                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Durum      | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**). |
-| Uygulama adı    | Uygulamanın adı                                                           |
-| Cihaz adı | Cihaz türünün adı.                                                       |
-| Cihaz türü | Cihaz türünün adı.                                                       |
-| İlkeler    | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**). |
-| Son eşitleme   | Cihazın Intune ile son eşitlendiği zaman damgası.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="configuration-policies-reference"></a>Yapılandırma ilkeleri başvurusu
+## Configuration policies reference
 
-Satıcıya özgü yapılandırmaları olan mobil uygulamalar için bir uygulama koruma ilkesi kullanılabilir. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
-### <a name="properties"></a>Özellikler
+### Properties
 
-Yapılandırma ilkelerinin özellikleri.
+The properties of the configuration policies.
 
-| Özellik      | Açıklama                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Atama    | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Ad          | Uygulamanın adı.                                                                                                        |
-| İşletim Sistemi            | Cihazda yüklü işletim sistemi.                                                                                       |
-| İlke Türü   | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
-| Son değiştirme | Cihaz türünün adı.                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>Cihazlar
+### Devices
 
-Intune ile yönetilen cihazlar veya Intune ya da Azure AD ile yönetilen kullanıcılar tarafından yönetilen cihazlar.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Özellik           | Açıklama                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Cihaz adı        | Cihaz türünün adı.                                                                                                     |
-| Tarafından yönetilen         | İlkenin değiştirildiği zaman damgası.                                                                                              |
-| Azure AD katılım türü | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| Sahibi          | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**).                                               |
-| Intune uyumlu   | Cihaz türünün adı.                                                                                                     |
-| Azure AD uyumlu | Her kullanıcının uygulama koruma uygulamalarındaki durumu. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir. |
-| İşletim Sistemi                 | Cihazda yüklü işletim sistemi.                                                                                       |
-| İşletim sistemi sürümü         | Cihazın İşletim Sistemi sürüm numarası.                                                                                  |
-| Son iade      | Cihaz türünün adı.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
 
-### <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
+### App protection policies
 
-EMS teknolojileri ile tümleşen mobil uygulamalarda bir uygulama koruma ilkesi kullanılabilir. Bu ilkeler, Office mobil uygulamaları dahil mobil uygulamalara indirildiğinde şirket verilerinizin korunması için bir taban çizgi sağlar. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Özellik    | Açıklama                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Durum      | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**). |
-| Uygulama adı    | Uygulamanın adı                                                           |
-| Cihaz adı | Cihaz türünün adı.                                                       |
-| Cihaz türü | Cihaz türünün adı.                                                       |
-| İlkeler    | Cihaz sahiplik türü (**Şirket**, **Kişisel** veya **Bilinmiyor**). |
-| Son eşitleme   | Cihazın Intune ile son eşitlendiği zaman damgası.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## <a name="enrollment-failure-reference"></a>Kayıt hatası başvurusu
 

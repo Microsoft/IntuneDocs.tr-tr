@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
+ms.sourcegitcommit: 3c80028fd995675e7664b27d7e4051c9a9d0e669
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736845"
+---
 
 Bu bildirimler önemli yardımcı olabilecek bilgiler, gelecekteki Intune değişiklikler ve özellikler için hazırlama belirtin. 
 
@@ -102,7 +110,33 @@ Hizmetten hizmete bağlayıcı ayarlama ve Exchange Active Sync yalnızca cihaz�
 
 - Mobil cihaz Yönetimi (MDM) cihazlarını kaydetme 
 - Cihazlarınızı yönetmek için Intune uygulama koruma ilkelerini kullanma 
-- Kullanım Exchange burayı belgelerinde belirtildiği gibi denetimleri 
+- Belgelerinde belirtildiği gibi Exchange denetimleri kullanın [burada](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) 
 
 #### <a name="additional-information"></a>Ek bilgi  
 https://docs.microsoft.com/intune/exchange-service-connector-configure
+
+
+
+
+### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Intune, "Yazılım güncelleştirmelerinin gecikme görünürlük" ayarını denetleyin 
+
+Biz size birkaç ayar konsolda gezinmek MC171466 paylaşılmaz. Intune Mart güncelleştirmesinde tamamen "Gecikme görünürlüğünü yazılım güncelleştirmeleri" ayarı iOS güncelleştirme ilkesi dikey penceresinden kaldıracağız. Bu, zamanlanmış yazılım güncelleştirmeleri uygulamaya biçimini değiştirmez, ancak bir güncelleştirme görünürlüğünü son kullanıcılar için ne kadar süreyle geciktirileceğini etkileyebilir. Bu ayarı kullanıyorsanız Mart bitmeden önce harekete gerekebilir. 
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Şubat Intune hizmet güncelleştirmesinden sonra ayarı konsolunda ve iOS cihaz kısıtlama profillerinde hem de yazılım güncelleştirme dikey penceresinde ilkeleri güncelleştirmek için görüntülendiğini fark edeceksiniz. Konsolunda bu değişikliği gördüğünüzde, işte yapmanız gerekebilir.
+
+- İOS için var olan güncelleştirme ilkeleri için: Özel varsa bu ayarı varsayılan dışında bir 30 gün, yapılandırılmış ve Mart sonunda uygulamaya devam etmek gecikme görünürlük ayar için mevcut yapılandırmalarınızı istediğiniz, yeni bir iOS cihaz kısıtlama profili oluşturmak zorunda kalırsınız. Burada, gecikme görünürlük ayarı mevcut iOS güncelleştirme ilkesini olduğu gibi aynı değerlere sahip ve aynı gruplara hedeflenmesi gerekir. Mart hizmet güncelleştirmesinden sonra artık, artık bu dikey pencerede görünür olacak olduğundan bu ayarda mevcut iOS güncelleştirme ilkeleri için değerlerini düzenlemek mümkün olmayacak. Bunun yerine, yeni profillerinde bu ayarı yapılandırır.
+  Gün sayısı değeri geciktirebilir görünürlük konumlarının her ikisinde de gecikme ayarı çalışmaz, görünürlük özel yapılandırılmış ayar değerleri eşleşmiyor ve kullanılabilir duruma geldiği son kullanıcılar, cihazlarında güncelleştirmeyi görür. Diğer ayarlar yazılım güncelleştirme ilkesi dikey penceresinde her zaman bu konsolda üzerinden öncelik yaptıktan sonra bu çoğu müşteri için çok az etkisi olabilir.
+- İOS için yeni güncelleştirme ilkeleri için: Intune Şubat hizmet güncelleştirmesinden sonra yazılım güncelleştirmeleri dikey penceresinde yeni ilkeler oluşturacağınız çalışırsanız, bu ayar gri görürsünüz. Konsolunda güncelleştirmeleri görünürlüğünü geciktirmek istiyorsanız cihaz yapılandırma dikey penceresine yeniden yönlendirme Not görürsünüz.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+Bu ayar kullanmayın veya son kullanıcılarınız için görünürlük yazılım güncelleştirmelerinin gecikme istemiyorsanız, eylem gerekmez.
+
+Cihaz kısıtlamaları'nın altında cihaz yapılandırma dikey penceresinde yeni profillerinde ayarını yapılandırma güncelleştirmeleri görünürlüğünü geciktirmek istiyorsanız, başlangıç > Genel. Varsa bu ayarı özel mevcut iOS güncelleştirme ilkeleri yapılandırılmış, kullanıcılarınız için güncelleştirmelerin görünürlüğünü gecikme "gün" için aynı değere sahip yeni bir eşdeğer cihaz kısıtlama profili oluşturun, sonra Şubat ve Mart önce güncelleştirme dağıtılırken. 
+
+BT Pro rehberi güncelleştirin ve Yardım masanız bildirmek isteyebilirsiniz.
+
+Bu ayarı yapılandırma hakkında daha fazla ayrıntı için ek bilgileri Gönder destek blog gönderimize göz atabilirsiniz.
+
+#### <a name="additional-information"></a>Ek bilgi 
+[https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)

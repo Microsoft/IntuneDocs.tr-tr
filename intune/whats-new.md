@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16f49c4b8be25766065456270e9ed426a063a212
-ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
+ms.openlocfilehash: 3bbde7c796c386897bbb79056a8a3a8b5fab5eb3
+ms.sourcegitcommit: f97e03074509ea9ef4d9007fae2644429a060c1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57528386"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57787177"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -429,9 +429,7 @@ Uygulama hedefi: Windows 10 ve üzeri
 ### <a name="device-enrollment"></a>Cihaz kaydı
 
 #### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>Daha ayrıntılı kayıt kısıtlama hata iletileri <!-- 3111564 -->
-Daha ayrıntılı hata iletileri, kayıt kısıtlamaları karşılanmadı seçtiğinizde kullanılabilir. Bu iletileri görmek için Git **Intune** > **sorun giderme** > ve kayıt hataları tabloyu gözden geçirin. Daha fazla bilgi için [kayıt hatalarının listesi](help-desk-operators.md#configuration-policies-reference).
-
-
+Daha ayrıntılı hata iletileri, kayıt kısıtlamaları karşılanmadı seçtiğinizde kullanılabilir. Bu iletileri görmek için Git **Intune** > **sorun giderme** > ve kayıt hataları tabloyu gözden geçirin. Daha fazla bilgi için [kayıt hatalarının listesi](help-desk-operators.md#enrollment-failure-reference).
 
 ### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
 

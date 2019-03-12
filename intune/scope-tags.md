@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0625968c4f0c30d125be73045a52b58a032b2fd7
-ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
+ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57682632"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756811"
 ---
 # <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış için RBAC ve kapsam etiketleri kullanmak BT
 
@@ -40,22 +40,48 @@ Doğru yöneticileri sağ Intune nesnelere görünürlüğü ve doğru erişime 
 ## <a name="to-create-a-scope-tag"></a>Kapsam etiketi oluşturmak için
 
 1. Intune'da, **rolleri** > **kapsam (etiketler)** > **Oluştur**.
+
+    ![Kapsam etiketi oluştur ekran görüntüsü.](./media/scope-tags/create-scope-tag.png)
+
 2. Bir **Ad** ve **Açıklama** sağlayın.
 3. **Oluştur**’u seçin.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Kapsam etiketini bir role atamak için
 
 1. Intune'da, **rolleri** > **tüm rolleri** > bir rol seçin > **atamaları** > **atama**.
+
+    ![Ekran görüntüsü, bir role kapsam atayın.](./media/scope-tags/assign-scope-to-role.png)
+
 2. Sağlayan bir **atama adı** ve **açıklama**.
-3. Seçin **üyeler (gruplar)** ve bu atama bir parçası olarak istediğiniz grupları seçin. Bu gruptaki kullanıcılar, ilkeler ve profiller için kapsam (gruplar) kullanıcıları/cihazları yönetmek için izinlere sahip.
-4. Seçin **kapsam (gruplar)** ve kullanıcıları ve bu atama parçası olmasını istediğiniz grupları seçin. Bu gruptaki tüm kullanıcılara/cihazlara, profilleri ve ilkeleri (grubu) üye yöneticileri tarafından yönetiliyor olabilir.
-5. Seçin **kapsam (etiketler)** > **Ekle** > Bu role eklemek istediğiniz etiketleri seçin. Üyeler (gruplar) kullanıcılar aynı kapsam etiketi de profilleri ve ilkeleri erişebilir.
-6. **Seç** > **Tamam** > **Tamam**'ı seçin. 
+3. Seçin **üyeler (gruplar)** > **Ekle** > Bu atama bir parçası olarak istediğiniz grupları seçin > **seçin**  >   **Tamam**. Bu gruptaki mUsers ilkeler ve profiller için kapsam (gruplar) kullanıcıları/cihazları yönetmek için izinlere sahip.
+
+    ![Seçili üye grupların ekran görüntüsü.](./media/scope-tags/select-member-groups.png)
+
+4. Kullanıcılar/Gruplar belirli bir dizi cihazları yönetmek istiyorsanız belirleyin **kapsam (gruplar)** > **seçtiğiniz grupları** > **dahiledilecekgruplarıseçin**> istediğiniz grupları seçin > **seçin** > **Tamam**. Bu gruptaki tüm kullanıcılara/cihazlara, profilleri ve ilkeleri (grubu) üye yöneticileri tarafından yönetiliyor olabilir.
+
+    ![Select kapsam gruplarının ekran görüntüsü.](./media/scope-tags/select-scope-groups.png)
+
+    Alternatif olarak, seçebileceğiniz **tüm cihazlar**, **tüm kullanıcılar**, veya **tüm kullanıcılar ve tüm cihazlar**.
+
+    ![Diğer seçenekleri Seç Kapsam grupları için ekran görüntüsü.](./media/scope-tags/scope-group-other-options.png)
+    
+5. Seçin **kapsam (etiketler)** > **Ekle** > Bu role eklemek istediğiniz etiketleri seçin > **seçin** > **Tamam**. Üyeler (gruplar) kullanıcılar aynı kapsam etiketi de profilleri ve ilkeleri erişebilir.
+
+    ![Select kapsam etiketleri ekran görüntüsü.](./media/scope-tags/select-scope-tags.png)
+
+6. **Tamam**’ı seçin. 
 
 ## <a name="to-add-a-scope-tag-to-a-configuration-profile"></a>Kapsam etiketini bir yapılandırma profiline eklemek için
-1. Intune'da, **cihaz Yapılandırması** > **profilleri** > bir profili seçin > **özellikleri** > **kapsam (etiketler)**   >  **Ekleme**.
-2. Altında **etiketleri seçin**, profiline eklemek istediğiniz etiketleri seçin.
-3. Seçin **seçin** > **Tamam** > **Kaydet**.
+1. Intune'da, **cihaz Yapılandırması** > **profilleri** > bir profil seçin.
+
+    ![Ekran görüntüsü profili seçin.](./media/scope-tags/choose-profile.png)
+
+2. Seçin **özellikleri** > **kapsam (etiketler)** > **ekleme**.
+
+    ![Kapsam etiketleri Ekle ekran görüntüsü.](./media/scope-tags/add-scope-tags.png)
+
+3. Altında **etiketleri seçin**, profiline eklemek istediğiniz etiketleri seçin.
+4. Seçin **seçin** > **Tamam** > **Kaydet**.
 
 ## <a name="scope-tag-details"></a>Kapsam etiketi ayrıntıları
 Kapsam etiketleri ile çalışırken, bu ayrıntıları unutmayın:
@@ -70,7 +96,7 @@ Kapsam etiketleri ile çalışırken, bu ayrıntıları unutmayın:
     - Uygulama yapılandırma ilkeleri – yönetilen cihazlar
     - PowerShell betikleri
     - DEP belirteçleri
-    - Bir yönetici Intune nesneyi oluşturduğunda, o yönetici için atanan tüm kapsam etiketleri otomatik olarak yeni nesneye atanır.
+- Bir yönetici Intune nesneyi oluşturduğunda, o yönetici için atanan tüm kapsam etiketleri otomatik olarak yeni nesneye atanır.
 - Intune RBAC, Azure Active Directory rolleri için geçerli değildir. Bu nedenle, Intune'daki hizmet yöneticilerinin ve genel yöneticileri rolleri, sahip oldukları hangi kapsam etiketleri ne olursa olsun tam yönetici erişimi ıntune sahiptir.
 - Bir rol ataması kapsam etiketleri ile yöneticiler Intune nesneleriyle hiçbir kapsam etiketleri de görebilirsiniz.
 - Rol atamalarınızı olması bir kapsam etiketi yalnızca atayabilirsiniz.

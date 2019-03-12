@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 03/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dea5f0a794e0b947e1f542b796e946de85f7eb4
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57460386"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756862"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune ücretsiz olarak deneyin 
 
@@ -87,20 +87,20 @@ MDM yetkilisini Intune'a ayarlamak için aşağıdaki adımları izleyin.
 3. Cihaz yönetimini etkinleştirmediğinizi gösteren başlığı veya başlığı göremiyorsanız **Cihaz kaydı**’nı seçin. Cihaz yönetimini henüz etkinleştirmediyseniz **MDM Yetkilisi seçin** dikey penceresi görüntülenir.
 
     > [!NOTE]
-    > Turuncu başlık, ancak henüz MDM yetkilisini ayarlamadıysanız görüntülenir.
+    > MDM yetkilisini ayarlarsanız, MDM yetkilisi değerin üzerinde görürsünüz **cihaz kaydı** dikey penceresi. Turuncu başlık, ancak henüz MDM yetkilisini ayarlamadıysanız görüntülenir. 
 
     ![MDM Yetkilisi seçin dikey penceresinin görüntüsü](./media/choose-mdm-authority.png) 
 
-4. **MDM Yetkilisi seçin** dikey penceresinin altında MDM yetkilinizi **Intune MDM Yetkilisi** olarak ayarlayın.
+4. MDM yetkilinizi, altında ayarlanmazsa **MDM yetkilisi seçin**, MDM yetkilinizi **Intune MDM yetkilisi**.
 
 MDM yetkilisi hakkında daha fazla bilgi için bkz. [Mobil cihaz yönetimi yetkilisini ayarlama](mdm-authority-set.md).
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Özel etki alanı adınızı yapılandırma (İsteğe bağlı)
 
-Yukarıdaki söz edildiği gibi kuruluşunuzun olmadan kullanmak istiyorsanız, kendi özel etki alanı erişimi **. onmicrosoft.com**, Microsoft 365 Yönetim merkezinde değiştirebilirsiniz. Özel etki alanınızın adını kendiniz ekler, doğrular ve yapılandırırsınız.  
+Yukarıdaki söz edildiği gibi kuruluşunuzun olmadan kullanmak istiyorsanız, kendi özel etki alanı erişimi **. onmicrosoft.com**, Microsoft 365 Yönetim merkezinde değiştirebilirsiniz. Ekleme, doğrulamak ve aşağıdaki adımları kullanarak özel etki alanı adınızı yapılandırma.  
 
 > [!IMPORTANT]
-> İlk **onmicrosoft.com** etki alanı adını yeniden adlandıramaz ve kaldıramazsınız. İş kimliğinizin açık ve anlaşılır olması adına Intune’da kullanılan özel etki alanı adlarında ekleme, doğrulama veya kaldırma işlemleri yapabilirsiniz.
+> Kaldırma yeniden adlandırın veya silemeyeceğiniz *ilk* **onmicrosoft.com** etki alanı adı bölümü. Ancak, ekleyebileceğiniz, doğrulayın veya kaldırabileceğiniz *özel* Intune ile iş kimliğinizin açık tutmak için kullanılan etki alanı adları. Daha fazla bilgi için [bir özel etki alanı adı yapılandırma](custom-domain-name-configure.md).
 
 1. Git [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com) yönetici hesabınızı kullanarak oturum açın.
 
@@ -112,7 +112,7 @@ Yukarıdaki söz edildiği gibi kuruluşunuzun olmadan kullanmak istiyorsanız, 
 
 4. Önceki adımda girdiğiniz etki alanının sahibi olduğunuzu doğrulayın. 
     
-    **Kodu e-posta yoluyla gönder** seçilirse, etki alanınızın kayıtlı iletişim sorumlusuna bir e-posta gönderilir. E-postayı aldıktan sonra kodu kopyalayın ve **Doğrulama kodunuzu buraya yazın** etiketli alana girin. Doğrulama kodu eşleşirse, etki alanı kiracınıza eklenir. Görüntülenen e-posta tanıdık görünmeyebilir. Bazı kaydediciler etki alanı kaydedilirken sağlanan gerçek e-posta adresini gizler.
+    **Kodu e-posta yoluyla gönder** seçilirse, etki alanınızın kayıtlı iletişim sorumlusuna bir e-posta gönderilir. E-postayı aldıktan sonra kodu kopyalayın ve **Doğrulama kodunuzu buraya yazın** etiketli alana girin. Doğrulama kodu eşleşirse, etki alanı kiracınıza eklenir. Görüntülenen e-posta tanıdık görünmeyebilir. Bazı kaydedicilerin gerçek e-posta adresi gizleyin. Ayrıca, e-posta adresi sonra etki alanı kaydettiğinizde ne sağlanan farklı olabilir.
 
    ![Microsoft 365 ekran Yönetim Merkezi - etki alanı doğrulama](./media/domain-custom-verify.png)
 
