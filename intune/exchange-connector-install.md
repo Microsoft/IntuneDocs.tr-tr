@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73e139b64da214a7246cc300b5e850ea77073929
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: cf169dbae20285b9134766323b41ea9139440d74
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57390423"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure’da Intune şirket içi Exchange bağlayıcısını ayarlama
 
-Şirket içi Exchange Server ortamında, Exchange şirket içi posta kutularına erişime izin vermek veya bu erişimi engellemek için Intune koşullu erişimi kullanılabilir. Exchange Active Sync şirket içi bağlayıcılarını kullanarak Intune'u Exchange kuruluşlarınıza bağlayın ve cihaz uyumluluk ilkeleriyle birlikte Intune koşullu erişimini ayarlayın. Ardından, bir cihaz, Exchange bağlanmaya çalıştığında, Intune cihaz Intune'a kayıtlı ve uyumlu olmadığını belirler. Hangi cihazların Intune'a kayıtlı olduğunu saptamak için, şirket içi Exchange bağlayıcısı Exchange Server'daki Exchange Active Sync (EAS) kayıtlarını Intune kayıtlarına eşler. Bunun nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?](conditional-access-intune-common-ways-use.md)
+Şirket içi Exchange Server ortamında, Exchange şirket içi posta kutularına erişime izin vermek veya bu erişimi engellemek için Intune koşullu erişimi kullanılabilir. Exchange Active Sync şirket içi bağlayıcılarını kullanarak Intune'u Exchange kuruluşlarınıza bağlayın ve cihaz uyumluluk ilkeleriyle birlikte Intune koşullu erişimini ayarlayın. Ardından, bir cihaz, Exchange bağlanmaya çalıştığında, Intune cihaz Intune'a kayıtlı ve uyumlu olmadığını belirler. Hangi cihazların Intune'a kayıtlı olduğunu saptamak için, şirket içi Exchange bağlayıcısı Exchange Server'daki Exchange Active Sync (EAS) kayıtlarını Intune kayıtlarına eşler. Daha fazla bilgi için [Intune ile koşullu erişim kullanmanın yaygın yolları nelerdir?](conditional-access-intune-common-ways-use.md)
 
 > [!IMPORTANT]
 > Intune artık abonelik başına birden çok şirket içi Exchange bağlayıcısını destekler. Birden çok şirket içi Exchange kuruluşunuz varsa, her Exchange kuruluşu için ayrı bağlayıcılar ayarlayabilirsiniz.
@@ -39,22 +39,23 @@ Microsoft Intune’un şirket içi Exchange Server ile iletişim kurmasını sa�
 4. Intune'a bağlamak istediğiniz her Exchange kuruluşu için bu adımları yineleyin.
 
 ## <a name="intune-on-premises-exchange-connector-requirements"></a>Intune şirket içi Exchange bağlayıcısı gereksinimleri
-Aşağıdaki tabloda şirket içi Exchange bağlayıcısını yüklediğiniz bilgisayara ilişkin gereksinimler listelenmiştir.
+Bağlayıcı tarafından Exchange'e bağlanmak için kullanılan bir Intune lisansı olan bir hesap gerekir. Bağlayıcısını yüklediğinizde, hesabı belirtilir.  
 
+Aşağıdaki tabloda şirket içi Exchange bağlayıcısını yüklediğiniz bilgisayara ilişkin gereksinimler listelenmiştir.  
 
-|            Gereksinim             |                                                                                                                                                                                                        Daha fazla bilgi                                                                                                                                                                                                        |
-|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         İşletim sistemleri          |                                                               Intune; Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 veya Windows Server 2016’nın herhangi bir sürümünü çalıştıran bilgisayarlarda şirket içi Exchange bağlayıcısını destekler.<br /><br />Bağlayıcı hiçbir Sunucu Çekirdeği yüklemesinde desteklenmez.                                                                |
-|         Microsoft Exchange         |                                                                           Şirket içi bağlayıcılar için Microsoft Exchange 2010 SP3 veya üzeri ya da eski Exchange Online Ayrılmış gerekir. Exchange Online Dedicated ortamınızın <strong>yeni</strong> yapılandırmada mı yoksa <strong>eski</strong> yapılandırmada mı olduğunu belirlemek için hesap yöneticinize başvurun.                                                                           |
-| Mobil cihaz yönetimi yetkilisi |                                                                                                                              [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](mdm-authority-set.md).                                                                                                                               |
-|              Donanım              |                                                                                                                                                     Bağlayıcıyı yüklediğiniz bilgisayar 2 GB RAM ve 10 GB boş disk alanı ile birlikte 1,6 GHz CPU gerektirir.                                                                                                                                                      |
-|  Active Directory eşitlemesi  |                                                                                      Intune’u Exchange Server'a bağlamak üzere bağlayıcıyı kullanabilmeniz için yerel kullanıcılarınızın ve güvenlik gruplarınızın Azure Active Directory örneğinizle eşitlenebilmesi amacıyla [Active Directory eşitlemesini ayarlamanız](users-add.md) gerekir.                                                                                      |
-|        Ek yazılım         |                                                                                                                                           Bağlayıcıyı barındıran bilgisayara Microsoft .NET Framework 4.5 ve Windows PowerShell 2.0 tam yüklemesi yapılmalıdır.                                                                                                                                           |
-|              Ağ               | Bağlayıcıyı yüklediğiniz bilgisayar, Exchange Server'ı barındıran etki alanı ile güven ilişkisi olan bir etki alanında olmalıdır.<br /><br />Bilgisayar, 80 ve 443 numaralı Bağlantı Noktaları üzerinden güvenlik duvarları ve proxy sunucular aracılığıyla Intune hizmetine erişmesine olanak sağlayacak yapılandırmalar gerektirir. Intune tarafından kullanılan etki alanları manage.microsoft.com, &#42;manage.microsoft.com ve &#42;.manage.microsoft.com’dur. |
+|  Gereksinim  |   Daha fazla bilgi     |
+|---------------|------------------------|
+|  İşletim sistemleri        | Intune; Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 veya Windows Server 2016’nın herhangi bir sürümünü çalıştıran bilgisayarlarda şirket içi Exchange bağlayıcısını destekler.<br /><br />Bağlayıcı hiçbir Sunucu Çekirdeği yüklemesinde desteklenmez.  |
+| Microsoft Exchange          | Şirket içi bağlayıcılar için Microsoft Exchange 2010 SP3 veya üzeri ya da eski Exchange Online Ayrılmış gerekir. Exchange Online Dedicated ortamınızın <strong>yeni</strong> yapılandırmada mı yoksa <strong>eski</strong> yapılandırmada mı olduğunu belirlemek için hesap yöneticinize başvurun. |
+| Mobil cihaz yönetimi yetkilisi           | [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](mdm-authority-set.md). |
+| Donanım              | Bağlayıcıyı yüklediğiniz bilgisayar 2 GB RAM ve 10 GB boş disk alanı ile birlikte 1,6 GHz CPU gerektirir. |
+|  Active Directory eşitlemesi             | Intune’u Exchange Server'a bağlamak üzere bağlayıcıyı kullanabilmeniz için yerel kullanıcılarınızın ve güvenlik gruplarınızın Azure Active Directory örneğinizle eşitlenebilmesi amacıyla [Active Directory eşitlemesini ayarlamanız](users-add.md) gerekir. |
+| Ek yazılım         | Bağlayıcıyı barındıran bilgisayara Microsoft .NET Framework 4.5 ve Windows PowerShell 2.0 tam yüklemesi yapılmalıdır. |
+| Ağ               | Bağlayıcıyı yüklediğiniz bilgisayar, Exchange Server'ı barındıran etki alanı ile güven ilişkisi olan bir etki alanında olmalıdır.<br /><br />Bilgisayar, 80 ve 443 numaralı Bağlantı Noktaları üzerinden güvenlik duvarları ve proxy sunucular aracılığıyla Intune hizmetine erişmesine olanak sağlayacak yapılandırmalar gerektirir. Intune tarafından kullanılan etki alanları manage.microsoft.com, &#42;manage.microsoft.com ve &#42;.manage.microsoft.com’dur. |
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange cmdlet gereksinimleri
 
-Şirket içi Exchange bağlayıcısı tarafından kullanılacak bir Active Directory kullanıcı hesabı oluşturmanız gerekir. Hesabın aşağıdaki gerekli Windows PowerShell Exchange cmdlet'lerini çalıştırma izni olması gerekir:
+Şirket içi Exchange Bağlayıcısı tarafından kullanılacak olan bir Active Directory kullanıcı hesabı oluşturun. Hesabın aşağıdaki gerekli Windows PowerShell Exchange cmdlet'lerini çalıştırma izni olması gerekir:
 
 
  -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
@@ -116,9 +117,9 @@ Intune şirket içi Exchange bağlayıcısını yüklemek için aşağıdaki ad�
 
        4. **Tamam**’ı seçin.
 
-4. **Kullanıcı (Etki alanı\kullanıcı)** ve **Parola** alanlarında Exchange sunucunuza bağlanmak için gereken kimlik bilgilerini sağlayın.
+4. **Kullanıcı (Etki alanı\kullanıcı)** ve **Parola** alanlarında Exchange sunucunuza bağlanmak için gereken kimlik bilgilerini sağlayın. Belirttiğiniz hesabın Intune'ı kullanma Lisansı olmalıdır. 
 
-5. Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken kimlik bilgilerini sağlayın. Bu kullanıcı yalnızca bildirimlere ayrılabilir. Bildirim kullanıcısına, e-postayla bildirim gönderebilmesi için bir Exchange posta kutusu gerekir. Bu bildirimleri Intune’da koşullu erişim ilkeleriyle yapılandırabilirsiniz.  
+5. Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken kimlik bilgilerini sağlayın. Bu kullanıcı yalnızca bildirimlere ayrılabilir. Bildirim kullanıcısına, e-posta ile bildirim göndermek için bir Exchange posta kutusu gerekir. Bu bildirimleri Intune’da koşullu erişim ilkeleriyle yapılandırabilirsiniz.  
 
        Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -159,10 +160,10 @@ Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirs
 
 ### <a name="system-center-operations-manager-management-pack"></a>System Center Operations Manager Yönetim Paketi
 
-Intune 1710 sürümünden itibaren kullanabilirsiniz [Exchange Bağlayıcısı ve Intune için Operations Manager Yönetim Paketi](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Bu yönetim paketi, sorun gidermeniz gerektiğinde Exchange bağlayıcısını izlemek için size farklı yollar sunar.
+Intune 1710 sürümünden itibaren kullanabilirsiniz [Exchange Bağlayıcısı ve Intune için Operations Manager Yönetim Paketi](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Yönetim Paketi kullanarak sorunları gidermek gerektiğinde Exchange bağlayıcısını izlemek farklı yollar sunar.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Hızlı eşitlemeyi veya tam eşitlemeyi el ile zorlama
-Bir şirket içi Exchange connector EAS ve Intune cihaz kayıtları düzenli aralıklarla otomatik olarak eşitler. Cihazın uyumluluk durumu değişirse, otomatik eşitleme işlemi kayıtları düzenli aralıklarla eşitler. Bu şekilde, cihazın erişimi uygun şekilde engellenebilir veya erişimine izin verilebilir.
+Bir şirket içi Exchange connector EAS ve Intune cihaz kayıtları düzenli aralıklarla otomatik olarak eşitler. Bir cihazın uyumluluk durumunu değişirse, böylece cihaz erişimi engellendi veya izin verilen otomatik eşitleme işlemini düzenli olarak kayıtları güncelleştirir.
 
    - **Hızlı eşitleme** günde birkaç kez düzenli aralıklarla yapılır. Hızlı eşitleme, Intune lisanslı olan, şirket içi Exchange koşullu erişimi için hedeflenen ve son eşitlemeden sonra değiştirilmiş olan kullanıcıların cihaz bilgilerini alır.
 

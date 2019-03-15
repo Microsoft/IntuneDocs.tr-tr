@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0b43323d19d79a7ce6bb6e8da9a3eb87c307e968
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
-ms.translationtype: MT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57564899"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune veri ambarı'nı kullanma
@@ -53,4 +53,4 @@ Veri Ambarı, mobil ortamınız hakkında Azure portalına kıyasla daha fazla b
 
 - Bir bağlantı edinin ve öngörü almak için Power BI’ı kullanın. Yönergeler için bkz. [Intune Veri Ambarına Power BI ile bağlanma](reports-proc-get-a-link-powerbi.md).
 - Bağlantınız ile Power BI kullanarak özel bir rapor hazırlayın. Yönergeler için bkz. [OData akışına Power BI ile bir rapor oluşturma](reports-proc-create-with-odata.md).
-- Intune Veri Ambarı API’si, veri modeli ve varlıklar arasındaki ilişkiler hakkında daha fazla bilgi için<!-- , and an example of creating a custom client to retrieve data,--> bkz. [Intune Veri Ambarı API’si](reports-nav-intune-data-warehouse.md).
+- Intune veri ambarı API'si veri modeli ve varlıklar arasındaki ilişkiler hakkında daha fazla bilgi edinin<!-- , and an example of creating a custom client to retrieve data,--> bkz: [Intune veri ambarı API'si](reports-nav-intune-data-warehouse.md).

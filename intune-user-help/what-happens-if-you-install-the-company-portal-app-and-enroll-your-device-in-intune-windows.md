@@ -18,16 +18,16 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cace30f5120bb5c02d3569d9668d336a00f69ff
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846851"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve Windows cihazınızı Intune’a kaydederseniz ne olur?
 
-Şirket Portalı uygulamasını yüklediğinizde ve bu uygulamayı kullanarak bir Windows veya Windows Phone cihazı kaydettiğinizde, şirketinizin destek birimine şirket veya okul verilerinin güvenliğini sağlamak üzere cihazınızı yönetme izni vermiş olursunuz. Windows 10’dan önceki işletim sistemlerini çalıştıran cihazlarda neler olacağı bu konuda açıklanmıştır. Windows 10 cihazlar için bkz. [ilgili konu](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Şirket Portalı uygulamasını yüklediğinizde ve bu uygulamayı kullanarak bir Windows veya Windows Phone cihazı kaydettiğinizde, şirketinizin destek birimine şirket veya okul verilerinin güvenliğini sağlamak üzere cihazınızı yönetme izni vermiş olursunuz. Windows 10’dan önceki işletim sistemlerini çalıştıran cihazlarda neler olacağı bu konuda açıklanmıştır. Windows 10 cihazlar için bkz. [ilgili konu](about-cp-app-for-windows-10.md).  
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Kayıttan sonra tüm Windows cihazlarına ne olur?
 Windows veya Windows Phone cihazınızı Intune’a kaydettiğinizde:

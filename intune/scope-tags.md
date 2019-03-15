@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57756811"
 ---
 # <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış için RBAC ve kapsam etiketleri kullanmak BT

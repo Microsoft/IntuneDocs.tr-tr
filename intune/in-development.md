@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9c377a8558b1f318b4ddad735b6368a291e34516
-ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57756828"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>Microsoft Intune - Mart 2019 geliştirme
@@ -59,7 +59,7 @@ Gelen Azure Active Directory (AAD) BitLocker anahtarı kimliği ve BitLocker kur
 ### <a name="scope-tags-for-app-configuration-policies---2371891---"></a>Kapsam etiketleri için uygulama yapılandırma ilkeleri <!--2371891 -->
 Kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama yapılandırma İlkesi erişimi için bir uygulama yapılandırma ilkesi için bir kapsam etiketi ekleyin mümkün olacaktır. Uygulama yapılandırma ilkesini yalnızca hedeflenen veya aynı kapsam etiketi atanan uygulamalarla ilişkili.
 
-### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Tüm cihazlar sanal grubuna Autopilot profilleri atama <!--2715522 -->
+### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>AutoPilot profilleri tüm cihazları sanal gruba atayın. <!--2715522 -->
 Tüm cihazlar sanal grubuna Autopilot profilleri atayabileceksiniz. Bunu yapmak için **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri**'i seçin > bir profil seçin > **Atamalar**'ı seçin > **Atama hedefi** altından **Tüm cihazlar**'ı seçin. Autopilot profilleri hakkında daha fazla bilgi için bkz. [Windows AutoPilot kullanarak Windows cihazları kaydetme](enrollment-autopilot.md).
 
 ### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523----"></a>Windows toplu kaydı sonra Şirket portalı uygulamasını kullanırken kullanılabilir uygulamaları yüklemesi <!-- 2751523  -->

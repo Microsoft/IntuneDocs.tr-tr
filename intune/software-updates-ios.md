@@ -14,10 +14,10 @@ ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e3a6cf207c58194030a4e4bab8a02f76cd97b338
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57398622"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune'da iOS yazılım güncelleştirme ilkelerini ekleme
@@ -94,7 +94,7 @@ Var olan ilkeler gruplara, kullanıcılara ve cihazlara atanır. İlke, atandı�
 
 ## <a name="monitor-device-installation-failures"></a>Cihaz yükleme hatalarını izleme
 <!-- 1352223 -->
-**Yazılım güncelleştirmeleri** > **iOS cihazları için yükleme hataları** altında, güncelleştirme ilkesi tarafından hedeflenen, güncelleştirmeyi denemiş ve güncelleştirilememiş denetimli iOS cihazlarının listesi gösterilir. Her cihazda, cihazın otomatik olarak güncelleştirilememesinin nedenini açıklayan bir durum görebilirsiniz. İyi durumda, güncel cihazlar bu listede gösterilmez. “Güncel” cihazlar, cihazın desteklediği en yeni güncelleştirmeyi içerir.
+**Yazılım güncelleştirmelerini** > **iOS cihazları için yükleme hataları** cihazları bir güncelleştirme ilkesi tarafından hedeflenen bir güncelleştirmeyi denedi ve güncelleştirilemiyor denetimli iOS listesini gösterir. Her cihazda, cihazın otomatik olarak güncelleştirilememesinin nedenini açıklayan bir durum görebilirsiniz. İyi durumda, güncel cihazlar bu listede gösterilmez. “Güncel” cihazlar, cihazın desteklediği en yeni güncelleştirmeyi içerir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

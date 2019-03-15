@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fbfff91d2993becc99e2132285bef78d245ff50e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "35289822"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 otomatik kayıt özelliğini etkinleştirme
 
 Otomatik kayıt, iş hesaplarını kişisel cihazlarına eklerken veya şirkete ait cihazlarının Azure Active Directory’nize katılmalarını sağlarken kullanıcıların Windows 10 cihazlarını Intune'a kaydetmelerine olanak sağlar. Arka planda, kullanıcının cihazı kaydolur ve Azure Active Directory’ye katılır. Kaydedildikten sonra cihaz, Intune ile yönetilir.
@@ -9,7 +17,7 @@ Otomatik kayıt, iş hesaplarını kişisel cihazlarına eklerken veya şirkete 
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Otomatik MDM kaydını yapılandırma
 
-1. [Azure yönetim portalında](https://portal.azure.com) oturum açın (https://manage.windowsazure.com)) ve **Azure Active Directory**’yi seçin.
+1. Oturum [Azure Yönetim Portalı](https://portal.azure.com) (https://manage.windowsazure.com) seçip **Azure Active Directory**.
 
    ![Azure portalının ekran görüntüsü](../media/auto-enroll-azure-main.png)
 

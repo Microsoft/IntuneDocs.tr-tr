@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4e3751456e5a889134cfc44a4fec3cfffa7e41cd
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57390091"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
@@ -90,7 +90,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 4. **Intune Uygulama Koruması** dikey penceresinden **Korunan uygulamalar**’ı seçin. **Korunan uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
 6. Şirket verilerinize erişmesine izin vermek istediğiniz her uygulamayı seçin.
-7. **Tamam** düğmesine tıklayın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
+7. **Tamam**'ı tıklatın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
 8. **Kaydet**’e tıklayın.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir Store uygulaması eklemek için
@@ -126,7 +126,8 @@ WIP ile korumak istediğiniz uygulamaları ekledikten sonra, **WIP Öğrenme** k
 
 WIP Öğrenme, WIP etkin ve WIP bilinmeyen uygulamalarınızı izlemenize olanak tanıyan bir rapordur. Bilinmeyen uygulamalar, kuruluşunuzun BT departmanı tarafından dağıtılmayan uygulamalardır. "Blok" modunda WIP uygulamasını zorlamadan önce bu uygulamaları raporunuzdan dışa aktarabilir ve üretkenliğin kesintiye uğramaması için WIP ilkelerinize ekleyebilirsiniz.
 
-<!-- 1631908 --> WIP’in etkinleştirildiği uygulamalar hakkındaki bilgileri görüntülemeye ek olarak, web siteleriyle paylaşılan iş verilerine sahip cihazların özetini de görüntüleyebilirsiniz. Bu bilgilerle, grup ve kullanıcı WIP ilkelerine hangi web sitelerinin eklenmesi gerektiğini saptayabilirsiniz. Özet, WIP özellikli uygulamalar tarafından hangi web sitesi URL'lerine erişildiğini gösterir.
+<!-- 1631908 -->
+WIP’in etkinleştirildiği uygulamalar hakkındaki bilgileri görüntülemeye ek olarak, web siteleriyle paylaşılan iş verilerine sahip cihazların özetini de görüntüleyebilirsiniz. Bu bilgilerle, grup ve kullanıcı WIP ilkelerine hangi web sitelerinin eklenmesi gerektiğini saptayabilirsiniz. Özet, WIP özellikli uygulamalar tarafından hangi web sitesi URL'lerine erişildiğini gösterir.
 
 WIP etkin ve WIP bilinmeyen uygulamalarla çalışırken, **Sessiz** veya **Geçersiz Kılmalara İzin Ver** ile başlayarak korunan uygulamalar listenizde doğru uygulamalar bulunduğunu küçük bir grupla doğrulamanızı öneririz. Bu denemeyi bitirdikten sonra, son uygulatma ilkenizi **Blok** olarak değiştirebilirsiniz.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 3c10843e0ba0250da6bfce64fbc87b8ecbde7bb1
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 45d91766b3bbdcdd3528afd80d74a56a94e88a2c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57399064"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune Delivery optimization ayarları
@@ -58,7 +58,7 @@ Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](devic
 
 ## <a name="move-existing-update-rings-to-delivery-optimization"></a>Var olan güncelleştirme halkaları için teslim iyileştirme Taşı
 
-**Teslim iyileştirme** ayarlarını değiştir **yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları**. Mevcut uygulamanızı güncelleştirme halkaları kullanmak için kolayca değiştirilebilir **teslim iyileştirme** ayarları. Bunu yapmak için:
+**Teslim iyileştirme** ayarlarını değiştir **yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları**. Mevcut uygulamanızı güncelleştirme halkaları kullanmak için kolayca değiştirilebilir **teslim iyileştirme** ayarları. Teslim iyileştirme profili oluşturduğunuzda, aynı ayarları korumak için aynı kullanın *teslim iyileştirme indirme modu* ve ardından aynı ayarları zaten kullanın. Ancak, teslim iyileştirme profilini de yönetebilirsiniz toplama ayarları çeşitli avantajlarından yararlanmak için teslim iyileştirme ayarlarını yapılandırmak seçebilirsiniz.
 
 1. Teslim iyileştirme yapılandırma profili oluşturun:
 
@@ -69,7 +69,7 @@ Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](devic
         - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
         - **Platform**: Seçin **Windows 10 ve üzeri**.
         - **Profil türü**: Seçin **teslim iyileştirme**.
-        - **Ayarları**: İçin **teslim iyileştirme indirme modu**, mevcut yazılım güncelleştirme kademesi tarafından kullanılan aynı modunu seçin. Seçenekleriniz şunlardır:
+        - **Ayarları**: İçin **teslim iyileştirme indirme modu**, cihazlarınıza uygulama ayarlarını değiştirmek istediğiniz sürece varolan yazılım güncelleştirme kademesi tarafından kullanılan aynı modunu seçin. Seçenekleriniz şunlardır:
             - **Yapılandırılmadı**
             - **Yalnızca HTTP, eşleme yok**
             - **Aynı NAT arkasında eşleme ile karışık HTTP**
@@ -78,7 +78,7 @@ Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](devic
             - **Eşlemesiz basit indirme modu**
             - **Atlama modu**
     3. Yönetmek istediğiniz ek ayarları yapılandırın.
-2. Bu yeni profili aynı cihazları ve kullanıcıları, mevcut yazılım güncelleştirme kademesi atayın. [Profil atama](device-profile-assign.md) adımları listelenir.
+1. Bu yeni profili aynı cihazları ve kullanıcıları, mevcut yazılım güncelleştirme kademesi atayın. [Profil atama](device-profile-assign.md) adımları listelenir.
 
 3. Mevcut yazılım halka yapılandırmasını Kaldır:
     1. Intune'da Git **yazılım güncelleştirmelerini** > Windows 10 güncelleştirme halkaları.

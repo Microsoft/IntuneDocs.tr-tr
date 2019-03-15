@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32f167def5e96061b0d69665c2c5b81a29d03389
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: add5ee699b652aacfa3e3b2bfd089905a881fe11
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57461371"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune’da cihaz kaydıyla ilgili sorunları giderme
@@ -226,7 +226,7 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 **1. Çözüm**:
 
-Kullanıcı, [Cihazınızda gerekli bir sertifika eksik](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) başlığı altında verilen yönergeleri izleyerek eksik sertifikayı alabilmelidir. Sorun devam ederse, 2. Çözümü deneyin.
+Kullanıcı, [Cihazınızda gerekli bir sertifika eksik](/intune-user-help/your-device-is-missing-a-required-certificate-android) başlığı altında verilen yönergeleri izleyerek eksik sertifikayı alabilmelidir. Sorun devam ederse, 2. Çözümü deneyin.
 
 **2. Çözüm**:
 

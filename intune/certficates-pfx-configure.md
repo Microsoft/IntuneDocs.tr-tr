@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune - Azure özel ve ortak anahtar sertifikalarını kullanma | Microsoft Docs
-description: Ekleme veya ortak anahtar şifreleme standartları (PKCS) sertifikaları Microsoft kök sertifikasını dışarı aktarma, sertifika şablonunu yapılandırmak, indirin ve yükleyin Microsoft Intune sertifika Bağlayıcısı'nı (NDES), oluşturma adımları da dahil olmak üzere Intune oluşturma bir cihaz yapılandırma profilini, Azure ve sertifika Yetkilinizde PKCS sertifika profili oluşturun.
+description: Ekleyin veya ortak anahtar şifreleme standartları (PKCS) sertifikaları Microsoft kök sertifikasını dışarı aktarma, sertifika şablonu, indirme ve yükleme Intune sertifika Bağlayıcısı'nın (NDES) yapılandırın, bir cihaz oluşturmak için adımları dahil olmak üzere Intune oluşturun yapılandırma profili oluşturma ve Azure ve sertifika Yetkilinizde PKCS sertifika profili oluşturun.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 03/12/2018
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,56 +17,64 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49c9c052e04812d7fa68a04c68ef9e378ff39e12
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: c3fd8ca136862db4e80ff11d31fc4860d4785ff1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57390282"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
-Sertifika kimlik doğrulaması ve güvenli bir VPN veya WiFi ağına gibi şirket kaynaklarınıza erişim. Birçok kuruluşta bir genel ve özel anahtar çifti olarak da bilinen PKCS sertifikaları kullanan sertifikaları kullanılır. Microsoft Intune erişim ve kimlik doğrulaması, kuruluş kaynaklarına PKCS sertifikalarını kullanmak için yerleşik ayarlarını içerir. Bu ayarlar gönderildi (dağıtılan Intune'da cihaz yapılandırma profilleri kullanarak cihazlara veya).
+Intune, genel ve özel anahtar çifti (PKCS) sertifikaların kullanımını destekler. Bu makalede, şirket içi sertifika bağlayıcı gibi gerekli altyapının yapılandırılması, PKCS sertifikasını dışarı aktarma ve ardından sertifikayı Intune cihaz yapılandırma profiline eklemek yardımcı olabilir.
 
-Bu makalede, PKCS sertifikalarını kullanmak için gereksinimler listeler, PKCS sertifikasını dışarı aktarma ve sertifika için bir Intune cihaz yapılandırma profili ekleme işlemi gösterilmektedir.
+Microsoft Intune erişim ve kimlik doğrulaması, kuruluş kaynaklarına PKCS sertifikalarını kullanmak için yerleşik ayarlarını içerir. Sertifikaların kimliğini doğrulamak ve şirket kaynaklarına güvenli erişim, VPN veya WiFi ağına ister. Bu ayarlar, Intune'da cihaz yapılandırma profilleri kullanarak cihazlara dağıtın.
+
 
 ## <a name="requirements"></a>Gereksinimler
 
-PKCS sertifikalarını Intune ile kullanmak için aşağıdaki altyapıya sahip olduğunuzdan emin olun:
+Intune ile PKCS sertifikalarını kullanmak için aşağıdaki altyapıya ihtiyacınız olacak:
 
 - **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucuları, Active Directory etki alanınıza katılmalıdır.
 
-  AD DS'yi yükleme ve yapılandırma hakkında daha fazla bilgi için bkz. [AD DS Tasarımı ve Planlaması](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
+  Yükleme ve Active Directory etki alanı Hizmetleri (AD DS) yapılandırma hakkında daha fazla bilgi için bkz. [AD DS tasarımı ve planlaması](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
 
-- **Sertifika yetkilisi** (CA): Bir kuruluş sertifika yetkilisi (CA)
+- **Sertifika yetkilisi**: Bir kuruluş sertifika yetkilisi (CA).
 
-  Active Directory Sertifika Hizmetleri'ni (AD CS) yükleme ve yapılandırma hakkında daha fazla bilgi için bkz. [Active Directory Sertifika Hizmetleri Adım Adım Kılavuzu](https://technet.microsoft.com/library/cc772393).
+  Yükleme ve Active Directory Sertifika Hizmetleri (AD CS) yapılandırma hakkında daha fazla bilgi için bkz: [Active Directory Sertifika Hizmetleri Adım Adım Kılavuzu](https://technet.microsoft.com/library/cc772393).
 
-  > [!WARNING]
+  > [!WARNING]  
   > Intune, AD CS'yi, Tek Başına bir CA yerine bir Kurumsal Sertifika Yetkilisi (CA) ile çalıştırmanızı gerektirir.
 
-- **Bir istemci**: Kurumsal CA'ya bağlanmak için
+- **Bir istemci**: Kurumsal CA'ya bağlanmak için.
 
-- **Kök sertifika**: Kök sertifikanızın Kurumsal ca'ndan dışa aktarılmış bir kopyası
+- **Kök sertifika**: Kök sertifikanızın Kurumsal CA'ndan dışa aktarılmış bir kopyası.
 
-- **Microsoft Intune sertifika Bağlayıcısı**: İndirmek için Azure portalını kullanın **sertifika Bağlayıcısı** Yükleyicisi (**NDESConnectorSetup.exe**). 
+- **Microsoft Intune sertifika Bağlayıcısı**: Intune portalında, Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *adımları PKCS #12 bağlayıcısını yükleme*. Sertifika Bağlayıcısı Installer indirmeye başlamak için portalda indirme bağlantısı kullanmak **NDESConnectorSetup.exe**.  
+- 
+  Bu bağlayıcı, kimlik doğrulaması veya e-posta S/MIME imzalama için kullanılan PKCS sertifika isteklerini işler.
 
-  Bağlayıcı, kimlik doğrulama veya S/MIME e-posta imzalamaları için kullanılan PKCS sertifikası isteklerini işler.
+  NDES sertifika Bağlayıcısı, Federal Bilgi İşleme Standardı (FIPS) mod da destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
 
-  NDES Sertifika bağlayıcısı, Federal Bilgi İşleme Standardı (FIPS) modunu da destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
+- **İçeri aktarılan PFX sertifika Bağlayıcısı için Microsoft Intune**: S/MIME e-posta şifreleme kullanmayı planlıyorsanız, bir bağlayıcı indirmek için Intune portalını kullanın *içeri aktarılan PFX sertifikaları*.  Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *için bağlayıcısını yükleme adımları İçeri aktarılan PFX sertifikaları*. Yükleyicinin indirmeye başlamak için portalda indirme bağlantısı kullanmak **PfxCertificateConnectorBootstrapper.exe**. 
 
-- **PFX sertifika Bağlayıcısı Microsoft Intune için**: S/MIME e-posta şifreleme kullanmayı planlıyorsanız, indirmek için Azure portalını kullanın **PFX sertifika Bağlayıcısı için Intune** Yükleyicisi (**PfxCertificateConnectorBootstrapper.exe**). Bağlayıcı, belirli bir kullanıcı için e-posta şifreleme S/MIME için Intune'da içeri PFX dosyaları için istekleri işler.
+  Bu bağlayıcının belirli bir kullanıcı için e-posta şifreleme S/MIME için Intune'a içeri aktarılan PFX dosyaları için istekleri işler.  
 
-- **Windows Server**: Konaklar:
+  Yeni sürümler kullanılabilir olduğunda bu bağlayıcı kendisini otomatik olarak güncelleştirebilirsiniz. Güncelleştirme özellikten yararlanabilmek için şunları yapmalısınız:
+  - İçeri aktarılan PFX sertifika Bağlayıcısı'nı Microsoft Intune için sunucunuza yükleyin.
+  - Önemli güncelleştirmeleri otomatik olarak almak için güvenlik duvarları başvurmak bağlayıcıyı izin veren açık olmasını **autoupdate.msappproxy.net** noktasında **443**.  
 
-  - Kimlik doğrulama ve S/MIME e-posta imzalama senaryoları için Microsoft Intune Sertifika Bağlayıcısı (NDESConnectorSetup.exe)
-  - S/MIME e-posta şifreleme senaryoları için Microsoft Intune için PFX Sertifika Bağlayıcısı (PfxCertificateConnectorBootstrapper.exe).
 
-  Her iki bağlayıcıyı da (**Microsoft Intune Sertifika Bağlayıcısı** ve **Microsoft Intune için PFX Sertifika Bağlayıcısı**) aynı sunucuda çalıştırabilirsiniz.
+- **Windows Server**: Bir Windows sunucusu konağına kullanabilirsiniz:
+
+  - Microsoft Intune Certificate Bağlayıcısı - kimlik doğrulaması ve S/MIME için e-posta imzalama senaryoları
+  - PFX sertifika Bağlayıcısı Microsoft Intune - S/MIME e-posta şifreleme senaryolar için.
+
+  Her iki bağlayıcıyı yükleyebilirsiniz (*Microsoft Intune sertifika Bağlayıcısı* ve *içeri aktarılan PFX sertifika Bağlayıcısı*) ile aynı sunucuda.
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Kök sertifikayı Kurumsal CA'dan dışa aktarın
 
-VPN, WiFi ve diğer kaynakları ile kimlik doğrulaması için kök veya ara CA sertifikasını her cihazda gereklidir. Aşağıdaki adımlar, Kurumsal CA'nızdan gerekli sertifikayı nasıl alacağınızı açıklar.
+VPN, WiFi ve diğer kaynaklara sahip bir cihaz kimliğini doğrulamak için bir cihaza bir kök veya ara CA sertifikası gerekir. Aşağıdaki adımlar, Kurumsal CA'nızdan gerekli sertifikayı nasıl alacağınızı açıklar.
 
 1. Yönetici ayrıcalıklarına sahip bir hesapla Kurumsal CA’nızda oturum açın.
 2. Yönetici olarak bir komut istemi açın.
@@ -119,14 +127,15 @@ VPN, WiFi ve diğer kaynakları ile kimlik doğrulaması için kök veya ara CA 
 
 ### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Sertifika Bağlayıcısı
 
-> [!IMPORTANT] 
-> Microsoft Intune Sertifika Bağlayıcısı, ayrı bir Windows sunucusunda yüklü **olmalıdır**. Sertifika veren Sertifika Yetkilisi’ne (CA) yüklenemez.
+> [!IMPORTANT]  
+> Microsoft Intune sertifika bağlayıcı, sertifika veren sertifika yetkilisi (CA) üzerinde yüklü ve bunun yerine ayrı bir Windows sunucusuna yüklenmesi gerekir.  
 
 1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri**, filtre **Intune** > seçin **Intune**.
-2. **Cihaz Yapılandırması** > **Sertifika Yetkilisi** > **Ekle**’yi seçin.
-3. Bağlayıcı dosyasını indirip kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
+2. Seçin **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**.
+3. İndirin ve bağlayıcı dosyasını bir konuma kaydetme Bağlayıcısı'nı yüklemek için nereye gideceğinizi sunucudan erişebilir.
 
-    ![ConnectorDownload][ConnectorDownload]
+    ![NDES Bağlayıcısı indirme](media/certificates-pfx-configure/download-ndes-connector.png)
+ 
 
 4. İndirme tamamlandıktan sonra sunucuda oturum açın. Daha sonra:
 
@@ -137,32 +146,31 @@ VPN, WiFi ve diğer kaynakları ile kimlik doğrulaması için kök veya ara CA 
 5. NDES Bağlayıcısı, **Kayıt** sekmesini açar. Intune bağlantısını etkinleştirmek için **Oturum Aç**’ı seçin ve yönetim izinleri olan bir hesap girin.
 6. **Gelişmiş** sekmesinde **Bu bilgisayarın SİSTEM hesabını kullan (varsayılan)**’ı seçili bırakmanız önerilir.
 7. **Uygula** > **Kapat**
-8. Azure portalına dönün (**Intune** > **Cihaz Yapılandırması** > **Sertifika Yetkilisi**). Birkaç dakika sonra yeşil bir onay işareti gösterilir ve **bağlantı durumu** olduğu **etkin**. Bağlayıcı sunucunuz artık Intune'la iletişim kurabilir.
+8. Intune portalına dönün (**Intune** > **cihaz Yapılandırması** > **sertifika Bağlayıcılar**). Birkaç dakika sonra yeşil bir onay işareti gösterilir ve **bağlantı durumu** olduğu **etkin**. Bağlayıcı sunucunuz artık Intune'la iletişim kurabilir.
 9. Ağ ortamınızda bir web proxy varsa, çalışması bağlayıcıyı etkinleştirmek için ek yapılandırma gerekebilir. Daha fazla bilgi için [iş mevcut şirket içi proxy sunucuları](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) Azure Active Directory belgelerinde.
 
-> [!NOTE]
-> TLS 1.2 desteği, Microsoft Intune Sertifika Bağlayıcısı'na dahil edilmiştir. Bu nedenle Microsoft Intune Sertifika Bağlayıcısı'nın yüklü olduğu sunucu TLS 1.2’yi destekliyorsa TLS 1.2 kullanılır. Sunucu TLS 1.2 desteklemiyorsa TLS 1.1 kullanılır. Şu anda TLS 1.1, cihazlar ve sunucu arasında kimlik doğrulaması için kullanılmaktadır.
+> [!NOTE]  
+> Microsoft Intune sertifika Bağlayıcısı, TLS 1.2 destekler. TLS 1.2 bağlayıcısını barındıran sunucuda yüklü değilse, bağlayıcı, TLS 1.2 kullanır. Aksi takdirde, TLS 1.1 kullanılır. Şu anda TLS 1.1, cihazlar ve sunucu arasında kimlik doğrulaması için kullanılmaktadır.
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>Microsoft Intune için PFX Sertifika Bağlayıcısı
 
 1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-2. **Cihaz Yapılandırması** > **Sertifika Yetkilisi** > **Ekle** seçeneğini belirleyin
+2. Seçin **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**
 3. Microsoft Intune için PFX Sertifika Bağlayıcısı’nı indirin ve kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
 4. İndirme tamamlandıktan sonra sunucuda oturum açın. Daha sonra:
 
     1. Microsoft Intune için PFX Sertifika Bağlayıcısı'nın gerektirdiği .NET 4.6 Framework veya sonraki bir sürümünün yüklü olduğundan emin olun. .NET 4.6 Framework yüklü değilse yükleyici bunu otomatik olarak yükler.
-    2. Yükleyiciyi (PfxCertificateConnectorBootstrapper.exe) çalıştırın ve varsayılan konumu kabul edin. Bağlayıcı `Program Files\Microsoft Intune\PFXCertificateConnector` konumuna yüklenir.
+    2. (PfxCertificateConnectorBootstrapper.exe) yükleyiciyi çalıştırın ve bağlayıcıya yükler varsayılan konumu kabul edin `Program Files\Microsoft Intune\PFXCertificateConnector`.
     3. Bağlayıcı hizmeti yerel sistem hesabının altında çalışır. İnternet erişimi için bir ara sunucu gerekiyorsa, yerel hizmet hesabının sunucudaki ara sunucu ayarlarına erişebildiğinizden emin olun.
 
 5. Microsoft Intune için PFX Sertifika Bağlayıcısı yüklendikten sonra **Kayıt** sekmesini açar. Intune bağlantısını etkinleştirmek için **Oturum Aç**'ı seçin ve Azure genel yöneticisi veya Intune yöneticisi izinleri olan bir hesap girin.
 6. Pencereyi kapatın.
-7. Azure portalına dönün (**Intune** > **Cihaz Yapılandırması** > **Sertifika Yetkilisi**). Birkaç dakika sonra yeşil bir onay işareti gösterilir ve **bağlantı durumu** olduğu **etkin**. Bağlayıcı sunucunuz artık Intune'la iletişim kurabilir.
+7. Azure portalına dönün (**Intune** > **cihaz Yapılandırması** > **sertifika Bağlayıcılar**). Birkaç dakika sonra yeşil bir onay işareti gösterilir ve **bağlantı durumu** olduğu **etkin**. Bağlayıcı sunucunuz artık Intune'la iletişim kurabilir.
 
 ## <a name="create-a-trusted-certificate-profile"></a>Güvenilen bir sertifika profili oluşturma
 
 1. [Azure portalında](https://portal.azure.com) **Intune** > **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**’a gidin.
-
-   ![NavigateIntune][NavigateIntune]
+    ![Intune'a gidin ve yeni bir güvenilir sertifika profili oluşturma](media/certificates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. Aşağıdaki özellikleri girin:
 
@@ -176,7 +184,7 @@ VPN, WiFi ve diğer kaynakları ile kimlik doğrulaması için kök veya ara CA 
    > [!NOTE]
    > **Adım 3**’te seçtiğiniz platforma bağlı olarak olabilir sertifikanın **Hedef deposunu** seçebilir veya seçemeyebilirsiniz.
 
-   ![ProfileSettings][ProfileSettings]
+   ![Bir profil oluşturun ve güvenilen bir sertifika yükleyin](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
 4. Profilinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
 5. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profillerini atama](device-profile-assign.md).

@@ -18,52 +18,54 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b20acc1c6b3fd64536b473013182d06e2bc04623
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 3ecc93ae788179991fd27545405d8d7319f74481
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55834203"
 ---
-# <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Windows 8.1 veya Windows RT 8.1 cihazınızı Intune’a kaydetme
+# <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Windows 8.1 veya Windows RT 8.1 cihazınızı Intune’a kaydetme  
 
-Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [Şirketinizin destek biriminin cihazınızda görebilecekleri ve göremeyecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Şirketinizde veya okulunuzda Microsoft Intune kullanılıyorsa, şirket e-postasına, dosyalarına ve diğer kaynaklarına erişmek için cihazlarınızı kaydedebilirsiniz. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [Şirketinizin destek biriminin cihazınızda görebilecekleri ve göremeyecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
 
-Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetmek için:
+Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetmek için:  
 
-1.  Cihazda **Ayarlar** &gt; **Bilgisayar Ayarları** &gt; **Ağ** &gt; **İş yeri**’ne dokunun.
+1.  Cihazda **Ayarlar** &gt; **Bilgisayar Ayarları** &gt; **Ağ** &gt; **İş yeri**’ne dokunun.  
 
-    ![nav-to-workplace](./media/W81-1-workplacejoin.png)
+    ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
-2.  Gerekirse, Kullanıcı Kimliği için iş veya okul e-postanızı girin ve **Katıl**’a dokunun.
+2.  Gerekirse, Kullanıcı Kimliği için iş veya okul e-postanızı girin ve **Katıl**’a dokunun. Kullanıcı Kimliğiniz gerekmiyorsa, bu cihazda oturum açarken girdiğiniz e-posta adresi kullanılır.  
 
-    Kullanıcı kimliğiniz gerekmiyorsa, bu cihazda oturum açarken girdiğiniz e-posta adresi kullanılır.
+3.  İş veya okul e-postanızın parolasını girin.  
 
-3.  İş veya okul e-postanızın parolasını girin.
 
-    ![type-password](./media/W81-2-workplacesettings_signin.png)
+    ![type-password](./media/W81-2-workplacesettings_signin.png)  
 
-4.  **Cihaz yönetimini aç** altında **Aç**’a dokunun.
+4.  **Cihaz yönetimini aç** altında **Aç**’a dokunun.  
 
-    ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  **Şirket destek biriminden gelen uygulama ve hizmetlere izin ver** iletişim kutusunda **Kabul ediyorum** kutusunu işaretleyin ve ardından **Aç**’a dokunun.
+    ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)  
 
-    ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)
+5.  **Şirket destek biriminden gelen uygulama ve hizmetlere izin ver** iletişim kutusunda **Kabul ediyorum** kutusunu işaretleyin ve ardından **Aç**’a dokunun.  
 
-    Başarıyla kaydolduktan sonra aşağıdaki ekranı görürsünüz.
+
+    ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)  
+
+    Başarıyla kaydolduktan sonra aşağıdaki ekranı görürsünüz.  
+
 
     ![enrollment-complete](./media/W81-5-enrolled-done.png)
 
 Ayrıca sizinle ve rolünüzle ilgili olan şirket uygulamalarını kolayca belirleyip edinmenizi sağlayan Şirket Portalı uygulamasını yüklemenizi öneririz. Şirketinizin Intune’u nasıl ayarladığına bağlı olarak, Şirket Portalı uygulaması kayıt sürecinizin parçası olarak yüklenmiş olabilir. Uygulamaya sahip olup olmadığınızı denetlemek için uygulama listenizde **Şirket Portalı**’nı arayın. Uygulama listenizde Şirket Portalı’nı görmüyorsanız, yüklemek için aşağıdaki adımları izleyin.
 
-1.  **Başlat** &gt; **Mağaza**’ya dokunun.
+1.  **Başlat** &gt; **Mağaza**’ya dokunun.  
 
-2.  **Ara**’ya dokunun, sonra **şirket portalı** yazın.
+2.  **Ara**’ya dokunun, sonra **şirket portalı** yazın.  
 
-3.  Sonuçlar listesinde **Şirket Portalı**’na dokunun.
+3.  Sonuçlar listesinde **Şirket Portalı**’na dokunun.  
 
-4.  **Yükle** veya **Ücretsiz**’e dokunun. Gösterilen seçenek, şirketinizin uygulamayı nasıl ayarladığına bağlıdır.
+4.  **Yükle** veya **Ücretsiz**’e dokunun. Gösterilen seçenek, şirketinizin uygulamayı nasıl ayarladığına bağlıdır.  
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

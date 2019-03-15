@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9963e482f0f6348a65138cbacecd779fbaa07ae6
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 7993b598a2194cb11fa6f4d17a9c21fb6435c4e9
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57391152"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot (Önizleme) kullanarak
@@ -37,6 +37,7 @@ Kaydedilecek cihazlar ayrıca:
 - İnternet erişimine sahip olmalıdır.
 - Active Directory’nize erişime sahip olmalıdır (VPN bağlantısı desteklenmez).
 - Kullanıma hazır deneyimi (OOBE) geçeriz.
+- Katılmak için çalıştığınız etki alanının etki alanı denetleyicisi ping mümkün olmayacaktır.
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 otomatik kaydını ayarlama
 

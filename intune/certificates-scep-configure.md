@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c0f498dd4a3fc26a909bd9c0adfd9247c588097
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 8712fc49bce8237e717a1a38e63ec334509e3217
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57400475"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
@@ -37,9 +37,9 @@ Bu makale, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile
 - **NDES sunucusu**: Bir Windows Server 2012 R2 veya sonraki sürümlerde, ağ cihazı kayıt hizmeti (NDES) sunucusu rolü ayarlayın. Intune, Enterprise CA çalıştıran bir sunucuda NDES kullanımını desteklemez. Windows Server 2012 R2’yi NDES’yi barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](http://technet.microsoft.com/library/hh831498.aspx).
 NDES sunucusu, Enterprise CA ile aynı ormanda bulunan bir etki alanına katılmış olmalıdır. NDES sunucusunu ayrı bir ormanda, yalıtılmış ağda veya iç etki alanında dağıtma hakkında daha fazla bilgi, [Ağ Cihazı Kayıt Hizmeti ile İlke Modülü Kullanma](https://technet.microsoft.com/library/dn473016.aspx) başlığı altında bulunabilir.
 
-- **Microsoft Intune sertifika Bağlayıcısı**: İndirme **sertifika Bağlayıcısı** Yükleyicisi (**NDESConnectorSetup.exe**) Intune Yönetim Portalı'ndan. NDES rolüne sahip bir sunucuda bu yükleyiciyi çalıştırın.  
+- **Microsoft Intune sertifika Bağlayıcısı**: Intune portalında, Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *adımları SCEP bağlayıcısını yükleme*. Sertifika Bağlayıcısı Installer indirmeye başlamak için portalda indirme bağlantısı kullanmak **NDESConnectorSetup.exe**.  NDES rolüne sahip bir sunucuda bu yükleyiciyi çalıştırın.  
 
-  - NDES Sertifika bağlayıcısı, Federal Bilgi İşleme Standardı (FIPS) modunu da destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
+Bu sertifikayı NDES bağlayıcı ayrıca Federal Bilgi İşleme Standardı (FIPS) modunu destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
 
 - **Web uygulaması Ara sunucusu** (isteğe bağlı): Windows Server 2012 R2 çalıştıran bir sunucu kullanın veya daha yeni bir Web uygulaması Ara sunucusu (WAP) sunucusu olarak. Bu yapılandırma:
   - Cihazların bir İnternet bağlantısını kullanarak sertifikaları almasını sağlar.
@@ -302,7 +302,7 @@ Bu adımda şunları yapacaksınız:
 2. **Cihaz Yapılandırması** > **Sertifika Yetkilisi** > **Ekle** seçeneğini belirleyin
 3. Bağlayıcı dosyasını indirip kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
 
 4. İndirme tamamlandıktan sonra Ağ Cihazı Kayıt Protokolü (NDES) rolünü barındıran sunucuya gidin. Daha sonra:
 

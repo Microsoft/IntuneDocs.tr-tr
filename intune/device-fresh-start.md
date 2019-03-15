@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 230c328c14f0da39db34c8b91ac30fe05f9b05ca
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57388188"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Windows 10 cihazlarını Intune ile sıfırlamak için Fresh Start kullanma
@@ -41,5 +41,5 @@ ms.locfileid: "57388188"
  > Kullanıcı verilerini saklamazsanız, cihaz hazır geldiği duruma geri yüklenir. KCG cihazları Azure AD'den kaydı ve mobil cihaz yönetimi.
  > Azure AD'ye katılmış cihazları Azure Active Directory kullanıcı işaretlerini cihazında etkinleştirildiğinde mobil cihazı yönetime yeniden kaydedilir.
  
-5. **Tamam**'ı tıklatın.   
+5. **Tamam** düğmesine tıklayın.   
 6. Bu eylemin durumunu görmek için, **Cihazlar**'a dönün ve **Cihaz eylemleri**'ne tıklayın.  

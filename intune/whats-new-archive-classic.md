@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 32bee8ea873c728741deac1ef2adfd57bd9bf612
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57461286"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Klasik Intune portalındaki yenilikler - önceki aylar
@@ -38,27 +38,27 @@ Bu sayfa, klasik Intune portalı için [Yenilikler sayfasında](whats-new.md) da
 
 Managed Browser için Microsoft MyApps desteği geliştirildi. Yönetim hedefinde yer almayan Managed Browser kullanıcıları doğrudan MyApps hizmetine alınarak yöneticileri tarafından sağlanan SaaS uygulamalarına erişebilecekler. Intune yönetimi hedefinde yer alan kullanıcılar ise MyApps içeriğine yerleşik Managed Browser yer işaretinden erişim sağlayabilecekler.
 
-#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Managed Browser ve Şirket Portalı için yeni simgeler <!--918433, 918431, 971473-->
+#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Managed Browser ve Şirket portalı için yeni simgeler <!--918433, 918431, 971473-->
 
 Managed Browser uygulamasının hem Android hem de iOS sürümlerinin simgesi güncelleştiriliyor. Yeni simgede Enterprise Mobility + Security (EM+S) paketindeki diğer uygulamalarla tutarlı hale getirmek için güncelleştirilmiş Intune rozeti bulunacak. Managed Browser'ın yeni simgesini [Intune uygulama arabirimindeki yenilikler sayfasında](whats-new-app-ui.md) görebilirsiniz.
 
 Şirket Portalı uygulamasının da Android, iOS ve Windows sürümlerinin simgeleri EM+S paketindeki diğer uygulamalarla daha tutarlı hale getirilmek üzere güncelleştiriliyor. Bu simgeler nisan ayından başlayarak mayıs ayının sonuna kadar kademeli olarak kullanıma sunulacak.
 
-#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android Şirket Portalı uygulamasında oturum açma ilerleme göstergesi <!--953374-->
+#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>İlerleme göstergesi Android Şirket portalı uygulamasında oturum açmalarını sağlama <!--953374-->
 
 Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıcı uygulamayı başlattığında veya sürdürdüğünde oturum açma ilerleme göstergesi görüntüleniyor. Kullanıcının uygulamaya erişmesine izin verilmeden önce göstergede "Bağlanıyor..." ile başlayıp sırasıyla "Oturum açılıyor..." ve "Güvenlik gereksinimleri denetleniyor..."durumları gösteriliyor. Android için Şirket Portalı uygulamasının yeni ekran görüntülerini [Intune uygulaması kullanıcı arabirimindeki yenilikler sayfasında](whats-new-app-ui.md) görebilirsiniz.
 
-#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Uygulamaların SharePoint Online’a erişmesini engelleyin <!-- 679339 -->
+#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Uygulamaların SharePoint Online'a erişmesini engelleyin <!-- 679339 -->
 
 Uygulama koruma ilkelerinin uygulanmadığı uygulamaların [SharePoint Online](app-based-conditional-access-intune-create.md)’a erişmesini engellemek için artık uygulama tabanlı koşullu erişim ilkesi oluşturabilirsiniz. Uygulama tabanlı koşullu erişim senaryosunda, Azure portalını kullanarak SharePoint Online’a erişmesini istediğiniz uygulamaları belirtebilirsiniz.
 
-#### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>iOS Şirket Portalından iOS için Outlook uygulamasına çoklu oturum açma desteği <!--834012-->
+#### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Çoklu oturum açma desteği iOS için şirket Portalı'ndan iOS için Outlook <!--834012-->
 Aynı cihazda aynı hesapla iOS için Şirket Portalı uygulamasında oturum açmış kullanıcıların artık Outlook uygulamasında oturum açmasına gerek yok. Kullanıcılar Outlook uygulamasını başlattıktan sonra hesaplarını seçip otomatik olarak oturum açabilecekler. Bu işlevi diğer Microsoft uygulamalarına da eklemek için çalışıyoruz.
 
-#### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>iOS için Şirket Portalı uygulamasında geliştirilmiş durum iletileri <!--744866-->
+#### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>Geliştirilmiş iOS için Şirket portalı uygulamasında durum iletileri <!--744866-->
 iOS için Şirket Portalı uygulamasında artık daha açıklayıcı hata iletileri görüntülenecek ve cihazlardaki gelişmeler hakkında daha açıklayıcı bilgiler verilecek. Bu hata durumları önceden "Şirket Portalı Geçici Olarak Devre Dışı" konulu genel bir hata iletisi içinde listeleniyordu. Ayrıca İnternet bağlantısı olmayan bir kullanıcı iOS üzerinde Şirket Portalı uygulamasını başlattığında ana sayfada "İnternet Bağlantısı Yok" yazan kalıcı bir durum çubuğu görecek.
 
-#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Geliştirilmiş Windows 10 Şirket Portalı uygulaması yükleme durumu <!--676495-->
+#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Geliştirilmiş Windows 10 Şirket portalı uygulaması yükleme durumu <!--676495-->
 
 Windows 10 Şirket portalı uygulamasında başlatılan uygulama yükleme için yeni geliştirmeler şunlardır:
 -   MSI paketleri için daha hızlı yükleme durumu raporlaması
@@ -67,11 +67,11 @@ Windows 10 Şirket portalı uygulamasında başlatılan uygulama yükleme için 
 
 Yeni ilerleme çubuğunu [Intune uygulama arabirimindeki yenilikler sayfasında](whats-new-app-ui.md) görebilirsiniz.
 
-#### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 cihazlarını toplu kaydetme <!-- 747607 -->
+#### <a name="bulk-enroll-windows-10-devices----747607---"></a>Toplu kaydetme Windows 10 cihazları <!-- 747607 -->
 
 Artık, Windows Yapılandırma Tasarımcısı (WCD) kullanarak Windows 10 Creators Update çalıştıran çok sayıda cihazın Azure Active Directory ve Intune’a katılmasını sağlayabilirsiniz. Azure AD kiracınız için [Toplu MDM kaydını](windows-bulk-enroll.md) etkinleştirmek için Windows Yapılandırma Tasarımcısı kullanarak cihazların Azure AD kiracınıza katılmasını sağlayan bir sağlama paketi oluşturun ve paketi toplu kaydetmek ve yönetmek istediğiniz şirkete ait cihazlara uygulayın. Paket cihazlarınıza uygulandıktan sonra cihazlar Azure AD'ye katılır, Intune'a kaydolur ve Azure AD kullanıcılarınızın oturum açmasına hazır hale gelir.  Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan ilkeleri ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
 
-### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure portalında Intune’un genel önizlemesindeki yenilikler<!--736542-->
+### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure portalında Intune'un genel önizlemesindeki yenilikler<!--736542-->
 
 2017 takvim yılının başlarında tam yönetici deneyimimizi Azure’a geçireceğiz. Bu sayede Graph API’leri kullanılarak genişletilebilen modern bir hizmet platformunda çekirdek EMS iş akışlarının güçlü ve tümleşik yönetimi mümkün olacaktır.
 
@@ -83,11 +83,11 @@ Azure’da Intune önizlemesindeki yenilikleri [buradan](whats-new.md) bulabilir
 
 ### <a name="notices"></a>Bildirimler
 
-#### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Apple kayıt senaryolarına doğrudan erişim <!--951869-->
+#### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Apple kayıt senaryolarına doğrudan erişimi <!--951869-->
 
 Intune, Azure Önizleme Portalı'ndaki Cihaz Kaydetme iş yükünü kullanarak Apple kayıt senaryolarına doğrudan erişimi Ocak 2017 sonrasında oluşturulan Intune hesapları için etkinleştirdi. Daha önce, Apple kayıt önizleme sürümüne yalnızca Azure portalı bağlantıları ile erişilebiliyordu. Bu özelliklerin Azure’da kullanılabilmesi için, Ocak 2017 öncesi oluşturulan Intune hesaplarında tek seferlik bir geçiş yapılması gerekir. Geçiş için zaman çizelgesi henüz açıklanmamıştır, ancak konuya ilişkin ayrıntılar olabildiğince çabuk duyurulacaktır. Mevcut hesabınız önizleme sürümüne erişemiyorsa, yeni deneyimi test etmek için bir deneme hesabı oluşturmanızı kesinlikle öneririz.
 
-#### <a name="whats-coming-for-appx-in-intune-in-the-azure-portal----1000270---"></a>Azure portalında Intune’da Appx için yenilikler <!-- 1000270 -->
+#### <a name="whats-coming-for-appx-in-intune-in-the-azure-portal----1000270---"></a>Azure'da Intune Appx'leri için Azure portalında yakında <!-- 1000270 -->
 
 Azure portalında Intune’a geçişin bir parçası olarak üç appx değişikliği yapıyoruz:
 
@@ -109,7 +109,7 @@ Mevcut mobil uygulama yönetimi (MAM) yönetim rolleri (Katkıda bulunan, sahibi
 
 ### <a name="whats-coming"></a>Yakında
 
-#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalarında gelişmiş oturum açma deneyimi <!--User Story 1132123-->
+#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Geliştirilmiş oturum açma deneyimini Şirket portalı uygulamalarında tüm platformlar için <!--User Story 1132123-->
 
 Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum açma deneyimini geliştirecek bir değişikliği önümüzdeki birkaç ay içinde piyasaya süreceğiz. Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.
 
@@ -124,7 +124,7 @@ Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum a�
 Her iki [Microsoft Partner Center](https://partnercenter.microsoft.com/) ve [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/) , yönettiğiniz müşteri hesaplarında oturum açmanıza olanak tanıyacaktır. İş ortağı olarak ilerlemek için, lütfen müşterilerinizi bu sitelerimizden birini kullanarak yönetin.
 
 
-#### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, Uygulama Taşıma Güvenliği için güncelleştirmeler gerektirecek <!--748318-->
+#### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple, uygulama taşıma güvenliği için güncelleştirmeler gerektirecek şekilde <!--748318-->
 
 Apple, Uygulama Taşıma Güvenliği (ATS) için belirli gereksinimler uygulayacağını açıkladı. ATS, HTTPS üzerinden yapılan tüm uygulama iletişimlerinde daha sıkı güvenlik uygulamak için kullanılır. Bu değişiklik, iOS Şirket Portalı uygulamaları kullanan Intune müşterilerini etkiler.
 
@@ -145,7 +145,7 @@ Artık Microsoft Intune ile tümleşik çalışan mobil tehdit savunması çöz�
 
 Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Symantec Endpoint Protection Mobile (Skycure) risk değerlendirmesine dayalı olarak EMS koşullu erişim ilkeleri yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumsuz cihazların şirket kaynaklarına erişimine izin vermek ya da erişimi engellemek için bu ilkeleri kullanabilirsiniz. Daha fazla bilgi için [Symantec Endpoint Protection Mobile Bağlayıcısı](skycure-mobile-threat-defense-connector.md).
 
-#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android Şirket Portalı uygulaması için yeni kullanıcı deneyimi <!--621622-->
+#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android için Şirket portalı uygulaması için yeni kullanıcı deneyimi <!--621622-->
 
 Android için Şirket Portalı uygulamasının kullanıcı arabirimi daha modern görünüm ve daha iyi kullanıcı deneyimi için güncelleştiriliyor. Önemli güncelleştirmeler şunlardır:
 
@@ -161,7 +161,7 @@ Bu değişiklikler hakkında daha ayrıntılı bilgi için bkz. [Intune son kull
 
 Şirket Portalı web sitesinde yapılan tasarım değişikliklerinin bir parçası olarak iOS ve Android kullanıcılar yönetilmeyen cihazlarında kendilerine "kayıtsız kullanılabilir" olarak atanmış uygulamaları yükleyebilecek. Kullanıcılar Intune kimlik bilgilerini kullanarak Şirket Portalı web sitesine girebilecek ve kendilerine atanan uygulamaların listesini görebilecek. "Kayıtsız kullanılabilir" uygulamaların uygulama paketleri Şirket Portalı web sitesinden indirilebilir. Yükleme için kayıt gerektiren uygulamalar bu değişikten etkilenmeyecek ve bu uygulamaları yüklemek isteyen kullanıcılardan cihazlarını kaydetmeleri istenecektir.
 
-#### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Windows 10 Şirket Portalı için İmzalama Betiği <!--941642-->
+#### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Windows 10 Şirket portalı için kod imzalama <!--941642-->
 
 Windows 10 Şirket Portalı uygulamasını indirmeniz ve dışarıdan yüklemeniz gerekiyorsa, artık bir betik kullanarak uygulama imzalama işlemini kuruluşunuz için basitleştirebilir ve kolaylaştırabilirsiniz.   Betiği indirmek ve kullanma yönergelerine göz atmak için TechNet Galerisi’ndeki [Windows 10 Şirket Portalı için Microsoft Intune İmzalama Betiği](https://aka.ms/win10cpscript) makalesine bakın. Bu duyuru hakkında daha ayrıntılı bilgi edinmek için Intune Destek Ekibi Blogundaki [Windows 10 Şirket Portalı uygulamanızı güncelleştirme](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) yazısına bakın.
 
@@ -184,7 +184,7 @@ iOS 10.3 sürümü 27 Mart 2017 tarihinden itibaren iOS kullanıcılarına sunul
 - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 
-#### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>En iyi uygulama: Şirket Portalı uygulamalarınızın güncel olduğundan emin olun <!--879465-->
+#### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>En iyi yöntem: Şirket portalı uygulamalarınızın güncel olduğundan emin olun <!--879465-->
 
 Aralık 2016’da, iOS, Android, Windows 8.1+ veya Windows Phone 8.1+ cihazı kaydeden bir grup kullanıcı için çok faktörlü kimlik doğrulamasının (MFA) zorlanmasını sağlayan bir güncelleştirme yayımladık. Bu özellik, Android (v5.0.3419.0+) ve iOS (v2.1.17+) için Şirket Portalı uygulamasının belirli temel sürümleri olmadan çalışamaz.
 
@@ -202,31 +202,31 @@ Microsoft, Microsoft Teams’in genel kullanıma sunulduğunu açıkladı. iOS v
 
 ### <a name="new-capabilities"></a>Yeni Özellikler
 
-### <a name="modernizing-the-company-portal-website---753980--"></a>Şirket Portalı web sitesi modernleştiriliyor <!--753980-->
+### <a name="modernizing-the-company-portal-website---753980--"></a>Şirket portalı Web sitesi modernleştiriliyor <!--753980-->
 Şirket Portalı web sitesi, yönetilen cihazlara sahip olmayan kullanıcıları hedefleyen uygulamaları destekleyecek. Karşıt renklerden oluşan yeni renk düzeni ve dinamik çizimlerle yeniden tasarlanan web sitesi, yardım masası ilgili kişisine ilişkin ayrıntıların yanı sıra yönetilen mevcut cihazlara yönelik bilgilerin bulunduğu bir "hamburger menüsü" ![Şirket Portalı web sitesinin sol üst köşesine eklenmiş olan hamburger menüsünün küçük resmi](./media/CP_hamburger_menu.png).
 
 ### <a name="notices"></a>Bildirimler
 
-#### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>Grup geçişi için iOS cihazlarda grup veya ilke güncelleştirmesi gerekmeyecek <!--898837-->
+#### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>Grup Geçişi iOS cihazları için Grup veya ilke herhangi bir güncelleştirme gerektirmez <!--898837-->
 Azure Active Directory cihaz gruplarına geçiş sırasında, önceden bir Şirket Cihaz Kaydı profili tarafından atanmış olan her Intune cihaz grubu için Şirket Cihaz Kaydı profilinin adına göre AAD'de karşılık gelen bir dinamik cihaz grubu oluşturulacaktır. Bu sayede kaydı yapılan cihazların otomatik olarak gruplanması ve özgün Intune grubundakilerle aynı ilkeleri ve uygulamaları alması sağlanacaktır.
 
 Bir kiracı gruplama ve hedefleme için geçiş işlemine girdiğinde Intune, otomatik olarak Şirket Cihaz Kaydı profili tarafından hedeflenen Intune grubuna karşılık gelecek bir dinamik AAD grubu oluşturacaktır. Intune Yöneticisinin hedef Intune grubunu silmesi halinde karşılık gelen dinamik AAD grubu silinmeyecektir. Grubun üyeleri ve dinamik sorgu silinecek ancak BT Yöneticisi AAD portalı üzerinden kaldırılana kadar grubun kendisi kalacaktır.
 
 Benzer şekilde, BT Yöneticisinin bir Şirket Cihaz Kaydı profili ile hedeflenen Intune grubunu değiştirmesi halinde, Intune yeni profil atamasını yansıtan yeni bir dinamik grup oluşturacak ancak eski atama için oluşturulan dinamik grubu kaldırmayacaktır.
 
-### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Windows masaüstü cihazları Windows ayarları aracılığıyla yönetmek varsayılanlara sıfırlıyor <!--663050-->
+### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Windows Masaüstü cihazları Windows ayarları aracılığıyla yönetmek varsayılanlara sıfırlıyor <!--663050-->
 Windows 10 masaüstü cihazları kaydetmek için varsayılan davranış değişiyor. Yeni kayıtlar artık bilgisayar aracısı üzerinden değil, tipik MDM aracısı kayıt akışını izleyerek yapılacaktır. Şirket Portalı web sitesi, Windows 10 masaüstü kullanıcılarına Windows 10 masaüstü bilgisayarları mobil cihaz olarak ekleme işlemi için yönergeler sağlayacak kayıt yönergeleri temin edecektir. Bu, zaten kayıtlı olan bilgisayarları etkilemez ve [tercihe göre](manage-windows-pcs-with-microsoft-intune.md) kuruluşunuz bilgisayar aracısını kullanarak Windows 10 masaüstü cihazları yönetmeye devam edebilir.
 
-#### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Seçici silme için mobil uygulama yönetimi desteğini iyileştirme <!--581242-->
-Bu verilerin "Uygulama verileri silinmeden önce çevrimdışı zaman aralığı" ilkesi nedeniyle otomatik olarak kaldırılması durumunda, son kullanıcılara iş veya okul verilerine yeniden erişim sağlama konusunda ek yönergeler verilir.<!--, or the removal of the Intune Company Portal on Android.-->
+#### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Seçmeli silme için mobil uygulama yönetimi desteğini iyileştirme <!--581242-->
+"Temizlenmeden önce uygulama verilerini çevrimdışı zaman aralığı" ilkesi nedeniyle bu verileri otomatik olarak kaldırılması durumunda, son kullanıcıların iş erişimi yeniden kazanmak nasıl ya da Okul verilerini hakkında ek yönergeler verilir.<!--, or the removal of the Intune Company Portal on Android.-->
 
-#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>iOS için Şirket Portalı bağlantıları uygulamanın içinde açılır <!--665954-->
+#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>İOS bağlantıları için Şirket portalı uygulaması içinde açın <!--665954-->
 Belge ve uygulamalara yönlendirilen bağlantılar da dahil olmak üzere iOS için Şirket Portalı uygulaması içinde bulunan bağlantılar, Safari’nin uygulama içi görünümü kullanılarak doğrudan Şirket Portalı uygulamasında açılır. Bu güncelleştirme Ocak’taki hizmet güncelleştirmesinden ayrı olarak sevk edilir.
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows cihazları için yeni MDM sunucusu adresi <!--893007-->
 MDM sunucusu adresi olarak __manage.microsoft.com__ giren (sorulursa) Windows ve Windows Phone kullanıcıları, cihaz kaydetmeye çalıştıklarında başarısız olacaklardır. MDM sunucusu adresi __manage.microsoft.com__ yerine __enrollment.manage.microsoft.com__ olarak değiştirilmektedir. Kullanıcılarınızı, Windows veya Windows Phone cihazı kaydetmeye çalışırken sorulması halinde MDM sunucusu adresi olarak __enrollment.manage.microsoft.com__ girmeleri konusunda bilgilendirin. CNAME kurulumunuzda herhangi bir değişiklik gerekmez. Bu değişiklik hakkında daha fazla bilgi için [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange) adresini ziyaret edin.
 
-#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android Şirket Portalı uygulaması için yeni kullanıcı deneyimi <!--621622-->
+#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android için Şirket portalı uygulaması için yeni kullanıcı deneyimi <!--621622-->
 Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kılavuzuna](https://material.io/guidelines/material-design/introduction.html) uygun olarak modern bir tasarıma sahip olacak. Bu gelişmiş kullanıcı deneyimi şunları içeriyor olacak:
 
 * __Renkler__: Sekme başlıklarının renkleri özel renk paletinize göre değiştirilebilir.
@@ -236,10 +236,10 @@ Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kı
 
 Önce ve sonra görüntülerini [UI güncelleştirmeleri sayfasında](whats-new-app-ui.md) bulabilirsiniz.
 
-### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>İş İçin Microsoft Mağazası’yla birden çok yönetim aracını ilişkilendirme<!--926135-->
+### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>İş için Microsoft Store ile birden çok yönetim aracını ilişkilendirme <!--926135-->
 İş İçin Microsoft Mağazası uygulamalarını dağıtmak için birden fazla yönetim aracı kullanmanız durumunda önceden bunların yalnızca birini İş İçin Microsoft Mağazası ile ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz. Ayrıntılar için bkz. [Microsoft Intune ile İş İçin Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme](windows-store-for-business.md).
 
-## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Azure portalında Intune’un genel önizlemesindeki yenilikler <!--736542-->
+## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Azure portalında Intune'un genel önizlemesindeki yenilikler <!--736542-->
 
 2017 takvim yılının başlarında tam yönetici deneyimimizi Azure’a geçireceğiz. Bu sayede Graph API’leri kullanılarak genişletilebilen modern bir hizmet platformunda çekirdek EMS iş akışlarının güçlü ve tümleşik yönetimi mümkün olacaktır.
 
@@ -253,7 +253,7 @@ Azure’da Intune önizlemesindeki yenilikleri [buradan](whats-new.md) bulabilir
 
 ### <a name="new-capabilities"></a>Yeni Özellikler
 
-#### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Kayıtsız MAM için konsol içi raporlar <!--677961-->
+#### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Kayıt olmadan MAM için konsol içi raporlar <!--677961-->
 Hem kayıtlı hem kayıtlı olmayan cihazlar için yeni uygulama koruma raporları eklenmiştir. Nasıl yapabilecekleriniz hakkında daha fazla bilgi edinin [Intune ile mobil uygulama yönetimi ilkelerini izleme](app-protection-policies-monitor.md).
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 desteği <!--694397-->
@@ -264,18 +264,18 @@ Kullanıcıların cihazları Intune ile iletişimi kaybettiğinde, şirket kayna
 
 ### <a name="notices"></a>Bildirimler
 
-#### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Windows masaüstü cihazları Windows ayarları aracılığıyla yönetmek varsayılanlara sıfırlıyor <!--663050-->
+#### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Windows Masaüstü cihazları Windows ayarları aracılığıyla yönetmek varsayılanlara sıfırlıyor <!--663050-->
 Windows 10 masaüstü cihazları kaydetmek için varsayılan davranış değişiyor. Yeni kayıtlar artık bilgisayar aracısı üzerinden değil, tipik MDM aracısı kayıt akışını izleyerek yapılacaktır.
 
 Şirket Portalı web sitesi, Windows 10 masaüstü kullanıcılarına Windows 10 masaüstü bilgisayarları mobil cihaz olarak ekleme işlemi için yönergeler sağlayacak kayıt yönergeleri temin edecektir. Bu, zaten kayıtlı olan bilgisayarları etkilemez ve [tercihe göre](manage-windows-pcs-with-microsoft-intune.md) kuruluşunuz bilgisayar aracısını kullanarak Windows 10 masaüstü cihazları yönetmeye devam edebilir.
 
-#### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Seçici silme için mobil uygulama yönetimi desteğini iyileştirme <!--581242-->
-Bu verilerin "Uygulama verileri silinmeden önce çevrimdışı zaman aralığı" ilkesi nedeniyle otomatik olarak kaldırılması durumunda, son kullanıcılara iş veya okul verilerine yeniden erişim sağlama konusunda ek yönergeler verilir.<!--, or the removal of the Intune Company Portal on Android.-->
+#### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Seçmeli silme için mobil uygulama yönetimi desteğini iyileştirme <!--581242-->
+"Temizlenmeden önce uygulama verilerini çevrimdışı zaman aralığı" ilkesi nedeniyle bu verileri otomatik olarak kaldırılması durumunda, son kullanıcıların iş erişimi yeniden kazanmak nasıl ya da Okul verilerini hakkında ek yönergeler verilir.<!--, or the removal of the Intune Company Portal on Android.-->
 
-#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>iOS için Şirket Portalı bağlantıları uygulamanın içinde açılır <!--665954-->
+#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>İOS bağlantıları için Şirket portalı uygulaması içinde açın <!--665954-->
 Belge ve uygulamalara yönlendirilen bağlantılar da dahil olmak üzere iOS için Şirket Portalı uygulaması içinde bulunan bağlantılar, Safari’nin uygulama içi görünümü kullanılarak doğrudan Şirket Portalı uygulamasında açılır. Bu güncelleştirme Ocak’taki hizmet güncelleştirmesinden ayrı olarak sevk edilir.
 
-#### <a name="modernizing-the-company-portal-website---753980--"></a>Şirket Portalı web sitesi modernleştiriliyor <!--753980-->
+#### <a name="modernizing-the-company-portal-website---753980--"></a>Şirket portalı Web sitesi modernleştiriliyor <!--753980-->
 Şubat ayından itibaren Şirket Portalı web sitesi, yönetilen cihazlara sahip olmayan kullanıcıları hedefleyen uygulamaları destekleyecek. Karşıt renklerden oluşan yeni renk düzeni ve dinamik çizimlerle yeniden tasarlanan web sitesi, yardım masası ilgili kişisine ilişkin ayrıntıların yanı sıra yönetilen mevcut cihazlara yönelik bilgilerin bulunduğu bir "hamburger menüsü" ![Şirket Portalı web sitesi hamburger menüsü](./media/CP_hamburger_menu.png).
 
 #### <a name="new-documentation-for-app-protection-policies---583398--"></a>Uygulama koruma ilkeleri için yeni belgeler <!--583398-->
@@ -293,23 +293,26 @@ Aşağıdaki makaleler belgeler kitaplığına yeni eklenmiştir:
 * [Intune Uygulama SDK’sı Cordova Eklentisi](app-sdk-cordova.md)
 * [Intune Uygulama SDK’sı Xamarin Bileşeni](app-sdk-xamarin.md)
 
-#### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>iOS’ta Şirket Portalını başlatılırken ilerleme çubuğu <!--665978-->
+#### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>İos'ta şirket portalını başlatılırken ilerleme çubuğu <!--665978-->
 iOS için Şirket Portalı, kullanıcıya gerçekleşen yükleme işlemleri hakkında bilgi sağlamak için başlatma ekranında bir ilerleme çubuğu yeniliği sunuyor. Değer değiştiricinin yerini alması için ilerleme çubuğunun aşamalı dağıtımı yapılacaktır. Yani bazı kullanıcılarınız yeni ilerleme çubuğunu görecek, diğerleri ise değer değiştiriciyi görmeye devam edecektir.
 
 ## <a name="december-2016"></a>Aralık 2016
 
-### <a name="public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure portalında Intune’un genel önizlemesi <!--736542-->
+### <a name="public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure portalında Intune'un genel önizlemesindeki<!--736542-->
 2017 takvim yılının başlarında tam yönetici deneyimimizi Azure’a geçireceğiz. Bu sayede Graph API’leri kullanılarak genişletilebilen modern bir hizmet platformunda çekirdek EMS iş akışlarının güçlü ve tümleşik yönetimi mümkün olacaktır. Tüm Intune kiracıları için bu portalın genel kullanılabilirliğinin yanı sıra, kiracı seçmek için bu yeni yönetici deneyiminin önizlemesini bu ay içinde kullanıma sunmaya başlayacağımızı duyurmak isteriz.
 
 Azure portalındaki yönetici deneyimi, duyurulan yeni gruplandırma ve hedefleme işlevselliğini kullanır; mevcut kiracınız yeni gruplandırma deneyimine geçirildiğinde, siz de kiracınıza yönelik yeni yönetici deneyimini önizlemek üzere geçirilirsiniz. Bu sırada, Azure portalında Microsoft Intune hakkında bilgilere [yeni belgelerimizden](/intune/what-is-intune) ulaşabilirsiniz.
 
-__Azure portalının genel önizlemesinde telekom gider yönetimi__ <!--747605--> Azure portalında, üçüncü taraf telekom gider yönetimi (TEM) hizmetleri ile tümleştirme özelliğini önizlemeye sunuyoruz. Yurt içi verilerin ve dolaşım verilerinin kullanımına yönelik sınırlamalarını zorunlu olarak uygulamak için Intune'u kullanabilirsiniz. Bu tümleştirmelere [Saaswedo](http://www.saaswedo.com/) ile başlıyoruz. Deneme kiracınızda bu özelliği etkinleştirmek için lütfen [Microsoft desteğine başvurun](get-support.md).
+__Azure portalının genel önizlemesinde Telekom Gider Yönetimi tümleştirmesi__ <!--747605-->
+Artık Azure portalında üçüncü taraf telekom gider yönetimi (TEM) hizmetleri ile tümleştirme önizlemesine başlıyoruz. Yurt içi verilerin ve dolaşım verilerinin kullanımına yönelik sınırlamalarını zorunlu olarak uygulamak için Intune'u kullanabilirsiniz. Bu tümleştirmelere [Saaswedo](http://www.saaswedo.com/) ile başlıyoruz. Deneme kiracınızda bu özelliği etkinleştirmek için lütfen [Microsoft desteğine başvurun](get-support.md).
 
 ### <a name="new-capabilities"></a>Yeni Özellikler
 
-__Tüm platformlarda Multi-Factor Authentication__ <!--747590-->Azure Active Directory’deki Microsoft Intune Kaydı uygulamasında Multi-Factor Authentication’ı yapılandırarak, Azure Yönetim Portalı’ndan iOS, Android, Windows 8.1+ veya Windows Phone 8.1+ cihazı kaydeden belirli bir kullanıcı grubu için Multi-Factor Authentication (MFA) kullanımını zorunlu kılabilirsiniz.
+__Tüm platformlar arasında çok faktörlü kimlik doğrulaması__ <!--747590-->
+Belirli bir kullanıcı grubu Azure Active Directory’de Microsoft Intune Kaydı uygulamasında MFA’yı yapılandırarak Azure Yönetim Portalı’ndan bir iOS, Android, Windows 8.1+ veya Windows Phone 8.1+ cihazını kaydettiklerinde, bu kullanıcılara çok faktörlü kimlik doğrulaması (MFA) kullanma zorunluluğu getirebilirsiniz.
 
-__Mobil cihaz kaydını kısıtlama olanağı__ <!--747596-->Intune, kaydedilmesine izin verilecek mobil cihaz platformlarını denetleyen yeni kayıt kısıtlamaları ekliyor. Intune, mobil cihaz platformlarını iOS, macOS, Android, Windows ve Windows Mobile şeklinde ayırıyor.
+__Mobil cihaz kaydını kısıtlama özelliği__ <!--747596-->
+Intune, katılmasına izin verilecek mobil cihaz platformlarını denetleyen yeni kayıt kısıtlamaları ekliyor. Intune, mobil cihaz platformlarını iOS, macOS, Android, Windows ve Windows Mobile şeklinde ayırıyor.
 * Mobil cihaz kaydının kısıtlanması, bilgisayar istemcisi kaydını etkilemez.
 * Yalnızca iOS için kişisel cihazların kaydedilmesini engelleyen ek seçenek vardır.
 
@@ -317,9 +320,11 @@ Intune, BT yöneticileri [bu makalede](device-enrollment.md) anlatılan şekilde
 
 ### <a name="notices"></a>Bildirimler
 
-__Kayıt sırasında Multi-Factor Authentication ayarlama işlemi Azure portalına taşınıyor__ <!--VSO 750545--> Daha önce, yöneticilerin Intune kaydı sırasında MFA ayarlamak için Intune konsoluna veya Configuration Manager (Ekim 2016'dan önceki sürümler) konsoluna gitmesi gerekiyordu. Bu güncelleştirilmiş özellik sayesinde, artık [Microsoft Azure portalında](https://manage.windowsazure.com) Intune kimlik bilgilerinizi kullanarak oturum açar ve MFA ayarlarını Azure AD ile yapılandırırsınız. Bunun hakkında daha fazla bilgi için [burayı](https://aka.ms/mfa_ad) okuyun.
+__Azure portalına taşınıyor kayıt sırasında multi-Factor Authentication__ <!--VSO 750545-->
+Daha önce yöneticiler Intune kaydı sırasında MFA ayarlamak için Intune konsoluna veya Configuration Manager (Ekim 2016'dan önceki sürümler) konsoluna gitmek durumundaydı. Bu güncelleştirilmiş özellik sayesinde, artık [Microsoft Azure portalında](https://manage.windowsazure.com) Intune kimlik bilgilerinizi kullanarak oturum açar ve MFA ayarlarını Azure AD ile yapılandırırsınız. Bunun hakkında daha fazla bilgi için [burayı](https://aka.ms/mfa_ad) okuyun.
 
-__Android için Şirket Portalı uygulaması Çin’de kullanıma sunuldu__ <!--VSO 658093--> Android için Şirket Portalı indirilebilir uygulamasını Çin’de yayımlıyoruz. Çin’de Google Play Mağazası olmaması nedeniyle, Android cihazlarının uygulamaları Çin’deki uygulama mağazalarından edinmeleri gerekir. Android için Şirket Portalı uygulaması aşağıdaki mağazalardan yüklenebilir:
+__Şirket portalı uygulaması Android Çin'de kullanıma sunuldu__ <!--VSO 658093-->
+Android için Şirket Portalı uygulamasını karşıdan yüklenebilir olarak Çin’de yayımlıyoruz. Çin’de Google Play Mağazası olmaması nedeniyle, Android cihazlarının uygulamaları Çin’deki uygulama mağazalarından edinmeleri gerekir. Android için Şirket Portalı uygulaması aşağıdaki mağazalardan yüklenebilir:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
@@ -338,11 +343,14 @@ Android için Şirket Portalı uygulaması Microsoft Intune hizmetiyle iletişim
 
 ### <a name="deprecations"></a>Kullanım dışı bırakılanlar
 
-__Firefox artık Silverlight’ı desteklemeyecek__ <!--VSO TBA--> Mozilla, Mart 2017’den itibaren [Firefox tarayıcısı](https://www.mozilla.org/firefox) sürüm 52’de Silverlight desteğini kaldırıyor. Sonuç olarak, 51 üzeri Firefox sürümleri kullanarak mevcut Intune konsolunda oturum açmanız artık mümkün olmayacaktır. Yönetici konsoluna erişmek için Internet Explorer 10 veya 11 ya da [Sürüm 52'den önceki bir Firefox sürümü](https://ftp.mozilla.org/pub/firefox/releases/) kullanmanızı öneririz. Intune'un Azure portalına geçişi, Silverlight bağımlılığı olmadan bir dizi [modern tarayıcı](/azure/azure-preview-portal-supported-browsers-devices) desteğine olanak sağlayacaktır.
+__Firefox artık Silverlight desteklemiyor__ <!--VSO TBA-->
+Mozilla Mart 2017’den itibaren [Firefox tarayıcısı](https://www.mozilla.org/firefox) sürüm 52’de Silverlight desteğini kaldırıyor. Sonuç olarak, 51 üzeri Firefox sürümleri kullanarak mevcut Intune konsolunda oturum açmanız artık mümkün olmayacaktır. Yönetici konsoluna erişmek için Internet Explorer 10 veya 11 ya da [Sürüm 52'den önceki bir Firefox sürümü](https://ftp.mozilla.org/pub/firefox/releases/) kullanmanızı öneririz. Intune'un Azure portalına geçişi, Silverlight bağımlılığı olmadan bir dizi [modern tarayıcı](/azure/azure-preview-portal-supported-browsers-devices) desteğine olanak sağlayacaktır.
 
-__Exchange Online mobil gelen kutusu ilkeleri kaldırılıyor__ <!--770687-->Aralık’tan itibaren, yöneticiler artık Intune konsolu içinde Exchange Online (EAS) mobil gelen kutusu ilkelerini görüntüleme veya yapılandırma işlemlerini yapamayacak. Bu değişiklik, Aralık ve Ocak boyunca tüm Intune kiracılarına gönderilecektir. Tüm mevcut ilkeler yapılandırıldığı gibi kalır; yeni ilkeler yapılandırmak için Exchange Yönetim Kabuğu'nu kullanın. Daha fazla bilgi için [buraya](https://technet.microsoft.com/library/bb123783%28v=exchg.150%29.aspx) göz atın.
+__Exchange Online mobil gelen kutusu ilkelerini kaldırma__ <!--770687-->
+Aralık’tan itibaren yöneticilerin artık Intune konsolu içinde Exchange Online (EAS) mobil gelen kutusu ilkelerini görüntülemesi veya yapılandırması mümkün olmayacaktır. Bu değişiklik, Aralık ve Ocak boyunca tüm Intune kiracılarına gönderilecektir. Tüm mevcut ilkeler yapılandırıldığı gibi kalır; yeni ilkeler yapılandırmak için Exchange Yönetim Kabuğu'nu kullanın. Daha fazla bilgi için [buraya](https://technet.microsoft.com/library/bb123783%28v=exchg.150%29.aspx) göz atın.
 
-__Intune AV Player, Image Viewer ve PDF Viewer uygulamaları Android’de artık desteklenmiyor.__ <!--747553--> Aralık 2016’nın ikinci yarısından itibaren, kullanıcılar Intune AV Player, Image Viewer ve PDF Viewer uygulamalarını kullanamayacak. Bu uygulamaların yerini Azure Information Protection uygulaması almıştır. Azure Information Protection hakkında daha fazla bilgiyi [burada](/information-protection/rms-client/mobile-app-faq) bulabilirsiniz.
+__Intune AV Player, Image Viewer ve PDF görüntüleyici uygulamaları artık Android'de desteklenmiyor__ <!--747553-->
+2016 Aralık ortasından itibaren, kullanıcılar Intune AV Oynatıcı, Resim Görüntüleyici ve PDF Görüntüleyici uygulamalarını kullanamayacaktır. Bu uygulamaların yerini Azure Information Protection uygulaması almıştır. Azure Information Protection hakkında daha fazla bilgiyi [burada](/information-protection/rms-client/mobile-app-faq) bulabilirsiniz.
 
 ## <a name="november-2016"></a>Kasım 2016
 

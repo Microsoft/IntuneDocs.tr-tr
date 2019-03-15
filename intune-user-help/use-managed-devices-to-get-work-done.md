@@ -18,11 +18,11 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b7b67f1484ed74bd538cad53f02babd542b77fff
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55838844"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>İş veya Okul kaynaklarına yönetilen cihazları kullanma
@@ -58,7 +58,7 @@ Kayıt adımları, aşağıdaki bağlantıları sürümünden itibaren Şirket p
 - [Android için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [iOS için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [macOS için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [Windows için Şirket Portalı uygulamasını yükleme](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+- [Windows için Şirket Portalı uygulamasını yükleme](about-cp-app-for-windows-10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Şirket Portalı’na ne tür bilgisayarları veya cihazları ekleyebilirsiniz?
 -   iOS kullanan Apple cihazları (iPhone ve iPad gibi) ve macOS (MacBook ve iMac gibi)

@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1c0118a45478980e008613bbc12ccce9f2f20c3
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566565"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
@@ -148,13 +148,13 @@ __Microsoft Intune cihazlarında kullanıcıları etkileyen uzak eylemler gerçe
 __Microsoft Intune cihazlarını okuma ve yazma__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune cihazlarını okuma__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC ayarlarını okuma ve yazma__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Microsoft Intune RBAC ayarlarını okuma__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Microsoft Intune RBAC ayarlarını okuma__ | DeviceManagementRBAC.Read.All
 __Microsoft Intune uygulamalarını okuma ve yazma__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Microsoft Intune uygulamalarını okuma__ | [DeviceManagementApps.Read.All](#app-ro)
-__Microsoft Intune Cihaz Yapılandırması ve İlkelerini okuma ve yazma__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Microsoft Intune Cihaz Yapılandırması ve İlkelerini okuma ve yazma__ | DeviceManagementConfiguration.ReadWrite.All
 __Microsoft Intune Cihaz Yapılandırması ve İlkelerini okuma__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Microsoft Intune yapılandırmasını okuma ve yazma__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Microsoft Intune yapılandırmasını okuma__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Microsoft Intune yapılandırmasını okuma__ | DeviceManagementServiceConfig.Read.All
 
 Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıdaki bölümlerde kapsamlar alfabetik sırayla açıklanır.
 

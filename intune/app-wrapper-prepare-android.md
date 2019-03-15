@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b714b48d33aa0a5e3af952195aaf6e01954a831a
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566055"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile Android uygulamalarını uygulama koruma ilkelerine hazırlama
@@ -31,7 +31,6 @@ ms.locfileid: "57566055"
 Şirket içi Android uygulamalarınızın davranışını, uygulamanın kodunu değiştirmeden uygulama özelliklerini kısıtlayarak değiştirmek için Android için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanın.
 
 Bu araç, PowerShell’de çalışan ve Android uygulamanızın etrafında sarmalayıcı oluşturan bir Windows komut satırı uygulamasıdır. Uygulama sarmalandıktan sonra, Intune’daki [mobil uygulama yönetimi ilkelerini](app-protection-policies.md) yapılandırarak uygulamanın işlevini değiştirebilirsiniz.
-
 
 Aracı çalıştırmadan önce bkz. [Uygulama Sarmalama Aracını çalıştırmaya ilişkin güvenlik konuları](#security-considerations-for-running-the-app-wrapping-tool). Aracı indirmek için GitHub’daki [Android için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)’na gidin.
 
@@ -54,10 +53,12 @@ Aracı çalıştırmadan önce bkz. [Uygulama Sarmalama Aracını çalıştırma
 
 - Android tüm uygulama paketlerinin (.apk) imzalanmasını gerektirir. Mevcut sertifikaları **yeniden kullanma** hakkında bilgi ve imza sertifikaları rehberine ulaşmak için bkz. [İmza sertifikaları ve sarmalama uygulamalarını yeniden kullanma](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). Sarmalanan çıkış uygulamasını imzalamak için gereken **yeni** kimlik bilgilerini oluşturmak için yürütülebilir Java keytool.exe kullanılır. Ayarlanan parolaların güvenle saklanması gerekir ancak daha sonra Uygulama Sarmalama Aracını çalıştırırken gerekeceği için bu parolaları not alın.
 
-> [!NOTE]
-> Intune Uygulama Sarmalama Aracı uygulama imzalama için Google'ın v2 ve yakında çıkacak v3 imza düzenlerini desteklemiyor. Intune Uygulama Sarmalama Aracı'nı kullanarak .apk uygulamasını sarmaladıktan sonra, [Google'ın sağladığı Apksigner aracının]( https://developer.android.com/studio/command-line/apksigner) kullanılması önerilir. Bu sayede uygulama son kullanıcıların cihazlarına ulaştığında Android standartları tarafından düzgün başlatılabilir. 
+    > [!NOTE]
+    > Intune Uygulama Sarmalama Aracı uygulama imzalama için Google'ın v2 ve yakında çıkacak v3 imza düzenlerini desteklemiyor. Intune Uygulama Sarmalama Aracı'nı kullanarak .apk uygulamasını sarmaladıktan sonra, [Google'ın sağladığı Apksigner aracının]( https://developer.android.com/studio/command-line/apksigner) kullanılması önerilir. Bu sayede uygulama son kullanıcıların cihazlarına ulaştığında Android standartları tarafından düzgün başlatılabilir. 
 
-- (İsteğe bağlı) Giriş uygulaması içinde Multidex’i etkinleştirin. Bazen bir uygulama, sarmalama sırasına eklenen Intune MAM SDK sınıfları nedeniyle Dalvik Executable (DEX) boyut sınırına ulaşabilir. DEX dosyaları, Android uygulamaları derlemesinin bir parçasıdır. Bu senaryoda en iyi uygulama, Multidex’i uygulamanın içinde etkinleştirmektir. Bazı kuruluşlarda bunu yapabilmek için uygulamayı derleyenle (yani uygulama derleme ekibi) birlikte çalışmak gerekebilir. 
+- (İsteğe bağlı) Bazen bir uygulama, sarmalama sırasına eklenen Intune MAM SDK sınıfları nedeniyle Dalvik Executable (DEX) boyut sınırını karşılaşabilirsiniz. DEX dosyaları, Android uygulamaları derlemesinin bir parçasıdır. Otomatik olarak Intune uygulama sarmalama aracı min API'si ile uygulamalar 21 veya daha yüksek seviye sarmalama sırasında DEX dosya taşma işler (sürümünden [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). En düşük API düzeyi < 21 ile uygulamalar için en düşük API düzeyi sarmalayıcının kullanarak artırmak için en iyi yöntem olacaktır `-UseMinAPILevelForNativeMultiDex` bayrağı. Uygulamanın en düşük API düzeyi artırmak mümkün olan müşteriler için aşağıdaki DEX taşma geçici çözümler kullanılabilir. Bazı kuruluşlarda bunu yapabilmek için uygulamayı derleyenle ile çalışma gerektirebilir (örn. uygulama derleme ekibi):
+* ProGuard, kullanılmayan sınıf başvuruları uygulamanın birincil DEX dosyasından ortadan kaldırmak için kullanın.
+* V3.1.0 kullanan müşteriler için daha yüksek Android Gradle eklentisi veya devre dışı [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını yükleme
 
@@ -94,6 +95,7 @@ Aracı yüklediğiniz klasörü not edin. Varsayılan konumu şudur: C:\Program 
 |**-KeyAlias**&lt;Dize&gt;|İmzalama için kullanılacak anahtarın adı.| |
 |**-KeyPassword**&lt;GüvenliDize&gt;|İmzalama için kullanılan özel anahtarın şifresini çözmek için kullanılan parola.| |
 |**-SigAlg**&lt;GüvenliDize&gt;| (İsteğe bağlı) İmzalama için kullanan imza algoritmasının adı. Algoritma, özel anahtar ile uyumlu olmalıdır.|Örnekler: SHA256withRSA, SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| (İsteğe bağlı) Kaynak Android uygulamanın en düşük API düzey 21 için artırmak için bu bayrağı kullanın. Bu bayrak, bu uygulamayı yüklemek sınırlar şekilde onay isteyecektir. Kullanıcılar, onay iletişim kutusunda parametresi eklenerek atlayabilirsiniz "-Onayla: $false" kendi PowerShell komutu. Bayrağı yalnızca başarıyla DEX taşma hataları nedeniyle sarmalamak için başarısız olan en düşük API < 21 uygulamalarla müşteriler tarafından kullanılmalıdır. | |
 | **&lt;CommonParameters&gt;** | (İsteğe bağlı) Komut, ayrıntılı ve hata ayıklama gibi ortak PowerShell parametrelerini destekler. |
 
 
