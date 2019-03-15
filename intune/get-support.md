@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c47f0d55a914714dedaf96f6f7c346b6252e36c6
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 350ce5980cb7575a991cdc45702db95f802b4749
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57461337"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
@@ -51,7 +51,7 @@ Intune kullanılabilir için Yardım ve destek deneyimi [Microsoft 365 cihaz yö
 ![Intune dikey pencereleri](./media/get-support/intune-blades.png)
 
 
-Bu yeni deneyim görünen deneyimine benzer [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/)ve değiştirir [önceki Yardım ve destek deneyimi](#azure-help-+-support-experience). 
+Bu yeni deneyim görünen deneyimine benzer [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/)ve önceki Yardım değiştirir ve destek deneyimi. 
 
 Yardım ve Destek erişmek için aşağıdakileri kullanın:  
 - **Cihaz Yönetimi Panosu:**

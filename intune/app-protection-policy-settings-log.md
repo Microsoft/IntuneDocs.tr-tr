@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57460504"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme

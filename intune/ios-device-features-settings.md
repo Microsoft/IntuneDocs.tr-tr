@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/30/2019
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,18 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ee0d8660b810f5f568b69babba0b648b0095fa7
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566633"
 ---
-# <a name="ios-device-feature-settings-in-intune"></a>ıntune'da iOS cihaz özelliği ayarları
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS cihaz ayarlarını Intune'da genel iOS özellikleri kullanma
 
 Intune, iOS cihazlarında farklı Apple özellikleri kullanmak kullanıcıların bazı yerleşik ayarlarını içerir. Örneğin, yöneticiler iOS kullanıcıları AirPrint yazıcıları kullanımını denetlemek, uygulama ve klasörleri dock'a ekleyin ve sayfaları için giriş ekranınızdaki uygulama bildirimleri göster varlık etiket ayrıntıları kilit ekranında Göster, çoklu oturum açma kimlik doğrulaması kullanın ve kullanıcıların kimliğini Sertifikalar ile.
+
+İOS cihazları, mobil cihaz Yönetimi (MDM) çözümüne bir parçası olarak denetlemek için bu özellikleri kullanın.
 
 Bu makalede, bu ayarları listeler ve her ayarın ne yaptığını açıklar.
 
@@ -39,8 +41,8 @@ Bu özellik iOS bilinen AirPrint yazıcılarına yazdırma olanağı sağlar.
 
 1. İçinde **ayarları**seçin **AirPrint**. AirPrint sunucunun aşağıdaki özellikleri girin:
 
-    - **IP adresi**: Yazıcı IPv4 veya IPv6 adresini girin. Yazıcılar tanımlamak için konak adları kullanıyorsanız terminalde yazıcı ping göndererek IP adresini alabilirsiniz. [Yol ve IP adresi al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
-    - **Yol**: Genellikle yoludur `ipp/print` ağınızdaki yazıcılar için. [Yol ve IP adresi al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
+    - **IP adresi**: Yazıcı IPv4 veya IPv6 adresini girin. Yazıcılar tanımlamak için konak adları kullanıyorsanız terminalde yazıcı ping göndererek IP adresini alabilirsiniz. IP adresini alın ve yol (Bu makale) daha fazla ayrıntı sağlar.
+    - **Yol**: Genellikle yoludur `ipp/print` ağınızdaki yazıcılar için. IP adresini alın ve yol (Bu makale) daha fazla ayrıntı sağlar.
     - **Bağlantı noktası**: AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özellik boş bırakırsanız AirPrint, varsayılan bağlantı noktasını kullanır. Kullanılabilir iOS 11.0 ve sonraki sürümleri.
     - **TLS**: Seçin **etkinleştirme** AirPrint bağlantılarını Aktarım Katmanı Güvenliği (TLS) ile güvenli hale getirmek için. Kullanılabilir iOS 11.0 ve sonraki sürümleri.
 
@@ -305,47 +307,52 @@ Mevcut bir görüntüyü cihazlarla görüntü ile bir profili atandığında be
 
 Aşağıdaki liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
 
-|||
-|-|-|
-|Uygulama adı|Paket Kimliği|
-|Uygulama Mağazası|com.apple.AppStore|
-|Hesap Makinesi|com.apple.calculator|
-|Takvim|com.apple.mobilecal|
-|Kamera|com.apple.camera|
-|Saat|com.apple.mobiletimer|
-|Pusula|com.apple.compass|
-|Kişiler|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Arkadaşları Bul|com.apple.mobileme.fmf1|
-|iPhone’u Bul|com.apple.mobileme.fmip1|
-|Oyun Merkezi|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Sistem Durumu|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Harita|com.apple.Maps|
-|İletiler|com.apple.MobileSMS|
-|Müzik|com.apple.Music|
-|News|com.apple.news|
-|Notlar|com.apple.mobilenotes|
-|Sayılar|com.apple.Numbers|
-|Pages|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Fotoğraflar|com.apple.mobileslideshow|
-|Podcast’ler|com.apple.podcasts|
-|Anımsatıcılar|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Ayarlar|com.apple.Preferences|
-|Borsa|com.apple.stocks|
-|İpuçları|com.apple.tips|
-|Videolar|com.apple.videos|
-|Sesli Notlar|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
-|Hava Durumu|com.apple.weather|
+| Paket Kimliği                   | Uygulama Adı     | Yayımcı |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | Uygulama Mağazası    | Apple     |
+| com.apple.calculator        | Hesap Makinesi   | Apple     |
+| com.apple.mobilecal         | Takvim     | Apple     |
+| com.apple.camera            | Kamera       | Apple     |
+| com.apple.mobiletimer       | Saat        | Apple     |
+| com.apple.compass           | Pusula      | Apple     |
+| com.apple.MobileAddressBook | Kişiler     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | Dosyalar        | Apple     |
+| com.apple.mobileme.fmf1     | Arkadaşları Bul | Apple     |
+| com.apple.mobileme.fmip1    | iPhone’u Bul  | Apple     |
+| com.apple.gamecenter        | Oyun Merkezi  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Durum       | Apple     |
+| com.apple.Home              | Ana Sayfası         | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.Maps              | Haritalar         | Apple     |
+| com.apple.MobileSMS         | İletiler     | Apple     |
+| com.apple.Music             | Müzik        | Apple     |
+| com.apple.news              | News         | Apple     |
+| com.apple.mobilenotes       | Notlar        | Apple     |
+| com.apple.Numbers           | Sayılar      | Apple     |
+| com.apple.Pages             | Sayfaları        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Fotoğraflar       | Apple     |
+| com.apple.podcasts          | Podcast’ler     | Apple     |
+| com.apple.reminders         | Anımsatıcılar    | Apple     |
+| com.apple.mobilesafari      | Safari       | Apple     |
+| com.apple.Preferences       | Ayarlar     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
+| com.apple.stocks            | Borsa       | Apple     |
+| com.apple.tips              | İpuçları         | Apple     |
+| com.apple.TV                | TV           | Apple     |
+| com.apple.videos            | Videolar       | Apple     |
+| com.apple.VoiceMemos        | Sesli Notlar   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | İzleme        | Apple     |
+| com.apple.weather           | Hava durumu      | Apple     |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

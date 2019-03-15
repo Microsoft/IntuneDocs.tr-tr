@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d3cdda7464a2bf5ccdf0b86c87bc081d59ae5d80
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57392431"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune’a geçerken cihaz uyumluluk ve uygulama yönetimi ilkelerini yapılandırma

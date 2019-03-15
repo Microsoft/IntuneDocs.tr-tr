@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/06/2019
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a525efb8b05d5dfd9d33e1fa0c603c72ed3084f0
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566718"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarları
@@ -105,54 +105,6 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 
     Bu ayar için geçerlidir:  
     - iOS 11,3 ve üzeri
-
-## <a name="configurations-requiring-supervision"></a>Denetim gerektiren yapılandırmalar
-
-iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz kurulumu sırasında veya Apple Configurator kullanılarak etkinleştirilebilir. Denetimli mod etkinleştirildikten sonra, Intune şu işlevleri kullanarak bir cihazı yapılandırabilir:
-
-- Uygulama Kilidi (Tek Uygulama Modu) 
-- Genel HTTP Proxy’si 
-- Etkinleştirme Kilidini Atlama 
-- Otonom Tek Uygulama Modu 
-- Web İçeriği Filtresi 
-- Arka plan ve kilit ekranı ayarlama 
-- Uygulamaları Sessiz Gönderme 
-- Her Zaman Açık VPN 
-- Yönetilen uygulama yüklemesine özel olarak izin verme 
-- iBookstore 
-- iMessages 
-- Oyun Merkezi 
-- AirDrop 
-- AirPlay 
-- Konak eşleştirme 
-- Bulut Eşitleme 
-- Spotlight arama 
-- İletim 
-- Cihaz silme 
-- Kısıtlamalar kullanıcı arabirimi 
-- Kullanıcı arabirimine göre yapılandırma profili yüklemesi 
-- News 
-- Klavye kısayolları 
-- Geçiş kodu değişiklikleri 
-- Cihaz adı değişiklikleri 
-- Otomatik uygulama indirme 
-- Kurumsal uygulama güvenine yapılan değişiklikler 
-- Apple Music 
-- Posta bırakma 
-- Apple Watch ile eşleştirme 
-
-> [!NOTE]
-> Apple, belirli ayarları yalnızca denetimli 2019 içinde taşımak onayladı. Bu ayarları yalnızca denetimli geçirmek Apple için beklemek yerine kullanırken bu göz önünde bulundurarak öneririz:
-> - Son kullanıcılar tarafından uygulama yükleme
-> - Uygulama kaldırma
-> - FaceTime
-> - Safari
-> - iTunes
-> - Müstehcen içerik
-> - iCloud belgeleri ve verileri
-> - Çok oyunculu oyun
-> - Oyun merkezi arkadaşları ekleyin
-> - Siri
 
 ## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
@@ -338,7 +290,7 @@ Bu listelerden uygulamaları eklemek, şunları yapabilirsiniz:
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 
 - **İcloud'a yedekle**: **Yapılandırılmamış** kullanıcının cihazı İcloud'a yedeklemesine izin verir. **Blok** kullanıcının cihazı İcloud'a yedeklemeyi engeller.
-- **Belge eşitleme (yalnızca denetimli) icloud**: **Yapılandırılmamış** iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verir. **Blok** iCloud belgeleri ve verileri eşitlenmesini önler.
+- **İcloud'a belge eşitlemeyi engelleyin**: **Yapılandırılmamış** iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verir. **Blok** iCloud belgeleri ve verileri eşitlenmesini önler.
 - **İcloud'a fotoğraf akışı eşitlemesi**: **Yapılandırılmamış** etkinleştirme olanağı **My fotoğraf Stream** cihazlarında İcloud'a eşitlenmesine ve tüm kullanıcı aygıtları üzerinde fotoğraf kullanılabilir. **Blok** İcloud'a fotoğraf akışı eşitlemesi engeller.
 - **Şifreli yedekleme**: **Gerekli** böylece cihaz yedeklemelerinin şifrelenmesini gerekir.
 - **iCloud fotoğraf arşivi**: Kümesine **blok** fotoğraflar ve videoları bulutta depolamasını için iCloud fotoğraf Arşivi'ni kullanarak devre dışı bırakmak için. İCloud fotoğraf Arşivi ' cihaza tamamen indirilmeyen tüm fotoğraflar CİHAZDAN kaldırılır. **Yapılandırılmamış** iCloud fotoğraf kitaplığının kullanımına izin verir.
@@ -355,15 +307,16 @@ Bu listelerden uygulamaları eklemek, şunları yapabilirsiniz:
 
 Uygulama eklemek için şunları yapabilirsiniz:
 
-- Girin **uygulama adı** ve **uygulama paket kimliği**seçip **Ekle**. [Yerleşik iOS uygulamaları için paket kimliği başvurusu](#bundle-id-reference-for-built-in-ios-apps) (Bu makalede) kimlikleri ile bazı uygulamaları içerir.
+- Girin **uygulama adı** ve **uygulama paket kimliği**seçip **Ekle**. [Yerleşik iOS uygulamaları için paket kimlikleri](#bundle-ids-for-built-in-ios-apps) (Bu makalede) kimlikleri ile bazı uygulamaları içerir.
 - **İçeri aktarma** uygulama adları ve bunların paket kimliklerinin listesini içeren bir CSV dosyası. Veya, **dışarı** uygulamaları içeren mevcut bir listesi.
 
 ## <a name="kiosk-supervised-only"></a>Bilgi noktası (yalnızca denetimli)
 
-- **Bilgi noktası modunda çalıştırmak için uygulama**: Bilgi noktası modunda çalıştırmak istediğiniz uygulamaları seçin. Seçenekleriniz şunlardır: 
-  - **App Store**: Bir uygulamanın iTunes uygulama mağazası URL'sini girin
-  - **Yönetilen uygulama**: Intune'a eklediğiniz bir uygulama seçin
-  - **Yerleşik uygulama**: Girin [paket Kimliğini](#bundle-id-reference-for-built-in-ios-apps) yerleşik uygulama
+- **Bilgi noktası modunda çalıştırmak için uygulama**: Bilgi noktası modunda çalıştırmak istediğiniz uygulamaları seçin. Seçenekleriniz şunlardır:
+  - **Yapılandırılmamış**: Bilgi noktası ayarları uygulanmaz. Cihaz bilgi noktası modunda çalışmıyor.
+  - **App Store**: Bir uygulamanın iTunes uygulama mağazası URL'sini girin.
+  - **Yönetilen uygulama**: Intune'a eklediğiniz bir uygulama seçin.
+  - **Yerleşik uygulama**: Girin [paket Kimliğini](#bundle-ids-for-built-in-ios-apps) (Bu makaledeki) yerleşik uygulama.
 
 - **Yardımcı dokunma**: **Gerekli** Yardımlı dokunma erişilebilirlik ayarını cihazda olabilir. Bu özellik ile kullanıcıların ekran kendileri için zor olabilecek hareketlerini yardımcı olur. **Yapılandırılmamış** değil çalıştırın veya bilgi noktası modunda bu özelliği etkinleştirin.
 - **Renkleri ters çevir**: **Gerekli** görme bozukluğu olan kullanıcılara ekran değiştirebilmeniz için renkleri ters çevir erişilebilirlik ayarını. **Yapılandırılmamış** değil çalıştırın veya bilgi noktası modunda bu özelliği etkinleştirin.
@@ -386,9 +339,17 @@ Uygulama eklemek için şunları yapabilirsiniz:
 > Bir iOS cihazını bilgi noktası modunda yapılandırabilmek için, önce Apple Configurator aracını veya Apple Cihaz Kayıt Programı’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracını kullanarak Apple'nın kılavuzuna bakın.
 > Girdiğiniz iOS uygulaması siz profil atadıktan sonra yüklü değilse, cihaz yeniden başlatılana kadar cihaz bilgi noktası modu enter değil.
 
-## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için Paket Kimliği başvurusu
+## <a name="domains"></a>Etki Alanları
 
-Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
+- **İşaretlenmemiş e-posta etki alanları** > **e-posta etki alanı URL'si**: Listeye bir veya daha fazla URL ekleyin. Son kullanıcılar, girdiğiniz etki alanı dışındaki bir etki alanından e-posta aldığınızda, e-posta işaretlenmiş iOS Mail uygulamasında güvenilmeyen olarak.
+
+- **Yönetilen web etki alanları** > **Web etki alanı URL'si**; Listeye bir veya daha fazla URL ekleyin. Belgeler, girdiğiniz etki alanlarından indirildiğinde bunlar yönetilen kabul. Bu ayar yalnızca Safari tarayıcısı kullanılarak indirilen belgeler için geçerlidir.
+
+- **Safari parola otomatik doldurma etki alanları** > **etki alanı URL'si**: Listeye bir veya daha fazla URL ekleyin. Kullanıcılar yalnızca bu listedeki URL’lerdeki parolaları kaydedebilir. Bu ayar yalnızca Safari tarayıcısı ve denetimli moddaki iOS 9.3 ve üzeri cihazlar için geçerlidir. Herhangi bir URL belirtmezseniz, parolalar tüm web sitelerinden kaydedilebilir.
+
+## <a name="bundle-ids-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için paket kimlikleri
+
+Aşağıdaki liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
 
 | Paket Kimliği                   | Uygulama Adı     | Yayımcı |
 |-----------------------------|--------------|-----------|
@@ -437,19 +398,53 @@ Bu liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini göster
 | com.apple.Bridge            | İzleme        | Apple     |
 | com.apple.weather           | Hava durumu      | Apple     |
 
-## <a name="domains"></a>Etki Alanları
+## <a name="settings-that-require-supervised-mode"></a>Denetimli mod gerektiren ayarlar
 
-### <a name="unmarked-email-domains"></a>İşaretsiz e-posta etki alanları
+iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz kurulumu sırasında veya Apple Configurator kullanılarak etkinleştirilebilir. Denetimli mod etkinleştirildikten sonra, Intune şu işlevleri kullanarak bir cihazı yapılandırabilir:
 
-İçinde **e-posta etki alanı URL'si**, listeye bir veya daha fazla URL ekleyin. Son kullanıcılar, girdiğiniz etki alanı dışındaki bir etki alanından e-posta aldığınızda, e-posta işaretlenmiş iOS Mail uygulamasında güvenilmeyen olarak.
+- Uygulama Kilidi (Tek Uygulama Modu) 
+- Genel HTTP Proxy’si 
+- Etkinleştirme Kilidini Atlama 
+- Otonom Tek Uygulama Modu 
+- Web İçeriği Filtresi 
+- Arka plan ve kilit ekranı ayarlama 
+- Uygulamaları Sessiz Gönderme 
+- Her Zaman Açık VPN 
+- Yönetilen uygulama yüklemesine özel olarak izin verme 
+- iBookstore 
+- iMessages 
+- Oyun Merkezi 
+- AirDrop 
+- AirPlay 
+- Konak eşleştirme 
+- Bulut Eşitleme 
+- Spotlight arama 
+- İletim 
+- Cihaz silme 
+- Kısıtlamalar kullanıcı arabirimi 
+- Kullanıcı arabirimine göre yapılandırma profili yüklemesi 
+- News 
+- Klavye kısayolları 
+- Geçiş kodu değişiklikleri 
+- Cihaz adı değişiklikleri 
+- Otomatik uygulama indirme 
+- Kurumsal uygulama güvenine yapılan değişiklikler 
+- Apple Music 
+- Posta bırakma 
+- Apple Watch ile eşleştirme 
 
-### <a name="managed-web-domains"></a>Yönetilen web etki alanları
-
-İçinde **Web etki alanı URL'si**, listeye bir veya daha fazla URL ekleyin. Belgeler, girdiğiniz etki alanlarından indirildiğinde bunlar yönetilen kabul. Bu ayar yalnızca Safari tarayıcısı kullanılarak indirilen belgeler için geçerlidir.
-
-### <a name="safari-password-autofill-domains"></a>Safari parola otomatik doldurma etki alanları
-
-İçinde **etki alanı URL'si**, listeye bir veya daha fazla URL ekleyin. Kullanıcılar yalnızca bu listedeki URL’lerdeki parolaları kaydedebilir. Bu ayar yalnızca Safari tarayıcısı ve denetimli moddaki iOS 9.3 ve üzeri cihazlar için geçerlidir. Herhangi bir URL belirtmezseniz, parolalar tüm web sitelerinden kaydedilebilir.
+> [!NOTE]
+> Apple, belirli ayarları yalnızca denetimli 2019 içinde taşımak onayladı. Bu ayarları yalnızca denetimli geçirmek Apple için beklemek yerine kullanırken bu göz önünde bulundurarak öneririz:
+> - Son kullanıcılar tarafından uygulama yükleme
+> - Uygulama kaldırma
+> - FaceTime
+> - Safari
+> - iTunes
+> - Müstehcen içerik
+> - iCloud belgeleri ve verileri
+> - Çok oyunculu oyun
+> - Oyun merkezi arkadaşları ekleyin
+> - Siri
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
