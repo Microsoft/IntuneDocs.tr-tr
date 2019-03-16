@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 268f6d7aab273efdc9bd718861b8ea67cd281c97
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 97e815914ad96b7c0db14228c76488a6147c0b46
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393258"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991166"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -110,6 +110,10 @@ Intune tasarım planınızı geliştirmek için [yukarıdaki tablonun bir şablo
 ## <a name="choose-an-intune-deployment-option"></a>Bir Intune dağıtım seçeneği belirleyin
 
 Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına, bulut ortamında çalışan Intune hizmeti anlamına gelirken karma, Intune'un System Center Configuration Manager ile tümleştirilmesini belirtir. Bu kılavuz öncelikle tek başına seçeneğinin kullanılmasına yönelik tasarlanmıştır. [İş gereksinimlerinize hangi seçeneğin uyduğuna karar verin](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+
+> [!Important]
+>Yeni Karma MDM müşterilerin ekleme kullanım dışıdır. Daha fazla bilgi için [taşıma karma mobil cihaz Yönetimi'nden Intune'a Azure'da](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog gönderisi.
+
 
 ## <a name="intune-tenant-location"></a>Intune kiracı konumu
 
