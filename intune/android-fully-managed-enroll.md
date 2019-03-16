@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c10017a2f0c272dc140a62f678387ce70e09554
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: d50afb7cd5e0d6236dde36770f11f7ac3e3262fa
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391124"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991071"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Intune'u ayarlama Android Kurumsal kaydını tam (Önizleme) ile yönetilen cihazlar
 
@@ -36,7 +36,7 @@ Intune uygulamaları dağıtmanıza yardımcı olur ve tam olarak Android Enterp
 
 ## <a name="technical-requirements"></a>Teknik gereksinimler
 
-Tam olarak yönetilen Android kuruluş cihazlarını yönetmek için bir Intune tek başına Kiracı olması gerekir. Tam olarak yönetilen bir cihaz Yönetimi (SCCM bağlı) ya da karma modda ya da eski Silverlight yönetim konsolunda kullanılamaz.
+Tam olarak yönetilen Android kuruluş cihazlarını yönetmek için bir Intune tek başına Kiracı olması gerekir. Karma (Configuration Manager bağlı) her iki modda veya eski Silverlight yönetim konsolunda tam olarak yönetilen bir cihaz Yönetimi kullanılamıyor.
 
 Cihaz bir Android Kurumsal cihaz tam olarak yönetilen olarak yönetilecek şu gereksinimleri karşılamanız gerekir:
 

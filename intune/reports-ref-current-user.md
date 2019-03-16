@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e6a543e835e67c55be4d62cb0290a096d3a65ee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 1b2aaab2f66b2a30c354517278ab0e764f1128ee
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565783"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57990964"
 ---
 # <a name="reference-for-current-user-entity"></a>Geçerli Kullanıcı varlığı için başvuru
 
-**Geçerli Kullanıcı** kategorisi veri modelinde kullanıcı özelliklerini içerir. **Geçerli Kullanıcı** varlık koleksiyonu, şu anda etkin olan kullanıcılar ile sınırlıdır. Varlık şu anda bir lisans atanmış tüm Azure Active Directory kullanıcılarını içerir. Lisans, bir Intune lisansı, bir Hybrid lisans veya Microsoft Office 365 lisansı olabilir. Kaldırılmış olan kullanıcı, Geçerli Kullanıcı koleksiyonunda gösterilmeyecektir. Kullanıcı durumu değişiklikleri geçmişini içeren bir koleksiyon için bkz: [Kullanıcı varlığı için referans](reports-ref-user.md).
+**Geçerli Kullanıcı** kategorisi veri modelinde kullanıcı özelliklerini içerir. **Geçerli Kullanıcı** varlık koleksiyonu, şu anda etkin olan kullanıcılar ile sınırlıdır. Varlık şu anda bir lisans atanmış tüm Azure Active Directory kullanıcılarını içerir. Lisans, bir Intune lisansı, bir ortak yönetilen lisans veya Microsoft Office 365 lisansı olabilir. Kaldırılmış olan kullanıcı, Geçerli Kullanıcı koleksiyonunda gösterilmeyecektir. Kullanıcı durumu değişiklikleri geçmişini içeren bir koleksiyon için bkz: [Kullanıcı varlığı için referans](reports-ref-user.md).
 
 
 ## <a name="current-user"></a>Geçerli Kullanıcı

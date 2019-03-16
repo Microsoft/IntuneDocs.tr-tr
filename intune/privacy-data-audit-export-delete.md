@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4924b83caba0047f326f38cd7bce36b3fd38c4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 5a253894e400e4b63de40d2d8ef56cefef5b2ca0
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393561"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991108"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune’da kişisel verileri denetleme, dışarı aktarma veya silme
 
@@ -80,6 +80,9 @@ Karma bir MDM ortamınız (Configuration Manager ile tümleştirilmiş Intune) v
 1. Kullanıcıyı yerel Active Directory’nizden (AD) silin. Böylece kullanıcı Azure AD ile eşitlenme durdurulur ve Configuration Manager bulma tarafından bulunur. 
 2. Kullanıcıyı ve ilişkili verileri Configuration Manager’dan kaldırmak için kullanıcıyı Configuration Manager’dan silin. Konsolda **Varlık ve Uyumluluk** > **Kullanıcılar**’a gidin, silinecek kullanıcıya sağ tıklayın ve **Sil**’e tıklayın.
 3. [Kullanıcıyı AAD’den silin](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad), böylece kullanıcı ve ilişkili veriler Azure Active Directory ve Intune’dan aynı anda silinir. Kullanıcı AAD’den silindiğinde (kalıcı olarak silindiğinde) Intune, AAD’den silme sinyalini alır ve kullanıcının kişisel verilerinin tamamını otomatik olarak Intune hizmetinden temizlemeye başlar. Kaldırma eylemini takip eden 30 gün içerisinde kullanıcı bilgileri Intune hizmetinden silinir.
+
+> [!Important]
+>Yeni Karma MDM müşterilerin ekleme kullanım dışıdır. Daha fazla bilgi için [taşıma karma mobil cihaz Yönetimi'nden Intune'a Azure'da](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog gönderisi.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

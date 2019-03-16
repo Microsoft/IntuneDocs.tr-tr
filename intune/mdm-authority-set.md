@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3457a8314136bac864324dc9baa72ca586bdb7a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 41573eb05039dceeef45ba3cf04e890603a90362
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460912"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991153"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
@@ -35,10 +35,10 @@ Olası yapılandırmalar şunlardır:
 
 - **Intune Tek Başına** - Azure Portal’ı kullanarak yapılandırdığınız yalnızca bulut yönetimi. Intune’un sunduğu özelliklerin tamamını içerir. [MDM yetkilisini Intune konsolundan ayarlama](#set-mdm-authority-to-intune).
 
-- **Intune Karma** - Intune bulut çözümünün System Center Configuration Manager ile tümleştirmesi. Configuration Manager konsolunu kullanarak Intune’u siz yapılandırırsınız. [MDM yetkilisini Yapılandırma Yöneticisi’nden ayarlama](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+- **Intune ortak yönetim** -Windows 10 cihazları için Intune bulut çözümünün System Center Configuration Manager ile tümleştirme. Configuration Manager konsolunu kullanarak Intune’u siz yapılandırırsınız. [Intune'da cihazların otomatik kaydını yapılandırma](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
-    >Yeni karma MDM müşterilerin eklenmesi, gelecek sürümlerden birinde kapatılacaktır. Daha fazla bilgi için [taşıma karma mobil cihaz Yönetimi'nden Intune'a Azure'da](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog gönderisi.
+    >Yeni Karma MDM müşterilerin ekleme kullanım dışıdır. Daha fazla bilgi için [taşıma karma mobil cihaz Yönetimi'nden Intune'a Azure'da](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog gönderisi.
 
 - **Office 365 için Mobil Cihaz Yönetimi** - Office 365’in Intune bulut çözümüyle tümleştirmesi. Microsoft 365 Yönetim Merkezi'nden Intune'u siz yapılandırırsınız. Intune Tek Başına ile sağlanan özelliklerin bir alt kümesini içerir. MDM yetkilisini, Microsoft 365 Yönetim Merkezi'nden ayarlama.
 

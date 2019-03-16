@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e86285d81527d16486ce592d16937b679720d51
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 2fda667710c43514c389e5d356f8b80fedd420ea
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390339"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991142"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -131,15 +131,16 @@ KCG kayıtları sırasında kullanıcılar, kayıtlı cihaz sınırına ulaştı
 
 ![iOS cihazı sınır bildirimi](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
-Cihaz sınırı kısıtlamaları aşağıdaki Windows Kurumsal kayıt türleri için geçerli değildir:
-
-- Ortak yönetilen kayıtları
-- GPO kayıtları
-- Kayıtları Azure Active Directory'ye katıldı
-- Kayıtları toplu Azure Active Directory'ye katılmış
-- AutoPilot kayıtları
-
-Bu kayıt türleri için cihaz sınırlarını ayarlayabilirsiniz [Azure Active Directory'de](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
+> [!IMPORTANT]
+> Cihaz sınırı kısıtlamaları aşağıdaki Windows kayıt türleri için geçerli değildir:
+> - Ortak yönetilen kayıtları
+> - GPO kayıtları
+> - Kayıtları Azure Active Directory'ye katıldı
+> - Kayıtları toplu Azure Active Directory'ye katılmış
+> - AutoPilot kayıtları
+>
+> Paylaşılan cihaz senaryolarında kabul edildiği için bu kayıt türleri için cihaz sınırı kısıtlamaları zorunlu değildir.
+> Bu kayıt türleri için sabit sınırlar ayarlayabilirsiniz [Azure Active Directory'de](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## <a name="change-enrollment-restriction-priority"></a>Kayıt kısıtlama önceliğini değiştirme
 

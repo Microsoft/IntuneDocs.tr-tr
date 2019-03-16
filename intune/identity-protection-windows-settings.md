@@ -2,10 +2,10 @@
 title: Windows Hello for Business ayarları Microsoft Intune - Azure | Microsoft Docs
 description: Tüm PIN, biyometrik ve kimlik koruma profilinde sahtekarlığına karşı koruma ayarlarını kullanmak için Windows Hello iş için Windows 10 cihazlarda Microsoft Intune Yapılandır listesini bakın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 03/14/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51569b5cb6faac6c265734b46f1efbb8407e0d3c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.reviewer: shpate
+ms.openlocfilehash: 308a730737612f39863160952409ab92670f9153
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566225"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991056"
 ---
-# <a name="windows-10-and-newer-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Windows iş için Hello ıntune'da etkinleştirmek için Windows 10 (ve üzeri) cihaz ayarları
+# <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Windows iş için Hello ıntune'da etkinleştirmek için Windows 10 cihaz ayarları
 
-Bu makale listeler ve Windows Hello for Business ayarları kontrol edebilirsiniz ıntune'da Windows 10 cihazlarında açıklar. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarlar, oturum açmak için bir PIN veya parmak izi kullanmayı ve daha fazlasını kullanın.
+Bu makale listeler ve Windows Hello for Business ayarları kontrol edebilirsiniz ıntune'da Windows 10 cihazlarında açıklar. Bir Intune Yöneticisi olarak yapılandırabilir ve bu ayarlar Windows 10 cihazları için mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak atayın. 
 
-Bir Intune Yöneticisi olarak oluşturun ve bu ayarlar Windows 10 ve üzeri cihazlar için atayın.
+Bu ayarlar hakkında ek bilgiler bulabilirsiniz [Windows Hello'yu Yapılandır iş İlkesi ayarlarının](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings), WIndows Hello belgelerinde.
+
 
 Intune'da iş profilleri hakkında daha fazla Windows Hello bilgi edinmek için [kimlik Koruması'nı yapılandırma](identity-protection-configure.md).
 
@@ -83,8 +85,7 @@ Intune'da iş profilleri hakkında daha fazla Windows Hello bilgi edinmek için 
 - **Şirket içi kaynaklar için sertifika**: 
 
   - **Etkinleştirme**: İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasına izin verir.
-  - **Yapılandırılmamış** (varsayılan): İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasını önler.  
-
+  - **Yapılandırılmamış** (varsayılan): İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasını önler. Bunun yerine, cihazları varsayılan davranışını kullanın *güven anahtarı şirket içi kimlik doğrulaması*. Daha fazla bilgi için [şirket içi kimlik doğrulaması için kullanıcı sertifikası](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) Windows Hello belgelerinde.  
 ## <a name="next-steps"></a>Sonraki adımlar
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aa1901a1b9159c2e8ab7398b70f5693708f0657
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 75137c4a9f58e1b851435cd7319d84a47478b8af
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57682683"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991170"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -33,7 +33,7 @@ Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bu
 
 - Windows 10 sürüm 1607 veya üzeri (Enterprise, Pro ve Education sürümleri)
 - Windows 10 istemcisi: 
-    - Azure Active Directory’ye (AAD) veya Hibrit Azure Active Directory’ye katılmış olmalıdır
+    - Azure Active Directory (AAD) alanına katılmış veya [hibrit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (başka bir Docs web sitesini açar) ve
     - Intune’da kayıtlı (MDM ile yönetilen) olmalıdır
 - Windows uygulama boyutu, uygulama 8 GB olarak tavan
 
@@ -257,7 +257,7 @@ Aşağıdaki görüntüde, cihaza uygulama değişiklikler yapılmıştır son k
 Gerekirse, uygulama ataması başına gösteren son kullanıcı bildirimleri gösterilmemesini sağlayabilirsiniz. Intune'dan seçin **istemci uygulamaları** > **uygulamaları** > uygulamayı seçin > **Assignemnts** > **grupları dahil**. 
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 uygulamasında sorun giderme
-İstemci makinesindeki aracı günlükleri genellikle `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` yolunda bulunur. Bu günlük dosyalarını görüntülemek için `CMTrace.exe` dosyasından yararlanabilirsiniz. *CMTrace.exe*, [SCCM İstemci Araçları](https://docs.microsoft.com/sccm/core/support/tools)'ndan indirilebilir. 
+İstemci makinesindeki aracı günlükleri genellikle `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` yolunda bulunur. Bu günlük dosyalarını görüntülemek için `CMTrace.exe` dosyasından yararlanabilirsiniz. *CMTrace.exe* indirilebileceğini [Configuration Manager istemci araçları](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Aracısı'nın ekran görüntüsü istemci makinesine kaydeder](./media/apps-win32-app-10.png)    
 
