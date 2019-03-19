@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838045"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58163437"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihaz geçiş kodunuzu sıfırlama
 
@@ -32,7 +32,7 @@ Cihaz PIN’ini veya parolasını kaybederseniz, sıfırlamak için [Şirket Por
 Şirkete kayıtlı bir cihaz kullanıyorsanız cihaz geçiş kodunuzu sıfırlama seçeneğini göremeyebilirsiniz. Sizin için geçiş kodunu sıfırlaması adına şirketinizin destek birimiyle görüşün.
 
    > [!NOTE]
-   > Android 7.0 ve üzerini kullanan cihazlarda geçiş kodunu sıfırlayamazsınız. Geçiş kodunuzu unutursanız cihazı fabrika ayarlarına sıfırlamanız gerekir. 
+   > Android 7.0 ve üzerini çalıştıran cihazlarda geçiş kodunu sıfırlayamazsınız. Parolanızı unutursanız cihazı fabrika ayarlarına sıfırlamanız gerekir. 
 
 ## <a name="reset-your-passcode"></a>Geçiş kodunuzu sıfırlama
 

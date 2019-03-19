@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 570cdb529221210ff08e52dbf9e2449f8b70c060
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2fc6cba2d1088ddb367d5c47da04118aa9d6fcab
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399923"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58173990"
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -72,6 +72,8 @@ Intune uygulama koruma ilkeleri platformu desteği, Android ve iOS cihazlar içi
 
 Windows cihazları şu anda desteklenmez. Ancak, benzer bir işlevsellik sunan Windows bilgi Koruması'nı kullanabilirsiniz. Ayrıntılar için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
+> [!IMPORTANT]
+> Intune Şirket portalı, cihazda, Android uygulama koruma ilkelerini almak için gereklidir. Daha fazla bilgi için [Intune Şirket portalı erişim uygulama gereksinimleri](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Uygulama koruma ilkeleri uygulama verilerini nasıl korur
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,14 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 828cd17c320bd13b1b7fcce6578727015be3a77b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f35adbe01b0e0a52219480c17aa5779a98f82b3b
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460453"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58173982"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune ve Exchange Online için Exchange hizmet bağlayıcısını yapılandırma
+> [!IMPORTANT]  
+> Biz Exchange Online için Intune 'Hizmet' bağlayıcı işlevini gelecek bir güncelleştirmede kaldırma, MC165575 içinde paylaşılmıştı. Tüm mevcut Exchange Online için Intune bağlayıcılar Mart 2019 kaldırmak planlıyorsanız.
+>  
+>  Bu değişiklik hakkında daha fazla bilgi için bkz. [anımsatıcı: Var olan Exchange Online için Intune bağlayıcılar kaldırma](whats-new.md#reminder-removal-of-existing-exchange-online-to-intune-connectors-)
+
 Bu makale, Microsoft Intune hizmetini Exchange Online veya yeni Exchange Online Dedicated hizmetine nasıl bağlayacağınızı gösterir. Exchange Online Dedicated ortamınızın **yeni** veya **eski** sürüm mü olduğunu belirlemek için hesap yöneticinize başvurun.
 
 **Hizmetten Hizmete Bağlayıcı** ile hem Exchange ActiveSync’i (EAS) hem de Intune tarafından yönetilen cihazları tek bir yönetim konsolundan yönetebilirsiniz.  Exchange Online için Koşullu Erişimi etkinleştirmek için bağlayıcı gerekli değildir.
