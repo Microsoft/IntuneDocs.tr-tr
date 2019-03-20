@@ -5,38 +5,38 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
-ms.reviewer: chrisgre
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf169dbae20285b9134766323b41ea9139440d74
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1fcfc225d9945ecfd370468e2d48b8d9d448ffac
+ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390423"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58221499"
 ---
-# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure’da Intune şirket içi Exchange bağlayıcısını ayarlama
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Intune şirket içi Exchange connector, Microsoft Intune ayarlama
+Bu makaledeki bilgiler yükleyin ve ardından Exchange Active Sync şirket içi Bağlayıcısı için Intune izlemenize yardımcı olur.  Intune şirket içi Exchange bağlayıcısıyla kullanan, [izin vermek veya Exchange erişimi engellemek için koşullu erişim ilkeleri şirket içi posta kutularını](conditional-access-exchange-create.md). 
 
-Şirket içi Exchange Server ortamında, Exchange şirket içi posta kutularına erişime izin vermek veya bu erişimi engellemek için Intune koşullu erişimi kullanılabilir. Exchange Active Sync şirket içi bağlayıcılarını kullanarak Intune'u Exchange kuruluşlarınıza bağlayın ve cihaz uyumluluk ilkeleriyle birlikte Intune koşullu erişimini ayarlayın. Ardından, bir cihaz, Exchange bağlanmaya çalıştığında, Intune cihaz Intune'a kayıtlı ve uyumlu olmadığını belirler. Hangi cihazların Intune'a kayıtlı olduğunu saptamak için, şirket içi Exchange bağlayıcısı Exchange Server'daki Exchange Active Sync (EAS) kayıtlarını Intune kayıtlarına eşler. Daha fazla bilgi için [Intune ile koşullu erişim kullanmanın yaygın yolları nelerdir?](conditional-access-intune-common-ways-use.md)
+Bir cihaz, şirket içi Exchange erişmeyi denediğinde, Exchange Bağlayıcısı, Exchange Active Sync (EAS) Intune ile cihaz kaydı ve uyumluluk için cihaz uyumluluk ilkelerini denetlemek için Intune kayıt sunucusu Exchange kaydeder eşler. Koşullu erişim ilkelerine bağlı olarak, cihazın erişimine izin, veya engellendi. Daha fazla bilgi için [Intune ile koşullu erişim kullanmanın yaygın yolları nelerdir?](conditional-access-intune-common-ways-use.md)
 
-> [!IMPORTANT]
-> Intune artık abonelik başına birden çok şirket içi Exchange bağlayıcısını destekler. Birden çok şirket içi Exchange kuruluşunuz varsa, her Exchange kuruluşu için ayrı bağlayıcılar ayarlayabilirsiniz.
+Intune, abonelik başına birden çok şirket içi Exchange Bağlayıcısı yüklenmesini destekler. Birden fazla şirket içi Exchange kuruluşu varsa, her biri için ayrı bir Bağlayıcısı'nı ayarlayabilirsiniz. Ancak, yalnızca tek bir bağlayıcıyı olabilir yüklenmiş tek tek her Exchange kuruluşu için kullanın. 
 
-Microsoft Intune’un şirket içi Exchange Server ile iletişim kurmasını sağlayan bir bağlantı ayarlama işleminin genel adımları şöyledir:
+İletişim kurmak Intune şirket içi Exchange Server ile sağlayan bir bağlantı ayarlamak için genel adımlar şunlardır:
 
-1.  Intune şirket içi Exchange bağlayıcısını Azure portalından indirin.
-2.  Şirket içi Exchange kuruluşundaki bir bilgisayarda Exchange bağlayıcısını yükleyin ve yapılandırın.
-3.  Exchange bağlantısını doğrulayın.
-4. Intune'a bağlamak istediğiniz her Exchange kuruluşu için bu adımları yineleyin.
+1. Intune şirket içi Exchange Bağlayıcısı, Intune portalından indirin.
+2. Şirket içi Exchange kuruluşundaki bir bilgisayarda Exchange bağlayıcısını yükleyin ve yapılandırın.
+3. Exchange bağlantısını doğrulayın.
+4. Intune'a bağlamak istediğiniz her ek Exchange kuruluşu için bu adımları yineleyin.
 
 ## <a name="intune-on-premises-exchange-connector-requirements"></a>Intune şirket içi Exchange bağlayıcısı gereksinimleri
 Bağlayıcı tarafından Exchange'e bağlanmak için kullanılan bir Intune lisansı olan bir hesap gerekir. Bağlayıcısını yüklediğinizde, hesabı belirtilir.  
@@ -137,17 +137,35 @@ Exchange bağlayıcısı bağlantıyı ayarladıktan sonra, Exchange'de yönetil
 > [!NOTE]
 > Şirket içi Exchange bağlayıcısını yüklediyseniz ve ileride Exchange bağlantısını silerseniz, Şirket içi Exchange bağlayıcısını yüklü olduğu bilgisayardan kaldırmanız gerekir.
 
-## <a name="install-connectors-for-multiple-exchange-organizations"></a>Birden çok Exchange kuruluşu için bağlayıcıları yükleme
-Intune abonelik başına birden çok şirket içi Exchange bağlayıcısını destekler. Birden çok Exchange kuruluşu olan bir kiracı için, her Exchange kuruluşuna bir bağlayıcı ayarlayabilirsiniz. Bir kez .zip klasörünü indirin ve ardından her Exchange kuruluşu için önceki bölümde verilen adımları izleyerek kuruluştaki sunucuda kurulum programını ayıklayın ve çalıştırın.
 
-Aşağıdaki bölümlerde açıklanan yüksek kullanılabilirlik, izleme ve el ile eşitleme özellikleri, Intune'a bağlanan her Exchange kuruluşu için desteklenir.
+
+## <a name="install-connectors-for-multiple-exchange-organizations"></a>Birden çok Exchange kuruluşu için bağlayıcıları yükleme
+Intune abonelik başına birden çok şirket içi Exchange bağlayıcısını destekler. Birden çok Exchange kuruluşu ile bir kiracı için bir bağlayıcı her Exchange kuruluşu, ancak tek bir kuruluş için yalnızca tek bir bağlayıcıyı ayarlayabilirsiniz. 
+
+Bağlanmak için birden çok Exchange kuruluşu için bağlayıcılar yükleyeceksiniz değilse, bir kez .zip klasörünü indirin ve daha sonra aynı yüklediğiniz her bağlayıcı için indirme yeniden. Her bir ek bağlayıcı için ayıklayın ve Exchange kuruluşunuzdaki bir sunucuda Kurulum programını çalıştırmak için önceki bölümdeki adımları izleyin.
+
+Yüksek kullanılabilirlik, izleme ve el ile eşitleme aşağıdaki bölümlerde açıklanan özellikler, Intune'a bağlanır her Exchange kuruluşu için desteklenir.
 
 ## <a name="on-premises-exchange-connector-high-availability-support"></a>Şirket içi Exchange bağlayıcısı yüksek kullanılabilirlik desteği 
-Exchange Bağlayıcısı belirtilen CAS'yi kullanarak Exchange bağlantısı oluşturduktan sonra bağlayıcıyı diğer CASs bulabilir. Birincil CAS kullanılamaz duruma gelirse, birincil CAS kullanılabilir duruma gelene kadar varsa bağlayıcı başka bir CAS'ye yük devreder. Bu özellik varsayılan olarak açıktır. Aşağıdaki yordamı kullanarak bu özelliği kapatabilirsiniz:
-1. Exchange Connector'ın yüklü olduğu sunucuda %*ProgramData*%\Microsoft\Windows Intune Exchange Connector konumuna gidin. 
+Yüksek kullanılabilirlik için Exchange istemci erişimi sunucusu (bağlayıcıyı kullanan kullanılamaz hale CAS) gereken şirket içi Exchange Bağlayıcısı anlamına gelir bağlayıcıyı, Exchange kuruluşu için farklı bir CA'ları kullanmak için geçebilirsiniz. Exchange Bağlayıcısı yüksek kullanılabilirliği desteklemez. Bağlayıcı başarısız olursa, hiçbir otomatik yük devretme bu bağlayıcı tarafından değiştirmelisiniz varsa ve [yeni bir bağlayıcı yükleme](#reinstall-the-on-premises-exchange-connector). 
+
+Bağlayıcısı belirtilen CAS'yi kullanarak Exchange başarılı bir bağlantı oluşturduktan sonra Yük devretme gerçekleştirmek için bağlayıcıyı, Exchange kuruluşu için ek CASs bulur. Birincil CAS kullanılabilir duruma gelene kadar varsa ek CASs bilgisi bağlayıcı başka bir CAS'ye Yük Devretmesini sağlar. Varsayılan olarak, ek CASs bulunmasını etkinleştirilir. Aşağıdaki yordamı kullanarak, yük devretme kapatabilirsiniz:  
+1. Exchange Bağlayıcısı'nın yüklü olduğu sunucuda % Git*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Bir metin düzenleyicisi kullanarak **OnPremisesExchangeConnectorServiceConfiguration.xml** dosyasını açın.
 3. Özelliği devre dışı bırakmak için &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; değerini &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; olarak değiştirin.    
+ 
 
+## <a name="reinstall-the-on-premises-exchange-connector"></a>Şirket içi Exchange Bağlayıcısı'nı yeniden yükleyin
+Bir Exchange connector'ı yeniden yüklemeniz gerekebilir. Bir kuruluş için ikinci bir bağlayıcı yüklerseniz her Exchange kuruluşu için bağlanmak için tek bir bağlayıcıyı desteklenmediği için yüklediğiniz yeni bağlayıcı özgün bağlayıcının yerini alır.
+
+1. Adımları uygulayın [yükleyin ve Intune şirket içi Exchange bağlayıcısını yapılandırma](#install-and-configure-the-intune-on-premises-exchange-connector) yeni bağlayıcı yüklemesini başlatmak için. 
+2. Sorulduğunda, **değiştirin** yeni bağlayıcıyı yüklemek için.  
+   ![Bir bağlayıcı değiştirilecek yapılandırma istemi](./media/exchange-connector-install/prompt-to-replace.png)
+
+3. Adımlar, önceki yordam form ve Intune'a tekrar oturum kullanmaya devam edin.
+4. Son ekran yansıtılırken seçin **Kapat** tıklayarak yüklemeyi tamamlayın.  
+   ![Kurulumu tamamlayın](./media/exchange-connector-install/successful-reinstall.png)
+ 
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Exchange bağlayıcısı etkinliğini izleme
 
