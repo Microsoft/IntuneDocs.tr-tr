@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c377a8558b1f318b4ddad735b6368a291e34516
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2310f9720c64301a3ea25631e1e8688d88a001e4
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756828"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306830"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>Microsoft Intune - Mart 2019 geliştirme
 
@@ -49,12 +49,6 @@ ms.locfileid: "57756828"
 
 
 <!-- 1903 start-->
-
-### <a name="encryption-report-----2351538---"></a>Şifreleme raporu  <!-- 2351538 -->
-Cihazlarınızı şifreleme durumu hakkındaki ayrıntıları görüntülemek için yeni bir şifreleme rapor kullanmanız mümkün olacaktır. Kullanılabilir ayrıntı cihazlar TPM sürümü, şifreleme hazırlık ve durumu, hata raporlama ve daha fazlasını içerir.  
-
-### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-----2351547----"></a>BitLocker kurtarma anahtarlarını Intune portalından erişim  <!-- 2351547  -->
-Gelen Azure Active Directory (AAD) BitLocker anahtarı kimliği ve BitLocker kurtarma anahtarları hakkında ayrıntılar görüntüleyebileceğiniz cihazlarında, yeni bir giriş noktası ekliyoruz.
 
 ### <a name="scope-tags-for-app-configuration-policies---2371891---"></a>Kapsam etiketleri için uygulama yapılandırma ilkeleri <!--2371891 -->
 Kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama yapılandırma İlkesi erişimi için bir uygulama yapılandırma ilkesi için bir kapsam etiketi ekleyin mümkün olacaktır. Uygulama yapılandırma ilkesini yalnızca hedeflenen veya aynı kapsam etiketi atanan uygulamalarla ilişkili.
@@ -84,7 +78,7 @@ Kullanıcıların görmesi Windows güncelleştirme bildirimleri yapılandırmak
 - Yönetim profili cihaza yüklemek üzere ayarlar uygulamasını açın.
 - Şirket portalı uygulamasının kaydı döndürür.  
 
-Bu değişikliklerin nasıl hazırlama hakkında daha fazla bilgi için bkz. [Microsoft Tech Community post](https://techcommunity.microsoft.com/). Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/intune/ios-enroll). Bu docs değişiklikler, Apple iOS sürüm 12.2 yayımlandıktan sonra canlı olacaktır. 
+Bu değişikliklerin nasıl hazırlama hakkında daha fazla bilgi için bkz. [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/intune/ios-enroll). Apple iOS sürüm 12.2 yayımlandıktan sonra bu belge değişiklikleri Canlı olacaktır. 
 
 ### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Kiracı durumu sayfasında ek bağlayıcı desteği <!-- 3617202     -->
 Kiracı durumu sayfası dahil olmak üzere, ek bağlayıcıları için durum bilgilerini görüntüler *Windows Defender Gelişmiş tehdit koruması* (ATP) ve diğer Mobile Threat Defense bağlayıcıları.

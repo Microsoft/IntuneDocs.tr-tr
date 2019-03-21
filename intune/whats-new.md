@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab89676ca7a652aa317993286b8c91c0a0ed6910
-ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
+ms.openlocfilehash: 7e78aaf026146ae2cf531668464a7f7c644894ce
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221507"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306872"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -47,6 +47,17 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-march-18-2019"></a>18 Mart 2019 haftası
+
+#### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Windows 10 cihazları için şifreleme raporu (genel önizlemede)<!-- 2351538 -->  
+
+Yeni [şifreleme raporu (Önizleme)](encryption-monitor.md#encryption-report) Windows 10 cihazlarınızın şifreleme durumu hakkındaki ayrıntıları görüntülemek için. Mevcut ayrıntıları, cihazlar TPM sürümü, şifreleme hazırlık ve durumu, hata raporlama ve daha fazlasını içerir.  
+
+#### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview----2351547-----"></a>Intune portalında (genel Önizleme) erişim BitLocker kurtarma anahtarları <!-- 2351547   -->  
+
+Artık Intune'a kullanabilirsiniz [ayrıntıları görüntüle](encryption-monitor.md#bitlocker-recovery-keys) BitLocker anahtarı kimliği ve BitLocker kurtarma anahtarları, Azure Active Directory'den hakkında.
+
+
 ## <a name="week-of-february-25-2019"></a>25 Şubat 2019 haftası
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
@@ -347,7 +358,7 @@ Intune, ek cihaz alanları, uygulama kayıt kimliği, Android üreticisi, modeli
 
 #### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Yönetim Şablonları genel Önizleme aşamasındadır ve kendi yapılandırma profiline taşınır <!-- 3322847 -->
 
-Intune Yönetim Şablonları (**cihaz Yapılandırması** > **Yönetim Şablonları**) şu anda özel Önizleme aşamasındadır. Bu güncelleştirme ile:
+Intune Yönetim Şablonları (**cihaz Yapılandırması** > **Yönetim Şablonları**) şu anda genel Önizleme aşamasındadır. Bu güncelleştirme ile:
 
 - Yönetim Şablonları, Intune'da yönetilebilir 300 ayarları içerir. Daha önce bu ayarlar, yalnızca Grup İlkesi Düzenleyicisi'nde vardı.
 - Yönetim Şablonları genel önizlemede kullanılabilir.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: acf14ea6f1b667cb631a424223a40e44a8338edd
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566820"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306851"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune’da Windows cihazları için cihaz uyumluluk ilkesi ekleme
 
@@ -125,7 +125,10 @@ Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işlet
 
 - **Kod bütünlüğü gerektir**: Kod bütünlüğü bir sürücünün veya sistem dosyasının her belleğe yüklendiğinde bütünlüğünü doğrulayan bir özelliktir. Kod bütünlüğü çekirdeğe imzasız bir sürücünün veya sistem dosyasının yüklenip yüklenmediğini algılar. Ayrıca, bir sistem dosyasının yönetici ayrıcalıklarına sahip bir kullanıcı hesabı tarafından çalıştırmak kötü amaçlı yazılım tarafından değiştirilip değiştirilmediğini algılar.
 
-HAS hizmetinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Sistem Durumu Kanıtlama CSP’si](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
+Ek kaynaklar:
+
+- [Sistem durumu kanıtlama CSP'si](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) HAS hizmetinin nasıl çalıştığı hakkında ayrıntılar bulunur.
+- [Destek İpucu: Intune uyumluluk ilkenize bir parçası olarak cihaz durumu kanıtlama ayarları kullanma ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ### <a name="device-properties"></a>Cihaz özellikleri
 

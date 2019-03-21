@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/28/2018
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcd32f975d0d31cfdd659c295ef8ec0ee971efb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6fb5cd74e52e15fd3b1d34b6f4737deffe8425c9
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396701"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306834"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Önceden paylaşılan anahtarla Wi-Fi profili oluşturmak için özel cihaz profili kullanma - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -76,10 +76,12 @@ Aşağıdaki örnek bir Android veya Windows Wi-Fi profili için XML kodu örne�
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>`, **false** olarak ayarlanmalıdır. **true** olarak ayarlandığında, cihazın şifreli bir parola beklemesine ve bunun şifresini çözmeye çalışmasına neden olur; bu da başarısız bağlantıyla sonuçlanabilir.
+> - `<protected>false</protected>`, **false** olarak ayarlanmalıdır. **true** olarak ayarlandığında, cihazın şifreli bir parola beklemesine ve bunun şifresini çözmeye çalışmasına neden olur; bu da başarısız bağlantıyla sonuçlanabilir.
 >
->  `<hex>53534944</hex>`, `<name><SSID of wifi profile></name>` onaltılı değerine ayarlanmalıdır.
+> - `<hex>53534944</hex>`, `<name><SSID of wifi profile></name>` onaltılı değerine ayarlanmalıdır.
 >  Windows 10 cihazları yanlışlıkla *0x87D1FDE8 Düzeltme başarısız* hatasını döndürebilir, ancak cihaz yine de profili içerir.
+>
+> - XML sahip özel karakterler gibi `&` (ve işareti). Özel karakterler kullanarak XML çalışmasını beklendiği gibi engelleyebilir. 
 
 ```
 <!--
