@@ -12,6 +12,8 @@ items:
     items:
     - name: Uygulama kullanıcı arabirimindeki yenilikler
       href: whats-new-app-ui.md
+    - name: Geliştirme aşamasındaki özellikler
+      href: in-development.md
   expanded: true
 - name: Hızlı girişler
   items:
@@ -75,8 +77,6 @@ items:
     href: windows-information-protection-configure.md
   - name: MAM İLE İLGİLİ SSS
     href: mam-faq.md
-  - name: İlke ve profil SSS
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Nasıl yapılır kılavuzları
   items:
   - name: Dağıtım planlama
@@ -225,9 +225,7 @@ items:
       items:
       - name: Aygıt Kayıt Programı veya Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: Windows bilgisayarlara Intune yazılım istemcisini yükleme
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Vazgeçme raporu
+    - name: Eksik kayıt raporu
       href: enrollment-report-company-portal-abandon.md
     - name: Cihaz kaydıyla ilgili sorunları giderme
       href: troubleshoot-device-enrollment-in-intune.md
@@ -258,7 +256,7 @@ items:
       href: device-logout-user.md
     - name: Kullanıcıyı kaldır
       href: device-remove-user.md
-    - name: Cihaz silme
+    - name: macOS cihazını silme
       href: device-erase.md
     - name: Uzaktan denetimli mobil cihazlar
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@ items:
     - name: Cihaz ayarlarını ve özelliklerini kısıtlama
       href: device-restrictions-configure.md
     - name: Güncelleştirme sağlama
+      displayName: delivery optimization; updates
       href: delivery-optimization-windows.md
     - name: Yükseltme sürümleri ve S modu
       href: edition-upgrade-configure-windows-10.md
@@ -363,7 +362,7 @@ items:
         - name: Intune’un Google’a gönderdiği veriler
           href: data-intune-sends-to-google.md
         - name: Jamf Pro'dan Intune'a paylaşılan bilgiler
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: Görünüm ve doğru kişisel veriler
         href: privacy-data-view-correct.md
       - name: Denetim, dışa aktarma, silme
@@ -376,6 +375,7 @@ items:
       - name: Şirket içi Exchange bağlayıcısını yükleme
         href: exchange-connector-install.md
       - name: Koşullu erişim ilkesi oluşturma ve atama
+        href: conditional-access-exchange-create.md
       - name: Cihaz tabanlı koşullu erişim ilkesi
         href: create-conditional-access-intune.md
       - name: Klasik Intune portalından koşullu erişim ilkelerini yeniden atama
@@ -448,6 +448,8 @@ items:
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: Cihaz şifrelemesini izleme
+      href: encryption-monitor.md
     - name: Sertifikalar
       href: certificates-configure.md
       items:
@@ -532,6 +534,8 @@ items:
         href: apps-inc-exl-assignments.md
       - name: Windows 10 uygulamalarını dağıtma
         href: apps-windows-10-app-deploy.md
+      - name: Kamu ortamları için uygulama dağıtma
+        href: apps-deploy-gcc-dod.md
     - name: Uygulamaları izleme
       href: apps-monitor.md
     - name: Uygulama yapılandırma
@@ -616,6 +620,8 @@ items:
       href: data-google-sends-to-intune.md
   - name: Yardım ve destek alma
     items:
+    - name: Kiracı durumu
+      href: tenant-status.md
     - name: Sorunları Gider
       items:
       - name: Kullanıcıların sorunları gidermesine yardımcı olma
@@ -624,6 +630,8 @@ items:
         href: troubleshoot-company-resource-access-problems.md
       - name: Sorun giderme uygulaması kurulum sorunları
         href: troubleshoot-app-install.md
+      - name: Mobil uygulama yönetimi sorunlarını giderme
+        href: troubleshoot-mam.md
       - name: Intune etkinlikleri için denetleme günlükleri
         href: monitor-audit-logs.md
       - name: Azure İzleyici ile günlükleri gözden geçirme
@@ -636,14 +644,12 @@ items:
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Uç nokta koruması sorunlarını giderme
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: İlkelerle ilgili sorunları giderme
+      - name: İlke ve profillerle ilgili sorunları giderme
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: Koşullu erişim sorunlarını giderme
         href: troubleshoot-conditional-access.md
       - name: Exchange bağlayıcısı sorunlarını giderme
         href: troubleshoot-exchange-connector.md
-    - name: Bilinen sorunlar
-      href: known-issues.md
     - name: Destek alın
       href: get-support.md
 - name: Başvuru
@@ -660,14 +666,6 @@ items:
           href: device-restrictions-android.md
         - name: E-posta
           href: email-settings-android.md
-        - name: Güvenilir sertifika
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP sertifikası
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS içeri aktarılmış sertifikası
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS sertifikası
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -687,16 +685,8 @@ items:
           href: device-restrictions-android-for-work.md
         - name: E-posta
           href: email-settings-android-enterprise.md
-        - name: Güvenilir sertifika
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP sertifikası
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS içeri aktarılmış sertifikası
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS sertifikası
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Özel
@@ -713,12 +703,6 @@ items:
           href: device-restrictions-ios.md
         - name: E-posta
           href: email-settings-ios.md
-        - name: Güvenilir sertifika
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP sertifikası
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS sertifikası
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -737,26 +721,20 @@ items:
           href: device-restrictions-macos.md
         - name: Endpoint protection
           href: endpoint-protection-macos.md
-        - name: Güvenilir sertifika
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP sertifikası
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: Özel
           href: custom-settings-macos.md
-    - name: Güvenlik temelleri
-      items:
-      - name: Windows güvenlik temel ayarları
-        href: security-baseline-settings-windows.md
     - name: Windows 10 ve üzeri
       items:
       - name: Uyumluluk ilkesi ayarları
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: Yapılandırma profili ayarları
         items:
+        - name: Teslim iyileştirme ayarları
+          href: delivery-optimization-settings.md
         - name: Cihaz kısıtlamaları
           href: device-restrictions-windows-10.md
         - name: Cihaz kısıtlamaları (Windows 10 Team)
@@ -771,12 +749,6 @@ items:
           href: identity-protection-windows-settings.md
         - name: Bilgi noktası
           href: kiosk-settings-windows.md
-        - name: Güvenilir sertifika
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP sertifikası
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS sertifikası
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -787,6 +759,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: Özel
           href: custom-settings-windows-10.md
+      - name: Güvenlik temel ayarları
+        href: security-baseline-settings-windows.md
       - name: Windows Update ayarları
         href: windows-update-settings.md
     - name: Windows 10 Holographic for Business
@@ -809,10 +783,6 @@ items:
         items:
         - name: Cihaz kısıtlamaları
           href: device-restrictions-windows-8-1.md
-        - name: Güvenilir sertifika
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP sertifikası
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Wi-Fi üzerinden içeri aktarma
@@ -827,10 +797,6 @@ items:
           href: device-restrictions-windows-phone-8-1.md
         - name: E-posta
           href: email-settings-windows-phone-8-1.md
-        - name: Güvenilir sertifika
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP sertifikası
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: Özel
@@ -854,6 +820,9 @@ items:
         href: app-wrapper-prepare-android.md
       - name: Android için Intune Uygulama SDK'sı
         href: app-sdk-android.md
+        items:
+        - name: Android için Intune Uygulama SDK’sı test kılavuzu
+          href: app-sdk-android-testing-guide.md
       - name: Intune Uygulama SDK’sı Xamarin Bağlamaları
         href: app-sdk-xamarin.md
     - name: Intune Veri Ambarını kullanma
@@ -912,34 +881,6 @@ items:
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Kaynaklar
   items:
-  - name: Microsoft Intune belge kılavuzu
-    href: intune-documentation.md
-  - name: Sorunları Gider
-    items:
-    - name: Kullanıcıların sorunları gidermesine yardımcı olma
-      href: help-desk-operators.md
-    - name: Şirket kaynak erişimi sorunlarını giderme
-      href: troubleshoot-company-resource-access-problems.md
-    - name: Sorun giderme uygulaması kurulum sorunları
-      href: troubleshoot-app-install.md
-    - name: Mobil uygulama yönetimi sorunlarını giderme
-      href: troubleshoot-mam.md
-    - name: Intune etkinlikleri için denetleme günlükleri
-      href: monitor-audit-logs.md
-    - name: Uygulama koruma günlüklerini gözden geçirme
-      href: app-protection-policy-settings-log.md
-    - name: E-posta profilleriyle ilgili sorunları giderme
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Yazılım güncelleştirmesi sorunlarını giderme
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Uç nokta koruması sorunlarını giderme
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: İlkelerle ilgili sorunları giderme
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: Koşullu erişim sorunlarını giderme
-      href: troubleshoot-conditional-access.md
-    - name: Exchange bağlayıcısı sorunlarını giderme
-      href: troubleshoot-exchange-connector.md
   - name: Arşiv
     items:
     - name: Yenilikler arşivi
@@ -1005,9 +946,9 @@ items:
       href: data-outside-protect.md
     - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
       href: data-leak-prevention.md
-ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742831"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306868"

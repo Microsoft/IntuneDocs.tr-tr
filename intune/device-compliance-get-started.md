@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a0cb69612e4cf0181fde957f06f490bede7200e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 28de9e939f63f7cb95c09eb28f3869ffc95ebe43
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392537"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330436"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Cihazları Intune kullanarak kuruluşunuzda kaynaklara erişim izni vermek için kuralları ayarlayın
 
@@ -110,10 +110,11 @@ Son olarak cihazın kayıtlı, uyumluluk iade daha sık çalışır:
 | Platform | Sıklık |
 | --- | --- |
 | iOS | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir |  
-| Mac OS X | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir | 
+| Mac OS | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir | 
 | Android | 15 dakika boyunca 3 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
+| Cihaz olarak kaydedilen Windows 10 bilgisayarlar | 30 dakika boyunca 3 dakikada bir, daha sonra 8 saatte bir | 
 | Windows Phone | 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
-| Cihaz olarak kaydedilen Windows bilgisayarları | 30 dakika boyunca 3 dakikada bir, daha sonra 8 saatte bir | 
+| Windows 8.1 | 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
 
 Her zaman, kullanıcılar Şirket portalı uygulamasını açın ve hemen bir ilkeyi denetlemek için cihazı eşitleyebilir.
 

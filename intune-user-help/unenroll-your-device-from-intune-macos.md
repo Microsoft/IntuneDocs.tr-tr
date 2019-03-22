@@ -1,11 +1,11 @@
 ---
-title: macOS cihazınızın Intune kaydını silme | Microsoft Docs
-description: macOS cihazının Intune kaydını nasıl silebileceğiniz açıklanır
+title: Intune Şirket portalı macOS cihazınızın kaydını silme | Microsoft Docs
+description: Şirket portalı'ndan bir macOS cihaz kaydını nasıl sileceğiniz açıklanır
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840000"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330407"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>macOS cihazınızın Intune kaydını silme
+# <a name="unenroll-your-macos-device-from-company-portal"></a>Şirket portalı macOS cihazınızın kaydını silme
 
-macOS cihazınızın Intune kaydını kaldırdığınızda cihazınız şirket kaynaklarına bir daha erişemez.
+MacOS cihazınızın Intune kaydını sildiğinizde, cihazınız artık şirket kaynaklarına erişemez.
 
 macOS cihazınızın yönetim kaydını silmek için bu adımları izleyin:
 
-1.  Şirket Portalı uygulamasındaki **Cihazlarım** bölümünden kaydını kaldırmak istediğiniz cihazı seçin.
+1.  MacOS için şirket portalında oturum açın.
+2.  Git **cihazları** ve kaydını kaldırmak istediğiniz cihazı seçin.
 
-2.  **Kaldır** > **Kaldır**’a tıklayın.
+3.  Üç nokta menüsü simgesi seçin > **Kaldır**.
+4.  Bir onay iletisi görüntülenir. Seçin **Kaldır** cihazınızın kaydını silmek için. 
 
 Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 

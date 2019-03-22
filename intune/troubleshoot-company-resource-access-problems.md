@@ -1,11 +1,11 @@
 ---
-title: Şirket kaynak erişimi sorunlarını giderme | Microsoft Docs
-description: Kaynak erişimi sorunlarını gidermek için Microsoft Intune hata ve durum kodlarını kullanın.
+title: Hata ve durum kodları Microsoft Intune - Azure | Microsoft Docs
+description: MDM kullanarak yönetilen cihazlar, şirket kaynaklarına ve iOS cihazlarında hatalar OMA yanıt hataları erişim Intune almadan hatalar, durum kodu, açıklamaları ve çözümler listesini görür.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461507"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330487"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune ile şirket kaynak erişimi sorunlarını giderme
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Genel hata kodlarını ve açıklamalarını Microsoft Intune
 
-Microsoft Intune eylemi bir hata kodu döndürdüğünde sorunları gidermenize yardımcı olması için bu konu başlığı altında verilen hata ve durum kodlarını kullanın.
+Bu makalede, kuruluş kaynaklarına erişirken sık karşılaşılan hatalar, durum kodları, açıklamaları ve olası çözümlerini listeler. Microsoft Intune kullanırken erişim sorunlarını gidermenize yardımcı olması için bu bilgileri kullanın.
 
-Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](get-support.md).
+Yardım desteği varsa bkz [Intune için destek alma](get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM ile yönetilen Windows cihazları için durum kodları
 
@@ -380,10 +380,11 @@ Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenme
 |-2016345907|0x87D100CD|Kaynak, içeriğini GÜNCELLEŞTİRMELİDİR. Talebi gönderene, güncel sürümü edinmek için içeriğinin eşitlenmesi GEREKTİĞİ bildiriliyor.|
 |-2016345908|0x87D100CC|İstek başarıyla tamamlandı ancak hiçbir veri döndürülmüyor. Yanıt kodu aynı zamanda, hedefte içerik olmadığında bir Get’e yanıt olarak da döndürülür.|
 |-2016345909|0x87D100CB|Yetkili olmayan yanıt. Hedeflenenden farklı bir varlık isteğe yanıt veriyor. Yanıt yalnızca istek yetkili hedeften 200 yanıt kodu ile sonuçlanacaksa döndürülür.|
-|-2016345910|0x87D100CA| İşleme için kabul edildi. Bir uygulamanın uzaktan yürütmesini çalıştırma veya kullanıcı ya da uygulamaya bildirme isteği başarıyla gerçekleştirildi.|
+|-2016345910|0x87D100CA|İşleme için kabul edildi. Bir uygulamanın uzaktan yürütmesini çalıştırma veya kullanıcı ya da uygulamaya bildirme isteği başarıyla gerçekleştirildi.|
 |-2016345911|0x87D100C9|İstenen öğe eklendi.|
 |-2016345912|0x87D100C8|SyncML komutu başarıyla tamamlandı.|
 |-2016346011|0x87D10065|Belirtilen SyncML komutu yürütülüyor, ancak henüz tamamlanmadı.|
 
-### <a name="next-steps"></a>Sonraki adımlar
-Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](get-support.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
+## <a name="next-steps"></a>Sonraki adımlar
+
+Microsoft Support başvurun [Intune için destek alma](get-support.md).

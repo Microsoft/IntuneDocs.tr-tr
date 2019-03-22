@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e78aaf026146ae2cf531668464a7f7c644894ce
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: ad4ac5a2560cf6c3d06354ca8d4e3190f1bf198b
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306872"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58343018"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,6 +57,8 @@ Yeni [şifreleme raporu (Önizleme)](encryption-monitor.md#encryption-report) Wi
 
 Artık Intune'a kullanabilirsiniz [ayrıntıları görüntüle](encryption-monitor.md#bitlocker-recovery-keys) BitLocker anahtarı kimliği ve BitLocker kurtarma anahtarları, Azure Active Directory'den hakkında.
 
+### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>İOS ve Android cihazlarda Intune senaryolarını desteğini Microsoft Edge <!-- 3411007 -->
+Microsoft Edge tüm Intune Managed Browser ile son kullanıcı deneyimi geliştirmelerine ek olarak aynı yönetim senaryolarını destekler. İkili kimlik, uygulama koruma İlkesi tümleştirmesi, Azure uygulama proxy'si tümleştirmesi ve yönetilen Sık Kullanılanlar ve giriş sayfası kısayolları Intune ilkeleri ile etkinleştirilen Microsoft Edge Kurumsal özellikler içerir. Daha fazla bilgi için [Microsoft Edge desteği](app-configuration-managed-browser.md#microsoft-edge-support).
 
 ## <a name="week-of-february-25-2019"></a>25 Şubat 2019 haftası
 

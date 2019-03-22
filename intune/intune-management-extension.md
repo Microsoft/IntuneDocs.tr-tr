@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20bacb9d181778fb2b2f52a19c116e7792f0a481
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 469327261b8f617be0851b52d389965c5eff9b59
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991133"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330411"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Windows 10 cihazlarda ıntune'da PowerShell betiklerini kullanın
 
@@ -44,7 +44,7 @@ Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. Win
 
 Intune yönetim uzantısı şu önkoşullara sahiptir:
 
-- Cihazlar alanına veya Azure için kaydedilen AD ile Azure AD için yapılandırıldığından [ıntune'a otomatik kayıt](windows-enroll.md#enable-windows-10-automatic-enrollment). Intune yönetim uzantısı, Azure AD'ye katılmış destekler, hibrit Azure AD etki alanına katılmamışsa ve kayıtlı Windows cihazları birlikte yönetilir.
+- Cihazlar alanına veya Azure AD ile Azure AD için kayıtlı ve Intune için yapılandırılmış [otomatik kayıt](quickstart-setup-auto-enrollment.md). Intune yönetim uzantısı, Azure AD'ye katılmış destekler, hibrit Azure AD etki alanına katılmamışsa ve kayıtlı Windows cihazları birlikte yönetilir.
 - Cihazlar Windows 10 sürüm 1607 veya üzeri çalıştırmalıdır.
 - Bir PowerShell Betiği, Intune yönetim uzantısı aracısı yüklü değil veya bir Win32 uygulaması için bir kullanıcı veya cihaz güvenlik grubu olarak dağıtılır.
 

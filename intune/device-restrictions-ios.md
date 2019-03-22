@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 44f7c5b897dc1aedfe8ffc23c25ea479eceb35e5
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566718"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330504"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarları
 
@@ -43,7 +43,7 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
     Bu özellik şu platformlarda geçerlidir:  
     - iOS 9.3.2 ve üstü
 
-- **Ekran Yakalama**: Seçin **blok** ekran görüntüleri veya ekran önlemek için cihazda yakalar. **Yapılandırılmamış** (varsayılan), kullanıcının ekran içeriğini resim olarak yakalamasına olanak sağlar.
+- **Ekran Yakalama**: Seçin **blok** ekran görüntüleri veya ekran önlemek için cihazda yakalar. İOS 9.0 ve üzeri, bu da ekran kayıtları engellemeyi kapsar. **Yapılandırılmamış** (varsayılan), kullanıcının ekran içeriğini bir video veya resim olarak yakalamasına olanak sağlar.
   - **(Yalnızca denetimli) Classroom uygulamasıyla ekranı uzaktan izlemesine**: Seçin **blok** Classroom uygulamasının ekranı cihazda uzaktan görüntülemesini engellemek için. **Yapılandırılmamış** (varsayılan) ekranını görüntülemek Apple Classroom uygulamasını sağlar.
 
     Bu özellik şu platformlarda geçerlidir:  

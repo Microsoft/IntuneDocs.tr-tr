@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure'da Windows 10 cihazları için koruma ayarları | Microsoft Docs
 description: 'Windows 10 cihazlarda Windows Defender’ı etkinleştirmek için Endpoint Protection kullanma veya yapılandırma özelliği şunları içerir: Application Guard, Güvenlik Duvarı, SmartScreen, şifreleme ve BitLocker, Exploit Guard, Uygulama Denetimi, Güvenlik Merkezi ve Microsoft Intune’daki yerel cihazlarda güvenlik.'
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566701"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58343006"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
 
@@ -87,8 +87,7 @@ Bu ayarlar tüm ağ türlerine uygulanabilir.
 
 Bu ayarlar; **Etki alanı (iş yeri) ağı**, **Özel (keşfedilebilir) ağ** ve **Ortak (keşfedilemeyen) ağ** dahil olmak üzere belirli ağ türlerine uygulanabilir.
 
-#### <a name="general-settings"></a>Genel ayarlar
-
+#### <a name="general-settings"></a>Genel ayarlar  
 - **Windows Defender Güvenlik Duvarı**: Seçin **etkinleştirme** güvenlik duvarı ve Gelişmiş Güvenlik açmak için. **Yapılandırılmadı** (varsayılan) ayarı, diğer ilke ayarlarından bağımsız olarak tüm ağ trafiğine izin verir.
 - **Gizli mod**: **Blok** gizli modda çalışmasını gelen güvenlik duvarı. Gizli modu engellemek, **IPsec güvenli paket muafiyetini** de engellemenize imkan verir. **Yapılandırılmadı** (varsayılan) ayarı, güvenlik duvarını gizli modda çalıştırarak yoklama isteklerine yanıtların önlenmesine yardımcı olur.
 - **Korumalı**: **Blok** bu özelliği devre dışı bırakır. **Yapılandırılmadı** (varsayılan) ayarı, bu ayarı etkinleştirir. Bu ayar ve Windows Defender Güvenlik Duvarı etkinleştirildiğinde, diğer ilke ayarlarından bağımsız olarak tüm gelen trafik engellenir.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c82224dbf1e67135a99913ed0d1144680955bd10
-ms.sourcegitcommit: 4049a3aed15f2d8d21bb814410875a13f613e4ed
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58283251"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330428"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>izin verme veya kısıtlamanıza Intune kullanarak macOS cihaz ayarları
 
@@ -46,7 +46,7 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
   Bu özellik şu platformlarda geçerlidir:  
   - macOS 10.13 ve üzeri
 
-- **(Yalnızca denetimli) yazılım güncelleştirmelerinin erteleneceği**: Ayarlandığında **yapılandırılmadı** (varsayılan), yazılım güncelleştirmeleri gösterilir cihazda gibi Apple onları serbest bırakır. Bir macOS güncelleştirmesini Apple tarafından belirli bir tarihte yayımlanan, örneğin, sonra bu güncelleştirmeyi doğal olarak yayın tarihindeki cihazda gösterilir. Çekirdek derleme güncelleştirmeleri gecikme olmadan izin verilir.
+- **Yazılım güncelleştirmelerinin erteleneceği**: Ayarlandığında **yapılandırılmadı** (varsayılan), yazılım güncelleştirmeleri gösterilir cihazda gibi Apple onları serbest bırakır. Bir macOS güncelleştirmesini Apple tarafından belirli bir tarihte yayımlanan, örneğin, sonra bu güncelleştirmeyi doğal olarak yayın tarihindeki cihazda gösterilir. Çekirdek derleme güncelleştirmeleri gecikme olmadan izin verilir.
 
   **Etkinleştirme** 0-90 güne ait cihazlarda yazılım güncelleştirmeleri gösterilirken gecikme sağlar. Bu ayar, güncelleştirmeler veya yüklü olmayan denetlemez. 
 

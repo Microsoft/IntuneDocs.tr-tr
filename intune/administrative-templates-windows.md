@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d68b5c9bce1f846357330aaff7e93019d8535375
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397279"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342981"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Intune Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonları kullanma
 
@@ -32,9 +32,6 @@ Kullanarak bu görevi tamamlayabilirsiniz **Yönetim Şablonları** Microsoft In
 **Yönetim Şablonları** Intune'da yerleşiktir ve OMA-URI kullanma dahil olmak üzere, tüm özelleştirmeler gerekmez. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu şablon ayarları, Windows 10 cihazlarınızı yönetmek için bir tek Mağazanız kullanın.
 
 Bu makalede, Windows 10 cihazları için bir şablon oluşturma adımları listelenir ve filtre Intune tüm kullanılabilir ayarları gösterilmektedir. Şablonu oluşturduğunuzda, bir cihaz yapılandırma profili oluşturur. Atayın veya bu profili, kuruluşunuzdaki Windows 10 cihazlarına dağıtabilirsiniz.
-
-> [!NOTE]
-> Yönetim Şablonları, tek başına cihazlar için desteklenir. Bunlar şu anda System Center Configuration Manager (SCCM) ortak yönetilen cihazlar için desteklenir.
 
 ## <a name="create-a-template"></a>Bir şablon oluşturma
 
