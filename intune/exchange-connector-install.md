@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/15/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fcfc225d9945ecfd370468e2d48b8d9d448ffac
-ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
+ms.openlocfilehash: deb3e57876dffdc19129a5d845872d90d5833aaf
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221499"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394701"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Intune şirket içi Exchange connector, Microsoft Intune ayarlama
 Bu makaledeki bilgiler yükleyin ve ardından Exchange Active Sync şirket içi Bağlayıcısı için Intune izlemenize yardımcı olur.  Intune şirket içi Exchange bağlayıcısıyla kullanan, [izin vermek veya Exchange erişimi engellemek için koşullu erişim ilkeleri şirket içi posta kutularını](conditional-access-exchange-create.md). 
@@ -169,12 +169,13 @@ Bir Exchange connector'ı yeniden yüklemeniz gerekebilir. Bir kuruluş için ik
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Exchange bağlayıcısı etkinliğini izleme
 
-Exchange bağlayıcılarını başarıyla yapılandırdıktan sonra, bağlantıların durumunu ve son başarılı eşitleme girişimini görüntüleyebilirsiniz. Exchange bağlayıcısı bağlantılarını doğrulamak için:
+Exchange Bağlayıcısı'nı başarıyla yapılandırdıktan sonra bağlantılar ve son başarılı eşitleme denemesinin durumunu görüntüleyebilirsiniz. Exchange connector bağlantısını doğrulamak için:
 
 1. Intune panosunda seçin **Exchange erişimi**.
-2. Altında **Kurulum**seçin **Exchange online Bağlayıcısı** her Exchange connector için bağlantı durumunu doğrulayın.
+2. Seçin **şirket içi Exchange erişimi** her Exchange connector için bağlantı durumunu doğrulayın.
 
 Ayrıca son başarılı eşitleme denemesinin tarih ve saatini kontrol edebilirsiniz.
+--> 
 
 ### <a name="system-center-operations-manager-management-pack"></a>System Center Operations Manager Yönetim Paketi
 
@@ -187,10 +188,11 @@ Bir şirket içi Exchange connector EAS ve Intune cihaz kayıtları düzenli ara
 
    - **Tam eşitleme** varsayılan olarak günde bir kez gerçekleştirilir. Tam eşitleme, Intune lisanslı olan ve şirket içi Exchange koşullu erişimi için hedeflenen kullanıcıların cihaz bilgilerini alır. Tam eşitlemede Exchange sunucu bilgileri de alınır ve Azure portalında Intune tarafından belirtilen yapılandırmanın Exchange Server'da güncelleştirilmesi sağlanır. 
 
+
 Intune panosundaki **Hızlı Eşitleme** veya **Tam Eşitleme** seçeneğini kullanarak bağlayıcıyı eşitleme çalıştırmaya zorlamak için aşağıdaki adımları izleyebilirsiniz:
 
    1. Intune panosunda seçin **Exchange erişimi**.
-   2. Altında **Kurulum**, seçin **Exchange online Bağlayıcısı**.
+   2. Seçin **şirket içi Exchange erişimi**.
    3. Eşitlemek istediğiniz bağlayıcıyı seçin ve sonra da **Hızlı Eşitleme**'yi veya **Tam Eşitleme**'yi seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar

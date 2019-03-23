@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f15eb4aecc1c4c71420df7036a7d143ba298cd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8d5c26c53e5d1a8e8d0e02a227b84d9e5ebea83c
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460907"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358250"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**Kullanımdan kaldırma** veya **Silme** eylemlerini kullanarak artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan cihazları Intune’dan kaldırabilirsiniz. Kullanıcılar Intune'a kayıtlı kişiye ait cihazlara Intune Şirket Portalı’ndan uzaktan komut da verebilir.
+**Kullanımdan kaldırma** veya **Silme** eylemlerini kullanarak artık ihtiyaç duyulmayan, başka amaçla kullanılacak olan veya kaybolan cihazları Intune’dan kaldırabilirsiniz. Kullanıcılar ayrıca uzaktan komut Intune şirket Portalı'ndan Intune'a kaydedilen cihazlara verebilir.
 
 > [!NOTE]
 > Bir kullanıcıyı Azure Active Directory’den (Azure AD) kaldırmadan önce, bu kullanıcıyla ilişkili tüm cihazlar için **Silme** veya **Kullanımdan kaldırma** eylemlerini kullanın. Yönetilen cihazları olan kullanıcıları Azure AD’den kaldırırsanız Intune artık bu cihazları artık silemez veya kullanımdan kaldıramaz.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cee1cbc05164a418148ecea8d93f6c8c45c73e01
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 2d8c34f1947a0abaa4cdf0bbcd65dcf31e4c11ff
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991135"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358162"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -48,7 +48,7 @@ MAM ilkelerinin uyumluluk durumunu izlemek için üç farklı yerden izlenebilir
 ![Intune mobil uygulama yönetimi bölmesinde Özet kutucuğu](./media/app-protection-user-status-summary.png)
 
 - **Atanan kullanıcılar**: Şirketinizde iş bağlamında bir ilkeyle ilişkili korumalı ve lisanslı, korunmasız ve lisanssız atanan kullanıcılar yanı sıra bir uygulama kullanan atanmış kullanıcıların toplam sayısı.
-- **Bayrak eklenen kullanıcılar**: Sorun yaşayan kullanıcıların sayısı. Jailbreak uygulanmış cihazlar kapsamında raporlanır **riskli oldukları belirlenen kullanıcılar**.
+- **Bayrak eklenen kullanıcılar**: Sorun yaşayan kullanıcıların sayısı. Güvenliği kırılmış (iOS) ve (Android) kök erişim izni verilmiş cihazlar kapsamında raporlanır **riskli oldukları belirlenen kullanıcılar**. Google SafetyNet cihaz kanıtlama denetimi tarafından (BT yöneticisi tarafından açık değilse) işaretlenmiş cihazlara sahip kullanıcılar, buraya rapor edilir. 
 - **İOS için kullanıcı durumu** ve **Android için kullanıcı durumu**: İlgili platformuna yönelik iş bağlamında atanmış bir ilkeye sahip bir uygulama kullanmış olan kullanıcıların sayısı. Bu bilgileri, iş bağlamında hiçbir ilke tarafından hedeflenmeyen bir uygulamayı kullanan kullanıcıların sayısını yanı sıra, ilke tarafından yönetilen kullanıcı sayısını gösterir. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
 - **Popüler korunan iOS uygulamaları**: Bu bilgiler, en çok kullanılan iOS uygulamalarına bağlı olarak, korumalı ve korumasız iOS uygulamaları sayısını gösterir.
 - **Üst korunan Android uygulamaları**: Bu bilgiler, en çok kullanılan Android uygulaması bağlı olarak, korumalı ve korumasız Android uygulamaları sayısını gösterir.
@@ -89,7 +89,7 @@ Kullanıcının raporlamasını görmek için şu adımları izleyin:
 3. Listeden kullanıcı seçin. Bu kullanıcı için uyumluluk durumuna ilişkin ayrıntıları görebilirsiniz.
 
 ### <a name="flagged-users"></a>Bayrak eklenen kullanıcılar
-Ayrıntılı görünümde; hata iletisi, hata oluştuğunda erişilmiş olan uygulama, etkilenen cihaz işletim sistemi platformu ve zaman damgası gösterilir.
+Ayrıntılı görünümde; hata iletisi, hata oluştuğunda erişilmiş olan uygulama, etkilenen cihaz işletim sistemi platformu ve zaman damgası gösterilir. Google SafetyNet cihaz kanıtlama denetimi tarafından işaretlenen cihazlara sahip kullanıcılar, buraya Google tarafından bildirilen sebeple raporlanır.
 
 ## <a name="reporting-view"></a>Raporlama görünümü
 

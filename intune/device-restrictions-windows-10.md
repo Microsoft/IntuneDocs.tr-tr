@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure’da Windows 10 cihaz kısıtlama ayarları | Microsoft Docs
-description: Tüm ayarları ve Windows 10 ve üzeri cihazlarda cihaz kısıtlamaları oluşturmak için bunlara ilişkin açıklamaların listesini bakın. Bu ayarları yapılandırma profilinde de ekran görüntüleri, parola gereksinimleri, bilgi noktası ayarları, depolama, Edge tarayıcısı, Windows defender uygulama denetimi, bulutta, Başlat menüsünde ve diğer Microsoft Intune erişmek için kullanın.
+description: Tüm ayarları ve Windows 10 ve üzeri cihazlarda cihaz kısıtlamaları oluşturmak için bunlara ilişkin açıklamaların listesini bakın. Bu ayarları yapılandırma profilinde de ekran görüntüleri, parola gereksinimleri, bilgi noktası ayarları, depolama, Microsoft Edge tarayıcısı, Windows defender uygulama denetimi, bulutta, Başlat menüsünde ve diğer Microsoft Intune erişmek için kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566763"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395009"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -29,7 +29,7 @@ Bu makalede, listeler ve Windows 10 ve daha yeni cihazlarda denetleyebileceğini
 Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan veya Windows 10 cihazlarına dağıtılabilir.
 
 > [!Note]
-> Tüm Windows sürümlerinde bütün ayarlar kullanılabilir değildir
+> Tüm seçenekleri, tüm Windows sürümlerinde kullanılabilir. Desteklenen sürümlerinden görmek için başvurmak [ilke CSP'ler](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (başka bir Microsoft web sitesini açar).
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -59,13 +59,13 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 - **Bluetooth bulunabilirlik**: Cihazın diğer Bluetooth özellikli cihazlar tarafından bulunabilmesine olanak sağlar.
 - **Bluetooth önceden eşleştirme**: Belirli Bluetooth cihazlarını bir konak cihazla otomatik olarak kullanmak üzere yapılandırmanıza olanak sağlar.
 - **Bluetooth reklamlarına**: Cihazın Bluetooth üzerinden reklam almasına izin verir.
-- **Bağlı cihazlar hizmetine**: Bulma ve Bluetooth diğer cihazlara bağlanmayı etkinleştiren bağlı cihazlar hizmetine izin verilip verilmeyeceğini seçmenize olanak tanır.
-- **NFC**: Kullanıcının cihazda yakın alan iletişimi (NFC) özelliklerini yapılandırmak ve etkinleştirmek olanak sağlar.
+- **Bağlı cihazlar hizmetine**: Bulma ve Bluetooth diğer cihazlara bağlanmayı etkinleştiren bağlı cihazlar hizmetine izin verecek şekilde seçmenizi sağlar.
+- **NFC**: Etkinleştirme ve yakın alan iletişimi (NFC) özellikleri cihazın yapılandırma kullanıcı sağlar.
 - **Wi-Fi**: Kullanıcının etkinleştirme ve (yalnızca Windows 10 Mobile) cihazda Wi-Fi yapılandırmasına olanak tanır.
 - **Wi-Fi etkin noktalarına otomatik bağlanma**: Cihazın ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmasına ve bağlantıyla ilgili hüküm ve koşulları otomatik olarak kabul etmesine olanak sağlar.
 - **Elle Wi-Fi yapılandırmasına**: Olup, kullanıcının kendi Wi-Fi bağlantılarını yapılandırıp yapılandıramayacağını veya olup yalnızca Wi-Fi profili (yalnızca Windows 10 Mobile) tarafından yapılandırılan bağlantıları kullanıp kullanamayacağını.
-- **Wi-Fi tarama aralığı**: Ne sıklıkta belirtin cihazlar için Wi-Fi ağlarını tarama. 1 (en çok) ile 500 (en az) arasında bir değer belirtin.
-- **Bluetooth'a izin verilen hizmetler**: Onaltılık dize olarak izin verilen Bluetooth hizmetleri ve profillerinin bir listesini belirtin.
+- **Wi-Fi tarama aralığı**: Ne sıklıkta girin cihazlar için Wi-Fi ağlarını tarama. Bir değeri 1 (en sık rastlanan) 500 için (en az) girin.
+- **Bluetooth'a izin verilen hizmetler**: Onaltılık dize olarak izin verilen Bluetooth hizmetleri ve profillerinin bir listesini girin.
 
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 
@@ -116,7 +116,7 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 - **Ekran Yakalama (yalnızca mobil)**: Kullanıcının cihaz ekranını resim olarak yakalamasına izin verir.
 - **Kopyala ve Yapıştır (yalnızca mobil)**: İzin kopyalama ve yapıştırma cihazda uygulamalar arasında.
 - **Elle kayıt kaldırmaya**: Kullanıcının iş yeri hesabını cihazdan el ile silmesine olanak sağlar.
-  - Bilgisayar Azure AD’ye katılmışsa ve otomatik kayıt etkinse, bu ilke ayarı uygulanmaz. 
+  - Bu ilke ayarı, Azure AD'ye katılmış bilgisayardır ve otomatik kayıt etkinse geçerli değildir. 
   - Bu ilke ayarı, Windows 10 Home çalıştıran bilgisayarlarda geçerli değildir.
 - **Elle kök sertifika yüklemesi (yalnızca mobil)**: Elle kök sertifikaları ve Ara CAP sertifikaları yüklemesini engeller.
 
@@ -138,13 +138,12 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 - **SIM kart hatası iletişim kutusu (yalnızca mobil)**: Bir hata iletisi yok SIM Kart algılanmazsa cihazda görüntüleme alanından engeller.
 - **Ink çalışma alanı**: Kullanıcıların Ink çalışma alanına erişmesini engelleyin. **Yapılandırılmamış** açar Ink çalışma alanına ve kullanıcının kilit ekranının üstünde kullanmasına izin verilir.
 - **Otomatik yeniden dağıtım**: Tüm kullanıcı verilerini ve ayarlarını kullanarak yönetim haklarına sahip kullanıcılara **CTRL + Win + R** cihaz kilit ekranında. Cihaz otomatik olarak yeniden yapılandırılacak ve yönetime yeniden kaydedilir.
-- **Kullanıcıların (yalnızca Windows Insider) cihaz kurulumu sırasında ağa bağlanmasını gerektiren**: Seçin **gerektiren** cihaz Windows 10 kurulumu sırasında geçmiş ağ sayfasına devam etmeden önce bir ağa bağlanacak şekilde. Bu özellik önizlemedeyken bu ayarı kullanmak için Windows Insider derleme 1809 veya sonrası gerekir.
+- **Kullanıcıların (yalnızca Windows Insider) cihaz kurulumu sırasında ağa bağlanmasını gerektiren**: Seçin **gerektiren** cihaz Windows 10 kurulumu sırasında geçmiş ağ sayfasına devam etmeden önce bir ağa bağlanacak şekilde. Bu özellik Önizleme aşamasında olduğu sürece, bir Windows Insider derlemesi 1809 veya sonraki bir sürümü bu ayarı kullanmak için gereklidir.
 - **Doğrudan bellek erişimi**: **Blok** Windows kullanıcının oturum açtığı kadar sık erişimli takılabilir PCI aşağı akış için tüm bağlantı doğrudan bellek erişimi (DMA) engeller. **Etkin** (varsayılan), hatta bir kullanıcı oturum açmadı olduğunda DMA, erişim sağlar.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **Son işlem Görev Yöneticisi'nden**: Bu ayar, yönetici olmayanların son görevler için Görev Yöneticisi'ni kullanıp kullanamayacağını belirler. **Blok** Görev Yöneticisi'ni kullanarak bir işlem veya cihazdaki görev sona erdirmek için standart kullanıcılar (Yönetici olmayanlar) engeller. **Yapılandırılmamış** (varsayılan), Görev Yöneticisi'ni kullanarak görev ya da bir işlemi sonlandırmak standart kullanıcılar izin verir.
-
 
 ## <a name="locked-screen-experience"></a>Kilit ekranı deneyimi
 
@@ -157,7 +156,7 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 
 ## <a name="messaging"></a>Mesajlaşma
 
-- **İleti eşitleme (yalnızca mobil)**: Her yerden Mesajlaşma ve metin iletisi yedekleme devre dışı bırakın ve geri yükleyin.
+- **İleti eşitleme (yalnızca mobil)**: Her yerden Mesajlaşma ve metin iletisi yedekleme devre dışı ve geri yükleyin.
 - **MMS (yalnızca mobil)**: Cihazdaki MMS gönderme ve alma işlevini devre dışı bırakın.
 - **RCS (yalnızca mobil)**: Cihazdaki zengin iletişim hizmetleri gönderme ve alma işlevini devre dışı bırakın.
 
@@ -168,25 +167,25 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 Kullanılabilir ayarlar, seçtiğiniz bağlı olarak değiştirin. Seçenekleriniz şunlardır:
 
 - **Hayır** (varsayılan): Microsoft Edge, bilgi noktası modunda çalışmıyor. Tüm Microsoft Edge ayarları değiştirin ve yapılandırmak için kullanılabilir.
-- **Sayısal/etkileşimli Tabela (tek uygulama bilgi noktası)**: Sayısal/etkileşimli Tabela Edge bilgi noktası modu için geçerli olan filtreleri Edge ayarları yalnızca Windows 10 tek uygulama bilgi noktaları üzerinde kullanın. URL tam ekran açmak için bu ayarı seçin ve yalnızca bu Web sitesinde içerik gösterir. [Dijital ayarlanan](https://docs.microsoft.com/windows/configuration/setup-digital-signage) bu özellik hakkında daha fazla bilgi sağlar.
-- **InPrivate genel (tek uygulama bilgi noktası) gözatma**: Windows 10 tek uygulama bilgi noktaları üzerinde filtreleri Edge InPrivate genel gözatma Edge için bilgi noktası modu için geçerli olan bir ayarları kullanın. Microsoft Edge çoklu sekme sürümünü çalıştırır.
-- **Normal moda (çoklu uygulama bilgi noktası)**: Normal Edge bilgi noktası modu için geçerli olan Edge ayarları filtreler. Microsoft Edge sürümü tam tarama tüm özellikleriyle çalışır.
-- **Genel (çoklu uygulama bilgi noktası) gözatma**: Bir Windows 10 çoklu uygulama bilgi noktası genel göz atmak için geçerli olan Edge ayarları filtreler.  Çoklu sekme sürümü Microsoft Edge InPrivate çalışır.
+- **Sayısal/etkileşimli Tabela (tek uygulama bilgi noktası)**: Sayısal/etkileşimli Tabela Microsoft Edge bilgi noktası modu için geçerli olan filtreleri Microsoft Edge ayarları yalnızca Windows 10 tek uygulama bilgi noktaları üzerinde kullanın. URL tam ekran açmak için bu ayarı seçin ve yalnızca bu Web sitesinde içerik gösterir. [Dijital ayarlanan](https://docs.microsoft.com/windows/configuration/setup-digital-signage) bu özellik hakkında daha fazla bilgi sağlar.
+- **InPrivate genel (tek uygulama bilgi noktası) gözatma**: Windows 10 tek uygulama bilgi noktaları üzerinde InPrivate genel gözatma Microsoft Edge için bilgi noktası modu için geçerli olan filtreleri Microsoft Edge ayarlarını kullanın. Microsoft Edge çoklu sekme sürümünü çalıştırır.
+- **Normal moda (çoklu uygulama bilgi noktası)**: Normal Microsoft Edge bilgi noktası modu için geçerli olan Microsoft Edge ayarlarını filtreler. Microsoft Edge sürümü tam tarama tüm özellikleriyle çalışır.
+- **Genel (çoklu uygulama bilgi noktası) gözatma**: Bir Windows 10 çoklu uygulama bilgi noktası genel göz atmak için geçerli olan Microsoft Edge ayarlarını filtreler.  Çoklu sekme sürümü Microsoft Edge InPrivate çalışır.
 
 > [!TIP]
 > Bu seçenekler neler daha fazla bilgi için bkz: [Microsoft Edge bilgi noktası modu yapılandırma türlerine](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 Bu cihaz kısıtlamaları profili kullanarak oluşturduğunuz için kiosk profili doğrudan ilgili [Windows bilgi noktası ayarları](kiosk-settings-windows.md). Özetlersek:
 
-1. Oluşturma [Windows bilgi noktası ayarları](kiosk-settings-windows.md) cihaz bilgi noktası modunda çalıştırmak için profili. Microsoft Edge uygulamayı seçin ve uç bilgi noktası modu bilgi noktası profilinde ayarlayın.
-2. Bu makalede açıklanan cihaz kısıtlama profili oluşturun ve belirli özellikler ve Microsoft Edge'de izin ayarlarını yapılandırın. Bilgi noktası profilinizde seçili olarak aynı Edge bilgi noktası modu türünü seçtiğinizden emin olun ([Windows bilgi noktası ayarları](kiosk-settings-windows.md)). 
+1. Oluşturma [Windows bilgi noktası ayarları](kiosk-settings-windows.md) cihaz bilgi noktası modunda çalıştırmak için profili. Microsoft Edge uygulamayı seçin ve Microsoft Edge bilgi noktası modu bilgi noktası profilinde ayarlayın.
+2. Bu makalede açıklanan cihaz kısıtlama profili oluşturun ve belirli özellikler ve Microsoft Edge'de izin ayarlarını yapılandırın. Bilgi noktası profilinizde seçili olarak aynı Microsoft Edge bilgi noktası modu türünü seçtiğinizden emin olun ([Windows bilgi noktası ayarları](kiosk-settings-windows.md)). 
 
     [Bilgi noktası modu ayarları desteklenen](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) harika bir kaynaktır.
 
 > [!IMPORTANT] 
 > Bu Microsoft Edge profili aynı cihaz bilgi noktası profilinizin olarak atadığınızdan emin olun ([Windows bilgi noktası ayarları](kiosk-settings-windows.md)).
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Başlangıç deneyimi
 
@@ -204,7 +203,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **Özel giriş düğmesi URL'si**: Seçtiğiniz için seçeneği **giriş düğmesi URL'si** açılır ayarlama
   - **Gizleme giriş düğmesine**: Giriş düğmesini gizler
 - **Kullanıcı Giriş düğmesine değiştirebilirsiniz**: **İzin** kullanıcıların giriş düğmesi değiştirmesine olanak tanır. Kullanıcının yaptığı değişiklikleri giriş düğmesi için herhangi bir yönetici ayarları geçersiz kılar. **Yapılandırılmamış** nasıl giriş düğmesi yönetici tarafından yapılandırılan değiştirmesini kullanıcıları engelleyebilir cihaz işletim sistemi varsayılan davranışı kullanır.
-- **İlk çalıştırma deneyimi sayfasını göster**: **Blok** durdurur ilk gösteren giriş sayfasından, Microsoft Edge çalıştırma süresi. Bu özellik, kuruluşların sıfır emisyon yapılandırmalarına bu sayfayı engellemesine izin, kayıtlı sağlar. **Yapılandırılmamış** giriş sayfasında gösterilir.
+- **İlk çalıştırma deneyimi sayfasını göster**: **Blok** durdurur ilk gösteren giriş sayfasından, Microsoft Edge çalıştırma süresi. Bu özellik, kuruluşlar, sıfır emisyon yapılandırmalarına bu sayfayı engellemesine izin, kayıtlı kuruluşlar gibi sağlar. **Yapılandırılmamış** giriş sayfasında gösterilir.
   - **İlk çalıştırma deneyimi URL'si**: Microsoft Edge (yalnızca Windows 10 Mobile) kullanıcı ilk kez çalışan göstermek için sayfanın URL'sini girin.
 - **Boşta kalma süresinden sonra tarayıcıyı yenileyin**: Tarayıcı yenilendikten, 0-1440 kadar boşta dakika sayısını girin dakika. Varsayılan değer `5` dakika. Ayarlandığında `0` olmayan tarayıcıyı yenileyin (sıfır) boşta kaldıktan sonra.
 
@@ -300,7 +299,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Parola**: Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
   - **Gerekli parola türü**: Parola sayısal mı olacağını belirtir. yalnızca ya da alfasayısal.
   - **Minimum parola uzunluğu**: Yalnızca Windows 10 Mobile için geçerlidir.
-  - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Windows 10 çalıştıran cihazlar için: BitLocker etkin cihazı varsa, belirtilen sayıda oturum açma başarısız olduktan sonra BitLocker kurtarma moduna konur. Cihazda BitLocker etkin değilse, bu ayar geçerli değildir. Windows 10 Mobile çalıştıran cihazlar için: Oturum açma başarısız belirttiğiniz sayısından sonra cihaz silinir.
+  - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Windows 10 çalıştıran cihazlar için: BitLocker etkin cihazı varsa, belirtilen sayıda oturum açma başarısız olduktan sonra BitLocker kurtarma moduna konur. Cihazda BitLocker etkin değilse, bu ayar geçerli değildir. Windows 10 Mobile çalıştıran cihazlar için: Oturum açma başarısız girdiğiniz sayısından sonra cihaz silinir.
   - **Ekran kilitlenmeden işlem yapılmayan dakika**: Ekran kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.
   - **Parola süresinin sonu (gün)**: Cihaz parolasının ne kadar süre sonra değiştirilmesi gerektiğini belirtir.
   - **Önceki parolaların yeniden kullanılmasını engelle**: Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.
@@ -331,7 +330,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Telefon**: Bu uygulamanın telefona erişip erişemeyeceğini tanımlayın.
 - **Radyolara**: Bazı uygulamalar gönderin ve bu Radyoları açıp kapatması gerekir veri almak için Cihazınızı Radyoları (örneğin, Bluetooth) kullanın. Bu uygulamanın bu radyoları denetleyip denetleyemeyeceğini tanımlayın.
 - **Görevleri**: Bu uygulamanın görevlerinize erişip erişemeyeceğini tanımlayın.
-- **Güvenilen cihazlar**: Donanım zaten bağlanmış olduğunuz veya cihaz ile birlikte gelen donanım olduğu bu uygulamanın güvenilen cihazları kullanıp kullanamayacağını seçin. Örneğin, TV, projektör ve benzeri, güvenilen cihazlar olarak kullanın.
+- **Güvenilen cihazlar**: Bu uygulamanın güvenilen cihazları kullanıp kullanamayacağını seçin. Güvenilen cihazlara donanım zaten bağlanmış olduğunuz veya cihaz ile birlikte gelen donanım olmalıdır. Örneğin, TV, projektör ve benzeri, güvenilen cihazlar olarak kullanın.
 - **Geri bildirim ve tanılama**: Bu uygulamanın tanılama bilgilerine erişip erişemeyeceğini tanımlayın.
 - **Cihazlarla Eşitle**: Bu uygulamayı otomatik olarak paylaşabilir ve bilgi cihazı ile doğrudan eşleştirilmeyen Kablosuz cihazlarla eşitleme durumunda seçin.
 
@@ -352,7 +351,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Kullanıcı etkinliklerini Yayımla**: **Blok** paylaşılan deneyimleri ve görev değiştiricide yakın zamanda kullanılan kaynakların bulunmasını önler.
 - **Yalnızca yerel etkinlikler**: **Blok** paylaşılan deneyimleri ve görev değiştiricide yalnızca yerel etkinliği temel alan, yakın zamanda kullanılan kaynakların bulunmasını önler.
 
-Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz. **Uygulama başına gizlilik özel durumları**'nı kullanarak uygulama başına özel durumlar tanımlayabilirsiniz.
+Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz. Ayrıca, bir uygulama başına kullanarak özel durum tanımlamak **uygulama başına gizlilik özel durumları**.
 
 ### <a name="exceptions"></a>Özel durumlar
 
@@ -371,7 +370,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz.
 - **Telefon**: Bu uygulamanın telefona erişip erişemeyeceğini tanımlayın.
 - **Radyolara**: Bazı uygulamalar gönderin ve bu Radyoları açıp kapatması gerekir veri almak için Cihazınızı Radyoları (örneğin, Bluetooth) kullanın. Bu uygulamanın bu radyoları denetleyip denetleyemeyeceğini tanımlayın.
 - **Görevleri**: Bu uygulamanın görevlerinize erişip erişemeyeceğini tanımlayın.
-- **Güvenilen cihazlar**: Bu uygulamanın güvenilen cihazları kullanıp kullanamayacağını seçin. Güvenilen cihazlara donanım zaten bağlanmış olduğunuz veya cihazı ile birlikte gelen donanım olur. Örneğin, televizyonlar, Projektörler, vb. güvenilen cihazlar kullanır.
+- **Güvenilen cihazlar**: Bu uygulamanın güvenilen cihazları kullanıp kullanamayacağını seçin. Güvenilen cihazlara donanım zaten bağlanmış olduğunuz veya cihazı ile birlikte gelen donanım olmalıdır. Örneğin, TV, projektör ve benzeri, güvenilen cihazlar olarak kullanın.
 - **Geri bildirim ve tanılama**: Bu uygulamanın tanılama bilgilerine erişip varsa seçin.
 - **Cihazlarla eşitle** - Bu uygulamanın bu PC, tablet veya telefonla açıkça eşleştirilmemiş kablosuz cihazlarla otomatik olarak bilgi paylaşma ve eşitleme işlemleri yapıp yapamayacağını tanımlayın.
 
@@ -381,7 +380,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz.
 - **Bu Bilgisayara yansıtma**: Diğer cihazların yansıtma için bilgisayarı bulma durdurur.
 - **Eşleştirme için PIN iste**: Bir projeksiyon cihazına bağlanırken PIN gerektirir.
 
-## <a name="reporting-and-telemetry"></a>Raporlama ve Telemetri
+## <a name="reporting-and-telemetry"></a>Raporlama ve telemetri
 
 - **Kullanım verilerini paylaş**: Gönderilen Tanılama verileri düzeyini seçin. Seçenekleriniz şunlardır:
   - Güvenlik
@@ -393,7 +392,7 @@ Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz.
   - **Yalnızca intranet veri gönderme**: Yöneticinin intranet veri geçmişini göndermek için
   - **Yalnızca İnternet'e veri göndermek**: Internet veri geçmişini göndermek yöneticinin sağlar
   - **İntranet ve İnternet'e veri göndermek**: İntranet ve internet veri geçmişini göndermek yöneticinin sağlar
-- **Telemetri proxy sunucusu**: Tam etki alanı adı (FQDN) veya bağlı kullanıcı deneyimleri ve Telemetri istekleri, Güvenli Yuva Katmanı (SSL) bağlantısı kullanarak iletmek için bir proxy sunucusunun IP adresini girin. Bu ayarın biçimi *sunucu*:*bağlantı noktası* olur. Adlandırılmış proxy başarısız olursa veya bu ilke etkinleştirildiğinde girilen bir proxy yoksa bağlı kullanıcı deneyimleri ve Telemetri verileri gönderilen değil ve yerel cihazda kalır.
+- **Telemetri proxy sunucusu**: Tam etki alanı adı (FQDN) veya bağlı kullanıcı deneyimleri ve Telemetri istekleri, Güvenli Yuva Katmanı (SSL) bağlantısı kullanarak iletmek için bir proxy sunucusunun IP adresini girin. Bu ayarın biçimi *sunucu*:*bağlantı noktası* olur. Adlandırılmış proxy başarısız olursa veya bir proxy Bu ilkeyi etkinleştirmek, girilen değil, bağlı kullanıcı deneyimleri ve Telemetri verileri gönderilen değil ve yerel cihazda kalır.
 
   Örnek biçimler:
 
@@ -467,24 +466,46 @@ Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz.
 - **Tüm indirmeleri tara**: Defender’ın İnternet’ten indirilen tüm dosyaları tarayıp taramayacağını denetler.
 - **Microsoft web tarayıcılarında yüklenen betikleri tarama**: Defender’ın Internet Explorer’da kullanılan betikleri taramasına olanak sağlar.
 - **Defender'a son kullanıcı erişimi**: Windows Defender kullanıcı arabiriminin son kullanıcılardan gizlenip gizlenmediğini denetler. Bu ayar değiştirildiğinde, kullanıcının bilgisayarının bir sonraki yeniden başlatılmasında devreye girer.
-- **İmza güncelleştirme aralığı (saat)**: Defender'ın yeni imza dosyalarını zaman aralığı belirtin.
+- **İmza güncelleştirme aralığı (saat)**: Defender denetleyen yeni imza dosyalarını aralığını girin.
 - **Dosya ve program etkinliğini İzle**: Defender’ın cihazlarda dosya ve program etkinliğini izlemesine izin verir.
-- **Karantinaya alınmış kötü amaçlı yazılım silinmeden önce gün**: Defender’ın çözümlenen kötü amaçlı yazılımı belirttiğiniz sayıda gün boyunca izlemeye devam etmesine olanak sağlar; böylece daha önce etkilenmiş olan cihazları el ile denetleyebilirsiniz. Gün sayısını ayarlarsanız **0**, kötü amaçlı yazılım karantina klasöründe kalır ve otomatik olarak kaldırılmaz.
-- **Bir tarama sırasında CPU kullanım sınırı**: Taramaların kullanmasına izin verilecek CPU miktarını sınırlandırmanıza (**1** ile **100** arasında) olanak sağlar.
+- **Karantinaya alınmış kötü amaçlı yazılım silinmeden önce gün**: İzlemeye devam etmek için daha önce etkilenmiş olan cihazları el ile denetleyebilmek girdiğiniz gün sayısını çözülmüş kötü amaçlı yazılım. Gün sayısını ayarlarsanız **0**, kötü amaçlı yazılım karantina klasöründe kalır ve otomatik olarak kaldırılmaz.
+- **Bir tarama sırasında CPU kullanım sınırı**: Taramaların kullanmasına, izin verilen CPU miktarını sınırlamak gelen **1** için **100**.
 - **Arşiv dosyalarını tara**: Defender’ın Zip veya Cab dosyaları gibi arşivlenmiş dosyaları taramasına izin verir.
 - **Gelen posta iletilerini tarama**: Defender’ın cihaza gelen e-posta iletilerini taramasına izin verir.
 - **Tam tarama sırasında Çıkarılabilir sürücüleri tara**: Defender’ın USB çubukları gibi çıkarılabilir sürücüleri taramasına olanak sağlar.
 - **Tam tarama sırasında eşlenmiş ağ sürücülerini tarama**: Defender’ın eşlenen ağ sürücüsündeki dosyaları taramasına olanak sağlar.
   Sürücüdeki dosyalar salt okunur ise, Defender bunların içinde bulduğu kötü amaçlı yazılım kaldırılamıyor.
 - **Ağ klasörlerinden açılan dosyaları tara**: (Örneğin UNC yolundan erişilen dosyalar) paylaşılan ağ sürücülerindeki dosyaları taramasına olanak sağlar. Sürücüdeki dosyalar salt okunur ise, Defender bunların içinde bulduğu kötü amaçlı yazılım kaldırılamıyor.
-- **Bulut koruması**: Microsoft Etkin Koruma Hizmeti’nin yönettiğiniz cihazlardan kötü amaçlı yazılım etkinliğiyle ilgili bilgi almasına izin verir veya bunu engeller. Bu bilgi gelecekte hizmeti geliştirmek için kullanılır.
+- **Bulut koruması**: Microsoft Etkin Koruma Hizmeti’nin yönettiğiniz cihazlardan kötü amaçlı yazılım etkinliğiyle ilgili bilgi almasına izin verir veya bunu engeller. Bu bilgi gelecekte hizmeti geliştirir.
 - **Örnek göndermeden önce kullanıcılara sor**: Kötü amaçlı dosyaları olup olmadığını daha fazla çözümlenmesi gerekebilecek denetimleri otomatik olarak Microsoft'a gönderilir.
-- **Günlük hızlı tarama gerçekleştirilecek saat**: Her gün seçtiğiniz saatte gerçekleştirilecek olan bir hızlı tarama zamanlamanıza olanak sağlar.
-- **Gerçekleştirilecek sistem taraması türü**: Sistem taraması zamanladığınızda çalıştıran tarama düzeyini girin.
+- **Günlük hızlı tarama gerçekleştirilecek saat**: Günlük hızlı tarama Çalıştır saati seçin. **Yapılandırılmamış** günlük tarama çalışmaz. Daha fazla özelleştirme istiyorsanız, yapılandırma **gerçekleştirilecek sistem taraması türü** ayarı.
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Gerçekleştirilecek sistem taraması türü**: Tarama, günlük ve tarama çalıştırma süresi düzeyini içeren bir sistem taraması Zamanla. Seçenekleriniz şunlardır:
+  - **Yapılandırılmamış**: Cihazda bir sistem taraması zamanla değil. Son kullanıcıların el ile tarama gerekli veya istenen cihazlarında çalıştırabilirsiniz.
+  - **Devre dışı**: Tüm sistem cihazı taraması devre dışı bırakır. Cihazları tarar bir iş ortağı virüsten koruma çözümü kullanıyorsanız, bu seçeneği belirleyin.
+  - **Hızlı tarama**: Ortak konumlarda arar olabileceği yerlere kötü amaçlı yazılım, kayıt defteri anahtarları gibi kayıtlı ve bilinen Windows Başlangıç klasörleri.
+    - **Zamanlanan gün**: Tarama günü seçin.
+    - **Zamanlanan saat**: Tarama saati seçin.
+  - **Tam tarama**: Ortak konumlarda arar olabileceği yerlere kötü amaçlı yazılım kayıtlı ve ayrıca her dosya ve klasör cihazda tarar.
+    - **Zamanlanan gün**: Tarama günü seçin.
+    - **Zamanlanan saat**: Tarama saati seçin.
+
+  Bu ayar ile çakışabilir **günlük hızlı tarama gerçekleştirilecek saat** ayarı. Bazı öneriler:
+
+  - Günlük hızlı tarama çalıştıracak şekilde yapılandır **günlük hızlı tarama gerçekleştirilecek saat** ayarı.
+  - Günlük hızlı tarama ve haftada bir tam tarama çalıştırmak için ardından yapılandırma **günlük hızlı tarama gerçekleştirilecek saat**, ayarlayıp **gerçekleştirilecek sistem taraması türü** gün ve saati ile tam bir tarama için.
+  - Yapılandırmayın **günlük hızlı tarama gerçekleştirilecek saat** aynı anda ayarı **gerçekleştirilecek sistem taraması türü** kümesine **hızlı tarama**. Bu ayarlar çakışıyor olabilir ve bir tarama çalışmayabilir.
+  - 6'da bir hızlı tarama her Salı günü çalıştırmak için yapılandırma **gerçekleştirilecek sistem taraması türü** ayarı.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **İstenmeyebilecek uygulamaları Algıla**: Windows algıladığında uygulamalardan olası istenmeyen koruma düzeyini seçin:
   - **Engelle**
   - **Denetim** istenmeyebilecek uygulamalar hakkında daha fazla bilgi için bkz. [Algıla ve engelle olası uygulamalar istenmeyen](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
-- **Algılanan kötü amaçlı yazılım tehditlerine eylemleri**: Defender'ın her tehdit düzeyinde istediğiniz eylemleri algılar (düşük, Orta, yüksek ve ciddi) seçmek için bu seçeneği kullanın. Seçenekleriniz şunlardır:
+- **Algılanan kötü amaçlı yazılım tehditlerine eylemleri**: Defender'ın algıladığı her tehdit düzeyinde almak istediğiniz eylemleri seçin: Düşük, Orta, yüksek ve ciddi. Seçenekleriniz şunlardır:
   - **Temizle**
   - **Karantina**
   - **Kaldır**

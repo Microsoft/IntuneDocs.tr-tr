@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 412e5527e1a740f9b460ef8e090913a3c3270b5c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460997"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394855"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Olay hub'ları, depolama için günlük verileri gönderin veya log analytics (Önizleme) Intune'a
 
@@ -34,7 +34,7 @@ Bu günlükleri depolama hesapları, olay hub'ları ve log analytics de dahil ol
 * Intune günlüklerini, olay hub'ına akış tarafından kendi özel günlük çözümleriyle tümleştirin.
 * Log Analytics, izleme ve uyarı bağlı veriler üzerinde zengin görselleştirmeler etkinleştirmek için Intune günlükleri gönderin.
 
-Bu özellikler parçası olan **tanılama ayarları** ıntune. 
+Bu özellikler parçası olan **tanılama ayarları** ıntune.
 
 Bu makalede nasıl kullanılacağını gösterir **tanılama ayarları** farklı hizmetler için günlük verileri göndermek için örnekler ve maliyet tahminleri sağlar ve bazı sık sorulan soruları yanıtlar.
 
@@ -95,6 +95,19 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz bağlı olarak, aşağ
     ![Azure depolama hesabınız için Intune denetim günlüklerini gönderen örneği görüntüsü](media/diagnostics-settings-example.png)
 
 4. Yaptığınız değişiklikleri **kaydedin**. Ayarınız listesinde gösterilir. Oluşturulduktan sonra seçerek ayarlarını değiştirebilirsiniz **ayarını Düzenle** > **Kaydet**.
+
+## <a name="use-audit-logs-throughout-intune"></a>Intune boyunca denetim günlüklerini kullanma
+
+Ayrıca, Intune, kayıt, uyumluluk, yapılandırma, cihazlar, istemci uygulamaları ve daha da dahil olmak üzere diğer bölümleri denetim günlükleri dışarı aktarabilirsiniz.
+
+Örneğin, denetim vermek için cihaz uyumluluğu kullanırken kaydeder:
+
+1. İçinde [Azure portalında](https://portal.azure.com/)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+2. Seçin **cihaz uyumluluğu** > **İzleyici** > **denetim günlükleri**:
+
+    ![Depolama alanını Azure izleme, olay hub'ları veya Analiz Intune verileri yönlendirmek için denetim günlüklerini seçin](media/audit-logs-under-monitor-in-compliance.png)
+
+3. Seçin **veri ayarlarını dışa aktarma**. Etkin değilse, etkinleştirebilirsiniz **tanılama ayarları**. Günlükleri göndermek nereye açıklandığı seçebilirsiniz [günlükleri göndermek için Azure İzleyici](#send-logs-to-azure-monitor) (Bu makaledeki).
 
 ## <a name="cost-considerations"></a>Maliyetle ilgili konular
 

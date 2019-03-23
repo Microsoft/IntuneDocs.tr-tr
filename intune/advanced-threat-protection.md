@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bf69e0c677fe61fc8d2eda12745a407f8f0eefa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398129"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358204"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP için ıntune'da koşullu erişim uyumluluğu zorla
 
@@ -110,12 +110,12 @@ Uyumluluk ilkesi, cihazda kabul edilebilir bir risk düzeyi belirler.
 2. **Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur**’u seçin.
 3. Bir **Ad** ve **Açıklama** girin.
 4. **Platform** olarak **Windows 10 ve üzerini** seçin.
-5. **Windows Defender ATP** ayarlarında **Cihazın şu makine risk puanında veya bu değerin altında olmasını gerektirin** seçeneğini dilediğiniz düzeye ayarlayın:
+5. İçinde **Windows Defender ATP** ayarlar, **cihaz veya makine risk puanı altında olmasını gerektir** seçeneğini dilediğiniz düzeye. Tehdit düzeyi sınıflandırmalarını olan [Windows Defender ATP tarafından belirlenen](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **NET**: Bu en güvenli düzeydir. Cihazda mevcut bir tehdit olamaz ancak cihaz şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
-  - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumludur. Orta veya yüksek tehdit düzeyindeki cihazlar uyumsuzdur.
-  - **Orta**: Cihazda bulunan tehditler düşük veya Orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
-  - **Yüksek**: Bu düzey en az güvenli seçenektir ve tüm tehdit düzeylerine izin verir. Yüksek, orta ve düşük tehdit düzeyindeki cihazlar uyumlu olarak değerlendirilir.
+   - **NET**: Bu en güvenli düzeydir. Cihazda mevcut bir tehdit olamaz ancak cihaz şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir. (Windows Defender ATP kullanıcılar değeri *güvenli*.)
+   - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumludur. Orta veya yüksek tehdit düzeyindeki cihazlar uyumsuzdur.
+   - **Orta**: Cihazda bulunan tehditler düşük veya Orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
+   - **Yüksek**: Bu düzey en az güvenli seçenektir ve tüm tehdit düzeylerine izin verir. Yüksek, orta ve düşük tehdit düzeyindeki cihazlar uyumlu olarak değerlendirilir.
 
 6. **Tamam**’ı ve **Oluştur**’u seçerek değişikliklerinizi kaydedin (ve ilkeyi oluşturun).
 

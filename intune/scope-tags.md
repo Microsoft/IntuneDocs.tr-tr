@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2ceba92a48f4ae899b5a645137ec0891a7c16659
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756811"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394843"
 ---
 # <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış için RBAC ve kapsam etiketleri kullanmak BT
 
@@ -82,6 +82,17 @@ Doğru yöneticileri sağ Intune nesnelere görünürlüğü ve doğru erişime 
 
 3. Altında **etiketleri seçin**, profiline eklemek istediğiniz etiketleri seçin.
 4. Seçin **seçin** > **Tamam** > **Kaydet**.
+
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Bir uygulama yapılandırma ilkesi için bir kapsam etiketi atamak için
+İle cihazları için **cihaz kayıt türü** kümesine **yönetilen cihazlar**, seçin **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > Uygulama yapılandırma ilkesi seçin > **özellikleri** > **kapsam (etiketler)** > ilkeyi atamak istediğiniz etiketleri seçin.
+
+İle cihazları için **cihaz kayıt türü** kümesine **yönetilen uygulamalar**, seçin **istemci uygulamaları** > **uygulama yapılandırma ilkeleri**> Uygulama yapılandırma ilkesi seçin > **kapsam (etiketler)** > ilkeyi atamak istediğiniz etiketleri seçin.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Bir iOS uygulama sağlama profili bir kapsam etiketi atamak için
+1. Intune'da, **istemci uygulamaları** > **iOS uygulama sağlama profilleri** > bir profil seçin.
+2. Seçin **özellikleri** > **kapsam (etiketler)** > Profil atamak istediğiniz etiketleri seçin.
+3. Seçin **seçin** > **Tamam** > **Kaydet**.
 
 ## <a name="scope-tag-details"></a>Kapsam etiketi ayrıntıları
 Kapsam etiketleri ile çalışırken, bu ayrıntıları unutmayın:

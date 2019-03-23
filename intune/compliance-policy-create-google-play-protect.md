@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63dca685317555553573dbbdae1ae3ba391c1903
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7bda958985234b8d6bbaf1cb5b685eb85ff4b504
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395421"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358158"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Google Play Koruması'nı etkinleştirmek için cihaz uyumluluk ilkesi oluşturma
 
@@ -59,8 +59,7 @@ Bu ayarları gerektiren uyumluluk ilkesi daha sonra bir grup Android kullanıcı
  - **SafetyNet cihaz kanıtı**  
    Uyulması gereken SafetyNet cihaz kanıtı bütünlük düzeyini ayarlayın. Düzeyler şunlardır: **Yapılandırılmadı**, **Temel bütünlüğü denetle** ve **Temel bütünlüğü ve sertifikalı cihazları denetle**.
 
-
-
+> [! Not] uygulama koruma ilkelerini kullanarak Google Play Koruması ayarlarını yapılandırma hakkında yönergeler için [Intune uygulama koruma İlkesi ayarları](https://docs.microsoft.com/en-us/intune/app-protection-policy-settings-android#conditional-launch) Android. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

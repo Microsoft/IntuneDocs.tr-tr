@@ -6,28 +6,28 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cca5ab88a839e782f5f4640d1d7b92395014041c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2d8ddb81a488ccf0cc902ccf792463144d1b0116
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399948"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394927"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
-Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları atamanızı kolaylaştırır. Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 için Microsoft Visio Pro için de uygulama yükleyebilirsiniz. Intune konsolundaki uygulamalar listesinde tek bir girdi olarak görüntülenmesini istediğiniz uygulamalar.
+Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları atamanızı kolaylaştırır. Lisanslarınız varsa, Microsoft Project Online masaüstü istemcisi ve Microsoft Visio Online Plan 2 için uygulama yükleyebilirsiniz. Intune konsolundaki uygulamalar listesinde tek bir girdi olarak görüntülenmesini istediğiniz uygulamalar.
 
 > [!NOTE]
 > Microsoft Intune aracılığıyla dağıtılan Office 365 ProPlus uygulamalarını etkinleştirmek için Office 365 ProPlus lisansları kullanmanız gerekir. Şu anda Office 365 Business sürümü Intune tarafından desteklenmemektedir.
@@ -55,18 +55,25 @@ Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları
 5. **Add (Ekle)** seçeneğini belirleyin.
 6. **Uygulama ekle** bölmesindeki **Uygulama türü** listesinde bulunan **Office 365 Suite**’in altında **Windows 10**’u seçin.
 
-Böylece uygulama paketini yapılandırabilirsiniz.
+## <a name="select-settings-format"></a>Ayarları biçimini seçin
 
-## <a name="configure-the-app-suite"></a>Uygulama paketini yapılandırma
+Seçerek uygulama ayarı yapılandırmak için bir yöntem seçebileceğiniz bir **ayarları biçimi**. Ayar biçimlendirme seçenekleri şunlardır:
+- Yapılandırma Tasarımcısı
+- XML verilerini girme
 
-Cihazlara atamak istediğiniz Office uygulamalarını seçin.
+Seçeneğini belirlediğinizde **yapılandırma Tasarımcısı** **uygulama Ekle** dikey penceresinde, iki ek ayarlar seçenekler sunmaya değiştirir:
+- Uygulama paketini Yapılandır
+- Uygulama paketi ayarları
 
-1. **Uygulama Ekle** bölmesinde **Uygulama Paketini Yapılandır**’ı seçin.
-2. **Uygulama Paketini Yapılandır** bölmesinde, cihazlara atamak istediğiniz standart Office uygulamalarını seçin.  
-    Ayrıca, lisanslarına sahip olmanız kaydıyla Microsoft Project Online masaüstü istemcisi ve Office 365 Microsoft Visio Pro için uygulama yükleyebilirsiniz.
-3. **Tamam**’ı seçin.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>Uygulama bilgilerini yapılandırma
+Seçeneğini belirlediğinizde **XML verisi gir** **uygulama Ekle** dikey penceresinin ekran **XML verisi gir** seçeneği. Bunu görüntülemek için seçin **yapılandırma dosyası** dikey penceresi. 
+
+![Office 365 yapılandırma Tasarımcısı ekleyin](./media/apps-add-office365/apps-add-office365-01.png)
+    
+Hakkında daha fazla bilgi için **XML verisi gir** seçeneği için bkz: [XML verisi gir](apps-add-office365.md#enter-xml-format) aşağıda.
+
+## <a name="configure-app-suite-information"></a>Uygulama paketi bilgilerini yapılandır
 
 Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune'da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı'nda paketi bulması kolaylaşır.
 
@@ -85,9 +92,18 @@ Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune'
     - **Logo**: Kullanıcılar şirket portalına göz atarken uygulamayla birlikte Office 365 logosu görüntülenir.
 3. **Tamam**’ı seçin.
 
-## <a name="configure-app-settings"></a>Uygulama ayarlarını yapılandırma
+## <a name="configure-app-suite"></a>Uygulama paketini Yapılandır
 
-Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Pakete eklediğiniz tüm uygulamalar için bu ayarlar uygulanır.
+Seçtiyseniz **yapılandırma Tasarımcısı** altındaki **ayarı biçimi** açılan kutuda göreceksiniz **uygulama paketini Yapılandır** seçeneğini **Ekle Uygulama** dikey penceresi. Cihazlara atamak istediğiniz Office uygulamalarını seçin.
+
+1. **Uygulama Ekle** bölmesinde **Uygulama Paketini Yapılandır**’ı seçin.
+2. **Uygulama Paketini Yapılandır** bölmesinde, cihazlara atamak istediğiniz standart Office uygulamalarını seçin.  
+    Ayrıca, lisanslarınız varsa, Microsoft Project Online masaüstü istemcisi ve Microsoft Visio Online Plan 2 için uygulama yükleyebilirsiniz.
+3. **Tamam**’ı seçin.
+
+## <a name="configure-app-suite-settings"></a>Uygulama paketi ayarları yapılandırma
+
+Seçtiyseniz **yapılandırma Tasarımcısı** altındaki **ayarı biçimi** açılan kutuda göreceksiniz **uygulama paketi ayarları** seçeneğini **uygulama Ekle**  dikey penceresi. Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Pakete eklediğiniz tüm uygulamalar için bu ayarlar uygulanır.
 
 1. **Uygulama Ekle** bölmesinde **Uygulama Paketi Ayarları**’nı seçin.
 2. **Uygulama Paketi Ayarları** bölmesinde aşağıdakileri yapın:
@@ -111,6 +127,10 @@ Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Paket
     - **Paylaşılan bilgisayar etkinleştirmeyi kullan**: Birden çok kullanıcı bir bilgisayarı paylaşıyorsa, bu seçeneği belirleyin. Daha fazla bilgi için bkz. [Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Diller**: Office, Windows ile son kullanıcı cihazında yüklü olan desteklenen dillerden birinde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin. <p></p>
     Intune üzerinden yönetilen Office 365 Pro Plus uygulamaları için ek diller dağıtabilirsiniz. Kullanılabilir diller listesi, dil paketinin **Tür** bilgisini içerir (çekirdek, kısmı ve yazım denetleme). Azure portalında **Microsoft Intune** > **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçin. **Uygulama ekle** dikey penceresindeki **Uygulama türü** listesinde **Office 365 Paketi** altından **Windows 10**'u seçin. **Uygulama Paketi Ayarları** dikey penceresinde **Diller**'i seçin. Ek bilgi için bkz: [Office 365 ProPlus'ta dil dağıtmaya genel bakış](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="enter-xml-format"></a>XML biçiminde girin
+
+Seçtiyseniz **XML verisi gir** altındaki **ayarı biçimi** açılan kutuda göreceksiniz **girin XML biçimi** seçeneğini **uygulama Ekle**dikey penceresi. Daha fazla bilgi için [Office Dağıtım Aracı'nı yapılandırma seçenekleri](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Bitirme
 

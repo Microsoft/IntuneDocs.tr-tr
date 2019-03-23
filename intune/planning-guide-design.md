@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e815914ad96b7c0db14228c76488a6147c0b46
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 3707ee66d11af0550659d8357d84aa0fea534778
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991166"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394693"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -109,7 +109,7 @@ Intune tasarım planınızı geliştirmek için [yukarıdaki tablonun bir şablo
 
 ## <a name="choose-an-intune-deployment-option"></a>Bir Intune dağıtım seçeneği belirleyin
 
-Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına, bulut ortamında çalışan Intune hizmeti anlamına gelirken karma, Intune'un System Center Configuration Manager ile tümleştirilmesini belirtir. Bu kılavuz öncelikle tek başına seçeneğinin kullanılmasına yönelik tasarlanmıştır. [İş gereksinimlerinize hangi seçeneğin uyduğuna karar verin](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına bulut ortamında çalışan Intune hizmetine başvurur, karma, Intune'un System Center Configuration Manager ile ifade eder. Bu kılavuz öncelikle tek başına seçeneğinin kullanılmasına yönelik tasarlanmıştır. [İş gereksinimlerinize hangi seçeneğin uyduğuna karar verin](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 > [!Important]
 >Yeni Karma MDM müşterilerin ekleme kullanım dışıdır. Daha fazla bilgi için [taşıma karma mobil cihaz Yönetimi'nden Intune'a Azure'da](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog gönderisi.
@@ -138,7 +138,7 @@ Dış bağımlılıklar Intune'dan ayrı ancak aynı zamanda Intune gereksinimi 
 
 -   Ortak anahtar altyapısı (PKI)
 
-Bu yaygın dış bağımlılıkları aşağıda daha ayrıntılı bir şekilde inceleyeceğiz
+Aşağıda, bu yaygın dış bağımlılıkları daha ayrıntılı bir şekilde inceleyeceğiz.
 
 ### <a name="identity"></a>Kimlik
 
@@ -404,11 +404,9 @@ Bir uyumluluk ilkesi tasarlamaya ilişkin bir örnek aşağıda verilmiştir:
 Uyumluluk ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Koşullu erişim ilkeleri
 
-Koşullu erişim yalnızca uyumlu cihazların e-postaya ve diğer şirket kaynaklarına erişmesine izin vermek için kullanılır. Intune şirket kaynaklarına erişimi denetlemek için Enterprise Mobility + Security (EMS) ile birlikte çalışır. Koşullu erişimin gerekli olup olmadığına ve neyin korunması gerektiğine karar vermeniz gerekir. [Koşullu erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
+Koşullu erişim yalnızca uyumlu cihazların e-postaya ve diğer şirket kaynaklarına erişmesine izin vermek için kullanılır. Intune şirket kaynaklarına erişimi denetlemek için Enterprise Mobility + Security (EMS) ile birlikte çalışır. Koşullu erişim gerektirip gerektirmediğini karar verin ve neyin korunması gerekir. [Koşullu erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
 
-Çevrimiçi erişim için hangi platformların ve kullanıcı gruplarının koşullu erişim ilkeleri tarafından hedefleneceğine karar verin. Ayrıca, Exchange Online veya Şirket İçi Exchange için Intune hizmetten hizmete bağlayıcısını yüklemeniz veya yapılandırmanızın gerekli olup olmadığını belirleyin. Intune hizmetten hizmete bağlayıcılarının nasıl yükleneceği ve yapılandırılacağı hakkında daha fazla bilgi edinin: <!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+Çevrimiçi erişim için hangi platformlar ve kullanıcı gruplarının koşullu erişim ilkeleri tarafından hedef karar verin. Ayrıca, yükleme veya şirket içi Exchange için Intune bağlayıcısını yapılandırmak gerekli olup olmadığını belirleyin: 
 
 -   [Şirket İçi Exchange](exchange-connector-install.md)
 

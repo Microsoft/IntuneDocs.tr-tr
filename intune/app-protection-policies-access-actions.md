@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400049bd2637a0e14f5ece4be9d4e40142b0acee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b07081ceae3ba07148723490977546fb3edcdd6
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390352"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358208"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -84,6 +84,8 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 -  En düşük uygulama sürümü
 -  En düşük düzeltme eki sürümü
 -  Cihaz üreticisi/üreticileri
+-  SafetyNet cihaz kanıtı
+-  Uygulamalarda tehdit taraması
 
 **Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
 Örnek Giriş: *Bir üretici; Üretici B* 

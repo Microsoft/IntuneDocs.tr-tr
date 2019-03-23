@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad4ac5a2560cf6c3d06354ca8d4e3190f1bf198b
-ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.openlocfilehash: f7a35104982998c00e0fc653dc04e23051a46dc5
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/22/2019
-ms.locfileid: "58343018"
+ms.locfileid: "58394851"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -49,17 +49,109 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 <!-- ########################## -->
 ## <a name="week-of-march-18-2019"></a>18 Mart 2019 haftası
 
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="deploy-microsoft-visio-and-microsoft-project----3725386----"></a>Microsoft Visio ve Microsoft Project'te dağıtma <!-- 3725386  -->
+Bu uygulamalar için lisanslarına sahipseniz artık Microsoft Visio Pro için Office 365 ve Microsoft Project Online masaüstü istemcisi Windows 10 cihazlara Microsoft Intune kullanarak bağımsız uygulama olarak dağıtabilirsiniz. Intune'dan seçin **istemci uygulamaları** > **uygulamaları** > **Ekle** görüntülenecek **uygulama Ekle** dikey penceresi. Üzerinde **uygulama Ekle** dikey penceresinde **Windows 10** olarak **uygulama türü**. Ardından, **uygulama paketini Yapılandır** yüklenecek uygulamaları seçin. Windows 10 cihazlar için Office 365 uygulamaları hakkında daha fazla bilgi için bkz: [atama Office 365 uygulamalarını Windows 10 cihazlarına Intune](apps-add-office365.md).
+
+#### <a name="microsoft-visio-pro-for-office-365-product-name-change----3593653----"></a>Microsoft Visio Pro için Office 365 ürün adı değişikliği <!-- 3593653  -->
+**Office 365 için Microsoft Visio Pro** artık olarak biliniyor **Microsoft Visio Online Plan 2**.  Microsoft Visio hakkında daha fazla bilgi için bkz: [Visio Online Plan 2](https://products.office.com/visio/visio-online-plan-2). Windows 10 cihazlar için Office 365 uygulamaları hakkında daha fazla bilgi için bkz: [atama Office 365 uygulamalarını Windows 10 cihazlarına Intune](apps-add-office365.md).
+
+#### <a name="intune-app-protection-policy-app-character-limit-setting----3291302----"></a>Intune uygulama koruma İlkesi (uygulama) karakter sınırını ayarlama <!-- 3291302  -->
+Intune yöneticileri, Intune uygulama için bir özel durum belirtebilirsiniz **kısıtlama kesme, kopyalama ve yapıştırma diğer uygulamalarla** ilke ayarı.  Yönetici olarak, yönetilen bir uygulamadan kopyalanan veya kesin olabilir karakter sayısını belirtebilirsiniz. Bu ayar belirtilen sayıda karakteri "kısıtlama kesme, kopyalama ve yapıştırma diğer uygulamalarla" bağımsız olarak herhangi bir uygulamaya paylaşılmasına izin ayarı. Android için Intune şirket Portalı Uygulama sürümü, sürüm 5.0.4364.0 gerektirdiğine dikkat edin veya üzeri. Daha fazla bilgi için [iOS veri koruma](app-protection-policy-settings-ios.md#data-protection), [Android veri koruma](app-protection-policy-settings-android.md#data-protection), ve [istemci uygulama koruma günlüklerini gözden geçirme](app-protection-policy-settings-log.md#app-protection-policy-settings).
+
+#### <a name="office-deployment-tool-odt-xml-for-office-proplus-deployment----3192477-----"></a>Office dağıtım aracı (ODT) Office ProPlus dağıtım için XML <!-- 3192477   -->
+Office dağıtım aracı (ODT) XML örneği Office Pro Plus Intune Yönetici konsolunda oluştururken sağlamak mümkün olacaktır. Mevcut Intune kullanıcı Arabirimi seçenekleri ihtiyaçlarınızı karşılamıyorsa Bunun büyük sağlamadığından olanak tanır. Daha fazla bilgi için [atama Office 365 uygulamalarını Windows 10 cihazlarına Intune](https://docs.microsoft.com/intune/apps-add-office365) ve [Office Dağıtım Aracı'nı yapılandırma seçenekleri](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+
+#### <a name="app-icons-will-now-be-displayed-with-an-automatically-generated-background----1429026----"></a>Uygulama simgeleri artık otomatik olarak oluşturulmuş bir arka plan ile görüntülenir <!-- 1429026  -->
+Windows Şirket portalı uygulamasında uygulama simgeleri artık baskın renge göre (algılanamazsa) tabanlı bir otomatik olarak oluşturulmuş bir arka plan ile görüntülenecektir. Uygun olduğunda, bu arka plan daha önce uygulama kutucuklarında görünen gri kenarlıkların yerine geçer. Kullanıcılar Şirket portalı 10.3.3451.0 daha sonraki sürümlerinde bu değişikliği görür.
+
+#### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523-----"></a>Windows toplu kaydı sonra Şirket portalı uygulamasını kullanırken kullanılabilir uygulamaları yüklemesi <!-- 2751523   -->
+Intune kullanarak kayıtlı Windows cihazları [Windows toplu kayıt](windows-bulk-enroll.md) (sağlama paketlerinin) kullanılabilir uygulamaları yüklemesi için Şirket portalı uygulamasını kullanmanız mümkün olacaktır. Şirket portalı uygulaması hakkında daha fazla bilgi için bkz. [el ile Windows 10 Şirket portalı ekleme](store-apps-company-portal-app.md) ve [Microsoft Intune Şirket portalı uygulamasını yapılandırma](company-portal-app.md).
+
+#### <a name="the-microsoft-teams-app-can-be-selected-as-part-of-the-office-app-suite----3828932----"></a>Microsoft Teams uygulaması Office uygulama paketinin bir parçası seçilebilir <!-- 3828932  -->
+Microsoft Teams uygulaması dahil edilecek veya hariç Office Pro Plus uygulama paketi yüklemesinin bir parçası. Bu özellik için derleme numarası 16.0.11328.20116+ Office Pro Plus çalışır. Kullanıcı, oturumu kapatın ve sonra cihaz yüklemenin tamamlanması için oturum açın. Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**. Birini **Office 365 paketi** uygulama türleri ve ardından **uygulama paketini Yapılandır**.
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="operational-logs-also-show-details-on-non-compliant-devices----4063755----"></a>İşlem günlüklerinde de uyumlu olmayan cihazların ayrıntılarını göster <!-- 4063755  -->
+Yönlendirme Intune özelliklerini Azure İzleyici açtığında, işlem günlüklerinde de yönlendirebilirsiniz. Bu güncelleştirme, işlem günlüklerinde uyumlu olmayan cihazların bilgileri de sağlar. 
+
+Bu özellik hakkında daha fazla bilgi için bkz. [depolama, olay hub'ları veya Intune log analytics'te günlük verilerini gönderme](review-logs-using-azure-monitor.md).
+
+#### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244---"></a>Oluşturma ve Zebra Android cihazlarda ıntune cihaz yapılandırma profillerini kullanma <!-- 3895244 -->
+Bu güncelleştirme, Intune, Android Zebra cihazların yapılandırılmasını destekler. Özellikle, şunları yapabilirsiniz: 
+
+- Bir cihaz yapılandırma profili oluşturma ve ayarlar StageNow tarafından oluşturulan Mobility Uzantıları (MX) profilleri kullanarak Zebra Android cihazları için geçerlidir (**cihaz Yapılandırması** > **profilleri**  >  **Profili oluşturma** > **Android** platform için).
+
+Uygulama hedefi:  
+- Android
+
+#### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>Daha fazla Intune iş yükleri için Azure İzleyici yolu günlükleri <!-- 3804627 -->
+Intune'da olayları hubs, depolama, Denetim ve operasyonel günlükler yönlendirmek ve analytics Azure İzleyici'de oturum (**Intune** > **izleme** > **tanılama ayarları**). Bu güncelleştirmede, bu günlükleri uyumluluk, yapılandırmaları, istemci uygulamaları ve diğer gibi daha fazla Intune iş yükleri yönlendirebilirsiniz. 
+
+Azure İzleyici günlüklerine yönlendirme hakkında daha fazla bilgi için bkz: [olay hub'ları, depolama için günlük verileri gönderin veya günlük analizi](review-logs-using-azure-monitor.md).
+
+#### <a name="create-and-use-mobility-extensions-on-android-zebra-devices-in-intune----3305880-----"></a>Oluşturma ve ıntune'da Android Zebra cihazlarda mobility uzantıları kullanma <!-- 3305880   -->
+Bu güncelleştirme, Intune, Android Zebra cihazların yapılandırılmasını destekler. Özellikle, bir cihaz yapılandırma profili oluşturabilir ve ayarlar StageNow tarafından oluşturulan Mobility Uzantıları (MX) profilleri kullanarak Zebra Android cihazları için geçerlidir (**cihaz Yapılandırması**  >   **Profilleri** > **profili oluşturma** > **Android** platformuna yönelik > **MX profili (yalnızca Zebra)** profili türü).
+
+Bu özellik hakkında daha fazla bilgi için bkz. [kullanın ve Intune mobility uzantılarında Zebra cihazları yönetme](android-zebra-mx-overview.md).
+
+Uygulama hedefi:  
+- Android
+
+### <a name="device-management"></a>Cihaz yönetimi
+
 #### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Windows 10 cihazları için şifreleme raporu (genel önizlemede)<!-- 2351538 -->  
 
-Yeni [şifreleme raporu (Önizleme)](encryption-monitor.md#encryption-report) Windows 10 cihazlarınızın şifreleme durumu hakkındaki ayrıntıları görüntülemek için. Mevcut ayrıntıları, cihazlar TPM sürümü, şifreleme hazırlık ve durumu, hata raporlama ve daha fazlasını içerir.  
+Yeni [şifreleme raporu (Önizleme)](encryption-monitor.md#encryption-report-&#40;in-public-preview&#41;) Windows 10 cihazlarınızın şifreleme durumu hakkındaki ayrıntıları görüntülemek için. Mevcut ayrıntıları, cihazlar TPM sürümü, şifreleme hazırlık ve durumu, hata raporlama ve daha fazlasını içerir.  
 
 #### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview----2351547-----"></a>Intune portalında (genel Önizleme) erişim BitLocker kurtarma anahtarları <!-- 2351547   -->  
 
-Artık Intune'a kullanabilirsiniz [ayrıntıları görüntüle](encryption-monitor.md#bitlocker-recovery-keys) BitLocker anahtarı kimliği ve BitLocker kurtarma anahtarları, Azure Active Directory'den hakkında.
+Artık Intune'a kullanabilirsiniz [ayrıntıları görüntüle](encryption-monitor.md#bitlocker-recovery-keys-&#40;in-public-preview&#41;) BitLocker anahtarı kimliği ve BitLocker kurtarma anahtarları, Azure Active Directory'den hakkında.
 
 ### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>İOS ve Android cihazlarda Intune senaryolarını desteğini Microsoft Edge <!-- 3411007 -->
 Microsoft Edge tüm Intune Managed Browser ile son kullanıcı deneyimi geliştirmelerine ek olarak aynı yönetim senaryolarını destekler. İkili kimlik, uygulama koruma İlkesi tümleştirmesi, Azure uygulama proxy'si tümleştirmesi ve yönetilen Sık Kullanılanlar ve giriş sayfası kısayolları Intune ilkeleri ile etkinleştirilen Microsoft Edge Kurumsal özellikler içerir. Daha fazla bilgi için [Microsoft Edge desteği](app-configuration-managed-browser.md#microsoft-edge-support).
 
+#### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Exchange Online/Intune Bağlayıcısı kullanımdan EAS yalnızca cihazlar için destek <!--3105122    -->
+Intune konsolunda artık görüntüleme destekler ve yalnızca EAS cihazları yönetmeye Exchane Online'a Intune Bağlayıcısı ile bağlı. Bunun yerine aşağıdaki seçenekleriniz vardır:
+- Mobil cihaz Yönetimi (MDM) cihazlarını kaydetme
+- Cihazlarınızı yönetmek için Intune uygulama koruma ilkelerini kullanma
+- Açıklandığı gibi Exchange denetimleri kullanın [istemcileri ve Exchange Online mobil](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
+
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+#### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Kiracı durumu sayfasında ek bağlayıcı desteği <!-- 3617202     -->
+[Kiracı durumu sayfası](tenant-status.md) artık dahil olmak üzere, ek bağlayıcıları için durum bilgilerini görüntüler *Windows Defender Gelişmiş tehdit koruması* (ATP) ve diğer Mobile Threat Defense bağlayıcıları.
+
+### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
+
+#### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917----"></a>Intune verme yalnızca bazı Azure Active Directory rolleri için okuma erişimi <!-- 3637917  -->
+Intune, yalnızca erişim için aşağıdaki Azure AD rolleri verildi okuyun. Azure AD rolleri ile verilen izinler, Intune rol tabanlı erişim denetimi (RBAC) izinler yerini alır.
+
+Yalnızca Intune denetim verilerine erişim okuyun:
+
+- Uyumluluk Yöneticisi
+- Uyumluluk veri Yöneticisi
+
+Yalnızca tüm Intune verilerine erişim okuyun:
+
+- Güvenlik Yöneticisi
+- Güvenlik işleci
+- Güvenlik okuyucusu
+- Genel okuyucusu
+
+Daha fazla bilgi için [rol tabanlı erişim denetimi](role-based-access-control.md).
+
+#### <a name="scope-tags-for-ios-app-provisioning-profiles---2934430-----"></a>Kapsam etiketleri için iOS uygulama sağlama profilleri <!--2934430   -->
+Böylece yalnızca kişiler de bu kapsam etiketi atanan rollerle iOS uygulama sağlama profili erişimi, bir iOS uygulama sağlama profili bir kapsam etiketi ekleyebilirsiniz. Daha fazla bilgi için [kullanım RBAC ve kapsam etiketleri](scope-tags.md).
+
+#### <a name="scope-tags-for-app-configuration-policies---2371891-----"></a>Kapsam etiketleri için uygulama yapılandırma ilkeleri <!--2371891   -->
+Böylece kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama yapılandırma İlkesi erişimi, bir uygulama yapılandırma ilkesi için bir kapsam etiketi ekleyebilirsiniz. Uygulama yapılandırma ilkesini yalnızca hedeflenen veya aynı kapsam etiketi atanan uygulamalarla ilişkili. Daha fazla bilgi için [kullanım RBAC ve kapsam etiketleri](scope-tags.md).
+
+
+<!-- ########################## -->
+>>>>>>> 5e7c086a04b16c159f2ddf9054c8054b4a389872
 ## <a name="week-of-february-25-2019"></a>25 Şubat 2019 haftası
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
@@ -241,25 +333,22 @@ Uygulama ataması başına gösteren son kullanıcı bildirimleri gösterilmemes
 
 Varsayılan ayarlar ve ayar aynı kalır, ancak bu değişiklik anlamak, kodlarda gezinin ve seçili uygulama koruma ilkeleri kolayca uygulamak için daha fazla ayarları kullanmasına izin verir. Bilgi için [iOS ayarları](app-protection-policy-settings-ios.md) ve [Android ayarları](app-protection-policy-settings-android.md).
 
-#### <a name="additional-settings-for-outlook----3301182----"></a>Outlook için ek ayarlar <!-- 3301182  -->
+### <a name="additional-settings-for-outlook----3301182----"></a>Outlook için ek ayarlar <!-- 3301182  -->
 Artık iOS için Outlook ve Intune kullanarak Android için aşağıdaki ek ayarlar da yapılandırabilirsiniz:
+
 - Yalnızca iOS ve Android Outlook'ta kullanılacak iş veya Okul hesaplarını izin ver
 - Office 365 modern kimlik doğrulamayı dağıtmak ve hibrit modern kimlik doğrulaması şirket hesapları
 - Kullanım `SAMAccountName` username alan temel kimlik doğrulaması seçildiğinde e-posta profili için
-
-Aşağıdaki ayarlar, yine de yavaş yavaş kullanıma sunuluyor ve yakında Konsolunuzda kullanıma sunulacaktır:
 - Kaydedilecek kişiler izin ver
 - Dış alıcılara posta ipuçları yapılandırın
 - Yapılandırma **odaklanmış gelen kutusu**
 - İOS için Outlook erişmeye Biyometri gerektirir
-
-Aşağıdaki ayar Intune konsolunda görünür, ancak yapılandırıldığında, beklendiği gibi çalışmaz. Bu sorun yakında çözülecektir:
 - Bloğu dış görüntüleri
 
 > [!NOTE]
 > Erişim için Kurumsal kimlikleri yönetmek için Intune uygulama koruma ilkeleri kullanıyorsanız değil etkinleştirmeyi düşünebilirsiniz **Biyometri gerektiren**. Daha fazla bilgi için **erişim için Kurumsal kimlik bilgilerini gerektir** için [iOS erişim ayarlarını](app-protection-policy-settings-ios.md#access-requirements) ve [Android erişim ayarları](app-protection-policy-settings-android.md#access-requirements).
 
-Daha fazla bilgi için [Microsoft Outlook yapılandırma ayarlarını](app-configuration-policies-outlook.md). 
+Daha fazla bilgi için [Microsoft Outlook yapılandırma ayarlarını](app-configuration-policies-outlook.md).
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Android Kurumsal uygulamaları Sil <!-- 1352553 -->
 Yönetilen Google Play uygulamaları Microsoft Intune silebilirsiniz. Yönetilen Google Play uygulama silmek için Azure portal ve select Intune açın **istemci uygulamaları** > **uygulamaları**. Uygulama listesinden yönetilen Google Play uygulaması'nın sağındaki üç nokta (...) seçin ve ardından **Sil** görüntülenen listeden. Uygulama listesinden bir yönetilen Google Play uygulaması sildiğinizde, yönetilen Google Play uygulaması otomatik olarak onaylanmadı.

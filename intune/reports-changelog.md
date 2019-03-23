@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565647"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358267"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune Veri Ambarı API’si için değişiklik günlüğü
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune Veri Ambarı hakkında güncel bilgiler edinin.
+
+## <a name="1903"></a>1903
+_Mart 2019 yayımlanan_
+
+### <a name="v10-changes-reflecting-back-to-beta"></a>Beta sürümünden yansıtan V1.0 değişiklikleri
+V1.0, ilk olarak 1808 içinde sunulmuştur, önemli bazı açılardan'ı Beta'dan API farklıydı. 1903 bu değişiklikleri geri beta API sürümüne yansıtılır. Beta API sürümünü kullanan önemli raporlarınız varsa, bu raporları önemli değişiklikler önlemek için V1.0 geçiş kesinlikle öneririz. Lütfen [API sürüm bilgisi](reports-api-url.md) daha fazla bilgi veri ambarı API sürümleri ve geriye dönük uyumluluk. 
 
 ## <a name="1902"></a>1902 
 _Şubat 2019 yayımlanan_
@@ -42,7 +48,7 @@ Power BI çevrimiçi kullanarak Intune veri ambarı'nızı erişim [Intune uyuml
 > Intune uyumluluk uygulamaya uygulayabilirsiniz iki ek filtreler vardır.
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune uyumluluk uygulamaya ek filtreler ekleyin
-1. Açık [Intune uyumluluk (veri ambarı)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) , web browers uygulamasında.
+1. Açık [Intune uyumluluk (veri ambarı)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) , web tarayıcıları uygulamasında.
 2. Tıklayın **uyumlu olmayan cihazları** seçip **uyumlu** içinde **complianceStatus** filtre. 
 3. Tıklayarak **bilinmeyen cihazlar** seçip **henüz** içinde **complianceStatus** filtre. 
 
@@ -93,7 +99,7 @@ Azure Active Directory (Azure AD) kullanarak bir uygulamayı ayarlayabilir ve In
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>İçinde veri ambarı veri modelinde yeni varlıklar <!-- 2077804 -->
 
- - [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) varlığı eklendi. **MobileAppDeviceUserInstallStatus** belirli bir cihaz ve kullanıcı için mobil uygulama yükleme durumunu gösterir.
+ - [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) varlığı eklendi. **MobileAppDeviceUserInstallStatus** belirli bir cihaz ve kullanıcı için mobil uygulama yükleme durumunu gösterir.
  - [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) varlığı eklendi. **MobileAppInstallState** varlığı, bir mobil uygulamanın cihazlar, kullanıcılar veya her ikisini de içeren bir gruba atandıktan sonra yükleme durumunu gösterir. 
 
 ## <a name="1710"></a>1710

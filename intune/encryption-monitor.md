@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9ad531f96e1f04a19350418f13e742fa74bace7a
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: 820800deea491c363834a9cafaf077c0992467f6
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306981"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394656"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker'ı ve cihaz şifreleme izleyin  
 Intune, Windows 10 cihazlarınızın şifreleme durumunu belirlemek için merkezi bir konum sağlayan ve BitLocker için önemli bilgiler, Azure Active Directory (Azure AD) bulunan cihazlardan erişim yardımcı olur.  
@@ -29,10 +29,8 @@ Intune, Windows 10 cihazlarınızın şifreleme durumunu belirlemek için merkez
 - [Şifreleme raporu (genel önizlemede)](#encryption-report) cihaz şifreleme durumu ve hazırlık hakkında ayrıntılar sağlar. Rapor ayrıntıları korumak istediğiniz cihazların başarılı şifreleme engelleyen sorunları belirlemenize yardımcı olabilir.  
 - [BitLocker'ı ayrıntılarına bakın (genel Önizleme aşamasında)](#bitlocker-recovery-keys) cihazlarınızdan Intune portalındaki anahtarı kimliği ve kurtarma anahtarlarını ister.  
 
-## <a name="encryption-report"></a>Şifreleme raporu 
-*Bu özellik genel Önizleme aşamasındadır.*  
-
-Windows 10 cihazlarınızın şifreleme durumu hakkındaki ayrıntıları görüntülemek için şifreleme raporu (genel Önizleme aşamasında) kullanabilirsiniz.  
+## <a name="encryption-report-in-public-preview"></a>Şifreleme rapora (genel Önizleme)
+Windows 10 cihazlarınızın şifreleme durumu hakkındaki ayrıntıları görüntülemek için şifreleme rapor (Pubic Önizleme aşamasında) kullanabilirsiniz.  
 
 Rapora ulaşmak için oturum açın [Intune](https://aka.ms/intuneportal) gidin **cihaz Yapılandırması**ve ardından altındaki *İzleyici*seçin **şifreleme raporu (Önizleme)**.  
 
@@ -86,10 +84,7 @@ Bu bölme aşağıdaki ayrıntıları sağlar:
    - TPM'nin BitLocker için hazır değil.  
    - Kurtarma anahtarı yedekleme için gerekli olan ağ kullanılabilir değil.  
 
-
-## <a name="bitlocker-recovery-keys"></a>BitLocker kurtarma anahtarları 
-*Bu özellik genel Önizleme aşamasındadır.*  
-
+## <a name="bitlocker-recovery-keys-in-public-preview"></a>BitLocker kurtarma anahtarları (genel Önizleme)
 BitLocker anahtarı kimliği ve kurtarma anahtarlarını, Windows 10 cihazları için gelen Intune portalından görüntüleyebileceğiniz şekilde genel önizleme olarak için BitLocker'ı Azure AD'ye dikey pencere erişim Intune sağlar.  Erişilebilir olması için cihazı Azure AD'ye kalacakları anahtarlarını olmalıdır. 
 1. Oturum [Intune](https://aka.ms/intuneportal)Git **cihazları** altındaki *Yönet*seçin **tüm cihazlar**.
 2. Bir cihaz seçin listeden ve altında *İzleyici*seçin **kurtarma anahtarlarını – Önizleme**.  

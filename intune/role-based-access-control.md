@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1c7f7a2ed1d87d23d01b51ff928c906bc32541a
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: ecc315bfcccc5d3b71107e80720d39e675d42d19
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58173986"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394660"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -36,7 +36,21 @@ RBAC, kuruluşunuzda çeşitli Intune görevlerini kimin gerçekleştirebileceğ
 
 ![Intune RBAC örneği](./media/intune-rbac-1.PNG)
 
-Yeni Azure portalıyla artık **Azure Active Directory (Azure AD)**, Intune ile kullanılabilecek iki Dizin Rolü sağlar. Bu rollere Intune'da tüm etkinlikleri gerçekleştirmek için tam izin verilir:
+## <a name="azure-active-directory-roles-with-intune-access"></a>Intune erişimi olan Azure Active Directory rolleri
+
+| Azure Active Directory rol | Tüm Intune verileri | Intune denetim verileri |
+| --- | :---: | :---: |
+| Genel Yönetici | Okuma/yazma | Okuma/yazma |
+| Intune hizmeti Aministrator | Okuma/yazma | Okuma/yazma |
+| Koşullu Erişim Yöneticisi | Yok. | Yok. |
+| Güvenlik Yöneticisi | Salt okunur | Salt okunur |
+| Güvenlik işleci | Salt okunur | Salt okunur |
+| Güvenlik okuyucusu | Salt okunur | Salt okunur |
+| Genel okuyucusu | Salt okunur | Salt okunur |
+| Uyumluluk Yöneticisi | Yok. | Salt okunur |
+| Uyumluluk veri Yöneticisi | Yok. | Salt okunur |
+
+**Azure Active Directory (Azure AD)** Intune ile kullanılabilecek iki dizin rolü sağlar. Bu rollere Intune'da tüm etkinlikleri gerçekleştirmek için tam izin verilir:
 
 - **Genel yönetici:** Bu role sahip olan kullanıcılar Azure AD'deki tüm yönetim özelliklerine erişimi, hem de çevrimiçi Exchange Online, SharePoint Online ve Skype gibi Azure AD Federasyonu kullanan Hizmetleri. Azure AD kiracısı olarak kaydolan kişi genel yönetici olur. Yalnızca genel yöneticiler diğer Azure AD yönetici rollerini atayabilir. Kuruluşunuzda birden fazla genel yönetici olabilir. Genel yöneticiler, tüm kullanıcıların ve diğer tüm yöneticilerin parolalarını sıfırlayabilir.
 
@@ -64,7 +78,7 @@ Yalnızca “Tam” izinlere sahip Intune **Hizmet Yöneticileri** kullanıcıla
 Daha fazla yapılandırma olmadan grupları için yerleşik roller atayabilirsiniz. Silemez veya yerleşik bir rol düzenleyin.
 
 - **Yardım Masası operatörü**: Kullanıcılar ve cihazlar üzerinde uzak görevler gerçekleştirir ve kullanıcılara veya cihazlara uygulama veya ilke atayabilirsiniz.
-- **İlke ve Profil Yöneticisi**: Uyumluluk İlkesi, yapılandırma profillerini, Apple kaydını ve kurumsal cihaz tanımlayıcıları yönetir.
+- **İlke ve Profil Yöneticisi**: Uyumluluk İlkesi, yapılandırma profillerini, Apple kayıt, Kurumsal cihaz tanımlayıcıları ve güvenlik temellerini yönetir.
 - **Salt okunur operatör**: Görünümleri kullanıcı, cihaz, kayıt, yapılandırma ve uygulama bilgileri. Intune'da değişiklik yapamaz.
 - **Uygulama Yöneticisi**: Mobil ve yönetilen uygulamaları yönetir, cihaz bilgilerini okuyabilir ve cihaz yapılandırma profillerini görüntüleyebilirsiniz.
 - **Intune Rol Yöneticisi**: Özel Intune rolleri yönetir ve yerleşik Intune rol atamalarını ekler. Bu, yöneticilere izin atamanıza yalnızca Intune rolüdür.
@@ -139,8 +153,12 @@ Aynı adımları izleyerek [yerleşik bir rol atamak için](https://docs.microso
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Sorun giderme portalında Intune Yardım Masası Operatörü rolünü kullanma](help-desk-operators.md)
+- [Sorun giderme portalında Intune Yardım Masası Operatörü rolünü kullanma](help-desk-operators.md)
+
+
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Azure AD kullanarak roller atama](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- [Azure AD kullanarak roller atama](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- Hakkında bilgi edinin [ıntune rol tabanlı erişim için Microsoft Graph API desteği](https://docs.microsoft.com/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-1.0)
+- Alma [Intune Graph API'si için PowerShell SDK'sı](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10)

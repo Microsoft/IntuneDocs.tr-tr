@@ -1,11 +1,11 @@
 ---
 title: Cihaz özellikleri ve ayarları Microsoft Intune - Azure | Microsoft Docs
-description: Farklı Microsoft Intune cihaz profilleri de dahil olmak üzere genel bakış özellikler, sınırlamalar, Wi-Fi, VPN, e-posta eğitim, sertifikalar, Windows 10, BitLocker ve Windows defender, Windows Information Protection, Yönetim Şablonları, yükseltme ve Azure portalındaki özel cihaz yapılandırma ayarları. Bu profiller, yönetmek ve verileri ve cihazları şirketinizin korumak için kullanın.
+description: Farklı Microsoft Intune cihaz profilleri genel bakış. Azure portalında özellikleri, kısıtlamalar, e-posta, Wi-Fi, VPN, eğitim, sertifikalar, yükseltme Windows 10, BitLocker ve Windows defender, Windows Information Protection, Yönetim Şablonları ve özel cihaz yapılandırma ayarları hakkında bilgi alın. Bu profiller, yönetmek ve verileri ve cihazları şirketinizin korumak için kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad9b0fb2fc8814f04860793bb1210da17dbe2a65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df8cc8c921b685ba7fa0b957685836d059a677e0
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395334"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394992"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Intune cihaz profillerini kullanarak cihazlarınızda özellikleri ve ayarları uygula
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune ayarları ve özellikleri etkinleştirebilir veya kuruluşunuzdaki farklı cihazlarda devre dışı bırak'ı içerir. Bu ayarlar ve Özellikler "yapılandırma profillerini" eklenir. Profilleri, farklı cihazlar için oluşturabileceğiniz farklı platformları dahil olmak üzere iOS, Android, Windows ve Intune profili, kuruluşunuzdaki cihazlara uygulamak için kullanın.
+Microsoft Intune ayarları ve özellikleri etkinleştirebilir veya kuruluşunuzdaki farklı cihazlarda devre dışı bırak'ı içerir. Bu ayarlar ve Özellikler "yapılandırma profillerini" eklenir. Farklı cihaz ve iOS, Android ve Windows gibi farklı platformlar için profiller oluşturabilirsiniz. Ardından, uygulama veya "profili cihazlara atamayı" için Intune'u kullanın.
 
 Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak farklı görevleri tamamlamak için bu yapılandırma profillerini kullanın. Bazı profil örnekleri şunlardır:
 
@@ -36,99 +36,16 @@ Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak farklı göre
 - İOS ve macOS cihazlarda AirPrint yazıcıları kuruluşunuzda kullandığınız açmasına imkan tanıyın.
 - İzin verme veya cihazda bluetooth için erişimi engelleme.
 - Şirket ağınıza farklı cihazlara erişim sağlayan bir WiFi veya VPN profili oluşturun.
-- Yüklendiklerinde dahil olmak üzere, yazılım güncelleştirmelerini yönetir.
+- Bunlar yüklendiğinde dahil olmak üzere, yazılım güncelleştirmelerini yönetir.
 - Bir Android cihazı, bir uygulama çalıştırmasına veya daha fazla uygulama çalıştırma adanmış bilgi noktası cihazı çalıştırın.
 
-Bu makalede, profil oluşturma adımları listelenir ve profilleri oluşturabileceğiniz farklı türde genel bir bakış sağlar. İzin vermek veya bazı özellikler cihazlara önlemek için bu profilleri kullanın.
-
-## <a name="create-the-profile"></a>Profili oluşturma
-
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
-
-2. **Cihaz yapılandırması**’nı seçin. Aşağıdaki seçenekleriniz vardır:
-
-    - **Genel Bakış**: Profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız Profiller hakkında ek ayrıntılar sağlar.
-    - **Yönetme**: Cihaz profilleri oluşturma, özel yükleme [PowerShell betikleri](intune-management-extension.md) profil içinde çalışmak ve veri planları kullanarak cihazlara [Esım](esim-device-configuration.md).
-    - **İzleyici**: Bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profillerinize ilişkin günlükleri görüntüleyin.
-    - **Kurulum**: Bir SCEP veya PFX sertifika yetkilisi ekleyin veya etkinleştirme [Telekom Gider Yönetimi](telecom-expenses-monitor.md) profilinde.
-
-3. Seçin **profilleri** > **profili oluşturma**. Aşağıdaki özellikleri girin:
-
-   - **Ad**: Profil için açıklayıcı bir ad girin.
-   - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-   - **Platform**: Cihazlarınızın platformu seçin. Seçenekleriniz şunlardır:  
-
-       - **Android**
-       - **Android kurumsal**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 ve üzeri**
-       - **Windows 10 ve üzeri**
-
-   - **Profil türü**: Oluşturmak istediğiniz ayarlarının türünü seçin. Gösterilen listesi bağımlı **platform** seçtiğiniz:
-
-       - [Yönetim Şablonları](administrative-templates-windows.md)
-       - [Özel](custom-settings-configure.md)
-       - [Teslim iyileştirme](delivery-optimization-windows.md)
-       - [Cihaz özellikleri](device-features-configure.md)
-       - [Cihaz kısıtlamaları](device-restrictions-configure.md)
-       - [Sürüm yükseltme ve modu anahtarı](edition-upgrade-configure-windows-10.md)
-       - [Eğitim](education-settings-configure.md)
-       - [E-posta](email-settings-configure.md)
-       - [Uç nokta koruması](endpoint-protection-configure.md)
-       - [Kimlik koruması](identity-protection-configure.md)  
-       - [Bilgi noktası](kiosk-settings.md)
-       - [PKCS sertifikası](certficates-pfx-configure.md)
-       - [SCEP sertifikası](certificates-scep-configure.md)
-       - [Güvenilir sertifika](certificates-configure.md)
-       - [Güncelleştirme ilkeleri](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows Bilgi Koruması](windows-information-protection-configure.md)
-
-     Örneğin, **iOS** platformu, profil türü seçeneklerinizi aşağıdakine benzer:
-
-     ![Intune'da iOS profili oluşturma](./media/create-device-profile.png)
-
-4. Seçin **ayarları**. Ayarları, kategoriye göre düzenlenir. Yapılandırabileceğiniz ayarların listesi görmek için bir kategori seçin.
-
-5. İşiniz bittiğinde seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin.
-
-#### <a name="refresh-cycle-times"></a>Döngü sürelerini Yenile
-
-Intune, yapılandırma profillerini güncelleştirmeleri denetlemek için aşağıdaki yenileme döngüsü kullanır:
-
-| Platform | Yenileme döngüsü|
-| --- | --- |
-| iOS | 6 saatte bir |
-| Mac OS | 6 saatte bir |
-| Android | 8 saatte bir |
-| Cihaz olarak kaydedilen Windows 10 bilgisayarlar | 8 saatte bir |
-| Windows Phone | 8 saatte bir |
-| Windows 8.1 | 8 saatte bir |
-
-Son olarak cihazın kayıtlı, iade daha sık çalışır:
-
-| Platform | Sıklık |
-| --- | --- |
-| iOS | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir |  
-| Mac OS X | 6 saat boyunca her 15 dakikada bir, daha sonra her 6 saatte bir | 
-| Android | 15 dakika boyunca 3 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
-| Windows Phone | 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
-| Cihaz olarak kaydedilen Windows bilgisayarları | 30 dakika boyunca 3 dakikada bir, daha sonra 8 saatte bir | 
-
-İstediğiniz zaman, kullanıcılar Şirket portalı uygulamasını açın ve hemen profili güncelleştirmeleri denetlemek için cihazı eşitleyebilir.
-
-### 
-Farklı bir profil türleri hakkında daha fazla bilgi edinmek için bu makalenin sonraki bölümleri inceleyin.
+Bu makalede profilleri oluşturabileceğiniz farklı türde genel bir bakış sağlar. İzin vermek veya bazı özellikler cihazlara önlemek için bu profilleri kullanın.
 
 ## <a name="administrative-templates-preview"></a>Yönetim Şablonları (Önizleme)
 
-[Yönetim Şablonları](administrative-templates-windows.md) yüzlerce Internet Explorer, OneDrive, Uzak Masaüstü, Word, Excel ve diğer Office programları ve çok daha fazlası için yapılandıran ayarları içerir.
+[Yönetim Şablonları](administrative-templates-windows.md) yüzlerce Internet Explorer, OneDrive, Uzak Masaüstü, Word, Excel ve diğer Office programları için yapılandıran ayarları içerir.
 
-Bu şablonları Yöneticiler ayarları Grup İlkesi'ne benzer kolay ve Basitleştirilmiş bir görünümünü sağlar, ancak bunlar %100 bulut tabanlı. 
+Bu şablonlar Yöneticiler ayarları Grup İlkesi'ne benzer basitleştirilmiş bir görünümünü sağlar, ancak % 100 bulut tabanlı oldukları.
 
 Bu özellik şunları destekler:
 
@@ -202,6 +119,7 @@ Bilgi noktası ayarları için cihaz kısıtlamaları olarak da kullanılabilir 
 Bu özellik şunları destekler: 
 
 - Android
+- Android Kurumsal
 - iOS
 - Windows Phone 8.1
 - Windows 10 ve üzeri
@@ -215,6 +133,7 @@ Sanal özel ağlar (VPN’ler), kullanıcılara şirket ağınıza güvenli uzak
 Bu özellik şunları destekler: 
 
 - Android
+- Android Kurumsal
 - iOS
 - Mac OS
 - Windows Phone 8.1
@@ -228,6 +147,7 @@ Bu özellik şunları destekler:
 Bu özellik şunları destekler: 
 
 - Android
+- Android Kurumsal
 - iOS
 - Mac OS
 - Windows 8.1 (yalnızca içeri aktarma)
@@ -264,11 +184,12 @@ Bu özellik şunları destekler:
 
 ## <a name="certificates"></a>Sertifikalar
 
-[Sertifikaları](certificates-configure.md) yapılandırır güvenilen, SCEP ve PKCS sertifikaları cihazlara atanabilen ve Wi-Fi, VPN, kimlik doğrulaması ve e-posta profillerini için kullanılır.
+[Sertifikaları](certificates-configure.md) yapılandırma güvenilen, SCEP ve PKCS sertifikaları cihazlara atanır. Bu sertifikalar, Wi-Fi, VPN, kimlik doğrulaması ve e-posta profillerini.
 
 Bu özellik şunları destekler: 
 
 - Android
+- Android Kurumsal
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
@@ -284,7 +205,7 @@ Bu özellik şunları destekler:
 
 ## <a name="shared-multi-user-device"></a>Paylaşılan çok kullanıcılı cihaz
 
-[Windows 10](shared-user-device-settings-windows.md) ve [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) birden çok kullanıcıyla olarak da bilinen paylaşılan cihazlar veya paylaşılan bilgisayarlar cihazları yönetmek için ayarlar içerir. Kullanıcı cihazı açtığında, kullanıcı uyku seçenekleri değiştirebilir veya cihazdaki dosyaların kaydedin, seçin. Başka bir örnekte, etkin olmayan kimlik alanı kaydetmek için Windows HoloLens cihazlardan silen bir profil oluşturabilirsiniz.
+[Windows 10](shared-user-device-settings-windows.md) ve [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) birden çok kullanıcıyla olarak da bilinen paylaşılan cihazlar veya paylaşılan bilgisayarlar cihazları yönetmek için ayarlar içerir. Kullanıcı cihazı açtığında, kullanıcı uyku seçenekleri değiştirebilir veya cihazdaki dosyaların kaydedin, seçin. Başka bir örnekte, alan, etkin olmayan kimlik bilgilerini Windows HoloLens cihazlardan silen bir profil oluşturabilirsiniz.
 
 Bu paylaşılan birden çok kullanıcı cihaz ayarları, yöneticinin, bazı cihaz özelliklerini denetlemek izin ve bu paylaşılan cihazları Intune kullanarak yönetmek.
 
@@ -293,20 +214,29 @@ Bu özellik şunları destekler:
 - Windows 10 ve üzeri
 - Windows 10 Holographic for Business
 
-## <a name="custom-profile"></a>Özel profil
+## <a name="zebra-mobility-extensions-mx"></a>Zebra Mobility Uzantıları (MX)
 
-[Özel ayarlar](custom-settings-configure.md) yöneticilerin Intune'da yerleşik olarak olmayan cihaz ayarlarını atamanıza olanak verir. Örneğin, Android cihazlarda, OMA-URI değerleri girebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz. 
+[Zebra Mobility Uzantıları (MX)](android-zebra-mx-overview.md) yöneticilerin kullanın ve ıntune'da Zebra cihazları yönetmenize olanak sağlar. Ayarlarınızla StageNow profilleri oluşturmak ve ardından atayabilir ve bu profiller Zebra cihazlarınıza dağıtmak için Intune kullanın. [StageNow günlükleri ve sık karşılaşılan sorunları](android-zebra-mx-logs-troubleshoot.md) profilleriyle ilgili sorunları giderme ve StageNow kullanırken bazı olası sorunları görmek için harika bir kaynaktır.
 
 Bu özellik şunları destekler:
 
 - Android
+
+## <a name="custom-profile"></a>Özel profil
+
+[Özel ayarlar](custom-settings-configure.md) yöneticilerin Intune'da yerleşik olarak bulunmaz cihaz ayarlarını atamanıza olanak tanır. Android cihazlarda, OMA-URI değerleri girebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz.
+
+Bu özellik şunları destekler:
+
+- Android
+- Android Kurumsal
 - iOS
 - Mac OS
 - Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>Yönetme ve sorun giderme
 
-[Profillerinizi yöneterek](device-profile-monitor.md) cihazların ve atanan profillerin durumunu denetleyin. Ayrıca, çakışma yaratan ayarları ve bu ayarları içeren profilleri görerek çakışmaların çözümlenmesine yardımcı olun. [Genel sorunlar ve çözümleri](device-profile-troubleshoot.md) soru- cevap iş profilleriyle bir profil silindiğinde, ne de dahil olmak üzere cihazları ve daha fazlası için gönderilecek hangi nedenleri bildirimleri yardımcı olmak için sağlar.
+[Profillerinizi yöneterek](device-profile-monitor.md) cihazların ve atanan profillerin durumunu denetleyin. Ayrıca bir çakışma ve bu ayarları içeren profilleriniz neden ayarları görerek çakışmaları yardımcı olur. [Genel sorunlar ve çözümleri](device-profile-troubleshoot.md) iş profilleri yöneticilere yardımcı olur. Bu, silerken bir profili hangi cihazları ve daha fazlası için gönderilecek bildirimler neden ne açıklar.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

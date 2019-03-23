@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccd9a14c29db5039ce0173d0c09fd3d2851755f3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566259"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358179"
 ---
 # <a name="reference-for-user-entity"></a>Kullanıcı varlığı için başvuru
 
@@ -40,13 +40,10 @@ ms.locfileid: "57566259"
 | UserKey |Veri ambarındaki kullanıcının benzersiz tanımlayıcısı - vekil anahtar. |123 |
 | UserId |Kullanıcının benzersiz tanımlayıcısı - UserKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Kullanıcının e-posta adresi. |John@constoso.com |
-| UPN | Kullanıcının kullanıcı asıl adı. | John@constoso.com |
+| userPrincipalName | Kullanıcının kullanıcı asıl adı. | John@constoso.com |
 | displayName |Kullanıcının görünen adı. |John |
 | IntuneLicensed |Kullanıcının Intune lisansı olup olmadığını belirtir. |Doğru/Yanlış |
 | IsDeleted | Kullanıcının tüm lisanslarının geçerliliğini yitirip geçmediğini ve kullanıcının bu nedenle Intune'dan çıkıp çıkmadığını belirtir. Tek bir kayıt için bu bayrak değişmez. Bunun yerine, yeni bir kullanıcı durumu için yeni bir kayıt oluşturulur. |True/False |
-| StartDateInclusiveUTC |IsDeleted = FALSE ise kullanıcıya bir lisans atandığında ve Intune'da bir varlık olmaya başladığında UTC’deki DateTime. IsDeleted = TRUE ise kullanıcıların lisansları dolduğunda ve Intune'dan kaldırıldığında UTC’deki DateTime. |23.11.2016 12:00:00 |
-| EndDateExclusiveUTC |IsDeleted = FALSE ise kullanıcıların lisansları dolduğunda ve Intune'dan kaldırıldığında UTC’deki DateTime. Lisansın bir önceki gün içerisinde süresi doldu. IsDeleted = TRUE ise kullanıcı yeni bir lisans aldığında ve Intune'da yeniden oluşturulduğunda UTC’deki DateTime.  |23.11.2016 12:00:00 |
-| IsCurrent |Bu kayıt son kullanıcı durumunu temsil edip etmediğini gösterir. Tek bir kullanıcı için birden çok kayıt mevcut olabilir, ancak bunlardan yalnızca biri geçerli durumu temsil eder.  |True/False |
 | RowLastModifiedDateTimeUTC |Kaydın veri ambarında son değiştirildiği tarih ve UTC diliminde saat  |23.11.2016 12:00:00 |
 
 ## <a name="next-steps"></a>Sonraki adımlar

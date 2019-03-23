@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61e7bf62202877b6a20717b0774843d1a859eb47
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9f63d396f51254f4aec99ac630b812a54ceeb405
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396939"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394942"
 ---
 # <a name="intune-testing-and-validation"></a>Intune’u sınama ve doğrulama
 
@@ -44,7 +44,7 @@ Bir tasarım bileşeni; bir gereksinim veya senaryoya uygun en az bir sınama ö
 
 -   **Cihazlar:** Silinebilen veya fabrika ayarlarına sıfırlanabilen sınama cihazlar.
 
--   **Tümleştirme Bileşenleri:** Tüm Tümleştirme Bileşenleri (sertifika Bağlayıcısı, barındırılan Exchange için Intune hizmetten hizmete Bağlayıcısı ve Intune şirket içi Exchange Bağlayıcısı) yüklü ve gerekirse yapılandırılmış.
+-   **Tümleştirme Bileşenleri:** Tüm Tümleştirme Bileşenleri (sertifika Bağlayıcısı ve Intune Exchange şirket içi Bağlayıcısı) yüklü ve gerekirse yapılandırılmış.
 
 Öngörülemeyen sorunları ele almak için tasarım değişikliklerine gerek duyabilirsiniz. Ayrıca tüm tasarım değişiklikleri, her değişikliğin nedeniyle birlikte tam olarak belgelenmelidir. Bir değişikliğin neler yapabileceğini gösteren bir örnek aşağıda verilmiştir:
 

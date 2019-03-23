@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0e83e371f5c3d1690cc50c6b250db8a2c3251b48
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565749"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394963"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10 ve üzeri cihaz ayarları ıntune'da bilgi noktası olarak çalıştırmak için
 
@@ -184,6 +184,8 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
 - **Kullanım alternatif başlangıç düzeni**: Seçin **Evet** sırasını uygulamaları dahil olmak üzere, Başlat menüsünde uygulamaları nasıl göründüğünü açıklayan bir XML dosyası girmek için. Başlangıç menünüzü daha fazla özelleştirmeniz gerekiyorsa bu seçeneği kullanın. [Başlangıç düzenini özelleştirme ve dışarı aktarma](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout), rehberlik ve örnek XML sağlar.
 
 - **Windows görev çubuğunda**: Tercih **Göster** veya **Gizle** görev. Varsayılan olarak görev çubuğu gösterilmez. Wi-Fi simgesi gibi simgeler gösterilir, ancak ayarlar son kullanıcılar tarafından değiştirilemez.
+
+- **İndirilenler klasöründen erişmesine izin vermek**: Seçin **Evet** kullanıcıların indirmeler klasörü Windows Gezgini'nde erişmesine izin vermek için. Varsayılan olarak, indirmeler klasörüne erişimi devre dışıdır. Bu özellik, son kullanıcılar için bir tarayıcıdan indirilen öğelere erişmek için yaygın olarak kullanılır.
 
 Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 

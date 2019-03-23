@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400492"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358326"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
@@ -281,7 +281,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | 12           | ISocConsumer      | iSoc Consumer cihaz                                |
 | 13           | Unix              | Unix cihaz                                         |
 | 14           | MacMDM            | Yerleşik MDM aracısıyla yönetilen Mac OS X cihaz |
-| 15           | HoloLens          | Holo Lens cihaz                                    |
+| 15           | HoloLens          | HoloLens cihaz                                       |
 | 16           | SurfaceHub        | Surface Hub cihaz                                  |
 | 17           | AndroidForWork    | Android cihaz - Android Profil Sahibi kullanılarak yönetiliyor  |
 | 18           | AndroidEnterprise | Android kurumsal cihaz.                          |
@@ -311,7 +311,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | 6                | WindowsBulkUserless                | Sertifika ile ICD yoluyla Windows 10 Toplu kaydı.                               |
 | 7                | WindowsAutoEnrollment              | Windows 10 otomatik kayıt.   (İş hesabı ekleyin)                                    |
 | 8                | WindowsBulkAzureDomainJoin         | Windows 10 toplu Azure AD Katılımı.                                                           |
-| 9                | WindowsCoManagement                | AutoPilot veya Grup İlkesi tarafından tetiklenen Windows 10 Ortak Yönetimi.                       |
+| 9                | WindowsCoManagement                | Windows 10 ortak yönetim AutoPilot veya Grup İlkesi tarafından tetiklendi.                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | Cihaz Kimlik Doğrulaması yoluyla Windows 10 Azure AD Katılımı.                                            |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
@@ -448,7 +448,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | 5                     | EasIntuneClient                   | Cihaz, Exchange Active Sync ve Intune bilgisayar aracısıyla yönetiliyor |
 | 8                     | ConfigManagerClient               | Cihaz, System Center Configuration Manager aracısı tarafından yönetiliyor     |
 | 10                    | ConfigurationManagerClientMdm     | Cihaz, Configuration Manager ve MDM tarafından yönetiliyor.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | Cihaz; Configuration Manager, MDM ve EAS tarafından yönetiliyor.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | Cihaz, Configuration Manager, MDM ve Exchange Active Sync tarafından yönetilir.               |
 | 16                    | Bilinmiyor                           | Bilinmeyen yönetim aracısı türü                                              |
 | 32                    | Jamf                              | Cihaz öznitelikleri Jamf’den getirilir.                               |
 | 64                    | GoogleCloudDevicePolicyController |  Cihaz, Google’ın CloudDPC hizmeti tarafından yönetiliyor.                                 |
@@ -599,7 +599,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 **UserDeviceAssociation** varlığı kuruluşunuzdaki kullanıcı cihaz ilişkilerini içerir.
 
-|        Name        |                                             Açıklama                                            |     Örnek     |
+|        Ad        |                                             Açıklama                                            |     Örnek     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | Kullanıcının veri ambarındaki benzersiz tanımlayıcısı.   (Yedek anahtar).                            | 123             |
 | DeviceKey          | Cihazın veri ambarındaki benzersiz tanımlayıcısı.                                             | 123             |
@@ -617,7 +617,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 | UserKey                    | Veri ambarındaki kullanıcının benzersiz tanımlayıcısı - vekil anahtar.                                                                                                                                                         | 123                                  |
 | UserId                     | Kullanıcının benzersiz tanımlayıcısı - UserKey’e benzerdir ancak doğal bir anahtardır.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Kullanıcının e-posta adresi.                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | Kullanıcının kullanıcı asıl adı.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | Kullanıcının kullanıcı asıl adı.                                                                                                                                                                                               | John@constoso.com                    |
 | displayName                | Kullanıcının görünen adı.                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | Kullanıcının Intune lisansı olup olmadığını belirtir.                                                                                                                                                                              | Doğru/Yanlış                           |
 | IsDeleted                  | Kullanıcının tüm lisanslarının geçerliliğini yitirip yitirmediğini ve kullanıcının buna bağlı olarak Intune’dan kaldırılıp kaldırılmadığını belirtir. Tek bir kayıt için bu bayrak değişmez. Bunun yerine, yeni bir kullanıcı durumu için yeni bir kayıt oluşturulur. | True/False                           |

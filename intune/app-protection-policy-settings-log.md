@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460504"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394802"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
@@ -43,6 +43,7 @@ Aşağıdaki tabloda, adları ve açıklamaları günlüğe kaydedilen ayarları
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x dakika                                                                                                                                                                                                                                                                                                   | [Erişim] Erişim gereksinimlerini tekrar kontrol edin - Çevrimdışı Kullanım Süresi<br>Not: Cihaz çevrimdışı ise uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını budur.             |
 | AccessRecheckOnlineTimeout  | _x_ dakika                                                                                                                                                                                                                                                                                                   | [Access] Erişim gereksinimlerini tekrar kontrol edin - Zaman aşımı.<br>Not: Cihaz çevrimiçiyse uygulama başlatıldıktan sonra uygulamaya yönelik erişim gereksinimleri yeniden denetlenmeden önceki zaman aralığını budur. |
+| AllowedOutboundClipboardSharingExceptionLength               | x karakter                                                                                                                                                                                                                                                                                           | [Erişim] Yönetilen bir uygulamadan kopyalanan veya kesin olabilir karakter sayısını belirtin.  Bu ayar geçersiz kılar `AllowedOutboundClipboardSharingLevel` kısıtlama. Varsayılan değeri hiçbir özel duruma izin '0' anlamına gelir. 
 | AppPinDisabled              | 0 = Hayır<br>1 = Evet                                                                                                                                                                                                                                                                                           | [Erişim] Cihaz PIN'i yönetilirken uygulama PIN'ini devre dışı bırak.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Uygulama yok<br>1 = Yönetilen uygulamalar<br>2 = Herhangi bir uygulama                                                                                                                                                                                                                                                              | [Verileri Yeniden Konumlandırma] Bu uygulamanın diğer uygulamalardan veri almasına izin ver.                                                                                                                        |
 | AppSharingToLevel           | 0 = Uygulama yok<br>1 = Yönetilen uygulamalar<br>2 = Herhangi bir uygulama                                                                                                                                                                                                                                                              | [Verileri Yeniden Konumlandırma] Bu uygulamanın verileri diğer uygulamalara aktarmasına izin ver.                                                                                                                         |

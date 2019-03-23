@@ -17,12 +17,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec0678bbd9f793eab23e211ad5d1d6e02d590c90
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e663e80cfeb4ec3a4e2e8c92e17344b62c5bb6fc
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397687"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394971"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
@@ -30,7 +30,7 @@ ms.locfileid: "57397687"
 
 Bir yönetici olarak çok sayıda yeni Windows cihazını Azure Active Directory ve Intune’a dahil edebilirsiniz. Azure AD kiracınıza cihazları toplu kaydetmek için Windows Yapılandırma Tasarımcısı (WCD) uygulaması ile bir sağlama paketi oluşturursunuz. Sağlama paketini şirkete ait cihazlara uygulamak, cihazları Azure AD kiracınıza dahil eder ve Intune yönetimine kaydeder. Paket uygulandıktan sonra, Azure AD kullanıcılarınızın oturum açması için hazır hale gelir.
 
-Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan Intune ilkelerini ve gerekli uygulamaları alırlar. Self Servis ve Şirket Portalı senaryoları şu anda desteklenmiyor.
+Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan Intune ilkelerini ve gerekli uygulamaları alırlar. Windows toplu kayıt kullanılarak Intune'a kaydedilen Windows cihazlar kullanılabilir uygulamaları yüklemek için Şirket portalı uygulamasını kullanabilirsiniz. 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows cihazları toplu kaydetme önkoşulları
 

@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/06/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8e73af9ce317ebda09570c2c18df901529e7749
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5355257792dd8fa0e06d1b0fb4071f5e9e52b5a9
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528335"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394946"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,7 +44,7 @@ Bu makalede, iOS cihazları için uygulama koruma İlkesi ayarları açıklanır
 | **Kurumsal verilerin kopyasını Kaydet** | Seçin **blok** kullanımını devre dışı bırakmak için *Kaydet* bu uygulamada seçeneği. Seçin **izin** kullanımına izin vermek istiyorsanız *Kaydet*. <br><br>**Not:** *Bu ayar, Microsoft Excel, OneNote, Outlook, PowerPoint ve Word için desteklenir. Ayrıca üçüncü taraf ve iş kolu uygulamaları tarafından da desteklenebilir.* <br><br> Ayarlandığında *blok*, aşağıdaki ayarı yapılandırabilirsiniz *kullanıcının kopyaları seçilen cihazlara kaydedebilir izin ver*.   | <br><br> **İzin ver**   |
 | <ul><ui> **Kopya seçilen cihazlara kaydedebilir izin ver** | Kullanıcılar, seçili hizmetlere (OneDrive İş, SharePoint ve Yerel Depolama) kaydedebilir. Diğer tüm hizmetler engellenir.| **0 adet seçildi**  |
 | **Kesme, kopyalama ve kısıtlama diğer uygulamalar arasında** | Bu uygulamada kes, kopyala ve yapıştır eylemlerinin ne zaman kullanılabileceğini belirtin. Aşağıdakilerden birini seçin: <ul><li>**Engellenen**:  Kesme, kopyalama ve yapıştırma eylemlerine bu uygulama ve diğer herhangi bir uygulama arasında izin vermez.</li><li>**İlke ile yönetilen uygulamalar**: Kesme, kopyalama ve yapıştırma eylemlerine bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında izin verin.</li><li>**Yapıştırma seçeneğiyle ilke ile yönetilen**: Kesme izin verin veya bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kopyalama. Herhangi bir uygulamadan verilerin bu uygulamaya yapıştırılmasına izin verir.</li><li>**Herhangi bir uygulama**: Kesme, kopyalama ve yapıştırma için ve bu uygulamadan ilgili bir kısıtlama olmaz.</ul> | **Herhangi bir uygulama**   |
-
+| **Herhangi bir uygulama için karakter sınırı kesme ve kopyalama** | Kuruluş verilerini ve hesapları kopyaladığınız veya kesin olabilir karakter sayısını belirtin.  Bu bağımsız olarak, belirtilen sayıda karakteri herhangi bir uygulama için paylaşımını sağlayacak **kısıtlama kesme, kopyalama ve yapıştırma diğer uygulamalarla** ayarı.<p>Varsayılan değer = 0<p>**Not**: Intune SDK'sı sürüm 9.0.14 sahip olması gerekir veya üzeri.  | **0**   |
 
 
 ### <a name="encryption"></a>Şifreleme

@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39052860cefc562700608beda7f42c4146ccdf34
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566038"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358196"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -128,17 +128,5 @@ ms.locfileid: "57566038"
 | AppInstallState | Uygulama yükleme durumunun Enum değeri. |
 | AppInstallStateName | Uygulama yükleme durumunun adı. |
 
-## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-**MobileAppDeviceUserInstallStatus** belirli bir cihaz ve kullanıcı için mobil uygulama yükleme durumunu gösterir.
-
-
-|      Özellik      |                                                         Açıklama                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|      DateKey       |                                  Uygulama yükleme durumunun kaydedildiği tarihin anahtarı.                                  |
-|       AppKey       |                             AppRevision örneğini tanımlamak için kullanılan mobil uygulamanın anahtarı.                              |
-|     DeviceKey      |                              Device örneğini tanımlamak için kullanılan hedef cihazın anahtarı.                               |
-|      UserKey       |                                User örneğini tanımlamak için kullanılan hedef kullanıcının anahtarı.                                 |
-| AppInstallStateKey |                     MobileAppInstallState örneğini tanımlamak için kullanılan uygulama yükleme durumunun anahtarı.                     |
-|     hata kodu      | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |
 

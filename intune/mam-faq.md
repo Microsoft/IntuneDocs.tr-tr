@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdbe2c34f9e0bfb05324d7030ad27ce664fcfb76
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4592820500cebddcdafc9d9e86caeeb1addc93a3
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461099"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358200"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -171,6 +171,27 @@ Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya er
 
 Farklı ayar türleriyle ilgilenirken, uygulama sürümü gereksinimi önceliklidir ve bunu Android işletim sistemi sürümü gereksinimi ile Android yama sürümü gereksinimi izler. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir.
 
+**Intune uygulama koruma ilkeleri Android cihazları için Google'nın SafetyNet kanıtı geçirmek için son kullanıcı gerektirmek yöneticilerin özelliği sağlar. Sıklıkla yeni SafetyNet cihaz kanıtlama sonucu hizmetine gönderilir mi?** <br><br> Yeni bir Google Play hizmeti belirleme, Intune hizmeti tarafından belirlenen aralıklarla BT yöneticinize bildirilir. Hizmet çağrısı ne sıklıkta yapılır kısıtlanan yükü nedeniyle, bu nedenle bu değer dahili olarak korunur ve yapılandırılabilir değildir. Herhangi bir BT yöneticisi, eylem ayarı son bildirilen sonucuna Intune hizmetine koşullu başlatma, temel saatle Google SafetyNet kanıtı için yapılandırılmış. Veri yoksa erişimine başka hiçbir başarısız koşullu başlatma denetimleri ve Google Play Hizmeti'ni "gidiş geliş" bağlı olarak sonuçları arka uçtaki başlar ve cihaz başarısız olursa zaman uyumsuz olarak kullanıcıdan kanıtlama belirlemek için izin verilir. Eski veriler varsa erişim engellendi veya bağlı olarak son bildirilen sonucu izin benzer şekilde, bir Google Play Hizmeti'ni "kanıtlama sonuçları belirlemek için gidiş geliş" başlamamız ve cihaz başarısız olursa zaman uyumsuz olarak kullanıcıdan.
+
+**Intune uygulama koruma ilkeleri, son kullanıcı gerektirmek Yöneticiler için Android cihazlar için Google'nın doğrulayın uygulamaları API aracılığıyla sinyal gönderin olanağı sağlar. Nasıl bu nedeniyle erişimden engellenmediğinden böylece son kullanıcı uygulama taraması kapatabilir miyim?**<br><br> Bunu yapmak yönergeler, cihaz tarafından biraz farklılık gösterir. Genel işlem için Google Play Store giderek ve ardından tıklandığında ilgilidir **My uygulamalar ve oyunlar**, öğesine tıklayarak, sizi Play Protect menüye son uygulama tarama sonucu. Emin olmak için iki durumlu düğmeyi **cihazı güvenlik tehditleri için tara** göre anahtarlanır.
+
+**Hangi Google'nın SafetyNet cihaz kanıtlama API gerçekten Android cihazlarda kontrol eder? 'Temel bütünlük denetimi' ve 'onay temel bütünlüğü ve Sertifikalı cihazları' yapılandırılabilir değerleri arasındaki fark nedir?** <br><br>
+Intune, Google Play koruma SafetyNet kayıtlı olmayan cihazlar için mevcut bizim kök algılama denetimleri eklemek için API'leri yararlanır. Google geliştirdiğini ve Android uygulamaları için ayarlanmış bu API uygulamalarını kök erişim izni verilmiş cihazlarda çalıştırmayı istemiyorsanız benimsemek için korunur. Android ödeme uygulama, örneğin yaptıysa. Google oluşan kök algılama denetimlerin tamamen herkese açık şekilde paylaşmaz, ancak kullanıcılar, cihazlarını kökü algılamak için bu API'leri bekliyoruz. Bu kullanıcılar daha sonra erişimi engellenebilir veya kendi ilkeden Temizlenen şirket hesaplarına etkin uygulamalar. 'Temel bütünlüğü denetle' cihaz hakkında genel bütünlüğünü söyler. Cihazlar, Öykünücüler, sanal cihazlar ve başarısız temel bütünlük kurcalama belirtileri cihazlarla kökü. 'Onay temel bütünlüğü ve Sertifikalı cihazları' Google'nın Hizmetleri ile cihaz uyumluluğunu hakkında size bildirir. Bu denetim yalnızca Google tarafından onaylanmış değiştirilmemiş cihazları geçirebilirsiniz. Başarısız olan cihazlar şunları içerir:
+* Temel bütünlük başarısız olan cihazlar
+* Kilidi açılmış bir önyükleme yükleyicisi ile cihazları
+* Bir özel sistem görüntüsünü/ROM'UNDAN cihazlarla
+* Kendisi için üretici yaramadı başvurmak veya geçirmek, Google sertifika cihazları 
+* Cihazları doğrudan Android açık kaynak programı Kaynak dosyalardaki yerleşik bir sistem görüntüsü ile
+* Beta/Geliştirici önizlemesi sistem görüntüsü ile cihazları
+
+Bkz: [Google'nın SafetyNet cihaz kanıtlama belgelerine](https://developer.android.com/training/safetynet/attestation) Teknik Ayrıntılar için.
+
+**Bir Android cihazları için Intune uygulama koruma ilkesi oluşturulurken koşullu başlatma bölümünde iki benzer denetimi yoktur. Ben, 'SafetyNet cihaz kanıtlama' ayarı veya 'ayarı jailbreak/kök erişim izni verilmiş cihazlar' gerektiren?** <br><br>
+Google Play Protect'ın SafetyNet API denetimi son çevrimiçi olan kullanıcı, "kanıtlama sonuçları belirlemek için gidiş geliş" yürütür süre için en az gerektirir. Son kullanıcı çevrimdışıysa, BT yöneticisi hala 'ayarı jailbreak/kök belirtme cihazlardan' yürütülebilmesi için bir sonuç bekleyebilirsiniz. O Bununla birlikte, son kullanıcı uzun çevrimdışı olmaması durumunda çalışmaya ' Çevrimdışı yetkisiz kullanım değeri yürütme ve tüm gelen süresi' erişmek veya Okul verilerini Bu zamanlayıcı değeri ulaşıldığında ağ erişim sağlanana kadar engellenir. Her iki ayarlarını açma mobil cihazlarda katmanlı bir yaklaşım son kullanıcı son kullanıcıların erişim çalışırken önemlidir aygıtları sağlıklı tutmak veya Okul verilerini sağlar. 
+
+**Google Play koruma API'lerden yararlanarak uygulama koruma İlkesi ayarları, Google Play Hizmetleri çalışması için gerekli. Ne Google Play Hizmetleri son kullanıcı burada olabilir konumda izin verilmiyor?**<br><br>
+Hem 'SafetyNet cihaz kanıtlama' ve 'Uygulamalarda tehdit taraması' ayarları düzgün çalışması için Google Play Hizmetleri belirlenen Google sürümünü gerektirir. Bu güvenlik alanında kalan ayarlar olduğundan, son kullanıcı bunlar bu ayarlarla hedeflenen ve Google Play Hizmetleri uygun sürümünü karşılamıyor veya Google Play Hizmetleri hiçbir erişimi engellenir. 
+
 ## <a name="app-experience-on-ios"></a>iOS’da uygulama deneyimi
 **Cihazıma bir parmak izi veya yüz kimliği eklersem veya bunları cihazımdan kaldırırsam ne olur?**
 Intune uygulama koruma ilkeleri, yalnızca Intune lisanslı kullanıcılara uygulama erişimi denetimi verir. Uygulamaya erişimi denetleme yollarından biri, desteklenen cihazlarda Apple’ın Touch ID veya Face ID özelliğini gerekli kılmaktır. Intune, cihazın biyometrik veritabanında bir değişiklik olduğunda ve etkin olmama zaman aşımı değeri karşılandığında kullanıcıdan PIN isteyen bir davranış uygular. Biyometrik verilerdeki değişikliklere parmak izi veya yüz kimliği eklenmesi veya kaldırılması dahildir. Intune kullanıcısı bir PIN ayarlamamışsa, Intune PIN’i ayarlamak üzere yönlendirilir.
@@ -185,20 +206,13 @@ Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya er
 
 Farklı ayar türleriyle ilgilenirken, Intune Uygulama SDK'sı sürümü gereksinimi önceliklidir ve bunu uygulama sürümü gereksinimi ile iOS işletim sistemi sürümü gereksinimi izler. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir. Intune Uygulama SDK'sı sürümü gereksiniminin, yalnızca temel engelleme senaryoları için Intune ürün ekibinin yönlendirmesiyle yapılandırılmasını öneririz.
 
-## <a name="app-protection-policies---policy-refresh"></a>Uygulama koruma ilkeleri - İlke yenileme
-- Uygulamalar her 30 dakikada bir APP hizmetine iade eder.
-- 30 dakikalık eşik, bir zamanlayıcıyı temel alır.
-    - Uygulama 30. dakikada etkinse 30. dakikada iade eder.
-    - Uygulama 30. dakikada uyku durumundaysa bir sonraki 30. dakikada iade eder.
-- Kullanıcıya atanmış bir ilke yoksa iade her sekiz saatte bir gerçekleşir.
-- Atanmış bir Intune lisansı yoksa iade 24 saatte bir gerçekleşir.
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Intune planınızı uygulama](planning-guide-onboarding.md)
 - [Intune sınama ve doğrulama](planning-guide-test-validation.md)
 - [Microsoft Intune’da Android mobil uygulama yönetim ilkesi ayarları](app-protection-policy-settings-android.md)
 - [iOS mobil uygulama yönetim ilkesi ayarları](app-protection-policy-settings-ios.md)
-- [Uygulama koruma ilkelerinizi doğrulama](app-protection-policies-validate.md)
+- [Uygulama koruma ilkeleri ilke yenileme](app-protection-policy-delivery.md)
+- [Uygulama koruma ilkelerinizi doğrulama](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-managed-app.md)
 - [Microsoft Intune için destek alma](get-support.md)
