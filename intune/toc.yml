@@ -262,8 +262,6 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN sıfırlama
       href: device-windows-pin-reset.md
-    - name: Exchange hizmeti bağlayıcısını yükleme
-      href: exchange-service-connector-configure.md
     - name: Cihazı eşitleme
       href: device-sync.md
     - name: Cihaz envanterini inceleme
@@ -329,6 +327,11 @@ items:
       href: education-settings-configure.md
     - name: Paylaşılan çok kullanıcılı cihazlar
       href: shared-user-device-settings.md
+    - name: Zebra cihazlarda Mobility Uzantıları
+      href: android-zebra-mx-overview.md
+      items:
+      - name: StageNow günlükleri ve yaygın sorunlar
+        href: android-zebra-mx-logs-troubleshoot.md
     - name: Telekom giderlerini izleme
       href: telecom-expenses-monitor.md
     - name: Özel cihaz ayarları
@@ -854,8 +857,6 @@ items:
             href: reports-ref-user-timeline.md
           - name: Uygulama varlıkları için başvuru
             href: reports-ref-application.md
-          - name: Mevcut kullanıcı varlığı için başvuru
-            href: reports-ref-current-user.md
           - name: Veri varlığı için başvuru
             href: reports-ref-date.md
           - name: Cihaz varlıkları için başvuru
@@ -946,9 +947,9 @@ items:
       href: data-outside-protect.md
     - name: Yönetilmeyen cihazlarda veri sızıntılarını önleme
       href: data-leak-prevention.md
-ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: f342d2ce12fb45db49cf06263807ed4a155fba55
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306868"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394689"
