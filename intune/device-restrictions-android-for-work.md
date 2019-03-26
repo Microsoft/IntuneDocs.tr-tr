@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4610f99d9190ddad01ab604195e086e407e7161a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566327"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429763"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -108,7 +108,7 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
   >   - [Bir istemci uygulaması olarak eklenen](apps-add-android-for-work.md) ıntune
   >   - [Cihaz grubuna atanmış](apps-deploy.md) adanmış cihazlarınız için oluşturuldu
   > 
-  > **Giriş ekranı yönetilen** uygulama yapılandırma profilinde de olması için gerekli değildir, ancak bir istemci uygulaması olarak eklenmesi için gereklidir. Zaman **giriş ekranı yönetilen** uygulama, bir istemci uygulaması olarak eklenir, simgeler olarak gösterilir configiration profilinde eklediğiniz diğer tüm uygulamalar **giriş ekranı yönetilen** uygulama. 
+  > **Giriş ekranı yönetilen** uygulama yapılandırma profilinde de olması için gerekli değildir, ancak bir istemci uygulaması olarak eklenmesi için gereklidir. Zaman **giriş ekranı yönetilen** uygulama, bir istemci uygulaması olarak eklenir, simgeler olarak gösterilir yapılandırma profilinde de eklediğiniz diğer tüm uygulamalar **giriş ekranı yönetilen** uygulama. 
 
   - Seçin **Ekle**ve uygulamalarınızı listeden seçin.
 

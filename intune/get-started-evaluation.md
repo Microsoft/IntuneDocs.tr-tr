@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34d1cbe969b8e186d9e067660237da9c4ca88fb8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396217"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429742"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune şirketim için ne yapabilir?
 Microsoft Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olan bulut tabanlı bir kurumsal mobilite yönetim (EMM) hizmetidir.
@@ -46,17 +46,17 @@ Intune ile şunları yapabilirsiniz:
 
 ## <a name="quickstarts"></a>Hızlı girişler
 
-Şirketiniz adına pek çok farklı karar almanız gerekeceği için mobil cihaz yönetimine başlamanın zor olabileceğinin farkındayız. Aşağıdaki hızlı başlangıçlar çok kısa bir sürede Intune'u kullanmaya başlamanıza ve bazı sık kullanılan görevleri tamamlamanıza yardımcı olur.
+Başlangıç Mobil cihazların yönetimini alma zor olabileceğini biliyoruz. Pek çok farklı karar yapmak için şirket adına ihtiyacınız vardır. Size aşağıdaki hızlı başlangıçlar Yardım, Intune ile çalışmaya ve en az bir sürede bazı genel görevleri tamamlayın.
 
-Sayfanın solundaki içindekiler tablosunu kullanarak **Hızlı Başlangıçlar**’ı belirtilen sırayla tamamlayabilirsiniz.
+Hedeflenen düzenini izleyerek **hızlı Başlangıçlar** bu sayfanın sol tarafındaki içindekiler tablosu,'ı kullanarak.
 
 - [Intune'u ücretsiz deneyin](free-trial-sign-up.md) - Intune'u bir test ortamında denemek için ücretsiz bir abonelik oluşturun.    
 - [Kullanıcı oluşturun](quickstart-create-user.md) - Mobil cihazlarda şirket kaynaklarına erişmesini sağlamak için Intune’a bir kullanıcı ekleyin.
-- [Grup oluşturun](quickstart-create-group.md) - Erişebilecekleri ilke ve uygulamaları yönetmeyi kolaylaştırmak için kullanıcıları gruplara ayırın.
-- [Otomatik kaydı ayarlayın](quickstart-setup-auto-enrollment.md) - Microsoft Intune’u, belirli kullanıcılar Windows 10 cihazlarında oturum açtığında bu cihazları otomatik kaydedecek şekilde ayarlayın.
-- [Cihazınızı kaydedin](quickstart-enroll-windows-device.md) - Bir Intune kullanıcı rolünü üstlenin ve cihazınızı Microsoft Intune’a kaydedin. Daha sonra Intune’a dönüp kaydettiğiniz cihazı onaylayın.
+- [Bir grup oluşturmak](quickstart-create-group.md) -kullanıcılarını daha kolay erişim sağlayabilir, uygulamaları ve ilkeleri yönetmek gruplar halinde düzenleyin.
+- [Otomatik kaydını ayarlama](quickstart-setup-auto-enrollment.md) -Windows 10 cihazları için belirli kullanıcılar oturum açtığında otomatik olarak cihazları kaydetmek için Intune'u ayarlama.
+- [Cihazınızı kaydetme](quickstart-enroll-windows-device.md) - bir Intune kullanıcı rolü ve Cihazınızı Intune'a kaydetme. Ardından, Intune'a dönün ve cihazın başarıyla kaydedildiği onaylayın.
 - [Cihaz uyumluluk ilkesi oluşturun](quickstart-set-password-length-android.md) - Bir cihaz uyumluluk ilkesi oluşturun ve ilkeye bir grup atayın.
-- [Uyumsuz cihazlara bildirim gönderin](quickstart-send-notification.md) - Bir uyumluluk ilkesi oluşturup atayarak iş gücünüzün uyumsuz cihazlara sahip üyelerine bir e-posta bildirimi gönderin.
+- [Uyumlu olmayan cihazlara bildirim göndermek](quickstart-send-notification.md) -oluşturma ve atama bir uyumluluk İlkesi uyumsuz cihazları olan iş gücünüzün üyelerinin bir e-posta bildirimi gönderin.
 - [Uygulama ekleyin ve atayın](quickstart-add-assign-app.md) - Şirketinizin iş gücüne bir istemci uygulaması ekleyin ve atayın.
 - [Uygulama koruma ilkesi oluşturun ve atayın](quickstart-create-assign-app-policy.md) - Son kullanıcı cihazı üzerinde bir uygulama koruma ilkesi oluşturun ve bunu bir istemci uygulamasına atayın.
 - [Özel bir rol oluşturun ve atayın](quickstart-create-custom-role.md) - Bir güvenlik işlemleri departmanı için belirli izinleri olan özel bir rol oluşturun ve atayın. 
@@ -64,13 +64,13 @@ Sayfanın solundaki içindekiler tablosunu kullanarak **Hızlı Başlangıçlar*
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Başlamadan önce etkin birer Intune yönetici ve kiracı hesabınızın olması gerekir. Bir test ortamında [Intune'u ücretsiz denemek](free-trial-sign-up.md) için ücretsiz bir abonelik oluşturun. Mevcut aboneler bu etkinlikleri de etkin kiracınızda tamamlayabilir. Başlarken makaleleri, test cihazlarında çalıştığınız varsayılarak hazırlanır.
+Başlamadan önce etkin bir Intune yönetici ve Kiracı hesabınızın olması gerekir. Bir test ortamında [Intune'u ücretsiz denemek](free-trial-sign-up.md) için ücretsiz bir abonelik oluşturun. Mevcut Aboneler bu etkinlikleri Canlı kiracısındaki da tamamlayabilirsiniz. Başlarken makaleleri, test cihazlarında çalıştığınız varsayılır.
 
 Ayrıca tüm Başlarken görevlerini tamamlamak için kuruluşunuzun genel yöneticisi olduğunuzdan emin olmalısınız.
 
 ## <a name="intune-architecture"></a>Intune mimarisi
 
-Intune, Enterprise Mobility + Security’nin (EMS) mobil cihaz ve uygulamaları yöneten bileşenidir. Kimlik ve erişim denetimi için Azure Active Directory (Azure AD) gibi diğer EMS bileşenleriyle, veri koruma için ise Azure Information Protection ile tümleşir. Office 365 ile birlikte kullanıldığında, çalışanlarınıza tüm cihazlardan üretken bir şekilde çalışma olanağı tanırken kuruluşunuzun bilgilerini de koruma altına alır.
+Intune, Enterprise Mobility + Security’nin (EMS) mobil cihaz ve uygulamaları yöneten bileşenidir. Kimlik ve erişim denetimi için Azure Active Directory (Azure AD) gibi diğer EMS bileşenleriyle, veri koruma için ise Azure Information Protection ile tümleşir. Office 365 ile kullandığınızda, iş gücünüzün tanırken kuruluşunuzun bilgilerini korunan tüm cihazlardan üretken bir şekilde etkinleştirebilirsiniz.
 
 ![Microsoft Intune için yüksek düzey mimari diyagramı](/intune/media/intunearchitecture.svg)
 

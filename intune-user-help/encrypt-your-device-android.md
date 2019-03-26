@@ -1,11 +1,11 @@
 ---
-title: Android cihazınızı şifrelemeyle koruma | Microsoft Docs
-description: Android cihazınızı koruma
+title: Intune Şirket portalı için Android Cihazınızı şifrelemenizi | Microsoft Docs
+description: Bir Android cihazında cihaz şifrelemeyi etkinleştirmek için adımları
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,31 +18,45 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9ad953049b9d2efd6f7a828ee70b5e1cede4ee68
+ms.sourcegitcommit: d0749cbc68df41893742f5187ac378a5ade824f2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838181"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58406257"
 ---
-# <a name="how-to-protect-your-android-device-using-encryption"></a>Android cihazınızı şifreleme kullanarak koruma
+# <a name="encrypt-your-android-device"></a>Android Cihazınızı şifreleme
 
-Bir cihazı şifrelediğinizde cihazdaki bilgileri, yetkisiz kişilerin erişmesini engelleyen koruyucu bir kod katmanı içine sarmalamış olursunuz. Bilgilerinizin güvende olduğundan emin olmak için kuruluşunuz; şirket dosyalarına, e-postalara veya verilere erişebilmeniz için Android cihazınızı şifrelemenizi istiyor.
+Cihazınız kaybolur veya çalınırsa, cihaz şifreleme, dosya ve klasörlerinizi yetkisiz erişime karşı korur. Cihaz şifreleme etkinleştirdikten sonra sadece bireyleri doğru parolayı veya PIN'i ile cihazınıza oturum açmak mümkün olacaktır. 
+
+Okul veya iş kaynaklarına erişebilmeniz için önce kuruluşunuzun Android Cihazınızı şifrelemenizi gerektirebilir. Varsayılan olarak, bazı yeni Android cihazları şifrelenmiş kullanıma hazır.  
+
+Şirket portalı Cihazınızı şifrelemek için gereken bir ileti alırsanız, aşağıdaki adımları tamamlayın. 
 
 > [!Note]
-> Bazı Huawei ve Vivo ve OPPO, tarafından yapılan belirli Android cihazlar şifrelenemez. Daha fazla bilgiyi [burada](your-device-appears-encrypted-but-cp-says-otherwise-android.md) bulabilirsiniz.
+> Huawei, Vivo ve OPPO belirli Android cihazlar şifrelenemez. Daha fazla bilgiyi [burada](your-device-appears-encrypted-but-cp-says-otherwise-android.md) bulabilirsiniz.  
 
-Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
+1.  Bir cihaz ekran kilidi ayarlayın.  
+    a. Git **ayarları** > **kilit ekranı ve güvenlik** > **ekran kilidi türünü**.  
+    b. Şunlardan birini seçin **PIN**, **parola**, veya **deseni**.  
+    c. Ekran kilidinizi yapılandırmak için ekrandaki yönergeleri izleyin.  
 
-1.  Cihazınız için bir ekran kilidi PIN veya parolasının ayarlandığından emin olun.
+2. Geri Git **kilit ekranı ve güvenlik** seçip **güvenli başlangıç**.
+3. Seçin **cihazı açtığında PIN gerektir** > **Tamam**.
+4. Onayla ve Cihazınızı şifrelemek için bir PIN kodunuzu girin.
+5. Şirket portalı uygulamasını açın, Cihazınızı seçin ve dokunun **cihaz ayarlarını denetle**.  
 
-2.  **Ayarlar**’da, **Güvenlik** > **Cihazı Şifrele**’yi seçin.
-    (Bazı telefonlarda, “Şifrele” seçeneğini bulmak için **Depolama** > **Depolama şifresi** veya **Depolama** > **Kilit ekranı ve güvenlik** > **Diğer güvenlik ayarları**’nı seçmeniz gerekebilir).
+Android 4.4 ve önceki sürümleri çalıştıran cihazlara sahip olmayabilirsiniz **güvenli başlatma** seçeneği. Bu durumda, Cihazınızı şifrelemek için aşağıdaki adımları tamamlayın.
 
-3.  Ekrandaki yönergeleri takip edin. Şifreleme sırasında, cihazınız birkaç kere yeniden başlatılabilir.
+1. Git **ayarları** > **güvenlik** > **Cihazınızı şifrelemenizi**. Ekranda etiketleri Android cihazlar arasında farklılık gösterir. Görmüyorsanız **cihazı şifrele** seçeneğinde, iade:
+    * **Depolama** > **depolama şifrelemesi**
+    * **Depolama** > **kilit ekranı ve güvenlik** > **diğer güvenlik ayarları** 
 
-### <a name="what-to-do-if-you-have-issues"></a>Sorunlarınız varsa yapmanız gerekenler
-**Sorunu**: Cihazınızı zaten şifrelediyseniz ve aşağıdakilerden birini görürsünüz:
+2. Ekrandaki yönergeleri takip edin. Şifreleme sırasında cihazınız birkaç kez yeniden başlatılması.
+3. Şirket portalı uygulamasını açın, Cihazınızı seçin ve dokunun **cihaz ayarlarını denetle**.  
+
+## <a name="troubleshoot"></a>Sorun giderme  
+**Sorunu**: Cihazınızı zaten şifrelediyseniz ve
 
 - Şifreleme düğmesi devre dışı.
 - Yine de şifrelemeniz gerektiğini bildiren bir iletiyle karşılaşıyorsunuz.
@@ -50,20 +64,7 @@ Telefonunuzun kaydını kaldırırsanız, telefon şifrelenmiş olarak kalır.
 
 **Bunları deneyin:**
 
-- Cihazınızın şarjının dolu olduğundan ve prize takılı olduğundan emin olun.
-- Cihazınızda bir PIN veya parola ayarladığınızdan emin olun.
-- Cihazınızda zaten bir PIN veya parola ayarladıysanız, daha güvenli hale getirmek için şirketinizin destek biriminin yapmanızı şart koşabileceği aşağıdaki adımları deneyin. Menü adları, sahip olduğunuz Android cihazın türüne bağlı olarak adımlarda gördüğünüzden biraz farklı olabilir.
+- Cihazınızın şarjının dolu olduğundan ve prize takılı olduğundan emin olun.  
+- Cihazınızda bir PIN veya parola ayarladığınızdan emin olun.  
 
-    1. **Ayarlar** > **Kilit Ekranı ve Güvenlik** > **Ekran kilidi**’ne gidin. Geçerli PIN veya parolanızı onaylayın.
-
-    2. **Ekran kilidi seç** ekranında, kullanmak istediğiniz ekran kilidi türünü seçin. 
-
-    3. Ekran kilidini seçtikten sonra **Kilit Ekranı ve Güvenlik** ekranına dönün ve **Güvenli Başlatma**’yı seçin. 
-    
-    4. **Güvenli başlatma** ekranında **Cihazı başlatmak için PIN gerektir**’e ve **Devam**’a dokunun.
-
-    5. Bir PIN seçin (daha önce girdiğiniz kodun aynısını girebilirsiniz) ve **PIN’inizi onaylayın**’a dokunun.
-
-    6. Cihazınızda Şirket Portalı uygulamasını açın ve **Uyumluluğu Denetle**’yi seçin.
-
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.  

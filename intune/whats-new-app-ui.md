@@ -18,15 +18,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a812a0ec11c4e577e2ed0c7e4aeb702601ceeaf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3e67e9deb77d1f479107c5d3e43cd602ae6eab80
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397483"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429746"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
-Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uygulamalar için kullanıcı arabiriminde sunulan güncelleştirmeler hakkında bilgi edinin. Bu güncelleştirmeleri anlamak, kullanıcılarınızla iletişim kurmanızı kolaylaştırmanın yanı sıra dağıtımınızı desteklemek için oluşturduğunuz özel belgeler için sunacağınız güncelleştirmeler konusunda size yardımcı olabilir. Bu ayrıca son kullanıcılarınız Şirket Portalını kullanarak destek için yardım masasını ararlarsa, karşılaştıkları sorunları daha iyi nasıl çözebileceğinizi anlamanıza da yardımcı olur.  
+Son kullanıcılarınıza Microsoft Intune bu sürümde görürsünüz uygulamalar için kullanıcı arabirimi (UI) hangi güncelleştirmelerin yapılmıştır öğrenin. Tüm özel belgeler için güncelleştirme Dağıtımınızı desteklemek için oluşturduğunuz ve bu güncelleştirmeleri anlamak kullanıcı iletişimlerinde yardımcı olabilir. Ayrıca daha iyi kullanıcılar yaşadığınız sorunları gidermek nasıl anlamanıza yardımcı olur şirket portalını kullanarak destek için Yardım masanıza çağırmalıdır.  
 
 Şirket portalı uygulamasını kullanma hakkında daha fazla bilgi için bkz. [Şirket portalı kullanıcı Yardım belgeleri](https://docs.microsoft.com/intune-user-help/).  
 
@@ -34,7 +34,7 @@ Son kullanıcılarınızın Microsoft Intune’un bu sürümünde göreceği uyg
 
 ## <a name="week-of-february-19-2019"></a>19 Şubat 2019 haftası  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Windows 10 için Şirket portalı uygulamasında yeni uygulama kategorileri ekran<!-- 3834780 WNready4Review -->  
-Adlı yeni bir ekran **uygulama kategorileri** Windows 10 için Şirket portalı uygulaması gezinme ve seçim deneyimini iyileştirmek üzere eklendi. Kullanıcılar artık kategoriler altında gibi sıralanan uygulamalarını görmek **öne çıkan**, **eğitim**, ve **üretkenlik**. Bu değişikliği Şirket portalı sürümleri 10.3.3451.0 görünür ve daha sonra. Uygulamaları şirket Portalı'nda alma hakkında daha fazla bilgi için bkz. [yüklemek ve paylaşmak cihazınızdaki uygulamalar](/intune-user-help/install-apps-cpapp-windows).  
+Adlı yeni bir ekran **uygulama kategorileri** Windows 10 için Şirket portalı uygulaması gezinme ve seçim deneyimini iyileştirmek üzere eklendi. Kullanıcılar artık uygulama kategoriler altında gibi sıralanan uygulamalarını görmek **öne çıkan**, **eğitim**, ve **üretkenlik**. Bu değişikliği Şirket portalı sürümleri 10.3.3451.0 görünür ve daha sonra. Uygulamaları şirket Portalı'nda alma hakkında daha fazla bilgi için bkz. [yüklemek ve paylaşmak cihazınızdaki uygulamalar](/intune-user-help/install-apps-cpapp-windows).  
 
 
 ![Ekran görüntüsü, için Windows 10 Şirket portalı, uygulama kategorileri ekran.](./media/1902_CP_app_categories.png)   
@@ -55,7 +55,7 @@ Microsoft Intune yöneticisi olarak, iOS Şirket Portalı uygulamasındaki kulla
 ## <a name="week-of-august-27-2018"></a>27 Ağustos 2018 Haftası  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Şirket portalı Web sitesi için yeni kullanıcı deneyimi güncelleştirmesi <!--2000968 -->  
-Müşterilerden gelen geri bildirim temelinde Şirket Portalı web sitesine yeni özellikler ekledik. Cihazlarınızın mevcut işlevselliğinde ve kullanılabilirliğinde önemli gelişmeler göreceksiniz. Sitenin &ndash;cihaz ayrıntıları, geri bildirim ve destek, cihaza genel bakış gibi&ndash; alanlarında yeni, modern, hızlı yanıt veren bir tasarım bulunuyor. [Intune Şirket Portalı belgeleri](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) de bu değişiklikleri yansıtacak şekilde güncelleştirildi.   
+Müşteri görüşlerine dayalı olarak, yeni özellikler Şirket portalı Web sitesine ekledik. Cihazlarınızın mevcut işlevselliğinde ve kullanılabilirliğinde önemli gelişmeler göreceksiniz. Cihaz ayrıntıları, geri bildirim ve destek ve cihaz genel bakışı, gibi sitesinin alanları yeni, modern, hızlı yanıt veren bir tasarım aldınız. [Intune Şirket Portalı belgeleri](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) de bu değişiklikleri yansıtacak şekilde güncelleştirildi.   
 
 Karşılaşacağınız güncelleştirmeler şunlardır:  
 
@@ -75,13 +75,13 @@ Karşılaşacağınız güncelleştirmeler şunlardır:
 ## <a name="week-of-july-16-2018"></a>16 Temmuz 2018 haftası  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasında daha fazla eşitleme fırsatı   
-Windows için Şirket Portalı uygulaması artık eşitlemeyi doğrudan Windows görev çubuğu ve Başlat menüsünden başlatmanıza olanak tanır. Göreviniz yalnızca cihazları eşitlemek veya şirket kaynaklarına erişim sağlamak olduğunda, bu özellik çok kullanışlıdır. Yeni özelliğe erişmek için görev çubuğunuza veya Başlat menünüze sabitlenmiş Şirket portalı simgesine sağ tıklayın. Menü seçeneklerinde (atlama listesi olarak da bilinir) **Bu cihazı eşitle**’yi seçin. Şirket Portalı, **Ayarlar** sayfasında açılır ve eşitlemenizi başlatır.  
+Windows için Şirket Portalı uygulaması artık eşitlemeyi doğrudan Windows görev çubuğu ve Başlat menüsünden başlatmanıza olanak tanır. Göreviniz yalnızca cihazları eşitlemek veya şirket kaynaklarına erişim sağlamak olduğunda, bu özellik çok kullanışlıdır. Yeni özelliğe erişmek için Şirket portalı simgesi, görev çubuğuna sabitlenmiş sağ tıklayın veya **Başlat** menüsü. Menü seçeneklerinde (atlama listesi olarak da bilinir) **Bu cihazı eşitle**’yi seçin. Şirket Portalı, **Ayarlar** sayfasında açılır ve eşitlemenizi başlatır.  
 
 ![Bir cihazın masaüstünde Windows görev çubuğunun ekran görüntüsü. Şirket Portalı uygulaması program simgesi tıklanmış ve “Görev çubuğuna sabitle”, “Pencereyi kapat” ve “Bu cihazı eşitle” eylemlerini içeren bir menü görüntülenmiştir.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasında yeni göz atma deneyimleri  
 
-Artık Windows için Şirket Portalı uygulamasında uygulamalara göz atarken veya uygulama ararken mevcut **Kutucuklar** görünümü ile yeni eklenen **Ayrıntılar** görünümü arasında geçiş yapabilirsiniz. Yeni görünümde ad, yayımcı, yayım tarihi ve yükleme durumu gibi uygulama ayrıntıları listelenir.  
+Gözatma veya Windows için Şirket portalı uygulamasında uygulamalar aranıyor, var olan arasında geçiş yapabilirsiniz artık **kutucukları** görünümü ve yeni **ayrıntıları** görünümü. Bu yeni görünüm adı, yayımcı, yayın tarihi ve yükleme durumu gibi uygulama ayrıntılarını listeler.  
 
 **Uygulamalar** sayfasının **Yüklemeler** görünümü, tamamlanmış ve devam eden uygulama yüklemeleri hakkındaki ayrıntıları görmenizi sağlar.  
 

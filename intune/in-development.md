@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5612ae0ea6c1495fdf12e85bbed80e54bc3f287f
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: a34cf1ec89165821e853b00be1fd8c83717767e2
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394652"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429683"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>Microsoft Intune - Mart 2019 geliştirme
 
@@ -57,19 +57,40 @@ Kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama yapılandırma 
 Tüm cihazlar sanal grubuna Autopilot profilleri atayabileceksiniz. Bunu yapmak için **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri**'i seçin > bir profil seçin > **Atamalar**'ı seçin > **Atama hedefi** altından **Tüm cihazlar**'ı seçin. Autopilot profilleri hakkında daha fazla bilgi için bkz. [Windows AutoPilot kullanarak Windows cihazları kaydetme](enrollment-autopilot.md).
 
 ###  <a name="block-users-from-scanning-for-windows-updates-------3316758------"></a>Windows güncelleştirmeleri için tarama kullanıcıların engelle    <!-- 3316758    -->
-Kullanıcıların Windows güncelleştirmeleri için tarama engeller, kullanabileceğiniz ayarı bir yeni Windows güncelleştirme halkası ekliyoruz. Bu ayar, portalın içinde kullanılabilir durumda olmaz ancak Intune Graph API'si kullanılarak yapılandırılabilir.
+Windows güncelleştirmeleri için tarama kullanıcıların engellemek için kullanabileceğiniz yeni bir Windows güncelleştirme halkası ayar ekliyoruz. Bu ayar, portalın içinde kullanılabilir durumda olmaz ancak Intune Graph API'si kullanılarak yapılandırılabilir.
 
 ### <a name="windows-update-notifications-----3316782---"></a>Windows güncelleştirme bildirimleri  <!-- 3316782 -->
 Kullanıcıların görmesi Windows güncelleştirme bildirimleri yapılandırmak için bu sayede, Windows güncelleştirme halkası yapılandırmaları için destek ekliyoruz. Bu ayar, portalın içinde kullanılabilir durumda olmaz ancak Intune Graph API'si kullanılarak yapılandırılabilir.
 
 ### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>İOS için Şirket portalı kaydı için 12 cihaz kullanıcılarının değiştirir. <!--3448635 -->  
-İOS için Şirket portalı uygulamasının kayıt ekranları ve Apple iOS 12.2 yayımlanan MDM kayıt değişiklikleri hizalamak için adımları güncelleştiriliyor. Güncelleştirilmiş iş akışı, kullanıcılar artık ister:
+İOS için Şirket portalı uygulaması kayıt ekranları ve Apple iOS 12.2 yayımlanan MDM kayıt değişiklikleri hizalamak için adımları güncelleştiriliyor. Güncelleştirilmiş iş akışı, kullanıcılar artık ister:
 
-- Safari (aracılığıyla Safari) şirket Portalı Web sitesini açın ve Şirket portalı uygulamasında döndürmeden önce yönetim profili yüklemek izin verin. 
+- Safari (aracılığıyla Safari) şirket Portalı Web sitesini açın ve Şirket portalı uygulamasında döndürmeden önce yönetim profili yüklemek izin verin.
 - Yönetim profili cihaza yüklemek üzere ayarlar uygulamasını açın.
-- Şirket portalı uygulamasının kaydı döndürür.  
+- Şirket portalı uygulamasının kaydı döndürür.
 
 Bu değişikliklerin nasıl hazırlama hakkında daha fazla bilgi için bkz. [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/intune/ios-enroll). Apple iOS sürüm 12.2 yayımlandıktan sonra bu belge değişiklikleri Canlı olacaktır. 
+
+### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Kiracı durumu sayfasında ek bağlayıcı desteği <!-- 3617202     -->
+Kiracı durumu sayfası dahil olmak üzere, ek bağlayıcıları için durum bilgilerini görüntüler *Windows Defender Gelişmiş tehdit koruması* (ATP) ve diğer Mobile Threat Defense bağlayıcıları.
+
+### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917---"></a>Intune verme yalnızca bazı Azure Active Directory rolleri için okuma erişimi <!-- 3637917 -->
+Biz Intune yalnızca aşağıdaki Azure AD rollerine okuma erişimi veriyor. Azure AD rolleri ile verilen izinler, Intune rol tabanlı erişim denetimi (RBAC) izinler yerini alır.
+
+Yalnızca Intune denetim verilerine erişim okuyun:
+
+- Uyumluluk Yöneticisi
+- Uyumluluk veri Yöneticisi
+
+Yalnızca tüm Intune verilerine erişim okuyun:
+
+- Güvenlik Yöneticisi
+- Güvenlik işleci
+- Güvenlik okuyucusu
+- Genel okuyucusu
+
+### <a name="easier-access-to-diagnostic-settings------3804627-----"></a>Daha kolay erişim için tanılama ayarları   <!-- 3804627   -->
+Yeni bir seçenek ekliyoruz **denetim günlükleri** dikey penceresinde, doğrudan açmak için kullanabileceğiniz Intune konsolundaki her bir denetim günlüğüne iş yükünün *tanılama ayarları* sayfası.
 
 ### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244----"></a>Oluşturma ve Zebra Android cihazlarda ıntune cihaz yapılandırma profillerini kullanma <!-- 3895244  -->
 Intune, Android Zebra cihazların yapılandırılmasını destekler. Özellikle, sizin için mümkün olacaktır: 
