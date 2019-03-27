@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44f7c5b897dc1aedfe8ffc23c25ea479eceb35e5
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330504"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490735"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarları
 
@@ -158,7 +158,7 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 - **Uygulama içi satın almalar**: Seçin **blok** Mağaza'dan uygulama içi Satınalmalar önlemek için. **Yapılandırılmamış** çalışan bir uygulama içinde depolama satın alımlarına izin verir.
 - **Müstehcen iTunes müziği, podcast'i veya haber içeriği (yalnızca denetimli)**: Seçin **blok** müstehcen iTunes müziği, podcast'i veya haber içeriği önlemek için. **Yapılandırılmamış** cihazın mağazadaki yetişkinlere yönelik olarak derecelendirilmiş içeriğe erişmesine izin verir.
 - **İBook mağazasından 'Erotik'olarak işaretlenmiş içerik indirme**: Seçin **blok** durakları kullanıcıların iBook mağazasından erotik olarak etiketlenmiş medya yüklenmesini önlemek için. **Yapılandırılmamış** kullanıcının "Erotik" kategorisindeki kitapları indirmesine izin verir.
-- **Yönetilmeyen uygulamalarda Kurumsal belgeleri görüntüleme**: **Blok** yönetilmeyen uygulamalarda Kurumsal olmayan belgeleri görüntüleme engeller. **Yapılandırılmamış** Kurumsal belgelerin tüm uygulamalarda görüntülenmesine izin verir. Örneğin, kullanıcıların OneDrive uygulamasından Dropbox'a dosya kaydetmesini gelen engellemek istiyorsunuz. Bu ayarın olarak **blok**. Cihaz İlkesi (örneğin, bir yeniden başlatma sonrasında) aldıktan sonra artık sağlayan kaydediliyor.
+- **Yönetilmeyen uygulamalarda Kurumsal belgeleri görüntüleme**: **Blok** yönetilmeyen uygulamalarda Kurumsal belgeleri görüntüleme engeller. **Yapılandırılmamış** Kurumsal belgelerin tüm uygulamalarda görüntülenmesine izin verir. Örneğin, kullanıcıların OneDrive uygulamasından Dropbox'a dosya kaydetmesini gelen engellemek istiyorsunuz. Bu ayarın olarak **blok**. Cihaz İlkesi (örneğin, bir yeniden başlatma sonrasında) aldıktan sonra artık sağlayan kaydediliyor.
   - **Yönetilen uygulamaların kişiler yazma yönetilmeyen kişiler hesaplarına izin ver**: Ayarlandığında **izin**, kullanıcılar ekleyebilir veya iş ve kurumsal kişiler, cihazda yerleşik kişiler uygulamasına dahil olmak üzere herhangi bir kişinin Outlook kişi bilgilerini eşitlemek. Ayarlandığında **yapılandırılmadı**, kullanıcılar, cihazda yerleşik kişiler uygulamasına Outlook kişilerini eklenemiyor.
   
     Bu ayarı kullanmak için ayarlanmış **yönetilmeyen uygulamalarda Kurumsal belgeleri görüntüleme** ayarını **blok**.
@@ -255,7 +255,7 @@ Bu listelerden uygulamaları eklemek, şunları yapabilirsiniz:
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11.0 ve sonraki
 
-- **Kişisel etkin nokta**: **Blok** cihazın kişisel etkin nokta kullanılmasını engeller. Bu ayar, bazı operatörler ile uyumlu olmayabilir. **Yapılandırılmamış** (varsayılan), bu özelliği sağlar.
+- **Kişisel etkin nokta**: **Blok** kişisel etkin nokta ile her cihaz eşitleme kullanıcıların cihazda devre dışı bırakır. Bu ayar, bazı operatörler ile uyumlu olmayabilir. **Yapılandırılmamış** (varsayılan), kullanıcı tarafından varsayılan olarak kişisel etkin nokta yapılandırmasının tutar.
 - **(Yalnızca denetimli) yapılandırma profilleri kullanarak yalnızca Wi-Fi ağlarına Katıl**: **Gerekli** cihaz, yalnızca Intune yapılandırma profilleri aracılığıyla kurulan Wi-Fi ağlarını kullanmaya zorlar. **Yapılandırılmamış** (varsayılan) diğer Wi-Fi ağlarına kullanmasına izin verir.
 - **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)**: Hücresel ağa bağlıyken yönetilen uygulamalar türleri kullanabilirsiniz verileri tanımlar. Seçenekleriniz şunlardır:
   - **Hücresel veri kullanımını engelleme**: Engellemek için hücresel veri kullanarak **tüm yönetilen uygulamalar** veya **belirli uygulamalar seçebilirsiniz**.

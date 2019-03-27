@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73d96d2246c89e014bd75f9b3b48493d3ac11fb
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: 4b1bf13c404fc8a0f4d7ab4bbeaf061a4cb4261d
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429771"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490718"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -68,6 +68,9 @@ Windows Şirket portalı uygulamasında uygulama simgeleri artık baskın renge 
 
 #### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523-----"></a>Windows toplu kaydı sonra Şirket portalı uygulamasını kullanırken kullanılabilir uygulamaları yüklemesi <!-- 2751523   -->
 Intune kullanarak kayıtlı Windows cihazları [Windows toplu kayıt](windows-bulk-enroll.md) (sağlama paketlerinin) kullanılabilir uygulamaları yüklemesi için Şirket portalı uygulamasını kullanmanız mümkün olacaktır. Şirket portalı uygulaması hakkında daha fazla bilgi için bkz. [el ile Windows 10 Şirket portalı ekleme](store-apps-company-portal-app.md) ve [Microsoft Intune Şirket portalı uygulamasını yapılandırma](company-portal-app.md).
+
+> [!Note]
+> Bu özellik henüz tam olarak tüm müşterilere dağıtılmaz. Toplu kayıtlı cihazlarda şirket portalını kullanması mümkün değilse, bu değişiklik, hesabınıza dağıtılırken beklemeniz gerekebilir.
 
 #### <a name="the-microsoft-teams-app-can-be-selected-as-part-of-the-office-app-suite----3828932----"></a>Microsoft Teams uygulaması Office uygulama paketinin bir parçası seçilebilir <!-- 3828932  -->
 Microsoft Teams uygulaması dahil edilecek veya hariç Office Pro Plus uygulama paketi yüklemesinin bir parçası. Bu özellik için derleme numarası 16.0.11328.20116+ Office Pro Plus çalışır. Kullanıcı, oturumu kapatın ve sonra cihaz yüklemenin tamamlanması için oturum açın. Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**. Birini **Office 365 paketi** uygulama türleri ve ardından **uygulama paketini Yapılandır**.

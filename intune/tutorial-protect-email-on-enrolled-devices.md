@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0631c060833d7d68d96f6e78651da6de9420a5f5
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528216"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490630"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Öğretici: Yönetilen cihazlarda Exchange Online e-postaları koruma
 iOS cihazların yalnızca Intune tarafından yönetildiğinde ve onaylı bir e-posta uygulaması kullandığında Exchange Online’a erişebilmesini sağlamak için koşullu erişim ile cihaz uyumluluk ilkelerini kullanma hakkında bilgi edinin. 
@@ -43,7 +43,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
-[Intune](https://aka.ms/intuneportal)'da Genel Yönetici veya Intune Hizmet Yöneticisi olarak oturum açın. Intune, Azure portalında **Tüm hizmetler** > **Intune** seçilerek bulunur.
+[Intune](https://aka.ms/intuneportal)'da Genel Yönetici veya Intune Hizmet Yöneticisi olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
 ## <a name="create-the-ios-device-compliance-policy"></a>iOS cihaz uyumluluğu ilkesini oluşturma
 Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune cihaz uyumluluk ilkesi ayarlayın. Bu öğreticide iOS cihazlar için bir cihaz uyumluluk ilkesi oluşturacağız. Uyumluluk ilkeleri platformlara özgüdür; değerlendirmek istediğiniz her bir platform için ayrı bir uyumluluk ilkesine ihtiyacınız vardır.
@@ -93,7 +93,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 5.  **Atamalar** altında **Koşullar** > **Cihaz platformları**’nı seçin.
      
     1. **Yapılandır** altında **Evet**’i seçin.
-    2. **Dahil et** sekmesinde **Tüm platformlar (desteklenmeyenler dahil)** ve ardından **Bitti**’yi seçin. 
+    2. Üzerinde **INCLUDE** sekmesinde **herhangi bir CİHAZDAN**ve ardından **Bitti**. 
     3. Tekrar **Bitti**’yi seçin.
    
     ![Office 365 Exchange Online uygulamasını seçin](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

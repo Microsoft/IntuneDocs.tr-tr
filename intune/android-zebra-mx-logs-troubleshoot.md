@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5edc528abf5c3cb58200e2d0511fac3220cfad11
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 36476820805c00cefafcd9f64dd2f08a014762c0
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395255"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490550"
 ---
-# <a name="use-stagenow-logs-to-troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Sorun gidermek için StageNow günlüklerini kullanma ve Microsoft Intune Android Zebra cihazları üzerinde olası sorunlara bakın
+# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Sorun giderme ve Microsoft Intune Android Zebra cihazları üzerinde olası sorunlara bakın
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune kullanabileceğiniz [ **Zebra Mobility Uzantıları (MX)** Zebra Android cihazları yönetmek için](android-zebra-mx-overview.md). Zebra cihazlarını kullanırken ayarlarını yönetmek için StageNow profilleri oluşturmak ve bunları Intune'a yükleyin. Intune, cihazlarda ayarları uygulamak için StageNow uygulama kullanır. StageNow uygulama sorunlarını gidermek için kullanılan cihaz ayrıntılı bir günlük dosyası da oluşturur.
+Microsoft Intune kullanabileceğiniz [Zebra Android cihazları yönetmek için Zebra Mobility Uzantıları (MX)](android-zebra-mx-overview.md). Zebra cihazlarını kullanırken ayarlarını yönetmek için StageNow profilleri oluşturmak ve bunları Intune'a yükleyin. Intune, cihazlarda ayarları uygulamak için StageNow uygulama kullanır. StageNow uygulama sorunlarını gidermek için kullanılan cihaz ayrıntılı bir günlük dosyası da oluşturur.
 
 Bu özellik şu platformlarda geçerlidir:
 
@@ -36,13 +36,28 @@ Bu özellik şu platformlarda geçerlidir:
 
 Örneğin, bir cihaz yapılandırma StageNow bir profil oluşturun. StageNow profili oluştururken, son adım profil testi için bir dosya oluşturur. Cihazdaki StageNow uygulaması ile bu dosyayı tükettiğiniz.
 
-Başka bir örnekte StageNow bir profil oluşturmak ve test. Intune, StageNow profili ekleyin ve ardından, Zebra cihazlara atayabilirsiniz. Atanan profil durumu denetlenirken profili üst düzey bir durumu gösterir. Daha fazla ayrıntı kullanmanız gerekir.
+Başka bir örnekte StageNow bir profil oluşturmak ve test. Intune, StageNow profili ekleyin ve ardından, Zebra cihazlara atayabilirsiniz. Atanan profil durumu denetlenirken profili üst düzey bir durumu gösterir.
 
 Her iki bu durumda, cihazda kaydedilen StageNow profili uygulanır her seferinde hangi StageNow günlük dosyasından daha fazla ayrıntıya ulaşabilirsiniz.
 
-Bu makalede StageNow günlüklerini okumak nasıl gösterir ve Zebra cihazlarla bazı olası sorunları listeler.
+Bazı sorunlar StageNow profili içeriğini ilişkili olmayan ve günlüklerde yansıtılmıyor.
+
+Bu makalede StageNow günlüklerini okumak nasıl gösterir ve günlüklerde yansımayabilir Zebra cihazlarla başka bir olası sorunları listeler.
 
 [Zebra Mobility uzantıları Zebra cihazları yönetme ve kullanma](android-zebra-mx-overview.md) bu özellik hakkında daha fazla bilgi bulunur.
+
+## <a name="get-the-logs"></a>Günlükleri alın
+
+### <a name="use-the-stagenow-app-on-the-device"></a>Cihazda StageNow uygulamasını kullanma
+Test ettiğinizde, doğrudan kullanmak yerine, bilgisayarınızın StageNow kullanan bir profil [Intune'un profili dağıtmasına izin](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow), cihazdaki StageNow uygulama günlükleri testten kaydeder. Günlük dosyası almak için kullanın **daha fazla (...)**  cihazda StageNow uygulamasında seçeneği.
+
+### <a name="get-logs-using-android-debug-bridge"></a>Android hata ayıklama Köprüsü'nü kullanarak günlükleri alın
+Profil, Intune'a zaten dağıtıldıktan sonra günlüklerini almak için bir bilgisayar cihazı bağlayın [Android hata ayıklama Köprüsü'ne (adb)](https://developer.android.com/studio/command-line/adb) (Android web sitesini açar).
+
+Günlükleri kaydedilen cihazda `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
+
+### <a name="get-logs-from-email"></a>Günlükleri e-posta alın
+Profil, Intune'a zaten dağıtıldıktan sonra günlüklerini almak için son kullanıcılar, cihazda bir e-posta uygulamasını kullanarak günlükleri e-posta gönderebilirsiniz. Zebra cihazda Şirket portalı uygulamasını açın ve [günlükleri gönderme](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). Gönderme günlükleri özelliğini kullanarak da oluşturur bir PowerLift olay kimliği, Microsoft Destek'e başvurarak başvurabilir.
 
 ## <a name="read-the-logs"></a>Günlüklerini okuyun
 
@@ -112,9 +127,9 @@ Başka bir örnekte, aşağıdaki giriş vardır:
 </wap-provisioningdoc>
 ```
 
-## <a name="potential-issues-with-zebra-devices"></a>Zebra cihazlarla ilgili olası sorunları
+## <a name="other-potential-issues-with-zebra-devices"></a>Zebra cihazları ile ilgili diğer olası sorunlar
 
-Bu bölümde Zebra cihazların cihaz Yöneticisi ile kullanırken çalışabilir olası sorunlar listelenir.
+Bu bölümde Zebra cihazların cihaz Yöneticisi ile kullanırken görebilirsiniz diğer olası sorunları listelenir. Bu sorunları StageNow günlüklerde bildirilen değildir.
 
 ### <a name="android-system-webview-is-out-of-date"></a>Android System WebView'u güncel değil
 

@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8e5c8996aecb11666fca13c6e032ccad1a1e0a7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0bd6e7f37a2e3b10371dead97e849834b39ba06f
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397976"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490575"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Güvenlik temeli ve Intune profilinde izleyin
 
@@ -50,6 +50,9 @@ Taban çizgisi izlerken, cihazlarınızı Microsoft önerilerine göre güvenlik
     - **Taban çizgisi eşleşmiyor**: Taban çizgisini en az bir ayarda, önerilen ayarları eşleşmiyor.
     - **Yanlış yapılandırılmış**: En az bir ayarı düzgün yapılandırılmamış. Bu durum, çakışma, hata veya bekleyen durumda ayardır anlamına gelir.
     - **Uygulanamaz**: En az bir ayar geçerli değildir ve uygulanmaz.
+    
+> [!NOTE]
+> Bir cihaza birden çok durumda ayar varsa, cihazın aşağıdaki öncelik sırası tarafından sınıflandırılır: **Yanlış yapılandırılmış**, **temel eşleşmiyor**, **uygulanamaz**, **eşleşme temel**.
 
 4. Cihaz durumları birini seçin. Örneğin, **Misconfigured** durumu.
 

@@ -18,18 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ad953049b9d2efd6f7a828ee70b5e1cede4ee68
-ms.sourcegitcommit: d0749cbc68df41893742f5187ac378a5ade824f2
+ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406257"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490596"
 ---
-# <a name="encrypt-your-android-device"></a>Android Cihazınızı şifreleme
+# <a name="encrypting-your-android-device"></a>Android Cihazınızı şifreleme
 
 Cihazınız kaybolur veya çalınırsa, cihaz şifreleme, dosya ve klasörlerinizi yetkisiz erişime karşı korur. Cihaz şifreleme etkinleştirdikten sonra sadece bireyleri doğru parolayı veya PIN'i ile cihazınıza oturum açmak mümkün olacaktır. 
 
 Okul veya iş kaynaklarına erişebilmeniz için önce kuruluşunuzun Android Cihazınızı şifrelemenizi gerektirebilir. Varsayılan olarak, bazı yeni Android cihazları şifrelenmiş kullanıma hazır.  
+
+## <a name="turn-on-encryption"></a>Şifrelemesini açma
 
 Şirket portalı Cihazınızı şifrelemek için gereken bir ileti alırsanız, aşağıdaki adımları tamamlayın. 
 

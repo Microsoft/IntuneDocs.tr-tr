@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffcec5adb5a57309ca2eb47291fa35acf98f6e94
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: aa2734247569245794bce7fe1de68c8b20c6091f
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395259"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490613"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Zebra Mobility Intune uzantılarında Zebra cihazları yönetme ve kullanın
 
@@ -107,6 +107,13 @@ Son adımda StageNow içinde profili oluştururken, seçin **dışarı aktarmak 
 > Profil, cihazlara kuruluşunuza dağıtmadan önce test etmek için önerilir. Bilgisayarınızda ile StageNow profillerini oluştururken son adımda test etmek için **Test** seçenekleri. Ardından, cihazdaki StageNow tarafından oluşturulan dosya StageNow uygulamasıyla kullanır. 
 > 
 > Cihazda StageNow uygulama profili test ettiğinizde oluşturulan günlükleri gösterir. [Intune'da Android çalıştıran Zebra cihazlar kullanım StageNow açtığında](android-zebra-mx-logs-troubleshoot.md) StageNow günlükleri kullanarak hataları anlama hakkında bilgi içeriyor.
+
+> [!NOTE]
+> Uygulamaları başvuru güncelleştirme paketleri veya StageNow profilinizdeki diğer dosyaları güncelleştirme, bu güncelleştirmeleri almak için cihaz istersiniz. Cihaz, güncelleştirmeleri almak için profili uygulandığında StageNow dağıtım sunucuya bağlanmanız gerekir. 
+> 
+> Ya da dahil olmak üzere, bu değişiklikleri almak için Intune'da yerleşik özelliklerini kullanabilirsiniz: 
+> - Uygulama Yönetimi özellikleri için [ekleme](apps-add.md), [dağıtma](apps-deploy.md), güncelleştirme ve [İzleyici](apps-monitor.md) uygulamalar.
+> - Yönetme [sistem ve uygulama güncelleştirmelerini](device-restrictions-android-for-work.md#device-owner-only) Android Kurumsal cihaz üzerinde çalışan
 
 Dosya test ettikten sonra sonraki adıma Intune kullanarak cihazlara profil dağıtmaktır.
 

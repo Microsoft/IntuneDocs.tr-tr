@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 17638838e049e5940b1b59019be6573b7eb09d64
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528284"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490668"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Öğretici: Yönetilmeyen cihazlarda Exchange Online e-postaları koruma
 
@@ -91,8 +91,8 @@ Tüm cihaz platformları kapsayacak şekilde iki koşullu erişim ilkeleri artı
 5.  **Atamalar** altında **Koşullar** > **Cihaz platformları**’nı seçin.
      
     1. **Yapılandır** altında **Evet**’i seçin.
-    2. Üzerinde **INCLUDE** sekmesinde **tüm platformlar (desteklenmeyen dahil olmak üzere)**. 
-    3. **Done** (Bitti) öğesini seçin.
+    2. Üzerinde **INCLUDE** sekmesinde **herhangi bir CİHAZDAN**.
+    1. **Done** (Bitti) öğesini seçin.
    
 6.  Üzerinde **koşullar** bölmesinde **istemci uygulamaları**.
      
@@ -136,7 +136,7 @@ Modern kimlik doğrulaması istemciler için koşullu erişim ilkesi oluşturulu
 5.  **Atamalar** altında **Koşullar** > **Cihaz platformları**’nı seçin.
      
     1. **Yapılandır** altında **Evet**’i seçin.
-    2. **Dahil et** sekmesinde **Tüm platformlar (desteklenmeyenler dahil)** ve ardından **Bitti**’yi seçin. 
+    2. Üzerinde **INCLUDE** sekmesinde **herhangi bir CİHAZDAN**ve ardından **Bitti**. 
     3. Tekrar **Bitti**’yi seçin.
 
 6.  Üzerinde **koşullar** bölmesinde **istemci uygulamaları**.
