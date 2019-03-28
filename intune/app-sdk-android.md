@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991180"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514506"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > Uygulamanızı kullanan emin olun `resourceId` ve `aadId` geçirilen parametreler `acquireToken()` böylece doğru belirteci alınır.
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1278,7 +1278,7 @@ Kimlik ayarlamak için kullanılan tüm yöntemler, sonuç değerlerini `MAMIden
 |--|--|
 | SUCCEEDED | Kimlik değişikliği başarılı oldu. |
 | NOT_ALLOWED  | Kimlik değişikliğine izin verilmiyor. Bu, geçerli iş parçacığı üzerinde farklı bir kimlik ayarlanmışken kullanıcı arabirimi (Bağlam) kimliğini ayarlamak denenirse gerçekleşir. |
-| CANCELLED | Kullanıcı, genellikle PIN veya kimlik doğrulama istemi üzerindeki geri tuşuna basarak, kimlik değişikliğini iptal etmiştir. |
+| CANCELLED | Kullanıcı, kimlik değişikliğini iptal etmiştir. Bu genellikle PIN veya kimlik doğrulama istemi üzerindeki geri tuşuna basarak yapılır. |
 | FAILED | Kimlik değişikliği belirlenemeyen bir nedenden dolayı başarısız oldu.|
 
 Uygulamanın bir kimlik anahtarını görüntüleme veya Kurumsal verileri kullanarak önce başarılı olduğundan emin olmanız gerekir. Şu anda birden çok kimlik etkin uygulamalarda, işlem ve iş parçacığı kimliklerinin geçişleri her zaman başarılı olmaktadır ancak hata koşulları ekleme hakkımızı saklı tutuyoruz. İş parçacığı kimliğiyle çakışırsa veya kullanıcı koşullu başlatma gereksinimlerini iptal ederse (örneğin PIN ekranında geri düğmesine basarsa) kullanıcı arabirimi kimlik geçişi, geçersiz bağımsız değişkenler için başarısız olabilir.
@@ -1633,7 +1633,7 @@ Devralma, `MAMContentProvider` açıkça ve bunun yerine, bu değişikliği yapm
 
 `WIPE_USER_DATA` için uygulama kaydı, SDK’nın varsayılan seçmeli silme davranışının avantajından yararlanamaz. Çoklu kimliği tanıyan uygulamalarda, MAM varsayılan seçmeli silme yalnızca silme işleminde kimliği hedeflenen dosyaları sileceğinden bu kayıp daha önemli olabilir. Çoklu kimliği tanıyan bir uygulama MAM varsayılan seçmeli silme işleminin yapılmasını _**ve**_ silme işleminde kendi eylemlerini gerçekleştirmek isterse, `WIPE_USER_AUXILIARY_DATA` bildirimlerine kayıtlı olması gerekir. Bu bildirim, SDK tarafından MAM varsayılan seçmeli silme gerçekleştirmeden hemen önce gönderilir. Bir uygulamanın hiçbir zaman hem kaydolmalıdır `WIPE_USER_DATA` ve `WIPE_USER_AUXILIARY_DATA`.
 
-Varsayılan seçmeli silme uygulamayı düzgün bir şekilde, etkinlikleri bitirme ve uygulama işlemi sonlandırılıyor sona erecektir. Uygulamanız varsayılan seletive silme geçersiz kılarsa, uygulamanızı el ile kullanıcı bir temizleme gerçekleştikten sonra bellek içi veri erişimini engellemek için kapatmayı göz önünde bulundurun isteyebilirsiniz.
+Varsayılan seçmeli silme uygulamayı düzgün bir şekilde, etkinlikleri bitirme ve uygulama işlemi sonlandırılıyor sona erecektir. Uygulama varsayılan seçmeli silme geçersiz kılarsa, uygulamanızı el ile kullanıcı bir temizleme gerçekleştikten sonra bellek içi veri erişimini engellemek için kapatmayı göz önünde bulundurun isteyebilirsiniz.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android uygulamalarınız için MAM hedefli yapılandırmayı etkinleştirme (isteğe bağlı)
@@ -1785,7 +1785,7 @@ Roboelectric altında uygulamanızı sınamanız gerekiyorsa önerilen geçici �
 
 ## <a name="telemetry"></a>Telemetri
 
-Android için Intune Uygulama SDK’sı, uygulamanızdan veri toplanmasını denetlemez. Şirket Portalı uygulaması, varsayılan olarak telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir. Microsoft İlkesi uyarınca kişisel bilgileri toplamıyoruz.
+Android için Intune Uygulama SDK’sı, uygulamanızdan veri toplanmasını denetlemez. Şirket portalı uygulaması, varsayılan olarak sistem tarafından oluşturulan verileri günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir. Microsoft Policy uyarınca size herhangi bir kişisel veri toplamaz.
 
 > [!NOTE]
 > Son kullanıcılar bu verileri göndermemeyi tercih ederse, Şirket Portalı uygulamasının Ayarlar bölümünde telemetriyi kapatmaları gerekir. Daha fazla bilgi için bkz. [Microsoft kullanım verilerini toplamayı devre dışı bırakma](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

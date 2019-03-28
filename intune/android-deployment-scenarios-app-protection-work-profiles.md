@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 307e3ce1b1973897a08159bdcf91e0117d58bfe8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
+ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392672"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58538763"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Android Kurumsal cihazlarda ıntune uygulama koruma ilkeleri ve çalışma profilleri
 
@@ -51,7 +51,7 @@ Tek tek Android uygulamaları için uygulama birkaç yöntemle etkinleştirilir:
 
     Yardımcı olmak için Intune içeren **uygulama sarmalama aracı** aracı var olan Android uygulamaları (Apk'lar) ve uygulama ilkelerini tanıyan uygulama oluşturur.
 
-    Bu araç hakkında daha fazla bilgi için bkz. [satır iş kolu uygulamalarını uygulama koruma ilkeleri için repare](apps-prepare-mobile-application-management.md).
+    Bu araç hakkında daha fazla bilgi için bkz. [satır iş kolu uygulamalarını uygulama koruma ilkeleri için hazırlama](apps-prepare-mobile-application-management.md).
 
 Uygulamayla etkinleştirilmiş uygulamaların bir listesini görmek için bkz: [zengin bir mobil uygulama koruma ilkeleri ile yönetilen uygulamalar](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 

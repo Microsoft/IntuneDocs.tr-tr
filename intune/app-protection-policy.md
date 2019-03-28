@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fc6cba2d1088ddb367d5c47da04118aa9d6fcab
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: d6d130892200b5592f42bae8ec5423f4b8f6f8f7
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58173990"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514389"
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -51,7 +51,7 @@ Aşağıdaki özelliklere sahip cihazlarda çalıştırılan uygulamalar için u
 > [!IMPORTANT]
 > Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. iOS ve Android için Outlook'a yönelik olarak karma Modern Kimlik Doğrulaması ile etkinleştirilen Intune uygulama koruma ilkeleri oluşturarak Exchange şirket içi posta kutularına erişimi de koruyabilirsiniz. Bu özelliği kullanmadan önce [iOS ve Android için Outlook gereksinimlerini](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) karşıladığınızdan emin olun. Uygulama koruma ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan diğer uygulamalar için desteklenmez.
 
-**Uygulama koruma ilkelerini kullanmanın önemli avantajları**
+**Uygulama koruma ilkelerini kullanmanın önemli avantajları şunlardır:**:
 
 -   Şirket verilerinizi uygulama düzeyinde koruma. Mobil uygulama yönetimi, cihaz yönetimi gerektirmediği için şirket verilerini hem yönetilen hem de yönetilmeyen cihazlarda koruyabilirsiniz. Yönetim, kullanıcı kimliğine odaklandığından cihaz yönetimine gerek kalmaz.
 
@@ -69,8 +69,6 @@ MDM'yi Uygulama koruma ilkeleriyle kullanmanın başka avantajları da vardır v
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Uygulama koruma ilkeleri için desteklenen platformlar
 Intune uygulama koruma ilkeleri platformu desteği, Android ve iOS cihazlar için Office mobil uygulama platformu desteği ile hizalar. Ayrıntılar için [Office Sistem Gereksinimleri](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)'nin **Mobil uygulamalar** bölümüne bakın.
-
-Windows cihazları şu anda desteklenmez. Ancak, benzer bir işlevsellik sunan Windows bilgi Koruması'nı kullanabilirsiniz. Ayrıntılar için bkz. [Windows Bilgi Koruması’nı (WIP) kullanarak kurumsal verilerinizi koruma](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 > [!IMPORTANT]
 > Intune Şirket portalı, cihazda, Android uygulama koruma ilkelerini almak için gereklidir. Daha fazla bilgi için [Intune Şirket portalı erişim uygulama gereksinimleri](end-user-mam-apps-android.md#access-apps).

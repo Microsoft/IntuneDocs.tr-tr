@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 03/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b1bf13c404fc8a0f4d7ab4bbeaf061a4cb4261d
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: a61bd060b5c120a73df427688865e2ee976f8f68
+ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490718"
+ms.locfileid: "58538771"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -77,6 +77,14 @@ Microsoft Teams uygulaması dahil edilecek veya hariç Office Pro Plus uygulama 
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
+#### <a name="automatically-start-an-app-when-running-multiple-apps-in-kiosk-mode-on-windows-10-and-later-devices----2351390---"></a>Windows 10 ve üzeri cihazlar üzerinde birden fazla uygulama bilgi noktası modunda çalışan bir uygulama otomatik olarak Başlat <!-- 2351390 -->
+
+Windows 10 ve üzeri cihazlarda, cihaz bilgi noktası modunda çalıştırmak ve pek çok uygulamaları çalıştırma. Bu güncelleştirmede, var. bir **AutoLaunch** ayarı (**cihaz Yapılandırması** > **profilleri** > **profilioluşturma**  >  **Windows 10 ve üzeri** Platform > **bilgi noktası** profil türü için > **çoklu uygulama bilgi noktası**). Cihaza kullanıcı oturum açtığı zaman uygulama otomatik olarak başlatmak için bu ayarı kullanın.
+
+Bir listesi ve açıklamaları tüm bilgi noktası ayarları görmek için bkz: [Windows 10 ve üzeri cihaz ayarları ıntune'da bilgi noktası olarak çalıştırılacak](kiosk-settings-windows.md).
+
+Uygulama hedefi: Windows 10 ve üzeri
+
 #### <a name="operational-logs-also-show-details-on-non-compliant-devices----4063755----"></a>İşlem günlüklerinde de uyumlu olmayan cihazların ayrıntılarını göster <!-- 4063755  -->
 Yönlendirme Intune özelliklerini Azure İzleyici açtığında, işlem günlüklerinde de yönlendirebilirsiniz. Bu güncelleştirme, işlem günlüklerinde uyumlu olmayan cihazların bilgileri de sağlar. 
 
@@ -87,8 +95,7 @@ Bu güncelleştirme, Intune, Android Zebra cihazların yapılandırılmasını d
 
 - Bir cihaz yapılandırma profili oluşturma ve ayarlar StageNow tarafından oluşturulan Mobility Uzantıları (MX) profilleri kullanarak Zebra Android cihazları için geçerlidir (**cihaz Yapılandırması** > **profilleri**  >  **Profili oluşturma** > **Android** platform için).
 
-Uygulama hedefi:  
-- Android
+Uygulama hedefi: Android
 
 #### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>Daha fazla Intune iş yükleri için Azure İzleyici yolu günlükleri <!-- 3804627 -->
 Intune'da olayları hubs, depolama, Denetim ve operasyonel günlükler yönlendirmek ve analytics Azure İzleyici'de oturum (**Intune** > **izleme** > **tanılama ayarları**). Bu güncelleştirmede, bu günlükleri uyumluluk, yapılandırmaları, istemci uygulamaları ve diğer gibi daha fazla Intune iş yükleri yönlendirebilirsiniz. 
@@ -100,8 +107,7 @@ Bu güncelleştirme, Intune, Android Zebra cihazların yapılandırılmasını d
 
 Bu özellik hakkında daha fazla bilgi için bkz. [kullanın ve Intune mobility uzantılarında Zebra cihazları yönetme](android-zebra-mx-overview.md).
 
-Uygulama hedefi:  
-- Android
+Uygulama hedefi: Android
 
 ### <a name="device-management"></a>Cihaz yönetimi
 

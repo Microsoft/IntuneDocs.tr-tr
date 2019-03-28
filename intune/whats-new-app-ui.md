@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b3d48789773c655ee7c836b211859528d394d56
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: dc7d806624ca75f2570f46b1f3e0606a6878dcb3
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490705"
+ms.locfileid: "58514447"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha fazla bilgi edinin. Biz düzenli olarak ekleyin ve Intune Şirket portalı uygulamasını ve Web sitesi geliştirmek. Bu makalede, bir Intune Yöneticisi olduğunuz veya kişi desteklemek için gereken bilgileri sağlanmaktadır:
@@ -500,7 +500,7 @@ Bunlar, kullanıcı arabirimimizi güncelleştirerek kullanıcı deneyimini geli
 * Yönetim profili cihaza yüklemek üzere ayarlar uygulamasını açın.  
 * Şirket portalı uygulamasının kaydı döndürür.  
 
- Biz kayıt dizisi güncelleştirerek ve ekranda bu deneyim eşleştirmek için metin ister. Bu değişikliklere ilişkin aygıt kullanıcıları nasıl hazırlayabilirsiniz hakkında daha fazla bilgi için bkz. [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune/ios-enroll).   
+ Biz kayıt dizisi güncelleştirerek ve ekranda bu deneyim eşleştirmek için metin ister. Bu değişikliklere ilişkin aygıt kullanıcıları nasıl hazırlayabilirsiniz hakkında daha fazla bilgi için bkz. [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios#enroll-your-ios-device).   
 
 
 ### <a name="see-also"></a>Ayrıca bkz.
