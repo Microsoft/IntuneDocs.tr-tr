@@ -18,15 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a61bd060b5c120a73df427688865e2ee976f8f68
-ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
+ms.openlocfilehash: c19973190c367c37e96e66eae8d507b4d94639e9
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58538771"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618476"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz [yaklaşan değişiklikleri](in-development.md), [önemli bildirimler](#notices)ve hakkında bilgi [eski sürümler](whats-new-archive.md). 
 
@@ -121,10 +120,13 @@ Artık Intune'a kullanabilirsiniz [ayrıntıları görüntüle](encryption-monit
 Microsoft Edge tüm Intune Managed Browser ile son kullanıcı deneyimi geliştirmelerine ek olarak aynı yönetim senaryolarını destekler. İkili kimlik, uygulama koruma İlkesi tümleştirmesi, Azure uygulama proxy'si tümleştirmesi ve yönetilen Sık Kullanılanlar ve giriş sayfası kısayolları Intune ilkeleri ile etkinleştirilen Microsoft Edge Kurumsal özellikler içerir. Daha fazla bilgi için [Microsoft Edge desteği](app-configuration-managed-browser.md#microsoft-edge-support).
 
 #### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Exchange Online/Intune Bağlayıcısı kullanımdan EAS yalnızca cihazlar için destek <!--3105122    -->
-Intune konsolunda artık görüntüleme destekler ve yalnızca EAS cihazları yönetmeye Exchane Online'a Intune Bağlayıcısı ile bağlı. Bunun yerine aşağıdaki seçenekleriniz vardır:
+Intune konsolunda artık görüntüleme destekler ve Intune Bağlayıcısı ile Exchange Online'a yalnızca EAS cihazları yönetmeye bağlı. Bunun yerine aşağıdaki seçenekleriniz vardır:
 - Mobil cihaz Yönetimi (MDM) cihazlarını kaydetme
 - Cihazlarınızı yönetmek için Intune uygulama koruma ilkelerini kullanma
 - Açıklandığı gibi Exchange denetimleri kullanın [istemcileri ve Exchange Online mobil](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
+
+### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>[Name]'ı kullanarak tam bir cihaz için tüm cihazlar sayfasında arama <!--4254930 -->
+Artık, bir tam cihaz adı için arama yapabilirsiniz. Git **Intune** > **cihazları** > **tüm cihazlar** > cihaz adıyla Ara kutusuna çevreleyen {} aramak için bir tam eşleşme. Örneğin, **{Device12345}**.
 
 ### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
 
@@ -198,7 +200,7 @@ Intune'da seçin **istemci uygulamaları** > **uygulamaları** > "Uygulama adı"
 Adlı yeni bir ekran **uygulama kategorileri** Windows 10 için Şirket portalı uygulaması gezinme ve seçim deneyimini iyileştirmek üzere eklendi. Kullanıcılar artık kategoriler altında gibi sıralanan uygulamalarını görmek **öne çıkan**, **eğitim**, ve **üretkenlik**. Bu değişikliği Şirket portalı sürümleri 10.3.3451.0 görünür ve daha sonra. Yeni ekran görüntülemek için bkz: [uygulama kullanıcı Arabirimindeki yenilikler](https://docs.microsoft.com/intune/whats-new-app-ui). Şirket portalı'nda uygulama hakkında daha fazla bilgi için bkz. [yüklemek ve paylaşmak cihazınızdaki uygulamaların](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI uyumluluk uygulaması <!-- 1455231 doc-work-item -->
-Power BI çevrimiçi kullanarak Intune veri ambarı'nızı erişim [Intune uyumluluk (veri ambarı)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) uygulama. Bu Power BI uygulaması ile artık erişmek ve herhangi bir kurulum yapmadan ve web tarayıcınızı çıkmadan önceden oluşturulmuş raporları paylaşabilirsiniz. Ek bilgi için bkz: [değişiklik günlüğü - Power BI uyumluluğu uygulama](reports-changelog.md#power-bi-compliance-app). Ek Intune veri ambarı güncelleştirmeler için bkz [yaklaşan değişiklikleri Intune veri ambarı API'sine](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api-).
+Power BI çevrimiçi kullanarak Intune veri ambarı'nızı erişim [Intune uyumluluk (veri ambarı)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) uygulama. Bu Power BI uygulaması ile artık erişmek ve herhangi bir kurulum yapmadan ve web tarayıcınızı çıkmadan önceden oluşturulmuş raporları paylaşabilirsiniz. Ek bilgi için bkz: [değişiklik günlüğü - Power BI uyumluluğu uygulama](reports-changelog.md#power-bi-compliance-app).
 
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
@@ -303,7 +305,7 @@ Uygulama hedefi:
 ### <a name="device-management"></a>Cihaz yönetimi
 
 #### <a name="rename-an-enrolled-windows-device----1911112----"></a>Kayıtlı Windows cihazı yeniden adlandır <!-- 1911112  -->
-Kayıtlı Windows 10 cihazı artık yeniden adlandırabilirsiniz (RS4 veya üzeri). Yapmak için **Intune** > **cihazları** > **tüm cihazlar** > bir cihaz seçin > **yeniden adlandırma cihaz**.
+Kayıtlı Windows 10 cihazı artık yeniden adlandırabilirsiniz (RS4 veya üzeri). Yapmak için **Intune** > **cihazları** > **tüm cihazlar** > bir cihaz seçin > **yeniden adlandırma cihaz**. Bu özellik, yeniden adlandırma karma Azure AD Windows cihazları şu anda desteklemiyor.
 
 #### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope----3173823----"></a>Kapsam etiketleri, kapsamlı bir yönetici tarafından oluşturulan kaynakları için otomatik olarak ata <!-- 3173823  -->
 Yönetici kaynak oluşturduğunda, bu yeni kaynaklara Yönetim için atanan bir kapsam etiketleri otomatik olarak atanır.
@@ -841,7 +843,7 @@ Artık iOS ve Android’de, ActiveSync protokolüyle Temel kimlik doğrulamasın
 Intune yöneticisi olarak, Intune aracılığıyla yönetilen Office 365 Pro Plus uygulamaları için ek dillerin dağıtımını yapabileceksiniz. Kullanılabilir diller listesi, dil paketinin **Tür** bilgisini içerir (çekirdek, kısmı ve yazım denetleme). Azure portalında **Microsoft Intune** > **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçin. **Uygulama ekle** dikey penceresindeki **Uygulama türü** listesinde **Office 365 Paketi** altından **Windows 10**'u seçin. **Uygulama Paketi Ayarları** dikey penceresinde **Diller**'i seçin.
 
 ####  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Windows iş kolu (LOB) uygulamaları dosya uzantıları <!-- 1884873 -->
-Windows LOB uygulamaları için dosya uzantıları artık *.msi*, *.appx*, *.appxbundle*, *.msix* ve *.msixbundle*’ı içerecek. Microsoft Intune’da, **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Bölme ekle** bölmesi görüntülenir ve **Uygulama türünü** seçmenize olanak tanır. Windows LOB uygulamaları için uygulama türü olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve uygun uzantıya sahip bir yükleme dosyası girin.
+Windows LOB uygulamaları için dosya uzantıları artık içerecektir *.msi*, *.appx*, *.appxbundle*, *.msix*, ve *. msixbundle*. Microsoft Intune’da, **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Bölme ekle** bölmesi görüntülenir ve **Uygulama türünü** seçmenize olanak tanır. Windows LOB uygulamaları için uygulama türü olarak **İş kolu uygulamasını** seçin, **Uygulama paketi dosyasını** seçin ve uygun uzantıya sahip bir yükleme dosyası girin.
 
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Intune kullanarak Windows 10 uygulama dağıtımı <!-- 2309001 -->
 Yöneticiler, iş kolu (LOB) uygulamaları ve İş için Microsoft Store uygulamaları için mevcut destekten yararlanarak kuruluşlarındaki uygulamaların çoğunu Intune ile Windows 10 cihazlarındaki son kullanıcılara dağıtabilir. Yöneticiler, Windows 10 kullanıcıları için MSI, Setup.exe veya MSP gibi çeşitli biçimlerdeki uygulamalar ekleyebilir, yükleyebilir ve kaldırabilir. Intune, indirme ve yükleme öncesinde gereksinim kurallarını değerlendirerek, işlemin durumunu veya yeniden başlatma gereğini Windows 10 Eylem Merkezi aracılığıyla son kullanıcılara bildirebilir. Bu işlevsellik, sonuçta, bu iş yükünü Intune'a ve buluta kaydırmak isteyen kuruluşların engellemesini kaldırmış olur. Bu özellik şu anda genel önizleme aşamasındadır ve önümüzdeki birkaç ay içinde özelliğe önemli yeni olanaklar eklemeyi bekliyoruz. 

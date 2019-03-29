@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 350ce5980cb7575a991cdc45702db95f802b4749
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df289d84cb78f5cb08db6ca66a0db9b7443171f5
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461337"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618464"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
@@ -30,16 +30,14 @@ ms.locfileid: "57461337"
 
 Microsoft, Intune için genel teknik, satış öncesi, faturalandırma ve abonelik desteği sağlar. Hem ücretli hem de deneme abonelikleri için çevrimiçi ve telefonla destek mevcuttur. İngilizce ve Japonca dillerinde çevrimiçi teknik destek kullanılabilir. Telefon ve çevrimiçi faturalandırma desteği, ek dillerde mevcuttur.
 
+BT yöneticisi, kullandığınız **Yardım ve Destek** için Intune Azure portalından bir çevrimiçi destek bileti dosyasına seçeneği. Azure AD rolleri ve bir destek bileti oluşturmak için gereken izinler hakkında daha fazla bilgi için bkz. [Azure Active Directory'de yönetici rolleri](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+
 >[!IMPORTANT]  
 > Intune ile birlikte çalışan üçüncü taraf ürünlerle ilgili (Saaswedo, Cisco veya Lookout gibi) teknik destek için önce ürün sağlayıcısıyla görüşün. Intune destekte bir talep açmadan önce diğer ürünü doğru yapılandırdığınızdan emin olun.
 >
 > Microsoft Intune ile ilgili sorunları giderme hakkında daha fazla bilgi için Intune belgelerindeki [Sorun giderme bölümü](help-desk-operators.md)'ne bakın.
 
-BT yöneticisi, kullandığınız **Yardım ve Destek** için Intune Azure portalından bir çevrimiçi destek bileti dosyasına seçeneği. Bir destek bileti oluşturmak için hesabınıza aşağıdaki [Azure Active Directory'deki yönetici rolleri](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)'nden biri atanmalıdır:
 
-- Intune yöneticisi
-- Genel yönetici
-- Hizmet yöneticisi  
 
 
 ## <a name="help-and-support-experience"></a>Yardım ve destek deneyimi
