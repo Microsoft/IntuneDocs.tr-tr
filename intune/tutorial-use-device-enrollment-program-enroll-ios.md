@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 1/30/2019
+ms.date: 03/29/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88fe825b75e7717740e5a5ca4af4c52e9bb21768
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f9cd0eec492f5131e4015aa64eccb4c081c663ee
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400407"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646480"
 ---
 # <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>Öğretici: Cihaz kayıt programı iOS cihazlarını ıntune'a kaydetmek için kullanın
 Apple cihaz kayıt programı (DEP) hesabından cihazların kaydını basitleştirir. Microsoft Intune ve DEP ile cihazlar, kullanıcı cihazda ilk açtığı anda otomatik olarak kaydedilir. Bu nedenle, her cihazı ayrı ayrı ayarlama yapmak zorunda kalmadan çok sayıda kullanıcı cihazlara gönderebilirsiniz. 
@@ -61,7 +61,7 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
 5. İçin **MDM sunucu adı**, girin *TestMDMServer* seçip **sonraki**. Sunucu adı, mobil cihaz yönetimi (MDM) sunucusunu tanımlarken kullanmanız içindir. Adı veya URL'si Microsoft Intune sunucusunun öyle.
 
-6. **Ekle &lt;ServerName&gt;** iletişim kutusu açılır ve **Ortak Anahtarınızı Yükleyin** ifadesi yazar. **Dosya Seç…** öğesini seçin .pem dosyasını karşıya yükleyin ve ardından **İleri**'yi seçin.
+6. **Ekle &lt;ServerName&gt;** iletişim kutusu açılır ve **Ortak Anahtarınızı Yükleyin** ifadesi yazar. Seçin **dosyası seçin...** .pem dosyasını karşıya yükleyin ve ardından **İleri**'yi seçin.
 
 6. Git **dağıtım programları** > **cihaz kayıt programı** > **cihazları yönetme**.
 7. Altında **cihaz seçme ölçütü**, seçin **seri numarası**. <!--ask Tiffany about this-->

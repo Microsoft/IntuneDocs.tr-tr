@@ -4,7 +4,7 @@ description: Microsoft 365 Kurumsal, Microsoft Intune'u içerir. Intune'un sık 
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231256"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646497"
 ---
 # <a name="what-is-device-management"></a>Cihaz yönetimi nedir? 
 
-Her Yönetici'nin başlıca görevlerinden biri kuruluşun kaynaklarının ve verilerinin güvenliğini sağlamaktır. Bu görev cihaz yönetimidir. Kullanıcıların kişisel dosya açıp paylaştığı, web sitesi ziyaret ettiği ve uygulama ve oyun yüklediği pek çok cihazı vardır. Bu kullanıcılar ayrıca çalışan ve öğrencidirler ve cihazlarını e-posta ve OneNote gibi iş ve okul kaynaklarına erişmek için de kullanmak isterler. *Cihaz yönetimi* kuruluşların kendi kaynak ve verilerini korumasını ve güvenli tutmasını sağlar. 
+Her Yönetici'nin başlıca görevlerinden biri kuruluşun kaynaklarının ve verilerinin güvenliğini sağlamaktır. Bu görev *cihaz Yönetimi*. Kullanıcıların kişisel dosya açıp paylaştığı, web sitesi ziyaret ettiği ve uygulama ve oyun yüklediği pek çok cihazı vardır. Bu kullanıcılar ayrıca çalışan ve öğrencidirler ve cihazlarını e-posta ve OneNote gibi iş ve okul kaynaklarına erişmek için de kullanmak isterler. Cihaz yönetimi, kuruluşların kendi kaynakları ve veri korunmasına olanak sağlar. 
 
 Kuruluşlar, bir cihaz yönetim sağlayıcısı kullanarak şirketin mülkiyeti olan bilgilere yalnızca yetkili kişi ve cihazların eriştiğinden emin olabilir. Aynı şekilde kullanıcılar da cihazlarının kuruluşun güvenlik gereksinimlerini karşıladığını bildikleri için telefonlarından iş verilerine erişirken rahatlayabilirler. Kuruluş olarak şunu soruyor olabilirsiniz: **Kaynaklarımızı korumak için ne kullanmalıyız?**
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d8ddb81a488ccf0cc902ccf792463144d1b0116
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 4f84bb6573d6bdf3aef3088bc58dec5ed067fe3d
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394927"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658566"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
-Bu uygulama türü, yönettiğiniz Windows 10 cihazlara Office 365 uygulamaları atamanızı kolaylaştırır. Lisanslarınız varsa, Microsoft Project Online masaüstü istemcisi ve Microsoft Visio Online Plan 2 için uygulama yükleyebilirsiniz. Intune konsolundaki uygulamalar listesinde tek bir girdi olarak görüntülenmesini istediğiniz uygulamalar.
+Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune’a eklemelisiniz. Kullanılabilir birini [uygulama türleri](apps-add.md#app-types-in-microsoft-intune) Office 365 uygulamalarını Windows 10 cihazları için. Intune'da bu uygulama türünü seçerek atayabilir ve Windows 10 çalıştıran yönettiğiniz cihazlara Office 365 uygulamalarını yükleyin. Ayrıca, atama ve Microsoft Project Online masaüstü istemcisi ve Microsoft Visio Online Plan 2 için uygulama, lisanslarınız varsa yükleyin. Mevcut Office 365 uygulamalarını azure'da Intune konsolundaki uygulamalar listesinde tek bir giriş olarak görüntülenir.
 
 > [!NOTE]
 > Microsoft Intune aracılığıyla dağıtılan Office 365 ProPlus uygulamalarını etkinleştirmek için Office 365 ProPlus lisansları kullanmanız gerekir. Şu anda Office 365 Business sürümü Intune tarafından desteklenmemektedir.
