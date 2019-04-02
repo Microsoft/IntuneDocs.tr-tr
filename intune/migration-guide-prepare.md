@@ -1,6 +1,6 @@
 ---
 title: Intune'u mobil cihaz yönetimi için hazırlama
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune’a geçmeden önce iş ve teknik gereksinimlerinizi değerlendirin.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 984461631911703321859c618fc6302832f8b811
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: e527ed11e451ec0ef2f6d2fde42e0c8fd53408f3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57393487"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799324"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1. Aşama: Microsoft Intune mobil cihaz Yönetimi (MDM) için hazırlama
 

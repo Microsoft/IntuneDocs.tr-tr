@@ -1,6 +1,6 @@
 ---
 title: Desteklenen Microsoft Intune uygulamalarını
-titlesuffix: ''
+titleSuffix: ''
 description: Bu konuda destek ortak ve Microsoft Intune yaygın olarak kullanılan Microsoft uygulamalarının listesi sağlar.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcf9729ddaa63e976a25e0a6c528a3fe2f3d12d7
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 26ee922250fd18b8c48d14a357a931439cc0142c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514393"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799678"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Uygulamaları Microsoft Intune korumalı  
 

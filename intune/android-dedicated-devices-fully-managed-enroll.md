@@ -1,6 +1,6 @@
 ---
 title: Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları ıntune'a kaydetme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları ıntune'a kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59891f042bed9602bd755e9320e0660ffaa6c3bc
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f56e2987fefcc514911f762c5fd82ca1ebc6779c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394394"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798285"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları (Önizleme) kaydetme
 

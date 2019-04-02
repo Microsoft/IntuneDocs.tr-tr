@@ -1,6 +1,6 @@
 ---
 title: Dağıtım iletişim planı geliştirme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu makale, Microsoft Intune dağıtımınız için bir piyasaya çıkma iletişim planı geliştirmenize yardımcı olur.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5732faaff872ca06d54f0103bfe0de8bd906149
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394377"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799539"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Dağıtım iletişim planı geliştirme
 

@@ -1,6 +1,6 @@
 ---
 title: Kurulum için ayrılmış Android kuruluş cihazlarının Intune kaydı
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune'da Android özel Kurumsal cihazları kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2449656c4db4c0a46fe0e10e0cf00a50e460cce1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5e980049797ffc3c727d89c197037c019b94326a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397282"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798043"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Ayrılmış Android kuruluş cihazlarının Intune kaydını ayarlama
 

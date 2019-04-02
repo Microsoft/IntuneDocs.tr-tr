@@ -1,6 +1,6 @@
 ---
 title: IntuneManagementExtension Varlığı
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının IntuneManagementExtension Varlığı kategorisi için başvuru konusu.
 keywords: Intune Veri Ambarı
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1cd36cba007b465d2100000c484ab6ef5eed2dd
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: ea55c92fb3254b6e610bec1074e35d9d9c32cd18
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57990951"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798009"
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune Yönetim Uzantısı için başvuru
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b2dbf31d5813a646fc2ea1a97f7ba273c3c6e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1538693923a1fcefcfee06022ed4c11d746c3be9
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394346"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788504"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişimi kullanmanın yaygın yolları nelerdir?
 
@@ -72,15 +72,15 @@ Cihazlar belirlenen koşullara uymadığında, son kullanıcı cihazı kaydetmey
 
 Intune Exchange bağlayıcısı; Intune'un Exchange Active Sync (EAS) kayıtlarını alıp bunları Intune cihaz kayıtlarına eşleyebilmesi için Exchange sunucusunda bulunan tüm EAS kayıtlarını çeker. Bu kayıtlar, Intune tarafından kaydedilmiş ve tanınan cihazlardır. Bu işlem, e-posta erişimine izin verir veya erişimi engeller.
 
-EAS kaydı yeni bir kayıtsa ve Intune bu kaydı tanımıyorsa, Intune e-posta erişimini engelleyen bir command-let çalıştırır. Bu süreç hakkında daha fazla ayrıntı aşağıdadır:
+EAS kaydı yeni ve Intune bu durumun farkında değil, Intune e-postaya erişimi engelleyen bir cmdlet ("command-let" olarak okunur) verir. Bu süreç hakkında daha fazla ayrıntı aşağıdadır:
 
 ![CA akış grafiği olan şirket içi Exchange](./media/ca-intune-common-ways-1.png)
 
 1.  Kullanıcı, Exchange'de kurum içi 2010 SP1 veya sonraki bir sürümü üzerinde barındırılan kurumsal e-postalara erişmeye çalışır.
 
-2.  Cihaz Intune tarafından yönetilmiyorsa, e-postaya erişimi engellenir. Intune, EAS istemcisine engelleme bildirimi gönderir.
+2.  Cihaz Intune tarafından yönetilmiyorsa, e-posta erişimi engellenir. Intune EAS istemcisine engelleme bildirimi gönderir.
 
-3.  EAS engelleme bildirimini alır, cihazı karantinaya alır ve kullanıcıların cihazlarını kaydedebilmesi için bağlantılar içeren durum düzeltme adımlarının bulunduğu karantina e-postasını gönderir.
+3.  EAS engelleme bildirimini alır, cihazı karantinaya Al ve gönderen e-posta kullanıcıların cihazlarını kaydedebilmesi için bağlantılar içeren durum düzeltme adımlarının bulunduğu karantina taşır.
 
 4.  Cihazın Intune tarafından yönetilmesi için ilk adım olan Çalışma alanına katılma işlemi gerçekleşir.
 
@@ -92,7 +92,7 @@ EAS kaydı yeni bir kayıtsa ve Intune bu kaydı tanımıyorsa, Intune e-posta e
 
 8.  Azure AD Cihaz Kaydı, cihaz durum bilgilerini kaydeder.
 
-9.  Kullanıcı koşullu erişim ilkelerini karşılıyorsa, Intune, Intune Exchange bağlayıcısı aracılığıyla posta kutusunun eşitlenmesine izin veren bir command-let çalıştırır.
+9.  Kullanıcı koşullu erişim ilkelerini karşılıyorsa, Intune ile eşitlemek posta kutusu sağlayan Intune Exchange connector bir cmdlet verir.
 
 10. Exchange sunucusu, kullanıcının e-postaya erişebilmesi için bildirimi EAS istemcisine gönderir.
 
@@ -102,10 +102,10 @@ Intune cihaz durumunu değerlendirir ve yönetir.
 
 #### <a name="whats-the-exchange-server-role"></a>Exchange sunucusunun rolü nedir?
 
-Exchange sunucusu, cihazları karantinaya taşımak için gerekli API'yi ve altyapıyı sağlar.
+Exchange server karantina cihazları taşımak için API'yi ve altyapıyı sağlar.
 
 > [!IMPORTANT]
-> Cihazın uyumluluk açısından değerlendirilebilmesi için, cihazı kullanan kullanıcıya atanmış bir uyumluluk profili olması gerektiğini unutmayın. Kullanıcıya hiçbir uyumluluk ilkesi dağıtılmadıysa, cihaz uyumlu olarak kabul edilir ve hiçbir erişim kısıtlaması uygulanmaz.
+> Cihazı kullanan kullanıcıya cihaz uyumluluk açısından değerlendirilebilmesi için kendisine atanmış bir uyumluluk profili olması gerektiğini aklınızda bulundurun. Kullanıcıya hiçbir uyumluluk ilkesi dağıtılmadıysa, cihaz uyumlu olarak kabul edilir ve hiçbir erişim kısıtlaması uygulanmaz.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Ağ erişim denetimine bağlı koşullu erişim
 
@@ -137,7 +137,7 @@ Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetene
 
 -   **Azure AD etki alanına katılan ve Intune Yönetimi:** Bu senaryo genellikle kendi cihazını Seç (CYOD) ve bu cihazların şirket ağına nadiren burada bağlı Dolaşım halinde dizüstü bilgisayar senaryolarına yöneliktir. Cihaz Azure AD'ye katılır ve Intune'a kaydolur; bu da şirket içi AD'ye ve etki alanı denetleyicisine olan tüm bağımlılıkları ortadan kaldırır. Bu seçenek, kurumsal kaynaklara erişirken bir koşullu erişim ölçütü olarak kullanılabilir.
 
--   **AD etki alanına katılmış ve System Center Configuration Manager:** Güncel dal itibariyle, System Center Configuration Manager etki alanına katılmış bir bilgisayar olmanın yanı sıra belirli uyumluluk ölçütlerini değerlendirebilirsiniz koşullu erişim yetenekleri sağlar:
+-   **AD etki alanına katılmış ve System Center Configuration Manager:** Güncel dal itibariyle, System Center Configuration Manager etki alanına katılmış bir bilgisayar olan yanı sıra belirli uyumluluk ölçütlerini değerlendirebilirsiniz koşullu erişim yetenekleri sağlar:
 
     -   Bilgisayar şifrelenmiş mi?
 

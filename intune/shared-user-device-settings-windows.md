@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28f8a589f20cb63ad4f9873942e9ad511d729b37
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 535f66c68b066454ce9706b1dd1d7a4fce5c265c
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566463"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788496"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Intune kullanarak paylaşılan cihazları yönetmek üzere Windows 10 ve üzeri ayarları
 
@@ -60,6 +60,9 @@ Intune bu özellik hakkında daha fazla bilgi için bkz. [denetim erişimi, hesa
 - **Eğitim ilkeleri**: Seçin **etkin** daha kısıtlayıcı OKULLARDAKİ kullanılan cihazlar için önerilen ayarları kullanmak için. Seçin **devre dışı bırakılmış** için varsayılan ve önerilen eğitim ilkeleri kullanılmaz. **Yapılandırılmamış** (varsayılan), bu Intune tarafından yönetilmeyen ayarı bırakır ve bu ayar bir cihazda denetlemek için herhangi bir ilke anında iletme değil.
 
   Eğitim ilkeleri neler daha fazla bilgi için bkz: [için eğitim müşterileri Windows 10 yapılandırma önerileri](https://docs.microsoft.com/education/windows/configure-windows-for-education).
+
+> [!TIP]
+> [Bir paylaşılan veya konuk PC'nizi](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (başka bir docs web sitesini açar) kavramları ve paylaşılan modda ayarlanabilir grup ilkeleri de dahil olmak üzere, bu bir Windows 10 özellik harika bir kaynaktır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

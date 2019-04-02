@@ -1,6 +1,6 @@
 ---
 title: Intune Veri Ambarı API’si
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Kuruluşunuzun mobil ortamı hakkında öngörü sağlayan raporlar derlemek için Intune Veri Ambarı API’sini kullanabilirsiniz.
 keywords: Intune Veri Ambarı
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce06d1e5fafca484b0d5df080eac7c3f5b8de4f7
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: e730bc0de3023bd6c3954ae2e8344c6f68954f50
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991040"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798331"
 ---
 #  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune veri ambarı API'si
 

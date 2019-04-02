@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune kullanarak macOS cihazlarına Office 365 yükleme
-titlesuffix: ''
+titleSuffix: ''
 description: macOS cihazlarında Office 365 uygulamalarını yüklemek için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd556880cfe12b9b10130f421eb3d1f478ace64a
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 2104d35a179c324bda8455f27e090cadbcaf5e8c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991074"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798297"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune ile macOS cihazlara Office 365 atama
 

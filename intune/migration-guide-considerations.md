@@ -1,6 +1,6 @@
 ---
 title: Geçiş konusunda dikkat edilmesi gereken önemli noktalar
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu makalede, Microsoft Intune’a geçiş sürecini başlatmadan önce geçiş konusunda dikkat edilmesi gereken önemli noktalar sağlanmaktadır.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d9c41a2ad884b2d8404d42f6e8de95e3b33a39d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 15a3130263e19f8d6bef55427bf9a53f8e8b42ef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396990"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799414"
 ---
 # <a name="special-migration-considerations"></a>Geçiş konusunda dikkat edilmesi gereken önemli noktalar
 

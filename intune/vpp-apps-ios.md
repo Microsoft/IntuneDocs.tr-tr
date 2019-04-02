@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune’da iOS toplu satın alınan uygulamaları yönetme
-titlesuffix: ''
+titleSuffix: ''
 description: iOS mağazasından toplu satın aldığınız uygulamaları Microsoft Intune’a eşitlemeyi, ardından bunların kullanımını yönetmeyi ve izlemeyi öğrenin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7d8d57913ac18abdce823a73e9266407897ce5a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 967eb874c45d3bd497da218fe730008bea52a87f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392745"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799366"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programından satın alınan iOS uygulamalarını yönetme
 

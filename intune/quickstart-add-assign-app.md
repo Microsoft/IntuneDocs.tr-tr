@@ -1,6 +1,6 @@
 ---
 title: Hızlı Başlangıç - İstemci uygulaması ekleme ve atama
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu hızlı başlangıçta bir istemci uygulaması eklemek ve atamak için Microsoft Intune’u kullanacaksınız.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9a504aba599ef6db756a130b11d48c798f08fb
-ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
+ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58477154"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798752"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı Başlangıç: Ekleme ve bir istemci uygulama atama
 

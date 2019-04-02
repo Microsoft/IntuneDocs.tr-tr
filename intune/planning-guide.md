@@ -1,6 +1,6 @@
 ---
 title: Intune plan ve tasarım giriş
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu makale tüm Microsoft Intune plan, tasarım ve uygulama bölümlerine giriş niteliğindedir. Hedefleri, kullanım örneği senaryolarını ve gereksinimleri, kullanıma alma ve iletişim planlarını, desteği, sınamaları ve onaylama planlarını belirlemenize yardımcı olacak araçlar.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e59706c1a6bbf3195f402bf9582baab13d3905d9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398928"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799575"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune dağıtım planlama, tasarım ve uygulama kılavuzu
 

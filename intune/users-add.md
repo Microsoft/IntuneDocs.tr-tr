@@ -1,6 +1,6 @@
 ---
 title: Kullanıcı ekleme ve izinler verme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Şirket içindeki kullanıcıları Azure AD ile eşitleyin ve Intune aboneliğiniz için yönetici izinleri verin.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca4b48c2c611273cee385fd94486591e8a97d5a0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a4e25ab5a546f20309853346d0d4ded42fee6e8b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460937"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799410"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Kullanıcı ekleme ve Intune'a yönetici izni verme
 

@@ -1,6 +1,6 @@
 ---
 title: Yönetilen Google Play hesabınıza Intune hesabınıza bağlanın.
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Yönetilen Google Play hesabınıza Intune hesabınıza bağlanmayı öğreneceksiniz.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b461540de40f7a303c6fc68628ff678302e2f5a9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19efd0821deeac0e76c60ee67e6230da554391a0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392048"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798432"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Yönetilen Google Play hesabınıza Intune hesabınıza bağlanın
 

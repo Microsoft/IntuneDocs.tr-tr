@@ -1,6 +1,6 @@
 ---
 title: Uygulama koruma İlkesi günlüklerini gözden geçirin | Microsoft Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu konuda, Intune uygulama koruma İlkesi (uygulama) günlüklerini yapılandırma açıklanmaktadır.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 8546ca0d513fd5b4d935e030d82e956f3030fa4d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394802"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798727"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
@@ -39,7 +39,7 @@ Aşağıdaki tabloda, adları ve açıklamaları günlüğe kaydedilen ayarları
 
 ## <a name="app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarları
 
-| Ad                        | Olası değer(ler)                                                                                                                                                                                                                                                                                           | Azure Intune Mobil Uygulama Yönetimi portalında ayarlama                                                                                                                            |
+| Name                        | Olası değer(ler)                                                                                                                                                                                                                                                                                           | Azure Intune Mobil Uygulama Yönetimi portalında ayarlama                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x dakika                                                                                                                                                                                                                                                                                                   | [Erişim] Erişim gereksinimlerini tekrar kontrol edin - Çevrimdışı Kullanım Süresi<br>Not: Cihaz çevrimdışı ise uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını budur.             |
 | AccessRecheckOnlineTimeout  | _x_ dakika                                                                                                                                                                                                                                                                                                   | [Access] Erişim gereksinimlerini tekrar kontrol edin - Zaman aşımı.<br>Not: Cihaz çevrimiçiyse uygulama başlatıldıktan sonra uygulamaya yönelik erişim gereksinimleri yeniden denetlenmeden önceki zaman aralığını budur. |

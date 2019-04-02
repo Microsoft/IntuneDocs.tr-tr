@@ -1,6 +1,6 @@
 ---
 title: Intune ortama ekleme işlemi
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu makale, ortamınıza bir Microsoft Intune yalnızca bulut çözümünü eklerken göz önünde bulundurmanız gereken tüm ayrıntıları sağlar.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76f1c113562e70bd819b2519a8b78d5824ef715b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9cd9f14d48c86119acf862e2d335fe88fb2a9a1c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460708"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799460"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune planınızı uygulama
 

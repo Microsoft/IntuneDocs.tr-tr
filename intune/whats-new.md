@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure’daki yenilikler | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Intune Azure portalındaki yenilikleri keşfedin
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19973190c367c37e96e66eae8d507b4d94639e9
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: 5fcd355023ceff43cf47c198a84c9c6e2867a08f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618476"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799303"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -46,6 +46,13 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-march-25-2019"></a>25 Mart 2019 haftası
+
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+### <a name="support-for-the-power-bi-compliance-app-from-the-data-warehouse-blade-in-microsoft-intune----4260871---"></a>Power BI uyumluluğu uygulamayı Microsoft Intune veri ambarı dikey penceresinden desteği <!-- 4260871 -->
+Daha önce **indirme Power BI dosyasını** bağlantısını **Intune veri ambarı** dikey indirilen bir Intune veri ambarı rapor (.pbix dosyası). Bu raporu Power BI uyumluluğu uygulama ile değiştirilmiştir. Power BI uyumluluğu uygulama özel yükleme veya Kurulum gerektirmez. Bu doğrudan Power BI çevrimiçi portalda açın ve özellikle, kimlik bilgileri temelinde, Intune kiracınıza verileri görüntüler. Intune'da seçin **Intune veri ambarı ayarlama** Intune dikey penceresinin sağ tarafındaki bağlantı. ' A tıklayarak **Al Power BI uygulaması**. Daha fazla bilgi için [Power BI ile veri ambarına bağlanma](reports-proc-get-a-link-powerbi.md).
+
 ## <a name="week-of-march-18-2019"></a>18 Mart 2019 haftası
 
 ### <a name="app-management"></a>Uygulama yönetimi
@@ -88,13 +95,6 @@ Uygulama hedefi: Windows 10 ve üzeri
 Yönlendirme Intune özelliklerini Azure İzleyici açtığında, işlem günlüklerinde de yönlendirebilirsiniz. Bu güncelleştirme, işlem günlüklerinde uyumlu olmayan cihazların bilgileri de sağlar. 
 
 Bu özellik hakkında daha fazla bilgi için bkz. [depolama, olay hub'ları veya Intune log analytics'te günlük verilerini gönderme](review-logs-using-azure-monitor.md).
-
-#### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244---"></a>Oluşturma ve Zebra Android cihazlarda ıntune cihaz yapılandırma profillerini kullanma <!-- 3895244 -->
-Bu güncelleştirme, Intune, Android Zebra cihazların yapılandırılmasını destekler. Özellikle, şunları yapabilirsiniz: 
-
-- Bir cihaz yapılandırma profili oluşturma ve ayarlar StageNow tarafından oluşturulan Mobility Uzantıları (MX) profilleri kullanarak Zebra Android cihazları için geçerlidir (**cihaz Yapılandırması** > **profilleri**  >  **Profili oluşturma** > **Android** platform için).
-
-Uygulama hedefi: Android
 
 #### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>Daha fazla Intune iş yükleri için Azure İzleyici yolu günlükleri <!-- 3804627 -->
 Intune'da olayları hubs, depolama, Denetim ve operasyonel günlükler yönlendirmek ve analytics Azure İzleyici'de oturum (**Intune** > **izleme** > **tanılama ayarları**). Bu güncelleştirmede, bu günlükleri uyumluluk, yapılandırmaları, istemci uygulamaları ve diğer gibi daha fazla Intune iş yükleri yönlendirebilirsiniz. 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune için uygulama yapılandırma ilkeleri
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune ile bir iOS veya Android cihazında uygulama yapılandırma ilkelerini nasıl kullanacağınızı öğrenin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e66f85afd476989dc93e8fccce9d0253745a255
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398639"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797967"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 

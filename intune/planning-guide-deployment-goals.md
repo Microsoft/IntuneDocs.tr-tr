@@ -1,6 +1,6 @@
 ---
 title: Intune dağıtım hedeflerini, amaçlarını ve zorluklarını belirleme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu makale, bir Microsoft Intune yalnızca bulut uygulaması için dağıtım hedeflerini, amaçlarını ve zorluklarını belirlemeye yardımcı olur.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9d7f04c9d625e6c263f4feb0eca7c8b6cadaf47
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393288"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798768"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Intune dağıtım hedeflerini, amaçlarını ve zorluklarını belirleme
 

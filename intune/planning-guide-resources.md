@@ -1,6 +1,6 @@
 ---
 title: Intune dağıtımını planlamak ve tasarlamak için şablonlar ve kaynaklar
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune dağıtımını planlama ve uygulama süreci sırasında yardımcı olabilecek planlama şablonları ve ek Intune bilgileri için bağlantılar.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 606767b125ed6d975a895ad77c2e9c07350843cb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 14c1dcef4479cbbe6606cf4bb107514a21d7ab21
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388072"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798477"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune dağıtımınızı planlamak için ek kaynaklar
 

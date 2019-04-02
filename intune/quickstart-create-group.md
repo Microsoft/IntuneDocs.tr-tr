@@ -1,6 +1,6 @@
 ---
 title: Hızlı Başlangıç - Kullanıcıları yönetmek için grup oluşturma
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu hızlı başlangıçta mevcut kullanıcılara dayanan bir grup oluşturmak için Microsoft Intune kullanacaksınız.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20ca3a7924eb4c0366d7aa9a18f137ab263c2fbc
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 816a0479f19b5bb65376825f46687bf4b8b07045
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490478"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798365"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Hızlı Başlangıç: Kullanıcıları yönetmek için bir grup oluşturun
 

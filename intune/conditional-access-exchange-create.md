@@ -1,6 +1,6 @@
 ---
 title: Exchange koşullu erişim ilkesi oluşturma | Microsoft Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune'da Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişimi yapılandırın.
 keywords: ''
 author: brenduns
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c4a20e672bf71ecae2ee17fe1d2af8eea0b590
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ca9531bfd16c68c23af05e3db3aa084b26adb0dc
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397585"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798523"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
 

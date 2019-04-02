@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı
-titlesuffix: ''
+titleSuffix: ''
 description: Windows 10 uygulama dağıtım senaryolarında Microsoft Intune kullanılabilir hakkında bilgi edinin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230d8fd0adf8bf904af3bd1301ad6144234f8da0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f9c263b9b5fbb7916fb1ae9b9835e2647593f3b1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397959"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798202"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı 
 

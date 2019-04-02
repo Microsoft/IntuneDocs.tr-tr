@@ -1,6 +1,6 @@
 ---
 title: Mobil uygulama yönetimi sorunlarını giderme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu konu başlığında koşullu erişim dağıtımları için bazı sorun giderme ipuçları açıklanır.
 keywords: ''
 author: Erikre
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4db9845befe7440e615e8deb874971a5b80efdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dc7b7f56060ff90cc7b9df6cb8700c163d78e8f5
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461184"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798636"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobil uygulama yönetimi sorunlarını giderme
 

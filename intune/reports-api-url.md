@@ -1,6 +1,6 @@
 ---
 title: Intune Veri Ambarı API uç noktası
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu başvuru konusunda Microsoft Intune veri ambarı API URL'si yapısını açıklar. Filtre örnekler verilmiştir.
 keywords: Intune Veri Ambarı
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396497"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798515"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
 
@@ -53,7 +53,7 @@ Bu URL aşağıdaki öğeleri içerir:
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | Temel URL, Azure portalında Veri Ambarı API’si dikey penceresinde bulunabilir. |
 | varlık-koleksiyonu | tarihler | OData varlık koleksiyonu adı. Veri modelindeki koleksiyonlar ve varlıklar hakkında daha fazla bilgi için bkz. [Veri Modeli](reports-ref-data-model.md). |
-| api-sürümü | beta | Sürüm, erişilecek API’nin sürümüdür. Daha fazla bilgi için bkz. [Sürüm](#API-version-information). |
+| api-sürümü | beta | Sürüm, erişilecek API’nin sürümüdür. Daha fazla bilgi için bkz. [Sürüm](reports-api-url.md#api-version-information). |
 | maxhistorydays | 7 | (İsteğe bağlı) Geçmişin alınacağı en fazla gün sayısı. Bu parametre herhangi bir koleksiyon için sağlanabilir ancak yalnızca anahtar özelliğinin bir parçası olarak `dateKey` içeren koleksiyonlarda geçerli olacaktır. Daha fazla bilgi için [DateKey Aralık Filtreleri](reports-api-url.md#datekey-range-filters)’ne bakın. |
 
 ## <a name="api-version-information"></a>API sürüm bilgisi

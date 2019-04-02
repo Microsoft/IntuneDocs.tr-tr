@@ -1,6 +1,6 @@
 ---
 title: macOS cihazların kaydını ayarlama
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune’da macOS cihazların kaydının nasıl ayarlandığını öğrenin.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25891aeffb2d5e826322cc455dff1b8bed70e690
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460878"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799406"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune’da macOS cihazların kaydını ayarlama
 

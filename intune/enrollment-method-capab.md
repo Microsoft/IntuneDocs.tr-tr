@@ -1,6 +1,6 @@
 ---
 title: Windows cihazları için Intune kayıt yöntemi özellikleri
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Windows cihazlar için her bir kayıt yöntemi için özellikleri.
 keywords: ''
 author: ErikjeMS
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6f3db2034bdc71e656f468913394baf455d47e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd1dbb3280fbbb93423796b18f6dd85a50a41f11
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528250"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798764"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Windows cihazları için Intune kayıt yöntemi özellikleri
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]

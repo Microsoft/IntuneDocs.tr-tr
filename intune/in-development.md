@@ -1,6 +1,6 @@
 ---
 title: Geliştirme - Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Geliştirme Intune özellikleri
 keywords: ''
 author: ErikjeMS
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: 8807cb090cfb662f2ab273d29baf2715dfcd6426
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675451"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799137"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>Microsoft Intune - Nisan 2019 geliştirme
 
 İçinde hazırlık ve planlama, bu sayfa yardımcı olmak için Intune kullanıcı Arabirimi güncelleştirmeleri ve özelliklerinin listesi geliştirme aşamasındadır ancak henüz serbest. Buna ek olarak:
 
-- Bir değişiklik önce harekete gerekecektir tahmin, biz firmalar Office ileti Merkezi'nde post yayınlayacaksınız.
+- Bir değişiklik önce harekete gerekecektir tahmin, biz tamamlayıcı bir Office ileti Merkezi'nde gönderi yayınlayacaksınız.
 - Ne zaman bir özellik, üretimde ya da önizleme olarak başlatılır veya genel kullanıma sunulan özellik açıklaması bu sayfayı kapatmak ve üzerine taşınır [yenilikler](whats-new.md).
 - Bu sayfada ve [yenilikler](whats-new.md) düzenli olarak güncelleştirilir. Ek güncelleştirmeleri daha sonra denetleyin.
 - Başvurmak [M365 yol haritası](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) stratejik teslim edilebilirleri ve zaman çizelgeleri için.

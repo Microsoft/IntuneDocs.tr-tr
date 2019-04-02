@@ -1,6 +1,6 @@
 ---
 title: İş İçin Microsoft Mağazası’ndan uygulamaları yönetme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: İş İçin Microsoft Store’daki uygulamaları Intune’a eşitlemeyi, sonra da bu uygulamaları atamayı ve izlemeyi öğrenin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cde2f123c40b9a823270bc89b78c8c01eff75585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 697d4f0b7bd2b5739847968dccdca2517a5a53fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389650"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798436"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Microsoft Intune ile İş İçin Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetme
 

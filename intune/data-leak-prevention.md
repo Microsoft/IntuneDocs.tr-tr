@@ -1,6 +1,6 @@
 ---
 title: Yönetilmeyen cihazlarda veri sızıntılarını önleme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune kullanarak cihazlardaki kurumsal verilere erişim izni verin ve verileri sızıntılara karşı koruyun.
 keywords: veri koruma cihazı sızıntılara karşı korur O365 Office 365
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4bbb6a09d9f81c5e5309e3ef04a63c8165a1f23
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 324187db4951ffb6b80e9cc488a2a0fb59f40a9a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461201"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799381"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune kullanarak yönetilmeyen cihazlarda veri sızıntılarını önleme
 

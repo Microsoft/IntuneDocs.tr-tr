@@ -1,6 +1,6 @@
 ---
 title: Hızlı Başlangıç - Microsoft Intune'u ücretsiz deneyin
-titlesuffix: ''
+titleSuffix: ''
 description: Bu hızlı başlangıçta ücretsiz bir deneme aboneliği oluşturacak, desteklenen yapılandırmaları ve ağ gereksinimlerini anlayacak ve isterseniz kendi etki alanı adınızı yapılandıracaksınız.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5cc7593818027f8b1c8c3600143e9909662cd922
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756862"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799650"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune ücretsiz olarak deneyin 
 

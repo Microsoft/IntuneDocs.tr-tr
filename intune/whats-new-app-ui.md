@@ -1,6 +1,6 @@
 ---
 title: Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Son kullanıcı cihazlarında Microsoft Intune ile çalışan uygulamalar için kullanıcı arabiriminde yapılan değişiklikleri keşfedin.
 keywords: ''
 author: lenewsad
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc7d806624ca75f2570f46b1f3e0606a6878dcb3
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: e0dd51e92cfc88c8d1f9ee78e414c899f216f8a3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514447"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799514"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha fazla bilgi edinin. Biz düzenli olarak ekleyin ve Intune Şirket portalı uygulamasını ve Web sitesi geliştirmek. Bu makalede, bir Intune Yöneticisi olduğunuz veya kişi desteklemek için gereken bilgileri sağlanmaktadır:

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune’a Win32 uygulamaları ekleme
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune ile Win32 uygulamaları eklemeyi, teslim etmeyi ve yönetmeyi öğrenin. Bu konu, Intune Win32 uygulaması teslim ve yönetim özelliklerine yönelik genel bir bakışın yanı sıra, Win32 uygulaması sorun giderme bilgilerini sağlar.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51a2f862a53476a825bfb1a61a6f115c883eba18
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: d93ad2e838f4980c206c098d8e36e51e138969d1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429725"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799050"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 

@@ -1,6 +1,6 @@
 ---
 title: Intune Veri Ambarı Koleksiyonları
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune Veri Ambarı koleksiyonları, Veri Ambarı API’siyle ilgili ayrıntılar sağlar.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 982a21214831f14f6f13bf8d484d49769f031fba
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358326"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799727"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
@@ -599,7 +599,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 **UserDeviceAssociation** varlığı kuruluşunuzdaki kullanıcı cihaz ilişkilerini içerir.
 
-|        Ad        |                                             Açıklama                                            |     Örnek     |
+|        Name        |                                             Açıklama                                            |     Örnek     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | Kullanıcının veri ambarındaki benzersiz tanımlayıcısı.   (Yedek anahtar).                            | 123             |
 | DeviceKey          | Cihazın veri ambarındaki benzersiz tanımlayıcısı.                                             | 123             |

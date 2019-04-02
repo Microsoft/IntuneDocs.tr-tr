@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune Android kurumsal iş profili cihazları yönetme
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune Android kişisel cihazlarını iş için kullandıklarında ek yönetim özellikleri ve gizlilik sağlamak için Android kurumsal iş profili cihazları yönetir.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f7726b99a870a404b5fd1ca95dad9d9a48ea3a7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 305ed5c18ad0e8beeaa47bc644266d4cb19f80e6
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396363"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799336"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune ile Android iş profili cihazlarını yönetme
 

@@ -1,6 +1,6 @@
 ---
 title: Intune Veri Ambarı Değişiklik günlüğü
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu konu, Microsoft Intune veri ambarı API'si için değişikliklerin bir listesini sağlar.
 keywords: Intune Veri Ambarı
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 89bbdd5ef14de6b2c083df753d92094395b7df2c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358267"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798060"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune Veri Ambarı API’si için değişiklik günlüğü
 

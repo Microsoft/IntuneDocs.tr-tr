@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune’a bir Android iş kolu uygulaması ekleme
-titlesuffix: ''
+titleSuffix: ''
 description: Bir Android satır iş kolu (LOB) uygulaması Microsoft Intune ekleme hakkında bilgi edinin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b79fda90a891e6601ccad611f55ad5865fdf2df6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bec914c801819c631c4a9d5a63f9ece7200a9bc4
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395663"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799344"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir Android iş kolu uygulaması ekleme
 

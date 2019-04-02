@@ -1,6 +1,6 @@
 ---
 title: Geçiş iletişimini planlama
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu makalede, Microsoft Intune’a geçerken kullanmanız için bir geçiş iletişim planı ve stratejisi sağlanmaktadır.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 33f3974ab4cb43a554553c09fb786164579b73a7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 08fcda324d2c3c397deb99924d731ed4d4512651
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57387949"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799612"
 ---
 # <a name="plan-communications"></a>İletişimi planlama
 

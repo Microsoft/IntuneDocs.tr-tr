@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50be92847922458a7145e02bcc2125ddadc6976f
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991109"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798252"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -91,7 +91,7 @@ Beyaz veya açık renk arka planlarda en iyi görünecek logoyu seçin.
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
-|**Marka imajınızı karşıya yükleyin**| Bu seçenek, Şirket Portalı uygulamasındaki kullanıcı profili sayfasında bir arka plan görüntüsü kullanmanıza imkan verir.<p>*Not*: Görüntü, farklı platformları için farklı görüntülenebilir.<p><ul><li>Önerilen görüntü genişliği: 640 piksel 1125px küçüktür, ancak hiçbir küçüktür</li><li>En yüksek görüntü boyutu: 1.3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
+|**Marka imajınızı karşıya yükleyin**| Bu seçenek, bir marka resmi görüntülemenizi sağlar. İOS Şirket portalı, kullanıcı profili sayfasında arka plan görüntüsü olarak gösterir.<p><ul><li>Önerilen görüntü genişliği: 640 piksel 1125px küçüktür, ancak hiçbir küçüktür</li><li>En yüksek görüntü boyutu: 1.3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
 
 Doğru bir marka imajı sayesinde şirket markanızı güçlü bir şekilde tanıtarak Şirket Portalı’nda kullanıcı güvenini artırabilirsiniz. Aşağıda, Şirket Portalı için imaj elde etme, seçme ve iyileştirme hakkında bazı ipuçları bulabilirsiniz. 
 

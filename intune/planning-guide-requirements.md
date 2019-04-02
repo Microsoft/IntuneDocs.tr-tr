@@ -1,6 +1,6 @@
 ---
 title: Kullanım örneği senaryosu gereksinimlerini belirleme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu makale bir Microsoft Intune yalnızca bulut uygulaması için Intune kullanım örneğini ve alt kullanım örneği senaryosu gereksinimlerini belirlemenize yardımcı olur.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8cecd08b3ecba25471f717764c6de847416617b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6cb081e16767abde4707e7a6c8719b773474fb95
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389066"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799583"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Kullanım örneği senaryosu gereksinimlerini belirleme
 

@@ -1,6 +1,6 @@
 ---
 title: Intune App SDK’sının yararları
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune Uygulama SDK'sı hem iOS hem de Android platformu için kullanılabilir ve Microsoft Intune ile mobil uygulama yönetim özelliklerini etkinleştirir.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c200c8a67935ff08f7e8cfef1d4a0022afd1432c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566497"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798348"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK'ya genel bakış
 Intune uygulama SDK'sı, iOS ve Android için Intune destek olanak tanır [uygulama koruma ilkeleri](app-protection-policy.md). Uygulamanızı uygulama koruma ilkeleri uygulanmış olduğunda, Intune tarafından yönetilmesi gerektiğini ve yönetilen bir uygulama olarak Intune tarafından tanınan. SDK'sı, uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirmek çalışır. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için uygulama katılımınızı gerektiren özelliklere desteklemek için uygulamanızın davranışını özelleştirmek için SDK'sının API'lerini kullanabilir.

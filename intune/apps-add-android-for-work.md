@@ -1,6 +1,6 @@
 ---
 title: Kurumsal Android cihazlar için yönetilen Google Play uygulamaları atama
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Uygulama eşitlemeyi ve kurumsal Android cihazlar için yönetilen Google Play Mağazası'ndan atamayı öğrenin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1000f71ba6e9da979b9a86a72342908baf00a389
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2b99f9e394fdced985b5b1309640b09b8e7fa5e6
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389217"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799594"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Yönetilen Google Play uygulamaları Intune ile Android kuruluş cihazlarının ekleyin
 

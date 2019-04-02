@@ -1,6 +1,6 @@
 ---
 title: Özel bir etki alanı adı yapılandırma
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune aboneliğiniz için özel etki alanı adı ekleme
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1759b04d2319b9a9d7fd911a885e297c4f23f6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460827"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798186"
 ---
 # <a name="configure-a-custom-domain-name"></a>Özel bir etki alanı adı yapılandırma
 

@@ -1,6 +1,6 @@
 ---
 title: Intune’da iOS cihazları kaydetme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune’da iOS cihazlarının kaydını ayarlayın.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20fde1e64d4b36f66469f1013e327564f5bc8501
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: eef5524cff3ce29e802ca8078ba2b5e104e89775
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390314"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799671"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune’da iOS cihazları kaydetme
 

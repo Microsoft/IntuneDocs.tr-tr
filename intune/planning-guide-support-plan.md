@@ -1,6 +1,6 @@
 ---
 title: Bir destek planı geliştirme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Bu makale, Microsoft Intune dağıtımı için bir Intune destek planı geliştirmenize yardımcı olur.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f73e4414fc525028755610c80f6aff2195bc13a8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 46b01a4b45e76ff290038bef57ee6a2def8e82b8
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390535"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798776"
 ---
 # <a name="develop-a-support-plan"></a>Bir destek planı geliştirme
 

@@ -1,6 +1,6 @@
 ---
 title: Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: iOS uygulaması çalıştırıldığında uygulamaya yapılandırma verilerini sağlamak için uygulama yapılandırma ilkelerini kullanmayı öğrenin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac095eadbca5702ce3ff73e9e5ce1c77fac71eb3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9273d547d72fd6cf10d2addc5efff2eba8e18205
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400101"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799464"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune kullanarak cihazlara Office 365 uygulamalarını yükleme
-titlesuffix: ''
+titleSuffix: ''
 description: Windows 10 cihazlarda Office 365 uygulamalarını yüklemeyi kolaylaştırmak için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f84bb6573d6bdf3aef3088bc58dec5ed067fe3d
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: 1ecdb96bc908f4220d2eb62c52df3b7750e0cba3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658566"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798248"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 

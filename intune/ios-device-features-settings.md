@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566633"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799274"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS cihaz ayarlarını Intune'da genel iOS özellikleri kullanma
 
@@ -96,6 +96,9 @@ Kullanım **Dock** en fazla altı öğe veya klasör, iOS ekranındaki dock kıs
 
       3. Seçin **ekleme**. En fazla ekleyebilirsiniz **20** sayfaları için cihaz dock.
       4. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+> [!NOTE]
+> Yerleştirme ayarlarla simgeler eklediğinizde, giriş ekranı ve sayfalar simgeleri kilitlidir ve taşınamaz. Bu tasarım ile iOS ve Apple'nın MDM ilkeleri tarafından olabilir.
 
 #### <a name="example"></a>Örnek
 

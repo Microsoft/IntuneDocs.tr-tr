@@ -1,6 +1,6 @@
 ---
 title: Uygulama bilgilerini ve atamalarını izleme
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Kullanıcılara veya cihazlara uygulama atadıktan sonra, uygulamanın durumunu izlemenize yardımcı olması için bu bilgileri kullanın.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5471acaa6f2baa8d2de3a169da87d3799239887
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 2b3cba546be350f47c1a57f47b8eddf85323dc74
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514489"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797964"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 

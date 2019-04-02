@@ -1,6 +1,6 @@
 ---
 title: Power BI ile Veri Ambarına bağlanma
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune kiracınız için etkileşimli ve dinamik olarak oluşturulmuş raporlar yüklemenizi mümkün kılan bir dosyayı Microsoft Power BI ile kullanmak üzere indirebilirsiniz.
 keywords: Intune Veri Ambarı
 author: Erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b93bb9911fa93998e443a797d085a568280c278
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: 3bbf9848f8a66f3773772187de2486ffcf3e1cd7
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618510"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798165"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI ile Veri Ambarına bağlanma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune kiracınız için etkileşimli ve dinamik olarak oluşturulmuş raporlar yüklemenizi mümkün kılan bir dosyayı Microsoft Power BI ile kullanmak üzere indirebilirsiniz. Veri Ambarı Power BI dosyası (pbix) kiracınız için bağlantı ayarlarını ve aşağıdaki rapor ve grafik örneklerini barındırır:  
+Power BI uyumluluğu uygulama, Intune kiracınız için etkileşimli ve dinamik olarak oluşturulmuş raporlar yüklemenizi için kullanabilirsiniz. Ayrıca, Kiracı verilerinizi Power bı'da OData bağlantısını kullanarak yükleyebilirsiniz. Aşağıdaki örnek raporları ve ilgili grafikler görüntüleyebilmek Intune kiracınız için bağlantı ayarlarını sağlar:  
 
   -  Cihazlar
   -  Kayıt
@@ -47,21 +47,29 @@ Aşağıdaki adımlar, Power BI dosyasını nasıl indireceğinizi ve OData bağ
 
 ## <a name="install-power-bi"></a>Power BI yükleme
 
-En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebilirsiniz: [Powerbı.microsoft.com](https://powerbi.microsoft.com/desktop)
+En son sürümünü yükleyin [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi). Daha fazla bilgi için [Power BI Desktop](https://powerbi.microsoft.com/desktop)
 
-## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Power BI dosyasını (pbix) kullanarak verileri ve raporları yükleme
+## <a name="load-the-data-and-reports-using-the-power-bi-compliance-app"></a>Power BI uyumluluğu uygulamasını kullanarak rapor ve veri yükleme
 
-Power BI dosyası (pbix), kiracınızın bağlantısı bilgisini ve Veri Ambarı veri modeline bağlı olarak önceden oluşturulmuş bir raporlar kümesini barındırır. Dosyayı Power BI Desktop’ta açın ve Azure AD’de oturum açın. Rapor, Intune kiracınızdan verileri yükler.
+Power BI uyumluluğu uygulama kiracınız ve bir dizi önceden oluşturulmuş raporları veri ambarı veri modelini temel alan bilgiler içerir. Raporu Power BI Desktop'ta açın ve Azure AD ile oturum açın. Rapor, Intune kiracınızdan verileri yükler.
 
 > [!Important]  
-> Her Power BI dosyası (pbix) kiracı konumuna bağlı olarak farklı olabilir. Birden çok Intune kiracısı yönetiyorsanız, bu kiracı için oturum açık durumdayken Azure portalından indirilen dosyayı kullandığınızdan emin olun.  
+> Power BI raporlarınızı Kiracı konumuna bağlı olarak farklı olabilir. Birden çok Intune kiracısı yönetiyorsanız, bu Kiracı için oturum açmış durumdayken Azure portalından rapor kullanmayı unutmayın.  
 
 1.  Azure portalında oturum açın ve **İzleme + Yönetim** > **Intune**’u seçin. Ayrıca **Intune** için kaynak araması da yapabilirsiniz.  
 2.  Açık **Intune veri ambarı ayarlama** dikey penceresi.
-3.  **Power BI dosyasını indir**’e tıklayın. (pbix) uzantılı dosya, belirttiğiniz konuma indirme yapar.
-4.  Dosyayı Power BI ile açın. *Intune Veri Ambarı Raporları* yüklenir ancak kiracı verilerinizi alması birkaç saniye sürebilir.
-5.  Kiracı verilerinizi yüklemek için **Yenile**’ye tıklayın ve raporları gözden geçirin.
-6.  Power BI’da Azure Active Directory kimlik bilgilerinizle kimlik doğrulamadıysanız, Power BI sizden kimlik bilgilerinizi sağlamanızı ister. Kimlik bilgilerinizi seçerken kimlik doğrulama yöntemi olarak **Kuruluş hesabı**’nı seçin.
+3.  Seçin **Al Power BI uygulaması** erişmek ve tarayıcıdaki kiracınız için önceden oluşturulmuş Power BI raporlarını paylaşma.
+
+> [!NOTE]
+> Power BI’da Azure Active Directory kimlik bilgilerinizle kimlik doğrulamadıysanız, Power BI sizden kimlik bilgilerinizi sağlamanızı ister. Kimlik bilgilerinizi seçerken kimlik doğrulama yöntemi olarak **Kuruluş hesabı**’nı seçin.
+
+### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune uyumluluk uygulamaya ek filtreler ekleyin
+
+Power BI raporlarınız için ek filtreler kullanmak istiyorsanız, aşağıdaki adımları kullanın:
+
+1. Açık [Power BI uyumluluğu](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) web tarayıcınızda uygulama.
+2. Tıklayın **uyumlu olmayan cihazları** seçip **uyumlu** içinde **complianceStatus** filtre. 
+3. Tıklayarak **bilinmeyen cihazlar** seçip **henüz** içinde **complianceStatus** filtre. 
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Power BI’da OData bağlantısını kullanarak verileri yükleme
 
@@ -84,7 +92,7 @@ Azure AD’de istemci kimliği doğrulandığı zaman OData URL’si, Veri Ambar
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Geçen hafta içerisinde günde kaç cihazın kaydedildiği gibi ortamınızla ilgili sorulara yanıt bulabilirsiniz. Azure’da bulunan dikey pencereden alınan Intune Veri Ambarı Power BI dosyasını kullanarak Intune kiracını ve istemci popülasyonunuz hakkında öngörü edinebilirsiniz. Ancak Intune, verileri genişletmek veya yeniden kullanmak için ilave birkaç yol daha sunar. Power BI ve Intune Veri Ambarı API’si ile yapabileceğiniz daha pek çok şey vardır, örneğin:
+Geçen hafta içerisinde günde kaç cihazın kaydedildiği gibi ortamınızla ilgili sorulara yanıt bulabilirsiniz. Dikey pencerede Azure hizmetinden alınan Intune veri ambarı Power BI raporlarını kullanarak, Intune kiracını ve istemci popülasyon öngörü elde edebilirsiniz. Ancak Intune, verileri genişletmek veya yeniden kullanmak için ilave birkaç yol daha sunar. Power BI ve Intune veri ambarı API'si ek işlevler, örneğin sağlar:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Kiracı verileriniz, verilerinizden öngörü almanıza yardımcı olacak şekilde düzenlenir. Verilerin nasıl düzenlendiği hakkında daha fazla bilgi için bkz. [Veri Ambarı Veri Modeli](reports-ref-data-model.md).

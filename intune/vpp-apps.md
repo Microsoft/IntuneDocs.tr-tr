@@ -1,6 +1,6 @@
 ---
 title: Toplu satın alınan uygulama ve kitapları Microsoft Intune ile yönetme
-titlesuffix: ''
+titleSuffix: ''
 description: Mağazalardan toplu satın alınan uygulama ve kitaplarınızın kullanımını yönetmek ve izlemek için Microsoft Intune’u nasıl kullanabileceğinizi öğrenin."
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7e4babd5e50e948cd3dd8a7db8c0eb727f503d5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 26f7b3b11aaafd8aad5e99e2967bc8e13e8ca1a1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395783"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798428"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Toplu satın alınan uygulama ve kitapları Microsoft Intune ile yönetme
 

@@ -1,6 +1,6 @@
 ---
 title: Intune ile iOS Etkinleştirme Kilidini atlama
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune'u kilitli cihazlara erişmek üzere iOS Etkinleştirme Kilidini atlamak için nasıl kullanacağınızı öğrenin.
 keywords: ''
 author: ErikjeMS
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb8967c82758bbf5749a2335f706d1e32e51010e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 406a08788663603340ab4af78217a07e68e66604
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397823"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799559"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Denetimli iOS cihazlarda Intune ile Etkinleştirme Kilidini atlama
 

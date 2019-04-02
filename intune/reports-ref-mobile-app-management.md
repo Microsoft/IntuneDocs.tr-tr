@@ -1,6 +1,6 @@
 ---
 title: Mobil Uygulama Yönetimi (MAM)
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Mobil Uygulama Yönetimi kategorisi için başvuru konusu.
 keywords: Intune Veri Ambarı
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 524a4f39ba6a319f42ca23c7d85e84ffd86fce0d
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 0e9f01ad981350f250e35961f9a41a62698061a1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358225"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799608"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
 

@@ -1,6 +1,6 @@
 ---
 title: Intune’u sınama ve doğrulama
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Çevrenizdeki Intune bulut çözümünüzde sınama ve doğrulama yapma.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f63d396f51254f4aec99ac630b812a54ceeb405
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394942"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797453"
 ---
 # <a name="intune-testing-and-validation"></a>Intune’u sınama ve doğrulama
 

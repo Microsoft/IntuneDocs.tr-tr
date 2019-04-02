@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune’da hüküm ve koşulları ayarlama
-titlesuffix: ''
+titleSuffix: ''
 description: Intune Şirket Portalı’nda kullanıcıların göreceği hüküm ve koşulları ayarlayın.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea52d44bd1107c2cb5b177a8838ea4ec384a6ac
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7c056e86f7e768d79b4851fda327dc2e32fa349c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389416"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798278"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Hüküm ve koşullar kullanıcı erişimi
 

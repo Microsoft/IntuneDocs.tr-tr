@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure'da macOS cihaz ayarları | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Ekle, yapılandırmak veya macOS cihazlarda parola gereksinimlerini ayarlama dahil olmak üzere kısıtlamanıza ayarlarını oluşturun, kilit ekranı kontrol, yerleşik uygulamaları kullanın, kısıtlanmış veya onaylı uygulamalar ekleme, bluetooth cihazların işlemek, yedekleme için buluta bağlayın ve Depolama, bilgi noktası modu etkinleştirme, etki alanlarını ekleyin ve kullanıcıların Microsoft Intune Safari web tarayıcısı ile nasıl etkileşim denetim.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 5feec66e791da4038bd069cdad69a7ba573f27f3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330428"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798386"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>izin verme veya kısıtlamanıza Intune kullanarak macOS cihaz ayarları
 

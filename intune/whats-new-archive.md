@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure’da önceki aylarda yapılan yenilikler | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Intune’daki yenilikler sayfasından eski duyuruları gözden geçirme
 keywords: ''
 author: ErikjeMS
@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ceefcfbcdf48cf8d450f5a74274bc1beea951cc5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 334057c093ef3bef75894821749fe75f26c51bd8
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461558"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799811"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
