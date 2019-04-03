@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cc7593818027f8b1c8c3600143e9909662cd922
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799650"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871404"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune ücretsiz olarak deneyin 
 
@@ -67,7 +67,7 @@ Intune'u 30 gün boyunca ücretsiz deneyebilirsiniz. Zaten bir iş veya okul hes
 
     ![Azure portalı oturum açma sayfasının görüntüsü](./media/azure-portal-signin.png)
 
-3. Azure portalında Microsoft Intune'u görüntülemek için sayfanın solundaki kenar çubuğundan **Tüm hizmetler**'i seçin.
+3. Azure portalında Microsoft Intune görüntülemek için seçin **tüm hizmetleri** sayfanın sol tarafındaki kenar.
 4. Filtre kutusunda **Microsoft Intune**'u arayıp seçin.
 5. Intune'u sık kullandığınız hizmetler listesinin altına eklemek için **yıldız** simgesini seçin ve Intune panosunu açın.
 
@@ -123,7 +123,7 @@ Yukarıdaki söz edildiği gibi kuruluşunuzun olmadan kullanmak istiyorsanız, 
 
 Kullanabileceğiniz iki portal vardır:
 - [Intune'un özelliklerini](what-is-intune.md) Azure’daki ([portal.azure.com](https://portal.azure.com)) Intune panosunda bulabilirsiniz. Normalde, işlerinizi Intune panosunda yaparsınız.
-- Microsoft 365 Yönetim merkezini ([admin.microsoft.com](https://admin.microsoft.com)), Azure Active Directory için kullanmıyorsanız, ekleyin ve kullanıcıları yönetme yerdir. Ayrıca hesabınızın faturalama ve destek gibi diğer yönlerini de yönetebilirsiniz.
+- Microsoft 365 Yönetim merkezini ([admin.microsoft.com](https://admin.microsoft.com)), Azure Active Directory bu kullanmıyorsanız, ekleyin ve kullanıcıları yönetme yerdir. Ayrıca hesabınızın faturalama ve destek gibi diğer yönlerini de yönetebilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

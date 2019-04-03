@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490735"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871480"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarları
 
@@ -195,7 +195,7 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 
 #### <a name="safari"></a>Safari
 
-- **Safari**: **Blok** cihazda Safari tarayıcısı kullanılarak. **Yapılandırılmamış** Safari tarayıcısı kullanmasına olanak tanır.
+- **Safari (yalnızca denetimli)**: **Blok** cihazda Safari tarayıcısı kullanılarak. **Yapılandırılmamış** Safari tarayıcısı kullanmasına olanak tanır.
 - **Otomatik doldurmaya**: **Blok** cihazda Safari otomatik doldurma özelliğini devre dışı bırakır. **Yapılandırılmamış** kullanıcıların web tarayıcısında otomatik tamamlama ayarlarını değiştirmesine olanak tanır.
 - **Tanımlama bilgilerini**: Tanımlama bilgilerinin cihazda nasıl işleneceğini seçin. Seçenekleriniz şunlardır:
   - İzin Ver
@@ -290,7 +290,7 @@ Bu listelerden uygulamaları eklemek, şunları yapabilirsiniz:
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 
 - **İcloud'a yedekle**: **Yapılandırılmamış** kullanıcının cihazı İcloud'a yedeklemesine izin verir. **Blok** kullanıcının cihazı İcloud'a yedeklemeyi engeller.
-- **İcloud'a belge eşitlemeyi engelleyin**: **Yapılandırılmamış** iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verir. **Blok** iCloud belgeleri ve verileri eşitlenmesini önler.
+- **İcloud'a belge eşitleme (yalnızca denetimli) block**: **Yapılandırılmamış** iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verir. **Blok** iCloud belgeleri ve verileri eşitlenmesini önler.
 - **İcloud'a fotoğraf akışı eşitlemesi**: **Yapılandırılmamış** etkinleştirme olanağı **My fotoğraf Stream** cihazlarında İcloud'a eşitlenmesine ve tüm kullanıcı aygıtları üzerinde fotoğraf kullanılabilir. **Blok** İcloud'a fotoğraf akışı eşitlemesi engeller.
 - **Şifreli yedekleme**: **Gerekli** böylece cihaz yedeklemelerinin şifrelenmesini gerekir.
 - **iCloud fotoğraf arşivi**: Kümesine **blok** fotoğraflar ve videoları bulutta depolamasını için iCloud fotoğraf Arşivi'ni kullanarak devre dışı bırakmak için. İCloud fotoğraf Arşivi ' cihaza tamamen indirilmeyen tüm fotoğraflar CİHAZDAN kaldırılır. **Yapılandırılmamış** iCloud fotoğraf kitaplığının kullanımına izin verir.

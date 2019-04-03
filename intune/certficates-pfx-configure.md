@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e6af5a7d7911d7e8ba12e9fd15ad72ca1e51c74
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618472"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871408"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -35,42 +35,49 @@ Microsoft Intune erişim ve kimlik doğrulaması, kuruluş kaynaklarına PKCS se
 
 Intune ile PKCS sertifikalarını kullanmak için aşağıdaki altyapıya ihtiyacınız olacak:
 
-- **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucuları, Active Directory etki alanınıza katılmalıdır.
+- **Active Directory etki alanı**:  
+  Bu bölümde listelenen tüm sunucuları, Active Directory etki alanınıza katılmalıdır.
 
   Yükleme ve Active Directory etki alanı Hizmetleri (AD DS) yapılandırma hakkında daha fazla bilgi için bkz. [AD DS tasarımı ve planlaması](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
 
-- **Sertifika yetkilisi**: Bir kuruluş sertifika yetkilisi (CA).
+- **Sertifika yetkilisi**:  
+   Bir kuruluş sertifika yetkilisi (CA).
 
   Yükleme ve Active Directory Sertifika Hizmetleri (AD CS) yapılandırma hakkında daha fazla bilgi için bkz: [Active Directory Sertifika Hizmetleri Adım Adım Kılavuzu](https://technet.microsoft.com/library/cc772393).
 
   > [!WARNING]  
   > Intune, AD CS'yi, Tek Başına bir CA yerine bir Kurumsal Sertifika Yetkilisi (CA) ile çalıştırmanızı gerektirir.
 
-- **Bir istemci**: Kurumsal CA'ya bağlanmak için.
+- **Bir istemci**:  
+  Kurumsal CA'ya bağlanmak için.
 
-- **Kök sertifika**: Kök sertifikanızın Kurumsal CA'ndan dışa aktarılmış bir kopyası.
+- **Kök sertifika**:  
+  Kök sertifikanızın Kurumsal CA'ndan dışa aktarılmış bir kopyası.
 
-- **Microsoft Intune sertifika Bağlayıcısı**: Intune portalında, Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *adımları PKCS #12 bağlayıcısını yükleme*. Sertifika Bağlayıcısı Installer indirmeye başlamak için portalda indirme bağlantısı kullanmak **NDESConnectorSetup.exe**.  
-- 
+- **Intune sertifika bağlayıcı** (olarak da adlandırılan *NDES sertifika Bağlayıcısı*):  
+  Intune portalında, Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *adımları PKCS #12 bağlayıcısını yükleme*. Sertifika Bağlayıcısı Installer indirmeye başlamak için portalda indirme bağlantısı kullanmak **NDESConnectorSetup.exe**.  
+
   Bu bağlayıcı, kimlik doğrulaması veya e-posta S/MIME imzalama için kullanılan PKCS sertifika isteklerini işler.
 
   NDES sertifika Bağlayıcısı, Federal Bilgi İşleme Standardı (FIPS) mod da destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
 
-- **İçeri aktarılan PFX sertifika Bağlayıcısı için Microsoft Intune**: S/MIME e-posta şifreleme kullanmayı planlıyorsanız, bir bağlayıcı indirmek için Intune portalını kullanın *içeri aktarılan PFX sertifikaları*.  Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *için bağlayıcısını yükleme adımları İçeri aktarılan PFX sertifikaları*. Yükleyicinin indirmeye başlamak için portalda indirme bağlantısı kullanmak **PfxCertificateConnectorBootstrapper.exe**. 
+- **PFX sertifika Bağlayıcısı Microsoft Intune için**:  
+   S/MIME e-posta şifreleme kullanmayı planlıyorsanız, bir bağlayıcı indirmek için Intune portalını kullanın *içeri aktarılan PFX sertifikaları*.  Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *için bağlayıcısını yükleme adımları İçeri aktarılan PFX sertifikaları*. Yükleyicinin indirmeye başlamak için portalda indirme bağlantısı kullanmak **PfxCertificateConnectorBootstrapper.exe**. 
 
   Bu bağlayıcının belirli bir kullanıcı için e-posta şifreleme S/MIME için Intune'a içeri aktarılan PFX dosyaları için istekleri işler.  
 
   Yeni sürümler kullanılabilir olduğunda bu bağlayıcı kendisini otomatik olarak güncelleştirebilirsiniz. Güncelleştirme özellikten yararlanabilmek için şunları yapmalısınız:
-  - İçeri aktarılan PFX sertifika Bağlayıcısı'nı Microsoft Intune için sunucunuza yükleyin.
+  - İçeri aktarılan PFX sertifika Bağlayıcısı için Microsoft Intune sunucunuza yükleyin.
   - Önemli güncelleştirmeleri otomatik olarak almak için güvenlik duvarları başvurmak bağlayıcıyı izin veren açık olmasını **autoupdate.msappproxy.net** noktasında **443**.  
 
 
-- **Windows Server**: Bir Windows sunucusu konağına kullanabilirsiniz:
+- **Windows Server**:  
+  Bir Windows sunucusu konağına kullanabilirsiniz:
 
   - Microsoft Intune Certificate Bağlayıcısı - kimlik doğrulaması ve S/MIME için e-posta imzalama senaryoları
   - PFX sertifika Bağlayıcısı Microsoft Intune - S/MIME e-posta şifreleme senaryolar için.
 
-  Her iki bağlayıcıyı yükleyebilirsiniz (*Microsoft Intune sertifika Bağlayıcısı* ve *içeri aktarılan PFX sertifika Bağlayıcısı*) ile aynı sunucuda.
+  Her iki bağlayıcıyı yükleyebilirsiniz (*Microsoft Intune sertifika Bağlayıcısı* ve *PFX sertifika Bağlayıcısı*) ile aynı sunucuda.
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Kök sertifikayı Kurumsal CA'dan dışa aktarın
 
@@ -237,6 +244,26 @@ Sertifikaları Intune’da içeri aktardıktan sonra bir **PKCS içeri aktarılm
 
 4. Profilinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
 5. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profillerini atama](device-profile-assign.md).
+
+## <a name="whats-new-for-connectors"></a>Bağlayıcılar için yenilikler nelerdir?
+İki sertifika bağlayıcılar için güncelleştirmeleri düzenli aralıklarla yayınlanır. Bir bağlayıcı güncelleştiriyoruz, değişiklikler hakkında buradan okuyabilirsiniz. 
+
+*PFX sertifikaları bağlayıcı* [otomatik güncelleştirmeleri destekleyen](#requirements), Intune sertifika Bağlayıcısı el ile güncelleştirilirken.
+ 
+### <a name="april-2-2019"></a>2 Nisan 2019
+- **NDES sertifika Bağlayıcısı - 6.1904.1.0 sürümü**  
+  Bu sürümdeki değişiklikler:  
+  - Burada bağlayıcı bağlayıcısına genel yönetici hesabıyla oturum açtıktan sonra Intune'a kaydedilebilmesi başarısız olabilir bir sorun düzeltildi.  
+  - Sertifika iptali için güvenilirlik düzeltmeleri içerir.  
+  - PKCS sertifika isteklerini ne kadar hızlı işlenir artırmak için performans düzeltmelerini içerir.  
+
+- **PFX sertifika Bağlayıcısı - 6.1904.0.401 sürümü**
+  > [!NOTE]  
+  > PFX connector'ın bu sürümü için otomatik güncelleştirme 11 Nisan 2019 kadar kullanılamaz.  
+
+  Bu sürümdeki değişiklikler:  
+  - Burada bağlayıcı bağlayıcısına genel yönetici hesabıyla oturum açtıktan sonra Intune'a kaydedilebilmesi başarısız olabilir bir sorun düzeltildi.  
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

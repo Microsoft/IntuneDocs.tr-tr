@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 816a0479f19b5bb65376825f46687bf4b8b07045
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 7cbfe19e4f7aea28c16cae50c9b79336be81c8fa
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798365"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871336"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Hızlı Başlangıç: Kullanıcıları yönetmek için bir grup oluşturun
 
@@ -44,17 +44,18 @@ Oturum [Intune portalı](https://aka.ms/intuneportal) olarak bir [genel yönetic
 
 ## <a name="create-a-group"></a>Grup oluşturma
 
-Daha sonra bu hızlı başlangıç serisinde kullanılacak bir grup oluşturacaksınız.
+Daha sonra bu hızlı başlangıç serisinde kullanılacak bir grup oluşturacaksınız. Bir grup oluşturmak için:
 
 1. **Microsoft Intune** bölmesini açtığınızda **Gruplar** > **Yeni grup**'u seçin.
 2. Açılan **Grup türü** kutusunda **Güvenlik**’i seçin.
-3. **Ad**'ı "Contoso Testers" olarak ayarlayın ve grup için bir **Açıklama** girin.
-4. **Üyelik türü**’nü **Atandı** olarak ayarlayın. 
-5. **Üyeler**’e tıklayın ve mevcut listeden grup için bir veya daha fazla üye seçin.
+3. İçinde **grup adı** alanında, yeni grup adını girin (örneğin, **Contoso sınayıcılar**).
+4. Ekleme bir **açıklama** grubu için.
+5. **Üyelik türü**’nü **Atandı** olarak ayarlayın. 
+6. Tıklayın **üyeleri** ve listeden bir veya daha fazla grup üyelerini seçin.
 
     ![Microsoft Intune'da grup oluşturma işleminin ekran görüntüsü](./media/quickstart-use-groups-01.png)
 
-6. **Seç** > **Oluştur**’a tıklayın.
+7. **Seç** > **Oluştur**’a tıklayın.
 
 Grup başarıyla oluşturulduğunda **Tüm gruplar** listesinde görünür. 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ef628623c7f14a703025e80a2ade4283d36c007
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799535"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871442"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Hızlı Başlangıç: Bildirimleri uyumsuz cihazlara gönderme
 
@@ -40,7 +40,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
-[Intune](https://aka.ms/intuneportal) portalında [Genel yönetici](users-add.md#types-of-administrators) veya Intune [Hizmet yöneticisi](users-add.md#types-of-administrators) olarak oturum açın. 
+[Intune](https://aka.ms/intuneportal) portalında [Genel yönetici](users-add.md#types-of-administrators) veya Intune [Hizmet yöneticisi](users-add.md#types-of-administrators) olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
 ## <a name="create-a-notification-message-template"></a>Bildirim iletisi şablonu oluşturma
 
@@ -51,7 +51,7 @@ Kullanıcılarınıza e-posta göndermek için bir bildirim iletisi şablonu olu
 
    - **Ad**: *Contoso Yöneticisi*
    - **Konu**: *Cihaz uyumluluğu*
-   - **İleti**: *Cihazınız şu anda bizim kuruluşların uyumluluk gereksinimlerini karşılamıyor.*
+   - **İleti**: *Cihazınız şu anda bizim kuruluşun uyumluluk gereksinimlerini karşılamıyor.*
    - **E-posta üst bilgisi – şirket logosunu Ekle**: Kümesine **etkin** kuruluşunuzun logosu gösterilecek.
    - **Alt bilgisi – şirket adını ekleyin e-posta**: Kümesine **etkin** kuruluşunuzun adını göstermek için.
    - **Alt Bilgisi – iletişim bilgilerini ekleyin e-posta**: Kümesine **etkin** kuruluşunuzun bilgilerini göstermek için.
@@ -83,14 +83,13 @@ Aşağıdaki adımlar, Windows 10 cihazları için uyumluluk ilkesi oluşturmay�
 5. **Mobil cihazların kilidini açmak için parola gerektir** ayarını **Gerekli Kıl** olarak belirleyin. Bu ayar, kullanıcılara mobil cihazlarındaki bilgilere erişim verilmeden önce bu kullanıcılardan parola istenip istenmeyeceğini belirtir. 
 6. **En az parola uzunluğu**’nu **6** olarak ayarlayın. Bu ayar, parolada en az kaç rakam veya karakter bulunması gerektiğini belirtir.
 
-    ![Yeni bir uyumluluk ilkesi için Sistem Güvenliği ayarları](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Uyumluluk ilkenizi oluşturmak için **Tamam**, **Tamam** ve **Oluştur**’a tıklayın.
-8. Yeni ilkenizin adını seçin: **Windows 10 Uyumluluk**.
-9. **Özellikler** > **Uyumsuzluğa yönelik eylemler** > **Ekle**’yi seçin.
-10. Açılan **Eylem** kutusunda **Son kullanıcılara e-posta gönder** seçeneğinin belirlendiğini doğrulayın.
-11. Bu konunun öncesinde oluşturduğunuz ileti şablonunu seçmek için **İleti şablonu** > **Contoso Yöneticisi** > **Seçin**’i belirleyin.
-12. Değişikliklerinizi kaydetmek için **Tamam** > **Tamam** > **Oluştur**’u seçin.
+8. **Özellikler** > **Uyumsuzluğa yönelik eylemler** > **Ekle**’yi seçin.
+9. Açılan **Eylem** kutusunda **Son kullanıcılara e-posta gönder** seçeneğinin belirlendiğini doğrulayın.
+10. Bu konunun öncesinde oluşturduğunuz ileti şablonunu seçmek için **İleti şablonu** > **Contoso Yöneticisi** > **Seçin**’i belirleyin.
+11. Seçin **ekleme** > **Tamam** > **Kaydet** yaptığınız değişiklikleri kaydedin.
 
 ## <a name="assign-the-policy"></a>İlke atama
 

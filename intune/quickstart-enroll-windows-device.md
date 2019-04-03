@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389974"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871425"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Hızlı Başlangıç: Windows 10 cihazınızı kaydetme
 
-Bu hızlı başlangıçta önce bir Intune kullanıcısı rolünü üstlenecek ve Windows 10 cihazınızı Microsoft Intune’a kaydedeceksiniz. Daha sonra Intune’a dönüp kaydettiğiniz cihazı onaylayacaksınız.
+Bu hızlı başlangıçta önce bir Intune kullanıcısı rolünü üstlenecek ve Windows 10 cihazınızı Microsoft Intune’a kaydedeceksiniz. Ardından, Intune'a dönün ve cihazın kayıtlı onaylayın.
 
 Windows 10 cihazlarınızı Microsoft Intune'a kaydederek e-postalar, dosyalar ve diğer kaynaklar gibi kuruluşunuzun güvenli verilerine erişebilirsiniz. Bu durum hem Windows 10 masaüstü hem de Windows 10 Mobile cihazlar için geçerlidir. Cihazlarınızı kaydetmeniz hem sizin hem de kuruluşunuz için güvenli erişim sağlamanıza ve iş verilerinizi kişisel verilerinizden ayırmanıza yardımcı olur.
 
@@ -72,7 +72,7 @@ Windows 10 Masaüstü cihazınızı kaydetmeden önce yüklü olan Windows sür�
 
     ![İş veya okul hesabına erişimi seçme](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. İş veya okul hesabınızla Intune’da oturum açın ve daha sonra **Sonraki**’ne tıklayın. [Kullanıcı oluşturma ve lisans atama] hızlı başlangıcını takip ettiyseniz orada oluşturduğunuz kullanıcı hesabıyla oturum açabilirsiniz.
+3. İş veya okul hesabınızla Intune’da oturum açın ve daha sonra **Sonraki**’ne tıklayın. İzlediyseniz [bir kullanıcı oluşturun ve lisans atama](quickstart-create-user.md) hızlı, oluşturduğunuz kullanıcı hesabıyla oturum açabilir.
 
     > [!NOTE]
     > Bir “.onmicrosoft.com” hesabı ayarlıyorsanız, kullanıcı hesabında adresin bir parçası olarak **.onmicrosoft.com** görünür. 

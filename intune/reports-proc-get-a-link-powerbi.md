@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbf9848f8a66f3773772187de2486ffcf3e1cd7
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 259d700d04547a801b0ebc37242dacf536ad61d3
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798165"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871387"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI ile Veri Ambarına bağlanma
 
@@ -49,27 +49,26 @@ Aşağıdaki adımlar, Power BI dosyasını nasıl indireceğinizi ve OData bağ
 
 En son sürümünü yükleyin [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi). Daha fazla bilgi için [Power BI Desktop](https://powerbi.microsoft.com/desktop)
 
-## <a name="load-the-data-and-reports-using-the-power-bi-compliance-app"></a>Power BI uyumluluğu uygulamasını kullanarak rapor ve veri yükleme
+## <a name="load-the-data-and-reports-using-the-power-bi-intune-compliance-data-warehouse-app"></a>Power BI Intune uyumluluk veri ambarı uygulaması'nı kullanarak rapor ve veri yükleme
 
-Power BI uyumluluğu uygulama kiracınız ve bir dizi önceden oluşturulmuş raporları veri ambarı veri modelini temel alan bilgiler içerir. Raporu Power BI Desktop'ta açın ve Azure AD ile oturum açın. Rapor, Intune kiracınızdan verileri yükler.
+Power BI [Intune uyumluluk veri ambarı uygulaması](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) kiracınızın ve önceden oluşturulmuş raporları veri ambarı veri modelini temel alan bir dizi ilgili bilgileri içerir.
 
-> [!Important]  
-> Power BI raporlarınızı Kiracı konumuna bağlı olarak farklı olabilir. Birden çok Intune kiracısı yönetiyorsanız, bu Kiracı için oturum açmış durumdayken Azure portalından rapor kullanmayı unutmayın.  
+1.  Gidin [Intune uyumluluk veri ambarı uygulaması](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) yükleme işlemini başlatın.
+2.  Güvenilen kaynaklardan gelen Power BI uygulamasını yüklemek için sorulduğunda **yükleme**.
+3.  Tıklayarak **Intune uyumluluk veri ambarı uygulaması** Döşe.
+4.  Tıklayın **verilere** düğmesi. 
+    **Intune uyumluluk veri ambarı uygulaması Bağlan** iletişim kutusu görüntülenir.
+5.  Tıklayın **oturum** düğmesi.
+6.  Intune veri ambarı'na sahip bir kiracı için erişimi olan bir kullanıcı hesabıyla oturum açın, görüntülemek istediğiniz bildirir. 
+7.  Tıklayın **raporları** sekmesine ve ardından tıklayın **uyumluluk V1.0** rapor.
+8.  Daha sonra bu raporlara geri gitmek kolaylaştırmak için yanındaki Yıldıza tıklayın **uyumluluk V1.0** rapor. Bu raporu Power BI sık kullanılanlarınızı ekler.
 
-1.  Azure portalında oturum açın ve **İzleme + Yönetim** > **Intune**’u seçin. Ayrıca **Intune** için kaynak araması da yapabilirsiniz.  
+Alternatif olarak, Intune Portalı'ndan uygulama yükleyebilirsiniz:
+
+1.  Azure portalında oturum açın ve **İzleme + Yönetim** > **Intune**’u seçin. Intune için kaynakları arama da yapabilirsiniz.
 2.  Açık **Intune veri ambarı ayarlama** dikey penceresi.
 3.  Seçin **Al Power BI uygulaması** erişmek ve tarayıcıdaki kiracınız için önceden oluşturulmuş Power BI raporlarını paylaşma.
-
-> [!NOTE]
-> Power BI’da Azure Active Directory kimlik bilgilerinizle kimlik doğrulamadıysanız, Power BI sizden kimlik bilgilerinizi sağlamanızı ister. Kimlik bilgilerinizi seçerken kimlik doğrulama yöntemi olarak **Kuruluş hesabı**’nı seçin.
-
-### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune uyumluluk uygulamaya ek filtreler ekleyin
-
-Power BI raporlarınız için ek filtreler kullanmak istiyorsanız, aşağıdaki adımları kullanın:
-
-1. Açık [Power BI uyumluluğu](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) web tarayıcınızda uygulama.
-2. Tıklayın **uyumlu olmayan cihazları** seçip **uyumlu** içinde **complianceStatus** filtre. 
-3. Tıklayarak **bilinmeyen cihazlar** seçip **henüz** içinde **complianceStatus** filtre. 
+4.  Adım 2-yukarıdaki 8 izleyin.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Power BI’da OData bağlantısını kullanarak verileri yükleme
 
@@ -77,7 +76,7 @@ Azure AD’de istemci kimliği doğrulandığı zaman OData URL’si, Veri Ambar
 
 1.  Azure portalında oturum açın ve **İzleme + Yönetim** > **Intune**’u seçin. Ayrıca **Intune** için kaynak araması da yapabilirsiniz.  
 2.  Açık **Intune veri ambarı ayarlama** dikey penceresi.
-3. Raporlama dikey penceresinden özel akış URL’sini alın, örneğin `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+3. Raporlama dikey penceresinden özel akış URL’sini alın, örneğin `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. **Power BI Desktop**’ı açın.
 5. **Giriş** > **Veri Al**’ı seçin. **OData akışı**’nı seçin.
 6. **Temel**’i seçin.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a883536b1c56948083a7e32bcb56d8d182fddfb5
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799111"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871370"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Hızlı Başlangıç: Uygulama koruma ilkesini oluşturma ve atama
 
@@ -41,7 +41,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 ## <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
 
-Bir uygulama koruma ilkesi oluşturmak için aşağıdaki adımları izleyin:
+Bir uygulama koruma ilkesi oluşturmak için aşağıdaki adımları kullanın:
 
 1. [Intune](https://aka.ms/intuneportal)’da **İstemci uygulamaları** > **Uygulama koruma ilkeleri** > **İlke Oluştur**’u seçin. 
 2. Aşağıdaki ayrıntıları girin: 
@@ -72,7 +72,7 @@ Uygulama koruma ilkesini atamak için aşağıdaki adımları izleyin:
 3.  **Atamalar**’ı seçin.
 4.  **Ekle** sekmesinde **Dahil edilecek gruplar**’ı seçin.
 5.  Eklenecek grup olarak **Contoso Sınama Aracı**’nı seçin.
-6.  Tıklayın **seçin**. 
+6.  Tıklayın **seçin** > **Kaydet**. 
 
 Uygulama koruma ilkesini şimdi atadınız.
 
