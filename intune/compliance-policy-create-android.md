@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dc4fc0a0f16717bd0c21db3a9e7e57daf7867bc
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 4880026b59c958f8f602713279797f85c8e2d7be
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991157"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899045"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune’da Android cihazlar için cihaz uyumluluk ilkesi ekleme
 
-Android için Intune cihaz uyumluluk ilkesi Android cihazlarının uyumlu kabul edilmek için uymak zorunda olduğu kuralları ve ayarları belirtir. Kuruluş kaynaklarına erişime izin vermek veya erişimi engellemek için bu ilkeleri [koşullu erişim](conditional-access.md) ile birlikte kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. 
+Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune, Android cihazları gibi en az bir işletim sistemi sürümünün uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları oluşturabilirsiniz. Cihaz uyumlu değilse [koşullu erişimi](conditional-access.md) kullanarak veri ve kaynaklara erişimi engelleyebilirsiniz.
 
-Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+Bu özellik şu platformlarda geçerlidir:  
+- Android
 
-Bu konu, Android cihazlar için bir uyumluluk ilkesinde kullanabileceğiniz ayarları listeler.
+Ayrıca cihaz raporları alabilir ve uyumsuzluğa yönelik, kullanıcıya bildirim göndermek gibi önlemler alabilirsiniz. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+
+Bu makalede, Android çalıştıran cihazlar için Uyumluluk İlkesi içinde kullanabileceğiniz ayarlar listelenmektedir.
 
 ## <a name="non-compliance-and-conditional-access"></a>Uyumsuzluk ve koşullu erişim
 
@@ -52,7 +55,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 **Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.
 
-**Karantinaya alındı** = Cihazın işletim sistemi, uyumluluğu zorunlu kılmaz. Örneğin Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz. Cihaz uyumsuz olduğunda, aşağıdaki işlemler yapılır:
+**Karantinaya alındı** = Cihazın işletim sistemi, uyumluluğu zorunlu kılmaz. Örneğin Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz. Cihaz uyumsuz olduğunda aşağıdaki işlemler yapılır:
 
   - Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
   - Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
@@ -71,6 +74,9 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
   - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
   - **Orta**: Cihaz cihazda mevcut tehditler düşük veya Orta düzeydeyse uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
   - **Yüksek**: Bu seçenek en az güvenli seçenektir ve tüm tehdit düzeylerine izin verir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
+
+### <a name="google-play-protect"></a>Google Play koruması
+
 - **Google Play Hizmetleri yapılandırıldı**: **Gerekli** Google Play uygulaması Hizmetleri yüklü ve etkin. Google Play hizmetleri, güvenlik güncelleştirmelerine olanak sağlar ve sertifikalı Google cihazlarında birçok güvenlik özelliği için temel düzeyde bir bağımlılıktır. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 - **Güncel güvenlik sağlayıcısı**: **Gerekli** bir cihaz güncel güvenlik sağlayıcısı tarafından bilinen güvenlik açıklarına karşı koruyabilir. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 - **Uygulamalarda tehdit taraması**: **Gerekli** , Android **uygulamaları doğrula** özelliği etkinleştirilir. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
@@ -82,6 +88,9 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
   - **Yapılandırılmamış** (varsayılan): Ayar, uyumluluk veya uyumsuzluk için değerlendirilmez.
   - **Temel bütünlük denetimi**
   - **Temel bütünlük ve sertifikalı cihaz denetimi**
+
+> [!NOTE]
+> Uygulama koruma ilkelerini kullanarak Google Play Koruması ayarlarını yapılandırmak için bkz [Intune uygulama koruma İlkesi ayarları](app-protection-policy-settings-android.md#conditional-launch) Android.
 
 ## <a name="device-property-settings"></a>Cihaz özelliği ayarları
 
@@ -155,7 +164,7 @@ Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örn
 
 ## <a name="scope-tags"></a>Kapsam etiketleri
 
-Satış, Mühendislik, İK gibi belirli gruplara ilke atamanın ideal bir yolu olarak kapsam etiketlerini kullanabilirsiniz. Uyumluluk ilkelerine kapsam etiketleri ekleyebilirsiniz. Bkz. [İlke filtrelemek için kapsam etiketleri kullanma](scope-tags.md). 
+Satış, Mühendislik, İK gibi belirli gruplara ilke atamanın ideal bir yolu olarak kapsam etiketlerini kullanabilirsiniz. Kapsam etiketleri uyumluluk ilkelerinde ekleyebilirsiniz. Bkz. [İlke filtrelemek için kapsam etiketleri kullanma](scope-tags.md). 
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 
@@ -168,6 +177,7 @@ Oluşturulan ilke, atanana kadar herhangi bir eylem gerçekleştirmez. İlkeyi a
 İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için değerlendirilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
 [Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme](actions-for-noncompliance.md)  
 [Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)  
 [Android Kurumsal için uyumluluk ilkesi ayarları](compliance-policy-create-android-for-work.md)

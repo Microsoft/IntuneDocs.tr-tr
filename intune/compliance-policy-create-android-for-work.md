@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6f1f07c1cb7b5dbe81120fd678f429a996f230e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 00c48f49507fe4fde5484d0725b605d90407facd
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566242"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899062"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Intune’daki Android Kurumsal cihazları için uyumluluk ilkesi ekleme
 
-Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune’da cihazların uyumlu olarak değerlendirilmesi için uyması gereken parola uzunluğu gibi kurallar ve ayarlar oluşturabilirsiniz. Cihaz uyumlu değilse [koşullu erişimi](conditional-access.md) kullanarak veri ve kaynaklara erişimi engelleyebilirsiniz. 
+Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune, Android kuruluş cihazlarının bir parola uzunluğu gibi uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları oluşturabilirsiniz. Cihaz uyumlu değilse [koşullu erişimi](conditional-access.md) kullanarak veri ve kaynaklara erişimi engelleyebilirsiniz.
+
+Bu özellik şu platformlarda geçerlidir:  
+- Android Kurumsal
 
 Ayrıca cihaz raporları alabilir ve uyumsuzluğa yönelik, kullanıcıya bildirim göndermek gibi önlemler alabilirsiniz. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
@@ -69,6 +72,9 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
   - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
   - **Orta**: Cihaz cihazda mevcut tehditler düşük veya Orta düzeydeyse uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
   - **Yüksek**: Bu seçenek en az güvenli olduğu gibi tüm tehdit düzeylerine izin verir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
+
+### <a name="google-play-protect"></a>Google Play koruması
+
 - **Google Play Hizmetleri yapılandırıldı**: **Gerekli** Google Play uygulaması Hizmetleri yüklü ve etkin. Google Play hizmetleri, güvenlik güncelleştirmelerine olanak sağlar ve sertifikalı Google cihazlarında birçok güvenlik özelliği için temel düzeyde bir bağımlılıktır. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 - **Güncel güvenlik sağlayıcısı**: **Gerekli** bir cihaz güncel güvenlik sağlayıcısı tarafından bilinen güvenlik açıklarına karşı koruyabilir. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 - **SafetyNet cihaz kanıtlama**: Düzeyini [SafetyNet cihaz kanıtlama](https://developer.android.com/training/safetynet/attestation.html) uyulması gereken. Seçenekleriniz şunlardır:
@@ -76,9 +82,8 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
   - **Temel bütünlük denetimi**
   - **Temel bütünlük ve sertifikalı cihaz denetimi**
 
-#### <a name="threat-scan-on-apps"></a>Uygulamalarda tehdit taraması
-
-Android Kurumsal cihazlardaki **Uygulamalarda tehdit taraması** ayarı, bir yapılandırma ilkesidir. Bkz. [Android için Intune cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
+> [!NOTE]
+> Android Kurumsal cihazlarda **uygulamalarda tehdit taraması** bir cihaz yapılandırma ilkesi. Bir yapılandırma İlkesi'ni kullanarak, Yöneticiler bir cihazdaki ayarını etkinleştirebilirsiniz. Bkz. [Android için Intune cihaz kısıtlama ayarları](device-restrictions-android-for-work.md).
 
 ## <a name="device-properties-settings"></a>Cihaz özellikleri ayarları
 
@@ -148,7 +153,7 @@ Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örn
 
 ## <a name="scope-tags"></a>Kapsam etiketleri
 
-Satış, Mühendislik, İK gibi belirli gruplara ilke atamanın ideal bir yolu olarak kapsam etiketlerini kullanabilirsiniz. Uyumluluk ilkelerine kapsam etiketleri ekleyebilirsiniz. Bkz. [İlke filtrelemek için kapsam etiketleri kullanma](scope-tags.md). 
+Satış, Mühendislik, İK gibi belirli gruplara ilke atamanın ideal bir yolu olarak kapsam etiketlerini kullanabilirsiniz. Kapsam etiketleri uyumluluk ilkelerinde ekleyebilirsiniz. Bkz. [İlke filtrelemek için kapsam etiketleri kullanma](scope-tags.md). 
 
 ## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
 
@@ -161,6 +166,7 @@ Oluşturulan ilke, atanana kadar herhangi bir eylem gerçekleştirmez. İlkeyi a
 İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için değerlendirilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
 [Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme](actions-for-noncompliance.md)  
 [Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)  
 [Android için uyumluluk ilkesi ayarları](compliance-policy-create-android.md)

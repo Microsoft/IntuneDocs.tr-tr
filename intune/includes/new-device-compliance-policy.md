@@ -1,7 +1,10 @@
 ---
- Başlık: dosya açıklaması Ekle: Dosya Hizmetleri içerir: microsoft-intune Yazar: MandiOhlinger ms.service: microsoft-intune ms.topic: ms.date içerir: 16/04/2018 ms.author: mandia MS.özel: dosya ms.collection içerir: M365 kimlik cihaz Yönetimi
+ Başlık: dosya açıklaması Ekle: Dosya Hizmetleri içerir: microsoft-intune Yazar: MandiOhlinger ms.service: microsoft-intune ms.topic: ms.date içerir: 04/02/2019 ms.author: mandia ms.custom: include file ms.collection: M365 kimlik cihaz Yönetimi
 ---
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
 2. **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**'u seçin.
-3. Bir **Ad** ve **Açıklama** girin.
+3. Aşağıdaki özellikleri girin:
+
+    - **Ad**: İlke için açıklayıcı bir ad girin.
+    - **Açıklama**: İlke için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.

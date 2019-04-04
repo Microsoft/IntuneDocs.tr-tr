@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68d65c43d15034c8ef1a69d4912a3140aca953e6
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 3943e8e2590ae5428477c53e53c229e7a9df47c3
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871484"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899104"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -46,11 +46,8 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 -->     
 
 <!-- ########################## -->
-## <a name="week-of-march-25-2019"></a>25 Mart 2019 haftası  
-
-### <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası
+## <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası
 Güncelleştirmeler için hem de yayımladık [Intune sertifika Bağlayıcısı ve PFX sertifika Bağlayıcısı'nı](certficates-pfx-configure.md#whats-new-for-connectors). Yeni sürümleri bazı bilinen sorunlar düzeltildi.  
-
 
 ## <a name="week-of-march-25-2019"></a>25 Mart 2019 haftası
 

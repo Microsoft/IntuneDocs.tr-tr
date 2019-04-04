@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469327261b8f617be0851b52d389965c5eff9b59
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 66a23b75913f6465064a988bd8f2ba9c2b4c36d6
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330411"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920255"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Windows 10 cihazlarda ıntune'da PowerShell betiklerini kullanın
 
@@ -57,7 +57,7 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
     - **Açıklama**: PowerShell Betiği için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir. 
     - **Betik konumu**: PowerShell komut dosyasına göz atın. Betik 200 KB'den düşük (ASCII) olmalıdır.
 4. Seçin **yapılandırma**ve aşağıdaki özellikleri girin:
-    - **Oturum açmış kimlik bilgilerini kullanarak bu betiği çalıştırın**: Seçin **Evet** betiği cihazda kullanıcının kimlik bilgileriyle çalıştırmak için. Seçin **Hayır** betik sistem bağlamında çalışacak şekilde (varsayılan). Betiğin sistem bağlamında çalıştırılması gerekli değilse **Evet**’i seçin.
+    - **Oturum açmış kimlik bilgilerini kullanarak bu betiği çalıştırın**: Seçin **Evet** betiği cihazda kullanıcının kimlik bilgileriyle çalıştırmak için. Seçin **Hayır** betik sistem bağlamında çalışacak şekilde (varsayılan). Birçok yönetici seçin **Evet**. Betik sistem bağlamında çalıştırılması gerekiyorsa, seçin **Hayır**.
     - **Betik imzası denetimini zorla**: Seçin **Evet** durumunda betiğin güvenilir bir yayımcı tarafından imzalanmalıdır. Seçin **Hayır** imzalanması için komut dosyası için bir gereksinim değilse (varsayılan). 
     - **Ana bilgisayarda 64 bit PowerShell komut dosyasını çalıştırmak**: Seçin **Evet** betiği bir 64 bit PowerShell (PS) ana bilgisayar 64 bit istemci mimarisi çalıştırmak için. Seçin **Hayır** (varsayılan), bir 32-bit PowerShell ana bilgisayar betiği çalıştırır.
 

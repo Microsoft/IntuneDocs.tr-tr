@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df289d84cb78f5cb08db6ca66a0db9b7443171f5
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: cbcc1d81f4ac52ed78a1addbcaefc7d4f9953362
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618464"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920259"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
@@ -51,7 +51,7 @@ Intune kullanılabilir için Yardım ve destek deneyimi [Microsoft 365 cihaz yö
 
 Bu yeni deneyim görünen deneyimine benzer [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/)ve önceki Yardım değiştirir ve destek deneyimi. 
 
-Yardım ve Destek erişmek için aşağıdakileri kullanın:  
+Yardım ve Destek erişmek için aşağıdaki seçenekleri kullanın:  
 - **Cihaz Yönetimi Panosu:**
    - Tüm kullanılabilir seçeneğini **Yardım ve Destek**
    - Seçin **?** Portalın sağ üst köşenin simgesi
@@ -72,7 +72,7 @@ Bu görünümde aşağıdaki işlemleri yapabilirsiniz:
 4. Yeni iş akışını kullanarak önceden açtığınız [destek olaylarını görüntüleme](#view-support-cases)  
 
 ### <a name="specify-details-about-an-issue"></a>Bir sorunla ilgili ayrıntıları belirtme
-Yardımı ve desteği tarafından yeni deneyim, desteklenen bir konumdan **Yardım gerekiyor?**  sayfası açılır. Bu sayfada sorun ayrıntılarını belirtebilirsiniz. Siz ayrıntıları girdikçe konsol, kullandığınız anahtar sözcüklere göre size bazı yaygın sorgular önerir. Önerilenlerden birini seçebilir veya sorun açıklamasını kendiniz tamamlayabilirsiniz. Kendi açıklamanızı girerseniz bunu göndermek için **Yardım al**’a tıklayın. Bir sorgu gönderdikten sonra konsol sorununu çözmenize yardımcı olabilecek içeriğe duyarlı bilgileri döndürür.
+Yardımı ve desteği tarafından yeni deneyim, desteklenen bir konumdan **Yardım gerekiyor?** sayfası açılır. Bu sayfada sorun ayrıntılarını belirtebilirsiniz. Siz ayrıntıları girdikçe konsol, kullandığınız anahtar sözcüklere göre size bazı yaygın sorgular önerir. Sunulan bir seçeneğin seçin veya kendi sorun açıklaması tamamlayın. Kendi açıklamanızı girerseniz bunu göndermek için **Yardım al**’a tıklayın. Bir sorgu gönderdikten sonra konsol sorununu çözmenize yardımcı olabilecek içeriğe duyarlı bilgileri döndürür.
 
 Aşağıda, gönderebileceğiniz sorgu örnekleri verilmiştir:
   
@@ -86,7 +86,7 @@ Sunulan seçeneklerden birini belirlediğinizde veya kendi sorgunuzu gönderdiğ
 ![Sonuçları görüntüle](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>Destek alın
-Kendi kendine yardım veya Web tabanlı rehber sorunu çözmenize yaramazsa, e-posta veya telefon yoluyla bir destek sorunu açmak için konsolu kullanabilirsiniz.  
+Kendi kendine yardım veya web tabanlı Kılavuzu sorunu işe yaramazsa, e-posta veya telefon bir destek sorunu açmak için konsolu kullanın.  
 **Yardıma mı ihtiyacınız var?** sayfasında, kullanmak istediğiniz seçeneği belirtin.  
 
 - E-posta isteği için e-posta adresi adresinizi ve isteğe bağlı olarak ek dosyaları sağlayın. İsteği açmak için **Gönder**’e tıklayın.  
@@ -130,7 +130,7 @@ Aşağıdaki bilgiler, Azure Yardım + sol gezinti bölmesinde kullandığınız
    - **Hizmet**: **Microsoft Intune**
    - **Sorun türü**: Aşağı açılan menüden, sorun türü seçin.
    - **Sorun alt**: Sorun alt aşağı açılan menüden seçin.
-   - **Konu**: Kısaca karşılaştığınız sorunu açıklayın.
+   - **Konu**: Yardım istediğiniz sorunu kısaca açıklayın.
 
    ![Temel bilgiler sekmesinde Yardım + destek - yeni destek isteği sayfası görüntüsü](./media/get-support/help-new-support-case-basics.png)
 
@@ -141,7 +141,7 @@ Aşağıdaki bilgiler, Azure Yardım + sol gezinti bölmesinde kullandığınız
 5. Üzerinde **ayrıntıları** sekmesinde Ayrıntılar, sorununuzu destek yöntemi, iletişim bilgilerinizi doldurun ve ardından **sonraki: Gözden geçir + Oluştur**.
 
    ![Yardım + destek - yeni destek isteği sayfası ayrıntıları sekmesinin resmi](./media/get-support/help-new-support-case-details.png)
-6. Bilgileri gözden geçirin, düzeltin ve ardından olduğundan emin olun **Oluştur** destek isteğinizi gönderebilirsiniz.
+6. Bilgileri gözden geçirin, doğru olduğundan emin olun ve ardından **Oluştur** destek isteğinizi gönderebilirsiniz.
 
    ![Gözden geçirmeyi görüntüsü + yeni desteğini sekmesi oluşturma isteği sayfası](./media/get-support/help-new-support-case-create.png)
 
@@ -184,7 +184,6 @@ Bir destek isteğini Azure portalının içinden görüntüleyebilirsiniz. Bunu 
 2. **Yardım + destek** sayfasında **Son destek istekleri**'nin listesini görüntüleyebilir ve bunları ek ayrıntılarını görüntülemek üzere seçebilirsiniz.
 
 ## <a name="additional-resources"></a>Ek kaynaklar
-- [Microsoft Intune için yardımlı telefon desteği ile iletişim kurun](phone-support-contact.md)
 - [Faturalama ve abonelik yönetimi desteği](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Toplu lisanslama](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Intune sorunlarını giderme](help-desk-operators.md)

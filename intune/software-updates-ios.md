@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/06/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3a6cf207c58194030a4e4bab8a02f76cd97b338
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: de73aa069765ce75068781674ff24d097346cdba
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398622"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899029"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune'da iOS yazılım güncelleştirme ilkelerini ekleme
 
@@ -41,7 +41,11 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Güncelleştirme varsa ve kısıtlan
 
 4. Seçin **ayarlar > Yapılandır**. Aşağıdaki ayarları girin:
 
-    - **Güncelleştirme yüklemelerine engel olmak için saatleri seçin**: Güncelleştirmeleri zorla yüklendiğinde olmayan sınırlı bir zaman çerçevesi girin. Kısıtlı zaman çerçevesini ayarlarken, aşağıdaki bilgileri girin:
+    - **Güncelleştirme yüklemelerine engel olmak için saatleri seçin**: Zorla yüklü olmayan güncelleştirmeleri ne zaman sınırlı bir zaman çerçevesi belirtin. 
+      - Gece blokları desteklenmez ve çalışmayabilir. Örneğin, bir ilkeyle yapılandırmayın bir *başlangıç zamanı* 8 PM ve bir *bitiş saati* , 6 AM.
+      - 12'da başlar ve 12: 00 biten bir ilke olarak 0 saat ve değil 24 saat içinde hiçbir kısıtlama sonuçlanır değerlendirilir.
+
+      Kısıtlı zaman çerçevesini ayarlarken, aşağıdaki bilgileri girin:
 
       - **Gün**: Güncelleştirmelerin ne zaman yüklü olmayan haftanın günlerini seçin. Örneğin, Pazartesi, Çarşamba ve Cuma şu günlerde yüklü güncelleştirmeleri önlemek için denetleyin.
       - **Saat dilimi**: Bir saat dilimi seçin.
@@ -58,6 +62,8 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Güncelleştirme varsa ve kısıtlan
         - Özgün ilkenin olarak aynı kullanıcıları hedefleyebilirsiniz.
 
       Bir çakışma varsa, bu ayarın hiçbir şey yapmaz *sürece* iki değer aynıdır. Bir çakışmayı önlemek için değiştirmek veya portal bu konumda mevcut ilkeyi kaldırmak emin olun.
+      > [! Önemli]  
+      > Olan bir ilkeye bir *başlangıç zamanı* ve *bitiş saati* 0 saat olarak ve 24 saat 12: 00'olarak değerlendirilir. Bu kısıtlama sonuçlanır.  
 
 5. Seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin ve ilkeyi oluşturun.
 
@@ -79,7 +85,7 @@ Intune destek ekibinden yönergeler için bkz [gecikme denetimli cihazlar için 
     3. Kara listeye alınan saatler için başlangıç ve bitiş saatlerini girin
 
     > [!NOTE]
-    > Hem **Başlangıç saati** hem de **Bitiş saati** olarak 12:00 ayarlanırsa, bakım saati denetimi devre dışı bırakılır.
+    > Varsa **başlangıç zamanı** ve **bitiş saati** her iki grup için 12: 00, sonra Intune, güncelleştirmeleri yüklemek ne zaman kısıtlamaları için denetlemez. Bu sahip için tüm yapılandırmaları daha anlamına gelir **güncelleştirme yüklemelerine engel olmak için Select kez** göz ardı edilir ve herhangi bir zamanda güncelleştirmeleri yükleyebilirsiniz.  
 
 ## <a name="assign-the-policy-to-users"></a>Kullanıcılara ilke atama
 

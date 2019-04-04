@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 4b5e6ac4683284dc71c9171f4367e72d5ec45c59
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871442"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899020"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Hızlı Başlangıç: Bildirimleri uyumsuz cihazlara gönderme
 
@@ -85,7 +85,7 @@ Aşağıdaki adımlar, Windows 10 cihazları için uyumluluk ilkesi oluşturmay�
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. Uyumluluk ilkenizi oluşturmak için **Tamam**, **Tamam** ve **Oluştur**’a tıklayın.
+7. Seçin **Tamam** > **Tamam** > **Oluştur** uyumluluk ilkenizi oluşturun.
 8. **Özellikler** > **Uyumsuzluğa yönelik eylemler** > **Ekle**’yi seçin.
 9. Açılan **Eylem** kutusunda **Son kullanıcılara e-posta gönder** seçeneğinin belirlendiğini doğrulayın.
 10. Bu konunun öncesinde oluşturduğunuz ileti şablonunu seçmek için **İleti şablonu** > **Contoso Yöneticisi** > **Seçin**’i belirleyin.
