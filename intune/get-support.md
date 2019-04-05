@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/05/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbcc1d81f4ac52ed78a1addbcaefc7d4f9953362
-ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
+ms.openlocfilehash: ba463c4de45c31f9b5644852c7e48bd000a1b36b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58920259"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041688"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
@@ -30,7 +30,21 @@ ms.locfileid: "58920259"
 
 Microsoft, Intune için genel teknik, satış öncesi, faturalandırma ve abonelik desteği sağlar. Hem ücretli hem de deneme abonelikleri için çevrimiçi ve telefonla destek mevcuttur. İngilizce ve Japonca dillerinde çevrimiçi teknik destek kullanılabilir. Telefon ve çevrimiçi faturalandırma desteği, ek dillerde mevcuttur.
 
-BT yöneticisi, kullandığınız **Yardım ve Destek** için Intune Azure portalından bir çevrimiçi destek bileti dosyasına seçeneği. Azure AD rolleri ve bir destek bileti oluşturmak için gereken izinler hakkında daha fazla bilgi için bkz. [Azure Active Directory'de yönetici rolleri](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+Bir Intune Yöneticisi, kullandığınız **Yardım ve Destek** için Intune Azure portalından bir çevrimiçi destek bileti dosyasına seçeneği. Oluşturma ve bir destek olayı yönetmek için hesabınıza içeren bir Azure Active Directory (Azure AD) rolü atanmış *eylem* **microsoft.office365.supportTickets/allEntities/allTasks**. Azure AD rolleri ve bir destek bileti oluşturmak için gereken izinler hakkında daha fazla bilgi için bkz. [Azure Active Directory'de yönetici rolleri](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+
+**Destek olayı oluşturmak için bilinen sorunlar**
+
+Hesabınızın gerekli izinlere sahip ancak için başarılı bir şekilde başarısız olursa, Yardım ve Destek erişmek veya oluşturmak veya bir destek olayı yönetmek, aşağıdaki bilinen sorunlar ve çözümleri gözden geçirin:  
+- Hesabınız eski bir kullanıcı belirteci. Bu sorunu çözmek için dışında tüm etkin konsol oturumlarına oturum, yeniden oturum açın ve ardından oluşturmak veya bir destek olayı yönetmek çalışır. 
+- Birden çok etkin oturumları. Birden fazla kullanıcı veya oturum ile oturum açtıysanız, biri hariç tüm konsol çıkışına oturum açın. Ardından, oluşturmak veya bir destek olayı yönetmek tek bir etkin oturum ile çalışır.
+
+Erişim sorunlarını çözmek gerekli olabilecek ek eylemler:
+- Etkin tarayıcı oturumunuz için tüm tanımlama bilgilerini temizleyin ve sonra oluşturma ve bir destek olayı yönetme işlemini yeniden deneyin.
+- Intune'da oturum açma için bir InPrivate Gözatma oturumunda kullanmak ve oluşturmak veya bir destek olayı yönetmek deneyin.  
+
+Önceki geçici çözümler konusunda yardımcı, Git [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com) ve oradan bir destek bileti oluşturun. Şu anda geç Yaz kullanılabilecek bir düzeltme üzerinde çalışıyoruz. 
+
+
 
 >[!IMPORTANT]  
 > Intune ile birlikte çalışan üçüncü taraf ürünlerle ilgili (Saaswedo, Cisco veya Lookout gibi) teknik destek için önce ürün sağlayıcısıyla görüşün. Intune destekte bir talep açmadan önce diğer ürünü doğru yapılandırdığınızdan emin olun.

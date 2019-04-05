@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0dd51e92cfc88c8d1f9ee78e414c899f216f8a3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 0dbeed85ea368267ddfcf61bb919729b64dc3dde
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799514"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041716"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha fazla bilgi edinin. Biz düzenli olarak ekleyin ve Intune Şirket portalı uygulamasını ve Web sitesi geliştirmek. Bu makalede, bir Intune Yöneticisi olduğunuz veya kişi desteklemek için gereken bilgileri sağlanmaktadır:
@@ -34,6 +34,11 @@ Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha faz
 Bir çalışan veya Öğrenci kullanıyorsanız ekran görüntüleri ve bağlantıları Şirket portalı Yardım belgelerine göz atın emin olun. Şirket portalı uygulamasını kullanma hakkında daha fazla bilgi için bkz. [Şirket portalı kullanıcı Yardım belgeleri](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>İOS için Şirket portalı uygulaması için kullanıcı deneyimi güncelleştirmesi <!-- 2536024 -->
+İOS cihazları için Şirket portalı uygulamasının giriş sayfası yeniden tasarlandı. Bu değişiklik, giriş sayfası iOS kullanıcı Arabirimi desenleri daha iyi izleyin ve ayrıca uygulamaları ve e-Kitaplar için geliştirilmiş bulunabilirliği sağlamak.
+
 
 ## <a name="week-of-february-19-2019"></a>19 Şubat 2019 haftası  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Windows 10 için Şirket portalı uygulamasında yeni uygulama kategorileri ekran<!-- 3834780 WNready4Review -->  

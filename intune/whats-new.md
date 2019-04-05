@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3943e8e2590ae5428477c53e53c229e7a9df47c3
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: bd348a1bfbe4c9fa9b787a4f167a1eb750b27db3
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899104"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041712"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -46,8 +46,18 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 -->     
 
 <!-- ########################## -->
+
 ## <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="updated-certificate-connectors-----icm-113304612---"></a>Güncelleştirilmiş sertifika bağlayıcılar  <!-- ICM 113304612 -->
 Güncelleştirmeler için hem de yayımladık [Intune sertifika Bağlayıcısı ve PFX sertifika Bağlayıcısı'nı](certficates-pfx-configure.md#whats-new-for-connectors). Yeni sürümleri bazı bilinen sorunlar düzeltildi.  
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>İOS için Şirket portalı uygulaması için kullanıcı deneyimi güncelleştirmesi <!-- 2536024 -->
+İOS cihazları için Şirket portalı uygulamasının giriş sayfası yeniden tasarlandı. Bu değişiklik, giriş sayfası iOS kullanıcı Arabirimi desenleri daha iyi izleyin ve ayrıca uygulamaları ve e-Kitaplar için geliştirilmiş bulunabilirliği sağlamak.
 
 ## <a name="week-of-march-25-2019"></a>25 Mart 2019 haftası
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed2a16e4cc34d68342f8cd5b21daeec46c22ff9d
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799555"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041692"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -43,10 +43,11 @@ Intune yöneticisi olarak, Intune ile yönetime kaydedilebilecek cihazların say
   - iOS
   - Mac OS
   - Windows
-- iOS, Android, Android iş profili ve Windows’un platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
+  - Windows Mobile
+- İş profili, Windows ve Windows Mobile iOS, Android, Android için Platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
   - En düşük sürüm.
   - En yüksek sürüm.
-- Kişisel cihazları kısıtlama (yalnızca iOS, Android, Android iş profili, macOS ve Windows).
+- Kişisel cihazları kısıtlama (iOS, Android, Android iş profili, macOS, Windows ve Windows Mobile yalnızca).
 
 ## <a name="default-restrictions"></a>Varsayılan kısıtlamalar
 
@@ -74,7 +75,7 @@ Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarların
 1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
-4. **Cihaz Türü Kısıtlamaları** > ayarlamak istediğiniz kısıtlamayı seçin > **Özellikler** > **Platform seçin**. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
+4. Altında **cihaz türü kısıtlamaları**, ayarlamak istediğiniz kısıtlamayı seçin > **özellikleri** > **platformları seçin**. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
     ![Bir platforma izin verme veya platformu engelleme ekran görüntüsü](media/enrollment-restrictions-set/platform-allow-block.png)
 5. Seçin **Tamam**.
 6. **Platformları yapılandır**’ı seçin.
@@ -99,12 +100,12 @@ Kişisel Windows cihazlarının kayıt yapmasını engellerseniz, Intune, kurums
 Windows şirket kaydı olarak yetkilendirme için aşağıdaki yöntemler uygundur:
  - Kaydeden kullanıcı [cihaz kayıt yöneticisi hesabı]( device-enrollment-manager-enroll.md) kullanıyor.
 - Cihaz [Windows AutoPilot](enrollment-autopilot.md) yoluyla kaydediliyor.
-- Cihaz Windows Autopilot ile kaydediliyor ancak Windows Ayarları'ndan bir yalnızca MDM kaydı seçeneği değil.
+- Cihazın Windows Autopilot ile kayıtlı ancak bir Windows ayarlarından MDM kaydı tek seçenek değildir.
 - Cihazın IMEI numarası **Cihaz kaydı** > **[Şirket cihaz tanımlayıcıları](corporate-identifiers-add.md)**’nda listelenmiş. (Windows Phone 8.1 için desteklenmez.)
 - Cihaz bir [toplu sağlama paketi](windows-bulk-enroll.md) ile kaydediliyor.
 - GPO, cihazı kaydeder veya [SCCM otomatik kayıt için ortak yönetim](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
-Aşağıdaki kayıtlar Intune tarafından şirket olarak işaretlenir ancak Intune yöneticisine cihaz başına denetim sağlamadığı için engellenir:
+Aşağıdaki kayıtları Intune tarafından kuruluş cihazı olarak işaretlenir. Ancak Intune Yöneticisi cihaz başına denetim sunmayan olduğundan, bunlar engellenmesi:
  - [Windows kurulumu sırasında Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
 - [Windows Ayarları'ndan Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
  
@@ -127,7 +128,7 @@ Aşağıdaki adımları izleyerek bir cihaz sınırı kısıtlamasının ayarlar
 6. **Kaydet**’i seçin.
 
 
-KCG kayıtları sırasında kullanıcılar, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görür. Örneğin, iOS'ta şöyle görünür:
+KCG kayıtları sırasında kullanıcılar, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görür. Örneğin, iOS üzerinde:
 
 ![iOS cihazı sınır bildirimi](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

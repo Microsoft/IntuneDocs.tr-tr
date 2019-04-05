@@ -1,12 +1,12 @@
 ---
 title: Intune’da modern kimlik doğrulaması olmayan uygulamaları engelleme
 titleSuffix: Microsoft Intune
-description: Microsoft Intune kullanarak modern kimlik doğrulaması (ADAL) kullanmayan uygulamaları engelleme hakkında bilgi edinin.
+description: Uygulama ve Microsoft Intune kullanarak modern kimlik doğrulaması (ADAL) hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 04/03/2019
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -18,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f75e0de7f7738c3d2c9ff9963edb9e77f9eacd08
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 9ca96f36f8813d80c7ebb07bfb3bd65f8aa0b392
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514435"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041680"
 ---
-# <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Modern kimlik doğrulaması kullanılmayan uygulamaları engelleme (ADAL)
+# <a name="block-apps-that-dont-use-modern-authentication-adal"></a>Modern kimlik doğrulaması (ADAL) kullanmayan uygulamaları engelleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uygulama tabanlı koşullu erişim ile uygulama koruma ilkeleri kullanarak uygulamaları kullanan [modern kimlik doğrulaması](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), bir OAuth2 uygulaması olan. Şu anda çoğu Office mobil ve masaüstü uygulaması modern kimlik doğrulaması kullanın. Ancak, vardır üçüncü taraf uygulamaları ve eski Office uygulamaları söz konusu kullanıcı temel kimlik doğrulaması ve form tabanlı kimlik doğrulaması gibi diğer kimlik doğrulama yöntemleri.
 
-## <a name="block-apps"></a>Uygulamaları engelleme
+## <a name="block-access-to-apps"></a>Uygulamalara erişimi engelle
 
-Modern kimlik doğrulaması kullanmayan uygulamalara erişimi engellemek için aşağıdaki yöntemlerden öneririz:
+Modern kimlik doğrulaması kullanmayan uygulamalara erişimi engellemek için koşul erişim uygulamak için Intune uygulama koruma ilkelerini kullanın. Daha fazla bilgi için [Intune ile uygulama tabanlı koşullu erişim](app-based-conditional-access-intune.md).
 
-- Modern olmayan kimlik doğrulama protokollerini engellemek için ADFS talep kurallarını ayarlayın. [O365’e tarayıcı tabanlı uygulamalar dışındaki tüm erişimi engelleme](https://technet.microsoft.com/library/dn592182.aspx) adlı 3. senaryoda ayrıntılı yönergeler verilmiştir.
-- İçin **Exchange ve SharePoint Online**, koşullu erişim kullanın ve SharePoint için çevrimiçi Set-SPOTenant PowerShell komutunu kullanın. Ayrıntılı yönergeler için bkz. [SharePoint Online'ı ve Exchange Online'ı Azure Active Directory koşullu erişimi için ayarlama](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
+## <a name="additional-information"></a>Ek bilgiler
 
-
->[!IMPORTANT]
->Uygulama tabanlı koşullu erişim, Azure Active Directory (Azure AD) sertifika tabanlı kimlik doğrulaması ile kullanılmamalıdır. Aynı anda bunlardan yalnızca biri yapılandırılmış olabilir.
+Azure AD koşullu erişim hakkında daha fazla bilgi için aşağıdaki konulara bakın:
+- [Azure Active Directory'de koşullu erişim nedir?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Uygulama tabanlı koşullu erişim nasıl çalışır?](app-based-conditional-access-intune.md#how-app-based-conditional-access-works)
+- [SharePoint Online ve Exchange Online için Azure Active Directory koşullu erişim ayarlama](https://docs.microsoft.com/azure/active-directory/conditional-access/conditional-access-for-exo-and-spo)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

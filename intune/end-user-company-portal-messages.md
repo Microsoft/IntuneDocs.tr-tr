@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0985f09ad758403e3461ee00f35af949d0d35bc3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798369"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041704"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma
 
@@ -111,6 +111,34 @@ Kullanıcılarınızı [Günlükleri e-posta ile BT yöneticinize gönderme](/in
 ### <a name="what-it-means"></a>Anlamı
 
 Şirket portalı'na ekleme **izin verilen uygulamalar** veya **muaf uygulamalar** Windows bilgi Koruması (WIP) uygulama koruma İlkesi listesinde. Daha fazla bilgi için bkz. [Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma](windows-information-protection-policy-create.md).
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>İOS Cihazınızda iOS şirket uygulaması (satır iş kolu uygulaması) onaylayın 
+
+### <a name="where-it-appears"></a>Göründüğü yer
+App Store içinde kullanılabilir değil, kuruluşunuz tarafından geliştirilen iOS uygulamaları cihazınız tarafından varsayılan olarak güvenilir değil. Şirket portalını kullanarak bu tür uygulamaları yükleyip uygulamayı başlatın, aşağıdaki ileti görüntülenir:
+
+![iOS uygulaması iletisi - güvenilmeyen Kurumsal Geliştirici](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>Anlamı
+Bu ileti onaylamak ve iOS Cihazınızda şirket tarafından geliştirilen bir uygulamayı yüklemek için iOS cihaz ayarlarınızı değiştirmek ihtiyacınız olduğu anlamına gelir.
+
+Şirket portalını kullanarak bu uygulamaları yüklemek ve uygulamayı başlatın, uygulamayı indirdikten sonra onaylamak için aşağıdaki adımları izleyin:
+
+1. (Satır iş kolu uygulaması) yüklü şirket uygulama başlatma sırasında "Güvenilmeyen Kurumsal Geliştirici" iletisini görür. <br>
+   Tuşuna **iptal**.
+2. Gidin **ayarları** > **genel** > **cihaz Yönetimi**.
+
+   ![iOS cihazının kullanıcı Arabirimi - cihaz Yönetimi](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. Seçin **yönetim profili** > **Kurumsal uygulama**.
+4. Geliştirici adını seçin.
+5. Tuşuna **güven _Geliştirici adı_**.
+6. Seçerek uygulama onaylayın **güven** uygulama yükleme açılır ileti üzerinde.
+
+   ![iOS cihazının kullanıcı Arabirimi - güven uygulama ileti](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    Şirket uygulamasını başlatın ve olmalıdır.
+
 
 ### <a name="see-also"></a>Ayrıca bkz.
 [Son kullanıcılarınıza Intune kullanma hakkında söylemeniz gerekenler](end-user-educate.md)
