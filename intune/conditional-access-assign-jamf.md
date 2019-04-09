@@ -1,5 +1,5 @@
 ---
-title: Jamf cihazları için cihaz uyumluluk İlkesi | Microsoft Intune
+title: Jamf cihazları için cihaz uyumluluk ilkesi
 titleSuffix: Microsoft Intune
 description: Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın.
 keywords: ''
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf465394e7c94cd0bc5219a7f2b0ac8c05695853
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: a2fc212d370e6835428e7b0ae837e3882a38e37e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798735"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292292"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
 
-Uygulama hedefi: Azure portalında Intune
+Şunun için geçerlidir: Azure portalında Intune
 
 Azure Active Directory'yi ve Microsoft Intune koşullu erişim ilkelerini son kullanıcılarınızın kuruluş gereksinimleriyle uyumlu olmasını sağladığından emin olmak için kullanabilirsin. Bu politikaları, [Jamf Pro](conditional-access-integrate-jamf.md) ile yönetilen Mac'lere uygulayabilirsiniz. Bu hem Intune hem de Jamf Pro konsollarına erişim gerektirir.
 

@@ -1,5 +1,6 @@
 ---
-title: Koşullu erişim Intune | Microsoft Intune
+title: Microsoft Intune ile koşullu erişim
+titleSuffix: Microsoft Intune
 description: Microsoft Intune'da kullanıcıların, cihazların ve uygulamaların şirket kaynaklarına erişmek için uymaları gereken koşulları tanımlamayı öğrenin.
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 126406e078375fea837fcebe1f469fb0e5190f7d
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 34ce3f34dbf3c060438a6b30abc9345687cdaf47
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57990971"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292199"
 ---
 # <a name="whats-conditional-access"></a>Koşullu erişim nedir?
 

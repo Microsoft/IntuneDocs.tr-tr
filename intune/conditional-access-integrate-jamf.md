@@ -1,5 +1,6 @@
 ---
-title: Jamf Pro'yu uyumluluk için Microsoft Intune tümleştirme | Microsoft Intune
+title: Uyumluluk için Jamf Pro’yu Microsoft Intune ile tümleştirme
+titleSuffix: Microsoft Intune
 description: Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın.
 keywords: ''
 author: brenduns
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 27f8f80aca1a8517864d375f75b6829d325740ce
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 57527d0b1825d0e8d3fefb63d1b960ab3fb5c676
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399217"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292276"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
-Uygulama hedefi: Azure portalında Intune
+Şunun için geçerlidir: Azure portalında Intune
 
 Kuruluşunuz kullanıyorsa [Jamf Pro](https://www.jamf.com) , son kullanıcılar Mac'lerini yönetmek için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişim ile kuruluşunuzdaki cihazların uyumlu olmasını sağlamak için kullanabilirsiniz.
 

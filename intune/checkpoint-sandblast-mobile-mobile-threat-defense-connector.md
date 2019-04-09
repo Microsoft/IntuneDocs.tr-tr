@@ -1,5 +1,5 @@
 ---
-title: Check Point SandBlast MTD ayarlama | Microsoft Intune
+title: Check Point SandBlast MTD ayarlayın
 titleSuffix: Microsoft Intune
 description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Check Point SandBlast Mobile Threat Defense’i Intune ile tümleştirme hakkında bilgi edinin.
 keywords: ''
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce5e51cfb503f232ef65f221207488014f010b18
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: ac9ecbdd55fff39cbdf1b772d2db8e364730e90e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799456"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292240"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense bağlayıcısı ile Intune
 

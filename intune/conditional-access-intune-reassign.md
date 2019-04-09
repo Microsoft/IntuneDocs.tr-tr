@@ -1,5 +1,6 @@
 ---
-title: Azure portalında koşullu erişim geçişi | Microsoft Intune
+title: Azure portalına koşullu erişim geçişi
+titleSuffix: Microsoft Intune
 description: Önceden klasik Intune portalında oluşturduğunuz koşullu erişim ilkelerini Azure portalına yeniden atayın.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f8800eea75afb51af94a250e96fa577f6ecb231
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fe1c9baac31f8709aad3f88dc42c82b35c201027
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389601"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292367"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Koşullu erişim ilkelerini Klasik Intune portalından Azure portalına yeniden atama
 

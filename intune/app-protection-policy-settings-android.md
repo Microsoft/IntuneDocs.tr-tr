@@ -1,5 +1,5 @@
 ---
-title: Android uygulama koruma İlkesi ayarları | Microsoft Intune
+title: Android uygulama koruma ilkesi ayarları
 titleSuffix: Microsoft Intune
 description: Bu konu başlığı altında Android cihazları için uygulama koruma ilkesi ayarları açıklanır.
 keywords: ''
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22abe2d0ab06f9d9fbc41e764f180b6a14585f2d
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5fad21abf8bd08d989d881953b4c0c790c4b9b8c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799563"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292395"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).

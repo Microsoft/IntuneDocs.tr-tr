@@ -1,5 +1,6 @@
 ---
-title: Windows bilgi Koruması ayarlarını Microsoft Intune | Microsoft Intune
+title: Microsoft Intune’da Windows Bilgi Koruması ayarları
+titleSuffix: Microsoft Intune
 description: Windows Bilgi Koruması’nı yönetmek için kullanabileceğiniz Microsoft Intune ayarlarını öğrenin.
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4de47ace4c648a2469ff9d1144f694cc86a95bf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fc3684a04611e0b7ec8cd17cb5cdf428c1150a55
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395816"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292508"
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Microsoft Intune’da Windows Bilgi Koruması’nı yapılandırma
 

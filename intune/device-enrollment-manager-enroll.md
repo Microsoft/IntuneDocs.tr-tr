@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e98398f6d5bf0fe077640f83992ba3134479e81b
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 6bb3289bf2136506903d1fefe6c5170580a6fc11
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797787"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292338"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Bir cihaz kayıt yöneticisi hesabı kullanarak cihazları ıntune'a kaydetme
 
@@ -33,6 +33,7 @@ Bir cihaz kayıt yöneticisi (DEM) hesabı kullanarak tek bir Azure Active Direc
 
 DEM kullanıcı hesapları ve bir DEM kullanıcı hesabıyla kaydedilen cihazlarda aşağıdaki kısıtlamalar söz konusudur:
 
+  - Bir DEM hesabı kullanıcısı bir Intune lisansı atanmış olması gerekir.
   - Silme işlemi Şirket Portalı’ndan yapılamaz. DEM kullanıcı hesabı tarafından kaydedilen bir cihazı silme işlemi, Azure portalında Intune’dan yapılamaz.
   - Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
   - DEM kullanıcı hesapları, uygulama yönetimi için kullanıcı başına Apple Kimliği gereksinimlerinden dolayı Apple Volume Purchase Program (VPP) uygulamalarını Apple VPP lisanslarıyla kullanamaz.

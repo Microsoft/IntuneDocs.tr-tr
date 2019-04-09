@@ -1,12 +1,12 @@
 ---
-title: Web erişimini ilkeyle korunan bir tarayıcı ile yönetme
+title: İlkeyle korunan bir tarayıcı ile Kurumsal web erişimini yönetme
 titleSuffix: Microsoft Intune
-description: Web taramayı ve Web veri aktarımını kısıtlamak için ilkeyle korunan bir tarayıcı kullanın.
+description: Kurumsal Web'e Gözatmayı ve web veri aktarımını yönetmek için Intune tarafından atanan ilkeyle korunan bir tarayıcı kullanın.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,26 +16,26 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03153450e51b7f83f2e426d5a7bdf25e7fb95bbe
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799485"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292391"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak İnternet erişimini yönetme
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilkeyle korunan bir tarayıcı kullanarak web erişimini yönetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune ilkesiyle korunan bir tarayıcı (Microsoft Edge veya Intune Managed Browser) kullanarak kurumsal Web sitelerine her zaman koruma önlemleri devrede olarak erişilmesini sağlayabilirsiniz.  Intune ile yapılandırıldığında korumalı tarayıcılar aşağıdakilerden yararlanabilir:
 
-- Uygulama koruma ilkeleri.
-- Koşullu erişim.
-- Çoklu oturum açma.
-- Uygulama yapılandırma ayarları.
-- Azure uygulama proxy tümleştirmesi.
+- Uygulama koruma ilkeleri
+- Koşullu erişim
+- Çoklu oturum açma
+- Uygulama yapılandırma ayarları
+- Azure uygulama proxy'si tümleştirmesi
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge desteği
 
@@ -45,13 +45,6 @@ Microsoft Edge, iOS ve Android cihazlarda Kurumsal senaryolar için kullanabilir
 2. **Intune uygulama koruma İlkesi tümleştirmesi** - yöneticileri artık uygulama koruma ilkelerinin Microsoft kesme, kopyalama ve yapıştırma, denetimin dahil olmak üzere Edge Ekran görüntüsü, hedef ve yönetilen diğer kullanıcı tarafından seçilen bağlantıları yalnızca açılmasını sağlama uygulamaları.
 3. **Azure uygulama proxy'si tümleştirmesi** - Yöneticiler, SaaS uygulamalarına erişimi denetleyebilir ve web uygulamaları, tarayıcı tabanlı uygulamalar yalnızca sağlanmasına yardımcı olur, son kullanıcıların Kurumsal ağdan bağlanmak veya bağlanmak güvenli Microsoft Edge tarayıcısında çalıştırın İnternet'e. 
 4. **Sık Kullanılanlar yönetilen ve giriş sayfası kısayolları** -erişim kolaylığı için son kullanıcılar kendi Kurumsal bağlamda olduğunda sık kullanılanları altında görünmesini URL'leri yöneticileri ayarlayabilir. Yöneticiler, Kurumsal kullanıcı Microsoft Edge'de yeni bir sayfa ya da yeni bir sekmede açtığında, birincil kısaca gösterilir giriş sayfası kısayol ayarlayabilir.
-
-Intune ilkesiyle (Microsoft Edge ya da Intune Managed Browser) korumalı bir tarayıcı kullanarak, Kurumsal Web siteleri, yerinde koruma ile erişilen emin olabilirsiniz. Intune İlkesi tarafından korunan tarayıcıları birini yararlanın:
-- Uygulama koruma ilkeleri
-- Koşullu erişim
-- Çoklu oturum açma
-- Uygulama yapılandırma ayarları
-- Azure uygulama proxy'si tümleştirmesi
 
 Microsoft Edge için Intune koruma ilkeleri, kuruluşunuzun veri ve kaynakları korumanıza yardımcı olur. Intune ile korunan Microsoft Edge, şirketinizin kaynaklarına yalnızca yerel olarak yüklü uygulamaların içinde aynı zamanda web tarayıcısı üzerinden erişildiğinde korunmasını sağlar.
 
@@ -206,7 +199,7 @@ Bu ayar ile kullanıcıların korumalı tarayıcıyı başlattıklarında veya y
 
 Microsoft Edge veya Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-|                                Anahtar                                |                                                           Değer                                                            |
+|                                Anahtar                                |                                                           Value                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>Örnek: `<https://www.bing.com>` |
 
@@ -220,7 +213,7 @@ Bu ayar ile Microsoft Edge veya Managed Browser kullanıcılarına sunulmak üze
 
 Microsoft Edge veya Managed Browser uygulama yapılandırması oluşturma yordamını kullanarak aşağıdaki anahtar ve değer çiftini sağlayın:
 
-|                                Anahtar                                 |                                                                                                                                                                                                                                                         Değer                                                                                                                                                                                                                                                          |
+|                                Anahtar                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Bu yapılandırmanın değeri, bir yer işaretleri listesidir. Her bir yer işareti, yer işareti adı ve URL’sinden oluşur. Başlık ve URL’yi <strong>&#124;</strong> karakteriyle ayırın.<br><br>Örnek:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Birden çok yer işareti yapılandırmak için her bir başlık-URL ikilisini çift karakterle ayırın, <strong>&#124;&#124;</strong><br><br>Örnek:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 

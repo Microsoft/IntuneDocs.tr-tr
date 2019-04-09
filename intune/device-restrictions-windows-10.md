@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51c1ee388c6930c328aff23cc6fc6db730097b86
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 41eca84f49c8bd1827d6dfbc74909ee829dd3554
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899079"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292475"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -138,9 +138,9 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 - **SIM kart hatası iletişim kutusu (yalnızca mobil)**: Bir hata iletisi yok SIM Kart algılanmazsa cihazda görüntüleme alanından engeller.
 - **Ink çalışma alanı**: Kullanıcıların Ink çalışma alanına erişmesini engelleyin. **Yapılandırılmamış** açar Ink çalışma alanına ve kullanıcının kilit ekranının üstünde kullanmasına izin verilir.
 - **Otomatik yeniden dağıtım**: Tüm kullanıcı verilerini ve ayarlarını kullanarak yönetim haklarına sahip kullanıcılara **CTRL + Win + R** cihaz kilit ekranında. Cihaz otomatik olarak yeniden yapılandırılacak ve yönetime yeniden kaydedilir.
-- **Kullanıcıların (yalnızca Windows Insider) cihaz kurulumu sırasında ağa bağlanmasını gerektiren**: Seçin **gerektiren** cihaz Windows 10 kurulumu sırasında geçmiş ağ sayfasına geçmeden önce bir ağa bağlanacak şekilde. Bu özellik Önizleme aşamasında olduğu sürece, bir Windows Insider derlemesi 1809 veya sonraki bir sürümü bu ayarı kullanmak için gereklidir.
+- **Kullanıcıların cihaz kurulumu sırasında ağa bağlanmasını gerektiren**: Seçin **gerektiren** cihaz Windows 10 kurulumu sırasında geçmiş ağ sayfasına geçmeden önce bir ağa bağlanacak şekilde.
 
-  Ardından, bir cihazda Windows 10 kurulumu sırasında ağ bağlantısı yoksa, bu ayar uygulanmaz. Ayarı, cihaz sonlandırılana veya sıfırlama sonraki açışınızda etkin hale gelir. Bu nedenle, yeni cihazlar için geçerli olmayabilir. Diğer Intune yapılandırması gibi cihaz kayıtlı ve yapılandırma ayarlarını almak için Intune tarafından yönetilir. Ancak bir kez kaydedilir ve ilkeleri alma, sonra cihaz Fabrika ayarı sonraki Windows Kurulumu sırasında uygular.
+  Ayarı, cihaz sonlandırılana veya sıfırlama sonraki açışınızda etkin hale gelir. Diğer Intune yapılandırması gibi cihaz kayıtlı ve yapılandırma ayarlarını almak için Intune tarafından yönetilir. Ancak bir kez kaydedilir ve ilkeleri alma, sonra cihaz Fabrika ayarı sonraki Windows Kurulumu sırasında uygular.
 
 - **Doğrudan bellek erişimi**: **Blok** Windows kullanıcının oturum açtığı kadar sık erişimli takılabilir PCI aşağı akış için tüm bağlantı doğrudan bellek erişimi (DMA) engeller. **Etkin** (varsayılan), hatta bir kullanıcı oturum açmadı olduğunda DMA, erişim sağlar.
 

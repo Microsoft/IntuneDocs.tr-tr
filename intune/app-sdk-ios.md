@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b19a0100a53cebe66dae9805ac0cc5b5314e8ad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1d3e6877a690eaf1f33c1b81841170fb616592ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566786"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292492"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -179,7 +179,7 @@ Uygulamanızla ADAL ikili dosyaları arasında bağlantı kurmak için aşağıd
 
 3. Uygulamanızda tanımlanmış bir anahtar zinciri erişim grubu yoksa, uygulamanın paket kimliğini ilk grup olarak ekleyin.
 
-4. Anahtar zinciri erişim gruplarına `com.microsoft.adalcache` ve `com.microsoft.workplacejoin` ekleyerek ADAL çoklu oturum açma (SSO) ayarını etkinleştirin.
+4. Anahtar zinciri erişim gruplarına `com.microsoft.adalcache` ekleyerek ADAL çoklu oturum açma (SSO) ayarını etkinleştirin.
 
 5. ADAL paylaşımlı önbellek anahtar zinciri grubunu açıkça ayarlıyorsanız, ayarın `<appidprefix>.com.microsoft.adalcache` olduğundan emin olun. Bu ayarı geçersiz kılmadığınız sürece ADAL bunu sizin için ayarlar. `com.microsoft.adalcache` öğesini değiştirmek için özel bir anahtar zinciri grubu belirtmek isterseniz, bunu IntuneMAMSettings altındaki Info.plist dosyası içinde `ADALCacheKeychainGroupOverride` anahtarını kullanarak belirtin.
 

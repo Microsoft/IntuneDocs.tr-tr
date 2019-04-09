@@ -1,5 +1,6 @@
 ---
-title: Ekleme ve Microsoft Intune MTD uygulamaları atama | Microsoft Intune
+title: Microsoft Intune'a MTD uygulamaları ekleme ve atama
+titleSuffix: Microsoft Intune
 description: Azure portalında Intune kullanarak Mobile Threat Defense (MTD) uygulamalarını, Microsoft Authenticator uygulamasını ve iOS yapılandırma ilkesini ekleyin.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42a9f3a496a74170f4db4a2f716ddfc0ea51c925
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390599"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292375"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama
 

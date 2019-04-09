@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8712fc49bce8237e717a1a38e63ec334509e3217
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400475"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231809"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -282,8 +282,8 @@ Bu adımda şunları yapacaksınız:
 
     Aşağıdaki değerlerin DWORD girişleri olarak ayarlandığını doğrulayın:
 
-    - Adı: **MaxFieldLength**, ondalık bir değer ile **65534**
-    - Adı: **MaxRequestBytes**, ondalık bir değer ile **65534**
+    - Ad: **MaxFieldLength**, ondalık bir değer ile **65534**
+    - Ad: **MaxRequestBytes**, ondalık bir değer ile **65534**
 
 4. NDES sunucusunu yeniden başlatın. Sunucu artık Sertifika Bağlayıcısı'nı desteklemeye hazırdır.
 
@@ -299,12 +299,13 @@ Bu adımda şunları yapacaksınız:
 > Microsoft Intune Sertifika Bağlayıcısı, ayrı bir Windows sunucusunda yüklü **olmalıdır**. Sertifika veren Sertifika Yetkilisi’ne (CA) yüklenemez. Ayrıca Ağ Cihazı Kayıt Hizmeti (NDES) rolüyle aynı sunucuda da yüklü **olmalıdır**.
 
 1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-2. **Cihaz Yapılandırması** > **Sertifika Yetkilisi** > **Ekle** seçeneğini belirleyin
-3. Bağlayıcı dosyasını indirip kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
+2. Seçin **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**.
+3. İndirin ve bağlayıcı için SCEP dosyasını kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
 
-    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. İndirme tamamlandıktan sonra Ağ Cihazı Kayıt Protokolü (NDES) rolünü barındıran sunucuya gidin. Daha sonra:
+
+4. İndirme tamamlandıktan sonra ağ cihazı kayıt hizmeti (NDES) barındıran sunucuya gidin. Daha sonra:
 
     1. NDES Sertifika bağlayıcısının gerektirdiği .NET 4.5 Framework’ün yüklü olduğundan emin olun. .NET 4.5 Framework, Windows Server 2012 R2 ve daha yeni sürümlere otomatik olarak eklenir.
     2. Yükleyiciyi çalıştırın (**NDESConnectorSetup.exe**). Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. CRP Web Hizmeti yani CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.

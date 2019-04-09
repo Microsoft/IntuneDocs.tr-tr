@@ -1,5 +1,6 @@
 ---
-title: Intune işletim sistemi sürümlerini yönetme | Microsoft Intune
+title: Microsoft Intune ile işletim sistemi sürümlerini yönetme
+titleSuffix: Microsoft Intune
 description: Microsoft Intune ile platformlar arasında işletme sistemlerini nasıl yöneteceğinizi öğrenin.
 keywords: ''
 author: brenduns
@@ -14,12 +15,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d62a2b5a977fc0cfebd27d393501629633b93b97
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d6afd4b0bb45db580f3be47680675bd268681a11
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396421"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292248"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune ile işletim sistemi sürümlerini yönetme
 Modern mobil ve masaüstü platformlarda önemli güncelleştirmeler, düzeltme ekleri ve yeni sürümler sık sık yayınlanır. Windows üzerinde güncelleştirmeleri ve düzeltme eklerini yönetmek için tam denetiminiz olsa da iOS ve Android gibi diğer platformlarda son kullanıcılarınızın da bu işlemde yer alması gerekir.  Microsoft Intune, farklı platformlarda işletim sistemi sürümü yönetiminizi yapılandırmak için farklı işlevlere sahiptir.

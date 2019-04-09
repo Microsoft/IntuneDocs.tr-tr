@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dbeed85ea368267ddfcf61bb919729b64dc3dde
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: e1c4266ad4ae877eadb29b7f35ef0e955028a4b9
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59041716"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231855"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha fazla bilgi edinin. Biz düzenli olarak ekleyin ve Intune Şirket portalı uygulamasını ve Web sitesi geliştirmek. Bu makalede, bir Intune Yöneticisi olduğunuz veya kişi desteklemek için gereken bilgileri sağlanmaktadır:
@@ -35,10 +35,20 @@ Bir çalışan veya Öğrenci kullanıyorsanız ekran görüntüleri ve bağlant
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
-## <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası
-### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>İOS için Şirket portalı uygulaması için kullanıcı deneyimi güncelleştirmesi <!-- 2536024 -->
-İOS cihazları için Şirket portalı uygulamasının giriş sayfası yeniden tasarlandı. Bu değişiklik, giriş sayfası iOS kullanıcı Arabirimi desenleri daha iyi izleyin ve ayrıca uygulamaları ve e-Kitaplar için geliştirilmiş bulunabilirliği sağlamak.
 
+## <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası  
+
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>İOS için Şirket portalı kaydı için 12 cihaz kullanıcılarının değiştirir. <!--3448635 -->  
+İOS kayıt ekranlar ve adımlar için Şirket portalı, Apple iOS 12.2 yayımlanan MDM kayıt değişikliklerle hizalamak için güncelleştirildi. Güncelleştirilmiş iş akışı, kullanıcıların ister:  
+
+* Şirket portalı Web sitesini açın ve Şirket portalı uygulamasında döndürmeden önce yönetim profili yüklemek Safari izin verir.  
+* Yönetim profili cihaza yüklemek üzere ayarlar uygulamasını açın.  
+* Şirket portalı uygulamasının kaydı döndürür.  
+
+Güncelleştirilmiş kayıt adımları ve ekranlar için bkz: [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>İOS için Şirket portalı uygulaması için kullanıcı deneyimi güncelleştirmesi <!-- 2536024 -->
+İOS cihazları için Şirket portalı uygulamasının giriş sayfası yeniden tasarlandı. Bu değişiklik, giriş sayfası iOS kullanıcı Arabirimi desenleri daha iyi izleyin ve ayrıca uygulamaları ve e-Kitaplar için geliştirilmiş bulunabilirliği sağlamak.  
 
 ## <a name="week-of-february-19-2019"></a>19 Şubat 2019 haftası  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Windows 10 için Şirket portalı uygulamasında yeni uygulama kategorileri ekran<!-- 3834780 WNready4Review -->  
@@ -496,16 +506,7 @@ Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kı
 Bunlar, kullanıcı arabirimimizi güncelleştirerek kullanıcı deneyimini geliştirme yollarımıza yönelik planlardır.
 
 > [!Note]
-> Aşağıdaki görüntülerin önizleme sürümüne ait olabileceğini ve duyurulan sürümün farklı olabileceğini lütfen unutmayın.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635-eeready-eestaged--"></a>İOS için Şirket portalı kaydı için 12 cihaz kullanıcılarının değiştirir. <!--3448635 EEready eestaged-->  
-
-İOS için Şirket portalı uygulaması Apple iOS 12.2 yayımlanan MDM kayıt değişiklikleri hizalamak için adımları ve kayıt ekranlar güncelleştiriliyor. Yeni kayıt deneyimi, kullanıcıların ister:  
-* Safari (aracılığıyla Safari) şirket Portalı Web sitesini açın ve Şirket portalı uygulamasında döndürmeden önce yönetim profili yüklemek izin verin.  
-* Yönetim profili cihaza yüklemek üzere ayarlar uygulamasını açın.  
-* Şirket portalı uygulamasının kaydı döndürür.  
-
- Biz kayıt dizisi güncelleştirerek ve ekranda bu deneyim eşleştirmek için metin ister. Bu değişikliklere ilişkin aygıt kullanıcıları nasıl hazırlayabilirsiniz hakkında daha fazla bilgi için bkz. [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios#enroll-your-ios-device).   
+> Aşağıdaki görüntülerin Önizleme sürümüne ait olabileceğini ve duyurulan sürümün farklı.  
 
 
 ### <a name="see-also"></a>Ayrıca bkz.

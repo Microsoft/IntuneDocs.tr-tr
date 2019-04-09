@@ -1,5 +1,6 @@
 ---
-title: Lookout MTD bağlayıcısını Intune | Microsoft Intune
+title: Microsoft Intune ile Lookout MTD bağlayıcısı
+titleSuffix: Microsoft Intune
 description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Lookout Mobile Threat Defense’i (MTD) Intune ile tümleştirme hakkında bilgi edinin.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 057369869e8c57f251fb4027ef527641c1391ef3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9cf507ba470013bddf4809b6ad6ad54b4cb52d9d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400390"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292224"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Intune ile Lookout Mobile Threat Defense bağlayıcısı
 

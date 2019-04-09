@@ -1,5 +1,6 @@
 ---
-title: JAMF Pro veri gönderen için Intune | Microsoft Intune
+title: Veri JAMF Pro'nın Intune'a gönderdiği
+titleSuffix: Microsoft Intune
 description: Jamf Pro Microsoft Intune gönderdiği verilerin listesi
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f97952b5e8ba83f01df18cf9628a7782c737e89
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 452d6fafccc2d53d2f6940197ef4a1aa19febfc2
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400186"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292203"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro’nun Intune’a gönderdiği veriler
 

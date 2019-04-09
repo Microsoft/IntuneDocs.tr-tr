@@ -1,5 +1,5 @@
 ---
-title: Uygulama koruma İlkesi günlüklerini gözden geçirin | Microsoft Intune
+title: Uygulama koruma ilkesi günlüklerini gözden geçirme
 titleSuffix: Microsoft Intune
 description: Bu konuda, Intune uygulama koruma İlkesi (uygulama) günlüklerini yapılandırma açıklanmaktadır.
 keywords: ''
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8546ca0d513fd5b4d935e030d82e956f3030fa4d
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: bab5671f8b4069608f32e22057e4ddcbb594cb9f
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798727"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292220"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 

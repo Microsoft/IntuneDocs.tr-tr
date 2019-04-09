@@ -1,11 +1,12 @@
 ---
-title: İOS uygulamaları arasında veri aktarımını yönetme | Microsoft Intune
+title: iOS uygulamaları arasında veri aktarımını yönetme
+titleSuffix: Microsoft Intune
 description: Uygulamalar arasında veri aktarımlarını yönetmek için Microsoft Intune'da mobil uygulama yönetimi ilkelerinin nasıl kullanılacağını öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a7fff1eff4aa59dbcd986a08279fc632f35d9ce
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394820"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292383"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 

@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/16/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd162f6af256c104c04374290a695141cdcc26f6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d42fab929d6fa3e7fbaed8e9557573ebbaa1f3ad
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566208"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292359"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -110,6 +110,8 @@ Uygulamanızı tanımlamalıdır bir `Android.App.Application` öğesinden devra
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+> [!NOTE]
+> MAM Xamarin bağlamaları ile ilgili bir sorun, uygulamanın hata ayıklama modunda dağıttığınızda çökmesine neden olabilir. Geçici bir çözüm olarak `Debuggable=false` özniteliği eklenmelidir `Application` sınıfı ve `android:debuggable="true"` bayrağı el ile ayarlamanız bildiriminden kaldırılmalıdır.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Uygulama katılımı gerektiren özellikleri etkinleştirme](app-sdk-android.md#enable-features-that-require-app-participation)
 Örnek: PIN uygulama için gerekli olup olmadığını belirler
@@ -173,4 +175,4 @@ Xamarin sınıfların devralma Remapper değişiklik yaptığında, belirli işl
 > Remapper IntelliSense otomatik tamamlama için Visual Studio kullanan bir bağımlılık yeniden yazar. Bu nedenle, yeniden yükleyin ve doğru şekilde değişiklikleri tanıyabilmesi IntelliSense için Remapper eklendiğinde projeyi yeniden derleyin gerekebilir.
 
 ## <a name="support"></a>Destek
-Kuruluşunuz zaten bir Intune müşterisiyse destek bileti açmak ve [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) bir sorun bileti oluşturmak için Microsoft desteği temsilcinizle birlikte çalışın, mümkün olduğunca kısa sürede size yardım ederiz. 
+Kuruluşunuz var olan bir Intune müşteri ise, Lütfen bir destek bileti açın ve bir sorun oluşturmak için Microsoft desteği temsilcinizle çalışarak [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) ve size mümkün olduğunca kısa sürede size yardımcı olur. 

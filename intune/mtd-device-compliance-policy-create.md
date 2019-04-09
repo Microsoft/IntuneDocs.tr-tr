@@ -1,5 +1,6 @@
 ---
-title: Microsoft Intune MTD cihaz uyumluluk ilkesi oluşturma | Microsoft Intune
+title: Microsoft Intune ile MTD cihaz uyumluluk ilkesi oluşturma
+titleSuffix: Microsoft Intune
 description: Bir mobil cihazın şirket kaynaklarına erişip erişemeyeceğini belirlemek için MTD iş ortağı tehdit düzeylerinizi kullanan bir Intune cihaz uyumluluğu ilkesi oluşturun.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab46c55e7655e2c1261c69addf4d6746f12fe303
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fe3561bd664842e79f50f738307ce6a026464565
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396259"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292265"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune ile Mobile Threat Defense (MTD) cihaz uyumluluk ilkesi oluşturma
 

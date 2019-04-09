@@ -1,5 +1,6 @@
 ---
-title: Symantec bağlayıcı Intune | Microsoft Intune
+title: Microsoft Intune ile Symantec bağlayıcısı
+titleSuffix: Microsoft Intune
 description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Symantec Endpoint Protection Mobile’ı Intune ile tümleştirme hakkında bilgi edinin.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d4defdfdfe4b949ee799ece1b1ba647338d6b03
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b3c2cd696e2e8dabbe8c45a5758d1315c4ca31c4
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397500"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292256"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile bağlayıcısı
 

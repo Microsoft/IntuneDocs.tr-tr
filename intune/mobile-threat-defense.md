@@ -1,5 +1,6 @@
 ---
-title: Microsoft Intune ile Mobile Threat Defense | Microsoft Intune
+title: Microsoft Intune ile Mobile Threat Defense
+titleSuffix: Microsoft Intune
 description: Cihaz riskine dayalı şirket kaynaklarına erişimi korumak için Mobil Threat Defense iş ortağınız ile Intune Mobil Threat Defense (MTD) kullanın.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2dc1136b5f47c6f695f9822dd1d7bcdbb21a22a0
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: e364ad88591b8ecc945702659255d9378723624f
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306809"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292232"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi nedir?
 Intune uyumluluk ilkeleri ve koşullu erişim kurallarınız için bilgi kaynağı olarak bir Mobile Threat Defense satıcınızdan verilerini tümleştirebilirsiniz. Ele geçirilen mobil cihazlardan erişimi engelleyerek Exchange ve SharePoint gibi şirket kaynaklarını korumaya yardımcı olmak için bu bilgileri kullanabilirsiniz.  

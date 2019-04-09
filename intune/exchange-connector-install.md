@@ -1,5 +1,6 @@
 ---
-title: Microsoft Intune ayarlama şirket içi Exchange Bağlayıcısı | Microsoft Intune
+title: Microsoft Intune şirket içi Exchange bağlayıcısını ayarlama
+titleSuffix: Microsoft Intune
 description: Şirket içi Exchange bağlayıcısını kullanarak Intune kaydı ve Exchange Active Sync (EAS) temelinde Exchange posta kutularına cihaz erişimini yönetin.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: deb3e57876dffdc19129a5d845872d90d5833aaf
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 3724f2494dd4e4fe7939a9be87a30e1bc5bfbf27
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394701"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292174"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Intune şirket içi Exchange connector, Microsoft Intune ayarlama
 Bu makaledeki bilgiler yükleyin ve ardından Exchange Active Sync şirket içi Bağlayıcısı için Intune izlemenize yardımcı olur.  Intune şirket içi Exchange bağlayıcısıyla kullanan, [izin vermek veya Exchange erişimi engellemek için koşullu erişim ilkeleri şirket içi posta kutularını](conditional-access-exchange-create.md). 

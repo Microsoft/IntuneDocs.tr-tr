@@ -1,5 +1,6 @@
 ---
-title: Rapor şifreleme ve BitLocker anahtarlarını Microsoft Intune | Microsoft Intune
+title: Şifreleme rapor ve Intune BitLocker anahtarları
+titleSuffix: Microsoft Intune
 description: Bir raporu, cihaz şifreleme durumunu görüntülemek ve Intune portalındaki BitLocker kurtarma anahtarlarını erişebilirsiniz.
 keywords: ''
 author: brenduns
@@ -16,18 +17,18 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 820800deea491c363834a9cafaf077c0992467f6
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 43cef2e5a07795bc4c6dc7cf42b2cfa6be04269f
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394656"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292260"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker'ı ve cihaz şifreleme izleyin  
 Intune, Windows 10 cihazlarınızın şifreleme durumunu belirlemek için merkezi bir konum sağlayan ve BitLocker için önemli bilgiler, Azure Active Directory (Azure AD) bulunan cihazlardan erişim yardımcı olur.  
 
-- [Şifreleme raporu (genel önizlemede)](#encryption-report) cihaz şifreleme durumu ve hazırlık hakkında ayrıntılar sağlar. Rapor ayrıntıları korumak istediğiniz cihazların başarılı şifreleme engelleyen sorunları belirlemenize yardımcı olabilir.  
-- [BitLocker'ı ayrıntılarına bakın (genel Önizleme aşamasında)](#bitlocker-recovery-keys) cihazlarınızdan Intune portalındaki anahtarı kimliği ve kurtarma anahtarlarını ister.  
+- [Şifreleme raporu (genel önizlemede)](encryption-monitor.md#encryption-report-in-public-preview) cihaz şifreleme durumu ve hazırlık hakkında ayrıntılar sağlar. Rapor ayrıntıları korumak istediğiniz cihazların başarılı şifreleme engelleyen sorunları belirlemenize yardımcı olabilir.  
+- [BitLocker'ı ayrıntılarına bakın (genel Önizleme aşamasında)](encryption-monitor.md#bitlocker-recovery-keys-in-public-preview) cihazlarınızdan Intune portalındaki anahtarı kimliği ve kurtarma anahtarlarını ister.  
 
 ## <a name="encryption-report-in-public-preview"></a>Şifreleme rapora (genel Önizleme)
 Windows 10 cihazlarınızın şifreleme durumu hakkındaki ayrıntıları görüntülemek için şifreleme rapor (Pubic Önizleme aşamasında) kullanabilirsiniz.  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8807cb090cfb662f2ab273d29baf2715dfcd6426
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 327019527ea3c374a3ebeb3c29703dbd744d18dc
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799137"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231777"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>Microsoft Intune - Nisan 2019 geliştirme
 
@@ -71,7 +71,7 @@ Dahil etmek ve kullanıcı grupları ve cihaz grupları dışlamak mümkün olac
 
 [Cihaz yapılandırma profillerini atama](device-profile-assign.md) kullanıcı grupları ve cihaz profilleri atama hakkında daha fazla bilgi içerir.
 
-Uygulama hedefi: Tüm platformlar
+Şunun için geçerlidir: Tüm platformlar
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Uyumlu olmayan cihazları devre dışı bırakma <!-- 1827291 -->
 Uyumsuz bir cihazı devre dışı bırakmak için yeni bir uyumluluk eylemi eklemek için ekleyeceğiz. Uyumsuz bir cihazı devre dışı bırakma tüm şirket verileri CİHAZDAN kaldırılır ve Intune tarafından yönetilen cihaz de kaldırır. Bu eylem, gün içinde yapılandırılan değeri ulaşıldığında çalıştırır. Minimum değer 30 gündür. 
@@ -98,7 +98,7 @@ Kapsam etiketleri Apple VPP belirteçleri eklemek mümkün olacaktır. Bu etiket
 ### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>"Uygulanabilirlik kuralları" kullandığınızda Windows 10 cihaz yapılandırma profilleri oluşturma <!-- 2549910 -->
 Windows 10 cihaz yapılandırma profilleri oluşturma (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >  **Windows 10** platform için). Oluşturma tutulacak bir **Uygulanabilirlik kuralı** profili yalnızca bir belirli sürüm veya belirli bir sürüme uygular. Örneğin, bazı BitLocker ayarları sağlayan bir profil oluşturun. Profili eklediğinizde profil, yalnızca Windows 10 Enterprise çalıştıran cihazlar için uygular bir geçerlilik kuralı kullanın.
 
-Uygulama hedefi: 
+Şunun için geçerlidir: 
 - Windows 10 ve üzeri
 
 ### <a name="enable-win32-app-dependencies----2617348---"></a>Win32 Uygulama bağımlılıklarını etkinleştirin <!-- 2617348 -->
@@ -107,12 +107,12 @@ Genel Önizleme - yönetici sizin Win32 uygulamanızı yüklemeden önce diğer 
 ### <a name="new-device-restriction-setting-for-android-enterprise-device-owner-let-users-connect-to-wi-fi-networks-on-android-enterprise-dedicated-devices-running-multi-app-kiosk-mode---3041940---"></a>Android Enterprise, cihaz sahibi için yeni cihaz kısıtlama ayarı: kullanıcıların çoklu uygulama bilgi noktası modu çalıştıran Android ayrılmış Kurumsal cihazlarda Wi-Fi ağları bağlanmasına olanak tanır <!--3041940 -->
 Yöneticileri, kullanıcıların adanmış Android kuruluş cihazlarını çoklu uygulama bilgi noktası modunda çalışan Bluetooth yapılandırmasına olanak tanıyan yeni bir ayarı değiştirmek mümkün olacaktır. Bu ayar Intune konsolunda görmek için **Intune** > **cihaz Yapılandırması** > **profilleri**  >  **Profil oluşturma** > seçin **Android Kurumsal** Platform > **yalnızca cihaz sahibi, cihaz kısıtlamaları** profil türü için > **ayarları**   >  **Adanmış cihazlar** > seçin **çoklu uygulama** gelen **bilgi noktası modu** ayarı açılır. Bir seçenek olarak adlandırılan **Wi-Fi yapılandırma** etkinleştirmek kullanılabilir. 
 
-Uygulama hedefi: Android Kurumsal çoklu uygulama bilgi noktası modu çalıştıran cihazlara atanmış. 
+Şunun için geçerlidir: Android Kurumsal çoklu uygulama bilgi noktası modu çalıştıran cihazlara atanmış. 
 
 ### <a name="new-device-restriction-setting-for-android-enterprise-device-owner-let-users-configure-bluetooth-and-pairing-on-android-enterprise-dedicated-devices---3041941---"></a>Android Enterprise, cihaz sahibi için yeni cihaz kısıtlama ayarı: kullanıcıların Bluetooth ve adanmış Android Kurumsal cihazlarda eşleştirme yapılandırmasına olanak tanır <!--3041941 -->
 Yöneticileri, kullanıcıların adanmış Android kuruluş cihazlarını çoklu uygulama bilgi noktası modunda çalışan Bluetooth yapılandırmasına olanak tanıyan yeni bir ayarı değiştirmek mümkün olacaktır. Bu ayar Intune konsolunda görmek için **Intune** > **cihaz Yapılandırması** > **profilleri**  >  **Profil oluşturma** > seçin **Android Kurumsal** Platform > **yalnızca cihaz sahibi, cihaz kısıtlamaları** profil türü için > **ayarları**   >  **Adanmış cihazlar** > seçin **çoklu uygulama** gelen **bilgi noktası modu** ayarı açılır. Bir seçenek olarak adlandırılan **Bluetooth yapılandırma** etkinleştirmek kullanılabilir. 
 
-Uygulama hedefi: Android Kurumsal çoklu uygulama bilgi noktası modu çalıştıran cihazlara atanmış. 
+Şunun için geçerlidir: Android Kurumsal çoklu uygulama bilgi noktası modu çalıştıran cihazlara atanmış. 
 
 ### <a name="monitor-security-baseline-status-public-preview----3082047---"></a>(Genel Önizleme) güvenlik durumunu izleme <!-- 3082047 --> 
 Ne zaman izlemeniz *cihaz durumu* , güvenlik temellerini için Görünüm durumu temel kategorilere göre gibi düzenleyecek *kilit üzerinde*, *BitLocker*ve  *Tarayıcı*. Tüm kullanılabilir temel kategorilerini temsil edilir. Her kategori için kaç cihazın belirli temel kategori eşleşmiyor, yanlış veya uygulanamaz görürsünüz.
@@ -127,7 +127,7 @@ Intune OEMConfig ile Android Kurumsal cihazların yapılandırılmasını destek
 
 OEM'leri şu anda bir OEM başına temelinde desteğidir. İstediğiniz OEMConfig uygulama OEMConfig uygulamalar listesinde kullanılabilir değilse, ilgili kişi `IntuneOEMConfig@microsoft.com`.
 
-Uygulama hedefi: 
+Şunun için geçerlidir: 
 - Android Kurumsal
 
 ### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254---"></a>Android Enterprise, cihaz sahibi için yeni cihaz kısıtlama ayarları <!-- 3574254 -->
@@ -137,14 +137,14 @@ Google Play Store uygulamalarında tam olarak yönetilen cihazlar için yeni aya
 
 Geçerli ayarları listesini görmek için Git [izin vermek veya özellikleri kısıtlamak için Android Kurumsal cihaz ayarları](device-restrictions-android-for-work.md). 
 
-Uygulama hedefi: Android Kurumsal tam olarak yönetilen cihazlar
+Şunun için geçerlidir: Android Kurumsal tam olarak yönetilen cihazlar
 
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Bir Windows 10 cihaz uyumluluk İlkesi, TPM yonga denetle <!-- 3617671 -->
 Güvenilir Platform Modülü (TPM) yonga kümeleri çok sayıda Windows 10 ve üzeri cihazlar vardır. Yeni bir uyumluluk ayarı bir TPM cihazı olup olmadığını denetler.
 
 [Windows 10 ve üzeri uyumluluk İlkesi ayarları](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) geçerli ayarlarını listeler.
 
-Uygulama hedefi: 
+Şunun için geçerlidir: 
 - Windows 10 ve üzeri
 
 ### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227---"></a>Intune'a kayıtlı üzerinde yüklenmesi, Win32 uygulamalarını yapılandırma Azure AD'ye katılmış cihazlar <!-- 3695227 -->
@@ -177,15 +177,6 @@ Windows güncelleştirmeleri için tarama kullanıcıların engellemek için kul
 
 ### <a name="windows-update-notifications----3316782---"></a>Windows güncelleştirme bildirimleri <!-- 3316782 -->
 Kullanıcıların görmesi Windows güncelleştirme bildirimleri yapılandırmak için bu sayede, Windows güncelleştirme halkası yapılandırmaları için destek ekliyoruz. Bu ayar, portalın içinde kullanılabilir durumda olmaz ancak Intune Graph API'si kullanılarak yapılandırılabilir.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>İOS için Şirket portalı kaydı için 12 cihaz kullanıcılarının değiştirir. <!--3448635 --> 
-İOS için Şirket portalı uygulaması kayıt ekranları ve Apple iOS 12.2 yayımlanan MDM kayıt değişiklikleri hizalamak için adımları güncelleştiriliyor. Güncelleştirilmiş iş akışı, kullanıcılar artık ister:
-
-- Safari (aracılığıyla Safari) şirket Portalı Web sitesini açın ve Şirket portalı uygulamasında döndürmeden önce yönetim profili yüklemek izin verin.
-- Yönetim profili cihaza yüklemek üzere ayarlar uygulamasını açın.
-- Şirket portalı uygulamasının kaydı döndürür.
-
-Bu değişikliklerin nasıl hazırlama hakkında daha fazla bilgi için bkz. [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). Bu sırada, şirket Portalı'nda yeni iOS kayıtları desteklemek için adımları güncelleştirdik [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/en-us/intune/ios-enroll). Apple iOS sürüm 12.2 yayımlandıktan sonra bu belge değişiklikleri Canlı olacaktır. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Daha kolay erişim için tanılama ayarları <!-- 3804627 -->
 Yeni bir seçenek ekliyoruz **denetim günlükleri** dikey penceresinde, doğrudan açmak için kullanabileceğiniz Intune konsolundaki her bir denetim günlüğüne iş yükünün *tanılama ayarları* sayfası.

@@ -3,8 +3,8 @@ title: Microsoft Intune - Azure’da SCEP ve PKCS sertifikalarını kaldırma | 
 titleSuffix: ''
 description: Yöneticiler, Microsoft Intune’dan sertifika kaldırmak için silme veya devre dışı bırakma eylemlerini kullanabilirler. Bir cihaz kaydının silinmesi veya bir uyumluluk ilkesinin kaldırılması gibi, sertifikaların otomatik olarak kaldırıldığı bazı senaryolar da vardır. Intune lisansının kaybolması veya kaldırılması gibi, sertifikaların otomatik olarak cihazda kaldığı bazı senaryolar da vardır. Android, Android Kurumsal, iOS, macOS ve Windows cihazlara yönelik farklı yöntemlere göz atın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/08/2019
 ms.topic: conceptual
@@ -16,12 +16,13 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e19df00a829d0cedb22210cd0ebe6b48c55229fe
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.reviewer: lacranda
+ms.openlocfilehash: 6a1280ca2a78853ae188ad68620f0b82846a365a
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392738"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231756"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune’da SCEP ve PKCS sertifikalarını kaldırma
 
@@ -81,7 +82,7 @@ PKCS sertifikalarını *kalın* (sertifikalar iptal veya kaldırılır) cihaz ü
 - Bir sertifika profili grubu atamadan kaldırılır.
 
 
-## <a name="ios-devices"></a>iOS cihazları
+## <a name="ios-devices"></a>iOS aygıtları:
 
 #### <a name="scep-certificates"></a>SCEP sertifikaları
 
