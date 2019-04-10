@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7993b598a2194cb11fa6f4d17a9c21fb6435c4e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7cd9b6718b4406fd18fc0251fbeaf589acd1d0c9
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391152"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429212"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot (Önizleme) kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -212,6 +212,9 @@ Değiştirmek bir cihaz profili durumu için yaklaşık 15 dakika sürer *atanma
 1. Seçin **Tamam** > **oluşturma**.  
     Profil oluşturulur ve listede görüntülenir.
 1. Profili atamak için [Cihaz profili atama](device-profile-assign.md#assign-a-device-profile) altındaki adımları izleyin. 
+
+> [!NOTE]
+> Hibrit Azure AD'ye katılımı için Windows Autopilot için adlandırma özellikleri seri % gibi değişkenleri desteklemiyor ve ön ekleri için bilgisayar adı yalnızca destekler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

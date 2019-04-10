@@ -1,68 +1,44 @@
 ---
-title: Microsoft Intune - Azure’da Android Kurumsal uyumluluk ilkesi oluşturma | Microsoft Docs
-description: Android Kurumsal veya iş profili cihazları için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın. Jailbreak uygulanmış cihazlara izin vermek, kabul edilebilir tehdit düzeyi ayarlamak, Google Play’i denetlemek, en düşük ve en yüksek işletim sistemi sürümü girmek, parola gereksinimlerinizi seçmek ve uygulamaları dışarıdan yüklemeye izin vermek için ilkeler yapılandırın.
+title: Microsoft Intune - Azure'da Android Kurumsal uyumluluk ayarları | Microsoft Docs
+description: Android Kurumsal cihazlarınız için Uyumluluk Intune ayarlarken kullanabileceğiniz tüm ayarları bir listesini görürsünüz. Parola kuralları ayarla, minimum veya maksimum işletim sistemi sürümünü seçin, belirli uygulamaları kısıtlarsınız, yeniden kullanma parola ve daha fazlasını engelle.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00c48f49507fe4fde5484d0725b605d90407facd
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899062"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423569"
 ---
-# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Intune’daki Android Kurumsal cihazları için uyumluluk ilkesi ekleme
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Cihazları uyumlu veya uyumsuz Intune kullanan olarak işaretlemek için android Kurumsal ayarları
 
-Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune, Android kuruluş cihazlarının bir parola uzunluğu gibi uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları oluşturabilirsiniz. Cihaz uyumlu değilse [koşullu erişimi](conditional-access.md) kullanarak veri ve kaynaklara erişimi engelleyebilirsiniz.
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu özellik şu platformlarda geçerlidir:  
+Bu makale, listeler ve ıntune Android Kurumsal cihazlarda yapılandırabileceğiniz farklı uyumluluk ayarları açıklar. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları kök erişim izni verilmiş (jailbreak uygulanmış) cihazlar uyumlu olarak işaretlemek, izin verilen tehdit düzeyini ayarlamak, Google Play Protect ve daha fazlasını etkinleştirmek için kullanın.
+
+Bu özellik şu platformlarda geçerlidir:
+
 - Android Kurumsal
 
-Ayrıca cihaz raporları alabilir ve uyumsuzluğa yönelik, kullanıcıya bildirim göndermek gibi önlemler alabilirsiniz. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+Bir Intune Yöneticisi olarak, Kurumsal kaynaklarınızı korumaya yardımcı olmak için bu uyumluluk ayarlarını kullanın. Uyumluluk ilkeleri hakkında daha fazla, hangi bilgi edinmek için bkz [cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md).
 
-Bu makale, Android Kurumsal çalıştıran cihazlar için bir uyumluluk ilkesinde kullanabileceğiniz ayarları listeler.
+## <a name="before-you-begin"></a>Başlamadan önce
 
-## <a name="non-compliance-and-conditional-access"></a>Uyumsuzluk ve koşullu erişim
-
-Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır.
-
---------------------------
-
-|**ilke ayarı**| **Android Kurumsal profili** |
-| --- | --- |
-| **PIN veya Parola yapılandırması** |  Karantinaya Alındı |
-| **Cihaz şifrelemesi** |  Karantinaya Alındı |
-| **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | Karantinaya Alındı (ayar değil) |
-| **e-posta profili** | Geçerli değil |
-| **En düşük işletim sistemi sürümü** | Karantinaya Alındı |
-| **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |
-| **Windows durum kanıtlama** |Geçerli değil |
-
-**Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.
-
-**Karantinaya alındı** = Cihazın işletim sistemi, uyumluluğu zorunlu kılmaz. Örneğin Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz. Cihaz uyumsuz olduğunda aşağıdaki işlemler yapılır:
-
-  - Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
-  - Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
-
-## <a name="create-a-device-compliance-policy"></a>Cihaz uyumluluğu ilkesi oluşturma
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. **Platform** olarak **Android kurumsal**’ı seçin. 
-5. **Ayarları Yapılandır**’ı seçin. **Cihaz Durumu**, **Cihaz Özellikleri** ve **Sistem Güvenliği** ayarlarını bu makalede açıklandığı gibi girin.
+[Uyumluluk ilkesi oluşturma](create-compliance-policy.md#create-the-policy). İçin **Platform**seçin **Android Kurumsal**.
 
 ## <a name="device-health"></a>Device health
 
@@ -113,7 +89,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 - **Cihazdaki veri depolamasının şifrelenmesi**: Seçin **gerektiren** cihazlarınızda veri deposunu şifrelemek için. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez. 
 
-  Android iş profili cihazlarında şifreleme zorunlu olduğundan bu ayarı yapılandırmanız gerekmez.
+  Android Kurumsal cihazlarda şifreleme zorunlu olduğundan bu ayarı yapılandırmanız gerekmez.
 
 ### <a name="device-security"></a>Cihaz Güvenliği
 
@@ -124,7 +100,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
   > [!IMPORTANT]
   > Dışarıdan uygulama yükleme, **Bilinmeyen kaynaklardan gelen uygulamaları engelle** ayarının etkinleştirilmesini gerektirir. Bu uyumluluk ilkesini yalnızca cihazlara dışarıdan Android uygulaması yüklemiyorsanız zorunlu kılın.
 
-  Android iş profili cihazları bilinmeyen kaynaklardan yüklemeyi her zaman kısıtladığından, bu ayarı yapılandırmanız gerekmez.
+  Android Kurumsal cihazların bilinmeyen kaynaklardan yüklemeyi her zaman kısıtladığı olarak bu ayarı yapılandırmanız gerekmez.
 
 - **Şirket portalı uygulaması çalışma zamanı bütünlüğü**: Seçin **gerektiren** şirket Portalı'nı onaylamak için uygulama aşağıdaki tüm gereksinimleri karşılayan:
 
@@ -137,36 +113,14 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 
 - **Cihazda blok USB hata ayıklamasını**: Seçin **blok** cihazların USB hata ayıklama özelliğini kullanmalarını engellemek üzere. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 
-  Android iş profili cihazlarında USB hata ayıklama zaten devre dışı olduğundan bu ayarı yapılandırmanız gerekmez.
+  USB hata ayıklama zaten Android Kurumsal cihazlarda devre dışı olduğundan bu ayarı yapılandırmanız gerekmez.
 
 - **En düşük güvenlik düzeltme eki düzeyi**: Cihazın sahip olabileceği en eski güvenlik düzeltme eki düzeyini seçin. Bu yama düzeyinin altındaki cihazlar uyumsuz kabul edilir. Tarihin *YYYY-AA-GG* biçiminde girilmesi gerekir.
 
-İşiniz bittiğinde değişikliklerinizi kaydetmek için **Tamam** > **Tamam**’ı seçin.
-
-## <a name="actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemler
-
-**Uyumsuzluğa yönelik eylemler**'i seçin. Varsayılan eylem cihazı hemen uyumsuz olarak işaretler.
-
-Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örneğin, bir gün sonra olarak). Ayrıca, cihaz uyumlu olmadığında kullanıcıya e-posta gönderen ikinci bir eylem de yapılandırabilirsiniz.
-
-[Uyumsuz cihazlar için eylem ekleme](actions-for-noncompliance.md) makalesinde, kullanıcılarınıza e-posta ile gönderilecek bir bildirim oluşturma da dahil olmak üzere daha fazla bilgi sağlanmıştır.
-
-## <a name="scope-tags"></a>Kapsam etiketleri
-
-Satış, Mühendislik, İK gibi belirli gruplara ilke atamanın ideal bir yolu olarak kapsam etiketlerini kullanabilirsiniz. Kapsam etiketleri uyumluluk ilkelerinde ekleyebilirsiniz. Bkz. [İlke filtrelemek için kapsam etiketleri kullanma](scope-tags.md). 
-
-## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
-
-Oluşturulan ilke, atanana kadar herhangi bir eylem gerçekleştirmez. İlkeyi atamak için: 
-
-1. Yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler **Cihaz uyumluluğu** > **İlkeler**’de bulunur.
-2. İlkeyi, sonra da **Atamalar**’ı seçin. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
-3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar**’ı seçin. Bu ilkeyi uygulamak istediğiniz kullanıcı gruplarını seçin ve daha sonra ilkeyi kullanıcılara dağıtmak için **Kaydet**’i seçin.
-
-İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için değerlendirilir.
+Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme](actions-for-noncompliance.md)  
-[Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)  
-[Android için uyumluluk ilkesi ayarları](compliance-policy-create-android.md)
+- [Uyumsuz cihazlar için Eylemler ekleme](actions-for-noncompliance.md) ve [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
+- [Uyumluluk ilkelerini izleme](compliance-policy-monitor.md).
+- Bkz: [Android için Uyumluluk İlkesi ayarları](compliance-policy-create-android.md) cihazlar.

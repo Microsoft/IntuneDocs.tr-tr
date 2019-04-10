@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da macOS cihaz uyumluluk ilkesi oluşturma | Microsoft Docs
-description: Sistem Bütünlük Koruması kullanmak, en düşük ve en yüksel işletim sistemi sürümü ayarlamak, parola gereksinimlerinizi seçmek ve veri deposunu şifrelemek amacıyla macOS cihazları için bir Microsoft Intune cihaz uyumluluk ilkesi oluşturun veya yapılandırın.
+title: Microsoft Intune - Azure'da macOS cihaz uyumluluk ayarları | Microsoft Docs
+description: MacOS cihazları için Uyumluluk Intune ayarlarken kullanabileceğiniz tüm ayarları bir listesini görürsünüz. Apple'nın sistem bütünlüğü koruması gerektir, parola kısıtlamalarını ayarlamak, bir güvenlik duvarı gerektir, ağ geçidi ve daha fazla izin verilir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,47 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21eca671d40f1ee2f2f9176a272cab5754140a26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566616"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423654"
 ---
-# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune ile macOS cihazlara cihaz uyumluluk ilkesi ekleme
+# <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>cihazları uyumlu veya uyumsuz Intune kullanan olarak işaretlemek için macOS ayarları
 
-Intune macOS cihaz uyumluluk ilkesi, macOS cihazlarının uyumlu olmak için uyması gereken kuralları ve ayarları tanımlar. Cihaz uyumluluk ilkelerini koşullu erişimle birlikte kullandığınızda, şirket kaynaklarına erişime izin verebilir veya erişimi reddedebilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz. Her platform için cihaz uyumluluk ilkeleri Intune Azure portalında oluşturulabilir. Uyumluluk ilkeleri ve olası önkoşullar hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıldığında uyumlu olmayan ayarların nasıl yönetildiği açıklanır:
+Bu makale, listeler ve ıntune'da macOS cihazlarında yapılandırabileceğiniz farklı uyumluluk ayarları açıklar. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, en az veya en yüksek işletim sistemi sürümü, süresi dolacak şekilde kümesi parolalar ve daha fazla ayarlamak için bu ayarları kullanın.
 
----------------------------
+Bu özellik şu platformlarda geçerlidir:
 
-| İlke ayarı | macOS 10.11 ve üzeri |
-| --- | --- |
-| **PIN veya Parola yapılandırması** | Çözümlendi |   
-| **Cihaz şifrelemesi** | Çözümlendi (PIN ayarlanarak) |
-| **E-posta profili** | Karantinaya Alındı |
-|**En düşük işletim sistemi sürümü** | Karantinaya Alındı |
-| **En yüksek işletim sistemi sürümü** | Karantinaya Alındı |
+- Mac OS
 
----------------------------
+Bir Intune Yöneticisi olarak, Kurumsal kaynaklarınızı korumaya yardımcı olmak için bu uyumluluk ayarlarını kullanın. Uyumluluk ilkeleri hakkında daha fazla, hangi bilgi edinmek için bkz [cihaz uyumluluğuyla çalışmaya başlama](device-compliance-get-started.md).
 
-**Düzeltilen** = Cihazın işletim sistemi, uyumluluğu mecbur kılar. Örneğin, kullanıcı bir PIN ayarlamaya zorlanır.
+## <a name="before-you-begin"></a>Başlamadan önce
 
-**Karantinaya alındı** = Cihazın işletim sistemi uyumluluğu mecbur kılmaz. (Örneğin, Android cihazlar kullanıcıyı cihazı şifrelemeye zorlamaz.) Cihaz uyumsuz olduğunda, aşağıdaki işlemler yapılır:
-
-- Kullanıcı için geçerli bir koşullu erişim ilkesi varsa cihaz engellenir.
-- Şirket portalı, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
-
-## <a name="create-a-device-compliance-policy"></a>Cihaz uyumluluğu ilkesi oluşturma
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. **Platform** olarak **macOS**’u seçin. 
-5. Seçin **ayarlarını yapılandırma**girin **cihaz sistem durumu**, **cihaz özelliklerini**, ve **sistem güvenliği** ayarları açıklanmıştır Bu makalede. İşiniz bittiğinde **Tamam**’ı ve **Oluştur**’u seçin.
+[Uyumluluk ilkesi oluşturma](create-compliance-policy.md#create-the-policy). **Platform** olarak **macOS**’u seçin.
 
 ## <a name="device-health"></a>Cihaz Sistem Durumu
 
-- **Sistem bütünlüğü koruması gerektir**: **Gerekli** için macOS cihazlarınızda [sistem bütünlüğü koruması](https://support.apple.com/HT204899) etkin.
+- **Sistem bütünlüğü koruması gerektir**: **Gerekli** için macOS cihazlarınızda [sistem bütünlüğü koruması](https://support.apple.com/HT204899) (Apple web sitesini açar) etkin. Ayarlandığında **yapılandırılmadı** (varsayılan), bu ayar, uyumluluk veya uyumsuzluk için değerlendirilmez.
 
 ## <a name="device-properties"></a>Cihaz özellikleri
 
@@ -73,7 +58,7 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 - **Basit parolalar**: Kümesine **blok** kullanıcılar gibi basit parolalar oluşturamıyor **1234** veya **1111**. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
 - **Minimum parola uzunluğu**: En düşük rakam veya karakter bulunması gereken sayısını girin.
 - **Parola türü**: Parola yalnızca olması gerekip gerekmediğini seçin **sayısal** karakter veya sayı ve diğer karakterlerin bir karışımı yoksa (**alfasayısal**).
-- **Paroladaki alfasayısal olmayan karakter sayısı**: En az özel karakter sayısını girin (&, #, %,!, vb.) bulunması gereken parola.
+- **Paroladaki alfasayısal olmayan karakter sayısı**: En az özel karakter sayısını girin `&`, `#`, `%`, `!`ve benzeri Parolada olması gerekir.
 
     Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
 
@@ -89,13 +74,16 @@ Aşağıdaki tabloda bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıld
 - **Bir cihazdaki veri depolamasının şifrelenmesi**: Seçin **gerektiren** cihazlarınızda veri deposunu şifrelemek için.
 
 ### <a name="device-security"></a>Cihaz Güvenliği
+
 Güvenlik Duvarı, cihazları yetkisiz erişimine karşı korur. Güvenlik Duvarı'nı kullanarak uygulama başına bağlantıları denetleyebilirsiniz. 
 
-- **Güvenlik Duvarı**: **Etkinleştirme** cihazları yetkisiz erişime karşı korunmasına yardımcı olmak için. Bu özelliği etkinleştirdiğinizde gelen İnternet bağlantılarını işleyebilir ve gizli modu kullanabilirsiniz. **Yapılandırılmamış** (varsayılan), güvenlik duvarını devre dışı bırakır ve ağ trafiğine izin verilir (engellenmedi).
-- **Gelen bağlantıları**: **Blok** DHCP, Bonjour ve IPSec gibi temel internet Hizmetleri için gerekli olanlar dışındaki tüm gelen ağ bağlantıları. Bu ayar, ekran paylaşımı, uzaktan erişim, iTunes müzik paylaşımı gibi tüm paylaşım hizmetlerini engeller. **Yapılandırılmamış** (varsayılan) gelen bağlantılara ve paylaşım hizmetlerine izin verir. 
-- **Gizli mod**: **Etkinleştirme** cihaz kötü amaçlı kullanıcılar yapılan istekleri, yoklama isteklerine yanıt vermesini önlemek için gizli modu. Etkinleştirildiğinde, cihaz yetkilendirilmiş uygulamalardan gelen istekleri yanıtlamaya devam eder. **Yapılandırılmamış** (varsayılan) gizli modu devre dışı bırakır.
+- **Güvenlik Duvarı**: Seçin **etkinleştirme** cihazları yetkisiz erişime karşı korunmasına yardımcı olmak için. Bu özelliği etkinleştirdiğinizde gelen İnternet bağlantılarını işleyebilir ve gizli modu kullanabilirsiniz. **Yapılandırılmamış** (varsayılan), güvenlik duvarını devre dışı bırakır ve ağ trafiğine izin verilir (engellenmedi).
+- **Gelen bağlantıları**: **Blok** gelen tüm ağ bağlantıları olması dışında DHCP, Bonjour ve IPSec gibi temel internet Hizmetleri için gereken bağlantılar. Bu ayar, ayrıca ekran paylaşımı, uzaktan erişim, iTunes müziği paylaşımı ve daha fazlası dahil olmak üzere tüm paylaşım hizmetlerini engeller. **Yapılandırılmamış** (varsayılan) gelen bağlantılara ve paylaşım hizmetlerine izin verir.
+- **Gizli mod**: **Etkinleştirme** cihazların kötü amaçlı kullanıcılar yapılan istekleri, yoklama isteklerine yanıt vermesini önlemek için gizli modu. Etkinleştirildiğinde, cihaz yetkilendirilmiş uygulamalardan gelen istekleri yanıtlamaya devam eder. **Yapılandırılmamış** (varsayılan) gizli modu devre dışı bırakır.
 
 ### <a name="gatekeeper"></a>Ağ Geçidi Denetleyicisi
+
+Daha fazla bilgi için [macOS üzerinde ağ geçidi](https://support.apple.com/HT202491) (Apple web sitesini açar).
 
 **Bu konumlardan indirilen uygulamalara izin ver**: Desteklenen uygulamaların farklı konumlardan cihazlarınızda yüklenmesi için izin verir. Konum seçenekleriniz:
 
@@ -104,19 +92,10 @@ Güvenlik Duvarı, cihazları yetkisiz erişimine karşı korur. Güvenlik Duvar
 - **Mac App Store ve tanımlanan geliştiriciler**: İçin Mac app store ve tanımlanan geliştiriciler uygulamalarını yükleyin. macOS, geliştiricilerin kimliğini denetler ve uygulama bütünlüğünü doğrulamak için başka denetimler de gerçekleştirir. Bir kullanıcı, Gatekeeper’ı bu seçenekler haricindeki uygulamaları yüklemesi için seçerse cihaz uyumsuz olarak değerlendirilir.
 - **Her yerden**: Uygulamalar her yerden ve herhangi bir geliştirici tarafından gelen yüklenebilir. Bu, güvenliği en düşük olan seçenektir.
 
-Apple belgelerinde daha fazla ayrıntı için bkz. [macOS üzerinde Gatekeeper](https://support.apple.com/HT202491).
-
-## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
-
-1. Yapılandırdığınız bir ilkeyi seçin. Mevcut ilkeler **Cihaz uyumluluğu** > **İlkeler**’de bulunur.
-2. İlkeyi, sonra da **Atamalar**’ı seçin. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
-3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar**’ı seçin. Bu ilkeyi uygulamak istediğiniz kullanıcı gruplarını seçin ve daha sonra ilkeyi kullanıcılara dağıtmak için **Kaydet**’i seçin.
-
-> [!TIP]
-> Varsayılan olarak cihazlar, her sekiz saatte bir uyumluluğu denetler. Ancak kullanıcılar, Intune Şirket Portalı uygulamasından bu işlemi zorlayabilirler.
-
-İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için denetlenir.
+Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Uyumsuz cihazlar için e-postayı otomatikleştirme ve eylemleri ekleme](actions-for-noncompliance.md)  
-[Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)
+
+- [Uyumsuz cihazlar için Eylemler ekleme](actions-for-noncompliance.md) ve [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
+- [Uyumluluk ilkelerini izleme](compliance-policy-monitor.md).
+- Bkz: [iOS için Uyumluluk İlkesi ayarları](compliance-policy-create-ios.md) cihazlar.

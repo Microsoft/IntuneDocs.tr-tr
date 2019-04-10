@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87f7ad0f155ba1dac7d72b6a71f3b555ba908c97
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 8df4a1d7f929301c11f577a9b7e50ef1647dda11
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899121"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423722"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
@@ -316,11 +316,11 @@ Bu özelliği kullanmak için, şirket içi Active Directory ortamınızdan Azur
 - uygulanamaz Farklı bir platformun cihaz sayısını gösteren bir resim de görüntülenir. Örneğin bir iOS profiline bakıyorsanız, yeni kutucuk yine bu profile atanmış olan iOS dışı cihazların sayısını gösterir. Bkz. [Cihaz uyumluluk ilkeleri](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Cihaz uyumluluğu 3 taraf virüsten koruma çözümleri destekler <!-- 2325484 -->
-Cihaz uyumluluk ilkesi oluşturduğunuzda (**cihaz uyumluluğu** > **ilkeleri** > **ilkesi oluşturma**  >  **Platformu: Windows 10 ve üzeri** > **ayarları** > **sistem güvenliği**), vardır yeni **[cihaz güvenliği](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** seçenekleri: 
+Cihaz uyumluluk ilkesi oluşturduğunuzda (**cihaz uyumluluğu** > **ilkeleri** > **ilkesi oluşturma**  >  **Platformu: Windows 10 ve üzeri** > **ayarları** > **sistem güvenliği**), vardır yeni **[cihaz güvenliği](compliance-policy-create-windows.md)** seçenekleri: 
 - **Virüsten koruma**: Ayarlandığında **gerektiren**, uyumluluk Windows Symantec ve Windows Defender gibi Güvenlik Merkezi ile kaydedilen virüsten koruma çözümleri kullanarak denetleyebilirsiniz. 
 - **Casus yazılımdan koruma**: Ayarlandığında **gerektiren**, uyumluluk Windows Symantec ve Windows Defender gibi Güvenlik Merkezi ile kaydedilen casus yazılımdan koruma çözümlerini kullanarak denetleyebilirsiniz. 
 
-Uygulama hedefi: Windows 10 ve üzeri 
+Şunun için geçerlidir: Windows 10 ve üzeri 
 
 ### <a name="device-enrollment"></a>Cihaz kaydı
 
@@ -425,7 +425,7 @@ AutoPilot dağıtım profilleri AutoPilot cihazları içeren Azure AD grupların
 #### <a name="set-compliance-by-device-location----851881----"></a>Varsayılan cihaz uyumluluğu ayarlama <!-- 851881 ! -->
 Bazı durumlarda, ağ bağlantısı tarafından belirlenen bir konumdan şirket kaynaklarına erişimi kısıtlamak isteyebilirsiniz. Artık cihazın IP adresine bağlı olarak bir uyumluluk ilkesi (**Cihaz uyumluluğu** > **Konumlar**) oluşturabilirsiniz. Cihaz, IP aralığı dışına çıktığında şirket kaynaklarına erişemez.
 
-Uygulama hedefi: Android cihazlar 6.0 ve üzeri, güncelleştirilmiş Şirket Portalı uygulaması ile
+Şunun için geçerlidir: Android cihazlar 6.0 ve üzeri, güncelleştirilmiş Şirket Portalı uygulaması ile
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Tüketici uygulamaları ve Windows 10 Enterprise RS4 Autopilot cihazlarda deneyimlerini engelleme<!-- 1621980 -->
 Windows 10 Enterprise RS4 AutoPilot cihazlarınızda tüketici uygulama ve deneyimlerinin yüklenmesini önleyebileceksiniz. Bu özelliği görmek için **Intune** > **Cihaz yapılandırması** > **Profiller** > **Profil oluştur** > **Platform** = **Windows 10 veya üzeri** > **Profil türü** = **Cihaz kısıtlamaları** > **Yapılandır** > **Windows Spot** > **Tüketici özellikleri**'ne gidin. 
@@ -550,7 +550,7 @@ Bu güncelleştirme ile **Android Kurumsal** > **Cihaz kısıtlamaları** > **İ
 
 Etkinleştirildiğinde (yapılandırılmadığında), iş kişisi arayan ayrıntıları kişisel profilde görüntülenir. Engellendiğinde ise iş kişisi arayan numarası kişisel profilde görüntülenmez. 
 
-Uygulama hedefi: Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları
+Şunun için geçerlidir: Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>Eklenen Endpoint protection ayarlarına yeni Windows Defender Credential Guard ayarları <!--1102252 --><!--from 1802 and 1804-->
 

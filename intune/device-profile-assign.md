@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d77308e010b71ec076f33b669674ce1252937f9
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 0c950efdd95fd8d856ec677385712a022dead870
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394847"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423856"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
 
@@ -43,6 +43,16 @@ Bu makalede, profil atama işlemini göstermektedir ve profillerinize ilişkin k
 
 5. Yaptığınız değişiklikleri **kaydedin**.
 
+### <a name="evaluate-how-many-users-are-targeted"></a>Kaç kullanıcının hedeflendiğini değerlendirin
+
+Profili atadığınızda, ayrıca **değerlendir** kaç kullanıcının etkilendiğini. Bu özellik, kullanıcıları hesaplar; Bu cihazları hesaplamaz.
+
+1. Intune'da seçin **cihaz Yapılandırması** > **profilleri**.
+2. Bir profili seçin > **atamaları** > **değerlendir**. Bir ileti bu profil tarafından kaç kullanıcının hedeflendiğini gösterir.
+
+Varsa **değerlendir** düğmesi gri, profili bir veya daha fazla gruba atanmış olduğundan emin olun.
+
+
 ## <a name="use-scope-tags"></a>Kapsam etiketlerini kullanma
 
 Oluştururken veya profil güncelleştirme, kapsam etiketleri profiline ekleyebilirsiniz.
@@ -53,7 +63,7 @@ Oluştururken veya profil güncelleştirme, kapsam etiketleri profiline ekleyebi
 
 Intune cihaz yapılandırma profilleri, grupları ilke atamasından dışlamanıza olanak tanır. Örneğin, bir cihaz profili atayabilir **tüm şirket kullanıcıları** Grup ancak üyeleri hariç tut **üst düzey yönetim kadrosu** grubu.
 
-Intune, grupları dışlama, yalnızca kullanıcılar dışında veya yalnızca cihaz gruplarını (değil grupların bir karışımını) bir atamadan dışlamak tüm kullanıcı cihaz ilişkisini dikkate almaz. Kullanıcı gruplarını dahil ederken cihaz gruplarını dışlamak, istediğiniz sonuçları alamayabilirsiniz. Karışık gruplar kullanırken veya başka çakışmaların ise, ekleme, dışlama öncelik kazanır.
+Ne zaman yalnızca kullanıcıları, grupları hariç tutma veya yalnızca cihaz gruplarından (değil grupların bir karışımını) atama, Intune kullanıcı cihaz ilişkileri görünmüyor. Kullanıcı gruplarını dahil ederken cihaz gruplarını dışlamak, istediğiniz sonuçları alamayabilirsiniz. Karışık gruplar kullanırken veya başka çakışmaların ise, ekleme, dışlama öncelik kazanır.
 
 Örneğin kuruluşunuzda bilgi noktası cihazları hariç tüm cihazlara cihaz profilleri atamak istiyorsunuz. Bunun için **Tüm Kullanıcılar** grubunu dahil edip **Tüm Cihazlar** grubunu dışlıyorsunuz. Kullanıcının cihaz olsa bile bu durumda, tüm kullanıcılarınız ve onların cihazlarını Bu ilkeyi alır **tüm cihazlar** grubu.
 

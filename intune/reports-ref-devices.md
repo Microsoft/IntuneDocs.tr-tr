@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8af3dffbb4875e588d20eeaef5193122c1f1f49
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: c361c6054cf52c802155587084eaea76e024f78c
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799692"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429191"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
@@ -80,6 +80,7 @@ ms.locfileid: "58799692"
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | Bu kayıt etkinlik zaman kaydedildiği tarihin anahtarı.               |
 | deviceEnrollmentTypeKey       | Kayıt türünün anahtarı.                                        |
+| DeviceTypeKey                 | Cihaz türünün anahtarı.                                                |
 | enrollmentEventStatusKey      | Başarı veya başarısızlık kayıt gösteren durum anahtarı.    |
 | enrollmentFailureCategoryKey  | Anahtar (kayıt başarısız olursa) kayıt hata kategorisi.        |
 | enrollmentFailureReasonKey    | (Kayıt başarısız olursa) kayıt hatanın nedenini anahtarı.          |
@@ -117,7 +118,7 @@ ms.locfileid: "58799692"
 | Uygulanamaz                  | Kayıt hatası kategorisi geçerli değil.                                                            |
 | Kullanılamıyor                   | Kayıt hatası kategori kullanılamıyor.                                                             |
 | Bilinmiyor                         | Bilinmeyen hata.                                                                                                |
-| Authentication                  | Kimlik doğrulaması başarısız oldu.                                                                                        |
+| Authentication                  | Kimlik doğrulaması gerçekleştirilemedi.                                                                                        |
 | Yetkilendirme                   | Çağrı kimliği doğrulanmış ancak kaydetmek için yetkili değil.                                                         |
 | AccountValidation               | Kayıt hesabı doğrulanamadı. (Hesabı engellenen kayıt etkin değil)                      |
 | UserValidation                  | Kullanıcı doğrulanamadı. (Kullanıcı yok, lisans eksik)                                           |
@@ -224,46 +225,61 @@ ms.locfileid: "58799692"
 
 **Cihazlar** varlığı, yönetime kaydedilen tüm cihazları ve bunlara karşılık gelen özellikleri listeler.
 
-| Özellik  | Açıklama |
-|---------|------------|
-| DeviceKey | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. |
-| DeviceId | Cihazın benzersiz tanımlayıcısı. |
-| DeviceName | Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılabilir olamaz. |
-| DeviceTypeKey | Bu cihaz için cihaz türü özniteliğinin anahtarı. |
-| OwnerTypeKey | Cihaz için sahip türü özniteliğinin anahtarı: şirket, kişisel veya bilinmeyen. |
-| objectSourceKey | Bu sütunu yoksayın. |
-| ManagementAgentKey | Cihazla ilişkili yönetim aracısının anahtarı. |
-| ManagementStateKey | Cihazla ilişkili yönetim durumunun anahtarı, bir uzak eylemin en son durumunu veya cihazda jailbreak/kök belirtme yapılıp yapılmadığını gösterir. |
-| OSVersion | İşletim sistemi sürümü |
-| OSMajorVersion | İşletim sistemi sürümünün ana sürüm bileşeni (major.minor.build.revision). |
-| OSMinorVersion | İşletim sistemi sürümünün alt sürüm bileşeni (major.minor.build.revision). |
-| OSBuildNumber | İşletim sistemi sürümünün derleme sürümü bileşeni (major.minor.build.revision). |
-| OSRevisionNumber | İşletim sistemi sürümünün düzeltme sürümü bileşeni (major.minor.build.revision). |
-| seri numarası | Mevcutsa cihazın seri numarası. |
-| RowLastModifiedDateTimeUTC | Bu kaydın son değiştirildiği tarih. |
-| DeviceAction | Yapılan son cihaz eylemi, Şimdilik yoksayın. |
-| Üretici | Cihazın üreticisi. |
-| Model | Cihazın modeli. |
-| IsDeleted | Cihaz artık Intune ile yönetilmiyorsa, True olarak ayarlayın. Bilinen son durumu korur. |
-| AndroidSecurityPatchLevel |Cihazın en son güvenlik yamasının tarihi. |
+|          Özellik          |                                                                                       Açıklama                                                                                      |
+|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DeviceKey                  | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar.                                                                                                               |
+| DeviceId                   | Cihazın benzersiz tanımlayıcısı.                                                                                                                                                     |
+| DeviceName                 | Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Diğer platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılamaz. |
+| DeviceTypeKey              | Bu cihazın cihaz türü özniteliğinin anahtarı.                                                                                                                                    |
+| DeviceRegistrationState    | Bu cihazın istemci kayıt durumu özniteliğinin anahtarı.                                                                                                                      |
+| OwnerTypeKey               | Cihaz için sahip türü özniteliğinin anahtarı: şirket, kişisel veya bilinmeyen.                                                                                                    |
+| EnrolledDateTime           | Bu cihazın kaydedildiği tarih ve saat.                                                                                                                                         |
+| LastSyncDateTime           | Cihazın bilinen son Intune iadesi.                                                                                                                                              |
+| ManagementAgentKey         | Bu cihazla ilişkili yönetim aracısının anahtarı.                                                                                                                             |
+| ManagementStateKey         | Cihazla ilişkili yönetim durumunun anahtarı, bir uzak eylemin en son durumunu veya cihazda jailbreak yapılıp yapılmamış ya da kök erişim izni verilip verilmemiş olduğunu gösterir.                                                |
+| AzureADDeviceId            | Bu cihazın Azure cihaz kimliği.                                                                                                                                                  |
+| AzureADRegistered          | Bu cihazın Azure Active Directory’ye kayıtlı olup olmadığını gösterir.                                                                                                                             |
+| DeviceCategoryKey          | Cihazla ilişkili kategorinin anahtarı.                                                                                                                                     |
+| DeviceEnrollmentType       | Bu cihazla ilişkili kayıt türünün anahtarı, kayıt yöntemini gösterir.                                                                                             |
+| ComplianceStateKey         | Cihazla ilişkili Uyumluluk durumu anahtarı.                                                                                                                             |
+| OSVersion                  | Cihazın işletim sistemi sürümü.                                                                                                                                                |
+| EasDeviceId                | Cihazın Exchange ActiveSync kimliği.                                                                                                                                                  |
+| seri numarası               | seri numarası                                                                                                                                                                           |
+| UserId                     | Cihazla ilişkili kullanıcının Benzersiz Tanımlayıcısı.                                                                                                                           |
+| RowLastModifiedDateTimeUTC | Bu cihazın veri ambarında son değiştirilme tarihi ve saati (UTC).                                                                                                       |
+| Üretici               | Cihazın üreticisi                                                                                                                                                             |
+| Model                      | Cihazın modeli                                                                                                                                                                    |
+| OperatingSystem            | Cihazın işletim sistemi. Windows, iOS vb.                                                                                                                                   |
+| IsDeleted                  | Bu cihazın silinip silinmediğini gösteren ikili dosya.                                                                                                                                 |
+| AndroidSecurityPatchLevel  | Android güvenlik düzeltme eki düzeyi                                                                                                                                                           |
+| MEID                       | MEID                                                                                                                                                                                   |
+| isSupervised               | Cihaz denetimli durumu                                                                                                                                                               |
+| FreeStorageSpaceInBytes    | Bayt Cinsinden Boş Depolama Alanı.                                                                                                                                                                 |
+| TotalStorageSpaceInBytes   | Bayt Cinsinden Toplam Depolama Alanı.                                                                                                                                                                |
+| EncryptionState            | Cihazdaki şifreleme durumu.                                                                                                                                                      |
+| SubscriberCarrier          | Cihazın abone taşıyıcısı                                                                                                                                                       |
+| PhoneNumber                | Cihazın telefon numarası                                                                                                                                                             |
+| IMEI                       | IMEI                                                                                                                                                                                   |
+| CellularTechnology         | Cihazın hücresel teknolojisi                                                                                                                                                    |
+| WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
 **DevicePropertyHistory** varlığı, cihazlar tablosuyla aynı özelliklere sahiptir ve her cihaz kaydının son 90 gün boyunca günlük olarak anlık görüntüsünü alır. DateKey sütunu, her satır için günü gösterir.
 
-| Özellik  | Açıklama |
-|---------|------------|
-| DateKey |Günü gösteren tarih tablosuna başvuru. |
-| DeviceKey |Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur. |
-| DeviceName |Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılabilir olamaz. |
-| OwnerTypeKey |Cihaz için sahip türü özniteliğinin anahtarı: şirket, kişisel veya bilinmeyen. |
-| objectSourceKey |Bu sütunu yoksayın. |
-| ManagementStateKey |Cihazla ilişkili yönetim durumunun anahtarı, bir uzak eylemin en son durumunu veya cihazda jailbreak/kök belirtme yapılıp yapılmadığını gösterir. |
-| OSVersion |İşletim sistemi sürümü. |
-| OSMajorVersion |İşletim sistemi sürümünün ana sürüm bileşeni (major.minor.build.revision). |
-| OSMinorVersion |İşletim sistemi sürümünün alt sürüm bileşeni (major.minor.build.revision). |
-| OSBuildNumber |İşletim sistemi sürümünün derleme sürümü bileşeni (major.minor.build.revision). |
-| DeviceAction |Yapılan son cihaz eylemi, Şimdilik yoksayın. |
+|          Özellik          |                                                                                      Açıklama                                                                                     |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DateKey                    | Günü gösteren tarih tablosuna başvuru.                                                                                                                                          |
+| DeviceKey                  | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur.                               |
+| DeviceName                 | Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılamaz. |
+| DeviceRegistrationStateKey | Bu cihazın cihaz kayıt durumu özniteliğinin anahtarı.                                                                                                                    |
+| OwnerTypeKey               | Cihazın sahip türü özniteliğinin anahtarı: şirket, kişisel veya bilinmeyen.                                                                                                  |
+| ManagementStateKey         | Cihazla ilişkili yönetim durumunun anahtarı, bir uzak eylemin en son durumunu veya cihazda jailbreak yapılıp yapılmamış ya da kök erişim izni verilip verilmemiş olduğunu gösterir.                                                |
+| AzureADRegistered          | Bu cihazın Azure Active Directory’ye kayıtlı olup olmadığını gösterir.                                                                                                                             |
+| ComplianceStateKey         | Bir ComplianceState anahtarı.                                                                                                                                                            |
+| OSVersion                  | İşletim sistemi sürümü.                                                                                                                                                                          |
+| JailBroken                 | Cihazda jailbreak yapılıp yapılmadığı veya kök erişim izni verilip verilmediğini gösterir.                                                                                                                                         |
+| DeviceCategoryKey          | Bu cihaz için cihaz kategorisi özniteliğinin anahtarı. 
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 

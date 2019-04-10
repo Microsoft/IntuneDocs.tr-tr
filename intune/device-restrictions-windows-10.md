@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41eca84f49c8bd1827d6dfbc74909ee829dd3554
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292475"
+ms.locfileid: "59423705"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -308,6 +308,29 @@ Bu cihaz kısıtlamaları profili kullanarak oluşturduğunuz için kiosk profil
   - **Önceki parolaların yeniden kullanılmasını engelle**: Önceden kullanılmış ve cihaz tarafından anımsanacak olan parola sayısını belirtir.
   - **Cihaz (yalnızca mobil) boşta kalma durumundan çıktığında parola isteme**: Boşta durumundaki bir cihazın kilidini açmak için kullanıcının parola girmesi gerektiğini belirtir (yalnızca Windows 10 Mobile).
   - **Basit parolalar**: 1111 ve 1234 gibi basit parolaların kullanımına olanak sağlar. Bu ayar, Windows resimli parolalarının kullanımına izin verir veya bunu engeller.
+- **AADJ sırasında otomatik şifreleme**: **Blok** cihaz, cihaz Azure AD'ye katılmış olduğunda ilk kullanım için hazırlanır değilse otomatik BitLocker cihaz şifreleme önlenir. **Yapılandırılmamış** (varsayılan) şifreleme sağlayabilir işletim sistemi varsayılan kullanır. Daha açık [BitLocker cihaz şifreleme](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+
+  [Güvenlik/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **Federal Bilgi İşleme Standardı (FIPS) İlkesi**: **İzin** bir ABD Federal Bilgi İşleme Standardı (FIPS) ilkesi kullandığı şifreleme, kodlama ve imzalama için standart. **Yapılandırılmamış** (varsayılan), FIPS kullanmaz işletim sistemi varsayılan olarak kullanır.
+
+  [Şifreleme/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Windows Hello cihazı kimlik doğrulaması**: **İzin** kullanıcıların Windows 10 bilgisayara oturum açmak için Windows Hello gibi bir yardımcı cihaz, telefon, uygunluk bant veya IOT cihaz kullanın. **Yapılandırılmamış** (varsayılan), Windows Hello yardımcı cihazların Windows ile kimlik doğrulaması engelleyebilir işletim sistemi varsayılan olarak kullanır.
+
+  [Kimlik doğrulama/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Oturum açma Web**: ADFS dışında (Active Directory Federasyon Hizmetleri) Federasyon sağlayıcıları, güvenlik onaylama işlemi biçimlendirme dili (SAML) gibi Windows oturum açma desteğini etkinleştirir. SAML web tarayıcıları bir çoklu oturum açma (SSO) deneyimi güvenli belirteçleri kullanır. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmamış** (varsayılan): İşletim sistemi varsayılan cihazda kullanır.
+  - **Etkin**: Web Kimlik sağlayıcısı oturum açma için etkinleştirilir.
+  - **Devre dışı bırakılmış**: Web Kimlik sağlayıcısı oturum açma devre dışı bırakılmıştır.
+
+  [Kimlik doğrulama/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Azure AD kiracısı etki alanının tercih edilen**: Azure AD kuruluşunuzda mevcut bir etki alanı adını girin. Bu etki alanındaki kullanıcılar oturum açtığında, etki alanı adını yazmanız gerekmez. Örneğin, şunu girin: `contoso.com`. Kullanıcıların `contoso.com` etki alanı "abby" gibi kullanıcı adlarını kullanarak oturum açabilir yerine "abby@contoso.com".
+
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>Uygulama başına gizlilik özel durumları
 

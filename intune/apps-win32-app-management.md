@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune’a Win32 uygulamaları ekleme
+title: Ekleme ve Win32 uygulamaları Microsoft Intune atama
 titleSuffix: ''
-description: Microsoft Intune ile Win32 uygulamaları eklemeyi, teslim etmeyi ve yönetmeyi öğrenin. Bu konu, Intune Win32 uygulaması teslim ve yönetim özelliklerine yönelik genel bir bakışın yanı sıra, Win32 uygulaması sorun giderme bilgilerini sağlar.
+description: Ekleme, atama ve Win32 uygulamaları Microsoft Intune ile öğrenin. Bu konu, Intune Win32 uygulaması teslim ve yönetim özelliklerine yönelik genel bir bakışın yanı sıra, Win32 uygulaması sorun giderme bilgilerini sağlar.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,40 +18,47 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d93ad2e838f4980c206c098d8e36e51e138969d1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: bd93e5ef7af5f4a4c0cd8d29f4cbcc26fc0515cd
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799050"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429157"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
-Intune tek başına daha fazla Win32 uygulama yönetimi özellikleri sağlar. Bulut bağlantılı müşterilerin Win32 uygulama yönetiminde Configuration Manager'ı kullanmaları mümkün olsa da, yanızca Intune kullanan müşteriler Win32 iş kolu (LOB) uygulamalarında daha fazla yönetim özelliğinden yararlanabilir. Bu konu, Intune Win32 uygulaması yönetim özelliklerine yönelik genel bir bakışın yanı sıra, sorun giderme bilgileri sağlar.
+[Tek başına Intune](mdm-authority-set.md) artık büyük Win32 uygulama yönetimi özellikleri sağlar. Bulut bağlantılı müşterilerin Win32 uygulama yönetiminde Configuration Manager'ı kullanmaları mümkün olsa da, yanızca Intune kullanan müşteriler Win32 iş kolu (LOB) uygulamalarında daha fazla yönetim özelliğinden yararlanabilir. Bu konu, Intune Win32 uygulaması yönetim özelliklerine yönelik genel bir bakışın yanı sıra, sorun giderme bilgileri sağlar.
+
+> [!NOTE]
+> Bu uygulama yönetim özelliği, hem 32-bit ve 64-bit işletim sistemi mimarisi için Windows uygulamaları destekler.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
+Win32 uygulama yönetimi kullanmak için aşağıdaki ölçütleri karşıladığından emin olun:
+
 - Windows 10 sürüm 1607 veya üzeri (Enterprise, Pro ve Education sürümleri)
 - Windows 10 istemcisi: 
-    - Azure Active Directory (AAD) alanına katılmış veya [hibrit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (başka bir Docs web sitesini açar) ve
+    - Azure Active Directory (AAD) alanına katılmış veya [hibrit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
     - Intune’da kayıtlı (MDM ile yönetilen) olmalıdır
 - Windows uygulama boyutu, uygulama 8 GB olarak tavan
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Karşıya yükleme için Win32 uygulaması içeriğini hazırlama
 
-Kullanım [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) Win32 uygulamaları önceden işlenecek. Aracı uygulama yükleme dosyalarına dönüştürür *.intunewin* biçimi. Aracın bazı Intune tarafından uygulama yükleme durumunu belirlemek için gerekli öznitelikler algılar. Uygulama yükleyicisi klasöründe bu aracı kullandıktan sonra, Intune konsolunda Win32 uygulaması oluşturabilirsiniz.
+Kullanım [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) Windows Klasik (Win32) uygulamaların önceden işlenecek. Aracı uygulama yükleme dosyalarına dönüştürür *.intunewin* biçimi. Aracın bazı Intune tarafından uygulama yükleme durumunu belirlemek için gerekli öznitelikler algılar. Bu araç uygulama yükleyici klasörü kullandıktan sonra Intune konsolunda bir Win32 uygulaması oluşturmak mümkün olacaktır.
 
 > [!IMPORTANT]
 > [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) oluştururken zıps tüm dosyaları ve alt klasörleri *.intunewin* dosya. Böylece aracı veya diğer gereksiz dosyaları ve klasörleri içermez Microsoft Win32 içerik hazırlığı aracını Installer dosyalarını ve klasörlerini ayrı sakladığınızdan emin olun, *.intunewin* dosya.
 
-İndirebileceğiniz [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) github'dan.
+İndirebileceğiniz [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730) github'dan bir zip dosyası olarak. Sıkıştırılmış dosya adlı bir klasör içerir **Microsoft-Win32-Content-Prep-Tool-master**. Hazırlık Aracı, lisans, bir Benioku ve sürüm notları klasör içeriyor. 
+
+Çalıştırırsanız `IntuneWinAppUtil.exe` parametresiz komut penceresinden araç, giriş gerekli parametreleri adım adım yönlendirecektir. Veya aşağıdaki kullanılabilir komut satırı parametreleri temel alarak komut parametrelerinin ekleyebilirsiniz.
 
 ### <a name="available-command-line-parameters"></a>Kullanılabilir komut satırı parametreleri 
 
 |    **Komut satırı parametresi**    |    **Açıklama**    |
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Yardım    |
-|    `-c <setup_folder>`     |    Tüm kurulum dosyaları için kurulum klasörü.    |
+|    `-c <setup_folder>`     |    Tüm Kurulum dosyaları klasörü. Bu klasördeki tüm dosyalar sıkıştırılmadan *.intunewin* dosya.    |
 |   ` -s <setup_file>`     |    Kurulum dosyası (*setup.exe* veya *setup.msi* gibi).    |
 |    `-o <output_folder>`     |    Oluşturulan *.intunewin* dosyası için çıkış klasörü.    |
 |    `-q`       |    Sessiz mod    |
@@ -61,7 +68,7 @@ Kullanım [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft
 |    **Örnek komut**    |    **Açıklama**    |
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Bu komut aracın kullanım bilgilerini gösterir.    |
-|    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Bu komut, belirtilen kaynak klasörden ve kurulum dosyasından `.intunewin` dosyasını oluşturur. MSI kurulum dosyası için, bu araç Intune'a gereken bilgileri alır. `-q` belirtilirse, komut sessiz modda çalıştırılır ve çıkış dosyası zaten varsa, bu dosyanın üzerine yazılır. Ayrıca, çıkış klasörü yoksa otomatik olarak oluşturulur.    |
+|    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    Bu komut, belirtilen kaynak klasörden ve kurulum dosyasından `.intunewin` dosyasını oluşturur. MSI kurulum dosyası için, bu araç Intune'a gereken bilgileri alır. `-q` belirtilirse, komut sessiz modda çalıştırılır ve çıkış dosyası zaten varsa, bu dosyanın üzerine yazılır. Ayrıca, çıkış klasörü yoksa otomatik olarak oluşturulur.    |
 
 Oluştururken bir *.intunewin* dosyası, Kurulum klasörünün bir alt klasöre başvurmak için ihtiyacınız olan tüm dosyaları yerleştirin. Ardından, gerek duyduğunuz belirli bir dosyaya başvurmak için göreli bir yol kullanın. Örneğin:
 
@@ -255,6 +262,9 @@ Aşağıdaki görüntüde, cihaza uygulama değişiklikler yapılmıştır son k
 
 ## <a name="toast-notifications-for-win32-apps"></a>Win32 uygulamaları için kutlama bildirimleri 
 Gerekirse, uygulama ataması başına gösteren son kullanıcı bildirimleri gösterilmemesini sağlayabilirsiniz. Intune'dan seçin **istemci uygulamaları** > **uygulamaları** > uygulamayı seçin > **Assignemnts** > **grupları dahil**. 
+
+> [!NOTE]
+> Intune yönetim uzantısı Win32 uygulamaları kaldırılmaz kayıtlı olmayan cihazlarda yüklü. Yöneticiler, Win32 uygulamaları KCG cihazları teklif atama dışlama yararlanabilirsiniz.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 uygulamasında sorun giderme
 İstemci makinesindeki aracı günlükleri genellikle `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` yolunda bulunur. Bu günlük dosyalarını görüntülemek için `CMTrace.exe` dosyasından yararlanabilirsiniz. *CMTrace.exe* indirilebileceğini [Configuration Manager istemci araçları](https://docs.microsoft.com/sccm/core/support/tools). 

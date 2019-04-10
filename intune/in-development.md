@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 327019527ea3c374a3ebeb3c29703dbd744d18dc
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 2422762fb6717cb4666345599785430a2c35cd1f
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231777"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423548"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>Microsoft Intune - Nisan 2019 geliştirme
 
@@ -60,9 +60,6 @@ Yakında istemciler için Windows Defender'ın özel bir güvenlik duvarı kural
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Uygulama koruma koşullu erişim gerektirir  <!--1634317 -->
 Kullanılacak mümkün olacaktır *gerektiren uygulama koruma İlkesi*, hangi ilke onaylar kullanıcıların koşullu erişim ile koruduğunuz veri erişimini engellemek için oturum açma tamamlanmadan önce bir kullanıcının uygulamaya uygulanır. İlke güvencesi ilk kullanım deneyimi yavaş, ancak ağ sorunları, yönetim yanlış yapılandırmalarını veya uygulama koruma ilkeleri önleme kasıtlı çalışmalarını karşı korumak için yardımcı olur. 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>İş uygulamalarına yönelik çevrimiçi lisanslı Microsoft Store dağıtımı <!-- 16726660 -->
-Gerekli çevrimiçi lisanslı Microsoft Store cihaz bağlamında kurumsal uygulamalar için atama mümkün olacaktır. Bu şekilde bir iş uygulaması için Microsoft Store dağıtımı, cihazdaki tüm kullanıcılar için yüklenecek uygulamayı etkinleştirir. Bu yalnızca Windows 10 RS4 + Masaüstü cihazları için geçerlidir. Cihaz bağlamında yükleme seçeneği, istemci uygulamaları atama sayfasında MSFB çevrimiçi lisanslı uygulamaları için kullanılabilir.
 
 ### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Ekleme ve kullanıcı grupları ve cihaz grupları bileşimi ilkeler ve Profiller atarken çıkarma <!-- 1807547 -->
 Uyumluluk ilkeleri veya yapılandırma profillerini atarken, kullanıcılara veya cihazlara, bunları güvenlik gruplarına atayabilirsiniz. Şu anda, içerir ve yalnızca kullanıcı grupları hariç *veya* dahil etmek ve yalnızca cihaz gruplarını dışlamak. Gönderilemiyor dahil ve hariç grupların bir karışımını, gibi kullanıcı gruplarını dahil etme *ve* aygıtları grubu hariç.
@@ -142,7 +139,7 @@ Geçerli ayarları listesini görmek için Git [izin vermek veya özellikleri k�
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Bir Windows 10 cihaz uyumluluk İlkesi, TPM yonga denetle <!-- 3617671 -->
 Güvenilir Platform Modülü (TPM) yonga kümeleri çok sayıda Windows 10 ve üzeri cihazlar vardır. Yeni bir uyumluluk ayarı bir TPM cihazı olup olmadığını denetler.
 
-[Windows 10 ve üzeri uyumluluk İlkesi ayarları](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) geçerli ayarlarını listeler.
+[Windows 10 ve üzeri uyumluluk İlkesi ayarları](compliance-policy-create-windows.md) geçerli ayarlarını listeler.
 
 Şunun için geçerlidir: 
 - Windows 10 ve üzeri
