@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9dca4dc0b0b93d8466835ce0518268a548f3174a
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 40f9ada715570de7b5b2f95292b7ed0d238242d2
+ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231760"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59509710"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune ağ yapılandırma gereksinimleri ve bant genişliği
 
@@ -68,11 +68,16 @@ Intune istemcileri için içerikleri önbelleğe alan bir proxy sunucunun kullan
 |         Önbellek boyutu         |             5 GB ila 30 GB             | Bu değer, ağınızdaki istemci bilgisayarların sayısına ve kullandığınız yapılandırmalara bağlı olarak değişir. Dosyaların çok kısa sürede silinmesini önlemek için ortamınıza yönelik önbellek boyutunu ayarlayın. |
 | Tek önbellek dosyası boyutu |                950 MB                 |                                                                     Bu ayar, tüm önbelleğe alan proxy sunucularında kullanılamayabilir.                                                                     |
 |   Önbelleğe alınacak nesne türleri    | HTTP<br /><br />HTTPS<br /><br />BİT |                                               Intune paketleri HTTP üzerinden Arka Plan Akıllı Aktarım Hizmeti (BITS) indirmesi tarafından alınan CAB dosyalarıdır.                                               |
+> [!NOTE]
+> İçerik isteklerini önbelleğe almak için bir ara sunucu kullanıyorsanız, yalnızca ara sunucu ile istemci arasında ve ıntune'a Proxy'den gelen iletişimleri şifrelidir. Intune istemci bağlantısını şifrelenmiş uçtan uca olmayacaktır.
 
 Önbelleğe içerik almak için proxy sunucu kullanma hakkında bilgi için proxy sunucunuzun çözümünü içeren belgelere bakın.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Bilgisayarlarda arka plan Akıllı Aktarım Hizmeti (BITS) kullanın
 Yapılandırdığınız saatleri sırasında ağ bant genişliğini azaltmak üzere bir Windows bilgisayarda BITS kullanabilirsiniz. BITS ilkesini yapılandırabilirsiniz **ağ bant genişliği** Intune Aracısı ilkesinin sayfası.
+
+> [!NOTE]
+> Windows üzerinde MDM yönetimi, yalnızca işletim sisteminin yönetim arabirimi MobileMSI uygulama türüne indirmek için BITS kullanır. AppX/MsiX kendi BITS olmayan indirme yığını ve Win32 uygulamaları Intune aracı üzerinden BITS yerine teslim iyileştirme kullanın.
 
 BITS ve Windows bilgisayarlar hakkında daha fazla bilgi için TechNet Kitaplığında [Arka Plan Akıllı Aktarım Hizmeti](http://technet.microsoft.com/library/bb968799.aspx) konusuna bakın.
 

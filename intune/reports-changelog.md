@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,158 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89bbdd5ef14de6b2c083df753d92094395b7df2c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5b4765cf953c2cdc9e972224b4f04c54df7a32af
+ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798060"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59509727"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune Veri Ambarı API’si için değişiklik günlüğü
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune Veri Ambarı hakkında güncel bilgiler edinin.
+
+## <a name="1903-part-2"></a>1903 (Bölüm 2)
+_Nisan 2019 yayımlanan_
+
+### <a name="beta-changes"></a>Beta değişiklikleri
+
+Aşağıdaki tabloda, son kaldırılan koleksiyonları ve Intune veri ambarı'nda değişiklik koleksiyonları listeler.
+
+|    Koleksiyon                          |    Değiştir     |    Ek bilgiler                                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    mobileAppDeviceUserInstallStatus    |    Kaldırılır    |    Kullanım [mobileAppInstallStatusCounts](intune-data-warehouse-collections.md#mobileappinstallstatuscounts) yerine.                                                                                                                                                                                                                                                                     |
+|    EnrollmentTypes                     |    Kaldırılır    |    Kullanım [deviceEnrollmentTypes](intune-data-warehouse-collections.md#deviceenrollmenttypes) yerine.                                                                                                                                                                                                                                                                                      |
+|    MdmStatuses                         |    Kaldırılır    |    Kullanım [complianceStates](intune-data-warehouse-collections.md#compliancestates) yerine.                                                                                                                                                                                                                                                                                               |
+|    WorkPlaceJoinStateTypes             |    Kaldırılır    |    Kullanım `azureAdRegistered` özelliğinde [cihazları](intune-data-warehouse-collections.md#devices) ve [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) koleksiyonlar yerine.                                                                                                                                                                                                             |
+|    ClientRegistrationStateTypes        |    Kaldırılır    |    Kullanım [deviceRegistrationStates](intune-data-warehouse-collections.md#deviceregistrationstates) yerine.                                                                                                                                                                                                                                                                             |
+|    currentUser                         |    Kaldırılır    |    Kullanım [kullanıcılar](intune-data-warehouse-collections.md#users) koleksiyonu yerine.                                                                                                                                                                                                                                                                                                      |
+|    Mdmdeviceınventoryhistories         |    Kaldırılır    |    Özelliklerin birçoğu yedekli veya bulunan artık olabilir [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) veya [cihazları](intune-data-warehouse-collections.md#devices) koleksiyonları. Tüm **Mdmdeviceınventoryhistories** henüz bu iki koleksiyonlarla listelenen özellikleri artık mevcut olmayan. Ayrıntılar için aşağıya bakın.    |
+
+Aşağıdaki tabloda önceden bulunan eski özellik **Mdmdeviceınventoryhistories** toplama ve değişiklik/değiştirme:
+
+|    Eski özelliği                |    Değişiklik/değiştirme                                                           |
+|--------------------------------|---------------------------------------------------------------------------------|
+|    CellularTechnology          |    cihaz koleksiyonundaki cellularTechnology                                     |
+|    Deviceclientıd              |    cihaz koleksiyonundaki cihaz kimliği                                               |
+|    deviceManufacturer          |    cihaz koleksiyonundaki üreticisi                                           |
+|    deviceModel                 |    cihaz koleksiyonuna modeli                                                  |
+|    DeviceName                  |    cihaz koleksiyonundaki deviceName                                             |
+|    deviceOsPlatform            |    cihaz koleksiyonundaki deviceTypeKey                                          |
+|    deviceOsVersion             |    osVersion devicePropertyHistories koleksiyondaki                              |
+|    deviceType                  |    cihaz koleksiyonundaki deviceTypes koleksiyona başvuran deviceTypeKey    |
+|    EncryptionState             |    cihaz koleksiyonuna encryptionState özelliği                           |
+|    ExchangeActiveSyncId        |    cihaz koleksiyonuna easDeviceId özelliği                               |
+|    exchangeDeviceId            |    cihaz koleksiyonundaki easDeviceId                                            |
+|    imei                        |    ımeı cihazları koleksiyondaki                                                   |
+|    isSupervised                |    cihaz koleksiyonuna isSupervised özelliği                              |
+|    jailBroken                  |    jailbreak uygulanmış devicePropertyHistories koleksiyondaki                             |
+|    meid                        |    cihaz koleksiyonuna meıd özelliği                                      |
+|    OEM                         |    cihaz koleksiyonundaki üreticisi                                           |
+|    osName                      |    cihaz koleksiyonundaki deviceTypes koleksiyona başvuran deviceTypeKey    |
+|    Telefon numarası                 |    koleksiyondaki cihazları telefon numarası                                            |
+|    PlatformType                |    cihaz koleksiyonuna modeli                                                  |
+|    Ürün                     |    cihaz koleksiyonundaki deviceTypeKey                                          |
+|    ProductVersion              |    osVersion devicePropertyHistories koleksiyondaki                              |
+|    serialNumber                |    koleksiyondaki cihazları seri numarası                                           |
+|    StorageFree                 |    cihaz koleksiyonuna freeStorageSpaceInBytes özelliği                   |
+|    StorageTotal                |    cihaz koleksiyonuna totalStorageSpaceInBytes özelliği                |
+|    SubscriberCarrierNetwork    |    cihaz koleksiyonuna subscriberCarrier özelliği                         |
+|    wifimac                     |    cihaz koleksiyonundaki wiFiMacAddress                                         |
+
+Aşağıdaki tabloda bulunan özelliklerde yapılan değişiklikler [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) koleksiyonu: 
+
+|    Eski özelliği                  |    Değişiklik/değiştirme                                               |
+|----------------------------------|---------------------------------------------------------------------|
+|    CategoryID                    |    deviceCategories koleksiyona başvuran deviceCategoryKey,       |
+|    CertExpirationDate            |    Kaldırılır                                                          |
+|    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
+|    CreatedDate                   |    cihaz koleksiyonundaki enrolledDateTime                           |
+|    DeviceTypeKey                 |    cihaz koleksiyonundaki deviceTypeKey                              |
+|    EasID                         |    cihaz koleksiyonundaki easDeviceId                                |
+|    EnrolledByUser                |    cihaz koleksiyonundaki UserID                                     |
+|    EnrollmentTypeKey             |    cihaz koleksiyonundaki deviceEnrollmentTypeKey                    |
+|    GraphDeviceIsCompliant        |    Kaldırılır                                                          |
+|    GraphDeviceIsManaged          |    Kaldırılır                                                          |
+|    LastContact                   |    cihaz koleksiyonundaki lastSyncDateTime                           |
+|    LastContactNotification       |    Kaldırılır                                                          |
+|    lastContactWorkplaceJoin      |    Kaldırılır                                                          |
+|    lastExchangeStatusUtc         |    Kaldırılır                                                          |
+|    lastModifiedDateTimeUTC       |    Kaldırılır                                                          |
+|    lastPolicyUpdateUtc           |    Kaldırılır                                                          |
+|    ManagementAgentKey            |    managementStateKey                                               |
+|    üretici                  |    cihaz koleksiyonundaki üreticisi                               |
+|    MdmStatusKey                  |    complianceStates koleksiyona başvuran complianceStateKey,    |
+|    model                         |    cihaz koleksiyonuna modeli                                      |
+|    osFamily                      |    cihaz koleksiyonundaki operatingSystem                            |
+|    osRevisionNumber              |    cihaz koleksiyonundaki osVersion                                  |
+|    ProcessorArchitecture         |    Kaldırılır                                                          |
+|    Başvuru Kimliği                   |    cihaz koleksiyonundaki azureAdDeviceId                            |
+|    serialNumber                  |    koleksiyondaki cihazları seri numarası                               |
+|    workplaceJoinStateKey         |    azureAdRegistered                                                |
+
+Aşağıdaki tabloda bulunan özelliklerde yapılan değişiklikler [cihazları](intune-data-warehouse-collections.md#devices) koleksiyonu: 
+
+|    Eski özelliği                  |    Değişiklik/değiştirme                                               |
+|----------------------------------|---------------------------------------------------------------------|
+|    CategoryID                    |    deviceCategories koleksiyona başvuran deviceCategoryKey,       |
+|    CertExpirationDate            |    Kaldırılır                                                          |
+|    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
+|    CreatedDate                   |    EnrolledDateTime                                                 |
+|    easId                         |    easDeviceId                                                      |
+|    EnrolledByUser                |    userId                                                           |
+|    EnrollmentTypeKey             |    deviceEnrollmentTypeKey                                          |
+|    GraphDeviceIsCompliant        |    Kaldırılır                                                          |
+|    GraphDeviceIsManaged          |    Kaldırılır                                                          |
+|    LastContact                   |    lastSyncDateTime                                                 |
+|    LastContactNotification       |    Kaldırılır                                                          |
+|    lastContactWorkplaceJoin      |    Kaldırılır                                                          |
+|    lastExchangeStatusUtc         |    Kaldırılır                                                          |
+|    lastPolicyUpdateUtc           |    Kaldırılır                                                          |
+|    MdmStatusKey                  |    complianceStates koleksiyona başvuran complianceStateKey,    |
+|    osFamily                      |    operatingSystem                                                  |
+|    ProcessorArchitecture         |    Kaldırılır                                                          |
+|    Başvuru Kimliği                   |    azureAdDeviceId                                                  |
+|    workplaceJoinStateKey         |    azureAdRegistered                                                |
+
+Aşağıdaki tabloda bulunan özelliklerde yapılan değişiklikler [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities) koleksiyonu: 
+
+|    Eski özelliği         |    Değişiklik/değiştirme         |
+|-------------------------|-------------------------------|
+|    EnrollmentTypeKey    |    deviceEnrollmentTypeKey    |
+
+Aşağıdaki tabloda bulunan özelliklerde yapılan değişiklikler [mamApplications](intune-data-warehouse-collections.md#mamapplications) koleksiyonu: 
+
+|    Eski özelliği       |    Değişiklik/değiştirme    |
+|-----------------------|--------------------------|
+|    Tanıtıcı, ApplicationKey     |    mamApplicationKey     |
+|    ApplicationName    |    mamApplicationName    |
+|    ApplicationId      |    mamApplicationId      |
+
+Aşağıdaki tabloda bulunan özelliklerde yapılan değişiklikler [mamApplicationInstances](intune-data-warehouse-collections.md#mamapplicationinstances) koleksiyonu: 
+
+|    Eski özelliği     |    Değişiklik/değiştirme    |
+|---------------------|--------------------------|
+|    ApplicationId    |    mamApplicationId      |
+|    deviceId         |    mamDeviceId           |
+|    deviceType       |    mamDeviceType         |
+|    DeviceName       |    mamDeviceName         |
+
+Aşağıdaki tabloda bulunan özelliklerde yapılan değişiklikler [mamCheckins](intune-data-warehouse-collections.md#mamcheckins) koleksiyonu: 
+
+|    Eski özelliği      |    Değişiklik/değiştirme    |
+|----------------------|--------------------------|
+|    Tanıtıcı, ApplicationKey    |    mamApplicationKey     |
+
+Aşağıdaki tabloda bulunan özelliklerde yapılan değişiklikler [kullanıcılar](intune-data-warehouse-collections.md#users) koleksiyonu: 
+
+|    Eski özelliği             |    Değişiklik/değiştirme    |
+|-----------------------------|--------------------------|
+|    StartDateInclusiveUtc    |    Kaldırılır               |
+|    endDateInclusiveUtc      |    Kaldırılır               |
+|    IsCurrent                |    Kaldırılır               |
 
 ## <a name="1903"></a>1903
 _Mart 2019 yayımlanan_
