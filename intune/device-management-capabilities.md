@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f45b239567750f9f633e42de7fd4dbd5f090c1
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
+ms.sourcegitcommit: acf4c36619fc7a068a751c88343978ce749b668c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58163441"
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "59551694"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune’un kayıtlı cihaz yönetimi özellikleri
 
@@ -31,7 +31,7 @@ Microsoft Intune bir dizi cihazı hizmete *kaydederek* yönetmenize olanak tanı
 
 Bu makalede, cihazlar kaydedildikten sonra elde özelliklerinin tam listesini sağlar.
 
-Yönetim, Envanter, uygulama dağıtımı, sağlama ve kullanımdan kaldırma Intune Portalı aracılığıyla gerçekleştirilir.
+Yönetim, Envanter, uygulama dağıtımı, sağlama ve kullanımdan kaldırma gerçekleştirilir Intune aracılığıyla Azure portalında.
 
 Kullanıcılar uygulamaları yüklemek, cihazlarını kaydetmek veya kaydı kaldırmak ve BT departmanına ya da yardım masasına başvurmak için şirket portalına erişim kazanır.
 

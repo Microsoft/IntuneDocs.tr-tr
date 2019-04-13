@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b711da0cb8bceb3273215a41e75a5180e957fb4
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: 1efa421b568a5cc28b23859f68de7145b5b4a943
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658562"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533533"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -30,7 +30,7 @@ Rol tabanlı erişim denetimi (RBAC) yönetmenize, kuruluşunuzun kaynakları ve
 
 Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de aşağıdaki izinlerden birine sahip olması gerekir:
 - **Genel Yönetici**
-- **Intune Hizmet Yöneticisi**
+- **Intune Hizmet Yöneticisi** (diğer adıyla **Intune yönetici**)
 
 ## <a name="roles"></a>Roller
 Bir rol, bu role atanan kullanıcılar için izinler kümesini tanımlar.
