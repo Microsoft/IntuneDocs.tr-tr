@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283578"
 ---
 # <a name="metadata-and-markdown-template"></a>Meta Veriler ve Markdown Şablonu
@@ -34,11 +34,11 @@ Tüm meta veriler bloğu, gerekli ve isteğe bağlı alanlara bölünmüş halde
 
 - İki nokta (:) işareti ve meta veri öğesinin değeri arasında bir boşluk bulunması **gereklidir**.
 - İsteğe bağlı bir meta veri öğesi için bir değer yoksa, # karakterini kullanarak öğeyi açıklama satırı yapın (boş bırakmayın veya “na” kullanmayın); açıklama satırı yapılmış bir öğe için bir değer ekliyorsanız, # karakterini kaldırmayı unutmayın.
-- Değer (ör. bir başlık) içerisindeki iki nokta işaretleri meta veri ayrıştırıcısını durdurur. Bunun yerine, &#58; karakterine ait HTML kodlamasını kullanın; (ör. "başlık: Azure Rights Management&#58; temeller | Azure RMS").
-- **başlık**: Bu başlık, arama motoru sonuçlarında görünür. Başlık bir dikey çizgi (|) ile bitmeli ve ardından hizmetin adı gelmelidir (bir örneği için yukarıya bakın). Başlık, H1 başlığınızda yer alan başlığın aynısı olmak zorunda değildir (aynısı olmaması daha iyi olabilir). Yaklaşık 65 karakter uzunluğunda olmalıdır (| HİZMET ADI kısmı dahil olmak üzere).
-- **yazar**, **yönetici**, **gözden geçiren**: Yazar alanı, yazarın diğer adını değil **Github kullanıcı adını** içermelidir.  Öte yandan, “yönetici” ve “gözden geçiren” alanları, diğer adlar içermelidir. ms.reviewer, makale veya hizmetle ilişkili proje yöneticisinin adını belirtir.
-- **ms.assetid**: Makalenin CAPS’ten gelen GUID’idir. Yeni bir markdown dosyası oluştururken, [https://www.guidgenerator.com](https://www.guidgenerator.com) adresinden bir GUID alın. 
-- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Bu öğeler için olası değerler [burada](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default) bulunabilir.
+- Değer (ör. bir başlık) içerisindeki iki nokta işaretleri meta veri ayrıştırıcısını durdurur. Bunun yerine, ait HTML kodlamasını kullanın &#58; (örneğin, "Başlık: Azure Rights Management&#58; temel bilgileri | Azure RMS").
+- **Başlık**: Bu başlık, arama motoru sonuçlarında görünür. Başlık bir dikey çizgi (|) ile bitmeli ve ardından hizmetin adı gelmelidir (bir örneği için yukarıya bakın). Başlık, H1 başlığınızda yer alan başlığın aynısı olmak zorunda değildir (aynısı olmaması daha iyi olabilir). Yaklaşık 65 karakter uzunluğunda olmalıdır (| HİZMET ADI kısmı dahil olmak üzere).
+- **Yazar**, **manager**, **Gözden Geçiren**: Yazar alanı içermelidir **Github kullanıcı adını** değil diğer yazar.  Öte yandan, “yönetici” ve “gözden geçiren” alanları, diğer adlar içermelidir. ms.reviewer, makale veya hizmetle ilişkili proje yöneticisinin adını belirtir.
+- **MS.assetid**: Bu makalenin caps'ten GUID'idir. Yeni bir markdown dosyası oluştururken, adresinden bir GUID alın [ https://www.guidgenerator.com ](https://www.guidgenerator.com). 
+- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Bu öğeler için olası değerler bulunabilir [burada](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>Temel Markdown ve GFM
 
@@ -47,7 +47,7 @@ Tüm temel ve Github özellikli markdown’lar desteklenir. Bunlar hakkında dah
 - [Temel markdown söz dizimi](https://daringfireball.net/projects/markdown/syntax)
 - [Github özellikli markdown (GFM) belgeleri](https://guides.github.com/features/mastering-markdown)
 
-## <a name="headings"></a>Başlıklar
+## <a name="headings"></a>Başlıkları
 
 Birinci ve ikinci düzey başlık örnekleri yukarıda görülebilir. 
 
@@ -74,11 +74,11 @@ Konunuzda yalnızca bir adet birinci düzey başlık **bulunmalıdır**. Bu baş
 
 Aynı depodaki bir markdown dosyasına bağlantı sağlamak için [göreli bağlantıları](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2) kullanın. 
 
-- Örnek: [Azure Rights Management nedir?](./understand-explore/what-is-azure-rights-management.md)
+- Örnek: [Azure Rights Management nedir](./understand-explore/what-is-azure-rights-management.md)
 
 Aynı markdown dosyasındaki bir üst bilgiye bağlantı sağlamak için, yayımlanan makalenin kaynağını görüntüleyerek üst bilginin kimliğini bulun (ör. `id="blockquote"`) ve # + kimlik şeklinde kullanarak bağlantıyı oluşturun (ör. `#blockquote`).
 
-- Örnek: [Alıntı Blokları](#blockquote)
+- Örnek: [Alıntı blokları](#blockquote)
 
 Aynı depoda bulunan bir markdown dosyasındaki bir üst bilgiye bağlantı sağlamak için, göreli bağlantı sağlama ve diyez etiketli bağlantı sağlamayı birlikte kullanın.
 
@@ -112,7 +112,7 @@ Markdown dosyasında bir URL görünürse, bu URL tıklanabilir bir bağlantıya
     1. Deniz Acar
     1. Turgay Elmas
 1. sıralı
-1. liste
+1. list
 
 
 ### <a name="unordered-lists"></a>Sırasız listeler
@@ -121,14 +121,14 @@ Markdown dosyasında bir URL görünürse, bu URL tıklanabilir bir bağlantıya
 - bir
 - madde
 - madde işaretli
-- liste
+- list
 
 
 ##### <a name="unordered-list-with-an-embedded-lists"></a>İçinde katıştırılmış bir liste bulunan sırasız liste
 
 - Bu 
 - madde işaretli 
-- liste
+- list
     - Emel Mert
     - Murat Arslan
 - içerir  
