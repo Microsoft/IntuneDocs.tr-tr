@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9b03bf1cf4b19d66ed26e7a21c965d8297e1b84
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 003e6e5aa78440861e6aff5be138c4a302171c1b
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292272"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571748"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
 
@@ -105,16 +105,16 @@ Windows 8.1 ve üstündeki yerel **Posta** uygulaması (Intune ile kaydedildiği
     > [!TIP]
     > Biçimlendirme dili hakkında daha fazla bilgi edinmek için bu Wikipedia [makalesine](https://en.wikipedia.org/wiki/Markup_language) bakın.
 
-12. **Gelişmiş Exchange Active Sync erişim ayarları** bölmesinde, Intune tarafından yönetilmeyen cihazlardan erişim için ve sonraki iki adımda açıklandığı gibi platform düzeyi kuralları için genel varsayılan kuralı ayarlayın.
+12. **Gelişmiş Exchange Active Sync erişim ayarları** bölmesinde, Intune tarafından yönetilmeyen cihazlardan erişim için ve sonraki iki adımda açıklandığı gibi platform düzeyi kuralları için genel varsayılan kuralı ayarlayın. Gelişmiş ayarlar bölmesini almak için *Exchange erişim - Exchange şirket içi erişim* görüntülenecek *- Exchange ActiveSync şirket içi Bağlayıcısı*.
 
-8. Koşullu erişimden veya diğer kurallardan etkilenmeyen bir cihaz söz konusu olduğunda, cihazın Exchange’e erişmesine izin vermeyi, veya engellemeyi seçebilirsiniz.
+13. Koşullu erişimden veya diğer kurallardan etkilenmeyen bir cihaz söz konusu olduğunda, cihazın Exchange’e erişmesine izin vermeyi, veya engellemeyi seçebilirsiniz.
 
    - Bunu erişime izin verecek şekilde ayarlarsanız, tüm cihazlar şirket içi Exchange’e hemen erişebilir.  **Eklenen Gruplar** içindeki kullanıcılara ait cihazlar, sonunda uyumluluk ilkelerine uymadığı veya Intune’a kaydedilmemiş olduğu belirlenirse engellenir.
    - Bunu erişimi engelleyecek şekilde ayarlarsanız, başlangıçta tüm cihazların şirket içi Exchange’e erişimi hemen engellenir.  **Eklenen Gruplar** içindeki kullanıcılara ait cihazlar, Intune’a kaydolduğunda ve uyumlu olarak değerlendirildiğinde erişim kazanır. Samsung Knox Standard çalıştırmayan Android cihazlar bu ayarı desteklemediğinden, her zaman engellenir.
 
-13. **Cihaz platformu özel durumları**’nın altında **Ekle**’yi seçerek platformları belirtin. **Yönetilmeyen cihaz erişimi** ayarı **engellendi** olarak belirlenirse, engellemek için bir platform özel durumu olsa bile, kayıtlı ve uyumlu cihazlara izin verilir. Ayarları kaydetmek için **Tamam**’ı seçin.
+14. **Cihaz platformu özel durumları**’nın altında **Ekle**’yi seçerek platformları belirtin. **Yönetilmeyen cihaz erişimi** ayarı **engellendi** olarak belirlenirse, engellemek için bir platform özel durumu olsa bile, kayıtlı ve uyumlu cihazlara izin verilir. Ayarları kaydetmek için **Tamam**’ı seçin.
 
-14. **Şirket içi** bölmesinde **Kaydet**’e tıklayarak koşullu erişim ilkesini kaydedin.
+15. **Şirket içi** bölmesinde **Kaydet**’e tıklayarak koşullu erişim ilkesini kaydedin.
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Intune'da Azure AD Koşullu erişim ilkeleri oluşturma
 
