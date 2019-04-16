@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2422762fb6717cb4666345599785430a2c35cd1f
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423548"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587391"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>Microsoft Intune - Nisan 2019 geliştirme
 
@@ -60,15 +60,6 @@ Yakında istemciler için Windows Defender'ın özel bir güvenlik duvarı kural
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Uygulama koruma koşullu erişim gerektirir  <!--1634317 -->
 Kullanılacak mümkün olacaktır *gerektiren uygulama koruma İlkesi*, hangi ilke onaylar kullanıcıların koşullu erişim ile koruduğunuz veri erişimini engellemek için oturum açma tamamlanmadan önce bir kullanıcının uygulamaya uygulanır. İlke güvencesi ilk kullanım deneyimi yavaş, ancak ağ sorunları, yönetim yanlış yapılandırmalarını veya uygulama koruma ilkeleri önleme kasıtlı çalışmalarını karşı korumak için yardımcı olur. 
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Ekleme ve kullanıcı grupları ve cihaz grupları bileşimi ilkeler ve Profiller atarken çıkarma <!-- 1807547 -->
-Uyumluluk ilkeleri veya yapılandırma profillerini atarken, kullanıcılara veya cihazlara, bunları güvenlik gruplarına atayabilirsiniz. Şu anda, içerir ve yalnızca kullanıcı grupları hariç *veya* dahil etmek ve yalnızca cihaz gruplarını dışlamak. Gönderilemiyor dahil ve hariç grupların bir karışımını, gibi kullanıcı gruplarını dahil etme *ve* aygıtları grubu hariç.
-
-Dahil etmek ve kullanıcı grupları ve cihaz grupları dışlamak mümkün olacaktır. Grubunu hariç tutmak ve bir kullanıcı grubu içerir. Örneğin, atama veya bir kullanıcı grubuna bir cihaz yapılandırma profili dağıtmak ancak kişisel cihazları.
-
-[Cihaz yapılandırma profillerini atama](device-profile-assign.md) kullanıcı grupları ve cihaz profilleri atama hakkında daha fazla bilgi içerir.
-
-Şunun için geçerlidir: Tüm platformlar
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Uyumlu olmayan cihazları devre dışı bırakma <!-- 1827291 -->
 Uyumsuz bir cihazı devre dışı bırakmak için yeni bir uyumluluk eylemi eklemek için ekleyeceğiz. Uyumsuz bir cihazı devre dışı bırakma tüm şirket verileri CİHAZDAN kaldırılır ve Intune tarafından yönetilen cihaz de kaldırır. Bu eylem, gün içinde yapılandırılan değeri ulaşıldığında çalıştırır. Minimum değer 30 gündür. 

@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 872cbd203a57976bd1bceb83e5fbf95a15721ff4
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: b774235e896c4dcbc548d4c8c65b4c6ab218ea28
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292315"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587493"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Hızlı Başlangıç: Windows 10 cihazınızı kaydetme
 
@@ -60,7 +60,7 @@ Windows 10 Masaüstü cihazınızı kaydetmeden önce yüklü olan Windows sür�
 4. Windows 10’un **Sürüm** bölümünün **1607 veya üzeri** olduğunu onaylayın.
 
     > [!IMPORTANT]
-    > Bu hızlı başlangıçta sunulan adımlar Windows 10 **1607 veya üzeri** sürümler içindir, **1511 veya daha düşük** sürüme sahipseniz [şu adımları](/intune-user-help/enroll-windows-10-device.md) izleyin.  
+    > Bu hızlı başlangıçta sunulan adımlar Windows 10 **1607 veya üzeri** sürümler içindir, **1511 veya daha düşük** sürüme sahipseniz [şu adımları](/intune-user-help/enroll-windows-10-device) izleyin.  
 
 ## <a name="enroll-windows-10-desktop"></a>Windows 10 Masaüstü’nü kaydetme
 
