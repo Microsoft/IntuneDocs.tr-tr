@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9273d547d72fd6cf10d2addc5efff2eba8e18205
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5bd57d12630d5e2c8b69963f513ef007a9023f9b
+ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799464"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59704901"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bir iOS uygulamasına özel yapılandırma ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu yapılandırma ayarları, uygulamanın sağlayıcı yönünde özelleştirilebilmesini sağlar. Bu yapılandırma ayarlarını (anahtarlar ve değerleri) uygulama sağlayıcısından almanız gerekir. Uygulamayı yapılandırmak için ayarları, anahtarlar ve değerler olarak veya anahtarlar ve değerler içeren bir XML olarak belirtin. Ayrıca bu yapılandırma ilkelerini kullanıcılara ve cihazlara doğrudan atamayın. Bunun yerine, yapılandırma ilkesini bir uygulamayla ilişkilendirin ve bu uygulamayı atayın. Yapılandırma ilkesi ayarları, uygulama tarafından denetim gerçekleştirildiğinde, genellikle de uygulama ilk defa çalıştırıldığında kullanılır.
+Bir iOS uygulamasına özel yapılandırma ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu yapılandırma ayarlarını uygulama tedarikçileri yöne bağlı uygulama özelleştirilmesine olanak sağlar. Bu yapılandırma ayarlarını (anahtarlar ve değerleri) uygulama sağlayıcısından almanız gerekir. Uygulamayı yapılandırmak için ayarları, anahtarlar ve değerler olarak veya anahtarlar ve değerler içeren bir XML olarak belirtin. Ayrıca bu yapılandırma ilkelerini kullanıcılara ve cihazlara doğrudan atamayın. Bunun yerine, yapılandırma ilkesini bir uygulamayla ilişkilendirin ve bu uygulamayı atayın. Yapılandırma ilkesi ayarları, uygulama tarafından denetim gerçekleştirildiğinde, genellikle de uygulama ilk defa çalıştırıldığında kullanılır.
 
 Bir uygulama yapılandırma ilkesini ekledikten sonra bu uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladıktan sonra ilkenin uygulandığı kullanıcı gruplarını dahil etmeyi veya dışlamayı seçebilirsiniz. Bir veya daha fazla grubu dahil etmeyi seçtiğinizde, belirli grupları dahil etmeyi veya yerleşik grupları kullanmayı seçebilirsiniz. Yerleşik gruplar **Tüm Kullanıcılar**, **Tüm Cihazlar** ve **Tüm Kullanıcılar + Tüm Cihazlar** şeklindedir. 
 
@@ -56,15 +56,15 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 5. Aşağıdaki bilgileri ayarlayın:
     - **Ad** - Azure portalında görünen profil adı.
     - **Açıklama** - Azure portalında görünen profil açıklaması.
-    - **Cihaz kayıt türü** - **Yönetilen uygulamalar**’ı seçin.
+    - **Cihaz kayıt türü** -seçin **yönetilen cihazlar** Intune'a kayıtlı cihazlar için.
 6. **Platform** için **iOS**’u seçin.
 7.  **İlişkili uygulama**’yı seçin. Daha sonra **İlişkili uygulama** bölmesinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı ve ardından **Tamam**’ı seçin.
 8.  **Yapılandırma ilkesi ekle** bölmesinde **Yapılandırma ayarları**’nı seçin.
-9. **Yapılandırma ayarları biçimi**’ni seçin. XML bilgileri eklemek için aşağıdakilerden birini seçin:
+9. **Yapılandırma ayarları biçimi**’ni seçin. Yapılandırma bilgilerini eklemek için aşağıdaki yöntemlerden birini seçin:
     - **Yapılandırma tasarımcısını kullanma**
     - **XML verileri girme**<br><br>
     Yapılandırma tasarımcısını kullanma hakkında ayrıntılar için bkz. [Yapılandırma tasarımcısını kullanma](#use-configuration-designer). XML verileri girme hakkında ayrıntılar için bkz. [XML verileri girme](#enter-xml-data). 
-10. XML bilgilerinizi ekledikten sonra **Tamam**’ı seçin ve yapılandırma ilkesini eklemek üzere **Ekle**’yi seçin. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
+10. Yapılandırma bilgilerinizi ekledikten sonra seçin **Tamam**ve ardından **Ekle** yapılandırma ilkesini eklemek için. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
 11. **Atamalar**’ı seçerek dahil etme ve dışlama seçeneklerini görüntüleyin. 
 
     ![İlke atamaları Ekle sekmesinin ekran görüntüsü](./media/app-config-policy01.png)

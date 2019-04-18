@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71591e0be428d54af359c51daee96d6a21b43169
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: dc7f4bf02c05bdece8465b1af91bfd4cbd45492b
+ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231813"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59704935"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -46,6 +46,13 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 -->     
 
 <!-- ########################## -->
+
+## <a name="week-of-april-15-2019"></a>15 Nisan 2019 haftası
+
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+#### <a name="intune-data-warehouse-v10-changes-reflecting-back-to-beta----4403765---"></a>Intune veri ambarı V1.0 değişiklikleri beta için yansıtma <!-- 4403765 -->
+V1.0, ilk olarak 1808 içinde sunulmuştur, önemli bazı açılardan'ı Beta'dan API farklıydı. 1903 bu değişiklikleri geri beta API sürümüne yansıtılır. Beta API sürümünü kullanan önemli raporlarınız varsa, bu raporları önemli değişiklikler önlemek için V1.0 geçiş kesinlikle öneririz. Daha fazla bilgi için [değişiklik günlüğü için Intune veri ambarı API'si](reports-changelog.md#1903-part-2).
 
 ## <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası
 

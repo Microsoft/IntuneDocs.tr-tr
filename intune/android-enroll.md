@@ -18,31 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: b76b461d445bfbec5fe2e8d355cd2a4f228735df
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799579"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671858"
 ---
 # <a name="enroll-android-devices"></a>Android cihazlarını kaydetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune yöneticisi olarak, aşağıdaki Android cihazları yönetebilirsiniz:
-- Samsung Knox Standard cihazlar dahil olmak üzere Android cihazlar.
+- Samsung Knox Standard cihazları dahil olmak üzere android cihazları ve [Zebra cihazları](android-zebra-mx-overview.md).
 - Dahil olmak üzere android Kurumsal cihaz:
     - **Android kurumsal iş profili cihazları**: Kişisel cihazlarından Kurumsal verilere erişim izni verildi. Yöneticileri, iş hesapları, uygulamaları ve verileri yönetebilir. Cihazdaki kişisel verileri iş verilerinizden ayrı tutulur ve yöneticileri, kişisel ayarlar veya veri denetim yok. 
     - **Android Kurumsal adanmış cihazlar**: Dijital Tabela gibi şirketin sahip olduğu ve tek kullanım cihazları yazdırma bilet veya Stok yönetim. Yöneticiler bir cihazın kullanımını sınırlı sayıda uygulama ve web bağlantısına indirger. Ayrıca kullanıcılar başka uygulama ekleyemez veya farklı eylemler gerçekleştiremez.
     - **Android Kurumsal tam olarak yönetilen cihazlar**: Şirketin sahip olduğu, tek kullanıcı cihazlarını iş için özel olarak kullanılan ve değil kişisel kullanın. Yöneticileri tüm cihazı yönetebilir ve zorunlu ilke denetimleri iş profilleri kullanılamıyor. 
 
-## <a name="prerequisite"></a>Önkoşul
+## <a name="prerequisites"></a>Önkoşullar
 
 Mobil cihazların yönetimine hazırlık olarak, **Microsoft Intune**’a mobil cihaz yönetimi (MDM) yetkilisi ayarlamanız gerekir. Yönergeler için bkz. [MDM yetkilisini ayarlama](mdm-authority-set.md). Bu öğeyi yalnızca mobil cihaz yönetimi için Intune’u ilk defa kurduğunuzda ayarlayabilirsiniz.
 
+Zebra Technologies tarafından üretilen cihazlar için Şirket portalı ek özelliklerine bağlı olarak belirli bir cihazdaki izinler gerekebilir. [Zebra cihazlarda Mobility uzantıları](android-zebra-mx-overview.md) daha fazla bilgi.
+
 ## <a name="set-up-android-enrollment"></a>Android kaydını ayarlama
 
-Intune, Android ve Samsung Knox Standard cihazlarının kaydına varsayılan olarak izin verir. Önkoşulu sağladıktan sonra yöneticilerin yapacağı tek şey [kullanıcılarına cihazlarını nasıl kaydedeceklerini anlatmak](/intune-user-help/enroll-your-device-in-intune-android) olacaktır.
+Varsayılan olarak, Intune, Android, Samsung Knox Standard ve Zebra cihazlarının kaydedilmesini sağlar. "Önkoşulları" gerçeklemenin sonra yöneticilerinin yalnızca gerekir [kendi kullanıcılara cihazlarını nasıl anlatın](/intune-user-help/enroll-your-device-in-intune-android).
 
 Bir kullanıcı kaydolduktan sonra [uyumluluk ilkeleri atama](compliance-policy-create-android.md), [uygulamaları yönetme](app-management.md) ve daha fazlası dahil olmak üzere kullanıcının cihazlarını Intune’da yönetmeye başlayabilirsiniz.
 

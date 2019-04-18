@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b5398517a13b940a828932113698c15c7eaed67
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ab4ecfe3f407082d0a51910b35ad8ac8d6724f9c
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392779"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671892"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator ile iOS cihaz kaydını ayarlama
 
@@ -119,6 +119,7 @@ Profil oluşturup seri numaralarını atadıktan sonra profili Intune'dan URL ol
 1. Mac bilgisayarda **Apple Configurator 2**'yi açın. Menü çubuğunda **Apple Configurator 2**’yi, sonra **Tercihler**’i seçin.
     > [!WARNING]
     > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. Cihazı bağladığınızda cihazın **Merhaba** ekranında olması gerekir.
+    > Apple ID hesabı ile cihaz kaydedilmiş ise kayıt işlemini başlatmadan önce Apple iCloud cihaz silinmelidir. "[Cihaz adı] etkinleştirmek için yapılandırılamıyor" prompt hata görüntülenir.
 
 2. **Tercihler** bölmesinde **Sunucular**’ı seçin ve MDM Sunucusu sihirbazını başlatmak için (+) artı simgesini seçin. Seçin **sonraki**.
 3. Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı altındaki MDM sunucusunun **Konak adı veya URL’si** ve **kayıt URL'sini** girin. Kayıt URL’si olarak Intune’dan dışarı aktarılan kayıt profili URL’sini girin. Seçin **sonraki**.  

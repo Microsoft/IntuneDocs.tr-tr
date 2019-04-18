@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cd9b6718b4406fd18fc0251fbeaf589acd1d0c9
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429212"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671909"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot (Önizleme) kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -121,7 +121,7 @@ Active Directory için Intune bağlayıcısını Windows Server 2016 çalıştı
 
 ### <a name="configure-web-proxy-settings"></a>Web proxy ayarlarını yapılandırma
 
-Ağ ortamınızda bir web proxy varsa, başvurarak Active Directory için Intune bağlayıcısını düzgün çalıştığından emin olmak [iş mevcut şirket içi proxy sunucuları](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Ağ ortamınızda bir web proxy varsa, başvurarak Active Directory için Intune bağlayıcısını düzgün çalıştığından emin olmak [iş mevcut şirket içi proxy sunucuları](autopilot-hybrid-connector-proxy.md).
 
 
 ## <a name="create-a-device-group"></a>Bir cihaz grubu oluşturma
