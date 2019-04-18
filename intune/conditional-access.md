@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34ce3f34dbf3c060438a6b30abc9345687cdaf47
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: a06bcd27778885d69c2122b2b68e53eb6f319a34
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292199"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671790"
 ---
 # <a name="whats-conditional-access"></a>Koşullu erişim nedir?
 
@@ -35,7 +35,7 @@ Enterprise Mobility + Security (EMS) Koşullu Erişim, tek başına bir ürün d
 Kurumsal verilerinize erişim için konum, cihaz, kullanıcı durumu ve uygulama hassaslığı temelinde bir geçit oluşturan koşullar tanımlayabilirsiniz.
 
 > [!NOTE] 
-> Koşullu Erişim, sahip olduğu özellikleri [Office 365 hizmetlerine](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/) de yayar.
+> Koşullu Erişim, sahip olduğu özellikleri [Office 365 hizmetlerine](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access) de yayar.
 
 ![Koşullu erişim mimari şeması](./media/ca-diagram-1.png)
 
