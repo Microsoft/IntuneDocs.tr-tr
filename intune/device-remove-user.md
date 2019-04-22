@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 53c4e02f32fa421c745f5bfa15e97023f47ece88
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897469"
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>Paylaşılan bir iOS cihazından kullanıcı kaldırma
 
@@ -41,7 +41,7 @@ ms.locfileid: "58799551"
 
 ## <a name="remove-a-user"></a>Kullanıcıyı kaldırma
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **Cihazlar**’ı seçin.
 4. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.
