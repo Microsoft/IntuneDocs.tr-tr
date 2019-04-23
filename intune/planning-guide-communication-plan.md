@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513299"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Dağıtım iletişim planı geliştirme
 

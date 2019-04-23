@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508286"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
@@ -40,7 +40,7 @@ Aşağıdaki Intune Veri Ambarı koleksiyonları, Veri Ambarı API’si varlıkl
 | Başlık                      | Uygulama başlığı.                                                                     | Excel                                |
 | Yayımcı                  | Uygulama yayımcısı.                                                                 | Microsoft                            |
 | UploadState                | Uygulamanın karşıya yüklenme durumu.                                                              | 1.                                    |
-| AppTypeKey                 | Aşağıdaki bölümde açıklanan AppType özelliğine başvuru.                            | 1.                                    |
+| AppTypeKey                 | Aşağıdaki bölümde açıklanan AppType özelliğine başvuru.                            | 1                                    |
 | VppProgramTypeKey          | Aşağıda açıklanan VppProgramType özelliğine başvuru.                                        | 30876                                |
 | CreationTime               | Düzeltmenin oluşturulduğu saat.                                            | 23.11.2016 0:00                      |
 | ModifiedTime               | Bu düzeltmeyle ilgili herhangi bir şeyin en son değiştirildiği an.                            | 23.11.2016 0:00                      |
@@ -131,7 +131,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 |:---------------:|:------------------------------------------------------:|:-------------:|
 | DateKey         | Veri ambarında bu tarihin benzersiz tanımlayıcısı. | 20160703      |
 | FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3.7.2016 0:00 |
-| DayOfWeek       | Haftanın kaçıncı günü olduğu                                            | 1.             |
+| DayOfWeek       | Haftanın kaçıncı günü olduğu                                            | 1             |
 | DayOfMonth      | Ayın kaçıncı günü olduğu                                           | 3             |
 | DayOfYear       | Yılın kaçıncı günü olduğu                                            | 185           |
 | WeekOfYear      | Yılın kaçıncı haftası olduğu                                           | 28            |
@@ -303,7 +303,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | enrollmentTypeID |                Name                |                                        Açıklama                                       |
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
 | 0                | Bilinmiyor                            | Kayıt türü toplanmadı                                                      |
-| 1                | UserEnrollment                     | KCG kanalı üzerinden kullanıcı yoluyla kayıt.                                           |
+| 1.                | UserEnrollment                     | KCG kanalı üzerinden kullanıcı yoluyla kayıt.                                           |
 | 2                | DeviceEnrollmentManager            | Cihaz kayıt yöneticisi hesabıyla kullanıcı kaydı.                              |
 | 3                | AppleBulkWithUser                  | Kullanıcı sınaması ile Apple toplu kaydı. (DEP, Apple Configurator)                   |
 | 4                | AppleBulkWithoutUser               | Kullanıcı sınaması olmadan Apple toplu kaydı.   (DEP, Apple Configurator, Mobil Yapılandırma) |
@@ -409,7 +409,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | DateKey             | Tarihin benzersiz tanımlayıcısı.                                | 123     |
 | TenantKey           | Kiracının benzersiz tanımlayıcısı.                              | 456     |
 | DeviceKey           | Cihazın benzersiz tanımlayıcısı.                              | 789     |
-| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1.       |
+| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1       |
 | ExtensionStateKey   | Sistem durumunun benzersiz tanımlayıcısı.                            | 2       |
 
 ## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
@@ -504,7 +504,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Veri ambarındaki platformun benzersiz tanımlayıcısı - vekil anahtar.      |                           123                           |
 |          Platform          | Platformun benzersiz tanımlayıcısı; PlatformKey ile benzer ancak doğal bir anahtardır. |                           123                           |
-|        PlatformName        |                                   Platform adı                                   | Kullanılamıyor <br>None <br>Windows <br>IOS <br>Android. |
+|        PlatformName        |                                   Platform adı                                   | Kullanılamıyor <br>Yok. <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc | Bu platformun veri ambarında son değiştirildiği tarih ve UTC diliminde saat.  |                 23.11.2016 12:00:00                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
@@ -546,7 +546,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | managementStateID |      Name      |                                                   Açıklama                                                   |
 |:-----------------:|:--------------:|:---------------------------------------------------------------------------------------------------------------:|
 | 0                 | Yönetilen        | Hiçbir bekleyen uzak eylem olmadan yönetilir.                                                                       |
-| 1                 | RetirePending  | Cihaz için bekleyen bir devre dışı bırakma komutu var.                                                             |
+| 1.                 | RetirePending  | Cihaz için bekleyen bir devre dışı bırakma komutu var.                                                             |
 | 2                 | RetireFailed   | Devre dışı bırakma komutu cihazda başarısız oldu.                                                                      |
 | 3                 | WipePending    | Cihaz için bekleyen bir silme komutu var.                                                               |
 | 4                 | WipeFailed     | Silme komutu cihazda başarısız oldu.                                                                        |
@@ -577,7 +577,7 @@ Microsoft Intune yoluyla Mobil Uygulama Yönetimini kullanarak bir hedef cihaz t
 | DeviceTypeKey      | Mobil Uygulama ile ilişkili Cihaz Türü anahtarı.                                                              |
 | AppInstallStateKey | MobileAppInstallState örneğini tanımlamak için kullanılan uygulama yükleme durumunun anahtarı.                                         |
 | hata kodu          | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |
-| Sayı              | Toplam miktar.                                                                                                                  |
+| Count              | Toplam miktar.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
 **ownerType** varlığı; bir cihazın sahipliğinin şirket, kişisel veya bilinmeyen olduğunu gösterir.
@@ -666,8 +666,8 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 |    termsAndConditionsKey    |    “userTermsAndConditionsAcceptances” koleksiyonundaki bir girişe karşılık gelen anahtar    |    123    |
 |    termsAndCondidionsId    |    Bu termsAndConditions girişinin kimliği    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    Bu hüküm ve koşullar girişinin sürümü    |    1.    |
-|    ad    |    Bu termsAndConditions girişinin adı.        |    Intune kullanım koşulları     |
-|    açıklama    |    Bu hüküm ve koşulların açıklaması.     |         |
+|    name    |    Bu termsAndConditions girişinin adı.        |    Intune kullanım koşulları     |
+|    description    |    Bu hüküm ve koşulların açıklaması.     |         |
 |    title    |    Bu hüküm ve koşulların başlığı.     |    Cihaz yönetimi şirket ilkesi        |
 |    summaryOfTerms    |    Kullanıcıya verilen koşulların özeti.     |    Hüküm ve koşulları kabul ediyorum.    |
 |    termsAndConditionsBodyText    |    Bu hüküm ve koşulların metin gövdesi.       |    *Cihaz şifreleme* 6 basamaklı PIN zorlama    |
@@ -678,7 +678,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 **UserDeviceAssociation** varlığı kuruluşunuzdaki kullanıcı cihaz ilişkilerini içerir.
 
-|        Name        |                                             Açıklama                                            |     Örnek     |
+|        Ad        |                                             Açıklama                                            |     Örnek     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | Kullanıcının veri ambarındaki benzersiz tanımlayıcısı.   (Yedek anahtar).                            | 123             |
 | DeviceKey          | Cihazın veri ambarındaki benzersiz tanımlayıcısı.                                             | 123             |

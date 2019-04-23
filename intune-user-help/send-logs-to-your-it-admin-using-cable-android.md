@@ -1,11 +1,11 @@
 ---
-title: USB kablosu kullanarak günlükleri şirketinizin destek birimine gönderme | Microsoft Docs
-description: USB kablosu kullanarak veri günlüklerini gönderme
+title: Karşıya yükleme ve bir USB kablosu kullanarak günlükleri e-posta | Microsoft Docs
+description: Veri günlüklerini USB kablosu ile bir CİHAZDAN karşıya yükle
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/03/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,23 +18,23 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd91a7c862b87d9842d08a2346e2e23af4f3665e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 071a6e7a4db6fbe6c13ffc6753ae73c5ce63660b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61491019"
 ---
-# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB kablosu kullanarak günlükleri şirketinizin destek birimine gönderme
+# <a name="upload-and-email-logs-using-a-usb-cable"></a>Karşıya yükleme ve bir USB kablosu kullanarak günlükleri e-posta
 
-Android cihazınızda Şirket Portalı uygulamasını kullanırken hata alırsanız, şirketinizin destek biriminin sorunu gidermesine yardımcı olmak için bilgileri e-posta ile gönderebilirsiniz. Bu bilgiler, cihazınızda _tanılama günlüğü_ adlı özel bir belgede tutulur.
+E-posta şirketinizin destek birimi Şirket portalı uygulamasında karşılaştığınız sorun hakkında. Hata ayrıntılarını kaydedilir ve adlı özel bir belgede Cihazınızda depolanan bir _tanılama günlüğü_. Bu makalede, bilgisayarınıza cihazınızdan günlüklerin karşıya nasıl yükleneceği açıklanır. Bu adımları tamamlamak için USB kablosu gerekir.   
 
 > [!Note]
-> Başlamadan önce, şirketinizin destek biriminin e-posta adresini bildiğinizden emin olun. Bu e-posta adresini [Şirket Portalı web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980) veya Şirket Portalı uygulamanızda bulabilirsiniz.
+> Başlamadan önce destek ekibinizin e-posta adresini bildiğinizden emin olun. Şirket iletişim bilgilerini bulun [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) ve Şirket portalı uygulaması. 
 
-1. Hata ekranında **Bilgi Gönder**’e dokunun. Günlükleri göndermek için hangi yöntemi kullanmak istediğinizi soran bir ileti gördüğünüzde, dosyaları cihazınıza kaydedecek seçeneği işaretleyin.
+1. Hata ekranında **Bilgi Gönder**’e dokunun. Günlükleri göndermek için hangi yöntemi kullanmak istediğinizi soran bir ileti gördüğünüzde, dosyaları cihazınıza kaydedecek seçeneği işaretleyin.  
 
-2. USB kablosunu kullanarak cihazınızı bilgisayarınıza bağlayın. Bu genellikle cihazınızı bir duvar prizine bağlayarak şarj etmek için kullandığınız kablodur.
+2. USB kablosunu kullanarak cihazınızı bilgisayarınıza bağlayın. 
 
 3. Bilgisayarda, cihazınızın adına sahip bir dizini arayın. Söz konusu dizinde, <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong> yolunu bulun.
 

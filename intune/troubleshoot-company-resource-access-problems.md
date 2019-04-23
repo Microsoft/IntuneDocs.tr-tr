@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505701"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Genel hata kodlarını ve açıklamalarını Microsoft Intune
 

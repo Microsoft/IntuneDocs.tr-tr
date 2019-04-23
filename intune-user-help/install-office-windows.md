@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 430881acd1bf42ba1e44c643318c32091fead34d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55848177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497280"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Windows 10 cihazınıza Office 365 yükleme
 

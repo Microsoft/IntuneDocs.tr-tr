@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure'da macOS cihaz özelliği ayarlarını | Microsoft Docs
-description: Tüm ayarları macOS cihazlarını AirPrint Microsoft Intune yapılandırmak için bkz. Aynı zamanda ağınızdaki IP adresi, yol ve bir AirPrint sunucusunun bağlantı noktası ayarlarını almak için adımlara bakın. Bu ayarları bir cihaz yapılandırma profilinde de macOS cihazlarını ağınızdaki AirPrint sunucularını kullanacak şekilde yapılandırmak için kullanın.
+description: MacOS cihazları için AirPrint yapılandırmak ve Güç düğmelerini Microsoft Intune gösterme veya gizleme için oturum açma penceresinde özelleştirmek için bkz. Ağınızdaki IP adresi, yol ve bir AirPrint sunucusunun bağlantı noktası ayarlarını almak için adımlara bakın. Bu ayarları bir cihaz yapılandırma profilinde de macOS cihaz özellikleri yapılandırmak için kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,35 +16,79 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4973dc5038ecfe9a8e909df1a1db3feceb30979b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8997cb8f3e36367de06d6e5aa1c7c6971ee905a4
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506024"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>ıntune'da macOS cihaz özelliği ayarları
 
-Intune, macOS, ağınızdaki AirPrint yazıcılarına yazdırmak kullanıcıların bazı yerleşik ayarlarını içerir. Bu makalede, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Ayrıca, IP adresi, yol ve Terminal uygulamasını (öykünücü) kullanarak, bağlantı noktası AirPrint yazıcıları için adımları listelenir.
+Intune, macOS cihazlarınızda özellikleri özelleştirmek için bazı yerleşik ayarlarını içerir. Bu makalede, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Ayrıca, IP adresi, yol ve Terminal uygulamasını (öykünücü) kullanarak, bağlantı noktası AirPrint yazıcıları için adımları listelenir.
+
+Bu özellik şu platformlarda geçerlidir:
+
+- Mac OS
+
+Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarlar bir başlık oluşturun, kullanıcıların nasıl oturum seçin, bir AirPrint sunucusu ve daha fazlasını eklemek için kullanın.
+
+Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan veya macOS cihazlarına dağıtılabilir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 [Bir macOS cihaz yapılandırma profili oluşturma](device-features-configure.md).
 
-## <a name="airprint-settings"></a>AirPrint ayarları
+## <a name="airprint"></a>AirPrint
 
-1. İçinde **ayarları**seçin **AirPrint**. AirPrint sunucunun aşağıdaki özellikleri girin:
+- **IP adresi**: Yazıcı IPv4 veya IPv6 adresini girin. Yazıcılar tanımlamak için konak adları kullanıyorsa, Terminal uygulamasını yazıcı ping göndererek, IP adresini alabilirsiniz. [Yol ve IP adresi al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
+- **Yol**: Yazıcı yolunu girin. Genellikle yoludur `ipp/print` ağınızdaki yazıcılar için. [Yol ve IP adresi al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
+- **Bağlantı noktası** (iOS 11.0 ve üstü): AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özellik boş bırakırsanız AirPrint, varsayılan bağlantı noktasını kullanır.
+- **TLS** (iOS 11.0 ve üstü): Seçin **etkinleştirme** AirPrint bağlantılarını Aktarım Katmanı Güvenliği (TLS) ile güvenli hale getirmek için.
 
-    - **IP adresi**: Yazıcı IPv4 veya IPv6 adresini girin. Yazıcılar tanımlamak için konak adları kullanıyorsanız, Terminal uygulamasını yazıcı ping göndererek, IP adresini alabilirsiniz. [Yol ve IP adresi al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
-    - **Yol**: Yazıcı yolunu girin. Genellikle yoludur `ipp/print` ağınızdaki yazıcılar için. [Yol ve IP adresi al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
-    - **Bağlantı noktası**: AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özellik boş bırakırsanız AirPrint, varsayılan bağlantı noktasını kullanır. Kullanılabilir iOS 11.0 ve sonraki sürümleri.
-    - **TLS**: Seçin **etkinleştirme** AirPrint bağlantılarını Aktarım Katmanı Güvenliği (TLS) ile güvenli hale getirmek için. Kullanılabilir iOS 11.0 ve sonraki sürümleri.
+**Ekleme** AirPrint sunucusu. Birçok AirPrint sunucuları ekleyebilirsiniz.
 
-2. **Add (Ekle)** seçeneğini belirleyin. AirPrint sunucu listesine eklenir. Birçok AirPrint sunucuları ekleyebilirsiniz.
+- **İçeri aktarma** (isteğe bağlı): Ayrıca **alma** AirPrint yazıcıların bir listesini içeren bir virgülle ayrılmış dosyası (.csv). Ayrıca, Intune'da AirPrint yazıcıları ekledikten sonra yapabilecekleriniz **dışarı** bu liste.
 
-    Ayrıca **alma** AirPrint yazıcıların bir listesini içeren bir virgülle ayrılmış dosyası (.csv). Ayrıca, Intune'da AirPrint yazıcıları ekledikten sonra yapabilecekleriniz **dışarı** bu liste.
+Seçin **Tamam** ayarlarınızı kaydetmek için.
 
-3. İşiniz bittiğinde seçin **Tamam** listenize kaydedin.
+## <a name="login-window"></a>Oturum açma penceresi
+
+### <a name="window-layout"></a>Pencere düzeni
+
+- **Ek bilgi menü çubuğunda göster**: Zaman alan menü çubuğunda seçildiğinde **izin** ana bilgisayar adı ve macOS sürümü gösterir. **Yapılandırılmamış** (varsayılan) bu bilgileri menü çubuğunda göster değil.
+- **Başlık**: Oturum açma cihaz ekranda görüntülenen bir ileti girin. Örneğin, kuruluş bilgileriniz, Hoş Geldiniz iletisi, bulunmuş bilgilerini ve benzeri girin.
+- **Oturum açma biçimi seçin**: Kullanıcıların cihaza nasıl oturum seçin. Seçenekleriniz şunlardır:
+  - **Kullanıcı adı ve parola istemi** (varsayılan): Bir kullanıcı adı ve parola girmesini gerektirir.
+  - **Tüm kullanıcılar için parola istemini listesinde**: Kullanıcıların kullanıcı adlarını bir kullanıcı listeden seçin ve ardından parolalarını girmeleri gerekir. Ayrıca yapılandırın:
+
+    - **Yerel Kullanıcılar**: **Gizleme** yerel kullanıcı hesapları standart ve yönetici hesaplarını içerebilir kullanıcı listesinde göstermez. Yalnızca ağ ve sistem kullanıcı hesapları gösterilir. **Yapılandırılmamış** (varsayılan), yerel kullanıcı hesapları kullanıcı listesinde gösterilir.
+    - **Mobil hesapları**: **Gizleme** mobil hesapları kullanıcı listesinde göstermez. **Yapılandırılmamış** (varsayılan) kullanıcı listesinde Mobil hesapları gösterir. Bazı mobil hesapları, ağ kullanıcıları gösterebilir.
+    - **Ağ kullanıcıları**: Seçin **Göster** ağ kullanıcıları kullanıcı listesindeki listelemek için. **Yapılandırılmamış** (varsayılan) değil Göster ağ kullanıcı hesapları kullanıcı listesinde.
+    - **Yönetici kullanıcılar**: **Gizleme** yönetici kullanıcı listesinde kullanıcı hesaplarını göstermiyor. **Yapılandırılmamış** (varsayılan) kullanıcı listesinde kullanıcı hesaplarını yönetici gösterir.
+    - **Diğer kullanıcıların**: Seçin **Göster** listesine **diğer...**  kullanıcı listesinde kullanıcı. **Yapılandırılmamış** (varsayılan) kullanıcı listesinde diğer kullanıcı hesapları Göster değil.
+
+### <a name="login-screen-power-settings"></a>Oturum açma ekranı güç ayarları
+
+- **Kapat düğmesi**: **Gizleme** kapatma düğmesini oturum açma ekranı göstermez. **Yapılandırılmamış** (varsayılan) kapatma düğmesini gösterir.
+- **Düğmeyi yeniden**: **Gizleme** oturum açma ekranı yeniden Başlat düğmesi göstermez. **Yapılandırılmamış** (varsayılan), yeniden Başlat düğmesi gösterilir.
+- **Uyku düğmesi**: **Gizleme** oturum açma ekran Uyku düğmesi göstermez. **Yapılandırılmamış** (varsayılan), uyku düğmesi gösterilir.
+
+### <a name="other"></a>Diğer
+
+- **Konsolundan kullanıcı oturum açma devre dışı**: **Devre dışı** oturum açmak için kullanılan macOS komut satırı gizler. Tipik kullanıcıların **devre dışı** yapılandırmaz. **Yapılandırılmamış** (varsayılan), Gelişmiş macOS komut satırını kullanarak oturum açmasına izin verir. Konsol moduna girmek için kullanıcıların girin `>console` kullanıcı alan ve konsol penceresinde kimliğini doğrulaması gerekir.
+
+### <a name="apple-menu"></a>Apple menüsü
+
+Cihazlara kullanıcılar oturum açtıktan sonra aşağıdaki ayarlar, ne yapabileceklerini etkiler.
+
+- **Aşağı bilgisayarı devre dışı bırak**: **Devre dışı** kullanıcıların seçmesini engeller **kapatma** kullanıcı oturum açtıktan sonra seçeneği. **Yapılandırılmamış** (varsayılan), kullanıcıların seçmesine izin verir **kapatma** cihazda menü öğesi.
+- **Yeniden başlatma devre dışı**: **Devre dışı** kullanıcıların seçmesini engeller **yeniden** kullanıcı oturum açtıktan sonra seçeneği. **Yapılandırılmamış** (varsayılan), kullanıcıların seçmesine izin verir **yeniden** cihazda menü öğesi.
+- **Güç kapalı devre dışı**: **Devre dışı** kullanıcıların seçmesini engeller **gücünün kapatılmasını** kullanıcı oturum açtıktan sonra seçeneği. **Yapılandırılmamış** (varsayılan), kullanıcıların seçmesine izin verir **gücünün kapatılmasını** cihazda menü öğesi.
+- **Log Out devre dışı** (macOS 10.13 ve üzeri): **Devre dışı** kullanıcıların seçmesini engeller **oturumunuzu** kullanıcı oturum açtıktan sonra seçeneği. **Yapılandırılmamış** (varsayılan), kullanıcıların seçmesine izin verir **oturumunuzu** cihazda menü öğesi.
+- **Kilit ekranında devre dışı** (macOS 10.13 ve üzeri): **Devre dışı** kullanıcıların seçmesini engeller **kilit ekranı** kullanıcı oturum açtıktan sonra seçeneği. **Yapılandırılmamış** (varsayılan), kullanıcıların seçmesine izin verir **kilit ekranı** cihazda menü öğesi.
+
+Seçin **Tamam** ayarlarınızı kaydetmek için.
 
 ## <a name="get-the-ip-address-and-path"></a>Yol ve IP adresi al
 
@@ -64,4 +108,4 @@ AirPrinter sunucuları eklemek için yazıcı, kaynak yolu ve bağlantı noktas�
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - İçin tüm ayarları görüntülemek [iOS](ios-device-features-settings.md) cihazlar.
-- Bu profili gruplara atamak; bkz: [cihaz profillerini atama](device-profile-assign.md).
+- [Bu profili atarsınız](device-profile-assign.md) gruplarınıza ve [atamanın durumunu izlemenize](device-profile-monitor.md).

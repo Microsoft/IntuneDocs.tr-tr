@@ -1,11 +1,11 @@
 ---
 title: Android cihazınız şifrelenmiş görünüyor | Microsoft Docs
-description: ''
+description: Uygulamasında, Şirket portalı ve Microsoft Intune şifreleme durumu çözümleyin
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,60 +18,55 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f8c35400f37ab4ddee275cf23f7a50f280322e3b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501587"
 ---
-# <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android cihazınızı şifreli gibi görünüyor, ancak Şirket Portalı aksini söylüyor
+# <a name="device-encrypted-but-apps-say-otherwise"></a>Aksi takdirde cihaz şifrelenir, ancak uygulamalar söyleyin
 
-Bir cihazı şifrelemek, cihazdaki bilgileri yalnızca sizin bildiğiniz bir gizli anahtar ile kodlamaktır. Böylece yetkisi olmayanların cihaza erişimi engellenmiş olur. Pek çok kuruluş; kullanıcılarının şirket dosyaları, e-postası veya verilerine erişmeleri için Android cihazlarını şifrelemelerini gerektirir.
+Şirket portalı veya Microsoft Intune uygulama Cihazınızı şifreli değildir, ancak, bu makaledeki adımları deneyin olup olmadığını derseniz.  
 
-## <a name="common-issues"></a>Yaygın sorunlar
+## <a name="add-a-startup-pin"></a>Başlangıç PIN’i ekleme
 
-Özellikle sürüm 7.0 sonrası daha yeni Android sürümleri cihazınızın tam olarak şifrelendiğinden emin olmak için başlangıç geçiş kodu gerektirir. Farklı cihaz üreticilerinin başlangıç geçiş kodu için farklı açıklamaları ve konumları vardır. Bu ayar çoğu zaman “Güvenli Başlatma” olarak adlandırılır. 
+Belirli Android cihazları, cihazınızın güvenli olduğundan emin olmak için bir başlangıç PIN’i oluşturmayı gerektirir. Bu ayarın konum, cihazınızın içinde olacaktır **ayarları** uygulama. Ayar konumunu ve adını gösterebilir. Örneğin, Samsung Galaxy S7'de, ayar olarak adlandırılır **güvenli başlatma**. Etkinleştirmediğiniz ve geçiş kodu oluşturmak için Git **ayarları** > **kilit ekranı ve güvenlik** > **güvenli başlatma**.  
 
-## <a name="solutions"></a>Çözümler
+## <a name="encrypt-the-entire-device"></a>Tüm cihazı şifreleyin
 
-### <a name="add-a-startup-pin"></a>Başlangıç PIN’i ekleme
+Bu bölüm, yalnızca Şirket portalı uygulaması için geçerlidir. Bazı cihazlar size, tüm cihazı veya yalnızca kullanılan alanı şifreleme seçeneği sunar. Tüm cihazı şifreleme seçeneğini seçin. Yalnızca kullanılan alanı şifreleyin seçtiyseniz:
 
-Belirli Android cihazları, cihazınızın güvenli olduğundan emin olmak için bir başlangıç PIN’i oluşturmayı gerektirir. Birçok farklı üreticinin çok çeşitli Android sürümleri vardır. Bu seçeneği etkinleştirmek için ayarlar uygulamanızda bir konum bularak bu sorunu gidermeyi deneyebilirsiniz. Örneğin, Samsung Galaxy S7’de, Güvenli Başlatma’yı **Ayarlar** > **Kilit Ekranı ve Güvenlik** > **Güvenli Başlatma** ekranına giderek etkinleştirirsiniz.  
+1. [Bu cihazı şirket Portalı'ndan kaldırdığınızda](unenroll-your-device-from-intune-android.md).
+2. Kullanılan alanın şifresini çözün.  
+3. Cihazın tamamını şifreleyin.  
+4. Cihazı yeniden kaydedin.  
 
-### <a name="encrypt-the-entire-device"></a>Tüm cihazı şifreleyin
+## <a name="downgrade-your-version-of-android"></a>Android sürümünüzü düşürme
 
-Bazı cihazlar size, tüm cihazı veya yalnızca kullanılan alanı şifreleme seçeneği sunar. “Yalnızca kullanılan alan” yerine tüm cihazı şifreleme seçeneğini belirleyin. Yalnızca kullanılan alanı şifrelediyseniz:
-
-1. [Bu cihazı Şirket Portalı’ndan kaldırın](unenroll-your-device-from-intune-android.md)
-2. Kullanılan alanın şifresini çözün
-3. Tüm cihazı şifreleyin
-4. Cihazı yeniden kaydedin
-
-### <a name="downgrade-your-version-of-android"></a>Android sürümünüzü düşürme
-
-Cihazınız Android 6.0+ sürümüne düşürme seçeneği sunuyorsa, bunu yapın. Cihazınızın sürümünü düşürmeyi denediğinizde veri kaybı riski vardır. Aksi takdirde, bu sorunu çözmek için şirketinizin destek birimine başvurmanızı öneririz. Şirketinizin destek biriminin iletişim bilgilerini [Şirket Portalı web sitesinden](https://go.microsoft.com/fwlink/?linkid=2010980) alabilirsiniz.
+Bu bölüm, yalnızca Şirket portalı uygulaması için geçerlidir. Cihazınız Android 6.0 ve üzeri düşürme seçeneği sunuyorsa, bunu yapın. Cihazınızın sürümünü düşürmeyi denediğinizde, veri kaybı riski yoktur. Aksi takdirde, bu sorunu çözmek için şirketinizin destek birimine başvurmanızı öneririz. Şirketinizin destek biriminin iletişim bilgilerini edinin [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 ## <a name="specific-manufacturer-issues"></a>Belirli üretici sorunları
 
-7.0+ sürümü kullanan bazı Android cihazlar, belirli Android platformu standartlarına uymayan yollarla veri şifreler. Bu cihazlar, yeni olsalar dahi şifreli görünebilir. Intune, bu cihazların şifreleme yönteminin cihaz bilgilerini riske attığını algılar. Bu risk temel olarak cihaza fiziksel erişimi olan kötü amaçlı kullanıcılardan kaynaklanır.
+Bazı sürüm 7.0 ve üzeri Android cihazlar, belirli Android platformu standartlarına uymayan yollarla veri şifreler. Bu cihazlar, yeni olsalar dahi şifreli görünebilir. Intune, bu cihazların şifreleme yönteminin cihaz bilgilerini riske attığını algılar. Bu risk temel olarak cihaza fiziksel erişimi olan kötü amaçlı kullanıcılardan kaynaklanır.
 
 > [!Note]
 > Microsoft, sınama aşamasında ya da kullanıcıların bize bildirdiği tüm sorunları ele almak için üreticiler ile birlikte çalışır. Yeni bilgiler mevcut oldukça bu makaleyi güncelleştireceğiz. 
 
-## <a name="known-devices"></a>Bilinen cihazlar
+## <a name="update-known-devices"></a>Bilinen cihazlar güncelleştir   
 
-### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>Bu sorunu gidermek için güncelleştirilebilir bilinen cihazlar
-
-Cihazınızı en son Android sürümüne güncelleştirmediyseniz, cihazınızın Git **ayarları** seçin **güncelleştirme**. Güncelleştirilene kadar bu cihazların uyumlu olmayan olarak görünebilir:  
+Cihazınızı en son Android sürümüne güncelleştirmediyseniz, cihazınızın Git **ayarları** seçin **güncelleştirme**. Bunları güncelleştirilene kadar bu cihazların uyumlu görünmeyebilir.  
 
 - Huawei Honor 8
 - Huawei P9
 
-### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Bu sorunu gidermek için şu anda güncelleştirilebilir olmayan bilinen cihazlar
+## <a name="known-devices-that-always-appear-encrypted"></a>Her zaman şifreli görünür bilinen cihazlar  
 Aşağıdaki cihazlar, her zaman şifreli görünür ve şirket kaynaklarına erişmek için kullanılamaz. Şirket kaynaklarına erişmek için farklı bir cihaz kullanmanız gerekir.  
 
 - Huawei Mate 8
 - OPPO cihazları
 - Vivo cihazları
-- Xiaomi Mi smartphones
+- Xiaomi Mi smartphones  
+
+## <a name="next-steps"></a>Sonraki adımlar   
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.  

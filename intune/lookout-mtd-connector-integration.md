@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3644ebaa0582cea5e79c5123ac89b97bc6f97f29
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507552"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
 
@@ -31,7 +31,7 @@ Lookout Mobile Threat Defence aboneliğini ayarlamak için gerekli adımlar aşa
 
 | #        |Adım  |
 | ------------- |:-------------|
-| 1. | [Azure AD bilgileri toplama](#collect-azure-ad-information) |
+| 1 | [Azure AD bilgileri toplama](#collect-azure-ad-information) |
 | 2 | [Aboneliğinizi yapılandırma](#configure-your-subscription) |
 | 3 | [Kayıt gruplarını yapılandırma](#configure-enrollment-groups) |
 | 4 | [Durum eşitlemeyi yapılandırma](#configure-state-sync) |

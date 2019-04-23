@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507383"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Olay hub'ları, depolama için günlük verileri gönderin veya log analytics (Önizleme) Intune'a
 
@@ -163,7 +163,7 @@ Aşağıdaki tablo, bir temel olay hub'ında Batı ABD, olay veri hacmine göre 
 |Saniye başına olay|0.1 |
 |Beş dakikalık aralık başına olay sayısı| 52|
 |Aralık başına birim|104 KB |
-|İleti aralığı başına işleme|1. |
+|İleti aralığı başına işleme|1 |
 |İleti başına aylık|8,640 |
 |(USD) aylık tahmini maliyet|$10.80 |
 

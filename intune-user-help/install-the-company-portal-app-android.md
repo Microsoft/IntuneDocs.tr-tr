@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08eb5c3d2f306fef6f867fbe9f3976cb7a5aea80
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9a43b574c4bf0daf90e30690f95f6f497b441bc1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61498883"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Android için Şirket Portalı uygulamasını yükleme
 
-Şirket Portalı, şirketinizin veya okulunuzun uygulamalarına, e-postasına ve İnternet bağlantılarına erişmenizi sağlayacak bir uygulamadır. Bu uygulama, örneğin şirket uygulamalarını güncel tutarak veya cihazınızın belirli bir süreden sonra otomatik olarak kilitlenmesini sağlayarak cihazınızı ve kuruluş bilgilerini güvende tutar. Şirket Portalı uygulaması bunu, [cihazınızı Microsoft Intune’a kaydetmenize](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md) yardımcı olarak yapar.
+Şirket Portalı, şirketinizin veya okulunuzun uygulamalarına, e-postasına ve İnternet bağlantılarına erişmenizi sağlayacak bir uygulamadır. Bu uygulama, örneğin şirket uygulamalarını güncel tutarak veya cihazınızın belirli bir süreden sonra otomatik olarak kilitlenmesini sağlayarak cihazınızı ve kuruluş bilgilerini güvende tutar. Şirket portalı ve kendi bölümünde cihaz yönetimi özellikleri hakkında daha fazla bilgi için bkz. [Android Cihazınızı neden kaydetmelisiniz](why-enroll-android-device.md).  
 
 1.  **Giriş** > **Play Store**’a dokunun.
 
-2.  **Arama** kutusuna **intune şirket portalı** yazın.
+2.  İçinde **arama** kutusuna **Intune Şirket portalı**.  
 
 3.  **Intune Şirket Portalı**’na dokunun.
 
@@ -45,6 +45,6 @@ ms.locfileid: "55837866"
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-Şirket Portalı uygulamasını indirdikten sonra, iş bilgilerinize tam erişim elde etmek için [cihazınızı Intune’a kaydetmeniz](enroll-your-device-in-Intune-android.md) gerekecektir. Ayrıca [başka bir cihaz kullanarak da oturum açabilirsiniz](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
+Şirket portalı uygulamasını indirdikten sonra büyük olasılıkla isteyebilirsiniz [Cihazınızı ıntune'a kaydetme](enroll-device-android-company-portal.md) iş bilgilerinize tam erişim elde etmek için. Ayrıca [başka bir cihaz kullanarak da oturum açabilirsiniz](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

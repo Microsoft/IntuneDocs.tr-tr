@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3724f2494dd4e4fe7939a9be87a30e1bc5bfbf27
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513601"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Intune şirket içi Exchange connector, Microsoft Intune ayarlama
 Bu makaledeki bilgiler yükleyin ve ardından Exchange Active Sync şirket içi Bağlayıcısı için Intune izlemenize yardımcı olur.  Intune şirket içi Exchange bağlayıcısıyla kullanan, [izin vermek veya Exchange erişimi engellemek için koşullu erişim ilkeleri şirket içi posta kutularını](conditional-access-exchange-create.md). 

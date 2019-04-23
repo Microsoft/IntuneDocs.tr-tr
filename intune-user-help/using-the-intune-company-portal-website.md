@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505905"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune Şirket Portalı web sitesini kullanma
 Yönetilen cihazlarınızı görüntülemek, düzenlemek, yeni cihaz eklemek veya cihaz kaldırmak için [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) kullanın.

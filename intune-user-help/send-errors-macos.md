@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7b90edf1f2e380790e2c725ee00c03d525c9fa1e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504052"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Yönetilen macOS cihazınızla ilgili hataları doğru kişilere gönderme
 

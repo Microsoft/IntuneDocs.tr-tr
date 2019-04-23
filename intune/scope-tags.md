@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: 2eb709ad0d649b2ac32505b395fa91e85ad81b8a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507792"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanmak BT
 
@@ -98,6 +98,11 @@ Doğru yöneticileri sağ Intune nesnelere görünürlüğü ve doğru erişime 
 2. Seçin **özellikleri** > **kapsam (etiketler)** > Profil atamak istediğiniz etiketleri seçin.
 3. Seçin **seçin** > **Tamam** > **Kaydet**.
 
+## <a name="to-assign-a-scope-tag-to-an-apple-volume-purchase-program-vpp-token"></a>Kapsam etiketi için bir Apple Volume Purchase Program (VPP) belirtecini atamak için
+1. Intune'da, **istemci uygulamaları** > **Apple VPP belirteçleri** > bir VPP belirteci seçin.
+2. Seçin **kapsam (etiketler)** > Profil atamak istediğiniz etiketleri seçin. VPP uygulamaları ve e-Kitaplar VPP belirteciyle ilişkilendirilmiş atanmış etiketler devralır.
+3. Seçin **seçin** > **Tamam** > **Kaydet**.
+
 ## <a name="scope-tag-details"></a>Kapsam etiketi ayrıntıları
 Kapsam etiketleri ile çalışırken, bu ayrıntıları unutmayın:
 
@@ -112,6 +117,7 @@ Kapsam etiketleri ile çalışırken, bu ayrıntıları unutmayın:
     - PowerShell betikleri
     - DEP belirteçleri
     - iOS uygulama sağlama profili
+    - Volume Purchase Program (VPP) belirteçleri
 - Bir yönetici Intune nesneyi oluşturduğunda, o yönetici için atanan tüm kapsam etiketleri otomatik olarak yeni nesneye atanır.
 - Intune RBAC, Azure Active Directory rolleri için geçerli değildir. Bu nedenle, Intune'daki hizmet yöneticilerinin ve genel yöneticileri rolleri, sahip oldukları hangi kapsam etiketleri ne olursa olsun tam yönetici erişimi ıntune sahiptir.
 - Bir rol ataması kapsam etiketleri ile yöneticiler Intune nesneleriyle hiçbir kapsam etiketleri de görebilirsiniz.

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e364ad88591b8ecc945702659255d9378723624f
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513044"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi nedir?
 Intune uyumluluk ilkeleri ve koşullu erişim kurallarınız için bilgi kaynağı olarak bir Mobile Threat Defense satıcınızdan verilerini tümleştirebilirsiniz. Ele geçirilen mobil cihazlardan erişimi engelleyerek Exchange ve SharePoint gibi şirket kaynaklarını korumaya yardımcı olmak için bu bilgileri kullanabilirsiniz.  

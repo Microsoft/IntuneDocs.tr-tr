@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9ae5ee7a33ca069853201c553e461d9e36c9bbdb
-ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59533521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507605"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Kullanıcı Cihaz İlişkisi varlığı için başvuru
 
@@ -32,7 +32,7 @@ ms.locfileid: "59533521"
 ## <a name="userdeviceassociation"></a>UserDeviceAssociation
 
 
-|        Name        |                                           Açıklama                                            |        Örnek         |
+|        Ad        |                                           Açıklama                                            |        Örnek         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
 |      UserKey       |              Kullanıcının veri ambarındaki benzersiz tanımlayıcısı. (Yedek anahtar).               |          123           |
 |     DeviceKey      |                      Cihazın veri ambarındaki benzersiz tanımlayıcısı.                      |          123           |

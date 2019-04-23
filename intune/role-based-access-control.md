@@ -19,10 +19,10 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
 ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "60164048"
+ms.locfileid: "61507316"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -63,7 +63,7 @@ Daha fazla yapılandırma olmadan grupları için yerleşik roller atayabilirsin
 | Güvenlik Yöneticisi | Salt okunur | Salt okunur |
 | Güvenlik işleci | Salt okunur | Salt okunur |
 | Güvenlik okuyucusu | Salt okunur | Salt okunur |
-| Uyumluluk Yöneticisi | None | Salt okunur |
+| Uyumluluk Yöneticisi | Yok. | Salt okunur |
 | Uyumluluk veri Yöneticisi | Yok. | Salt okunur |
 
 > [!TIP]

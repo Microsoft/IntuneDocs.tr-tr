@@ -8,11 +8,11 @@ ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
 ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513683"
 ---
 Bu bildirimler önemli yardımcı olabilecek bilgiler, gelecekteki Intune değişiklikler ve özellikler için hazırlama belirtin. 
 
@@ -36,7 +36,7 @@ Bir uygulama yapılandırma İlkesi artık gerekirse, bu değişikliğin hazırl
 
 Bu değişiklik hakkında daha fazla ayrıntı için ek bilgi bağlantısına gönderi destek blog gönderimize göz atabilirsiniz.
 
-#### <a name="additional-information"></a>Ek bilgi 
+#### <a name="additional-information"></a>Ek Bilgi 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
 
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Değişiklik planı: İOS için Intune Şirket portalı uygulamasında kullanıcı deneyimi güncelleştirmesi
@@ -54,7 +54,7 @@ Apple TestFlight programı bir parçası kullanıyorsanız, kullanılabilir oldu
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
 Herhangi bir eylemde bulunmanız gerekmez; Bu değişiklikler, gelecek iOS CP uygulama sürümde kullanıma sunulacaktır. 
 
-#### <a name="additional-information"></a>Ek bilgi
+#### <a name="additional-information"></a>Ek Bilgi
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
 
 ### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Intune, "Yazılım güncelleştirmelerinin gecikme görünürlük" ayarını denetleyin 
@@ -77,7 +77,7 @@ BT Pro rehberi güncelleştirin ve Yardım masanız bildirmek isteyebilirsiniz.
 
 Bu ayarı yapılandırma hakkında daha fazla ayrıntı için ek bilgileri Gönder destek blog gönderimize göz atabilirsiniz.
 
-#### <a name="additional-information"></a>Ek bilgi 
+#### <a name="additional-information"></a>Ek Bilgi 
 [https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
 
 ### <a name="plan-for-change-upcoming-fix-for-windows-10-email-profiles-in-intune---3904031--"></a>Değişiklik planı: Intune'da Windows 10 e-posta profilleri için düzeltme <!--3904031-->
@@ -111,6 +111,6 @@ Intune'da Windows 10 e-posta profilleri kullanıyorsanız, aşağıdaki adımlar
 
 Son kullanıcılarınıza bildirmeniz ve bu değişikliği, Yardım Masası izin gerekebilir. Lütfen hata ayrıntılarını ve bu profilleri yeniden oluşturma yönergeleri için ek bilgilere destek blog gönderisine bakın.
 
-#### <a name="additional-information"></a>Ek bilgi
+#### <a name="additional-information"></a>Ek Bilgi
 https://aka.ms/Win10EmailProfiles
 

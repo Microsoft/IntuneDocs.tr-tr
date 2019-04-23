@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1c4266ad4ae877eadb29b7f35ef0e955028a4b9
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61518347"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha fazla bilgi edinin. Biz düzenli olarak ekleyin ve Intune Şirket portalı uygulamasını ve Web sitesi geliştirmek. Bu makalede, bir Intune Yöneticisi olduğunuz veya kişi desteklemek için gereken bilgileri sağlanmaktadır:
@@ -34,6 +34,27 @@ Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha faz
 Bir çalışan veya Öğrenci kullanıyorsanız ekran görüntüleri ve bağlantıları Şirket portalı Yardım belgelerine göz atın emin olun. Şirket portalı uygulamasını kullanma hakkında daha fazla bilgi için bkz. [Şirket portalı kullanıcı Yardım belgeleri](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-15-2019"></a>15 Nisan 2019 haftası  
+
+### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>Yeni son kullanıcı uygulama (Microsoft Intune uygulama) <!--3903244 -->  
+Android tam olarak yönetilen olarak adlandırılan cihazlar için yeni bir son kullanıcı uygulaması olduğundan **Intune**. Bu yeni uygulama basit ve modern ve benzer bir işlevsellik Şirket portalı uygulamasını sağlar, ancak için tam olarak yönetilen, Kurumsal cihazlar. Daha fazla bilgi için [Google play'de Microsoft Intune uygulama](https://play.google.com/store/apps/details?id=com.microsoft.intune).  
+
+Cihaz ayrıntıları ekranına örnek ekran görüntüsü: 
+
+![Gamze'nin Android için cihaz ayrıntılarını gösteren ekran görüntüsü, Microsoft Intune uygulaması.](./media/1904-intune-app-device-details.png)   
+
+Örnek ekran **Kurulum erişim** ekran:  
+
+![Kurulum erişim kaydı ekranını gösteren ekran görüntüsü, Microsoft Intune uygulaması.](./media/1904-intune-app-setup-access.png)   
+
+Örnek menüsünün ekran görüntüsü uygulama:  
+
+![Yan menü gösteren ekran görüntüsü, Microsoft Intune uygulaması.](./media/1904-intune-app-navigation-menu.png)   
+
+Örnek ekran görüntüsü **yardımcı** ekran:  
+
+![Microsoft Intune ekran uygulaması yardım ekranını.](./media/1904-intune-app-help.png)   
 
 
 ## <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası  

@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a637b6eed162243d2be81ac08fbcc055e1fd5816
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57994181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505208"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune şirket Portalı'nda Windows cihaz kaydı  
 

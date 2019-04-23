@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fafd9c92a51c8ef258d151a3c19c271fdc45f4c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7d4030762e625e24fb0c72724473162a4ad98183
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506334"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Android cihazınızın yönetim kaydını silme  
 
@@ -33,6 +33,9 @@ Kayıtlı bir Android cihazın kuruluşunuz tarafından yönetilmesini sonlandı
 * Cihaz artık Şirket Portalı’nda görünmez.
 * Şirket Portalı’ndan uygulama yükleyemezsiniz.
 * Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.  
+
+> [!NOTE]
+> Kaydını olamaz ya da Microsoft Intune uygulamadan şirkete Cihazınızı kaldırma. Cihaz, cihaz ilk kurulum sırasında kaydedilmiş ve kuruluşunuzun kaynaklarına erişmek için kayıtlı olması gerekir.  
 
 1. Şirket Portalı’nda sağ üst köşeye gidin ve dikey üç nokta simgesine dokunun. Eylem menüsü açılır.
 

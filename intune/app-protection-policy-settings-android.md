@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5fad21abf8bd08d989d881953b4c0c790c4b9b8c
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: de10359b9045c704d27f94954ddfd69a3f1a9bd5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503780"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -47,7 +47,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 ### <a name="encryption"></a>Şifreleme
 | Ayar | Nasıl kullanılır? | Varsayılan değer |
 |------|------|------|
-| **Kuruluş verilerini şifreleme** | Seçin **gerektiren** bu uygulamada iş veya Okul verilerinin şifrelenmesini etkinleştirmek için. Intune, uygulama verilerini güvenli bir şekilde şifrelemek için 256 bit AES şifreleme düzeni Android Keystore sistemiyle birlikte OpenSSL kullanır. Veriler, dosya GÇ görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. SDK'sı, 128 bit anahtar içeriği ve eski SDK sürümleri kullanan uygulamalar ile uyumluluk için destek sağlamak üzere devam eder. <br><br> Şifreleme yöntemi FIPS 140-2 sertifikalı **değildir**.     |  **gerektirir**|  
+| **Kuruluş verilerini şifreleme** | Seçin **gerektiren** bu uygulamada iş veya Okul verilerinin şifrelenmesini etkinleştirmek için. Intune, uygulama verilerini güvenli bir şekilde şifrelemek için 256 bit AES şifreleme düzeni Android Keystore sistemiyle birlikte OpenSSL kullanır. Veriler, dosya GÇ görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. SDK'sı, 128 bit anahtar içeriği ve eski SDK sürümleri kullanan uygulamalar ile uyumluluk için destek sağlamak üzere devam eder. <br><br> Şifreleme yöntemi FIPS 140-2 ile uyumlu olan.     |  **gerektirir**|  
 
 
 

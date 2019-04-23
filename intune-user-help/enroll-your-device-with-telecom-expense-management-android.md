@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b042cbf79b284a4539e915fe80ce40dfbfcecd6f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61498778"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Android cihazınızı telekomünikasyon gider yönetimine kaydetme
 

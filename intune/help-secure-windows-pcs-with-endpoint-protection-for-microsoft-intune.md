@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7192d7c71d1737a624f2c76e3253cb232dc1f2af
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513961"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma
 
@@ -109,7 +109,7 @@ Dağıtılan Endpoint Protection ilkesini, **İlke** çalışma alanının **Tü
 |**Günlük hızlı tarama zamanla**|Bilgisayarlarda hem sık kullanılan dosyalara hem de önemli sistem dosyalarına yönelik bir günlük hızlı tarama zamanlar. Bu hızlı taramanın performans üzerindeki etkisi çok azdır.<br /><br />Önerilen değer: **Evet**|
 |**Arka arkaya iki tarama kaçırıldığında bir hızlı tarama çalıştır**|Endpoint Protection’ı, arka arkaya iki hızlı taramanın kaçırılması durumunda bilgisayarlarda otomatik olarak bir hızlı tarama çalıştıracak biçimde yapılandırır.<br /><br />Önerilen değer: **Evet**|
 |**Tam tarama zamanla**|Bilgisayarların yerel sabit disklerdeki tüm dosyalara ve kaynaklara yönelik tam tarama yapılandırır. Bu tarama zaman alabilir ve bilgisayar performansını etkileyebilir (bu süre, taranan dosya ve kaynakların sayısına bağlıdır).<br /><br />Önerilen değer: **Yok**|
-|**Arka arkaya iki tam tarama kaçırıldığında bir tam tarama çalıştır**|Endpoint Protection’ı, arka arkaya iki taramanın kaçırılması durumunda bilgisayarlarda otomatik olarak bir tam tarama çalıştıracak biçimde yapılandırır.<br /><br />Önerilen değer: Yapılandırılmadı|
+|**Arka arkaya iki tam tarama kaçırıldığında bir tam tarama çalıştır**|Endpoint Protection’ı, arka arkaya iki taramanın kaçırılması durumunda bilgisayarlarda otomatik olarak bir tam tarama çalıştıracak biçimde yapılandırır.<br /><br />Önerilen değer: Yapılandırılmamış|
 
 ### <a name="specify-scan-options-settings"></a>Tarama seçenekleri ayarlarını belirtin
 

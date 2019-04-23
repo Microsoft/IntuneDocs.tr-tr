@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510138"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -64,7 +64,7 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 
 ### <a name="certificates-and-templates"></a>Sertifikalar ve şablonlar  
 
-|Nesne|Ayrıntılar|
+|Object|Ayrıntılar|
 |----------|-----------|
 |**Sertifika Şablonu**|Bu şablonu sertifika veren CA'nız üzerinde yapılandırın.|
 |**İstemci kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu sertifikayı NDES Sunucusu'na yüklersiniz.|
@@ -73,7 +73,7 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 
 ### <a name="accounts"></a>Hesaplar
 
-|Name|Ayrıntılar|
+|Ad|Ayrıntılar|
 |--------|-----------|
 |**NDES hizmet hesabı**|NDES Hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı girin. |
 
@@ -225,7 +225,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Konum                        |      Değer      | Type  |      Veriler       |
+   |                        Location                        |      Value      | Type  |      Veriler       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |

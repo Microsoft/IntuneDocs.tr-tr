@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,17 +18,21 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9354c6019821a3d320c9bc50589ce420e969581
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dc47b7af50093af356c0f2da1a765160ee567d0a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505565"
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>Microsoft kullanım verilerini toplamayı devre dışı bırakma
 
-Microsoft, ürünlerimiz ve hizmetlerimizle ilgili belirli verileri otomatik olarak toplar. Şirket Portalı uygulaması da dahil olmak üzere ürünlerimizin güvenilirliği ve performansını artırmak için bunu yaparız. Bu veriler gizli olsa da, bazı kullanıcılar bu toplama işleminden rahatsız olabilir. Şirketinizin destek birimi, bu verilerin toplanması konusunda denetim sahibi değildir ve bu ayar için yaptığınız seçimi değiştiremez.
+Microsoft, ürün ve hizmetlerle ilgili belirli verileri otomatik olarak toplar. Verileri, Şirket portalı ve Microsoft Intune gibi uygulama performansı ve güvenilirliği iyileştirmek için kullanılır. Bu veriler gizli olsa da, bazı kullanıcılar bu toplama işleminden rahatsız olabilir. Kuruluşunuz, bu verilerin toplanması üzerinde denetim yok ve bu ayarı seçiminizi değiştiremez.   
 
-Android cihazınızda söz konusu verilerin toplanmasını devre dışı bırakmak istiyorsanız Şirket Portalı uygulamasındaki **Kullanım Verileri** ayarını açın.
+Android Cihazınızda veri toplamayı devre dışı bırakmak için:  
+
+1. Ya da Microsoft Intune Şirket portalı uygulamasını açın.
+2. Seçin **ayarları**.
+3. Kullanım verileri ayarını altında kapalı konuma anahtarı döndür. 
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

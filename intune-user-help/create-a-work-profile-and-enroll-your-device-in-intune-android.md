@@ -1,11 +1,11 @@
 ---
-title: Bir iş profili kullanarak cihazınızı kaydetme | Microsoft Docs
-description: Android cihazları iş profilleriyle daha güvenli hale getirme.
+title: Android iş profili ile Cihazınızı kaydetme | Microsoft Docs
+description: Bir iş profili oluşturma ve Cihazınızı kaydetme
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,18 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 29928023abc2d6119bb318bbe046e954288ebaa3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57334961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497753"
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Bir iş profili oluşturma ve cihazınızı Intune’a kaydetme
+# <a name="enroll-device-with-android-work-profile"></a>Android iş profili ile cihaz kaydetme
 
-Android cihazınızı kaydetmek şirket e-postası, uygulamaları ve diğer iş verilerine erişmenizi sağlar. Kayıt işleminin bir parçası olarak, cihazınızdaki kişisel verileri iş verilerinizden ayıran bir iş profili ayarlarsınız.
+Şirket e-posta, uygulamalar ve diğer iş verilerine erişmek için kişisel Android Cihazınızı kaydetme. Kayıt sırasında bir Android iş profili ayarlarsınız. Bu profili cihazınızdaki kişisel verileri iş verilerinizden ayıran. Şirketinizin destek birimi, yalnızca iş dosyalarına ve veri oluşan iş profilinizi yönetir. Şirketinizin destek birimi, cihazınızdaki kişisel verileri yönetemez. [İş profili oluşturduğunuzda ne olacağı](what-happens-when-you-create-a-work-profile-android.md) hakkında daha fazla bilgi edinin. 
 
-Şirketinizin destek birimi, yalnızca iş verilerinizi içeren iş profilinizi yönetebilir. Şirketinizin destek birimi, cihazınızdaki kişisel verileri yönetemez. [İş profili oluşturduğunuzda ne olacağı](what-happens-when-you-create-a-work-profile-android.md) hakkında daha fazla bilgi edinin.
-
-Bir iş profili oluşturmak için:
+## <a name="create-work-profile-and-enroll-device"></a>İş profili oluşturma ve Cihazınızı kaydetme
 
 1.  Android Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın. Ücretsiz uygulamayı henüz yüklemediyseniz, [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den indirin ve yükleyin.
 
@@ -82,5 +80,7 @@ Bir iş profili oluşturmak için:
     Bundan sonra şirket uygulamalarını Play Store for Work’ten alabilirsiniz.
 
     ![Play Store for Work uygulamaları sayfası](./media/andr-afw-tap-work-play-store-icon.png)
+
+## <a name="next-steps"></a>Sonraki adımlar  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

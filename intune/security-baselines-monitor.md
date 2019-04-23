@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,60 +16,70 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bd6e7f37a2e3b10371dead97e849834b39ba06f
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507052"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Güvenlik temeli ve Intune profilinde izleyin
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Güvenlik temeli ve Microsoft Intune profillerini izleme  
 
-Farklı güvenlik temellerini kullanırken izleme seçenekleri vardır. Kullanıcılara ve cihazlara uygulanan güvenlik temelleri profilini izleyebilirsiniz. Ayrıca, gerçek taban çizgisi ve önerilen değerler aynı (veya eşleşmeyen) herhangi bir cihaza da izleyebilirsiniz.
+Intune, güvenlik temellerini izlemek için çeşitli seçenekler sunar. Kullanıcılara ve cihazlara uygulanan güvenlik temelleri profilini izleyebilirsiniz. Ayrıca, gerçek taban çizgisi ve önerilen değerler aynı (veya eşleşmeyen) herhangi bir cihaza da izleyebilirsiniz.
 
 Bu makalede her iki izleme çalışma seçeneklerde gösterilmektedir.
 
 [Intune, güvenlik temellerini](security-baselines.md) Intune güvenlik temelleri özelliği hakkında daha fazla ayrıntı sağlar.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Taban çizgisi ve cihazlarınızı izleyin
+## <a name="monitor-the-baseline-and-your-devices"></a>Taban çizgisi ve cihazlarınızı izleyin  
 
-Taban çizgisi izlerken, cihazlarınızı Microsoft önerilerine göre güvenlik durumu hakkında bilgi edinme.
+Temel izlerken, cihazlarınızı Microsoft önerilerine göre güvenlik durumu hakkında bilgi edinme. Bu güvenlik temelinin genel bakış bölmesinin ınsights'tan Intune konsolunda görüntüleyebilirsiniz.  Verilerin bir taban çizgisi atadıktan sonra görünmesi 24 saate kadar sürer. Sonraki değişiklikler görüntülenmesi altı saat olur.  
 
-> [!NOTE]
-> Temel ilk atandıktan sonra raporları güncelleştirilmesi 24 saat sürebilir. Bundan sonra güncelleştirme 6 saat kadar sürebilir.
+Taban çizgisi ve aygıtları için izleme verilerini görüntülemek için oturum açın [Intune portalı](https://aka.ms/intuneportal). Ardından, **güvenlik temellerini (Önizleme)** seçin bir taban çizgisi ve Görünüm **genel bakış** bölmesi.
 
-1. İçinde [Azure portalında](https://portal.azure.com/)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
-2. Seçin **güvenlik temellerini (Önizleme)** > bir taban çizgisi seçin.
-3. İçinde **genel bakış**, kaç cihazın seçtiğiniz taban çizgisi ve farklı durumlarını etkilendiğini grafik gösterir:
+**Genel bakış** bölmesinde, durumunu izlemek için iki yöntem sunar:
+- **Cihaz görünümünü** – her bir durum kategorisi taban çizgisi için kaç cihazın bulunan bir özeti.  
+- **Kategori başına** -temelindeki her kategori görüntüler ve her bir temel kategori için her bir durum grubu için cihazların yüzdesini içeren bir görünüm. 
 
-    ![Cihazların durumunu denetleyin](./media/security-baselines-monitor/overview.png)
+Her cihaz hem de kullanılan aşağıdaki durumlardan biri tarafından temsil edilen *cihaz* görünümü ve *Kategori başına* görünümler:  
+- **Eşleşen temel** -önerilen ayarları temelindeki tüm ayarlarıyla eşleşmelidir.
+- **Taban çizgisi eşleşmiyor** -taban çizgisini en az bir ayarda, önerilen ayarları eşleşmiyor.
+- **Yanlış yapılandırılmış** -en az bir ayarı düzgün yapılandırılmamış. Bu durum, çakışma, hata veya bekleyen durumda ayardır anlamına gelir.
+- **Uygulanamaz** -en az bir ayar geçerli değildir ve uygulanmaz.
 
-    Aşağıdaki durumlar mevcuttur:
 
-    - **Eşleşen temel**: Önerilen ayarları temel tüm ayarlarla eşleşen.
-    - **Taban çizgisi eşleşmiyor**: Taban çizgisini en az bir ayarda, önerilen ayarları eşleşmiyor.
-    - **Yanlış yapılandırılmış**: En az bir ayarı düzgün yapılandırılmamış. Bu durum, çakışma, hata veya bekleyen durumda ayardır anlamına gelir.
-    - **Uygulanamaz**: En az bir ayar geçerli değildir ve uygulanmaz.
-    
-> [!NOTE]
-> Bir cihaza birden çok durumda ayar varsa, cihazın aşağıdaki öncelik sırası tarafından sınıflandırılır: **Yanlış yapılandırılmış**, **temel eşleşmiyor**, **uygulanamaz**, **eşleşme temel**.
+### <a name="device-view"></a>Cihaz görüntüle
+Genel Bakış bölmesinin taban çizgisi için bir özel durum kaç tane cihaza sahip bir grafik tabanlı özeti görüntüler; **Atanan Windows 10 cihazlar için güvenlik temeli duruşunu**.  
 
-4. Cihaz durumları birini seçin. Örneğin, **Misconfigured** durumu.
+![Cihazların durumunu denetleyin](./media/security-baselines-monitor/overview.png)
 
-5. O durumdaki tüm cihazların bir listesi gösterilir. Daha fazla bilgi almak için belirli bir cihaz seçin. 
+Bir cihazda temelde farklı kategorilerdeki farklı bir durum varsa, cihaza tek bir durumu tarafından temsil edilir. Cihaz temsil eden durum aşağıdaki öncelik sırasını alınır: **Yanlış yapılandırılmış**, **temel eşleşmiyor**, **uygulanamaz**, **eşleşme temel**.  
 
-    Aşağıdaki örnekte, seçin **cihaz Yapılandırması** > profil ile bir hata durumu seçin:
+Bir cihaz varsa, örneğin, bir ayar olarak sınıflandırılan *yapılandırılmış* ve bir veya daha fazla ayarları olarak sınıflandırılan *temel eşleşmiyor*, cihaz olarak sınıflandırılır *yanlışyapılandırılmış*.  
 
-    ![Cihazların durumunu denetleyin](./media/security-baselines-monitor/device-configuration-profile-list.png)
+Detaylandırma ve çeşitli durumları olan cihazların bir listesini görüntülemek için grafik tıklayabilirsiniz. Ardından, ayrı aygıtlar hakkındaki ayrıntıları görüntülemek için listeden cihazları tek tek seçebilirsiniz. Örneğin:
+- Seçin **cihaz Yapılandırması** > profil ile bir hata durumu seçin:
 
-    Hata profili seçin. Profil ve bunların durumunu tüm ayarların bir listesi gösterilir. Şimdi, hataya neden olan ayar bulmak için kaydırabileceği:
+  ![Cihazların durumunu denetleyin](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![Hataya neden olan ayara bakın](./media/security-baselines-monitor/profile-with-error-status.png)
+- Hata profili seçin. Profil ve bunların durumunu tüm ayarların bir listesi gösterilir. Şimdi, hataya neden olan ayar bulmak için kaydırabileceği:
+
+  ![Hataya neden olan ayara bakın](./media/security-baselines-monitor/profile-with-error-status.png)
 
 Soruna neden olan herhangi bir profili ayarları görmek için bu bildirimi kullanın. İlkeler ve Profiller cihaza daha fazla ayrıntı ayrıca Al.
 
 > [!NOTE]
 > Bir özelliği ayarlandığında **yapılandırılmadı** temelde, ayarı göz ardı edilir ve hiçbir kısıtlama uygulanır. Özelliği, bir raporlama gösterilmiyor.
+
+### <a name="per-category-view"></a>Kategori Görünümü
+Genel Bakış bölmesinin, taban çizgisi için bir kategori başına grafik görüntüler; **Kategoriye göre güvenlik temeli duruşunu**.  Bu görünüm, her kategori taban çizgisinden görüntüler ve bu kategorilerin her biri için bir durum sınıflandırma giren cihazların yüzdesini belirler. 
+ 
+![Kategori başına görünüm durumu](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+Durumu **eşleşme temel** %100 cihaz kategorisi için durumu rapor kadar görüntülemez.   
+
+Sütunun üstündeki yukarı-aşağı ok simgesini seçerek kategoriye göre görüntüle her bir sütuna göre sıralama yapabilirsiniz.  
+
 
 ## <a name="monitor-the-profile"></a>Profil İzleyicisi
 

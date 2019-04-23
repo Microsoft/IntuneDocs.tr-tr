@@ -14,11 +14,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511373"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Hızlı Başlangıç: Intune'a bir kullanıcı oluşturun ve onlara lisans atayın
 
@@ -30,7 +30,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 Oturum [Intune](https://aka.ms/intuneportal) olarak bir [genel yönetici veya Intune Hizmet Yöneticisi](users-add.md#types-of-administrators). Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
-## <a name="create-a-user"></a>Bir kullanıcı oluşturun
+## <a name="create-a-user"></a>Kullanıcı oluşturma
 
 Kullanıcıların, Intune cihaz Yönetimi'nde kaydetmek için bir kullanıcı hesabı olmalıdır. Yeni bir kullanıcı oluşturmak için:
 

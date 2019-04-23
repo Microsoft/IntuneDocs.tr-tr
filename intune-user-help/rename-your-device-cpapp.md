@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 627cabb14def14494ca258fbc9ac7ebf736b10da
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504477"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasında bir cihazı yeniden adlandırma
 Bir cihazı diğerlerinden ayırt etmeyi kolaylaştırmak için yeniden adlandırın. Windows için Şirket Portalı uygulaması aşağıdaki türlerde bağlı cihazları yeniden adlandırmanıza olanak tanır:  

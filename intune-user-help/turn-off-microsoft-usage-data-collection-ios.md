@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2778a81e74937756624f7b988c302e7fa558dcc6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61500975"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft’un veri toplamasını devre dışı bırakma
 

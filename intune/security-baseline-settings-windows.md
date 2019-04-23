@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 67938f8697002f94f275f953510d1b0f4864a3fa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507166"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Intune için Windows Güvenlik temel ayarları  
 
@@ -48,7 +48,7 @@ Daha fazla bilgi için [ilke CSP'si - AppRuntime](https://docs.microsoft.com/win
 - **Windows Store uygulamaları için isteğe bağlı Microsoft hesapları**  
   Bu ilke ayarı Microsoft hesaplarının oturum açmak için bir hesap gerektiren Windows Store uygulamaları için isteğe bağlı olup olmadığını denetlemenizi sağlar. Bu ilke yalnızca destekleyen Windows Store uygulamaları etkiler. Bu ilke ayarını etkinleştirirseniz, genellikle oturum açmak için bir Microsoft hesabı gerektiren Windows Store uygulamaları, bunun yerine bir kuruluş hesabıyla oturum açmasına izin verir. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların bir Microsoft hesabıyla oturum açmanız gerekir.  
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
 
 ## <a name="application-management"></a>Uygulama Yönetimi   
 Daha fazla bilgi için [ilke CSP'si - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) Windows belgelerinde.  
@@ -74,7 +74,7 @@ Daha fazla bilgi için [ilke CSP'si - Autoplay](https://docs.microsoft.com/windo
 - **Toplu olmayan cihazlar için Otomatik Oynat engelle**  
   Bu ilke ayarı, kamera veya telefon gibi MTP cihazları için otomatik izin vermiyor. Bu ilke ayarını etkinleştirirseniz, otomatik kamera veya telefon gibi MTP cihazları için izin verilmiyor. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, otomatik birim olmayan cihazlar için etkinleştirilmiş.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
 
 ## <a name="bitlocker"></a>BitLocker'ı    
 Daha fazla bilgi için [ilke CSP'si - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
@@ -138,12 +138,12 @@ Daha fazla bilgi için [ilke CSP'si - bağlantı](https://docs.microsoft.com/win
 - **Web yayımı ve çevrimiçi sipariş sihirbazları için Internet blok indirme**  
   Bu ilke ayarı, Windows web yayımı ve çevrimiçi sipariş sihirbazları için sağlayıcıların listesini indirip indirmeyeceğini belirtir. Bu sihirbazlar, kullanıcıların çevrimiçi depolama alanını ve fotoğraf yazdırma gibi hizmetleri sağlayan şirketlerin listesinden seçmesine izin ver. Varsayılan olarak, Windows kayıt defterinde belirtilen sağlayıcılara ek olarak bir Windows Web sitesinden indirilen sağlayıcıları görüntüler. Bu ilke ayarını etkinleştirirseniz, Windows, sağlayıcıları ve yalnızca yerel kayıt defteri görüntüsünü önbelleğe alınan hizmet sağlayıcıları indirilmedi. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı Web'de yayımlama veya çevrimiçi sipariş sihirbazları kullandığında sağlayıcılarının bir listesini indirir. Kayıt defterinde hizmet sağlayıcıları belirtme hakkında bilgi içerir. daha fazla bilgi için web yayımı ve çevrimiçi sipariş sihirbazları için belgelere bakın.  
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
 
 - **Yazıcı sürücülerini HTTP üzerinden indirmeyi engelleyin**  
   Bu ilke ayarı, bu istemci yazdırma sürücüsü paketleri HTTP üzerinden indirilmesine izin verilip verilmeyeceğini belirtir. HTTP yazdırmayı kurmak için HTTP üzerinden indirilecek gelen olmayan sürücüler gerekir. Not: Bu ilke ayarı istemci yazdırma Intranet veya Internet üzerinde yazıcılara HTTP üzerinden engellemez. Yalnızca zaten yerel olarak yüklü değildir sürücülerini indirmeyi yasaklar. Bu ilke ayarını etkinleştirirseniz, yazıcı sürücülerini HTTP üzerinden yüklenemiyor. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların yazıcı sürücülerini HTTP üzerinden indirebilirsiniz.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
 
 ## <a name="credentials-delegation"></a>Kimlik temsilcisi  
 Daha fazla bilgi için [ilke CSP'si - CredentialsDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation
@@ -153,7 +153,7 @@ Daha fazla bilgi için [ilke CSP'si - CredentialsDelegation](https://docs.micros
   Uzak ana aktarılamaz kimlik temsili sağlar. Cihazları kimlik bilgilerini dışarı aktarılabilir bir sürümünü kimlik bilgileri temsilcisi kullanılırken, kullanıcıların kimlik bilgileri hırsızlığı riski saldırganlar uzaktaki ana makinede gelen gösterir. uzak konağa sağlar. Bu ilke ayarını etkinleştirirseniz, konak uzak Credential Guard ya da kısıtlı yönetici modunu destekler. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, sınırlı yönetim ve uzak Credential Guard modu desteklenmiyor. Kullanıcı kimlik bilgilerini ana bilgisayara geçirmek her zaman gerekecektir.  
 
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
 
 ## <a name="credentials-ui"></a>Kimlik bilgileri kullanıcı Arabirimi  
 Daha fazla bilgi için [ilke CSP'si - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) Windows belgelerinde.  
@@ -195,7 +195,7 @@ Daha fazla bilgi için [ilke CSP'si - DeviceGuard](https://docs.microsoft.com/wi
   **Default**: Yes  
   -->
 - **Sistem koruma başlatın**    
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
 
 ## <a name="device-installation"></a>Cihaz yükleme  
 Daha fazla bilgi için [ilke CSP'si - DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) Windows belgelerinde.  
@@ -239,7 +239,7 @@ Daha fazla bilgi için [ilke CSP'si - DeviceLock](https://docs.microsoft.com/win
 - **Kamera kullanımını engelle**  
   PC Ayarları'nda kilit ekranı kamera iki durumlu düğme devre dışı bırakır ve kilit ekranında çağrılan bir kamera önler. Varsayılan olarak, kullanıcıların kullanılabilir bir kamera kilit ekranında çağrılmasını etkinleştirebilirsiniz. Bu ayarı etkinleştirirseniz, kullanıcılar artık etkinleştirme veya devre dışı PC Ayarları'nda kilit ekranı kamera erişimi mümkün olacaktır ve kilit ekranında kamera çağrılamaz. 
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
 
 - **Parola iste**  
   Cihaz kilidi etkinleştirilip etkinleştirilmeyeceğini belirtir.
@@ -287,7 +287,7 @@ Daha fazla bilgi için [ilke CSP'si - DeviceLock](https://docs.microsoft.com/win
 - **Slayt gösterisi engelle**  
   PC Ayarları'nda kilit ekranı slayt gösterisi ayarlarını devre dışı bırakır ve bir slayt gösterisi kilit ekranında çalışmasını önler. Varsayılan olarak, bunlar makine kilitleme sonra çalıştırılacak bir slayt gösterisi açabileceğinizi bilirsiniz. Bu ayarı etkinleştirirseniz, kullanıcılar, PC Ayarları'nda slayt gösterisi ayarlarını değiştiremez ve hiçbir slayt gösterisi başlayabilir.
   
-    **Varsayılan**: Etkin  
+    **Varsayılan**: Enabled  
     *Etkin ayarı, slayt gösterilerini çalışmasını engeller.* 
 
 - **Gün olarak parola en düşük yaş**  
@@ -391,7 +391,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer sertifika adresi uyuşmazlığı Uyarısı**  
   Bu ilke ayarı, sertifika adresi uyumsuzluğu güvenlik uyarısını kapatmanızı sağlar. Bu ilke ayarı etkinleştirildiğinde, kullanıcı için farklı bir Web sitesi adresi, mevcut sertifikalara Güvenli HTTP (HTTPS) Web siteleri ziyaret uyarılır. Bu uyarı, sahtekarlık saldırılarını önlemeye yardımcı olur. Bu ilke ayarını etkinleştirirseniz, sertifika adresi uyuşmazlığı her zaman uyarı görünür. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı (Internet Denetim Masası'nda Gelişmiş sayfasını kullanarak) sertifika adresi uyuşmazlığı uyarısı görüntülenip görüntülenmeyeceğini seçebilirsiniz.
   
-  **Varsayılan**: Etkin 
+  **Varsayılan**: Enabled 
   
 - **Internet Explorer kısıtlı bölge ayrıcalıklı siteleri daha az**  
   Bu ilke ayarı, bu bölgeye Web siteleri Internet siteleri gibi daha az ayrıcalıklı bölgelerdeki gidebilirsiniz yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Web siteleri daha az ayrıcalıklı bölgelerdeki yeni pencerelerde açın veya bu bölgeye gidin. Güvenlik bölgesi ek koruma Bölge Yüksekliği güvenlik özelliği tarafından sağlanan bir güvenlik katmanı olmadan çalışır. Açılan kutusunda seçtiğiniz istemi, riskli olabilecek Gezinti gerçekleşmek üzere olan bir kullanıcı için bir uyarı verilir. Bu ilke ayarını devre dışı bırakırsanız, zararlı olabilecek Gezinti engellenir. Internet Explorer güvenlik özelliği bu bölgede bölge yükseltme özelliği denetiminden koruma tarafından belirlenen açıktır. Bu ilke ayarı yapılandırmazsanız, zararlı olabilecek gezintiler engellenir. Internet Explorer güvenlik özelliği bu bölgede bölge yükseltme özelliği denetiminden koruma tarafından belirlenen açıktır.
@@ -411,7 +411,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer internet bölgesi izin tdc ActiveX denetimlerini kullanmak için etki alanları yalnızca onaylanmış**  
   Bu ilke ayarı, kullanıcı Web siteleri TDC ActiveX denetimini çalışıp çalışamayacağını denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki sitelerinden TDC ActiveX denetimini çalışmaz. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki tüm sitelerden TDC ActiveX denetimi çalıştırılır.
   
-  **Varsayılan**: Etkin 
+  **Varsayılan**: Enabled 
   
 - **Windows Internet Explorer'ın kısıtlı bölge betik başlatıldı**  
   Bu ilke ayarı, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows üzerindeki kısıtlamaları yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, bu bölgede Windows kısıtlamaları güvenlik uygulanmayacak. Bu özellik tarafından sağlanan bir güvenlik katmanı eklendi olmadan güvenlik bölgesi çalıştırır. Bu ilke ayarını devre dışı bırakırsanız, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows içerdiği zararlı olabilecek eylemler çalıştıramazsınız. Internet Explorer güvenlik özelliği bu bölgede işlem için Windows güvenlik kısıtlamaları komut dosyası özellik denetim ayarı tarafından belirlenen açıktır. Bu ilke ayarı yapılandırmazsanız, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows içerdiği zararlı olabilecek eylemler çalıştıramazsınız. Internet Explorer güvenlik özelliği bu bölgede işlem için Windows güvenlik kısıtlamaları komut dosyası özellik denetim ayarı tarafından belirlenen açıktır.
@@ -426,7 +426,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer, geliştirilmiş korumalı mod işlemi devre dışı bırak**  
   Bu ilke ayarı Internet Explorer 11 64-bit işlemler (için daha fazla güvenlik için) veya (daha fazla uyumluluk için) 32-bit işlemler zaman kullanıp kullanmadığını belirler geliştirilmiş korumalı modu 64-bit Windows sürümlerinde çalışan. Önemli: 64 bit işlemleri kullanıldığında bazı ActiveX denetimleri ve araç çubuklarını kullanılamayabilir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer 11 geliştirilmiş korumalı modu 64-bit Windows sürümlerinde çalışan 64-bit sekmesi işlemleri kullanır. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer 11 zaman geliştirilmiş korumalı modu 64-bit Windows sürümlerinde çalışan 32-bit sekmesi işlemleri kullanır. Bu ilke ayarı yapılandırmazsanız, kullanıcıların üzerinde veya Internet Explorer ayarlarını kullanarak bu özelliği kapatabilirsiniz. Bu özellik varsayılan olarak kapalıdır.
   
-  **Varsayılan**: Etkin 
+  **Varsayılan**: Enabled 
   
 - **Internet Explorer, sertifika hataları yoksay**  
   Bu ilke ayarı, kullanıcı ("süresi gibi", "İptal" veya "Ad uyuşmazlığı" hatalar) Internet Explorer'da gözatma kesme Güvenli Yuva Katmanı/Aktarım Katmanı Güvenliği (SSL/TLS) sertifikası hataları yoksayma öğesinden engeller. Bu ilke ayarını etkinleştirirseniz, kullanıcı gözatma devam edemiyor. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, sertifika hataları yoksay ve Tarama devam etmek kullanıcı seçebilir.
@@ -441,7 +441,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Dosya için Internet Explorer internet bölgesi istemi otomatik indirmeleri**  
   Bu ilke ayarı, kullanıcıların olmayan kullanıcı tarafından başlatılan dosya indirmeleri için sorulup sorulmayacağını belirler. Bu ayar ne olursa olsun, kullanıcılar, dosya indirme iletişim kutuları için kullanıcı tarafından başlatılan indirmeler alır. Bu ayarı etkinleştirirseniz, kullanıcılar bir dosya indirme iletişim kutusu için otomatik indirme denemelerinin alır. Devre dışı bırakın ya da bu ayarı yapılandırmayın, kullanıcı tarafından başlatılan olmayan dosya yüklemeleri engellenir ve kullanıcıların dosya indirme iletişim kutusu yerine bildirim çubuğu göreceksiniz. Kullanıcılar daha sonra dosya indirme istemi izin vermek için bildirim çubuğu tıklatabilirsiniz.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Güvenli olmayan dosyalar için Internet Explorer'ın kısıtlı bölge güvenlik uyarısı**  
   "Dosya – Güvenlik Uyarısı açın" iletisi görüntülenirse, kullanıcı yürütülebilir dosyaları veya diğer olmayabilecek dosyaları (örneğin dosya Gezgini'ni kullanarak bir intranet dosya paylaşımından) açmayı denediğinde bu ilke ayarı denetler. Bu ilke ayarını etkinleştirin ve etkinleştirmek için açılan kutudan ayarlayın, bu dosyalar olmadan bir güvenlik uyarısı açın. Açılan kutunun istemine ayarlarsanız, dosyaları açmadan önce bir güvenlik uyarısı görüntülenir. Bu ilke ayarını devre dışı bırakırsanız, bu dosyalar açmayın. Bu ilke ayarı yapılandırmazsanız, kullanıcı, bilgisayar bu dosyaları nasıl işlediğini yapılandırabilirsiniz. Varsayılan olarak, bu dosyalar Intranet ve yerel bilgisayar bölgeleri, etkin Yasak bölgesinde engellenen ve Internet ve güvenilen bölgelerde isteyecek şekilde ayarlayın.
@@ -451,7 +451,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer internet bölgesi çoklu site komut dosyası filtresi**  
   Bu ilke, siteler arası betik (XSS) filtre algılayın ve bu bölgedeki Web siteleri içine siteler arası betik eklemelerini engelle denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki sitelerden XSS filtre açıktır ve XSS filtre siteler arası betik eklemelerini engellemeye çalışır. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki sitelerden XSS filtre kapalıdır ve Internet Explorer, siteler arası betik eklemelerini izin verir.
   
-  **Varsayılan**: Etkin 
+  **Varsayılan**: Enabled 
   
 - **Internet Explorer SSL3 geri dön**  
   Bu ilke ayarı, güvenli olmayan bir geri dönüş SSL 3.0 engellemenize olanak sağlar. Bu ilke etkinleştirildiğinde, Internet Explorer sitelere kullanarak SSL 3.0 veya TLS 1.0 veya üstü başarısız olduğunda aşağıda bağlanmayı dener. Bir adam-de-ortadaki adam saldırısı önlemek için güvenli olmayan bir geri dönüş izin verme öneririz. Bu ilke, hangi güvenlik protokollerine etkin etkilemez. Bu ilke devre dışı bırakırsanız, sistem varsayılan değerler kullanılır.
@@ -461,7 +461,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer'ın internet bölgesi akıllı ekran aşağıya kilitli**  
   Bu ilke kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi tarar olmadığını ayarı denetler. Bu ilke ayarını etkinleştirirseniz, SmartScreen Filtresi, kötü amaçlı içerik için bu bölgedeki sayfalar tarar. Bu ilke ayarını devre dışı bırakırsanız, kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi taramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıya SmartScreen Filtresi'ni kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını seçebilirsiniz. Not: Internet Explorer 7'de, bu ilke ayarı, kimlik avı filtre kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını denetler.
   
-  **Varsayılan**: Etkin 
+  **Varsayılan**: Enabled 
   
 - **Internet Explorer bölge başlatma uygulamalar ve dosyalar bir iFrame içinde kısıtlı**  
   Bu ilke ayarı, uygulamaları çalıştırabilir ve dosyaları, HTML sayfaları bu bölgedeki bir IFRAME başvurusuna şuradan indirilebilir yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar uygulamalarını çalıştırmak ve kullanıcı müdahalesi olmadan bu bölgedeki sayfalarında IFRAMES dosyaları indirin. Açılan kutusunda seçtiğiniz istemi, kullanıcılara uygulamalarını çalıştırmak ve bu bölgedeki sayfalarında IFRAMES dosyaları karşıdan seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların uygulamaları çalıştırmaya ve bu bölgedeki sayfalarında IFRAMES dosyaları indirme engellenir. Bu ilke ayarı yapılandırmazsanız, kullanıcıların uygulamaları çalıştırmaya ve bu bölgedeki sayfalarında IFRAMES dosyaları indirme engellenir.
@@ -481,7 +481,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer tutarlı MIME işleme işlemleri**  
   Internet Explorer dinamik ikili davranışlar içerir: takılı HTML öğeleri için belirli işlevi kapsülleyen bileşenler. Bu ilke, ikili davranışı güvenlik kısıtlama ayarını engellendi veya izin ayarı denetler. Bu ilke ayarını etkinleştirirseniz, ikili davranışları için dosya Gezgini ve Internet Explorer işlemleri engellenir. Bu ilke ayarını devre dışı bırakırsanız, ikili davranışları dosya Gezgini ve Internet Explorer işlemleri için izin verilir. Bu ilke ayarı yapılandırmazsanız, ikili davranışları için dosya Gezgini ve Internet Explorer işlemleri engellenir.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer'ın kısıtlı bölge java izinleri**  
   Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java uygulamalarını devre dışı bırakıldı.
@@ -502,7 +502,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer pencerelerine güvenlik kısıtlamaları işlemleri**  
   Internet Explorer, program aracılığıyla açın, yeniden boyutlandırma ve çeşitli türlerdeki windows yeniden konumlandırmak için komut dosyaları sağlar. Pencere Kısıtlamaları güvenlik özelliği açılır pencereleri kısıtlar ve betikleri başlık ve Durum Çubuğu'nın kullanıcıya görünür olmayan veya diğer Windows başlık ve durum çubukları karartmak windows görüntülenmesini engeller. Bu ilke ayarını etkinleştirirseniz, tüm işlemler için pencerelerine kısıtlanır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın pencerelerine sınırlı değildir.
   
-  **Varsayılan**: Etkin   
+  **Varsayılan**: Enabled   
   
 - **Internet Explorer kısıtlı bölge ActiveX denetimleri ve eklentileri çalıştırma**  
   Bu ilke ayarı ActiveX denetimleri ve eklentiler sayfalarda belirtilen bölgeden çalıştırabilirsiniz yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, denetimleri ve eklentiler kullanıcı müdahalesi olmadan çalıştırabilirsiniz. Aşağı açılan kutusunda seçtiğiniz istemi kullanıcıların denetimleri izin verip vermeyeceklerini sorulan veya çalıştırmak için eklenti vardır. Bu ilke ayarını devre dışı bırakırsanız, denetimleri ve eklentiler çalışması engellenir. Bu ilke ayarı yapılandırmazsanız, denetimleri ve eklentiler çalışması engellenir.
@@ -533,7 +533,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer onay sunucu sertifika iptal etme**  
   Bu ilke ayarı, Internet Explorer ın sunucu sertifikalarının iptal durumunu denetleyip denetlemeyeceğini yönetmenize olanak sağlar. Sertifikalar, gizliliği ihlal edilmiş veya artık geçerli ve bu seçenek, gizli veriler sahte veya güvenli olmayan bir siteye göndermesinin kullanıcıları korur iptal edilir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer sunucu sertifikası iptal edilmiş görmek için denetler. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer sunucu sertifikası iptal edilmiş görmek için kontrol olmaz. Bu ilke ayarı yapılandırmazsanız, Internet Explorer sunucu sertifikası iptal edilmiş görmek için kontrol olmaz.
   
-  **Varsayılan**: Etkin 
+  **Varsayılan**: Enabled 
   
 - **Internet Explorer internet bölgesi ayrıcalıklı siteleri daha az**  
   Bu ilke ayarı, bu bölgeye Web siteleri Yasak siteler gibi daha az ayrıcalıklı bölgelerdeki gidebilirsiniz yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Web siteleri daha az ayrıcalıklı bölgelerdeki yeni pencerelerde açın veya bu bölgeye gidin. Güvenlik bölgesi ek koruma Bölge Yüksekliği güvenlik özelliği tarafından sağlanan bir güvenlik katmanı olmadan çalışır. Açılan kutusunda seçtiğiniz istemi, riskli olabilecek Gezinti gerçekleşmek üzere olan bir kullanıcı için bir uyarı verilir. Bu ilke ayarını devre dışı bırakırsanız, zararlı olabilecek gezintiler engellenir. Internet Explorer güvenlik özelliği bu bölgede bölge yükseltme özelliği denetiminden koruma tarafından belirlenen açıktır. Bu ilke ayarı yapılandırmazsanız, Web siteleri daha az ayrıcalıklı bölgelerdeki yeni pencerelerde açın veya bu bölgeye gidin.
@@ -553,7 +553,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer kullanıcı ActiveX denetimleri yüklenmesini engelle**  
   Bu ilke ayarı, kullanıcı başına temelinde ActiveX denetimlerini yüklenmesini önlemek sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcı başına esasına göre ActiveX denetimlerini yüklenemez. ActiveX denetimleri, devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı başına esasına göre yüklenebilir.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer smart screen'i Filtresi'nin yönetimini engelle**  
   Bu ilke ayarı, ziyaret ettikleri Web sitesi aracılığıyla "kimlik avı" kişisel bilgileri toplamak sahte girişimleri için bilinen veya ana bilgisayar kötü amaçlı yazılımı bildirmeye bilinen kullanıcıyı uyarır SmartScreen Filtresi'ni yönetmesini kullanıcı engeller. Bu ilke ayarını etkinleştirirseniz, kullanıcıya SmartScreen Filtresi'ni istenir değil. Filtrelere olmayan tüm Web sitesi adresleri listesi gönderilen otomatik olarak Microsoft'a kullanıcıya sormadan izin verin. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı ilk kez çalıştırma deneyimi sırasında SmartScreen Filtresi'ni açmak isteyip karar vermeniz istenir.
@@ -563,7 +563,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer MIME algılaması güvenlik özelliği işlemleri**  
   Bu ilke ayarı, Internet Explorer MIME algılaması tek bir dosyanın daha tehlikeli bir dosya türü için engelleyecek olup olmadığını belirler. Bu ilke ayarını etkinleştirirseniz, MIME algılaması daha tehlikeli bir dosya türü için bir türde bir dosya hiçbir zaman yükseltmez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer işlemleri daha tehlikeli bir dosya türü için bir türde bir dosya MIME algılamasının izin verir. Bu ilke ayarı yapılandırmazsanız MIME algılaması daha tehlikeli bir dosya türü için bir türde bir dosya hiçbir zaman yükseltmez.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **İmzalı ActiveX denetimlerini Internet Explorer kısıtlı bölge yükle**  
   Bu ilke ayarı, kullanıcıların imzalanmış ActiveX denetimlerini bölgesinde sayfasından yükleyip yükleyemeyeceklerini yönetmenize olanak sağlar. Bu ilkeyi etkinleştirmek, kullanıcıların kullanıcı müdahalesi olmadan imzalı denetimleri indirebilirsiniz. Aşağı açılan kutusunda istemi seçerseniz, kullanıcıların güvenilen yayımcılar tarafından imzalanmış denetimleri indirin etkinleştirilip etkinleştirilmeyeceğini sorgulanır. Güvenilen Yayımcılar tarafından imzalanmış kod sessizce indirilir. İlke ayarını devre dışı bırakırsanız, imzalı denetimleri karşıdan yükleyemiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcıların güvenilen yayımcılar tarafından imzalanmış denetimleri indirin etkinleştirilip etkinleştirilmeyeceğini sorgulanır. Güvenilen Yayımcılar tarafından imzalanmış kod sessizce indirilir.
@@ -586,7 +586,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer'ın kısıtlı bölgede tdc ActiveX denetimlerini kullanmak için etki alanları yalnızca onaylanmış**  
   Bu ilke ayarı, kullanıcı Web siteleri TDC ActiveX denetimini çalışıp çalışamayacağını denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki sitelerinden TDC ActiveX denetimini çalışmaz. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki tüm sitelerden TDC ActiveX denetimi çalıştırılır.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer Güvenilen Bölge ActiveX denetimleri karşı kötü amaçlı yazılımdan koruma çalışmaz**  
   Bu ilke ayarı, Internet Explorer karşı sayfalarında güvenli iseler denetlemek için ActiveX denetimleri, kötü amaçlı yazılımdan koruma programları çalışıp çalışmayacağını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetleyin olmaz. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Bu ilke ayarı yapılandırmazsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Kullanıcılar bu davranışı açıp kapatabilir, Internet Explorer güvenlik ayarlarını kullanarak kapatabilirsiniz.
@@ -610,7 +610,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer işlemleri bildirim çubuğu**  
   Bu ilke ayarı dosyası veya kod yüklemeleri kısıtlandığında Internet Explorer işlemleri için bildirim çubuğu görüntülenmez yönetmenizi sağlar. Varsayılan olarak, Internet Explorer işlemleri için bildirim çubuğu görüntülenir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer işlemleri için bildirim çubuğu görüntüler. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer işlemleri için bildirim çubuğu görüntülenmez. Bu ilke ayarı yapılandırmazsanız, bildirim çubuğu için Internet Explorer işlemleri görüntülemez.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **İmzalı ActiveX denetimlerini Internet Explorer internet bölgesi yükle**  
   Bu ilke ayarı, kullanıcıların imzalanmış ActiveX denetimlerini bölgesinde sayfasından yükleyip yükleyemeyeceklerini yönetmenize olanak sağlar. Bu ilkeyi etkinleştirmek, kullanıcıların kullanıcı müdahalesi olmadan imzalı denetimleri indirebilirsiniz. Aşağı açılan kutusunda istemi seçerseniz, kullanıcıların güvenilen yayımcılar tarafından imzalanmış denetimleri indirin etkinleştirilip etkinleştirilmeyeceğini sorgulanır. Güvenilen Yayımcılar tarafından imzalanmış kod sessizce indirilir. İlke ayarını devre dışı bırakırsanız, imzalı denetimleri karşıdan yükleyemiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcıların güvenilen yayımcılar tarafından imzalanmış denetimleri indirin etkinleştirilip etkinleştirilmeyeceğini sorgulanır. Güvenilen Yayımcılar tarafından imzalanmış kod sessizce indirilir.
@@ -620,12 +620,12 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer kısıtlı bölge Akıllı Ekran**  
   Bu ilke kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi tarar olmadığını ayarı denetler. Bu ilke ayarını etkinleştirirseniz, SmartScreen Filtresi, kötü amaçlı içerik için bu bölgedeki sayfalar tarar. Bu ilke ayarını devre dışı bırakırsanız, kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi taramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıya SmartScreen Filtresi'ni kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını seçebilirsiniz. Not: Internet Explorer 7'de, bu ilke ayarı, kimlik avı filtre kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını denetler.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer kaldırmayı Çalıştır eski ActiveX denetimleri için bu saat düğmesi**  
   Bu ilke ayarı, kullanıcıların görmesini "Bu kez çalıştır" düğmesi ve Internet Explorer'ın belirli eski ActiveX denetimlerini çalışmasını durdurmak sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar Internet Explorer güncel olmayan bir ActiveX denetimi engellediğinde görüntülenen uyarı iletisi "Bu kez çalıştır" düğmesi görmez. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların Internet Explorer güncel olmayan bir ActiveX denetimi engellediğinde görüntülenen uyarı iletisi "Bu kez çalıştır" düğmesi görürsünüz. Bu düğmeye tıklandığında, güncel olmayan bir ActiveX denetimi bir kez çalıştır kullanıcı sağlar. Daha fazla bilgi için "Eski ActiveX denetimlerini" Internet Explorer TechNet kitaplığında bkz.
   
-  **Varsayılan**: Etkin 
+  **Varsayılan**: Enabled 
   
 - **Internet Explorer Internet bölgesi başlatma uygulamalarına ve bir iframe içinde dosyaları**  
   Bu ilke ayarı, uygulamaları çalıştırabilir ve dosyaları, HTML sayfaları bu bölgedeki bir IFRAME başvurusuna şuradan indirilebilir yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar uygulamalarını çalıştırmak ve kullanıcı müdahalesi olmadan bu bölgedeki sayfalarında IFRAMES dosyaları indirin. Açılan kutusunda seçtiğiniz istemi, kullanıcılara uygulamalarını çalıştırmak ve bu bölgedeki sayfalarında IFRAMES dosyaları karşıdan seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların uygulamaları çalıştırmaya ve bu bölgedeki sayfalarında IFRAMES dosyaları indirme engellenir. Bu ilke ayarı yapılandırmazsanız, kullanıcıların isteyip istemediğinizi belirleyin uygulamalarını çalıştırmak ve bu bölgedeki sayfalarında IFRAMES dosyaları indirmek için sorgulanır
@@ -640,7 +640,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer internet bölgesi Akıllı Ekran**  
   Bu ilke kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi tarar olmadığını ayarı denetler. Bu ilke ayarını etkinleştirirseniz, SmartScreen Filtresi, kötü amaçlı içerik için bu bölgedeki sayfalar tarar. Bu ilke ayarını devre dışı bırakırsanız, kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi taramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıya SmartScreen Filtresi'ni kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını seçebilirsiniz. Not: Internet Explorer 7'de, bu ilke ayarı, kimlik avı filtre kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını denetler.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer Güvenilen Bölge java izinleri kilitli**  
   Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java uygulamalarını devre dışı bırakıldı.
@@ -650,7 +650,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer indirilen programları imzaları denetle**  
   Bu ilke ayarı, Internet Explorer (imzalı yazılım yayımcısını tanımlar ve bu değiştirilmediğini veya üzerinde oynama doğrular) dijital imzalar için denetleyip denetlemeyeceğini yürütülebilir programlar indirmeden önce kullanıcı bilgisayarları üzerinde yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Internet Explorer yürütülebilir programlar dijital imzalarını denetler ve kullanıcının bilgisayarına indirmeden önce kimliklerini görüntülemez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer yürütülebilir programlar dijital imzaları denetleme olmaz veya kullanıcının bilgisayarına indirmeden önce kimliklerini görüntülemez. Bu ilke yapılandırmazsanız, Internet Explorer yürütülebilir programlar dijital imzaları denetleme olmaz veya kullanıcının bilgisayarına indirmeden önce kimliklerini görüntülemez.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer web tarayıcı denetimi bölge kodlamasını kısıtlı**  
   Bu ilke ayarı, bir sayfa komut dosyası aracılığıyla gömülü WebBrowser denetimi denetimi olup olmadığını belirler. Bu ilke ayarını etkinleştirirseniz, WebBrowser denetimi betik erişime izin. Bu ilke ayarını devre dışı bırakırsanız, WebBrowser denetimi betik erişmesine izin verilmiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcı etkinleştirebilir veya betik erişimi WebBrowser denetimi devre dışı bırakın. Varsayılan olarak, yalnızca yerel makine ve Intranet bölgeleri WebBrowser denetimi betik erişime izin.
@@ -660,7 +660,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer kısıtlı bölge arası site komut dosyası filtresi**  
   Bu ilke, siteler arası betik (XSS) filtre algılayın ve bu bölgedeki Web siteleri içine siteler arası betik eklemelerini engelle denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki sitelerden XSS filtre açıktır ve XSS filtre siteler arası betik eklemelerini engellemeye çalışır. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki sitelerden XSS filtre kapalıdır ve Internet Explorer, siteler arası betik eklemelerini izin verir.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer kısıtlı bölge ikili ve komut dosyası davranışları**  
   Bu ilke ayarı, dinamik ikili ve betik davranışları yönetmenize olanak sağlar: HTML öğeleri bağlı oldukları için belirli işlevi kapsülleyen bileşenler. Bu ilke ayarını etkinleştirirseniz, ikili ve betik davranışları kullanılabilir. Yönetici aşağı açılan kutusunda onaylı seçerseniz, yalnızca yönetici tarafından onaylanan davranışları ikili davranışları güvenlik kısıtlama ilkesi altında listelenen kullanılabilir. Bu ilke ayarını devre dışı bırakırsanız, uygulamaları özel bir güvenlik yöneticisi uyguladıysanız sürece, ikili ve betik davranışları mevcut değildir. Bu ilke ayarı yapılandırmazsanız, uygulamaları özel bir güvenlik yöneticisi uyguladıysanız sürece, ikili ve betik davranışları mevcut değildir.
@@ -670,7 +670,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer güvenlik ayarları denetimi**  
   Bu ilke ayarı, riske Internet Explorer ayarlarını belirlemek için Internet Explorer güvenlik ayarlarını denetleyen güvenlik ayarlarını denetleme özelliği kapatır. Bu ilke ayarını etkinleştirirseniz, bu özellik devre dışıdır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, özelliği etkinleştirilir.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Güvenli olmayan dosyalar için Internet Explorer internet bölgesi güvenlik uyarısı**  
   "Dosya – Güvenlik Uyarısı açın" iletisi görüntülenirse, kullanıcı yürütülebilir dosyaları veya diğer olmayabilecek dosyaları (örneğin dosya Gezgini'ni kullanarak bir intranet dosya paylaşımından) açmayı denediğinde bu ilke ayarı denetler. Bu ilke ayarını etkinleştirin ve etkinleştirmek için açılan kutudan ayarlayın, bu dosyalar olmadan bir güvenlik uyarısı açın. Açılan kutunun istemine ayarlarsanız, dosyaları açmadan önce bir güvenlik uyarısı görüntülenir. Bu ilke ayarını devre dışı bırakırsanız, bu dosyalar açmayın. Bu ilke ayarı yapılandırmazsanız, kullanıcı, bilgisayar bu dosyaları nasıl işlediğini yapılandırabilirsiniz. Varsayılan olarak, bu dosyalar Intranet ve yerel bilgisayar bölgeleri, etkin Yasak bölgesinde engellenen ve Internet ve güvenilen bölgelerde isteyecek şekilde ayarlayın.
@@ -685,7 +685,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer eski blok ActiveX denetimleri**  </br>
   Bu ilke ayarı, Internet Explorer blokları belirli ActiveX denetimlerini eski olup olmadığını belirler. Güncel olmayan bir ActiveX denetimleri, Intranet bölgesinde hiçbir zaman engellenir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer eski ActiveX denetimlerini engelleme durdurur. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, Internet Explorer belirli eski ActiveX denetimlerini engelleyecek şekilde devam eder. Daha fazla bilgi için "Eski ActiveX denetimlerini" Internet Explorer TechNet kitaplığında bkz.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer'ın kısıtlı bölge açılır pencere engelleyicisi**  
   Bu ilke ayarı, istenmeyen açılır pencerelerin görüntülenip görüntülenmeyeceğini yönetmenize olanak sağlar. Son kullanıcı bağlantıyı tıklattığında açılan açılan pencereler engellenmez. Bu ilke ayarını etkinleştirirseniz, en istenmeyen açılır pencereleri görüntülenmesi engellenir. Bu ilke ayarını devre dışı bırakırsanız, açılır pencereleri görünmesini engelleyen değildir. Bu ilke ayarı yapılandırmazsanız en istenmeyen açılır pencereleri görüntülenmesi engellenir.
@@ -695,7 +695,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer MK protokolü güvenlik kısıtlaması işlemleri**  
   MK protokolü güvenlik kısıtlaması ilke ayarı, MK protokolü engelleyerek saldırı yüzey alanını azaltır. MK protokolü üzerinde bulunan kaynaklara başarısız olur. Bu ilke ayarını etkinleştirirseniz, MK protokolü, dosya Gezgini ve Internet Explorer'da engellenir ve MK protokolü üzerinde bulunan kaynaklara başarısız olur. Bu ilke ayarını devre dışı bırakırsanız, MK protokolü API uygulamaları kullanabilir. MK protokolü üzerinde bulunan kaynaklara dosya Gezgini ve Internet Explorer işlemleri için çalışır. Bu ilke ayarı yapılandırmazsanız, MK protokolü, dosya Gezgini ve Internet Explorer'da engellenir ve MK protokolü üzerinde bulunan kaynaklara başarısız olur.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer Güvenilen Bölge java izinleri**  </br>
   Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, düşük güvenilirlik izni ayarlanır.
@@ -715,7 +715,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer internet bölgesi izin ActiveX denetimlerini kullanmak için etki alanları yalnızca onaylanmış**  </br>
   Bu ilke ayarı, Web siteleri dışında ActiveX denetimini yüklü Web sitesini çalıştırmak ActiveX denetimlerini izin vermek için kullanıcı istenirse denetler. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, bu bölgedeki sitelerinden çalıştırmadan önce kullanıcıya sorulur. Kullanıcı, denetimlerin geçerli siteden veya tüm sitelerden çalışmasına izin vermeyi seçebilirsiniz. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı başına site ActiveX istemini görmez ve bu bölgedeki tüm sitelerden ActiveX denetimlerini çalıştırabilirsiniz.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer dahil tüm ağ yolları**  
   Internet Explorer dahil tüm ağ yolları
@@ -735,7 +735,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer kısıtlı bölge akıllı ekran aşağıya kilitli**  </br>
   Bu ilke kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi tarar olmadığını ayarı denetler. Bu ilke ayarını etkinleştirirseniz, SmartScreen Filtresi, kötü amaçlı içerik için bu bölgedeki sayfalar tarar. Bu ilke ayarını devre dışı bırakırsanız, kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi taramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıya SmartScreen Filtresi'ni kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını seçebilirsiniz. Not: Internet Explorer 7'de, bu ilke ayarı, kimlik avı filtre kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını denetler.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer kilitlenmesi algılama**  
   Bu ilke ayarı, eklenti Yönetimi kilitlenme algılaması özelliği yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Internet Explorer'da bir kilitlenme Windows XP Professional Service Pack 1 ve önceki sürümlerinde, yani bulunan davranışı sergiler Windows hata bildirimi çağırmak için. Windows hata bildirimi için tüm ilke ayarları uygulanmaya devam eder. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, eklenti yönetimi için kilitlenme algılaması özelliği çalışır durumdadır.
@@ -790,7 +790,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer işlemleri Active X yüklemesini kısıtla**  </br>
   Bu ilke ayarı, Web tarayıcı denetimi barındırma uygulamaları otomatik ActiveX denetimi yüklenmesini sorması için etkinleştirir. Bu ilke ayarını etkinleştirirseniz, tüm işlemler için ActiveX denetimi yüklemesinin otomatik isteyen Web tarayıcı denetimi engeller. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, Web tarayıcı denetimi ActiveX denetimi yüklemesinin tüm işlemler için otomatik olarak sorulmasını engellemez.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer internet bölgesi kod parçacıklarını** Bu ilke ayarı, kullanıcı kod parçacıklarını çalıştırıp çalıştıramayacağını yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcı kod parçacıklarını çalıştırabilirsiniz. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı kod parçacıklarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, kullanıcı etkinleştirebilir veya kod parçacıklarını devre dışı bırakın.
   
@@ -827,7 +827,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer güvenlik bölgeleri yalnızca makine ayarlarını kullan**  
   Güvenlik bölgesi bilgilerini aynı bilgisayarın tüm kullanıcıları için geçerlidir. Web siteleri aynı güvenlik düzeyine sahip bir güvenlik bölgesi grubudur. Bu ilkeyi etkinleştirmek, bir güvenlik bölgesi için kullanıcının yaptığı değişiklikleri o bilgisayardaki tüm kullanıcılara uygulanır. Bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, aynı bilgisayardaki kullanıcılar kendi güvenlik bölgesi ayarlarından kurabilirsiniz. Güvenlik bölgesi ayarlarından aynı bilgisayara aynı şekilde geçerlidir ve kullanıcı başka bir kullanıcı değişiklik yoksa emin olmak için bu ilkeyi kullanın. Ayrıca bkz: "güvenlik bölgeleri: ilkeleri değiştirmek kullanıcılara izin verme" ilkesi.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer'ın yerel makine bölge java izinleri kilitli**  
   Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java uygulamalarını devre dışı bırakıldı
@@ -861,12 +861,12 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **ActiveX Yükleyici Hizmeti Internet Explorer kullan**  </br>
   Bu ilke ayarı ActiveX denetimleri nasıl yüklendiğini belirtmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX Yükleyici Hizmeti varsa ve ActiveX denetimleri yüklenmesine izin verecek şekilde yapılandırılmış ActiveX denetimleri yüklendi. Devre dışı bırakın veya bu ilke ayarı yapılandırmayın, ActiveX denetimleri, kullanıcı başına denetimlerini dahil olmak üzere standart yükleme süreci boyunca yüklenir.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer bölge yüksekliğinden koruma işlemleri**  
   Internet Explorer her Web sayfası üzerinde kısıtlamalar getirir. Kısıtlamalar (Internet, Intranet, yerel makine bölgesi ve benzeri) Web sayfasının konumuna bağlıdır. Örneğin, Web sayfalarını yerel bilgisayarda en az bir güvenlik kısıtlamalarına sahiptir ve Yerel Makine bölgesini birinci hedef kötü niyetli kullanıcılar için yerel makine güvenliğin bölgesindedir. Bu ilke ayarını etkinleştirirseniz, tüm işlemler için bölge yüksekliğinden herhangi bir bölge korunabilir. Internet Explorer veya işlem listesinde listelenenler dışındaki işlemleri devre dışı bırakın veya bu ilke ayarı yapılandırmayın, bu tür bir koruma alırsınız.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer internet bölgesi İmzalanmamış ActiveX denetimlerini indirin**  </br>
   Bu ilke ayarı, kullanıcıların İmzasız ActiveX denetimlerini bölgesinden yükleyip yükleyemeyeceklerini yönetmenize olanak sağlar. Bu tür kod, özellikle güvenilmeyen bir bölgeden Bekletmeden çıkarken zararlı olabilir. Bu ilke ayarını etkinleştirirseniz, kullanıcıların kullanıcı müdahalesi olmadan imzasız denetimlerini çalıştırabilirsiniz. Açılan kutuda istemi seçerseniz, kullanıcıların imzasız denetiminin çalışmasına izin verip vermeyeceklerini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların imzasız denetimleri çalıştıramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıların imzasız denetimleri çalıştıramaz.
@@ -889,12 +889,12 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
   
 - **Internet Explorer işlemleri kısıtlamak dosya indirme**  </br> Bu ilke ayarı, Web tarayıcı denetimi barındırma uygulamaları otomatik kullanıcı tarafından başlatılan olmayan dosya indirmeleri sorması için etkinleştirir. Bu ilke ayarını etkinleştirirseniz, Web tarayıcı denetimi otomatik olarak kullanıcı tarafından başlatılan tüm işlemler için olmayan dosya indirmeleri sorulmasını engeller. Bu ilke ayarını devre dışı bırakırsanız, Web tarayıcı denetimi otomatik olarak kullanıcı tarafından başlatılan tüm işlemler için olmayan dosya indirmeleri sorulmasını engellemez.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer'ın kısıtlı bölge izin ActiveX denetimlerini kullanmak için etki alanları yalnızca onaylanmış**  </br>
   Bu ilke ayarı, Web siteleri dışında ActiveX denetimini yüklü Web sitesini çalıştırmak ActiveX denetimlerini izin vermek için kullanıcı istenirse denetler. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, bu bölgedeki sitelerinden çalıştırmadan önce kullanıcıya sorulur. Kullanıcı, denetimlerin geçerli siteden veya tüm sitelerden çalışmasına izin vermeyi seçebilirsiniz. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı başına site ActiveX istemini görmez ve bu bölgedeki tüm sitelerden ActiveX denetimlerini çalıştırabilirsiniz.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Kısıtlı bölge Internet Explorer'ı başlatın ve ActiveX denetimlerini betik güvenli olarak işaretlenmemiş**  
   Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, güvenilir olmayan verileri veya betikler için nesne güvenliği ayarlamadan parametreler ile yüklenir ve komut dosyalı çalıştırın. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, başlatılır ve komut dosyası için hem güvenli hem de güvenli denetimler neden olur, betik ActiveX denetimlerini yoksayma seçeneği için güvenli olarak işaretlenmiş. Bu ilke ayarını etkinleştirin ve istemi açılır kutusunda, kullanıcıların denetimi parametrelerle yüklemeye izin verilip verilmeyeceği veya komut dosyası. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası. Bu ilke ayarı yapılandırmazsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası.
@@ -935,7 +935,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
 - **Internet Explorer'ın gelişmiş korumalı mod**  
   Geliştirilmiş korumalı mod, Windows 64 bit sürümlerinde 64 bit işlemleri kullanarak kötü amaçlı Web sitelerinin karşı ek koruma sağlar. En az çalıştıran bilgisayarlar için Windows 8, geliştirilmiş korumalı mod da sınırlar Internet Explorer okuyabileceği konumlar kayıt defteri ve dosya sistemi. Bu ilke ayarını etkinleştirirseniz, geliştirilmiş korumalı mod etkinleştirilir. Korumalı modu etkin olan herhangi bir bölgeye geliştirilmiş korumalı mod kullanır. Kullanıcılar, geliştirilmiş korumalı mod devre dışı bırakmak mümkün olmayacaktır. Bu ilke ayarını devre dışı bırakırsanız, geliştirilmiş korumalı mod kapalıdır. Korumalı modu etkin olan herhangi bir bölgeye, Windows Vista için Internet Explorer 7'de sunulan korumalı modu sürümünü kullanır. Bu ilke yapılandırmazsanız, kullanıcıların açın veya Internet Seçenekleri iletişim kutusunun Gelişmiş sekmesinde geliştirilmiş korumalı mod devre dışı açın.
   
-  **Varsayılan**: Etkin  
+  **Varsayılan**: Enabled  
   
 - **Internet Explorer smart screen'i uyarıları atla**  
   Bu ilke ayarı, kullanıcı Kimden SmartScreen Filtresi uyarılarını devre dışı bırakabilir olup olmadığını belirler. SmartScreen Filtresi, Internet Explorer kullanıcıların yaygın olarak Internet'ten yüklemeyin yürütülebilir dosyaları hakkında kullanıcıyı uyarır. Bu ilke ayarını etkinleştirirseniz, kullanıcıya SmartScreen Filtresi uyarılarını engelleyin. Kullanıcı devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, SmartScreen Filtresi uyarılarını devre dışı bırakabilir.
@@ -1094,7 +1094,7 @@ Daha fazla bilgi için [ilke CSP'si - LocalPoliciesSecurityOptions](https://docs
 Daha fazla bilgi için [ilke CSP'si - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) Windows belgelerinde.  
 
 - **Ağ oturumu açma üzerindeki yerel hesaplar için UAC kısıtlamalarını Uygula**  
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 - **SMB v1 istemci sürücü başlangıç yapılandırması**  
   **Varsayılan**: Devre dışı sürücü
@@ -1106,7 +1106,7 @@ Daha fazla bilgi için [ilke CSP'si - MSSecurityGuide](https://docs.microsoft.co
   **Varsayılan**: Devre dışı
   
 - **Yapılandırılmış özel durum işleme üzerine koruma**  
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 ## <a name="mss-legacy"></a>MSS eski  
 Daha fazla bilgi için [ilke CSP'si - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) Windows belgelerinde.  
@@ -1115,7 +1115,7 @@ Daha fazla bilgi için [ilke CSP'si - MSSLegacy](https://docs.microsoft.com/wind
   **Varsayılan**: En yüksek koruma  
   
 - **Itanium tabanlı sistemler için NetBIOS adı sürüm istekleri dışında WINS sunucusundan ağ yoksay**  
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 - **IPv6 yönlendirme koruma düzeyi kaynak ağ**  
   **Varsayılan**: En yüksek koruma
@@ -1129,7 +1129,7 @@ Daha fazla bilgi için [ilke CSP'si - Power](https://docs.microsoft.com/windows/
 - **Takılıyken Uyandırma parola iste**  
   Bu ilke ayarı, sistem uyku durumundan çıktığında kullanıcıyı parola girmeniz istenir, belirtir. Etkinleştirin veya bu ilke ayarı yapılandırmayın, kullanıcı sistem uyku durumundan çıktığında parola istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı sistem uyku durumundan çıktığında parola sorulmadan değil.
   
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 - **Pil sırada Uyuma, bekleme durumlarını**  
   Bu ilke ayarı, Windows bilgisayar uyku durumunda koyma, bekleme durumlarını kullanabiliyorsa yönetir. Etkinleştirin veya bu ilke ayarı yapılandırmayın varsa, Windows bilgisayar uyku durumuna için bekleme durumlarını kullanır. Bu ilke ayarını devre dışı bırakırsanız, bekleme durumlarını (S1 S3) izin verilmez.
@@ -1144,7 +1144,7 @@ Daha fazla bilgi için [ilke CSP'si - Power](https://docs.microsoft.com/windows/
 - **LAN'da Uyandırma pil sırasında parola iste**  
   Bu ilke ayarı, sistem uyku durumundan çıktığında kullanıcıyı parola girmeniz istenir, belirtir. Etkinleştirin veya bu ilke ayarı yapılandırmayın, kullanıcı sistem uyku durumundan çıktığında parola istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı sistem uyku durumundan çıktığında parola sorulmadan değil.
   
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 ## <a name="remote-desktop-services"></a>Uzak Masaüstü Hizmetleri  
 Daha fazla bilgi için [ilke CSP'si - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) Windows belgelerinde.  
@@ -1152,22 +1152,22 @@ Daha fazla bilgi için [ilke CSP'si - RemoteDesktopServices](https://docs.micros
 - **Parola kaydetme engelle**  
   Parolaları bu bilgisayarda Uzak Masaüstü Bağlantısı'ndan kaydedilebilir olup olmadığını denetler. Bu ayarı etkinleştirirseniz, parola Uzak Masaüstü Bağlantısı'nda onay kutusu kaydetme devre dışıdır ve kullanıcıların parolaları Kaydet mümkün olmayacaktır. Bir kullanıcı, Uzak Masaüstü bağlantısı kullanarak bir RDP dosyası açılır ve ayarlarına kaydederse, daha önce RDP dosyasındaki var olan herhangi bir parola silinir. Bu ayarı devre dışı veya yapılandırılmamış bırakın, kullanıcı parolaları Uzak Masaüstü bağlantısı kullanarak kaydedebilirsiniz.
   
-   **Varsayılan**: Etkin
+   **Varsayılan**: Enabled
   
 - **RPC iletişimi güvenli hale getirme**  
   Bir Uzak Masaüstü oturumu konağı sunucusu ile tüm istemcilerin güvenli RPC iletişimi gerektirir veya iletişime izin verir belirtir. İstemciler ile RPC iletişimi güvenliğini sağlayarak yalnızca kimliği doğrulanmış ve şifrelenmiş isteklere güçlendirmek için bu ayarı kullanabilirsiniz. Durum Etkin olarak ayarlanırsa, Uzak Masaüstü Hizmetleri güvenli isteklerini desteklemek RPC istemcilerden gelen istekleri kabul eder ve güvenilmeyen istemciler ile iletişime izin vermez. Durumu devre dışı olarak ayarlanmışsa, Uzak Masaüstü Hizmetleri, her zaman tüm RPC trafiği için güvenlik ister. Ancak, iletişime isteğine yanıt yok RPC istemciler için izin verilir. Yapılandırılmamış durumu olarak iletişime izin verilir. Not: RPC arabirimi, yönetme ve Uzak Masaüstü Hizmetleri yapılandırmak için kullanılır.
   
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 - **Blok sürücü yeniden yönlendirme**  
   Bu ilke ayarı, Uzak Masaüstü Hizmetleri oturumu (sürücü yeniden yönlendirme) istemci sürücü eşleme engellenip engellenmeyeceğini belirtir. Varsayılan olarak, RD Oturumu Ana bilgisayarı sunucu bağlantıyla birlikte otomatik olarak istemci sürücüleri eşler. Eşlenen sürücüler görünür biçimde dosya Gezgini veya bilgisayar oturum klasör ağacında  *\<SürücüHarfi >* üzerinde  *\<computername >*. Bu ilke ayarı, bu davranışı geçersiz kılmak için kullanabilirsiniz. Bu ilke ayarını etkinleştirirseniz, istemci sürücüsü yeniden yönlendirmesi, Uzak Masaüstü Hizmetleri oturumlarına izin verilmiyor ve Windows Server 2003, Windows 8 ve Windows XP çalıştıran bilgisayarlarda Pano dosya kopyalama yeniden yönlendirmesine izin verilmiyor. Bu ilke ayarını devre dışı bırakırsanız istemci sürücüsü yeniden yönlendirmesi her zaman izin verilir. Ayrıca, Pano yeniden yönlendirmesine izin verilip verilmediğini Pano dosya kopyalama yönlendirmesini her zaman izin verilir. Bu ilke ayarı yapılandırmazsanız istemci sürücüsü yeniden yönlendirmesi ve Pano dosya kopyalama yeniden yönlendirme Grup İlkesi düzeyinde belirtilmeyen.
   
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 - **Bağlantı kurulduğunda parola istemi**  
   Bu ilke ayarı, Uzak Masaüstü Hizmetleri istemci bağlantı kurulduğunda parola her zaman uyarıp uyarmayacağını belirtir. Uzak Masaüstü Bağlantısı istemci Parolada zaten sağlanan bile Uzak Masaüstü Hizmetleri oturum açan kullanıcılar için bir parola istemi zorlamak için bu ayarı kullanabilirsiniz. Varsayılan olarak, Uzak Masaüstü Hizmetleri Uzak Masaüstü Bağlantısı istemcisinde bir parola girerek otomatik olarak oturum açmasını sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar otomatik olarak Uzak Masaüstü Hizmetleri için Uzak Masaüstü Bağlantısı istemcisinde parolalarını sağlayarak oturum açamaz. oturum açmak parola istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların her zaman için Uzak Masaüstü Hizmetleri otomatik olarak Uzak Masaüstü Bağlantısı istemcisinde parolalarını sağlayarak oturum açabilir. Bu ilke ayarı yapılandırmazsanız, otomatik oturum açma Grup İlkesi düzeyinde belirtilmemiş. 
   
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 - **Uzak Masaüstü Hizmetleri istemci bağlantı şifreleme düzeyi**  
   Uzak Masaüstü Protokolü (RDP) bağlantıları sırasında RD Oturumu Ana bilgisayarı sunucuları ile istemci bilgisayar arasındaki iletişimin güvenliğini sağlamak için özel bir şifreleme düzeyi kullanımını gerekip gerekmediğini belirtir. Bu ilke, yalnızca yerel RDP şifreleme kullanılırken geçerlidir. Ancak, yerel RDP şifreleme (aksine, SSL şifrelemesi) önerilmez. Bu ilke, SSL şifrelemesi için geçerli değildir. Bu ilke ayarını etkinleştirirseniz, istemcilerin ve RD Oturumu Ana bilgisayarı sunucuları arasındaki tüm iletişimler sırasında uzak bağlantıları bu ayarında belirtilen şifreleme yöntemini kullanmanız gerekir. Varsayılan olarak, şifreleme düzeyini Yüksek olarak ayarlanır. Aşağıdaki şifreleme yöntemleri kullanılabilir:  
@@ -1185,7 +1185,7 @@ Daha fazla bilgi için [ilke CSP'si - RemoteManagement](https://docs.microsoft.c
 - **Blok depolama kimlik bilgileri olarak çalıştırma**  
   İstemci temel kimlik doğrulaması
   
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 - **Temel kimlik doğrulaması**  
   Bu ilke ayarı, Windows Uzaktan Yönetim (WinRM) hizmeti uzak bir istemciden Temel kimlik doğrulaması kabul edip etmeyeceğini yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM hizmeti uzak bir istemciden Temel kimlik doğrulaması kabul eder. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, WinRM hizmeti uzak bir istemciden Temel kimlik doğrulaması kabul etmez.
@@ -1195,7 +1195,7 @@ Daha fazla bilgi için [ilke CSP'si - RemoteManagement](https://docs.microsoft.c
 - **Blok istemci Özet kimlik doğrulaması**  
   Bu ilke ayarı Windows Uzaktan Yönetim (WinRM) istemcisi Özet kimlik doğrulaması kullanır yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci Özet kimlik doğrulaması kullanmaz. WinRM istemcisini devre dışı bırakın veya bu ilke ayarı yapılandırmayın, Özet kimlik doğrulaması kullanır.
   
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 - **Şifrelenmemiş trafiği**  
   Bu ilke ayarı, Windows Uzaktan Yönetim (WinRM) hizmeti ağ üzerinden şifrelenmemiş iletileri alan ve gönderen yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci gönderir ve ağ üzerinden şifrelenmemiş iletileri alır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, WinRM istemci gönderir veya ağ üzerinden yalnızca şifrelenmiş iletileri alır.  
@@ -1290,7 +1290,7 @@ Daha fazla bilgi için [ilke CSP'si - WindowsConnectionManager](https://docs.mic
 
   Bu ilke ayarı yapılandırılmadı veya devre dışı bırakıldı, bilgisayarları aynı anda hem etki alanı ve etki alanı olmayan ağlara bağlanmasına izin verilir.  
 
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
   
 ## <a name="windows-defender"></a>Windows Defender  
 Daha fazla bilgi için [ilke CSP'si - Defender'ın](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) Windows belgelerinde.  
@@ -1414,7 +1414,7 @@ Daha fazla bilgi için [ilke CSP'si - WindowsInkWorkspace](https://docs.microsof
   - *Etkin* - mürekkep çalışma alanı özelliğin açık, ancak kullanıcının bunu kilit ekranının üstünde erişemez.
   - *Yapılandırılmamış* - mürekkep çalışma alanı özelliği açıktır ve kullanıcının bunu kilit ekranının üstünde kullanabilirsiniz.  
 
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
  
 ## <a name="windows-powershell"></a>Windows PowerShell  
 Daha fazla bilgi için [ilke CSP'si - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) Windows belgelerinde.  
@@ -1422,5 +1422,5 @@ Daha fazla bilgi için [ilke CSP'si - WindowsPowerShell](https://docs.microsoft.
 - **Power shell Kabuk betiği block günlüğe kaydetme**  
   Bu ilke ayarı, Microsoft-Windows-PowerShell/Operational Olay günlüğüne tüm PowerShell Betiği giriş günlüğü etkinleştirir. Bu ilke ayarını etkinleştirirseniz, Windows PowerShell komutları, komut dosyası blokları, İşlevler ve betikleri - işlenmesini etkileşimli olarak veya Otomasyon aracılığıyla çağrılan olmadığını günlüğe kaydeder. Bu ilke ayarını devre dışı bırakırsanız, PowerShell Betiği giriş günlüğünü devre dışı bırakıldı. Betik bloğu çağırma günlüğü etkinleştirirseniz, PowerShell, ayrıca komutu, betik bloğu, işlev veya betiği başlatıldığında veya durdurulduğunda olayları kaydeder. Çağrı günlüğü etkinleştirme, yüksek hacimli olay günlükleri oluşturur. Not: Bu ilke ayarı, Bilgisayar Yapılandırması hem Kullanıcı Yapılandırması Grup İlkesi Düzenleyicisi'nde altında bulunmaktadır. Bilgisayar Yapılandırma İlkesi ayarı üzerinden Kullanıcı Yapılandırması ilke ayarı öncelik kazanır.
   
-  **Varsayılan**: Etkin
+  **Varsayılan**: Enabled
  
