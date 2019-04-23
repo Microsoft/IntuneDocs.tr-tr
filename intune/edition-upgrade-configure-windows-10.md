@@ -1,11 +1,11 @@
 ---
 title: Yükseltme veya Windows 10 cihazlarda - Microsoft Intune - S modunu kullanmak Azure | Microsoft Docs
-description: Windows 10 cihazlarını farklı bir sürüme yükseltmek için Microsoft Intune kullanın veya S modunu etkinleştirin. Yöneticiler, Windows 10 Professional, Windows 10 Enterprise için yükseltme ve etkinleştirme veya S modundan geçiş için bir cihaz yapılandırma profili kullanabilirsiniz. Windows 10 Pro N sürümü, eğitim, bulut, Enterprise, Core, Holographic ve Mobile için desteklenen yükseltme yolları bakın.
+description: S modunu değiştirmek veya Windows 10 cihazlarını farklı bir sürüme yükseltmek için Intune kullanın. Yöneticiler, Windows 10 Professional, Windows 10 Enterprise için yükseltme ve S modundan geçiş için bir cihaz yapılandırma profili kullanabilirsiniz. Windows 10 Pro N sürümü, eğitim, bulut, Enterprise, Core, Holographic ve Mobile için desteklenen yükseltme yolları bakın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b206cfca048416b1e859e9230f037e1158d46ec
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
-ms.translationtype: MT
+ms.openlocfilehash: 2f4195a2c622b68feb21a15faf23d4cca3f95b48
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164133"
 ---
-# <a name="upgrade-windows-10-editions-or-enable-s-mode-on-devices-using-microsoft-intune"></a>Windows 10 sürümlerine yükseltmek veya Intune kullanarak cihazlarda S modunu etkinleştir
+# <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Windows 10 sürümlerine yükseltmek veya Intune kullanarak cihazlarda S modundan geçin
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, Windows 10 cihazlarını yükseltmek isteyebilirsiniz. Örneğin, Windows 10 Enterprise için Windows 10 Professional cihazları yükseltmek istediğiniz. Veya, S mobil cihazları yalnızca Microsoft Store uygulamaları çalıştırma için etkinleştirmek istediğiniz.
+Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, Windows 10 cihazlarını yükseltmek isteyebilirsiniz. Örneğin, Windows 10 Enterprise için Windows 10 Professional cihazları yükseltmek istediğiniz. Ya da aygıt S modundan geçiş yapmak için kullanmak istediğiniz.
 
-[Windows 10 S modu](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) güvenlik ve performans için tasarlanmıştır. Yalnızca Microsoft Store uygulamalarını çalıştırıyorlarsa cihazlarınızı güvenli tutmaya yardımcı olması için S modunu kullanabilirsiniz. Cihazlarınızı Microsoft Store içinde kullanılamayan uygulamaları kullanıyorsanız, S modundan geçiş yapın. S modundan çıkma geri alınamaz. Bir kez çıktıktan sonra Windows 10 S moduna geri dönemezsiniz.
+[Windows 10 S modu](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) (başka bir Microsoft web sitesi açılır) güvenlik ve performans için tasarlanmıştır. Intune, S modundan geçiş yapmak için kullanabilirsiniz. S modundan çıkma geri alınamaz. Bir kez çıktıktan sonra Windows 10 S moduna geri dönemezsiniz.
+
+Bazı bakın [sık sorulan sorular](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq) S modu hakkında.
 
 Bu özellik şu platformlarda geçerlidir:
 
@@ -38,7 +40,7 @@ Bu özellik şu platformlarda geçerlidir:
 - Windows 10 1809 veya üzeri S modu
 - Windows 10 Holographic for Business
 
-Bu özellikler, Intune'da bulunan ve yönetici tarafından yapılandırılabilir. Intune kullanır "yapılandırma profillerini" oluşturabilir ve kuruluşunuzun ihtiyaçları için bu ayarları özelleştirebilirsiniz. Bu özellikler bir profilde ekledikten sonra daha sonra anında iletme veya kuruluşunuzda Windows 10 cihazlarına profil dağıtmak. Profili dağıttığınızda, otomatik olarak Intune cihazları yükseltir veya S modunu etkinleştirir.
+Bu özellikler, Intune'da bulunan ve yönetici tarafından yapılandırılabilir. Intune kullanır "yapılandırma profillerini" oluşturabilir ve kuruluşunuzun ihtiyaçları için bu ayarları özelleştirebilirsiniz. Bu özellikler bir profilde ekledikten sonra daha sonra anında iletme veya kuruluşunuzda Windows 10 cihazlarına profil dağıtmak. Profili dağıttığınızda, Intune cihazları veya anahtarlarının S modundan otomatik olarak yükseltir.
 
 Bu makalede, desteklenen yükseltme yolları listelenir ve cihaz yapılandırma profili oluşturma işlemi gösterilmektedir. Tüm kullanılabilir yükseltme ve S modu ayarları için Ayrıca bkz [Windows 10](edition-upgrade-windows-settings.md).
 

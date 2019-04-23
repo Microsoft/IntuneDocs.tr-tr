@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1c9028d3b8e69c8f20e264f99bd4bf8fda6c9050
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: MT
+ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164065"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker'ı ve cihaz şifreleme izleyin  
 Intune, Windows 10 cihazlarınızın şifreleme durumunu belirlemek için merkezi bir konum sağlayan ve BitLocker için önemli bilgiler, Azure Active Directory (Azure AD) bulunan cihazlardan erişim yardımcı olur.  
@@ -42,7 +42,16 @@ Rapora ulaşmak için oturum açın [Intune](https://aka.ms/intuneportal) gidin 
 Rapor görüntüler **cihaz adı** her hakkında üst düzey ayrıntılar ve Windows 10 cihazları için:  
 - **İşletim sistemi sürümü** – sürümü, Windows.  
 - **TPM sürümü** – cihazın Güvenilir Platform Modülü (TPM) yongası sürümü.  
-- **Şifreleme hazırlık** BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Bir cihaz bir şifreleme durumunu olabilir *şifreli* kendi şifreleme hazırlık olsa bile *hazır değil*, TPM eksik olduğundan.  
+- **Şifreleme hazırlık** BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Cihazlar olarak tanımlanabilir:
+  - **Hazır**: Cihaz, cihaz bir TPM'ye sahip ve aşağıdaki Windows 10 sürümü ve SKU gereksinimlerinizi karşılayan gerektiren MDM İlkesi kullanılarak şifrelenebilir:
+    - Sürüm 1703 veya daha sonra iş, Kurumsal, eğitim
+    - 1809 veya sonraki bir sürümü, Pro  
+  
+    Daha fazla bilgi için [BitLocker'ı yapılandırma hizmet sağlayıcısı (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) Windows belgelerinde.  
+
+  - **Hazır değil**: Cihaz tam şifreleme yeteneği yoktur, ancak yine de şifrelemeyi destekleyen. Örneğin, cihazı el ile bir kullanıcı tarafından veya bir TMP şifrelemeye izin vermek için ayarlayabileceğiniz bir Grup İlkesi aracılığıyla şifrelenebilir.
+  - **Uygulanamaz**: Bu cihaz sınıflandırmak için yeterli bilgi yok.  
+
 - **Şifreleme durumu** – işletim sistemi sürücüsünü şifrelenmiş olsun.  
 
 
@@ -51,11 +60,11 @@ Bir cihaz seçtiğinizde, Intune görüntüler **cihaz şifreleme durumu** bölm
 
 Bu bölme aşağıdaki ayrıntıları sağlar:  
 - **Cihaz adı** – görüntülemekte olduğunuz cihazın adı.  
-- **Şifreleme hazırlık** - BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Bir cihaz bir şifreleme durumunu olabilir *şifreli* kendi şifreleme hazırlık olsa bile *hazır değil*, TPM eksik olduğundan.  
+- **Şifreleme hazırlık** - BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Bir cihaz bir şifreleme durumunu olabilir *şifreli* kendi şifreleme hazırlık olsa bile *hazır değil*, TPM eksik olduğundan. (He bölümünde daha fazla ayrıntı için önceki şifreleme hazır olduğunuzu bakın.)
 - **Şifreleme durumu** - işletim sistemi sürücüsünü şifrelenmiş olsun.  
 - **Profilleri** – listesini *cihaz Yapılandırması* profilleri bu cihaza uygulanır ve aşağıdaki profil türü ve ayarları içerir:  
-    - Profil türü = *uç nokta koruması*  
-    - Ayarlar > Windows şifreleme > cihazlar şifreleme = *gerekli*  
+  - Profil türü = *uç nokta koruması*  
+  - Ayarlar > Windows şifreleme > cihazlar şifreleme = *gerekli*  
 
   Bu liste bağımsız ilkeleri gözden geçirme için profil durumu özeti sorunlar olduğunu gösteren bulma kullanımda olabilir.  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
-ms.translationtype: MT
+ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164167"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -65,26 +65,18 @@ Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farkl
 
   **Yapılandırılmamış** kullanıcıların cihazdaki ağ kaçış tarama özelliği kapatmasını engeller.
 
-- **Bilinmeyen kaynaklardan yüklemeye izin ver**: Seçin **izin** kullanıcılar açabilir **bilinmeyen kaynaklar**. Bu ayar, bilinmeyen kaynaklardan yüklemeye uygulamalar sağlar. **Yapılandırılmamış** kullanıcıların açılmasını engeller **bilinmeyen kaynaklar**.
 - **Sistem Güncelleştirmesi**: Cihaz havadan güncelleştirmeler nasıl işlediğini tanımlamak için bir seçenek belirleyin:
   - **Cihaz varsayılanı**: Cihazın varsayılan ayarı kullanın.
   - **Otomatik**: Güncelleştirmeler, kullanıcı etkileşimi olmadan otomatik olarak yüklenir. Bu ilkeyi seçmek, bekleyen tüm güncelleştirmeleri hemen yükler.
   - **Ertelenen**: Güncelleştirmeleri 30 gün boyunca Ertelenen. 30 günün sonunda, Android güncelleştirmeyi yüklemek için kullanıcıya sorar. Cihaz üreticilerin veya taşıyıcıların önemli güvenli güncelleştirmelerinin ertelenmesini engellemek (muaf tutmak) mümkündür. Muaf tutulan bir güncelleştirme cihazda kullanıcıya bir sistem bildirimi gösterir. 
   - **Bakım penceresi**: Intune ile ayarlanan günlük bakım penceresi sırasında güncelleştirmeleri otomatik olarak yükler. Yükleme 30 gün boyunca her gün çalışır ve yeterli alan veya pil düzeyleri varsa başarısız olabilir. 30 gün sonra kullanıcıyı uygulamayı yüklemek için Android ister. Bu pencere ayrıca Oynatma uygulamalarının güncelleştirmelerini yüklemek için de kullanılır. Tek uygulama adanmış cihaz ön plan uygulamaları güncelleştirilebilir gibi gibi bilgi noktaları, adanmış cihazlar için bu seçeneği kullanın.
-- **Otomatik uygulama güncelleştirmeleri**: Otomatik Güncelleştirmeler yüklü olduğunda seçin. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı**
-  - **Kullanıcı Seçimi**
-  - **hiçbir zaman**
-  - **Wi-Fi yalnızca**
-  - **Her zaman**
 
 - **Bildirim windows**: Ayarlandığında **devre dışı**, pencere bildirimleri toasts, gelen çağrıları, giden çağrıları, sistem uyarıları ve sistem hataları dahil olmak üzere, cihazda gösterilmez. Ayarlandığında **yapılandırılmadı**, işletim sistemi varsayılan, olabilecek bildirimleri göstermek için kullanılır.
 - **Atla ipuçları lk**: Seçin **etkinleştirme** gizleme veya uygulamalardan eğitimlerle adım veya uygulama başlatıldığında tanıtım açıklanmıyorsa okumak için öneriler atlayın. Ayarlandığında **yapılandırılmadı**, işletim sistemi varsayılan, olabilecek uygulama başlatıldığında bu önerileri göstermek için kullanılır.
 
-
 ### <a name="system-security-settings"></a>Sistem güvenliği ayarları
 
-- **Uygulamalarda tehdit taraması**: **Gerektiren** , zorlar **uygulamaları doğrula** iş ve kişisel profiller için seçeneği etkinleştirilmiştir.
+- **Uygulamalarda tehdit taraması**: **Gerekli** (varsayılan), Google Play uygulamaları önce ve bunlar yüklendikten sonra taramak koruması sağlar. Tehdit tespit ederse, kullanıcı uygulamayı CİHAZDAN kaldırmak için uyar. **Yapılandırılmamış** değil etkinleştirin veya Google Play uygulamaları için Koruması'nı çalıştırın.
 
 ### <a name="dedicated-device-settings"></a>Özel cihaz ayarları
 
@@ -122,25 +114,58 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
     1. "Çıkış noktası" düğmesini gösterilen kadar geri düğmesini seçmek devam eder. 
     2. Düğmesini seçer ve girer **bırakın bilgi noktası modu kodu** PIN.
     3. Değişiklikleriniz bittiğinde seçin **giriş ekranı yönetilen** uygulama. Bu adım, cihazı çoklu uygulama bilgi noktası moduna relocks. 
-    
+
     **Devre dışı** bilgi noktası modu duraklatma özelliği vermez. Yönetici geri düğmesini seçmek devam eder ve devre dışı "Çıkış noktası" düğmesini seçerse bir ileti bir geçiş kodu gerekli olduğunu belirtir.
-    
+
     - **Bilgi noktası modu kod**: 4-6 basamaklı girin sayısal PIN. Yönetici bu PIN'i geçici olarak bilgi noktası modu duraklatmak için kullanır.
- 
+
   - **Özel URL arka plan ayarlamak**: Adanmış cihazda arka plan ekranı özelleştirmek için bir URL girin.
+    
+    > [!NOTE]
+    > Çoğu durumda, görüntülerin ile en az aşağıdaki boyutları başlamanızı öneririz:
+    >
+    > - Telefonu: 1080 x 1920 piksel
+    > - Tablet: 1920 x 1080 piksel
+    >    
+    > En iyi deneyimi ve NET Ayrıntılar için cihaz görüntüsü Görüntü belirtimlerine varlıklar oluşturulması önerilir.
+    >
+    > Daha yüksek piksel densities sahip ve eşdeğer 2 K/4 K tanımı görüntüleri modern görüntüler.
+  - **Wi-Fi yapılandırma**: Seçin **etkinleştirme** son kullanıcıların cihaz farklı WiFi ağına bağlanmasına izin vermek için. Bu özellik etkinleştirildiğinde cihazın konum kapatır. **Yapılandırılmamış** (varsayılan) kullanıcılar yönetilen giriş ekranında sırada (kilit görev modu) olarak WiFi ağlarına bağlanmasını engeller.
+
+    Daha açık [kilit görev modu](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (Android web sitesini açar).
+
+  - **Bluetooth yapılandırma**: Seçin **etkinleştirme** cihazda Bluetooth izin verin ve Bluetooth üzerinden çifti cihazları son kullanıcılara izin verin. Bu özellik etkinleştirildiğinde cihazın konum kapatır. **Yapılandırılmamış** (varsayılan), kullanıcıların Bluetooth yapılandırma ve yönetilen giriş ekranındayken (kilit görev modu) cihazları çiftini engeller. 
+
+    Daha açık [kilit görev modu](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (Android web sitesini açar).
 
 ### <a name="device-password-settings"></a>Cihaz parola ayarları
 
-- **Tuş korumasını**: Seçin **devre dışı** kullanır, cihazda tuş korumasını kilit ekranı özelliğini kullanmasını önlemek için. **Yapılandırılmamış** tuş korumasını özelliklerine izin verir.
-- **Tuş korumasını özellikleri devre dışı**: Tuş korumasını cihazda etkinleştirildiğinde, devre dışı bırakmak için hangi Özellikler'i seçin. Örneğin, **güvenli kamera** denetlenir cihazda kamera özelliği devre dışı. Cihazda işaretli herhangi bir özelliği etkinleştirilir.
+- **Kilit ekranında devre dışı**: Seçin **devre dışı** kullanıcıların cihazda tuş korumasını kilit ekranı özelliğini kullanmasını önlemek için. **Yapılandırılmamış** tuş korumasını özelliklerine izin verir.
+- **Kilit ekranı özellikleri devre dışı**: Tuş korumasını cihazda etkinleştirildiğinde, devre dışı bırakmak için hangi Özellikler'i seçin. Örneğin, **güvenli kamera** denetlenir cihazda kamera özelliği devre dışı. Cihazda işaretli herhangi bir özelliği etkinleştirilir.
+
+  Cihaz kilitliyken, bu özellikler kullanıcılar için kullanılabilir. Kullanıcılar bakın veya denetlenir özelliklerine erişimi olmaz.
+
 - **Gerekli parola türü**: Cihaz için gerekli parola türünü tanımlayın. Seçenekleriniz şunlardır:
-  - **En az sayısal**
-  - **Sayısal karmaşık**: Yinelenen veya "1111" veya "1234" gibi ardışık sayılar izin verilmez.
-  - **En az alfabetik**
-  - **En az alfasayısal**
-  - **En az simgeler ile alfasayısal**
-- **Minimum parola uzunluğu**: (4 ile 16 karakter arasında) bir kullanıcının girmesi parola alt sınırını girin.
-- **Cihaz silinmeden önceki oturum açma hatası sayısı**: (1-11 arasında) cihaz temizlenmeden önce izin başarısız oturum açma işlemlerinin sayısını girin.
+  - **Cihaz varsayılanı**
+  - **Gerekli parola kısıtlaması yok**
+  - **Zayıf biyometrik**: [Güçlü ve zayıf Biyometri](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (Android web sitesi açılır)
+  - **Sayısal**: Parola yalnızca sayı olmalıdır, örneğin `123456789`. Girin **en düşük parola uzunluğu** 4 ile 16 karakter arasında bir kullanıcının girmesi gerekir.
+  - **Sayısal karmaşık**: Yinelenen veya "1111" veya "1234" gibi ardışık sayılar izin verilmez. Girin **en düşük parola uzunluğu** 4 ile 16 karakter arasında bir kullanıcının girmesi gerekir.
+  - **Alfabetik**: Alfabedeki karakterlerden gereklidir. Sayılar ve semboller gerekli değildir. Girin **en düşük parola uzunluğu** 4 ile 16 karakter arasında bir kullanıcının girmesi gerekir.
+  - **Alfasayısal**: Büyük harfler, küçük harf ve sayısal karakterler içerir. Girin **en düşük parola uzunluğu** 4 ile 16 karakter arasında bir kullanıcının girmesi gerekir.
+  - **Simgeler ile alfasayısal**: Büyük harfler, küçük harfler, sayısal karakter, noktalama işaretleri ve semboller içerir. Şunları da girin:
+
+    - **Minimum parola uzunluğu**: Parola, 4 ile 16 karakter arasında olmalıdır alt sınırını girin.
+    - **Gereken karakter sayısı**: Bulunması gereken karakter, 0 ile 16 karakter arasında bir sayı girin.
+    - **Gerekli bir küçük harf karakter sayısı**: Bulunması gereken küçük harf karakter, 0 ile 16 karakter arasında bir sayı girin.
+    - **Gereken büyük harf karakter sayısı**: Bulunması gereken büyük harf karakter, 0 ile 16 karakter arasında bir sayı girin.
+    - **Gerekli olmayan harfli karakter sayısı**: Bir sayı girin olmayan-harf (alfabedeki karakterlerden dışında bir şey) parolası, 0 ile 16 karakter arasında olmalıdır.
+    - **Gereken karakter sayısı**: Sayısal karakter sayısını girin (`1`, `2`, `3`, vb.) parolası, 0 ile 16 karakter arasında olmalıdır.
+    - **Gereken simge karakterlerinin sayısını**: Sembol karakterlerinin sayısını girin (`&`, `#`, `%`, vb.) parolası, 0 ile 16 karakter arasında olmalıdır.
+
+- **Parolanın süresi dolana kadar gün sayısı**: 1-365, cihaz parolası değiştirilene kadar geçecek gün sayısını girin. Örneğin, 60 gün sonra parolayı değiştirmek için girin `60`. Parola geçerlilik süresi dolduğunda, kullanıcıların yeni bir parola oluşturması istenir.
+- **Kullanıcı önce gerekli olan parolalardan kaç tanesinin resuse bir parola için**: 1-24 kullanılamayacak yeni parola sayısını girin. Son kullanıcının daha önce kullanılmış parolalar oluşturmasını önlemek için bu ayarı kullanın.
+- **Cihaz silinmeden önceki oturum açma hatası sayısı**: Cihaz temizlenmeden önce izin başarısız oturum açma işlemleri, 4-11 arasında bir sayı girin.
 
 ### <a name="power-settings"></a>Güç ayarları
 
@@ -152,6 +177,17 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
 - **Yeni kullanıcı ekleme**: Seçin **blok** kullanıcılar yeni kullanıcı eklemesini engellemek için. Her kullanıcının cihazda özel giriş ekranları, hesaplar, uygulamalar ve ayarlar için kişisel bir alanı vardır. **Yapılandırılmamış** kullanıcıların diğer kullanıcıların cihaza eklemesini sağlar.
 - **Kullanıcı kaldırma**: Seçin **blok** kullanıcıları kullanıcılar kaldırmasını önlemek için. **Yapılandırılmamış** CİHAZDAN diğer kullanıcıları kaldırma olanağı sağlar.
 - **Hesap değişiklikleri**: Seçin **blok** kullanıcı hesapları değiştirmesini önlemek için. **Yapılandırılmamış** kullanıcıların cihazda kullanıcı hesaplarını güncelleştirmek sağlar.
+
+### <a name="applications"></a>Uygulamalar
+
+- **Bilinmeyen kaynaklardan yüklemeye izin ver**: Seçin **izin** kullanıcılar açabilir **bilinmeyen kaynaklar**. Bu ayar, uygulamalar Google Play Store dışındaki kaynaklardan da dahil olmak üzere bilinmeyen kaynaklardan yükleme sağlar. **Yapılandırılmamış** kullanıcıların açılmasını engeller **bilinmeyen kaynaklar**.
+- **Tüm uygulamalar Google Play mağazasına erişmesine izin vermek**: Ayarlandığında **izin**, kullanıcıların Google Play Mağazası'nda tüm uygulamalara erişimi alın. Yönetici engeller, uygulamalara erişim elde etmezsiniz [istemci uygulamaları](apps-add-android-for-work.md). **Yapılandırılmamış** yalnızca yönetici yapar kullanılabilir Google Play mağazası uygulamaları veya gerekli uygulamaları erişmek için kullanıcıların zorlar [istemci uygulamaları](apps-add-android-for-work.md).
+- **Otomatik uygulama güncelleştirmeleri**: Otomatik Güncelleştirmeler yüklü olduğunda seçin. Seçenekleriniz şunlardır:
+  - **Yapılandırılmadı**
+  - **Kullanıcı Seçimi**
+  - **hiçbir zaman**
+  - **Wi-Fi yalnızca**
+  - **Her zaman**
 
 ### <a name="connectivity"></a>Bağlantı
 

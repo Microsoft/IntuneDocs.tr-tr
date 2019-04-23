@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 4/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b95c79013b56d792af80831050a6bca74083952
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MT
+ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164082"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>E-postayı otomatikleştirme ve eylemleri uyumsuz cihazlar için Intune'da ekleme
 
@@ -28,7 +28,7 @@ Uyumluluk ilkeleri veya kuralları sağlamayan cihazlarda, eklediğiniz **uyumsu
 
 ## <a name="overview"></a>Genel Bakış
 
-Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Ardından Azure Active Directory (AD) [koşullu erişimi](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) cihazı engeller. Bir cihaz uyumlu değilse **uyumsuzluğa yönelik Eylemler** ayrıca esnekliği karar verir. Örneğin, cihazı hemen engellemeyebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
+Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Ardından Azure Active Directory (AD) [koşullu erişimi](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) cihazı engeller. Bir cihaz uyumlu değilse **uyumsuzluğa yönelik eylem** ayrıca esnekliği karar verir. Örneğin, cihazı hemen engellemeyebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
 Çeşitli türlerde eylemler vardır:
 
@@ -103,10 +103,13 @@ Ayrıca, uyumluluk ilkesi oluştururken veya mevcut ilkeyi güncelleştirirken b
          - Grupları seçerek **Ek alıcılar** girin
     
     - **Uyumsuz bir cihazı uzaktan kilitleme**: Cihaz uyumsuz olduğunda, cihazı kilitler. Bu eylem, kullanıcının bir PIN veya geçiş kodunu cihazın kilidini açmak için girmesini zorlar. 
-    
-    - **Zamanlama**: Kullanıcıların cihazlarında eylemi tetiklemesine uyumsuzluktan sonra (0 ila 365) gün sayısını girin. Bu yetkisiz kullanım süresinden sonra bir koşullu erişim ilkesini zorlayabilirsiniz. Girerseniz **0** gün sonra koşullu erişim (sıfır) sayısı etkinleşir **hemen**. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
 
-5. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Ekle** > **Tamam**'ı seçin.
+    - **Uyumsuz cihaz devre dışı bırakma**: Cihaz uyumsuz olduğunda, tüm şirket verileri cihaz dışında kaldırın ve cihazı Intune yönetiminden kaldırır. Bir cihazın yanlışlıkla silme önlemek için bu eylem, en az bir zamanlama destekler **30** gün.  
+
+    
+5. Yapılandırma bir **zamanlama**: Kullanıcıların cihazlarında eylemi tetiklemesine uyumsuzluktan sonra (0 ila 365) gün sayısını girin. Bu yetkisiz kullanım süresinden sonra bir koşullu erişim ilkesini zorlayabilirsiniz. Girerseniz **0** gün sonra koşullu erişim (sıfır) sayısı etkinleşir **hemen**. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
+
+6. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Ekle** > **Tamam**'ı seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
