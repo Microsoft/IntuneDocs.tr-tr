@@ -8,10 +8,12 @@
 
 ## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)
 
-## [Android cihazınızı kullanma](using-your-android-device-with-intune.md)
-### [Bir Android cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [Cihazınızı kaydetme](enroll-your-device-in-Intune-android.md)
-#### [Android for Work ile cihazınızı kaydetme](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## Android cihazınızı kullanma
+### [Android cihazınızı neden kaydetmelisiniz?](why-enroll-android-device.md)
+### Cihazınızı kaydedin
+#### [Android cihazınızı kaydetme](enroll-device-android-company-portal.md)  
+#### [Android iş profili ile kaydolma](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Microsoft Intune uygulaması ile kaydolma](enroll-device-android-microsoft-intune-app.md)
 ### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-android.md)
 ### [Cihazınızı şifreleme](encrypt-your-device-android.md)
 ### [PIN veya parolanızı ayarlama](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [Cihazınızın kaydını silme](unenroll-your-device-from-intune-android.md)
 #### [Kullanım Koşulları’nı reddettiyseniz cihazınızın kaydını silme](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Android cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-android.md)
+### Android ile ilgili yaygın sorunları çözme
 #### [Cihaz uyumluluğunu denetleme](check-compliance-on-your-device-android.md)
 #### [Samsung Knox ile sık karşılaşılan sorunları çözme](samsung-knox-errors-android.md)
 #### [Outlook yüklemek için cihazınızı güncelleştirin](update-device-outlook-android.md)
 
-#### Sorunları gidermeye yardım etmek için günlükleri kullanma
+#### Günlüğe kaydetme
 ##### [Ayrıntılı günlük kaydını açma](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [E-posta kullanarak günlükleri gönderme](send-logs-to-your-it-admin-by-email-android.md)
+##### [Günlükleri karşıya yükleme ve e-posta ile gönderme](send-logs-to-your-it-admin-by-email-android.md)
 ##### [USB kablosu kullanarak günlükleri gönderme](send-logs-to-your-it-admin-using-cable-android.md)
-##### [Kayıt hatalarını gönderme](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [Hataları Microsoft'a gönderme](send-logs-to-microsoft-android.md)
 
 ### İşletim sistemi soruları
