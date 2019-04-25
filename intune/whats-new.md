@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3064a73cd9c56275363cce8c99190c4f5c98192
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
+ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
 ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515390"
+ms.locfileid: "62426239"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -75,7 +75,7 @@ Aşağıdaki örnekte, GDPR denetimleri için dökümünü görürsünüz. Micro
 Android cihazlarda Intune uygulama koruma ilkelerini (APP) artık FIPS 140-2 ile uyumlu olan bir OpenSSL şifreleme kitaplığını kullanır. Daha fazla bilgi için [şifreleme](app-protection-policy-settings-android.md#encryption) bölümünü [Android uygulama koruma İlkesi ayarları Microsoft Intune](app-protection-policy-settings-android.md).
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>Win32 Uygulama bağımlılıklarını etkinleştirin <!-- 2617348  -->
-Yönetici olarak, diğer uygulamalarda Win32 uygulamanızı yüklemeden önce bağımlılıkları olarak yüklendiğini gerektirebilir. Özellikle, Win32 Uygulama yüklenmeden önce cihaz bağımlı uygulamalarını yüklemeniz gerekir. Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle** görüntülenecek **uygulama Ekle** dikey penceresi. Seçin **Windows uygulaması (Win32)** olarak **uygulama türü**. Uygulamayı ekledikten sonra seçebileceğiniz **bağımlılıkları** Win32 Uygulama yüklenmeden önce yüklenmesi gereken bağımlı uygulamaları eklemek için. Daha fazla bilgi için [tek başına Intune - Win32 Uygulama Yönetimi](apps-win32-app-management.md).
+Yönetici olarak, diğer uygulamalarda Win32 uygulamanızı yüklemeden önce bağımlılıkları olarak yüklendiğini gerektirebilir. Özellikle, Win32 Uygulama yüklenmeden önce cihaz bağımlı uygulamalarını yüklemeniz gerekir. Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle** görüntülenecek **uygulama Ekle** dikey penceresi. Seçin **Windows uygulaması (Win32)** olarak **uygulama türü**. Uygulamayı ekledikten sonra seçebileceğiniz **bağımlılıkları** Win32 Uygulama yüklenmeden önce yüklenmesi gereken bağımlı uygulamaları eklemek için. Daha fazla bilgi için [tek başına Intune - Win32 Uygulama Yönetimi](apps-win32-app-management.md). Bu işlev, yalnızca Intune yönetim aracısı için 1904 biz hizmeti yükselttikten sonra bir veya iki ek hafta sürebilir 1904 sürüme (1.18.120.0 büyük) yükseltildikten sonra kullanılabilir.
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>İş kolu uygulamaları için Microsoft Store için uygulama sürüm yükleme bilgileri <!-- 3537391   -->
 Uygulama yükleme raporları, iş kolu uygulamaları için Microsoft Store uygulaması sürüm bilgilerini içerir. Intune'da seçin **istemci uygulamaları** > **uygulamaları**. Seçin bir **için iş kolu uygulamasını Microsoft Store** seçip **cihaz yükleme durumu** altında **İzleyici** bölümü.

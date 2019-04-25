@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 04/23/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8997cb8f3e36367de06d6e5aa1c7c6971ee905a4
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8858848d12ca3f5839741fc15d87e1cd66e9fad0
+ms.sourcegitcommit: bc1bdd63725e62253fcb2daecc41df128bd320f7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506024"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63452828"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>ıntune'da macOS cihaz özelliği ayarları
 
@@ -51,6 +51,21 @@ Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan 
 - **İçeri aktarma** (isteğe bağlı): Ayrıca **alma** AirPrint yazıcıların bir listesini içeren bir virgülle ayrılmış dosyası (.csv). Ayrıca, Intune'da AirPrint yazıcıları ekledikten sonra yapabilecekleriniz **dışarı** bu liste.
 
 Seçin **Tamam** ayarlarınızı kaydetmek için.
+
+### <a name="get-the-ip-address-and-path"></a>Yol ve IP adresi al
+
+AirPrinter sunucuları eklemek için yazıcı, kaynak yolu ve bağlantı noktası IP adresi gerekir. Aşağıdaki adımlar bu bilgilerinin nasıl alınacağını gösterir.
+
+1. AirPrint yazıcıları aynı yerel ağa (alt ağ) bağlı bir Mac üzerinde açın **Terminal** (gelen **/Applications/Utilities**).
+2. Terminal uygulamada yazın `ippfind`, select girin.
+
+    Yazıcı bilgilerini not edin. Örneğin, benzer bir şey döndürebilir `ipp://myprinter.local.:631/ipp/port1`. İlk bölümü yazıcı adıdır. Son bölümü (`ipp/port1`) ise kaynak yoludur.
+
+3. Terminale `ping myprinter.local`, select girin.
+
+   IP adresini not edin. Örneğin, benzer bir şey döndürebilir `PING myprinter.local (10.50.25.21)`.
+
+4. IP adresine ve kaynak yolu değerleri kullanın. Bu örnekte IP adresidir `10.50.25.21`, ve kaynak yolu `/ipp/port1`.
 
 ## <a name="login-window"></a>Oturum açma penceresi
 
@@ -90,22 +105,7 @@ Cihazlara kullanıcılar oturum açtıktan sonra aşağıdaki ayarlar, ne yapabi
 
 Seçin **Tamam** ayarlarınızı kaydetmek için.
 
-## <a name="get-the-ip-address-and-path"></a>Yol ve IP adresi al
-
-AirPrinter sunucuları eklemek için yazıcı, kaynak yolu ve bağlantı noktası IP adresi gerekir. Aşağıdaki adımlar bu bilgilerinin nasıl alınacağını gösterir.
-
-1. AirPrint yazıcıları aynı yerel ağa (alt ağ) bağlı bir Mac üzerinde açın **Terminal** (gelen **/Applications/Utilities**).
-2. Terminal uygulamada yazın `ippfind`, select girin.
-
-    Yazıcı bilgilerini not edin. Örneğin, benzer bir şey döndürebilir `ipp://myprinter.local.:631/ipp/port1`. İlk bölümü yazıcı adıdır. Son bölümü (`ipp/port1`) ise kaynak yoludur.
-
-3. Terminale `ping myprinter.local`, select girin.
-
-   IP adresini not edin. Örneğin, benzer bir şey döndürebilir `PING myprinter.local (10.50.25.21)`.
-
-4. IP adresine ve kaynak yolu değerleri kullanın. Bu örnekte IP adresidir `10.50.25.21`, ve kaynak yolu `/ipp/port1`.
-
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - İçin tüm ayarları görüntülemek [iOS](ios-device-features-settings.md) cihazlar.
-- [Bu profili atarsınız](device-profile-assign.md) gruplarınıza ve [atamanın durumunu izlemenize](device-profile-monitor.md).
+- [Bu profili atarsınız](device-profile-assign.md) , gruplara ve [atamanın durumunu izlemenize](device-profile-monitor.md).
