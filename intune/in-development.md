@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 04/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 004ebad5276575fe9f5b580d13db188f297424fb
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7bba992c79f69a126f0199d9cdac52779910ff38
+ms.sourcegitcommit: 068c4e4bc6e6d778ece4a83d000128c4d2b732db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513684"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64910322"
 ---
-# <a name="in-development-for-microsoft-intune---april-2019"></a>Microsoft Intune - Nisan 2019 geliştirme
+# <a name="in-development-for-microsoft-intune---may-2019"></a>Microsoft Intune - Mayıs 2019 geliştirme
 
 İçinde hazırlık ve planlama, bu sayfa yardımcı olmak için Intune kullanıcı Arabirimi güncelleştirmeleri ve özelliklerinin listesi geliştirme aşamasındadır ancak henüz serbest. Buna ek olarak:
 
@@ -46,18 +46,63 @@ ms.locfileid: "61513684"
  
 ## <a name="intune-in-the-azure-portal"></a>Azure portalında Intune
 
+
+<!-- 1905 start-->
+
+
+### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Intune portalında bir cihaz Apple portalında silme yansıtılır <!--2489996 -->
+Bir cihaz Apple aygıt kayıt programı veya Apple iş Manager portallarını silinirse, cihaz otomatik olarak Intune'dan sonraki eşitleme sırasında silinir.
+
+### <a name="baseline-support-for-keyword-search-----3082036-----------"></a>Anahtar sözcüğü için temel desteği arayın  <!-- 3082036         -->
+Oluşturma veya bir güvenlik taban çizgisi profil düzenleme sırasında yakında kullanmak mümkün olacaktır *arama* konsolda görüntüleme ayarları filtrelemek için.   
+
+### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Sıfırla ve Graph API'sini kullanarak cihazları toplu olarak temizleme <!-- 3295288 -->
+Sıfırlama ve Graph API'sini kullanarak toplu olarak en fazla 100 cihazları temizlemek mümkün olacaktır.
+
+### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Bir Windows 10 cihaz uyumluluk İlkesi, TPM yonga denetle <!-- 3617671 -->
+Güvenilir Platform Modülü (TPM) yonga kümeleri çok sayıda Windows 10 ve üzeri cihazlar vardır. Bu güncelleştirme, cihazın TPM yongası sürümü denetleyen yeni bir uyumluluk ayarı içerir. 
+
+[Windows 10 ve üzeri uyumluluk İlkesi ayarları](compliance-policy-create-windows.md#device-security) Bu ayar açıklar.
+
+Şunun için geçerlidir: Windows 10 ve üzeri
+
+### <a name="intune-management-extension-powershell-scripts-----3734186------"></a>Intune yönetim uzantısı PowerShell betikleri  <!-- 3734186    -->
+Kullanıcının yönetici ayrıcalıkları olan bir cihazda çalışan PowerShell betikleri yapılandırmak mümkün olacaktır. Daha fazla bilgi için [kullanım PowerShell betiklerini Windows 10 cihazlarda ıntune](intune-management-extension.md).
+
+### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-supervised-devices----4097904----"></a>Son kullanıcılar kendi kişisel etkin nokta değiştirmesini önlemek ve denetimli cihazlarda iOS günlüğü Siri sunucusunu devre dışı bırak <!-- 4097904  --> 
+İOS cihazında cihaz kısıtlama profili oluşturun (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >  **iOS** Platform > **cihaz kısıtlamaları** profil türü için). Bu güncelleştirme, yeni ayarları yapılandırabileceğiniz içerir:
+
+- Kişisel etkin nokta
+- Siri sunucusu günlüğü
+
+Geçerli ayarları görmek için Git [izin vermek veya özellikleri kısıtlamak için iOS cihaz ayarlarını](device-restrictions-ios.md). 
+
+İçin geçerlidir: iOS 12.2 ve daha yeni
+
+### <a name="new-classroom-app-device-restriction-settings-for-dep-enrolled-macos-devices----4097905----"></a>Yeni classroom uygulamasını cihaz kısıtlama ayarları macOS DEP ile kaydedilen cihazlar için <!-- 4097905  --> 
+MacOS cihazları için yapılandırma profilleri cihaz oluşturabilirsiniz (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >  **macOS** Platform > **cihaz kısıtlamaları** profil türü için). Bu güncelleştirme, iCloud fotoğraf Arşivi'devre dışı bırakma seçeneği ve DEP ile kaydedilen cihazlar için yeni sınıf uygulama ayarları içerir.
+
+Geçerli ayarları görmek için Git [izin ver veya bunları kısıtlama özellikleri Intune kullanarak macOS cihaz ayarları](device-restrictions-macos.md).
+
+İçin geçerlidir: macOS 10.14.4 ve daha yeni
+
+### <a name="android-enterprise-app-management----4459905-idready---"></a>Android Kurumsal Uygulama Yönetimi <!-- 4459905 idready -->
+BT yöneticileri, yapılandırma ve kullanma Android Kuruluş Yönetimi kolaylaştırmak için Intune otomatik olarak dört ekler ortak Android Kurumsal uygulamaları için Intune Yönetici konsolunda ilgili. Dört Android kurumsal uygulamalar şunlardır:
+
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)**  - tam olarak yönetilen Android Enterprise senaryoları için kullanılır.
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)**  -oturum hesaplarınıza iki aşamalı doğrulama kullanırsanız yardımcı olur.
+- **[Intune Şirket portalı](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)**  - uygulama koruma ilkelerini (APP) ve kurumsal Android iş profili senaryoları için kullanılır.
+- [Giriş ekranı yönetilen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Android Kurumsal ayrılmış/bilgi noktası senaryoları için kullanılır.
+
+Daha önce BT yöneticilerinin el ile bulun ve bu uygulamaları onaylamanızı gerekir [yönetilen Google Play store](https://play.google.com/store/apps) kurulumunun parçası olarak. Bu değişiklik, daha kolay ve müşterilerin Android kuruluş yönetimi kullanmak daha hızlı hale getirmek için bu daha önce el ile adımlar kaldırır.
+
+Yöneticiler, yönetilen Google Play'e Intune kiracısının ilk bağlanma, zaman otomatik olarak kendi Intune uygulamaları listesine eklendi. Bu dört uygulamalar görürsünüz. Daha fazla bilgi için [yönetilen Google Play hesabınıza Intune hesabınıza bağlanın](connect-intune-android-enterprise.md). Kendi Kiracı, zaten bağlanmış veya zaten Android Kurumsal kullanan kiracılar için hiçbir şey yoktur yöneticilerinin yapmanız gerekir. Bu dört uygulamaları Mayıs 2019 hizmet dağıtım tamamlanma 7 gün içinde otomatik olarak gösterilir.
+
 <!-- 1904 start-->
 
 ### <a name="advanced-settings-for-windows-defender-firewall----1311949---"></a>Windows Defender Güvenlik Duvarı için Gelişmiş ayarları <!-- 1311949 -->
 Yakında istemciler için Windows Defender'ın özel bir güvenlik duvarı kurallarını yönetmek için Intune kullanmak mümkün olacaktır. Kural, uygulamalar, ağ adresleri ve bağlantı noktalarına gelen ve giden davranış belirtebilirsiniz. 
 
-### <a name="require-app-protection-conditional-access----1634317---"></a>Uygulama koruma koşullu erişim gerektirir  <!--1634317 -->
-Kullanılacak mümkün olacaktır *gerektiren uygulama koruma İlkesi*, hangi ilke onaylar kullanıcıların koşullu erişim ile koruduğunuz veri erişimini engellemek için oturum açma tamamlanmadan önce bir kullanıcının uygulamaya uygulanır. İlke güvencesi ilk kullanım deneyimi yavaş, ancak ağ sorunları, yönetim yanlış yapılandırmalarını veya uygulama koruma ilkeleri önleme kasıtlı çalışmalarını karşı korumak için yardımcı olur. 
-
-### <a name="configure-settings-for-kernel-extensions-on-macos-devices----2043024---"></a>MacOS cihazlarında çekirdek uzantıları için ayarları yapılandırma <!-- 2043024 -->
-MacOS cihazlarında cihaz yapılandırma profili oluşturabilirsiniz (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > seçin **macOS** platform için). Yeni bir Grup ayarlarını yapılandırmak ve çekirdek uzantıları cihazlarınızda kullanmanıza sağlayacaktır.
-
-İçin geçerlidir: macOS 10.13.2 ve üzeri
 
 ### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Cihaz kullanıcılarının yüklü veya yüklemeyi denedi tüm yönetilen uygulamalar görüntüleyebilirsiniz. <!-- 2352913 -->
 Tüm yönetilen uygulamalar için Şirket portalı Windows listeler&ndash; hem gerekli hem de kullanılabilir&ndash; bir kullanıcı cihazında yüklü. Kullanıcılar, denenen görüntülemek ve bekleyen uygulama yüklemelerini ve bunların geçerli durumlarını mümkün olacaktır. Kuruluşunuzun uygulamalarını gerekli veya kullanılabilir duruma getirilmez, kullanıcılar şirket uygulama yüklenmiş olduğunu açıklayan bir ileti görür. Kullanıcılar ayrıca sıralamak veya uygulamalarını yükleme durumuna göre filtre uygulamak mümkün olacaktır.
@@ -77,16 +122,6 @@ Intune'da güvenlik görevler hakkında daha fazla bilgi için ilgili blog gönd
 Windows Defender Gelişmiş tehdit koruması ayarları yapılandırmanıza yardımcı olması için yeni temeli eklemek için ekleyeceğiz.
 
 
-### <a name="ios-third-party-keyboards----4111843---"></a>iOS üçüncü taraf klavyeler <!-- 4111843 -->
-Intune uygulama koruma İlkesi (uygulama) için destek **üçüncü taraf klavyeler** ayarı, bir iOS platform değişikliği nedeniyle sona erecek. Intune Yönetici konsolunda bu ayarı yapılandırmak mümkün olmayacaktır ve Intune uygulama SDK'sı istemcide uygulanmaz.
-
-<!-- 1903 start-->
-
-### <a name="windows-update-notifications----3316782---"></a>Windows güncelleştirme bildirimleri <!-- 3316782 -->
-Kullanıcıların görmesi Windows güncelleştirme bildirimleri yapılandırmak için bu sayede, Windows güncelleştirme halkası yapılandırmaları için destek ekliyoruz. Bu ayar, portalın içinde kullanılabilir durumda olmaz ancak Intune Graph API'si kullanılarak yapılandırılabilir.
-
-### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Daha kolay erişim için tanılama ayarları <!-- 3804627 -->
-Yeni bir seçenek ekliyoruz **denetim günlükleri** dikey penceresinde, doğrudan açmak için kullanabileceğiniz Intune konsolundaki her bir denetim günlüğüne iş yükünün *tanılama ayarları* sayfası.
 
 ## <a name="notices"></a>Bildirimler
 

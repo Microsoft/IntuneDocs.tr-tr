@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48228d0baea204fd94175750075c04771116a74d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cbef2059f42a209a63e4ba3f1e83aec410237d02
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513803"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135145"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Ağ erişim denetimini (NAC) Intune ile tümleştirme
 
@@ -63,27 +63,39 @@ Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin na
 9. Bağlantı başarılı bir şekilde kurulur ve böylece cihazın şirket kaynaklarına erişimi sağlanır.
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>NAC iOS cihazlarınızdaki VPN için kullanın.  
-VPN profilinde NAC etkinleştirmek gerek kalmadan NAC Cisco eski AnyConnect ve F5'e erişim eski Citrix VPN için desteklenir.
 
-NAC Citrix SSO için de desteklenir. NAC, iOS için Citrix SSO için etkinleştirmek için:
-- Citrix ağ geçidi 12.0.59 kullanın veya daha yüksek.  
-- Kullanıcılar, Citrix SSO 1.1.6 olmalıdır veya sonraki bir sürümü yüklü.
-- [NetScaler NAC için Intune ile tümleştirme](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) Citrix ürün belgelerinde açıklandığı gibi.
-- Temel VPN ayarları yapılandırması için **etkinleştirme ağ erişim denetimi (NAC)**, için onay kutusunu işaretleyin **kabul ediyorum**.
+- NAC VPN profilinde NAC etkinleştirmeden aşağıdaki VPN üzerinde kullanılabilir:
 
-İOS için Citrix SSO kullandığınızda, 24 saatte bir güvenlik nedenleriyle VPN bağlantısı kesilir. VPN hemen yeniden.
+  - NAC Cisco eski AnyConnect
+  - F5'e Erişim eski
+  - Citrix VPN
 
+- NAC, ayrıca Citrix SSO ve F5'e erişimi için kullanılabilir. NAC için Citrix SSO'yu etkinleştirmek için:
 
-**Ağ erişim denetimi şu anda desteklenmiyor aşağıdaki iOS VPN istemcilerine**:
--   Cisco AnyConnect
--   F5 Access
+  - Citrix ağ geçidi 12.0.59 kullanın veya daha yüksek.  
+  - Kullanıcılar, Citrix SSO 1.1.6 olmalıdır veya sonraki bir sürümü yüklü.
+  - [NetScaler NAC için Intune ile tümleştirme](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) Citrix ürün belgelerinde açıklandığı gibi.
+  - VPN profilinde seçin **temel ayarları** > **etkinleştirme ağ erişim denetimi (NAC)** > seçin **kabul ediyorum**.
 
-NAC çözümü için daha yeni bu istemcilerden serbest bırakmak için iş ortaklarımızla çalışıyoruz. Çözümler hazır olduğunda bu makaleyi ek ayrıntılarla güncelleştireceğiz. 
+  Güvenlik nedenleriyle 24 saatte VPN bağlantısı kesilir. VPN hemen yeniden.
 
+- NAC için F5'e erişimi etkinleştirmek üzere:
+
+  - F5 BIG-IP 13.1.1.5 kullanın. BIG-IP 14 desteklenmez.
+  - BIG-IP NAC için Intune ile tümleştirme. [Genel bakış: APM yapılandırma cihaz duruşu için uç nokta yönetim sistemleri ile denetler](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Kılavuzu adımları listeler.
+  - VPN profilinde seçin **temel ayarları** > **etkinleştirme ağ erişim denetimi (NAC)** > seçin **kabul ediyorum**.
+
+  Güvenlik nedenleriyle 24 saatte VPN bağlantısı kesilir. VPN hemen yeniden.
+
+- Ağ erişim denetimi aşağıdaki iOS VPN istemcisi için desteklenmiyor:
+  - Cisco AnyConnect
+
+NAC çözümü için daha yeni bu istemcilerden serbest bırakmak için iş ortaklarımızla çalışıyoruz. Bu makalede, çözümleri hazır olduğunuzda, ek bilgilerle güncelleştirilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Cisco ISE’yi Intune ile tümleştirme](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Citrix NetScaler’ı Intune ile tümleştirme](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [F5 BIG-IP Erişim İlkesi Yöneticisi Intune ile tümleştirme](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [HP Aruba ClearPass’i Intune ile tümleştirme](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Squadra güvenlik Çıkarılabilir Medya Yöneticisi’ni (secRMM) Intune ile tümleştirme](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 2dd523b1c624de9fbdb12cc4f90cafa5c4395250
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515571"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527208"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot (Önizleme) kullanarak
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot'ı kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
 
 ## <a name="prerequisites"></a>Önkoşullar
@@ -35,7 +35,7 @@ Başarılı bir şekilde yapılandırmak, [hibrit Azure AD'ye katılmış cihazl
 Kaydedilecek cihazlar ayrıca:
 - [Ekim 2018 güncelleştirmesiyle](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/) Windows 10 çalıştırmalıdır.
 - İnternet erişimine sahip olmalıdır.
-- Active Directory’nize erişime sahip olmalıdır (VPN bağlantısı desteklenmez).
+- Active Directory'niz (şu anda desteklenmeyen VPN bağlantısı) erişebilir.
 - Kullanıma hazır deneyimi (OOBE) geçeriz.
 - Katılmak için çalıştığınız etki alanının etki alanı denetleyicisi ping mümkün olmayacaktır.
 

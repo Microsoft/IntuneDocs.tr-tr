@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/01/2019
+ms.date: 04/23/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 1bcd3a5d0b9f7abc1aa2e0b4d96c30c956b6b4c7
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509959"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764886"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS cihaz ayarlarını Intune'da genel iOS özellikleri kullanma
 
@@ -35,22 +35,18 @@ Bu makalede, bu ayarları listeler ve her ayarın ne yaptığını açıklar.
 
 [İOS cihaz yapılandırma profili oluşturma](device-features-configure.md#create-a-device-profile).
 
-## <a name="airprint-settings"></a>AirPrint ayarları
+## <a name="airprint"></a>AirPrint
 
-Bu özellik iOS bilinen AirPrint yazıcılarına yazdırma olanağı sağlar.
+- **IP adresi**: Yazıcı IPv4 veya IPv6 adresini girin. Yazıcılar tanımlamak için konak adları kullanıyorsanız terminalde yazıcı ping göndererek IP adresini alabilirsiniz. IP adresini alın ve yol (Bu makale) daha fazla ayrıntı sağlar.
+- **Yol**: Genellikle yoludur `ipp/print` ağınızdaki yazıcılar için. IP adresini alın ve yol (Bu makale) daha fazla ayrıntı sağlar.
+- **Bağlantı noktası**: AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özellik boş bırakırsanız AirPrint, varsayılan bağlantı noktasını kullanır. Kullanılabilir iOS 11.0 ve sonraki sürümleri.
+- **TLS**: Seçin **etkinleştirme** AirPrint bağlantılarını Aktarım Katmanı Güvenliği (TLS) ile güvenli hale getirmek için. Kullanılabilir iOS 11.0 ve sonraki sürümleri.
 
-1. İçinde **ayarları**seçin **AirPrint**. AirPrint sunucunun aşağıdaki özellikleri girin:
+**Ekleme** AirPrint sunucu listesine ekler. Birçok AirPrint sunucuları ekleyebilirsiniz. Ayrıca **alma** bir virgülle ayrılmış dosyası (.csv bilgiler). Listeyi oluşturduktan sonra ayrıca **dışarı** AirPrint sunucuları listesi.
 
-    - **IP adresi**: Yazıcı IPv4 veya IPv6 adresini girin. Yazıcılar tanımlamak için konak adları kullanıyorsanız terminalde yazıcı ping göndererek IP adresini alabilirsiniz. IP adresini alın ve yol (Bu makale) daha fazla ayrıntı sağlar.
-    - **Yol**: Genellikle yoludur `ipp/print` ağınızdaki yazıcılar için. IP adresini alın ve yol (Bu makale) daha fazla ayrıntı sağlar.
-    - **Bağlantı noktası**: AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özellik boş bırakırsanız AirPrint, varsayılan bağlantı noktasını kullanır. Kullanılabilir iOS 11.0 ve sonraki sürümleri.
-    - **TLS**: Seçin **etkinleştirme** AirPrint bağlantılarını Aktarım Katmanı Güvenliği (TLS) ile güvenli hale getirmek için. Kullanılabilir iOS 11.0 ve sonraki sürümleri.
+Seçin **Tamam** listenize kaydedin.
 
-2. **Add (Ekle)** seçeneğini belirleyin. AirPrint sunucu listesine eklenir. Birçok AirPrint sunucuları ekleyebilirsiniz.
-
-    Ayrıca **alma** bir virgülle ayrılmış dosyası (.csv bilgiler). Listeyi oluşturduktan sonra ayrıca **dışarı** AirPrint sunucuları listesi.
-
-3. İşiniz bittiğinde seçin **Tamam** listenize kaydedin.
+### <a name="get-server-ip-address-resource-path-and-port"></a>Sunucu IP adresi, kaynak yolu ve bağlantı noktası alma
 
 AirPrinter sunucuları eklemek için yazıcı, kaynak yolu ve bağlantı noktası IP adresi gerekir. Aşağıdaki adımlar bu bilgilerinin nasıl alınacağını gösterir.
 
@@ -73,29 +69,32 @@ Bu ayarları uygulama düzenini ve klasörlerini dock ve giriş ekranlarını iO
 
 Kullanım **Dock** en fazla altı öğe veya klasör, iOS ekranındaki dock kısmına için eklemek için ayarlar. Birçok cihaz daha az öğeyi destekler. Örneğin iPhone cihazlar en fazla dört öğeyi destekler. Bu durumda, cihazda yalnızca eklediğiniz ilk dört öğe gösterilmektedir.
 
-1. İçinde **ayarları**seçin **giriş ekranı düzeni (yalnızca denetimli)** > **Dock** > **Ekle**. En fazla ekleyebilirsiniz **altı** ve cihaz dock'için (uygulama ve klasörleri birleştirilmiş) öğeleri.
-2. İçinde **türü**, eklemek için bir **uygulama** veya **klasör**.
+En fazla ekleyebilirsiniz **altı** ve cihaz dock'için (uygulama ve klasörleri birleştirilmiş) öğeleri.
 
-    - **Uygulama ekleme**: Uygulamalar ekranında dock eklemek için bu seçeneği belirleyin. Girin:
+- **Ekleme**: Dock cihazdaki uygulama veya klasör ekler.
+- **Tür**: Ekleme bir **uygulama** veya **klasör**:
 
+  - **Uygulama**: Uygulamalar ekranında dock eklemek için bu seçeneği belirleyin. Girin:
+
+    - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
+    - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
+
+    Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+  - **Klasör**: Dock ekranında bir klasör eklemek için bu seçeneği belirleyin.
+
+    Bir klasördeki bir sayfaya eklediğiniz uygulamaları soldan sağa ve aynı sırada listesi olarak düzenlenmiştir. Bir sayfaya alabileceğinden fazla uygulama eklerseniz, uygulamaları başka bir sayfaya taşınır.
+
+    - **Klasör adı**: Klasörün adını girin. Bu ad, kullanıcılara cihazlarında gösterilir.
+    - **Liste sayfalarının**: **Ekleme** bir sayfa ve aşağıdaki özellikleri girin:
+
+      - **Sayfa adı**: Sayfa için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
       - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-      - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](#bundle-ids-for-built-in-ios-apps) (Bu makaledeki) ilgili bazı örnekler.
+      - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
 
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+      En fazla ekleyebilirsiniz **20** sayfaları için cihaz dock.
 
-    - **Bir klasörü Ekle**: Dock ekranında bir klasör eklemek için bu seçeneği belirleyin. 
-
-      Bir klasördeki bir sayfaya eklediğiniz uygulamaları soldan sağa ve aynı sırada listesi olarak düzenlenmiştir. Bir sayfaya alabileceğinden fazla uygulama eklerseniz, uygulamaları başka bir sayfaya taşınır.
-
-      1. Girin bir **klasör adı**. Bu ad, kullanıcılara cihazlarında gösterilir.
-      2. Seçin **Ekle**ve aşağıdaki özellikleri girin:
-
-          - **Sayfa adı**: Sayfa için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-          - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-          - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](#bundle-ids-for-built-in-ios-apps) (Bu makaledeki) ilgili bazı örnekler.
-
-      3. Seçin **ekleme**. En fazla ekleyebilirsiniz **20** sayfaları için cihaz dock.
-      4. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+    Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 > [!NOTE]
 > Yerleştirme ayarlarla simgeler eklediğinizde, giriş ekranı ve sayfalar simgeleri kilitlidir ve taşınamaz. Bu tasarım ile iOS ve Apple'nın MDM ilkeleri tarafından olabilir.
@@ -117,33 +116,37 @@ Giriş ekranında gösterilen istediğiniz sayfaları ve her sayfada görüntül
 > [!TIP]
 > Herhangi bir giriş ekranı ve sayfalar listesine öğeleri yeniden sıralamak için sürükleyin ve bırakın.
 
-1. İçinde **ayarları**seçin **giriş ekranı düzeni (yalnızca denetimli)** > **sayfaları** > **Ekle**. En fazla ekleyebilirsiniz **40** bir cihazda sayfaları.
-2. Girin bir **sayfa adı**. Bu ad, Azure portalında başvuru amacıyla kullanılır ve *değil* iOS cihazında gösterilen. 
+En fazla ekleyebilirsiniz **40** bir cihazda sayfaları.
 
-    **Add (Ekle)** seçeneğini belirleyin. En fazla ekleyebilirsiniz **60** bir cihazda (uygulamalar ve birleştirilmiş bir klasör) öğeleri.
+- **Liste sayfalarının**: **Ekleme** bir sayfa ve aşağıdaki özellikleri girin:
 
-3. İçinde **türü**, eklemek için bir **uygulama** veya **klasör**.
+  - **Sayfa adı**: Sayfa için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır ve *değil* iOS cihazında gösterilen.
 
-    - **Uygulama ekleme**: Uygulamalar ekranında bir sayfa eklemek için bu seçeneği belirleyin. Girin:
+  En fazla ekleyebilirsiniz **60** bir cihazda (uygulamalar ve birleştirilmiş bir klasör) öğeleri.
 
-      - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-      - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](#bundle-ids-for-built-in-ios-apps) (Bu makaledeki) ilgili bazı örnekler.
+  - **Ekleme**: Uygulama ve klasörleri cihaz üzerindeki bir sayfa ekler.
+
+    - **Tür**: Ekleme bir **uygulama** veya **klasör**:
+
+      - **Uygulama**: Uygulamalar ekranında bir sayfa eklemek için bu seçeneği belirleyin. Şunları da girin:
+
+        - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
+        - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
 
       Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-    - **Bir klasörü Ekle**: Dock ekranında bir klasör eklemek için bu seçeneği belirleyin. 
+      - **Klasör**: Dock ekranında bir klasör eklemek için bu seçeneği belirleyin.
 
-      Bir klasördeki bir sayfaya eklediğiniz uygulamaları soldan sağa ve aynı sırada listesi olarak düzenlenmiştir. Bir sayfaya alabileceğinden fazla uygulama eklerseniz, uygulamaları başka bir sayfaya taşınır.
+        Bir klasördeki bir sayfaya eklediğiniz uygulamaları soldan sağa ve aynı sırada listesi olarak düzenlenmiştir. Bir sayfaya alabileceğinden fazla uygulama eklerseniz, uygulamaları başka bir sayfaya taşınır.
 
-      1. Girin bir **klasör adı**. Bu ad, kullanıcılara cihazlarında gösterilir.
-      2. Seçin **Ekle**ve aşağıdaki özellikleri girin:
+        - **Klasör adı**: Klasör için bir ad girin. Bu ad, cihaz kullanıcılarına gösterilir.
+        - **Ekleme**: Sayfaları klasörüne ekler. Ayrıca aşağıdaki özellikleri girin:
 
           - **Sayfa adı**: Sayfa için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
           - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-          - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](#bundle-ids-for-built-in-ios-apps) (Bu makaledeki) ilgili bazı örnekler.
+          - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
 
-      3. Seçin **ekleme**.
-      4. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 #### <a name="example"></a>Örnek
 
@@ -159,50 +162,43 @@ Aşağıdaki örnekte adlı yeni bir sayfa **Contoso** eklenir. Sayfa arkadaşla
 
 Bildirim gönderme iOS cihazları nasıl yüklü uygulamaları seçin. Bu ayarlar, iOS 9.3 ve üzerini çalıştıran denetimli cihazları destekler.
 
-1. İçinde **ayarları**seçin **uygulama bildirimleri (yalnızca denetimli)** > **Ekle**:
+- **Ekleme**: Uygulamalar için bildirimleri ekleyin:
 
     ![Intune iOS profiline uygulama bildirimi ekleme](./media/ios-macos-app-notifications.png)
 
-2. Aşağıdaki özellikleri girin:
+  - **Uygulama paket kimliği**: Girin **uygulama paket kimliği** eklemek istediğiniz uygulama. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
+  - **Uygulama adı**: Eklemek istediğiniz uygulamanın adını girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* cihazda gösterilir.
+  - **Yayımcı**: Eklediğiniz uygulama yayımcısının adını girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* cihazda gösterilir.
+  - **Bildirimleri**: **Etkinleştirme** veya **devre dışı** uygulamanın cihaza bildirim göndermesini.
+    - **Bildirim merkezinde Göster**: **Etkinleştirme** cihaz bildirim merkezinde bildirimler göstermesine izin verir. **Devre dışı** uygulama bildirimlerini bildirim merkezi aracılığıyla göstermesini engeller.
+    - **Kilit ekranında Göster**: Seçin **etkinleştirme** cihaz kilitleme ekranında uygulama bildirimlerini görmek için. **Devre dışı** kilit ekranında bildirimleri göstermesini uygulamayı engeller.
+    - **Uyarı türü**: Cihaz kilidi nasıl bildirim gösterilen seçin. Seçenekleriniz şunlardır:
+      - **Hiçbiri**: Bildirim gösterilir.
+      - **Başlık**: Bir başlık kısaca bir bildirim ile gösterilir.
+      - **Kalıcı**: Bir bildirim gösterilir ve kullanıcının bunu el ile cihazı kullanmaya devam etmeden önce kapatması gerekir.
+    - **Uygulama simgesi üzerindeki rozet**: Seçin **etkinleştirme** uygulama simgesine rozet eklemek için. Rozet, uygulamanın bildirim gönderdiğini anlamına gelir.
+    - **Ses**: Seçin **etkinleştirme** bir bildirim iletildiğinde ses çalınması için.
 
-    - **Uygulama paket kimliği**: Girin **uygulama paket kimliği** eklemek istediğiniz uygulama. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](#bundle-ids-for-built-in-ios-apps) (Bu makaledeki) ilgili bazı örnekler.
-    - **Uygulama adı**: Eklemek istediğiniz uygulamanın adını girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* cihazda gösterilir.
-    - **Yayımcı**: Eklediğiniz uygulama yayımcısının adını girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* cihazda gösterilir.
-    - **Bildirimleri**: **Etkinleştirme** veya **devre dışı** uygulamanın cihaza bildirim göndermesini.
-       - **Bildirim merkezinde Göster**: **Etkinleştirme** cihaz bildirim merkezinde bildirimler göstermesine izin verir. **Devre dışı** uygulama bildirimlerini bildirim merkezi aracılığıyla göstermesini engeller.
-       - **Kilit ekranında Göster**: Seçin **etkinleştirme** cihaz kilitleme ekranında uygulama bildirimlerini görmek için. **Devre dışı** kilit ekranında bildirimleri göstermesini uygulamayı engeller.
-       - **Uyarı türü**: Cihaz kilidi nasıl bildirim gösterilen seçin. Seçenekleriniz şunlardır:
-         - **Hiçbiri**: Bildirim gösterilir.
-         - **Başlık**: Bir başlık kısaca bir bildirim ile gösterilir.
-         - **Kalıcı**: Bir bildirim gösterilir ve kullanıcının bunu el ile cihazı kullanmaya devam etmeden önce kapatması gerekir.
-       - **Uygulama simgesi üzerindeki rozet**: Seçin **etkinleştirme** uygulama simgesine rozet eklemek için. Rozet, uygulamanın bildirim gönderdiğini anlamına gelir.
-       - **Ses**: Seçin **etkinleştirme** bir bildirim iletildiğinde ses çalınması için.
-
-3. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin. İstediğiniz uygulamalar eklemeye devam edebilirsiniz. İşiniz bittiğinde seçin **Tamam**.
+Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="lock-screen-message-settings"></a>Kilit ekranı iletisi ayarları
 
 Oturum açma penceresinde ve kilit ekranı bir özel ileti veya metin göstermek için bu ayarları kullanın. Örneğin, "Kaybedildiğinde dönmek..." iletisi girebilirsiniz ve varlık etiketi bilgileri. 
 
-Bu özellik çalıştıran denetimli cihazları destekler:
+Bu özellik iOS 9.3 ve üzerini çalıştıran denetimli cihazları destekler.
 
-- iOS 9.3 ve üzeri
+- **Varlık etiketi bilgileri**: Cihazın varlık etiketi hakkındaki bilgileri girin. Örneğin `Owned by Contoso Corp` veya `Serial Number: {{serialnumber}}` girin.
 
-1. İçinde **ayarları**seçin **kilit ekranı iletisi (yalnızca denetimli)**.
-2. Aşağıdaki ayarları girin:
+  Girdiğiniz metin, oturum açma penceresinde ve kilit ekranında cihazın gösterilir.
 
-    - **Varlık etiketi bilgileri**: Cihazın varlık etiketi hakkındaki bilgileri girin. Örneğin `Owned by Contoso Corp` veya `Serial Number: {{serialnumber}}` girin. 
+- **Kilit ekranı dipnotu**: Cihaz kaybolur veya çalınırsa, döndürülen cihaz alınmasına yardımcı olabilecek bir not girin. İstediğiniz herhangi bir metin girebilirsiniz. Örneğin `If found, call Contoso at ...` gibi bir URI girebilirsiniz.
 
-      Girdiğiniz metin, oturum açma penceresinde ve kilit ekranında cihazın gösterilir.
+  Cihaz belirteçleri, cihaza özgü bilgiler için bu alanları eklemek için de kullanılabilir. Örneğin, seri numarası göstermek için girin `Serial Number: {{serialnumber}}`. Kilit ekranında, metin benzer gösterir `Serial Number 123456789ABC`. Değişkenleri girerken, süslü ayraçlar kullanmaya özen `{{ }}`. [Uygulama yapılandırma belirteçleri](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) kullanılabilen değişkenleri bir listesini içerir. Ayrıca `deviceName` veya başka bir cihaza özgü değer.
 
-    - **Kilit ekranı dipnotu**: Cihaz kaybolur veya çalınırsa, döndürülen cihaz alınmasına yardımcı olabilecek bir not girin. İstediğiniz herhangi bir metin girebilirsiniz. Örneğin `If found, call Contoso at ...` gibi bir URI girebilirsiniz.
+  > [!NOTE]
+  > Değişkenleri kullanıcı Arabiriminde doğrulanmış değil. Sonuç olarak, hatalı giriş ile kaydedilen profilleri görebilirsiniz. Örneğin, girerseniz `{{Devicename}}` yerine `{{devicename}}`, cihazın benzersiz adı yerine sabit dizesini gösterilir.
 
-    Cihaz belirteçleri, cihaza özgü bilgiler için bu alanları eklemek için de kullanılabilir. Örneğin, seri numarası göstermek için girin `Serial Number: {{serialnumber}}`. Kilit ekranında, metin benzer gösterir `Serial Number 123456789ABC`. Değişkenleri girerken, süslü ayraçlar kullanmaya özen `{{ }}`. [Uygulama yapılandırma belirteçleri](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) kullanılabilen değişkenleri bir listesini içerir. Ayrıca `deviceName` veya başka bir cihaza özgü değer.
-
-    > [!NOTE]
-    > Değişkenleri kullanıcı Arabiriminde doğrulanmış değil. Sonuç olarak, hatalı giriş ile kaydedilen profilleri görebilirsiniz. Örneğin, girerseniz `{{Devicename}}` yerine `{{devicename}}`, cihazın benzersiz adı yerine sabit dizesini gösterilir.
-
-3. İşiniz bittiğinde seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="single-sign-on-settings"></a>Çoklu oturum açma ayarları
 
@@ -213,82 +209,77 @@ Bu özellik çalıştıran denetimli cihazları destekler:
 - Çoklu oturum açma cihazdaki kullanıcı kimlik bilgileri deposunu aramak için kodlanmış bir uygulama.
 - Intune'u iOS cihazında çoklu oturum açma için yapılandırma.
 
-1. İçinde **ayarları**seçin **çoklu oturum açma**:
+![Çoklu Oturum Açma bölmesi](./media/sso-blade.png)
 
-   ![Çoklu Oturum Açma bölmesi](./media/sso-blade.png)
+- **Aad'den kullanıcı adı özniteliği**: Intune bu öznitelik her kullanıcı için Azure AD'de arar. Intune, cihaza yüklenen XML oluşturmadan önce ilgili alanı (UPN gibi) sonra doldurur. Seçenekleriniz şunlardır:
 
-2. Aşağıdaki ayarları girin:
+  - **Kullanıcı asıl adı**: UPN, aşağıdaki şekilde ayrıştırılır:
 
-    - **Aad'den kullanıcı adı özniteliği**: Intune bu öznitelik her kullanıcı için Azure AD'de arar. Intune, cihaza yüklenen XML oluşturmadan önce ilgili alanı (UPN gibi) sonra doldurur. Seçenekleriniz şunlardır:
+    ![Kullanıcı adı özniteliği](media/User-name-attribute.png)
 
-      - **Kullanıcı asıl adı**: UPN, aşağıdaki şekilde ayrıştırılır:
+    Ayrıca, **Bölge** metin kutusuna girdiğiniz metinle bölge değerinin üzerine yazabilirsiniz.
 
-        ![Kullanıcı adı özniteliği](media/User-name-attribute.png)
+    Örneğin, Contoso Avrupa, Asya ve Kuzey Amerika gibi çeşitli bölgeleri vardır. Contoso Asya kullanıcılarının SSO kullanmak istiyorsa ve uygulama UPN gerektirir `username@asia.contoso.com` biçimi. Seçtiğinizde, **kullanıcı asıl adı**, her kullanıcı için bir bölge olduğundan, Azure AD'den alınmış `contoso.com`. Asya'daki kullanıcılar için bu nedenle seçin **kullanıcı asıl adı**girin `asia.contoso.com`. Son kullanıcının UPN olur `username@asia.contoso.com`, yerine `username@contoso.com`.
 
-        Ayrıca, **Bölge** metin kutusuna girdiğiniz metinle bölge değerinin üzerine yazabilirsiniz.
+  - **Intune cihaz kimliği**: Intune, Intune cihaz kimliğini otomatik olarak seçer
 
-        Örneğin, Contoso Avrupa, Asya ve Kuzey Amerika gibi çeşitli bölgeleri vardır. Contoso Asya kullanıcılarının SSO kullanmak istiyorsa ve uygulama UPN gerektirir `username@asia.contoso.com` biçimi. Seçtiğinizde, **kullanıcı asıl adı**, her kullanıcı için bir bölge olduğundan, Azure AD'den alınmış `contoso.com`. Asya'daki kullanıcılar için bu nedenle seçin **kullanıcı asıl adı**girin `asia.contoso.com`. Son kullanıcının UPN olur `username@asia.contoso.com`, yerine `username@contoso.com`.
+    Varsayılan olarak, uygulamaların yalnızca cihaz kimliğini kullanması gerekir. Ancak, uygulamanız, bölge ve cihaz Kimliğini kullanıyorsa, bölge bölge metin kutusuna yazabilirsiniz.
 
-      - **Intune cihaz kimliği**: Intune, Intune cihaz kimliğini otomatik olarak seçer
+    > [!NOTE]
+    > Varsayılan olarak, cihaz kimliğini kullanıyorsanız bölgeyi boş bırakın.
 
-        Varsayılan olarak, uygulamaların yalnızca cihaz kimliğini kullanması gerekir. Ancak, uygulamanız, bölge ve cihaz Kimliğini kullanıyorsa, bölge bölge metin kutusuna yazabilirsiniz.
+  - **Azure AD cihaz kimliği**
 
-        > [!NOTE]
-        > Varsayılan olarak, cihaz kimliğini kullanıyorsanız bölgeyi boş bırakın.
+- **Bölge**: URL'nin etki alanı bölümünü girin. Örneğin, şunu girin: `contoso.com`.
+- **Çoklu oturum açma kullanacak URL ön ekleri**: **Ekleme** kullanıcı çoklu oturum açma kimlik doğrulaması gerektiren herhangi bir URL kuruluşunuzdaki.
 
-      - **Azure AD cihaz kimliği**
+  Örneğin, kullanıcı bu sitelerden birine bağlandığında iOS cihaz çoklu oturum açma kimlik bilgilerini kullanır. Kullanıcının başka kimlik bilgisi girmesi gerekmez. Çok faktörlü kimlik doğrulamasını etkinleştirdiyseniz, kullanıcıların ikinci kimlik doğrulamasını girmesi gerekmez.
 
-    - **Bölge**: URL'nin etki alanı bölümünü girin. Örneğin, şunu girin: `contoso.com`.
-    - **Çoklu oturum açma kullanacak URL ön ekleri**: **Ekleme** kullanıcı çoklu oturum açma kimlik doğrulaması gerektiren herhangi bir URL kuruluşunuzdaki.
+  > [!NOTE]
+  > Bu URL'ler düzgün biçimlendirilmiş FQDN'ler olmalıdır. Apple olması için bu gerektirir `http://<yourURL.domain>` biçimi.
 
-        Örneğin, kullanıcı bu sitelerden birine bağlandığında iOS cihaz çoklu oturum açma kimlik bilgilerini kullanır. Kullanıcının başka kimlik bilgisi girmesi gerekmez. Çok faktörlü kimlik doğrulamasını etkinleştirdiyseniz, kullanıcıların ikinci kimlik doğrulamasını girmesi gerekmez.
+  URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit dize eşleştirme çalıştırılır, böylece `http://www.contoso.com/` URL ön eki eşleşmiyor `http://www.contoso.com:80/`. İOS 10.0 veya üzeri, tek bir joker karakter \* tüm eşleşen değerleri girmek için kullanılabilir. Örneğin, `http://*.contoso.com/` hem de eşleşen `http://store.contoso.com/` ve `http://www.contoso.com`.
 
-        > [!NOTE]
-        > Bu URL'ler düzgün biçimlendirilmiş FQDN'ler olmalıdır. Apple olması için bu gerektirir `http://<yourURL.domain>` biçimi.
+  `http://.com` Ve `https://.com` desenlerle eşleşmelerine tüm HTTP ve HTTPS URL'leri, sırasıyla.
 
-        URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit dize eşleştirme çalıştırılır, böylece `http://www.contoso.com/` URL ön eki eşleşmiyor `http://www.contoso.com:80/`. İOS 10.0 veya üzeri, tek bir joker karakter \* tüm eşleşen değerleri girmek için kullanılabilir. Örneğin, `http://*.contoso.com/` hem de eşleşen `http://store.contoso.com/` ve `http://www.contoso.com`.
+- **Çoklu oturum açma kullanan uygulamalar**: **Ekleme** kullanabilirsiniz, son kullanıcıların cihazlarında uygulamalar çoklu oturum açma.
 
-        `http://.com` Ve `https://.com` desenlerle eşleşmelerine tüm HTTP ve HTTPS URL'leri, sırasıyla.
+  `AppIdentifierMatches` Dizi, uygulama paketi grubu kimlikleriyle eşleşen dizeler içermelidir. Bu dizeler tam eşleşme gibi olabilir `com.contoso.myapp`, ön ek eşleştirmesi kullanarak paket kimliği girin veya \* joker karakter. Joker karakter, nokta karakteri (.) sonra gelmelidir ve dizenin sonunda gibi yalnızca bir kez görünebilir `com.contoso.*`. Joker karakter eklendiğinde, paket kimlikleri bu ön ekle başlayan tüm uygulamaların hesaba erişimine izin verilir.
 
-    - **Çoklu oturum açma kullanan uygulamalar**: **Ekleme** kullanabilirsiniz, son kullanıcıların cihazlarında uygulamalar çoklu oturum açma.
+  **Uygulama Adı**’nı kullanarak paket kimliğini ayırt etmenize yardımcı olacak bir kolay ad ekleyin.
 
-        `AppIdentifierMatches` Dizi, uygulama paketi grubu kimlikleriyle eşleşen dizeler içermelidir. Bu dizeler tam eşleşme gibi olabilir `com.contoso.myapp`, ön ek eşleştirmesi kullanarak paket kimliği girin veya \* joker karakter. Joker karakter, nokta karakteri (.) sonra gelmelidir ve dizenin sonunda gibi yalnızca bir kez görünebilir `com.contoso.*`. Joker karakter eklendiğinde, paket kimlikleri bu ön ekle başlayan tüm uygulamaların hesaba erişimine izin verilir.
+- **Kimlik bilgileri yenileme sertifikası**: (Parola) kimlik doğrulaması için sertifikalar kullanılıyorsa, kimlik doğrulama sertifikası var olan SCEP veya PFX sertifikasını seçin. Genellikle, bu sertifika, kullanıcıya VPN, Wi-Fi veya e-posta gibi diğer profiller için dağıtılan aynı sertifikadır.
 
-        **Uygulama Adı**’nı kullanarak paket kimliğini ayırt etmenize yardımcı olacak bir kolay ad ekleyin.
-
-    - **Kimlik bilgileri yenileme sertifikası**: (Parola) kimlik doğrulaması için sertifikalar kullanılıyorsa, kimlik doğrulama sertifikası var olan SCEP veya PFX sertifikasını seçin. Genellikle, bu sertifika, kullanıcıya VPN, Wi-Fi veya e-posta gibi diğer profiller için dağıtılan aynı sertifikadır.
-
-3. İşiniz bittiğinde seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="web-content-filter-settings"></a>Web içeriği filtresi ayarları
 
 Bu ayarlar, iOS cihazlarında tarayıcı URL erişimini denetler.
 
-1. İçinde **ayarları**seçin **Web içerik filtresi (yalnızca denetimli)**.
-2. Seçin **filtre türü**. Seçenekleriniz şunlardır:
+- **Filtre türü**: Belirli web sitelerine izin vermek seçin. Seçenekleriniz şunlardır:
 
-    - **URL'leri yapılandırma**: Küfür ve cinsel içerikli terimleri için Apple'nın yerleşik web filtresini kullanın. Yüklendiğinde tanımlar ve uygunsuz içeriği engeller gibi bu özellik, her web sayfasını değerlendirir. Ayrıca, filtre tarafından iade istemediğiniz URL'leri de ekleyebilirsiniz. Veya, Apple'nın filtresi ayarlarına bakılmaksızın belirli URL'leri engelleyebilirsiniz.
+  - **URL'leri yapılandırma**: Küfür ve cinsel içerikli terimleri için Apple'nın yerleşik web filtresini kullanın. Yüklendiğinde tanımlar ve uygunsuz içeriği engeller gibi bu özellik, her web sayfasını değerlendirir. Ayrıca, filtre tarafından iade istemediğiniz URL'leri de ekleyebilirsiniz. Veya, Apple'nın filtresi ayarlarına bakılmaksızın belirli URL'leri engelleyebilirsiniz.
 
-      - **İzin verilen URL'ler**: **Ekleme** izin vermek istediğiniz URL'leri. Bu URL'ler, Apple web filtresi atlama.
+    - **İzin verilen URL'ler**: **Ekleme** izin vermek istediğiniz URL'leri. Bu URL'ler, Apple web filtresi atlama.
 
-        > [!NOTE]
+      > [!NOTE]
         > Girdiğiniz URL'lere Apple web filtresi tarafından evauluated istemediğiniz URL'ler ' dir. Bu URL'ler izin verilen web sitelerinin bir listesi değildir. İzin verilen Web siteleri listesini oluşturmak için **filtre türü** için **yalnızca belirli Web siteleri**.
 
-        Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-      - **Engellenen URL'ler**: **Ekleme** Apple web filtresi ayarlarına bakılmaksızın açılmasını durdurmak istediğiniz URL'leri.
-
-        Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
-    - **Yalnızca belirli Web siteleri** (için Safari web tarayıcısı yalnızca): Bu URL'ler Safari tarayıcısının yer işaretlerine eklenir. Kullanıcı **yalnızca** bu siteleri; ziyaret etmesine izin başka sitelere açılabilir. Bu seçeneği yalnızca kullanıcıların erişebileceği URL'lerin tam listesini biliyorsanız kullanın.
-
-      - **URL**: İzin vermek istediğiniz Web sitesinin URL'sini girin. Örneğin, şunu girin: `https://www.contoso.com`.
-      - **Yer işareti yolu**: Yer işareti depolamak için bir yol girin. Örneğin, şunu girin: `/Contoso/Business Apps`. Bir yol eklemezseniz yer işareti cihazdaki varsayılan yer işareti klasörüne eklenir.
-      - **Başlık**: Yer işareti için açıklayıcı bir başlık girin.
-
-      Herhangi bir URL girmeyin sonra son kullanıcıların dışındaki Web sitelerine erişemez `microsoft.com`, `microsoft.net`, ve `apple.com`. Bu URL'lere Intune tarafından otomatik olarak izin verilir.
+    - **Engellenen URL'ler**: **Ekleme** Apple web filtresi ayarlarına bakılmaksızın açılmasını durdurmak istediğiniz URL'leri.
 
       Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+  - **Yalnızca belirli Web siteleri** (için Safari web tarayıcısı yalnızca): Bu URL'ler Safari tarayıcısının yer işaretlerine eklenir. Kullanıcı **yalnızca** bu siteleri; ziyaret etmesine izin başka sitelere açılabilir. Bu seçeneği yalnızca kullanıcıların erişebileceği URL'lerin tam listesini biliyorsanız kullanın.
+
+    - **URL**: İzin vermek istediğiniz Web sitesinin URL'sini girin. Örneğin, şunu girin: `https://www.contoso.com`.
+    - **Yer işareti yolu**: Yer işareti depolamak için bir yol girin. Örneğin, şunu girin: `/Contoso/Business Apps`. Bir yol eklemezseniz yer işareti cihazdaki varsayılan yer işareti klasörüne eklenir.
+    - **Başlık**: Yer işareti için açıklayıcı bir başlık girin.
+
+    Herhangi bir URL girmeyin sonra son kullanıcıların dışındaki Web sitelerine erişemez `microsoft.com`, `microsoft.net`, ve `apple.com`. Bu URL'lere Intune tarafından otomatik olarak izin verilir.
+
+    Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="wallpaper-settings"></a>Duvar kağıdı ayarları
 
@@ -305,57 +296,6 @@ Mevcut bir görüntüyü cihazlarla görüntü ile bir profili atandığında be
 
 > [!TIP]
 > Farklı kilit ekranı ve giriş ekranı görüntüler için kilitlenme ekranı görüntüsü ile bir profil oluşturun. Giriş ekranı görüntüyü başka bir profil oluşturun. Her iki profili, iOS kullanıcı veya cihaz grubuna atayın.
-
-## <a name="bundle-ids-for-built-in-ios-apps"></a>Yerleşik iOS uygulamaları için paket kimlikleri
-
-Aşağıdaki liste, bazı yaygın yerleşik iOS uygulamalarının paket kimliğini gösterir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
-
-| Paket Kimliği                   | Uygulama Adı     | Yayımcı |
-|-----------------------------|--------------|-----------|
-| com.apple.AppStore          | Uygulama Mağazası    | Apple     |
-| com.apple.calculator        | Hesap Makinesi   | Apple     |
-| com.apple.mobilecal         | Takvim     | Apple     |
-| com.apple.camera            | Kamera       | Apple     |
-| com.apple.mobiletimer       | Saat        | Apple     |
-| com.apple.compass           | Pusula      | Apple     |
-| com.apple.MobileAddressBook | Kişiler     | Apple     |
-| com.apple.facetime          | FaceTime     | Apple     |
-| com.apple.DocumentsApp      | Dosyalar        | Apple     |
-| com.apple.mobileme.fmf1     | Arkadaşları Bul | Apple     |
-| com.apple.mobileme.fmip1    | iPhone’u Bul  | Apple     |
-| com.apple.gamecenter        | Oyun Merkezi  | Apple     |
-| com.apple.mobilegarageband  | GarageBand   | Apple     |
-| com.apple.Health            | Durum       | Apple     |
-| com.apple.Home              | Ana Sayfası         | Apple     |
-| com.apple.iBooks            | iBooks       | Apple     |
-| com.apple.iMovie            | iMovie       | Apple     |
-| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
-| com.apple.MobileStore       | iTunes Store | Apple     |
-| com.apple.itunesu           | iTunes U     | Apple     |
-| com.apple.Keynote           | Keynote      | Apple     |
-| com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.Maps              | Haritalar         | Apple     |
-| com.apple.MobileSMS         | İletiler     | Apple     |
-| com.apple.Music             | Müzik        | Apple     |
-| com.apple.news              | News         | Apple     |
-| com.apple.mobilenotes       | Notlar        | Apple     |
-| com.apple.Numbers           | Sayılar      | Apple     |
-| com.apple.Pages             | Sayfaları        | Apple     |
-| com.apple.Photo-Booth       | Photo Booth  | Apple     |
-| com.apple.mobileslideshow   | Fotoğraflar       | Apple     |
-| com.apple.podcasts          | Podcast’ler     | Apple     |
-| com.apple.reminders         | Anımsatıcılar    | Apple     |
-| com.apple.mobilesafari      | Safari       | Apple     |
-| com.apple.Preferences       | Ayarlar     | Apple     |
-| com.apple.SiriViewService   | Siri         | Apple     |
-| com.apple.stocks            | Borsa       | Apple     |
-| com.apple.tips              | İpuçları         | Apple     |
-| com.apple.TV                | TV           | Apple     |
-| com.apple.videos            | Videolar       | Apple     |
-| com.apple.VoiceMemos        | Sesli Notlar   | Apple     |
-| com.apple.Passbook          | Wallet       | Apple     |
-| com.apple.Bridge            | İzleme        | Apple     |
-| com.apple.weather           | Hava durumu      | Apple     |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

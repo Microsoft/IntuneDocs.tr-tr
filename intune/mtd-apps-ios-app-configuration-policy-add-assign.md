@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 108b9fb0eb227e9f046919efc6ef4d04b0903c40
+ms.sourcegitcommit: d259c0986d356135e626a30468971e32f8103f4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513452"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65442962"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama
 
@@ -59,6 +59,7 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
   - [Better Mobile](#configure-better-mobile-apps)
+  - [Sophos mobil](#configure-sophos-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work uygulamalarını yapılandırma
 
@@ -142,7 +143,18 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
     - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). **Uygulama bilgilerini yapılandırma** bölümünün altındaki **12. adımda** bu [ActiveShield uygulama mağazası URL’sini](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) kullanın.
 
+
+### <a name="configure-sophos-apps"></a>Sophos uygulamalarını yapılandırma  
+- **Android**
+
+    - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](store-apps-android.md). Bunu kullanın [Sophos uygulama mağazası URL'sini](https://play.google.com/store/apps/details?id=com.sophos.smsec) üzerinde **7. adım**.
+
+ - **iOS**
+
+    - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). **Uygulama bilgilerini yapılandırma** bölümünün altındaki **12. adımda** bu [ActiveShield uygulama mağazası URL’sini](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) kullanın.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD uygulamalarınızı bir iOS uygulama yapılandırma ilkesiyle yapılandırma
+
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work uygulama yapılandırma ilkesi
 
@@ -163,7 +175,7 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
     - **8. adımda** **XML verisi gir** seçeneğini kullanın, ***.plist** dosyasındaki içeriği kopyalayıp yapılandırma ilkesinin gövdesine yapıştırın.
 
-> [!NOTE]
+> [!NOTE]  
 > Dosyaları alamıyorsanız, [Symantec Endpoint Protection Mobile Enterprise Desteği](https://support.symantec.com/en_US/contact-support.html)'ne başvurun.
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Check Point SandBlast Mobile uygulaması yapılandırma ilkesi
@@ -192,6 +204,9 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 <string>{{udidlast4digits}}</string>
 </dict>
 ```
+### <a name="pradeo-app-configuration-policy"></a>Pradeo uygulama yapılandırma İlkesi
+Pradeo iOS uygulama yapılandırma İlkesi desteklemiyor.  Bunun yerine, yapılandırılmış bir uygulamasını almak için istediğiniz ayarlarla yapılandırılmış özel IPA veya APK dosyaları uygulamak için Pradeo çalışın.
+
 
 ### <a name="better-mobile-app-configuration-policy"></a>Better Mobile uygulama yapılandırma ilkesi
 
@@ -208,6 +223,9 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 <string>{{userprincipalname}}</string>
 </dict>
 ```
+
+### <a name="sophos-mobile-app-configuration-policy"></a>Sophos mobil uygulama yapılandırma İlkesi
+İOS uygulama yapılandırma İlkesi açıklandığı gibi oluşturmak [iOS uygulama yapılandırma ilkesini kullanarak](app-configuration-policies-use-ios.md) makalesi.
 
 ## <a name="assign-apps-to-groups"></a>Gruplara uygulama atama
 

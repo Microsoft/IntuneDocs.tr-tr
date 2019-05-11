@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512942"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527214"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker'ı ve cihaz şifreleme izleyin  
 Intune, Windows 10 cihazlarınızın şifreleme durumunu belirlemek için merkezi bir konum sağlayan ve BitLocker için önemli bilgiler, Azure Active Directory (Azure AD) bulunan cihazlardan erişim yardımcı olur.  
@@ -60,7 +60,7 @@ Bir cihaz seçtiğinizde, Intune görüntüler **cihaz şifreleme durumu** bölm
 
 Bu bölme aşağıdaki ayrıntıları sağlar:  
 - **Cihaz adı** – görüntülemekte olduğunuz cihazın adı.  
-- **Şifreleme hazırlık** - BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Bir cihaz bir şifreleme durumunu olabilir *şifreli* kendi şifreleme hazırlık olsa bile *hazır değil*, TPM eksik olduğundan. (He bölümünde daha fazla ayrıntı için önceki şifreleme hazır olduğunuzu bakın.)
+- **Şifreleme hazırlık** - BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Bir cihaz bir şifreleme durumunu olabilir *şifreli* kendi şifreleme hazırlık olsa bile *hazır değil*, TPM eksik olduğundan. (Daha fazla ayrıntı için önceki bölümde şifreleme hazırlık bakın.)
 - **Şifreleme durumu** - işletim sistemi sürücüsünü şifrelenmiş olsun.  
 - **Profilleri** – listesini *cihaz Yapılandırması* profilleri bu cihaza uygulanır ve aşağıdaki profil türü ve ayarları içerir:  
   - Profil türü = *uç nokta koruması*  

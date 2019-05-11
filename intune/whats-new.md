@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
-ms.translationtype: HT
+ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426239"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135174"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -46,6 +46,25 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-6-2019"></a>6 Mayıs 2019 haftası 
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="network-access-control-nac-support-for-f5-access-for-ios-devices----4500808---"></a>Ağ erişim denetimi (NAC) iOS cihazları için F5'e erişimi desteği <!-- 4500808 -->
+
+F5 BIG-IP 13, NAC işlevselliği, ıntune'da iOS için F5'e erişim verir. bir güncelleştirme yayımladı. Bu özelliği kullanmak için:
+
+- BIG-IP 13.1.1.5 için güncelleştirme yenileyin. BIG-IP 14 desteklenmez.
+- BIG-IP NAC için Intune ile tümleştirme. Adımları [genel bakış: APM yapılandırma cihaz duruşu için uç nokta yönetim sistemleri ile denetler](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Denetleme **etkinleştirme ağ erişim denetimi (NAC)** VPN profilini ıntune'da ayarlama.
+
+Kullanılabilir ayarını görmek için Git [iOS cihazlarda VPN yapılandırma ayarlarını](vpn-settings-ios.md).
+
+Şunun için geçerlidir: iOS
+
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune----doc-vso-1521237----"></a>Microsoft Intune için güncelleştirilmiş PFX sertifika Bağlayıcısı <!-- doc-vso 1521237  -->  
+İçin bir güncelleştirme yayımladık [PFX sertifika Bağlayıcısı için Intune](certficates-pfx-configure.md#whats-new-for-connectors) , yoklama aralığı 5 dakikadan 30 saniyeye bırakır.
 
 ## <a name="week-of-april-22-2019"></a>22 Nisan 2019 haftası
 
@@ -75,7 +94,7 @@ Aşağıdaki örnekte, GDPR denetimleri için dökümünü görürsünüz. Micro
 Android cihazlarda Intune uygulama koruma ilkelerini (APP) artık FIPS 140-2 ile uyumlu olan bir OpenSSL şifreleme kitaplığını kullanır. Daha fazla bilgi için [şifreleme](app-protection-policy-settings-android.md#encryption) bölümünü [Android uygulama koruma İlkesi ayarları Microsoft Intune](app-protection-policy-settings-android.md).
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>Win32 Uygulama bağımlılıklarını etkinleştirin <!-- 2617348  -->
-Yönetici olarak, diğer uygulamalarda Win32 uygulamanızı yüklemeden önce bağımlılıkları olarak yüklendiğini gerektirebilir. Özellikle, Win32 Uygulama yüklenmeden önce cihaz bağımlı uygulamalarını yüklemeniz gerekir. Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle** görüntülenecek **uygulama Ekle** dikey penceresi. Seçin **Windows uygulaması (Win32)** olarak **uygulama türü**. Uygulamayı ekledikten sonra seçebileceğiniz **bağımlılıkları** Win32 Uygulama yüklenmeden önce yüklenmesi gereken bağımlı uygulamaları eklemek için. Daha fazla bilgi için [tek başına Intune - Win32 Uygulama Yönetimi](apps-win32-app-management.md). Bu işlev, yalnızca Intune yönetim aracısı için 1904 biz hizmeti yükselttikten sonra bir veya iki ek hafta sürebilir 1904 sürüme (1.18.120.0 büyük) yükseltildikten sonra kullanılabilir.
+Yönetici olarak, diğer uygulamalarda Win32 uygulamanızı yüklemeden önce bağımlılıkları olarak yüklendiğini gerektirebilir. Özellikle, Win32 Uygulama yüklenmeden önce cihaz bağımlı uygulamalarını yüklemeniz gerekir. Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle** görüntülenecek **uygulama Ekle** dikey penceresi. Seçin **Windows uygulaması (Win32)** olarak **uygulama türü**. Uygulamayı ekledikten sonra seçebileceğiniz **bağımlılıkları** Win32 Uygulama yüklenmeden önce yüklenmesi gereken bağımlı uygulamaları eklemek için. Daha fazla bilgi için [tek başına Intune - Win32 Uygulama Yönetimi](apps-win32-app-management.md). 
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>İş kolu uygulamaları için Microsoft Store için uygulama sürüm yükleme bilgileri <!-- 3537391   -->
 Uygulama yükleme raporları, iş kolu uygulamaları için Microsoft Store uygulaması sürüm bilgilerini içerir. Intune'da seçin **istemci uygulamaları** > **uygulamaları**. Seçin bir **için iş kolu uygulamasını Microsoft Store** seçip **cihaz yükleme durumu** altında **İzleyici** bölümü.
@@ -91,6 +110,9 @@ Birincil de kullanıcı aygıt benzeşimi kullanıcı (UDA) adlı kullanıcı, c
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android kurumsal iş profili cihazları için raporlama ek yönetilen Google Play uygulaması <!-- 4105925  -->
 Android kurumsal iş profili cihazlara dağıttığınız yönetilen Google Play uygulamaları için bir cihaza yüklenen uygulamanın belirli sürüm numarası görüntüleyebilirsiniz. Bu, yalnızca gerekli uygulamalar için geçerlidir. Gelecekteki bir sürümde aynı işlevselliği kullanılabilir uygulamalar için etkinleştirilir. 
+
+#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>iOS üçüncü taraf klavyeler <!-- 4111843 idready eeready -->
+Intune uygulama koruma İlkesi (uygulama) desteği **üçüncü taraf klavyeler** ayarı iOS artık bir iOS platform değişikliği nedeniyle desteklenmiyor. Intune Yönetici konsolunda bu ayarı yapılandırmak mümkün olmayacaktır ve Intune uygulama SDK'sı istemcide uygulanmaz.
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
@@ -108,7 +130,7 @@ Yapılandırabileceğiniz ayarlar görmek için Git [izin vermek veya özellikle
 
 
 #### <a name="configure-bluetooth-and-pairing-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode----3041941----"></a>Bluetooth ve ayrılmış cihazları çoklu uygulama bilgi noktası modunda çalışan Android kuruluş, cihaz sahibi eşleştirme yapılandırın <!-- 3041941  -->
-Android Enterprise, cihazı çoklu uygulama bilgi noktası modunda ayrılmış bir cihaz olarak çalışırken sahip ayarları etkinleştirebilirsiniz. Bu güncelleştirmede, Bluetooth etkinleştirmek son kullanıcılara izin ver ve cihazların Bluetooth üzerinden eşleştirin (**Intune** > **cihaz Yapılandırması** > **profilleri**  >  **Profili oluşturma** > **Android Kurumsal** Platform > **yalnızca cihaz sahibi, cihaz kısıtlamaları** profili türü > **adanmış cihazlar** > **bilgi noktası modu**: **Multi-App** > **Bluetooth yapılandırma**). 
+Android Enterprise, cihazı çoklu uygulama bilgi noktası modunda ayrılmış bir cihaz olarak çalışırken sahip ayarları etkinleştirebilirsiniz. Bu güncelleştirmede, Bluetooth etkinleştirmek son kullanıcıların ve cihazların Bluetooth üzerinden eşleştirin (**Intune** > **cihaz Yapılandırması** > **profilleri**  >  **Profili oluşturma** > **Android Kurumsal** Platform > **yalnızca cihaz sahibi, cihaz kısıtlamaları** profili türü > **adanmış cihazlar** > **bilgi noktası modu**: **Multi-App** > **Bluetooth yapılandırma**). 
 
 Yapılandırabileceğiniz ayarlar görmek için Git [izin vermek veya özellikleri kısıtlamak için Android Kurumsal cihaz ayarları](device-restrictions-android-for-work.md).
 
@@ -124,7 +146,7 @@ Bu özellik hakkında daha fazla bilgi için şuraya gidin [kullanmak ve Microso
 Şunun için geçerlidir: Android Kurumsal
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows güncelleştirme bildirimleri  <!-- 3316758, 3316782  -->
-İki ekledik *kullanıcı deneyimi ayarlarını* ayarları Windows Update'e halka yapılandırmalar gelen Intune konsolundan yönetebilirsiniz. Artık şunları yapabilirsiniz:
+İki ekledik *kullanıcı deneyimi ayarlarını* Windows güncelleştirmesi halka yapılandırmalar gelen Intune konsolundan yönetebilirsiniz. Artık şunları yapabilirsiniz:
 - Kullanıcılara izin ver veya engelle [Windows güncelleştirmeleri için tarama](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
 - Yönetme [Windows güncelleştirme bildirimi düzeyine](windows-update-settings.md#windows-update-notification-level) kullanıcılar görür.
 
@@ -207,7 +229,7 @@ Kapsam etiketleri, artık Apple VPP belirteçleri ekleyebilirsiniz. Bu etikete s
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
 #### <a name="updated-certificate-connectors-----icm-113304612---"></a>Güncelleştirilmiş sertifika bağlayıcılar  <!-- ICM 113304612 -->
-Güncelleştirmeler için hem de yayımladık [Intune sertifika Bağlayıcısı ve PFX sertifika Bağlayıcısı'nı](certficates-pfx-configure.md#whats-new-for-connectors). Yeni sürümleri bazı bilinen sorunlar düzeltildi.  
+Güncelleştirmeler için hem de yayımladık [Intune sertifika Bağlayıcısı ve PFX sertifika Bağlayıcısı Intune için](certficates-pfx-configure.md#whats-new-for-connectors). Yeni sürümleri bazı bilinen sorunlar düzeltildi.  
 
 ### <a name="app-management"></a>Uygulama yönetimi
 
@@ -376,7 +398,7 @@ Intune'da seçin **istemci uygulamaları** > **uygulamaları** > "Uygulama adı"
 Adlı yeni bir ekran **uygulama kategorileri** Windows 10 için Şirket portalı uygulaması gezinme ve seçim deneyimini iyileştirmek üzere eklendi. Kullanıcılar artık kategoriler altında gibi sıralanan uygulamalarını görmek **öne çıkan**, **eğitim**, ve **üretkenlik**. Bu değişikliği Şirket portalı sürümleri 10.3.3451.0 görünür ve daha sonra. Yeni ekran görüntülemek için bkz: [uygulama kullanıcı Arabirimindeki yenilikler](https://docs.microsoft.com/intune/whats-new-app-ui). Şirket portalı'nda uygulama hakkında daha fazla bilgi için bkz. [yüklemek ve paylaşmak cihazınızdaki uygulamaların](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI uyumluluk uygulaması <!-- 1455231 doc-work-item -->
-Power BI çevrimiçi kullanarak Intune veri ambarı'nızı erişim [Intune uyumluluk (veri ambarı)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) uygulama. Bu Power BI uygulaması ile artık erişmek ve herhangi bir kurulum yapmadan ve web tarayıcınızı çıkmadan önceden oluşturulmuş raporları paylaşabilirsiniz. Ek bilgi için bkz: [değişiklik günlüğü - Power BI uyumluluğu uygulama](reports-changelog.md#power-bi-compliance-app).
+Power BI çevrimiçi kullanarak Intune veri ambarı'nızı erişim [Intune uyumluluk (veri ambarı)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) uygulama. Bu Power BI uygulaması ile artık erişmek ve herhangi bir kurulum yapmadan ve web tarayıcınızı çıkmadan önceden oluşturulmuş raporları paylaşabilirsiniz. Ek bilgi için bkz: [değişiklik günlüğü - Power BI uyumluluğu uygulama](reports-changelog.md#power-bi-compliance-app).
 
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması

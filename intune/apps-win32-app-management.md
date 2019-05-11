@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426162"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135114"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -142,8 +142,8 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
     Örneğin, app filename ise **MyApp123**, aşağıdakileri ekleyin:<br>
     `msiexec /p “MyApp123.msp”`<p>
     Ve uygulama `ApplicationName.exe`, komut tarafından paket tarafından desteklenen komut satırı bağımsız değişkenlerini (anahtarlar) ve ardından uygulama adı olur. <br>Örneğin:<br>
-    `ApplicationName.exe /quite`<br>
-    Yukarıdaki komutta `ApplicaitonName.exe` paketini destekler `/quite` komutu bağımsız değişken.<p> Uygulama paketi tarafından desteklenen belirli bağımsız değişkenler için uygulama satıcınıza başvurun.
+    `ApplicationName.exe /quiet`<br>
+    Yukarıdaki komutta `ApplicationName.exe` paketini destekler `/quiet` komutu bağımsız değişken.<p> Uygulama paketi tarafından desteklenen belirli bağımsız değişkenler için uygulama satıcınıza başvurun.
 
 3.  Uygulamanın GUID'si temelinde uygulamayı kaldırmak için kaldırma komut satırının tamamını ekleyin. 
 
@@ -282,9 +282,6 @@ Bu noktada, bir Win32 uygulaması Intune'a eklemek için adımları tamamladın�
 ## <a name="app-dependencies"></a>Uygulama bağımlılıkları
 
 Uygulama bağımlılıkları Win32 Uygulama yüklenmeden önce yüklenmesi gereken uygulamalardır. Diğer uygulamalara bağımlılıkları olarak yüklendiğini gerektirebilir. Özellikle, Win32 Uygulama yüklenmeden önce cihaz bağımlı uygulamalarını yüklemeniz gerekir. Dahil edilen tüm bağımlılıklarını içeren en fazla 100 bağımlılık bağımlılıkları yanı sıra uygulama. Yalnızca, Win32 uygulaması olduğundan eklendi ve Intune'a yükledikten sonra Win32 Uygulama bağımlılıklarını ekleyebilirsiniz. Win32 uygulama eklendikten sonra göreceğiniz **bağımlılıkları** Win32 uygulamanızın dikey penceresinde seçeneği. 
-
-> [!NOTE]
-> Intune yönetim aracısı için 1904 biz hizmeti yükselttikten sonra bir veya iki ek hafta sürebilir 1904 sürüme (1.18.120.0 büyük), yalnızca yükseltildikten sonra uygulama bağımlılık işlevselliği kullanılabilir.
 
 Uygulama bağımlılığı eklerken, arama yapabilirsiniz uygulama adı ve yayımcı göre. Ayrıca, eklenen bağımlılıklarınızı uygulama adı ve yayımcı göre sıralayabilirsiniz. Daha önce eklenen Uygulama bağımlılıklarını, eklenen uygulama bağımlılık listesi seçilemez. 
 

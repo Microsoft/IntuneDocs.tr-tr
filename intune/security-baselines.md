@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
+ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490713"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197636"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune'da Windows 10 Güvenlik taban çizgisi oluşturma
 
@@ -61,7 +61,7 @@ Ortak yönetilen cihazların kullanırken geçmelidir **cihaz Yapılandırması*
 ## <a name="create-the-profile"></a>Profili oluşturma
 
 1. İçinde [Azure portalında](https://portal.azure.com/)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
-2. Seçin **güvenlik temellerini (Önizleme)**. Kullanılabilir temelleri listesi kullanılabilir. Daha fazla temelleri eklendikçe bunları burada görürsünüz:
+2. Seçin **cihaz güvenliği** > **güvenlik temellerini (Önizleme)**. Kullanılabilir temelleri listesi kullanılabilir. Daha fazla temelleri eklendikçe bunları burada görürsünüz:
 
     ![Intune şu anda kullanılabilir güvenlik temelleri bakın](./media/security-baselines/available-baselines.png)
 

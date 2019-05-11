@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504216"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135217"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>E-postayı otomatikleştirme ve eylemleri uyumsuz cihazlar için Intune'da ekleme
 
@@ -103,9 +103,6 @@ Ayrıca, uyumluluk ilkesi oluştururken veya mevcut ilkeyi güncelleştirirken b
          - Grupları seçerek **Ek alıcılar** girin
     
     - **Uyumsuz bir cihazı uzaktan kilitleme**: Cihaz uyumsuz olduğunda, cihazı kilitler. Bu eylem, kullanıcının bir PIN veya geçiş kodunu cihazın kilidini açmak için girmesini zorlar. 
-
-    - **Uyumsuz cihaz devre dışı bırakma**: Cihaz uyumsuz olduğunda, tüm şirket verileri cihaz dışında kaldırın ve cihazı Intune yönetiminden kaldırır. Bir cihazın yanlışlıkla silme önlemek için bu eylem, en az bir zamanlama destekler **30** gün.  
-
     
 5. Yapılandırma bir **zamanlama**: Kullanıcıların cihazlarında eylemi tetiklemesine uyumsuzluktan sonra (0 ila 365) gün sayısını girin. Bu yetkisiz kullanım süresinden sonra bir koşullu erişim ilkesini zorlayabilirsiniz. Girerseniz **0** gün sonra koşullu erişim (sıfır) sayısı etkinleşir **hemen**. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
 

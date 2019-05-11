@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 491610fcefa1b20159ebfe487c9e2d95a6f5e7c6
+ms.sourcegitcommit: 586114e1beee31aa8553f69c0ba4d731afcb45e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65402060"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -189,7 +189,7 @@ VPN, WiFi ve diğer kaynaklara sahip bir cihaz kimliğini doğrulamak için bir 
 3. **Ayarlar**'a gidin ve daha önce içeri aktarmış olduğunuz .cer dosyası Kök CA Sertifikası'nı girin.
 
    > [!NOTE]
-   > **Adım 3**’te seçtiğiniz platforma bağlı olarak olabilir sertifikanın **Hedef deposunu** seçebilir veya seçemeyebilirsiniz.
+   > Te seçtiğiniz platforma bağlı olarak **2. adım**, olabilir veya seçmek için bir seçeneği olmayabilir **hedef depo** sertifikası.
 
    ![Bir profil oluşturun ve güvenilen bir sertifika yükleyin](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
@@ -248,16 +248,21 @@ Sertifikaları Intune’da içeri aktardıktan sonra bir **PKCS içeri aktarılm
 ## <a name="whats-new-for-connectors"></a>Bağlayıcılar için yenilikler nelerdir?
 İki sertifika bağlayıcılar için güncelleştirmeleri düzenli aralıklarla yayınlanır. Bir bağlayıcı güncelleştiriyoruz, değişiklikler hakkında buradan okuyabilirsiniz. 
 
-*PFX sertifikaları bağlayıcı* [otomatik güncelleştirmeleri destekleyen](#requirements), Intune sertifika Bağlayıcısı el ile güncelleştirilirken.
+*Intune için PFX sertifikaları Bağlayıcısı* [otomatik güncelleştirmeleri destekleyen](#requirements), ancak *Intune sertifika bağlayıcı* el ile güncelleştirilir.
+
+### <a name="may-6-2019"></a>6 Mayıs 2019
+- **Microsoft Intune - sürüm 6.1905.0.402 için PFX sertifikaları Bağlayıcısı**  
+  Bu sürümdeki değişiklikler:  
+  - Bağlayıcı için yoklama aralığı 30 saniye ila 5 dakika veya azaltılır.
  
 ### <a name="april-2-2019"></a>2 Nisan 2019
-- **NDES sertifika Bağlayıcısı - 6.1904.1.0 sürümü**  
+- **Intune sertifika Bağlayıcısı - 6.1904.1.0 sürümü**  
   Bu sürümdeki değişiklikler:  
   - Burada bağlayıcı bağlayıcısına genel yönetici hesabıyla oturum açtıktan sonra Intune'a kaydedilebilmesi başarısız olabilir bir sorun düzeltildi.  
   - Sertifika iptali için güvenilirlik düzeltmeleri içerir.  
   - PKCS sertifika isteklerini ne kadar hızlı işlenir artırmak için performans düzeltmelerini içerir.  
 
-- **PFX sertifika Bağlayıcısı - 6.1904.0.401 sürümü**
+- **Microsoft Intune - sürüm 6.1904.0.401 için PFX sertifikaları Bağlayıcısı**
   > [!NOTE]  
   > PFX connector'ın bu sürümü için otomatik güncelleştirme 11 Nisan 2019 kadar kullanılamaz.  
 
