@@ -397,36 +397,6 @@
             - name: Mobile Threat Defense
               href: mobile-threat-defense.md
               items:
-                - name: Lookout’u ayarlama
-                  href: lookout-mobile-threat-defense-connector.md
-                  items:
-                    - name: Lookout ve Intune tümleştirmesi
-                      href: lookout-mtd-connector-integration.md
-                - name: Symantec'i ayarlama
-                  href: skycure-mobile-threat-defense-connector.md
-                  items:
-                    - name: Symantec ve Intune tümleştirmesi
-                      href: skycure-mtd-connector-integration.md
-                - name: Check Point’i ayarlama
-                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-                  items:
-                    - name: Check Point ve Intune tümleştirmesi
-                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-                - name: Zimperium’u ayarlama
-                  href: zimperium-mobile-threat-defense-connector.md
-                  items:
-                    - name: Zimperium ve Intune tümleştirmesi
-                      href: zimperium-mtd-connector-integration.md
-                - name: Pradeo’yu Ayarlama
-                  href: pradeo-mobile-threat-defense-connector.md
-                  items:
-                    - name: Pradeo ve Intune tümleştirmesi
-                      href: pradeo-mtd-connector-integration.md
-                - name: Better Mobile’ı ayarlama
-                  href: better-mobile-threat-defense-connector.md
-                  items:
-                    - name: Better Mobile ve Intune tümleştirmesi
-                      href: better-mobile-mtd-connector-integration.md
                 - name: MTD için Intune ayarlama
                   items:
                     - name: MTD uygulamaları ekleme
@@ -435,6 +405,43 @@
                       href: mtd-device-compliance-policy-create.md
                     - name: Intune’da MTD’yi etkinleştirme
                       href: mtd-connector-enable.md
+                - name: MTD uygulamaları
+                  items:
+                    - name: Lookout’u ayarlama
+                      href: lookout-mobile-threat-defense-connector.md
+                      items:
+                        - name: Lookout ve Intune tümleştirmesi
+                          href: lookout-mtd-connector-integration.md
+                    - name: Symantec'i ayarlama
+                      href: skycure-mobile-threat-defense-connector.md
+                      items:
+                        - name: Symantec ve Intune tümleştirmesi
+                          href: skycure-mtd-connector-integration.md
+                    - name: Check Point’i ayarlama
+                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                      items:
+                        - name: Check Point ve Intune tümleştirmesi
+                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                    - name: Zimperium’u ayarlama
+                      href: zimperium-mobile-threat-defense-connector.md
+                      items:
+                        - name: Zimperium ve Intune tümleştirmesi
+                          href: zimperium-mtd-connector-integration.md
+                    - name: Pradeo’yu Ayarlama
+                      href: pradeo-mobile-threat-defense-connector.md
+                      items:
+                        - name: Pradeo ve Intune tümleştirmesi
+                          href: pradeo-mtd-connector-integration.md
+                    - name: Better Mobile’ı ayarlama
+                      href: better-mobile-threat-defense-connector.md
+                      items:
+                        - name: Better Mobile ve Intune tümleştirmesi
+                          href: better-mobile-mtd-connector-integration.md
+                    - name: Sophos Mobile'ı ayarlama
+                      href: sophos-mtd-connector.md
+                      items:
+                        - name: Sophos Mobile ve Intune tümleştirmesi
+                          href: sophos-mtd-connector-integration.md
             - name: Windows Defender ATP
               href: advanced-threat-protection.md
             - name: Güvenlik temelleri
@@ -709,6 +716,8 @@
                   href: wi-fi-settings-ios.md
                 - name: Özel
                   href: custom-settings-ios.md
+                - name: Yerleşik uygulamalar için paket kimlikleri
+                  href: bundle-ids-built-in-ios-apps.md
         - name: Mac OS
           items:
             - name: Uyumluluk ilkesi ayarları
