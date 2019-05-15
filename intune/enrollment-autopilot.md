@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b6355724a0c518cba59f70167adbcf4208fa18a
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 6545724294eefc83789f56f851549c0b5fee7f22
+ms.sourcegitcommit: 01117021dfaebb5507aa146b7369447c3d5a403d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197604"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65626426"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -151,15 +151,17 @@ Belirli bir Autopilot cihazına kullanıcı atayabilirsiniz. Bu atama, Windows k
 
 ## <a name="delete-autopilot-devices"></a>Autopilot cihazlarını silme
 
-Kayıtlı olmayan Windows Autopilot cihazları silebilirsiniz.
+Intune'a kayıtlı olmayan Windows Autopilot cihazları silebilir:
 
-1. Cihazlar Intune’a kayıtlıysa önce bunları [Azure Active Directory portalından silmeniz](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal) gerekir.
+- Windows Autopilot cihazları silmek **cihaz kaydı** > **Windows kayıt** > **cihazları**. Silin ve ardından istediğiniz cihazları seçin **Sil**. Windows Autopilot cihaz silme tamamlanması birkaç dakika sürebilir.
 
-2. [Azure portalında Intune'da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar**'ı seçin.
+Tamamen kiracınızdan bir cihazı kaldırmak, Intune cihaz, cihazın Azure Active Directory ve Windows Autopilot cihaz kayıtlarını silin gerektirir. Intune bu tüm yapılabilir:
 
-3. **Windows Autopilot cihazları** bölümünde silmek istediğiniz cihazları, sonra da **Sil**’i seçin.
+1. Cihazları Intune'a kayıtlı değilse, önce [bunları silin Intune tüm cihazlar dikey penceresinden](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-4. **Evet**'i seçerek silme işlemini onaylayın. Silme işlemi birkaç dakika sürebilir.
+2. Azure Active Directory cihazları cihazlarını silmenizi **cihazları** > **Azure AD cihazları**.
+
+3. Windows Autopilot cihazları silmek **cihaz kaydı** > **Windows kayıt** > **cihazları**. Silin ve ardından istediğiniz cihazları seçin **Sil**. Windows Autopilot cihaz silme tamamlanması birkaç dakika sürebilir.
 
 ## <a name="using-autopilot-in-other-portals"></a>Autopilot'ı diğer portallarda kullanma
 Mobil cihaz yönetimi ile ilgilenmiyorsanız, Autopilot'ı diğer portallarda kullanabilirsiniz. Diğer portalları kullanmak bir seçenek olsa da Autopilot dağıtımlarınızı yönetmek için yalnızca Intune kullanmanızı öneririz. Intune'u ve başka bir portalı kullandığınızda Intune şunları yapamaz:  

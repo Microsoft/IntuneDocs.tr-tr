@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2dd523b1c624de9fbdb12cc4f90cafa5c4395250
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527208"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619439"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot'ı kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -211,7 +211,14 @@ Değiştirmek bir cihaz profili durumu için yaklaşık 15 dakika sürer *atanma
 1. Seçin **ayarları**ve ardından bir **bilgisayar adı ön eki**, **etki alanı adı**ve (isteğe bağlı) **kuruluş birimi** içinde[DN biçiminde](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Seçin **Tamam** > **oluşturma**.  
     Profil oluşturulur ve listede görüntülenir.
-1. Profili atamak için [Cihaz profili atama](device-profile-assign.md#assign-a-device-profile) altındaki adımları izleyin. 
+1. Profili atamak için altındaki adımları [bir cihaz profili atama](device-profile-assign.md#assign-a-device-profile) ve bu adımda kullanılan aynı gruba profil atayın [bir cihaz grubu oluşturma](windows-autopilot-hybrid.md#create-a-device-group)
+   - Birden çok etki alanına profillerini dağıtma
+   
+     a. Belirli bir Autopilot dağıtım profili ile tüm Autopilot cihazları içeren dinamik bir grup oluşturmak, (device.enrollmentProfileName - eq "Autopilot profili adı") girin. 
+     
+     b. Altında oluşturulan profil görünen adı 'Autopilot profili adı' yerine [oluşturma ve bir Autopilot dağıtım profili atama](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile). 
+     
+     c. Birden çok Autopilot dağıtım profilleri oluşturduktan ve cihazın bu dinamik grupta belirtilen profil atayabilirsiniz.
 
 > [!NOTE]
 > Hibrit Azure AD'ye katılımı için Windows Autopilot için adlandırma özellikleri seri % gibi değişkenleri desteklemiyor ve ön ekleri için bilgisayar adı yalnızca destekler.
