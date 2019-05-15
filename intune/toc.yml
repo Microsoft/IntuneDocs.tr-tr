@@ -552,6 +552,8 @@
               href: app-configuration-policies-use-ios.md
             - name: Android yönetilen cihazlar
               href: app-configuration-policies-use-android.md
+            - name: Android Enterprise için Yönetilen Ana Ekran uygulaması
+              href: app-configuration-managed-home-screen-app.md
             - name: Yönetilen uygulamalar
               href: app-configuration-policies-managed-app.md
             - name: iOS uygulama sağlama profillerini kullanma
