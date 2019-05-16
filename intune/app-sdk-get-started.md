@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/24/2019
+ms.date: 04/29/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6f2729918a164989714f88564ef0f42f7f319f16
+ms.sourcegitcommit: d21cf21dee15b11b8206bf92cc602b082e9846a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506007"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65709057"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -164,7 +164,7 @@ iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek içi
     
     * Bir son kullanıcı hesabı kullanarak mobil bir cihazda uygulamanızı test ediyorsanız, o hesabı, bir yönetici hesabı ile oturum açtıktan sonra Microsoft 365 Yönetim Merkezi Web sitesinde bir Intune lisansı tarafından verdiğiniz, bkz: olun [atama Microsoft Intune lisansı ](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
-* **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak için her ilke ayarı için beklenen davranış ne olduğunu bilmeniz. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](app-protection-policy-settings-android.md).
+* **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak için her ilke ayarı için beklenen davranış ne olduğunu bilmeniz. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](app-protection-policy-settings-android.md). Uygulamanız Intune SDK'sı tümleşiktir ancak Azure portalında henüz hedeflenen bir uygulama olarak listede değilse, bunu bir ilkeyle seçerek hedefleyebilirsiniz "+ daha fazla uygulama" seçeneğini ve paket Kimliğini (iOS) veya paket adına (Android) metin kutusuna sağlama.
 
 * **Sorun giderme**: Uygulama yükleme kullanıcı deneyimini el ile sınarken herhangi bir sorunla karşılaşırsanız çalıştırırsanız, bkz. [uygulaması yükleme sorunlarını giderme](troubleshoot-app-install.md). 
 

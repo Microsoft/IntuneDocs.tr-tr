@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57527d0b1825d0e8d3fefb63d1b960ab3fb5c676
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cac92aeac895201459e692aae164f51dab10dfb0
+ms.sourcegitcommit: ca0f48982e49e90bc14fac5575077445e027f728
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508133"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65712633"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -49,38 +49,53 @@ Intune'u Jamf Pro ile bağlamak için:
 
 ## <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory'de uygulama oluşturma
 
-1. İçinde [Azure portalında](https://portal.azure.com)Git **Azure Active Directory** > **uygulama kayıtları**.
-2. Seçin **+ yeni uygulama kaydı**.
-3. **Jamf Koşullu Erişim** gibi bir **görünen ad** girin.
-4. Seçin **Web uygulaması / API**.
-5. Jamf Pro örneği URL'nizi kullanarak **Oturum Açma URL'si** değerini belirtin.
-6. **Oluştur**’u seçin. Uygulama oluşturulur ve portalın uygulama ayrıntıları sunar.
-7. Bir kopyasını kaydedin **uygulama kimliği** yeni uygulama için. Daha sonraki bir yordamda bu kimliği belirt Ardından, **ayarları** gidin **API erişimi** > **anahtarları**.
-8. Üzerinde *anahtarları* bölmesinde belirtin bir **açıklama**, ne kadar bekleneceğini **Expires**ve ardından **Kaydet** uygulama oluşturmak için Anahtar (değer).
+1. İçinde [Azure portalında](https://portal.azure.com)Git **Azure Active Directory** > **uygulama kayıtları**ve ardından **yeni kayıt**. 
 
-   > [!IMPORTANT]
-   > Uygulama Anahtarı yalnızca bir kez bu işlem sırasında gösterilir. Kolayca alabileceğiniz bir yere kaydettiğinizden emin olun.
+2. Üzerinde **bir uygulamayı kaydetme** sayfasında, aşağıdaki bilgileri belirtin:
+   - İçinde **adı** bölümünde, bir anlamlı uygulama adı girin, örneğin **Jamf koşullu erişim**.
+   - İçin **desteklenen hesap türleri** bölümünden **herhangi bir kuruluş dizini hesaplarında**. 
+   - İçin **yeniden yönlendirme URI'si**, varsayılan Web değerini bırakın ve ardından Jamf Pro örneğinizin URL'sini belirtin.  
 
-8. Üzerinde *ayarları* uygulama bölmesine gidin **API erişimi** > **gerekli izinler**. Var olan herhangi bir izni seçin ve ardından **Sil** ve tüm izinleri silin. Mevcut eylemleri silerek, yeni bir izin eklemeniz ve uygulamayı sadece tek gerekli izni varsa çalışır gereklidir.  
-9. Yeni bir izin atamak için **+ Ekle** > **bir API seçin** > **Microsoft Intune API**ve ardından **seçin**.
-10. Üzerinde *erişimini etkinleştir* bölmesinde **Microsoft Intune cihaz öznitelikleri Gönder** ve ardından **seçin**, ardından **Bitti**.
-11. Üzerinde *gerekli izinler* bölmesinde **izinler** ve ardından **Evet** uygulama için gerekli izinleri.
+3. Seçin **kaydetme** uygulama oluşturmak için ve yeni bir uygulama için genel bakış sayfasını açın.  
+
+4. Uygulamasında **genel bakış** sayfasında, kopya **uygulama (istemci) kimliği** değeri ve daha sonra kullanmak üzere kaydedin. Bu değer sonraki yordamlarda gerekir.  
+
+5. Seçin **sertifikaları ve parolaları** altında **Yönet**. Seçin **yeni gizli** düğmesi. Bir değer girin **açıklama**, tüm seçeneğini **Expires** ve **Ekle**.
+
+   > [!IMPORTANT]  
+   > Bu sayfadan ayrılmadan önce gizli anahtar değerini kopyalayın ve daha sonra kullanmak üzere kaydedin. Bu değer sonraki yordamlarda gerekir. Bu değer, uygulama kaydını yeniden oluşturmanıza gerek kalmadan kullanılamaz.  
+
+6. Seçin **API izinleri** Yönet altında.  Mevcut izinleri seçin ve ardından **kaldırma izni** bu izinleri silinemedi. Var olan tüm izinleri kaldırma işlemi, yeni bir izin ekleyeceksiniz ve uygulamayı sadece tek gerekli izni varsa çalışır gereklidir.  
+
+7. Yeni bir izin atamak için **bir izin eklemek**. Üzerinde **istek API izinleri** sayfasında **Intune**ve ardından **uygulama izinleri**. Yalnızca ait onay kutusunu **update_device_attributes**.  
+
+   Seçin **iznini ekleyin** bu yapılandırmayı kaydetmek için.  
+
+8. Üzerinde **API izinleri** sayfasında **Microsoft için yönetici onayı vermek**ve ardından Evet'i seçin.  
+
+   Azure AD'de uygulama kayıt işlemi tamamlanmıştır.
+
 
     > [!NOTE]
-    > Uygulama anahtarı süresi dolarsa, Microsoft Azure'da yeni bir Uygulama Anahtarı oluşturmalısınız ve ardından Jamf Pro koşullu erişim verileri güncelleştirin. Azure, servis kesintilerini önlemek için hem eski anahtarı hem de yeni anahtarı aktif hale getirmenizi sağlar.
+    > İstemci gizli anahtarı süresi dolarsa, Azure'da yeni bir istemci gizli anahtarı oluşturma ve ardından Jamf Pro koşullu erişim verileri güncelleştirin. Azure, hem eski gizli ve yeni anahtar hizmet kesintilerini önlemek için etkin olmasını sağlar.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Jamf Pro ile tümleştirmek için Intune’u etkinleştirme
 
-1. İçinde [Azure portalında](https://portal.azure.com)Git **Intune** > **cihaz uyumluluğu** > **iş ortağı cihaz Yönetimi**.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=20909)ve Git **Intune** > **cihaz uyumluluğu** > **iş ortağı cihaz Yönetimi**.
+
 2. Önceki yordama sırasında kaydedilmiş uygulama kimliği yapıştırarak Jamf için Uyumluluk Bağlayıcısı'nı etkinleştir **Jamf Azure Active Directory Uygulama Kimliği** alan.
+
 3. **Kaydet**’i seçin.
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro'da Microsoft Intune tümleştirmesini yapılandırma
 
 1. Jamf Pro'da **Küresel Yönetim** > **Şartlı Erişim**'e gidin. **Microsoft Intune Tümleştirmesi** sekmesinde **Düzenle** düğmesine tıklayın.
+
 2. **Microsoft Intune Tümleştirmesini Etkinleştir** onay kutusunu seçin.
-3. Önceki adımlardan kaydettiğiniz **Yer**, **Alan Adı**, **Uygulama Kimliği** ve **Uygulama Anahtarı** de dahil olmak üzere Azure kiracısı hakkında gerekli bilgileri sağlayın.
-4. **Kaydet**’i seçin. Jamf Pro, test ayarlarınızı ve başarınızı doğrulayın.
+
+3. Dahil olmak üzere Azure kiracısı hakkında gerekli bilgileri sağlayın **konumu**, **etki alanı adı**, **uygulama kimliği**ve değeri *istemci Gizli dizi* Azure AD'de uygulama oluştururken kaydedildi.  
+
+4. **Kaydet**’i seçin. Jamf Pro, test ayarlarınızı ve başarınızı doğrular.
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Uyumluluk ilkelerini ayarlama ve cihazları kaydetme
 

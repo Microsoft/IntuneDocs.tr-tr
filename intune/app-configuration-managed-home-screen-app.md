@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17ab1fb385bb1079a834f0a6fa690223ab64163
-ms.sourcegitcommit: 01117021dfaebb5507aa146b7369447c3d5a403d
+ms.openlocfilehash: 2e2dfcaee050ad506da225e179efbc5fc49f1c89
+ms.sourcegitcommit: ca0f48982e49e90bc14fac5575077445e027f728
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65627240"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65712640"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Yapılandırma Microsoft yönetilen Android Enterprise için giriş ekranı uygulaması
 
@@ -59,10 +59,10 @@ Aşağıdaki tabloda, giriş ekranı yönetilen kullanılabilir yapılandırma a
 
 | Yapılandırma anahtarı | Değer türü | Varsayılan Değer | Açıklama |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kılavuz boyutunu ayarlama | dize | Otomatik | Yönetilen giriş ekranında konumlandırılan uygulamalar için kılavuz boyutu ayarlamanıza olanak tanır. Uygulama satırları ve sütunları kılavuz boyutu şu biçimde tanımlamak için sayısını ayarlayabilirsiniz (`rows;column`). Izgara boyutunu tanımlarsanız, bir satır için giriş ekranınızdaki gösterilir uygulamaların en yüksek sayısı ayarladığınız satır sayısını olacaktır ve giriş ekranına sütununda gösterilen uygulama maksimum sayısı ayarladığınız sütun sayısı olacaktır. |
+| Kılavuz boyutunu ayarlama | dize | Otomatik | Yönetilen giriş ekranında konumlandırılan uygulamalar için kılavuz boyutu ayarlamanıza olanak tanır. Uygulama satırları ve sütunları kılavuz boyutu şu biçimde tanımlamak için sayısını ayarlayabilirsiniz `rows;columns`. Izgara boyutunu tanımlarsanız, bir satır için giriş ekranınızdaki gösterilir uygulamaların en yüksek sayısı ayarladığınız satır sayısını olacaktır ve giriş ekranına sütununda gösterilen uygulama maksimum sayısı ayarladığınız sütun sayısı olacaktır. |
 | Ekran başlığı etkinleştir | bool | TRUE | Üst başlık, akış veya akış kartlar gibi yönetilen giriş ekranına sunan farklı görünümleri sağlar. Bu ayarı etkinleştirirseniz, cihaz kullanıcılarının başlığı görürsünüz. |
-| -Cihaz durum çubuğu etkinleştirin | bool | TRUE | Giriş ekranı (wifi ve vb. gibi geçerli bağlantılarını görüntüleyen üst çubuk.) durum çubuğunda sağlar. Bu yapılandırma anahtarı etkinleştirirseniz son kullanıcı bağlantıları ve etkin uygulamalar temsil eden durum çubuklarında görüntülenen simgeler görmeniz mümkün olacaktır. |
-| Bildirimleri rozetini etkinleştir | bool | FALSE | Uygulama simgeleri için sayılarını gösteren bildirim rozet sağlar. uygulamasındaki yeni bildirimleri. Bu ayarı etkinleştirirseniz, son kullanıcılar sahip olan uygulamalar üzerinde bildirim rozetleri görür okunmamış bildirimler. Son kullanıcı badged olabilecek uygulamalar için herhangi bir bildirim görürsünüz, bu yapılandırmanın anahtar devre dışı tutarsanız da değil okunmamış bildirimler. |
+| Cihaz durum çubuğu | bool | TRUE | Giriş ekranı (wifi ve vb. gibi geçerli bağlantılarını görüntüleyen üst çubuk.) durum çubuğunda sağlar. Bu yapılandırma anahtarı etkinleştirirseniz son kullanıcı bağlantıları ve etkin uygulamalar temsil eden durum çubuklarında görüntülenen simgeler görmeniz mümkün olacaktır. |
+| Bildirimleri rozetini etkinleştir | bool | FALSE | Yeni bildirim sayısı gösteren uygulama bildirim rozet uygulama simgeleri için etkinleştirir. Bu ayarı etkinleştirirseniz, son kullanıcılar sahip olan uygulamalar üzerinde bildirim rozetleri görür okunmamış bildirimler. Son kullanıcı badged olabilecek uygulamalar için herhangi bir bildirim görürsünüz, bu yapılandırmanın anahtar devre dışı tutarsanız da değil okunmamış bildirimler. |
 | Kilit giriş ekranı | bool | TRUE | Giriş ekranında uygulama simgeleri taşıma yeteneğini son kullanıcının kaldırır. Bu yapılandırma anahtarı etkinleştirirseniz, uygulama simgeleri için giriş ekranınızdaki kilitlenir ve son kullanıcı giriş ekranı farklı kılavuz konumlara sürükleyip mümkün olmaz. Etkinleştirdiyseniz `false`, son kullanıcılar yönetilen giriş ekranında uygulama ve Web bağlantısı simgeleri taşımak mümkün olacaktır.  |
 | Cihaz duvar kağıdı ayarlayın | dize | Varsayılan | Duvar kağıdı olarak ayarlamak istediğiniz görüntünün URL'sini girerek bir duvar kağıdı, tercih ettiğiniz ayarlamanıza olanak tanır. |
 | Uygulama simgesi boyutunu ayarlama | integer | 2 | Giriş ekranında görüntülenen uygulama için bir simge boyutu ayarlamanıza olanak tanır. Bu yapılandırma için farklı boyutlarda - 0 (en küçüğe), 1 (küçük), 2 (Regular), aşağıdaki değerleri seçin (büyük) 3 ve 4 (büyük). |
@@ -85,7 +85,7 @@ Aşağıdaki tabloda, giriş ekranı yönetilen kullanılabilir yapılandırma a
 | Ekran koruyucu etkinleştirmek için etkin olmayan zaman | integer | 30 | Ekran koruyucu tetiklemeden önce cihazı devre dışı kaldığı saniye sayısı. 0 olarak cihaz hiçbir zaman ekran koruyucu moduna geçer. |
 | Ekran koruyucu göstermeden önce medya algılayın | bool | TRUE | Cihazda ses/video oynatma, cihaz ekranında ekran koruyucu göstermelidir olup olmadığını seçin. TRUE olarak cihaz değeri ne olursa olsun ses/video, çalışmaz, **inactive_time_to_show_scree_saver**. False olarak ayarlanırsa, cihaz ekranı Ekran koruyucu ayarlanan değere göre gösterilir, **inactive_time_to_show_screen_saver**.   |
 | Sanal giriş düğmesini etkinleştir | bool | FALSE | Bu ayarı etkinleştirmek `True` son kullanıcı oldukları geçerli görev yönetilen giriş ekranına dönersiniz yönetilen giriş ekranı giriş düğmesi erişmesine izin vermek için.  |
-| Sanal giriş düğmesi türü | dize | Swipe_up | Kullanım **swipe_up** erişim giriş düğmesi ile bir çekme hareketi'kurmak için. Kullanım **float** , ekranın son kullanıcı tarafından taşınabilir bir Yapışkan, kalıcı giriş düğmesi erişmek için. |
+| Sanal giriş düğmesi türü | dize | swipe_up | Kullanım **swipe_up** erişim giriş düğmesi ile bir çekme hareketi'kurmak için. Kullanım **float** , ekranın son kullanıcı tarafından taşınabilir bir Yapışkan, kalıcı giriş düğmesi erişmek için. |
 | Pil ve sinyal gücü gösterge çubuğu | bool | Doğru  | Bu ayar dönüştürmeye `True` pil ve sinyal gücü göstergesi çubuğunu gösterir. |
 | Çıkış kilit görev modu parolası | dize |   | Sorun giderme için kilit görev modundan geçici olarak bırakmak için kullanılacak bir 4-6 basamaklı kodu girin. |
 | Wi-Fi ayar Göster | bool | FALSE | Bu ayar dönüştürmeye `True` Aç veya kapat Wi-Fi veya farklı bir Wi-Fi ağlarına bağlanmak için son kullanıcı sağlar.  |
