@@ -14,7 +14,7 @@
           href: whats-new-app-ui.md
         - name: Geliştirme aşamasındaki özellikler
           href: in-development.md
-- name: Hızlı girişler
+- name: Hızlı başlangıçlar
   items:
     - name: Intune'u ücretsiz olarak deneyin
       href: free-trial-sign-up.md
@@ -442,11 +442,16 @@
                       items:
                         - name: Sophos Mobile ve Intune tümleştirmesi
                           href: sophos-mtd-connector-integration.md
-            - name: Windows Defender ATP
-              href: advanced-threat-protection.md
-            - name: Güvenlik temelleri
-              href: security-baselines.md
+            - name: Microsoft Defender
               items:
+                - name: Microsoft Defender ATP
+                  href: advanced-threat-protection.md
+                - name: Güvenlik görevleri
+                  href: atp-manage-vulnerabilities.md
+            - name: Güvenlik temelleri
+              items:
+                - name: Güvenlik temelleri
+                  href: security-baselines.md
                 - name: Temellerinizi izleme
                   href: security-baselines-monitor.md
             - name: Endpoint protection
@@ -476,7 +481,7 @@
           href: esim-device-configuration.md
         - name: Kimlik koruması
           href: identity-protection-configure.md
-        - name: Yazılım güncelleştirmeleri
+        - name: Yazılım güncellemeleri
           items:
             - name: İş için Windows Update ayarları
               href: windows-update-for-business-configure.md
@@ -543,7 +548,7 @@
               href: apps-windows-10-app-deploy.md
             - name: Kamu ortamları için uygulama dağıtma
               href: apps-deploy-gcc-dod.md
-        - name: Uygulamaları izleme
+        - name: Uygulamalarını izleme
           href: apps-monitor.md
         - name: Uygulama yapılandırma
           href: app-configuration-policies-overview.md
@@ -552,7 +557,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android yönetilen cihazlar
               href: app-configuration-policies-use-android.md
-            - name: Android Enterprise için Yönetilen Ana Ekran uygulaması
+            - name: Yönetilen Giriş Ekranı’nı yapılandırma
               href: app-configuration-managed-home-screen-app.md
             - name: Yönetilen uygulamalar
               href: app-configuration-policies-managed-app.md
@@ -631,7 +636,7 @@
       items:
         - name: Kiracı durumu
           href: tenant-status.md
-        - name: Sorunları Gider
+        - name: Sorun giderme
           items:
             - name: Kullanıcıların sorunları gidermesine yardımcı olma
               href: help-desk-operators.md
@@ -770,8 +775,12 @@
                   href: shared-user-device-settings-windows.md
                 - name: Özel
                   href: custom-settings-windows-10.md
-            - name: Güvenlik temel ayarları
-              href: security-baseline-settings-windows.md
+            - name: Güvenlik temelleri
+              items:
+                - name: Windows 10 temel ayarları
+                  href: security-baseline-settings-windows.md
+                - name: Microsoft Defender ATP temel ayarları
+                  href: security-baseline-settings-defender-atp.md
             - name: Windows Update ayarları
               href: windows-update-settings.md
         - name: Windows 10 Holographic for Business
