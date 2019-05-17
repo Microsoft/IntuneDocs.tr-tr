@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897689"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune cihaz kayıtları için çok faktörlü kimlik doğrulaması isteme
 
@@ -51,7 +51,7 @@ Bir cihaz kaydedildiğinde MFA istemek için şu adımları izleyin:
 >Microsoft Intune kaydı için **Cihaz tabanlı erişim kuralları** yapılandırmayın.
 
 1. Kimlik bilgilerinizle [Microsoft Azure portalında](https://portal.azure.com) oturum açın.
-2. Portalda, Git **Intune** ve **koşullu erişim**. Erişilen koşullu erişim düğümü *Intune* aynı düğümde erişilen aynıdır *Azure AD'ye*.
+2. Portalda **Intune**'a gidip **Koşullu erişim**'i seçin. *Intune*’dan erişilen koşullu erişim düğümü, *Azure AD*’den erişilen düğümle aynıdır.
 4. **Yeni ilke**’yi seçin.
 5. **Yeni** ilkede, ilke için açıklayıcı bir ad yazın.
 6. **Atamalar** kısmında **Kullanıcılar ve gruplar**’ı seçin. 

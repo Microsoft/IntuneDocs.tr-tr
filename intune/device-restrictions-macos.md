@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune - Azure'da macOS cihaz ayarları | Microsoft Docs
+title: Microsoft Intune - Azure'da macOS ayarlarını kullanma | Microsoft Docs
 titleSuffix: ''
-description: Ekle, yapılandırmak veya macOS cihazlarda parola gereksinimlerini ayarlama dahil olmak üzere kısıtlamanıza ayarlarını oluşturun, kilit ekranı kontrol, yerleşik uygulamaları kullanın, kısıtlanmış veya onaylı uygulamalar ekleme, bluetooth cihazların işlemek, yedekleme için buluta bağlayın ve Depolama, bilgi noktası modu etkinleştirme, etki alanlarını ekleyin ve kullanıcıların Microsoft Intune Safari web tarayıcısı ile nasıl etkileşim denetim.
+description: Parola gereksinimlerini belirleme, kilit ekranını denetleme, yerleşik uygulamaları kullanma, kısıtlanmış veya onaylı uygulamalar ekleme, Bluetooth cihazlarını yönetme, yedekleme ve depolama amacıyla buluta bağlanma, bilgi noktası modunu etkinleştirme, etki alanı ekleme ve kullanıcıların Safari web tarayıcısıyla etkileşim kurma şeklini denetleme gibi özellikleri kısıtlama amacıyla Microsoft Intune'daki macOS cihazlar için ayar ekleme, yapılandırma veya oluşturma işlemlerini gerçekleştirin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,111 +17,111 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5feec66e791da4038bd069cdad69a7ba573f27f3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897060"
 ---
-# <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>izin verme veya kısıtlamanıza Intune kullanarak macOS cihaz ayarları
+# <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune'u kullanarak özelliklere izin vermeyi veya bunları kısıtlamayı sağlayan macOS cihaz ayarları
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu makalede, listeler ve macOS cihazlarda denetleyebileceğiniz farklı ayarlar açıklanır. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, izin veya özellikleri devre dışı bırakabilir, parola kuralları, izin veya belirli uygulamalar ve daha fazlasını sınırlamak için bu ayarları kullanın.
+Bu makalede macOS cihazlarda denetleyebileceğiniz farklı ayarlar listelenmekte ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) yönteminizin bir parçası olarak bu ayarları kullanabilir ve bu sayede özellikleri etkinleştirip devre dışı bırakabilir, parola kuralları uygulayabilir, belirli uygulamalara izin verebilir veya bunları kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
 
-Bu ayarlar, ıntune'da cihaz yapılandırma profili eklenir ve ardından atanan veya macOS cihazlarına dağıtılabilir.
+Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra macOS cihazlarınıza atanır veya dağıtılır.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Cihaz kısıtlamalarını yapılandırma profili oluşturma](device-restrictions-configure.md#create-the-profile).
+[Cihaz kısıtlamaları yapılandırma profili oluşturma](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>Genel
 
-- **Tanım aramaya Block**: **Blok** kullanıcının bir word vurgulama ve sonra cihazdaki tanımı bakarak engeller. **Yapılandırılmamış** (varsayılan) tanımına arama özelliğini erişim sağlar.
-- **Block dikte**: **Blok** kullanıcının sesli metin girmek için giriş yapmasını durdurur. **Yapılandırılmamış** (varsayılan), kullanıcının dikte girişini kullanmasını sağlar.
-- **İçeriği önbelleğe alma block**: Seçin **yapılandırılmadı** içerik önbelleğe almayı etkinleştirmek için (varsayılan). İçeriği önbelleğe alma, uygulama verilerini, web tarayıcı verilerini, indirmeler ve daha fazla yerel olarak cihazda depolar. Seçin **blok** önbellekte depolanır, bu verileri önlemek için.
+- **Tanım Aramayı Engelle**: **Engelle** ayarı, kullanıcının belirli bir sözcüğü vurgulayıp cihazda tanımını aramasını engeller. **Yapılandırılmadı** (varsayılan) ayarı, tanım arama özelliğine erişim sağlar.
+- **Dikteyi Engelle**: **Engelle**, kullanıcının metin girmek için sesli giriş kullanmasını durdurur. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcının dikteyle girişi kullanmasına izin verir.
+- **İçeriğin önbelleğe alınmasını engelle**: İçeriğin önbelleğe alınmasını etkinleştirmek için **Yapılandırılmadı** (varsayılan) ayarını seçin. İçeriği önbelleğe alma ayarı uygulama verilerini, web tarayıcısı verilerini, indirilen verileri ve daha fazlasını cihazda depolar. Bu verilerin önbellekte depolanmasını önlemek için **Engelle**'yi seçin.
 
-  Macos'ta içeriği önbelleğe alma ile ilgili daha fazla bilgi için bkz: [Mac üzerinde içerik önbelleğe alınmasını yönetin](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (başka bir Web sitesini açar).
+  macOS cihazlarda içeriği önbelleğe alma özelliği hakkında daha fazla bilgi için bkz. [Mac'te içeriği önbelleğe almayı yönetme](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (başka bir web sitesini açar).
 
   Bu özellik şu platformlarda geçerlidir:  
   - macOS 10.13 ve üzeri
 
-- **Yazılım güncelleştirmelerinin erteleneceği**: Ayarlandığında **yapılandırılmadı** (varsayılan), yazılım güncelleştirmeleri gösterilir cihazda gibi Apple onları serbest bırakır. Bir macOS güncelleştirmesini Apple tarafından belirli bir tarihte yayımlanan, örneğin, sonra bu güncelleştirmeyi doğal olarak yayın tarihindeki cihazda gösterilir. Çekirdek derleme güncelleştirmeleri gecikme olmadan izin verilir.
+- **Yazılım güncelleştirmelerini ertele**: **Yapılandırılmadı** (varsayılan) olarak ayarlandığında Apple tarafından yayımlanan yazılım güncelleştirmeleri anında cihazda gösterilir. Örneğin Apple tarafından bir macOS güncelleştirmesinin yayımlanması durumunda ilgili güncelleştirme normal bir şekilde yayın tarihinde cihazda görünür. Çekirdek derleme güncelleştirmelerine gecikme olmadan izin verilir.
 
-  **Etkinleştirme** 0-90 güne ait cihazlarda yazılım güncelleştirmeleri gösterilirken gecikme sağlar. Bu ayar, güncelleştirmeler veya yüklü olmayan denetlemez. 
+  **Etkinleştir** ayarını kullanarak güncelleştirmelerin cihazlarda gösterilmesini 0-90 gün boyunca geciktirebilirsiniz. Bu ayar, güncelleştirmelerin yüklenme tarihini veya durumunu denetlemez. 
 
-  - **Yazılım güncelleştirmelerini görünürlüğünü gecikme**: 0-90 gün arasında bir değer girin. Gecikme süresi dolduğunda kullanıcılar gecikme tetiklendiğinde erken kullanılabilir işletim sistemi sürümüne güncelleştirmek için bildirim alın.
+  - **Yazılım güncelleştirmelerinin görünürlüğünü geciktir**: 0-90 gün arasında bir değer girin. Gecikme süresi sona erdiğinde kullanıcılara gecikmenin tetiklendiği tarihte kullanılabilir durumda olan en eski işletim sistemi sürümüne güncelleştirme bildirimi gönderilir.
 
-    Örneğin, bir macOS güncelleştirme kullanılabilir ise **1 Ocak**, ve **gecikme görünürlük** ayarlanır **5 gün**, sonra güncelleştirmeyi, cihazlarda kullanılabilir bir güncelleştirme olarak gösterilmiyor. Üzerinde **altıncı gün** sürümünden güncelleştirmesi kullanıma sunuldu ve son kullanıcılar da yükleyebilirsiniz.
+    Örneğin **1 Ocak** tarihinde bir macOS güncelleştirmesinin yayımlanması ve **Görünürlük geciktirme** ayarının **5 gün** olması durumunda bu güncelleştirme, cihazlarda kullanılabilir güncelleştirme olarak gösterilmez. Yayımlandıktan sonraki **altıncı günde** bu güncelleştirme kullanıma sunulur ve kullanıcılar tarafından yüklenebilir.
 
     Bu özellik şu platformlarda geçerlidir:  
     - macOS 10.13.4 ve üzeri
 
-## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
+## <a name="password"></a>Parola
 
-- **Parola**: **Gerekli** son kullanıcının cihaza erişmek için bir parola girin. **Yapılandırılmamış** (varsayılan), bir parola gerektirmez ve basit parolalar engelleme veya en düşük uzunluğunu ayarlama gibi kısıtlamalar zorlamaz.
-  - **Gerekli parola türü**: Olup parolanın yalnızca sayısal olabileceğini ya da alfasayısal olması gerektiğini belirtin (harfler ve sayılar içeren). Bu ayar yalnızca Mac OS X sürüm 10.10.3 ve üzerinde desteklenir.
+- **Parola**: Son kullanıcının cihaza erişmek için parola girmesini **zorunlu tutun**. **Yapılandırılmadı** (varsayılan) ayarı parola gerektirmez ve basit parolaları engelleme veya uzunluk alt sınırı ayarlama gibi kısıtlamalar belirlemez.
+  - **Gerekli parola türü**: Parolanın yalnızca Sayısal olabileceğini ya da Alfasayısal (harfler ve sayılar içeren) olması gerektiğini belirtin. Bu ayar yalnızca Mac OS X sürüm 10.10.3 ve üzerinde desteklenir.
   - **Paroladaki alfasayısal olmayan karakter sayısı**: Parolada kullanılması gereken karmaşık karakterlerin sayısını belirtin (**0**-**4** karakter).<br>Karmaşık bir karakter, “**?**” gibi bir simgedir.
-  - **Minimum parola uzunluğu**: Kullanıcının yapılandırması gereken parolanın uzunluk alt sınırını girin (arasında **4** ve **16** karakter).
+  - **Minimum parola uzunluğu**: Kullanıcının yapılandırması gereken parolanın uzunluk alt sınırını girin (**4** ile **16** karakter arasında).
   - **Basit parolalar**: **0000** veya **1234** gibi basit parolaların kullanımına izin verin.
-  - **Parola istenmeden önce ekran kilitlendikten sonra en fazla dakika**: Bilgisayarın ne kadar süreyle etkinlik dışı kaldıktan sonra kilidinin açılması için bir parolanın gerekli olacağını belirtin.
-  - **Ekran kilitlenmeden işlem yapılmayan dakika**: Bilgisayar ekran kilitlenmeden önce boşta bekleyeceği süreyi belirtin.
-  - **Parola süresinin sonu (gün)**: Kullanıcının kaç gün geçtikten sonra parolayı değiştirmesi gerekeceğini belirtin (**1**-**255** gün).
-  - **Önceki parolaların yeniden kullanılmasını engelle**: Kullanılamayacak, önceden kullanılmış parola sayısını girin gelen **1** için **24**.
+  - **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**: Bilgisayarın ne kadar süreyle etkinlik dışı kaldıktan sonra kilidinin açılması için bir parolanın gerekli olacağını belirtin.
+  - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Ekran kilitlenmeden önce bilgisayarın boşta bekleyeceği süreyi belirtir.
+  - **Parola kullanım süresi (gün olarak)**: Kullanıcının kaç gün geçtikten sonra parolayı değiştirmesi gerekeceğini belirtin (**1**-**255** gün).
+  - **Önceki parolaların yeniden kullanılmasını engelle**: Daha önce kullanılan kaç parolanın yeniden kullanılamayacağını belirtin (**1** ile **24** arası).
 
-- **Kullanıcı parolasını değiştirmesini engelleyin**: Seçin **blok** eklenen veya kaldırılan değiştirilmesini geçiş kodunu durdurmak için. **Yapılandırılmamış** (varsayılan) eklenmesine, değiştirilmesine veya kaldırılması geçiş kodlarını sağlar.
-- **Blok parmak iziyle kilit açma**: Seçin **blok** cihazın kilidini açmak için parmak izi'ni kullanarak önlemek için. **Yapılandırılmamış** (varsayılan), parmak izi kullanarak cihaz kilidini açmak kullanıcının sağlar.
+- **Kullanıcının Geçiş Kodunu Değiştirmesini Engelle**: Geçiş kodu değiştirme, ekleme veya kaldırma işlemlerini önlemek için **Engelle**'yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, geçiş kodu ekleme, değiştirme veya kaldırma işlemlerine izin verir.
+- **Parmak İzi ile Kilit Açmayı Engelle**: Cihaz kilidinin parmak izi kullanarak açılmasını önlemek için **Engelle**'yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcının cihaz kilidini parmak izi kullanarak açmasını sağlar.
 
-- **Blok parola otomatik doldurma**: Seçin **blok** Macos'ta parola otomatik doldurma özelliğinin kullanılmasını önlemek için. Seçme **blok** ayrıca aşağıdaki etkisi:
+- **Parola Otomatik Doldurmayı engelle**: macOS Parola Otomatik Doldurma özelliğini engellemek için **Engelle**'yi seçin. **Engelle** ayarını seçmek şu sonuçlara da neden olur:
 
-  - Kullanıcılar, Safari veya herhangi bir uygulama kaydedilmiş bir parola kullanmayı sorulmaz.
-  - Otomatik güçlü parolalar devre dışıdır ve kullanıcıların güçlü parolalar önerilen değildir.
+  - Safari'de veya diğer uygulamalarda kullanıcılara parolaları kaydetmek isteyip istemedikleri sorulmaz.
+  - Otomatik Güçlü Parolalar devre dışı bırakılır ve kullanıcılara güçlü parola önerisi sunulmaz.
 
-  **Yapılandırılmamış** (varsayılan), bu özellikleri sağlar.
+  **Yapılandırılmadı** (varsayılan) ayarı bu özelliklere izin verir.
 
-- **Parola yakınlık isteklerini engellemek**: Seçin **blok** cihazın yakın cihazlardan parola istemeyen şekilde. **Yapılandırılmamış** (varsayılan) Bu parola istekleri sağlar.
+- **Parola yakınlık isteklerini engelle**: **Engelle**'yi seçtiğinizde kullanıcının cihazı yakınlardaki cihazlardan parola isteyemez. **Yapılandırılmadı** (varsayılan) ayarı bu parola isteklerine izin verir.
 
-- **Parola paylaşımı block**: **Blok** engeller parolaları Airdrop'a kullanarak cihazlar arasında paylaşma. **Yapılandırılmamış** (varsayılan), paylaşılan parola sağlar.
+- **Parola paylaşımını engelle**: **Engelle**, AirDrop ile cihazlar arasında parola paylaşımı yapılmasını engeller. **Yapılandırılmadı** (varsayılan) ayarı, parolaların paylaşılmasına izin verir.
 
 ## <a name="built-in-apps"></a>Yerleşik Uygulamalar
 
-- **Safari otomatik doldurmayı engelleyin**: **Blok** cihazda Safari otomatik doldurma özelliğini devre dışı bırakır. **Yapılandırılmamış** (varsayılan), kullanıcıların web tarayıcıdaki otomatik tamamlama ayarlarını değiştirmesine olanak tanır.
-- **Kamerayı engelle**: Seçin **blok** için cihaz kameranızı erişimi engellemek için. **Yapılandırılmamış** (varsayılan), cihazın kamerasını erişim sağlar.
-- **Apple Music Block**: **Blok** Music uygulaması Klasik moda döner ve Music hizmeti devre dışı bırakır. **Yapılandırılmamış** (varsayılan), Apple Music uygulamasının kullanılmasına izin verir.
-- **Spotlight Internet arama sonuçlarında Block**: **Blok** Spotlight Internet aramasının herhangi bir sonuç döndürmesini durdurur. **Yapılandırılmamış** (varsayılan), Spotlight arama, arama sonuçları sağlamak için Internet'e bağlanmasına izin verir.
-- **İTunes kullanarak dosya bloğu aktarımı**: **Blok** uygulama dosya paylaşım hizmetlerinin devre dışı bırakır. MacOS 10.13 bulunan ve üzeri. **Yapılandırılmamış** uygulama dosya paylaşım hizmetlerinin (varsayılan) sağlar.
+- **Safari Otomatik Doldurmayı engelle**: **Engelle** ayarı, cihazdaki Safari uygulamasında otomatik doldurma özelliğini devre dışı bırakır. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcıların web tarayıcısındaki otomatik tamamlama ayarlarını değiştirmesine olanak tanır.
+- **Kamerayı engelle**: Cihazdaki kameraya erişim sağlanmasını engellemek için **Engelle**'yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, cihazın kamerasına erişim sağlar.
+- **Apple Music'i engelle**: **Engelle** ayarı, Müzik uygulamasını klasik moda döndürür ve Müzik hizmetini devre dışı bırakır. **Yapılandırılmadı** (varsayılan) ayarı, Apple Music uygulamasının kullanılmasına izin verir.
+- **Spotlight İnternet Araması Sonuçlarını Engelle**: **Engelle** ayarı, Spotlight'ın İnternet araması sonuçlarını döndürmesini engeller. **Yapılandırılmadı** (varsayılan) ayarı, Spotlight'ın internete bağlanarak arama sonuçlarını getirmesine izin verir.
+- **iTunes kullanarak dosya aktarımı yapılmasını engelleyin**: **Engelle**, uygulama dosya paylaşım hizmetlerini devre dışı bırakır. macOS 10.13 ve üzeri cihazlarda kullanılabilir. **Yapılandırılmadı** (varsayılan), uygulama dosya paylaşım hizmetlerine izin verir.
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
 Kısıtlı uygulamalar listesinde, aşağıdaki listelerden birini yapılandırabilirsiniz:
 
-- A **Yasak uygulamalar** listesi: Kullanıcıların yüklemesine ve çalıştırmasına izin izin verilmeyen, Intune tarafından yönetilmeyen uygulamaları listeleyin. Kullanıcıların izin verilmeyen uygulamaları yüklenmesini engelleyen değildir, ancak Eğer öyleyse yöneticinin bildirilir.
-- Bir **onaylı uygulamalar** listesi: Kullanıcıların yüklemesine izin verilen uygulamaları listeleyin. Kullanıcılar listelenmeyen uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir. Kullanıcıların onaylı listede olmayan bir uygulama yüklenmesini engelleyen değildir. Ancak, Eğer öyleyse yöneticinin bildirilir.
+- **Yasak uygulamalar** listesi: Intune tarafından yönetilmeyen ve kullanıcıların yüklemesine ve çalıştırmasına izin verilmeyen uygulamaları listeleyin. Kullanıcıların izin verilmeyen uygulamaları yüklemesi engellenmez ancak yüklemeleri durumunda bu, yöneticiye bildirilir.
+- **Onaylı uygulamalar** listesi: Kullanıcıların yüklemesine izin verilen uygulamaları listeleyin. Kullanıcılar listelenmeyen uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir. Kullanıcıların onaylı uygulamalar listesinde olmayan bir uygulamayı yüklenmesi engellenmez. Ancak bunu yapmaları halinde bu durum yöneticiye bildirilir.
 
 Listeyi yapılandırmak için **Ekle**’ye tıklayın, sonra tercih ettiğiniz bir adı (isteğe bağlı olarak uygulama yayımcısı) ve uygulamanın paket kimliğini (örneğin *com.apple.calculator*) belirtin.
 
 ## <a name="connected-devices"></a>Bağlı cihazlar
 
-- **Airdrop'u engelleyin**: **Blok** Airdrop'a cihazda kullanarak engeller. **Yapılandırılmamış** (varsayılan), yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasını sağlar.
-- **Apple Watch otomatik Block kilidini**: **Blok** kullanıcıların macOS cihazlarını, Apple Watch ile kilidini açmasını engeller. **Yapılandırılmamış** (varsayılan), Apple Watch ile macOS cihazlarını kilidini açmak kullanıcıların sağlar.
+- **AirDrop'u engelleyin**: **Engelle** ayarı, cihazdaki AirDrop özelliğinin kullanılmasını engeller. **Yapılandırılmadı** (varsayılan) ayarı, yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verir.
+- **Apple Watch ile otomatik kilit açmayı engelleyin**: **Engelle** ayarı, kullanıcıların Apple Watch cihazlarıyla macOS cihazlarının kilidini açmalarını engeller. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcıların Apple Watch cihazlarıyla macOS cihazlarının kilidini açmalarına izin verir.
 
 ## <a name="cloud-and-storage"></a>Bulut ve depolama
 
-- **İCloud anahtar zinciri eşitlenmesinin engellenip**: Seçin **blok** icloud Anahtarlıkta depolanan eşitleme kimlik bilgileri devre dışı bırakmak için. **Yapılandırılmamış** (varsayılan), kullanıcıların bu kimlik bilgilerini eşitleme sağlar.
-- **İcloud'a belge eşitlemeyi engelleyin**: **Blok** iCloud belgeleri ve verileri eşitlenmesini önler. **Yapılandırılmamış** (varsayılan), iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verir.
-- **İCloud posta yedekleme block**: **Blok** iCloud macOS posta uygulamasına eşitlenmesini önler. **Yapılandırılmamış** (varsayılan), icloud posta eşitleme sağlar.
-- **İCloud kişi yedekleme block**: **Blok** iCloud cihazları kişilerin eşitlenmesini önler. **Yapılandırılmamış** (varsayılan), iCloud kullanarak kişi eşitleme sağlar.
-- **İCloud Takvim yedekleme block**: **Blok** iCloud macOS Takvim uygulamaya eşitlenmesini önler. **Yapılandırılmamış** (varsayılan), icloud Takvim eşitleme sağlar.
-- **İCloud anımsatıcı yedekleme block**: **Blok** iCloud macOS anımsatıcılar uygulamaya eşitlenmesini önler. **Yapılandırılmamış** (varsayılan), icloud anımsatıcılar eşitleme sağlar.
-- **İCloud yer işareti yedekleme block**: **Blok** iCloud yer işaretleri cihazları eşitlenmesini önler. **Yapılandırılmamış** (varsayılan), yer işareti eşitleme icloud sağlar.
-- **İCloud notları yedekleme block**: **Blok** iCloud notları cihazları eşitlenmesini önler. **Yapılandırılmamış** (varsayılan), icloud Notes eşitleme sağlar.
+- **iCloud Anahtar Zinciri eşitlemesini engelle**: **Engelle**'yi seçtiğinizde Anahtar Zincirinde depolanan kimlik bilgilerinin iCloud ile eşitlenmesi devre dışı bırakılır. **Yapılandırılmadı** (varsayılan), kullanıcıların bu kimlik bilgilerini eşitlemesine izin verir.
+- **iCloud Belge Eşitlemesini Engelle**: **Engelle** ayarı, iCloud'ın belgeleri ve verileri eşitlemesini engeller. **Yapılandırılmadı** (varsayılan), iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verir.
+- **iCloud Posta Yedeklemesini Engelle**: **Engelle** ayarı, macOS Posta uygulamasıyla iCloud arasında eşitleme yapılmasını engeller. **Yapılandırılmadı** (varsayılan) ayarı, iCloud ile Posta eşitlemesine izin verir.
+- **iCloud Kişi Yedeklemesini Engelle**: **Engelle** ayarı, cihazlardaki kişilerin iCloud ile eşitlenmesini engeller. **Yapılandırılmadı** (varsayılan) ayarı, iCloud ile kişi eşitlemesine izin verir.
+- **iCloud Takvim Yedeklemesini Engelle**: **Engelle** ayarı, macOS Takvim uygulamasıyla iCloud arasında eşitleme yapılmasını engeller. **Yapılandırılmadı** (varsayılan) ayarı, iCloud ile Takvim eşitlemesine izin verir.
+- **iCloud Anımsatıcı Yedeklemesini Engelle**: **Engelle** ayarı, macOS Anımsatıcılar uygulamasıyla iCloud arasında eşitleme yapılmasını engeller. **Yapılandırılmadı** (varsayılan) ayarı, iCloud ile Anımsatıcılar eşitlemesine izin verir.
+- **iCloud Yer İşareti Yedeklemesini Engelle**: **Engelle** ayarı, cihazlardaki yer işaretlerinin iCloud ile eşitlenmesini engeller. **Yapılandırılmadı** (varsayılan) ayarı, iCloud ile Yer İşareti eşitlemesine izin verir.
+- **iCloud Not Yedeklemesini Engelle**: **Engelle** ayarı, cihazlardaki notların iCloud ile eşitlenmesini engeller. **Yapılandırılmadı** (varsayılan) ayarı, iCloud ile not eşitlemesine izin verir.
 
-## <a name="domains"></a>Etki Alanları
+## <a name="domains"></a>Domains
 
-- **E-posta etki alanı URL'si**: Listeye bir veya daha fazla URL ekleyin. Kullanıcılar, yapılandırdığınız etki alanı dışındaki bir etki alanından e-posta aldığında, bu e-posta MacOS Mail uygulamasında güvenilmeyen olarak işaretlenir.
+- **E-posta Etki Alanı URL'si**: Listeye bir veya daha fazla URL ekleyin. Kullanıcılar, yapılandırdığınız etki alanı dışındaki bir etki alanından e-posta aldığında, bu e-posta MacOS Mail uygulamasında güvenilmeyen olarak işaretlenir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
-Üzerinde cihaz özelliklerini ve ayarlarını da kısıtlayabilirsiniz [iOS](device-restrictions-ios.md) cihazlar.
+[iOS](device-restrictions-ios.md) cihazlardaki özellikleri ve ayarları da kısıtlayabilirsiniz.

@@ -19,13 +19,13 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7c056e86f7e768d79b4851fda327dc2e32fa349c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897621"
 ---
-# <a name="terms-and-conditions-for-user-access"></a>Hüküm ve koşullar kullanıcı erişimi
+# <a name="terms-and-conditions-for-user-access"></a>Kullanıcı erişimi için hüküm ve koşullar
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -52,15 +52,15 @@ Hüküm ve koşulları oluşturmak için şu adımları tamamlayın. Görüntü 
 
    - **Görünen ad**: Azure portalında koşulların adı. Kullanıcılar bu adı görmez.
 
-   - **Açıklama**: Azure portalında koşul kümesini tanımlamanıza yardımcı olan isteğe bağlı ayrıntılar.
+   - **Açıklama**: Azure portalında bu koşul kümesini tanımlamanıza yardımcı olacak isteğe bağlı ayrıntılar.
 
 4. Hüküm ve Koşullar bölmesini açmak için **Kullanım koşullarını tanımla**’nın yanındaki oku seçin ve ardından aşağıdaki bilgileri girin:
 
    ![Koşul özetleriyle birlikte son kullanıcı hüküm ve koşullarını kabul etme ekranını gösteren ekran görüntüsü](./media/terms-summary-create.png)
 
-   - **Başlık**: Yukarıdaki şirket portalında kullanıcıların gördüğü koşullarınıza adı **özeti**.
-   - **Koşulların özeti**: Kullanıcılar koşulları kabul ettiğinde ne anlama geldiğini açıklayan metin. Örneğin, “Cihazınızı kaydettiğinizde, Contoso tarafından belirlenmiş kullanım koşullarını kabul etmiş olursunuz. Devam etmeden önce koşulları dikkatle okuyun."
-   - **Hüküm ve koşullar**: Hüküm ve kullanıcılar bakın ve kabul Reddet veya gereken koşulları.
+   - **Başlık**: Kullanıcıların Şirket Portalı'nda **Özet**'in yukarısında gördüğü koşullarınızın adı.
+   - **Koşulların Özeti**: Kullanıcılar koşulları kabul ettiğinde bunun ne anlama geldiğini açıklayan metin. Örneğin, “Cihazınızı kaydettiğinizde, Contoso tarafından belirlenmiş kullanım koşullarını kabul etmiş olursunuz. Devam etmeden önce koşulları dikkatle okuyun."
+   - **Hüküm ve Koşullar**: Kullanıcılara gösterilen ve kabul etmeleri veya reddetmeleri gereken hüküm ve koşullar.
 
 5. **Tamam** > **Oluştur**’u seçin.
 

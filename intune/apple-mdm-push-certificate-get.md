@@ -1,7 +1,7 @@
 ---
-title: Intune için bir Apple MDM anında iletme sertifikası alma
+title: Intune için Apple MDM Anında İletme sertifikası alma
 titleSuffix: ''
-description: İOS cihazlarını ıntune'la yönetmek için Apple MDM anında iletme sertifikası alın.
+description: iOS cihazlarını Intune’la yönetmek için Apple MDM Anında İletme sertifikası alın.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 51fe7ab05174f614ad4278cd83ede31c6bb9beb2
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59899814"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM anında iletme sertifikası alma
 
@@ -43,24 +43,24 @@ Bir anında iletme sertifikasının süresi dolduğunda bunu yenilemeniz gerekir
 ## <a name="steps-to-get-your-certificate"></a>Sertifikanızı almak için adımlar
 [Azure portalında](https://portal.azure.com), **Cihaz kaydı** > **Apple Kaydı** > **Apple MDM Anında İletme Sertifikası**’nı seçin ve ardından [Azure portalında](https://portal.azure.com) aşağıdaki adımları izleyin.
 
-### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>Adım 1. Microsoft’un Apple’a kullanıcı ve cihaz bilgilerini göndermesine izin verin
+### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>1. Adım Microsoft’un Apple’a kullanıcı ve cihaz bilgilerini göndermesine izin verin
 **Kabul ediyorum**’u seçerek Microsoft’un Apple’a veri göndermesine izin verin.
 
 ![MDM Anında İletme Sertifikası ekranında MDM Anında İletme’nin ayarlanmamış hali.](./media/create-mdm-push-certificate.png)
 
-### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>Adım 2. Apple MDM anında iletme sertifikası oluşturmak için gereken Intune sertifika imzalama isteğini indirin
+### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>2. Adım Apple MDM anında iletme sertifikası oluşturmak için gereken Intune sertifika imzalama isteğini indirin
 **CSR’nizi indirin** öğesini seçerek istek dosyasını indirin ve yerel olarak kaydedin. Bu dosya, Apple Anında İletme Sertifikaları Portalı’ndan bir güven ilişkisi sertifikası istemek için kullanılır.
 
-  ### <a name="step-3-create-an-apple-mdm-push-certificate"></a>Adım 3. Apple MDM anında iletme sertifikası oluşturun
+  ### <a name="step-3-create-an-apple-mdm-push-certificate"></a>3. Adım. Apple MDM anında iletme sertifikası oluşturun
 Apple Anında İletme Sertifikası Portalı’na gitmek için **MDM Anında İletme Sertifikanızı oluşturun** öğesini seçin. Şirket Apple kimliğinizle oturum açın ve daha sonra **Sertifika Oluştur**’a tıklayın. **Dosya Seç**’e tıklayın ve sertifika imzalama isteğine göz atın, daha sonra **Karşıya Yükle**’yi seçin. Onay sayfasında **İndir**’e tıklayarak sertifika (.pem) dosyasını indirin ve yerel olarak kaydedin.
 
 > [!NOTE]
 > Sertifika, onu oluşturmak için kullanılan Apple Kimliği ile ilişkilidir. En iyi uygulama olarak, yönetim görevleri için bir şirket Apple Kimliği kullanın ve posta kutusunun bir dağıtım listesinde olduğu gibi birden fazla kişi tarafından izlendiğinden emin olun. Hiçbir zaman kişisel bir Apple Kimliği kullanmayın.
 
-### <a name="step-4-enter-the-apple-id-used-to-create-your-apple-mdm-push-certificate"></a>4. adımı. Apple MDM anında iletme sertifikanızı oluşturmak için kullandığınız Apple kimliğini girin
+### <a name="step-4-enter-the-apple-id-used-to-create-your-apple-mdm-push-certificate"></a>Adım 4. Apple MDM anında iletme sertifikanızı oluşturmak için kullandığınız Apple kimliğini girin
 Bu sertifikayı yenilemeniz gerektiğinde kullanmak üzere bu kimliği kaydedin.
 
-### <a name="step-5-browse-to-your-apple-mdm-push-certificate-to-upload"></a>5. adımı. Karşıya yüklemek üzere Apple MDM anında iletme sertifikanıza gidin
+### <a name="step-5-browse-to-your-apple-mdm-push-certificate-to-upload"></a>Adım 5. Karşıya yüklemek üzere Apple MDM anında iletme sertifikanıza gidin
 Sertifika (.pem) dosyasına gidin, **Aç**’ı ve sonra da **Karşıya Yükle**’yi seçin. Anında iletme sertifikası ile Intune, Apple cihazları kaydedebilir ve yönetebilir.
 
 ## <a name="renew-apple-mdm-push-certificate"></a>Apple MDM anında iletme sertifikasını yenileme

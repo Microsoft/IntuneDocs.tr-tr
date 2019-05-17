@@ -1,7 +1,7 @@
 ---
 title: Uygulama koruma ilkesi kurulumunuzu doğrulama
 titleSuffix: Microsoft Intune
-description: Intune düzgün çalışmasını ve uygulama koruma ilkenizin ayarlanıp ayarlanmadığını test öğrenin.
+description: Microsoft Intune'da uygulama koruma ilkenizin kurulduğunu ve doğru şekilde çalıştığını sınamayı öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -19,49 +19,49 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 760ff85bc31cf66e66a3bf98f7da22d5ce48eee0
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896335"
 ---
-# <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Microsoft Intune uygulama koruma İlkesi kurulumunuzu doğrulama
+# <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Microsoft Intune'da uygulama koruma ilkesi kurulumunuzu doğrulama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uygulama koruma ilkenizin doğru kurulduğunu ve çalıştığını doğrulayın. Bu kılavuz, Azure portaldaki uygulama koruma ilkeleri için geçerlidir.
 
 ## <a name="checking-for-symptoms"></a>Belirtileri denetleme
-Uygulama koruma bir veri koruması aracı olduğundan, kullanıcıların soruları bildirme olasılığı düşüktür. Uygulama koruma yapılandırmasında bir sorun varsa, kullanıcı bunlar olmadan uygulama koruması gerekir ve bir sorun bildikleri mıydı sınırsız erişime sahip. Bu nedenle, kullanıcılar uygulama korumanın kısıtlamalarını bilinçli sınayabilirsiniz küçük bir grupla uygulama koruma ilkelerinizin Pilot dağıtımını yaparak uygulama koruma yapılandırmanızı doğrulamanızı öneririz.
+Uygulama koruma bir veri koruması aracı olduğundan, kullanıcıların soruları bildirme olasılığı düşüktür. Uygulama koruma yapılandırmasında bir sorun varsa, kullanıcılar uygulama korumanın olmadığı durumlardaki gibi sınırsız erişime sahip olur ve bir sorun olduğunun farkına varmazlar. Bu nedenle uygulama koruma kısıtlamalarını bilinçli olarak sınayabilecek küçük bir grup kullanıcıya uygulama koruma ilkelerinizin pilot dağıtımını yaparak, uygulama koruma yapılandırmanızı doğrulamanızı öneririz.
 
 ## <a name="what-to-check"></a>Denetlenmesi gerekenler
 
-Uygulama koruma İlkesi davranış'ınızı beklendiği gibi çalışan değil gösteriyorsa şu öğeleri kontrol:
+Sınama, uygulama koruma ilkelerinizin davranışının beklendiği gibi çalışmadığını gösteriyorsa şu öğeleri kontrol etmenizi öneririz:
 
 - Kullanıcılar uygulama koruma için lisanslı mı?
 - Kullanıcılar O365 için lisanslı mı?
-- Her biri kullanıcıların uygulama koruma uygulamalarındaki beklendiği gibi durumudur. Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir.
+- Her kullanıcının uygulama koruma uygulamalarındaki durumu beklendiği gibi mi? Uygulamalar için olabilecek durumlar **İade edildi** ve **İade edilmedi** şeklindedir.
 
 ### <a name="user-app-protection-status"></a>Kullanıcı uygulama koruma durumu
-1. [Azure portal](https://portal.azure.com) oturum açın.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. Seçin **istemci uygulamaları** >  **uygulama koruma durumu**ve ardından **atanan kullanıcılar** Döşe. 
-4. Üzerinde **uygulama raporlama** sayfasında **Kullanıcı Seç** kullanıcıların ve grupların listesini getirmek için. 
-5. Arayın ve listeden bir kullanıcı seçin ve sonra seçin **Kullanıcı Seç**. Üst kısmındaki **uygulama raporlama** bölmesinde, kullanıcıya uygulama koruma için lisanslı olup olmadığını görebilirsiniz. Ayrıca, kullanıcının O365 için tüm kullanıcı cihazlarına uygulama durumunu için bir lisans olup olmadığını görebilirsiniz.
+3. **İstemci uygulamaları** >  **Uygulama koruma durumu**'nu ve ardından **Atanan kullanıcılar** kutucuğunu seçin. 
+4. **Uygulama raporlama** sayfasında **Kullanıcı seçin**'i belirterek kullanıcı ve grupların bulunduğu listeyi açın. 
+5. Arama yapıp listeden bir kullanıcı seçin ve sonra **Kullanıcı seçin**’i belirtin. **Uygulama raporlama** bölmesinin en üstünde kullanıcının uygulama koruması için lisanslı olup olmadığını görebilirsiniz. Ayrıca, kullanıcının O365 lisansının olup olmadığını ve kullanıcının tüm cihazları için uygulama durumunu göreceksiniz.
 
 ## <a name="what-to-do"></a>Yapılması gereken
 Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 
-- Kullanıcının uygulama koruması için lisanslı değilse, Ata bir [Intune lisansı](licenses.md) kullanıcı.
-- Kullanıcının O365 için lisanslı değilse olursa, bir [lisans](licenses.md) kullanıcı.
-- Bir kullanıcının uygulama olarak listeleniyorsa **iade edilmedi**, size doğru yapılandırmadığınıza bakın bir [uygulama koruma İlkesi](app-protection-policies-validate.md) bu uygulama için.
-- Bu koşullar, istediğiniz tüm kullanıcılara uygulanmasını sağlamak [uygulama koruma ilkeleri](app-protection-policies-monitor.md) uygulamak için.
+- Kullanıcının uygulama koruma lisansı yoksa bir [Intune lisansı](licenses.md) atayın.
+- Kullanıcının O365 lisansı yoksa bir [lisans](licenses.md) edinin.
+- Kullanıcının lisansı **İade edilmedi** olarak listeleniyorsa bu uygulama için doğru biçimde bir [uygulama koruma ilkesi](app-protection-policies-validate.md) yapılandırıp yapılandırmadığınıza bakın.
+- Bu koşulların, [uygulama koruma ilkelerinin](app-protection-policies-monitor.md) geçerli olmasını istediğiniz tüm kullanıcılara uygulandığından emin olun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Intune uygulama koruma ilkesi nedir?](app-protection-policies.md)
 - [Intune içeren lisanslar](licenses.md)
-- [Kullanıcılar cihazlarını Intune'a kaydedebilmesi için kullanıcılara lisans atama](licenses-assign.md)
-- [Uygulama koruma İlkesi kurulumunuzu doğrulama](app-protection-policies-validate.md)
+- [Cihazlarını Intune’a kaydedebilmeleri için kullanıcılara lisans atama](licenses-assign.md)
+- [Uygulama koruma ilkesi kurulumunuzu doğrulama](app-protection-policies-validate.md)
 - [Uygulama koruma ilkelerini izleme](app-protection-policies-monitor.md)
 

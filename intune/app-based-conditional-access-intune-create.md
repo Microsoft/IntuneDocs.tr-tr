@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1514fe9dfcd09e2b77967b0fed8c36fb7a06634f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896040"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim ilkeleri ayarlama
 
@@ -33,8 +33,8 @@ Onaylı uygulamalar listesinin parçası olan uygulamalar için uygulama tabanl�
 > [!IMPORTANT]
 > Bu makale uygulama tabanlı bir koşullu erişim ilkesini ekleme konusunda size adım adım yol gösterir. Onaylı uygulamalar listesinden SharePoint Online, Microsoft Teams ve Microsoft Exchange Online gibi uygulamaları eklerken de aynı adımları kullanabilirsiniz.
 
-## <a name="create-app-based-conditional-access-policies"></a>Uygulama tabanlı koşullu erişim ilkeleri oluşturma
-Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır. Başka bir deyişle, ilkeler yapılandırmak için Intune ve Azure AD arasında değişim yapmanız gerekmez.
+## <a name="create-app-based-conditional-access-policies"></a>Uygulama tabanlı koşullu erişim ilkesi oluşturma
+Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır. Başka bir deyişle ilkeleri yapılandırmak için Intune ile Azure AD arasında geçiş yapmanız gerekmez.
 
 > [!IMPORTANT]
 > Intune portalından koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.
@@ -44,7 +44,7 @@ Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*
 > [!IMPORTANT]
 > Uygulama tabanlı koşullu erişim ilkelerini kullanmadan önce uygulamalarınıza [Intune uygulama koruma ilkeleri](app-protection-policies.md) uygulamanız gerekir.
 
-1. İçinde **Intune Panosu**seçin **koşullu erişim**.
+1. **Intune Panosu**’nda, **Koşullu erişim**’i seçin.
 
 2. **İlkeler** bölmesinde **Yeni ilke**’yi seçerek yeni uygulama tabanlı koşullu erişim ilkenizi oluşturun.
 

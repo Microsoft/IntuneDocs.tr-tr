@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896432"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -34,7 +34,7 @@ Android iş profili uygulamalarına ayarları sağlamak için Microsoft Intune�
 > [!Note]  
 > Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın, uygulama yapılandırma ilkelerini destekleyecek şekilde oluşturulup oluşturulmadığını öğrenmek için uygulamanın geliştiricisine başvurun.
 
-1. [Azure portal](https://portal.azure.com) oturum açın.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **İstemci uygulamaları** iş yükünü seçin.
 4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
@@ -51,7 +51,7 @@ Android iş profili uygulamalarına ayarları sağlamak için Microsoft Intune�
 
 ## <a name="use-the-configuration-designer"></a>Yapılandırma tasarımcısını kullanma
 
-Uygulama yapılandırma ayarları desteklemek için tasarlanan Android uygulamaları için yapılandırma tasarımcısını kullanabilirsiniz. Yapılandırma, Intune’a kayıtlı cihazlarda uygulanır. Tasarımcı, bir uygulamanın kullanıma sunduğuna kıyasla daha ayrıntılı yapılandırma değerleri yapılandırmanıza imkan tanır.
+Yapılandırma ayarlarını destekleyecek şekilde tasarlanmış Android uygulamaları için yapılandırma tasarımcısını kullanabilirsiniz. Yapılandırma, Intune’a kayıtlı cihazlarda uygulanır. Tasarımcı, bir uygulamanın kullanıma sunduğuna kıyasla daha ayrıntılı yapılandırma değerleri yapılandırmanıza imkan tanır.
 
 **Ekle**’yi seçerek uygulama için belirtmek istediğiniz yapılandırma ayarları listesini seçin.  
 Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
@@ -68,13 +68,13 @@ Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim y
 | Seçenek | Örnek |
 |----|----|
 | Mail | john@contoso.com |
-| Kullanıcı asıl adı | john@contoso.com |
-| Kısmi UPN | John |
+| Kullanıcı Asıl Adı | john@contoso.com |
+| Kısmi UPN | john |
 | Etki Alanı | contoso.com |
 | Kullanıcı adı | John Doe |
 | Hesap kimliği | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
 | Kullanıcı Kimliği | 3ec2c00f-b125-4519-acf0-302ac3761822 |
-| Cihaz kimliği | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| Cihaz Kimliği | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Çok kimlikli uygulamalarda yalnızca yapılandırılmış kuruluş hesaplarına izin verme 
 
@@ -105,7 +105,7 @@ Atanan uygulama bir cihazda çalıştırıldığında, uygulama yapılandırma i
 
 Uygulamaların Android cihaz özelliklerine erişmesi iznini de önceden yapılandırabilirsiniz. Varsayılan olarak, konuma veya cihaz kamerasına erişim gibi cihaz izinlerine ihtiyacı olan Android uygulamaları kullanıcıdan izinleri kabul etmesini veya reddetmesini ister. Örneğin, uygulama cihazın mikrofonunu kullanıyorsa, kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
 
-1. [Azure portal](https://portal.azure.com) oturum açın.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **İstemci uygulamaları**’nı seçin.
 3. **Yönet** altında, **Uygulama yapılandırma ilkelerini** seçip **Ekle**’ye tıklayın.

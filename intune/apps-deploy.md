@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune’da uygulamaları gruplara atama
 titleSuffix: ''
-description: Intune uygulama kullanıcı ya da Microsoft Intune kullanarak cihazları gruplara öğrenin.
+description: Microsoft Intune'u kullanarak Intune uygulamasını kullanıcı veya cihaz gruplarına atamayı öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1db613f93e50caa377297e3873f6817a39714fe7
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900630"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -32,7 +32,7 @@ ms.locfileid: "58799567"
 Microsoft Intune’a [bir uygulama ekledikten](apps-add.md) sonra uygulamayı kullanıcılara ve cihazlara atayabilirsiniz. Unutmayın; cihaz Intune tarafından yönetiliyor olsa da olmasa da uygulamayı cihaza atayabilirsiniz.
 
 > [!NOTE]
-> Kullanılabilir dağıtım amacı, cihaz grupları için desteklenmiyor, yalnızca kullanıcı gruplarına desteklenir.
+> Kullanılabilir dağıtım amacı yalnızca kullanıcı grupları için desteklenir, cihaz grupları için desteklenmez.
 
 Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik çeşitli seçenekler listelenir:
 
@@ -53,9 +53,9 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 >
 > Intune'da kayıtlı olmayan cihazlarda uygulama güncelleştirmeleri almak için, cihaz kullanıcıları kendi kuruluşlarının Şirket Portalı'na gitmeli ve uygulama güncelleştirmelerini el ile yüklemelidir.
 
-## <a name="assign-an-app"></a>Bir uygulamayı atar
+## <a name="assign-an-app"></a>Uygulama atama
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** menüsünde **İstemci uygulamaları**’nı seçin.
 4. Menünün **Yönet** bölümünde **Uygulamalar**’ı seçin.
@@ -63,15 +63,15 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin.
 7. Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
 8. Belirli bir uygulama için **atama türü** seçin:
-   - **Kayıtlı cihazlar için kullanılabilir**: Uygulama, uygulamayı Şirket portalı uygulamasından veya Web sitesinden yükleyebilir kullanıcı gruplarına atayın.
-   - **Kayıtlı veya Kayıtsız kullanılabilir**: Bu uygulama, cihazları Intune'a kayıtlı olmayan kullanıcı gruplarına atayın. Kullanıcılar, bir Intune lisansı atanmalıdır bkz [Intune lisanslarını](licenses.md).
-   - **Gerekli**: Uygulama seçilen gruplardaki cihazlara yüklenir. Bazı platformlarda son kullanıcının uygulama yükleme başlamadan önce onaylamak için ek istekler olabilir.
-   - **Kaldırma**: Intune uygulamayı cihaza aracılığıyla "Kullanılabilir" kayıtlı cihazlar için daha önce yüklendiyse, uygulama seçilen gruplardaki cihazlardan kaldırılır ya da aynı dağıtım kullanarak "Required" atama. Web bağlantıları, dağıtımdan sonra kaldırılamaz.
+   - **Kayıtlı cihazlar için bulunur**: Uygulamayı, Şirket Portalı uygulamasından veya web sitesinden yükleyebilecek kullanıcı grubuna atayın.
+   - **Kayıtlı veya kayıtsız olarak kullanılabilir**: Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. Kullanıcılara Intune lisansı atanmış olmalıdır, bkz. [Intune Lisansları](licenses.md).
+   - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir. Bazı platformlarda yükleme başlamadan önce son kullanıcıya ek sorular ve bilgiler sunulabilir.
+   - **Kaldır**: Intune'un uygulamayı cihaza bir "Kayıtlı cihazlar için bulunur" veya "Gerekli" ataması aracılığıyla ve aynı dağıtımı kullanarak yüklemiş olması halinde uygulama, seçilen gruplardaki cihazlardan kaldırılır. Dağıtım sonrasında web bağlantıları kaldırılamaz.
 
      > [!NOTE]
-     > **Yalnızca iOS uygulamaları için**: Bir iOS uygulama başına VPN ayarları içeren bir VPN profili oluşturduysanız, VPN profili altında seçebileceğiniz **VPN**. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
+     > **Yalnızca iOS uygulamaları için**: Uygulamaya göre VPN ayarlarını barındıran bir iOS VPN profili oluşturduysanız **VPN**'nin altında VPN profilini seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
      >
-     > **Yalnızca Android uygulamaları için**: Bir Android uygulaması olarak dağıtırsanız **kayıtlı veya Kayıtsız kullanılabilir**, raporlama durumu yalnızca kayıtlı cihazlarda kullanıma sunulacaktır.
+     > **Yalnızca Android uygulamaları için**: **Kayıtlı veya kayıtsız olarak kullanılabilir** atamasıyla dağıttığınız Android uygulamalarında raporlama durumu yalnızca kayıtlı cihazlarda kullanılabilir.
 
 9. Bu uygulama atamasından etkilenecek kullanıcı gruplarını belirtmek için, **Dahil Edilen Gruplar**'ı seçin.
 10. Dahil etmek üzere bir veya daha fazla grup belirttikten sonra **Seç** düğmesini seçin.
@@ -125,19 +125,19 @@ Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. A
 > Yalnızca yönetilen iOS mağazası uygulamalarını Microsoft Intune’a ekleyip **Gerekli** olarak atadığınızda, bu uygulamalar hem **Gerekli** hem de **Kullanılabilir** amaçlarıyla otomatik olarak oluşturulur.<br><br>
 > Gerekli amaçla hedefi belirlenmiş iOS Store uygulamaları (iOS VPP uygulamaları değil), cihazı iade etme sırasında cihazda zorunlu tutulur ve Şirket Portalı uygulamasında da gösterilir.
 
-## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Yönetilen Google Play yönetilmeyen cihazlar için uygulama dağıtımı
-Bir kayıtlı olmayan uygulama koruma İlkesi kayıt olmadan Android cihazlar için (APP-BİZ) dağıtım senaryosu, yönetilen Google Play store uygulamaları ve iş kolu (LOB) uygulamalarını kullanıcılara dağıtmak için kullanabilirsiniz. Yönetilen Google Play uygulamaları olarak hedeflenen **kayıtlı veya Kayıtsız kullanılabilir** Play Store uygulaması son kullanıcının cihazında şirket içinde ve Şirket portalı uygulamasında görünür. Son kullanıcı göz atın ve Play uygulamasından bu şekilde dağıtılan uygulamaları yükleyin. Yönetilen Google Play mağazasından uygulamalar yüklü olduğundan, son kullanıcının anlamına cihazların daha güvenli olacak bilinmeyen kaynaklardan uygulama yüklemesine izin vermek için cihaz ayarlarını değiştirmek gerekli değildir. Uygulama geliştiricisi, bir kullanıcının cihazına yüklenen play bir uygulamanın yeni bir sürümünü yayımlar, uygulamayı Play tarafından otomatik olarak güncelleştirilir. 
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Yönetilmeyen cihazlara Yönetilen Google Play uygulaması dağıtımı
+Kayıtlı olmayan Kayıt Olmadan Uygulama Koruma İlkesi (APP-WE) dağıtım senaryosundaki Android cihazlar için Yönetilen Google Play'i kullanarak kullanıcılara mağaza ve iş kolu (LOB) uygulamaları dağıtabilirsiniz. **Kayıtlı veya kayıtsız olarak kullanılabilir** olarak hedeflenene Yönetilen Google Play uygulamaları, son kullanıcının cihazında Şirket Portalı uygulamasında değil Play Store uygulamasında görünür. Bu sayede son kullanıcı Play uygulamasına dağıtılan uygulamalara göz atabilir ve bunları yükleyebilir. Uygulamalar yönetilen Google Play'den yüklendiği için son kullanıcının bilinmeyen kaynaklardan uygulama yüklenmesine izin verme amacıyla cihaz ayarlarını değiştirmesi gerekmez ve bu sayede cihaz daha güvenli olur. Uygulama geliştiricisinin, kullanıcının cihazına yüklenen uygulama için Play'de yeni bir sürüm yayımlaması durumunda uygulama Play tarafından otomatik olarak güncelleştirilir. 
 
-Bir yönetilen Google Play uygulaması yönetilmeyen cihazlara atamak için adımlar:
+Yönetilmeyen cihazlara Yönetilen Google Play uygulaması atama adımları:
 
-1. Intune kiracınız için yönetilen Google Play bağlanın. Bu ayrılmış, Kurumsal Android iş profili ya da tam olarak yönetilen cihazları yönetmek için yapmış olduğunuz, yeniden yapmanız gerekmez.
-2. Yönetilen Google Play mağazasından, uygulamaları, Intune konsoluna ekleyin.
-3. Yönetilen Google Play uygulamaları olarak hedef **kayıtlı veya Kayıtsız kullanılabilir** istediğiniz kullanıcı grubunu. **Gerekli** ve **kaldırma** uygulama hedefleyen kayıtlı olmayan cihazlar için desteklenmez.
-4. Bir uygulama koruma İlkesi, kullanıcı grubuna atayın.
-5. Son kullanıcı Şirket portalı uygulamasında bir sonraki açışında uygulamalarını Play Store uygulamasında kendileri için kullanılabilir olduğunu belirten bir ileti görürler.  Kullanıcı Play uygulamaya doğrudan şirket uygulamaları görmek için duruma getirilebilmesi için bu bildirimi dokunabilir veya Play Store uygulaması için ayrı olarak gidebilirsiniz.
-6. Son kullanıcı kendi kişisel Google hesabı (burada, kişisel uygulamalarını bakın) ve kendi iş hesabını (burada depolama ve LOB uygulamaları için hedeflenmiş görürler) arasında geçiş yapma ve Play Store uygulaması içinde bağlam menüsü genişletebilirsiniz. Son kullanıcıların, Play Store uygulamasında yükleme dokunarak uygulamalarını yükleyin.
+1. Intune kiracınızı yönetilen Google Play'e bağlayın. Android Kurumsal iş profili, ayrılmış veya tam olarak yönetilen cihaz yönetimi amacıyla bunu daha önce yaptıysanız tekrar yapmanıza gerek yoktur.
+2. Yönetilen Google Play'deki uygulamaları Intune konsolunuza ekleyin.
+3. Yönetilen Google Play uygulamalarını istediğiniz kullanıcı grubu için **Kayıtlı veya kayıtsız olarak kullanılabilir** olarak hedefleyin. **Gerekli** ve **Kaldır** ile uygulama hedefleme, kayıtlı olmayan cihazlar için desteklenmez.
+4. Kullanıcı grubuna bir Uygulama Koruma İlkesi atayın.
+5. Artık son kullanıcı Şirket Portalı uygulamasını açtığında Play Store uygulamasında kullanabileceği uygulamalar olduğunu belirten bir ileti görecektir.  Kullanıcı, bu bildirime dokunarak doğrudan Play uygulamasına gidebilir ve şirket uygulamalarını görebilir veya ana menüden Play Store uygulamasına girebilir.
+6. Son kullanıcı, Play Store uygulamasındaki bağlam menüsünü genişleterek kişisel Google hesaplarıyla (kişisel uygulamalarının bulunduğu) iş hesapları (kendilerini hedefleyen mağaza ve iş kolu uygulamalarının bulunduğu) arasında geçiş yapabilir. Son kullanıcılar, Play Store uygulamasında Yükle'ye dokunarak uygulamaları yükleyebilir.
 
-Intune konsolunda bir uygulama seçmeli silme verildiğinde, Play Store uygulamasını iş hesabını otomatik olarak kaldırılır ve kullanıcıdan gelen noktası artık bkz olacak uygulamalar Play Store uygulama Kataloğu'nda çalışır. İş hesabı, bir CİHAZDAN kaldırıldığında, Play Store ' yüklenen uygulamalar cihazda yüklü kalır ve değil kaldırılır. 
+Intune konsolundan uygulamaya özgü bir silme işlemi başlatıldığında iş hesabı Play Store uygulamasından otomatik olarak kaldırılır ve bu işlemden sonra son kullanıcı Play Store uygulama kataloğunda iş uygulamalarını göremez. İş hesabı bir cihazdan kaldırıldığında Play Store'dan yüklenen uygulamalar cihazda yüklü şekilde kalır ve kaldırılmaz. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

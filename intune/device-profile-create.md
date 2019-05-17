@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure’da cihaz profilleri oluşturma | Microsoft Docs
-description: Ekleyebilir veya cihaz yapılandırma profili Intune yapılandırabilirsiniz. Platform türünü seçin, ayarlarını yapılandırmak ve bir kapsam etiketi ekleyin.
+description: Microsoft Intune’da cihaz yapılandırma profili ekleyin veya yapılandırın. Platform türünü seçin, ayarları yapılandırın ve kapsam etiketi ekleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -18,38 +18,38 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 08c6ece37a4ff6eceaa4df735f365453a4bc7d88
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898862"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Cihaz profilleri eklemek ve ayarları yapılandırmak izin ve daha sonra bu ayarları, kuruluşunuzdaki cihazlara gönderin. [Cihaz profillerini kullanarak cihazlarınızı özellikleri ve ayarları uygula](device-profiles.md) yapabilecekleriniz de dahil olmak üzere daha fazla ayrıntıya gider.
+Cihaz profillerini kullanarak ayar ekleyip yapılandırabilir ve daha sonra bu ayarları kuruluşunuzdaki cihazlara gönderebilirsiniz. [Cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama](device-profiles.md) sayfasında yapabileceğiniz işlemlerle ilgili ayrıntılı bilgilere yer verilmiştir.
 
 Bu makalede:
 
-- Profil oluşturma adımları listelenir.
-- "Profil filtrelemek için" bir kapsam etiketi ekleme işlemi gösterilmektedir.
-- Cihaz profilleri ve tüm profil güncelleştirmeleri aldığınızda döngü sürelerini iade yenileme listeler.
+- Profil oluşturma adımları listelenmiştir.
+- Profili "filtrelemek" için kapsam etiketi ekleme adımları gösterilmektedir.
+- Cihazların profilleri ve profil güncelleştirmelerini aldığı iade yenileme döngüsü süreleri listelenmiştir.
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
 
-2. **Cihaz yapılandırması**’nı seçin. Aşağıdaki seçenekleriniz vardır:
+2. **Cihaz yapılandırması**’nı seçin. Şu seçenekleriniz vardır:
 
-    - **Genel Bakış**: Profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız Profiller hakkında ek ayrıntılar sağlar.
-    - **Yönetme**: Cihaz profilleri oluşturma, özel yükleme [PowerShell betikleri](intune-management-extension.md) profil içinde çalışmak ve veri planları kullanarak cihazlara [Esım](esim-device-configuration.md).
-    - **İzleyici**: Bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profillerinize ilişkin günlükleri görüntüleyin.
-    - **Kurulum**: Bir SCEP veya PFX sertifika yetkilisi ekleyin veya etkinleştirme [Telekom Gider Yönetimi](telecom-expenses-monitor.md) profilinde.
+    - **Genel Bakış**: Profillerinizin durumunu listeler, kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar.
+    - **Yönet**: Cihaz profilleri oluşturun, profil içinde çalışacak özel [PowerShell betiklerini](intune-management-extension.md) karşıya yükleyin ve [eSIM](esim-device-configuration.md) ile cihazlara veri planı ekleyin.
+    - **İzle**: Bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profillerinize ilişkin günlükleri görüntüleyin.
+    - **Kurulum**: Bir SCEP veya PFX sertifika yetkilisi ekleyin veya profilde [Telekomünikasyon Gider Yönetimi](telecom-expenses-monitor.md)’ni etkinleştirin.
 
-3. Seçin **profilleri** > **profili oluşturma**. Aşağıdaki özellikleri girin:
+3. **Profiller** > **Profil Oluştur**'u seçin. Aşağıdaki özellikleri girin:
 
-   - **Ad**: Profil için açıklayıcı bir ad girin. Kolayca daha sonra tanımlayabilmeniz profillerinizi adlandırın. Örneğin, iyi profil adı olan **tüm şirket için WP e-posta profili**.
+   - **Ad**: Profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin **Şirketin tamamı için WP e-posta profili** gibi bir profil adı kullanabilirsiniz.
    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
    - **Platform**: Cihazlarınızın platformu seçin. Seçenekleriniz şunlardır:  
 
@@ -61,15 +61,15 @@ Bu makalede:
        - **Windows 8.1 ve üzeri**
        - **Windows 10 ve üzeri**
 
-   - **Profil türü**: Oluşturmak istediğiniz ayarlarının türünü seçin. Gösterilen listesi bağlıdır **platform** belirleyin.
-   - **Ayarları**: Aşağıdaki makaleler her profil türü için ayarları açıklar:
+   - **Profil türü**: Oluşturmak istediğiniz ayar türünü seçin. Gösterilen liste, seçtiğiniz **platforma** bağlıdır.
+   - **Ayarlar**: Aşağıdaki makaleler her profil türü için ayarları açıklar:
 
-       - [Yönetim Şablonları](administrative-templates-windows.md)
+       - [Yönetim şablonları](administrative-templates-windows.md)
        - [Özel](custom-settings-configure.md)
        - [Teslim iyileştirme](delivery-optimization-windows.md)
        - [Cihaz özellikleri](device-features-configure.md)
        - [Cihaz kısıtlamaları](device-restrictions-configure.md)
-       - [Sürüm yükseltme ve modu anahtarı](edition-upgrade-configure-windows-10.md)
+       - [Sürüm yükseltme ve mod değiştirme](edition-upgrade-configure-windows-10.md)
        - [Eğitim](education-settings-configure.md)
        - [E-posta](email-settings-configure.md)
        - [Uç nokta koruması](endpoint-protection-configure.md)
@@ -84,29 +84,29 @@ Bu makalede:
        - [Windows Defender ATP](advanced-threat-protection.md)
        - [Windows Bilgi Koruması](windows-information-protection-configure.md)
 
-     Örneğin, **iOS** platformu, profil türü seçeneklerinizi aşağıdaki profile benzer görünmelidir:
+     Örneğin **iOS** platformunu seçerseniz profil türü seçenekleriniz aşağıdaki profile benzer olacaktır:
 
      ![Intune'da iOS profili oluşturma](./media/create-device-profile.png)
 
-4. İşiniz bittiğinde seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin. Profil oluşturulur ve listede gösterilen.
+4. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Tamam** > **Oluştur**'u seçin. Profil oluşturulur ve listede gösterilir.
 
 ## <a name="scope-tags"></a>Kapsam etiketleri
 
-Ayarları ekledikten sonra bir kapsam etiketi profiline ekleyebilirsiniz. Kapsam etiketleri atayabilir ve ilkeleri ik ya da tüm ABD NC çalışan gibi belirli gruplara filtre.
+Profilinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. İK veya Merkez ofis çalışanları gibi belirli gruplara ilke atamak ve filtrelemek kapsam etiketlerini kullanabilirsiniz.
 
-Kapsam etiketleri ve neler yapabileceğiniz hakkında daha fazla bilgi için bkz. [kullanım RBAC ve kapsam etiketleri için Dağıtılmış BT](scope-tags.md).
+Kapsam etiketleri ve yapabilecekleriniz hakkında daha fazla bilgi için bkz. [Dağıtılmış BT için RBAC ve kapsam etiketlerini kullanma](scope-tags.md).
 
-### <a name="add-a-scope-tag"></a>Kapsam etiketi Ekle
+### <a name="add-a-scope-tag"></a>Kapsam etiketi ekleme
 
-1. Seçin **kapsam (etiketler)**.
-2. Seçin **Ekle** yeni bir kapsam etiketi oluşturmak için. Veya listeden mevcut bir kapsam etiketi seçin.
+1. **Kapsam (Etiketler)** öğesini seçin.
+2. **Ekle**'yi seçerek yeni bir kapsam etiketi oluşturun. İsterseniz listedeki kapsam etiketlerinden birini de seçebilirsiniz.
 3. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-## <a name="refresh-cycle-times"></a>Döngü sürelerini Yenile
+## <a name="refresh-cycle-times"></a>Yenileme döngüsü süreleri
 
-Intune, yapılandırma profillerini güncelleştirmeleri denetlemek için aşağıdaki yenileme döngüsü kullanır:
+Intune, yapılandırma profillerindeki güncelleştirmeleri denetlemek için aşağıdaki yenileme döngüsü sürelerini kullanır:
 
-| Platform | Yenileme döngüsü|
+| Platform | Döngü süresi|
 | --- | --- |
 | iOS | 6 saatte bir |
 | Mac OS | 6 saatte bir |
@@ -115,7 +115,7 @@ Intune, yapılandırma profillerini güncelleştirmeleri denetlemek için aşağ
 | Windows Phone | 8 saatte bir |
 | Windows 8.1 | 8 saatte bir |
 
-Son olarak cihazın kayıtlı, iade daha sık çalışır:
+Cihaz son zamanlarda kaydedilmişse, iade daha sık çalıştırılır:
 
 | Platform | Sıklık |
 | --- | --- |
@@ -126,7 +126,7 @@ Son olarak cihazın kayıtlı, iade daha sık çalışır:
 | Windows Phone | 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
 | Windows 8.1 | 15 dakika boyunca 5 dakikada bir, sonraki 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
 
-İstediğiniz zaman, kullanıcılar Şirket portalı uygulamasını açın ve hemen profili güncelleştirmeleri denetlemek için cihazı eşitleyebilir.
+Kullanıcılar profil güncelleştirmelerini istedikleri zaman denetlemek için Şirket Portalı uygulamasını açıp cihazı eşitleyebilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

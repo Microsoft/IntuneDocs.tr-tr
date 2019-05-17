@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59895762"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uygulamalarınızın süresinin dolmasını engellemek için iOS uygulama sağlama profillerini kullanma
 
@@ -44,7 +44,7 @@ Yönetici olarak, iOS uygulama sağlama yapılandırmasını atamak için güven
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS mobil uygulama sağlama profili oluşturma
 
-1. [Azure portal](https://portal.azure.com) oturum açın.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 1.  **İstemci uygulamaları** iş yükünde **Yönet** > **iOS uygulama sağlama profilleri** seçeneğini belirleyin.
@@ -52,7 +52,7 @@ Yönetici olarak, iOS uygulama sağlama yapılandırmasını atamak için güven
 3. **Profil oluştur** bölmesinde aşağıdakileri değerleri yapılandırın:
     - **Ad** - Bu mobil sağlama profiline bir ad verin.
     - **Açıklama** - İsteğe bağlı olarak, ilke için bir açıklama sağlayın.
-    - **Profil dosyasını karşıya yükle** -seçin **açık** simgesi, bir Apple mobil yapılandırma profili dosyasını seçin (uzantısı ile `.mobileprovision`) kaynağından indirdiğiniz [Apple Developer Web](https://developer.apple.com/).
+    - **Profili dosyasını karşıya yükleme** - **Aç** simgesini seçin ve ardından [Apple Developer web sitesinden](https://developer.apple.com/) indirdiğiniz Apple Mobil Yapılandırma dosyasını (`.mobileprovision` uzantısına sahip) seçin.
 4. İşiniz bittiğinde **Oluştur**’u seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar

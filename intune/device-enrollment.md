@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 68f5fad9d05787b6e79792d594480547ce10cf81
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59894306"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764903"
 ---
 # <a name="what-is-device-enrollment"></a>Cihaz kaydı nedir?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -35,26 +35,26 @@ Varsayılan olarak tüm platform cihazları Intune'a kaydedilebilir. Ancak [ciha
 
 ## <a name="ios-enrollment-methods"></a>iOS kayıt yöntemleri
 
-| **Yöntem** |  **Sıfırlama Gerekli** |    [**Kullanıcı Benzeşimi**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Kilitli** | **Ayrıntılar** |
+| **Yöntemi** |  **Sıfırlama Gerekli** |    [**Kullanıcı Benzeşimi**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Kilitli** | **Ayrıntılar** |
 |:---:|:---:|:---:|:---:|:---:|
 | | Kayıt sırasında cihazlar silinir. |  Her bir cihazı bir kullanıcıyla ilişkilendirir.| Kullanıcılar cihazların kaydını kaldıramaz.  | |
 |**[KCG](#bring-your-own-device)** | Hayır|   Evet |   Hayır | [Daha fazla bilgi](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| Hayır |Hayır |Hayır  | [Daha fazla bilgi](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#apple-device-enrollment-program)**|   Evet |   İsteğe bağlı |  İsteğe bağlı|[Daha fazla bilgi](./device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**| Evet |   İsteğe bağlı |  Hayır| [Daha fazla bilgi](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Evet |   İsteğe Bağlı |  İsteğe Bağlı|[Daha fazla bilgi](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| Evet |   İsteğe Bağlı |  Hayır| [Daha fazla bilgi](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| Hayır |    Hayır  | Hayır|[Daha fazla bilgi](./apple-configurator-direct-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>macOS kayıt yöntemleri
-| **Yöntem** |  **Sıfırlama Gerekli** |  **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
+| **Yöntemi** |  **Sıfırlama Gerekli** |  **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[KCG](#bring-your-own-device)** | Hayır| Evet | Hayır | [Daha fazla bilgi](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Hayır |Hayır |Hayır  | [Daha fazla bilgi](./device-enrollment-manager-enroll.md)|
-|**[DEP](#apple-device-enrollment-program)**|   Evet |   İsteğe bağlı |  İsteğe bağlı|[Daha fazla bilgi](./device-enrollment-program-enroll-macos.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Evet |   İsteğe Bağlı |  İsteğe Bağlı|[Daha fazla bilgi](./device-enrollment-program-enroll-macos.md)|
 
 
 ## <a name="windows-enrollment-methods"></a>Windows kayıt yöntemleri
 
-| **Yöntem** |  **Sıfırlama Gerekli** |    **Kullanıcı Benzeşimi**   |   **Kilitli** | **Ayrıntılar**|
+| **Yöntemi** |  **Sıfırlama Gerekli** |    **Kullanıcı Benzeşimi**   |   **Kilitli** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[KCG](#bring-your-own-device)** | Hayır |  Evet |   Hayır | [Daha fazla bilgi](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Hayır |Hayır |Hayır  |[Daha fazla bilgi](device-enrollment-manager-enroll.md)|
@@ -67,11 +67,19 @@ Varsayılan olarak tüm platform cihazları Intune'a kaydedilebilir. Ancak [ciha
 
 ## <a name="android-enrollment-methods"></a>Android kayıt yöntemleri
 
-| **Yöntem** |  **Sıfırlama Gerekli** |    **Kullanıcı Benzeşimi**   |   **Kilitli** | **Ayrıntılar**|
+| **Kişisel** | **Kayıt yöntemleri** | **Sıfırlama Gerekli** | **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[KCG](#bring-your-own-device)** | Hayır|   Evet |   Hayır | [Daha fazla bilgi](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| Hayır |Hayır |Hayır  |[Daha fazla bilgi](./device-enrollment-manager-enroll.md)|
-|**Android iş profilleri**| Hayır | Evet | Hayır| [Daha fazla bilgi](./android-work-profile-enroll.md) |
+|**Android cihaz Yöneticisi**|**Şirket portalı başlatılan kullanıcı** | Hayır | Evet | Hayır | [Daha fazla bilgi](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android kurumsal iş profili**|**Şirket portalı başlatılan kullanıcı**| Hayır | Evet | Hayır | [Daha fazla bilgi](./android-work-profile-enroll.md)|
+
+
+| **Kurumsal** | **Kayıt yöntemleri** | **Sıfırlama Gerekli** | **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android cihaz Yöneticisi**|**[DEM](#device-enrollment-manager) Şirket portalı başlatılan**| Hayır | Hayır | Hayır |[Daha fazla bilgi](./device-enrollment-manager-enroll.md)|
+|**Android cihaz Yöneticisi**|**(Önceden bildirilen IMEI veya SN) Şirket portalı başlatılan kullanıcı**| Hayır | Evet | Hayır | [Daha fazla bilgi](./corporate-identifiers-add.md)|
+|**Zebra Mobility uzantıları ile Android cihaz Yöneticisi**|**Kullanıcı veya [DEM](#device-enrollment-manager) Şirket portalı başlatılan**| Hayır | Eğer hiçbir kullanıcı tarafından başlatılan varsa Evet [DEM](#device-enrollment-manager) başlatıldı | Hayır | [Daha fazla bilgi](./android-zebra-mx-overview.md)|
+|**Ayrılmış android Kurumsal**|**NFC, QR kodunu, sıfır dokunma simgesi**| Evet | Hayır | İlke aracılığıyla yapılandırılabilir | [Daha fazla bilgi](./android-kiosk-enroll.md)|
+|**Tam olarak yönetilen android Enterprise (Önizleme)**|**NFC, QR kodunu, sıfır dokunma simgesi**| Evet | Evet | İlke aracılığıyla yapılandırılabilir | [Daha fazla bilgi](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Kendi cihazını getir

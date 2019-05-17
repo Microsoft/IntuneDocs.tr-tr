@@ -19,13 +19,13 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897145"
 ---
-# <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune veri ambarı'nı kullanma
+# <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune Veri Ambarını kullanma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -34,7 +34,7 @@ Kuruluşunuzun mobil ortamı hakkında öngörü sağlayan raporlar derlemek iç
 -   Mobil cihazların durumunu gözden geçirebilmeniz için uygulama ve işletim sistemlerinin çözümlemesi
 -   İlke güncelleştirmelerini sorunsuz bir şekilde kullanıma sunabilmeniz için kayıt ve cihaz uyumluluğu eğilimleri
 
-## <a name="data-warehouse-benefits"></a>Veri ambarı avantajları
+## <a name="data-warehouse-benefits"></a>Veri Ambarının avantajları
 
 Veri Ambarı, mobil ortamınız hakkında Azure portalına kıyasla daha fazla bilgiye erişmenizi sağlar. Intune Veri Ambarı ile şunlara erişebilirsiniz:
 
@@ -43,7 +43,7 @@ Veri Ambarı, mobil ortamınız hakkında Azure portalına kıyasla daha fazla b
   -  OData standardı kullanan bir veri modeli
 
 > [!Note]
-> Eğer bir mobil ortak yönetilen kullanarak System Center Configuration Manager ve Microsoft Intune ile cihaz Yönetimi (MDM), Configuration Manager'dan veri almak için ihtiyacınız. Intune Veri Ambarı yalnızca Intune verilerini içerir. Özel raporlarınız için bir Configuration Manager Power BI Panosu kullanabilirsiniz. Daha fazla bilgi için bkz. “[System Center Configuration Manager için Power BI çözüm şablonu duyurusu]( https://powerbi.microsoft.com/blog/sccm-solution-template)” ve “[Dynamics 365 için Power BI içeriği](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)”.
+> System Center Configuration Manager ve Microsoft Intune ile bir ortak yönetilen mobil cihaz yönetimi (MDM) kullanıyorsanız, verilerinizi Configuration Manager'dan almak istersiniz. Intune Veri Ambarı yalnızca Intune verilerini içerir. Özel raporlarınız için bir Configuration Manager Power BI panosu kullanabilirsiniz. Daha fazla bilgi için bkz. “[System Center Configuration Manager için Power BI çözüm şablonu duyurusu]( https://powerbi.microsoft.com/blog/sccm-solution-template)” ve “[Dynamics 365 için Power BI içeriği](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)”.
 
 > [!Important]  
 > Artık sorgu parametresini ayarlayarak Intune Veri Ambarı’nın v1.0 sürümünü kullanabilirsiniz `api-version=v1.0`. Veri Ambarı’ndaki koleksiyonlara yapılan güncelleştirmeler ek olarak yapılır, yani mevcut senaryoları bozmaz.<br><br>
@@ -53,4 +53,4 @@ Veri Ambarı, mobil ortamınız hakkında Azure portalına kıyasla daha fazla b
 
 - Bir bağlantı edinin ve öngörü almak için Power BI’ı kullanın. Yönergeler için bkz. [Intune Veri Ambarına Power BI ile bağlanma](reports-proc-get-a-link-powerbi.md).
 - Bağlantınız ile Power BI kullanarak özel bir rapor hazırlayın. Yönergeler için bkz. [OData akışına Power BI ile bir rapor oluşturma](reports-proc-create-with-odata.md).
-- Intune veri ambarı API'si veri modeli ve varlıklar arasındaki ilişkiler hakkında daha fazla bilgi edinin<!-- , and an example of creating a custom client to retrieve data,--> bkz: [Intune veri ambarı API'si](reports-nav-intune-data-warehouse.md).
+- Intune Veri Ambarı API’si, veri modeli ve varlıklar arasındaki ilişkiler hakkında daha fazla bilgi için<!-- , and an example of creating a custom client to retrieve data,--> bkz. [Intune Veri Ambarı API'si](reports-nav-intune-data-warehouse.md).

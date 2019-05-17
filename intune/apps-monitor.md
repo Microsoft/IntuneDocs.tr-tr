@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b3cba546be350f47c1a57f47b8eddf85323dc74
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.openlocfilehash: 041a8198f8017bff88e139e4020e3364c05be5c8
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59899644"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -31,14 +31,14 @@ ms.locfileid: "58797964"
 
 Intune, yönettiğiniz uygulamanın özelliklerini izlemeniz ve uygulama atama durumunu yönetmeniz için birkaç yol sağlar.
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
+1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** menüsünde **İstemci uygulamaları**’nı seçin.
 4. Menünün **Yönet** bölümünde **Uygulamalar**’ı seçin.
 5. Uygulama listesinde, izlenecek uygulamayı seçin. Cihaz durumuna ve kullanıcı durumuna genel bakışı içeren uygulama bölmesini göreceksiniz.
 
 > [!NOTE]
-> Olarak dağıtılan android Store uygulamaları **kullanılabilir** ve Android LOB uygulamaları olarak dağıtılmış **kayıtlı veya Kayıtsız kullanılabilir** yükleme durumunu bildirmeyen.
+> **Kullanılabilir** olarak dağıtılan Android mağazası uygulamaları ve **Kayıtlı veya kayıtsız olarak kullanılabilir** şeklinde dağıtılan Android iş kolu uygulamaları yükleme durumunu bildirmez.
 
 ## <a name="app-overview-pane"></a>Uygulamaya genel bakış bölmesi
 
@@ -50,8 +50,8 @@ Uygulama bölmesinde, ortamınızdaki bir uygulamanın durumu hakkındaki ayrın
  | **Uygulama ayrıntıları**            | **Açıklama**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Yayımcı**          | Uygulamanın yayımcısı.                                            |
-| **İşletim Sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
-| **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat. <b>**Not**: Bu tarih değeri, bir BT yöneticisi uygulama meta verileri, uygulama kategorisi veya uygulama açıklaması değiştirme gibi değiştiğinde güncelleştirilir.                        |
+| **İşletim sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
+| **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat. <b>**Not**: BT yöneticileri, uygulama kategorisi veya uygulama açıklamasını değiştirme gibi uygulama meta verilerinde değişiklik yaptığında bu tarih değeri güncelleştirilir.                        |
 | **Atanan**           | Uygulamanın atanıp atanmadığı (**Evet** veya **Hayır**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Cihaz ve kullanıcı durum grafikleri
@@ -71,7 +71,7 @@ Grafikler aşağıdaki durumlar için uygulamaların sayısını gösterir:
 >    - Kiracıda aynı uygulamanın birden çok örneğinin hedeflenmesi, kullanıcı veya cihazların olası örtüşmesi nedeniyle farklı sayım sonuçları verebilir. Uygulamanın her örneği örtüşen kullanıcıları sayar ama bulunan uygulamaların yinelenen sayımları ortaya çıkar.
 >    - Bulunan uygulamalarla uygulama durumu farklı zaman çerçevelerinde toplanır ve bu da uygulama sayılarında tutarsızlığa neden olabilir.
 > 
-> Ayrıca, Android uygulamaları olarak dağıtılan unutmayın **kayıtlı veya Kayıtsız kullanılabilir** yalnızca kayıtlı cihazlar için uygulama yükleme durumu raporu. Uygulama yükleme durumu, Intune'a kayıtlı olmayan cihazlar için kullanılabilir değil.
+> Ayrıca **Kayıtlı veya kayıtsız olarak kullanılabilir** şeklinde dağıtılan Android uygulamalarının uygulama yükleme durumunu yalnızca kayıtlı cihazlar için bildirdiğini unutmayın. Uygulama yükleme durumu, Intune'a kayıtlı olmayan cihazlar için kullanılamaz.
 
 ### <a name="device-install-status"></a>Cihaz yükleme durumu
 
@@ -82,8 +82,8 @@ Menünün **İzleme** bölümünde **Cihaz yükleme durumu**’nu seçtiğinizde
 | **Cihaz adı**      | Cihazı adlandırmaya izin veren platformlarda cihazın adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik başka hiçbir cihazda kullanılamaz.                                                                       |
 | **Kullanıcı adı**        | Kullanıcının adı.                                                                                                                                                                                                                                      |
 | **Platform**         | Cihazın işletim sistemi (Windows, iOS, Android, vb.).                                                                                                                                                                                           |
-| **Sürüm**          | Uygulamanın sürüm numarası. İş kolu (LOB) uygulamaları için uygulamanın tam sürüm numarası gösterilir. Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800). Store uygulamaları için hiçbir sürümleri gösterilir. |
-| **Durumu**           | Uygulamanın durumu.                                                                                                                                                                                                                                     |
+| **Sürüm**          | Uygulamanın sürüm numarası. İş kolu (LOB) uygulamaları ve İş İçin Microsoft Store uygulamaları için, uygulamanın tam sürüm numarası gösterilir. Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800). Standart Store uygulamaları için sürüm bilgisi gösterilmez. |
+| **Durum**           | Uygulamanın durumu.                                                                                                                                                                                                                                     |
 | **Durum ayrıntıları**   | Durumun ayrıntıları.                                                                                                                                                                                                                                     |
 | **Son iade etme**    | Cihazın Intune ile son eşitlenme tarihi.                                                                                                                                                                                                                  |
 

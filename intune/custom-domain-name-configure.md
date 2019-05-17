@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59895989"
 ---
 # <a name="configure-a-custom-domain-name"></a>Özel bir etki alanı adı yapılandırma
 
@@ -35,7 +35,7 @@ Kuruluşunuz, Microsoft’un Intune gibi bulut tabanlı bir hizmete kaydolduğun
 
 Kullanıcı hesapları oluşturmadan veya şirket içi Active Directory'nizden eşitlemeden önce, yalnızca .onmicrosoft.com etki alanı adını kullanmaya veya bir veya daha fazla özel etki alanı eklemeye karar vermenizi önemle öneririz. Kullanıcı yönetimini kolaylaştırmak için kullanıcı eklemeden önce özel bir etki alanı ayarlayın. Böylece kullanıcılar, diğer etki alanı kaynaklarına erişmek için kullandıkları kimlik bilgileri ile oturum açabilir.
 
-Microsoft'un sunduğu bulut tabanlı bir hizmete abone olduğunuzda, sizin hizmet örneğiniz bulut tabanlı hizmetiniz için kimlik ve dizin hizmetleri sağlayan bir Microsoft [Azure AD kiracısı](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant) olur. Kuruluşunuzun özel etki alanı kullanmak için Intune'u yapılandırma görevleri diğer Azure AD kiracılarıyla aynı olduğundan, bilgileri kullanabilir ve yordamları ve [etki alanınızı ekleme](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
+Microsoft'un sunduğu bulut tabanlı bir hizmete abone olduğunuzda, sizin hizmet örneğiniz bulut tabanlı hizmetiniz için kimlik ve dizin hizmetleri sağlayan bir Microsoft [Azure AD kiracısı](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant) olur. Ayrıca, kuruluşunuzun özel etki alanını kullanmak için Intune’u yapılandırma görevleri diğer Azure AD kiracılarıyla aynı olduğunda, [Etki alanınızı ekleme](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) konu başlığı altında bulunan bilgi ve yordamları kullanabilirsiniz.
 
 > [!TIP]
 > Özel etki alanları hakkında daha fazla bilgi için bkz. [Azure Active Directory’de özel etki alanlarına kavramsal bir genel bakış](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/).
@@ -44,15 +44,15 @@ onmicrosoft.com ilk etki alanı adını yeniden adlandıramaz veya kaldıramazs�
 
 ## <a name="to-add-and-verify-your-custom-domain"></a>Özel etki alanınızı ekleme ve doğrulama
 
-1. Git [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/) ve yönetici hesabınızda oturum açın.
+1. [Microsoft 365 yönetim merkezine](https://admin.microsoft.com/) gidin ve yönetici hesabınızda oturum açın.
 
 2. Gezinme bölmesinde, **Kurulum** &gt; **Etki alanları**'nı seçin.
 
-3. **Etki alanı ekle**’yi seçin ve özel etki alanı adınızı yazın. **İleri**’yi seçin.
-   ![Microsoft 365 ekran Yönetim Merkezi'nde ayarlar > seçilen etki alanlarının ve yeni bir etki alanı adı eklenen](./media/domain-custom-add.png)
+3. **Etki alanı ekle**’yi seçin ve özel etki alanı adınızı yazın. **İleri**'yi seçin.
+   ![Microsoft 365 yönetim merkezinde Ayarlar > Etki Alanları’nın seçili olduğu ve yeni bir etki alanının eklenmesini gösteren ekran görüntüsü](./media/domain-custom-add.png)
 4. **Etki alanını doğrula** iletişim kutusu açılarak, DNS barındırma sağlayıcınızdaki TXT kaydını oluşturmak için değerleri verir.
-    - **GoDaddy kullanıcıları**: Microsoft 365 Yönetim Merkezi, sizi Godaddy'nin oturum açma sayfasına yönlendirir. Kimlik bilgilerinizi girdikten ve etki alanı değiştirme izni sözleşmesini kabul ettikten sonra, TXT kaydı otomatik olarak oluşturulur. Alternatif olarak, kendiniz [TXT kaydını oluşturabilirsiniz](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
-    - **Register.com kullanıcıları**: İzleyin [adım adım yönergeler](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) TXT kaydını oluşturmak için.
+    - **GoDaddy kullanıcıları**: Microsoft 365 yönetim merkezi sizi GoDaddy'nin oturum açma sayfasına yönlendirir. Kimlik bilgilerinizi girdikten ve etki alanı değiştirme izni sözleşmesini kabul ettikten sonra, TXT kaydı otomatik olarak oluşturulur. Alternatif olarak, kendiniz [TXT kaydını oluşturabilirsiniz](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
+    - **Register.com kullanıcıları**: TXT kaydını oluşturmak için [adım adım yönergeleri](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) izleyin.
 
 Özel bir etki alanı ekleme ve doğrulama adımları ayrıca [Azure Active Directory'de gerçekleştirilebilir](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 

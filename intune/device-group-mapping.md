@@ -1,5 +1,5 @@
 ---
-title: Cihazları ıntune'da gruplar halinde kategorilere ayırma
+title: Intune’daki cihazları gruplar halinde kategorilere ayırma
 titleSuffix: Microsoft Intune
 description: Daha kolay yönetim için cihazları gruplar halinde kategorilere ayırmayı öğrenin.
 keywords: ''
@@ -18,17 +18,17 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6f63c5a3dbeb7c8626ec1412dbcee661b82afc88
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896023"
 ---
 # <a name="categorize-devices-into-groups"></a>Cihazları gruplar halinde kategorilere ayırma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Cihazlarını yönetmeyi kolaylaştırmak için cihazları kendi tanımladığınız kategorilere göre gruplara otomatik olarak eklemek için Microsoft Intune cihaz kategorileri kullanabilirsiniz.
+Cihaz yönetimini kolaylaştırmak için Microsoft Intune cihaz gruplarını kullanabilir ve tanımladığınız cihaz kategorilerine dayanarak cihazları gruplara otomatik olarak ekleyebilirsiniz.
 
 Cihaz kategorileri aşağıdaki iş akışını kullanır:
 1. Kullanıcıların cihazlarını kaydederken arasından seçim yapabileceği kategoriler oluşturun.
@@ -44,7 +44,7 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 
 ## <a name="how-to-configure-device-categories"></a>Cihaz kategorilerini yapılandırma
 
-### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>1. adım: Azure portalının Intune dikey penceresinde cihaz kategorileri oluşturma
+### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Adım 1: Azure portalının Intune dikey penceresinde cihaz kategorileri oluşturma
 1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı**’nı seçin.
 2. **Cihaz kaydı** dikey penceresinde **Cihaz kategorileri**’ni seçin.
 3. **Cihaz kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
@@ -53,7 +53,7 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 
 2. adımda Azure Active Directory (Azure AD) güvenlik grupları oluştururken cihaz kategorisi adını kullanacaksınız.
 
-### <a name="step-2-create-azure-active-directory-security-groups"></a>2. adım: Azure Active Directory güvenlik grupları oluşturma
+### <a name="step-2-create-azure-active-directory-security-groups"></a>Adım 2: Active Directory güvenlik grupları oluşturma
 Bu adımda, Azure portalında cihaz kategorisi ve cihaz kategorisi adına dayalı dinamik gruplar oluşturacaksınız.
 
 Devam etmek için Azure AD belgelerindeki [Gelişmiş kurallar oluşturmak için öznitelikleri kullanma](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) konusuna bakın.

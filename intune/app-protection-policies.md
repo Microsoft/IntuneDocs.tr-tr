@@ -1,7 +1,7 @@
 ---
 title: Uygulama koruma ilkelerini oluşturma ve dağıtma
 titleSuffix: Microsoft Intune
-description: Bu konuda, oluşturma ve atama Intune uygulama koruma ilkelerini (APP) açıklar.
+description: Bu konu başlığında Microsoft Intune uygulama koruma ilkelerini oluşturma ve atama adımları anlatılmaktadır.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a7d7834719b42a1aaa6240510a951733a96f6add
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59899883"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -54,7 +54,7 @@ Kuruluşunuzun iş kolu (LOB) uygulamalarını uygulama koruma ilkelerine hazır
 6. **İlke ekle** dikey penceresinde, **Ayarlar**’ı açmak için **Gerekli ayarları yapılandır**’ı seçin.
 
    İlke ayarları üç kategoriye ayrılır:
-   - **Veri koruma** -veri kaybı önleme (DLP) denetimleri, kaydetme ve kesme, kopyalama, yapıştırma gibi bu grup içeren-kısıtlamaları olarak. Bu ayarlar, kullanıcıların uygulamalarda verilerle nasıl etkileşim kurduğunu belirler.
+   - **Veri koruma** - Bu grup kesme, kopyalama, yapıştırma ve farklı kaydetme kısıtlamaları gibi veri kaybı önleme (DLP) denetimlerini içerir. Bu ayarlar, kullanıcıların uygulamalarda verilerle nasıl etkileşim kurduğunu belirler.
    - **Erişim gereksinimleri** - Bu grup, son kullanıcının uygulamalara iş bağlamında nasıl eriştiğini belirleyen uygulama başına PIN seçenekleri içerir.  
    - **Koşullu başlatma** - Bu grup en düşük işletim sistemi ayarları, jailbreak uygulanmış ve kök erişim izni verilmiş cihazları algılama ve çevrimdışı yetkisiz kullanım süreleri gibi ayarları içerir.
 
@@ -74,15 +74,15 @@ Oluşturduğunuz yeni ilkeler siz açıkça dağıtana kadar herhangi bir kullan
 
 2. ***Intune Uygulama Koruması** bölmesinde, **Intune Uygulama Koruması - Atamalar** bölmesini açmak için **Atamalar**’ı seçin. *Ekle* sekmesinde **Dahil edilecek gruplar**’ı seçin. 
 
-   ![Grupları seçin menü eklemek için atamalar bölmesinin ekran görüntüsü](./media/app-protection-policy-add-users.png)
+   ![Dahil edilecek grupları seçin menüsü ile Atamalar bölmesinin ekran görüntüsü](./media/app-protection-policy-add-users.png)
 
 3.  **Azure Active Directory**’nizdeki tüm güvenlik gruplarının listesi görüntülenir. Bu ilkenin geçerli olmasını istediğiniz kullanıcı gruplarını seçin ve sonra da **Seç**'i kullanın. 
 
-    ![Kullanıcı grubu Ekle bölmesinin ekran görüntüsü ile Azure AD kullanıcı listesi](./media/azure-ad-user-group-list.png)
+    ![Azure AD kullanıcılarının listesiyle Kullanıcı grubu ekle bölmesinin ekran görüntüsü](./media/azure-ad-user-group-list.png)
 
-4.  Dahil ve grupları dışlama sonra seçin **Kaydet** yapılandırmayı kaydedin ve ilkeyi kullanıcılara dağıtma. Seçerseniz **at** yapılandırmanızı kaydetmeden önce için yaptığınız tüm değişiklikleri atacak *INCLUDE* ve *hariç* sekmeler.   
+4.  Grupları dahil edip hariç tuttuktan sonra yapılandırmayı kaydetmek ve ilkeyi kullanıcılara dağıtmak için **Kaydet**'i seçin. Yapılandırmanızı kaydetmeden **Vazgeç**'i seçerseniz *Ekle* ve *Dışla* sekmesinde yaptığınız tüm değişiklikler silinir.   
  
-     ![Kaydetme gösteren ekran görüntüsü ve seçenekleri atın](./media/save-assignment.png)
+     ![Kaydetme ve vazgeçme seçeneklerini gösteren ekran görüntüsü](./media/save-assignment.png)
   
 Bir ilke oluşturdunuz ve kullanıcılara dağıttınız.
 
@@ -91,7 +91,7 @@ Yalnızca Microsoft Intune lisansları atanmış kullanıcılar ilkeden etkileni
 >[!IMPORTANT]
 > Cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
-Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.
+Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.:
 * [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-android.md)
 * [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-ios.md)
 
@@ -115,13 +115,13 @@ Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama otu
 
 2.  *Intune Uygulama Koruması* bölmesinde, bu ilkeye sahip mevcut kullanıcı gruplarının listesini gösteren **Intune Uygulama Koruması - Atamalar** bölmesini açmak için **Atamalar**'ı seçin.
 
-3.  İlkeye yeni bir kullanıcı grubu eklemek için, *Dahil Et* sekmesinde **Dahil edilecek grupları seç**’i ve kullanıcı grubunu seçin. Seçin **seçin** grubu eklemek için. 
+3.  İlkeye yeni bir kullanıcı grubu eklemek için, *Dahil Et* sekmesinde **Dahil edilecek grupları seç**’i ve kullanıcı grubunu seçin. Gruba eklemek için **Seç**'i belirleyin. 
 
-4.  Bir kullanıcı grubu dışlanacak *hariç* sekmesini seçin **dışlanacak Grupları Seç**ve kullanıcı grubunu seçin. Kullanıcı grubunu kaldırmak için **Seç**’i seçin.  
+4.  Bir kullanıcı grubunu dışlamak için, *Dışla* sekmesinde **Dışlanacak grupları seç**’i ve kullanıcı grubunu seçin. Kullanıcı grubunu kaldırmak için **Seç**’i seçin.  
 
-5.  Daha önce üzerinde eklenen grubunu silmek için *INCLUDE* veya *hariç* sekmeler, nokta (...) seçip **Sil**. 
+5.  Önceden eklenen grupları silmek için *Ekle* veya *Dışla* sekmesinde üç noktayı (...) ve ardından **Sil**'i seçin. 
 
-5.  Değişikliklerinizi atamalarını hazır olduktan sonra seçin **Kaydet** yapılandırmayı kaydedin ve ilkeyi kullanıcılara yeni kümesine dağıtmak için. Seçerseniz **at** yapılandırmanızı kaydetmeden önce için yaptığınız tüm değişiklikleri atacak *INCLUDE* ve *hariç* sekmeler.
+5.  Atamalarda yaptığınız değişiklikler hazır duruma geldiğinde **Kaydet**'i seçerek yapılandırmayı kaydedebilir ve ilkeyi yeni kullanıcı grubuna dağıtabilirsiniz. Yapılandırmanızı kaydetmeden **Vazgeç**'i seçerseniz *Ekle* ve *Dışla* sekmesinde yaptığınız tüm değişiklikler silinir.
 
 ### <a name="to-change-policy-settings"></a>İlke ayarlarını değiştirmek için
 
@@ -140,7 +140,7 @@ Intune uygulama koruma ilkeleri, bir kullanıcının kimliğini hedeflendiği i�
 
 Bu ilkeleri oluşturmak için Intune konsolunda **İstemci uygulamaları** > **Uygulama koruma ilkeleri**'ne gidin ve **İlke Oluştur**’u seçin. Mevcut bir koruma ilkesini de düzenleyebilirsiniz. Uygulama koruma ilkesinin hem yönetilen hem yönetilmeyen cihazlara uygulanması için, **Tüm uygulama türlerini hedefle**’nin varsayılan değer olan **Evet** değerine ayarlandığını doğrulayın. Yönetim durumuna bağlı olarak ayrı atamalar yapmak istiyorsanız **Tüm uygulama türlerini hedefle** seçeneğini **Hayır** olarak ayarlayın. 
 
-![Tüm uygulama türleri için hedef Ekle İlkesi dikey penceresinin ekran görüntüsü](./media/app-protection-policies-target-all.png)
+![Tüm uygulama türlerini hedefle ile İlke ekle penceresinin ekran görüntüsü](./media/app-protection-policies-target-all.png)
 
 Uygulama ayarlarının Intune'a kayıtlı cihazlardaki uygulamalara yansıtılması için iOS cihazlarda ek uygulama yapılandırma ayarları gereklidir:
 - MDM ile yönetilen tüm uygulamalarda **IntuneMAMUPN** yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
