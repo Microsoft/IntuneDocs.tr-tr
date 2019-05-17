@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b4c39a1d95a10c96b8f34703f99c4d8414efbbf0
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894068"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim
 
@@ -69,13 +69,13 @@ Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamı�
 
 3. Aracı uygulama cihaza yüklenir.
 
-4. Aracı uygulama, Azure AD'de bir cihaz kaydı oluşturan Azure AD kayıt işlemini başlatır. Bu mobil cihaz Yönetimi (MDM) kayıt işlemi ile aynı değildir, ancak koşullu erişim ilkelerinin cihazda uygulanabilmesi için bu kayıt gereklidir.
+4. Aracı uygulama, Azure AD'de bir cihaz kaydı oluşturan Azure AD kayıt işlemini başlatır. Bu, mobil cihaz yönetimi (MDM) kayıt işlemi ile aynı değildir, ancak koşullu erişim ilkelerinin cihazda uygulanabilmesi için bu kayıt gereklidir.
 
-5. Aracı uygulama, uygulamanın kimliğini doğrular. Aracı uygulama, uygulamanın kullanıcı tarafından kullanım için yetkili olup olmadığını doğrulayabilirsiniz bu nedenle bir güvenlik katmanı yoktur.
+5. Aracı uygulama, uygulamanın kimliğini doğrular. Aracı uygulamanın kullanıcı tarafından kullanılma yetkisi olup olmadığının doğrulayabilmesi için bir güvenlik katmanı vardır.
 
 6. Aracı uygulama, kullanıcı kimlik doğrulama işleminin bir parçası olarak Uygulama İstemci kimliğini Azure AD’ye gönderir ve böylece bunun onaylı ilke listesinde olup olmadığı denetlenebilir.
 
-7. Azure AD, kullanıcının onaylı ilke listesine dayalı olarak uygulamanın kimliğini doğrulamasına ve kullanmasına olanak sağlar. Uygulama listede yoksa, Azure AD uygulamaya erişimi engeller.
+7. Azure AD, kullanıcının onaylı ilke listesine dayalı olarak uygulamanın kimliğini doğrulamasına ve kullanmasına olanak sağlar. Uygulama listede yoksa Azure AD uygulamaya erişimi engeller.
 
 8. Outlook uygulaması, Exchange Online ile iletişim başlatmak için Outlook Bulut Hizmeti ile iletişim kurar.
 

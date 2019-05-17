@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898556"
 ---
 # <a name="what-are-app-protection-policies"></a>Uygulama koruma ilkeleri nelerdir?
 
@@ -39,19 +39,19 @@ Intune uygulama koruma ilkelerini **mobil cihaz yönetimi (MDM) çözümlerinden
 
 Aşağıdaki özelliklere sahip cihazlarda çalıştırılan uygulamalar için uygulama koruma ilkeleri yapılandırılabilir:
 
-- **Microsoft Intune'a kayıtlı:** Bu genellikle şirket aygıtlardır ait.
+- **Microsoft Intune'a kaydedilmiş:** Bu cihazlar genellikle şirkete aittir.
 
-- **Bir üçüncü taraf mobil cihaz Yönetimi (MDM) çözümde kayıtlı:** Bu genellikle şirket aygıtlardır ait.
+- **Üçüncü taraf mobil cihaz yönetimi (MDM) çözümüne kaydedilmiş:** Bu cihazlar genellikle şirkete aittir.
 
   > [!NOTE]
   > Mobil uygulama yönetimi ilkeleri, üçüncü taraf mobil uygulama yönetimi veya güvenli kapsayıcı çözümleri ile birlikte kullanılmamalıdır.
 
-- **Herhangi bir mobil cihaz yönetim çözümüne kayıtlı değil:** Normalde Intune veya diğer MDM çözümlerinde kayıtlı veya yönetilen çalışana ait cihazlardır.
+- **Herhangi bir mobil cihaz yönetimi çözümüne kaydedilmemiş:** Bu cihazlar genellikle, Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
 
 > [!IMPORTANT]
 > Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. iOS ve Android için Outlook'a yönelik olarak karma Modern Kimlik Doğrulaması ile etkinleştirilen Intune uygulama koruma ilkeleri oluşturarak Exchange şirket içi posta kutularına erişimi de koruyabilirsiniz. Bu özelliği kullanmadan önce [iOS ve Android için Outlook gereksinimlerini](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) karşıladığınızdan emin olun. Uygulama koruma ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan diğer uygulamalar için desteklenmez.
 
-**Uygulama koruma ilkelerini kullanmanın önemli avantajları şunlardır:**:
+**Uygulama koruma ilkelerini kullanmanın önemli avantajları**:
 
 -   Şirket verilerinizi uygulama düzeyinde koruma. Mobil uygulama yönetimi, cihaz yönetimi gerektirmediği için şirket verilerini hem yönetilen hem de yönetilmeyen cihazlarda koruyabilirsiniz. Yönetim, kullanıcı kimliğine odaklandığından cihaz yönetimine gerek kalmaz.
 
@@ -68,23 +68,23 @@ MDM'yi Uygulama koruma ilkeleriyle kullanmanın başka avantajları da vardır v
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Uygulama koruma ilkeleri için desteklenen platformlar
-Intune uygulama koruma ilkeleri platformu desteği, Android ve iOS cihazlar için Office mobil uygulama platformu desteği ile hizalar. Ayrıntılar için [Office Sistem Gereksinimleri](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)'nin **Mobil uygulamalar** bölümüne bakın.
+Intune uygulama koruma ilkeleri platformu desteği, Android ve iOS cihazlar için Office mobil uygulama platformu desteği ile uyumludur. Ayrıntılar için [Office Sistem Gereksinimleri](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)'nin **Mobil uygulamalar** bölümüne bakın.
 
 > [!IMPORTANT]
-> Intune Şirket portalı, cihazda, Android uygulama koruma ilkelerini almak için gereklidir. Daha fazla bilgi için [Intune Şirket portalı erişim uygulama gereksinimleri](end-user-mam-apps-android.md#access-apps).
+> Android cihazlarda Uygulama Koruma İlkelerini almak için Intune Şirket Portalı gereklidir. Daha fazla bilgi için bkz. [Intune Şirket Portalı uygulama erişim gereksinimleri](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Uygulama koruma ilkeleri uygulama verilerini nasıl korur
 
 #### <a name="apps-without-app-protection-policies"></a>Uygulama koruma ilkelerinin bulunmadığı uygulamalar
 
-![Yerinde hiçbir ilkelerine sahip uygulamalar arasında veri taşıma için kavramsal resmi](./media/apps-without-protection-policies.png)
+![İlke olmadan uygulama arasındaki veri hareketini gösteren kavramsal görüntü](./media/apps-without-protection-policies.png)
 
 Uygulamalar kısıtlama olmadan kullanıldığında, şirket verileri ile kişisel veriler birbirine karışabilir. Şirket verileri, kişisel depolama alanı gibi konumlara düşebilir veya kapsamınızın ötesindeki uygulamalara aktarılarak veri kaybına neden olabilir. Yukarıda şemada yer alan oklar, kurumsal ve kişisel uygulamalar arasındaki ve depolama konumlarına yönelik kısıtlanmamış veri hareketlerini gösterir.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Uygulama koruma ilkeleriyle verileri koruma
 
-![İlkeleri tarafından korunan şirket verilerini gösteren kavramsal resim](./media/apps-with-protection-policies.png)
+![İlkelere tarafından korunan şirket verilerini gösteren kavramsal görüntü](./media/apps-with-protection-policies.png)
 
 
 Uygulama koruma ilkelerini kullanarak şirket verilerinin cihazın yerel depolama alanına kaydedilmesini engelleyebilirsiniz. Ayrıca Uygulama koruma ilkesi kapsamında olmayan diğer uygulamalara veri taşımayı da kısıtlayabilirsiniz. Uygulama koruma ilkesi ayarları aşağıdakileri içerir:
@@ -148,9 +148,9 @@ Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Ancak
 
 Uygulama koruma ilkeleri uygulamalar yalnızca iş bağlamında kullanılırken uygulanırken, birden çok kimliği destekleyen uygulamalar aynı uygulamalara erişmek için farklı hesaplar (iş ve kişisel) kullanmanıza izin verir.
 
-Yeni bir belge Word'de başlatan bir kullanıcı bir kişisel bağlam örneğini düşünün için Intune uygulama koruma ilkeleri uygulanmaz şekilde bu kişisel bağlam kabul edilir. Sonra şirket OneDrive hesabı Belge kaydedildikten sonra kurumsal bağlam kabul edilir ve Intune uygulama koruma ilkeleri uygulanır.
+Bir kullanıcının Word'de yeni bir belge açmasını kişisel bağlam olarak düşünebilirsiniz. Bu durum kişisel bağlam olarak kabul edildiğinden Intune Uygulama Koruması ilkeleri uygulanmaz. Belge kurumsal OneDrive hesabına kaydedildikten sonra kurumsal bağlama geçtiği kabul edilir ve Intune Uygulama Koruması ilkeleri uygulanır.
 
-İş bağlamı bir örneği için kendi iş hesabını kullanarak OneDrive uygulamasını başlatan kullanıcı göz önünde bulundurun. Bu kullanıcı iş bağlamında dosyaları kişisel depolama alanına taşıyamaz. Daha sonra OneDrive'ı kendi kişisel hesabıyla kullandığında, kişisel OneDrive'ından kısıtlamasız olarak veri kopyalayabilir ve taşıyabilir.
+Bir kullanıcının OneDrive uygulamasını iş hesabıyla başlatmasını da iş bağlamı olarak düşünebilirsiniz. Bu kullanıcı iş bağlamında dosyaları kişisel depolama alanına taşıyamaz. Daha sonra OneDrive'ı kendi kişisel hesabıyla kullandığında, kişisel OneDrive'ından kısıtlamasız olarak veri kopyalayabilir ve taşıyabilir.
 
 - Intune ile [MAM ve çoklu kimlik](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) destekleyen uygulamalar hakkında daha fazla bilgi edinin.
 

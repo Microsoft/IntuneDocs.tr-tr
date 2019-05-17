@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59893876"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune’da macOS cihazların kaydını ayarlama
 
@@ -41,7 +41,7 @@ macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın
 - [MDM Yetkilisini ayarlama](mdm-authority-set.md)
 - [Grup oluşturma](groups-add.md)
 - [Şirket Portalı’nı yapılandırma](company-portal-app.md)
-- Kullanıcı lisanslarını atama [Microsoft 365 Yönetim Merkezi](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 yönetim merkezinde](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
 - [Bir MDM anında iletme sertifikası alma](apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>Kullanıcıya ait macOS cihazları (KCG)
@@ -49,7 +49,7 @@ macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın
 Kullanıcıların kendi cihazlarını Intune yönetimine kaydetmesine izin verebilirsiniz. Bu, “kendi cihazını getir” veya KCG olarak bilinir. Önkoşulları tamamladıktan ve kullanıcılara lisans atadıktan sonra, kullanıcılarınız cihazlarını kaydetmek için:
 - [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) gidebilir veya
 - Şirket Portalı uygulamasını indirebilir.
-Ayrıca onlara bir bağlantı çevrimiçi kaydolma adımlarını gönderebilirsiniz: [MacOS Cihazınızı ıntune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Kullanıcılara, çevrimiçi kaydolma adımlarını gösteren bir bağlantı da gönderebilirsiniz: [macOS cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere bakın:
 
@@ -58,8 +58,8 @@ Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makaleler
 
 ## <a name="company-owned-macos-devices"></a>Şirkete ait macOS cihazları
 Kullanıcılarına cihaz sağlayan kuruluşlar için Intune, aşağıdaki şirkete ait macOS cihazı kayıt yöntemlerini destekler:
-- [Apple aygıt kayıt programı (DEP)](device-enrollment-program-enroll-macos.md): Kuruluşlar, macOS cihazlarını Apple'nın cihaz kayıt programı (DEP) aracılığıyla satın alabilir. DEP, cihazları yönetime kaydetmek için bir kayıt profilini “uzaktan” dağıtmanıza imkan tanır.
-- [Cihaz kayıt Yöneticisi (DEM)](device-enrollment-manager-enroll.md): Bir DEM hesabı en fazla 1.000 cihazı kaydetmek için kullanabilirsiniz.
+- [Apple’ın Aygıt Kayıt Programı (DEP)](device-enrollment-program-enroll-macos.md): Kuruluşlar, Apple’ın Aygıt Kayıt Programı (DEP) aracılığıyla macOS cihazlar satın alabilir. DEP, cihazları yönetime kaydetmek için bir kayıt profilini “uzaktan” dağıtmanıza imkan tanır.
+- [Cihaz kayıt yöneticisi (DEM)](device-enrollment-manager-enroll.md): En çok 1.000 cihazı kaydetmek için DEM hesabı kullanabilirsiniz.
 
 ## <a name="block-macos-enrollment"></a>macOS kaydını engelleme
 Varsayılan olarak, Intune macOS cihazlarının kaydına izin verir. macOS cihazlarının kaydedilmesini engellemek için bkz. [Cihaz türü kısıtlamaları ayarlama](enrollment-restrictions-set.md).
@@ -71,7 +71,7 @@ Varsayılan olarak, Intune macOS cihazlarının kaydına izin verir. macOS cihaz
 
 macOS sanal makineleri, Parallels Desktop veya VMware Fusion kullanarak sınama için kaydedebilirsiniz. 
 
-Parallels Desktop kullanırsanız, Intune’un sanal makineleri tanıyabilmesi için bunların donanım türü ve seri numaralarını ayarlamanız gerekir. Donanım türünü Parallels'in yönergelerini izleyin ve [seri numarası](http://kb.parallels.com/123455) test etmek için gerekli ayarları ayarlamak için. Sanal makineleri çalıştıran cihazın donanım türünü, oluşturduğunuz sanal makinelerin donanım türüyle eşleştirmenizi öneririz. Bu donanım türünü **Apple menüsü** > **Bu Mac hakkında** > **Sistem Raporu** > **Model Tanımlayıcı**’da bulabilirsiniz. 
+Parallels Desktop kullanırsanız, Intune’un sanal makineleri tanıyabilmesi için bunların donanım türü ve seri numaralarını ayarlamanız gerekir. Sınama için gerekli ayarları yapmak üzere Parallels’in donanım türünü ve [seri numarasını](http://kb.parallels.com/123455) ayarlama yönergelerini izleyin. Sanal makineleri çalıştıran cihazın donanım türünü, oluşturduğunuz sanal makinelerin donanım türüyle eşleştirmenizi öneririz. Bu donanım türünü **Apple menüsü** > **Bu Mac hakkında** > **Sistem Raporu** > **Model Tanımlayıcı**’da bulabilirsiniz. 
 
 VMware Fusion kullanırsanız, sanal makinenin donanım türü ve seri numarasını ayarlamak için [.vmx dosyasını düzenlemeniz](https://kb.vmware.com/s/article/1014782) gerekir. Sanal makineleri çalıştıran cihazın donanım türünü, oluşturduğunuz sanal makinelerin donanım türüyle eşleştirmenizi öneririz. Bu donanım türünü **Apple menüsü** > **Bu Mac hakkında** > **Sistem Raporu** > **Model Tanımlayıcı**’da bulabilirsiniz. 
 

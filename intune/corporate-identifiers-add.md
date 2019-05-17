@@ -1,7 +1,7 @@
 ---
 title: Intune’a kurumsal tanımlayıcılar ekleme
 titleSuffix: ''
-description: Microsoft Intune Kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin.
+description: Microsoft Intune’a kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 28ad1e492c4bdd7c87371611530cd3f8e2abc2e1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900970"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -43,7 +43,7 @@ Kayıttan sonra **Kişisel** veya **Şirket** arasında [sahiplik ayarını değ
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Şirkete ait cihazları IMEI veya seri numarası ile belirleme
 
-Bir Intune Yöneticisi olarak oluşturabilir ve 14 basamaklı IMEI numaralarını veya seri numaraları listeleyen bir virgülle ayrılmış değer (.csv) dosyasını içeri aktarın. Intune, cihaz kaydı sırasında cihaz sahipliğini şirket olarak belirtmek için bu tanımlayıcıları kullanır. Desteklenen tüm platformlar için IMEI numaraları bildirebilirsiniz. Yalnızca iOS, macOS ve Android cihazlar için seri numarası bildirebilirsiniz. Listede her IMEI numarası veya seri numarasının yönetim amacıyla belirtilen ayrıntıları bulunabilir.
+Bir Intune yöneticisi olarak, 14 basamaklı IMEI numaralarını veya seri numaraları listeleyen bir virgülle ayrılmış değer (.csv) dosyası oluşturup içeri aktarabilirsiniz. Intune, cihaz kaydı sırasında cihaz sahipliğini şirket olarak belirtmek için bu tanımlayıcıları kullanır. Desteklenen tüm platformlar için IMEI numaraları bildirebilirsiniz. Yalnızca iOS, macOS ve Android cihazlar için seri numarası bildirebilirsiniz. Listede her IMEI numarası veya seri numarasının yönetim amacıyla belirtilen ayrıntıları bulunabilir.
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
@@ -51,7 +51,7 @@ Bir Intune Yöneticisi olarak oluşturabilir ve 14 basamaklı IMEI numaraların�
 [Android cihaz seri numaranızı bulmayı öğrenin](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>Bir .csv dosyası kullanarak kurumsal tanımlayıcılar ekleme
-Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. 14 basamaklı IMEI veya seri numaraları sol sütuna, ayrıntıları sağ sütuna ekleyin. Tek bir .csv dosyasında yalnızca tek bir kimlik türü: IMEI veya seri numarası içeri aktarılabilir. Ayrıntılar 128 karakterle sınırlıdır ve yalnızca yönetimsel kullanım içindir. Ayrıntılar cihazda görüntülenmez. Her .csv dosyası için geçerli sınır 5.000 satırdır.
+Listeyi oluşturmak için iki sütunlu, üst bilgisi olmayan bir virgülle ayrılmış değerler (.csv) listesi oluşturun. 14 basamaklı IMEI numaralarını veya seri numaraları sol sütuna, ayrıntıları sağ sütuna ekleyin. Tek bir .csv dosyasında yalnızca tek bir kimlik türü: IMEI veya seri numarası içeri aktarılabilir. Ayrıntılar 128 karakterle sınırlıdır ve yalnızca yönetimsel kullanım içindir. Ayrıntılar cihazda görüntülenmez. Her .csv dosyası için geçerli sınır 5.000 satırdır.
 
 **Seri numaraları olan bir .csv dosyası yükleme** – Üst bilgi içermeyen, iki sütunlu, virgülle ayrılmış değer (.csv) listesini oluşturun ve .csv dosyası başına 5.000 cihaz veya 5 MB ile sınırlayın.
 
@@ -68,9 +68,9 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 ```
 
 > [!IMPORTANT]
-> Bazı Android ve iOS cihazları birden çok IMEI numarasına sahiptir. Intune, kayıtlı cihaz başına yalnızca bir IMEI numarasını okur. IMEI numarasını içeri aktarıyorsanız, ancak Intune tarafından envantere alınan IMEI değil, cihazın kişisel bir cihazı şirkete ait cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değerini görüntüler.<br>
->Ayrıca unutmayın: Seri numaralarını kimlik iOS cihazları için önerilen biçimindedir.
->Android seri numaralarının mevcut veya benzersiz olacağı garanti edilmez. Seri numarasının güvenilir bir cihaz kimliği olup olmadığını anlamak için cihaz sağlayıcınızla görüşün.
+> Bazı Android ve iOS cihazları birden çok IMEI numarasına sahiptir. Intune, kayıtlı cihaz başına yalnızca bir IMEI numarasını okur. IMEI numarasını içeri aktarıyorsanız ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse cihaz şirkete ait değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değerini görüntüler.<br>
+>Ayrıca şunları da unutmayın: Seri Numaraları, iOS cihazlar için önerilen tanımlama biçimindedir.
+>Android Seri numaralarının mevcut veya benzersiz olacağı garanti değildir. Seri numarasının güvenilir bir cihaz kimliği olup olmadığını anlamak için cihaz sağlayıcınızla görüşün.
 >Cihazın Intune’a gönderdiği seri numaralar, cihazdaki Android Ayarları/Hakkında menülerinde gösterilen kimlikle eşleşmeyebilir. Cihaz üreticisi tarafından belirtilen seri numarasının türünü doğrulayın.
 >Nokta (.) içeren seri numaralara sahip bir dosya yükleme denemesi, karşıya yükleme işleminin başarısız olmasına yol açar. Nokta içeren seri numaraları desteklenmez.
 
@@ -80,7 +80,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
    ![Kurumsal cihaz tanımlayıcısı çalışma alanı ile Ekle düğmesinin vurgulanmış hali](./media/add-corp-id.png)
 
-2. İçinde **tanımlayıcılar ekleme** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI** veya **seri**.
+2. **Tanımlayıcıları ekle** dikey penceresinde tanımlayıcı türünü seçin: **IMEI** veya **Seri**.
 
 3. Klasör simgesine tıklayın ve içeri aktarmak istediğiniz listenin yolunu belirtin. .csv dosyasına gidin ve **Ekle**’yi seçin. 
 
@@ -90,7 +90,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 1. [Azure portalında Intune’da](https://portal.azure.com) **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > **Ekle** > **El ile gir**’i seçin.
 
-2. İçinde **tanımlayıcılar ekleme** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI** veya **seri**.
+2. **Tanımlayıcıları ekle** dikey penceresinde tanımlayıcı türünü seçin: **IMEI** veya **Seri**.
 
 3. Eklemek istediğiniz tüm tanımlayıcılar için **Tanımlayıcı** ve **Ayrıntılar**’ı girin. Tanımlayıcıları girmeyi tamamladığınızda **Ekle**’yi seçin.
 
@@ -117,7 +117,7 @@ Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** gör
 
 **Cihaz sahipliğini değiştirmek için:**
 1. [Azure portalında Intune](https://portal.azure.com)’da, **Cihazlar**’a gidin ve cihazı seçin.
-2. Seçin **özellikleri**.
+2. **Özellikler**’i seçin.
 3. **Cihaz sahipliği**’ni **Kişisel** veya **Şirkete ait** olarak belirtin.
 
    ![Cihaz kategorisi ve Cihaz sahipliği seçeneklerini gösteren cihaz özellikleri](./media/device-properties.png)

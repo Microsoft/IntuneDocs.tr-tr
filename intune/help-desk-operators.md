@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900868"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Şirketinizdeki kullanıcılara yardımcı olmak için sorun giderme portalını kullanma
 
@@ -47,11 +47,11 @@ Bir kullanıcı, Intune ile ilgili teknik bir sorun için destekle bağlantı ku
 
 Sorun giderme bölmesinde **Kullanıcı seçin**’e tıklayarak kullanıcı bilgilerini görüntüleyin. Kullanıcı bilgileri, kullanıcıların ve cihazlarının geçerli durumunu anlamanıza yardımcı olabilir.  
 
-1. [Azure portal](https://portal.azure.com) oturum açın.
+1. [Azure portalında](https://portal.azure.com) oturum açın.
 2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
 3. **Intune** bölmesinde **Sorun gider**’i seçin.
 4. Sorun gidermek üzere bir kullanıcı belirlemek için **Seçin**’e tıklayın.
-5. Adını veya e-posta adresini yazarak bir kullanıcı seçin. Tıklayın **seçin**. Kullanıcı için sorun giderme bilgileri, Sorun Giderme bölmesinde görüntülenir. Bilgiler aşağıdaki tablolarda açıklanmıştır.
+5. Adını veya e-posta adresini yazarak bir kullanıcı seçin. **Seçin**’e tıklayın. Kullanıcı için sorun giderme bilgileri, Sorun Giderme bölmesinde görüntülenir. Bilgiler aşağıdaki tablolarda açıklanmıştır.
 
 > [!Note]  
 > **Sorun giderme** bölmesine tarayıcınızı [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) adresine yönlendirerek de erişebilirsiniz.
@@ -252,15 +252,15 @@ Kayıt Hataları tablosu, başarısız olan kayıt denemelerini listeler. Aşağ
 | Tablo sütunu | Açıklama |
 |-------------|----------|
 | Kayıt başlangıç | Kullanıcının kaydı ilk kez başlattığı saat. |
-| İşletim Sistemi | Cihazın işletim sistemi. |
+| İşletim sistemi | Cihazın işletim sistemi. |
 | İşletim sistemi sürümü | Cihazın işletim sistemi sürümü. |
-| hata | Hatanın nedeni. |
+| Başarısız | Hatanın nedeni. |
 
 ### <a name="failure-details"></a>Hata ayrıntıları
 
 Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 
-| Section | Açıklama |
+| Bölüm | Açıklama |
 |-------------|----------|
 | Hata ayrıntıları | Hatanın daha ayrıntılı bir açıklaması. |
 | Toplam düzeltme sayısı | Hatayı gidermek için önerilen adımlar. Bazı hataların düzeltmeleri olmayabilir. |
@@ -277,15 +277,15 @@ Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 | Kayıt yetkilendirmesi başarısız oldu | Şirket portalının eski bir sürümü kullanılarak bir kayıt girişiminde bulunuldu. |
 | Cihaz desteklenmiyor | Cihaz, Intune kaydı için en düşük gereksinimleri karşılamıyor. |
 | Kayıt kısıtlamaları karşılanmadı | Bu kayıt, yönetici tarafından yapılandırılmış bir kayıt kısıtlaması nedeniyle engellendi. |
-| Cihaz sürümü çok düşük | Yönetici, daha yüksek bir cihaz sürümü gerektiren bir kayıt kısıtlama yapılandırdı. |
-| Cihaz sürümü çok yüksek | Yönetici, daha düşük bir cihaz sürümü gerektiren bir kayıt kısıtlama yapılandırdı. |
-| Cihaz olarak kişisel kaydedilemiyor. | Yönetici kişisel kayıtları engellemek için bir kayıt kısıtlama yapılandırmış ve başarısız cihaza şirkete önceden tanımlanmış değildi. |
-| Engellenen cihaz platformu | Yönetici bu cihazın platform engelleyen bir kayıt kısıtlama yapılandırdı. |
-| Toplu belirteç süresi doldu | Sağlama Paketi toplu belirteç süresi doldu. |
-| AutoPilot cihaz veya ayrıntılar bulunamadı | Autopilot cihazı kaydetmeye çalışırken bulunamadı. |
-| AutoPilot profili bulunamadı veya atanmadı | Cihaz etkin Autopilot profili yok. |
-| Beklenmeyen AutoPilot kayıt yöntemi | Cihaz, izin verilen olmayan bir yöntem kullanılarak kaydetmeye çalıştı. |
-| Autopilot cihaz kaldırıldı | Cihaz kaydetmeye çalıştıklarında bu hesap için Autopilot programından kaldırıldı. |
+| Cihazın sürümü fazla düşük | Yönetici, daha yüksek bir cihaz sürümünü gerektiren bir kayıt kısıtlaması yapılandırdı. |
+| Cihazın sürümü fazla yüksek | Yönetici, daha düşük bir cihaz sürümünü gerektiren bir kayıt kısıtlaması yapılandırdı. |
+| Cihaz, kişisel olarak kaydedilemez | Yönetici, kişisel cihaz kayıtlarını engellemek için bir kayıt kısıtlaması yapılandırdı ve başarısız olan cihaz önceden kurumsal olarak tanımlanmadı. |
+| Cihaz platformu engellendi | Yönetici, bu cihazın platformunu engelleyen bir kayıt kısıtlaması yapılandırdı. |
+| Toplu belirtecin süresi doldu | Sağlama paketindeki toplu belirtecin süresi doldu. |
+| Autopilot cihazı veya ayrıntıları bulunamadı | Kayıt girişimi sırasında Autopilot cihazı bulunamadı. |
+| Autopilot profili bulunamadı veya atanmadı | Cihazda etkin Autopilot profili yok. |
+| Beklenmeyen Autopilot kayıt yöntemi | Cihaz, izin verilmeyen bir yöntemi kullanarak kaydolmaya çalıştı. |
+| Autopilot cihazı kaldırıldı | Kaydedilmeye çalışan cihaz, bu hesap için Autopilot sisteminden kaldırıldı. |
 | Cihaz sınırına ulaşıldı | Bu kayıt, yönetici tarafından yapılandırılmış bir cihaz sınırı nedeniyle engellendi. |
 | Apple ekleme işlemi | Intune bir Apple MDM anında iletme sertifikası eksik olduğu veya sertifikanın süresi dolduğu için tüm iOS cihazlarının kaydı dönemde engellendi. |
 | Cihaz önceden kayıtlı değil | Kurumsal önceden şirkete ait olarak kaydedilmediğinden tüm kişisel kayıtlar bir yönetici tarafından engellendi. |

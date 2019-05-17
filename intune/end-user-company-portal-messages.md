@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
-ms.translationtype: MT
+ms.openlocfilehash: 2168c39c80369e16284078df608bdab5f29858c6
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59041704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894974"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma
 
@@ -57,7 +57,7 @@ Kullanıcılar erişime izin verip daha sonra erişimi reddederse kullanıcılar
 Kullanıcılar daha sonra erişime izin vermeye karar verirse, **Ayarlar** > **Uygulamalar** > **Şirket Portalı** > **İzinler** > **Telefon**’a gidebilir ve ardından izni etkinleştirebilirler.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Bunu kullanıcılarınıza açıklama
-Daha fazla bilgi için kullanıcılarınızı [Android cihazınızı Intune'a kaydetme](/intune-user-help/enroll-your-device-in-intune-android) bölümüne yönlendirin.
+Daha fazla bilgi için kullanıcılarınızı [Android cihazınızı Intune'a kaydetme](/intune-user-help/enroll-device-android-company-portal) bölümüne yönlendirin.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Şirket Portalı’nın, kişilerinize erişmesine izin verilsin mi?
 
@@ -78,7 +78,7 @@ Kullanıcılar erişime izin verip daha sonra erişimi reddederse ileti, kullan�
 Kullanıcılar daha sonra erişime izin vermeye karar verirse, **Ayarlar** > **Uygulamalar** > **Şirket Portalı** > **İzinler** > **Telefon**’a gidebilir ve ardından izni etkinleştirebilirler.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Bunu kullanıcılarınıza açıklama
-Daha fazla bilgi için kullanıcılarınızı [Android cihazınızı Intune'a kaydetme](/intune-user-help/enroll-your-device-in-intune-android) bölümüne yönlendirin.
+Daha fazla bilgi için kullanıcılarınızı [Android cihazınızı Intune'a kaydetme](/intune-user-help/enroll-device-android-company-portal) bölümüne yönlendirin.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?
 
@@ -110,34 +110,34 @@ Kullanıcılarınızı [Günlükleri e-posta ile BT yöneticinize gönderme](/in
 
 ### <a name="what-it-means"></a>Anlamı
 
-Şirket portalı'na ekleme **izin verilen uygulamalar** veya **muaf uygulamalar** Windows bilgi Koruması (WIP) uygulama koruma İlkesi listesinde. Daha fazla bilgi için bkz. [Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma](windows-information-protection-policy-create.md).
+Şirket Portalı’nı Windows Bilgi Koruması (WIP) uygulama koruma ilkesindeki **İzin verilen uygulamalar** veya **Muaf uygulamalar** listelerine ekleyin. Daha fazla bilgi için bkz. [Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma](windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>İOS Cihazınızda iOS şirket uygulaması (satır iş kolu uygulaması) onaylayın 
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>iOS cihazınızda iOS şirket uygulamasını (iş kolu uygulaması) onaylama 
 
 ### <a name="where-it-appears"></a>Göründüğü yer
-App Store içinde kullanılabilir değil, kuruluşunuz tarafından geliştirilen iOS uygulamaları cihazınız tarafından varsayılan olarak güvenilir değil. Şirket portalını kullanarak bu tür uygulamaları yükleyip uygulamayı başlatın, aşağıdaki ileti görüntülenir:
+Cihazınız, kuruluşunuz tarafından geliştirilen ancak App Store'da bulunmayan iOS uygulamalarına varsayılan olarak güvenmez. Bu tür uygulamaları Şirket Portalı'ndan yükleyip çalıştırdığınızda aşağıdaki ileti görüntülenir:
 
-![iOS uygulaması iletisi - güvenilmeyen Kurumsal Geliştirici](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+![iOS uygulaması iletisi - Güvenilmeyen Kurumsal Geliştirici](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
 
 ### <a name="what-it-means"></a>Anlamı
-Bu ileti onaylamak ve iOS Cihazınızda şirket tarafından geliştirilen bir uygulamayı yüklemek için iOS cihaz ayarlarınızı değiştirmek ihtiyacınız olduğu anlamına gelir.
+Bu ileti, şirketiniz tarafından geliştirilen bir uygulamayı iOS cihazınızda onaylamak ve yüklemek için iOS cihazı ayarlarınızı değiştirmeniz gerektiğini belirtir.
 
-Şirket portalını kullanarak bu uygulamaları yüklemek ve uygulamayı başlatın, uygulamayı indirdikten sonra onaylamak için aşağıdaki adımları izleyin:
+Bu tür uygulamaları Şirket Portalı'ndan yükleyip çalıştırmak için indirdikten sonra aşağıdaki adımları izleyerek onaylamanız gerekir:
 
-1. (Satır iş kolu uygulaması) yüklü şirket uygulama başlatma sırasında "Güvenilmeyen Kurumsal Geliştirici" iletisini görür. <br>
-   Tuşuna **iptal**.
-2. Gidin **ayarları** > **genel** > **cihaz Yönetimi**.
+1. Yüklediğiniz şirket uygulamasını (iş kolu uygulaması) çalıştırdığınızda "Güvenilmeyen Kurumsal Geliştirici" iletisiyle karşılaşırsınız. <br>
+   **İptal**'e basın.
+2. **Ayarlar** > **Genel** > **Cihaz Yönetimi** yolunu izleyin.
 
-   ![iOS cihazının kullanıcı Arabirimi - cihaz Yönetimi](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+   ![iOS cihazı kullanıcı arabirimi - Cihaz Yönetimi](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
 
-3. Seçin **yönetim profili** > **Kurumsal uygulama**.
+3. **Yönetim Profili** > **Kurumsal uygulama**'yı seçin.
 4. Geliştirici adını seçin.
-5. Tuşuna **güven _Geliştirici adı_**.
-6. Seçerek uygulama onaylayın **güven** uygulama yükleme açılır ileti üzerinde.
+5. **_Geliştirici adına_ güven**'e basın.
+6. Uygulama yüklenirken açılan iletide **Güven**'i seçerek uygulamayı onaylayın.
 
-   ![iOS cihazının kullanıcı Arabirimi - güven uygulama ileti](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+   ![iOS cihazı kullanıcı arabirimi - Uygulamaya güven iletisi](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
 
-    Şirket uygulamasını başlatın ve olmalıdır.
+    Bu adımların ardından şirket uygulamasını çalıştırabilir ve kullanabilirsiniz.
 
 
 ### <a name="see-also"></a>Ayrıca bkz.
