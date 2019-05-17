@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da SCEP ile üçüncü taraf CA kullanma | Microsoft Docs
+title: SCEP Microsoft Intune - Azure ile üçüncü taraf sertifika yetkilileri (CA) kullanma | Microsoft Docs
 description: Microsoft Intune'da, SCEP protokolünü kullanarak mobil cihazlara sertifikalar vermesi için bir satıcı veya üçüncü taraf sertifika yetkilisi (CA) ekleyebilirsiniz. Bu genel bakışta, bir Azure Active Directory (Azure AD) uygulaması Microsoft Intune'a sertifikaları doğrulamak için izinler verir. Ardından, sertifikaları vermek için SCEP sunucunuzun kurulumunda AAD uygulamasının uygulama kimliğini, kimlik doğrulama anahtarını ve kiracı kimliğini kullanın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5e87b7397d994b089a30fedd9ccedc0107bf0cef
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508493"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732506"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP kullanarak Intune'da iş ortağı sertifika yetkilisi ekleme
 
@@ -69,47 +69,40 @@ Aşağıdaki diyagramda Intune'la üçüncü taraf SCEP tümleştirmesinin ayrı
 
 Üçüncü taraf SCEP sunucusunun özel sınama doğrulaması çalıştırmasına izin vermek için, Azure AD'de bir uygulama oluşturun. Bu uygulama Intune'a SCEP isteklerini doğrulaması için temsilci hakları verir.
 
-Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emin olun. [Gerekli izinler](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) altında adımlar listelenir.
+Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emin olun. Bkz: [gerekli izinler](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions), Azure AD belgelerinde.
 
-**1. adım: Azure AD uygulaması oluşturun**
+#### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory'de uygulama oluşturma  
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Azure Active Directory** > **Uygulama kayıtları** > **Yeni uygulama kaydı**'nı seçin.
-3. Bir ad ve oturum açma URL'si girin. Uygulama türü olarak **Web uygulaması / API**'yi seçin.
-4. **Oluştur**’u seçin.
+1. İçinde [Azure portalında](https://portal.azure.com)Git **Azure Active Directory** > **uygulama kayıtları**ve ardından **yeni kayıt**.  
 
-[Uygulamaları Azure Active Directory ile tümleştirme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications), URL ve ad ipuçlarıyla birlikte uygulama oluşturmayla ilgili bazı yönergeler içerir.
+2. Üzerinde **bir uygulamayı kaydetme** sayfasında, aşağıdaki bilgileri belirtin:  
+   - İçinde **adı** bölümünde, anlamlı uygulama adı girin.  
+   - İçin **desteklenen hesap türleri** bölümünden **herhangi bir kuruluş dizini hesaplarında**.  
+   - İçin **yeniden yönlendirme URI'si**, varsayılan Web değerini bırakın ve ardından üçüncü taraf SCEP sunucusu için oturum açma URL'si belirtin.  
 
-**2. adım: İzinleri verme**
+3. Seçin **kaydetme** uygulama oluşturmak için ve yeni bir uygulama için genel bakış sayfasını açın.  
 
-Uygulamanızı oluşturduktan sonra, Microsoft Intune API'sine gerekli izinleri verin:
+4. Uygulamasında **genel bakış** sayfasında, kopya **uygulama (istemci) kimliği** değeri ve daha sonra kullanmak üzere kaydedin. Bu değer daha sonra ihtiyacınız olacak.  
 
-1. Azure AD uygulamanızda **Ayarlar** > **Gerekli İzinler**'i açın.  
-2. **Ekle** > **API seçin** > **Microsoft Intune API'si** > **Seç** öğesini seçin.
-3. **İzinleri seçin** alanında **SCEP sınama doğrulaması** > **Seç** öğesini seçin.
-4. Değişikliklerinizi kaydetmek için **Bitti**’yi seçin.
+5. Uygulama için Gezinti bölmesinde, Git **sertifikaları ve parolaları** altında **Yönet**. Seçin **yeni gizli** düğmesi. Açıklamasında bir değer girin, herhangi bir seçenek seçin **Expires**ve ardından seçin **Ekle** oluşturmak için bir *değer* için istemci gizli anahtarı. 
+   > [!IMPORTANT]  
+   > Bu sayfadan ayrılmadan önce gizli anahtar değerini kopyalayın ve daha sonra kullanmak, üçüncü taraf CA uygulamanız ile kaydedin. Bu değeri yeniden gösterilmez. Uygulama kimliği, kimlik doğrulama anahtarı nasıl istedikleri şirket, üçüncü taraf CA için Kılavuzu gözden geçirdiğinizden emin olun ve Kiracı kimliği yapılandırılır.  
 
-**3. adım: Uygulama kimliği ve kimlik doğrulama anahtarını alma**
+6. Kayıt, **Kiracı kimliği**. Kiracı kimliği sonra etki alanı metindir hesabınızda oturum @. Örneğin, hesabınız olup olmadığını *admin@name.onmicrosoft.com*, Kiracı Kimliğinizi ise **name.onmicrosoft.com**.  
 
-Ardından, Azure AD uygulamanızın kimlik ve anahtar değerlerini alın. Aşağıdaki değerler gerekir:
+7. Uygulama için Gezinti bölmesinde, Git **API izinleri** altında **Yönet**ve ardından **bir izin eklemek**.  
 
-- Uygulama kimliği
-- Kimlik doğrulama anahtarı
-- Kiracı Kimliği
+8. Üzerinde **istek API izinleri** sayfasında **Intune**ve ardından **uygulama izinleri**. Onay kutusunu seçip **scep_challenge_provider** (SCEP sınama doğrulaması).  
 
-**Uygulama kimliğini ve kimlik doğrulama anahtarını almak için**:
+   Seçin **izinleri eklemek** bu yapılandırmayı kaydetmek için.  
 
-1. Azure AD'de, yeni uygulamanızı seçin (**Uygulama kayıtları**).
-2. **Uygulama kimliği**'ni kopyalayın ve uygulama kodunuzda depolayın.
-3. Sonra bir kimlik doğrulama anahtarı oluşturun. Azure AD uygulamanızda **Ayarlar** > **Anahtarlar**'ı açın.
-4. **Parolalar**'da, açıklama girin ve anahtarın süresini seçin. Yaptığınız değişiklikleri **kaydedin**. Gösterilen değeri kopyalayın ve kaydedin.
+9. Kalır **API izinleri** sayfasında ve seçin **Microsoft için yönetici onayı vermek**ve ardından **Evet**.  
+   
+   Azure AD'de uygulama kayıt işlemi tamamlanmıştır.
 
-    > [!IMPORTANT]
-    > Bu anahtarı hemen kopyalayıp kaydedin çünkü bunlar yeniden gösterilmez. Bu anahtar değeri üçüncü taraf CA uygulamanız için gereklidir. Uygulama Kimliği, Uygulama Anahtarı ve Kiracı Kimliğinin nasıl yapılandırılmasını istedikleri konusundaki yönergelerini gözden geçirin.
 
-**Kiracı Kimliği**, hesabınızın @ işaretinden sonraki etki alanı metnidir. Örneğin hesabınız `admin@name.onmicrosoft.com` ise, kiracı kimliğiniz **name.onmicrosoft.com**'dur.
 
-[Uygulama kimliğini ve kimlik doğrulama anahtarını alma](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key) başlığı altında bu değerleri alma adımları listelenir ve Azure AD uygulamalarıyla ilgili daha fazla ayrıntı sağlar.
+
 
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>SCEP sertifika profilini yapılandırma ve dağıtma
 Yönetici olarak, kullanıcıları veya cihazları hedefleyecek bir SCEP sertifika profili oluşturun. Sonra, profili atayın.
@@ -128,6 +121,9 @@ Aşağıdaki üçüncü taraf sertifika yetkilileri Intune'u destekler:
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
 - [EJBCA GitHub açık kaynak sürümü](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
+- [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
+- [IDnomic](https://www.idnomic.com/)
+- [Sectigo](https://sectigo.com/products)
 
 Ürününüzü Intune ile tümleştirmek isteyen bir üçüncü taraf CA'ysanız, API kılavuzunu gözden geçirin:
 

@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511549"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732986"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Öğretici: Intune'da Windows cihazları kaydetmeye AutoPilot'ı kullanın
 Windows Autopilot, cihaz kaydını basitleştirir. Microsoft Intune ve Autopilot ile özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. 
@@ -90,23 +90,20 @@ Daha sonra bir cihaz grubu oluşturacak ve az önce yüklediğiniz Autopilot cih
 Bir cihaz grubu oluşturduktan sonra, Autopilot cihazları yapılandırabilmek için bir dağıtım profili oluşturmalısınız.
 
 1. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri** > **Profil Oluştur**’u seçin.
-2. **Ad** olarak *Autopilot Profili* yazın. **Açıklama** olarak *Autopilot cihazlar için test profili* yazın.
+2. Üzerinde **Temelleri** sayfasında, tor **adı**, girin *Autopilot profili*. **Açıklama** olarak *Autopilot cihazlar için test profili* yazın.
 3. **Tüm hedeflenen cihazları Autopilot’a dönüştür** ayarını **Evet** olarak seçin. Bu ayar, listedeki tüm cihazların Autopilot dağıtım hizmetine kaydolmasını sağlar. Kaydın işlenmesi için 48 saat kadar bekleyin.
-4. **Dağıtım modu** olarak **Kullanıcı temelli**’yi seçin. Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkilidir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekir.
-5. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
-6. **İlk kez çalıştırma deneyimi (OOBE)** öğesini seçin, aşağıdaki seçenekleri yapılandırıp diğerlerini varsayılana ayarlı olarak bırakın ve **Kaydet**’e tıklayın:
+4. **İleri**’yi seçin.
+5. Üzerinde **ilk çalıştırma deneyimi (OOBE)** sayfası için **dağıtım modu**, seçin **kullanıcı temelli**. Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkilidir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekir.
+6. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
+7. Aşağıdaki seçenekleri yapılandırın ve diğerleri Varsayılana Ayarla bırakın:
     - **Son Kullanıcı Lisans Sözleşmesi (EULA)**: **Gizle**
     - **Gizlilik ayarları**: **Show**
     - **Kullanıcı hesabı türü**: **Standart**
-
-6. Profili oluşturmak için **Oluştur**’a tıklayın. Autopilot dağıtım profili artık cihazlara atanmak üzere hazırdır.
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Autopilot dağıtım profilini bir cihaz grubuna atama
-
-Dağıtım profili oluşturulduğuna göre şimdi bunu cihaz grubuna atamalısınız.
-1. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri**’ni ve daha sonra bir profili seçin.
-2. Profile ait dikey pencerede **Atamalar**’ı seçin. 
-3. **Grupları seç**’e ve ardından **Grupları seç** dikey penceresine tıklayın, **Autopilot Grubu**’nu seçin, daha sonra **Seç**’e tıklayın.
+8. **İleri**’yi seçin.
+9. Üzerinde **atamaları** sayfasında **seçilen grupları** için **atama**.
+10. Seçin **dahil edilecek grupları seçin**, seçin **Autopilot grubu**.
+11. **İleri**’yi seçin.
+12. Üzerinde **gözden geçir + Oluştur** sayfasında **Oluştur** profili oluşturmak için.
 
 ## <a name="distribute-devices-to-users"></a>Cihazları kullanıcılara dağıtma
 
@@ -114,7 +111,7 @@ Artık kullanıcılara Windows cihazları dağıtabilirsiniz. Kullanıcılar ilk
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme
 
-Autopilot cihazları artık kullanmak istemiyorsanız silebilirsiniz.
+Autopilot cihazları artık kullanmak istemiyorsanız, bunları silebilir.
 
 1. Cihazlar Intune’a kayıtlıysa önce bunları [Azure Active Directory portalından silmeniz](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal) gerekir.
 

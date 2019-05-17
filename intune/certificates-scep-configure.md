@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 96a0da69cdb77ae36ce2456186593f5c334c870c
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510138"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765410"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -225,7 +225,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Location                        |      Value      | Type  |      Veriler       |
+   |                        Location                        |      Değer      | Type  |      Veriler       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |
@@ -567,4 +567,6 @@ Sürüm 6.1806.x.x’ten itibaren Intune Bağlayıcısı Hizmeti, olayları **Ol
 
 - [PKCS sertifikalarını kullanmak](certficates-pfx-configure.md), veya [Symantec PKI manager web hizmeti PKCS sertifikaları verme](certificates-symantec-configure.md)
 - [Intune ile SCEP kullanılacak bir 3. taraf CA Ekle](certificate-authority-add-scep-overview.md)
-- Ek Yardım için kullanmak [sorun giderme SCEP sertifika profili dağıtımı Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) Kılavuzu.
+- Ek Yardım için aşağıdaki kılavuzları kullanın:
+  - [Microsoft Intune SCEP sertifika profili dağıtımı sorunlarını giderme](https://support.microsoft.com/help/4457481)
+  - [NDES yapılandırması kullanmak Intune sertifika profilleriyle ilgili sorunları giderme](https://support.microsoft.com/help/4459540)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
+ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619439"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65816300"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot'ı kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -119,6 +119,9 @@ Active Directory için Intune bağlayıcısını Windows Server 2016 çalıştı
 > [!NOTE]
 > Bağlayıcı oturum açtıktan sonra birkaç dakika içinde görüntülenecek sürebilir [Intune](https://aka.ms/intuneportal). Yalnızca bu başarılı bir şekilde Intune hizmetiyle iletişim kurabildiğinde görünür.
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>IE Artırılmış Güvenlik yapılandırılması devre dışı
+Varsayılan olarak, Windows Server açık Internet Explorer Artırılmış Güvenlik Yapılandırması vardır. Intune Bağlayıcısı için Active Directory oturum açamıyor olması durumunda IE Artırılmış Güvenlik Yapılandırması devre dışı Yöneticisi açın. [Artırılmış Güvenlik Yapılandırması devre dışı Internet Explorer'ı devre dışı bırakma](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### <a name="configure-web-proxy-settings"></a>Web proxy ayarlarını yapılandırma
 
 Ağ ortamınızda bir web proxy varsa, başvurarak Active Directory için Intune bağlayıcısını düzgün çalıştığından emin olmak [iş mevcut şirket içi proxy sunucuları](autopilot-hybrid-connector-proxy.md).
@@ -194,7 +197,7 @@ Değiştirmek bir cihaz profili durumu için yaklaşık 15 dakika sürer *atanma
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(İsteğe bağlı) Kayıt durumu sayfasını aç
 
-1. İçinde [Intune](https://aka.ms/intuneportal)seçin **cihaz kaydı** > **Windows kayıt** > **kayıt durumu sayfası (Önizleme)**.
+1. İçinde [Intune](https://aka.ms/intuneportal)seçin **cihaz kaydı** > **Windows kayıt** > **kayıt durumu sayfası**.
 1. İçinde **kayıt durumu sayfası** bölmesinde **varsayılan** > **ayarları**.
 1. İçinde **Göster uygulama ve profil yükleme ilerleme durumu** kutusunda **Evet**.
 1. Diğer seçenekleri gerektiği şekilde yapılandırın.

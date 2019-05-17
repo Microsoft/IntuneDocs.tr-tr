@@ -1,7 +1,7 @@
 ---
-title: Intune için Windows Güvenlik temelleri ayarları
+title: Windows 10 için Intune güvenlik temelleri ayarları
 titleSuffix: Microsoft Intune
-description: Intune tarafından desteklenen Windows Güvenlik temel ayarları
+description: Windows 10 yönetmek için Intune güvenlik temel ayarları
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67938f8697002f94f275f953510d1b0f4864a3fa
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507166"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733054"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Intune için Windows Güvenlik temel ayarları  
 
@@ -293,7 +293,7 @@ Daha fazla bilgi için [ilke CSP'si - DeviceLock](https://docs.microsoft.com/win
 - **Gün olarak parola en düşük yaş**  
   En az parola geçerlilik süresi ilke ayarı bir parola olmalıdır süre (gün cinsinden) belirler. kullanıcı değiştirmeden önce kullanıldı. 1 ile 998 gün arasında bir değer ayarlayabilirsiniz veya gün sayısı 0 olarak ayarlayarak, hemen bir parola değişikliklerini verebilirsiniz. En fazla parola geçerlilik süresi, parolaların süresiz belirten, 0 olarak ayarlanmadığı sürece, en az parola geçerlilik süresi en fazla parola geçerlilik süresi değerinden küçük olması gerekir. En fazla parola geçerlilik süresi 0 olarak ayarlarsanız, en az parola geçerlilik süresi 0 ile 998 arasında herhangi bir değere ayarlanabilir.
   
-    **Varsayılan**: 1.  
+    **Varsayılan**: 1  
 
 ## <a name="event-log-service"></a>Olay Günlüğü hizmeti  
 Daha fazla bilgi için [ilke CSP'si - EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) Windows belgelerinde.  
@@ -1366,7 +1366,7 @@ Daha fazla bilgi için [ilke CSP'si - Defender'ın](https://docs.microsoft.com/w
   **Varsayılan**: Evet
   
 - **Davranış izleme**  
-  Erişim izni verdiği veya işlevselliği Windows Defender davranış izlemeye izin vermiyor. Windows 10'da katıştırılmış, algılayıcınız toplamak ve işletim sisteminden davranış sinyalleri işleyebilir ve yalıtılmış, özel bulut Örneğiniz için Windows Defender ATP bu sensör verilerini gönderir.
+  Erişim izni verdiği veya işlevselliği Windows Defender davranış izlemeye izin vermiyor. Windows 10'da katıştırılmış, algılayıcınız toplamak ve işletim sisteminden davranış sinyalleri işleyebilir ve yalıtılmış, özel bulut Örneğiniz için Microsoft Defender ATP bu sensör verilerini gönderir.
   
   **Varsayılan**: Evet
 

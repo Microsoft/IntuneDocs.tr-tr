@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 23a211d48a38cdffb909ceaf611a9939b5ac82f0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135114"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733190"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -153,6 +153,8 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
     > Bir Win32 uygulamasını **Kullanıcı** veya **Sistem** bağlamında yüklenecek şekilde yapılandırabilirsiniz. **Kullanıcı** bağlamı yalnızca belirli bir kullanıcıyı ifade eder. **Sistem** bağlamı bir Windows 10 cihazın tüm kullanıcılarını ifade eder.
     >
     > Son kullanıcıların Win32 uygulamalarını yüklemek için cihazda oturum açmış olmaları gerekmez.
+    > 
+    > Uygulama yükleme ve kaldırma Win32 yönetici ayrıcalığı altında (varsayılan) yürütülecek zaman uygulama, kullanıcı bağlamında yüklemek için ayarlanır ve son kullanıcının cihaz üzerinde yönetici ayrıcalıklarına sahip.
 
 4.  İşiniz bittiğinde **Tamam**’a tıklayın.
 

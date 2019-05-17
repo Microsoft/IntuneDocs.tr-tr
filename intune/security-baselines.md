@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure güvenlik temellerini kullanın | Microsoft Docs
-description: Ekleyebilir veya kullanıcı ve mobil cihaz yönetimi için Microsoft Intune kullanarak cihazlardaki verileri korumak için önerilen grubu güvenlik ayarlarını yapılandırın. BitLocker'ı etkinleştirmek, Windows Defender Gelişmiş tehdit koruması yapılandırma, Internet Explorer denetim, Smart Screen kullanan, yerel güvenlik ilkelerini ayarlama, parola iste, Internet karşıdan yüklemeler ve daha fazlasını engelleyin.
+description: Ekleyebilir veya kullanıcı ve mobil cihaz yönetimi için Microsoft Intune kullanarak cihazlardaki verileri korumak için önerilen grubu güvenlik ayarlarını yapılandırın. BitLocker'ı etkinleştirmek, Microsoft Defender Gelişmiş tehdit koruması yapılandırma, Internet Explorer denetim, Smart Screen kullanan, yerel güvenlik ilkelerini ayarlama, parola iste, Internet karşıdan yüklemeler ve daha fazlasını engelleyin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 9dd289535ba4276b1bca21044d362172517b07e0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197636"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732583"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune'da Windows 10 Güvenlik taban çizgisi oluşturma
 
@@ -44,9 +44,19 @@ Güvenlik temelleri "yapılandırma profili" Intune oluşturma. Bu profili, tüm
 
 Profil atadıktan sonra profili izleme ve temel izleyin. Örneğin, hangi aygıtların temel eşleşmiyor veya temel eşleşmeyen görebilirsiniz.
 
-Bu makalede güvenlik temellerini profil oluşturma, profil atama ve profil izlemek için nasıl kullanılacağı gösterilmektedir.
+Bu makalede, profil oluşturma, profil atama ve izleme profili için güvenlik temellerini kullanmanıza yardımcı olabilir.
 
 [Windows güvenlik temellerini](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) bu özellik hakkında daha fazla bilgi için harika bir kaynaktır. [Mobil cihaz Yönetimi](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) olan MDM ve Windows cihazlarda neler yapabileceğiniz hakkında harika bir kaynak.
+
+## <a name="available-security-baselines"></a>Kullanılabilir güvenlik temelleri  
+
+Aşağıdaki güvenlik temelleri Intune ile kullanılabilir.
+- **Önizleme: Ekim 2018 için MDM güvenlik temeli**  
+  [Ayarları görüntüleyin](security-baseline-settings-windows.md)
+
+- **ÖNİZLEME: Windows Defender ATP temeli**  
+  [Ayarları görüntüleyin](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>Önkoşullar
 Intune'da temellerini yönetmek için hesabınızın olması gerekir [ilke ve Profil Yöneticisi](role-based-access-control.md#built-in-roles) yerleşik rolü.
@@ -60,51 +70,36 @@ Ortak yönetilen cihazların kullanırken geçmelidir **cihaz Yapılandırması*
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. İçinde [Azure portalında](https://portal.azure.com/)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
-2. Seçin **cihaz güvenliği** > **güvenlik temellerini (Önizleme)**. Kullanılabilir temelleri listesi kullanılabilir. Daha fazla temelleri eklendikçe bunları burada görürsünüz:
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=20909) seçip **cihaz güvenliği** > **güvenlik temellerini (Önizleme)**. Kullanılabilir temelleri listesi kullanılabilir. 
 
-    ![Intune şu anda kullanılabilir güvenlik temelleri bakın](./media/security-baselines/available-baselines.png)
+    ![Yapılandırmak için bir güvenlik taban çizgisi seçin](./media/security-baselines/available-baselines.png)
 
-3. Kullanmak istediğiniz taban çizgisini seçin > **profili oluşturma**.
-4. İçinde **Temelleri**, aşağıdaki özellikleri girin:
 
-    - **Ad**: Güvenlik temelleri profiliniz için bir ad girin. Örneğin, şunu girin: `pilot Windows 10 MDM baseline - Oct 2018`.
+2. Kullanın ve ardından istediğiniz taban çizgisini seçin **profili oluşturma**.  
+
+3. Üzerinde **Temelleri** sekmesinde, aşağıdaki özellikleri belirtin:
+
+    - **Ad**: Güvenlik temelleri profiliniz için bir ad girin. Örneğin, *Defender ATP için standart profili*
     - **Açıklama**: Bu temel ne yaptığını açıklayan metin girin. Açıklama girin, istediğiniz herhangi bir metin için bağlıdır. Bu, isteğe bağlı, ancak kesinlikle önerilir.
 
-5. Genişletin **ayarları**. Listede, bu güvenlik temeli ve ne otomatik olarak ayar tüm ayarlar bakın. Ayarları ve değerleri önerilir ve sizin tarafınızdan değiştirilebilir.
+4. Seçin **yapılandırma** kullanılabilir gruplarını görüntülemek için sekmesinde **ayarları** bu temelindeki. Genişletin ve içerdiği tek ayarlarını görüntülemek için bir grubu seçin. Ayarları, güvenlik temeli için varsayılan yapılandırmaları vardır. İş ihtiyaçlarınızı karşılamak için varsayılan ayarları yeniden yapılandırın.  
 
-    ![Ayarı, bu güvenlik temeli ıntune'da tüm ayarları görmek için genişletin](./media/security-baselines/sample-list-of-settings.png)
+    ![Bu grubun ayarlarını görüntülemek için bir grubu genişletin](./media/security-baselines/sample-list-of-settings.png)
 
-    Bazı ayarlar değerleri denetlemek için genişletin. Örneğin, genişletme **Windows Defender**. Bazı ayarlar ve ne oldukları şey dikkat edin:
+5. Seçin **atamaları** temel gruplarına atamak için sekmesinde. Taban çizgisini varolan bir gruba atayın veya yapılandırmayı tamamlamak için Intune konsolunda standart işlemini kullanarak yeni bir grup oluşturun.  
 
-    ![Hangi ayarları Intune ile otomatik olarak ayarlanan Windows Defender'ın bazı bakın](./media/security-baselines/expand-windows-defender.png)
+   ![Profil atama](./media/security-baselines/assignments.png)
+  
+6. Taban çizgisi dağıtmaya hazır olduğunuzda seçin **gözden + Oluştur** temel ayrıntılarını gözden geçirmek için sekmesinde. Ardından seçin **profili Kaydet** kaydetme ve profili dağıtın. 
 
-6. **Oluşturma** profili. 
-7. Seçin **profilleri**. Profilinizi oluşturulur ve listede gösterilen. Ancak, herhangi bir şey henüz yapmıyor. Ardından, profil atayın.
+   ![Taban çizgisi gözden geçirin](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>Profil atama
+   Kaydettiğiniz hemen sonra Intune ile iade gönderilirken profili cihazlara gönderilir. Bu nedenle, bunu hemen oluşabilir.
 
-Profil oluşturulduktan sonra kullanıcılar, cihazlar ve gruplar için atanmak üzere hazırdır. Kendilerine atandıktan sonra profil ve ayarları kullanıcıları, cihazları ve seçtiğiniz grupları için uygulanır.
+   > [!TIP]  
+   > İlk gruplarına atayarak olmadan, bir profil kaydedebilirsiniz. Profil gruplar eklemek için daha sonraki bir zamanda düzenleyebilirsiniz. 
 
-1. Intune'da seçin **güvenlik temellerini** > bir temel seçin > **profilleri**.
-2. Profilinizi seçin > **atamaları**.
-
-    ![Intune'da güvenlik temel profilinizi seçin ve profilini dağıtmak için atamalar'a tıklayın](./media/security-baselines/assignments.png)
-
-3. İçinde **INCLUDE** sekmesinde, kullanıcıları, grupları ekleyin veya cihazlar bu ilkenin uygulanmasını istediğiniz.
-
-    > [!TIP]
-    > Ayrıca uyarı **hariç** grupları. Bir ilkeyi uygularsanız **tüm kullanıcılar**, yönetici gruplarından dışlamayı göz önünde bulundurun. Bir şey olması durumunda, siz ve yöneticileriniz kilitli istemiyorum.
-
-4. Yaptığınız değişiklikleri **kaydedin**.
-
-Kaydettiğiniz hemen sonra Intune ile iade gönderilirken profili cihazlara gönderilir. Bu nedenle, bunu hemen oluşabilir.
-
-## <a name="available-security-baselines"></a>Kullanılabilir güvenlik temelleri  
-
-Aşağıdaki güvenlik temelleri, Intune ile kullanmak için kullanılabilir olan.
-- **Önizleme: MDM güvenlik temeli**
-  - Sürüm: [Ekim 2018](security-baseline-settings-windows.md)
+7. Profil oluşturduktan sonra şuraya giderek düzenleyebilirsiniz **cihaz güvenliği** > **güvenlik temellerini**, yapılandırılmış ve ardından taban çizgisini seçin **profilleri**.  Profili seçin ve ardından **özellikleri** ayarları düzenleyin ve **atamaları** bu temel alan gruplarını düzenlemek için. 
 
 ## <a name="q--a"></a>Soru - Yanıt
 
