@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23a211d48a38cdffb909ceaf611a9939b5ac82f0
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733190"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853963"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -96,7 +96,7 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 
 Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olacak yönergeler sağlar.
 
-### <a name="step-1-specify-the-software-setup-file"></a>1. adım: Yazılım Kurulum dosyasını belirtme
+### <a name="step-1-specify-the-software-setup-file"></a>1. adım: Yazılım kurulum dosyasını belirtme
 
 1.  [Azure Portal](https://portal.azure.com/) oturum açın.
 2.  **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.
@@ -122,20 +122,20 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 
 1.  Uygulamayı yapılandırmak için **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
 2.  **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
-    - **Ad**: Şirket portalı'nda göründüğü gibi bir uygulama adı girin. Aynı uygulama adı iki kez kullanılmışsa, iki uygulama da Şirket Portalı’nda görüntülenir.
+    - **Ad**: Uygulamanın Şirket Portalı’nda görünen adını girin. Aynı uygulama adı iki kez kullanılmışsa, iki uygulama da Şirket Portalı’nda görüntülenir.
     - **Açıklama**: Uygulama için bir açıklama girin. Açıklama, Şirket Portalı’nda görünür.
     - **Publishe**r: Uygulama yayımcısının adını girin.
     - **Kategori**: Bir veya daha fazla yerleşik uygulama kategorilerinden birini seçin veya oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
-    - **Bunu şirket Portalı'nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
-    - **Bilgi URL'si**: İsteğe bağlı olarak, uygulama hakkında bilgi içeren bir Web sitesinin URL'sini girin. URL, Şirket Portalı’nda görünür.
-    - **Gizlilik URL'si**: İsteğe bağlı olarak, uygulamayla ilgili gizlilik bilgilerini içeren bir Web sitesinin URL'sini girin. URL, Şirket Portalı’nda görünür.
+    - **Şirket Portalı’nda bu uygulamayı öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
+    - **Bilgi URL'si**: İsteğe bağlı olarak, uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
+    - **Gizlilik URL’si**: İsteğe bağlı olarak, uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
-    - **Sahibi**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin. Örneğin **İK departmanı**.
-    - **Notları**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Sahip**: İsteğe bağlı olarak uygulama sahibinin adını girin. Örneğin **İK departmanı**.
+    - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na gözatarken uygulamayla birlikte görüntülenir.
 3.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-4-configure-app-installation-details"></a>4. adım: Uygulama yükleme ayrıntılarını Yapılandır
+### <a name="step-4-configure-app-installation-details"></a>Adım 4: Uygulama yükleme ayrıntılarını Yapılandır
 1.  **Uygulama ekle** bölmesinde, uygulamanın yükleme ve kaldırma komutlarını yapılandırmak için **Program**'ı seçin.
 2.  Uygulamayı yüklemek için yükleme komut satırının tamamını ekleyin. 
 
@@ -158,12 +158,12 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 
 4.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-5-configure-app-requirements"></a>5. adım: Uygulama gereksinimlerini yapılandırma
+### <a name="step-5-configure-app-requirements"></a>Adım 5: Uygulama gereksinimlerini yapılandırma
 
 1.  **Uygulama ekle** bölmesinde, uygulamayı yüklemeden önce cihazların karşılaması gereken gereksinimleri yapılandırmak için **Gereksinimler**'i seçin.
 2.  İçinde **bir gereksinim Kuralı Ekle** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
     - **İşletim sistemi mimarisi**: Mimarileri uygulaması yüklemeniz gerektiğini seçin.
-    - **En düşük işletim sistemi**: Uygulamayı yüklemek için gereken en düşük işletim sistemi seçin.
+    - **Minimum işletim sistemi**: Uygulamayı yüklemek için gereken en düşük işletim sistemi seçin.
     - **Gerekli disk alanı (MB)**: İsteğe bağlı olarak, sistem sürücüsünde, uygulamayı yüklemek için gereken boş disk alanı ekleyin.
     - **Gerekli fiziksel bellek (MB)**: İsteğe bağlı olarak, uygulamayı yüklemek için gereken fiziksel belleği (RAM) ekleyin.
     - **En düşük gerekli mantıksal işlemcilerin sayısını**: İsteğe bağlı olarak, en az sayıda uygulamayı yüklemek için gereken bir mantıksal işlemci ekleyin.
@@ -245,7 +245,7 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
             Intune Aracısı komut dosyası sonuçlarını denetler. Betik tarafından standart çıkış (STDOUT) akışına, standart hata (STDERR) akışına ve çıkış koduna yazılan değerleri okur. Betikten sıfırdan farklı bir değerle çıkılırsa, betik başarısız olur ve uygulama algılama durumu Yüklü Değil olur. Çıkış kodu sıfırsa ve STDOUT veri içeriyorsa, uygulama algılama durumu Yüklü'dür. 
 
             > [!NOTE]
-            > Betikten 0 değeriyle çıkılırsa, betiğin yürütülmesi başarılı olmuştur. İkinci çıkış kanalı uygulamanın algılandığını gösterir - STDOUT verileri uygulamanın istemcide bulunduğunu gösterir. STDOUT akışından belirli bir dize beklemeyiz.
+            > Microsoft, UTF-8 olarak betiğinizi kodlama önerir. Betikten 0 değeriyle çıkılırsa, betiğin yürütülmesi başarılı olmuştur. İkinci çıkış kanalı uygulamanın algılandığını gösterir - STDOUT verileri uygulamanın istemcide bulunduğunu gösterir. STDOUT akışından belirli bir dize beklemeyiz.
 
         4.  Kurallarınızı ekledikten sonra **Ekle** > **Tamam**'ı seçin.
 
@@ -270,9 +270,9 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 1.  Uygulama bölmesinde **Atamalar**’ı seçin.
 2.  Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
 3.  Belirli bir uygulama için **atama türü** seçin:
-    - **Kayıtlı cihazlar için kullanılabilir**: Kullanıcılar uygulamayı şirket Portalı Web sitesine veya Şirket portalı uygulamasını yükleyin.
-    - **Gerekli**: Uygulama seçilen gruplardaki cihazlara yüklenir.
-    - **Kaldırma**: Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
+    - **Kayıtlı cihazlar için bulunur**: Kullanıcılar uygulamayı şirket Portalı Web sitesine veya Şirket portalı uygulamasını yükleyin.
+    - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir.
+    - **Kaldır**: Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
 4.  **Eklenen Gruplar**'ı seçin ve bu uygulamayı kullanacak grupları atayın.
 5.  Dahil edilen gruplar seçimini tamamlamak için **Ata** bölmesinde **Tamam**'ı seçin.
 6.  Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız, **Grupları Dışla**'yı seçin.
@@ -326,7 +326,7 @@ Aşağıdaki görüntüde, cihaza uygulama değişiklikler yapılmıştır son k
 Gerekirse, uygulama ataması başına gösteren son kullanıcı bildirimleri gösterilmemesini sağlayabilirsiniz. Intune'dan seçin **istemci uygulamaları** > **uygulamaları** > uygulamayı seçin > **atamaları** > **grupları dahil**. 
 
 > [!NOTE]
-> Intune yönetim uzantısı Win32 uygulamaları kaldırılmaz kayıtlı olmayan cihazlarda yüklü. Yöneticiler, Win32 uygulamaları KCG cihazları teklif atama dışlama yararlanabilirsiniz.
+> Kaydı kaldırılan cihazlardaki Intune yönetim uzantısıyla yüklenmiş olan Win32 uygulamaları kaldırılmaz. Yöneticiler, KCG cihazlarına Win32 uygulamalarını sunmamak amacıyla bunları atamadan hariç tutma seçeneğini değerlendirebilir.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 uygulamasında sorun giderme
 İstemci makinesindeki aracı günlükleri genellikle `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` yolunda bulunur. Bu günlük dosyalarını görüntülemek için `CMTrace.exe` dosyasından yararlanabilirsiniz. *CMTrace.exe* indirilebileceğini [Configuration Manager istemci araçları](https://docs.microsoft.com/sccm/core/support/tools). 

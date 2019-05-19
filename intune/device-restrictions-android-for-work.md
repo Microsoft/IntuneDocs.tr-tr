@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
+ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505786"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836465"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -34,8 +34,8 @@ Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farkl
 
 ### <a name="general-settings"></a>Genel ayarlar
 
-- **Ekran Yakalama**: Seçin **blok** ekran görüntüleri veya ekran önlemek için cihazda yakalar. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Yapılandırılmamış** kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
-- **Kamera**: Seçin **blok** için cihaz kameranızı erişimi engellemek için. **Gerekli değil** cihazın kamerasını erişmesini sağlar.
+- **Ekran yakalama**: Cihazda ekran görüntülerini veya ekran yakalamalarını önlemek için **Engelle**'yi seçin. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Yapılandırılmamış** kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
+- **Kamera**: Cihazdaki kameraya erişim sağlanmasını engellemek için **Engelle**'yi seçin. **Gerekli değil** cihazın kamerasını erişmesini sağlar.
 - **Varsayılan izin ilkesini**: Bu ayar, çalışma zamanı izinleri istekleri için varsayılan izin ilkesini tanımlar. Olası değerler şöyledir:
   - **Cihaz varsayılanı**: Cihazın varsayılan ayarı kullanın.
   - **Komut İstemi**: Kullanıcının izni onaylamanız istenir.
@@ -46,7 +46,7 @@ Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farkl
 - **Fabrika sıfırlaması**: Seçin **blok** sıfırlama seçeneği cihazın Ayarları'nda kullanıcıların Fabrika kullanmasını önlemek için. **Yapılandırılmamış** Bu ayar cihazda kullanmasına olanak tanır.
 - **Güvenli Önyükleme**: Seçin **blok** kullanıcıların cihaz Modu'nda yeniden başlatılmasını önlemek için. **Yapılandırılmamış** kullanıcılar güvenli modda cihazın yeniden başlatılmasına izin verir.
 - **Durum çubuğu**: Seçin **blok** durum çubuğu, bildirimler ve hızlı ayarlar dahil olmak üzere erişimi engellemek için. **Yapılandırılmamış** kullanıcıların durum çubuğuna erişimi sağlar.
-- **Veri Hizmetleri**: Seçin **blok** hücresel ağ üzerinde veri dolaşımını önlemek için. **Yapılandırılmamış** cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
+- **Veri Hizmetleri**: Cep telefonu şebekesi üzerinden veri dolaşımını önlemek için **Engelle**'yi seçin. **Yapılandırılmamış** cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
 - **Wi-Fi ayar değişiklikleri**: Seçin **blok** kullanıcıların cihaz sahibi tarafından oluşturulan Wi-Fi ayarları değiştirmesini önlemek için. Kullanıcılar kendi Wi-Fi yapılandırmalarını oluşturabilir. **Yapılandırılmamış** kullanıcıların cihazda Wi-Fi ayarlarını değiştirmesine olanak tanır.
 - **Wi-Fi erişim noktası yapılandırması**: Seçin **blok** kullanıcıların oluşturma veya herhangi bir Wi-Fi yapılandırması değiştirmesini önlemek için. **Yapılandırılmamış** kullanıcıların cihazda Wi-Fi ayarlarını değiştirmesine olanak tanır.
 - **Bluetooth yapılandırma**: Seçin **blok** kullanıcıların cihazda Bluetooth yapılandırmasını önlemek için. **Yapılandırılmamış** cihazda Bluetooth'un kullanımına izin verir.
@@ -147,24 +147,24 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
 
 - **Gerekli parola türü**: Cihaz için gerekli parola türünü tanımlayın. Seçenekleriniz şunlardır:
   - **Cihaz varsayılanı**
-  - **Gerekli parola kısıtlaması yok**
-  - **Zayıf biyometrik**: [Güçlü ve zayıf Biyometri](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (Android web sitesi açılır)
-  - **Sayısal**: Parola yalnızca sayı olmalıdır, örneğin `123456789`. Girin **en düşük parola uzunluğu** 4 ile 16 karakter arasında bir kullanıcının girmesi gerekir.
-  - **Sayısal karmaşık**: Yinelenen veya "1111" veya "1234" gibi ardışık sayılar izin verilmez. Girin **en düşük parola uzunluğu** 4 ile 16 karakter arasında bir kullanıcının girmesi gerekir.
-  - **Alfabetik**: Alfabedeki karakterlerden gereklidir. Sayılar ve semboller gerekli değildir. Girin **en düşük parola uzunluğu** 4 ile 16 karakter arasında bir kullanıcının girmesi gerekir.
-  - **Alfasayısal**: Büyük harfler, küçük harf ve sayısal karakterler içerir. Girin **en düşük parola uzunluğu** 4 ile 16 karakter arasında bir kullanıcının girmesi gerekir.
-  - **Simgeler ile alfasayısal**: Büyük harfler, küçük harfler, sayısal karakter, noktalama işaretleri ve semboller içerir. Şunları da girin:
+  - **Parola gerekli, kısıtlama yok**
+  - **Zayıf biyometrik**: [Güçlü ile zayıf biyometrik arasındaki farklar](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (Android web sitesinde açılır)
+  - **Sayısal**: Parola yalnızca sayı olmalıdır, örneğin: `123456789`. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+  - **Sayısal karmaşıklık**: Yinelenen veya ardışık sayılara (örneğin "1111" veya "1234") izin verilmez. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+  - **Alfabetik**: Alfabedeki harflerin kullanılması gerekir. Rakamlar ve simgeler zorunlu tutulmaz. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+  - **Alfasayısal**: Büyük harfler, küçük harfler ve sayısal karakterleri içerir. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+  - **Simgelerle alfasayısal**: Büyük harfler, küçük harfler, sayısal karakterler, noktalama işaretleri ve simgeleri içerir. Şunları da girin:
 
-    - **Minimum parola uzunluğu**: Parola, 4 ile 16 karakter arasında olmalıdır alt sınırını girin.
-    - **Gereken karakter sayısı**: Bulunması gereken karakter, 0 ile 16 karakter arasında bir sayı girin.
-    - **Gerekli bir küçük harf karakter sayısı**: Bulunması gereken küçük harf karakter, 0 ile 16 karakter arasında bir sayı girin.
-    - **Gereken büyük harf karakter sayısı**: Bulunması gereken büyük harf karakter, 0 ile 16 karakter arasında bir sayı girin.
-    - **Gerekli olmayan harfli karakter sayısı**: Bir sayı girin olmayan-harf (alfabedeki karakterlerden dışında bir şey) parolası, 0 ile 16 karakter arasında olmalıdır.
-    - **Gereken karakter sayısı**: Sayısal karakter sayısını girin (`1`, `2`, `3`, vb.) parolası, 0 ile 16 karakter arasında olmalıdır.
-    - **Gereken simge karakterlerinin sayısını**: Sembol karakterlerinin sayısını girin (`&`, `#`, `%`, vb.) parolası, 0 ile 16 karakter arasında olmalıdır.
+    - **Minimum parola uzunluğu**: Parola uzunluğu alt sınırını girin (4 ile 16 karakter arasında).
+    - **Gereken karakter sayısı**: Parolada bulunması gereken karakter sayısını girin (0 ile 16 karakter arasında).
+    - **Gereken küçük harf karakter sayısı**: Parolada bulunması gereken küçük harf karakteri sayısını girin (0 ile 16 karakter arasında).
+    - **Gereken büyük harf karakter sayısı**: Parolada bulunması gereken büyük harf karakteri sayısını girin (0 ile 16 karakter arasında).
+    - **Gereken harf dışı karakter sayısı**: Parolada bulunması gereken harf dışı karakter sayısını (alfabedeki harflerin dışındaki karakterler, 0 ile 16 karakter arasında) girin.
+    - **Gereken sayısal karakter sayısı**: Parolada bulunması gereken sayısal karakter sayısını (`1`, `2`, `3` gibi, 0 ile 16 karakter arasında) girin.
+    - **Gereken simge karakter sayısı**: Parolada bulunması gereken simge karakter sayısını (`&`, `#`, `%` gibi, 0 ile 16 karakter arasında) girin.
 
-- **Parolanın süresi dolana kadar gün sayısı**: 1-365, cihaz parolası değiştirilene kadar geçecek gün sayısını girin. Örneğin, 60 gün sonra parolayı değiştirmek için girin `60`. Parola geçerlilik süresi dolduğunda, kullanıcıların yeni bir parola oluşturması istenir.
-- **Kullanıcı önce gerekli olan parolalardan kaç tanesinin resuse bir parola için**: 1-24 kullanılamayacak yeni parola sayısını girin. Son kullanıcının daha önce kullanılmış parolalar oluşturmasını önlemek için bu ayarı kullanın.
+- **Parola süresinin dolmasına kalan gün sayısı**: Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını (1 ile 365 arasında) girin. Örneğin parolanın 60 gün sonra değiştirilmesi için `60` girin. Parola geçerlilik süresi dolduğunda kullanıcıların yeni bir parola oluşturması istenir.
+- **Kullanıcı önce gerekli olan parolalardan kaç tanesinin resuse bir parola için**: Yeniden kullanılamayacak parolalar için 1 ile 24 arasında bir sayı girin. Son kullanıcının daha önce kullanılmış parolalar oluşturmasını önlemek için bu ayarı kullanın.
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Cihaz temizlenmeden önce izin başarısız oturum açma işlemleri, 4-11 arasında bir sayı girin.
 
 ### <a name="power-settings"></a>Güç ayarları
@@ -240,7 +240,7 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
 
 - **Bluetooth ile kişi paylaşımı**: Kişileri, Bluetooth kullanarak eşleştirilmiş bir araba gibi başka bir CİHAZDAN çalışma erişimi etkinleştirir. Bu ayar varsayılan olarak yapılandırılmamıştır ve iş profili kişileri gösterilmez. Bu paylaşıma izin verip iş profili kişilerini görüntülemek için **Etkinleştir**’i seçin. Bu ayar, Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları için geçerlidir. Bu ayarı etkinleştirmek, bazı Bluetooth cihazlarının ilk bağlantı sırasında iş kişilerini önbelleğe almasına izin verebilir. İlk eşleme/eşitleme sonrasına bunu devre dışı bırakmak ise Bluetooth cihazından iş kişilerini kaldırmayabilir.
 
-- **Ekran Yakalama**: Seçin **blok** ekran görüntüleri veya ekran önlemek için cihazın iş profilindeki yakalar. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Yapılandırılmamış** ekran görüntüleri alma sağlar.
+- **Ekran yakalama**: Seçin **blok** ekran görüntüleri veya ekran önlemek için cihazın iş profilindeki yakalar. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Yapılandırılmamış** ekran görüntüleri alma sağlar.
 
 - **Kişisel profilde iş kişisi arayan kimliğini görüntüleme**: Etkin olduğunda (**yapılandırılmadı**), iş kişisi arayan ayrıntıları kişisel profilde görüntülenir. Ayarlandığında **blok**, iş kişisi arayan numarası kişisel profilde görüntülenmez. Android işletim sistemi v6.0 ve daha yeni sürümlerde geçerlidir.
 
@@ -254,18 +254,18 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
 - **Minimum parola uzunluğu**: En az bir kullanıcı parolasının sahip olması gerekir, karakter sayısını girin gelen **4**-**16**.
 - **Kilitlenmesine kadar iş profili kilitlenmeden önce**: İş profili kilitlenmeden önce geçen süreyi seçin. Daha sonra kullanıcının kimlik bilgilerini girerek tekrar erişim kazanması gerekir.
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: İş profili temizlenmeden önce hatalı bir parolanın CİHAZDAN girilebilir sayısını girin.
-- **Parola süresinin sonu (gün)**: Bir son kullanıcının parolası değiştirilene kadar geçecek gün sayısını girin (gelen **1**-**255**).
+- **Parola zaman aşımı (gün sayısı)**: Bir son kullanıcının parolası değiştirilene kadar geçecek gün sayısını girin (gelen **1**-**255**).
 - **Gerekli parola türü**: Cihazda ayarlanması gereken parola türünü seçin. Aşağıdakilerden birini seçin:
   - **Cihaz varsayılanı**
   - **Düşük güvenlik biyometriği**
   - **Gerekli**
   - **En az sayısal**
-  - **Sayısal karmaşık**: '1111' veya '1234' gibi yinelenen veya ardışık numaralara izin verilmez
+  - **Sayısal karmaşıklık**: '1111' veya '1234' gibi yinelenen veya ardışık numaralara izin verilmez
   - **En az alfabetik**
   - **En az alfasayısal**
   - **En az simgeler ile alfasayısal**
-- **Önceki parolaların yeniden kullanılmasını engelle**: Eski bir parolanın yeniden kullanılabilmesi, kullanılması gereken yeni parola sayısını girin (gelen **1**-**24**).
-- **Parmak iziyle kilit açma**: Seçin **blok** son kullanıcılar cihazın kilidini açmak için cihazın parmak izi tarayıcısını kullanmasını önlemek için. **Yapılandırılmamış** kullanıcıların cihazların iş profilindeki bir parmak izi ile kilit açma olanak sağlar.
+- **Önceki parolaların yeniden kullanılmasını engelleme**: Eski bir parolanın yeniden kullanılabilmesi, kullanılması gereken yeni parola sayısını girin (gelen **1**-**24**).
+- **Parmak izi ile kilit açma**: Seçin **blok** son kullanıcılar cihazın kilidini açmak için cihazın parmak izi tarayıcısını kullanmasını önlemek için. **Yapılandırılmamış** kullanıcıların cihazların iş profilindeki bir parmak izi ile kilit açma olanak sağlar.
 - **Akıllı kilit ve diğer güven aracıları**: Seçin **blok** ayarlaması kilit ekranı ayarları uyumlu cihazlarda akıllı kilit veya diğer güven aracılarının önlemek için. Bazen bir güven aracısı olarak da bilinen bu özelliği devre dışı bırakın veya cihaz güvenilir bir konumda, cihazın kilitleme ekranı parolasını atlamanıza izin verir. Örneğin cihaz belirli bir Bluetooth cihazına bağlıyken ya da bir NFC etiketinin yakınındayken iş profili parolasını atlama. Bu ayarı, kullanıcıların Akıllı Kilit'i yapılandırmasını önlemek için kullanın.
 
 ### <a name="device-password"></a>Cihaz parolası
@@ -273,20 +273,20 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
 Bu parola ayarlar, bir iş profili kullanan cihazlardaki kişisel profiller için geçerlidir.
 
 - **Minimum parola uzunluğu**: En az bir kullanıcı parolasının sahip olması gerekir, karakter sayısını girin gelen **4**-**14**.
-- **Ekran kilitlenmeden işlem yapılmayan dakika**: Etkin olmayan bir cihaz otomatik olarak kilitlenmeden önce geçen süreyi seçin
+- **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Etkin olmayan bir cihaz otomatik olarak kilitlenmeden önce geçen süreyi seçin
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Kaç kez CİHAZDAN tüm verileri silinmeden önce yanlış parola girilebileceğini sayısını girin
-- **Parola süresinin sonu (gün)**: Bir son kullanıcının parolası değiştirilene kadar geçecek gün sayısını girin (gelen **1**-**255**)
+- **Parola zaman aşımı (gün sayısı)**: Bir son kullanıcının parolası değiştirilene kadar geçecek gün sayısını girin (gelen **1**-**255**)
 - **Gerekli parola türü**: Cihazda ayarlanması gereken parola türünü seçin. Aşağıdakilerden birini seçin:
   - **Cihaz varsayılanı**
   - **Düşük güvenlik biyometriği**
   - **Gerekli**
   - **En az sayısal**
-  - **Sayısal karmaşık**: '1111' veya '1234' gibi yinelenen veya ardışık numaralara izin verilmez
+  - **Sayısal karmaşıklık**: '1111' veya '1234' gibi yinelenen veya ardışık numaralara izin verilmez
   - **En az alfabetik**
   - **En az alfasayısal**
   - **En az simgeler ile alfasayısal**
-- **Önceki parolaların yeniden kullanılmasını engelle**: Eski bir parolanın yeniden kullanılabilmesi, kullanılması gereken yeni parola sayısını girin (gelen **1**-**24**).
-- **Parmak iziyle kilit açma**: Seçin **blok** son kullanıcı, cihazın kilidini açmak için cihazın parmak izi tarayıcısını kullanmasını önlemek için. **Yapılandırılmamış** parmak izi kullanarak cihaz kilidini açmak kullanıcının sağlar.
+- **Önceki parolaların yeniden kullanılmasını engelleme**: Eski bir parolanın yeniden kullanılabilmesi, kullanılması gereken yeni parola sayısını girin (gelen **1**-**24**).
+- **Parmak izi ile kilit açma**: Seçin **blok** son kullanıcı, cihazın kilidini açmak için cihazın parmak izi tarayıcısını kullanmasını önlemek için. **Yapılandırılmamış** parmak izi kullanarak cihaz kilidini açmak kullanıcının sağlar.
 - **Akıllı kilit ve diğer güven aracıları**: Seçin **blok** ayarlaması kilit ekranı ayarları uyumlu cihazlarda akıllı kilit veya diğer güven aracılarının önlemek için. Bazen bir güven aracısı olarak da bilinen bu özelliği devre dışı bırakın veya cihaz güvenilir bir konumda, cihazın kilitleme ekranı parolasını atlamanıza izin verir. Örneğin cihaz belirli bir Bluetooth cihazına bağlıyken ya da bir NFC etiketinin yakınındayken iş profili parolasını atlama. Bu ayarı, kullanıcıların Akıllı Kilit'i yapılandırmasını önlemek için kullanın.
 
 ### <a name="system-security"></a>Sistem güvenliği
@@ -327,3 +327,7 @@ Bu parola ayarlar, bir iş profili kullanan cihazlardaki kişisel profiller içi
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
 Ayrılmış bir cihaz bilgi noktası profillerini oluşturabilirsiniz [Android](device-restrictions-android.md#kiosk) ve [Windows 10](kiosk-settings.md) cihazlar.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Android kuruluş cihazlarının Microsoft Intune sorun giderme ve yapılandırma](https://support.microsoft.com/help/4476974)
