@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb689fd77d79e34abe0e4418ceea40e53373fd83
-ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
+ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65816270"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975813"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -122,9 +122,6 @@ Kullanılabilir ayarlar görmek için Git [App Store, belge görüntüleme, oyun
 
 Şunun için geçerlidir: iOS
 
-#### <a name="advanced-settings-for-windows-defender-firewall-------1311949---"></a>Windows Defender Güvenlik Duvarı için Gelişmiş ayarları   <!--  1311949 -->
-Yönetmek için Intune kullanmak [bir cihaz yapılandırma profilinin bir parçası olarak özel bir güvenlik duvarı kuralları](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) Windows 10 endpoint protection için. Kural, uygulamalar, ağ adresleri ve bağlantı noktalarına gelen ve giden davranış belirtebilirsiniz.
-
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender Gelişmiş tehdit koruması temel (Önizleme)  <!--  3754134 -->
 Güvenlik temeli önizlemesini ekledik için [Microsoft Defender Gelişmiş tehdit koruması](security-baseline-settings-defender-atp.md) ayarları.  
 
@@ -218,8 +215,8 @@ Intune'a kayıtlı üzerinde yüklenmesi, Win32 uygulamaları atayabilirsiniz Az
 #### <a name="device-overview-shows-primary-user---794259----"></a>Birincil kullanıcı cihaz genel bakışı gösterir <!--794259  -->
 Birincil de kullanıcı aygıt benzeşimi kullanıcı (UDA) adlı kullanıcı, cihaz genel bakış sayfası gösterilir. Bir cihaz için birincil kullanıcı görmek için **Intune** > **cihazları** > **tüm cihazlar** > bir cihaz seçin. Birincil kullanıcıya en görüneceğini **genel bakış** sayfası.
 
-#### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android kurumsal iş profili cihazları için raporlama ek yönetilen Google Play uygulaması <!-- 4105925  -->
-Android kurumsal iş profili cihazlara dağıttığınız yönetilen Google Play uygulamaları için bir cihaza yüklenen uygulamanın belirli sürüm numarası görüntüleyebilirsiniz. Bu, yalnızca gerekli uygulamalar için geçerlidir. Gelecekteki bir sürümde aynı işlevselliği kullanılabilir uygulamalar için etkinleştirilir. 
+#### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android Kurumsal iş profili cihazları için ek Yönetilen Google Play uygulaması raporlaması <!-- 4105925  -->
+Android Kurumsal iş profili cihazlarına dağıtılan Yönetilen Google Play uygulamaları için, cihazda yüklü olan uygulamanın sürüm numarasını görüntüleyebilirsiniz. Bu yalnızca gerekli uygulamalar için geçerlidir. Gelecekteki bir sürümde aynı işlevselliği kullanılabilir uygulamalar için etkinleştirilir. 
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS üçüncü taraf klavyeler <!-- 4111843   -->
 Intune uygulama koruma İlkesi (uygulama) desteği **üçüncü taraf klavyeler** ayarı iOS artık bir iOS platform değişikliği nedeniyle desteklenmiyor. Intune Yönetici konsolunda bu ayarı yapılandırmak mümkün olmayacaktır ve Intune uygulama SDK'sı istemcide uygulanmaz.
@@ -253,7 +250,7 @@ OEM'leri şu anda bir OEM başına temelinde desteğidir. İstediğiniz OEMConfi
 
 Bu özellik hakkında daha fazla bilgi için şuraya gidin [kullanmak ve Microsoft Intune OEMConfig ile Android Kurumsal cihaz yönetmek](android-oem-configuration-overview.md).
 
-Şunun için geçerlidir: Android Kurumsal
+Şunun için geçerlidir: Android kurumsal
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows güncelleştirme bildirimleri  <!-- 3316758, 3316782  -->
 İki ekledik *kullanıcı deneyimi ayarlarını* Windows güncelleştirmesi halka yapılandırmalar gelen Intune konsolundan yönetebilirsiniz. Artık şunları yapabilirsiniz:
@@ -283,7 +280,7 @@ Yine de bir genel önizlemede olan desteğimiz tam olarak yönetilen Android Kur
 
 - Cihazlarda, tamamen yönetilen ve özel oluşturduğunuz [uyumluluk ilkeleri](compliance-policy-create-android-for-work.md) parola kuralları ve işletim sistemi gereksinimleri dahil edilecek (**cihaz uyumluluğu**  >   **İlkeleri** > **ilkesi oluşturma** > **Android Kurumsal** Platform > **cihaz sahibi** için Profil türü). 
 
-  Adanmış cihazlarda, cihazı olarak gösterebilir **uyumlu**. Koşullu erişim, adanmış cihazlarda kullanılamaz. Herhangi bir görev veya ayrılmış cihazları atanan ilkelerinizle uyumlu almak için Eylemler tamamladığınızdan emin olun.
+  Adanmış cihazlarda, cihazı olarak gösterebilir **uyumlu**. Koşullu erişim, adanmış cihazlarda kullanılamaz. Ayrılmış cihazların atanan ilkelerinizle uyumlu olmasını sağlamak için gerekli görevleri veya eylemleri gerçekleştirdiğinizden emin olun.
 
 - [Koşullu erişim](conditional-access.md) -koşullu erişim Android için geçerli olan ilkeleri de geçerli Android Enterprise için tam olarak yönetilen cihazlar. Kullanıcılar artık kaydedebilir tam olarak yönetilen cihazlarını Azure Active Directory kullanarak **Intune uygulama**. Daha sonra bkz ve kurumsal kaynaklara erişmek için uyumluluk sorunları çözün.
 
@@ -343,7 +340,7 @@ Güncelleştirmeler için hem de yayımladık [Intune sertifika Bağlayıcısı 
 
 ### <a name="app-management"></a>Uygulama yönetimi
 
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>İOS için Şirket portalı uygulaması için kullanıcı deneyimi güncelleştirmesi <!-- 2536024 -->
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>iOS için Şirket Portalı uygulamasında kullanıcı deneyimi güncelleştirmesi <!-- 2536024 -->
 İOS cihazları için Şirket portalı uygulamasının giriş sayfası yeniden tasarlandı. Bu değişiklik, giriş sayfası iOS kullanıcı Arabirimi desenleri daha iyi izleyin ve ayrıca uygulamaları ve e-Kitaplar için geliştirilmiş bulunabilirliği sağlamak.
 
 #### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>İOS için Şirket portalı kaydı için 12 cihaz kullanıcılarının değiştirir. <!--3448635 -->  
@@ -601,8 +598,8 @@ Yapılandırabileceğiniz **cihaz ayarlarında kısıtlamaları etkinleştirme**
 
 Aynı durum geçerlidir. Özellikle: 
 
-- iOS 11.4.1 ve önceki sürümleri: **Blok** son kullanıcıların cihaz ayarlarında kısıtlamaları kendi ayarından engeller. 
-- iOS 12.0 ve daha sonra: **Blok** son kullanıcılar kendi önlenmiş **ekran zaman** cihaz ayarlarında, içerik ve gizlilik kısıtlamaları da dahil olmak üzere. İOS 12.0 yükseltilmiş cihazları, cihaz ayarlarında kısıtlamaları sekmesinde artık görmezsiniz. Bu ayarlar **ekran zaman**. 
+- iOS 11.4.1 ve öncesi: **Engelle** ayarı son kullanıcıların cihaz ayarlarında kendi kısıtlamalarını ayarlamalarını önler. 
+- iOS 12.0 ve üzeri: **Blok** son kullanıcılar kendi önlenmiş **ekran zaman** cihaz ayarlarında, içerik ve gizlilik kısıtlamaları da dahil olmak üzere. İOS 12.0 yükseltilmiş cihazları, cihaz ayarlarında kısıtlamaları sekmesinde artık görmezsiniz. Bu ayarlar **Ekran Saati** altındadır. 
 
 Ayarlar listesi için bkz. [iOS cihaz kısıtlamaları](device-restrictions-ios.md#general).
 
@@ -668,10 +665,10 @@ Artık iOS için Outlook ve Intune kullanarak Android için aşağıdaki ek ayar
 Daha fazla bilgi için [Microsoft Outlook yapılandırma ayarlarını](app-configuration-policies-outlook.md).
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Android Kurumsal uygulamaları Sil <!-- 1352553 -->
-Yönetilen Google Play uygulamaları Microsoft Intune silebilirsiniz. Yönetilen Google Play uygulama silmek için Azure portal ve select Intune açın **istemci uygulamaları** > **uygulamaları**. Uygulama listesinden yönetilen Google Play uygulaması'nın sağındaki üç nokta (...) seçin ve ardından **Sil** görüntülenen listeden. Uygulama listesinden bir yönetilen Google Play uygulaması sildiğinizde, yönetilen Google Play uygulaması otomatik olarak onaylanmadı.
+Yönetilen Google Play uygulamaları Microsoft Intune silebilirsiniz. Yönetilen Google Play uygulamasını silmek için Azure portalında Microsoft Intune'u açın ve **İstemci uygulamaları** > **Uygulamalar**'ı seçin. Uygulama listesinden, yönetilen Google Play uygulamasının sağ tarafındaki üç noktayı (...) seçin ve görüntülenen listeden **Sil**'i seçin. Uygulama listesinden yönetilen Google Play uygulamasını sildikten sonra, yönetilen Google Play uygulamasının onayı otomatik olarak kaldırılır.
 
-#### <a name="managed-google-play-app-type----1352580---"></a>Yönetilen Google Play uygulaması türü <!-- 1352580 -->
-**Yönetilen Google Play** uygulama türü, özellikle eklemenize olanak sağlayacaktır [yönetilen Google Play uygulamaları](https://play.google.com/work/search?q=microsoft&c=apps) ıntune. Intune Yöneticisi olarak, artık göz atabilir, arama, onaylama, eşitleme ve onaylı bir yönetilen Google Play uygulamaları Intune içerisindeki atayın.  Yönetilen Google Play konsolunu için ayrı olarak göz atmak artık ihtiyacınız ve yeniden kimlik doğrulamaya zorlayabilir artık yok.  Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**. İçinde **uygulama türü** listesinden **yönetilen Google Play** uygulama türü olarak.
+#### <a name="managed-google-play-app-type----1352580---"></a>Yönetilen Google Play uygulama türü <!-- 1352580 -->
+**Yönetilen Google Play** uygulama türü, özellikle eklemenize olanak sağlayacaktır [yönetilen Google Play uygulamaları](https://play.google.com/work/search?q=microsoft&c=apps) ıntune. Intune Yöneticisi olarak, artık göz atabilir, arama, onaylama, eşitleme ve onaylı bir yönetilen Google Play uygulamaları Intune içerisindeki atayın.  Artık ayrıca yönetilen Google Play konsoluna göz atmanız ve yeniden kimlik doğrulaması yapmanız gerekmez.  Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**. İçinde **uygulama türü** listesinden **yönetilen Google Play** uygulama türü olarak.
 
 ### <a name="default-android-pin-keyboard----3802457---"></a>Varsayılan Android PIN klavye <!-- 3802457 -->
 Intune uygulama koruma İlkesi (uygulama) PIN, PIN 'Sayısal' türüne sahip Android cihazlarında ayarladığınız son kullanıcılar için artık sabit Android klavye daha önce tasarlanan kullanıcı Arabirimi yerine varsayılan Android klavye görürler. Varsayılan klavye iki PIN türleri 'Sayısal' ve/veya 'Parola' için hem Android hem de iOS, kullanırken tutarlı olması için bu değişiklik yapılmıştır. Android'de uygulama PIN'i gibi son kullanıcıya erişim ayarları hakkında daha fazla bilgi için bkz. [Android erişim gereksinimlerini](app-protection-policy-settings-android.md#access-requirements).

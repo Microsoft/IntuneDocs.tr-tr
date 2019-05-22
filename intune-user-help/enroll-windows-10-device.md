@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4eb5dbb150559de7ad30a598fb78a4fa78033c42
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 162044fdfbe9df6dd6461bcdf919dc798ad3c4a1
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497906"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992912"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Intune Şirket portalı ile Windows 10 cihazlarını kaydetme
 
@@ -90,11 +90,14 @@ Bu adımlar Windows 10 sürüm 1511 ve öncesi çalışan bir cihazın nasıl ka
 
     ![Oturum aç](./media/W10-enroll-4-sign-in.png)  
 
-İş veya okul e-postalarınıza, dosyalarınıza veya diğer verilerinize hâlâ erişemiyor musunuz? Bilgi edinmek için nasıl [hesabı sorunlarını giderme](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).   
+İş veya okul e-postalarınıza, dosyalarınıza veya diğer verilerinize hâlâ erişemiyor musunuz? Bilgi nasıl [hesabı ile ilgili sorunları giderme](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) kayıt sırasında.  
+
+## <a name="it-administrator-support"></a>BT yöneticisi desteği   
+
+Bir BT yöneticisi olduğunuzu ve cihazlarını kaydederken sorunları Çalıştır bkz [sorun giderme Windows cihaz kaydı sorunlarını Microsoft Intune](https://support.microsoft.com/help/4469913). Yaygın hatalar, nedenleri ve adımları bunları gidermek için bu makalede listelenmektedir. 
 
 ## <a name="next-steps"></a>Sonraki adımlar  
-
-Yardım almak için şirketinizin destek birimi ile iletişime geçin. Kuruluşunuzun bulabilirsiniz BT bilgi [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980). Site iş veya Okul hesabınızla oturum açın.  
+Şirket portalı veya kayıt yardıma ihtiyacınız varsa, kuruluşunuzun kişi BT destek. Kişi bilgileri bulacaksınız [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980). Site iş veya Okul hesabınızla oturum açın.  
 
  
 

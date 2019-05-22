@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506823"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992893"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -51,6 +51,13 @@ Uygulama koruma ilkeleri, bir kuruluşa ait verilerin güvenli veya yönetilen b
 
 **Uygulama koruma ilkelerinin örnekleri nelerdir?**<br></br>
 Her uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) ve [iOS uygulama koruma ilkesi ayarlarına](app-protection-policy-settings-ios.md) bakın.
+
+**Bu, farklı cihazlar için aynı anda aynı kullanıcıya uygulanan hem MDM ve MAM ilkelerine sahip mümkün mü? Örneğin, bir kullanıcı kendi MAM özellikli makineden, iş kaynaklarına erişebilir, ancak ayrıca çalışmaya ve Intune MDM ile yönetilen bir cihazı kullanmaya gelir. Bu fikir tüm uyarılar var mı?**<br></br>
+Cihaz durumu ayarı olmadan kullanıcıya bir MAM İlkesi uygulama, kullanıcının hem KCG cihaz hem de Intune tarafından yönetilen cihaz MAM ilkesini alır. Yönetilen durumuna bağlı bir MAM İlkesi de uygulayabilirsiniz. Tüm uygulama türleri için hedef yanında bir uygulama koruma ilkesi oluşturduğunuzda seçersiniz için Hayır Ardından aşağıdakilerden birini yapın:
+- Daha az sınırlayıcı bir MAM İlkesi Intune ile yönetilen cihazlar için geçerlidir ve daha kısıtlayıcı bir MAM ilkesi olmayan MDM'ye kayıtlı cihazlar için geçerlidir.
+- Bir MAM İlkesi, yalnızca kaydı silinen cihazlar için geçerlidir.
+
+Daha fazla bilgi için [uygulama koruma ilkelerini izleme](app-protection-policies-monitor.md).
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Uygulama koruma ilkeleri ile yönetebileceğiniz uygulamalar
 
