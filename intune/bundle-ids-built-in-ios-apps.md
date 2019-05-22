@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/24/2019
+ms.date: 05/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052a5f533ef577358b8c28262116c065b3c4748d
-ms.sourcegitcommit: d1b4f0d5487e35902e8bcd478ad02f93125cc31d
+ms.openlocfilehash: a9df7511daff7bf71b8ae12e0fa65ce2c34e347b
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64339009"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65941904"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune'da kullanabileceğiniz yerleşik iOS uygulamaları için paket kimlikleri
 
@@ -69,7 +69,7 @@ ms.locfileid: "64339009"
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Borsa       | Apple     |
 | com.apple.tips              | İpuçları         | Apple     |
-| com.apple.TV                | TV           | Apple     |
+| com.apple.tv                | TV           | Apple     |
 | com.apple.videos            | Videolar       | Apple     |
 | com.apple.VoiceMemos        | Sesli Notlar   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |

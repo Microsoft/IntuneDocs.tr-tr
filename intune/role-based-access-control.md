@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 895b358760775b1021e545b271acb7ced7fa7b1d
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507316"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942075"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -42,7 +42,7 @@ Bir rol görmek için **Intune** > **rolleri** > **tüm rolleri** > bir rol seç
 -   **Atamalar**: Listesini [rol atamaları]( assign-role.md) hangi kullanıcıların hangi kullanıcılara/cihazlara erişimi tanımlama. Rol atamaları birden çok olabilir ve bir kullanıcı birden çok atamalarını olabilir.
 
 ### <a name="built-in-roles"></a>Yerleşik roller
-Daha fazla yapılandırma olmadan grupları için yerleşik roller atayabilirsiniz. Silemez veya adı, açıklama, tür veya yerleşik bir rol izinlerini düzenleyin. Her yerleşik rolü için izinleri tam bir listesi için bkz. [Intune RBAC tablosu] ((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+Daha fazla yapılandırma olmadan grupları için yerleşik roller atayabilirsiniz. Silemez veya adı, açıklama, tür veya yerleşik bir rol izinlerini düzenleyin. Yerleşik her rol için izinlerini tam bir listesi için bkz. [Intune RBAC tablosu](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 
 - **Yardım Masası operatörü**: Kullanıcılar ve cihazlar üzerinde uzak görevler gerçekleştirir ve kullanıcılara veya cihazlara uygulama veya ilke atayabilirsiniz.
 - **İlke ve Profil Yöneticisi**: Uyumluluk İlkesi, yapılandırma profillerini, Apple kayıt, Kurumsal cihaz tanımlayıcıları ve güvenlik temellerini yönetir.
@@ -59,12 +59,12 @@ Daha fazla yapılandırma olmadan grupları için yerleşik roller atayabilirsin
 | --- | :---: | :---: |
 | Genel Yönetici | Okuma/yazma | Okuma/yazma |
 | Intune Hizmet Yöneticisi | Okuma/yazma | Okuma/yazma |
-| Koşullu Erişim Yöneticisi | Yok. | Yok. |
+| Koşullu Erişim Yöneticisi | None | Yok. |
 | Güvenlik Yöneticisi | Salt okunur | Salt okunur |
 | Güvenlik işleci | Salt okunur | Salt okunur |
 | Güvenlik okuyucusu | Salt okunur | Salt okunur |
 | Uyumluluk Yöneticisi | Yok. | Salt okunur |
-| Uyumluluk veri Yöneticisi | Yok. | Salt okunur |
+| Uyumluluk veri Yöneticisi | None | Salt okunur |
 
 > [!TIP]
 > Intune ayrıca üç Azure AD uzantısı gösterir: **Kullanıcılar**, **grupları**, ve **koşullu erişim**, olmak üzere Azure AD RBAC ile denetlenen. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla bilgi için [Azure AD ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

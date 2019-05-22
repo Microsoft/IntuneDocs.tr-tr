@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509084"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942056"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
@@ -61,7 +61,7 @@ Bu raporda gezindikçe her bir ayar için uyumluluk durumu da dahil olmak üzere
 Grafik, Intune’a kayıtlı tüm cihazlar için uyumluluk durumunu gösterir. Cihaz uyumluluk durumları iki farklı veritabanlarında saklanır: Intune ve Azure Active Directory. 
 
 > [!IMPORTANT]
-> Intune, cihazda tüm uyumluluk değerlendirme için cihaz iade zamanlama izler. [Cihaz iade zamanlama hakkında daha fazla bilgi](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+> Intune, cihazdaki tüm uyumluluk değerlendirmeleri için cihaz iade zamanlamasını kullanır. [Cihaz iade zamanlaması hakkında daha fazla bilgi edinin](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 Farklı cihaz uyumluluk ilkesi durumlarının açıklamaları:
 
@@ -75,7 +75,9 @@ Farklı cihaz uyumluluk ilkesi durumlarının açıklamaları:
 
   - Uyumluluk denetimi için bir tetikleyici yok ve bir uyumluluk ilkesi atanmamış cihazlar
   - Uyumluluk ilkesinin son güncelleştirmesinden sonra İade edilmeyen cihazları
-  - Gücüne özel kullanıcıya ilişkili olmayan cihazlar
+  - Belirli bir kullanıcı gibi ilişkili olmayan cihazlar:
+    - Kullanıcı benzeşimi olmayan Apple'nın cihaz kayıt programı (DEP) aracılığıyla satın alınan iOS cihazları
+    - Android kiosk veya ayrılmış Android kuruluş cihazlarının
   - Cihaz kayıt Yöneticisi (DEM) hesabı ile kayıtlı cihazlar
 
 - **Uyumlu değil:** Cihaz, bir veya daha fazla cihaz uyumluluk İlkesi ayarları uygulamak başarısız oldu. Veya kullanıcı ilkelere uyum sağlamadı.
