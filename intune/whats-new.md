@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0aa6f0e65c8f31a86dba6fd4a31384f61f4002be
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 044ced57d9dd2e3e4b86548540090de35b88a6b0
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044231"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197087"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -48,18 +48,16 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 
 ## <a name="week-of-may-20-2019"></a>20 Mayıs 2019 haftası 
 
-#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot cihaz OrderID öznitelik adı grubu etiketi değiştirildi <!-- 4659453 -->
-
-Daha sezgisel hale **OrderID** için öznitelik adı Autopilot cihazlarda değiştirildi **grubu etiketi**. Autopilot cihaz bilgileri yüklenecek csv kullanırken sütun başlığı değil OrderID grubu etiketi kullanmanız gerekir. Aksi takdirde yükleme başarısız olur. OrderID eski müşteriler veya betikleri uyacak şekilde yeniden sunulan Yakında sunulacak. Ancak, Grup etiketi ilerletme standart olacaktır.
-
-<!-- ########################## -->
-
-## <a name="week-of-may-20-2019"></a>20 Mayıs 2019 haftası 
-
 ### <a name="app-management"></a>Uygulama yönetimi
 
 #### <a name="windows-company-portal-app----3316993---"></a>Windows Şirket Portalı uygulaması <!-- 3316993 -->
 Windows Şirket portalı uygulaması artık etiketlenmiş yeni bir sayfa olacaktır **cihazları**. **Cihazları** sayfası son kullanıcılar tüm kayıtlı cihazları gösterilir. Sürüm 10.3.4291.0 kullandıklarında kullanıcılar bu değişikliği şirket Portalı'nda görür ve sonraki sürümler. Şirket portalı hakkında daha fazla bilgi için bkz: [Microsoft Intune Şirket portalı uygulamasını yapılandırma](company-portal-app.md).
+
+### <a name="device-enrollment"></a>Cihaz kaydı
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot cihaz OrderID öznitelik adı grubu etiketi değiştirildi <!-- 4659453 -->
+
+Daha sezgisel hale **OrderID** için öznitelik adı Autopilot cihazlarda değiştirildi **grubu etiketi**. Autopilot cihaz bilgileri yüklenecek csv kullanırken sütun başlığı değil OrderID grubu etiketi kullanmanız gerekir. Aksi takdirde yükleme başarısız olur. OrderID eski müşteriler veya betikleri uyacak şekilde yeniden sunulan olacaktır. Ancak, Grup etiketi ilerletme standart olacaktır.
 
 ## <a name="week-of-may-13-2019"></a>13 Mayıs 2019 haftası 
 
@@ -445,7 +443,7 @@ Intune konsolunda artık görüntüleme destekler ve Intune Bağlayıcısı ile 
 - Açıklandığı gibi Exchange denetimleri kullanın [istemcileri ve Exchange Online mobil](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
 
 ### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>[Name]'ı kullanarak tam bir cihaz için tüm cihazlar sayfasında arama <!--4254930 -->
-Artık, bir tam cihaz adı için arama yapabilirsiniz. Git **Intune** > **cihazları** > **tüm cihazlar** > cihaz adıyla Ara kutusuna çevreleyen {} aramak için bir tam eşleşme. Örneğin, **{Device12345}**.
+Artık, bir tam cihaz adı için arama yapabilirsiniz. Git **Intune** > **cihazları** > **tüm cihazlar** > cihaz adıyla Ara kutusuna çevreleyen {} aramak için bir tam eşleşme. Örneğin, **{Device12345}** .
 
 ### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
 
