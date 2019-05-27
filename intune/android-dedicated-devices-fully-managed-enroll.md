@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f56e2987fefcc514911f762c5fd82ca1ebc6779c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d81f28b03a41bcdc8b6c9f18ef58e6a42346ba7d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503890"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049974"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları (Önizleme) kaydetme
 
@@ -92,6 +91,6 @@ Google’ın Zero Touch sistemini kullanmak için cihazın bunu destekliyor olma
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
-- [Android uygulamaları dağıtın](apps-deploy.md)
-- [Android yapılandırma ilkeleri ekleme](device-profiles.md)
+- [Android uygulamalarını dağıtma](apps-deploy.md)
+- [Android yapılandırma ilkelerini ekleme](device-profiles.md)
 

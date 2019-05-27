@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499037"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196775"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -31,7 +31,9 @@ macOS cihazınızı Intune Şirket Portalı uygulamasına kaydederek kuruluşunu
 
 Kuruluşlar çoğu zaman cihazınızın özel verilere erişmesi için yönetilmesini gerektirir. Bir cihaz yönetilmeye başladığında kuruluşlar, mobil cihaz yönetimi sağlayıcısı yoluyla cihaza ilke ve uygulama gönderebilir. Cihazınızdan iş veya okul bilgilerine sürekli erişim edinmek için cihazınızı ilke ayarlarına uyum sağlayacak şekilde yapılandırmanız gerekir.  
 
-Bu makale, cihazınızın kuruluş gereksinimlerine uyum sağlaması amacıyla macOS için Intune Şirket Portalı uygulamasının cihazı kaydetmenize, yapılandırmanıza ve cihaz bakımını yapmanıza nasıl yardımcı olduğunu açıklar.
+Bu makale, cihazınızın kuruluş gereksinimlerine uyum sağlaması amacıyla macOS için Intune Şirket Portalı uygulamasının cihazı kaydetmenize, yapılandırmanıza ve cihaz bakımını yapmanıza nasıl yardımcı olduğunu açıklar.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Şirket Portalı uygulamasından bekleyebilecekleriniz
 

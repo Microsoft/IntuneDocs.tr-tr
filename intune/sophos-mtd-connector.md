@@ -8,19 +8,18 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94af7600ddfc5612c666bc38cb871d84c8c4baa5
-ms.sourcegitcommit: b1ad73f5c9fd0ad8026c572aef8d15e258951c8f
+ms.openlocfilehash: 4363bb4feba52c15b8918a7c6ea02fa2917a00de
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64880828"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044952"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Intune ile Sophos Mobile Threat Defense Bağlayıcısı
 Şirket kaynaklarına olan Microsoft Intune ile tümleşik bir Mobile Threat Defense (MTD) çözümü Sophos Mobile tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Sophos Mobile uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
@@ -65,7 +64,7 @@ ADAM-de-adam saldırıları gibi ağınıza yönelik tehditleri algılayın ve c
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar  
 - Android 5.0 ve üzeri
-- iOS 11.0 ve sonraki
+- iOS 11.0 ve üzeri
 
 ## <a name="prerequisites"></a>Önkoşullar  
 - Azure Active Directory Premium

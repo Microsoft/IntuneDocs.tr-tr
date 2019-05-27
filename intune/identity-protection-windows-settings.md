@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/14/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 308a730737612f39863160952409ab92670f9153
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 158840a73784516d13defa04785ca5990a9874cf
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513656"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041821"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Windows iş için Hello ıntune'da etkinleştirmek için Windows 10 cihaz ayarları
 
@@ -69,23 +68,23 @@ Intune'da iş profilleri hakkında daha fazla Windows Hello bilgi edinmek için 
        - **Not configured** (default): A PIN recovery secret is not created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one. The user will need to re-register with any services the old PIN provided access to.  
 
 - **Güvenilir Platform Modülü (TPM) kullan**: TPM yongası ek bir veri güvenliği katmanı sağlar. Aşağıdaki değerlerden birini seçin:  
-  - **Etkinleştirme**: Yalnızca erişilebilir bir TPM’si olan cihazlar İş İçin Windows Hello sağlayabilir.
-  - **Yapılandırılmamış**: Kullanılabilir bir TPM olmadığında bile tüm cihazlar İş İçin Windows Hello sağlayabilir. Cihazlar önce bir TPM kullanmayı dener ancak başaramazsa yazılım şifrelemesi kullanır.  
+  - **Etkinleştir**: Yalnızca erişilebilir bir TPM’si olan cihazlar İş İçin Windows Hello sağlayabilir.
+  - **Yapılandırılmadı**: Kullanılabilir bir TPM olmadığında bile tüm cihazlar İş İçin Windows Hello sağlayabilir. Cihazlar önce bir TPM kullanmayı dener ancak başaramazsa yazılım şifrelemesi kullanır.  
 
 - **Biyometrik kimlik doğrulamasına izin**: İş İçin Windows Hello için bir PIN koduna alternatif olarak yüz tanıma veya parmak izi gibi biyometrik kimlik doğrulamasını etkinleştirir. Biyometrik kimlik doğrulaması başarısız olsa bile kullanıcılar bir iş PIN kodu yapılandırmalıdır. Aşağıdakilerden birini seçin:
 
-  - **Etkinleştirme**: İş İçin Windows Hello biyometrik kimlik doğrulamasına izin verir.
-  - **Yapılandırılmamış** (varsayılan): İş İçin Windows Hello, (tüm hesap türleri için) biyometrik kimlik doğrulamasını engeller.
+  - **Etkinleştir**: İş İçin Windows Hello biyometrik kimlik doğrulamasına izin verir.
+  - **Yapılandırılmadı** (varsayılan): İş İçin Windows Hello, (tüm hesap türleri için) biyometrik kimlik doğrulamasını engeller.
 
 - **Gelişmiş yanıltma, kullanılabilir olduğunda kullanın**: Sahtekarlığına karşı koruma özelliklerinin Windows Hello bunu destekleyen cihazlarda kullanılıp kullanılmadığını seçin. Örneğin, bir yüz yerine gerçek bir resmini algılayın.
 
-  - **Etkinleştirme**: Windows, yüz özellikleri destekleniyorsa bunun için tüm kullanıcıların yanıltmaya karşı koruma kullanmasını gerektirir.  
-  - **Yapılandırılmamış** (varsayılan): Windows, cihazdaki yanıltmaya karşı koruma yapılandırmalarını kabul eder.
+  - **Etkinleştir**: Windows, yüz özellikleri destekleniyorsa bunun için tüm kullanıcıların yanıltmaya karşı koruma kullanmasını gerektirir.  
+  - **Yapılandırılmadı** (varsayılan): Windows, cihazdaki yanıltmaya karşı koruma yapılandırmalarını kabul eder.
 
 - **Şirket içi kaynaklar için sertifika**: 
 
-  - **Etkinleştirme**: İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasına izin verir.
-  - **Yapılandırılmamış** (varsayılan): İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasını önler. Bunun yerine, cihazları varsayılan davranışını kullanın *güven anahtarı şirket içi kimlik doğrulaması*. Daha fazla bilgi için [şirket içi kimlik doğrulaması için kullanıcı sertifikası](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) Windows Hello belgelerinde.  
+  - **Etkinleştir**: İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasına izin verir.
+  - **Yapılandırılmadı** (varsayılan): İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasını önler. Bunun yerine, cihazları varsayılan davranışını kullanın *güven anahtarı şirket içi kimlik doğrulaması*. Daha fazla bilgi için [şirket içi kimlik doğrulaması için kullanıcı sertifikası](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) Windows Hello belgelerinde.  
 ## <a name="next-steps"></a>Sonraki adımlar
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).

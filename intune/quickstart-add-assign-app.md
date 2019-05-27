@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/25/2019
 ms.topic: quickstart
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 024c4eb37d1b9991db6d1ca0b5c528e9dd333422
-ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.openlocfilehash: 17db2227303fe3937156ad6afa610dce48bd1992
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64764798"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041345"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı Başlangıç: Ekleme ve bir istemci uygulama atama
 
@@ -53,7 +52,7 @@ Intune’a bir uygulama eklemek için aşağıdaki adımları kullanın:
 6. **Paket Adı** olarak **Microsoft Office 365 uygulama paketi** yazın.
 7. Girin **Microsoft Office 365 uygulama paketini** olarak **Paket açıklaması**.
 8. **Şirket Portalı’nda bu uygulamayı öne çıkan uygulama olarak görüntüle** ayarını **Evet** olarak belirleyin.
-9. **Tamam**'ı tıklatın.
+9. **Tamam** düğmesine tıklayın.
 
     ![Uygulama bilgileri ekleme ekran görüntüsü](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 

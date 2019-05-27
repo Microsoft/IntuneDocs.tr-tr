@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511498"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044609"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>İlkeler ve Profiller sorun giderme ve ıntune
 
@@ -33,7 +32,7 @@ Bu makalede bazı genel sorun giderme teknikleri listeler ve karşılaşabilece�
 
 ## <a name="use-built-in-troubleshooting"></a>Yerleşik sorun giderme kullanın
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
 2. Seçin **sorun giderme**:
 
     ![Intune, Yardım ve Destek gidin ve sorun giderme seçin](./media/help-and-support-troubleshoot.png)
@@ -99,7 +98,7 @@ Bu makalede bazı genel sorun giderme teknikleri listeler ve karşılaşabilece�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Bir profili doğru şekilde uygulanırsa emin değilseniz
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
 2. Seçin **cihazları** > **tüm cihazlar** > cihazı seçin > **cihaz Yapılandırması**. 
 
     Her cihazda, kendi profilleri listeler. Her profiline sahip bir **durumu**. Tüm donanım ve işletim sistemi kısıtlamaları ve gereksinimleri dahil olmak üzere atanan profillerini birlikte kabul durumu uygulanır. Olası durumlar şunlardır:

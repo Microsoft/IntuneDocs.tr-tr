@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cf06508cc21682a580c09e8207343b09e39eb
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a5064a9065dba75f3594f2e6bb6fb36b42be2e2
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506687"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044972"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Erişim denetimi, hesapları ve paylaşılan bir bilgisayar veya Intune kullanarak birden çok kullanıcı cihazları güç özellikleri
 
@@ -42,12 +41,12 @@ Intune'da profili oluşturduğunuzda, dağıtmak veya profili, kuruluşunuzdaki 
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin > **Intune**’u seçin.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
 3. Aşağıdaki özellikleri girin:
 
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-   - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+   - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
    - **Platform**: Seçin **Windows 10 ve üzeri**.
    - **Profil türü**: Seçin **paylaşılan çok kullanıcılı cihaz**.
 

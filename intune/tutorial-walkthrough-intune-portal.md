@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/28/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c601af8c2b73ac68ec88f45d3684fcfd41f1c87f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61516390"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044978"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Öğretici: Azure portalında Microsoft Intune gözden geçirme
 
@@ -85,7 +84,7 @@ Intune Azure portalında daha iyi anlamak için aşağıdaki adımları izleyin.
 
     ![Cihaz yapılandırma bölmesinin ekran görüntüsü](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve Özellikler "yapılandırma profillerini" eklenir. Farklı cihaz ve iOS, Android ve Windows gibi farklı platformlar için profiller oluşturabilirsiniz. Ardından, Intune profili, kuruluşunuzdaki cihazlara uygulamak için kullanabilirsiniz.   
+    Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve özellikler "yapılandırma profillerine" eklenir. iOS, Android ve Windows dahil olmak üzere farklı cihazlar ve platformlar için profil oluşturabilirsiniz. Ardından, Intune profili, kuruluşunuzdaki cihazlara uygulamak için kullanabilirsiniz.   
 
     Cihaz yapılandırması hakkında daha fazla bilgi için bkz: [Intune cihaz profillerini kullanarak cihazlarınızda özellikleri ayarları uygulamak](device-profiles.md).
 

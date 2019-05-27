@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cf384bfcc0782226e363a6527ea47c4140f7faa
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499813"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197044"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Microsoft Intune uygulama ile Kurumsal Cihazınızı kaydetme
 
@@ -35,8 +35,6 @@ Kaydetmek için dört yolu vardır. Kuruluşunuz hangi seçeneğin kullanılaca�
 * Belirteç  
 * QR kodu   
 * Google sıfır dokunma  
-
-Kayıt başlamadan önce haberdar olduğunuzdan emin olun hangi seçeneğin uygun adımları izleyebilmeniz kullanmanız gerekir.  
 
 ## <a name="enroll-device"></a>Cihaz kaydetme 
 Ayarlama ve Cihazınızı kaydetmek için aşağıdaki adımları tamamlayın.  

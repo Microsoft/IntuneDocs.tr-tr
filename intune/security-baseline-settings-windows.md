@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733054"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045046"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Intune için Windows Güvenlik temel ayarları  
 
@@ -293,7 +292,7 @@ Daha fazla bilgi için [ilke CSP'si - DeviceLock](https://docs.microsoft.com/win
 - **Gün olarak parola en düşük yaş**  
   En az parola geçerlilik süresi ilke ayarı bir parola olmalıdır süre (gün cinsinden) belirler. kullanıcı değiştirmeden önce kullanıldı. 1 ile 998 gün arasında bir değer ayarlayabilirsiniz veya gün sayısı 0 olarak ayarlayarak, hemen bir parola değişikliklerini verebilirsiniz. En fazla parola geçerlilik süresi, parolaların süresiz belirten, 0 olarak ayarlanmadığı sürece, en az parola geçerlilik süresi en fazla parola geçerlilik süresi değerinden küçük olması gerekir. En fazla parola geçerlilik süresi 0 olarak ayarlarsanız, en az parola geçerlilik süresi 0 ile 998 arasında herhangi bir değere ayarlanabilir.
   
-    **Varsayılan**: 1  
+    **Varsayılan**: 1.  
 
 ## <a name="event-log-service"></a>Olay Günlüğü hizmeti  
 Daha fazla bilgi için [ilke CSP'si - EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) Windows belgelerinde.  
@@ -1042,7 +1041,7 @@ Daha fazla bilgi için [ilke CSP'si - LocalPoliciesSecurityOptions](https://docs
   
 - **Yönetici Onay Modu'ndaki yöneticiler için gerektirir**  
   Bu ilke ayarı, bilgisayarın tüm kullanıcı hesabı denetimi (UAC) ilke ayarlarını davranışını denetler. Bu ilke ayarı değiştirirseniz, bilgisayarınızı yeniden başlatmanız gerekir. Seçenekler şunlardır:   
-  - *Yapılandırılmamış*: Yönetici Onay Modu ve ilgili tüm UAC ilke ayarlarını devre dışı bırakıldı. Not: Bu ilke ayarı devre dışıysa, Güvenlik Merkezi, işletim sistemi güvenliğinin bir bütün düşürüldü bildirir. 
+  - *Yapılandırılmadı*: Yönetici Onay Modu ve ilgili tüm UAC ilke ayarlarını devre dışı bırakıldı. Not: Bu ilke ayarı devre dışıysa, Güvenlik Merkezi, işletim sistemi güvenliğinin bir bütün düşürüldü bildirir. 
   - *Evet*: Yönetici onay modu etkin. Bu ilke etkinleştirilmiş olması ve ilgili UAC ilke ayarları, yerleşik yönetici hesabı ve Yönetici Onay Modu'nda Çalıştır için Administrators grubunun üyesi olan diğer tüm kullanıcılara izin vermek için uygun şekilde ayarlanmalıdır.  
   
   **Varsayılan**: Evet
@@ -1050,7 +1049,7 @@ Daha fazla bilgi için [ilke CSP'si - LocalPoliciesSecurityOptions](https://docs
 - **SAM hesaplarının anonim numaralandırmasına engelle**  
   Bu güvenlik ayarı, anonim bağlantılara bilgisayara verilen ek hangi izinleri belirler. Windows, anonim kullanıcıların etki alanı hesapları ve ağ paylaşımlara adları listelendirmek gibi etkinlikleri gerçekleştirmesine olanak tanır. Örneğin, yönetici kullanıcılara karşılıklı güven saklamaz güvenilen bir etki alanında erişim istediğinde bu kullanışlı hale. Bu güvenlik seçeneği ek sınırlamalar anonim bağlantılara gibi yerleştirilmesine olanak sağlar: 
   - *Evet*: Numaralandırma SAM hesaplarının izin vermez. Bu seçenek, herkes kaynaklar için güvenlik izinleri kimliği doğrulanmış kullanıcılar ile değiştirir.
-  - *Yapılandırılmamış*: Ek kısıtlama yoktur. Varsayılan izinlerini kullanır.  
+  - *Yapılandırılmadı*: Ek kısıtlama yoktur. Varsayılan izinlerini kullanır.  
   
   **Varsayılan**: Evet
   
@@ -1076,7 +1075,7 @@ Daha fazla bilgi için [ilke CSP'si - LocalPoliciesSecurityOptions](https://docs
 - **Uygulama yüklemelerini Algıla ve yükseltme isteminde bulun**  
   Bu ilke ayarı, bilgisayarın uygulama yükleme algılama davranışını denetler. Seçenekler şunlardır: 
   - *Etkin*: Ayrıcalık gerektiren bir uygulama yükleme paketi tespit edildiğinde, kullanıcı bir yönetici kullanıcı adı ve parola girmesi istenir. Geçerli kimlik bilgileri kullanıcının girdiği işlemi ayrıcalık ile devam eder. 
-  - *Devre dışı bırakılmış*: Uygulama yükleme paketleri değil ve yükseltme istenir. Standart kullanıcı Masaüstü çalıştıran ve kullanmak kuruluşların Grup İlkesi Yazılım Yükleme gibi yükleme teknolojileri temsilci veya Systems Management Server (SMS) Bu ilke ayarını devre dışı bırakmanız gerekir. Bu durumda, yükleyici algılama gerekli değildir.  
+  - *Devre dışı*: Uygulama yükleme paketleri değil ve yükseltme istenir. Standart kullanıcı Masaüstü çalıştıran ve kullanmak kuruluşların Grup İlkesi Yazılım Yükleme gibi yükleme teknolojileri temsilci veya Systems Management Server (SMS) Bu ilke ayarını devre dışı bırakmanız gerekir. Bu durumda, yükleyici algılama gerekli değildir.  
   
   **Varsayılan**: Evet
   

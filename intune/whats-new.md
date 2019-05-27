@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
-ms.translationtype: MT
+ms.openlocfilehash: 0aa6f0e65c8f31a86dba6fd4a31384f61f4002be
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975813"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044231"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -45,8 +44,22 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 
 -->  
 
+<!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>20 Mayıs 2019 haftası 
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot cihaz OrderID öznitelik adı grubu etiketi değiştirildi <!-- 4659453 -->
+
+Daha sezgisel hale **OrderID** için öznitelik adı Autopilot cihazlarda değiştirildi **grubu etiketi**. Autopilot cihaz bilgileri yüklenecek csv kullanırken sütun başlığı değil OrderID grubu etiketi kullanmanız gerekir. Aksi takdirde yükleme başarısız olur. OrderID eski müşteriler veya betikleri uyacak şekilde yeniden sunulan Yakında sunulacak. Ancak, Grup etiketi ilerletme standart olacaktır.
 
 <!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>20 Mayıs 2019 haftası 
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="windows-company-portal-app----3316993---"></a>Windows Şirket Portalı uygulaması <!-- 3316993 -->
+Windows Şirket portalı uygulaması artık etiketlenmiş yeni bir sayfa olacaktır **cihazları**. **Cihazları** sayfası son kullanıcılar tüm kayıtlı cihazları gösterilir. Sürüm 10.3.4291.0 kullandıklarında kullanıcılar bu değişikliği şirket Portalı'nda görür ve sonraki sürümler. Şirket portalı hakkında daha fazla bilgi için bkz: [Microsoft Intune Şirket portalı uygulamasını yapılandırma](company-portal-app.md).
 
 ## <a name="week-of-may-13-2019"></a>13 Mayıs 2019 haftası 
 
@@ -64,7 +77,7 @@ Kurulum Yardımcısı ile Apple'nın Kurumsal cihaz kayıt yöntemleri biri arac
 
 Kullanıcıların uygulama Mağazası'ndan Şirket portalı uygulamasını yüklediğinizde ve onun üzerinden bu cihazları kaydetmek deneyin, bunlar bir hatayla karşılaşırsınız. Bu, otomatik olarak, kayıt sırasında Intune tarafından gönderildiğinde yalnızca Şirket portalı kullanmak için bu cihazları beklenen. Azure portalında ıntune'da kayıt profilleri, cihazların kimliklerini nasıl doğrulayacaklarını belirtebilirsiniz ve Şirket portalı uygulaması'na alırsanız güncelleştirilecektir. DEP cihaz kullanıcılarınız Şirket portalı olmasını istiyorsanız, tercihlerinizi bir kayıt profili belirtmeniz gerekir. 
 
-Ayrıca, **Cihazınızı tanımlamanız** iOS Şirket portalı ekranında kaldırılıyor. Bu nedenle, koşullu erişimi etkinleştirmek ya da şirket uygulamalarını dağıtmak isteyen yöneticiler DEP kayıt profiliniz güncelleştirmeniz gerekir. Bu gereksinim, DEP kaydı, Kurulum Yardımcısı ile doğrulanırsa yalnızca geçerlidir. Bu durumda, Şirket portalı cihaza göndermeniz gerekir. Bunu yapmak için **Intune** > **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** > bir belirteç seçin > **profilleri** > bir profili seçin > **özellikleri** > ayarlamak **şirket portalını Yükle** için**True**.
+Ayrıca, **Cihazınızı tanımlamanız** iOS Şirket portalı ekranında kaldırılıyor. Bu nedenle, koşullu erişimi etkinleştirmek ya da şirket uygulamalarını dağıtmak isteyen yöneticiler DEP kayıt profiliniz güncelleştirmeniz gerekir. Bu gereksinim, DEP kaydı, Kurulum Yardımcısı ile doğrulanırsa yalnızca geçerlidir. Bu durumda, Şirket portalı cihaza göndermeniz gerekir. Bunu yapmak için **Intune** > **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** > bir belirteç seçin > **profilleri** > bir profili seçin > **özellikleri** > ayarlamak **şirket portalını Yükle** için**Evet**.
 
 Zaten kayıtlı DEP cihazlarda şirket Portalı'nı yüklemek için Intune'a gitmeniz gerekir > istemci uygulamaları ve uygulama yapılandırma ilkeleriyle yönetilen bir uygulama olarak gönderin. 
 

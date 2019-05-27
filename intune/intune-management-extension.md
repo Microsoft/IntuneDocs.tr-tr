@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 05/14/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b7ea047daca5dad327b431986840a59074614d1
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: ebc3de4f0fb3b497c1786f8d089b565a688cd08d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732628"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047221"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Windows 10 cihazlarda ıntune'da PowerShell betiklerini kullanın
 
@@ -50,7 +49,7 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 
 ## <a name="create-a-script-policy"></a>Bir betik ilkesi oluşturma 
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
 2. **Cihaz yapılandırması** > **PowerShell betikleri** > **Ekle**'yi seçin.
 3. Aşağıdaki özellikleri girin:
     - **Ad**: PowerShell komut dosyası için bir ad girin. 

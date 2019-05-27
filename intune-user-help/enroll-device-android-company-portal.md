@@ -18,18 +18,20 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e9120110b1840d1f5075549737722328ef2551f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 736b1d891207a19f281aa1127975de1a55889e8b
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61498424"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197024"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Cihazınızı Şirket portalı ile kaydetme  
 Şirket e-posta, uygulamalar ve veriler güvenli erişim elde etmek için kişisel veya şirkete ait Android Cihazınızı kaydetme. Şirket portalı Android cihazlarında Samsung Knox dahil olmak üzere Android 4.4 ve üzeri çalıştıran destekler.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/k0Q_sGLSx6o?rel=0]
 
 > [!NOTE]
-> Samsung Knox, bazı Samsung cihazlarının yerel Android tarafından sağlanan korumanın dışında ek koruma için kullandığı bir güvenlik türüdür. Bir Samsung Knox cihazınız olup olmadığını denetlemek için > Git **ayarları** > **cihaz hakkında**. Görmüyorsanız **Knox sürümü** listelenip, yerel bir Android cihazına sahipsinizdir.    
+> Samsung Knox, bazı Samsung cihazlarının yerel Android tarafından sağlanan korumanın dışında ek koruma için kullandığı bir güvenlik türüdür. Bir Samsung Knox cihazınız olup olmadığını denetlemek için > Git **ayarları** > **cihaz hakkında**. Görmüyorsanız **Knox sürümü** listelenip, yerel bir Android cihazına sahipsinizdir.
 
 ## <a name="enroll-device"></a>Cihaz kaydetme  
 Emin olun [ücretsiz Intune Şirket portalı uygulamasını Google Play'den yükleyin](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). 

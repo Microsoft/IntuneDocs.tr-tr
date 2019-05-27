@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/12/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 45d91766b3bbdcdd3528afd80d74a56a94e88a2c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510206"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042629"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune Delivery optimization ayarları
 
@@ -37,14 +36,14 @@ Windows 10 teslim iyileştirme hakkında bilgi edinmek için bkz. [teslim iyile�
 > **Yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları** değiştirilir **teslim iyileştirme** ayarları. Kullanmak için var olan güncelleştirme halkaları değiştirilebilir **teslim iyileştirme** ayarları. [Var olan güncelleştirme halkaları için teslim iyileştirme taşıma](#move-existing-update-rings-to-delivery-optimization) (Bu makaledeki) 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin > **Intune**’u seçin.
 
 2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
 
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
     - **Platform**: Platformu seçin:  
 
         - **Windows 10 ve üzeri**
@@ -52,7 +51,7 @@ Windows 10 teslim iyileştirme hakkında bilgi edinmek için bkz. [teslim iyile�
     - **Profil türü**: Seçin **teslim iyileştirme**.
     - **Ayarları**: Güncelleştirmeleri ve uygulamaları indirmek için istediğiniz tanımlayan ayarlarını yapılandırın. Kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. [Delivery optimization ayarları ıntune](delivery-optimization-settings.md).
 
-4. İşiniz bittiğinde seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin.
+4. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Tamam** > **Oluştur**'u seçin.
 
 Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](device-profile-assign.md) ardından [atamanın durumunu izlemenize](device-profile-monitor.md).
 
@@ -66,7 +65,7 @@ Profil oluşturulur ve listede görüntülenir. Ardından, [profili atama](devic
     2. Aşağıdaki özellikleri girin:
 
         - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-        - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+        - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
         - **Platform**: Seçin **Windows 10 ve üzeri**.
         - **Profil türü**: Seçin **teslim iyileştirme**.
         - **Ayarları**: İçin **teslim iyileştirme indirme modu**, cihazlarınıza uygulama ayarlarını değiştirmek istediğiniz sürece varolan yazılım güncelleştirme kademesi tarafından kullanılan aynı modunu seçin. Seçenekleriniz şunlardır:

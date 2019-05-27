@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514047"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047027"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows Holographic for Business cihaz ayarlarını ıntune'da bilgi noktası olarak çalıştırmak
 
@@ -44,7 +43,7 @@ Tekli uygulama bilgi noktası modunu seçtiğinizde aşağıdaki ayarları girin
 
 - **Uygulama türü**: Seçin **app Store**.
 
-- **Bilgi noktası modunda çalıştırmak için uygulama**: Seçin **bir mağaza uygulaması ekleme**ve listeden bir uygulama seçin.
+- **Bilgi noktası modunda çalıştırılacak uygulama**: Seçin **bir mağaza uygulaması ekleme**ve listeden bir uygulama seçin.
 
     Listede hiç uygulama yok mu? [İstemci Uygulamaları](apps-add.md)’ndaki adımları kullanarak birkaç uygulama ekleyin.
 

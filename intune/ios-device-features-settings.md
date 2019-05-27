@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/23/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bcd3a5d0b9f7abc1aa2e0b4d96c30c956b6b4c7
-ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.openlocfilehash: b31c7778ea167b98468a0a9ad9e37047c30ce201
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64764886"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047175"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS cihaz ayarlarını Intune'da genel iOS özellikleri kullanma
 
@@ -77,7 +76,7 @@ En fazla ekleyebilirsiniz **altı** ve cihaz dock'için (uygulama ve klasörleri
   - **Uygulama**: Uygulamalar ekranında dock eklemek için bu seçeneği belirleyin. Girin:
 
     - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-    - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
+    - **Uygulama Paketi Kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
 
     Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
@@ -90,7 +89,7 @@ En fazla ekleyebilirsiniz **altı** ve cihaz dock'için (uygulama ve klasörleri
 
       - **Sayfa adı**: Sayfa için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
       - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-      - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
+      - **Uygulama Paketi Kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
 
       En fazla ekleyebilirsiniz **20** sayfaları için cihaz dock.
 
@@ -131,7 +130,7 @@ En fazla ekleyebilirsiniz **40** bir cihazda sayfaları.
       - **Uygulama**: Uygulamalar ekranında bir sayfa eklemek için bu seçeneği belirleyin. Şunları da girin:
 
         - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-        - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
+        - **Uygulama Paketi Kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
 
       Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
@@ -144,7 +143,7 @@ En fazla ekleyebilirsiniz **40** bir cihazda sayfaları.
 
           - **Sayfa adı**: Sayfa için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
           - **Uygulama adı**: Uygulama için bir ad girin. Bu ad, Azure portalında başvuru amacıyla kullanılır. Bunu *değil* iOS cihazında gösterilen.
-          - **Uygulama paketi kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
+          - **Uygulama Paketi Kimliği**: Uygulamanın paket Kimliğini girin. Bkz: [yerleşik iOS uygulamaları için paket kimliklerini](bundle-ids-built-in-ios-apps.md) ilgili bazı örnekler.
 
       Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
@@ -288,7 +287,7 @@ Denetimli iOS cihazlarınıza özel bir .png, .jpg veya .jpeg görüntüsü ekle
 Mevcut bir görüntüyü cihazlarla görüntü ile bir profili atandığında beklenmeyen davranışlarla karşılaşabilirsiniz. Örneğin, bir görüntü olmadan bir profil oluşturun. Bu profil bir görüntüsüne zaten sahip cihazlara atanır. Bu senaryoda, cihaz varsayılan görüntü değişebilir veya özgün resmin cihazda haberdar olun. Bu davranış denetlenen ve Apple'nın MDM platformu tarafından sınırlı.
 
 - **Görüntü konumu duvar kağıdı**: Cihazdaki resim göstermek için bir konum seçin. Seçenekleriniz şunlardır:
-  - **Yapılandırılmamış**: Özel bir görüntü cihaza eklenmez. Cihaz işletim sistemi varsayılan kullanır.
+  - **Yapılandırılmadı**: Özel bir görüntü cihaza eklenmez. Cihaz işletim sistemi varsayılan kullanır.
   - **Kilit ekranında**: Görüntü Kilit ekranına ekler.
   - **Giriş ekranı**: Görüntü giriş ekranına ekler.
   - **Kilit ekranı ve giriş ekranındaki**: Kilit ekranı ve giriş ekranı görüntünün aynısını kullanır.

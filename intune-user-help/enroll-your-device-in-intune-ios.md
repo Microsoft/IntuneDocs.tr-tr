@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/05/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0c7ac239a67a51ba7165771206883f3c46f5f55
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61498186"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196870"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Şirket kaynaklarınıza iOS cihaz erişimi ayarlayın  
 
@@ -31,7 +31,9 @@ iOS cihazınızı Intune Şirket Portalı uygulamasına kaydederek kuruluşunuzu
 
 Cihazınız kaydedildikten sonra bu duruma *yönetilen*. Kuruluşunuz, ilkeler ve uygulamalar, Intune gibi bir mobil cihaz Yönetimi (MDM) sağlayıcısı aracılığıyla cihaza atayabilirsiniz.  
 
-İş veya Okul cihazınızdan bilgi erişimi korumak için cihazınızın, kuruluşunuzun tercih edilen ayarlarınızla eşleşecek şekilde yapılandırmanız gerekir. Bu makalede, cihaz, kaydetmek için Şirket portalı kullanmak ve kuruluşunuzun gereksinimlerine açıklar. 
+İş veya Okul cihazınızdan bilgi erişimi korumak için cihazınızın, kuruluşunuzun tercih edilen ayarlarınızla eşleşecek şekilde yapılandırmanız gerekir. Bu makalede, cihaz, kaydetmek için Şirket portalı kullanmak ve kuruluşunuzun gereksinimlerine açıklar.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c?rel=0]
 
 > [!NOTE]
 > Mail uygulamasında şirket e-postasına erişmeyi denediğinizde cihazınızı yönettirmeniz istendiyse, doğru yere geldiniz. iOS cihazınızda e-posta ve diğer şirket kaynaklarına erişmek için aşağıdaki yönergeleri izleyin.  
@@ -39,7 +41,7 @@ Cihazınız kaydedildikten sonra bu duruma *yönetilen*. Kuruluşunuz, ilkeler v
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Şirket Portalı uygulamasından bekleyebilecekleriniz  
 
 ### <a name="security"></a>Güvenlik  
-İlk kurulum sırasında uygulama, kuruluşunuzda kimlik doğrulamanızı gerektirir. Daha sonra güncelleştirmeniz gereken bazı cihaz ayarları varsa bunları size gösterir. Örneğin kuruluşlar genellikle uymanız gereken en düşük veya en yüksek karakterli parola gereksinimleri ayarlar.     
+İlk kurulum sırasında uygulama, kuruluşunuzda kimlik doğrulamanızı gerektirir. Daha sonra güncelleştirmeniz gereken bazı cihaz ayarları varsa bunları size gösterir. Örneğin kuruluşlar genellikle uymanız gereken en düşük veya en yüksek karakterli parola gereksinimleri ayarlar.
 
 ### <a name="protection"></a>Protection  
 Cihazınız kaydolduktan sonra Şirket Portalı uygulaması, cihazın koruma altında kalmasını sağlar. Örneğin güvenilmeyen bir kaynaktan uygulama yüklerseniz uygulama sizi uyarır, hatta bazen şirket verilerine erişiminizi iptal edebilir. Bu tür bir ilke, kuruluşlarda yaygın bir durumdur ve genellikle erişebilmek önce güvenilmeyen uygulamayı kaldırma gerektirir.  
@@ -118,6 +120,9 @@ Kayıt sırasında birkaç dakika duraklatma kapatın veya Kurulumu sonlandırma
 
 > [!Note]
 > Kuruluşunuz, ses ve veri sınırları izler veya şirkete bir cihazla sağlar, tamamlanması için birkaç adım daha olabilir. Yüklemek için istenirse **Datalert** uygulaması, bakın [Cihazınızı telekomünikasyon gider yönetimine kaydetme](enroll-your-device-with-telecom-expense-management-ios.md). Kuruluşunuzun Apple aygıt kayıt programı bir parçası olup olmadığını öğrenmek [şirkete Cihazınızı kaydetmek nasıl](enroll-your-device-dep-ios.md).  
+
+## <a name="it-administrator-support"></a>BT yöneticisi desteği  
+Bir BT yöneticisi olduğunuzu ve cihazlarını kaydederken sorunları Çalıştır bkz [Intune iOS cihaz kaydı sorunlarını giderme](https://support.microsoft.com/en-us/help/4039809). Yaygın hatalar, nedenleri ve adımları bunları gidermek için bu makalede listelenmektedir.  
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 İşte veya okulda yardımcı olacak uygulamalar bulun. Bilgi [nasıl uygulamaları kullanılabilir](use-managed-apps-on-your-device-ios.md) size Şirket portalı üzerinden.  

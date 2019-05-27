@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/06/2018
 ms.article: article
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.topic: reference
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee2084cd7b5ba2d51311b675c3f31c41cc83fc4f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8512f8270e7f219814aa5e3919f72b95de93cbcf
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490068"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048462"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune’da Windows Holographic for Business cihazlar için özel ayarlar kullanma
 
@@ -42,7 +41,7 @@ Bu makale, Windows Holographic for Business cihazlar için özel profil oluştur
 3. Aşağıdaki ayarları girin:
 
     - **Ad**: Profil için bir ad girmeniz `hololens custom profile`.
-    - **Açıklama**: Profil için bir açıklama girin.
+    - **Açıklama**: Profil için açıklama girin.
     - **Platform**: Seçin **Windows 10 ve üzeri**.
     - **Profil türü**: Seçin **özel**.
 

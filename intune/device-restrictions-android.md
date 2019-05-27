@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505769"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042462"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Android ve Samsung Knox Standard cihaz kısıtlama ayarları listelerinde Intune
 
@@ -32,7 +31,7 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 
 ## <a name="general"></a>Genel
 
-- **Kamera**: Seçin **blok** kameraya erişimi engellemek için. **Yapılandırılmamış** cihazın kamerasını erişmesini sağlar.
+- **Kamera**: Seçin **blok** kameraya erişimi engellemek için. **Yapılandırılmadı** ayarı cihazın kamerasına erişim sağlar.
 - **Kopyalama ve yapıştırma (yalnızca Samsung Knox)**: Seçin **blok** Kopyala ve Yapıştır önlemek için. **Yapılandırılmamış** cihazda kopyalama ve yapıştırma işlevlerine izin verir.
 - **(Yalnızca Samsung Knox) uygulamalar arasında pano paylaşımı**: Seçin **blok** Kopyala ve Yapıştır uygulamalar arasında Pano kullanılmasını önlemek için. **Yapılandırılmamış** uygulamalar arasında kopyalama ve yapıştırma için panonun kullanımına izin verir.
 - **Tanılama verisi gönderme (yalnızca Samsung Knox)**: Seçin **blok** kullanıcının CİHAZDAN Tanılama verileri göndermesini durdurmak için. **Yapılandırılmamış** verileri göndermesine imkan tanır.
@@ -47,25 +46,25 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 
 ## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
-- **Parola**: **Gerekli** son kullanıcının cihaza erişmek için bir parola girin. **Yapılandırılmamış** kullanıcıları parola girmeye gerek kalmadan cihazınıza erişim hakkı verir.
+- **Parola**: **Gerekli** ayarı son kullanıcının cihaza erişmek için parola girmesini zorunlu tutar. **Yapılandırılmadı** ayarı kullanıcıların parola girmeden cihaza erişmelerine izin verir.
 
     > [!NOTE]
     > Samsung Knox cihazlar, MDM kaydı sırasında otomatik olarak 4 basamaklı bir PIN gerektirir. Yerel Android cihazlar, koşullu erişimle uyumlu olmak için otomatik olarak bir PIN gerektirebilir.
 
 - **Minimum parola uzunluğu**: (4 ile 16 karakter arasında) bir kullanıcının girmesi parola alt sınırını girin.
-- **Ekran kilitlenmeden işlem yapılmayan dakika**: Ekran kilitlenmeden kadar cihazda izin verilen işlem yapılmayan dakika sayısı girin. Bir cihazda, son kullanıcı profilde yapılandırılmış olan süreden daha büyük bir değer ayarlayamaz. Son kullanıcı daha düşük bir süre değeri ayarlayabilir. Örneğin, profilde 15 dakika ayarlandıysa, son kullanıcı değer olarak 5 dakika ayarlayabilir. Son kullanıcı değer olarak 30 dakika ayarlayamaz. 
+- **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Ekran otomatik olarak kilitlenmeden önce izin verilecek işlem yapılmayan en fazla dakika sayısını girin. Bir cihazda, son kullanıcı profilde yapılandırılmış olan süreden daha büyük bir değer ayarlayamaz. Son kullanıcı daha düşük bir süre değeri ayarlayabilir. Örneğin, profilde 15 dakika ayarlandıysa, son kullanıcı değer olarak 5 dakika ayarlayabilir. Son kullanıcı değer olarak 30 dakika ayarlayamaz. 
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Cihaz temizlenmeden önce izin vermek için oturum açma hatalarının sayısı girin.
-- **Parola süresinin sonu (gün)**: Cihaz parolasının değiştirilmesi gerekmeden önce geçen gün sayısını girin.
+- **Parola zaman aşımı (gün sayısı)**: Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını girin.
 - **Gerekli parola türü**: Girmeniz gereken parola karmaşıklık düzeyini ve biyometrik cihaz kullanılıp kullanılamayacağı. Seçenekleriniz şunlardır:
   - **Cihaz varsayılanı**
   - **Düşük güvenlik biyometriği**
   - **En az sayısal**
-  - **Sayısal karmaşık**: Yinelenen veya "1111" veya "1234" gibi ardışık sayılar izin verilmez. <sup>1</sup>
+  - **Sayısal karmaşıklık**: Yinelenen veya "1111" veya "1234" gibi ardışık sayılar izin verilmez. <sup>1</sup>
   - **En az alfabetik**
   - **En az alfasayısal**
   - **En az simgeler ile alfasayısal**
-- **Önceki parolaların yeniden kullanılmasını engelle**: Son kullanıcının önceden kullanmış bir parolayı oluşturmasını durdurur.
-- **Parmak iziyle kilit açma (yalnızca Samsung Knox)**: Seçin **blok** cihazın kilidini açmak için parmak izi'ni kullanarak önlemek için. **Yapılandırılmamış** parmak izi kullanarak cihaz kilidini açmak kullanıcının sağlar.
+- **Önceki parolaların yeniden kullanılmasını engelleme**: Son kullanıcının önceden kullanmış bir parolayı oluşturmasını durdurur.
+- **Parmak iziyle kilit açma (yalnızca Samsung Knox)**: Cihaz kilidinin parmak izi kullanılarak açılmasını önlemek için **Engelle**'yi seçin. **Yapılandırılmamış** parmak izi kullanarak cihaz kilidini açmak kullanıcının sağlar.
 - **Akıllı kilit ve diğer güven aracıları**: Seçin **blok** akıllı kilit veya diğer güven aracılarının kilit ekranı ayarları (Samsung KNOX Standard 5.0 +) ayarlamasını engellemek için. Bazı durumlarda bir güven aracısı olarak da bilinen bu telefon özelliği devre dışı bırakın veya cihaz güvenilir bir konumda, cihazın kilitleme ekranı parolasını atlamanıza izin verir. Örneğin, bu özellik, cihaz belirli bir Bluetooth cihazına bağlı olduğunda ya da bir NFC etiketinin yakınında olduğunda kullanılabilir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.
 - **Şifreleme**: Seçin **gerektiren** böylece cihazdaki dosyaların şifrelenir. Tüm cihazlar şifrelemeyi destekler. Ayrıca bu özelliği kullanmak için: 
   1. Ayarlama **parola** için **gerektiren**.
@@ -90,13 +89,13 @@ Ayarlarsanız **gerekli parola türü** için **sayısal karmaşık**, aşağıd
 
 İzin vermek veya cihazın belirli uygulamaları engellemek için bu ayarları kullanın. Bu özellik, Android ve Samsung Knox Standard cihazlarda desteklenir:
 
-- **Yasak uygulamalar**: Cihazda yüklü istemediğiniz Intune tarafından yönetilmeyen uygulamaların listesi. Bir kullanıcı bu listeden bir uygulama yüklerse, Intune tarafından bildirim alırsınız.
-- **Onaylı uygulamalar**: Kullanıcıların yüklemesine izin verilen uygulamaların bir listesi. Uyumlu kalmak için kullanıcılar diğer uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.
+- **Yasak uygulamalar**: Intune tarafından yönetilmeyen ve cihazda bulunmasını istemediğiniz uygulamaların listesi. Kullanıcı bu listedeki bir uygulamayı yüklerse, Intune bunu size bildirir.
+- **Onaylı uygulamalar**: Kullanıcıların yüklemesine izin verilen uygulamaların listesi. Uyumluluğun korunması için kullanıcılar diğer uygulamaları yüklememelidir. Intune tarafından yönetilen uygulamalara otomatik olarak izin verilir.
 
 Bu listeler için uygulama eklemek için şunları yapabilirsiniz:
 
-- **Ekleme** istediğiniz uygulamanın Google Play Store URL'sini. Örneğin, Android için Microsoft Uzak Masaüstü uygulamasını eklemek için girin `https://play.google.com/store/apps/details?id=com.microsoft.rdc.android`. Bir uygulamanın URL'sini bulmak için açın [Google Play Store'da](https://play.google.com/store/apps)ve uygulamayı arayın. Örneğin, arama `Microsoft Remote Desktop Play Store` veya `Microsoft Planner`. Uygulamayı seçin ve URL'yi kopyalayın.
-- URL'si dahil olmak üzere uygulama ayrıntılarını içeren bir CSV dosyasını içeri aktarın. Kullanım <*uygulama URL'si*>, <*uygulama adı*>, <*Uygulama Yayımcısı*> biçimi. Veya, **dışarı** aynı biçimdeki kısıtlı uygulama listesi içeren mevcut bir listesi.
+- **Ekleme** istediğiniz uygulamanın Google Play Store URL'sini. Örneğin, Android için Microsoft Uzak Masaüstü uygulamasını eklemek için girin `https://play.google.com/store/apps/details?id=com.microsoft.rdc.android`. Bir uygulamanın URL'sini bulmak için açın [Google Play Store'da](https://play.google.com/store/apps)ve uygulamayı arayın. Örneğin `Microsoft Remote Desktop Play Store` veya `Microsoft Planner` için arama yapın. Uygulamayı seçin ve URL'sini kopyalayın.
+- URL'si de dahil olmak üzere uygulamayla ilgili ayrıntıların bulunduğu bir CSV dosyasını içeri aktarın. Kullanım <*uygulama URL'si*>, <*uygulama adı*>, <*Uygulama Yayımcısı*> biçimi. Veya, **dışarı** aynı biçimdeki kısıtlı uygulama listesi içeren mevcut bir listesi.
 
 > [!IMPORTANT]
 > Kısıtlı uygulama ayarlarını kullanan cihaz profilleri kullanıcı gruplarına atanmalıdır.
@@ -109,7 +108,7 @@ Bu listeler için uygulama eklemek için şunları yapabilirsiniz:
   - İzin Ver
   - Tüm tanımlama bilgilerini engelle
   - Ziyaret edilen web sitelerinin tanımlama bilgilerine izin ver
-  - Geçerli web sitesinden tanımlama bilgilerine izin ver
+  - Geçerli web sitesinin tanımlama bilgilerine izin ver
 - **JavaScript (yalnızca Samsung Knox)**: Seçin **blok** web tarayıcısının Java betiklerini çalışmasını engelleyin. **Yapılandırılmamış** cihazın web tarayıcısının Java betiklerini çalıştırmasına izin verir.
 - **Açılır pencereler (yalnızca Samsung Knox)**: Seçin **blok** web tarayıcısında açılır pencereleri önlemek için. **Yapılandırılmamış** web tarayıcısında açılır pencerelere izin verir.
 
@@ -138,10 +137,10 @@ Her ayar için uygulamaların bir listesini ekleyin. Seçenekleriniz şunlardır
 
 ## <a name="cellular-and-connectivity"></a>Hücresel ve Bağlantı
 
-- **Veri dolaşımı (yalnızca Samsung Knox)**: Seçin **blok** hücresel ağ üzerinde veri dolaşımını önlemek için. **Yapılandırılmamış** cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
+- **Veri dolaşımı (yalnızca Samsung Knox)**: Cep telefonu şebekesi üzerinden veri dolaşımını önlemek için **Engelle**'yi seçin. **Yapılandırılmamış** cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
 - **SMS/MMS mesajları (yalnızca Samsung Knox)**: Seçin **blok** cihaza Mesajlaşma metin önlemek için. **Yapılandırılmamış** SMS ve MMS mesajlaşması cihazda kullanımına izin verir.
-- **Sesli arama (yalnızca Samsung Knox)**: Seçin **blok** kullanıcıların cihazda sesli arama özelliğini kullanmasını önlemek için. **Yapılandırılmamış** cihazda sesle sağlar.
-- **Ses dolaşımı (yalnızca Samsung Knox)**: Seçin **blok** ses telefonu şebekesinde dolaşımı önlemek için. **Yapılandırılmamış** ses cihaz hücresel ağ kullanırken dolaşımına izin verir.
+- **Sesli arama (yalnızca Samsung Knox)**: Kullanıcıların cihazda sesli arama özelliğini kullanmasını önlemek için **Engelle**'yi seçin. **Yapılandırılmamış** cihazda sesle sağlar.
+- **Ses dolaşımı (yalnızca Samsung Knox)**: Cep telefonu şebekesi üzerinden ses dolaşımını önlemek için **Engelle**'yi seçin. **Yapılandırılmamış** ses cihaz hücresel ağ kullanırken dolaşımına izin verir.
 - **Bluetooth (yalnızca Samsung Knox)**: Seçin **blok** cihazda Bluetooth kullanarak önlemek için. **Yapılandırılmamış** cihazda Bluetooth'un kullanımına izin verir.
 - **NFC (yalnızca Samsung Knox)**: Seçin **blok** yakın alan iletişimi (NFC) teknolojisini durdurmak için. **Yapılandırılmamış** yakın desteklenen cihazlarda alan iletişimi kullanan işlemlere izin verir.
 - **Wi-Fi (yalnızca Samsung Knox)**: Seçin **blok** cihazda Wi-Fi kullanılmasını önlemek için. **Yapılandırılmamış** cihazın Wi-Fi özelliklerinin kullanımına izin verir.
@@ -159,8 +158,8 @@ Bilgi noktası ayarları yalnızca Samsung Knox Standard cihazlarda ve Intune il
   - **URL'ye göre uygulama ekleme**: Google Play Mağazası'nda, uygulama adını ve URL'sini girin.
   - **Mağaza uygulaması ekleme**: Mevcut Intune yönettiğiniz uygulamalar listesinden bir uygulama seçin.
 
-- **Ekran Uyku düğmesi**: Seçin **blok** ekran Uyku düğmesi Gizle veya önlemek için. **Yapılandırılmamış** cihazda ekran uykuya geçme Uyandırma düğmesine izin verir.
-- **Ses düzeyi düğmelerine**: Seçin **blok** kullanıcının ses düğmelerini devre dışı bırakarak birim ayarlama önlemek için. **Yapılandırılmamış** cihazdaki ses düğmelerini kullanarak sağlar.
+- **Ekran uyku düğmesi**: Seçin **blok** ekran Uyku düğmesi Gizle veya önlemek için. **Yapılandırılmamış** cihazda ekran uykuya geçme Uyandırma düğmesine izin verir.
+- **Ses düğmeleri**: Seçin **blok** kullanıcının ses düğmelerini devre dışı bırakarak birim ayarlama önlemek için. **Yapılandırılmamış** cihazdaki ses düğmelerini kullanarak sağlar.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

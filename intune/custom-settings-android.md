@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba6d2f60d91388aa1c8ceea6580f1d583d4c987c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 4e4f94ead5ecc42f8ac67c596fc9424b112c2065
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508336"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048598"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune’da Android cihazlar için özel ayarlar kullanma
 
@@ -48,7 +47,7 @@ Bu makale, Android cihazlar için özel profil oluşturma işlemini gösterir.
 3. Aşağıdaki ayarları girin:
 
     - **Ad**: Profil için bir ad girmeniz `android custom profile`.
-    - **Açıklama**: Profil için bir açıklama girin.
+    - **Açıklama**: Profil için açıklama girin.
     - **Platform**: Seçin **Android**.
     - **Profil türü**: Seçin **özel**.
 

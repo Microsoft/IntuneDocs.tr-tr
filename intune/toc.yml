@@ -14,7 +14,7 @@
           href: whats-new-app-ui.md
         - name: Geliştirme aşamasındaki özellikler
           href: in-development.md
-- name: Hızlı başlangıçlar
+- name: Hızlı girişler
   items:
     - name: Intune'u ücretsiz olarak deneyin
       href: free-trial-sign-up.md
@@ -473,15 +473,15 @@
               href: certificates-s-mime-encryption-sign.md
             - name: SCEP ile üçüncü taraf sertifika yetkilisi kullanma
               href: certificate-authority-add-scep-overview.md
-            - name: Symantec PKI Manager Web Hizmeti
-              href: certificates-symantec-configure.md
+            - name: DigiCert PKI kullanma
+              href: certificates-digicert-configure.md
             - name: SCEP ya da PKCS sertifikalarını kaldırma
               href: remove-certificates.md
         - name: eSIM hücresel profilleri
           href: esim-device-configuration.md
         - name: Kimlik koruması
           href: identity-protection-configure.md
-        - name: Yazılım güncellemeleri
+        - name: Yazılım güncelleştirmeleri
           items:
             - name: İş için Windows Update ayarları
               href: windows-update-for-business-configure.md
@@ -548,7 +548,7 @@
               href: apps-windows-10-app-deploy.md
             - name: Kamu ortamları için uygulama dağıtma
               href: apps-deploy-gcc-dod.md
-        - name: Uygulamalarını izleme
+        - name: Uygulamaları izleme
           href: apps-monitor.md
         - name: Uygulama yapılandırma
           href: app-configuration-policies-overview.md
@@ -636,7 +636,7 @@
       items:
         - name: Kiracı durumu
           href: tenant-status.md
-        - name: Sorun giderme
+        - name: Sorunları Gider
           items:
             - name: Kullanıcıların sorunları gidermesine yardımcı olma
               href: help-desk-operators.md

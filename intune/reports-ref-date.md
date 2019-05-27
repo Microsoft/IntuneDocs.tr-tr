@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc88aaca62868af2db024dcea90594161269fd86
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0baf74515af22fb04f773da0d26b94a7eec5f572
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511294"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041021"
 ---
 # <a name="reference-for-date-entity"></a>Tarih varlığı için başvuru
 
 **Tarih** kategorisi, veri modelindeki veri başvurularını tanımlamak için kullanılan **Tarih** varlığını içerir.
 
-## <a name="date"></a>Tarih
+## <a name="date"></a>Date
 
 **Tarih** varlığı, birden çok veri ambarı varlığında başvurulan tarihleri temsil eder.
 
@@ -47,7 +46,7 @@ ms.locfileid: "61511294"
 |  CalendarYear   |                     Takvim yılı                      |         2016         |
 |     DateKey     | Veri ambarında bu tarihin benzersiz tanımlayıcısı. |       20160703       |
 |    FullDate     |    Bu tarihin tam Tarih/Saat biçiminde temsili.     | 3.7.2016 12:00:00 |
-|    DayOfWeek    |                      Haftanın kaçıncı günü olduğu                       |          1           |
+|    DayOfWeek    |                      Haftanın kaçıncı günü olduğu                       |          1.           |
 |   DayOfMonth    |                      Ayın kaçıncı günü olduğu                      |          3           |
 |    DayOfYear    |                      Yılın kaçıncı günü olduğu                       |         185          |
 |   WeekOfYear    |                      Yılın kaçıncı haftası olduğu                      |          28          |

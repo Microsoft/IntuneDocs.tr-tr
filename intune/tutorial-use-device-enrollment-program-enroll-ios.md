@@ -8,19 +8,18 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e006ce1be5a19d0557ef0a5d6046afea2c13986
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
-ms.translationtype: MT
+ms.openlocfilehash: f1f2d584e3e19726ee79671437d2d6e5c729879d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135169"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040318"
 ---
 # <a name="tutorial-use-apples-corpoate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Öğretici: Apple'nın Corpoate cihaz kaydı özellikleri, ıntune'da iOS cihazlarını kaydetmek için Apple İş Yöneticisi'ni (ABM) kullanın.
 Cihaz kaydı özellikleri Apple İş Yöneticisi'nde hesabından cihazların kaydını basitleştirir. Intune, Apple'nın eski cihaz kayıt programı (DEP) portalında da destekler, ancak yeni Apple İşletme Yöneticisi ile başlangıç yapmanız önerilir. Microsoft Intune ve Apple Kurumsal cihaz kaydı ile cihazlar, kullanıcı cihazda ilk açtığı anda güvenli bir şekilde otomatik olarak kaydedilir. Bu nedenle, her cihazı ayrı ayrı ayarlama yapmak zorunda kalmadan çok sayıda kullanıcı cihazlara gönderebilirsiniz. 
@@ -58,9 +57,9 @@ Cihaz kaydı belirtecini oluşturmak için ABM veya DEP portalını kullanın. A
 
 4. **Sunucuları Yönet** sayfasında **MDM Sunucusu Ekle**’yi seçin.
 
-5. İçin **MDM sunucu adı**, girin *TestMDMServer* seçip **sonraki**. Sunucu adı, mobil cihaz yönetimi (MDM) sunucusunu tanımlarken kullanmanız içindir. Adı veya URL'si Microsoft Intune sunucusunun öyle.
+5. İçin **MDM sunucu adı**, girin *TestMDMServer* seçip **sonraki**. Sunucu adı, mobil cihaz yönetimi (MDM) sunucusunu tanımlarken kullanmanız içindir. Microsoft Intune sunucusunun adı veya URL'si değildir.
 
-6. **Ekle &lt;ServerName&gt;** iletişim kutusu açılır ve **Ortak Anahtarınızı Yükleyin** ifadesi yazar. Seçin **dosyası seçin...** .pem dosyasını karşıya yükleyin ve ardından **İleri**'yi seçin.
+6. **Ekle &lt;ServerName&gt;** iletişim kutusu açılır ve **Ortak Anahtarınızı Yükleyin** ifadesi yazar. **Dosya Seç…** öğesini seçin. .pem dosyasını karşıya yükleyin ve ardından **İleri**'yi seçin.
 
 6. Git **dağıtım programları** > **cihaz kayıt programı** > **cihazları yönetme**.
 7. Altında **cihaz seçme ölçütü**, seçin **seri numarası**. <!--ask Tiffany about this-->

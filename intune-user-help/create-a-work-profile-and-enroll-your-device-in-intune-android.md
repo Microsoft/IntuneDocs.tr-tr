@@ -18,16 +18,18 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29928023abc2d6119bb318bbe046e954288ebaa3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497753"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196930"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Android iş profili ile cihaz kaydetme
 
-Şirket e-posta, uygulamalar ve diğer iş verilerine erişmek için kişisel Android Cihazınızı kaydetme. Kayıt sırasında bir Android iş profili ayarlarsınız. Bu profili cihazınızdaki kişisel verileri iş verilerinizden ayıran. Şirketinizin destek birimi, yalnızca iş dosyalarına ve veri oluşan iş profilinizi yönetir. Şirketinizin destek birimi, cihazınızdaki kişisel verileri yönetemez. [İş profili oluşturduğunuzda ne olacağı](what-happens-when-you-create-a-work-profile-android.md) hakkında daha fazla bilgi edinin. 
+Şirket e-posta, uygulamalar ve diğer iş verilerine erişmek için kişisel Android Cihazınızı kaydetme. Kayıt sırasında bir Android iş profili ayarlarsınız. Bu profili cihazınızdaki kişisel verileri iş verilerinizden ayıran. Şirketinizin destek birimi, yalnızca iş dosyalarına ve veri oluşan iş profilinizi yönetir. Şirketinizin destek birimi, cihazınızdaki kişisel verileri yönetemez. [İş profili oluşturduğunuzda ne olacağı](what-happens-when-you-create-a-work-profile-android.md) hakkında daha fazla bilgi edinin.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI?rel=0]
 
 ## <a name="create-work-profile-and-enroll-device"></a>İş profili oluşturma ve Cihazınızı kaydetme
 

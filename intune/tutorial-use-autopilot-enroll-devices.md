@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -19,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2ee353e5e6c39c3b402c0b4f039bb02efcfa4532
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732986"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044520"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Öğretici: Intune'da Windows cihazları kaydetmeye AutoPilot'ı kullanın
 Windows Autopilot, cihaz kaydını basitleştirir. Microsoft Intune ve Autopilot ile özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. 
@@ -51,11 +50,11 @@ Autopilot faydalarına, senaryolarına ve önkoşullarına genel bir bakış iç
 
 Windows Autopilot’ı ayarlamanın ilk adımı, Windows cihazları Intune’a eklemektir. Tek yapmanız gereken, bir CSV dosyası oluşturmak ve bunu Intune’a aktarmaktır.
 
-1. Herhangi bir metin düzenleyicide Windows cihazları belirleyen, virgülle ayrılmış değerler (CSV) listesi oluşturun. Şu biçimi kullanın:
+1. Herhangi bir metin düzenleyicide Windows cihazları belirleyen, virgülle ayrılmış değerler (CSV) listesi oluşturun. Aşağıdaki biçimi kullanın:
     
-    *seri-numara*, *windows-ürün-kimliği*, *donanım-karması*, *isteğebağlı-sipariş-kimliği*
+    *seri numarası*, *windows ürün kimliği*, *donanım karması*, *grubu etiketi isteğe bağlı*
     
-    İlk üç öğe gereklidir ancak sipariş kimliği isteğe bağlıdır.
+    İlk üç öğe gerekiyor, ancak Grup (önceden "order ID" bilinen) etiket isteğe bağlıdır.
 
 2. CSV dosyasını kaydedin.
 

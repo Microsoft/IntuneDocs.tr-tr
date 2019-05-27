@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6e90828da8c209b534b830af7fe522b254374bf
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 58c199a908198295bf3e52d0a5fcf01d3ebf5a2d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509764"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048378"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune için teslim iyileştirme ayarları
 
@@ -42,7 +41,7 @@ Bu ayarları kullanmak için Intune'u yapılandırma için bkz: [teslim güncell
 
 |Ayar  |Windows sürümü  |Ayrıntılar  |
 |---------|-----------------|---------|
-| [İndirme modu](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)     | 1511         | İndirme yöntemini belirtin, teslim iyileştirme içerik indirmek için kullanır.<br><ul><li>**Yapılandırılmamış**: Son kullanıcılar cihazlarını kullanmak için kendi yöntemlerini kullanarak güncelleştirme *Windows güncelleştirmeleri veya teslim iyileştirme* ayarları işletim sistemi ile kullanılabilir. </li> <li> **Yalnızca HTTP, eşleme yok (0)**: Güncelleştirmeleri yalnızca internet'ten alın. Güncelleştirmeler (eşler arası), ağınızdaki diğer bilgisayarlardan elde etmezsiniz. </li> <li> **(1) aynı NAT arkasında eşleme ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın. </li> <li> **Özel bir grup (2) üzerinde eşleme ile karışık HTTP**: Eşleme, aynı Active Directory (varsa) sitesi veya aynı etki alanında cihazlarda gerçekleşir. Bu seçenek belirlendiğinde, eşleme ağ adresi çevirisi (NAT) IP adreslerinizi çizer. </li> <li> **Internet (3) eşleme ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın. </li> <li> **Hiçbir eşleme (99) ile basit indirme modu**: Güncelleştirmeleri Microsoft update sahibinden doğrudan internet'ten alır. Bu teslim iyileştirme bulut Hizmetleri iletişim kurmaz. </li> <li> **Atlama modu (100)**: Güncelleştirmeleri almak için arka plan Akıllı Aktarım Hizmeti (BITS) kullanın. Teslim iyileştirme kullanmayın. </li></ul> **Varsayılan**: Yapılandırılmamış  <br><br> CSP İlkesi: [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)  <br><br>  |
+| [İndirme modu](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)     | 1511         | İndirme yöntemini belirtin, teslim iyileştirme içerik indirmek için kullanır.<br><ul><li>**Yapılandırılmadı**: Son kullanıcılar cihazlarını kullanmak için kendi yöntemlerini kullanarak güncelleştirme *Windows güncelleştirmeleri veya teslim iyileştirme* ayarları işletim sistemi ile kullanılabilir. </li> <li> **Yalnızca HTTP, eşleme yok (0)**: Güncelleştirmeleri yalnızca internet'ten alın. Güncelleştirmeler (eşler arası), ağınızdaki diğer bilgisayarlardan elde etmezsiniz. </li> <li> **(1) aynı NAT arkasında eşleme ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın. </li> <li> **Özel bir grup (2) üzerinde eşleme ile karışık HTTP**: Eşleme, aynı Active Directory (varsa) sitesi veya aynı etki alanında cihazlarda gerçekleşir. Bu seçenek belirlendiğinde, eşleme ağ adresi çevirisi (NAT) IP adreslerinizi çizer. </li> <li> **Internet (3) eşleme ile karışık HTTP**: Güncelleştirmeleri internet'ten ve ağınızdaki diğer bilgisayarlar alın. </li> <li> **Hiçbir eşleme (99) ile basit indirme modu**: Güncelleştirmeleri Microsoft update sahibinden doğrudan internet'ten alır. Bu teslim iyileştirme bulut Hizmetleri iletişim kurmaz. </li> <li> **Atlama modu (100)**: Güncelleştirmeleri almak için arka plan Akıllı Aktarım Hizmeti (BITS) kullanın. Teslim iyileştirme kullanmayın. </li></ul> **Varsayılan**: Yapılandırılmamış  <br><br> CSP İlkesi: [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)  <br><br>  |
 | [Eş seçimi kısıtlama](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#select-a-method-to-restrict-peer-selection)          | 1803        | Gerektirir **indirme modu** ayarlanması *(1) aynı NAT arkasında eşleme ile karışık HTTP* veya *özel bir grup (2) üzerinde eşleme ile karışık HTTP*.<br/><br/>Belirli bir cihaz grubuna eş seçimi kısıtlar.<br/><br/>**Varsayılan**: Yapılandırılmamış <br/><br/>CSP İlkesi: [DORestrictPeerSelectionBy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dorestrictpeerselectionby)<br><br>      |
 | [Grup Kimliği kaynak](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#select-the-source-of-group-ids)     | 1803        | Gerektirir **indirme modu** ayarlanması *özel bir grup üzerinde eşleme ile karışık HTTP*.<br><br>Belirli bir gruba göre kaynak cihazların eş seçimi kısıtlar.<br><br>Seçerseniz **özel**, ardından yapılandırma **Grup Kimliği (GUID)**. Farklı etki alanlarında veya aynı LAN üzerinde olmayan dallar için yerel ağ eşlemesi için tek bir grup oluşturmanız gerekiyorsa bir GUID Grup Kimliği kullanın.<br><br>**Varsayılan**: Yapılandırılmamış <br><br>CSP İlkesi: [DOGroupId](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dogroupid)     |
 

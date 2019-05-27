@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d8b3d14411827642661b01929d17e83a5198ad
-ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
+ms.openlocfilehash: 37938287cc5ddde6285ec09aa0fffea56f98b3c3
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65765352"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048949"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
@@ -120,7 +119,7 @@ Profil oluşturulur ve listede görüntülenir. Bu profili gruplara atamak için
    >[!NOTE]
    > Android cihazları, bir üçüncü tarafın güvenli sertifika yüklediğini belirten bir ileti görüntüleyebilir.
 
-## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>4. adım: SCEP veya PKCS sertifika profilleri oluşturma
+## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>Adım 4: SCEP veya PKCS sertifika profilleri oluşturma
 
 Yapılandırma ve her sertifika profilinin türünü atama ile ilgili Yardım için aşağıdaki makalelerden birine bakın:
 

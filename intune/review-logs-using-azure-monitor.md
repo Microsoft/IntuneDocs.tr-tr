@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507383"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045286"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Olay hub'ları, depolama için günlük verileri gönderin veya log analytics (Önizleme) Intune'a
 
@@ -54,7 +53,7 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz bağlı olarak, aşağ
 
 ## <a name="send-logs-to-azure-monitor"></a>Günlükleri göndermek için Azure İzleyici
 
-1. İçinde [Azure portalında](https://portal.azure.com/)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Azure portalında](https://portal.azure.com/) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
 2. Altında **izleme**seçin **tanılama ayarları**. İlk kez açtığınızda, açın:
 
     ![Intune'a günlükleri göndermek için Azure İzleyici için tanılama ayarlarını açın](media/diagnostics-settings-turn-on.png)
@@ -102,7 +101,7 @@ Ayrıca, Intune, kayıt, uyumluluk, yapılandırma, cihazlar, istemci uygulamala
 
 Örneğin, denetim vermek için cihaz uyumluluğu kullanırken kaydeder:
 
-1. İçinde [Azure portalında](https://portal.azure.com/)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Azure portalında](https://portal.azure.com/) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
 2. Seçin **cihaz uyumluluğu** > **İzleyici** > **denetim günlükleri**:
 
     ![Depolama alanını Azure izleme, olay hub'ları veya Analiz Intune verileri yönlendirmek için denetim günlüklerini seçin](media/audit-logs-under-monitor-in-compliance.png)
@@ -163,7 +162,7 @@ Aşağıdaki tablo, bir temel olay hub'ında Batı ABD, olay veri hacmine göre 
 |Saniye başına olay|0.1 |
 |Beş dakikalık aralık başına olay sayısı| 52|
 |Aralık başına birim|104 KB |
-|İleti aralığı başına işleme|1 |
+|İleti aralığı başına işleme|1. |
 |İleti başına aylık|8,640 |
 |(USD) aylık tahmini maliyet|$10.80 |
 

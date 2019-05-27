@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/27/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2c3a33b996a68263550fc05d3af853c263c930a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e050d188d4508225ef384fbf557e7724efacab18
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512932"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047732"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune’da macOS Endpoint Protection ayarları
 
@@ -28,7 +27,7 @@ Bu makale, macOS çalıştıran cihazlar için yapılandırabileceğiniz Endpoin
 
 ## <a name="gatekeeper"></a>Ağ Geçidi Denetleyicisi
 
-- **Bu konumlardan indirilen uygulamalara izin ver**: Uygulamaları, indirildikleri yere bağlı olarak uygulamaları sınırlayın. Buradaki amaç, cihazları kötü amaçlı yazılımlardan korumak ve yalnızca güvendiğiniz kaynaklardan gelen uygulamalara izin vermektir. İzin verebileceğiniz seçenekler şunlardır: 
+- **Bu konumlardan indirilen uygulamalara izin verin**: Uygulamaları, indirildikleri yere bağlı olarak uygulamaları sınırlayın. Buradaki amaç, cihazları kötü amaçlı yazılımlardan korumak ve yalnızca güvendiğiniz kaynaklardan gelen uygulamalara izin vermektir. İzin verebileceğiniz seçenekler şunlardır: 
   - **Mac App Store**
   - **Mac App Store ve tanımlı geliştiriciler**
   - **Her yer**
@@ -41,7 +40,7 @@ Bağlantı noktası yerine uygulama başına bağlantıları denetlemek için g�
 
 - **Güvenlik duvarı kullanarak bağlantıları uygulama başına denetleyin ve cihazları yetkilendirilmemiş ağ erişiminden koruyun.**
   - **Güvenlik Duvarı**: Gelen bağlantıları yapılandırmak Güvenlik Duvarı'nı etkinleştirme, ortamınızda işlenir.
-  - **Gelen bağlantıları**: DHCP, Bonjour ve IPSec gibi temel Internet Hizmetleri için gereken bağlantılar dışında tüm gelen bağlantıları engelleyin. Bu özellik ayrıca, Dosya Paylaşımı ve Ekran Paylaşımı gibi tüm paylaşım hizmetlerini engeller. Paylaşım cihazları kullanıyorsanız bu ayarı **Yapılandırılmadı** olarak bırakın.
+  - **Gelen bağlantılar**: DHCP, Bonjour ve IPSec gibi temel Internet Hizmetleri için gereken bağlantılar dışında tüm gelen bağlantıları engelleyin. Bu özellik ayrıca, Dosya Paylaşımı ve Ekran Paylaşımı gibi tüm paylaşım hizmetlerini engeller. Paylaşım cihazları kullanıyorsanız bu ayarı **Yapılandırılmadı** olarak bırakın.
 
 - **Belirli uygulamalar için gelen bağlantılara izin ver veya bağlantıları engelle**
   - **İzin verilen uygulamalar**: Gelen bağlantıları alması için açıkça izin verilen uygulamaları seçin.

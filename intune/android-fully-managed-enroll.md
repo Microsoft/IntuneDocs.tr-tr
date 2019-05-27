@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e3615f1f090af3ce589e83f11d12e95a2f07641
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9edfa2ec7a408f512d4cb0b99a468db0b29f5868
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503864"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044198"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Intune'u ayarlama Android Kurumsal kaydını tam (Önizleme) ile yönetilen cihazlar
 
@@ -32,7 +31,7 @@ Kuruluş tarafından tam olarak yönetilen Android cihazları, bir tek kullanıc
 - yönetilen uygulamaları kaldırmasını engelleyin
 - Kullanıcıların cihazları fabrika ayarlarına engellemek ve benzeri.
 
-Intune uygulamaları dağıtmanıza yardımcı olur ve tam olarak Android Enterprise dahil olmak üzere Android kuruluş cihazlarının, ayarlar yönetilen cihazlar. Belirli Android Enterprise hakkında bilgi için [Android Kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune uygulamaları dağıtmanıza yardımcı olur ve tam olarak Android Enterprise dahil olmak üzere Android kuruluş cihazlarının, ayarlar yönetilen cihazlar. Android Kurumsal hakkında belirli ayrıntıları öğrenmek için bkz. [Android Kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 ## <a name="technical-requirements"></a>Teknik gereksinimler
 
@@ -50,7 +49,7 @@ Yukarıdaki gereksinimleri karşılandığında cihaz üreticisi/OEM konusunda b
 Ayarlamak için Android Kurumsal cihaz Yönetimi yapılandırılan, aşağıdaki adımları izleyin:
 
 1. Mobil cihazları yönetmek hazırlamak için şunları yapmanız gerekir [mobil cihaz Yönetimi (MDM) yetkilisini ayarlamak **Intune**](mdm-authority-set.md). Bu öğeyi yalnızca mobil cihaz yönetimi için Intune’u ilk defa kurduğunuzda ayarlarsınız.
-2. [Android Enterprise hesabınızı Intune Kiracı hesabınızı bağlayın](connect-intune-android-enterprise.md).
+2. [Intune kiracı hesabınızı Android Kurumsal hesabınıza bağlayın](connect-intune-android-enterprise.md).
 3. [Kullanıcı şirkete ait cihazları etkinleştirme](#enable-corporate-owned-user-devices)
 4. [Tam olarak yönetilen cihazları kaydetme](#enroll-the-fully-managed-devices).
 

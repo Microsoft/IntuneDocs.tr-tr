@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
-ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
+ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65816300"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050346"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot'ı kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -140,7 +139,7 @@ Ağ ortamınızda bir web proxy varsa, başvurarak Active Directory için Intune
 
 1. Seçtiyseniz **dinamik cihazları** üyelik türü için içinde **grubu** bölmesinde **dinamik cihaz üyeleri** ve daha sonra **Gelişmiş kural** kutusunda, aşağıdakilerden birini yapın:
     - Tüm Autopilot cihazları içeren bir grup oluşturmak için girin `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - Belirli bir sıraya göre Kimliğine sahip tüm Autopilot cihazları içeren bir grup oluşturmak için girin `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`.
+    - OrderID özniteliği Azure AD cihazları için Intune grubu etiketi alan eşler. Tüm Autopilot cihazlarınızı belirli bir grup Tag(OrderID) içeren bir grubu oluşturmak istiyorsanız, yazmanız gerekir: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Belirli bir satın alma siparişi kimliği ile tüm Autopilot cihazları içeren bir grup oluşturmak için girin `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. **Kaydet**’i seçin.
@@ -208,7 +207,7 @@ Değiştirmek bir cihaz profili durumu için yaklaşık 15 dakika sürer *atanma
 1. İçinde [Intune](https://aka.ms/intuneportal)seçin **cihaz Yapılandırması** > **profilleri** > **profili oluştur**.
 1. Aşağıdaki özellikleri girin:
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-   - **Açıklama**: Profil için bir açıklama girin.
+   - **Açıklama**: Profil için açıklama girin.
    - **Platform**: Seçin **Windows 10 ve üzeri**.
    - **Profil türü**: Seçin **etki alanına (Önizleme)**.
 1. Seçin **ayarları**ve ardından bir **bilgisayar adı ön eki**, **etki alanı adı**ve (isteğe bağlı) **kuruluş birimi** içinde[DN biçiminde](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 

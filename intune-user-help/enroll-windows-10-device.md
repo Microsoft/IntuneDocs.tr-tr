@@ -18,20 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 162044fdfbe9df6dd6461bcdf919dc798ad3c4a1
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: cbb6c3b771ae768fe45bea1eecb21f7083003010
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992912"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196842"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Intune Şirket portalı ile Windows 10 cihazlarını kaydetme
 
 Windows 10 Cihazınızı kuruluşunuzun yönetim altında kaydetmek için Intune şirket Portalı'nı kullanın. Bu makalede, Windows 10 sürüm 1607 ve üzeri ve Windows 10 sürüm 1511 ve öncesi ile cihazları ıntune'a nasıl kaydedildiği açıklanır. Başlamadan önce emin olun [cihazınızdaki sürümünü doğrulayın](windows-enrollment-company-portal.md#find-windows-10-version-number) doğru adımları izleyebilirsiniz.  
 
 Windows 10 Masaüstü, telefon ve tablet gibi çeşitli cihaz türleri arasında desteklenir. Kayıt adımları, kullanmakta olduğunuz cihazı üzerinde aynıdır. Ancak, ekranınızın bu makalede gösterilen resimlerden biraz farklı görünebilir.  
-
-> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]  
+</br>
+> [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE?rel=0]
 
 ## <a name="enroll-windows-10-version-1607-and-later-device"></a>Windows 10 sürüm 1607 ve üzeri cihaz kaydetme 
 Bu adımlar Windows 10, sürüm 1607 ve üzeri çalıştıran bir cihazın nasıl kaydedileceği açıklanmaktadır.  
