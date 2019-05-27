@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a637b6eed162243d2be81ac08fbcc055e1fd5816
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505208"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196873"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune şirket Portalı'nda Windows cihaz kaydı  
 
@@ -78,6 +78,9 @@ Kayıt adımları Windows 10 cihazlarını farklı sürümleri için farklıdır
 Şirket portalı Web sitesi üzerinden desteklenen diğer Windows cihazlarını kaydetmek için aşağıdaki makaleleri kullanın:   
 * [Windows 8.1. veya Windows RT 8.1 cihazınız](enroll-your-W81-or-rt81-windows.md)  
 * [Windows Phone 8.1 cihaz](enroll-your-wp81-windows.md)    
+
+## <a name="it-administrator-support"></a>BT yöneticisi desteği  
+Bir BT yöneticisi olduğunuzu ve cihazlarını kaydederken sorunları Çalıştır bkz [sorun giderme Windows cihaz kaydı sorunlarını Microsoft Intune](https://support.microsoft.com/help/4469913). Yaygın hatalar, nedenleri ve adımları bunları gidermek için bu makalede listelenmektedir.  
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 Desteklenen cihazlar ve Windows 10 sürüm numaranızın bildiğiniz, önerilen kayıt makaleden devam edin.  
