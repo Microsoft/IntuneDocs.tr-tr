@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 044ced57d9dd2e3e4b86548540090de35b88a6b0
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
-ms.translationtype: MT
+ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197087"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264166"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -57,7 +57,7 @@ Windows Şirket portalı uygulaması artık etiketlenmiş yeni bir sayfa olacakt
 
 #### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot cihaz OrderID öznitelik adı grubu etiketi değiştirildi <!-- 4659453 -->
 
-Daha sezgisel hale **OrderID** için öznitelik adı Autopilot cihazlarda değiştirildi **grubu etiketi**. Autopilot cihaz bilgileri yüklenecek csv kullanırken sütun başlığı değil OrderID grubu etiketi kullanmanız gerekir. Aksi takdirde yükleme başarısız olur. OrderID eski müşteriler veya betikleri uyacak şekilde yeniden sunulan olacaktır. Ancak, Grup etiketi ilerletme standart olacaktır.
+Daha sezgisel hale **OrderID** için öznitelik adı Autopilot cihazlarda değiştirildi **grubu etiketi**. Autopilot cihaz bilgileri yüklenecek csv kullanırken sütun başlığı değil OrderID grubu etiketi kullanmanız gerekir.  
 
 ## <a name="week-of-may-13-2019"></a>13 Mayıs 2019 haftası 
 
@@ -592,8 +592,8 @@ Android Kurumsal
 #### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-----"></a>Görünürlük iOS ayarları Intune kullanıcı Arabiriminde taşıyor Safari ve geciktirme kullanıcı yazılım güncelleştirme <!-- 3640850, 3803313   -->
 İOS cihazları için Safari ayarlarını ve yazılım güncelleştirmelerini yapılandırma. Bu güncelleştirmede, bu ayarlar, Intune kullanıcı arabiriminin farklı bölümlerine taşınıyor:
 
-- Taşıma kaynağı Safari ayarları **Safari** (**cihaz Yapılandırması** > **profilleri** > **yeni profili**  >  **iOS** Platform > **cihaz kısıtlamaları** profil türü için) için  **[yerleşik uygulamaları](device-restrictions-ios.md#built-in-apps)**.
-- **Denetimli iOS cihazları için kullanıcı yazılım güncelleştirme görünürlüğü geciktirme** ayarı (**yazılım güncelleştirmelerini** > **güncelleştirme ilkelerini iOS için**) içintaşıma **Cihaz kısıtlamaları** > **[genel](device-restrictions-ios.md#general)**.  Mevcut ilkeleri etkisi hakkında daha fazla bilgi için bkz: [iOS yazılım güncelleştirmeleri](software-updates-ios.md#configure-the-policy). 
+- Taşıma kaynağı Safari ayarları **Safari** (**cihaz Yapılandırması** > **profilleri** > **yeni profili**  >  **iOS** Platform > **cihaz kısıtlamaları** profil türü için) için  **[yerleşik uygulamaları](device-restrictions-ios.md#built-in-apps)** .
+- **Denetimli iOS cihazları için kullanıcı yazılım güncelleştirme görünürlüğü geciktirme** ayarı (**yazılım güncelleştirmelerini** > **güncelleştirme ilkelerini iOS için**) içintaşıma **Cihaz kısıtlamaları** >  **[genel](device-restrictions-ios.md#general)** .  Mevcut ilkeleri etkisi hakkında daha fazla bilgi için bkz: [iOS yazılım güncelleştirmeleri](software-updates-ios.md#configure-the-policy). 
 
 Ayarlar listesi için bkz:
 

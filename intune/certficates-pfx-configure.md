@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02a5a7bd3625b5e95ddb304df7cf64461cca9c10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cf6febf0ead541e1346cc095bb14437083dd5d64
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049135"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373736"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -150,7 +150,7 @@ VPN, WiFi ve diğer kaynaklara sahip bir cihaz kimliğini doğrulamak için bir 
     3. Varsayılan olarak, bağlayıcı hizmeti yerel sistem hesabının altında çalışır. İnternet’e erişmek için bir ara sunucu gerekiyorsa, yerel hizmet hesabının sunucudaki ara sunucu ayarlarına erişebildiğinizden emin olun.
 
 5. NDES Bağlayıcısı, **Kayıt** sekmesini açar. Intune bağlantısını etkinleştirmek için **Oturum Aç**’ı seçin ve yönetim izinleri olan bir hesap girin.
-6. **Gelişmiş** sekmesinde **Bu bilgisayarın SİSTEM hesabını kullan (varsayılan)**’ı seçili bırakmanız önerilir.
+6. **Gelişmiş** sekmesinde **Bu bilgisayarın SİSTEM hesabını kullan (varsayılan)** ’ı seçili bırakmanız önerilir.
 7. **Uygula** > **Kapat**
 8. Intune portalına dönün (**Intune** > **cihaz Yapılandırması** > **sertifika Bağlayıcılar**). Birkaç dakika sonra yeşil bir onay işareti gösterilir ve **bağlantı durumu** olduğu **etkin**. Bağlayıcı sunucunuz artık Intune'la iletişim kurabilir.
 9. Ağ ortamınızda bir web proxy varsa, çalışması bağlayıcıyı etkinleştirmek için ek yapılandırma gerekebilir. Daha fazla bilgi için [iş mevcut şirket içi proxy sunucuları](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) Azure Active Directory belgelerinde.
@@ -160,7 +160,7 @@ VPN, WiFi ve diğer kaynaklara sahip bir cihaz kimliğini doğrulamak için bir 
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>Microsoft Intune için PFX Sertifika Bağlayıcısı
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seçin **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**
 3. Microsoft Intune için PFX Sertifika Bağlayıcısı’nı indirin ve kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
 4. İndirme tamamlandıktan sonra sunucuda oturum açın. Daha sonra:
@@ -207,9 +207,9 @@ VPN, WiFi ve diğer kaynaklara sahip bir cihaz kimliğini doğrulamak için bir 
 
 3. **Ayarlar**'a gidin ve aşağıdaki özellikleri girin:
 
-    - **Yenileme eşiği (%)**: %20 önerilir.
+    - **Yenileme eşiği (%)** : %20 önerilir.
     - **Sertifika geçerlilik süresi**: Sertifika şablonunu değiştirmediyseniz bu seçenek bir yıla ayarlanabilir.
-    - **Anahtar depolama sağlayıcısı (KSP)**: Windows için cihazda anahtarlarını depolamak istediğiniz yeri seçin.
+    - **Anahtar depolama sağlayıcısı (KSP)** : Windows için cihazda anahtarlarını depolamak istediğiniz yeri seçin.
     - **Sertifika yetkilisi**: Kurumsal CA'ın dahili tam etki alanı adı (FQDN) görüntüler.
     - **Sertifika yetkilisi adı**: "Contoso sertifika yetkilisi" gibi Kurumsal CA'ın adını listeler.
     - **Sertifika şablonu adı**: Daha önce oluşturduğunuz şablonun adı. **Şablon adı**’nın varsayılan olarak **Şablon görüntü adı** ile *boşluksuz* aynı olduğunu unutmayın.
@@ -239,7 +239,7 @@ Sertifikaları Intune’da içeri aktardıktan sonra bir **PKCS içeri aktarılm
 
     - **Sertifikaların hedeflenen amacına**: Bu profil için içe aktarılan sertifikaların hedeflenen amaç. Yöneticinin, farklı amaçlara (kimlik doğrulaması, S/MIME imzalaması veya S/MIME şifrelemesi gibi) yönelik içeri aktarılmış sertifikaları olabilir. Sertifika profilinde seçilen kullanım amacı, sertifika profilini doğru içeri aktarılmış sertifikalarla eşleştirir.
     - **Sertifika geçerlilik süresi**: Sertifika şablonunu değiştirmediyseniz bu seçenek bir yıla ayarlanabilir.
-    - **Anahtar depolama sağlayıcısı (KSP)**: Windows için cihazda anahtarlarını depolamak istediğiniz yeri seçin.
+    - **Anahtar depolama sağlayıcısı (KSP)** : Windows için cihazda anahtarlarını depolamak istediğiniz yeri seçin.
 
 4. Profilinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
 5. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profillerini atama](device-profile-assign.md).

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174199"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354216"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -58,6 +58,24 @@ Bu ayarları kullanın [ApplicationManagement ilke CSP](https://docs.microsoft.c
 - **Uygulamaları sistem sürücüsüne Yükle**: **Blok** uygulamaların cihazın sistem sürücüsünde yüklenmesini de önler. **Yapılandırılmamış** (varsayılan), uygulamaların sistem sürücüsüne yükle izin verir.
 - **Oyun DVR** (yalnızca Masaüstü): **Blok** Windows kaydı ve yayın oyun devre dışı bırakır. **Yapılandırılmamış** (varsayılan), kayıt ve oyun yayın sağlar.
 - **Uygulamaları yalnızca mağazadan**: **Gerekli** yalnızca Windows App Store uygulamaları yüklemek için son kullanıcıların zorlar. **Yapılandırılmamış** son kullanıcıların Windows App Store dışındaki yerlerden uygulama yükleyip olanak tanır.
+- **Güncelleştirme Hatası uygulamalarını yeniden başlatmaya zorla**: Uygulama kullanılırken, güncelleştirilmeyebilir. Bir yeniden başlatmaya zorlamak için bu ayarı kullanın. **Yapılandırılmamış** (varsayılan), uygulamaları yeniden başlatmak için zorlama değil. **Gerekli** yöneticilerin belirli bir tarih ve saat veya yinelenen bir zamanlamaya göre yeniden başlatmaya zorla olanak sağlar. Ayarlandığında **gerektiren**, ayrıca girin:
+
+  - **Başlangıç tarihi/saati**: Uygulamaları yeniden başlatmak için belirli bir tarih ve saat seçin.
+  - **Yinelenme**: Günlük, haftalık veya aylık yeniden başlatın.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **Kullanıcı denetime yüklemeleri**: Ayarlandığında **yapılandırılmadı** (varsayılan), Windows Installer önlemek kullanıcılar dosyaları yüklemek için dizin girerek gibi sistem yöneticileri için genellikle ayrılmış yükleme seçeneklerini değiştirmesini. **Blok** bu yükleme seçeneklerini değiştirmek kullanıcıların sağlar ve Windows Installer güvenlik özelliklerinden bazıları atlanır.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **Yükseltilmiş ayrıcalıklara sahip uygulamaları yüklemek**: Ayarlandığında **yapılandırılmadı** (varsayılan), sistem uygular geçerli kullanıcının izinlerini bir Sistem Yöneticisi dağıtma veya teklif değil programlar yüklendiğinde. **Blok** Windows Installer'ın bir program yüklerken yükseltilmiş izinler kullanmanız yönlendirir. Tüm Programlar'ın bu ayrıcalıkların genişletilir.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **Başlangıç uygulamaları**: Cihaza bir kullanıcı oturum açtıktan sonra açmak için uygulamaların bir listesini girin. Noktalı virgülle ayrılmış liste, paket aile adı (PFN) Windows uygulamalarının kullandığınızdan emin olun. Bu ilkenin çalışması için bir başlangıç görevi Windows uygulamaları bildiriminde kullanmanız gerekir.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
@@ -408,6 +426,10 @@ Bu ayarları kullanın [DeviceLock ilke CSP](https://docs.microsoft.com/windows/
     - **Sayısal**: Parola yalnızca sayı olması gerekir.
     - **Alfasayısal**: Parola, sayılardan ve harflerden oluşan bir karışımı olmalıdır.
   - **Minimum parola uzunluğu**: Gereken en düşük rakam veya gerekli, 4-16 karakter girin. Örneğin, `6` parola uzunluğu en az altı karakter istemek için.
+  
+    > [!IMPORTANT]
+    > Windows masaüstünde parola gerekliliği değiştirildiğinde, cihaza geçerse, etkin boşta sahip olarak uygulamasında oturum açtığında kullanıcının etkilendiğini. Gereksinimini karşılamayan parolası olan kullanıcılar hala parolalarını değiştirmesi istenir.
+    
   - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Cihaz temizlenmeden, 1-11 ' önce izin verilen kimlik doğrulama hatalarının sayısını girin. `0` (sıfır), cihaz silme işlevselliği devre dışı bırakabilir.
 
     Bu ayar, sürüme bağlı olarak farklı bir etkisi yoktur. Belirli Ayrıntılar için bkz [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
@@ -755,7 +777,7 @@ Bu ayarları kullanın [defender İlkesi CSP](https://docs.microsoft.com/windows
 
   İstenmeyebilecek uygulamalar hakkında daha fazla bilgi için bkz. [Algıla ve engelle olası uygulamalar istenmeyen](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Algılanan kötü amaçlı yazılım tehditlerine eylemleri**: Defender'ın algıladığı her tehdit düzeyinde almak istediğiniz eylemleri seçin: Düşük, Orta, yüksek ve ciddi. Seçenekleriniz şunlardır:
+- **Algılanan kötü amaçlı yazılım tehditlerine eylemleri**: Defender'ın algıladığı her tehdit düzeyinde almak istediğiniz eylemleri seçin: Düşük, Orta, yüksek ve ciddi. Bu mümkün değilse, Windows Defender tehdidi düzeltildikten emin olmak için en iyi seçenek seçer. Seçenekleriniz şunlardır:
   - **Temizle**
   - **Karantina**
   - **Kaldır**

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feb2bda30547779680a001b3c598b54d236f70ed
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045093"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374126"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune'da Windows 10 Güvenlik taban çizgisi oluşturma
 
@@ -54,7 +54,8 @@ Aşağıdaki güvenlik temelleri Intune ile kullanılabilir.
   [Ayarları görüntüleyin](security-baseline-settings-windows.md)
 
 - **ÖNİZLEME: Windows Defender ATP temeli**  
-  [Ayarları görüntüleyin](security-baseline-settings-defender-atp.md)
+  [Ayarları görüntüleyin](security-baseline-settings-defender-atp.md)  
+  *(Ortamınız kullanmak için önkoşulları karşıladığı durumlarda bu temel kullanılabilir [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites))* .
 
 
 ## <a name="prerequisites"></a>Önkoşullar
@@ -69,11 +70,12 @@ Ortak yönetilen cihazların kullanırken geçmelidir **cihaz Yapılandırması*
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=20909) seçip **cihaz güvenliği** > **güvenlik temellerini (Önizleme)**. Kullanılabilir temelleri listesi kullanılabilir. 
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=20909) seçip **cihaz güvenliği** > **güvenlik temellerini (Önizleme)** . Kullanılabilir temelleri listesi kullanılabilir. 
 
     ![Yapılandırmak için bir güvenlik taban çizgisi seçin](./media/security-baselines/available-baselines.png)
 
-
+   >[!TIP]  
+   > Windows Defender ATP temel ortamınızı kullanmak için önkoşulları karşıladığı durumlarda kullanılabilir [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites).
 2. Kullanın ve ardından istediğiniz taban çizgisini seçin **profili oluşturma**.  
 
 3. Üzerinde **Temelleri** sekmesinde, aşağıdaki özellikleri belirtin:

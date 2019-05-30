@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aeda02cae01e989041ec41b54186d62988f592d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047882"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264144"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -94,6 +94,9 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 7. Aşağıdaki seçenekleri yapılandırın:
     - **Son Kullanıcı Lisans Sözleşmesi (EULA)**: (Windows 10, 1709 veya üzeri) EULA'ın kullanıcılara gösterilip gösterilmeyeceğini isteyip istemediğinizi seçin.
     - **Gizlilik ayarları**: Gizlilik ayarlarının kullanıcılara gösterilip gösterilmeyeceğini isteyip istemediğinizi seçin.
+    >[!IMPORTANT]
+    >AutoPilot dağıtımları Windows 10 sürüm 1903 cihazlarda ve daha sonra Tanılama verileri varsayılan otomatik olarak tam olarak ayarlanır. Daha fazla bilgi için [Windows Tanılama verileri](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+    
     - **Değişiklik hesabı seçeneklerini gizle (Windows 10, 1809 veya sonraki bir sürümü gerektirir)**: Seçin **Gizle** değişiklik hesabı seçenekleri şirket, oturum açma ve etki alanı hata sayfalarında görüntülenmesini önlemek için. Bu seçenek, [Azure Active Directory’de şirket markasının yapılandırılmasını](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) gerektirir.
     - **Kullanıcı hesabı türü**: Kullanıcının hesap türünü seçin (**yönetici** veya **standart** kullanıcı).
     - **Beyaz Eldiven OOBE izin**: Seçin **Evet** beyaz Eldiven desteği sağlamak için.

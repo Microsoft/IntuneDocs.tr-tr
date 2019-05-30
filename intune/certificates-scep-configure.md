@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c4cb95d9eacd8967ecacedfe1a5d335b729005
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e802a7196369cf7918ffd8b76e62e03176e7a617
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043738"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374096"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -224,7 +224,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Location                        |      Değer      | Type  |      Veriler       |
+   |                        Location                        |      Value      | Type  |      Veriler       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |
@@ -272,8 +272,8 @@ Bu adımda şunları yapacaksınız:
 
 2. **Özellik Ayarlarını Düzenle**’ye tıklayın ve ardından şu değerleri ayarlayın:
 
-    - **sorgu dizesi (Bayt)** = **65534**
-    - **URL uzunluğu üst sınırı (Bayt)** = **65534**
+    - **sorgu dizesi (Bayt)**  = **65534**
+    - **URL uzunluğu üst sınırı (Bayt)**  = **65534**
 
 3. Aşağıdaki kayıt defteri anahtarını inceleyin:
 
@@ -297,7 +297,7 @@ Bu adımda şunları yapacaksınız:
 > [!IMPORTANT] 
 > Microsoft Intune Sertifika Bağlayıcısı, ayrı bir Windows sunucusunda yüklü **olmalıdır**. Sertifika veren Sertifika Yetkilisi’ne (CA) yüklenemez. Ayrıca Ağ Cihazı Kayıt Hizmeti (NDES) rolüyle aynı sunucuda da yüklü **olmalıdır**.
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seçin **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**.
 3. İndirin ve bağlayıcı için SCEP dosyasını kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
 
@@ -350,7 +350,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 
 ## <a name="create-a-scep-certificate-profile"></a>Bir SCEP sertifika profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. SCEP sertifika profili için bir **Ad** ve **Açıklama** girin.
 4. **Platform** açılan listesinde, bu SCEP sertifikası için cihaz platformunu seçin. Şu anda, cihaz kısıtlama ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
@@ -384,17 +384,17 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         - **E-posta olarak ortak ad**
         - **IMEI (Uluslararası Mobil Donanım Kimliği)**
         - **Seri numarası**
-        - **Özel**: Bu seçeneği belirlediğinizde bir **özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim iki değişkeni destekler: **Ortak ad (CN)** ve **e-posta (E)**. **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
+        - **Özel**: Bu seçeneği belirlediğinizde bir **özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim iki değişkeni destekler: **Ortak ad (CN)** ve **e-posta (E)** . **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
 
-            - **CN={{UserName}}**: Kullanıcının kullanıcı asıl adı gibi janedoe@contoso.com
-            - **CN={{AAD_Device_ID}}**: Azure Active Directory (AD) bir cihaz kaydettiğinizde atanan bir kimliği. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
-            - **CN = {{SERIALNUMBER}}**: Genellikle bir cihazı tanımlamak için üretici tarafından kullanılan benzersiz seri numarası (SN)
-            - **CN={{IMEINumber}}**: Cep telefonunu tanımlamak için kullanılan uluslararası mobil ekipman kimliği (IMEI) benzersiz numarası
-            - **CN={{OnPrem_Distinguished_Name}}**: Virgül ile ayrılmış bir göreli ayırt edici ad dizisi `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN={{UserName}}** : Kullanıcının kullanıcı asıl adı gibi janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}** : Azure Active Directory (AD) bir cihaz kaydettiğinizde atanan bir kimliği. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
+            - **CN = {{SERIALNUMBER}}** : Genellikle bir cihazı tanımlamak için üretici tarafından kullanılan benzersiz seri numarası (SN)
+            - **CN={{IMEINumber}}** : Cep telefonunu tanımlamak için kullanılan uluslararası mobil ekipman kimliği (IMEI) benzersiz numarası
+            - **CN={{OnPrem_Distinguished_Name}}** : Virgül ile ayrılmış bir göreli ayırt edici ad dizisi `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
-            - **CN={{onPremisesSamAccountName}}**: Yöneticiler, Azure Active Directory'den samAccountName özniteliğini eşitlenebilmesi Azure AD kullanarak AD connect adlı bir öznitelikte `onPremisesSamAccountName`. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
+            - **CN={{onPremisesSamAccountName}}** : Yöneticiler, Azure Active Directory'den samAccountName özniteliğini eşitlenebilmesi Azure AD kullanarak AD connect adlı bir öznitelikte `onPremisesSamAccountName`. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
 
                 `{{onPremisesSamAccountName}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onPremisesSamAccountName` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
@@ -468,7 +468,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         Bu değişkenler, özel değer metin kutusuna statik metin ile eklenebilir. Örneğin DNS özniteliği `DNS name = {{AzureADDeviceId}}.domain.com` olarak eklenebilir.
 
         > [!IMPORTANT]
-        >  - SAN'ın statik metninde küme parantezleri **{ }**, kanal simgeleri **|** ve noktalı virgüller **;** kullanılamaz. 
+        >  - SAN'ın statik metninde küme parantezleri **{ }** , kanal simgeleri **|** ve noktalı virgüller **;** kullanılamaz. 
         >  - Bir cihaz sertifikası değişkeni kullanırken değişkeni küme parantezleri **{ }** içine alın.
         >  - `{{FullyQualifiedDomainName}}` yalnızca Windows ve etki alanına katılmış cihazlarda kullanılır. 
         >  -  Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
@@ -484,12 +484,12 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
    - **Anahtar kullanımı**: Sertifika için anahtar kullanımı seçeneklerini girin. Seçenekleriniz şunlardır:
      - **Anahtar şifreleme**: Yalnızca anahtar şifreli olduğunda anahtar değişimine izin verir.
      - **Dijital imza**: Yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verir.
-   - **Anahtar boyutu (bit)**: Anahtarın içerdiği bit sayısını seçin
+   - **Anahtar boyutu (bit)** : Anahtarın içerdiği bit sayısını seçin
    - **Karma algoritması** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için kullanılabilir karma algoritma türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
    - **Kök sertifika**: Kök daha önce yapılandırdığınız ve kullanıcıya ve/veya cihaz atanan CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır. SCEP sertifikası profilinde atanan aynı gruba bu güvenilen kök sertifika profilini atama emin olun.
    - **Genişletilmiş Anahtar Kullanımı**: **Ekleme** sertifikanın değerlerini sertifikaların hedeflenen amacına. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
    - **Kayıt Ayarları**
-     - **Yenileme eşiği (%)**: Cihaz yenilenmesini sertifikasının kalan sertifika ömrünün yüzde kaç olması girin.
+     - **Yenileme eşiği (%)** : Cihaz yenilenmesini sertifikasının kalan sertifika ömrünün yüzde kaç olması girin.
      - **SCEP sunucu URL'leri**: SCEP aracılığıyla sertifika verecek NDES sunucuları için bir veya daha fazla URL girin. Örneğin, aşağıdakine benzer girin `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
      - **Tamam**’ı seçin ve profilinizi **Oluşturun**.
 

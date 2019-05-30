@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042629"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373941"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune Delivery optimization ayarları
 
@@ -36,7 +36,7 @@ Windows 10 teslim iyileştirme hakkında bilgi edinmek için bkz. [teslim iyile�
 > **Yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları** değiştirilir **teslim iyileştirme** ayarları. Kullanmak için var olan güncelleştirme halkaları değiştirilebilir **teslim iyileştirme** ayarları. [Var olan güncelleştirme halkaları için teslim iyileştirme taşıma](#move-existing-update-rings-to-delivery-optimization) (Bu makaledeki) 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin > **Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
 

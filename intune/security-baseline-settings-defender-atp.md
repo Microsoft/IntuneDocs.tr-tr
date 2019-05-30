@@ -5,7 +5,7 @@ description: Microsoft Defender Gelişmiş tehdit koruması yönetmek için Intu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040739"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373505"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune için Microsoft Defender Gelişmiş tehdit koruması temel ayarları
 
 Microsoft Intune tarafından desteklenen Microsoft Defender Gelişmiş tehdit Koruması (eski adıyla Windows Defender Gelişmiş tehdit koruması) taban çizgisi ayarlarını görüntüleyin. Varsayılan değerleri bu makalede, Intune için varsayılan taban çizgisi yapılandırmasını temsil eder. Bu varsayılanlar, Intune önerilen yapılandırmasını temsil eder ve Windows Varsayılanları eşleşmeyebilir.
+
+  Ortamınızı kullanmak için önkoşulları karşıladığı durumlarda Microsoft Defender Gelişmiş tehdit koruması temel kullanılabilir [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)).
+
+
+
 
 > [!NOTE]  
 > WDATP temel ayarlar **Önizleme**. Önizleme ile kullanılabilir ayarlar ve bu ayarlar, bu içerik sunan Sipariş listesini portalda kullanılabilir eşleşmeyebilir. 

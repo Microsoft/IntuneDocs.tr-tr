@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050128"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374080"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP için ıntune'da koşullu erişim uyumluluğu zorla
 
@@ -83,11 +83,11 @@ Yapılandırma paketini kullanarak bir cihaz ekledikten sonra bunu tekrar yapman
 
 ### <a name="create-the-configuration-profile"></a>Yapılandırma profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz Yapılandırması** > **Profiller** > **Profil oluştur**’u seçin.
 3. Bir **Ad** ve **Açıklama** girin.
 4. **Platform** olarak **Windows 10 ve üzeri**’ni seçin
-5. **Profil türü** olarak **Windows Defender ATP (Windows 10 Masaüstü)**’nü seçin.
+5. **Profil türü** olarak **Windows Defender ATP (Windows 10 Masaüstü)** ’nü seçin.
 6. Şu ayarları yapılandırın:
 
   - **Windows Defender ATP istemci yapılandırma paketi türü**: Seçin **katmanına** profile yapılandırma paketi eklemek için. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
@@ -105,11 +105,11 @@ Yapılandırma paketini kullanarak bir cihaz ekledikten sonra bunu tekrar yapman
 ## <a name="create-the-compliance-policy"></a>Uyumluluk ilkesini oluşturma
 Uyumluluk ilkesi, cihazda kabul edilebilir bir risk düzeyi belirler.
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur**’u seçin.
 3. Bir **Ad** ve **Açıklama** girin.
 4. **Platform** olarak **Windows 10 ve üzerini** seçin.
-5. İçinde **Windows Defender ATP** ayarlar, **cihaz veya makine risk puanı altında olmasını gerektir** seçeneğini dilediğiniz düzeye. Tehdit düzeyi sınıflandırmalarını olan [Windows Defender ATP tarafından belirlenen](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
+5. İçinde **Windows Defender ATP** ayarlar, **cihaz veya makine risk puanı altında olmasını gerektir** seçeneğini dilediğiniz düzeye. Tehdit düzeyi sınıflandırmalarını olan [Windows Defender ATP tarafından belirlenen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection).
 
    - **NET**: Bu en güvenli düzeydir. Cihazda mevcut bir tehdit olamaz ancak cihaz şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir. (Windows Defender ATP kullanıcılar değeri *güvenli*.)
    - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumludur. Orta veya yüksek tehdit düzeyindeki cihazlar uyumsuzdur.
@@ -120,7 +120,7 @@ Uyumluluk ilkesi, cihazda kabul edilebilir bir risk düzeyi belirler.
 
 ## <a name="assign-the-policy"></a>İlke atama
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz uyumluluğu** > **İlkeler**’i ve ardından Windows Defender ATP uyumluluk ilkenizi seçin.
 3. **Atamalar**’ı seçin.
 4. Azure AD gruplarınıza ilkeyi atamak için grupları dahil edin veya hariç tutun.
@@ -153,7 +153,7 @@ Cihaz *uyumsuzsa* koşullu erişim ilkesi, kaynaklara erişimi engeller. Yani bi
 ## <a name="monitor-device-compliance"></a>Cihaz uyumluluğunu izleme
 Ardından Windows Defender ATP uyumluluk ilkesine sahip cihazların durumunu izleyin.
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz uyumluluğu** > **İlke uyumluluğu**’nu seçin.
 3. Listede Windows Defender ATP ilkenizi bulun ve hangi cihazların uyumlu, hangilerinin uyumsuz olduğuna bakın.
 

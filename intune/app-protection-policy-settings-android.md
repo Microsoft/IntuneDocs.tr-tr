@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4d6331083256ab5c658519854459cdb07056466
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
+ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049716"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66270003"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
 İlke ayarları üç kategoriye ayrılır: veri koruma ayarları, erişim gereksinimlerini ve koşullu başlatma. Bu makalede *ilkeyle yönetilen uygulamalar* terimi, uygulama koruma ilkeleriyle yapılandırılan uygulamaları ifade eder.
+
+> [!IMPORTANT]
+> Intune Şirket portalı, Android cihazlar için uygulama koruma ilkelerini almaya cihazda gereklidir. Daha fazla bilgi için bkz. [Intune Şirket Portalı uygulama erişim gereksinimleri](end-user-mam-apps-android.md).
 
 ##  <a name="data-protection"></a>Veri koruma 
 ### <a name="data-transfer"></a>Veri Aktarımı
@@ -112,7 +115,7 @@ Varsayılan olarak bazı ayarlara önceden yapılandırılmış değer ve eyleml
 |---------|------------| 
 | **En fazla PIN denemesi** | Kullanıcının yapılandırma eylemi gerçekleştirmek zorunda kalmadan önce başarılı bir şekilde girmesi gereken PIN deneme sayısını belirtin. Bu ilke ayarı biçimi pozitif tamsayıyı destekler. *Eylemler* şunları içerir: <br><ul><li>**PIN sıfırla** - Kullanıcının PIN’ini sıfırlaması gerekir.</li></ul> <ul><li>**Verileri sil** - Uygulamayla ilişkili kullanıcı hesabı cihazdan silinir.  </li></ul> </li></ul> Varsayılan değer = **5** |
 | **Çevrimdışı yetkisiz kullanım süresi** | MAM uygulamalarının çevrimdışı çalıştırılabileceği dakika sayısıdır. Uygulama için erişim gereksinimleri yeniden denetlenmeden önce geçmesi gereken süreyi (dakika cinsinden) belirtin. *Eylemler* şunları içerir: <br><ul><li>**Erişimi engelle (dakika)** - MAM uygulamalarının çevrimdışı çalıştırılabileceği dakika sayısıdır. Uygulama için erişim gereksinimleri yeniden denetlenmeden önce geçmesi gereken süreyi (dakika cinsinden) belirtin. Bu süre dolduktan sonra, uygulamanın çalıştırılmaya devam edebilmesi için Azure Active Directory'de (Azure AD) kullanıcı kimlik doğrulaması yapılması gerekir. <br><br>Bu ilke ayarı biçimi pozitif tamsayıyı destekler. <br><br>Varsayılan değer = **720** dakika (12 saat) </li></ul> <ul><li>**Verileri sil (gün)**: Uygulama, yönetici tarafından tanımlanan bu süre içerisinde çevrimdışı çalıştığında kullanıcıdan ağa bağlanmasını ve yeniden kimlik doğrulamasını ister. Kullanıcı başarıyla oturum açarsa, verilerine erişmeye devam edebilir ve çevrimdışı zaman aralığı sıfırlanır.  Kullanıcı kimlik doğrulaması başarısız olursa uygulama, kullanıcı hesabı ve verilerinde seçmeli silme gerçekleştirir. Daha fazla bilgi için bkz. [Intune tarafından yönetilen uygulamalardan kurumsal verileri temizleme](https://docs.microsoft.com/intune/apps-selective-wipe).</li></ul> Bu ilke ayarı biçimi pozitif tamsayıyı destekler. <br><br>  Varsayılan değer = **90 gün** </li></ul> <br><br>  Bu girdi, her örnek farklı eylemi destekleyecek şekilde birden fazla kez görünebilir. |   
-| **Jailbreak uygulanmış/kök erişim izni verilmiş cihazlar** |Bu ayarın değeri yoktur. *Eylemler* şunları içerir: <br><ul><li>**Erişimi engelle**  - Bu uygulamanın jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışması engelleyin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak bu uygulamada iş veya okul verilerine erişmek için farklı bir cihaz kullanması gerekir.</li></ul> <ul><li>**Verileri sil** - Uygulamayla ilişkili kullanıcı hesabı cihazdan silinir.  </li></ul> |
+| **Jailbreak uygulanmış/kök erişim izni verilmiş cihazlar** |Bu ayarın değeri yoktur. *Eylemler* şunları içerir: <br><ul><li>**Erişimi engelle ** - Bu uygulamanın jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışması engelleyin. Kullanıcı kişisel görevler için uygulamaları kullanmaya devam edebilir, ancak bu uygulamada iş veya okul verilerine erişmek için farklı bir cihaz kullanması gerekir.</li></ul> <ul><li>**Verileri sil** - Uygulamayla ilişkili kullanıcı hesabı cihazdan silinir.  </li></ul> |
 | **En düşük işletim sistemi sürümü** | Bu uygulamayı kullanmak için gereken bir en düşük Android işletim sistemini belirtin. *Eylemler* şunları içerir: <br><ul><li>**Uyar** - Cihazın Android sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.  </li></ul> <ul><li>**Erişimi engelle** - Cihazın Android sürümü bu gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.</li></ul> <ul><li>**Verileri sil** - Uygulamayla ilişkili kullanıcı hesabı cihazdan silinir.  </li></ul> </li></ul>Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler. |
 | **En düşük uygulama sürümü** | En düşük işletim sistemi için bir değer belirtin. *Eylemler* şunları içerir: <br><ul><li>**Uyar** - Cihazdaki uygulama sürümü gereksinimi karşılamıyorsa kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.</li></ul> <ul><li>**Erişimi engelle** - Cihazın uygulama sürümü gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir. </li></ul> <ul><li>**Verileri sil** - Uygulamayla ilişkili kullanıcı hesabı cihazdan silinir. </li></ul> </li></ul> Uygulamalar arasında genellikle farklı sürüm şemaları bulunduğundan, en az bir uygulama sürümünün bir uygulamayı hedeflediği (*Outlook sürümü ilkesi* gibi) bir ilke oluşturun.<br><br> Bu girdi, her örnek farklı eylemi destekleyecek şekilde birden fazla kez görünebilir.<br><br> Bu ilke ayarı biçimi birincil.ikincil, birincil.ikincil.derleme, birincil.ikincil.derleme.düzeltme'yi destekler.<br><br> Son kullanıcılarınızın bir iş kolu (LOB) uygulaması güncelleştirilmiş bir sürümü nereden yapılandırabilirsiniz. Son kullanıcılar, bu özelliği görürsünüz **en düşük uygulama sürümü** koşullu başlatma iletişim, son kullanıcıların en az bir LOB uygulaması sürümüne güncelleştirmek ister. LOB uygulama koruma İlkesi (uygulama) bir parçası olarak bu güncelleştirme ayrıntıları sağlamanız gerekir. Bu özellik, Android'de Şirket portalı kullanır. Son kullanıcı bir LOB uygulaması güncelleştirmeleri nasıl yapılandırmak için uygulamanın anahtarı ile gönderilen bir yönetilen uygulama yapılandırma İlkesi gerekir `com.microsoft.intune.myappstore`. Gönderilen değeri, hangi depolama son kullanıcı uygulamayı yükleyecek tanımlayacaksınız. Uygulamayı Şirket portalı dağıtılırsa, değer olmalıdır `CompanyPortal`. Diğer deposu için tam bir URL girmeniz gerekir. |
 | **En düşük düzeltme eki sürümü** | Google tarafından yayınlanan Android güvenlik düzeltme eklerinde alt sınır gerektirin.  <br><ul><li>**Uyar** - Cihazın Android sürümü gereksinimi karşılamıyorsa, kullanıcı bir bildirim görür. Bu bildirim kapatılabilir.  </li></ul> <ul><li>**Erişimi engelle** - Cihazın Android sürümü bu gereksinimi karşılamıyorsa, kullanıcının uygulamaya erişimi engellenir.</li></ul> <ul><li>**Verileri sil** - Uygulamayla ilişkili kullanıcı hesabı cihazdan silinir.  </li></ul></li></ul> Bu ilke ayarı *YYYY-AA-GG* tarih biçimini destekler. |

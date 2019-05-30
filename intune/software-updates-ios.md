@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044848"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373424"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune'da iOS yazılım güncelleştirme ilkelerini ekleme
 
@@ -31,7 +31,7 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Güncelleştirme varsa ve kısıtlan
 
 ## <a name="configure-the-policy"></a>İlkeyi yapılandırma
 
-1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Yazılım güncelleştirilmeleri** > **iOS için güncelleştirme ilkeleri** > **Oluştur**’u seçin.
 3. Aşağıdaki ayarları girin:
 
@@ -51,7 +51,7 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Güncelleştirme varsa ve kısıtlan
       - **Başlangıç saati**: Sınırlı bir zaman çerçevesi başlangıç saati seçin. Örneğin, 05: 00 başlangıç güncelleştirmeleri yüklü şekilde 5'te girin.
       - **Bitiş saati**: Kısıtlı zaman dilimi bitiş saati seçin. Örneğin, güncelleştirme 1'de başlayarak yüklenebilmesi için 1'da girin.
 
-    - **Zamanlanmış güncelleştirmeler için değişiklik olmadan son kullanıcılara yazılım güncelleştirmelerini görünürlüğünü gecikme (gün)**: 
+    - **Zamanlanmış güncelleştirmeler için değişiklik olmadan son kullanıcılara yazılım güncelleştirmelerini görünürlüğünü gecikme (gün)** : 
 
       **Bu ayar taşınabilir [cihaz kısıtlamaları](device-restrictions-ios.md#general). Portalda bu konumdan kaldırılacak**. Kısa bir süre için burada mevcut ilkeleri değiştirilebilir. Sonra yaklaşık bir ay, mevcut İlkeleri'nden bu ayar kaldırılacak.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebc3de4f0fb3b497c1786f8d089b565a688cd08d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047221"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373468"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Windows 10 cihazlarda ıntune'da PowerShell betiklerini kullanın
 
@@ -41,15 +41,31 @@ Intune yönetim uzantısı yerleşik Windows 10 MDM özelliklerini tamamlar. Win
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Intune yönetim uzantısı şu önkoşullara sahiptir:
+Intune yönetim uzantısı, aşağıdaki önkoşulları vardır. Bunlar sağlandığında, Intune yönetim uzantısı otomatik olarak bir PowerShell Betiği çalıştırılamadığında yüklü değil veya Win32 uygulaması, kullanıcı veya cihaza atanır.
 
-- Cihazlar alanına veya Azure AD ile Azure AD için kayıtlı ve Intune için yapılandırılmış [otomatik kayıt](quickstart-setup-auto-enrollment.md). Intune yönetim uzantısı, Azure AD'ye katılmış destekler, hibrit Azure AD etki alanına katılmamışsa ve kayıtlı Windows cihazları birlikte yönetilir.
-- Cihazlar Windows 10 sürüm 1607 veya üzeri çalıştırmalıdır.
-- Bir PowerShell Betiği, Intune yönetim uzantısı aracısı yüklü değil veya bir Win32 uygulaması için bir kullanıcı veya cihaz güvenlik grubu olarak dağıtılır.
+- Windows 10 sürüm 1607 veya üzerini çalıştıran cihazlar. Kullanarak cihaz kaydedilirse [toplu otomatik kayıt](windows-bulk-enroll.md), 1703 veya daha sonra cihazları Windows 10 sürümü çalıştırması gerekir. Intune yönetim uzantısı olmayan mağaza uygulamaları çalıştıran S modu izin vermediğinden üzerinde Windows 10 S modunda desteklenmez. 
+  
+- Azure Active Directory'ye (AD) katılmış cihazlar da dahil olmak üzere:
+  
+  - Hibrit Azure AD'ye katılmış: Azure Active Directory (AD) alanına katılmış ve ayrıca katılmış cihazların şirket içi Active Directory (AD). Bkz: [hibrit Azure Active Directory join sürecinizi planlamak](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) Kılavuzu.
+
+- Intune'a kayıtlı cihazlar da dahil olmak üzere:
+
+  - Grup İlkesi'nde (GPO) kayıtlı cihazlar. Bkz: [Grup İlkesi kullanarak otomatik olarak bir Windows 10 cihazını kaydetme](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) Kılavuzu.
+  
+  - El ile hangi olduğunda, Intune'a kayıtlı cihazlar:
+  
+    - Kullanıcı cihazda yerel bir kullanıcı hesabı kullanarak oturum açtığında ve cihazı Azure AD'ye el ile birleştiren (ve Azure AD'de ıntune otomatik kayıt etkin).
+    
+    Or
+    
+    - Kullanıcı cihazda kullanıcı Azure AD hesabı kullanarak oturum açtığında ve ardından Intune'a kaydedilir.
+
+  - Configuration Manager ve Intune kullanan ortak yönetilen cihazlar. Bkz: [ortak yönetim nedir](https://docs.microsoft.com/sccm/comanage/overview) Kılavuzu.
 
 ## <a name="create-a-script-policy"></a>Bir betik ilkesi oluşturma 
 
-1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz yapılandırması** > **PowerShell betikleri** > **Ekle**'yi seçin.
 3. Aşağıdaki özellikleri girin:
     - **Ad**: PowerShell komut dosyası için bir ad girin. 
@@ -71,7 +87,7 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 5. Seçin **Tamam** > **Oluştur** betiği kaydedilemiyor.
 
 > [!NOTE]
-> PowerShell komut dosyası (varsayılan) yönetici ayrıcalıkları altında çalışır ne zaman komut kullanıcı içeriğine ayarlandığından ve son kullanıcının cihaz üzerinde yönetici ayrıcalıklarına sahip.
+> PowerShell betiğini yönetici ayrıcalığı altında (varsayılan) çalıştıran ne zaman komut kullanıcı içeriğine ayarlandığından ve son kullanıcının cihaz üzerinde yönetici ayrıcalıklarına sahip.
 
 ## <a name="assign-the-policy"></a>İlke atama
 
@@ -84,8 +100,7 @@ Intune yönetim uzantısı şu önkoşullara sahiptir:
 
 > [!NOTE]
 > - Son kullanıcılar, cihaza PowerShell betiklerini yürütmek için oturum açmanız gerekmez.
-> - Azure AD güvenlik gruplarına cihaz ıntune'da PowerShell betiklerini hedefleyebilir.
-> - Azure AD güvenlik gruplarını için ıntune'da PowerShell betiklerini hedefleyebilir.
+> - Azure AD cihaz güvenlik gruplarını veya Azure AD güvenlik gruplarını ıntune'da PowerShell betiklerini hedefleyebilir.
 
 Intune yönetim uzantısı istemci saatte bir denetler ve yeni komut dosyaları veya değişiklikler için Intune ile her bir yeniden başlatma işleminden sonra. İlkeyi Azure AD gruplarına atadıktan sonra, PowerShell betiği çalıştırılır ve çalıştırma sonuçları raporlanır. Betiğini yürütür sonra olmadığı sürece betik veya ilke değişikliği yeniden yürütülmez.
 
@@ -110,41 +125,57 @@ Azure portalda kullanıcılar ve cihazlar için PowerShell betiklerinin çalış
 
 ## <a name="common-issues-and-resolutions"></a>Genel sorunlar ve çözümleri
 
-PowerShell betikleri, her oturum açmada çalıştırmayın. Bunlar yalnızca yeniden başlatma sonrasında çalıştırma veya **Microsoft Intune Yönetim Uzantısı** hizmeti yeniden başlatılır. Intune yönetim uzantısı istemci denetimi betiğinde herhangi bir değişiklik veya ıntune ilkesi için saat başına bir kez.
-
 #### <a name="issue-intune-management-extension-doesnt-download"></a>Sorun: Intune yönetim uzantısı indirilmedi
 
 **Olası çözümlemeler**:
 
-- Cihazları Azure AD'ye otomatik olarak kayıtlı olduğundan emin olun. , Cihazda doğrulamak için: 
+- Cihaz Azure AD'ye katılmış değil. Cihazların karşıladığından emin olun [önkoşulları](#prerequisites) (Bu makaledeki). 
+- PowerShell betikleri veya kullanıcıya veya cihaza ait gruplara atanan Win32 uygulamaları yoktur.
+- Cihaz Intune hizmetiyle hiç internet erişimi nedeniyle Windows anında bildirim Hizmetleri (WNS) ve benzeri erişimi iade edilemez.
+- Cihaz S modundadır. Intune yönetim uzantısı S modunda çalıştıran cihazlarda desteklenmez. 
+
+Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları yapabilirsiniz:
 
   1. Git **ayarları** > **hesapları** > **işe veya okula erişim**.
   2. Birleştirilmiş bir hesap seçin > **bilgisi**.
   3. Altında **Gelişmiş tanılama raporu**seçin **rapor oluştur**.
-  4. Açık `MDMDiagReport` bir web tarayıcısı ve Git **kayıtlı yapılandırma kaynaklarını** bölümü.
-  5. Aranacak **MDMDeviceWithAAD** özelliği. Bu özellik yoksa, Cihazınızı otomatik kayıtlı değil.
+  4. Açık `MDMDiagReport` bir web tarayıcısında.
+  5. Arama **MDMDeviceWithAAD** özelliği. Özellik varsa, otomatik olarak kayıtlı cihazdır. Bu özellik mevcut değilse, cihaz otomatik olarak kayıtlı değil.
 
-    [Windows 10 otomatik kaydı etkinleştirme](windows-enroll.md#enable-windows-10-automatic-enrollment) adımlarını içerir.
+[Windows 10 otomatik kaydı etkinleştirme](windows-enroll.md#enable-windows-10-automatic-enrollment) Intune otomatik kayıt yapılandırma adımlarını içerir.
 
 #### <a name="issue-powershell-scripts-do-not-run"></a>Sorun: PowerShell betikleri çalıştırma
 
 **Olası çözümlemeler**:
 
+- PowerShell betikleri, her oturum açmada çalıştırmayın. Bunlar çalıştırın:
+
+  - Bir cihaza komut atandığında
+  - Komut dosyasını değiştirirseniz, karşıya yükleme ve komut dosyası için bir kullanıcı veya cihaz atama
+  
+    > [!TIP]
+    > **Microsoft Intune Yönetim Uzantısı** cihaz çalışır (services.msc) Hizmetleri uygulamasında listelenmesini hizmet gibi bir hizmettir. Bir cihaz yeniden başlatıldıktan sonra bu hizmet de yeniden başlatın ve Intune hizmetine atanan tüm PowerShell betikleri için denetleyin. Varsa **Microsoft Intune Yönetim Uzantısı** hizmetini el ile olarak ayarlayın ve ardından cihaz yeniden başlatıldıktan sonra hizmet yeniden başlatılamayabilir.
+
+- Intune yönetim uzantısı istemci betiği herhangi bir değişiklik veya ıntune ilkesi için saat başına bir kez denetler.
 - Intune yönetim uzantısı indirdiğiniz onaylayın `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
-- Betikleri, Surface hub'larında çalışmaz.
-- Günlükleri iade `\ProgramData\Microsoft\IntuneManagementExtension\Logs` hataları.
+- Betikler, Surface hub'ları veya Windows 10 S modunda çalışmıyor.
+- Hatalar için günlükleri gözden geçirin. Bkz: [komut dosyaları sorunlarını giderme](#troubleshoot-scripts) (Bu makaledeki).
 - Olası izin sorunları için PowerShell betiğinin özelliklerinin mutlaka `Run this script using the logged on credentials`. Ayrıca oturum açmış olan kullanıcının komut dosyasını çalıştırmak için uygun izinlere sahip olup olmadığını denetleyin.
-- Betik sorunlarını gidermek için bir örnek betiği çalıştırın. Örneğin, oluşturma `C:\Scripts` dizin ve verin herkes tam denetime sahip. Şu betiği çalıştırın:
 
-  ```powershell
-  write-output "Script worked" | out-file c:\Scripts\output.txt
-  ```
+- Betik sorunlarını gidermek için aşağıdakileri yapın:
 
-  Başarılı olursa çýktý.txt oluşturulmalı ve "Betik çalışılan" metin içermesi gerekir.
+  - Cihazlarınızda PowerShell yürütme yapılandırmasını gözden geçirin. Bkz: [PowerShell yürütme İlkesi](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) Kılavuzu.
+  - Intune yönetim uzantısı kullanarak bir örnek betiği çalıştırın. Örneğin, oluşturma `C:\Scripts` dizin ve verin herkes tam denetime sahip. Şu betiği çalıştırın:
 
-- Betik yürütme Intune olmadan test etmek için komut dosyalarını kullanarak sistem bağlamı altında çalıştırmak [psexec aracı](https://docs.microsoft.com/sysinternals/downloads/psexec) yerel olarak:
+    ```powershell
+    write-output "Script worked" | out-file c:\Scripts\output.txt
+    ```
 
-  `psexec -i -s`
+    Başarılı olursa çýktý.txt oluşturulmalı ve "Betik çalışılan" metin içermesi gerekir.
+
+  - Betik yürütme Intune olmadan test etmek için sistem hesabı kullanarak komut dosyalarını çalıştırmak [psexec aracı](https://docs.microsoft.com/sysinternals/downloads/psexec) yerel olarak:
+
+    `psexec -i -s`
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

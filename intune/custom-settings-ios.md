@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune - Azure’da iOS cihazlara özel ayarlar ekleme | Microsoft Docs
 titleSuffix: ''
-description: Apple Configurator veya Apple Profile Manager araçlarından iOS ayarlarını dışarı aktarın ve daha sonra bu ayarları Microsoft Intune’a aktarın. Bu ayarlar iOS cihazlarda özel ayar ve özellikler oluşturabilir, kullanabilir ve denetleyebilir. Daha sonra bu özel profil, bir ana hat veya standart oluşturmak için kuruluşunuzdaki iOS cihazlara atanabilir veya dağıtılabilir.
+description: Apple Configurator veya Apple Profile Manager araçlarından iOS ayarlarını dışarı aktarın ve daha sonra bu ayarları Microsoft Intune’a aktarın. Bu ayarlar, oluşturma, kullanma ve özel ayarları ve iOS cihazlarındaki özellikleri denetlemek. Daha sonra bu özel profil, bir ana hat veya standart oluşturmak için kuruluşunuzdaki iOS cihazlara atanabilir veya dağıtılabilir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6bfd832d9225221bcc6aaefe091a3cebf57a54c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9637cc36d6ee901b5da0ffbe44180cd7dbdaffee
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048613"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374004"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için özel ayarlar kullanma
 
@@ -43,7 +43,7 @@ Bu makale, iOS cihazlar için özel profil oluşturma işlemini gösterir. Ayrı
 
   - Profile Manager’da [mobil cihaz yönetimini](https://help.apple.com/serverapp/mac/5.7/#/apd05B9B761-D390-4A75-9251-E9AD29A61D0C) etkinleştirin.
   - Profile Manager’a [iOS cihazlar](https://help.apple.com/profilemanager/mac/5.7/#/pm9onzap1984) ekleyin.
-  - Profile Manager’a cihaz ekledikten sonra **Under the Library (Kitaplık Altında)** > **Devices** (Cihazlar) seçeneğine gidip cihazınızı seçin ve **Settings** (Ayarlar) seçeneğine gidin. Cihazın genel ayarlarını girin.
+  - Profile Manager’a cihaz ekledikten sonra **Under the Library (Kitaplık Altında)**  > **Devices** (Cihazlar) seçeneğine gidip cihazınızı seçin ve **Settings** (Ayarlar) seçeneğine gidin. Cihazın genel ayarlarını girin.
 
     Bu dosyayı indirin ve kaydedin. Intune profilinde bu dosyayı girmeniz istenir.
 
@@ -51,7 +51,7 @@ Bu makale, iOS cihazlar için özel profil oluşturma işlemini gösterir. Ayrı
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 

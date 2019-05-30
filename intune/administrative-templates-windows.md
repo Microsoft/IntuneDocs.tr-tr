@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0965d08dc2981fbd35bcb5aa3c2652726a96ccd5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9309b110d37795f840e10f22b71b06507aea4c62
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373733"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Intune Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonları kullanma
 
@@ -34,14 +34,14 @@ Bu makalede, Windows 10 cihazları için bir şablon oluşturma adımları liste
 
 ## <a name="create-a-template"></a>Bir şablon oluşturma
 
-1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Profil için bir ad girin.
     - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
     - **Platform**: Seçin **Windows 10 ve üzeri**.
-    - **Profil türü**: Seçin **Yönetimsel Şablonlar (Önizleme)**.
+    - **Profil türü**: Seçin **Yönetimsel Şablonlar (Önizleme)** .
 
 4. **Oluştur**’u seçin. Yeni pencerede seçin **ayarları**. Her ayar listelenir ve kullanabileceğiniz önce ve sonra diğer ayarları görmek için okları:
 
