@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9085cff7e305f7081a3048637c80df43e22d2ee9
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374110"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402656"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>İlkeler ve Profiller sorun giderme ve ıntune
 
@@ -32,13 +32,12 @@ Bu makalede bazı genel sorun giderme teknikleri listeler ve karşılaşabilece�
 
 ## <a name="use-built-in-troubleshooting"></a>Yerleşik sorun giderme kullanın
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seçin **sorun giderme**:
+1. İçinde [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)seçin **sorun giderme**:
 
     ![Intune, Yardım ve Destek gidin ve sorun giderme seçin](./media/help-and-support-troubleshoot.png)
 
-3. Seçin **Kullanıcı Seç** > bir sorun bir kullanıcı seçin > **seçin**.
-4. Onaylayın **Intune lisansı** ve **hesap durumu** her ikisini de yeşil denetimleri göster:
+2. Seçin **Kullanıcı Seç** > bir sorun bir kullanıcı seçin > **seçin**.
+3. Onaylayın **Intune lisansı** ve **hesap durumu** her ikisini de yeşil denetimleri göster:
 
     ![Intune, kullanıcı seçin ve hesap durumu ve Intune lisansı, durum yeşil denetimleri işaretleri Göster onaylayın](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ Bu makalede bazı genel sorun giderme teknikleri listeler ve karşılaşabilece�
     - [Kullanıcıların cihazları kaydedebilmesi için lisans atama](licenses-assign.md)
     - [Intune’a kullanıcı ekleme](users-add.md)
 
-5. Altında **cihazları**, sorun yaşıyor cihaz bulun. Farklı sütunlar gözden geçirin:
+4. Altında **cihazları**, sorun yaşıyor cihaz bulun. Farklı sütunlar gözden geçirin:
 
     - **Yönetilen**: Bu özellik bir cihaz uyumluluk veya yapılandırma ilkelerini almaya göstermesi **MDM** veya **EAS/MDM**.
 
@@ -164,4 +163,6 @@ Bu sorunu çözmek için yerel sistem saatini Internet saatine mümkün olduğun
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Hala yardıma ihtiyacınız varsa, [Intune için destek alma](get-support.md).
+[Genel sorunlar ve çözümleri ile e-posta profilleri](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+Alma [destekleyen Microsoft gelen Yardım](get-support.md), veya [topluluk forumları](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: d58a10e62e4ff65c0c1589fcf948a6704224bc51
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264144"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402739"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -47,7 +47,7 @@ Bilgilerini içeren CSV dosyasını içeri aktararak Windows Autopilot cihazlar�
 
     ![Windows Autopilot cihazlarının ekran görüntüsü](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. **Windows Autopilot cihazları ekle** altında, eklemek istediğiniz cihazları listeleyen bir CSV dosyasına gözatın. CSV dosyası seri numaralarını, isteğe bağlı Windows ürün kimlikleri, donanım karmaları ve isteğe bağlı bir grup etiketler cihazların listelemelisiniz. Listede en fazla 500 satır olabilir. Üst bilgi ve aşağıda gösterilen satırı biçimi kullanın: `Device Serial Number,Windows Product ID,Hardware Hash,GroupTag`
+2. **Windows Autopilot cihazları ekle** altında, eklemek istediğiniz cihazları listeleyen bir CSV dosyasına gözatın. CSV dosyası seri numaralarını, isteğe bağlı Windows ürün kimlikleri, donanım karmaları ve isteğe bağlı bir grup etiketler cihazların listelemelisiniz. Listede en fazla 500 satır olabilir. Üst bilgi ve aşağıda gösterilen satırı biçimi kullanın: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
     `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Windows Autopilot cihazları ekleme ekran görüntüsü](media/enrollment-autopilot/autopilot-import-device2.png)
@@ -92,16 +92,16 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 
 6. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
 7. Aşağıdaki seçenekleri yapılandırın:
-    - **Son Kullanıcı Lisans Sözleşmesi (EULA)**: (Windows 10, 1709 veya üzeri) EULA'ın kullanıcılara gösterilip gösterilmeyeceğini isteyip istemediğinizi seçin.
+    - **Son Kullanıcı Lisans Sözleşmesi (EULA)** : (Windows 10, 1709 veya üzeri) EULA'ın kullanıcılara gösterilip gösterilmeyeceğini isteyip istemediğinizi seçin.
     - **Gizlilik ayarları**: Gizlilik ayarlarının kullanıcılara gösterilip gösterilmeyeceğini isteyip istemediğinizi seçin.
     >[!IMPORTANT]
     >AutoPilot dağıtımları Windows 10 sürüm 1903 cihazlarda ve daha sonra Tanılama verileri varsayılan otomatik olarak tam olarak ayarlanır. Daha fazla bilgi için [Windows Tanılama verileri](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
     
-    - **Değişiklik hesabı seçeneklerini gizle (Windows 10, 1809 veya sonraki bir sürümü gerektirir)**: Seçin **Gizle** değişiklik hesabı seçenekleri şirket, oturum açma ve etki alanı hata sayfalarında görüntülenmesini önlemek için. Bu seçenek, [Azure Active Directory’de şirket markasının yapılandırılmasını](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) gerektirir.
+    - **Değişiklik hesabı seçeneklerini gizle (Windows 10, 1809 veya sonraki bir sürümü gerektirir)** : Seçin **Gizle** değişiklik hesabı seçenekleri şirket, oturum açma ve etki alanı hata sayfalarında görüntülenmesini önlemek için. Bu seçenek, [Azure Active Directory’de şirket markasının yapılandırılmasını](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) gerektirir.
     - **Kullanıcı hesabı türü**: Kullanıcının hesap türünü seçin (**yönetici** veya **standart** kullanıcı).
     - **Beyaz Eldiven OOBE izin**: Seçin **Evet** beyaz Eldiven desteği sağlamak için.
     - **Cihaz adı şablon**: Seçin **Evet** bir cihaz kayıt sırasında adlandırırken kullanılacak bir şablon oluşturmak için. Adlar en çok 15 karakter olmalıdır; harf, rakam ve tire içerebilir. Ancak tamamen sayıdan oluşamaz. Donanıma özgü seri numarası eklemek için [%SERIAL% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanın. Veya x değerinin eklenecek basamak sayısına karşılık geldiği [%RAND:x% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanarak rastgele bir sayı dizesi ekleyin. 
-    - **Dil (bölge)**\*: Cihaz için kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
+    - **Dil (bölge)** \*: Cihaz için kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
     - **Klavyeyi otomatik olarak yapılandırma**\*: Varsa bir **dil (bölge)** olan seçili seçin **Evet** için klavye seçimi sayfasını atlayın. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
 8. **İleri**’yi seçin.
 9. Üzerinde **kapsam etiketleri** sayfasında, isteğe bağlı olarak, bu profile uygulamak istediğiniz kapsamı etiketleri ekleyin. Kapsam etiketleri hakkında daha fazla bilgi için bkz: [dağıtılmış için rol tabanlı erişim denetimi ve kapsam etiketleri kullanmak BT](scope-tags.md).

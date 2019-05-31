@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041168"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412725"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -94,9 +94,8 @@ Postman kullanarak REST araması yapmak için aşağıdaki bilgilere ihtiyacın�
 
 Uç nokta da gerekir. Veri Ambarı uç noktanızı almak için özel akış URL’si gereklidir. OData uç noktasını Veri Ambarı bölmesinden alabilirsiniz.
 
-1. [Azure portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Diğer görevler** altında bulunan **Intune Veri Ambarı’nı Ayarlama**’yı seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Açık **Intune veri ambarı** altındaki veri ambarı bağlantıyı seçerek **diğer görevleri** sağ alt tarafında **Intune - genel bakış** dikey penceresi.
 4. **Üçüncü taraf raporlama hizmetleri kullan** altında özel akış URL’sini kopyalayın. Bu, şuna benzer olmalıdır: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 Uç nokta şu biçimdedir: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
@@ -155,7 +154,7 @@ Aşağıdaki örnek, bir basit REST istemcisi içerir. Kod, .Net kitaplığında
 > Aşağıdaki kod [örneğine GitHub’dan](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs) ulaşabilirsiniz. Örnekteki son değişiklikler ve güncelleştirmeler için GitHub deposuna başvurun.
 
 1. **Microsoft Visual Studio**’yu açın.
-2. **Dosya** > **Yeni Proje**’yi seçin. **Visual C#**’yi genişletin ve **Konsol Uygulaması (.Net Framework)** öğesini seçin.
+2. **Dosya** > **Yeni Proje**’yi seçin. **Visual C#** ’yi genişletin ve **Konsol Uygulaması (.Net Framework)** öğesini seçin.
 3. Projeyi ` IntuneDataWarehouseSamples` olarak adlandırın, projeyi kaydetmek istediğiniz konuma göz atın ve **Tamam**’a tıklayın.
 4. Çözüm Gezgini’nde çözümün adına sağ tıklayın ve daha sonra **Çözüm için NuGet Paketlerini Yönetme**’ye tıklayın. **Gözat**’a tıklayın, daha sonra arama kutusuna `Microsoft.IdentityModel.Clients.ActiveDirectory` yazın.
 5. Paketi seçin, Çözümünüz için Paketleri Yönetme altında **IntuneDataWarehouseSamples**’a tıklayın ve daha sonra **Yükle**’yi seçin.

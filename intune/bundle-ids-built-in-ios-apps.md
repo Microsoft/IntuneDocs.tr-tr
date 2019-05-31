@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 05/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: ''
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ce56cb295847385c23f6aca5f86a8a3010e310a
-ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
+ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66270037"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402758"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune'da kullanabileceğiniz yerleşik iOS uygulamaları için paket kimlikleri
 
-İOS cihazlarda özellik yapılandırmak, iOS cihazlarda yerleşik uygulamaları da ekleyebilirsiniz. Bu makalede, paket kimlikleri bazı yaygın yerleşik iOS uygulamalarının listelenmektedir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun.
+İOS cihazlarda özellik yapılandırmak, iOS cihazlarda yerleşik uygulamaları da ekleyebilirsiniz. Bu makalede, paket kimlikleri bazı yaygın yerleşik iOS uygulamalarının listelenmektedir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun. Apple'nın listesini [iOS paket kimlikleri](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (Apple web sitesini açar).
 
 ## <a name="bundle-ids"></a>Paket kimlikleri
 

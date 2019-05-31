@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure’da cihazlar için Wi-Fi profili oluşturma | Microsoft Docs
-description: Microsoft Intune’da Wi-Fi cihaz yapılandırma profilleri oluşturmak için adımları inceleyin. Android, Android Kurumsal, Android bilgi noktası, iOS, macOS, Windows 10 ve sonrası ve Windows Holographic for Business için profil oluşturun. Bu profilleri kullanarak sertifika kullanmak için bir Wi-Fi bağlantısı oluşturmak, EAP türü seçmek, kimlik doğrulama yöntemi seçmek, proxy etkinleştirmek gibi pek çok şey yapabilirsiniz.
+description: Microsoft Intune’da Wi-Fi cihaz yapılandırma profilleri oluşturmak için adımları inceleyin. Android, Android Kurumsal, Android bilgi noktası, iOS, macOS, Windows 10 ve üzeri ve Windows Holographic for Business için profiller oluşturun. Bu profilleri kullanarak sertifika kullanmak için bir Wi-Fi bağlantısı oluşturmak, EAP türü seçmek, kimlik doğrulama yöntemi seçmek, proxy etkinleştirmek gibi pek çok şey yapabilirsiniz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73d6aab271e6c065dbdaac2359974457d8fae607
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050552"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412012"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune’da cihazlarınız için Wi-Fi ayarları ekleme ve kullanma
 
@@ -48,7 +48,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin. 
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Wi-Fi profili için bir **Ad** ve **Açıklama** girin.
 4. Açılan **Platform** listesinde Wi-Fi ayarlarının uygulanacağı cihaz platformunu seçin. Seçenekleriniz şunlardır:

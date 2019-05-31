@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8554f0addf7364150c3f225e8cba1a7d751f8a7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4cae90723c7ff92a8042f068fb49c1709506c7ff
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048090"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412422"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da cihaz kısıtlama ayarlarını yapılandırma
 
@@ -35,7 +35,7 @@ Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özell
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. İçinde için [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Cihaz kısıtlama profili için bir **Ad** ve **Açıklama** girin.
 4. **Platform** açılan listesinden, özel ayarları uygulamak istediğiniz cihaz platformunu seçin. Şu anda, cihaz kısıtlama ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
@@ -48,7 +48,7 @@ Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özell
     - **Windows 8.1 ve üzeri**
     - **Windows 10 ve üzeri**
 
-5. Açılan **Profil** türü listesinden **Cihaz kısıtlamaları**’nı seçin. Bir cihaz oluşturmak için kısıtlamaları profili Surface Hub gibi Windows 10 Team cihazlarının sonra seçin **cihaz kısıtlamaları (Windows 10 Team)**.
+5. Açılan **Profil** türü listesinden **Cihaz kısıtlamaları**’nı seçin. Bir cihaz oluşturmak için kısıtlamaları profili Surface Hub gibi Windows 10 Team cihazlarının sonra seçin **cihaz kısıtlamaları (Windows 10 Team)** .
 6. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Ayrıntılı ayarları platformunuzu seçin:
 
     - [Android ayarları](device-restrictions-android.md)

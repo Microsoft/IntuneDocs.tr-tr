@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618557c129b693ad035dd82c823db43dcca2ee4d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ae63fa19bb24381580a206481a9ac2e3684314a
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049455"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412382"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune ile macOS cihazlara Office 365 atama
 
@@ -40,8 +40,7 @@ macOS cihazlarına Office 365’i eklemeye başlamadan önce aşağıdaki ayrın
 ## <a name="create-and-configure-the-app-suite"></a>Uygulama paketini oluşturma ve yapılandırma
 
 **Uygulamalar** bölmesinden Office 365 uygulamaları ekleyin.
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin. 
 5. **Add (Ekle)** seçeneğini belirleyin.

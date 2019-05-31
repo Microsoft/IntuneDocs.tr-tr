@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045286"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412706"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Olay hub'ları, depolama için günlük verileri gönderin veya log analytics (Önizleme) Intune'a
 
@@ -53,7 +53,7 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz bağlı olarak, aşağ
 
 ## <a name="send-logs-to-azure-monitor"></a>Günlükleri göndermek için Azure İzleyici
 
-1. [Azure portalında](https://portal.azure.com/) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Altında **izleme**seçin **tanılama ayarları**. İlk kez açtığınızda, açın:
 
     ![Intune'a günlükleri göndermek için Azure İzleyici için tanılama ayarlarını açın](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ Ayrıca, Intune, kayıt, uyumluluk, yapılandırma, cihazlar, istemci uygulamala
 
 Örneğin, denetim vermek için cihaz uyumluluğu kullanırken kaydeder:
 
-1. [Azure portalında](https://portal.azure.com/) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seçin **cihaz uyumluluğu** > **İzleyici** > **denetim günlükleri**:
 
     ![Depolama alanını Azure izleme, olay hub'ları veya Analiz Intune verileri yönlendirmek için denetim günlüklerini seçin](media/audit-logs-under-monitor-in-compliance.png)
