@@ -652,14 +652,14 @@
               href: review-logs-using-azure-monitor.md
             - name: Uygulama koruma günlüklerini gözden geçirme
               href: app-protection-policy-settings-log.md
-            - name: E-posta profilleriyle ilgili sorunları giderme
+            - name: İlke ve profillerle ilgili sorunları giderme
+              href: troubleshoot-policies-in-microsoft-intune.md
+            - name: E-posta profili sorunları ve çözümleri
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: Yazılım güncelleştirmesi sorunlarını giderme
               href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Uç nokta koruması sorunlarını giderme
+            - name: Uç nokta korumasıyla ilgili yaygın hatalar
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-            - name: İlke ve profillerle ilgili sorunları giderme
-              href: troubleshoot-policies-in-microsoft-intune.md
             - name: Koşullu erişim sorunlarını giderme
               href: troubleshoot-conditional-access.md
             - name: Exchange bağlayıcısı sorunlarını giderme
@@ -825,6 +825,10 @@
                   href: vpn-settings-windows-phone-8-1.md
                 - name: Özel
                   href: custom-settings-windows-phone-8-1.md
+    - name: Hata kodları ve açıklamaları
+      items:
+        - name: Yazılım güncelleştirmesi hataları
+          href: software-update-agent-error-codes.md
     - name: Geliştirici kılavuzu
       items:
         - name: Üçüncü taraf sertifika yetkilisi ekleme API'si
