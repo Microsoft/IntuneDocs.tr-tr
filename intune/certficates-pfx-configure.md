@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf6febf0ead541e1346cc095bb14437083dd5d64
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373736"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454046"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -136,7 +136,7 @@ VPN, WiFi ve diğer kaynaklara sahip bir cihaz kimliğini doğrulamak için bir 
 > [!IMPORTANT]  
 > Microsoft Intune sertifika bağlayıcı, sertifika veren sertifika yetkilisi (CA) üzerinde yüklü ve bunun yerine ayrı bir Windows sunucusuna yüklenmesi gerekir.  
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri**, filtre **Intune** > seçin **Intune**.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seçin **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**.
 3. İndirin ve bağlayıcı dosyasını bir konuma kaydetme Bağlayıcısı'nı yüklemek için nereye gideceğinizi sunucudan erişebilir.
 

@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: c4a17abdb518daba30fbdf339090f7e24c8c26d5
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412141"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454135"
 ---
 Bu bildirimler önemli yardımcı olabilecek bilgiler, gelecekteki Intune değişiklikler ve özellikler için hazırlama belirtin. 
 
@@ -27,3 +27,16 @@ Son kullanıcıların şirket portalı üzerinden Google güncelleştirilecek g�
 
 #### <a name="additional-information"></a>Ek Bilgi
 https://firebase.google.com/docs/cloud-messaging/
+
+
+### <a name="new-fullscreen-experience-coming-to-intune---4593669--"></a>Intune'da kullanıma sunulacak yeni ekran deneyimi <!--4593669-->
+Güncelleştirilmiş bölgelerimizde kullanıma sunuyoruz oluşturun ve Azure portalında ıntune'a kullanıcı Arabirimi deneyimlerini düzenleyin. Bu yeni deneyim, mevcut iş akışları bir dikey pencerede sıkıştırılmış bir Sihirbazı stili biçimi kullanılarak basitleştirecektir. Bu güncelleştirme hemen "dikey penceresinde genişlemesi" veya herhangi bir oluşturma ile yapın ve derin dikey yolculuklarından detaya gitmek ihtiyacınız olan akış düzenleyin. Oluşturma iş akışları da atamaları (uygulama ataması hariç) içerecek şekilde güncelleştirilir.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Tam ekran deneyimi ıntune'a hem portal.azure.com ve devicemanagement.microsoft.com önümüzdeki birkaç ay içinde kullanıma sunulacak. Bu güncelleştirme için kullanıcı Arabiriminde, mevcut ilkeleri ve profilleri işlevselliğini etkilemez, ancak biraz değiştirilmiş bir iş akışı görürsünüz. Örneğin, yeni bir ilke oluşturduğunuzda, bu akış, ilkeyi oluşturduktan sonra bunu yerine bir parçası olarak bazı atamaları ayarlayabilirsiniz olacaktır. Yeni deneyimi konsolda nasıl görüneceğini, ekran görüntüleri için ek bilgilere blog gönderisine bakın.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+Herhangi bir eylemde bulunmanız gerekmez ancak gerekirse, BT pro rehberi güncelleştirme düşünebilirsiniz. Azure portalında ıntune çeşitli dikey pencereleri için bu deneyim gönderilirken belgelerimize güncelleştireceğiz.
+
+#### <a name="additional-information"></a>Ek Bilgi 
+https://aka.ms/intune_fullscreen

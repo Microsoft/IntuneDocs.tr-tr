@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7657577372a37c7554941886b80277bfee11e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1aa79bbaa6765a0d4b6009468bdfa184222c5f00
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049415"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454087"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
@@ -47,8 +47,7 @@ Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune
 
 ## <a name="get-started"></a>başlarken
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm Hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
 5. **Add (Ekle)** seçeneğini belirleyin.
@@ -126,6 +125,14 @@ Seçtiyseniz **yapılandırma Tasarımcısı** altındaki **ayarı biçimi** aç
     - **Paylaşılan bilgisayar etkinleştirmeyi kullan**: Birden çok kullanıcı bir bilgisayarı paylaşıyorsa, bu seçeneği belirleyin. Daha fazla bilgi için bkz. [Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Diller**: Office, Windows ile son kullanıcı cihazında yüklü olan desteklenen dillerden birinde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin. <p></p>
     Intune üzerinden yönetilen Office 365 Pro Plus uygulamaları için ek diller dağıtabilirsiniz. Kullanılabilir diller listesi, dil paketinin **Tür** bilgisini içerir (çekirdek, kısmı ve yazım denetleme). Azure portalında **Microsoft Intune** > **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçin. **Uygulama ekle** dikey penceresindeki **Uygulama türü** listesinde **Office 365 Paketi** altından **Windows 10**'u seçin. **Uygulama Paketi Ayarları** dikey penceresinde **Diller**'i seçin. Ek bilgi için bkz: [Office 365 ProPlus'ta dil dağıtmaya genel bakış](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="select-scope-tags-optional"></a>Kapsam etiketleri (isteğe bağlı) seçin
+Kapsam etiketleri, istemci uygulama bilgilerini ıntune'da kimler görebilir belirlemek için kullanabilirsiniz. Kapsam etiketleri hakkında tam Ayrıntılar için bkz: [dağıtılmış için rol tabanlı erişim denetimi ve kapsam etiketleri kullanmak BT](scope-tags.md).
+
+1. Seçin **kapsam (etiketler)**  > **ekleme**.
+2. Kullanım **seçin** için kapsam etiketleri için arama kutusuna.
+3. Bu uygulamaya atamak istediğiniz kapsam etiketleri yanındaki onay kutusunu seçin.
+4. **Seç** > **Tamam**'ı seçin.
 
 ## <a name="enter-xml-format"></a>XML biçiminde girin
 

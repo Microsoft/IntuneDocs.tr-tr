@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6e010a6f7d9a975c93b24ad7248534ff548359d
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 0b1544266ff0f03341bd08e0dd8dc3c27eea1252
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412138"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454114"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -234,7 +234,7 @@ Intune'a kayıtlı üzerinde yüklenmesi, Win32 uygulamaları atayabilirsiniz Az
 Birincil de kullanıcı aygıt benzeşimi kullanıcı (UDA) adlı kullanıcı, cihaz genel bakış sayfası gösterilir. Bir cihaz için birincil kullanıcı görmek için **Intune** > **cihazları** > **tüm cihazlar** > bir cihaz seçin. Birincil kullanıcıya en görüneceğini **genel bakış** sayfası.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android Kurumsal iş profili cihazları için ek Yönetilen Google Play uygulaması raporlaması <!-- 4105925  -->
-Android Kurumsal iş profili cihazlarına dağıtılan Yönetilen Google Play uygulamaları için, cihazda yüklü olan uygulamanın sürüm numarasını görüntüleyebilirsiniz. Bu yalnızca gerekli uygulamalar için geçerlidir. Gelecekteki bir sürümde aynı işlevselliği kullanılabilir uygulamalar için etkinleştirilir. 
+Android Kurumsal iş profili cihazlarına dağıtılan Yönetilen Google Play uygulamaları için, cihazda yüklü olan uygulamanın sürüm numarasını görüntüleyebilirsiniz. Bu yalnızca gerekli uygulamalar için geçerlidir.  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS üçüncü taraf klavyeler <!-- 4111843   -->
 Intune uygulama koruma İlkesi (uygulama) desteği **üçüncü taraf klavyeler** ayarı iOS artık bir iOS platform değişikliği nedeniyle desteklenmiyor. Intune Yönetici konsolunda bu ayarı yapılandırmak mümkün olmayacaktır ve Intune uygulama SDK'sı istemcide uygulanmaz.
@@ -284,7 +284,7 @@ Bu güncelleştirme, yeni parola ayarları içerir, tam olarak yönetilen cihazl
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Bir Windows 10 cihaz uyumluluk İlkesi, TPM yonga denetle <!-- 3617671 -->
 
-Bu özellik ertelendi ve gelecekteki bir sürümde eklenmelidir.
+Bu özellik ertelendi ve daha sonra yayınlanacak sunulması planlanmaktadır.
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>Windows 10 ve üzeri cihazlarda Microsoft Edge tarayıcısı için güncelleştirilmiş kullanıcı Arabirimi değişiklikleri <!-- 3775833   -->
 Bir cihaz yapılandırma profili oluşturduğunuzda, izin verebilir veya Windows 10 ve üzeri cihazlarda Microsoft Edge kısıtlamanıza (**cihaz Yapılandırması** > **profilleri**  >  **Profili oluşturma** > **Windows 10 ve üzeri** bir platform için > **cihaz kısıtlamaları** profil türü için >  **Microsoft Edge tarayıcısı**). Bu güncelleştirme, Microsoft Edge ayarlarını daha açıklayıcı ve daha kolay anlaşılır. 
@@ -327,7 +327,7 @@ Kayıt durumu sayfası (ESP) ESP profilinde belirtilen zaman aşımı değerini 
 ### <a name="device-management"></a>Cihaz yönetimi
 
 #### <a name="retire-noncompliant-devices-----1827291-----"></a>Uyumlu olmayan cihazları devre dışı bırakma  <!-- 1827291   -->
-Bu özellik ertelendi ve gelecekteki bir sürümde gelir.
+Bu özellik ertelendi ve gelecekteki sürümlerde sunulması planlanmaktadır.
 
 
 ### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
@@ -885,7 +885,7 @@ Yeni deneyim, sorununuzu kendi kelimelerinizle açıklamanıza ve sorun giderme 
 ### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Uygulamalar için kapsam etiketleri <!-- 1081941 -->
-Rolleri ve uygulamalar için erişimi sınırlandırmak için kapsamı etiketleri oluşturabilirsiniz. Böylece kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama erişimi için bir uygulama bir kapsam etiketi ekleyebilirsiniz. Şu anda, yönetilen Google Play veya Apple Volume Purchase Program (VPP) kullanarak satın aldığınız uygulamaları Intune'a eklenen uygulamaları kapsam etiketleri atama yapılamaz (ancak desteği gelecekte gelir). Daha fazla bilgi için [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
+Rolleri ve uygulamalar için erişimi sınırlandırmak için kapsamı etiketleri oluşturabilirsiniz. Böylece kişiler de bu kapsam etiketi atanan rollerle yalnızca uygulama erişimi için bir uygulama bir kapsam etiketi ekleyebilirsiniz. Şu anda, yönetilen Google Play veya Apple Volume Purchase Program (VPP) kullanarak satın aldığınız uygulamaları Intune'a eklediğiniz uygulamalar (gelecekteki desteği planlanmaktadır) kapsam etiketleri atanamaz. Daha fazla bilgi için [kapsam etiketleri filtresi ilkeleri kullanan](scope-tags.md).
 
 <!-- ########################## -->
 ## <a name="week-of-december-10-2018"></a>10 Aralık 2018 haftası
@@ -915,7 +915,7 @@ Intune artık macOS 10.12 veya sonraki bir sürümü gerektirir. Önceki macOS s
 Şirkete denetimli iOS cihazlarında herhangi bir uygulamayı kaldırabilirsiniz. **Kaldırma** atama türüyle kullanıcı veya cihaz gruplarını hedefleyerek herhangi bir uygulamayı kaldırabilirsiniz. Kişisel veya denetimsiz iOS cihazlarında yalnızca Intune kullanarak yüklenen uygulamaları kaldırabilirsiniz.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Intune Win32 uygulama içeriği indiriliyor <!-- 2617320 -->
-Windows 10 RS3 ve üzerindeki istemciler Windows 10 istemci üzerinde bir teslim iyileştirme bileşenini kullanarak Intune Win32 uygulama içeriği karşıdan yükler. Teslim iyileştirme, varsayılan olarak açık eşler arası işlevsellik sağlar. Dağıtım iyileştirme Grup İlkesi ve gelecek Intune MDM aracılığıyla yapılandırılabilir Daha fazla bilgi için [Windows 10 için teslim iyileştirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Windows 10 RS3 ve üzerindeki istemciler Windows 10 istemci üzerinde bir teslim iyileştirme bileşenini kullanarak Intune Win32 uygulama içeriği karşıdan yükler. Teslim iyileştirme, varsayılan olarak açık eşler arası işlevsellik sağlar. Şu anda dağıtım iyileştirme Grup İlkesi tarafından yapılandırılabilir. Daha fazla bilgi için [Windows 10 için teslim iyileştirme](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Son kullanıcının cihaz ve uygulama içerik menüsü <!-- 2771453 -->
 Son kullanıcılar artık bağlam menüsü üzerinde cihaz ve uygulamaları bir cihazı yeniden adlandırma ya da uyumluluk denetimi gibi yaygın eylemleri tetiklemek için kullanabilirsiniz.

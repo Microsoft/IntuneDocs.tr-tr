@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042665"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454043"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Veri Ambarı uygulaması - yalnızca kimlik doğrulama
 
@@ -78,7 +78,7 @@ Bu bölümde, uygulamalara izinler vereceksiniz.
 1.  **Ayarlar** dikey penceresinde **Gerekli izinler**’i seçin.
 2.  **Ekle**'yi tıklatın.
 3.  **Bir API ekle**’yi seçerek **Bir API seç** dikey penceresini görüntüleyin.
-4.  **Microsoft Intune API (MicrosoftIntuneAPI)**’yi seçin ve daha sonra **Bir API seç** dikey penceresinden **Seç**’e tıklayın. **İzinleri seç** adımı seçilir ve **Erişim Ver** dikey penceresi görüntülenir.
+4.  **Microsoft Intune API (MicrosoftIntuneAPI)** ’yi seçin ve daha sonra **Bir API seç** dikey penceresinden **Seç**’e tıklayın. **İzinleri seç** adımı seçilir ve **Erişim Ver** dikey penceresi görüntülenir.
 5.  **Uygulama İzinleri** bölümüden **Microsoft Intune’dan veri ambarı bilgileri al**’ı seçin.
 6.  **Erişim Ver** dikey penceresinde **Seç**’e tıklayın.
 7.  **API erişimi ekle** dikey penceresinde **Tamam**’a tıklayın.
@@ -89,13 +89,14 @@ Bu bölümde, uygulamalara izinler vereceksiniz.
 Visual Studio’yu kullanarak .NET Framework’ü destekleyen ve kodlama dili olarak C# kullanan bir Konsol Uygulaması (.NET Framework) projesi oluşturun.
 
 1.  **Dosya** > **Yeni** > **Proje**’yi seçerek **Yeni Proje** iletişim kutusunu görüntüleyin.
-2.  Sol tarafta **Visual C#**’yi seçerek tüm .NET Framework projelerini görüntüleyin.
-3.  **Konsol Uygulaması (.NET Framework)**’nı seçin, bir uygulama adı ekleyin ve **Tamam**’a tıklayarak uygulamayı oluşturun.
+2.  Sol tarafta **Visual C#** ’yi seçerek tüm .NET Framework projelerini görüntüleyin.
+3.  **Konsol Uygulaması (.NET Framework)** ’nı seçin, bir uygulama adı ekleyin ve **Tamam**’a tıklayarak uygulamayı oluşturun.
 4.  **Çözüm Gezgini**’nde **Program.cs**’yi seçerek kodu görüntüleyin.
-5.  Açılan menüde **Ekle** > **Yeni öğe**’yi seçin. **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
-6.  Sol tarafta, **Visual C#** altında **Kod**’u seçin.
-7.  **Sınıf** seçin, sınıfın adını *IntuneDataWarehouseClass.cs* olarak değiştirin ve **Ekle**’ye tıklayın.
-8.  <code>Main</code> yönteminde aşağıdaki kodu ekleyin:
+5.  Çözüm Gezgini'nde derlemesine bir başvuru eklemek `System.Configuration`.
+6.  Açılan menüde **Ekle** > **Yeni öğe**’yi seçin. **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
+7.  Sol tarafta, **Visual C#** altında **Kod**’u seçin.
+8.  **Sınıf** seçin, sınıfın adını *IntuneDataWarehouseClass.cs* olarak değiştirin ve **Ekle**’ye tıklayın.
+9.  <code>Main</code> yönteminde aşağıdaki kodu ekleyin:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -110,7 +111,7 @@ Visual Studio’yu kullanarak .NET Framework’ü destekleyen ve kodlama dili ol
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. Kod dosyasının üstüne aşağıdaki kodu ekleyerek ilave ad alanları ekleyin:
+10. Kod dosyasının üstüne aşağıdaki kodu ekleyerek ilave ad alanları ekleyin:
 
     ``` csharp
      using System.Security;
@@ -118,7 +119,7 @@ Visual Studio’yu kullanarak .NET Framework’ü destekleyen ve kodlama dili ol
      using System.Configuration;
     ``` 
 
-10. <code>Main</code> yönteminden sonra, uygulama anahtarını işlemek ve dönüştürmek için aşağıdaki gizli yöntemi ekleyin:
+11. <code>Main</code> yönteminden sonra, uygulama anahtarını işlemek ve dönüştürmek için aşağıdaki gizli yöntemi ekleyin:
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -136,10 +137,10 @@ Visual Studio’yu kullanarak .NET Framework’ü destekleyen ve kodlama dili ol
     }
     ```
 
-11. **Çözüm Gezgini**’nde **Başvurular**’a sağ tıklayın ve daha sonra **NuGet Paketlerini Yönet**’i seçin.
-12. *Microsoft.IdentityModel.Clients.ActiveDirectory*’yi aratın ve ilgili Microsoft NuGet paketini yükleyin.
-13. **Çözüm Gezgini**’nde *App.config* dosyasını seçin ve açın.
-14. xml’in aşağıdaki gibi görünmesi için <code>appSettings</code> kısmını ekleyin:
+12. **Çözüm Gezgini**’nde **Başvurular**’a sağ tıklayın ve daha sonra **NuGet Paketlerini Yönet**’i seçin.
+13. *Microsoft.IdentityModel.Clients.ActiveDirectory*’yi aratın ve ilgili Microsoft NuGet paketini yükleyin.
+14. **Çözüm Gezgini**’nde *App.config* dosyasını seçin ve açın.
+15. xml’in aşağıdaki gibi görünmesi için <code>appSettings</code> kısmını ekleyin:
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,8 +156,8 @@ Visual Studio’yu kullanarak .NET Framework’ü destekleyen ve kodlama dili ol
     </configuration>
     ``` 
 
-15. Uygulama ile ilgili benzersiz değerlerinizle eşleşmesi için <code>appId</code>, <code>appKey</code> ve <code>tenantDomain</code> değerlerini güncelleştirin.
-16. Uygulamanızı oluşturun.
+16. Uygulama ile ilgili benzersiz değerlerinizle eşleşmesi için <code>appId</code>, <code>appKey</code> ve <code>tenantDomain</code> değerlerini güncelleştirin.
+17. Uygulamanızı oluşturun.
 
     >[!NOTE] 
     > İlave uygulama kodunu görmek için bkz. [Intune-Veri-Ambarı kod örneği](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).

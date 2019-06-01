@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb55951390c3fe19651087e16c3185018cfd9dab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049301"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454077"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama
 
@@ -44,9 +44,8 @@ Intune, grupları dışlarken kullanıcı-cihaz ilişkisini dikkate almaz. Kulla
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Uygulama atarken grupları dahil etme ve dışlama 
 Dahil etme ve dışlama atamasını kullanarak gruplara uygulama atamak için:
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** menüsünde **İstemci uygulamaları**’nı seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** bölmesinde **Uygulamalar**’ı seçin. Eklenen uygulamalar listesi gösterilir.
 5. Atamak istediğiniz uygulamayı seçin. Bir panoda uygulama hakkındaki bilgiler görüntülenir. 
 6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin. 
@@ -76,7 +75,7 @@ Dahil etme ve dışlama atamasını kullanarak gruplara uygulama atamak için:
 
 Grup atamaları yaparken, zaten atanmış olan gruplar değiştirilemez. Şu anda kullanılamaz durumda olan bir grubu seçmek isterseniz, önce uygulamanın atanmış listesinden uygulamayı kaldırın. 
 
-Atamaları düzenlemek için, uygulamanın **Atamalar** listesinde değiştirmek istediğiniz atamayı içeren satırı seçin. Ayrıca, satırın sonundaki üç noktayı (**…**) ve sonra da **Kaldır**'ı seçerek de atamayı kaldırabilirsiniz. **Atamalar** listesinin görünümünü değiştirmek için **Atama türü**’ne veya **Dahil edilen/Dışlanan**’a göre gruplandırın.
+Atamaları düzenlemek için, uygulamanın **Atamalar** listesinde değiştirmek istediğiniz atamayı içeren satırı seçin. Ayrıca, satırın sonundaki üç noktayı ( **…** ) ve sonra da **Kaldır**'ı seçerek de atamayı kaldırabilirsiniz. **Atamalar** listesinin görünümünü değiştirmek için **Atama türü**’ne veya **Dahil edilen/Dışlanan**’a göre gruplandırın.
 
 ![Intune uygulama atamaları - Tamamlandı](./media/apps-inc-exl-05.png)
 
