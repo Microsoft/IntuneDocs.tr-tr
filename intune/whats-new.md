@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b1544266ff0f03341bd08e0dd8dc3c27eea1252
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454114"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469596"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -160,6 +160,14 @@ Arama yaptığınızda IMEI numaraları boşluklar gerekmez **tüm cihazlar**.
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Intune portalında bir cihaz Apple portalında silme yansıtılır <!--2489996 -->
 Bir cihaz Apple aygıt kayıt programı veya Apple iş Manager portallarını silinirse, cihaz otomatik olarak Intune'dan sonraki eşitleme sırasında silinir.
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>Kayıt durumu sayfası artık Win32 uygulamalarını izler <!-- 2714451 -->
+Bu yalnızca Windows 10 sürüm 1903 çalıştıran cihazlara ve üstü için geçerlidir. Daha fazla bilgi için [ayarlama bir kayıt durumu sayfası](windows-enrollment-status.md).
+
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Sıfırla ve Graph API'sini kullanarak cihazları toplu olarak temizleme <!-- 3295288 -->
+Artık, sıfırlama ve en fazla 100 cihazları Graph API'sini kullanarak toplu halde temizleme.
 
 
 ### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
