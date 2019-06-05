@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043788"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506866"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -37,7 +37,7 @@ _**Gerekmeyen**_ uygulamanızı kaydetmek için. İçin iç [iş kolu (LOB) uygu
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Uygulamanız Apple App Store veya Google Play gibi bir genel uygulama mağazasında yayınlanacaksa:
 
-Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_. BT yöneticileri ardından uygulayabileceğiniz bir uygulama koruma ilkesi olarak listelenen yönetilen uygulamaya bir [Intune iş ortağı uygulaması tarafından korunan](apps-supported-intune-apps.md#partner-apps).
+Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_ . BT yöneticileri ardından uygulayabileceğiniz bir uygulama koruma ilkesi olarak listelenen yönetilen uygulamaya bir [Intune iş ortağı uygulaması tarafından korunan](apps-supported-intune-apps.md#partner-apps).
 
 Kayıt tamamlanıp Microsoft Intune ekibi tarafından onaylanana kadar, Intune yöneticilerinin uygulamanızın ayrıntılı bağlantısına uygulama koruma ilkesi uygulama seçeneği olmaz. Microsoft ayrıca uygulamanızı kendi [Microsoft Intune İş Ortakları sayfasına](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) ekler. Sayfada Intune uygulama koruma ilkelerini desteklediğini göstermek üzere uygulamanın simgesi görüntülenir.
 
@@ -81,11 +81,11 @@ Depolarımızdan çatallama ve çekme işlemleri yaparken kullanabileceğiniz bi
 
 Intune Uygulama SDK'sı ile uygulamanızı tümleştirmenize yardımcı olması için aşağıdaki geliştirici kılavuzlarından biri gerekir:
 
-* **[İOS Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-ios.md)**: Bu belgede, yerel iOS uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
+* **[İOS Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-ios.md)** : Bu belgede, yerel iOS uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
 
-* **[Android Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-android.md)**: Bu belgede, yerel Android uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
+* **[Android Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-android.md)** : Bu belgede, yerel Android uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
 
-* **[Intune uygulama SDK'sı Xamarin bağlamaları Kılavuzu](app-sdk-xamarin.md)**: Bu belge, iOS ve Xamarin için Intune uygulama koruma ilkeleri kullanarak Android uygulamaları oluşturmanıza yardımcı olur.
+* **[Intune uygulama SDK'sı Xamarin bağlamaları Kılavuzu](app-sdk-xamarin.md)** : Bu belge, iOS ve Xamarin için Intune uygulama koruma ilkeleri kullanarak Android uygulamaları oluşturmanıza yardımcı olur.
 
 
 
@@ -173,16 +173,13 @@ Kimlik doğrulaması için uygulamanızı kendi özel Azure Active Directory (AA
 
 Uygulamanızı bir Azure kiracısı içinde kaydettikten sonra altında bazılarındaki **tüm uygulamaları**, kendi uygulama erişimini Intune uygulama koruma Hizmeti'ne (daha önce MAM hizmeti olarak da bilinir) vermeniz gerekir. Azure portalında:
 
-1.  **Azure Active Directory** dikey penceresine gidin.
-2.  Uygulama için **Uygulama kaydı** ayarını seçin.
-3.  **API Erişimi** başlığının altındaki **Ayarlar**’da **Gerekli İzin**’i seçin. 
-4.  **+ Ekle**’ye tıklayın.
-5.  **Bir API Seç**’e tıklayın. 
-6.  Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** yazın.
-7.  API’ler listesinde **Microsoft Mobil Uygulama Yönetimi**’ni seçin ve seçime tıklayın.
-8.  **Kullanıcının Uygulama Yönetim Verilerini Okuma ve Yazma**'yı seçin.
-9.  **Bitti**’ye tıklayın.
-10. **İzin ver**'e, ardından **Evet**'e tıklayın. 
+1.  Git **Azure Active Directory** dikey penceresi.
+2.  Altında **uygulama kayıtları**listenin uygulama için ayarlanmış'na gidin.
+3.  Tıklayın **+ izin Ekle**.
+4.  Tıklayarak **Kuruluşum kullandığı API'leri**. 
+5.  Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** yazın.
+6.  Altında **Temsilcili izinler**seçin **DeviceManagementManagedApps.ReadWrite: Kullanıcının uygulama yönetimi veri okuma ve yazma*** onay kutusu.
+7. Tıklayın **izinleri eklemek**.
 
 ### <a name="badge-your-app-optional"></a>Uygulamanıza rozet ekleyin (isteğe bağlı)
 
