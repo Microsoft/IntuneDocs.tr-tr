@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1d13d4094239cd36f736bb5cb19af7a11d29e727
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374080"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66719574"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP için ıntune'da koşullu erişim uyumluluğu zorla
 
@@ -52,8 +52,7 @@ ATP’yi Intune ile birlikte kullanmak için aşağıdakilerin yapılandırılm�
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Intune’da Windows Defender ATP’yi etkinleştirme
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Cihaz uyumluluğu** > **Windows Defender ATP** > **Windows Defender Güvenlik Merkezi'ni açın** öğesini seçin.
 
     ![Windows Defender Güvenlik Merkezi’ni açın](./media/atp-device-compliance-open-windows-defender.png)

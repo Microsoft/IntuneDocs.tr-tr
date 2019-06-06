@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,19 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041646"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506893"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
 Bu makalede, Intune mobil uygulama yönetimi (MAM) ve Intune uygulama koruma hakkında sık sorulan sorulardan bazıları yanıtlanmaktadır.
 
 ## <a name="mam-basics"></a>MAM Temel Kavramları
-
 
 **MAM nedir?**<br></br>
 [Intune mobil uygulama yönetimi](/intune/app-lifecycle), kullanıcılarınız için mobil uygulamaları yayımlama, gönderme, yapılandırma, güvenlik altına alma, izleme ve güncelleştirme gibi eylemler gerçekleştirmenize olanak tanıyan Intune yönetim özellikleri paketini ifade eder.
@@ -45,7 +44,7 @@ Intune MAM iki yapılandırmayı destekler:
 
 ## <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
 
-**Uygulama koruma ilkeleri nelerdir**?<br></br>
+**Uygulama koruma ilkeleri nedir?**<br></br>
 Uygulama koruma ilkeleri, bir kuruluşa ait verilerin güvenli veya yönetilen bir uygulamanın içinde kalmasını sağlayan kurallardır. İlke, kullanıcı “kurumsal” verilere erişmeye veya bunları taşımaya çalıştığında uygulanan bir kural veya kullanıcı uygulamadayken yasaklanan veya izlenen bir eylemler kümesi olabilir.
 
 **Uygulama koruma ilkelerinin örnekleri nelerdir?**<br></br>
@@ -72,6 +71,13 @@ Daha fazla bilgi için [uygulama koruma ilkelerini izleme](app-protection-polici
 - Son kullanıcı bir uygulama koruma ilkesi tarafından hedeflenen bir güvenlik grubuna ait olmalıdır. Aynı uygulama koruma ilkesi, kullanılan belirli uygulamayı hedeflemelidir. Uygulama koruma ilkeleri [Azure portalındaki](https://portal.azure.com) Intune konsolunda oluşturulabilir ve dağıtılabilir. Güvenlik grupları şu anda oluşturulabilir [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com).
 
 - Son kullanıcının AAD hesabını kullanarak uygulamada oturum açması gerekir.
+
+**Desteklenen uygulama geliştirme platformu, uygulama, ancak Intune uygulama koruması ile etkinleştirmek istersem kullanmayan?** 
+
+Intune SDK'sı geliştirme ekibi, etkin bir şekilde test eder ve yerel Android, iOS (Obj-C, Swift), Xamarin ve Xamarin.Forms Cordova platformları oluşturulan uygulamalar için destek sağlar. Bazı müşteriler, React Native ve NativeScript gibi diğer platformlarda ile Intune SDK'sı Tümleştirmesi ile başarılı olmuş sırada açık yönergeler veya eklentiler müşterilerimizin desteklenen platformlarda dışındaki herhangi bir şey kullanarak uygulama geliştiricileri için sunmuyoruz.
+
+**Intune APP SDK’sı, Microsoft Authentication Library’yi (MSAL) veya diğer sosyal hesapları destekliyor mu?**<br></br>
+Intune APP SDK’sı, SDK’nın hem 1. hem de 3. taraf sürümleri için bazı gelişmiş ADAL işlevleri kullanır. Dolayısıyla MSAL, Intune Uygulama Koruması hizmetinde kimlik doğrulaması ve koşullu başlatma gibi çoğu temel senaryomuzla birlikte düzgün çalışmaz. Tüm Microsoft Office uygulamaları için MSAL geçmek için genel kılavuz Microsoft'un kimlik ekibinin olması koşuluyla, onu desteklemek Intune SDK'sı sonunda gerekir, ancak planlanmamaktadır bugün.
 
 **[Outlook mobil uygulamasını](https://products.office.com/outlook) kullanmak için ek gereksinimler nelerdir?**
 
@@ -164,8 +170,7 @@ Intune uygulama koruması, kullanıcı kimliğinin uygulama ve Intune Uygulama S
 **Web bağlantılarını yönetilen uygulamalardan açmanın güvenli bir yolu var mı?**<br></br>
 Evet! BT yöneticisi, Microsoft Intune tarafından geliştirilen ve Intune ile kolayca yönetilebilen bir web tarayıcısı olan [Intune Managed Browser uygulamasını](app-configuration-managed-browser.md) dağıtabilir ve bunun için uygulama koruma ilkesi ayarlayabilir. BT yöneticisi, Intune ile yönetilen tüm uygulamalardaki web bağlantılarının Managed Browser uygulaması kullanılarak açılmasını gerekli kılabilir.
 
-**Intune APP SDK’sı, Microsoft Authentication Library’yi (MSAL) veya diğer sosyal hesapları destekliyor mu?**
-Intune APP SDK’sı, SDK’nın hem 1. hem de 3. taraf sürümleri için bazı gelişmiş ADAL işlevleri kullanır. Dolayısıyla MSAL, Intune Uygulama Koruması hizmetinde kimlik doğrulaması ve koşullu başlatma gibi çoğu temel senaryomuzla birlikte düzgün çalışmaz. Henüz bunu desteklemeye yönelik bir planımız yok.
+
 
 ## <a name="app-experience-on-android"></a>Android’de uygulama deneyimi
 
@@ -199,13 +204,13 @@ Google Play Protect'ın SafetyNet API denetimi son çevrimiçi olan kullanıcı,
 Hem 'SafetyNet cihaz kanıtlama' ve 'Uygulamalarda tehdit taraması' ayarları düzgün çalışması için Google Play Hizmetleri belirlenen Google sürümünü gerektirir. Bu güvenlik alanında kalan ayarlar olduğundan, son kullanıcı bunlar bu ayarlarla hedeflenen ve Google Play Hizmetleri uygun sürümünü karşılamıyor veya Google Play Hizmetleri hiçbir erişimi engellenir. 
 
 ## <a name="app-experience-on-ios"></a>iOS’da uygulama deneyimi
-**Cihazıma bir parmak izi veya yüz kimliği eklersem veya bunları cihazımdan kaldırırsam ne olur?**
+**Cihazıma bir parmak izi veya yüz kimliği eklersem veya bunları cihazımdan kaldırırsam ne olur?**<br></br>
 Intune uygulama koruma ilkeleri, yalnızca Intune lisanslı kullanıcılara uygulama erişimi denetimi verir. Uygulamaya erişimi denetleme yollarından biri, desteklenen cihazlarda Apple’ın Touch ID veya Face ID özelliğini gerekli kılmaktır. Intune, cihazın biyometrik veritabanında bir değişiklik olduğunda ve etkin olmama zaman aşımı değeri karşılandığında kullanıcıdan PIN isteyen bir davranış uygular. Biyometrik verilerdeki değişikliklere parmak izi veya yüz kimliği eklenmesi veya kaldırılması dahildir. Intune kullanıcısı bir PIN ayarlamamışsa, Intune PIN’i ayarlamak üzere yönlendirilir.
  
 Bunun amacı, uygulama içerisindeki kuruluş verilerinizin güvenliğini sağlamak ve verileri uygulama düzeyinde korumaktır. Bu özellik yalnızca iOS için kullanılabilir ve iOS için Intune APP SDK’sı sürüm 9.0.1 veya üzeri sürümleri tümleştiren uygulamaların katılımını gerektirir. Hedeflenen uygulamalarda davranışın zorlanabilmesi için SDK tümleştirmesi gereklidir. Bu tümleştirme, sıralı bir şekilde gerçekleşir ve belirli uygulama ekiplerine bağımlıdır. Katılan uygulamalardan bazıları WXP, Outlook, Managed Browser ve Yammer’dır. 
   
 **Veri aktarımı ilkesi “yalnızca yönetilen uygulamalar” veya “uygulama yok” olarak ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS paylaşım uzantısını kullanabiliyorum. Bu veri sızıntısına neden olmaz mı?**<br></br>
-Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_. Bunu, “kurumsal” dosyayı yönetilen uygulama dışında açmaya çalışarak doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
+Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _ **“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_ . Bunu, “kurumsal” dosyayı yönetilen uygulama dışında açmaya çalışarak doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
 
 **Aynı uygulama ve kullanıcı kümesine yapılandırılan birden çok Intune uygulama koruma erişimi ayarları iOS'da nasıl çalışır?**<br></br>
 Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya erişmeyi denediklerinde, erişim için Intune uygulama koruma ilkeleri bu cihazlara belirli bir sırada uygulanır. Genel olarak öncelik temizlemededir; ardından engelleme, sonra da kapatılabilen uyarı gelir. Örneğin, belirli bir kullanıcı/uygulama için uygunsa, kullanıcıyı iOS sürümünü güncelleştirmesi için uyaran en düşük iOS işletim sistemi ayarı, kullanıcının erişimini engelleyen en düşük iOS işletim sistemi ayarından sonra uygulanacaktır. Dolayısıyla, BT yöneticisinin en düşük iOS işletim sistemi olarak 11.0.0.0 ve en düşük iOS işletim sistemi (yalnızca Uyarı) olarak 11.1.0.0'ı ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın işletim sistemi iOS 10 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük iOS işletim sistemi sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37938287cc5ddde6285ec09aa0fffea56f98b3c3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048949"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713907"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
@@ -90,8 +90,7 @@ Güvenilen sertifika profili ayarlarken bu sertifikayı içeri aktarırsınız.
 ## <a name="step-3-create-trusted-certificate-profiles"></a>3. adım: Güvenilen sertifika profilleri oluşturma
 SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Her cihaz platformu için bir güvenilen sertifika profili ve SCEP veya PKCS profili gereklidir. Güvenilen sertifikalar oluşturma adımları tüm cihaz platformlarında benzerdir.
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Cihaz yapılandırması** > **Yönet** > **Profiller** > **Profil oluştur**’u seçin.
 4. Güvenilen sertifika profili için bir **Ad** ve **Açıklama** girin.
 5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Seçenekleriniz şunlardır:
