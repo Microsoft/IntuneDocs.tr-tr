@@ -135,6 +135,10 @@
           items:
             - name: Ağ yapılandırması
               href: network-bandwidth-use.md
+            - name: Intune uç noktaları
+              href: intune-endpoints.md
+            - name: Intune ABD kamu uç noktaları
+              href: intune-us-government-endpoints.md
         - name: Intune'da oturum açma
           href: account-sign-up.md
         - name: Etki alanlarını yapılandırma
