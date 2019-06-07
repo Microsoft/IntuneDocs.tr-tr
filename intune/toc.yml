@@ -576,10 +576,12 @@
                   href: windows-store-for-business.md
                 - name: iOS e-Kitapları
                   href: vpp-ebooks-ios.md
-            - name: Şirket Portalı uygulamasını yapılandırma
+            - name: Şirket Portalı’nı yapılandırma
               href: company-portal-app.md
             - name: Managed Browser’ı yapılandırma
               href: app-configuration-managed-browser.md
+            - name: Microsoft Edge’i yapılandırma
+              href: manage-microsoft-edge.md
             - name: Outlook’u yapılandırma
               href: app-configuration-policies-outlook.md
         - name: Uygulamaları koruma
