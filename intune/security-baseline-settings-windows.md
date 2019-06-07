@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 82fa4fc7f9e60dff3c08adf3281351cbfa8eb743
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045046"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749928"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Intune için Windows Güvenlik temel ayarları  
 
-Görünüm [Windows Güvenlik taban çizgisi ayarlarını](security-baselines.md) Intune tarafından desteklenir.  
+Görünüm [Windows Güvenlik taban çizgisi ayarlarını](security-baselines.md) Intune tarafından desteklenir. Windows temel Varsayılanları Windows önerilen yapılandırmasını temsil eder ve diğer güvenlik temellerini temel varsayılanlarından eşleşmeyebilir.  
 
 > [!NOTE]  
-> Windows Güvenlik taban çizgisi ayarlarını Önizleme aşamasındadır. Önizleme ile kullanılabilir ayarlar ve bu ayarlar, bu içerik sunan Sipariş listesini Portalı'nda kullanılabilir olan değişir.  
+> Windows Güvenlik temeli ayarlar **Önizleme**. Önizleme ile kullanılabilir ayarlar ve bu ayarlar, bu içerik sunan Sipariş listesini Portalı'nda kullanılabilir olan değişir.  
 >  
 > Temel ayarlar önizlemeden sonra bu içeriği Intune'un desteklediği güvenlik taban çizgisi ayarlarını ön izlemesiz listesiyle birlikte güncelleştirir.  
 
@@ -1085,7 +1085,7 @@ Daha fazla bilgi için [ilke CSP'si - LocalPoliciesSecurityOptions](https://docs
   **Varsayılan**: Evet
 
 - **Dosya ve kayıt defteri yazma hatalarını kullanıcı konumlarında başına konumlarında sanal olarak oluştur**  
-  Bu ilke, uygulama yazma hatalarının tanımlanan kayıt defteri ve dosya sistemi konumlarına yeniden yönlendirilen olup olmadığını ayarı denetler. Bu ilke ayarı, yönetici olarak çalıştırın ve çalışma zamanı uygulama verileri için yazma uygulamaları azaltır *% ProgramFiles %*, *% Windir %*, *%Windir%\system32*, veya *HKLM\Software*.
+  Bu ilke, uygulama yazma hatalarının tanımlanan kayıt defteri ve dosya sistemi konumlarına yeniden yönlendirilen olup olmadığını ayarı denetler. Bu ilke ayarı, yönetici olarak çalıştırın ve çalışma zamanı uygulama verileri için yazma uygulamaları azaltır *% ProgramFiles %* , *% Windir %* , *%Windir%\system32*, veya *HKLM\Software*.
   
   **Varsayılan**: Evet
 
@@ -1159,7 +1159,7 @@ Daha fazla bilgi için [ilke CSP'si - RemoteDesktopServices](https://docs.micros
   **Varsayılan**: Enabled
   
 - **Blok sürücü yeniden yönlendirme**  
-  Bu ilke ayarı, Uzak Masaüstü Hizmetleri oturumu (sürücü yeniden yönlendirme) istemci sürücü eşleme engellenip engellenmeyeceğini belirtir. Varsayılan olarak, RD Oturumu Ana bilgisayarı sunucu bağlantıyla birlikte otomatik olarak istemci sürücüleri eşler. Eşlenen sürücüler görünür biçimde dosya Gezgini veya bilgisayar oturum klasör ağacında  *\<SürücüHarfi >* üzerinde  *\<computername >*. Bu ilke ayarı, bu davranışı geçersiz kılmak için kullanabilirsiniz. Bu ilke ayarını etkinleştirirseniz, istemci sürücüsü yeniden yönlendirmesi, Uzak Masaüstü Hizmetleri oturumlarına izin verilmiyor ve Windows Server 2003, Windows 8 ve Windows XP çalıştıran bilgisayarlarda Pano dosya kopyalama yeniden yönlendirmesine izin verilmiyor. Bu ilke ayarını devre dışı bırakırsanız istemci sürücüsü yeniden yönlendirmesi her zaman izin verilir. Ayrıca, Pano yeniden yönlendirmesine izin verilip verilmediğini Pano dosya kopyalama yönlendirmesini her zaman izin verilir. Bu ilke ayarı yapılandırmazsanız istemci sürücüsü yeniden yönlendirmesi ve Pano dosya kopyalama yeniden yönlendirme Grup İlkesi düzeyinde belirtilmeyen.
+  Bu ilke ayarı, Uzak Masaüstü Hizmetleri oturumu (sürücü yeniden yönlendirme) istemci sürücü eşleme engellenip engellenmeyeceğini belirtir. Varsayılan olarak, RD Oturumu Ana bilgisayarı sunucu bağlantıyla birlikte otomatik olarak istemci sürücüleri eşler. Eşlenen sürücüler görünür biçimde dosya Gezgini veya bilgisayar oturum klasör ağacında  *\<SürücüHarfi >* üzerinde  *\<computername >* . Bu ilke ayarı, bu davranışı geçersiz kılmak için kullanabilirsiniz. Bu ilke ayarını etkinleştirirseniz, istemci sürücüsü yeniden yönlendirmesi, Uzak Masaüstü Hizmetleri oturumlarına izin verilmiyor ve Windows Server 2003, Windows 8 ve Windows XP çalıştıran bilgisayarlarda Pano dosya kopyalama yeniden yönlendirmesine izin verilmiyor. Bu ilke ayarını devre dışı bırakırsanız istemci sürücüsü yeniden yönlendirmesi her zaman izin verilir. Ayrıca, Pano yeniden yönlendirmesine izin verilip verilmediğini Pano dosya kopyalama yönlendirmesini her zaman izin verilir. Bu ilke ayarı yapılandırmazsanız istemci sürücüsü yeniden yönlendirmesi ve Pano dosya kopyalama yeniden yönlendirme Grup İlkesi düzeyinde belirtilmeyen.
   
   **Varsayılan**: Enabled
   

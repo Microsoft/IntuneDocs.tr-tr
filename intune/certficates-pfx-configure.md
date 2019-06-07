@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454046"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749806"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -249,12 +249,17 @@ Sertifikaları Intune’da içeri aktardıktan sonra bir **PKCS içeri aktarılm
 
 *Intune için PFX sertifikaları Bağlayıcısı* [otomatik güncelleştirmeleri destekleyen](#requirements), ancak *Intune sertifika bağlayıcı* el ile güncelleştirilir.
 
-### <a name="may-6-2019"></a>6 Mayıs 2019
+### <a name="may-17-2019"></a>17 Mayıs 2019  
+- **Microsoft Intune - sürüm 6.1905.0.404 için PFX sertifikaları Bağlayıcısı**  
+  Bu sürümdeki değişiklikler:  
+  - Yeni istekleri işlemeyi durdur bağlayıcıyı neden, nerede mevcut PFX sertifikaları yeniden işlenmesi devam bir sorun düzeltildi. 
+
+### <a name="may-6-2019"></a>6 Mayıs 2019  
 - **Microsoft Intune - sürüm 6.1905.0.402 için PFX sertifikaları Bağlayıcısı**  
   Bu sürümdeki değişiklikler:  
   - Bağlayıcı için yoklama aralığı 30 saniye ila 5 dakika veya azaltılır.
  
-### <a name="april-2-2019"></a>2 Nisan 2019
+### <a name="april-2-2019"></a>2 Nisan 2019  
 - **Intune sertifika Bağlayıcısı - 6.1904.1.0 sürümü**  
   Bu sürümdeki değişiklikler:  
   - Burada bağlayıcı bağlayıcısına genel yönetici hesabıyla oturum açtıktan sonra Intune'a kaydedilebilmesi başarısız olabilir bir sorun düzeltildi.  

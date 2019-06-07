@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
-ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
+ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448118"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744338"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -115,7 +115,8 @@ Bu adımda şunları yapacaksınız:
    - **Güvenlik**’te NDES hizmet hesabını ekleyin ve bu hesaba şablon üzerinde **Kaydetme** izinleri verin. SCEP profillerini oluşturan Intune yöneticilerinin, SCEP profillerini oluştururken şablona göz atabilmeleri için **Okuma** hakları olmalıdır.
 
      > [!NOTE]
-     > Sertifikaları iptal etmek için, NDES hizmet hesabının sertifika profili tarafından kullanılan her sertifika şablonu üzerinde *Sertifikaları Yayımlama ve Yönetme* hakları olmalıdır.
+     > Sertifikaları iptal etmek için NDES hizmet hesabı gerekiyor. *Sertifikaları Yayımla ve Yönet* sertifika yetkilisinde hakları. Bu izin için temsilci seçmek için sertifika yetkilisi yönetim konsolunu açın ve sertifika yetkilisi adına sağ tıklayın. Ardından güvenlik sekmesinde ekleyin veya hesabı seçin ve onay kutusunu seçip **Sertifikaları Yayımla ve Yönet**.
+
 
 3. Şablonun **Genel** sekmesindeki **Geçerlilik süresi** 'ni gözden geçirin. Varsayılan olarak, Intune şablonda yapılandırılan değeri kullanır. Ancak CA’yı, istekte bulunan kişinin farklı bir değer girmesine izin verecek şekilde yapılandırabilirsiniz ve bu değeri daha sonra Intune yönetim konsolundan ayarlayabilirsiniz. Her zaman şablondaki değeri kullanmak istiyorsanız bu adımın geri kalanını atlayın.
 
@@ -224,7 +225,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Location                        |      Value      | Type  |      Veriler       |
+   |                        Location                        |      Değer      | Type  |      Veriler       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |
@@ -299,15 +300,15 @@ Bu adımda şunları yapacaksınız:
 
 1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seçin **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**.
-3. İndirin ve bağlayıcı için SCEP dosyasını kaydedin. Bağlayıcıyı, yükleyeceğiniz sunucudan erişilebilir bir konuma kaydedin.
+3. İndirin ve bağlayıcı için SCEP dosyasını kaydedin. Bağlayıcıyı yüklemek için nereye gideceğinizi NDES sunucudan erişilebilir bir konuma kaydedin.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. İndirme tamamlandıktan sonra ağ cihazı kayıt hizmeti (NDES) barındıran sunucuya gidin. Daha sonra:
+4. İndirme tamamlandıktan sonra ağ cihazı kayıt hizmeti (NDES) barındıran NDES sunucusuna gidin. Daha sonra:
 
     1. NDES Sertifika bağlayıcısının gerektirdiği .NET 4.5 Framework’ün yüklü olduğundan emin olun. .NET 4.5 Framework, Windows Server 2012 R2 ve daha yeni sürümlere otomatik olarak eklenir.
-    2. Yükleyiciyi çalıştırın (**NDESConnectorSetup.exe**). Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. CRP Web Hizmeti yani CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.
+    2. Yükleyiciyi çalıştırmak için sunucu yönetici haklarına sahip bir hesap kullanın (**NDESConnectorSetup.exe**). Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. CRP Web Hizmeti yani CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.
 
     > [!NOTE]
     > Tek başına Intune için NDES yüklediğinizde, CRP hizmeti Sertifika Bağlayıcısı ile otomatik olarak yüklenir. Intune’u Configuration Manager ile kullandığınızda, Sertifika Kayıt Noktası'nı ayrı bir site sistem rolü olarak yüklersiniz.
@@ -335,7 +336,7 @@ Bu adımda şunları yapacaksınız:
 
     Kuruluşunuz bir ara sunucu kullanıyorsa ve NDES sunucusunun İnternet’e erişmesi için ara sunucu gerekliyse **Ara sunucu kullan**’a tıklayın. Daha sonra, bağlanmak için ara sunucu adını, bağlantı noktasını ve hesap kimlik bilgilerini girin.
 
-    **Gelişmiş** sekmesini seçin ve ardından sertifika veren Sertifika Yetkilinizde **Sertifika Ver ve Yönet** iznine sahip olan bir hesabın kimlik bilgilerini girin. Yaptığınız değişiklikleri **uygulayın**.
+    **Gelişmiş** sekmesini seçin ve ardından sertifika veren Sertifika Yetkilinizde **Sertifika Ver ve Yönet** iznine sahip olan bir hesabın kimlik bilgilerini girin. Yaptığınız değişiklikleri **uygulayın**. Bu izin için NDES hizmet hesabı temsilcisi durumunda olduğunda [sertifika yetkilinizi yapılandırma](#configure-the-certification-authority), o hesabı belirtin. 
 
     Şimdi Sertifika Bağlayıcısı kullanıcı arabirimini kapatabilirsiniz.
 

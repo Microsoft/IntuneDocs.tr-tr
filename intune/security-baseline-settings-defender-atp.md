@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373505"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749907"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune için Microsoft Defender Gelişmiş tehdit koruması temel ayarları
 
-Microsoft Intune tarafından desteklenen Microsoft Defender Gelişmiş tehdit Koruması (eski adıyla Windows Defender Gelişmiş tehdit koruması) taban çizgisi ayarlarını görüntüleyin. Varsayılan değerleri bu makalede, Intune için varsayılan taban çizgisi yapılandırmasını temsil eder. Bu varsayılanlar, Intune önerilen yapılandırmasını temsil eder ve Windows Varsayılanları eşleşmeyebilir.
+Microsoft Intune tarafından desteklenen Microsoft Defender Gelişmiş tehdit Koruması (eski adıyla Windows Defender Gelişmiş tehdit koruması) taban çizgisi ayarlarını görüntüleyin. Gelişmiş tehdit Koruması (ATP) temel Varsayılanları ATP önerilen yapılandırmasını temsil eder ve diğer güvenlik taban çizgileri için temel Varsayılanları eşleşmeyebilir.  
 
   Ortamınızı kullanmak için önkoşulları karşıladığı durumlarda Microsoft Defender Gelişmiş tehdit koruması temel kullanılabilir [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)).
 
@@ -33,7 +33,7 @@ Microsoft Intune tarafından desteklenen Microsoft Defender Gelişmiş tehdit Ko
 
 
 > [!NOTE]  
-> WDATP temel ayarlar **Önizleme**. Önizleme ile kullanılabilir ayarlar ve bu ayarlar, bu içerik sunan Sipariş listesini portalda kullanılabilir eşleşmeyebilir. 
+> ATP temel ayarlar **Önizleme**. Önizleme ile kullanılabilir ayarlar ve bu ayarlar, bu içerik sunan Sipariş listesini portalda kullanılabilir eşleşmeyebilir.  
 >
 > Temel ayarlar önizlemeden sonra bu içeriği Intune'un desteklediği güvenlik taban çizgisi ayarlarını güncel bir listesi yansıtacak şekilde güncelleştirilir.
 

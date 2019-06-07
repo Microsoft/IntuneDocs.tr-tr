@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
-ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
+ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469596"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749947"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -106,8 +106,11 @@ Yöneticiler, yönetilen Google Play'e Intune kiracısının ilk bağlanma, zama
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune-----1533038---"></a>Microsoft Intune için güncelleştirilmiş PFX sertifika Bağlayıcısı  <!-- 1533038 -->
+İçin bir güncelleştirme yayımladık [PFX sertifika Bağlayıcısı için Intune](certficates-pfx-configure.md#whats-new-for-connectors) yeni istekleri işlemeyi durdur bağlayıcıyı neden olduğu mevcut PFX sertifikaları devam yeniden işlenmesi için bir sorunu giderir.
+
 ####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Intune güvenlik görevleri için Defender ATP (genel Önizleme)     <!-- 3208597 -->
-Genel önizlemede olan Microsoft Defender Gelişmiş tehdit Koruması (ATP için) güvenlik görevlerini yönetmek için Intune kullanabilirsiniz. ATP ile tümleştirme ve risk tabanlı bir yaklaşım keşfedin, önceliklendirmek ve risk azaltma için bulma arasındaki süreyi azaltırken uç noktası Güvenlik Açıkları ve yanlış yapılandırmalar, düzeltmek için ekler.
+Genel Önizleme sürümünde yönetmek için Intune kullanabilirsiniz [güvenlik görevler için Microsoft Defender Gelişmiş tehdit Koruması (ATP)](atp-manage-vulnerabilities.md). ATP ile tümleştirme ve risk tabanlı bir yaklaşım keşfedin, önceliklendirmek ve risk azaltma için bulma arasındaki süreyi azaltırken uç noktası Güvenlik Açıkları ve yanlış yapılandırmalar, düzeltmek için ekler.
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>Bir Windows 10 cihaz uyumluluk İlkesi, TPM yonga denetle <!-- 3617671   idstaged-->
 Güvenilir Platform Modülü (TPM) yonga kümeleri çok sayıda Windows 10 ve üzeri cihazlar vardır. Bu güncelleştirme, cihazın TPM yongası sürümü denetleyen yeni bir uyumluluk ayarı içerir. 
@@ -116,7 +119,7 @@ Güvenilir Platform Modülü (TPM) yonga kümeleri çok sayıda Windows 10 ve ü
 
 Şunun için geçerlidir: Windows 10 ve üzeri
 
-#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>Son kullanıcılar kendi kişisel etkin nokta değiştirmesini önlemek ve iOS cihazları günlüğü Siri sunucusunu devre dışı bırak <!-- 4097904   --> 
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>Son kullanıcılar kendi kişisel etkin nokta değiştirmesini önlemek ve iOS cihazları günlüğü Siri sunucusunu devre dışı bırak <!-- 4097904   -->  
 İOS cihazında cihaz kısıtlama profili oluşturun (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >  **iOS** Platform > **cihaz kısıtlamaları** profil türü için). Bu güncelleştirme, yeni ayarları yapılandırabileceğiniz içerir:
 
 - **Yerleşik uygulamalar**: Siri komutları için sunucu tarafı günlüğe kaydetme
