@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043817"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804693"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -97,8 +97,7 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 
 ### <a name="step-1-specify-the-software-setup-file"></a>1. adım: Yazılım kurulum dosyasını belirtme
 
-1.  [Azure Portal](https://portal.azure.com/) oturum açın.
-2.  **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.  **Intune** bölmesinde **İstemci uygulamaları** > **Uygulamalar** > **Ekle**'yi seçin.
 4.  İçinde **Ekle** uygulama bölmesinde **Windows uygulaması (Win32)** sağlanan aşağı açılan listeden.
 
@@ -163,10 +162,10 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 2.  İçinde **bir gereksinim Kuralı Ekle** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
     - **İşletim sistemi mimarisi**: Mimarileri uygulaması yüklemeniz gerektiğini seçin.
     - **Minimum işletim sistemi**: Uygulamayı yüklemek için gereken en düşük işletim sistemi seçin.
-    - **Gerekli disk alanı (MB)**: İsteğe bağlı olarak, sistem sürücüsünde, uygulamayı yüklemek için gereken boş disk alanı ekleyin.
-    - **Gerekli fiziksel bellek (MB)**: İsteğe bağlı olarak, uygulamayı yüklemek için gereken fiziksel belleği (RAM) ekleyin.
+    - **Gerekli disk alanı (MB)** : İsteğe bağlı olarak, sistem sürücüsünde, uygulamayı yüklemek için gereken boş disk alanı ekleyin.
+    - **Gerekli fiziksel bellek (MB)** : İsteğe bağlı olarak, uygulamayı yüklemek için gereken fiziksel belleği (RAM) ekleyin.
     - **En düşük gerekli mantıksal işlemcilerin sayısını**: İsteğe bağlı olarak, en az sayıda uygulamayı yüklemek için gereken bir mantıksal işlemci ekleyin.
-    - **Gerekli en düşük CPU hızı (MHz)**: İsteğe bağlı olarak, uygulamayı yüklemek için gereken en düşük CPU hızı ekleyin.
+    - **Gerekli en düşük CPU hızı (MHz)** : İsteğe bağlı olarak, uygulamayı yüklemek için gereken en düşük CPU hızı ekleyin.
 
 3. Tıklayın **Ekle** görüntülenecek **bir gereksinim Kuralı Ekle** dikey penceresinde ve ek gereksinim kurallarını yapılandırın. Seçin **gereksinim türü** için bir gereksinim nasıl doğrulanacağını belirlemek için kullanacağınız kuralının türünü seçin. Gereksinim kuralları dosya sistemi bilgileri, kayıt defteri değerlerini veya PowerShell betikleri temel alabilir. 
     - **Dosya**: Seçeneğini belirlediğinizde **dosya** olarak **gereksinim türü**, gereksinim kuralı, bir dosya veya klasör algılamalıdır tarihi, sürüm veya boyutu. 
@@ -342,12 +341,50 @@ Gerekirse, uygulama ataması başına gösteren son kullanıcı bildirimleri gö
 > *C:\Program Files\Microsoft Intune Yönetimi Extension\Content*<br>
 > *C:\windows\IMECache*
 
-Win32 uygulamaları sorunlarını giderme hakkında daha fazla bilgi için bkz. [Win32 uygulama yükleme sorunlarını giderme](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>PowerShell kullanarak Win32 uygulaması dosya sürümü algılama
 
-### <a name="troubleshooting-areas-to-consider"></a>Dikkate alınacak sorun giderme alanları
+Win32 uygulaması dosya sürümü algılama sorun yaşıyorsanız, aşağıdaki PowerShell komutunu değiştirme veya kullanarak göz önünde bulundurun:
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+Yukarıdaki PowerShell komutta `<path to binary file>` dize ile Win32 uygulama dosyanızın yolu. Bir örnek yol aşağıdakine benzer olacaktır:<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+Ayrıca, değiştirin `<file version of successfully detected file>` algılamak için gereken dosya sürümünü dize. Bir örnek dosya sürüm dizesini aşağıdakine benzer olacaktır:<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+Win32 uygulama sürüm bilgilerini almak gerekiyorsa, aşağıdaki PowerShell komutunu kullanabilirsiniz:
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+Yukarıdaki PowerShell komutta `<path to binary file>` dosya yolunuzla.
+
+### <a name="additional-troubleshooting-areas-to-consider"></a>Dikkate alınması gereken ek sorun giderme alanlar
 - Aracının cihazda yüklü olduğundan emin olmak için hedefi denetleyin - Bir grubu hedefleyen Win32 uygulaması veya bir grubu hedefleyen PowerShell Betiği, güvenlik grubu için aracı yükleme ilkesi oluşturur.
 - İşletim sistemi sürümünü denetleyin – Windows 10 1607 veya üzeri.  
 - Windows 10 SKU'sunu denetleyin - Windows 10 S veya S modu etkinleştirilmiş olarak çalışan Windows sürümleri MSI yüklemesini desteklemez.
+
+Win32 uygulamaları sorunlarını giderme hakkında daha fazla bilgi için bkz. [Win32 uygulama yükleme sorunlarını giderme](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

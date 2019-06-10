@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490143"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804433"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Açık Kaynak Kullanım Kuralları
 
@@ -23,7 +23,7 @@ Biz **Katkıları teşvik edin ve istediğiniz** topluluk (kullanıcılar, müş
 * **Tarayıcınızı**: İki seçenek vardır: 
 
     **1. seçenek: Doğrudan getiriyor Düzenle**  
-    1. Konu başlığına gibi Git [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
+    1. Konu başlığına gibi Git [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
     2. Seçin **Düzenle** (üst, sağ). Bu, GitHub deposunda markdown dosyası gösterir.
     3. Kalem simgesini seçin. Kalem simgesinin üzerine geldiğinizde göreceğiniz **bu dosyayı Düzenle** araç ipucu. 
     4. Değişikliklerinizi yapın ve ardından **işleme** yaptığınız değişiklikleri. 

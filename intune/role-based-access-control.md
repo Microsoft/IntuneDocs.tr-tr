@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040676"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804472"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -30,6 +30,8 @@ Rol tabanlı erişim denetimi (RBAC) yönetmenize, kuruluşunuzun kaynakları ve
 Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de aşağıdaki izinlerden birine sahip olması gerekir:
 - **Genel Yönetici**
 - **Intune Hizmet Yöneticisi** (diğer adıyla **Intune yönetici**)
+
+Öneriler ve Intune RBAC ilgili öneriler için bu video serisi, örnekler ve izlenecek yollar başlanacağını gösteren beş denetleyebilirsiniz: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
 ## <a name="roles"></a>Roller
 Bir rol, bu role atanan kullanıcılar için izinler kümesini tanımlar.
@@ -84,8 +86,8 @@ Bir rol ataması görmek için **Intune** > **rolleri** > **tüm rolleri** > bir
 
 -   **Özellikler**: Ad, açıklama, rol, üye, kapsamları ve etiketler atama.
 -   **Üyeleri**: Listelenen gruplarındaki tüm kullanıcılar, kapsam (gruplar) listelenen kullanıcıları/cihazları yönetmek için izne sahip.
--   **Kapsam (gruplar)**: Tüm kullanıcılara/cihazlara bu gruplardaki kullanıcılar üyeleri tarafından yönetilebilir.
--   **[Kapsam (etiketler)](scope-tags.md)**: Kullanıcıların üye aynı kapsam etikete sahip kaynakları görebilirsiniz.
+-   **Kapsam (gruplar)** : Tüm kullanıcılara/cihazlara bu gruplardaki kullanıcılar üyeleri tarafından yönetilebilir.
+-   **[Kapsam (etiketler)](scope-tags.md)** : Kullanıcıların üye aynı kapsam etikete sahip kaynakları görebilirsiniz.
 
 ### <a name="multiple-role-assignments"></a>Birden çok rol atamaları
 Bir kullanıcının birden çok rol atamaları varsa, bu rol atamaları izinleri gibi farklı nesnelere genişletin:
