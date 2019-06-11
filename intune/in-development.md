@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 4e9a640a343efd4ad786d7697439531de3cd4ed3
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744293"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828968"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>Microsoft Intune - Haziran 2019 geliştirme
 
@@ -50,9 +50,6 @@ ms.locfileid: "66744293"
 
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Cihaz kullanıcılarının yüklü veya yüklemeyi denedi tüm yönetilen uygulamalar görüntüleyebilirsiniz. <!-- 2352913 -->
 Bir kullanıcı cihazında yüklü (gerekli ve kullanılabilir) tüm yönetilen uygulamalar için Şirket portalı Windows listeler. Kullanıcılar, denenen görüntülemek ve bekleyen uygulama yüklemelerini ve bunların geçerli durumlarını mümkün olacaktır. Kuruluşunuzun uygulamalarını gerekli veya kullanılabilir duruma getirilmez, kullanıcılar şirket uygulama yüklenmiş olduğunu açıklayan bir ileti görür. Kullanıcılar ayrıca sıralamak veya uygulamalarını yükleme durumuna göre filtre uygulamak mümkün olacaktır.
-
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>Android iş profilleri için raporlama kullanılabilir Google Play uygulaması <!-- 3041956 -->
-Android iş profili cihazları üzerinde kullanılabilir uygulama yüklemeleri için yönetilen Google Play uygulamaları'nın yüklü sürümü yanı sıra, uygulama yükleme durumu görüntüleme olanağınız olacaktır. Daha fazla bilgi için [uygulama koruma ilkelerini izleme](app-protection-policies-monitor.md), [yönetme Android iş profili cihazları Intune ile](android-enterprise-overview.md) ve [yönetilen Google Play uygulama türü](apps-add-android-for-work.md#managed-google-play-app-type).
 
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Tarayıcı kuruluş verilerine bağlanan yapılandırabilirsiniz <!-- 3145939 -->
 Android ve iOS cihazlarında Intune uygulama koruma ilkelerini (APP) Org web bağlantılarını Intune Managed Browser ya da Microsoft Edge ötesinde belirli bir tarayıcıya aktarmanıza imkan sağlar.  Uygulama hakkında daha fazla bilgi için bkz. [uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).

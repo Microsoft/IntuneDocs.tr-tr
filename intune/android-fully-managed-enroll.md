@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9edfa2ec7a408f512d4cb0b99a468db0b29f5868
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044198"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819881"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Intune'u ayarlama Android Kurumsal kaydını tam (Önizleme) ile yönetilen cihazlar
 
@@ -55,8 +55,11 @@ Ayarlamak için Android Kurumsal cihaz Yönetimi yapılandırılan, aşağıdaki
 
 ### <a name="enable-corporate-owned-user-devices"></a>Şirket ait kullanıcı cihazları etkinleştirme
 
-1. Git [Intune portalı](https://portal.azure.com) ve **cihaz kaydı** > **Android kaydını** > **şirkete, tam olarak yönetilen kullanıcı cihazları (Önizleme)**.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) ve **cihaz kaydı** > **Android kaydını** > **şirkete, tam olarak yönetilen Kullanıcı cihazları (Önizleme)** .
 2. Altında **kullanıcı şirkete ait cihazları kaydetmesine izin vermek**, seçin **Evet**.
+
+[!NOTE]
+Kullanan tanımlı bir Azure AD koşullu erişim ilkesi varsa *bir cihazın uyumlu olarak işaretlenmesini gerektir* denetlemek ve uygulandığı **tüm bulut uygulamaları**, **Android** ve **Tarayıcılar** -hariç tutmanız gerekir **Intune** bu ilkeden bulut uygulaması. Android kurulum işlemlerini kullanan bir Chrome sekme kaydolma sırasında kullanıcıların kimliklerini doğrulamak için olmasıdır. Daha fazla bilgi için [Azure AD koşullu erişim belgelerine](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
 Bu ayar ayarlandığında **Evet**, size bir kayıt belirteci (rastgele bir dize) ve bir QR kodu ile Intune kiracınız için sağlar. Bu tek kayıt belirtecini tüm kullanıcılar için geçerlidir ve süresi olmaz. Android işletim sistemi ve sürümü cihazın bağlı olarak, bilgi noktası cihazı kaydetmek için belirteç veya QR kodunu kullanabilirsiniz.
 

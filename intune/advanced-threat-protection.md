@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d13d4094239cd36f736bb5cb19af7a11d29e727
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66719574"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819877"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP için ıntune'da koşullu erişim uyumluluğu zorla
 
@@ -131,7 +131,7 @@ Cihaz *uyumsuzsa* koşullu erişim ilkesi, kaynaklara erişimi engeller. Yani bi
 > [!TIP]  
 > Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır.  
 
-1. İçinde [Azure portalında](https://portal.azure.com)açın **Intune** > **koşullu erişim** > **yeni ilke**.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) seçip **koşullu erişim** > **yeni ilke**.
 2. İlke için bir **Ad** girin ve **Kullanıcılar ve gruplar**’ı seçin. İlke için grupları eklemek üzere Dahil Et veya Hariç Tut seçeneklerini kullanın ve **Bitti**’yi seçin.
 3. **Bulut uygulamaları**’nı ve ardından hangi uygulamaların korunacağını seçin. Örneğin **Uygulama seçin**’e tıklayın, **Office 365 SharePoint Online** ve **Office 365 Exchange Online**’ı seçin.
 

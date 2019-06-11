@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61495178"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828940"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
 Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
@@ -70,6 +70,10 @@ Paylaşmadan sonra alıcı bir bağlantı ve uygulama ayrıntılarını görünt
 Kuruluşunuz sizin için işe veya okula uygun ve kullanışlı uygulamalar seçer. Bu uygulamalar, şirket Portalı'nda bulabilirsiniz yalnızca olanlardır.  
 
 Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, Windows için Şirket portalı uygulamasını kullanıyorsanız, Windows uygulamaları, ancak iOS uygulamaları için erişim gerekir.  
+
+## <a name="required-apps"></a>Gerekli uygulamalar  
+
+Kuruluşunuz, cihazınıza bazı uygulamaları dağıtma ve olarak işaretlerken **gerekli**. Bu uygulamalar otomatik olarak sizin için müdahalesi olmadan yüklenir.
 
 ## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek  
 Uygulama gerekiyor, ancak şirket portalında görmüyorum varsa, bu istek. İletişim ayrıntılarını bulun, **Yardım Masası** Şirket portalı uygulamasında Yardım ve Destek sayfasında. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).    

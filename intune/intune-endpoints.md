@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4d4efd34bbc83f29e8dc8ca03419b70bc7083cd
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 30fee770e4af561cac62241e65b673d2f608c918
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804653"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819727"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune için ağ uç noktaları
 
@@ -32,8 +32,8 @@ Yalnızca bulutta yer alan bir hizmet olan Intune, sunucular veya ağ geçitleri
 
 Güvenlik duvarı ve ara sunucular arkasındaki cihazları yönetmek için Intune iletişimini etkinleştirmeniz gerekir.
 
-- Intune istemcileri iki protokolü de kullandığından, proxy sunucusu hem **HTTP (80)** hem de **HTTPS (443)** desteklemelidir
-- Intune bazı görevler (yazılım güncelleştirmelerini indirme gibi) için manage.microsoft.com adresine kimliği doğrulanmamış ara sunucu erişimine ihtiyaç duyar.
+- Proxy sunucusu hem de desteklemelidir **HTTP (80)** ve **HTTPS (443)** Intune istemcileri iki protokolü de kullandığından. Windows Information Protection, bağlantı noktası 444 kullanır.
+- (Yazılım güncelleştirmeleri için Klasik pc Aracısı yükleme) gibi bazı görevler için Intune için Manage.microsoft.com adresine kimliği doğrulanmamış proxy sunucusu erişimi gerektirir.
 
 Ara sunucu ayarlarını istemci bilgisayarlardan değiştirebilirsiniz. Belirtilen ara sunucu arkasında yer alan tüm istemci bilgisayarların ayarlarını değiştirmek için Grup İlkesi ayarlarını da kullanabilirsiniz.
 
@@ -108,6 +108,9 @@ Powershell betikleri veya Win32 uygulamalarını dağıtmak için Intune kullan�
 | AMSUC0501 | prodmsuc05data | https://prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https://pemsua07data.azureedge.net |
 
+### <a name="windows-push-notification-services-wns"></a>Windows anında iletilen bildirim servisi (WNS)
+Yönetilen mobil cihaz Yönetimi (MDM) kullanarak Windows Intune tarafından yönetilen cihazlar için cihaz eylemleri ve diğer hemen etkinlikleri, Windows anında bildirim Hizmetleri (WNS) kullanımı gerektirir. Daha fazla bilgi için [Kurumsal güvenlik duvarlarından izin vererek Windows bildirim trafiği](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    
+
 ### <a name="delivery-optimization-port-requirements"></a>Teslim iyileştirme bağlantı noktası gereksinimleri
 
 #### <a name="port-requirements"></a>Bağlantı noktası gereksinimleri
@@ -130,10 +133,8 @@ Teslim iyileştirme meta verileri için:
 
 |İçin kullanılan|Ana bilgisayar adı (IP adresi/alt ağ)|Protocol|Port|
 |-----|--------|------|-------|
-|Apple Anında İletilen Bildirim Servisi (APNS) ile Intune hizmetinden anında iletme bildirimi alma. Apple tarafından sağlanan belgeler için [buraya](https://support.apple.com/en-us/HT203609) bakın.|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
-|Apple Anında İletilen Bildirim Servisi (APNS) ile Intune hizmetine geri bildirim gönderme.|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
 |Apple sunucularından içerik alma ve görüntüleme|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
-|APNS sunucularıyla iletişim|#-courier.push.apple.com (17.0.0.0/8)<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|    TCP     |  5223 ve 443  |
+|APNS sunucularıyla iletişim|#-courier.push.apple.com<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|    TCP     |  5223 ve 443  |
 |World Wide Web erişim dahil olmak üzere çeşitli işlevlere iTunes depolayın, macOS uygulama mağazası, iCloud, Mesajlaşma, vs. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 veya 443   |
 
 Daha fazla bilgi için şu Apple belgelerine bakın: [Apple yazılım ürünleri tarafından kullanılan TCP ve UDP bağlantı noktaları](https://support.apple.com/en-us/HT202944), [macOS, iOS ve iTunes sunucusu ana bilgisayar bağlantıları ve iTunes arka plan işlemleri hakkında](https://support.apple.com/en-us/HT201999) ve [macOS ve iOS istemcileriniz Apple anında iletme bildirimlerini almıyorsa](https://support.apple.com/en-us/HT203609).

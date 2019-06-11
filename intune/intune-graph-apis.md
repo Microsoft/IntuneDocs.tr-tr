@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6276f38eed4d20e7e81437c2ba3e2c9bc58ae1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047761"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819730"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
 
@@ -61,7 +61,7 @@ Daha fazla bilgi için bkz:
 
 Uygulamaları Microsoft Graph API kullanmak üzere kaydetmek için:
 
-1.  Yönetici kimlik bilgilerini kullanarak [Azure portalında](https://portal.azure.com) oturum açın.
+1.  Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) yönetici kimlik bilgilerini kullanarak.
 
     Uygun olacak şekilde şunları kullanabilirsiniz:
     - Kiracı yönetici hesabı.
@@ -343,7 +343,7 @@ Bu örnek, Intune hesabınızla ilişkili cihazların bir listesini almak için 
 3.  Microsoft ADAL NuGet paketini projeye eklemek için Çözüm Gezgini’ni kullanın.
 
     1.  Çözüm Gezgini’ne sağ tıklayın.
-    2.  **NuGet Paketlerini Yönet...**’i seçin &gt; **Gözat**.
+    2.  **NuGet Paketlerini Yönet...** ’i seçin &gt; **Gözat**.
     3.  `Microsoft.IdentityModel.Clients.ActiveDirectory` seçeneğini belirleyin ve **Yükle**’yi seçin.
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
