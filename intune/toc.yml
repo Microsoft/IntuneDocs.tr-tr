@@ -270,7 +270,7 @@
         - name: macOS cihazını silme
           href: device-erase.md
         - name: Uzaktan denetimli mobil cihazlar
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: Windows 10 PIN sıfırlama
           href: device-windows-pin-reset.md
         - name: Cihazı eşitleme
