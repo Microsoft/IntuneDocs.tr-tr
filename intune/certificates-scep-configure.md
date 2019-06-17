@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/13/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 188e766224dc7fdd1f529055df7f5fc585a5ae42
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: bd48e7c83af0a786e1b34f91c05e95a5d47f3d45
+ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041307"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141813"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -68,7 +68,7 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 |**Sertifika Şablonu**|Bu şablonu sertifika veren CA'nız üzerinde yapılandırın.|
 |**İstemci kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu sertifikayı NDES Sunucusu'na yüklersiniz.|
 |**Sunucu kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu SSL sertifikasını NDES Sunucusu'ndaki IIS'de yüklersiniz ve bağlarsınız. Sertifikada istemci ve sunucu kimlik doğrulaması anahtar kullanımları ayarlıysa (**Gelişmiş Anahtar Kullanımları**) aynı sertifikayı kullanabilirsiniz.|
-|**Güvenilen Kök CA sertifika**|Bu sertifikayı, kök CA’sından veya kök CA’sına güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarırsınız. Ardından, kullanıcılar, cihazlar veya her iki kullanarak güvenilen CA sertifika profili atayın.<br /><b>Not:<b />bir SCEP sertifika profili atandığında, aynı kullanıcı veya cihaz grubuna SCEP sertifika profilinde başvurulan güvenilen kök sertifika profilini atadığınızdan emin olun.<br /><br />İşletim sistemi platformu başına tek bir Güvenilen Kök CA sertifika kullanırsınız ve bu sertifikayı oluşturduğunuz her Güvenilen Kök Sertifika profili ile ilişkilendirirsiniz.<br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
+|**Güvenilen Kök CA sertifika**|Bu sertifikayı, kök CA’sından veya kök CA’sına güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarırsınız. Ardından, kullanıcılar, cihazlar veya her iki kullanarak güvenilen CA sertifika profili atayın.<br /> **Not:<br />atadığınızdan emin olun, bir SCEP sertifika profili atandığında *güvenilen kök sertifika profilini* SCEP sertifika profili aynı kullanıcı veya cihaz grubuna başvuru.  Bu profili oluşturmak için bkz [bir güvenilen sertifika profili oluşturma](certficates-pfx-configure.md#create-a-trusted-certificate-profile), PKCS sertifika profilleri makalesinde belirtilmiştir.** <br/><br />İşletim sistemi platformu başına tek bir güvenilen kök CA sertifikasını kullanın ve oluşturduğunuz her güvenilen kök sertifika profiliyle ilişkilendirin. <br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
 
 ### <a name="accounts"></a>Hesaplar
 
@@ -487,7 +487,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
      - **Dijital imza**: Yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verir.
    - **Anahtar boyutu (bit)** : Anahtarın içerdiği bit sayısını seçin
    - **Karma algoritması** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için kullanılabilir karma algoritma türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
-   - **Kök sertifika**: Kök daha önce yapılandırdığınız ve kullanıcıya ve/veya cihaz atanan CA sertifika profilini seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır. SCEP sertifikası profilinde atanan aynı gruba bu güvenilen kök sertifika profilini atama emin olun.
+   - **Kök sertifika**: Seçin bir [güvenilen kök sertifika profilini](certficates-pfx-configure.md#create-a-trusted-certificate-profile) , daha önce oluşturulan ve kullanıcı ve/veya cihaz atanan. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır. SCEP sertifikası profilinde atanan aynı gruba bu güvenilen kök sertifika profilini atama emin olun.
    - **Genişletilmiş Anahtar Kullanımı**: **Ekleme** sertifikanın değerlerini sertifikaların hedeflenen amacına. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
    - **Kayıt Ayarları**
      - **Yenileme eşiği (%)** : Cihaz yenilenmesini sertifikasının kalan sertifika ömrünün yüzde kaç olması girin.

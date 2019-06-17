@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c33f13a7768b86895b89732f1f595d2ede39b41
-ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
-ms.translationtype: HT
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031592"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046287"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydıyla ilgili sorunları giderme
 
