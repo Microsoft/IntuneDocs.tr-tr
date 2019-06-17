@@ -373,7 +373,7 @@
               href: privacy-data-view-correct.md
             - name: 'Denetim, dışa aktarma, silme'
               href: privacy-data-audit-export-delete.md
-        - name: Koşullu erişim
+        - name: Koşullu Erişim
           href: conditional-access.md
           items:
             - name: Koşullu erişimi kullanmanın yaygın yolları

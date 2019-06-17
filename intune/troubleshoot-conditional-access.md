@@ -1,7 +1,7 @@
 ---
 title: Koşullu erişim sorunlarını giderme
 titleSuffix: Microsoft Intune
-description: Kullanıcıların, kaynaklara Intune koşullu erişimi üzerinden erişemediklerinde ne yapacakları açıklanır.
+description: Kullanıcılarınızın kaynaklarına erişimi Intune koşullu erişim üzerinden erişemediklerinde ne yapmanız gerekenler belirtir.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044681"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043909"
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
 
-Exchange Online, SharePoint Online, Skype Kurumsal Çevrimiçi, Exchange şirket içi gibi Office 365 hizmetlerine ve diğer hizmetlere erişimi Intune ve koşullu erişim kullanarak koruyabilirsiniz. Bu özellik, şirket kaynaklarına erişimin Intune'a kayıtlı ve Intune yönetim konsolunda veya Azure Active Directory'de ayarladığınız koşullu erişim kurallarına uyan cihazlarla sınırlı olduğundan emin olmanızı sağlar. Bu makalede, kullanıcılarınız koşullu erişimle korunan kaynaklara erişemediğinde veya bunlara erişebildiği ancak engellenmeleri gerektiğinde ne yapılması gerektiği anlatılmaktadır.
+Exchange Online, SharePoint Online, Skype gibi Office 365 hizmetlerine erişimi çevrimiçi koruma, Intune ve koşullu erişim kullanarak şirket içi ve diğer hizmetlere Exchange. Bu özellik şirket kaynaklarına erişimi Intune ile kaydedilen cihazlar için kısıtlı ve Intune Yönetici konsolunda veya Azure Active Directory ayarladığınız koşullu erişim kuralları ile uyumlu olduğundan emin olmanızı sağlar. Bu makalede, koşullu erişim ile korunan kaynaklara erişim elde etmek, kullanıcılarınızın başarısız olduğunda veya kullanıcılar, korumalı kaynaklara erişebilir ancak engellenmesi gerektiğini yapmanız gerekenler açıklanmaktadır.
 
-## <a name="requirements-for-conditional-access"></a>Koşullu erişim için gereksinim listesi
+## <a name="requirements-for-conditional-access"></a>Koşullu erişim için gereksinimleri
 
 Koşullu erişimin çalışması için aşağıdaki gereksinimler karşılanmalıdır:
 
@@ -54,7 +54,7 @@ Azure Yönetim Portalı’nda ve cihaz envanteri raporunda her cihaz için bu ko
 - Belirli Android cihazları şifrelenmiş gibi görünebilir, ancak Şirket Portalı uygulaması bu cihazları şifrelenmemiş olarak algılayarak bunları uyumsuz olarak işaretleyebilir. Bu senaryoda kullanıcı, Şirket Portalı uygulamasında cihaz için bir başlangıç geçiş kodu ayarlamasının istendiği bir bildirim görür. Bildirime dokunup, geçerli PIN veya parolayı onayladıktan sonra, **Güvenli başlangıç** ekranında **Cihazı başlatmak için PIN iste** seçeneğini belirleyin, sonra Şirket Portalı uygulamasından cihaz için **Uyumluluğu Denetle** düğmesine dokunun. Cihazın artık şifrelenmiş olarak algılanması gerekir. 
   > [!NOTE]
   > Bazı cihaz üreticileri cihazlarını kullanıcı tarafından ayarlanan bir PIN yerine varsayılan bir PIN kullanarak şifreler. Intune varsayılan PIN'i kullanan şifrelemeyi güvensiz olarak kabul eder ve bu cihazları kullanıcı yeni ve varsayılan PIN'den farklı bir PIN oluşturuncaya kadar uyumsuz olarak işaretler.
-- Kayıtlı ve uyumlu olan bir Android cihaz, şirket kaynaklarına ilk kez erişmeye çalıştığında yine de karantina bildirimi alabilir. Bu olursa, Şirket Portalı uygulamasının çalışmadığından emin olun, ardından değerlendirme başlatmak için karantina e-postasındaki **Şimdi Başla** bağlantısına tıklayın. Bunun yalnızca koşullu erişim ilk kez etkinleştirildiğinde yapılması gerekir.
+- Kayıtlı ve uyumlu olan bir Android cihaz, şirket kaynaklarına ilk kez erişmeye çalıştığında yine de karantina bildirimi alabilir. Bu olursa, Şirket Portalı uygulamasının çalışmadığından emin olun, ardından değerlendirme başlatmak için karantina e-postasındaki **Şimdi Başla** bağlantısına tıklayın. Bu, yalnızca koşullu erişim etkinken yapılması gerekir.
 
 ## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>Cihazlar engelleniyor ve hiçbir karantina e-postası alınmıyor
 
@@ -64,10 +64,10 @@ Azure Yönetim Portalı’nda ve cihaz envanteri raporunda her cihaz için bu ko
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Cihazlar uyumsuz, ancak kullanıcılar engellenmiyor
 
-- Windows bilgisayarlarda koşullu erişim yalnızca yerel e-posta uygulamasını, Office 2013 Modern Kimlik Doğrulamasını veya Office 2016'yı engeller. Windows bilgisayarlarda Outlook'un veya tüm posta uygulamalarının önceki sürümlerini engellemek, [SharePoint Online'ı ve Exchange Online'ı Azure Active Directory koşullu erişimi için ayarlama](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication) konusunda belirtildiği gibi AAD Cihaz Kaydı ve Active Directory Federasyon Hizmetleri (AD FS) yapılandırmaları gerektirir. 
+- Windows bilgisayarlar için koşullu erişim yalnızca yerel e-posta uygulaması, Office 2013 Modern kimlik doğrulaması veya Office 2016 engeller. Outlook veya Windows bilgisayarlarda tüm posta uygulamaları engelleme önceki sürümlerinde, AAD cihaz kaydı ve Active Directory Federasyon Hizmetleri (AD FS) yapılandırmaları olarak başına gerektirir [SharePoint Online ve Exchange Online için Azure Active Directory'yi ayarlama Koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
 - Cihaz seçmeli olarak temizlendiğinde veya Intune kullanımından kaldırıldığında, erişimi birkaç saat daha devam edebilir. Bunun nedeni, Exchange’in, erişim haklarını 6 saat boyunca önbelleğe almasıdır. Bu senaryoda, kullanımdan kaldırılan cihazlardaki verileri korumanın başka yöntemlerini göz önünde bulundurun.
-- Surface Hub cihazları koşullu erişimi destekler; ancak doğru değerlendirme için uyumluluk ilkesini (kullanıcı gruplarına değil) cihaz gruplarına dağıtmanız gerekir.
-- Uyumluluk ilkelerinizin ve koşullu erişim ilkelerinizin atamalarına bakın. Kullanıcı ilkelerin atandığı grupta değilse veya dışlanan bir gruptaysa engellenir. Uyumluluk denetimi yalnızca atanan bir grupta olan kullanıcıların cihazlarında yapılır.
+- Surface Hub cihazları, koşullu erişim desteği: Ancak, cihaz gruplarına (değil kullanıcı grupları) doğru bir değerlendirme için Uyumluluk İlkesi dağıtmanız gerekir.
+- İçin Uyumluluk ilkeleri ve koşullu erişim ilkelerinizi atamaları denetleyin. Kullanıcı ilkelerin atandığı grupta değilse veya dışlanan bir gruptaysa engellenir. Uyumluluk denetimi yalnızca atanan bir grupta olan kullanıcıların cihazlarında yapılır.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Uyumsuz cihaz engellenmiyor
 

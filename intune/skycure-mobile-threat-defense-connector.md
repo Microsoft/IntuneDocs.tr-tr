@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808b594e4ac47845272be2978da2463727f9807c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040766"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044081"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile bağlayıcısı
 
-Microsoft Intune ile tümleşik çalışan mobil tehdit savunması çözümü Symantec Endpoint Protection Mobile (SEP Mobile) tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, SEP Mobile çalıştıran cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
+Symantec Endpoint Protection Mobile (SEP Mobile) Intune ile tümleşen mobil tehdit savunması çözümü tarafından yapılan risk değerlendirmesine dayalı koşullu erişimi kullanarak şirket kaynaklarına mobil cihaz erişimini kontrol edebilirsiniz. Risk, SEP Mobile çalıştıran cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
 
 -   Fiziksel savunma
 
@@ -36,7 +36,7 @@ Microsoft Intune ile tümleşik çalışan mobil tehdit savunması çözümü Sy
 
 -   Güvenlik açıkları savunması
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla SEP Mobile risk değerlendirmesini etkinleştirebilir ve ardından algılanan tehditler temelinde şirket kaynaklarına uyumlu olmayan cihaz erişimine izin vermek veya bu erişimi engellemek için koşullu erişim ilkelerini kullanabilirsiniz.
+Intune cihaz uyumluluk ilkeleri aracılığıyla SEP Mobile risk değerlendirmesini ve sonra izin vermek veya uyumsuz cihaz algılanan tehditlere dayalı olarak şirket kaynaklarına erişimi engellemek için koşullu erişim ilkelerini kullanın.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune ve SEP Mobile şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 

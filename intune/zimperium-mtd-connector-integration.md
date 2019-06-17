@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ddd08baa99ebf7d6e7701d8345e42a72f0dbd57
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: db7f008e67c0523a373da24dd0a04f3556d9dd4c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046562"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031385"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium'u Intune ile tümleştirme
 
@@ -31,7 +31,7 @@ Zimperium Mobil Threat Defense çözümünü Intune ile tümleştirmek için aş
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 > [!NOTE]
-> Aşağıdaki adımlar tamamlanmalıdır olan [Zimperium MTD konsolunda](https://sso.zimperium.com/signon/aad/).
+> Aşağıdaki adımlar tamamlanmalıdır olan [Zimperium MTD konsolunda](https://www.zimperium.com/platform).
 
 Zimperium'u Intune ile tümleştirme sürecini başlatmadan önce aşağıdaki abonelik ve kimlik bilgilerine sahip olduğunuzdan emin olun:
 
@@ -66,7 +66,7 @@ Onay ve Azure Active Directory uygulamaları hakkında daha fazla bilgi için bk
 
 ## <a name="to-set-up-zimperium-integration"></a>Zimperium tümleştirmesini ayarlamak için
 
-1.  [Zimperium MTD konsolu](https://sso.zimperium.com/signon/aad/)'na gidin ve kimlik bilgilerinizle oturum açın. Zimperium tümleştirme Kurulum işlemi gerçekleştirmek için genel Yönetici rolüne sahip bir Azure Active Directory kullanıcının oturum açması gerekir. Bu tek seferlik Kurulum işlemi, kuruluşunuzda Intune ile iletişim kurmak Zimperium uygulama izni vermek için genel yönetici hakları kullanır. 
+1.  [Zimperium MTD konsolu](https://www.zimperium.com/platform)'na gidin ve kimlik bilgilerinizle oturum açın. Zimperium tümleştirme Kurulum işlemi gerçekleştirmek için genel Yönetici rolüne sahip bir Azure Active Directory kullanıcının oturum açması gerekir. Bu tek seferlik Kurulum işlemi, kuruluşunuzda Intune ile iletişim kurmak Zimperium uygulama izni vermek için genel yönetici hakları kullanır. 
 
 2.  Soldaki menüden **Yönetim**'i seçin.
 

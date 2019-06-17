@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d1153254f5e803bc0e1f933b8bdc022f241abcc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bb175d2133cf2a7bc5b064c13afb7e252147c729
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045843"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044241"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Hızlı Başlangıç: Bildirimleri uyumsuz cihazlara gönderme
 
 Bu hızlı başlangıçta iş gücünüzün uyumsuz cihazlara sahip üyelerine e-posta bildirimi göndermek için Microsoft Intune’u kullanacaksınız.
 
-Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Daha sonra Azure Active Directory (AAD) [koşullu erişimi](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) cihazı engeller. Bir cihaz uyumlu olmadığında Intune, uyumsuzluk eylemleri eklemenize imkan vererek size karar verme esnekliği sağlar. Örneğin uyumsuz cihazları engellemeden önce kullanıcılara uyumlu olmaları için yetkisiz kullanım süresi sağlayabilirsiniz.
+Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Azure Active Directory (AAD) [koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ardından cihazı engeller. Bir cihaz uyumlu olmadığında Intune, uyumsuzluk eylemleri eklemenize imkan vererek size karar verme esnekliği sağlar. Örneğin uyumsuz cihazları engellemeden önce kullanıcılara uyumlu olmaları için yetkisiz kullanım süresi sağlayabilirsiniz.
 
 Cihazlar uyumluluk gereksinimlerini karşılamadığında yapabileceğiniz eylemlerden biri, bu son kullanıcılara e-posta göndermektir. Son kullanıcılara göndermeden önce e-posta bildirimini özelleştirebilirsiniz. Özellikle şirket logosu ve kişi bilgileri dahil olmak üzere alıcılar, konu ve ileti gövdesini özelleştirebilirsiniz. Intune ayrıca uyumsuz cihaz hakkındaki ayrıntıları da e-posta bildiriminde gösterir.
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
-- Cihazların şirket kaynaklarına erişimini engellemek için cihaz uyumluluk ilkeleri kullanıldığında, AAD koşullu erişiminin ayarlanmış olması gerekir. [Cihaz uyumluluk ilkesi oluşturma](quickstart-set-password-length-android.md) hızlı başlangıcını tamamladıysanız Azure Active Directory kullanıyorsunuzdur. AAD hakkında daha fazla bilgi için bkz. [Azure Active Directory’de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ve [Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
+- Cihazların şirket kaynaklarına engellemek için cihaz uyumluluk ilkelerini kullanarak, koşullu erişim AAD ayarlanması gerekir. [Cihaz uyumluluk ilkesi oluşturma](quickstart-set-password-length-android.md) hızlı başlangıcını tamamladıysanız Azure Active Directory kullanıyorsunuzdur. AAD hakkında daha fazla bilgi için bkz: [Azure Active Directory'de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ve [Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 

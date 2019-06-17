@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506866"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045818"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -33,11 +33,11 @@ Intune Uygulama SDK'sı, iOS ve Android’de benzer senaryoları destekler ve BT
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Uygulamanız kuruluşunuz içinde kullanılıyorsa ve herkese açık olmayacaksa:
 
-_**Gerekmeyen**_ uygulamanızı kaydetmek için. İçin iç [iş kolu (LOB) uygulamaları](apps-add.md#app-types-in-microsoft-intune) , yazılmış tarafından veya şirketiniz için BT yöneticinize dağıtacağınız uygulamayı dahili olarak. Intune uygulama SDK'sı ile oluşturulan ve BT yöneticisinin uygulama koruma ilkeleri uygulamak sağlayacaktır algılar. [iOS veya Android uygulamanızı uygulama koruma ilkesi için etkinleştirme](#enable-your-ios-or-android-app-for-app-protection-policy) bölümüne geçebilirsiniz.
+_ **Gerekmeyen** _ uygulamanızı kaydetmek için. İçin iç [iş kolu (LOB) uygulamaları](apps-add.md#app-types-in-microsoft-intune) , yazılmış tarafından veya şirketiniz için BT yöneticinize dağıtacağınız uygulamayı dahili olarak. Intune uygulama SDK'sı ile oluşturulan ve BT yöneticisinin uygulama koruma ilkeleri uygulamak sağlayacaktır algılar. [iOS veya Android uygulamanızı uygulama koruma ilkesi için etkinleştirme](#enable-your-ios-or-android-app-for-app-protection-policy) bölümüne geçebilirsiniz.
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Uygulamanız Apple App Store veya Google Play gibi bir genel uygulama mağazasında yayınlanacaksa:
 
-Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_ . BT yöneticileri ardından uygulayabileceğiniz bir uygulama koruma ilkesi olarak listelenen yönetilen uygulamaya bir [Intune iş ortağı uygulaması tarafından korunan](apps-supported-intune-apps.md#partner-apps).
+Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_. BT yöneticileri ardından uygulayabileceğiniz bir uygulama koruma ilkesi olarak listelenen yönetilen uygulamaya bir [Intune iş ortağı uygulaması tarafından korunan](apps-supported-intune-apps.md#partner-apps).
 
 Kayıt tamamlanıp Microsoft Intune ekibi tarafından onaylanana kadar, Intune yöneticilerinin uygulamanızın ayrıntılı bağlantısına uygulama koruma ilkesi uygulama seçeneği olmaz. Microsoft ayrıca uygulamanızı kendi [Microsoft Intune İş Ortakları sayfasına](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) ekler. Sayfada Intune uygulama koruma ilkelerini desteklediğini göstermek üzere uygulamanın simgesi görüntülenir.
 
@@ -81,17 +81,17 @@ Depolarımızdan çatallama ve çekme işlemleri yaparken kullanabileceğiniz bi
 
 Intune Uygulama SDK'sı ile uygulamanızı tümleştirmenize yardımcı olması için aşağıdaki geliştirici kılavuzlarından biri gerekir:
 
-* **[İOS Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-ios.md)** : Bu belgede, yerel iOS uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
+* **[İOS Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-ios.md)**: Bu belgede, yerel iOS uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
 
-* **[Android Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-android.md)** : Bu belgede, yerel Android uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
+* **[Android Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-android.md)**: Bu belgede, yerel Android uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
 
-* **[Intune uygulama SDK'sı Xamarin bağlamaları Kılavuzu](app-sdk-xamarin.md)** : Bu belge, iOS ve Xamarin için Intune uygulama koruma ilkeleri kullanarak Android uygulamaları oluşturmanıza yardımcı olur.
+* **[Intune uygulama SDK'sı Xamarin bağlamaları Kılavuzu](app-sdk-xamarin.md)**: Bu belge, iOS ve Xamarin için Intune uygulama koruma ilkeleri kullanarak Android uygulamaları oluşturmanıza yardımcı olur.
 
 
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Uygulama tabanlı koşullu erişim için iOS veya Android uygulamanızı etkinleştirme
  
- Uygulama koruma ilkesi için uygulamanızı etkinleştirmenin yanı sıra, uygulamanızın Azure Active Directory (AAD) uygulama tabanlı koşullu erişim ile doğru şekilde yaşaması için aşağıdakiler gereklidir:
+ Uygulama koruma ilkesi için uygulamanızı etkinleştirmenin yanı sıra düzgün işlevi ile Azure Active Directory (AAD) uygulama tabanlı koşullu erişim için uygulamanız için gerekli verilmiştir:
  
  * Uygulama, [Azure Active Directory Kimlik Doğrulama Kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) ile oluşturulur ve AAD aracısı kimlik doğrulaması için etkinleştirilir.
  

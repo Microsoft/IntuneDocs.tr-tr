@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30c0e5af6d7ff0467383294c071d0ffdb96c5dc1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d3e74244315b7345a632a9ecd2bf631a134e5ab
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041848"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045029"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Cihaz yönetimi gerektirmeden Office 365 Exchange Online’ı koruma
 
@@ -34,9 +34,9 @@ Bir cihaz yönetim sistemi ayarlamak istiyorsanız, bu da mümkündür. Bu tür 
 
 1. [Koşullu erişim hakkında bilgi edinin](conditional-access.md). 
 2. [Uygulama tabanlı koşullu erişim hakkında bilgi edinin](app-based-conditional-access-intune.md).
-3. [Exchange Online için uygulama tabanlı koşullu erişim ilkeleri ayarlayın](app-based-conditional-access-intune-create.md).
+3. [Exchange Online için uygulama tabanlı koşullu erişim ilkeleri ayarlama](app-based-conditional-access-intune-create.md).
 4. [Yönetilemeyen uygulamaları engelleyin](app-modern-authentication-block.md), özellikle Azure Active Directory Authentication Library (ADAL) kullanmayanları.
-5. (İsteğe bağlı) [SharePoint Online için uygulama tabanlı koşullu erişim ilkeleri ayarlayın](app-based-conditional-access-intune-create.md). Bu ilkeler, yönetilemeyen ve güvende olmayan uygulamalardan şirket verilerinize erişimi engeller. Ayrıca SharePoint Mobile’dan erişimi de sınırlar. 
+5. (İsteğe bağlı) [SharePoint Online için uygulama tabanlı koşullu erişim ilkeleri ayarlama](app-based-conditional-access-intune-create.md). Bu ilkeler, yönetilemeyen ve güvende olmayan uygulamalardan şirket verilerinize erişimi engeller. Ayrıca SharePoint Mobile’dan erişimi de sınırlar. 
 
 ## <a name="what-to-tell-employees-and-students"></a>Çalışanlara ve öğrencilere söylenecekler
 
@@ -45,9 +45,9 @@ Bir cihaz yönetim sistemi ayarlamak istiyorsanız, bu da mümkündür. Bu tür 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Şirket verilerinin güvenliğini arttırmak için uygulama tabanlı koşullu erişim kullandınız. Sonraki adımların parçası olarak, şirket verilerinizin güvenliğini arttırmak için aşağıdaki gibi diğer yollar hakkında bilgi edinebilirsiniz: 
+Şirket verilerinin güvenliğini arttırmak için uygulama tabanlı koşullu erişim'i kullandınız. Sonraki adımların parçası olarak, şirket verilerinizin güvenliğini arttırmak için aşağıdaki gibi diğer yollar hakkında bilgi edinebilirsiniz: 
 
-* [Active Directory ve Azure Active Directory’de cihaz uyumluluğu, cihaz riski, konum ve kullanıcı özniteliklerine bağlı olarak koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ayarlamak.  
+* Ayarlama [tabanlı koşullu erişim cihaz uyumluluğu, cihaz riski, konum ve Active Directory ve Azure Active Directory kullanıcı öznitelikleri](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).  
 * Kasıtlı veya kasıtsız veri sızıntılarına karşı şirketinizi korumaya yardımcı olmak adına uygulama koruma ilkeleri ayarlamak. 
 * Şirket verilerini ağınız dışında da korumak adına Azure Information Protection’dan yararlanmak. 
 

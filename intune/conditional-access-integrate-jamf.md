@@ -1,7 +1,7 @@
 ---
 title: Uyumluluk için Jamf Pro’yu Microsoft Intune ile tümleştirme
 titleSuffix: Microsoft Intune
-description: Jamf tarafından yönetilen cihazların güvenliğine yardımcı olmak için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kullanın.
+description: Microsoft Intune uyumluluk ilkelerini güvenli Jamf tarafından yönetilen cihazlar için Azure Active Directory koşullu erişimiyle birlikte kullanın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 940ef3e6df95629dad03d6c1d4e60343e4273473
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7b5d3754c7dd3ead9236e223fd568e58e96fe9a1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048835"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045144"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
 Şunun için geçerlidir: Azure portalında Intune
 
-Kuruluşunuz kullanıyorsa [Jamf Pro](https://www.jamf.com) , son kullanıcılar Mac'lerini yönetmek için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişim ile kuruluşunuzdaki cihazların uyumlu olmasını sağlamak için kullanabilirsiniz.
+Kuruluşunuz kullanıyorsa [Jamf Pro](https://www.jamf.com) , son kullanıcılar Mac'lerini yönetmek için Microsoft Intune uyumluluk ilkelerini Azure Active Directory koşullu erişimiyle birlikte kuruluşunuzdaki cihazların uyumlu olmasını sağlamak için kullanabilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Jamf Pro ile koşullu erişimi yapılandırmak için aşağıdakiler gerekir:
+Jamf Pro ile koşullu erişim yapılandırmak için gerekenler:
 
 - Jamf Pro 10.1.0 veya daha yenisi
 - [MacOS için Şirket Portalı uygulaması](https://aka.ms/macoscompanyportal)
@@ -44,7 +44,7 @@ Intune'u Jamf Pro ile bağlamak için:
 
 1. Azure'da yeni bir uygulama oluşturma
 2. Jamf Pro ile tümleştirmek için Intune’u etkinleştirme
-3. Jamf Pro’daki koşullu erişim ilkelerini yapılandırma
+3. Jamf Pro'da koşullu erişimi yapılandırma
 
 ## <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory'de uygulama oluşturma
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e21eb6169acf8ae69ace94fd54007eaa4f7f90f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046747"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044346"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune planınızı uygulama
 
@@ -42,7 +42,7 @@ Tek başına Intune temel gereksinimleri şöyledir:
 
 -   Azure AD Connect (dizin eşitleme için)
 
--   Exchange için Intune Şirket İçi Bağlayıcısı (gerekirse Şirket İçi Exchange için koşullu erişim ayarlamak üzere)
+-   Intune On-Premises Connector için Exchange (için koşullu erişim için Exchange gerekirse şirket içinde)
 
 -   Intune Sertifika Bağlayıcısı (gerekirse SCEP sertifika dağıtımı için)
 
@@ -125,9 +125,9 @@ Intune, uyumluluk ilkelerini destekler. Uyumluluk ilkelerini gerektiği gibi ekl
 
 ### <a name="task-12-enable-conditional-access-policies"></a>Görev 12: Koşullu erişim ilkelerini etkinleştirme
 
-Intune Exchange Online, Şirket İçi Exchange, SharePoint Online, Skype Kurumsal Çevrimiçi Sürüm ve Dynamics CRM Online için koşullu erişimi destekler. Koşullu erişimi Intune dağıtım kullanım örneklerinize ve gereksinimlerinize göre uygun şekilde etkinleştirin ve yapılandırın.
+Intune Exchange Online için koşullu erişimi destekler, şirket içinde SharePoint Online, Skype Kurumsal çevrimiçi sürüm ve Dynamics CRM Online için Exchange. Etkinleştirin ve koşullu erişimi Intune dağıtım kullanım örneklerinize ve gereksinimlerinize göre uygun şekilde yapılandırın.
 
--   [Koşullu erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
+-   [Koşullu Erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
 
 ### <a name="task-13-enroll-devices"></a>Görev 13: Cihazları kaydetme
 

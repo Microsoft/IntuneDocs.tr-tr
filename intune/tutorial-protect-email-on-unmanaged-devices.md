@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc1f877f9b457c6abafef7f1e66e8b04bba2c8e0
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829014"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046278"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Öğretici: Yönetilmeyen cihazlarda Exchange Online e-postaları koruma
 
@@ -29,7 +29,7 @@ Bile cihazları Intune gibi bir cihaz yönetim çözümüne kayıtlı olmayan, E
 
 > [!div class="checklist"]
 > * Outlook uygulaması için bir Intune uygulama koruma ilkesi oluşturun. Hangi kullanıcı "Farklı Kaydet" engelleyerek ile uygulama verilerini yapın ve kısıtlama sınırlamak kesme, kopyalama ve yapıştırma. 
-> * Exchange Online'da şirket e-postalarına yalnızca Outlook uygulaması sağlayan Azure Active Directory (Azure AD) koşullu erişim ilkeleri oluşturun. Ayrıca, iOS için Outlook ve Android gibi Modern kimlik doğrulaması istemcileri için çok faktörlü kimlik doğrulaması (MFA) ihtiyacınız olacaktır.
+> * Yalnızca şirket e-posta Exchange Online'a erişmek Outlook uygulaması sağlayan Azure Active Directory (Azure AD) koşullu erişim ilkeleri oluşturun. Ayrıca, iOS için Outlook ve Android gibi Modern kimlik doğrulaması istemcileri için çok faktörlü kimlik doğrulaması (MFA) ihtiyacınız olacaktır.
 
 ## <a name="prerequisites"></a>Önkoşullar
   - Bu öğretici için aşağıdaki abonelik sahip bir test kiracısına ihtiyacınız olacak:
@@ -87,7 +87,7 @@ Tüm cihaz platformları kapsayacak şekilde iki koşullu erişim ilkeleri artı
 
 ### <a name="create-an-mfa-policy-for-modern-authentication-clients"></a>Modern kimlik doğrulaması istemcileri için MFA ilkesi oluşturma  
 
-1. Intune’da **Koşullu erişim** > **İlkeler** > **Yeni ilke**’yi seçin.  
+1. Intune'da seçin **koşullu erişim** > **ilkeleri** > **yeni ilke**.  
 
 2. İçin **adı**, girin **modern kimlik doğrulaması istemcileriniz için ilke Test**.  
 
@@ -132,7 +132,7 @@ Tüm cihaz platformları kapsayacak şekilde iki koşullu erişim ilkeleri artı
 Modern kimlik doğrulaması istemciler için koşullu erişim ilkesi oluşturulur. Şimdi, Exchange Active Sync istemciler için bir ilke oluşturabilirsiniz.
 
 ### <a name="create-a-policy-for-exchange-active-sync-clients"></a>Exchange Active Sync istemciler için bir ilke oluşturun  
-1. Intune’da **Koşullu erişim** > **İlkeler** > **Yeni ilke**’yi seçin.  
+1. Intune'da seçin **koşullu erişim** > **ilkeleri** > **yeni ilke**.  
 2. İçin **adı**, girin **EAS istemciler için ilke Test**.  
 3. **Atamalar** altında **Kullanıcılar ve gruplar**’ı seçin.  
 4. *Dahil et* sekmesinde **Tüm Kullanıcılar**’ı ve daha sonra **Bitti**’yi seçin.  
@@ -189,4 +189,4 @@ Test ilkelerine artık ihtiyacınız kalmadığında bunları kaldırabilirsiniz
 5. İçinde **ilke adı** listesinde, bağlam menüsünü seçin ( **...** ) her sınama ilkelerini ve ardından **Sil**. Onaylamak için **Evet**’i seçin.  
 
  ## <a name="next-steps"></a>Sonraki adımlar  
-Bu öğreticide, uygulama koruma ilkeleri, kullanıcının Outlook uygulaması ile neler yapabileceğinizi sınırlamak için oluşturduğunuz ve Outlook uygulaması gerektirebilir ve Modern kimlik doğrulaması istemcileri için MFA istemek için koşullu erişim ilkeleri oluşturdunuz. Diğer uygulama ve Hizmetleri korumak için Intune ile koşullu erişim kullanma hakkında bilgi edinmek için [koşullu erişimi ayarlama](conditional-access.md).
+Bu öğreticide oluşturduğunuz kullanıcı Outlook uygulaması ile neler yapabileceğinizi sınırlamak için uygulama koruma ilkeleri ve koşullu erişim ilkeleri Outlook uygulaması gerektirebilir ve Modern kimlik doğrulaması istemcileri için mfa'yı gerekli oluşturdunuz. Diğer uygulama ve Hizmetleri korumak için Intune ile koşullu erişim kullanma hakkında bilgi edinmek için [koşullu erişimi ayarlama](conditional-access.md).

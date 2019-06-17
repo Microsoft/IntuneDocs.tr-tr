@@ -4,10 +4,10 @@ description: Microsoft 365 Kurumsal, Microsoft Intune'u içerir. Intune mobil ci
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 audience: ITPro
-ms.service: ''
+ms.service: microsoft-intune
 ms.technology: ''
 ms.custom: intune
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050267"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043846"
 ---
 # <a name="what-is-device-management"></a>Cihaz yönetimi nedir? 
 
@@ -61,7 +61,7 @@ Cihaz yönetim çözümlerinin başlıca görevlerinden biri güvenlik ve koruma
     - Mobil cihazlarda dosya ve uygulamalarda kuşku verici etkinlik aramak için [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)'ı etkinleştirme. 
     - Kullanım [Windows Defender Gelişmiş tehdit Koruması (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) mobil cihazlarda güvenlik ihlallerini önlemeye yardımcı olmak için. Ayrıca, bir kullanıcı şirket kaynaklarına engelleyerek güvenlik ihlali etkisini sınırlamaya Yardım.
 
-- **Koşullu erişim** Azure Active Directory'nin bir özelliğidir ve Intune ile sorunsuz tümleşir. Kullanarak [koşullu erişim](https://docs.microsoft.com/intune/conditional-access), yalnızca uyumlu cihazların e-posta, SharePoint ve diğer uygulamalara erişim sağlandığından emin olun. 
+- **Koşullu erişim** Azure Active Directory özelliğidir ve Intune ile sorunsuz şekilde tümleşir. Kullanarak [koşullu erişim](https://docs.microsoft.com/intune/conditional-access), yalnızca uyumlu cihazların e-posta, SharePoint ve diğer uygulamalara erişim sağlandığından emin olun. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Sizin için doğru olan cihaz yönetim çözümünü seçin
 

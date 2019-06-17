@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3f6fc48a68122f0a192adc8e2140bb7a603b31
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043474"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045788"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>KCG'yi Microsoft Enterprise Mobility + Security (EMS) ile etkinleştirmeye yönelik teknoloji kararları
 
@@ -32,7 +32,7 @@ Bu konu başlığı altında, şirket e-postasına KCG erişimini etkinleştirme
 * E-posta hesaplarınız Exchange Online'da barındırılıyor
 
 ## <a name="common-reasons-to-manage-the-device-mdm"></a>Cihazı yönetmek için yaygın nedenler (MDM)
-Exchange Online'da [koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ilkesi dağıtarak kolayca kullanıcıları cihaz yönetimine cihazlarını kaydetmeye yönlendirebilirsiniz. Aşağıdaki nedenlerle kişisel cihazları yönetmek isteyebilirsiniz:
+Kolayca kullanıcılara dağıtarak cihaz yönetimine cihazlarını kaydetmeye yönlendirebilirsiniz bir [koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) Exchange Online ilkesi. Aşağıdaki nedenlerle kişisel cihazları yönetmek isteyebilirsiniz:
 
 **WiFi/VPN** – Kullanıcılarınızın üretken olmak için bir şirket bağlantı profiline ihtiyaçları varsa, bu rahatça yapılandırılabilir.
 
@@ -41,7 +41,7 @@ Exchange Online'da [koşullu erişim](https://docs.microsoft.com/azure/active-di
 **Uyumluluk** – Bazı kuruluşların belirli MDM denetimlerini çağıran yasal düzenleme ilkelerine veya başka ilkelere uyumlu olması gerekir. Örneğin, cihazın tamamını şifrelemek veya cihazdaki tüm uygulamaların raporunu oluşturmak için MDM gerekir.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Yalnızca uygulamaları yönetmek için yaygın nedenler (MAM)
-MDM olmadan MAM, KCG'yi destekleyen kuruluşlar arasında çok yaygındır. Exchange Online’a koşullu erişim ilkesi dağıtarak, kullanıcıları Outlook Mobile’dan (MAM korumalarını destekler) e-postaya erişmeye yönlendirebilirsiniz. Aşağıdaki nedenlerle yalnızca kişisel cihazlardaki uygulamaları yönetmek isteyebilirsiniz:
+MDM olmadan MAM, KCG'yi destekleyen kuruluşlar arasında çok yaygındır. Exchange Online koşullu erişim ilkesi dağıtarak, kullanıcılar Outlook mobil CİHAZDAN (Bu MAM korumalarını destekler) e-postaya erişmeye yönlendirebilirsiniz. Aşağıdaki nedenlerle yalnızca kişisel cihazlardaki uygulamaları yönetmek isteyebilirsiniz:
 
 **Kullanıcı deneyimi** – MDM kaydı birçok uyarı istemi içerir (bunlar platform tarafından zorunlu tutulur) ve sonuçta çoğunlukla kullanıcı kendi kişisel cihazından e-postaya hiç erişmemeye karar verebilir. MAM kullanıcılara çok daha az uyarı verir; yalnızca bir kez açılan kutuyla MAM korumalarının yürürlükte olduğu bildirilir.
 
@@ -52,7 +52,7 @@ MDM olmadan MAM, KCG'yi destekleyen kuruluşlar arasında çok yaygındır. Exch
 [Cihaz yönetimi ve uygulama yönetimi yaşam döngüleri](introduction-device-app-lifecycles.md) hakkında daha fazla bilgi edinin.
 
 ## <a name="mdm-vs-mam-capability-comparison"></a>MDM ile MAM özellik karşılaştırması
-Daha önce de belirtildiği gibi, koşullu erişim kullanıcıyı cihazını kaydetmeye veya Outlook Mobile gibi yönetilen bir uygulama kullanmaya yönlendirebilir. Her iki durumda birçok başka koşul da uygulanabilir, örneğin:
+Zaten belirtildiği gibi koşullu erişim, bir kullanıcının cihazını kaydetmeye veya Outlook Mobile gibi yönetilen bir uygulama kullanmaya yönlendirebilir. Her iki durumda birçok başka koşul da uygulanabilir, örneğin:
 
 * Erişmeye çalışan kullanıcı
 * Konumun güvenilir olup olmadığı

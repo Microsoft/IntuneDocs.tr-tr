@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb081dd52999f203420e8a1f0b4f9c52a313f75
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043284"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045106"
 ---
-# <a name="create-a-device-based-conditional-access-policy"></a>Cihaz tabanlı koşullu erişim ilkesi oluşturma
+# <a name="create-a-device-based-conditional-access-policy"></a>Bir cihaz tabanlı koşullu erişim ilkesi oluşturma
 
 Intune ile mobil cihaz uyumluluğu için erişim denetimleri ekleyerek Azure Active Directory'de koşullu erişim geliştirebilirsiniz. Cihazların uyumlu olmasını gereksinimlerini tanımlayan Intune uyumluluk ilkesi oluşturduktan sonra izin vermek veya uygulama ve hizmetlere erişimi engellemek için bir cihazın uyumluluk durumunu kullanabilirsiniz. Bu ayarı kullanan bir koşullu erişim ilkesi oluşturarak bunu yapabilirsiniz **cihazın uyumlu olarak işaretlenmesini gerektir**.  
 
@@ -74,7 +74,7 @@ Koşullu erişim ilkesi uygulama veya hizmetleri korumak istediğiniz, koşullar
       ![Yeni bir koşullu erişim ilkesi oluşturma](media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
-      > Her ikisi de korumak istiyorsanız **Modern kimlik doğrulaması** istemcileri ve **Exchange ActiveSync istemcileri**, iki ayrı bir koşullu erişim ilkeleri, her istemci türü için bir tane oluşturun. Exchange ActiveSync modern kimlik doğrulamayı desteklemesine rağmen Exchange ActiveSync tarafından desteklenen tek koşul platformudur. Multi-Factor authentication dahil, diğer koşullar desteklenmez. Etkili bir şekilde erişim Exchange Online için Exchange ActiveSync'ten korumak için bulut uygulaması, Office 365 Exchange Online ve Exchange ActiveSync istemci uygulaması, seçili yalnızca desteklenen platformlara Uygula ilkesiyle belirten bir koşullu erişim ilkesi oluşturun.
+      > Her ikisi de korumak istiyorsanız **Modern kimlik doğrulaması** istemcileri ve **Exchange ActiveSync istemcileri**, iki ayrı koşullu erişim ilkeleri, her istemci türü için bir tane oluşturun. Exchange ActiveSync modern kimlik doğrulamayı desteklemesine rağmen Exchange ActiveSync tarafından desteklenen tek koşul platformudur. Multi-Factor authentication dahil, diğer koşullar desteklenmez. Etkili bir şekilde erişim Exchange Online için Exchange ActiveSync'ten korumak için bulut uygulaması, Office 365 Exchange Online ve Exchange ActiveSync istemci uygulaması, seçili yalnızca desteklenen platformlara Uygula ilkesiyle belirten bir koşullu erişim ilkesi oluşturun.
 
 9.  **Done** (Bitti) öğesini seçin.
 10. **Erişim denetimleri** altında **Ver**’i seçin. Temel ayarlamış olduğunuz koşullara ne yapılandırın.  Aşağıdaki seçeneklerden birini seçebilirsiniz:

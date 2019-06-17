@@ -1,7 +1,7 @@
 ---
 title: Koşullu erişimle son kullanıcı benimsemesi sağlama
 titleSuffix: Microsoft Intune
-description: Microsoft Intune’da kaydı sağlamak için koşullu erişimi nasıl kullanacağınızı öğrenin.
+description: Koşullu erişim cihaz kaydına Microsoft Intune için kullanmayı öğrenin.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -16,26 +16,26 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050470"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044594"
 ---
-# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Microsoft Intune’da koşullu erişimle son kullanıcı benimsemesi sağlama
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Microsoft Intune koşullu erişimle son kullanıcı benimsemesi
 
-Kaydı silinen cihazlar için e-postayı engellemek gibi koşullu erişim özelliklerini Intune ile etkinleştirme, cihaz kaydına ve uyumluluğuna yardımcı olabilir ancak geçiş işleminin başarılı olması için gerekli değildir. Geçiş benimseme hedefleri ve güvenlik gereksinimleriniz başarıyı belirleyen unsurlar olmalıdır.
+Kaydı silinen cihazlar için e-posta engellemek gibi koşullu erişim özelliklerini Intune ile etkinleştirme cihaz kaydına ve uyumluluğuna yardımcı olabilir ancak geçiş başarılı olması için gerekli değildir. Geçiş benimseme hedefleri ve güvenlik gereksinimleriniz başarıyı belirleyen unsurlar olmalıdır.
 
 ## <a name="migration-campaign-with-conditional-access"></a>Koşullu erişim ile geçiş kampanyası
 
 Koşullu erişim ile bir geçiş kampanyasını geliştirme için tipik bir yaklaşım şöyledir:
 
-1.  Tüm kullanıcılar için uygulanacak koşullu erişim kuralları ayarlayın ancak eski MDM sağlayıcısından geçiş yapacak kullanıcıları özellikle dışlayın. Tüm koşullu erişimden dışlanan bir Azure AD kullanıcı grubu oluşturabilirsiniz.
+1.  Tüm kullanıcılar için zorlanacak ancak eski MDM sağlayıcısından geçiş yapacak kullanıcıları özellikle hariç tutmak için koşullu erişim kuralları ayarlayın. Tüm koşullu erişim dışlanan kullanıcılar ile bir Azure AD kullanıcı grubu oluşturabilirsiniz.
 
 2.  Kullanıcılar geçiş yaptıkça, bunları koşullu erişim dışlama grubundan kaldırın.
 
-3.  Geçiş tamamlandıktan sonra, Intune erişime izin vermedikçe varsayılan olarak tüm koşullu erişim ilkelerini engellemek için yapılandırın.
+3.  Geçiş tamamlandıktan sonra Intune erişime izin vermedikçe varsayılan olarak engellemek için tüm koşullu erişim ilkelerini yapılandırabilirsiniz.
 
 ### <a name="advantages"></a>Yararları
 
@@ -50,9 +50,9 @@ Koşullu erişim ile bir geçiş kampanyasını geliştirme için tipik bir yakl
 -   Önceki çözümün kullanıcıları, koşullu erişim bu kullanıcılar için etkinleştirilene kadar yönetilmeyen cihazları kullanarak kaynaklara potansiyel olarak erişebilir.
 
 
-Bu birçok yaklaşımdan biridir. Her aşama için kayıt talimatı alındıktan sonra tüm koşullu erişimi etkileyen daha basit bir süreç seçebilir veya koşullu erişimi en baştan uygulayan ve erişim için tam uyumluluk gerektiren daha sıkı bir süreç seçebilirsiniz.
+Bu birçok yaklaşımdan biridir. Her aşama kaydetmeye talimatı alındıktan sonra tüm koşullu erişimi etkileyen daha basit bir işlem veya en çok baştan koşullu erişimi zorunlu kılar ve tüm erişim için tam uyumluluk gerektiren daha sıkı bir süreç seçebilirsiniz.
 
--   [Koşullu erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
+-   [Koşullu Erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
 
 ## <a name="task-list-for-conditional-access"></a>Koşullu erişim için görev listesi
 

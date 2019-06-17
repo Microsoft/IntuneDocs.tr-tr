@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e9a640a343efd4ad786d7697439531de3cd4ed3
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66828968"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031658"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>Microsoft Intune - Haziran 2019 geliştirme
 
@@ -55,7 +55,7 @@ Bir kullanıcı cihazında yüklü (gerekli ve kullanılabilir) tüm yönetilen 
 Android ve iOS cihazlarında Intune uygulama koruma ilkelerini (APP) Org web bağlantılarını Intune Managed Browser ya da Microsoft Edge ötesinde belirli bir tarayıcıya aktarmanıza imkan sağlar.  Uygulama hakkında daha fazla bilgi için bkz. [uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>Uygulama sayfası Şirket portalı Web sitesinde yüklü  <!-- 4224326 -->
-[Şirket portalı Web sitesine](https://portal.manage.microsoft.com/) kullanıcıları göstermek için yeni bir sayfa içerecektir tüm cihazlarında yüklü uygulamaları. Bu liste, kullanılabilir uygulamaları hem kuruluş tarafından gerekli uygulamaları içerir. Bu sayfada, kullanıcıların cihazlarında uygulamaları yükleme ve gereksinim durumları görmek mümkün olacaktır. Şirket portalı Web sitesi hakkında daha fazla bilgi için bkz. [Intune Şirket portalı Web sitesini kullanarak](/intune-user-help/using-the-intune-company-portal-website.md) ve [Microsoft Intune Şirket portalı uygulamasını yapılandırma](company-portal-app.md).
+[Şirket portalı Web sitesine](https://portal.manage.microsoft.com/) kullanıcıları göstermek için yeni bir sayfa içerecektir tüm cihazlarında yüklü uygulamaları. Bu liste, kullanılabilir uygulamaları hem kuruluş tarafından gerekli uygulamaları içerir. Bu sayfada, kullanıcıların cihazlarında uygulamaları yükleme ve gereksinim durumları görmek mümkün olacaktır. Şirket portalı Web sitesi hakkında daha fazla bilgi için bkz. [Intune Şirket portalı Web sitesini kullanarak](/intune-user-help/using-the-intune-company-portal-website) ve [Microsoft Intune Şirket portalı uygulamasını yapılandırma](company-portal-app.md).
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>Kullanıcı kimlik bilgileri olmayan bir uygulamadan okuma işlemleri Graph API çağırma <!-- 4655885 -->
 Uygulamalar, okuma işlemleri kullanıcı kimlik bilgileri olmadan uygulama kimliği ile Intune Graph API'sini çağırmak mümkün olacaktır. Daha fazla bilgi için bkz. [bir kullanıcı olmaksızın erişim elde](https://docs.microsoft.com/graph/auth-v2-service).

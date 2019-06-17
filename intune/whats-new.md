@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 860d990e07fb2424adf0672e416c608b1251ae3c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749947"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046191"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -45,6 +45,17 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-june-10-2019"></a>10 Haziran 2019 haftası 
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Yeni örnek uygulamalar Github'da kullanılabilir Intune SDK'sı tümleştirmesi gösteriliyor <!-- 2653471 -->
+GitHub hesabı msintuneappsdk iOS (Swift), Android, Xamarin.iOS, Xamarin Forms ve Xamarin.Android için yeni örnek uygulamalar eklemiştir. Bu uygulamalar, mevcut belgelerimize desteklemek ve Intune uygulama SDK'sı kendi mobil uygulamalarınızla nasıl tümleştireceğinizi nasıl gösterimlerine sağlamak için yöneliktir. Ek Intune SDK'sı Kılavuzu gerektiren bir uygulama geliştiricisiyseniz, aşağıdaki bağlantılı örneklere bakın:
+- [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) - aracılı kimlik doğrulaması için Azure Active Directory kimlik doğrulama kitaplığı (ADAL) kullanan uygulamayı anlık ileti yerel iOS (Swift).
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) -aracılı kimlik doğrulaması için ADAL kullanan bir yerel Android Yapılacaklar listesi uygulaması.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) -aracılı kimlik doğrulaması için bu depoyu ADAL kullanır, ayrıca bir Xamarin.Android Yapılacaklar listesi uygulaması Xamarin.Forms uygulaması vardır.
+- [Xamarin.iOS örnek uygulaması](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) -temel Xamarin.iOS örnek bir uygulama.
 
 ## <a name="week-of-may-27-2019"></a>27 Mayıs 2019 haftası 
 
@@ -192,7 +203,7 @@ Artık iOS ve Android cihazlarda Outlook varsayılan imza etkin olup olmadığı
 F5 BIG-IP 13, NAC işlevselliği, ıntune'da iOS için F5'e erişim verir. bir güncelleştirme yayımladı. Bu özelliği kullanmak için:
 
 - BIG-IP 13.1.1.5 için güncelleştirme yenileyin. BIG-IP 14 desteklenmez.
-- BIG-IP NAC için Intune ile tümleştirme. Adımları [genel bakış: APM yapılandırma cihaz duruşu için uç nokta yönetim sistemleri ile denetler](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- BIG-IP NAC için Intune ile tümleştirme. Adımları [genel bakış: APM yapılandırma cihaz duruşu için uç nokta yönetim sistemleri ile denetler](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html).
 - Denetleme **etkinleştirme ağ erişim denetimi (NAC)** VPN profilini ıntune'da ayarlama.
 
 Kullanılabilir ayarını görmek için Git [iOS cihazlarda VPN yapılandırma ayarlarını](vpn-settings-ios.md).
@@ -560,8 +571,8 @@ Kullanıcı benzeşimi olmayan cihazlar da dahil olmak üzere, macOS cihazları 
 Şunun için geçerlidir: 
 - Mac OS
 
-#### <a name="intune-conditional-access-ui-update------2432313-----"></a>Intune koşullu erişim kullanıcı arabirimini güncelleştirme   <!-- 2432313   -->
-Intune konsolunda koşullu erişim için kullanıcı arabirimi geliştirmeleri yaptık. Bunlar:
+#### <a name="intune-conditional-access-ui-update------2432313-----"></a>Intune koşullu erişim kullanıcı Arabiriminde güncelleştirme   <!-- 2432313   -->
+Geliştirmeler için kullanıcı Arabirimi için koşullu erişimi Intune konsolunda yaptık. Bunlar:
 -  Intune yerine *koşullu erişim* dikey penceresinden Azure Active Directory içeren dikey pencere. Bu erişim ayarları ve yapılandırmaları için tam aralığına sahip olacaksınız sağlar [koşullu erişim](conditional-access.md) (hangi kalacak bir Azure AD teknolojisi) içinde Intune konsolunda. 
 - Biz yeniden adlandırdıktan *şirket içi erişim* dikey penceresine *Exchange erişimi*ve yeniden konumlandırılması *Exchange hizmeti Bağlayıcısı* kurulumunu yeniden adlandırılan bu dikey pencere.  Bu değişikliğin nerede birleştirir, [yapılandırmak ve izlemek için Exchange online ve şirket içi ilgili ayrıntıları](exchange-connector-install.md).  
 
@@ -1109,7 +1120,7 @@ Samsung Knox Mobil Kaydı için Intune artık cihazları Android Cihaz Sahibi y�
 - KCG senaryolarını destekleyen bir yeniden başlatma için uyarı istemini iş saatleri dışında gerçekleşen bir yeniden başlatma artık yapılandırabilirsiniz.
 
 #### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Windows Autopilot kayıtlı cihazlar İlişkilendirici Kimliğine göre gruplandırma <!-- 2075110 -->
-Intune, Configuration Manager aracılığıyla [mevcut cihazlar için Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) kullanılarak kaydedilmiş Windows cihazları ilişkilendirici kimliğine göre gruplamayı artık destekliyor. İlişkilendirici kimliği, Autopilot yapılandırma dosyasının bir parametresidir. Intune, [Azure Active Directory cihaz özniteliği enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) değerini “OfflineAutopilotprofile-<correlator ID>” değerine eşit olacak şekilde otomatik olarak ayarlar. Bu, çevrimdışı Autopilot kayıtları için enrollmentprofileName özniteliği aracılığıyla ilişkilendirici kimliğine göre rasgele Azure AD dinamik grupları oluşturulmasına izin verir. Daha fazla bilgi için bkz. [Mevcut cihazlar için Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices).
+Intune, Configuration Manager aracılığıyla [mevcut cihazlar için Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) kullanılarak kaydedilmiş Windows cihazları ilişkilendirici kimliğine göre gruplamayı artık destekliyor. İlişkilendirici kimliği, Autopilot yapılandırma dosyasının bir parametresidir. Intune, [Azure Active Directory cihaz özniteliği enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) değerini “OfflineAutopilotprofile-<correlator ID>” değerine eşit olacak şekilde otomatik olarak ayarlar. Bu, çevrimdışı Autopilot kayıtları için enrollmentprofileName özniteliği aracılığıyla ilişkilendirici kimliğine göre rasgele Azure AD dinamik grupları oluşturulmasına izin verir. Daha fazla bilgi için bkz. [Mevcut cihazlar için Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices).
 
 #### <a name="intune-app-protection-policies----2984657---"></a>Intune uygulama koruma ilkeleri <!-- 2984657 -->
 Intune uygulama koruma ilkeleri, Microsoft Outlook ve Microsoft Word gibi Intune tarafından korunan uygulamalar için çeşitli veri koruma ayarlarını yapılandırmanıza olanak sağlar. Ayrı ayrı ayarların bulunmasını kolaylaştırmak için hem [iOS](app-protection-policy-settings-ios.md) hem de [Android](app-protection-policy-settings-android.md) üzerinde bu ayarların görünümünde ve işlevinde değişiklik yaptık. İlke ayarları üç kategoriye ayrılır:
@@ -1164,7 +1175,7 @@ Bu özellik yalnızca iOS için kullanılabilir ve iOS için Intune APP SDK’s�
 #### <a name="access-to-key-profile-properties-using-the-company-portal-app----772203---"></a>Şirket portalı uygulamasını kullanarak anahtar profilini özelliklerine erişim <!-- 772203 -->
 Son kullanıcılar artık parola sıfırlama gibi önemli hesap özellikleri ve eylemlerine Şirket portalı uygulamasından erişebilir. 
 
-#### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>3. taraf klavyeler iOS uygulama ayarları tarafından engellendi <!-- 1248481 -->
+#### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>3\. taraf klavyeler iOS uygulama ayarları tarafından engellendi <!-- 1248481 -->
 iOS cihazlarda Intune yöneticileri, ilke korumalı uygulamalarda kuruluş verilerine erişilirken üçüncü taraf klavyelerin kullanımını engelleyebilir. Uygulama Koruma İlkesi (APP) üçüncü taraf klavyelerini engelleyecek şekilde ayarlandığında, cihaz kullanıcısı üçüncü taraf klavyesini kullanarak şirket verileriyle ilk kez etkileşim kurarken bir ileti alır. Yerel klavye dışındaki tüm seçenekler engellenir ve cihaz kullanıcıları bunları görmez. Cihaz kullanıcıları iletişim kutusu iletisini tek bir kez görür. 
 
 #### <a name="user-account-access-of-intune-apps-on-managed-android-and-ios-devices----1248496---"></a>Yönetilen Android ve iOS cihazlarında Intune uygulama kullanıcı hesabı erişimi <!-- 1248496 -->

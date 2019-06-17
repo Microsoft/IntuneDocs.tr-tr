@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df1a3fcfe0f6fd0fc2a5fbfe73935c8f47c106ff
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b945218fd1c2692bdc5ca92db5f309488a1a10bd
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041605"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044297"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Intune ile Pradeo Mobile Threat Defense bağlayıcısı
 
-Microsoft Intune ile tümleşen Mobile Threat Defense (MTD) çözümü olan Pradeo tarafından yapılan risk değerlendirmesine göre koşullu erişim kullanarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Pradeo uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
+Şirket kaynaklarına Pradeo, Microsoft Intune ile tümleşik bir Mobile Threat Defense (MTD) çözümü tarafından yapılan risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Pradeo uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Pradeo risk değerlendirmesini temel alan koşullu erişim ilkeler yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumlu olmayan cihazların şirket kaynaklarına erişimine izin vermek veya erişimini engellemek için bu ilkeler kullanılabilir.
+İzin verme veya engelleme algılanan tehditlere dayalı olarak şirket kaynaklarına erişmek için uyumsuz cihazlar için kullanabileceğiniz Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Pradeo risk değerlendirmesine dayalı koşullu erişim ilkelerini yapılandırabilirsiniz.
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune ve Pradeo şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1a255391a2cf27a764da6122031fd0c9cbb64cf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751394"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044887"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge Intune kullanarak web erişimini yönetme
 
@@ -134,7 +134,7 @@ Microsoft Edge ve [Azure AD uygulama proxy'si](https://docs.microsoft.com/azure/
 
 AD uygulama ara sunucusunu etkinleştirme senaryoları bazı örnekleri şunlardır: 
 
-- Bir kullanıcı Intune tarafından korunan Outlook mobil uygulamasının kullanıyor. Ardından, bir e-posta bir intranet siteye bir bağlantı ve Microsoft Edge bu intranet sitenin kullanıcıya uygulama proxy'si aracılığıyla sunulduğunu algılar. Kullanıcı, intranet siteye ulaşmadan önce herhangi bir uygun çok faktörlü kimlik doğrulama ve koşullu erişim ile kimlik doğrulaması yapmak için uygulama proxy'si aracılığıyla otomatik olarak yönlendirilir. Kullanıcılar, hatta mobil cihazlarında dahili sitelerine erişebildiğinden ve Outlook'taki bağlantı beklendiği gibi çalışır.
+- Bir kullanıcı Intune tarafından korunan Outlook mobil uygulamasının kullanıyor. Ardından, bir e-posta bir intranet siteye bir bağlantı ve Microsoft Edge bu intranet sitenin kullanıcıya uygulama proxy'si aracılığıyla sunulduğunu algılar. Kullanıcı, intranet siteye ulaşmadan önce herhangi bir uygun çok faktörlü kimlik doğrulaması ve koşullu erişimde kimlik doğrulaması yapmak için uygulama proxy'si aracılığıyla otomatik olarak yönlendirilir. Kullanıcılar, hatta mobil cihazlarında dahili sitelerine erişebildiğinden ve Outlook'taki bağlantı beklendiği gibi çalışır.
 - Bir kullanıcı, iOS veya Android cihazına Microsoft Edge açılır. Intune ile korunan Microsoft Edge ve uygulama ara sunucusu etkin kullanıcı için kullanılan dahili URL'yi kullanarak bir intranet sitesine gidebilirsiniz. Microsoft Edge, bu intranet sitenin kullanıcıya uygulama proxy'si aracılığıyla sunulan ve kullanıcı intranet siteye ulaşmadan önce kimlik doğrulaması yapmak için uygulama proxy'si aracılığıyla otomatik olarak yönlendirilir tanır. 
 
 ### <a name="before-you-start"></a>Başlamadan önce
@@ -249,7 +249,7 @@ Kullanım anahtar/değer çifti, bu geçici bir geçiş izin veriliyorsa yapıla
 
 Intune Managed Browser ve Microsoft Edge sunulmuştur ilkeyle korunan tarayıcı olarak kullanılabilir. Kullanıcılarınızın doğru tarayıcı uygulamasını kullanmak için yönlendirilmesi emin olmak için Intune tarafından yönetilen uygulamalarla (örneğin, Outlook ve OneDrive) şu yapılandırma ayarı tüm hedef:
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.useEdge`    |    Değer `true` Microsoft Edge kullanmak için kullanıcılarınızın yönlendirir.<p>Değer `false` kullanıcılarınızın Intune Managed Browser kullanmasını yönlendirir.    |
 
@@ -283,7 +283,7 @@ Ek güvenlik ve gizlilik konuları Microsoft Edge için:
 - Microsoft Edge, Microsoft Edge için bu ayarları erişemediği için kullanıcıların cihazlarında yerel tarayıcılarında bu işlem için ayarlanan ayarları tüketmez.
 - Seçeneğini yapılandırırsanız **erişim için basit PIN gerektir** veya **erişim için Kurumsal kimlik bilgilerini gerektir** uygulama koruma İlkesi, Microsoft Edge ile ilişkili ve bir kullanıcı hakkında Yardım bağlantısını seçerse kimlik doğrulaması sayfası olup ilkesinde bir engelleme listesine eklenmiş olmasından bağımsız olarak herhangi bir Internet sitesine göz atabilir.
 - Yalnızca bunlar doğrudan erişildiğinde Microsoft Edge sitelere erişimi engelleyebilir. Siteye erişmek için ara hizmetler (örneğin bir çeviri hizmeti) kullanıldığında erişimi engellemez.
-- Kimlik doğrulamasına izin ver ve Intune belgelerine erişim * **. microsoft.com** izin verilenler veya Engellenenler listesi ayarlarının dışında tutulur. Adrese her zaman izin verilir.
+- Kimlik doğrulamasına izin ver ve Intune belgelerine erişim ***. microsoft.com** izin verilenler veya Engellenenler listesi ayarlarının dışında tutulur. Adrese her zaman izin verilir.
 Microsoft kullanım verilerini kapatma toplanan performansı ve Microsoft Ürün ve hizmetlerini geliştirmek için Managed Browser kullanımı hakkında anonim bilgileri otomatik olarak açın. Kullanıcılar cihazlarındaki **Kullanım Verileri** ayarını kullanarak veri toplamayı kapatabilir. Bu verilerin toplanması üzerinde denetiminiz yoktur. iOS cihazlarda, kullanıcıların ziyaret ettiği süresi dolmuş veya güvenilmeyen sertifikalara sahip web siteleri açılmaz.
 
 ## <a name="next-steps"></a>Sonraki adımlar

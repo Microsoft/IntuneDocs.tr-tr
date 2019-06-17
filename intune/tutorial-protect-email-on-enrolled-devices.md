@@ -1,7 +1,7 @@
 ---
 title: Öğretici - Intune ile yönetilen cihazlarda Exchange Online e-postalarını koruma
 titleSuffix: Microsoft Intune
-description: iOS Intune uyumluluk ilkeleri ve Azure Active Directory koşullu erişim ile yönetilen cihazlar ve Outlook uygulamasını gerektirerek Exchange Online’ın güvenliğini sağlamayı öğrenin.
+description: İOS uyumluluk ilkeleri Intune ile Exchange Online ve Azure AD koşullu erişim yönetilen cihazlar ve Outlook uygulamasını zorunlu tutmak için güvenli şekilde öğrenin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80f9d3d2799732f2d019189913c5c47cc6973809
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3f3d51cfbacfa8ef380531f91e058717cf51d089
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044584"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044155"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Öğretici: Yönetilen cihazlarda Exchange Online e-postaları koruma
-iOS cihazların yalnızca Intune tarafından yönetildiğinde ve onaylı bir e-posta uygulaması kullandığında Exchange Online’a erişebilmesini sağlamak için koşullu erişim ile cihaz uyumluluk ilkelerini kullanma hakkında bilgi edinin. 
+Cihaz uyumluluk ilkelerini koşullu erişimle, iOS cihazları yalnızca Intune tarafından yönetildikleri, Exchange Online e-posta erişebildiğinden emin olmak için kullanarak ve bir onay e-postası uygulamayı kullanma hakkında bilgi edinin. 
 
 Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz: 
 > [!div class="checklist"]
 > * Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune iOS cihaz uyumluluk ilkesi oluşturma.
-> * iOS cihazların Exchange Online e-postalarına erişmek için Intune’a kaydolması, Intune ilkeleriyle uyumlu olması ve onaylı Outlook mobil uygulamasını kullanmasını gerektiren bir Azure Active Directory (AAD) koşullu erişim ilkesi oluşturma.
+> * İOS cihazları ıntune'a, Intune ilkeleriyle uyumlu ve onaylı Outlook mobil uygulamasının Exchange Online'a e-postaya erişmeye gerektiren bir Azure Active Directory (Azure AD) koşullu erişim ilkesi oluşturun.
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](free-trial-sign-up.md).
 
@@ -74,9 +74,9 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 8.  **Tamam**’ı ve ardından tekrar **Tamam**’ı seçin.
 9.  **Oluştur**’u seçin.
 
-## <a name="create-the-conditional-access-policy"></a>Koşullu erişim ilkesini oluşturma
-Şimdi Exchange Online’a erişmeden önce tüm cihaz platformlarının Intune uyumluluk ilkemizle uyumlu olmasını gerektiren bir koşullu erişim ilkesi oluşturacağız. Ayrıca e-posta erişimi için Outlook uygulamasını gerekli kılacağız. Koşullu erişim ilkeleri, Azure Active Directory portalında veya Intune portalında yapılandırılabilir. Zaten Intune portalında olduğumuz için ilkeyi burada oluşturalım.
-1.  Intune’da **Koşullu erişim** > **İlkeler** > **Yeni ilke**’yi seçin.
+## <a name="create-the-conditional-access-policy"></a>Koşullu erişim ilkesi oluşturma
+Artık Intune'a kaydolana ve Exchange Online'a erişebilmesi bizim Intune uyumluluk ilkesiyle uyumlu için tüm cihaz platformlarını gerektiren bir koşullu erişim ilkesi oluşturacağız. Ayrıca e-posta erişimi için Outlook uygulamasını gerekli kılacağız. Koşullu erişim ilkeleri, Azure AD portalından veya Intune portalında yapılandırılabilir özelliktedir. Zaten Intune portalında olduğumuz için ilkeyi burada oluşturalım.
+1.  Intune'da seçin **koşullu erişim** > **ilkeleri** > **yeni ilke**.
 1.  **Ad** olarak **Office 365 e-postaları için test ilkesi**’ni seçin. 
 3.  **Atamalar** altında **Kullanıcılar ve gruplar**’ı seçin. **Dahil et** sekmesinde **Tüm Kullanıcılar**’ı ve daha sonra **Bitti**’yi seçin.
 
@@ -138,4 +138,4 @@ Test ilkelerine artık ihtiyacınız kalmadığında bunları kaldırabilirsiniz
 5. **İlke Adı** listesinde test ilkenizin açılır menüsünü (**...**) seçin ve daha sonra **Sil**’e tıklayın. Onaylamak için **Evet**’i seçin.
 
  ## <a name="next-steps"></a>Sonraki adımlar 
-Bu öğreticide, iOS cihazların Exchange Online e-postalarına erişmek için Intune’a kaydolmasını ve Outlook uygulamasını kullanmasını gerektiren ilkeler oluşturdunuz. Office 365 Exchange Online için Exchange ActiveSync istemcileri dahil olmak üzere diğer uygulama ve hizmetleri korumak için koşullu erişim ile Intune’u kullanma hakkında daha fazla bilgi edinmek için bkz. [Koşullu erişimi ayarlama](conditional-access.md).
+Bu öğreticide, iOS cihazların Exchange Online e-postalarına erişmek için Intune’a kaydolmasını ve Outlook uygulamasını kullanmasını gerektiren ilkeler oluşturdunuz. Diğer uygulamalar ve hizmetler, Office 365 Exchange Online için Exchange ActiveSync istemcileri de dahil olmak üzere korumak için Intune ile koşullu erişim kullanma hakkında bilgi edinmek için bkz. [koşullu erişimi ayarlama](conditional-access.md).

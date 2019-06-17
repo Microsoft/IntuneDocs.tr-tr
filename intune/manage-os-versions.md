@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041670"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044911"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune ile işletim sistemi sürümlerini yönetme
 Modern mobil ve masaüstü platformlarda önemli güncelleştirmeler, düzeltme ekleri ve yeni sürümler sık sık yayınlanır. Windows üzerinde güncelleştirmeleri ve düzeltme eklerini yönetmek için tam denetiminiz olsa da iOS ve Android gibi diğer platformlarda son kullanıcılarınızın da bu işlemde yer alması gerekir.  Microsoft Intune, farklı platformlarda işletim sistemi sürümü yönetiminizi yapılandırmak için farklı işlevlere sahiptir.
@@ -53,7 +53,7 @@ Kayıt kısıtlamalarına benzer şekilde cihaz uyumluluk ilkeleri de en düşü
 ![Cihaz uyumluluğu - uyumsuz cihazlar için eylemler](./media/os-version-actions-noncompliance.png) 
 
 ### <a name="in-practice"></a>Uygulama
-Kuruluşlar, cihaz uyumluluk ilkelerini kayıt kısıtlamaları ile aynı senaryolar için kullanır. Bu ilkeler kullanıcıların kuruluşunuzdaki geçerli, doğrulanmış işletim sistemlerini kullanmalarını sağlar. Son kullanıcı cihazları uyumsuz hale gelirse son kullanıcılar kuruluşunuzda desteklenen işletim sistemi aralığına dönene kadar kuruluş kaynaklarına erişim koşullu erişim aracılığıyla engellenebilir. Son kullanıcılar, uyumlu olmadıklarına dair bir ileti alır ve erişimi yeniden kazanmak için gerekli adımlar onlara sağlanır.   
+Kuruluşlar, cihaz uyumluluk ilkelerini kayıt kısıtlamaları ile aynı senaryolar için kullanır. Bu ilkeler kullanıcıların kuruluşunuzdaki geçerli, doğrulanmış işletim sistemlerini kullanmalarını sağlar. Son kullanıcı cihazları uyumsuz hale gelirse son kullanıcılar kuruluşunuzda desteklenen işletim sistemi aralıkta kadar kuruluş kaynaklarına erişim koşullu erişim aracılığıyla engellenebilir. Son kullanıcılar, uyumlu olmadıklarına dair bir ileti alır ve erişimi yeniden kazanmak için gerekli adımlar onlara sağlanır.   
 
 Ayrıntılar için bkz. [Cihaz uyumluluğuna başlama](https://docs.microsoft.com/intune/device-compliance-get-started).
  
@@ -81,7 +81,7 @@ Belirlediğiniz zaman çizelgesi içinde kuruluşunuzu yeni bir işletim sistemi
   - Uyumsuz cihazlara sahip kullanıcıları belirlemek için bir uyumluluk raporu çalıştırabilirsiniz. 
 - **Adım 3a**: Bir uygulama kullanıcıları engellemek kullanım Intune uygulama koruma ilkeleri açar veya cihazın işletim sistemi v2 kullanmıyorsa sürdürür.
 - **Adım 3b**: Cihazın uyumlu olması için işletim sistemi v2’yi en düşük sürüm olarak belirtmek amacıyla cihaz uyumluluk ilkelerini kullanın.
-  - Bu ilkeler, kuruluş verilerine erişimi sürdürmeleri için cihazların güncelleştirilmesini gerektirir. Cihaz koşullu erişimi ile kullanıldığında korumalı hizmetler engellenir. Açıldıklarında veya kuruluş verilerine eriştiklerinde uygulama koruma ilkesi etkin uygulamalar engellenir.
+  - Bu ilkeler, kuruluş verilerine erişimi sürdürmeleri için cihazların güncelleştirilmesini gerektirir. Cihaz koşullu erişim ile kullanıldığında korumalı hizmetler engellenir. Açıldıklarında veya kuruluş verilerine eriştiklerinde uygulama koruma ilkesi etkin uygulamalar engellenir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Kuruluşunuzda işletim sistemi sürümlerini yönetmek için aşağıdaki kaynakları kullanın: 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046138"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044408"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -236,7 +236,7 @@ Bu bölümlerde, kullanım örneği senaryo gereksinimlerinize uygun aşağıdak
 
 -   Uyumluluk ilkesi
 
--   Koşullu erişim
+-   Koşullu Erişim
 
 Bu alanların her birini daha ayrıntılı bir şekilde gözden geçirelim.
 
@@ -389,7 +389,7 @@ Uygulama koruma ilkeleri, uygulamanın kurumsal verileri nasıl yönettiğini ta
 Uygulama koruma ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="compliance-policies"></a>Uyumluluk ilkeleri
 
-Uyumluluk ilkeleri, bir cihazın belirli gereksinimlere uygun olup olmadığını belirler. Intune, bir cihazın uyumlu veya uyumsuz olarak kabul edileceğini belirlemek için uyumluluk ilkeleri kullanır. Bundan sonra, şirket kaynaklarına erişimi kısıtlamak veya erişime izin vermek için uyumluluk durumu kullanılabilir. Koşullu erişim gerekiyorsa bir [cihaz uyumluluk ilkesi](device-compliance.md) tasarlamanızı öneririz.
+Uyumluluk ilkeleri, bir cihazın belirli gereksinimlere uygun olup olmadığını belirler. Intune, bir cihazın uyumlu veya uyumsuz olarak kabul edileceğini belirlemek için uyumluluk ilkeleri kullanır. Bundan sonra, şirket kaynaklarına erişimi kısıtlamak veya erişime izin vermek için uyumluluk durumu kullanılabilir. Koşullu erişim gerekiyorsa, tasarlamanızı öneririz bir [cihaz uyumluluk İlkesi](device-compliance.md).
 
 Kaç cihaz uyumluluk ilkesine gerek duyduğunuzu ve hangi kullanıcı gruplarının hedef kullanıcı grupları olduğunu belirlemek için gereksinimlere ve kullanım örneklerine başvurun. Ek olarak, bir cihazın uyumsuz olarak kabul edilmesi için oturum açmadan önce ne kadar süre çevrimdışı kalabileceğine de karar vermeniz gerekir.
 
@@ -403,20 +403,20 @@ Bir uyumluluk ilkesi tasarlamaya ilişkin bir örnek aşağıda verilmiştir:
 Uyumluluk ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Koşullu erişim ilkeleri
 
-Koşullu erişim yalnızca uyumlu cihazların e-postaya ve diğer şirket kaynaklarına erişmesine izin vermek için kullanılır. Intune şirket kaynaklarına erişimi denetlemek için Enterprise Mobility + Security (EMS) ile birlikte çalışır. Koşullu erişim gerektirip gerektirmediğini karar verin ve neyin korunması gerekir. [Koşullu erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
+Koşullu erişim yalnızca uyumlu cihazların e-posta ve diğer şirket kaynaklarına erişmesine izin vermek için kullanılır. Intune şirket kaynaklarına erişimi denetlemek için Enterprise Mobility + Security (EMS) ile birlikte çalışır. Koşullu erişim gerektirip gerektirmediğini karar verin ve neyin korunması gerekir. [Koşullu Erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
 
 Çevrimiçi erişim için hangi platformlar ve kullanıcı gruplarının koşullu erişim ilkeleri tarafından hedef karar verin. Ayrıca, yükleme veya şirket içi Exchange için Intune bağlayıcısını yapılandırmak gerekli olup olmadığını belirleyin: 
 
 -   [Şirket İçi Exchange](exchange-connector-install.md)
 
-Aşağıda, koşullu erişim ilkelerinin belgelenmesine dair bir örnek verilmiştir:
+Belge koşullu erişim ilkelerine ilişkin bir örnek aşağıda verilmiştir:
 
 | **Hizmet** | **Modern Kimlik Doğrulaması Platformları** | **Temel Kimlik Doğrulaması** | **Kullanım örnekleri** |   
 |:---:|:---:|:---:|:---:|
 | Exchange Online | iOS, Android | Intune’un desteklediği platformlarda uyumlu olmayan cihazları engelle | Kurumsal, KCG |
 | SharePoint Online | iOS, Android |  | Kurumsal, KCG |
 
-Koşullu erişim ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+Yapabilecekleriniz [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) , koşullu erişim ilkesi ihtiyaçlarınızı belirlemek için.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e347d72a8eec93f9936f3c488cada5667ecf51f8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6bf1aa096d5ebd89130eb5fabe936a02183599c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050582"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044647"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Uygulama koruma ilkelerini yapılandırma (isteğe bağlı)
 
@@ -47,7 +47,7 @@ Bu dönem, şirket kaynaklarına erişime hala izin veriliyorsa kuruluşunuzu ci
 
 Intune geçiş sırasında şirket verileri için koruma sunar, böylece cihaz düzeyinde yönetim yokken şirket verileriniz için güvenliğe sahip olursunuz.
 
-Eski MDM sağlayıcısındaki koşullu erişimi devre dışı bıraktığınızda kullanıcılar, onları Intune’a eklediğiniz sırada verimli olmaya devam edebilir.
+İçinde eski MDM sağlayıcısındaki koşullu erişimi devre dışı bıraktığınızda kullanıcılar, yerleşik üretken olmaya devam edebilir onları ıntune'a.
 
 ## <a name="task-list-for-app-protection-policies"></a>Uygulama koruma ilkeleri için görev listesi
 

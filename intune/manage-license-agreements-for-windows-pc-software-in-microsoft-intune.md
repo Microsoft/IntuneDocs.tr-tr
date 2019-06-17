@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046962"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031665"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune’da Windows bilgisayarı yazılımları için lisans sözleşmelerini yönetme
 
@@ -53,7 +53,7 @@ Buna ek olarak, yazılım başlıkları için yükleme ve lisans sayılarını g
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Microsoft Toplu Lisanslama sözleşmelerini ekleme
 Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri ile satın alınan yazılımlar için lisans bilgileri sağlar. Eşleşen anlaşma numarası çiftleri sağlayarak Intune’a Microsoft Toplu Lisanslama anlaşmaları ekleyebilirsiniz. Sözleşme veya yetkilendirme sayıları, doğru lisans ya da kayıt sayılarıyla eşleşmelidir. [Toplu Lisanslama Hizmet Merkezi (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)içinden lisans sözleşmelerini satın aldığınızda anlaşma numarası çiftleri elde edilir.
 
-1.  [Microsoft Intune yönetici konsolunda](https://account.manage.microsoft.com/admin/default.aspx) **Lisanslar**’ı seçin.
+1.  [Microsoft Intune yönetici konsolunda](https://admin.manage.microsoft.com/) **Lisanslar**’ı seçin.
 
 2.  **Anlaşma Ekle** sayfasındaki **Anlaşma Türünü Seç**’in altında **Toplu Lisanslama anlaşması**’nı seçin.
 
@@ -67,7 +67,7 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
         -   Yalnızca ASCII karakterleri desteklenir.
 
-        -   Sözleşme adında şu karakterler kullanılamaz: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Adda boşluklara izin verilir.
+        -   Sözleşme adında şu karakterler kullanılamaz: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Adda boşluklara izin verilir.
 
         -   Dosya adı 128 karakterden uzun olmamalıdır.
 
@@ -93,7 +93,7 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
         -   **Anlaşma adı** - Anlaşma için benzersiz bir ad belirtin.
 
-            Sözleşme adı en fazla 256 karakterden oluşabilir ve şu karakterleri içeremez: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Adda boşluklara izin verilir.
+            Sözleşme adı en fazla 256 karakterden oluşabilir ve şu karakterleri içeremez: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Adda boşluklara izin verilir.
 
         -   **Yetkilendirme/Anlaşma numarası** - Lisans çiftinin yetkilendirme/anlaşma numarasını girin.
 
@@ -138,7 +138,7 @@ Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka tü
 
 ### <a name="to-add-other-software-agreements"></a>Diğer yazılım anlaşmalarını eklemek için
 
-1.  [Microsoft Intune yönetici konsolunda](https://account.manage.microsoft.com/admin/default.aspx) **Lisanslar**’ı seçin.
+1.  [Microsoft Intune yönetici konsolunda](https://admin.manage.microsoft.com/) **Lisanslar**’ı seçin.
 
 2.  **Diğer Yazılım Lisanslama Anlaşmaları** bölümünde **Anlaşma Ekle**‘yi seçin.
 
@@ -146,7 +146,7 @@ Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka tü
 
 4.  **Anlaşma Ayrıntıları Ekle** alanında şunları belirtin:
 
-    -   **Anlaşma adı** (gerekli). Sözleşme adı en fazla 256 karakterden oluşabilir ve şu karakterleri içeremez: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Adda boşluklara izin verilir.
+    -   **Anlaşma adı** (gerekli). Sözleşme adı en fazla 256 karakterden oluşabilir ve şu karakterleri içeremez: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Adda boşluklara izin verilir.
 
     -   **Yayımcı** (gerekli). Bir yayımcı adı yazmaya başladığınızda hizmet yazdığınız harfleri içeren tüm yayımcı adlarını getirir. Örneğin, "soft" yazarsanız hizmet, adında “soft” geçen tüm yayımcı adlarını getirir; örneğin, “Microsoft" ve "Microsoft Research". Yayımcı adları, Yazılım Varlığı Kataloğundan alınır. Ürün başlığını girebilmeniz için önce yayımcıyı seçmeniz gerekir.
 

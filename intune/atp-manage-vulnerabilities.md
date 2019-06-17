@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 987e3171c4e5c5ba3f15097837e2c018ddc7a4b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049209"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045297"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Microsoft tarafından Defender ATP güvenlik açıkları düzeltmek için Intune kullanın  
 
@@ -67,7 +67,7 @@ Bir örnek iş akışı:
 **ATP'yi Intune yapılandırmaları**:  
 - Hizmet bağlantı Microsoft Defender ATP ile yapılandırın.  
 - Profil türü olan bir cihaz uyumluluk ilkesini dağıtma **Microsoft Defender ATP (Windows 10 Masaüstü)** ATP tarafından değerlendirilen riski olan cihazlar.
-  ATP ile çalışmak için Intune'u ayarlama hakkında daha fazla bilgi için bkz: [ıntune'da koşullu erişim ile Microsoft Defender ATP için uyumluluğu zorlama](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+  ATP ile çalışmak için Intune'u ayarlama hakkında daha fazla bilgi için bkz: [zorlamak için Microsoft ıntune'da koşullu erişimle Defender ATP Uyumluluk](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Güvenlik görevler ile çalışma  
 

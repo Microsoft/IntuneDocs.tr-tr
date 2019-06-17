@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9663691053d8ecd204ad899805153d0bfb25e6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041565"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044545"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Ağ erişim denetimini (NAC) Intune ile tümleştirme
 
@@ -43,7 +43,7 @@ Kaynaklara erişimi engellenmiş cihazlar için, engelleme hizmetinin tüm kulla
 
 ## <a name="nac-and-conditional-access"></a>NAC ve koşullu erişim
 
-NAC, erişim denetimi kararları sağlamak için koşullu erişimle birlikte çalışır. Daha fazla bilgi için bkz. [Intune ile koşullu erişimi kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
+NAC, erişim denetimi kararları sağlamak için koşullu erişimle birlikte çalışır. Daha fazla bilgi için [Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>NAC tümleştirmesi nasıl çalışır?
 

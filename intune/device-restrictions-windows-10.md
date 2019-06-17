@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354216"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041132"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -430,9 +430,9 @@ Bu ayarları kullanın [DeviceLock ilke CSP](https://docs.microsoft.com/windows/
     > [!IMPORTANT]
     > Windows masaüstünde parola gerekliliği değiştirildiğinde, cihaza geçerse, etkin boşta sahip olarak uygulamasında oturum açtığında kullanıcının etkilendiğini. Gereksinimini karşılamayan parolası olan kullanıcılar hala parolalarını değiştirmesi istenir.
     
-  - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Cihaz temizlenmeden, 1-11 ' önce izin verilen kimlik doğrulama hatalarının sayısını girin. `0` (sıfır), cihaz silme işlevselliği devre dışı bırakabilir.
+  - **Cihaz silinmeden önceki oturum açma hatası sayısı**: En fazla 11 cihaz silinebilen önce izin verilen kimlik doğrulama hatalarının sayısını girin. Geçerli sayı sürümüne bağlıdır. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) desteklenen değerleri listeler. `0` (sıfır), cihaz silme işlevselliği devre dışı bırakabilir.
 
-    Bu ayar, sürüme bağlı olarak farklı bir etkisi yoktur. Belirli Ayrıntılar için bkz [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+    Bu ayar, ayrıca sürüme bağlı olarak farklı bir etkiye sahiptir. Bu ayar, belirli Ayrıntılar için bkz. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Ekran kilitlenmeden önce cihazın boşta bekleyeceği süreyi girin.
   - **Parola zaman aşımı (gün sayısı)** : Gün, cihaz parolasının, 1-365'ten değiştirilmesi gereken süreyi girin. Örneğin, `90` parola 90 gün sonra süresi dolacak şekilde.

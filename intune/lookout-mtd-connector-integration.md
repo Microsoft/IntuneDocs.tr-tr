@@ -1,138 +1,168 @@
 ---
 title: Microsoft Intune ile Lookout tümleştirmenizi ayarlama
 titleSuffix: Microsoft Intune
-description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için Lookout Mobile Threat Defense’i Intune ile tümleştirme hakkında bilgi edinin.
+description: Şirket kaynaklarınıza mobil cihaz erişimini kontrol etmek için bir Mobile Threat Defense çözümü olarak Intune Lookout mobil uç nokta güvenliği ile tümleştirme hakkında bilgi edinin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
-ms.reviewer: heenamac
+ms.reviewer: davera
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffdfd203b2b67a25d5826798d89ae548e33d7756
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d146b211c42c20b1381b238311db6a10295ef4a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047135"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044924"
 ---
-# <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune ile Lookout Mobile Threat Defense tümleştirmenizi ayarlama
-
-Lookout Mobile Threat Defence aboneliğini ayarlamak için gerekli adımlar aşağıdadır:
-
-| #        |Adım  |
-| ------------- |:-------------|
-| 1 | [Azure AD bilgileri toplama](#collect-azure-ad-information) |
-| 2 | [Aboneliğinizi yapılandırma](#configure-your-subscription) |
-| 3 | [Kayıt gruplarını yapılandırma](#configure-enrollment-groups) |
-| 4 | [Durum eşitlemeyi yapılandırma](#configure-state-sync) |
-| 5 | [Hata raporu e-posta alıcı bilgilerini yapılandırma](#configure-error-report-email-recipient-information) |
-| 6 | [Kayıt ayarlarını yapılandırma](#configure-enrollment-settings) |
-| 7 | [E-posta bildirimlerini yapılandırma](#configure-email-notifications) |
-| 8 | [Tehdit sınıflandırmasını yapılandırma](#configure-threat-classification) |
-| 9 | [Kayıt izleme](#watching-enrollment) |
+# <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Intune ile Lookout mobil uç nokta güvenliği tümleştirmesini ayarlama
+Uygun bir ortam ile [önkoşulları](lookout-mobile-threat-defense-connector.md#prerequisites), Intune ile Lookout mobil uç nokta güvenliği tümleştirebilirsiniz. Bu makaledeki bilgiler tümleştirmenin ayarlanması ve Intune ile kullanmak için Lookout'ta önemli ayarları yapılandırma size yol gösterir.  
 
 > [!IMPORTANT]
 > Daha önceden Azure AD kiracınız ile ilişkilendirilmemiş mevcut bir Lookout Mobil Uç Nokta Güvenliği kiracısı, Azure AD ve Intune tümleştirmesi için kullanılamaz. Yeni bir Lookout Mobil Uç Nokta Güvenliği kiracısı oluşturmak için Lookout desteğine başvurun. Azure AD kullanıcılarınızı eklemek için yeni kiracıyı kullanın.
 
-## <a name="collect-azure-ad-information"></a>Azure AD bilgileri toplama
-Lookout Mobil Uç Nokta Güvenliği kiracınız, Lookout hizmetini Intune ile etkinleştirmek için Azure AD aboneliğiniz ile ilişkilendirilir. Lookout Mobile Threat Defense hizmeti aboneliğinizi etkinleştirmek için Lookout desteği (enterprisesupport@lookout.com) aşağıdaki bilgilere gerek duyar:
+## <a name="collect-azure-ad-information"></a>Azure AD bilgileri toplama  
+Intune ile tümleşik Lookout, Lookout mobil uç nokta güvenliği kiracınız Azure Active Directory (AD) aboneliğinizle ilişkilendirin.
 
-* **Azure AD Kiracı Kimliği**
-* Lookout konsoluna **tam** erişim için **Azure AD Grubu Nesne Kimliği**
-* Lookout konsoluna **kısıtlı** erişim için **Azure AD Grubu Nesne Kimliği** (isteğe bağlı)
+Intune ile Lookout mobil uç nokta güvenliği abonelik tümleştirmenizi etkinleştirmek için Lookout desteği için aşağıdaki bilgileri sağlayın (enterprisesupport@lookout.com):  
 
-Lookout destek ekibine vermeniz gereken bilgileri elde etmek için aşağıdaki adımları kullanın.
+- **Azure AD Kiracı dizin kimliği**  
 
-1. [Azure portalı](https://portal.azure.com)'nda oturum açın ve aboneliğinizi seçin. 
+- **Azure AD grubu nesne kimliği** grupla **tam** Lookout mobil uç nokta güvenliği (MES) konsol erişimi.  
+  Bu kullanıcı grubuna sahip kullanıcıları içerecek şekilde, Azure AD'de oluşturduğunuz *tam erişim* oturum açmak için **Lookout konsolunda**. Kullanıcıların bu grup veya isteğe bağlı bir üyesi olması gerekir *sınırlı erişim* Lookout konsoluna oturum açmak için grubu. 
 
-2. Aboneliğinizin adını seçtiğinizde sağlanan URL abonelik kimliğini içerir.  Abonelik kimliğinizi bulma konusunda herhangi bir sorun yaşarsanız, abonelik kimliğinizi bulma konusundaki ipuçları için bu [Microsoft destek makalesine](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) bakın.
+- **Azure AD grubu nesne kimliği** grupla **kısıtlı** Lookout MES konsol erişimi *(isteğe bağlı bir grup)*. 
+  Birçok yapılandırma ve kayıtla ilgili modüllerin çoğuna erişimi olmaması kullanıcıları içeren Azure AD'de Bu isteğe bağlı kullanıcı grubu oluşturun. Bunun yerine, bu kullanıcılara salt okunur erişimi **Güvenlik İlkesi** Lookout konsolunun modülü. Kullanıcıların bu isteğe bağlı bir grup veya gerekli üyeleri olmalıdır *tam erişim* Lookout konsoluna oturum açmak için grubu.
 
-3. Azure AD Grup Kimliğinizi bulun. Lookout konsolu 2 erişim düzeyini destekler:  
-   * **Tam erişim:** Azure AD Yöneticisi tam erişime sahip kullanıcılar için bir grup oluşturabilir ve isteğe bağlı olarak sınırlı erişimi olacak kullanıcılar için bir grup oluşturun.  Yalnızca bu gruplardaki kullanıcılar **Lookout konsolunda** oturum açabilir.
-   * **Kısıtlı erişim:** Bu gruptaki kullanıcılar birkaç yapılandırma ve kayıtla ilgili modüllerin çoğuna erişebilir ve salt okunur erişiminiz olmayacak **Güvenlik İlkesi** Lookout konsolunun modülü.  
+ > [!TIP] 
+ > İzinler hakkında daha fazla ayrıntı için Lookout Web sitesindeki [bu makaleyi](https://personal.support.lookout.com/hc/articles/114094105653) okuyun.
 
-     > [!TIP] 
-     > İzinler hakkında daha fazla ayrıntı için Lookout Web sitesindeki [bu makaleyi](https://personal.support.lookout.com/hc/articles/114094105653) okuyun.
+### <a name="collect-information-from-azure-ad"></a>Azure AD bilgileri toplama 
 
-     > [!NOTE] 
-     > **Grup Nesne Kimliği**, **Azure AD yönetim portalında** grubun **Özellikler** sayfasında bulunur.
+1. Oturum [Azure portalında](https://portal.azure.com) bir genel yönetici hesabıyla.
 
-4. Bu bilgileri topladıktan sonra, Lookout desteği ile iletişime geçin (e-posta: enterprisesupport@lookout.com). Lookout Desteği topladığınız bilgileri kullanarak, aboneliğinizi hazırlamak ve Lookout Enterprise hesabınızı oluşturmak için aboneliğinizdeki birincil ilgili kişiyle birlikte çalışır.
+2. Git **Azure Active Directory** > **özellikleri** bulun, **dizin kimliği**. Kullanım *kopyalama* dizin kimliği kopyalamak için düğme ve bir metin dosyasına kaydedin.
 
-## <a name="configure-your-subscription"></a>Aboneliğinizi yapılandırma
+   ![Azure AD özellikleri](./media/lookout-mtd-connector-integration/azure-ad-properties.png)  
 
-1. Lookout desteği, Lookout Enterprise hesabınızı oluşturduktan sonra oturum açma URL’sini içeren bir e-posta, Lookout’tan şirketinizdeki birincil ilgili kişiye gönderilir:<https://aad.lookout.com/les?action=consent>.
+3. Ardından, Azure AD kullanıcılarının Lookout konsoluna erişimi vermek için kullandığınız hesap için Azure AD grubu Kimliğini bulun. Bir grup içindir *tam erişim*ve ikinci grup için *sınırlı erişim* isteğe bağlıdır. Alınacak *nesne kimliği*, her hesap için:  
+   1. Git **Azure Active Directory** > **grupları** açmak için *gruplar - tüm gruplar* bölmesi.  
 
-2. Azure AD kiracınızı kaydetmek için Lookout konsolunda ilk kez oturum açma işleminin Azure AD rolü Genel Yönetici olan bir kullanıcı hesabı kullanılarak yapılması gerekir. Daha sonra, oturum açma işleminin bu Azure AD ayrıcalık düzeyinde yapılmasına gerek yoktur. Bir onay sayfası görüntülenir. Kaydı tamamlamak için **Kabul Et**’i seçin. Kabul edip onay verdikten sonra Lookout Konsolu'na yönlendirilirsiniz.
+   2. İçin oluşturduğunuz grubu seçin *tam erişim* açmak için kendi *genel bakış* bölmesi.  
 
-   ![Lookout konsolunda ilk defa oturum açma sayfasının ekran görüntüsü](./media/lookout_mtp_initial_login.png)
+   3. Kullanım *kopyalama* nesne kimliği kopyalamak için düğme ve bir metin dosyasına kaydedin.  
 
-3. [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünde, **Bağlayıcılar** sekmesine tıklayın ve **Intune**’u seçin.
+   4. İçin işlemi tekrarlayın *sınırlı erişim* bu grubu kullanıyorsanız grup.  
 
-   ![Lookout MTP konsolunu bağlayıcılar sekmesi Intune seçeneğini görüntüsü](./media/lookout_mtp_setup-intune-connector.png)
+      ![Azure AD grubu nesne kimliği](./media/lookout-mtd-connector-integration/azure-ad-group-id.png)  
 
-4. **Bağlayıcılar** > **Bağlantı Ayarları**’na gidin ve **Sinyal Sıklığı**’nı dakika cinsinden belirtin.
+   Bu bilgileri topladıktan sonra Lookout desteği ile iletişime geçin (e-posta: enterprisesupport@lookout.com). Lookout desteği, birincil ilgili kişiyle çalışır ve sağladığınız bilgileri kullanarak Lookout Enterprise hesabınızı oluşturun.  
 
-   ![Bağlantı ayarları sekmesinin sinyal sıklığını yapılandırılmış ile görüntüsü](./media/lookout-mtp-connection-settings.png)
+## <a name="configure-your-lookout-subscription"></a>Lookout aboneliğinizi yapılandırma  
+Lookout desteği Lookout Enterprise hesabınızı oluşturduktan sonra Lookout desteği e-posta için birincil ilgili kişi oturum açma URL'sine bir bağlantı ile şirketinizin gönderir: https://aad.lookout.com/les?action=consent. 
 
-## <a name="configure-enrollment-groups"></a>Kayıt gruplarını yapılandırma
-1. En iyi uygulama olarak, Lookout tümleştirmesini sınamak için [Azure AD yönetim portalında](https://manage.windowsazure.com) az sayıda kullanıcı içeren bir Azure AD güvenlik grubu oluşturun.
+### <a name="initial-sign-in"></a>İlk oturum açma  
+İlk oturum açma MES Lookout konsoluna bir onay sayfası görüntüler (https://aad.lookout.com/les?action=consent). Bir Azure AD genel Yöneticisi yalnızca oturum açma ve **kabul**. Sonraki oturum açma kullanıcının bu Azure AD ayrıcalık düzeyine sahip olmasını gerektirmez. 
 
-    > [!NOTE] 
-    > Azure AD’de bir kayıt grubundaki tanımlanan ve desteklenen, Lookout desteği bulunan ve Intune’a kayıtlı olan tüm kullanıcıların cihazları kaydedilir ve Lookout MTD konsolunda etkinleştirilme için uygundur.
+ Bir onay sayfası görüntülenir. Kaydı tamamlamak için **Kabul Et**’i seçin. 
+   ![Lookout konsolunda ilk kez oturum açma sayfasının ekran görüntüsü](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
-2. [Lookout Konsolu](https://aad.lookout.com)’nda, **Sistem** modülünden **Bağlayıcılar** sekmesini seçin ve cihazları Lookout’a kaydedilmesi gereken kullanıcı gruplarını tanımlamak için **Kayıt Yönetimi**’ni seçin. Kayıt için Azure AD güvenlik grubunun **Görünen Adı**’nı ekleyin.
+Kabul edin ve onay, Lookout konsoluna yönlendirilirsiniz.
 
-    ![Intune bağlayıcısı kayıt sayfasının ekran görüntüsü](./media/lookout-mtp-enrollment.png)
+İlk oturum açma ve onay tamamlandıktan sonra kullanıcılar, oturum gelen https://aad.lookout.com MES konsoluna yönlendirilirsiniz. Tüm oturum açma denemesi, onayı henüz verilen değildi, hatalı bir oturum açma hatasına neden.
 
-    >[!IMPORTANT]
-    > **Görünen Ad**, Azure portalındaki güvenlik grubunun **Özellikler** sayfasında gösterildiği gibi büyük/küçük harfe duyarlıdır. Aşağıdaki resimde gösterildiği gibi, başlığı tamamen küçük harflerden oluşurken, güvenlik grubunun **Görünen Ad**’ı küçük ve büyük harflerin kombinasyonundan oluşur. Lookout konsolunda **Görünen Ad** harflerini güvenlik grubu için eşleştirin.
-    >![Azure portalı, Azure Active Directory Hizmeti, Özellikler sayfasının görüntüsü](./media/aad-group-display-name.png)
+### <a name="configure-the-intune-connector"></a>Intune bağlayıcısını yapılandırma  
+Aşağıdaki yordam, Lookout dağıtımınızı test için Azure AD'de bir kullanıcı grubu daha önce oluşturduğunuz varsayılır. Küçük bir ürün tümleştirmeleri ile ilgili bilgi sahibi olma Lookout ve Intune yöneticilerinin izin vermek için kullanıcı grubuyla başlamak en iyi yöntem olacaktır. Bunlar öğrendikten sonra kaydı ek kullanıcı gruplarına genişletebilirsiniz.
 
-    >[!NOTE] 
-    >Yeni cihazları denetleme aralığı olarak varsayılan değeri (5 dakika) kullanmak en iyi yöntemdir. Geçerli sınırlamalar **Lookout, grupların görünen adlarını doğrulayamıyor:** Azure portalındaki **GÖRÜNEN AD** alanının Azure AD güvenlik grubuyla eşleştiğinden emin olun. **İç içe yerleştirilmiş gruplar oluşturmak desteklenmez:**  Lookout’ta kullanılan Azure AD güvenlik gruplarının yalnızca kullanıcı içermesi gerekir. Diğer grupları içeremezler.
+1. Oturum [Lookout MES konsolunda](https://aad.lookout.com) gidin **sistem** > **Bağlayıcılar**ve ardından **bağlayıcı Ekle**.  Seçin **Intune**.
 
-3.  Bir grup eklendikten sonra, kullanıcı Lookout for Work uygulamasını desteklenen cihazında sonraki açışında cihaz Lookout’ta etkinleştirilir.
+   ![Lookout MTP konsolunu bağlayıcılar sekmesi Intune seçeneğini görüntüsü](./media/lookout-mtd-connector-integration/lookout_mtp_setup-intune-connector.png)
 
-4.  Sonuçlar sizi memnun ettiğinde, kaydı ek kullanıcı gruplarına genişletin.
+2. Üzerinde *Intune* bölmesinde **bağlantı ayarlarını** belirtin **sinyal sıklığını** dakikalar içinde. 
 
-## <a name="configure-state-sync"></a>Durum eşitlemeyi yapılandırma
-**Durum Eşitleme** seçeneğinde, Intune’a gönderilecek veri türünü belirtin.  Lookout Intune tümleştirmesinin düzgün çalışması için hem cihaz durumu hem de tehdit durumu gerekir. Bu ayarlar varsayılan olarak etkinleştirilir.
+   ![Bağlantı ayarları sekmesinin sinyal sıklığını yapılandırılmış ile görüntüsü](./media/lookout-mtd-connector-integration/lookout-mtp-connection-settings.png)
 
-## <a name="configure-error-report-email-recipient-information"></a>Hata raporu e-posta alıcı bilgilerini yapılandırma
-**Hata Yönetimi** seçeneğinde, hata raporlarının gönderileceği e-posta adresini girin.
+3. Seçin **kayıt yönetimi**ve **Lookout for Work kaydedilmesi cihazları belirlemek için aşağıdaki Azure AD güvenlik grupları kullanın**, belirtin *grup adı*Lookout ile kullanın ve ardından seçmek için bir Azure AD grubunun **değişiklikleri kaydetmek**.
 
-![Intune bağlayıcısı hata yönetimi sayfasının ekran görüntüsü](./media/lookout-mtp-connector-error-notifications.png)
+    ![Intune bağlayıcısı kayıt sayfasının ekran görüntüsü](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
 
-## <a name="configure-enrollment-settings"></a>Kayıt ayarlarını yapılandırma
-**Sistem** modülünde, **Bağlayıcılar** sayfasında, bir cihazın bağlantısı kesilmiş olarak kabul edilmesinden önce geçmesi gereken gün sayısını belirtin.  Bağlantısı kesilmiş cihazlar uyumsuz olarak kabul edilir ve Intune koşullu erişim ilkelerine bağlı olarak şirket uygulamalarınıza erişimleri engellenir. 1 ila 90 gün arasında bir değer belirtebilirsiniz.
+   **Kullandığınız grupları hakkında**:
+   - En iyi uygulama, Lookout tümleştirmesini sınamak için kullanıcıların küçük bir sayı içeren bir Azure AD güvenlik grubu ile başlayın.
+   - **Grup adı** gösterildiği gibi büyük küçük harfe duyarlıdır **özellikleri** güvenlik grubunun Azure portalında.  
+   - İçin belirttiğiniz grupları **kayıt yönetimi** kullanıcılar cihazlarını Lookout ile kaydedilir kümesini tanımlar. Bir kullanıcı bir kayıt grubunda olduğunda, kullanıcıların cihazlarını Azure AD'ye kaydedilir ve Lookout MES Etkinleştirilmeye uygun hale. Bir kullanıcı ilk kez *Lookout for Work* uygulama desteklenen bir cihazda, bunlar etkinleştirmeniz istenir.
 
-![Lookout kayıt ayarları sistem Modülü](./media/lookout-console-enrollment-settings.png)
+4. Seçin **durum eşitlemeyi** ve her ikisi de olun *cihaz durumu* ve *tehdit durumu* ayarlandığından **üzerinde**.  İkisi de, Lookout Intune tümleştirmesinin düzgün çalışması için gereklidir.  
 
-## <a name="configure-email-notifications"></a>E-posta bildirimlerini yapılandırma
-Tehditler hakkında e-posta uyarıları almak istiyorsanız bildirimlerin gönderileceği kullanıcı hesabını kullanarak [Lookout konsolunda](https://aad.lookout.com) oturum açın. **Sistem** modülünün **Tercihler** sekmesinde tehdit düzeylerinin bildirimlerini seçin ve bunları **AÇIK** olarak ayarlayın. Yaptığınız değişiklikleri kaydedin.
+5. Seçin **hata Yönetimi**, hata raporları alan ve ardından e-posta adresi belirtin **değişiklikleri kaydetmek**.
+ 
+   ![Intune bağlayıcısı hata yönetimi sayfasının ekran görüntüsü](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
-![kullanıcı hesabının görüntülendiği tercihler sayfasının ekran görüntüsü](./media/lookout-mtp-email-notifications.png) Artık e-posta bildirimleri almak istemiyorsanız bildirimleri **KAPALI** olarak ayarlayın ve değişikliklerinizi kaydedin.
+6. Seçin **Bağlayıcısı oluşturma** bağlayıcının yapılandırmayı tamamlamak için. Daha sonra sonuçlarınızdan memnun olduğunuzda, kaydı ek kullanıcı gruplarına genişletebilirsiniz.
 
-### <a name="configure-threat-classification"></a>Tehdit sınıflandırmasını yapılandırma
-Lookout Mobile Threat Defense, çeşitli türlerdeki mobil tehditleri sınıflandırır. [Lookout tehdit sınıflandırmaları](https://personal.support.lookout.com/hc/articles/114094130693) ile ilişkilendirilen varsayılan risk düzeyleri bulunur. Bunlar, şirket gereksinimlerinize uyacak şekilde herhangi bir zamanda değiştirilebilir.
+## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Lookout Mobile Threat Defense sağlayıcısı olarak kullanmak için Intune'u yapılandırma
+Lookout MES yapılandırdıktan sonra ıntune'da Lookout bağlantı ayarlamanız gerekir.  
 
-![tehdit ve sınıflandırmaları gösteren ilke sayfasının ekran görüntüsü](./media/lookout-mtp-threat-classification.png)
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+
+2. Git **cihaz uyumluluğu** > **Mobile Threat Defense** seçip **Ekle**.
+
+3. Üzerinde *ekleme bağlayıcı* bölmesinde, açılan listeyi kullanın ve select **Lookout for Work**.  
+
+4. **Oluştur**’u seçin. Bağlayıcısı, Lookout MES kişiyle iletişim kurduktan sonra *bağlayıcı ayarları* kullanılabilir hale gelir.
+
+5. Ayarlama **iOS cihazlar için uygulama eşitlemeyi etkinleştirmek** için **üzerinde**. 
+
+6. Seçin **Kaydet** yapılandırmasını tamamlamak için.  Intune ve Lookout MES tümleşik ve kullanıma hazır sunulmuştur.
+
+
+## <a name="additional-settings-in-the-lookout-mes-console"></a>MES Lookout konsolunda ek ayarlar
+Lookout MES konsolunda yapılandırabileceğiniz ek ayarlar aşağıda verilmiştir.  
+
+### <a name="configure-enrollment-settings"></a>Kayıt ayarlarını yapılandırma
+Lookout MES konsolunda seçin **sistem** > **yönetme kayıt** > **kayıt ayarları**.  
+
+- İçin **bağlantı kesildi durumu**, bağlantısız bir cihaz bağlantısı kesilmiş olarak işaretlenmeden önce gün sayısını belirtin.  
+
+  Bağlantısı kesilmiş cihazlar uyumsuz olarak kabul edilir ve Intune koşullu erişim ilkelerine bağlı olarak şirket uygulamalarınıza erişimleri engellenir. 1 ila 90 gün arasında bir değer belirtebilirsiniz.
+
+  ![Lookout kayıt ayarları sistem Modülü](./media/lookout-mtd-connector-integration/lookout-console-enrollment-settings.png)
+
+### <a name="configure-email-notifications"></a>E-posta bildirimlerini yapılandırma
+Tehditler hakkında e-posta uyarıları almak için oturum açın [Lookout MES konsolunda](https://aad.lookout.com) bildirimlerin gönderileceği kullanıcı hesabını.  
+
+- Git **tercihleri** ve bildirimler almasını istediğiniz ayarlayın **ON**ve ardından **Kaydet** değişiklikleri.  
+
+- Artık e-posta bildirimleri almak istemiyorsanız, bildirimleri kümesine **OFF** ve değişikliklerinizi kaydedin.
+
+  ![Kullanıcı hesabının görüntülendiği Tercihler sayfasının ekran görüntüsü](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
+
+
+
+## <a name="configure-threat-classifications"></a>Tehdit sınıflandırmaları yapılandırın  
+Lookout mobil uç nokta güvenliği, çeşitli türlerdeki mobil tehditleri sınıflandırır. Lookout tehdit sınıflandırmaları kendileriyle ilişkilendirilmiş varsayılan risk düzeylerine sahip. Risk düzeyleri, şirket gereksinimlerinize uyacak şekilde herhangi bir anda değiştirilebilir.
+
+Tehdit düzeyi sınıflandırmalarını ve bunlarla ilişkili risk düzeyleri yönetme hakkında daha fazla bilgi için bkz: [Lookout tehdit başvuru](https://enterprise.support.lookout.com/hc/articles/360011812974).
 
 >[!IMPORTANT]
-> Intune tümleştirmesi, çalışma zamanında cihaz uyumluluğunu bu risk düzeylerine göre hesapladığından bunlar Mobile Threat Defense için önemlidir. Intune yöneticisi; bir cihazın **Yüksek**, **Orta** veya **Düşük** düzeyde etkin bir tehdidi varsa cihazı uyumsuz olarak tanımlamak için ilke içinde bir kural koyar. Lookout Mobile Threat Defense’deki tehdit sınıflandırma ilkesi, Intune’daki cihaz uyumluluk hesaplamasını doğrudan etkiler.
+> Cihaz uyumluluğunu çalışma zamanı bu risk düzeylerine göre hesapladığından bunlar Intune tümleştirmesi risk düzeyleri bir mobil uç nokta güvenliği için önemlidir.  
+> 
+> Intune yöneticisi; bir cihazın **Yüksek**, **Orta** veya **Düşük** düzeyde etkin bir tehdidi varsa cihazı uyumsuz olarak tanımlamak için ilke içinde bir kural koyar. Lookout mobil uç nokta güvenliği, tehdit sınıflandırma İlkesi, Intune'da cihaz uyumluluk hesaplamasını doğrudan yürütür.  
 
-## <a name="watching-enrollment"></a>Kayıt izleme
-Kurulum tamamlandıktan sonra, Lookout Mobile Threat Defense belirlenen kayıt gruplarına karşılık gelen cihazlar için Azure AD’yi yoklamaya başlar.  Kayıtlı cihazlar hakkındaki bilgileri Cihazlar modülünde bulabilirsiniz.  Cihazların ilk durumu, beklemede olarak gösterilir.  Cihaz durumu Lookout for Work uygulaması cihaza yüklendikten, açıldıktan ve etkinleştirildikten sonra değişir.  Cihaza gönderilen Lookout for Work uygulamasının nasıl alınacağına yönelik ayrıntılar için bkz. [Intune ile Lookout for Work uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md).
+## <a name="monitor-enrollment"></a>İzleyici kayıt
+Kurulum tamamlandıktan sonra Lookout mobil uç nokta güvenliği belirlenen kayıt gruplarına karşılık gelen cihazlar için Azure AD'yi yoklamaya başlar.  Kayıtlı cihazlar hakkındaki bilgileri giderek bulabilirsiniz **cihazları** MES Lookout konsolundaki.  
+- Cihazların ilk durumu *bekleyen*.  
+- Cihaz durumu güncelleştirmeleri sonra *Lookout for Work* uygulaması yüklü, açık ve cihazda etkinleştirildi.
+
+Nasıl alınacağına yönelik ayrıntılar için *Lookout for Work* uygulama bir cihaza dağıtılan görmek [ekleme Lookout for work uygulamalarını Intune ile](mtd-apps-ios-app-configuration-policy-add-assign.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72835ce45860eb6b10ac7967693cc50b9ceaa96f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3fccf3425222814f9493fe525033f67c734012c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043569"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045861"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Intune ile Better Mobile Threat Defense bağlayıcısı
 
-Microsoft Intune ile tümleştirilen Mobile Threat Defense (MTD) çözümü olan Better Mobile tarafından yapılan risk değerlendirmesine göre koşullu erişim kullanarak mobil cihazlardan şirket kaynaklarına erişimi denetleyebilirsiniz. Risk, Better Mobile uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
+Microsoft Intune ile tümleşik bir Mobile Threat Defense (MTD) çözümü olan daha iyi Mobile tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişim kullanarak şirket kaynaklarına mobil cihaz erişimini kontrol edebilirsiniz. Risk, Better Mobile uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Better Mobile risk değerlendirmesi temelinde koşullu erişim ilkeleri yapılandırabilirsiniz. Bu ilkeleri kullanarak, algılanan tehditler temelinde uyumlu olmayan cihazların şirket kaynaklarına erişmesine izin verebilir veya erişimlerini engelleyebilirsiniz.
+İzin verme veya engelleme algılanan tehditlere dayalı olarak şirket kaynaklarına erişmek için uyumsuz cihazlar için kullanabileceğiniz Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen daha iyi mobil risk değerlendirmesine dayalı koşullu erişim ilkelerini yapılandırabilirsiniz.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Intune ve Better Mobile şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 

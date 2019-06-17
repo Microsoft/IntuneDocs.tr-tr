@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure’da Windows Defender ATP kullanma | Microsoft Docs
-description: ATP’yi Intune ve Windows Defender Güvenlik Merkezi’nden (ATP portalı) açma, bir ATP yapılandırma profili kullanarak cihaz ekleme, Intune cihaz uyumluluk ilkeleri oluşturma, Azure AD koşullu erişim ilkeleri oluşturma ve cihaz uyumluluğunu izlemeyi içeren Windows Defender Gelişmiş Tehdit Koruması’nı (ATP) uçtan uca bir senaryoda etkinleştirmeyi öğrenin.
+description: Atp'yi Intune ve Windows Defender Güvenlik Merkezi (ATP portalı) açma bir ATP yapılandırma profili kullanarak cihaz ekleme dahil olmak üzere bir uçtan uca senaryosunda, Windows Defender Gelişmiş tehdit Koruması (ATP) etkinleştirmek için bir Intune cihaz oluşturmayı öğrenin Uyumluluk İlkesi, Azure AD koşullu erişim ilkesi oluşturma ve cihaz uyumluluğunu izleme.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 186ba1a8813e84b89a23c8aabb3a4ef0bd392da4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819877"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045914"
 ---
-# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP için ıntune'da koşullu erişim uyumluluğu zorla
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Windows Defender ATP ıntune'da koşullu erişim için uyumluluğu zorlama
 
 Windows Defender Gelişmiş Tehdit Koruması (ATP) ve Microsoft Intune, bir kuruluşta güvenlik ihlallerini önlemeye ve ihlallerin etkisini sınırlamaya yardımcı olmak için birlikte çalışır.
 
@@ -40,7 +40,7 @@ Bu makale, şunları nasıl yapacağınızı gösterir:
 
 - Intune’da ATP’yi ve ATP’de Intune’u etkinleştirme. Bu görevler, Intune ve Windows Defender ATP arasında hizmetten hizmete bağlantı oluşturur. Bu bağlantı sayesinde Windows Defender ATP, Intune cihazlarınız için makine riskini yazar.
 - Intune’da uyumluluk ilkesi oluşturma.
-- Cihazlarda, cihaz tehdit düzeyine göre Azure Active Directory (AD) koşullu erişimi etkinleştirin.
+- Azure Active Directory (AD) koşullu erişim cihaz tehdit düzeyine göre etkinleştirin.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -86,7 +86,7 @@ Yapılandırma paketini kullanarak bir cihaz ekledikten sonra bunu tekrar yapman
 2. **Cihaz Yapılandırması** > **Profiller** > **Profil oluştur**’u seçin.
 3. Bir **Ad** ve **Açıklama** girin.
 4. **Platform** olarak **Windows 10 ve üzeri**’ni seçin
-5. **Profil türü** olarak **Windows Defender ATP (Windows 10 Masaüstü)** ’nü seçin.
+5. **Profil türü** olarak **Windows Defender ATP (Windows 10 Masaüstü)**’nü seçin.
 6. Şu ayarları yapılandırın:
 
   - **Windows Defender ATP istemci yapılandırma paketi türü**: Seçin **katmanına** profile yapılandırma paketi eklemek için. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
@@ -126,7 +126,7 @@ Uyumluluk ilkesi, cihazda kabul edilebilir bir risk düzeyi belirler.
 5. İlkeyi gruplara dağıtmak için **Kaydet**’i seçin. İlkenin hedeflediği kullanıcı cihazlarında uyumluluk denetlenir.
 
 ## <a name="create-a-conditional-access-policy"></a>Koşullu erişim ilkesi oluşturma
-Cihaz *uyumsuzsa* koşullu erişim ilkesi, kaynaklara erişimi engeller. Yani bir cihaz, tehdit düzeyini aşarsa SharePoint veya Exchange Online gibi şirket kaynaklarına erişimi engelleyebilirsiniz.  
+Kaynaklara erişimi koşullu erişim ilkesi engeller *varsa* cihazın uyumsuz olması. Yani bir cihaz, tehdit düzeyini aşarsa SharePoint veya Exchange Online gibi şirket kaynaklarına erişimi engelleyebilirsiniz.  
 
 > [!TIP]  
 > Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır.  
@@ -141,13 +141,13 @@ Cihaz *uyumsuzsa* koşullu erişim ilkesi, kaynaklara erişimi engeller. Yani bi
 
     Değişikliklerinizi kaydetmek için **Bitti**’yi seçin.
 
-5. Cihaz uyumluluğuna göre koşullu erişim uygulamak için **İzin Ver**’i seçin. Örneğin **Erişim ver** > **Cihazın uyumlu olarak işaretlenmesini gerektir**’i seçin.
+5. Seçin **Grant** cihaz uyumluluğuna göre koşullu erişim uygulamak için. Örneğin **Erişim ver** > **Cihazın uyumlu olarak işaretlenmesini gerektir**’i seçin.
 
     Değişikliklerinizi kaydetmek için **Seçin**’e tıklayın.
 
 6. **İlkeyi etkinleştir**’i ve **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
-[Koşullu erişim nedir?](conditional-access.md) iyi bir kaynaktır.
+[Koşullu erişim nedir? ](conditional-access.md) iyi bir kaynaktır.
 
 ## <a name="monitor-device-compliance"></a>Cihaz uyumluluğunu izleme
 Ardından Windows Defender ATP uyumluluk ilkesine sahip cihazların durumunu izleyin.
@@ -160,4 +160,4 @@ Ardından Windows Defender ATP uyumluluk ilkesine sahip cihazların durumunu izl
 [Windows Defender ATP koşullu erişim](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)  
 [Windows Defender ATP risk panosu](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection)  
 [Cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md)  
-[Azure AD’de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+[Azure AD'de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)

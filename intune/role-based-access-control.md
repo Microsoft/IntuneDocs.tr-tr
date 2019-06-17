@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804472"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044170"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -60,12 +60,12 @@ Daha fazla yapılandırma olmadan grupları için yerleşik roller atayabilirsin
 | --- | :---: | :---: |
 | Genel Yönetici | Okuma/yazma | Okuma/yazma |
 | Intune Hizmet Yöneticisi | Okuma/yazma | Okuma/yazma |
-| Koşullu Erişim Yöneticisi | None | Yok. |
+| Koşullu Erişim Yöneticisi | Yok. | Yok. |
 | Güvenlik Yöneticisi | Salt okunur | Salt okunur |
 | Güvenlik işleci | Salt okunur | Salt okunur |
 | Güvenlik okuyucusu | Salt okunur | Salt okunur |
 | Uyumluluk Yöneticisi | Yok. | Salt okunur |
-| Uyumluluk veri Yöneticisi | Yok. | Salt okunur |
+| Uyumluluk veri Yöneticisi | None | Salt okunur |
 
 > [!TIP]
 > Intune ayrıca üç Azure AD uzantısı gösterir: **Kullanıcılar**, **grupları**, ve **koşullu erişim**, olmak üzere Azure AD RBAC ile denetlenen. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla bilgi için [Azure AD ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
@@ -86,8 +86,8 @@ Bir rol ataması görmek için **Intune** > **rolleri** > **tüm rolleri** > bir
 
 -   **Özellikler**: Ad, açıklama, rol, üye, kapsamları ve etiketler atama.
 -   **Üyeleri**: Listelenen gruplarındaki tüm kullanıcılar, kapsam (gruplar) listelenen kullanıcıları/cihazları yönetmek için izne sahip.
--   **Kapsam (gruplar)** : Tüm kullanıcılara/cihazlara bu gruplardaki kullanıcılar üyeleri tarafından yönetilebilir.
--   **[Kapsam (etiketler)](scope-tags.md)** : Kullanıcıların üye aynı kapsam etikete sahip kaynakları görebilirsiniz.
+-   **Kapsam (gruplar)**: Tüm kullanıcılara/cihazlara bu gruplardaki kullanıcılar üyeleri tarafından yönetilebilir.
+-   **[Kapsam (etiketler)](scope-tags.md)**: Kullanıcıların üye aynı kapsam etikete sahip kaynakları görebilirsiniz.
 
 ### <a name="multiple-role-assignments"></a>Birden çok rol atamaları
 Bir kullanıcının birden çok rol atamaları varsa, bu rol atamaları izinleri gibi farklı nesnelere genişletin:

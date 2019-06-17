@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b6a38544016172da0267eb0a47948029786b786
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 87e5ac06e93027b577d42b27e7d15b9b18e11020
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046385"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046356"
 ---
 # <a name="typical-migration-cycle"></a>Tipik geçiş döngüsü
 
@@ -31,8 +31,8 @@ Hedef gruplarınızın zaman çizelgesinin nasıl oluşturulacağına ilişkin b
 
   | **Geçiş hedeflenen gruplar** | **Dönem 1** | **Dönem 2** | **Dönem 3** | **Dönem 4** | **...**
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| Sınırlı Pilot BT kuruluşu (50 kullanıcı) | Planı Duyurma | Kayıt talimatı verme | Son tarih verme | Koşullu erişimi zorlama |  |                                                        
-| Genişletilmiş Pilot BT kuruluşu (200 kullanıcı) |  | Planı Duyurma | Kayıt talimatı verme | Son tarih verme | Koşullu erişimi zorlama |
+| Sınırlı Pilot BT kuruluşu (50 kullanıcı) | Planı Duyurma | Kayıt talimatı verme | Son tarih verme | Koşullu erişimi zorunlu |  |                                                        
+| Genişletilmiş Pilot BT kuruluşu (200 kullanıcı) |  | Planı Duyurma | Kayıt talimatı verme | Son tarih verme | Koşullu erişimi zorunlu |
 | Geçiş aşaması 1 Teknik bilgiye sahip kullanıcılar (2000) |  |  | Planı Duyurma | Kayıt talimatı verme | Son tarih verme |
 | Geçiş aşaması 2 Doğu ABD |  |  |  | Planı Duyurma | Kayıt talimatı verme |
 | Tüm Bölgeler |  |  |  |  | Planı Duyurma |
@@ -57,7 +57,7 @@ Her aşamadan sonra kaç kullanıcının cihazlarını kaydettiğini izleyerek �
 
 -   İletişim planınızın verimliliğini değerlendirmek.
 
--   Koşullu erişim zorlama etkisini tahmin etmek.
+-   Koşullu erişim zorlama etkisini tahmin edin.
 
 
 ## <a name="post-migration"></a>Geçiş Sonrası

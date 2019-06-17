@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047710"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045689"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Intune şirket içi Exchange connector, Microsoft Intune ayarlama
 Bu makaledeki bilgiler yükleyin ve ardından Exchange Active Sync şirket içi Bağlayıcısı için Intune izlemenize yardımcı olur.  Intune şirket içi Exchange bağlayıcısıyla kullanan, [izin vermek veya Exchange erişimi engellemek için koşullu erişim ilkeleri şirket içi posta kutularını](conditional-access-exchange-create.md). 
@@ -119,7 +119,7 @@ Intune şirket içi Exchange bağlayıcısını yüklemek için aşağıdaki ad�
 
 4. **Kullanıcı (Etki alanı\kullanıcı)** ve **Parola** alanlarında Exchange sunucunuza bağlanmak için gereken kimlik bilgilerini sağlayın. Belirttiğiniz hesabın Intune'ı kullanma Lisansı olmalıdır. 
 
-5. Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken kimlik bilgilerini sağlayın. Bu kullanıcı yalnızca bildirimlere ayrılabilir. Bildirim kullanıcısına, e-posta ile bildirim göndermek için bir Exchange posta kutusu gerekir. Bu bildirimleri Intune’da koşullu erişim ilkeleriyle yapılandırabilirsiniz.  
+5. Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken kimlik bilgilerini sağlayın. Bu kullanıcı yalnızca bildirimlere ayrılabilir. Bildirim kullanıcısına, e-posta ile bildirim göndermek için bir Exchange posta kutusu gerekir. Bu bildirimleri Intune’da Koşullu Erişim ilkeleriyle yapılandırabilirsiniz.  
 
        Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -184,9 +184,9 @@ Intune 1710 sürümünden itibaren kullanabilirsiniz [Exchange Bağlayıcısı v
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Hızlı eşitlemeyi veya tam eşitlemeyi el ile zorlama
 Bir şirket içi Exchange connector EAS ve Intune cihaz kayıtları düzenli aralıklarla otomatik olarak eşitler. Bir cihazın uyumluluk durumunu değişirse, böylece cihaz erişimi engellendi veya izin verilen otomatik eşitleme işlemini düzenli olarak kayıtları güncelleştirir.
 
-   - **Hızlı eşitleme** günde birkaç kez düzenli aralıklarla yapılır. Hızlı eşitleme, Intune lisanslı olan, şirket içi Exchange koşullu erişimi için hedeflenen ve son eşitlemeden sonra değiştirilmiş olan kullanıcıların cihaz bilgilerini alır.
+   - **Hızlı eşitleme** günde birkaç kez düzenli aralıklarla yapılır. Hızlı eşitleme için cihaz bilgilerini alır. Intune lisansına sahip ve şirket içi Exchange koşullu erişim-hedeflenen kullanıcılar, son eşitlemeden bu yana değişti.
 
-   - **Tam eşitleme** varsayılan olarak günde bir kez gerçekleştirilir. Tam eşitleme, Intune lisanslı olan ve şirket içi Exchange koşullu erişimi için hedeflenen kullanıcıların cihaz bilgilerini alır. Tam eşitlemede Exchange sunucu bilgileri de alınır ve Azure portalında Intune tarafından belirtilen yapılandırmanın Exchange Server'da güncelleştirilmesi sağlanır. 
+   - **Tam eşitleme** varsayılan olarak günde bir kez gerçekleştirilir. Tam eşitleme, tüm cihaz bilgilerini alır. Intune lisansına sahip ve şirket içi Exchange koşullu erişim hedeflenen kullanıcılar. Tam eşitlemede Exchange sunucu bilgileri de alınır ve Azure portalında Intune tarafından belirtilen yapılandırmanın Exchange Server'da güncelleştirilmesi sağlanır. 
 
 
 Intune panosundaki **Hızlı Eşitleme** veya **Tam Eşitleme** seçeneğini kullanarak bağlayıcıyı eşitleme çalıştırmaya zorlamak için aşağıdaki adımları izleyebilirsiniz:

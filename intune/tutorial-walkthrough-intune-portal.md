@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044978"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044333"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Öğretici: Azure portalında Microsoft Intune gözden geçirme
 
@@ -104,7 +104,7 @@ Intune Azure portalında daha iyi anlamak için aşağıdaki adımları izleyin.
 
     ![Koşullu erişim bölmesinin ekran görüntüsü](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    Koşullu erişim, e-postanıza ve şirket kaynaklarınıza bağlanmasına izin verilen cihazları ve uygulamaları denetlemek için kullanabileceğiniz yolları gösterir. Cihaz tabanlı ve uygulama tabanlı koşullu erişim hakkında bilgi edinin ve koşullu erişimi Intune'la kullanmaya yönelik yaygın senaryolar bulmak için bkz: [koşullu erişim nedir?](conditional-access.md)
+    Koşullu erişim e-postasına ve şirket kaynaklarına bağlanmasına izin verilen uygulamalar ve cihazlar denetim yolları gösterir. Cihaz tabanlı ve uygulama tabanlı koşullu erişim hakkında bilgi edinin ve koşullu erişimi Intune'la kullanmaya yönelik yaygın senaryolar bulmak için bkz: [koşullu erişim nedir?](conditional-access.md)
 
 8. Gelen [Intune](https://aka.ms/intuneportal)seçin **kullanıcılar** Intune'a eklediğiniz kullanıcı hakkındaki ayrıntıları görüntülemek için. Bu, şirketinizin iş gücü kullanıcılardır. 
  

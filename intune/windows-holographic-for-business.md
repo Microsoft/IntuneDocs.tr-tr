@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a10fa6983b8e8c34a1844c647d952ca8cbf0730c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050165"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045995"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Yönetme ve farklı bir cihaz yönetim özellikleri, Windows Holographic ve HoloLens cihazları Intune ile kullanma
 
@@ -54,7 +54,7 @@ Intune; kullanıcıların şirket verilerine erişmesi, cihaz kaydetmesi, uygula
 ## <a name="compliance-policy"></a>Uyumluluk ilkesi
 **[Cihaz uyumluluğu ilkesi oluşturma](compliance-policy-create-windows.md)**
 
-Uyumluluk ilkeleri, cihazların uyumlu olmak için karşılaması gereken kurallar ve ayarlardır. Uyumlu olmayan cihazların erişimini engellemek için bu ilkeleri koşullu erişimle birlikte kullanın. Intune’da Windows Holographic for Business çalıştıran cihazlar için erişime izin vermek veya erişimi engellemek üzere uyumluluk ilkeleri oluşturun. Örneğin BitLocker’ın etkin olmasını gerektiren bir ilke oluşturabilirsiniz.
+Uyumluluk ilkeleri, cihazların uyumlu olmak için karşılaması gereken kurallar ve ayarlardır. Bu ilkeleri koşullu erişimle uyumlu cihazların şirket kaynaklarına erişimini engellemek için kullanın. Intune’da Windows Holographic for Business çalıştıran cihazlar için erişime izin vermek veya erişimi engellemek üzere uyumluluk ilkeleri oluşturun. Örneğin BitLocker’ın etkin olmasını gerektiren bir ilke oluşturabilirsiniz.
 
 Ayrıca bkz. **[Uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md)**.
 

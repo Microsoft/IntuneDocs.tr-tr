@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819901"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044811"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>E-postayı otomatikleştirme ve eylemleri uyumsuz cihazlar için Intune'da ekleme
 
@@ -27,7 +27,7 @@ Uyumluluk ilkeleri veya kuralları sağlamayan cihazlarda, eklediğiniz **uyumsu
 
 ## <a name="overview"></a>Genel Bakış
 
-Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Ardından Azure Active Directory (AD) [koşullu erişimi](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) cihazı engeller. Bir cihaz uyumlu değilse **uyumsuzluğa yönelik eylem** ayrıca esnekliği karar verir. Örneğin, cihazı hemen engellemeyebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
+Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Azure Active Directory (AD) [koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ardından cihazı engeller. Bir cihaz uyumlu değilse **uyumsuzluğa yönelik eylem** ayrıca esnekliği karar verir. Örneğin, cihazı hemen engellemeyebilir ve kullanıcıya uyumlu hale gelmesi için bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
 Çeşitli türlerde eylemler vardır:
 
@@ -55,7 +55,7 @@ Bu makale, şunları nasıl yapacağınızı gösterir:
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
-- Cihazların şirket kaynaklarına erişimini engellemek için cihaz uyumluluk ilkeleri kullanıldığında, Azure AD koşullu erişiminin ayarlanmış olması gerekir. Yönergeler için bkz. [Azure Active Directory’de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) veya [Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
+- Cihazların şirket kaynaklarına engellemek için cihaz uyumluluk ilkelerini kullanarak, Azure AD koşullu erişim ayarlanması gerekir. Bkz: [Azure Active Directory'de koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) veya [Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md) Kılavuzu.
 
 ## <a name="create-a-notification-message-template"></a>Bildirim iletisi şablonu oluşturma
 
@@ -103,7 +103,7 @@ Ayrıca, uyumluluk ilkesi oluştururken veya mevcut ilkeyi güncelleştirirken b
     
     - **Uyumsuz bir cihazı uzaktan kilitleme**: Cihaz uyumsuz olduğunda, cihazı kilitler. Bu eylem, kullanıcının bir PIN veya geçiş kodunu cihazın kilidini açmak için girmesini zorlar. 
     
-5. Yapılandırma bir **zamanlama**: Kullanıcıların cihazlarında eylemi tetiklemesine uyumsuzluktan sonra (0 ila 365) gün sayısını girin. Bu yetkisiz kullanım süresinden sonra bir koşullu erişim ilkesini zorlayabilirsiniz. Girerseniz **0** gün sonra koşullu erişim (sıfır) sayısı etkinleşir **hemen**. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
+5. Yapılandırma bir **zamanlama**: Kullanıcıların cihazlarında eylemi tetiklemesine uyumsuzluktan sonra (0 ila 365) gün sayısını girin. Bu yetkisiz kullanım süresi bir koşullu erişim ilkesini zorunlu kılabilir. Girerseniz **0** gün sonra koşullu erişim (sıfır) sayısı etkinleşir **hemen**. Örneğin, cihaz uyumsuzsa şirket kaynaklarına erişimi hemen engelleyebilirsiniz.
 
 6. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Ekle** > **Tamam**'ı seçin.
 

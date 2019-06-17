@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804661"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044612"
 ---
 # <a name="plan-communications"></a>İletişimi planlama 
 İletişim planı, bir Intune geçişi için önemli bir öğedir. Son kullanıcıları eğitmek size yardımcı olması için aşağıdaki araçları ve şablonları sağlanır. Intune benimseme Seti, e-posta şablonları, bir Intune kayıt kılavuzunu ve son kullanıcı kaydı için yol gösterici videoları bağlantılar içerir.  
@@ -33,7 +33,7 @@ Aşağıdaki e-posta iletişim planını öneririz. İletişim planınıza uyarl
 - **E-posta #1**: Avantajları, beklentileri ve zaman çizelgesini açıklayın. Intune tarafından yönetilen cihazlarda erişim izni verilecek diğer yeni hizmetleri göstermek için bu fırsattan yararlanın. 
 
 - **E-posta #2**: Hizmetleri artık Intune üzerinden erişime hazır olduğunu bildirin. Kullanıcılara şimdi kaydolmalarını söyleyin.  Erişimleri etkilenmeden önce kullanıcılara zaman çizelgesi verin. Kullanıcılara geçişin avantajlarını ve stratejik nedenlerini hatırlatın.
-[Koşullu erişim ile son kullanıcı benimsemesini başlatma](migration-guide-drive-adoption.md)’da açıklandığı gibi belirli bir süre sonra koşullu erişim ilkeleri aracılığıyla uyumluluğu zorlamaya ve kurumsal verilere erişmek için bunu ölçüt olarak kullanmaya başlayabilirsiniz.
+Belirli bir bir süre sonra koşullu erişim ilkeleri aracılığıyla uyumluluğu zorlamaya ve bunu ölçüt olarak Kurumsal verilere erişmek için açıklandığı şekilde kullanmaya [son kullanıcı benimsemesi koşullu erişimle](migration-guide-drive-adoption.md).
 
 ## <a name="intune-enrollment-guide"></a>Intune kayıt Kılavuzu 
 Bu PDF ek, kullanıcılarınıza sağlanan-olan veya Word sürüme iç kaynaklarınızı ekleyin ve kişi bilgilerini özelleştirebilirsiniz.
