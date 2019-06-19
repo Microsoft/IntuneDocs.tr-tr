@@ -17,19 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 860d990e07fb2424adf0672e416c608b1251ae3c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d70b090d137dee4076bebdc70b8a6cfaea8c7977
+ms.sourcegitcommit: 627996c928853777954c959f70be05bf52f9bb5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046191"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161654"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
-Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz [yaklaşan değişiklikleri](in-development.md), [önemli bildirimler](#notices)ve hakkında bilgi [eski sürümler](whats-new-archive.md). 
+Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz [önemli bildirimler](#notices), [eski sürümler](whats-new-archive.md)ve hakkında bilgi [Intune hizmet güncelleştirmelerinin nasıl yayımlanan](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728). 
 
 > [!Note]
+> Her [aylık güncelleştirme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) piyasaya çıkma için üç güne kadar sürebilir ve şu sırayla olacaktır:
+> - 1\. günü: Asya Pasifik (Asya PASİFİK)
+> - 2\. gün: Avrupa, Orta Doğu, Afrika (EMEA)
+> - 3\. günde: Kuzey Amerika
+> 
 > Bazı özelliklerin piyasaya çıkması birkaç haftayı bulabilir ve tüm özellikler ilk hafta bütün müşterilerimize sunulmamış olabilir.
+>
+> Denetleme [geliştirme sayfasında](in-development.md) bir sürümdeki yakında çıkacak özellikler listesi.
 
 **RSS akışı**: Bu sayfa aşağıdaki URL'yi kullanarak akış okuyucuya yapıştırarak güncelleştirildiğinde bildirim alın: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96cb9869db746942615221c5ab112ea5afd8de9c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8dca73de4491ab4f4822d42d589ef4e3bbbc50f1
+ms.sourcegitcommit: 569cd2d655d33db4fc5c5fb1f8f74a6bfdd78738
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049668"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67157039"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
@@ -30,7 +30,7 @@ Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edi
 
 İşlemi etkinleştirmek ve günlükleri toplamak için platforma göre değişiklik gösterir:
 - **Android cihazları** -kullanım *Şirket portalı*. Bkz: [günlükleri şirketinizin Destek birimine e-posta](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **iOS deices** -Managed Browser kullanmasını veya *Microsoft Edge* günlükleri toplamak için. Ayrıntılar için bkz: Intune destek ekibi blogu [günlüğü gönderisine Intune Managed Browser için yeni Intune tanılama konsolunu](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
+- **iOS cihazları** -Managed Browser kullanmasını veya *Microsoft Edge* günlükleri toplamak için. Ayrıntılar için bkz: Intune destek ekibi blogu [günlüğü gönderisine Intune Managed Browser için yeni Intune tanılama konsolunu](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
 - **Windows 10 cihazları** -kullanım *MDMDiag* ve olay günlükleri. Bkz, [Windows 10 MDM tanılama hataları](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) Windows istemci yönetim içeriği ve blog [Windows 10 Intune İlkesi hatalarını giderme](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
 
 
