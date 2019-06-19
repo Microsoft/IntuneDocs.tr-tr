@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 2246e3f6faa853f620327558a7faf4dc9d6a6e85
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402714"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197505"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Genel sorunlar ve çözümleri Microsoft Intune e-posta profilleriyle
 
 Bazı yaygın e-posta profili sorunları ve nasıl giderileceği ve çözüleceği açıklanır gözden geçirin.
 
+## <a name="what-you-need-to-know"></a>Bilmeniz gerekenler
+
+- E-posta profilleri, kaydeden kullanıcı için dağıtılır. E-posta profili yapılandırmak için Intune Azure Active Directory (AD) özelliklerini kullanıcının e-posta profilinde kayıt sırasında kullanır. [Cihazlar için e-posta ayarları Ekle](email-settings-configure.md) iyi bir kaynak olabilir.
+- Configuration Manager karma tek başına Intune'a geçirdikten sonra Configuration Manager karma e-posta profilinden 7 gün boyunca cihazda kalır. Bu beklenen bir davranıştır. Er kaldırıldı e-posta profili gerekirse başvurun [Intune Destek](get-support.md).
+- Android Enterprise için Gmail veya yönetilen Google Play Store kullanarak iş dokuz dağıtın. [Yönetilen Google Play uygulamaları ekleme](apps-add-android-for-work.md) adımları listelenir.
+- İOS için Microsoft Outlook ve Android e-posta profillerinin desteklememektedir. Bunun yerine, bir uygulama yapılandırma İlkesi dağıtın. Daha fazla bilgi için [Outlook yapılandırma ayarı](app-configuration-policies-outlook.md).
+- E-posta profilleri cihaz gruplarına (değil kullanıcı grupları) hedeflenen cihaza teslim edilemedi. Ardından aygıtın birincil kullanıcıya sahip olduğunda, cihazı hedefleyen çalışması gerekir. E-posta profili kullanıcı sertifikaları içeriyorsa, hedef kullanıcı gruplarına emin olun.
+- Kullanıcıların art arda için e-posta profili parolasını girmeniz istenebilir. Bu senaryoda, e-posta profilinde başvurulan tüm sertifikaları kontrol edin. Sertifikalardan birinin bir kullanıcıyı hedef değil, Intune e-posta profili dağıtmak için deneme.
+
 ## <a name="device-already-has-an-email-profile-installed"></a>Cihazda zaten yüklü bir e-posta profili var
 
-Kullanıcılar Intune'a kaydolmadan e-posta profili oluşturursanız, Intune e-posta profili beklendiği gibi çalışmayabilir:
+Kullanıcılar, Intune veya Office 365 MDM kaydetmeden önce bir e-posta profili oluşturursanız, Intune tarafından dağıtılan e-posta profilini beklendiği gibi çalışmayabilir:
 
 - **iOS**: Intune, konak adına ve e-posta adresini temel alan bir var olan ve yinelenen e-posta profili olduğunu algılar. Kullanıcı tarafından oluşturulmuş bir e-posta profili Intune tarafından oluşturulan profilin dağıtımını engeller. İOS kullanıcıları genellikle bir e-posta profili oluşturma ardından kaydolduğundan ortak bir sorunu budur. Şirket portalı uygulaması, kullanıcı uyumsuzsa ve e-posta profilini kaldırmak için kullanıcı isteyebilir belirtir.
 
@@ -50,19 +59,16 @@ Samsung KNOX için EAS profili yapılandırmanızı ve kaynak ilkeyi gözden ge�
 
 ## <a name="unable-to-send-images-from--email-account"></a>E-posta hesabından resim gönderilemedi
 
-Klasik Azure portalında Intune için geçerlidir.
-
 Otomatik olarak yapılandırılan e-posta hesaplarına sahip kullanıcılar, cihazlarından resim veya görüntü gönderemez. Bu senaryo oluşabilir **üçüncü taraf uygulamalardan gönderilmesine izin ver** etkin değil.
 
 ### <a name="intune-solution"></a>Intune çözümü
 
-1. Microsoft Intune yönetim konsolunu açın, **ilke** iş yükü > **yapılandırma İlkesi**.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Seçin **cihaz Yapılandırması** > **profilleri**.
+3. E-posta profili seçin > **özellikleri** > **ayarları**.
+4. Ayarlama **üçüncü taraf uygulamalardan gönderilmesine izin ver** ayarını **etkinleştirme**.
 
-2. E-posta profilini seçin ve **Düzenle**’yi seçin.
-
-3. **Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver**’i seçin.
-
-### <a name="configuration-manager-integrated-with-intune-solution"></a>Intune ile tümleştirilmiş Configuration Manager çözümü
+### <a name="configuration-manager-hybrid"></a>Configuration Manager karma
 
 1. Configuration Manager konsolunu açın > **varlıklar ve Uyumluluk**.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749907"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197537"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune için Microsoft Defender Gelişmiş tehdit koruması temel ayarları
 
@@ -83,7 +83,7 @@ Daha fazla bilgi için [ilke CSP'si - SmartScreen](https://docs.microsoft.com/wi
 
   **Varsayılan**: Evet
 
-## <a name="attach-surface-reduction"></a>Yüzeyi azaltma ekleme  
+## <a name="attack-surface-reduction"></a>Saldırı Yüzeyini Azaltma  
 
 - **Office uygulamalarının alt işlem türü başlatın**  
   [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – ayarlandığında *blok*, Office uygulamaları olmaz izin alt işlemlerin oluşturun. Office uygulamaları, Word, Excel, PowerPoint, OneNote ve erişim içerir. Bir alt işlem oluşturma özellikle başlatın veya kötü amaçlı bir yürütülebilir dosyaları indirmek için Office uygulamalarını kullanma girişimi makrosu tabanlı saldırılar için bir tipik bir kötü amaçlı yazılım davranıştır.  

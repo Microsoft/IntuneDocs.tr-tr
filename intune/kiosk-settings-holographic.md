@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d6366034af09acdbecdc0cb0e670f6d57766b35
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047027"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197526"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows Holographic for Business cihaz ayarlarını ıntune'da bilgi noktası olarak çalıştırmak
 
@@ -59,17 +59,17 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
 
   - **Otomatik oturum açma**: Windows Holographic for Business üzerinde desteklenmiyor.
   - **Yerel kullanıcı hesapları**: **Ekleme** yerel (cihaz) kullanıcı hesabı. Girdiğiniz hesap, bilgi noktasında oturum açmak için kullanılır.
-  - **Azure AD kullanıcısı veya grubu (Windows 10, 1803 ve sonraki sürümleri)**: Cihaza oturum açmak için kullanıcı kimlik bilgilerini gerektirir. Listeden Azure Active Directory kullanıcılarını veya gruplarını seçmek için **Ekle**’yi seçin. Birden çok kullanıcı ve grup seçebilirsiniz. Değişikliklerinizi kaydetmek için **Seçin**’e tıklayın.
+  - **Azure AD kullanıcısı veya grubu (Windows 10, 1803 ve sonraki sürümleri)** : Cihaza oturum açmak için kullanıcı kimlik bilgilerini gerektirir. Listeden Azure Active Directory kullanıcılarını veya gruplarını seçmek için **Ekle**’yi seçin. Birden çok kullanıcı ve grup seçebilirsiniz. Değişikliklerinizi kaydetmek için **Seçin**’e tıklayın.
   - **HoloLens ziyaretçi**: Ziyaretçi herhangi bir kullanıcı kimlik bilgileri veya kimlik doğrulaması gerektirmeyen bir Konuk hesabı bölümünde anlatıldığı gibi hesaptır [PC modu kavramları paylaşılan](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Uygulamaları**: Bilgi noktası cihazda çalıştırılacak uygulamaları ekleyin. Birden fazla uygulama ekleyebileceğinizi unutmayın.
 
-  - **Store uygulamaları ekleme**: Eklenen kullanarak mevcut bir uygulamayı seçtiğinizden [istemci uygulamaları](apps-add.md). Listede hiç uygulama yoksa uygulama edilebilir ve [bunları Intune’a ekleyebilirsiniz](store-apps-windows.md).
+  - **Store uygulamaları ekleme**: Eklenen veya Intune dağıtılan mevcut uygulamayı Seç [istemci uygulamaları](apps-add.md), LOB uygulamaları dahil olmak üzere. Listelenen herhangi bir uygulama yoksa, Intune birçok destekler [uygulama türlerini](apps-add.md) aldığınız [Intune'a ekleme](store-apps-windows.md).
   - **Win32 uygulaması Ekle**: Windows Holographic for Business üzerinde desteklenmiyor.
   - **Tarafından AUMID'sini ekleme**: Gelen kutusu Windows uygulama eklemek için bu seçeneği kullanın. Aşağıdaki özellikleri girin: 
 
     - **Uygulama adı**: Gerekli. Uygulama için bir ad girin.
-    - **Uygulama kullanıcı modeli kimliği (AUMID'sini)**: Gerekli. Windows uygulamasının uygulama kullanıcı modeli kimliğini (AUMID) girin. Bu kimliği almak için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Uygulama kullanıcı modeli kimliği (AUMID'sini)** : Gerekli. Windows uygulamasının uygulama kullanıcı modeli kimliğini (AUMID) girin. Bu kimliği almak için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Modeli Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
     - **Döşeme boyutu**: Gerekli. Küçük, Orta, Geniş veya Büyük uygulama kutucuk boyutu seçin.
 
 - **Bilgi noktası tarayıcı ayarlarını**: Windows Holographic for Business üzerinde desteklenmiyor.

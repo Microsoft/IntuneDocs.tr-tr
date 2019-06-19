@@ -50,6 +50,8 @@
       href: tutorial-use-autopilot-enroll-devices.md
     - name: iOS cihazlarını kaydetmek için DEP kullanma
       href: tutorial-use-device-enrollment-program-enroll-ios.md
+    - name: Slack’i Intune kullanmak üzere yapılandırma
+      href: tutorial-configure-slack-enterprise-grid.md
 - name: Kavramlar
   items:
     - name: Cihaz yönetimi nedir?
@@ -662,10 +664,6 @@
               href: troubleshoot-policies-in-microsoft-intune.md
             - name: E-posta profili sorunları ve çözümleri
               href: troubleshoot-email-profiles-in-microsoft-intune.md
-            - name: Yazılım güncelleştirmesi sorunlarını giderme
-              href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Uç nokta korumasıyla ilgili yaygın hatalar
-              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
             - name: Koşullu erişim sorunlarını giderme
               href: troubleshoot-conditional-access.md
             - name: Exchange bağlayıcısı sorunlarını giderme
@@ -968,6 +966,10 @@
               href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
             - name: İlke çakışmalarını çözme
               href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: Yazılım güncelleştirmesi sorunlarını giderme
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: Uç nokta korumasıyla ilgili yaygın hatalar
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
     - name: Senaryo uygulama kılavuzları
       items:
         - name: Exchange Online’ı Koruma

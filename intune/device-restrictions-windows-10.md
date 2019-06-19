@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
+ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041132"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67234979"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -420,7 +420,8 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 Bu ayarları kullanın [DeviceLock ilke CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), desteklenen Windows sürümleri de listelenir.
 
-- **Parola**: **Gerekli** ayarı son kullanıcının cihaza erişmek için parola girmesini zorunlu tutar. **Yapılandırılmamış** (varsayılan), bir parola olmadan cihaz erişim sağlar.
+- **Parola**: **Gerekli** ayarı son kullanıcının cihaza erişmek için parola girmesini zorunlu tutar. **Yapılandırılmamış** (varsayılan), bir parola olmadan cihaz erişim sağlar. Yalnızca yerel hesaplar için geçerlidir. Etki alanı hesabı parolaları Active Directory (AD) ve Azure AD tarafından yapılandırılmış olarak kalır.
+
   - **Gerekli parola türü**: Parola türünü seçin. Seçenekleriniz şunlardır:
     - **Yapılandırılmadı**: Parola, sayı ve harf içerebilir.
     - **Sayısal**: Parola yalnızca sayı olması gerekir.
