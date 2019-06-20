@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 967398516cdc2f727aa517fed3c8cf65810a38a1
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373468"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251217"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Windows 10 cihazlarda ıntune'da PowerShell betiklerini kullanın
 
@@ -45,7 +45,7 @@ Intune yönetim uzantısı, aşağıdaki önkoşulları vardır. Bunlar sağland
 
 - Windows 10 sürüm 1607 veya üzerini çalıştıran cihazlar. Kullanarak cihaz kaydedilirse [toplu otomatik kayıt](windows-bulk-enroll.md), 1703 veya daha sonra cihazları Windows 10 sürümü çalıştırması gerekir. Intune yönetim uzantısı olmayan mağaza uygulamaları çalıştıran S modu izin vermediğinden üzerinde Windows 10 S modunda desteklenmez. 
   
-- Azure Active Directory'ye (AD) katılmış cihazlar da dahil olmak üzere:
+- Azure Active Directory'ye (AD) katılmış cihazlar da dahil olmak üzere:  
   
   - Hibrit Azure AD'ye katılmış: Azure Active Directory (AD) alanına katılmış ve ayrıca katılmış cihazların şirket içi Active Directory (AD). Bkz: [hibrit Azure Active Directory join sürecinizi planlamak](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) Kılavuzu.
 
@@ -55,13 +55,16 @@ Intune yönetim uzantısı, aşağıdaki önkoşulları vardır. Bunlar sağland
   
   - El ile hangi olduğunda, Intune'a kayıtlı cihazlar:
   
-    - Kullanıcı cihazda yerel bir kullanıcı hesabı kullanarak oturum açtığında ve cihazı Azure AD'ye el ile birleştiren (ve Azure AD'de ıntune otomatik kayıt etkin).
+    - [Intune otomatik kayıt](quickstart-setup-auto-enrollment.md) Azure AD'de etkinleştirilir. Son kullanıcı cihazda yerel bir kullanıcı hesabı kullanarak oturum açtığında, cihazın Azure AD'ye el ile birleştirir ve ardından cihaza kendi Azure AD hesabını kullanarak oturum açtığında.
     
-    Or
+    OR  
     
     - Kullanıcı cihazda kullanıcı Azure AD hesabı kullanarak oturum açtığında ve ardından Intune'a kaydedilir.
 
   - Configuration Manager ve Intune kullanan ortak yönetilen cihazlar. Bkz: [ortak yönetim nedir](https://docs.microsoft.com/sccm/comanage/overview) Kılavuzu.
+
+> [!TIP]
+> Cihazlardır mutlaka [katılmış](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) Azure AD'ye. Yalnızca cihazlar [kayıtlı](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) Azure AD'de betiklerinizi almazsınız.
 
 ## <a name="create-a-script-policy"></a>Bir betik ilkesi oluşturma 
 
@@ -87,7 +90,7 @@ Intune yönetim uzantısı, aşağıdaki önkoşulları vardır. Bunlar sağland
 5. Seçin **Tamam** > **Oluştur** betiği kaydedilemiyor.
 
 > [!NOTE]
-> PowerShell betiğini yönetici ayrıcalığı altında (varsayılan) çalıştıran ne zaman komut kullanıcı içeriğine ayarlandığından ve son kullanıcının cihaz üzerinde yönetici ayrıcalıklarına sahip.
+> Betikleri kullanıcı bağlamı için ayarlanır ve son kullanıcı, varsayılan olarak yönetici haklarına sahip olduğunda, PowerShell betiğini yönetici ayrıcalığı altında çalışır.
 
 ## <a name="assign-the-policy"></a>İlke atama
 
@@ -156,6 +159,7 @@ Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları y
     > [!TIP]
     > **Microsoft Intune Yönetim Uzantısı** cihaz çalışır (services.msc) Hizmetleri uygulamasında listelenmesini hizmet gibi bir hizmettir. Bir cihaz yeniden başlatıldıktan sonra bu hizmet de yeniden başlatın ve Intune hizmetine atanan tüm PowerShell betikleri için denetleyin. Varsa **Microsoft Intune Yönetim Uzantısı** hizmetini el ile olarak ayarlayın ve ardından cihaz yeniden başlatıldıktan sonra hizmet yeniden başlatılamayabilir.
 
+- Cihazlardır mutlaka [Azure AD'ye katılmış](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network). Yalnızca, çalışma alanına veya kuruluşunuz katılmış cihazları ([kayıtlı](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) Azure AD'de) betikleri almazsınız.
 - Intune yönetim uzantısı istemci betiği herhangi bir değişiklik veya ıntune ilkesi için saat başına bir kez denetler.
 - Intune yönetim uzantısı indirdiğiniz onaylayın `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Betikler, Surface hub'ları veya Windows 10 S modunda çalışmıyor.

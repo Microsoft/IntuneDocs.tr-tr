@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b5d3754c7dd3ead9236e223fd568e58e96fe9a1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045144"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251091"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -80,7 +80,7 @@ Intune'u Jamf Pro ile bağlamak için:
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Jamf Pro ile tümleştirmek için Intune’u etkinleştirme
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=20909)ve Git **Intune** > **cihaz uyumluluğu** > **iş ortağı cihaz Yönetimi**.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)ve Git **Intune** > **cihaz uyumluluğu** > **iş ortağı cihaz Yönetimi**.
 
 2. Önceki yordama sırasında kaydedilmiş uygulama kimliği yapıştırarak Jamf için Uyumluluk Bağlayıcısı'nı etkinleştir **Jamf Azure Active Directory Uygulama Kimliği** alan.
 

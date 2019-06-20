@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 985ca70dba2a5a486947bd2de08e7f8934e90d75
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749806"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263711"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -98,7 +98,7 @@ VPN, WiFi ve diğer kaynaklara sahip bir cihaz kimliğini doğrulamak için bir 
 3. **Kullanıcı** sertifika şablonunu bulun, şablona sağ tıklayın ve **Şablonu Yinele**’yi seçin. **Yeni Şablon Özellikleri** açılır.
 
     > [!NOTE]
-    > S/MIME e-posta imzalama ve şifreleme senaryolarında, birçok yönetici imzalama ve şifreleme için ayrı sertifikalar kullanır. Microsoft Active Directory Sertifika Hizmetlerini kullanıyorsanız, S/MIME e-posta imzalama sertifikaları için **Yalnızca Exchange İmzası** şablonunu ve S/MIME şifreleme sertifikaları için de **Exchange Kullanıcısı** şablonunu kullanabilirsiniz.  3. taraf sertifika yetkilisi kullanıyorsanız, imzalama ve şifreleme şablonları ayarlamak için kendi yönergeleri gözden geçirmeniz önerilir.
+    > S/MIME e-posta imzalama ve şifreleme senaryolarında, birçok yönetici imzalama ve şifreleme için ayrı sertifikalar kullanır. Microsoft Active Directory Sertifika Hizmetlerini kullanıyorsanız, S/MIME e-posta imzalama sertifikaları için **Yalnızca Exchange İmzası** şablonunu ve S/MIME şifreleme sertifikaları için de **Exchange Kullanıcısı** şablonunu kullanabilirsiniz.  3\. taraf sertifika yetkilisi kullanıyorsanız, imzalama ve şifreleme şablonları ayarlamak için kendi yönergeleri gözden geçirmeniz önerilir.
 
 4. **Uyumluluk** sekmesinde:
 
@@ -278,8 +278,6 @@ Sertifikaları Intune’da içeri aktardıktan sonra bir **PKCS içeri aktarılm
 
 Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Ardından [profili atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
 
-[SCEP sertifikalarını kullanmak](certificates-scep-configure.md), veya [PKCS sertifikaları Symantec PKI manager web hizmeti sorun](certificates-symantec-configure.md).
+[SCEP sertifikalarını kullanmak](certificates-scep-configure.md), veya [PKCS sertifikaları Digicert PKI manager web hizmeti sorun](certificates-digicert-configure.md).
 
-[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Azure portalında Intune'a gidin ve güvenilen bir sertifika için yeni bir profil oluşturun"
-[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Bir profili oluşturun ve güvenilen bir sertifika yükleyin"
-[ConnectorDownload]: ./media/certificates-download-connector.png "Azure portalından sertifika bağlayıcıyı indirin"  
+

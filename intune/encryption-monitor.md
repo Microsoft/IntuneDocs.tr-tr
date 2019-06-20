@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 43dc353da9aee9e2cdf7797f39746666a72d6880
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047817"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251186"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker'ı ve cihaz şifreleme izleyin  
 Intune, Windows 10 cihazlarınızın şifreleme durumunu belirlemek için merkezi bir konum sağlayan ve BitLocker için önemli bilgiler, Azure Active Directory (Azure AD) bulunan cihazlardan erişim yardımcı olur.  
@@ -95,7 +95,7 @@ Bu bölme aşağıdaki ayrıntıları sağlar:
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker kurtarma anahtarları
 BitLocker anahtarı kimliği ve kurtarma anahtarlarını, Windows 10 cihazları için gelen Intune portalından görüntüleyebileceğiniz şekilde Intune için BitLocker'ı Azure AD'ye dikey erişim sağlar.  Erişilebilir olması için cihazı Azure AD'ye kalacakları anahtarlarını olmalıdır. 
-1. Oturum [Intune](https://aka.ms/intuneportal)Git **cihazları** altındaki *Yönet*seçin **tüm cihazlar**.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)Git **cihazları** altındaki *Yönet*seçin **tüm cihazlar**.
 2. Bir cihaz seçin listeden ve altında *İzleyici*seçin **kurtarma anahtarlarını**.  
   
 Aşağıdaki bilgiler, anahtarları, Azure AD'de kullanılabilir olduğunda kullanılabilir:

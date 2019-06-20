@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d70b090d137dee4076bebdc70b8a6cfaea8c7977
-ms.sourcegitcommit: 627996c928853777954c959f70be05bf52f9bb5f
+ms.openlocfilehash: 62555e9b5a868b93dda08a8c784221eff570bb89
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161654"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263739"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -56,6 +56,15 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 ## <a name="week-of-june-10-2019"></a>10 Haziran 2019 haftası 
 
 ### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Yeni Microsoft Intune uygulama özellikleri
+Android için yeni özellikler Intune uygulama (Önizleme) ekledik. Tam olarak yönetilen Android cihazlarda kullanıcıların artık şunları yapabilirsiniz:  
+
+* Görüntüleyin ve yönetin Intune Şirket portalı ya da Microsoft Intune uygulama üzerinden kayıtlı cihazlar.    
+* Kuruluşlarında desteğine başvurun.    
+* Geribildirimler, Microsoft'a gönderin.    
+* Görüntülerseniz hüküm ve koşullar ve kuruluşun ayarlayın.    
+
 
 #### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Yeni örnek uygulamalar Github'da kullanılabilir Intune SDK'sı tümleştirmesi gösteriliyor <!-- 2653471 -->
 GitHub hesabı msintuneappsdk iOS (Swift), Android, Xamarin.iOS, Xamarin Forms ve Xamarin.Android için yeni örnek uygulamalar eklemiştir. Bu uygulamalar, mevcut belgelerimize desteklemek ve Intune uygulama SDK'sı kendi mobil uygulamalarınızla nasıl tümleştireceğinizi nasıl gösterimlerine sağlamak için yöneliktir. Ek Intune SDK'sı Kılavuzu gerektiren bir uygulama geliştiricisiyseniz, aşağıdaki bağlantılı örneklere bakın:

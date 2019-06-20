@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048103"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263690"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -56,7 +56,7 @@ Bu makalede, listeler ve Android Kurumsal cihazlarda denetleyebileceğiniz farkl
 - **NFC kullanarak verileri ışın**: Seçin **blok** yakın alan iletişimi (NFC) teknolojisini kullanarak ışını veri uygulamalardan önlemek için. **Yapılandırılmamış** cihazlar arasında veri paylaşımı için NFC kullanımına izin verir.
 - **Hata ayıklama özellikleri**: Seçin **izin** kullanıcıların cihazda hata ayıklama özelliklerini kullanın. **Yapılandırılmamış** kullanıcıların cihazda hata ayıklama özelliklerini kullanmasını önler.
 - **Mikrofon Ayarlama**: Seçin **blok** mikrofonun sesinin açılmasını ve mikrofon ses kullanıcıların önlemek için. **Yapılandırılmamış** kullanma ve cihazda mikrofon ses ayarlamak izin verir.
-- **Fabrika ayarlarına sıfırlama koruması e-postaları**: Seçin **Google hesabı e-posta adresleri**. Bunu temizlendikten sonra cihazın kilidini açmak cihaz yöneticilerinin e-posta adreslerini girin. E-posta adresi gibi bir noktalı virgül ile ayırın mutlaka `admin1@gmail.com;admin2@gmail.com`. E-posta değil girdiyseniz, fabrika ayarlarına geri yüklendikten sonra herkes cihazın kilidini açabilirsiniz.
+- **Fabrika ayarlarına sıfırlama koruması e-postaları**: Seçin **Google hesabı e-posta adresleri**. Bunu temizlendikten sonra cihazın kilidini açmak cihaz yöneticilerinin e-posta adreslerini girin. E-posta adresi gibi bir noktalı virgül ile ayırın mutlaka `admin1@gmail.com;admin2@gmail.com`. E-posta değil girdiyseniz, fabrika ayarlarına geri yüklendikten sonra herkes cihazın kilidini açabilirsiniz. Bu e-postaları, yalnızca kullanıcı olmayan Fabrika sıfırlaması çalıştığı zaman kurtarma menüsünü kullanarak bir Fabrika sıfırlaması çalışıyor gibi uygulanır.
 - **Ağ kaçış noktası**: Seçin **etkinleştirme** ağ kaçış tarama özelliğini etkinleştirmek kullanıcılara izin vermek için. Cihaz önyüklendiğinde bir ağ bağlantısı olmayan yaptıysanız, kaçış noktası geçici olarak bir ağa bağlayın ve cihaz ilkesini yenilemek sorar. Bu ilke uygulandıktan sonra geçici ağ unutulur ve cihaz önyüklemeye devam eder. Bu özellik, cihazları ağa bağlanır:
   - Son ilkede uygun bir ağ yok.
   - Cihaz uygulama kilidi görev modunda önyüklenir.
@@ -100,6 +100,8 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
   >   - [Cihaz grubuna atanmış](apps-deploy.md) adanmış cihazlarınız için oluşturuldu
   > 
   > **Giriş ekranı yönetilen** uygulama yapılandırma profilinde de olması için gerekli değildir, ancak bir istemci uygulaması olarak eklenmesi için gereklidir. Zaman **giriş ekranı yönetilen** uygulama, bir istemci uygulaması olarak eklenir, simgeler olarak gösterilir yapılandırma profilinde de eklediğiniz diğer tüm uygulamalar **giriş ekranı yönetilen** uygulama. 
+  >
+  > Çoklu uygulama bilgi noktası modu giriş ekranı yönetilen kullanırken Çevirici/phone uygulamalarını düzgün çalışmayabilir. 
 
   - Seçin **Ekle**ve uygulamalarınızı listeden seçin.
 
@@ -253,7 +255,7 @@ Bilgi noktası stili deneyimi adanmış cihazlarınızı yapılandırmak için b
 - **Minimum parola uzunluğu**: En az bir kullanıcı parolasının sahip olması gerekir, karakter sayısını girin gelen **4**-**16**.
 - **Kilitlenmesine kadar iş profili kilitlenmeden önce**: İş profili kilitlenmeden önce geçen süreyi seçin. Daha sonra kullanıcının kimlik bilgilerini girerek tekrar erişim kazanması gerekir.
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: İş profili temizlenmeden önce hatalı bir parolanın CİHAZDAN girilebilir sayısını girin.
-- **Parola zaman aşımı (gün sayısı)**: Bir son kullanıcının parolası değiştirilene kadar geçecek gün sayısını girin (gelen **1**-**255**).
+- **Parola zaman aşımı (gün sayısı)** : Bir son kullanıcının parolası değiştirilene kadar geçecek gün sayısını girin (gelen **1**-**255**).
 - **Gerekli parola türü**: Cihazda ayarlanması gereken parola türünü seçin. Aşağıdakilerden birini seçin:
   - **Cihaz varsayılanı**
   - **Düşük güvenlik biyometriği**
@@ -274,7 +276,7 @@ Bu parola ayarlar, bir iş profili kullanan cihazlardaki kişisel profiller içi
 - **Minimum parola uzunluğu**: En az bir kullanıcı parolasının sahip olması gerekir, karakter sayısını girin gelen **4**-**14**.
 - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Etkin olmayan bir cihaz otomatik olarak kilitlenmeden önce geçen süreyi seçin
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Kaç kez CİHAZDAN tüm verileri silinmeden önce yanlış parola girilebileceğini sayısını girin
-- **Parola zaman aşımı (gün sayısı)**: Bir son kullanıcının parolası değiştirilene kadar geçecek gün sayısını girin (gelen **1**-**255**)
+- **Parola zaman aşımı (gün sayısı)** : Bir son kullanıcının parolası değiştirilene kadar geçecek gün sayısını girin (gelen **1**-**255**)
 - **Gerekli parola türü**: Cihazda ayarlanması gereken parola türünü seçin. Aşağıdakilerden birini seçin:
   - **Cihaz varsayılanı**
   - **Düşük güvenlik biyometriği**
