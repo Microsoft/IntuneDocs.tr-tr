@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967398516cdc2f727aa517fed3c8cf65810a38a1
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251217"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298414"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Windows 10 cihazlarda ıntune'da PowerShell betiklerini kullanın
 
@@ -61,8 +61,12 @@ Intune yönetim uzantısı, aşağıdaki önkoşulları vardır. Bunlar sağland
     
     - Kullanıcı cihazda kullanıcı Azure AD hesabı kullanarak oturum açtığında ve ardından Intune'a kaydedilir.
 
-  - Configuration Manager ve Intune kullanan ortak yönetilen cihazlar. Bkz: [ortak yönetim nedir](https://docs.microsoft.com/sccm/comanage/overview) Kılavuzu.
-
+  - Configuration Manager ve Intune kullanan ortak yönetilen cihazlar. Mutlaka **istemci uygulamaları** iş yükü kümesine **Pilot Intune'u** veya **Intune**. Aşağıdaki yönergeler için bkz: 
+  
+    - [Ortak yönetimi nedir](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [İstemci uygulamalar iş yükü](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Configuration Manager iş yüklerinin Intune'a geçişi](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
 > [!TIP]
 > Cihazlardır mutlaka [katılmış](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) Azure AD'ye. Yalnızca cihazlar [kayıtlı](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) Azure AD'de betiklerinizi almazsınız.
 

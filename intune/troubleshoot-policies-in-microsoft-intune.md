@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402656"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298390"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>İlkeler ve Profiller sorun giderme ve ıntune
 
 Microsoft Intune yerleşik bazı sorun giderme özellikleri içerir. Uyumluluk ilkeleri ve yapılandırma profillerini, ortamınızdaki gidermenize yardımcı olması için bu özellikleri kullanın.
 
 Bu makalede bazı genel sorun giderme teknikleri listeler ve karşılaşabileceğiniz bazı sorunlar açıklanmaktadır.
+
+## <a name="check-tenant-status"></a>Kiracı durumu denetleyin
+Denetleme [Kiracı durumu](tenant-status.md) ve aboneliğin etkin olduğunu onaylayın. Etkin olaylar ve ilke veya profili dağıtımınızı etkileyebilecek önerileri ayrıntılarını da görüntüleyebilirsiniz.
 
 ## <a name="use-built-in-troubleshooting"></a>Yerleşik sorun giderme kullanın
 
@@ -113,6 +116,13 @@ Bu makalede bazı genel sorun giderme teknikleri listeler ve karşılaşabilece�
 > [!NOTE]
 > Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, daha kısıtlayıcı olan ilke uygulanır.
 
+## <a name="policy-troubleshooting-resources"></a>İlke sorun giderme kaynakları
+
+- [İOS veya Android ilkeleri cihazlara uygulama değil sorun giderme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (başka bir Microsoft sitesi açılır)
+- [Windows 10 Intune İlkesi hatalarında sorun giderme](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (blog açılır)
+- [CSP özel ayarlar Windows 10 için sorun giderme](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (başka bir Microsoft sitesi açılır)
+- [Windows 10 Grup İlkesi vs Intune MDM İlkesi](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (başka bir Microsoft sitesi açılır)
+
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Uyarı: Erişim kuralları Exchange'e kaydedilemedi
 
 **Sorunu**: Uyarı aldığınız **erişim kuralları Exchange'e oldu** yönetim konsolundaki.
@@ -125,11 +135,13 @@ Bu makalede bazı genel sorun giderme teknikleri listeler ve karşılaşabilece�
 
 Windows Phone cihazları, bunları ayarladıktan sonra azaltılmasına için MDM veya EAS kullanarak ayarlamış güvenlik ilkelerinin izin vermez. Örneğin, bir **parolanın karakter sayısı alt sınırı** 8 ve sonra bunu 4'e indirmeyi deneyin. Daha kısıtlayıcı bir ilke cihaza uygulanır.
 
+Windows 10 cihazları (durdurma dağıtımı) ilke ataması, güvenlik ilkelerini kaldıramaz. Atanan ilkesini bırakın ve ardından varsayılan değerlere güvenlik ayarlarını değiştirmek gerekebilir.
+
 Cihaz platformuna bağlı olarak, ilkeyi daha az güvenli bir değerle değiştirmek isterseniz, güvenlik ilkelerini sıfırlamanız gerekebilir.
 
-Örneğin Windows’da, masaüstünde sağdan içeri doğru çekerek **Düğmeler** çubuğunu açın. Seçin **ayarları** > **Denetim Masası** > **kullanıcı hesaplarını**. Sol taraftaki **Güvenlik İlkelerini Sıfırla**’yı seçin ve **İlkeleri Sıfırla**’ya tıklayın.
+Örneğin, Windows 8.1, masaüstünde, açmak için sağdan içeri doğru kaydırın **düğmeler** çubuğu. Seçin **ayarları** > **Denetim Masası** > **kullanıcı hesaplarını**. Sol taraftaki **Güvenlik İlkelerini Sıfırla**’yı seçin ve **İlkeleri Sıfırla**’ya tıklayın.
 
-Android, iOS ve Windows Phone 8.1 gibi diğer MDM cihazlarında, devre dışı bırakılması ve daha az kısıtlayıcı bir ilkeyi uygulayabilmeniz için kaydedilmesi gerekebilir.
+Android, iOS ve Windows Phone 8.1 gibi diğer platformlarda devre dışı bırakılması ve daha az kısıtlayıcı bir ilkeyi uygulayabilmeniz için kaydedilmesi gerekebilir.
 
 [Cihaz kaydıyla ilgili sorunları giderme](troubleshoot-device-enrollment-in-intune.md) iyi bir kaynak olabilir.
 
@@ -160,6 +172,7 @@ Android, iOS ve Windows Phone 8.1 gibi diğer MDM cihazlarında, devre dışı b
 Yerel sistemdeki saat beş dakika veya daha fazla farklı ise bu hata oluşur. Yerel bilgisayardaki saat eşitleme dışı ise zaman damgaları geçersiz olduğundan güvenli işlemler başarısız.
 
 Bu sorunu çözmek için yerel sistem saatini Internet saatine mümkün olduğunca kapatmak ayarlayın. Veya, ağdaki etki alanı denetleyicilerinde zamana ayarlayın.
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
