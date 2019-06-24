@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 43dc353da9aee9e2cdf7797f39746666a72d6880
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251186"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316944"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker'ı ve cihaz şifreleme izleyin  
 Intune, Windows 10 cihazlarınızın şifreleme durumunu belirlemek için merkezi bir konum sağlayan ve BitLocker için önemli bilgiler, Azure Active Directory (Azure AD) bulunan cihazlardan erişim yardımcı olur.  
@@ -51,7 +51,7 @@ Rapor görüntüler **cihaz adı** her hakkında üst düzey ayrıntılar ve Win
   - **Hazır değil**: Cihaz tam şifreleme yeteneği yoktur, ancak yine de şifrelemeyi destekleyen. Örneğin, cihazı el ile bir kullanıcı tarafından veya bir TMP şifrelemeye izin vermek için ayarlayabileceğiniz bir Grup İlkesi aracılığıyla şifrelenebilir.
   - **Uygulanamaz**: Bu cihaz sınıflandırmak için yeterli bilgi yok.  
 
-- **Şifreleme durumu** – işletim sistemi sürücüsünü şifrelenmiş olsun.  
+- **Şifreleme durumu** – işletim sistemi sürücüsünü şifrelenmiş olsun. 
 
 
 ### <a name="device-encryption-status"></a>Cihaz şifreleme durumu
@@ -60,7 +60,7 @@ Bir cihaz seçtiğinizde, Intune görüntüler **cihaz şifreleme durumu** bölm
 Bu bölme aşağıdaki ayrıntıları sağlar:  
 - **Cihaz adı** – görüntülemekte olduğunuz cihazın adı.  
 - **Şifreleme hazırlık** - BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Bir cihaz bir şifreleme durumunu olabilir *şifreli* kendi şifreleme hazırlık olsa bile *hazır değil*, TPM eksik olduğundan. (Daha fazla ayrıntı için önceki bölümde şifreleme hazırlık bakın.)
-- **Şifreleme durumu** - işletim sistemi sürücüsünü şifrelenmiş olsun.  
+- **Şifreleme durumu** - işletim sistemi sürücüsünü şifrelenmiş olsun. Uygulamanın, Intune cihaz şifreleme durumu veya durumu değişiklik bildirimi başlamak 24 saate kadar sürebilir.  
 - **Profilleri** – listesini *cihaz Yapılandırması* profilleri bu cihaza uygulanır ve aşağıdaki profil türü ve ayarları içerir:  
   - Profil türü = *uç nokta koruması*  
   - Ayarlar > Windows şifreleme > cihazlar şifreleme = *gerekli*  
