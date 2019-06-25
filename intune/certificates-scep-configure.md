@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/13/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd48e7c83af0a786e1b34f91c05e95a5d47f3d45
-ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141813"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344080"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -508,6 +508,7 @@ Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz ön�
 
     > [!NOTE]
     > iOS’ta aynı sertifika profilini kullanan birden fazla kaynak profili dağıtırsanız, yönetim profilinde bu sertifikanın birden çok kopyasını görmeniz olasıdır.
+- Ortak yönetim için Intune ve Configuration Manager, Configuration Manager s'te kullanıyorsanız[et iş yükü kaydırıcıyı](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) için *kaynak erişim ilkesi* için **Intune** veya  **Intune Pilot**. Bu ayar Windows 10 istemcileri sertifikası isteme işlemini başlatmak sağlar.  
 
 Profillerin nasıl atanacağı hakkında bilgi için bkz. [cihaz profilleri atama](device-profile-assign.md).
 
