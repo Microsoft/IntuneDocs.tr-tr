@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62555e9b5a868b93dda08a8c784221eff570bb89
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: 756fafc02a6d64b1495a838ab8eee4130ee77361
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263739"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389349"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -53,7 +53,7 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 
 <!-- ########################## -->
 
-## <a name="week-of-june-10-2019"></a>10 Haziran 2019 haftası 
+## <a name="week-of-june-17-2019"></a>17 Haziran 2019 haftası   
 
 ### <a name="app-management"></a>Uygulama yönetimi
 
@@ -63,8 +63,11 @@ Android için yeni özellikler Intune uygulama (Önizleme) ekledik. Tam olarak y
 * Görüntüleyin ve yönetin Intune Şirket portalı ya da Microsoft Intune uygulama üzerinden kayıtlı cihazlar.    
 * Kuruluşlarında desteğine başvurun.    
 * Geribildirimler, Microsoft'a gönderin.    
-* Görüntülerseniz hüküm ve koşullar ve kuruluşun ayarlayın.    
+* Görüntülerseniz hüküm ve koşullar ve kuruluşun ayarlayın.  
 
+## <a name="week-of-june-10-2019"></a>10 Haziran 2019 haftası 
+
+### <a name="app-management"></a>Uygulama yönetimi  
 
 #### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Yeni örnek uygulamalar Github'da kullanılabilir Intune SDK'sı tümleştirmesi gösteriliyor <!-- 2653471 -->
 GitHub hesabı msintuneappsdk iOS (Swift), Android, Xamarin.iOS, Xamarin Forms ve Xamarin.Android için yeni örnek uygulamalar eklemiştir. Bu uygulamalar, mevcut belgelerimize desteklemek ve Intune uygulama SDK'sı kendi mobil uygulamalarınızla nasıl tümleştireceğinizi nasıl gösterimlerine sağlamak için yöneliktir. Ek Intune SDK'sı Kılavuzu gerektiren bir uygulama geliştiricisiyseniz, aşağıdaki bağlantılı örneklere bakın:

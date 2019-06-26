@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819585"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389254"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows cihazlar için Intune kayıt yöntemleri
 
@@ -51,6 +51,7 @@ Yöneticiler, kullanıcı etkileşimi gerektiren aşağıdaki yöntemlerini kay�
 - [Configuration Manager ikincil Yönetimi](https://docs.microsoft.com/sccm/comanage/overview) mevcut Configuration Manager ile yönetilen cihazlarını Intune ile Configuration Manager'ın çift avantajlarından yararlanabilmek için ıntune'a yöneticilerin sağlar. 
 - [Cihaz kayıt Yöneticisi](device-enrollment-manager-enroll.md) (DEM), bir özel hizmet hesabıdır. DEM hesapları, şirkete ait birden çok cihazı kaydetmek ve yönetmek, yetkili kullanıcıların izinlere sahip. Bu tür cihazlar örneğin satış noktası veya yardımcı uygulamalara uygundur ancak e-postaya veya şirket kaynaklarına erişmesi gereken kullanıcılar için uygun değildir. Bu yöntem, koşullu erişim gibi özellikleri izin vermez. 
 - [Toplu kayıt](windows-bulk-enroll.md) yetkili bir kullanıcı Azure Active Directory ve Intune'a yeni cihazları şirkete ait çok sayıda katılmasını sağlar. Windows yapılandırma Tasarımcısı (WCD) uygulaması ile bir sağlama paketi oluşturun. Ardından, USB kullanarak ilk Windows OOBE sırasında medya deneyimi veya var olan Windows Bilgisayardan, otomatik olarak cihazlarını Intune'a kaydetmeleri için sağlama paketi yükleyin. Bu yöntem koşullu erişim kullanılmasına izin vermez. 
+- [Windows IOT Core cihazları kaydetmenin](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) panoyu Windows IOT Core cihazı hazırlamak için kullanarak ve ardından bir sağlama paketi oluşturmak için Windows yapılandırma Tasarımcısı kullanarak gerçekleştirilir. Ardından, ilk önyükleme sırasında SD kart medya kullanarak, onu otomatik olarak cihazlarını Intune'a kaydetmeleri için sağlama paketi yükler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

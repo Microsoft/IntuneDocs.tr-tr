@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cb9d1f52ccb147dc9a412f3cb7b601e3b18f214a
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050346"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389329"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot'ı kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -32,7 +32,7 @@ Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopi
 Başarılı bir şekilde yapılandırmak, [hibrit Azure AD'ye katılmış cihazları](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Mutlaka [cihaz kaydınızı doğrulayın]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) Get-MsolDevice cmdlet'ini kullanarak.
 
 Kaydedilecek cihazlar ayrıca:
-- [Ekim 2018 güncelleştirmesiyle](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/) Windows 10 çalıştırmalıdır.
+- Windows 10 v1809 çalışan veya büyük.
 - İnternet erişimine sahip olmalıdır.
 - Active Directory'niz (şu anda desteklenmeyen VPN bağlantısı) erişebilir.
 - Kullanıma hazır deneyimi (OOBE) geçeriz.
@@ -68,7 +68,7 @@ Bilgisayarlar oluşturma hakkı verilmiş bir kuruluş birimi eşleşmesi gereki
 - Etki alanına profilinde girilen kuruluş birimi.
 - Hiçbir profili seçilmişse, bilgisayarın etki alanına etki alanınız için ad.
 
-1. Açık **Active Directory Kullanıcıları ve Bilgisayarları (DSA.msc)**.
+1. Açık **Active Directory Kullanıcıları ve Bilgisayarları (DSA.msc)** .
 
 1. Azure karma oluşturmak için kullanacağınız kuruluş birimini sağ AD alanına katılmış bilgisayarları ve ardından **denetim temsilcisi**.
 
@@ -106,7 +106,7 @@ Bilgisayarlar oluşturma hakkı verilmiş bir kuruluş birimi eşleşmesi gereki
 Active Directory için Intune bağlayıcısını Windows Server 2016 çalıştıran bir bilgisayarda yüklü veya üzeri olmalıdır. Bilgisayarın ayrıca internet ve Active Directory erişimi olmalıdır. Birden fazla Active Directory etki alanını desteklemek üzere ölçek ve kullanılabilirliği artırmak için ortamınıza birden fazla bağlayıcı yükleyebilirsiniz. Diğer Intune bağlayıcılar çalışmıyor bir sunucuda bağlayıcı yüklemeniz önerilir.
 
 1. Bir dil paketi yüklü ve açıklandığı gibi yapılandırılmış olduğundan emin olun [Intune Bağlayıcısı (Önizleme) dil gereksinimleri](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
-2. İçinde [Intune](https://aka.ms/intuneportal)seçin **cihaz kaydı** > **Windows kayıt** > **için Active Directory (Intune Bağlayıcısı Önizleme)** > **bağlayıcı Ekle**. 
+2. İçinde [Intune](https://aka.ms/intuneportal)seçin **cihaz kaydı** > **Windows kayıt** > **için Active Directory (Intune Bağlayıcısı Önizleme)**  > **bağlayıcı Ekle**. 
 3. Bir bağlayıcı indirmek için yönergeleri izleyin.
 4. İndirilen bağlayıcı Kurulumu dosyasını açın *ODJConnectorBootstrapper.exe*Bağlayıcısı'nı yüklemek için.
 5. Kurulum sonunda seçin **yapılandırma**.
@@ -176,7 +176,7 @@ Sonra Autopilot cihazlar, *kayıtlı*, dört yerde görüntülenir:
 - **Azure AD tüm cihazlar** Azure portalında Azure Active Directory bölmesinde. Seçin **cihazları** > **tüm cihazlar**.
 - **Tüm cihazlar** Azure portalında ıntune bölmesi. Seçin **cihazları** > **tüm cihazlar**.
 
-Autopilot cihazlarınızı kaydettikten sonra cihazın ana bilgisayar adlarını olur. Varsayılan olarak, ana bilgisayar adı ile başlayan. *Masaüstü -*.
+Autopilot cihazlarınızı kaydettikten sonra cihazın ana bilgisayar adlarını olur. Varsayılan olarak, ana bilgisayar adı ile başlayan. *Masaüstü -* .
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Bir Autopilot dağıtım profili oluşturma ve atama
@@ -185,7 +185,7 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 1. İçinde [Intune](https://aka.ms/intuneportal)seçin **cihaz kaydı** > **Windows kayıt** > **dağıtım profilleri**  >  **Profili oluşturma**.
 1. Tür a **adı** ve isteğe bağlı olarak bir **açıklama**.
 1. İçin **dağıtım modu**seçin **kullanıcı temelli**.
-1. İçinde **Azure AD'ye Katıl** kutusunda **hibrit Azure AD'ye katıldı (Önizleme)**.
+1. İçinde **Azure AD'ye Katıl** kutusunda **hibrit Azure AD'ye katıldı (Önizleme)** .
 1. Seçin **ilk çalıştırma deneyimi (OOBE)** gerektiği gibi seçenekleri yapılandırın ve ardından **Kaydet**.
 1. Profili oluşturmak için **Oluştur**'u seçin. 
 1. Profil bölmesinde seçin **atamaları**.
@@ -209,7 +209,7 @@ Değiştirmek bir cihaz profili durumu için yaklaşık 15 dakika sürer *atanma
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
    - **Açıklama**: Profil için açıklama girin.
    - **Platform**: Seçin **Windows 10 ve üzeri**.
-   - **Profil türü**: Seçin **etki alanına (Önizleme)**.
+   - **Profil türü**: Seçin **etki alanına (Önizleme)** .
 1. Seçin **ayarları**ve ardından bir **bilgisayar adı ön eki**, **etki alanı adı**ve (isteğe bağlı) **kuruluş birimi** içinde[DN biçiminde](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Seçin **Tamam** > **oluşturma**.  
     Profil oluşturulur ve listede görüntülenir.
