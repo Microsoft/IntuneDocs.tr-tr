@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234979"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403087"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -57,7 +57,16 @@ Bu ayarları kullanın [ApplicationManagement ilke CSP](https://docs.microsoft.c
 - **Uygulama verilerini sistem birimine Yükle**: **Blok** uygulamaların cihazın sistem birimine veri depolama durdurur. **Yapılandırılmamış** (varsayılan), sistem diski biriminde verileri depolamak, uygulamaların verir.
 - **Uygulamaları sistem sürücüsüne Yükle**: **Blok** uygulamaların cihazın sistem sürücüsünde yüklenmesini de önler. **Yapılandırılmamış** (varsayılan), uygulamaların sistem sürücüsüne yükle izin verir.
 - **Oyun DVR** (yalnızca Masaüstü): **Blok** Windows kaydı ve yayın oyun devre dışı bırakır. **Yapılandırılmamış** (varsayılan), kayıt ve oyun yayın sağlar.
-- **Uygulamaları yalnızca mağazadan**: **Gerekli** yalnızca Windows App Store uygulamaları yüklemek için son kullanıcıların zorlar. **Yapılandırılmamış** son kullanıcıların Windows App Store dışındaki yerlerden uygulama yükleyip olanak tanır.
+- **Sadece mağazadan uygulamalar**: Bu ayar, kullanıcıların Microsoft Store dışındaki yerlerden uygulama yükleyip zaman kullanıcı deneyimini belirler. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Son kullanıcıların diğer ilke ayarları'nda tanımlanan uygulamaları dahil olmak üzere Microsoft Store dışındaki yerlerden uygulama yükleyip olanak tanır.  
+  - **Her yerden**: Uygulama önerileri devre dışı bırakır ve kullanıcıların herhangi bir konumdan uygulama yüklemek verir.  
+  - **Yalnızca Store**: Yalnızca Microsoft Store uygulamaları yüklemek için son kullanıcıların zorlar.
+  - **Öneriler**: Microsoft Store içinde kullanılabilir olan Web uygulama yüklerken, kullanıcılar, mağaza'dan indirin öneren bir ileti görür.  
+  - **Store tercih**: Uygulamaları Microsoft Store dışındaki yerlerden uygulama yüklediklerinde kullanıcıları uyarır.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Güncelleştirme Hatası uygulamalarını yeniden başlatmaya zorla**: Uygulama kullanılırken, güncelleştirilmeyebilir. Bir yeniden başlatmaya zorlamak için bu ayarı kullanın. **Yapılandırılmamış** (varsayılan), uygulamaları yeniden başlatmak için zorlama değil. **Gerekli** yöneticilerin belirli bir tarih ve saat veya yinelenen bir zamanlamaya göre yeniden başlatmaya zorla olanak sağlar. Ayarlandığında **gerektiren**, ayrıca girin:
 
   - **Başlangıç tarihi/saati**: Uygulamaları yeniden başlatmak için belirli bir tarih ve saat seçin.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040651"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403587"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Güvenlik temeli ve Microsoft Intune profillerini izleme  
 
@@ -34,7 +34,7 @@ Bu makalede her iki izleme çalışma seçeneklerde gösterilmektedir.
 
 Temel izlerken, cihazlarınızı Microsoft önerilerine göre güvenlik durumu hakkında bilgi edinme. Bu güvenlik temelinin genel bakış bölmesinin ınsights'tan Intune konsolunda görüntüleyebilirsiniz.  Verilerin bir taban çizgisi atadıktan sonra görünmesi 24 saate kadar sürer. Sonraki değişiklikler görüntülenmesi altı saat olur.  
 
-Taban çizgisi ve aygıtları için izleme verilerini görüntülemek için oturum açın [Intune portalı](https://go.microsoft.com/fwlink/?linkid=2090973). Ardından, **cihaz güvenliği** > **güvenlik temellerini (Önizleme)** seçin bir taban çizgisi ve Görünüm **genel bakış** bölmesi.
+Taban çizgisi ve aygıtları için izleme verilerini görüntülemek için oturum açın [Intune portalı](https://go.microsoft.com/fwlink/?linkid=2090973). Ardından, **cihaz güvenliği** > **güvenlik temellerini**seçin bir taban çizgisi ve Görünüm **genel bakış** bölmesi.
 
 **Genel bakış** bölmesinde, durumunu izlemek için iki yöntem sunar:
 - **Cihaz görünümünü** – her bir durum kategorisi taban çizgisi için kaç cihazın bulunan bir özeti.  

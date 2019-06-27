@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 468eabc9acc8f0f65125f81a0f7f67eede361755
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66828940"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402637"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
 Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
@@ -37,10 +37,9 @@ Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
 
     * **Giriş**: Kuruluşunuzun öne çıkan uygulamalar listesinden seçin.  
     * **Tümünü Göster**: Gelen **giriş sayfası** > **uygulamaları** bölümünde **Tümünü Göster** tüm kullanılabilir uygulamaları görmek için.  
-    * **Tüm uygulamalar**: Bu sayfa, yüklü ve öne çıkan dahil olmak üzere tüm kullanılabilir uygulamaları görmek için Gezinti bölmesinde seçin.  
+    * **Tüm uygulamalar**: Bu sayfa, yüklü ve öne çıkan dahil olmak üzere tüm kullanılabilir uygulamaları görmek için Gezinti bölmesinde seçin. Görüntüleme, sıralama ve filtre uygulamalar. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
     * **Uygulama kategorileri**: Gezinti bölmesinde, tür veya işlev göre uygulamaları seçmek için bu sayfayı seçin. Uygulamaları sıralanır kategoriler altında gibi **öne çıkan**, **eğitim**, ve **üretkenlik**.  
     * **Uygulama arama**: Statik Arama çubuğuna uygulamanın Gezinti Bölmesi'nde bulunur.  Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
-    * **Tüm uygulamalar**: Görüntüleme, sıralama ve tüm kullanılabilir uygulamaları filtreleyin. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
 
 3. Bir uygulama seçin.   
 4. Uygulama ayrıntıları sayfasında **Yükle**'ye tıklayın. Yükleme tamamlandıktan sonra **Yüklendi** durumunu göreceksiniz.  
@@ -51,7 +50,7 @@ Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
 
  Şirketinizin büyüklüğüne bağlı olarak Şirket Portalı'nda indirilebilecek birden fazla Office sürümü görebilirsiniz. Windows cihazları için Office paketi hakkında daha ayrıntılı bilgi için bkz. [Windows cihazınıza Office 365 yükleme](./install-office-windows.md).
 
-## <a name="share-apps-with-others"></a>Uygulamaları başkalarıyla paylaşma  
+## <a name="share-apps"></a>Uygulamaları paylaşma  
 Uygulamaları iş veya okuldaki tanıdığınız kişilerle paylaşın veya bu kişilere önerin. Aşağıdaki adımlar bir bağlantıyı doğrudan Şirket Portalı'ndan nasıl paylaşabileceğinizi anlatmaktadır.
 
 1. Şirket Portalı'nda, bir uygulamanın [bağlam menüsünü](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) açmak için üzerine sağ tıklayın veya simgeyi basılı tutun.  
@@ -65,15 +64,14 @@ Uygulamaları iş veya okuldaki tanıdığınız kişilerle paylaşın veya bu k
 
 Paylaşmadan sonra alıcı bir bağlantı ve uygulama ayrıntılarını görüntülemek için bir ileti alır. Bağlantı Şirket Portalı **Uygulama ayrıntıları** sayfasını açar. 
 
-## <a name="available-apps"></a>Kullanılabilir uygulamalar  
+## <a name="available-and-required-apps"></a>Gerekli ve kullanılabilir uygulamalar
+Uygulamaların size kuruluşunuz tarafından atanan ve şirket Portalı'nda etiketlenmiş **kullanılabilir** veya **gerekli**. 
 
-Kuruluşunuz sizin için işe veya okula uygun ve kullanışlı uygulamalar seçer. Bu uygulamalar, şirket Portalı'nda bulabilirsiniz yalnızca olanlardır.  
+* Kullanılabilir uygulamalar: Bu uygulamalar, kuruluşunuz tarafından seçilir ve iş veya Okul için uygun ve kullanışlı. İsteğe bağlı oldukları yükleyin ve yalnızca uygulamaları yüklemek için şirket Portalı'nda bulabilirsiniz. 
 
-Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, Windows için Şirket portalı uygulamasını kullanıyorsanız, Windows uygulamaları, ancak iOS uygulamaları için erişim gerekir.  
+* Gerekli uygulamaları: Bu uygulamalar, iş ve Okul için gerekli olan ve doğrudan cihazınıza dağıtılır. Bu uygulamalar otomatik olarak sizin için müdahalesi olmadan yüklenir. 
 
-## <a name="required-apps"></a>Gerekli uygulamalar  
-
-Kuruluşunuz, cihazınıza bazı uygulamaları dağıtma ve olarak işaretlerken **gerekli**. Bu uygulamalar otomatik olarak sizin için müdahalesi olmadan yüklenir.
+Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, Windows için Şirket portalı uygulamasını kullanıyorsanız, Windows uygulamaları, ancak iOS uygulamaları için erişim gerekir.
 
 ## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek  
 Uygulama gerekiyor, ancak şirket portalında görmüyorum varsa, bu istek. İletişim ayrıntılarını bulun, **Yardım Masası** Şirket portalı uygulamasında Yardım ve Destek sayfasında. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).    

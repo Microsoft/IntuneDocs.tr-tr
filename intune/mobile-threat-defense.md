@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74050f51347f234029a83ce0e3463fe6b11aee1b
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044570"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407165"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi nedir?
 Intune uyumluluk ilkeleri ve koşullu erişim kurallarınız için bilgi kaynağı olarak bir Mobile Threat Defense satıcınızdan verilerini tümleştirebilirsiniz. Ele geçirilen mobil cihazlardan erişimi engelleyerek Exchange ve SharePoint gibi şirket kaynaklarını korumaya yardımcı olmak için bu bilgileri kullanabilirsiniz.  
@@ -80,4 +80,4 @@ Cihaz, ağ ve uygulama riskine dayalı olarak şirket kaynağına erişimi korum
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
 - [Sophos mobil](sophos-mtd-connector.md)
-- Wandera (ayrıntıları çok yakında)
+- [Wandera mobil tehdit savunması](wandera-mtd-connector.md)

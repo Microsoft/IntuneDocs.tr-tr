@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3e24bd79fbceba1834d02af8512e5dd52676d471
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050206"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403312"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Intune yazılım istemcisi çalıştıran Windows bilgisayarlarına uygulama ekleme
 
@@ -77,7 +77,7 @@ Aşağıdaki yordamı izleyerek uygulamanın özelliklerini yapılandırmak ve u
 5. **Algılama kuralları** sayfasında yapılandırmakta olduğunuz uygulamanın bir bilgisayarda zaten yüklü olup olmadığını algılamak için kurallar yapılandırabilirsiniz. Veya varsayılan algılama kurallarını, önceden yüklenmiş tüm uygulama sürümlerinin otomatik olarak üzerine yazılması için kullanabilirsiniz. Bu seçenek Windows Installer içindir (yalnızca .exe dosyaları).
 
    Yapılandırabileceğiniz kurallar şunlardır:
-   - **Dosya var**. Algılanmasını istediğiniz dosyanın yolunu belirtin. Bu yolu bilgisayarda **%ProgramFiles%** altında arayabileceğiniz gibi (**Program Files**\&lt;path&gt; ve **Program Files (x86)**\&lt;path&gt; altında arar), ya da **%SystemDrive%** altında da arayabilirsiniz (bilgisayarın kök sürücüsünde, genellikle C sürücüsü altında arar).
+   - **Dosya var**. Algılanmasını istediğiniz dosyanın yolunu belirtin. Bu yolu bilgisayarda **%ProgramFiles%** altında arayabileceğiniz gibi (**Program Files**\&lt;path&gt; ve **Program Files (x86)** \&lt;path&gt; altında arar), ya da **%SystemDrive%** altında da arayabilirsiniz (bilgisayarın kök sürücüsünde, genellikle C sürücüsü altında arar).
    - **MSI ürün kodu var**. **Gözat**’ı seçerek algılamak istediğiniz Windows Installer (.msi) dosyasını seçin.
    - <strong>Kayıt defteri anahtarı var</strong>. <strong>HKEY_LOCAL_MACHINE\</strong> ile başlayan bir kayıt defteri anahtarı belirtin. Hem 32 bit hem de 64 bit kayıt defteri yollarında arama yapılır. Belirttiğiniz anahtar iki konumdan birinde varsa, algılama kuralına uyulmuş olur.
 
@@ -103,4 +103,4 @@ Uygulama, **Uygulamalar** çalışma alanının **Uygulamalar** düğümünde g�
 
 Bir uygulama oluşturduktan sonra, sonraki adım uygulamayı dağıtmaktır. Daha fazla bilgi edinmek için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md).
 
-İpuçları ve püf noktaları, Windows bilgisayarlara yazılım dağıtma hakkında daha fazla bilgi okumak istiyorsanız, blog gönderisine bakın [destek İpucu: Intune yazılım dağıtımı için için en iyi uygulamalar](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
+İpuçları ve püf noktaları, Windows bilgisayarlara yazılım dağıtma hakkında daha fazla bilgi okumak istiyorsanız, blog gönderisine bakın [destek İpucu: Intune yazılım dağıtımı için için en iyi uygulamalar](https://support.microsoft.com/en-US/help/2583929).

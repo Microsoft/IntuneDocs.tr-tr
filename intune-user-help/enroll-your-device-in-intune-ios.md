@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196870"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402686"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Şirket kaynaklarınıza iOS cihaz erişimi ayarlayın  
 
@@ -59,15 +59,15 @@ Kayıt sırasında birkaç dakika duraklatma kapatın veya Kurulumu sonlandırma
 
 1. Şirket portalı ve iş veya Okul hesabınızla oturum açın. 
 
-    ![Örnek Şirket portalı uygulamasının, oturum açma ekran görüntüsü.](./media/ios-01-cp-enroll-1903.PNG)  
+    ![Örnek Şirket portalı uygulamasının, oturum açma ekran görüntüsü.](./media/ios-01-cp-enroll-1904.PNG)  
 
 2. Şirket portalı bildirimleri almak isteyip istemediğiniz sorulduğunda dokunun **izin.** Şirket portalı bildirimleri gibi cihaz ayarlarınızı güncelleştirilmesi gerekiyorsa, sizi uyarmak için kullanır. 
 
-    ![Şirket portalı giriş sayfasının "Bildirimler" istemi örnek ekran görüntüsü.](./media/ios-04-cp-enroll-1903.PNG)  
+    ![Şirket portalı giriş sayfasının "Bildirimler" istemi örnek ekran görüntüsü.](./media/ios-02-cp-enroll-1904.PNG)  
 
 3. Üzerinde **erişimi ayarlama** ekranındayken **başlayın.**  
 
-     ![Örnek Şirket portalı, "erişim ayarlama" ekran görüntüsü.](./media/ios-05-cp-enroll-1903.PNG)  
+     ![Örnek Şirket portalı, "erişim ayarlama" ekran görüntüsü.](./media/ios-03-cp-enroll-1904.PNG)  
 
 4. Kuruluşunuz görebileceği ve göremeyeceği cihaz bilgilerini listesi üzerinden okuyun. Ardından dokunun **devam**.  
 
@@ -87,7 +87,7 @@ Kayıt sırasında birkaç dakika duraklatma kapatın veya Kurulumu sonlandırma
 
 7. iOS 12.2 ve üzeri içindir: Şirket portalı'nı açmak isteyip istemediğiniz sorulduğunda dokunun **açın**. **Yönetim profilini yükleme** ekran profili yüklemek için adımları listeler.
 
-    ![Örnek Şirket portalı, yönetim profilini yükleme ekran görüntüsü.](./media/ios-1904-settings-icon.PNG)  
+    ![Örnek Şirket portalı, yönetim profilini yükleme ekran görüntüsü.](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. Ayarlar uygulamasına gidip dokunun **profilinin indirilip**.  
 
@@ -99,24 +99,24 @@ Kayıt sırasında birkaç dakika duraklatma kapatın veya Kurulumu sonlandırma
     
 10. Cihaz parolanızı girin. Ardından dokunun **yükleme**.    
 
-    ![Örnek ekran ayarlar uygulamasının, yükleme profili ekranında, bir imleç üzerinde ** yükle ** düğmesine.](./media/ios-1904-password-install.PNG)  
+    ![Örnek ekran ayarlar uygulamasının, yükleme profili ekranında, bir imleç üzerinde ** yükle ** düğmesine.](./media/ios-10-cp-enroll-1904.PNG)  
 
 
 11. Sonraki ekranda, cihaz yönetimi için standart sistem bir uyarıdır. Yüklemeye devam etmek için dokunun **yükleme**. Uzaktan yönetime güvenin istenirse dokunun **güven**.  
 
-    ![Örnek ekran ayarlar uygulamasında, kök sertifika ve mobil cihaz yönetimi için standart sistem uyarı ekranı.](./media/ios-15-cp-enroll-1903.PNG)  
+    ![Örnek ekran ayarlar uygulamasında, kök sertifika ve mobil cihaz yönetimi için standart sistem uyarı ekranı.](./media/ios-11-cp-enroll-1904.PNG)  
 
 12. Yükleme tamamlandıktan sonra dokunun **Bitti**. Profilin yüklendiğini doğrulamak için Git **profiller ve cihaz Yönetimi** ayarları. Altında listelenen profili görmelisiniz **mobil cihaz Yönetimi**.   
 
-    ![Örnek uygulamasının ekran görüntüsü ayarları, Profiller ve cihaz yönetimi ayarları, yönetim profili gösteriliyor.](./media/ios-00-cp-enroll-1903.PNG)  
+    ![Örnek uygulamasının ekran görüntüsü ayarları, Profiller ve cihaz yönetimi ayarları, yönetim profili gösteriliyor.](./media/ios-12-cp-enroll-1904.PNG)  
 
 13. Şirket portalı uygulamasını döndürür. Şirket portalı, eşitleme ve Cihazınızı ayarlamak başlar. Şirket portalı ek cihaz ayarları güncelleştirmek için isteyebilir. Dokunun varsa **devam**.  
 
-    ![Örnek ekran Şirket portalı, gereksinim ayarı yanındaki sarı üçgen ile "erişimi ayarlama" ekran görüntüsü.](./media/ios-12-cp-enroll-1903.PNG)  
+    ![Örnek ekran Şirket portalı, gereksinim ayarı yanındaki sarı üçgen ile "erişimi ayarlama" ekran görüntüsü.](./media/ios-13-cp-enroll-1904.PNG)  
 
 14. Listedeki tüm öğeler yeşil bir daire gösterdiğinizde bu kurulumu tamamlanmadı anlarsınız. **Bitti**’ye dokunun.   
     
-    ![Örnek ekran şirket Portalı'nın "her şey Tamam!" Tüm yeşil daire gösteren ekran.](./media/ios-13-cp-enroll-1903.PNG)  
+    ![Örnek ekran şirket Portalı'nın "her şey Tamam!" Tüm yeşil daire gösteren ekran.](./media/ios-14-cp-enroll-1904.PNG)  
 
 > [!Note]
 > Kuruluşunuz, ses ve veri sınırları izler veya şirkete bir cihazla sağlar, tamamlanması için birkaç adım daha olabilir. Yüklemek için istenirse **Datalert** uygulaması, bakın [Cihazınızı telekomünikasyon gider yönetimine kaydetme](enroll-your-device-with-telecom-expense-management-ios.md). Kuruluşunuzun Apple aygıt kayıt programı bir parçası olup olmadığını öğrenmek [şirkete Cihazınızı kaydetmek nasıl](enroll-your-device-dep-ios.md).  

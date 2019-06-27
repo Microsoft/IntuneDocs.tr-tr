@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56bbe6d8af43693814a90351acb2f400cff92025
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3cc84d8215a841b9ff8a70a6b6307d3452696cb0
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047008"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402993"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune’da yazılım güncelleştirmeleri ile Windows bilgisayarlarını güncel tutma
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> Bu konudaki bilgiler, yalnızca Intune yazılım istemcisini kullanarak bilgisayar olarak yönettiğiniz Windows masaüstü cihazlar için geçerlidir. Bkz yönetmek istiyorsanız, Windows bilgisayarları için güncelleştirmeleri mobil cihaz olarak kaydedilen [ıntune'da yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md).
 
 Microsoft Intune, en son düzeltme eki ve yazılım güncelleştirmelerinin hızla yüklenmesini sağlayan yazılım güncelleştirmelerinin yönetilmesi de dahil olmak üzere çeşitli yollarla yönetilen bilgisayarlarınızı korumanıza yardımcı olabilir.
 

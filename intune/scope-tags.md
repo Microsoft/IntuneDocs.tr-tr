@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045186"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403775"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanmak BT
 
@@ -38,12 +38,14 @@ Doğru yöneticileri sağ Intune nesnelere görünürlüğü ve doğru erişime 
 
 ## <a name="to-create-a-scope-tag"></a>Kapsam etiketi oluşturmak için
 
-1. Intune'da, **rolleri** > **kapsam (etiketler)** > **Oluştur**.
+1. Intune'da, **rolleri** > **kapsam (etiketler)**  > **Oluştur**.
 
     ![Kapsam etiketi oluştur ekran görüntüsü.](./media/scope-tags/create-scope-tag.png)
 
-2. Bir **Ad** ve **Açıklama** sağlayın.
-3. **Oluştur**’u seçin.
+3. Belirli gruplarındaki tüm cihazları istiyorsanız seçin **kapsam etiketi seçilen gruplardaki tüm cihazlara atamak**.
+    1. İçinde **dahil edilecek grupları seçin** sayfasında, bu kapsam etiketinde atamak istediğiniz cihazları içeren grupları seçin.
+    2. **Seç**’i seçin.
+4. **Oluştur**’u seçin.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Kapsam etiketini bir role atamak için
 
@@ -52,11 +54,11 @@ Doğru yöneticileri sağ Intune nesnelere görünürlüğü ve doğru erişime 
     ![Ekran görüntüsü, bir role kapsam atayın.](./media/scope-tags/assign-scope-to-role.png)
 
 2. Sağlayan bir **atama adı** ve **açıklama**.
-3. Seçin **üyeler (gruplar)** > **Ekle** > Bu atama bir parçası olarak istediğiniz grupları seçin > **seçin**  >   **Tamam**. Bu gruptaki mUsers ilkeler ve profiller için kapsam (gruplar) kullanıcıları/cihazları yönetmek için izinlere sahip.
+3. Seçin **üyeler (gruplar)**  > **Ekle** > Bu atama bir parçası olarak istediğiniz grupları seçin > **seçin**  >   **Tamam**. Bu gruptaki mUsers ilkeler ve profiller için kapsam (gruplar) kullanıcıları/cihazları yönetmek için izinlere sahip.
 
     ![Seçili üye grupların ekran görüntüsü.](./media/scope-tags/select-member-groups.png)
 
-4. Kullanıcılar/Gruplar belirli bir dizi cihazları yönetmek istiyorsanız belirleyin **kapsam (gruplar)** > **seçtiğiniz grupları** > **dahiledilecekgruplarıseçin**> istediğiniz grupları seçin > **seçin** > **Tamam**. Bu gruptaki tüm kullanıcılara/cihazlara, profilleri ve ilkeleri (grubu) üye yöneticileri tarafından yönetiliyor olabilir.
+4. Kullanıcılar/Gruplar belirli bir dizi cihazları yönetmek istiyorsanız belirleyin **kapsam (gruplar)**  > **seçtiğiniz grupları** > **dahiledilecekgruplarıseçin**> istediğiniz grupları seçin > **seçin** > **Tamam**. Bu gruptaki tüm kullanıcılara/cihazlara, profilleri ve ilkeleri (grubu) üye yöneticileri tarafından yönetiliyor olabilir.
 
     ![Select kapsam gruplarının ekran görüntüsü.](./media/scope-tags/select-scope-groups.png)
 
@@ -64,7 +66,7 @@ Doğru yöneticileri sağ Intune nesnelere görünürlüğü ve doğru erişime 
 
     ![Diğer seçenekleri Seç Kapsam grupları için ekran görüntüsü.](./media/scope-tags/scope-group-other-options.png)
     
-5. Seçin **kapsam (etiketler)** > **Ekle** > Bu role eklemek istediğiniz etiketleri seçin > **seçin** > **Tamam**. Üyeler (gruplar) kullanıcılar aynı kapsam etiketi de profilleri ve ilkeleri erişebilir.
+5. Seçin **kapsam (etiketler)**  > **Ekle** > Bu role eklemek istediğiniz etiketleri seçin > **seçin** > **Tamam**. Üyeler (gruplar) kullanıcılar aynı kapsam etiketi de profilleri ve ilkeleri erişebilir.
 
     ![Select kapsam etiketleri ekran görüntüsü.](./media/scope-tags/select-scope-tags.png)
 
@@ -75,7 +77,7 @@ Doğru yöneticileri sağ Intune nesnelere görünürlüğü ve doğru erişime 
 
     ![Ekran görüntüsü profili seçin.](./media/scope-tags/choose-profile.png)
 
-2. Seçin **özellikleri** > **kapsam (etiketler)** > **ekleme**.
+2. Seçin **özellikleri** > **kapsam (etiketler)**  > **ekleme**.
 
     ![Kapsam etiketleri Ekle ekran görüntüsü.](./media/scope-tags/add-scope-tags.png)
 

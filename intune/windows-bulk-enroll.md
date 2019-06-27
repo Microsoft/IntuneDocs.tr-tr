@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,16 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898148"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403377"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Bir yönetici olarak çok sayıda yeni Windows cihazını Azure Active Directory ve Intune’a dahil edebilirsiniz. Azure AD kiracınıza cihazları toplu kaydetmek için Windows Yapılandırma Tasarımcısı (WCD) uygulaması ile bir sağlama paketi oluşturursunuz. Sağlama paketini şirkete ait cihazlara uygulamak, cihazları Azure AD kiracınıza dahil eder ve Intune yönetimine kaydeder. Paket uygulandıktan sonra, Azure AD kullanıcılarınızın oturum açması için hazır hale gelir.
+Bir yönetici olarak çok sayıda yeni Windows cihazını Azure Active Directory ve Intune’a dahil edebilirsiniz. Azure AD kiracınıza cihazları toplu kaydetmek için Windows Yapılandırma Tasarımcısı (WCD) uygulaması ile bir sağlama paketi oluşturursunuz. Sağlama paketini şirkete ait cihazlara uygulamak, cihazları Azure AD kiracınıza dahil eder ve Intune yönetimine kaydeder. Paketi uyguladıktan sonra Azure AD kullanıcılarınızın oturum açmak hazırdır.
 
 Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan Intune ilkelerini ve gerekli uygulamaları alırlar. Windows toplu kayıt kullanılarak Intune'a kaydedilmiş olan Windows cihazları, kullanılabilir uygulamaları yüklemek için Şirket Portalı uygulamasını kullanabilir. 
 
@@ -51,6 +48,7 @@ Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan I
    - **Açıklama** - Proje için isteğe bağlı bir açıklama ![Windows Yapılandırma Tasarımcısı uygulamasında ad, proje klasörü ve açıklama belirtilen ekran görüntüsü](media/bulk-enroll-name.png)
 
 4. Cihazlarınız için benzersiz bir ad girin. Adlar bir seri numarası (%SERIAL%) veya rastgele bir karakter kümesi içerebilir. İsteğe bağlı olarak Windows sürümünü yükseltiyor, cihazı paylaşımlı kullanım için yapılandırıyor ve önceden yüklenmiş yazılımları kaldırıyorsanız bir ürün anahtarı girebilirsiniz.
+   
    ![Windows Yapılandırma Tasarımcısı uygulamasında ad ve ürün anahtarı belirtme ekran görüntüsü](media/bulk-enroll-device.png)
 
 5. İsteğe bağlı olarak, cihazları ilk kez başlattığınızda bağlanacakları Wi-Fi ağını yapılandırabilirsiniz.  Ağ cihazları yapılandırılmadıysa, cihaz ilk başlatıldığında kablolu bir ağ bağlantısı gerekir.
@@ -66,7 +64,7 @@ Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan I
 
 9. İsteğe bağlı olarak, **Uygulama ekleyebilir** ve **Sertifika ekleyebilirsiniz**. Bu uygulamalar ve sertifikalar cihazda sağlanır.
 
-10. İsteğe bağlı olarak, sağlama paketinizi parola ile koruyabilirsiniz.  **Oluştur**'a tıklayın.
+10. İsteğe bağlı olarak, sağlama paketinizi parola ile koruyabilirsiniz.  **Oluştur**’a tıklayın.
     ![Windows Yapılandırma Tasarımcısı uygulamasında paket koruması ekran görüntüsü](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Cihaz sağlama
@@ -92,12 +90,9 @@ Sağlama, yeni Windows cihazlarda kullanılmak üzere tasarlanmıştır. Sağlam
 - Yerel bir hesap oluşturmayan bir Active Directory etki alanına veya Azure Active Directory kiracısına katılmayı deneyen bir sağlama paketinin, ağ bağlantısı olmaması nedeniyle etki alanına katılma işlemi başarısız olursa cihaza ulaşılamayabilir.
 - Sağlama paketi tarafından çalıştırılan betikler, sistem bağlamında çalıştırılır. Betikler cihaz dosya sisteminde ve yapılandırmalarında rastgele değişiklikler yapabilir. Kötü amaçlı veya hatalı bir betik, cihazın yalnızca yeniden görüntü oluşturma veya silinme yollarıyla kurtarılabilecek bir duruma gelmesine neden olabilir.
 
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Toplu kayıt ve Şirket Portalı ile ilgili sorunlar
-Bir kullanıcı, daha önce Şirket Portalı kullanılarak toplu olarak kaydedilmiş bir cihazı kaydetmeye çalışırsa cihazının kurulum veya kayıt gibi ek eylemler gerektirdiğine dair uyarılar alır. Cihaz kaydedilir ancak kayıt, Şirket Portalı uygulaması veya web sitesi tarafından tanınmaz.
-
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi ile toplu kayıt 
 
 Toplu kayıtlı cihazlar, kullanıcı hedefli sertifikaları ve Wi-Fi dağıtımını kullanamaz. Bu bağlantıları yönetmek için [cihaz düzeyinde sertifikalara](certificates-configure.md) ihtiyacınız vardır. 
 
-### <a name="conditional-access"></a>Koşullu erişim
-Koşullu erişim, toplu kayıt kullanılarak kaydedilen Windows cihazlar için kullanılamaz.
+### <a name="conditional-access"></a>Koşullu Erişim
+Koşullu erişim, toplu kayıt kullanılarak kaydedilen Windows cihazlar için kullanılabilir değil.

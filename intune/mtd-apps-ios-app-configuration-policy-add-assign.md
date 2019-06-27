@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/14/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78d6b8faf5c5c3ef41f3eb5007d550c869491f60
-ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141799"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407125"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama  
 
@@ -56,6 +56,7 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 - [Pradeo](#configure-pradeo-apps)
 - [Better Mobile](#configure-better-mobile-apps)
 - [Sophos mobil](#configure-sophos-apps)
+- [Wandera](#configure-wandera-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work uygulamalarını yapılandırma  
 - **Android**  
@@ -129,6 +130,14 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 - **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). Bunu kullanın [ActiveShield uygulama mağazası URL'sini](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) üzerinde **11. adım** için **mağazası URL'si**.
 
+### <a name="configure-wandera-apps"></a>Wandera uygulamalarını yapılandırma  
+ 
+- **Android**
+  - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](store-apps-android.md). Bunu kullanın [Wandera Mobile uygulama mağazası URL'sini](https://play.google.com/store/apps/details?id=com.wandera.android) üzerinde **7. adım**. İçin **en düşük işletim sistemi**seçin **Android 5.0**.
+
+- **iOS**
+  - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](https://docs.microsoft.com/intune/store-apps-ios). Bunu kullanın [Wandera Mobile uygulama mağazası URL'sini](https://itunes.apple.com/app/wandera/id605469330) üzerinde **11. adım** için **mağazası URL'si**.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD uygulamalarınızı bir iOS uygulama yapılandırma ilkesiyle yapılandırma  
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work uygulama yapılandırma ilkesi  
@@ -196,6 +205,27 @@ Pradeo iOS uygulama yapılandırma İlkesi desteklemiyor.  Bunun yerine, yapıla
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Sophos mobil uygulama yapılandırma İlkesi  
 İOS uygulama yapılandırma İlkesi açıklandığı gibi oluşturmak [iOS uygulama yapılandırma ilkesini kullanarak](app-configuration-policies-use-ios.md) makalesi.
+
+### <a name="wandera-app-configuration-policy"></a>Wandera uygulama yapılandırma İlkesi  
+Yönergeler için bkz: [iOS için Microsoft Intune uygulama yapılandırma ilkelerini kullanarak](app-configuration-policies-use-ios.md) Wandera iOS uygulama yapılandırma ilkesini eklemek için.
+- Üzerinde **8. adım**, bu seçeneği kullanın **XML verisi gir**. RADAR Wandera portalınızda oturum açın ve gidin **ayarları** > **EMM tümleştirme** > **gönderme**. Seçin **Intune**ve ardından aşağıdaki içeriği kopyalayıp yapılandırma ilkesinin gövdesine yapıştırın.  
+
+  ```
+  <dict><key>secretKey</key>
+  <string>SeeRADAR</string>
+  <key>apiKey</key>
+  <string> SeeRADAR </string>
+  <key>customerId</key>
+  <string> SeeRADAR </string>
+  <key>email</key>
+  <string>{{mail}}</string>
+  <key>firstName</key>
+  <string>{{username}}</string>
+  <key>lastName</key>
+  <string></string>
+  <key>activationType</key>
+  <string>PROVISION_THEN_AWP</string></dict>  
+  ```
 
 ## <a name="assign-apps-to-groups"></a>Gruplara uygulama atama  
 - Bu adım, tüm MTD iş ortakları için geçerlidir. [Intune ile gruplara uygulama atama](apps-deploy.md) yönergelerine bakın.

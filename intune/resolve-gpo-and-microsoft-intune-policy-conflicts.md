@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c7de15c3839548e8edf5056579eab1c0c0751a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045248"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403767"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Grup İlkesi Nesneleri (GPO) ve Microsoft Intune ilke çakışmalarını çözme
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> Bu konudaki bilgiler, yalnızca Intune yazılım istemcisini kullanarak bilgisayar olarak yönettiğiniz Windows masaüstü cihazlar için geçerlidir.
 
 Intune, Windows bilgisayarlarda ayarları yönetmenize yardımcı olan ilkeler kullanır. Örneğin, bilgisayarlardaki Windows Güvenlik Duvarı’nın ayarlarını denetlemek için bir ilke kullanabilirsiniz. Birçok Intune ayarı Windows Grup İlkesi'yle yapılandırdığınız ayarlara benzer. Ancak, bazen iki yöntemin birbiriyle çakışması mümkündür.
 

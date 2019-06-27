@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/14/2019
+ms.date: 06/20/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,18 +15,18 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 158840a73784516d13defa04785ca5990a9874cf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041821"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402933"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Windows iş için Hello ıntune'da etkinleştirmek için Windows 10 cihaz ayarları
 
 Bu makale listeler ve Windows Hello for Business ayarları kontrol edebilirsiniz ıntune'da Windows 10 cihazlarında açıklar. Bir Intune Yöneticisi olarak yapılandırabilir ve bu ayarlar Windows 10 cihazları için mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak atayın. 
 
-Bu ayarlar hakkında ek bilgiler bulabilirsiniz [Windows Hello'yu Yapılandır iş İlkesi ayarlarının](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings), WIndows Hello belgelerinde.
+Bu ayarlar hakkında ek bilgiler bulabilirsiniz [Windows Hello'yu Yapılandır iş İlkesi ayarlarının](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings), Windows Hello belgelerinde.
 
 
 Intune'da iş profilleri hakkında daha fazla Windows Hello bilgi edinmek için [kimlik Koruması'nı yapılandırma](identity-protection-configure.md).
@@ -36,55 +36,106 @@ Intune'da iş profilleri hakkında daha fazla Windows Hello bilgi edinmek için 
 [Bir yapılandırma profili oluşturma](identity-protection-configure.md#create-the-device-profile).
 
 ## <a name="windows-hello-for-business"></a>İş İçin Windows Hello
+- **İş için Windows Hello yapılandırma**:
+  - **Yapılandırılmamış** -Intune denetlemek için Windows Hello ayarları için kullanmak istemiyorsanız bu ayarı seçin. Windows 10 cihazlarında bulunan İş için Windows Hello ayarları değiştirilmez. Bölmedeki diğer ayarlardan hiçbiri kullanılamaz.
 
-- **İş için Windows Hello yapılandırma**: Bu özelliği kullanın ve ayarlarını yapılandırmak için seçin **etkinleştirme**.
-- **Minimum PIN uzunluğu**: Cihazlara izin vermek istediğiniz en düşük PIN uzunluğu girin. Varsayılan PIN uzunluğu altı karakterdir. Minimum PIN uzunluğu dört (4) karakterdir.
-- **Maksimum PIN uzunluğu**: Cihazlara izin vermek istediğiniz maksimum PIN uzunluğu girin. Varsayılan PIN uzunluğu altı (6) karakter olabilir. Maksimum PIN uzunluğu 127 karakterdir.  
-- **PIN kodunda küçük harfler**: Son kullanıcılar isteyerek daha güçlü bir PIN zorunlu kılabilir küçük harf içerir. Seçenekleriniz şunlardır:
+  - **Devre dışı bırakılmış** - istemiyorsanız iş için Windows Hello'yu kullanma, bu ayarı seçin. Bu durumda, ekrandaki tüm diğer ayarlar kullanılamaz hale gelir.
+  - **Etkin** -Windows Hello ayarları için yapılandırmak istiyorsanız bu ayarı seçin.  
+  
+  **Varsayılan**: Yapılandırılmamış
 
-  - **İzin** (varsayılan): Kullanıcılar PIN kodlarında küçük harf kullanmasını engeller. Bu davranış, ayar yapılandırılmazsa da oluşur.
-  - **İzin verilen**: Kullanıcıların PIN kodunda küçük harf kullanın, ancak gerekli değildir.
-  - **Gerekli**: Kullanıcılar PIN kodlarına en az bir küçük harf içermelidir. Örneğin, en az bir büyük harfin ve bir özel karakterin zorunlu kılınması yaygın bir uygulamadır.
+  Ayarlandığında *etkin*, aşağıdaki ayarlar kullanılabilir:
 
-- **Pın'de büyük harfler PIN**: Son kullanıcılar isteyerek daha güçlü bir PIN zorunlu kılabilir büyük harf içermesi. Seçenekleriniz şunlardır:
+    - **Minimum PIN uzunluğu**  
+     Cihazları, güvenli oturum açma yardımcı olması için en düşük PIN uzunluğunu belirtin. Windows cihaz varsayılanlardır altı karakter, ancak bu ayar, en az dört ile 127 karakter zorunlu kılabilir. 
+  
+      **Varsayılan**: *Yapılandırılmadı*
 
-  - **İzin** (varsayılan): Kullanıcıların PIN kodunda büyük harfler kullanmasını engelleyin. Bu davranış, ayar yapılandırılmazsa da oluşur.
-  - **İzin verilen**: Kullanıcıların PIN kodunda büyük harfler kullanın, ancak gerekli değildir.
-  - **Gerekli**: Kullanıcılar PIN kodlarına en az bir büyük harf içermelidir. Örneğin, en az bir büyük harfin ve bir özel karakterin zorunlu kılınması yaygın bir uygulamadır.
+    - **Maksimum PIN uzunluğu**  
+    Güvenli oturum açma yardımcı aygıtları için bir maksimum PIN uzunluğu belirtin. Windows cihaz varsayılanlardır altı karakter, ancak bu ayar, en az dört ile 127 karakter zorunlu kılabilir.  
 
-- **PIN kodunda özel karakterler**: Son kullanıcılar isteyerek daha güçlü bir PIN zorunlu kılabilir özel karakterler şunlardır. Seçenekleriniz şunlardır:
+      **Varsayılan**: *Yapılandırılmadı*  
 
-  - **İzin** (varsayılan): PIN kodunda özel karakterler kullanarak kullanıcıların engelleyin. Bu davranış, ayar yapılandırılmazsa da oluşur.
-    Özel karakterler şunlardır: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`
-  - **İzin verilen**: Kullanıcıların PIN kodunda büyük harfler kullanın, ancak gerekli değildir.
-  - **Gerekli**: Kullanıcılar PIN kodlarına en az bir büyük harf içermelidir. Örneğin, en az bir büyük harfin ve bir özel karakterin zorunlu kılınması yaygın bir uygulamadır.
+    - **PIN kodunda küçük harfler**  
+      Son kullanıcılar isteyerek daha güçlü bir PIN zorunlu kılabilir küçük harf içerir. Seçenekleriniz şunlardır:
 
-- **PIN süre sonu (gün)**: Son kullanıcıların belirli bir süre sonunda PIN’i değiştirmesini zorunlu tutmak için bir PIN kullanım süresi belirtmek iyi bir uygulamadır. Varsayılan değer 41 gündür.
+      - **İzin** -kullanıcılar PIN kodlarında küçük harf kullanmasını engelleyin. Bu davranış, ayar yapılandırılmazsa da oluşur.
+      - **İzin verilen** - kullanıcıların PIN kodunda küçük harf kullanın, ancak gerekli değildir.
+      - **Gerekli** -kullanıcılar PIN kodlarına en az bir küçük harf içermelidir. Örneğin, en az bir büyük harfin ve bir özel karakterin zorunlu kılınması yaygın bir uygulamadır.
 
-- **PIN geçmişini anımsa**: Daha önce kullanılan PIN'lerin yeniden kullanılmasını kısıtlar. Varsayılan olarak, son 5 PIN kodunun yeniden kullanılamaz.  
-- **PIN kurtarmayı etkinleştir**: Windows Hello için kurtarma hizmeti iş PIN kullanarak kendi PIN'LERİNİ değiştirmesine izin verir.
+    - **PIN kodunda büyük harfler**  
+    Son kullanıcılar isteyerek daha güçlü bir PIN zorunlu kılabilir büyük harf içermesi. Seçenekleriniz şunlardır:
 
-       - **Enable**: The cloud service encrypts a PIN recovery secret to store on the device. The user can change their PIN if needed.  
-       - **Not configured** (default): A PIN recovery secret is not created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one. The user will need to re-register with any services the old PIN provided access to.  
+      - **İzin** -kullanıcıların PIN kodunda büyük harfler kullanarak. Bu davranış, ayar yapılandırılmazsa da oluşur.
+      - **İzin verilen** - kullanıcıların PIN kodunda büyük harfler kullanın, ancak gerekli değildir.
+      - **Gerekli** -kullanıcılar PIN kodlarına en az bir büyük harf içermelidir. Örneğin, en az bir büyük harfin ve bir özel karakterin zorunlu kılınması yaygın bir uygulamadır.
 
-- **Güvenilir Platform Modülü (TPM) kullan**: TPM yongası ek bir veri güvenliği katmanı sağlar. Aşağıdaki değerlerden birini seçin:  
-  - **Etkinleştir**: Yalnızca erişilebilir bir TPM’si olan cihazlar İş İçin Windows Hello sağlayabilir.
-  - **Yapılandırılmadı**: Kullanılabilir bir TPM olmadığında bile tüm cihazlar İş İçin Windows Hello sağlayabilir. Cihazlar önce bir TPM kullanmayı dener ancak başaramazsa yazılım şifrelemesi kullanır.  
+    - **PIN kodunda özel karakterler**  
+    Son kullanıcılar isteyerek daha güçlü bir PIN zorunlu kılabilir özel karakterler şunlardır. Özel karakterler şunlardır: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
+ 
+      Seçenekleriniz şunlardır:
+      - **İzin** -kullanıcıların PIN kodunda özel karakterler kullanarak. Bu davranış, ayar yapılandırılmazsa da oluşur.
+      - **İzin verilen** - kullanıcıların PIN kodunda büyük harfler kullanın, ancak gerekli değildir.
+      - **Gerekli** -kullanıcılar PIN kodlarına en az bir büyük harf içermelidir. Örneğin, en az bir büyük harfin ve bir özel karakterin zorunlu kılınması yaygın bir uygulamadır.
 
-- **Biyometrik kimlik doğrulamasına izin**: İş İçin Windows Hello için bir PIN koduna alternatif olarak yüz tanıma veya parmak izi gibi biyometrik kimlik doğrulamasını etkinleştirir. Biyometrik kimlik doğrulaması başarısız olsa bile kullanıcılar bir iş PIN kodu yapılandırmalıdır. Aşağıdakilerden birini seçin:
+      **Varsayılan**: İzin verilmiyor
 
-  - **Etkinleştir**: İş İçin Windows Hello biyometrik kimlik doğrulamasına izin verir.
-  - **Yapılandırılmadı** (varsayılan): İş İçin Windows Hello, (tüm hesap türleri için) biyometrik kimlik doğrulamasını engeller.
+  - **PIN süre sonu (gün)**  
+      Son kullanıcıların belirli bir süre sonunda PIN’i değiştirmesini zorunlu tutmak için bir PIN kullanım süresi belirtmek iyi bir uygulamadır. Windows cihaz 41 gün varsayılanlardır.
 
-- **Gelişmiş yanıltma, kullanılabilir olduğunda kullanın**: Sahtekarlığına karşı koruma özelliklerinin Windows Hello bunu destekleyen cihazlarda kullanılıp kullanılmadığını seçin. Örneğin, bir yüz yerine gerçek bir resmini algılayın.
+    **Varsayılan**: Yapılandırılmadı
 
-  - **Etkinleştir**: Windows, yüz özellikleri destekleniyorsa bunun için tüm kullanıcıların yanıltmaya karşı koruma kullanmasını gerektirir.  
-  - **Yapılandırılmadı** (varsayılan): Windows, cihazdaki yanıltmaya karşı koruma yapılandırmalarını kabul eder.
+  - **PIN geçmişini anımsa**  
+    Daha önce kullanılan PIN'lerin yeniden kullanılmasını kısıtlar. Windows cihazlar için son beş PIN'lerin kullanılmasını önleme varsayılan.  
 
-- **Şirket içi kaynaklar için sertifika**: 
+    **Varsayılan**: Yapılandırılmadı  
 
-  - **Etkinleştir**: İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasına izin verir.
-  - **Yapılandırılmadı** (varsayılan): İş İçin Windows Hello’nun şirket içi kaynaklarda kimlik doğrulaması için sertifika kullanmasını önler. Bunun yerine, cihazları varsayılan davranışını kullanın *güven anahtarı şirket içi kimlik doğrulaması*. Daha fazla bilgi için [şirket içi kimlik doğrulaması için kullanıcı sertifikası](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) Windows Hello belgelerinde.  
+  - **PIN kurtarmayı etkinleştir**   
+    Windows Hello PIN iş kurtarma hizmeti için kullanacağınız kullanıcı sağlar. 
+    
+    - **Etkin** - PIN kurtarma parolası, cihazda depolanır ve gerekirse kullanıcı PIN'ini değiştirebilir.  
+    - **Devre dışı bırakılmış** -kurtarma parolası oluşturulmuş veya depolanan değil.
+
+    **Varsayılan**: Yapılandırılmamış
+
+  - **Güvenilir Platform Modülü (TPM) kullan**   
+    TPM yongası ek bir veri güvenliği katmanı sağlar.  
+
+    - **Etkin** - yalnızca erişilebilir bir TPM'e sahip cihazlar Windows iş için Hello sağlayabilir.
+    - **Yapılandırılmamış** -cihazlar ilk bir TPM kullanmayı dener. Bu seçenek mevcut değilse yazılım şifreleme kullanabilirler.
+    
+    **Varsayılan**: Yapılandırılmamış
+
+  - **Biyometrik kimlik doğrulamasına izin ver**  
+     İş İçin Windows Hello için bir PIN koduna alternatif olarak yüz tanıma veya parmak izi gibi biyometrik kimlik doğrulamasını etkinleştirir. Biyometrik kimlik doğrulaması başarısız olsa bile kullanıcılar bir iş PIN kodu yapılandırmalıdır. Aşağıdakilerden birini seçin:
+
+    - **Etkinleştirme** -Windows iş için Hello biyometrik kimlik doğrulamasına izin verir.
+    - **Yapılandırılmamış** -Windows iş için Hello biyometrik kimlik doğrulamasını engeller (tüm hesap türleri için).
+
+    **Varsayılan**: Yapılandırılmamış
+
+  - **Gelişmiş yanıltma, kullanılabilir olduğunda kullanın**  
+    Windows Hello’nun yanıltmaya karşı koruma özelliklerinin bunu destekleyen cihazlarda kullanılıp kullanılmayacağını yapılandırır (örneğin, gerçek yüz yerine yüzün fotoğrafı olduğunu algılama).  
+    - **Etkinleştirme** -Windows, desteklendiğinde yüz özellikleri için yanıltma kullanmak tüm kullanıcıların gerektirir.
+    - **Yapılandırılmamış** -Windows cihaz yanıltma yapılandırmalarında geliştirir.
+
+    **Varsayılan**: Yapılandırılmamış
+
+  - **Şirket içi kaynaklar için sertifika**  
+
+    - **Etkinleştirme** -sağlayan Windows iş için Hello kaynakları şirket içi kimlik doğrulaması için sertifikaları kullanmasına izin.
+    - **Yapılandırılmamış** -engelleyen Windows Hello kaynakları şirket içi kimlik doğrulaması için sertifikaları kullanarak işletmeler için. Bunun yerine, cihazları varsayılan davranışını kullanın *güven anahtarı şirket içi kimlik doğrulaması*. Daha fazla bilgi için [şirket içi kimlik doğrulaması için kullanıcı sertifikası](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) Windows Hello belgelerinde.  
+
+  **Varsayılan**: Yapılandırılmamış
+
+- **Oturum açma için güvenlik tuşlarını kullanın**  
+  Bu ayar, Windows 10 sürüm 1903 veya üzerini çalıştıran cihazlar için kullanılabilir. Oturum açma için Windows Hello güvenlik anahtarları kullanma desteği yönetmek için kullanın.  
+
+  - **Etkin** -kullanıcılar, bilgisayarlar için bir oturum açma kimlik bilgileri Bu ilkeyle hedeflenen gibi bir Windows Hello güvenlik anahtarı kullanabilir. 
+  - **Devre dışı** - güvenlik anahtarları devre dışı bırakıldı ve kullanıcılar bunları bilgisayarlara oturum açmak için kullanamazsınız.   
+
+  **Varsayılan**: Yapılandırılmamış
+
 ## <a name="next-steps"></a>Sonraki adımlar
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).

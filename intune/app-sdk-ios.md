@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 345437b728df50cded2dcbd230cb360eef98a33e
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045477"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407160"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -40,19 +40,31 @@ iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini
 
 * iOS için Intune Uygulama SDK'sı dosyalarını [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)’dan indirin.
 
-## <a name="whats-in-the-sdk"></a>SDK’nın kapsamı
+## <a name="whats-in-the-sdk-repository"></a>SDK'sı deposunda nedir
 
-iOS için Intune Uygulama SDK’sı statik bir kitaplık, kaynak dosyaları, API üst bilgileri, hata ayıklama ayarları .plist dosyası ve bir yapılandırıcı aracı içerir. İstemci uygulamalar yalnızca kaynak dosyaları içerebilir ve çoğu ilke zorlaması için kitaplıklarla statik bağlantılar oluşturabilir. Gelişmiş Intune APP özellikleri API'ler aracılığıyla zorunlu tutulur.
+Aşağıdaki dosyalar yok SWIFT kodu içeren veya Xcode sürümü 10.2 önce ile derlenmiş uygulamaları ve uzantıları için uygundur: 
 
-Bu kılavuz, iOS için Intune Uygulama SDK'sının aşağıdaki bileşenlerinin kullanımını açıklar:
+* **Intunemam.Framework**: Intune uygulama SDK'sı çerçevesi. Bu çerçeve, uygulama/Intune istemcisi uygulama yönetimi etkinleştirmek için uzantıları için bağlantı önerilir. Ancak bazı geliştiriciler, statik kitaplık (aşağıya bakın) performans avantajlarını tercih edebilirsiniz.
 
-* **libIntuneMAM.a**: Intune uygulama SDK'sı statik kitaplığı. Uygulamanızda uzantılar kullanılmıyorsa, uygulamanızı Intune istemci uygulama yönetimi için etkinleştirmek üzere bu kitaplığı projenize bağlayın.
+* **libIntuneMAM.a**: Intune uygulama SDK'sı statik kitaplığı. Geliştiriciler için statik kitaplık yerine framework bağlamak tercih edebilirsiniz. Statik kitaplıklar uygulaması/uzantısı oluşturma zamanında ikili içine katıştırılmış directlty olduğundan, statik kitaplık kullanmanın bazı başlatma zamanı performans avantajları vardır. Ancak, uygulamanıza tümleştirmenin daha karmaşık bir işlem olur. Uygulamanız için uygulamanın statik kitaplığa bağlama herhangi bir uzantısı içerir ve daha büyük bir uygulama paketi boyutu uzantıları neden olur, her uygulama/uzantısı'na ikili statik kitaplık olarak katıştırılır. Framework'ü kullanırken uygulamaları ve uzantıları daha küçük bir uygulamanın boyutunu kaynaklanan aynı Intune SDK'sı ikili paylaşabilirsiniz.
 
-* **Intunemam.Framework**: Intune uygulama SDK'sı çerçevesi. Uygulamanızı Intune istemci uygulama yönetimi için etkinleştirmek üzere bu çerçeveyi projenize bağlayın. Uygulamanızda uzantılar kullanılıyorsa, projenizin birden çok statik kitaplık kopyası oluşturmasını önlemek için statik kitaplık yerine bu çerçeveyi kullanın.
+* **Intunemamresources.Bundle**: SDK'ın bağımlı kaynakları içeren bir kaynak paketi. Kaynakları paket, yalnızca statik kitaplık (Libıntunemam.a) tümleştirme uygulamalar için gereklidir.
 
-* **Intunemamresources.Bundle**: SDK'ın bağımlı kaynaklara sahip bir kaynak paketi.
 
-* **Üstbilgileri**: Intune uygulama SDK'sı API'lerini gösterir. API kullanırsanız, API’yi içeren üst bilgi dosyasını dahil etmeniz gerekir. Aşağıdaki üst bilgi dosyaları, Intune Uygulama SDK’sı tarafından geliştiricilerin kullanımına sunulan API’ler, veri türleri ve protokollerini içerir:
+Aşağıdaki dosyalar, SWIFT kodu içerir ve 10.2 + Xcode ile derlenmiş uygulamaları ve uzantıları için uygundur: 
+
+* **IntuneMAMSwift.framework**: Intune uygulama SDK'sı Swift çerçevesi. Bu çerçeve uygulamanızı çağıran API'leri için tüm üst bilgileri içerir. Bu çerçeve, uygulama/Intune istemcisi uygulama yönetimi etkinleştirmek için uzantıları için bağlayın. 
+
+* **IntuneMAMSwiftStub.framework**: Intune uygulama SDK'sı Swift saplama çerçevesi. Bu, hangi uygulamaları ve uzantıları bağlamalısınız IntuneMAMSwift.framework, gerekli bir bağımlılıktır.
+
+
+Aşağıdaki dosyaları, tüm uygulamalar/uzantı ilgilidir:
+
+* **Intunemamconfigurator**: Intune yönetimi için en düşük gerekli değişiklikleri ile uygulama ya da uzantının Info.plist yapılandırmak için kullanılan araç. Uygulamanızı veya uzantısı işlevselliğini bağlı olarak, Info.plist dosyanıza ek el ile değişiklik yapmanız gerekebilir.
+
+* **Üstbilgileri**: Genel Intune uygulama SDK'sı API'lerini kullanıma sunar. Çerçeveleri herhangi birini kullanan geliştiriciler, üstbilgileri, projeye el ile eklemeniz gerekmez. Bu nedenle bu üstbilgileri IntuneMAM/IntuneMAMSwift çerçeveleri içinde dahil edilir. Statik kitaplığa karşı (Libıntunemam.a) bağlamayı seçin geliştiriciler el ile bu üstbilgileri, projede eklemeniz gerekir. 
+
+Aşağıdaki üst bilgi dosyaları, Intune Uygulama SDK’sı tarafından geliştiricilerin kullanımına sunulan API’ler, veri türleri ve protokollerini içerir:
 
     * IntuneMAMAppConfig.h
     * IntuneMAMAppConfigManager.h
@@ -82,16 +94,18 @@ iOS için Intune Uygulama SDK'sının amacı, kodda minimum düzeyde değişikli
 
 Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin:
 
-1. **Seçenek 1 (önerilen)**: Bağlantı `IntuneMAM.framework` projenize. `IntuneMAM.framework` öğesini proje hedefinin **Katıştırılmış İkili Dosyalar** listesine sürükleyin.
+1. **Seçenek 1 - (önerilen) Framework**: Xcode 10.2 + kullanıyorsanız ve uygulama/uzantınızı SWIFT kodu, bağlantı içeriyorsa `IntuneMAMSwift.framework` ve `IntuneMAMSwiftStub.framework` hedef için: Sürükleme `IntuneMAMSwift.framework` ve `IntuneMAMSwiftStub.framework` için **katıştırılmış ikili dosyalar** proje hedefinin listesi.
+
+Aksi takdirde, bağlantı `IntuneMAM.framework` hedef için: `IntuneMAM.framework` öğesini proje hedefinin **Katıştırılmış İkili Dosyalar** listesine sürükleyin.
 
    > [!NOTE]
    > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. Daha fazla bilgi için bkz. [Uygulamanızı App Store'a gönderme](#submit-your-app-to-the-app-store).
 
-   **Seçenek 2**: Bağlantı `libIntuneMAM.a` kitaplığı. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
+   **Seçenek 2 - statik kitaplık**: Bu seçenek yalnızca hiçbir SWIFT kodu içeren veya Xcode ile oluşturulmuş uygulamalar ve uzantıları için kullanılabilir < 10.2. Bağlantı `libIntuneMAM.a` kitaplığı. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
 
-    ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
+    ![Intune App SDK iOS: linked frameworks and libraries](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
-    `{PATH_TO_LIB}` öğesini Intune Uygulama SDK'sı konumu ile değiştirerek `-force_load {PATH_TO_LIB}/libIntuneMAM.a` öğesini aşağıdakilerden birine ekleyin:
+    Add `-force_load {PATH_TO_LIB}/libIntuneMAM.a` to either of the following, replacing `{PATH_TO_LIB}` with the Intune App SDK location:
    * Projenin `OTHER_LDFLAGS` derlemesi yapılandırma ayarı
    * Xcode UI’nin **Diğer Bağlayıcı Bayrakları**
 
@@ -101,8 +115,21 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
      `IntuneMAMResources.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
 
      ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+     
+2. Swift herhangi bir Intune API'leri çağırmak gerekiyorsa, uygulama/uzantısı aracılığıyla bir Objective-C köprü oluşturma üst bilgisi gerekli Intune SDK'sı üst bilgileri içeri aktarmanız gerekir. Uygulama/uzantınızı bir Objective-C köprü oluşturma üst bilgisi içermiyorsa, bir aracılığıyla belirtebilirsiniz `SWIFT_OBJC_BRIDGING_HEADER` derleme yapılandırma ayarına veya Xcode UI'nin **Objective-C köprü oluşturma üst bilgisi** alan. Köprü oluşturma üst bilgisi, şunun gibi görünmelidir:
 
-2. Aşağıdaki iOS çerçevelerini projeye ekleyin:  
+   ```objc
+      #import <IntuneMAMSwift/IntuneMAM.h>
+   ```
+   
+   Bu tüm Intune SDK'sının API'lerini kullanılabilir tüm Swift kaynak dosyalarını uygulama/uzantınızı yapar. 
+   
+    > [!NOTE]
+    > * Yalnızca köprüsü belirli Intune SDK'sı üst bilgileri çoğunda Intunemam.h yerine Swift tercih edebilirsiniz
+    > * Üstbilgi dosya yolunu entegre ettik framework/statik kitaplığı bağlı olarak, farklı olabilir.
+    > * Intune SDK'sı API'leri aracılığıyla bir modülü içeri aktarma deyimi swift'te kullanılabilir hale getirme (örn: IntuneMAMSwift alma) şu anda desteklenmiyor. Objective-C köprü oluşturma üst bilgi kullanılması önerilen bir yaklaşımdır.
+    
+3. Aşağıdaki iOS çerçevelerini projeye ekleyin:  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -115,7 +142,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
     * QuartzCore.framework  
     * WebKit.framework
 
-3. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
+4. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
 
    > [!NOTE]
    > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu denetlemek için .mobileprovision dosyasını bir metin düzenleyicide açıp **keychain-access-groups** araması yapın ve bir joker karakter kullandığınızdan emin olun. Örneğin:
@@ -126,7 +153,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
    >  </array>
    >  ```
 
-4. Anahtarlık paylaşımını etkinleştirdikten sonra Intune Uygulama SDK'sı verilerinin depolanacağı ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. UI öğelerini anahtarlık erişim grubu oluşturmak için kullanıyorsanız aşağıdaki adımları izleyin:
+5. Anahtarlık paylaşımını etkinleştirdikten sonra Intune Uygulama SDK'sı verilerinin depolanacağı ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. UI öğelerini anahtarlık erişim grubu oluşturmak için kullanıyorsanız aşağıdaki adımları izleyin:
 
     1. Mobil uygulamanız tüm Anahtarlık erişim gruplarını tanımlanan, uygulamanın ekleme yoksa kimliği olarak paket **ilk** grubu.
     
@@ -144,11 +171,11 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
         > [!NOTE]
         > Yetkilendirme dosyası, mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır. Uygulamanızın önceden bir yetkilendirme dosyası yoksa, anahtarlık paylaşımının etkinleştirilmesi (3. adım) Xcode'un uygulamanız için bir dosya oluşturmasına neden olacaktır. Uygulamanın paket Kimliğini ilk girdi listesinde olduğundan emin olun.
 
-5. Uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Sonraki adıma ilerlemeden önce değişikliklerinizi kaydettiğinizden emin olun.
+6. Uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Sonraki adıma ilerlemeden önce değişikliklerinizi kaydettiğinizden emin olun.
 
-6. Uygulamanız zaten FaceID kullanmıyorsa [NSFaceIDUsageDescription info.plist anahtarının](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) bir varsayılan iletiyle yapılandırıldığından emin olun. Bu, iOS’un kullanıcıya uygulamanın FaceID’yi nasıl kullanacağını bildirmesi için gereklidir. Intune uygulama koruma ilke ayarları, bir BT yöneticisi tarafından yapılandırılırsa FaceID’nin uygulama erişimi için bir yöntem olarak kullanılmasına imkan verir.
+7. Uygulamanız zaten FaceID kullanmıyorsa [NSFaceIDUsageDescription info.plist anahtarının](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) bir varsayılan iletiyle yapılandırıldığından emin olun. Bu, iOS’un kullanıcıya uygulamanın FaceID’yi nasıl kullanacağını bildirmesi için gereklidir. Intune uygulama koruma ilke ayarları, bir BT yöneticisi tarafından yapılandırılırsa FaceID’nin uygulama erişimi için bir yöntem olarak kullanılmasına imkan verir.
 
-7. Uygulamanızın Info.plist dosyasını yapılandırmayı bitirmek için, [SDK deposuna](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) eklenen IntuneMAMConfigurator aracını kullanın. Araç, üç parametreye sahiptir:
+8. Uygulamanızın Info.plist dosyasını yapılandırmayı bitirmek için, [SDK deposuna](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) eklenen IntuneMAMConfigurator aracını kullanın. Araç, üç parametreye sahiptir:
 
    |Özellik|Kullanımı|
    |---------------|--------------------------------|

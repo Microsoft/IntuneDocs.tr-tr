@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cad83daa88351749d60d0b1c72935ea47f9a14ce
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046932"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402896"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows bilgisayarlar için kullanıcı-cihaz bağlamayı yönetme
 
@@ -31,6 +31,8 @@ ms.locfileid: "66046932"
 Bu konudaki bilgiler, yalnızca Intune yazılım istemcisini kullanarak bilgisayar olarak yönettiğiniz Windows masaüstü cihazlar için geçerlidir. 
 
 Bir kullanıcı için yazılım dağıtmadan önce kullanıcıyı bir bilgisayara bağlamanız gerekir. Bir kullanıcıyı birden çok bilgisayara bağlayabilirsiniz, ancak her bilgisayara yalnızca bir kullanıcı bağlanabilir. Kullanıcılar şirket portalını kullanarak Intune kaydını yaptıkları bilgisayarlara otomatik olarak bağlanır.
+
+Bir cihazın birincil kullanıcısı hakkında daha fazla bilgi için bkz: [Bul birincil kullanıcı](find-primary-user.md).
 
 Bir kullanıcıyı bir bilgisayara bağlamak için:
 
