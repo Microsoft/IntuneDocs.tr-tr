@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a10fc54fa3aa535e6dcfd2c06124fdc5b87c6a4
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 167d091f212536ed94e3f4ce0c103649e4a2e537
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041283"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413820"
 ---
 # <a name="enable-code-integrity"></a>Kod bütünlüğünü etkinleştirmeniz
 
@@ -34,7 +34,7 @@ Kod bütünlüğü devre dışı bırakıldığından bilgisayarınıza uyumlu d
 Kendiniz bir Gelişmiş cihaz kullanıcısı olarak tanımlamak ve adımları kendiniz denemek istiyorsanız bkz [güvenli önyüklemeyi yeniden etkinleştirmek](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
 ## <a name="additional-resources-for-it-administrators"></a>BT yöneticileri için ek kaynaklar  
-Bir Intune Yöneticisi ve Intune'un cihaz durumu uyumluluk ayarları hakkında daha fazla bilgi edinmek istiyorsanız, bkz: [Intune'da Windows 10 cihazları için cihaz uyumluluk ilkesi ekleme](https://docs.microsoft.com/intune/compliance-policy-create-windows). Intune'da gerçekleştirebileceğiniz uyumluluk eylemleri ayrıntılı bilgi için bkz: [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Bir Intune Yöneticisi ve Intune'un cihaz durumu uyumluluk ayarları hakkında daha fazla bilgi edinmek istiyorsanız, bkz: [Intune'da Windows 10 cihazları için cihaz uyumluluk ilkesi ekleme](https://docs.microsoft.com/intune/compliance-policy-create-windows). Intune'da gerçekleştirebileceğiniz uyumluluk eylemleri ayrıntılı bilgi için bkz: [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

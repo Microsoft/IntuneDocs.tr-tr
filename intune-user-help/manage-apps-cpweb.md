@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6f24f2b7741beff4075b0b130441720265fa0ce
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 9c7b91e63a559c45cbbcbd7056a7f5e259e07481
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403999"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416861"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Şirket portalı Web sitesinden uygulamaları yönetme 
 Ziyaret [Şirket portalı Web sitesine](https://portal.manage.microsoft.com) görüntülemek ve kuruluşunuzdaki uygulamaları yönetmek için. 
@@ -65,7 +65,7 @@ Bu sayfada her uygulamayla ilgili aşağıdaki ayrıntıları listelenir:
 * Atama türü: Nasıl uygulama atanır ve size sunulan. Kullanılabilir ve gerekli uygulamaları daha fazla ayrıntı için bkz. Kuruluşunuz ya da bir uygulama için kendiniz yüklemek kullanılabilir yapabilir veya gerektirir ve bir uygulamanın, Cihazınızda otomatik olarak yüklemek.  
 * Yayımcı: Geliştirici veya dağıtılmış uygulamayı şirket adı. Bir yayımcı, genellikle bir yazılım satıcısı veya kuruluşunuz oluşur.  
 * Yayımlanma tarihi: Uygulamayı indirmek kullanılabilir olan tarih. Yayımlama tarihi uygulamanın ilk sürüm göstermek veya bir uygulamanın en son güncelleştirme.
-* Durum: Cihazınızda uygulamayı geçerli yükleme durumu. Uygulamaları gösterebilir yükleme olarak yüklü ve yükleme başarısız oldu.  
+* Durum: Cihazınızda uygulamayı geçerli yükleme durumu. Uygulamaları gösterebilir yükleme olarak yüklü ve yükleme başarısız oldu. Gerekli uygulamaları bir güncel durumunu göstermek için 10 dakika sürebilir.  
 
 ### <a name="search-and-refine"></a>Arama ve geliştirin  
 

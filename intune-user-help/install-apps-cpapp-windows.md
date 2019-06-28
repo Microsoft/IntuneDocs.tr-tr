@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 468eabc9acc8f0f65125f81a0f7f67eede361755
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: f9cb8168075badda65b3cd02f8ae059119769c7c
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402637"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413886"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
 Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
@@ -48,7 +48,10 @@ Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
     
     ![Windows 10 için Şirket Portalı uygulaması, uygulama ayrıntıları sayfası, uygulama yüklendikten sonra gösterilen "Yüklendi" durumu. Yükleme düğmesi Yeniden Yükle olarak değişir.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
- Şirketinizin büyüklüğüne bağlı olarak Şirket Portalı'nda indirilebilecek birden fazla Office sürümü görebilirsiniz. Windows cihazları için Office paketi hakkında daha ayrıntılı bilgi için bkz. [Windows cihazınıza Office 365 yükleme](./install-office-windows.md).
+> [!IMPORTANT]
+> Yüklemek gerekli bir uygulama başarısız olur ve kuruluşunuzun el ile yükleyin, seçmek için kullanılabilir yapar **yeniden**. Bu güncelleştirilmiş durumunu görmek on dakika kadar sürebilir. Seçerseniz **yeniden** yeniden sırasında bu saat ve uygun olan bir hata alıyorsunuz. Güncelleştirilmiş bir durum için on dakika beklemeye devam edin.   
+
+Şirketinizin büyüklüğüne bağlı olarak Şirket Portalı'nda indirilebilecek birden fazla Office sürümü görebilirsiniz. Windows cihazları için Office paketi hakkında daha ayrıntılı bilgi için bkz. [Windows cihazınıza Office 365 yükleme](./install-office-windows.md).
 
 ## <a name="share-apps"></a>Uygulamaları paylaşma  
 Uygulamaları iş veya okuldaki tanıdığınız kişilerle paylaşın veya bu kişilere önerin. Aşağıdaki adımlar bir bağlantıyı doğrudan Şirket Portalı'ndan nasıl paylaşabileceğinizi anlatmaktadır.
@@ -78,5 +81,20 @@ Uygulama gerekiyor, ancak şirket portalında görmüyorum varsa, bu istek. İle
 
   ![Windows 10, Yardım ve Destek sayfasında, Yardım Masası ayrıntıları vurgulamak için Şirket portalı uygulaması. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
+## <a name="view-installed-apps"></a>Uygulamaları yüklü görüntüleme  
+Cihazınıza yüklenen tüm uygulamaların bir listesini görüntüleyin. **Yüklenen uygulamalar** her uygulamayla ilgili aşağıdaki ayrıntıları sayfasında listelenir:
 
-Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
+* Ad: Uygulama adı. Kullanılabilir uygulamalar için bir bağlantı eklemek **uygulama ayrıntılarını** sayfası.
+* Atama türü: Nasıl uygulama atanır ve size sunulan. 
+* Yayımcı: Geliştirici veya dağıtılmış uygulamayı şirket adı. Bir yayımcı, genellikle bir yazılım satıcısı veya kuruluşunuz oluşur.  
+* Yayımlanma tarihi: Uygulamayı indirmek kullanılabilir olan tarih. Yayımlama tarihi uygulamanın ilk sürüm göstermek veya bir uygulamanın en son güncelleştirme.
+* Durum: Cihazınızda uygulamayı geçerli yükleme durumu. Uygulamaları gösterebilir yükleme olarak yüklü ve yükleme başarısız oldu. Gerekli uygulamaları bir güncel durumunu göstermek için 10 dakika sürebilir. Altındaki nota bakın [uygulama yükleme](#install-apps) için gerekli bir uygulama yükleme hakkında önemli ayrıntıları. 
+
+Bu sayfaya ulaşmak için Gezinti menüsüne gidin ve seçin **yüklenen uygulamalar**. 
+
+  ![Yüklü uygulamalar sayfası olan Windows 10 için Şirket portalı uygulamasının örnek ekran görüntüsü. ](./media/installed-apps-cp-1906.png)  
+
+
+Kullanım **sıralama ölçütü** publisher, uygulamaları atama türü adına göre alfabetik sırada yeniden düzenleyebilir veya kronolojik olarak yayımlama tarihi için. Kullanım **filtre** yükleme durumu tarafından gördüğünüz uygulamaları sınırlamak için.  Uygulama yok ise, hiçbir şirket uygulamaları yüklü olan bir ileti görürsünüz.  
+
+Ek Yardım mı gerekiyor? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

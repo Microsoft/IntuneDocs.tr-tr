@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/08/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,24 +16,31 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: 99f51662894cac04e6ebcd821806b433dbf3117e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: de2f201e6a7d0181847db5d212625c9eed9ea698
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041253"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413782"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune’da SCEP ve PKCS sertifikalarını kaldırma
 
-Microsoft Intune cihazlara Basit sertifika kayıt Protokolü (SCEP) ve ortak anahtar şifreleme standartları (PKCS) sertifika ekleyebilirsiniz. Bu sertifikalar cihazı [sildiğinizde](devices-wipe.md#wipe) veya [devre dışı bıraktığınızda](devices-wipe.md#retire) da kaldırılabilir. 
+Microsoft Intune Basit sertifika kayıt Protokolü (SCEP) ve ortak anahtar şifreleme standartları (PKCS) sertifika profilleri cihazlara sertifika eklemek için kullanabilirsiniz. 
 
-Sertifikaların otomatik olarak kaldırıldığı veya cihazda kaldığı bazı diğer senaryolar da vardır. Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikaları üzerindeki etkisi listelenmiştir.
+Bu sertifikalar olabilir ne zaman kaldırıldı, [silme](devices-wipe.md#wipe) veya [devre dışı bırakma](devices-wipe.md#retire) cihaz. Ayrıca vardır burada sertifikaları otomatik olarak kaldırılır senaryosunu ve burada sertifikalar cihazda kalır. Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikaları üzerindeki etkisi listelenmiştir.
 
 > [!NOTE]
 > Kaldırın ve yüklenmekte olan bir kullanıcı için sertifikaları iptal etmek için şirket içi Active Directory veya Azure Active Directory (Azure AD) kaldırılır, bu adımları sırasıyla izleyin:
 >
 > 1. Silme veya kullanıcının cihazı devre dışı.
 > 2. Kullanıcı, şirket içi Active Directory veya Azure AD kaldırın.
+
+## <a name="manually-deleted-certificates"></a>El ile silinmiş sertifikaları  
+
+Bir sertifikayı el ile silinmesini platformları ve SCEP veya PKCS sertifika profilleri tarafından sağlanan sertifikalar arasında geçerli bir senaryodur. Örneğin, bir sertifika ilkesi tarafından hedeflenen cihaz kaldığında bir kullanıcı bir CİHAZDAN bir sertifika silebilir.  
+
+Sertifika silindikten sonra bu senaryoda, cihazı Intune hizmetine giriş denetlediğinde beklenen sertifika eksik olarak uyumsuz olduğu anlaşıldığında. Intune daha sonra cihaz uyumluluk için geri yüklemek için yeni bir sertifika verir. Sertifikayı geri yüklemek için ek Eylem gerekmiyor.  
+
 
 ## <a name="windows-devices"></a>Windows cihazları
 

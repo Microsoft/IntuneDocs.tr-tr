@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: 91df913c6daa5cad5f004cff7e448e8a34d63925
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389254"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416872"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows cihazlar için Intune kayıt yöntemleri
 
@@ -41,7 +41,7 @@ Kullanıcılar Windows cihazlarını bu yöntemlerden birini kullanarak kendiler
 Yönetici (Azure AD premium abonelikleri ile kullanılabilir) otomatik kayıt yapılandırdıysa, kullanıcının yalnızca kendi kimlik bilgilerini bir kere girmeniz gerekir. Aksi halde, bunlar ayrı olarak yalnızca MDM kaydı kaydetmek ve kimlik bilgilerini girmek gerekir.  
 - **Yalnızca MDM kaydı** sağlayan kullanıcıları kaydetmek mevcut bir çalışma, Active Directory veya Azure Active Directory'ye katılmış bilgisayarı Intune'a. Kullanıcıların, var olan Windows PC Ayarları'ndan kaydedin. Bu yöntem, cihazın Azure Active Directory'ye kaydetmediği önerilmez. Ayrıca, koşullu erişim gibi özelliklerinin kullanımını engeller.
 - [Azure Active Directory (Azure AD) birleştirme](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) – cihazın Azure Active Directory'ye katılır ve Windows için kendi Azure AD kimlik bilgileriyle oturum açmalarını sağlar. Otomatik kayıt etkinse, cihaz Intune'da otomatik olarak kaydedilir. Otomatik kayıt avantajı, kullanıcı için tek adımlı bir işlemdir. Aksi halde, bunlar ayrı olarak yalnızca MDM kaydı kaydetmek ve kimlik bilgilerini girmek gerekir. İlk Windows OOBE sırasında veya ayarları, kullanıcıların bu yolla kayıt. Cihaz, ıntune şirket şirkete ait cihaz olarak işaretlenir.
-- [AutoPilot](enrollment-autopilot.md) - Azure AD Join otomatikleştirir ve yeni şirkete ait cihazları Intune'a kaydeder. Bu yöntem,-deneyimini basitleştirir ve özel işletim sistemi görüntülerini cihazları üzerine uygulamak için ihtiyacını ortadan kaldırır. Yöneticileri, Autopilot cihazları yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeler, profiller, uygulamalar ve yönetebilirsiniz.  Autopilot dağıtım iki tür vardır: [Kendi kendine modu dağıtımı](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (için bilgi noktaları, dijital Tabela veya paylaşılan cihazlar gibi) ve [kullanıcı temelli modu](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (Geleneksel kullanıcılar için). 
+- [AutoPilot](enrollment-autopilot.md) - Azure AD Join otomatikleştirir ve yeni şirkete ait cihazları Intune'a kaydeder. Bu yöntem,-deneyimini basitleştirir ve özel işletim sistemi görüntülerini cihazları üzerine uygulamak için ihtiyacını ortadan kaldırır. Yöneticileri, Autopilot cihazları yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeler, profiller, uygulamalar ve yönetebilirsiniz.  Autopilot dağıtım dört tür vardır: [Kendi kendine modu dağıtımı](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (bilgi noktaları, dijital Tabela veya için paylaşılan cihazlar), [kullanıcı temelli modu](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (Geleneksel, kullanıcılar için) [beyaz Eldiven] (https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/white-glove) iş ortakları veya BT personeliniz bu nedenle bir Windows 10 bilgisayarı ön sağlamasını yapma sağlar, BT tam olarak yapılandırılmış ve çalışma ortamına hazır durumda ve [var olan cihazlar için Autopilot] (https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/existing-devices) , Windows 10 'un en son sürümü mevcut cihazlarınızı kolayca dağıtmanızı sağlar.
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Intune yönetici tabanlı kayıt
 
