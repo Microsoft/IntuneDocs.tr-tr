@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfc8d782f2d7acee0e935790378d5bedd89a1ac0
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 8c2dab0855bd0f6344584e7bbd80ce17f829fa84
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403557"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468746"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -45,6 +45,7 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 ### Device configuration
 ### Device enrollment
 ### Device management
+### Device security
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
@@ -53,7 +54,129 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca bulabilirsiniz 
 
 <!-- ########################## -->
 
-## <a name="week-of-june-17-2019"></a>17 Haziran 2019 haftası   
+## <a name="week-of-june-24-2019"></a>24 Haziran 2019 haftası 
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Tarayıcı kuruluş verilerine bağlanan yapılandırabilirsiniz <!-- 3145939 -->
+Android ve iOS cihazlarında Intune uygulama koruma ilkelerini (APP) artık izin Org web bağlantılarını Intune Managed Browser ya da Microsoft Edge ötesinde belirli bir tarayıcı aktarın.  Uygulama hakkında daha fazla bilgi için bkz. [uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
+
+#### <a name="all-apps-page-identifies-onlineoffline-microsoft-store-for-business-apps--4089647---"></a>Tüm uygulamalar sayfasında çevrimiçi/çevrimdışı Microsoft Store iş uygulamalarına yönelik tanımlar<!--4089647 -->
+**Tüm uygulamalar** sayfası artık içerir (MSFB) iş uygulamaları olarak çevrimiçi veya çevrimdışı uygulamalar için Microsoft Store tanımlamak için etiketleme. Her MSFB uygulamasını şimdi bir son eki içeren **çevrimiçi** veya **çevrimdışı**. Uygulama Ayrıntıları sayfasına da içeren **lisans türü** ve **destekler, cihaz bağlam yüklemesi** (yalnızca çevrimdışı lisanslı uygulamaları) bilgi.
+
+#### <a name="company-portal-app-on-shared-devices---4393553---"></a>Paylaşılan cihazlar üzerindeki Şirket portalı uygulaması <!--4393553 -->
+Kullanıcılar, paylaşılan cihazlar üzerindeki Şirket portalı uygulaması artık erişebilirsiniz. Son kullanıcıların görebileceği bir **paylaşılan** cihaz kutucuğuna etiketi. Bu uygulama sürümü 10.3.45609.0 Şirket portalı için geçerlidir ve daha sonra.
+
+#### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>Yeni Şirket portalı web sayfasından yüklü tüm uygulamaları görüntüle <!-- 4224326 -->
+Şirket portalı Web sitesine yeni **yüklü uygulamaların** sayfası, bir kullanıcının cihazlarında yüklü olan tüm yönetilen uygulamalar (gerekli ve kullanılabilir) listeler. Atama türü ek olarak, kullanıcılar uygulamanın yayımcısı, yayımlanma tarihi ve geçerli yükleme durumunu görebilirsiniz. Herhangi bir uygulama gerekli veya kullanılabilir kullanıcılarınıza oluşturmadıysanız, hiçbir şirket uygulamaları yüklü olan açıklayan bir ileti görürler. Yeni sayfa Web'de görmek için Git [Şirket portalı Web sitesine](https://portal.manage.microsoft.com) tıklatıp **yüklü uygulamaların**.  
+
+#### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>Yeni görünüm tüm yönetilen uygulamalar cihazda yüklü uygulama görmesine olanak tanır <!-- 2352913 -->  
+Windows için Şirket portalı uygulaması, bir kullanıcı cihazında yüklü olan tüm yönetilen uygulamalar (gerekli ve kullanılabilir) artık listeler. Kullanıcılar ayrıca denenen ve bekleyen uygulama yüklemelerini ve bunların geçerli durumlarını görebilirsiniz. Uygulamaları gerekli veya kullanılabilir kullanıcılarınıza oluşturmadıysanız, hiçbir şirket uygulamaları yüklü olan açıklayan bir ileti görürler. Yeni görünümü görmek için Şirket portalı Gezinti bölmesine gidin ve seçin **uygulamaları** > **yüklü uygulamaların**.    
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="configure-settings-for-kernel-extensions-on-macos-devices----2043024---"></a>MacOS cihazlarında çekirdek uzantıları için ayarları yapılandırma <!-- 2043024 -->
+MacOS cihazlarında cihaz yapılandırma profili oluşturabilirsiniz (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > seçin **macOS** platform için). Bu güncelleştirme, yeni bir grup yapılandırmanıza ve çekirdek uzantıları cihazlarınızda kullanmanıza olanak tanıyan ayarlar içerir. Belirli uzantılar ekleyin veya belirli bir iş ortağı ya da Geliştirici tüm uzantıları izin verebilirsiniz.
+
+Bu özellik hakkında daha fazla bilgi için bkz: [çekirdek uzantılarına genel bakış](kernel-extensions-overview-macos.md) ve [çekirdek uzantı ayarları](kernel-extensions-settings-macos.md).
+
+İçin geçerlidir: macOS 10.13.2 ve üzeri
+
+#### <a name="apps-from-the-store-only-setting-for-windows-10-devices-includes-more-configuration-options----2697002---"></a>Daha fazla yapılandırma seçeneği yalnızca Windows 10 cihazlar için ayar Mağazası'ndan uygulama içerir <!-- 2697002 -->
+Windows cihazları için cihaz kısıtlama profili oluşturduğunuzda, kullanabileceğiniz **uygulamaları yalnızca mağazadan** kullanıcılar, uygulamaları yalnızca Windows App Store ' yükler. Bu nedenle ayarlama (**cihaz Yapılandırması**  >  **Profilleri** > **profili oluşturma** > **Windows 10 ve üzeri** Platform > **cihaz kısıtlamaları** profil türü için). Bu güncelleştirmede, bu ayar, daha fazla seçenek desteklemek için genişletilir. 
+
+Yeni ayarları görmek için Git [izin vermek veya özellikleri kısıtlamak için Windows 10 (ve üzeri) cihaz ayarları](device-restrictions-windows-10.md#app-store).
+
+Şunun için geçerlidir: Windows 10 ve üzeri
+
+#### <a name="deploy-multiple-zebra-mobility-extensions-device-profiles-to-a-device-same-user-group-or-same-devices-group----4089955---"></a>Bir cihaz, aynı kullanıcı grubuna veya aynı cihaz grubu birden çok Zebra mobility uzantıları cihaz profilleri dağıtma <!-- 4089955 -->
+Intune, Intune'da yerleşik olmayan Zebra cihazların ayarlarını özelleştirmek için bir cihaz yapılandırma profilinde de Zebra mobility Uzantıları (MX) kullanabilirsiniz. Şu anda tek bir cihaz için bir profil dağıtabilirsiniz. Bu güncelleştirmede birden çok profilleri dağıtabilirsiniz:
+- Aynı kullanıcı grubunu
+- Aynı aygıtları grubu
+- Tek bir cihaz
+
+[Kullanma ve Microsoft Intune Zebra Mobility uzantılarıyla Zebra cihazları yönetme](android-zebra-mx-overview.md) Intune'da MX kullanmayı gösterir.
+
+Şunun için geçerlidir: Android
+
+#### <a name="some-kiosk-settings-on-ios-devices-are-set-using-block-replacing-allow----4404075----"></a>"Blok"İzin ver"değiştirme", kullanarak bazı iOS cihazlarda bilgi noktası ayarlarını ayarlayın <!-- 4404075  -->
+İOS cihazlarında cihaz kısıtlama profili oluşturduğunuzda (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >  **iOS** Platform > **cihaz kısıtlamaları** profil türü için > **bilgi noktası**), ayarladığınız **otomatik kilit**, **Açma/kapama**, **ekran döndürme**, **ekran Uyku düğmesi**, ve **ses düzeyi düğmelerine**. 
+
+Bu güncelleştirmede değerler **blok** (özellik engelleyen) ve **yapılandırılmadı** (özellik izin verir). Ayarları görmek için Git [izin vermek veya özellikleri kısıtlamak için iOS cihaz ayarlarını](device-restrictions-ios.md#kiosk-supervised-only). 
+
+Şunun için geçerlidir: iOS
+
+#### <a name="use-face-id-for-password-authentication-on-ios-devices----4490704---"></a>İOS cihazlarda parola kimlik doğrulaması için face ID kullanın <!-- 4490704 -->
+İOS cihazları için cihaz kısıtlama profili oluşturduğunuzda, parmak izi parolasını kullanabilirsiniz. Bu güncelleştirme, parmak izi parola ayarlarını da yüz tanımaya izin ver (**cihaz Yapılandırması** > **profilleri** > **profili**  >  **iOS** Platform > **cihaz kısıtlamaları** profil türü için > **parola**). Sonuç olarak, aşağıdaki ayarları değiştirildi:
+
+- **Parmak iziyle kilit açma** artık **Touch ID ve Face ID ile kilidini**.
+- **Parmak izi değişikliği (yalnızca denetimli)** artık **Touch ID ve Face ID değişikliği (yalnızca denetimli)** .
+
+Face ID bulunan iOS 11.0 ve sonraki sürümleri. Ayarları görmek için Git [izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarlarını](device-restrictions-ios.md#password).
+
+Şunun için geçerlidir: iOS
+
+#### <a name="restricting-gaming-and-app-store-features-on-ios-devices-is-now-dependent-on-ratings-region----4593948---"></a>Oyun ve uygulama mağazası özelliklerini iOS cihazlarında kısıtlama artık derecelendirme bölgesine bağlıdır <!-- 4593948 -->
+İOS cihazlarında izin vermek veya kısıtlamak oyun, uygulama mağazasından ve belgeleri görüntülemek için ilgili özellikleri (**cihaz Yapılandırması** > **profilleri**  >   **Profil oluşturma** > **iOS** Platform > **cihaz kısıtlamaları** profil türü için > **App Store, belge görüntüleme, oyun**). Amerika Birleşik Devletleri gibi derecelendirme bölgesi de seçebilirsiniz. 
+
+Bu güncelleştirmede, **uygulamaları** özellik alt olacak şekilde taşınır **derecelendirme bölgesi**ve bağımlı olduğu **derecelendirme bölgesi**. Ayarları görmek için Git [izin vermek veya Intune kullanarak özellikleri kısıtlamak için iOS cihaz ayarlarını](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+Şunun için geçerlidir: iOS
+
+### <a name="device-enrollment"></a>Cihaz kaydı
+
+#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>Windows Autopilot sıfırlama aygıtın birincil kullanıcısı kaldırır <!-- 4156123 -->
+Bir cihaza AutoPilot sıfırlama kullanıldığında, cihazın birincil kullanıcısı kaldırılacak. Sıfırlamadan sonra oturum açtığı sonraki kullanıcının birincil kullanıcı olarak ayarlanır.
+
+#### <a name="windows-autopilot-supoprt-for-hybrid-azure-ad-join----4809146--"></a>Hibrit Azure AD'ye katılımı için Windows Autopilot destek <!-- 4809146-->
+Windows Autopilot var olan cihazlar için artık hibrit Azure AD'ye katılımı (var olan Azure AD Join destek ek olarak) destekler. Windows 10 sürüm 1809 ve üzeri cihazlarda geçerlidir. Daha fazla bilgi için [ var olan cihazlar için Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
+
+
+
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="see-the-security-patch-level-for-android-devices----4461911---"></a>Android cihazlar için güvenlik düzeltme eki düzeyi bakın <!-- 4461911 -->
+Artık Android cihazlar için güvenlik düzeltme eki düzeyini de görebilirsiniz. Bunu yapmak için **Intune** > **cihazları** > **tüm cihazlar** > bir cihaz seçin > **donanım**.
+Düzeltme eki düzeyi listelenen **işletim sistemi** bölümü.
+
+#### <a name="assign-scope-tags-to-all-managed-devices-in-a-security-group----3173810---"></a>Bir güvenlik grubundaki tüm yönetilen cihazlar için kapsam etiketleri Ata <!-- 3173810 -->
+Kapsam etiketleri artık bir güvenlik grubuna atayabilirsiniz ve güvenlik grubundaki tüm cihazlar aynı zamanda bu kapsam etiketleri ile ilişkili olacaktır. Bu gruplardaki tüm cihazlar aynı zamanda kapsam etiketi atanır. Bu özelliği ile kapsam etiketleri geçerli cihaz kapsamı etiketleri akışı kümesi kapsam etiketleri üzerine yazar. Daha fazla bilgi için [kullanım RBAC ve kapsam etiketleri için Dağıtılmış BT](scope-tags.md). (Gelecekteki bir güncelleştirmede kapsam etiketleri cihazlara atamak için geçerli akış salt okunur yapılır.)
+
+### <a name="device-security"></a>Cihaz güvenliği
+
+#### <a name="use-keyword-search-with-security-baselines----wnready---"></a>Anahtar sözcük arama güvenlik taban çizgileri kullanın <!-- WNready -->
+Ne zaman oluşturduğunuzda veya düzenlediğinizde [güvenlik temeli profilleri](security-baselines.md#create-the-profile), anahtar sözcükleri yeni belirtebilirsiniz *arama* arama ölçütlerinizi içeren bu ayarlar, var olan grupları filtrelemek için çubuğu. 
+
+#### <a name="the-security-baselines-feature-is-now-generally-available-----3785395---"></a>Güvenlik temellerini özelliği genel kullanıma sunulmuştur  <!-- 3785395 -->
+**Güvenlik temellerini** özellik önizlemeden ve genel kullanıma (GA) sunuldu.  Bunun anlamı özellikleri, üretim amaçlı kullanım için hazırdır. Ancak, tek bir temel Şablon Önizleme olarak kalır ve değerlendirilen ve kendi zamanlamalara göre genel kullanıma sunulan.
+
+#### <a name="the-mdm-security-baseline-template-is-now-generally-available------3794072-4217151--3534649---"></a>MDM güvenlik temel şablon genel kullanıma sunulmuştur   <!-- 3794072, 4217151,  3534649 -->
+MDM güvenlik temel şablon önizlemeden taşınmıştır ve genel kullanıma (GA) sunuldu. GA şablon olarak tanımlanan **Spring 2019 güncelleştirme (19 saat 1) için MDM güvenlik temeli**.  Yeni bir şablon ve önizleme sürümünden yükseltme değil budur.  Yeni şablon olarak gözden geçirmek ihtiyacınız [içerdiği ayarları](security-baseline-settings-windows.md)ve sonra cihazınıza şablonu dağıtmak için yeni profilleri oluşturun. Diğer güvenlik temeli şablonları Önizleme'de kalır. Kullanılabilir temel bir listesi için bkz. [kullanılabilir güvenlik Temelleri](security-baselines.md#available-security-baselines).  
+
+Yeni bir şablonu olan yanı sıra *Spring 2019 güncelleştirme (19 saat 1) için MDM güvenlik temeli* şablonu, geliştirme konumuza kısa süre önce duyurduk iki ayarları içerir:  
+- Kilit üzerinde: Ses, kilit ekranı uygulamalardan etkinleştir  
+- DeviceGuard: Cihazların sonraki yeniden başlatmada sanallaştırma tabanlı güvenlik (VBS) kullanın.  
+
+*Spring 2019 güncelleştirme (19 saat 1) için MDM güvenlik temeli* ayrıca eklenmesi birkaç yeni ayar, diğerleri kaldırılmasını ve bir düzeltmesini bir ayarın varsayılan değeri içerir. Önizleme değişiklikleri genel kullanım için ayrıntılı bir listesi için bkz. **yeni şablon Değiştirilenler**.
+
+#### <a name="security-baseline-versioning-----3194322---"></a>Güvenlik temeli sürüm oluşturma  <!-- 3194322 -->
+Güvenlik temellerini Intune için sürüm oluşturma desteği. Bu destek sayesinde, her bir güvenlik taban çizgisi yeni sürümlerini yayımlanan gibi temel sürüme yeniden oluşturun ve sıfırdan yeni bir temeli dağıtmak zorunda kalmadan kullanmak için mevcut güvenlik temel profil güncelleştirebilirsiniz. Ayrıca, Intune konsolunda farklı temel sürümler kaç profillerinizi kullanın, taban çizgisi kullanmak sahip ayrı profillerin sayısı gibi her bir taban çizgisi hakkında bilgi görüntüleyebileceğiniz ve ne zaman belirli bir en son sürümü Güvenlik temeli oluştu.  Daha fazla bilgi için **güvenlik temellerini**.
+
+#### <a name="the-use-security-keys-for-sign-in-setting-has-moved-----4501151---"></a>Oturum açma ayarı için güvenlik tuşlarını kullanın taşındı  <!-- 4501151 -->
+Kimlik koruması adlı cihaz yapılandırma ayarını **oturum açmak için güvenlik tuşlarını** olarak alt ayarı artık bulunamıyor *Windows iş için Hello'yu Yapılandır*. Artık iş için Windows Hello kullanımını bile etkinleştirme, her zaman kullanılabilir bir üst düzey ayardır. Daha fazla bilgi için [kimlik koruması](identity-protection-windows-settings.md).
+
+### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
+
+#### <a name="new-permissions-for-assigned-group-admins------4504437-----"></a>Yeni atanan grup yöneticileri izinleri   <!-- 4504437   -->
+Intune'un yerleşik Okul Yöneticisi rolüne sahip şimdi oluşturun, okuyun, güncelleştirin ve yönetilen uygulamalar için (CRUD) izinlerini silme. Eğitim için ıntune'da bir Grup yönetici olarak atanırsanız şimdi oluşturun, görüntüleyin, güncelleştirebilir ve iOS MDM anında iletme sertifikası, iOS MDM sunucusu belirteçleri ve iOS VPP belirteçleri ile birlikte silmek, bu güncelleştirme anlamına gelir [tüm sahip olduğunuz mevcut izinleri ](https://docs.microsoft.com/intune-education/group-admin-delegate#group-admin-permissions). Bu eylemlerden birini yararlanmak için Git **Kiracı ayarları** > **iOS cihaz yönetimini**.  
+
+#### <a name="applications-can-use-the-graph-api-to-call-read-operations-without-user-credentials----4655885---"></a>Kullanıcı kimlik bilgileri olmadan okuma işlemleri çağırmak için Graph API uygulamaları kullanabilir <!-- 4655885 -->
+Uygulamalar, Intune Graph API'si okuma işlemleri kullanıcı kimlik bilgileri olmadan uygulama kimliğiyle arayabilir. Intune için Microsoft Graph API'sine erişim hakkında daha fazla bilgi için bkz. [Microsoft Graph'ta Intune ile çalışma](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
+
+#### <a name="apply-scope-tags-to-microsoft-store-for-business-apps----4392555---"></a>Kapsam etiketleri için Microsoft Store iş uygulamaları için geçerlidir. <!-- 4392555 -->
+Artık iş uygulamaları için Microsoft Store için kapsam etiketleri uygulayabilirsiniz. Kapsam etiketleri hakkında daha fazla bilgi için bkz: [dağıtılmış için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanmak BT](scope-tags.md).
+
+## <a name="week-of-june-17-2019"></a>17 Haziran 2019 haftası 
 
 ### <a name="app-management"></a>Uygulama yönetimi
 
@@ -63,11 +186,11 @@ Android için yeni özellikler Intune uygulama (Önizleme) ekledik. Tam olarak y
 * Görüntüleyin ve yönetin Intune Şirket portalı ya da Microsoft Intune uygulama üzerinden kayıtlı cihazlar.    
 * Kuruluşlarında desteğine başvurun.    
 * Geribildirimler, Microsoft'a gönderin.    
-* Görüntülerseniz hüküm ve koşullar ve kuruluşun ayarlayın.  
+* Görüntülerseniz hüküm ve koşullar ve kuruluşun ayarlayın.    
 
 ## <a name="week-of-june-10-2019"></a>10 Haziran 2019 haftası 
 
-### <a name="app-management"></a>Uygulama yönetimi  
+### <a name="app-management"></a>Uygulama yönetimi
 
 #### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Yeni örnek uygulamalar Github'da kullanılabilir Intune SDK'sı tümleştirmesi gösteriliyor <!-- 2653471 -->
 GitHub hesabı msintuneappsdk iOS (Swift), Android, Xamarin.iOS, Xamarin Forms ve Xamarin.Android için yeni örnek uygulamalar eklemiştir. Bu uygulamalar, mevcut belgelerimize desteklemek ve Intune uygulama SDK'sı kendi mobil uygulamalarınızla nasıl tümleştireceğinizi nasıl gösterimlerine sağlamak için yöneliktir. Ek Intune SDK'sı Kılavuzu gerektiren bir uygulama geliştiricisiyseniz, aşağıdaki bağlantılı örneklere bakın:

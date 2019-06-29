@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045626"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468750"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha fazla bilgi edinin. Biz düzenli olarak ekleyin ve Intune Şirket portalı uygulamasını ve Web sitesi geliştirmek. Bu makalede, bir Intune Yöneticisi olduğunuz veya kişi desteklemek için gereken bilgileri sağlanmaktadır:
@@ -33,6 +33,29 @@ Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha faz
 Bir çalışan veya Öğrenci kullanıyorsanız ekran görüntüleri ve bağlantıları Şirket portalı Yardım belgelerine göz atın emin olun. Şirket portalı uygulamasını kullanma hakkında daha fazla bilgi için bkz. [Şirket portalı kullanıcı Yardım belgeleri](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-june-24-2019"></a>24 Haziran 2019 haftası  
+
+### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>Yeni Şirket portalı web sayfasından yüklü tüm uygulamaları görüntüle <!-- 4224326 -->
+Şirket portalı Web sitesine yeni **yüklü uygulamaların** sayfası, bir kullanıcının cihazlarında yüklü olan tüm yönetilen uygulamalar (gerekli ve kullanılabilir) listeler. Atama türü ek olarak, kullanıcılar uygulamanın yayımcısı, yayımlanma tarihi ve geçerli yükleme durumunu görebilirsiniz. Herhangi bir uygulama gerekli veya kullanılabilir kullanıcılarınıza oluşturmadıysanız, hiçbir şirket uygulamaları yüklü olan açıklayan bir ileti görürler. Yeni sayfa Web'de görmek için Git [Şirket portalı Web sitesine](https://portal.manage.microsoft.com) tıklatıp **yüklü uygulamaların**.   
+
+![Ekran görüntüsü, Şirket portalı Web sitesi, yüklü uygulamalar sayfası.](/intune-user-help/media/intune-installed-apps-1907.png)     
+
+### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>Yeni görünüm tüm yönetilen uygulamalar cihazda yüklü uygulama görmesine olanak tanır <!-- 2352913 -->
+Windows için Şirket portalı uygulaması, bir kullanıcı cihazında yüklü olan tüm yönetilen uygulamalar (gerekli ve kullanılabilir) artık listeler. Kullanıcılar ayrıca denenen ve bekleyen uygulama yüklemelerini ve bunların geçerli durumlarını görebilirsiniz. Uygulamaları gerekli veya kullanılabilir kullanıcılarınıza oluşturmadıysanız, hiçbir şirket uygulamaları yüklü olan açıklayan bir ileti görürler. Yeni görünümü görmek için Şirket portalı Gezinti bölmesine gidin ve seçin **uygulamaları** > **yüklü uygulamaların**.   
+
+![Yüklü uygulamalar sayfası olan Windows 10 için Şirket portalı uygulamasının örnek ekran görüntüsü. ](/intune-user-help/media/installed-apps-cp-1906.png)  
+
+
+## <a name="week-of-june-17-2019"></a>17 Haziran 2019 haftası  
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Yeni Microsoft Intune uygulama özellikleri
+Android için yeni özellikler Intune uygulama (Önizleme) ekledik. Tam olarak yönetilen Android cihazlarda kullanıcıların artık şunları yapabilirsiniz:  
+
+* Görüntüleyin ve yönetin Intune Şirket portalı ya da Microsoft Intune uygulama üzerinden kayıtlı cihazlar.    
+* Kuruluşlarında desteğine başvurun.    
+* Geribildirimler, Microsoft'a gönderin.    
+* Görüntülerseniz hüküm ve koşullar ve kuruluşun ayarlayın. 
 
 ## <a name="week-of-april-15-2019"></a>15 Nisan 2019 haftası  
 

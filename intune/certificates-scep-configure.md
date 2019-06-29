@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: ba7bb3a12e0e634df44bb832f8f35aa166095415
+ms.sourcegitcommit: 34ff5ebe6efaa5b3a2a1db274de0a07c14944a6b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344080"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67463888"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -225,7 +225,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Location                        |      Value      | Type  |      Veriler       |
+   |                        Location                        |      Değer      | Type  |      Data       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |
@@ -507,7 +507,8 @@ Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz ön�
 - Her profili ayrı olarak atasanız da Güvenilen Kök CA’sını ve SCEP veya PKCS profilini de atamanız gerekir. Aksi takdirde SCEP veya PKCS sertifika ilkesi başarısız olur.
 
     > [!NOTE]
-    > iOS’ta aynı sertifika profilini kullanan birden fazla kaynak profili dağıtırsanız, yönetim profilinde bu sertifikanın birden çok kopyasını görmeniz olasıdır.
+    > Bir SCEP sertifika profili bir Wi-Fi veya VPN profilini gibi ek bir profil ile ilişkili olduğunda iOS cihazlarda, cihaz bir sertifika her ek bu profiller için alır. SCEP sertifika isteğiyle teslim birden çok sertifika sahip iOS cihaz sonuçlanır.  
+
 - Ortak yönetim için Intune ve Configuration Manager, Configuration Manager s'te kullanıyorsanız[et iş yükü kaydırıcıyı](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) için *kaynak erişim ilkesi* için **Intune** veya  **Intune Pilot**. Bu ayar Windows 10 istemcileri sertifikası isteme işlemini başlatmak sağlar.  
 
 Profillerin nasıl atanacağı hakkında bilgi için bkz. [cihaz profilleri atama](device-profile-assign.md).
