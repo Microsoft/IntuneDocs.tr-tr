@@ -128,6 +128,8 @@
                   href: migration-guide-drive-adoption.md
                 - name: Tipik geçiş döngüsü
                   href: migration-guide-cycle.md
+        - name: İletişimi planlama
+          href: migration-guide-communication-plan.md
     - name: Intune’u ayarlama
       items:
         - name: Intune'u ayarlama adımları
@@ -198,7 +200,7 @@
               href: windows-enroll.md
             - name: Toplu kayıt
               href: windows-bulk-enroll.md
-            - name: Kayıt durumu sayfası
+            - name: Kayıt Durumu Sayfası
               href: windows-enrollment-status.md
             - name: Windows Autopilot Dağıtım Programı
               href: enrollment-autopilot.md
@@ -269,6 +271,8 @@
           href: device-logout-user.md
         - name: Kullanıcıyı kaldır
           href: device-remove-user.md
+        - name: Birincil kullanıcı bulma
+          href: find-primary-user.md
         - name: macOS cihazını silme
           href: device-erase.md
         - name: Uzaktan denetimli mobil cihazlar
@@ -305,6 +309,7 @@
           href: device-features-configure.md
         - name: Cihaz ayarlarını ve özelliklerini kısıtlama
           href: device-restrictions-configure.md
+          displayName: Device restrictions
         - name: Güncelleştirme sağlama
           href: delivery-optimization-windows.md
           displayName: delivery optimization; updates
@@ -326,6 +331,8 @@
           items:
             - name: Önceden paylaşılan anahtar ile Wi-Fi
               href: wi-fi-profile-shared-key.md
+        - name: macOS üzerinde uzantılar
+          href: kernel-extensions-overview-macos.md
         - name: Eğitim Sınav Zamanı uygulaması
           href: education-settings-configure.md
         - name: Paylaşılan çok kullanıcılı cihazlar
@@ -413,41 +420,46 @@
                       href: mtd-connector-enable.md
                 - name: MTD uygulamaları
                   items:
-                    - name: Lookout’u ayarlama
-                      href: lookout-mobile-threat-defense-connector.md
-                      items:
-                        - name: Lookout ve Intune tümleştirmesi
-                          href: lookout-mtd-connector-integration.md
-                    - name: Symantec'i ayarlama
-                      href: skycure-mobile-threat-defense-connector.md
-                      items:
-                        - name: Symantec ve Intune tümleştirmesi
-                          href: skycure-mtd-connector-integration.md
-                    - name: Check Point’i ayarlama
-                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-                      items:
-                        - name: Check Point ve Intune tümleştirmesi
-                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-                    - name: Zimperium’u ayarlama
-                      href: zimperium-mobile-threat-defense-connector.md
-                      items:
-                        - name: Zimperium ve Intune tümleştirmesi
-                          href: zimperium-mtd-connector-integration.md
-                    - name: Pradeo’yu Ayarlama
-                      href: pradeo-mobile-threat-defense-connector.md
-                      items:
-                        - name: Pradeo ve Intune tümleştirmesi
-                          href: pradeo-mtd-connector-integration.md
                     - name: Better Mobile’ı ayarlama
                       href: better-mobile-threat-defense-connector.md
                       items:
                         - name: Better Mobile ve Intune tümleştirmesi
                           href: better-mobile-mtd-connector-integration.md
+                    - name: Check Point’i ayarlama
+                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                      items:
+                        - name: Check Point ve Intune tümleştirmesi
+                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                    - name: Lookout’u ayarlama
+                      href: lookout-mobile-threat-defense-connector.md
+                      items:
+                        - name: Lookout ve Intune tümleştirmesi
+                          href: lookout-mtd-connector-integration.md
+                    - name: Pradeo’yu Ayarlama
+                      href: pradeo-mobile-threat-defense-connector.md
+                      items:
+                        - name: Pradeo ve Intune tümleştirmesi
+                          href: pradeo-mtd-connector-integration.md
                     - name: Sophos Mobile'ı ayarlama
                       href: sophos-mtd-connector.md
                       items:
                         - name: Sophos Mobile ve Intune tümleştirmesi
                           href: sophos-mtd-connector-integration.md
+                    - name: Symantec'i ayarlama
+                      href: skycure-mobile-threat-defense-connector.md
+                      items:
+                        - name: Symantec ve Intune tümleştirmesi
+                          href: skycure-mtd-connector-integration.md
+                    - name: Wandera’yı ayarlama
+                      href: wandera-mtd-connector.md
+                      items:
+                        - name: Wandera ve Intune tümleştirmesi
+                          href: wandera-mtd-connector-integration.md
+                    - name: Zimperium’u ayarlama
+                      href: zimperium-mobile-threat-defense-connector.md
+                      items:
+                        - name: Zimperium ve Intune tümleştirmesi
+                          href: zimperium-mtd-connector-integration.md
             - name: Microsoft Defender
               items:
                 - name: Microsoft Defender ATP
@@ -745,6 +757,8 @@
                   href: vpn-settings-macos.md
                 - name: Wi-Fi
                   href: wi-fi-settings-macos.md
+                - name: Uzantıları
+                  href: kernel-extensions-settings-macos.md
                 - name: Özel
                   href: custom-settings-macos.md
         - name: Windows 10 ve üzeri
@@ -782,7 +796,7 @@
             - name: Güvenlik temelleri
               items:
                 - name: Windows 10 temel ayarları
-                  href: security-baseline-settings-windows.md
+                  href: security-baseline-settings-mdm.md
                 - name: Microsoft Defender ATP temel ayarları
                   href: security-baseline-settings-defender-atp.md
             - name: Windows Update ayarları
@@ -970,6 +984,10 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Uç nokta korumasıyla ilgili yaygın hatalar
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: Güvenlik temelleri arşivi
+          items:
+            - name: Arşivlenmiş MDM güvenlik temelleri
+              href: security-baseline-settings-mdm-archive.md
     - name: Senaryo uygulama kılavuzları
       items:
         - name: Exchange Online’ı Koruma
