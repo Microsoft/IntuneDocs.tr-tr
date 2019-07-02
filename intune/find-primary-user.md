@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67322869"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500654"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Birincil kullanıcının bir Intune cihaz bulma
 
@@ -60,15 +60,15 @@ Intune otomatik olarak birincil kullanıcı cihazlarına sırasında veya hemen 
 | Windows | Azure AD'ye katılım (dışı deneyimini) | Kullanıcı kaydetme | Kayıt sırasında | 
 | Windows | Azure AD'ye katılım (Autopilot deneyimini dışında) | Kullanıcı kaydetme | Kayıt sırasında | 
 | Windows | Yalnızca MDM sistemine kaydetme | Kullanıcı kaydetme | Kayıt sırasında | 
-| Windows | Hybrid AADJ + automatic enrollment GPO | İlk kullanıcı, oturum açmak için | İlk kullanıcı, oturum açtığında | 
-| Windows | Ortak yönetim | İlk kullanıcı, oturum açmak için | İlk kullanıcı, oturum açtığında | 
-| Windows | Azure AD'ye katılım (toplu kayıt belirteç) | None | Geçerli değil | 
-| Windows | Azure AD'ye katılım (şirket içinde dağıtma Autopilot mod) | Yok. | Geçerli değil | 
+| Windows | Hybrid AADJ + automatic enrollment GPO | Windows için oturum açmak için ilk kullanıcı | Ne zaman ilk Windows için oturum açtığında| 
+| Windows | Ortak yönetim | Windows için oturum açmak için ilk kullanıcı | Ne zaman ilk Windows için oturum açtığında | 
+| Windows | Azure AD'ye katılım (toplu kayıt belirteç) | Yok. | Geçerli değil | 
+| Windows | Azure AD'ye katılım (şirket içinde dağıtma Autopilot mod) | None | Geçerli değil | 
 | Platformlar arası | Şirket portalı uygulaması ile kullanıcı odaklı kaydı | Kullanıcı kaydetme | Kayıt sırasında |
 | Platformlar arası | Cihaz kayıt Yöneticisi (DEM) | DEM kullanıcısı kaydetme | Kayıt sırasında |
 | iOS, macOS | Apple cihaz kaydı (kullanıcı benzeşimi ile DEP'in otomatik | Kullanıcı kaydetme | Kayıt sırasında |
-| iOS, macOS | Apple cihaz kaydı'nı (DEP kullanıcı benzeşimi olmadan) otomatik | None | Geçerli değil |
-| Android | Android şirketin sahip olduğu ve ayrılmış cihazları | Yok. | Geçerli değil |
+| iOS, macOS | Apple cihaz kaydı'nı (DEP kullanıcı benzeşimi olmadan) otomatik | Yok. | Geçerli değil |
+| Android | Android şirketin sahip olduğu ve ayrılmış cihazları | None | Geçerli değil |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>Birincil kullanıcı ve Azure AD cihaz sahibi
 Bazı durumlarda, Intune birincil kullanıcı Azure AD cihazın farklı olabilir **sahibi** özelliği (altında görüntülenebilir **cihazları** > **Azure AD cihazları**). Azure AD cihaz sahibi, Azure Active Directory cihaz kaydı sırasında eklenir.

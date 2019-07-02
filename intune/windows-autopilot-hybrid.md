@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb9d1f52ccb147dc9a412f3cb7b601e3b18f214a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389329"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494541"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot'ı kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -163,7 +163,7 @@ Henüz kaydedilmemiş cihazlarınız varsa, bunları kendiniz kaydedebilirsiniz.
 
 ### <a name="register-devices-from-an-oem"></a>OEM cihazlarını kaydetme
 
-Yeni cihaz satın alırken bazı OEM’ler cihazları sizin için kaydedebilir. Daha fazla bilgi için bkz. [Windows Autopilot sayfası](http://aka.ms/WindowsAutopilot).
+Yeni cihaz satın alırken bazı OEM’ler cihazları sizin için kaydedebilir. Daha fazla bilgi için bkz. [Windows Autopilot sayfası](https://aka.ms/WindowsAutopilot).
 
 Autopilot cihazlarınızı olduğunda *kayıtlı*, Intune'a kaydolduktan önce üç yerde (adlarla seri numaralarına ayarlayın) görüntülenme:
 - **Autopilot cihazları** Azure portalında ıntune bölmesi. Seçin **cihaz kaydı** > **Windows kayıt** > **cihazları**.

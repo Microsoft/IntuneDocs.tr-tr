@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d207d1ac51da5b34f48aeffd83791bdbb40bf971
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044612"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494570"
 ---
 # <a name="plan-communications"></a>İletişimi planlama 
 İletişim planı, bir Intune geçişi için önemli bir öğedir. Son kullanıcıları eğitmek size yardımcı olması için aşağıdaki araçları ve şablonları sağlanır. Intune benimseme Seti, e-posta şablonları, bir Intune kayıt kılavuzunu ve son kullanıcı kaydı için yol gösterici videoları bağlantılar içerir.  
 
-İndirin:  [Intune benimseme Seti](http://aka.ms/IntuneAdoptionKit)
+İndirin:  [Intune benimseme Seti](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>E-posta Şablonları 
 Aşağıdaki e-posta iletişim planını öneririz. İletişim planınıza uyarlamak şablonlar sağladık:

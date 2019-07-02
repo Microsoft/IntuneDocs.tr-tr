@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d8445c20b658cc7a41ed5b53df16274dbbeda629
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412725"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494625"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -155,7 +155,7 @@ Aşağıdaki örnek, bir basit REST istemcisi içerir. Kod, .Net kitaplığında
 
 1. **Microsoft Visual Studio**’yu açın.
 2. **Dosya** > **Yeni Proje**’yi seçin. **Visual C#** ’yi genişletin ve **Konsol Uygulaması (.Net Framework)** öğesini seçin.
-3. Projeyi ` IntuneDataWarehouseSamples` olarak adlandırın, projeyi kaydetmek istediğiniz konuma göz atın ve **Tamam**’a tıklayın.
+3. Projeyi `IntuneDataWarehouseSamples` olarak adlandırın, projeyi kaydetmek istediğiniz konuma göz atın ve **Tamam**’a tıklayın.
 4. Çözüm Gezgini’nde çözümün adına sağ tıklayın ve daha sonra **Çözüm için NuGet Paketlerini Yönetme**’ye tıklayın. **Gözat**’a tıklayın, daha sonra arama kutusuna `Microsoft.IdentityModel.Clients.ActiveDirectory` yazın.
 5. Paketi seçin, Çözümünüz için Paketleri Yönetme altında **IntuneDataWarehouseSamples**’a tıklayın ve daha sonra **Yükle**’yi seçin.
 6. NuGet paket lisansını kabul etmek için **Kabul Ediyorum**’a tıklayın.

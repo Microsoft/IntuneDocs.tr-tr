@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: e458558d488c9bbca2c2ed78255be103a5ac79f0
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804693"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494380"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune tek başına - Win32 Uygulama Yönetimi
 
@@ -65,7 +65,7 @@ Kullanım [Microsoft Win32 içerik hazırlığı aracını](https://go.microsoft
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Help    |
 |    `-c <setup_folder>`     |    Tüm Kurulum dosyaları klasörü. Bu klasördeki tüm dosyalar sıkıştırılmadan *.intunewin* dosya.    |
-|   ` -s <setup_file>`     |    Kurulum dosyası (*setup.exe* veya *setup.msi* gibi).    |
+|    `-s <setup_file>`     |    Kurulum dosyası (*setup.exe* veya *setup.msi* gibi).    |
 |    `-o <output_folder>`     |    Oluşturulan *.intunewin* dosyası için çıkış klasörü.    |
 |    `-q`       |    Sessiz mod    |
 
@@ -95,7 +95,7 @@ Başvurmak *license.txt* göreli yolu kullanarak dosya *licenses\license.txt*.
 
 Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olacak yönergeler sağlar.
 
-### <a name="step-1-specify-the-software-setup-file"></a>1. adım: Yazılım kurulum dosyasını belirtme
+### <a name="step-1-specify-the-software-setup-file"></a>1\. adım: Yazılım kurulum dosyasını belirtme
 
 1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.  **Intune** bölmesinde **İstemci uygulamaları** > **Uygulamalar** > **Ekle**'yi seçin.
@@ -103,7 +103,7 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 
     ![Ekran görüntüsü Ekle uygulama dikey penceresi - ekleme türü açılan kutusu](./media/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>2. adım: Uygulama paketi dosyasını karşıya yükle
+### <a name="step-2-upload-the-app-package-file"></a>2\. adım: Uygulama paketi dosyasını karşıya yükle
 
 1.  **Uygulama ekle** bölmesinde dosya seçmek için **Uygulama paketi dosyası**’nı seçin. Uygulama paketi dosyası bölmesi görüntülenir.
 
@@ -116,7 +116,7 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 
 3.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-3-configure-app-information"></a>3. adım: Uygulama bilgilerini yapılandırma
+### <a name="step-3-configure-app-information"></a>3\. adım: Uygulama bilgilerini yapılandırma
 
 1.  Uygulamayı yapılandırmak için **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
 2.  **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
@@ -186,7 +186,7 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
         - **Çıkış verisi türünü seçmeniz**: Bir gereksinim kuralı eşleşme belirlenirken kullanılan veri türünü seçin.
 4.  İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-6-configure-app-detection-rules"></a>6. adım: Uygulama algılama kuralları yapılandırma
+### <a name="step-6-configure-app-detection-rules"></a>6\. adım: Uygulama algılama kuralları yapılandırma
 
 1.  **Uygulama ekle** bölmesinde, uygulamanın varlığını algılamaya yönelik kuralları yapılandırmak için **Algılama kuralları**'nı seçin.
 2.  **Kuralların biçimi** alanında uygulamanın varlığının nasıl algılanacağını seçin. Algılama kurallarını el ile yapılandırmayı seçebileceğiniz gibi uygulamanın varlığını algılamak için özel bir betik de kullanabilirsiniz. En az bir algılama kuralı seçmelisiniz. 
@@ -247,7 +247,7 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 
         4.  Kurallarınızı ekledikten sonra **Ekle** > **Tamam**'ı seçin.
 
-### <a name="step-7-configure-app-return-codes"></a>7. adım: Uygulama dönüş kodları yapılandırın
+### <a name="step-7-configure-app-return-codes"></a>7\. adım: Uygulama dönüş kodları yapılandırın
 
 1.  **Uygulama ekle** bölmesinde **Dönüş kodları**'nı seçerek, uygulama yüklemesi yeniden deneme davranışını veya yükleme sonrası davranışını belirtmek için kullanılan dönüş kodlarını ekleyin. Dönüş kodu girdileri varsayılan olarak uygulama oluşturma işlemi sırasında eklenir. Bununla birlikte, başka dönüş kodları ekleyebilir veya mevcut dönüş kodlarını değiştirebilirsiniz. 
 2.  **Dönüş kodları** bölmesinde, başka dönüş kodları ekleyin veya mevcut dönüş kodlarında değişiklik yapın.
@@ -258,12 +258,12 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
     - **Başarılı** – Uygulamanın başarıyla yüklendiğini belirten dönüş kodu.
 3.  Dönüş kodları listenizdeki eklemeleri veya değişiklikleri yaptıktan sonra **Tamam**'ı seçin.
 
-### <a name="step-8-add-the-app"></a>8. adım: Uygulama ekleme
+### <a name="step-8-add-the-app"></a>8\. adım: Uygulama ekleme
 
 1.  **Uygulama ekle** bölmesinde, uygulama bilgilerini doğru yapılandırdığınızı onaylayın.
 2.  Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
 
-### <a name="step-9-assign-the-app"></a>9. adım: Uygulama atama
+### <a name="step-9-assign-the-app"></a>9\. adım: Uygulama atama
 
 1.  Uygulama bölmesinde **Atamalar**’ı seçin.
 2.  Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.

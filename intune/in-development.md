@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468721"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494251"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune - Temmuz 2019 geliştirme
 
@@ -58,8 +58,6 @@ ms.locfileid: "67468721"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Uygulama yönetimi
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Cihaz kullanıcılarının yüklü veya yüklemeyi denedi tüm yönetilen uygulamalar görüntüleyebilirsiniz. <!-- 2352913 -->
-Bir kullanıcı cihazında yüklü (gerekli ve kullanılabilir) tüm yönetilen uygulamalar için Şirket portalı Windows listeler. Kullanıcılar, denenen görüntülemek ve bekleyen uygulama yüklemelerini ve bunların geçerli durumlarını mümkün olacaktır. Kuruluşunuzun uygulamalarını gerekli veya kullanılabilir duruma getirilmez, kullanıcılar şirket uygulama yüklenmiş olduğunu açıklayan bir ileti görür. Kullanıcılar ayrıca sıralamak veya uygulamalarını yükleme durumuna göre filtre uygulamak mümkün olacaktır.
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Kullanıcılar ve gruplar için özelleştirilmiş bildirimleri    <!-- 16766574   -->
 İOS ve Android cihazlarda Intune ile yönettiğiniz kullanıcılar Şirket portalı uygulamasından özel geçici anında iletme bildirimleri göndermek mümkün olan en kısa sürede olacaktır. Bu özel bildirimleri belirli Intune özelliklerine bağlı değil ve gerektiren bazı göndermek istediğiniz genel bildirimleri dahil olmak üzere herhangi bir amaçla kullanılabilir veya tüm çalışanlar.  

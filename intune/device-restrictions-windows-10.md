@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403087"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494477"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin verme veya kısıtlamanıza Intune kullanarak Windows 10 (ve üzeri) cihaz ayarları
 
@@ -525,7 +525,7 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 Bu ayarları kullanın [gizlilik ilkesi CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy), desteklenen Windows sürümleri de listelenir.
 
-- **Girişi kişiselleştirme**: **Blok** engeller ses dikte ve Cortana ve Microsoft bulut tabanlı konuşma tanıma kullanan diğer uygulamalar için iletişim kurmasına engel olur. Devre dışı bırakılır ve kullanıcılar ayarları kullanarak çevrimiçi bir konuşma tanıma etkinleştirilemiyor. **Yapılandırılmamış** (varsayılan), kullanıcıların seçmesine olanak sağlar. Microsoft, bu hizmetlere izin verirseniz, hizmeti geliştirmek için sesli veri toplayabilir.
+- **Girişi kişiselleştirme**: **Blok** ses dikte ve Cortana ve Microsoft bulut tabanlı konuşma tanıma kullanan diğer uygulamalar için iletişim kurmasına engel olur. Devre dışı bırakılır ve kullanıcılar ayarları kullanarak çevrimiçi bir konuşma tanıma etkinleştirilemiyor. **Yapılandırılmamış** (varsayılan), kullanıcıların seçmesine olanak sağlar. Microsoft, bu hizmetlere izin verirseniz, hizmeti geliştirmek için sesli veri toplayabilir.
 - **Eşleştirme ve gizlilik Kullanıcı onayı istemlerini otomatik kabul**: Seçin **izin** Windows eşleştirme ve gizlilik onay iletilerini uygulama çalıştırırken otomatik olarak kabul edebilir. **Yapılandırılmamış** (varsayılan), uygulama açılırken eşleştirme ve gizlilik Kullanıcı onayı penceresi otomatik olarak kabul engeller.
 - **Kullanıcı etkinliklerini yayımla**: **Blok** paylaşılan deneyimleri ve akış etkinliğinde yakın zamanda kullanılan kaynakların bulunmasını önler. **Yapılandırılmamış** (varsayılan), son kullanıcı etkinlikleri uygulamalar yayımlayabilmeniz bu özelliği etkinleştirir.
 - **Yalnızca yerel etkinlikler**: **Blok** paylaşılan deneyimleri ve görev değiştiricide yalnızca yerel etkinliği temel alan, yakın zamanda kullanılan kaynakların bulunmasını önler. **Yapılandırılmamış** (varsayılan), bu özelliği etkinleştirir.

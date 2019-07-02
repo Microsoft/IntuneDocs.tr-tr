@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3b9f69e745baffd21b55274e173bb75e8581525
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 56e1a1e07a403afa4db405d276c55be1ef8ddfd8
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67417872"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494548"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune MDM güvenlik temel ayarları  
 
@@ -32,7 +32,7 @@ En son temel sürümdür **Spring 2019 güncelleştirme (19 saat 1) için MDM g�
 Bu temel en son sürümünde önceki bir sürümünden değişiklikler hakkında bilgi edinmek için [yeni şablon Değiştirilenler](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> 2019 Haziran Önizleme MDM güvenlik temel sürümü tarafından değiştirildi *Spring 2019 güncelleştirme (19 saat 1) için MDM güvenlik temeli* generaly olan şablonu (önizlemede değil) kullanılabilir. Kullanılabilirliğini önce oluşturulan profiller *Spring 2019 güncelleştirme (19 saat 1) için MDM güvenlik temeli* olmaz temelini güncelleştirmek yansıtacak şekilde Spring 2019 güncelleştirme (MDM güvenlik temeli olan değerleri ve ayarları 19 saat 1) sürümü.  Önizleme şablonu temel alan yeni profilleri oluşturamazsınız ancak düzenleme ve önizleme şablona dayalı olarak daha önce oluşturduğunuz profillerini kullanmak devam edebilirsiniz.   
+> 2019 Haziran Önizleme MDM güvenlik temel sürümü tarafından değiştirildi *Spring 2019 güncelleştirme (19 saat 1) için MDM güvenlik temeli* generaly olan şablonu (önizlemede değil) kullanılabilir. Kullanılabilirliğini önce oluşturulan profiller *Spring 2019 güncelleştirme (19 saat 1) için MDM güvenlik temeli* temel olmaz ayarları ve Spring 2019 güncelleştirme (19 saat 1 için MDM güvenlik temeli olan değerleri yansıtacak şekilde güncelleştirin ) sürümü.  Önizleme şablonu temel alan yeni profilleri oluşturamazsınız ancak düzenleme ve önizleme şablona dayalı olarak daha önce oluşturduğunuz profillerini kullanmak devam edebilirsiniz.   
   
 Güvenlik temellerini Intune ile kullanma hakkında bilgi edinmek için [güvenlik temellerini kullanın](security-baselines.md).  
 
@@ -120,7 +120,7 @@ Daha fazla bilgi için [ilke CSP'si - Bitlocker](https://docs.microsoft.com/wind
       **Varsayılan**: Evet  
   
 
-## <a name="browser"></a>Tarayıcı  
+## <a name="browser"></a>Browser  
 Daha fazla bilgi için [ilke CSP'si - tarayıcı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) Windows belgelerinde.  
 
 - **Microsoft Edge için SmartScreen gerektirir**  
@@ -893,7 +893,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
   **Varsayılan**: Devre Dışı Bırak  
   
 - **Internet Explorer internet bölgesi oturum açma seçenekleri**  
-  Bu ilke ayarı, oturum açma seçenekleri ayarlarını yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, aşağıdaki oturum açma seçenekleri arasından seçim yapabilirsiniz. Anonim oturum açma devre dışı bırakma HTTP kimlik doğrulama ve kullanım Konuk hesap için yalnızca ortak Internet dosya sistemi (CIFS) protokolü. Kullanıcı adı ve parola sorgusu kullanıcıları için kullanıcı kimliklerini ve parolaları sor. Bir Kullanıcı sorgulandıktan sonra bu değerleri sessizce oturumunun kalanı için kullanılabilir. Yalnızca sorgu kullanıcılar için kullanıcı kimliklerini ve parolaları diğer bölgelerdeki Intranet bölgesinde otomatik oturum açma. Bir Kullanıcı sorgulandıktan sonra bu değerleri sessizce oturumunun geri kalanı için kullanılabilir. Windows NT Sınama yanıtı (NTLM kimlik doğrulaması olarak da bilinir) kullanarak oturum aç'ı denemek için otomatik oturum geçerli kullanıcı adı ve parolayla. Sunucu, Windows NT Sınama yanıtı, oturum açma kullanan ağ kullanıcı adını ve parolasını oturum destekliyorsa. Windows NT Sınama yanıtı sunucunun desteklemiyorsa, kullanıcının kullanıcı adı ve parola sağlamak için sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, oturum açma için otomatik günlük yalnızca Intranet bölgesinde ayarlanır. Bu ilke ayarı yapılandırmazsanız, oturum açma için otomatik oturum ayarlamak da Intranet bölgesinde.  
+  Bu ilke ayarı, oturum açma seçenekleri ayarlarını yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, aşağıdaki oturum açma seçenekleri arasından seçim yapabilirsiniz. Anonim oturum açma devre dışı bırakma HTTP kimlik doğrulama ve kullanım Konuk hesap için yalnızca ortak Internet dosya sistemi (CIFS) protokolü. Kullanıcı adı ve parola sorgusu kullanıcıları için kullanıcı kimliklerini ve parolaları sor. Bir Kullanıcı sorgulandıktan sonra bu değerleri sessizce oturumunun kalanı için kullanılabilir. Yalnızca sorgu kullanıcılar için kullanıcı kimliklerini ve parolaları diğer bölgelerdeki Intranet bölgesinde otomatik oturum açma. Bir Kullanıcı sorgulandıktan sonra bu değerleri sessizce oturumunun geri kalanı için kullanılabilir. Windows NT Sınama yanıtı (NTLM kimlik doğrulaması olarak da bilinir) kullanarak oturum aç'ı denemek için otomatik oturum geçerli kullanıcı adı ve parolayla. Sunucu, Windows NT Sınama yanıtı, oturum açma kullanan ağ kullanıcı adını ve parolasını oturum destekliyorsa. Sunucu, Windows NT Sınama yanıtı desteklemiyorsa, kullanıcının kullanıcı adı ve parola sağlamak için sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, oturum açma için otomatik günlük yalnızca Intranet bölgesinde ayarlanır. Bu ilke ayarı yapılandırmazsanız, oturum açma için otomatik oturum ayarlamak da Intranet bölgesinde.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067194)  
   
   **Varsayılan**: İstem  
@@ -2602,7 +2602,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
+  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
   
   **Default**: Prompt  
   

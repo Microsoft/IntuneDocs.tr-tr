@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: c9a225fbffda25b8d077c3b2be271e86d3e6c85e
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044887"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500600"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge Intune kullanarak web erişimini yönetme
 
@@ -146,12 +146,12 @@ AD uygulama ara sunucusunu etkinleştirme senaryoları bazı örnekleri şunlard
 > [!NOTE]
 > Güncelleştirilmiş Uygulama Ara Sunucusu’nun yeniden yönlendirme verilerinin Managed Browser’da veya Microsoft Edge'de etkinleşmesi 24 saati bulabilir.
 
-#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1. adım: Outlook'tan korumalı tarayıcıya otomatik yeniden yönlendirmeyi etkinleştirme
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1\. adım: Outlook'tan korumalı tarayıcıya otomatik yeniden yönlendirmeyi etkinleştirme
 Outlook ayarına imkan veren bir uygulama koruma İlkesi ile yapılandırılması gerekir **yönetilen tarayıcı ilkesiyle içerik paylaşımı web**.
 
 ![Uygulama koruma İlkesi - paylaşım web içeriği ilke ile yönetilen tarayıcılar](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
-#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>2. adım: Uygulama proxy'sini etkinleştirmek için uygulama yapılandırma ayarını belirle
+#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>2\. adım: Uygulama proxy'sini etkinleştirmek için uygulama yapılandırma ayarını belirle
 Microsoft Edge ile hedef Microsoft Edge için uygulama proxy'sini etkinleştirmek için anahtar/değer çifti aşağıda:
 
 |    Anahtar    |    Value    |
@@ -166,7 +166,7 @@ Bu ayar, Microsoft Edge için giriş sayfası kısayol yapılandırmanıza olana
 
 Kullanım anahtar/değer çifti giriş sayfası kısayol yapılandırmak için aşağıda:
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örnek:** `<https://www.bing.com`>
     |
@@ -182,9 +182,9 @@ Erişim Kolaylığı için Microsoft Edge kullanırken, kullanıcılarınızın 
 
 Yönetilen yer işaretlerini yapılandırmak için aşağıdaki anahtar/değer çifti kullanın:
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.Bookmarks    |    Bu yapılandırmanın değeri, yer işaretleri listesidir. Her bir yer işareti, yer işareti başlık ve yer işareti URL'si oluşur. Başlık ve URL ile ayrı `|` karakter.      **Örnek:**<br>`Microsoft Bing|https://www.bing.com`<p>Birden fazla yer işaretlerini yapılandırmak için her bir çifti çift karakteriyle ayırın `||`.<p>**Örnek:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.Bookmarks    |    Bu yapılandırmanın değeri, yer işaretleri listesidir. Her bir yer işareti, yer işareti başlık ve yer işareti URL'si oluşur. Başlık ve URL ile ayrı `|` karakter.      **Örnek:**<br>`Microsoft Bing|https://www.bing.com`<br>Birden fazla yer işaretlerini yapılandırmak için her bir çifti çift karakteriyle ayırın `||`.<p>**Örnek:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="how-to-display-myapps-within-microsoft-edge-bookmarks"></a>Microsoft Edge yer işaretleri içinde MyApps görüntüleme
 
@@ -201,16 +201,17 @@ Kullanabileceğiniz anahtar/değer çiftleri Microsoft Edge için izin verilen v
 
 |    Anahtar    |    Value    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Aşağıdakilerden birini seçin:<p>1. İzin verilen URL’leri belirtme (yalnızca bu URL'lere izin verilir, diğer sitelere erişilemez):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Engellenen URL’leri belirtme (tüm diğer sitelere erişilebilir):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Bir anahtara karşılık gelen değer bir URL listesidir. İzin vermek veya kanalla ayrılan tek bir değer olarak engellemek istediğiniz URL'leri girin `|` karakter.<p>**Örnekler:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    Aşağıdakilerden birini seçin:<p>1. İzin verilen URL’leri belirtme (yalnızca bu URL'lere izin verilir, diğer sitelere erişilemez):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Engellenen URL’leri belirtme (tüm diğer sitelere erişilebilir):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Bir anahtara karşılık gelen değer bir URL listesidir. İzin vermek veya kanalla ayrılan tek bir değer olarak engellemek istediğiniz URL'leri girin `|` karakter.<br>**Örnekler:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>URL biçimleri için izin verilen ve engellenen site listesi 
 Çeşitli URL biçimleri, izin verilen/engellenen siteler listeleri oluşturmak için kullanabilirsiniz. Bu izin verilen desenler aşağıdaki tabloda açıklanmıştır. Başlamadan önce bazı notlar: 
 - Tüm URL'leri listeye eklerken başlarına **http** veya **https** önekini yazdığınızdan emin olun.
-- Kurallara göre (*) joker karakter sembolünü aşağıdaki izin verilen örnekler listesinde kullanabilirsiniz.
+- Joker karakter sembolünü kullanabilirsiniz (\*) aşağıdaki izin verilen örnekler listesindeki kurallara göre.
+- Joker karakter yalnızca bir tüm compoment (noktalarla ayrılmış) ana bilgisayar adı veya tüm parçalarını (eğik ayrılmış olarak) yol eşleşebilir. Örneğin, `http://*contoso.com` olduğu **değil** desteklenir.
 - Adreste bağlantı noktası numaraları belirtebilirsiniz. Bir bağlantı noktası numarası belirtmezseniz, kullanılan değerler şöyle olacaktır:
     - http için bağlantı noktası 80
     - https için bağlantı noktası 443
-- Bağlantı noktası numarası için joker karakter kullanılması **değil** desteklenir. Örneğin `http://www.contoso.com:*` ve `http://www.contoso.com:*/` desteklenmez.
+- Bağlantı noktası numarası için joker karakter kullanılması **değil** desteklenir. Örneğin `http://www.contoso.com:*` ve `http://www.contoso.com:*/` desteklenmez. 
 
     |    URL    |    Ayrıntılar    |    Eşleşir    |    Eşleşmez    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -232,6 +233,7 @@ Kullanabileceğiniz anahtar/değer çiftleri Microsoft Edge için izin verilen v
     - IP adresleri
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
@@ -247,13 +249,13 @@ Kullanım anahtar/değer çifti, bu geçici bir geçiş izin veriliyorsa yapıla
 
 ## <a name="directing-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Microsoft Edge yerine Intune Managed Browser kullanıcılarına yönlendiren 
 
-Intune Managed Browser ve Microsoft Edge sunulmuştur ilkeyle korunan tarayıcı olarak kullanılabilir. Kullanıcılarınızın doğru tarayıcı uygulamasını kullanmak için yönlendirilmesi emin olmak için Intune tarafından yönetilen uygulamalarla (örneğin, Outlook ve OneDrive) şu yapılandırma ayarı tüm hedef:
+Intune Managed Browser ve Microsoft Edge sunulmuştur ilkeyle korunan tarayıcı olarak kullanılabilir. Kullanıcılarınızın doğru tarayıcı uygulamasını kullanmak için yönlendirilmesi emin olmak için Intune tarafından yönetilen uygulamalarla (örneğin Outlook, OneDrive ve SharePoint) şu yapılandırma ayarı tüm hedef:
 
-|    Anahtar    |    Value    |
+|    Anahtar    |    Değer    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    Değer `true` Microsoft Edge kullanmak için kullanıcılarınızın yönlendirir.<p>Değer `false` kullanıcılarınızın Intune Managed Browser kullanmasını yönlendirir.    |
+|    `com.microsoft.intune.useEdge`    |    Değer `true` indirin ve Microsoft Edge kullanıcılarınıza yönlendirir.<br>Değer `false` kullanıcılarınızın Intune Managed Browser kullanmasını sağlar.    |
 
-Bu uygulama yapılandırma değeri ayarlanmazsa aşağıdaki mantık tarayıcıyı Kurumsal bağlantılarını açmak için kullanılacak tanımlayın.
+Bu uygulama yapılandırma değeri ise **değil** ayarlayın, aşağıdaki mantık tarayıcıyı Kurumsal bağlantılarını açmak için kullanılacak tanımlayacaksınız.
 
 Android’de:
 - Intune Managed Browser ve Microsoft Edge cihazlarına indirilen bir kullanıcı varsa, Intune Managed Browser başlatılır. 
@@ -283,7 +285,7 @@ Ek güvenlik ve gizlilik konuları Microsoft Edge için:
 - Microsoft Edge, Microsoft Edge için bu ayarları erişemediği için kullanıcıların cihazlarında yerel tarayıcılarında bu işlem için ayarlanan ayarları tüketmez.
 - Seçeneğini yapılandırırsanız **erişim için basit PIN gerektir** veya **erişim için Kurumsal kimlik bilgilerini gerektir** uygulama koruma İlkesi, Microsoft Edge ile ilişkili ve bir kullanıcı hakkında Yardım bağlantısını seçerse kimlik doğrulaması sayfası olup ilkesinde bir engelleme listesine eklenmiş olmasından bağımsız olarak herhangi bir Internet sitesine göz atabilir.
 - Yalnızca bunlar doğrudan erişildiğinde Microsoft Edge sitelere erişimi engelleyebilir. Siteye erişmek için ara hizmetler (örneğin bir çeviri hizmeti) kullanıldığında erişimi engellemez.
-- Kimlik doğrulamasına izin ver ve Intune belgelerine erişim ***. microsoft.com** izin verilenler veya Engellenenler listesi ayarlarının dışında tutulur. Adrese her zaman izin verilir.
+- Kimlik doğrulamasına izin ver ve Intune belgelerine erişim * **. microsoft.com** izin verilenler veya Engellenenler listesi ayarlarının dışında tutulur. Adrese her zaman izin verilir.
 Microsoft kullanım verilerini kapatma toplanan performansı ve Microsoft Ürün ve hizmetlerini geliştirmek için Managed Browser kullanımı hakkında anonim bilgileri otomatik olarak açın. Kullanıcılar cihazlarındaki **Kullanım Verileri** ayarını kullanarak veri toplamayı kapatabilir. Bu verilerin toplanması üzerinde denetiminiz yoktur. iOS cihazlarda, kullanıcıların ziyaret ettiği süresi dolmuş veya güvenilmeyen sertifikalara sahip web siteleri açılmaz.
 
 ## <a name="next-steps"></a>Sonraki adımlar

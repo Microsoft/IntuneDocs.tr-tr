@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba7bb3a12e0e634df44bb832f8f35aa166095415
-ms.sourcegitcommit: 34ff5ebe6efaa5b3a2a1db274de0a07c14944a6b
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67463888"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494297"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -30,10 +30,10 @@ Bu makale, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile
 
 - **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucular (Web Uygulaması Ara Sunucusu hariç), Active Directory etki alanınıza katılmalıdır.
 
-- **Sertifika yetkilisi** (CA): Bir Microsoft sertifika yetkilisi (Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan kuruluş CA) olması gerekir. Tek Başına CA desteklenmez. Ayrıntılar için bkz. [Sertifika Yetkilisi'ni yükleme](http://technet.microsoft.com/library/jj125375.aspx).
+- **Sertifika yetkilisi** (CA): Bir Microsoft sertifika yetkilisi (Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan kuruluş CA) olması gerekir. Tek Başına CA desteklenmez. Ayrıntılar için bkz. [Sertifika Yetkilisi'ni yükleme](https://technet.microsoft.com/library/jj125375.aspx).
     CA'nız Windows Server 2008 R2 çalıştırıyorsa, [KB2483564 ile gelen düzeltmeyi yüklemeniz](http://support.microsoft.com/kb/2483564/)gerekir.
 
-- **NDES sunucusu**: Bir Windows Server 2012 R2 veya sonraki sürümlerde, ağ cihazı kayıt hizmeti (NDES) sunucusu rolü ayarlayın. Intune, Enterprise CA çalıştıran bir sunucuda NDES kullanımını desteklemez. Windows Server 2012 R2’yi NDES’yi barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](http://technet.microsoft.com/library/hh831498.aspx).
+- **NDES sunucusu**: Bir Windows Server 2012 R2 veya sonraki sürümlerde, ağ cihazı kayıt hizmeti (NDES) sunucusu rolü ayarlayın. Intune, Enterprise CA çalıştıran bir sunucuda NDES kullanımını desteklemez. Windows Server 2012 R2’yi NDES’yi barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](https://technet.microsoft.com/library/hh831498.aspx).
 NDES sunucusu, Enterprise CA ile aynı ormanda bulunan bir etki alanına katılmış olmalıdır. NDES sunucusunu ayrı bir ormanda, yalıtılmış ağda veya iç etki alanında dağıtma hakkında daha fazla bilgi, [Ağ Cihazı Kayıt Hizmeti ile İlke Modülü Kullanma](https://technet.microsoft.com/library/dn473016.aspx) başlığı altında bulunabilir. Başka bir MDM ile zaten kullanıldığı bir NDES sunucusunu kullanmak mümkün değildir
 
 - **Microsoft Intune sertifika Bağlayıcısı**: Intune portalında, Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *adımları SCEP bağlayıcısını yükleme*. Sertifika Bağlayıcısı Installer indirmeye başlamak için portalda indirme bağlantısı kullanmak **NDESConnectorSetup.exe**.  NDES rolüne sahip bir sunucuda bu yükleyiciyi çalıştırın.  
@@ -225,7 +225,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Location                        |      Değer      | Type  |      Data       |
+   |                        Location                        |      Value      | Type  |      Data       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |

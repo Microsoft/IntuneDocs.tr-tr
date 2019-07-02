@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,20 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 7d1aa7cffd91049527df25436c083e97b849c229
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373632"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500667"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Microsoft Intune’da Android Kurumsal cihazlar için özel ayarlar kullanma
 
-Microsoft Intune’u kullanarak, bir “özel profil” kullanan Android Kurumsal cihazlarınız için özel ayarlar ekleyebilir veya oluşturabilirsiniz. Özel profiller, bir Intune özelliğidir. Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini eklemek için tasarlanmıştır.
+Microsoft Intune kullanarak ekleyebilir veya "özel profili" kullanarak kurumsal iş profilinde Android cihazlarınız için özel ayarlar oluşturun. Özel profiller, bir Intune özelliğidir. Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini eklemek için tasarlanmıştır.
 
 Android Kurumsal özel profilleri, Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) ayarlarını kullanarak Android Kurumsal cihazlardaki özellikleri denetler. Bu ayarlar normalde mobil cihaz üreticileri tarafından bu özellikleri denetlemek için kullanılır.
 
-Intune, sınırlı sayıda Android özel profilini destekler.
+Intune, Android Kurumsal özel profilleri de dahil olmak üzere, sınırlı sayıda destekler:
+
+- ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [Önceden paylaşılan anahtarla bir Wi-Fi profili oluşturma](wi-fi-profile-shared-key.md) bazı örnekler vardır.
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [Uygulama başına VPN profili oluşturma](android-pulse-secure-per-app-vpn.md) bazı örnekler vardır.
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: Bkz: [örnek](#example) (Bu makaledeki).
+
+Ek ayarlarına gereksinim duyarsanız, bkz. [Android Enterprise için OEMConfig](android-oem-configuration-overview.md).
 
 Bu makale, Android Kurumsal cihazlar için özel profil oluşturma işlemini gösterir. Ayrıca kopyalama ve yapıştırmayı engelleyen bir özel profil örneği sağlar.
 
