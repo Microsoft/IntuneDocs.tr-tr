@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9a225fbffda25b8d077c3b2be271e86d3e6c85e
-ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
+ms.openlocfilehash: 50574a2d3dc4ba5731b1a90f563ddd1a08e7f833
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/02/2019
-ms.locfileid: "67500600"
+ms.locfileid: "67529629"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge Intune kullanarak web erişimini yönetme
 
 Microsoft Edge ile Intune uygulama koruma ilkelerini kullanarak, Kurumsal Web siteleri ile yerinde koruma her zaman erişildiğini emin olabilirsiniz. Intune ilkeleriyle etkinleştirilen aşağıdaki Microsoft Edge kurumsal özelliklerini kullanabilirsiniz. Kurumsal özellikler şunlardır:
 
-1.  **Çift kimlik**: Kullanıcılar hem iş hesabı hem de kişisel hesap ekleyerek göz atabilir. Office 365 ve Outlook mimarilerinde ve deneyimlerinde olduğu gibi iki kimlik arasında belirgin bir ayrım vardır. Intune yöneticileri, iş hesabını kullanarak korumalı bir göz atma deneyimi sağlamak üzere istenen ilkeleri belirleyebilir.
-2.  **Intune uygulama koruma İlkesi tümleştirmesi** – beri Microsoft Edge, Intune SDK'sı ile tümleşiktir, veri kaybı korumasını sağlamak için uygulama koruma ilkelerini hedefleyebilirsiniz. Kes, Kopyala, denetim bu yeteneklere Yapıştır, Ekran yakalamalarını engelleme yakalar ve yönetilen uygulamalar kullanıcı tarafından seçilen bağlantıları yalnızca diğer açılmasını sağlama.
-3.  **Azure uygulama proxy'si tümleştirmesi** - SaaS uygulamalarına erişimi denetleyebilir ve web uygulamaları, tarayıcı tabanlı uygulamalar yalnızca sağlanmasına yardımcı olur, son kullanıcıların şirket ağından bağlanın veya Internet'ten bağlanmak güvenli Microsoft Edge tarayıcısında çalıştırma .
-4.  **Uygulama Yapılandırması** – kuruluşlar güvenlik duruşunuzu güçlendirin ve kullanım kolaylığı özellikleri, son kullanıcılarınız için yapılandırmak için uygulama yapılandırma ayarlarını yararlanabilirsiniz. Örneğin, yer işaretleri, giriş sayfası kısayol, izin verilen/engellenen siteler, Azure uygulama proxy'si ve daha fazla tanımlayabilirsiniz.
+1. **Çift kimlik**: Kullanıcılar hem iş hesabı hem de kişisel hesap ekleyerek göz atabilir. Office 365 ve Outlook mimarilerinde ve deneyimlerinde olduğu gibi iki kimlik arasında belirgin bir ayrım vardır. Intune yöneticileri, iş hesabını kullanarak korumalı bir göz atma deneyimi sağlamak üzere istenen ilkeleri belirleyebilir.
+2. **Intune uygulama koruma İlkesi tümleştirmesi** – beri Microsoft Edge, Intune SDK'sı ile tümleşiktir, veri kaybı korumasını sağlamak için uygulama koruma ilkelerini hedefleyebilirsiniz. Kes, Kopyala, denetim bu yeteneklere Yapıştır, Ekran yakalamalarını engelleme yakalar ve yönetilen uygulamalar kullanıcı tarafından seçilen bağlantıları yalnızca diğer açılmasını sağlama.
+3. **Azure uygulama proxy'si tümleştirmesi** - SaaS uygulamalarına erişimi denetleyebilir ve web uygulamaları, tarayıcı tabanlı uygulamalar yalnızca sağlanmasına yardımcı olur, son kullanıcıların şirket ağından bağlanın veya Internet'ten bağlanmak güvenli Microsoft Edge tarayıcısında çalıştırma .
+4. **Uygulama Yapılandırması** – kuruluşlar güvenlik duruşunuzu güçlendirin ve kullanım kolaylığı özellikleri, son kullanıcılarınız için yapılandırmak için uygulama yapılandırma ayarlarını yararlanabilirsiniz. Örneğin, yer işaretleri, giriş sayfası kısayol, izin verilen/engellenen siteler, Azure uygulama proxy'si ve daha fazla tanımlayabilirsiniz.
 Microsoft Edge için Microsoft Intune koruma ilkeleri, kuruluşunuzun verilerini ve kaynaklarını korumanıza yardımcı olur. Microsoft Edge ile bu ilkeleri kullanarak şirketinizin kaynaklarına yalnızca yerel olarak yüklü uygulamaların içinde aynı zamanda web tarayıcısı üzerinden erişildiğinde korunmasını sağlar.
 
 ## <a name="getting-started"></a>Başlarken
@@ -115,8 +115,8 @@ Aşağıdaki adımlar, bir korumalı browser uygulama yapılandırması oluştur
     > [!NOTE]
     > Microsoft Edge, Managed Browser ile aynı anahtar ve değer çiftini kullanır. 
 
-8.  Bitirdiğinizde, **Tamam**’a tıklayın.
-9.  **Yapılandırma ilkesi ekle** dikey penceresinde, **Ekle**’yi seçin.<br>
+8. Bitirdiğinizde, **Tamam**’a tıklayın.
+9. **Yapılandırma ilkesi ekle** dikey penceresinde, **Ekle**’yi seçin.<br>
     Yeni yapılandırma oluşturulur ve görüntülenen **uygulama yapılandırması** dikey penceresi.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Oluşturduğunuz yapılandırma ayarlarını atama 
@@ -190,7 +190,7 @@ Yönetilen yer işaretlerini yapılandırmak için aşağıdaki anahtar/değer �
 
 Varsayılan olarak, kullanıcılarınız için Microsoft Edge yer işaretleri içinde bir klasördeki yapılandırılmış olan MyApps siteleri gösterilir. Klasör kuruluşunuzun adıyla etiketlenir.
 
-|    Anahtar    |    Value    |
+|    Anahtar    |    Değer    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **Doğru** MyApps içinde Microsoft Edge işaretlerini gösterir.<p>**False** Microsoft Edge içinde MyApps gizler.    |
 

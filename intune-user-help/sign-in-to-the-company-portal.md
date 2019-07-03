@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0b61771385923af05c656f04e4257176b72ee35
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6bfd8496061b4b3aba2589b73c3e98bce94a5011
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504069"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528658"
 ---
 # <a name="sign-in-to-company-portal"></a>Şirket portalında oturum açın  
 
@@ -57,13 +57,13 @@ Aşağıdaki adımlar, iOS için şirket Portalı'ndan ekran görüntüleri gös
 
 ## <a name="sign-in-with-certificate-based-authentication"></a>Sertifika tabanlı kimlik doğrulaması ile oturum
 
-1.  Cihazınızda Şirket Portalı uygulamasını açın.  
+1. Cihazınızda Şirket Portalı uygulamasını açın.  
 
-2.  **İş veya okul hesabınızı** girin.  
+2. **İş veya okul hesabınızı** girin.  
 
-3.  **Sertifika ile oturum açma** bağlantısına dokunun.  
+3. **Sertifika ile oturum açma** bağlantısına dokunun.  
 
-4.  Sertifikayı kullanmak için **Devam**’a dokunun.  
+4. Sertifikayı kullanmak için **Devam**’a dokunun.  
 
 ## <a name="sign-in-from-another-device"></a>Başka bir CİHAZDAN oturum aç
 

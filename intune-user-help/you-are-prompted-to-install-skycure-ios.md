@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6daeaaac7fb554e2c29f6ac150eaff8308d670b0
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 13a12da72577edfee1d6ba23c2cd5e56d1fe397e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504953"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527585"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>iOS cihazınıza Symantec Endpoint Protection Mobile yükleme
 
@@ -29,7 +29,7 @@ ms.locfileid: "61504953"
 
 ## <a name="what-you-need-to-do"></a>Yapmanız gerekenler
 
-1.  Aşağıdaki istemi görürseniz cihazınıza SEP Mobile yüklenmesine izin vermek için **Yükle**’ye dokunun.
+1. Aşağıdaki istemi görürseniz cihazınıza SEP Mobile yüklenmesine izin vermek için **Yükle**’ye dokunun.
 
 2. Aşağıdaki iletiyi gördüğünüzde, **Ayarlar**’a dokunun, **Konum Hizmetleri**’ni açın ve **Devam**’a dokunun.
 

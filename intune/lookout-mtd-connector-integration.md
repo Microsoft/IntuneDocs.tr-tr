@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d146b211c42c20b1381b238311db6a10295ef4a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: be2e9371288961d0afdf7ad6e8cfec8f734087f6
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044924"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529894"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Intune ile Lookout mobil uç nokta güvenliği tümleştirmesini ayarlama
 Uygun bir ortam ile [önkoşulları](lookout-mobile-threat-defense-connector.md#prerequisites), Intune ile Lookout mobil uç nokta güvenliği tümleştirebilirsiniz. Bu makaledeki bilgiler tümleştirmenin ayarlanması ve Intune ile kullanmak için Lookout'ta önemli ayarları yapılandırma size yol gösterir.  
@@ -40,7 +40,7 @@ Intune ile Lookout mobil uç nokta güvenliği abonelik tümleştirmenizi etkinl
 - **Azure AD grubu nesne kimliği** grupla **tam** Lookout mobil uç nokta güvenliği (MES) konsol erişimi.  
   Bu kullanıcı grubuna sahip kullanıcıları içerecek şekilde, Azure AD'de oluşturduğunuz *tam erişim* oturum açmak için **Lookout konsolunda**. Kullanıcıların bu grup veya isteğe bağlı bir üyesi olması gerekir *sınırlı erişim* Lookout konsoluna oturum açmak için grubu. 
 
-- **Azure AD grubu nesne kimliği** grupla **kısıtlı** Lookout MES konsol erişimi *(isteğe bağlı bir grup)*. 
+- **Azure AD grubu nesne kimliği** grupla **kısıtlı** Lookout MES konsol erişimi *(isteğe bağlı bir grup)* . 
   Birçok yapılandırma ve kayıtla ilgili modüllerin çoğuna erişimi olmaması kullanıcıları içeren Azure AD'de Bu isteğe bağlı kullanıcı grubu oluşturun. Bunun yerine, bu kullanıcılara salt okunur erişimi **Güvenlik İlkesi** Lookout konsolunun modülü. Kullanıcıların bu isteğe bağlı bir grup veya gerekli üyeleri olmalıdır *tam erişim* Lookout konsoluna oturum açmak için grubu.
 
  > [!TIP] 

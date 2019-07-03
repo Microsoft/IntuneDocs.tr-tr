@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041860"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529749"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Eksik kullanıcı kayıtları raporu
 
@@ -35,9 +35,9 @@ Bu bilgileri kullanarak, kullanıcı kaydı tamamlamak amacıyla ekleme belgeler
 
 Bir kullanıcı aşağıdakilerden herhangi birini yaptığında, eksik bir kayıt şöyledir:
 
--   Kaydı durdurmak için açıkça bir eylem seçmesi
--   Kayıt sırasında Şirket Portalı’nı kapatması
--   Kayıt bölümleri arasında 30 dakikadan fazla zaman harcaması
+- Kaydı durdurmak için açıkça bir eylem seçmesi
+- Kayıt sırasında Şirket Portalı’nı kapatması
+- Kayıt bölümleri arasında 30 dakikadan fazla zaman harcaması
 
 Bir kullanıcı kaydı durdurmak ve birden çok kez yeniden başlatılması seçerse, birden fazla girişimde ve birden fazla tamamlanmamış kayıtları gösterilir. Bir kullanıcı farklı kayıt ekranlar arasında 30 dakika bekler, birden fazla tamamlanmamış kayıtları olarak kabul edilir.
 
@@ -53,18 +53,18 @@ Raporlar, son iki haftanın verilerini gösterir ancak geçmiş 30 gün içerisi
 
 Raporun üstündeki sayısı ve yüzdesi ile ilgili olarak tüm kayıtları tamamlanmamış kayıtları görebilirsiniz.
 
--   Başlatılan kayıtları: Kayıtları denemesi sayısı.
--   Tamamlanmamış kayıtları: İçinde tam olarak kayıtlı ve uyumlu bir cihaz dik denenen kayıtları sayısı.
--   Tamamlanmamış oranı: (Kayıtlar terk / kayıtları başlatılan) terk edilmiş kayıt girişimlerinin yüzdesi.
+- Başlatılan kayıtları: Kayıtları denemesi sayısı.
+- Tamamlanmamış kayıtları: İçinde tam olarak kayıtlı ve uyumlu bir cihaz dik denenen kayıtları sayısı.
+- Tamamlanmamış oranı: (Kayıtlar terk / kayıtları başlatılan) terk edilmiş kayıt girişimlerinin yüzdesi.
 
 ### <a name="line-graph"></a>Çizgi grafik
 
 Çizgi grafiği için dört temel kayıt bölümlerin her birinde günlük tamamlanmamış kayıtları gösterir:
 
--   Kurulum denetim listesi
--   Platform ekranları
--   Kullanım koşulları
--   Uyumluluk/Etkinleştirme
+- Kurulum denetim listesi
+- Platform ekranları
+- Kullanım koşulları
+- Uyumluluk/Etkinleştirme
 
 ### <a name="user-abandonment-actions"></a>Kullanıcı bırakma eylemleri
 

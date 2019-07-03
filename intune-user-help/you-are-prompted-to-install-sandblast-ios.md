@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd8934d3318459ecc7587a9c51bba9b6f744dbc7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8d4f957af4c05a66de4ce4ae7c233eda297153f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505514"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527590"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>iOS cihazınıza Sandblast Mobile Protect uygulamasını yüklemeniz gerekiyor
 
@@ -29,7 +29,7 @@ ms.locfileid: "61505514"
 
 **Yapmanız gerekenler:**
 
-1.  Aşağıdaki istemi görürseniz cihazınızın Sandblast Mobile Protect yüklenmesine izin vermek için **Yükle**’ye dokunun.
+1. Aşağıdaki istemi görürseniz cihazınızın Sandblast Mobile Protect yüklenmesine izin vermek için **Yükle**’ye dokunun.
 
 2. Aşağıdaki iletiyi gördüğünüzde, **Ayarlar**’a dokunun, **Konum Hizmetleri**’ni açın ve **Devam**’a dokunun.
 

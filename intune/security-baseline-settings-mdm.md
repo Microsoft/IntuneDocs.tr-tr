@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56e1a1e07a403afa4db405d276c55be1ef8ddfd8
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 9b0d069d6a65be0b51dd02858470780299690425
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494548"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528660"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune MDM güvenlik temel ayarları  
 
@@ -57,7 +57,7 @@ Daha fazla bilgi için [ilke CSP'si - AppRuntime](https://docs.microsoft.com/win
 
 - **Windows Store uygulamaları için isteğe bağlı Microsoft hesapları**  
   Bu ilke ayarı Microsoft hesaplarının oturum açmak için bir hesap gerektiren Windows Store uygulamaları için isteğe bağlı olup olmadığını denetlemenizi sağlar. Bu ilke yalnızca destekleyen Windows Store uygulamaları etkiler. Bu ilke ayarını etkinleştirirseniz, genellikle oturum açmak için bir Microsoft hesabı gerektiren Windows Store uygulamaları, bunun yerine bir kuruluş hesabıyla oturum açmasına izin verir. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların bir Microsoft hesabıyla oturum açmanız gerekir.  
-    [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **Varsayılan**: Enabled  
 
@@ -68,7 +68,7 @@ Daha fazla bilgi için [ilke CSP'si - ApplicationManagement](https://docs.micros
   Bu ilke ayarı, kullanıcıların genellikle yalnızca sistem yöneticileri tarafından kullanılabilir yükleme seçeneklerini değiştirmek izin verir. Bu ilke ayarını etkinleştirirseniz, Windows Installer'ın güvenlik özelliklerine bazıları atlanacağı. Bu bir güvenlik ihlali nedeniyle durdurulacak olan yüklemelerin tamamlanmasına izin verir. Windows Installer'ın güvenlik özelliklerine devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların dosyalarının yüklendiği dizinin belirtilmesi gibi sistem yöneticileri için genellikle ayrılmış yükleme seçeneklerini değiştirmesini engelleyin. Korumalı bir seçeneği değiştirmesine izin veren bir yükleme paketi Windows Installer algılarsa, yüklemeyi durdurur ve bir ileti görüntüler. Bu güvenlik özellikleri, yalnızca yükleme programı kullanıcıya izin verilmeyen dizinlere erişimi olan ayrıcalıklı güvenlik bağlamı çalışırken çalışır. Bu ilke ayarı, daha az kısıtlayıcı ortamlar için tasarlanmıştır. Yazılım yüklenmesini engelleyen bir yükleme programı hataları aşmak için kullanılabilir.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-    **Varsayılan**: Evet
+  **Varsayılan**: Evet
 
 - **Yükseltilmiş ayrıcalıklara sahip blok MSI uygulama yüklemeleri**  
   Bu ilke ayarı, Windows Installer'ın bir program yüklerken yükseltilmiş izinler kullanmanız yönlendirir.  
@@ -828,7 +828,7 @@ Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.
   
 - **Internet Explorer Güvenilen Bölge java izinleri**   
   Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, düşük güvenilirlik izni ayarlanır.  
-    [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **Varsayılan**: Yüksek güvenilirlik  
   

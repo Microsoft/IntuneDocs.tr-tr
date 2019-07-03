@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491190"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528763"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Şirketinizin destek biriminin sorunu için Şirket portalı Windows hakkında e-posta
 
@@ -32,7 +32,7 @@ Windows 10 için Şirket portalı uygulamasında, uygulama sorunlarını giderin
 Yardım istediğinde, burada ayrıntılı sorunu açıklayabilmesi önceden doldurulmuş bir e-posta açılır. Ayrıca bir tanılama günlüğü kimliği içerir Destek ekibinizin, açıklamasına göre sorunu çözemezseniz, Yardım için Microsoft başvurun. Microsoft, uygulama günlükleri başvurmak için tanılama kimliği gerekir.   
 
 
-> [!Note]       
+> [!Note]
 > Tıkladıktan sonra **Yardım Al**, Şirket portalı Microsoft Destek ekibine günlüklerinizi otomatik olarak gönderir. Bu adım ilerletilmiş sorunları gidermek ve çözmek kolaylaştıran bir proaktif, Microsoft desteği. Yukarıda belirtildiği gibi Microsoft Destek ekibine e-postanızda tanılama Kimliğini kullanarak günlükleri çekebilirsiniz.  
 
 ## <a name="what-is-a-diagnostic-log"></a>Tanılama Günlüğü nedir?

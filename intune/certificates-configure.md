@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66713907"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530547"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
@@ -73,7 +73,7 @@ Bu sertifika türlerinden her birinin kendi önkoşulları ve altyapı gereksini
 - SCEP veya PKCS profilleri kullanmayı planlıyorsanız Microsoft Intune Sertifika Bağlayıcısı'nı indirip yapılandırın
 
 
-## <a name="step-1-configure-your-certificate-infrastructure"></a>1. adım: Sertifika altyapınızı yapılandırma
+## <a name="step-1-configure-your-certificate-infrastructure"></a>1\. adım: Sertifika altyapınızı yapılandırma
 
 Her sertifika profilinin türünü için altyapıyı yapılandırma konusunda yardım için aşağıdaki makalelerden birine bakın:
 
@@ -81,13 +81,13 @@ Her sertifika profilinin türünü için altyapıyı yapılandırma konusunda ya
 - [Intune ile PKCS sertifikalarını yapılandırma ve yönetme](certficates-pfx-configure.md)
 
 
-## <a name="step-2-export-your-trusted-root-ca-certificate"></a>2. adım: Güvenilen kök CA sertifikanızı dışarı aktarma
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>2\. adım: Güvenilen kök CA sertifikanızı dışarı aktarma
 
 Güvenilen Kök Sertifika Yetkilileri (CA) sertifikasını, veren CA'dan veya veren CA'nıza güvenen herhangi bir cihazdan bir ortak sertifika (.cer) olarak dışarı aktarın. Özel anahtarı (.pfx) dışarı yok.
 
 Güvenilen sertifika profili ayarlarken bu sertifikayı içeri aktarırsınız.
 
-## <a name="step-3-create-trusted-certificate-profiles"></a>3. adım: Güvenilen sertifika profilleri oluşturma
+## <a name="step-3-create-trusted-certificate-profiles"></a>3\. adım: Güvenilen sertifika profilleri oluşturma
 SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Her cihaz platformu için bir güvenilen sertifika profili ve SCEP veya PKCS profili gereklidir. Güvenilen sertifikalar oluşturma adımları tüm cihaz platformlarında benzerdir.
 
 1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).

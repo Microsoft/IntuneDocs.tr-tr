@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb6c63cacfba26b58a0de6f70c4e4b93344ca562
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f1aac6c472cda5d0d9d9c12c98f792374065da49
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503910"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528791"
 ---
 # <a name="upload-and-email-logs"></a>Karşıya yükleme ve e-posta günlükleri  
 
@@ -48,7 +48,7 @@ Gerçek hata ayrıntıları, Cihazınızda adlı özel bir belgede tutulur bir _
 5. Konu alanında olay kimliği otomatik olarak doldurulmuş bir e-posta iletisi açılır. E-postanın gövdesinde, gelen arasında sorunu açıklayın.    
 
 
- ## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Microsoft Intune uygulama günlükleri karşıya yükleme ve e-posta   
+## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Microsoft Intune uygulama günlükleri karşıya yükleme ve e-posta   
 
 1.  Microsoft Intune uygulamada, e-posta desteği başlatmak için iki yolu vardır.  
     * Giriş ekranından: Dokunun **menü** > **yardımcı** > **Destek**.  

@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54bdef2252467de9cd06e5b5f0a7c38acc38ba88
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 798ea14529c0cbf44a0530f1a9a16507b14d7397
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505327"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527826"
 ---
 # <a name="enroll-device-for-access-to-work-or-school-resources"></a>İş veya Okul kaynaklarına erişim için Cihazınızı kaydetme
 Cihazınızı kaydetme ve e-posta ve uygulamalarına erişmesini almak için Intune Şirket portalı uygulaması veya Microsoft Intune uygulama yüklemeniz gerekir. Kaydolduğunuzda, kuruluşunuz, parola, PIN ve şifreleme gibi yapılandırılmış temel yönetim ilkeleri, cihazınıza uygulanır. Cihaz ayarlarınızı tüm kuruluşunuzun gereksinimlerini karşılayan sonra iş bilgilerinize hemen her yerden güvenli bir şekilde erişebilirsiniz.  

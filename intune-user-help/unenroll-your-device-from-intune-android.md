@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4030762e625e24fb0c72724473162a4ad98183
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506334"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529118"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Android cihazınızın yönetim kaydını silme  
 
@@ -51,8 +51,8 @@ Kayıtlı bir Android cihazın kuruluşunuz tarafından yönetilmesini sonlandı
 
 Android için Şirket Portalı uygulamasının cihazınızda depoladığı tüm verileri kaldırmak üzere:
 
--   Uygulama verilerini temizlemek dokunarak **uygulamaları** > **[*uygulama adını*]** > **verileri temizleme**.
--   Aşağıdaki klasörü silin: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
+- Uygulama verilerini temizlemek dokunarak **uygulamaları** >  **[*uygulama adını*]**  > **verileri temizleme**.
+- Aşağıdaki klasörü silin: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
 ## <a name="uninstall-the-company-portal-app"></a>Şirket Portalı uygulamasını kaldırma  
 Şirket portalı, bir cihaz Yönetimi uygulamasıdır. Cihazınızın yönetim kaydını kadar kaldırılamaz. Bu işlemi tamamladıysanız Şirket Portalı uygulamasının simgesine dokunun ve **Kaldır** seçeneğini görene kadar basılı tutun. **Kaldır**’a dokunarak uygulamayı cihazınızdan kaldırın.  

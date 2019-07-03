@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a380cc514272d10a6cfa1e9f20adeb171303523
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 524c4aebe6cdde0b0bc45f76a4675bbed8172d67
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403285"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511704"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -31,7 +31,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 > [!IMPORTANT]
 > Intune Şirket portalı, Android cihazlar için uygulama koruma ilkelerini almaya cihazda gereklidir. Daha fazla bilgi için bkz. [Intune Şirket Portalı uygulama erişim gereksinimleri](end-user-mam-apps-android.md).
 
-##  <a name="data-protection"></a>Veri koruma 
+## <a name="data-protection"></a>Veri koruma 
 ### <a name="data-transfer"></a>Veri Aktarımı
 | Ayar | Nasıl kullanılır? | Varsayılan değer |
 |------|------|------|
@@ -63,11 +63,11 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 |<ul><ui>**Yönetilmeyen bir tarayıcı adı** | Tarayıcı ile ilişkili uygulama adını girin **yönetilmeyen tarayıcı kimliği**. Belirtilen tarayıcı yüklü değilse, bu ad kullanıcılara görüntülenir.  | **Boş** |
 
 
-  ## <a name="data-transfer-exemptions"></a>Veri aktarımı muafiyetleri
+## <a name="data-transfer-exemptions"></a>Veri aktarımı muafiyetleri
 
   Intune uygulama koruma ilkesinin, veri aktarımına hedef ve kaynak olarak izin verebileceği bazı muaf uygulamalar ve platform hizmetleri vardır. Örneğin, Android’deki tüm Intune özellikli uygulamalar, Google Metin Okuma’ya ve Google Metin Okuma’dan veri aktarımı gerçekleştirebilmelidir. Böylece mobil cihazınızın ekranındaki metin sesli okunabilir. Bu liste değiştirilebilir ve güvenli verimlilik için kullanışlı olarak nitelendirilen hizmetleri ve uygulamaları yansıtır.
 
-  ### <a name="full-exemptions"></a>Tam muafiyetler
+### <a name="full-exemptions"></a>Tam muafiyetler
 
   Bu uygulama ve hizmetlere, Intune tarafından yönetilen uygulamalara ve uygulamalardan veri aktarımına tam olarak izin verilir.
 
@@ -84,7 +84,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
   | com.azure.authenticator | Birçok senaryoda başarılı kimlik doğrulaması için gerekli olan Azure Authenticator uygulaması. |
   | com.microsoft.windowsintune.companyportal | Intune Şirket Portalı|
 
-  ### <a name="conditional-exemptions"></a>Koşullu muafiyetler
+### <a name="conditional-exemptions"></a>Koşullu muafiyetler
   Bu uygulama ve hizmetlere, yalnızca belirli koşullar altında Intune tarafından yönetilen uygulamalara ve uygulamalardan veri aktarımına izin verilir.
 
   |Uygulama/hizmet adı | Açıklama | Muafiyet koşulu|
@@ -96,7 +96,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 
 Daha fazla bilgi için bkz. [Uygulamalar için veri aktarım ilkesi özel durumları](app-protection-policies-exception.md).
 
-##  <a name="access-requirements"></a>Erişim gereksinimleri
+## <a name="access-requirements"></a>Erişim gereksinimleri
 
 | Ayar | Nasıl kullanılır? |  
 |------|------| 

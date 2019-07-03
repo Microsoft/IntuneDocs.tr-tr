@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d3e36dbeb1fb7c90dfc5cc4c18fb30140c761db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046492"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512259"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune’a geçerken cihaz uyumluluk ve uygulama yönetimi ilkelerini yapılandırma
 
@@ -43,7 +43,7 @@ Her cihaz platformu farklı ayarlar sunabilir, ancak Intune cihaz ilkeleri aşa�
 
 ## <a name="task-list-for-device-compliance-policies"></a>Cihaz uyumluluk ilkeleri için görev listesi
 
-### <a name="task-1-add-device-groups-optional"></a>1. Görev: (İsteğe bağlı) cihaz gruplarına Ekle
+### <a name="task-1-add-device-groups-optional"></a>1\. Görev: (İsteğe bağlı) cihaz gruplarına Ekle
 
 Kullanıcı kimliği yerine cihaz kimliğine dayanan yönetim görevleri gerçekleştirmeniz gerektiğinde, cihaz grupları oluşturabilirsiniz.
 
@@ -51,15 +51,15 @@ Cihaz grupları; bilgi noktası cihazları, vardiya işçileri tarafından payla
 
 Cihaz kaydından önce cihaz gruplarını yapılandırırsanız cihaz kategorilerini kullanabilir ve cihazların kayıttan sonra otomatik olarak gruplara katılmasını sağlayabilirsiniz. Böylece bu cihazlar, gruplarının cihaz ilkelerini otomatik olarak alır. [Grupları kullanmaya başlama](groups-get-started.md).
 
-### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>2. Görev: Kaynak erişim profillerini (Wi-Fi, VPN ve e-posta sertifikaları) kullanma
+### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>2\. Görev: Kaynak erişim profillerini (Wi-Fi, VPN ve e-posta sertifikaları) kullanma
 
 Kaynak erişim profilleri, sertifikalar sağlar ve kaydedilen cihazların yapılandırmalarına erişir. Sertifika tabanlı kimlik doğrulaması kullanıyorsanız [sertifikaları yapılandırın](certificates-configure.md).
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>3. Görev: Cihaz yapılandırma profilleri oluşturabilir ve dağıtabilirsiniz
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>3\. Görev: Cihaz yapılandırma profilleri oluşturabilir ve dağıtabilirsiniz
 
 Cihaz düzeyinde ayarları uygulamak için bir cihaz yapılandırma profili oluşturmanız gerekir, örneğin kamerayı devre dışı bırakma, uygulama mağazası, tek uygulama modu yapılandırma, giriş ekranı vb. [Cihaz profilleri](device-profiles.md) hakkında bilgi edinin.
 
-####  <a name="directly-import-ios-configuration-profiles-optional"></a>iOS yapılandırma profillerini doğrudan içeri aktarma (isteğe bağlı)
+#### <a name="directly-import-ios-configuration-profiles-optional"></a>iOS yapılandırma profillerini doğrudan içeri aktarma (isteğe bağlı)
 
 -   **Apple Configurator iOS profilleri (iOS 7.1 ve üzeri):** Mevcut MDM çözümünüz Apple Configurator profilleri (.mobileconfig dosyaları) kullanıyorsa Intune bunları doğrudan özel yapılandırma ilkeleri olarak içeri aktarabilir.
 
@@ -91,7 +91,7 @@ Intune MDM kullanırken, uygulamaların otomatik yüklenmesini gerektirerek veya
 
 -   [Uygulama dağıtma](apps-deploy.md).
 
-### <a name="task-6-enable-device-enrollment"></a>6. Görev: Cihaz kaydını etkinleştirme
+### <a name="task-6-enable-device-enrollment"></a>6\. Görev: Cihaz kaydını etkinleştirme
 
 Cihazı yönetmek için cihaz kaydı gereklidir. [Şirkete ait ve kişisel cihazları kaydetmeye nasıl hazırlanılacağını](device-enrollment.md) öğrenin.
 

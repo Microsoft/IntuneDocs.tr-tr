@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db181991c19dc840e4e0b6b2f11f1ec2a1bd2df6
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494121"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529172"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -160,7 +160,7 @@ iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek içi
     * iOS veya Android mağazası uygulamalarınızı Intune uygulama koruma ilkesi için etkinleştiren bir ISV iseniz Microsoft Intune kaydını, kayıt adımında belirtilen şekilde bitirdikten sonra bir promosyon kodu alırsınız. Promosyon kodu, bir yıllık uzatılmış kullanım sağlayan Microsoft Intune denemesine kaydolmanıza olanak tanır.
 
     * Mağazaya gönderilmeyecek bir iş kolu uygulaması geliştiriyorsanız kuruluşunuz aracılığıyla Microsoft Intune’a erişiminizin olması beklenir. [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) ile bir aylık ücretsiz deneme için de kaydolabilirsiniz.
-    
+
     * Bir son kullanıcı hesabı kullanarak mobil bir cihazda uygulamanızı test ediyorsanız, o hesabı, bir yönetici hesabı ile oturum açtıktan sonra Microsoft 365 Yönetim Merkezi Web sitesinde bir Intune lisansı tarafından verdiğiniz, bkz: olun [atama Microsoft Intune lisansı ](https://docs.microsoft.com/intune/licenses-assign).
 
 * **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak için her ilke ayarı için beklenen davranış ne olduğunu bilmeniz. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](app-protection-policy-settings-android.md). Uygulamanız Intune SDK'sı tümleşiktir ancak Azure portalında henüz hedeflenen bir uygulama olarak listede değilse, bunu bir ilkeyle seçerek hedefleyebilirsiniz "+ daha fazla uygulama" seçeneğini ve paket Kimliğini (iOS) veya paket adına (Android) metin kutusuna sağlama.
@@ -173,12 +173,12 @@ Kimlik doğrulaması için uygulamanızı kendi özel Azure Active Directory (AA
 
 Uygulamanızı bir Azure kiracısı içinde kaydettikten sonra altında bazılarındaki **tüm uygulamaları**, kendi uygulama erişimini Intune uygulama koruma Hizmeti'ne (daha önce MAM hizmeti olarak da bilinir) vermeniz gerekir. Azure portalında:
 
-1.  Git **Azure Active Directory** dikey penceresi.
-2.  Altında **uygulama kayıtları**listenin uygulama için ayarlanmış'na gidin.
-3.  Tıklayın **+ izin Ekle**.
-4.  Tıklayarak **Kuruluşum kullandığı API'leri**. 
-5.  Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** yazın.
-6.  Altında **Temsilcili izinler**seçin **DeviceManagementManagedApps.ReadWrite: Kullanıcının uygulama yönetimi veri okuma ve yazma*** onay kutusu.
+1. Git **Azure Active Directory** dikey penceresi.
+2. Altında **uygulama kayıtları**listenin uygulama için ayarlanmış'na gidin.
+3. Tıklayın **+ izin Ekle**.
+4. Tıklayarak **Kuruluşum kullandığı API'leri**. 
+5. Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** yazın.
+6. Altında **Temsilcili izinler**seçin **DeviceManagementManagedApps.ReadWrite: Kullanıcının uygulama yönetimi veri okuma ve yazma*** onay kutusu.
 7. Tıklayın **izinleri eklemek**.
 
 ### <a name="badge-your-app-optional"></a>Uygulamanıza rozet ekleyin (isteğe bağlı)

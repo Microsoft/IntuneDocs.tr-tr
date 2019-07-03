@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050330"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530781"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Hızlı Başlangıç: Uygulama koruma ilkesini oluşturma ve atama
 
@@ -66,12 +66,12 @@ Intune’a bir uygulama koruma ilkesi oluşturduktan sonra bunu gruplara atayabi
 
 Uygulama koruma ilkesini atamak için aşağıdaki adımları izleyin:
 
-1.  [Intune](https://aka.ms/intuneportal)’da **Intune** > **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ni seçin. 
-2.  Daha önce oluşturduğunuz uygulama koruma ilkesini seçin. Bu hızlı başlangıçta ilke, **Windows 10 içerik koruma** ilkesidir.
-3.  **Atamalar**’ı seçin.
-4.  **Ekle** sekmesinde **Dahil edilecek gruplar**’ı seçin.
-5.  Eklenecek grup olarak **Contoso Sınama Aracı**’nı seçin.
-6.  Tıklayın **seçin** > **Kaydet**. 
+1. [Intune](https://aka.ms/intuneportal)’da **Intune** > **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ni seçin. 
+2. Daha önce oluşturduğunuz uygulama koruma ilkesini seçin. Bu hızlı başlangıçta ilke, **Windows 10 içerik koruma** ilkesidir.
+3. **Atamalar**’ı seçin.
+4. **Ekle** sekmesinde **Dahil edilecek gruplar**’ı seçin.
+5. Eklenecek grup olarak **Contoso Sınama Aracı**’nı seçin.
+6. Tıklayın **seçin** > **Kaydet**. 
 
 Uygulama koruma ilkesini şimdi atadınız.
 

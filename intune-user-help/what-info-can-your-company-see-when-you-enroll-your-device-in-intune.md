@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f47d7e238bc810db9057a4a7c86dbfa523b0e7b
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: f2b67a356a58dcbca6b396b6cd01f4d53d228134
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174219"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529370"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Cihazımı kaydettiğimde kuruluşum hangi bilgileri görebilir?
 
@@ -34,7 +34,7 @@ Bir cihazı Microsoft Intune’a kaydettiğinizde kuruluşunuz kişisel bilgiler
 - E-posta ve kısa mesajlar
 - Kişiler
 - Takvim
--   Parolalar
+- Parolalar
 - Fotoğraflar uygulamasında veya film rulosunda yer alanları da içeren resimler
 - Dosyalar
 

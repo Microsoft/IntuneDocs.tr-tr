@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f5eb5c6e8e454f6558aff7247f8ac10b7a5393
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cab7957a0de1b26a6e172fc696cf887d5fe3916
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040567"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528370"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile'ın Intune ile tümleştirmesini ayarlama
 
@@ -87,7 +87,7 @@ SEP Mobile çalıştıran tüm cihazların yer aldığı Azure AD güvenlik grub
 
 -  SEP Mobile'nın çalıştığını ve değişiklikleri kaydedin cihazların tüm güvenlik gruplarını seçin ve girin.
 
-    ![SEP Mobile uygulamaları için kullanıcı gruplarını gösteren resim](./media/symantec-portal-basic-groups.png)   
+    ![SEP Mobile uygulamaları için kullanıcı gruplarını gösteren resim](./media/symantec-portal-basic-groups.png)
 
 SEP Mobile, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD güvenlik gruplarıyla eşitler.
 
@@ -126,25 +126,25 @@ SEP Mobile, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD g
 
 4. **Dizin Kimliği** kutusunda, önceki bölümde Azure Active Directory'den kopyaladığınız Dizin Kimliğini yapıştırın ve ayarları kaydedin.
 
-    ![SEP Mobile portalında Dizin Kimliğini gösteren resim](./media/symantec-portal-directory-ID.png)     
+    ![SEP Mobile portalında Dizin Kimliğini gösteren resim](./media/symantec-portal-directory-ID.png)
 
 5. **Ayarlar** > **Tümleştirmeler** > **Intune** > **Temel Kurulum** bölümüne gidin.
 
 6. **iOS Uygulaması**'nın yanında **Active Directory'ye Ekle** düğmesini seçin.
 
-    ![iOS uygulamasını Active Directory'ye eklemeyi gösteren resim](./media/symantec-portal-basic-add.png)   
+    ![iOS uygulamasını Active Directory'ye eklemeyi gösteren resim](./media/symantec-portal-basic-add.png)
 
-7.  Dizini yöneten Office 365 hesabının Azure Active Directory kimlik bilgilerini kullanarak oturum açın.
+7. Dizini yöneten Office 365 hesabının Azure Active Directory kimlik bilgilerini kullanarak oturum açın.
 
-8.  SEP Mobile iOS uygulamasını Azure Active Directory'ye eklemek için **Kabul Et** düğmesini seçin.
+8. SEP Mobile iOS uygulamasını Azure Active Directory'ye eklemek için **Kabul Et** düğmesini seçin.
 
-    ![Kabul et düğmesini gösteren resim](./media/symantec-portal-basic-accept.png)     
+    ![Kabul et düğmesini gösteren resim](./media/symantec-portal-basic-accept.png)
 
-9.  **Android uygulaması** ve **Yönetim Uygulaması** için de ayrı işlemi yineleyin.
+9. **Android uygulaması** ve **Yönetim Uygulaması** için de ayrı işlemi yineleyin.
 
 10. SEP Mobile uygulamalarını çalıştırmasını gereken tüm kullanıcı gruplarını, örneğin daha önce oluşturduğunuz güvenlik grubunu seçin.
 
-    ![SEP Mobile uygulamaları için kullanıcı gruplarını gösteren resim](./media/symantec-portal-basic-groups.png)   
+    ![SEP Mobile uygulamaları için kullanıcı gruplarını gösteren resim](./media/symantec-portal-basic-groups.png)
 
 11.  SEP Mobile seçili gruplardaki cihazları eşitler ve Intune'a bilgileri raporlamayı başlatır. Tam Tümleştirme bölümünde bu verileri görüntüleyebilirsiniz. **Ayarlar** > **Tümleştirmeler** > **Intune** > **Tam Tümleştirme** bölümüne gidin.
 

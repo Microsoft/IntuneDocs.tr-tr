@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b59dc8599ce2dd5c99875a0032ccce5326c376cd
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8290ccbb61308fb7f001b1a7d331fd366e13d902
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505412"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527736"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>iOS cihazınıza Lookout for Work yükleme
 
@@ -31,7 +31,7 @@ ms.locfileid: "61505412"
 
 ## <a name="what-you-need-to-do"></a>Yapmanız gerekenler
 
-1.  Aşağıdaki istemi görürseniz, cihazınıza Lookout for Work yüklenmesine izin vermek için **Yükle**’ye dokunun.
+1. Aşağıdaki istemi görürseniz, cihazınıza Lookout for Work yüklenmesine izin vermek için **Yükle**’ye dokunun.
 
       ![İptal Et ve Yükle düğmeleriyle Uygulama Yükleme isteminin ekran görüntüsü.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 

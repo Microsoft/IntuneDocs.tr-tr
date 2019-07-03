@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046287"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528757"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydıyla ilgili sorunları giderme
 
@@ -34,10 +34,10 @@ Bu makalede, sorun giderme önerileri sağlanır [cihaz kaydı](device-enrollmen
 
 Sorun gidermeye başlamadan önce, Intune’u kayıt sağlamak üzere doğru şekilde yapılandırdığınızdan emin olmak için kontrol edin. Bu yapılandırma gereksinimleri hakkında daha fazla bilgi edinebilirsiniz:
 
--   [Microsoft Intune’da cihazları kaydetmeye hazırlanma](setup-steps.md)
--   [iOS ve Mac yönetimini ayarlama](ios-enroll.md)
--   [Windows cihaz yönetimini ayarlama](windows-enroll.md)
--   [Android cihaz yönetimini ayarlama](android-enroll.md) - Ek adım gerekmez
+- [Microsoft Intune’da cihazları kaydetmeye hazırlanma](setup-steps.md)
+- [iOS ve Mac yönetimini ayarlama](ios-enroll.md)
+- [Windows cihaz yönetimini ayarlama](windows-enroll.md)
+- [Android cihaz yönetimini ayarlama](android-enroll.md) - Ek adım gerekmez
 
 Ayrıca kullanıcının cihazında saatin ve tarihin doğru ayarlandığından emin olabilirsiniz:
 
@@ -236,15 +236,15 @@ Sertifika hatasının nedeni, Android cihazlarında [SSL Sunucu selamlamasına](
 
 Sorunu düzeltmek için AD FS sunucusunda veya proxy’lerdeki Bilgisayar Kişisel Sertifikaları’na sertifikaları aşağıdaki gibi içeri aktarın:
 
-1.  ADFS ve ara sunucularda **Başlat** > **Çalıştır** > **certlm.msc**'ye tıklayarak Yerel Makine Sertifikası Yönetim Konsolu'nu başlatın.
-2.  **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
-3.  AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
-4.  Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
-5.  Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
-6.  **Ayrıntılar** > **Dosyaya kopyala…** öğesini seçin.
-7.  Üst sertifikanın ortak anahtarını istediğiniz dosya konumuna dışarı aktarmak veya kaydetmek için sihirbaz yönergelerini izleyin.
-8.  **Sertifikalar** > **Tüm Görevler** > **İçeri Aktar**'a sağ tıklayın.
-9.  Üst sertifikaları **Yerel Bilgisayar\Kişisel\Sertifikalar** konumuna içeri aktarmak için sihirbazdaki istemleri izleyin.
+1. ADFS ve ara sunucularda **Başlat** > **Çalıştır** > **certlm.msc**'ye tıklayarak Yerel Makine Sertifikası Yönetim Konsolu'nu başlatın.
+2. **Kişisel**’i genişletip **Sertifikalar**’ı seçin.
+3. AD FS hizmeti iletişiminizin sertifikasını (ortak olarak imzalanmış bir sertifika) bulun ve özelliklerini görüntülemek için çift tıklayın.
+4. Sertifikanın üst sertifikasını (veya sertifikalarını) görmek için **Sertifika Yolu** sekmesini seçin.
+5. Her üst sertifikada, **Sertifikayı Görüntüle**’yi seçin.
+6. **Ayrıntılar** > **Dosyaya kopyala…** öğesini seçin.
+7. Üst sertifikanın ortak anahtarını istediğiniz dosya konumuna dışarı aktarmak veya kaydetmek için sihirbaz yönergelerini izleyin.
+8. **Sertifikalar** > **Tüm Görevler** > **İçeri Aktar**'a sağ tıklayın.
+9. Üst sertifikaları **Yerel Bilgisayar\Kişisel\Sertifikalar** konumuna içeri aktarmak için sihirbazdaki istemleri izleyin.
 10. AD FS sunucularını yeniden başlatın.
 11. Tüm AD FS ve proxy sunucularınızda yukarıdaki adımları yineleyin.
 

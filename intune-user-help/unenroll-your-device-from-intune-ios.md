@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d52ef6f2cf995031c25bc9065212e39235041b2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9ce28c73ba6f63e90dcaf93d8d21d32dcc4c0dcf
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501486"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529505"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>iOS cihazınızı Intune’dan kaldırma
 
@@ -68,11 +68,11 @@ Cihazınızı Intune’dan kaldırmak için aşağıdaki adımları kullanın ve
 
 Şirket Portalı’nın cihazınızda yerel verileri depoladığı üç yer vardır.
 
--   **Bilgi günlükleri**: Uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi Microsoft tarafından toplanan standart uygulama verileri, cihazı Şirket Portalı’ndan kaldırdığınızda otomatik olarak silinir.
+- **Bilgi günlükleri**: Uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi Microsoft tarafından toplanan standart uygulama verileri, cihazı Şirket Portalı’ndan kaldırdığınızda otomatik olarak silinir.
 
--   **Apple analiz**: Apple tarafından toplanan standart uygulama kilitlenme etkinlik verileri. Bu bilgiler, yalnızca cihazınızı fabrika ayarlarına sıfırlarsanız kaldırılabilir. Bu, cihazınızdaki tüm kişisel bilgileri silecektir. Bunu yapmak için **Ayarlar** > **Genel** > **Sıfırla** > **Tüm İçeriği ve Ayarları Sil**’i açın.
+- **Apple analiz**: Apple tarafından toplanan standart uygulama kilitlenme etkinlik verileri. Bu bilgiler, yalnızca cihazınızı fabrika ayarlarına sıfırlarsanız kaldırılabilir. Bu, cihazınızdaki tüm kişisel bilgileri silecektir. Bunu yapmak için **Ayarlar** > **Genel** > **Sıfırla** > **Tüm İçeriği ve Ayarları Sil**’i açın.
 
--   **Anahtarlık**: Cihazınız, parolalarınız ve diğer oturum açma bilgilerinizi Anahtarlığınızda depolar. Microsoft uygulamaları, Microsoft Outlook ve Microsoft Authenticator dahil cihazınızdaki Microsoft tarafından geliştirilmiş tüm uygulamalar arasında oturum açma bilgilerinizi paylaşır. Apple analiz gibi bu bilgiler, yalnızca cihazınızı fabrika ayarlarına sıfırlarsanız kaldırılabilir. Bu, cihazınızdaki tüm kişisel bilgileri silecektir. Bunu yapmak için **Ayarlar** > **Genel** > **Sıfırla** > **Tüm İçeriği ve Ayarları Sil**’i açın.
+- **Anahtarlık**: Cihazınız, parolalarınız ve diğer oturum açma bilgilerinizi Anahtarlığınızda depolar. Microsoft uygulamaları, Microsoft Outlook ve Microsoft Authenticator dahil cihazınızdaki Microsoft tarafından geliştirilmiş tüm uygulamalar arasında oturum açma bilgilerinizi paylaşır. Apple analiz gibi bu bilgiler, yalnızca cihazınızı fabrika ayarlarına sıfırlarsanız kaldırılabilir. Bu, cihazınızdaki tüm kişisel bilgileri silecektir. Bunu yapmak için **Ayarlar** > **Genel** > **Sıfırla** > **Tüm İçeriği ve Ayarları Sil**’i açın.
 
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

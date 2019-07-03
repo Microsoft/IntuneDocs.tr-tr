@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ed4319c5d6cda035d690d9ffa55e74e8dc55a45d
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 328a35b314a7372d2e4cee950496e9bcd6b4fe34
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493826"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528107"
 ---
 ## <a name="april-2017"></a>Nisan 2017
 
@@ -37,9 +37,9 @@ iOS için Şirket Portalı uygulamasında artık daha açıklayıcı hata iletil
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Geliştirilmiş Windows 10 Şirket portalı uygulaması yükleme durumu <!--676495-->
 
 Windows 10 Şirket Portalı uygulamasında başlatılan uygulama yüklemelerine yönelik geliştirmeler şunları içerir:
--   MSI paketleri için daha hızlı yükleme durumu raporlaması
--   Windows 10 Yıldönümü Güncelleştirmesi ve üzerini çalıştıran cihazlardaki modern uygulamalar için daha hızlı yükleme durumu raporlaması
--   Windows 10 Yıldönümü Güncelleştirmesi ve üzerini çalıştıran cihazlardaki modern uygulama yüklemeleri için yeni ilerleme çubuğu
+- MSI paketleri için daha hızlı yükleme durumu raporlaması
+- Windows 10 Yıldönümü Güncelleştirmesi ve üzerini çalıştıran cihazlardaki modern uygulamalar için daha hızlı yükleme durumu raporlaması
+- Windows 10 Yıldönümü Güncelleştirmesi ve üzerini çalıştıran cihazlardaki modern uygulama yüklemeleri için yeni ilerleme çubuğu
 
 Yeni ilerleme çubuğunu [Intune uygulama arabirimindeki yenilikler sayfasında](/intune/whats-new-app-ui) görebilirsiniz.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: f87256580ce3a0e31ef86f15244f49046d9dd35e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454043"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530253"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Veri Ambarı uygulaması - yalnızca kimlik doğrulama
 
@@ -41,18 +41,18 @@ Aşağıdaki işlem, bir uygulama anahtarını işlemek ve dönüştürmek için
 
 Bu bölümde, Intune’da yönlendirme yapmak istediğiniz Web uygulaması hakkında ayrıntılar sağlayacaksınız. Web uygulaması, bir istemci-sunucu uygulamasıdır. Sunucu; kullanıcı arabirimi, içerik ve işlevleri içeren web uygulamasını sağlar. Bu tür bir uygulama Web’de ayrı olarak korunur. Intune’a web uygulaması erişimi vermek için Intune’u kullanırsınız. Veri akışı, web uygulaması tarafından başlatılır. 
 
-1.  [Azure Portal](https://portal.azure.com) oturum açın.
-2.  Azure portalının üst tarafında yer alan **Arama kaynakları, hizmetler ve belgeler** alanını kullanarak **Azure Active Directory**’yi aratın.
-3.  Açılan menüde **Hizmetler**’in altında **Azure Active Directory**’yi seçin.
-4.  **Uygulama kayıtları**’nı seçin.
-5.  **Yeni uygulama kaydı**’nı seçerek **Oluştur** dikey penceresini görüntüleyin.
-6.  **Oluştur** dikey penceresinde uygulama ayrıntılarınızı ekleyin:
+1. [Azure Portal](https://portal.azure.com) oturum açın.
+2. Azure portalının üst tarafında yer alan **Arama kaynakları, hizmetler ve belgeler** alanını kullanarak **Azure Active Directory**’yi aratın.
+3. Açılan menüde **Hizmetler**’in altında **Azure Active Directory**’yi seçin.
+4. **Uygulama kayıtları**’nı seçin.
+5. **Yeni uygulama kaydı**’nı seçerek **Oluştur** dikey penceresini görüntüleyin.
+6. **Oluştur** dikey penceresinde uygulama ayrıntılarınızı ekleyin:
 
     - Bir uygulama adı, örneğin *Intune Uygulaması-Yalnızca Auth*.
     - **Uygulama türü**. **Web uygulaması / API**’yi seçerek bir web uygulamasını, bir web API'sini veya her ikisini temsil eden bir uygulama ekleyin.
     - Uygulamanın **oturum açma URL’sini**. Bu, kullanıcıların kimlik doğrulama işlemi sırasında otomatik olarak gittiği konumdur. Söyledikleri kişi olduklarını kanıtlamaları gerekir. Daha fazla bilgi için bkz. [Uygulama erişimi ve Azure Active Directory ile çoklu oturum açma nedir?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)
 
-7.  **Oluştur** dikey penceresinin alt kısmında **Oluştur**’a tıklayın.
+7. **Oluştur** dikey penceresinin alt kısmında **Oluştur**’a tıklayın.
 
     >[!NOTE] 
     > **Kayıtlı uygulama** dikey penceresindeki **Uygulama kimliği**’ni daha sonra kullanmak üzere kopyalayın.
@@ -61,12 +61,12 @@ Bu bölümde, Intune’da yönlendirme yapmak istediğiniz Web uygulaması hakk�
 
 Bu bölümde Azure AD, uygulamanız için bir anahtar değeri oluşturur.
 
-1.  **Uygulama kayıtları** dikey penceresinde yeni oluşturulmuş uygulamanızı seçerek uygulama dikey penceresini görüntüleyin.
-2.  Dikey pencerenin üst kısmındaki **Ayarlar**’ı seçerek **Ayarlar** dikey penceresini görüntüleyin.
-3.  **Ayarlar** dikey penceresinde **Anahtarlar**’ı seçin.
-4.  Anahtar için **Açıklama**, **Bitiş** süresi ve **Değer** girin.
-5.  **Kaydet**’e tıklayarak uygulamanın anahtarlarını kaydedin ve güncelleştirin.
-6.  Oluşturulan anahtar değerini (şifreli base64) kopyalamanız gerekir.
+1. **Uygulama kayıtları** dikey penceresinde yeni oluşturulmuş uygulamanızı seçerek uygulama dikey penceresini görüntüleyin.
+2. Dikey pencerenin üst kısmındaki **Ayarlar**’ı seçerek **Ayarlar** dikey penceresini görüntüleyin.
+3. **Ayarlar** dikey penceresinde **Anahtarlar**’ı seçin.
+4. Anahtar için **Açıklama**, **Bitiş** süresi ve **Değer** girin.
+5. **Kaydet**’e tıklayarak uygulamanın anahtarlarını kaydedin ve güncelleştirin.
+6. Oluşturulan anahtar değerini (şifreli base64) kopyalamanız gerekir.
 
     >[!NOTE] 
     > **Anahtarlar** dikey penceresinden çıktığınızda anahtar değeri kaybolur. Ve daha sonra anahtarı bu dikey pencereden alamazsınız. Daha sonra kullanmak üzere anahtarı burada kopyalayın.
@@ -75,28 +75,28 @@ Bu bölümde Azure AD, uygulamanız için bir anahtar değeri oluşturur.
 
 Bu bölümde, uygulamalara izinler vereceksiniz.
 
-1.  **Ayarlar** dikey penceresinde **Gerekli izinler**’i seçin.
-2.  **Ekle**'yi tıklatın.
-3.  **Bir API ekle**’yi seçerek **Bir API seç** dikey penceresini görüntüleyin.
-4.  **Microsoft Intune API (MicrosoftIntuneAPI)** ’yi seçin ve daha sonra **Bir API seç** dikey penceresinden **Seç**’e tıklayın. **İzinleri seç** adımı seçilir ve **Erişim Ver** dikey penceresi görüntülenir.
-5.  **Uygulama İzinleri** bölümüden **Microsoft Intune’dan veri ambarı bilgileri al**’ı seçin.
-6.  **Erişim Ver** dikey penceresinde **Seç**’e tıklayın.
-7.  **API erişimi ekle** dikey penceresinde **Tamam**’a tıklayın.
-8.  **Gerekli İzinler** dikey penceresinde **İzinleri Ver**’e tıklayın ve bu uygulamanın önceden sahip olduğu izinleri güncelleştirmeniz istendiğinde **Evet**’i seçin.
+1. **Ayarlar** dikey penceresinde **Gerekli izinler**’i seçin.
+2. **Ekle**'yi tıklatın.
+3. **Bir API ekle**’yi seçerek **Bir API seç** dikey penceresini görüntüleyin.
+4. **Microsoft Intune API (MicrosoftIntuneAPI)** ’yi seçin ve daha sonra **Bir API seç** dikey penceresinden **Seç**’e tıklayın. **İzinleri seç** adımı seçilir ve **Erişim Ver** dikey penceresi görüntülenir.
+5. **Uygulama İzinleri** bölümüden **Microsoft Intune’dan veri ambarı bilgileri al**’ı seçin.
+6. **Erişim Ver** dikey penceresinde **Seç**’e tıklayın.
+7. **API erişimi ekle** dikey penceresinde **Tamam**’a tıklayın.
+8. **Gerekli İzinler** dikey penceresinde **İzinleri Ver**’e tıklayın ve bu uygulamanın önceden sahip olduğu izinleri güncelleştirmeniz istendiğinde **Evet**’i seçin.
 
 ## <a name="generate-token"></a>Belirteç oluşturma
 
 Visual Studio’yu kullanarak .NET Framework’ü destekleyen ve kodlama dili olarak C# kullanan bir Konsol Uygulaması (.NET Framework) projesi oluşturun.
 
-1.  **Dosya** > **Yeni** > **Proje**’yi seçerek **Yeni Proje** iletişim kutusunu görüntüleyin.
-2.  Sol tarafta **Visual C#** ’yi seçerek tüm .NET Framework projelerini görüntüleyin.
-3.  **Konsol Uygulaması (.NET Framework)** ’nı seçin, bir uygulama adı ekleyin ve **Tamam**’a tıklayarak uygulamayı oluşturun.
-4.  **Çözüm Gezgini**’nde **Program.cs**’yi seçerek kodu görüntüleyin.
-5.  Çözüm Gezgini'nde derlemesine bir başvuru eklemek `System.Configuration`.
-6.  Açılan menüde **Ekle** > **Yeni öğe**’yi seçin. **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
-7.  Sol tarafta, **Visual C#** altında **Kod**’u seçin.
-8.  **Sınıf** seçin, sınıfın adını *IntuneDataWarehouseClass.cs* olarak değiştirin ve **Ekle**’ye tıklayın.
-9.  <code>Main</code> yönteminde aşağıdaki kodu ekleyin:
+1. **Dosya** > **Yeni** > **Proje**’yi seçerek **Yeni Proje** iletişim kutusunu görüntüleyin.
+2. Sol tarafta **Visual C#** ’yi seçerek tüm .NET Framework projelerini görüntüleyin.
+3. **Konsol Uygulaması (.NET Framework)** ’nı seçin, bir uygulama adı ekleyin ve **Tamam**’a tıklayarak uygulamayı oluşturun.
+4. **Çözüm Gezgini**’nde **Program.cs**’yi seçerek kodu görüntüleyin.
+5. Çözüm Gezgini'nde derlemesine bir başvuru eklemek `System.Configuration`.
+6. Açılan menüde **Ekle** > **Yeni öğe**’yi seçin. **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
+7. Sol tarafta, **Visual C#** altında **Kod**’u seçin.
+8. **Sınıf** seçin, sınıfın adını *IntuneDataWarehouseClass.cs* olarak değiştirin ve **Ekle**’ye tıklayın.
+9. <code>Main</code> yönteminde aşağıdaki kodu ekleyin:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();

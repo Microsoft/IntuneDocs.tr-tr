@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61cbe326bbbd0e52c045491fe59ba837779ddb6e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: eb4b90f434af9313cc567193159e94a496f86000
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041147"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511840"
 ---
-#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune veri ambarı API'si
+# <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune veri ambarı API'si
 
 Intune Veri Ambarı API’si, Intune verilerinizin makine tarafından okunabilir bir biçimine erişmenize ve bu verileri sık kullandığınız analiz aracında kullanmanıza olanak tanır. Kurumsal mobil ortamınızla ilgili öngörüler sağlayan raporlar oluşturmak için bu API’yi kullanabilirsiniz. API, aşağıdakiler için standart desenler izleyen OData protokolünü kullanır:
 

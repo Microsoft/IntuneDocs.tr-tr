@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17db2227303fe3937156ad6afa610dce48bd1992
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041345"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528316"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı Başlangıç: Ekleme ve bir istemci uygulama atama
 
@@ -52,7 +52,7 @@ Intune’a bir uygulama eklemek için aşağıdaki adımları kullanın:
 6. **Paket Adı** olarak **Microsoft Office 365 uygulama paketi** yazın.
 7. Girin **Microsoft Office 365 uygulama paketini** olarak **Paket açıklaması**.
 8. **Şirket Portalı’nda bu uygulamayı öne çıkan uygulama olarak görüntüle** ayarını **Evet** olarak belirleyin.
-9. **Tamam** düğmesine tıklayın.
+9. **Tamam**'ı tıklatın.
 
     ![Uygulama bilgileri ekleme ekran görüntüsü](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
@@ -69,7 +69,7 @@ Microsoft Intune’a bir uygulama ekledikten sonra uygulamayı kullanıcı veya 
 
 Uygulamaları gruplara eklemek için aşağıdaki adımları kullanın:
 1. [Intune](https://aka.ms/intuneportal)’da **İstemci uygulamaları** > **Uygulamalar**’ı seçin. 
-2. Bir gruba atamak istediğiniz uygulamayı seçin.   
+2. Bir gruba atamak istediğiniz uygulamayı seçin.
 3. **Atamalar** > **Grup ekle**’yi seçerek **Grup ekle** dikey penceresini görüntüleyin.
 4. Açılan **Atama türü** kutusunda **Kayıtlı cihazlar için kullanılabilir**’i seçin. 
 5. **Dahil Edilen Gruplar** > **Dahil edilecek grupları seçin** > **Contoso Sınama Aracı**’nı seçin.

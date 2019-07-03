@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 945e597556c7d0c43000ccf659b7b6e088661cff
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504528"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528963"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihaz geçiş kodunuzu sıfırlama
 
@@ -42,7 +42,7 @@ Cihaz PIN’ini veya parolasını kaybederseniz, sıfırlamak için [Şirket Por
 
     ![Tanımlanmamış, genel olarak adlandırılmış cihazları gösteren 2 kutucuğun bulunduğu Cihazlar sayfasının ekran görüntüsü. Cihazların hemen altında gri bir başlık yer alır ve kullanıcılardan kullandıkları cihazı tanımlamalarını veya yeni bir tane eklemelerini ister.](./media/rename-reset-device-step2-1808.png) 
 
-3. **Geçiş Kodunu Sıfırla**’ya dokunun. Geçiş kodu seçeneği sayfanın üst kısmında görünmüyorsa **Diğer (...)** > **Geçiş Kodunu Sıfırla**’yı seçin.   
+3. **Geçiş Kodunu Sıfırla**’ya dokunun. Geçiş kodu seçeneği sayfanın üst kısmında görünmüyorsa **Diğer (...)**  > **Geçiş Kodunu Sıfırla**’yı seçin.   
 
    ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik cihaz ayrıntıları sayfası; üst kısmında Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitle bağlantıları ile. ](./media/rename-reset-device-1808.png)   
 
@@ -79,7 +79,7 @@ Bu bölüm, geçiş kodunu sıfırlamayı ve tüm cihaz platformlarındaki parol
 **iOS**: Geçiş kodu kaldırılır ve geçici bir geçiş kodu oluşturulmaz. Cihazınızı açmak veya satın alma işlemleri yapmak için Touch ID parmak izi tarayıcısını kullanıyorsanız, bunu yeniden ayarlamanız gerekir.  
 
 **Windows 10 Mobile**: Mevcut geçiş kodu kaldırılır ve harf ve sayılardan oluşan geçici bir geçiş kodu oluşturur. Bu ayarlanırsa, Windows Hello yüz tanıma cihazda çalışmaya devam eder.
-    
+
 **Windows Phone 8.1**: Mevcut geçiş kodunu kaldırır ve sayıda oluşan geçici bir geçiş kodu oluşturur.  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

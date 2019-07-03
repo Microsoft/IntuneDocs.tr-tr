@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb70d999cf43d568ad19f2ba83618f6ecfbaf7d7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 949a310b1588876cfe0c547dfa73f1510a710710
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504970"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527595"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>iOS cihazınıza Zimperium zIPS yükleme
 
@@ -29,7 +29,7 @@ ms.locfileid: "61504970"
 
 ## <a name="what-you-need-to-do"></a>Yapmanız gerekenler 
 
-1.  Aşağıdaki istemi görürseniz cihazınızın Zimperium zIPS yüklenmesine izin vermek için **Yükle**’ye dokunun.
+1. Aşağıdaki istemi görürseniz cihazınızın Zimperium zIPS yüklenmesine izin vermek için **Yükle**’ye dokunun.
 
 2. Aşağıdaki iletiyi gördüğünüzde, **Ayarlar**’a dokunun, **Konum Hizmetleri**’ni açın ve **Devam**’a dokunun.
 

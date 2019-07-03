@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043909"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530724"
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
 
@@ -35,8 +35,8 @@ Koşullu erişimin çalışması için aşağıdaki gereksinimler karşılanmal�
 - Cihazın Intune'a kayıtlı olmalı ve Intune tarafından yönetilmelidir.
 - Gerek kullanıcı, gerekse cihaz, atanan Intune ilkeleriyle uyumlu olmalıdır.
 - Kullanıcıya varsayılan olarak bir cihaz uyumluluk ilkesi atanmış olmalıdır. Bu, Intune yönetim portalında **Cihaz Uyumluluğu** > **Uyumluluk İlkesi Ayarları** altındaki **Kendisine hiçbir uyumluluk ilkesi atanmamış cihazları şöyle işaretle** ayarının yapılandırmasına bağlıdır.
--   Kullanıcı Outlook yerine cihazın yerel posta istemcisini kullanıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir. Bu ayar iOS, Windows Phone ve Android cihazlarında otomatik olarak gerçekleşir.
--   Intune Exchange Connector'ınız düzgün şekilde yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
+- Kullanıcı Outlook yerine cihazın yerel posta istemcisini kullanıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir. Bu ayar iOS, Windows Phone ve Android cihazlarında otomatik olarak gerçekleşir.
+- Intune Exchange Connector'ınız düzgün şekilde yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
 
 Azure Yönetim Portalı’nda ve cihaz envanteri raporunda her cihaz için bu koşulları görüntüleyebilirsiniz.
 

@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: fcc493258d148e65a0dbc08a9499a79e1d31bb95
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196873"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529380"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune şirket Portalı'nda Windows cihaz kaydı  
 
@@ -64,11 +64,11 @@ Kayıt adımları Windows 10 cihazlarını farklı sürümleri için farklıdır
     *  __1607 veya üzeri__: Sunar kaydetme [ **ayarları** > **hesabı** > **işe veya okula erişim** rota](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 veya önceki__: Sunar kaydetme [ **ayarları** > **hesabı** > **hesaplarınızı** rota](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
-### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile cihazları       
+### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile cihazları
 
-1.  Git __tüm uygulamalar__ seçip __ayarları__ uygulama.  
-2.  __Sistem__ > __Hakkında__’yı seçin.      
-3.  Altında __cihaz bilgilerini__, bulma __sürüm__.  
+1. Git __tüm uygulamalar__ seçip __ayarları__ uygulama.
+2. __Sistem__ > __Hakkında__’yı seçin.
+3. Altında __cihaz bilgilerini__, bulma __sürüm__.  
 4. Sürümünüz  
 
     *  __1607 veya üzeri__: Cihaz kullanarak kaydolmayı [ **ayarları** > **işe veya okula erişim** rota](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   

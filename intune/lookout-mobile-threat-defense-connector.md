@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3566d144abad563ead64c124e128c221e725a25c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a6dfce050726cfddadc493f73c91701021dc21ea
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045695"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529804"
 ---
 # <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Intune ile lookout mobil uç nokta güvenliği Bağlayıcısı
 
@@ -98,7 +98,7 @@ Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:
-1.  [Lookout tümleştirmenizi ayarlama](lookout-mtd-connector-integration.md)
-2.  [Intune'da mobil uç nokta güvenliği etkinleştirme](mtd-connector-enable.md)
-3.  [Lookout for Work uygulamasını ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4.  [Lookout cihaz uyumluluğu ilkesini yapılandırma](mtd-device-compliance-policy-create.md)
+1. [Lookout tümleştirmenizi ayarlama](lookout-mtd-connector-integration.md)
+2. [Intune'da mobil uç nokta güvenliği etkinleştirme](mtd-connector-enable.md)
+3. [Lookout for Work uygulamasını ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4. [Lookout cihaz uyumluluğu ilkesini yapılandırma](mtd-device-compliance-policy-create.md)

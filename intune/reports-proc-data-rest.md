@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8445c20b658cc7a41ed5b53df16274dbbeda629
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 2f638a8b3816e775c043077a7ac31b3320496744
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494625"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528389"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -110,19 +110,19 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 
 #### <a name="add-the-information-used-to-request-the-token"></a>Belirteç istemek için gereken bilgileri ekleme
 
-1.  Daha önce yüklemediyseniz Postman’i indirin. Postman’i indirmek için bkz. [www.getpostman](https://www.getpostman.com).
-2.  Postman’i açın. **AL** HTTP işlemini seçin.
-3.  Uç nokta URL’sini adrese yapıştırın. Bu, aşağıdakine benzer olmalıdır:  
+1. Daha önce yüklemediyseniz Postman’i indirin. Postman’i indirmek için bkz. [www.getpostman](https://www.getpostman.com).
+2. Postman’i açın. **AL** HTTP işlemini seçin.
+3. Uç nokta URL’sini adrese yapıştırın. Bu, aşağıdakine benzer olmalıdır:  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
-4.  **Yetkilendirme** sekmesini seçin ve **Tür** listesinden **OAuth 2.0**’ı seçin.
-5.  Seçin **yeni erişim belirteci alın**.
-6.  Azure’da uygulamanıza Geri Arama URL’si eklediğinizi doğrulayın. Geri Çağırma URL’si şudur: `https://www.getpostman.com/oauth2/callback`.
-7.  **Belirteç Adı** için Taşıyıcıyı yazın.
-8.  **Kimlik Doğrulama URL’sini** ekleyin. Bu, aşağıdakine benzer olmalıdır:  
+4. **Yetkilendirme** sekmesini seçin ve **Tür** listesinden **OAuth 2.0**’ı seçin.
+5. Seçin **yeni erişim belirteci alın**.
+6. Azure’da uygulamanıza Geri Arama URL’si eklediğinizi doğrulayın. Geri Çağırma URL’si şudur: `https://www.getpostman.com/oauth2/callback`.
+7. **Belirteç Adı** için Taşıyıcıyı yazın.
+8. **Kimlik Doğrulama URL’sini** ekleyin. Bu, aşağıdakine benzer olmalıdır:  
 
     `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
-9.  **Erişim Belirteci URL’sini** ekleyin. Bu, aşağıdakine benzer olmalıdır:  
+9. **Erişim Belirteci URL’sini** ekleyin. Bu, aşağıdakine benzer olmalıdır:  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
@@ -141,8 +141,8 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>Postman kullanarak aramayı uç noktaya gönderme
 
-1.  **Gönder**’i seçin.
-2.  Dönüş verileri Postman yanıt gövdesi içinde görüntülenir.
+1. **Gönder**’i seçin.
+2. Dönüş verileri Postman yanıt gövdesi içinde görüntülenir.
 
     ![Postman istemci durum 200 Tamam eşittir](./media/reports-postman_200OK.png)
 

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505038"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527625"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS cihazınıza Mobile Threat Defense yükleme
 
@@ -38,12 +38,12 @@ ms.locfileid: "61505038"
 
 Mobil Tehdit Savunması cihazları, şirket verilerini çalmaya çalışabilecek uygulamalardan korumak için şirketlere sunulan bir yoldur. Bu korumayı eklemek, şirketinizin kullandığı Mobil Tehdit Savunması hizmetine cihazınızdaki uygulamalar hakkında fazladan bilginin raporlanmasını gerektirir. Şirketiniz, kişisel uygulamalarınızdaki verileri göremez. Cihazınızdaki uygulamaların tamamı, şirketiniz bir Mobil Tehdit Savunması hizmeti kullandığında [şirketinizin görebileceklerine](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) eklenir. Şirketinizin görebileceği uygulama bilgileri şöyledir:
 
-*   Uygulama adı
+* Uygulama adı
 * Uygulama kimliği: uygulamayı Uygulama Mağazasında tanımlayan benzersiz ad
-*   Uygulama sürümü ve kısa sürüm numarası: bir uygulamanın belirli sürüm numaraları
+* Uygulama sürümü ve kısa sürüm numarası: bir uygulamanın belirli sürüm numaraları
 * Uygulama paketi grubu ve dinamik boyut: bir uygulamanın cihazınızda kullandığı alan miktarı
 * Uygulama geçerliliği: bir uygulamanın kullanıma uygun olup olmadığı bilgisi
-*   Uygulama yönetim durumu: bir uygulamanın şirketiniz tarafından yönetildiği veya kişisel bir uygulama olduğu bilgisi
+* Uygulama yönetim durumu: bir uygulamanın şirketiniz tarafından yönetildiği veya kişisel bir uygulama olduğu bilgisi
 
 ## <a name="if-the-installation-doesnt-work"></a>Yükleme çalışmazsa
 

@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8581d047e76ac1734b2d6c7816facf601e397957
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 816ac1d97e7be485717905fe9d5d62b812408446
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041729"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512206"
 ---
-#  <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
+# <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
 Aşağıdaki Intune Veri Ambarı koleksiyonları, Veri Ambarı API’si varlıklarının v1.0 koleksiyonlarının özellikleri, açıklamaları ve örneklerini sağlar. 
 
@@ -38,12 +38,12 @@ Aşağıdaki Intune Veri Ambarı koleksiyonları, Veri Ambarı API’si varlıkl
 | Gözden geçirme                   | İkili dosya karşıya yüklenirken yönetici tarafından bahsedilen sürüm.                   | 2                                    |
 | Başlık                      | Uygulama başlığı.                                                                     | Excel                                |
 | Yayımcı                  | Uygulama yayımcısı.                                                                 | Microsoft                            |
-| UploadState                | Uygulamanın karşıya yüklenme durumu.                                                              | 1.                                    |
-| AppTypeKey                 | Aşağıdaki bölümde açıklanan AppType özelliğine başvuru.                            | 1.                                    |
+| UploadState                | Uygulamanın karşıya yüklenme durumu.                                                              | 1\.                                    |
+| AppTypeKey                 | Aşağıdaki bölümde açıklanan AppType özelliğine başvuru.                            | 1                                    |
 | VppProgramTypeKey          | Aşağıda açıklanan VppProgramType özelliğine başvuru.                                        | 30876                                |
 | CreationTime               | Düzeltmenin oluşturulduğu saat.                                            | 23.11.2016 0:00                      |
 | ModifiedTime               | Bu düzeltmeyle ilgili herhangi bir şeyin en son değiştirildiği an.                            | 23.11.2016 0:00                      |
-| Boyut                       | İkili dosyanın bayt cinsinden boyutu.                                                          | 120.392.000                          |
+| Size                       | İkili dosyanın bayt cinsinden boyutu.                                                          | 120.392.000                          |
 | StartDateInclusiveUTC      | Bu uygulama düzeltmesinin veri ambarında oluşturulma tarihi ve saati (UTC).      | 23.11.2016 0:00                      |
 | EndDateExclusiveUTC        | Bu uygulama düzeltmesinin kullanımdan kalkma tarihi ve saati (UTC).                        | 23.11.2016 0:00                      |
 | IsCurrent                  | Uygulama sürümünün veri ambarında mevcut olup olmadığını gösterir.         | True/False                           |
@@ -63,7 +63,7 @@ Aşağıdaki Intune Veri Ambarı koleksiyonları, Veri Ambarı API’si varlıkl
 | AppTypeID |                Ad               |                     Açıklama                     |
 |:---------:|:---------------------------------:|:---------------------------------------------------:|
 | 0         | Android mağazası uygulaması               | Bir Android mağazası uygulaması.                             |
-| 1         | Android LOB uygulaması                 | Bir Android iş kolu uygulaması.                  |
+| 1\.         | Android LOB uygulaması                 | Bir Android iş kolu uygulaması.                  |
 | 2         | Yönetilen Android mağazası uygulaması (MAM) | Yönetimi etkin bir Android mağazası uygulaması. |
 | 3         | iOS mağazası uygulaması                   | Bir iOS mağazası uygulaması.                                 |
 | 4         | iOS LOB uygulaması                     | Bir iOS iş kolu uygulaması.                      |
@@ -129,8 +129,8 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 |     Özellik    |                       Açıklama                      |    Örnek    |
 |:---------------:|:------------------------------------------------------:|:-------------:|
 | DateKey         | Veri ambarında bu tarihin benzersiz tanımlayıcısı. | 20160703      |
-| FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3.7.2016 0:00 |
-| DayOfWeek       | Haftanın kaçıncı günü olduğu                                            | 1.             |
+| FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3\.7.2016 0:00 |
+| DayOfWeek       | Haftanın kaçıncı günü olduğu                                            | 1\.             |
 | DayOfMonth      | Ayın kaçıncı günü olduğu                                           | 3             |
 | DayOfYear       | Yılın kaçıncı günü olduğu                                            | 185           |
 | WeekOfYear      | Yılın kaçıncı haftası olduğu                                           | 28            |
@@ -138,8 +138,8 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | CalendarQuarter | Takvim çeyreği                                       | 3             |
 | CalendarYear    | Takvim yılı                                          | 2016          |
 | DateKey         | Veri ambarında bu tarihin benzersiz tanımlayıcısı. | 20160703      |
-| FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3.7.2016 0:00 |
-| DayOfWeek       | Haftanın kaçıncı günü olduğu                                            | 1.             |
+| FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3\.7.2016 0:00 |
+| DayOfWeek       | Haftanın kaçıncı günü olduğu                                            | 1             |
 | DayOfMonth      | Ayın kaçıncı günü olduğu                                           | 3             |
 | DayOfYear       | Yılın kaçıncı günü olduğu                                            | 185           |
 | WeekOfYear      | Yılın kaçıncı haftası olduğu                                           | 28            |
@@ -152,7 +152,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 |      Özellik      |                                    Açıklama                                   |                Örnek               |
 |:------------------:|:--------------------------------------------------------------------------------:|:------------------------------------:|
 | deviceCategoryID   | Cihaz kategorisi için benzersiz tanımlayıcı.                                       | fb415ba2-7c08-41f6-a5e5-685b50da2c4c |
-| deviceCategoryKey  | Veri ambarındaki cihaz kategorisinin benzersiz tanımlayıcısı - vekil anahtar | 1.                                    |
+| deviceCategoryKey  | Veri ambarındaki cihaz kategorisinin benzersiz tanımlayıcısı - vekil anahtar | 1\.                                    |
 | deviceCategoryName | Cihaz kategorisi için görünen ad.                                            | Smartphones                          |
 
 ## <a name="deviceconfigurationprofiledeviceactivities"></a>deviceConfigurationProfileDeviceActivities
@@ -266,7 +266,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 |:------------:|:-----------------:|:-----------------------------------------------------:|
 | -1           | Kullanılamıyor   | Cihaz türü kullanılamıyor.                     |
 | 0            | Masaüstü           | Windows Masaüstü cihaz                              |
-| 1.            | Windows           | Windows cihaz                                      |
+| 1            | Windows           | Windows cihaz                                      |
 | 2            | WinMO6            | Windows Mobile 6.0 cihaz                           |
 | 3            | Nokia             | Nokia cihaz                                        |
 | 4            | WindowsPhone      | Windows Phone cihaz                                |
@@ -302,7 +302,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | enrollmentTypeID |                Name                |                                        Açıklama                                       |
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
 | 0                | Bilinmiyor                            | Kayıt türü toplanmadı                                                      |
-| 1                | UserEnrollment                     | KCG kanalı üzerinden kullanıcı yoluyla kayıt.                                           |
+| 1\.                | UserEnrollment                     | KCG kanalı üzerinden kullanıcı yoluyla kayıt.                                           |
 | 2                | DeviceEnrollmentManager            | Cihaz kayıt yöneticisi hesabıyla kullanıcı kaydı.                              |
 | 3                | AppleBulkWithUser                  | Kullanıcı sınaması ile Apple toplu kaydı. (DEP, Apple Configurator)                   |
 | 4                | AppleBulkWithoutUser               | Kullanıcı sınaması olmadan Apple toplu kaydı.   (DEP, Apple Configurator, Mobil Yapılandırma) |
@@ -408,7 +408,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | DateKey             | Tarihin benzersiz tanımlayıcısı.                                | 123     |
 | TenantKey           | Kiracının benzersiz tanımlayıcısı.                              | 456     |
 | DeviceKey           | Cihazın benzersiz tanımlayıcısı.                              | 789     |
-| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1.       |
+| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1\.       |
 | ExtensionStateKey   | Sistem durumunun benzersiz tanımlayıcısı.                            | 2       |
 
 ## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
@@ -424,7 +424,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 
 |       Özellik      |                          Açıklama                          | Örnek |
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
-| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1       |
+| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1\.       |
 | ExtensionVersion    | 4 basamaklı sürüm numarası.                                   | 1.0.2.0 |
 
 ## <a name="mamapplications"></a>MamApplications
@@ -519,7 +519,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 
 | ManagementAgentTypeID |                Name               |                                  Açıklama                                 |
 |:---------------------:|:---------------------------------:|:----------------------------------------------------------------------------:|
-| 1.                     | EAS                               | Cihaz, Exchange Active Sync yoluyla yönetiliyor                         |
+| 1\.                     | EAS                               | Cihaz, Exchange Active Sync yoluyla yönetiliyor                         |
 | 2                     | MDM                               | Cihaz, bir MDM aracısı kullanılarak yönetiliyor                                   |
 | 3                     | EasMdm                            | Cihaz, Exchange Active Sync ve bir MDM aracısıyla yönetiliyor        |
 | 4                     | IntuneClient                      | Cihaz, Intune bilgisayar aracısı tarafından yönetiliyor                               |
@@ -545,7 +545,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | managementStateID |      Name      |                                                   Açıklama                                                   |
 |:-----------------:|:--------------:|:---------------------------------------------------------------------------------------------------------------:|
 | 0                 | Yönetilen        | Hiçbir bekleyen uzak eylem olmadan yönetilir.                                                                       |
-| 1.                 | RetirePending  | Cihaz için bekleyen bir devre dışı bırakma komutu var.                                                             |
+| 1                 | RetirePending  | Cihaz için bekleyen bir devre dışı bırakma komutu var.                                                             |
 | 2                 | RetireFailed   | Devre dışı bırakma komutu cihazda başarısız oldu.                                                                      |
 | 3                 | WipePending    | Cihaz için bekleyen bir silme komutu var.                                                               |
 | 4                 | WipeFailed     | Silme komutu cihazda başarısız oldu.                                                                        |
@@ -621,7 +621,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki c
 |        Özellik        |                      Açıklama                      |     Örnek    |
 |:----------------------:|:-----------------------------------------------------:|:--------------:|
 | PolicyPlatformTypeKey  | İlke platform türü için benzersiz anahtar.        | 20170519       |
-| PolicyPlatformTypeId   | İlke platform türü için benzersiz tanımlayıcı. | 1.              |
+| PolicyPlatformTypeId   | İlke platform türü için benzersiz tanımlayıcı. | 1\.              |
 | PolicyPlatformTypeName | İlke platform türünün adı.              | AndroidForWork |
 
 ## <a name="policytypeactivities"></a>policyTypeActivities
@@ -643,7 +643,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki c
 |    Özellik    |                       Açıklama                      |            Örnek            |
 |:--------------:|:------------------------------------------------------:|:-----------------------------:|
 | PolicyTypeId   | İlkenin kaynak sistemindeki benzersiz tanımlayıcısı.  | 123                           |
-| PolicyTypeKey  | İlkenin veri ambarındaki benzersiz tanımlayıcısı. | 1.                             |
+| PolicyTypeKey  | İlkenin veri ambarındaki benzersiz tanımlayıcısı. | 1\.                             |
 | PolicyTypeName | İlke türünün adı.                               | Windows 10 Uyumluluk ilkesi. |
 
 ## <a name="policyuseractivities"></a>policyUserActivities
@@ -664,7 +664,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 |----------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 |    termsAndConditionsKey    |    “userTermsAndConditionsAcceptances” koleksiyonundaki bir girişe karşılık gelen anahtar    |    123    |
 |    termsAndCondidionsId    |    Bu termsAndConditions girişinin kimliği    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
-|    termsAndConditionsVersion    |    Bu hüküm ve koşullar girişinin sürümü    |    1.    |
+|    termsAndConditionsVersion    |    Bu hüküm ve koşullar girişinin sürümü    |    1\.    |
 |    name    |    Bu termsAndConditions girişinin adı.        |    Intune kullanım koşulları     |
 |    description    |    Bu hüküm ve koşulların açıklaması.     |         |
 |    title    |    Bu hüküm ve koşulların başlığı.     |    Cihaz yönetimi şirket ilkesi        |
@@ -708,7 +708,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 |-------------------------------|--------------------------------------------------------------------------------|----------------------------|
 |    dateKey    |    “dates” koleksiyonundaki tarih değerlerine karşılık gelen anahtar.     |    20180823    |
 |    userKey    |    “Kullanıcılar” koleksiyonunda bir kullanıcıyla eşleşen kullanıcı anahtarı.     |    20000    |
-|    termsAndConditionsKey    |    “termsAndConditions” koleksiyonundaki bir girişe karşılık gelen anahtar    |    1.    |
+|    termsAndConditionsKey    |    “termsAndConditions” koleksiyonundaki bir girişe karşılık gelen anahtar    |    1    |
 |    acceptedDateTimeUTC    |    Kullanıcının bu hüküm ve koşulları kabul ettiği saat    |    23.8.2018 4:01:34 ÖÖ    |
 |    lastModifiedDateTimeUTC    |    Bu girişin son değiştirildiği zaman.     |    23.8.2018 4:01:34 ÖÖ    |
 

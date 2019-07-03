@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046278"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528690"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Öğretici: Yönetilmeyen cihazlarda Exchange Online e-postaları koruma
 
@@ -74,7 +74,7 @@ Bu öğretici için size bir uygulama düzeyinde koruma yararlanılmasını Outl
 
     Seçin **Tamam** ayarları bölmesine dönmek için.  
 
-7.  Ayarları bölmeden **Tamam**ve oluşturma ilke bölmesinde, ardından **Oluştur**.
+7. Ayarları bölmeden **Tamam**ve oluşturma ilke bölmesinde, ardından **Oluştur**.
 
 Outlook için uygulama koruma ilkesi oluşturulur. Ardından, Outlook uygulaması kullanmasını gerektirmek için koşullu erişimi ayarlama.
 
@@ -188,5 +188,5 @@ Test ilkelerine artık ihtiyacınız kalmadığında bunları kaldırabilirsiniz
 4. **Koşullu Erişim** > **İlkeler**’i seçin.  
 5. İçinde **ilke adı** listesinde, bağlam menüsünü seçin ( **...** ) her sınama ilkelerini ve ardından **Sil**. Onaylamak için **Evet**’i seçin.  
 
- ## <a name="next-steps"></a>Sonraki adımlar  
+## <a name="next-steps"></a>Sonraki adımlar  
 Bu öğreticide oluşturduğunuz kullanıcı Outlook uygulaması ile neler yapabileceğinizi sınırlamak için uygulama koruma ilkeleri ve koşullu erişim ilkeleri Outlook uygulaması gerektirebilir ve Modern kimlik doğrulaması istemcileri için mfa'yı gerekli oluşturdunuz. Diğer uygulama ve Hizmetleri korumak için Intune ile koşullu erişim kullanma hakkında bilgi edinmek için [koşullu erişimi ayarlama](conditional-access.md).

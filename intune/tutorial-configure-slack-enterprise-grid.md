@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0829a2b3f9aff5f30a971d176591bf838510a606
-ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67197637"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530714"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Öğretici: Intune, EMM ve uygulama yapılandırmasında kullanılacak Slack yapılandırın
 
@@ -54,44 +54,44 @@ Ayrıca ihtiyacınız olacak bir [Slack Kurumsal kılavuz](https://get.slack.hel
 
 ### <a name="add-slack-for-emm-to-intune"></a>Slack EMM için Intune'a ekleme
 Intune yönetilen iOS uygulaması olarak EMM için Slack ekleyin ve Slack kullanıcılarınızın atayın. Uygulamalar platforma özgü olduğundan, Android cihazlarda Slack kullanıcılarınız için ayrı bir Intune uygulama eklemeniz gerekir.
-1.  Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**.
-2.  Uygulama türü'nün altında seçin **Store uygulaması - iOS**.
-3.  **App Store’da Ara**’yı seçin. "Slack için EMM" arama terimini girin ve uygulamayı seçin.
-4.  Seçin **uygulama bilgileri** ve herhangi bir değişiklik gördüğünüz şekilde yapılandırın.
-5.  **Add (Ekle)** seçeneğini belirleyin.
-6.  Arama çubuğuna "Slack için EMM" girin ve yeni eklediğiniz uygulamayı seçin.
-7.  Yönet'seçin **atamaları**.
-8.  Seçin **Grup Ekle**. Bağlı olarak, Slack için EMM altında açık olduğunda etkilenecek olan, seçtiğiniz **atama türü** seçmek isteyebilirsiniz:
+1. Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**.
+2. Uygulama türü'nün altında seçin **Store uygulaması - iOS**.
+3. **App Store’da Ara**’yı seçin. "Slack için EMM" arama terimini girin ve uygulamayı seçin.
+4. Seçin **uygulama bilgileri** ve herhangi bir değişiklik gördüğünüz şekilde yapılandırın.
+5. **Add (Ekle)** seçeneğini belirleyin.
+6. Arama çubuğuna "Slack için EMM" girin ve yeni eklediğiniz uygulamayı seçin.
+7. Yönet'seçin **atamaları**.
+8. Seçin **Grup Ekle**. Bağlı olarak, Slack için EMM altında açık olduğunda etkilenecek olan, seçtiğiniz **atama türü** seçmek isteyebilirsiniz:
     -  **Kayıtlı cihazlar için kullanılabilir** "tüm üyeleri (Konukları dahil)" seçerseniz veya
     -  **Kayıtlı veya Kayıtsız kullanılabilir** "tüm üyeleri (Konukları hariç)" seçerseniz veya "İsteğe bağlı".
-9.  Seçin **bulunan gruplarını** ve bu uygulamayı tüm kullanıcılar tarafından kullanılabilir yap altında seçin **Evet**.
+9. Seçin **bulunan gruplarını** ve bu uygulamayı tüm kullanıcılar tarafından kullanılabilir yap altında seçin **Evet**.
 10. Tıklayın **Tamam**ve ardından **Tamam** yeniden.
 11. **Kaydet**’e tıklayın.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Bir uygulama yapılandırma ilkesi için Slack için EMM ekleyin.
 Slack EMM iOS için uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgü olduğundan, Android cihazlarda Slack kullanıcılarınız için ayrı bir ilke eklemeniz gerekir.
-1.  Intune'da seçin **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**.
-2.  Slack uygulama yapılandırma İlkesi test adı girin.
-3.  Cihaz kayıt türü altında seçin **yönetilen cihazlar**.
-4.  Platform altında seçin **iOS**.
-5.  Seçin **ilişkili uygulama**.
-6.  Arama çubuğuna "Slack için EMM" girin ve uygulamayı seçin.
-7.  Tıklayın **Tamam**ve ardından **yapılandırma ayarlarını**. 
+1. Intune'da seçin **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**.
+2. Slack uygulama yapılandırma İlkesi test adı girin.
+3. Cihaz kayıt türü altında seçin **yönetilen cihazlar**.
+4. Platform altında seçin **iOS**.
+5. Seçin **ilişkili uygulama**.
+6. Arama çubuğuna "Slack için EMM" girin ve uygulamayı seçin.
+7. Tıklayın **Tamam**ve ardından **yapılandırma ayarlarını**. 
     -   Yapılandırma anahtarları ve değerleri hakkında daha fazla bilgi için "Teknik" sekmesinde belgelerine [Slack'ın AppConfig web sayfası](https://www.appconfig.org/company/slack/).
-8.  Seçin **Tamam**ve ardından **Ekle**.
-9.  Arama çubuğuna "Slack uygulama yapılandırma İlkesi test" girin ve yeni eklediğiniz ilkeyi seçin.
+8. Seçin **Tamam**ve ardından **Ekle**.
+9. Arama çubuğuna "Slack uygulama yapılandırma İlkesi test" girin ve yeni eklediğiniz ilkeyi seçin.
 10. Yönet'seçin **atamaları**.
 11. Seçmek için ata altında **tüm kullanıcılar + tüm cihazlar**.
 12. **Kaydet**’e tıklayın.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(İsteğe bağlı) İOS cihaz uyumluluk ilkesi oluşturma
 Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune cihaz uyumluluk ilkesi ayarlayın. Bu öğreticide iOS cihazlar için bir cihaz uyumluluk ilkesi oluşturacağız. Uyumluluk ilkeleri platforma özgü olduğundan, Android cihazlarda Slack kullanıcılarınız için ayrı bir ilke oluşturmanız gerekir.
-1.  Intune’da **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**’u seçin.
-2.  "İOS uyumluluk İlkesi test" adı girin.
-3.  "İOS uyumluluk İlkesi test" açıklama girin.
-4.  Platform altında seçin **iOS**.
-5.  **Cihaz Durumu**’nı seçin. Jailbreak uygulanmış cihazlar'ın yanındaki seçin **blok**ve ardından **Tamam**.
-6.  Seçin **sistem güvenliği** ve parola ayarlarını girin. Bu öğretici için aşağıdaki önerilen ayarları seçin:
+1. Intune’da **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**’u seçin.
+2. "İOS uyumluluk İlkesi test" adı girin.
+3. "İOS uyumluluk İlkesi test" açıklama girin.
+4. Platform altında seçin **iOS**.
+5. **Cihaz Durumu**’nı seçin. Jailbreak uygulanmış cihazlar'ın yanındaki seçin **blok**ve ardından **Tamam**.
+6. Seçin **sistem güvenliği** ve parola ayarlarını girin. Bu öğretici için aşağıdaki önerilen ayarları seçin:
     -   Mobil cihazların kilidini açmak için parola iste için **gerektiren**.
     -   Basit parolalar için seçmek **blok**.
     -   Minimum parola uzunluğu için 4 girin.
@@ -99,60 +99,60 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
     -   En fazla dakika ekran kilitlendikten sonra parola istenmeden önce seçin **hemen**.
     -   İçin parola süresinin sonu (gün) 41 girin.
     -   Önlemek için Önceki parolalardan kaç tanesinin yeniden, 5'i girin.
-7.  Tıklayın **Tamam**ve ardından **Tamam** yeniden.
-8.  **Oluştur**’a tıklayın.
+7. Tıklayın **Tamam**ve ardından **Tamam** yeniden.
+8. **Oluştur**’a tıklayın.
 
 ## <a name="set-up-slack-on-android-work-profile-devices"></a>Android iş profili cihazları üzerinde Slack ayarlayın
 Slack yönetilen Google Play uygulaması, Intune kiracınıza ekleyin ve Slack EMM sağlayıcısı olarak Intune ile erişmek Android kullanıcıları, kuruluşların etkinleştirmek için bir uygulama yapılandırma ilkesi oluşturun.
 
 ### <a name="add-slack-to-intune"></a>Slack Intune'a ekleme
 Google yönetilen uygulamayı Intune'a yürütün ve Slack kullanıcılarınıza atama Slack ekleyin. Uygulamalar platforma özgü olduğundan, ayrı bir Intune uygulama Slack kullanıcılarınız için iOS cihazlarında eklemeniz gerekir.
-1.  Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**.
-2.  Uygulama türü'nün altında seçin **yönetilen Google Play Store uygulaması –** .
-3.  Seçin **yönetilen Google Play - onaylama**. "Slack için EMM" arama terimini girin ve uygulamayı seçin.
-4.  Seçin **onaylama**.
-5.  Arama çubuğuna "Slack" girin ve yeni eklediğiniz uygulamayı seçin.
-6.  Yönet'seçin **atamaları**.
-7.  Seçin **Grup Ekle**. Bağlı olarak, Slack için EMM altında açık olduğunda etkilenecek olan, seçtiğiniz **atama türü** seçmek isteyebilirsiniz:
+1. Intune'da seçin **istemci uygulamaları** > **uygulamaları** > **Ekle**.
+2. Uygulama türü'nün altında seçin **yönetilen Google Play Store uygulaması –** .
+3. Seçin **yönetilen Google Play - onaylama**. "Slack için EMM" arama terimini girin ve uygulamayı seçin.
+4. Seçin **onaylama**.
+5. Arama çubuğuna "Slack" girin ve yeni eklediğiniz uygulamayı seçin.
+6. Yönet'seçin **atamaları**.
+7. Seçin **Grup Ekle**. Bağlı olarak, Slack için EMM altında açık olduğunda etkilenecek olan, seçtiğiniz **atama türü** seçmek isteyebilirsiniz:
     -   **Kayıtlı cihazlar için kullanılabilir** "tüm üyeleri (Konukları dahil)" seçerseniz veya
     -   **Kayıtlı veya Kayıtsız kullanılabilir** "tüm üyeleri (Konukları hariç)" seçerseniz veya "İsteğe bağlı".
-8.  Bulunan gruplarını seçin ve altında kullanılabilir hale getirir bu uygulamayı tüm kullanıcılar seçmek amacıyla **Evet**.
-9.  Tıklayın **Tamam**ve ardından **Tamam** yeniden.
+8. Bulunan gruplarını seçin ve altında kullanılabilir hale getirir bu uygulamayı tüm kullanıcılar seçmek amacıyla **Evet**.
+9. Tıklayın **Tamam**ve ardından **Tamam** yeniden.
 10. **Kaydet**’e tıklayın.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Slack için uygulama yapılandırma İlkesi Ekle
 Bir uygulama yapılandırma ilkesi için Slack ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgü olduğundan, iOS cihazlarında Slack kullanıcılarınız için ayrı bir ilke eklemeniz gerekir.
-1.  Intune'da seçin **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**.
-2.  Slack uygulama yapılandırma İlkesi test adı girin.
-3.  Cihaz kayıt türü altında seçin **yönetilen cihazlar**.
-4.  Platform altında seçin **Android**.
-5.  Seçin **ilişkili uygulama**.
-6.  Arama çubuğuna "Slack" girin ve uygulamayı seçin.
-7.  Seçin **Tamam**ve ardından **yapılandırma ayarlarını**.
+1. Intune'da seçin **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**.
+2. Slack uygulama yapılandırma İlkesi test adı girin.
+3. Cihaz kayıt türü altında seçin **yönetilen cihazlar**.
+4. Platform altında seçin **Android**.
+5. Seçin **ilişkili uygulama**.
+6. Arama çubuğuna "Slack" girin ve uygulamayı seçin.
+7. Seçin **Tamam**ve ardından **yapılandırma ayarlarını**.
     -   Yapılandırma anahtarları ve değerleri hakkında daha fazla bilgi için "Teknik" sekmesinde belgelerine [Slack'ın AppConfig web sayfası](https://www.appconfig.org/company/slack/).
-8.  Tıklayın **Tamam**ve ardından **Ekle**.
-9.  Arama çubuğuna "Slack uygulama yapılandırma İlkesi test" girin ve yeni eklediğiniz ilkeyi seçin.
+8. Tıklayın **Tamam**ve ardından **Ekle**.
+9. Arama çubuğuna "Slack uygulama yapılandırma İlkesi test" girin ve yeni eklediğiniz ilkeyi seçin.
 10. Yönet'seçin **atamaları**.
 11. Seçmek için ata altında **tüm kullanıcılar + tüm cihazlar**.
 12. **Kaydet**’e tıklayın.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(İsteğe bağlı) Bir Android cihaz uyumluluk ilkesi oluşturma
 Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune cihaz uyumluluk ilkesi ayarlayın. Bu öğreticide, Android cihazları için cihaz uyumluluk İlkesi oluşturacağız. Uyumluluk ilkeleri platforma özgü olduğundan, iOS cihazlarında Slack kullanıcılarınız için ayrı bir ilke oluşturmanız gerekir.
-1.  Intune’da **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**’u seçin.
-2.  "Android uyumluluk İlkesi test" adı girin.
-3.  "Android uyumluluk İlkesi test" açıklama girin.
-4.  Platform altında seçin **Android Kurumsal**.
-5.  Profil Türü altında seçin **iş profilindeki**.
-6.  **Cihaz Durumu**’nı seçin. Kök erişim izni verilmiş cihazlar yanındaki seçin **blok**ve ardından **Tamam**.
-7.  Seçin **sistem güvenliği** girin **parola ayarları**. Bu öğretici için aşağıdaki önerilen ayarları seçin:
+1. Intune’da **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**’u seçin.
+2. "Android uyumluluk İlkesi test" adı girin.
+3. "Android uyumluluk İlkesi test" açıklama girin.
+4. Platform altında seçin **Android Kurumsal**.
+5. Profil Türü altında seçin **iş profilindeki**.
+6. **Cihaz Durumu**’nı seçin. Kök erişim izni verilmiş cihazlar yanındaki seçin **blok**ve ardından **Tamam**.
+7. Seçin **sistem güvenliği** girin **parola ayarları**. Bu öğretici için aşağıdaki önerilen ayarları seçin:
     -   Mobil cihazların kilidini açmak için parola iste için **gerektiren**.
     -   Gerekli parola türü için **en az alfasayısal**.
     -   Minimum parola uzunluğu için 4 girin.
     -   En fazla dakika ekran kilitlendikten sonra parola istenmeden önce seçin **15 dakika**.
     -   İçin parola süresinin sonu (gün) 41 girin.
     -   Önlemek için Önceki parolalardan kaç tanesinin yeniden, 5'i girin.
-8.  Tıklayın **Tamam**ve ardından **Tamam** yeniden.
-9.  **Oluştur**’a tıklayın.
+8. Tıklayın **Tamam**ve ardından **Tamam** yeniden.
+9. **Oluştur**’a tıklayın.
 
 ## <a name="launch-slack"></a>Slack başlatın
 

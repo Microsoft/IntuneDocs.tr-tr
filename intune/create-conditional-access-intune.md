@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ed6259c996772817ceaa8ec827c8ac506adfd399
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045106"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530477"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Bir cihaz tabanlı koşullu erişim ilkesi oluşturma
 
@@ -34,12 +34,12 @@ Koşullu erişim ilkesi uygulama veya hizmetleri korumak istediğiniz, koşullar
 
 ## <a name="create-conditional-access-policy"></a>Koşullu erişim ilkesi oluşturma
 
-1.  Intune portalında **koşullu erişim** > **ilkeleri** > **yeni ilke**.
+1. Intune portalında **koşullu erişim** > **ilkeleri** > **yeni ilke**.
    
     ![Yeni bir koşullu erişim ilkesi oluşturma](media/create-conditional-access-intune/create-ca.png)
  
-2.  **Atamalar** altında **Kullanıcılar ve gruplar**’ı seçin. 
-3.  Üzerinde **INCLUDE** sekmesinde, kullanıcılar veya gruplar bu koşullu erişim ilkesini uygulamak istediğiniz tanımlayın. Kim içerecek şekilde belirledikten sonra kullanabileceğiniz **hariç** tüm kullanıcıları, rolleri veya bu ilkeden dışlamak istediğiniz grupları varsa sekmesi.  
+2. **Atamalar** altında **Kullanıcılar ve gruplar**’ı seçin. 
+3. Üzerinde **INCLUDE** sekmesinde, kullanıcılar veya gruplar bu koşullu erişim ilkesini uygulamak istediğiniz tanımlayın. Kim içerecek şekilde belirledikten sonra kullanabileceğiniz **hariç** tüm kullanıcıları, rolleri veya bu ilkeden dışlamak istediğiniz grupları varsa sekmesi.  
     - **Tüm kullanıcılar**: Tüm kullanıcılar ve gruplar, iç ve Konuk kullanıcılar dahil olmak üzere ilkeyi uygulamak için bu seçeneği belirleyin.
   
     - **Kullanıcıları ve grupları seçme**: Bu seçeneği belirleyin ve bir veya daha fazla aşağıdaki seçeneklerden birini belirtin:
@@ -52,9 +52,9 @@ Koşullu erişim ilkesi uygulama veya hizmetleri korumak istediğiniz, koşullar
      
        > [!TIP]  
        > İlkenin beklendiği gibi çalıştığından emin olmak için kullanıcıların küçük bir gruba göre test edin.
-4.  **Done** (Bitti) öğesini seçin.
-5.  **Atamalar** altında **Bulut uygulamaları**’nı seçin. 
-6.  Üzerinde **Ekle sekmesinin**, uygulamalar ve bu koşullu erişim ilkesi ile korumak istediğiniz hizmetleri belirleyin. Kullanabileceğiniz sonra **hariç** herhangi bir uygulama veya hizmetler bu ilkeden dışlamak istediğiniz varsa sekmesi.
+4. **Done** (Bitti) öğesini seçin.
+5. **Atamalar** altında **Bulut uygulamaları**’nı seçin. 
+6. Üzerinde **Ekle sekmesinin**, uygulamalar ve bu koşullu erişim ilkesi ile korumak istediğiniz hizmetleri belirleyin. Kullanabileceğiniz sonra **hariç** herhangi bir uygulama veya hizmetler bu ilkeden dışlamak istediğiniz varsa sekmesi.
     - **Tüm bulut uygulamaları**: Tüm uygulamalarında ilkeyi uygulamak için bu seçeneği belirleyin.
       > [!IMPORTANT]  
       > Azure portalına erişim için Microsoft Azure Management uygulaması bu listede bulunuyor. Kullandığınızdan emin olun **hariç** ya da burada sekmesinde veya **kullanıcılar ve gruplar** , (veya kullanıcılar veya gruplar belirlediğiniz) oluşturabileceksiniz Azure portalında oturum açmak emin olmak için Seçenekler. 
@@ -63,8 +63,8 @@ Koşullu erişim ilkesi uygulama veya hizmetleri korumak istediğiniz, koşullar
     
       ![Yeni bir koşullu erişim ilkesi oluşturma](media/create-conditional-access-intune/create-ca-select-apps.png)
 
-7.  **Done** (Bitti) öğesini seçin.
-8.  Altında **atamaları**seçin **koşullar**.
+7. **Done** (Bitti) öğesini seçin.
+8. Altında **atamaları**seçin **koşullar**.
     - **Oturum açma riski**: Bu ilke ile Azure AD kimlik koruması oturum açma riski algılama kullanmak için Evet'i seçin ve ardından ilkenin uygulanması gereken oturum açma risk düzeyleri seçin.
     - **Cihaz platformları**: Üzerinde **INCLUDE** sekmesinde, bu koşullu erişim ilkesi için uygulamak istediğiniz cihaz platformlarını destekleyeceğinizi. Kullanım **hariç** platformları bu ilkeden dışlamak için sekmesinde.
     - **Konumları**: Üzerinde **INCLUDE** sekmesinde, ilkenin herhangi bir konum, BT departmanınızın denetimi altında olan güvenilir ağ konumlarını veya belirli ağ konumlarını uygulanıp uygulanmayacağını belirtin. Kullanım **hariç** ağ konumlarını bu ilkeden dışlamak için sekmesinde. 
@@ -76,7 +76,7 @@ Koşullu erişim ilkesi uygulama veya hizmetleri korumak istediğiniz, koşullar
       > [!TIP]  
       > Her ikisi de korumak istiyorsanız **Modern kimlik doğrulaması** istemcileri ve **Exchange ActiveSync istemcileri**, iki ayrı koşullu erişim ilkeleri, her istemci türü için bir tane oluşturun. Exchange ActiveSync modern kimlik doğrulamayı desteklemesine rağmen Exchange ActiveSync tarafından desteklenen tek koşul platformudur. Multi-Factor authentication dahil, diğer koşullar desteklenmez. Etkili bir şekilde erişim Exchange Online için Exchange ActiveSync'ten korumak için bulut uygulaması, Office 365 Exchange Online ve Exchange ActiveSync istemci uygulaması, seçili yalnızca desteklenen platformlara Uygula ilkesiyle belirten bir koşullu erişim ilkesi oluşturun.
 
-9.  **Done** (Bitti) öğesini seçin.
+9. **Done** (Bitti) öğesini seçin.
 10. **Erişim denetimleri** altında **Ver**’i seçin. Temel ayarlamış olduğunuz koşullara ne yapılandırın.  Aşağıdaki seçeneklerden birini seçebilirsiniz:
     - **Erişimi engelle**: Bu ilkede belirlenen kullanıcıları belirlediğiniz koşullarda uygulamalara erişim reddedilir.
     - **Erişim ver**: Bu ilkede belirtilen kullanıcıların erişim verilir, ancak aşağıdaki ek eylemlerden herhangi birini gerektirir:

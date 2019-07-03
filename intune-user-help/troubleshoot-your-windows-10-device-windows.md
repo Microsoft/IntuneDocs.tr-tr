@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cbf3f053146d7243a397d0fb802718d48300ef20
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501247"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528723"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 cihaz kaydı sorunlarınızı giderme
 Cihazınız kayıtlı rağmen iş veya Okul e-postası ve dosyalarına erişemiyorsanız, bu sorun giderme adımlarını deneyin.  

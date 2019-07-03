@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3a477f24f2678b5b4c8830819d1410eb8525220
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bf53266449911967ae8fb89d240274b04164fe96
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505497"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511747"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android cihazınızdaki yönetilen uygulamaları kullanma
 Yönetilen uygulamalar, kuruluşunuzun güvenlik gereksinimlerini karşılamak ve iş veya okul verilerini korumak üzere yapılandırılmıştır. Bu uygulamalar, otomatik olarak yüklemeniz veya kullanmanız için cihazınızda sunulmuştur. 
@@ -57,12 +57,12 @@ Yönetilen uygulamaları alma üç yolu vardır.
 * Google Play mağazasından bir uygulama yükleyip uygulamada iş veya okul hesabınızla oturum açarsınız.    
 * Kuruluşunuz, yönetilen uygulamaları Şirket Portalı’nda sizin için kullanılabilir hale getirir. Şirket portalı uygulaması veya kullanılabilir uygulamaları yüklemesi aramak ve görüntülemek için Web sitesine gidin. Bu uygulamalar hakkında daha fazla bilgi için sonraki bölüme bakın [kullanılabilir uygulamaları](#available-apps).  
 
- ### <a name="available-apps"></a>Kullanılabilir uygulamalar   
+### <a name="available-apps"></a>Kullanılabilir uygulamalar   
  Kuruluşunuz sizin için işe veya okula uygun ve kullanışlı ve size şirket Portalı'nda ayıklanarak uygulamaları seçebilirsiniz.  
 
  Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, Android için Şirket portalı uygulamasını kullanıyorsanız, Android uygulamaları, ancak iOS uygulamaları için erişim gerekir.   
 
- ## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek   
+## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek   
  Bir uygulama gerekir, ancak şirket portalında görmüyorum varsa, isteyebilirsiniz. İletişim ayrıntılarını bulun, **Yardım Masası** ya da uygulamasının **BT'ye** sekmesi. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?  

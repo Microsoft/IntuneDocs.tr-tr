@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044170"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528244"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -38,9 +38,9 @@ Bir rol, bu role atanan kullanıcılar için izinler kümesini tanımlar.
 Yerleşik ve özel rollerin kullanabilirsiniz. Yerleşik roller, bazı yaygın Intune senaryolarını kapsayan. Yapabilecekleriniz [kendi özel roller oluşturma](create-custom-role.md) , ihtiyacı olan izinlerin tam kümesi. Çeşitli Azure Active Directory rolleri Intune izinlere sahip olursunuz.
 Bir rol görmek için **Intune** > **rolleri** > **tüm rolleri** > bir rol seçin. Aşağıdaki sayfaları görürsünüz:
 
--   **Özellikler**: Adı, açıklamayı, türü, atamalarını ve rolün kapsamı etiketleri. 
--   **İzinleri**: Uzun bir role sahip hangi izinleri tanımlama değiştirir kümesini listeler.
--   **Atamalar**: Listesini [rol atamaları]( assign-role.md) hangi kullanıcıların hangi kullanıcılara/cihazlara erişimi tanımlama. Rol atamaları birden çok olabilir ve bir kullanıcı birden çok atamalarını olabilir.
+- **Özellikler**: Adı, açıklamayı, türü, atamalarını ve rolün kapsamı etiketleri. 
+- **İzinleri**: Uzun bir role sahip hangi izinleri tanımlama değiştirir kümesini listeler.
+- **Atamalar**: Listesini [rol atamaları]( assign-role.md) hangi kullanıcıların hangi kullanıcılara/cihazlara erişimi tanımlama. Rol atamaları birden çok olabilir ve bir kullanıcı birden çok atamalarını olabilir.
 
 ### <a name="built-in-roles"></a>Yerleşik roller
 Daha fazla yapılandırma olmadan grupları için yerleşik roller atayabilirsiniz. Silemez veya adı, açıklama, tür veya yerleşik bir rol izinlerini düzenleyin. Yerleşik her rol için izinlerini tam bir listesi için bkz. [Intune RBAC tablosu](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
@@ -65,7 +65,7 @@ Daha fazla yapılandırma olmadan grupları için yerleşik roller atayabilirsin
 | Güvenlik işleci | Salt okunur | Salt okunur |
 | Güvenlik okuyucusu | Salt okunur | Salt okunur |
 | Uyumluluk Yöneticisi | Yok. | Salt okunur |
-| Uyumluluk veri Yöneticisi | None | Salt okunur |
+| Uyumluluk veri Yöneticisi | Yok. | Salt okunur |
 
 > [!TIP]
 > Intune ayrıca üç Azure AD uzantısı gösterir: **Kullanıcılar**, **grupları**, ve **koşullu erişim**, olmak üzere Azure AD RBAC ile denetlenen. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla bilgi için [Azure AD ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
@@ -84,10 +84,10 @@ Bir rol ataması tanımlar:
 Kullanıcılarınız için özel ve yerleşik roller atayabilirsiniz. Bir Intune rolü atanmış için kullanıcının bir Intune lisansı olması gerekir.
 Bir rol ataması görmek için **Intune** > **rolleri** > **tüm rolleri** > bir rol seçin > ataması seçin. Aşağıdaki sayfaları görürsünüz:
 
--   **Özellikler**: Ad, açıklama, rol, üye, kapsamları ve etiketler atama.
--   **Üyeleri**: Listelenen gruplarındaki tüm kullanıcılar, kapsam (gruplar) listelenen kullanıcıları/cihazları yönetmek için izne sahip.
--   **Kapsam (gruplar)**: Tüm kullanıcılara/cihazlara bu gruplardaki kullanıcılar üyeleri tarafından yönetilebilir.
--   **[Kapsam (etiketler)](scope-tags.md)**: Kullanıcıların üye aynı kapsam etikete sahip kaynakları görebilirsiniz.
+- **Özellikler**: Ad, açıklama, rol, üye, kapsamları ve etiketler atama.
+- **Üyeleri**: Listelenen gruplarındaki tüm kullanıcılar, kapsam (gruplar) listelenen kullanıcıları/cihazları yönetmek için izne sahip.
+- **Kapsam (gruplar)** : Tüm kullanıcılara/cihazlara bu gruplardaki kullanıcılar üyeleri tarafından yönetilebilir.
+- **[Kapsam (etiketler)](scope-tags.md)** : Kullanıcıların üye aynı kapsam etikete sahip kaynakları görebilirsiniz.
 
 ### <a name="multiple-role-assignments"></a>Birden çok rol atamaları
 Bir kullanıcının birden çok rol atamaları varsa, bu rol atamaları izinleri gibi farklı nesnelere genişletin:

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: e5b4b6cc2cd05564f842fbf95521086a054cfac2
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196930"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528073"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Android iş profili ile cihaz kaydetme
 

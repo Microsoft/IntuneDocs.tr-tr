@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042783"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512145"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 
@@ -34,7 +34,7 @@ ms.locfileid: "66042783"
 
 iOS cihazları için **Yönetimde açma** özelliği, dosya aktarımlarını yalnızca **MDM kanalı** aracılığıyla dağıtılan uygulamalar arasında gerçekleşecek şekilde sınırlandırabilir. Ayarlama *yönetimde açma* yapılandırma ayarlarında kısıtlamaları ve bunları MDM çözümünüz aracılığıyla dağıtabilirsiniz.  Bir kullanıcı dağıtılan uygulamayı yüklendiğinde, ayarladığınız kısıtlamalar uygulanır.
 
-##  <a name="use-app-protection-with-ios-apps"></a>Uygulama koruma iOS uygulamalarıyla kullanma
+## <a name="use-app-protection-with-ios-apps"></a>Uygulama koruma iOS uygulamalarıyla kullanma
 İOS uygulama koruma ilkeleri kullanma **yönetimde açma** özelliği, şirket verileri aşağıdaki yollarla korunabilir:
 
 -   **Çalışana ait herhangi bir MDM çözümü tarafından yönetilmeyen cihazlar:** Uygulama koruma İlkesi ayarlarını ayarlayabilirsiniz **uygulamanın yalnızca ilkeyle yönetilen uygulamalara veri aktarmasına izin ver**. *Açma* davranışı ilke ile yönetilen bir uygulamada yalnızca diğer ilkeyle yönetilen uygulamalara paylaşmak için seçenekleri sunar. Bir kullanıcı, ilkeyle korunan bir dosyayı yerel posta uygulaması onedrive'dan bir ek olarak göndermeye çalışırsa, dosya okunamaz durumda.
