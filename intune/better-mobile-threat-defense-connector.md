@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511779"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547301"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Intune ile Better Mobile Threat Defense bağlayıcısı
 
@@ -41,11 +41,11 @@ Burada sık karşılaşılan bazı senaryolar verilmiştir.
 
 Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algılandığında, tehdit çözülene kadar cihazların aşağıdaki eylemleri gerçekleştirmesini engelleyebilirsiniz:
 
--   Şirket e-postasına bağlanma
+- Şirket e-postasına bağlanma
 
--   OneDrive İş uygulaması ile şirket dosyalarını eşitleme
+- OneDrive İş uygulaması ile şirket dosyalarını eşitleme
 
--   Şirket uygulamalarına erişme
+- Şirket uygulamalarına erişme
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
@@ -81,19 +81,19 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
--   **Android 4.1 ve üzeri**
+- **Android 4.1 ve üzeri**
 
--   **iOS 8.0 ve üzeri**
+- **iOS 8.0 ve üzeri**
 
 ## <a name="prerequisites"></a>Önkoşullar
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune aboneliği
+- Microsoft Intune aboneliği
 
--   Better Mobile Threat Defense aboneliği
+- Better Mobile Threat Defense aboneliği
 
-    -   Daha fazla bilgi için [Better Mobile web sitesine](https://www.better.mobi/) bakın.
+    - Daha fazla bilgi için [Better Mobile web sitesine](https://www.better.mobi/) bakın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

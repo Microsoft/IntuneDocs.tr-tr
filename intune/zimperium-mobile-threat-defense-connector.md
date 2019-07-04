@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7cd0e6ddba836724f525ab3d21e192214cc43cb4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046110"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547707"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune ile Zimperium Mobile Threat Defense bağlayıcısı
 
@@ -44,11 +44,11 @@ Aşağıda Zimperium ile Intune tümleştirmesi için birkaç senaryo bulabilirs
 
 Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algılandığında, tehdit çözülene kadar cihazları engelleyebilirsiniz:
 
--   Şirket e-postasına bağlanma
+- Şirket e-postasına bağlanma
 
--   OneDrive İş uygulaması ile şirket dosyalarını eşitleme
+- OneDrive İş uygulaması ile şirket dosyalarını eşitleme
 
--   Şirket uygulamalarına erişme
+- Şirket uygulamalarına erişme
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
@@ -84,19 +84,19 @@ Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı ol
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
--   **Android 4.1 ve üzeri**
+- **Android 4.1 ve üzeri**
 
--   **iOS 8 ve üzeri**
+- **iOS 8 ve üzeri**
 
 ## <a name="prerequisites"></a>Önkoşullar
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune aboneliği
+- Microsoft Intune aboneliği
 
--   Zimperium Mobile Threat Defense aboneliği
+- Zimperium Mobile Threat Defense aboneliği
 
-    -   Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips).
+    - Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 945e597556c7d0c43000ccf659b7b6e088661cff
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528963"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546797"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihaz geçiş kodunuzu sıfırlama
 
@@ -36,7 +36,7 @@ Cihaz PIN’ini veya parolasını kaybederseniz, sıfırlamak için [Şirket Por
 
 ## <a name="reset-your-passcode"></a>Geçiş kodunuzu sıfırlama
 
-1.  [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) açın ve __Menü__ düğmesi > __Cihazlar__’ı seçin.  
+1. [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) açın ve __Menü__ düğmesi > __Cihazlar__’ı seçin.  
 
 2. Geçiş kodu sıfırlaması yapılacak cihazı seçin.  
 

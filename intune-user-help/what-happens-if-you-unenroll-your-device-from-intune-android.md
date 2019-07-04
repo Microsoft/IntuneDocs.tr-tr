@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c59646045f895df11bd465269ff5df13142d5ab
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529419"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546504"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Android cihazınızın Intune kaydını sildiğinizde ne olur?
 
 Android cihazınızın Intune kaydını sildiğinizde:
 
--   Şirketinizin destek birimi, artık mobil cihazınızı yönetmiyor.
+- Şirketinizin destek birimi, artık mobil cihazınızı yönetmiyor.
 
--   Şirket verilerine ve kaynaklarına erişimi kaybedersiniz.
+- Şirket verilerine ve kaynaklarına erişimi kaybedersiniz.
 
--   Cihazınız artık Şirket Portalı’nda gösterilmez.
+- Cihazınız artık Şirket Portalı’nda gösterilmez.
 
--   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
+- Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
--   Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
+- Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
 
 Cihazınız yalnızca şirket e-postalarını alacak şekilde ayarlandıysa ve cihazınızın kaydını silerseniz cihaz Şirket Portalı'nda görünmez.
 

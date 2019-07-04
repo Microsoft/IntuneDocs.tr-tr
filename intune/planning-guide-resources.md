@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8e8e0f440377f40937145d78d3959318c21e6e5
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046308"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549320"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune dağıtımınızı planlamak için ek kaynaklar
 
@@ -50,12 +50,12 @@ Her bölüm için tablo şablonları listesi aşağıdadır.
 
 Intune dağıtım planlama, tasarım ve uygulama süreci sırasında yardımcı olabilecek ek bilgiler için bu kaynaklara göz atın.
 
--   [Microsoft Intune belgeleri](/intune/) - Intune belgelerinin tamamı.
+- [Microsoft Intune belgeleri](/intune/) - Intune belgelerinin tamamı.
 
--   [Intune blogu](https://blogs.technet.microsoft.com/enterprisemobility/) - Intune’un büyük Enterprise Mobility resmine nasıl uyduğunu anlamanıza yardımcı olmak için gönderiler.
+- [Intune blogu](https://blogs.technet.microsoft.com/enterprisemobility/) - Intune’un büyük Enterprise Mobility resmine nasıl uyduğunu anlamanıza yardımcı olmak için gönderiler.
 
--   [Microsoft Güven Merkezi](http://www.microsoft.com/TrustCenter) - Microsoft’un tüm Microsoft bulut ürünlerinde ve hizmetlerindeki güvenlik, gizlilik, uyumluluk ve şeffaflık yaklaşımını öğrenin.
+- [Microsoft Güven Merkezi](http://www.microsoft.com/TrustCenter) - Microsoft’un tüm Microsoft bulut ürünlerinde ve hizmetlerindeki güvenlik, gizlilik, uyumluluk ve şeffaflık yaklaşımını öğrenin.
 
--   [Intune Kullanıcı Sesi](http://microsoftintune.uservoice.com/) - Bir özellik istemek veya özellikleri diğer kullanıcılarla birlikte oylamak ister misiniz? Kullanıcı Sesi aracılığıyla Intune hakkında geri bildirim sağlayın. Dinliyoruz.
+- [Intune Kullanıcı Sesi](http://microsoftintune.uservoice.com/) - Bir özellik istemek veya özellikleri diğer kullanıcılarla birlikte oylamak ister misiniz? Kullanıcı Sesi aracılığıyla Intune hakkında geri bildirim sağlayın. Dinliyoruz.
 
--   [Kayıt Kılavuzu](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - Son kullanıcılarınızın kişisel cihazlarının Intune’a kaydedilmesinin ne anlama geldiğini anlamasına yardımcı olmak için iletişim planınızın bir parçası olarak olduğu gibi kullanabileceğiniz veya değiştirebileceğiniz bir belge kümesi.
+- [Kayıt Kılavuzu](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - Son kullanıcılarınızın kişisel cihazlarının Intune’a kaydedilmesinin ne anlama geldiğini anlamasına yardımcı olmak için iletişim planınızın bir parçası olarak olduğu gibi kullanabileceğiniz veya değiştirebileceğiniz bir belge kümesi.

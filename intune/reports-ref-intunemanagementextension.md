@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebece46bac8ebee5cb3c6a573f0b09c4b308abe3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 571080f3d25753fdc423c45100b06377ecd426b5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040997"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549191"
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune Yönetim Uzantısı için başvuru
 
 **IntuneManagementExtension** kategorisi, mobil cihazlar için aşağıdaki gibi bilgileri izleyen varlıklar içerir:
 
-  -  IntuneManagementExtension sürümleri
-  -  IntuneManagementExtension yükleme durumu
+  - IntuneManagementExtension sürümleri
+  - IntuneManagementExtension yükleme durumu
 
 ## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
 
@@ -37,7 +37,7 @@ ms.locfileid: "66040997"
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| ExtensionVersionKey |IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1. |
+| ExtensionVersionKey |IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1\. |
 | ExtensionVersion |4 basamaklı sürüm numarası. |1.0.2.0 |
 
 ## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
@@ -60,6 +60,6 @@ Son 60 günün verileri alınır.
 |       DateKey       |               Tarihin benzersiz tanımlayıcısı.                |   123   |
 |      TenantKey      |              Kiracının benzersiz tanımlayıcısı.               |   456   |
 |      DeviceKey      |              Cihazın benzersiz tanımlayıcısı.               |   789   |
-| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. |    1.    |
+| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. |    1\.    |
 |  ExtensionStateKey  |             Sistem durumunun benzersiz tanımlayıcısı.              |    2    |
 

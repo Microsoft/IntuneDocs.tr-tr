@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf94574bd86b0e0ce7455988781250b97d87a2c2
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529065"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546627"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>“Kullanım Koşulları”nı reddetmeniz durumunda cihazınızı Intune yönetiminden kaldırma
 
@@ -37,11 +37,11 @@ ms.locfileid: "67529065"
 
 Cihazınızı Intune’dan kaldırmak ve Şirket Portalı uygulamasını silmek için:
 
-1.  **Ayarlar** &gt; **Güvenlik &amp; Ekran Kilidi** &gt; **Cihaz yöneticileri**’ne gidin.
+1. **Ayarlar** &gt; **Güvenlik &amp; Ekran Kilidi** &gt; **Cihaz yöneticileri**’ne gidin.
 
     Bu adım tamamlandıktan hemen sonra cihazınızın kaydı silinir.
 
-2.  **Şirket Portalı**’nı kapatın veya yanındaki onay kutusunun işaretini kaldırın.
+2. **Şirket Portalı**’nı kapatın veya yanındaki onay kutusunun işaretini kaldırın.
 
     Şirket Portalı uygulamasını şimdi kaldırabilirsiniz.
 

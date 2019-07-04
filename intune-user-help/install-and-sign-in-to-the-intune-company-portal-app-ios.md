@@ -18,24 +18,24 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc2173e2972e422ac629331110d3b86b787765da
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040960"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546327"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Şirket Portalı uygulamasını yükleme ve uygulamada oturum açma
 
 İş ve okul uygulamalarınıza, e-postanıza ve ağınıza erişim sağlamak için, iOS cihazınıza Şirket Portalı uygulamasını yükleyin. Cihazınızı Microsoft Intune’a kaydetmek, iş veya okulunuzun kaynaklarına erişimini güvenli hale getirmek için uygulamayı kullanın. Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yüklediğinizde ve cihazınızı Intune’a kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-1.  **App Store**’u açın ve **intune şirket portalı** için arama yapın.
+1. **App Store**’u açın ve **intune şirket portalı** için arama yapın.
 
-2.  Intune **Şirket Portalı** uygulamasını indirin.
+2. Intune **Şirket Portalı** uygulamasını indirin.
 
     ![Intune Şirket Portalı uygulamasının App Store’da nasıl göründüğünü gösteren ekran görüntüsü.](./media/CP_iosRedesign_after_1803_04.PNG)
 
-3.  Şirket Portalı uygulamasını açın, iş veya okul e-posta adresinizi ve parolanızı girin ve **Oturum aç**’a dokunun.
+3. Şirket Portalı uygulamasını açın, iş veya okul e-posta adresinizi ve parolanızı girin ve **Oturum aç**’a dokunun.
 
     Şirket Portalı uygulamasında ilk kez oturum açıyorsanız ve şirketinizde veya okulunuzda Intune kullanılıyorsa, cihazınızı Intune’a kaydetmeniz istenir. Kaydetmek için [Cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) bölümündeki adımları izleyin. Ayrıca [başka bir cihaz kullanarak da oturum açabilirsiniz](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device).
 

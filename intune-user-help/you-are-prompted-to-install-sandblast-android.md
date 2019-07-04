@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cc21b0d9af0073cae814ccf1d3a0f25fdeb2fbe
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a012cb7fe25b70ee260f2b3a2d49a47c3bae06a3
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527672"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558462"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android cihazınıza Sandblast Mobile Protect uygulamasını yüklemeniz gerekiyor
 
@@ -47,9 +47,9 @@ Yüklemeyle ilgili bir sorun yaşarsanız bu konunun sonundaki sorun giderme ad�
 
 8. SandBlast Mobile Protect, cihazınızdaki güvenlik tehditlerini hemen denetlemeye başlar.
 
-9.  Sandblast Mobile Protect cihazınızda güvenlik tehdidi bulursa, sorunun nasıl çözüleceğini gösteren yönergeler karşınıza çıkar.
+9. Sandblast Mobile Protect cihazınızda güvenlik tehdidi bulursa, sorunun nasıl çözüleceğini gösteren yönergeler karşınıza çıkar.
 
-10.  Herhangi bir tehdit bulunmazsa, üç tehdit türü de yeşil görünür.
+10. Herhangi bir tehdit bulunmazsa, üç tehdit türü de yeşil görünür.
 
 11. Şirket Portalı’ndaki **Cihaz Ayrıntıları** ekranı, artık şirketinizin güvenlik gereksinimlerine uyduğunuzu gösterir.
 

@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045313"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547930"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
 **Cihazlar** kategorisi, mobil cihazlar için aşağıdaki gibi bilgileri izleyen varlıklar içerir:
 
-  -  Cihaz türü
-  -  Cihaz kaydı ve kayıt durumu
-  -  Cihaz sahipliği
-  -  Cihaz yönetim durumu
-  -  Cihazın Azure AD üyelik durumu
-  -  Kayıt durumu
-  -  Cihazın geçmiş bilgisi
-  -  Cihazdaki uygulamaların envanteri
+  - Cihaz türü
+  - Cihaz kaydı ve kayıt durumu
+  - Cihaz sahipliği
+  - Cihaz yönetim durumu
+  - Cihazın Azure AD üyelik durumu
+  - Kayıt durumu
+  - Cihazın geçmiş bilgisi
+  - Cihazdaki uygulamaların envanteri
 
 ## <a name="devicetypes"></a>DeviceTypes
 
@@ -52,7 +52,7 @@ ms.locfileid: "66045313"
 | deviceTypeID  | Name | Açıklama |
 |---------|------------|--------|
 | 0 |Masaüstü |Windows Masaüstü cihaz |
-| 1. |WindowsRT |WindowsRT cihaz |
+| 1\. |WindowsRT |WindowsRT cihaz |
 | 2 |WinMO6 |Windows Mobile 6.0 cihaz |
 | 3 |Nokia |Nokia cihaz |
 | 4 |WindowsPhone |Windows Phone cihaz |
@@ -118,7 +118,7 @@ ms.locfileid: "66045313"
 | Kullanılamıyor                   | Kayıt hatası kategori kullanılamıyor.                                                             |
 | Bilinmiyor                         | Bilinmeyen hata.                                                                                                |
 | Authentication                  | Kimlik doğrulaması gerçekleştirilemedi.                                                                                        |
-| Yetkilendirme                   | Çağrı kimliği doğrulanmış ancak kaydetmek için yetkili değil.                                                         |
+| Authorization                   | Çağrı kimliği doğrulanmış ancak kaydetmek için yetkili değil.                                                         |
 | AccountValidation               | Kayıt hesabı doğrulanamadı. (Hesabı engellenen kayıt etkin değil)                      |
 | UserValidation                  | Kullanıcı doğrulanamadı. (Kullanıcı yok, lisans eksik)                                           |
 | DeviceNotSupported              | Cihaz mobil cihaz yönetimi için desteklenmiyor.                                                         |
@@ -212,7 +212,7 @@ ms.locfileid: "66045313"
 
 | ManagementAgentTypeID  | Name | Açıklama |
 |---------|------------|--------|
-| 1. |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
+| 1\. |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
 | 2 |MDM | Cihaz bir MDM aracısı kullanılarak yönetiliyor |
 | 3 |EasMdm | Cihaz, Exchange Active Sync ve bir MDM aracısıyla yönetiliyor |
 | 4 |IntuneClient | Cihaz, Intune bilgisayar aracısı tarafından yönetilir |
@@ -269,7 +269,7 @@ ms.locfileid: "66045313"
 |          Özellik          |                                                                                      Açıklama                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DateKey                    | Günü gösteren tarih tablosuna başvuru.                                                                                                                                          |
-| DeviceKey                  | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur.                               |
+| DeviceKey                  | -Vekil anahtar veri ambarındaki cihazın benzersiz tanımlayıcısı. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur.                               |
 | DeviceName                 | Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılamaz. |
 | DeviceRegistrationStateKey | Bu cihazın cihaz kayıt durumu özniteliğinin anahtarı.                                                                                                                    |
 | OwnerTypeKey               | Cihazın sahip türü özniteliğinin anahtarı: şirket, kişisel veya bilinmeyen.                                                                                                  |

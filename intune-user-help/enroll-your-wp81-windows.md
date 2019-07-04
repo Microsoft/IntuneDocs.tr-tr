@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dd15e960b3c2802930981271cb6cd9ffea841cee
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497575"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545499"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1 cihazınızı Intune'a kaydetme  
 
@@ -34,45 +34,45 @@ Cihazınızı ıntune'a kaydetmek için belirlenen izinler veya geçerli hesap d
 ## <a name="enroll-through-company-portal"></a>Şirket portalı aracılığıyla kaydetme  
 Şirket portalı uygulamasını Microsoft Store yükleyebileceğiniz şu adımları izleyin. 
 
-1.  Dokunun **Başlat** > **Store**.  
+1. Dokunun **Başlat** > **Store**.  
 
-2.  **Ara**’ya dokunun, sonra **şirket portalı** yazın.  
+2. **Ara**’ya dokunun, sonra **şirket portalı** yazın.  
 
-3.  Sonuçlar listesinde **Şirket Portalı**’na dokunun.  
+3. Sonuçlar listesinde **Şirket Portalı**’na dokunun.  
 
 
     ![Şirket portalı arama sonuçları](./media/WP81-1-CP-search-store-v2.png)  
 
-4.  **Şirket Portalı**  &gt; **Yükle**’ye dokunun.  
+4. **Şirket Portalı**  &gt; **Yükle**’ye dokunun.  
 
 
     ![Şirket portalını yükleyin](./media/WP81-2-CP-install-v2.png)  
 
 Cihazınızı kaydedin:  
 
-1.  Cihazda **Microsoft Intune Şirket Portalı** uygulamasını açın.  
+1. Cihazda **Microsoft Intune Şirket Portalı** uygulamasını açın.  
 
 
-2.  Kimlik bilgilerinizi sağlayın. Varsa, şirketinizin Hüküm ve Koşullarını kabul etmeniz istenebilir.  
+2. Kimlik bilgilerinizi sağlayın. Varsa, şirketinizin Hüküm ve Koşullarını kabul etmeniz istenebilir.  
 
-3.  **Cihazlarım**’a doğru çekin.  
+3. **Cihazlarım**’a doğru çekin.  
 
-4.  Seçin **bu cihazı kaydetmek veya tanımlamak için dokunun**.  
+4. Seçin **bu cihazı kaydetmek veya tanımlamak için dokunun**.  
 
 
     ![Bu cihazı kaydetmek veya tanımlamak için dokunun ekranı](./media/WP81-enroll-1-swipe-my-devices.png)  
 
-5.  **Bu cihazı kaydet**’e dokunun.  
+5. **Bu cihazı kaydet**’e dokunun.  
 
 
     ![Bu cihazı kaydet ekranı](./media/WP81-enroll-2-enroll-this-device.png)  
 
-6.  **Hesap ekle**’ye dokunun.  
+6. **Hesap ekle**’ye dokunun.  
 
 
     ![Çalışma alanı ayarları ekranı](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7.  İstenen ek bilgileri girin ve ardından kaydı tamamlamak için **oturum aç**’a dokunun. Şimdi **Ayarlar** &gt; **İş Yeri** sayfasında iş yeri hesabınızı görmeniz gerekir.  
+7. İstenen ek bilgileri girin ve ardından kaydı tamamlamak için **oturum aç**’a dokunun. Şimdi **Ayarlar** &gt; **İş Yeri** sayfasında iş yeri hesabınızı görmeniz gerekir.  
 
 
     ![Hesap eklendi ekranı](./media/WP81-enroll-4-account-added.png)  
@@ -80,13 +80,13 @@ Cihazınızı kaydedin:
 ## <a name="enroll-through-settings-app"></a>Ayarlar uygulamasında kaydetme  
 Windows Phone cihazınızdaki Microsoft Store erişemiyorsanız veya bir Microsoft Account yoksa aşağıdaki adımları izleyin.
 
-1.  **Ayarlar** &gt; **iş yeri**’ne dokunun.  
+1. **Ayarlar** &gt; **iş yeri**’ne dokunun.  
 
-2.  **hesap ekle**’ye dokunun ve iş hesabınızı kullanarak oturum açın.  
+2. **hesap ekle**’ye dokunun ve iş hesabınızı kullanarak oturum açın.  
 
-3.  İstenen ek bilgileri girin ve ardından kaydı tamamlamak için **oturum aç**’a dokunun.  
+3. İstenen ek bilgileri girin ve ardından kaydı tamamlamak için **oturum aç**’a dokunun.  
 
-4.  Şirket uygulaması veya Hub’ı yüklemeniz istenirse, ilgili kutunun işaretli olduğundan emin olun ve **bitti**’ye dokunun.  
+4. Şirket uygulaması veya Hub’ı yüklemeniz istenirse, ilgili kutunun işaretli olduğundan emin olun ve **bitti**’ye dokunun.  
 
 Şirketinizin destek birimi Şirket Portalı’nı kayıt sırasında yüklenecek şekilde ayarladıysa, Şirket Portalı’nı uygulama listenizde görürsünüz.  
 

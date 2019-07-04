@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf53266449911967ae8fb89d240274b04164fe96
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511747"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546027"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android cihazınızdaki yönetilen uygulamaları kullanma
 Yönetilen uygulamalar, kuruluşunuzun güvenlik gereksinimlerini karşılamak ve iş veya okul verilerini korumak üzere yapılandırılmıştır. Bu uygulamalar, otomatik olarak yüklemeniz veya kullanmanız için cihazınızda sunulmuştur. 
@@ -45,11 +45,11 @@ Yönetilen uygulamalarda iş veya okul verilerinize ilk eriştiğinizde, aşağ�
 ## <a name="commonly-managed-apps"></a>Yaygın olarak yönetilen uygulamalar  
 Okullar ve iş yerlerinde yaygın olarak gerekli veya kullanılabilir hale getirilen yönetilen uygulama örnekleri:
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word, Excel ve PowerPoint
+- Microsoft Word, Excel ve PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>Yönetilen uygulamaları nasıl edinirim?
 Yönetilen uygulamaları alma üç yolu vardır.  

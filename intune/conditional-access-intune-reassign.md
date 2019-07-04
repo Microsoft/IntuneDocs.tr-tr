@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530670"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546893"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Azure portalında Klasik Intune portalından koşullu erişim ilkelerini yeniden atama
 
@@ -51,13 +51,13 @@ Azure portalına geçmeye hazırsanız Klasik Intune portalında önceden oluşt
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Cihaz tabanlı koşullu erişim ilkelerini Klasik Intune portalında doğrulamak için
 
-1.  [Klasik Intune portalına](https://manage.microsoft.com) gidin ve kimlik bilgilerinizle oturum açın.
+1. [Klasik Intune portalına](https://manage.microsoft.com) gidin ve kimlik bilgilerinizle oturum açın.
 
-2.  Soldaki menüden **İlkeler**’i seçin.
+2. Soldaki menüden **İlkeler**’i seçin.
 
-3.  Seçin **koşullu erişim**, ve seçip Microsoft bulut hizmeti (örneğin, Exchange Online veya SharePoint Online) için bir koşullu erişim ilkesi oluşturdunuz.
+3. Seçin **koşullu erişim**, ve seçip Microsoft bulut hizmeti (örneğin, Exchange Online veya SharePoint Online) için bir koşullu erişim ilkesi oluşturdunuz.
 
-4.  Koşullu erişim ayarlarınızı not edin ve Azure portalında aynı koşullu erişim ilkelerini oluştururken başvurun.
+4. Koşullu erişim ayarlarınızı not edin ve Azure portalında aynı koşullu erişim ilkelerini oluştururken başvurun.
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Uygulama ve cihaz tabanlı koşullu erişim ilkeleriyle birlikte çalışma
 
@@ -194,13 +194,13 @@ Azure portalında koşullu erişim ilkelerinizi yeniden atadıktan sonra Klasik 
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Koşullu erişim ilkelerini devre dışı bırakmak için
 
-1.  [Klasik Intune portalına](https://manage.microsoft.com) gidin ve kimlik bilgilerinizle oturum açın.
+1. [Klasik Intune portalına](https://manage.microsoft.com) gidin ve kimlik bilgilerinizle oturum açın.
 
-2.  Soldaki menüden **İlkeler**’i seçin.
+2. Soldaki menüden **İlkeler**’i seçin.
 
-3.  Seçin **koşullu erişim**ve ardından oluşturduğunuz koşullu erişim ilkesi için Microsoft bulut hizmeti (örneğin, Exchange Online veya SharePoint Online) seçin.
+3. Seçin **koşullu erişim**ve ardından oluşturduğunuz koşullu erişim ilkesi için Microsoft bulut hizmeti (örneğin, Exchange Online veya SharePoint Online) seçin.
 
-4.  Seçeneğinin işaretini kaldırın **koşullu erişimi etkinleştir ilkesini**ve ardından **Kaydet**.
+4. Seçeneğinin işaretini kaldırın **koşullu erişimi etkinleştir ilkesini**ve ardından **Kaydet**.
 
     ![Devre dışı koşullu erişim ilkelerini Klasik Intune portalında görüntüsü](./media/reassign-ca-18.png)
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f404fb63f64f216c3732a4378fce383591d95565
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 7081bc04cc0a6de0a0a6e8214ac0a6edea459378
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529041"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558384"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -88,7 +88,6 @@ Uygulamanız zaten ADAL veya MSAL kullanacak şekilde yapılandırıldı ve kend
 > iOS için bir yeniden eşleyici yok. Bir Xamarin.Forms uygulamasıyla tümleştirme, normal bir Xamarin.iOS projesiyle aynı olacaktır. 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Android mobil uygulamanızda Intune uygulama koruma ilkelerini etkinleştirme
-
 1. [Microsoft.Intune.MAM.Xamarin.Android NuGet paketini](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) Xamain.Android projenize ekleyin.
     1. Bir Xamarin.Forms uygulaması için ekleme [Microsoft.ıntune.mam.remapper.Tasks NuGet paketini](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) Xamarin.Android projenize de. 
 2. İçin gerekli genel adımları [Intune uygulama SDK'sını tümleştirme](app-sdk-android.md) ek ayrıntılar için bu belgenin başvurma sırasında bir Android mobil uygulamasına.
@@ -172,6 +171,14 @@ Xamarin sınıfların devralma Remapper değişiklik yaptığında, belirli işl
 
 > [!NOTE]
 > Remapper IntelliSense otomatik tamamlama için Visual Studio kullanan bir bağımlılık yeniden yazar. Bu nedenle, yeniden yükleyin ve doğru şekilde değişiklikleri tanıyabilmesi IntelliSense için Remapper eklendiğinde projeyi yeniden derleyin gerekebilir.
+
+### <a name="company-portal-app"></a>Şirket Portalı uygulaması
+Intune SDK'sı Xamarin bağlamaları varlığını kullanan [Şirket portalı](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android uygulamanızı uygulama koruma ilkelerini etkinleştirmek için cihazda. Şirket Portalı uygulama koruma ilkelerini Intune hizmetinden alır. Uygulama başlatıldığında, ilkeyi ve ilkenin zorlanmasına yönelik kodu Şirket Portalı’dan yükler. Kullanıcı, oturum açmanız gerekmez.
+
+> [!NOTE]
+> Şirket portalı uygulaması olmadığında üzerinde **Android** cihaz, Intune tarafından yönetilen bir uygulama Intune uygulama koruma ilkelerini desteklemeyen normal bir uygulama ile aynı davranış.
+
+Cihaz kaydı olmadan uygulama koruması için kullanıcının Şirket Portalı uygulamasını kullanarak cihazını kaydetmesi gerekli _**değildir**_ .
 
 ## <a name="support"></a>Destek
 Kuruluşunuz var olan bir Intune müşteri ise, Lütfen bir destek bileti açın ve bir sorun oluşturmak için Microsoft desteği temsilcinizle çalışarak [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) ve size mümkün olduğunca kısa sürede size yardımcı olur. 

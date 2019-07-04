@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: fdc7434616db6c06f56438fb6d8774ae3f2deca9
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407125"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548428"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama  
 
@@ -34,9 +34,9 @@ Intune, ekleyin ve böylece, mobil cihazlarında bir tehdit tanımlandığında,
 ## <a name="before-you-begin"></a>Başlamadan önce    
 Aşağıdaki adımların [Azure portalında](https://portal.azure.com/) tamamlanması gerekir. Şu işlemlerin nasıl yapıldığını bildiğinizden emin olun:
 
--   [Intune’a uygulama ekleme](apps-add.md).
--   [Intune’a iOS uygulama yapılandırma ilkesi ekleme](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
--   [Intune ile uygulama atama](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Intune’a uygulama ekleme](apps-add.md).
+- [Intune’a iOS uygulama yapılandırma ilkesi ekleme](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+- [Intune ile uygulama atama](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
 
 > [!TIP]
 > Intune Şirket portalı, kullanıcıların kimliklerinin Azure AD tarafından denetlenebilmesi aracısı olarak Android cihazlarda çalışır.

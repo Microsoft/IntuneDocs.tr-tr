@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 477aa18ebb1e079573e7962429d33a8ca4afabed
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7e4fa124d1b3fdb765ac3da964d57ade5c1c4c65
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61494958"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545633"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Windows cihazınızı şifreleme
 
@@ -31,8 +31,8 @@ ms.locfileid: "61494958"
 
 Bir masaüstü cihazınız varsa, cihazı şifrelemek için aşağıdaki yönergeleri izleyin.
 
-1.  **BitLocker'ı Yönet** uygulamasını arayın ve ardından başlatın.
+1. **BitLocker'ı Yönet** uygulamasını arayın ve ardından başlatın.
 
-2.  **BitLocker'ı Aç**'a tıklayın ve ardından sürücülerinizin her birini şifrelemek için gösterilen yönergeleri izleyin.
+2. **BitLocker'ı Aç**'a tıklayın ve ardından sürücülerinizin her birini şifrelemek için gösterilen yönergeleri izleyin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

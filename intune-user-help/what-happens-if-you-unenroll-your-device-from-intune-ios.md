@@ -18,30 +18,30 @@ ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 4ba5705fa04d9eb28e74128228ca8a862f1cb772
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501213"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545671"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>iOS veya macOS cihazınızın Intune kaydını sildiğinizde ne olur?
 
 iOS veya macOS cihazınızın Intune kaydını sildiğinizde:
 
--   Cihazınız artık Şirket Portalı’nda gösterilmez.
+- Cihazınız artık Şirket Portalı’nda gösterilmez.
 
--   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
+- Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
--   Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
+- Cihazı eklediğinizde değiştirilen tüm ayarlar, mesela kamerayı devre dışı bırakmak veya belirli bir parola uzunluğu gerekliliği gibi ayarlar geçerliliğini kaybeder.
 
--   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
+- Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
 
--   Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
+- Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
 
--   Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
+- Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
 
--   Şirket e-posta profilleri cihazdan kaldırılır.
+- Şirket e-posta profilleri cihazdan kaldırılır.
 
 Kaydın nasıl silineceği hakkında yönergeler için bkz. [Cihazınızın Intune kaydını silme](unenroll-your-device-from-intune-ios.md).
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494297"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547362"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -429,7 +429,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         >  - Konunun statik metninde bir değişkeni çevrelemeyen küme ayraçları **{ }** bir hata olarak çözümlenir. 
         >  - Bir cihaz sertifikası değişkeni kullanırken değişkeni küme parantezleri **{ }** içine alın.
         >  - `{{FullyQualifiedDomainName}}` yalnızca Windows ve etki alanına katılmış cihazlarda kullanılır. 
-        >  -  Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
+        >  - Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
         >  - Belirtilen cihaz değişkenleri desteklenmiyorsa profil cihaza yüklenmez. Örneğin IMEI numarası olmayan bir cihaza atanmış SCEP profilinde konu adı olarak {{IMEI}} kullanılırsa profil yüklemesi başarısız olur. 
 
 
@@ -472,7 +472,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         >  - SAN'ın statik metninde küme parantezleri **{ }** , kanal simgeleri **|** ve noktalı virgüller **;** kullanılamaz. 
         >  - Bir cihaz sertifikası değişkeni kullanırken değişkeni küme parantezleri **{ }** içine alın.
         >  - `{{FullyQualifiedDomainName}}` yalnızca Windows ve etki alanına katılmış cihazlarda kullanılır. 
-        >  -  Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
+        >  - Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
         >  - Belirtilen cihaz değişkenleri desteklenmiyorsa profil cihaza yüklenmez. Örneğin IMEI numarası olmayan bir cihaza atanmış SCEP profilinde konu diğer adı olarak {{IMEI}} kullanılırsa profil yüklemesi başarısız olur.  
 
    - **Sertifika geçerlilik süresi**: Çalıştırdıysanız `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` komutu veren bir özel bir geçerlilik süresine izin veren CA ' nın sertifikanın süresi dolmadan önce kalan süreyi girebilirsiniz.<br>Sertifika şablonundaki geçerlilik süresinden düşük bir değer girebilirsiniz ancak daha yüksek bir değer giremezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa beş yıl değerini giremezsiniz ancak bir yıl değerini girebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir. 

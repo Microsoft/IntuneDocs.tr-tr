@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819730"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548914"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
 
@@ -61,23 +61,23 @@ Daha fazla bilgi için bkz:
 
 Uygulamaları Microsoft Graph API kullanmak üzere kaydetmek için:
 
-1.  Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) yönetici kimlik bilgilerini kullanarak.
+1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) yönetici kimlik bilgilerini kullanarak.
 
     Uygun olacak şekilde şunları kullanabilirsiniz:
     - Kiracı yönetici hesabı.
     - **Kullanıcılar uygulamaları kaydedebilir** ayarı etkin şekilde bir kiracı kullanıcı hesabı.
 
-2.  Menüden **Azure Active Directory** &gt; **Uygulama Kayıtları**’nı seçin.
+2. Menüden **Azure Active Directory** &gt; **Uygulama Kayıtları**’nı seçin.
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  Yeni bir uygulama oluşturmak için **Yeni uygulama kaydı**’nı veya mevcut bir uygulamayı seçin.  (Mevcut bir uygulamayı seçerseniz, sonraki adımı atlayın.)
+3. Yeni bir uygulama oluşturmak için **Yeni uygulama kaydı**’nı veya mevcut bir uygulamayı seçin.  (Mevcut bir uygulamayı seçerseniz, sonraki adımı atlayın.)
 
-4.  **Oluştur** dikey penceresinde aşağıdakileri belirtin:
+4. **Oluştur** dikey penceresinde aşağıdakileri belirtin:
 
-    1.  Uygulama için bir **Ad** (kullanıcılar oturum açtığında görüntülenir).
+    1. Uygulama için bir **Ad** (kullanıcılar oturum açtığında görüntülenir).
 
-    2.  **Uygulama türü** ve **Yeniden yönlendirme URI'si** değerleri.
+    2. **Uygulama türü** ve **Yeniden yönlendirme URI'si** değerleri.
 
         Bunlar, gereksinimlerinize göre farklılık gösterir. Örneğin, Azure AD [Kimlik Doğrulama Kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) kullanıyorsanız **Uygulama Türü**’nü `Native` ve **Yeniden Yönlendirme URI'sini** `urn:ietf:wg:oauth:2.0:oob` olarak ayarlayın.
 
@@ -85,19 +85,19 @@ Uygulamaları Microsoft Graph API kullanmak üzere kaydetmek için:
 
         Daha fazla bilgi için bkz. [Azure AD İçin Kimlik Doğrulama Senaryoları](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
-5.  Uygulama dikey penceresinden:
+5. Uygulama dikey penceresinden:
 
-    1.  **Uygulama Kimliği** değerini not edin.
+    1. **Uygulama Kimliği** değerini not edin.
 
-    2.  **Ayarlar** &gt; **API erişimi** &gt; **Gerekli izinler**’i seçin.
+    2. **Ayarlar** &gt; **API erişimi** &gt; **Gerekli izinler**’i seçin.
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  **Gerekli İzinler** dikey penceresinden, **Ekle** &gt; **API erişimi ekle** &gt; **Bir API seçin**’i belirleyin.
+6. **Gerekli İzinler** dikey penceresinden, **Ekle** &gt; **API erişimi ekle** &gt; **Bir API seçin**’i belirleyin.
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  **Bir API seçin** dikey penceresinden, **Microsoft Graph** &gt; **Seçin** öğelerini belirleyin.  **Erişimi etkinleştir** dikey penceresi açılır ve uygulamanızda kullanılabilen izin kapsamları listelenir.
+7. **Bir API seçin** dikey penceresinden, **Microsoft Graph** &gt; **Seçin** öğelerini belirleyin.  **Erişimi etkinleştir** dikey penceresi açılır ve uygulamanızda kullanılabilen izin kapsamları listelenir.
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -334,28 +334,28 @@ Bu durumda, aşağıdakileri doğrulayın:
 
 Bu örnek, Intune hesabınızla ilişkili cihazların bir listesini almak için C#’nin nasıl kullanılacağını gösterir.
 
-1.  Visual Studio'yu başlatın ve ardından yeni bir Visual C# Konsol uygulaması (.NET Framework) projesi oluşturun.
+1. Visual Studio'yu başlatın ve ardından yeni bir Visual C# Konsol uygulaması (.NET Framework) projesi oluşturun.
 
-2.  Projeniz için bir ad girin ve diğer ayrıntıları istediğiniz gibi sağlayın.
+2. Projeniz için bir ad girin ve diğer ayrıntıları istediğiniz gibi sağlayın.
 
     <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
 
-3.  Microsoft ADAL NuGet paketini projeye eklemek için Çözüm Gezgini’ni kullanın.
+3. Microsoft ADAL NuGet paketini projeye eklemek için Çözüm Gezgini’ni kullanın.
 
-    1.  Çözüm Gezgini’ne sağ tıklayın.
-    2.  **NuGet Paketlerini Yönet...** ’i seçin &gt; **Gözat**.
-    3.  `Microsoft.IdentityModel.Clients.ActiveDirectory` seçeneğini belirleyin ve **Yükle**’yi seçin.
+    1. Çözüm Gezgini’ne sağ tıklayın.
+    2. **NuGet Paketlerini Yönet...** ’i seçin &gt; **Gözat**.
+    3. `Microsoft.IdentityModel.Clients.ActiveDirectory` seçeneğini belirleyin ve **Yükle**’yi seçin.
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
-4.  Aşağıdaki deyimleri **Program.cs**’nin en üst kısmına ekleyin:
+4. Aşağıdaki deyimleri **Program.cs**’nin en üst kısmına ekleyin:
 
     ``` csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;</p>
     using System.Net.Http;
     ```
 
-5.  Yetkilendirme üst bilgisi oluşturmak için bir yöntem ekleyin:
+5. Yetkilendirme üst bilgisi oluşturmak için bir yöntem ekleyin:
 
     ``` csharp
     private static async Task<string> GetAuthorizationHeader()
@@ -386,14 +386,14 @@ Bu örnek, Intune hesabınızla ilişkili cihazların bir listesini almak için 
     }
     ```
 
-7.  **Ana**’yı güncelleştirerek **GetMyManagedDevices**’ı çağırın:
+7. **Ana**’yı güncelleştirerek **GetMyManagedDevices**’ı çağırın:
 
     ``` csharp
     string devices = GetMyManagedDevices().GetAwaiter().GetResult();
     Console.WriteLine(devices);
     ```
 
-8.  Derleyin ve programınızı çalıştırın.  
+8. Derleyin ve programınızı çalıştırın.  
 
 Programınızı ilk kez çalıştırdığınızda, iki istem almanız gerekir.  İlk istem kimlik bilgilerinizi ister ve ikincisi `managedDevices` isteği için izinler verir.  
 
@@ -553,11 +553,11 @@ Kuruluşunuz, kuruluşları kendi Azure AD kiracıları ile destekliyorsa, istem
 
 Bunu yapmak için:
 
-1.  İstemci hesabının hedef Azure AD kiracısında mevcut olduğunu doğrulayın.
+1. İstemci hesabının hedef Azure AD kiracısında mevcut olduğunu doğrulayın.
 
-2.  Kiracı hesabınızın kullanıcıların uygulama kaydetmelerine izin verdiğinden emin olun (bkz **Kullanıcı ayarları**).
+2. Kiracı hesabınızın kullanıcıların uygulama kaydetmelerine izin verdiğinden emin olun (bkz **Kullanıcı ayarları**).
 
-3.  Her kiracı arasında bir ilişki oluşturun.  
+3. Her kiracı arasında bir ilişki oluşturun.  
 
     Bunu yapmak için aşağıdaki seçeneklerden birini kullanın:
 
@@ -567,15 +567,15 @@ Bunu yapmak için:
 
 Kullanıcıyı kiracınızın konuğu olmaya davet etmek için:
 
-1.  **Hızlı görevler** panelinden **Konuk kullanıcı ekle**’yi seçin.
+1. **Hızlı görevler** panelinden **Konuk kullanıcı ekle**’yi seçin.
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
-2.  İstemcinin e-posta adresini girin ve (isteğe bağlı olarak) davet için kişisel bir ileti ekleyin.
+2. İstemcinin e-posta adresini girin ve (isteğe bağlı olarak) davet için kişisel bir ileti ekleyin.
 
     <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
-3.  **Davet et**’i seçin.
+3. **Davet et**’i seçin.
 
 Bu, kullanıcıya bir davet gönderir.
 

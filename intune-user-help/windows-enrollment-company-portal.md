@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc493258d148e65a0dbc08a9499a79e1d31bb95
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: df0afecb006ef8837f888b3b9209d5892d90a228
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529380"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546374"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune şirket Portalı'nda Windows cihaz kaydı  
 
@@ -61,7 +61,7 @@ Kayıt adımları Windows 10 cihazlarını farklı sürümleri için farklıdır
 
 4. Sürümünüz  
 
-    *  __1607 veya üzeri__: Sunar kaydetme [ **ayarları** > **hesabı** > **işe veya okula erişim** rota](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 veya üzeri__: Sunar kaydetme [ **ayarları** > **hesabı** > **işe veya okula erişim** rota](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 veya önceki__: Sunar kaydetme [ **ayarları** > **hesabı** > **hesaplarınızı** rota](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
 ### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile cihazları
@@ -71,7 +71,7 @@ Kayıt adımları Windows 10 cihazlarını farklı sürümleri için farklıdır
 3. Altında __cihaz bilgilerini__, bulma __sürüm__.  
 4. Sürümünüz  
 
-    *  __1607 veya üzeri__: Cihaz kullanarak kaydolmayı [ **ayarları** > **işe veya okula erişim** rota](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 veya üzeri__: Cihaz kullanarak kaydolmayı [ **ayarları** > **işe veya okula erişim** rota](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 veya önceki__: Cihaz kullanarak kaydolmayı [ **ayarları** > **hesapları** rota](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
 ## <a name="enroll-non-windows-10-devices"></a>Windows 10 olmayan cihazları kaydetme  

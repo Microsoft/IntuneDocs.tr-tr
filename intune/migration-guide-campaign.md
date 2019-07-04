@@ -16,14 +16,14 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e409683c294b9d0321458f40c9b7f66bc3660ac
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046506"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549418"
 ---
-# <a name="phase-2-migration-campaign"></a>2. Aşama: Geçiş kampanyası
+# <a name="phase-2-migration-campaign"></a>2\. Aşama: Geçiş kampanyası
 
 Kuruluşunuzun gereksinimlerinize en uygun geçiş yaklaşımını seçin ve uygulama taktiklerini özel gereksinimlerinize göre ayarlayın. Bu rehberin geri kalanında kullanıcılarınızın cihazlarını Intune’a kaydetme amacına ulaşmanız için gereken araçlar sağlanacaktır.
 
@@ -31,39 +31,39 @@ Kuruluşunuzun gereksinimlerinize en uygun geçiş yaklaşımını seçin ve uyg
 
 Bir üçüncü taraf MDM sağlayıcısından Intune’a geçişin olmazsa olmazları şöyledir:
 
--   Açık bir iletişim ile yardım yoluyla son kullanıcı kesinti süreleri ve memnuniyetsizliği en aza indirgenir.
+- Açık bir iletişim ile yardım yoluyla son kullanıcı kesinti süreleri ve memnuniyetsizliği en aza indirgenir.
 
--   Belirli ve somut geçiş yönergeleriniz olduğundan emin olun.
+- Belirli ve somut geçiş yönergeleriniz olduğundan emin olun.
 
--   Intune’a kayıt öncesinde tüm yönetilen cihazların mevcut MDM sağlayıcısındaki kayıtları silinmelidir.
+- Intune’a kayıt öncesinde tüm yönetilen cihazların mevcut MDM sağlayıcısındaki kayıtları silinmelidir.
 
--   Son kullanıcılara cihazlarının kaydını nasıl kaldıracakları konusunda mevcut MDM sağlayıcınızdan yönergeler sağlayın.
+- Son kullanıcılara cihazlarının kaydını nasıl kaldıracakları konusunda mevcut MDM sağlayıcınızdan yönergeler sağlayın.
 
--   Aşamalı bir yaklaşım kullanın. Küçük bir pilot kullanıcı grubu kullanın ve tam ölçekli dağıtıma ulaşana kadar aşamalı olarak daha fazla kullanıcı grubu ekleyin.
+- Aşamalı bir yaklaşım kullanın. Küçük bir pilot kullanıcı grubu kullanın ve tam ölçekli dağıtıma ulaşana kadar aşamalı olarak daha fazla kullanıcı grubu ekleyin.
 
--   Her döngünün yardım masası yükünü ve kayıt başarısını izleyin. Her grup için başarı ölçütlerinin bir sonrakine geçmeden önce değerlendirilmesini sağlamak için zaman çizelgesinde süre bırakın. Pilot dağıtımınız aşağıdakileri doğrulamalıdır:
+- Her döngünün yardım masası yükünü ve kayıt başarısını izleyin. Her grup için başarı ölçütlerinin bir sonrakine geçmeden önce değerlendirilmesini sağlamak için zaman çizelgesinde süre bırakın. Pilot dağıtımınız aşağıdakileri doğrulamalıdır:
 
-    -   Kayıt başarı ve başarısızlık hızları beklentiler dahilindedir.
+    - Kayıt başarı ve başarısızlık hızları beklentiler dahilindedir.
 
-    -   Kullanıcı üretkenliği:
+    - Kullanıcı üretkenliği:
 
-        -   VPN, Wi-Fi, e-posta ve sertifikalar gibi şirket kaynakları çalışır durumdadır.
+        - VPN, Wi-Fi, e-posta ve sertifikalar gibi şirket kaynakları çalışır durumdadır.
 
-        -   Sağlanan uygulamalara erişilebilir.
+        - Sağlanan uygulamalara erişilebilir.
 
-    -   Veri güvenliği:
+    - Veri güvenliği:
 
-        -   Uyumluluk raporlaması yapılıyor.
+        - Uyumluluk raporlaması yapılıyor.
 
-        -   Mobil uygulama korumaları uygulanıyor.
+        - Mobil uygulama korumaları uygulanıyor.
 
 Geçişin ilk aşamasını tamamladıktan sonra, gelecek aşama için [geçiş döngüsünü](migration-guide-cycle.md) yineleyin.
 
--   Tüm kullanıcılar Intune’a geçirilene kadar aşamalı döngüleri yineleyin.
+- Tüm kullanıcılar Intune’a geçirilene kadar aşamalı döngüleri yineleyin.
 
--   Yardım masası ekibinin, geçiş süreci boyunca son kullanıcıları desteklemeye hazır olduğundan emin olun. Destek çağrısı iş yükünü tahmin edebilene kadar gönüllü bir geçiş çalıştırın.
+- Yardım masası ekibinin, geçiş süreci boyunca son kullanıcıları desteklemeye hazır olduğundan emin olun. Destek çağrısı iş yükünü tahmin edebilene kadar gönüllü bir geçiş çalıştırın.
 
--   Yardım masası, kalan kullanıcı sayısıyla başa çıkabilecek duruma gelene kadar kayıt için bir son tarih belirlemeyin
+- Yardım masası, kalan kullanıcı sayısıyla başa çıkabilecek duruma gelene kadar kayıt için bir son tarih belirlemeyin
 
 > [!IMPORTANT]
 > Exchange veya SharePoint Online gibi kaynaklara erişim denetimleri uygulamak için hem Intune hem de mevcut üçüncü taraf MDM çözümünüzü yapılandırmayın. Ayrıca, cihazların aynı anda yalnızca bir çözüme kayıtlı olması gerekir.

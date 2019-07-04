@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ff00c0a41fecada6e61f8a9bfa6c5a00dab921
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040849"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549169"
 ---
 # <a name="retire-a-windows-pc"></a>Bir Windows bilgisayarı devre dışı bırakma
 
@@ -30,9 +30,9 @@ ms.locfileid: "66040849"
 
 Bilgisayar olarak yönettiğiniz masaüstü cihazları, Intune yazılımını bunlar üzerinde çalıştırarak devre dışı bırakmak için aşağıdaki adımları uygulayın. Bir bilgisayarı devre dışı bıraktığınızda, yazılım söz konusu bilgisayarı Intune yönetiminden kaldırır. Bir bilgisayarı özgün fabrika ayarlarına döndürmek için Intune’dan silme gerçekleştiremezsiniz.
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar**’ı (veya devre dışı bırakmak istediğiniz bilgisayarı içeren başka bir grubu) seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar**’ı (veya devre dışı bırakmak istediğiniz bilgisayarı içeren başka bir grubu) seçin.
 
-2.  Devre dışı bırakmak istediğiniz cihazları seçin ve ardından **Devre Dışı Bırak/Temizle**'yi seçin.
+2. Devre dışı bırakmak istediğiniz cihazları seçin ve ardından **Devre Dışı Bırak/Temizle**'yi seçin.
 
 Bir bilgisayarı Intune’a yeniden kaydetmek için [Windows bilgisayar istemcisini Microsoft Intune ile yükleme](install-the-windows-pc-client-with-microsoft-intune.md)’deki yönergeleri kullanarak yazılım istemcisini bilgisayara yükleyin.
 
@@ -40,19 +40,19 @@ Bilgisayar Intune’a bağlanamıyorsa, **Pano** çalışma alanında bir ileti 
 
 Bir bilgisayarı devre dışı bıraktığınızda:
 
--   Intune yönetimi ve envanterinden kaldırılır ve bilgisayarla ilişkili lisans yeniden kullanılabilir hale gelir. Devre Dışı Bırak/Sil, Intune yazılım istemcisini bilgisayardan kaldırır ancak uygulamaları veya verileri kaldırmaz. Bu kullanımdan kaldırma bilgisayarda tam silme gerçekleştirmez.
+- Intune yönetimi ve envanterinden kaldırılır ve bilgisayarla ilişkili lisans yeniden kullanılabilir hale gelir. Devre Dışı Bırak/Sil, Intune yazılım istemcisini bilgisayardan kaldırır ancak uygulamaları veya verileri kaldırmaz. Bu kullanımdan kaldırma bilgisayarda tam silme gerçekleştirmez.
 
--   Intune bilgisayarın durumunu artık görüntülemez.
+- Intune bilgisayarın durumunu artık görüntülemez.
 
--   Intune, yazılım istemcisini bilgisayardan kaldırır. Bilgisayar, Intune hizmetine bağlı değilse yazılım istemcisi bir sonraki bağlanışında kaldırılır.
+- Intune, yazılım istemcisini bilgisayardan kaldırır. Bilgisayar, Intune hizmetine bağlı değilse yazılım istemcisi bir sonraki bağlanışında kaldırılır.
 
--   Microsoft Intune Endpoint Protection bilgisayardan kaldırılır. Bilgisayarda başka bir uç nokta uygulaması yüklüyse ve devre dışı bırakıldıysa bilgisayarlarınızın korunduğundan emin olmak için Microsoft Intune Endpoint Protection kaldırıldıktan sonra bu uygulama yeniden etkinleştirilebilir.
+- Microsoft Intune Endpoint Protection bilgisayardan kaldırılır. Bilgisayarda başka bir uç nokta uygulaması yüklüyse ve devre dışı bırakıldıysa bilgisayarlarınızın korunduğundan emin olmak için Microsoft Intune Endpoint Protection kaldırıldıktan sonra bu uygulama yeniden etkinleştirilebilir.
 
--   Bilgisayardaki tüm ilkeler kaldırılır ve ilke tarafından ayarlanan değerler değiştirilir.
+- Bilgisayardaki tüm ilkeler kaldırılır ve ilke tarafından ayarlanan değerler değiştirilir.
 
--   Bilgisayar artık Intune hizmetinden yazılım güncelleştirmeleri veya kötü amaçlı yazılım tanımı güncelleştirmeleri almaz.
+- Bilgisayar artık Intune hizmetinden yazılım güncelleştirmeleri veya kötü amaçlı yazılım tanımı güncelleştirmeleri almaz.
 
--   Yapılandırmaya bağlı olarak, devre dışı bırakılan bilgisayarlar Windows Server Update Services, Windows Update veya Microsoft Update'i kullanarak güncelleştirmeleri almaya devam edebilir.
+- Yapılandırmaya bağlı olarak, devre dışı bırakılan bilgisayarlar Windows Server Update Services, Windows Update veya Microsoft Update'i kullanarak güncelleştirmeleri almaya devam edebilir.
 
     > [!IMPORTANT]
     > İstemci yazılımı bir Grup İlkesi Nesnesi (GPO) kullanılarak yüklendiyse, yazılımın yeniden yüklenmesini önlemek için istemci yazılımı kaldırmadan önce Grup İlkesi Nesnesi'ni (GPO) kaldırmanız gerekir.

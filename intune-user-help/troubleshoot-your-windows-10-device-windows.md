@@ -18,17 +18,17 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf3f053146d7243a397d0fb802718d48300ef20
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: bbd4f8f0925aac5aada44277c4d21a71b412e0e7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528723"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546674"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 cihaz kaydı sorunlarınızı giderme
 Cihazınız kayıtlı rağmen iş veya Okul e-postası ve dosyalarına erişemiyorsanız, bu sorun giderme adımlarını deneyin.  
 
-1.  Sonraki iki ekrana bakarak kendi cihazınızda gördüğünüze benzeyeni bulun. Cihazınızda gördüğünüz ekrana uyan ekranın yanında yer alan adımları uygulayın.
+1. Sonraki iki ekrana bakarak kendi cihazınızda gördüğünüze benzeyeni bulun. Cihazınızda gördüğünüz ekrana uyan ekranın yanında yer alan adımları uygulayın.
 
     Bu ekranı görürseniz, [İşe veya okula erişim seçeneğini görüyorsanız uygulanacak sorun giderme adımları](#troubleshooting-steps-to-follow-if-you-see-access-work-or-school) kısmındaki adımları uygulayın.
 

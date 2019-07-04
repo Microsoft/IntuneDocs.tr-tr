@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196775"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545724"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -63,7 +63,7 @@ OS X El Capitan 10.11 ve sonrasını çalıştıran macOS cihazları kaydetmek i
     * Herhangi bir cihaza yoksa, başlık okur: **Yönetilen cihazınız yok. Buraya dokunup cihazı ekleyin.** Cihazınızı eklemek için başlığa tıklayın.  
 
      ![Tıklanacak yeri vurgulamak için başlık seçeneği etrafında kırmızı kare bulunan Cihazlar sayfasının ekran görüntüsü.](./media/CP-enroll-MACOS-1808.png)  
-5.  Aşağıdaki adımlardan hangisi Şirket Portalı’nda görmekte olduğunuz iletiyle eşleşiyorsa onu tamamlayın.  
+5. Aşağıdaki adımlardan hangisi Şirket Portalı’nda görmekte olduğunuz iletiyle eşleşiyorsa onu tamamlayın.  
     * Bir cihazı ilk kez ekliyorsanız cihaza Şirket Portalı uygulamasını indirmeniz istenir. **İndir**’e tıklayarak devam edin.  
 
          ![macOS Şirket Portalı uygulamasını indirme istemi örnek ekran görüntüsü. Kullanıcının, istemin sol altındaki mavi renkli İndir düğmesine veya sağ altındaki gri renkli İptal düğmesine basma seçeneği vardır.](./media/CP-enroll-download-macOS-1808.png)  

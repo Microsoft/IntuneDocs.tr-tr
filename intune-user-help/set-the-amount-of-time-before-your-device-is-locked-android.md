@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a91de6b4f86500afa043d0b8045980e6437af3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 3236d61d34766c5517ac1051fa3bfebd3de558d0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503857"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545993"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Cihaz kilitlenmeden önce geçmesi gereken süreyi ayarlama
 
 Android cihazınızdaki verileri daha güvenli tutmak için şirketinizin destek birimi, cihazınızın otomatik olarak kilitlenmeden önce ne kadar süreyle boşta durabileceğini belirlemenizi zorunlu tutan bir ilke ayarlayabilir. Cihazınızın kilitlenmeden önce bekleyeceği süreyi ayarlamak için bu adımları izleyin.
 
-1.  Cihazınızın **Ayarlar** bölümünden **Güvenlik** &gt; **Otomatik Olarak Kilitle** (bu, bazı cihazlarda **Şu kadar işlem yapılmadığında telefonu kilitle** olarak görünür).
+1. Cihazınızın **Ayarlar** bölümünden **Güvenlik** &gt; **Otomatik Olarak Kilitle** (bu, bazı cihazlarda **Şu kadar işlem yapılmadığında telefonu kilitle** olarak görünür).
 
-2.  Parola zaman aşımı değerini belirtin.
+2. Parola zaman aşımı değerini belirtin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

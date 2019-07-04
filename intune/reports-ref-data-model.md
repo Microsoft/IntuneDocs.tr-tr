@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8756ad134853bdd19155c3d8f50d1f07960e80f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045366"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547882"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune veri ambarı veri modeli
 
@@ -32,22 +32,22 @@ Intune Veri Ambarı, sürekli olarak değişen mobil cihazların bulunduğu orta
 
 Ambar, verileri aşağıdaki üst düzey kategorilerde kullanıma sunar:
 
-  -  Uygulama koruma etkin uygulamalar ve kullanım
-  -  Kayıtlı cihazlar, özellikler ve envanter
-  -  Uygulama ve yazılım envanteri
-  -  Cihaz yapılandırması ve uyumluluk ilkeleri
+  - Uygulama koruma etkin uygulamalar ve kullanım
+  - Kayıtlı cihazlar, özellikler ve envanter
+  - Uygulama ve yazılım envanteri
+  - Cihaz yapılandırması ve uyumluluk ilkeleri
 
 Bu alanlar, Intune ortamınızla ilişkili olan varlıkları içerir. Varlıklar kümeleri ile ilgili ayrıntıları aşağıdaki konularda bulabilirsiniz:
 
-  -  [Uygulama](reports-ref-application.md)
-  -  [Tarih](reports-ref-date.md)
-  -  [Cihazlar](reports-ref-devices.md)
-  -  [Intune Yönetim Uzantısı](reports-ref-intunemanagementextension.md)
-  -  [İlke](reports-ref-policy.md)
-  -  [Mobil Uygulama Yönetimi (MAM)](reports-ref-mobile-app-management.md)
-  -  [Kullanıcı](reports-ref-user.md)
-  -  [Geçerli Kullanıcı](reports-ref-current-user.md)
-  -  [Kullanıcı Cihaz İlişkileri](reports-ref-user-device.md)
+  - [Uygulama](reports-ref-application.md)
+  - [Tarih](reports-ref-date.md)
+  - [Cihazlar](reports-ref-devices.md)
+  - [Intune Yönetim Uzantısı](reports-ref-intunemanagementextension.md)
+  - [İlke](reports-ref-policy.md)
+  - [Mobil Uygulama Yönetimi (MAM)](reports-ref-mobile-app-management.md)
+  - [Kullanıcı](reports-ref-user.md)
+  - [Geçerli Kullanıcı](reports-ref-current-user.md)
+  - [Kullanıcı Cihaz İlişkileri](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>İlişkiler: Yıldız şeması modeli
 

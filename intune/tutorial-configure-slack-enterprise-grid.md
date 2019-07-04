@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: e7ff4e1fd9f055268a461d1a81b8a2e31fe3d32b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530714"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548985"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Öğretici: Intune, EMM ve uygulama yapılandırmasında kullanılacak Slack yapılandırın
 
@@ -62,8 +62,8 @@ Intune yönetilen iOS uygulaması olarak EMM için Slack ekleyin ve Slack kullan
 6. Arama çubuğuna "Slack için EMM" girin ve yeni eklediğiniz uygulamayı seçin.
 7. Yönet'seçin **atamaları**.
 8. Seçin **Grup Ekle**. Bağlı olarak, Slack için EMM altında açık olduğunda etkilenecek olan, seçtiğiniz **atama türü** seçmek isteyebilirsiniz:
-    -  **Kayıtlı cihazlar için kullanılabilir** "tüm üyeleri (Konukları dahil)" seçerseniz veya
-    -  **Kayıtlı veya Kayıtsız kullanılabilir** "tüm üyeleri (Konukları hariç)" seçerseniz veya "İsteğe bağlı".
+    - **Kayıtlı cihazlar için kullanılabilir** "tüm üyeleri (Konukları dahil)" seçerseniz veya
+    - **Kayıtlı veya Kayıtsız kullanılabilir** "tüm üyeleri (Konukları hariç)" seçerseniz veya "İsteğe bağlı".
 9. Seçin **bulunan gruplarını** ve bu uygulamayı tüm kullanıcılar tarafından kullanılabilir yap altında seçin **Evet**.
 10. Tıklayın **Tamam**ve ardından **Tamam** yeniden.
 11. **Kaydet**’e tıklayın.
@@ -77,7 +77,7 @@ Slack EMM iOS için uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar 
 5. Seçin **ilişkili uygulama**.
 6. Arama çubuğuna "Slack için EMM" girin ve uygulamayı seçin.
 7. Tıklayın **Tamam**ve ardından **yapılandırma ayarlarını**. 
-    -   Yapılandırma anahtarları ve değerleri hakkında daha fazla bilgi için "Teknik" sekmesinde belgelerine [Slack'ın AppConfig web sayfası](https://www.appconfig.org/company/slack/).
+    - Yapılandırma anahtarları ve değerleri hakkında daha fazla bilgi için "Teknik" sekmesinde belgelerine [Slack'ın AppConfig web sayfası](https://www.appconfig.org/company/slack/).
 8. Seçin **Tamam**ve ardından **Ekle**.
 9. Arama çubuğuna "Slack uygulama yapılandırma İlkesi test" girin ve yeni eklediğiniz ilkeyi seçin.
 10. Yönet'seçin **atamaları**.
@@ -92,13 +92,13 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 4. Platform altında seçin **iOS**.
 5. **Cihaz Durumu**’nı seçin. Jailbreak uygulanmış cihazlar'ın yanındaki seçin **blok**ve ardından **Tamam**.
 6. Seçin **sistem güvenliği** ve parola ayarlarını girin. Bu öğretici için aşağıdaki önerilen ayarları seçin:
-    -   Mobil cihazların kilidini açmak için parola iste için **gerektiren**.
-    -   Basit parolalar için seçmek **blok**.
-    -   Minimum parola uzunluğu için 4 girin.
-    -   Gerekli parola türü seçin **alfasayısal**.
-    -   En fazla dakika ekran kilitlendikten sonra parola istenmeden önce seçin **hemen**.
-    -   İçin parola süresinin sonu (gün) 41 girin.
-    -   Önlemek için Önceki parolalardan kaç tanesinin yeniden, 5'i girin.
+    - Mobil cihazların kilidini açmak için parola iste için **gerektiren**.
+    - Basit parolalar için seçmek **blok**.
+    - Minimum parola uzunluğu için 4 girin.
+    - Gerekli parola türü seçin **alfasayısal**.
+    - En fazla dakika ekran kilitlendikten sonra parola istenmeden önce seçin **hemen**.
+    - İçin parola süresinin sonu (gün) 41 girin.
+    - Önlemek için Önceki parolalardan kaç tanesinin yeniden, 5'i girin.
 7. Tıklayın **Tamam**ve ardından **Tamam** yeniden.
 8. **Oluştur**’a tıklayın.
 
@@ -114,8 +114,8 @@ Google yönetilen uygulamayı Intune'a yürütün ve Slack kullanıcılarınıza
 5. Arama çubuğuna "Slack" girin ve yeni eklediğiniz uygulamayı seçin.
 6. Yönet'seçin **atamaları**.
 7. Seçin **Grup Ekle**. Bağlı olarak, Slack için EMM altında açık olduğunda etkilenecek olan, seçtiğiniz **atama türü** seçmek isteyebilirsiniz:
-    -   **Kayıtlı cihazlar için kullanılabilir** "tüm üyeleri (Konukları dahil)" seçerseniz veya
-    -   **Kayıtlı veya Kayıtsız kullanılabilir** "tüm üyeleri (Konukları hariç)" seçerseniz veya "İsteğe bağlı".
+    - **Kayıtlı cihazlar için kullanılabilir** "tüm üyeleri (Konukları dahil)" seçerseniz veya
+    - **Kayıtlı veya Kayıtsız kullanılabilir** "tüm üyeleri (Konukları hariç)" seçerseniz veya "İsteğe bağlı".
 8. Bulunan gruplarını seçin ve altında kullanılabilir hale getirir bu uygulamayı tüm kullanıcılar seçmek amacıyla **Evet**.
 9. Tıklayın **Tamam**ve ardından **Tamam** yeniden.
 10. **Kaydet**’e tıklayın.
@@ -129,7 +129,7 @@ Bir uygulama yapılandırma ilkesi için Slack ekleyin. Yönetilen cihazlar içi
 5. Seçin **ilişkili uygulama**.
 6. Arama çubuğuna "Slack" girin ve uygulamayı seçin.
 7. Seçin **Tamam**ve ardından **yapılandırma ayarlarını**.
-    -   Yapılandırma anahtarları ve değerleri hakkında daha fazla bilgi için "Teknik" sekmesinde belgelerine [Slack'ın AppConfig web sayfası](https://www.appconfig.org/company/slack/).
+    - Yapılandırma anahtarları ve değerleri hakkında daha fazla bilgi için "Teknik" sekmesinde belgelerine [Slack'ın AppConfig web sayfası](https://www.appconfig.org/company/slack/).
 8. Tıklayın **Tamam**ve ardından **Ekle**.
 9. Arama çubuğuna "Slack uygulama yapılandırma İlkesi test" girin ve yeni eklediğiniz ilkeyi seçin.
 10. Yönet'seçin **atamaları**.
@@ -145,12 +145,12 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 5. Profil Türü altında seçin **iş profilindeki**.
 6. **Cihaz Durumu**’nı seçin. Kök erişim izni verilmiş cihazlar yanındaki seçin **blok**ve ardından **Tamam**.
 7. Seçin **sistem güvenliği** girin **parola ayarları**. Bu öğretici için aşağıdaki önerilen ayarları seçin:
-    -   Mobil cihazların kilidini açmak için parola iste için **gerektiren**.
-    -   Gerekli parola türü için **en az alfasayısal**.
-    -   Minimum parola uzunluğu için 4 girin.
-    -   En fazla dakika ekran kilitlendikten sonra parola istenmeden önce seçin **15 dakika**.
-    -   İçin parola süresinin sonu (gün) 41 girin.
-    -   Önlemek için Önceki parolalardan kaç tanesinin yeniden, 5'i girin.
+    - Mobil cihazların kilidini açmak için parola iste için **gerektiren**.
+    - Gerekli parola türü için **en az alfasayısal**.
+    - Minimum parola uzunluğu için 4 girin.
+    - En fazla dakika ekran kilitlendikten sonra parola istenmeden önce seçin **15 dakika**.
+    - İçin parola süresinin sonu (gün) 41 girin.
+    - Önlemek için Önceki parolalardan kaç tanesinin yeniden, 5'i girin.
 8. Tıklayın **Tamam**ve ardından **Tamam** yeniden.
 9. **Oluştur**’a tıklayın.
 

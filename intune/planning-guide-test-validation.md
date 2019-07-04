@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046048"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549346"
 ---
 # <a name="intune-testing-and-validation"></a>Intune’u sınama ve doğrulama
 
@@ -33,17 +33,17 @@ Destek belgelerinin oluşturulması ve BT destek ve yardım masası personelinin
 
 Şunları belgelemenizi öneririz:
 
--   **Sınama ölçütleri:** Karşılaştırılacak Kıyaslama noktalarını tanımlayın.
+- **Sınama ölçütleri:** Karşılaştırılacak Kıyaslama noktalarını tanımlayın.
 
--   **Tasarım bileşenleri:** En az birinde bulunmalıdır sınama ölçütünde.
+- **Tasarım bileşenleri:** En az birinde bulunmalıdır sınama ölçütünde.
 
 Bir tasarım bileşeni; bir gereksinim veya senaryoya uygun en az bir sınama ölçütünde mevcut değilse tasarım bileşeninin gerekli olup olmadığını göz önünde bulundurun. Ayrıca, aşağıdaki öğelere sahip olduğunuzdan emin olun:
 
--   **Hesaplar:** EMS ve Office 365'in tüm kullanım örneği senaryolarını test etmek için lisanslı hesapları test edin.
+- **Hesaplar:** EMS ve Office 365'in tüm kullanım örneği senaryolarını test etmek için lisanslı hesapları test edin.
 
--   **Cihazlar:** Silinebilen veya fabrika ayarlarına sıfırlanabilen sınama cihazlar.
+- **Cihazlar:** Silinebilen veya fabrika ayarlarına sıfırlanabilen sınama cihazlar.
 
--   **Tümleştirme Bileşenleri:** Tüm Tümleştirme Bileşenleri (sertifika Bağlayıcısı ve Intune Exchange şirket içi Bağlayıcısı) yüklü ve gerekirse yapılandırılmış.
+- **Tümleştirme Bileşenleri:** Tüm Tümleştirme Bileşenleri (sertifika Bağlayıcısı ve Intune Exchange şirket içi Bağlayıcısı) yüklü ve gerekirse yapılandırılmış.
 
 Öngörülemeyen sorunları ele almak için tasarım değişikliklerine gerek duyabilirsiniz. Ayrıca tüm tasarım değişiklikleri, her değişikliğin nedeniyle birlikte tam olarak belgelenmelidir. Bir değişikliğin neler yapabileceğini gösteren bir örnek aşağıda verilmiştir:
 
@@ -51,9 +51,9 @@ Bir tasarım bileşeni; bir gereksinim veya senaryoya uygun en az bir sınama ö
 
 Sınama ve doğrulama aşamasında teknik rehberlik veya özel sorun giderme gerektiren zorluk veya sorunlarla karşılaşabilirsiniz. Microsoft destek kanallarında yardım aramanızı öneririz.
 
--   [Intune desteği almayı öğrenme](get-support.md)
+- [Intune desteği almayı öğrenme](get-support.md)
 
--   [Microsoft Intune için yardımlı telefon desteği ile iletişim kurun](get-support.md)
+- [Microsoft Intune için yardımlı telefon desteği ile iletişim kurun](get-support.md)
 
 ## <a name="functional-validation-testing"></a>İşlevsel doğrulama sınaması
 

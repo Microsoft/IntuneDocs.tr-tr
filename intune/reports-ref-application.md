@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: deea42bf9ef35d173761fddb16aa43eaa8876269
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a1ee376bdf2dff6dc59b6c51b20ff87c1ed81d82
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041073"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549232"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
 **Uygulama** kategorisi, mobil cihazlar için aşağıdaki gibi bilgileri izleyen varlıklar içerir:
 
-  -  Uygulamanın sürümleri
-  -  Uygulamanın yükleme kaynağı
-  -  Uygulamayı oluşturan geliştirici türü
-  -  Uygulamanın yönetilen yazılım türleri, örneğin **sepet** veya **masaüstü**
-  -  Uygulamanın Volume Purchasing Program (VPP) durumu
+  - Uygulamanın sürümleri
+  - Uygulamanın yükleme kaynağı
+  - Uygulamayı oluşturan geliştirici türü
+  - Uygulamanın yönetilen yazılım türleri, örneğin **sepet** veya **masaüstü**
+  - Uygulamanın Volume Purchasing Program (VPP) durumu
 
 ## <a name="apprevision"></a>AppRevision
 
@@ -45,7 +45,7 @@ ms.locfileid: "66041073"
 | Gözden geçirme |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
 | Başlık |Uygulama başlığı. |Excel |
 | Yayımcı |Uygulama yayımcısı. |Microsoft |
-| UploadState |Uygulamanın karşıya yüklenme durumu. |1. |
+| UploadState |Uygulamanın karşıya yüklenme durumu. |1\. |
 | AppTypeKey |Aşağıdaki bölümde açıklanan AppType özelliğine başvuru. | |
 | VppProgramTypeKey |Aşağıda açıklanan VppProgramType özelliğine başvuru. | |
 | CreationTime |Düzeltmenin oluşturulduğu zaman. |23.11.2016 12:00:00 |
@@ -71,7 +71,7 @@ ms.locfileid: "66041073"
 | AppTypeID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Android mağazası uygulaması | Bir Android mağazası uygulaması. |
-| 1. |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
+| 1\. |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
 | 2 |Yönetilen Android mağazası uygulaması (MAM) | Yönetimi etkin bir Android mağazası uygulaması. |
 | 3 |iOS mağazası uygulaması | Bir iOS mağazası uygulaması. |
 | 4 |iOS LOB uygulaması | Bir iOS iş kolu uygulaması. |

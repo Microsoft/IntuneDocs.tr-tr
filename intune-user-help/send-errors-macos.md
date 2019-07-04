@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b90edf1f2e380790e2c725ee00c03d525c9fa1e
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e5e00e1f7d4f84f9bdc1d1a52b83095135479327
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504052"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546161"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Yönetilen macOS cihazınızla ilgili hataları doğru kişilere gönderme
 
@@ -33,11 +33,11 @@ ms.locfileid: "61504052"
 
 Şirket Portalı uygulamasındaki bir hatanın ayrıntılarını göndermek için:
 
--   Aldığınız hata iletisinde **Rapor**'a tıklayın.
+- Aldığınız hata iletisinde **Rapor**'a tıklayın.
 
--   **Yardım** menüsü > **Tanılama Raporunu Kaydet**'e tıklayın. Dosyanın kaydedileceği yeri seçin. Ardından bu dosyayı şirketinizin destek görevlisine e-postayla gönderin veya yükleyin.
+- **Yardım** menüsü > **Tanılama Raporunu Kaydet**'e tıklayın. Dosyanın kaydedileceği yeri seçin. Ardından bu dosyayı şirketinizin destek görevlisine e-postayla gönderin veya yükleyin.
 
--   E-posta uygulamanız yapılandırıldıysa, **Yardım** > **Tanılama Raporu Gönder**'e giderek tanılama raporunu gönderebilirsiniz. Günlükler karşıya yüklendikten sonra **E-posta ayrıntıları**'na tıklayın.
+- E-posta uygulamanız yapılandırıldıysa, **Yardım** > **Tanılama Raporu Gönder**'e giderek tanılama raporunu gönderebilirsiniz. Günlükler karşıya yüklendikten sonra **E-posta ayrıntıları**'na tıklayın.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Hataları, macOS cihazları için Şirket Portalı geliştiricilerine gönderme
 
@@ -45,8 +45,8 @@ ms.locfileid: "61504052"
 
 Günlükleri Microsoft’a göndermek için:
 
-1.  Şirket Portalı uygulamasını açın.
-2.  **Yardım** menüsü > **Tanılama Raporunu Gönder**'e tıklayın.  Günlükler karşıya yüklendikten sonra, bir olay kimliği alırsınız. Kimliği kopyalayın ve kaydedin.
-3.  <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">Bu şablonu</a> kullanarak Microsoft'a e-postayla gönderin.
+1. Şirket Portalı uygulamasını açın.
+2. **Yardım** menüsü > **Tanılama Raporunu Gönder**'e tıklayın.  Günlükler karşıya yüklendikten sonra, bir olay kimliği alırsınız. Kimliği kopyalayın ve kaydedin.
+3. <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">Bu şablonu</a> kullanarak Microsoft'a e-postayla gönderin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61494940"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545424"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Bir mevcut şirket e-posta hesabı bulundu
 
@@ -34,7 +34,7 @@ ms.locfileid: "61494940"
 
 Bu adımlar, Cihazınızı şirketinizin güvenlik gereksinimlerini karşıladığından ve e-güvenli kalmasını sağlayacaktır.
 
-1.  Cihazınızda, Git **ayarları** bağlı hesaplarınızı bulun. Örneğin, bir iOS 11 + cihazında seçin **parola & hesapları**.
+1. Cihazınızda, Git **ayarları** bağlı hesaplarınızı bulun. Örneğin, bir iOS 11 + cihazında seçin **parola & hesapları**.
  
 2. Seçin ve iş e-posta hesabınızı kaldırın.
 

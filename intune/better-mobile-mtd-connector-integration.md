@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e803eb3d47d44c8c8f3cd1b699b5ca220aeb91f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049108"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546969"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile'ı Intune ile tümleştirme
 
@@ -32,31 +32,31 @@ Better Mobile Threat Defense çözümünü Intune ile tümleştirmek için aşa�
 
 Better Mobile'ı Intune ile tümleştirme sürecini başlatmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--   Microsoft Intune aboneliği
+- Microsoft Intune aboneliği
 
--   Şu izinleri vermek için Azure Active Directory yönetici kimlik bilgileri:
+- Şu izinleri vermek için Azure Active Directory yönetici kimlik bilgileri:
 
-    -   Oturum açma ve kullanıcı profilini okuma
+    - Oturum açma ve kullanıcı profilini okuma
 
-    -   Oturum açmış kullanıcı olarak dizine erişim
+    - Oturum açmış kullanıcı olarak dizine erişim
 
-    -   Dizin verilerini okuma
+    - Dizin verilerini okuma
 
-    -   Intune’a cihaz bilgilerini gönderme
+    - Intune’a cihaz bilgilerini gönderme
 
--   Better Mobile yönetim konsoluna erişmek için yönetici kimlik bilgileri.
+- Better Mobile yönetim konsoluna erişmek için yönetici kimlik bilgileri.
 
 ### <a name="better-mobile-app-authorization"></a>Better Mobile uygulama yetkilendirmesi
 
 Better Mobile uygulama yetkilendirme işlemi şu şekildedir:
 
--   Better Mobile hizmetine Intune'a cihazın sistem durumuyla ilgili bilgi iletme izni verme.
+- Better Mobile hizmetine Intune'a cihazın sistem durumuyla ilgili bilgi iletme izni verme.
 
--   Cihazının veritabanını doldurmak için Better Mobile'ı Azure AD Kayıt Grubu üyeliğiyle eşitleme.
+- Cihazının veritabanını doldurmak için Better Mobile'ı Azure AD Kayıt Grubu üyeliğiyle eşitleme.
 
--   Better Mobile yönetim konsolunun Azure AD Çoklu Oturum Açma (SSO) kullanmasına izin verme.
+- Better Mobile yönetim konsolunun Azure AD Çoklu Oturum Açma (SSO) kullanmasına izin verme.
 
--   Better Mobile uygulamasının Azure AD SSO kullanarak oturum açmasına izin verme.
+- Better Mobile uygulamasının Azure AD SSO kullanarak oturum açmasına izin verme.
 
 ## <a name="to-set-up-better-mobile-integration"></a>Better Mobile tümleştirmesini ayarlamak için
 
@@ -75,4 +75,4 @@ Better Mobile uygulama yetkilendirme işlemi şu şekildedir:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
--   [Daha İyi İstemci Uygulamaları Kurma](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Daha İyi İstemci Uygulamaları Kurma](mtd-apps-ios-app-configuration-policy-add-assign.md)

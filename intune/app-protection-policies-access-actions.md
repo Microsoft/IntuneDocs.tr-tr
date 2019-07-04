@@ -1,7 +1,7 @@
 ---
-title: Uygulama koruma İlkesi erişim eylemlerini kullanarak veri silme
+title: Uygulama koruma İlkesi koşullu başlatma eylemleri kullanarak verileri silme
 titleSuffix: Microsoft Intune
-description: Microsoft Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silmeyi öğrenin.
+description: Uygulama koruma İlkesi koşullu başlatma eylemleri Intune kullanarak verileri seçmeli olarak silme hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804690"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558450"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune’da uygulama koruma ilkesi erişim eylemlerini kullanarak verileri seçmeli olarak silme
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune uygulama koruma İlkesi koşullu başlatma eylemleri kullanarak verileri seçmeli olarak silme
 
 Intune uygulama koruma ilkelerini kullanarak son kullanıcıların şirket uygulaması veya hesabına erişmelerini engellemek için ayarlar yapılandırabilirsiniz. Bu ayarlar, verileri yeniden konumlandırmayı hedefler ve jailbreak uygulanmış cihazlar veya en düşük işletim sistemi sürümleri gibi öğeler için kuruluşunuz tarafından ayarlanmış gereksinimlere erişir.
  
 Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından şirketinizin kurumsal verilerini silmeyi açıkça seçebilirsiniz. Bazı ayarlarda birden fazla eylem yapılandırabilirsiniz; örneğin belirtilen farklı değerlere bağlı olarak erişimi engellemek ve veri silmek gibi.
 
-## <a name="create-an-app-protection-policy-using-access-actions"></a>Erişim eylemlerini kullanarak uygulama koruma ilkesi oluşturma
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Koşullu başlatma eylemleri kullanarak bir uygulama koruma ilkesi oluşturma
 
 1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ni seçin.
 4. **İlke ekle**’ye tıklayın (Mevcut bir ilkeyi de düzenleyebilirsiniz). 
 5. İlke için yapılandırmaya uygun ayarların bir listesini görmek üzere **Gerekli ayarları yapılandır**’a tıklayın. 
-6. Ayarlar bölmesinde ekranı aşağı kaydırın, **Erişim Eylemleri** adlı düzenlenebilir bir tablo göreceksiniz.
+6. Ayarlar bölmesinde aşağı tarafından kaydırma, başlıklı bir bölümde göreceğiniz **koşullu başlatma** düzenlenebilir bir tablosu.
 
     ![Intune uygulama koruma erişim eylemlerinin ekran görüntüsü](./media/apps-selective-wipe-access-actions01.png)
 
@@ -52,13 +52,13 @@ Uygulama koruma ilkesi ayarları tablosunda **Ayar**, **Değer**, ve **Eylem** s
 
 ### <a name="ios-policy-settings"></a>iOS ilke ayarları
 iOS’ta **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yapılandırabilirsiniz:
--  En fazla PIN denemesi
--  Çevrimdışı kullanım süresi
--  Jailbreak uygulanmış/kök erişim izni verilmiş cihazlar
--  En düşük işletim sistemi sürümü
--  En düşük uygulama sürümü
--  En düşük SDK sürümü
--  Cihaz modeli/modelleri
+- En fazla PIN denemesi
+- Çevrimdışı kullanım süresi
+- Jailbreak uygulanmış/kök erişim izni verilmiş cihazlar
+- En düşük işletim sistemi sürümü
+- En düşük uygulama sürümü
+- En düşük SDK sürümü
+- Cihaz modeli/modelleri
 
 **Cihaz modelleri** ayarını kullanmak için iOS model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini ekleyin. [HockeyApp'in destek belgelerindeki](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) Device Type sütunu altında bir iOS model tanımlayıcısı bulabilirsiniz.<br>
 Örnek giriş: *iPhone5,2;iPhone5,3*
@@ -74,15 +74,15 @@ Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışm
 ### <a name="android-policy-settings"></a>Android ilkesi ayarları
 
 Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yapılandırabilirsiniz:
--  En fazla PIN denemesi
--  Çevrimdışı kullanım süresi
--  Jailbreak uygulanmış/kök erişim izni verilmiş cihazlar
--  En düşük işletim sistemi sürümü
--  En düşük uygulama sürümü
--  En düşük düzeltme eki sürümü
--  Cihaz üreticisi/üreticileri
--  SafetyNet cihaz kanıtı
--  Uygulamalarda tehdit taraması
+- En fazla PIN denemesi
+- Çevrimdışı kullanım süresi
+- Jailbreak uygulanmış/kök erişim izni verilmiş cihazlar
+- En düşük işletim sistemi sürümü
+- En düşük uygulama sürümü
+- En düşük düzeltme eki sürümü
+- Cihaz üreticisi/üreticileri
+- SafetyNet cihaz kanıtı
+- Uygulamalarda tehdit taraması
 
 **Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
 Örnek Giriş: *Bir üretici; Üretici B* 
@@ -105,9 +105,9 @@ Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışm
 Bir ayarı yapılandırmak için **Ayar** sütunu altında açılan menüden ayarı seçin. Bir ayar seçildikten sonra, değerin ayarlanması gerekliyse aynı satırda **Değer** sütunu altında bulunan düzenlenebilir metin kutusu etkin hale gelir. Ayrıca **Eylem** sütunu altındaki açılan menü, ayar için geçerli koşullu başlatma eylemleri kümesi ile etkin hale gelir. 
 
 Aşağıdaki listede yaygın eylemler verilmiştir:
--  **Erişimi engelle** – Son kullanıcının şirket uygulamasına erişmesini engelleyin.
--  **Verileri sil** – Son kullanıcının cihazından şirket verilerini silin.
--  **Uyar** – Son kullanıcıya uyarı olarak bir diyalog sağlayın.
+- **Erişimi engelle** – Son kullanıcının şirket uygulamasına erişmesini engelleyin.
+- **Verileri sil** – Son kullanıcının cihazından şirket verilerini silin.
+- **Uyar** – Son kullanıcıya uyarı olarak bir diyalog sağlayın.
 
 Bazı durumlarda, örneğin **En düşük işletim sistemi sürümü** ayarında, farklı sürüm numaralarına bağlı olarak ayarı uygulanabilir tüm eylemleri gerçekleştirecek şekilde yapılandırabilirsiniz. 
 

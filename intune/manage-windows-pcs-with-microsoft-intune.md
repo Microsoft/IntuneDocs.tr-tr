@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac8de734927ca139b78f57dbb486cc19ea1e27c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044956"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548789"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune yazılımı istemcisi ile Windows PC’leri bilgisayar olarak yönetme
 
@@ -70,16 +70,16 @@ Bir Intune yöneticisi olarak, Intune yazılımı istemcisini çeşitli şekille
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Intune istemci yazılımıyla bilgisayar yönetimi özellikleri
 Çoğu senaryoda, cihazlarınızı Microsoft Intune’a kaydeder ve böylece daha büyük bir özellik kümesine sahip olursunuz. Bununla birlikte, bilgisayarlarınızı yönetmek için aşağıdaki özellikleri sağlayan Intune yazılım istemcisini de kullanabilirsiniz:
 
--   **[Yazılım güncelleştirmelerini yönetme](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - Bilgisayarları güncel tutup güncelleştirmelerin ne zaman uygulanacağına karar verebilirsiniz.
+- **[Yazılım güncelleştirmelerini yönetme](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - Bilgisayarları güncel tutup güncelleştirmelerin ne zaman uygulanacağına karar verebilirsiniz.
 
--   **[Windows Güvenlik Duvarı ilkesi](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - Bu özellik şirketinizde kullanılan bilgisayarların devre dışı veya yanlış yapılandırılmış bir Windows Güvenlik Duvarı’na sahip olmamasını sağlamaya yardımcı olur.
+- **[Windows Güvenlik Duvarı ilkesi](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - Bu özellik şirketinizde kullanılan bilgisayarların devre dışı veya yanlış yapılandırılmış bir Windows Güvenlik Duvarı’na sahip olmamasını sağlamaya yardımcı olur.
 
--   **[Kötü amaçlı yazılımdan koruma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune, bilgisayarlarınızın kötü amaçlı yazılımlara karşı korunmasına yardımcı olan Endpoint Protection’ı içerir.
+- **[Kötü amaçlı yazılımdan koruma](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune, bilgisayarlarınızın kötü amaçlı yazılımlara karşı korunmasına yardımcı olan Endpoint Protection’ı içerir.
 
--   **[Uzaktan yardım](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune kullanıcıların BT destek personeliyle bağlantı kurmasına olanak tanır ve onlar da Intune’la birlikte gelen uzak masaüstü özelliğini kullanarak yardım sağlayabilir (TeamViewer yazılımı gerekir).
+- **[Uzaktan yardım](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune kullanıcıların BT destek personeliyle bağlantı kurmasına olanak tanır ve onlar da Intune’la birlikte gelen uzak masaüstü özelliğini kullanarak yardım sağlayabilir (TeamViewer yazılımı gerekir).
 
--   **[Yazılım lisansı yönetimi](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - Kullanılabilir yazılım lisanslarının sayısını ve bunlardan kaç tanesinin kullanıldığını izleyin.
--   **[Uygulama dağıtımı](add-apps-for-windows-pcs-in-microsoft-intune.md)** - Yönettiğiniz bilgisayarlarda yazılım dağıtımı yapın. Bilgisayarları yazılım istemcisiyle yönettiğinizde bazı uygulama yönetimi özellikleri kullanılamaz.
+- **[Yazılım lisansı yönetimi](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - Kullanılabilir yazılım lisanslarının sayısını ve bunlardan kaç tanesinin kullanıldığını izleyin.
+- **[Uygulama dağıtımı](add-apps-for-windows-pcs-in-microsoft-intune.md)** - Yönettiğiniz bilgisayarlarda yazılım dağıtımı yapın. Bilgisayarları yazılım istemcisiyle yönettiğinizde bazı uygulama yönetimi özellikleri kullanılamaz.
 
 <!-- - **Compliance settings reporting** -->
 
@@ -113,8 +113,8 @@ Yukarıdaki görevler hakkında daha fazla bilgi için [genel bilgisayar yöneti
 
 Bilgisayarları mobil cihaz olarak yönetmek için kullanılabilecek bazı yönetim seçenekleri, Intune istemci yazılımıyla yönetilen bilgisayarlar için kullanılamaz:
 
--   Tam silme (seçmeli silme bulunur)
--   Koşullu Erişim
+- Tam silme (seçmeli silme bulunur)
+- Koşullu Erişim
 
 Intune yönetim konsolundaki **Güncelleştirmeler**, **Koruma** ve **Lisanslar** gibi bazı bölümlerin, yalnızca Intune istemci yazılımını kullanarak cihazları kaydettiğinizde görüntülendiğini de aklınızda bulundurun.
 

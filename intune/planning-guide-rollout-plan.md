@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09e2f88168acd1bc77051df924f756a326a02b21
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041501"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548407"
 ---
 # <a name="develop-a-rollout-plan"></a>Dağıtım planı geliştirme
 
@@ -53,11 +53,11 @@ Pilot aşaması, daha önce toplanan [zorlukları](planning-guide-deployment-goa
 ### <a name="production-rollout"></a>Üretim piyasaya çıkma
 Başarılı bir pilot aşamasının ardından, kuruluşunuzun geri kalan gruplarını hedefleyen tam bir üretim piyasaya çıkma aşamasına başlamaya hazırsınız. Farklı piyasaya çıkma grupları ve aşamalarına bazı örnekler şunlardır:
 
--   **Departmanlar** <br/>Her departman bir piyasaya çıkma aşaması olabilir. Tüm departmanı bir seferde hedeflersiniz. Bu piyasaya çıkma türünde, her departmandaki kullanıcılar büyük olasılıkla mobil cihazı aynı şekilde kullanır ve aynı uygulamalara erişir. Kullanıcılar, muhtemelen aynı türde ilkelere sahip olacaktır.
+- **Departmanlar** <br/>Her departman bir piyasaya çıkma aşaması olabilir. Tüm departmanı bir seferde hedeflersiniz. Bu piyasaya çıkma türünde, her departmandaki kullanıcılar büyük olasılıkla mobil cihazı aynı şekilde kullanır ve aynı uygulamalara erişir. Kullanıcılar, muhtemelen aynı türde ilkelere sahip olacaktır.
 
--   **Coğrafya** <br/>Bu yaklaşım, aynı kıta, ülke, bölge ya da şirket binasında bulunan tüm kullanıcılara dağıtma gibi belirli bir coğrafi konuma dayalıdır. Bu tür aşamalı dağıtım, kullanıcıların belirli konumuna odaklanma olanağı sağlar. Bu, Intune’un aynı anda dağıtıldığı konum sayısının azalmasıyla daha fazla [beyaz eldiven](#user-assisted-enrollment) yaklaşımına olanak tanıyabilir. Farklı departmanların veya kullanım örneklerinin aynı konumda olma olasılığından dolayı farklı kullanım örnekleri aynı anda dağıtılabilir.
+- **Coğrafya** <br/>Bu yaklaşım, aynı kıta, ülke, bölge ya da şirket binasında bulunan tüm kullanıcılara dağıtma gibi belirli bir coğrafi konuma dayalıdır. Bu tür aşamalı dağıtım, kullanıcıların belirli konumuna odaklanma olanağı sağlar. Bu, Intune’un aynı anda dağıtıldığı konum sayısının azalmasıyla daha fazla [beyaz eldiven](#user-assisted-enrollment) yaklaşımına olanak tanıyabilir. Farklı departmanların veya kullanım örneklerinin aynı konumda olma olasılığından dolayı farklı kullanım örnekleri aynı anda dağıtılabilir.
 
--   **Platform** <br/>Bu dağıtım türü aynı anda benzer platformları dağıtmaya dayalıdır. Örneğin ilk ay tüm iOS cihazları, ardından Android ve daha sonra Windows dağıtılabilir. Bu tür aşamalı dağıtımda yardım masasının aynı anda yalnızca tek bir platformu desteklemesi yeterli olacağından, yardım masası desteğini basitleştirmeye yardımcı olur.
+- **Platform** <br/>Bu dağıtım türü aynı anda benzer platformları dağıtmaya dayalıdır. Örneğin ilk ay tüm iOS cihazları, ardından Android ve daha sonra Windows dağıtılabilir. Bu tür aşamalı dağıtımda yardım masasının aynı anda yalnızca tek bir platformu desteklemesi yeterli olacağından, yardım masası desteğini basitleştirmeye yardımcı olur.
 
 Hedeflenen grupları ve zaman çizelgelerini içeren bir Intune dağıtım planı örneği şu şekildedir:
 

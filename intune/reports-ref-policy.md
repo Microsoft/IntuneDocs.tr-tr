@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23476383abfddabffc411afa286c97b30ef04439
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040975"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549176"
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
 **İlke** kategorisi, mobil cihazlar için aşağıdaki gibi bilgileri izleyen varlıklar içerir:
 
-  -  Cihaz yapılandırma profilleri, uygulama yapılandırma profilleri ve uyumluluk ilkelerinin dökümü  
-  -  Başarılı, beklemede, başarısız veya hata durumundaki cihazların günlük sayısı  
-  -  Başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısı  
-  -  Başarılı, beklemede, başarısız veya hata durumundaki cihazların toplam sayısı  
+  - Cihaz yapılandırma profilleri, uygulama yapılandırma profilleri ve uyumluluk ilkelerinin dökümü  
+  - Başarılı, beklemede, başarısız veya hata durumundaki cihazların günlük sayısı  
+  - Başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısı  
+  - Başarılı, beklemede, başarısız veya hata durumundaki cihazların toplam sayısı  
 
 ## <a name="policy"></a>İlke
 
@@ -54,7 +54,7 @@ ms.locfileid: "66040975"
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | PolicyTypeId |İlkenin kaynak sistemindeki benzersiz tanımlayıcısı. |123 |
-| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1. |
+| PolicyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1\. |
 | PolicyTypeName |İlke türünün adı. |Windows 10 Uyumluluk ilkesi. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
@@ -138,7 +138,7 @@ Aşağıdaki tablo, tüm atanmış ilkelerin platform türlerini içerir. Hiçbi
 |Özellik  |Açıklama  |Örnek  |
 |---------|---------|---------|
 |PolicyPlatformTypeKey      |İlke platform türü için benzersiz anahtar. |20170519 |
-|PolicyPlatformTypeId      |İlke platform türü için benzersiz tanımlayıcı.|1.|
+|PolicyPlatformTypeId      |İlke platform türü için benzersiz tanımlayıcı.|1\.|
 |PolicyPlatformTypeName      |İlke platform türünün adı.|AndroidForWork |
 
 ### <a name="policydeviceactivity"></a>PolicyDeviceActivity

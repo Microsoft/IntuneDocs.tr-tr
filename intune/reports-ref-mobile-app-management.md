@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 059f39a52b1dbc6e5f7a014741c0657a2ba8bc10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a8d16e058afbedfd1a343560b3727d33776da45
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045356"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547865"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Mobil Uygulama Yönetimi (MAM) varlıkları için başvuru
 
 **Mobil Uygulama Yönetimi** kategorisi, mobil uygulamalar için aşağıdaki gibi varlıklar içerir:
 
-  -  Uygulamalar
-  -  Örnek Sayısı
-  -  İade etme durumu
-  -  Sistem durumu
-  -  İlke durumu
-  -  Kayıt durumu
-  -  Platform türleri
+  - Uygulamalar
+  - Örnek Sayısı
+  - İade etme durumu
+  - Sistem durumu
+  - İlke durumu
+  - Kayıt durumu
+  - Platform türleri
 
 ## <a name="mamapplication"></a>MamApplication
 
@@ -113,7 +113,7 @@ ms.locfileid: "66045356"
 | Özellik | Açıklama | Örnek |
 |---------|------------|--------|
 | EffectivePolicyKey |MAM geçerli ilkesinin, veri ambarındaki benzersiz tanımlayıcısı. |2 |
-| RealPolicyKey |MAM ilkesinin, BT uzmanı tarafından yazılan benzersiz tanıtıcısı. |1. |
+| RealPolicyKey |MAM ilkesinin, BT uzmanı tarafından yazılan benzersiz tanıtıcısı. |1\. |
 | RowCreatedDateTimeUtc |Bu geçerli ilkenin, veri ambarında oluşturulduğu tarih ve saat (UTC). |23.11.2016 12:00:00 |
 
 ## <a name="mamglobalapplication"></a>MamGlobalApplication
@@ -137,6 +137,6 @@ ms.locfileid: "66045356"
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Veri ambarındaki platformun benzersiz tanımlayıcısı - vekil anahtar.      |                           123                           |
 |          Platform          | Platformun benzersiz tanımlayıcısı; PlatformKey ile benzer ancak doğal bir anahtardır. |                           123                           |
-|        PlatformName        |                                   Platform adı                                   | Kullanılamıyor <br>None <br>Windows <br>IOS <br>Android. |
+|        PlatformName        |                                   Platform adı                                   | Kullanılamıyor <br>Yok. <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc | Bu platformun veri ambarında son değiştirildiği tarih ve UTC diliminde saat.  |                 23.11.2016 12:00:00                  |
 

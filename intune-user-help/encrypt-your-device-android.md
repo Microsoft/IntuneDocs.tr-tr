@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58217b6088669a7387ed7452f0ec81ae4a04b60c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cfc17c60412a1cfe90693216caa69ada3d2d2c9a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497184"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545253"
 ---
 # <a name="encrypting-your-android-device"></a>Android Cihazınızı şifreleme
 
@@ -38,7 +38,7 @@ Okul veya iş kaynaklarına erişebilmeniz için önce kuruluşunuzun Android Ci
 > [!Note]
 > Huawei, Vivo ve OPPO belirli Android cihazlar şifrelenemez. Daha fazla bilgiyi [burada](your-device-appears-encrypted-but-cp-says-otherwise-android.md) bulabilirsiniz.  
 
-1.  Bir cihaz ekran kilidi ayarlayın.  
+1. Bir cihaz ekran kilidi ayarlayın.  
     a. Git **ayarları** > **kilit ekranı ve güvenlik** > **ekran kilidi türünü**.  
     b. Şunlardan birini seçin **PIN**, **parola**, veya **deseni**.  
     c. Ekran kilidinizi yapılandırmak için ekrandaki yönergeleri izleyin.  

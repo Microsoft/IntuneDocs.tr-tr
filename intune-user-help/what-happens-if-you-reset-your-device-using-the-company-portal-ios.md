@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f328577ba2da97595c116efc51626176a14931a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 1ad21f9197f32f8ff06cc0537719261f3daec7cb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505089"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545740"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak iOS cihazınızı sıfırlarsanız ne olur?
 
@@ -31,14 +31,14 @@ iPhone veya iPad cihazınızı sıfırlamak için Şirket Portalı’nı kulland
 
 **Şirketinizin destek birimi, mobil cihazınızı yönetiyor**
 
--   Cihazınız artık Şirket Portalı’nda gösterilmez.
+- Cihazınız artık Şirket Portalı’nda gösterilmez.
 
--   Cihazınız üreticinin varsayılan fabrika ayarlarına geri döndürülür ve kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır.
+- Cihazınız üreticinin varsayılan fabrika ayarlarına geri döndürülür ve kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır.
 
 **Cihazınız yalnızca şirket e-postalarına erişebilir**
 
--   Cihazınız artık Şirket Portalı’nda gösterilmez.
+- Cihazınız artık Şirket Portalı’nda gösterilmez.
 
--   Şirket e-posta hesabınız ve kayıtlı olmayan e-postalarınız silinir.
+- Şirket e-posta hesabınız ve kayıtlı olmayan e-postalarınız silinir.
 
 Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

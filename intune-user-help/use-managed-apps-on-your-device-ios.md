@@ -18,12 +18,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501615"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546610"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS cihazınızdaki yönetilen uygulamaları kullanma
 
@@ -38,9 +38,9 @@ Yönetilen bir uygulamadaki şirket verilerine eriştiğinizde, açmakta olduğu
 ## <a name="how-do-i-get-managed-apps"></a>Yönetilen uygulamaları nasıl edinirim?  
 Yönetilen uygulamaları birkaç farklı yöntemle edinebilirsiniz:
 
--   Cihazınız Microsoft Intune’a kaydolduğunda uygulamayı Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden yükleyebilirsiniz ya da uygulama şirketinizin destek birimi tarafından cihazınıza yüklenebilir. Kayıt hakkında bilgi edinmek için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-macos.md).
+- Cihazınız Microsoft Intune’a kaydolduğunda uygulamayı Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden yükleyebilirsiniz ya da uygulama şirketinizin destek birimi tarafından cihazınıza yüklenebilir. Kayıt hakkında bilgi edinmek için bkz. [iOS cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-ios.md) veya [Mac OS X cihazınızı Intune’a kaydetme](enroll-your-device-in-intune-macos.md).
 
--   Bir uygulamayı App Store’dan yükleyin ve ardından Intune tarafından yönetilen şirket kullanıcı hesabınızla oturum açın.
+- Bir uygulamayı App Store’dan yükleyin ve ardından Intune tarafından yönetilen şirket kullanıcı hesabınızla oturum açın.
 
 Şirketinizin destek birimi bazen, yüklediğiniz bir uygulama için birden çok lisans satın almış olabilir. Apple Volume Purchase Program sözleşmesini kabul etmenizi isteyen bir ileti görürseniz bu normaldir, kabul edebilirsiniz. Kabul etmediğiniz takdirde uygulamayı yükleyemezsiniz.
 
@@ -56,22 +56,22 @@ Yönetilen uygulamaları birkaç farklı yöntemle edinebilirsiniz:
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?  
 Şirketinizin destek biriminin bir uygulamada yönetebileceği ve cihazınızdaki şirket verileriyle etkileşimlerinizi etkileyebilecek seçeneklerin bazı örnekleri aşağıda verilmiştir:
 
--   Belirli web sitelerine erişim
+- Belirli web sitelerine erişim
 
--   Uygulamalar arasında veri aktarımları
+- Uygulamalar arasında veri aktarımları
 
--   Dosyaları kaydetme
+- Dosyaları kaydetme
 
--   Kopyalama ve yapıştırma işlemleri
+- Kopyalama ve yapıştırma işlemleri
 
--   PIN erişimi gereksinimleri
+- PIN erişimi gereksinimleri
 
--   Şirket kimlik bilgilerini kullanarak oturum açma
+- Şirket kimlik bilgilerini kullanarak oturum açma
 
--   Buluta yedekleme özelliği
+- Buluta yedekleme özelliği
 
--   Ekran görüntüleri alma özelliği
+- Ekran görüntüleri alma özelliği
 
--   Veri şifreleme gereksinimleri
+- Veri şifreleme gereksinimleri
 
 Cihazınızdaki yönetilen uygulamalar hakkında daha fazla bilgi için şirketinizin destek birimiyle iletişim kurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

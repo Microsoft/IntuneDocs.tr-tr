@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040201"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548818"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma
 
@@ -35,19 +35,19 @@ Windows masaüstü cihazlar üzerindeki Intune yazılım istemcisini çalıştı
 ### <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center’ı yönetme
 Kullanıcılar Intune yazılımı istemcisini **Microsoft Intune Center** olarak görür. Microsoft Intune Center kullanıcıların şunları yapmasını sağlar:
 
--   Şirket portalı üzerinden uygulamaları alma.
+- Şirket portalı üzerinden uygulamaları alma.
 
--   Güncelleştirmeleri denetleme.
+- Güncelleştirmeleri denetleme.
 
--   Microsoft Intune Endpoint Protection’ı yönetme
+- Microsoft Intune Endpoint Protection’ı yönetme
 
--  Uzaktan yardım isteyin.
+- Uzaktan yardım isteyin.
 
 Microsoft Intune Center, tüm yönetilen bilgisayarlarda yüklüdür. Intune ilkesinde aşağıdaki ayarları yapılandırabilirsiniz ve bunlar Microsoft Intune Center’da kullanıcılara gösterilir:
 
 |İlke ayarı|Ayrıntılar|
 |------------------|--------------------|
-|**Ad**|Bilgisayarı yöneten yöneticinin adı.<br />En fazla uzunluk: 40 karakter|
+|**Name**|Bilgisayarı yöneten yöneticinin adı.<br />En fazla uzunluk: 40 karakter|
 |**Telefon numarası**|Bilgisayarı yöneten yöneticinin telefon numarası.<br />En fazla uzunluk: 20 karakter|
 |**E-posta adresi**|Bilgisayarı yöneten yöneticinin e-posta adresi.<br />En fazla uzunluk: 40 karakter|
 |**Web sitesinin adı**|Kullanıcılar için destek web sitenizin adı.<br />> en fazla uzunluk: 40 karakter|

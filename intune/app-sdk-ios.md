@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413852"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558410"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -70,6 +70,7 @@ Aşağıdaki üst bilgi dosyaları, Intune Uygulama SDK’sı tarafından geliş
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
+    * IntuneMAMDiagnosticConsole.h
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -735,6 +736,10 @@ Evet, BT yöneticisi uygulamaya bir seçmeli silme komutu gönderebilir. Bu, kul
 ### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>SDK'nın nasıl tümleştirileceğini gösteren örnek bir uygulama var mı?
 
 Evet! Açık kaynak örnek uygulamamız [Wagr for iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App)'yi kısa süre önce yeniledik. Wagr artık Intune Uygulama SDK'sının kullanıldığı uygulama koruma ilkesi için etkinleştirildi.
+
+### <a name="how-can-i-troubleshoot-my-app"></a>Uygulamam'ilgili sorunları nasıl giderebilirim?
+
+9\.0.3+ iOS için Intune SDK'sı, ilkeleri test etmek ve hatalarını günlüğe kaydetme için mobil uygulama tanılama bir konsolda ekleme özelliği destekler. `IntuneMAMDiagnosticConsole.h` tanımlar `IntuneMAMDiagnosticConsole` sınıf arabirimi, geliştiricilerin Intune tanılama konsolunu görüntülemek için kullanabilirsiniz. Bu seçenek, son kullanıcıların veya geliştiricilerin toplamak ve olabilir herhangi bir sorunun tanılanmasına yardımcı olmak için Intune günlüklerini paylaşmak için test sırasında sağlar. Bu API için tümleştiricileri isteğe bağlıdır.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Uygulamanızı App Store’a gönderme
 

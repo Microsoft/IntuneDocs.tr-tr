@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68cec5d8594d832a405daa1228e77a51283a7c92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 50833b33583dcc1b49eb9009995b8ccd6c79e1f0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529523"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546639"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Windows cihazınızı yönetimden kaldırma
 
@@ -76,18 +76,18 @@ Bir Windows 10 cihazını yönetimden kaldırmak için aşağıdaki adımları t
 ## <a name="remove-your-windows-81-computer"></a>Windows 8.1 bilgisayarınızı kaldırma
 Bir Windows 8.1 bilgisayarı Intune’dan kaldırmak için aşağıdaki adımları tamamlayın.
 
-1.  **Bilgisayar Ayarları** > **Ağ** > **Çalışma Alanı**’na gidin.
-2.  **Çalışma Alanına Katılma** altında **Çık**’ı seçin.
-3.  **Cihaz yönetimini aç** altında **Kapat**’ı seçin.
-4.  Açılan pencerede **Kapat**’ı seçin.
+1. **Bilgisayar Ayarları** > **Ağ** > **Çalışma Alanı**’na gidin.
+2. **Çalışma Alanına Katılma** altında **Çık**’ı seçin.
+3. **Cihaz yönetimini aç** altında **Kapat**’ı seçin.
+4. Açılan pencerede **Kapat**’ı seçin.
 
 ## <a name="remove-your-windows-81-phone"></a>Windows 8.1 telefonunuzu kaldırma
 Bir Windows 8.1 telefonunu Intune'dan kaldırmak için aşağıdaki adımları tamamlayın.
 
-1.  **Ayarlar** > **Çalışma Alanı**’na gidin.
-2.  Kaydını kaldırmak istediğiniz çalışma alanı hesabına dokunun.
-3.  Ekranın altındaki **Sil** seçeneğine dokunun.
-4.  **Hesabı sil** iletişim kutusunda **Sil**’e dokunun.  
+1. **Ayarlar** > **Çalışma Alanı**’na gidin.
+2. Kaydını kaldırmak istediğiniz çalışma alanı hesabına dokunun.
+3. Ekranın altındaki **Sil** seçeneğine dokunun.
+4. **Hesabı sil** iletişim kutusunda **Sil**’e dokunun.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Şirket Portalı’nı kaldırdıktan sonra kişisel bilgilerinizi kaldırma  
 
 Şirket Portalı’nın Windows cihazınızda depoladığı iki tür veri vardır:

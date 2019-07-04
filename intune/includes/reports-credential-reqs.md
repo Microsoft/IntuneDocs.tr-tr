@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 015e50d24149a6b6242eda86d5f3d62489e9955d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 76706fb39c3c5a69cba4fbf3f57c0b58d92e4a27
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511354"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67560026"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
@@ -14,8 +14,8 @@ Kimlik doğrulaması ve yetkilendirme, Azure AD kimlik bilgileri ve Intune rol t
 
 API dahil olmak üzere Intune Veri Ambarı’na erişim önkoşulları şöyledir:
 
-  -  Kullanıcı şunlardan biri olmalıdır:
-      -  Azure AD genel yöneticisi
-      -  Intune hizmet yöneticisi
-      -  **Intune veri ambarı** kaynağına rol tabanlı erişimi olan kullanıcı
-      -  [Yalnızca uygulama kimlik doğrulaması](../data-warehouse-app-only-auth.md) kullanılan kullanıcısız kimlik doğrulaması 
+  - Kullanıcı şunlardan biri olmalıdır:
+      - Azure AD genel yöneticisi
+      - Intune hizmet yöneticisi
+      - **Intune veri ambarı** kaynağına rol tabanlı erişimi olan kullanıcı
+      - [Yalnızca uygulama kimlik doğrulaması](../data-warehouse-app-only-auth.md) kullanılan kullanıcısız kimlik doğrulaması 

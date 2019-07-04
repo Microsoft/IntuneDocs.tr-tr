@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa48aae8f35ad55e3e836016262056268fd9cd89
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7a6b2e04e40aa12e791e34f3899686d5f5661df2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490981"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546705"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS cihazınızla ilgili sorunlar için şirketinizin destek birimine hata gönderme
 iOS cihazınızda Şirket Portalı uygulamasını kullanırken bazen bir hatayla karşılaşabilirsiniz. Böyle bir durumda hatanın ayrıntılarını şirketinizin destek çalışanına e-posta ile gönderebilirsiniz. Bu ayrıntılar, sorununuzu gidermek için gerekli bağlamı sağlayacaktır.
@@ -32,10 +32,10 @@ Günlükleri Şirket Portalı uygulamasına yüklediğinizde bunlar önce bu uyg
 
 Şirket Portalı uygulamasını kullanırken iOS cihazınızda hata alırsanız, şirketinizin destek biriminin sorunu gidermesine yardımcı olmak için bilgi gönderebilirsiniz. Hata bilgilerini farklı yollarla gönderebilirsiniz:
 
--   Hata uyarı iletilerinde **Rapor**’a dokunun.
+- Hata uyarı iletilerinde **Rapor**’a dokunun.
 
--   Şirket Portalı uygulamasının **Diğer** sekmesinde **Yardım Al**’a dokunun.
+- Şirket Portalı uygulamasının **Diğer** sekmesinde **Yardım Al**’a dokunun.
 
--   Şirket Portalı uygulamasında, cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **Tanılama Raporu Gönder**’e dokunun. Cihazı salladığınızda uyarı görüntülenmezse **Ayarlar** > **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
+- Şirket Portalı uygulamasında, cihazınızı sallayın ve ardından tanılama uyarısı görüntülendiğinde **Tanılama Raporu Gönder**’e dokunun. Cihazı salladığınızda uyarı görüntülenmezse **Ayarlar** > **Şirket Portalı**’nı açın ve **Sallama Hareketi** seçeneğinin açık olduğundan emin olun.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

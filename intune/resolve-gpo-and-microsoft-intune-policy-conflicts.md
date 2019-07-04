@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 8ebae39c529571c5f926debcf64b46d6399d770f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403767"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547946"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Grup İlkesi Nesneleri (GPO) ve Microsoft Intune ilke çakışmalarını çözme
 
@@ -38,11 +38,11 @@ Intune, Windows bilgisayarlarda ayarları yönetmenize yardımcı olan ilkeler k
 ## <a name="what-to-do-if-you-are-using-group-policy"></a>Grup İlkesi kullanıyorsanız yapmanız gerekenler
 Uyguladığınız ilkelerin Grup İlkesi tarafından yönetilmediğinden emin olun. Çakışmaları önlemek için aşağıdaki yöntemlerden bir veya birkaçını kullanabilirsiniz:
 
--   Intune istemcisini yüklemeden önce bilgisayarlarınızı Grup İlkesi ayarları uygulanmamış bir Active Directory kuruluş birimine (OU) taşıyın. Ayrıca, Intune’a kaydolmuş ve Grup İlkesi ayarları uygulamak istemediğiniz bilgisayarlar içeren OU’larda Grup İlkesi devralmayı engelleyebilirsiniz.
+- Intune istemcisini yüklemeden önce bilgisayarlarınızı Grup İlkesi ayarları uygulanmamış bir Active Directory kuruluş birimine (OU) taşıyın. Ayrıca, Intune’a kaydolmuş ve Grup İlkesi ayarları uygulamak istemediğiniz bilgisayarlar içeren OU’larda Grup İlkesi devralmayı engelleyebilirsiniz.
 
--   GPO’ları yalnızca Intune tarafından yönetilmeyen bilgisayarlarla kısıtlamak için bir güvenlik grubu filtresi kullanın.
+- GPO’ları yalnızca Intune tarafından yönetilmeyen bilgisayarlarla kısıtlamak için bir güvenlik grubu filtresi kullanın.
 
--   Intune ilkeleriyle çakışan Grup İlkesi Nesnelerini devre dışı bırakın veya kaldırın.
+- Intune ilkeleriyle çakışan Grup İlkesi Nesnelerini devre dışı bırakın veya kaldırın.
 
 Active Directory ve Windows Grup İlkesi hakkında daha fazla bilgi için, Windows Server Belgelerinize bakın.
 
@@ -54,7 +54,7 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 
 #### To apply WMI filters to a GPO
 
-1.  Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
+1. Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
 
     ```
     //Beginning of MOF file.
@@ -84,42 +84,42 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
     };
     ```
 
-2.  Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
+2. Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
 
     **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
+3. Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
 
-    -   For GPOs that apply to PCs that are not managed by using Intune, use the following:
+    - For GPOs that apply to PCs that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=0
         ```
 
-    -   For GPOs that apply to PCs that are managed by Intune, use the following:
+    - For GPOs that apply to PCs that are managed by Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=1
         ```
 
-4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
+4. Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
+    - For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
-    -   For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
+    - For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
 GPO'ları yalnızca seçili bir GPO için Grup İlkesi Yönetimi konsolunun **Güvenlik Filtrelemesi** alanında belirtilen güvenlik gruplarına uygulayabilirsiniz. Varsayılan olarak, GPO'lar *Kimliği Doğrulanmış Kullanıcılara* uygulanır.
 
--   **Active Directory Kullanıcıları ve Bilgisayarları** ek bileşeninde, Intune tarafından yönetilmesini istemediğiniz bilgisayarlar ve kullanıcı hesaplarını içeren yeni bir güvenlik grubu oluşturun. Örneğin, grubu *Microsoft Intune’da Değil* olarak adlandırabilirsiniz.
+- **Active Directory Kullanıcıları ve Bilgisayarları** ek bileşeninde, Intune tarafından yönetilmesini istemediğiniz bilgisayarlar ve kullanıcı hesaplarını içeren yeni bir güvenlik grubu oluşturun. Örneğin, grubu *Microsoft Intune’da Değil* olarak adlandırabilirsiniz.
 
--   Grup İlkesi Yönetimi konsolunda, seçili GPO için **Temsilci** sekmesinde, güvenlik grubundaki kullanıcılar ve bilgisayarlar için uygun **Okuma** ve **Grup İlkesi Uygulama** izinlerini vermek için yeni güvenlik grubuna sağ tıklayın. (**Grup İlkesi Uygulama** izinleri **Gelişmiş** iletişim kutusunda bulunur.)
+- Grup İlkesi Yönetimi konsolunda, seçili GPO için **Temsilci** sekmesinde, güvenlik grubundaki kullanıcılar ve bilgisayarlar için uygun **Okuma** ve **Grup İlkesi Uygulama** izinlerini vermek için yeni güvenlik grubuna sağ tıklayın. (**Grup İlkesi Uygulama** izinleri **Gelişmiş** iletişim kutusunda bulunur.)
 
--   Daha sonra, yeni güvenlik grubu filtresini seçili bir GPO'ya uygulayın ve **Kimliği Doğrulanmış Kullanıcılar** varsayılan filtresini kaldırın.
+- Daha sonra, yeni güvenlik grubu filtresini seçili bir GPO'ya uygulayın ve **Kimliği Doğrulanmış Kullanıcılar** varsayılan filtresini kaldırın.
 
 Yeni güvenlik grubu Intune hizmet değişikliklerinde kayıt olarak korunmalıdır.
 

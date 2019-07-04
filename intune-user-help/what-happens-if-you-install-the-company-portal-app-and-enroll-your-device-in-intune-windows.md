@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: efed9522f64cd7b34d702cd959f6b1aa4524f855
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491033"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545887"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Şirket Portalı uygulamasını yüklerseniz ve Windows cihazınızı Intune’a kaydederseniz ne olur?
 
@@ -32,48 +32,48 @@ ms.locfileid: "61491033"
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Kayıttan sonra tüm Windows cihazlarına ne olur?
 Windows veya Windows Phone cihazınızı Intune’a kaydettiğinizde:
 
--   Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz.
+- Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz.
 
--   Şirket Portalı web sitesi üzerinden şirket uygulamalarını alın. (__Not__: Windows 7 ve Windows Vista’da, şirket uygulamalarını yalnızca Şirket Portalı web sitesi üzerinden alabilirsiniz.)
+- Şirket Portalı web sitesi üzerinden şirket uygulamalarını alın. (__Not__: Windows 7 ve Windows Vista’da, şirket uygulamalarını yalnızca Şirket Portalı web sitesi üzerinden alabilirsiniz.)
 
--   Şirket veya okul e-posta hesabınızı otomatik olarak oluşturun.
+- Şirket veya okul e-posta hesabınızı otomatik olarak oluşturun.
 
--   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz.
+- Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına sıfırlayabilirsiniz.
 
 Cihazınızı kaydettiğinizde, şirketinizin destek birimine şu tür işlemleri yapma izni vermiş olursunuz:
 
--   Cihazınızı üretici varsayılan ayarlarına geri döndürebilir. Cihaz çalındıysa veya kaybolduysa bu yararlıdır.
+- Cihazınızı üretici varsayılan ayarlarına geri döndürebilir. Cihaz çalındıysa veya kaybolduysa bu yararlıdır.
 
--   Yalnızca şirketle ilgili dosyaları ve iş uygulamalarını kaldırabilir. *Kişisel ayarlarınız ve verileriniz kaldırılmaz.*
+- Yalnızca şirketle ilgili dosyaları ve iş uygulamalarını kaldırabilir. *Kişisel ayarlarınız ve verileriniz kaldırılmaz.*
 
--   Şirketinizin destek birimi, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü olan tüm yazılımları görüntüleyebilir.
+- Şirketinizin destek birimi, kişisel olarak yüklediğiniz yazılımlar dahil olmak üzere bilgisayarda yüklü olan tüm yazılımları görüntüleyebilir.
 
--   Şirket verilerini korumaya yardımcı olmak için cihazınızda parola veya PIN kullanmanızı zorunlu kılma gibi gereksinimler ayarlayabilir. Şirketinizin destek birimi ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda cihazınızı kilitleyebilir.
+- Şirket verilerini korumaya yardımcı olmak için cihazınızda parola veya PIN kullanmanızı zorunlu kılma gibi gereksinimler ayarlayabilir. Şirketinizin destek birimi ayrıca, kaç kez hatalı parola girebileceğinizi belirleyebilir ve çok sayıda hatalı giriş yaptığınızda cihazınızı kilitleyebilir.
 
--   Cihazınızın kaybolması veya çalınması durumunda şirket verilerinizin korunmasına yardımcı olmak için cihazınızdaki verileri şifrelemenizi isteyebilir.
+- Cihazınızın kaybolması veya çalınması durumunda şirket verilerinizin korunmasına yardımcı olmak için cihazınızdaki verileri şifrelemenizi isteyebilir.
 
--   Hüküm ve koşulları kabul etmenizi gerektirebilir.
+- Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
--   Şirket ile ilgili verilerin fotoğrafını çekmenizi engelleyebilir.
+- Şirket ile ilgili verilerin fotoğrafını çekmenizi engelleyebilir.
 
 ## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Kayıttan sonra tüm Windows bilgisayarlarına ne olur?
 
--  Şirketinizin destek biriminin bilgisayarı yönetmesine olanak tanımak ve uygulamalar ile destek bilgileri gibi şirket kaynaklarına erişmenizi sağlamak için bilgisayarınıza yazılım yüklenir. Şirketinizin destek birimi bu yazılımı otomatik olarak güncelleştirebilir.
+- Şirketinizin destek biriminin bilgisayarı yönetmesine olanak tanımak ve uygulamalar ile destek bilgileri gibi şirket kaynaklarına erişmenizi sağlamak için bilgisayarınıza yazılım yüklenir. Şirketinizin destek birimi bu yazılımı otomatik olarak güncelleştirebilir.
 
--  Intune Endpoint Protection bilgisayarınızda yüklü olabilir. Bu yazılım, bilgisayarı virüs ve kötü amaçlı yazılımlara karşı denetler.
+- Intune Endpoint Protection bilgisayarınızda yüklü olabilir. Bu yazılım, bilgisayarı virüs ve kötü amaçlı yazılımlara karşı denetler.
 
--  Şirketinizin destek birimi bilgisayarınızın sabit sürücüsünden veri toplayabilir veya onları silebilir.
+- Şirketinizin destek birimi bilgisayarınızın sabit sürücüsünden veri toplayabilir veya onları silebilir.
 
--  Şirketinizin destek birimi aynı zamanda bilgisayarınıza uygulama ve güncelleştirme de yükleyebilir.
+- Şirketinizin destek birimi aynı zamanda bilgisayarınıza uygulama ve güncelleştirme de yükleyebilir.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Cihaz kaydından sonra her sekiz saatte bir ne olur?
 
 Yaklaşık her sekiz saatte bir, kayıtlı cihazlarda aşağıdakiler yapılır:
 
--   Şirketinizin destek biriminin kullanılabilir hale getirdiği ilkeleri ve uygulama güncelleştirmelerini indirin.
+- Şirketinizin destek biriminin kullanılabilir hale getirdiği ilkeleri ve uygulama güncelleştirmelerini indirin.
 
--   Tüm donanım envanteri güncelleştirmeleri gönderilir.
+- Tüm donanım envanteri güncelleştirmeleri gönderilir.
 
--   Tüm şirket uygulaması envanteri güncelleştirmeleri gönderilir.
+- Tüm şirket uygulaması envanteri güncelleştirmeleri gönderilir.
 
 Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: bc338b30996d0ca31b2dd59a6c934f680f57c0d1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403025"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547554"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma
 
@@ -48,14 +48,14 @@ Windows Güvenlik Duvarı ilkesi, yönetilen bilgisayarlarda Windows Güvenlik D
 > [!IMPORTANT]
 > Windows Güvenlik Duvarı'nı Intune ile yönetmek için, yönettiğiniz bilgisayarlarda aşağıdaki iki hizmetin etkin olduğundan emin olun:
 >
-> -   Windows Güvenlik Duvarı
-> -   IPsec İlke Aracısı
+> - Windows Güvenlik Duvarı
+> - IPsec İlke Aracısı
 
 ## <a name="configure-a-windows-firewall-policy"></a>Bir Windows Güvenlik Duvarı ilkesini yapılandırma
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **İlke** &gt; **İlke Ekle**’yi seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **İlke** &gt; **İlke Ekle**’yi seçin.
 
-2.  Bir **Windows Güvenlik Duvarı Ayarları** ilkesi yapılandırın ve dağıtın. Önerilen ayarları kullanabilir veya ayarları özelleştirebilirsiniz. İlke oluşturma ve dağıtma hakkında daha fazla bilgi için, bkz. [Microsoft Intune bilgisayar istemcisi ile genel Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2. Bir **Windows Güvenlik Duvarı Ayarları** ilkesi yapılandırın ve dağıtın. Önerilen ayarları kullanabilir veya ayarları özelleştirebilirsiniz. İlke oluşturma ve dağıtma hakkında daha fazla bilgi için, bkz. [Microsoft Intune bilgisayar istemcisi ile genel Windows bilgisayarı yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     Aşağıdaki bölümde, ilkede yapılandırabileceğiniz değerlerin yanı sıra ilkeyi özelleştirmediğinizde kullanılacak varsayılan değerler listelenmektedir.
 

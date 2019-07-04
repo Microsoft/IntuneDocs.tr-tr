@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1907ebf3d9233ca2324a4759b4f22a4c62e143c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec3685df5865d22874b68a8bf42539d37fb486d7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045799"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549254"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Intune ile Pradeo’yu tümleştirme
 
@@ -32,47 +32,47 @@ Pradeo Mobile Threat Defense çözümünü Intune ile tümleştirmek için aşa�
 
 Pradeo’yu Intune ile tümleştirme sürecini başlatmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--   Microsoft Intune aboneliği
+- Microsoft Intune aboneliği
 
--   Şu izinleri vermek için Azure Active Directory yönetici kimlik bilgileri:
+- Şu izinleri vermek için Azure Active Directory yönetici kimlik bilgileri:
 
-    -   Oturum açma ve kullanıcı profilini okuma
+    - Oturum açma ve kullanıcı profilini okuma
 
-    -   Oturum açmış kullanıcı olarak dizine erişim
+    - Oturum açmış kullanıcı olarak dizine erişim
 
-    -   Dizin verilerini okuma
+    - Dizin verilerini okuma
 
-    -   Intune’a cihaz bilgilerini gönderme
+    - Intune’a cihaz bilgilerini gönderme
 
--   Pradeo Security konsoluna erişmek için gereken yönetici kimlik bilgileri.
+- Pradeo Security konsoluna erişmek için gereken yönetici kimlik bilgileri.
 
 ### <a name="pradeo-app-authorization"></a>Pradeo uygulama yetkilendirmesi
 
 Pradeo uygulama yetkilendirme işlemi şu şekildedir:
 
--   Pradeo hizmetine Intune’a cihaz durumuyla ilgili bilgi iletme izni verin.
+- Pradeo hizmetine Intune’a cihaz durumuyla ilgili bilgi iletme izni verin.
 
--   Cihazının veritabanını doldurmak için Pradeo, Azure AD Kayıt Grubu üyeliğiyle eşitlenir.
+- Cihazının veritabanını doldurmak için Pradeo, Azure AD Kayıt Grubu üyeliğiyle eşitlenir.
 
--   Pradeo yönetim konsolunun Azure AD Çoklu Oturum Açma (SSO) kullanmasına izin verin.
+- Pradeo yönetim konsolunun Azure AD Çoklu Oturum Açma (SSO) kullanmasına izin verin.
 
--   Pradeo uygulamasının Azure AD SSO kullanarak oturum açmasına izin verin.
+- Pradeo uygulamasının Azure AD SSO kullanarak oturum açmasına izin verin.
 
 ## <a name="to-set-up-pradeo-integration"></a>Pradeo tümleştirmesini ayarlamak için
 
-1.  [Pradeo Security konsolu](https://www.apps-security.com)’na gidin ve kimlik bilgilerinizle oturum açın.
+1. [Pradeo Security konsolu](https://www.apps-security.com)’na gidin ve kimlik bilgilerinizle oturum açın.
 
-2.  Menüden **Yönetim - Enterprise Mobility Yönetimi**’ni seçin.
+2. Menüden **Yönetim - Enterprise Mobility Yönetimi**’ni seçin.
 
-3.  **Intune logosunu** seçin.
+3. **Intune logosunu** seçin.
 
-4.  **EMM (Enterprise Mobility Yönetimi - Intune)** penceresindeki **1. Adım** altında bulunan **Pradeo Bağlayıcısı** düğmesini seçin. 
+4. **EMM (Enterprise Mobility Yönetimi - Intune)** penceresindeki **1. Adım** altında bulunan **Pradeo Bağlayıcısı** düğmesini seçin. 
 
     ![Pradeo EMM Intune penceresinin ekran görüntüsü](./media/pradeo_setup.png)
 
 5. Microsoft Intune bağlantı penceresinde Intune kimlik bilgilerinizi girin.
 
-5.  Pradeo web sayfası yeniden açılacaktır. **2. Adım** altında **Pradeo Cihaz Durumu** düğmesini seçin.
+5. Pradeo web sayfası yeniden açılacaktır. **2. Adım** altında **Pradeo Cihaz Durumu** düğmesini seçin.
 
 7. Pradeo-Intune Bağlayıcısı penceresinde **Kabul Et**’i seçin. 
 
@@ -86,4 +86,4 @@ Pradeo uygulama yetkilendirme işlemi şu şekildedir:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
--   [Pradeo uygulamalarını ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Pradeo uygulamalarını ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)

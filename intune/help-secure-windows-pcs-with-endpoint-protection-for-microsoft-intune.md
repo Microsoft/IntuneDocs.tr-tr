@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047512"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548773"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma
 
@@ -46,15 +46,15 @@ Bir BT yöneticisi olarak en önemli önceliklerinizden biri, yönettiğiniz bil
 
 Geçerli uç nokta koruma uygulamanızdan Microsoft Intune Endpoint Protection’a geçmek için aşağıdakileri yapın:
 
-1.  Intune istemci yazılımını bu bilgisayarlara dağıtırken geçerli uç nokta koruma uygulamasını çalışır durumda bırakın.
+1. Intune istemci yazılımını bu bilgisayarlara dağıtırken geçerli uç nokta koruma uygulamasını çalışır durumda bırakın.
 
-2.  Microsoft Intune Endpoint Protection’ın yüklendiğini ve istemci bilgisayarların güvenliğini sağlamaya yardımcı olduğunu doğrulayın.
+2. Microsoft Intune Endpoint Protection’ın yüklendiğini ve istemci bilgisayarların güvenliğini sağlamaya yardımcı olduğunu doğrulayın.
 
-3.  Üçüncü taraf uç nokta koruma yazılımını şu yolla kaldırın:
+3. Üçüncü taraf uç nokta koruma yazılımını şu yolla kaldırın:
 
-    -   Intune yazılım dağıtım özelliğini kullanarak, üçüncü taraf uç nokta koruma uygulaması üreticisi tarafından sağlanan yazılım kaldırma aracını dağıtın. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları dağıtma](apps-deploy.md).
+    - Intune yazılım dağıtım özelliğini kullanarak, üçüncü taraf uç nokta koruma uygulaması üreticisi tarafından sağlanan yazılım kaldırma aracını dağıtın. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları dağıtma](apps-deploy.md).
 
-    -   Üçüncü taraf uç nokta koruma uygulamasını el ile kaldırma.
+    - Üçüncü taraf uç nokta koruma uygulamasını el ile kaldırma.
 
 > [!NOTE]
 > Intune, üçüncü taraf uç nokta koruma uygulamalarını otomatik olarak kaldırmaz.
@@ -62,9 +62,9 @@ Geçerli uç nokta koruma uygulamanızdan Microsoft Intune Endpoint Protection�
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Microsoft Intune Endpoint Protection’ı yapılandırma
 Aşağıdaki adımlar, Microsoft Intune için Endpoint Protection’ı yapılandırmada size yardımcı olacaktır.
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **İlke** > **İlke Ekle**’yi seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/), **İlke** > **İlke Ekle**’yi seçin.
 
-2.  **Bilgisayar Yönetimi**’ni genişletin ve **Microsoft Intune Aracısı Ayarları**’nı seçin. Endpoint Protection ayarlarına yönelik ilke belirtmek için **Özel İlke Oluştur ve Dağıt**’ı seçin. Ardından **İlke Oluştur** düğmesini seçin.
+2. **Bilgisayar Yönetimi**’ni genişletin ve **Microsoft Intune Aracısı Ayarları**’nı seçin. Endpoint Protection ayarlarına yönelik ilke belirtmek için **Özel İlke Oluştur ve Dağıt**’ı seçin. Ardından **İlke Oluştur** düğmesini seçin.
 
 Önerilen ayarları kullanabilir veya ayarları özelleştirebilirsiniz. İlke oluşturma ve dağıtma hakkında daha fazla bilgiye ihtiyacınız olursa, [Microsoft Intune bilgisayar istemcisi ile genel Windows bilgisayarları yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) konusuna bakın.
 
@@ -168,7 +168,7 @@ Bir uzak görevin durumunu, Intune konsolunun sağ alt köşesindeki **Uzak Gör
   - **İzleme gerektiren kötü amaçlı yazılım bulunan bilgisayarlar** – Çözümlenmemiş kötü amaçlı yazılım sorunları olan bilgisayarları ve sorunu çözmek için yapılması gereken eylemleri görmek için bağlantıya tıklayın.
   - **Korumalı olmayan cihazlar** – Herhangi bir yazılım yüklü olmadığından veya bir hata olduğundan hiçbir uç nokta koruma yazılımı tarafından korunmayan bilgisayarları görmek için bağlantıya tıklayın. Daha fazla ayrıntı görüntülemek için bir bilgisayarı seçin.
   - **Başka bir uç nokta koruma uygulaması çalışan cihazlar** – Üçüncü taraf bir uç nokta koruma uygulaması çalıştıran bilgisayarları görmek için bağlantıya tıklayın.
-- **Tüm Kötü Amaçlı Yazılımlar** - Bilgisayarlarınızda bulunan tüm etkin kötü amaçlı yazılımların listesini görüntüler. Belirli bir kötü amaçlı yazılımdan etkilenen tüm bilgisayarları görmek için bu listeyi inceleyebilir veya aşağıdaki görevlerden birini seçebilirsiniz:
+- **Tüm kötü amaçlı yazılım** -bilgisayarlarınızda bulunan tüm etkin kötü amaçlı yazılımların listesini görüntüler. Belirli bir kötü amaçlı yazılımdan etkilenen tüm bilgisayarları görmek için bu listeyi inceleyebilir veya aşağıdaki görevlerden birini seçebilirsiniz:
   - **Özellikleri Görüntüle** – Seçili kötü amaçlı yazılım hakkında daha fazla bilgi içeren bir sayfa açar.
   - **Bu Kötü Amaçlı Yazılım Hakkında Bilgi Edin** – Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi'nden kötü amaçlı yazılım hakkında daha fazla bilgi içeren bir konuyu açar.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 86aefbfc37db7929f9748d4783db319cf97d4545
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512259"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548459"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune’a geçerken cihaz uyumluluk ve uygulama yönetimi ilkelerini yapılandırma
 
@@ -30,13 +30,13 @@ Intune’a geçiş sırasında asıl amaç, tüm cihazların Intune’a kaydedil
 
 Her cihaz platformu farklı ayarlar sunabilir, ancak Intune cihaz ilkeleri aşağıdaki mobil cihaz yönetimi özelliklerini sağlayarak her cihaz platformu ile çalışır:
 
--   Her kullanıcının kaydettiği cihaz sayısını düzenlemek.
+- Her kullanıcının kaydettiği cihaz sayısını düzenlemek.
 
--   Cihaz ayarlarını (cihaz düzeyinde şifreleme, parola uzunluğu, kamera kullanımı gibi) yönetme.
+- Cihaz ayarlarını (cihaz düzeyinde şifreleme, parola uzunluğu, kamera kullanımı gibi) yönetme.
 
--   Uygulama, e-posta profilleri, VPN profilleri vb. sunma.
+- Uygulama, e-posta profilleri, VPN profilleri vb. sunma.
 
--   Güvenlik uyumluluk ilkeleri için cihaz düzeyinde ölçütleri değerlendirmek.
+- Güvenlik uyumluluk ilkeleri için cihaz düzeyinde ölçütleri değerlendirmek.
 
 > [!IMPORTANT]
 > Cihaz yönetimi ilkeleri doğrudan bağımsız cihazlara veya kullanıcılara atanmaz, bunun yerine kullanıcı gruplarına atanır. Bu ilkeler doğrudan bir kullanıcı grubuna ve dolayısıyla kullanıcı cihazına uygulanabilir veya ilkeler bir cihaz grubuna ve dolayısıyla grup üyelerine uygulanabilir.
@@ -61,9 +61,9 @@ Cihaz düzeyinde ayarları uygulamak için bir cihaz yapılandırma profili olu�
 
 #### <a name="directly-import-ios-configuration-profiles-optional"></a>iOS yapılandırma profillerini doğrudan içeri aktarma (isteğe bağlı)
 
--   **Apple Configurator iOS profilleri (iOS 7.1 ve üzeri):** Mevcut MDM çözümünüz Apple Configurator profilleri (.mobileconfig dosyaları) kullanıyorsa Intune bunları doğrudan özel yapılandırma ilkeleri olarak içeri aktarabilir.
+- **Apple Configurator iOS profilleri (iOS 7.1 ve üzeri):** Mevcut MDM çözümünüz Apple Configurator profilleri (.mobileconfig dosyaları) kullanıyorsa Intune bunları doğrudan özel yapılandırma ilkeleri olarak içeri aktarabilir.
 
--   **iOS mobil uygulama yapılandırma ilkeleri:** Mevcut MDM çözümünüz iOS mobil uygulama yapılandırma ilkeleri kullanıyorsa özellik listeleri için Apple'nın belirttiği XML biçimini karşıladıkları sürece Intune bunları doğrudan içeri aktarabilir.
+- **iOS mobil uygulama yapılandırma ilkeleri:** Mevcut MDM çözümünüz iOS mobil uygulama yapılandırma ilkeleri kullanıyorsa özellik listeleri için Apple'nın belirttiği XML biçimini karşıladıkları sürece Intune bunları doğrudan içeri aktarabilir.
 
 - [iOS](custom-settings-ios.md) için özel bir ilke eklemeyi öğrenin.
 
@@ -71,25 +71,25 @@ Cihaz düzeyinde ayarları uygulamak için bir cihaz yapılandırma profili olu�
 
 Cihaz uyumluluk ilkeleri, güvenliğe yönelik ayarları değerlendirir ve cihazların kuruluş standartlarına uyup uymadığını gösteren raporlar sağlar. Bu ayarlar şunlardır:
 
--   PIN uzunluğu
+- PIN uzunluğu
 
--   Jailbreak uygulanma durumu
+- Jailbreak uygulanma durumu
 
--   İşletim sistemi sürümü
+- İşletim sistemi sürümü
 
 Cihaz uyumluluk ayarları için ek kaynakları görün:
 
--   [Cihaz uyumluluk ilkeleri](device-compliance.md) hakkında bilgi edinin.
+- [Cihaz uyumluluk ilkeleri](device-compliance.md) hakkında bilgi edinin.
 
--   [Cihaz uyumluluk ilkesi oluşturmayı](device-compliance-get-started.md) öğrenin.
+- [Cihaz uyumluluk ilkesi oluşturmayı](device-compliance-get-started.md) öğrenin.
 
 ### <a name="task-5-publish-and-deploy-apps"></a>Görev 5: Uygulamalarını yayımlama ve dağıtma
 
 Intune MDM kullanırken, uygulamaların otomatik yüklenmesini gerektirerek veya bunları Şirket Portalı’nda sunarak uygulama sağlayabilirsiniz.
 
--   [Uygulama ekleme](apps-add.md).
+- [Uygulama ekleme](apps-add.md).
 
--   [Uygulama dağıtma](apps-deploy.md).
+- [Uygulama dağıtma](apps-deploy.md).
 
 ### <a name="task-6-enable-device-enrollment"></a>6\. Görev: Cihaz kaydını etkinleştirme
 

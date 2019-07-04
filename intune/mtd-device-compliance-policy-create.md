@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58ee82e44e8aa8d68c0fb00c4497cc0455ed21d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2315136fe277f06f6dbb11c13139a9dc193ce6f7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528630"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549362"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune ile Mobile Threat Defense (MTD) cihaz uyumluluk ilkesi oluşturma
 
@@ -37,23 +37,23 @@ MTD kurulumunun parçası olarak, MTD iş ortağı konsolunda çeşitli tehditle
 
 MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
--   Intune ile MTD tümleştirmesini ayarlama
+- Intune ile MTD tümleştirmesini ayarlama
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>MTD cihaz uyumluluk ilkesi oluşturmak için
 
-1.  [Azure portalı](https://portal.azure.com/)’na gidin ve Intune kimlik bilgilerinizle oturum açın.
+1. [Azure portalı](https://portal.azure.com/)’na gidin ve Intune kimlik bilgilerinizle oturum açın.
 
-2.  **Azure Panosu**'nda, soldaki menüden **Tüm hizmetler**’i seçtikten sonra, metin kutusu filtresine **Intune** yazın.
+2. **Azure Panosu**'nda, soldaki menüden **Tüm hizmetler**’i seçtikten sonra, metin kutusu filtresine **Intune** yazın.
 
-3.  **Intune**'u seçin, **Intune Panosu** açılır.
+3. **Intune**'u seçin, **Intune Panosu** açılır.
 
 4. **Intune Panosu**'nda, **Cihaz uyumluluğu**'nu, ardından **Yönet** bölümü altından **İlkeler**'i seçin.
 
-5.  **İlke oluştur**'u seçin, cihaz uyumluluğu için **Ad**, **Açıklama** girin, **Platform**'u seçin, sonra **Ayarlar** bölümünün altından **Yapılandır**'ı seçin.
+5. **İlke oluştur**'u seçin, cihaz uyumluluğu için **Ad**, **Açıklama** girin, **Platform**'u seçin, sonra **Ayarlar** bölümünün altından **Yapılandır**'ı seçin.
 
-6.  **Uyumluluk ilkesi** bölmesinden **Cihaz Sistem Durumu**’nu seçin.
+6. **Uyumluluk ilkesi** bölmesinden **Cihaz Sistem Durumu**’nu seçin.
 
-7.  **Cihaz Sistem Durumu** bölmesinden **Cihazın Cihaz Tehdit Düzeyinde veya altında olmasını gerektir**'in altındaki açılan listeden Mobil Tehdit Düzeyini seçin.
+7. **Cihaz Sistem Durumu** bölmesinden **Cihazın Cihaz Tehdit Düzeyinde veya altında olmasını gerektir**'in altındaki açılan listeden Mobil Tehdit Düzeyini seçin.
 
     a.  **Güvenli**: Bu en güvenli düzeydir. Cihazda herhangi bir tehdit mevcut olamaz ve yine de şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
 
@@ -63,7 +63,7 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
     d.  **Yüksek**: Bu en az güvenli düzeydir. Bu, tüm tehdit düzeylerine izin verir ve Mobile Threat Defense’i yalnızca raporlama amacıyla kullanır. Cihazlar, bu ayar ile MTD uygulamasının etkin olmasını gerektirir.
 
-8.  **Tamam**'a iki kez tıklayın, sonra **Oluştur**'u seçin.
+8. **Tamam**'a iki kez tıklayın, sonra **Oluştur**'u seçin.
 
 > [!IMPORTANT]
 > Office 365 veya diğer hizmetler için koşullu erişim ilkeleri oluşturursanız, cihaz uyumluluk değerlendirmesi dikkate alınır ve uyumlu olmayan cihazların şirket kaynaklarına erişimi cihazdaki tehdit çözümlenene kadar engellenir.

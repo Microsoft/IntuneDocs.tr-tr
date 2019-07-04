@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 980138015cdbe063d6d4b05eb6dd8ab70be4b601
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512247"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548478"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Intune ile Pradeo Mobile Threat Defense bağlayıcısı
 
@@ -41,11 +41,11 @@ Burada sık karşılaşılan bazı senaryolar verilmiştir.
 
 Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algılandığında, tehdit çözülene kadar cihazların aşağıdaki eylemleri gerçekleştirmesini engelleyebilirsiniz:
 
--   Şirket e-postasına bağlanma
+- Şirket e-postasına bağlanma
 
--   OneDrive İş uygulaması ile şirket dosyalarını eşitleme
+- OneDrive İş uygulaması ile şirket dosyalarını eşitleme
 
--   Şirket uygulamalarına erişme
+- Şirket uygulamalarına erişme
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
@@ -81,19 +81,19 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
--   **Android 4.0.3 ve üzeri**
+- **Android 4.0.3 ve üzeri**
 
--   **iOS 7 ve üzeri**
+- **iOS 7 ve üzeri**
 
 ## <a name="prerequisites"></a>Önkoşullar
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune aboneliği
+- Microsoft Intune aboneliği
 
--   Mobile Threat Defense aboneliği için Pradeo Security
+- Mobile Threat Defense aboneliği için Pradeo Security
 
-    -   Daha fazla bilgi için [Pradeo web sitesine](https://www.pradeo.com/en-US/mobile-threat-protection) bakın.
+    - Daha fazla bilgi için [Pradeo web sitesine](https://www.pradeo.com/en-US/mobile-threat-protection) bakın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

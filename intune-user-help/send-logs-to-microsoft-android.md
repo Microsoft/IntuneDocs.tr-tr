@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0001175b84c2548c1fb93090f9ce6fd3193f21a3
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 20bdfcce6574d31c37442a7bad58582aa7ea2fb6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528919"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546144"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Günlükleri, Android cihazları için Şirket Portalı geliştiricilerine gönderme
 
@@ -34,16 +34,16 @@ ms.locfileid: "67528919"
 
 Günlükleri Microsoft’a göndermek için:
 
-1.  Şirket Portalı uygulamasını açın.
+1. Şirket Portalı uygulamasını açın.
 
-2.  **Menü** > **Yardım** > **Desteğe E-posta Gönder**’e dokunun.
+2. **Menü** > **Yardım** > **Desteğe E-posta Gönder**’e dokunun.
 
     > [!NOTE]
     > **Menü**, Android cihazınızın türüne bağlı olarak bir yazılım düğmesi veya donanım düğmesi olabilir.
 
-3.  **Yalnızca Günlük Yükle**’ye dokunun.
+3. **Yalnızca Günlük Yükle**’ye dokunun.
 
-4.  Karşıya yükleme tamamlandıktan sonra bir olay kimliği alırsınız. Kayıtlarınız için bu kimliği saklayın.
+4. Karşıya yükleme tamamlandıktan sonra bir olay kimliği alırsınız. Kayıtlarınız için bu kimliği saklayın.
 
 Android için Şirket Portalı ekibiyle doğrudan iletişime geçmek için <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a> adresine e-posta gönderin. 
 

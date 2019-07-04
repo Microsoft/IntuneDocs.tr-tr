@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044911"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548747"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune ile işletim sistemi sürümlerini yönetme
 Modern mobil ve masaüstü platformlarda önemli güncelleştirmeler, düzeltme ekleri ve yeni sürümler sık sık yayınlanır. Windows üzerinde güncelleştirmeleri ve düzeltme eklerini yönetmek için tam denetiminiz olsa da iOS ve Android gibi diğer platformlarda son kullanıcılarınızın da bu işlemde yer alması gerekir.  Microsoft Intune, farklı platformlarda işletim sistemi sürümü yönetiminizi yapılandırmak için farklı işlevlere sahiptir.
@@ -76,8 +76,8 @@ Ayrıntılar için bkz. [Uygulama koruma ilkeleri oluşturma ve atama](https://d
 Belirlediğiniz zaman çizelgesi içinde kuruluşunuzu yeni bir işletim sistemi sürümüne geçirmenize yardımcı olması için bu makaledeki Intune işlevlerini kullanabilirsiniz. Aşağıdaki adımlar, kullanıcılarınızı yedi gün içinde işletim sistemi v1’den işletim sistemi v2’ye taşımanız için örnek bir dağıtım modeli sağlar.
 - **1. adım**: İşletim sistemi v2 cihaz kaydı için en düşük sürüm olarak gerektirmek amacıyla kayıt kısıtlamalarını kullanın. Böylece kayıt zamanında yeni son kullanıcı cihazlarının uyumlu olması sağlanır.
 - **Adım 2a**: Kullanıcılar uygulamayı açtığında veya işletim sistemi v2 sürdürür uyarmak üzere kullanım Intune uygulama koruma ilkeleri gereklidir.
-- **Adım 2b:**. Cihazın uyumlu olması için işletim sistemi v2’yi en düşük sürüm olarak belirtmek amacıyla cihaz uyumluluk ilkelerini kullanın. Uyumsuzluk durumunda yedi günlük bir mehil süresi sağlamak ve kullanıcılara zaman çizelgeniz ile gereksinimlerinize dair bir e-posta bildirimi göndermek için **Eylemler**’i kullanın.
-  -  Bu ilkeler, uygulama koruma ilkesi etkin uygulamalar açıldığında mevcut cihazların Intune Şirket Portalı yoluyla güncelleştirilmesi gerektiği konusunda son kullanıcıları bilgilendirir.
+- **Adım 2b:** . Cihazın uyumlu olması için işletim sistemi v2’yi en düşük sürüm olarak belirtmek amacıyla cihaz uyumluluk ilkelerini kullanın. Uyumsuzluk durumunda yedi günlük bir mehil süresi sağlamak ve kullanıcılara zaman çizelgeniz ile gereksinimlerinize dair bir e-posta bildirimi göndermek için **Eylemler**’i kullanın.
+  - Bu ilkeler, uygulama koruma ilkesi etkin uygulamalar açıldığında mevcut cihazların Intune Şirket Portalı yoluyla güncelleştirilmesi gerektiği konusunda son kullanıcıları bilgilendirir.
   - Uyumsuz cihazlara sahip kullanıcıları belirlemek için bir uyumluluk raporu çalıştırabilirsiniz. 
 - **Adım 3a**: Bir uygulama kullanıcıları engellemek kullanım Intune uygulama koruma ilkeleri açar veya cihazın işletim sistemi v2 kullanmıyorsa sürdürür.
 - **Adım 3b**: Cihazın uyumlu olması için işletim sistemi v2’yi en düşük sürüm olarak belirtmek amacıyla cihaz uyumluluk ilkelerini kullanın.

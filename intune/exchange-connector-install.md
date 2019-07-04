@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffaf29d34c7f6a08d48717f7560926d53cfa8ba2
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 9d8cd91d55c90fd4b4f26ee0e6b1b99d37bcce08
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529769"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547593"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Intune şirket içi Exchange connector, Microsoft Intune ayarlama
 Bu makaledeki bilgiler yükleyin ve ardından Exchange Active Sync şirket içi Bağlayıcısı için Intune izlemenize yardımcı olur.  Intune şirket içi Exchange bağlayıcısıyla kullanan, [izin vermek veya Exchange erişimi engellemek için koşullu erişim ilkeleri şirket içi posta kutularını](conditional-access-exchange-create.md). 
@@ -58,18 +58,18 @@ Aşağıdaki tabloda şirket içi Exchange bağlayıcısını yüklediğiniz bil
 Şirket içi Exchange Bağlayıcısı tarafından kullanılacak olan bir Active Directory kullanıcı hesabı oluşturun. Hesabın aşağıdaki gerekli Windows PowerShell Exchange cmdlet'lerini çalıştırma izni olması gerekir:
 
 
- -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
- -   Get-CasMailbox, Set-CasMailbox
- -   Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
- -   Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
- -   Get-ActiveSyncDeviceStatistics
- -   Get-ActiveSyncDevice
- -   Get-ExchangeServer
- -   Get-ActiveSyncDeviceClass
- -   Get-Recipient
- -   Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
- -   Set-ADServerSettings
- -   Get-Command
+ - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
+ - Get-CasMailbox, Set-CasMailbox
+ - Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
+ - Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
+ - Get-ActiveSyncDeviceStatistics
+ - Get-ActiveSyncDevice
+ - Get-ExchangeServer
+ - Get-ActiveSyncDeviceClass
+ - Get-Recipient
+ - Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
+ - Set-ADServerSettings
+ - Get-Command
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Şirket içi Exchange bağlayıcısı yazılım yükleme paketini indirme
 

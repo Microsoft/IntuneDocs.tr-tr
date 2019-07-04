@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: faceee883194dbbdcec83f282806035ffc0432d1
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 1fda4268e66703c8bd2132c9af22fed52f1791b1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174171"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548966"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Öğretici: Apple'nın Kurumsal cihaz kaydı özellikleri, ıntune'da iOS cihazlarını kaydetmek için Apple İş Yöneticisi'ni (ABM) kullanın.
 Cihaz kaydı özellikleri Apple İş Yöneticisi'nde hesabından cihazların kaydını basitleştirir. Intune, Apple'nın eski cihaz kayıt programı (DEP) portalında da destekler, ancak yeni Apple İşletme Yöneticisi ile başlangıç yapmanız önerilir. Microsoft Intune ve Apple Kurumsal cihaz kaydı ile cihazlar, kullanıcı cihazda ilk açtığı anda güvenli bir şekilde otomatik olarak kaydedilir. Bu nedenle, her cihazı ayrı ayrı ayarlama yapmak zorunda kalmadan çok sayıda kullanıcı cihazlara gönderebilirsiniz. 
@@ -53,7 +53,7 @@ Cihaz kaydı belirtecini oluşturmak için ABM veya DEP portalını kullanın. A
 
 4. Apple’ın Dağıtım Programı portalını açmak için **Apple’ın Aygıt Kayıt Programı için bir belirteç oluştur**’u seçin ve şirket Apple Kimliğinizle oturum açın. DEP belirtecinizi yenilemek için de bu Apple kimliğini kullanabilirsiniz.
 
-5.  Apple’ın [Dağıtım Programları portalında](https://deploy.apple.com), **Aygıt Kayıt Programı** için **Kullanmaya Başla**’yı seçin. İşleminizi yer alan aşağıdaki adımları biraz farklı olabilir [Apple İşletme Yöneticisi](https://business.apple.com).
+5. Apple’ın [Dağıtım Programları portalında](https://deploy.apple.com), **Aygıt Kayıt Programı** için **Kullanmaya Başla**’yı seçin. İşleminizi yer alan aşağıdaki adımları biraz farklı olabilir [Apple İşletme Yöneticisi](https://business.apple.com).
 
 4. **Sunucuları Yönet** sayfasında **MDM Sunucusu Ekle**’yi seçin.
 

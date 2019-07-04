@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5b4b6cc2cd05564f842fbf95521086a054cfac2
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f0a8b0b633f64a2ed6e3e14d5d884df80342067a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528073"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545475"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Android iş profili ile cihaz kaydetme
 
@@ -33,7 +33,7 @@ ms.locfileid: "67528073"
 
 ## <a name="create-work-profile-and-enroll-device"></a>İş profili oluşturma ve Cihazınızı kaydetme
 
-1.  Android Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın. Ücretsiz uygulamayı henüz yüklemediyseniz, [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den indirin ve yükleyin.
+1. Android Şirket Portalı’ndaki **Hoş Geldiniz** ekranında **Oturum aç**’a dokunun ve ardından iş veya okul hesabınızla oturum açın. Ücretsiz uygulamayı henüz yüklemediyseniz, [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)’den indirin ve yükleyin.
 
     ![Android Şirket Portalı uygulaması Hoş Geldiniz ekranı](./media/and-enroll-0-welcome-screen.png)
 
@@ -41,15 +41,15 @@ ms.locfileid: "67528073"
 
     ![Şirket Erişimi Kurulum ekranı](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  **Neden iş profili oluşturmalıyım?** ekranında, iş profili oluşturmanın size sağlayacaklarını okuyun ve ardından **DEVAM**’a dokunun.
+3. **Neden iş profili oluşturmalıyım?** ekranında, iş profili oluşturmanın size sağlayacaklarını okuyun ve ardından **DEVAM**’a dokunun.
 
     ![Neden iş profili oluşturmalıyım?](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Şirketinizin destek biriminin cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirin ve **DEVAM**’a dokunun.
+4. Şirketinizin destek biriminin cihazınızda neleri görebileceğini ve neleri göremeyeceğini içeren listeyi gözden geçirin ve **DEVAM**’a dokunun.
 
     ![Şirketinizin destek biriminin cihazınızda görebilecekleri ve göremeyecekleri](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  **Sırada ne var?** ekranında, kayıt sırasında ne olduğunu okuyun ve **KAYDET**’e dokunun.
+5. **Sırada ne var?** ekranında, kayıt sırasında ne olduğunu okuyun ve **KAYDET**’e dokunun.
 
     ![Sırada ne var ekranı](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

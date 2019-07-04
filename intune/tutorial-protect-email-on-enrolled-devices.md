@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530735"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548036"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Öğretici: Yönetilen cihazlarda Exchange Online e-postaları koruma
 Cihaz uyumluluk ilkelerini koşullu erişimle, iOS cihazları yalnızca Intune tarafından yönetildikleri, Exchange Online e-posta erişebildiğinden emin olmak için kullanarak ve bir onay e-postası uygulamayı kullanma hakkında bilgi edinin. 
@@ -53,7 +53,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 4. **Platform** olarak **iOS**’u seçin. 
 5. **Ayarlar** > **E-posta**’yı seçin. 
      
-    1.  **Mobil cihazların yönetilen bir e-posta profiline sahip olmasını gerektir** ayarını **Gerektir** olarak belirleyin.
+    1. **Mobil cihazların yönetilen bir e-posta profiline sahip olmasını gerektir** ayarını **Gerektir** olarak belirleyin.
     2. **Tamam**’ı seçin.
 
     ![E-posta uyumluluk ilkesini yönetilen e-posta profili gerektirecek şekilde ayarlama](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
@@ -77,7 +77,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 ## <a name="create-the-conditional-access-policy"></a>Koşullu erişim ilkesi oluşturma
 Artık Intune'a kaydolana ve Exchange Online'a erişebilmesi bizim Intune uyumluluk ilkesiyle uyumlu için tüm cihaz platformlarını gerektiren bir koşullu erişim ilkesi oluşturacağız. Ayrıca e-posta erişimi için Outlook uygulamasını gerekli kılacağız. Koşullu erişim ilkeleri, Azure AD portalından veya Intune portalında yapılandırılabilir özelliktedir. Zaten Intune portalında olduğumuz için ilkeyi burada oluşturalım.
 1. Intune'da seçin **koşullu erişim** > **ilkeleri** > **yeni ilke**.
-1.  **Ad** olarak **Office 365 e-postaları için test ilkesi**’ni seçin. 
+1. **Ad** olarak **Office 365 e-postaları için test ilkesi**’ni seçin. 
 3. **Atamalar** altında **Kullanıcılar ve gruplar**’ı seçin. **Dahil et** sekmesinde **Tüm Kullanıcılar**’ı ve daha sonra **Bitti**’yi seçin.
 
 4. **Atamalar** altında **Bulut uygulamaları**’nı seçin. Office 365 Exchange Online e-postalarını korumak istediğimiz için şu adımları izleyeceğiz:

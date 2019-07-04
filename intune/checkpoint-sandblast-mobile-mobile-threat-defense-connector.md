@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 7953fece6edad8a7fb3a0b46b1056c798c76c31e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530683"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547089"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense bağlayıcısı ile Intune
 
@@ -45,11 +45,11 @@ Burada sık karşılaşılan bazı senaryolar verilmiştir:
 
 Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algılandığında, tehdit çözülene kadar cihazları engelleyebilirsiniz:
 
--   Şirket e-postasına bağlanma
+- Şirket e-postasına bağlanma
 
--   OneDrive İş uygulaması ile şirket dosyalarını eşitleme
+- OneDrive İş uygulaması ile şirket dosyalarını eşitleme
 
--   Şirket uygulamalarına erişme
+- Şirket uygulamalarına erişme
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
@@ -85,18 +85,18 @@ Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı ol
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
--   **Android 4.1 ve üzeri**
+- **Android 4.1 ve üzeri**
 
--   **iOS 8 ve üzeri**
+- **iOS 8 ve üzeri**
 
 ## <a name="pre-requisites"></a>Ön koşullar
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune aboneliği
+- Microsoft Intune aboneliği
 
--   Check Point SandBlast Mobile Threat Defense aboneliği
-    -   Daha fazla bilgi için bkz. [CheckPoint SandBlast web sitesi](https://www.checkpoint.com/).
+- Check Point SandBlast Mobile Threat Defense aboneliği
+    - Daha fazla bilgi için bkz. [CheckPoint SandBlast web sitesi](https://www.checkpoint.com/).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804433"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545228"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Açık Kaynak Kullanım Kuralları
 
@@ -30,7 +30,7 @@ Biz **Katkıları teşvik edin ve istediğiniz** topluluk (kullanıcılar, müş
     5. Çekme isteği oluşturun.
     
     **2. seçenek: Makaleyi bu depoda bulun ve güncelleştirme**  
-    1.  İçinde çoğu konulardır `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Bu klasörde, konu adı için arama yapın `troubleshoot-policies-in-microsoft-intune`. 
+    1. İçinde çoğu konulardır `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Bu klasörde, konu adı için arama yapın `troubleshoot-policies-in-microsoft-intune`. 
     2. Bağlantıyı seçin ve Kalem simgesine tıklayın. Kalem simgesinin üzerine geldiğinizde göreceğiniz **bu dosyayı Düzenle** araç ipucu. 
     3. Değişikliklerinizi yapın ve ardından **işleme** yaptığınız değişiklikleri. 
     4. Çekme isteği oluşturun. 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 8144acb25c1ef13f7f2ed5c7deac5eb679639111
+ms.sourcegitcommit: 95f32e381d14f0a75465b6103af2665fccb2de16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512114"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67539047"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -47,9 +47,10 @@ Bilgilerini içeren CSV dosyasını içeri aktararak Windows Autopilot cihazlar�
 
     ![Windows Autopilot cihazlarının ekran görüntüsü](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. **Windows Autopilot cihazları ekle** altında, eklemek istediğiniz cihazları listeleyen bir CSV dosyasına gözatın. CSV dosyası seri numaralarını, Windows ürün kimlikleri, donanım karmaları ve isteğe bağlı grubu etiketleri, atanan kullanıcıların ve cihazların sipariş kimlikleri listelemelisiniz. Listede en fazla 500 satır olabilir. Üst bilgi ve aşağıda gösterilen satırı biçimi kullanın:
+2. **Windows Autopilot cihazları ekle** altında, eklemek istediğiniz cihazları listeleyen bir CSV dosyasına gözatın. CSV dosyası seri numaralarını, Windows ürün kimlikleri, donanım karmaları ve isteğe bağlı grubu etiketleri listelemelisiniz. Listede en fazla 500 satır olabilir. Üst bilgi ve aşağıda gösterilen satırı biçimi kullanın:
 
-    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID``<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`</br>
+    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Windows Autopilot cihazları ekleme ekran görüntüsü](media/enrollment-autopilot/autopilot-import-device2.png)
 

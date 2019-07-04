@@ -18,51 +18,51 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c92489b00bd8d504b89fe0cc590b1d1b27bb5dde
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b52fdb40f23e1756edb3c656c67d3d9d8c39ae51
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61500992"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546471"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>Şirket Portalı uygulamasını yükler ve Mac OS X cihazınızı Intune’a kaydederseniz ne olur?
 
 Şirket Portalı uygulamasını yükleyip Mac OS X cihazınızı Intune’a kaydettiğinizde, Şirket Portalı uygulamasını kullanarak şunları yapabilirsiniz:
 
--   Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz.
+- Şirket ağına, e-postalarınıza ve iş dosyalarınıza erişebilirsiniz.
 
--   Şirket Portalı üzerinden şirket uygulamalarını alabilirsiniz.
+- Şirket Portalı üzerinden şirket uygulamalarını alabilirsiniz.
 
--   Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına uzaktan sıfırlayabilirsiniz.
+- Telefonunuz kaybolur veya çalınırsa fabrika ayarlarına uzaktan sıfırlayabilirsiniz.
 
--   Şirket e-posta hesabınızı otomatik olarak oluşturabilirsiniz.
+- Şirket e-posta hesabınızı otomatik olarak oluşturabilirsiniz.
 
 Cihazınızı Intune’a kaydettikten sonra, şirketinizin destek biriminin cihazınızdaki şirket bilgilerinin korumasına yardımcı olmak için onlara cihazınızı yönetme izni vermiş olursunuz.
 
 Cihazınız kaydolduğunda, şirketinizin destek birimi şunları yapabilir:
 
--   Cihazınız kaybolur veya çalınırsa, cihazı üretici varsayılan ayarlarına sıfırlayabilir.
+- Cihazınız kaybolur veya çalınırsa, cihazı üretici varsayılan ayarlarına sıfırlayabilir.
 
--   Yüklenmiş olan, şirketle ilgili tüm verileri ve iş uygulamalarını kaldırabilir. Kişisel ayarlarınız ve verileriniz kaldırılmaz.
+- Yüklenmiş olan, şirketle ilgili tüm verileri ve iş uygulamalarını kaldırabilir. Kişisel ayarlarınız ve verileriniz kaldırılmaz.
 
--   Cihazda bir parola veya PIN kodu belirlemenizi gerektirebilir.
+- Cihazda bir parola veya PIN kodu belirlemenizi gerektirebilir.
 
--   Hüküm ve koşulları kabul etmenizi gerektirebilir.
+- Hüküm ve koşulları kabul etmenizi gerektirebilir.
 
--   Hassas şirket verilerinin fotoğrafını çekmenizi engellemek için cihaz kameranızı devre dışı bırakın.
+- Hassas şirket verilerinin fotoğrafını çekmenizi engellemek için cihaz kameranızı devre dışı bırakın.
 
--   Cihazınızda web tarayıcısını etkinleştirebilir veya devre dışı bırakabilir.
+- Cihazınızda web tarayıcısını etkinleştirebilir veya devre dışı bırakabilir.
 
--   iCloud yedeklemesini etkinleştirebilir veya devre dışı bırakabilir.
+- iCloud yedeklemesini etkinleştirebilir veya devre dışı bırakabilir.
 
--   iCloud'a belge eşitlemeyi etkinleştirebilir veya devre dışı bırakabilir.
+- iCloud'a belge eşitlemeyi etkinleştirebilir veya devre dışı bırakabilir.
 
--   iCloud'a Fotoğraf Akışını etkinleştirebilir veya devre dışı bırakabilir.
+- iCloud'a Fotoğraf Akışını etkinleştirebilir veya devre dışı bırakabilir.
 
--   Cihazınızda veri dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Veri dolaşımına izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
+- Cihazınızda veri dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Veri dolaşımına izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
 
--   Cihazınızda ses dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Ses dolaşımına izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
+- Cihazınızda ses dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Ses dolaşımına izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
 
--   Dolaşım modundayken, cihazınızda otomatik dosya eşitlemesini etkinleştirebilir veya devre dışı bırakabilir. Otomatik dosya eşitlemesine izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
+- Dolaşım modundayken, cihazınızda otomatik dosya eşitlemesini etkinleştirebilir veya devre dışı bırakabilir. Otomatik dosya eşitlemesine izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
 
 Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041474"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548324"
 ---
 # <a name="develop-a-support-plan"></a>Bir destek planı geliştirme
 
 Bir Intune destek planınızın olması, Intune ile ilgili sorunları daha etkili bir şekilde tanımlayıp çözmenize yardımcı olabilir. Bunun karşılığında kullanıcılarınızın genel Intune deneyimi iyileşir. Intune destek planınızı geliştirirken dikkate almanız gereken bazı sorular şunlardır:
 
--   Intune desteğini sağlamaktan hangi ekipler sorumlu olacak?
+- Intune desteğini sağlamaktan hangi ekipler sorumlu olacak?
 
--   Intune desteği sağlamak için hangi süreç kullanılacak?
+- Intune desteği sağlamak için hangi süreç kullanılacak?
 
--   Intune destek eğitimini nasıl sağlamayı planlıyorsunuz?
+- Intune destek eğitimini nasıl sağlamayı planlıyorsunuz?
 
--   Intune dağıtım aşamasının başlarında destek ekibini dahil etme konusunda ne gibi fırsatlar var?
+- Intune dağıtım aşamasının başlarında destek ekibini dahil etme konusunda ne gibi fırsatlar var?
 
 Her alanı daha ayrıntılı bir şekilde inceleyeceğiz.
 
@@ -50,23 +50,23 @@ Katman 1 normalde ilk destek düzeyidir ve genellikle destek istekleri için kul
 
 İlk ürün piyasaya çıkarma aşamalarında, üç katman birlikte köprü veya Skype çağrısına katılabilir. Bir kuruluşun kendi BT destek veya yardım masası iş akışlarını nasıl uygulayabileceğine ilişkin bir örnek aşağıda verilmiştir:
 
-1.  Son kullanıcı yaşadığı kayıt sorunu nedeniyle BT destek veya yardım masası katman 1 ile irtibat kurar.
+1. Son kullanıcı yaşadığı kayıt sorunu nedeniyle BT destek veya yardım masası katman 1 ile irtibat kurar.
 
-2.  BT destek veya yardım masası katman 1, sorunun temel nedenini belirleyemez ve konuyu katman 2’ye iletir.
+2. BT destek veya yardım masası katman 1, sorunun temel nedenini belirleyemez ve konuyu katman 2’ye iletir.
 
-3.  BT destek veya yardım masası katman 2, sorunu araştırmasına rağmen çözemez ve araştırmaya yardımcı olması için ek bilgi sağlayarak konuyu katman 3’e iletir.
+3. BT destek veya yardım masası katman 2, sorunu araştırmasına rağmen çözemez ve araştırmaya yardımcı olması için ek bilgi sağlayarak konuyu katman 3’e iletir.
 
-4.  BT desteği veya yardım masası katman 3; konuyu daha derinlemesine araştırır, sorunun temel nedenini belirler ve çözümü katman 2 ve 1'e bildirir.
+4. BT desteği veya yardım masası katman 3; konuyu daha derinlemesine araştırır, sorunun temel nedenini belirler ve çözümü katman 2 ve 1'e bildirir.
 
-5.  Ardından BT destek/yardım masası katman 1 müşteriyle irtibata geçerek sorunu giderir.
+5. Ardından BT destek/yardım masası katman 1 müşteriyle irtibata geçerek sorunu giderir.
 
 Bu tür bir yaklaşım, özellikle Intune’un piyasaya çıkışının erken aşamalarında pek çok yarar sağlar, örneğin:
 
--   Teknolojiyi öğrenme ve geliştirme konusunda yardım.
+- Teknolojiyi öğrenme ve geliştirme konusunda yardım.
 
--   Sorunları ve çözümleri hızlı bir şekilde tanımlama.
+- Sorunları ve çözümleri hızlı bir şekilde tanımlama.
 
--   Genel kullanıcı deneyimini geliştirir.
+- Genel kullanıcı deneyimini geliştirir.
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>Intune destek eğitimini nasıl sağlamayı planlıyorsunuz?
 
@@ -74,15 +74,15 @@ Eğitimin uygun bir düzeyde ve her destek katmanının kendi sorumluluklarını
 
 Intune destek eğitim gündemine bir örnek aşağıda verilmiştir.
 
--   Intune destek planı incelemesi
+- Intune destek planı incelemesi
 
--   Intune genel bakışı
+- Intune genel bakışı
 
--   Yaygın sorunları giderme
+- Yaygın sorunları giderme
 
--   Araçlar ve kaynaklar
+- Araçlar ve kaynaklar
 
--   Soru ve Cevap
+- Soru ve Cevap
 
 [Intune belgeleri](https://docs.microsoft.com/intune/); Intune’a genel bakış, ayrıntılı özellik açıklamaları ve bazı sorun giderme bilgileri sağlar. [Intune forumu](https://social.technet.microsoft.com/Forums/home), Intune belgelerinde bahsedilmeyen konu ve sorulara yönelik topluluk tabanlı bir kaynaktır.
 

@@ -18,32 +18,32 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5ebf8d43bd18629d38be24929b3df5c12a7e244b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505905"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546523"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune Şirket Portalı web sitesini kullanma
 Yönetilen cihazlarınızı görüntülemek, düzenlemek, yeni cihaz eklemek veya cihaz kaldırmak için [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) kullanın.
 
 Şirket Portalı web sitesinde gerçekleştirebileceğiniz eylemler şunlardır:
 
--   [Cihazınızı yeniden adlandırma](rename-your-device-cpwebsite.md)
+- [Cihazınızı yeniden adlandırma](rename-your-device-cpwebsite.md)
 
--   [Cihazınızı kaldırma](remove-your-device-cpwebsite.md)
+- [Cihazınızı kaldırma](remove-your-device-cpwebsite.md)
 
--   [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
+- [Cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)
 
--   [Cihaz geçiş kodunuzu sıfırlama](reset-your-passcode-cpwebsite.md)
+- [Cihaz geçiş kodunuzu sıfırlama](reset-your-passcode-cpwebsite.md)
 
--   [Cihazı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
+- [Cihazı uzaktan kilitleme](remote-lock-your-device-cpwebsite.md)
 
--   İletişim bilgilerini siz yapılandırdıysanız, şirketinizin destek biriminin iletişim bilgilerini bulun
+- İletişim bilgilerini siz yapılandırdıysanız, şirketinizin destek biriminin iletişim bilgilerini bulun
 
--   Uyumluluk durumunu denetleme
+- Uyumluluk durumunu denetleme
 
--   Bir kişisel bilgisayarı uzaktan yönetme
+- Bir kişisel bilgisayarı uzaktan yönetme
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040903"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549145"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows bilgisayarlar için uzaktan yardım isteme ve sağlama
 
@@ -79,13 +79,13 @@ Uzaktan yardım oturumu sırasında, uzak bilgisayarı denetlemek için tüm sa�
 ## <a name="remotely-restart-a-windows-pc"></a>Windows bilgisayarını uzaktan yeniden başlatma
 Kullanıcıların sorunlarına yardımcı olurken, bilgisayarlarını ara sıra uzaktan yeniden başlatmanız gerekebilir. Bir Windows bilgisayarı uzaktan yeniden başlatmak için aşağıdaki adımları kullanın.
 
-1.  [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar**’ı (veya yeniden başlatmak istediğiniz bilgisayarı içeren başka bir grubu) seçin.
+1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** &gt; **Tüm Cihazlar**’ı (veya yeniden başlatmak istediğiniz bilgisayarı içeren başka bir grubu) seçin.
 
-2.  Bir veya birden çok bilgisayar seçin ve ardından **Uzak Görevler** &gt; **Bilgisayarı Yeniden Başlat**’ı seçin.
+2. Bir veya birden çok bilgisayar seçin ve ardından **Uzak Görevler** &gt; **Bilgisayarı Yeniden Başlat**’ı seçin.
 
-3.  Görev durumunu görüntülemek için, sayfanın sağ alt köşesinde **Uzak Görevler**'i seçin.
+3. Görev durumunu görüntülemek için, sayfanın sağ alt köşesinde **Uzak Görevler**'i seçin.
 
-4.  **Görev Durumu** iletişim kutusunda, geçerli uzak görevler, görev durumu, cihaz adı ve bildirilen hataları gözden geçirin.
+4. **Görev Durumu** iletişim kutusunda, geçerli uzak görevler, görev durumu, cihaz adı ve bildirilen hataları gözden geçirin.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 

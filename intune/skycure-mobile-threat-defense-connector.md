@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 6480c6fb412c12e228b8bc3647045cf15da531e1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044081"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548028"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile bağlayıcısı
 
 Symantec Endpoint Protection Mobile (SEP Mobile) Intune ile tümleşen mobil tehdit savunması çözümü tarafından yapılan risk değerlendirmesine dayalı koşullu erişimi kullanarak şirket kaynaklarına mobil cihaz erişimini kontrol edebilirsiniz. Risk, SEP Mobile çalıştıran cihazlardan toplanan ve aşağıdakileri içeren telemetriye göre değerlendirilir:
 
--   Fiziksel savunma
+- Fiziksel savunma
 
--   Ağ savunması
+- Ağ savunması
 
--   Uygulama savunması
+- Uygulama savunması
 
--   Güvenlik açıkları savunması
+- Güvenlik açıkları savunması
 
 Intune cihaz uyumluluk ilkeleri aracılığıyla SEP Mobile risk değerlendirmesini ve sonra izin vermek veya uyumsuz cihaz algılanan tehditlere dayalı olarak şirket kaynaklarına erişimi engellemek için koşullu erişim ilkelerini kullanın.
 
@@ -48,9 +48,9 @@ Cihaz uyumsuz bulunursa Exchange Online ve SharePoint Online gibi kaynaklara eri
 
 Intune, SEP Mobile ile iki tümleştirme modunu destekler:
 
--   **Temel kurulum**, Intune’daki cihazlar için SEP Mobile görünürlüğüne olanak tanıyan salt okunur modudur.
+- **Temel kurulum**, Intune’daki cihazlar için SEP Mobile görünürlüğüne olanak tanıyan salt okunur modudur.
 
--   **Tam tümleştirme**, SEP Mobile’ın Intune’a cihazın risk ve güvenlik olayı ayrıntılarını raporlamasına olanak tanır.
+- **Tam tümleştirme**, SEP Mobile’ın Intune’a cihazın risk ve güvenlik olayı ayrıntılarını raporlamasına olanak tanır.
 
 ## <a name="sample-scenarios"></a>Örnek senaryolar
 
@@ -60,11 +60,11 @@ Burada sık karşılaşılan bazı senaryolar verilmiştir:
 
 Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algılandığında, tehdit çözülene kadar cihazları engelleyebilirsiniz:
 
--   Şirket e-postasına bağlanma
+- Şirket e-postasına bağlanma
 
--   OneDrive İş uygulaması ile şirket dosyalarını eşitleme
+- OneDrive İş uygulaması ile şirket dosyalarını eşitleme
 
--   Şirket uygulamalarına erişme
+- Şirket uygulamalarına erişme
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
@@ -100,17 +100,17 @@ Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
--   **Android 4.1 ve üzeri**
+- **Android 4.1 ve üzeri**
 
--   **iOS 8 ve üzeri**
+- **iOS 8 ve üzeri**
 
 ## <a name="pre-requisites"></a>Ön koşullar
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune aboneliği
+- Microsoft Intune aboneliği
 
--   Symantec Endpoint Protection Mobile aboneliği
+- Symantec Endpoint Protection Mobile aboneliği
 
 Daha fazla bilgi için [Symantec web sitesini](https://www.skycure.com/skycure-microsoft-integration/) gözden geçirin.
 

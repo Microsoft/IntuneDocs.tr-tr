@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc83a5dbcf4d4c8bfd2c9714da4e3a213c7752e3
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 328ec3111aae5f8363f2743d423a56eafc47d765
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528932"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546263"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows cihazınızı el ile eşitleme
 
@@ -41,9 +41,9 @@ Aşağıdakiler dahil olmak üzere tüm Windows cihazlar, cihazın Ayarlar uygul
 ## <a name="sync-directly-from-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasından doğrudan eşitleme
 Creator’s Update (1703) ve üzerini çalıştıran Windows 10 cihazları el ile eşitlemek için bu adımları tamamlayın.
 
-1.  Cihazınızda Şirket Portalı uygulamasını açın.
+1. Cihazınızda Şirket Portalı uygulamasını açın.
 
-2.  **Ayarlar** > **Eşitle**’yi seçin.
+2. **Ayarlar** > **Eşitle**’yi seçin.
 
     ![Şirket Portalı uygulamasının Ayarlar bölümünün vurgulandığı giriş sayfasının ekran görüntüsü](./media/RS1_homePage_settings_04.png)  
     
@@ -96,7 +96,7 @@ Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ve Windows Phone 8.1 c
 
 #### <a name="work-access-steps"></a>İş erişimi adımları
 
-1.  **İş erişimi**’ne tıklayın.
+1. **İş erişimi**’ne tıklayın.
 
     ![Hesap türü olarak iş yeri erişimini seçme](./media/win10pc-sync-3-work-access.png)
 
@@ -128,12 +128,12 @@ Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ve Windows Phone 8.1 c
        ![Eşitleme simgesini seçme](./media/win10m-sync-4-tap-sync.png)  
 ### <a name="microsoft-hololens"></a>Microsoft HoloLens  
 Bu yönergeler, Windows 10 Yıldönümü Güncelleştirmesi (RS1 olarak da bilinir) çalıştıran HoloLens cihazlarda geçerlidir. 
-1.  Cihazınızda Ayarlar uygulamasını açın.  
+1. Cihazınızda Ayarlar uygulamasını açın.  
 
-2.  **Hesaplar** > **İş Erişimi**’ni seçin.  
+2. **Hesaplar** > **İş Erişimi**’ni seçin.  
     ![Hesaplar bağlantısının vurgulandığı HoloLens ayarlar uygulamasının ekran görüntüsü](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-3.  Bağlı hesabınızı ve ardından **Eşitle**’yi seçin. ![Eşitle düğmesinin vurgulandığı HoloLens ayarlar uygulamasının ekran görüntüsü](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+3. Bağlı hesabınızı ve ardından **Eşitle**’yi seçin.  ![Eşitle düğmesinin vurgulandığı HoloLens ayarlar uygulamasının ekran görüntüsü](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
 ### <a name="windows-phone-81"></a>Windows Phone 8.1
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045985"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549280"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Mobil cihaz yönetimi kullanım örneği senaryolarını belirleme
 
@@ -33,9 +33,9 @@ Kuruluşunuzun Intune kullanım örneği senaryolarının yanı sıra kuruluş g
 ## <a name="device-ownership"></a>Cihaz sahipliği
 Dağıtımınız için ana kullanım örneği senaryolarını tanımlamanıza yardımcı olmak üzere kuruluşunuzun Intune dağıtım hedeflerine ve amaçlarına başvurarak başlayabilirsiniz. Intune dağıtım planınız kapsamında, aşağıdaki soruları yanıtlayın:
 
--   Şirkete ait cihazları desteklemeyi planlıyor musunuz?
+- Şirkete ait cihazları desteklemeyi planlıyor musunuz?
 
--   Kişisel cihazları (KCG) desteklemeyi planlıyor musunuz?
+- Kişisel cihazları (KCG) desteklemeyi planlıyor musunuz?
 
 Bunlar ya bir/ya ötekisi tarzı seçenekler değildir. Kuruluş hedeflerinize ulaşmak için her iki cihaz sahiplik türünü de desteklemeniz gerektiği ortaya çıkabilir. Alt kullanım örnekleri, değişik cihaz yönetim ilkelerini nerelerde uygulayacağınızı netleştirmeye yardımcı olur.
 
@@ -43,11 +43,11 @@ Bunlar ya bir/ya ötekisi tarzı seçenekler değildir. Kuruluş hedeflerinize u
 
 Her kullanım örneği senaryosunun alt kullanım örnekleri de içerip içermediğini belirleyin. Örneğin, kuruluşunuz, aşağıdaki kullanıcı türüne veya cihaz rolüne bağlı olarak ek alt kullanım örnekleri içeren bir kurumsal kullanım örneği senaryosunu desteklemek için gerekenleri belirlemiş olabilir:
 
--   Bilgi çalışanı
+- Bilgi çalışanı
 
--   Yönetici
+- Yönetici
 
--   Bilgi noktası
+- Bilgi noktası
 
 Kullanım örneği ve alt kullanım örneği senaryolarına birkaç örnek aşağıda verilmiştir:
 

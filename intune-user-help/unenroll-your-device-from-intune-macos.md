@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6e7290820134ffba2638c313adb4297d7da29c3b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505463"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545946"
 ---
 # <a name="unenroll-your-macos-device-from-company-portal"></a>Şirket portalı macOS cihazınızın kaydını silme
 
@@ -31,26 +31,26 @@ MacOS cihazınızın Intune kaydını sildiğinizde, cihazınız artık şirket 
 
 macOS cihazınızın yönetim kaydını silmek için bu adımları izleyin:
 
-1.  MacOS için şirket portalında oturum açın.
-2.  Git **cihazları** ve kaydını kaldırmak istediğiniz cihazı seçin.
+1. MacOS için şirket portalında oturum açın.
+2. Git **cihazları** ve kaydını kaldırmak istediğiniz cihazı seçin.
 
-3.  Üç nokta menüsü simgesi seçin > **Kaldır**.
-4.  Bir onay iletisi görüntülenir. Seçin **Kaldır** cihazınızın kaydını silmek için. 
+3. Üç nokta menüsü simgesi seçin > **Kaldır**.
+4. Bir onay iletisi görüntülenir. Seçin **Kaldır** cihazınızın kaydını silmek için. 
 
 Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
--   Cihazınız Şirket Portalı’nda gösterilmez.
+- Cihazınız Şirket Portalı’nda gösterilmez.
 
--   Şirket Portalı’ndan uygulama yükleyemezsiniz.
+- Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
--   Cihazı eklediğinizde değiştirilmiş olan ayarların (parola uzunluğu gibi) hiçbiri artık geçerli değildir.
+- Cihazı eklediğinizde değiştirilmiş olan ayarların (parola uzunluğu gibi) hiçbiri artık geçerli değildir.
 
--   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
+- Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
 
--   Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
+- Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
 
--   Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
+- Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
 
--   Şirket e-posta erişimi cihazdan kaldırılabilir.
+- Şirket e-posta erişimi cihazdan kaldırılabilir.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

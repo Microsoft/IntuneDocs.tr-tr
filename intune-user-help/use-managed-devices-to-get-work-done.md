@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 798ea14529c0cbf44a0530f1a9a16507b14d7397
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2c0d3484311d044842daf6718b306d45fc93edf2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527826"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545940"
 ---
 # <a name="enroll-device-for-access-to-work-or-school-resources"></a>İş veya Okul kaynaklarına erişim için Cihazınızı kaydetme
 Cihazınızı kaydetme ve e-posta ve uygulamalarına erişmesini almak için Intune Şirket portalı uygulaması veya Microsoft Intune uygulama yüklemeniz gerekir. Kaydolduğunuzda, kuruluşunuz, parola, PIN ve şifreleme gibi yapılandırılmış temel yönetim ilkeleri, cihazınıza uygulanır. Cihaz ayarlarınızı tüm kuruluşunuzun gereksinimlerini karşılayan sonra iş bilgilerinize hemen her yerden güvenli bir şekilde erişebilirsiniz.  
@@ -53,13 +53,13 @@ Cihazınız kaydedildikten sonra kuruluşunuzun destek kişiler yalnızca çalı
 Şirkete ait Android cihazlar için Microsoft Intune uygulamasıdır.  
 
 ## <a name="what-kind-of-devices-can-you-enroll-with-company-portal"></a>Ne tür cihazlar Şirket portalı ile kaydolabilir mi?
--   iOS kullanan Apple cihazları (iPhone ve iPad gibi) ve macOS (MacBook ve iMac gibi)
--   Android cihazlar
--   Windows cihazları
-    -   Windows 10 Mobile
-    -   Windows 10 Masaüstü
-    -   Windows Phone 8.1
-    -   Windows 8.1
+- iOS kullanan Apple cihazları (iPhone ve iPad gibi) ve macOS (MacBook ve iMac gibi)
+- Android cihazlar
+- Windows cihazları
+    - Windows 10 Mobile
+    - Windows 10 Masaüstü
+    - Windows Phone 8.1
+    - Windows 8.1
 
 ## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>Ne tür cihazlar Intune uygulamayla kaydolabilir mi?  
 Kuruluşunuz bu uygulamayla kullanabilmeniz için ayarlanmış şirkete ait Android cihazlarını kaydedebilir. Uygulaması, Android 6.0 ve sonraki sürümleri destekler. 

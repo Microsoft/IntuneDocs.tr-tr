@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494581"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548370"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1\. Aşama: Microsoft Intune mobil cihaz Yönetimi (MDM) için hazırlama
 
@@ -31,30 +31,30 @@ Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz y�
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>Ne tür cihazlar yönetmeniz gerekiyor?
 
--   Hangi [platformları](supported-devices-browsers.md) desteklemeniz gerekiyor?
+- Hangi [platformları](supported-devices-browsers.md) desteklemeniz gerekiyor?
 
--   Desteklemeniz gereken cihazlar şirkete mi ait yoksa kişisel mi?
+- Desteklemeniz gereken cihazlar şirkete mi ait yoksa kişisel mi?
 
--   Ne tür bir bağlantı kullanıyorsunuz? Wi-Fi, hücresel, VPN?
+- Ne tür bir bağlantı kullanıyorsunuz? Wi-Fi, hücresel, VPN?
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>Kullanıcılarınızın yönetilen cihazlarda ne yapması gerekiyor?
 
--   Son kullanıcılarınıza uygulama sağlamanız gerekiyor mu?
+- Son kullanıcılarınıza uygulama sağlamanız gerekiyor mu?
 
--   Özel iş kolu uygulamaları kullanıyor musunuz? Yoksa yalnızca ortak mağaza uygulamalarına mı ihtiyacınız var?
+- Özel iş kolu uygulamaları kullanıyor musunuz? Yoksa yalnızca ortak mağaza uygulamalarına mı ihtiyacınız var?
 
--   E-posta hesapları sağlamanız gerekiyor mu?
+- E-posta hesapları sağlamanız gerekiyor mu?
 
 ### <a name="what-kinds-of-users"></a>Ne tür kullanıcılar var?
 
--   Tek bir cihazın kaç kullanıcısı olacak?
+- Tek bir cihazın kaç kullanıcısı olacak?
 
--   Hangi kullanım koşullarına ihtiyacınız var?
+- Hangi kullanım koşullarına ihtiyacınız var?
 
-    -   Hukuk departmanınızın bu konuya erkenden dahil olmasını sağlayın.
-    -   Ne tür bir yerelleştirme gerekli?
+    - Hukuk departmanınızın bu konuya erkenden dahil olmasını sağlayın.
+    - Ne tür bir yerelleştirme gerekli?
 
--   Kullanıcılar genel olarak teknoloji ve BT konusunda bilgi sahibi mi?
+- Kullanıcılar genel olarak teknoloji ve BT konusunda bilgi sahibi mi?
 
 ### <a name="what-is-your-device-security-policy"></a>Cihaz güvenlik ilkeniz nedir?
 
@@ -68,11 +68,11 @@ Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz y�
 
 - Hangi kimlik doğrulaması türlerini desteklemeniz gerekli? Sertifika tabanlı kimlik doğrulaması gerekiyorsa hangi tür sertifikaların sağlanması gerekir?
   - Intune, kaydedilen cihazlar için kaynak erişim profilleri ile sertifikalar sağlayabilir.
-  -   Ne tür bir Ortak Anahtar Altyapısı (PKI) desteklemeniz gerekli?
+  - Ne tür bir Ortak Anahtar Altyapısı (PKI) desteklemeniz gerekli?
   <br></br>
 - Cihaz veya uygulama düzeyinde Sanal Özel Ağ (VPN) desteklemeniz gerekiyor mu?
 
-  -   Intune, üçüncü taraf VPN sağlayıcıları için VPN yapılandırmaları sağlayabilir.
+  - Intune, üçüncü taraf VPN sağlayıcıları için VPN yapılandırmaları sağlayabilir.
   <br/><br/>
 - Kapalı kalma süresini önlemek üzere belirli gereksinimler için geçici özel durumlar yapılabilir mi? Yoksa erişimi olan cihazların her zaman tüm güvenlik gereksinimlerine uygun olması mı gerekir?
 

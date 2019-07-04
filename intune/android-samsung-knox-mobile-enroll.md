@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d07d9466cda86270898d0e54e8d50b358bcb1b84
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0c962085ce61f01613bfc04ef0c80699e6f5a3e8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494112"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547421"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -44,15 +44,15 @@ Knox Dağıtım Programı’nda yer alan yetkili satıcılardan cihaz satın al�
 ## <a name="prerequisites"></a>Önkoşullar
 
 KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirketinizi Samsung Knox portalına kaydetmeniz gerekir:
-1.  [KME Bölgenizde kullanılabilir olduğundan emin olun](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME üzerinde 55 ülkede kullanılabilir. Dağıtım yapacağınız ülkenin desteklendiğinden emin olun.
+1. [KME Bölgenizde kullanılabilir olduğundan emin olun](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME üzerinde 55 ülkede kullanılabilir. Dağıtım yapacağınız ülkenin desteklendiğinden emin olun.
 
-2.  [Desteklenen cihazlar](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME tüm Samsung cihazların Knox 2.4 Android kaydı için en az ve en az Knox 2.8 Android Kurumsal kayıt için kullanılabilir.
+2. [Desteklenen cihazlar](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME tüm Samsung cihazların Knox 2.4 Android kaydı için en az ve en az Knox 2.8 Android Kurumsal kayıt için kullanılabilir.
 
-3.  [Ağ gereksinimleri](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): Gerekli güvenlik duvarı ve ağ erişim kuralları, ağınızda izin emin olun.
+3. [Ağ gereksinimleri](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): Gerekli güvenlik duvarı ve ağ erişim kuralları, ağınızda izin emin olun.
 
-4.  [Bir Samsung hesabı için kaydolun](https://www2.samsungknox.com/en/user/register): Bir Samsung hesabı kaydetmek ve KME etkinleştirmek ve tüm Knox Kurumsal yetkilendirmeler tek bir yerden yönetmek için gereklidir.
+4. [Bir Samsung hesabı için kaydolun](https://www2.samsungknox.com/en/user/register): Bir Samsung hesabı kaydetmek ve KME etkinleştirmek ve tüm Knox Kurumsal yetkilendirmeler tek bir yerden yönetmek için gereklidir.
 
-5.  Kayıt gözden geçirin: Profilinizi tamamlandı ve gönderilen sonra uygulamanızın bir gözden geçirme Samsung gerçekleştirir ve hemen onaylar veya daha fazla izleme için bekleyen durum geçirir. Hesabınız onaylandıktan sonra diğer adımlara geçebilirsiniz.
+5. Kayıt gözden geçirin: Profilinizi tamamlandı ve gönderilen sonra uygulamanızın bir gözden geçirme Samsung gerçekleştirir ve hemen onaylar veya daha fazla izleme için bekleyen durum geçirir. Hesabınız onaylandıktan sonra diğer adımlara geçebilirsiniz.
 
 ## <a name="create-mdm-profile"></a>MDM profili oluşturma
 

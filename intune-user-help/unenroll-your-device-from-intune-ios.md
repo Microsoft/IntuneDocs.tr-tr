@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ce28c73ba6f63e90dcaf93d8d21d32dcc4c0dcf
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529505"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546591"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>iOS cihazınızı Intune’dan kaldırma
 
@@ -35,9 +35,9 @@ iOS cihazınızı Intune’dan kaldırdığınızda, cihazınız artık şirket 
 Cihazınızı Intune’dan kaldırmak için aşağıdaki adımları kullanın veya bu videoyu izleyin:
 
 
-1.  Şirket Portalı uygulamasında **Cihazlar**’a dokunun ve kaydını kaldırmak istediğiniz cihazı seçin. Yalnızca bir cihazınız varsa **Cihazlar**’a dokunduğunuzda doğrudan cihaz ayrıntıları ekranına gidersiniz.
+1. Şirket Portalı uygulamasında **Cihazlar**’a dokunun ve kaydını kaldırmak istediğiniz cihazı seçin. Yalnızca bir cihazınız varsa **Cihazlar**’a dokunduğunuzda doğrudan cihaz ayrıntıları ekranına gidersiniz.
 
-2.  **YENİDEN ADLANDIR**’ın yanındaki üç nokta işaretine ve **Cihaz Kaldır** > **Kaldır** seçeneklerine dokunun.  
+2. **YENİDEN ADLANDIR**’ın yanındaki üç nokta işaretine ve **Cihaz Kaldır** > **Kaldır** seçeneklerine dokunun.  
 
     |![Şirket Portalı uygulaması Cihazlar ekranının kullanıcı Kaldır’a tıkladıktan sonra çıkan seçeneklerini gösteren ekran görüntüsü. “Cihazı Kaldır” düğmesi, “Fabrika Sıfırlaması” düğmesi ve “İptal Et” düğmesini gösterir.](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
@@ -46,23 +46,23 @@ Cihazınızı Intune’dan kaldırmak için aşağıdaki adımları kullanın ve
 
   Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
-  -   Cihazınız artık Şirket Portalı’nda gösterilmez.
+  - Cihazınız artık Şirket Portalı’nda gösterilmez.
 
-  -   Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
+  - Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
-  -   Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
+  - Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
 
-  -   Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
+  - Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
 
-  -   Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
+  - Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
 
-  -   Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
+  - Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
 
-  -   Şirket e-posta profilleri cihazdan kaldırılır.
+  - Şirket e-posta profilleri cihazdan kaldırılır.
 
-  -   Yalnızca e-posta için yapılandırılan cihazlar artık Şirket Portalı uygulamasında veya web sitesinde gösterilmez.
+  - Yalnızca e-posta için yapılandırılan cihazlar artık Şirket Portalı uygulamasında veya web sitesinde gösterilmez.
   
-  -   Uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.
+  - Uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Şirket Portalı uygulaması tarafından toplanan verileri kaldırma
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4180c6d803edc8cd9d9f3948466a5ceed22ae36
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530797"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558510"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Uygulama yükleme sorunlarını giderme
 
@@ -50,6 +50,18 @@ Uygulama yükleme hatası ayrıntıları, sorunu gösterecektir. Sorunu çözmek
 
 > [!Note]  
 > **Sorun giderme** bölmesine tarayıcınızı [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) adresine yönlendirerek de erişebilirsiniz.
+
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>Hedeflenen kullanıcı grubuna uygulama yüklemesi, cihaz ulaşmaz
+Aşağıdaki eylemleri uygulamaları yükleme sorunlarla göz önünde bulundurulması:
+- Uygulama ile dağıtılan uygulamayı şirket Portalı'nda görüntülenmiyorsa olun **kullanılabilir** amacı ve kullanıcı Şirket portalı uygulaması tarafından desteklenen cihaz türü erişiyor.
+- Windows KCG cihazlarında, kullanıcının cihaza bir iş hesabı eklemeye olmalıdır.
+- Kullanıcının AAD cihaz limitini olup olmadığını denetleyin:
+  1. Gidin [Azure Active Directory cihaz ayarları](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  2. İçin ayarlanan değer Not **kullanıcı başına en fazla cihaz**.
+  3. Gidin [Azure Active Directory Kullanıcıları](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  4. Etkilenen kullanıcıyı seçin ve tıklayın **cihazları**.
+  5. Kullanıcı kümesi sınırı ise artık gerekmeyen tüm eskimiş kayıtları silin.
+- İOS DEP cihazları için kullanıcı olarak listelendiğinden emin olun. **kullanıcı tarafından kaydedilmiş** Intune cihaz genel bakış dikey penceresinde. DI gösteriyorsa, bir yapılandırma ilkesi için Intune Şirket portalı dağıtın. Daha fazla bilgi için [Şirket portalı uygulamasını yapılandırma](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 uygulama yükleme sorunlarını giderme
 

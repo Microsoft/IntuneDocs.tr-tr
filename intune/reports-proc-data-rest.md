@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f638a8b3816e775c043077a7ac31b3320496744
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528389"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558544"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -43,10 +43,10 @@ Azure’da yerel bir uygulama oluşturun. Bu yerel uygulama, istemci uygulamadı
 1. Kiracınız için Azure portalında oturum açın. **Uygulama kayıtları** bölmesini açmak için **Azure Active Directory** > **Uygulama Kayıtları**’nı seçin.
 2. **Yeni uygulama kaydı**’nı seçin.
 3. Uygulama ayrıntılarını yazın.
-    1.  **Ad** kısmına, Intune Veri Ambarı İstemcisi gibi kolay bir ad yazın.
-    2.  **Uygulama türü** için **Yerel**’i seçin.
-    3.  **Oturum açma URL’si** için bir URL girin. Oturum açma URL’si belirli bir senaryoya bağlıdır ancak Postman kullanmayı planlıyorsanız `https://www.getpostman.com/oauth2/callback` yazın. Azure AD’de kimlik doğrularken istemci kimlik doğrulaması adımı için geri aramayı kullanacaksınız.
-4.  **Oluştur**’u seçin.
+    1. **Ad** kısmına, Intune Veri Ambarı İstemcisi gibi kolay bir ad yazın.
+    2. **Uygulama türü** için **Yerel**’i seçin.
+    3. **Oturum açma URL’si** için bir URL girin. Oturum açma URL’si belirli bir senaryoya bağlıdır ancak Postman kullanmayı planlıyorsanız `https://www.getpostman.com/oauth2/callback` yazın. Azure AD’de kimlik doğrularken istemci kimlik doğrulaması adımı için geri aramayı kullanacaksınız.
+4. **Oluştur**’u seçin.
 
      ![Intune veri ambarı istemci uygulaması](./media/reports-get_rest_data_client_overview.png)
 
@@ -56,21 +56,21 @@ Azure’da yerel bir uygulama oluşturun. Bu yerel uygulama, istemci uygulamadı
 
 Artık Azure’da tanımlanan bir uygulamanız var. Yerel uygulamadan Microsoft Intune API’sine erişim verin.
 
-1.  Yerel uygulamaya tıklayın. Uygulamanızın adı **Intune Veri Ambarı İstemcisi** benzeri bir ada sahip olmalıdır.
-2.  **Ayarlar** bölmesinde **Gerekli izinler**’i seçin
-3.  **Gerekli izinler** bölmesinde **Ekle**’yi seçin.
-4.  **Bir API Seç**’e tıklayın.
-5.  Web uygulaması adını aratın. Bu uygulamanın adı **Microsoft Intune API’sidir**.
-6.  Listeden uygulamaya tıklayın.
-7.  Seçin **seçin**.
-8.  **Microsoft Intune’dan veri ambarı bilgileri almak** için **Temsilcili İzinler**’e tıklayın.
+1. Yerel uygulamaya tıklayın. Uygulamanızın adı **Intune Veri Ambarı İstemcisi** benzeri bir ada sahip olmalıdır.
+2. **Ayarlar** bölmesinde **Gerekli izinler**’i seçin
+3. **Gerekli izinler** bölmesinde **Ekle**’yi seçin.
+4. **Bir API Seç**’e tıklayın.
+5. Web uygulaması adını aratın. Bu uygulamanın adı **Microsoft Intune API’sidir**.
+6. Listeden uygulamaya tıklayın.
+7. Seçin **seçin**.
+8. **Microsoft Intune’dan veri ambarı bilgileri almak** için **Temsilcili İzinler**’e tıklayın.
 
     ![Erişimi etkinleştirme - Microsot Intune API'si](./media/reports-get_rest_data_client_access.png)
 
-9.  Seçin **seçin**.
-10.  **Done** (Bitti) öğesini seçin.
-11.  İsteğe bağlı olarak Gerekli izinler bölmesinde **İzin Ver**’i seçin. Böylece geçerli dizindeki tüm hesaplara erişim verirsiniz. Bu, kiracıdaki her kullanıcı için bir onay iletişim kutusu oluşturmayı önler. Daha fazla bilgi için bkz. [Uygulamaları Azure Active Directory ile tümleştirme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
-12.  **Evet**’i seçin.
+9. Seçin **seçin**.
+10. **Done** (Bitti) öğesini seçin.
+11. İsteğe bağlı olarak Gerekli izinler bölmesinde **İzin Ver**’i seçin. Böylece geçerli dizindeki tüm hesaplara erişim verirsiniz. Bu, kiracıdaki her kullanıcı için bir onay iletişim kutusu oluşturmayı önler. Daha fazla bilgi için bkz. [Uygulamaları Azure Active Directory ile tümleştirme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+12. **Evet**’i seçin.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Microsoft Intune API’sinden Postman ile veri alma
 

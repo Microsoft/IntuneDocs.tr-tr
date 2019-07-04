@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 007c84e3bfeac79d2223ea211cbb9f9c97e80475
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044408"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548386"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
 Intune tasarımınız, [bu kılavuzun diğer bölümlerini](planning-guide.md) tamamlarken topladığınız bilgilere ve aldığınız kararlara dayanır. Şunları bir araya getirmenize yardımcı olur:
 
--   Mevcut ortam
+- Mevcut ortam
 
--   Intune dağıtım seçenekleri
+- Intune dağıtım seçenekleri
 
--   Dış bağımlılıklar için kimlik gereksinimleri
+- Dış bağımlılıklar için kimlik gereksinimleri
 
--   Cihaz platformunda dikkat edilecek noktalar
+- Cihaz platformunda dikkat edilecek noktalar
 
--   Sağlanacak gereksinimler  
+- Sağlanacak gereksinimler  
 
 Şirket içi altyapı gereksinimleri minimal olsa da, hedeflerinizi, amaçlarınızı ve gereksinimlerinizi karşılayan doğru mobil cihaz yönetimi çözümüne sahip olduğunuzdan emin olmak için bir tasarım planı yine de yararlıdır.
 
@@ -47,49 +47,49 @@ Ayrıca, uygulama ve test aşamaları sırasında tasarım değişiklikleri yayg
 
 Mevcut ortamınız, tasarım kararlarını etkileyebilir ve diğer Intune tasarım kararlarını verdiğinizde mevcut ortam belgelenmeli ve buna başvurulmalıdır. Aşağıda mevcut ortamın nasıl kaydedileceğine ilişkin birkaç örnek verilmiştir:
 
--   **Buluttaki kimlik**
+- **Buluttaki kimlik**
 
-    -   DirSync veya Azure Active Directory (Azure AD) Connect kullanıyor musunuz?
+    - DirSync veya Azure Active Directory (Azure AD) Connect kullanıyor musunuz?
 
-    -   Ortamınız federe mi?
+    - Ortamınız federe mi?
 
-    -   Çok faktörlü kimlik doğrulaması (MFA) etkin mi?
+    - Çok faktörlü kimlik doğrulaması (MFA) etkin mi?
 
--   **E-posta ortamı**
+- **E-posta ortamı**
 
-    -   Exchange kullanıyor musunuz? Şirket içinde mi, bulutta mı?
+    - Exchange kullanıyor musunuz? Şirket içinde mi, bulutta mı?
 
-    -   Exchange’i buluta geçirme projesinin ortasında mısınız?
+    - Exchange’i buluta geçirme projesinin ortasında mısınız?
 
--   **Geçerli mobil cihaz yönetimi (MDM) çözümü**
+- **Geçerli mobil cihaz yönetimi (MDM) çözümü**
 
-    -   Şu anda diğer MDM çözümlerini kullanıyor musunuz?
+    - Şu anda diğer MDM çözümlerini kullanıyor musunuz?
 
-    -   Şirket ve KCG kullanım örneği senaryoları için hangi MDM çözümlerini kullanıyorsunuz?
+    - Şirket ve KCG kullanım örneği senaryoları için hangi MDM çözümlerini kullanıyorsunuz?
 
-    -   Hangi özellikleri kullanıyorsunuz (örneğin uygulama cihaz ayarları, Wi-Fi yapılandırmaları)?
+    - Hangi özellikleri kullanıyorsunuz (örneğin uygulama cihaz ayarları, Wi-Fi yapılandırmaları)?
 
-    -   Hangi cihaz platformları destekleniyor?
+    - Hangi cihaz platformları destekleniyor?
 
-    -   MDM çözümü hangi gruplar ve kaç kullanıcı tarafından kullanılıyor?
+    - MDM çözümü hangi gruplar ve kaç kullanıcı tarafından kullanılıyor?
 
--   **Sertifika çözümü**
+- **Sertifika çözümü**
 
-    -   Bir sertifika çözümü uyguladınız mı?
+    - Bir sertifika çözümü uyguladınız mı?
 
-    -   Hangi sertifika türlerini kullanıyorsunuz?
+    - Hangi sertifika türlerini kullanıyorsunuz?
 
--   **Sistem yönetimi**
+- **Sistem yönetimi**
 
-    -   PC ve sunucu ortamınızı nasıl yönetiyorsunuz?
+    - PC ve sunucu ortamınızı nasıl yönetiyorsunuz?
 
-    -   System Center Configuration Manager’ı kullanıyor musunuz? Bir üçüncü taraf sistem yönetimi platformu kullanıyor musunuz?
+    - System Center Configuration Manager’ı kullanıyor musunuz? Bir üçüncü taraf sistem yönetimi platformu kullanıyor musunuz?
 
--   **VPN çözümü**
+- **VPN çözümü**
 
-    -   VPN çözümünüz nedir?
+    - VPN çözümünüz nedir?
 
-    -   Hem şirket hem de KCG örneği senaryolarında kullanıyor musunuz?
+    - Hem şirket hem de KCG örneği senaryolarında kullanıyor musunuz?
 
 Geçerli MDM ortamını kaydederken ortamınızı etkileyebilecek tüm projeleri ve planları not aldığınızdan emin olun. Intune tasarımınızı oluştururken mevcut ortamı kaydetme yoluna ilişkin bir örnek aşağıda verilmiştir:
 
@@ -118,11 +118,11 @@ Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına bulu
 
 Kuruluşunuz küresel olarak faaliyet gösteriyorsa, hizmete abone olurken kiracınızın nerede duracağını planladığınızdan emin olun. Ülke, bir Intune aboneliğine ilk kez kaydolduğunuzda tanımlanır ve aşağıda listelenen dünya genelindeki bölgelerle eşlenir:
 
--   Kuzey Amerika
+- Kuzey Amerika
 
--   Avrupa, Orta Doğu ve Afrika
+- Avrupa, Orta Doğu ve Afrika
 
--   Asya ve Pasifik
+- Asya ve Pasifik
 
 >[!IMPORTANT]
 > Ülke ve kiracı konumunu sonradan değiştirmek mümkün değildir.
@@ -131,11 +131,11 @@ Kuruluşunuz küresel olarak faaliyet gösteriyorsa, hizmete abone olurken kirac
 
 Dış bağımlılıklar Intune'dan ayrı ancak aynı zamanda Intune gereksinimi olan veya Intune ile tümleşebilen hizmet ve ürünlerdir. Herhangi bir dış bağımlılığın gereksinimlerini ve nasıl yapılandırılacağını belirlemek önemlidir. Yaygın dış bağımlılıklara bazı örnekler:
 
--   Kimlik
+- Kimlik
 
--   Kullanıcı ve cihaz grupları
+- Kullanıcı ve cihaz grupları
 
--   Ortak anahtar altyapısı (PKI)
+- Ortak anahtar altyapısı (PKI)
 
 Aşağıda, bu yaygın dış bağımlılıkları daha ayrıntılı bir şekilde inceleyeceğiz.
 
@@ -157,9 +157,9 @@ Kullanıcı ve cihaz grupları, ilkeler, uygulamalar ve profiller de dahil olmak
 
 Tüm grupları şirket içi Active Directory içinde oluşturup, ardından Azure AD ile eşitlemenizi öneririz. Kullanıcı ve cihaz gruplarını planlama hakkında daha fazla bilgi edinin:
 
--   [Kullanıcı ve cihaz gruplarınızı planlayın](users-add.md).
+- [Kullanıcı ve cihaz gruplarınızı planlayın](users-add.md).
 
--   [Kullanıcı ve cihaz grupları oluşturun](groups-add.md).
+- [Kullanıcı ve cihaz grupları oluşturun](groups-add.md).
 
 ### <a name="public-key-infrastructure-pki"></a>Ortak anahtar altyapısı (PKI)
 Ortak anahtar altyapısı, bir hizmette güvenli kimlik doğrulaması yapabilmek için cihazlara veya kullanıcılara sertifika sağlar. Intune, Microsoft PKI altyapısını destekler. Sertifika tabanlı kimlik doğrulama gereksinimlerini karşılamak için cihaz ve kullanıcı sertifikaları bir mobil cihaza sağlanabilir. Sertifikaları kullanmadan önce, bunların gerekli olup olmadığını, ağ altyapısının sertifika tabanlı kimlik doğrulamasını destekleyip desteklemediğini ve sertifikaların şu anda mevcut ortamda kullanılıp kullanılmadığını belirlemeniz gerekir.
@@ -170,11 +170,11 @@ Ayrıca, SCEP sertifikaları sağlanacaksa hangi sunucunun Ağ Cihazı Kayıt Hi
 
 Daha fazla bilgi:
 
--   [Intune sertifika profillerini yapılandırma](certificates-configure.md)
+- [Intune sertifika profillerini yapılandırma](certificates-configure.md)
 
--   [SCEP için sertifika altyapısını yapılandırma](certificates-scep-configure.md)
+- [SCEP için sertifika altyapısını yapılandırma](certificates-scep-configure.md)
 
--   [PFX için sertifika altyapısını yapılandırma](certficates-pfx-configure.md)
+- [PFX için sertifika altyapısını yapılandırma](certficates-pfx-configure.md)
 
 
 
@@ -183,13 +183,13 @@ Daha fazla bilgi:
 
 Cihazlarınızı nasıl doğru bir şekilde yöneteceğinizi anlamak için cihazların şu yönlerini yakından inceleyin.
 
--   Desteklenen cihaz platformları
+- Desteklenen cihaz platformları
 
--   Cihazlar
+- Cihazlar
 
--   Cihaz sahipliği
+- Cihaz sahipliği
 
--   Toplu kayıt
+- Toplu kayıt
 
 Bu alanları daha ayrıntılı bir şekilde gözden geçirelim.
 
@@ -226,17 +226,17 @@ Başvurmak [3. Bölüm: Kullanım örneği senaryosu gereksinimlerini belirleme]
 
 Bu bölümlerde, kullanım örneği senaryo gereksinimlerinize uygun aşağıdaki özellikleri ve yetenekleri inceleyeceğiz:
 
--   Hüküm ve koşullar ilkeleri
+- Hüküm ve koşullar ilkeleri
 
--   Yapılandırma ilkeleri
+- Yapılandırma ilkeleri
 
--   Kaynak profilleri
+- Kaynak profilleri
 
--   Uygulamalar
+- Uygulamalar
 
--   Uyumluluk ilkesi
+- Uyumluluk ilkesi
 
--   Koşullu Erişim
+- Koşullu Erişim
 
 Bu alanların her birini daha ayrıntılı bir şekilde gözden geçirelim.
 
@@ -274,13 +274,13 @@ Yapılandırma ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun
 
 Son kullanıcının şirket verilerine bağlanmasına yardımcı olmak için profiller kullanın. Intune birçok profil türünü destekler. Profillerin ne zaman yapılandırılacağını belirlemek için kullanım örneklerine ve gereksinimlerine başvurun. Tüm cihaz profilleri platform türüne göre kategorize edilir ve tasarım belgelerine eklenmelidir.
 
--   Sertifika profilleri
+- Sertifika profilleri
 
--   Wi-Fi profili
+- Wi-Fi profili
 
--   VPN profili
+- VPN profili
 
--   E-posta profili
+- E-posta profili
 
 Her profil türünü daha ayrıntılı bir şekilde inceleyelim.
 
@@ -288,11 +288,11 @@ Her profil türünü daha ayrıntılı bir şekilde inceleyelim.
 
 Sertifika profilleri Intune’un bir kullanıcı veya cihaza sertifika vermesine olanak tanır. Intune aşağıdakileri destekler:
 
--   Basit Sertifika Kayıt Protokolü (SCEP)
+- Basit Sertifika Kayıt Protokolü (SCEP)
 
--   Güvenilen Kök Sertifika
+- Güvenilen Kök Sertifika
 
--   PFX sertifikası.
+- PFX sertifikası.
 
 Hangi kullanıcı grubunun sertifikaya ihtiyacı olduğunu, kaç sertifika profili gerekeceğini ve bunların hangi kullanıcı gruplarına dağıtılacağını belgelemeniz önerilir.
 
@@ -353,27 +353,27 @@ E-posta profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir �
 
 Kullanıcılara veya cihazlara uygulamaları çeşitli yollarla sunmak için Intune kullanabilirsiniz. Uygulama türü yazılım yükleme uygulamalarını, genel uygulama mağazası uygulamalarını, dış bağlantıları veya yönetilen iOS uygulamalarını içerir. Tek tek uygulama dağıtımlarına ek olarak, iOS ve Windows için toplu satın alma programları aracılığıyla edinilen toplu satın alınan uygulamaları yönetilebilir ve dağıtılabilirsiniz. Aşağıdakiler hakkında daha fazla bilgi edinin:
 
--   [Sağlayabileceğiniz uygulama türleri](app-management.md)
+- [Sağlayabileceğiniz uygulama türleri](app-management.md)
 
--   [iOS İş için Toplu Satın Alma Programı (VPP)](vpp-apps-ios.md)
+- [iOS İş için Toplu Satın Alma Programı (VPP)](vpp-apps-ios.md)
 
--   [İş uygulamaları için Microsoft Mağazası](windows-store-for-business.md)
+- [İş uygulamaları için Microsoft Mağazası](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Uygulama türü gereksinimleri
 
 Uygulamalar kullanıcılara ve cihazlara dağıtılabildiği için hangi uygulamaların Intune tarafından yönetileceğine karar vermenizi öneririz. Listeyi oluştururken aşağıdaki soruları yanıtlamayı deneyin:
 
--   Uygulamalar bulut hizmetleriyle tümleştirme gerektiriyor mu?
+- Uygulamalar bulut hizmetleriyle tümleştirme gerektiriyor mu?
 
--   KCG kullanıcılarına tüm uygulamalar sağlanacak mı?
+- KCG kullanıcılarına tüm uygulamalar sağlanacak mı?
 
--   Bu uygulamalar için kullanılabilen dağıtım seçenekleri nelerdir?
+- Bu uygulamalar için kullanılabilen dağıtım seçenekleri nelerdir?
 
--   Şirketinizin, iş ortaklarına Hizmet olarak yazılım (SaaS) uygulama verilerine erişim sağlaması gerekiyor mu?
+- Şirketinizin, iş ortaklarına Hizmet olarak yazılım (SaaS) uygulama verilerine erişim sağlaması gerekiyor mu?
 
--   Uygulamalar kullanıcının cihazlarından İnternet erişimini gerektiriyor mu?
+- Uygulamalar kullanıcının cihazlarından İnternet erişimini gerektiriyor mu?
 
--   Uygulamalar bir uygulama mağazasında genel olarak kullanılabilir mi ya da özel iş kolu uygulamaları (LOB) mı?
+- Uygulamalar bir uygulama mağazasında genel olarak kullanılabilir mi ya da özel iş kolu uygulamaları (LOB) mı?
 
 
 #### <a name="app-protection-policies"></a>Uygulama koruma ilkeleri
@@ -407,7 +407,7 @@ Koşullu erişim yalnızca uyumlu cihazların e-posta ve diğer şirket kaynakla
 
 Çevrimiçi erişim için hangi platformlar ve kullanıcı gruplarının koşullu erişim ilkeleri tarafından hedef karar verin. Ayrıca, yükleme veya şirket içi Exchange için Intune bağlayıcısını yapılandırmak gerekli olup olmadığını belirleyin: 
 
--   [Şirket İçi Exchange](exchange-connector-install.md)
+- [Şirket İçi Exchange](exchange-connector-install.md)
 
 Belge koşullu erişim ilkelerine ilişkin bir örnek aşağıda verilmiştir:
 

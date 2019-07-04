@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046219"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548341"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Dağıtım iletişim planı geliştirme
 
 İyi bir değişim yönetimi, gelecekte olacak değişiklikler hakkında net ve açıklayıcı iletişime bağlıdır. Intune dağıtımınızın düzgün ilerlemesi için piyasaya çıkma iletişim planınıza şu dört alanı dahil etmelisiniz:
 
--   İletilecek bilgiler
+- İletilecek bilgiler
 
--   İletişim için kullanılan teslim yöntemi
+- İletişim için kullanılan teslim yöntemi
 
--   İletişim kurulacak kişiler
+- İletişim kurulacak kişiler
 
--   İletişim için zaman çizelgesi
+- İletişim için zaman çizelgesi
 
 Her alanı daha ayrıntılı bir şekilde inceleyeceğiz.
 
@@ -56,13 +56,13 @@ Bu [son kullanıcı kayıt kılavuzu](https://gallery.technet.microsoft.com/Intu
 
 Intune dağıtım bilgilerini hedeflediğiniz gruplara ve kullanıcılara iletmek için yararlanabileceğiniz çeşitli teslim yöntemleri vardır. Aşağıdaki liste, bazı örnekleri ve yöntemle kullanabileceğiniz dalgayı göstermektedir:
 
--   Kuruluş genelinde yüz yüze veya Microsoft Teams Toplantı başlangıç dalgası için kullanılır
+- Kuruluş genelinde yüz yüze veya Microsoft Teams Toplantı başlangıç dalgası için kullanılır
 
--   Kayıt öncesi, kayıt ve kayıt sonrası dalgaları için kullanılan e-posta
+- Kayıt öncesi, kayıt ve kayıt sonrası dalgaları için kullanılan e-posta
 
--   Tüm dalgalar için kullanılan kuruluş web siteleri
+- Tüm dalgalar için kullanılan kuruluş web siteleri
 
--   Başlangıç ve kayıt öncesi dalgaları için kullanılan Yammer, posterler ve el ilanları
+- Başlangıç ve kayıt öncesi dalgaları için kullanılan Yammer, posterler ve el ilanları
 
 ## <a name="communications-timeline"></a>İletişim zaman çizelgesi
 

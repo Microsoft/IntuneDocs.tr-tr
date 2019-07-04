@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045893"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547502"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune ile Android iş profili cihazlarını yönetme
 
@@ -68,9 +68,9 @@ Uygulaman uygulama koruma ilkeleri, iş profilinde ve kişisel profilde tümüyl
 
 VPN desteği, Android VPN profillerine benzerdir. Aynı VPN sağlayıcıları ve temel yapılandırma seçenekleri Android kuruluş yönetimi iki fark için kullanılabilir:
 
--  **İş profili kapsamlı VPN** – VPN bağlantıları yalnızca iş profiline dağıtılan uygulamalarla sınırlıdır. Yalnızca Android Kurumsal ilkeyle yönetilen uygulamalar VPN bağlantısını kullanabilir. Cihazdaki kişisel uygulamalar bir yönetilen VPN bağlantısı kullanamaz. Daha fazla bilgi için [Android Kurumsal VPN ayarları](vpn-settings-android.md#android-enterprise-vpn-settings).
+- **İş profili kapsamlı VPN** – VPN bağlantıları yalnızca iş profiline dağıtılan uygulamalarla sınırlıdır. Yalnızca Android Kurumsal ilkeyle yönetilen uygulamalar VPN bağlantısını kullanabilir. Cihazdaki kişisel uygulamalar bir yönetilen VPN bağlantısı kullanamaz. Daha fazla bilgi için [Android Kurumsal VPN ayarları](vpn-settings-android.md#android-enterprise-vpn-settings).
 
--  **Uygulamaya özel VPN** – Uygulamaya özel VPN, VPN sağlayıcısı bunu destekliyorsa Intune’da yapılandırılabilir:
+- **Uygulamaya özel VPN** – Uygulamaya özel VPN, VPN sağlayıcısı bunu destekliyorsa Intune’da yapılandırılabilir:
     - uygulamaya özel VPN yapılandırması
     - Android Kurumsal uygulama yapılandırma profili aracılığıyla uygulama başına VPN yapılandırma yeteneği.
     Daha fazla bilgi için bkz. [Microsoft Intune özel profili kullanarak Android cihazlar için uygulama başına VPN profili oluşturma](android-pulse-secure-per-app-vpn.md).
@@ -79,9 +79,9 @@ VPN desteği, Android VPN profillerine benzerdir. Aynı VPN sağlayıcıları ve
 
 Android yönetimi için kullanılabilir olan sertifika profili yapılandırma seçenekleri Android kurumsal iş profili cihazları üzerinde kullanılabilir. Android Kurumsal gelişmiş sertifika yönetimi API'leri sağlar. Gelişmiş sertifika yönetimi aşağıdaki işlevleri sağlar:
 
--  Sertifika dağıtımının sessiz ve kullanıcı için sorunsuz olmasını sağlar.
--  Bir cihaz Intune’da devre dışı bırakıldığında ve iş profili kaldırıldığında dağıtılan sertifikaların kaldırılmasını sağlar.
--  BT departmanı tarafından yönetim hizmeti aracılığıyla sertifikanın dağıtıldığını ve yapılandırıldığını kullanıcılara bildiren gelişmiş iletiler sağlar.
+- Sertifika dağıtımının sessiz ve kullanıcı için sorunsuz olmasını sağlar.
+- Bir cihaz Intune’da devre dışı bırakıldığında ve iş profili kaldırıldığında dağıtılan sertifikaların kaldırılmasını sağlar.
+- BT departmanı tarafından yönetim hizmeti aracılığıyla sertifikanın dağıtıldığını ve yapılandırıldığını kullanıcılara bildiren gelişmiş iletiler sağlar.
 
 Daha fazla bilgi için bkz. [Microsoft Intune’da cihazlarınız için sertifika profili yapılandırma](certificates-configure.md).
 

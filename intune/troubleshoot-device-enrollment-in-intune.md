@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528757"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548098"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydıyla ilgili sorunları giderme
 
@@ -84,47 +84,47 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 
 **Çözüm:**
 
-1.  Intune Şirket Portalı uygulamasını cihazınızdan kaldırın.
+1. Intune Şirket Portalı uygulamasını cihazınızdan kaldırın.
 
-2.  Cihazda tarayıcıyı açın, [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) adresine gidin ve kullanıcı oturumu açmayı deneyin.
+2. Cihazda tarayıcıyı açın, [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) adresine gidin ve kullanıcı oturumu açmayı deneyin.
 
-3.  Kullanıcı oturum açamazsa, başka bir ağ denemelidir.
+3. Kullanıcı oturum açamazsa, başka bir ağ denemelidir.
 
-4.  Bu da başarısız olursa, kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun.
+4. Bu da başarısız olursa, kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun.
 
-5.  Kullanıcı başarıyla oturum açarsa, iOS cihazı Intune Şirket Portalı uygulamasını yüklemenizi ve kaydetmenizi ister. Bir Android cihazında kaydetmeyi yeniden denemeden önce Intune Şirket Portalı uygulamasını el ile yüklemeniz gerekir.
+5. Kullanıcı başarıyla oturum açarsa, iOS cihazı Intune Şirket Portalı uygulamasını yüklemenizi ve kaydetmenizi ister. Bir Android cihazında kaydetmeyi yeniden denemeden önce Intune Şirket Portalı uygulamasını el ile yüklemeniz gerekir.
 
 ### <a name="mdm-authority-not-defined"></a>MDM yetkilisi tanımlı değil
 **Sorun:** Bir kullanıcı bir **MDM yetkilisi tanımlı değil** hata.
 
 **Çözüm:**
 
-1.  MDM Yetkilisinin [uygun şekilde ayarlandığını](mdm-authority-set.md) doğrulayın.
+1. MDM Yetkilisinin [uygun şekilde ayarlandığını](mdm-authority-set.md) doğrulayın.
     
-2.  Kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun. Microsoft 365 Yönetim Merkezi'nde Active Directory bilgilerini kullanıcının UPN'sini eşleştiğini doğrulayabilirsiniz.
+2. Kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun. Microsoft 365 Yönetim Merkezi'nde Active Directory bilgilerini kullanıcının UPN'sini eşleştiğini doğrulayabilirsiniz.
     UPN Active Directory bilgileriyle eşleşmiyorsa:
 
-    1.  Yerel sunucuda DirSync’i kapatın.
+    1. Yerel sunucuda DirSync’i kapatın.
 
-    2.  Eşleşmeyen kullanıcıyı **Intune Hesap Portalı** kullanıcı listesinden silin.
+    2. Eşleşmeyen kullanıcıyı **Intune Hesap Portalı** kullanıcı listesinden silin.
 
-    3.  Azure hizmetinin yanlış verileri kaldırması için bir saat kadar bekleyin.
+    3. Azure hizmetinin yanlış verileri kaldırması için bir saat kadar bekleyin.
 
-    4.  DirSync’i yeniden açın ve şimdi kullanıcının doğru eşitlenip eşitlenmediğini denetleyin.
+    4. DirSync’i yeniden açın ve şimdi kullanıcının doğru eşitlenip eşitlenmediğini denetleyin.
 
-3.  Intune ile System Center Configuration Manager'ı kullandığınız senaryolarda kullanıcının geçerli bir Bulut Kullanıcı Kimliği olduğunu doğrulayın:
+3. Intune ile System Center Configuration Manager'ı kullandığınız senaryolarda kullanıcının geçerli bir Bulut Kullanıcı Kimliği olduğunu doğrulayın:
 
-    1.  SQL Management Studio'yu açın.
+    1. SQL Management Studio'yu açın.
 
-    2.  Uygun veritabanına bağlanın.
+    2. Uygun veritabanına bağlanın.
 
-    3.  Veritabanları klasörünü açın ve **CM_DBName** klasörünü bulup açın; burada DBName, müşteri veritabanının adıdır.
+    3. Veritabanları klasörünü açın ve **CM_DBName** klasörünü bulup açın; burada DBName, müşteri veritabanının adıdır.
 
-    4.  En üstte **Yeni Sorgu**’yu seçin ve aşağıdaki sorguları yürütün:
+    4. En üstte **Yeni Sorgu**’yu seçin ve aşağıdaki sorguları yürütün:
 
-        -   Tüm kullanıcıları görmek için: `select * from [CM_ DBName].[dbo].[User_DISC]`
+        - Tüm kullanıcıları görmek için:   `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Belirli Kullanıcıları görmek için aşağıdaki sorguyu kullanın; burada %testuser1%, aramak istediğiniz kullanıcının username@domain.com şeklindeki adresi için yer tutucudur: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        - Belirli kullanıcıları görmek için burada % testuser1% yer tutucusu, aşağıdaki sorguyu kullanın username@domain.com aramak istediğiniz kullanıcının için:   `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         Sorguyu yazdıktan sonra **!Execute** komutunu seçin.
         Sonuçlar döndürüldüğünde, bulut kullanıcı kimliğine bakın.  Hiç kimlik bulunmazsa, kullanıcının Intune’u kullanma lisansı yok demektir.
@@ -212,13 +212,13 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 **Çözüm:**
 
-1.  Kullanıcıya Intune hizmetinin kullandığınız sürümü için uygun bir lisans atandığını doğrulayın.
+1. Kullanıcıya Intune hizmetinin kullandığınız sürümü için uygun bir lisans atandığını doğrulayın.
 
-2.  Cihazın zaten başka bir MDM sağlayıcısına kaydedilmediğini doğrulayın.
+2. Cihazın zaten başka bir MDM sağlayıcısına kaydedilmediğini doğrulayın.
 
 3. Cihazın zaten yüklü bir yönetim profili olmadığını doğrulayın.
 
-4.  Android için Chrome’un varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
+4. Android için Chrome’un varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
 ### <a name="android-certificate-issues"></a>Android sertifika sorunları
 
@@ -321,15 +321,15 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Başarısız olan profil yüklemesi sorunlarını giderme adımları
 
-1.  Kullanıcıya Intune hizmetinin kullandığınız sürümü için uygun bir lisans atandığını doğrulayın.
+1. Kullanıcıya Intune hizmetinin kullandığınız sürümü için uygun bir lisans atandığını doğrulayın.
 
-2.  Cihazın zaten başka bir MDM sağlayıcısına kaydedilmediğini doğrulayın.
+2. Cihazın zaten başka bir MDM sağlayıcısına kaydedilmediğini doğrulayın.
 
 3. Cihazın zaten yüklü bir yönetim profili olmadığını doğrulayın.
 
-4.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) öğesine gidin ve istendiğinde profili yüklemeyi deneyin.
+4. [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) öğesine gidin ve istendiğinde profili yüklemeyi deneyin.
 
-5.  iOS için Safari’nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
+5. iOS için Safari’nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune’la birlikte System Center Configuration Manager kullanıldığında kayıtlı iOS cihazı konsolda gösterilmiyor
 **Sorun:** Kullanıcı, iOS cihazı kaydeder, ancak Configuration Manager Yönetici konsolunda görünmez. Cihaz kayıtlı olduğunu göstermiyor. Olası nedenler:
@@ -428,17 +428,17 @@ Configuration Manager konsolunda cihazı hangi işlemin veya kullanıcı hesabı
 
 #### <a name="check-how-device-was-removed"></a>Cihazın nasıl kaldırıldığını denetleme
 
-1.  Configuration Manager yönetim konsolunda **İzleme** &gt; **Sistem Durumu** &gt; **Durum İletisi Sorguları**’nı seçin.
+1. Configuration Manager yönetim konsolunda **İzleme** &gt; **Sistem Durumu** &gt; **Durum İletisi Sorguları**’nı seçin.
 
-2.  **Elle Silinen Koleksiyon Üye Kaynakları**’na sağ tıklayın ve **İletileri Göster**’i seçin.
+2. **Elle Silinen Koleksiyon Üye Kaynakları**’na sağ tıklayın ve **İletileri Göster**’i seçin.
 
-3.  Uygun bir saat/tarih seçin veya son 12 saati seçin.
+3. Uygun bir saat/tarih seçin veya son 12 saati seçin.
 
-4.  Söz konusu cihazı bulun ve cihazın nasıl kaldırıldığını gözden geçirin. Aşağıdaki örnekte, cihazın Bilinmeyen Uygulama yoluyla SCCMInstall hesabı tarafından silindiği gösterilir.
+4. Söz konusu cihazı bulun ve cihazın nasıl kaldırıldığını gözden geçirin. Aşağıdaki örnekte, cihazın Bilinmeyen Uygulama yoluyla SCCMInstall hesabı tarafından silindiği gösterilir.
 
     ![Cihaz silme tanılamasının ekran görüntüsü](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  Configuration Manager'da etki alanı dışındaki, mobil veya ilgili cihazları otomatik olarak temizleyebilecek, zamanlanmış bir görev, komut dosyası veya başka bir işlemin bulunup bulunmadığını denetleyin.
+5. Configuration Manager'da etki alanı dışındaki, mobil veya ilgili cihazları otomatik olarak temizleyebilecek, zamanlanmış bir görev, komut dosyası veya başka bir işlemin bulunup bulunmadığını denetleyin.
 
 ### <a name="other-ios-enrollment-errors"></a>Diğer iOS kayıt hataları
 iOS kayıt hatalarının listesi, [Microsoft Intune’da iOS cihaz kayıt sorunlarını giderme](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) belgelerinde sağlanmıştır.

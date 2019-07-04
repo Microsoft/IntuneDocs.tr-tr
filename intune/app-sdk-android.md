@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae2318d32bebf17544d2c8c31763a6bf6360c4e9
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529270"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558431"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -111,10 +111,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 Eklenti varsayılan olarak **yalnızca** `project` bağımlılıkları üzerinde çalışır.
 Test derlemesi bundan etkilenmez. Listeye yapılandırma sağlanabilir
-*  Dışlanacak projeler
-*  [Dahil edilecek dış bağımlılıklar](#usage-of-includeexternallibraries) 
-*  İşlemin dışında tutulacak belirli sınıflar
-*  İşlemin dışında tutulacak çeşitler. Bunlar tam bir çeşit adı veya tek bir çeşitleme olabilir. Örneğin:
+* Dışlanacak projeler
+* [Dahil edilecek dış bağımlılıklar](#usage-of-includeexternallibraries) 
+* İşlemin dışında tutulacak belirli sınıflar
+* İşlemin dışında tutulacak çeşitler. Bunlar tam bir çeşit adı veya tek bir çeşitleme olabilir. Örneğin:
      * uygulamanızı {`savory`, `sweet`} ve {`vanilla`, `chocolate`} çeşitleri olan `debug` ve `release` derleme türleri varsa
      * `savory` belirterek uygun türde tüm çeşitleri, `savoryVanillaRelease` belirterek yalnızca tam çeşitleri dışlayabilirsiniz.
 
@@ -1187,7 +1187,7 @@ Veri Yedekleme kılavuzu uygulamanızın verilerini geri yüklemeniz için genel
 Intune Uygulama SDK’sı varsayılan olarak, ilkeyi uygulamaya bir bütün olarak uygular. Çoklu kimlik; ilkenin her kimlik düzeyinde uygulanmasına izin vermek üzere etkinleştirilebilen, isteğe bağlı bir Intune uygulama koruma özelliğidir. Bu, diğer uygulama koruma özelliklerine kıyasla önemli oranda daha fazla uygulama katılımı gerektirir.
 
 > [!NOTE]
->  Uygulamanın doğru yerlerde katılımda bulunmaması, veri sızıntısı veya diğer güvenlik sorunlarıyla sonuçlanabilir.
+> Uygulamanın doğru yerlerde katılımda bulunmaması, veri sızıntısı veya diğer güvenlik sorunlarıyla sonuçlanabilir.
 
 Kullanıcı cihaz veya uygulamayı kaydettikten sonra, SDK bu kimliği kaydeder ve bunu Intune tarafından yönetilen birincil kimlik olarak kabul eder. Uygulamadaki diğer kullanıcılar kısıtlanmamış ilke ayarlarıyla yönetilmeyen olarak kabul edilirler.
 
@@ -1317,7 +1317,7 @@ Uygulamanın kimlik ayarlayabilme özelliğine ek olarak, bir iş parçacığı 
 
   1. Etkinlik başka bir MAM uygulamasından gönderilen bir `Intent` ile başlatılmışsa, etkinliğin kimliği `Intent`’in gönderildiği noktada diğer uygulamadaki etkin kimliğe göre ayarlanır.
 
-  2.  Hizmetler için iş parçacığı kimliği bir `onStart` veya `onBind` çağrısının süresine benzer şekilde ayarlanır. `Binder` öğesinden döndürülen `onBind` içine yapılan çağrılar iş parçacığı kimliğini de geçici olarak ayarlar.
+  2. Hizmetler için iş parçacığı kimliği bir `onStart` veya `onBind` çağrısının süresine benzer şekilde ayarlanır. `Binder` öğesinden döndürülen `onBind` içine yapılan çağrılar iş parçacığı kimliğini de geçici olarak ayarlar.
 
   3. `ContentProvider` içine yapılan çağrılar da benzer şekilde iş parçacığı kimliğini süreleri boyunca ayarlar.
 
@@ -1742,8 +1742,8 @@ Aşağıdaki adımlarla varsayılan kaydı etkinleştirin:
 
 [ProGuard](http://proguard.sourceforge.net/) olmadan çalışan büyük kod tabanları için, Dalvik yürütülebilir dosya biçiminin sınırlamaları sorun yaratır. Özel olarak, aşağıdaki sınırlamalar ortaya çıkabilir:
 
-1.  Alanlarda 65-K sınırı.
-2.  Yöntemlerde 65-K sınırı.
+1. Alanlarda 65-K sınırı.
+2. Yöntemlerde 65-K sınırı.
 
 ### <a name="policy-enforcement-limitations"></a>İlke zorlama sınırlamaları
 

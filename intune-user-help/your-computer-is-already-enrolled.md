@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505004"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545657"
 ---
 # <a name="your-computer-is-already-enrolled"></a>Bilgisayarınız zaten kayıtlı
 
@@ -31,11 +31,11 @@ Bilgisayarınızın zaten kayıtlı olduğunu bildiren bir hata alırsanız, bil
 
 Bilgisayarınızı bağlamak için:
 
-1.  Hesabınıza bağlamak istediğiniz bilgisayarda **Başlat**’ı ve ardından **Microsoft Intune Center**'ı seçin.
+1. Hesabınıza bağlamak istediğiniz bilgisayarda **Başlat**’ı ve ardından **Microsoft Intune Center**'ı seçin.
 
-2.  Şirket Portalı’nı açın.
+2. Şirket Portalı’nı açın.
 
-3.  Bilgisayarı kullanıcı hesabınıza bağlama yönergelerini izleyin.
+3. Bilgisayarı kullanıcı hesabınıza bağlama yönergelerini izleyin.
 
 Cihazınızın kaydını kaldırmayı tercih ederseniz, sahip olduğunuz cihaz türü için yönergeleri kullanın: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md), veya [Windows](unenroll-your-device-from-intune-windows.md).
 
