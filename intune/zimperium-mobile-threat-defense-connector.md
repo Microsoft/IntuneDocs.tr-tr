@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cd0e6ddba836724f525ab3d21e192214cc43cb4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547707"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572475"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune ile Zimperium Mobile Threat Defense bağlayıcısı
 
@@ -60,7 +60,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 
-Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı olarak Wi-Fi ağlarına erişimi koruyun.
+Ağda **bağlantıyı izinsiz izleme** gibi tehditleri algılayın ve cihaz riskine dayalı olarak Wi-Fi ağlarına erişimi koruyun.
 
 **Wi-Fi üzerinden ağ erişimini engelleme:**
 
@@ -72,7 +72,7 @@ Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı ol
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme
 
-Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı olarak Kurumsal dosyaların eşitlenmesini engeller.
+Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine dayalı olarak kurumsal dosyaların eşitlenmesini engeller.
 
 **Ağ tehditleri algılandığında SharePoint Online’ı engelle:**
 
@@ -96,7 +96,7 @@ Gibi tehditleri algılayın **adam-de-ADAM** ağda ve cihaz riskine dayalı ol
 
 - Zimperium Mobile Threat Defense aboneliği
 
-    - Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips).
+    - Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

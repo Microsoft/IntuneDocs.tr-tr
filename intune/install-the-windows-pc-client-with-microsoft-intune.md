@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6390db854019bd69dbce983ff8ce20abccc8eba
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548868"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572611"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 
@@ -119,9 +119,9 @@ Kullanıcılar, Intune istemci yazılımını [Şirket Portalı web sitesine](ht
 
 Kullanıcılara bir Intune lisansı atanmamışsa veya kuruluşun MDM Yetkilisi, Intune olarak ayarlanmamışsa, kullanıcılara kaydolmaya yönelik herhangi bir seçenek gösterilmez.
 
-Kullanıcılar bir Intune lisansı atanmışsa ve kuruluşun MDM yetkilisi, Intune için ayarlanmış ise:
+Kullanıcılara bir Intune lisansı atanmışsa ve kuruluşun MDM Yetkilisi, Intune olarak ayarlanmışsa:
 
-- Windows 7 veya Windows 8 bilgisayarı kullanıcılarına, yalnızca indirip kuruluşlarına özel bilgisayar istemci yazılımını yükleyerek Intune'a kaydolma seçeneği gösterilir.
+- Windows 7 veya Windows 8 bilgisayarı kullanıcılarına, YALNIZCA kuruluşlarına özel bilgisayar istemci yazılımını indirip yükleyerek Intune’a kaydolma seçeneği gösterilir.
 
 - Windows 10 veya Windows 8.1 bilgisayarı kullanıcılarına iki kayıt seçeneği gösterilir:
 
@@ -258,7 +258,7 @@ Yükseltilmiş bir komut istemi kullanarak aşağıdaki komutlardan birini çal�
 
 Kayıt silme işlemi OnlineManagement klasörünü kaldırmaz. Kaldırma sonrasında 30 dakika bekleyin ve ardından bu komutu çalıştırın. Çok erken çalıştırırsanız, kaldırma işlemi bilinmeyen bir durumda kalabilir. Klasörü kaldırmak için yükseltilmiş bir komut istemi başlatın ve çalıştırın:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Sonraki adımlar
 [Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

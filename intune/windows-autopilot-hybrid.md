@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 3fb85cc2847c235f7f8079715dee6a2d924f0ac8
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494541"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572596"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot'ı kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -139,7 +139,7 @@ Ağ ortamınızda bir web proxy varsa, başvurarak Active Directory için Intune
 
 1. Seçtiyseniz **dinamik cihazları** üyelik türü için içinde **grubu** bölmesinde **dinamik cihaz üyeleri** ve daha sonra **Gelişmiş kural** kutusunda, aşağıdakilerden birini yapın:
     - Tüm Autopilot cihazları içeren bir grup oluşturmak için girin `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - OrderID özniteliği Azure AD cihazları için Intune grubu etiketi alan eşler. Tüm Autopilot cihazlarınızı belirli bir grup Tag(OrderID) içeren bir grubu oluşturmak istiyorsanız, yazmanız gerekir: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - OrderID özniteliği Azure AD cihazları için Intune grubu etiketi alan eşler. Tüm Autopilot cihazlarınızı belirli bir grup Tag(OrderID) içeren bir grubu oluşturmak istiyorsanız, yazmanız gerekir: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Belirli bir satın alma siparişi kimliği ile tüm Autopilot cihazları içeren bir grup oluşturmak için girin `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. **Kaydet**’i seçin.

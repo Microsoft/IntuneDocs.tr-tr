@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fb3e31c58d9eab073ceed7dde27099177eed3b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e78c9034058a5f60f01056711465b28deca77d83
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547609"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572158"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium'u Intune ile tümleştirme
 
@@ -31,7 +31,7 @@ Zimperium Mobil Threat Defense çözümünü Intune ile tümleştirmek için aş
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 > [!NOTE]
-> Aşağıdaki adımlar tamamlanmalıdır olan [Zimperium MTD konsolunda](https://www.zimperium.com/platform).
+> Aşağıdaki adımların [Zimperium MTD konsolunda](https://www.zimperium.com/platform) tamamlanması gerekir.
 
 Zimperium'u Intune ile tümleştirme sürecini başlatmadan önce aşağıdaki abonelik ve kimlik bilgilerine sahip olduğunuzdan emin olun:
 
