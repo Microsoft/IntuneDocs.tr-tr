@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a50eb6e58c7b866af32387a85026eb87f825b15
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 89babf2eb60b7959c5c25a02b29135668efc32eb
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045896"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649055"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Uygulamaları Microsoft Intune korumalı  
 
@@ -46,6 +46,7 @@ Aşağıdaki tabloda, desteklenen ortak ve Microsoft Intune yaygın olarak kulla
 | **Microsoft Azure Information Protection Görüntüleyicisi**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | Güvenli bir şekilde AIP Görüntüleyici uygulamasını kullanarak başkalarıyla işbirliği yapın. Birinin sizinle paylaştığı korumalı dosyaları (hak korumalı e-posta iletileri, PDF dosyalarını, resimleri, metin dosyaları) görüntüleyin. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.egress.switchdroid.intune), [iOS mağaza bağlantısı](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) | 
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings, rezervasyonları, ekibiniz ve müşterilerinizin izlemenize yardımcı olan uygulama zamanlama bir öğedir. Randevu hiçbir kaçırmayın ve daha az no-shows sahip olacaksınız.<p>Bookings uygulamasıyla şunları yapabilirsiniz:<br><ul><li>Görüntüleme ve yönetme, takvimi</li><li>Kayıtları oluşturun veya var olanları için üzerinde geçenler değişiklik</li><li>Gerçek zamanlı kullanılabilirlik, ekibi üyelerinin bakın</li><li>Müşteriler için hızlı ve kolay bir şekilde yanıt verin</li><li>Hızlı bir şekilde, sonraki kayıt olduğu için yönergeleri alın</li><li>Müşteri listenizi yönetin</li></ul> | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings),<br>[iOS mağaza bağlantısı](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft bağlantıları**<p><img alt="Microsoft app - Microsoft Connections icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-connections.png" width="100"> | Microsoft Connections ilgisini çekin ve e-posta pazarlama araçları kullanmak için müşterilerin basit ile korumak küçük ölçekli işletmeler yardımcı olur. Kolayca duyuruları, bültenler ve başvurular için önceden tasarlanmış şablonlarla profesyonel görünümlü e-posta pazarlama kampanyaları oluşturun. | [iOS mağaza bağlantısı](https://itunes.apple.com/us/app/microsoft-connections/id1172261641?mt=8) |  
+| **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | Hızlı, kolay ve eğlenceli iş ve kişisel yardımcınız Cortana ile yaşam haberdar olun. Akıllı dijital yardımcınız, önemli şeyler olursanız cihazlarınızda izlemenize yardımcı olmak için telefonunuza getirir. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.microsoft.cortana),<br>[iOS mağaza bağlantısı](https://apps.apple.com/us/app/cortana/id1054501703) 
 | **Microsoft Dynamics CRM**<p><img alt="Microsoft app - Microsoft Dynamics CRM icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-dynamics-crm.png" width="100"> | Müşterileriniz, iş ve Microsoft Dynamics CRM ile hareket halindeyken üretken kalsanız etkileşim kurun. Her bir randevu için hazır gelen ve güncelleştirme notları, görevler, kişiler, hesaplar, durumlarda ve ayrıntıları yeni hala çalışırken müşteri adayları. Hareket halindeyken bağlamsal iş süreci tarafından destekli satış verilerini yönetmek satış temsilcileri sağlar. Aracılar ve denetçiler servis talebi yönetimi tam kapsamı ile Mobility özgürlüğü elde edersiniz. Kesintisiz bir kullanıcı deneyimi, bir 'bir kez yapılandırma, her yerde dağıtın' modelde alın. İOS ve Android için kullanılabilir. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone),<br>[iOS mağaza bağlantısı](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8) |  
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge, Windows 10 kullanıcıları için bir sürekli gözatma deneyimini cihazlarıyla oluşturur. Arka planda sorunsuz bir şekilde içerik ve veri eşitleme, böylece kullanıcılar bir sinyali atlanıyor olmadan cihazlar arasında göz atabilirsiniz. Hub gibi tanıdık Microsoft Edge özellikleri, kullanıcıların web keser bulmak kolaylaştırarak dağınıklığı aracılığıyla görüntülemek ve kendi içerik üzerinde geçenler yönetme şekilde düzenlemek izin verin. Microsoft Edge için Windows 10 kullanıcıları, bunların akışını kesintiye uğratmadan nerede olurlarsa olsunlar nasıl için ihtiyaç duydukları Web'de gezinmek tasarlanmıştır. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US),<br>[iOS mağaza bağlantısı](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | Şimdiye kadar tablet ve/veya telefon daha iyi Ara Excel elektronik olun. Düzenleme veya elektronik tablolar, bunlar tam olarak bilgisayarları, Mac bilgisayarları, tabletler ve telefonlar arasında nasıl istediğinizi göz atacağız emin emin olun. Çevrilebilir ve kartın yanı sıra sezgisel bir deneyim touch hiçbir zaman bir tanıdık Office görünüm ile çalışan.<p><p>Bu uygulama Android ve iOS için birden çok kimlikli bir uygulama kullanılabilir. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.microsoft.office.excel),<br>[iOS mağaza bağlantısı](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  

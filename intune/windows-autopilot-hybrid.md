@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fb85cc2847c235f7f8079715dee6a2d924f0ac8
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572596"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649096"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Dağıtma hibrit Azure AD'ye katılmış cihazlar, Intune ve Windows Autopilot'ı kullanarak
 Karma Azure Active Directory (Azure AD) ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz-katılmış cihazlar. Bunu yapmak için bu makaledeki adımları izleyin.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Başarılı bir şekilde yapılandırmak, [hibrit Azure AD'ye katılmış cihazları](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Mutlaka [cihaz kaydınızı doğrulayın]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) Get-MsolDevice cmdlet'ini kullanarak.
+Başarılı bir şekilde yapılandırmak, [hibrit Azure AD'ye katılmış cihazları](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Mutlaka [cihaz kaydınızı doğrulayın](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) Get-MsolDevice cmdlet'ini kullanarak.
 
 Kaydedilecek cihazlar ayrıca:
 - Windows 10 v1809 çalışan veya büyük.
-- İnternet erişimine sahip olmalıdır.
-- Active Directory'niz (şu anda desteklenmeyen VPN bağlantısı) erişebilir.
-- Kullanıma hazır deneyimi (OOBE) geçeriz.
+- İnternet erişimi [belgelenen Windows Autopilot ağ gereksinimleri aşağıdaki](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements).
+- (Burada, AD etki alanı ve AD etki alanı denetleyicisi için DNS kayıtlarını çözümlemeye ve kullanıcının kimliğini doğrulamak için etki alanı denetleyicisi ile iletişim. kuruluşunuzun ağa bağlı gerekir böylece bir Active Directory etki alanı denetleyicisine erişimi VPN bağlantısı) şu anda desteklenmiyor.
 - Katılmak için çalıştığınız etki alanının etki alanı denetleyicisi ping mümkün olmayacaktır.
+- Ara sunucu kullanıyorsanız, WPAD Proxy ayarları seçeneği etkinleştirilmiş ve yapılandırılmış olması gerekir.
+- Kullanıma hazır deneyimi (OOBE) geçeriz.
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 otomatik kaydını ayarlama
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7081bc04cc0a6de0a0a6e8214ac0a6edea459378
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 80b6272c6e1f2efc1687fa25216487595a9ddd9f
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558384"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648967"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -96,11 +96,21 @@ Uygulamanız zaten ADAL veya MSAL kullanacak şekilde yapılandırıldı ve kend
 
 Intune uygulama SDK'sını tümleştirmek için eksiksiz bir genel bakış bulunabilir [Android Geliştirici Kılavuzu için Microsoft Intune App SDK](app-sdk-android.md). Yerel bir Android uygulaması Java dilinde geliştirilen ve geliştirilmiş bir Xamarin uygulaması için uygulanması arasındaki farklar vurgulamak için aşağıdaki bölümleri Kılavuzu okuyun ve Intune uygulama SDK'sı Xamarin uygulamanızla tümleştirin yöneliktir C#. Bu bölümlerde, ek olarak değerlendirilmesi gerektiğini ve tamamen kılavuzda okumak için bir alternatif olarak davranamaz.
 
+#### <a name="remapper"></a>Remapper
+1\.4428.1 ile başlayarak, yayın `Microsoft.Intune.MAM.Remapper` paket, bir Xamarin.Android uygulaması olarak eklenebilir [derleme Araçları](app-sdk-android.md#build-tooling) MAM sınıf, yöntem ve sistemleri Hizmetleri değişiklik gerçekleştirmek için. Remapper dahil ise, uygulama oluşturulduğunda yeniden adlandırılan yöntemler ve MAM uygulama bölümleri MAM eşdeğeri değiştirme bölümlerini otomatik olarak gerçekleştirilir.
+
+Bir sınıf özelliği projelerinizi eklenebilir Remapper tarafından MAM ification dışlanacak `.csproj` dosya.
+```xml
+  <PropertyGroup>
+    <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
+  </PropertyGroup>
+```
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Yeniden adlandırılan yöntemler](app-sdk-android.md#renamed-methods)
 Birçok durumda, Android sınıfında kullanılabilir olan bir yöntem, MAM değiştirme sınıfında kesin olarak işaretlenmiştir. Bu durumda, MAM değiştirme sınıfı benzer ada sahip olup geçersiz kılmanız gereken bir yöntem (`MAM` son ekini alır) sağlar. Örneğin, `MAMActivity`’i geçersiz kılıp `OnCreate()` çağırmak yerine `base.OnCreate()`’den türetilirken, `Activity`, `OnMAMCreate()`’i geçersiz kılmalı ve `base.OnMAMCreate()` çağırmalıdır.
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM uygulama](app-sdk-android.md#mamapplication)
-Uygulamanızı tanımlamalıdır bir `Android.App.Application` öğesinden devralınan sınıf `MAMApplication`. Alt sınıfınızın `[Application]` özniteliği ile doğru şekilde donatıldığından ve `(IntPtr, JniHandleOwnership)` oluşturucusunu geçersiz kıldığından emin olun.
+Uygulamanızı tanımlamalıdır bir `Android.App.Application` sınıfı. MAM el ile tümleştirme, gelen devralmalıdır `MAMApplication`. Alt sınıfınızın `[Application]` özniteliği ile doğru şekilde donatıldığından ve `(IntPtr, JniHandleOwnership)` oluşturucusunu geçersiz kıldığından emin olun.
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -147,7 +157,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms tümleştirmesi
 
-İçin `Xamarin.Forms` uygulamalar olması koşuluyla `Microsoft.Intune.MAM.Remapper` ekleyerek MAM sınıfı yeni otomatik olarak gerçekleştirmek için paket `MAM` sınıf hiyerarşisini, yaygın olarak kullanılan sınıflara `Xamarin.Forms` sınıfları. 
+İçin `Xamarin.Forms` uygulamaları `Microsoft.Intune.MAM.Remapper` paket gerçekleştirir MAM sınıfı yeni otomatik olarak ekleyerek `MAM` sınıf hiyerarşisini, yaygın olarak kullanılan sınıflara `Xamarin.Forms` sınıfları. 
 
 > [!NOTE]
 > Buna ek olarak yukarıda ayrıntılı Xamarin.Android tümleştirme için yapılması Xamarin.Forms tümleştirmedir.
@@ -179,6 +189,9 @@ Intune SDK'sı Xamarin bağlamaları varlığını kullanan [Şirket portalı](h
 > Şirket portalı uygulaması olmadığında üzerinde **Android** cihaz, Intune tarafından yönetilen bir uygulama Intune uygulama koruma ilkelerini desteklemeyen normal bir uygulama ile aynı davranış.
 
 Cihaz kaydı olmadan uygulama koruması için kullanıcının Şirket Portalı uygulamasını kullanarak cihazını kaydetmesi gerekli _**değildir**_ .
+
+### <a name="sample-applications"></a>Örnek uygulamalar
+Xamarin.Android ve Xamarin Forms uygulamalarında da MAM işlevlerini vurgulama örnek uygulamalar mevcuttur [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
 
 ## <a name="support"></a>Destek
 Kuruluşunuz var olan bir Intune müşteri ise, Lütfen bir destek bileti açın ve bir sorun oluşturmak için Microsoft desteği temsilcinizle çalışarak [GitHub sorunlar sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) ve size mümkün olduğunca kısa sürede size yardımcı olur. 

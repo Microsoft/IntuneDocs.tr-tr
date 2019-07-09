@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4d12f9e04d275e18c5cf36b444bf1e050560765
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 623891ce84e5a413c83ca3400ccb1cc180d859e5
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558379"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648434"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 
@@ -54,9 +54,9 @@ Kullanıcı UPN ayarını yapılandırmak, Intune veya üçüncü taraf EMM çö
 
       Örnek: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
       
-       > [!NOTE]
-       > In Intune, the App Configuration policy has to be for enrollment type "Managed Devices".
-       > Addicionally, the App needs to be either installed from the Intune Company Portal if set as available or pushed as required to the device. 
+     > [!NOTE]
+     > Intune, uygulama yapılandırma İlkesi kayıt türü ayarlanmalıdır **yönetilen cihazlar**.
+     > Ayrıca, uygulama ya da Intune şirket Portalı'ndan yüklenmiş olması gerekir (varsa kullanılabilir olarak ayarlayın) veya gerekli cihaza gönderilir. 
 
 4. Intune veya üçüncü taraf MDM sağlayıcınızı kullanarak kayıtlı cihazlara, **Birlikte açma yönetimi** ilkesini dağıtın.
 
@@ -78,6 +78,9 @@ Kullanıcı UPN ayarını yapılandırmak, Intune veya üçüncü taraf EMM çö
    |MobileIron | IntuneMAMUPN | Dize | ${userUPN} **veya** ${userEmailAddress} |
    |Citrix uç nokta Yönetim | IntuneMAMUPN | Dize | ${user.userprincipalname} |
    |ManageEngine Mobil Cihaz Yöneticisi | IntuneMAMUPN | Dize | %upn% |
+
+> [!NOTE]  
+> "Yapılandırma Tasarımcısı kullanarak" seçeneği ile bir uygulama yapılandırma İlkesi dağıtırsanız, iOS için Outlook uygulamasında Intunemamupn yapılandırma anahtarı otomatik olarak arka planda ilkesi için yapılandırılır. Bkz. SSS hakkında daha fazla ayrıntı bölümüne gelen [iOS ve Android uygulama yapılandırma İlkesi deneyimi – genel uygulama yapılandırması için yeni Outlook](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
 
 
 ### <a name="example-2-end-user-experience"></a>Örnek 2: Son kullanıcı deneyimi

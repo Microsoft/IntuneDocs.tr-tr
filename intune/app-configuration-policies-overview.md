@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494065"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649034"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
-Bir iOS veya Android uygulamasına yapılandırma ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu yapılandırma ayarları, uygulamanın özelleştirilebilmesini sağlar. Bu yapılandırma ilkeleri doğrudan kullanıcılara veya cihazlara atamayın. Bunun yerine, yapılandırma ilkesini bir uygulamayla ilişkilendirin ve bu uygulamayı atayın. Yapılandırma ilkesi ayarları, uygulama tarafından denetim gerçekleştirildiğinde, genellikle de uygulama ilk defa çalıştırıldığında kullanılır.
+Bir iOS veya Android uygulamasına yapılandırma ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu yapılandırma ayarlarını bir uygulama, uygulama yapılandırma ve Yönetim için endüstri standardı yaklaşımı kullanarak özelleştirilmesine olanak sağlar. Yapılandırma ilkesi ayarları, uygulama tarafından denetim gerçekleştirildiğinde, genellikle de uygulama ilk defa çalıştırıldığında kullanılır.
 
 Dahil etme ve dışlama atamalarının birleşimini kullanarak kullanıcı ve cihaz gruplarına bir uygulama yapılandırma ilkesi atayabilirsiniz. Bir uygulama yapılandırma ilkesini ekledikten sonra bu uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladıktan sonra ilkenin uygulandığı kullanıcı gruplarını dahil etmeyi veya dışlamayı seçebilirsiniz. Bir veya daha fazla grubu dahil etmeyi seçtiğinizde, belirli grupları dahil etmeyi veya yerleşik grupları kullanmayı seçebilirsiniz. Yerleşik gruplar, **Tüm Kullanıcılar**, **Tüm Cihazlar** ve **Tüm Kullanıcılar + Tüm Cihazlar** şeklindedir.
 
@@ -52,8 +52,10 @@ Intune’la uygulama yapılandırmalarını kullanmak için iki seçeneğiniz va
 
 ## <a name="apps-that-support-app-configuration"></a>Uygulama yapılandırmasını destekleyen uygulamalar
 
-Destekleyen uygulamalar için uygulama yapılandırma ilkelerini kullanabilirsiniz. Intune uygulamalarında uygulama yapılandırmasını desteklemek için uygulamalar, uygulama yapılandırmaları kullanımını desteklemek üzere yazılmış olmalıdır. Ayrıntılar için uygulama satıcınıza başvurun.
+### <a name="managed-devices"></a>Yönetilen cihazlar
+Destekleyen uygulamalar için uygulama yapılandırma ilkelerini kullanabilirsiniz. Intune'da uygulama yapılandırmasını desteklemek için uygulamalar tarafından tanımlandığı gibi uygulama yapılandırmaları kullanımını desteklemek üzere yazılmış olmalıdır [Appconfig topluluk](https://www.appconfig.org/members). Ayrıntılar için uygulama satıcınıza başvurun.
 
+### <a name="managed-apps"></a>Yönetilen uygulamalar
 Intune Uygulama SDK’sını uygulamaya ekleyerek veya uygulamayı geliştirildikten sonra sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. Intune uygulama SDK'sı, iOS ve Android için kullanılabilir, uygulamanızı Intune uygulama yapılandırma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Uygulama yapılandırması için Graph API desteği

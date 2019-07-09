@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 095c2ee0aba0680de0c5fc55c1406dba41111b92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527450"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648705"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
@@ -42,6 +42,7 @@ Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune
 - Bu yükleme yöntemi Windows 10S, Windows Home, Windows Team, Windows Holographic veya Windows Holographic for Business çalıştıran cihazlarda desteklenmez.
 - Intune, daha önce Intune ile Office 365 uygulamalarını dağıttığınız bir cihaza Microsoft Mağazası’ndan Office 365 masaüstü uygulamalarının (Office Centennial uygulamaları olarak bilinir) yüklenmesini desteklemez. Bu yapılandırmayı yüklerseniz veri kaybına veya bozulmasına neden olabilir.
 - Birden fazla gerekli veya kullanılabilir uygulama ataması aynı anda çalışmaz. Bir uygulama ataması, kendinden önce yüklenmiş diğer uygulama atamalarının üzerine yazar. Örneğin ilk Office uygulamaları kümesi Word’ü barındırıyor ve sonraki barındırmıyorsa, Word kaldırılır. Bu koşul Visio ve Project uygulamaları için geçerli değildir.
+- Birden çok Office 365 dağıtımı şu anda desteklenmemektedir. Yalnızca bir dağıtım cihaza teslim edilecek
 - **Office sürümü** - Office’in hangi sürümünü (32 bit veya 64 bit) atamak istediğinizi seçin. 32 bit sürümünü hem 32 bit hem de 64 bit cihazlara yükleyebilirsiniz ancak 64 bit sürümünü yalnızca 64 bit cihazlara yükleyebilirsiniz.
 - **Son kullanıcı cihazlarından MSI’yi kaldırma** - Son kullanıcı cihazlarında önceden var olan Office .MSI uygulamalarını kaldırmak isteyip istemediğinizi belirtin. Son kullanıcı cihazlarında önceden var olan Office .MSI uygulamaları bulunuyorsa yükleme başarısız olur. Kaldırılacak uygulamalar, **Uygulama Paketini Yapılandır** altında yükleme için seçilen uygulamalarla sınırlı değildir çünkü tüm Office (MSI) uygulamalarını son kullanıcı cihazından kaldıracaktır. Daha fazla bilgi için bkz. [Office 365 ProPlus’a yükseltirken mevcut Office MSI sürümlerini kaldırma](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version). Intune son kullanıcı makinenize Office’i yeniden yüklediğinde, son kullanıcılar önceki .MSI Office yüklemeleri ile aldıkları aynı dil paketini otomatik olarak alır.
 
@@ -142,7 +143,14 @@ Seçtiyseniz **XML verisi gir** altındaki **ayarı biçimi** açılan kutuda g�
 
 İşiniz bittiğinde, **Uygulama Ekle** bölmesinde **Ekle**’yi seçin. Oluşturduğunuz uygulama, uygulamalar listesinde gösterilir.
 
+## <a name="troubleshooting"></a>Sorun giderme
+Intune kullanan [Office dağıtım aracı](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) indirmek ve Office 365 ProPlus'ı kullanarak, istemci bilgisayarlara dağıtmak için [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). En iyi yöntemler konusunda özetlenen başvuru [yönetme Office 365 uç noktaları](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) ağ yapılandırmanızı istemcilerin erişmesine izin verdiğinden emin olmak için CDN doğrudan yönlendirme CDN yerine trafiği önlemek için merkezi proxy'leri gereksiz gecikmeyi ile tanışın.
+
+Çalıştırma [Microsoft Support ve Office 365 için kurtarma Yardımcısı](https://diagnostics.office.com) yükleme veya çalışma zamanı sorunlar karşılaşırsanız hedeflenen bir cihaz üzerinde.
+
 ## <a name="errors-during-installation-of-the-app-suite"></a>Uygulama paketinin yüklenmesi sırasında karşılaşılan hatalar
+
+Bkz: [Office 365 ProPlus ULS günlüğünü etkinleştirme](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) ayrıntılı yükleme günlükleri görüntüleme hakkında bilgi için.
 
 Karşınıza çıkabilecek yaygın hata kodları ve anlamları, aşağıdaki tablolarda listelenmiştir.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 50ac3ff27c22bf63b73f2ae10e6909112564180f
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049946"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648742"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Yapılandırma Microsoft yönetilen Android Enterprise için giriş ekranı uygulaması
 
@@ -56,7 +56,7 @@ Yapılandırma Tasarımcısı önceden doldurulmuş ayarları ve ilişkili değe
 
 Aşağıdaki tabloda, giriş ekranı yönetilen kullanılabilir yapılandırma anahtarları, değer türleri, varsayılan değerleri ve açıklamaları listeler. Seçili değerlerine göre beklenen cihaz davranışının açıklamayı sağlar. Yapılandırma Tasarımcısı'nda devre dışı bırakılan yapılandırma anahtarlarını tabloda listelenmemiştir.
 
-| Yapılandırma anahtarı | Değer türü | Varsayılan Değer | Açıklama |
+| Yapılandırma anahtarı | Değer türü | Default Value | Açıklama |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kılavuz boyutunu ayarlama | dize | Otomatik | Yönetilen giriş ekranında konumlandırılan uygulamalar için kılavuz boyutu ayarlamanıza olanak tanır. Uygulama satırları ve sütunları kılavuz boyutu şu biçimde tanımlamak için sayısını ayarlayabilirsiniz `columns;rows`. Izgara boyutunu tanımlarsanız, bir satır için giriş ekranınızdaki gösterilir uygulamaların en yüksek sayısı ayarladığınız satır sayısını olacaktır ve giriş ekranına sütununda gösterilen uygulama maksimum sayısı ayarladığınız sütun sayısı olacaktır. |
 | Ekran başlığı etkinleştir | bool | TRUE | Üst başlık, akış veya akış kartlar gibi yönetilen giriş ekranına sunan farklı görünümleri sağlar. Bu ayarı etkinleştirirseniz, cihaz kullanıcılarının başlığı görürsünüz. |
@@ -74,13 +74,13 @@ Aşağıdaki tabloda, giriş ekranı yönetilen kullanılabilir yapılandırma a
 | Giriş ekranı akışını etkinleştir | bool | FALSE | Akış, giriş ekranının sol geçirilerek görülebilir giriş ekranının sağlar. Bu akış, içerik haber, takvim, sık kullanıcı uygulamaları ve Cortana sesli Yardımcısını kart vb. gibi farklı türde görüntüler. Bunu etkinleştirmek, son kullanıcı için giriş ekranınızdaki sol geçirilerek akışa gidebilirsiniz olacaktır. |
 | Genel Bakış modunu etkinleştir | bool | FALSE | Son kullanıcıların eklemek veya kaldırmak için giriş ekranınızdaki varsayılan ekranından sağ tarafından çekerek erişilebilir farklı sayfalar sağlar. Bu etkinleştirirseniz, son kullanıcının varsayılan sayfasının giriş ekranı sağa disk belleğine alınan eklemek mümkün olacaktır, varsayılan sayfasını değiştirmek mümkün olacaktır ve yönetilen ana ekran ayarlarına erişmek mümkün olacaktır. |
 | Cihaz telemetrisini etkinleştir | bool | FALSE | Yönetilen giriş ekranı için yakalanan tüm telemetri sağlar. Microsoft, bu etkinleştirirseniz, belirli bir uygulamanın bu cihazda başlatılmadan kaç kez gibi cihaz kullanım telemetri yakalamak mümkün olacaktır. |
-| Beyaz listeye uygulamaları ayarlama | bundleArray | FALSE | Görünür uygulamalar kümesi için giriş ekranınızdaki cihazda yüklü uygulamalar arasında tanımlamanızı sağlar. Uygulamaları görünür hale getirmek istediğiniz uygulamaları, uygulama paketi adı girerek tanımlayabilir, örneğin com.android.settings ayarları erişilebilir giriş ekranında hale getirir. Uygulamalar bu, izin verilenler listesi bu bölümdeki zaten giriş ekranında görünür için cihazda yüklü. |
+| İzin ver-listelenen uygulamaları ayarlama | bundleArray | FALSE | Görünür uygulamalar kümesi için giriş ekranınızdaki cihazda yüklü uygulamalar arasında tanımlamanızı sağlar. Uygulamaları görünür hale getirmek istediğiniz uygulamaları, uygulama paketi adı girerek tanımlayabilir, örneğin com.microsoft.emmx ayarları erişilebilir giriş ekranında hale getirir. Uygulamalar bu, izin verilenler listesi bu bölümdeki zaten giriş ekranında görünür için cihazda yüklü. |
 | Sabitlenmiş kümesi web bağlantıları | bundleArray | FALSE | PIN Web sitelerine hızlı başlatma simgeler ana ekran olarak sağlar. Bu yapılandırma ile URL tanımlayabilir ve tek bir dokunuşla tarayıcıda başlatmak son kullanıcı için giriş ekranına ekleyin. |
 | Arama çubuğunu etkinleştir | bool | FALSE | Giriş ekranı arama çubuğunda sağlar. Bu etkinleştirirseniz, cihazın kullanıcıları için giriş ekranınızdaki nerede bunlar ne olursa olsun, Web'de arama yapmak istediğiniz girmeniz mümkün olur arama çubuğu görürsünüz. |
 | Ayarlar uygulamasında devre dışı bırak | bool | FALSE | Ayarlar sayfasında yönetilen giriş ekranında devre dışı bırakır. Bu devre dışı bırakırsanız, son kullanıcının cihazın giriş yönetilen ekranın ayarlarına almak mümkün olmayacaktır. |
 | Ekran koruyucusunu etkinleştir | bool | FALSE | Ekran koruyucu modu veya etkinleştirmek için. Varsa ayarlamak true, yapılandırabileceğiniz **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**, ve **media_detect_ screen_saver**. |
-| Ekran koruyucu görüntüsü | dize |   | Ekran koruyucu görüntünün URL'sini ayarlayın. Hiçbir URL ayarlarsanız, ekran koruyucu etkin olduğunda varsayılan ekranı cihazlarını göstermeyecektir.  |
-| Ekran koruyucu zamanı göster | integer | 0 | Ekran koruyucu modu sırasında ekran koruyucuyu süreyi saniye cinsinden aygıt ayarlamak için seçeneği verir görüntüler. Süresiz olarak cihaz etkin olana kadar 0 olarak ayarlanırsa, ekran koruyucuyu ekran koruyucu modu gösterilir.  |
+| Ekran koruyucu görüntüsü | dize |   | Ekran koruyucu görüntünün URL'sini ayarlayın. Hiçbir URL ayarlarsanız, ekran koruyucu etkin olduğunda varsayılan ekran koruyucu görüntüsü cihazlarını göstermeyecektir. Varsayılan görüntü giriş ekranı yönetilen uygulama simgesi gösterir.  |
+| Ekran koruyucu zamanı göster | integer | 0 | Ekran koruyucu modu sırasında ekran koruyucu süreyi saniye cinsinden aygıt ayarlamak için seçeneği verir görüntüler. Süresiz olarak cihaz etkin olana kadar 0 olarak ayarlanırsa, ekran koruyucusu ekran koruyucu modunu gösterir.  |
 | Ekran koruyucu etkinleştirmek için etkin olmayan zaman | integer | 30 | Ekran koruyucu tetiklemeden önce cihazı devre dışı kaldığı saniye sayısı. 0 olarak cihaz hiçbir zaman ekran koruyucu moduna geçer. |
 | Ekran koruyucu göstermeden önce medya algılayın | bool | TRUE | Cihazda ses/video oynatma, cihaz ekranında ekran koruyucu göstermelidir olup olmadığını seçin. TRUE olarak cihaz değeri ne olursa olsun ses/video, çalışmaz, **inactive_time_to_show_scree_saver**. False olarak ayarlanırsa, cihaz ekranı Ekran koruyucu ayarlanan değere göre gösterilir, **inactive_time_to_show_screen_saver**.   |
 | Sanal giriş düğmesini etkinleştir | bool | FALSE | Bu ayarı etkinleştirmek `True` son kullanıcı oldukları geçerli görev yönetilen giriş ekranına dönersiniz yönetilen giriş ekranı giriş düğmesi erişmesine izin vermek için.  |
@@ -89,6 +89,9 @@ Aşağıdaki tabloda, giriş ekranı yönetilen kullanılabilir yapılandırma a
 | Çıkış kilit görev modu parolası | dize |   | Sorun giderme için kilit görev modundan geçici olarak bırakmak için kullanılacak bir 4-6 basamaklı kodu girin. |
 | Wi-Fi ayar Göster | bool | FALSE | Bu ayar dönüştürmeye `True` Aç veya kapat Wi-Fi veya farklı bir Wi-Fi ağlarına bağlanmak için son kullanıcı sağlar.  |
 | Bluetooth ayarı Göster | bool | FALSE | Bu ayar dönüştürmeye `True` Bluetooth açıp kapatabilir ve bağlanmak için farklı Bluetooth özellikli cihazlar için son kullanıcı sağlar.   |
+| Uygulamaları bir klasörde adına göre sıralanır. | bool | TRUE | Bu ayar dönüştürmeye `False` bir klasördeki bunlar belirtilen sırada görünmesini öğeleri sağlar. Aksi takdirde, klasör alphbetically içinde görünürler.   |
+| Etkin uygulama sırası | bool | FALSE | Bu ayar dönüştürmeye `True` sağlayan yönetilen giriş ekranında uygulamaların weblinks ve klasörleri sırasını ayarlamanıza olanak sağlar. Etkinleştirildikten sonra sıralama ile ayarlanmış **app_order**kullanarak son kullanıcının Bluetooth açıp kapatabilir ve bağlanmak için farklı Bluetooth özellikli cihazlar.   |
+| Uygulama sırası | bundleArray | FALSE | Yönetilen giriş ekranında uygulamaların, weblinks ve klasörleri sırasını belirtmenizi sağlar. Bu ayarın kullanılabilmesi için **kilit giriş ekranı** etkinleştirilmelidir, **kılavuz boyutunu ayarlayın** tanımlanmalıdır ve **etkin uygulama sırası** ayarlanmalıdır `True`.   |
 
 ## <a name="enter-json-data"></a>JSON verilerini gir
 
@@ -111,10 +114,6 @@ JSON betiği dahil tüm kullanılabilir yapılandırma anahtarlara sahip bir ör
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -236,6 +235,87 @@ JSON betiği dahil tüm kullanılabilir yapılandırma anahtarlara sahip bir ör
         {
             "key": "show_bluetooth_setting",
             "valueBool": false
+        },
+        {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "key": "managed_folders",

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb9c87974cd9d241340718375ab9c530b1b2f136
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: a80dd650304d99df0d2adf636fcc687444adada2
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558488"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648985"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -49,7 +49,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 ### <a name="encryption"></a>Şifreleme
 | Ayar | Nasıl kullanılır? | Varsayılan değer |
 |------|------|------|
-| **Kuruluş verilerini şifreleme** | Seçin **gerektiren** bu uygulamada iş veya Okul verilerinin şifrelenmesini etkinleştirmek için. Intune, uygulama verilerini güvenli bir şekilde şifrelemek için 256 bit AES şifreleme düzeni Android Keystore sistemiyle birlikte OpenSSL kullanır. Veriler, dosya GÇ görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. SDK'sı, 128 bit anahtar içeriği ve eski SDK sürümleri kullanan uygulamalar ile uyumluluk için destek sağlamak üzere devam eder. <br><br> Şifreleme yöntemi FIPS 140-2 ile uyumlu olan.     |  **Gerekli**|  
+| **Kuruluş verilerini şifreleme** | Seçin **gerektiren** bu uygulamada iş veya Okul verilerinin şifrelenmesini etkinleştirmek için. Intune, uygulama verilerini güvenli bir şekilde şifrelemek için 256 bit AES şifreleme düzeni Android Keystore sistemiyle birlikte OpenSSL kullanır. Veriler, dosya GÇ görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. Yeni dosyalar 256 bit anahtarlarla şifrelenir. 128 bit şifreli dosyaları var olan 256 bit anahtara geçiş girişimi yapılacaktır, ancak işlem garanti edilmez. 128 bit anahtar ile şifrelenmiş dosyalar, okunabilir kalır. <br><br> Şifreleme yöntemi FIPS 140-2 ile uyumlu olan.     |  **Gerekli**|  
 | <ul><ui>**Kayıtlı cihazlarda kuruluş verilerini şifreleme** | Seçin **gerektiren** tüm cihazlarda Intune uygulama katmanı şifrelemesi ile Kurumsal verilerin şifrelenmesini zorunlu tutmak için. Seçin **gerekmiyor** kayıtlı cihazlarda Intune uygulama katmanı şifreleme ile kuruluş verilerini şifreleme zorunlu değildir.| **Gerekli** |
 
 

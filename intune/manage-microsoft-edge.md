@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b267e1c59ab59737b58b73054b90b0f8e026e959
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 147547577615c6e74a9c5b3dd8b200ba387bad79
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558125"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648460"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -99,7 +99,7 @@ SSO, cihazınızın iOS cihazları için Microsoft Authenticator uygulaması vey
 
 Uygulama yapılandırmalarının uygulanması için tarayıcı kullanıcı korumalı veya cihazın başka bir uygulama tarafından zaten yönetilmelidir [Intune uygulama koruma İlkesi](app-protection-policy.md).
 
-Korumalı browser uygulama yapılandırması oluşturmak için:
+Microsoft Edge için uygulama yapılandırma oluşturmak için:
 
 1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seçin **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**.
@@ -125,7 +125,27 @@ Azure AD'de ayarları kullanıcı gruplarına atayabilirsiniz. Bu kullanıcı he
 3. Sonraki dikey pencerede seçin **atamaları**.
 4. Üzerinde **atamaları** dikey penceresinde, Azure AD grubunu uygulama yapılandırmasını atamak ve ardından istediğiniz **Tamam**.
 
-## <a name="configure-application-proxy-settings-for-protected-browsers"></a>Korumalı tarayıcılar için uygulama Proxy ayarlarını yapılandırma
+## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Microsoft Edge yerine Intune Managed Browser kullanıcıları 
+
+Intune Managed Browser ve Microsoft Edge tarayıcı İlkesi korumalı olarak kullanılabilir. Kullanıcılarınızın doğru tarayıcı uygulamasını kullanmak için yönlendirilmesi emin olmak için tüm, Intune tarafından yönetilen uygulamaların (örneğin, Outlook, OneDrive ve SharePoint) ile şu yapılandırma ayarı hedef:
+
+|    Anahtar    |    Value    |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.useEdge`    |    Değer `true` indirin ve Microsoft Edge kullanıcılarınıza yönlendirir.<br>Değer `false` kullanıcılarınızın Intune Managed Browser kullanmasını sağlar.    |
+
+Bu uygulama yapılandırma değeri ise **değil** ayarlayın, aşağıdaki mantık tarayıcıyı Kurumsal bağlantılarını açmak için kullanılacak tanımlayacaksınız.
+
+Android’de:
+- Intune Managed Browser ve Microsoft Edge cihazlarına indirilen bir kullanıcı varsa, Intune Managed Browser başlatır. 
+- Microsoft Edge, yalnızca Microsoft Edge cihaza yüklenir ve Intune ilkesiyle hedeflenen başlatır.
+- Yönetilen tarayıcının yalnızca Managed Browser olan cihazda ve Intune ilkesiyle hedeflenen başlatır.
+
+Intune SDK’sını iOS v için tümleştiren uygulamalarda iOS’ta. 9.0.9+:
+- Cihazda Managed Browser ve Microsoft Edge kullanıyorsanız, Intune Managed Browser başlatır.  
+- Microsoft Edge, yalnızca Microsoft Edge olan cihazda ve Intune ilkesiyle hedeflenen başlatır.
+- Yönetilen tarayıcının yalnızca Managed Browser olan cihazda ve Intune ilkesiyle hedeflenen başlatır.
+
+## <a name="configure-application-proxy-settings-for-microsoft-edge"></a>Microsoft Edge için uygulama Proxy ayarlarını yapılandırma
 
 Microsoft Edge kullanabilirsiniz ve [Azure AD uygulama proxy'si](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) birlikte kullanıcıların mobil cihazlarından intranet sitelerine erişmesini sağlamak için. 
 
@@ -143,7 +163,7 @@ Azure AD uygulama ara sunucusunu etkinleştirme senaryoları bazı örnekleri ş
 > [!NOTE]
 > Güncelleştirilmiş Uygulama Ara Sunucusu’nun yeniden yönlendirme verilerinin Managed Browser’da veya Microsoft Edge'de etkinleşmesi 24 saati bulabilir.
 
-#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>1\. adım: Outlook'tan korumalı tarayıcıya otomatik yeniden yönlendirmeyi etkinleştirme
+#### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>1\. adım: Otomatik yeniden yönlendirme Outlook uygulamasından Microsoft Edge için etkinleştirme
 Outlook ayarına imkan veren bir uygulama koruma İlkesi ile yapılandırma **yönetilen tarayıcı ilkesiyle içerik paylaşımı web**.
 
 ![Ekran görüntüsü, uygulama koruma İlkesi - paylaşım web içeriği ilke ile yönetilen tarayıcılar](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
@@ -189,7 +209,7 @@ Yönetilen yer işaretlerini yapılandırmak için aşağıdaki anahtar/değer �
 
 Varsayılan olarak, kullanıcılarınız için Microsoft Edge yer işaretleri içinde bir klasördeki yapılandırılmış olan MyApps siteleri gösterilmektedir. Klasör kuruluşunuzun adını taşır.
 
-|    Anahtar    |    Value    |
+|    Anahtar    |    Değer    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **Doğru** MyApps içinde Microsoft Edge işaretlerini gösterir.<p>**False** Microsoft Edge içinde MyApps gizler.    |
 
@@ -198,7 +218,7 @@ Uygulama yapılandırması, kullanıcılarınız kendi iş profili kullanırken 
 
 Aşağıdaki anahtar/değer çiftleri herhangi birini yapılandırmak için Microsoft Edge için bir izin verilen veya engellenen site listesi kullanın. 
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Aşağıdakilerden birini seçin:<p>1. İzin verilen URL’leri belirtme (yalnızca bu URL'lere izin verilir, diğer sitelere erişilemez):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Engellenen URL’leri belirtme (tüm diğer sitelere erişilebilir):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Bir anahtara karşılık gelen değer bir URL listesidir. İzin vermek veya kanalla ayrılan tek bir değer olarak engellemek istediğiniz URL'leri girin `|` karakter.<br>**Örnekler:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
@@ -242,29 +262,9 @@ Microsoft Edge ile oluşturulan çift kimlik modeliyle, son kullanıcıların In
 
 Bu geçici bir geçiş izin verip yapılandırmak için aşağıdaki anahtar/değer çifti kullanın:
 
-|    Anahtar    |    Value    |
+|    Anahtar    |    Değer    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **Doğru** Microsoft Edge engellenen siteler açmak için geçiş, kullanıcıların kendi kişisel bağlam sağlar.<p>**Blok** Microsoft Edge, kullanıcıların geçiş öğesinden engeller. Kullanıcılar yalnızca erişmeye çalıştığınız sitenin engellendiğini bildiren bir ileti görüntülenir.    |
-
-## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Microsoft Edge yerine Intune Managed Browser kullanıcıları 
-
-Intune Managed Browser ve Microsoft Edge tarayıcı İlkesi korumalı olarak kullanılabilir. Kullanıcılarınızın doğru tarayıcı uygulamasını kullanmak için yönlendirilmesi emin olmak için tüm, Intune tarafından yönetilen uygulamaların (örneğin, Outlook, OneDrive ve SharePoint) ile şu yapılandırma ayarı hedef:
-
-|    Anahtar    |    Değer    |
-|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    Değer `true` indirin ve Microsoft Edge kullanıcılarınıza yönlendirir.<br>Değer `false` kullanıcılarınızın Intune Managed Browser kullanmasını sağlar.    |
-
-Bu uygulama yapılandırma değeri ise **değil** ayarlayın, aşağıdaki mantık tarayıcıyı Kurumsal bağlantılarını açmak için kullanılacak tanımlayacaksınız.
-
-Android’de:
-- Intune Managed Browser ve Microsoft Edge cihazlarına indirilen bir kullanıcı varsa, Intune Managed Browser başlatır. 
-- Microsoft Edge, yalnızca Microsoft Edge cihaza yüklenir ve Intune ilkesiyle hedeflenen başlatır.
-- Yönetilen tarayıcının yalnızca Managed Browser olan cihazda ve Intune ilkesiyle hedeflenen başlatır.
-
-Intune SDK’sını iOS v için tümleştiren uygulamalarda iOS’ta. 9.0.9+:
-- Cihazda Managed Browser ve Microsoft Edge kullanıyorsanız, Intune Managed Browser başlatır.  
-- Microsoft Edge, yalnızca Microsoft Edge olan cihazda ve Intune ilkesiyle hedeflenen başlatır.
-- Yönetilen tarayıcının yalnızca Managed Browser olan cihazda ve Intune ilkesiyle hedeflenen başlatır.
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Microsoft Edge İos'ta yönetilen uygulama günlüklerine erişmek için kullanın. 
 
