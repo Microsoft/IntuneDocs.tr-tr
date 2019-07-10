@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416846"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713268"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune'da Windows 10 cihazları yapılandırmak için güvenlik temellerini kullanın
 
@@ -155,7 +155,7 @@ Dönüştürme tamamlandıktan sonra kaydetmenizin ardından temel hemen atanan 
 3. Üzerinde **sürümünü Değiştir** bölmesinde, kullanım **güncelleştirmek için bir güvenlik taban çizgisi seçin** açılır listesinde, kullanmak istediğiniz sürüm örneği seçin.  
 
    ![bir sürüm seçin](./media/security-baselines/select-instance.png)  
- 
+   
 4. Seçin **İnceleme güncelleştirmeniz** profilleri geçerli örneği için başka bir sürümü ve seçtiğiniz yeni sürümü arasındaki farkı görüntüler bir CSV dosyası indirilemedi. Hangi ayarların eklenen anlamanız kaldırıldıysa, bu dosyayı gözden geçirmesine ve güncelleştirilmiş profilinde bu ayarları için varsayılan değerleri nelerdir.  
 
    Hazır olduğunuzda bir sonraki adıma devam edin.  

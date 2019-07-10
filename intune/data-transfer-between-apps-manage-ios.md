@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 623891ce84e5a413c83ca3400ccb1cc180d859e5
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 91633aee190b5fb5bda9495f66d4503042aa6a80
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648434"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713317"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 
@@ -52,7 +52,7 @@ Kullanıcı UPN ayarını yapılandırmak, Intune veya üçüncü taraf EMM çö
 
       **anahtar** = ıntunemamupn, **değeri** = <username@company.com>
 
-      Örnek: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      Örnek: [‘IntuneMAMUPN’, ‘janellecraig@contoso.com’]
       
      > [!NOTE]
      > Intune, uygulama yapılandırma İlkesi kayıt türü ayarlanmalıdır **yönetilen cihazlar**.

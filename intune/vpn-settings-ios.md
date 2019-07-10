@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d922ecde0159603acbfbc3dc0590592592d72645
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1eee827ace5dae92b485a250e6e4e0b9b426fbe6
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046218"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713197"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlardaki VPN ayarlarını yapılandırma
 
@@ -35,13 +35,13 @@ Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
 - **SonicWall Mobile Connect**
 - **F5'e Erişim eski**: F5'e erişimi uygulama sürüm 2.1 için geçerli ve önceki sürümler.
 - **F5'e Erişim**: F5'e erişim uygulama sürüm 3.0 için geçerlidir ve üzeri.
-- **Palo Alto Networks GlobalProtect (eski)**: Palo Alto ağları GlobalProtect uygulama sürümü 4.1 ve önceki sürümleri için geçerlidir.
+- **Palo Alto Networks GlobalProtect (eski)** : Palo Alto ağları GlobalProtect uygulama sürümü 4.1 ve önceki sürümleri için geçerlidir.
 - **Palo Alto Networks GlobalProtect**: Palo Alto ağları GlobalProtect uygulama sürüm 5.0 ve üzeri için geçerlidir.
 - **Pulse Secure**
 - **Cisco (IPSec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **Zscaler**: Koşullu erişim kullanın veya kullanıcıların Zscaler oturum açma ekranı atlamasına izin ver ardından Zscaler özel erişim (ZPA) Azure AD hesabınız ile tümleştirmeniz gerekir. Ayrıntılı adımlar için bkz. [Zscaler belgeleri](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Zscaler**: Koşullu erişim kullanın veya kullanıcıların Zscaler oturum açma ekranı atlamasına izin ver ardından Zscaler özel erişim (ZPA) Azure AD hesabınız ile tümleştirmeniz gerekir. Ayrıntılı adımlar için bkz. [Zscaler belgeleri](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad). 
 - **Özel VPN**
 
 > [!NOTE]
