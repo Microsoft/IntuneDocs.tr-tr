@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735461"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67794359"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -107,6 +107,7 @@ Intune uygulama SDK 'sını tümleştirmeyle ilgili kapsamlı bir genel bakış 
 1\.4428.1 sürümünden itibaren, `Microsoft.Intune.MAM.Remapper` paket, mam sınıfı, yöntemi ve sistem hizmetleri yerine getirmek için [derleme araçları](app-sdk-android.md#build-tooling) olarak bir Xamarin. Android uygulamasına eklenebilir. Yeniden eşleştirici dahil edildiğinde, yeniden adlandırılmış Yöntemler ve MAM uygulama bölümlerinin MAM denk değiştirme bölümü, uygulama oluşturulduğunda otomatik olarak gerçekleştirilir.
 
 Yeniden eşleştirici tarafından mam bir sınıfı hariç tutmak için, proje `.csproj` dosyanıza aşağıdaki özellik eklenebilir.
+
 ```xml
   <PropertyGroup>
     <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
