@@ -1,7 +1,7 @@
 ---
-title: Arşiv - Windows 10 için Intune MDM güvenlik temelleri ayarları
+title: Windows 10 için Intune MDM güvenlik temelleri ayarlarının Arşivi
 titleSuffix: Microsoft Intune
-description: Windows 10 Intune yönetmek için MDM güvenlik taban çizgisi ayarlarını son yayın sürümleri Arşivi
+description: Windows 10 ' un Microsoft Intune ile yönetilmesi için MDM güvenlik temeli ayarlarının geçmiş sürüm sürümlerinin Arşivi
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,1088 +16,1088 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8e83aa6b13f192da87a78690b0040e545d8943e
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67417876"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735780"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
-# <a name="archive-of-mdm-security-baseline-settings"></a>MDM güvenlik taban çizgisi ayarlarını Arşivi  
+# <a name="archive-of-mdm-security-baseline-settings"></a>MDM güvenlik taban çizgisi ayarlarının Arşivi  
 
-Intune MDM güvenlik temeli arşivlenen sürümleri için ayrıntıları görüntüleyin.  
+Intune için MDM güvenlik temelinin arşivlenmiş sürümlerinin ayrıntılarını görüntüleyin.  
 
-Yeni bir MDM güvenlik temeli bıraktığında önceki ayarların listesi için arşiv güvenlik taban çizgisi ayarlarını makalesinden taşıyın. Bu Arşiv eski temel sürümler için varsayılan ayarları anlaşılmasına yardımcı olması için sağlanmıştır ve bu sürümleri yine de kullanım için desteklenir.
+Yeni bir MDM güvenlik temeli yayımlandığında, önceki ayarlar listesi güvenlik taban çizgisi ayarları makalesinden bu arşive taşınır. Bu sürümler hala kullanım için desteklenmektedir ve bu arşiv, eski temel sürümlerin varsayılan ayarlarını anlamak için sağlanır.
 
-Kullanım için bir temel sürüm artık desteklenmeyen, daha sonra bu makaleden kaldırılacak.
+Bir temel sürümün kullanım için artık desteklenmemesi durumunda bu makaleden kaldırılır.
 
-- Kullanılabilir ayarları görüntüleyin [geçerli MDM güvenlik temeli](security-baseline-settings-mdm.md) 
-- Hakkında bilgi edinin [güvenlik temellerini](security-baselines.md)ve, güvenlik temeli profillerinde temel sürümünden yükseltme.
+- [GEÇERLI MDM güvenlik temeliyle](security-baseline-settings-mdm.md) kullanılabilir olan ayarları görüntüleyin 
+- [Güvenlik temelleri](security-baselines.md)ve güvenlik taban çizgisi profillerindeki temel sürümü yükseltme hakkında bilgi edinin.
 
-## <a name="preview-mdm-security-baseline-for-october-2018"></a>Önizleme: Ekim 2018 için MDM güvenlik temeli  
+## <a name="preview-mdm-security-baseline-for-october-2018"></a>Önizleme: 2018 Ekim için MDM güvenlik temeli  
 
-*Bu temel yerine geçen [Spring 2019 (19 saat 1) için MDM güvenlik temeli](security-baseline-settings-mdm.md)*
+*[Spring 2019 Için MDM güvenlik temeliyle Bu taban çizgisinin yerini almıştır (19H1)](security-baseline-settings-mdm.md)*
 
-### <a name="above-lock"></a>Kilit üzerinde  
+### <a name="above-lock"></a>Kilidin üstünde  
 
-Daha fazla bilgi için [ilke CSP'si - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) bölümüne bakın.  
 
-- **Blok görüntülenmesini kutlama bildirimleri**  
-  Bu ilke ayarı, uygulama bildirimleri kilit ekranında görünmesini önlemek sağlar. Bu ilke ayarını etkinleştirirseniz, hiçbir uygulama bildirimleri kilit ekranında görüntülenir. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların hangi uygulamaları seçebilirsiniz kilit ekranında bildirimleri görüntüleme.
+- **Bildirim bildirimlerinin görüntülenmesini engelle**  
+  Bu ilke ayarı, uygulama bildirimlerinin kilit ekranında görüntülenmesini engellemenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kilit ekranında hiçbir uygulama bildirimi gösterilmez. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, kullanıcılar hangi uygulamaların kilit ekranında bildirim görüntülemesini seçebilirler.
   
   **Varsayılan**: Evet  
 
 ### <a name="app-runtime"></a>Uygulama çalışma zamanı  
 
-Daha fazla bilgi için [ilke CSP'si - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime
-) Windows belgelerinde.  
+Daha fazla bilgi için Windows [belgelerindeki ilke CSP-appruntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime
+) bölümüne bakın.  
 
-- **Windows Store uygulamaları için isteğe bağlı Microsoft hesapları**  
-  Bu ilke ayarı Microsoft hesaplarının oturum açmak için bir hesap gerektiren Windows Store uygulamaları için isteğe bağlı olup olmadığını denetlemenizi sağlar. Bu ilke yalnızca destekleyen Windows Store uygulamaları etkiler. Bu ilke ayarını etkinleştirirseniz, genellikle oturum açmak için bir Microsoft hesabı gerektiren Windows Store uygulamaları, bunun yerine bir kuruluş hesabıyla oturum açmasına izin verir. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların bir Microsoft hesabıyla oturum açmanız gerekir.  
+- **Microsoft hesapları Windows Mağazası uygulamaları için isteğe bağlı**  
+  Bu ilke ayarı, Microsoft hesaplarının bir hesabının oturum açmasını gerektiren Windows Mağazası uygulamaları için isteğe bağlı olup olmadığını denetlemenize olanak tanır. Bu ilke yalnızca bunu destekleyen Windows Mağazası uygulamalarını etkiler. Bu ilke ayarını etkinleştirirseniz, genellikle oturum açmak için bir Microsoft hesabı gerektiren Windows Mağazası uygulamaları, kullanıcıların bunun yerine bir kurumsal hesapla oturum açmalarına olanak tanır. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, kullanıcıların bir Microsoft hesabı oturum açması gerekir.  
   
   **Varsayılan**: Enabled  
 
-### <a name="application-management"></a>Uygulama Yönetimi  
+### <a name="application-management"></a>Uygulama yönetimi  
 
-Daha fazla bilgi için [ilke CSP'si - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) bölümüne bakın.  
 
-- **Oyun DVR (yalnızca Masaüstü) engelle**  
-  Kaydetme ve oyun yayın izin verilip verilmediğini yapılandırır.
+- **Oyun DVR 'ı engelle (yalnızca masaüstü)**  
+  Oyunları kaydetmeye ve yayına izin verilip verilmeyeceğini yapılandırır.
   
   **Varsayılan**: Evet  
 
 ### <a name="auto-play"></a>Otomatik Yürüt  
 
-Daha fazla bilgi için [ilke CSP'si - Autoplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) Windows belgelerinde.  
+Daha fazla bilgi için bkz. [Ilke CSP-Windows belgelerinde otomatik kullan](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) .  
 
-- **Otomatik yürütme varsayılan otomatik çalıştırılan davranış**  
-  Bu ayar otomatik çalıştırma komutları için varsayılan davranışını etkiler. Otomatik Çalıştırma komutları autorun.inf dosyalarında depolanır ve yükleme programları veya diğer yordamlar başlatabilirsiniz. Zaman *etkin*, Yöneticiler, Windows Vista çalıştıran bir cihazda varsayılan otomatik çalıştırma davranışını değiştirebilir veya üzeri. Davranışı ayarlanabilir: a) tamamen otomatik çalıştırma komutları devre dışı bırakın veya (b) davranış otomatik olarak otomatik çalıştırma komutunun yürütülmesi yeniden öncesi Windows Vista için geri döndür. Ayarlandığında *devre dışı bırakılmış* veya *yapılandırılmadı*, cihazları Windows Vista çalıştıran veya eklenebilir olup kullanıcı daha sonra sor otomatik çalıştırma komutunu çalıştırmanız gerekir.
+- **Varsayılan otomatik çalıştırma davranışını Otomatik Yürüt**  
+  Bu ayar Autorun komutlarının varsayılan davranışını etkiler. Autorun komutları Autorun. inf dosyalarında depolanır ve yükleme programlarını veya diğer yordamları başlatabilir. *Etkinleştirildiğinde*Yöneticiler, Windows Vista veya üstünü çalıştıran bir cihazda varsayılan otomatik çalıştırma davranışını değiştirebilir. Davranış: a), otomatik çalıştırma komutunu otomatik olarak yürüten Windows Vista öncesi davranışına geri dönmek için şu şekilde ayarlanabilir: a). *Devre dışı* veya *yapılandırılmamış*olarak ayarlandığında, Windows Vista veya sonraki bir sürümü çalıştıran cihazlar kullanıcıdan bir otomatik çalıştırma komutunun çalıştırılıp çalıştırılmayacağı konusunda bilgi ister.
   
-  **Varsayılan**: Yürütülmeyen  
+  **Varsayılan**: Yürütme  
   
 - **Otomatik yürütme modu**  
-  Bu ilke ayarı, otomatik özelliği devre dışı bırakmak sağlar. Autoplay medyayı sürücüye takın sürücüyü okumaya başlar. Sonuç olarak, programları ve müzik kurulum dosyası ses ortamdaki hemen başlayın. Windows XP SP2 öncesinde otomatik bir disket sürücüsü gibi çıkarılabilir sürücüleri (ancak CD-ROM sürücüsü) ve ağ sürücülerini varsayılan olarak devre dışı bırakıldı. Windows XP SP2'den başlayarak, Autoplay Zip sürücüleri ve bazı USB yığın depolama cihazı gibi çıkarılabilir sürücülerde de, etkinleştirilir. Bu ilke ayarını etkinleştirirseniz, otomatik CD-ROM ve çıkarılabilir medya sürücüsü devre dışı veya tüm sürücüleri devre dışı olur. Bu ilke ayarı ek sürücüler tür Autoplay devre dışı bırakır. Varsayılan olarak devre dışı bırakılmış sürücülerde Autoplay etkinleştirmek için bu ayarı kullanamazsınız. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, otomatik etkinleştirilir. Not: Bu ilke ayarı bilgisayar yapılandırması ve kullanıcı yapılandırması klasörlerde görünür. İlke ayarları çakışırsa, Bilgisayar Yapılandırması ilke ayarında Kullanıcı Yapılandırması ilke ayarı önceliklidir.
+  Bu ilke ayarı, Otomatik Kullan özelliğini kapatmanıza olanak sağlar. Otomatik yürütme, sürücüye medya eklediğiniz andan itibaren bir sürücüden okumaya başlar. Sonuç olarak, programların kurulum dosyası ve ses medyasındaki müzikler hemen başlar. Windows XP SP2 'den önce, otomatik kullan, disket sürücüsü (CD-ROM sürücüsü değil) ve ağ sürücülerinde varsayılan olarak çıkarılabilir sürücülerde devre dışıdır. Windows XP SP2 'den başlayarak, Zip sürücüleri ve bazı USB yığın depolama cihazları dahil olmak üzere, Otomatik Çalıştır, çıkarılabilir sürücüler için de etkinleştirilir. Bu ilke ayarını etkinleştirirseniz, otomatik kullan, CD-ROM ve çıkarılabilir medya sürücülerinde devre dışıdır veya tüm sürücülerde devre dışı bırakılır. Bu ilke ayarı, ek sürücü türlerinde Otomatik yürütmeyi devre dışı bırakır. Bu ayarı, varsayılan olarak devre dışı bırakılmış sürücülerde otomatik olarak etkinleştirmek için kullanamazsınız. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Otomatik Kullan özelliği etkinleştirilir. Not: Bu ilke ayarı, bilgisayar yapılandırması ve Kullanıcı Yapılandırması klasörlerinde görüntülenir. İlke ayarları çakışıyorsa, bilgisayar yapılandırması 'ndaki ilke ayarı, Kullanıcı Yapılandırması 'ndaki ilke ayarından önce gelir.
   
   **Varsayılan**: Devre dışı
 
-- **Toplu olmayan cihazlar için Otomatik Oynat engelle**  
-  Bu ilke ayarı, kamera veya telefon gibi MTP cihazları için otomatik izin vermiyor. Bu ilke ayarını etkinleştirirseniz, otomatik kamera veya telefon gibi MTP cihazları için izin verilmiyor. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, otomatik birim olmayan cihazlar için etkinleştirilmiş.
+- **Birim olmayan cihazlar için otomatik yürütmeye engel**  
+  Bu ilke ayarı, kamera veya telefon gibi MTP cihazları için otomatik olarak izin vermez. Bu ilke ayarını etkinleştirirseniz, kamera veya telefon gibi MTP cihazları için otomatik etkinleştirmeye izin verilmez. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, otomatik kullan, birim olmayan cihazlar için etkinleştirilir.
   
   **Varsayılan**: Enabled  
 
-### <a name="bitlocker"></a>BitLocker'ı  
+### <a name="bitlocker"></a>Kurulumu  
 
-Daha fazla bilgi için [ilke CSP'si - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
-) Windows belgelerinde.  
+Daha fazla bilgi için Windows [belgelerindeki ilke CSP-](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
+) BitLocker bölümüne bakın.  
 
-- **Bit locker çıkarılabilir sürücü İlkesi**  
-  Bu ilke ayarı, şifreleme yöntemini denetlemek ve güçlü şifre için kullanılır. Bu ilke değerlerini BitLocker şifreleme için kullandığı şifreleme gücünü belirler. Kuruluşlar, şifreleme düzeyini (AES-256'yı AES-128'den daha güçlü) Artırılmış güvenlik için denetlemek isteyebilirsiniz. Bu ayarı etkinleştirirseniz, bir şifreleme algoritması ve anahtar şifreleme düzeyi sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için tek tek yapılandırmanız mümkün olacaktır. Sabit ve işletim sistemi sürücüleri için XTS-AES algoritmasını kullanmanızı öneririz. Sürücü Windows 10 'un 1511 veya sonraki bir sürümü çalıştırmıyor diğer cihazlar'da kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256 bit kullanmalısınız. Şifreleme yöntemi değiştirme, sürücü zaten şifrelendiyse veya şifreleme sürüyorsa hiçbir etkisi olmaz. Bu gibi durumlarda, bu ilke ayarı göz ardı edilir.
+- **Bit dolabı çıkarılabilir sürücü ilkesi**  
+  Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücünü ayrı ayrı yapılandırabileceksiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.
 
-  Bit locker çıkarılabilir sürücü ilke için aşağıdaki ayarları yapılandırın:
+  Bit dolabı çıkarılabilir sürücü ilkesi için aşağıdaki ayarları yapılandırın:
 
-    - **Yazma erişimi için şifreleme iste**  
+    - **Yazma erişimi için şifreleme gerektir**  
       **Varsayılan**: Evet  
   
     - **Şifreleme yöntemi**  
       **Varsayılan**: AES 256bit CBC  
 
-- **Bit locker sabit sürücü İlkesi**  
-  Bu ilke ayarı, şifreleme yöntemini denetlemek ve güçlü şifre için kullanılır. Bu ilke değerlerini BitLocker şifreleme için kullandığı şifreleme gücünü belirler. Kuruluşlar, şifreleme düzeyini (AES-256'yı AES-128'den daha güçlü) Artırılmış güvenlik için denetlemek isteyebilirsiniz. Bu ayarı etkinleştirirseniz, bir şifreleme algoritması ve anahtar şifreleme düzeyi sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için XTS-AES algoritmasını kullanmanızı öneririz. Sürücü Windows 10 'un 1511 veya sonraki bir sürümü çalıştırmıyor diğer cihazlar'da kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256 bit kullanmalısınız. Şifreleme yöntemi değiştirme, sürücü zaten şifrelendiyse veya şifreleme sürüyorsa hiçbir etkisi olmaz. Bu gibi durumlarda, bu ilke ayarı göz ardı edilir.  
+- **Bit dolabı sabit sürücü ilkesi**  
+  Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücü ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
  
-   Sabit sürücü ilke Bit locker için aşağıdaki ayarları yapılandırın: 
+   Bit dolabı sabit sürücü ilkesi için aşağıdaki ayarları yapılandırın: 
    - **Şifreleme yöntemi**
-     **varsayılan**: AES 256 bit XTS  
+     **Varsayılanı**: AES 256bit XTS  
 
-- **Bit locker sistem sürücüsü İlkesi**  
-  Bu ilke ayarı, şifreleme yöntemini denetlemek ve güçlü şifre için kullanılır. Bu ilke değerlerini BitLocker şifreleme için kullandığı şifreleme gücünü belirler. Kuruluşlar, şifreleme düzeyini (AES-256'yı AES-128'den daha güçlü) Artırılmış güvenlik için denetlemek isteyebilirsiniz. Bu ayarı etkinleştirirseniz, bir şifreleme algoritması ve anahtar şifreleme düzeyi sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için XTS-AES algoritmasını kullanmanızı öneririz. Sürücü Windows 10 'un 1511 veya sonraki bir sürümü çalıştırmıyor diğer cihazlar'da kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256 bit kullanmalısınız. Şifreleme yöntemi değiştirme, sürücü zaten şifrelendiyse veya şifreleme sürüyorsa hiçbir etkisi olmaz. Bu gibi durumlarda, bu ilke ayarı göz ardı edilir.  
+- **Bit dolabı sistem sürücüsü ilkesi**  
+  Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücü ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
 
-   Bit locker sistem sürücüsü ilkesi için aşağıdaki ayarları yapılandırın:
+   Bit dolabı sistem sürücüsü ilkesi için aşağıdaki ayarları yapılandırın:
   - **Şifreleme yöntemi**  
-    **Varsayılan**: AES 256 bit XTS  
+    **Varsayılan**: AES 256bit XTS  
 
-### <a name="browser"></a>Tarayıcı  
+### <a name="browser"></a>Browser  
 
-Daha fazla bilgi için [ilke CSP'si - tarayıcı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) bölümüne bakın.  
 
-- **Microsoft Edge için SmartScreen gerektirir**  
+- **Microsoft Edge için SmartScreen gerektir**  
 
-  Microsoft Edge, kullanıcılar varsayılan olarak olası kimlik avı kuşku verici ve kötü amaçlı yazılımlardan korumak için Windows Defender SmartScreen (açık) kullanır. Ayrıca, varsayılan olarak, kullanıcılar (kapatma) devre dışı bırakamaz Windows Defender SmartScreen. Bu ilkeyi etkinleştirmek, Windows Defender SmartScreen devre dışı bırakır ve kullanıcıların açma engellemek. Bu ilke, kullanıcıların Windows defender SmartScreen açmak veya kapatmak seçmesine izin vermek için yapılandırmayın.  
+  Microsoft Edge, kullanıcıların olası kimlik avı dolandırıcılarından ve kötü amaçlı yazılımlardan varsayılan olarak korunmasını sağlamak için Windows Defender SmartScreen (açık) kullanır. Ayrıca, kullanıcılar varsayılan olarak Windows Defender SmartScreen 'i devre dışı bırakamıyorum (kapatamaz). Bu ilkeyi etkinleştirmek, Windows Defender SmartScreen 'i kapatır ve kullanıcıların bunu açmasını önler. Kullanıcıların Windows Defender SmartScreen 'i açmayı veya kapatmayı seçmesini sağlamak için bu ilkeyi yapılandırmayın.  
   
   **Varsayılan**: Evet  
   
-- **Kötü niyetli site erişimi engelle**  
+- **Kötü amaçlı Site erişimini engelleyin**  
 
-  Varsayılan olarak, Microsoft Edge atlamak kullanıcılara (yoksay) Windows Defender SmartScreen uyarılarını siteye devam etmek için bunları izin vererek kötü amaçlı olabilecek sitelerle ilgili. Bu ilkeyle yine de kullanıcıların atlaması uyarıları önlemek için Microsoft Edge siteye devam etmesini engelleyen yapılandırabilirsiniz.
+  Varsayılan olarak, Microsoft Edge, kullanıcıların olası kötü amaçlı siteler hakkındaki Windows Defender SmartScreen uyarılarını atlamasına (yoksaymasına) izin verir ve siteye devam etmesine olanak tanır. Bu ilkeyle, Microsoft Edge 'i kullanıcıların uyarıları atlamasını önleyecek ve siteye devam etmesini engelleyecek şekilde yapılandırabilirsiniz.
   
   **Varsayılan**: Evet  
   
-- **Doğrulanmamış dosyayı indirme blok** varsayılan olarak, Microsoft Edge atlamak kullanıcılara (yoksay) Windows Defender SmartScreen uyarılarını doğrulanmamış dosyaları indirme devam etmek için bunları izin vererek kötü amaçlı dosyaları hakkında. Bu ilkeyi etkinleştirmek, kullanıcıların doğrulanmamış dosyaları indirmesini engelleme uyarıları atlaması engeller.
+- **Doğrulanmamış dosya Indirmeyi engelle** Varsayılan olarak, Microsoft Edge, kullanıcıların, zararlı olabilecek dosyalarla ilgili Windows Defender SmartScreen uyarılarını atlamasına (yoksaymasına) izin verir ve bu da doğrulanmamış dosyaları indirmeye devam edebilir. Bu ilkeyi etkinleştirmek, kullanıcıların, doğrulanmamış dosya (ler) i indirmelerini engelleyerek uyarıları atlamasını engeller.
   
   **Varsayılan**: Evet  
   
 - **Parola yöneticisini engelle**  
-  Varsayılan olarak, Microsoft Edge parola Yöneticisi otomatik olarak kullanıcıların yerel yönetici parolaları kullanır. Bu ilkeyi devre dışı bırakmak, Microsoft Edge parola Yöneticisi kullanmasını önler. Bu ilke, kullanıcı Kaydet ve yerel parola Yöneticisi'ni kullanarak parolaları yönetmek seçin izin vermek istiyorsanız yapılandırmayın.
+  Varsayılan olarak, Microsoft Edge parola Yöneticisi 'ni otomatik olarak kullanarak kullanıcıların parolalarını yerel olarak yönetici yapmasına izin verir. Bu ilkeyi devre dışı bırakmak Microsoft Edge 'in parola Yöneticisi 'Ni kullanmasını kısıtlar. Kullanıcıların parola Yöneticisi 'Ni kullanarak parolaları yerel olarak kaydedip yönetmesine izin vermek istiyorsanız bu ilkeyi yapılandırmayın.
   
   **Varsayılan**: Evet  
   
-- **Sertifika hatası geçersiz kılmaları engelle**  
-  Bu ilke ayarı, kullanıcı ("süresi gibi", "İptal" veya "Ad uyuşmazlığı" hatalar) Internet Explorer'da gözatma kesme Güvenli Yuva Katmanı/Aktarım Katmanı Güvenliği (SSL/TLS) sertifikası hataları yoksayma öğesinden engeller. Bu ilke ayarını etkinleştirirseniz, kullanıcı gözatma devam edemiyor. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, sertifika hataları yoksay ve Tarama devam etmek kullanıcı seçebilir.
+- **Sertifika hatası geçersiz kılmalarını engelle**  
+  Bu ilke ayarı, Internet Explorer 'da kullanıcının taramayı kesintiye uğratan Güvenli Yuva Katmanı/Aktarım Katmanı Güvenliği (SSL/TLS) sertifika hatalarını ("süre dolduğunda", "iptal edildi" veya "ad uyuşmazlığı" hataları) yok saymasını engeller. Bu ilke ayarını etkinleştirirseniz Kullanıcı göz atmaya devam edebilir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Kullanıcı sertifika hatalarını yoksaymayı ve gözatmaya devam etmeyi tercih edebilir.
   
   **Varsayılan**: Evet  
 
 ### <a name="connectivity"></a>Bağlantı  
 
-Daha fazla bilgi için [ilke CSP'si - bağlantı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-bağlantı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) bölümüne bakın.  
 
-- **Web yayımı ve çevrimiçi sipariş sihirbazları için Internet blok indirme**  
-  Bu ilke ayarı, Windows web yayımı ve çevrimiçi sipariş sihirbazları için sağlayıcıların listesini indirip indirmeyeceğini belirtir. Bu sihirbazlar, kullanıcıların çevrimiçi depolama alanını ve fotoğraf yazdırma gibi hizmetleri sağlayan şirketlerin listesinden seçmesine izin ver. Varsayılan olarak, Windows kayıt defterinde belirtilen sağlayıcılara ek olarak bir Windows Web sitesinden indirilen sağlayıcıları görüntüler. Bu ilke ayarını etkinleştirirseniz, Windows, sağlayıcıları ve yalnızca yerel kayıt defteri görüntüsünü önbelleğe alınan hizmet sağlayıcıları indirilmedi. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı Web'de yayımlama veya çevrimiçi sipariş sihirbazları kullandığında sağlayıcılarının bir listesini indirir. Kayıt defterinde hizmet sağlayıcıları belirtme hakkında bilgi içerir. daha fazla bilgi için web yayımı ve çevrimiçi sipariş sihirbazları için belgelere bakın.  
+- **Web yayımı ve çevrimiçi sipariş sihirbazları için Internet 'ten indirmeyi engelleyin**  
+  Bu ilke ayarı, Windows 'un Web yayımı ve çevrimiçi sipariş sihirbazları için sağlayıcı listesini indirip indirmeyeceğini belirtir. Bu sihirbazlar, kullanıcıların çevrimiçi depolama ve fotoğraf baskısı gibi hizmetler sağlayan şirketler listesinden seçmesine olanak sağlar. Varsayılan olarak, Windows, kayıt defterinde belirtilen sağlayıcılara ek olarak Windows Web sitesinden indirilen sağlayıcıları görüntüler. Bu ilke ayarını etkinleştirirseniz, Windows sağlayıcıları indirmez ve yalnızca yerel kayıt defterinde önbelleğe alınan hizmet sağlayıcılarını görüntüler. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Kullanıcı Web yayımlaması veya çevrimiçi sıralama sihirbazları kullandığında bir sağlayıcı listesi indirilir. Kayıt defterindeki hizmet sağlayıcılarının belirtilmesine ilişkin ayrıntıları içeren daha fazla bilgi için, Web yayımı ve çevrimiçi sipariş sihirbazları belgelerine bakın.  
   
   **Varsayılan**: Enabled  
 
-- **Yazıcı sürücülerini HTTP üzerinden indirmeyi engelleyin**  
-  Bu ilke ayarı, bu istemci yazdırma sürücüsü paketleri HTTP üzerinden indirilmesine izin verilip verilmeyeceğini belirtir. HTTP yazdırmayı kurmak için HTTP üzerinden indirilecek gelen olmayan sürücüler gerekir. Not: Bu ilke ayarı istemci yazdırma Intranet veya Internet üzerinde yazıcılara HTTP üzerinden engellemez. Yalnızca zaten yerel olarak yüklü değildir sürücülerini indirmeyi yasaklar. Bu ilke ayarını etkinleştirirseniz, yazıcı sürücülerini HTTP üzerinden yüklenemiyor. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların yazıcı sürücülerini HTTP üzerinden indirebilirsiniz.
+- **HTTP üzerinden yazdırma sürücülerinin indirilmesini engelle**  
+  Bu ilke ayarı, bu istemcinin HTTP üzerinden yazıcı sürücüsü paketleri indirmesine izin verilip verilmeyeceğini belirtir. HTTP yazdırmayı ayarlamak için, gelen kutusu olmayan sürücülerin HTTP üzerinden indirilmesi gerekir. Not: Bu ilke ayarı, istemcinin Intranetteki yazıcılara veya HTTP üzerinden Internet üzerinden yazdırmasını engellemez. Yalnızca yerel olarak yüklü olmayan sürücülerin indirilmesini yasaklar. Bu ilke ayarını etkinleştirirseniz, yazıcı sürücüleri HTTP üzerinden indirilemez. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız kullanıcılar, yazıcı sürücülerini HTTP üzerinden indirebilir.
   
   **Varsayılan**: Enabled  
 
-### <a name="credentials-delegation"></a>Kimlik temsilcisi  
+### <a name="credentials-delegation"></a>Kimlik bilgileri temsili  
 
-Daha fazla bilgi için [ilke CSP'si - CredentialsDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation
-) Windows belgelerinde.  
+Daha fazla bilgi için Windows [belgelerindeki ilke CSP-credentialstemsilciliğini](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation
+) inceleyin.  
 
-- **Uzak ana aktarılamaz kimlik temsili**  
-  Uzak ana aktarılamaz kimlik temsili sağlar. Cihazları kimlik bilgilerini dışarı aktarılabilir bir sürümünü kimlik bilgileri temsilcisi kullanılırken, kullanıcıların kimlik bilgileri hırsızlığı riski saldırganlar uzaktaki ana makinede gelen gösterir. uzak konağa sağlar. Bu ilke ayarını etkinleştirirseniz, konak uzak Credential Guard ya da kısıtlı yönetici modunu destekler. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, sınırlı yönetim ve uzak Credential Guard modu desteklenmiyor. Kullanıcı kimlik bilgilerini ana bilgisayara geçirmek her zaman gerekecektir.  
+- **Dışarı aktarılabilir olmayan kimlik bilgilerinin uzak ana bilgisayar temsili**  
+  Uzak ana bilgisayar, dışarı aktarılabilir olmayan kimlik bilgilerinin temsilciliğini sağlar. Kimlik bilgileri temsilcisini kullanırken, cihazlar uzak ana bilgisayara kimlik bilgilerinin dışa aktarılabilir bir sürümünü sağlar ve bu da kullanıcıları uzak ana bilgisayardaki saldırganlar tarafından kimlik bilgilerinin hırsızlık riskini gösterir. Bu ilke ayarını etkinleştirirseniz, ana bilgisayar kısıtlı yönetici veya uzak Credential Guard modunu destekler. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, kısıtlı yönetim ve uzak Credential Guard modu desteklenmez. Kullanıcının kimlik bilgilerini her zaman konağa geçirmesi gerekir.  
 
   
   **Varsayılan**: Enabled  
 
-### <a name="credentials-ui"></a>Kimlik bilgileri kullanıcı Arabirimi  
+### <a name="credentials-ui"></a>Kimlik bilgileri kullanıcı arabirimi  
 
-Daha fazla bilgi için [ilke CSP'si - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) bölümüne bakın.  
 
-- **Yöneticiler listeleme** Bu ilke ayarı bir kullanıcı, çalışan bir uygulamayı yükseltme girişiminde bulunduğunda yönetici hesaplarını görüntülemek eşleştirilmeyeceğini denetler. Kullanıcı, çalışan bir uygulamayı yükseltme girişiminde bulunduğunda, varsayılan olarak, yönetici hesapları görüntülenmez. Bu ilke ayarını etkinleştirirseniz, kullanıcı seçin ve doğru parolayı girmek için bilgisayarda tüm yerel yönetici hesapları görüntüleyin. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların her zaman bir kullanıcı adı ve parola yükseltmesine yazmanız gerekir.  
+- **Yöneticileri listeleme** Bu ilke ayarı, bir Kullanıcı çalışan bir uygulamayı yükseltmeyi denediğinde yönetici hesaplarının görüntülenip görüntülenmeyeceğini denetler. Varsayılan olarak, Kullanıcı çalışan bir uygulamayı yükseltmeyi denediğinde yönetici hesapları görüntülenmez. Bu ilke ayarını etkinleştirirseniz, BILGISAYARDAKI tüm yerel yönetici hesapları kullanıcının hesabı seçmesini ve doğru parolayı girebilmesini sağlayacak biçimde görüntülenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların yükseltmek için her zaman bir Kullanıcı adı ve parola yazmanız gerekir.  
 
   
   **Varsayılan**: Devre dışı  
 
 ### <a name="data-protection"></a>Veri Koruma  
 
-Daha fazla bilgi için [ilke CSP'si - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
-) Windows belgelerinde.  
+Daha fazla bilgi için Windows [belgelerindeki ilke CSP-DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
+) bölümüne bakın.  
 
-- **Doğrudan bellek erişimi engelle**  
-  Bir kullanıcı Windows oturum kadar bu ilke ayarı, doğrudan bellek erişimi (DMA) engellemek sık erişimli takılabilir PCI aşağı akış için tüm bağlantı sağlar. Bir kullanıcı oturum açtığında sonra Windows ana Tak PCI bağlantı noktalarına bağlı PCI cihazları numaralandırır. Her seferinde kullanıcı makine kilitler, DMA kullanıcı yeniden oturum kadar hiçbir alt cihazlarla sık erişimli Tak PCI noktalarına engellenir. Makine kilidi açıldı, zaten numaralandırılmıştır cihazlar takılı kadar çalışmaya devam eder. Bu ilke ayarı, BitLocker veya cihaz şifrelemesi etkinken yalnızca zorlanır.
+- **Doğrudan bellek erişimini engelle**  
+  Bu ilke ayarı, bir Kullanıcı Windows 'a oturum açana kadar, tüm etkin takılabilir PCI akış bağlantı noktaları için doğrudan bellek erişimini (DMA) engellemenizi sağlar. Kullanıcı oturum açtıktan sonra Windows, ana bilgisayar eklentisi PCI bağlantı noktalarına bağlı PCI cihazlarını numaralandırır. Kullanıcı makineyi her kilitlediğinde, Kullanıcı yeniden oturum açana kadar alt cihazları olmayan hot plug PCI bağlantı noktalarında DMA engellenir. Makine kilidi açıldığında zaten numaralandırılan cihazlar, söküle kadar çalışmaya devam eder. Bu ilke ayarı yalnızca BitLocker veya cihaz şifrelemesi etkinleştirildiğinde zorlanır.
   
   
   **Varsayılan**: Evet  
 
-### <a name="device-guard"></a>Cihaz koruma  
+### <a name="device-guard"></a>Device Guard  
 
-Daha fazla bilgi için [ilke CSP'si - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
-) Windows belgelerinde.  
+Daha fazla bilgi için Windows [belgelerindeki ilke CSP-deviceguard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
+) bölümüne bakın.  
 
 - **Credential Guard**  
-  Bu ayar, sonraki yeniden başlatma sırasında kimlik bilgilerinin korunmasına yardımcı olmak için sanallaştırma tabanlı güvenlik ile Credential Guard hakkında kullanıcıların sağlar.
+  Bu ayar, kullanıcıların bir sonraki yeniden başlatmada kimlik bilgilerini korumaya yardımcı olmak üzere sanallaştırma tabanlı güvenlik ile Credential Guard 'ı kapatmasına olanak sağlar.
    
-  **Varsayılan**: UEFI kilidiyle etkinleştir 
+  **Varsayılan**: UEFı kilidi ile etkinleştir 
 
 - **Sanallaştırma tabanlı güvenliği etkinleştir**  </br>
-  Sanallaştırma tabanlı güvenlik (VBS) sonraki önyüklemede açar. Sanallaştırma tabanlı güvenlik, güvenlik hizmetlerine destek sağlamak için Windows Hiper Yöneticisi'ni kullanır.
+  Bir sonraki yeniden başlatmada sanallaştırma tabanlı güvenliği (VBS) açar. Sanallaştırma tabanlı güvenlik, güvenlik hizmetlerine destek sağlamak için Windows Hiper Yöneticisi'ni kullanır.
   
   **Varsayılan**: Evet  
 
-- **Sistem koruma başlatın**    
+- **System Guard 'ı Başlat**    
   **Varsayılan**: Enabled  
 
-### <a name="device-installation"></a>Cihaz yükleme  
+### <a name="device-installation"></a>Cihaz yüklemesi  
 
-Daha fazla bilgi için [ilke CSP'si - DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Deviceınstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) bölümüne bakın.  
 
-- **Cihaz tanımlayıcıları olarak donanım cihaz yükleme**  
-  Bu ilke ayarı Windows yüklenmesini engelleyen cihazlar için Tak ve Kullan donanım kimlikleri ve uyumlu bir listesini belirtmenize olanak sağlar. Bu ilke ayarı, bir cihaza yüklemek Windows sağlayan diğer ilke ayarları üzerinden önceliklidir. Bu ilke ayarını etkinleştirirseniz, Windows, donanım kimliği veya uyumlu kimliği görünür bir cihaz listesinde oluşturduğunuz yüklenmesini engelledi. İlke ayarı, Uzak Masaüstü sunucuda bu ilke ayarını etkinleştirirseniz, uzak masaüstü istemcisini belirtilen cihazlarından Uzak Masaüstü sunucuya yönlendirilmesini etkiler. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, cihazları yükleyebilir ve izin verilen veya diğer ilke ayarları tarafından önlenmiş olarak güncelleştirin.
+- **Cihaz tanımlayıcılarına göre donanım cihazı yüklemesi**  
+  Bu ilke ayarı, Windows 'un yüklemesi engellenen cihazlar için Tak ve Kullan donanım kimliklerinin ve uyumlu kimliklerin bir listesini belirtmenizi sağlar. Bu ilke ayarı, Windows 'un bir cihaz yüklemesine izin veren diğer tüm ilke ayarlarından önceliklidir. Bu ilke ayarını etkinleştirirseniz, Windows 'un, oluşturduğunuz listede donanım KIMLIĞI veya uyumlu KIMLIĞI görünen bir cihaz yüklemesi engellenir. Uzak Masaüstü sunucusunda bu ilke ayarını etkinleştirirseniz, ilke ayarı, belirtilen cihazların uzak masaüstü istemcisinden uzak masaüstü sunucusuna yönlendirilmesini etkiler. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, cihazlar diğer ilke ayarları tarafından izin verilen veya engellenen şekilde yükleyebilir ve güncelleştirebilir.
   
-  **Varsayılan**: Blok donanım cihaz yükleme  
+  **Varsayılan**: Donanım cihazını yüklemeyi engelle  
 
-    Zaman *Block donanım cihaz yükleme* olduğu belirlenirse, aşağıdaki ayarlar kullanılabilir.
+    *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
   
-    - **Eşleşen donanım cihazları kaldırma**   
-    Bu ayar yalnızca olan *donanım cihaz yükleme cihaz tanımlayıcısı tarafından* ayarlanır *Block donanım cihaz yükleme*.
+    - **Eşleşen donanım cihazlarını kaldırma**   
+    Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
       
       **Varsayılan**: Evet
   
     - **Engellenen donanım cihaz tanımlayıcıları**  
-       Bu ayar yalnızca olan *donanım cihaz yükleme cihaz tanımlayıcısı tarafından* ayarlanır *Block donanım cihaz yükleme*.
+       Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
       
       **Varsayılan**: Evet  
   
-- **Kurulum sınıflar tarafından donanım cihaz yükleme**  
-  Bu ilke ayarı, cihaz Kurulumu sınıf genel olarak benzersiz tanımlayıcıları (GUID'ler) cihaz sürücülerini Windows yüklenmesini engelleyen bir listesini belirtmenize olanak sağlar. Bu ilke ayarı, bir cihaza yüklemek Windows sağlayan diğer ilke ayarları üzerinden önceliklidir. Bu ilke ayarını etkinleştirirseniz, Windows yükleme veya GUID'leri listede, cihaz Kurulumu sınıfı oluşturduğunuz cihaz sürücüleri güncelleştirme engellenir. İlke ayarı, Uzak Masaüstü sunucuda bu ilke ayarını etkinleştirirseniz, uzak masaüstü istemcisini belirtilen cihazlarından Uzak Masaüstü sunucuya yönlendirilmesini etkiler. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, Windows yükleyebilir ve güncelleştirme cihazlar olarak izin verilen veya diğer ilke ayarları tarafından engellendi.
+- **Kurulum sınıflarına göre donanım cihaz yüklemesi**  
+  Bu ilke ayarı, Windows 'un yüklemesi engellenen cihaz sürücüleri için cihaz kurulum sınıfının genel benzersiz tanımlayıcıları (GUID 'Ler) listesini belirtmenizi sağlar. Bu ilke ayarı, Windows 'un bir cihaz yüklemesine izin veren diğer tüm ilke ayarlarından önceliklidir. Bu ilke ayarını etkinleştirirseniz, Windows 'un, cihaz kurulum sınıfı GUID 'Leri oluşturduğunuz listede göründüğü cihaz sürücülerini yüklemesi veya güncelleştirmesi engellenir. Uzak Masaüstü sunucusunda bu ilke ayarını etkinleştirirseniz, ilke ayarı, belirtilen cihazların uzak masaüstü istemcisinden uzak masaüstü sunucusuna yönlendirilmesini etkiler. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Windows, diğer ilke ayarları tarafından izin verilen veya engellenen cihazları yükleyebilir ve güncelleştirebilir.
   
-  **Varsayılan**: Blok donanım cihaz yükleme  
+  **Varsayılan**: Donanım cihazını yüklemeyi engelle  
 
-    Zaman *Block donanım cihaz yükleme* olduğu belirlenirse, aşağıdaki ayarlar kullanılabilir.
-    - **Eşleşen donanım cihazları kaldırma**    
-    Bu ayar yalnızca olan *donanım cihaz yükleme kurulum sınıflar tarafından* ayarlanır *Block donanım cihaz yükleme*.  
+    *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
+    - **Eşleşen donanım cihazlarını kaldırma**    
+    Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.  
 
-      **Varsayılan**: *Varsayılan yapılandırma*  
+      **Varsayılan**: *Varsayılan yapılandırma yok*  
   
     - **Engellenen donanım cihaz tanımlayıcıları**  
-      Bu ayar yalnızca olan *donanım cihaz yükleme kurulum sınıflar tarafından* ayarlanır *Block donanım cihaz yükleme*.
+      Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
       
-      **Varsayılan**: *Varsayılan yapılandırma*  
+      **Varsayılan**: *Varsayılan yapılandırma yok*  
 
 ### <a name="device-lock"></a>Cihaz kilidi  
 
-Daha fazla bilgi için [ilke CSP'si - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) bölümüne bakın.  
 
-- **Kamera kullanımını engelle**  
-  PC Ayarları'nda kilit ekranı kamera iki durumlu düğme devre dışı bırakır ve kilit ekranında çağrılan bir kamera önler. Varsayılan olarak, kullanıcıların kullanılabilir bir kamera kilit ekranında çağrılmasını etkinleştirebilirsiniz. Bu ayarı etkinleştirirseniz, kullanıcılar artık etkinleştirme veya devre dışı PC Ayarları'nda kilit ekranı kamera erişimi mümkün olacaktır ve kilit ekranında kamera çağrılamaz. 
+- **Kameranın kullanımını engelle**  
+  BILGISAYAR ayarlarındaki kilit ekranı Kamerası geçiş anahtarını devre dışı bırakır ve bir kameranın kilit ekranında çağrılmasını engeller. Varsayılan olarak, kullanıcılar, kilit ekranında kullanılabilir bir kameranın çağrılmasını sağlayabilir. Bu ayarı etkinleştirirseniz, kullanıcılar artık bılgısayar ayarlarında kilit ekranı kamera erişimini etkinleştiremez veya devre dışı bırakamayacaktır ve kamera kilit ekranında çağrılamaz. 
   
   **Varsayılan**: Enabled  
 
-- **Parola iste**  
-  Cihaz kilidi etkinleştirilip etkinleştirilmeyeceğini belirtir.
+- **Parola gerektir**  
+  Cihaz kilidinin etkinleştirilip etkinleştirilmeyeceğini belirtir.
   
   **Varsayılan**: Evet  
   
-    Zaman *parola iste* ayarlanır *Evet*, aşağıdaki ayarlar kullanılabilir.
+  *Parola ıste* *Evet*olarak ayarlandığında aşağıdaki ayarlar kullanılabilir.
 
-    - **Parola en az karakter kümesi sayısı**  
-      Güçlü PIN veya parola için gereken karmaşık öğe türleri (büyük ve küçük harfler, sayılar ve noktalama işaretleri) sayısı. PIN, masaüstü ve mobile cihazları için aşağıdaki davranışı uygular: 1 - gereken 3 - sayılar ve küçük harf, basamak yalnızca 2 - sayılar ve küçük harf olduğunu ve büyük harfler gereklidir. Masaüstü Microsoft hesapları ve etki alanı hesapları desteklenmez. 4 - rakamlar, küçük harfler, büyük harfler ve özel karakterler gereklidir. Desktop'ta desteklenmiyor. Varsayılan değer 1’dir. 
-      
-      **Varsayılan**: 3  
+  - **Parola en az karakter kümesi sayısı**  
+    Güçlü bir PIN veya parola için gereken karmaşık öğe türleri sayısı (büyük ve küçük harfler, rakamlar ve noktalama işaretleri). PIN masaüstü ve mobil cihazlar için aşağıdaki davranışı uygular: 1-yalnızca 2 basamaklı rakamlar ve küçük harflerden oluşan 3 basamaklı, küçük harflerin ve büyük harflerin olması gerekir. Masaüstü Microsoft hesaplarında ve etki alanı hesaplarında desteklenmez. 4 basamaklı, küçük harfler, büyük harfler ve özel karakterler gereklidir. Masaüstünde desteklenmez. Varsayılan değer 1’dir. 
+    
+    **Varsayılan**: 3  
   
-    - **Cihaz silinmeden önceki oturum açma hatası sayısı**  
-      Cihaz temizlenmeden önce izin verilen kimlik doğrulama hataları sayısı. 0 değeri cihaz silme işlevselliği devre dışı bırakır.
-        
-      **Varsayılan**: 10  
+  - **Cihaz silinmeden önceki oturum açma hatası sayısı**  
+    Cihaz temizlenmeden önce izin verilen kimlik doğrulama hatalarının sayısı. 0 değeri cihaz temizleme işlevini devre dışı bırakır.
+    
+    **Varsayılan**: 10  
   
-    - **Parola kullanım süresi (gün)**  
-      En fazla parola yaşı ilkesi ayarını nasıl uzun süre (gün) belirler. Sistem kullanıcıdan değiştirmesini olmasını gerektirir. önce bir parola kullanılabilir. Gün sayısı 0 olarak ayarlayarak parolaları asla sona belirtebilirsiniz veya parolaları gün 1 ile 999 arasında bir süre sonra süresi dolacak şekilde ayarlayabilirsiniz. En fazla parola geçerlilik süresi 1 ile 999 gün arasında ise, en az parola geçerlilik süresi en fazla parola geçerlilik süresinden daha az olmalıdır. En fazla parola geçerlilik süresi 0 olarak ayarlarsanız, parola geçerlilik süresi alt sınırı 0 ile 998 gün arasında herhangi bir değer olabilir.
-      
-      **Varsayılan**: 60  
+  - **Parola kullanım süresi (gün)**  
+    En fazla parola yaşı ilke ayarı, sistem kullanıcının değiştirmesini gerektirdiğinden bir parolanın ne kadar süreyle kullanılabileceğini (gün cinsinden) belirler. Parolaların süresini 1 ile 999 arasında bir gün sonra dolacak şekilde ayarlayabilir veya gün sayısını 0 olarak ayarlayarak parolaların süre dolmamasını belirtebilirsiniz. Maksimum parola yaşı 1 ila 999 gün arasındaysa, en düşük parola yaşı en fazla parola geçerlilik süresinden az olmalıdır. Maksimum parola yaşı 0 olarak ayarlandıysa, minimum parola yaşı 0 ile 998 gün arasında herhangi bir değer olabilir.
+    
+    **Varsayılan**: 60  
   
-    - **Gerekli parola türü**  
-      PIN veya parola gerekli türünü belirler.
-      
-      **Varsayılan**: Alfasayısal  
+  - **Gerekli parola türü**  
+    Gerekli PIN veya parola türünü belirler.
+    
+    **Varsayılan**: Sayısal  
   
-    - **En düşük parola uzunluğu**  
-      Minimum parola uzunluğu ilkesi ayarını belirler en az bir kullanıcı hesabı için bir parola ayarlama yapabilirsiniz karakter sayısı. 1 ile 14 karakter arasında bir değer ayarlayabilirsiniz veya karakter sayısı 0 olarak ayarlayarak, parola gerektiğini kurabilirsiniz.
-      
-      **Varsayılan**: 8  
-  
-    - **Basit parolaları engelle**  
-      "1111" veya "1234" gibi PIN veya parolalara izin verilip verilmeyeceğini belirtir. Masaüstü için resimli parola kullanımını da denetler.
-      
-      **Varsayılan**: Evet  
-        *Evet, bir ayar basit parolaların kullanımına engeller.* 
+  - **En düşük parola uzunluğu**  
+    Minimum parola uzunluğu ilke ayarı, bir kullanıcı hesabı için parola oluşturmak üzere en az karakter sayısını belirler. 1 ila 14 karakter arasında bir değer ayarlayabilir veya karakter sayısını 0 olarak ayarlayarak parola gerekmesiz bir değer belirleyebilirsiniz.
+    
+    **Varsayılan**: 8  
+
+  - **Basit parolaları engelle**  
+    "1111" veya "1234" gibi PIN veya parolalara izin verilip verilmeyeceğini belirtir. Masaüstü için, resim parolalarının kullanımını da denetler.
+    
+    **Varsayılan**: Evet  
+      *Evet ayarı basit parolaların kullanımını engeller.* 
 
   - **Önceki parolaların yeniden kullanılmasını engelleme**  
-    Kaç adet parola kullanılamaz geçmişinde depolanacak belirtir. Değer, kullanıcının geçerli parolası içerir. Örneğin, ayarı ile *1* kullanıcı, yeni bir parola seçerken, geçerli parolaları yeniden kullanılamaz. Ayarı *5* kullanıcının yeni parolasını, geçerli parolaları veya herhangi bir önceki dört parolalarını ayarlayamayacağı anlamına gelir.
+    Bu, kullanılamayan bir geçmişe kaç parola depolanabileceğini belirtir. Değer, kullanıcının geçerli parolasını içerir. Örneğin, *1* ayarı ile Kullanıcı yeni bir parola seçerken geçerli parolasını yeniden kullantıramıyorum. *5* ayarı, kullanıcının yeni parolasını geçerli parolasına veya önceki dört parolalarından birine ayarlayamayacağı anlamına gelir.
     
     **Varsayılan**: 24  
 
-- **Slayt gösterisi engelle**  
-  PC Ayarları'nda kilit ekranı slayt gösterisi ayarlarını devre dışı bırakır ve bir slayt gösterisi kilit ekranında çalışmasını önler. Varsayılan olarak, bunlar makine kilitleme sonra çalıştırılacak bir slayt gösterisi açabileceğinizi bilirsiniz. Bu ayarı etkinleştirirseniz, kullanıcılar, PC Ayarları'nda slayt gösterisi ayarlarını değiştiremez ve hiçbir slayt gösterisi başlayabilir.
+- **Slayt gösterisini engelle**  
+  BILGISAYAR ayarlarındaki kilit ekranı slayt gösterisi ayarlarını devre dışı bırakır ve kilit ekranında bir slayt gösterisinin yürütülmesini önler. Varsayılan olarak, kullanıcılar makineyi kilitledikten sonra çalışacak bir slayt gösterisine izin verebilir. Bu ayarı etkinleştirirseniz, kullanıcılar bılgısayar ayarlarındaki slayt gösterisi ayarlarını değiştiremezler ve hiçbir slayt gösterisi başlayamaz.
   
     **Varsayılan**: Enabled  
-    *Etkin ayarı, slayt gösterilerini çalışmasını engeller.* 
+    *Etkin bir ayar, slayt gösterisinin çalışmasını önler.* 
 
-- **Gün olarak parola en düşük yaş**  
-  En az parola geçerlilik süresi ilke ayarı bir parola olmalıdır süre (gün cinsinden) belirler. kullanıcı değiştirmeden önce kullanıldı. 1 ile 998 gün arasında bir değer ayarlayabilirsiniz veya gün sayısı 0 olarak ayarlayarak, hemen bir parola değişikliklerini verebilirsiniz. En fazla parola geçerlilik süresi, parolaların süresiz belirten, 0 olarak ayarlanmadığı sürece, en az parola geçerlilik süresi en fazla parola geçerlilik süresi değerinden küçük olması gerekir. En fazla parola geçerlilik süresi 0 olarak ayarlarsanız, en az parola geçerlilik süresi 0 ile 998 arasında herhangi bir değere ayarlanabilir.
+- **Parola en az gün cinsinden süre**  
+  Minimum parola yaşı ilke ayarı, kullanıcının değiştirebilmesi için bir parolanın kullanılması gereken süreyi (gün olarak) belirler. 1 ila 998 gün arasında bir değer ayarlayabilir veya gün sayısını 0 olarak ayarlayarak parola değişikliklerine hemen izin verebilirsiniz. Maksimum parola yaşı 0 olarak ayarlanmadığı ve parolaların süresinin dolmayacağını belirten en az parola yaşı en fazla parola geçerlilik süresinden daha az olmalıdır. Maksimum parola yaşı 0 olarak ayarlandıysa, minimum parola yaşı 0 ile 998 arasında bir değere ayarlanabilir.
   
     **Varsayılan**: 1.  
 
-### <a name="event-log-service"></a>Olay Günlüğü hizmeti  
+### <a name="event-log-service"></a>Olay günlüğü hizmeti  
 
-Daha fazla bilgi için [ilke CSP'si - EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) bölümüne bakın.  
 
-- **Güvenlik günlüğü maksimum dosya boyutunu KB**  
-  Bu ilke ayarı, günlük dosyasının en büyük boyutu kilobayt cinsinden belirtir. Bu ilke ayarını etkinleştirirseniz, en fazla günlük dosyası boyutunu 1 megabayt (1024 kilobayt) ve 2 terabaytlık (2147483647 kilobayt) kilobayt artışlarla arasında olacak şekilde yapılandırabilirsiniz. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, günlük dosyasının en büyük boyutu yerel olarak yapılandırılmış değerine ayarlanır. Bu değer günlüğü Özellikleri iletişim kutusunu kullanarak yerel bir yönetici tarafından değiştirilebilir ve 20 megabayt olarak varsayılan.
+- **KB cinsinden güvenlik günlüğü en büyük dosya boyutu**  
+  Bu ilke ayarı, günlük dosyasının en büyük boyutunu kilobayt cinsinden belirtir. Bu ilke ayarını etkinleştirirseniz, en büyük günlük dosyası boyutunu uzunluğu 1 megabayt (1024 kilobayt) ve 2 terabayta (2147483647 kilobayt) kadar kilobayt artışlarla yapılandırabilirsiniz. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, günlük dosyasının en büyük boyutu yerel olarak yapılandırılmış değere ayarlanır. Bu değer, günlük özellikleri iletişim kutusu kullanılarak yerel yönetici tarafından değiştirilebilir ve varsayılan olarak 20 megabaylardır.
   
    **Varsayılan**: 196608  
 
-- **Sistem günlük en fazla dosya boyutunu KB**  
-  Bu ilke ayarı, günlük dosyasının en büyük boyutu kilobayt cinsinden belirtir. Bu ilke ayarını etkinleştirirseniz, en fazla günlük dosyası boyutunu 1 megabayt (1024 kilobayt) ve 2 terabaytlık (2147483647 kilobayt) kilobayt artışlarla arasında olacak şekilde yapılandırabilirsiniz. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, günlük dosyasının en büyük boyutu yerel olarak yapılandırılmış değerine ayarlanır. Bu değer günlüğü Özellikleri iletişim kutusunu kullanarak yerel bir yönetici tarafından değiştirilebilir ve 20 megabayt olarak varsayılan.
+- **KB cinsinden sistem günlüğü en büyük dosya boyutu**  
+  Bu ilke ayarı, günlük dosyasının en büyük boyutunu kilobayt cinsinden belirtir. Bu ilke ayarını etkinleştirirseniz, en büyük günlük dosyası boyutunu uzunluğu 1 megabayt (1024 kilobayt) ve 2 terabayta (2147483647 kilobayt) kadar kilobayt artışlarla yapılandırabilirsiniz. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, günlük dosyasının en büyük boyutu yerel olarak yapılandırılmış değere ayarlanır. Bu değer, günlük özellikleri iletişim kutusu kullanılarak yerel yönetici tarafından değiştirilebilir ve varsayılan olarak 20 megabaylardır.
   
   **Varsayılan**: 32768  
 
-- **Uygulama günlük en fazla dosya boyutunu KB**  
-  Bu ilke ayarı, günlük dosyasının en büyük boyutu kilobayt cinsinden belirtir. Bu ilke ayarını etkinleştirirseniz, en fazla günlük dosyası boyutunu 1 megabayt (1024 kilobayt) ve 2 terabaytlık (2147483647 kilobayt) kilobayt artışlarla arasında olacak şekilde yapılandırabilirsiniz. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, günlük dosyasının en büyük boyutu yerel olarak yapılandırılmış değerine ayarlanır. Bu değer günlüğü Özellikleri iletişim kutusunu kullanarak yerel bir yönetici tarafından değiştirilebilir ve 20 megabayt olarak varsayılan.
+- **KB cinsinden uygulama günlüğü en büyük dosya boyutu**  
+  Bu ilke ayarı, günlük dosyasının en büyük boyutunu kilobayt cinsinden belirtir. Bu ilke ayarını etkinleştirirseniz, en büyük günlük dosyası boyutunu uzunluğu 1 megabayt (1024 kilobayt) ve 2 terabayta (2147483647 kilobayt) kadar kilobayt artışlarla yapılandırabilirsiniz. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, günlük dosyasının en büyük boyutu yerel olarak yapılandırılmış değere ayarlanır. Bu değer, günlük özellikleri iletişim kutusu kullanılarak yerel yönetici tarafından değiştirilebilir ve varsayılan olarak 20 megabaylardır.
   
   **Varsayılan**: 32768  
 
 ### <a name="experience"></a>Deneyim  
 
-Daha fazla bilgi için [ilke CSP'si - deneyimi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-deneyim](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) bölümüne bakın.  
 
-- **Blok Windows spot**  
-  BT yöneticilerinin tüm Windows spot özelliklerini kapatmasını - Windows spot kilit ekranı, Windows ipuçları, Microsoft tüketici özellikleri ve diğer ilgili özellikler sağlar.
+- **Windows spot 'u engelle**  
+  BT yöneticilerinin tüm Windows spot özelliklerini kapatmasına izin verir-kilit ekranında pencere projektörü, Windows Ipuçları, Microsoft tüketici özellikleri ve diğer ilgili özellikler.
   
   **Varsayılan**: Evet  
 
-  Zaman *blok Windows spot* ayarlanır *Evet*, aşağıdaki ayarlar kullanılabilir.
+  *Windows spot 'U engelle* seçeneği *Evet*olarak ayarlandığında aşağıdaki ayarlar kullanılabilir.
   
-  - **Windows spot'ta üçüncü taraf önerilerini engelle**  
-    Üçüncü taraf yazılım uygulama ve içerik önerilerini izin vermek için yayımcıları ile Windows kilit ekranı spot, önerilen uygulamaların başlangıç menüsünde ve Windows ipuçları gibi özellikleri spotlight olup olmadığını belirtir. Kullanıcılar, Microsoft özellikler, uygulamalar ve hizmetler için öneriler yine de görebilirsiniz.
+  - **Windows spot 'da üçüncü taraf önerilerini engelleyin**  
+    Kilit ekranı servisleri, başlangıç menüsünde önerilen uygulamalar ve Windows ipuçları gibi Windows spot özelliklerinin üçüncü taraf yazılım yayımcılarından uygulama ve içerik önerilerine izin verilip verilmeyeceğini belirtir. Kullanıcılar Microsoft özellikleri, uygulamaları ve hizmetleri için öneriler görmeye devam edebilir.
       
     **Varsayılan**: Evet  
-   - **Tüketici belirli özellikleri engelle**  
-      BT yöneticilerinin, genellikle yalnızca tüketicilere yönelik olan gibi başlatma önerileri, üyelik bildirimleri, Post-OOBE uygulaması yükleme ve yeniden yönlendirme kutucukları deneyimleri açmalarını sağlar.
-      
-     **Varsayılan**: Evet  
+  - **Tüketiciye özgü özellikleri engelle**  
+    BT yöneticilerinin, başlangıç önerileri, üyelik bildirimleri, OOBE sonrası uygulama yüklemesi ve yeniden yönlendirme kutucukları gibi genellikle yalnızca tüketicilere yönelik deneyimler açmasına olanak sağlar.
+    
+    **Varsayılan**: Evet  
 
 
 ### <a name="exploit-guard"></a>Exploit Guard  
 
-Daha fazla bilgi için [ilke CSP'si - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Patıguard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) bölümüne bakın.  
 
 - **Exploit Protection XML**  
-  BT yöneticisi, istenen sistem ve kuruluşunuzdaki tüm cihazlar için uygulama risk azaltma seçenekleri temsil eden bir yapılandırma çıkış göndermek etkinleştirir. Yapılandırma, bir XML tarafından temsil edilir. Exploit Protection dağıtabilir ve bulaşma vektörlerine kullanan kötü amaçlı yazılımlardan korunmasına cihazları yardımcı olur. Risk azaltma işlemleri (bir yapılandırma olarak bilinir) bir dizi oluşturmak için PowerShell ve Windows güvenlik uygulaması'nı kullanın. Ardından, bu yapılandırma, bir XML dosyası olarak dışarı aktarın ve risk azaltma ayarlarını kümesinin aynısına sahip oldukları tüm için ağınızda birden çok makineyle paylaşın. Ayrıca, dönüştürme ve exploit koruma yapılandırması XML içinde mevcut bir EMET yapılandırma XML dosyasını içeri aktarın.
+  BT yöneticisinin, kuruluştaki tüm cihazlara istenen sistem ve uygulama azaltma seçeneklerini temsil eden bir yapılandırma gönderebilmesini sağlar. Yapılandırma bir XML ile temsil edilir. Yararlanma koruması, cihazları yaymak ve bulaşma için kötüye kullanılan kötü amaçlı yazılımlara karşı korumanıza yardımcı olur. Windows güvenlik uygulamasını veya PowerShell 'i kullanarak bir azaltma kümesi (yapılandırma olarak bilinir) oluşturabilirsiniz. Daha sonra bu yapılandırmayı bir XML dosyası olarak dışarı aktarabilir ve ağınızdaki birden fazla makineyle paylaşarak, hepsi aynı azaltma ayarları kümesine sahip olurlar. Ayrıca, var olan bir EMET yapılandırma XML dosyasını bir Exploit Protection yapılandırması XML dosyasına dönüştürebilir ve içeri aktarabilirsiniz.
   
-  **Varsayılan**: *Örnek xml sağlanır* 
+  **Varsayılan**: *Örnek XML sağlanır* 
  
 ### <a name="file-explorer"></a>Dosya Gezgini  
 
-Daha fazla bilgi için [ilke CSP'si - ta dosya Gezgini](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) bölümüne bakın.  
 
-- **Blok Veri Yürütme Engellemesi**  
-  Veri Yürütme Engellemesi devre dışı bırakma, bazı eski eklenti uygulamalarının Sonlandırıcı Gezgini işlev izin verebilirsiniz.
+- **Veri yürütme engellemesini engelle**  
+  Veri yürütme engellemesini devre dışı bırakmak, bazı eski eklenti uygulamalarının gezgin 'i sonlandırmadan çalışmasına izin verebilir.
   
   **Varsayılan**: Devre dışı  
    
-- **Blok yığın bozulması sonlandırıldığında**  
-  Yığın bozulması sonlandırıldığında devre dışı bırakma, Gezgini hala beklenmedik bir şekilde daha sonra sonlandırabilir rağmen bazı eski eklenti uygulamalarının Sonlandırıcı Gezgini hemen çalışmaya izin verebilirsiniz.
+- **Bozulma durumunda yığın sonlandırmasını engelle**  
+  Bozulmaya karşı yığın sonlandırmasının devre dışı bırakılması, bazı eski eklenti uygulamalarının gezgin 'i hemen sonlandırmadan çalışmasına izin verebilir, ancak gezgin daha sonra beklenmedik bir şekilde sonlandırılabilir.
   
   **Varsayılan**: Devre dışı  
     
 
 ### <a name="internet-explorer"></a>Internet Explorer  
 
-Daha fazla bilgi için [ilke CSP'si - Internet Explorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) Windows belgelerinde.  
+Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-ınternebir](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) .  
 
-- **Internet Explorer internet bölgesi veri kaynaklarına erişim**  
-  Bu ilke ayarı, Internet Explorer Microsoft XML Parser (MSXML) ya da ActiveX Data Objects (ADO) kullanan başka bir güvenlik bölgesi'nden veri erişip erişemeyeceğini yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yükleyebilir. Açılan kutusunda seçtiğiniz istemi, kullanıcıların sayfayı MSXML veya ADO bölgede başka bir siteden verilere erişmek için kullandığı bölgesinde yüklemek için izin verip vermeyeceklerini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yüklenemiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcıların bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yüklenemiyor.
+- **Veri kaynaklarına Internet Explorer Internet bölgesi erişimi**  
+  Bu ilke ayarı, Internet Explorer 'ın Microsoft XML ayrıştırıcısı (MSXML) veya ActiveX Data Objects (ADO) kullanarak başka bir güvenlik bölgesinden veriye erişip erişemeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar bölgedeki başka bir siteden veriye erişmek için MSXML veya ADO kullanan bölgeye bir sayfa yükleyebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar bölgedeki başka bir siteden veriye erişmek için MSXML veya ADO kullanan bölgede bir sayfanın yüklenmesine izin verip vermeyeceğinizi belirlemek üzere sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar bölgedeki başka bir siteden veriye erişmek için MSXML veya ADO kullanan bölgeye bir sayfa yükleyemez. Bu ilke ayarını yapılandırmazsanız kullanıcılar bölgedeki başka bir siteden veriye erişmek için MSXML veya ADO kullanan bölgeye bir sayfa yükleyemez.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer kısıtlı bölge windows içinde farklı etki alanlarından içerik sürükleyin**  
-  Bu ilke ayarı kaynak ve hedef aynı pencerede olduğunda içerik bir etki alanından farklı bir etki alanına sürükleyerek seçenekleri ayarlamanıza olanak sağlar. Bu ilke ayarını etkinleştirin ve Etkinleştir'i tıklatın, kaynak ve hedef aynı pencerede olduğunda kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyebilirsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz. Bu ilke ayarını etkinleştirin ve devre dışı bırak'a tıklayın, kaynak ve hedef aynı pencerede olduğunda kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyemezsiniz. Kullanıcıların Internet Seçenekleri iletişim kutusunda Bu ayarı değiştiremezsiniz. Bu ilke ayarını devre dışı bırakır veya, yapılandırmayın kaynak ve hedef aynı pencerede olduğunda Internet Explorer 10'da, kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyemezsiniz. Kullanıcıların Internet Seçenekleri iletişim kutusunda Bu ayarı değiştirebilirsiniz. Bu ilke ayarını devre dışı bırakır veya, yapılandırmayın kaynak ve hedef aynı pencerede olduğunda Internet Explorer 9 ve önceki sürümlerinde, kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyebilirsiniz. Kullanıcıların Internet Seçenekleri iletişim kutusunda Bu ayarı değiştiremezsiniz.
+- **Internet Explorer kısıtlı bölge Windows içindeki farklı etki alanlarından içerik sürükle**  
+  Bu ilke ayarı, kaynak ve hedef aynı pencerede olduğunda bir etki alanından farklı bir etki alanına içerik sürükleme seçeneklerini ayarlamanıza olanak sağlar. Bu ilke ayarını etkinleştirir ve Etkinleştir ' e tıklarsanız, kullanıcılar kaynak ve hedef aynı pencerede olduğunda bir etki alanından farklı bir etki alanına içerik sürükleyebilir. Kullanıcılar bu ayarı değiştiremezler. Bu ilke ayarını etkinleştirirseniz ve devre dışı bırak ' a tıkladığınızda, kaynak ve hedef aynı pencerede olduğunda kullanıcılar bir etki alanından farklı bir etki alanına içerik sürüklenemez. Kullanıcılar bu ayarı Internet Seçenekleri iletişim kutusunda değiştiremezler. Internet Explorer 10 ' da, bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, kaynak ve hedef aynı pencerede olduğunda kullanıcılar bir etki alanından farklı bir etki alanına içerik sürüklenemez. Kullanıcılar bu ayarı Internet Seçenekleri iletişim kutusunda değiştirebilir. Internet Explorer 9 ve önceki sürümlerde, bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız kullanıcılar, kaynak ve hedef aynı pencerede olduğunda, içeriği bir etki alanından farklı bir etki alanına sürükleyebilir. Kullanıcılar bu ayarı Internet Seçenekleri iletişim kutusunda değiştiremezler.
   
   **Varsayılan**: Devre dışı
   
-- **Internet Explorer sertifika adresi uyuşmazlığı Uyarısı**  
-  Bu ilke ayarı, sertifika adresi uyumsuzluğu güvenlik uyarısını kapatmanızı sağlar. Bu ilke ayarı etkinleştirildiğinde, kullanıcı için farklı bir Web sitesi adresi, mevcut sertifikalara Güvenli HTTP (HTTPS) Web siteleri ziyaret uyarılır. Bu uyarı, sahtekarlık saldırılarını önlemeye yardımcı olur. Bu ilke ayarını etkinleştirirseniz, sertifika adresi uyuşmazlığı her zaman uyarı görünür. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı (Internet Denetim Masası'nda Gelişmiş sayfasını kullanarak) sertifika adresi uyuşmazlığı uyarısı görüntülenip görüntülenmeyeceğini seçebilirsiniz.
+- **Internet Explorer sertifika adresi uyumsuzluğu uyarısı**  
+  Bu ilke ayarı, sertifika adresi uyuşmazlığı güvenlik uyarısını açmanıza olanak tanır. Bu ilke ayarı açıkken, Kullanıcı farklı bir Web sitesi adresi için verilen sertifikaları sunan güvenli HTTP (HTTPS) Web sitelerini ziyaret ederken uyarılır. Bu uyarı, sahtekarlığı saldırılarını önlemeye yardımcı olur. Bu ilke ayarını etkinleştirirseniz, sertifika adresi uyumsuzluğu uyarısı her zaman görünür. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız kullanıcı, sertifika adresi uyumsuzluğu Uyarısı ' nı (Internet Denetim Masası 'ndaki gelişmiş sayfasını kullanarak) seçebilir.
   
   **Varsayılan**: Enabled 
   
-- **Internet Explorer kısıtlı bölge ayrıcalıklı siteleri daha az**  
-  Bu ilke ayarı, bu bölgeye Web siteleri Internet siteleri gibi daha az ayrıcalıklı bölgelerdeki gidebilirsiniz yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Web siteleri daha az ayrıcalıklı bölgelerdeki yeni pencerelerde açın veya bu bölgeye gidin. Güvenlik bölgesi ek koruma Bölge Yüksekliği güvenlik özelliği tarafından sağlanan bir güvenlik katmanı olmadan çalışır. Açılan kutusunda seçtiğiniz istemi, riskli olabilecek Gezinti gerçekleşmek üzere olan bir kullanıcı için bir uyarı verilir. Bu ilke ayarını devre dışı bırakırsanız, zararlı olabilecek Gezinti engellenir. Internet Explorer güvenlik özelliği bu bölgede bölge yükseltme özelliği denetiminden koruma tarafından belirlenen açıktır. Bu ilke ayarı yapılandırmazsanız, zararlı olabilecek gezintiler engellenir. Internet Explorer güvenlik özelliği bu bölgede bölge yükseltme özelliği denetiminden koruma tarafından belirlenen açıktır.
+- **Internet Explorer kısıtlı bölge daha az ayrıcalıklı siteler**  
+  Bu ilke ayarı, Internet siteleri gibi daha az ayrıcalıklı bölgelerdeki Web sitelerinin bu bölgede gezinip gidemeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, daha az ayrıcalıklı bölgelerdeki Web siteleri içinde yeni pencereler açabilir veya bu bölge üzerinde gezinebilirsiniz. Güvenlik bölgesi, bölge yükselmesi güvenlik özelliğinden koruma tarafından belirtilen ek bir güvenlik katmanı olmadan çalışacaktır. Açılır kutuda sor ' u seçerseniz, kullanıcıya riskli gezintinin gerçekleşmek üzere olduğunu belirten bir uyarı verilir. Bu ilke ayarını devre dışı bırakırsanız, olası zararlı gezinme engellenir. Internet Explorer güvenlik özelliği, bölge yükselmesi özellik denetiminden koruma tarafından ayarlandığı şekilde bu bölgede bulunur. Bu ilke ayarını yapılandırmazsanız, olası zararlı gezintiler engellenir. Internet Explorer güvenlik özelliği, bölge yükselmesi özellik denetiminden koruma tarafından ayarlandığı şekilde bu bölgede bulunur.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Dosya için Internet Explorer kısıtlı bölge otomatik istemi indirir**  
-  Bu ilke ayarı, kullanıcıların olmayan kullanıcı tarafından başlatılan dosya indirmeleri için sorulup sorulmayacağını belirler. Bu ayar ne olursa olsun, kullanıcılar, dosya indirme iletişim kutuları için kullanıcı tarafından başlatılan indirmeler alır. Bu ayarı etkinleştirirseniz, kullanıcılar bir dosya indirme iletişim kutusu için otomatik indirme denemelerinin alır. Devre dışı bırakın ya da bu ayarı yapılandırmayın, kullanıcı tarafından başlatılan olmayan dosya yüklemeleri engellenir ve kullanıcıların dosya indirme iletişim kutusu yerine bildirim çubuğu göreceksiniz. Kullanıcılar daha sonra dosya indirme istemi izin vermek için bildirim çubuğu tıklatabilirsiniz.
+- **Dosya indirmeleri için Internet Explorer kısıtlı bölge otomatik istemi**  
+  Bu ilke ayarı, kullanıcılardan Kullanıcı tarafından başlatılmayan dosya indirmeleri isteyip istemeyeceğini belirler. Bu ayardan bağımsız olarak kullanıcılar, Kullanıcı tarafından başlatılan indirmeler için dosya indirme iletişim kutularını alırlar. Bu ayarı etkinleştirirseniz, kullanıcılar otomatik indirme girişimleri için bir dosya indirme iletişim kutusu alır. Bu ayarı devre dışı bırakır veya yapılandırmazsanız, Kullanıcı tarafından başlatılmayan dosya indirmeleri engellenir ve kullanıcılar dosya indirme iletişim kutusu yerine bildirim çubuğunu görür. Kullanıcılar daha sonra, dosya indirme istemine izin vermek için bildirim çubuğuna tıklayabilir.
   
   **Varsayılan**: Devre dışı
   
-- **Internet Explorer internet bölgesi .NET Framework bağımlı bileşenler**  
-  Bu ilke ayarı, Authenticode imzalanmadığını .NET Framework bileşenlerini Internet Explorer'dan çalışıp çalışmayacağını yönetmenizi sağlar. Bu bileşenler, bir nesne etiketi ve bir bağlantıdan başvurulan Yönetilen yürütülebilir dosyaları başvurulan yönetilen denetimleri içerir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer işaretsiz yönetilen bileşenleri çalıştırır. Açılan kutusunda seçtiğiniz istemi, Internet Explorer işaretsiz yönetilen bileşenleri çalıştırılıp çalıştırılmayacağını için girmesini ister. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer işaretsiz yönetilen bileşenleri yürütme olmaz. Bu ilke ayarı yapılandırmazsanız, Internet Explorer işaretsiz yönetilen bileşenleri çalıştırır.
+- **Internet Explorer Internet bölgesi .NET Framework bağımlı bileşenler**  
+  Bu ilke ayarı, Authenticode ile imzalanmamış .NET Framework bileşenlerinin Internet Explorer 'dan yürütülüp yürütülmeyeceğini yönetmenizi sağlar. Bu bileşenler bir nesne etiketiyle başvurulan yönetilen denetimleri ve bir bağlantıdan başvurulan yönetilen yürütülebilir dosyaları içerir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer imzasız yönetilen bileşenleri yürütür. Açılır kutuda sor ' u seçerseniz, Internet Explorer kullanıcıdan imzasız yönetilen bileşenleri çalıştırıp yürütmeyeceğini belirlemesini ister. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer imzasız yönetilen bileşenleri yürütmez. Bu ilke ayarını yapılandırmazsanız, Internet Explorer imzasız yönetilen bileşenleri yürütür.
   
   **Varsayılan**: Devre Dışı Bırak 
   
-- **Internet Explorer internet bölgesi izin tdc ActiveX denetimlerini kullanmak için etki alanları yalnızca onaylanmış**  
-  Bu ilke ayarı, kullanıcı Web siteleri TDC ActiveX denetimini çalışıp çalışamayacağını denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki sitelerinden TDC ActiveX denetimini çalışmaz. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki tüm sitelerden TDC ActiveX denetimi çalıştırılır.
+- **Internet Explorer Internet bölgesi yalnızca onaylanan etki alanlarının TDC ActiveX denetimlerini kullanmasına izin verir**  
+  Bu ilke ayarı, kullanıcının web sitelerinde TDC ActiveX denetimini çalıştırıp çalıştırameyeceğini denetler. Bu ilke ayarını etkinleştirirseniz, TDC ActiveX denetimi bu bölgedeki Web sitelerinden çalışmaz. Bu ilke ayarını devre dışı bırakırsanız, TDC etkin X denetimi bu bölgedeki tüm sitelerden çalıştırılır.
   
   **Varsayılan**: Enabled 
   
-- **Windows Internet Explorer'ın kısıtlı bölge betik başlatıldı**  
-  Bu ilke ayarı, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows üzerindeki kısıtlamaları yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, bu bölgede Windows kısıtlamaları güvenlik uygulanmayacak. Bu özellik tarafından sağlanan bir güvenlik katmanı eklendi olmadan güvenlik bölgesi çalıştırır. Bu ilke ayarını devre dışı bırakırsanız, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows içerdiği zararlı olabilecek eylemler çalıştıramazsınız. Internet Explorer güvenlik özelliği bu bölgede işlem için Windows güvenlik kısıtlamaları komut dosyası özellik denetim ayarı tarafından belirlenen açıktır. Bu ilke ayarı yapılandırmazsanız, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows içerdiği zararlı olabilecek eylemler çalıştıramazsınız. Internet Explorer güvenlik özelliği bu bölgede işlem için Windows güvenlik kısıtlamaları komut dosyası özellik denetim ayarı tarafından belirlenen açıktır.
+- **Internet Explorer kısıtlı bölge betiği başlatılan Windows**  
+  Bu ilke ayarı, başlık ve durum çubuklarını içeren, betik ile başlatılan açılır pencereler ve pencereler üzerindeki kısıtlamaları yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Windows kısıtlamaları güvenliği bu bölgede uygulanmaz. Güvenlik bölgesi, bu özellik tarafından sunulan ek bir güvenlik katmanı olmadan çalışır. Bu ilke ayarını devre dışı bırakırsanız, başlık ve durum çubuklarını içeren, komut dosyası tarafından başlatılan açılır pencereler ve Windows 'da bulunan olası zararlı eylemler çalıştırılamaz. Bu Internet Explorer güvenlik özelliği, bu bölgede, işlem için Betikleştirilmiş Windows güvenlik kısıtlamaları özelliği denetim ayarı tarafından dikte edildiği şekilde açık. Bu ilke ayarını yapılandırmazsanız, komut dosyası tarafından başlatılan açılır pencereler ve başlık ve durum çubuklarını içeren pencerelerin içerdiği olası zararlı eylemler çalıştırılamaz. Bu Internet Explorer güvenlik özelliği, bu bölgede, işlem için Betikleştirilmiş Windows güvenlik kısıtlamaları özelliği denetim ayarı tarafından dikte edildiği şekilde açık.
   
   **Varsayılan**: Devre dışı 
   
-- **Internet Explorer internet bölgesi dahil yerel yolu sunucu için dosyalar karşıya yüklenirken**  
-  Bu ilke ayarı, kullanıcı, bir HTML formu aracılığıyla bir dosya karşıya yüklenirken yerel yol bilgisi gönderilir, denetler. Yerel yol bilgisi gönderilir, bazı bilgiler sunucuya yanlışlıkla açığa. Örneğin, kullanıcının Masaüstü'nden gönderilen dosya yolun bir parçası olarak kullanıcı adını içerebilir. Bu ilke ayarını etkinleştirirseniz, kullanıcı, bir HTML formu aracılığıyla bir dosya karşıya yüklenirken yol bilgisi gönderilir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı, bir HTML formu aracılığıyla bir dosya karşıya yüklenirken yol bilgisi kaldırıldı. Bu ilke ayarı yapılandırmazsanız, kullanıcı, bir HTML formu aracılığıyla bir dosyayı karşıya yüklediğinizde, yol bilgisi gidiyor olup olmadığını seçebilir. Varsayılan olarak, yol bilgisi gönderilir.
+- **Internet Explorer Internet bölgesi, dosyaları sunucuya yüklerken yerel yolu içerir**  
+  Bu ilke ayarı, Kullanıcı HTML formu aracılığıyla bir dosya yüklerken yerel yol bilgilerinin gönderilip gönderilmediğini denetler. Yerel yol bilgileri gönderildiyse, bazı bilgiler istenmeden sunucu tarafından görüntülenebilir. Örneğin, kullanıcının masaüstünden gönderilen dosyalar yolun bir parçası olarak Kullanıcı adını içerebilir. Bu ilke ayarını etkinleştirirseniz, Kullanıcı HTML formu aracılığıyla bir dosya yüklerken yol bilgileri gönderilir. Bu ilke ayarını devre dışı bırakırsanız, Kullanıcı HTML formu aracılığıyla bir dosya yüklerken yol bilgileri kaldırılır. Bu ilke ayarını yapılandırmazsanız kullanıcı HTML formu aracılığıyla bir dosya yüklerken yol bilgilerinin gönderilip gönderilmeyeceğini seçebilir. Varsayılan olarak, yol bilgileri gönderilir.
   
   **Varsayılan**: Devre dışı 
   
-- **Internet Explorer, geliştirilmiş korumalı mod işlemi devre dışı bırak**  
-  Bu ilke ayarı Internet Explorer 11 64-bit işlemler (için daha fazla güvenlik için) veya (daha fazla uyumluluk için) 32-bit işlemler zaman kullanıp kullanmadığını belirler geliştirilmiş korumalı modu 64-bit Windows sürümlerinde çalışan. Önemli: 64 bit işlemleri kullanıldığında bazı ActiveX denetimleri ve araç çubuklarını kullanılamayabilir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer 11 geliştirilmiş korumalı modu 64-bit Windows sürümlerinde çalışan 64-bit sekmesi işlemleri kullanır. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer 11 zaman geliştirilmiş korumalı modu 64-bit Windows sürümlerinde çalışan 32-bit sekmesi işlemleri kullanır. Bu ilke ayarı yapılandırmazsanız, kullanıcıların üzerinde veya Internet Explorer ayarlarını kullanarak bu özelliği kapatabilirsiniz. Bu özellik varsayılan olarak kapalıdır.
+- **Internet Explorer, gelişmiş korumalı modda işlemi devre dışı bırak**  
+  Bu ilke ayarı, Windows 'un 64-bit sürümlerinde gelişmiş korumalı modda çalışırken Internet Explorer 11 ' in 64 bitlik süreçler (daha fazla güvenlik için) veya 32 bit süreçler (daha fazla uyumluluk için) kullanıp kullanmadığını belirler. Önemli: 64 bit işlem kullanılırken bazı ActiveX denetimleri ve araç çubukları kullanılamayabilir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer 11, Windows 'un 64 bit sürümlerinde gelişmiş korumalı modda çalışırken 64 bitlik sekme süreçlerini kullanacaktır. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer 11, Windows 'un 64 bit sürümlerinde gelişmiş korumalı modda çalışırken 32 bitlik sekme süreçlerini kullanacaktır. Bu ilke ayarını yapılandırmazsanız kullanıcılar Internet Explorer ayarlarını kullanarak bu özelliği etkinleştirebilir veya devre dışı bırakabilirsiniz. Bu özellik varsayılan olarak kapalıdır.
   
   **Varsayılan**: Enabled 
   
-- **Internet Explorer, sertifika hataları yoksay**  
-  Bu ilke ayarı, kullanıcı ("süresi gibi", "İptal" veya "Ad uyuşmazlığı" hatalar) Internet Explorer'da gözatma kesme Güvenli Yuva Katmanı/Aktarım Katmanı Güvenliği (SSL/TLS) sertifikası hataları yoksayma öğesinden engeller. Bu ilke ayarını etkinleştirirseniz, kullanıcı gözatma devam edemiyor. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, sertifika hataları yoksay ve Tarama devam etmek kullanıcı seçebilir.
+- **Internet Explorer sertifika hatalarını yoksay**  
+  Bu ilke ayarı, Internet Explorer 'da kullanıcının taramayı kesintiye uğratan Güvenli Yuva Katmanı/Aktarım Katmanı Güvenliği (SSL/TLS) sertifika hatalarını ("süre dolduğunda", "iptal edildi" veya "ad uyuşmazlığı" hataları) yok saymasını engeller. Bu ilke ayarını etkinleştirirseniz Kullanıcı göz atmaya devam edebilir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Kullanıcı sertifika hatalarını yoksaymayı ve gözatmaya devam etmeyi tercih edebilir.
   
   **Varsayılan**: Devre dışı 
   
-- **XAML dosyalarının Internet Explorer internet bölgesi yükleniyor**  
-  Bu ilke ayarı, Extensible Application Markup Language (XAML) dosyaların yüklenmesini yönetmenize olanak sağlar. XAML, zengin kullanıcı arabirimleri ve Windows Presentation Foundation yararlanan bir grafik oluşturmak için yaygın olarak kullanılan bir XML tabanlı bildirim temelli bir biçimlendirme dilidir. Bu ilke ayarını etkinleştirin ve etkinleştirmek için açılan kutudan ayarlayın, XAML dosyaları Internet Explorer içinde otomatik olarak yüklenir. Kullanıcı bu davranışı değiştiremezsiniz. Açılan kutunun istemine ayarlarsanız, XAML dosyalarının yüklenmesi için kullanıcıdan istenir. Bu ilke ayarını devre dışı bırakırsanız, XAML dosyaları Internet Explorer yüklü değilken. Kullanıcı bu davranışı değiştiremezsiniz. Bu ilke ayarı yapılandırmazsanız, kullanıcının Internet Explorer içinde XAML dosyalarını yüklemeye karar verebilirsiniz.
+- **XAML dosyalarının Internet Explorer Internet bölgesi yüklemesi**  
+  Bu ilke ayarı, Extensible Application Markup Language (XAML) dosyalarının yüklenmesini yönetmenizi sağlar. XAML, Windows Presentation Foundation faydalanan zengin Kullanıcı arabirimleri ve grafikleri oluşturmak için yaygın olarak kullanılan XML tabanlı bildirime dayalı bir biçimlendirme dilidir. Bu ilke ayarını etkinleştirir ve açılır kutuyu etkinleştir olarak ayarlarsanız, XAML dosyaları Internet Explorer 'ın içine otomatik olarak yüklenir. Kullanıcı bu davranışı değiştiremez. Açılır kutuyu sor olarak ayarlarsanız, kullanıcıdan XAML dosyalarını yüklemesi istenir. Bu ilke ayarını devre dışı bırakırsanız, XAML dosyaları Internet Explorer 'ın içinde yüklenmez. Kullanıcı bu davranışı değiştiremez. Bu ilke ayarını yapılandırmazsanız, Kullanıcı XAML dosyalarını Internet Explorer içinde yükleyip yükleyemeyeceğine karar verebilir.
   
   **Varsayılan**: Devre Dışı Bırak 
   
-- **Dosya için Internet Explorer internet bölgesi istemi otomatik indirmeleri**  
-  Bu ilke ayarı, kullanıcıların olmayan kullanıcı tarafından başlatılan dosya indirmeleri için sorulup sorulmayacağını belirler. Bu ayar ne olursa olsun, kullanıcılar, dosya indirme iletişim kutuları için kullanıcı tarafından başlatılan indirmeler alır. Bu ayarı etkinleştirirseniz, kullanıcılar bir dosya indirme iletişim kutusu için otomatik indirme denemelerinin alır. Devre dışı bırakın ya da bu ayarı yapılandırmayın, kullanıcı tarafından başlatılan olmayan dosya yüklemeleri engellenir ve kullanıcıların dosya indirme iletişim kutusu yerine bildirim çubuğu göreceksiniz. Kullanıcılar daha sonra dosya indirme istemi izin vermek için bildirim çubuğu tıklatabilirsiniz.
+- **Dosya indirmeleri için Internet Explorer Internet bölgesi otomatik istemi**  
+  Bu ilke ayarı, kullanıcılardan Kullanıcı tarafından başlatılmayan dosya indirmeleri isteyip istemeyeceğini belirler. Bu ayardan bağımsız olarak kullanıcılar, Kullanıcı tarafından başlatılan indirmeler için dosya indirme iletişim kutularını alırlar. Bu ayarı etkinleştirirseniz, kullanıcılar otomatik indirme girişimleri için bir dosya indirme iletişim kutusu alır. Bu ayarı devre dışı bırakır veya yapılandırmazsanız, Kullanıcı tarafından başlatılmayan dosya indirmeleri engellenir ve kullanıcılar dosya indirme iletişim kutusu yerine bildirim çubuğunu görür. Kullanıcılar daha sonra, dosya indirme istemine izin vermek için bildirim çubuğuna tıklayabilir.
   
   **Varsayılan**: Enabled  
   
-- **Güvenli olmayan dosyalar için Internet Explorer'ın kısıtlı bölge güvenlik uyarısı**  
-  "Dosya – Güvenlik Uyarısı açın" iletisi görüntülenirse, kullanıcı yürütülebilir dosyaları veya diğer olmayabilecek dosyaları (örneğin dosya Gezgini'ni kullanarak bir intranet dosya paylaşımından) açmayı denediğinde bu ilke ayarı denetler. Bu ilke ayarını etkinleştirin ve etkinleştirmek için açılan kutudan ayarlayın, bu dosyalar olmadan bir güvenlik uyarısı açın. Açılan kutunun istemine ayarlarsanız, dosyaları açmadan önce bir güvenlik uyarısı görüntülenir. Bu ilke ayarını devre dışı bırakırsanız, bu dosyalar açmayın. Bu ilke ayarı yapılandırmazsanız, kullanıcı, bilgisayar bu dosyaları nasıl işlediğini yapılandırabilirsiniz. Varsayılan olarak, bu dosyalar Intranet ve yerel bilgisayar bölgeleri, etkin Yasak bölgesinde engellenen ve Internet ve güvenilen bölgelerde isteyecek şekilde ayarlayın.
+- **Güvenli olmayabilecek dosyalar için Internet Explorer kısıtlı bölge güvenliği uyarısı**  
+  Bu ilke ayarı, Kullanıcı yürütülebilir dosyaları veya diğer olası güvenli olmayan dosyaları (örneğin, dosya Gezgini 'ni kullanarak bir intranet dosya paylaşımından) açmaya çalıştığında "dosya güvenlik uyarısı aç" iletisinin görünüp görüntülenmeyeceğini denetler. Bu ilke ayarını etkinleştirir ve açılır kutuyu etkinleştir olarak ayarlarsanız, bu dosyalar güvenlik uyarısı olmadan açılır. Açılır kutuyu sor olarak ayarlarsanız, dosyalar açılmadan önce bir güvenlik uyarısı görüntülenir. Bu ilke ayarını devre dışı bırakırsanız, bu dosyalar açılmaz. Bu ilke ayarını yapılandırmazsanız kullanıcı bilgisayarın bu dosyaları nasıl işleyeceğini yapılandırabilir. Varsayılan olarak, bu dosyalar, Intranet ve yerel bilgisayar bölgelerinde etkin olan kısıtlanmış bölgede engellenir ve Internet ve güvenilen bölgelerde sorulacak şekilde ayarlanır.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi çoklu site komut dosyası filtresi**  
-  Bu ilke, siteler arası betik (XSS) filtre algılayın ve bu bölgedeki Web siteleri içine siteler arası betik eklemelerini engelle denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki sitelerden XSS filtre açıktır ve XSS filtre siteler arası betik eklemelerini engellemeye çalışır. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki sitelerden XSS filtre kapalıdır ve Internet Explorer, siteler arası betik eklemelerini izin verir.
+- **Internet Explorer Internet bölgesi siteler arası betik filtresi**  
+  Bu ilke, siteler arası komut dosyası yazma (XSS) filtresinin bu bölgedeki Web sitelerine yönelik siteler arası betik oluşturmayı algılayıp engellemesine izin olup olmadığını denetler. Bu ilke ayarını etkinleştirirseniz, XSS filtresi bu bölgedeki siteler için açıktır ve XSS filtresi siteler arası betik oluşturma girişimlerini engellemeye çalışır. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki siteler için XSS filtresi kapatılır ve Internet Explorer siteler arası betik oluşturma izni verir.
   
   **Varsayılan**: Enabled 
   
-- **Internet Explorer SSL3 geri dön**  
-  Bu ilke ayarı, güvenli olmayan bir geri dönüş SSL 3.0 engellemenize olanak sağlar. Bu ilke etkinleştirildiğinde, Internet Explorer sitelere kullanarak SSL 3.0 veya TLS 1.0 veya üstü başarısız olduğunda aşağıda bağlanmayı dener. Bir adam-de-ortadaki adam saldırısı önlemek için güvenli olmayan bir geri dönüş izin verme öneririz. Bu ilke, hangi güvenlik protokollerine etkin etkilemez. Bu ilke devre dışı bırakırsanız, sistem varsayılan değerler kullanılır.
+- **Internet Explorer SSL3 'e geri dönüş**  
+  Bu ilke ayarı, SSL 3,0 'e güvenli olmayan bir geri dönüş engellemenizi sağlar. Bu ilke etkinleştirildiğinde, Internet Explorer, TLS 1,0 veya daha fazla hata verdiğinde SSL 3,0 veya sonraki bir sürümü kullanarak sitelere bağlanmaya çalışır. Ortadaki adam saldırısı oluşmasını engellemek için güvenli olmayan geri dönüşe izin vermemenizi öneririz. Bu ilke hangi güvenlik protokollerinin etkinleştirildiğini etkilemez. Bu ilkeyi devre dışı bırakırsanız, sistem Varsayılanları kullanılır.
   
   **Varsayılan**: Site yok 
   
-- **Internet Explorer'ın internet bölgesi akıllı ekran aşağıya kilitli**  
-  Bu ilke kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi tarar olmadığını ayarı denetler. Bu ilke ayarını etkinleştirirseniz, SmartScreen Filtresi, kötü amaçlı içerik için bu bölgedeki sayfalar tarar. Bu ilke ayarını devre dışı bırakırsanız, kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi taramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıya SmartScreen Filtresi'ni kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını seçebilirsiniz. Not: Internet Explorer 7'de, bu ilke ayarı, kimlik avı filtre kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını denetler.
+- **Internet Explorer kilitli Internet alanı akıllı ekranı**  
+  Bu ilke ayarı, SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler. Bu ilke ayarını etkinleştirirseniz SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içeriğe karşı tarar. Bu ilke ayarını devre dışı bırakırsanız, SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içerik için taramaz. Bu ilke ayarını yapılandırmazsanız kullanıcı SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için tarayıp taramayacağını seçebilir. Not: Internet Explorer 7 ' de bu ilke ayarı, kimlik avı filtresinin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler.
   
   **Varsayılan**: Enabled 
   
-- **Internet Explorer bölge başlatma uygulamalar ve dosyalar bir iFrame içinde kısıtlı**  
-  Bu ilke ayarı, uygulamaları çalıştırabilir ve dosyaları, HTML sayfaları bu bölgedeki bir IFRAME başvurusuna şuradan indirilebilir yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar uygulamalarını çalıştırmak ve kullanıcı müdahalesi olmadan bu bölgedeki sayfalarında IFRAMES dosyaları indirin. Açılan kutusunda seçtiğiniz istemi, kullanıcılara uygulamalarını çalıştırmak ve bu bölgedeki sayfalarında IFRAMES dosyaları karşıdan seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların uygulamaları çalıştırmaya ve bu bölgedeki sayfalarında IFRAMES dosyaları indirme engellenir. Bu ilke ayarı yapılandırmazsanız, kullanıcıların uygulamaları çalıştırmaya ve bu bölgedeki sayfalarında IFRAMES dosyaları indirme engellenir.
+- **Internet Explorer kısıtlı bölge bir iFrame içindeki uygulamaları ve dosyaları başlatma**  
+  Bu ilke ayarı, uygulamaların çalıştırılıp çalıştırılmadığını ve bu bölgedeki sayfaların HTML 'si içindeki bir IFRAME başvurusundan dosya indirilip indirilmeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar bu bölgedeki sayfalardaki IFRAME 'lerden Kullanıcı müdahalesi olmadan uygulama çalıştırabilir ve dosya indirebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar, bu bölgedeki sayfalardaki IFRAME 'lerden uygulama çalıştırıp indirme yapıp uygulamacağınızı seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların uygulama çalıştırması ve bu bölgedeki sayfalardaki IFRAME 'lerden dosya indirmeleri engellenir. Bu ilke ayarını yapılandırmazsanız, kullanıcıların uygulama çalıştırması ve bu bölgedeki sayfalardaki IFRAME 'lerden dosya indirmeleri engellenir.
   
   **Varsayılan**: Devre Dışı Bırak 
   
-- **Internet Explorer atlama smart screen'i uyarıları seyrek dosyaları hakkında**  
-  Bu ilke ayarı, kullanıcı Kimden SmartScreen Filtresi uyarılarını devre dışı bırakabilir olup olmadığını belirler. SmartScreen Filtresi, Internet Explorer kullanıcıların yaygın olarak Internet'ten yüklemeyin yürütülebilir dosyaları hakkında kullanıcıyı uyarır. Bu ilke ayarını etkinleştirirseniz, kullanıcıya SmartScreen Filtresi uyarılarını engelleyin. Kullanıcı devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, SmartScreen Filtresi uyarılarını devre dışı bırakabilir.
+- **Internet Explorer, seyrek görülen dosyalarla ilgili akıllı ekran uyarılarını atla**  
+  Bu ilke ayarı, kullanıcının SmartScreen filtresinden gelen uyarıları atlayıp atlayamayacağını belirler. SmartScreen Filtresi, Internet Explorer kullanıcılarının Internet 'ten yaygın olarak indirmediğini çalıştıran yürütülebilir dosyalar hakkında kullanıcıyı uyarır. Bu ilke ayarını etkinleştirirseniz SmartScreen Filtresi uyarıları kullanıcıyı engeller. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız kullanıcı SmartScreen Filtresi uyarılarını atlayabilir.
   
   **Varsayılan**: Devre dışı  
   
-- **İnternet bölgesi için Internet Explorer Açılır Pencere Engelleyicisi**  
-  Bu ilke ayarı, istenmeyen açılır pencerelerin görüntülenip görüntülenmeyeceğini yönetmenize olanak sağlar. Son kullanıcı bağlantıyı tıklattığında açılan açılan pencereler engellenmez. Bu ilke ayarını etkinleştirirseniz, en istenmeyen açılır pencereleri görüntülenmesi engellenir. Bu ilke ayarını devre dışı bırakırsanız, açılır pencereleri görünmesini engelleyen değildir. Bu ilke ayarı yapılandırmazsanız en istenmeyen açılır pencereleri görüntülenmesi engellenir.
+- **Internet Explorer Internet bölgesi açılır pencere engelleyicisi**  
+  Bu ilke ayarı, istenmeyen açılır pencerelerin görünüp görünmeyeceğini yönetmenizi sağlar. Son Kullanıcı bir bağlantıya tıkladığında açılan açılır pencereler engellenmez. Bu ilke ayarını etkinleştirirseniz, istenmeyen açılır pencerelerin çoğunun görünmesi engellenir. Bu ilke ayarını devre dışı bırakırsanız, açılır pencerelerin görüntülenmesini önlenemez. Bu ilke ayarını yapılandırmazsanız, istenmeyen açılır pencerelerin çoğunun görünmesi engellenir.
   
   **Varsayılan**: Etkinleştir  
   
-- **Internet Explorer tutarlı MIME işleme işlemleri**  
-  Internet Explorer dinamik ikili davranışlar içerir: takılı HTML öğeleri için belirli işlevi kapsülleyen bileşenler. Bu ilke, ikili davranışı güvenlik kısıtlama ayarını engellendi veya izin ayarı denetler. Bu ilke ayarını etkinleştirirseniz, ikili davranışları için dosya Gezgini ve Internet Explorer işlemleri engellenir. Bu ilke ayarını devre dışı bırakırsanız, ikili davranışları dosya Gezgini ve Internet Explorer işlemleri için izin verilir. Bu ilke ayarı yapılandırmazsanız, ikili davranışları için dosya Gezgini ve Internet Explorer işlemleri engellenir.
+- **Internet Explorer işleme tutarlı MIME işleme**  
+  Internet Explorer dinamik ikili davranışları içerir: eklendiği HTML öğeleri için belirli işlevleri kapsülleyen bileşenler. Bu ilke ayarı, Ikili davranış güvenlik kısıtlaması ayarının engellenip engellenmeyeceğini veya izin verilmediğini denetler. Bu ilke ayarını etkinleştirirseniz, dosya Gezgini ve Internet Explorer işlemlerinde ikili davranışlar engellenir. Bu ilke ayarını devre dışı bırakırsanız, dosya Gezgini ve Internet Explorer işlemlerinde ikili davranışlara izin verilir. Bu ilke ayarını yapılandırmazsanız, dosya Gezgini ve Internet Explorer işlemlerinde ikili davranışlar engellenir.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer'ın kısıtlı bölge java izinleri**  
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java uygulamalarını devre dışı bırakıldı.
+- **Internet Explorer kısıtlı bölge Java izinleri**  
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız Java uygulamaları devre dışı bırakılır.
   
-  **Varsayılan**: Java devre dışı bırak  
+  **Varsayılan**: Java 'yı devre dışı bırak  
     
   
-- **Korumalı modda Internet Explorer ActiveX denetimleri**  
-  Bu ilke ayarı, ActiveX denetimleri geliştirilmiş korumalı mod etkinleştirildiğinde korumalı modda çalışmasını engeller. Geliştirilmiş korumalı mod ile uyumlu olmayan bir ActiveX denetimi bir kullanıcının bir Web sitesi denetim yükleme girişiminde, Internet Explorer kullanıcıya bildirir ve Web sitesi normal korumalı modda çalıştırma seçeneği sunar. Bu ilke ayarı, bu bildirim devre dışı bırakır ve geliştirilmiş korumalı modu çalıştırmak için tüm Web sitelerinin zorlar. Geliştirilmiş korumalı mod, Windows 64 bit sürümlerinde 64 bit işlemleri kullanarak kötü amaçlı Web sitelerinin karşı ek koruma sağlar. En az çalıştıran bilgisayarlar için Windows 8, geliştirilmiş korumalı mod da sınırlar Internet Explorer okuyabileceği konumlar kayıt defteri ve dosya sistemi. Geliştirilmiş korumalı mod etkin ve geliştirilmiş korumalı mod ile uyumlu olmayan bir ActiveX denetimini yükleme girişiminde bir Web sitesi üzerinden kullanıcı gelir, Internet Explorer kullanıcıya bildirir ve geliştirilmiş korumalı mod için devre dışı bırakma seçeneği sunar Bu özel Web sitesi. Bu ilke ayarını etkinleştirirseniz, Internet Explorer geliştirilmiş korumalı mod devre dışı bırakma seçeneği kullanıcıya vermek olmaz. Tüm korumalı mod Web siteleri, geliştirilmiş korumalı modu çalıştırılır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, Internet Explorer kullanıcıları uyarır ve normal korumalı modda uyumsuz ActiveX denetimleri ile Web sitelerini çalıştırmak için bir seçenek sunar.  
+- **Korumalı modda Internet Explorer Active X denetimleri**  
+  Bu ilke ayarı, Gelişmiş Korumalı mod etkinken ActiveX denetimlerinin korumalı modda çalışmasını engeller. Bir Kullanıcı, Gelişmiş Korumalı mod ile uyumlu olmayan bir ActiveX denetimine sahip olduğunda ve bir Web sitesi denetimi yüklemeye çalışırsa, Internet Explorer kullanıcıya bildirir ve Web sitesini normal korumalı modda çalıştırma seçeneği sunar. Bu ilke ayarı, bu bildirimi devre dışı bırakır ve tüm Web sitelerini gelişmiş korumalı modda çalışacak şekilde zorlar. Gelişmiş Korumalı mod, Windows 'un 64 bit sürümlerinde 64 bitlik süreçler kullanarak kötü amaçlı Web sitelerine karşı ek koruma sağlar. En az Windows 8 çalıştıran bilgisayarlarda, Gelişmiş Korumalı mod, Internet Explorer 'ın kayıt defterinden ve dosya sisteminde okuyamadığı konumları da sınırlar. Gelişmiş Korumalı mod etkinken ve bir Kullanıcı, Gelişmiş Korumalı modla uyumlu olmayan bir ActiveX denetimi yüklemeye çalışır bir Web sitesi içinde olduğunda, Internet Explorer kullanıcıya bildirir ve gelişmiş korumalı modu için devre dışı bırakma seçeneği sağlar. Bu belirli bir Web sitesi. Bu ilke ayarını etkinleştirirseniz, Internet Explorer kullanıcıya gelişmiş korumalı modu devre dışı bırakma seçeneğini vermez. Tüm korumalı mod Web siteleri, gelişmiş korumalı modda çalışır. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Internet Explorer kullanıcılara bildirir ve normal korumalı modda uyumsuz ActiveX denetimleriyle Web sitelerini çalıştırma seçeneği sunar.  
   
   **Varsayılan**: Devre dışı  
   
-- **XAML dosyalarının Internet Explorer kısıtlı bölge yükleniyor**  
-  Bu ilke ayarı, Extensible Application Markup Language (XAML) dosyaların yüklenmesini yönetmenize olanak sağlar. XAML, zengin kullanıcı arabirimleri ve Windows Presentation Foundation yararlanan bir grafik oluşturmak için yaygın olarak kullanılan bir XML tabanlı bildirim temelli bir biçimlendirme dilidir. Bu ilke ayarını etkinleştirin ve etkinleştirmek için açılan kutudan ayarlayın, XAML dosyaları Internet Explorer içinde otomatik olarak yüklenir. Kullanıcı bu davranışı değiştiremezsiniz. Açılan kutunun istemine ayarlarsanız, XAML dosyalarının yüklenmesi için kullanıcıdan istenir. Bu ilke ayarını devre dışı bırakırsanız, XAML dosyaları Internet Explorer yüklü değilken. Kullanıcı bu davranışı değiştiremezsiniz. Bu ilke ayarı yapılandırmazsanız, kullanıcının Internet Explorer içinde XAML dosyalarını yüklemeye karar verebilirsiniz.
+- **XAML dosyalarının Internet Explorer kısıtlı bölge yüklemesi**  
+  Bu ilke ayarı, Extensible Application Markup Language (XAML) dosyalarının yüklenmesini yönetmenizi sağlar. XAML, Windows Presentation Foundation faydalanan zengin Kullanıcı arabirimleri ve grafikleri oluşturmak için yaygın olarak kullanılan XML tabanlı bildirime dayalı bir biçimlendirme dilidir. Bu ilke ayarını etkinleştirir ve açılır kutuyu etkinleştir olarak ayarlarsanız, XAML dosyaları Internet Explorer 'ın içine otomatik olarak yüklenir. Kullanıcı bu davranışı değiştiremez. Açılır kutuyu sor olarak ayarlarsanız, kullanıcıdan XAML dosyalarını yüklemesi istenir. Bu ilke ayarını devre dışı bırakırsanız, XAML dosyaları Internet Explorer 'ın içinde yüklenmez. Kullanıcı bu davranışı değiştiremez. Bu ilke ayarını yapılandırmazsanız, Kullanıcı XAML dosyalarını Internet Explorer içinde yükleyip yükleyemeyeceğine karar verebilir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer pencerelerine güvenlik kısıtlamaları işlemleri**  
-  Internet Explorer, program aracılığıyla açın, yeniden boyutlandırma ve çeşitli türlerdeki windows yeniden konumlandırmak için komut dosyaları sağlar. Pencere Kısıtlamaları güvenlik özelliği açılır pencereleri kısıtlar ve betikleri başlık ve Durum Çubuğu'nın kullanıcıya görünür olmayan veya diğer Windows başlık ve durum çubukları karartmak windows görüntülenmesini engeller. Bu ilke ayarını etkinleştirirseniz, tüm işlemler için pencerelerine kısıtlanır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın pencerelerine sınırlı değildir.
+- **Internet Explorer komut dosyalı pencere güvenlik kısıtlamalarını işler**  
+  Internet Explorer, komut dosyalarının çeşitli türlerin pencerelerini program aracılığıyla açmasına, yeniden boyutlandırmasına ve yeniden konumlandırmasına olanak tanır Pencere Kısıtlamaları güvenlik özelliği açılır pencereleri kısıtlar ve betiklerin, başlık ve durum çubuklarının Kullanıcı tarafından görülemeyen veya diğer pencerelerin başlık ve durum çubuklarının bir gizleme olmayan pencereler görüntülemesini engeller. Bu ilke ayarını etkinleştirirseniz, betikleştirilmiş pencereler tüm süreçler için kısıtlanır. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, betikleştirilmiş pencereler engellenmez.
   
   **Varsayılan**: Enabled   
   
-- **Internet Explorer kısıtlı bölge ActiveX denetimleri ve eklentileri çalıştırma**  
-  Bu ilke ayarı ActiveX denetimleri ve eklentiler sayfalarda belirtilen bölgeden çalıştırabilirsiniz yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, denetimleri ve eklentiler kullanıcı müdahalesi olmadan çalıştırabilirsiniz. Aşağı açılan kutusunda seçtiğiniz istemi kullanıcıların denetimleri izin verip vermeyeceklerini sorulan veya çalıştırmak için eklenti vardır. Bu ilke ayarını devre dışı bırakırsanız, denetimleri ve eklentiler çalışması engellenir. Bu ilke ayarı yapılandırmazsanız, denetimleri ve eklentiler çalışması engellenir.
+- **Internet Explorer kısıtlı bölgesi etkin X denetimleri ve eklentileri çalıştırma**  
+  Bu ilke ayarı, ActiveX denetimlerinin ve eklentilerin belirtilen bölgedeki sayfalarda çalıştırılıp çalıştırılamayacağını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, denetimler ve eklentiler Kullanıcı müdahalesi olmadan çalıştırılabilir. Açılır kutuda sor ' u seçtiyseniz, kullanıcılardan denetimlerin veya eklentinin çalışmasına izin verip vermeyeceklerini seçmesi istenir. Bu ilke ayarını devre dışı bırakırsanız, denetimlerin ve eklentilerin çalışması engellenir. Bu ilke ayarını yapılandırmazsanız, denetimlerin ve eklentilerin çalışması engellenir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer'ın kısıtlı bölge betik ActiveX denetimleri için güvenli olarak işaretlenmiş**  
-  Bu ilke ayarı, bir ActiveX denetimi için güvenli olarak işaretlenmiş bir betik ile etkileşimde bulunup bulunamayacağı yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, komut dosyası etkileşimi kullanıcı müdahalesi olmadan otomatik olarak ortaya çıkabilir. Aşağı açılan kutusunda istemi seçerseniz, kullanıcıların betik katılımına izin verip vermeyeceklerini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, betik etkileşim oluşmasını engellenir. Bu ilke ayarı yapılandırmazsanız, betik etkileşim oluşmasını engellenir.
+- **Internet Explorer kısıtlı bölge betiği etkin X denetimleri betik için güvenli olarak işaretlendi**  
+  Bu ilke ayarı, komut dosyası için güvenli olarak işaretlenmiş bir ActiveX denetiminin bir betikten etkileşime giremeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, komut dosyası etkileşimi Kullanıcı müdahalesi olmadan otomatik olarak gerçekleşebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılardan betik etkileşimine izin verip vermeyeceğinizi seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, betik etkileşiminin oluşmasını engellenir. Bu ilke ayarını yapılandırmazsanız, betik etkileşiminin oluşmasını engellenir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer'ın kısıtlı bölge oturum açma seçenekleri**  
-  Bu ilke ayarı, oturum açma seçenekleri ayarlarını yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, aşağıdaki oturum açma seçenekleri arasından seçim yapabilirsiniz. 
-  - *Anonim* - anonim oturum açma devre dışı bırakma HTTP kimlik doğrulaması kullanın ve yalnızca ortak Internet dosya sistemi (CIFS) protokolü için Konuk hesabı kullanın. 
-  - *İstemi* -kullanıcı kimliklerini ve parolaları için kullanıcı adı ve parola sorgusu kullanıcıları için kullanım istemi. Bir Kullanıcı sorgulandıktan sonra bu değerleri sessizce oturumunun geri kalanı için kullanılabilir. 
-  - *Yalnızca Intranet bölgesinde otomatik oturum açma* -kullanıcı kimliklerini ve parolaları diğer bölgelerdeki sorgusu kullanıcıları için bu seçeneği kullanın. Bir Kullanıcı sorgulandıktan sonra bu değerleri sessizce oturumunun geri kalanı için kullanılabilir. 
-  - *Geçerli kullanıcı adı ve parola otomatik oturum*-Windows NT Sınama yanıtı (NTLM kimlik doğrulaması olarak da bilinir) kullanarak oturum açma denemesi için bu seçeneği kullanın. Sunucu, Windows NT Sınama yanıtı, kullanıcının ağ kullanıcı adı ve parola için oturum açın oturum açma kullanan destekliyorsa. Sunucu, Windows NT Sınama yanıtı desteklemiyorsa, kullanıcının kullanıcı adı ve parola sağlamak için sorgulanır. 
+- **Internet Explorer kısıtlı bölge oturum açma seçenekleri**  
+  Bu ilke ayarı, oturum açma seçeneklerinin ayarlarını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, aşağıdaki oturum açma seçenekleri arasından seçim yapabilirsiniz. 
+  - *Anonim* -http kimlik doğrulamasını devre dışı bırakmak ve yalnızca ortak Internet dosya SISTEMI (CIFS) protokolü için konuk hesabını kullanmak üzere anonim oturum açma özelliğini kullanın. 
+  - *İstem* -Kullanıcı kimlikleri ve parolalar için kullanıcıları sorgulamak üzere Kullanıcı adı ve parola istemi kullanın. Kullanıcı sorgulandıktan sonra bu değerler sessizce oturum geri kalanı için kullanılabilir. 
+  - *Yalnızca Intranet bölgesinde otomatik oturum açma* -bu seçeneği, kullanıcıları diğer bölgelerdeki Kullanıcı kimlikleri ve parolalar için sorgulamak üzere kullanın. Kullanıcı sorgulandıktan sonra bu değerler sessizce oturum geri kalanı için kullanılabilir. 
+  - *Geçerli Kullanıcı adı ve parolasıyla otomatik oturum aç*-bu seçeneği, Windows NT Challenge yanıtı (NTLM kimlik doğrulaması olarak da bilinir) kullanarak oturum açmayı denemek için kullanın. Sunucu Windows NT Challenge yanıtını destekliyorsa, oturum açma oturum açmak için kullanıcının ağ kullanıcı adını ve parolasını kullanır. Sunucu Windows NT Challenge yanıtını desteklemiyorsa, Kullanıcı Kullanıcı adını ve parolayı sağlamak üzere sorgulanır. 
 
-  Bu ilke ayarını devre dışı bırakırsanız, oturum açma ayarlanır *otomatik oturum yalnızca Intranet bölgesinde*. Bu ilke ayarı yapılandırmazsanız, oturum açma ayarlanır *istemi* kullanıcı adı ve parola.
+  Bu ilke ayarını devre dışı bırakırsanız, oturum açma *yalnızca Intranet bölgesinde otomatik oturum açma*olarak ayarlanır. Bu ilke ayarını yapılandırmazsanız, oturum açma, Kullanıcı adı ve parola *isteyecek* şekilde ayarlanır.
   
   **Varsayılan**: Anonim  
   
-- **Internet Explorer Güvenilen Bölge başlatmak ve ActiveX denetimlerini betik güvenli olarak işaretlenmemiş**  
-  Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, güvenilir olmayan verileri veya betikler için nesne güvenliği ayarlamadan parametreler ile yüklenir ve komut dosyalı çalıştırın. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, başlatılır ve komut dosyası için hem güvenli hem de güvenli denetimler neden olur, betik ActiveX denetimlerini yoksayma seçeneği için güvenli olarak işaretlenmiş. Bu ilke ayarını etkinleştirin ve istemi açılır kutusunda, kullanıcıların denetimi parametrelerle yüklemeye izin verilip verilmeyeceği veya komut dosyası. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası. Bu ilke ayarı yapılandırmazsanız, kullanıcıların denetimi parametrelerle yüklemeye izin verilip verilmeyeceği veya komut dosyası.
+- **Internet Explorer güvenilir bölge başlatma ve betik etkin X denetimleri güvenli olarak işaretlenmemiş**  
+  Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri çalışır, parametrelerle yüklenir ve güvenilir olmayan veriler veya betikler için nesne güvenliğini ayarlamadan komut dosyası. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, komut dosyası oluşturma seçeneği için güvenli olarak işaretlenmiş betik ActiveX denetimlerini yoksayarak, hem güvensiz hem de güvenli denetimlerin başlatılmasına ve betiklere neden olur. Bu ilke ayarını etkinleştirir ve açılan kutuda sor ' u seçerseniz, kullanıcılara, denetimin parametrelerle veya betiklerle yüklenmesine izin verip vermeyecekleri sorulur. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemeyen ActiveX denetimleri parametrelerle veya betiklerle yüklenmez. Bu ilke ayarını yapılandırmazsanız kullanıcılara, denetimin parametrelerle veya betiklerle yüklenmesine izin verip vermeyecekleri sorulur.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer onay sunucu sertifika iptal etme**  
-  Bu ilke ayarı, Internet Explorer ın sunucu sertifikalarının iptal durumunu denetleyip denetlemeyeceğini yönetmenize olanak sağlar. Sertifikalar, gizliliği ihlal edilmiş veya artık geçerli ve bu seçenek, gizli veriler sahte veya güvenli olmayan bir siteye göndermesinin kullanıcıları korur iptal edilir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer sunucu sertifikası iptal edilmiş görmek için denetler. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer sunucu sertifikası iptal edilmiş görmek için kontrol olmaz. Bu ilke ayarı yapılandırmazsanız, Internet Explorer sunucu sertifikası iptal edilmiş görmek için kontrol olmaz.
+- **Internet Explorer sunucu sertifikasını iptal etme**  
+  Bu ilke ayarı, Internet Explorer 'ın, sunucuların sertifikalarının iptal durumunu denetleyip denetmeyeceğini yönetmenizi sağlar. Sertifikalar tehlikeye atıldığında veya artık geçerli olmadığında iptal edilir ve bu seçenek, kullanıcıların sahte veya güvenli olmayan bir siteye gizli veriler göndermesini önler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer sunucu sertifikalarının iptal edilip edilmediğini kontrol eder. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer, iptal edilip edilmediğini görmek için sunucu sertifikalarını denetlemez. Bu ilke ayarını yapılandırmazsanız Internet Explorer, iptal edilip edilmediğini görmek için sunucu sertifikalarını denetlemez.
   
   **Varsayılan**: Enabled 
   
-- **Internet Explorer internet bölgesi ayrıcalıklı siteleri daha az**  
-  Bu ilke ayarı, bu bölgeye Web siteleri Yasak siteler gibi daha az ayrıcalıklı bölgelerdeki gidebilirsiniz yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Web siteleri daha az ayrıcalıklı bölgelerdeki yeni pencerelerde açın veya bu bölgeye gidin. Güvenlik bölgesi ek koruma Bölge Yüksekliği güvenlik özelliği tarafından sağlanan bir güvenlik katmanı olmadan çalışır. Açılan kutusunda seçtiğiniz istemi, riskli olabilecek Gezinti gerçekleşmek üzere olan bir kullanıcı için bir uyarı verilir. Bu ilke ayarını devre dışı bırakırsanız, zararlı olabilecek gezintiler engellenir. Internet Explorer güvenlik özelliği bu bölgede bölge yükseltme özelliği denetiminden koruma tarafından belirlenen açıktır. Bu ilke ayarı yapılandırmazsanız, Web siteleri daha az ayrıcalıklı bölgelerdeki yeni pencerelerde açın veya bu bölgeye gidin.
+- **Internet Explorer Internet bölgesi daha az ayrıcalıklı siteler**  
+  Bu ilke ayarı, kısıtlanmış siteler gibi daha az ayrıcalıklı bölgelerdeki Web sitelerinin bu bölgede gezinip gidemeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, daha az ayrıcalıklı bölgelerdeki Web siteleri içinde yeni pencereler açabilir veya bu bölge üzerinde gezinebilirsiniz. Güvenlik bölgesi, bölge yükselmesi güvenlik özelliğinden koruma tarafından belirtilen ek bir güvenlik katmanı olmadan çalışacaktır. Açılır kutuda sor ' u seçerseniz, kullanıcıya riskli gezintinin gerçekleşmek üzere olduğunu belirten bir uyarı verilir. Bu ilke ayarını devre dışı bırakırsanız, olası zararlı gezintiler engellenir. Internet Explorer güvenlik özelliği, bölge yükselmesi özellik denetiminden koruma tarafından ayarlandığı şekilde bu bölgede bulunur. Bu ilke ayarını yapılandırmazsanız, daha az ayrıcalıklı bölgelerdeki Web siteleri içinde yeni pencereler açabilir veya bu bölge üzerinde gezinebilirsiniz.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer kısıtlı bölge dosyasını indirir.**  
-  Bu ilke ayarı, Dosya indirmeleri bölgeden yüklenmesine izin verilip verilmeyeceğini yönetmenizi sağlar. Bu seçeneği neden değil dosyanın teslim edildiği bölge indirme bağlantısıyla sayfanın bölgesine göre belirlenen. Bu ilke ayarını etkinleştirirseniz, dosyaları bölgeden indirilebilir. Bu ilke ayarını devre dışı bırakırsanız, bölgeden indirilen dosyaları engellenir. Bu ilke ayarı yapılandırmazsanız bölgeden indirilen dosyaları engellenir.
+- **Internet Explorer kısıtlı bölge dosyası İndirmeleri**  
+  Bu ilke ayarı, bölgeden dosya indirmelerine izin verilip verilmeyeceğini yönetmenizi sağlar. Bu seçenek, dosyanın teslim edildiği bölgeden değil, indirilmesine neden olan sayfanın bölgesi tarafından belirlenir. Bu ilke ayarını etkinleştirirseniz, dosyalar bölgeden indirilebilir. Bu ilke ayarını devre dışı bırakırsanız, dosyaların bölgeden indirilmesi engellenir. Bu ilke ayarını yapılandırmazsanız, dosyaların bölgeden indirilmesi engellenir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi Authenticode ile imzalanmış .NET Framework bağımlı bileşenleri çalıştırın**  
-  Bu ilke ayarı, Authenticode ile imzalanmış .NET Framework bileşenlerini Internet Explorer'dan çalışıp çalışmayacağını yönetmenizi sağlar. Bu bileşenler, bir nesne etiketi ve bir bağlantıdan başvurulan Yönetilen yürütülebilir dosyaları başvurulan yönetilen denetimleri içerir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer imzalı yönetilen bileşenleri çalıştırır. Açılan kutusunda seçtiğiniz istemi, Internet Explorer imzalı yönetilen bileşenleri çalıştırılıp çalıştırılmayacağını için girmesini ister. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer imzalı yönetilen bileşenleri yürütme olmaz. Bu ilke ayarı yapılandırmazsanız, Internet Explorer imzalı yönetilen bileşenleri yürütme olmaz.
+- **Internet Explorer Internet bölgesi çalıştırma .NET Framework Authenticode ile imzalanmış bağımlı bileşenler**  
+  Bu ilke ayarı, Authenticode ile imzalanmış .NET Framework bileşenlerinin Internet Explorer 'dan yürütülüp yürütülmeyeceğini yönetmenizi sağlar. Bu bileşenler bir nesne etiketiyle başvurulan yönetilen denetimleri ve bir bağlantıdan başvurulan yönetilen yürütülebilir dosyaları içerir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer imzalanmış yönetilen bileşenleri yürütür. Açılır kutuda sor ' u seçerseniz, Internet Explorer kullanıcıdan imzalanmış yönetilen bileşenleri çalıştırıp yürütmeyeceğini belirlemesini ister. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer imzalanmış yönetilen bileşenleri yürütmez. Bu ilke ayarını yapılandırmazsanız, Internet Explorer imzalanmış yönetilen bileşenleri yürütmez.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer kullanıcı ActiveX denetimleri yüklenmesini engelle**  
-  Bu ilke ayarı, kullanıcı başına temelinde ActiveX denetimlerini yüklenmesini önlemek sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcı başına esasına göre ActiveX denetimlerini yüklenemez. ActiveX denetimleri, devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı başına esasına göre yüklenebilir.
+- **Internet Explorer, etkin X denetimlerinin Kullanıcı başına yüklenmesini engelliyor**  
+  Bu ilke ayarı, ActiveX denetimlerinin Kullanıcı bazında yüklenmesini engellemenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri Kullanıcı başına temelinde yüklenemez. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, ActiveX denetimleri Kullanıcı başına temelinde yüklenebilir.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer smart screen'i Filtresi'nin yönetimini engelle**  
-  Bu ilke ayarı, ziyaret ettikleri Web sitesi aracılığıyla "kimlik avı" kişisel bilgileri toplamak sahte girişimleri için bilinen veya ana bilgisayar kötü amaçlı yazılımı bildirmeye bilinen kullanıcıyı uyarır SmartScreen Filtresi'ni yönetmesini kullanıcı engeller. Bu ilke ayarını etkinleştirirseniz, kullanıcıya SmartScreen Filtresi'ni istenir değil. Filtrelere olmayan tüm Web sitesi adresleri listesi gönderilen otomatik olarak Microsoft'a kullanıcıya sormadan izin verin. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı ilk kez çalıştırma deneyimi sırasında SmartScreen Filtresi'ni açmak isteyip karar vermeniz istenir.
+- **Internet Explorer akıllı ekran filtresini yönetmeyi engelliyor**  
+  Bu ilke ayarı, kullanıcının ziyaret ettikleri web sitesinin "kimlik avı" aracılığıyla kişisel bilgi toplamak için veya kötü amaçlı yazılım barındırmaya yönelik olarak tanındığı durumlarda kullanıcıyı uyaran SmartScreen Filtresi 'ni yönetmesini engeller. Bu ilke ayarını etkinleştirirseniz Kullanıcı SmartScreen Filtresi 'ni etkinleştirmek isteyip istemediğiniz sorulur. Filtreler izin verilenler listesinde olmayan tüm Web sitesi adresleri, kullanıcıya sormadan otomatik olarak Microsoft 'a gönderilir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, kullanıcıdan ilk çalıştırma deneyimi sırasında SmartScreen Filtresi 'ni açıp açmayacağına karar vermesini istenir.
   
   **Varsayılan**: Etkinleştir  
   
-- **Internet Explorer MIME algılaması güvenlik özelliği işlemleri**  
-  Bu ilke ayarı, Internet Explorer MIME algılaması tek bir dosyanın daha tehlikeli bir dosya türü için engelleyecek olup olmadığını belirler. Bu ilke ayarını etkinleştirirseniz, MIME algılaması daha tehlikeli bir dosya türü için bir türde bir dosya hiçbir zaman yükseltmez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer işlemleri daha tehlikeli bir dosya türü için bir türde bir dosya MIME algılamasının izin verir. Bu ilke ayarı yapılandırmazsanız MIME algılaması daha tehlikeli bir dosya türü için bir türde bir dosya hiçbir zaman yükseltmez.
+- **Internet Explorer işlem MIME algılaması güvenlik özelliği**  
+  Bu ilke ayarı, Internet Explorer MIME algılaması 'nın bir türdeki dosyanın daha tehlikeli bir dosya türüne yükseltilmesini engelleyip engelmeyeceğini belirler. Bu ilke ayarını etkinleştirirseniz, MIME algılaması hiçbir şekilde bir türdeki dosyayı daha tehlikeli bir dosya türüne yükseltmez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer işlemi bir MIME algılamasına bir tür dosyanın daha tehlikeli bir dosya türüne yükseltme yapmasına izin verir. Bu ilke ayarını yapılandırmazsanız, MIME algılaması hiçbir şekilde bir türdeki dosyayı daha tehlikeli bir dosya türüne yükseltmez.
   
   **Varsayılan**: Enabled  
   
-- **İmzalı ActiveX denetimlerini Internet Explorer kısıtlı bölge yükle**  
-  Bu ilke ayarı, kullanıcıların imzalanmış ActiveX denetimlerini bölgesinde sayfasından yükleyip yükleyemeyeceklerini yönetmenize olanak sağlar. Bu ilkeyi etkinleştirmek, kullanıcıların kullanıcı müdahalesi olmadan imzalı denetimleri indirebilirsiniz. Aşağı açılan kutusunda istemi seçerseniz, kullanıcıların güvenilen yayımcılar tarafından imzalanmış denetimleri indirin etkinleştirilip etkinleştirilmeyeceğini sorgulanır. Güvenilen Yayımcılar tarafından imzalanmış kod sessizce indirilir. İlke ayarını devre dışı bırakırsanız, imzalı denetimleri karşıdan yükleyemiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcıların güvenilen yayımcılar tarafından imzalanmış denetimleri indirin etkinleştirilip etkinleştirilmeyeceğini sorgulanır. Güvenilen Yayımcılar tarafından imzalanmış kod sessizce indirilir.
+- **Internet Explorer kısıtlı bölge, imzalanmış etkin X denetimlerini indirin**  
+  Bu ilke ayarı, kullanıcıların, bölgedeki bir sayfadan imzalı ActiveX denetimlerini indirip indirmeyeceğini yönetmenizi sağlar. Bu ilkeyi etkinleştirirseniz kullanıcılar, imzalanmış denetimleri kullanıcı müdahalesi olmadan indirebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılara güvenilmeyen yayımcılar tarafından imzalanmış denetimlerin indirilip indirilmeyeceği sorgulanır. Güvenilen yayımcılar tarafından imzalanan kod sessizce indirilir. İlke ayarını devre dışı bırakırsanız, imzalanmış denetimler indirimez. Bu ilke ayarını yapılandırmazsanız kullanıcılara güvenilmeyen yayımcılar tarafından imzalanmış denetimlerin indirilip indirilmeyeceği istenir. Güvenilen yayımcılar tarafından imzalanan kod sessizce indirilir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer otomatik tamamlama**  
-  Bu otomatik tamamlama özelliği, unutmayın ve kullanıcı adları ve parolalar formlarında önerin. Bu ayarı etkinleştirirseniz, kullanıcı "kullanıcı adı ve parolaların" değiştiremez ya da "parolaları kaydetmek için sor". Kullanıcı adları ve parolaların için Otomatik Tamamlama özelliği etkinleştirilir. "Parola kaydetmemi iste" seçip seçmemeye karar verin gerekir. Bu ayar devre dışı bırakırsanız kullanıcı "kullanıcı adı ve parolaların" değiştiremez ya da "parolaları kaydetmek için sor". Kullanıcı adları ve parolaların için Otomatik Tamamlama özelliği kapalıdır. Kullanıcı parolaları kaydedilmeyeceğinin sorulması için de kapatılamaz. Bu ayarı yapılandırmazsanız, kullanıcının tam kullanıcı adı ve parola form ve parolaları kaydetme istemi seçeneği otomatik kapatma özgürlüğü sahip. Bu seçeneği görüntülemek için kullanıcıların Internet Seçenekleri iletişim kutusunu açın, İçindekiler sekmesini tıklatın ve ayarlar düğmesine tıklayın.
+- **Internet Explorer otomatik olarak tamamlanır**  
+  Bu otomatik tamamlanma özelliği, formlarda Kullanıcı adlarını ve parolalarını anımsayabilir ve önerebilir. Bu ayarı etkinleştirirseniz, Kullanıcı "formlardaki Kullanıcı adı ve parolaları" veya "parola kaydetmem iste" seçeneğini değiştiremez. Formlardaki kullanıcı adları ve parolalar için otomatik tamamlanma özelliği açıktır. "Parolaları kaydetmem için sor" seçeneğini belirleyip seçmemeye karar vermeniz gerekir. Bu ayarı devre dışı bırakırsanız, Kullanıcı "formlardaki Kullanıcı adı ve parolaları" veya "parola kaydetmem iste" öğesini değiştiremez. Formlardaki kullanıcı adları ve parolalar için otomatik tamamlanma özelliği kapalıdır. Kullanıcı da parola kaydetmeyeceğine izin sorulmayı kabul edebilir. Bu ayarı yapılandırmazsanız kullanıcı, formlarda Kullanıcı adı ve parolalar için otomatik tamamlamayı açma özgürlüğüne sahiptir ve parolaları kaydetmenizi isteme seçeneğini sunar. Bu seçeneği göstermek için kullanıcılar Internet Seçenekleri iletişim kutusunu açar, Içerikler sekmesine tıklayın ve Ayarlar düğmesine tıklayın.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi çalıştırmak VBscript izin ver**  
-  Bu ilke ayarı, VBScript belirli Internet Explorer bölgeleri sayfalarında çalıştırılıp çalıştırılmayacağını karar vermenize olanak tanır. Şu seçenekler mevcuttur: 
-  - *Etkinleştirme* -herhangi bir etkileşim olmadan, belirli bölgelerde sayfalarında VBScript çalıştırır. 
-  - *Komut İstemi* -çalışanlar istenir bölgede çalıştırılacak VBScript izin verilip verilmeyeceğini. 
-  - *Devre dışı* -VBScript bölgede çalışmasını engellenir. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, belirtilen bölgede herhangi bir etkileşim olmadan bir VBScript çalıştırır. 
+- **Internet Explorer Internet bölgesi VBscript 'in çalışmasına izin verir**  
+  Bu ilke ayarı, VBScript 'in belirli Internet Explorer bölgelerindeki sayfalarda çalıştırılıp etmeyeceğine karar vermenizi sağlar. Şu seçenekler mevcuttur: 
+  - *Enable* -herhangi bir etkileşim olmadan belirli bölgelerdeki sayfalarda VBScript çalıştırmaları. 
+  - *İstem* -çalışanlara VBScript 'in bölgede çalışmasına izin verip vermeyeceğine sorulur. 
+  - *Disable* -VBScript 'in bölgede çalışması engellenir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız VBScript, belirtilen bölgede herhangi bir etkileşim olmadan çalışır. 
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer'ın kısıtlı bölgede tdc ActiveX denetimlerini kullanmak için etki alanları yalnızca onaylanmış**  
-  Bu ilke ayarı, kullanıcı Web siteleri TDC ActiveX denetimini çalışıp çalışamayacağını denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki sitelerinden TDC ActiveX denetimini çalışmaz. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki tüm sitelerden TDC ActiveX denetimi çalıştırılır.
+- **Internet Explorer kısıtlı bölgesi yalnızca onaylanan etki alanlarının TDC etkin X denetimlerini kullanmasına izin verir**  
+  Bu ilke ayarı, kullanıcının web sitelerinde TDC ActiveX denetimini çalıştırıp çalıştırameyeceğini denetler. Bu ilke ayarını etkinleştirirseniz, TDC ActiveX denetimi bu bölgedeki Web sitelerinden çalışmaz. Bu ilke ayarını devre dışı bırakırsanız, TDC etkin X denetimi bu bölgedeki tüm sitelerden çalıştırılır.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer Güvenilen Bölge ActiveX denetimleri karşı kötü amaçlı yazılımdan koruma çalışmaz**  
-  Bu ilke ayarı, Internet Explorer karşı sayfalarında güvenli iseler denetlemek için ActiveX denetimleri, kötü amaçlı yazılımdan koruma programları çalışıp çalışmayacağını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetleyin olmaz. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Bu ilke ayarı yapılandırmazsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Kullanıcılar bu davranışı açıp kapatabilir, Internet Explorer güvenlik ayarlarını kullanarak kapatabilirsiniz.
+- **Internet Explorer güvenilen bölgesi, etkin X denetimlerine karşı kötü amaçlı yazılımdan koruma çalıştırmayın**  
+  Bu ilke ayarı, Internet Explorer 'ın, sayfalarda güvenli olup olmadığını denetlemek için kötü amaçlı yazılımdan koruma programlarını ActiveX denetimlerine karşı çalıştırmasını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer, ActiveX denetiminin bir örneğini oluşturmanın güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetlemez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Bu ilke ayarını yapılandırmazsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Kullanıcılar, Internet Explorer güvenlik ayarlarını kullanarak bu davranışı etkinleştirebilir veya devre dışı bırakabilirsiniz.
   
   **Varsayılan**: Devre dışı 
   
-- **Internet Explorer yerel makine bölge java izinleri**  
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java Orta çalışamaz.
+- **Internet Explorer yerel makine bölgesi Java izinleri**  
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız, izin orta düzey güvenlik olarak ayarlanır.
   
-  **Varsayılan**: Java devre dışı bırak 
+  **Varsayılan**: Java 'yı devre dışı bırak 
   
-- **Internet Explorer intranet bölgesi çalıştırma kötü amaçlı yazılımdan koruma ActiveX denetimleri karşı** Bu ilke ayarı, Internet Explorer karşı sayfalarında yüklemek güvenli olup olmadıklarını kontrol etmek için ActiveX denetimleri, kötü amaçlı yazılımdan koruma programları çalışıp çalışmayacağını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetleyin olmaz. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Bu ilke ayarı yapılandırmazsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetleyin olmaz. Kullanıcılar bu davranışı açıp kapatabilir, Internet Explorer güvenlik ayarlarını kullanarak kapatabilirsiniz.
+- **Internet Explorer intranet bölgesi, etkin X denetimlerine karşı kötü amaçlı yazılımdan koruma çalıştırmaz** Bu ilke ayarı, Internet Explorer 'ın, sayfalarda güvenli olup olmadığını denetlemek için kötü amaçlı yazılımdan koruma programlarını ActiveX denetimlerine karşı çalıştırmasını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer, ActiveX denetiminin bir örneğini oluşturmanın güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetlemez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Bu ilke ayarını yapılandırmazsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere kötü amaçlı yazılımdan koruma programınızı denetlemez. Kullanıcılar, Internet Explorer güvenlik ayarlarını kullanarak bu davranışı etkinleştirebilir veya devre dışı bırakabilirsiniz.
   
   **Varsayılan**: Devre dışı  
 
-- **Internet Explorer'ın kısıtlı bölge kod parçacıkları**  
-  Bu ilke ayarı, kullanıcı kod parçacıklarını çalıştırıp çalıştıramayacağını yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcı kod parçacıklarını çalıştırabilirsiniz. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı kod parçacıklarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, kullanıcı etkinleştirebilir veya kod parçacıklarını devre dışı bırakın.
+- **Internet Explorer kısıtlı bölge komut dosyası**  
+  Bu ilke ayarı, kullanıcının kod parçacıklarına erişip çalıştıramayacağını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz kullanıcı komut dosyası çalıştırılmasına izin verebilir. Bu ilke ayarını devre dışı bırakırsanız, Kullanıcı komut dosyası çalıştırılmasına izin vermez. Bu ilke ayarını yapılandırmazsanız kullanıcı kod parçacıklarını etkinleştirebilir veya devre dışı bırakabilir.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer işlemleri bildirim çubuğu**  
-  Bu ilke ayarı dosyası veya kod yüklemeleri kısıtlandığında Internet Explorer işlemleri için bildirim çubuğu görüntülenmez yönetmenizi sağlar. Varsayılan olarak, Internet Explorer işlemleri için bildirim çubuğu görüntülenir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer işlemleri için bildirim çubuğu görüntüler. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer işlemleri için bildirim çubuğu görüntülenmez. Bu ilke ayarı yapılandırmazsanız, bildirim çubuğu için Internet Explorer işlemleri görüntülemez.
+- **Internet Explorer işlem bildirim çubuğu**  
+  Bu ilke ayarı, dosya veya kod yüklemeleri kısıtlandıktan sonra bildirim çubuğunun Internet Explorer işlemlerinde görüntülenip görüntülenmeyeceğini yönetmenizi sağlar. Varsayılan olarak, Internet Explorer işlemlerinde bildirim çubuğu görüntülenir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer Işlemlerine yönelik bildirim çubuğu görüntülenir. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer işlemlerinde bildirim çubuğu gösterilmez. Bu ilke ayarını yapılandırmazsanız, Internet Explorer Işlemlerinde bildirim çubuğu görüntülenmez.
   
   **Varsayılan**: Enabled  
   
-- **İmzalı ActiveX denetimlerini Internet Explorer internet bölgesi yükle**  
-  Bu ilke ayarı, kullanıcıların imzalanmış ActiveX denetimlerini bölgesinde sayfasından yükleyip yükleyemeyeceklerini yönetmenize olanak sağlar. Bu ilkeyi etkinleştirmek, kullanıcıların kullanıcı müdahalesi olmadan imzalı denetimleri indirebilirsiniz. Aşağı açılan kutusunda istemi seçerseniz, kullanıcıların güvenilen yayımcılar tarafından imzalanmış denetimleri indirin etkinleştirilip etkinleştirilmeyeceğini sorgulanır. Güvenilen Yayımcılar tarafından imzalanmış kod sessizce indirilir. İlke ayarını devre dışı bırakırsanız, imzalı denetimleri karşıdan yükleyemiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcıların güvenilen yayımcılar tarafından imzalanmış denetimleri indirin etkinleştirilip etkinleştirilmeyeceğini sorgulanır. Güvenilen Yayımcılar tarafından imzalanmış kod sessizce indirilir.
+- **Internet Explorer Internet bölgesi imzalı ActiveX denetimlerini indirme**  
+  Bu ilke ayarı, kullanıcıların, bölgedeki bir sayfadan imzalı ActiveX denetimlerini indirip indirmeyeceğini yönetmenizi sağlar. Bu ilkeyi etkinleştirirseniz kullanıcılar, imzalanmış denetimleri kullanıcı müdahalesi olmadan indirebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılara güvenilmeyen yayımcılar tarafından imzalanmış denetimlerin indirilip indirilmeyeceği sorgulanır. Güvenilen yayımcılar tarafından imzalanan kod sessizce indirilir. İlke ayarını devre dışı bırakırsanız, imzalanmış denetimler indirimez. Bu ilke ayarını yapılandırmazsanız kullanıcılara güvenilmeyen yayımcılar tarafından imzalanmış denetimlerin indirilip indirilmeyeceği istenir. Güvenilen yayımcılar tarafından imzalanan kod sessizce indirilir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer kısıtlı bölge Akıllı Ekran**  
-  Bu ilke kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi tarar olmadığını ayarı denetler. Bu ilke ayarını etkinleştirirseniz, SmartScreen Filtresi, kötü amaçlı içerik için bu bölgedeki sayfalar tarar. Bu ilke ayarını devre dışı bırakırsanız, kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi taramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıya SmartScreen Filtresi'ni kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını seçebilirsiniz. Not: Internet Explorer 7'de, bu ilke ayarı, kimlik avı filtre kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını denetler.
+- **Internet Explorer kısıtlı bölge akıllı ekranı**  
+  Bu ilke ayarı, SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler. Bu ilke ayarını etkinleştirirseniz SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içeriğe karşı tarar. Bu ilke ayarını devre dışı bırakırsanız, SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içerik için taramaz. Bu ilke ayarını yapılandırmazsanız kullanıcı SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için tarayıp taramayacağını seçebilir. Not: Internet Explorer 7 ' de bu ilke ayarı, kimlik avı filtresinin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer kaldırmayı Çalıştır eski ActiveX denetimleri için bu saat düğmesi**  
-  Bu ilke ayarı, kullanıcıların görmesini "Bu kez çalıştır" düğmesi ve Internet Explorer'ın belirli eski ActiveX denetimlerini çalışmasını durdurmak sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar Internet Explorer güncel olmayan bir ActiveX denetimi engellediğinde görüntülenen uyarı iletisi "Bu kez çalıştır" düğmesi görmez. Devre dışı bırakmak veya bu ilke ayarı yapılandırmazsanız, kullanıcıların Internet Explorer güncel olmayan bir ActiveX denetimi engellediğinde görüntülenen uyarı iletisi "Bu kez çalıştır" düğmesi görürsünüz. Bu düğmeye tıklandığında, güncel olmayan bir ActiveX denetimi bir kez çalıştır kullanıcı sağlar. Daha fazla bilgi için "Eski ActiveX denetimlerini" Internet Explorer TechNet kitaplığında bkz.
+- **Güncel olmayan etkin X denetimleri için Internet Explorer bu zamanı Çalıştır düğmesini kaldır**  
+  Bu ilke ayarı, kullanıcıların "Bu saati Çalıştır" düğmesini görmesini ve Internet Explorer 'da tarihi geçmiş belirli ActiveX denetimlerini çalıştırmasını durdurmanızı sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar Internet Explorer tarihi geçmiş ActiveX denetimini engellediğinde görüntülenen uyarı iletisinde "Bu saati Çalıştır" düğmesini görmez. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, kullanıcılar Internet Explorer tarihi geçmiş ActiveX denetimini engellediğinde görüntülenen uyarı iletisinde "Bu saati Çalıştır" düğmesini görür. Bu düğmeye tıkladığınızda kullanıcının tarihi geçmiş ActiveX denetimini bir kez çalıştırmasına izin verir. Daha fazla bilgi için Internet Explorer TechNet Kitaplığı 'nda "güncel olmayan ActiveX denetimleri" bölümüne bakın.
   
   **Varsayılan**: Enabled 
   
-- **Internet Explorer Internet bölgesi başlatma uygulamalarına ve bir iframe içinde dosyaları**  
-  Bu ilke ayarı, uygulamaları çalıştırabilir ve dosyaları, HTML sayfaları bu bölgedeki bir IFRAME başvurusuna şuradan indirilebilir yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar uygulamalarını çalıştırmak ve kullanıcı müdahalesi olmadan bu bölgedeki sayfalarında IFRAMES dosyaları indirin. Açılan kutusunda seçtiğiniz istemi, kullanıcılara uygulamalarını çalıştırmak ve bu bölgedeki sayfalarında IFRAMES dosyaları karşıdan seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların uygulamaları çalıştırmaya ve bu bölgedeki sayfalarında IFRAMES dosyaları indirme engellenir. Bu ilke ayarı yapılandırmazsanız, kullanıcıların isteyip istemediğinizi belirleyin uygulamalarını çalıştırmak ve bu bölgedeki sayfalarında IFRAMES dosyaları indirmek için sorgulanır
+- **Internet Explorer Internet bölgesi bir iframe içindeki uygulamaları ve dosyaları başlatma**  
+  Bu ilke ayarı, uygulamaların çalıştırılıp çalıştırılmadığını ve bu bölgedeki sayfaların HTML 'si içindeki bir IFRAME başvurusundan dosya indirilip indirilmeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar bu bölgedeki sayfalardaki IFRAME 'lerden Kullanıcı müdahalesi olmadan uygulama çalıştırabilir ve dosya indirebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar, bu bölgedeki sayfalardaki IFRAME 'lerden uygulama çalıştırıp indirme yapıp uygulamacağınızı seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların uygulama çalıştırması ve bu bölgedeki sayfalardaki IFRAME 'lerden dosya indirmeleri engellenir. Bu ilke ayarını yapılandırmazsanız, kullanıcılar, bu bölgedeki sayfalardaki IFRAME 'lerden uygulama çalıştırıp indirme yapıp uygulamacağınızı seçmeleri istenir
   
   **Varsayılan**: Devre Dışı Bırak 
   
-- **Internet Explorer kısıtlı bölge, farklı etki alanlarında windows ve çerçeveleri gidin**  
-  Bu ilke ayarı kaynak ve hedef farklı windows olduğunda içerik bir etki alanından farklı bir etki alanına sürükleyerek seçenekleri ayarlamanıza olanak sağlar. Bu ilke ayarını etkinleştirin ve Etkinleştir'i tıklatın, kaynak ve hedef farklı windows olduğunda kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyebilirsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz. Bu ilke ayarını etkinleştirin ve devre dışı bırak'a tıklayın, hem kaynak hem de hedef farklı windows olduğunda kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyemezsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz. Bu ilke ayarını devre dışı bırakır veya, yapılandırmayın olduğunda kaynak ve hedef farklı windows Internet Explorer 10'da, kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyemezsiniz. Kullanıcıların Internet Seçenekleri iletişim kutusunda Bu ayarı değiştirebilirsiniz. Bu ilke devre dışı bırakır veya, yapılandırmayın olduğunda kaynak ve hedef farklı windows Internet Explorer 9 ve önceki sürümlerinde, kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyebilirsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz.
+- **Internet Explorer kısıtlı bölgesi farklı etki alanlarındaki pencereler ve çerçevelere gider**  
+  Bu ilke ayarı, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleme seçeneklerini ayarlamanıza olanak sağlar. Bu ilke ayarını etkinleştirir ve Etkinleştir ' e tıklarsanız, kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleyebilir. Kullanıcılar bu ayarı değiştiremezler. Bu ilke ayarını etkinleştirirseniz ve devre dışı bırak ' a tıkladığınızda, her ikisi de kaynak ve hedef farklı pencereler olduğunda, kullanıcılar bir etki alanından farklı bir etki alanına içerik sürüklenemez. Kullanıcılar bu ayarı değiştiremezler. Internet Explorer 10 ' da, bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürüklenemez. Kullanıcılar bu ayarı Internet Seçenekleri iletişim kutusunda değiştirebilir. Internet Explorer 9 ve önceki sürümlerde, bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleyebilirsiniz. Kullanıcılar bu ayarı değiştiremezler.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi Akıllı Ekran**  
-  Bu ilke kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi tarar olmadığını ayarı denetler. Bu ilke ayarını etkinleştirirseniz, SmartScreen Filtresi, kötü amaçlı içerik için bu bölgedeki sayfalar tarar. Bu ilke ayarını devre dışı bırakırsanız, kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi taramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıya SmartScreen Filtresi'ni kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını seçebilirsiniz. Not: Internet Explorer 7'de, bu ilke ayarı, kimlik avı filtre kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını denetler.
+- **Internet Explorer Internet bölgesi akıllı ekranı**  
+  Bu ilke ayarı, SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler. Bu ilke ayarını etkinleştirirseniz SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içeriğe karşı tarar. Bu ilke ayarını devre dışı bırakırsanız, SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içerik için taramaz. Bu ilke ayarını yapılandırmazsanız kullanıcı SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için tarayıp taramayacağını seçebilir. Not: Internet Explorer 7 ' de bu ilke ayarı, kimlik avı filtresinin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer Güvenilen Bölge java izinleri kilitli**  
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java uygulamalarını devre dışı bırakıldı.
+- **Internet Explorer kilitli Güvenilen bölge Java izinleri**  
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız Java uygulamaları devre dışı bırakılır.
   
-  **Varsayılan**: Java devre dışı bırak 
+  **Varsayılan**: Java 'yı devre dışı bırak 
   
-- **Internet Explorer indirilen programları imzaları denetle**  
-  Bu ilke ayarı, Internet Explorer (imzalı yazılım yayımcısını tanımlar ve bu değiştirilmediğini veya üzerinde oynama doğrular) dijital imzalar için denetleyip denetlemeyeceğini yürütülebilir programlar indirmeden önce kullanıcı bilgisayarları üzerinde yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Internet Explorer yürütülebilir programlar dijital imzalarını denetler ve kullanıcının bilgisayarına indirmeden önce kimliklerini görüntülemez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer yürütülebilir programlar dijital imzaları denetleme olmaz veya kullanıcının bilgisayarına indirmeden önce kimliklerini görüntülemez. Bu ilke yapılandırmazsanız, Internet Explorer yürütülebilir programlar dijital imzaları denetleme olmaz veya kullanıcının bilgisayarına indirmeden önce kimliklerini görüntülemez.
+- **Internet Explorer indirilen programlardaki imzaları denetle**  
+  Bu ilke ayarı, Internet Explorer 'ın, yürütülebilir programları indirmeden önce kullanıcı bilgisayarlarında dijital imzaları (imzalı yazılımın yayımcısını tanımlar ve değiştirilmediğini veya kurcalanmadığını doğrular) denetleyip denetlemeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Internet Explorer çalıştırılabilir programların dijital imzalarını denetler ve kimliklerini kullanıcı bilgisayarlarına indirmeden önce görüntüler. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer yürütülebilir programların dijital imzalarını denetlemez veya kullanıcı bilgisayarlarına indirmeden önce kimliklerini görüntüler. Bu ilkeyi yapılandırmazsanız, Internet Explorer yürütülebilir programların dijital imzalarını denetlemez veya kullanıcı bilgisayarlarına indirmeden önce kimliklerini görüntüler.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer web tarayıcı denetimi bölge kodlamasını kısıtlı**  
-  Bu ilke ayarı, bir sayfa komut dosyası aracılığıyla gömülü WebBrowser denetimi denetimi olup olmadığını belirler. Bu ilke ayarını etkinleştirirseniz, WebBrowser denetimi betik erişime izin. Bu ilke ayarını devre dışı bırakırsanız, WebBrowser denetimi betik erişmesine izin verilmiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcı etkinleştirebilir veya betik erişimi WebBrowser denetimi devre dışı bırakın. Varsayılan olarak, yalnızca yerel makine ve Intranet bölgeleri WebBrowser denetimi betik erişime izin.
+- **Web tarayıcısı denetimlerinin Internet Explorer kısıtlı bölge betiği**  
+  Bu ilke ayarı, bir sayfanın katıştırılmış WebBrowser denetimlerini betik aracılığıyla denetleyebilir olup olmayacağını belirler. Bu ilke ayarını etkinleştirirseniz, WebBrowser denetimine betik erişimine izin verilir. Bu ilke ayarını devre dışı bırakırsanız, WebBrowser denetimine betik erişimine izin verilmez. Bu ilke ayarını yapılandırmazsanız kullanıcı WebBrowser denetimine betik erişimini etkinleştirebilir veya devre dışı bırakabilir. Varsayılan olarak, WebBrowser denetimine betik erişimine yalnızca yerel makine ve Intranet bölgelerinde izin verilir.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer kısıtlı bölge arası site komut dosyası filtresi**  
-  Bu ilke, siteler arası betik (XSS) filtre algılayın ve bu bölgedeki Web siteleri içine siteler arası betik eklemelerini engelle denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki sitelerden XSS filtre açıktır ve XSS filtre siteler arası betik eklemelerini engellemeye çalışır. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki sitelerden XSS filtre kapalıdır ve Internet Explorer, siteler arası betik eklemelerini izin verir.
+- **Internet Explorer kısıtlı bölge siteler arası betik filtresi**  
+  Bu ilke, siteler arası komut dosyası yazma (XSS) filtresinin bu bölgedeki Web sitelerine yönelik siteler arası betik oluşturmayı algılayıp engellemesine izin olup olmadığını denetler. Bu ilke ayarını etkinleştirirseniz, XSS filtresi bu bölgedeki siteler için açıktır ve XSS filtresi siteler arası betik oluşturma girişimlerini engellemeye çalışır. Bu ilke ayarını devre dışı bırakırsanız, bu bölgedeki siteler için XSS filtresi kapatılır ve Internet Explorer siteler arası betik oluşturma izni verir.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer kısıtlı bölge ikili ve komut dosyası davranışları**  
-  Bu ilke ayarı, dinamik ikili ve betik davranışları yönetmenize olanak sağlar: HTML öğeleri bağlı oldukları için belirli işlevi kapsülleyen bileşenler. Bu ilke ayarını etkinleştirirseniz, ikili ve betik davranışları kullanılabilir. Yönetici aşağı açılan kutusunda onaylı seçerseniz, yalnızca yönetici tarafından onaylanan davranışları ikili davranışları güvenlik kısıtlama ilkesi altında listelenen kullanılabilir. Bu ilke ayarını devre dışı bırakırsanız, uygulamaları özel bir güvenlik yöneticisi uyguladıysanız sürece, ikili ve betik davranışları mevcut değildir. Bu ilke ayarı yapılandırmazsanız, uygulamaları özel bir güvenlik yöneticisi uyguladıysanız sürece, ikili ve betik davranışları mevcut değildir.
+- **Internet Explorer kısıtlı bölge ikili ve betik davranışları**  
+  Bu ilke ayarı, dinamik ikili ve betik davranışlarını yönetmenizi sağlar: eklendiği HTML öğelerine yönelik belirli işlevleri kapsülleyen bileşenler. Bu ilke ayarını etkinleştirirseniz, ikili ve betik davranışları kullanılabilir. Açılan kutuda yönetici onaylı ' i seçerseniz, yalnızca Ikili davranışlar güvenlik kısıtlama ilkesi altındaki yönetici onaylı davranışlar bölümünde listelenen davranışlar vardır. Bu ilke ayarını devre dışı bırakırsanız, uygulamalar özel bir güvenlik yöneticisi uygulamadıkça ikili ve betik davranışları kullanılamaz. Bu ilke ayarını yapılandırmazsanız, uygulamalar özel bir güvenlik yöneticisi uygulamadıkça ikili ve betik davranışları kullanılamaz.
   
   **Varsayılan**: Devre Dışı Bırak  
   
 - **Internet Explorer güvenlik ayarları denetimi**  
-  Bu ilke ayarı, riske Internet Explorer ayarlarını belirlemek için Internet Explorer güvenlik ayarlarını denetleyen güvenlik ayarlarını denetleme özelliği kapatır. Bu ilke ayarını etkinleştirirseniz, bu özellik devre dışıdır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, özelliği etkinleştirilir.
+  Bu ilke ayarı, Internet Explorer güvenlik ayarlarını, ayarların ne zaman Internet Explorer 'ı riske sokması gerektiğini belirleyecek şekilde denetleyen güvenlik ayarları denetim özelliğini kapatır. Bu ilke ayarını etkinleştirirseniz, özellik kapalıdır. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, özellik açıktır.
   
   **Varsayılan**: Enabled  
   
-- **Güvenli olmayan dosyalar için Internet Explorer internet bölgesi güvenlik uyarısı**  
-  "Dosya – Güvenlik Uyarısı açın" iletisi görüntülenirse, kullanıcı yürütülebilir dosyaları veya diğer olmayabilecek dosyaları (örneğin dosya Gezgini'ni kullanarak bir intranet dosya paylaşımından) açmayı denediğinde bu ilke ayarı denetler. Bu ilke ayarını etkinleştirin ve etkinleştirmek için açılan kutudan ayarlayın, bu dosyalar olmadan bir güvenlik uyarısı açın. Açılan kutunun istemine ayarlarsanız, dosyaları açmadan önce bir güvenlik uyarısı görüntülenir. Bu ilke ayarını devre dışı bırakırsanız, bu dosyalar açmayın. Bu ilke ayarı yapılandırmazsanız, kullanıcı, bilgisayar bu dosyaları nasıl işlediğini yapılandırabilirsiniz. Varsayılan olarak, bu dosyalar Intranet ve yerel bilgisayar bölgeleri, etkin Yasak bölgesinde engellenen ve Internet ve güvenilen bölgelerde isteyecek şekilde ayarlayın.
+- **Güvenli olmayabilecek dosyalar için Internet Explorer Internet bölgesi güvenlik uyarısı**  
+  Bu ilke ayarı, Kullanıcı yürütülebilir dosyaları veya diğer olası güvenli olmayan dosyaları (örneğin, dosya Gezgini 'ni kullanarak bir intranet dosya paylaşımından) açmaya çalıştığında "dosya güvenlik uyarısı aç" iletisinin görünüp görüntülenmeyeceğini denetler. Bu ilke ayarını etkinleştirir ve açılır kutuyu etkinleştir olarak ayarlarsanız, bu dosyalar güvenlik uyarısı olmadan açılır. Açılır kutuyu sor olarak ayarlarsanız, dosyalar açılmadan önce bir güvenlik uyarısı görüntülenir. Bu ilke ayarını devre dışı bırakırsanız, bu dosyalar açılmaz. Bu ilke ayarını yapılandırmazsanız kullanıcı bilgisayarın bu dosyaları nasıl işleyeceğini yapılandırabilir. Varsayılan olarak, bu dosyalar, Intranet ve yerel bilgisayar bölgelerinde etkin olan kısıtlanmış bölgede engellenir ve Internet ve güvenilen bölgelerde sorulacak şekilde ayarlanır.
   
   **Varsayılan**: İstem  
   
-- **Internet Explorer intranet bölgesi java izinleri**  
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java Orta çalışamaz.
+- **Internet Explorer intranet bölgesi Java izinleri**  
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız, izin orta düzey güvenlik olarak ayarlanır.
   
   **Varsayılan**: Yüksek güvenilirlik 
   
-- **Internet Explorer eski blok ActiveX denetimleri**  </br>
-  Bu ilke ayarı, Internet Explorer blokları belirli ActiveX denetimlerini eski olup olmadığını belirler. Güncel olmayan bir ActiveX denetimleri, Intranet bölgesinde hiçbir zaman engellenir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer eski ActiveX denetimlerini engelleme durdurur. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, Internet Explorer belirli eski ActiveX denetimlerini engelleyecek şekilde devam eder. Daha fazla bilgi için "Eski ActiveX denetimlerini" Internet Explorer TechNet kitaplığında bkz.
+- **Internet Explorer blok süresi geçmiş etkin X denetimleri**  </br>
+  Bu ilke ayarı, Internet Explorer 'ın güncelliğini yitirmiş belirli ActiveX denetimlerini engellediğini belirler. Güncel olmayan ActiveX denetimleri, Intranet bölgesinde hiçbir şekilde engellenmez. Bu ilke ayarını etkinleştirirseniz, Internet Explorer tarihi geçmiş ActiveX denetimlerini engellemeyi durduruyor. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Internet Explorer tarihi geçmiş belirli ActiveX denetimlerini engellemeye devam eder. Daha fazla bilgi için Internet Explorer TechNet Kitaplığı 'nda "güncel olmayan ActiveX denetimleri" bölümüne bakın.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer'ın kısıtlı bölge açılır pencere engelleyicisi**  
-  Bu ilke ayarı, istenmeyen açılır pencerelerin görüntülenip görüntülenmeyeceğini yönetmenize olanak sağlar. Son kullanıcı bağlantıyı tıklattığında açılan açılan pencereler engellenmez. Bu ilke ayarını etkinleştirirseniz, en istenmeyen açılır pencereleri görüntülenmesi engellenir. Bu ilke ayarını devre dışı bırakırsanız, açılır pencereleri görünmesini engelleyen değildir. Bu ilke ayarı yapılandırmazsanız en istenmeyen açılır pencereleri görüntülenmesi engellenir.
+- **Internet Explorer kısıtlı bölge açılan pencere engelleyicisi**  
+  Bu ilke ayarı, istenmeyen açılır pencerelerin görünüp görünmeyeceğini yönetmenizi sağlar. Son Kullanıcı bir bağlantıya tıkladığında açılan açılır pencereler engellenmez. Bu ilke ayarını etkinleştirirseniz, istenmeyen açılır pencerelerin çoğunun görünmesi engellenir. Bu ilke ayarını devre dışı bırakırsanız, açılır pencerelerin görüntülenmesini önlenemez. Bu ilke ayarını yapılandırmazsanız, istenmeyen açılır pencerelerin çoğunun görünmesi engellenir.
   
   **Varsayılan**: Etkinleştir  
   
-- **Internet Explorer MK protokolü güvenlik kısıtlaması işlemleri**  
-  MK protokolü güvenlik kısıtlaması ilke ayarı, MK protokolü engelleyerek saldırı yüzey alanını azaltır. MK protokolü üzerinde bulunan kaynaklara başarısız olur. Bu ilke ayarını etkinleştirirseniz, MK protokolü, dosya Gezgini ve Internet Explorer'da engellenir ve MK protokolü üzerinde bulunan kaynaklara başarısız olur. Bu ilke ayarını devre dışı bırakırsanız, MK protokolü API uygulamaları kullanabilir. MK protokolü üzerinde bulunan kaynaklara dosya Gezgini ve Internet Explorer işlemleri için çalışır. Bu ilke ayarı yapılandırmazsanız, MK protokolü, dosya Gezgini ve Internet Explorer'da engellenir ve MK protokolü üzerinde bulunan kaynaklara başarısız olur.
+- **Internet Explorer işlem MK protokol güvenlik kısıtlaması**  
+  MK Protokol güvenliği kısıtlama ilkesi ayarı, MK protokolünü engellemek için saldırı yüzeyi alanını azaltır. MK protokolünde barındırılan kaynaklar başarısız olur. Bu ilke ayarını etkinleştirirseniz, MK protokolü dosya Gezgini ve Internet Explorer için engellenir ve MK protokolünde barındırılan kaynaklar başarısız olur. Bu ilke ayarını devre dışı bırakırsanız, uygulamalar MK protokol API 'sini kullanabilir. MK protokolünde barındırılan kaynaklar dosya Gezgini ve Internet Explorer işlemlerinde çalışır. Bu ilke ayarını yapılandırmazsanız, MK protokolü dosya Gezgini ve Internet Explorer için engellenir ve MK protokolünde barındırılan kaynaklar başarısız olur.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer Güvenilen Bölge java izinleri**  </br>
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, düşük güvenilirlik izni ayarlanır.
+- **Internet Explorer güvenilen bölge Java izinleri**  </br>
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız, izin düşük güvenilirlik olarak ayarlanır.
   
   **Varsayılan**: Yüksek güvenilirlik  
   
-- **Internet Explorer bölge java uygulamaları için komut dosyası kısıtlı**  
-  Bu ilke ayarı, uygulamaları bölge içindeki komut dosyaları için sunulan yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, komut dosyaları otomatik olarak kullanıcı müdahalesi olmadan uygulamalara erişebilir. Açılan kutusunda seçtiğiniz istemi, kullanıcılar uygulamalara erişmek betiklere izin vermek isteyip istemediğinizi seçin için sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, betikleri, uygulamalara erişimi engellenir. Bu ilke ayarı yapılandırmazsanız, betikleri, uygulamalara erişimi engellenir.
+- **Java uygulamalarının Internet Explorer kısıtlı bölge betiği**  
+  Bu ilke ayarı, uygulamaların bölge içindeki betiklerin gösterilip gösterilmediğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz betikler, Kullanıcı müdahalesi olmadan uygulamalara otomatik olarak erişebilir. Açılır kutuda sor ' u seçerseniz, kullanıcıların betiklerin uygulamalara erişmesine izin verip vermeyeceğinizi seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, betiklerin uygulamalara erişmesi engellenir. Bu ilke ayarını yapılandırmazsanız betiklerin uygulamalara erişmesi engellenir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer kısıtlı bölge java izinleri kilitli**  </br>
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java uygulamalarını devre dışı bırakıldı.
+- **Internet Explorer kilitli yasak bölge Java izinleri**  </br>
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız Java uygulamaları devre dışı bırakılır.
   
-  **Varsayılan**: Java devre dışı bırak 
+  **Varsayılan**: Java 'yı devre dışı bırak 
   
-- **Internet Explorer internet bölgesi izin ActiveX denetimlerini kullanmak için etki alanları yalnızca onaylanmış**  </br>
-  Bu ilke ayarı, Web siteleri dışında ActiveX denetimini yüklü Web sitesini çalıştırmak ActiveX denetimlerini izin vermek için kullanıcı istenirse denetler. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, bu bölgedeki sitelerinden çalıştırmadan önce kullanıcıya sorulur. Kullanıcı, denetimlerin geçerli siteden veya tüm sitelerden çalışmasına izin vermeyi seçebilirsiniz. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı başına site ActiveX istemini görmez ve bu bölgedeki tüm sitelerden ActiveX denetimlerini çalıştırabilirsiniz.
+- **Internet Explorer Internet bölgesi yalnızca onaylanan etki alanlarının ActiveX denetimlerini kullanmasına izin verir**  </br>
+  Bu ilke ayarı, kullanıcıdan ActiveX denetimini yükleyen web sitesi dışındaki web sitelerinde ActiveX denetimlerinin çalışmasına izin istenip istenmeyeceğini denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki Web sitelerinden ActiveX denetimleri çalıştırılmadan önce kullanıcıya sorulur. Kullanıcı, denetimin geçerli siteden veya tüm sitelerden çalışmasına izin vermeyi seçebilir. Bu ilke ayarını devre dışı bırakırsanız, Kullanıcı site başına ActiveX istemi 'ni görmez ve ActiveX denetimleri bu bölgedeki tüm sitelerden çalıştırılabilir.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer dahil tüm ağ yolları**  
-  Internet Explorer dahil tüm ağ yolları
+- **Internet Explorer tüm ağ yollarını içerir**  
+  Internet Explorer tüm ağ yollarını içerir
   
   **Varsayılan**: Devre dışı 
   
-- **Internet Explorer internet bölgesi korumalı mod**  
-  Bu ilke ayarı, korumalı modunu açmak sağlar. Korumalı modu, Internet Explorer, Internet Explorer için kayıt defteri ve dosya sistemine yazabilirsiniz konumları azaltarak kötü amaçla kullanılan güvenlik açıklarına karşı korumaya yardımcı olur. Bu ilke ayarını etkinleştirirseniz, korumalı mod etkinleştirilir. Kullanıcı, korumalı modunu devre dışı bırakmak olamaz. Bu ilke ayarını etkinleştirirseniz, korumalı mod kapalıdır. Kullanıcı, korumalı modu kapatamazsınız. Bu ilke ayarı yapılandırmazsanız, açın veya korumalı modunu kapatın.
+- **Internet Explorer Internet bölgesi korumalı modu**  
+  Bu ilke ayarı, korumalı modu açmanıza olanak tanır. Korumalı mod, Internet Explorer 'ın kayıt defterine ve dosya sistemine yazabilecek konumları azaltarak Internet Explorer 'ın açıktan yararlanan güvenlik açıklarına karşı korunmasına yardımcı olur. Bu ilke ayarını etkinleştirirseniz, korumalı mod açıktır. Kullanıcı korumalı modu kapatamaz. Bu ilke ayarını devre dışı bırakırsanız, korumalı mod kapalıdır. Kullanıcı korumalı modu açamaz. Bu ilke ayarını yapılandırmazsanız kullanıcı korumalı modu etkinleştirebilir veya devre dışı bırakabilirsiniz.
   
   **Varsayılan**: Etkinleştir 
   
-- **İnternet bölgesi Internet Explorer'ı başlatın ve ActiveX denetimlerini betik güvenli olarak işaretlenmemiş**  
-  Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, güvenilir olmayan verileri veya betikler için nesne güvenliği ayarlamadan parametreler ile yüklenir ve komut dosyalı çalıştırın. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, başlatılır ve komut dosyası için hem güvenli hem de güvenli denetimler neden olur, betik ActiveX denetimlerini yoksayma seçeneği için güvenli olarak işaretlenmiş. Bu ilke ayarını etkinleştirin ve istemi açılır kutusunda, kullanıcıların denetimi parametrelerle yüklemeye izin verilip verilmeyeceği veya komut dosyası. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası. Bu ilke ayarı yapılandırmazsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası.
+- **Internet Explorer Internet bölgesi başlatma ve betik etkin X denetimleri güvenli olarak işaretlenmemiş**  
+  Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri çalışır, parametrelerle yüklenir ve güvenilir olmayan veriler veya betikler için nesne güvenliğini ayarlamadan komut dosyası. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, komut dosyası oluşturma seçeneği için güvenli olarak işaretlenmiş betik ActiveX denetimlerini yoksayarak, hem güvensiz hem de güvenli denetimlerin başlatılmasına ve betiklere neden olur. Bu ilke ayarını etkinleştirir ve açılan kutuda sor ' u seçerseniz, kullanıcılara, denetimin parametrelerle veya betiklerle yüklenmesine izin verip vermeyecekleri sorulur. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemeyen ActiveX denetimleri parametrelerle veya betiklerle yüklenmez. Bu ilke ayarını yapılandırmazsanız, güvenli hale getirilemeyen ActiveX denetimleri parametrelerle veya betiklerle yüklenmez.
   
   **Varsayılan**: Devre Dışı Bırak 
   
-- **Internet Explorer kısıtlı bölge akıllı ekran aşağıya kilitli**  </br>
-  Bu ilke kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi tarar olmadığını ayarı denetler. Bu ilke ayarını etkinleştirirseniz, SmartScreen Filtresi, kötü amaçlı içerik için bu bölgedeki sayfalar tarar. Bu ilke ayarını devre dışı bırakırsanız, kötü amaçlı içerik için bu bölgedeki sayfalar SmartScreen Filtresi taramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıya SmartScreen Filtresi'ni kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını seçebilirsiniz. Not: Internet Explorer 7'de, bu ilke ayarı, kimlik avı filtre kötü amaçlı içerik için bu bölgedeki sayfalar tarayıp taramayacağını denetler.
+- **Internet Explorer kilitli yasak bölge akıllı ekranı**  </br>
+  Bu ilke ayarı, SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler. Bu ilke ayarını etkinleştirirseniz SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içeriğe karşı tarar. Bu ilke ayarını devre dışı bırakırsanız, SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içerik için taramaz. Bu ilke ayarını yapılandırmazsanız kullanıcı SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için tarayıp taramayacağını seçebilir. Not: Internet Explorer 7 ' de bu ilke ayarı, kimlik avı filtresinin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer kilitlenmesi algılama**  
-  Bu ilke ayarı, eklenti Yönetimi kilitlenme algılaması özelliği yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Internet Explorer'da bir kilitlenme Windows XP Professional Service Pack 1 ve önceki sürümlerinde, yani bulunan davranışı sergiler Windows hata bildirimi çağırmak için. Windows hata bildirimi için tüm ilke ayarları uygulanmaya devam eder. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, eklenti yönetimi için kilitlenme algılaması özelliği çalışır durumdadır.
+- **Internet Explorer kilitlenme algılaması**  
+  Bu ilke ayarı, eklenti yönetiminin kilitlenme algılama özelliğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz Internet Explorer 'da bir kilitlenme, Windows XP Professional Service Pack 1 ve önceki sürümlerde bulunan ve Windows Hata Bildirimi çağırmak için bir davranış sergiler. Windows Hata Bildirimi için tüm ilke ayarları uygulanmaya devam eder. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, eklenti yönetimi için kilitlenme algılama özelliği çalışır.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer internet bölgesi java izinleri**  
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız izni yüksek güvenilirlik olarak ayarlanır.
+- **Internet Explorer Internet bölgesi Java izinleri**  
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız, izin yüksek güvenlik olarak ayarlanır.
   
-  **Varsayılan**: Java devre dışı bırak  
+  **Varsayılan**: Java 'yı devre dışı bırak  
   
-- **Internet Explorer'ın kısıtlı bölge etkin komut dosyası**  
-  Bu ilke ayarı, kod sayfalarında bölgesinde çalıştırılıp çalıştırılmayacağını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kod sayfalarında bölgede otomatik olarak çalıştırabilirsiniz. Açılan kutusunda seçtiğiniz istemi, kullanıcı kodu çalıştırmak için bölge sayfalarında izin verip vermeyeceklerini sorgulanır. Şirket bu ilke ayarı, kod devre dışı bırakırsanız bölgedeki sayfalar çalışması engellenir. Bu ilke ayarı yapılandırmazsanız, kod sayfalarında bölgesinde çalışması engellenir.
+- **Internet Explorer kısıtlı bölge etkin komut dosyası**  
+  Bu ilke ayarı, bölgedeki sayfalarda betik kodunun çalıştırılıp çalıştırılmadığını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, bölgedeki sayfalardaki betik kodu otomatik olarak çalışabilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar bölgedeki sayfalarda komut dosyası kodunun çalışmasına izin verilip verilmeyeceğini belirlemek için sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, bölgedeki sayfalardaki betik kodunun çalışması engellenir. Bu ilke ayarını yapılandırmazsanız bölgedeki sayfalardaki betik kodunun çalışması engellenir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi oturum açma seçenekleri**  
-  Bu ilke ayarı, oturum açma seçenekleri ayarlarını yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, aşağıdaki oturum açma seçenekleri arasından seçim yapabilirsiniz. Anonim oturum açma devre dışı bırakma HTTP kimlik doğrulama ve kullanım Konuk hesap için yalnızca ortak Internet dosya sistemi (CIFS) protokolü. Kullanıcı adı ve parola sorgusu kullanıcıları için kullanıcı kimliklerini ve parolaları sor. Bir Kullanıcı sorgulandıktan sonra bu değerleri sessizce oturumunun kalanı için kullanılabilir. Yalnızca sorgu kullanıcılar için kullanıcı kimliklerini ve parolaları diğer bölgelerdeki Intranet bölgesinde otomatik oturum açma. Bir Kullanıcı sorgulandıktan sonra bu değerleri sessizce oturumunun geri kalanı için kullanılabilir. Windows NT Sınama yanıtı (NTLM kimlik doğrulaması olarak da bilinir) kullanarak oturum aç'ı denemek için otomatik oturum geçerli kullanıcı adı ve parolayla. Sunucu, Windows NT Sınama yanıtı, oturum açma kullanan ağ kullanıcı adını ve parolasını oturum destekliyorsa. Sunucu, Windows NT Sınama yanıtı desteklemiyorsa, kullanıcının kullanıcı adı ve parola sağlamak için sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, oturum açma için otomatik günlük yalnızca Intranet bölgesinde ayarlanır. Bu ilke ayarı yapılandırmazsanız, oturum açma için otomatik oturum ayarlamak da Intranet bölgesinde.
+- **Internet Explorer Internet bölgesi oturum açma seçenekleri**  
+  Bu ilke ayarı, oturum açma seçeneklerinin ayarlarını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, aşağıdaki oturum açma seçenekleri arasından seçim yapabilirsiniz. HTTP kimlik doğrulamasını devre dışı bırakmak için anonim oturum açın ve yalnızca ortak Internet dosya sistemi (CIFS) protokolü için konuk hesabını kullanın. Kullanıcı kimlikleri ve parolaları için kullanıcıları sorgulamak üzere Kullanıcı adı ve parola iste. Kullanıcı sorgulandıktan sonra bu değerler, oturumun geri kalanı için sessizce kullanılabilir. Kullanıcıları diğer bölgelerdeki Kullanıcı kimlikleri ve parolalar için sorgulamak üzere yalnızca Intranet bölgesinde otomatik oturum açma. Kullanıcı sorgulandıktan sonra bu değerler sessizce oturum geri kalanı için kullanılabilir. Windows NT Challenge yanıtı (NTLM kimlik doğrulaması olarak da bilinir) kullanarak oturum açmayı denemek için geçerli Kullanıcı adı ve parolasıyla otomatik olarak oturum açın. Sunucu Windows NT Challenge yanıtını destekliyorsa, oturum açma oturum açmak için kullanıcının ağ kullanıcı adını ve parolasını kullanır. Sunucu Windows NT Challenge yanıtını desteklemiyorsa, Kullanıcı Kullanıcı adını ve parolayı sağlamak üzere sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, oturum açma yalnızca Intranet bölgesinde otomatik oturum açma olarak ayarlanır. Bu ilke ayarını yapılandırmazsanız, oturum açma yalnızca Intranet bölgesinde otomatik oturum açma olarak ayarlanır.
   
   **Varsayılan**: İstem  
   
-- **Internet Explorer kısıtlı bölge vbscript çalışmasına izin ver**  </br>  
-  Bu ilke ayarı, Internet Explorer'da belirtilen bölgeden sayfalarında VBScript çalıştırılıp çalıştırılmayacağını yönetmenizi sağlar. VBScript, açılan kutuya Etkinleştir'i seçtiyseniz, kullanıcı müdahalesi olmadan çalıştırabilirsiniz. Aşağı açılan kutusunda seçtiğiniz istemi, kullanıcıların VBScript çalışmasına izin verilip verilmeyeceğini seçmeniz istenir. Aşağı açılan kutuya devre dışı bırak'ı seçtiyseniz, VBScript çalışması engellenir. Yapılandırma görmüyorsanız veya bu ilke ayarını devre dışı VBScript çalışması engellenir.
+- **Internet Explorer kısıtlı bölgesi VBScript 'in çalışmasına izin verir**  </br>  
+  Bu ilke ayarı, VBScript 'in Internet Explorer 'da belirtilen bölgedeki sayfalarda çalıştırılıp çalıştırılamayacağını yönetmenizi sağlar. Açılır kutuda etkinleştir ' i seçtiyseniz, VBScript Kullanıcı müdahalesi olmadan çalıştırılabilir. Açılır kutuda sor ' u seçtiyseniz, kullanıcılardan VBScript 'in çalışmasına izin verip vermeyeceklerini seçmesi istenir. Açılan kutuda devre dışı bırak ' ı seçtiyseniz, VBScript 'in çalışması engellenir. Bu ilke ayarını yapılandırmazsanız veya devre dışı bırakırsanız, VBScript 'in çalışması engellenir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi arasında windows farklı etki alanlarından içerik sürükleyin**  
-  Bu ilke ayarı kaynak ve hedef farklı windows olduğunda içerik bir etki alanından farklı bir etki alanına sürükleyerek seçenekleri ayarlamanıza olanak sağlar. Bu ilke ayarını etkinleştirin ve Etkinleştir'i tıklatın, kaynak ve hedef farklı windows olduğunda kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyebilirsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz. Bu ilke ayarını etkinleştirin ve devre dışı bırak'a tıklayın, hem kaynak hem de hedef farklı windows olduğunda kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyemezsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz. Bu ilke ayarını devre dışı bırakır veya, yapılandırmayın olduğunda kaynak ve hedef farklı windows Internet Explorer 10'da, kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyemezsiniz. Kullanıcıların Internet Seçenekleri iletişim kutusunda Bu ayarı değiştirebilirsiniz. Bu ilke devre dışı bırakır veya, yapılandırmayın olduğunda kaynak ve hedef farklı windows Internet Explorer 9 ve önceki sürümlerinde, kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyebilirsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz.
+- **Internet Explorer Internet bölgesi Windows genelindeki farklı etki alanlarından içerik sürükle**  
+  Bu ilke ayarı, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleme seçeneklerini ayarlamanıza olanak sağlar. Bu ilke ayarını etkinleştirir ve Etkinleştir ' e tıklarsanız, kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleyebilir. Kullanıcılar bu ayarı değiştiremezler. Bu ilke ayarını etkinleştirirseniz ve devre dışı bırak ' a tıkladığınızda, her ikisi de kaynak ve hedef farklı pencereler olduğunda, kullanıcılar bir etki alanından farklı bir etki alanına içerik sürüklenemez. Kullanıcılar bu ayarı değiştiremezler. Internet Explorer 10 ' da, bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürüklenemez. Kullanıcılar bu ayarı Internet Seçenekleri iletişim kutusunda değiştirebilir. Internet Explorer 9 ve önceki sürümlerde, bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleyebilirsiniz. Kullanıcılar bu ayarı değiştiremezler.
   
   **Varsayılan**: Devre dışı 
   
-- **Intranet Bölgesi Internet Explorer'ı başlatın ve ActiveX denetimlerini betik güvenli olarak işaretlenmemiş**  
-  Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, güvenilir olmayan verileri veya betikler için nesne güvenliği ayarlamadan parametreler ile yüklenir ve komut dosyalı çalıştırın. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, başlatılır ve komut dosyası için hem güvenli hem de güvenli denetimler neden olur, betik ActiveX denetimlerini yoksayma seçeneği için güvenli olarak işaretlenmiş. Bu ilke ayarını etkinleştirin ve istemi açılır kutusunda, kullanıcıların denetimi parametrelerle yüklemeye izin verilip verilmeyeceği veya komut dosyası. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası. Bu ilke ayarı yapılandırmazsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası.
+- **Internet Explorer intranet bölgesi başlatma ve betik etkin X denetimleri güvenli olarak işaretlenmemiş**  
+  Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri çalışır, parametrelerle yüklenir ve güvenilir olmayan veriler veya betikler için nesne güvenliğini ayarlamadan komut dosyası. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, komut dosyası oluşturma seçeneği için güvenli olarak işaretlenmiş betik ActiveX denetimlerini yoksayarak, hem güvensiz hem de güvenli denetimlerin başlatılmasına ve betiklere neden olur. Bu ilke ayarını etkinleştirir ve açılan kutuda sor ' u seçerseniz, kullanıcılara, denetimin parametrelerle veya betiklerle yüklenmesine izin verip vermeyecekleri sorulur. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemeyen ActiveX denetimleri parametrelerle veya betiklerle yüklenmez. Bu ilke ayarını yapılandırmazsanız, güvenli hale getirilemeyen ActiveX denetimleri parametrelerle veya betiklerle yüklenmez.
   
   **Varsayılan**: Devre Dışı Bırak 
   
 - **Internet Explorer indirme kasaları**  
-  Bu ilke ayarı, kullanıcının bilgisayarına bir akışı'ndan indirilen kasaları (dosya ekleri) sahip kullanıcı engeller. Bu ilke ayarını etkinleştirirseniz, kullanıcı bir akışa özellik sayfası Motoru'nu indirmek için akış eşitleme altyapısı ayarlanamaz. Bir geliştirici, akış API'leri aracılığıyla indirme ayarı değiştiremezsiniz. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, kullanıcı bir akışa özellik sayfası Motoru'nu indirmek için akış eşitleme altyapısı ayarlayabilirsiniz. Bir geliştirici akış API'leri aracılığıyla indirme ayarını değiştirebilirsiniz.
+  Bu ilke ayarı, kullanıcının bir akıştan kullanıcı bilgisayarına indirilen kasaları (dosya ekleri) olmasını engeller. Bu ilke ayarını etkinleştirirseniz Kullanıcı, akış özelliği sayfası aracılığıyla bir kutu indirmek için akış eşitleme altyapısını ayarlayamıyorum. Geliştirici, akış API 'Leri aracılığıyla indirme ayarını değiştiremez. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Kullanıcı akış eşitleme altyapısını, akış özelliği sayfasından bir kutu indirmek üzere ayarlayabilir. Geliştirici, akış API 'Leri aracılığıyla indirme ayarını değiştirebilir.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer kısıtlı bölge İmzalanmamış ActiveX denetimlerini indirin**  </br>
-  Bu ilke ayarı, kullanıcıların İmzasız ActiveX denetimlerini bölgesinden yükleyip yükleyemeyeceklerini yönetmenize olanak sağlar. Bu tür kod, özellikle güvenilmeyen bir bölgeden Bekletmeden çıkarken zararlı olabilir. Bu ilke ayarını etkinleştirirseniz, kullanıcıların kullanıcı müdahalesi olmadan imzasız denetimlerini çalıştırabilirsiniz. Açılan kutuda istemi seçerseniz, kullanıcıların imzasız denetiminin çalışmasına izin verip vermeyeceklerini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların imzasız denetimleri çalıştıramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıların imzasız denetimleri çalıştıramaz.
+- **Internet Explorer kısıtlı bölge imzasız etkin X denetimlerini indirme**  </br>
+  Bu ilke ayarı, kullanıcıların imzasız ActiveX denetimlerini bölgeden yükleyip yükleyemeyeceğini yönetmenizi sağlar. Bu kod, özellikle güvenilmeyen bir bölgeden geldiği zaman zararlı olabilir. Bu ilke ayarını etkinleştirirseniz, kullanıcılar imzasız denetimleri kullanıcı müdahalesi olmadan çalıştırabilir. Açılır kutuda sor ' u seçerseniz, kullanıcılardan imzasız denetimin çalışmasına izin verip vermeyeceğinizi seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar imzasız denetimleri çalıştıramıyorum. Bu ilke ayarını yapılandırmazsanız kullanıcılar imzasız denetimleri çalıştırmaz.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi, Windows'da farklı etki alanlarından içerik sürükleyin**  
-  Bu ilke ayarı, kullanıcıların İmzasız ActiveX denetimlerini bölgesinden yükleyip yükleyemeyeceklerini yönetmenize olanak sağlar. Bu tür kod, özellikle güvenilmeyen bir bölgeden Bekletmeden çıkarken zararlı olabilir. Bu ilke ayarını etkinleştirirseniz, kullanıcıların kullanıcı müdahalesi olmadan imzasız denetimlerini çalıştırabilirsiniz. Açılan kutuda istemi seçerseniz, kullanıcıların imzasız denetiminin çalışmasına izin verip vermeyeceklerini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların imzasız denetimleri çalıştıramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıların imzasız denetimleri çalıştıramaz.
+- **Internet Explorer Internet bölgesi Windows içindeki farklı etki alanlarından içerik sürükle**  
+  Bu ilke ayarı, kullanıcıların imzasız ActiveX denetimlerini bölgeden yükleyip yükleyemeyeceğini yönetmenizi sağlar. Bu kod, özellikle güvenilmeyen bir bölgeden geldiği zaman zararlı olabilir. Bu ilke ayarını etkinleştirirseniz, kullanıcılar imzasız denetimleri kullanıcı müdahalesi olmadan çalıştırabilir. Açılır kutuda sor ' u seçerseniz, kullanıcılardan imzasız denetimin çalışmasına izin verip vermeyeceğinizi seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar imzasız denetimleri çalıştıramıyorum. Bu ilke ayarını yapılandırmazsanız kullanıcılar imzasız denetimleri çalıştırmaz.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer işlemleri Active X yüklemesini kısıtla**  </br>
-  Bu ilke ayarı, Web tarayıcı denetimi barındırma uygulamaları otomatik ActiveX denetimi yüklenmesini sorması için etkinleştirir. Bu ilke ayarını etkinleştirirseniz, tüm işlemler için ActiveX denetimi yüklemesinin otomatik isteyen Web tarayıcı denetimi engeller. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, Web tarayıcı denetimi ActiveX denetimi yüklemesinin tüm işlemler için otomatik olarak sorulmasını engellemez.
+- **Internet Explorer işlem etkin X yüklemesini kısıtlar**  </br>
+  Bu ilke ayarı, Web tarayıcısı denetimini barındıran uygulamaların, ActiveX denetimi yüklemesinin otomatik olarak sorulmasını engellemesini sağlar. Bu ilke ayarını etkinleştirirseniz, Web tarayıcısı denetimi tüm işlemlerde ActiveX denetimi yüklemesinin otomatik olarak sorulmasını engeller. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Web tarayıcısı denetimi tüm işlemlerde ActiveX denetimi yüklemesinin otomatik olarak sorulmasını engellemez.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer internet bölgesi kod parçacıklarını** Bu ilke ayarı, kullanıcı kod parçacıklarını çalıştırıp çalıştıramayacağını yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcı kod parçacıklarını çalıştırabilirsiniz. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı kod parçacıklarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, kullanıcı etkinleştirebilir veya kod parçacıklarını devre dışı bırakın.
+- **Internet Explorer Internet bölgesi komut dosyası** Bu ilke ayarı, kullanıcının kod parçacıklarına erişip çalıştıramayacağını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz kullanıcı komut dosyası çalıştırılmasına izin verebilir. Bu ilke ayarını devre dışı bırakırsanız, Kullanıcı komut dosyası çalıştırılmasına izin vermez. Bu ilke ayarını yapılandırmazsanız kullanıcı kod parçacıklarını etkinleştirebilir veya devre dışı bırakabilir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer kısıtlı bölge sürükleyin ve bırakın veya kopyalama ve yapıştırmanın**  
-  Bu ilke ayarı, kullanıcıların dosyaları ya da kopyalama sürükleyin ve bölgede bir kaynak dosyalarından yapıştırma yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar dosyaları veya kopyalama sürükleyin ve bu bölge dosyalarından otomatik olarak yapıştırın. Aşağı açılan kutusunda istemi seçerseniz, kullanıcıların sürükleyin veya kopya dosyalar bu bölgeden verilmeyeceğini seçmek için sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların dosyaları sürükleyerek veya kopyalama ve dosyaları bu bölgeden yapıştırma engellenir. Bu ilke ayarı yapılandırmazsanız, kullanıcıların sürükleyin veya kopya dosyalar bu bölgeden verilmeyeceğini seçmek için sorgulanır.
+- **Internet Explorer kısıtlı bölge sürükle ve bırak veya dosyaları kopyala ve Yapıştır**  
+  Bu ilke ayarı, kullanıcıların bölge içindeki bir kaynaktan dosya sürükleyip sürükleyemeyeceğini veya dosya kopyalayıp yapıştıramayacağını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar dosyaları sürükleyebilir veya bu bölgeden otomatik olarak dosya kopyalayabilir ve yapıştırabilir. Açılır kutuda sor ' u seçerseniz, kullanıcıların bu bölgeden dosya sürükleyip sürükleyeceğinizi veya kopyalanıp kopyalanmayacağını seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların bu bölgeden dosya sürüklenmesi veya dosyaları kopyalaması ve yapıştırması engellenir. Bu ilke ayarını yapılandırmazsanız, kullanıcıların bu bölgeden dosya sürükleyip sürükleyeceğinizi veya kopyalanıp kopyalanmayacağını seçmesi istenir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **İmza geçersiz olduğunda Internet Explorer yazılım** </br>
-  Bu ilke ayarı ActiveX denetimlerini ve dosya indirme gibi yazılımlar yüklenebilir ya da imzası geçersiz olsa bile kullanıcı tarafından çalıştırılan yönetmenizi sağlar. Geçersiz bir imza, birisi dosyasıyla yapmadığından gösterebilir. Bu ilke ayarını etkinleştirirseniz, kullanıcılar dosyaları, geçersiz imzalı kurulmayı veya istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar çalıştırın veya geçersiz bir imza ile dosyalarını yükleyin. Bu ilke yapılandırmazsanız, kullanıcıların çalıştırmak veya geçersiz bir imza ile dosyaları yüklemek seçebilirsiniz.
+- **İmza geçersiz olduğunda Internet Explorer yazılımı** </br>
+  Bu ilke ayarı, imza geçersiz olsa bile, ActiveX denetimleri ve dosya indirmeleri gibi yazılımların Kullanıcı tarafından yüklenip yüklenmeyeceğini veya çalıştırılıp çalıştırılamayacağını yönetmenizi sağlar. Geçersiz bir imza, birisinin dosya üzerinde değişiklik yaptığını gösterebilir. Bu ilke ayarını etkinleştirirseniz, kullanıcılardan geçersiz imzalı dosyaları yüklemesi veya çalıştırmaları istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar geçersiz imzalı dosyaları çalıştıramıyorum veya yükleyemez. Bu ilkeyi yapılandırmazsanız, kullanıcılar geçersiz imzalı dosyaları çalıştırmayı veya yüklemeyi seçebilir.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer'ın kısıtlı bölge Kopyala ve Yapıştır komut dosyası aracılığıyla** </br> Bu ilke ayarı, belirli bir bölgede (örneğin, kesme, kopyalama ve yapıştırma) Pano işlemi betikleri gerçekleştirip gerçekleştiremeyeceğini yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, komut dosyası bir pano işlemini gerçekleştirebilirsiniz. Açılan kutusunda seçtiğiniz istemi, kullanıcılar mı kullanılacağına yönelik pano işlemlerini gerçekleştirmek sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, bir komut dosyası bir Pano işlemi gerçekleştirilemiyor. Bu ilke ayarı yapılandırmazsanız, bir komut dosyası bir Pano işlemi gerçekleştirilemiyor.
+- **Internet Explorer kısıtlı bölge kopyalama ve betik aracılığıyla yapıştırma** </br> Bu ilke ayarı, betiklerin belirtilen bölgede bir Pano işlemi gerçekleştirip gerçekleştiremeyeceğini (örneğin, kesme, kopyalama ve yapıştırma) yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz bir betik bir Pano işlemi gerçekleştirebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar Pano işlemleri yapıp gerçekleştirmeyeceği gibi sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, bir betik bir Pano işlemi gerçekleştiremez. Bu ilke ayarını yapılandırmazsanız bir betik bir Pano işlemi gerçekleştiremez.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer kısıtlı bölge farklı etki alanlarından içerik arasında windows sürükleyin**  
-  Bu ilke ayarı kaynak ve hedef farklı windows olduğunda içerik bir etki alanından farklı bir etki alanına sürükleyerek seçenekleri ayarlamanıza olanak sağlar. Bu ilke ayarını etkinleştirin ve Etkinleştir'i tıklatın, kaynak ve hedef farklı windows olduğunda kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyebilirsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz. Bu ilke ayarını etkinleştirin ve devre dışı bırak'a tıklayın, hem kaynak hem de hedef farklı windows olduğunda kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyemezsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz. Bu ilke ayarını devre dışı bırakır veya, yapılandırmayın olduğunda kaynak ve hedef farklı windows Internet Explorer 10'da, kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyemezsiniz. Kullanıcıların Internet Seçenekleri iletişim kutusunda Bu ayarı değiştirebilirsiniz. Bu ilke devre dışı bırakır veya, yapılandırmayın olduğunda kaynak ve hedef farklı windows Internet Explorer 9 ve önceki sürümlerinde, kullanıcıların içeriği bir etki alanından farklı bir etki alanına sürükleyebilirsiniz. Kullanıcılar, bu ayarı değiştiremezsiniz.  <br><br>
+- **Internet Explorer kısıtlı bölgesi Windows üzerinde farklı etki alanlarından içerik sürükle**  
+  Bu ilke ayarı, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleme seçeneklerini ayarlamanıza olanak sağlar. Bu ilke ayarını etkinleştirir ve Etkinleştir ' e tıklarsanız, kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleyebilir. Kullanıcılar bu ayarı değiştiremezler. Bu ilke ayarını etkinleştirirseniz ve devre dışı bırak ' a tıkladığınızda, her ikisi de kaynak ve hedef farklı pencereler olduğunda, kullanıcılar bir etki alanından farklı bir etki alanına içerik sürüklenemez. Kullanıcılar bu ayarı değiştiremezler. Internet Explorer 10 ' da, bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürüklenemez. Kullanıcılar bu ayarı Internet Seçenekleri iletişim kutusunda değiştirebilir. Internet Explorer 9 ve önceki sürümlerde, bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, kullanıcılar, kaynak ve hedef farklı pencereler olduğunda bir etki alanından farklı bir etki alanına içerik sürükleyebilirsiniz. Kullanıcılar bu ayarı değiştiremezler.  <br><br>
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer kullanıcıları siteleri ekleme**  
-  Ekleme veya siteler, güvenlik bölgelerinden kaldırma engeller. Web siteleri aynı güvenlik düzeyine sahip bir güvenlik bölgesi grubudur. Güvenlik bölgeleri için site yönetimi ayarlarını bu ilkeyi etkinleştirmek, devre dışı bırakılır. (Site yönetim görmek için ayarları, Internet Seçenekleri iletişim kutusundaki güvenlik bölgesi için Güvenlik sekmesine tıklayın ve sonra siteler düğmesine tıklayın.) Bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, kullanıcıların Web sitelerinin, siteleri güvenilen siteler ve Yasak siteler bölgelerinden kaldırın ve yerel Intranet bölgesi için ayarları ekleyebilirsiniz. Bu ilke, kullanıcılar yönetici tarafından kurulan güvenlik bölgeleri için site yönetimi ayarlarını değiştirmesini engeller. Not: Güvenlik sekmesine arabirimden kaldıran (\User Configuration\Administrative Templates\Windows components\ınternet Explorer\Internet Denetim Masası ' bulunur) "güvenlik sayfası devre dışı bırak" ilkesi, bu ilkesine göre önceliklidir. Bu ilke etkinleştirilirse, göz ardı edilir. Ayrıca bkz: "güvenlik bölgeleri: Yalnızca makine ayarlarını kullan"ilkesi.
-  
-  **Varsayılan**: Devre dışı  
-  
-- **Windows Internet Explorer internet bölgesi başlatılan betik**  
-  Bu ilke ayarı, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows üzerindeki kısıtlamaları yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, bu bölgede Windows kısıtlamaları güvenlik uygulanmayacak. Bu özellik tarafından sağlanan bir güvenlik katmanı eklendi olmadan güvenlik bölgesi çalıştırır. Bu ilke ayarını devre dışı bırakırsanız, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows içerdiği zararlı olabilecek eylemler çalıştıramazsınız. Internet Explorer güvenlik özelliği bu bölgede işlem için Windows güvenlik kısıtlamaları komut dosyası özellik denetim ayarı tarafından belirlenen açıktır. Bu ilke ayarı yapılandırmazsanız, betik tarafından başlatılan açılır pencereleri ve başlık ve durum çubuğu içeren windows içerdiği zararlı olabilecek eylemler çalıştıramazsınız. Internet Explorer güvenlik özelliği bu bölgede işlem için Windows güvenlik kısıtlamaları komut dosyası özellik denetim ayarı tarafından belirlenen açıktır.
+- **Siteleri ekleyen Internet Explorer kullanıcıları**  
+  Kullanıcıların güvenlik bölgelerinden site eklemesini veya kaldırmasını engeller. Güvenlik bölgesi, aynı güvenlik düzeyine sahip bir Web siteleri grubudur. Bu ilkeyi etkinleştirirseniz güvenlik bölgelerinin site yönetim ayarları devre dışı bırakılır. (Güvenlik bölgelerinin site yönetim ayarlarını görmek için, Internet Seçenekleri iletişim kutusunda Güvenlik sekmesine tıklayın ve ardından siteler düğmesine tıklayın.) Bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, kullanıcılar güvenilen siteler ve Yasak Siteler bölgelerine Web siteleri ekleyebilir veya kaldırabilir ve yerel Intranet bölgesi için ayarları değiştirebilirsiniz. Bu ilke, kullanıcıların yönetici tarafından belirlenen güvenlik bölgelerinin site yönetim ayarlarını değiştirmesini engeller. Not: Arabirimden Güvenlik sekmesini kaldıran "Güvenlik sayfasını devre dışı bırak" ilkesi (Kullanıcı Yapılandırması \ Yönetim Şablonları \ Windows bileşenleri \ Windows Denetim Masası ' nda bulunur), bu ilkeden önceliklidir. Etkinleştirilirse, bu ilke yok sayılır. Ayrıca bkz. "güvenlik bölgeleri: Yalnızca makine ayarlarını kullan "ilkesi.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer güvenlik bölgeleri yalnızca makine ayarlarını kullan**  
-  Güvenlik bölgesi bilgilerini aynı bilgisayarın tüm kullanıcıları için geçerlidir. Web siteleri aynı güvenlik düzeyine sahip bir güvenlik bölgesi grubudur. Bu ilkeyi etkinleştirmek, bir güvenlik bölgesi için kullanıcının yaptığı değişiklikleri o bilgisayardaki tüm kullanıcılara uygulanır. Bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, aynı bilgisayardaki kullanıcılar kendi güvenlik bölgesi ayarlarından kurabilirsiniz. Güvenlik bölgesi ayarlarından aynı bilgisayara aynı şekilde geçerlidir ve kullanıcı başka bir kullanıcı değişiklik yoksa emin olmak için bu ilkeyi kullanın. Ayrıca bkz: "güvenlik bölgeleri: ilkeleri değiştirmek kullanıcılara izin verme" ilkesi.
+- **Internet Explorer Internet bölgesi betiği başlatılan Windows**  
+  Bu ilke ayarı, başlık ve durum çubuklarını içeren, betik ile başlatılan açılır pencereler ve pencereler üzerindeki kısıtlamaları yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, Windows kısıtlamaları güvenliği bu bölgede uygulanmaz. Güvenlik bölgesi, bu özellik tarafından sunulan ek bir güvenlik katmanı olmadan çalışır. Bu ilke ayarını devre dışı bırakırsanız, başlık ve durum çubuklarını içeren, komut dosyası tarafından başlatılan açılır pencereler ve Windows 'da bulunan olası zararlı eylemler çalıştırılamaz. Bu Internet Explorer güvenlik özelliği, bu bölgede, işlem için Betikleştirilmiş Windows güvenlik kısıtlamaları özelliği denetim ayarı tarafından dikte edildiği şekilde açık. Bu ilke ayarını yapılandırmazsanız, komut dosyası tarafından başlatılan açılır pencereler ve başlık ve durum çubuklarını içeren pencerelerin içerdiği olası zararlı eylemler çalıştırılamaz. Bu Internet Explorer güvenlik özelliği, bu bölgede, işlem için Betikleştirilmiş Windows güvenlik kısıtlamaları özelliği denetim ayarı tarafından dikte edildiği şekilde açık.
+  
+  **Varsayılan**: Devre dışı  
+  
+- **Internet Explorer güvenlik bölgeleri yalnızca makine ayarlarını kullanır**  
+  Aynı bilgisayarın tüm kullanıcılarına güvenlik bölgesi bilgilerini uygular. Güvenlik bölgesi, aynı güvenlik düzeyine sahip bir Web siteleri grubudur. Bu ilkeyi etkinleştirirseniz, kullanıcının bir güvenlik bölgesinde yaptığı değişiklikler bu bilgisayarın tüm kullanıcıları için geçerlidir. Bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, aynı bilgisayarın kullanıcıları kendi güvenlik bölgesi ayarlarını kurabilir. Güvenlik bölgesi ayarlarının aynı bilgisayara tek bir şekilde uygulandığından ve kullanıcıdan kullanıcıya değişmemesini sağlamak için bu ilkeyi kullanın. Ayrıca, "güvenlik bölgeleri: kullanıcıların ilke değiştirmesine izin verme" ilkesini inceleyin.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer'ın yerel makine bölge java izinleri kilitli**  
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java uygulamalarını devre dışı bırakıldı
+- **Internet Explorer kilitli yerel makine bölgesi Java izinleri**  
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız Java uygulamaları devre dışı bırakılır
   
-  **Varsayılan**: Java devre dışı bırak 
+  **Varsayılan**: Java 'yı devre dışı bırak 
   
-- **Internet Explorer kısıtlı bölge kötü amaçlı yazılımdan koruma karşı ActiveX denetimlerini çalıştırmaz**  </br>
-  Bu ilke ayarı, Internet Explorer karşı sayfalarında güvenli iseler denetlemek için ActiveX denetimleri, kötü amaçlı yazılımdan koruma programları çalışıp çalışmayacağını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetleyin olmaz. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Bu ilke ayarı yapılandırmazsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Kullanıcılar bu davranışı açıp kapatabilir, Internet Explorer güvenlik ayarlarını kullanarak kapatabilirsiniz.
+- **Internet Explorer kısıtlı bölgesi, kötü amaçlı yazılımdan koruma 'yi etkin X denetimlerine karşı çalıştırmaz**  </br>
+  Bu ilke ayarı, Internet Explorer 'ın, sayfalarda güvenli olup olmadığını denetlemek için kötü amaçlı yazılımdan koruma programlarını ActiveX denetimlerine karşı çalıştırmasını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer, ActiveX denetiminin bir örneğini oluşturmanın güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetlemez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Bu ilke ayarını yapılandırmazsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Kullanıcılar, Internet Explorer güvenlik ayarlarını kullanarak bu davranışı etkinleştirebilir veya devre dışı bırakabilirsiniz.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer kısıtlı bölge Authenticode ile imzalanmış .NET Framework bağımlı bileşenleri Çalıştır**  
-  Bu ilke ayarı, Authenticode ile imzalanmış .NET Framework bileşenlerini Internet Explorer'dan çalışıp çalışmayacağını yönetmenizi sağlar. Bu bileşenler, bir nesne etiketi ve bir bağlantıdan başvurulan Yönetilen yürütülebilir dosyaları başvurulan yönetilen denetimleri içerir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer imzalı yönetilen bileşenleri çalıştırır. Açılan kutusunda seçtiğiniz istemi, Internet Explorer imzalı yönetilen bileşenleri çalıştırılıp çalıştırılmayacağını için girmesini ister. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer imzalı yönetilen bileşenleri yürütme olmaz. Bu ilke ayarı yapılandırmazsanız, Internet Explorer imzalı yönetilen bileşenleri yürütme olmaz.
+- **Internet Explorer kısıtlı bölge çalıştırma .NET Framework Authenticode ile imzalanmış bağımlı bileşenler**  
+  Bu ilke ayarı, Authenticode ile imzalanmış .NET Framework bileşenlerinin Internet Explorer 'dan yürütülüp yürütülmeyeceğini yönetmenizi sağlar. Bu bileşenler bir nesne etiketiyle başvurulan yönetilen denetimleri ve bir bağlantıdan başvurulan yönetilen yürütülebilir dosyaları içerir. Bu ilke ayarını etkinleştirirseniz, Internet Explorer imzalanmış yönetilen bileşenleri yürütür. Açılır kutuda sor ' u seçerseniz, Internet Explorer kullanıcıdan imzalanmış yönetilen bileşenleri çalıştırıp yürütmeyeceğini belirlemesini ister. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer imzalanmış yönetilen bileşenleri yürütmez. Bu ilke ayarını yapılandırmazsanız, Internet Explorer imzalanmış yönetilen bileşenleri yürütmez.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer veri kaynaklarına kısıtlı bölge erişim**  
-  Bu ilke ayarı, Internet Explorer Microsoft XML Parser (MSXML) ya da ActiveX Data Objects (ADO) kullanan başka bir güvenlik bölgesi'nden veri erişip erişemeyeceğini yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yükleyebilir. Açılan kutusunda seçtiğiniz istemi, kullanıcıların sayfayı MSXML veya ADO bölgede başka bir siteden verilere erişmek için kullandığı bölgesinde yüklemek için izin verip vermeyeceklerini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yüklenemiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcıların bir bölge içinde başka bir siteden verilere erişmek için MSXML veya ADO kullanan bölge sayfasında yüklenemiyor.
+- **Internet Explorer kısıtlı bölge erişimini veri kaynaklarına erişim**  
+  Bu ilke ayarı, Internet Explorer 'ın Microsoft XML ayrıştırıcısı (MSXML) veya ActiveX Data Objects (ADO) kullanarak başka bir güvenlik bölgesinden veriye erişip erişemeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar bölgedeki başka bir siteden veriye erişmek için MSXML veya ADO kullanan bölgeye bir sayfa yükleyebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar bölgedeki başka bir siteden veriye erişmek için MSXML veya ADO kullanan bölgede bir sayfanın yüklenmesine izin verip vermeyeceğinizi belirlemek üzere sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar bölgedeki başka bir siteden veriye erişmek için MSXML veya ADO kullanan bölgeye bir sayfa yükleyemez. Bu ilke ayarını yapılandırmazsanız kullanıcılar bölgedeki başka bir siteden veriye erişmek için MSXML veya ADO kullanan bölgeye bir sayfa yükleyemez.
   
   **Varsayılan**: Devre Dışı Bırak 
   
-- **Internet Explorer internet bölgesi, kötü amaçlı yazılımdan koruma ActiveX denetimlerini karşı çalışmaz**  </br>
-  Bu ilke ayarı, Internet Explorer karşı sayfalarında güvenli iseler denetlemek için ActiveX denetimleri, kötü amaçlı yazılımdan koruma programları çalışıp çalışmayacağını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetleyin olmaz. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Bu ilke ayarı yapılandırmazsanız, Internet Explorer ActiveX denetiminin bir örneğini oluşturmak güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programı her zaman denetler. Kullanıcılar bu davranışı açıp kapatabilir, Internet Explorer güvenlik ayarlarını kullanarak kapatabilirsiniz.
+- **Internet Explorer Internet bölgesi ActiveX denetimlerinde kötü amaçlı yazılımdan koruma çalıştırmayın**  </br>
+  Bu ilke ayarı, Internet Explorer 'ın, sayfalarda güvenli olup olmadığını denetlemek için kötü amaçlı yazılımdan koruma programlarını ActiveX denetimlerine karşı çalıştırmasını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer, ActiveX denetiminin bir örneğini oluşturmanın güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetlemez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Bu ilke ayarını yapılandırmazsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Kullanıcılar, Internet Explorer güvenlik ayarlarını kullanarak bu davranışı etkinleştirebilir veya devre dışı bırakabilirsiniz.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer internet bölgesi Kopyala ve Yapıştır komut dosyası aracılığıyla** </br> Bu ilke ayarı, belirli bir bölgede (örneğin, kesme, kopyalama ve yapıştırma) Pano işlemi betikleri gerçekleştirip gerçekleştiremeyeceğini yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, komut dosyası bir pano işlemini gerçekleştirebilirsiniz. Açılan kutusunda seçtiğiniz istemi, kullanıcılar mı kullanılacağına yönelik pano işlemlerini gerçekleştirmek sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, bir komut dosyası bir Pano işlemi gerçekleştirilemiyor. Bu ilke ayarı yapılandırmazsanız, bir komut dosyası bir pano işlemini gerçekleştirebilirsiniz.
+- **Internet Explorer Internet bölgesi kopyalama ve betik aracılığıyla yapıştırma** </br> Bu ilke ayarı, betiklerin belirtilen bölgede bir Pano işlemi gerçekleştirip gerçekleştiremeyeceğini (örneğin, kesme, kopyalama ve yapıştırma) yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz bir betik bir Pano işlemi gerçekleştirebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar Pano işlemleri yapıp gerçekleştirmeyeceği gibi sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, bir betik bir Pano işlemi gerçekleştiremez. Bu ilke ayarını yapılandırmazsanız bir betik bir Pano işlemi gerçekleştirebilir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **ActiveX Yükleyici Hizmeti Internet Explorer kullan**  </br>
-  Bu ilke ayarı ActiveX denetimleri nasıl yüklendiğini belirtmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX Yükleyici Hizmeti varsa ve ActiveX denetimleri yüklenmesine izin verecek şekilde yapılandırılmış ActiveX denetimleri yüklendi. Devre dışı bırakın veya bu ilke ayarı yapılandırmayın, ActiveX denetimleri, kullanıcı başına denetimlerini dahil olmak üzere standart yükleme süreci boyunca yüklenir.
+- **Internet Explorer etkin X Yükleyici hizmetini kullan**  </br>
+  Bu ilke ayarı, ActiveX denetimlerinin nasıl yüklendiğini belirtmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri yalnızca ActiveX Yükleyici hizmeti varsa ve ActiveX denetimlerinin yüklenmesine izin verecek şekilde yapılandırıldıysa yüklenir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Kullanıcı başına denetimler dahil olmak üzere ActiveX denetimleri standart yükleme işlemi aracılığıyla yüklenir.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer bölge yüksekliğinden koruma işlemleri**  
-  Internet Explorer her Web sayfası üzerinde kısıtlamalar getirir. Kısıtlamalar (Internet, Intranet, yerel makine bölgesi ve benzeri) Web sayfasının konumuna bağlıdır. Örneğin, Web sayfalarını yerel bilgisayarda en az bir güvenlik kısıtlamalarına sahiptir ve Yerel Makine bölgesini birinci hedef kötü niyetli kullanıcılar için yerel makine güvenliğin bölgesindedir. Bu ilke ayarını etkinleştirirseniz, tüm işlemler için bölge yüksekliğinden herhangi bir bölge korunabilir. Internet Explorer veya işlem listesinde listelenenler dışındaki işlemleri devre dışı bırakın veya bu ilke ayarı yapılandırmayın, bu tür bir koruma alırsınız.
+- **Internet Explorer, bölge yükselmesinin korumasını işler**  
+  Internet Explorer, açtığı her bir Web sayfasına yönelik kısıtlamalar koyar. Kısıtlamalar, Web sayfasının konumuna (Internet, Intranet, yerel makine bölgesi vb.) bağlıdır. Örneğin, yerel bilgisayardaki Web sayfaları en az güvenlik kısıtlamalarına sahiptir ve yerel makine bölgesinde olduğundan, yerel makine güvenlik bölgesine kötü amaçlı kullanıcılar için bir ana hedef atanır. Bu ilke ayarını etkinleştirirseniz, tüm işlemlerin bölge yükselmesine karşı herhangi bir bölge korunabilir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Internet Explorer dışındaki işlemler veya Işlem listesinde listelenenler böyle bir koruma almaz.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer internet bölgesi İmzalanmamış ActiveX denetimlerini indirin**  </br>
-  Bu ilke ayarı, kullanıcıların İmzasız ActiveX denetimlerini bölgesinden yükleyip yükleyemeyeceklerini yönetmenize olanak sağlar. Bu tür kod, özellikle güvenilmeyen bir bölgeden Bekletmeden çıkarken zararlı olabilir. Bu ilke ayarını etkinleştirirseniz, kullanıcıların kullanıcı müdahalesi olmadan imzasız denetimlerini çalıştırabilirsiniz. Açılan kutuda istemi seçerseniz, kullanıcıların imzasız denetiminin çalışmasına izin verip vermeyeceklerini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların imzasız denetimleri çalıştıramaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıların imzasız denetimleri çalıştıramaz.
+- **Internet Explorer Internet bölgesi imzasız ActiveX denetimlerini indirme**  </br>
+  Bu ilke ayarı, kullanıcıların imzasız ActiveX denetimlerini bölgeden yükleyip yükleyemeyeceğini yönetmenizi sağlar. Bu kod, özellikle güvenilmeyen bir bölgeden geldiği zaman zararlı olabilir. Bu ilke ayarını etkinleştirirseniz, kullanıcılar imzasız denetimleri kullanıcı müdahalesi olmadan çalıştırabilir. Açılır kutuda sor ' u seçerseniz, kullanıcılardan imzasız denetimin çalışmasına izin verip vermeyeceğinizi seçmeleri istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar imzasız denetimleri çalıştıramıyorum. Bu ilke ayarını yapılandırmazsanız kullanıcılar imzasız denetimleri çalıştırmaz.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi, farklı etki alanlarında windows ve çerçeveleri gidin**  </br>
-  Bu ilke ayarı, windows ve çerçeveler açma ve erişim uygulamaların farklı etki alanlarında yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar windows ve çerçeveleri diğer etki alanları ve diğer etki alanlarından erişim uygulamalara açabilirsiniz. Kullanıcılar açılan kutusunda seçtiğiniz istemi, windows ve çerçeveleri başka etki alanlarından uygulamalara erişmesine izin verilip verilmeyeceğini sorgulanır. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar, windows ve çerçeveleri, farklı etki alanlarından uygulamalara erişmek için açılamıyor. Bu ilke ayarı yapılandırmazsanız, kullanıcıların windows ve çerçeveleri diğer etki alanları ve diğer etki alanlarından erişim uygulamalara açabilirsiniz.
+- **Internet Explorer Internet bölgesi farklı etki alanlarındaki pencereler ve çerçevelere gider**  </br>
+  Bu ilke ayarı, farklı etki alanlarındaki pencerelerin ve çerçevelerin açılmasını ve uygulama erişimini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar diğer etki alanlarından Windows ve çerçeveler açabilir ve diğer etki alanlarından uygulamalara erişebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar Windows ve çerçevelerin diğer etki alanlarından uygulamalara erişmesine izin verilip verilmeyeceğini belirtir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar farklı etki alanlarından uygulamalara erişmek için Windows ve çerçeveler açamaz. Bu ilke ayarını yapılandırmazsanız, kullanıcılar diğer etki alanlarından Windows ve çerçeveler açabilir ve diğer etki alanlarından uygulamalara erişebilir.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer internet bölgesi durum çubuğu komut dosyası aracılığıyla güncelleştirmeleri**  
-  Bu ilke ayarı, bir komut dosyası bölge içindeki durum çubuğu güncelleştirebilirsiniz yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, durum çubuğu komut dosyalarını güncelleştirebilirsiniz. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, betik durum çubuğu güncelleştirmeye izin verilmiyor.
+- **Komut dosyası aracılığıyla durum çubuğuna Internet Explorer Internet bölgesi güncelleştirmeleri**  
+  Bu ilke ayarı, bir betiğin bölge içindeki durum çubuğunu güncelleştirip güncelleştiremeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz betikler durum çubuğunu güncelleştirebilir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, betiğin durum çubuğunu güncelleştirmesine izin verilmez.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer kısıtlı bölge dahil yerel yolu sunucu için dosyalar karşıya yüklenirken**  </br> Bu ilke ayarı, kullanıcı, bir HTML formu aracılığıyla bir dosya karşıya yüklenirken yerel yol bilgileri gönderildiğinde denetler. Yerel yol bilgisi gönderilir, bazı bilgiler sunucuya yanlışlıkla açığa. Örneğin, kullanıcının Masaüstü'nden gönderilen dosya yolun bir parçası olarak kullanıcı adını içerebilir. Bu ilke ayarını etkinleştirirseniz, kullanıcı, bir HTML formu aracılığıyla bir dosya karşıya yüklenirken yol bilgisi gönderilir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı, bir HTML formu aracılığıyla bir dosya karşıya yüklenirken yol bilgisi kaldırıldı. Bu ilke ayarı yapılandırmazsanız, kullanıcıya bir HTML formu aracılığıyla bir dosya yüklenirken yol bilgisi gönderilip gönderilmeyeceğini seçebilirsiniz. Varsayılan olarak, yol bilgisi gönderilir.
+- **Internet Explorer kısıtlı bölgesi, dosyaları sunucuya yüklerken yerel yolu içerir**  </br> Bu ilke ayarı, Kullanıcı HTML formu aracılığıyla bir dosya yüklerken yerel yol bilgilerinin gönderilip gönderilmediğini denetler. Yerel yol bilgileri gönderildiyse, bazı bilgiler istenmeden sunucu tarafından görüntülenebilir. Örneğin, kullanıcının masaüstünden gönderilen dosyalar yolun bir parçası olarak Kullanıcı adını içerebilir. Bu ilke ayarını etkinleştirirseniz, Kullanıcı HTML formu aracılığıyla bir dosya yüklerken yol bilgileri gönderilir. Bu ilke ayarını devre dışı bırakırsanız, Kullanıcı HTML formu aracılığıyla bir dosya yüklerken yol bilgileri kaldırılır. Bu ilke ayarını yapılandırmazsanız kullanıcı HTML formu aracılığıyla bir dosya yüklerken yol bilgilerinin gönderilip gönderilmeyeceğini seçebilir. Varsayılan olarak, yol bilgileri gönderilir.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer işlemleri kısıtlamak dosya indirme**  </br> Bu ilke ayarı, Web tarayıcı denetimi barındırma uygulamaları otomatik kullanıcı tarafından başlatılan olmayan dosya indirmeleri sorması için etkinleştirir. Bu ilke ayarını etkinleştirirseniz, Web tarayıcı denetimi otomatik olarak kullanıcı tarafından başlatılan tüm işlemler için olmayan dosya indirmeleri sorulmasını engeller. Bu ilke ayarını devre dışı bırakırsanız, Web tarayıcı denetimi otomatik olarak kullanıcı tarafından başlatılan tüm işlemler için olmayan dosya indirmeleri sorulmasını engellemez.
+- **Internet Explorer işlemi dosya indirmeyi kısıtla**  </br> Bu ilke ayarı, Web tarayıcısı denetimini barındıran uygulamaların, Kullanıcı tarafından başlatılmayan dosya indirmelerinin otomatik olarak sorulmasını engellemesini sağlar. Bu ilke ayarını etkinleştirirseniz, Web tarayıcısı denetimi, tüm işlemlerde Kullanıcı tarafından başlatılmayan dosya indirmelerinin otomatik olarak sorulmasını engeller. Bu ilke ayarını devre dışı bırakırsanız, Web tarayıcısı denetimi, tüm işlemlerde Kullanıcı tarafından başlatılmayan dosya indirmelerinin otomatik olarak sorulmasını engellemez.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer'ın kısıtlı bölge izin ActiveX denetimlerini kullanmak için etki alanları yalnızca onaylanmış**  </br>
-  Bu ilke ayarı, Web siteleri dışında ActiveX denetimini yüklü Web sitesini çalıştırmak ActiveX denetimlerini izin vermek için kullanıcı istenirse denetler. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, bu bölgedeki sitelerinden çalıştırmadan önce kullanıcıya sorulur. Kullanıcı, denetimlerin geçerli siteden veya tüm sitelerden çalışmasına izin vermeyi seçebilirsiniz. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı başına site ActiveX istemini görmez ve bu bölgedeki tüm sitelerden ActiveX denetimlerini çalıştırabilirsiniz.
+- **Internet Explorer kısıtlı bölgesi yalnızca onaylanan etki alanlarının etkin X denetimlerini kullanmasına izin verir**  </br>
+  Bu ilke ayarı, kullanıcıdan ActiveX denetimini yükleyen web sitesi dışındaki web sitelerinde ActiveX denetimlerinin çalışmasına izin istenip istenmeyeceğini denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki Web sitelerinden ActiveX denetimleri çalıştırılmadan önce kullanıcıya sorulur. Kullanıcı, denetimin geçerli siteden veya tüm sitelerden çalışmasına izin vermeyi seçebilir. Bu ilke ayarını devre dışı bırakırsanız, Kullanıcı site başına ActiveX istemi 'ni görmez ve ActiveX denetimleri bu bölgedeki tüm sitelerden çalıştırılabilir.
   
   **Varsayılan**: Enabled  
   
-- **Kısıtlı bölge Internet Explorer'ı başlatın ve ActiveX denetimlerini betik güvenli olarak işaretlenmemiş**  
-  Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri, güvenilir olmayan verileri veya betikler için nesne güvenliği ayarlamadan parametreler ile yüklenir ve komut dosyalı çalıştırın. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, başlatılır ve komut dosyası için hem güvenli hem de güvenli denetimler neden olur, betik ActiveX denetimlerini yoksayma seçeneği için güvenli olarak işaretlenmiş. Bu ilke ayarını etkinleştirin ve istemi açılır kutusunda, kullanıcıların denetimi parametrelerle yüklemeye izin verilip verilmeyeceği veya komut dosyası. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası. Bu ilke ayarı yapılandırmazsanız, güvenli hale getirilemez ActiveX denetimlerini parametrelerle yüklü değil veya komut dosyası.
+- **Internet Explorer kısıtlı bölge başlatma ve betik etkin X denetimleri güvenli olarak işaretlenmemiş**  
+  Bu ilke ayarı, güvenli olarak işaretlenmemiş ActiveX denetimlerini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, ActiveX denetimleri çalışır, parametrelerle yüklenir ve güvenilir olmayan veriler veya betikler için nesne güvenliğini ayarlamadan komut dosyası. Bu ayar, güvenli ve yönetilen bölgeler dışında önerilmez. Bu ayar, komut dosyası oluşturma seçeneği için güvenli olarak işaretlenmiş betik ActiveX denetimlerini yoksayarak, hem güvensiz hem de güvenli denetimlerin başlatılmasına ve betiklere neden olur. Bu ilke ayarını etkinleştirir ve açılan kutuda sor ' u seçerseniz, kullanıcılara, denetimin parametrelerle veya betiklerle yüklenmesine izin verip vermeyecekleri sorulur. Bu ilke ayarını devre dışı bırakırsanız, güvenli hale getirilemeyen ActiveX denetimleri parametrelerle veya betiklerle yüklenmez. Bu ilke ayarını yapılandırmazsanız, güvenli hale getirilemeyen ActiveX denetimleri parametrelerle veya betiklerle yüklenmez.
   
   **Varsayılan**: Devre Dışı Bırak  
   
-- **Internet Explorer kullanıcıları ilkelerini değiştirme**  
-    Kullanıcılar güvenlik bölge ayarlarını değiştirmesini engeller. Web siteleri aynı güvenlik düzeyine sahip bir güvenlik bölgesi grubudur. Bu ilkeyi etkinleştirmek, güvenlik düzeyi kaydırıcısını Internet Seçenekleri iletişim kutusundaki Güvenlik sekmesinde ve Özel Düzey düğmesini devre dışı bırakılır. Bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, kullanıcıların güvenlik bölgeleri için ayarları değiştirebilirsiniz. Bu ilke, kullanıcılar yönetici tarafından kurulan güvenlik bölge ayarlarını değiştirmesini engeller. Not: Denetim Masası'ndaki Internet Explorer'dan Güvenlik sekmesine kaldıran (\User Configuration\Administrative Templates\Windows components\ınternet Explorer\Internet Denetim Masası ' bulunur) "güvenlik sayfası devre dışı bırak" ilkesi önceliklidir Bu ilke. Bu ilke etkinleştirilirse, göz ardı edilir. Ayrıca bkz: "güvenlik bölgeleri: Yalnızca makine ayarlarını kullan"ilkesi.
+- **Internet Explorer kullanıcıları ilkeleri değiştirme**  
+    Kullanıcıların güvenlik bölgesi ayarlarını değiştirmesini engeller. Güvenlik bölgesi, aynı güvenlik düzeyine sahip bir Web siteleri grubudur. Bu ilkeyi etkinleştirirseniz Internet Seçenekleri iletişim kutusundaki Güvenlik sekmesinde Özel düzey düğmesi ve güvenlik düzeyi kaydırıcısı devre dışı bırakılır. Bu ilkeyi devre dışı bırakır veya yapılandırmazsanız, kullanıcılar güvenlik bölgelerinin ayarlarını değiştirebilir. Bu ilke, kullanıcıların yönetici tarafından belirlenen güvenlik bölgesi ayarlarını değiştirmesini engeller. Not: Denetim Masası 'nda Internet Explorer 'dan Güvenlik sekmesini kaldıran "Güvenlik sayfasını devre dışı bırak" ilkesi (Kullanıcı Yapılandırması \ Yönetim Şablonları \ Windows bileşenleri \ Denetim Masası) Bu ilke. Etkinleştirilirse, bu ilke yok sayılır. Ayrıca bkz. "güvenlik bölgeleri: Yalnızca makine ayarlarını kullan "ilkesi.
     
   **Varsayılan**: Devre dışı  
   
 - **Internet Explorer kısıtlı bölge korumalı modu**  
-  Bu ilke ayarı, korumalı modunu açmak sağlar. Korumalı modu, Internet Explorer, Internet Explorer için kayıt defteri ve dosya sistemine yazabilirsiniz konumları azaltarak kötü amaçla kullanılan güvenlik açıklarına karşı korumaya yardımcı olur. Bu ilke ayarını etkinleştirirseniz, korumalı mod etkinleştirilir. Kullanıcı, korumalı modunu devre dışı bırakmak olamaz. Bu ilke ayarını etkinleştirirseniz, korumalı mod kapalıdır. Kullanıcı, korumalı modu kapatamazsınız. Bu ilke ayarı yapılandırmazsanız, açın veya korumalı modunu kapatın.
+  Bu ilke ayarı, korumalı modu açmanıza olanak tanır. Korumalı mod, Internet Explorer 'ın kayıt defterine ve dosya sistemine yazabilecek konumları azaltarak Internet Explorer 'ın açıktan yararlanan güvenlik açıklarına karşı korunmasına yardımcı olur. Bu ilke ayarını etkinleştirirseniz, korumalı mod açıktır. Kullanıcı korumalı modu kapatamaz. Bu ilke ayarını devre dışı bırakırsanız, korumalı mod kapalıdır. Kullanıcı korumalı modu açamaz. Bu ilke ayarını yapılandırmazsanız kullanıcı korumalı modu etkinleştirebilir veya devre dışı bırakabilirsiniz.
   
   **Varsayılan**: Etkinleştir  
   
-- **Internet Explorer internet bölgesi kullanıcı veri kalıcılığı**  
-  Bu ilke ayarı, tarayıcının geçmişinde, Sık Kullanılanlar'da, bir XML deposu veya doğrudan bir Web sayfasında diske kaydedilmiş bilgilerin korunması yönetmenizi sağlar. Bir kullanıcı için kalıcı bir sayfa geri döndüğünde, bu ilke ayarını uygun şekilde yapılandırıldıysa sayfa durumu geri yüklenebilir. Bu ilke ayarını etkinleştirirseniz, kullanıcı tarayıcının geçmişinde, Sık Kullanılanlar'da, bir XML deposu veya doğrudan bir Web sayfasında diske kaydedilmiş bilgi saklayabilir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı bilgileri tarayıcının geçmişinde, Sık Kullanılanlar'da, bir XML deposu veya doğrudan bir Web sayfasında diske kaydedilmiş korumak olamaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıların tarayıcının geçmişinde, Sık Kullanılanlar'da, bir XML deposu veya doğrudan bir Web sayfasında diske kaydedilmiş bilgi saklayabilir.
+- **Internet Explorer Internet bölgesi Kullanıcı verileri kalıcılığı**  
+  Bu ilke ayarı, bilgilerin tarayıcının geçmişinde, Sık Kullanılanlar 'da, bir XML deposunda veya doğrudan diske kaydedilen bir Web sayfasından korunmasını yönetmenizi sağlar. Bir Kullanıcı kalıcı bir sayfaya döndüğünde, bu ilke ayarı uygun şekilde yapılandırıldıysa sayfanın durumu geri yüklenebilir. Bu ilke ayarını etkinleştirirseniz, kullanıcılar tarayıcı geçmişinde, Sık Kullanılanlar 'da, bir XML deposunda veya doğrudan diske kaydedilmiş bir Web sayfasında bilgileri koruyabilir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar tarayıcı geçmişinde, Sık Kullanılanlar 'da, bir XML deposunda veya doğrudan diske kaydedilmiş bir Web sayfasında bilgileri koruyamaz. Bu ilke ayarını yapılandırmazsanız, kullanıcılar tarayıcı geçmişinde, Sık Kullanılanlar 'da, bir XML deposunda veya doğrudan diske kaydedilmiş bir Web sayfası içinde bilgileri koruyabilir.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer internet bölgesi web tarayıcı denetimleri betik oluşturma**  
+- **Web tarayıcısı denetimlerinin Internet Explorer Internet bölgesi komut dosyası oluşturma**  
  
-  Bu ilke ayarı, bir sayfa komut dosyası aracılığıyla gömülü WebBrowser denetimi denetimi olup olmadığını belirler. Bu ilke ayarını etkinleştirirseniz, WebBrowser denetimi betik erişime izin. Bu ilke ayarını devre dışı bırakırsanız, WebBrowser denetimi betik erişmesine izin verilmiyor. Bu ilke ayarı yapılandırmazsanız, kullanıcı etkinleştirebilir veya betik erişimi WebBrowser denetimi devre dışı bırakın. Varsayılan olarak, yalnızca yerel makine ve Intranet bölgeleri WebBrowser denetimi betik erişime izin.
+  Bu ilke ayarı, bir sayfanın katıştırılmış WebBrowser denetimlerini betik aracılığıyla denetleyebilir olup olmayacağını belirler. Bu ilke ayarını etkinleştirirseniz, WebBrowser denetimine betik erişimine izin verilir. Bu ilke ayarını devre dışı bırakırsanız, WebBrowser denetimine betik erişimine izin verilmez. Bu ilke ayarını yapılandırmazsanız kullanıcı WebBrowser denetimine betik erişimini etkinleştirebilir veya devre dışı bırakabilir. Varsayılan olarak, WebBrowser denetimine betik erişimine yalnızca yerel makine ve Intranet bölgelerinde izin verilir.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer'ın kısıtlı bölge kullanıcı veri kalıcılığı**  
-    Bu ilke ayarı, tarayıcının geçmişinde, Sık Kullanılanlar'da, bir XML deposu veya doğrudan bir Web sayfasında diske kaydedilmiş bilgilerin korunması yönetmenizi sağlar. Bir kullanıcı için kalıcı bir sayfa geri döndüğünde, bu ilke ayarını uygun şekilde yapılandırıldıysa sayfa durumu geri yüklenebilir. Bu ilke ayarını etkinleştirirseniz, kullanıcı tarayıcının geçmişinde, Sık Kullanılanlar'da, bir XML deposu veya doğrudan bir Web sayfasında diske kaydedilmiş bilgi saklayabilir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı bilgileri tarayıcının geçmişinde, Sık Kullanılanlar'da, bir XML deposu veya doğrudan bir Web sayfasında diske kaydedilmiş korumak olamaz. Bu ilke ayarı yapılandırmazsanız, kullanıcıların tarayıcının geçmişinde, Sık Kullanılanlar'da, bir XML deposu veya doğrudan bir Web sayfasında diske kaydedilmiş bilgi koruma olamaz.  
+- **Internet Explorer kısıtlı bölge Kullanıcı verileri kalıcılığı**  
+    Bu ilke ayarı, bilgilerin tarayıcının geçmişinde, Sık Kullanılanlar 'da, bir XML deposunda veya doğrudan diske kaydedilen bir Web sayfasından korunmasını yönetmenizi sağlar. Bir Kullanıcı kalıcı bir sayfaya döndüğünde, bu ilke ayarı uygun şekilde yapılandırıldıysa sayfanın durumu geri yüklenebilir. Bu ilke ayarını etkinleştirirseniz, kullanıcılar tarayıcı geçmişinde, Sık Kullanılanlar 'da, bir XML deposunda veya doğrudan diske kaydedilmiş bir Web sayfasında bilgileri koruyabilir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar tarayıcı geçmişinde, Sık Kullanılanlar 'da, bir XML deposunda veya doğrudan diske kaydedilmiş bir Web sayfasında bilgileri koruyamaz. Bu ilke ayarını yapılandırmazsanız kullanıcılar tarayıcı geçmişinde, Sık Kullanılanlar 'da, bir XML deposunda veya doğrudan diske kaydedilmiş bir Web sayfasında bilgileri koruyamaz.  
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer'ın intranet bölgesi java izinleri kilitli**  
-  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, Seçenekler açılır kutusundan seçebilirsiniz. Özel denetim izinlerini ayarlar için ayrı ayrı. Düşük güvenilirlik, uygulamaların tüm işlemleri sağlar. Orta düzey güvenilirlik (bir alanda bellek görüşmesi yapamaz program dışında), kendi sanal uygulamaların artı boş alan (istemci bilgisayarda bir güvenli depolama alanı) ve kullanıcı tarafından denetlenen dosya g/ç gibi özellikler sağlar. Yüksek güvenilirlik, korumalı alanında çalışmasını sağlar. Java uygulamaları çalışmasını önlemek için devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamalarını çalıştıramazsınız. Bu ilke ayarı yapılandırmazsanız, Java uygulamalarını devre dışı bırakıldı.
+- **Internet Explorer kilitli intranet bölgesi Java izinleri**  
+  Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız Java uygulamaları devre dışı bırakılır.
   
-  **Varsayılan**: Java devre dışı bırak  
+  **Varsayılan**: Java 'yı devre dışı bırak  
   
-- **Internet Explorer'ın gelişmiş korumalı mod**  
-  Geliştirilmiş korumalı mod, Windows 64 bit sürümlerinde 64 bit işlemleri kullanarak kötü amaçlı Web sitelerinin karşı ek koruma sağlar. En az çalıştıran bilgisayarlar için Windows 8, geliştirilmiş korumalı mod da sınırlar Internet Explorer okuyabileceği konumlar kayıt defteri ve dosya sistemi. Bu ilke ayarını etkinleştirirseniz, geliştirilmiş korumalı mod etkinleştirilir. Korumalı modu etkin olan herhangi bir bölgeye geliştirilmiş korumalı mod kullanır. Kullanıcılar, geliştirilmiş korumalı mod devre dışı bırakmak mümkün olmayacaktır. Bu ilke ayarını devre dışı bırakırsanız, geliştirilmiş korumalı mod kapalıdır. Korumalı modu etkin olan herhangi bir bölgeye, Windows Vista için Internet Explorer 7'de sunulan korumalı modu sürümünü kullanır. Bu ilke yapılandırmazsanız, kullanıcıların açın veya Internet Seçenekleri iletişim kutusunun Gelişmiş sekmesinde geliştirilmiş korumalı mod devre dışı açın.
+- **Internet Explorer Gelişmiş Korumalı mod**  
+  Gelişmiş Korumalı mod, Windows 'un 64 bit sürümlerinde 64 bitlik süreçler kullanarak kötü amaçlı Web sitelerine karşı ek koruma sağlar. En az Windows 8 çalıştıran bilgisayarlarda, Gelişmiş Korumalı mod, Internet Explorer 'ın kayıt defterinden ve dosya sisteminde okuyamadığı konumları da sınırlar. Bu ilke ayarını etkinleştirirseniz, Gelişmiş Korumalı mod açıktır. Korumalı mod etkin olan herhangi bir bölge, Gelişmiş Korumalı mod kullanır. Kullanıcılar Gelişmiş korumalı modu devre dışı bırakamayacak. Bu ilke ayarını devre dışı bırakırsanız, Gelişmiş Korumalı mod kapalıdır. Korumalı mod özellikli herhangi bir bölge, Windows Vista için Internet Explorer 7 ' de sunulan korumalı mod sürümünü kullanır. Bu ilkeyi yapılandırmazsanız kullanıcılar, Internet Seçenekleri iletişim kutusunun Gelişmiş sekmesinde Gelişmiş korumalı modu açabilir veya kapatabilir.
   
   **Varsayılan**: Enabled  
   
-- **Internet Explorer smart screen'i uyarıları atla**  
-  Bu ilke ayarı, kullanıcı Kimden SmartScreen Filtresi uyarılarını devre dışı bırakabilir olup olmadığını belirler. SmartScreen Filtresi, Internet Explorer kullanıcıların yaygın olarak Internet'ten yüklemeyin yürütülebilir dosyaları hakkında kullanıcıyı uyarır. Bu ilke ayarını etkinleştirirseniz, kullanıcıya SmartScreen Filtresi uyarılarını engelleyin. Kullanıcı devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, SmartScreen Filtresi uyarılarını devre dışı bırakabilir.
+- **Internet Explorer akıllı ekran uyarılarını atla**  
+  Bu ilke ayarı, kullanıcının SmartScreen filtresinden gelen uyarıları atlayıp atlayamayacağını belirler. SmartScreen Filtresi, Internet Explorer kullanıcılarının Internet 'ten yaygın olarak indirmediğini çalıştıran yürütülebilir dosyalar hakkında kullanıcıyı uyarır. Bu ilke ayarını etkinleştirirseniz SmartScreen Filtresi uyarıları kullanıcıyı engeller. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız kullanıcı SmartScreen Filtresi uyarılarını atlayabilir.
   
   **Varsayılan**: Devre dışı  
   
-- **Internet Explorer'ın kısıtlı bölge meta yenileme**  
-  Bu ilke ayarı, Web sayfasının yazarı tarayıcılar başka bir Web sayfasına yönlendirmek için Meta Yenile ayarı (Etiket) kullanıyorsa, başka bir Web sayfasına bir kullanıcının tarayıcı yönlendirilebilir yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, başka bir Web sayfasına etkin Meta Yenileme ayarı içeren bir sayfa yükleyen kullanıcının tarayıcısı yönlendirilebilir. Bu ilke ayarını devre dışı bırakırsanız, etkin yenileme Meta ayarı içeren bir sayfa yükleyen kullanıcının tarayıcısı başka bir Web sayfasına yönlendirilemiyor. Bu ilke ayarı yapılandırmazsanız, etkin yenileme Meta ayarı içeren bir sayfa yükleyen kullanıcının tarayıcısı başka bir Web sayfasına yönlendirilemiyor.
+- **Internet Explorer kısıtlı bölge meta yenilemesi**  
+  Bu ilke ayarı, Web sayfasının yazarı tarayıcıları başka bir Web sayfasına yönlendirmek için meta yenileme ayarı (etiket) kullanıyorsa, kullanıcının tarayıcısının başka bir Web sayfasına yönlendirilip yönlendirilmeyeceğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, etkin Meta Yenileme ayarı içeren bir sayfayı yükleyen bir kullanıcının tarayıcısı başka bir Web sayfasına yönlendirilebilir. Bu ilke ayarını devre dışı bırakırsanız, etkin bir meta yenileme ayarı içeren bir sayfayı yükleyen kullanıcının tarayıcısı başka bir Web sayfasına yönlendirilemez. Bu ilke ayarını yapılandırmazsanız, etkin Meta Yenileme ayarı içeren bir sayfayı yükleyen bir kullanıcının tarayıcısı başka bir Web sayfasına yönlendirilemez.
   
   **Varsayılan**: Devre dışı  
   
-### <a name="local-policies-security-options"></a>Yerel İlkeler Güvenlik Seçenekleri
-Daha fazla bilgi için [ilke CSP'si - LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) Windows belgelerinde. 
+### <a name="local-policies-security-options"></a>Yerel Ilkeler güvenlik seçenekleri
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) bölümüne bakın. 
 
-- **Adlandırılmış kanallara ve paylaşımlarına için anonim erişimi kısıtlama**  
-  Etkin olduğunda, bu güvenlik ayarı paylaşımlarını ve ayarlarını kanallara anonim erişimi kısıtlar: (1) olabilir adlandırılmış kanallar (2) anonim olarak erişilebilecek paylaşımlar anonim olarak erişilebilir.
+- **Adlandırılmış kanallara ve Paylaşımlara anonim erişimi kısıtla**  
+  Bu güvenlik ayarı etkinleştirildiğinde, paylaşımlara ve kanallara anonim erişimi şu ayarlarla kısıtlar: (1) anonim olarak erişilebilen, anonim (2) paylaşımlara erişilebilen adlandırılmış kanallar
   
   **Varsayılan**: Evet  
   
-- **En düşük oturum güvenliği için NTLM SSP tabanlı sunucuları**  
-  Bu güvenlik ayarı, bir server istemesine, 128 bit şifreleme ve/veya NTLMv2 oturum güvenliği sağlar. Bu değerler, LAN Manager kimlik doğrulama düzeyi güvenlik ayarı değerine bağlıdır. Seçenekler şunlardır: NTLMv2 oturum güvenliği gerektirir: İleti bütünlüğü anlaşma değilse bağlantı başarısız olur. 128 bit şifreleme gerektir. Güçlü şifreleme (128-bit) değilse anlaşıldığında bağlantı başarısız olur.
+- **NTLM SSP tabanlı sunucular için en düşük oturum güvenliği**  
+  Bu güvenlik ayarı, bir sunucunun 128 bitlik şifreleme ve/veya NTLMv2 oturum güvenliği için anlaşma sağlamasına izin verir. Bu değerler, LAN Manager kimlik doğrulama düzeyi güvenlik ayarı değerine bağımlıdır. Seçenekler şunlardır: NTLMv2 oturum güvenliği gerektir: İleti bütünlüğü anlaşılırsa bağlantı başarısız olur. 128 bit şifrelemeyi gerektir. Güçlü şifreleme (128 bit) anlaşılmazsa bağlantı başarısız olur.
   
-  **Varsayılan**: NTLM V2 ve 128 bit şifreleme gerektir  
+  **Varsayılan**: NTLM v2 ve 128 bit şifrelemeyi gerektir  
   
-- **Ekran koruyucu etkinleşmeden kilit ekranında işlem yapılmadan geçen süre**  
+- **Ekran koruyucusu etkinleşene kadar kilit ekranının işlem yapılmayan dakika sayısı**  
   Windows, bir oturumun etkin olmamasını fark eder ve etkin olmama süresi etkin olmama sınırını aşarsa, ekran koruyucusu çalışarak oturumu kilitler.
   
   **Varsayılan**: 15
   
-- **Her zaman imzala istemciye gerektiren** etki alanı üyesi tarafından başlatılan tüm güvenli kanal trafiği imzalanmış veya şifrelenmiş gerekir, bu güvenlik ayarı belirler. Bir bilgisayar bir etki alanına katıldığında, bir bilgisayar hesabı oluşturulur. Sistem yeniden başlatıldığında, bundan sonra bilgisayar hesabı parolasını kendi etki alanı için etki alanı denetleyicisi ile güvenli bir kanal oluşturmak için kullanır. Bu güvenli kanal geçirmek NTLM kimlik doğrulaması, LSA SID/name arama ve daha fazlası gibi işlemleri gerçekleştirmek için kullanılır. Bu ayar etki alanı üyesi tarafından başlatılan tüm güvenli kanal trafiği en düşük güvenlik gereksinimlerini karşılayıp karşılamadığını belirler. Özel etki alanı üyesi tarafından başlatılan tüm güvenli kanal trafiği imzalanmış veya şifrelenmiş gerekir belirler. Bu ilke etkinleştirilirse, imzalama veya şifreleme tüm güvenli kanal trafik anlaşılmadıkça sonra güvenli kanal oluşturulmuş olmaz. Bu ilkeyi devre dışı bırakıldı ve ardından şifreleme ve tüm güvenli kanal trafiğinin etki alanı denetleyicisi ile imzalama işlemi yapılır ve bu durumda imzalama ve şifreleme düzeyini etki alanı denetleyicisinin sürümü ve aşağıdaki iki ayarlarını bağlıdır İlkeler: Etki alanı üyesi: (Uygun olduğunda) güvenli kanal verisini dijital olarak şifrele etki alanı üyesi: Dijital olarak imzala güvenli kanal verisini (uygun olduğunda)
+- **İstemcinin iletişimleri her zaman dijital olarak Imzalamasını gerektir** Bu güvenlik ayarı, etki alanı üyesi tarafından başlatılan tüm güvenli kanal trafiğinin imzalanıp imzalanmayacağını veya şifrelenmeyeceğini belirler. Bilgisayar bir etki alanına katıldığında bir bilgisayar hesabı oluşturulur. Bundan sonra, sistem başlatıldığında, etki alanı denetleyicisi için etki alanı denetleyicisiyle güvenli bir kanal oluşturmak üzere bilgisayar hesabı parolasını kullanır. Bu güvenli kanal, kimlik doğrulaması, LSA SID/Ad arama ve daha fazlası gibi işlemleri gerçekleştirmek için kullanılır. Bu ayar, etki alanı üyesi tarafından başlatılan tüm güvenli kanal trafiğinin en düşük güvenlik gereksinimlerini karşılayıp karşılamadığını belirler. Özellikle, etki alanı üyesi tarafından başlatılan tüm güvenli kanal trafiğinin imzalı veya şifrelenmiş olması gerekip gerekmediğini belirler. Bu ilke etkinleştirilirse, tüm güvenli kanal trafiği imzalanmadan veya şifrelenmediği takdirde güvenli kanal kurulmaz. Bu ilke devre dışı bırakılırsa, tüm güvenli kanal trafiğinin şifrelenmesi ve imzalanması, etki alanı denetleyicisi ile görüşülür ve bu durumda, imzalama ve şifreleme düzeyi, etki alanı denetleyicisinin sürümüne ve aşağıdaki iki ayarlara bağlıdır Elerindeki Etki alanı üyesi: Güvenli kanal verilerini (mümkün olduğunda) dijital olarak şifrele etki alanı üyesi: Güvenli kanal verilerini dijital olarak imzala (mümkün olduğunda)
   
   **Varsayılan**: Evet
   
 - **Kimlik doğrulama düzeyi**  
-  Bu güvenlik ayarı, ağ açmalarında hangi sınama/yanıt kimlik doğrulama protokolü belirler. Bu seçim, istemcileri, oturum güvenliği anlaşması düzeyini ve şu şekilde sunucuları tarafından kabul edilen kimlik doğrulama düzeyi tarafından kullanılan kimlik doğrulama protokolü düzeyini etkiler:  
-  - *LM ve NTLM yanıtlar göndermek*: İstemciler, LM ve NTLM kimlik doğrulaması kullanmak ve hiçbir zaman NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri, LM, NTLM ve NTLMv2 kimlik doğrulamasını kabul eder. 
-  - *LM ve NTLM - NTLMv2 anlaşıldığında Gönder*: İstemciler, LM ve NTLM kimlik doğrulaması kullanmak ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri, LM, NTLM ve NTLMv2 kimlik doğrulamasını kabul eder. 
-  - *Yalnızca NTLM yanıtı gönder*: İstemciler, yalnızca NTLM kimlik doğrulaması kullanmak ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri, LM, NTLM ve NTLMv2 kimlik doğrulamasını kabul eder. 
-  - *Gönder NTLMv2 yanıtı*: İstemciler, yalnızca NTLMv2 kimlik doğrulamasını ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri, LM, NTLM ve NTLMv2 kimlik doğrulamasını kabul eder. 
-  - *Yalnızca NTLMv2 yanıtı gönderin. LM Reddet*: İstemciler, yalnızca NTLMv2 kimlik doğrulamasını ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri, LM reddeder (yalnızca NTLM ve NTLMv2 kimlik doğrulamasını kabul eder). 
-  - *Yalnızca NTLMv2 yanıtı gönderin. LM ve NTLM reddeder*: İstemciler, yalnızca NTLMv2 kimlik doğrulamasını ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri, LM ve NTLM (yalnızca NTLMv2 kimlik doğrulamasını kabul) reddeder. 
+  Bu güvenlik ayarı, ağ oturum açmaları için hangi sınama/yanıt kimlik doğrulama protokolünün kullanıldığını belirler. Bu seçim, istemciler tarafından kullanılan kimlik doğrulama protokolünün düzeyini, üzerinde anlaşılan oturum güvenliği düzeyini ve sunucular tarafından kabul edilen kimlik doğrulama düzeyini şu şekilde etkiler:  
+  - *LM ve NTLM yanıtları gönder*: İstemciler LM ve NTLM kimlik doğrulaması kullanır ve hiçbir şekilde NTLMv2 oturum güvenliği kullanmaz; etki alanı denetleyicileri LM, NTLM ve NTLMv2 kimlik doğrulamasını kabul eder. 
+  - *Anlaşılırsa LM ve NTLM-NTLMv2 gönder*: İstemciler LM ve NTLM kimlik doğrulaması kullanır ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri LM, NTLM ve NTLMv2 kimlik doğrulamasını kabul eder. 
+  - *Yalnızca NTLM yanıtı gönder*: İstemciler yalnızca NTLM kimlik doğrulaması kullanır ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri LM, NTLM ve NTLMv2 kimlik doğrulamasını kabul eder. 
+  - *Yalnızca NTLMv2 yanıtı gönder*: İstemciler yalnızca NTLMv2 kimlik doğrulaması kullanır ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri LM, NTLM ve NTLMv2 kimlik doğrulamasını kabul eder. 
+  - *Yalnızca NTLMv2 yanıtı gönder. LM*'yi Reddet: İstemciler yalnızca NTLMv2 kimlik doğrulaması kullanır ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri LM 'yi reddeder (yalnızca NTLM ve NTLMv2 kimlik doğrulamasını kabul et). 
+  - *Yalnızca NTLMv2 yanıtı gönder. LM ve NTLM*'yi Reddet: İstemciler yalnızca NTLMv2 kimlik doğrulaması kullanır ve sunucu destekliyorsa NTLMv2 oturum güvenliği kullanır; etki alanı denetleyicileri LM ve NTLM 'yi reddeder (yalnızca NTLMv2 kimlik doğrulamasını kabul eder). 
     
-  **Varsayılan**: Yalnızca NTLMv2 yanıtı gönderin. LM ve NTLM Reddet
+  **Varsayılan**: Yalnızca NTLMv2 yanıtı gönder. LM ve NTLM 'yi reddetme
   
-- **İstemcilerin üçüncü taraf SMB sunucularına şifrelenmemiş parolaları göndermesini engelleme**  
-  Bu güvenlik ayarı etkinleştirilmişse, sunucu ileti bloğu (SMB) yeniden yönlendiricisinin doğrulama sırasında parola şifrelemesini desteklemeyen Microsoft olmayan SMB sunucularına düz metin parolalar gönderebilirsiniz. Şifrelenmemiş parolalar göndermek için bir güvenlik riski oluşturur.
+- **İstemcilerin üçüncü taraf SMB sunucularına Şifrelenmemiş parolalar göndermesini engelle**  
+  Bu güvenlik ayarı etkinleştirilirse, sunucu Ileti bloğu (SMB) yeniden yönlendiricisi, kimlik doğrulaması sırasında parola şifrelemesini desteklemeyen, Microsoft olmayan SMB sunucularına düz metin parolaları gönderebilir. Şifrelenmemiş parolaların gönderilmesi bir güvenlik riskidir.
   
   **Varsayılan**: Evet
   
-- **Sunucu İletişimleri dijital olarak her zaman imzalama devre dışı bırak**  
-  Bu güvenlik ayarı, SMB istemcisinin SMB paket imzalamasını deneyip denemeyeceğini belirler. Sunucu İleti Bloğu (SMB) protokolünü temel Microsoft dosya ve yazıcı paylaşımı ve birçok ağ gibi diğer işlemler, Windows Uzaktan yönetim sağlar. SMB paket aktarım değiştirme adam-de-adam saldırıları önlemek için SMB paketlerin dijital imza SMB protokolünü destekler. Bu ilke ayarı, SMB istemci bileşeni bir SMB sunucusuna bağlandığında imzalaması deneyip denemeyeceğini belirler. Bu ayar etkinleştirilirse Microsoft ağ istemcisi oturum kurulduğunda imzalaması gerçekleştirmek için sunucu sorar. Sunucuda paket imzalama etkinleştirildiyse, paket imzalama anlaşması yapılır. Bu ilke devre dışı bırakılırsa, SMB istemcisi hiçbir zaman SMB paket imzalamasını.
+- **İletişimleri her zaman dijital olarak imzalamayı devre dışı bırak**  
+  Bu güvenlik ayarı, SMB istemcisinin SMB paket imzalama anlaşması yapıp denemeyeceğini belirler. Sunucu ileti bloğu (SMB) protokolü, Microsoft dosya ve yazıcı paylaşımı ve uzak Windows yönetimi gibi birçok farklı ağ işlemi için temel sağlar. Geçiş sırasında SMB paketlerini değiştiren bağlantıyı izinsiz izleme saldırıları engellemek için SMB protokolü, SMB paketlerinin dijital imzalanmasını destekler. Bu ilke ayarı, SMB istemci bileşeninin bir SMB sunucusuna bağlanırken SMB paket imzalama anlaşması yapıp denemeyeceğini belirler. Bu ayar etkinleştirilirse, Microsoft ağ istemcisi, oturum kurulumundan sonra sunucudan SMB paket imzalamayı gerçekleştirmesini ister. Sunucuda paket imzalama etkinleştirildiyse, paket imzalama anlaşması yapılır. Bu ilke devre dışıysa, SMB istemcisi hiçbir şekilde SMB paket imzalamayı hiçbir şekilde anlaşacaktır.
   
   **Varsayılan**: Evet
   
 - **Yönetici yükseltme istemi davranışı**  
   Bu ilke ayarı, Yöneticiler için yükseltme isteminin davranışını denetler. Seçenekler şunlardır: 
-    - *İstem olmadan Yükselt*: Yükseltme gerektirmeden onayı veya kimlik bilgileri gerektiren bir işlem gerçekleştirmek ayrıcalıklı hesaplara izin verir. Not: Bu seçenek yalnızca en kısıtlı ortamlarında kullanın. 
-    - *Güvenli masaüstünde kimlik bilgileri istemi*: Ayrıcalık yükseltme bir işlem gerektirir, kullanıcının güvenli masaüstünde bir ayrıcalıklı kullanıcı adı ve parola girmeniz istenir. Geçerli kimlik bilgileri kullanıcının girdiği işlemi kullanıcının yüksek kullanılabilir ayrıcalık ile devam eder. 
-    - *Güvenli masaüstünde onay istemi*: Bir işlem ayrıcalıkların gerektirdiğinde, kullanıcının güvenli masaüstünde izin ver veya Reddet seçmek için istenir. Kullanıcı izin seçerse, işlemi kullanıcının yüksek kullanılabilir ayrıcalık ile devam eder. 
-    - *Kimlik bilgileri istemi*: Bir işlem ayrıcalıkların gerektirdiğinde, kullanıcı bir yönetici kullanıcı adı ve parola girmesi istenir. Geçerli kimlik bilgileri kullanıcının girdiği işlemi ayrıcalık ile devam eder. 
-    - *Onay istemi*: Bir işlem ayrıcalıkların gerektirdiğinde, kullanıcıya izin ver veya Reddet seçin istenir. Kullanıcı izin seçerse, işlemi kullanıcının yüksek kullanılabilir ayrıcalık ile devam eder.  
-    - *Windows dışı ikililer için onay istemi*: Microsoft'a ait olmayan bir uygulama için bir işlem ayrıcalıkların gerektirdiğinde, kullanıcının güvenli masaüstünde izin ver veya Reddet seçmek için istenir. Kullanıcı izin seçerse, işlemi kullanıcının yüksek kullanılabilir ayrıcalık ile devam eder.   
+    - *Sormadan Yükselt*: Ayrıcalıklı hesapların, izin veya kimlik bilgileri gerekmeden yükseltme gerektiren bir işlem gerçekleştirmesine izin verir. Not: Bu seçeneği yalnızca en kısıtlanmış ortamlarda kullanın. 
+    - *Güvenli masaüstünde kimlik bilgilerini iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde ayrıcalıklı bir Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
+    - *Güvenli masaüstünde onay iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
+    - *Kimlik bilgilerini iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan bir Yönetici Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem ilgili ayrıcalıkla devam eder. 
+    - *Izin iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder.  
+    - *Windows dışı ikili dosyalar için onay iste*: Microsoft dışı bir uygulama için bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan güvenli masaüstünde Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder.   
   
   **Varsayılan**: Güvenli masaüstünde onay iste
   
-- **En düşük oturum güvenliği için NTLM SSP tabanlı istemciler**  
-  Bu güvenlik ayarı, istemci istemesine, 128 bit şifreleme ve/veya NTLMv2 oturum güvenliği sağlar. Bu değerler, LAN Manager kimlik doğrulama düzeyi güvenlik ayarı değerine bağlıdır. Seçenekler şunlardır:
-  - NTLMv2 oturum güvenliği gerektirir: NTLMv2 protokol anlaşma değilse bağlantı başarısız olur. 
-  - *128 bit şifreleme gerektir*: Güçlü şifreleme (128-bit) değilse anlaşıldığında bağlantı başarısız olur.
-  - *NTLMv2 ve 128 bit şifreleme gerektiren*. 
+- **NTLM SSP tabanlı istemciler için en düşük oturum güvenliği**  
+  Bu güvenlik ayarı, bir istemcinin 128 bitlik şifreleme ve/veya NTLMv2 oturum güvenliği anlaşmasını gerektirmesini sağlar. Bu değerler, LAN Manager kimlik doğrulama düzeyi güvenlik ayarı değerine bağımlıdır. Seçenekler şunlardır:
+  - NTLMv2 oturum güvenliği gerektir: NTLMv2 Protokolü anlaşılırsa bağlantı başarısız olur. 
+  - *128 bit şifreleme gerektir*: Güçlü şifreleme (128 bit) anlaşılmazsa bağlantı başarısız olur.
+  - *NTLMv2 ve 128 bit şifrelemeyi gerektir*. 
 
-  **Varsayılan**: NTLM V2 128 şifrelemesi
+  **Varsayılan**: NTLM v2 128 şifrelemesi gerektir
   
 - **Akıllı kart kaldırma davranışı**  
-    Bu güvenlik ayarı, akıllı kart oturum açan kullanıcı için akıllı kart okuyucusundan kaldırıldığında ne olacağını belirler. Seçenekler şunlardır:
-     - *Herhangi bir eylemi*. 
-     - *İş istasyonu kilitleme* -akıllı kart kaldırıldığında alan bırakın, bunları akıllı kartlarını almak ve hala korumalı bir oturum korumasına izin vererek iş istasyonu kilitlenmiş.
-     - *Oturum kapatmaya zorla* -akıllı kart kaldırıldığında kullanıcı otomatik olarak kapatılır.
-     - *Uzak masaüstü oturumunun bağlantısının kesilip kesilmeyeceğini* -akıllı kart kaldırma işlemi, kullanıcı oturumu kapatmadan oturum keser. Bu, kullanıcının akıllı kart ekleyin ve tekrar oturum açmaya gerek olmadan daha sonra veya başka bir akıllı kart bilgisayara, okuyuculu oturumu Sürdür sağlar. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.  <br><br>
+    Bu güvenlik ayarı, oturum açmış bir kullanıcının akıllı kartı, akıllı kart okuyucusundan kaldırıldığında ne olacağını belirler. Seçenekler şunlardır:
+     - *Eylem yok*. 
+     - *Iş Istasyonunu kilitle* -akıllı kart kaldırıldığında iş istasyonu kilitlenir, kullanıcıların alanı terk etmeleri, akıllı kartlarını bunlara sahip olması ve hala korumalı bir oturum sürdürmesine izin verir.
+     - *Kapanmaya zorla* -akıllı kart kaldırıldığında Kullanıcı oturumu otomatik olarak kapatılır.
+     - *Uzak Masaüstü oturumunun bağlantısını kesme* -akıllı kartın kaldırılması, kullanıcının oturumunu kapatmadan oturumun bağlantısını keser. Bu, kullanıcının akıllı kartı eklemesini ve oturumu daha sonra ya da başka bir akıllı kart okuyucusu ile donatılmış bir bilgisayara yeniden oturum açmak zorunda kalmadan sürdürmesini sağlar. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.  <br><br>
     
-  **Varsayılan**: İş İstasyonunu Kilitle
+  **Varsayılan**: İş istasyonunu kilitle
   
-- **Blok SAM hesaplarının ve paylaşımların anonim listelenmesi**  
-  Bu güvenlik ayarı hesaplarının ve paylaşımların anonim listelenmesi SAM izin verilip verilmeyeceğini belirler. Windows, anonim kullanıcıların etki alanı hesapları ve ağ paylaşımlara adları listelendirmek gibi etkinlikleri gerçekleştirmesine olanak tanır. Örneğin, yönetici kullanıcılara karşılıklı güven saklamaz güvenilen bir etki alanında erişim istediğinde bu kullanışlı hale. Anonim numaralandırmasına SAM hesaplarının ve paylaşımların izin vermek istemiyorsanız, ardından bu ilkeyi kümesine *Evet*.
-  
-  **Varsayılan**: Evet
-  
-- **Blok boş parolalı uzaktan oturum açma**  
-  Bu güvenlik ayarı, parola korumalı olmayan yerel hesapların fiziksel bilgisayar konsolu dışındaki konumlardan oturum açmak için kullanılıp kullanılamayacağını belirler. Etkinleştirilirse, oturum açmak için parola korumalı olmayan yerel hesaplar bilgisayarın Klavyesi kullanmanız gerekir. 
-
-  *Uyarı*: Bilgisayarların fiziksel olarak güvenli bir yerde değil, tüm yerel kullanıcı hesapları için güçlü parola ilkeleri her zaman uygulamalıdır. Aksi takdirde, bilgisayara fiziksel erişimi olan herkes bir parola sahip olmayan bir kullanıcı hesabı kullanarak oturum açabilir. Bu taşınabilir bilgisayarlar için özellikle önemlidir. 
-
-  Bu güvenlik ilkesi Herkes grubuna uygularsanız, hiç kimsenin Uzak Masaüstü Hizmetleri üzerinden oturum açabilir. Bu ayar, etki alanı hesapları kullanıyorsanız oturumları etkilemez. Bu ayar atlamak için uzak etkileşimli oturum açma kullanan uygulamalar için mümkündür.
+- **SAM hesaplarının ve paylaşımlarının anonim numaralandırılmasına engel**  
+  Bu güvenlik ayarı, SAM hesaplarının ve paylaşımlarının anonim numaralandırılmasına izin verilip verilmeyeceğini belirler. Windows, anonim kullanıcıların etki alanı hesaplarının ve ağ paylaşımlarının adlarını numaralandırma gibi belirli etkinlikleri gerçekleştirmesine olanak sağlar. Bu, örneğin, bir yönetici, güvenilen bir etki alanındaki kullanıcılara, karşılıklı güven ilişkisi olmayan kullanıcılar için erişim vermek istediğinde kullanışlıdır. SAM hesaplarının ve paylaşımlarının anonim numaralandırmasına izin vermek istemiyorsanız, bu ilkeyi *Evet*olarak ayarlayın.
   
   **Varsayılan**: Evet
   
-- **Standart kullanıcı yükseltme istemi davranışı**  
+- **Boş parolayla uzaktan oturum açmayı engelle**  
+  Bu güvenlik ayarı, parola korumalı olmayan yerel hesapların fiziksel bilgisayar konsolu dışındaki konumlardan oturum açmak için kullanılıp kullanılamayacağını belirler. Etkinleştirilirse, parola korumalı olan yerel hesapların oturum açması için bilgisayarın klavyesini kullanması gerekir. 
+
+  *Uyarı*: Fiziksel olarak güvenli konumlarda olmayan bilgisayarların her zaman tüm yerel kullanıcı hesapları için güçlü parola ilkelerini zorlaması gerekir. Aksi takdirde, bilgisayara fiziksel erişimi olan herkes, parolası olmayan bir kullanıcı hesabı kullanarak oturum açabilir. Bu özellikle taşınabilir bilgisayarlar için önemlidir. 
+
+  Bu güvenlik ilkesini Herkes grubuna uygularsanız, hiç kimse Uzak Masaüstü Hizmetleri aracılığıyla oturum açabilir. Bu ayar, etki alanı hesapları kullanan oturum açmaları etkilemez. Bu ayarı atlamak için uzak etkileşimli oturum açmaları kullanan uygulamalar mümkündür.
+  
+  **Varsayılan**: Evet
+  
+- **Standart Kullanıcı yükseltme istemi davranışı**  
   Bu ilke ayarı, standart kullanıcılar için yükseltme isteminin davranışını denetler. 
-  - *Yükseltme isteklerini otomatik olarak Reddet*: Bir işlem ayrıcalıkların gerektirdiğinde, hata iletisi görüntülenir yapılandırılabilir bir erişim reddedildi. Standart kullanıcı Yardım Masası aramalarını azaltır için bu ayarı seçebilir gibi Masaüstü çalıştıran bir kurumsal. 
-  - *Güvenli masaüstünde kimlik bilgileri istemi*: Bir işlem ayrıcalıkların gerektirdiğinde, kullanıcının güvenli masaüstünde farklı bir kullanıcı adı ve parola girmeniz istenir. Geçerli kimlik bilgileri kullanıcının girdiği işlemi ayrıcalık ile devam eder. 
-  - *Kimlik bilgileri istemi*: Bir işlem ayrıcalıkların gerektirdiğinde, kullanıcı bir yönetici kullanıcı adı ve parola girmesi istenir. Geçerli kimlik bilgileri kullanıcının girdiği işlemi ayrıcalık ile devam eder.  
+  - *Yükseltme Isteklerini otomatik olarak Reddet*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, yapılandırılabilir bir erişim reddedildi hata iletisi görüntülenir. Masaüstlerini standart Kullanıcı olarak çalıştıran bir kuruluş, Yardım Masası çağrılarını azaltmak için bu ayarı seçebilirler. 
+  - *Güvenli masaüstünde kimlik bilgilerini iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde farklı bir Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem ilgili ayrıcalıkla devam eder. 
+  - *Kimlik bilgilerini iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan bir Yönetici Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem ilgili ayrıcalıkla devam eder.  
   
-  **Varsayılan**: Yükseltme isteklerini otomatik olarak reddet
+  **Varsayılan**: Yükseltme isteklerini otomatik olarak Reddet
   
-- **Yönetici Onay Modu'ndaki yöneticiler için gerektirir**  
-  Bu ilke ayarı, bilgisayarın tüm kullanıcı hesabı denetimi (UAC) ilke ayarlarını davranışını denetler. Bu ilke ayarı değiştirirseniz, bilgisayarınızı yeniden başlatmanız gerekir. Seçenekler şunlardır:   
-  - *Yapılandırılmadı*: Yönetici Onay Modu ve ilgili tüm UAC ilke ayarlarını devre dışı bırakıldı. Not: Bu ilke ayarı devre dışıysa, Güvenlik Merkezi, işletim sistemi güvenliğinin bir bütün düşürüldü bildirir. 
-  - *Evet*: Yönetici onay modu etkin. Bu ilke etkinleştirilmiş olması ve ilgili UAC ilke ayarları, yerleşik yönetici hesabı ve Yönetici Onay Modu'nda Çalıştır için Administrators grubunun üyesi olan diğer tüm kullanıcılara izin vermek için uygun şekilde ayarlanmalıdır.  
-  
-  **Varsayılan**: Evet
-  
-- **SAM hesaplarının anonim numaralandırmasına engelle**  
-  Bu güvenlik ayarı, anonim bağlantılara bilgisayara verilen ek hangi izinleri belirler. Windows, anonim kullanıcıların etki alanı hesapları ve ağ paylaşımlara adları listelendirmek gibi etkinlikleri gerçekleştirmesine olanak tanır. Örneğin, yönetici kullanıcılara karşılıklı güven saklamaz güvenilen bir etki alanında erişim istediğinde bu kullanışlı hale. Bu güvenlik seçeneği ek sınırlamalar anonim bağlantılara gibi yerleştirilmesine olanak sağlar: 
-  - *Evet*: Numaralandırma SAM hesaplarının izin vermez. Bu seçenek, herkes kaynaklar için güvenlik izinleri kimliği doğrulanmış kullanıcılar ile değiştirir.
-  - *Yapılandırılmadı*: Ek kısıtlama yoktur. Varsayılan izinlerini kullanır.  
+- **Yöneticiler için yönetici onay modu gerektir**  
+  Bu ilke ayarı, bilgisayar için tüm Kullanıcı hesabı denetimi (UAC) ilke ayarlarının davranışını denetler. Bu ilke ayarını değiştirirseniz, bilgisayarınızı yeniden başlatmanız gerekir. Seçenekler şunlardır:   
+  - *Yapılandırılmadı*: Yönetici onay modu ve ilgili tüm UAC ilkesi ayarları devre dışı bırakıldı. Not: Bu ilke ayarı devre dışı bırakılırsa, Güvenlik Merkezi, işletim sisteminin genel güvenliğinin azaldığını size bildirir. 
+  - *Evet*: Yönetici onay modu etkin. Bu ilkenin etkinleştirilmesi ve ilgili UAC ilkesi ayarlarının, yerleşik yönetici hesabının ve Yöneticiler grubunun üyesi olan diğer tüm kullanıcıların yönetici onay modunda çalışmasına izin verecek şekilde ayarlanmış olması gerekir.  
   
   **Varsayılan**: Evet
   
-- **Güvenlik Hesapları Yöneticisi uzak çağrısına izin ver**  
-  Bu ilke ayarı, SAM uzak rpc bağlantılarını kısıtla olanak sağlar. Seçilmezse, varsayılan güvenlik tanımlayıcısı kullanılır.
+- **SAM hesaplarının anonim numaralandırılmasına engel**  
+  Bu güvenlik ayarı, bilgisayara anonim bağlantılar için hangi ek izinlerin verildiğini belirler. Windows, anonim kullanıcıların etki alanı hesaplarının ve ağ paylaşımlarının adlarını numaralandırma gibi belirli etkinlikleri gerçekleştirmesine olanak sağlar. Bu, örneğin, bir yönetici, güvenilen bir etki alanındaki kullanıcılara, karşılıklı güven ilişkisi olmayan kullanıcılar için erişim vermek istediğinde kullanışlıdır. Bu güvenlik seçeneği, anonim bağlantılara aşağıdaki gibi ek kısıtlamaların yerleştirilmesine izin verir: 
+  - *Evet*: SAM hesaplarının numaralandırılmasına izin verme. Bu seçenek, kaynaklar için güvenlik izinlerinde kimliği doğrulanmış kullanıcılarla herkes tarafından değiştirilir.
+  - *Yapılandırılmadı*: Ek kısıtlama yoktur. Varsayılan izinleri kullanır.  
   
-  **Varsayılan**: *O:BAG:BAD:(A;; RC;; BA)*
+  **Varsayılan**: Evet
+  
+- **Güvenlik hesapları yöneticisine uzaktan çağrılara izin ver**  
+  Bu ilke ayarı, uzaktan RPC bağlantılarını SAM ile sınırlamanıza izin verir. Seçilmezse, varsayılan güvenlik tanımlayıcısı kullanılır.
+  
+  **Varsayılan**: *O:BAG: HATALI: (A;; RC;;; SOFTWARE*
 
-- **Yönetici onay modu kullanın**  
-  Bu ilke ayarı, yerleşik yönetici hesabı için yönetici onay modu davranışını denetler. Seçenekler şunlardır: 
-  - *Evet*: Yerleşik yönetici hesabı yönetici onay modu kullanır. Varsayılan olarak kullanıcıdan işlemi ayrıcalık gerektiren herhangi bir işlem ister. 
-  - *Yapılandırılmamış*: Yerleşik yönetici hesabı tüm uygulamaları tam yönetici ayrıcalıklarıyla çalıştırır.  
-
-  **Varsayılan**: Evet
-  
-- **Güvenli konumları için kullanıcı Arabirimi uygulamalara izin ver**  
-  Bu ilke, kullanıcı arabirimi erişilebilirliği (UIAccess veya UIA) programları standart bir kullanıcı tarafından kullanılan yükseltme istemleri için güvenli masaüstünü otomatik olarak devre dışı olup olmadığını ayarı denetler. 
-  - *Evet*: Windows Uzaktan Yardım dahil olmak üzere, UIA programları yükseltme istemleri için güvenli masaüstünü otomatik olarak devre dışı bırakın. Devre dışı bırakmayın, "kullanıcı hesabı denetimi: Yükseltme isterken güvenli masaüstüne geç"ilke ayarı, istemler güvenli masaüstü yerine etkileşimli kullanıcının masaüstünde görünür. 
-  - *Yapılandırılmamış*: Güvenli Masaüstü yalnızca etkileşimli masaüstü kullanıcısı tarafından veya devre dışı bırakılarak devre dışı bırakılabilir "kullanıcı hesabı denetimi: Yükseltme isterken güvenli masaüstüne geç"ilke ayarı.  
+- **Yönetici onay modunu kullan**  
+  Bu ilke ayarı, yerleşik yönetici hesabı için yönetici onay modunun davranışını denetler. Seçenekler şunlardır: 
+  - *Evet*: Yerleşik yönetici hesabı yönetici onay modunu kullanır. Varsayılan olarak, ayrıcalık yükseltme gerektiren tüm işlemler kullanıcıdan işlemi onaylamasını ister. 
+  - *Yapılandırılmadı*: Yerleşik yönetici hesabı tüm uygulamaları tam yönetici ayrıcalığıyla çalıştırır.  
 
   **Varsayılan**: Evet
+  
+- **Güvenli konumlar için UI erişim uygulamalarına izin ver**  
+  Bu ilke ayarı, Kullanıcı arabirimi erişilebilirliği (UIAccess veya UıA) programlarının standart bir kullanıcı tarafından kullanılan yükseltme istemleri için güvenli masaüstünü otomatik olarak devre dışı bırakıp bırakamayacağını denetler. 
+  - *Evet*: Windows Uzaktan Yardım dahil UıA programları, yükseltme istemleri için güvenli masaüstünü otomatik olarak devre dışı bırakır. "Kullanıcı hesabı denetimini devre dışı bırakmazsanız: Yükseltme isterken güvenli masaüstüne geç "ilke ayarı, istemler güvenli masaüstü yerine etkileşimli kullanıcının masaüstünde görünür. 
+  - *Yapılandırılmadı*: Güvenli Masaüstü yalnızca etkileşimli masaüstü kullanıcısı tarafından veya "Kullanıcı hesabı denetimi" devre dışı bırakılarak devre dışı bırakılabilir. Yükseltme isterken güvenli masaüstüne geç "ilke ayarını yapın.  
 
-- **Uygulama yüklemelerini Algıla ve yükseltme isteminde bulun**  
-  Bu ilke ayarı, bilgisayarın uygulama yükleme algılama davranışını denetler. Seçenekler şunlardır: 
-  - *Etkin*: Ayrıcalık gerektiren bir uygulama yükleme paketi tespit edildiğinde, kullanıcı bir yönetici kullanıcı adı ve parola girmesi istenir. Geçerli kimlik bilgileri kullanıcının girdiği işlemi ayrıcalık ile devam eder. 
-  - *Devre dışı*: Uygulama yükleme paketleri değil ve yükseltme istenir. Standart kullanıcı Masaüstü çalıştıran ve kullanmak kuruluşların Grup İlkesi Yazılım Yükleme gibi yükleme teknolojileri temsilci veya Systems Management Server (SMS) Bu ilke ayarını devre dışı bırakmanız gerekir. Bu durumda, yükleyici algılama gerekli değildir.  
+  **Varsayılan**: Evet
+
+- **Uygulama yüklemelerini Algıla ve yükseltme istemi**  
+  Bu ilke ayarı, bilgisayar için uygulama yükleme algılaması davranışını denetler. Seçenekler şunlardır: 
+  - *Etkin*: Ayrıcalık yükseltmesi gerektiren bir uygulama yükleme paketi algılandığında, kullanıcıdan bir Yönetici Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem ilgili ayrıcalıkla devam eder. 
+  - *Devre dışı*: Uygulama yükleme paketleri saptanmadı ve yükseltme istendi. Standart Kullanıcı masaüstlerini çalıştıran ve Grup İlkesi İle Yazılım Yükleme veya Systems Management Server (SMS) gibi Temsilcili yükleme teknolojilerini kullanan kuruluşlar bu ilke ayarını devre dışı bırakmalıdır. Bu durumda, yükleyici algılaması gereksizdir.  
   
   **Varsayılan**: Evet
   
-- **Sonraki parola değişiminde LAN manager karma değerini depolama engelle**  
-  Sonraki parola değişiminde yeni parolanın LAN Manager (LM) karma değeri depolanır, bu güvenlik ayarı belirler. LM karması nispeten zayıf ve saldırıya değiştirmeyen şifreleme açısından güçlü Windows NT karması. LM karması güvenlik veritabanında yerel bilgisayarda depolandığından parolalar, güvenlik veritabanı gerçekleşirse zarar görebilir.
+- **Sonraki parola değiştiğinde LAN Manager karma değerinin depolanmasını engelle**  
+  Bu güvenlik ayarı, bir sonraki parola değişikliğinden sonra yeni parolanın LAN Manager (LM) karma değerinin depolandığını belirler. Şifreleme açısından daha güçlü Windows NT karması ile karşılaştırıldığında, LM karması nispeten zayıftır ve saldırıya açıktır. LM karması güvenlik veritabanındaki yerel bilgisayarda depolandığından, güvenlik veritabanı saldırıya girerse, parolaların güvenliği tehlikeye girebilir.
   
   **Varsayılan**: Evet
 
-- **Dosya ve kayıt defteri yazma hatalarını kullanıcı konumlarında başına konumlarında sanal olarak oluştur**  
-  Bu ilke, uygulama yazma hatalarının tanımlanan kayıt defteri ve dosya sistemi konumlarına yeniden yönlendirilen olup olmadığını ayarı denetler. Bu ilke ayarı, yönetici olarak çalıştırın ve çalışma zamanı uygulama verileri için yazma uygulamaları azaltır *% ProgramFiles %* , *% Windir %* , *%Windir%\system32*, veya *HKLM\Software*.
+- **Dosya ve kayıt defteri yazma başarısızlıklarını Kullanıcı konumlarına sanallaştırın**  
+  Bu ilke ayarı, uygulama yazma hatalarının tanımlanan kayıt defteri ve dosya sistemi konumlarına yönlendirilip yönlendirilmediğini denetler. Bu ilke ayarı, yönetici olarak çalışan uygulamaları azaltır ve *% ProgramFiles%* , *% windir%* , *%Windir%\System32*veya *HKLM\Software*'e çalışma zamanı uygulama verisi yazar.
   
   **Varsayılan**: Evet
 
 ### <a name="ms-security-guide"></a>MS Güvenlik Kılavuzu  
 
-Daha fazla bilgi için [ilke CSP'si - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) bölümüne bakın.  
 
-- **Ağ oturumu açma üzerindeki yerel hesaplar için UAC kısıtlamalarını Uygula**  
+- **Ağ oturum açmada yerel hesaplara UAC kısıtlamalarını uygulama**  
   **Varsayılan**: Enabled
   
-- **SMB v1 istemci sürücü başlangıç yapılandırması**  
+- **SMB v1 istemci sürücüsü yapılandırma Başlat**  
   **Varsayılan**: Devre dışı sürücü
   
 - **SMB v1 sunucusu**  
@@ -1106,147 +1106,147 @@ Daha fazla bilgi için [ilke CSP'si - MSSecurityGuide](https://docs.microsoft.co
 - **Özet kimlik doğrulaması**  
   **Varsayılan**: Devre dışı
   
-- **Yapılandırılmış özel durum işleme üzerine koruma**  
+- **Yapılandırılmış özel durum işleme üzerine yazma koruması**  
   **Varsayılan**: Enabled
   
-### <a name="mss-legacy"></a>MSS eski  
+### <a name="mss-legacy"></a>Bulunan eski  
 
-Daha fazla bilgi için [ilke CSP'si - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) bölümüne bakın.  
 
-- **Koruma düzeyi yönlendirme ağ IP kaynağı**  
+- **Ağ IP kaynağı yönlendirme koruma düzeyi**  
   **Varsayılan**: En yüksek koruma  
   
-- **Itanium tabanlı sistemler için NetBIOS adı sürüm istekleri dışında WINS sunucusundan ağ yoksay**  
+- **Ağ, WINS sunucuları hariç NetBIOS ad yayın isteklerini yoksay**  
   **Varsayılan**: Enabled
   
-- **IPv6 yönlendirme koruma düzeyi kaynak ağ**  
+- **Ağ IPv6 kaynak yönlendirme koruma düzeyi**  
   **Varsayılan**: En yüksek koruma
 
-- **Ağ ICMP yeniden yönlendirmeleri oluşturulan OSPF geçersiz kıl**  
+- **Ağ ıCMP yeniden yönlendirmeleri geçersiz kılma OSPF oluşturulan**  
   **Varsayılan**: Devre dışı
   
-### <a name="power"></a>Güç  
+### <a name="power"></a>Açılma  
 
-Daha fazla bilgi için [ilke CSP'si - Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-güç](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) bölümüne bakın.  
 
-- **Takılıyken Uyandırma parola iste**  
-  Bu ilke ayarı, sistem uyku durumundan çıktığında kullanıcıyı parola girmeniz istenir, belirtir. Etkinleştirin veya bu ilke ayarı yapılandırmayın, kullanıcı sistem uyku durumundan çıktığında parola istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı sistem uyku durumundan çıktığında parola sorulmadan değil.
+- **Prize takılıyken uyanma durumunda parola iste**  
+  Bu ilke ayarı, sistem uykudan devam ettiğinde kullanıcıdan bir parola istenip istenmeyeceğine belirtir. Bu ilke ayarını etkinleştirir veya yapılandırmazsanız, sistem uykudan devam ettiğinde kullanıcıdan bir parola istenir. Bu ilke ayarını devre dışı bırakırsanız, sistem uykudan devam ettiğinde kullanıcıdan parola istenmez.
   
   **Varsayılan**: Enabled
   
-- **Pil sırada Uyuma, bekleme durumlarını**  
-  Bu ilke ayarı, Windows bilgisayar uyku durumunda koyma, bekleme durumlarını kullanabiliyorsa yönetir. Etkinleştirin veya bu ilke ayarı yapılandırmayın varsa, Windows bilgisayar uyku durumuna için bekleme durumlarını kullanır. Bu ilke ayarını devre dışı bırakırsanız, bekleme durumlarını (S1 S3) izin verilmez.
+- **Pille çalışırken bekleme durumları**  
+  Bu ilke ayarı, Windows 'un bilgisayarı uyku durumuna geçirirken bekleme durumlarını kullanıp kullanmeyeceğini yönetir. Bu ilke ayarını etkinleştirir veya yapılandırmazsanız, Windows bilgisayarı uyku durumuna geçirmek için bekleme durumlarını kullanır. Bu ilke ayarını devre dışı bırakırsanız, bekleme durumlarına (S1-S3) izin verilmez.
   
   **Varsayılan**: Devre dışı
   
-- **Takılıyken Uyuma, bekleme durumlarını**  
-  Bu ilke ayarı, Windows bilgisayar uyku durumunda koyma, bekleme durumlarını kullanabiliyorsa yönetir. Etkinleştirin veya bu ilke ayarı yapılandırmayın varsa, Windows bilgisayar uyku durumuna için bekleme durumlarını kullanır. Bu ilke ayarını devre dışı bırakırsanız, bekleme durumlarını (S1 S3) izin verilmez.
+- **Prize takılıyken uyurken bekleme durumları**  
+  Bu ilke ayarı, Windows 'un bilgisayarı uyku durumuna geçirirken bekleme durumlarını kullanıp kullanmeyeceğini yönetir. Bu ilke ayarını etkinleştirir veya yapılandırmazsanız, Windows bilgisayarı uyku durumuna geçirmek için bekleme durumlarını kullanır. Bu ilke ayarını devre dışı bırakırsanız, bekleme durumlarına (S1-S3) izin verilmez.
   
   **Varsayılan**: Devre dışı
   
-- **LAN'da Uyandırma pil sırasında parola iste**  
-  Bu ilke ayarı, sistem uyku durumundan çıktığında kullanıcıyı parola girmeniz istenir, belirtir. Etkinleştirin veya bu ilke ayarı yapılandırmayın, kullanıcı sistem uyku durumundan çıktığında parola istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcı sistem uyku durumundan çıktığında parola sorulmadan değil.
+- **Pille çalışırken Uyandırma için parola gerektir**  
+  Bu ilke ayarı, sistem uykudan devam ettiğinde kullanıcıdan bir parola istenip istenmeyeceğine belirtir. Bu ilke ayarını etkinleştirir veya yapılandırmazsanız, sistem uykudan devam ettiğinde kullanıcıdan bir parola istenir. Bu ilke ayarını devre dışı bırakırsanız, sistem uykudan devam ettiğinde kullanıcıdan parola istenmez.
   
   **Varsayılan**: Enabled
   
 ### <a name="remote-desktop-services"></a>Uzak Masaüstü Hizmetleri  
 
-Daha fazla bilgi için [ilke CSP'si - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) bölümüne bakın.  
 
-- **Parola kaydetme engelle**  
-  Parolaları bu bilgisayarda Uzak Masaüstü Bağlantısı'ndan kaydedilebilir olup olmadığını denetler. Bu ayarı etkinleştirirseniz, parola Uzak Masaüstü Bağlantısı'nda onay kutusu kaydetme devre dışıdır ve kullanıcıların parolaları Kaydet mümkün olmayacaktır. Bir kullanıcı, Uzak Masaüstü bağlantısı kullanarak bir RDP dosyası açılır ve ayarlarına kaydederse, daha önce RDP dosyasındaki var olan herhangi bir parola silinir. Bu ayarı devre dışı veya yapılandırılmamış bırakın, kullanıcı parolaları Uzak Masaüstü bağlantısı kullanarak kaydedebilirsiniz.
+- **Parola kaydetmeyi engelle**  
+  Uzak Masaüstü Bağlantısı 'tan bu bilgisayara parolaların kaydedilip kaydedilmediğini denetler. Bu ayarı etkinleştirirseniz Uzak Masaüstü Bağlantısı ' de parola kaydetme onay kutusu devre dışıdır ve kullanıcılar parolaları kaydedemezler. Kullanıcı Uzak Masaüstü Bağlantısı kullanarak bir RDP dosyası açtığında ve ayarlarını kaydettiğinde, RDP dosyasında daha önce varolan tüm parolalar silinir. Bu ayarı devre dışı bırakırsanız veya yapılandırılmamışsa, Kullanıcı Uzak Masaüstü Bağlantısı kullanarak parolaları kaydedebilir.
   
    **Varsayılan**: Enabled
   
-- **RPC iletişimi güvenli hale getirme**  
-  Bir Uzak Masaüstü oturumu konağı sunucusu ile tüm istemcilerin güvenli RPC iletişimi gerektirir veya iletişime izin verir belirtir. İstemciler ile RPC iletişimi güvenliğini sağlayarak yalnızca kimliği doğrulanmış ve şifrelenmiş isteklere güçlendirmek için bu ayarı kullanabilirsiniz. Durum Etkin olarak ayarlanırsa, Uzak Masaüstü Hizmetleri güvenli isteklerini desteklemek RPC istemcilerden gelen istekleri kabul eder ve güvenilmeyen istemciler ile iletişime izin vermez. Durumu devre dışı olarak ayarlanmışsa, Uzak Masaüstü Hizmetleri, her zaman tüm RPC trafiği için güvenlik ister. Ancak, iletişime isteğine yanıt yok RPC istemciler için izin verilir. Yapılandırılmamış durumu olarak iletişime izin verilir. Not: RPC arabirimi, yönetme ve Uzak Masaüstü Hizmetleri yapılandırmak için kullanılır.
+- **Güvenli RPC iletişimi**  
+  Bir Uzak Masaüstü Oturumu Ana Bilgisayarı sunucusunun tüm istemcilerle güvenli RPC iletişimi gerektirip gerektirmediğini veya güvenli olmayan iletişime izin verip etmeyeceğini belirtir. Yalnızca kimliği doğrulanmış ve şifreli isteklere izin vererek istemcilerle RPC iletişiminin güvenliğini güçlendirmek için bu ayarı kullanabilirsiniz. Durum etkin olarak ayarlandıysa Uzak Masaüstü Hizmetleri, güvenli istekleri destekleyen RPC istemcilerinden gelen istekleri kabul eder ve güvenilmeyen istemcilerle güvenli olmayan iletişime izin vermez. Durum devre dışı olarak ayarlandıysa Uzak Masaüstü Hizmetleri tüm RPC trafiği için her zaman güvenlik ister. Ancak, isteğe yanıt vermeyen RPC istemcilerinde güvenli olmayan iletişime izin verilir. Durum Yapılandırılmadı olarak ayarlandıysa, güvenli olmayan iletişime izin verilir. Not: RPC arabirimi Uzak Masaüstü Hizmetleri yönetmek ve yapılandırmak için kullanılır.
   
   **Varsayılan**: Enabled
   
-- **Blok sürücü yeniden yönlendirme**  
-  Bu ilke ayarı, Uzak Masaüstü Hizmetleri oturumu (sürücü yeniden yönlendirme) istemci sürücü eşleme engellenip engellenmeyeceğini belirtir. Varsayılan olarak, RD Oturumu Ana bilgisayarı sunucu bağlantıyla birlikte otomatik olarak istemci sürücüleri eşler. Eşlenen sürücüler görünür biçimde dosya Gezgini veya bilgisayar oturum klasör ağacında  *\<SürücüHarfi >* üzerinde  *\<computername >* . Bu ilke ayarı, bu davranışı geçersiz kılmak için kullanabilirsiniz. Bu ilke ayarını etkinleştirirseniz, istemci sürücüsü yeniden yönlendirmesi, Uzak Masaüstü Hizmetleri oturumlarına izin verilmiyor ve Windows Server 2003, Windows 8 ve Windows XP çalıştıran bilgisayarlarda Pano dosya kopyalama yeniden yönlendirmesine izin verilmiyor. Bu ilke ayarını devre dışı bırakırsanız istemci sürücüsü yeniden yönlendirmesi her zaman izin verilir. Ayrıca, Pano yeniden yönlendirmesine izin verilip verilmediğini Pano dosya kopyalama yönlendirmesini her zaman izin verilir. Bu ilke ayarı yapılandırmazsanız istemci sürücüsü yeniden yönlendirmesi ve Pano dosya kopyalama yeniden yönlendirme Grup İlkesi düzeyinde belirtilmeyen.
+- **Sürücü yeniden yönlendirmeyi engelle**  
+  Bu ilke ayarı, Uzak Masaüstü Hizmetleri oturumunda istemci sürücülerinin eşlenmesinin engellenip engellenmeyeceğini belirtir (sürücü yeniden yönlendirme). Varsayılan olarak, bir RD Oturumu Ana Bilgisayarı sunucusu bağlantı kurulduğunda istemci sürücüleri otomatik olarak eşler. Eşlenen sürücüler,  *\<ComputerName >* üzerindeki dosya Gezgini veya bilgisayar  *\<>* biçimindeki oturum klasörü ağacında görüntülenir. Bu davranışı geçersiz kılmak için bu ilke ayarını kullanabilirsiniz. Bu ilke ayarını etkinleştirirseniz, Uzak Masaüstü Hizmetleri oturumlarında istemci sürücü yönlendirmesine izin verilmez ve Windows Server 2003, Windows 8 ve Windows XP çalıştıran bilgisayarlarda Pano dosya kopyası yeniden yönlendirmesine izin verilmez. Bu ilke ayarını devre dışı bırakırsanız, istemci sürücü yeniden yönlendirmesine her zaman izin verilir. Ayrıca, pano yeniden yönlendirmesine izin veriliyorsa Pano dosya kopyalama yönlendirmesine her zaman izin verilir. Bu ilke ayarını yapılandırmazsanız, istemci sürücü yeniden yönlendirmesi ve Pano dosya kopyalama yönlendirmesi grup ilkesi düzeyinde belirtilmez.
   
   **Varsayılan**: Enabled
   
-- **Bağlantı kurulduğunda parola istemi**  
-  Bu ilke ayarı, Uzak Masaüstü Hizmetleri istemci bağlantı kurulduğunda parola her zaman uyarıp uyarmayacağını belirtir. Uzak Masaüstü Bağlantısı istemci Parolada zaten sağlanan bile Uzak Masaüstü Hizmetleri oturum açan kullanıcılar için bir parola istemi zorlamak için bu ayarı kullanabilirsiniz. Varsayılan olarak, Uzak Masaüstü Hizmetleri Uzak Masaüstü Bağlantısı istemcisinde bir parola girerek otomatik olarak oturum açmasını sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar otomatik olarak Uzak Masaüstü Hizmetleri için Uzak Masaüstü Bağlantısı istemcisinde parolalarını sağlayarak oturum açamaz. oturum açmak parola istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcıların her zaman için Uzak Masaüstü Hizmetleri otomatik olarak Uzak Masaüstü Bağlantısı istemcisinde parolalarını sağlayarak oturum açabilir. Bu ilke ayarı yapılandırmazsanız, otomatik oturum açma Grup İlkesi düzeyinde belirtilmemiş. 
+- **Bağlantı kurulduğunda parola iste**  
+  Bu ilke ayarı, Uzak Masaüstü Hizmetleri bağlantı kurulduğunda istemciden her zaman bir parola isteyip istemediğinizi belirtir. Bu ayarı, Uzak Masaüstü Bağlantısı istemcisinde zaten parola sağladıklarında bile Uzak Masaüstü Hizmetleri oturum açan kullanıcılar için bir parola istemi zorlamak üzere kullanabilirsiniz. Varsayılan olarak, Uzak Masaüstü Hizmetleri Uzak Masaüstü Bağlantısı istemcisine bir parola girerek kullanıcıların otomatik olarak oturum açmasına olanak tanır. Bu ilke ayarını etkinleştirirseniz, kullanıcılar Uzak Masaüstü Bağlantısı istemcisinde parolalarını sağlayarak Uzak Masaüstü Hizmetleri otomatik olarak oturum açamaz. oturum açmak için parola istenir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar Uzak Masaüstü Bağlantısı istemcisinde parolalarını sağlayarak Uzak Masaüstü Hizmetleri her zaman otomatik olarak oturum açabilirler. Bu ilke ayarını yapılandırmazsanız, grup ilkesi düzeyinde otomatik oturum açma belirtilmez. 
   
   **Varsayılan**: Enabled
   
-- **Uzak Masaüstü Hizmetleri istemci bağlantı şifreleme düzeyi**  
-  Uzak Masaüstü Protokolü (RDP) bağlantıları sırasında RD Oturumu Ana bilgisayarı sunucuları ile istemci bilgisayar arasındaki iletişimin güvenliğini sağlamak için özel bir şifreleme düzeyi kullanımını gerekip gerekmediğini belirtir. Bu ilke, yalnızca yerel RDP şifreleme kullanılırken geçerlidir. Ancak, yerel RDP şifreleme (aksine, SSL şifrelemesi) önerilmez. Bu ilke, SSL şifrelemesi için geçerli değildir. Bu ilke ayarını etkinleştirirseniz, istemcilerin ve RD Oturumu Ana bilgisayarı sunucuları arasındaki tüm iletişimler sırasında uzak bağlantıları bu ayarında belirtilen şifreleme yöntemini kullanmanız gerekir. Varsayılan olarak, şifreleme düzeyini Yüksek olarak ayarlanır. Aşağıdaki şifreleme yöntemleri kullanılabilir:  
-  - *Yüksek*: Yüksek ayarı, güçlü 128 bit şifreleme kullanarak istemciden sunucuya ve sunucudan istemciye gönderilen verileri şifreler. Bu şifreleme düzeyi yalnızca 128-bit istemcileri (örneğin, Uzak Masaüstü Bağlantısı'nı çalıştıran istemciler) içeren ortamlarda kullanın. Bu şifreleme düzeyi desteklemeyen istemciler, RD Oturumu Ana Bilgisayarı sunucularına bağlanamazlar.  
-  - *İstemci uyumlu*: Uyumlu istemci ayarı istemci tarafından desteklenen en yüksek anahtar gücünde sunucusu ile istemci arasında gönderilen verileri şifreler. Bu şifreleme düzeyi 128 bit şifreleme desteklemeyen istemciler içeren ortamlarda kullanın.  
-  - *Düşük*: Düşük ayarı yalnızca 56 bit şifreleme kullanarak istemciden sunucuya gönderilen verileri şifreler.  
+- **Uzak Masaüstü Hizmetleri istemci bağlantısı şifreleme düzeyi**  
+  Uzak Masaüstü Protokolü (RDP) bağlantıları sırasında istemci bilgisayarlar ile RD Oturumu Ana Bilgisayarı sunucuları arasındaki iletişimin güvenliğini sağlamak için belirli bir şifreleme düzeyinin kullanılıp kullanılmayacağını belirtir. Bu ilke yalnızca yerel RDP şifrelemesini kullanırken geçerlidir. Ancak, yerel RDP şifrelemesi (SSL şifrelemesinin aksine) önerilmez. Bu ilke, SSL şifrelemesi için uygulanmaz. Bu ilke ayarını etkinleştirirseniz, uzak bağlantılar sırasında istemciler ve RD Oturumu Ana Bilgisayarı sunucular arasındaki tüm iletişimler bu ayarda belirtilen şifreleme yöntemini kullanmalıdır. Varsayılan olarak, şifreleme düzeyi yüksek olarak ayarlanır. Aşağıdaki şifreleme yöntemleri kullanılabilir:  
+  - *Yüksek*: Yüksek ayar, güçlü 128 bit şifrelemeyi kullanarak istemciden sunucuya ve sunucudan istemciye gönderilen verileri şifreler. Bu şifreleme düzeyini yalnızca 128 bitlik istemciler (örneğin, Uzak Masaüstü Bağlantısı çalıştıran istemciler) içeren ortamlarda kullanın. Bu şifreleme düzeyini desteklemeyen istemciler RD Oturumu Ana Bilgisayarı sunucularına bağlanamaz.  
+  - *Istemci uyumlu*: Istemci ile uyumlu ayarı istemci ile sunucu arasında gönderilen verileri, istemci tarafından desteklenen en yüksek anahtar gücüyle şifreler. 128 bit şifrelemeyi desteklemeyen istemcileri içeren ortamlarda bu şifreleme düzeyini kullanın.  
+  - *Düşük*: Düşük ayar, 56 bit şifrelemeyi kullanarak yalnızca istemciden sunucuya gönderilen verileri şifreler.  
   
-  Devre dışı bırakın ya da bu ayarı yapılandırmayın, RD Oturumu Ana bilgisayarı sunucularını uzaktan bağlantılar için kullanılacak şifreleme düzeyini Grup İlkesi aracılığıyla zorlanmaz. FIPS uyumluluğunu önemli sistem şifreleme yapılandırılabilir. Şifreleme, karma ve (Bilgisayar Yapılandırması\Windows Ayarları\Güvenlik Ayarları\Yerel İlkeler\Güvenlik Seçenekleri altında.) Grup İlkesi ayarlarına imzalama için FIPS uyumlu algoritmalar kullanın FIPS uyumlu ayarı şifreler ve Microsoft şifreleme modüllerini kullanarak istemciden sunucuya ve Federal Bilgi İşleme Standardı (FIPS) 140 şifreleme algoritmaları, istemciden sunucuya gönderilen verilerin şifresini çözer. RD Oturumu Ana bilgisayarı sunucuları ile istemci arasındaki iletişimin şifreleme en yüksek düzeyde gerektirdiğinde bu şifreleme düzeyi kullanın.
+  Bu ayarı devre dışı bırakır veya yapılandırmazsanız, RD Oturumu Ana Bilgisayarı sunucularına uzak bağlantılar için kullanılacak şifreleme düzeyi grup ilkesi aracılığıyla zorlanmaz. Önemli FIPS uyumluluğu Sistem şifrelemesi aracılığıyla yapılandırılabilir. Grup ilkesi (Bilgisayar Yapılandırması \ güvenlik ayarları \ yerel ilkeler \ güvenlik seçenekleri altında) şifreleme, karma ve imzalama ayarları için FIPS uyumlu algoritmalar kullanın. FIPS uyumlu ayar, Microsoft şifreleme modüllerini kullanarak istemciden sunucuya ve sunucudan istemciye gönderilen verilerin şifrelemesini, Federal bilgi Işleme standardı (FIPS) 140 şifreleme algoritmalarıyla şifreler ve şifresini çözer. İstemcilerle RD Oturumu Ana Bilgisayarı sunucuları arasındaki iletişimler en yüksek düzeyde şifrelemeyi gerektirdiğinde bu şifreleme düzeyini kullanın.
   
   **Varsayılan**: Yüksek
   
 ### <a name="remote-management"></a>Uzaktan Yönetim  
 
-Daha fazla bilgi için [ilke CSP'si - RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) bölümüne bakın.  
 
-- **Blok depolama kimlik bilgileri olarak çalıştırma**  
+- **Farklı çalıştır kimlik bilgilerini depolamayı engelle**  
   İstemci temel kimlik doğrulaması
   
   **Varsayılan**: Enabled
   
 - **Temel kimlik doğrulaması**  
-  Bu ilke ayarı, Windows Uzaktan Yönetim (WinRM) hizmeti uzak bir istemciden Temel kimlik doğrulaması kabul edip etmeyeceğini yönetmenize olanak sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM hizmeti uzak bir istemciden Temel kimlik doğrulaması kabul eder. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, WinRM hizmeti uzak bir istemciden Temel kimlik doğrulaması kabul etmez.
+  Bu ilke ayarı, Windows Uzaktan Yönetimi (WinRM) hizmetinin uzak bir istemciden Temel kimlik doğrulaması kabul edip etmediğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz WinRM hizmeti, uzak bir istemciden Temel kimlik doğrulamasını kabul eder. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, WinRM hizmeti uzak bir istemciden Temel kimlik doğrulamasını kabul etmez.
   
   **Varsayılan**: Devre dışı
   
-- **Blok istemci Özet kimlik doğrulaması**  
-  Bu ilke ayarı Windows Uzaktan Yönetim (WinRM) istemcisi Özet kimlik doğrulaması kullanır yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci Özet kimlik doğrulaması kullanmaz. WinRM istemcisini devre dışı bırakın veya bu ilke ayarı yapılandırmayın, Özet kimlik doğrulaması kullanır.
+- **İstemci Özeti kimlik doğrulamasını engelle**  
+  Bu ilke ayarı, Windows Uzaktan Yönetimi (WinRM) istemcisinin Özet kimlik doğrulaması kullanıp kullanmadığını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemcisi Özet kimlik doğrulaması kullanmaz. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, WinRM istemcisi Özet kimlik doğrulaması kullanır.
   
   **Varsayılan**: Enabled
   
-- **Şifrelenmemiş trafiği**  
-  Bu ilke ayarı, Windows Uzaktan Yönetim (WinRM) hizmeti ağ üzerinden şifrelenmemiş iletileri alan ve gönderen yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci gönderir ve ağ üzerinden şifrelenmemiş iletileri alır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, WinRM istemci gönderir veya ağ üzerinden yalnızca şifrelenmiş iletileri alır.  
+- **Şifrelenmemiş trafik**  
+  Bu ilke ayarı, Windows Uzaktan Yönetimi (WinRM) hizmetinin ağ üzerinden şifrelenmemiş iletiler gönderip alıp almayacağını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemcisi ağ üzerinden şifrelenmemiş iletiler gönderir ve alır. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, WinRM istemcisi ağ üzerinden yalnızca şifrelenmiş iletiler gönderir veya alır.  
   
   **Varsayılan**: Devre dışı
   
-- **Şifrelenmemiş istemci trafiğini**  
-  Bu ilke ayarı Windows Remote Management (WinRM) istemcisi ağ üzerinden şifrelenmemiş iletileri alan ve gönderen yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci gönderir ve ağ üzerinden şifrelenmemiş iletileri alır. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, WinRM istemci gönderir veya ağ üzerinden yalnızca şifrelenmiş iletileri alır.
+- **İstemci şifrelenmemiş trafiği**  
+  Bu ilke ayarı, Windows Uzaktan Yönetimi (WinRM) istemcisinin ağ üzerinden şifrelenmemiş iletiler gönderip göndermediğini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemcisi ağ üzerinden şifrelenmemiş iletiler gönderir ve alır. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, WinRM istemcisi ağ üzerinden yalnızca şifrelenmiş iletiler gönderir veya alır.
   
   **Varsayılan**: Devre dışı
   
 - **İstemci temel kimlik doğrulaması**  
-  Bu ilke ayarı Windows Uzaktan Yönetim (WinRM) istemcisi temel kimlik doğrulaması kullanır yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemci temel kimlik doğrulaması kullanır. WinRM HTTP aktarımı kullanmak için yapılandırılmışsa, kullanıcı adı ve parola ağda düz metin gönderilir. Devre dışı bırakmak veya bu ilke ayarı yapılandırmayın, WinRM istemci temel kimlik doğrulaması kullanmaz.
+  Bu ilke ayarı, Windows Uzaktan Yönetimi (WinRM) istemcisinin temel kimlik doğrulaması kullanıp kullanmadığını yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, WinRM istemcisi temel kimlik doğrulamasını kullanır. WinRM, HTTP taşıması kullanacak şekilde yapılandırıldıysa, Kullanıcı adı ve parola ağ üzerinden şifresiz metin olarak gönderilir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, WinRM istemcisi temel kimlik doğrulaması kullanmaz.
   
   **Varsayılan**: Devre dışı
   
 
 ### <a name="remote-procedure-call"></a>Uzak yordam çağrısı  
 
-Daha fazla bilgi için [ilke CSP'si - RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) bölümüne bakın.  
 
-- **Kimliği doğrulanmamış RPC istemci seçenekleri**  
-  Bu ilke ayarı, RPC sunucusu çalıştırma zamanı RPC sunuculara bağlanma kimliği doğrulanmamış RPC istemcilerinin nasıl işlediğini denetler. Bu ilke ayarı, tüm RPC uygulamaları etkiler. Grup İlkesi kendisini işleme dahil işlevleri çeşitli etkileyebileceğinden bir etki alanı ortamında, bu ilke ayarı dikkatli kullanın. Bu ilke ayarı için bir değişikliği geri alma, her bir sorundan etkilenen makinede el ile müdahale gerektirebilir. Bu ilke ayarı, hiçbir zaman bir etki alanı denetleyicisine uygulanmalıdır. Bu ilke ayarını devre dışı bırakırsanız, RPC sunucusu çalıştırma zamanı Windows istemcisi ve Windows Server sürümlerinde bu ilke ayarı destek "None" değerini "Kimliği doğrulanmış" değerini kullanır. Bu ilke ayarı yapılandırmazsanız, devre dışı kalır. RPC sunucusu çalışma zamanı, "Windows istemci ve"None"Bu ilke ayarı destek Server SKU için kullanılan değeri için kullanılan kimlik doğrulaması yapılmış" değeriyle etkinleştirildi ancak gibi davranır. Bu ilke ayarını etkinleştirirseniz, bir makine üzerinde çalışan sunucularına bağlanan kimliği doğrulanmamış RPC istemcilere kısıtlamak için RPC sunucusu çalıştırma zamanı yönlendirir. Bir istemci kimliği doğrulanmış bir istemci sunucusuyla iletişim kurmak için bir adlandırılmış kanal kullanıyorsa veya RPC güvenlik kullanıyorsa olarak kabul edilir. Özellikle kimliği doğrulanmamış istemcileri tarafından erişilebilir olmasını istediğiniz RPC arabirimlerinin Bu ilke ayarı için seçili değerine bağlı olarak bu kısıtlama, muaf olabilir.  
-  - *Hiçbiri* tüm RPC istemcilerinin ilke ayarının uygulandığı makine üzerinde çalışan sunucularına bağlanmasını sağlar. 
-  - *Kimliği doğrulanmış* ilke ayarının uygulandığı makine üzerinde çalışan RPC sunucularına bağlanmak için yalnızca kimliği doğrulanmış RPC istemcilerinin (yukarıdaki tanımı) sağlar. Muafiyetleri bunları istenen arabirimleri verilir. 
-  - *Özel durumlar kimliği doğrulanmış* ilke ayarının uygulandığı makine üzerinde çalışan RPC sunucularına bağlanmak için yalnızca kimliği doğrulanmış RPC istemcilerinin (yukarıdaki tanımı) sağlar. Hiçbir özel durumlara izin verilmez. Not: Bu ilke ayarı, sistem yeniden başlatılana kadar uygulanmaz.  
+- **RPC kimliği doğrulanmamış istemci seçenekleri**  
+  Bu ilke ayarı, RPC sunucusu çalışma zamanının RPC sunucularına bağlanan kimliği doğrulanmamış RPC istemcilerini nasıl işlediğini denetler. Bu ilke ayarı tüm RPC uygulamalarını etkiler. Bir etki alanı ortamında, Grup İlkesi işleme dahil olmak üzere çok çeşitli işlevleri etkileyebileceğinden Bu ilke ayarını dikkatli kullanın. Bu ilke ayarında bir değişikliği geri almak, etkilenen her makinede el ile müdahale gerektirebilir. Bu ilke ayarı, bir etki alanı denetleyicisine hiçbir şekilde uygulanmamalıdır. Bu ilke ayarını devre dışı bırakırsanız, RPC sunucusu çalışma zamanı Windows Istemcisinde "kimliği doğrulanmış" değerini ve bu ilke ayarını destekleyen Windows Server sürümlerinde "none" değerini kullanır. Bu ilke ayarını yapılandırmazsanız, devre dışı kalır. RPC sunucusu çalışma zamanı, Windows Istemcisi için kullanılan "kimliği doğrulanmış" değeri ve bu ilke ayarını destekleyen sunucu SKU 'Ları için kullanılan "none" değeri ile etkinleştirilmiş gibi davranır. Bu ilke ayarını etkinleştirirseniz, bir makinede çalışan RPC sunucularına bağlanan kimliği doğrulanmamış RPC istemcilerini kısıtlamak için RPC sunucusu çalışma zamanını yönlendirir. İstemci, sunucuyla iletişim kurmak için adlandırılmış bir kanal kullanıyorsa veya RPC güvenliği kullanıyorsa, kimliği doğrulanmış bir istemci olarak kabul edilir. Kimliği doğrulanmamış istemciler tarafından erişilebilmesi istenen RPC arabirimleri, bu ilke ayarı için seçilen değere bağlı olarak bu kısıtlamadan muaf kalabilir.  
+  - *Hiçbiri* tüm RPC istemcilerinin, ilke ayarının uygulandığı MAKINEDE çalışan RPC sunucularına bağlanmasına izin verir. 
+  - *Kimliği DOĞRULANMıŞ* RPC istemcilerinin, ilke ayarının uygulandığı MAKINEDE çalışan RPC sunucularına bağlanmasını sağlar. Bu arabirimleri isteyen arabirimlere muafiyet verilir. 
+  - *Özel durumlar olmadan kimlik doğrulaması* yalnızca KIMLIĞI doğrulanmış RPC istemcilerinin (Yukarıdaki Tanım başına) ilke ayarının uygulandığı MAKINEDE çalışan RPC sunucularına bağlanmasını sağlar. Hiçbir özel duruma izin verilmez. Not: Bu ilke ayarı, sistem yeniden başlatılana kadar uygulanmaz.  
 
-  **Varsayılan**: Kimlik doğrulaması
+  **Varsayılan**: Denetiminden
 
 ### <a name="search"></a>Ara  
 
-Daha fazla bilgi için [ilke CSP'si - arama](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) Windows belgelerinde.  
+Daha fazla bilgi için bkz. [Ilke CSP-](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) Windows belgelerinde arama.  
 
-- **Şifrelenmiş öğeler için dizin oluşturmayı devre dışı**  
-  Öğeler için dizin oluşturulmasına izin verir veya engeller. Bu anahtar, bu, Windows bilgi Koruması (WIP) korumalı dosyalar gibi şifreli öğelerin dizininin oluşturulmasını denetleyen Windows Search dizin'Oluşturucu içindir. İlke etkinleştirildiğinde, WIP korumalı öğelerin dizini oluşturulur ve bunlar hakkındaki meta veriler şifrelenmemiş bir konumda depolanır. Meta veriler, dosya yolu ve değiştirilme tarihi gibi veriler içerir. İlkeyi devre dışı bırakıldığında, WIP korumalı öğelerin dizini olmayan ve Cortana veya dosya Gezgini sonuçlarında içinde gösterme. Cihazda çok sayıda WIP korumalı medya dosyası varsa fotoğraflar ve Groove uygulamaları performansını da etkileyebilir.
+- **Şifrelenmiş öğelerin dizinini oluşturmayı devre dışı bırak**  
+  Öğeler için dizin oluşturulmasına izin verir veya engeller. Bu anahtar, Windows Information Protection (WıP) korumalı dosyalar gibi şifrelenmiş öğelerin dizinini oluşturulup oluşturulmayacağını denetleyen Windows Arama Dizin Oluşturucusu içindir. İlke etkinleştirildiğinde, WIP korumalı öğelerin dizini oluşturulur ve bunlar hakkındaki meta veriler şifrelenmemiş bir konumda depolanır. Meta veriler, dosya yolu ve değiştirilme tarihi gibi veriler içerir. İlke devre dışı bırakıldığında, WıP korumalı öğelerin dizini oluşturulmaz ve Cortana veya dosya Gezgini sonuçlarında gösterilmez. Cihazda çok sayıda WIP korumalı medya dosyası varsa fotoğraflar ve Groove uygulamaları performansını da etkileyebilir.
   
 **Varsayılan**: Evet
   
-### <a name="smart-screen"></a>Akıllı Ekran  
+### <a name="smart-screen"></a>Akıllı ekran  
 
-Daha fazla bilgi için [ilke CSP'si - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) bölümüne bakın.  
 
-- **Doğrulanmamış dosyaları yürütülmesini engeller**  
-  Kullanıcının doğrulanmamış dosyalarının çalıştırmasını engelleyin. 
-  - *Yapılandırılmamış* -çalışanlar SmartScreen uyarılarını yoksayarak kötü amaçlı dosyalardan çalıştırın. 
-  - *Evet* – çalışanlar SmartScreen uyarılarını gözardı et ve kötü amaçlı dosyalardan çalıştırın.
+- **Doğrulanmamış dosyaların yürütülmesini engelle**  
+  Kullanıcının doğrulanmamış dosyaları çalıştırmasını engelleyin. 
+  - *Yapılandırılmadı* -çalışanlar SmartScreen uyarılarını yoksayabilir ve kötü amaçlı dosyalar çalıştırabilir. 
+  - *Evet* – çalışanlar SmartScreen uyarılarını yoksaymaz ve kötü amaçlı dosyalar çalıştırabilir.
 
   **Varsayılan**: Evet
 
@@ -1255,190 +1255,190 @@ Daha fazla bilgi için [ilke CSP'si - SmartScreen](https://docs.microsoft.com/wi
   
   **Default**: Yes
  --> 
-- **Uygulamalar ve dosyalar için SmartScreen gerektirir**  
-  BT yöneticilerinin için SmartScreen Windows yapılandırmasına olanak tanır.
+- **Uygulamalar ve dosyalar için SmartScreen gerektir**  
+  BT yöneticilerinin Windows için SmartScreen 'i yapılandırmasına izin verir.
 
   **Varsayılan**: Evet
   
 ### <a name="system"></a>Sistem  
 
-Daha fazla bilgi için [ilke CSP'si - sistem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) Windows belgelerinde.  
+Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-sistem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) .  
 
-- **Sistem önyükleme başlangıç sürücü başlatma**  
-  Bu ilke ayarı erken başlatma kötü amaçlı yazılımdan koruma önyükleme başlatma sürücü tarafından belirlenen bir sınıflandırma göre hangi önyükleme başlatma sürücüler başlatılmadan belirtmenize olanak sağlar. Erken Başlatma kötü amaçlı yazılımdan koruma önyükleme başlatma sürücü, aşağıdaki sınıflandırmaları için her önyükleme başlatma sürücü döndürebilirsiniz: 
-  - *İyi*: İmzalanmış ve kurcalanmadığı.  
-  - *Hatalı* -sürücü kötü amaçlı yazılım olarak belirlenmiştir. Başlatılacak bilinen hatalı sürücüler izin verme öneririz. 
-  - *Hatalı, ancak önyükleme için gerekli*: Sürücü kötü amaçlı yazılım olarak belirlenmiştir, ancak bilgisayar bu sürücü yüklemeden başarıyla önyükleme yapamazsınız. 
-  - *Bilinmeyen* -Bu sürücü için kötü amaçlı yazılım algılama uygulamanız tarafından tarafından kanıtlanan taşınmadığından ve önyükleme başlatma erken başlatma kötü amaçlı yazılımdan koruma sürücüsü tarafından sınıflandırılan edilmemiş.  
+- **Sistem önyüklemesi başlatma sürücüsü başlatma**  
+  Bu ilke ayarı, bir erken başlatılan kötü amaçlı yazılımdan koruma önyükleme başlatma sürücüsüyle belirlenen bir sınıflandırmaya göre hangi önyükleme başlatma sürücülerinin başlatıldığını belirtmenizi sağlar. Erken başlatılan kötü amaçlı yazılımdan koruma önyükleme başlatma sürücüsü her bir önyükleme başlatma sürücüsü için aşağıdaki sınıflandırmaları döndürebilir: 
+  - *İyi*: Sürücü imzalanmış ve kurcalanmadı.  
+  - *Hatalı* -sürücü kötü amaçlı yazılım olarak tanımlandı. Bilinen hatalı sürücülerin başlatılmasına izin vermemenizi öneririz. 
+  - *Hatalı, ancak önyükleme için gerekli*: Sürücü kötü amaçlı yazılım olarak tanımlandı, ancak bilgisayar bu sürücüyü yüklemeden başarıyla önyükleme yapamıyor. 
+  - *Bilinmiyor* -bu sürücü kötü amaçlı yazılım algılama uygulamanız tarafından sınanmamıştır ve erken başlatılan kötü amaçlı yazılımdan koruma önyükleme-başlangıç sürücüsü tarafından sınıflandırılmamıştır.  
 
-  Bu ilke ayarını etkinleştirirseniz, bilgisayarın bir sonraki başlatılışında başlatmak için hangi önyükleme başlatma sürücüleri seçebilirsiniz. Devre dışı bırakır veya bu ilkeyi yapılandırmayın ayarlamak, belirlenen önyükleme başlatma sürücülerini iyi, bilinmeyen veya hatalı önyükleme kritik ancak başlatılır ve başlatılması hatalı belirlenen sürücü atlandı. Kötü amaçlı yazılım algılama uygulamanızı bir erken başlatma kötü amaçlı yazılımdan koruma önyükleme başlatma sürücü içermiyorsa veya erken başlatma kötü amaçlı yazılımdan koruma önyükleme başlatma sürücünüzü devre dışı bırakılırsa, bu ayarın hiçbir etkisi ve tüm önyükleme başlatma sürücüleri başlatılır.  
+  Bu ilke ayarını etkinleştirirseniz, bilgisayarın bir sonraki başlatılışında başlatılacak önyükleme başlatma sürücülerini seçebilirsiniz. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, önyükleme başlangıç sürücüleri Iyi, bilinmiyor veya hatalı olarak belirlenir, ancak önyükleme kritik ayarı başlatılır ve sürücülerin hatalı olduğu belirlenen başlatma atlanır. Kötü amaçlı yazılımdan koruma önyükleme başlatma sürücüsü bir erken başlatma önyüklemesi uygulamasıdır veya erken başlatılan kötü amaçlı yazılımdan koruma önyükleme başlatma sürücünüz devre dışıysa, bu ayarın hiçbir etkisi olmaz ve tüm önyükleme başlatma sürücüleri başlatılır.  
   
-  **Varsayılan**: İyi bilinmeyen ve kritik bozuk
+  **Varsayılan**: İyi bilinmeyen ve hatalı kritik
 
 
 ### <a name="wi-fi"></a>Wi-Fi  
 
-Daha fazla bilgi için [ilke CSP'si - Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-WiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) bölümüne bakın.  
 
-- **Internet paylaşmayı engelle**  
-  İnternet paylaşımı cihazda mümkün olup olmadığını belirtir.  
+- **Internet paylaşımını engelle**  
+  Cihazda İnternet paylaşımının mümkün olup olmadığını belirtir.  
 
   **Varsayılan**: Evet  
 
-- **Blok Wi-Fi etkin noktalarına bağlanmasını otomatik olarak**  
-  İzin vermek veya cihaz için Wi-Fi etkin noktalarına otomatik olarak bağlanmasına izin vermeyin.  
+- **Wi-Fi etkin noktalarına otomatik olarak bağlanmayı engelle**  
+  Cihazın Wi-Fi etkin noktalarına otomatik olarak bağlanmasına izin verin veya izin vermeyin.  
 
   **Varsayılan**: Evet  
   
-### <a name="windows-connection-manager"></a>Windows Bağlantı Yöneticisi  
+### <a name="windows-connection-manager"></a>Windows bağlantı Yöneticisi  
 
-Daha fazla bilgi için [ilke CSP'si - WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) bölümüne bakın.  
 
-- **Etki alanı olmayan ağlara bağlantıyı engelle**  
-  Bu ilke ayarı için bir etki alanı tabanlı ağ ve bir temel etki alanı olmayan bağlanmasını bilgisayarlar engeller. aynı zamanda ağ. Bu ilke ayarı etkinse, bilgisayar üzerinde aşağıdaki koşullara göre otomatik ve el ile ağ bağlantısı denemeleri yanıt verir: 
-  - Bilgisayarın etki alanı olmayan ağlara tüm otomatik bağlantı girişimlerinde bir etki alanı tabanlı ağ zaten bağlı olduğunda otomatik bağlantı girişimleri engellenir. Bilgisayar bir etki alanı dışı tabanlı ağa bağlandığında, etki alanı tabanlı ağlara otomatik bağlantı girişimleri engellenir. 
-  - Ortamı dışındaki Ethernet üzerinden veya etki alanı tabanlı bir ağdaki bilgisayar ya da bir etki alanı olmayan için zaten bağlı olduğunda el ile yapılan bağlantı girişimleri tabanlı ve kullanıcının bu ilkeyi ihlal el ile ek bir ağa bağlantı oluşturmaya çalışır ayarlama, var olan ağ bağlantısını keser ve el ile bağlantıya izin verilir. Bilgisayar zaten bağlı olduğunda ya da Ethernet üzerinden veya etki alanı tabanlı bir ağdaki bir etki alanı dışı tabanlı ve bir kullanıcı bu ilke ayarı ihlal el ile ek bir ağa bağlantı oluşturmaya çalışır, mevcut Ethernet bağlantısı tutulur ve el ile bağlantı denemesi engellendi.  
+- **Etki alanı olmayan ağlarla bağlantıyı engelle**  
+  Bu ilke ayarı, bilgisayarların hem etki alanı tabanlı bir ağa hem de etki alanı tabanlı olmayan bir ağa bağlanmasını engeller. Bu ilke ayarı etkinleştirilirse, bilgisayar aşağıdaki koşullara göre otomatik ve el ile ağ bağlantısı denemesine yanıt verir: 
+  - Otomatik bağlantı girişimleri bilgisayar, etki alanı tabanlı bir ağa zaten bağlıyken, etki alanı olmayan ağlara yönelik tüm otomatik bağlantı girişimleri engellenir. Bilgisayar, etki alanı tabanlı olmayan bir ağa zaten bağlıyken, etki alanı tabanlı ağlara otomatik bağlantı girişimleri engellenir. 
+  - Bilgisayar, etki alanı tabanlı olmayan bir ağa veya Ethernet dışında bir ortama etki alanı tabanlı ağa bağlıyken el ile bağlantı kurmaya çalışır ve Kullanıcı bu ilkeyi ihlal ederek ek bir ağa el ile bağlantı kurmayı dener ayarı, var olan ağ bağlantısının bağlantısı kesilir ve el ile bağlantıya izin verilir. Bilgisayar etki alanı tabanlı olmayan bir ağa veya Ethernet üzerinden etki alanı tabanlı ağa zaten bağlıyken ve Kullanıcı Bu ilke ayarını ihlal ederek ek bir ağa el ile bağlantı kurmayı denediğinde, var olan Ethernet bağlantısı korunur ve el ile bağlantı denemesi engellenir.  
 
-  Bu ilke ayarı yapılandırılmadı veya devre dışı bırakıldı, bilgisayarları aynı anda hem etki alanı ve etki alanı olmayan ağlara bağlanmasına izin verilir.  
+  Bu ilke ayarı yapılandırılmamışsa veya devre dışıysa, bilgisayarların hem etki alanı hem de etki alanı olmayan ağlara aynı anda bağlanmasına izin verilir.  
 
   **Varsayılan**: Enabled
   
 ### <a name="windows-defender"></a>Windows Defender  
 
-Daha fazla bilgi için [ilke CSP'si - Defender'ın](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) bölümüne bakın.  
 
-- **Gelen posta iletilerini tarama**  
-  Erişim izni verdiği veya e-posta taramasına izin vermiyor.
+- **Gelen posta iletilerini Tara**  
+  E-postanın taranarak veya taramaya izin vermez.
   
   **Varsayılan**: Evet  
 
-- **Office uygulamalarının alt işlem türü başlatın**  
-  Office uygulamalarının alt işlemler oluşturmak izin verilmez. Bu, Word, Excel, PowerPoint, OneNote ve erişim içerir. Özellikle başlatın veya kötü amaçlı bir yürütülebilir dosyaları indirmek için Office uygulamalarını kullanma girişimi makrosu tabanlı saldırılar için tipik bir kötü amaçlı yazılım yer alan bir davranış budur.
+- **Office uygulamaları alt işlem türünü Başlat**  
+  Office uygulamalarının alt işlem oluşturmasına izin verilmez. Buna Word, Excel, PowerPoint, OneNote ve Access dahildir. Bu, özellikle de kötü amaçlı yürütülebilir dosyaları başlatmak veya indirmek üzere Office uygulamalarını kullanmaya çalışacak makro tabanlı saldırılar için tipik bir kötü amaçlı yazılım davranışıdır.
   
   **Varsayılan**: Engelle
   
-- **Defender'ın örnek gönderimi onay türü**  
-  Kullanıcı denetimleri, veri göndermek için Windows Defender'ı düzeyinde vermiş olursunuz. Gerekli onay verilmiş, Windows Defender'ın bunları gönderir. Aksi halde (ve kullanıcı tarafından hiç sormak için belirtilen değilse), verileri göndermeden önce (Defender/AllowCloudProtection izin verildiğinde) kullanıcı onay için sormak için kullanıcı Arabirimi başlatılır.
+- **Defender örnek gönderimi onay türü**  
+  Veri göndermek için Windows Defender 'daki Kullanıcı izin düzeyini denetler. Gerekli onay zaten verildiyse, Windows Defender bunları gönderir. Aksi takdirde (ve Kullanıcı hiçbir zaman sorma), veri göndermeden önce Kullanıcı izni (Defender/AllowCloudProtection 'a izin verildiğinde) istemek için kullanıcı ARABIRIMI başlatılır.
   
   **Varsayılan**: Güvenli örnekleri otomatik olarak gönder 
   
 - **İmza güncelleştirme aralığı (saat)**  
-  Defender imza güncelleştirme aralığı saat
+  Defender imza güncelleştirme aralığı saat cinsinden
   
   **Varsayılan**: 4
   
-- **Betiği yük yürütme türü indirildi**  
-  Defender betiği yük yürütme türü indirildi
+- **Betiği indirilen yük yürütme türü**  
+  Defender betiği indirilen yük yürütme türü
   
   **Varsayılan**: Engelle
   
-- **Kimlik bilgisi türü çalmaya engelle**  
-  Windows Defender Credential Guard, parolaları yalnızca ayrıcalıklı sistem yazılımlarının erişebileceği böylece yalıtmak için sanallaştırma tabanlı güvenlik kullanır. Bu parolalara yetkisiz erişim, Pass-the-Hash veya Pass-The-Ticket gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Windows Defender Credential Guard, NTLM parola karmalarını, Kerberos anahtar verme anahtarı ve etki alanı kimlik bilgileri uygulamalar tarafından depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.
+- **Kimlik bilgisi hırsızlığı türünü engelle**  
+  Windows Defender Credential Guard, gizli dizileri yalnızca ayrıcalıklı sistem yazılımlarının erişebileceği şekilde yalıtmak için sanallaştırma tabanlı güvenlik kullanır. Bu parolalara yetkisiz erişim, Pass-the-Hash veya Pass-The-Ticket gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Windows Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.
   
   **Varsayılan**: Etkinleştir
 
 - **E-posta içeriği yürütme türü**  
-  Bu kural, çalıştırmak veya Microsoft Outlook veya Web postası (örneğin, Gmail.com veya Outlook.com) görünen bir e-postasındaki başlatılan engeller aşağıdaki dosya türlerinde engeller: Yürütülebilir (.exe, .dll veya .scr) komut dosyaları (örneğin, bir PowerShell .ps, VisualBasic .vbs veya .js dosyası JavaScript) dosyaları komut arşiv dosyaları.
+  Bu kural, aşağıdaki dosya türlerinin Microsoft Outlook veya Web postasından 'de (gmail.com veya Outlook.com gibi) görülen bir e-postadan çalıştırılmasını ya da başlatılmasını engeller: Yürütülebilir dosyalar (. exe,. dll veya. SCR) komut dosyaları (örneğin, PowerShell. PS, VisualBasic. vbs veya JavaScript. js dosyası) betik Arşivi dosyaları.
   
   **Varsayılan**: Engelle
   
-- **Ağ koruması türü**  
-  Bu ilke, ağ Koruması (Denetim/engelleme) açma veya kapatma sağlar, Windows Defender Exploit Guard. Ağ koruması, Windows Defender Exploit erişirken kimlik avı kuşku verici, siteleri yararlanma barındırma ve kötü amaçlı içerik herhangi bir uygulamadan Internet'te kullanan çalışanların koruyan koruma özelliğidir. Bu, üçüncü taraf tarayıcılar tehlikeli sitelere bağlanmasına engel içerir. Değer, bir tamsayı türüdür. Bu ayarı etkinleştirirseniz, ağ koruması açıktır ve çalışanlar, devre dışı bırakamazlar. Davranışını aşağıdaki seçeneklere göre denetlenebilir: Blok ve denetim. Bu ilke "Engelle" seçeneğiyle etkinleştirirseniz, kullanıcılar ve uygulamalar tehlikeli etki alanlarına bağlanmasını engellenir. Windows Defender Güvenlik Merkezi'nde bu etkinliği görebilirsiniz. Bu ilke "Denetleme" seçeneğiyle etkinleştirirseniz, kullanıcı/uygulama tehlikeli etki alanlarına bağlanmasını engellenmeyecektir. Ancak, bu etkinlik Windows Defender Güvenlik Merkezi, yine de görürsünüz. Bu ilke devre dışı bırakırsanız, kullanıcı/uygulama tehlikeli etki alanlarına bağlanmasını engellenmeyecektir. Windows Defender Güvenlik Merkezi'nde tüm ağ etkinliği görmemeniz. Bu ilke yapılandırmazsanız, ağ engelleme, varsayılan olarak devre dışıdır.
+- **Ağ koruma türü**  
+  Bu ilke, Windows Defender Exploit Guard 'da ağ korumasını (engelleme/denetim) açmanıza veya kapatmanıza olanak sağlar. Ağ koruması, herhangi bir uygulamanın kimlik avı dolandırıcılığı, yararlanma ve barındırma siteleri ve Internet 'teki kötü amaçlı içeriklere erişmesini koruyan bir Windows Defender Exploit Guard özelliğidir. Bu, üçüncü taraf tarayıcıların tehlikeli sitelere bağlanmasını engellemeyi de kapsar. Değer türü tamsayı. Bu ayarı etkinleştirirseniz, ağ koruması açıktır ve çalışanlar bu özelliği kapatamaz. Davranışı aşağıdaki seçenekler tarafından denetlenebilir: Engelleyin ve denetleyin. Bu ilkeyi "engelle" seçeneği ile etkinleştirirseniz, kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanması engellenir. Bu etkinliği Windows Defender Güvenlik Merkezi 'nde görebilirsiniz. Bu ilkeyi "Denetim" seçeneği ile etkinleştirirseniz, kullanıcıların/uygulamaların tehlikeli etki alanlarına bağlanması engellenmez. Bununla birlikte, yine de bu etkinliği Windows Defender Güvenlik Merkezi 'nde görürsünüz. Bu ilkeyi devre dışı bırakırsanız, kullanıcıların/uygulamaların tehlikeli etki alanlarına bağlanması engellenmez. Windows Defender Güvenlik Merkezi 'nde herhangi bir ağ etkinliği görmezsiniz. Bu ilkeyi yapılandırmazsanız, ağ engelleme varsayılan olarak devre dışıdır.
   
   **Varsayılan**: Etkinleştir
   
-- **Defender'ın tarama gününü zamanla**  
-  Tarama gününü zamanla Defender.
+- **Defender Tarama günü zamanlaması**  
+  Defender tarama gününü zamanlayamıyor.
   
-  **Varsayılan**: her gün
+  **Varsayılan**: Her
   
-- **Bulut teslimli koruma**  
-  En iyi bilgisayarınızı korumak için Windows Defender bilgileri Microsoft'a bulduğu sorunları hakkında gönderir. Microsoft bu bilgileri analiz edin, sizin ve diğer müşterilerin etkileyen sorunlar hakkında daha fazla bilgi edinmek ve geliştirilmiş çözümler sunar.
+- **Buluta teslim edilen koruma**  
+  Bilgisayarınızı en iyi şekilde korumak için Windows Defender, bulduğu sorunlar hakkında Microsoft 'a bilgi gönderir. Microsoft bu bilgileri analiz eder, sizi ve diğer müşterileri etkileyen sorunlar hakkında daha fazla bilgi edinin ve geliştirilmiş çözümler sunar.
   
   **Varsayılan**:  Evet  
 
-- **Defender'ın uygulama eylemi olası istenmeyen**  
-  Windows Defender virüsten koruma olası istenmeyen uygulama (PUA) Koruması özelliği, tanımlamak ve indiriliyor ve yükleniyor. ağınızdaki Uç noktalara Koruyucu'daki engelleyin. Bu uygulamalar, virüsler, kötü amaçlı yazılım veya diğer tür tehditlerden değerlendirilmeyen, ancak olumsuz etkileyen performanslarını veya kullanan uç noktalarda eylemler gerçekleştirebilir. PUA düşük itibarlı sahip olduğu kabul edilir ve uygulamalar için de başvurabilir. Tipik PUA davranışını içerir: Sürücü web tarayıcıları ve kayıt defteri iyileştiricileri Ad ekleme paketleme yazılımların çeşitli türleri, hataları düzeltin, ancak uç noktada kalır ve değişiklik ya da en iyi duruma getirme ("standart dışı virüsten koruma" programları olarak da bilinir) sağlamak için istek ödeme sorunları algılayın. Bu uygulamalar riskini artırabilir ağınızı kötü amaçlı yazılım bulaşması tanımlamak için daha sıkı olmasını kötü amaçlı yazılımdan Etkilenme neden ve uygulamaları temizleme, BT kaynaklarının boşa harcanmasına neden.  
+- **Defender istenmeyebilecek uygulama eylemi**  
+  Windows Defender virüsten koruma 'daki istenmeyebilecek uygulama (PUA) koruması özelliği, PUAs 'yi ağınızdaki uç noktalara indirme ve yükleme ile tanımlayabilir ve engelleyebilir. Bu uygulamalar virüsler, kötü amaçlı yazılım veya diğer tehdit türleri olarak kabul edilmez, ancak performansını veya kullanımını olumsuz etkileyecek uç noktalar üzerinde eylemler gerçekleştirebilir. PUA, zayıf bir saygınlığa sahip olarak kabul edilen uygulamalara da başvurabilir. Tipik PUA davranışı şunları içerir: Web tarayıcıları sürücü ve kayıt defteri iyileştiricilerini, sorunları algılayan, hataları gidermek için ödeme talep eden, ancak uç noktada kalacak ve herhangi bir değişiklik ya da iyileştirmeler ("standart dışı virüsten koruma" programları olarak da bilinir) sunan çeşitli yazılım paket türleri. Bu uygulamalar, ağınıza kötü amaçlı yazılımdan etkilenme riskini artırabilir, kötü amaçlı yazılımdan bulaşmaları daha zor hale gelir ve uygulamaları temizlemede BT kaynaklarını boşa çıkarabilir.  
   
   **Varsayılan**: Engelle  
 
-- **Betik gizlenmiş makro kod türü**  
-  Kötü amaçlı yazılım ve diğer tehditlerden karartmak veya kötü amaçlı kodlarını bazı komut dosyalarında gizleme girişiminde bulunabilir. Bu kural çalışmasını görünen gizlenmiş olabilir önler.
+- **Betik gizleme makro kod türü**  
+  Kötü amaçlı yazılım ve diğer tehditler bazı betik dosyalarında kötü amaçlı kodlarını gizlemeyi veya gizlemeyi deneyebilir. Bu kural, görünmeyen görünen betiklerin çalışmasını engeller.
   
   **Varsayılan**: Engelle
   
-- **Tam tarama sırasında Çıkarılabilir sürücüleri tara**  
-  Windows Defender'ı tam tarama sırasında Çıkarılabilir sürücüleri (örneğin flash sürücü) kötü amaçlı ve istenmeyen yazılım taraması sağlar. Windows Defender virüsten koruma USB cihazları yürütmeden önce tüm dosyaları tarar.
+- **Tam tarama sırasında çıkarılabilir sürücüleri tarama**  
+  Windows Defender 'ın, tam tarama sırasında çıkarılabilir sürücülerde (örneğin, Flash sürücüler) kötü amaçlı ve istenmeyen yazılımları taramasına izin verir. Windows Defender virüsten koruma, yürütmeden önce USB cihazlarındaki tüm dosyaları tarar.
   
   **Varsayılan**: Evet  
   
 - **Arşiv dosyalarını tara**  
-  Defender'ın tarama arşiv dosyaları.
+  Defender arşiv dosyalarını tarar.
   
   **Varsayılan**: Evet
   
 - **Davranış izleme**  
-  Erişim izni verdiği veya işlevselliği Windows Defender davranış izlemeye izin vermiyor. Windows 10'da katıştırılmış, algılayıcınız toplamak ve işletim sisteminden davranış sinyalleri işleyebilir ve yalıtılmış, özel bulut Örneğiniz için Microsoft Defender ATP bu sensör verilerini gönderir.
+  Windows Defender davranış Izleme işlevselliğine izin verir veya vermez. Windows 10 ' da gömülü olan bu sensörler, işletim sisteminden davranış sinyallerini toplayıp işler ve bu algılayıcı verilerini Microsoft Defender ATP 'nin özel, yalıtılmış, bulut örneğine gönderir.
   
   **Varsayılan**: Evet
 
 - **Ağ klasörlerinden açılan dosyaları tara**  
-  Dosya salt okunur ise kullanıcı Algılanan kötü amaçlı yazılımı kaldırmak mümkün olmayacaktır.
+  Dosyalar salt okunurdur, Kullanıcı algılanan herhangi bir kötü amaçlı yazılımı kaldıramayacaktır.
   
   **Varsayılan**: Evet
 
 - **Güvenilmeyen USB işlem türü**  
-  Bu kural, yöneticilerin imzalanmamış veya güvenilmeyen yürütülebilir dosyalar SD kartları gibi USB çıkarılabilir sürücü çalışmasını engelleyebilir.
+  Bu kuralla, Yöneticiler, imzasız veya güvenilmeyen yürütülebilir dosyaların SD kartları dahil USB çıkarılabilir sürücülerden çalışmasını engelleyebilir.
   
   **Varsayılan**: Engelle
   
-- **Ekleme türü Office uygulamalarının diğer işlem**  
-  Word, Excel, PowerPoint ve OneNote dahil olmak üzere, office uygulamalarının başka işlemlere kod eklemesini mümkün olmayacaktır. Bu genellikle, kötü amaçlı yazılım tarafından virüsten koruma tarama motorları etkinliğini gizlemek girişimi kötü amaçlı kod çalıştırmak için kullanılır.
+- **Office uygulamaları diğer işlem ekleme türü**  
+  Word, Excel, PowerPoint ve OneNote dahil Office uygulamaları diğer işlemlere kod ekleyemeyecektir. Bu genellikle kötü amaçlı yazılım tarafından virüsten koruma tarama altyapılarından etkinliği gizleme girişiminde kötü amaçlı kod çalıştırmak için kullanılır.
   
   **Varsayılan**:  Engelle
   
-- **Office makro kodu Win32 içeri aktarmalar türü izin ver**  
-  Kötü amaçlı yazılım makro kodu'nde Office dosyaları almak ve daha fazla bulaşmasını sistem genelinde izin vermek için API çağrıları gerçekleştirmek için kullanılabilen Win32 DLL'leri yüklemek için kullanabilirsiniz. Bu kural, Win32 DLL'leri içe aktarabilir makro kodu içeren bir Office dosyaları engellemek çalışır. Bu, Word, Excel, PowerPoint ve OneNote içerir.
+- **Office makro kodu Win32 içeri aktarmalar türüne izin ver**  
+  Kötü amaçlı yazılım, sistem genelinde daha fazla bulaşma sağlamak üzere API çağrıları yapmak için kullanılabilecek Win32 DLL 'Lerini içeri aktarmak ve yüklemek üzere Office dosyalarındaki makro kodunu kullanabilir. Bu kural, Win32 DLL 'Leri içeri aktarabilecek makro kodu içeren Office dosyalarını engellemeye çalışır. Buna Word, Excel, PowerPoint ve OneNote dahildir.
   
   **Varsayılan**: Engelle  
   
-- **Defender'ın bulut engelleme düzeyi**  
-  Defender'ın bulut blok düzeyi.
+- **Defender bulut blok düzeyi**  
+  Defender bulut blok düzeyi.
   
   **Varsayılan**: Yapılandırılmadı
 
 - **Gerçek zamanlı izleme**  
-  Defender'ın gerçek zamanlı izlemeyi gerektirir.
+  Defender gerçek zamanlı izleme gerektirir.
   
   **Varsayılan**: Evet
   
 - **Office uygulamaları yürütülebilir içerik oluşturma veya başlatma türü**  
-  Bu kural, şüpheli ve kötü amaçlı eklentiler ve oluşturan veya yürütülebilir dosya başlatmak betikleri (Uzantılar) tarafından kullanılan tipik davranışları hedefler. Tipik bir kötü amaçlı yazılım yöntem budur. Office uygulamaları tarafından kullanılan uzantıları engellenir. Genellikle bu uzantılar belirli görevleri otomatikleştirin veya kullanıcı tarafından oluşturulan eklenti özellikleri sağlayan komut dosyaları çalıştırmak için Windows Scripting Host (.wsh dosyaları) kullanın
+  Bu kural, şüpheli ve kötü amaçlı eklentiler ve yürütülebilir dosyalar oluşturan ya da Başlatan olağan dışı eklentiler ve betikler (Uzantılar) tarafından kullanılan tipik davranışları hedefler. Bu tipik bir kötü amaçlı yazılım tekniğidir. Uzantıların Office uygulamaları tarafından kullanılması engellenir. Genellikle bu uzantılar, belirli görevleri otomatikleştiren betikleri çalıştırmak veya Kullanıcı tarafından oluşturulan eklenti özellikleri sağlamak için Windows komut dosyası konağını (. WSH dosyaları) kullanır
   
   **Varsayılan**: Engelle
 
-### <a name="windows-ink-workspace"></a>Windows Ink çalışma  
+### <a name="windows-ink-workspace"></a>Windows Ink çalışma alanı  
 
-Daha fazla bilgi için [ilke CSP'si - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) bölümüne bakın.  
 
 - **Mürekkep çalışma alanı**  
   Kullanıcının Ink çalışma alanına erişmesine izin verilip verilmeyeceğini belirtir. 
-  - *Devre dışı* -mürekkep çalışma alanı erişimi devre dışı bırakıldı. Bu özellik devre dışıdır.
-  - *Etkin* - mürekkep çalışma alanı özelliğin açık, ancak kullanıcının bunu kilit ekranının üstünde erişemez.
-  - *Yapılandırılmamış* - mürekkep çalışma alanı özelliği açıktır ve kullanıcının bunu kilit ekranının üstünde kullanabilirsiniz.  
+  - *Devre dışı* -mürekkep çalışma alanına erişim devre dışı bırakıldı. Özellik kapalı.
+  - *Etkin* -mürekkep çalışma alanı özelliği açıktır, ancak kullanıcı kilit ekranının üzerine erişemez.
+  - *Yapılandırılmadı* -mürekkep çalışma alanı özelliği açıktır ve Kullanıcı onu kilit ekranının üzerinde kullanabilir.  
 
   **Varsayılan**: Enabled
  
 ### <a name="windows-powershell"></a>Windows PowerShell  
 
-Daha fazla bilgi için [ilke CSP'si - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) Windows belgelerinde.  
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) bölümüne bakın.  
 
-- **Power shell Kabuk betiği block günlüğe kaydetme**  
-  Bu ilke ayarı, Microsoft-Windows-PowerShell/Operational Olay günlüğüne tüm PowerShell Betiği giriş günlüğü etkinleştirir. Bu ilke ayarını etkinleştirirseniz, Windows PowerShell komutları, komut dosyası blokları, İşlevler ve betikleri - işlenmesini etkileşimli olarak veya Otomasyon aracılığıyla çağrılan olmadığını günlüğe kaydeder. Bu ilke ayarını devre dışı bırakırsanız, PowerShell Betiği giriş günlüğünü devre dışı bırakıldı. Betik bloğu çağırma günlüğü etkinleştirirseniz, PowerShell, ayrıca komutu, betik bloğu, işlev veya betiği başlatıldığında veya durdurulduğunda olayları kaydeder. Çağrı günlüğü etkinleştirme, yüksek hacimli olay günlükleri oluşturur. Not: Bu ilke ayarı, Bilgisayar Yapılandırması hem Kullanıcı Yapılandırması Grup İlkesi Düzenleyicisi'nde altında bulunmaktadır. Bilgisayar Yapılandırma İlkesi ayarı üzerinden Kullanıcı Yapılandırması ilke ayarı öncelik kazanır.
+- **Power Shell kabuğu betik bloğu günlüğü**  
+  Bu ilke ayarı, tüm PowerShell betiği girişinin Microsoft-Windows-PowerShell/Işletimsel olay günlüğüne kaydedilmesini sağlar. Bu ilke ayarını etkinleştirirseniz, Windows PowerShell komutların, betik bloklarının, işlevlerin ve betiklerin işlenmesini ister etkileşimli olarak, ister Otomasyon aracılığıyla günlüğe kaydeder. Bu ilke ayarını devre dışı bırakırsanız, PowerShell betik girişinin günlüğe kaydı devre dışı bırakılır. Betik bloğu çağırma günlüğünü etkinleştirirseniz, PowerShell Ayrıca bir komut, betik bloğu, işlev veya komut dosyası başlatıldığında veya durdurulduğunda olayları günlüğe kaydeder. Çağırma günlüğünü etkinleştirmek, yüksek miktarda olay günlüğü oluşturur. Not: Bu ilke ayarı, grup ilkesi düzenleyicisinde hem bilgisayar yapılandırması hem de Kullanıcı Yapılandırması altında bulunur. Bilgisayar yapılandırma ilkesi ayarı, Kullanıcı yapılandırma ilkesi ayarından önceliklidir.
   
   **Varsayılan**: Enabled
  
 ## <a name="next-steps"></a>Sonraki adımlar  
 
-[Geçerli bir temel sürümünü görüntüleme](security-baseline-settings-mdm.md)  
-[Yeni bir temel sürüm kullanmak üzere yükseltme profili](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[Geçerli temel sürümü görüntüle](security-baseline-settings-mdm.md)  
+[Profilleri yeni bir temel sürümü kullanacak şekilde yükselt](security-baselines.md#change-the-baseline-instance-for-a-profile)

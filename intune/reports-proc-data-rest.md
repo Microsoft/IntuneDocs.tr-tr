@@ -1,7 +1,7 @@
 ---
 title: REST istemcisi ile Veri Ambarı API’sinden veri alma
 titleSuffix: Microsoft Intune
-description: Bu konu, Microsoft Intune veri bir RESTful API'si kullanarak ambarı API'sinden veri almak açıklar.
+description: Bu konu başlığı altında, bir yeniden oluşturma API 'SI kullanılarak Microsoft Intune veri ambarından verilerin nasıl alınacağını açıklamaktadır.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 8090e9906cc8e3b3da25b21343093dd2f656afa6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558544"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735796"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
 
@@ -94,11 +94,11 @@ Postman kullanarak REST araması yapmak için aşağıdaki bilgilere ihtiyacın�
 
 Uç nokta da gerekir. Veri Ambarı uç noktanızı almak için özel akış URL’si gereklidir. OData uç noktasını Veri Ambarı bölmesinden alabilirsiniz.
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Açık **Intune veri ambarı** altındaki veri ambarı bağlantıyı seçerek **diğer görevleri** sağ alt tarafında **Intune - genel bakış** dikey penceresi.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+3. **Microsoft Intune-genel bakış** dikey penceresinin sağ tarafındaki **diğer görevler** altında bulunan veri ambarı bağlantısını seçerek **Intune veri ambarı** bölmesini açın.
 4. **Üçüncü taraf raporlama hizmetleri kullan** altında özel akış URL’sini kopyalayın. Bu, şuna benzer olmalıdır: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
-Uç nokta şu biçimdedir: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
+Uç nokta aşağıdaki biçimi izler:`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
 Örneğin **tarihler** varlığı şuna benzerdir: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
@@ -134,7 +134,7 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 
 12. **Belirteç İste**’ye tıklayın.
 
-    ![Bilgi için erişim belirteci](./media/reports-postman_getnewtoken.png)
+    ![Erişim belirteci için bilgiler](./media/reports-postman_getnewtoken.png)
 
 13. Active AD yetkilendirme sayfasında kimlik bilgilerinizi girin. Postman’deki belirteçler listesinde artık `Bearer` adlı belirteç de yer alır.
 14. **Belirteç Kullan**’a tıklayın. Üst bilgiler listesi, yeni Yetkilendirme anahtar değeri ve `Bearer <your-authorization-token>` değerini barındırır.
@@ -144,7 +144,7 @@ Postman için yeni bir erişim belirteci almak üzere Azure AD yetkilendirme URL
 1. **Gönder**’i seçin.
 2. Dönüş verileri Postman yanıt gövdesi içinde görüntülenir.
 
-    ![Postman istemci durum 200 Tamam eşittir](./media/reports-postman_200OK.png)
+    ![Postman istemci durumu 200 OK 'e eşit](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Intune Veri Ambarı API’sinden veri almak için bir REST istemcisi (C#) oluşturma
 
@@ -161,9 +161,10 @@ Aşağıdaki örnek, bir basit REST istemcisi içerir. Kod, .Net kitaplığında
 6. NuGet paket lisansını kabul etmek için **Kabul Ediyorum**’a tıklayın.
 7. Çözüm Gezgini’nde `Program.cs` öğesini açın.
 
-    ![Progam.cs ve Visual Studio'daki Çözüm Gezgini'nde](./media/reports-get_rest_data_in.png)
+    ![Visual Studio 'da Program.cs ve Çözüm Gezgini](./media/reports-get_rest_data_in.png)
 
-8. Değiştirin *Program.cs* aşağıdaki kod ile:  
+8. *Program.cs* içindeki kodu aşağıdaki kodla değiştirin:  
+
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

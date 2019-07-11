@@ -1,7 +1,7 @@
 ---
-title: Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları ıntune'a kaydetme
+title: Android kurumsal adanmış cihazları veya tam olarak yönetilen cihazları Intune 'A kaydetme
 titleSuffix: Microsoft Intune
-description: Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları ıntune'a kaydetmeyi öğrenin.
+description: Android kurumsal adanmış cihazları veya tam olarak yönetilen cihazları Intune 'a kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,33 +17,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d81f28b03a41bcdc8b6c9f18ef58e6a42346ba7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a4f81f29fea9008c7dd47902812141db8448bc3
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049974"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735710"
 ---
-# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Ayrılmış Android kuruluş cihazlarının veya tam olarak yönetilen cihazları (Önizleme) kaydetme
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Android kurumsal adanmış cihazlarınızı veya tam olarak yönetilen cihazlarınızı kaydetme (Önizleme)
 
-Ayarladıktan sonra [Android Kurumsal adanmış cihazlar](android-kiosk-enroll.md) veya [tam olarak yönetilen cihazlar](android-fully-managed-enroll.md) , Intune'da bu cihazları kaydedebilirsiniz. Android Kurumsal cihazlarınızı nasıl kaydedeceğiniz, işletim sistemine bağlıdır.
+[Android kurumsal adanmış cihazlarınızı](android-kiosk-enroll.md) veya [tam olarak yönetilen cihazları](android-fully-managed-enroll.md) Intune 'da ayarladıktan sonra, cihazları kaydedebilirsiniz. Android kurumsal cihazlarınızı kaydetme, işletim sistemine bağlıdır.
 
-| Kayıt yöntemi | Ayrılmış ve tamamen yönetilen cihazlar için en düşük Android işletim sistemi sürümü |
+| Kayıt yöntemi | Adanmış ve tam olarak yönetilen cihazlar için en düşük Android işletim sistemi sürümü |
 | ----- | ----- |
 | Yakın Alan İletişimi | 5.1 |
 | Belirteç girişi | 6.0 |
 | QR kodu | 7.0 |
 | Zero Touch  | 8.0\* |
 
-\* Katılımcı üreticileri üzerinde.
+\*Katılımcı üreticilerle.
 
 ### <a name="enroll-by-using-near-field-communication-nfc"></a>Yakın Alan İletişimi (NFC) kullanarak kaydetme
 
-NFC destekleyen cihazlar için özel olarak biçimlendirilmiş bir NFC etiketinin oluşturarak cihazlarınızı sağlayabilir. Kendi uygulamanızı veya NFC etiketi oluşturan bir araç kullanabilirsiniz. Daha fazla bilgi için [C tabanlı Android Kurumsal cihaz kaydı Intune](https://blogs.technet.microsoft.com/cbernier/2018/10/15/nfc-based-android-enterprise-device-enrollment-with-microsoft-intune/) ve [Google'nın Android Yönetimi API belgelerine](https://developers.google.com/android/management/provision-device#nfc_method).
+NFC 'yi destekleyen cihazlarda, özel olarak biçimlendirilmiş bir NFC etiketi oluşturarak cihazlarınızı sağlayabilirsiniz. Kendi uygulamanızı veya NFC etiketi oluşturan bir araç kullanabilirsiniz. Daha fazla bilgi için, bkz. Microsoft Intune ve [Google 'ın Android yönetim API 'si belgeleri](https://developers.google.com/android/management/provision-device#nfc_method) [Ile C tabanlı Android kurumsal cihaz kaydı](https://blogs.technet.microsoft.com/cbernier/2018/10/15/nfc-based-android-enterprise-device-enrollment-with-microsoft-intune/) .
 
 ### <a name="enroll-by-using-a-token"></a>Belirteç kullanarak kaydetme
 
-Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. Android 6.1 ve üzeri sürümleri kullanılırken tarama QR kodunu da yararlanabilir **afw #setup** kayıt yöntemi.
+Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. Ayrıca, **AFW # kurulum** kayıt yöntemi kullanılırken, Android 6,1 ve ÜZERI sürümler QR kod taramasını de kullanabilir.
 
 1. Silinmiş cihazınızı açın.
 2. **Hoş Geldiniz** ekranında dili seçin.
@@ -74,19 +74,20 @@ Google’ın Zero Touch sistemini kullanmak için cihazın bunu destekliyor olma
 2. EMM DPC açılan menüsünde **Microsoft Intune**’u seçin.
 3. Google’ın Zero Touch konsolunda, aşağıdaki JSON’ı kopyalayıp DPC ek özellikler alanına yapıştırın. *YourEnrollmentToken* dizesini, kayıt profilinizin parçası olarak oluşturduğunuz kayıt belirteciyle değiştirin. Kayıt belirtecinin başına ve sonuna çift tırnak koymayı unutmayın.
 
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+    ```json
+    { 
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
+    
+        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
+            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+        } 
     } 
-} 
-```
+    ```
+
 4. **Uygula**'yı seçin.
 
 

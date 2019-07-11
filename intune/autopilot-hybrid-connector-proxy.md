@@ -1,6 +1,6 @@
 ---
 title: Active Directory için Intune Bağlayıcısı için proxy ayarlarını yapılandırma
-description: Mevcut şirket içi proxy sunucuları ile çalışmak Active Directory için Intune bağlayıcısının nasıl yapılandırılacağı ele alınmaktadır.
+description: Active Directory Intune bağlayıcısının mevcut şirket içi ara sunucularla çalışması için nasıl yapılandırılacağını ele alır.
 keywords: ''
 author: master11218
 ms.author: tanvira
@@ -16,28 +16,28 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f91ec3124d8fab067ec32194a68508762c6cef33
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043554"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735266"
 ---
-# <a name="work-with-existing-on-premises-proxy-servers"></a>Mevcut şirket içi proxy sunucuları ile çalışma
+# <a name="work-with-existing-on-premises-proxy-servers"></a>Mevcut şirket içi proxy sunucularıyla çalışma
 
-Bu makalede, Intune bağlayıcısının giden proxy sunucuları ile çalışmak Active Directory için nasıl yapılandırılacağı açıklanmaktadır. Var olan proxy sahip ağ ortamları sahip müşteriler için tasarlanmıştır.
+Bu makalede, Active Directory için Intune bağlayıcısının giden proxy sunucularıyla çalışacak şekilde nasıl yapılandırılacağı açıklanmaktadır. Mevcut proxy 'leri olan ağ ortamları olan müşterilere yöneliktir.
 
-Bağlayıcıları nasıl çalışır hakkında daha fazla bilgi için bkz. [anlamak Azure AD uygulama ara sunucusu bağlayıcıları](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors).
+Bağlayıcıların nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Azure AD uygulama ara sunucusu bağlayıcıları anlama](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors).
 
-## <a name="bypass-outbound-proxies"></a>Giden proxy atlama
+## <a name="bypass-outbound-proxies"></a>Giden proxy 'leri atla
 
-Bağlayıcılar, giden isteklerde temel işletim sistemi bileşeni vardır. Bu bileşenler, Web Proxy Otomatik Bulma (WPAD) kullanarak ağ üzerinde bir proxy sunucusunu bulmak otomatik olarak deneyin.
+Bağlayıcılar, giden istekleri yapan temel işletim sistemi bileşenlerine sahiptir. Bu bileşenler, Web proxy otomatik bulma (WPAD) kullanarak ağ üzerindeki bir proxy sunucusunu otomatik olarak bulmayı dener.
 
-İşletim sistemi bileşenleri wpad.domainsuffix için DNS araması gerçekleştirerek bir ara sunucu bulmaya. DNS Arama çözümlenirse, bir HTTP isteği wpad.dat IP adresine yapılır. Bu istek proxy yapılandırma betiği, ortamınızdaki olur. Bağlayıcı, bir giden proxy sunucusunun seçmek için bu betiği kullanır. Ancak, bağlayıcı trafik yine de proxy gereken ek yapılandırma ayarları nedeniyle geçmesine değil.
+İşletim sistemi bileşenleri, WPAD. domainsuffix için bir DNS araması gerçekleştirerek bir ara sunucu bulmaya çalışır. Arama DNS 'de çözümlenirse, WPAD. dat için IP adresine bir HTTP isteği yapılır. Bu istek, ortamınızda ara sunucu yapılandırma betiği haline gelir. Bağlayıcı, giden bir ara sunucu seçmek için bu betiği kullanır. Bununla birlikte, ara sunucuda gereken ek yapılandırma ayarları nedeniyle bağlayıcı trafiği yine de gidemeyebilir.
 
-Azure hizmetlerine doğrudan bağlantı kullandığından emin olmak için şirket içi proxy atlama bağlayıcıyı yapılandırabilirsiniz. Korumak için daha az bir yapılandırma olduğunu gösterdiğinden, ağ ilkesi, izin verdiği sürece bu yaklaşım önerilir.
+Bağlayıcıyı, Azure hizmetlerine doğrudan bağlantı kullandığından emin olmak için şirket içi ara sunucusunu atlayacak şekilde yapılandırabilirsiniz. Bu yaklaşım, Ağ ilkeniz izin verdiği sürece, devam etmek için daha az bir yapılandırmaya sahip olduğunuz anlamına gelir.
 
-Bağlayıcı için giden bağlantı proxy'si kullanımını devre dışı bırakmak için Düzenle: \Program Intune\ODJConnector\ODJConnectorUI\ODJConnectorUI.exe.config dosya ve bu kod örneğinde gösterilen bölümde proxy bağlantı noktası ve proxy adresi ekleyin:
+Bağlayıcı için giden proxy kullanımını devre dışı bırakmak için: \Program Files\Microsoft Intune\ODJConnector\ODJConnectorUI\ODJConnectorUI.exe.config dosyasını düzenleyin ve bu kod örneğinde gösterilen bölümünde proxy adresini ve proxy bağlantı noktasını ekleyin:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -64,7 +64,8 @@ Bağlayıcı için giden bağlantı proxy'si kullanımını devre dışı bırak
     </appSettings>
 </configuration>
 ```
-Connector Updater Hizmeti ayrıca Proxy'yi atlar için benzer bir değişiklik için C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config olun.
+
+Bağlayıcı Güncelleştiricisi hizmetinin proxy 'yi de atlayacak emin olmak için, C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config. 'de benzer bir değişiklik yapın
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -83,17 +84,17 @@ Connector Updater Hizmeti ayrıca Proxy'yi atlar için benzer bir değişiklik i
 </configuration>
 ```
 
-Varsayılan .config dosyasına geri yapmanız durumunda orijinal dosyalarının kopyalarını emin olun.
+Varsayılan. config dosyalarına döndürmeniz gerekiyorsa, özgün dosyaların kopyalarını aldığınızdan emin olun.
 
-Yapılandırma dosyalarını oluşturduktan sonra Intune bağlayıcı hizmetini yeniden başlatmanız gerekir. 
+Yapılandırma dosyaları değiştirildikten sonra, Intune Bağlayıcısı hizmetini yeniden başlatmanız gerekir. 
 
-1. Açık **services.msc**.
-2. Bulmak ve seçmek **Intune kullandığı hizmet**.
+1. **Services. msc**dosyasını açın.
+2. **Intune ODJConnector hizmetini**bulun ve seçin.
 3. Seçin **yeniden**.
 
-![Hizmeti yeniden başlatma işleminin ekran görüntüsü](media/autopilot-hybrid-connector-proxy/service-restart.png)
+![Hizmetin yeniden başlatılması ekran görüntüsü](media/autopilot-hybrid-connector-proxy/service-restart.png)
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Cihazlarınızı yönetme](device-management.md)
+[Cihazlarınızı yönetin](device-management.md)

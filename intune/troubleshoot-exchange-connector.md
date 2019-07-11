@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd6d24b5a897c5a6bcd075da111fa579d8d74154
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044565"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735737"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune şirket içi Exchange bağlayıcısında sorun giderme
 
@@ -32,17 +32,17 @@ Bu makale, Intune şirket içi Exchange bağlayıcısı ile ilgili sorunların n
 
 [Intune şirket içi Exchange bağlayıcısı kurulumunu](exchange-connector-install.md) denetleyerek bağlayıcının doğru yapılandırıldığından emin olun. Bazı yaygın görülen sorunlar aşağıda verilmiştir. Düzeltme yaptıktan sonra sorunun çözümlenmiş olup olmadığına bakın.
 
- - Microsoft Intune Exchange Connector iletişim kutusunda, [gerekli Windows PowerShell Exchange cmdlet’lerini](exchange-connector-install.md#exchange-cmdlet-requirements) yürütmek için uygun izinlere sahip bir kullanıcı hesabı belirttiğinizden emin olun.
+- Microsoft Intune Exchange Connector iletişim kutusunda, [gerekli Windows PowerShell Exchange cmdlet’lerini](exchange-connector-install.md#exchange-cmdlet-requirements) yürütmek için uygun izinlere sahip bir kullanıcı hesabı belirttiğinizden emin olun.
 - Bildirimleri etkinleştirin ve bir bildirim hesabı belirtin.
- - Exchange Connector’ı yapılandırırken, bir Exchange bağlayıcısı barındıran sunucuya olabildiğince yakın bir İstemci Erişimi Sunucusu (CAS) belirtin. CAS ile Exchange bağlayıcısı arasındaki iletişim gecikmesi, özellikle Exchange Online Dedicated kullanılırken cihaz bulmayı geciktirebilir.
- - Yeni kaydedilen bir cihazın kullanıcısına sağlanacak erişim, Exchange bağlayıcısı ile Exchange CAS eşitlenene kadar gecikebilir. Tam eşitleme günde bir kez gerçekleşirken delta eşitlemesi (hızlı eşitleme) birkaç kez gerçekleşir.  Gecikmeleri olabildiğince azaltmak için [bir hızlı veya tam eşitlemeyi el ile zorlayabilirsiniz](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync).
+- Exchange Connector’ı yapılandırırken, bir Exchange bağlayıcısı barındıran sunucuya olabildiğince yakın bir İstemci Erişimi Sunucusu (CAS) belirtin. CAS ile Exchange bağlayıcısı arasındaki iletişim gecikmesi, özellikle Exchange Online Dedicated kullanılırken cihaz bulmayı geciktirebilir.
+- Yeni kaydedilen bir cihazın kullanıcısına sağlanacak erişim, Exchange bağlayıcısı ile Exchange CAS eşitlenene kadar gecikebilir. Tam eşitleme günde bir kez gerçekleşirken delta eşitlemesi (hızlı eşitleme) birkaç kez gerçekleşir.  Gecikmeleri olabildiğince azaltmak için [bir hızlı veya tam eşitlemeyi el ile zorlayabilirsiniz](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync).
  
 ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange’den bulunmayan Exchange ActiveSync cihazı
 Exchange bağlayıcısının Exchange sunucusu ile eşitlenip eşitlenmediğini görmek için [Exchange bağlayıcısı etkinliğini izleyin](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support). Cihaz katıldıktan sonra bir tam veya hızlı eşitleme başarıyla tamamlandıysa aşağıda listelenen diğer olası sorunları denetleyebilirsiniz. Hiçbir eşitleme gerçekleşmediyse eşitleme günlüklerini toplayın ve bir destek isteğine ekleyin.
 
- - Kullanıcının Intune lisansı olduğundan emin olun, aksi takdirde Exchange bağlayıcısı kullanıcının cihazlarını bulamaz.
- - Kullanıcının birincil SMTP adresi, Azure Active Directory’deki (Azure AD) UPN’sinden farklıysa Exchange Connector bu kullanıcı için hiçbir cihaz bulamaz. Bu sorunu çözmek için birincil SMTP adresini düzeltin.
- - Ortamınızda hem Exchange 2010 hem de Exchange 2013 posta kutusu sunucuları varsa Exchange bağlayıcısını bir Exchange 2013 CAS’sine yöneltmenizi öneririz. Aksi takdirde, Exchange bağlayıcısı Exchange 2010 CAS ile iletişim kurmak üzere ayarlanmışsa Exchange 2013 kullanıcılarının cihazlarını bulamaz. 
+- Kullanıcının Intune lisansı olduğundan emin olun, aksi takdirde Exchange bağlayıcısı kullanıcının cihazlarını bulamaz.
+- Kullanıcının birincil SMTP adresi, Azure Active Directory’deki (Azure AD) UPN’sinden farklıysa Exchange Connector bu kullanıcı için hiçbir cihaz bulamaz. Bu sorunu çözmek için birincil SMTP adresini düzeltin.
+- Ortamınızda hem Exchange 2010 hem de Exchange 2013 posta kutusu sunucuları varsa Exchange bağlayıcısını bir Exchange 2013 CAS’sine yöneltmenizi öneririz. Aksi takdirde, Exchange bağlayıcısı Exchange 2010 CAS ile iletişim kurmak üzere ayarlanmışsa Exchange 2013 kullanıcılarının cihazlarını bulamaz. 
 - Exchange Online Dedicated ortamlarında, bağlayıcı CAS ile yalnızca Powershell cmdlet’lerini çalıştırırken iletişim kuracağı için ayrılmış ortamda ilk kurulum sırasında Exchange bağlayıcısını bir Exchange 2013 CAS’sine (Exchange 2010 değil) yöneltmelisiniz.
 
 

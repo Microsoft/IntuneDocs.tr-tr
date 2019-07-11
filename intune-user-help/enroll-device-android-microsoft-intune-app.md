@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune uygulama ile Kurumsal cihaz kaydı | Microsoft Docs
-description: Intune kurumsal bir Android cihazı ıntune'a nasıl kaydedildiği açıklanır
+title: Şirket cihazını Microsoft Intune App 'e kaydetme | Microsoft Docs
+description: Intune 'da bir şirket Android cihazının nasıl kaydedileceğini açıklar
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,117 +18,117 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197044"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735749"
 ---
-# <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Microsoft Intune uygulama ile Kurumsal Cihazınızı kaydetme
+# <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Kurumsal cihazınızı Microsoft Intune uygulamasına kaydetme
 
-Şirket e-posta, uygulamalar ve kuruluşunuzun kullanıma sunduğu diğer verileri güvenli erişim elde etmek için şirkete ait Android Cihazınızı kaydetme. Android 6.0 ve üzeri çalıştıran şirket ait cihazları Microsoft Intune uygulama destekler. Bu otomatik olarak yeni ve Fabrika sıfırlaması cihazlarında kayıt sırasında yüklenir. 
+Şirket e-postasına, uygulamalarına ve kuruluşunuzun kullanılabilir olduğu diğer verilere güvenli erişim sağlamak için şirkete ait Android cihazınızı kaydedin. Microsoft Intune uygulaması, Android 6,0 ve üzeri sürümleri çalıştıran şirkete ait cihazları destekler. Kayıt sırasında yeni ve fabrika sıfırlaması cihazlarına otomatik olarak yüklenir. 
 
-Kaydetmek için dört yolu vardır. Kuruluşunuz hangi seçeneğin kullanılacağını size bildirmek.
+Kaydolmak için dört yol vardır. Kuruluşunuz hangi seçeneği kullanacağınızı bilmenizi sağlamalıdır.
  
-* Yakın alan iletişimi (NFC)  
+* Yakın alan Iletişimi (NFC)  
 * Belirteç  
 * QR kodu   
-* Google sıfır dokunma  
+* Google sıfır Touch  
 
-## <a name="enroll-device"></a>Cihaz kaydetme 
-Ayarlama ve Cihazınızı kaydetmek için aşağıdaki adımları tamamlayın.  
+## <a name="enroll-device"></a>Cihazı kaydetme 
+Cihazınızı ayarlamak ve kaydetmek için aşağıdaki adımları uygulayın.  
 
 > [!NOTE]
-> Android sürümü veya cihaz üreticisi, bu yordamda kapsamında olmayan ek adımları tamamlaması gerektirebilir. Ekran görüntülerinde de gördüğünüz metin ve renkleri de Cihazınızda farklı görünebilir.  
+> Android sürümü veya cihaz üreticisi, bu yordamda kapsanmayan ek adımların tamamlanmasını gerektirebilir. Ekran görüntülerinde gördüğünüz renkler ve metin de cihazınızda farklı görünebilir.  
 
-1. Yeni veya fabrika ayarlarına sıfırlama cihazı açın.  
-2. **Hoş Geldiniz** ekranında dili seçin.   Bir QR kodu veya NFC ile kayıt talimatı alındıktan yöntem eşleşen aşağıdaki adımları izleyin.  
-     * NFC: NFC desteklenen cihazınızın, kuruluşunuzun ağa bağlanmak için programcı cihaz karşı dokunun. Ekrandaki yönergeleri izleyin. Chrome'nın hizmet kullanım koşulları için ekran ulaştığında, 5. adımından devam edin.  
+1. Yeni veya fabrika ayarlarına sıfırlama cihazınızı açın.  
+2. **Hoş Geldiniz** ekranında dili seçin.   QR kodu veya NFC ile kayıt yapmanız istenirse, yöntemiyle eşleşen aşağıdaki adımları izleyin.  
+     * 'YE Kuruluşunuzun ağına bağlanmak için bir programcı cihazında NFC ile desteklenen cihazınıza dokunun. Ekrandaki istemleri izleyin. Chrome 'un hizmet koşulları ekranına ulaştığınızda, 5. adıma geçin.  
 
-      * QR kodu: Bölümündeki adımları tamamlamanız [QR kodu kayıt](#qr-code-enrollment).  
+     * QR kodu: [QR kod kaydı](#qr-code-enrollment)'ndaki adımları doldurun.  
 
-      Başka bir yöntem kullanmak talimatı alındıktan, 3. adıma geçin.    
+     Başka bir yöntem kullanmanız istenirse adım 3 ' e geçin.    
 
-1. Wi-Fi ve dokunun bağlanma **sonraki**. Kayıt yönteminizi eşleşen adımı izleyin. 
+1. Wi-Fi ' e bağlanın ve **İleri**' ye dokunun. Kayıt yönteminiz ile eşleşen adımı izleyin. 
 
-    * belirteci: Google oturum açma ekranına aldığınızda bölümünde bulunan adımları tamamladığınızdan [belirteç kayıt](#token-enrollment).    
-    * Google sıfır dokunma: Wi-Fi'a bağlandıktan sonra Cihazınızı kuruluşunuz tarafından tanınır. 4. adıma devam etmek ve Kurulum işlemi tamamlanana kadar ekrandaki yönergeleri izleyin.    
+    * Simgesinde Google oturum açma ekranına geldiğinizde, [belirteç kaydı](#token-enrollment)'ndaki adımları doldurun.    
+    * Google sıfırı Touch: Wi-Fi ' a Bağlandıktan sonra cihazınız kuruluşunuz tarafından tanınacaktır. 4\. adıma geçin ve kurulum tamamlanana kadar ekrandaki istemleri izleyin.    
  
-       ![Örnek Google kabul et ve devam et düğmesi vurgulama sıfır dokunma, kullanıyorsanız bkz Google koşulları ekran görüntüsü.](./media/google-zero-touch-intune-app-01.png)   
+       ![Google of Touch kullanıyorsanız gördüğünüz Google terimleri ekranının örnek görüntüsü, & devam et ' i vurgulama düğmesi.](./media/google-zero-touch-intune-app-01.png)   
    
-4. Google'nın koşullarını gözden geçirin. Ardından dokunun **kabul et ve devam et**.  
+4. Google 'ın şartlarını gözden geçirin. Sonra **&AMP; devam et**' e dokunun.  
 
-      ![Örnek kabul et ve devam et düğmesi vurgulama Google koşulları ekran görüntüsü.](./media/fully-managed-intune-app-04.png)   
+      ![Google terms ekranının örnek görüntüsü, kabul & devam et düğmesine vurgu.](./media/fully-managed-intune-app-04.png)   
 
-6. Hizmet, Chrome'un koşullarını gözden geçirin. Ardından dokunun **kabul et ve devam et**.  
+6. Chrome 'un hizmet koşullarını gözden geçirin. Sonra **&AMP; devam et**' e dokunun.  
 
-   ![Kabul et ve devam et düğmesi vurgulama, Chrome hizmet kullanım koşulları ekran görüntüsü örnek.](./media/fully-managed-intune-app-06.png)   
+   ![Chrome hizmet koşulları ekranının örnek görüntüsü, & devam et düğmesine vurgu.](./media/fully-managed-intune-app-06.png)   
 
-7. Oturum açma ekranları, iş veya Okul hesabınızla oturum açın.   
+7. Oturum açma ekranlarında iş veya okul hesabınızla oturum açın.   
 
-    a. E-postanızı girin ve dokunun **sonraki**.      
-    b. Parolanızı girin ve dokunun **oturum**.  
+    a. E-postanızı girin ve **İleri**' ye dokunun.      
+    b. Parolanızı girin ve **oturum aç**' a dokunun.  
 
-8. Kuruluşunuzun gereksinimlerine bağlı olarak, ekran kilitleme veya şifreleme gibi ayarları güncelleştirmek için istenebilir. Bu komut istemlerini görürseniz dokunun **AYARLAMAK** ve ekrandaki yönergeleri izleyin.  
+8. Kuruluşunuzun gereksinimlerine bağlı olarak, ekran kilitleme veya şifreleme gibi ayarları güncelleştirmeniz istenebilir. Bu istemler görürseniz **Ayarla** ' ya dokunun ve ekrandaki yönergeleri izleyin.  
 
-   ![Ayarla düğmesi vurgulama iş telefon ekran kümesi görüntüyü örnek.](./media/fully-managed-intune-app-10.png)   
+   ![İş telefonunuzu ayarlama ekranınızın örnek görüntüsü, küme oluştur düğmesi.](./media/fully-managed-intune-app-10.png)   
 
-9. Cihazınızda iş uygulamaları yüklemek için dokunun **yükleme**. Yükleme tamamlandıktan sonra dokunun **sonraki**.  
+9. Cihazınıza iş uygulamaları yüklemek için, **yükler**' e dokunun. Yükleme tamamlandıktan sonra **İleri**' ye dokunun.  
 
-   ![Yükle düğmesine vurgulama iş telefon ekran kümesi görüntüyü örnek.](./media/fully-managed-intune-app-11.png)   
+   ![İş telefonunuzu ayarlama ekranınızın örnek görüntüsü, Install düðmesini vurgulaması.](./media/fully-managed-intune-app-11.png)   
 
-10. Cihazınızın hazır olduğunu iletisini aldığınızda, dokunun **BİTTİ**. 
+10. Cihazınızın hazırlanabileceği iletiyi aldığınızda **bitti**' ye dokunun. 
 
-11. Uygulamalarınıza gidin ve Microsoft Intune uygulamasını açın. Seçin **oturum**. 
+11. Uygulamalarınıza gidin ve Microsoft Intune uygulamasını açın. **Oturum aç '** ı seçin. 
 
-12. Üzerinde **Kurulum erişim** ekran, bekleyen görevlerin bir listesini görürsünüz. Dokunun **devam**.  
+12. **Kurulum erişimi** ekranında, bekleyen görevlerin bir listesini görürsünüz. **Devam**' a dokunun.  
 
-       ![Örnek Intune uygulamasının görüntüsü erişim ekran, Bekleyen Görevler gösteren ayarlayın.](./media/fully-managed-intune-app-14.png)   
+       ![Microsoft Intune uygulamasının örnek görüntüsü, erişim ekranını ayarlama, bekleyen görevleri gösterir.](./media/fully-managed-intune-app-14.png)   
 
-13. Cihaz kaydı tamamlandığında dokunun **devam**. Microsoft Intune ek cihaz ayarları güncelleştirmek için isteyebilir.   
+13. Cihaz kaydı tamamlandığında **devam**' a dokunun. Microsoft Intune ek cihaz ayarlarını güncelleştirmenizi isteyebilir.   
 
-       ![Örnek Intune uygulama, güncelleştirmeyi cihaz ayarları ekran görüntüsü.](./media/fully-managed-intune-app-15-2.png)   
+       ![Microsoft Intune uygulamasının örnek görüntüsü, cihaz ayarları güncelleştirme ekranı.](./media/fully-managed-intune-app-15-2.png)   
 
-14. Listedeki tüm öğeler yeşil bir daire gösterdiğinizde Kurulumu tamamlanır. Artık şirket kaynaklarına erişim sağlayabilir.  
+14. Listedeki tüm öğeler yeşil bir daire gösterayarlandığında Kurulum tamamlanmıştır. Artık şirket kaynaklarına erişebilirsiniz.  
 
-       ![Örnek Intune uygulama, tamamlanan gösteren kurma erişim ekranını görevleri görüntüsü.](./media/fully-managed-intune-app-16.png)   
+       ![Microsoft Intune uygulamasının örnek görüntüsü, erişim ekranını ayarlama ve Tamamlanan görevleri gösterme.](./media/fully-managed-intune-app-16.png)   
 
 
-## <a name="qr-code-enrollment"></a>QR kodu kayıt  
-Bu bölümde, şirket tarafından sağlanan QR kodunu tarayın.  İşiniz bittiğinde size cihaz kayıt adımlarını yeniden yönlendirmeniz.     
+## <a name="qr-code-enrollment"></a>QR kod kaydı  
+Bu bölümde, şirketinizin sağladığı QR kodunuzu taracaksınız.  İşiniz bittiğinde cihaz kayıt adımlarına geri yönlendiriyoruz.     
   
-1. Üzerinde **Hoş Geldiniz** ekranında, ekran beş kez için QR Kodu Kurulumu Başlat'a dokunun.  
+1. **Karşılama** EKRANıNDA, QR kodu kurulumu 'nu başlatmak için ekrana beş kez dokunun.  
 
-   ![Örnek ekrana dokunmanız yönergeleri vurgulama cihaz Kurulumu Hoş Geldiniz ekranının görüntüsü.](./media/qr-code-intune-app-01.png)  
+   ![Cihaz kurulumu hoş geldiniz ekranının örnek görüntüsü, ekrana dokunarak görüntülenecek yönergeleri vurgular.](./media/qr-code-intune-app-01.png)  
 
-2. Wi-Fi bağlanmak için ekrandaki yönergeleri izleyin.  
-3. Cihazınızı bir QR kodu tarayıcısını yoksa, Kurulum ekranlarını tarayıcı yüklü olarak ilerleme durumunu gösterir. Yüklemenin tamamlanmasını bekleyin.  
-4. İstendiğinde, kayıt profilini kuruluşunuz verdiğiniz QR kodunu tarayın.  
-5. Geri dönüp [kaydetme cihaz](#enroll-device), Kuruluma devam etmek için 4. adım.  
+2. Wi-Fi ' a bağlanmak için ekrandaki yönergeleri izleyin.  
+3. Cihazınızın bir QR kodu tarayıcısı yoksa, kurulum ekranları bir tarayıcı yüklendiği için ilerlemeyi gösterir. Yüklemenin tamamlanmasını bekleyin.  
+4. İstendiğinde, kuruluşunuzun size verdiği kayıt profili QR kodunu tarayın.  
+5. [Cihaza kaydet](#enroll-device)'e dönün, kuruluma devam etmek için 4. adımı izleyin.  
 
-## <a name="token-enrollment"></a>Belirteç kayıt  
-Bu bölümde, şirket tarafından sağlanan belirtecinizi girmenizi isteriz. İşiniz bittiğinde size cihaz kayıt adımlarını yeniden yönlendirmeniz.  
+## <a name="token-enrollment"></a>Belirteç kaydı  
+Bu bölümde, şirketinizin sunduğu belirteci girersiniz. İşiniz bittiğinde cihaz kayıt adımlarına geri yönlendiriyoruz.  
 
-1. Google oturum açma ekranında içinde **e-posta veya telefon** kutusuna **afw #setup**. **İleri**’ye dokunun. 
+1. Google oturum açma ekranında, **e-posta veya telefon** kutusuna **AFW # kurulum**yazın. **İleri**’ye dokunun. 
 
-   !["Afw #setup" alanına girilen olduğunu gösteren Google oturum açma ekranında, örnek görüntüsü.](./media/token-intune-app-01.png)   
+   ![Google oturum açma ekranının örnek görüntüsü, "AFW # kurulum" ın alana yazılmış olduğunu gösterir.](./media/token-intune-app-01.png)   
 
-2. Seçin **yükleme** için **Android cihaz İlkesi** uygulama. Yükleme işlemine devam edin. Cihazınıza bağlı olarak gözden geçirin ve ek koşullarını kabul gerekebilir.    
+2. **Android cihaz ilkesi** uygulaması için **yüklemeyi** seçin. Yükleme işlemine devam edin. Cihazınıza bağlı olarak, ek koşulları gözden geçirmeniz ve kabul etmeniz gerekebilir.    
 
-3. Üzerinde **bu cihazı Kaydet** ekranındayken **sonraki**.  
+3. **Bu cihazı kaydet** ekranında **İleri**' yi seçin.  
 
-   ![Örnek kaydetme bu cihazın ekran görüntüsü. QR kodu gösterimi gösterir. İleri düğmesine vurgular.](./media/token-intune-app-02.png)  
+   ![Bu cihazı kaydetme ekranının örnek görüntüsü. QR kodunun bir resmini gösterir; Ileri vurgu düğmesi.](./media/token-intune-app-02.png)  
 
-4. Seçin **kodu girin**.
+4. **Kodu girin**' i seçin.
 
-   ![Etkin bir QR kodu tarayıcısını örnek ekran görüntüsü. ENTER kodu düğmesine vurgular.](./media/token-intune-app-03.png)  
+   ![Etkin bir QR kodu tarayıcısının örnek ekran görüntüsü. Vurgular kod girin düğmesi.](./media/token-intune-app-03.png)  
 
-5. Üzerinde **tarama veya kod girin** ekran, kuruluşunuzun verdiğiniz kod yazın.  Ardından **İleri**'ye tıklayın.  
+5. **Tarama veya kod girme** ekranında, kuruluşunuzun size verdiği kodu yazın.  Ardından **İleri**'ye tıklayın.  
 
-   ![Örnek görüntü tarama veya kod ekranında, İleri düğmesine vurgulama girin.](./media/token-intune-app-04.png)  
+   ![Taramanın örnek görüntüsü veya kod girme, Ileri vurgu düğmesi.](./media/token-intune-app-04.png)  
 
-6. Geri dönüp [kaydetme cihaz](#enroll-device), Kuruluma devam etmek için 4. adım.  
+6. [Cihaza kaydet](#enroll-device)'e dönün, kuruluma devam etmek için 4. adımı izleyin.  
 
 
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558410"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735567"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -32,7 +32,7 @@ iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* OS X 10.8.5 ya da üzerini çalıştıran veya daha sonra Xcode 9 veya üzeri yüklü olan bir Mac OS bilgisayara ihtiyaç duyacaksınız.
+* OS X 10.8.5 veya üstünü çalıştıran bir Mac OS bilgisayara ihtiyacınız vardır ve Ayrıca Xcode 9 veya üzeri bir sürümü yüklü olur.
 
 * Uygulamanız iOS 10 veya üzeri sürümlere yönelik olmalıdır.
 
@@ -40,28 +40,28 @@ iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini
 
 * iOS için Intune Uygulama SDK'sı dosyalarını [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)’dan indirin.
 
-## <a name="whats-in-the-sdk-repository"></a>SDK'sı deposunda nedir
+## <a name="whats-in-the-sdk-repository"></a>SDK deposundaki Özellikler
 
-Aşağıdaki dosyalar yok SWIFT kodu içeren veya Xcode sürümü 10.2 önce ile derlenmiş uygulamaları ve uzantıları için uygundur:
+Aşağıdaki dosyalar, hiçbir Swift kodu içermeyen uygulamalar/uzantılara veya 10,2 ' dan önceki bir Xcode sürümü ile derlenerek geçerlidir:
 
-* **Intunemam.Framework**: Intune uygulama SDK'sı çerçevesi. Bu çerçeve, uygulama/Intune istemcisi uygulama yönetimi etkinleştirmek için uzantıları için bağlantı önerilir. Ancak bazı geliştiriciler, statik kitaplık performans avantajlarını tercih edebilirsiniz. Aşağıdaki konulara bakın.
+* **Intunemad. Framework**: Intune uygulama SDK 'Sı çerçevesi. Intune istemci uygulama yönetimini etkinleştirmek için bu çerçeveyi uygulamanıza/uzantılara bağlamanız önerilir. Ancak bazı geliştiriciler statik kitaplığın performans avantajlarını tercih edebilir. Aşağıdakilere bakın.
 
-* **libIntuneMAM.a**: Intune uygulama SDK'sı statik kitaplığı. Geliştiriciler için statik kitaplık yerine framework bağlamak tercih edebilirsiniz. Uygulama/Uzantı oluşturma zamanında ikili doğrudan gömülü statik kitaplıklar olduğundan, statik kitaplık kullanmanın bazı başlatma zamanı performans avantajları vardır. Ancak, uygulamanıza tümleştirmenin daha karmaşık bir işlem olur. Uygulamanız için uygulamanın statik kitaplığa bağlama herhangi bir uzantısı içerir ve daha büyük bir uygulama paketi boyutu uzantıları neden olur, her uygulama/uzantısı'na ikili statik kitaplık olarak katıştırılır. Framework'ü kullanırken uygulamaları ve uzantıları daha küçük bir uygulamanın boyutunu kaynaklanan aynı Intune SDK'sı ikili paylaşabilirsiniz.
+* **libIntuneMAM.a**: Intune uygulama SDK 'Sı statik kitaplığı. Geliştiriciler Framework yerine statik kitaplığı bağlamayı seçebilir. Statik kitaplıklar doğrudan uygulama/uzantı ikilisinde derleme zamanında katıştırıldığından, statik kitaplığı kullanmanın bazı başlatma zamanı performans avantajları vardır. Ancak, uygulamanızı uygulamanızla tümleştirmek daha karmaşık bir işlemdir. Uygulamanız herhangi bir uzantı içeriyorsa statik kitaplığı uygulamaya ve uzantılara bağlamak, statik kitaplık her bir uygulama/uzantı ikilisinde gömüleceğinden daha büyük bir uygulama paketi boyutuna neden olur. Framework kullanırken, uygulamalar ve uzantılar aynı Intune SDK ikilisini paylaşabilir, bu da daha küçük bir uygulama boyutuna neden olur.
 
-* **Intunemamresources.Bundle**: SDK'ın bağımlı kaynakları içeren bir kaynak paketi. Kaynakları paket, yalnızca statik kitaplık (Libıntunemam.a) tümleştirme uygulamalar için gereklidir.
+* **Intunemamresources. demeti**: SDK 'nın bağımlı olduğu kaynakları içeren bir kaynak paketi. Kaynak demeti yalnızca statik kitaplığı (Libintunemad. a) tümleştiren uygulamalar için gereklidir.
 
-Aşağıdaki dosyalar, SWIFT kodu içerir ve 10.2 + Xcode ile derlenmiş uygulamaları ve uzantıları için uygundur:
+Aşağıdaki dosyalar, Swift kodu içeren uygulamalar/uzantılar ile ilgilidir ve Xcode 10.2 + ile derlenir:
 
-* **IntuneMAMSwift.framework**: Intune uygulama SDK'sı Swift çerçevesi. Bu çerçeve uygulamanızı çağıran API'leri için tüm üst bilgileri içerir. Bu çerçeve, uygulama/Intune istemcisi uygulama yönetimi etkinleştirmek için uzantıları için bağlayın.
+* **IntuneMAMSwift. Framework**: Intune uygulama SDK 'Sı Swift çerçevesi. Bu çerçeve, uygulamanızın çağıracağız API 'Lerin tüm üst bilgilerini içerir. Intune istemci uygulama yönetimini etkinleştirmek için bu çerçeveyi uygulamanıza/uzantılara bağlayın.
 
-* **IntuneMAMSwiftStub.framework**: Intune uygulama SDK'sı Swift saplama çerçevesi. Bu, hangi uygulamaları ve uzantıları bağlamalısınız IntuneMAMSwift.framework, gerekli bir bağımlılıktır.
+* **Intunemamswiftstub. Framework**: Intune uygulama SDK 'Sı Swift saplama çerçevesi. Bu, uygulamaların/uzantıların bağlanması gereken IntuneMAMSwift. Framework için gerekli bir bağımlılığıdır.
 
 
-Aşağıdaki dosyaları, tüm uygulamalar/uzantılar için uygundur:
+Aşağıdaki dosyalar tüm uygulamalar/uzantılarını ile ilgilidir:
 
-* **Intunemamconfigurator**: Intune yönetimi için en düşük gerekli değişiklikleri ile uygulama ya da uzantının Info.plist yapılandırmak için kullanılan araç. Uygulamanızı veya uzantısı işlevselliğini bağlı olarak, Info.plist dosyanıza ek el ile değişiklik yapmanız gerekebilir.
+* **Intunemamconfigurator**: Uygulamanın veya uzantının Info. plist ' i Intune yönetimi için gereken en düşük değişikliklerle yapılandırmak için kullanılan bir araç. Uygulamanızın veya uzantınızın işlevselliğine bağlı olarak, Info. plist dosyasında el ile ek değişiklikler yapmanız gerekebilir.
 
-* **Üstbilgileri**: Genel Intune uygulama SDK'sı API'lerini kullanıma sunar. Çerçeveleri herhangi birini kullanan geliştiriciler, üstbilgileri, projeye el ile eklemeniz gerekmez. Bu nedenle bu üstbilgileri IntuneMAM/IntuneMAMSwift çerçeveleri içinde dahil edilir. Statik kitaplığa karşı (Libıntunemam.a) bağlamayı seçin geliştiriciler el ile bu üstbilgileri, projede eklemeniz gerekir.
+* **Üst bilgiler**: Ortak Intune uygulama SDK 'Sı API 'Lerini gösterir. Bu üst bilgiler ıntunemad/IntuneMAMSwift çerçeveleri içine dahil edilmiştir. böylece, çerçevelerden birini kullanan geliştiricilerin, üst bilgileri projesine el ile eklemesi gerekmez. Statik kitaplığa (Libintunemad. a) göre bağlamayı tercih eden geliştiricilerin, bu üst bilgileri projesine el ile eklemesi gerekir.
 
 Aşağıdaki üst bilgi dosyaları, Intune Uygulama SDK’sı tarafından geliştiricilerin kullanımına sunulan API’ler, veri türleri ve protokollerini içerir:
 
@@ -70,7 +70,7 @@ Aşağıdaki üst bilgi dosyaları, Intune Uygulama SDK’sı tarafından geliş
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
-    * IntuneMAMDiagnosticConsole.h
+    * Intunemamdiagnosticconsole. h
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -82,32 +82,32 @@ Aşağıdaki üst bilgi dosyaları, Intune Uygulama SDK’sı tarafından geliş
     * IntuneMAMPolicyManager.h
     * IntuneMAMVersionInfo.h
 
-Geliştiriciler tüm önceki üstbilgilerini içeriğini yalnızca Intunemam.h içeri aktararak sunabileceğiniz
+Geliştiriciler yalnızca ıntunemam. h içeri aktararak tüm önceki üst bilgilerin içeriğini kullanılabilir hale getirir
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>Intune Uygulama SDK’sı nasıl çalışır?
 
-iOS için Intune Uygulama SDK'sının amacı, kodda minimum düzeyde değişiklik yaparak iOS uygulamalarına yönetim özellikleri eklemeyi sağlamaktır. Daha az kod, pazarlama, ancak tutarlılığı ve kararlılığı mobil uygulamanızın etkilemeden daha az zaman değiştirir.
+iOS için Intune Uygulama SDK'sının amacı, kodda minimum düzeyde değişiklik yaparak iOS uygulamalarına yönetim özellikleri eklemeyi sağlamaktır. Daha az kod, mobil uygulamanızın tutarlılığını ve kararlılığını etkilemeden, pazara daha az zaman değiştirir.
 
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>Mobil uygulamanızda SDK oluşturma
 
 Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin:
 
-1. **Seçenek 1 - (önerilen) Framework**: Xcode 10.2 + kullanıyorsanız ve uygulama/uzantınızı SWIFT kodu içeriyorsa, bağlantı `IntuneMAMSwift.framework` ve `IntuneMAMSwiftStub.framework` hedef için: Sürükleme `IntuneMAMSwift.framework` ve `IntuneMAMSwiftStub.framework` için **katıştırılmış ikili dosyalar** proje hedefinin listesi.
+1. **Seçenek 1-çerçeve (önerilir)** : Xcode 10.2 + kullanıyorsanız ve uygulamanız/uzantınız Swift kodu içeriyorsa ve Hedefinizdeki ile `IntuneMAMSwift.framework` `IntuneMAMSwiftStub.framework` bağlantı: Öğesini proje hedefinin `IntuneMAMSwift.framework` **katıştırılmış ikili dosyalar** listesine sürükleyin. `IntuneMAMSwiftStub.framework`
 
-    Aksi takdirde, bağlantı `IntuneMAM.framework` hedef için: `IntuneMAM.framework` öğesini proje hedefinin **Katıştırılmış İkili Dosyalar** listesine sürükleyin.
+    Aksi takdirde, `IntuneMAM.framework` hedefle bağlantı: `IntuneMAM.framework` öğesini proje hedefinin **Katıştırılmış İkili Dosyalar** listesine sürükleyin.
 
    > [!NOTE]
    > Çerçeveyi kullanırsanız, uygulamanızı App Store’a göndermeden önce evrensel çerçeveden benzetici mimarilerini elle çıkarmanız gerekir. Daha fazla bilgi için bkz. [Uygulamanızı App Store'a gönderme](#submit-your-app-to-the-app-store).
 
-   **Seçenek 2 - statik kitaplık**: Bu seçenek yalnızca hiçbir SWIFT kodu içeren veya Xcode ile oluşturulmuş uygulamalar ve uzantıları için kullanılabilir < 10.2. Bağlantı `libIntuneMAM.a` kitaplığı. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
+   **Seçenek 2-statik kitaplık**: Bu seçenek yalnızca bir Swift kodu içermeyen veya 10,2 < Xcode ile oluşturulmuş uygulamalar/uzantılar için kullanılabilir. `libIntuneMAM.a` Kitaplık bağlantısı. `libIntuneMAM.a` kitaplığını proje hedefinin **Bağlantılı Çerçeveler ve Kitaplıklar** listesine sürükleyin.
 
     ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     `{PATH_TO_LIB}` öğesini Intune Uygulama SDK'sı konumu ile değiştirerek `-force_load {PATH_TO_LIB}/libIntuneMAM.a` öğesini aşağıdakilerden birine ekleyin:
-   * Projenin `OTHER_LDFLAGS` derlemesi yapılandırma ayarı.
-   * Xcode UI'nin **diğer bağlayıcı bayrakları**.
+   * Projenin `OTHER_LDFLAGS` derleme yapılandırma ayarı.
+   * Xcode Kullanıcı arabiriminin **diğer bağlayıcı bayrakları**.
 
      > [!NOTE]
      > `PATH_TO_LIB` öğesini bulmak için `libIntuneMAM.a` dosyasını seçin ve **Dosya** menüsünden **Bilgi Al** öğesini belirleyin. **Nerede** bilgisini (yol) **Bilgi** penceresinin **Genel** bölümünden kopyalayıp yapıştırın.
@@ -116,18 +116,18 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
      ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](./media/intune-app-sdk-ios-copy-bundle-resources.png)
      
-2. Swift herhangi bir Intune API'leri çağırmak gerekiyorsa, uygulama/uzantısı aracılığıyla bir Objective-C köprü oluşturma üst bilgisi gerekli Intune SDK'sı üst bilgileri içeri aktarmanız gerekir. Uygulama/uzantınızı bir Objective-C köprü oluşturma üst bilgisi içermiyorsa, bir aracılığıyla belirtebilirsiniz `SWIFT_OBJC_BRIDGING_HEADER` derleme yapılandırma ayarına veya Xcode UI'nin **Objective-C köprü oluşturma üst bilgisi** alan. Köprü oluşturma üst bilgisi, şunun gibi görünmelidir:
+2. Swift 'ten Intune API 'Lerinden herhangi birini çağırmanız gerekiyorsa, uygulamanızın/uzantınızın gerekli Intune SDK üst bilgilerini bir amaç-C köprü oluşturma üst bilgisi aracılığıyla içeri aktarması gerekir. Uygulamanız/uzantınız zaten bir amaç-c köprü oluşturma üst bilgisi içermiyorsa, `SWIFT_OBJC_BRIDGING_HEADER` derleme yapılandırması ayarı veya Xcode Kullanıcı arabirimi 'nin **Hedef-c köprü üstbilgi** alanı aracılığıyla bir tane belirtebilirsiniz. Köprü oluşturma üst bilgisi şuna benzer görünmelidir:
 
    ```objc
       #import <IntuneMAMSwift/IntuneMAM.h>
    ```
    
-   Bu tüm Intune SDK'sının API'lerini kullanılabilir tüm Swift kaynak dosyalarını uygulama/uzantınızı yapar. 
+   Bu, tüm Intune SDK 'sının API 'Lerini uygulamanızın/uzantınızdaki tüm Swift kaynak dosyaları genelinde kullanılabilir hale getirir. 
    
     > [!NOTE]
-    > * Yalnızca köprüsü belirli Intune SDK'sı üst bilgileri çoğunda Intunemam.h yerine Swift tercih edebilirsiniz
-    > * Üstbilgi dosya yolunu entegre ettik framework/statik kitaplığı bağlı olarak, farklı olabilir.
-    > * Intune SDK'sı API'leri aracılığıyla bir modülü içeri aktarma deyimi swift'te kullanılabilir hale getirme (örn: IntuneMAMSwift alma) şu anda desteklenmiyor. Objective-C köprü oluşturma üst bilgi kullanılması önerilen bir yaklaşımdır.
+    > * Tüm dahil edilecek ıntunemam. h yerine yalnızca belirli Intune SDK üst bilgilerini Swift 'e köprülemek isteyebilirsiniz
+    > * Tümleştirmiş olduğunuz çerçeve/statik kitaplığa bağlı olarak, üstbilgi dosyalarının yolu farklı olabilir.
+    > * Intune SDK API 'Lerinin bir modül içeri aktarma ifadesiyle (örn: import IntuneMAMSwift) Swift 'ta kullanılabilir hale getirilmesi Şu anda desteklenmemektedir. Amaç-C köprü oluşturma üst bilgisi kullanılması önerilen yaklaşımdır.
     
 3. Aşağıdaki iOS çerçevelerini projeye ekleyin:  
     * MessageUI.framework  
@@ -145,7 +145,8 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 4. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
 
    > [!NOTE]
-   > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bu bir metin düzenleyicisinde arama için .mobileprovision dosyasını açarak denetleyin **keychain-access-groups**ve bir joker karakter kullandığınızdan emin olun. Örneğin:
+   > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu,. mobileprovision dosyasını bir metin düzenleyicisinde açıp **Anahtarlık erişim grupları**araması yaparak ve bir joker karakter olmasını sağlayarak denetleyebilirsiniz. Örneğin:
+   >
    >  ```xml
    >  <key>keychain-access-groups</key>
    >  <array>
@@ -153,9 +154,9 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
    >  </array>
    >  ```
 
-5. Anahtarlık paylaşımını etkinleştirdikten sonra Intune uygulama SDK'sı verileri depolayacak ayrı bir erişim grubu oluşturmak için aşağıdaki adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. Anahtarlık erişim grubu oluşturmak için kullanıcı arabirimini kullanıyorsanız, adımları izlediğinizden emin olun:
+5. Anahtarlık paylaşımını etkinleştirdikten sonra Intune uygulama SDK 'sının verilerini depolayabileceği ayrı bir erişim grubu oluşturmak için adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. Anahtarlık erişim grubunu oluşturmak için Kullanıcı arabirimini kullanıyorsanız, şu adımları izlediğinizden emin olun:
 
-     a. Mobil uygulamanız tüm Anahtarlık erişim gruplarını tanımlanan, uygulamanın ekleme yoksa kimliği olarak paket **ilk** grubu.
+     a. Mobil uygulamanızda tanımlanmış bir Anahtarlık erişim grubu yoksa, uygulamanın paket KIMLIĞINI **ilk** grup olarak ekleyin.
     
     b. `com.microsoft.intune.mam` paylaşılan anahtarlık grubunu var olan erişim gruplarınıza ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
     
@@ -181,7 +182,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
    |---------------|--------------------------------|
    |- i |  `<Path to the input plist>` |
    |- e | `<Path to the entitlements file>` |
-   |- o |  (İsteğe bağlı) `<Path to the output plist>` |
+   |- o |  Seçim`<Path to the output plist>` |
 
 '-o' parametresi belirtilmezse, giriş dosyası yerinde değiştirilir. Araç bir kez etkilidir ve uygulamanın Info.plist dosyası her değiştirildiğinde veya yetkilendirmeler yapıldığında yeniden çalıştırılmalıdır. En son sürümde Info.plist yapılandırma gereksinimlerinin değişmesi durumunda, Intune SDK'sını güncelleştirirken de aracın en son sürümünü indirmeniz ve çalıştırmanız gerekir.
 
@@ -193,7 +194,7 @@ ADAL genellikle, uygulamaya verilen belirteçlerin güvenliğini sağlamak için
 
 Uygulamanız kullanıcı kimlik doğrulaması için zaten ADAL kullanıyorsa, uygulamanın mevcut kayıt değerlerini kullanması ve Intune Uygulama SDK'sının varsayılan değerlerini geçersiz kılması gerekir. Bu, kullanıcılardan iki kez kimlik doğrulaması (Intune Uygulama SDK'sı ve uygulama tarafından) istenmemesini sağlar.
 
-Uygulamanızın ana dalında [son ADAL sürümüne](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) bağlantı vermesi önerilir. Intune uygulama SDK'sı şu anda koşullu erişim gerektiren uygulamaları desteklemek için ADAL'ın aracı dalını kullanır. (Dolayısıyla bu uygulamalar Microsoft Authenticator uygulamasına bağlıdır.) Ancak, SDK hala ADAL’ın ana dalı ile uyumludur. Uygulamanıza uygun olan dalı kullanın.
+Uygulamanızın ana dalında [son ADAL sürümüne](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) bağlantı vermesi önerilir. Intune uygulama SDK 'Sı Şu anda, koşullu erişim gerektiren uygulamaları desteklemek için ADAL 'ın aracı dalını kullanır. (Dolayısıyla bu uygulamalar Microsoft Authenticator uygulamasına bağlıdır.) Ancak, SDK hala ADAL’ın ana dalı ile uyumludur. Uygulamanıza uygun olan dalı kullanın.
 
 ### <a name="link-to-adal-binaries"></a>ADAL ikili dosyalarına bağlantı kurma
 
@@ -229,7 +230,7 @@ Uygulamanız zaten ADAL kullanıyorsa aşağıdaki yapılandırma adımlarının
 
 Ayrıca, uygulamalar çalışma zamanında bu Azure AD ayarlarını geçersiz kılabilir. Bunu yapmak için `IntuneMAMPolicyManager` örneğinde `aadAuthorityUriOverride`, `aadClientIdOverride` ve `aadRedirectUriOverride` özelliklerini ayarlamanız yeterlidir.
 
-4. İOS uygulama koruma İlkesi (uygulama) hizmeti uygulama izin vermek için adımları izlendiğinden emin olun. Yönergeleri kullanın [Intune SDK'sı Kılavuzu ile çalışmaya başlama](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) altında "verin, uygulama erişimini Intune uygulama koruma hizmeti için (isteğe bağlı)".  
+4. İOS uygulama izinlerinizi uygulama koruma ilkesi (APP) hizmetine verme adımlarının izlendiğinden emin olun. "Uygulamanızın Intune uygulama koruma hizmeti 'ne erişmesine izin verin (isteğe bağlı)" altındaki [Intune SDK 'sını](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) kullanmaya başlama yönergelerini kullanın.  
 
 > [!NOTE]
 > Statik olan ve çalışma zamanında saptanması gerekmeyen tüm ayarlar için Info.plist yaklaşımı önerilir. `IntuneMAMPolicyManager` özelliklerine atanan değerler, Info.plist dosyasında belirtilen ve bunlara karşılık gelen tüm değerlerden önceliklidir ve uygulama yeniden başlatıldıktan sonra bile kalıcı olmayı sürdürür. Kullanıcının kaydı silinene ya da değerler temizlenene veya değiştirilene kadar SDK ilke iadelerinde bunları kullanmaya devam edecektir.
@@ -259,14 +260,14 @@ ContainingAppBundleId | Dize | Uzantıyı içeren uygulamanın paket kimliğini 
 DebugSettingsEnabled| Boole değeri | EVET olarak ayarlanırsa, Ayarlar paketindeki sınama ilkeleri uygulanabilir. Uygulamalar bu ayar etkin olarak *gönderilmemelidir*. | İsteğe bağlı. Varsayılan ayar Hayır’dır.|
 MainNibFile <br> MainNibFile~ipad  | Dize  | Bu ayar, uygulamanın ana nib dosya adını içerir.  | Uygulama, Info.plist dosyasında MainNibFile tanımlıyorsa gereklidir. |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | Dize  | Bu ayar, uygulamanın ana görsel taslak dosya adını içerir. | Uygulama, Info.plist dosyasında UIMainStoryboardFile tanımlıyorsa gereklidir. |
-MAMPolicyRequired| Boole değeri| Uygulama bir Intune APP ilkesine sahip değilse, uygulamanın başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: App Store mampolicyrequired ayarı Evet olarak belirlenmişse uygulamalar gönderilemez. | İsteğe bağlı. Varsayılan ayar Hayır’dır.|
-MAMPolicyWarnAbsent | Boole değeri| Uygulama bir Intune APP ilkesine sahip değilse, uygulamanın başlatıldığı sırada kullanıcıyı uyarıp uyarmayacağını belirtir. <br><br> Not: Kullanıcılara uyarı kapatıldıktan sonra da uygulamayı ilke olmadan kullanmak için yine de verilir. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
+MAMPolicyRequired| Boole değeri| Uygulama bir Intune APP ilkesine sahip değilse, uygulamanın başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: Uygulamalar, MAMPolicyRequired için Evet olarak ayarlanan App Store 'a gönderilemez. | İsteğe bağlı. Varsayılan ayar Hayır’dır.|
+MAMPolicyWarnAbsent | Boole değeri| Uygulama bir Intune APP ilkesine sahip değilse, uygulamanın başlatıldığı sırada kullanıcıyı uyarıp uyarmayacağını belirtir. <br><br> Not: Uyarının eksik olması sonrasında kullanıcıların ilke olmadan uygulamayı kullanmasına izin verilir. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MultiIdentity | Boole değeri| Uygulamanın çoklu kimliği fark edip edemediğini belirtir. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 SplashIconFile <br> SplashIconFile~ipad | Dize  | Intune giriş (başlangıç) simge dosyasını belirtir. | İsteğe bağlı. |
 SplashDuration | Sayı | Intune başlangıç ekranının uygulama başlatılırken gösterileceği en kısa süre miktarı (saniye cinsinden). Varsayılan olarak 1,5’tir. | İsteğe bağlı. |
 BackgroundColor| Dize| Başlangıç ve PIN ekranlarının arka plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.   | İsteğe bağlı. Varsayılan olarak açık gridir. |
-ForegroundColor| Dize| Başlatma ve metin rengi gibi PIN ekranlarının ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. Varsayılan olarak siyahtır. |
-AccentColor | Dize| Vurgu rengi PIN ekranının düğme metin rengi ve kutu Vurgu rengi gibi belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.| İsteğe bağlı. Varsayılan olarak sistem mavisidir. |
+ForegroundColor| Dize| Metin rengi gibi başlangıç ve PIN ekranlarının ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. Varsayılan olarak siyahtır. |
+AccentColor | Dize| PIN ekranının düğme metni rengi ve kutu vurgu rengi gibi vurgu rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.| İsteğe bağlı. Varsayılan olarak sistem mavisidir. |
 MAMTelemetryDisabled| Boole değeri| SDK’nın arka ucuna herhangi bir telemetri verisi gönderip göndermeyeceğini belirtir.| İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MAMTelemetryUsePPE | Boole değeri | MAM SDK'sının PPE telemetri arka ucuna veri gönderip göndermeyeceğini belirtir. Sınama telemetri verilerinin müşteri verileriyle karışmaması için uygulamalarınızı Intune ilkesiyle sınarken bunu kullanın. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MaxFileProtectionLevel | Dize | İsteğe bağlı. Uygulamanın destekleyebildiği maksimum `NSFileProtectionType` belirtmesine olanak tanır. Düzey uygulamanın destekleyebildiğinden daha yüksekse, bu değer hizmet tarafından gönderilen ilkeyi geçersiz kılar. Olası değerler: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
@@ -322,6 +323,7 @@ Kayıt başarısız olursa, uygulama hatanın ayrıntılarına bağlı olarak bu
 Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. Kayıt başarılı olursa, SDK kullanıcıya uygulamanın yeniden başlatılması gerektiğini bildirir.
 
 Örnek:
+
 ```objc
 [[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
 ```
@@ -332,8 +334,8 @@ Uygulamanızın başlatılması tamamlanmadan önce Intune SDK'sının ADAL kull
 
 Ayar  | Type  | Tanım |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| Boole değeri| Mevcut bir yönetilen kimlik tespit edilirse ve bu kimlik henüz kaydedilmemişse uygulama başlatıldığında otomatik olarak kaydetmeye çalışılıp çalışılmayacağını belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: Uygulamayı, ayrıca mampolicyrequired ayarı Evet olarak ayarlanmadığı sürece yönetilen kimlik bulunmadıysa veya ADAL önbelleğinde geçerli belirteç için kimlik kullanılabilir, bir kayıt denemesi sessizce kimlik bilgileri için sormadan başarısız olur. |
-MAMPolicyRequired| Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: App Store mampolicyrequired ayarı Evet olarak belirlenmişse uygulamalar gönderilemez. MAMPolicyRequired EVET olarak ayarlandığında AutoEnrollOnLaunch da EVET olarak ayarlanmalıdır. |
+AutoEnrollOnLaunch| Boole değeri| Mevcut bir yönetilen kimlik tespit edilirse ve bu kimlik henüz kaydedilmemişse uygulama başlatıldığında otomatik olarak kaydetmeye çalışılıp çalışılmayacağını belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: Hiçbir yönetilen kimlik bulunamazsa veya tanımlayıcı önbelleğinde kimlik için geçerli bir belirteç yoksa, uygulama aynı zamanda MAMPolicyRequired olarak ayarlanmadığı müddetçe kayıt girişimi kimlik bilgileri istenmeden sessizce başarısız olur. |
+MAMPolicyRequired| Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: Uygulamalar, MAMPolicyRequired için Evet olarak ayarlanan App Store 'a gönderilemez. MAMPolicyRequired EVET olarak ayarlandığında AutoEnrollOnLaunch da EVET olarak ayarlanmalıdır. |
 
 Uygulamanız için bu seçeneği belirtirseniz, kayıt sonrasında uygulamanızı yeniden başlatma işlemini yapmanız gerekmez.
 
@@ -369,6 +371,7 @@ Bu yöntem, kullanıcı hesabının Azure AD belirteçleri silinmeden önce ça�
 Uygulama kullanıcının şirket verilerini kendi kendine silerse, `doWipe` bayrağı false olarak ayarlanabilir. Aksi takdirde uygulama, seçmeli silme işlemini SDK’nın başlatmasını sağlayabilir. Bu, uygulamanın seçmeli silme temsilcisine çağrı yapılmasına neden olur.
 
 Örnek:
+
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
@@ -456,7 +459,7 @@ Bu yöntemin dönüş değeri, uygulamanın gerekli yeniden başlatma işlemini 
 
 ## <a name="customize-your-apps-behavior-with-apis"></a>Uygulamanızın davranışını API’lerle özelleştirme
 
-Intune Uygulama SDK'sında, uygulamaya dağıtılan Intune APP ilkesi hakkında bilgi almak için çağırabileceğiniz birkaç API vardır. Uygulamanızın davranışını özelleştirmek için bu verileri kullanabilirsiniz. Aşağıdaki tabloda, kullanacağınız bazı temel Intune sınıfları hakkında bilgi sağlar.
+Intune Uygulama SDK'sında, uygulamaya dağıtılan Intune APP ilkesi hakkında bilgi almak için çağırabileceğiniz birkaç API vardır. Uygulamanızın davranışını özelleştirmek için bu verileri kullanabilirsiniz. Aşağıdaki tabloda, kullanacağınız bazı temel Intune sınıfları hakkında bilgi verilmektedir.
 
 Sınıf | Açıklama
 ----- | -----------
@@ -571,11 +574,11 @@ SUBQUERY (
 
 Eski UI:
 
-![Veri - iOS paylaşım kullanıcı Arabirimi eski paylaşma](./media/sharing-UI-old.png)
+![Verileri paylaşma-iOS eski paylaşım Kullanıcı arabirimi](./media/sharing-UI-old.png)
 
 Yeni UI:
 
-![Veri - yeni kullanıcı Arabirimi paylaşımı iOS paylaşım](./media/sharing-UI-new.png)
+![Verileri paylaşma-iOS yeni paylaşım Kullanıcı arabirimi](./media/sharing-UI-new.png)
 
 ## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>iOS uygulamalarınız için hedeflenen yapılandırmayı (APP/MAM uygulama yapılandırması) etkinleştirme
 
@@ -599,11 +602,11 @@ iOS'da MAM'ı hedefleyen bir uygulama yapılandırma ilkesi oluşturma hakkında
 
 Varsayılan olarak iOS için Intune Uygulama SDK'sı, aşağıdaki tür olaylara ilişkin telemetrileri toplar:
 
-* **Uygulama başlatma**: MDM kaydı ve benzeri olmadan Yönetim türü (MDM ile MAM), MAM göre MAM özellikli uygulama kullanımı hakkında bilgi Intune yardımcı olmak için.
+* **Uygulama başlatma**: Microsoft Intune, yönetim türüne göre MAM özellikli uygulama kullanımı hakkında bilgi edinmek için (MDM ile MAM, MDM kaydı olmadan MAM vb.).
 
-* **Kayıt çağrıları**: Başarı oranı ve istemci tarafından yapılan kayıt çağrılarının diğer performans Ölçümleriyle ilgili bilgi Intune yardımcı olmak için.
+* **Kayıt çağrıları**: Microsoft Intune, istemci tarafında başlatılan kayıt çağrılarının başarı oranını ve diğer performans ölçümlerini öğrenin.
 
-* **Intune eylemlerini**: Sorunları tanılayın ve Intune işlevselliği sağlayacak yardımcı olmak için Intune SDK'sı eylemler hakkında bilgi topluyoruz.
+* **Intune eylemleri**: Sorunları tanılamanıza ve Intune işlevselliğinin sağlanmasına yardımcı olmak için Intune SDK eylemleri hakkında bilgi topladık.
 
 > [!NOTE]
 > Intune Uygulama SDK’sı telemetri verilerini mobil uygulamanızdan Microsoft Intune’a göndermemeyi seçerseniz, Intune Uygulama SDK’sının telemetre yakalama özelliğini devre dışı bırakmanız gerekir. IntuneMAMSettings sözlüğünde `MAMTelemetryDisabled` özelliğini EVET olarak ayarlayın.
@@ -620,17 +623,17 @@ Bir kimliğin yalnızca dizi olarak tanımlandığını aklınızda bulundurun. 
 
 Kimlik, bir hesabın kullanıcı adıdır (örneğin, user@contoso.com). Geliştiriciler uygulamanın kimliğini aşağıdaki düzeylerde ayarlayabilir:
 
-* **İşlem Kimliği**: İşlem genelindeki kimliği ayarlar ve genellikle tek kimlikli uygulamalar için kullanılır. Bu kimlik tüm görevleri, dosyaları ve UI’yi etkiler.
+* **İşlem kimliği**: İşlem genelindeki kimliği ayarlar ve genellikle tek kimlik uygulamaları için kullanılır. Bu kimlik tüm görevleri, dosyaları ve UI’yi etkiler.
 
-* **UI kimliği**: UI görevlerine Kes/kopyala/yapıştır, PIN, kimlik doğrulaması ve veri paylaşımı gibi ana iş parçacığında hangi ilkelerin uygulanacağını belirler. UI kimliği, şifreleme ve yedekleme gibi dosya görevlerini etkilemez.
+* **UI kimliği**: Ana iş parçacığında, kesme/kopyalama/yapıştırma, PIN, kimlik doğrulaması ve veri paylaşımı gibi kullanıcı arabirimi görevlerine hangi ilkelerin uygulanacağını belirler. UI kimliği, şifreleme ve yedekleme gibi dosya görevlerini etkilemez.
 
-* **İş parçacığı kimliği**: Geçerli iş parçacığında hangi ilkelerin uygulanacağını etkiler. Bu kimlik tüm görevleri, dosyaları ve UI’yi etkiler.
+* **Iş parçacığı kimliği**: Geçerli iş parçacığında hangi ilkelerin uygulanacağını etkiler. Bu kimlik tüm görevleri, dosyaları ve UI’yi etkiler.
 
 Kullanıcı yönetilse de yönetilmese de kimlikleri uygun olarak ayarlamak uygulamanın sorumluluğudur.
 
 Herhangi bir zamanda, her iş parçacığı UI görevleri ve dosya görevleri için etkili bir kimliğe sahiptir. Bu, varsa hangi ilkelerin uygulanması gerektiğini denetlemek için kullanılan kimliktir. Kimlik, “kimliksiz” ise veya kullanıcı yönetilmiyorsa hiçbir ilke uygulanmaz. Aşağıdaki diyagramlar etkin kimliklerin nasıl belirlendiğini gösterir.
 
-  ![Intune uygulama SDK'sı iOS: Kimliği belirleme işlemi](./media/ios-thread-identities.png)
+  ![Intune uygulama SDK 'Sı iOS: Kimlik belirleme işlemi](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>İş parçacığı kuyrukları
 
@@ -737,9 +740,9 @@ Evet, BT yöneticisi uygulamaya bir seçmeli silme komutu gönderebilir. Bu, kul
 
 Evet! Açık kaynak örnek uygulamamız [Wagr for iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App)'yi kısa süre önce yeniledik. Wagr artık Intune Uygulama SDK'sının kullanıldığı uygulama koruma ilkesi için etkinleştirildi.
 
-### <a name="how-can-i-troubleshoot-my-app"></a>Uygulamam'ilgili sorunları nasıl giderebilirim?
+### <a name="how-can-i-troubleshoot-my-app"></a>Uygulamamda nasıl sorun giderebilirim?
 
-9\.0.3+ iOS için Intune SDK'sı, ilkeleri test etmek ve hatalarını günlüğe kaydetme için mobil uygulama tanılama bir konsolda ekleme özelliği destekler. `IntuneMAMDiagnosticConsole.h` tanımlar `IntuneMAMDiagnosticConsole` sınıf arabirimi, geliştiricilerin Intune tanılama konsolunu görüntülemek için kullanabilirsiniz. Bu seçenek, son kullanıcıların veya geliştiricilerin toplamak ve olabilir herhangi bir sorunun tanılanmasına yardımcı olmak için Intune günlüklerini paylaşmak için test sırasında sağlar. Bu API için tümleştiricileri isteğe bağlıdır.
+İOS için Intune SDK 9.0.3 +, ilkeleri ve günlüğe kaydetme hatalarını test etmek üzere mobil uygulama içinde bir Tanılama Konsolu ekleyebilme özelliğini destekler. `IntuneMAMDiagnosticConsole.h`geliştiricilerin Intune tanılama konsolunu göstermek için kullanabileceği sınıfarabiriminitanımlar.`IntuneMAMDiagnosticConsole` Bu, test sırasında son kullanıcıların veya geliştiricilerin, sahip oldukları herhangi bir sorunu tanılamaya yardımcı olmak için Intune günlüklerini toplamasını ve paylaşmasını sağlar. Bu API, tümleştiricileri için isteğe bağlıdır.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Uygulamanızı App Store’a gönderme
 
@@ -756,4 +759,5 @@ Intune Uygulama SDK’sının hem statik kitaplığı hem de çerçeve derlemesi
     ```bash
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
+
     İlk komut, benzetici mimarilerini çerçevenin DYLIB dosyasından kaldırır. İkinci komut, yalnızca cihaz DYLIB dosyasını çerçeve klasörüne kopyalar.

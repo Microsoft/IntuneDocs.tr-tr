@@ -15,19 +15,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 62d30d0c404fb8393f5aa2c999cd1fc09b266350
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572611"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735893"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows bilgisayarlara Intune yazılım istemcisini yükleme
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Aşağıda açıklandığı gibi Windows bilgisayarlarını [mobil cihaz yönetimi (MDM) ile mobil cihazlar olarak](windows-enroll.md) ya da Intune yazılım istemcisi ile bilgisayarlar olarak yönetmek için Microsoft Intune’u kullanabilirsiniz. Ancak Microsoft, müşterilerin mümkün olan her durumda [MDM yönetim çözümünü kullanmasını](windows-enroll.md) önerir. Daha fazla bilgi için [Windows PC'leri bilgisayarlar veya mobil cihazlar olarak yönetmeyi karşılaştırma](pc-management-comparison.md) 
+> Aşağıda açıklandığı gibi Windows bilgisayarlarını [mobil cihaz yönetimi (MDM) ile mobil cihazlar olarak](windows-enroll.md) ya da Intune yazılım istemcisi ile bilgisayarlar olarak yönetmek için Microsoft Intune’u kullanabilirsiniz. Ancak Microsoft, müşterilerin mümkün olan her durumda [MDM yönetim çözümünü kullanmasını](windows-enroll.md) önerir. Daha fazla bilgi için bkz. [Windows bilgisayarlarını bilgisayar veya mobil cihaz olarak yönetme karşılaştırması](pc-management-comparison.md) 
 
 
 Windows bilgisayarlar Intune istemci yazılımı yüklenerek kaydedilebilir. Intune istemci yazılımı aşağıdaki yöntemler kullanılarak yüklenebilir:
@@ -86,20 +86,21 @@ Intune istemci yazılımının kullanıcılar tarafından yüklendiği yöntemle
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>İstemci yazılımını bir görüntünün parçası olarak dağıtma
 Aşağıdaki yordamı örnek alarak Intune istemci yazılımını bilgisayarlara bir işletim sistemi görüntüsünün parçası olarak dağıtabilirsiniz:
 
-1. **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert** istemci yükleme dosyalarını, referans bilgisayarındaki **%Systemdrive%\Temp\Microsoft_Intune_Setup** klasörüne kopyalayın.
+1.           **Microsoft_Intune_Setup.exe** ve **MicrosoftIntune.accountcert** istemci yükleme dosyalarını, referans bilgisayarındaki **%Systemdrive%\Temp\Microsoft_Intune_Setup** klasörüne kopyalayın.
 
-2. **SetupComplete.cmd** betiğine aşağıdaki komutu ekleyerek **WindowsIntuneEnrollPending** kayıt defteri girişini oluşturun:
+2.           **SetupComplete.cmd** betiğine aşağıdaki komutu ekleyerek **WindowsIntuneEnrollPending** kayıt defteri girişini oluşturun:
 
-    ```
+    ```cmd
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
 3. /PrepareEnroll komut satırı bağımsız değişkeniyle kayıt paketini çalıştırmak için **setupcomplete.cmd**’ye aşağıdaki komutu ekleyin:
 
-    ```
+    ```cmd
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
     ```
+
     > [!TIP]
     > **SetupComplete.cmd** betiği, bir kullanıcı oturum açmadan önce Windows Kurulumu’nun sistemde değişiklik yapmasını sağlar. **/PrepareEnroll** komut satırı bağımsız değişkeni, Windows Kurulumu tamamlandıktan sonra, hedeflenen bir bilgisayarı Intune hizmetine otomatik olarak kaydolmaya hazırlar.
 
@@ -125,8 +126,8 @@ Kullanıcılara bir Intune lisansı atanmışsa ve kuruluşun MDM Yetkilisi, Int
 
 - Windows 10 veya Windows 8.1 bilgisayarı kullanıcılarına iki kayıt seçeneği gösterilir:
 
-  - **Bilgisayarı mobil cihaz olarak kaydetme**: Kullanıcıların **Bul nasıl kaydolacağınızı** düğmesine tıklayın ve Bilgisayarlarını mobil bir cihaz olarak kaydetme yönergelerine alınır. MDM kaydı varsayılan ve tercih edilen kayıt seçeneği olduğundan bu düğme göze çarpacak bir şekilde görüntülenir. Ancak MDM seçeneği, yalnızca istemci yazılımı yüklemeyi kapsayan bu makale için kapsam dışıdır.
-  - **Bilgisayar Intune istemci yazılımını kullanarak kaydetme**: Kullanıcılarınıza söylemeniz gerekir **indirmek için buraya tıklayın** istemci yazılımı yüklemesi boyunca götüren bir bağlantı,.
+  - **Bilgisayarı mobil cihaz olarak kaydet**: Kullanıcılar **nasıl kayıt yapılacağını öğrenin** düğmesini seçer ve bilgisayarlarını mobil cihaz olarak kaydetme yönergeleri için nasıl yapılır? MDM kaydı varsayılan ve tercih edilen kayıt seçeneği olduğundan bu düğme göze çarpacak bir şekilde görüntülenir. Ancak MDM seçeneği, yalnızca istemci yazılımı yüklemeyi kapsayan bu makale için kapsam dışıdır.
+  - **Intune istemci yazılımını kullanarak bilgisayarı kaydetme**: Kullanıcılarınıza **Bu bağlantıyı indirmek için buraya tıklayın** bağlantısını seçmesini ve istemci yazılımı yüklemesi aracılığıyla bunu kullanmasını söylemeniz gerekir.
 
 Aşağıdaki tabloda seçenekler özetlenmektedir.
 
