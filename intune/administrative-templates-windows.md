@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure'da Windows 10 cihazları için şablonları kullanma | Microsoft Docs
-description: Yönetim Şablonları Intune Windows 10 cihazları için ayarlar grupları oluşturmak için kullanın. Bu ayarları bir cihaz yapılandırma profilinde de Office programları denetlemek, Internet Explorer özelliklerini güvenli, OneDrive erişimi denetlemek, Uzak Masaüstü özelliklerini kullanmak, otomatik etkinleştirmek, güç yönetimi ayarlarını ayarlayın, HTTP yazdırma, farklı bir kullanıcı için kullanın oturum açma seçenekleri ve olay günlüğünün boyutunu denetimi.
+title: Microsoft Intune-Azure 'da Windows 10 cihazları için şablonları kullanma | Microsoft Docs
+description: Windows 10 cihazları için ayar grupları oluşturmak üzere Microsoft Intune içindeki Yönetim şablonlarını kullanın. Office programlarını denetlemek için cihaz yapılandırma profilinde Bu ayarları kullanın, Internet Explorer 'daki güvenli özellikler, OneDrive 'a erişimi denetleme, uzak masaüstü özelliklerini kullanma, otomatik yürütmeye olanak sağlama, güç yönetimi ayarlarını belirleme, HTTP yazdırmayı kullanma, farklı kullan Kullanıcı oturum açma seçenekleri ve olay günlüğü boyutunu denetleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,66 +15,79 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9309b110d37795f840e10f22b71b06507aea4c62
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 0bfad3feed6daef1930c235bec9c25e809da46c5
+ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373733"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67842781"
 ---
-# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Intune Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonları kullanma
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune 'de Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonlarını kullanın
 
-Kuruluşunuzdaki cihazları yönetirken, farklı cihaz gruplarına uygulanan ayarları bir grup oluşturmak istiyorsunuz. Örneğin, birkaç cihaz gruplarına sahip. GroupA için ayarları belirli bir kümesini atamak istediğiniz. GroupB için ayarları farklı bir kümesini atamak istediğiniz. Yapılandırabileceğiniz ayarların basit bir görünümünü de istiyor.
+Kuruluşunuzdaki cihazları yönetirken, farklı cihaz gruplarına uygulanan bir ayarlar grubu oluşturmak istersiniz. Örneğin, birkaç cihaz grubunuz vardır. GroupA için belirli bir ayar kümesi atamak istersiniz. GroupB için farklı bir ayar kümesi atamak istersiniz. Ayrıca yapılandırabileceğiniz ayarların basit bir görünümünü de istiyorsunuz.
 
-Kullanarak bu görevi tamamlayabilirsiniz **Yönetim Şablonları** Microsoft Intune. Yönetim Şablonları yüzlerce Internet Explorer, Microsoft Office programları, Uzak Masaüstü özellikleri denetleyen ayar Ekle, Onedrive'a erişmek, resimli parola veya PIN oturum açmak için ve daha fazlasını kullanın. Bu şablonlar, Grup İlkesi (GPO) ayarlarını Active Directory (AD) benzer ve olan [ADMX destekli ayarları](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (başka bir Docs sitesi açılır) XML kullanın. Ancak, Intune şablonlarında %100 bulut tabanlı. Daha fazla basit sundukları ve istediğiniz şekilde ayarları yapılandırın ve ayarları bulmak için modellemeniz.
+Bu görevi, Microsoft Intune **Yönetim Şablonları** kullanarak tamamlayabilirsiniz. Yönetim Şablonları, Internet Explorer, Microsoft Office programlar, Uzak Masaüstü, OneDrive, parolalar ve PIN 'Ler gibi özellikleri denetleyen yüzlerce ayarı içerir. Bu ayarlar, grup yöneticilerinin bulutu kullanarak grup ilkelerini yönetmesine olanak tanır.
 
-**Yönetim Şablonları** Intune'da yerleşiktir ve OMA-URI kullanma dahil olmak üzere, tüm özelleştirmeler gerekmez. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, bu şablon ayarları, Windows 10 cihazlarınızı yönetmek için bir tek Mağazanız kullanın.
+Windows ayarları Active Directory (AD) içindeki Grup İlkesi (GPO) ayarlarına benzerdir. Bu ayarlar Windows 'da yerleşiktir ve XML kullanan [ADMX ile desteklenen ayarlar](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (başka bir Microsoft sitesi açar). Office ayarları, ADMX tarafından alınır ve [Office Yönetim Şablonu DOSYALARıNDAKI](https://www.microsoft.com/download/details.aspx?id=49030)ADMX ayarlarını kullanır. Ancak, Intune şablonları% 100 bulut tabanlıdır. Ayarları yapılandırmak için basit ve düz ileri bir yol sunar ve istediğiniz ayarları bulur.
 
-Bu makalede, Windows 10 cihazları için bir şablon oluşturma adımları listelenir ve filtre Intune tüm kullanılabilir ayarları gösterilmektedir. Şablonu oluşturduğunuzda, bir cihaz yapılandırma profili oluşturur. Atayın veya bu profili, kuruluşunuzdaki Windows 10 cihazlarına dağıtabilirsiniz.
+**Yönetim Şablonları** , Intune 'da yerleşik olarak bulunur ve OMA-URI kullanımı dahil olmak üzere herhangi bir özelleştirme gerektirmez. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak, Windows 10 cihazlarınızı yönetmek için bu şablon ayarlarını tek durdurulmalı bir mağaza olarak kullanın.
 
-## <a name="create-a-template"></a>Bir şablon oluşturma
+Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listelenir ve Intune 'da kullanılabilen tüm ayarların nasıl filtreleneceği gösterilir. Şablonu oluşturduğunuzda, bir cihaz yapılandırma profili oluşturur. Daha sonra bu profili, kuruluşunuzdaki Windows 10 cihazlarına atayabilir veya dağıtabilirsiniz.
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+## <a name="before-you-begin"></a>Başlamadan önce
+
+- Bu ayarlardan bazıları Windows 10 sürüm 1703 (RS2) ile başlayarak kullanılabilir. En iyi deneyim için, Windows 10 Enterprise sürüm 1903 (19H1) ve daha yeni bir sürümü kullanmanız önerilir.
+
+- Windows ayarları [Windows Ilkesi CSP 'leri](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) kullanır (başka bir Microsoft sitesi açar). CSP 'Ler Home, Professional, Enterprise vb. gibi farklı Windows sürümlerinde çalışır. CSP 'nin belirli bir sürümde çalışıp çalışmadığını görmek için [Windows Ilke CSP 'lerine](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) gidin (başka bir Microsoft sitesi açar).
+
+## <a name="create-a-template"></a>Şablon oluşturma
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Profil için bir ad girin.
     - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Platform**: Seçin **Windows 10 ve üzeri**.
-    - **Profil türü**: Seçin **Yönetimsel Şablonlar (Önizleme)** .
+    - **Platform**: **Windows 10 ve üstünü**seçin.
+    - **Profil türü**: **Yönetim Şablonları**seçin.
 
-4. **Oluştur**’u seçin. Yeni pencerede seçin **ayarları**. Her ayar listelenir ve kullanabileceğiniz önce ve sonra diğer ayarları görmek için okları:
+4. **Oluştur**’u seçin. Yeni pencerede **Ayarlar**' ı seçin. Her ayar listelenir ve daha fazla ayarı görmek için önceki ve sonraki okları kullanabilirsiniz:
 
-    ![Ayarları örnek listesini görmek ve önceki ve sonraki düğmelerini kullanın](./media/administrative-templates-windows/sample-settings-list-next-page.png)
+    ![Ayarların örnek listesini görüntüleyin ve önceki ve sonraki düğmeleri kullanın](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
 
-5. Herhangi bir ayar seçin. Örneğin, **izin Dosya indirmeleri**. Ayar ayrıntılı bir açıklaması gösterilir. Tercih **etkinleştirme**, **devre dışı**, veya ayarı olarak bırakın **yapılandırılmadı** (varsayılan). Ayrıntılı bir açıklaması, ayrıca seçtiğinizde neler olacağını açıklayan **etkinleştirme**, **devre dışı**, veya **yapılandırılmadı**.
-6. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+    > [!TIP]
+    > Intune 'daki Windows ayarları, Yerel Grup İlkesi Düzenleyicisi (`gpedit`) ' de gördüğünüz şirket içi Grup İlkesi yoluyla bağıntı sağlar.
 
-Devam ayarlarının listesini sırasıyla izleyin ve ortamınızda istediğiniz ayarları yapılandırın. Bazı örnekler şunlardır:
+5. Varsayılan olarak, açılan listede **Tüm ürünler**gösterilmektedir. Ayrıca, ayarları yalnızca **Windows** ayarlarını gösterecek şekilde filtreleyip yalnızca **Office** ayarlarını gösterebilirsiniz:
 
-- Kullanım **VBA makrosu bildirim ayarları** VBA makroları Word ve Excel gibi farklı Microsoft Office programlarında işlemek için ayarı.
-- Kullanım **izin Dosya indirmeleri** izin vermek veya önlemek için ayarı Internet Explorer'dan indirir.
-- Kullanım **(prize takılı) bir bilgisayar uyku modundan çıkar zaman parola iste** ayarı cihazları uyku modundan çıkarılırken bir parola için kullanıcılara sor.
-- Kullanım **indirme işaretsiz ActiveX denetimlerini** yüklenmesini ayarı kullanıcıları engellemek işaretsiz Internet Explorer'dan ActiveX denetimleri.
-- Kullanım **Sistem Geri Yükleme'yi** izin vermek veya kullanıcıların cihazda sistem geri yükleme çalıştırmasını engellemek için ayarı.
+    ![Intune 'da yönetim şablonlarındaki tüm pencereleri veya tüm Office ayarlarını göstermek için listeyi filtreleyin](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+6. Herhangi bir ayarı seçin. Örneğin, **Office**üzerinde filtreleme yapın ve **Kısıtlanmış taramayı etkinleştir**' i seçin. Ayarın ayrıntılı bir açıklaması gösterilir. **Etkin**, **devre dışı**seçeneğini belirleyin veya ayarı **Yapılandırılmadı** (varsayılan) olarak bırakın. Ayrıntılı açıklama Ayrıca **etkin**, **devre dışı**veya **yapılandırılmamış**' ı seçtiğinizde ne olacağını açıklar.
+7. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+
+Ayarlar listesinden ilerleyin ve ortamınızda istediğiniz ayarları yapılandırın. Bazı örnekler şunlardır:
+
+- Word ve Excel dahil farklı Microsoft Office programlarındaki VBA makrolarını işlemek için **VBA makro bildirimi ayarları** ayarını kullanın.
+- Internet Explorer 'dan İndirmeleri izin vermek veya engellemek için **Dosya Indirmelerine Izin ver** ayarını kullanın.
+- Cihazlar uyku modundan çıktığında kullanıcılardan parola istemek için **bir bilgisayar uyandığında parola iste (prize takılıyken)** ayarını kullanın.
+- Kullanıcıların Internet Explorer 'dan imzasız ActiveX denetimlerini indirmesini engellemek için **Imzasız ActiveX denetimlerini indir** ayarını kullanın.
+- Kullanıcıların cihazda sistem geri yükleme çalıştırmasını sağlamak veya bunu engellemek için **sistemi geri yüklemeyi** kapat ayarını kullanın.
 - Ve çok daha fazlası...
 
-## <a name="find-some-settings"></a>Bazı ayarları bulunamıyor
+## <a name="find-some-settings"></a>Bazı ayarları bul
 
-Bu şablonları yüzlerce ayar vardır. Belirli ayarları bulmayı kolaylaştırmak için yerleşik özelliklerini kullanabilirsiniz:
+Bu şablonlarda yüzlerce ayar bulunur. Belirli ayarları bulmayı kolaylaştırmak için yerleşik özellikleri kullanın:
 
-- Şablonunuzda seçin **ayarları**, **durumu**, veya **yolu** Listeyi sıralamak için sütun. Örneğin, **yolu** , tüm ayarlarını görmek için sütun `Microsoft Excel` yolu:
+- Şablonunuzda, listeyi sıralamak için **Ayarlar**, **durum**, **ayar türü**veya **yol** sütunlarını seçin. Örneğin, `Microsoft Excel` yoldaki tüm ayarları görmek için **yol** sütununu seçin:
 
-  ![Yol alfabetik olarak sıralamak için tıklayın](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  ![Intune 'daki yönetim şablonlarında Grup İlkesi veya ADMX yolu tarafından gruplanmış tüm ayarları göstermek için yol ' a tıklayın](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Şablonunuz, kullanmak **arama** kutusu belirli ayarları bulunamıyor. Örneğin, arama `copy`. Tüm ayarlarla `copy` gösterilir:
+- Şablonunuzda, belirli ayarları bulmak için **arama** kutusunu kullanın. Başlık veya yol ayarlayarak arama yapabilirsiniz. Örneğin, araması `copy`yapın. Tüm ayarlar `copy` gösterilir:
 
-  ![Yol alfabetik olarak sıralamak için tıklayın](./media/administrative-templates-windows/search-copy-settings.png)
+  ![Intune 'da yönetim şablonlarındaki tüm Windows ve Office ayarlarını göstermek için Kopyala araması yapın](./media/administrative-templates-windows/search-copy-settings.png) 
 
-  Başka bir örnekte, arama `microsoft word`. Microsoft Word program için ayarladığınız tüm ayarları görürsünüz. Arama `explorer` tüm Internet Explorer ayarlarını görmek için şablonunuza ekleyebilirsiniz.
-
-Bu özelliği kullanan [CSP'ler Windows İlkesi](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (başka bir Docs sitesi açılır). CSP'ler Windows, Home, Professional, Enterprise vb. gibi farklı sürümleri üzerinde çalışır. Bir CSP belirli bir sürümü üzerinde çalışıp çalışmadığını görmek için Git [CSP'ler Windows İlkesi](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (başka bir Docs sitesi açılır).
+  Başka bir örnekte, için `microsoft word`arama yapın. Microsoft Word programı için ayarlayabileceğiniz tüm ayarları görürsünüz. Şablonunuza ekleyebileceğiniz tüm Internet Explorer ayarlarını görmek içinaramayapın.`explorer`
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Şablon oluşturulur, ancak hiçbir şey henüz yapmakta olduğu değil. Ardından, [şablonun bir profili de denir, Ata](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
+Şablon oluşturuldu, ancak henüz bir şey yapmadım. Sonra, [profil olarak da adlandırılan şablonu atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).

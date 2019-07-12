@@ -1,12 +1,12 @@
 ---
-title: Geliştirme - Intune
+title: Geliştirme-Microsoft Intune
 titleSuffix: ''
-description: Geliştirme Intune özellikleri
+description: Geliştirmede Microsoft Intune Özellikler
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,26 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 47e1a3870e1da1514ad07e8dad5c6117ffc108a9
+ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494251"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67842711"
 ---
-# <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune - Temmuz 2019 geliştirme
+# <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune için geliştirme sırasında-Temmuz 2019
 
-İçinde hazırlık ve planlama, bu sayfa yardımcı olmak için Intune kullanıcı Arabirimi güncelleştirmeleri ve özelliklerinin listesi geliştirme aşamasındadır ancak henüz serbest. Buna ek olarak:
+Hazırlık ve planlamada yardımcı olması için, bu sayfada Intune Kullanıcı Arabirimi güncelleştirmeleri ve geliştirme aşamasında olan ancak henüz yayınlanmayan özellikler listelenir. Buna ek olarak:
 
-- Bir değişiklik önce harekete gerekecektir tahmin, biz tamamlayıcı bir Office ileti Merkezi'nde gönderi yayınlayacaksınız.
-- Ne zaman bir özellik, üretimde ya da önizleme olarak başlatılır veya genel kullanıma sunulan özellik açıklaması bu sayfayı kapatmak ve üzerine taşınır [yenilikler](whats-new.md).
-- Bu sayfada ve [yenilikler](whats-new.md) düzenli olarak güncelleştirilir. Ek güncelleştirmeleri daha sonra denetleyin.
-- Başvurmak [M365 yol haritası](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) stratejik teslim edilebilirleri ve zaman çizelgeleri için.
+- Bir değişiklikten önce işlem yapmanız gerektiğini tahmin ediyorsanız, tamamlayıcı bir Office Ileti merkezi gönderisini yayımlayacağız.
+- Bir özellik üretimde başlatıldığında, önizleme veya genel kullanıma açık olarak, özellik açıklaması bu sayfayı ve yenilikler [sayfasına](whats-new.md)taşınır.
+- Bu sayfa ve yenilikler [sayfası](whats-new.md) düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha sonra denetleyin.
+- Stratejik teslim edilebilirler ve zaman çizelgeleri için [M365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) inceleyin.
 
 > [!Note]
-> Bu öğeler, gelecekteki bir sürümde sunulacak Intune özellikleri hakkında daha fazla geçerli beklentileri Microsoft'un yansıtır. Tarih ve tek tek özellikler değişebilir. Geliştirme tüm öğeler, bu sayfada bir özellik açıklaması içerir.
+> Bu öğeler, gelecek sürümlerde sunulan Intune özellikleri hakkında Microsoft 'un geçerli beklentilerini yansıtır. Tarihler ve bireysel Özellikler değişebilir. Geliştirmede tüm öğelerin bu sayfada bir özellik açıklaması yoktur.
 
-**RSS akışı**: Bu sayfa aşağıdaki URL'yi kullanarak akış okuyucuya yapıştırarak güncelleştirildiğinde bildirim alın: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
+**RSS akışı**: Aşağıdaki URL 'YI kopyalayıp akış okuyucunuzun içine yapıştırarak Bu sayfa güncelleştirildikten sonra bildirim alın:`https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
 
 <!--
 ## What's coming to Intune in the Azure portal 
@@ -59,47 +59,44 @@ ms.locfileid: "67494251"
 ## <a name="app-management"></a>Uygulama yönetimi
 
 
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Kullanıcılar ve gruplar için özelleştirilmiş bildirimleri    <!-- 16766574   -->
-İOS ve Android cihazlarda Intune ile yönettiğiniz kullanıcılar Şirket portalı uygulamasından özel geçici anında iletme bildirimleri göndermek mümkün olan en kısa sürede olacaktır. Bu özel bildirimleri belirli Intune özelliklerine bağlı değil ve gerektiren bazı göndermek istediğiniz genel bildirimleri dahil olmak üzere herhangi bir amaçla kullanılabilir veya tüm çalışanlar.  
+### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Kullanıcılar ve gruplar için özelleştirilmiş bildirimler    <!-- 16766574   -->
+Yakında, Intune ile yönettiğiniz iOS ve Android cihazlarda kullanıcılara Şirket Portalı uygulamadan özel geçici anında iletme bildirimleri gönderebileceksiniz. Bu özel bildirimler belirli Intune özelliklerine bağlı değildir ve herhangi bir amaçla veya çalışanlarınıza göndermek istediğiniz genel bildirimler dahil olmak üzere, ihtiyacınız olan herhangi bir amaçla kullanılabilir.  
 
-### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Uygulama bildirimi içeriği kuruluş hesapları için yapılandırma <!-- 2576686 -->
-Android ve iOS cihazlarında Intune uygulama koruma ilkelerini (APP), kuruluş hesapları için denetimi uygulama bildirimi içeriği için izin verir. Bu özellik, uygulamalardan desteği gerektirir ve tüm APP etkin uygulamalar için kullanılamıyor olabilir. Uygulama hakkında daha fazla bilgi için bkz. [uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
+### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Kuruluş hesapları için uygulama bildirim içeriğini yapılandırma <!-- 2576686 -->
+Android ve iOS cihazlarında Intune uygulama koruma ilkeleri (uygulama), kuruluş hesapları için uygulama bildirim içeriğini denetlemenize olanak tanır. Bu özellik, uygulamalardan destek isteyecek ve UYGULAMANıN etkin olduğu tüm uygulamalarda kullanılamayabilir. UYGULAMA hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
 
-### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Android iş profilleri için raporlama kullanılabilir Google Play uygulaması <!-- 3041956  -->
-Android iş profili cihazları üzerinde kullanılabilir uygulama yüklemeleri için yönetilen Google Play uygulamaları'nın yüklü sürümü yanı sıra, uygulama yükleme durumunu görüntüleyebilirsiniz. Daha fazla bilgi için [uygulama koruma ilkelerini izleme](app-protection-policies-monitor.md), [yönetme Android iş profili cihazları Intune ile](android-enterprise-overview.md) ve [yönetilen Google Play uygulama türü](apps-add-android-for-work.md#managed-google-play-app-type).
+### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Android iş profilleri için kullanılabilir Google Play uygulama raporlaması <!-- 3041956  -->
+Android iş profili cihazlarına kullanılabilir uygulama yüklemeleri için, uygulama yükleme durumunu ve yönetilen Google Play uygulamalarının yüklü sürümünü görüntüleyebilirsiniz. Daha fazla bilgi için bkz. [Uygulama koruma ilkelerini izleme](app-protection-policies-monitor.md), [Android Iş profili cihazlarını Intune ile yönetme](android-enterprise-overview.md) ve [uygulama türü ile yönetilen Google Play](apps-add-android-for-work.md#managed-google-play-app-type).
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Cihaz yapılandırması
 
 
-### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>İOS için Ikev2 VPN profilleri için destek <!-- 1943438 -->
-Ikev2 protokolü kullanarak iOS yerel VPN istemcisi için VPN profillerini oluşturmak mümkün olacaktır. Ikev2, yeni bir bağlantı türü olduğundan **cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > **iOS**  Platform > **VPN** profil türü için > **ayarları**.
+### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>İOS için IKEv2 VPN profilleri desteği <!-- 1943438 -->
+Ikev2 protokolünü kullanarak iOS Native VPN istemcisi için VPN profilleri oluşturabileceksiniz. Ikev2, **cihaz yapılandırma** > **profillerinde** > yeni bir bağlantı türüdür, profil türü > **ayarları**için **VPN** > Platform için**iOS** **oluşturun** > .
 
-Bu VPN profillerini yerel VPN istemcisini yapılandırın. Bu nedenle, hiçbir VPN istemci uygulamaları yüklü veya yönetilen cihazlara gönderildi. Bu özellik cihazlar gerektirir kaydedilmesi gereken Intune'a (MDM kaydı).
+Bu VPN profilleri, yerel VPN istemcisini yapılandırır. Bu nedenle, yönetilen cihazlara yüklenmiş veya hiçbir VPN istemci uygulaması gönderilmez. Bu özellik cihazların Intune 'A (MDM kaydı) kaydedilmesini gerektirir.
 
-Yapılandırabileceğiniz geçerli VPN ayarları görmek için Git [Microsoft Intune iOS cihazlarında VPN yapılandırma ayarları](vpn-settings-ios.md).
+Yapılandırabileceğiniz geçerli VPN ayarlarını görmek için [Microsoft Intune iOS CIHAZLARıNDA VPN ayarlarını yapılandırma](vpn-settings-ios.md)bölümüne gidin.
 
 Şunun için geçerlidir: iOS
 
-### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>"Uygulanabilirlik kuralları" kullandığınızda Windows 10 cihaz yapılandırma profilleri oluşturma <!-- 2549910 -->
-Windows 10 cihaz yapılandırma profilleri oluşturma (**cihaz Yapılandırması** > **profilleri** > **profili oluşturma**  >  **Windows 10** platform için). Oluşturma tutulacak bir **Uygulanabilirlik kuralı** profili yalnızca bir belirli sürüm veya belirli bir sürüme uygular. Örneğin, bazı BitLocker ayarları sağlayan bir profil oluşturun. Profili eklediğinizde profil, yalnızca Windows 10 Enterprise çalıştıran cihazlar için uygular bir geçerlilik kuralı kullanın.
+### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>Windows 10 cihaz yapılandırma profilleri oluştururken "uygulanabilirlik kuralları" nı kullanın <!-- 2549910 -->
+Windows 10 cihaz yapılandırma profilleri oluşturun (**cihaz yapılandırma** > **profilleri** > platform için**Windows 10** **profili** > oluşturur). Profil yalnızca belirli bir sürüm veya belirli bir sürüm için geçerli olacak şekilde bir **uygulanabilirlik kuralı** oluşturabileceksiniz. Örneğin, bazı BitLocker ayarlarını sağlayan bir profil oluşturursunuz. Profili ekledikten sonra, profilin yalnızca Windows 10 Enterprise çalıştıran cihazlara uygulanması için bir uygulanabilirlik kuralı kullanın.
 
 Şunun için geçerlidir: 
 - Windows 10 ve üzeri
 
-### <a name="administrative-templates-for-group-policy---------3510695---"></a>Grup İlkesi Yönetim Şablonları     <!--  3510695 -->
-Bulutta cihazlar için güvenlik geliştirmeye yardımcı olmak için biz Windows bilgisayarlar için select Grup İlkesi ayarlarını yapılandırmak için Intune'u kullanmayı olanak tanıyan Yönetim Şablonları yayımlar.  Bu şablonlar, Office, Windows ve OneDrive 2500 ek ayarlar kadar sağlamak için ilke yapılandırma hizmet sağlayıcısı (CSP) kullanın.
+### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>MacOS için dosya kasasını yönetme   <!--  3858502 + 1210104   -->
+MacOS cihazları için dosya Kasası anahtar şifrelemesini yönetmek üzere bir Intune Endpoint Protection cihaz yapılandırma profili kullanabilirsiniz. Bu, kurumsal cihazlarınızın şifreleme anahtarlarını Emanet, görüntüleme ve döndürme bilgilerini içerir. Son kullanıcılar bu anahtarları Şirket Portalı Web sitesinden alabilecektir.
 
-### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>MacOS için filevault özelliğini yönetme   <!--  3858502 + 1210104   -->
-MacOS cihazları için anahtar şifreleme filevault özelliğini yönetmek için Intune endpoint protection cihaz yapılandırma profili kullanmak mümkün olacaktır. Bu, görüntüleme ve kurumsal cihazlarınıza şifreleme anahtarlarını döndürme, emanet içerir. Son kullanıcıların şirket Portalı Web sitesi üzerinden bu anahtarları almak mümkün olacaktır.
+### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender güvenlik duvarı için Gelişmiş ayarlar   <!--  1311949     -->
+Genel önizleme olarak, Windows Defender istemcileri üzerinde özel güvenlik duvarı kurallarını yönetmek için yakında Intune 'u kullanabilirsiniz.  
 
-### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender Güvenlik Duvarı için Gelişmiş ayarları   <!--  1311949     -->
-Genel önizleme olarak, yakında istemciler için Windows Defender'ın özel bir güvenlik duvarı kurallarını yönetmek için Intune kullanmak mümkün olacaktır.  
+### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise için bir OEMConfig profili oluştururken yeni yapılandırma Tasarımcısı <!-- 3712769  -->
+Intune 'da, bir OEMConfig uygulaması kullanan bir cihaz yapılandırma profili oluşturabilirsiniz (cihaz yapılandırma > profilleri > > SDK için Android Enterprise > profil türü için OEMConfig). Bunu yaptığınızda bir JSON Düzenleyicisi, değiştirmeniz için bir şablon ve değerlerle açılır. Bu güncelleştirme; başlıklar, açıklamalar ve daha fazlası dahil olmak üzere uygulamada Embedded ayrıntıları gösteren gelişmiş bir kullanıcı deneyimine sahip bir yapılandırma Tasarımcısı içerir. JSON Düzenleyicisi hala kullanılabilir ve yapılandırma tasarımcısında yaptığınız tüm değişiklikleri gösterir.
 
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise için OEMConfig profili oluştururken, yeni yapılandırma Tasarımcısı <!-- 3712769  -->
-Intune'da OEMConfig uygulama kullanan bir cihaz yapılandırma profili oluşturabilirsiniz (cihaz yapılandırması > profiller > profil oluşturma > Android Kurumsal platform için > OEMConfig profil türü için). Bunu yaptığınızda, bir şablon ve değerlerini değiştirmenizi ile JSON Düzenleyicisi açılır. Bu güncelleştirme, başlıklarını, açıklamaları ve daha fazlası dahil olmak üzere uygulamada, katıştırılmış ayrıntıları gösteren Gelişmiş bir kullanıcı deneyiminin ile bir yapılandırma Tasarımcısı içerir. JSON düzenleyicisini hala kullanılabilir ve yapılandırma Tasarımcısı'nda yaptığınız tüm değişiklikleri gösterir.
-
-Geçerli ayarları görmek için Git [kullanın ve OEMConfig ile Android kuruluş cihazlarını yönetmek](android-oem-configuration-overview.md).
+Geçerli ayarları görmek için, bkz. [OEMConfig Ile Android kurumsal cihazlarını kullanma ve yönetme](android-oem-configuration-overview.md).
 
 Şunun için geçerlidir: Android Kurumsal
 
@@ -107,18 +104,18 @@ Geçerli ayarları görmek için Git [kullanın ve OEMConfig ile Android kurulu�
 <!-- ***********************************************-->
 ## <a name="device-management"></a>Cihaz yönetimi
 
-### <a name="improve-device-location---3855417---"></a>Cihaz konumu geliştirin<!-- 3855417 -->
-Kullanarak bir cihaz için tam koordinatları yakınlaştırmak mümkün olacaktır **cihazı Bul** eylem. Kayıp iOS cihazlarını bulma hakkında daha fazla bilgi için bkz. [kayıp iOS cihazlarını bulma](device-locate.md).
+### <a name="improve-device-location---3855417---"></a>Cihaz konumunu iyileştirme<!-- 3855417 -->
+**Cihazı bul** eylemini kullanarak bir cihazın tam koordinatlarına yaklaşabileceksiniz. Kayıp iOS cihazlarını bulma hakkında daha fazla bilgi için bkz. [kayıp iOS cihazlarını bulma](device-locate.md).
 
-### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Otomatik cihaz temizleme süresi sınırı 30 gün kadar yapılandırın <!--4231059  -->
-Otomatik cihaz temizleme süresi sınırı (yerine, geçerli sınır 90 gün) 30 gün sonra son oturum açma olarak kısa ayarlama mümkün olacaktır. Bunu yapmak için Git **Intune** > **cihazları** > **Kurulum** > **cihaz temiz kuralları'kurmak**.
+### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Otomatik cihaz temizleme süresi limitini 30 güne kadar yapılandırma <!--4231059  -->
+Otomatik cihaz temizleme süresi sınırını, son oturum açma işleminden sonra 30 gün (geçerli 90 günlük sınırı yerine) kadar kısa bir süre içinde ayarlayabileceksiniz. Bunu yapmak için, **Intune** > **cihazları** > **Kurulum** > **cihaz temizleme kuralları**' na gidin.
 
 
 <!-- ***********************************************-->
 ## <a name="security"></a>Güvenlik
 
 ### <a name="import-and-export-security-baselines------3408610------------"></a>Güvenlik temellerini içeri ve dışarı aktarma    <!--3408610          -->  
-Özelliği, özelleştirmelerinizle alın ve bunları Intune ortamlar arasında paylaşmak için güvenlik temellerini içeri ve dışarı ekliyoruz.
+Güvenlik temellerini dışarı ve içeri aktarma özelliğini ekleyeceğiz, böylece özelleştirmelerinizi sizinle alabilir ve bunları Intune ortamları arasında paylaşabilirsiniz.
 
 
 
