@@ -1,11 +1,11 @@
 ---
-title: Microsoft Defender ATP - Azure tarafından bulunan güvenlik açıklarını düzeltin için Intune'u kullanmayı | Microsoft Docs
-description: Güvenlik görevlerden, tehdit ve güvenlik açığı yönetimi, Intune konsolu içinde bölümü, Microsoft Defender Gelişmiş tehdit Koruması (ATP) gelen yönetme konusuna bakın.
+title: Intune kullanarak Microsoft Defender ATP-Azure tarafından bulunan güvenlik açıklarını düzeltin | Microsoft Docs
+description: Intune konsolunun içinden Microsoft Defender Gelişmiş tehdit koruması 'nın (ATP) bir parçası olan güvenlik görevlerinin ve tehdit & güvenlik açığı yönetimi 'nin nasıl yönetileceğini öğrenin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,80 +15,80 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: be16d545001d5ff3df2c6784b78d91b841302767
+ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045297"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67851402"
 ---
-# <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Microsoft tarafından Defender ATP güvenlik açıkları düzeltmek için Intune kullanın  
+# <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune kullanarak Microsoft Defender ATP tarafından tanımlanan güvenlik açıklarını düzeltin  
 
-Microsoft Defender Gelişmiş tehdit Koruması (ATP ile) Intune tümleştirdiğinizde, ATPs tehdit ve güvenlik açığı Yönetimi (TVM) yararlanmak ve uç nokta zayıflık TVM tarafından tanımlanan düzeltme için Intune kullanın. Bu tümleştirme, bulma ve düzeltme yanıt süresi, ortamınız genelinde iyileştirebilir güvenlik açıklarını önceliklendirilmesi risk tabanlı bir yaklaşım getirir.  
+Intune 'U Microsoft Defender Gelişmiş tehdit koruması (ATP) ile tümleştirdiğinizde, ATPs tehdidi & güvenlik açığı yönetimi 'nden (TVM) yararlanabilir ve TVM tarafından tanımlanan uç nokta zayıflılığını düzeltmek için Intune 'U kullanabilirsiniz. Bu tümleştirme, ortamınızda düzeltme yanıt süresini iyileştirebilecek güvenlik açıklarının bulunmasına ve önceliklendirilmesine yönelik risk tabanlı bir yaklaşım sunar.  
 
-[Tehdit ve güvenlik açığı Yönetimi](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) parçasıdır [Microsoft Defender Gelişmiş tehdit koruması](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).  
+[Tehdit & güvenlik açığı yönetimi](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) , [Microsoft Defender Gelişmiş tehdit koruması](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)'nın bir parçasıdır.  
 
-## <a name="how-integration-works"></a>Tümleştirme nasıl çalışır?  
+## <a name="how-integration-works"></a>Tümleştirme nasıl çalışacaktır?  
 
-Microsoft Defender Gelişmiş tehdit koruması için Intune bağlandıktan sonra ATP tehdit ve Güvenlik Açığı Ayrıntıları yönetilen cihazlardan alır.  
+Intune 'u Microsoft Defender Gelişmiş tehdit koruması 'na bağlandıktan sonra ATP, Yönetilen cihazlardan tehdit ve güvenlik açığı ayrıntılarını alır.  
 
-Windows Defender Güvenlik Merkezi konsolunda ATP güvenlik yöneticileri uç noktası güvenlik açıkları hakkındaki verileri gözden geçirin. Yöneticileri, tek tıklamayla ardından savunmasız cihazlar için düzeltme bayrak güvenlik görevlerini oluşturmak için kullanın. Güvenlik görevlerini, Intune yöneticilerinin raporları nereye görüntüleyebilir Intune konsoluna hemen geçirilir. Güvenlik görevi güvenlik açığı, öncelik, durumu ve güvenlik açığı düzeltmek için atılması gereken adımları türünü tanımlar. Intune Yöneticisi, kabul etme veya reddetme görevi seçer.  
+Microsoft Defender Güvenlik Merkezi konsolunda, ATP güvenlik yöneticileri uç nokta güvenlik açıkları hakkındaki verileri gözden geçirir. Yöneticiler daha sonra, savunmasız cihazları düzeltmeye yönelik güvenlik görevleri oluşturmak için tek tıklama kullanır. Güvenlik görevleri, Intune yöneticilerinin bunları görüntüleyebildiği Intune konsoluna hemen geçirilir. Güvenlik görevi, güvenlik açığı, öncelik, durum ve güvenlik açığını düzeltmek için gerçekleştirilecek adımların türünü tanımlar. Intune Yöneticisi görevi kabul etmek veya reddetmek için seçer.  
 
-Bir görev kabul edildiğinde, Intune Yöneticisi sonra güvenlik açığı ancak Intune, güvenlik görevinin bir parçası sağlanan yönergeleri kullanarak düzeltmek için çalışır.  
+Bir görev kabul edildiğinde, Intune Yöneticisi güvenlik görevinin bir parçası olarak sunulan kılavuzdan yararlanarak Intune ' da güvenlik açığını düzeltmeye çalışır.  
 
-Düzeltme için ortak eylemler şunlardır:  
-- **Blok** çalıştırılan uygulamanın  
-- **Dağıtma** bir işletim sistemi güvenlik açıklarını hafifletecek güncelleştirilecek.  
-- **Değiştirme** bir kayıt defteri değeri.  
-- **Devre dışı** veya **etkinleştirme** güvenlik açığı etkilemek için bir yapılandırma.  
-- **Dikkat etmeniz gereken** tehdit admin sağlamak için uygun bir öneri olmayan olduğunda uyarır.  
+Düzeltme için genel eylemler şunları içerir:  
+- Bir uygulamanın çalıştırılmasını **engelleyin**  
+- Güvenlik açığını azaltmak için bir işletim sistemi güncelleştirmesi **dağıtın** .  
+- Bir kayıt defteri değerini **değiştirin** .  
+- Güvenlik açığını etkilemek için yapılandırmayı **devre dışı bırakın** veya **etkinleştirin** .  
+- Sağlanması gereken uygun bir öneri olmadığında yöneticiye **dikkat edin** .  
 
-Bir örnek iş akışı:  
-- Microsoft Defender ATP içinde Contoso Media Player v4 adlı bir uygulama için bir güvenlik açığı bulunan ve bir yönetici uygulamayı güncelleştirmek için bir güvenlik görevi oluşturur. Contoso Media player, Intune ile dağıtılan bir yönetilmeyen bir uygulamadır.  
+Örnek iş akışı:  
+- Microsoft Defender ATP içinde, contoso Media Player v4 adlı bir uygulamaya yönelik bir güvenlik açığı bulunur ve bir yönetici bu uygulamayı güncelleştirmek için bir güvenlik görevi oluşturur. Contoso medya oynatıcı, Intune ile dağıtılan yönetilmeyen bir uygulamadır.  
 
-  Bu güvenlik görevi bekleme durumu ile Intune konsolunda görünür:  
-  ![Intune konsolunda güvenlik Görevler listesini görüntüleyin](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
+  Bu güvenlik görevi, Intune konsolunda bekliyor durumuyla görüntülenir:  
+  ![Intune konsolundaki güvenlik görevlerinin listesini görüntüleme](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
  
-- Intune yöneticisi görevinin ayrıntılarını görüntülemek için güvenlik görevi seçer.  Yönetici ardından seçer **kabul**, hangi güncelleştirmelerin olması için ATP'yi ve Intune durum *kabul edilen*.  
-  ![Kabul etme veya reddetme bir güvenlik görevi](./media/atp-manage-vulnerabilities/temp-accept-task.png) 
+- Intune Yöneticisi, görevle ilgili ayrıntıları görüntülemek için güvenlik görevini seçer.  Ardından Yönetici, Intune 'daki durumu güncelleştiren **kabul et**' i seçer ve ATP ' de *kabul*edilir.  
+  ![Bir güvenlik görevini kabul etme veya reddetme](./media/atp-manage-vulnerabilities/temp-accept-task.png) 
  
-- Yönetici daha sonra sağlanan kılavuzuna göre görev düzeltir.  Kılavuz, gereken düzeltme türüne bağlı olarak değişir. Kullanılabilir olduğunda, Intune'da yapılandırmaları için ilgili bölmeleri açın bağlantıları düzeltme kılavuz içerir. 
+- Yönetici daha sonra, belirtilen kılavuza göre görevi düzeltir.  Rehberlik, gereken düzeltme türüne bağlı olarak farklılık gösterir. Kullanılabilir olduğunda düzeltme kılavuzu, Intune 'daki yapılandırmalara yönelik ilgili bölmeleri açan bağlantıları içerir. 
 
-  Bu örnekte media player, yönetilen bir uygulama olmadığı için Intune yalnızca metin yönergeleri sağlar. Uygulama yönetilmişse Intune güncelleştirilmiş bir sürümü karşıdan yüklemek için yönergeler sağlar ve uygulama dağıtımının dağıtıma güncelleştirilmiş dosyaları eklenebilir böylece açmak için bir bağlantı sağlayın. 
+  Bu örnekteki medya oynatıcı yönetilen bir uygulama olmadığından, Intune yalnızca metin yönergeleri sağlayabilir. Uygulama yönetilmiyorsa, Intune güncelleştirilmiş bir sürümü indirmek için yönergeler sağlayabilir ve güncelleştirilmiş dosyaların dağıtıma eklenebilmesi için uygulamanın dağıtımını açmak üzere bir bağlantı sağlar. 
 
-- Düzeltme tamamlandıktan sonra Intune Yöneticisi güvenlik görevi açılır ve seçer **görev tamamlanamıyor**.  Intune ve burada güvenlik yöneticilerini düzenlenen durumu güvenlik açığı doğrulamak ATP, düzeltme durumu güncelleştirilir.  
+- Düzeltmeyi tamamladıktan sonra, Intune Yöneticisi güvenlik görevini açar ve **tamamlanmış görevi**seçer.  Düzeltme durumu, Intune ve ATP 'de, güvenlik yöneticilerinin güvenlik açığı için düzeltilen durumu doğrulayabileceği şekilde güncelleştirilir.  
 
 ## <a name="prerequisites"></a>Önkoşullar  
 
-**Abonelikleri**:  
+**Abonelikler**:  
 - Microsoft Intune  
-- Microsoft Defender Gelişmiş tehdit Koruması ([ücretsiz deneme için kaydolun](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink).)  
+- Microsoft Defender Gelişmiş tehdit koruması ([ücretsiz deneme Için kaydolun](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink).)  
 
-**ATP'yi Intune yapılandırmaları**:  
-- Hizmet bağlantı Microsoft Defender ATP ile yapılandırın.  
-- Profil türü olan bir cihaz uyumluluk ilkesini dağıtma **Microsoft Defender ATP (Windows 10 Masaüstü)** ATP tarafından değerlendirilen riski olan cihazlar.
-  ATP ile çalışmak için Intune'u ayarlama hakkında daha fazla bilgi için bkz: [zorlamak için Microsoft ıntune'da koşullu erişimle Defender ATP Uyumluluk](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+**ATP Için Intune yapılandırması**:  
+- Microsoft Defender ATP ile hizmet bağlantısı için bir hizmet yapılandırın.  
+- ATP tarafından değerlendirilme riskini alacak cihazlara **Microsoft Defender ATP (Windows 10 Masaüstü)** profil türüyle cihaz uyumluluk ilkesi dağıtın.
+  Intune 'u ATP ile çalışacak şekilde ayarlama hakkında daha fazla bilgi için bkz. [Intune 'Da koşullu erişim Ile Microsoft Defender ATP için uyumluluğu zorlama](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
 
-## <a name="work-with-security-tasks"></a>Güvenlik görevler ile çalışma  
+## <a name="work-with-security-tasks"></a>Güvenlik görevleriyle çalışma  
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) gidin **cihaz güvenliği** > **güvenlik görevlerini**.  
-2. Bu güvenlik görev ek ayrıntıları görüntüler. bir kaynak penceresi açmak için listeden bir görevi'ni seçin.  
-3. Güvenlik Görev Kaynak penceresi görüntülerken, ek bağlantılar seçebilirsiniz:  
-   - YÖNETİLEN uygulamalar - görünüm savunmasızdır uygulama. Güvenlik Açığı birden fazla uygulama için geçerli olduğu durumlarda, uygulamaların filtrelenmiş bir listesini görürsünüz.  
-   - CİHAZLAR - listesini görüntüleme *savunmasız cihazlar*, öğesinden, aracılığıyla, cihazdaki güvenlik açığı için daha fazla ayrıntı içeren bir giriş bağlantı oluşturabilirsiniz.  
-   - İstek sahibi - bu güvenlik görevi gönderen yönetici e-posta göndermek için bağlantısını kullanın.  
-   - NOTLARI - güvenlik görevi açarken istek sahibi tarafından gönderilen özel iletilerini okuma.  
-4. Seçin **kabul** veya **Reddet** planlı eyleminizi ATP'ye bildirim göndermek için. Kabul edin veya görevi reddetme ATP'ye gönderilen notları gönderebilirsiniz.  
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz güvenlik** > **güvenliği görevleri**' ne gidin.  
+2. Listeden bir görev seçerek bu güvenlik görevinin ek ayrıntılarını görüntüleyen bir kaynak penceresi açın.  
+3. Güvenlik görevi kaynağı penceresini görüntülerken ek bağlantılar seçebilirsiniz:  
+   - YÖNETILEN uygulamalar-güvenlik açığı bulunan uygulamayı görüntüleyin. Güvenlik açığı birden çok uygulama için geçerliyse, uygulamaların filtrelenmiş bir listesini görürsünüz.  
+   - CIHAZLAR-bu cihazdaki güvenlik açığıyla ilgili daha fazla ayrıntı içeren bir girişe bağlantı için kullanabileceğiniz, *güvenlik açığı bulunan cihazların*bir listesini görüntüleyin.  
+   - Istek sahıbı-bu güvenlik görevini gönderen yöneticiye e-posta göndermek için bağlantıyı kullanın.  
+   - Notlar-güvenlik görevini açarken istek sahibi tarafından gönderilen özel iletileri okuyun.  
+4. Planlı eyleminiz için ATP 'ye bildirim göndermek için **kabul et** veya **Reddet** ' i seçin. Bir görevi kabul ettiğinizde veya reddettiğinizde, ATP 'ye gönderilen notları gönderebilirsiniz.  
 
-5. Bir görev kabul sonra (kapattıysanız) güvenlik görevi yeniden açın ve güvenlik açığı düzeltmek için Düzeltme ayrıntıları izleyin.  Tarafından ATP güvenlik görev ayrıntılarında sağlanan yönergeleri dahil güvenlik bağlı olarak değişir.  
+5. Bir görevi kabul ettikten sonra, güvenlik görevini yeniden açın (kapalıysa) ve güvenlik açığını düzeltmek için düzeltme ayrıntılarını izleyin.  Güvenlik görevi ayrıntılarında ATP tarafından sunulan yönergeler, söz konusu güvenlik açığına bağlı olarak değişiklik gösterir.  
 
-   Bunu yapmak, mümkün olduğunda, Intune konsolunda açık olan ilgili yapılandırma nesneleri bağlantıları düzeltme yönergeleri içerir.  
+   Bunu yapmak mümkün olduğunda, Düzeltme yönergeleri Intune konsolundaki ilgili yapılandırma nesnelerini açan bağlantıları içerir.  
 
-6. Düzeltme adımları tamamladıktan sonra güvenlik görevi'ni açın ve seçin **görev tamamlanamıyor**.  Bu eylem, hem Intune hem de ATP güvenlik görev durumunu güncelleştirir.  
+6. Düzeltme adımlarını tamamladıktan sonra, güvenlik görevini açın ve **görevi tamamlama**' yı seçin.  Bu eylem, hem Intune hem de ATP içindeki güvenlik görevi durumunu güncelleştirir.  
 
-Düzeltme başarılı olduktan sonra düzeltilen cihazlardan yeni bilgilere dayanarak ATP içinde riskini Etkilenme puanı bırakabilirsiniz. 
+Düzeltme başarılı olduktan sonra, düzeltilen cihazlardan gelen yeni bilgilere bağlı olarak ATP 'deki risk etkilenme puanı düşürülemiyor. 
 
 ## <a name="next-steps"></a>Sonraki Adımlar
-Intune hakkında daha fazla bilgi edinin ve [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection)  
-Intune gözden [mobil tehdit savunması](https://docs.microsoft.com/intune/mobile-threat-defense)  
-Gözden geçirme [tehdit ve güvenlik açığı Yönetimi Panosu](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) Microsoft Defender ATP içinde
+Intune ve [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection) hakkında daha fazla bilgi edinin  
+Intune [Mobile Threat](https://docs.microsoft.com/intune/mobile-threat-defense) Defense 'i gözden geçirme  
+Microsoft Defender ATP 'de [tehdit & güvenlik açığı yönetimi panosunu](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) gözden geçirin

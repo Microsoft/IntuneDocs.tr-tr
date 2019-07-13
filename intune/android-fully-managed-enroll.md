@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32a8fb7345a955629c3aa3073f02602fb057c99a
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: 54d9fa1016ff39fcf1e7da9c21391ce70f7acaac
+ms.sourcegitcommit: e451295ca3ee3efc31bf9ee360e599b28ef643ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794262"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67863092"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Android kurumsal tam olarak yönetilen cihazların Intune kaydını ayarlama (Önizleme)
 
 Android kurumsal tam olarak yönetilen cihazlar, tek bir kullanıcıyla ilişkili ve özel olarak çalışan ve kişisel kullanım için kullanılan, şirkete ait cihazlardır. Yöneticiler cihazı tümüyle yönetebilir ve ilke denetimlerini iş profilleri için kullanılamaz hale uygulayabilir, örneğin:
-- yalnızca yönetilen Google Play uygulama yüklemeye izin ver
-- yönetilen uygulamaların kaldırılmasını engelleyin
+- Yalnızca yönetilen Google Play uygulama yüklemeye izin verin.
+- Yönetilen uygulamaların kaldırılmasını engelleyin.
 - Kullanıcıların cihazların fabrika ayarlarına sıfırlamasını ve bu şekilde devam etmelerini önleyin.
 
 Intune, Android kurumsal tam olarak yönetilen cihazlar dahil olmak üzere Android kurumsal cihazlara uygulama ve ayarlar dağıtmanıza yardımcı olur. Android Kurumsal hakkında belirli ayrıntıları öğrenmek için bkz. [Android Kurumsal gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
