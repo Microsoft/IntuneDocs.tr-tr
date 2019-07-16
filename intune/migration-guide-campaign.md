@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549418"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882859"
 ---
 # <a name="phase-2-migration-campaign"></a>2\. Aşama: Geçiş kampanyası
 
@@ -43,19 +43,19 @@ Bir üçüncü taraf MDM sağlayıcısından Intune’a geçişin olmazsa olmazl
 
 - Her döngünün yardım masası yükünü ve kayıt başarısını izleyin. Her grup için başarı ölçütlerinin bir sonrakine geçmeden önce değerlendirilmesini sağlamak için zaman çizelgesinde süre bırakın. Pilot dağıtımınız aşağıdakileri doğrulamalıdır:
 
-    - Kayıt başarı ve başarısızlık hızları beklentiler dahilindedir.
+  - Kayıt başarı ve başarısızlık hızları beklentiler dahilindedir.
 
-    - Kullanıcı üretkenliği:
+  - Kullanıcı üretkenliği:
 
-        - VPN, Wi-Fi, e-posta ve sertifikalar gibi şirket kaynakları çalışır durumdadır.
+    - VPN, Wi-Fi, e-posta ve sertifikalar gibi şirket kaynakları çalışır durumdadır.
 
-        - Sağlanan uygulamalara erişilebilir.
+    - Sağlanan uygulamalara erişilebilir.
 
-    - Veri güvenliği:
+  - Veri güvenliği:
 
-        - Uyumluluk raporlaması yapılıyor.
+    - Uyumluluk raporlaması yapılıyor.
 
-        - Mobil uygulama korumaları uygulanıyor.
+    - Mobil uygulama korumaları uygulanıyor.
 
 Geçişin ilk aşamasını tamamladıktan sonra, gelecek aşama için [geçiş döngüsünü](migration-guide-cycle.md) yineleyin.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 417ed2e7f151e187efd54a9fb079c966c056242a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648908"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884854"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>OData akışına Power BI ile bir rapor oluşturma
 
@@ -46,15 +46,15 @@ _Varlık_ ve _tablo_ terimlerinin kullanımı aklınızı karıştırabilir. Ver
 
 ## <a name="install-power-bi-desktop"></a>Power BI Desktop’ı yükleme
 
-En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebilirsiniz: [Powerbı.microsoft.com](https://powerbi.microsoft.com/desktop)
+En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop şuradan indirebilirsiniz: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>Kiracınız için Intune Veri Ambarı OData akışına bağlanma
 
 > [!Note]  
 > Intune’da **Raporlar** izniniz olmalıdır. Daha fazla bilgi için bkz. [Yetkilendirme](reports-api-url.md).
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Açık **Intune veri ambarı** altındaki veri ambarı bağlantıyı seçerek **diğer görevleri** sağ alt tarafında **Intune - genel bakış** dikey penceresi.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+3. **Microsoft Intune-genel bakış** dikey penceresinin sağ tarafındaki **diğer görevler** altında bulunan veri ambarı bağlantısını seçerek **Intune veri ambarı** bölmesini açın.
 4. Özel akış URL’sini kopyalayın. Örneğin, `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 1. Power BI Desktop’ı açın.
 2. **Veri Al** > **OData akışı**’nı seçin.
@@ -70,7 +70,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebili
 
 11. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
 
-    ![Gezgin - veri ambarı tabloların listesini ekran görüntüsü](media/reports-create-02-loadentities.png)
+    ![Gezgin 'in ekran görüntüsü-veri ambarı tablolarının listesi](media/reports-create-02-loadentities.png)
 
 12. **cihazlar** ve **ownerTypes** tablolarını seçin.  **Yükle**’yi seçin. Power BI modele veri yükler.
 
@@ -78,7 +78,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebili
 
 Çözümlemek için birden fazla tabloyu içeri aktarabilirsiniz, yani yalnızca bir tablodaki verileri değil, farklı tablolardaki ilişkili verileri alabilirsiniz.  Power BI’ın sizin için ilişkileri arayan ve oluşturan **otomatik algılama** özelliği mevcuttur. Veri Ambarı’ndaki tablolar, Power BI’ın otomatik algılama özelliğiyle birlikte çalışabilecek şekilde derlenmiştir. Ancak Power BI ilişkileri otomatik olarak bulamasa bile bunları yönetebilirsiniz.
 
-![Tablolar arasında ilişkiler ilgili veri yönetme](media/reports-create-03-managerelationships.png)
+![Tablolar arasında ilgili verilerin ilişkilerini yönetme](media/reports-create-03-managerelationships.png)
 
 1. **İlişkileri Yönet**’i seçin.
 2. Power BI ilişkileri henüz algılamadıysa **Otomatik algıla...** seçeneğine tıklayın.
@@ -89,7 +89,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop'tan indirebili
 
 Bir ağaç haritası, hiyerarşik verileri kutu içinde kutu olarak gösterir. Hiyerarşinin her bir dalında kutular bulunur. Bu kutular ise alt dalları gösteren daha küçük kutular barındırır. Intune verilerinizin ağaç haritasını oluşturmak için Power BI Desktop kullanabilirsiniz.
 
-![Power BI ağaç Haritası görselleştirmesi](media/reports-create-03-treemap.png)
+![Power BI ağaç Haritası görselleştirmeleri](media/reports-create-03-treemap.png)
 
 1. Grafik türü seçin. **Ağaç haritası**’nı seçin.
 2. Veri modelinde **cihazlar** tablosunu bulun.
@@ -99,19 +99,19 @@ Bir ağaç haritası, hiyerarşik verileri kutu içinde kutu olarak gösterir. H
 
 Artık kuruluşunuzdaki cihaz üreticileri dağılımını gösteren bir görseliniz var.
 
-![Verilerle - cihaz üreticileri dağılımını ağaç Haritası](media/reports-create-06-treemapwdata.png)
+![Verilerle ağaç Haritası-cihazların üreticilerinin dağılımı](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Bir filtre ekleme
 
 Uygulamanızı kullanarak ilave sorular yanıtlayabilmek için ağaç haritanıza bir filtre ekleyebilirsiniz.
 
 
-1. Filtre eklemek için rapor tuvalini seçin ve ardından **Dilimleyici simgesini** (![ağaç veri modeli ve desteklenen ilişkileri](media/reports-create-slicer.png)) altında **görselleştirmeler**.
+1. Filtre eklemek için, rapor tuvali ' ni seçin ve ardından **görsel öğeler**altında **dilimleyici simgesini** (![veri modeli ve desteklenen ilişkilerle](media/reports-create-slicer.png)ağaç Haritası) seçin.
 2. **ownerTypes** tablosunu bulun ve **ownerTypeName** veri alanını **Görselleştirmeler** panelindeki **Filtreler**’in altına sürükleyin.  
 
    Cihazlar tablosu altında **OwnerTypeKey** adlı bir veri alanı vardır. Bu veri alanı, cihazın şirkete ait veya kişisel olmasıyla ilgili bir kod barındırır. Bu filtrede kolay adlar kullanmayı tercih edeceğiniz için **ownerTypes** tablosunu bulun ve **ownerTypeName**’i sürükleyin. Bu örnek, veri modelinin tablolar arasındaki ilişkiyi nasıl desteklediğini gösterir.
 
-![Ağaç Haritası filtresiyle - tablolar arasındaki ilişkileri destekler](media/reports-create-08_ownertype.png)
+![Filter ile treemap-tablolar arasındaki ilişkileri destekler](media/reports-create-08_ownertype.png)
 
 Artık şirkete ait ve kişisel cihazlar arasında geçiş yapmak üzere kullanılacak bir filtreniz var. Dağılımın nasıl değiştiğini görmek için bu filtreyi kullanın.
 
@@ -120,5 +120,5 @@ Artık şirkete ait ve kişisel cihazlar arasında geçiş yapmak üzere kullan�
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
- - Power BI Desktop’ta [ilişki oluşturma ve yönetme](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) hakkında Power BI belgelerinden daha fazla bilgi edinin.
- - [Intune Veri Ambarı](https://docs.microsoft.com/intune/reports-ref-data-model)’na başvurun.
+- Power BI Desktop’ta [ilişki oluşturma ve yönetme](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) hakkında Power BI belgelerinden daha fazla bilgi edinin.
+- [Intune Veri Ambarı](https://docs.microsoft.com/intune/reports-ref-data-model)’na başvurun.

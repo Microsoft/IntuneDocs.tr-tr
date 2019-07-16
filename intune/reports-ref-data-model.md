@@ -17,39 +17,39 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547882"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884754"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune veri ambarı veri modeli
 
 Intune Veri Ambarı, sürekli olarak değişen mobil cihazların bulunduğu ortamın tarihsel bir görünümünü sağlamak için verileri örnekler. Görünüm, zaman içinde ilgili varlıklardan oluşur.
 
-## <a name="entities-entity-sets"></a>Varlıklar: Varlık kümeleri
+## <a name="entities-entity-sets"></a>Varlıklar Varlık kümeleri
 
 Ambar, verileri aşağıdaki üst düzey kategorilerde kullanıma sunar:
 
-  - Uygulama koruma etkin uygulamalar ve kullanım
-  - Kayıtlı cihazlar, özellikler ve envanter
-  - Uygulama ve yazılım envanteri
-  - Cihaz yapılandırması ve uyumluluk ilkeleri
+- Uygulama koruma etkin uygulamalar ve kullanım
+- Kayıtlı cihazlar, özellikler ve envanter
+- Uygulama ve yazılım envanteri
+- Cihaz yapılandırması ve uyumluluk ilkeleri
 
 Bu alanlar, Intune ortamınızla ilişkili olan varlıkları içerir. Varlıklar kümeleri ile ilgili ayrıntıları aşağıdaki konularda bulabilirsiniz:
 
-  - [Uygulama](reports-ref-application.md)
-  - [Tarih](reports-ref-date.md)
-  - [Cihazlar](reports-ref-devices.md)
-  - [Intune Yönetim Uzantısı](reports-ref-intunemanagementextension.md)
-  - [İlke](reports-ref-policy.md)
-  - [Mobil Uygulama Yönetimi (MAM)](reports-ref-mobile-app-management.md)
-  - [Kullanıcı](reports-ref-user.md)
-  - [Geçerli Kullanıcı](reports-ref-current-user.md)
-  - [Kullanıcı Cihaz İlişkileri](reports-ref-user-device.md)
+- [Uygulama](reports-ref-application.md)
+- [Tarih](reports-ref-date.md)
+- [Cihazlar](reports-ref-devices.md)
+- [Intune Yönetim Uzantısı](reports-ref-intunemanagementextension.md)
+- [İlke](reports-ref-policy.md)
+- [Mobil Uygulama Yönetimi (MAM)](reports-ref-mobile-app-management.md)
+- [Kullanıcı](reports-ref-user.md)
+- [Geçerli Kullanıcı](reports-ref-current-user.md)
+- [Kullanıcı Cihaz İlişkileri](reports-ref-user-device.md)
 
-## <a name="relationships-star-schema-model"></a>İlişkiler: Yıldız şeması modeli
+## <a name="relationships-star-schema-model"></a>İlişkilere Yıldız-şema modeli
 
 Ambar, ilişki içindeki varlıkları, sormak istediğiniz soru türüyle alakalı ilişki içindeki varlıkları düzenler. Örneğin, şirket tarafından geliştirilen bir Android uygulamasının yükleme sayısını inceleyebilirsiniz. Veri ambarının yapısı, mobil ortamınız hakkında öngörü kazanmanızı sağlayacak şekildedir. Buna karşılık olarak Microsoft Power BI gibi analiz araçları ise Veri Ambarı veri modelini kullanarak görselleştirmeler ve dinamik panolar oluşturur.
 
@@ -57,12 +57,12 @@ Varlıklar ve ilişkiler bir yıldız şeması modeli kullanır. Bir yıldız ş
 
 Yıldız şeması modeli, esneklik ve veri çözümlemesi için iyileştirilmiştir. Böylece değişen mobil ortamınızı anlamanız için gereken raporları oluşturabilirsiniz.
 
-## <a name="time-daily-snapshots"></a>Süre: Günlük anlık görüntüleri
+## <a name="time-daily-snapshots"></a>Işınızda Günlük anlık görüntüler
 
 Ambar, Intune'daki verilerden aşağı akıştadır. Intune gece yarısı UTC'de günlük anlık görüntü alır ve anlık görüntüyü ambarda saklar. Tutulan anlık görüntülerin süresi, olgu tablosundan olgu tablosuna farklılık gösterir. Bazıları yedi gün, diğerleri 30 gün ve daha uzun süreli olabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
- - Veri ambarının kullanıcının ömrünü Intune’da nasıl izlediği hakkında daha fazla bilgi edinmek için bkz. [Intune Veri Ambarı’nda kullanıcı ömrü gösterimi](reports-ref-user-timeline.md).
- - Veri ambarları ile çalışma hakkında daha fazla bilgi edinmek için bkz. [İlk Veri Ambarı’nı Oluşturma](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
- - [Bir veri kümesini içeri aktararak yeni Power BI raporu oluşturma](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) içindeki Power BI ve bir veri ambarı ile çalışma hakkında daha fazla bilgi edinmek için. 
+- Veri ambarının kullanıcının ömrünü Intune’da nasıl izlediği hakkında daha fazla bilgi edinmek için bkz. [Intune Veri Ambarı’nda kullanıcı ömrü gösterimi](reports-ref-user-timeline.md).
+- Veri ambarları ile çalışma hakkında daha fazla bilgi edinmek için bkz. [İlk Veri Ambarı’nı Oluşturma](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+- [Bir veri kümesini içeri aktararak yeni Power BI raporu oluşturma](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) içindeki Power BI ve bir veri ambarı ile çalışma hakkında daha fazla bilgi edinmek için. 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735780"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884697"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -97,23 +97,23 @@ Daha fazla bilgi için Windows [belgelerindeki ilke CSP-](https://docs.microsoft
 
   Bit dolabı çıkarılabilir sürücü ilkesi için aşağıdaki ayarları yapılandırın:
 
-    - **Yazma erişimi için şifreleme gerektir**  
-      **Varsayılan**: Evet  
-  
-    - **Şifreleme yöntemi**  
-      **Varsayılan**: AES 256bit CBC  
+  - **Yazma erişimi için şifreleme gerektir**  
+    **Varsayılan**: Evet  
+
+  - **Şifreleme yöntemi**  
+    **Varsayılan**: AES 256bit CBC  
 
 - **Bit dolabı sabit sürücü ilkesi**  
   Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücü ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
  
-   Bit dolabı sabit sürücü ilkesi için aşağıdaki ayarları yapılandırın: 
-   - **Şifreleme yöntemi**
-     **Varsayılanı**: AES 256bit XTS  
+  Bit dolabı sabit sürücü ilkesi için aşağıdaki ayarları yapılandırın: 
+  - **Şifreleme yöntemi**  
+    **Varsayılan**: AES 256bit XTS  
 
 - **Bit dolabı sistem sürücüsü ilkesi**  
   Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücü ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
 
-   Bit dolabı sistem sürücüsü ilkesi için aşağıdaki ayarları yapılandırın:
+  Bit dolabı sistem sürücüsü ilkesi için aşağıdaki ayarları yapılandırın:
   - **Şifreleme yöntemi**  
     **Varsayılan**: AES 256bit XTS  
 
@@ -219,33 +219,33 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Deviceınstallation](htt
   
   **Varsayılan**: Donanım cihazını yüklemeyi engelle  
 
-    *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
-  
-    - **Eşleşen donanım cihazlarını kaldırma**   
-    Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
-      
-      **Varsayılan**: Evet
-  
-    - **Engellenen donanım cihaz tanımlayıcıları**  
-       Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
-      
-      **Varsayılan**: Evet  
+  *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
+
+  - **Eşleşen donanım cihazlarını kaldırma**   
+  Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
+    
+    **Varsayılan**: Evet
+
+  - **Engellenen donanım cihaz tanımlayıcıları**  
+      Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
+    
+    **Varsayılan**: Evet  
   
 - **Kurulum sınıflarına göre donanım cihaz yüklemesi**  
   Bu ilke ayarı, Windows 'un yüklemesi engellenen cihaz sürücüleri için cihaz kurulum sınıfının genel benzersiz tanımlayıcıları (GUID 'Ler) listesini belirtmenizi sağlar. Bu ilke ayarı, Windows 'un bir cihaz yüklemesine izin veren diğer tüm ilke ayarlarından önceliklidir. Bu ilke ayarını etkinleştirirseniz, Windows 'un, cihaz kurulum sınıfı GUID 'Leri oluşturduğunuz listede göründüğü cihaz sürücülerini yüklemesi veya güncelleştirmesi engellenir. Uzak Masaüstü sunucusunda bu ilke ayarını etkinleştirirseniz, ilke ayarı, belirtilen cihazların uzak masaüstü istemcisinden uzak masaüstü sunucusuna yönlendirilmesini etkiler. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Windows, diğer ilke ayarları tarafından izin verilen veya engellenen cihazları yükleyebilir ve güncelleştirebilir.
   
   **Varsayılan**: Donanım cihazını yüklemeyi engelle  
 
-    *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
-    - **Eşleşen donanım cihazlarını kaldırma**    
-    Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.  
+  *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
+  - **Eşleşen donanım cihazlarını kaldırma**    
+  Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.  
 
-      **Varsayılan**: *Varsayılan yapılandırma yok*  
-  
-    - **Engellenen donanım cihaz tanımlayıcıları**  
-      Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
-      
-      **Varsayılan**: *Varsayılan yapılandırma yok*  
+    **Varsayılan**: *Varsayılan yapılandırma yok*  
+
+  - **Engellenen donanım cihaz tanımlayıcıları**  
+    Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
+    
+    **Varsayılan**: *Varsayılan yapılandırma yok*  
 
 ### <a name="device-lock"></a>Cihaz kilidi  
 
@@ -992,12 +992,12 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOpt
   
 - **Yönetici yükseltme istemi davranışı**  
   Bu ilke ayarı, Yöneticiler için yükseltme isteminin davranışını denetler. Seçenekler şunlardır: 
-    - *Sormadan Yükselt*: Ayrıcalıklı hesapların, izin veya kimlik bilgileri gerekmeden yükseltme gerektiren bir işlem gerçekleştirmesine izin verir. Not: Bu seçeneği yalnızca en kısıtlanmış ortamlarda kullanın. 
-    - *Güvenli masaüstünde kimlik bilgilerini iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde ayrıcalıklı bir Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
-    - *Güvenli masaüstünde onay iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
-    - *Kimlik bilgilerini iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan bir Yönetici Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem ilgili ayrıcalıkla devam eder. 
-    - *Izin iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder.  
-    - *Windows dışı ikili dosyalar için onay iste*: Microsoft dışı bir uygulama için bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan güvenli masaüstünde Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder.   
+  - *Sormadan Yükselt*: Ayrıcalıklı hesapların, izin veya kimlik bilgileri gerekmeden yükseltme gerektiren bir işlem gerçekleştirmesine izin verir. Not: Bu seçeneği yalnızca en kısıtlanmış ortamlarda kullanın. 
+  - *Güvenli masaüstünde kimlik bilgilerini iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde ayrıcalıklı bir Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
+  - *Güvenli masaüstünde onay iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
+  - *Kimlik bilgilerini iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan bir Yönetici Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem ilgili ayrıcalıkla devam eder. 
+  - *Izin iste*: Bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder.  
+  - *Windows dışı ikili dosyalar için onay iste*: Microsoft dışı bir uygulama için bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan güvenli masaüstünde Izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder.   
   
   **Varsayılan**: Güvenli masaüstünde onay iste
   
@@ -1010,12 +1010,12 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOpt
   **Varsayılan**: NTLM v2 128 şifrelemesi gerektir
   
 - **Akıllı kart kaldırma davranışı**  
-    Bu güvenlik ayarı, oturum açmış bir kullanıcının akıllı kartı, akıllı kart okuyucusundan kaldırıldığında ne olacağını belirler. Seçenekler şunlardır:
-     - *Eylem yok*. 
-     - *Iş Istasyonunu kilitle* -akıllı kart kaldırıldığında iş istasyonu kilitlenir, kullanıcıların alanı terk etmeleri, akıllı kartlarını bunlara sahip olması ve hala korumalı bir oturum sürdürmesine izin verir.
-     - *Kapanmaya zorla* -akıllı kart kaldırıldığında Kullanıcı oturumu otomatik olarak kapatılır.
-     - *Uzak Masaüstü oturumunun bağlantısını kesme* -akıllı kartın kaldırılması, kullanıcının oturumunu kapatmadan oturumun bağlantısını keser. Bu, kullanıcının akıllı kartı eklemesini ve oturumu daha sonra ya da başka bir akıllı kart okuyucusu ile donatılmış bir bilgisayara yeniden oturum açmak zorunda kalmadan sürdürmesini sağlar. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.  <br><br>
-    
+  Bu güvenlik ayarı, oturum açmış bir kullanıcının akıllı kartı, akıllı kart okuyucusundan kaldırıldığında ne olacağını belirler. Seçenekler şunlardır:
+  - *Eylem yok*. 
+  - *Iş Istasyonunu kilitle* -akıllı kart kaldırıldığında iş istasyonu kilitlenir, kullanıcıların alanı terk etmeleri, akıllı kartlarını bunlara sahip olması ve hala korumalı bir oturum sürdürmesine izin verir.
+  - *Kapanmaya zorla* -akıllı kart kaldırıldığında Kullanıcı oturumu otomatik olarak kapatılır.
+  - *Uzak Masaüstü oturumunun bağlantısını kesme* -akıllı kartın kaldırılması, kullanıcının oturumunu kapatmadan oturumun bağlantısını keser. Bu, kullanıcının akıllı kartı eklemesini ve oturumu daha sonra ya da başka bir akıllı kart okuyucusu ile donatılmış bir bilgisayara yeniden oturum açmak zorunda kalmadan sürdürmesini sağlar. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.  <br><br>
+
   **Varsayılan**: İş istasyonunu kilitle
   
 - **SAM hesaplarının ve paylaşımlarının anonim numaralandırılmasına engel**  

@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 6ccfe9ccd186f38a971aa6bac5d58bf61e44450d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548478"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882756"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Intune ile Pradeo Mobile Threat Defense bağlayıcısı
 
-Şirket kaynaklarına Pradeo, Microsoft Intune ile tümleşik bir Mobile Threat Defense (MTD) çözümü tarafından yapılan risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Pradeo uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
+Microsoft Intune ile tümleşen bir Mobile Threat Defense (MTD) çözümü olan Pradeo tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Pradeo uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-İzin verme veya engelleme algılanan tehditlere dayalı olarak şirket kaynaklarına erişmek için uyumsuz cihazlar için kullanabileceğiniz Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Pradeo risk değerlendirmesine dayalı koşullu erişim ilkelerini yapılandırabilirsiniz.
+Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen koşullu erişim ilkelerini, algılanan tehditlere dayalı olarak uyumlu olmayan cihazların şirket kaynaklarına erişmesine izin vermek veya erişimi engellemek için kullanabileceğiniz Intune cihaz uyumluluk ilkeleri aracılığıyla yapılandırabilirsiniz.
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune ve Pradeo şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
@@ -49,7 +49,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
-![Kötü amaçlı uygulamalar algılandı kavramsal resmi](./media/pradeo_maliciousapps_blocked.png)
+![Algılanan kötü amaçlı uygulamaların kavramsal görüntüsü](./media/pradeo_maliciousapps_blocked.png)
 
 **Düzeltme ile erişim izni verildi:**
 
@@ -65,7 +65,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Düzeltme ile erişim izni verildi:**
 
-![Düzeltme ile erişim kavramsal resmi](./media/pradeo_network_wifi_unblocked.png)
+![Düzeltmeye erişim izni verilen kavramsal resim](./media/pradeo_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme
 
@@ -77,7 +77,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Düzeltme ile erişim izni verildi:**
 
-![Sharepoint örneği için düzeltme erişim kavramsal resmi](./media/pradeo_network_spo_unblocked.png)
+![SharePoint için düzeltmeye yönelik kavramsal bir erişim resmi örneği](./media/pradeo_network_spo_unblocked.png)
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -93,7 +93,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 - Mobile Threat Defense aboneliği için Pradeo Security
 
-    - Daha fazla bilgi için [Pradeo web sitesine](https://www.pradeo.com/en-US/mobile-threat-protection) bakın.
+  - Daha fazla bilgi için [Pradeo web sitesine](https://www.pradeo.com/en-US/mobile-threat-protection) bakın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f97b49ce893512770cd2b22583a54e20cd3fb0f8
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548773"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883135"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma
 
@@ -76,7 +76,7 @@ Dağıtılan Endpoint Protection ilkesini, **İlke** çalışma alanının **Tü
 
 |                                                 İlke ayarı                                                  |                                                                                                                                                                                                                                                                                                                                                                                                             Ayrıntılar                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                  <strong>Endpoint Protection'ı yükleme</strong>                                   | Endpoint Protection’ı yönetilen bilgisayarlarda yüklemek için <strong>Evet</strong> olarak ayarlayın. Yükleme sırasında bir üçüncü taraf uç nokta koruma uygulaması algılanırsa, <strong>Bir üçüncü taraf uç nokta koruma uygulaması yüklü olsa bile Endpoint Protection’ı yükle</strong> ayarı <strong>Evet</strong> olarak ayarlanmadığı sürece Endpoint Protection yüklenmez. <strong>Not:</strong> Intune Endpoint Protection yönetilen bilgisayarlarda varsayılan olarak yüklenir. Yönetilen bilgisayarlarınıza Endpoint Protection yüklemek istemiyorsanız, bu ilkeyi açıkça <strong>Hayır</strong> olarak ayarlamalısınız. Endpoint Protection önceden yüklenmişse ve ilke <strong>Hayır</strong> olarak güncelleştirilirse, Endpoint Protection istemcisi kaldırılır.<br />Önerilen değer: <strong>Evet</strong> |
+|                                  <strong>Endpoint Protection'ı yükleme</strong>                                   | Endpoint Protection’ı yönetilen bilgisayarlarda yüklemek için <strong>Evet</strong> olarak ayarlayın. Yükleme sırasında bir üçüncü taraf uç nokta koruma uygulaması algılanırsa, <strong>Bir üçüncü taraf uç nokta koruma uygulaması yüklü olsa bile Endpoint Protection’ı yükle</strong> ayarı <strong>Evet</strong> olarak ayarlanmadığı sürece Endpoint Protection yüklenmez. <strong>Not:</strong> Intune Endpoint Protection, yönetilen bilgisayarlara varsayılan olarak yüklenir. Yönetilen bilgisayarlarınıza Endpoint Protection yüklemek istemiyorsanız, bu ilkeyi açıkça <strong>Hayır</strong> olarak ayarlamalısınız. Endpoint Protection önceden yüklenmişse ve ilke <strong>Hayır</strong> olarak güncelleştirilirse, Endpoint Protection istemcisi kaldırılır.<br />Önerilen değer: <strong>Evet</strong> |
 | <strong>Bir üçüncü taraf uç nokta koruma uygulaması yüklü olsa bile Endpoint Protection’ı yükleme</strong> |                                                                                                                                                                                                                                                                                                                Üçüncü taraf uç nokta uygulaması algılansa bile Microsoft Intune Endpoint Protection’ı yüklemek için <strong>Evet</strong> olarak ayarlayın.<br /><br />Önerilen değer: <strong>Evet</strong>                                                                                                                                                                                                                                                                                                                |
 |                                   <strong>Endpoint Protection'ı etkinleştir</strong>                                   |                                                                                                                                                                                                            Endpoint Protection istemcisinin bulunduğu bilgisayarlarda Microsoft Intune Endpoint Protection’ı etkinleştirmek için <strong>Evet</strong> olarak ayarlayın.<br /><br /><strong>Hayır</strong> olarak ayarlanırsa ve Microsoft Intune Endpoint Protection yüklüyse, Endpoint Protection istemcisi kullanıcı arabirimi, kullanıcılara gösterilmez ve tüm koruma özellikleri devre dışı kalır.<br /><br />Önerilen değer: <strong>Evet</strong>                                                                                                                                                                                                             |
 |                                       <strong>İstemci Kullanıcı Arabirimi'ni devre dışı bırak</strong>                                        |                                                                                                                                                                                                                                                                                                      Microsoft Intune Endpoint Protection istemcisinin kullanıcı arabirimini kullanıcılardan gizlemek için <strong>Evet</strong> olarak ayarlayın (geçerlilik kazanması için istemci bilgisayarın yeniden başlatılması gerekir).<br /><br />Önerilen değer: <strong>Hayır</strong>                                                                                                                                                                                                                                                                                                       |
@@ -95,7 +95,7 @@ Dağıtılan Endpoint Protection ilkesini, **İlke** çalışma alanının **Tü
 |**Gerçek zamanlı korumayı etkinleştir**|Erişilen tüm dosya ve uygulamaların izlenmesini ve taranmasını sağlar. Ayrıca, herhangi bir kötü amaçlı dosya ve uygulamayı da bilgisayarlarda çalıştırılmadan önce engeller.<br /><br />Önerilen değer: **Evet**|
 |**Tüm indirmeleri tara**|İnternet'ten bilgisayarlara indirilen tüm dosya ve eklerin taranmasını sağlar.<br /><br />Önerilen değer: **Evet**|
 |**Bilgisayarlarda dosya ve program etkinliğini izle**|Bilgisayarlarda gelen ve giden dosyaların yanı sıra program etkinliğinin izlenmesini sağlar. Bu ayarla, dosyalar ve programlar çalışmaya başladığında Endpoint Protection bunları izleyebilir ve gerçekleştirdikleri herhangi bir eylem veya bunlar üzerinde gerçekleştirilen eylemler hakkında sizi uyarır.<br /><br />Önerilen değer: **Evet**|
-|**İzlenen dosyalar**|Yalnızca gelen, yalnızca giden veya tüm dosyaların izlenmesi arasında seçim yapmanızı sağlar.<br /><br />Önerilen değer: **Tüm dosyaları İzle**|
+|**İzlenen dosyalar**|Yalnızca gelen, yalnızca giden veya tüm dosyaların izlenmesi arasında seçim yapmanızı sağlar.<br /><br />Önerilen değer: **Tüm dosyaları izle**|
 |**Davranış izlemeyi etkinleştir**|Microsoft Intune Endpoint Protection’ın istemci bilgisayarlarda belirli şüpheli etkinlik düzenlerini denetlemesini etkinleştirir.<br /><br />Önerilen değer: **Evet**|
 |**Ağ İnceleme Sistemi'ni Etkinleştir**|İstemci bilgisayarlarda Ağ Denetleme Sistemi'ni (NIS) etkinleştirir. NIS, kötü amaçlı ağ trafiğin algılanmasına ve engellenmesine yardımcı olmak üzere, [Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi](https://go.microsoft.com/fwlink/?LinkId=234249) 'nden edinilen bilinen açıklara yönelik imzaları kullanır.<br /><br />Önerilen değer: **Evet**|
 
@@ -123,13 +123,13 @@ Dağıtılan Endpoint Protection ilkesini, **İlke** çalışma alanının **Tü
 |**Paylaşılan ağ klasörlerinden açılan dosyaları tara**|Endpoint Protection’ı, ağda paylaşılan klasörlerden açılan dosyaları tarayacak biçimde yapılandırmak için **Evet** olarak ayarlayın. Bunlar genellikle bir Evrensel Adlandırma Kuralı (UNC) yolu kullanılarak erişilen dosyalardır. Bu özelliği etkinleştirmek, salt okunur erişime sahip olduğundan kötü amaçlı yazılımları kaldıramayan kullanıcılar için sorunlara neden olabilir.<br /><br />Önerilen değer: **Hayır**|
 |**Eşlenen ağ sürücülerini tara**|Endpoint Protection’ı, eşlenen ağ sürücülerindeki dosyaları tarayacak biçimde yapılandırmak için **Evet** olarak ayarlayın. Bu özelliği etkinleştirmek, salt okunur erişime sahip olduğundan kötü amaçlı yazılımları kaldıramayan kullanıcılar için sorunlara neden olabilir.<br /><br />Önerilen değer: **Hayır**|
 |**Çıkarılabilir sürücüleri tara**|Bilgisayarlarda tam tarama çalıştırdığınızda, Endpoint Protection’ı USB flash sürücü gibi çıkarılabilir sürücülerde kötü amaçlı yazılım ve istenmeyen yazılım taraması gerçekleştirecek biçimde yapılandırmak için **Evet** olarak ayarlayın.<br /><br />Önerilen değer: **Evet**|
-|**Tarama sırasında CPU kullanımını sınırla**|Bilgisayarlarda gerçekleştirilen zamanlanmış taramalar sırasında kullanılacak en fazla CPU yüzdesini ayarlayın. Bunu, %1 ile %100 arasında bir değer olarak ayarlayabilirsiniz.<br /><br />Önerilen değer: **50%**|
+|**Tarama sırasında CPU kullanımını sınırla**|Bilgisayarlarda gerçekleştirilen zamanlanmış taramalar sırasında kullanılacak en fazla CPU yüzdesini ayarlayın. Bunu, %1 ile %100 arasında bir değer olarak ayarlayabilirsiniz.<br /><br />Önerilen değer: **% 50**|
 
 ### <a name="choose-default-actions-settings"></a>Varsayılan eylemler ayarlarını seçme
 
 **Endpoint Protection’ın şu uyarı düzeylerindeki kötü amaçlı yazılımları nasıl ele alacağını seçin** ayarı, çeşitli uyarı düzeylerinde kötü amaçlı yazılım algılandığında Endpoint Protection’ın gerçekleştireceği varsayılan eylemi belirtir. Her uyarı düzeyi için kötü amaçlı yazılımı kaldırma, karantinaya alma veya Microsoft'un önerdiği eylemi gerçekleştirme seçeneğiniz vardır.
 
-Önerilen değer: **Önerilen eylem**, Endpoint Protection'ın eylem önermesine olanak tanır.   
+Önerilen değer: Endpoint Protection eylemi önermesini sağlayan **Önerilen eylem**.   
 
 ### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>Dışlanan dosya ve klasörler ayarlarını seçip seçmeyeceğinize karar verin
 
@@ -145,8 +145,8 @@ Dağıtılan Endpoint Protection ilkesini, **İlke** çalışma alanının **Tü
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>Microsoft Etkin Koruma Hizmeti Ayarlarını belirtin
 Microsoft Etkin Koruma Hizmeti, olası risklere nasıl yanıt vereceğinize karar vermenize yardımcı olan çevrimiçi bir topluluktur. Topluluk, yeni kötü amaçlı yazılımların yayılmasını engellemeye de yardımcı olur. **Evet**’i seçerek ve ardından **Üyelik Düzeyinizi** belirterek **Microsoft Etkin Koruma Hizmeti’ne katılabilirsiniz**:
-  - **Temel** - Algılanan kötü amaçlı yazılımla ilgili temel bilgileri Microsoft'a gönderir. Bu bilgiler yazılımın nereden geldiği, uyguladığınız eylemler veya Endpoint Protection tarafından otomatik olarak uygulanan eylemler ve bunların başarılı olup olmadığını içerir.
-  - **Gelişmiş** - Kötü amaçlı yazılım, casus yazılım ve olası istenmeyen yazılım hakkında Microsoft'a daha fazla bilgi gönderir. Bu, yazılımın konumu, dosya adları, yazılımın nasıl çalıştığı ve bilgisayarınızı nasıl etkilediği hakkında bilgiler içerir.
+- **Temel** - Algılanan kötü amaçlı yazılımla ilgili temel bilgileri Microsoft'a gönderir. Bu bilgiler yazılımın nereden geldiği, uyguladığınız eylemler veya Endpoint Protection tarafından otomatik olarak uygulanan eylemler ve bunların başarılı olup olmadığını içerir.
+- **Gelişmiş** - Kötü amaçlı yazılım, casus yazılım ve olası istenmeyen yazılım hakkında Microsoft'a daha fazla bilgi gönderir. Bu, yazılımın konumu, dosya adları, yazılımın nasıl çalıştığı ve bilgisayarınızı nasıl etkilediği hakkında bilgiler içerir.
 
 Ayrıca, **Microsoft Etkin Koruma Hizmeti raporlarına dayalı olarak dinamik tanımlar alabilirsiniz**.
 
@@ -168,7 +168,7 @@ Bir uzak görevin durumunu, Intune konsolunun sağ alt köşesindeki **Uzak Gör
   - **İzleme gerektiren kötü amaçlı yazılım bulunan bilgisayarlar** – Çözümlenmemiş kötü amaçlı yazılım sorunları olan bilgisayarları ve sorunu çözmek için yapılması gereken eylemleri görmek için bağlantıya tıklayın.
   - **Korumalı olmayan cihazlar** – Herhangi bir yazılım yüklü olmadığından veya bir hata olduğundan hiçbir uç nokta koruma yazılımı tarafından korunmayan bilgisayarları görmek için bağlantıya tıklayın. Daha fazla ayrıntı görüntülemek için bir bilgisayarı seçin.
   - **Başka bir uç nokta koruma uygulaması çalışan cihazlar** – Üçüncü taraf bir uç nokta koruma uygulaması çalıştıran bilgisayarları görmek için bağlantıya tıklayın.
-- **Tüm kötü amaçlı yazılım** -bilgisayarlarınızda bulunan tüm etkin kötü amaçlı yazılımların listesini görüntüler. Belirli bir kötü amaçlı yazılımdan etkilenen tüm bilgisayarları görmek için bu listeyi inceleyebilir veya aşağıdaki görevlerden birini seçebilirsiniz:
+- **Tüm kötü amaçlı yazılımlar** -bilgisayarlarınızda bulunan tüm etkin kötü amaçlı yazılımların listesini görüntüler. Belirli bir kötü amaçlı yazılımdan etkilenen tüm bilgisayarları görmek için bu listeyi inceleyebilir veya aşağıdaki görevlerden birini seçebilirsiniz:
   - **Özellikleri Görüntüle** – Seçili kötü amaçlı yazılım hakkında daha fazla bilgi içeren bir sayfa açar.
   - **Bu Kötü Amaçlı Yazılım Hakkında Bilgi Edin** – Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi'nden kötü amaçlı yazılım hakkında daha fazla bilgi içeren bir konuyu açar.
 
@@ -178,7 +178,7 @@ Bir uzak görevin durumunu, Intune konsolunun sağ alt köşesindeki **Uzak Gör
   ![Endpoint Protection’ı izleme](media/pol-sa-ep-monitor.png)
 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Bilgisayarlarda kötü amaçlı yazılımların En Son Algılama Yollarını görüntüleme
-Intune, cihazda en son algılanan kötü amaçlı yazılım yollarının en fazla 10’unu görüntüleyebilir. **En Son Algılama Yolu** varsayılan olarak devre dışı bırakılır. Bu görünümü etkinleştirmek için:
+Intune, cihazda en son algılanan kötü amaçlı yazılım yollarının en fazla 10’unu görüntüleyebilir.           **En Son Algılama Yolu** varsayılan olarak devre dışı bırakılır. Bu görünümü etkinleştirmek için:
 
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/)**Gruplar** > **Tüm Cihazlar** > **Tüm Bilgisayarlar**'ı seçin.
 2. Son algılama yollarını görmek istediğiniz bilgisayara sağ tıklayın ve **Özellikler**’i seçin.

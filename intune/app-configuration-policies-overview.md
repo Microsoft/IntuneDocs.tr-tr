@@ -17,35 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649034"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885113"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
-Bir iOS veya Android uygulamasına yapılandırma ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu yapılandırma ayarlarını bir uygulama, uygulama yapılandırma ve Yönetim için endüstri standardı yaklaşımı kullanarak özelleştirilmesine olanak sağlar. Yapılandırma ilkesi ayarları, uygulama tarafından denetim gerçekleştirildiğinde, genellikle de uygulama ilk defa çalıştırıldığında kullanılır.
+Bir iOS veya Android uygulamasına yapılandırma ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu yapılandırma ayarları, uygulama yapılandırmasına ve yönetimine yönelik sektör standardı yaklaşımıyla bir uygulamanın özelleştirilbilmesine izin verir. Yapılandırma ilkesi ayarları, uygulama tarafından denetim gerçekleştirildiğinde, genellikle de uygulama ilk defa çalıştırıldığında kullanılır.
 
 Dahil etme ve dışlama atamalarının birleşimini kullanarak kullanıcı ve cihaz gruplarına bir uygulama yapılandırma ilkesi atayabilirsiniz. Bir uygulama yapılandırma ilkesini ekledikten sonra bu uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladıktan sonra ilkenin uygulandığı kullanıcı gruplarını dahil etmeyi veya dışlamayı seçebilirsiniz. Bir veya daha fazla grubu dahil etmeyi seçtiğinizde, belirli grupları dahil etmeyi veya yerleşik grupları kullanmayı seçebilirsiniz. Yerleşik gruplar, **Tüm Kullanıcılar**, **Tüm Cihazlar** ve **Tüm Kullanıcılar + Tüm Cihazlar** şeklindedir.
 
-Bir uygulama yapılandırma ayarı, örneğin, aşağıdaki ayrıntıları birini belirlemenizi gerektirebilir:
+Örneğin, bir uygulama yapılandırma ayarı aşağıdaki ayrıntıların herhangi birini belirtmenizi gerektirebilir:
 
 - Özel bağlantı noktası numarası
 - Dil ayarları
 - Güvenlik ayarları
 - Bir şirket logosu gibi marka ayarları
 
-Bu ayarları girmek için kullanıcılar varsa bunun yerine, yanlış bir şekilde Yardım masanızın iş yükünü artırmak ve yeni uygulamalara geçiş yavaşlayabilir bunu.
+Kullanıcılar bu ayarları bu ayarlarla giriyorlarsa, bu, yardım masanızın yükünü artırabilen ve yeni uygulamaların benimsenmesini yavaşlatabilecek bu ayarı yanlış yapabilirler.
 
-Uygulama yapılandırma ilkeleri, kullanıcılarınız uygulamayı çalıştırmadan önce bu kullanıcılara atanmış bir ilke configation ayarlarını atamanıza imkan vererek uygulama ayarlama sorunları ortadan kaldırmanıza yardımcı olabilir. Daha sonra ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez.
+Uygulama yapılandırma ilkeleri, uygulamayı çalıştırmadan önce kullanıcılara atanan bir ilkeye configation ayarları atamanıza izin vererek uygulama kurulumu sorunlarını ortadan kaldırmanıza yardımcı olabilir. Daha sonra ayarlar otomatik olarak sağlanır ve kullanıcıların herhangi bir eylem yapması gerekmez.
 
 Uygulama bu ayrıntıları her denetlediğinde yapılandırma ayarları kullanılır. Bir uygulama genellikle kullanıcı tarafından ilk çalıştırıldığında yapılandırma ayarlarını denetler.
 
 Intune’la uygulama yapılandırmalarını kullanmak için iki seçeneğiniz vardır:
- - **Yönetilen cihazlar** - Cihaz, mobil cihaz yetkilisi (MDM) sağlayıcısı olarak Intune tarafından yönetilir.
- - **Yönetilmeyen cihazlar** - Uygulama, cihaz kaydı olmadan yönetilir.
+- **Yönetilen cihazlar** - Cihaz, mobil cihaz yetkilisi (MDM) sağlayıcısı olarak Intune tarafından yönetilir.
+- **Yönetilmeyen cihazlar** - Uygulama, cihaz kaydı olmadan yönetilir.
 
 > [!NOTE]
 > Microsoft Intune yöneticisi olarak yönetilen cihazlarda hangi kullanıcı hesaplarının Microsoft Office uygulamalarına eklendiğini denetleyebilirsiniz. Erişimi yalnızca izin verilen kullanıcı hesaplarıyla sınırlayabilecek ve kayıtlı cihazlarda kişisel hesapları engelleyebilirsiniz. Destekleyen uygulamalar, uygulama yapılandırmasını işler ve onaylanmamış hesapları kaldırıp engeller.
@@ -53,10 +53,10 @@ Intune’la uygulama yapılandırmalarını kullanmak için iki seçeneğiniz va
 ## <a name="apps-that-support-app-configuration"></a>Uygulama yapılandırmasını destekleyen uygulamalar
 
 ### <a name="managed-devices"></a>Yönetilen cihazlar
-Destekleyen uygulamalar için uygulama yapılandırma ilkelerini kullanabilirsiniz. Intune'da uygulama yapılandırmasını desteklemek için uygulamalar tarafından tanımlandığı gibi uygulama yapılandırmaları kullanımını desteklemek üzere yazılmış olmalıdır [Appconfig topluluk](https://www.appconfig.org/members). Ayrıntılar için uygulama satıcınıza başvurun.
+Destekleyen uygulamalar için uygulama yapılandırma ilkelerini kullanabilirsiniz. Intune 'da uygulama yapılandırmasını desteklemek için uygulamalar, [appconfig topluluğu](https://www.appconfig.org/members)tarafından tanımlandığı şekilde uygulama yapılandırmalarının kullanımını desteklemek üzere yazılmış olmalıdır. Ayrıntılar için uygulama satıcınıza başvurun.
 
 ### <a name="managed-apps"></a>Yönetilen uygulamalar
-Intune Uygulama SDK’sını uygulamaya ekleyerek veya uygulamayı geliştirildikten sonra sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. Intune uygulama SDK'sı, iOS ve Android için kullanılabilir, uygulamanızı Intune uygulama yapılandırma ilkeleri için etkinleştirir. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md).
+Intune Uygulama SDK’sını uygulamaya ekleyerek veya uygulamayı geliştirildikten sonra sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. Hem iOS hem de Android için kullanılabilen Intune uygulama SDK 'Sı, Intune uygulama koruma yapılandırma ilkelerine yönelik uygulamanızı mümkün bir şekilde sunar. Uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirme çabası içindedir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Uygulama yapılandırması için Graph API desteği
 
@@ -66,9 +66,9 @@ Ayrıca uygulama yapılandırma görevlerini tamamlamak için Graph API’si de 
 
 ### <a name="managed-devices"></a>Yönetilen cihazlar
 
- - iOS cihazlarınızla uygulama yapılandırmasını kullanma hakkında bilgi edinin.  Bkz: [yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-ios.md).
- - Android cihazlarınızla uygulama yapılandırmasını kullanma hakkında bilgi edinin.  Bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md).
+- iOS cihazlarınızla uygulama yapılandırmasını kullanma hakkında bilgi edinin.  Bkz. [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md).
+- Android cihazlarınızla uygulama yapılandırmasını kullanma hakkında bilgi edinin.  Bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Yönetilen uygulamalar
 
- - Yönetilen uygulamalarla uygulama yapılandırmasını kullanma hakkında bilgi edinin. Bkz. [Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-managed-app.md).
+- Yönetilen uygulamalarla uygulama yapılandırmasını kullanma hakkında bilgi edinin. Bkz. [Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-managed-app.md).

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6082f4de6a881f211f2c7569fcd052ba1f37ad7b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045918"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884773"
 ---
 # <a name="data-collection-in-intune"></a>Intune’da veri toplama
 
@@ -41,48 +41,48 @@ Intune tarafından toplanan kişisel verilerin çoğu tanımlanan verilerdir. Bu
 Intune tarafından toplanan tanımlanan veriler şunları içerebilir ancak bu kadarla sınırlı değildir: 
 
 - Kullanıcı bilgileri
-    - Sahip adı/kullanıcı görünen adı (kullanıcının Azure’da kayıtlı ve theAzureUserID olarak tanımlanan adı)
-    - Kullanıcı Asıl Adı veya e-posta adresi
-    - Üçüncü taraf kullanıcı tanımlamaları (AppleID gibi)
+  - Sahip adı/kullanıcı görünen adı (kullanıcının Azure’da kayıtlı ve theAzureUserID olarak tanımlanan adı)
+  - Kullanıcı Asıl Adı veya e-posta adresi
+  - Üçüncü taraf kullanıcı tanımlamaları (AppleID gibi)
 - Donanım envanteri bilgileri
-    - Cihaz adı
-    - Üretici
-    - İşletim sistemi
-    - Seri numarası
-    - IMEI numarası
-    - IP adresi
-    - Wi-Fi MacAddress
-    - ICCID
-    - Telefon numarası
+  - Cihaz adı
+  - Üretici
+  - İşletim sistemi
+  - Seri numarası
+  - IMEI numarası
+  - IP adresi
+  - Wi-Fi MacAddress
+  - ICCID
+  - Telefon numarası
 - Aşağıdaki etkinliklere ilişkin veriler dahil olmak üzere denetim günlüğü bilgileri
-    - Bilgisayarlarda
-    - Create
-    - Güncelleştirme (düzenleme)
-    - Sil
-    - Ata
-    - Uzak görevler
+  - Bilgisayarlarda
+  - Create
+  - Güncelleştirme (düzenleme)
+  - Sil
+  - Ata
+  - Uzak görevler
 - Destek bilgileri
-    - İletişim bilgileri (ad, telefon numarası, e-posta adresi)
-    - Microsoft’un destek, ürün ve/veya müşteri deneyimi ekibi üyeleriyle e-posta yoluyla yapılan tartışmalar
+  - İletişim bilgileri (ad, telefon numarası, e-posta adresi)
+  - Microsoft’un destek, ürün ve/veya müşteri deneyimi ekibi üyeleriyle e-posta yoluyla yapılan tartışmalar
 - Erişim denetimi bilgileri (Intune, bu verileri [Rol Tabanlı Erişim Denetimi](role-based-access-control.md) gibi özellikler yoluyla yönetim rolleri ve işlevlerine erişimi yönetmek için kullanır.)
-    - Statik doğrulayıcılar (müşterinin parolası)
-    - Sertifikalar için gizlilik anahtarları 
+  - Statik doğrulayıcılar (müşterinin parolası)
+  - Sertifikalar için gizlilik anahtarları 
 - Yönetici ve hesap bilgileri
-    - Yönetici kullanıcının adı ve soyadı
-    - Yönetici kullanıcı adı
-    - UPN (e-posta)
-    - Telefon numarası
-    - Hesap sahibinin e-posta adresi
-    - Tüm müşteri BT yöneticilerinin Active Directory kimliği
-    - Müşteriyi faturalandırma için ödeme verileri
-    - Abonelik anahtarı
+  - Yönetici kullanıcının adı ve soyadı
+  - Yönetici kullanıcı adı
+  - UPN (e-posta)
+  - Telefon numarası
+  - Hesap sahibinin e-posta adresi
+  - Tüm müşteri BT yöneticilerinin Active Directory kimliği
+  - Müşteriyi faturalandırma için ödeme verileri
+  - Abonelik anahtarı
 - Uygulama envanteri, örneğin
-    - uygulama adı
-    - sürüm
-    - uygulama kimliği
-    - boyut
-    - yükleme konumu
-    - Uygulama envanteri verileri, yalnızca Yönetici tarafından şirkete ait cihaz olarak işaretlendiğinde veya uyumlu uygulama özelliği açık olduğunda toplanır.  
+  - uygulama adı
+  - sürüm
+  - uygulama kimliği
+  - boyut
+  - yükleme konumu
+  - Uygulama envanteri verileri, yalnızca Yönetici tarafından şirkete ait cihaz olarak işaretlendiğinde veya uyumlu uygulama özelliği açık olduğunda toplanır.  
 - Müşteri 3. taraf kiracı kimlikleri, örneğin Apple Kimliği. 
 
 ## <a name="pseudonymized-data"></a>Takma ad kullanılan veriler
@@ -92,30 +92,30 @@ Takma ad kullanılan veriler, bir benzersiz tanımlayıcı ile ilişkilidir. Bu 
 Intune tarafından toplanan takma ad kullanılan veriler şunları içerebilir ancak bu kadarla sınırlı değildir: 
 
 - Bir kullanıcı ve/veya cihaza bağlı tanılama, performans ve kullanım verileri
-    - Bir özelliğin kullanılma sayısı
-    - Özelliğe sağlanan komutlar
-    - Bir hizmetin yanıt süresi
-    - Yüklemeler ve diğer işlemlerin başarı oranları
-    - Intune Şirket Portalı uygulama hataları
-    - Kullanıcı ve cihaz tanımlayıcıları
-    - Başvuru, bağıntı ve yönetime yönelik tanımlayıcılar 
+  - Bir özelliğin kullanılma sayısı
+  - Özelliğe sağlanan komutlar
+  - Bir hizmetin yanıt süresi
+  - Yüklemeler ve diğer işlemlerin başarı oranları
+  - Intune Şirket Portalı uygulama hataları
+  - Kullanıcı ve cihaz tanımlayıcıları
+  - Başvuru, bağıntı ve yönetime yönelik tanımlayıcılar 
 - Bir cihaz veya kullanıcıya bağlı olmayan cihaz verileri (bu veriler bir cihaz veya kullanıcıya bağlıysa Intune bunlara tanımlanan verilere olduğu gibi davranır)
-    - Intune cihaz kimliği
-    - Azure Active Directory cihaz kimliği
-    - Intune cihaz yönetimi kimliği
-    - Kiracı kimliği
-    - Hesap kimliği
-    - EAS cihaz kimliği
-    - Platforma özgü kimlikler
-    - iOS cihazlar için AppleID
-    - Mac cihazlar için Mac Adresi
-    - Windows cihazlar için Windows kimliği
+  - Intune cihaz kimliği
+  - Azure Active Directory cihaz kimliği
+  - Intune cihaz yönetimi kimliği
+  - Kiracı kimliği
+  - Hesap kimliği
+  - EAS cihaz kimliği
+  - Platforma özgü kimlikler
+  - iOS cihazlar için AppleID
+  - Mac cihazlar için Mac Adresi
+  - Windows cihazlar için Windows kimliği
 - Yönetilen uygulama bilgileri
-    - Yönetilen uygulama kimliği
-    - Yönetilen uygulama cihaz etiketi
-    - Intune cihaz yönetimi kimliği
-    - Azure Active Directory cihaz kimliği
-    - Şifreleme anahtarları
+  - Yönetilen uygulama kimliği
+  - Yönetilen uygulama cihaz etiketi
+  - Intune cihaz yönetimi kimliği
+  - Azure Active Directory cihaz kimliği
+  - Şifreleme anahtarları
 
 ## <a name="aggregated-data"></a>Toplam veriler
 
@@ -125,14 +125,14 @@ Intune tarafından toplanan toplam veriler şunları içerebilir ancak bu kadarl
 
 - Tüm Intune kiracılarındaki yönetici kullanım verileri (örneğin Yönetici konsoluyla etkileşimdeyken seçilen yönetici denetimleri)
 - Kiracı hesap bilgileri (bu verilere Intune dikey penceresinden ulaşılabilir)
-    - Kayıtlı cihaz veya kullanıcı sayısı
-    - Tanımlı cihaz platformu sayısı  
-    - Yüklü cihaz sayısı
-    - installedDeviceCount: Uygulamanın yüklü olduğu cihaz sayısı.
-    - notApplicableDeviceCount: Uygulama geçerli değil cihazların sayısı.
-    - notInstalledDeviceCount: Uygulama uygulanabilir ancak yüklü olduğu cihaz sayısı.
-    - pendingInstallDeviceCount: Uygulamanın geçerli olduğu cihazları ve yükleme numberr beklemede.
-    
+  - Kayıtlı cihaz veya kullanıcı sayısı
+  - Tanımlı cihaz platformu sayısı  
+  - Yüklü cihaz sayısı
+  - ınstalınstalde Devicecount: Uygulamanın yüklü olduğu cihaz sayısı.
+  - notApplicableDeviceCount: Uygulamanın geçerli olmadığı cihaz sayısı.
+  - Notınstalınstalde Devicecount: Uygulamanın geçerli olduğu ancak yüklenmediği cihazların sayısı.
+  - Pendingınstalldevicecount: Uygulamanın geçerli olduğu ve yükleme beklemede olduğu cihazların Numberr.
+
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Intune’un verileri nasıl [depolayıp işlediği](privacy-data-store-process.md) ve [paylaştığı](privacy-data-secure-share.md) hakkında daha fazla bilgi edinin. 

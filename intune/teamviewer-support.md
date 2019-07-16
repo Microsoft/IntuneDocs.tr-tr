@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c05543884e0d9a00b570fb9ed4be1cdef65ca0
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66938335"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882239"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Intune cihazlarını uzaktan yönetmek için TeamViewer kullanma
 
@@ -32,10 +32,10 @@ Intune tarafından yönetilen cihazlar [TeamViewer](https://www.teamviewer.com) 
 
 - Azure portalındaki Intune yöneticisi, aşağıdaki [Intune rollerine](role-based-access-control.md) sahip olmalıdır:  
 
-    - **Uzaktan Yardımı güncelleştirme**: Yöneticilerin TeamViewer Bağlayıcısı ayarlarını değiştirmesine izin verir
-    - **Uzaktan Yardım isteği**: Herhangi bir kullanıcı için yeni bir Uzaktan Yardım oturumu başlatmak yöneticilerin sağlar. Bu role sahip kullanıcılar, bir kapsam dahilindeki herhangi bir Intune rolüyle kısıtlanmaz. Ayrıca, bir kapsam dahilinde bir Intune rolü atanmış olan kullanıcı veya cihaz grupları da uzaktan yardım isteyebilir. 
+  - **Uzaktan Yardımı Güncelleştir**: Yöneticilerin TeamViewer Bağlayıcısı ayarlarını değiştirmesine izin verir
+  - **Uzaktan Yardım iste**: Yöneticilerin herhangi bir kullanıcı için yeni bir uzaktan yardım oturumu başlatmasını sağlar. Bu role sahip kullanıcılar, bir kapsam dahilindeki herhangi bir Intune rolüyle kısıtlanmaz. Ayrıca, bir kapsam dahilinde bir Intune rolü atanmış olan kullanıcı veya cihaz grupları da uzaktan yardım isteyebilir. 
 
-- A [TeamViewer](https://www.teamviewer.com) hesabı ile oturum açma kimlik bilgileri. TeamViewer lisansı yalnızca bazı Intune ile tümleştirmesini desteklemiyor olabilir. Belirli TeamViewer gereksinimleri için bkz. [TeamViewer tümleştirmesi iş ortağı: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
+- Oturum açma kimlik bilgilerine sahip bir [TeamViewer](https://www.teamviewer.com) hesabı. Yalnızca bazı TeamViewer lisansları, Intune ile tümleştirmeyi destekleyebilir. Belirli TeamViewer ihtiyaçları için bkz [. TeamViewer tümleştirme ortağı: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
 
 TeamViewer'ı kullanarak TeamViewer for Intune Connector'ın TeamViewer oturumları oluşturmasına, Active Directory verilerini okumasına ve TeamViewer hesap erişim belirtecini kaydetmesine izin vermiş olursunuz.
 
@@ -60,10 +60,10 @@ Bağlayıcı yapılandırıldıktan sonra bir cihazı uzaktan yönetebilirsiniz.
 
 ![TeamViewer kullanarak Android cihazı uzaktan yönetme - örnek](./media/android-teamviewer.png)
 
-Uzak oturumu başlattığınızda, kullanıcılar kendi cihazında Şirket portalı uygulaması simgesinde bir bildirim bayrağı görür. Bir bildirim, uygulama açıldığında da görünür. Kullanıcılar, sonra Uzaktan Yardım isteğini kabul edebilir.
+Bir uzak oturum başlattığınızda, kullanıcılar cihazındaki Şirket Portalı uygulama simgesinde bir bildirim bayrağı görür. Uygulama açıldığında bir bildirim de görüntülenir. Kullanıcılar daha sonra uzaktan yardım isteğini kabul edebilir.
 
 > [!NOTE]
-> DEM ve WCD, gibi "Kullanıcısız" yöntemler kullanılarak kaydedilen Windows cihazlar, Şirket portalı uygulamasında TeamViewer bildirim gösterme. Bu senaryolarda, TeamViewer portalı oturum oluşturmak için kullanılması önerilir.
+> DEM ve WCD gibi "kullanıcısız" yöntemler kullanılarak kaydedilen Windows cihazları, Şirket Portalı uygulamasında TeamViewer bildirimini göstermez. Bu senaryolarda, oturumu oluşturmak için TeamViewer portalını kullanmanız önerilir.
 
 TeamViewer'da, cihazın kontrolünü ele almak da dahil olmak üzere, cihazda bir dizi işlem gerçekleştirebilirsiniz. Neler yapabileceğinizin tam ayrıntıları için bkz. [TeamViewer rehberi](https://www.teamviewer.com/support/documents/).
 

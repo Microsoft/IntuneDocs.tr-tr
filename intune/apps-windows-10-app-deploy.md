@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı
 titleSuffix: ''
-description: Windows 10 uygulama dağıtım senaryolarında Microsoft Intune kullanılabilir hakkında bilgi edinin.
+description: Microsoft Intune ile kullanılabilen Windows 10 uygulama dağıtım senaryoları hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8168cdaec4d6616b12fa4da225c84fa2d239994d
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 804c6485252883672de13bf13729b28a4d7d2f94
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648649"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883847"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı 
 
@@ -46,23 +46,23 @@ Windows 10 LOB uygulamaları imzalanır ve Intune yönetim konsoluna yüklenir. 
 ## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 cihazlarına uygulamaları yükleme
 Uygulama türüne bağlı olarak, uygulama Windows 10 cihazına iki yoldan biriyle yüklenebilir:
 
-- **Kullanıcı bağlamı**: Kullanıcı bağlamında uygulama dağıtıldığında, kullanıcının aygıtına oturum açtığında yönetilen uygulamayı cihazda söz konusu kullanıcı için yüklenir. Kullanıcı cihazda oturum açana kadar uygulama yükleme işleminin başarılı olmayacağını unutmayın. 
-    - Modern iş kolu uygulamaları ve İş için Microsoft Store uygulamaları (hem çevrimiçi hem de çevrimdışı) kullanıcı bağlamında dağıtılabilir ve hem Gerekli hem de Kullanılabilir amacını destekler.
-    - **Kullanıcı Modu** veya **İkili Mod** olarak oluşturulan Win32 uygulamaları kullanıcı bağlamında dağıtılabilir ve hem **Gerekli** hem de **Kullanılabilir** amaçlarını destekler. 
-- **Cihaz bağlamı**: Cihaz bağlamında uygulama dağıtıldığında, Intune tarafından yönetilen bir uygulama, doğrudan cihaza yüklenir.
-    - Yalnızca modern iş kolu satır uygulama ve iş kolu uygulamaları için çevrimdışı lisanslı Microsoft Store cihaz bağlamında dağıtılabilir ve yalnızca gerekli hedefini destekler.
-    - **Makine Modu** veya **İkili Mod** olarak oluşturulan Win32 uygulamaları kullanıcı bağlamında dağıtılabilir ve yalnızca **Gerekli** amacını destekler.
+- **Kullanıcı bağlamı**: Bir uygulama kullanıcı bağlamında dağıtıldığında, Kullanıcı cihazda oturum açtığında, yönetilen uygulama cihazdaki bu kullanıcı için yüklenir. Kullanıcı cihazda oturum açana kadar uygulama yükleme işleminin başarılı olmayacağını unutmayın. 
+  - Modern iş kolu uygulamaları ve İş için Microsoft Store uygulamaları (hem çevrimiçi hem de çevrimdışı) kullanıcı bağlamında dağıtılabilir ve hem Gerekli hem de Kullanılabilir amacını destekler.
+  - **Kullanıcı Modu** veya **İkili Mod** olarak oluşturulan Win32 uygulamaları kullanıcı bağlamında dağıtılabilir ve hem **Gerekli** hem de **Kullanılabilir** amaçlarını destekler. 
+- **Cihaz bağlamı**: Bir uygulama cihaz bağlamına dağıtıldığında, yönetilen uygulama doğrudan cihaza Intune tarafından yüklenir.
+  - Yalnızca modern iş kolu uygulamaları ve Iş kolu uygulamaları için çevrimdışı lisanslı Microsoft Store cihaz bağlamına dağıtılabilir ve yalnızca gerekli amacı destekleyecektir.
+  - **Makine Modu** veya **İkili Mod** olarak oluşturulan Win32 uygulamaları kullanıcı bağlamında dağıtılabilir ve yalnızca **Gerekli** amacını destekler.
 
 > [!NOTE]
 > **İkili Mod** uygulamaları olarak oluşturulan Win32 uygulamalarında yönetici olarak siz, bu örnekle ilişkili tüm atamalar için uygulamanın **Kullanıcı Modu** veya **Makine Modu** olarak çalışacağını seçersiniz. Dağıtım bağlamı, atamadan atamaya değiştirilemez.  
 
 Bir uygulama cihaz bağlamında dağıtıldığında, yüklemenin başarılı olması için cihaz bağlamını destekleyen bir cihazın hedeflenmesi gerekir. Buna ek olarak, cihaz bağlamında dağıtım aşağıdaki koşulları destekler:
 - Uygulama cihaz bağlamında dağıtılıyorsa ve bir kullanıcıyı hedefliyorsa, yükleme işlemi başarısız olur ve yönetici konsolunda şu durum ve hata görüntülenir:
-    - Durum: Başarısız oldu.
-    - Hata: Bir kullanıcı bir cihaz bağlamı yükleme ile hedeflenemez.
+  - Durum: Başaramadı.
+  - Hata: Bir Kullanıcı bir cihaz bağlamı yüklemesi ile hedeflenmiyor.
 - Uygulama cihaz bağlamında dağıtılıyorsa ama cihaz bağlamını desteklemeyen bir cihazı hedefliyorsa, yükleme işlemi başarısız olur ve yönetici konsolunda şu durum ve hata görüntülenir:
-    - Durum: Başarısız oldu.
-    - Hata: Bu platform, cihaz bağlam yükler desteklemez. 
+  - Durum: Başaramadı.
+  - Hata: Bu platform cihaz bağlamı yüklemelerini desteklemez. 
 
 > [!Note]
 > Uygulama ataması belirli bir dağıtımla kaydedildikten sonra, modern uygulamalar dışında bu atama için bağlam değiştirilemez. Modern uygulamalar söz konusu olduğunda, bağlam değiştirilip kullanıcı bağlamından cihaz bağlamına geçilebilir. 

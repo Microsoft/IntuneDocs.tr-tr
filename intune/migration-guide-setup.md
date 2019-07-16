@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 78cf3c2ff5babbfb45dfa6a41add09ef91549e8d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549379"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885025"
 ---
 # <a name="basic-setup"></a>Temel kurulum
 
@@ -36,7 +36,7 @@ Intune, kimlik ve kullanıcı gruplama sağlayıcısı olarak Azure Active Direc
 
 - [Dizin eşitleme gereksinimleri](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
-- [Çok faktörlü kimlik doğrulaması (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 - [Kullanıcı ve cihaz gruplarınızı planlama](users-add.md)
 
@@ -55,23 +55,23 @@ Intune ile VPN, Wi-Fi veya e-posta profilleri için sertifika tabanlı kimlik do
 
 ## <a name="task-list-for-an-intune-setup"></a>Intune kurulumu için görev listesi
 
-### <a name="task-1-intune-subscription"></a>1\. Görev: Intune aboneliği
+### <a name="task-1-intune-subscription"></a>Görev 1: Intune aboneliği
 
 Intune'a geçebilmek için Intune aboneliği gerekir.
 
 - Aşağıdakileri nasıl yapacağınızı öğrenmek için [bu sayfayı](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) ziyaret edebilirsiniz:
 
-    - Yeni bir AAD kiracısına bağlantılı yeni bir Intune aboneliği oluşturun.
+  - Yeni bir AAD kiracısına bağlantılı yeni bir Intune aboneliği oluşturun.
 
-    - Mevcut bir AAD kiracısında oturum açarak Intune aboneliğini bağlayın.
+  - Mevcut bir AAD kiracısında oturum açarak Intune aboneliğini bağlayın.
 
-### <a name="task-2-assign-intune-user-licenses"></a>2\. Görev: Intune kullanıcı lisanslarını atayın
+### <a name="task-2-assign-intune-user-licenses"></a>Görev 2: Intune kullanıcı lisanslarını atama
 
 - [Intune kullanıcı lisanslarının nasıl atanacağını](licenses-assign.md) öğrenin.
 
 - Yeni bir Azure Active Directory kiracısı oluşturduysanız [yeni kullanıcılar oluşturma veya şirket içi Active Directory’den (AD) kullanıcı eşitleme.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
-### <a name="task-3-set-your-mdm-authority-to-intune"></a>3\. Görev: MDM yetkiliniz olarak Intune'u ayarlama
+### <a name="task-3-set-your-mdm-authority-to-intune"></a>Görev 3: MDM yetkilinizi Intune olarak ayarlama
 
 Intune, Azure portalından veya Configuration Manager Güncel Dal konsolundan yönetilebilir. Intune’u Configuration Manager Güncel Dal dağıtımı ile tümleştirmeniz gerekmedikçe, Intune'u [Azure portalından](https://portal.azure.com) yönetmenizi öneririz.
 

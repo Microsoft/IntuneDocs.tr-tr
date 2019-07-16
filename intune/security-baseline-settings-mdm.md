@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735774"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882288"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune için MDM güvenlik taban çizgisi ayarları  
 
@@ -116,8 +116,8 @@ Daha fazla bilgi için Windows [belgelerindeki ilke CSP-](https://docs.microsoft
 
   Bit dolabı çıkarılabilir sürücü ilkesi için aşağıdaki ayarı yapılandırın:
 
-    - **Yazma erişimi için şifreleme gerektir**  
-      **Varsayılan**: Evet  
+  - **Yazma erişimi için şifreleme gerektir**  
+    **Varsayılan**: Evet  
   
 
 ## <a name="browser"></a>Browser  
@@ -226,17 +226,17 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Deviceınstallation](htt
   
   **Varsayılan**: Donanım cihazını yüklemeyi engelle  
 
-    *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
-  
-    - **Eşleşen donanım cihazlarını kaldırma**   
+  *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
+
+  - **Eşleşen donanım cihazlarını kaldırma**   
     Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
-      
-      **Varsayılan**: Evet
-  
-    - **Engellenen donanım cihaz tanımlayıcıları**  
-       Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
-      
-      **Varsayılan**: Evet  
+    
+    **Varsayılan**: Evet
+
+  - **Engellenen donanım cihaz tanımlayıcıları**  
+    Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
+    
+    **Varsayılan**: Evet  
   
 - **Kurulum sınıflarına göre donanım cihaz yüklemesi**  
   Bu ilke ayarı, Windows 'un yüklemesi engellenen cihaz sürücüleri için cihaz kurulum sınıfının genel benzersiz tanımlayıcıları (GUID 'Ler) listesini belirtmenizi sağlar. Bu ilke ayarı, Windows 'un bir cihaz yüklemesine izin veren diğer tüm ilke ayarlarından önceliklidir. Bu ilke ayarını etkinleştirirseniz, Windows 'un, cihaz kurulum sınıfı GUID 'Leri oluşturduğunuz listede göründüğü cihaz sürücülerini yüklemesi veya güncelleştirmesi engellenir. Uzak Masaüstü sunucusunda bu ilke ayarını etkinleştirirseniz, ilke ayarı, belirtilen cihazların uzak masaüstü istemcisinden uzak masaüstü sunucusuna yönlendirilmesini etkiler. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Windows, diğer ilke ayarları tarafından izin verilen veya engellenen cihazları yükleyebilir ve güncelleştirebilir.  
@@ -244,16 +244,16 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Deviceınstallation](htt
   
   **Varsayılan**: Donanım cihazını yüklemeyi engelle  
 
-    *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
-    - **Eşleşen donanım cihazlarını kaldırma**    
+  *Donanım aygıtı yüklemesi engellenme* seçildiğinde aşağıdaki ayarlar kullanılabilir.
+  - **Eşleşen donanım cihazlarını kaldırma**    
     Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.  
 
-      **Varsayılan**: *Varsayılan yapılandırma yok*  
-  
-    - **Engellenen donanım cihaz tanımlayıcıları**  
-      Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
-      
-      **Varsayılan**: *Varsayılan yapılandırma yok*  
+    **Varsayılan**: *Varsayılan yapılandırma yok*  
+
+  - **Engellenen donanım cihaz tanımlayıcıları**  
+    Bu ayar yalnızca, *kurulum sınıfları tarafından sağlanan donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir.
+    
+    **Varsayılan**: *Varsayılan yapılandırma yok*  
 
 ## <a name="device-lock"></a>Cihaz kilidi  
 Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) bölümüne bakın.  
@@ -1186,12 +1186,12 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOpt
   
 - **Yönetici yükseltme istemi davranışı**  
   Bu ilke ayarı, Yöneticiler için yükseltme isteminin davranışını denetler. Seçenekler şunlardır: 
-    - *Sormadan Yükselt* -ayrıcalıklı hesapların, izin veya kimlik bilgileri gerekmeden yükseltme gerektiren bir işlem gerçekleştirmesine izin verir. Not: Bu seçeneği yalnızca en kısıtlanmış ortamlarda kullanın. 
-    - *Güvenli masaüstünde kimlik bilgileri iste* -bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde ayrıcalıklı bir Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
-    - *Güvenli masaüstünde onay iste* -bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
-    - *Kimlik bilgileri iste* -bir işlem ayrıcalık yükseltmesi gerektirdiğinde kullanıcıdan bir Yönetici Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem ilgili ayrıcalıkla devam eder. 
-    - *Onay iste* -bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder.  
-    - *Windows dışı ikili dosyalar için Izin iste* -Microsoft dışı bir uygulama için bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan güvenli masaüstünde izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
+  - *Sormadan Yükselt* -ayrıcalıklı hesapların, izin veya kimlik bilgileri gerekmeden yükseltme gerektiren bir işlem gerçekleştirmesine izin verir. Not: Bu seçeneği yalnızca en kısıtlanmış ortamlarda kullanın. 
+  - *Güvenli masaüstünde kimlik bilgileri iste* -bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde ayrıcalıklı bir Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
+  - *Güvenli masaüstünde onay iste* -bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcının güvenli masaüstünde izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
+  - *Kimlik bilgileri iste* -bir işlem ayrıcalık yükseltmesi gerektirdiğinde kullanıcıdan bir Yönetici Kullanıcı adı ve parola girmesi istenir. Kullanıcı geçerli kimlik bilgileri girerse, işlem ilgili ayrıcalıkla devam eder. 
+  - *Onay iste* -bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder.  
+  - *Windows dışı ikili dosyalar için Izin iste* -Microsoft dışı bir uygulama için bir işlem ayrıcalık yükseltmesi gerektirdiğinde, kullanıcıdan güvenli masaüstünde izin ver veya Reddet ' i seçmesi istenir. Kullanıcı Izin ver ' i seçerse, işlem kullanıcının kullanılabilir en yüksek ayrıcalığıyla devam eder. 
   
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067215)   
   
@@ -1208,11 +1208,11 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOpt
   **Varsayılan**: NTLM v2 128 şifrelemesi gerektir
   
 - **Akıllı kart kaldırma davranışı**  
-    Bu güvenlik ayarı, oturum açmış bir kullanıcının akıllı kartı, akıllı kart okuyucusundan kaldırıldığında ne olacağını belirler. Seçenekler şunlardır:
-     - *Eylem yok*. 
-     - *Iş Istasyonunu kilitle* -akıllı kart kaldırıldığında iş istasyonu kilitlenir, kullanıcıların alanı terk etmeleri, akıllı kartlarını bunlara sahip olması ve hala korumalı bir oturum sürdürmesine izin verir.
-     - *Kapanmaya zorla* -akıllı kart kaldırıldığında Kullanıcı oturumu otomatik olarak kapatılır.
-     - *Uzak Masaüstü oturumunun bağlantısını kesme* -akıllı kartın kaldırılması, kullanıcının oturumunu kapatmadan oturumun bağlantısını keser. Bu, kullanıcının akıllı kartı eklemesini ve oturumu daha sonra ya da başka bir akıllı kart okuyucusu ile donatılmış bir bilgisayara yeniden oturum açmak zorunda kalmadan sürdürmesini sağlar. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.
+  Bu güvenlik ayarı, oturum açmış bir kullanıcının akıllı kartı, akıllı kart okuyucusundan kaldırıldığında ne olacağını belirler. Seçenekler şunlardır:
+  - *Eylem yok*. 
+  - *Iş Istasyonunu kilitle* -akıllı kart kaldırıldığında iş istasyonu kilitlenir, kullanıcıların alanı terk etmeleri, akıllı kartlarını bunlara sahip olması ve hala korumalı bir oturum sürdürmesine izin verir.
+  - *Kapanmaya zorla* -akıllı kart kaldırıldığında Kullanıcı oturumu otomatik olarak kapatılır.
+  - *Uzak Masaüstü oturumunun bağlantısını kesme* -akıllı kartın kaldırılması, kullanıcının oturumunu kapatmadan oturumun bağlantısını keser. Bu, kullanıcının akıllı kartı eklemesini ve oturumu daha sonra ya da başka bir akıllı kart okuyucusu ile donatılmış bir bilgisayara yeniden oturum açmak zorunda kalmadan sürdürmesini sağlar. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.
   
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067331) 
     
@@ -1712,7 +1712,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
 Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) bölümüne bakın.  
 
 - **Güvenlik duvarı profili etki alanı**  
-  Kuralın ait olduğu profilleri belirtir: Domain, Private, Public. Bu değer, etki alanlarına bağlı ağların profilini temsil eder.  
+  Kuralın ait olduğu profilleri belirtir: Etki alanı, özel, genel. Bu değer, etki alanlarına bağlı ağların profilini temsil eder.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2066796)  
 
   - **Engellenen gelen bağlantılar**  
@@ -1728,7 +1728,7 @@ Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYP
     **Varsayılan**: İzin Verildi
 
 - **Güvenlik duvarı profili genel**  
-  Kuralın ait olduğu profilleri belirtir: Domain, Private, Public. Bu değer, ortak ağların profilini temsil eder. Bu ağlar, sunucu konağındaki yöneticiler tarafından genel olarak sınıflandırılır. Sınıflandırma, ana bilgisayarın ağa ilk bağlanışında meydana gelir. Genellikle bu ağlar havaalanları, kafeterler ve ağdaki eşlere veya ağ yöneticisine güvenilmediği diğer genel yerlerdeki olanlardır.  
+  Kuralın ait olduğu profilleri belirtir: Etki alanı, özel, genel. Bu değer, ortak ağların profilini temsil eder. Bu ağlar, sunucu konağındaki yöneticiler tarafından genel olarak sınıflandırılır. Sınıflandırma, ana bilgisayarın ağa ilk bağlanışında meydana gelir. Genellikle bu ağlar havaalanları, kafeterler ve ağdaki eşlere veya ağ yöneticisine güvenilmediği diğer genel yerlerdeki olanlardır.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067143)  
 
   - **Engellenen gelen bağlantılar**  
@@ -1750,7 +1750,7 @@ Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYP
     **Varsayılan**: Evet
 
 - **Güvenlik duvarı profili özel**  
-  Kuralın ait olduğu profilleri belirtir: Domain, Private, Public. Bu değer, özel ağların profilini temsil eder.  
+  Kuralın ait olduğu profilleri belirtir: Etki alanı, özel, genel. Bu değer, özel ağların profilini temsil eder.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
   - **Engellenen gelen bağlantılar**  

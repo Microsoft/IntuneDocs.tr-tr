@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45bcafad3dc6c2a407e1b7b88e07f4021e8b5a36
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a2084ad1ec0deefd24c0d61f69d99ee11149af96
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528298"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882745"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune'da Mobil Threat Defense bağlayıcısını etkinleştirme
 
@@ -33,7 +33,7 @@ Mobile Threat Defense (MTD) kurulumu sırasında, MTD iş ortağı konsolunuzdak
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD bağlayıcısını etkinleştirmek için
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 
 4. **Intune Panosunda**, **Cihaz uyumluluğu**’nu, ardından **Mobile Threat Defense**’i **Kurulum** bölümü altında seçin.
 
@@ -49,20 +49,20 @@ Mobile Threat Defense (MTD) kurulumu sırasında, MTD iş ortağı konsolunuzdak
 
 Kuruluşunuzun gereksinimlerine göre hangi MTD geçiş seçeneklerini etkinleştirmeniz gerektiğine karar verebilirsiniz. Daha fazla ayrıntı aşağıdadır:
 
-- **Bağlan: Android 4.1 + cihazları [MTD iş ortağı adı] for Work mtd'ye Bağla**: Bu seçeneği etkinleştirdiğinizde, Android 4.1 + olabilir cihazların raporlama güvenlik riskini Intune'a geri.
-    - **Veri alınmazsa uyumsuz olarak işaretle**: Intune veri hakkında bu platformdaki bir cihaz hakkında MTD iş ortağından almazsa cihazın uyumsuz olarak değerlendirin.
+- **Android 4.1 + cihazlarını Iş MTD için [MTD iş ortağı adı]** ' na bağlayın: Bu seçeneği etkinleştirdiğinizde, Android 4.1 + cihazların güvenlik riskini Intune 'a geri bildirimini sağlayabilirsiniz.
+  - **Veri alınmadığında uyumsuz olarak işaretle**: Intune, bu platformdaki bir cihaz hakkında MTD iş ortağından veri almazsa, cihazı uyumsuz olarak değerlendirin.
 <br></br>
-- **İOS 8.0 + cihazları, [MTD iş ortağı adı] for Work MTD'ye Bağla**: Bu seçeneği etkinleştirdiğinizde, iOS 8.0 + cihazların güvenlik riskini Intune'a geri bildirimi olabilir.
-    - **Veri alınmazsa uyumsuz olarak işaretle**: Intune veri hakkında bu platformdaki bir cihaz hakkında MTD iş ortağından almazsa cihazın uyumsuz olarak değerlendirin.
+- **İOS 8.0 + cihazlarını Work MTD için [MTD iş ortağı adı] bağlayın**: Bu seçeneği etkinleştirdiğinizde, iOS 8.0 + cihazların güvenlik riskini Intune 'a geri bildirimini sağlayabilirsiniz.
+  - **Veri alınmadığında uyumsuz olarak işaretle**: Intune, bu platformdaki bir cihaz hakkında MTD iş ortağından veri almazsa, cihazı uyumsuz olarak değerlendirin.
 <br></br>
-- **İOS cihazları için uygulama eşitlemeyi etkinleştir**: Bu mobil tehdit savunması iş ortağının tehdit analizi amacıyla kullanılmak üzere ıntune'dan iOS uygulamalarının meta verilerini istemesine izin verir.
+- **IOS cihazları Için uygulama eşitlemesini etkinleştir**: Bu mobil tehdit savunması iş ortağının, iOS uygulamalarının Intune 'dan tehdit analizi amacıyla kullanması için meta veri istemesine izin verir.
 
-- **Desteklenmeyen işletim sistemi sürümlerini engelle**: Cihaz desteklenen en düşük sürüm'den küçük bir işletim sistemini çalıştırıyorsa engelleyin.
+- **Desteklenmeyen işletim sistemi sürümlerini engelle**: Cihazın desteklenen en düşük sürümden daha düşük bir işletim sistemi çalıştırıyorsa engelleyin.
 
-- **İş ortağının yanıt vermediği gün sayısı**: Intune iş ortağı bağlantısı kesildiği için yanıt vermiyor olarak değerlendirmeden önceki etkin olunmayan gün sayısı. Intune, yanıt vermeyen MTD iş ortakları için uyumluluk durumunu yok sayar.
+- **İş ortağının yanıt vermemesine kadar geçen gün sayısı**: Bağlantı kaybolduğu için Intune 'un iş ortağının yanıt vermemesine neden olmadan önce geçen işlem yapılmayan gün sayısı. Intune, yanıt vermeyen MTD iş ortakları için uyumluluk durumunu yok sayar.
 
 > [!IMPORTANT] 
-> Mümkün olduğunda, ekleyin ve cihaz uyumluluğu ve koşullu erişim ilkesi kuralları oluşturmadan önce MTD uygulamaları atamanızı öneririz. Bu yardımcı MTD uygulamasını son kullanıcılar e-posta veya diğer şirket kaynaklarına erişim elde edebilmesi için hazır ve kullanılabilir olmasını sağlar.
+> Mümkün olduğunda, cihaz uyumluluğunu ve koşullu erişim ilkesi kurallarını oluşturmadan önce MTD uygulamalarını eklemenizi ve atamanızı öneririz. Bu, MTD uygulamasının, e-postaya veya diğer şirket kaynaklarına erişim sağlamadan önce, son kullanıcıların yüklemesine hazır ve kullanılabilir olmasını sağlamaya yardımcı olur.
 
 > [!TIP]
 > Intune ve MTD ortağı arasındaki **Bağlantı durumu** ve **Son eşitleme** zamanını Mobile Threat Defense bölmesinden görebilirsiniz.

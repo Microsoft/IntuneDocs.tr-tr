@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506858"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230080"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Android Cihazınızda uyumluluk denetimi
 
-Cihazınız bir süredir Intune’da oturum açmadıysa, şirket veya okul kaynaklarına erişemeyebilirsiniz. Yeniden erişim kazanmak için aşağıdaki adımları deneyin.  
+Cihazınız bir süredir Intune’da oturum açmadıysa, şirket veya okul kaynaklarına erişemeyebilirsiniz. Erişimi yeniden kazanmak için bu adımları deneyin.  
 
-1. Şirket portalı uygulamasını Cihazınızda Android için açın.  
+1. Cihazınızda Android için Şirket Portalı uygulamasını açın.  
 
-2. Dokunun **cihaz ayarlarını denetle**.  
+2. **Cihaz ayarlarını denetle**' ye dokunun.   
 
 Kayıp veya çalınan cihazınızı sıfırlayamıyorsanız, şirketinizin destek biriminden cihazı sizin için sıfırlamasını isteyin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

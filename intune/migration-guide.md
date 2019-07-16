@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549394"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882778"
 ---
 # <a name="intune-migration-guide"></a>Intune geçiş kılavuzu
 
@@ -35,27 +35,27 @@ Bu kılavuz, bir üçüncü taraf MDM sağlayıcısından Intune’a geçiş ile
 
 Bu kılavuz, geçiş işlemini iki aşamaya ayırır. Bu adımlar, aşamalardan oluşan Intune MDM’ye geçiş işleminde size yardımcı olacak görevler, stratejiler ve taktiksel kılavuz içerir.
 
-- [1. Aşama: Intune mobil cihaz yönetimi için hazırlama](migration-guide-prepare.md)
+- [1. Aşama: Intune 'U mobil cihaz yönetimi için hazırlama](migration-guide-prepare.md)
 
-    - [MDM geçiş gereksinimlerinizi değerlendirme](migration-guide-prepare.md#assess-mdm-requirements)
+  - [MDM geçiş gereksinimlerinizi değerlendirme](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [Temel kurulum](migration-guide-setup.md)
+  - [Temel kurulum](migration-guide-setup.md)
 
-    - [Mobil cihaz ve uygulama yönetimi ilkelerini yapılandırma](migration-guide-configure-policies.md)
+  - [Mobil cihaz ve uygulama yönetimi ilkelerini yapılandırma](migration-guide-configure-policies.md)
 
-    - [Uygulama koruma ilkelerini yapılandırma](migration-guide-app-protection-policies.md)
+  - [Uygulama koruma ilkelerini yapılandırma](migration-guide-app-protection-policies.md)
 
-    - [Geçiş konusunda dikkat edilmesi gereken önemli noktalar](migration-guide-considerations.md)
+  - [Geçiş konusunda dikkat edilmesi gereken önemli noktalar](migration-guide-considerations.md)
 
 - [2. Aşama: Geçiş kampanyası](migration-guide-campaign.md)
 
-    - [İletişim planı](migration-guide-communication-plan.md)
+  - [İletişim planı](migration-guide-communication-plan.md)
 
-    - [Koşullu erişimle son kullanıcı benimsemesi sağlama](migration-guide-drive-adoption.md)
+  - [Koşullu erişimle Son Kullanıcı benimsemesini sürücü](migration-guide-drive-adoption.md)
 
-    - [Normal geçiş süreci](migration-guide-cycle.md)
-        - [Geçiş izleme](migration-guide-cycle.md#monitoring-migration)
-        - [Geçiş sonrası](migration-guide-cycle.md#post-migration)
+  - [Normal geçiş süreci](migration-guide-cycle.md)
+    - [Geçiş izleme](migration-guide-cycle.md#monitoring-migration)
+    - [Geçiş sonrası](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>Varsayımlar
 
@@ -71,4 +71,4 @@ Yeni Intune dağıtımınızın eski MDM dağıtımınızdan farklı olabileceğ
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[1. Aşama: Intune mobil cihaz yönetimi için hazırlama](migration-guide-prepare.md)
+[1. Aşama: Intune 'U mobil cihaz yönetimi için hazırlama](migration-guide-prepare.md)

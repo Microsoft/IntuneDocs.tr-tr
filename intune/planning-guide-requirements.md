@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528267"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882712"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Kullanım örneği senaryosu gereksinimlerini belirleme
 
@@ -50,21 +50,21 @@ Kuruluşunuzun kullanım örneği ve alt kullanım örneği gereksinimlerini gir
 "Gereksinimler" sütununda kullanılabilecek birkaç örnek daha verelim:
 
 - **Güvenli e-posta**
-    - Exchange Online için koşullu erişim / şirket içi
-    - Outlook uygulaması koruma ilkeleri
+  - Exchange Online/şirket içi Exchange için koşullu erişim
+  - Outlook uygulaması koruma ilkeleri
 
 - **Cihaz ayarları**
-    - Dört, altı karakterli PIN ayarı
-    - Bulut yedeklemeyi kısıtla
+  - Dört, altı karakterli PIN ayarı
+  - Bulut yedeklemeyi kısıtla
 
 - **Profiller**
-    - Wi-Fi
-    - VPN
-    - e-posta (Windows 10 mobile)
+  - Wi-Fi
+  - VPN
+  - e-posta (Windows 10 mobile)
 
 - **Uygulamalar**
-    - Uygulama koruma ilkeleriyle Office 365
-    - Uygulama koruma ilkeleri ile iş kolu (LOB)
+  - Uygulama koruma ilkeleriyle Office 365
+  - Uygulama koruma ilkeleri ile iş kolu (LOB)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

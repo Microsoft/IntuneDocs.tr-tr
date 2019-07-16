@@ -16,28 +16,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 428d9c333bb45d1f8456154104209690a95fb508
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529172"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885102"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
-Bu kılavuz, mobil uygulamanıza uygulama koruma ilkeleri Intune desteklemek hızlı bir şekilde etkinleştirmenize yardımcı olur. İlk olarak [Intune Uygulama SDK’sına genel bakış](app-sdk.md) bölümünde açıklanan Intune Uygulama SDK’sı avantajlarını öğrenmeniz yararlı olabilir.
+Bu kılavuz, mobil uygulamanızı Microsoft Intune ile uygulama koruma ilkelerini destekleyecek şekilde hızlı bir şekilde etkinleştirmenize yardımcı olur. İlk olarak [Intune Uygulama SDK’sına genel bakış](app-sdk.md) bölümünde açıklanan Intune Uygulama SDK’sı avantajlarını öğrenmeniz yararlı olabilir.
 
-Intune Uygulama SDK'sı, iOS ve Android’de benzer senaryoları destekler ve BT yöneticilerine platformlar genelinde tutarlı bir deneyim sağlamak amacıyla tasarlanmıştır. Ancak, platform farklar ve sınırlamalar nedeniyle bazı özelliklerin desteklenmesinde küçük farklılıklar şunlardır.
+Intune Uygulama SDK'sı, iOS ve Android’de benzer senaryoları destekler ve BT yöneticilerine platformlar genelinde tutarlı bir deneyim sağlamak amacıyla tasarlanmıştır. Ancak, platform farkları ve sınırlamaları nedeniyle bazı özellikleri desteklemeye yönelik küçük farklılıklar vardır.
 
 ## <a name="register-your-store-app-with-microsoft"></a>Mağaza uygulamanızı Microsoft’a kaydetme
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Uygulamanız kuruluşunuz içinde kullanılıyorsa ve herkese açık olmayacaksa:
 
-_**Gerekmeyen**_ uygulamanızı kaydetmek için. İçin iç [iş kolu (LOB) uygulamaları](apps-add.md#app-types-in-microsoft-intune) , yazılmış tarafından veya şirketiniz için BT yöneticinize dağıtacağınız uygulamayı dahili olarak. Intune uygulama SDK'sı ile oluşturulan ve BT yöneticisinin uygulama koruma ilkeleri uygulamak sağlayacaktır algılar. [iOS veya Android uygulamanızı uygulama koruma ilkesi için etkinleştirme](#enable-your-ios-or-android-app-for-app-protection-policy) bölümüne geçebilirsiniz.
+Uygulamanızı kaydetmeniz _**gerekmez**_ . Şirket tarafından veya şirketiniz tarafından yazılan iç [iş kolu (LOB) uygulamaları](apps-add.md#app-types-in-microsoft-intune) için BT Yöneticisi, uygulamayı dahili olarak dağıtır. Intune, uygulamanın SDK ile derlendiğinden emin olur ve BT yöneticisinin bu uygulamaya uygulama koruma ilkeleri uygulamasına izin verir. [iOS veya Android uygulamanızı uygulama koruma ilkesi için etkinleştirme](#enable-your-ios-or-android-app-for-app-protection-policy) bölümüne geçebilirsiniz.
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Uygulamanız Apple App Store veya Google Play gibi bir genel uygulama mağazasında yayınlanacaksa:
 
-Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_ . BT yöneticileri ardından uygulayabileceğiniz bir uygulama koruma ilkesi olarak listelenen yönetilen uygulamaya bir [Intune iş ortağı uygulaması tarafından korunan](apps-supported-intune-apps.md#partner-apps).
+Öncelikle uygulamanızı Microsoft Intune’a kaydetmeniz ve kayıt koşullarını kabul etmeniz _**gerekir**_ . BT yöneticileri daha sonra yönetilen uygulamaya bir [Intune korumalı iş ortağı uygulaması](apps-supported-intune-apps.md#partner-apps)olarak listelenen bir uygulama koruma ilkesi uygulayabilir.
 
 Kayıt tamamlanıp Microsoft Intune ekibi tarafından onaylanana kadar, Intune yöneticilerinin uygulamanızın ayrıntılı bağlantısına uygulama koruma ilkesi uygulama seçeneği olmaz. Microsoft ayrıca uygulamanızı kendi [Microsoft Intune İş Ortakları sayfasına](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) ekler. Sayfada Intune uygulama koruma ilkelerini desteklediğini göstermek üzere uygulamanın simgesi görüntülenir.
 
@@ -81,33 +81,33 @@ Depolarımızdan çatallama ve çekme işlemleri yaparken kullanabileceğiniz bi
 
 Intune Uygulama SDK'sı ile uygulamanızı tümleştirmenize yardımcı olması için aşağıdaki geliştirici kılavuzlarından biri gerekir:
 
-* **[İOS Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-ios.md)** : Bu belgede, yerel iOS uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
+* **[İOS Için Intune uygulama SDK 'Sı Geliştirici Kılavuzu](app-sdk-ios.md)** : Bu belge, Intune uygulama SDK 'Sı ile Yerel iOS uygulamanızı etkinleştirmek için adım adım size kılavuzluk eder.
 
-* **[Android Geliştirici Kılavuzu için Intune uygulama SDK'sı](app-sdk-android.md)** : Bu belgede, yerel Android uygulamanızı Intune uygulama SDK'sı ile etkinleştirme adımları anlatılmaktadır.
+* **[Android Için Intune uygulama SDK 'Sı Geliştirici Kılavuzu](app-sdk-android.md)** : Bu belge, Intune uygulama SDK 'Sı ile yerel Android uygulamanızı etkinleştirmek için adım adım size kılavuzluk eder.
 
-* **[Intune uygulama SDK'sı Xamarin bağlamaları Kılavuzu](app-sdk-xamarin.md)** : Bu belge, iOS ve Xamarin için Intune uygulama koruma ilkeleri kullanarak Android uygulamaları oluşturmanıza yardımcı olur.
+* **[Intune uygulama SDK 'Sı Xamarin bağlamaları Kılavuzu](app-sdk-xamarin.md)** : Bu belge, Intune uygulama koruma ilkeleri için Xamarin kullanarak iOS ve Android uygulamaları oluşturmanıza yardımcı olur.
 
 
 
-## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Uygulama tabanlı koşullu erişim için iOS veya Android uygulamanızı etkinleştirme
- 
- Uygulama koruma ilkesi için uygulamanızı etkinleştirmenin yanı sıra düzgün işlevi ile Azure Active Directory (AAD) uygulama tabanlı koşullu erişim için uygulamanız için gerekli verilmiştir:
- 
- * Uygulama, [Azure Active Directory Kimlik Doğrulama Kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) ile oluşturulur ve AAD aracısı kimlik doğrulaması için etkinleştirilir.
- 
- * Uygulamanız için [AAD İstemci kimliği](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application), farklı iOS ve Android platformlarında benzersiz olmalıdır.
- 
+## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>İOS veya Android uygulamanızı uygulama tabanlı koşullu erişim için etkinleştirme
+
+Uygulamanızı uygulama koruma ilkesi için etkinleştirmeye ek olarak, uygulamanızın Azure ActiveDirectory (AAD) uygulama tabanlı koşullu erişim ile düzgün çalışması için aşağıdakiler gereklidir:
+
+* Uygulama, [Azure Active Directory Kimlik Doğrulama Kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) ile oluşturulur ve AAD aracısı kimlik doğrulaması için etkinleştirilir.
+
+* Uygulamanız için [AAD İstemci kimliği](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application), farklı iOS ve Android platformlarında benzersiz olmalıdır.
+
 ## <a name="configure-telemetry-for-your-app"></a>Uygulamanızda Telemetriyi yapılandırma
 
 Microsoft Intune, uygulamanızdaki kullanım istatistikleri hakkında veri toplar.
 
-* **İOS için Intune uygulama SDK'sı**: SDK, kullanım olaylarına ilişkin SDK telemetri verilerini varsayılan olarak günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir.
+* **İOS Için Intune uygulama SDK 'sı**: SDK varsayılan olarak kullanım olaylarına ilişkin SDK telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir.
 
-    * Uygulamanızdan Microsoft Intune’a SDK telemetri verileri göndermek istemiyorsanız IntuneMAMSettings sözlüğündeki `MAMTelemetryDisabled` özelliğini “EVET” olarak ayarlayarak telemetri iletimini devre dışı bırakmanız gerekir.
+  * Uygulamanızdan Microsoft Intune’a SDK telemetri verileri göndermek istemiyorsanız IntuneMAMSettings sözlüğündeki `MAMTelemetryDisabled` özelliğini “EVET” olarak ayarlayarak telemetri iletimini devre dışı bırakmanız gerekir.
 
-* **Android için Intune uygulama SDK'sı**: Android için Intune Uygulama SDK’sı, uygulamanızdan veri toplanmasını denetlemez. Şirket Portalı uygulaması, varsayılan olarak telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir. Microsoft İlkesi uyarınca kişisel bilgileri toplamıyoruz. 
+* **Android Için Intune uygulama SDK 'sı**: Android için Intune Uygulama SDK’sı, uygulamanızdan veri toplanmasını denetlemez. Şirket Portalı uygulaması, varsayılan olarak telemetri verilerini günlüğe kaydeder. Bu veriler Microsoft Intune’a gönderilir. Microsoft İlkesi uyarınca kişisel bilgileri toplamıyoruz. 
 
-    * Son kullanıcılar bu verileri göndermemeyi tercih ederse, Şirket Portalı uygulamasının Ayarlar bölümünde telemetriyi kapatmaları gerekir. Daha fazla bilgi için bkz. [Microsoft kullanım verilerini toplamayı devre dışı bırakma](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+  * Son kullanıcılar bu verileri göndermemeyi tercih ederse, Şirket Portalı uygulamasının Ayarlar bölümünde telemetriyi kapatmaları gerekir. Daha fazla bilgi için bkz. [Microsoft kullanım verilerini toplamayı devre dışı bırakma](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## <a name="line-of-business-app-version-numbers"></a>İş kolu uygulaması sürüm numaraları
 
@@ -119,11 +119,11 @@ Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _S�
 
 Tam sürüm numarası iki bileşenden oluşur:
 
- - **Sürüm**  
-   Sürüm numarası uygulamanın insan tarafından okunabilir yayın numarasıdır. Bu, son kullanıcılar tarafından uygulamanın farklı yayınlarını tanımlamak için kullanılır.
+- **Sürüm**  
+  Sürüm numarası uygulamanın insan tarafından okunabilir yayın numarasıdır. Bu, son kullanıcılar tarafından uygulamanın farklı yayınlarını tanımlamak için kullanılır.
 
- - **Derleme Numarası**  
-    Derleme numarası, uygulama algılamada ve uygulamayı programlı olarak yönetmek için kullanılabilen dahili bir numaradır. Derleme numarası, uygulamanın koddaki değişikliklere başvuran bir yinelemesini ifade eder.
+- **Derleme Numarası**  
+  Derleme numarası, uygulama algılamada ve uygulamayı programlı olarak yönetmek için kullanılabilen dahili bir numaradır. Derleme numarası, uygulamanın koddaki değişikliklere başvuran bir yinelemesini ifade eder.
 
 ### <a name="version-and-build-number-in-android-and-ios"></a>Android ve iOS’te sürüm ve derleme numarası
 
@@ -139,47 +139,47 @@ Yapı numarası|CFBundleVersion|PackageVersionCode |Bu numara, uygulama kodunda 
 #### <a name="ios"></a>iOS
 
 - **CFBundleShortVersionString**  
-    Paket yayımlanma sürümü numarasını belirtir. Bu numara, uygulamanın yayımlanma sürümünü tanımlar. Numara, son kullanıcılar tarafından uygulamaya başvurmak için kullanılır.
+  Paket yayımlanma sürümü numarasını belirtir. Bu numara, uygulamanın yayımlanma sürümünü tanımlar. Numara, son kullanıcılar tarafından uygulamaya başvurmak için kullanılır.
 - **CFBundleVersion**  
-    Paketin bir yinelemesini tanımlayan paket derleme sürümü. Numara, yayımlanmış veya yayımlanmamış bir paketi tanımlayabilir. Numara, uygulama algılama için kullanılır.
+  Paketin bir yinelemesini tanımlayan paket derleme sürümü. Numara, yayımlanmış veya yayımlanmamış bir paketi tanımlayabilir. Numara, uygulama algılama için kullanılır.
 
 #### <a name="android"></a>Android
 
- - **PackageVersionName**  
-    Kullanıcılara gösterilen sürüm numarası. Bu öznitelik bir ham dize veya bir dize kaynağına başvuru olarak ayarlanabilir. Dizenin kullanıcılara görüntülenmekten başka bir amacı yoktur.
- - **PackageVersionCode**  
-    Dahili sürüm numarası. Bu numara yalnızca bir sürümün diğerinden daha yeni olup olmadığını belirlemek için kullanılır; daha yüksek numaralar daha yeni sürümleri gösterir. Bu sürüm değildir 
+- **PackageVersionName**  
+  Kullanıcılara gösterilen sürüm numarası. Bu öznitelik bir ham dize veya bir dize kaynağına başvuru olarak ayarlanabilir. Dizenin kullanıcılara görüntülenmekten başka bir amacı yoktur.
+- **PackageVersionCode**  
+  Dahili sürüm numarası. Bu numara yalnızca bir sürümün diğerinden daha yeni olup olmadığını belirlemek için kullanılır; daha yüksek numaralar daha yeni sürümleri gösterir. Bu sürüm değildir 
 
 ## <a name="next-steps-after-integration"></a>Tümleştirmeden sonraki adımlar
 
 ### <a name="test-your-app"></a>Uygulamanızı test etme
 iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek için gerekli adımları bitirdikten sonra, kullanıcı ile BT yöneticisi için tüm uygulama koruma ilkelerinin etkinleştirildiğinden ve çalıştığından emin olmanız gerekir. Tümleşik uygulamanızı sınamak için aşağıdakiler gerekir:
 
-* **Microsoft Intune test hesabının**: Intune ile yönetilen uygulamanızı Intune uygulama koruma özelliklerine karşı sınamak için bir Microsoft Intune hesabınız olması gerekir.
+* **Test hesabı Microsoft Intune**: Intune tarafından yönetilen uygulamanızı Intune uygulama koruma özelliklerine karşı sınamak için bir Microsoft Intune hesabınızın olması gerekir.
 
-    * iOS veya Android mağazası uygulamalarınızı Intune uygulama koruma ilkesi için etkinleştiren bir ISV iseniz Microsoft Intune kaydını, kayıt adımında belirtilen şekilde bitirdikten sonra bir promosyon kodu alırsınız. Promosyon kodu, bir yıllık uzatılmış kullanım sağlayan Microsoft Intune denemesine kaydolmanıza olanak tanır.
+  * iOS veya Android mağazası uygulamalarınızı Intune uygulama koruma ilkesi için etkinleştiren bir ISV iseniz Microsoft Intune kaydını, kayıt adımında belirtilen şekilde bitirdikten sonra bir promosyon kodu alırsınız. Promosyon kodu, bir yıllık uzatılmış kullanım sağlayan Microsoft Intune denemesine kaydolmanıza olanak tanır.
 
-    * Mağazaya gönderilmeyecek bir iş kolu uygulaması geliştiriyorsanız kuruluşunuz aracılığıyla Microsoft Intune’a erişiminizin olması beklenir. [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) ile bir aylık ücretsiz deneme için de kaydolabilirsiniz.
+  * Mağazaya gönderilmeyecek bir iş kolu uygulaması geliştiriyorsanız kuruluşunuz aracılığıyla Microsoft Intune’a erişiminizin olması beklenir. [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) ile bir aylık ücretsiz deneme için de kaydolabilirsiniz.
 
-    * Bir son kullanıcı hesabı kullanarak mobil bir cihazda uygulamanızı test ediyorsanız, o hesabı, bir yönetici hesabı ile oturum açtıktan sonra Microsoft 365 Yönetim Merkezi Web sitesinde bir Intune lisansı tarafından verdiğiniz, bkz: olun [atama Microsoft Intune lisansı ](https://docs.microsoft.com/intune/licenses-assign).
+  * Uygulamanızı Son Kullanıcı hesabı kullanarak bir mobil cihazda test ediyorsanız, bir yönetici hesabıyla oturum açtıktan sonra Microsoft 365 Yönetim Merkezi Web sitesinde bu hesaba bir Intune lisansı vermiş olduğunuzdan emin olun, bkz. [Microsoft Intune lisansı atama](https://docs.microsoft.com/intune/licenses-assign).
 
-* **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak için her ilke ayarı için beklenen davranış ne olduğunu bilmeniz. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](app-protection-policy-settings-android.md). Uygulamanız Intune SDK'sı tümleşiktir ancak Azure portalında henüz hedeflenen bir uygulama olarak listede değilse, bunu bir ilkeyle seçerek hedefleyebilirsiniz "+ daha fazla uygulama" seçeneğini ve paket Kimliğini (iOS) veya paket adına (Android) metin kutusuna sağlama.
+* **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı test etmek için, her ilke ayarı için beklenen davranışın ne olduğunu bilmeniz gerekir. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](app-protection-policy-settings-android.md). Uygulamanız Intune SDK 'sını tümleştirdiyse, ancak henüz hedeflenen bir uygulama olarak Azure portal listelenmiyorsa, "+ daha fazla uygulama" seçeneğini belirleyerek ve metin kutusuna paket KIMLIĞI (iOS) veya paket adı (Android) sağlayarak bunu bir ilkeyle hedefleyebilirsiniz.
 
-* **Sorun giderme**: Uygulama yükleme kullanıcı deneyimini el ile sınarken herhangi bir sorunla karşılaşırsanız çalıştırırsanız, bkz. [uygulaması yükleme sorunlarını giderme](troubleshoot-app-install.md). 
+* **Sorun giderme**: Uygulamanızın yükleme kullanıcı deneyimini el ile sınarken herhangi bir sorunla karşılaşırsanız, bkz. [uygulama yükleme sorunlarını giderme](troubleshoot-app-install.md). 
 
-### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Uygulama erişimlerini Intune uygulama koruma hizmeti için (isteğe bağlı)
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Uygulamanızın Intune uygulama koruma hizmeti 'ne erişmesini sağlayın (isteğe bağlı)
 
-Kimlik doğrulaması için uygulamanızı kendi özel Azure Active Directory (AAD) ayarları kullanıyorsa, aşağıdaki adımları hem ortak mağaza uygulamaları, hem de için dahili LOB uygulamalarında gerçekleştirilmelidir. Adımları **uygulamanız Intune SDK'sı varsayılan istemci Kimliğini kullanıyorsanız alınması gerekmez**. 
+Uygulamanız kimlik doğrulaması için kendi özel Azure Active Directory (AAD) ayarlarını kullanıyorsa, hem genel mağaza uygulamaları hem de iç LOB uygulamaları için aşağıdaki adımların alınması gerekir. **Uygulamanız ıNTUNE SDK varsayılan ISTEMCI kimliğini kullanıyorsa, adımların alınması gerekmez**. 
 
-Uygulamanızı bir Azure kiracısı içinde kaydettikten sonra altında bazılarındaki **tüm uygulamaları**, kendi uygulama erişimini Intune uygulama koruma Hizmeti'ne (daha önce MAM hizmeti olarak da bilinir) vermeniz gerekir. Azure portalında:
+Uygulamanızı bir Azure kiracısında kaydettikten ve **tüm uygulamalar**altında gösteriyorsa, uygulamanızın Intune uygulama koruma hizmeti 'ne (ÖNCEKI adıyla mam hizmeti) erişmesini sağlamanız gerekir. Azure portalında:
 
-1. Git **Azure Active Directory** dikey penceresi.
-2. Altında **uygulama kayıtları**listenin uygulama için ayarlanmış'na gidin.
-3. Tıklayın **+ izin Ekle**.
-4. Tıklayarak **Kuruluşum kullandığı API'leri**. 
+1. **Azure Active Directory** dikey penceresine gidin.
+2. **Uygulama kayıtları**altında, uygulama için ayarlanan listeye gidin.
+3. **+ Izin Ekle**' ye tıklayın.
+4. **Kuruluşumun kullandığı API 'lere**tıklayın. 
 5. Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** yazın.
-6. Altında **Temsilcili izinler**seçin **DeviceManagementManagedApps.ReadWrite: Kullanıcının uygulama yönetimi veri okuma ve yazma*** onay kutusu.
-7. Tıklayın **izinleri eklemek**.
+6. **Temsilci izinleri**altında **devicemanagementmanagedapps. ReadWrite öğesini seçin: Kullanıcının uygulama yönetimi verileri*** onay kutusunu okuyun ve yazın.
+7. **Izin Ekle**' ye tıklayın.
 
 ### <a name="badge-your-app-optional"></a>Uygulamanıza rozet ekleyin (isteğe bağlı)
 
@@ -189,7 +189,7 @@ Bu rozet BT yöneticilerine, son kullanıcılara ve potansiyel Intune müşteril
 
 Rozet bir evrak çantası simgesidir ve aşağıdaki örneklerde görülebilir:
 
-![Intune uygulama koruma ilkeleri - rozet örneği 1](./media/badge-example-1.png) ![Intune uygulama koruma ilkeleri - rozet örneği 2](./media/badge-example-2.png)
+![Intune uygulama koruma ilkeleri-rozet örneği 1](./media/badge-example-1.png) ![Intune uygulama koruma ilkeleri-rozet örneği 2](./media/badge-example-2.png)
 
 **Uygulamanıza rozet eklemek için gerekenler**:
 

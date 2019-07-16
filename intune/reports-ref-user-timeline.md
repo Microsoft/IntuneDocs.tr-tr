@@ -1,7 +1,7 @@
 ---
 title: Veri Ambarı Kullanıcı Varlığı Zaman Çizelgesi
 titleSuffix: Microsoft Intune
-description: Nasıl Microsoft Intune veri ambarı bir zaman çizelgesinde kullanıcıları temsil öğrenin.
+description: Microsoft Intune veri ambarının bir zaman çizelgesindeki kullanıcıları nasıl temsil ettiğini öğrenin.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa483a49ad7fa44172a83f024540a75d1d881dc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b61f4ded04d01f04727768557e6730c34fd4760c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040917"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882450"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
 
@@ -36,13 +36,13 @@ Bir varlığın ömrünü incelerseniz bu senaryoyu daha iyi anlayabilirsiniz.
 
 **John Smith** adlı bir kullanıcıya 06/01/2017 tarihinde bir lisans atandığını ve ardından **Kullanıcı** tablosunun aşağıdaki girdiye sahip olacağını varsayalım: 
  
-| displayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | 12/31/9999 | TRUE
  
 John Smith, 25/07/2017 tarihinde lisansından vazgeçti. **Kullanıcı** tablosunda aşağıdaki girdiler bulunur. Var olan kayıtlardaki değişiklikler `marked`. 
 
-| displayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | `07/26/2017` | `FALSE` 
 | John Smith | TRUE | 07/26/2017 | 12/31/9999 | TRUE 
@@ -51,7 +51,7 @@ John Smith, 25/07/2017 tarihinde lisansından vazgeçti. **Kullanıcı** tablosu
 
 Şimdi, John Smith'in 08/31/2017 tarihinde atanmış yeni bir lisans aldığını varsayalım, ardından Kullanıcı tablosunda aşağıdaki girdiler bulunur:
  
-| displayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | 07/26/2017 | FALSE 
 | John Smith | TRUE | 07/26/2017 | `08/31/2017` | `FALSE` 
@@ -79,5 +79,5 @@ En yaygın kullanılan meta veri sütunları şunlardır:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
- - **Geçerli Kullanıcı** varlığı hakkında daha fazla bilgi edinmek için bkz. [Geçerli kullanıcı varlığı için başvuru](reports-ref-current-user.md).
- - **Kullanıcı** varlığı hakkında daha fazla bilgi edinmek için bkz. [Kullanıcı varlığı için başvuru](reports-ref-user.md).
+- **Geçerli Kullanıcı** varlığı hakkında daha fazla bilgi edinmek için bkz. [Geçerli kullanıcı varlığı için başvuru](reports-ref-current-user.md).
+- **Kullanıcı** varlığı hakkında daha fazla bilgi edinmek için bkz. [Kullanıcı varlığı için başvuru](reports-ref-user.md).

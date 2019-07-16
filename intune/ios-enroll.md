@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94f2bd9237e92b22b9d73e4f7777dc0faf3f0fe
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529611"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883021"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune’da iOS cihazları kaydetme
 
@@ -67,9 +67,9 @@ Bir Mac bilgisayarda çalışan Apple Configurator ile iOS cihazları kaydedebil
 Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve cihaz yönetmek için Şirket Portalı’nı yükleyip çalıştırabilir. Kullanıcılar, cihazlarını aldıktan sonra Kurulum Yardımcısı’nı tamamlamak ve Şirket Portalı uygulamasını yüklemek için bir dizi ek adımı tamamlamalıdır.
 
 Aşağıdakileri desteklemek için kullanıcı benzeşimi gereklidir:
-  - Mobil uygulama yönetimi (MAM) uygulamaları
-  - E-postasına ve şirket verilerine koşullu erişim
-  - Şirket Portalı uygulaması
+- Mobil uygulama yönetimi (MAM) uygulamaları
+- E-posta ve şirket verilerine koşullu erişim
+- Şirket Portalı uygulaması
 
 **Kullanıcıların kullanıcı benzeşimi olan şirkete ait iOS cihazları kaydetmesi**
 1. Kullanıcılar cihazlarını açtığında, kendilerinden Kurulum Yardımcısı’nı tamamlamaları istenir. 
@@ -86,4 +86,4 @@ Kullanıcı benzeşimi gerekiyorsa, cihazın kaydolma profilinde cihaz kaydedilm
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft Intune iOS cihaz kaydı sorunlarını giderme](https://support.microsoft.com/help/4039809)
+[Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme](https://support.microsoft.com/help/4039809)

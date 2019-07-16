@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 7c832fd423a2486fa7c2252513202d82dc432859
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549214"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882592"
 ---
-# <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune veri ambarı API'si
+# <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune veri ambarı API 'SI
 
 Intune Veri Ambarı API’si, Intune verilerinizin makine tarafından okunabilir bir biçimine erişmenize ve bu verileri sık kullandığınız analiz aracında kullanmanıza olanak tanır. Kurumsal mobil ortamınızla ilgili öngörüler sağlayan raporlar oluşturmak için bu API’yi kullanabilirsiniz. API, aşağıdakiler için standart desenler izleyen OData protokolünü kullanır:
 
-  - İstek ve yanıt üst bilgileri
-  - Durum kodları
-  - HTTP yöntemleri
-  - URL kuralları
-  - Medya türleri
-  - Yük biçimleri
-  - Sorgu seçenekleri
+- İstek ve yanıt üst bilgileri
+- Durum kodları
+- HTTP yöntemleri
+- URL kuralları
+- Medya türleri
+- Yük biçimleri
+- Sorgu seçenekleri
 
 Bir OASIS (Organization for the Advancement of Structured Information Standards) standardı olan OData (Açık Veri Protokolü), bu RESTful API’leri oluşturmaya ve kullanmaya yönelik en iyi yöntemleri tanımlar. Intune Veri Ambarı, OData 4.0 sürümünü kullanır.
 
@@ -56,8 +56,8 @@ Daha fazla bilgi için bkz. [Bir REST istemcisi ile Veri Ambarı API’sinden ve
 
 API, Azure AD ile yetkilendirme gerektirir. Azure AD, OAuth 2.0 kullanır. Yetkilendirmenin ardından, HTTP GET fiili kullanarak ve kullanıma sunulan varlık koleksiyonları ile bağlantı kurarak API’den veri alabilirsiniz. Ayrıntılar için şu başlıkları inceleyin:
 
- - [Yetkilendirme](reports-api-url.md)
- - [API URL Yapısı](reports-api-url.md)
+- [Yetkilendirme](reports-api-url.md)
+- [API URL Yapısı](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Intune Veri Ambarı veri modeli
 

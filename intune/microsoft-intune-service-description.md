@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549442"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882889"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune hizmet açıklaması
 
@@ -58,26 +58,26 @@ Mobil cihaz yönetimi ekosistemi, işletim sistemi güncelleştirmeleri ve mobil
 
 - [Microsoft Intune'daki yenilikler](whats-new.md). Bu konu, aylık hizmet güncelleştirmesiyle ve örneğin Şirket Portalı uygulaması gibi uygulamalar yayımlandığında haftalık olarak güncelleştirilir.
 
-- Önemli hizmet güncelleştirmeleri de duyurulur [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/) ileti Merkezi. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz. [Office 365 İleti Merkezi](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates) ile çalışma hakkında bilgi edinin.
+- Ayrıca, önemli hizmet güncelleştirmeleri [Microsoft 365 Yönetim Merkezi](https://admin.microsoft.com/) ileti merkezinde duyurulmuştur. Yardımcı [Office 365 Yönetici mobil uygulamasını](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) yüklerseniz, mobil cihazınızda bildirimleri alabilirsiniz. [Office 365 İleti Merkezi](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates) ile çalışma hakkında bilgi edinin.
 
-    Birkaç faydalı ipucu:
+  Birkaç faydalı ipucu:
 
-    - Office 365 İleti Merkezi’ndeki iletiler hedeflenir. Yani, şirketinizin EDU için Intune teklifi yoksa size EDU için Intune hakkında ileti göndermeyiz.
+  - Office 365 İleti Merkezi’ndeki iletiler hedeflenir. Yani, şirketinizin EDU için Intune teklifi yoksa size EDU için Intune hakkında ileti göndermeyiz.
 
-    - İletilerin süresi dolar. Örneğin, hizmetinizin Yenilikler sayfasına bağlantısı ile güncelleştirilen bildirim muhtemelen sonraki hizmet güncelleştirme bildiriminden önce sona erer. Aksi takdirde, artık geçerli olmayan birçok geçmiş gönderiye ilişkin günlükleriniz olurdu.
+  - İletilerin süresi dolar. Örneğin, hizmetinizin Yenilikler sayfasına bağlantısı ile güncelleştirilen bildirim muhtemelen sonraki hizmet güncelleştirme bildiriminden önce sona erer. Aksi takdirde, artık geçerli olmayan birçok geçmiş gönderiye ilişkin günlükleriniz olurdu.
 
-    - Office 365 yönetici mobil uygulaması, tüm iletiler arasında arama yapmanızı ve kuruluşunuzdakilerle paylaşmak istiyorsanız bildirimi iletmenizi sağlar.
+  - Office 365 yönetici mobil uygulaması, tüm iletiler arasında arama yapmanızı ve kuruluşunuzdakilerle paylaşmak istiyorsanız bildirimi iletmenizi sağlar.
 
-    - Düzenleme ileti merkezi tercihleri altında, bir Intune aboneliğine gönderilen iletilere bakabilmeniz için bir süre sonra **Intune** için bir geçiş düğmemiz olacaktır. Office 365 için Mobil Cihaz Yönetimi görürseniz, bu Intune değil, farklı bir hizmettir.
+  - Düzenleme ileti merkezi tercihleri altında, bir Intune aboneliğine gönderilen iletilere bakabilmeniz için bir süre sonra **Intune** için bir geçiş düğmemiz olacaktır. Office 365 için Mobil Cihaz Yönetimi görürseniz, bu Intune değil, farklı bir hizmettir.
 
 - Ayrıca EMS iletisi ve Intune desteği en başarılı uygulamalarını paylaşmak için de iki blog kullanırız:
 
-    - [Enterprise Mobility + Security blogu](https://blogs.technet.microsoft.com/enterprisemobility/)
+  - [Enterprise Mobility + Security blogu](https://blogs.technet.microsoft.com/enterprisemobility/)
 
-    - [Intune destek blogu](https://blogs.technet.microsoft.com/intunesupport/)
+  - [Intune destek blogu](https://blogs.technet.microsoft.com/intunesupport/)
 
->[!Note]
->Intune hizmet durumunu izleyebilir [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com). Sol bölmede **Hizmet Durumu**’nu seçin. Hizmet durumunu görüntülemek için [Office 365 Yönetici mobil uygulaması](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) da kullanabilirsiniz.
+> [!Note]
+> Intune hizmet durumunu [Microsoft 365 Yönetim merkezinde](https://admin.microsoft.com)izleyebilirsiniz. Sol bölmede **Hizmet Durumu**’nu seçin. Hizmet durumunu görüntülemek için [Office 365 Yönetici mobil uygulaması](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) da kullanabilirsiniz.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Microsoft’un Intune hizmeti hakkında sağladığı bildirim türleri
 
@@ -102,7 +102,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>Dil desteği
-Intune, şu dilleri destekleyen Azure portalında çalışır: Çince (Basitleştirilmiş), Çince (Geleneksel), Çekçe, Felemenkçe, İngilizce, Almanca, Macarca, İtalyanca, Japonca, Portekizce (Brezilya), Portekizce (Portekiz), Rusça, İspanyolca, İngilizce, Fransızca, Korece, Lehçe, İsveççe, Türkçe.
+Intune Azure portal çalışır ve bu dilleri destekler: Çince (Basitleştirilmiş), Çince (Geleneksel), Çekçe, Felemenkçe, Ingilizce, Almanca, Macarca, Italyanca, Japonca, Portekizce (Brezilya), Portekizce (Portekiz), Rusça, Ispanyolca, Ingilizce, Fransızca, Korece, Lehçe, Isveççe, Türkçe.
 
 Intune Yönetici Konsolu ve kullanıcıya yönelik mobil deneyimler, Azure portalının desteklediği tüm dillere ek olarak Danca, Yunanca, Fince, Norveççe ve Rumence destekler.
 

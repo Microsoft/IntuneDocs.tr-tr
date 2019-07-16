@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735451"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884045"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Tek başına Intune-Win32 uygulama yönetimi
 
@@ -37,9 +37,9 @@ Win32 uygulama yönetimini kullanmak için aşağıdaki ölçütleri karşılad�
 
 - Windows 10 sürüm 1607 veya üzeri (Enterprise, Pro ve eğitim sürümleri)
 - Windows 10 istemcisi: 
-    - Cihazların Azure AD 'ye katılması ve otomatik kaydı yapılmalıdır. Intune yönetim uzantısı, Azure AD 'ye katılmış, karma etki alanına katılmış, Grup İlkesi kayıtlı cihazlar desteklenir. 
-    > [!NOTE]
-    > Grup İlkesi kayıtlı senaryosu için Son Kullanıcı, Windows 10 cihazını birleştirmek için yerel kullanıcı hesabını kullanır. Kullanıcının AAD Kullanıcı hesabını kullanarak cihazda oturum açması ve Intune 'a kaydedilmesi gerekir. Intune yönetim uzantısı, bir PowerShell betiği veya bir Win32 uygulaması kullanıcı veya cihaza hedeflenirse, bu cihaza Intune yönetim uzantısını yükler.
+  - Cihazların Azure AD 'ye katılması ve otomatik kaydı yapılmalıdır. Intune yönetim uzantısı, Azure AD 'ye katılmış, karma etki alanına katılmış, Grup İlkesi kayıtlı cihazlar desteklenir. 
+  > [!NOTE]
+  > Grup İlkesi kayıtlı senaryosu için Son Kullanıcı, Windows 10 cihazını birleştirmek için yerel kullanıcı hesabını kullanır. Kullanıcının AAD Kullanıcı hesabını kullanarak cihazda oturum açması ve Intune 'a kaydedilmesi gerekir. Intune yönetim uzantısı, bir PowerShell betiği veya bir Win32 uygulaması kullanıcı veya cihaza hedeflenirse, bu cihaza Intune yönetim uzantısını yükler.
 - Windows uygulama boyutu uygulama başına 8 GB 'A göre belirlenir.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Karşıya yükleme için Win32 uygulaması içeriğini hazırlama
@@ -336,11 +336,11 @@ Gerekirse, uygulama ataması başına Son Kullanıcı bildirim bildirimlerinin g
 > LOB Win32 uygulamalarının düzgün yüklenmesine ve yürütülmesine izin vermek için, kötü amaçlı yazılımdan koruma ayarları aşağıdaki dizinlerin taranmasını hariç tutmalıdır:<p>
 > **X64 istemci makinelerde**:<br>
 > *C:\Program Files (x86) \Microsoft Intune Management Extension\Content*<br>
-> *C:\windows\IMECache*
+> *C:\windows\ımecache*
 >  
 > **X86 istemci makinelerde**:<br>
 > *C:\Program Files\Microsoft Intune yönetim Extension\Content*<br>
-> *C:\windows\IMECache*
+> *C:\windows\ımecache*
 
 ### <a name="detecting-the-win32-app-file-version-using-powershell"></a>PowerShell kullanarak Win32 uygulama dosyası sürümü algılanıyor
 

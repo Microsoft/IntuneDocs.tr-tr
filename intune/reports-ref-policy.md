@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f66cc3a10711b137e081fab98445d73108748a9
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: f9f834057e95058634020fc955ced013d32b68a9
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713149"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882551"
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
 **İlke** kategorisi, mobil cihazlar için aşağıdaki gibi bilgileri izleyen varlıklar içerir:
 
-  - Cihaz yapılandırma profilleri, uygulama yapılandırma profilleri ve uyumluluk ilkelerinin dökümü  
-  - Başarılı, beklemede, başarısız veya hata durumundaki cihazların günlük sayısı  
-  - Başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısı  
-  - Başarılı, beklemede, başarısız veya hata durumundaki cihazların toplam sayısı  
+- Cihaz yapılandırma profilleri, uygulama yapılandırma profilleri ve uyumluluk ilkelerinin dökümü  
+- Başarılı, beklemede, başarısız veya hata durumundaki cihazların günlük sayısı  
+- Başarılı, beklemede, başarısız veya hata durumundaki kullanıcıların günlük sayısı  
+- Başarılı, beklemede, başarısız veya hata durumundaki cihazların toplam sayısı  
 
 ## <a name="policy"></a>İlke
 
@@ -59,7 +59,7 @@ ms.locfileid: "67713149"
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
-**DeviceConfigurationProfileDeviceActivity** varlık sayısını listeler **cihazları** başarılı, beklemede, başarısız veya hata durumundaki. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir **cihaz** olan isteğe bağlı olarak kendisine atanan tüm ilkeler için başarılı durumunda o gün için başarılı sayacı artırır. Cihaza biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa varlık, başarılı sayacını artırır ve cihazı hata durumuna geçirir. Varlık, son 30 gün içindeki belirli bir gün için kaç cihazın hangi durumda olduğunu listeler.
+**Deviceconfigurationprofiledeviceactivity** varlığı, başarılı, beklemede, başarısız veya hata durumundaki **cihazların** günlük sayısını listeler. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir **cihaz** atanan tüm ilkeleri için başarılı durumdaysa, bu gün için başarılı olan sayacı artırır. Cihaza biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa varlık, başarılı sayacını artırır ve cihazı hata durumuna geçirir. Varlık, son 30 gün içindeki belirli bir gün için kaç cihazın hangi durumda olduğunu listeler.
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
@@ -69,7 +69,7 @@ ms.locfileid: "67713149"
 | Hata |Hata durumundaki benzersiz cihazların sayısı. |10 |
 | Başarısız |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
 
-**DeviceConfigurationProfileUserActivity** varlık sayısını listeler **kullanıcılar** başarılı, beklemede, başarısız veya hata durumundaki. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir **kullanıcı** olan atanan tüm ilkeler için başarılı durumunda bir gün için başarılı sayacı taşıdığında. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcı hata durumunda olarak değerlendirilir.  **DeviceConfigurationProfileUserActivity** varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
+**Deviceconfigurationprofileuseractivity** varlığı, başarılı, beklemede, başarısız veya hata durumundaki **kullanıcıların** günlük sayısını listeler. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir **Kullanıcı** atanmış tüm ilkeleri için başarılı durumdaysa, başarılı olan sayacı o gün için bir tane yukarı gider. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcı hata durumunda olarak değerlendirilir.  **DeviceConfigurationProfileUserActivity** varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
