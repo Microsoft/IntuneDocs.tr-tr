@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504341"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884056"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı uzaktan kilitleme
 
@@ -44,7 +44,7 @@ Uzaktan kilitleme ayarı şu platformlarda çalışır:
 
     ![Tanımlanmamış, genel olarak adlandırılmış cihazları gösteren 2 kutucuğun bulunduğu Cihazlar sayfasının ekran görüntüsü. Cihazların hemen altında gri bir başlık yer alır ve kullanıcılardan kullandıkları cihazı tanımlamalarını veya yeni bir tane eklemelerini ister.](./media/rename-reset-device-step2-1808.png) 
 
-3. **Uzaktan kilitleme**’ye dokunun. Kilitleme seçeneği sayfanın üst kısmında görünmüyorsa **Diğer (...)** > **Uzaktan kilitle**’yi seçin.  
+3. **Uzaktan kilitleme**’ye dokunun. Kilitleme seçeneği sayfanın üst kısmında görünmüyorsa **Diğer (...)**  > **Uzaktan kilitle**’yi seçin.  
 
    ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik cihaz ayrıntıları sayfası; üst kısmında Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitle bağlantıları ile. ](./media/rename-reset-device-1808.png) 
 
@@ -56,9 +56,9 @@ Onaydan sonra Şirket Portalı, cihazınızı kilitlemeye çalışır. Bu süre 
 
 Uzaktan Kilitleme durumu üç yerde görüntülenir:
 
-   * Web sitesinin bildirimler alanı.
-   * Cihaz için **Ayrıntılar** sayfası.
-   * Sayfanın **Cihazlar** bölümünde cihaz adını gösteren kutucuk.  
+* Web sitesinin bildirimler alanı.
+* Cihaz için **Ayrıntılar** sayfası.
+* Sayfanın **Cihazlar** bölümünde cihaz adını gösteren kutucuk.  
 
 > [!Note]
 > Uzaktan kilitlemenin başarısız olduğu konusunda bir bildirim görürseniz birkaç dakika bekleyin. Daha sonra cihazınızı kilitlemeyi tekrar deneyin. Durum tekrar “Uzaktan kilitleme bekliyor.” olarak değişir. Yeniden deneme de işe yaramazsa yardım için şirketinizin destek birimine başvurun.

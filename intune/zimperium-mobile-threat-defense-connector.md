@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: f5c78eb01e495b87a35bed06c9800c04a7f97ba4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572475"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882024"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune ile Zimperium Mobile Threat Defense bağlayıcısı
 
-Microsoft Intune ile tümleşik bir Mobile Threat Defense (MTD) çözümü olan Zimperium tarafından yapılan risk değerlendirmesine dayalı koşullu erişim kullanarak şirket kaynaklarına mobil cihaz erişimini kontrol edebilirsiniz. Risk, Zimperium uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
+Microsoft Intune ile tümleştirilen bir Mobile Threat Defense (MTD) çözümü olan Zemium tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Zimperium uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Zimperium risk değerlendirmesine dayalı koşullu erişim ilkelerini yapılandırabilirsiniz. Risk değerlendirmesi ilke izin verebilir veya uyumlu olmayan cihazların algılanan tehditlere dayalı olarak şirket kaynaklarına erişmesini engelleyin.
+Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Zkusurlu risk değerlendirmesi temelinde koşullu erişim ilkelerini yapılandırabilirsiniz. Risk değerlendirmesi ilkesi, algılanan tehditlere dayalı olarak uyumlu olmayan cihazların şirket kaynaklarına erişmesine izin verebilir veya erişimi engelleyebilir.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune ve Zimperium şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
@@ -52,11 +52,11 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
-![Kötü amaçlı uygulamalar algılandı kavramsal resmi](./media/Maliciousapps_blocked_Zimperium.png)
+![Algılanan kötü amaçlı uygulamaların kavramsal görüntüsü](./media/Maliciousapps_blocked_Zimperium.png)
 
 **Düzeltme ile erişim izni verildi:**
 
-![Kavramsal resmi düzeltme sonra erişim izni verildi](./media/maliciousapps_unblocked_Zimperium.png)
+![Düzeltmeden sonra erişim izni verilen kavramsal resim](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme
 
@@ -96,7 +96,7 @@ Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine
 
 - Zimperium Mobile Threat Defense aboneliği
 
-    - Daha fazla bilgi için [Zimperium Web sitesi](https://www.zimperium.com/zips-mobile-ips).
+  - Daha fazla bilgi için bkz. [Zkusurium Web sitesi](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

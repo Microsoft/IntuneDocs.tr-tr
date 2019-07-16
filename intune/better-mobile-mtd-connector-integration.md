@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 861c2dd73e3a78fd833a24500728bd977d1186a2
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546969"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883732"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile'ı Intune ile tümleştirme
 
@@ -36,13 +36,13 @@ Better Mobile'ı Intune ile tümleştirme sürecini başlatmadan önce aşağıd
 
 - Şu izinleri vermek için Azure Active Directory yönetici kimlik bilgileri:
 
-    - Oturum açma ve kullanıcı profilini okuma
+  - Oturum açma ve kullanıcı profilini okuma
 
-    - Oturum açmış kullanıcı olarak dizine erişim
+  - Oturum açmış kullanıcı olarak dizine erişim
 
-    - Dizin verilerini okuma
+  - Dizin verilerini okuma
 
-    - Intune’a cihaz bilgilerini gönderme
+  - Intune’a cihaz bilgilerini gönderme
 
 - Better Mobile yönetim konsoluna erişmek için yönetici kimlik bilgileri.
 
@@ -63,7 +63,7 @@ Better Mobile uygulama yetkilendirme işlemi şu şekildedir:
 1. [Better Mobile yönetim konsoluna](https://aad.bmobi.net) gidin ve kimlik bilgilerinizle oturum açın.
 2. **Integration** > **EMM/MDM** > **ADD ACCOUNT** öğesini seçin.
 
-     ![Daha iyi mobil Yönetim konsolunun resmi](media/better_mobile_console.png)
+     ![Daha Iyi mobil yönetici konsolunun görüntüsü](media/better_mobile_console.png)
  
 3. **Intune**'u seçin.
 4. **ACCOUNT NAME** alanının yanına bir tanımlayıcı yazın. 

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 9552253469fb6644636d492c9c0f1477891a402d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572575"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883750"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense bağlayıcısı ile Intune
 
-Check Point SandBlast Mobile, Microsoft Intune ile tümleşen mobil tehdit savunması çözümü tarafından yapılan risk değerlendirmesine dayalı koşullu erişimi kullanarak şirket kaynaklarına mobil cihaz erişimini kontrol edebilirsiniz. Risk, Check Point SandBlast Mobile uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
+Microsoft Intune ile tümleşen bir mobil tehdit savunma çözümü olan Check Point SandBlast Mobile tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini denetleyebilirsiniz. Risk, Check Point SandBlast Mobile uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-Cihaz uyumluluk ilkeleri izin vermek için kullanabileceğiniz veya blok göre şirket kaynaklarına erişmek için uyumsuz cihazlar algılanan Intune etkinleştirilen Check Point SandBlast Mobile risk değerlendirmesine dayalı koşullu erişim ilkelerini yapılandırabilirsiniz. tehditleri.
+Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Check Point SandBlast Mobile risk değerlendirmesini temel alan koşullu erişim ilkelerini yapılandırabilirsiniz ve bu sayede uyumsuz cihazların algılanan şirket kaynaklarına erişmesine izin vermek veya erişimi engellemek için kullanabilirsiniz tehditleri.
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Intune ve Check Point SandBlast Mobile, şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
@@ -96,7 +96,7 @@ Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine
 - Microsoft Intune aboneliği
 
 - Check Point SandBlast Mobile Threat Defense aboneliği
-    - Daha fazla bilgi için bkz. [CheckPoint SandBlast web sitesi](https://www.checkpoint.com/).
+  - Daha fazla bilgi için bkz. [CheckPoint SandBlast web sitesi](https://www.checkpoint.com/).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

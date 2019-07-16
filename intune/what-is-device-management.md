@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365'te cihaz yönetimi
-description: Microsoft 365 Kurumsal, Microsoft Intune'u içerir. Intune mobil cihaz yönetimi ve kuruluşunuz için mobil uygulama yönetimine nasıl sağladığını görürsünüz. Yaygın senaryoları okuyun ve Microsoft 365 ortamınızda dağıtmak için Intune kullanıyor.
+description: Microsoft 365 Kurumsal, Microsoft Intune'u içerir. Intune 'un kuruluşunuz için mobil cihaz yönetimi ve mobil uygulama yönetimi nasıl sağladığını öğrenin. Yaygın senaryoları okuyun ve ortamınızda Microsoft 365 dağıtmak için Intune 'u kullanın.
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
@@ -15,34 +15,34 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043846"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884262"
 ---
 # <a name="what-is-device-management"></a>Cihaz yönetimi nedir? 
 
-Her Yönetici'nin başlıca görevlerinden biri kuruluşun kaynaklarının ve verilerinin güvenliğini sağlamaktır. Bu görev *cihaz Yönetimi*. Kullanıcılar nerede bunlar açın ve kişisel dosyaları, Web sitelerini ziyaret ve uygulamaları ve oyunları yüklemek birçok cihaz sahip. Bu aynı de çalışanlara ve öğrencilere kullanıcılardır. Şirket erişimi iş ve Okul e-posta ve OneNote gibi kaynakları için kendi cihazlarını kullanmalarına istemektedir. Cihaz yönetimi, kuruluşların kendi kaynakları ve veri korunmasına olanak sağlar. 
+Her Yönetici'nin başlıca görevlerinden biri kuruluşun kaynaklarının ve verilerinin güvenliğini sağlamaktır. Bu görev *cihaz yönetimi*. Kullanıcıların kişisel dosyaları açıp paylaştığı, Web sitelerini ziyaret eden ve uygulamaları ve oyunları yükleyen birçok cihazı vardır. Aynı kullanıcılar aynı zamanda çalışanlar ve öğrencilerlerdir. E-posta ve OneNote gibi iş ve okul kaynaklarına erişmek için cihazlarını kullanmak ister. Cihaz yönetimi, kuruluşların kaynaklarını ve verilerini korumasını ve güvenliğini sağlar. 
 
-Bir cihaz yönetimi sağlayıcısı'nı kullanarak, kuruluş, yalnızca yetkili kişiler doğrulayabilen ve aygıtları şirkete özel bilgiler erişin. Benzer şekilde, alışık oldukları cihazlarını, kuruluşun güvenlik gereksinimlerini karşılamak için cihaz kullanıcılarının telefonlarından, iş verilerine erişme kolaylığı adresindeki düşünüyor. Kuruluş olarak şunu soruyor olabilirsiniz: **Kaynaklarımızı korumak için ne kullanmalıyız?**
+Kuruluş, bir cihaz yönetimi sağlayıcısı kullanarak yalnızca yetkili kişilerin ve cihazların mülkiyet bilgilerine erişmesini sağlayabilir. Benzer şekilde, cihaz kullanıcıları, cihazlarını kuruluşun güvenlik gereksinimlerini karşılayacak şekilde biledikleri için iş verilerine telefonlarından erişmeyi kolaylaştırabilir. Kuruluş olarak şunu soruyor olabilirsiniz: **Kaynaklarımızı korumak için ne kullanmalıyız?**
 
-Yanıt [Intune](https://docs.microsoft.com/intune/introduction-intune). Intune, mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) sunar. Her MDM ya da MAM çözümünün aşağıdakiler gibi bazı başlıca görevleri vardır:
+Yanıt [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune). Intune, mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) sunar. Her MDM ya da MAM çözümünün aşağıdakiler gibi bazı başlıca görevleri vardır:
 
-- Farklı mobil bir ortamı desteklemek ve iOS, Android, Windows ve macOS cihazların güvenli bir şekilde yönetin.
-- Cihazlar ve uygulamalar, kuruluşunuzun güvenlik gereksinimlerine uygun olduğundan emin olun.
-- Şirket ve kişisel cihazlarda kuruluş verilerinizi güvende tutmak ilkeleri oluşturun.
+- Farklı bir mobil ortamı destekler ve iOS, Android, Windows ve macOS cihazlarını güvenli bir şekilde yönetin.
+- Cihazların ve uygulamaların kuruluşunuzun güvenlik gereksinimleriyle uyumlu olduğundan emin olun.
+- Kuruluşunuzun verilerini şirkete ait ve kişisel cihazlarda güvende tutmaya yardımcı olan ilkeler oluşturun.
 - Bu ilkeleri yaptırmak ve cihazları, uygulamaları, kullanıcıları ve grupları yönetmek için birleştirilmiş tek bir mobil çözüm sunma.
 
 Intune, Microsoft 365'e dahil edilmiştir ve Azure Active Directory (Azure AD) ile tümleşir. Azure AD kimin ve neye erişimi olduğunu denetlemeye yardımcı olur.
 
 ## <a name="hello-intune"></a>Merhaba Intune!
-Microsoft gibi birçok kuruluş, Intune'u kullanıcıların şirkete ait ve kişisel mobil cihazlardan eriştikleri şirkete ait verileri korumak için kullanmaktadır. Intune, cihaz ve uygulama yapılandırma ilkeleri, yazılım güncelleştirme ilkeleri ve güvenli ve veri erişimini izlemeye yardımcı olması için yükleme durumlarını (grafikler, tablolar ve raporlar) içerir.
+Microsoft gibi birçok kuruluş, Intune'u kullanıcıların şirkete ait ve kişisel mobil cihazlardan eriştikleri şirkete ait verileri korumak için kullanmaktadır. Intune, veri erişimini güvenli hale getirmenize ve izlemenize yardımcı olmak için cihaz ve uygulama yapılandırma ilkeleri, yazılım güncelleştirme ilkeleri ve yükleme durumları (grafikler, tablolar ve raporlar) içerir.
 
 İnsanların farklı platformlar kullanan birden çok cihazı olması sık görülen bir durumdur. Örneğin bir çalışan iş için Surface Pro ve kişisel yaşamı için bir Android mobil cihaz kullanabilir. Aynı kişilerin bu değişik cihazlardan Microsoft Outlook ve SharePoint gibi kuruluş kaynaklarına erişmesi de yine sık görülen bir durumdur.
 
-Intune ile herkesin cihazlarını ve bu cihazlarda çalışan iOS, macOS, Android ve Windows gibi farklı platformları yönetebilirsiniz. Intune ilkeleri ve ayarları, cihaz platformuna göre ayırır. Bu nedenle yönetmek ve belirli bir platforma ait cihazları görüntülemek kolaydır.
+Intune ile herkesin cihazlarını ve bu cihazlarda çalışan iOS, macOS, Android ve Windows gibi farklı platformları yönetebilirsiniz. Intune, ilkeleri ve ayarları cihaz platformuna göre ayırır. Bu nedenle belirli bir platformun cihazlarını kolayca yönetebilir ve görüntüleyebilirsiniz.
 
 **[Yaygın senaryolar](https://docs.microsoft.com/intune/common-scenarios)** Intune'un mobil cihazlarla çalışılırken sık karşılaşılan soruları nasıl yanıtladığını görmek için harika bir kaynaktır. Burada aşağıdakilerle ilgili senaryolar bulabilirsiniz:  
 - Şirket içi Exchange ile e-postaların korunması
@@ -52,26 +52,26 @@ Intune ile herkesin cihazlarını ve bu cihazlarda çalışan iOS, macOS, Androi
 ## <a name="integration-with-secure-and-protect-services"></a>Güvenli tutma ve koruma hizmetleri ile tümleştirme
 Cihaz yönetim çözümlerinin başlıca görevlerinden biri güvenlik ve koruma sağlamaktır. Intune bu görevi gerçekleştirmek için başka hizmetlerle mükemmel bir şekilde tümleşir. Örneğin:
 
-- **Microsoft 365** yaygın BT görevlerini basitleştirmek için temel bir bileşenidir. Microsoft 365 Yönetim Merkezi'nde kullanıcıları oluşturun ve grupları yönetin. Intune, Azure AD gibi diğer hizmetlere erişimi ayrıca Al ve daha fazlası. 
+- **Microsoft 365** yaygın BT görevlerini basitleştirmek için temel bir bileşenidir. Microsoft 365 Yönetim merkezinde, kullanıcılar oluşturur ve grupları yönetirsiniz. Intune, Azure AD ve daha fazlası gibi diğer hizmetlere da erişebilirsiniz. 
 
-  Örneğin, Microsoft 365'te bir iOS cihaz grubu oluşturun. Daha sonra Intune'u uygulama mağazasına erişim, AirDrop, iCloud'a yedekleme, Apple'ın web filtresini kullanma vb. iOS özelliklerine odaklı iOS cihazları grubuna anında ilke iletmek için kullanabilirsiniz.
+  Örneğin, Microsoft 365 ' de bir iOS cihazları grubu oluşturun. Daha sonra Intune'u uygulama mağazasına erişim, AirDrop, iCloud'a yedekleme, Apple'ın web filtresini kullanma vb. iOS özelliklerine odaklı iOS cihazları grubuna anında ilke iletmek için kullanabilirsiniz.
 
 - **Windows Defender** Windows 10 cihazlarını korumaya yardımcı olacak birçok güvenlik özelliği içerir. Örneğin Intune'u ve Windows Defender'ı birlikte kullanarak şunları yapabilirsiniz: 
 
-    - Mobil cihazlarda dosya ve uygulamalarda kuşku verici etkinlik aramak için [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)'ı etkinleştirme. 
-    - Kullanım [Windows Defender Gelişmiş tehdit Koruması (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) mobil cihazlarda güvenlik ihlallerini önlemeye yardımcı olmak için. Ayrıca, bir kullanıcı şirket kaynaklarına engelleyerek güvenlik ihlali etkisini sınırlamaya Yardım.
+  - Mobil cihazlarda dosya ve uygulamalarda kuşku verici etkinlik aramak için [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)'ı etkinleştirme. 
+  - Mobil cihazlarda güvenlik ihlallerinin önlenmesine yardımcı olması için [Windows Defender Gelişmiş tehdit koruması (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) kullanın. Ve, bir kullanıcıyı Kurumsal kaynaklardan engelleyerek bir güvenlik ihlalinin etkilerini sınırlandırmaya yardımcı olur.
 
-- **Koşullu erişim** Azure Active Directory özelliğidir ve Intune ile sorunsuz şekilde tümleşir. Kullanarak [koşullu erişim](https://docs.microsoft.com/intune/conditional-access), yalnızca uyumlu cihazların e-posta, SharePoint ve diğer uygulamalara erişim sağlandığından emin olun. 
+- **Koşullu erişim** Azure Active Directory bir özelliktir ve Intune ile birlikte tümleştirilir. [Koşullu erişimi](https://docs.microsoft.com/intune/conditional-access)kullanarak yalnızca uyumlu cihazların e-postaya, SharePoint 'e ve diğer uygulamalara erişimine izin verildiğinden emin olun. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Sizin için doğru olan cihaz yönetim çözümünü seçin
 
-Cihaz yönetimine birkaç şekilde yaklaşılabilir. İlk olarak, cihazları Intune'a yerleşik özellikleri kullanarak farklı özelliklerini yönetebilir. Bu yaklaşım adlı **mobil cihaz Yönetimi (MDM)**. Kullanıcılar, "kullanıcıların cihazlarını kaydetmelerini" ve Intune ile iletişim kurmak için sertifikaları kullanır. BT yöneticisi, uygulama gönderme cihazlarda, belirli bir işletim sistemi, kişisel cihazları engellemek ve diğer cihazları kısıtlama. Ayrıca bir cihazın kaybolması veya çalınması durumunda bu cihazdaki tüm verileri kaldırabilirsiniz. 
+Cihaz yönetimine birkaç şekilde yaklaşılabilir. İlk olarak, Intune 'da yerleşik özellikleri kullanarak cihazların farklı yönlerini yönetebilirsiniz. Bu yaklaşım, **mobil cihaz yönetimi (MDM)** olarak adlandırılır. Kullanıcılar cihazlarını "kaydeder" ve Intune ile iletişim kurmak için sertifikaları kullanır. BT Yöneticisi olarak, uygulamaları cihazlara gönderir, cihazları belirli bir işletim sistemiyle kısıtlar, kişisel cihazları engeller ve daha fazlasını yapın. Ayrıca bir cihazın kaybolması veya çalınması durumunda bu cihazdaki tüm verileri kaldırabilirsiniz. 
 
-İkinci yaklaşımda cihazlardaki uygulamaları yönetirsiniz. Bu yaklaşım adlı **mobil uygulama yönetimi (MAM)**. Kullanıcılar kişisel cihazlarından kurumsal kaynaklara erişmek için kullanabilirsiniz. E-posta veya SharePoint gibi bir uygulamayı açarken kullanıcılardan ek kimlik doğrulaması istenir. Bir cihazın kaybolması veya çalınması durumunda cihazdan kuruluşun tüm verilerini kaldırabilirsiniz. 
+İkinci yaklaşımda cihazlardaki uygulamaları yönetirsiniz. Bu yaklaşım, **mobil uygulama yönetimi (MAM)** olarak adlandırılır. Kullanıcılar, kendi kişisel cihazlarını kurumsal kaynaklara erişmek için kullanabilir. E-posta veya SharePoint gibi bir uygulamayı açarken kullanıcılardan ek kimlik doğrulaması istenir. Bir cihazın kaybolması veya çalınması durumunda cihazdan kuruluşun tüm verilerini kaldırabilirsiniz. 
 
 Ayrıca [MDM ve MAM](https://docs.microsoft.com/intune/byod-technology-decisions) yaklaşımlarını birlikte de kullanabilirsiniz.
 
-Intune'u kurarken ayrıca cihazları yönetmek için yalnızca Azure portalında çalışmayı ya da Intune ve Microsoft 365'i birlikte kullanmayı da seçebilirsiniz. [Azure portalında ıntune'a geçirme mobil cihaz Yönetimi](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) Microsoft IT incelemesi olduğunu. Bu durumda incelemek, Microsoft IT modern cihaz Yönetimi yaklaşımı seçtiğiniz ve dersler okuma bakın.
+Intune'u kurarken ayrıca cihazları yönetmek için yalnızca Azure portalında çalışmayı ya da Intune ve Microsoft 365'i birlikte kullanmayı da seçebilirsiniz. [Mobil cihaz yönetiminin Azure Portal Intune 'A geçirilmesi](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) bir Microsoft IT örnek olay araştırmaya sahiptir. Bu durumda, Microsoft BT 'nin modern cihaz yönetimi yaklaşımını nasıl seçtiği hakkında bilgi edinin ve öğrendiğimiz dersleri okuyun.
 
 ## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>Cihaz Yönetim panosunu kullanarak BT görevlerini basitleştirin
 
@@ -95,4 +95,4 @@ Cihaz Yönetim panosunda şunları yapabilirsiniz:
 - [Sorun giderme](https://docs.microsoft.com/intune/help-desk-operators)
 
 ## <a name="next-step"></a>Sonraki adım
-Ne zaman bir MDM veya MAM çözümlerini kullanmaya başlama, ıntune'u ayarlama, cihazları kaydetmek ve ilkeleri oluşturmaya başlamak için farklı adım adım hazırsınız. [Microsoft 365 için mobil cihaz Yönetimi](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) de harika bir kaynaktır.
+Bir MDM veya MAM çözümüne başlamak için hazırsanız, Intune 'u ayarlama, cihazları kaydetme ve ilke oluşturmaya başlama gibi farklı adımları gözden geçir. [Microsoft 365 Için mobil cihaz yönetimi](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) de harika bir kaynaktır.

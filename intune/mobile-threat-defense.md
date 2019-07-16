@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407165"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885075"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi nedir?
-Intune uyumluluk ilkeleri ve koşullu erişim kurallarınız için bilgi kaynağı olarak bir Mobile Threat Defense satıcınızdan verilerini tümleştirebilirsiniz. Ele geçirilen mobil cihazlardan erişimi engelleyerek Exchange ve SharePoint gibi şirket kaynaklarını korumaya yardımcı olmak için bu bilgileri kullanabilirsiniz.  
+Intune, verileri bir mobil tehdit savunma satıcısından, uyumluluk ilkeleri ve koşullu erişim kuralları için bir bilgi kaynağı olarak tümleştirebilir. Bu bilgileri, güvenliği aşılmış mobil cihazlardan erişimi engelleyerek Exchange ve SharePoint gibi kurumsal kaynakların korunmasına yardımcı olmak için kullanabilirsiniz.  
 
 ## <a name="what-problem-does-this-solve"></a>Hangi sorunu çözer?
-Mobile Threat Defense satıcınızdan bilgilerinden tümleştirme, şirket kaynaklarınıza mobil platformları etkileyen tehditlere karşı korumanıza yardımcı olabilir.  
+Mobil tehdit savunma satıcısından bilgi Tümleştirme, mobil platformları etkileyen tehditlere karşı şirket kaynaklarınızı korumanıza yardımcı olabilir.  
 
-Genellikle, şirketler bilgisayarları güvenlik açıklarına karşı koruma konusunda proaktif ve mobil cihazlar izlenmiyor ve korumasız genellikle giderken saldırı. Mobil platformlarda uygulama yalıtımı ve denetlenen tüketici uygulama mağazaları gibi yerleşik korumalar sahip olduğu durumlarda bu platformların karmaşık saldırılara karşı savunmasızdır. Daha fazla çalışan iş ve hassas bilgilere erişmek için cihazları kullanma gibi Mobile Threat Defense satıcınızdan bilgilerinden giderek daha karmaşık hale gelen saldırılardan cihazlar ve kaynaklarınızı korumanıza yardımcı olabilir.  
+Genellikle, şirketler güvenlik açıklarından ve saldırılara karşı koruma sağlarken, mobil cihazlar genellikle izlenmeyen ve korumasız bir şekilde hareket ederken bu bilgisayarlara saldırır. Mobil platformların uygulama yalıtımı ve taklit edilmiş tüketici uygulama depoları gibi yerleşik koruması olduğu durumlarda, bu platformlar gelişmiş saldırılara karşı savunmasız kalır. Daha fazla çalışan cihazları iş için kullanırken ve hassas bilgilere erişebildiklerinden, mobil tehdit savunma satıcısından alınan bilgiler cihazları ve kaynaklarınızı giderek daha fazla karmaşık saldırılara karşı korumanıza yardımcı olabilir.  
 
 ## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense bağlayıcıları nasıl çalışır?
 
-Intune Mobile Threat Defense Bağlayıcısı seçtiğiniz Mobile Threat Defense satıcınız ile Intune arasındaki iletişimin bir kanal oluşturmak için kullanır. Intune Mobile Threat Defense iş ortakları, sezgisel ve kolay mobil cihazlar için uygulamaları dağıtmanıza olanak sağlar. Bu uygulamalar, etkin bir şekilde tarayan ve Intune ile paylaşmak üzere tehdit bilgilerini analiz. Intune verileri raporlama veya uygulama amaçlarıyla kullanabilirsiniz.  
+Intune, Intune ile seçtiğiniz Mobile Threat Defense satıcınız arasında bir iletişim kanalı oluşturmak için bir mobil tehdit savunma Bağlayıcısı kullanır. Intune Mobile Threat Defense iş ortakları, mobil cihazlar için uygulama dağıtımı kolay ve kolay bir şekilde sunar. Bu uygulamalar, Intune ile paylaşmak üzere tehdit bilgilerini etkin bir şekilde tarar ve analiz eder. Intune, verileri raporlama veya zorlama amacıyla kullanabilir.  
 
-Örneğin: Bağlı bir Mobile Threat Defense uygulaması, Mobile Threat Defense satıcısına ağınızdaki bir telefon şu an için ortadaki adam saldırıları savunmasızdır bir ağa bağlı olduğundan emin bildirir. Bu bilgiler bir uygun bir risk düzeyine düşük, Orta veya yüksek kategorilere ayrılmıştır. Daha sonra bu risk düzeyi, Intune'da ayarladığınız risk düzeyi izinleri ile karşılaştırılır. Cihazın güvenliği aşıldığında sırada Bu karşılaştırmayı bağlı olarak, seçtiğiniz belirli kaynaklara erişimi iptal edilebilir.
+Örneğin: Bağlı bir mobil tehdit savunma uygulaması, ağınızdaki bir telefonun ortadaki saldırılara açık olan bir ağa bağlı olduğunu Mobile Threat Defense satıcısına bildirir. Bu bilgiler, düşük, orta veya yüksek uygun bir risk düzeyine göre kategorize edilir. Bu risk düzeyi daha sonra Intune 'da ayarladığınız risk düzeyi kesintileri ile karşılaştırılır. Bu karşılaştırmaya bağlı olarak, cihazın güvenliği tehlikeye atıldığında seçtiğiniz belirli kaynaklara erişim iptal edilebilir.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune, Mobile Threat Defense için hangi verileri topluyor?
 
@@ -47,14 +47,14 @@ Bu hizmet isteğe bağlıdır, varsayılan olarak hiçbir uygulama envanteri bil
 **Uygulama envanteri**  
 iOS cihazlar için Uygulama Eşitleme’yi etkinleştirirseniz hem şirkete ait hem de kişisel iOS cihazlar için envanterler MTD hizmet sağlayıcınıza gönderilir. Uygulama envanterindeki veriler şunları içerir:
 
- - Uygulama Kimliği
- - Uygulama Sürümü
- - Uygulama Kısa Sürümü
- - Uygulama Adı
- - Uygulama Paketi Boyutu
- - Uygulama Dinamik Boyutu
- - Uygulamanın doğrulanıp doğrulanmadığı
- - Uygulamanın yönetilip yönetilmediği
+- Uygulama Kimliği
+- Uygulama Sürümü
+- Uygulama Kısa Sürümü
+- Uygulama Adı
+- Uygulama Paketi Boyutu
+- Uygulama Dinamik Boyutu
+- Uygulamanın doğrulanıp doğrulanmadığı
+- Uygulamanın yönetilip yönetilmediği
 
 ## <a name="sample-scenarios"></a>Örnek senaryolar
 
@@ -79,5 +79,5 @@ Cihaz, ağ ve uygulama riskine dayalı olarak şirket kaynağına erişimi korum
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
-- [Sophos mobil](sophos-mtd-connector.md)
-- [Wandera mobil tehdit savunması](wandera-mtd-connector.md)
+- [Sophos Mobile](sophos-mtd-connector.md)
+- [Wandera Mobile Threat Defense](wandera-mtd-connector.md)

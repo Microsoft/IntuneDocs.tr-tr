@@ -1,7 +1,7 @@
 ---
 title: Uygulama koruma ilkesi günlüklerini gözden geçirme
 titleSuffix: Microsoft Intune
-description: Bu konuda, Intune uygulama koruma İlkesi (uygulama) günlüklerini yapılandırma açıklanmaktadır.
+description: Bu konuda, Intune uygulama koruma ilkesi (uygulama) günlüklerinin nasıl yapılandırılacağı açıklanmaktadır.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,32 +17,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acad6b0fa343bdbcc722929886a8e68a4fa4d8bc
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713286"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885061"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
-Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin. Bir mobil istemcide Intune tanılamayı etkinleştirerek erişim günlükleri'ni kullanın. 
+Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edinin. Mobil istemcide Intune tanılamayı etkinleştirerek günlüklere erişin. 
 
-İşlemi etkinleştirmek ve günlükleri toplamak için platforma göre değişiklik gösterir:
-- **Android cihazları** -kullanım *Şirket portalı*. Bkz: [günlükleri şirketinizin Destek birimine e-posta](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **iOS cihazları** -Managed Browser kullanmasını veya *Microsoft Edge* günlükleri toplamak için. Ayrıntılar için bkz: Intune destek ekibi blogu [günlüğü gönderisine Intune Managed Browser için yeni Intune tanılama konsolunu](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
-- **Windows 10 cihazları** -kullanım *MDMDiag* ve olay günlükleri. Bkz, [Windows 10 MDM tanılama hataları](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) Windows istemci yönetim içeriği ve blog [Windows 10 Intune İlkesi hatalarını giderme](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
+Günlükleri etkinleştirme ve toplama işlemi platforma göre farklılık gösterir:
+- **Android cihazlar** - *Şirket portalı*kullanın. [Şirketinizin destek Için e-posta günlüklerine](/intune-user-help/send-logs-to-your-it-admin-by-email-android)bakın.
+- **iOS cihazları** -günlükleri toplamak için bir Managed Browser veya *Microsoft Edge* kullanın. Ayrıntılar için, [Intune Managed Browser günlük Gönderimi Için Intune destek ekibi blogu yeni Intune Tanılama konsoluna](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021)bakın. 
+- **Windows 10 cihazları** - *mdmdiag* ve olay günlüklerini kullanın. Windows istemci yönetimi içeriğinde [Windows 10 ' da MDM başarısızlıklarını tanılama](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) ve blog [sorunlarını giderme Windows 10 Intune ilke hatalarıyla ilgili](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) bilgi
 
 
-Aşağıdaki tabloda, adları ve açıklamaları günlüğe kaydedilen ayarların listeler.
+Aşağıdaki tabloda, günlüğe kaydedilen ayarların adı ve açıklaması listelenmektedir.
 
 ## <a name="app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarları
 
 | Ad                        | Olası değer(ler)                                                                                                                                                                                                                                                                                           | Azure Intune Mobil Uygulama Yönetimi portalında ayarlama                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x dakika                                                                                                                                                                                                                                                                                                   | [Erişim] Erişim gereksinimlerini tekrar kontrol edin - Çevrimdışı Kullanım Süresi<br>Not: Cihaz çevrimdışı ise uygulama erişim gereksinimlerini yeniden denetlenmeden önceki zaman aralığını budur.             |
-| AccessRecheckOnlineTimeout  | _x_ dakika                                                                                                                                                                                                                                                                                                   | [Access] Erişim gereksinimlerini tekrar kontrol edin - Zaman aşımı.<br>Not: Cihaz çevrimiçiyse uygulama başlatıldıktan sonra uygulamaya yönelik erişim gereksinimleri yeniden denetlenmeden önceki zaman aralığını budur. |
-| AllowedOutboundClipboardSharingExceptionLength               | x karakter                                                                                                                                                                                                                                                                                           | [Erişim] Yönetilen bir uygulamadan kopyalanan veya kesin olabilir karakter sayısını belirtin.  Bu ayar geçersiz kılar `AllowedOutboundClipboardSharingLevel` kısıtlama. Varsayılan değeri hiçbir özel duruma izin '0' anlamına gelir. 
+| AccessRecheckOfflineTimeout | x dakika                                                                                                                                                                                                                                                                                                   | [Erişim] Erişim gereksinimlerini tekrar kontrol edin - Çevrimdışı Kullanım Süresi<br>Not: Bu, cihaz çevrimdışıyken uygulama için erişim gereksinimlerinin yeniden denetlenmesi için geçen zaman döneğidir.             |
+| AccessRecheckOnlineTimeout  | _x_ dakika                                                                                                                                                                                                                                                                                                   | [Access] Erişim gereksinimlerini tekrar kontrol edin - Zaman aşımı.<br>Not: Bu, cihaz çevrimiçiyse uygulama başlatıldıktan sonra uygulamanın erişim gereksinimlerinin yeniden denetlenmesi için geçen zaman dönedir. |
+| AllowedOutboundClipboardSharingExceptionLength               | x karakter                                                                                                                                                                                                                                                                                           | Erişmesini Yönetilen bir uygulamadan kesilebilir veya kopyalanabilecek karakter sayısını belirtin.  Bu ayar `AllowedOutboundClipboardSharingLevel` kısıtlamayı geçersiz kılar. ' 0 ' varsayılan değeri, hiçbir özel durum yapılmasına izin verilmez. 
 | AppPinDisabled              | 0 = Hayır<br>1 = Evet                                                                                                                                                                                                                                                                                           | [Erişim] Cihaz PIN'i yönetilirken uygulama PIN'ini devre dışı bırak.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Uygulama yok<br>1 = Yönetilen uygulamalar<br>2 = Herhangi bir uygulama                                                                                                                                                                                                                                                              | [Verileri Yeniden Konumlandırma] Bu uygulamanın diğer uygulamalardan veri almasına izin ver.                                                                                                                        |
 | AppSharingToLevel           | 0 = Uygulama yok<br>1 = Yönetilen uygulamalar<br>2 = Herhangi bir uygulama                                                                                                                                                                                                                                                              | [Verileri Yeniden Konumlandırma] Bu uygulamanın verileri diğer uygulamalara aktarmasına izin ver.                                                                                                                         |
@@ -72,5 +72,5 @@ Aşağıdaki tabloda, adları ve açıklamaları günlüğe kaydedilen ayarları
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
- - Uygulama koruma ilkeleri hakkında daha fazla bilgi için bkz: [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md)
- - Intune, ortamınızdaki sorunları gidermenize yardımcı olacak araçlar sunar. Daha fazla bilgi için bkz. [ Kullanıcılara yardımcı olmak için sorun giderme portalı kullan](help-desk-operators.md).
+- Uygulama koruma ilkeleri hakkında daha fazla bilgi için bkz: [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md)
+- Intune, ortamınızdaki sorunları gidermenize yardımcı olacak araçlar sunar. Daha fazla bilgi için bkz. [ Kullanıcılara yardımcı olmak için sorun giderme portalı kullan](help-desk-operators.md).

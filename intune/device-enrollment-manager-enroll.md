@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f2548e0ff3d4406f64d2091001c38056fe585896
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546721"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883544"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Bir cihaz kayıt yöneticisi hesabı kullanarak cihazları ıntune'a kaydetme
 
@@ -32,13 +32,13 @@ Bir cihaz kayıt yöneticisi (DEM) hesabı kullanarak tek bir Azure Active Direc
 
 DEM kullanıcı hesapları ve bir DEM kullanıcı hesabıyla kaydedilen cihazlarda aşağıdaki kısıtlamalar söz konusudur:
 
-  - Bir DEM hesabı kullanıcısı bir Intune lisansı atanmış olması gerekir.
-  - Silme işlemi Şirket Portalı’ndan yapılamaz. DEM kullanıcı hesabı tarafından kaydedilen bir cihazı silme işlemi, Azure portalında Intune’dan yapılamaz.
-  - Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
-  - DEM kullanıcı hesapları, uygulama yönetimi için kullanıcı başına Apple Kimliği gereksinimlerinden dolayı Apple Volume Purchase Program (VPP) uygulamalarını Apple VPP lisanslarıyla kullanamaz.
-  - Cihazlar, Apple VPP cihaz lisansına sahipse VPP uygulamalarını yükleyebilir.
-  - Cihazların Windows 10 1803 + hariç olmak üzere koşullu erişim engellenir
-  - Her cihaz, Intune tarafından yönetilecek lisanslanması gerekir DEM hesapları ile kaydedilmiş. Lisans, Intune kullanıcı lisansı veya bir Intune cihaz lisansı olabilir.
+- DEM hesabı kullanıcısına bir Intune lisansı atanmalıdır.
+- Silme işlemi Şirket Portalı’ndan yapılamaz. DEM kullanıcı hesabı tarafından kaydedilen bir cihazı silme işlemi, Azure portalında Intune’dan yapılamaz.
+- Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
+- DEM kullanıcı hesapları, uygulama yönetimi için kullanıcı başına Apple Kimliği gereksinimlerinden dolayı Apple Volume Purchase Program (VPP) uygulamalarını Apple VPP lisanslarıyla kullanamaz.
+- Cihazlar, Apple VPP cihaz lisansına sahipse VPP uygulamalarını yükleyebilir.
+- Cihazların Windows 10 1803 + hariç olmak üzere koşullu erişim engellenir
+- DEM hesaplarına kaydedilen her cihazın Intune tarafından yönetilmek üzere düzgün şekilde lisanslanması gerekir. Lisans, bir Intune kullanıcı lisansı veya bir Intune cihaz lisansı olabilir.
 
 
 

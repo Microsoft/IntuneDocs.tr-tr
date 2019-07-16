@@ -16,16 +16,16 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548370"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882833"
 ---
-# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1\. Aşama: Microsoft Intune mobil cihaz Yönetimi (MDM) için hazırlama
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>1\. Aşama: Mobil cihaz yönetimi (MDM) için Microsoft Intune hazırlama
 
-Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz yönetimi gereksinimlerini gözden geçirelim. Kritik kullanıcı gruplarını tanımlamak için geçerli MDM sağlayıcınızdaki etkin kullanıcıların raporlarını çalıştırmak faydalı olabilir. Soruları cevaplamaya başlayabilirsiniz sonra [MDM gereksinimlerini değerlendirme](migration-guide-prepare.md#assess-mdm-requirements) bölümü.
+Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz yönetimi gereksinimlerini gözden geçirelim. Kritik kullanıcı gruplarını tanımlamak için geçerli MDM sağlayıcınızdaki etkin kullanıcıların raporlarını çalıştırmak faydalı olabilir. Ardından, [MDM gereksinimlerini değerlendir](migration-guide-prepare.md#assess-mdm-requirements) bölümündeki soruları gidermeye başlayabilirsiniz.
 
 ## <a name="assess-mdm-requirements"></a>MDM gereksinimlerini değerlendirme
 
@@ -51,8 +51,8 @@ Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz y�
 
 - Hangi kullanım koşullarına ihtiyacınız var?
 
-    - Hukuk departmanınızın bu konuya erkenden dahil olmasını sağlayın.
-    - Ne tür bir yerelleştirme gerekli?
+  - Hukuk departmanınızın bu konuya erkenden dahil olmasını sağlayın.
+  - Ne tür bir yerelleştirme gerekli?
 
 - Kullanıcılar genel olarak teknoloji ve BT konusunda bilgi sahibi mi?
 
@@ -63,8 +63,8 @@ Intune'u ayarlama ayrıntılarına girmeden önce, kuruluşunuzun mobil cihaz y�
 - Mevcut cihaz geçiş kodu/pin kodu uzunluklarınız nedir?
 
 - Cihaz özelliklerini devre dışı bırakmanız veya belirli cihaz davranışlarını kısıtlamanız gerekiyor mu? Cihaz yapılandırma profilleri ile çeşitli platforma özgü ayarları kontrol edebilirsiniz, örneğin:
-    - Kamerayı devre dışı bırakma
-    - Tek uygulama moduna kilitleme<br/>
+  - Kamerayı devre dışı bırakma
+  - Tek uygulama moduna kilitleme<br/>
 
 - Hangi kimlik doğrulaması türlerini desteklemeniz gerekli? Sertifika tabanlı kimlik doğrulaması gerekiyorsa hangi tür sertifikaların sağlanması gerekir?
   - Intune, kaydedilen cihazlar için kaynak erişim profilleri ile sertifikalar sağlayabilir.

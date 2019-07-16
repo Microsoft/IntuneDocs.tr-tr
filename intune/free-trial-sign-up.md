@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ec03471e4ff3940f09fe4a9bef53b86e32bafa8
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 8c640eb7ffccf3b522c1f9049b97eff499b346ff
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713340"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883221"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı Başlangıç: Microsoft Intune ücretsiz olarak deneyin 
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Hızlı başlangıç Microsoft Intune ücretsiz deneyin 
 
 Microsoft Intune, cihaz ve uygulamaları yöneterek iş gücünüzün şirket verilerini korumanıza yardımcı olur. Bu hızlı başlangıçta Intune'u bir test ortamında denemek için ücretsiz bir abonelik oluşturacaksınız.
 
@@ -33,8 +33,8 @@ Intune, Microsoft Azure portalıyla yönetilen güvenli bir bulut tabanlı hizme
 ## <a name="prerequisites"></a>Önkoşullar
 Microsoft Intune'u kurmadan önce aşağıdaki gereksinimleri gözden geçirin:
 
-   - [Desteklenen işletim sistemleri ve tarayıcılar](supported-devices-browsers.md) 
-   - [Ağ yapılandırma gereksinimleri ve bant genişliği](network-bandwidth-use.md)
+- [Desteklenen işletim sistemleri ve tarayıcılar](supported-devices-browsers.md) 
+- [Ağ yapılandırma gereksinimleri ve bant genişliği](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune ücretsiz denemesine kaydolma
 
@@ -51,9 +51,9 @@ Intune'u 30 gün boyunca ücretsiz deneyebilirsiniz. Zaten bir iş veya okul hes
 
 2. Şirketinizin adını ve arından **. onmicrosoft.com** dizesini kullanarak bir hesap oluşturun. 
 
-    ![Intune deneme hesabı yeni kimlik bilgisi işleminin ekran görüntüsü](./media/account-sign-up-site-user-id.png)
+    ![Intune deneme hesabı yeni kimlik bilgileri işleminin ekran görüntüsü](./media/account-sign-up-site-user-id.png)
 
-    Kuruluşunuz olmadan kullanmak istiyorsanız, kendi özel etki alanı varsa **. onmicrosoft.com**, Microsoft 365 Yönetim Merkezi'nde bu makalenin sonraki bölümlerinde açıklanan değiştirebilirsiniz.
+    Kuruluşunuzun, **. onmicrosoft.com**olmadan kullanmak istediğiniz kendi özel etki alanı varsa, bu makalede daha sonra açıklanan Microsoft 365 Yönetim Merkezi ' nde bunu değiştirebilirsiniz.
 
 3. Kaydolma işleminin sonunda yeni hesap bilgilerinizi görüntüleyin.
 
@@ -66,7 +66,7 @@ Intune'u 30 gün boyunca ücretsiz deneyebilirsiniz. Zaten bir iş veya okul hes
 
     ![Azure portalı oturum açma sayfasının görüntüsü](./media/azure-portal-signin.png)
 
-3. Azure portalında Microsoft Intune görüntülemek için seçin **tüm hizmetleri** sayfanın sol tarafındaki kenar.
+3. Azure portal Microsoft Intune görüntülemek için sayfanın sol tarafındaki kenar çubuğundan **tüm hizmetler** ' i seçin.
 4. Filtre kutusunda **Microsoft Intune**'u arayıp seçin.
 5. Intune'u sık kullandığınız hizmetler listesinin altına eklemek için **yıldız** simgesini seçin ve Intune panosunu açın.
 
@@ -86,34 +86,34 @@ MDM yetkilisini Intune'a ayarlamak için aşağıdaki adımları izleyin.
 3. Cihaz yönetimini etkinleştirmediğinizi gösteren başlığı veya başlığı göremiyorsanız **Cihaz kaydı**’nı seçin. Cihaz yönetimini henüz etkinleştirmediyseniz **MDM Yetkilisi seçin** dikey penceresi görüntülenir.
 
     > [!NOTE]
-    > MDM yetkilisini ayarlarsanız, MDM yetkilisi değerin üzerinde görürsünüz **cihaz kaydı** dikey penceresi. Turuncu başlık, ancak henüz MDM yetkilisini ayarlamadıysanız görüntülenir. 
+    > MDM yetkilisini ayarladıysanız, **cihaz kaydı** DIKEY penceresinde MDM yetkilisi değerini görürsünüz. Turuncu başlık, ancak henüz MDM yetkilisini ayarlamadıysanız görüntülenir. 
 
     ![MDM Yetkilisi seçin dikey penceresinin görüntüsü](./media/choose-mdm-authority.png) 
 
-4. MDM yetkilinizi, altında ayarlanmazsa **MDM yetkilisi seçin**, MDM yetkilinizi **Intune MDM yetkilisi**.
+4. MDM yetkiliniz ayarlanmamışsa, **MDM yetkilisi seçin**altında MDM yetkilinizi **Intune MDM yetkilisi**olarak ayarlayın.
 
 MDM yetkilisi hakkında daha fazla bilgi için bkz. [Mobil cihaz yönetimi yetkilisini ayarlama](mdm-authority-set.md).
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Özel etki alanı adınızı yapılandırma (İsteğe bağlı)
 
-Yukarıdaki söz edildiği gibi kuruluşunuzun olmadan kullanmak istiyorsanız, kendi özel etki alanı erişimi **. onmicrosoft.com**, Microsoft 365 Yönetim merkezinde değiştirebilirsiniz. Ekleme, doğrulamak ve aşağıdaki adımları kullanarak özel etki alanı adınızı yapılandırma.  
+Yukarıda belirtildiği gibi, kuruluşunuzun, **. onmicrosoft.com**olmadan kullanmak istediğiniz kendi özel etki alanı varsa, Microsoft 365 Yönetim merkezinde bunu değiştirebilirsiniz. Aşağıdaki adımları kullanarak özel etki alanı adınızı ekleyebilir, doğrulayabilirsiniz ve yapılandırabilirsiniz.  
 
 > [!IMPORTANT]
-> Kaldırma yeniden adlandırın veya silemeyeceğiniz *ilk* **onmicrosoft.com** etki alanı adı bölümü. Ancak, ekleyebileceğiniz, doğrulayın veya kaldırabileceğiniz *özel* Intune ile iş kimliğinizin açık tutmak için kullanılan etki alanı adları. Daha fazla bilgi için [bir özel etki alanı adı yapılandırma](custom-domain-name-configure.md).
+> Etki alanı adının *ilk* **onmicrosoft.com** bölümünü yeniden adlandıramaz veya kaldıramazsınız. Ancak, iş kimliğinizi açık tutmak için Intune ile kullanılan *özel* etki alanı adlarını ekleyebilir, doğrulayabilirsiniz veya kaldırabilirsiniz. Daha fazla bilgi için bkz. [özel bir etki alanı adı yapılandırma](custom-domain-name-configure.md).
 
-1. Git [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com) yönetici hesabınızı kullanarak oturum açın.
+1. [Microsoft 365 Yönetim Merkezi](https://admin.microsoft.com) ' ne gidin ve yönetici hesabınızı kullanarak oturum açın.
 
 2. Gezinme bölmesinde, **Kurulum** > **Etki alanları** > **Etki alanı ekle**'yi seçin.
 
 3. Özel etki alanı adınızı yazın. Ardından **İleri**'yi seçin.
 
-   ![Microsoft 365 ekran Yönetim Merkezi - etki alanı ekleme](./media/domain-custom-add.png)
+   ![Yönetim Merkezi Microsoft 365 ekran görüntüsü-etki alanı Ekle](./media/domain-custom-add.png)
 
-4. Önceki adımda girdiğiniz etki alanının sahibi olduğunuzu doğrulayın. 
+4. Önceki adımda girdiğiniz etki alanının sahibi olduğunuzdan emin olun. 
     
-    **Kodu e-posta yoluyla gönder** seçilirse, etki alanınızın kayıtlı iletişim sorumlusuna bir e-posta gönderilir. E-postayı aldıktan sonra kodu kopyalayın ve **Doğrulama kodunuzu buraya yazın** etiketli alana girin. Doğrulama kodu eşleşirse, etki alanı kiracınıza eklenir. Görüntülenen e-posta tanıdık görünmeyebilir. Bazı kaydedicilerin gerçek e-posta adresi gizleyin. Ayrıca, e-posta adresi sonra etki alanı kaydettiğinizde ne sağlanan farklı olabilir.
+    **Kodu e-posta yoluyla gönder** seçilirse, etki alanınızın kayıtlı iletişim sorumlusuna bir e-posta gönderilir. E-postayı aldıktan sonra kodu kopyalayın ve **Doğrulama kodunuzu buraya yazın** etiketli alana girin. Doğrulama kodu eşleşirse, etki alanı kiracınıza eklenir. Görüntülenen e-posta tanıdık görünmeyebilir. Bazı kayıt şirketlerinde gerçek e-posta adresini gizler. Ayrıca, e-posta adresi farklı olabilir ve bu, etki alanı kaydedildiğinde sağlanmıştı.
 
-   ![Microsoft 365 ekran Yönetim Merkezi - etki alanı doğrulama](./media/domain-custom-verify.png)
+   ![Yönetim Merkezi Microsoft 365 ekran görüntüsü-etki alanını doğrula](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > TXT kaydı doğrulama ayrıntıları için bkz. [Office 365 için DNS barındırma sağlayıcılarında DNS kayıtları oluşturma](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -122,7 +122,7 @@ Yukarıdaki söz edildiği gibi kuruluşunuzun olmadan kullanmak istiyorsanız, 
 
 Kullanabileceğiniz iki portal vardır:
 - [Intune'un özelliklerini](what-is-intune.md) Azure’daki ([portal.azure.com](https://portal.azure.com)) Intune panosunda bulabilirsiniz. Normalde, işlerinizi Intune panosunda yaparsınız.
-- Microsoft 365 Yönetim merkezini ([admin.microsoft.com](https://admin.microsoft.com)), Azure Active Directory bu kullanmıyorsanız, ekleyin ve kullanıcıları yönetme yerdir. Ayrıca hesabınızın faturalama ve destek gibi diğer yönlerini de yönetebilirsiniz.
+- Microsoft 365 Yönetim Merkezi ([admin.Microsoft.com](https://admin.microsoft.com)), bu kullanıcı için Azure Active Directory kullanmıyorsanız kullanıcıları ekleyebileceğiniz ve yönetebileceğiniz yerdir. Ayrıca hesabınızın faturalama ve destek gibi diğer yönlerini de yönetebilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -131,4 +131,4 @@ Bu hızlı başlangıçta Intune’u bir test ortamında denemek için ücretsiz
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Bir kullanıcı oluşturun ve ona bir lisans atayın](quickstart-create-user.md)
+> [Hızlı başlangıç Bir kullanıcı oluşturun ve buna bir lisans atayın](quickstart-create-user.md)
