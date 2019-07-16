@@ -1,7 +1,7 @@
 ---
-title: Şifreleme rapor ve Intune BitLocker anahtarları
+title: Microsoft Intune 'de şifreleme raporu ve BitLocker anahtarları
 titleSuffix: Microsoft Intune
-description: Bir raporu, cihaz şifreleme durumunu görüntülemek ve Intune portalındaki BitLocker kurtarma anahtarlarını erişebilirsiniz.
+description: Cihaz şifreleme durumunuz hakkında bir rapor görüntüleyin ve Microsoft Intune portalı içinden BitLocker Kurtarma anahtarlarına erişin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,96 +16,96 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316944"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883363"
 ---
-# <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker'ı ve cihaz şifreleme izleyin  
-Intune, Windows 10 cihazlarınızın şifreleme durumunu belirlemek için merkezi bir konum sağlayan ve BitLocker için önemli bilgiler, Azure Active Directory (Azure AD) bulunan cihazlardan erişim yardımcı olur.  
+# <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker ve cihaz şifrelemesini izleme  
+Intune, Windows 10 cihazlarınızın şifreleme durumunu tanımlamak için merkezi bir konum sağlar ve Azure Active Directory (Azure AD) içinde bulunan cihazlarınızdan BitLocker için önemli bilgilere erişmenize yardımcı olur.  
 
-- [Şifreleme rapor](#encryption-report) cihaz şifreleme durumu ve hazırlık hakkında ayrıntılar sağlar. Rapor ayrıntıları korumak istediğiniz cihazların başarılı şifreleme engelleyen sorunları belirlemenize yardımcı olabilir.  
-- [BitLocker'ı ayrıntılarını görüntülemek](#bitlocker-recovery-keys) cihazlarınızdan Intune portalındaki anahtarı kimliği ve kurtarma anahtarlarını ister.  
+- [Şifreleme raporu](#encryption-report) , bir cihazın şifreleme durumu ve hazırlığı hakkında ayrıntılı bilgi sağlar. Rapor ayrıntıları, korumak istediğiniz cihazların başarıyla şifrelenmesini önleyen sorunları belirlemenize yardımcı olabilir.  
+- Intune portalı içinden cihazlarınızın anahtar KIMLIĞI ve kurtarma anahtarları gibi [BitLocker ayrıntılarını görüntüleyin](#bitlocker-recovery-keys) .  
 
 ## <a name="encryption-report"></a>Şifreleme raporu
-Windows 10 cihazlarınızın şifreleme durumu hakkındaki ayrıntıları görüntülemek için şifreleme raporu kullanabilirsiniz.  
+Windows 10 cihazlarınızın şifreleme durumuyla ilgili ayrıntıları görüntülemek için şifreleme raporunu kullanabilirsiniz.  
 
-Rapora ulaşmak için oturum açın [Intune](https://aka.ms/intuneportal) gidin **cihaz Yapılandırması**ve ardından altındaki *İzleyici*seçin **şifreleme rapor**.  
+Raporu bulmak için [Intune](https://aka.ms/intuneportal) 'Da oturum açın ve **cihaz yapılandırması**' na gidin ve ardından *izleyici*' nin altında **şifreleme raporu**' nu seçin.  
 
 ### <a name="prerequisites"></a>Önkoşullar:
-Şifreleme raporda görünmesi için bir cihaz 1607 veya üzeri sürümü Windows çalıştırmanız gerekir.  
+Şifreleme raporunda görünmesi için bir cihazın Windows 1607 veya sonraki bir sürümü çalıştırması gerekir.  
 
 ### <a name="report-details"></a>Rapor ayrıntıları
-Rapor görüntüler **cihaz adı** her hakkında üst düzey ayrıntılar ve Windows 10 cihazları için:  
-- **İşletim sistemi sürümü** – sürümü, Windows.  
-- **TPM sürümü** – cihazın Güvenilir Platform Modülü (TPM) yongası sürümü.  
-- **Şifreleme hazırlık** BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Cihazlar olarak tanımlanabilir:
-  - **Hazır**: Cihaz, cihaz bir TPM'ye sahip ve aşağıdaki Windows 10 sürümü ve SKU gereksinimlerinizi karşılayan gerektiren MDM İlkesi kullanılarak şifrelenebilir:
-    - Sürüm 1703 veya daha sonra iş, Kurumsal, eğitim
-    - 1809 veya sonraki bir sürümü, Pro  
+Rapor, Windows 10 cihazlarınızın **cihaz adını** ve aşağıdakiler dahil olmak üzere her biri ile ilgili üst düzey ayrıntıları görüntüler:  
+- **Işletim sistemi sürümü** – Windows sürümü.  
+- **TPM sürümü** : cihazdaki GÜVENILIR Platform Modülü (TPM) yongasının sürümü.  
+- **Şifreleme hazırlığı** – cihazların değerlendirilmesi BitLocker şifrelemesini desteklemeye hazır. Cihazlar şu şekilde tanımlanabilir:
+  - **Hazırlanıyor**: Cihaz, cihazın TPM olmasını gerektiren ve aşağıdaki Windows 10 sürümü ve SKU gereksinimlerini karşılayan MDM ilkesi kullanılarak şifrelenebilir:
+    - Sürüm 1703 veya üzeri, Iş, kurumsal, eğitim
+    - Pro 'nun sürüm 1809 veya üzeri  
   
-    Daha fazla bilgi için [BitLocker'ı yapılandırma hizmet sağlayıcısı (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) Windows belgelerinde.  
+    Daha fazla bilgi için Windows belgelerindeki [BitLocker yapılandırma hizmeti sağlayıcısına (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) bakın.  
 
-  - **Hazır değil**: Cihaz tam şifreleme yeteneği yoktur, ancak yine de şifrelemeyi destekleyen. Örneğin, cihazı el ile bir kullanıcı tarafından veya bir TMP şifrelemeye izin vermek için ayarlayabileceğiniz bir Grup İlkesi aracılığıyla şifrelenebilir.
-  - **Uygulanamaz**: Bu cihaz sınıflandırmak için yeterli bilgi yok.  
+  - **Hazırlanma**: Cihazın tam şifreleme özellikleri yoktur, ancak yine de şifrelemeyi destekler. Örneğin, cihaz bir kullanıcı tarafından el ile veya bir TMP olmadan şifrelemeye izin vermek üzere ayarlanabilir grup ilkesi aracılığıyla şifrelenmiş olabilir.
+  - **Uygulanamaz**: Bu cihazı sınıflandırmak için yeterli bilgi yok.  
 
-- **Şifreleme durumu** – işletim sistemi sürücüsünü şifrelenmiş olsun. 
+- **Şifreleme durumu** – işletim sistemi sürücüsünün şifrelenip şifrelenmediği. 
 
 
 ### <a name="device-encryption-status"></a>Cihaz şifreleme durumu
-Bir cihaz seçtiğinizde, Intune görüntüler **cihaz şifreleme durumu** bölmesi.
+Bir cihaz seçtiğinizde, Intune **Cihaz şifreleme durumu** bölmesini görüntüler.
 
 Bu bölme aşağıdaki ayrıntıları sağlar:  
 - **Cihaz adı** – görüntülemekte olduğunuz cihazın adı.  
-- **Şifreleme hazırlık** - BitLocker şifrelemesi desteklemek için cihazları Hazırlık Değerlendirmesi bir. Bir cihaz bir şifreleme durumunu olabilir *şifreli* kendi şifreleme hazırlık olsa bile *hazır değil*, TPM eksik olduğundan. (Daha fazla ayrıntı için önceki bölümde şifreleme hazırlık bakın.)
-- **Şifreleme durumu** - işletim sistemi sürücüsünü şifrelenmiş olsun. Uygulamanın, Intune cihaz şifreleme durumu veya durumu değişiklik bildirimi başlamak 24 saate kadar sürebilir.  
-- **Profilleri** – listesini *cihaz Yapılandırması* profilleri bu cihaza uygulanır ve aşağıdaki profil türü ve ayarları içerir:  
-  - Profil türü = *uç nokta koruması*  
-  - Ayarlar > Windows şifreleme > cihazlar şifreleme = *gerekli*  
+- **Şifreleme hazırlığı** -cihazların değerlendirilmesi BitLocker şifrelemesini desteklemeye hazır. TPM olmadığı için, şifreleme hazırlığı *hazır*olmasa bile bir cihazın şifreleme durumu *şifrelenmiş* olabilir. (Daha fazla bilgi için önceki bölümde bulunan şifreleme hazırlığı bölümüne bakın.)
+- **Şifreleme durumu** -işletim sistemi sürücüsünün şifreli olup olmadığı. Intune 'un bir cihaz şifreleme durumu veya bu durumdaki bir değişiklik üzerinde raporlamaya başlaması 24 saate kadar sürebilir.  
+- **Profiller** : Bu cihaza uygulanan ve aşağıdaki profil türü ve ayarlarını içeren *cihaz yapılandırma* profillerinin bir listesidir:  
+  - Profil türü = *Endpoint Protection*  
+  - Ayarlar > Windows şifrelemesi > şifreleme cihazları = *gerekli*  
 
-  Bu liste bağımsız ilkeleri gözden geçirme için profil durumu özeti sorunlar olduğunu gösteren bulma kullanımda olabilir.  
+  Bu liste, gözden geçirme için ayrı ilkelerin bulunmasında kullanılabilir ve profil durumu Özeti sorunları belirtir.  
 
-- **Profil durumu özeti** – bu cihaza uygulama profilleri bir özeti. Özet, tüm geçerli profillerinde en az tercih edilen koşulunu temsil eder. Örneğin, bir profil hatayla sonuçlanırsa, profil durumu özeti görüntülenir *hata*.  
-- **Durum ayrıntıları** – Gelişmiş cihazın şifreleme durumu hakkında ayrıntılar. 
+- **Profil durumu Özeti** : Bu cihaza uygulanan profillerin Özeti. Özet, tüm geçerli profillerde en düşük durumu temsil eder. Örneğin, bir profil hata ile sonuçlanırsa, profil durumu özeti *hata*görüntüler.  
+- **Durum ayrıntıları** – cihazın şifreleme durumu hakkında gelişmiş ayrıntılar. 
   > [!NOTE]  
-  > Intune yalnızca gösterir *durumu ayrıntıları* çalıştıran cihazlar için *Windows 10 Nisan 2019 Update* veya üzeri.
+  > Intune yalnızca *Windows 10 nisan 2019 güncelleştirme* veya üstünü çalıştıran cihazların *durum ayrıntılarını* gösterir.
   
-  Bu alan, algılanabilir her bir ilgili hata bilgilerini görüntüler. Bir cihaz şifreleme hazır olmamasının anlamak için bu bilgileri kullanabilirsiniz.  
+  Bu alan, algılanabildiği her bir hata için bilgileri görüntüler. Bu bilgileri, bir cihazın neden şifreleme için hazırlanamadığına ilişkin bir neden olduğunu anlamak için kullanabilirsiniz.  
 
-  Intune bildirebilirsiniz durumu ayrıntıları örnekleri şunlardır:  
+  Intune 'un rapor verebir durum ayrıntıları aşağıda verilmiştir:  
 
-   - BitLocker'ı ilke BitLocker Sürücü Şifrelemesi işletim sistemi birimi şifrelemesi başlatmak için sihirbazını başlatmak için kullanıcı onayı gerektirir, ancak kullanıcı izin vermedi.  
-   - İşletim sistemi birimi şifrelemesi yöntemi BitLocker İlkesi eşleşmiyor.  
-   - Bir TPM koruyucusu, işletim sistemi birimi korumak BitLocker'ı ilke gerektirir, ancak bir TPM kullanılmaz.  
-   - BitLocker İlkesi, işletim sistemi birimi için bir salt TPM koruyucusu gerektirir, ancak TPM koruması kullanılmaz.  
-   - BitLocker'ı ilke TPM + PIN koruma için işletim sistemi birimi gerektirir, ancak bir TPM + PIN koruyucusu kullanılmaz.  
-   - BitLocker'ı İlkesi, TPM + başlatma gerektiriyor anahtar koruma için işletim sistemi birimi, ancak bir TPM + başlangıç anahtar koruyucusu kullanılmaz.  
-   - İşletim sistemi birimi, ancak bir TPM + PIN için BitLocker'ı İlkesi TPM + PIN + başlangıç anahtar koruması gerektiriyor + başlangıç anahtar koruyucusu kullanılmaz.  
-   - İşletim sistemi birimi korumasız kalır.  
-   - Kurtarma anahtarı yedekleme başarısız oldu.  
-   - Bir sabit sürücü korumasız kalır.  
-   - Şifreleme yöntemi sabit sürücünün BitLocker İlkesi eşleşmiyor.  
-   - Sürücüleri şifrelemek için BitLocker'ı İlkesi yönetici olarak oturum açmak kullanıcının gerektiriyor veya cihazı Azure AD'ye katılır, AllowStandardUserEncryption ilke 1 olarak ayarlanmış olması gerekir.  
-   - Windows Kurtarma Ortamı'nı (WinRE) yapılandırılmamış.  
-   - BitLocker'ın, TPM kullanılamıyor ya da mevcut değilse, onu kullanılamaz kayıt defterinde yapıldı veya işletim sistemi çıkarılabilir bir sürücüde olduğundan.  
-   - TPM'nin BitLocker için hazır değil.  
-   - Kurtarma anahtarı yedekleme için gerekli olan ağ kullanılabilir değil.  
+  - BitLocker ilkesi için Kullanıcı onayı 'Nın, işletim sistemi biriminin şifrelemesini başlatmak üzere BitLocker Sürücü Şifrelemesi Sihirbazı 'Nı başlatması gerekir, ancak Kullanıcı onay vermedi.  
+  - İşletim sistemi biriminin şifreleme yöntemi BitLocker ilkesiyle eşleşmiyor.  
+  - BitLocker, işletim sistemi birimini korumak için bir TPM koruyucusu gerektirir, ancak TPM kullanılmaz.  
+  - BitLocker ilkesi, işletim sistemi birimi için salt TPM koruyucusu gerektirir, ancak TPM koruması kullanılmaz.  
+  - BitLocker ilkesi, işletim sistemi birimi için TPM + PIN koruması gerektirir, ancak TPM + PIN koruyucusu kullanılmaz.  
+  - BitLocker ilkesi, işletim sistemi birimi için TPM + başlangıç anahtarı koruması gerektirir, ancak TPM + başlangıç anahtarı koruyucusu kullanılmaz.  
+  - BitLocker ilkesi, işletim sistemi birimi için TPM + PIN + başlangıç anahtarı koruması gerektirir, ancak TPM + PIN + başlangıç anahtarı koruyucusu kullanılmaz.  
+  - İşletim sistemi birimi korumasız.  
+  - Kurtarma anahtarı yedeklemesi başarısız oldu.  
+  - Sabit bir sürücü korumasız.  
+  - Sabit sürücünün şifreleme yöntemi BitLocker ilkesiyle eşleşmiyor.  
+  - Sürücüleri şifrelemek için BitLocker ilkesi kullanıcının yönetici olarak oturum açmasını ya da cihazın Azure AD 'ye katılmasını gerektiriyorsa, AllowStandardUserEncryption ilkesinin 1 olarak ayarlanması gerekir.  
+  - Windows kurtarma ortamı (WinRE) yapılandırılmadı.  
+  - TPM, mevcut olmadığı, kayıt defterinde kullanılamaz hale getirilen ya da işletim sistemi çıkarılabilir bir sürücüde olan BitLocker için kullanılamaz.  
+  - TPM BitLocker için yok.  
+  - Ağ kullanılabilir değil, kurtarma anahtarı yedeklemesi için gereklidir.  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker kurtarma anahtarları
-BitLocker anahtarı kimliği ve kurtarma anahtarlarını, Windows 10 cihazları için gelen Intune portalından görüntüleyebileceğiniz şekilde Intune için BitLocker'ı Azure AD'ye dikey erişim sağlar.  Erişilebilir olması için cihazı Azure AD'ye kalacakları anahtarlarını olmalıdır. 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)Git **cihazları** altındaki *Yönet*seçin **tüm cihazlar**.
-2. Bir cihaz seçin listeden ve altında *İzleyici*seçin **kurtarma anahtarlarını**.  
+Intune, Windows 10 cihazlarınızın BitLocker anahtar kimliklerini ve kurtarma anahtarlarını Intune portalından görüntüleyebilmeniz için BitLocker için Azure AD dikey penceresine erişim sağlar.  Erişilebilir olması için cihazın, Azure AD 'ye yönelik anahtarları olması gerekir. 
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihazlar** ' a gidin ve ardından *Yönet*' in altında **tüm cihazlar**' ı seçin.
+2. Listeden bir cihaz seçin ve ardından *izleyici*altında **kurtarma anahtarları**' nı seçin.  
   
-Aşağıdaki bilgiler, anahtarları, Azure AD'de kullanılabilir olduğunda kullanılabilir:
-- BitLocker anahtar kimliği
+Azure AD 'de anahtarlar kullanılabilir olduğunda aşağıdaki bilgiler kullanılabilir:
+- BitLocker anahtar KIMLIĞI
 - BitLocker kurtarma anahtarı
 - Sürücü türü  
 
-Azure AD'de anahtarları değil, Intune görüntüler *Hayır BitLocker anahtarı bulunamadı, bu cihaz için*.  
+Anahtarlar Azure AD 'de olmadığında, Intune *Bu cihaz Için hiçbir BitLocker anahtarı bulunamadığını*gösterir.  
 
-Bilgi için BitLocker'ı kullanarak elde [BitLocker'ı yapılandırma hizmet sağlayıcısı](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). BitLocker CSP, Windows 10 sürüm 1703 ve üzeri ve Windows 10 Pro sürüm 1809 ve üzeri için desteklenir. 
+BitLocker için bilgi, [BitLocker yapılandırma hizmeti sağlayıcısı](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP) kullanılarak elde edilir. BitLocker CSP, Windows 10 sürüm 1703 ve üzeri sürümlerde ve Windows 10 Pro sürüm 1809 ve üzeri sürümlerde desteklenir. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Oluşturma bir [cihaz uyumluluğu](compliance-policy-create-windows.md) BitLocker ve şifreleme yapılandırmak Windows 10 cihazlar için ilke.
+BitLocker ve şifrelemeyi yapılandırmak için Windows 10 cihazları için bir [cihaz uyumluluk](compliance-policy-create-windows.md) ilkesi oluşturun.

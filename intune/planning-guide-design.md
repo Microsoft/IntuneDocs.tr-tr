@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572276"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884872"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -49,47 +49,47 @@ Mevcut ortamınız, tasarım kararlarını etkileyebilir ve diğer Intune tasar�
 
 - **Buluttaki kimlik**
 
-    - DirSync veya Azure Active Directory (Azure AD) Connect kullanıyor musunuz?
+  - DirSync veya Azure Active Directory (Azure AD) Connect kullanıyor musunuz?
 
-    - Ortamınız federe mi?
+  - Ortamınız federe mi?
 
-    - Çok faktörlü kimlik doğrulaması (MFA) etkin mi?
+  - Çok faktörlü kimlik doğrulaması (MFA) etkin mi?
 
 - **E-posta ortamı**
 
-    - Exchange kullanıyor musunuz? Şirket içinde mi, bulutta mı?
+  - Exchange kullanıyor musunuz? Şirket içinde mi, bulutta mı?
 
-    - Exchange’i buluta geçirme projesinin ortasında mısınız?
+  - Exchange’i buluta geçirme projesinin ortasında mısınız?
 
 - **Geçerli mobil cihaz yönetimi (MDM) çözümü**
 
-    - Şu anda diğer MDM çözümlerini kullanıyor musunuz?
+  - Şu anda diğer MDM çözümlerini kullanıyor musunuz?
 
-    - Şirket ve KCG kullanım örneği senaryoları için hangi MDM çözümlerini kullanıyorsunuz?
+  - Şirket ve KCG kullanım örneği senaryoları için hangi MDM çözümlerini kullanıyorsunuz?
 
-    - Hangi özellikleri kullanıyorsunuz (örneğin uygulama cihaz ayarları, Wi-Fi yapılandırmaları)?
+  - Hangi özellikleri kullanıyorsunuz (örneğin uygulama cihaz ayarları, Wi-Fi yapılandırmaları)?
 
-    - Hangi cihaz platformları destekleniyor?
+  - Hangi cihaz platformları destekleniyor?
 
-    - MDM çözümü hangi gruplar ve kaç kullanıcı tarafından kullanılıyor?
+  - MDM çözümü hangi gruplar ve kaç kullanıcı tarafından kullanılıyor?
 
 - **Sertifika çözümü**
 
-    - Bir sertifika çözümü uyguladınız mı?
+  - Bir sertifika çözümü uyguladınız mı?
 
-    - Hangi sertifika türlerini kullanıyorsunuz?
+  - Hangi sertifika türlerini kullanıyorsunuz?
 
 - **Sistem yönetimi**
 
-    - PC ve sunucu ortamınızı nasıl yönetiyorsunuz?
+  - PC ve sunucu ortamınızı nasıl yönetiyorsunuz?
 
-    - System Center Configuration Manager’ı kullanıyor musunuz? Bir üçüncü taraf sistem yönetimi platformu kullanıyor musunuz?
+  - System Center Configuration Manager’ı kullanıyor musunuz? Bir üçüncü taraf sistem yönetimi platformu kullanıyor musunuz?
 
 - **VPN çözümü**
 
-    - VPN çözümünüz nedir?
+  - VPN çözümünüz nedir?
 
-    - Hem şirket hem de KCG örneği senaryolarında kullanıyor musunuz?
+  - Hem şirket hem de KCG örneği senaryolarında kullanıyor musunuz?
 
 Geçerli MDM ortamını kaydederken ortamınızı etkileyebilecek tüm projeleri ve planları not aldığınızdan emin olun. Intune tasarımınızı oluştururken mevcut ortamı kaydetme yoluna ilişkin bir örnek aşağıda verilmiştir:
 
@@ -108,7 +108,7 @@ Intune tasarım planınızı geliştirmek için [yukarıdaki tablonun bir şablo
 
 ## <a name="choose-an-intune-deployment-option"></a>Bir Intune dağıtım seçeneği belirleyin
 
-Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına bulut ortamında çalışan Intune hizmetine başvurur, karma, Intune'un System Center Configuration Manager ile ifade eder. Bu kılavuz öncelikle tek başına seçeneğinin kullanılmasına yönelik tasarlanmıştır. [İş gereksinimlerinize hangi seçeneğin uyduğuna karar verin](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına, bulutta çalışan Intune hizmetini ifade eder; karma, System Center Configuration Manager ile Intune tümleştirmesini ifade eder. Bu kılavuz öncelikle tek başına seçeneğinin kullanılmasına yönelik tasarlanmıştır. [İş gereksinimlerinize hangi seçeneğin uyduğuna karar verin](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 > [!Important]
 >Yeni karma MDM müşterisi ekleme seçeneği kullanım dışı bırakılmıştır. Daha fazla bilgi için [Karma Mobil Cihaz Yönetiminden Azure’da Intune’a geçme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) başlıklı blog gönderisine bakın.
@@ -137,7 +137,7 @@ Dış bağımlılıklar Intune'dan ayrı ancak aynı zamanda Intune gereksinimi 
 
 - Ortak anahtar altyapısı (PKI)
 
-Aşağıda, bu yaygın dış bağımlılıkları daha ayrıntılı bir şekilde inceleyeceğiz.
+Aşağıda, yaygın dış bağımlılıkları daha ayrıntılı bir şekilde araştırıyoruz.
 
 ### <a name="identity"></a>Kimlik
 
@@ -216,7 +216,7 @@ Cihaz listenizi geliştirmek için [yukarıdaki tablonun bir şablonunu indirebi
 
 Intune, hem şirkete ait cihazları hem de kişisel cihazları destekler. Bir cihaz, cihaz kayıt yöneticisi tarafından veya cihaz kayıt programı ile kaydedilmişse şirkete ait olarak kabul edilir. Örneğin bir cihaz Apple Aygıt Kayıt Programı (DEP) aracılığıyla kaydedilmiş, şirkete ait olarak işaretlenmiş ve hedeflenen şirket ilkelerini ve uygulamalarını alan bir cihaz grubuna yerleştirilmiştir.
 
-Başvurmak [3. Bölüm: Kullanım örneği senaryosu gereksinimlerini belirleme](planning-guide-requirements.md) daha fazla bilgi şirket ve KCG kullanım örnekleri.
+Bölüm 3 [' e bakın: Kurumsal ve KCG kullanım](planning-guide-requirements.md) örnekleri hakkında daha fazla bilgi için kullanım örneği senaryosu gereksinimlerini belirleme.
 
 ### <a name="bulk-enrollment"></a>Toplu kayıt
 
@@ -262,10 +262,10 @@ Platform başına en az bir yapılandırma ilkesi oluşturmanız gerekir. Gereki
 
 | **İlke adı** | **Cihaz platformu** | **Ayarlar** | **Hedef grup** |   
 |:---:|:---:|:---:|:---:|
-| Kurumsal - iOS | iOS | PIN gereklidir, uzunluğu: 6, bulut yedeklemeyi kısıtla | Kurumsal Cihazlar |                                                           
-| Kurumsal - Android | Android | PIN gereklidir, uzunluğu: 6, bulut yedeklemeyi kısıtla | Kurumsal Cihazlar |                                                           
-| KCG – iOS  | iOS | PIN gereklidir, uzunluğu: 4 | KCG cihazlar |
-| KCG – Android  | Android | PIN gereklidir, uzunluğu: 4 | KCG cihazlar |
+| Kurumsal - iOS | iOS | PIN gereklidir, Uzunluk: 6, bulut yedeklemesini kısıtla | Kurumsal Cihazlar |                                                           
+| Kurumsal - Android | Android | PIN gereklidir, Uzunluk: 6, bulut yedeklemesini kısıtla | Kurumsal Cihazlar |                                                           
+| KCG – iOS  | iOS | PIN gereklidir, Uzunluk: 4 | KCG cihazlar |
+| KCG – Android  | Android | PIN gereklidir, Uzunluk: 4 | KCG cihazlar |
 
 
 Yapılandırma ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -389,7 +389,7 @@ Uygulama koruma ilkeleri, uygulamanın kurumsal verileri nasıl yönettiğini ta
 Uygulama koruma ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="compliance-policies"></a>Uyumluluk ilkeleri
 
-Uyumluluk ilkeleri, bir cihazın belirli gereksinimlere uygun olup olmadığını belirler. Intune, bir cihazın uyumlu veya uyumsuz olarak kabul edileceğini belirlemek için uyumluluk ilkeleri kullanır. Bundan sonra, şirket kaynaklarına erişimi kısıtlamak veya erişime izin vermek için uyumluluk durumu kullanılabilir. Koşullu erişim gerekiyorsa, tasarlamanızı öneririz bir [cihaz uyumluluk İlkesi](device-compliance.md).
+Uyumluluk ilkeleri, bir cihazın belirli gereksinimlere uygun olup olmadığını belirler. Intune, bir cihazın uyumlu veya uyumsuz olarak kabul edileceğini belirlemek için uyumluluk ilkeleri kullanır. Bundan sonra, şirket kaynaklarına erişimi kısıtlamak veya erişime izin vermek için uyumluluk durumu kullanılabilir. Koşullu erişim gerekliyse, bir [cihaz uyumluluk ilkesi](device-compliance.md)tasarlamanızı öneririz.
 
 Kaç cihaz uyumluluk ilkesine gerek duyduğunuzu ve hangi kullanıcı gruplarının hedef kullanıcı grupları olduğunu belirlemek için gereksinimlere ve kullanım örneklerine başvurun. Ek olarak, bir cihazın uyumsuz olarak kabul edilmesi için oturum açmadan önce ne kadar süre çevrimdışı kalabileceğine de karar vermeniz gerekir.
 
@@ -403,20 +403,20 @@ Bir uyumluluk ilkesi tasarlamaya ilişkin bir örnek aşağıda verilmiştir:
 Uyumluluk ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 #### <a name="conditional-access-policies"></a>Koşullu erişim ilkeleri
 
-Koşullu erişim yalnızca uyumlu cihazların e-posta ve diğer şirket kaynaklarına erişmesine izin vermek için kullanılır. Intune şirket kaynaklarına erişimi denetlemek için Enterprise Mobility + Security (EMS) ile birlikte çalışır. Koşullu erişim gerektirip gerektirmediğini karar verin ve neyin korunması gerekir. [Koşullu Erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
+Koşullu erişim yalnızca uyumlu cihazların e-postaya ve diğer şirket kaynaklarına erişmesine izin vermek için kullanılır. Intune şirket kaynaklarına erişimi denetlemek için Enterprise Mobility + Security (EMS) ile birlikte çalışır. Koşullu erişim gerekli olup olmadığına ve neyin güvenli hale getirilmeli olduğuna karar verin. [Koşullu Erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
 
-Çevrimiçi erişim için hangi platformlar ve kullanıcı gruplarının koşullu erişim ilkeleri tarafından hedef karar verin. Ayrıca, yükleme veya şirket içi Exchange için Intune bağlayıcısını yapılandırmak gerekli olup olmadığını belirleyin: 
+Çevrimiçi erişim için hangi platformların ve Kullanıcı gruplarının koşullu erişim ilkeleri tarafından hedefleneceğini belirleyin. Ayrıca, şirket içi Exchange için Intune bağlayıcısını yüklemeniz veya yapılandırmanız gerekip gerekmediğini belirleme: 
 
 - [Şirket İçi Exchange](exchange-connector-install.md)
 
-Belge koşullu erişim ilkelerine ilişkin bir örnek aşağıda verilmiştir:
+Koşullu erişim ilkelerini Belgeme hakkında bir örnek aşağıda verilmiştir:
 
 | **Hizmet** | **Modern Kimlik Doğrulaması Platformları** | **Temel Kimlik Doğrulaması** | **Kullanım örnekleri** |   
 |:---:|:---:|:---:|:---:|
 | Exchange Online | iOS, Android | Intune’un desteklediği platformlarda uyumlu olmayan cihazları engelle | Kurumsal, KCG |
 | SharePoint Online | iOS, Android |  | Kurumsal, KCG |
 
-Yapabilecekleriniz [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) , koşullu erişim ilkesi ihtiyaçlarınızı belirlemek için.
+Koşullu erişim ilkesi gereksinimlerinizi belirlemek için [Yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) .
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

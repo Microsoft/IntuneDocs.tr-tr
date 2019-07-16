@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2eb47240516737f03c10d1280887fea275c5ed99
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546591"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883951"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>iOS cihazınızı Intune’dan kaldırma
 
@@ -44,25 +44,25 @@ Cihazınızı Intune’dan kaldırmak için aşağıdaki adımları kullanın ve
     |![Şirket Portalı uygulaması Cihazlar ekranının kullanıcı Cihaz Kaldır düğmesine tıkladıktan sonra çıkan seçenekleri gösteren ekran görüntüsü. Kırmızı renkle vurgulanmış “Kaldır” düğmesi ve mavi renkle vurgulanmış “Daha Fazla Bilgi” ve “İptal Et” düğmelerini gösterir.](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
 
-  Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
+    Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 
-  - Cihazınız artık Şirket Portalı’nda gösterilmez.
+    - Cihazınız artık Şirket Portalı’nda gösterilmez.
 
-  - Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
+    - Artık Şirket Portalı’ndan uygulama yükleyemezsiniz.
 
-  - Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
+    - Cihazı eklediğinizde değiştirilen tüm ayarlar (örneğin, kamerayı devre dışı bırakma veya belirli bir parola uzunluğu gerekliliği) artık geçerliliğini kaybeder.
 
-  - Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
+    - Dosya paylaşımları veya dahili web siteleri gibi şirket kaynaklarına erişemeyebilirsiniz.
 
-  - Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
+    - Cihazınızda artık şirket uygulamalarını ve şirket verilerini kullanamazsınız.
 
-  - Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
+    - Artık Wi-Fi veya bir sanal özel ağ (VPN) kullanarak şirket ağınıza bağlanamayabilirsiniz.
 
-  - Şirket e-posta profilleri cihazdan kaldırılır.
+    - Şirket e-posta profilleri cihazdan kaldırılır.
 
-  - Yalnızca e-posta için yapılandırılan cihazlar artık Şirket Portalı uygulamasında veya web sitesinde gösterilmez.
-  
-  - Uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.
+    - Yalnızca e-posta için yapılandırılan cihazlar artık Şirket Portalı uygulamasında veya web sitesinde gösterilmez.
+
+    - Uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Şirket Portalı uygulaması tarafından toplanan verileri kaldırma
 
