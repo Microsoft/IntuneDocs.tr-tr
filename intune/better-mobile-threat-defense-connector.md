@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 55d4e327d99c8987e6fdc0dea0ac046dd0dc167e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547301"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883802"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Intune ile Better Mobile Threat Defense bağlayıcısı
 
-Microsoft Intune ile tümleşik bir Mobile Threat Defense (MTD) çözümü olan daha iyi Mobile tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişim kullanarak şirket kaynaklarına mobil cihaz erişimini kontrol edebilirsiniz. Risk, Better Mobile uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
+Microsoft Intune ile tümleştirilen Mobile Threat Defense (MTD) çözümü daha Iyi mobil tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Better Mobile uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-İzin verme veya engelleme algılanan tehditlere dayalı olarak şirket kaynaklarına erişmek için uyumsuz cihazlar için kullanabileceğiniz Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen daha iyi mobil risk değerlendirmesine dayalı koşullu erişim ilkelerini yapılandırabilirsiniz.
+Koşullu erişim ilkelerini, Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen daha Iyi mobil risk değerlendirmesine göre yapılandırabilirsiniz. Bu, uyumsuz cihazların algılanan tehditler temelinde şirket kaynaklarına erişmesine izin vermek veya erişimi engellemek için kullanabilirsiniz.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Intune ve Better Mobile şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
@@ -49,7 +49,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Kötü amaçlı yazılımlar algılandığında engelleme:**
 
-![Kötü amaçlı uygulamalar algılandı gösteren resim](./media/better_mobile_maliciousapps_blocked.png)
+![Algılanan kötü amaçlı uygulamaları gösteren resim](./media/better_mobile_maliciousapps_blocked.png)
 
 **Düzeltme ile erişim izni verildi:**
 
@@ -65,7 +65,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 **Düzeltme ile erişim izni verildi:**
 
-![Düzeltme ile erişim izni verildi gösteren resim](./media/better_mobile_network_wifi_unblocked.png)
+![Düzeltilmekte olan erişimi gösteren resim](./media/better_mobile_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme
 
@@ -93,7 +93,7 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 
 - Better Mobile Threat Defense aboneliği
 
-    - Daha fazla bilgi için [Better Mobile web sitesine](https://www.better.mobi/) bakın.
+  - Daha fazla bilgi için [Better Mobile web sitesine](https://www.better.mobi/) bakın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

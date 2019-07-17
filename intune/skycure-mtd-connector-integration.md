@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 513001993d890afba848138e01ff823796ea773d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572429"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884433"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile'ın Intune ile tümleştirmesini ayarlama
 
@@ -42,19 +42,19 @@ Symantec'in [Ağ yapılandırmanızı ayarlama](https://portal.skycure.com/artic
 
 SEP Mobile, Intune ile iki tümleştirme modunu destekler:
 
-- **Salt okunur tümleştirme (temel kurulum):** Yalnızca Azure Active Directory'den cihazların envanterini oluşturur ve bunları Symantec Endpoint Protection Mobile yönetim konsolunda doldurur.
+- **Salt okunurdur Tümleştirme (temel kurulum):** Yalnızca Azure Active Directory cihazları envanterler ve Symantec Endpoint Protection mobil yönetim konsolu 'nda doldurur.
 <br>
-    - Symantec Endpoint Protection Mobile Yönetim konsolunda **Cihazların durumunu ve riskini Intune’a raporla** ve **Güvenlik olaylarını da Intune’a raporla** kutuları seçili değilse tümleştirme salt okunur moddadır ve dolayısıyla Intune’da cihazların durumunu (uyumlu veya uyumsuz) asla değiştirmez.
+  - Symantec Endpoint Protection Mobile Yönetim konsolunda **Cihazların durumunu ve riskini Intune’a raporla** ve **Güvenlik olaylarını da Intune’a raporla** kutuları seçili değilse tümleştirme salt okunur moddadır ve dolayısıyla Intune’da cihazların durumunu (uyumlu veya uyumsuz) asla değiştirmez.
 <br></br>
-- **Tam tümleştirme:** SEP Mobile cihazları risk ve güvenlik olayı ayrıntılarını ıntune'a her iki bulut Hizmetleri arasındaki çift yönlü iletişimi oluşturur sağlar.
+- **Tam tümleştirme:** Her iki bulut hizmeti arasında çift yönlü bir iletişim oluşturan Intune 'a risk ve güvenlik olay ayrıntılarına yönelik cihazları rapor etmesine olanak tanır.
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile uygulamaları Azure AD ve Intune ile nasıl kullanılır?
 
-- **iOS uygulaması:** İOS uygulaması kullanarak Azure AD'de oturum açmasına olanak tanır.
+- **iOS uygulaması:** Son kullanıcıların bir iOS uygulaması kullanarak Azure AD 'de oturum açmasına olanak tanır.
 
-- **Android uygulaması:** Bir Android uygulaması kullanarak Azure AD'de oturum açmasına olanak tanır.
+- **Android uygulaması:** Son kullanıcıların bir Android uygulaması kullanarak Azure AD 'de oturum açmasına olanak tanır.
 
-- **Yönetim uygulaması:** Intune ile hizmetten hizmete iletişimi sağlayan SEP Mobile Azure AD çok kiracılı uygulama budur.
+- **Yönetim uygulaması:** Bu, Intune ile hizmetten hizmete iletişim sağlayan, mobil Azure AD çok kiracılı bir uygulamadır.
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>Intune ile SEP Mobile arasında salt okunur tümleştirme ayarlamak için
 
@@ -69,7 +69,7 @@ SEP Mobile, Intune ile iki tümleştirme modunu destekler:
 
 4. **iOS Uygulaması**'nın yanında **Active Directory'ye Ekle**'yi seçin.
 
-    ![Symantec Endpoint Protection Mobil Yönetim konsolunun resmi](./media/symantec-portal-basic-add.png)
+    ![Symantec Endpoint Protection mobil yönetim konsolunun görüntüsü](./media/symantec-portal-basic-add.png)
 
 5. Oturum açma sayfası açıldığında Intune kimlik bilgilerinizi girin ve **Kabul Et**’i seçin.
 
@@ -91,7 +91,7 @@ SEP Mobile çalıştıran tüm cihazların yer aldığı Azure AD güvenlik grub
 
 SEP Mobile, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD güvenlik gruplarıyla eşitler.
 
-![SEP Mobile yönetim konsolunda güvenlik grubu yapılandırma görüntüsü](./media/symantec-portal-basic-status.png)
+![SEP mobil yönetim konsolundaki güvenlik grubu yapılandırması görüntüsü](./media/symantec-portal-basic-status.png)
 
 ## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Intune ile SEP Mobile arasında tam tümleştirmeyi ayarlamak için
 
