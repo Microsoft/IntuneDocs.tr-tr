@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735567"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306761"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -46,7 +46,7 @@ Aşağıdaki dosyalar, hiçbir Swift kodu içermeyen uygulamalar/uzantılara vey
 
 * **Intunemad. Framework**: Intune uygulama SDK 'Sı çerçevesi. Intune istemci uygulama yönetimini etkinleştirmek için bu çerçeveyi uygulamanıza/uzantılara bağlamanız önerilir. Ancak bazı geliştiriciler statik kitaplığın performans avantajlarını tercih edebilir. Aşağıdakilere bakın.
 
-* **libIntuneMAM.a**: Intune uygulama SDK 'Sı statik kitaplığı. Geliştiriciler Framework yerine statik kitaplığı bağlamayı seçebilir. Statik kitaplıklar doğrudan uygulama/uzantı ikilisinde derleme zamanında katıştırıldığından, statik kitaplığı kullanmanın bazı başlatma zamanı performans avantajları vardır. Ancak, uygulamanızı uygulamanızla tümleştirmek daha karmaşık bir işlemdir. Uygulamanız herhangi bir uzantı içeriyorsa statik kitaplığı uygulamaya ve uzantılara bağlamak, statik kitaplık her bir uygulama/uzantı ikilisinde gömüleceğinden daha büyük bir uygulama paketi boyutuna neden olur. Framework kullanırken, uygulamalar ve uzantılar aynı Intune SDK ikilisini paylaşabilir, bu da daha küçük bir uygulama boyutuna neden olur.
+* **Libintunemad. a**: Intune uygulama SDK 'Sı statik kitaplığı. Geliştiriciler Framework yerine statik kitaplığı bağlamayı seçebilir. Statik kitaplıklar doğrudan uygulama/uzantı ikilisinde derleme zamanında katıştırıldığından, statik kitaplığı kullanmanın bazı başlatma zamanı performans avantajları vardır. Ancak, uygulamanızı uygulamanızla tümleştirmek daha karmaşık bir işlemdir. Uygulamanız herhangi bir uzantı içeriyorsa statik kitaplığı uygulamaya ve uzantılara bağlamak, statik kitaplık her bir uygulama/uzantı ikilisinde gömüleceğinden daha büyük bir uygulama paketi boyutuna neden olur. Framework kullanırken, uygulamalar ve uzantılar aynı Intune SDK ikilisini paylaşabilir, bu da daha küçük bir uygulama boyutuna neden olur.
 
 * **Intunemamresources. demeti**: SDK 'nın bağımlı olduğu kaynakları içeren bir kaynak paketi. Kaynak demeti yalnızca statik kitaplığı (Libintunemad. a) tümleştiren uygulamalar için gereklidir.
 
@@ -162,15 +162,15 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
     
     c. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
     
-        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
+      ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](./media/intune-app-sdk-ios-keychain-sharing.png)
     
     d. Anahtarlık erişim gruplarını oluşturmak için yukarıda gösterilen Xcode UI'ı kullanmak yerine doğrudan yetkilendirme dosyalarını düzenliyorsanız, anahtarlık erişim gruplarını `$(AppIdentifierPrefix)` öğesinin önüne ekleyin (Xcode bunu otomatik olarak işler). Örneğin:
     
-        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+      - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+      - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
-        > [!NOTE]
-        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
+      > [!NOTE]
+      > Yetkilendirme dosyası, mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır. Uygulamanızın önceden bir yetkilendirme dosyası yoksa, anahtarlık paylaşımının etkinleştirilmesi (3. adım) Xcode'un uygulamanız için bir dosya oluşturmasına neden olacaktır. Uygulamanın paket KIMLIĞININ listedeki ilk girdi olduğundan emin olun.
 
 6. Uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Sonraki adıma ilerlemeden önce değişikliklerinizi kaydettiğinizden emin olun.
 

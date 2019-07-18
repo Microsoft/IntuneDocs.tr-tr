@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 239ef40c4a881557cf9f4ccef7a4e1b6f6d2fcff
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735704"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306736"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise için Microsoft tarafından yönetilen giriş ekranı uygulamasını yapılandırma
 
@@ -89,7 +89,7 @@ Aşağıdaki tablo, yönetilen giriş ekranı kullanılabilir yapılandırma ana
 | Kilit görev modu parolasıyla çık | dize |   | Sorun giderme için kilit görevi modunun geçici olarak devre dışı bırakması için kullanılacak 4-6 basamaklı bir kod girin. |
 | Wi-Fi ayarını göster | bool | FALSE | Son kullanıcının Wi- `True` Fi açmasına veya devre dışı olmasına veya farklı Wi-Fi ağlarına bağlanmasına izin vermek için bu ayarı etkinleştirmek.  |
 | Bluetooth ayarını göster | bool | FALSE | Son kullanıcının Bluetooth 'u `True` açmasına veya kapatmasına ve Bluetooth özellikli farklı cihazlara bağlanmasına izin vermek için bu ayar açılıyor.   |
-| Klasördeki uygulamalar ada göre sıralanır | bool | TRUE | Bir klasördeki öğelerin belirtildikleri sırada görünmesine izin vermek için `False` bu ayarı açmak. Aksi takdirde, bu, klasörde görünür.   |
+| Klasördeki uygulamalar ada göre sıralanır | bool | TRUE | Bir klasördeki öğelerin belirtildikleri sırada görünmesine izin vermek için `False` bu ayarı açmak. Aksi takdirde, bu, klasörde alfabetik olarak görünürler.   |
 | Uygulama sırası etkin | bool | FALSE | Bu ayarın `True` etkinleştirilmesi, yönetilen giriş ekranındaki uygulamaların, Web bağlantılarının ve klasörlerin sırasını ayarlamanıza olanak sağlar. Etkinleştirildikten sonra, **app_order**ile sıralamayı ayarlayın. Son Kullanıcı Bluetooth 'u açıp kapatıp farklı Bluetooth özellikli cihazlara bağlanır.   |
 | Uygulama sırası | Paketleme Learray | FALSE | Yönetilen giriş ekranındaki uygulamaların, Web bağlantılarının ve klasörlerin sırasını belirtmenize olanak tanır. Bu ayarı kullanmak için, **kilit giriş ekranının** etkinleştirilmesi gerekir, **Izgara boyutunu ayarlama** tanımlanmalıdır ve **uygulama sırası etkin** `True`olmalıdır.   |
 
@@ -383,6 +383,10 @@ Aşağıda, tüm kullanılabilir yapılandırma anahtarlarının dahil olduğu b
     ]
 }
 ```
+
+## <a name="managed-home-screen-debug-screen-on-android-enterprise-dedicated-devices"></a>Android kurumsal adanmış cihazlarda yönetilen giriş ekranı hata ayıklama ekranı
+
+Hata ayıklama ekranı görüntülenene kadar **geri** düğmesine tıklayarak yönetilen giriş ekranının hata ayıklama ekranına erişebilirsiniz ( **geri** düğmesine 15 kez veya daha fazla tıklayın). Bu hata ayıklama ekranından, Android cihaz Ilkesi uygulamasını başlatabilir, günlükleri görüntüleyebilir ve yükleyebilir ya da yönetilen giriş ekranını konsolda tanımladığınız kodla geçici olarak bırakabilirsiniz (**bilgi noktası modu kodunu** [adanmış cihaz ayarlarında](https://docs.microsoft.com/intune/device-restrictions-android-for-work#dedicated-device-settings)bırakabilirsiniz). 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

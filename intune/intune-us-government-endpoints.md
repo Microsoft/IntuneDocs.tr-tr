@@ -1,7 +1,7 @@
 ---
-title: ABD devlet kurumu dağıtımlarından - Intune için ağ uç noktaları
+title: ABD kamu dağıtımları için ağ uç noktaları-Microsoft Intune
 titleSuffix: ''
-description: ABD kamu uç noktaları, Intune için gözden geçirin.
+description: Intune için ABD devlet bitiş noktalarını gözden geçirin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4712c2958e2beee8853ad0d2620414d823da327
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 9828b04ae30d8f35313564b93dfc9b997795bf76
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804503"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306715"
 ---
-# <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune ABD kamu uç noktaları
+# <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune için ABD devlet uç noktaları
 
-Bu sayfada Intune dağıtımlarınızı proxy ayarları için gereken ABD kamu uç noktaları listelenir.
+Bu sayfada, Intune dağıtımlarınızdaki ara sunucu ayarları için gereken ABD kamu uç noktaları listelenir.
 
 Güvenlik duvarı ve ara sunucular arkasındaki cihazları yönetmek için Intune iletişimini etkinleştirmeniz gerekir.
 
@@ -44,15 +44,15 @@ Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hiz
 |*.manage.microsoft.us | 52.243.26.209 <br> 52.247.173.11 <br> 52.227.183.12 <br>52.227.180.205 <br> 52.227.178.107 <br> 13.72.185.168 <br> 52.227.173.179 <br> 52.227.175.242 <br> 13.72.39.209 <br> 52.243.26.209 <br> 52.247.173.11 |
 | enterpriseregistration.microsoftonline.us | 13.72.188.239 <br> 13.72.55.179 |
 
-## <a name="us-government-customer-designated-endpoints"></a>ABD kamu müşterileri, uç noktaları atanan:
-- Azure portalı: https://portal.azure.us/ 
-- Office 365: https://portal.office365.us/ 
-- Intune Şirket portalı: https://portal.manage.microsoft.us/ 
+## <a name="us-government-customer-designated-endpoints"></a>ABD devlet müşteri tarafından belirlenen uç noktalar:
+- Azure Portal: https:\//Portal.Azure.us/ 
+- Office 365: https:\//Portal.office365.us/ 
+- Intune Şirket Portalı: https:\//Portal.Manage.Microsoft.us/ 
 
-## <a name="partner-service-endpoints-that-intune-depends-on"></a>Intune bağımlı iş ortağı hizmet uç noktaları:
-- AAD eşitleme hizmeti: https://syncservice.gov.us.microsoftonline.com/DirectoryService.svc
-- STS Evo: https://login.microsoftonline.us
-- Dizin Proxy: https://directoryproxy.microsoftazure.us/DirectoryProxy.svc
-- AAD Graph: https://directory.microsoftazure.us ve https://graph.microsoftazure.us
-- MS Graph: https://graph.microsoft.us
-- ADR: https://enterpriseregistration.microsoftonline.us
+## <a name="partner-service-endpoints-that-intune-depends-on"></a>Intune 'un bağımlı olduğu iş ortağı hizmeti uç noktaları:
+- AAD eşitleme hizmeti: https:\//SyncService.gov.us.microsoftonline.com/DirectoryService.svc
+- EVO STS: https:\//Login.microsoftonline.us
+- Dizin proxy 'si: https\/:/directoryproxy.MicrosoftAzure.us/DirectoryProxy.svc
+- AAD grafiği: https:\//Directory.MicrosoftAzure.us ve https:\//Graph.MicrosoftAzure.us
+- MS Graph: https:\//Graph.Microsoft.us
+- Adrs: https:\//enterpriseregistration.microsoftonline.us
