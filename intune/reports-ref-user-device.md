@@ -1,7 +1,7 @@
 ---
 title: Kullanıcı Cihaz İlişkisi - Intune Veri Ambarı
 titleSuffix: Microsoft Intune
-description: UserDeviceAssociation varlığı kuruluşunuzdaki kullanıcı cihaz ilişkilerini içerir.
+description: UserDeviceAssociation varlığı, kuruluşunuzdaki Kullanıcı cihaz ilişkilendirmelerini içerir.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
@@ -17,28 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7401b5da7629addf03498afd44033a59839d39e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8d24716f65d5ff8afba5fc0a89cfef082712429
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045330"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313681"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Kullanıcı Cihaz İlişkisi varlığı için başvuru
 
-**UserDeviceAssociation** varlığı kuruluşunuzdaki kullanıcı cihaz ilişkilerini içerir.
+**Userdeviceassociation** varlığı, kuruluşunuzdaki Kullanıcı cihaz ilişkilendirmelerini içerir.
 
-## <a name="userdeviceassociation"></a>UserDeviceAssociation
+## <a name="userdeviceassociations"></a>userDeviceAssociations
 
 
 |        Ad        |                                           Açıklama                                            |        Örnek         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
-|      UserKey       |              Kullanıcının veri ambarındaki benzersiz tanımlayıcısı. (Yedek anahtar).               |          123           |
+|      userKey       |              Kullanıcının veri ambarındaki benzersiz tanımlayıcısı. (Yedek anahtar).               |          123           |
 |     DeviceKey      |                      Cihazın veri ambarındaki benzersiz tanımlayıcısı.                      |          123           |
-| CreatedDateTimeUTC |           Kullanıcı cihaz ilişkisinin oluşturulduğu tarih ve saat. UTC biçimini kullanır.           | 23.11.2016 12:00:00 |
+| createdDateTimeUTC |           Kullanıcı cihaz ilişkisinin oluşturulduğu tarih ve saat. UTC biçimini kullanır.           | 23.11.2016 12:00:00 |
 |     IsDeleted      | Kullanıcının cihaz kaydını kaldırdığını ve ilişkinin artık geçerli olmadığını gösterir. |       True/False       |
-|  EndedDateTimeUTC  |              IsDeleted değerinin <strong>True</strong> olarak değiştirildiği UTC diliminde saat.               | 23.06.2017 12:00:00 |
+|  endedDateTimeUTC  |              IsDeleted değerinin <strong>True</strong> olarak değiştirildiği UTC diliminde saat.               | 23.06.2017 12:00:00 |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Daha fazla bilgi edinin [Intune veri ambarı](reports-nav-create-intune-reports.md).
+- [Intune veri ambarı](reports-nav-create-intune-reports.md)hakkında daha fazla bilgi edinin.

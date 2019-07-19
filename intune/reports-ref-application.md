@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ceb2b830dc7e403bd138903cf61c80291a0753f2
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882565"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313807"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -34,35 +34,35 @@ ms.locfileid: "67882565"
 - Uygulamanın yönetilen yazılım türleri, örneğin **sepet** veya **masaüstü**
 - Uygulamanın Volume Purchasing Program (VPP) durumu
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-**AppRevision** varlığı, uygulamaların tüm sürümlerini listeler.
+**appRevision** varlığı, uygulamaların tüm sürümlerini listeler.
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | AppKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
-| ApplicationId |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| Gözden geçirme |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
-| Başlık |Uygulama başlığı. |Excel |
-| Yayımcı |Uygulama yayımcısı. |Microsoft |
+| Uygulama |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
+| Uncaya |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
+| title |Uygulama başlığı. |Excel |
+| publisher |Uygulama yayımcısı. |Microsoft |
 | UploadState |Uygulamanın karşıya yüklenme durumu. |1\. |
 | AppTypeKey |Aşağıdaki bölümde açıklanan AppType özelliğine başvuru. | |
 | VppProgramTypeKey |Aşağıda açıklanan VppProgramType özelliğine başvuru. | |
 | CreationTime |Düzeltmenin oluşturulduğu zaman. |23.11.2016 12:00:00 |
 | ModifiedTime |Bu düzeltmeyle ilgili herhangi bir şeyin en son değiştirildiği an. |23.11.2016 12:00:00 |
-| Boyut |İkili boyutu. | |
-| StartDateInclusiveUTC |Bu uygulama düzeltmesi, veri ambarında oluşturulduğunda tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+| size |İkili boyutu. | |
+| startDateInclusiveUTC |Bu uygulama düzeltmesi, veri ambarında oluşturulduğunda tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 | EndDateExclusiveUTC |Bu uygulama düzeltmesi kullanımdan kalktığında tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
-| IsCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir. |Doğru/Yanlış |
+| IsCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir. |True/False |
 | RowLastModifiedDateTimeUTC |Bu uygulama sürümü, veri ambarında son değiştirildiğinde tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 
-## <a name="apptypes"></a>AppTypes
+## <a name="apptypes"></a>appTypes
 
-**AppTypes** varlığı, bir uygulamanın yükleme kaynağını listeler.
+**appTypes** varlığı, bir uygulamanın yükleme kaynağını listeler.
 
 | Özellik  | Açıklama |
 |---------|------------|
-| AppTypeID |Tür kimliği |
+| Apptypeıd |Tür kimliği |
 | AppTypeKey |Anahtar için yedek anahtar |
 | AppTypeName |Uygulama türü |
 
@@ -85,13 +85,13 @@ ms.locfileid: "67882565"
 | 12 |Windows Phone LOB uygulaması | Bir Windows Phone iş kolu uygulaması. |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-**VppProgramTypes** varlığı, bir uygulama için olası VPP program türlerini listeler.
+**vppProgramType** varlığı, bir uygulama için olası VPP program türlerini listeler.
 
 | Özellik  | Açıklama |
 |---------|------------|
-| VppProgramTypeID | Tür kimliği. |
+| Vppprogramtypeıd | Tür kimliği. |
 | VppProgramTypeKey | Anahtar için vekil anahtar. |
 | VppProgramTypeName | VPP Program türü. |
 
@@ -105,27 +105,27 @@ ms.locfileid: "67882565"
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>Applicationenvanterler
 
-**ApplicationInventory** varlığı, envanter toplandığında cihazda bulunan uygulamaları listeler.
+**Applicationınventory** varlığı, envanter koleksiyonu sırasında cihazda bulunan uygulamaları listeler.
 
 | Özellik  | Açıklama |
 |---------|------------|
 | DeviceKey | Bu, Intune cihaz kimliğini içeren Cihaz tablosuna bir başvurudur. |
-| DateKey | Envanterin alındığı günü gösteren tarih tablosuna başvuru. |
-| ApplicationName | Uygulama adı. |
+| dateKey | Envanterin alındığı günü gösteren tarih tablosuna başvuru. |
+| applicationName | Uygulama adı. |
 | ApplicationVersion | Uygulamanın sürümü. |
-| BundleSize | Uygulamanın bayt cinsinden boyutu. |
+| Paketleme Taboyutu | Uygulamanın bayt cinsinden boyutu. |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-**MobileAppInstallState** varlığı, mobil uygulama cihazları, kullanıcıları veya her ikisini de içeren bir gruba atandıktan sonra bu uygulamanın yükleme durumunu gösterir.
+**Mobileappınstallstate** varlığı, bir mobil uygulamanın cihaz, Kullanıcı veya her ikisini de içeren bir gruba atandıktan sonra yüklenmesi durumunu temsil eder.
 
 | Özellik | Açıklama |
 |---|---|
-| AppInstallStateKey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
-| AppInstallState | Uygulama yükleme durumunun Enum değeri. |
-| AppInstallStateName | Uygulama yükleme durumunun adı. |
+| Appınstallstatekey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
+| Appınstallstate | Uygulama yükleme durumunun Enum değeri. |
+| Appınstallstatename | Uygulama yükleme durumunun adı. |
 
 
 

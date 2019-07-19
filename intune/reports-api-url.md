@@ -1,7 +1,7 @@
 ---
 title: Intune Veri Ambarı API uç noktası
 titleSuffix: Microsoft Intune
-description: Bu başvuru konusunda Microsoft Intune veri ambarı API URL'si yapısını açıklar. Filtre örnekler verilmiştir.
+description: Bu başvuru konusu Microsoft Intune veri ambarı API 'SI yapısını açıklar. Filtre örnekleri verilmiştir.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648792"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313738"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
 
@@ -51,7 +51,7 @@ Bu URL aşağıdaki öğeleri içerir:
 | Öğe | Örnek | Açıklama |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | Temel URL, Azure portalında Veri Ambarı API’si dikey penceresinde bulunabilir. |
-| varlık-koleksiyonu | tarihler | OData varlık koleksiyonu adı. Veri modelindeki koleksiyonlar ve varlıklar hakkında daha fazla bilgi için bkz. [Veri Modeli](reports-ref-data-model.md). |
+| varlık-koleksiyonu | devicePropertyHistories | OData varlık koleksiyonu adı. Veri modelindeki koleksiyonlar ve varlıklar hakkında daha fazla bilgi için bkz. [Veri Modeli](reports-ref-data-model.md). |
 | api-sürümü | beta | Sürüm, erişilecek API’nin sürümüdür. Daha fazla bilgi için bkz. [Sürüm](reports-api-url.md#api-version-information). |
 | maxhistorydays | 7 | (İsteğe bağlı) Geçmişin alınacağı en fazla gün sayısı. Bu parametre herhangi bir koleksiyon için sağlanabilir ancak yalnızca anahtar özelliğinin bir parçası olarak `dateKey` içeren koleksiyonlarda geçerli olacaktır. Daha fazla bilgi için [DateKey Aralık Filtreleri](reports-api-url.md#datekey-range-filters)’ne bakın. |
 
@@ -63,7 +63,7 @@ Beta sürümünü kullanarak Veri Ambarı’nın en yeni işlevlerini deneyebili
 
 ## <a name="odata-query-options"></a>OData sorgu seçenekleri
 
-Geçerli sürümü aşağıdaki OData sorgu parametrelerini destekler: `$filter`, `$select`, `$skip,` ve `$top`. İçinde `$filter`, yalnızca `DateKey` veya `RowLastModifiedDateTimeUTC` sütunları geçerlidir ve diğer özellikleri bir hatalı istek tetikleyecek desteklenmiyor olabilir.
+Geçerli sürüm, aşağıdaki OData sorgu parametrelerini `$filter`destekler: `$skip,` , `$select`ve `$top`. ' `$filter`De, `DateKey` yalnızca `RowLastModifiedDateTimeUTC` sütunlar geçerliyse veya bazı özellikler hatalı bir istek tetikleyeceğinden desteklenir.
 
 ## <a name="datekey-range-filters"></a>DateKey Aralık Filtreleri
 
@@ -75,7 +75,7 @@ Geçerli sürümü aşağıdaki OData sorgu parametrelerini destekler: `$filter`
 ## <a name="filter-examples"></a>Filtre örnekleri
 
 > [!NOTE]
-> Örnekler varsayar bugün filtre 21/2/2019.
+> Filtre örnekleri bugün 2/21/2019 olduğunu varsayar.
 
 |                             Filtre                             |           Performansı En İyi Duruma Getirme           |                                          Açıklama                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
@@ -83,4 +83,4 @@ Geçerli sürümü aşağıdaki OData sorgu parametrelerini destekler: `$filter`
 |    `$filter=DateKey eq 20180214`                                 |    Tam                                      |    `DateKey` ile 20180214’e eşit veri döndürülür.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Tam                                      |    `DateKey` ile 20180214 ve 20180220 arasında veri döndürülür.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Tam                                      |    `DateKey` ile 20180214’e eşit veri döndürülür. `maxhistorydays` yoksayılır.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Tam                                       |    Dönüş verileri ile `RowLastModifiedDateTimeUTC` büyüktür veya eşittir `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Tam                                       |    İle `RowLastModifiedDateTimeUTC` döndürülen veriler şuna eşit veya daha büyük`2018-02-21T23:18:51.3277273Z`                             |

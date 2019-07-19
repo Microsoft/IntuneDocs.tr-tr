@@ -17,49 +17,49 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7049437eff56671b210b72133ab7a41a40335f9e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 70802626c79f11748e81c39afdd8bc8c5d0622b3
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882527"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313781"
 ---
-# <a name="reference-for-intune-management-extension"></a>Intune Yönetim Uzantısı için başvuru
+# <a name="reference-for-intune-management-extensions"></a>Intune yönetim uzantılarına yönelik başvuru
 
-**IntuneManagementExtension** kategorisi, mobil cihazlar için aşağıdaki gibi bilgileri izleyen varlıklar içerir:
+**Intunemanagemenlersions** kategorisi, mobil cihazlar için şu gibi bilgileri izleyen varlıklar içerir:
 
 - IntuneManagementExtension sürümleri
 - IntuneManagementExtension yükleme durumu
 
-## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
+## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 
-**IntuneManagementExtensionVersion** varlığı, IntuneManagementExtension tarafından kullanılan tüm sürümleri listeler.
+**Intunemanagemenısionversion** varlığı, ıntunemanagemenlersions tarafından kullanılan tüm sürümleri listeler.
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
-| ExtensionVersionKey |IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1\. |
+| ExtensionVersionKey |Intunemanagemenmalesions sürümünün benzersiz tanıtıcısı. | 1\. |
 | ExtensionVersion |4 basamaklı sürüm numarası. |1.0.2.0 |
 
-## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
+## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
 
-**IntuneManagementExtensionHealthState**, IntuneManagementExtension varlığının olası tüm sistem durumlarını listeler.
+**Intunemanagemenısionhealthstate** , ıntunemanagemensions 'in tüm olası sistem durumlarını listeler.
 
 | Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | ExtensionStateKey |Sistem durumunun benzersiz tanımlayıcısı. | 2 |
 | ExtensionState |IntuneManagementExtension sistem durumu. | Sorunsuz |
 
-## <a name="intunemanagementextension"></a>IntuneManagementExtension
+## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 
-**IntuneManagementExtension**, günlük olarak her bir Windows 10 cihazın IntuneManagementExtension durumunu listeler.
+**Intunemanagementextension** , günlük her Windows 10 cihazında ıntunemanagemenlersions sistem durumunu listeler.
 Son 60 günün verileri alınır. 
 
 
 |      Özellik       |                         Açıklama                         | Örnek |
 |---------------------|-------------------------------------------------------------|---------|
-|       DateKey       |               Tarihin benzersiz tanımlayıcısı.                |   123   |
+|       dateKey       |               Tarihin benzersiz tanımlayıcısı.                |   123   |
 |      TenantKey      |              Kiracının benzersiz tanımlayıcısı.               |   456   |
 |      DeviceKey      |              Cihazın benzersiz tanımlayıcısı.               |   789   |
-| ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. |    1\.    |
+| ExtensionVersionKey | Intunemanagementextension sürümünün benzersiz tanıtıcısı. |    1    |
 |  ExtensionStateKey  |             Sistem durumunun benzersiz tanımlayıcısı.              |    2    |
 

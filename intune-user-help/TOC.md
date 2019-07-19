@@ -12,7 +12,7 @@
 ### [Android cihazınızı neden kaydetmelisiniz?](why-enroll-android-device.md)
 ### Cihazınızı kaydedin
 #### [Android cihazınızı kaydetme](enroll-device-android-company-portal.md)  
-#### [Android iş profili ile kaydolma](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Android iş profili ile kaydolma](enroll-device-android-work-profile.md)
 #### [Microsoft Intune uygulaması ile kaydolma](enroll-device-android-microsoft-intune-app.md)
 ### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-android.md)
 ### [Cihazınızı şifreleme](encrypt-your-device-android.md)
