@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a4f81f29fea9008c7dd47902812141db8448bc3
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 9c13ebdd6cf908a62c99d4c81443c94ce6a07d8e
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735710"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353833"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Android kurumsal adanmış cihazlarınızı veya tam olarak yönetilen cihazlarınızı kaydetme (Önizleme)
 
@@ -33,15 +33,15 @@ ms.locfileid: "67735710"
 | Yakın Alan İletişimi | 5.1 |
 | Belirteç girişi | 6.0 |
 | QR kodu | 7.0 |
-| Zero Touch  | 8.0\* |
+| Zero Touch  | 8,0\* |
 
 \*Katılımcı üreticilerle.
 
-### <a name="enroll-by-using-near-field-communication-nfc"></a>Yakın Alan İletişimi (NFC) kullanarak kaydetme
+## <a name="enroll-by-using-near-field-communication-nfc"></a>Yakın Alan İletişimi (NFC) kullanarak kaydetme
 
 NFC 'yi destekleyen cihazlarda, özel olarak biçimlendirilmiş bir NFC etiketi oluşturarak cihazlarınızı sağlayabilirsiniz. Kendi uygulamanızı veya NFC etiketi oluşturan bir araç kullanabilirsiniz. Daha fazla bilgi için, bkz. Microsoft Intune ve [Google 'ın Android yönetim API 'si belgeleri](https://developers.google.com/android/management/provision-device#nfc_method) [Ile C tabanlı Android kurumsal cihaz kaydı](https://blogs.technet.microsoft.com/cbernier/2018/10/15/nfc-based-android-enterprise-device-enrollment-with-microsoft-intune/) .
 
-### <a name="enroll-by-using-a-token"></a>Belirteç kullanarak kaydetme
+## <a name="enroll-by-using-a-token"></a>Belirteç kullanarak kaydetme
 
 Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. Ayrıca, **AFW # kurulum** kayıt yöntemi kullanılırken, Android 6,1 ve ÜZERI sürümler QR kod taramasını de kullanabilir.
 
@@ -51,11 +51,11 @@ Android 6 ve üzeri cihazlarda cihaz kaydı için belirteci kullanabilirsiniz. A
 4. Google hüküm ve koşullarını kabul edin ve ardından **İLERİ**’yi seçin.
 5. Google oturum açma ekranında bir Gmail hesabı yerine **afw#setup** girin ve **İLERİ**’yi seçin.
 6. **Android Cihaz İlkesi** uygulaması için **YÜKLE**’yi seçin.
-7. Bu ilkenin yüklemesine devam edin.  Bazı cihazlar ek koşulların kabul edilmesini gerektirebilir. 
+7. Bu ilkenin yüklemesine devam edin.  Bazı cihazlar ek koşulların kabul edilmesini gerektirebilir.
 8. **Bu cihazı kaydet** ekranında cihazınızın QR kodunu taramasına izin verin veya belirteci el ile girmeyi seçin.
-9. Kaydı tamamlamak için ekrandaki istemleri takip edin. 
+9. Kaydı tamamlamak için ekrandaki istemleri takip edin.
 
-### <a name="enroll-by-using-a-qr-code"></a>QR kodu kullanarak kaydetme
+## <a name="enroll-by-using-a-qr-code"></a>QR kodu kullanarak kaydetme
 
 Android 7 ve üzeri cihazları kaydetmek için kayıt profilinden QR kodunu tarayabilirsiniz.
 
@@ -66,26 +66,26 @@ Android 7 ve üzeri cihazları kaydetmek için kayıt profilinden QR kodunu tara
 2. Android 7 ve 8 cihazlarda bir QR okuyucu yüklemeniz istenir. Android 9 ve üzeri cihazlarda bir QR okuyucu zaten yüklüdür.
 3. Kayıt profili QR kodunu taramak için QR okuyucuyu kullanın ve kaydı tamamlamak için ekrandaki istemleri takip edin.
 
-### <a name="enroll-by-using-google-zero-touch"></a>Google Zero Touch’ı kullanarak kaydetme
+## <a name="enroll-by-using-google-zero-touch"></a>Google Zero Touch’ı kullanarak kaydetme
 
-Google’ın Zero Touch sistemini kullanmak için cihazın bunu destekliyor olması ve hizmetin parçası olan bir sağlayıcıya bağlı olması gerekir.  Daha fazla bilgi için bkz. [Google’ın Zero Touch programı web sitesi](https://www.android.com/enterprise/management/zero-touch/). 
+Google’ın Zero Touch sistemini kullanmak için cihazın bunu destekliyor olması ve hizmetin parçası olan bir sağlayıcıya bağlı olması gerekir.  Daha fazla bilgi için bkz. [Google’ın Zero Touch programı web sitesi](https://www.android.com/enterprise/management/zero-touch/).
 
 1. Zero Touch konsolunda yeni bir Yapılandırma oluşturun.
 2. EMM DPC açılan menüsünde **Microsoft Intune**’u seçin.
 3. Google’ın Zero Touch konsolunda, aşağıdaki JSON’ı kopyalayıp DPC ek özellikler alanına yapıştırın. *YourEnrollmentToken* dizesini, kayıt profilinizin parçası olarak oluşturduğunuz kayıt belirteciyle değiştirin. Kayıt belirtecinin başına ve sonuna çift tırnak koymayı unutmayın.
 
     ```json
-    { 
-        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-    
-        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-    
-        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-    
-        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
-        } 
-    } 
+    {
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver",
+
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg",
+
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup",
+
+        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": {
+            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken"
+        }
+    }
     ```
 
 4. **Uygula**'yı seçin.

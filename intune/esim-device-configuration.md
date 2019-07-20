@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883266"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354393"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune - Genel önizleme’de eSIM hücresel profilleri yapılandırma
 
@@ -79,7 +79,7 @@ Hücresel etkinleştirme kodları cep telefonu operatörünüz tarafından virg�
 4. Etkinleştirme kodlarınızı içeren CSV dosyasını seçin.
 5. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-#### <a name="csv-file-requirements"></a>CSV dosyası gereksinimleri
+### <a name="csv-file-requirements"></a>CSV dosyası gereksinimleri
 
 Etkinleştirme kodlarını içeren csv dosyasıyla çalışırken cep telefonu operatörünüzün aşağıdaki gereksinimleri karşıladığından emin olun:
 
@@ -89,7 +89,7 @@ Etkinleştirme kodlarını içeren csv dosyasıyla çalışırken cep telefonu o
 - Her dosya tek bir cep telefonu operatörüne ve tüm etkinleştirme kodları aynı faturalama planına özel olmalıdır. Intune etkinleştirme kodlarını hedef cihazlara rastgele dağıtır. Belirli bir etkinleştirme kodunu hangi cihazın alacağı garanti edilemez.
 - Tek bir csv dosyasında en fazla 1000 etkinleştirme kodu içeri aktarılabilir.
 
-#### <a name="csv-file-example"></a>CSV dosyası örneği
+### <a name="csv-file-example"></a>CSV dosyası örneği
 
 1. CSV dosyasının ilk satırı ve ilk hücresi cep telefonu operatörü eSIM etkinleştirme hizmetinin URL’sidir. SM-DP+ (Abonelik Yöneticisi Veri Hazırlama sunucusu) olarak adlandırılır. URL, virgül içermeyen bir tam etki alanı adı (FQDN) olmalıdır.
 2. İkinci satır ve onun altındaki tüm satırlar iki değer içeren benzersiz tek kullanımlık etkinleştirme kodlarıdır:
@@ -129,7 +129,7 @@ eSIM etkinleştirme kodları tek bir kez kullanılır. Intune bir cihaza etkinle
 
 ## <a name="step-4-monitor-deployment"></a>Adım 4: Dağıtımı izle
 
-#### <a name="review-the-deployment-status"></a>Dağıtım durumunu gözden geçirme
+### <a name="review-the-deployment-status"></a>Dağıtım durumunu gözden geçirme
 
 Profili atadıktan sonra abonelik havuzunun dağıtım durumunu izleyebilirsiniz.
 
@@ -138,7 +138,7 @@ Profili atadıktan sonra abonelik havuzunun dağıtım durumunu izleyebilirsiniz
 3. **Cihaz yapılandırma** > **eSIM hücresel profilleri**’ni seçin. Mevcut tüm eSIM hücresel abonelik havuzlarınız listelenir.
 4. Abonelik seçin ve **Dağıtım Durumu**’nu gözden geçirin.
 
-#### <a name="check-the-profile-status"></a>Profil durumunu denetleme
+### <a name="check-the-profile-status"></a>Profil durumunu denetleme
 Cihaz profilinizi oluşturduktan sonra, Intune grafikler sağlar. Bu grafikler profilin durumunu, örneğin cihazlara başarıyla atandığını veya çakışma gösterip göstermediğini görüntüler.
 
 1. **Cihaz yapılandırma** > **eSIM hücresel profilleri**'ni ve mevcut aboneliği seçin.
@@ -167,7 +167,7 @@ Cihaz Durumu'nda görebildiğiniz cihazların ayrıntılı bir listesini izleyeb
     - **Hücresel durum**: Mobil operatör tarafından sunulan durum. Sorunları gidermek için cep telefonu operatörüyle iletişim kurun.
     - **Son iade**: Cihazın Intune ile son iletileceği Tarih
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Gerçek cihazda eSIM profil ayrıntılarını izleme
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Gerçek cihazda eSIM profil ayrıntılarını izleme
 
 1. Cihazınızda **Ayarlar**'ı açın > **Ağ ve İnternet**'e gidin.
 2. **Hücresel** > **eSIM profillerini yönet**'i seçin

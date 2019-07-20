@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7775a0aec8bdba648cf809e3f797ce5606b2ca4f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fa084d2a52e23273effdfb035b218c8ee1f7f2ab
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047407"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354048"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Eğitim için Intune ile Intune'daki tam cihaz yönetimi deneyimi arasında ne fark vardır?
 
@@ -41,7 +41,7 @@ Hem Intune hem de Eğitim için Intune ile şunları yapabilirsiniz:
 * Kullanıcılarınızın erişim ve paylaşım yöntemlerinin denetlenmesine yardımcı olarak kurum bilgilerinizi koruyabilirsiniz.
 * Cihazların ve uygulamaların güvenlik gereksinimlerine uygun olduğundan emin olabilirsiniz.
 
-### <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 * [90 günlük ücretsiz Intune denemesini](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1) kullanarak ürünle tanışın. Zaten erişiminiz varsa (https://intuneeducation.portal.azure.com) başlangıç kısmına gidin.
 * [Eğitim için Intune'u kullanmaya başlamanın](/intune-education/what-is-express-configuration) en hızlı yolu hakkında bilgi edinin.
 * Intune’un [teknik gereksinimlerini ve özelliklerini](/intune/supported-devices-browsers) derinlemesine öğrenin.

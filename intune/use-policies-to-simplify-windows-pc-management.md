@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: eb9f7eef1f7f0e4a712bdf3e8a3706374ac002a8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548818"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353322"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Windows bilgisayar yönetimini basitleştirmek için ilkeler kullanma
 
@@ -32,7 +32,7 @@ Windows masaüstü cihazlar üzerindeki Intune yazılım istemcisini çalıştı
 
 ![Windows bilgisayarlar için ilkeler şablonu](media/pc_policy_template.png)
 
-### <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center’ı yönetme
+## <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center’ı yönetme
 Kullanıcılar Intune yazılımı istemcisini **Microsoft Intune Center** olarak görür. Microsoft Intune Center kullanıcıların şunları yapmasını sağlar:
 
 - Şirket portalı üzerinden uygulamaları alma.
@@ -47,12 +47,12 @@ Microsoft Intune Center, tüm yönetilen bilgisayarlarda yüklüdür. Intune ilk
 
 |İlke ayarı|Ayrıntılar|
 |------------------|--------------------|
-|**Name**|Bilgisayarı yöneten yöneticinin adı.<br />En fazla uzunluk: 40 karakter|
-|**Telefon numarası**|Bilgisayarı yöneten yöneticinin telefon numarası.<br />En fazla uzunluk: 20 karakter|
-|**E-posta adresi**|Bilgisayarı yöneten yöneticinin e-posta adresi.<br />En fazla uzunluk: 40 karakter|
+|**Name**|Bilgisayarı yöneten yöneticinin adı.<br />Maksimum Uzunluk: 40 karakter|
+|**Telefon numarası**|Bilgisayarı yöneten yöneticinin telefon numarası.<br />Maksimum Uzunluk: 20 karakter|
+|**E-posta adresi**|Bilgisayarı yöneten yöneticinin e-posta adresi.<br />Maksimum Uzunluk: 40 karakter|
 |**Web sitesinin adı**|Kullanıcılar için destek web sitenizin adı.<br />> en fazla uzunluk: 40 karakter|
-|**Web sitesi URL'si**|Destek web sitenizin URL'si.<br />En fazla uzunluk: 150 karakter|
-|**Notlar**|Kullanıcılara gösterilen bir not.<br />En fazla uzunluk: 120 karakter|
+|**Web sitesi URL'si**|Destek web sitenizin URL'si.<br />Maksimum Uzunluk: 150 karakter|
+|**Notlar**|Kullanıcılara gösterilen bir not.<br />Maksimum Uzunluk: 120 karakter|
 
 Windows bilgisayarlarda yapılandırabileceğiniz ilkeler ve ayarlar hakkında bilgi için aşağıdaki kaynaklara bakın:
 
@@ -63,6 +63,6 @@ Windows bilgisayarlarda yapılandırabileceğiniz ilkeler ve ayarlar hakkında b
 - [Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - Bu ilkeler, yönetilen bilgisayarlarda Windows Güvenlik Duvarı ayarlarını yönetmeyi kolay hale getirir.
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

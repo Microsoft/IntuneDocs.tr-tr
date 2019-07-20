@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572528"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354009"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune’da Windows Güvenlik Duvarı ilkelerini kullanarak Windows bilgisayarlarının korunmasına yardımcı olma
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Bu konudaki bilgiler, yalnızca Intune yazılım istemcisini kullanarak bilgisayar olarak yönettiğiniz Windows masaüstü cihazlar için geçerlidir. Bkz yönetmek istiyorsanız Windows bilgisayarlar için Güvenlik Duvarı ayarlarını mobil cihaz olarak kaydedilen [Intune'da endpoint protection ayarları ekleme](endpoint-protection-configure.md).
+> Bu konudaki bilgiler, yalnızca Intune yazılım istemcisini kullanarak bilgisayar olarak yönettiğiniz Windows masaüstü cihazlar için geçerlidir. Mobil cihaz olarak kaydedilen Windows bilgisayarlarının güvenlik duvarı ayarlarını yönetmek istiyorsanız, bkz. [Intune 'da Endpoint Protection ayarları ekleme](endpoint-protection-configure.md).
 
 Microsoft Intune, Intune istemcisiyle yönettiğiniz Windows bilgisayarları çeşitli yollarla güvenli hale getirmenize yardımcı olabilir. Bu yollardan biri, bilgisayarlarda Windows Güvenlik Duvarı ayarlarını yapılandırmanıza olanak tanıyan ilkeler sağlamaktır.
 
@@ -140,5 +140,5 @@ Daha önce yapılandırılmış değerlerden bağımsız olarak belirli türlerd
 |**Windows Virtual PC**<br>(Windows 7 veya üzeri)|Sanal makinelerin diğer bilgisayarlarla iletişim kurmasına olanak tanır.|
 |**Taşınabilir Kablosuz Cihazlar**|Medya Aktarım Protokolü (MTP) ile ağ bağlantısı etkin kamera veya medya cihazı verilerinin yönetilen bilgisayarlara aktarılmasına olanak tanır. Bu ayar SSDP ve UPnP ağ protokollerini kullanır.|
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 [Windows bilgisayarlarını koruma ilkeleri](policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47e1a3870e1da1514ad07e8dad5c6117ffc108a9
-ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
+ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
+ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67842711"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341351"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune için geliştirme sırasında-Temmuz 2019
 
@@ -86,9 +86,6 @@ Windows 10 cihaz yapılandırma profilleri oluşturun (**cihaz yapılandırma** 
 
 Şunun için geçerlidir: 
 - Windows 10 ve üzeri
-
-### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>MacOS için dosya kasasını yönetme   <!--  3858502 + 1210104   -->
-MacOS cihazları için dosya Kasası anahtar şifrelemesini yönetmek üzere bir Intune Endpoint Protection cihaz yapılandırma profili kullanabilirsiniz. Bu, kurumsal cihazlarınızın şifreleme anahtarlarını Emanet, görüntüleme ve döndürme bilgilerini içerir. Son kullanıcılar bu anahtarları Şirket Portalı Web sitesinden alabilecektir.
 
 ### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender güvenlik duvarı için Gelişmiş ayarlar   <!--  1311949     -->
 Genel önizleme olarak, Windows Defender istemcileri üzerinde özel güvenlik duvarı kurallarını yönetmek için yakında Intune 'u kullanabilirsiniz.  

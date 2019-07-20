@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune için ağ uç noktaları
 titleSuffix: ''
-description: Intune için uç noktaları inceleyin.
+description: Intune için uç noktaları gözden geçirin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 026536b1f0c059808220273ccffefacc28b80ae0
-ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.openlocfilehash: 8f95e16b9c500f9c4e0750fc0453f5ed1fcea129
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031603"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353972"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune için ağ uç noktaları
 
-IP adresleri ve Intune dağıtımlarınızı proxy ayarları için gereken bağlantı noktası ayarları bu sayfada listelenir.
+Bu sayfada, Intune dağıtımlarınızdaki ara sunucu ayarları için gereken IP adresleri ve bağlantı noktası ayarları listelenir.
 
 Yalnızca bulutta yer alan bir hizmet olan Intune, sunucular veya ağ geçitleri gibi şirket içi altyapıya ihtiyaç duymaz.
 
 Güvenlik duvarı ve ara sunucular arkasındaki cihazları yönetmek için Intune iletişimini etkinleştirmeniz gerekir.
 
-- Proxy sunucusu hem de desteklemelidir **HTTP (80)** ve **HTTPS (443)** Intune istemcileri iki protokolü de kullandığından. Windows Information Protection, bağlantı noktası 444 kullanır.
-- (Yazılım güncelleştirmeleri için Klasik pc Aracısı yükleme) gibi bazı görevler için Intune için Manage.microsoft.com adresine kimliği doğrulanmamış proxy sunucusu erişimi gerektirir.
+- Intune istemcileri her iki protokolü de kullandığından, proxy sunucusu hem **http (80)** hem de **https (443)** desteğine sahip olmalıdır. Windows Information Protection 444 numaralı bağlantı noktasını kullanır.
+- Bazı görevler (Klasik bilgisayar Aracısı için yazılım güncelleştirmelerini indirme gibi) için Intune, manage.microsoft.com için kimliği doğrulanmamış proxy sunucu erişimi gerektirir
 
 Ara sunucu ayarlarını istemci bilgisayarlardan değiştirebilirsiniz. Belirtilen ara sunucu arkasında yer alan tüm istemci bilgisayarların ayarlarını değiştirmek için Grup İlkesi ayarlarını da kullanabilirsiniz.
 
@@ -81,8 +81,8 @@ Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hiz
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
 
 
-### <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>Powershell betikleri ve Win32 uygulamaları için ağ gereksinimleri
-Powershell betikleri veya Win32 uygulamalarını dağıtmak için Intune kullanıyorsanız, kiracınızın şu anda bulunduğu uç noktalarına erişimi vermeniz gerekir.
+## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>PowerShell betikleri ve Win32 uygulamaları için ağ gereksinimleri
+PowerShell betikleri veya Win32 uygulamaları dağıtmak için Intune kullanıyorsanız, kiracınızın Şu anda bulunduğu uç noktalara da erişim vermeniz gerekir.
 
 |ASU | Depolama adı | CDN |
 | --- | --- |--- |
@@ -108,33 +108,33 @@ Powershell betikleri veya Win32 uygulamalarını dağıtmak için Intune kullan�
 | AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
 
-### <a name="windows-push-notification-services-wns"></a>Windows anında iletilen bildirim servisi (WNS)
-Yönetilen mobil cihaz Yönetimi (MDM) kullanarak Windows Intune tarafından yönetilen cihazlar için cihaz eylemleri ve diğer hemen etkinlikleri, Windows anında bildirim Hizmetleri (WNS) kullanımı gerektirir. Daha fazla bilgi için [Kurumsal güvenlik duvarlarından izin vererek Windows bildirim trafiği](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    
+## <a name="windows-push-notification-services-wns"></a>Windows Push Bildirim Hizmetleri (WNS)
+Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune ile yönetilen Windows cihazları için, cihaz eylemleri ve diğer anında Etkinlikler Windows Push Bildirim Hizmetleri (WNS) kullanılmasını gerektirir. Daha fazla bilgi için bkz. [Kurumsal güvenlik duvarları üzerinden Windows Notification trafiğine Izin verme](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    
 
-### <a name="delivery-optimization-port-requirements"></a>Teslim iyileştirme bağlantı noktası gereksinimleri
+## <a name="delivery-optimization-port-requirements"></a>Teslim Iyileştirme bağlantı noktası gereksinimleri
 
-#### <a name="port-requirements"></a>Bağlantı noktası gereksinimleri
-Eşler arası trafiği için TCP/IP'yi veya NAT geçişi (isteğe bağlı olarak, Teredo) için 3544 7680 teslim iyileştirme kullanır. İstemci hizmet iletişim için HTTP veya HTTPS bağlantı noktası üzerinden kullanır 80/443'tür.
+### <a name="port-requirements"></a>Bağlantı noktası gereksinimleri
+Uçtan uca trafik için, teslim Iyileştirme, NAT çapraz geçişi (isteğe bağlı Teredo) için TCP/IP veya 3544 7680 kullanır. İstemci hizmeti iletişimi için 80/443 bağlantı noktası üzerinden HTTP veya HTTPS kullanılır.
 
-#### <a name="proxy-requirements"></a>Ara sunucu gereksinimleri
-Teslim iyileştirme'yi kullanmak için bayt aralığı isteklerini izin vermeniz gerekir. Daha fazla bilgi için [Proxy gereksinimleri için Windows Update](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting).
+### <a name="proxy-requirements"></a>Proxy gereksinimleri
+Teslim Iyileştirme 'yi kullanmak için, bayt aralığı isteklerine izin vermeniz gerekir. Daha fazla bilgi için bkz. [Windows Update Için proxy gereksinimleri](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting).
 
-#### <a name="firewall-requirements"></a>Güvenlik duvarı gereksinimleri
-Teslim iyileştirme desteklemek için güvenlik duvarı üzerinden aşağıdaki ana bilgisayar adlarını sağlar.
-İstemcileri ve teslim iyileştirme bulut hizmeti arasında iletişim için:
+### <a name="firewall-requirements"></a>Güvenlik duvarı gereksinimleri
+Dağıtım Iyileştirmesini desteklemek için güvenlik duvarınız aracılığıyla aşağıdaki ana bilgisayar adlarının kullanılmasına izin verin.
+İstemcilerle teslim Iyileştirme bulut hizmeti arasındaki iletişim için:
 - *.do.dsp.mp.microsoft.com
 
-Teslim iyileştirme meta verileri için:
+Teslim Iyileştirme meta verileri için:
 - *.dl.delivery.mp.microsoft.com
 - *.emdl.ws.microsoft.com
 
-### <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
+## <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
 
 
-|İçin kullanılan|Ana bilgisayar adı (IP adresi/alt ağ)|Protocol|Port|
+|Kullanıldığı yer|Ana bilgisayar adı (IP adresi/alt ağ)|Protocol|Port|
 |-----|--------|------|-------|
 |Apple sunucularından içerik alma ve görüntüleme|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
 |APNS sunucularıyla iletişim|#-courier.push.apple.com<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|    TCP     |  5223 ve 443  |
-|World Wide Web erişim dahil olmak üzere çeşitli işlevlere iTunes depolayın, macOS uygulama mağazası, iCloud, Mesajlaşma, vs. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 veya 443   |
+|World Wide Web, iTunes Mağazası, macOS App Store, iCloud, mesajlaşma vb. erişim dahil çeşitli işlevler |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 veya 443   |
 
 Daha fazla bilgi için şu Apple belgelerine bakın: [Apple yazılım ürünleri tarafından kullanılan TCP ve UDP bağlantı noktaları](https://support.apple.com/en-us/HT202944), [macOS, iOS ve iTunes sunucusu ana bilgisayar bağlantıları ve iTunes arka plan işlemleri hakkında](https://support.apple.com/en-us/HT201999) ve [macOS ve iOS istemcileriniz Apple anında iletme bildirimlerini almıyorsa](https://support.apple.com/en-us/HT203609).

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417ed2e7f151e187efd54a9fb079c966c056242a
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884854"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353655"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>OData akışına Power BI ile bir rapor oluşturma
 
 Bu makalede, Power BI Desktop kullanarak nasıl etkileşimli bir filtre ile ağaç harita görselleştirmesi oluşturulacağı açıklanır. Örneğin malı işlerden sorumlu genel müdürünüz, şirkete ait cihazlarla kişisel cihazların genel dağılımını öğrenmek isteyebilir. Bu ağaç harita, toplam cihaz türü sayısı hakkında bilgi sağlar. Kaç tane iOS, Android ve Windows cihazın şirkete ait veya kişisel cihaz olduğunu gözden geçirebilirsiniz.
 
-### <a name="overview-of-creating-the-chart"></a>Grafiği oluşturmaya genel bakış
+## <a name="overview-of-creating-the-chart"></a>Grafiği oluşturmaya genel bakış
 
 Bu grafiği oluşturmak için şunları yapmanız gerekir:
 1. Hala yüklemediyseniz Power BI Desktop yükleyin.

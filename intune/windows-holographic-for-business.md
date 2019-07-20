@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 2f3c36e0fac3784828c6a4c0bbf077dea83da369
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045995"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354446"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Yönetme ve farklı bir cihaz yönetim özellikleri, Windows Holographic ve HoloLens cihazları Intune ile kullanma
 
@@ -33,11 +33,11 @@ Windows Holographic cihazlarını Intune ile birlikte kullanmak için bir Sürü
 
 Azure Active Directory (AD), Windows Holographic for Business çalıştıran cihazlarınızı yönetmeye ve denetlemeye yardımcı olmak için mükemmel bir kaynaktır. Intune ve Azure AD kullanarak şunları yapabilirsiniz: 
 
-- **[Cihazları Azure Active Directory'ye katılmasını](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: Azure Active Directory (AD), Windows Holographic for Business çalıştıran cihazlar dahil olmak üzere iş ait Windows 10 cihazlarınızı ekleyebilirsiniz. Bu özellik, Azure AD’nin cihazı denetlemesini sağlar. Kullanıcıların şirket kaynaklarına güvenlik ve uyumluluk standartlarına uygun cihazlardan eriştiğini doğrulamaya yardımcı olur.
+- **[Cihazları Azure Active Directory 'A ekleyin](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : Azure Active Directory (AD) ' de, Windows holographic for Business çalıştıran cihazlar dahil olmak üzere, işe ait Windows 10 cihazlarınızı ekleyebilirsiniz. Bu özellik, Azure AD’nin cihazı denetlemesini sağlar. Kullanıcıların şirket kaynaklarına güvenlik ve uyumluluk standartlarına uygun cihazlardan eriştiğini doğrulamaya yardımcı olur.
 
   [Azure AD'de cihaz Yönetimi](https://docs.microsoft.com/azure/active-directory/devices/overview) daha fazla ayrıntı sağlar.
 
-- **[Windows cihazlar için toplu kayıt](windows-bulk-enroll.md)**: Çok sayıda yeni Windows cihazını Azure Active Directory (AD) ve Intune'a katılmasını sağlayabilirsiniz. Bu özellik, toplu kayıt olarak adlandırılır ve sağlama paketleri kullanır. Bu paketler, Windows Holographic for Business çalıştıran cihazları Azure AD kiracınıza dahil eder ve Intune’a kaydeder.
+- **[Windows cihazları Için toplu kayıt](windows-bulk-enroll.md)** : Çok sayıda yeni Windows cihazını Azure Active Directory (AD) ve Intune 'a katabilirsiniz. Bu özellik, toplu kayıt olarak adlandırılır ve sağlama paketleri kullanır. Bu paketler, Windows Holographic for Business çalıştıran cihazları Azure AD kiracınıza dahil eder ve Intune’a kaydeder.
 
 ## <a name="company-portal"></a>Şirket Portalı
 **[Şirket Portalı uygulamasını yapılandırma](company-portal-app.md)**
@@ -54,9 +54,9 @@ Intune; kullanıcıların şirket verilerine erişmesi, cihaz kaydetmesi, uygula
 ## <a name="compliance-policy"></a>Uyumluluk ilkesi
 **[Cihaz uyumluluğu ilkesi oluşturma](compliance-policy-create-windows.md)**
 
-Uyumluluk ilkeleri, cihazların uyumlu olmak için karşılaması gereken kurallar ve ayarlardır. Bu ilkeleri koşullu erişimle uyumlu cihazların şirket kaynaklarına erişimini engellemek için kullanın. Intune’da Windows Holographic for Business çalıştıran cihazlar için erişime izin vermek veya erişimi engellemek üzere uyumluluk ilkeleri oluşturun. Örneğin BitLocker’ın etkin olmasını gerektiren bir ilke oluşturabilirsiniz.
+Uyumluluk ilkeleri, cihazların uyumlu olmak için karşılaması gereken kurallar ve ayarlardır. Uyumsuz cihazların şirket kaynaklarına erişimini engellemek için bu ilkeleri koşullu erişimle birlikte kullanın. Intune’da Windows Holographic for Business çalıştıran cihazlar için erişime izin vermek veya erişimi engellemek üzere uyumluluk ilkeleri oluşturun. Örneğin BitLocker’ın etkin olmasını gerektiren bir ilke oluşturabilirsiniz.
 
-Ayrıca bkz. **[Uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md)**.
+Ayrıca bkz. **[Uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md)** .
 
 ## <a name="deploy-and-manage-apps"></a>Uygulamaları dağıtma ve yönetme
 **[Intune’a uygulama ekleme](apps-add.md)**
@@ -85,11 +85,11 @@ Intune’da BT yöneticilerinin gerek cihazda yerel olarak gerekse Azure portal�
 
 Windows Holographic for Business çalıştıran cihazlar kullanırken şu eylemler kullanılabilir: 
 
-- **[Temizleme](devices-wipe.md#wipe)**: **Silme** eylemi, cihazı Intune'dan kaldırır ve cihazı fabrika varsayılan ayarlarına geri yükler. Bu eylemi cihazı yeni bir kullanıcıya vermeden önce veya cihazın kaybolma/çalınma durumu söz konusu olduğunda kullanın.
+- **[Silme](devices-wipe.md#wipe)** : **Silme** eylemi cihazı Intune 'dan kaldırır ve cihazı fabrika varsayılan ayarlarına geri yükler. Bu eylemi cihazı yeni bir kullanıcıya vermeden önce veya cihazın kaybolma/çalınma durumu söz konusu olduğunda kullanın.
 
-- **[Devre dışı bırakma](devices-wipe.md#retire)**: **Devre dışı bırakma** eylemi, cihazı Intune'dan kaldırır. Ayrıca Intune tarafından atanmış yönetilen uygulama verilerini, ayarları ve e-posta profillerini de kaldırır. Kullanıcının kişisel verileri cihazda kalır.
+- **[Devre dışı bırak](devices-wipe.md#retire)** : **Devre dışı bırakma** eylemi, cihazı Intune 'dan kaldırır. Ayrıca Intune tarafından atanmış yönetilen uygulama verilerini, ayarları ve e-posta profillerini de kaldırır. Kullanıcının kişisel verileri cihazda kalır.
 
-- **[En son ilkeleri ve eylemleri almak için cihazları eşitleme](device-sync.md)**: **Eşitleme** eylemi, cihazı Intune ile hemen iade zorlar. Bir cihaz iade ettiğinde, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır. Bu özellik, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan doğrulamanıza ve ilkelerin sorunlarını gidermenize yardımcı olur.
+- **[En son ilkeleri ve eylemleri almak için cihazları eşitleyin](device-sync.md)** : **Eşitleme** eylemi, cihazı Intune 'a hemen iade etmeye zorlar. Bir cihaz iade ettiğinde, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır. Bu özellik, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan doğrulamanıza ve ilkelerin sorunlarını gidermenize yardımcı olur.
 
 **[Microsoft Intune cihaz yönetimi nedir?](device-management.md)** makalesi, Azure portalını kullanarak cihaz yönetmeyi öğrenmek iyi bir kaynaktır. 
 
@@ -105,30 +105,30 @@ Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre
 
 Profillerinizde bazı ayarları özelleştirmek, cihaz kısıtlamaları oluşturmak ve sanal özel ağ (VPN) ve Wi-Fi yapılandırmak için OMA-URI kullanabilirsiniz.
 
-#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Özel cihaz ayarları](custom-settings-windows-holographic.md)
+### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[Özel cihaz ayarları](custom-settings-windows-holographic.md)
 
 OMA-URI (Açık Mobil Birlik Tekdüzen Kaynak Tanımlayıcısı) ayarlarını yapılandırmak için Intune’da özel bir profil oluşturabilirsiniz. Windows Holographic for Business cihazlarınızda VPN’i etkinleştirmek veya Microsoft Update’te güncelleştirmeleri denetlemek gibi farklı özellikleri kontrol etmek için OMA-URI ayarlarını kullanın.
 
-#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Bilgi noktası modunu yapılandırma](kiosk-settings-holographic.md)
+### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Bilgi noktası modunu yapılandırma](kiosk-settings-holographic.md)
 
 Intune’un paylaşılan veya misafir bilgisayar özelliklerini kullanarak Windows Holographic for Business cihazları bilgi noktası olarak çalışacak şekilde yapılandırabilirsiniz. Bu cihazlar, tek uygulama (tekli uygulama bilgi noktası modu) veya birden fazla uygulama (çoklu uygulama bilgi noktası modu) çalıştırabilir.
 
-#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Cihaz kısıtlamaları](device-restrictions-windows-holographic.md)
+### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Cihaz kısıtlamaları](device-restrictions-windows-holographic.md)
 
 Cihaz kısıtlamaları; cihazlarınızda bir parola gerektirme, [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps)’dan uygulama indirme, Bluetooth’u etkinleştirme gibi pek çok farklı ayar ve özelliği denetlemenize olanak tanır. Bu kısıtlamalar bir Intune profilinde oluşturulur. Bu profil, Windows Holographic for Business çalıştıran birden fazla cihaza uygulanabilir.
 
-#### <a name="configure-vpnvpn-settings-configuremd"></a>[VPN’i yapılandırma](vpn-settings-configure.md)
+### <a name="configure-vpnvpn-settings-configuremd"></a>[VPN’i yapılandırma](vpn-settings-configure.md)
 
 Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Intune’da Windows Holographic for Business çalıştıran cihazlarınız için belirli ayarları barındıran bir VPN profili oluşturabilirsiniz. Örneğin tüm Windows Holographic for Business cihazların bağlantı türü olarak Citrix VPN kullanması için bir VPN profili oluşturabilirsiniz.
 
-#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi yapılandırma](wi-fi-settings-configure.md)
+### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi yapılandırma](wi-fi-settings-configure.md)
 
 Windows Holographic for Business cihazlarınıza kablosuz ağ ayarları atamak için bir Wi-Fi profili de oluşturabilirsiniz. Bir Wi-Fi profili atadığınızda son kullanıcılarınız, hiçbir ağ yapılandırmasına gerek kalmadan kuruluş ağ erişimi kazanır. Örneğin yalnızca Windows Holographic for Business cihazlarınıza adanmış bir Wi-Fi ağı oluşturabilirsiniz.
 
 ## <a name="shared-multi-user-devices"></a>Paylaşılan çok kullanıcılı cihazlar
 [Paylaşılan cihazlar](shared-user-device-settings-windows-holographic.md)
 
-, Microsoft HoloLens gibi Windows Holographic for Business çalıştıran cihazlar birden çok kullanıcı olması. Intune yönetim hesabı yerel depolama ile güç yönetimi gibi paylaşılan bu cihazlarda farklı özellikleri denetlemek için ayarlar içerir. Yapılandırma profilleri, farklı işletim sistemi kullanan cihazları için de uygulanabilir. Örneğin, cihazlar grubu aynı grupta RS2 ve RS3 çalıştıran cihazlara sahip olabilir.
+Microsoft HoloLens gibi Windows holographic for Business çalıştıran cihazların birden çok kullanıcısı olabilir. Intune, bu paylaşılan cihazlarda güç yönetimi, yerel depolama ve hesap yönetimi gibi farklı özellikleri denetlemeye yönelik ayarları içerir. Yapılandırma profilleri, farklı işletim sistemlerine sahip cihazlara de uygulanabilir. Örneğin, Devices grubu, RS2 ve RS3 çalıştıran cihazlara aynı grupta sahip olabilir.
 
 ## <a name="software-updates"></a>Yazılım güncelleştirmeleri
 **[Yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md)**

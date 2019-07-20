@@ -1,7 +1,7 @@
 ---
 title: Cihaz kaydıyla ilgili sorunları giderme
 titleSuffix: Microsoft Intune
-description: Microsoft Intune cihaz kayıt sorunlarının giderilmesiyle ilgili öneriler.
+description: Microsoft Intune 'de cihaz kaydı sorunlarını gidermeye yönelik öneriler.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b6cac9f10abf1347964ac8379938cb146877df56
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548098"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353378"
 ---
-# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydıyla ilgili sorunları giderme
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydı sorunlarını giderme
 
-Bu makalede, sorun giderme önerileri sağlanır [cihaz kaydı](device-enrollment.md) sorunları. Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](get-support.md).
+Bu makalede [cihaz kayıt](device-enrollment.md) sorunlarını gidermeye yönelik öneriler sunulmaktadır. Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](get-support.md).
 
 
 ## <a name="initial-troubleshooting-steps"></a>İlk sorun giderme adımları
@@ -55,7 +55,7 @@ Yönetilen cihaz kullanıcılarınız, gözden geçirmeniz için kayıt ve tanı
 Bu sorunlar, tüm cihaz platformlarında oluşabilir.
 
 ### <a name="device-cap-reached"></a>Cihaz sınırına ulaşıldı
-**Sorun:** Kullanıcı, kayıt sırasında bir hata alır (gibi **Şirket portalı geçici olarak devre dışı**) ve Configuration Manager'daki DMPdownloader.log hata içeren **DeviceCapReached**.
+**Sorun:** Kullanıcı kayıt sırasında bir hata alıyor ( **Şirket portalı geçici olarak kullanılamıyor**) ve DMPDownloader. log Configuration Manager, **devicecapulaşıldı**hatasını içerir.
 
 **Çözüm:**
 
@@ -80,7 +80,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 > Bir kullanıcı oturumu için Koşullu Erişim ilkesi zorunlu tutulduysa, söz konusu kullanıcı hesabı, Cihaz Kayıt Yöneticileri hesabına eklendiğinde kaydı tamamlayamaz.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Şirket Portalı Geçici Olarak Devre Dışı
-**Sorun:** Kullanıcılar bir **Şirket portalı geçici olarak devre dışı** cihazında hata.
+**Sorun:** Kullanıcılar cihazında **geçici olarak kullanılamayan Şirket portalı** bir hata alır.
 
 **Çözüm:**
 
@@ -95,13 +95,13 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 5. Kullanıcı başarıyla oturum açarsa, iOS cihazı Intune Şirket Portalı uygulamasını yüklemenizi ve kaydetmenizi ister. Bir Android cihazında kaydetmeyi yeniden denemeden önce Intune Şirket Portalı uygulamasını el ile yüklemeniz gerekir.
 
 ### <a name="mdm-authority-not-defined"></a>MDM yetkilisi tanımlı değil
-**Sorun:** Bir kullanıcı bir **MDM yetkilisi tanımlı değil** hata.
+**Sorun:** Kullanıcı **MDM yetkilisi tanımlı değil** hatası alır.
 
 **Çözüm:**
 
 1. MDM Yetkilisinin [uygun şekilde ayarlandığını](mdm-authority-set.md) doğrulayın.
     
-2. Kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun. Microsoft 365 Yönetim Merkezi'nde Active Directory bilgilerini kullanıcının UPN'sini eşleştiğini doğrulayabilirsiniz.
+2. Kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun. Kullanıcı UPN 'nin, Microsoft 365 yönetim merkezindeki Active Directory bilgileriyle eşleştiğini doğrulayabilirsiniz.
     UPN Active Directory bilgileriyle eşleşmiyorsa:
 
     1. Yerel sunucuda DirSync’i kapatın.
@@ -122,23 +122,23 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 
     4. En üstte **Yeni Sorgu**’yu seçin ve aşağıdaki sorguları yürütün:
 
-        - Tüm kullanıcıları görmek için:   `select * from [CM_ DBName].[dbo].[User_DISC]`
+        - Tüm kullanıcıları görmek için:`select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        - Belirli kullanıcıları görmek için burada % testuser1% yer tutucusu, aşağıdaki sorguyu kullanın username@domain.com aramak istediğiniz kullanıcının için:   `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        - Belirli kullanıcıları görmek için aşağıdaki sorguyu kullanın; burada% TestUser1%, aramak istediğiniz kullanıcı için bir username@domain.com yer tutucudur:`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         Sorguyu yazdıktan sonra **!Execute** komutunu seçin.
         Sonuçlar döndürüldüğünde, bulut kullanıcı kimliğine bakın.  Hiç kimlik bulunmazsa, kullanıcının Intune’u kullanma lisansı yok demektir.
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Şirket adı özel karakterler içeriyorsa ilke oluşturulamaz veya cihazlar kaydedilemez
-**Sorun:** İlke oluşturamıyor veya cihazları kaydetme.
+**Sorun:** İlke oluşturamaz veya cihaz kaydedemezsiniz.
 
-**Çözüm:** İçinde [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com/), şirket adından özel karakterleri kaldırın ve şirket bilgilerini kaydedin.
+**Çözüm:** [Microsoft 365 Yönetim merkezinde](https://admin.microsoft.com/), şirket adından özel karakterleri kaldırın ve şirket bilgilerini kaydedin.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Birden çok doğrulanmış etki alanınız olduğunda oturum açılamaz veya cihazlar kaydedilemez
-**Sorun:** İçin FS'nize ikinci bir doğrulanmış etki alanı eklediğinizde, bu sorun oluşabilir. İkinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir.
+**Sorun:** Bu sorun, ADFS 'nize ikinci bir doğrulanmış etki alanı eklediğinizde oluşabilir. İkinci etki alanının kullanıcı asıl adı (UPN) sonekini taşıyan kullanıcılar portallarda oturum açamayabilir veya cihaz kaydedemeyebilir.
 
 
-<strong>Çözüm:</strong> Microsoft Office 365 müşterileri AD ayrı bir örneğini dağıtmak için gerekli FS 2.0 Federasyon Hizmeti için her bir sonek varsa bunlar:
+<strong>Çözüm:</strong> Microsoft Office 365 müşterileri, her sonek için AD FS 2,0 Federasyon Hizmeti ayrı bir örneğini dağıtmaları gerekir:
 - AD FS 2.0 aracılığıyla çoklu oturum açma (SSO) kullanma
 - kuruluşlarında kullanıcı UPN sonekleri için birden çok en üst düzey etki alanına sahip olma (örneğin @contoso.com veya @fabrikam.com).
 
@@ -159,11 +159,11 @@ Son kullanıcıların Android cihazları Intune’a kaydederken karşılaşabile
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Cihazlar Intune hizmetini denetlemiyor ve Intune yönetici konsolunda "Uygun olmayan durumda" olarak görüntüleniyor
-**Sorun:** Android sürüm 4.4.x ve 5.x Intune hizmetini denetlemeyi durdurabiliyor durabilir çalıştıran bazı Samsung cihazlar. Hizmeti denetlemeyen cihazlar:
+**Sorun:** Android sürüm 4.4. x ve 5. x çalıştıran bazı Samsung cihazlar, Intune hizmetine iade etmeyi durdurabilir. Hizmeti denetlemeyen cihazlar:
 
 - Intune hizmetinden ilke, uygulama ve uzak komutları alamaz.
 - Yönetici konsolunda Yönetim Durumu olarak **Uygun olmayan durumda** görüntülenir.
-- Koşullu erişim ilkeleri tarafından korunan kullanıcılar şirket kaynaklarına erişimi kaybedebilir.
+- Koşullu erişim ilkeleriyle korunan kullanıcılar şirket kaynaklarına erişimi kaybedebilir.
 
 Belirli Samsung cihazlara yüklü gelen Samsung Smart Manager yazılımı, Şirket Portalı uygulamasını ve bileşenlerini devre dışı bırakabilmektedir. Şirket Portalı devre dışı bırakıldığında arka planda çalışamaz ve Intune hizmetine bağlanamaz.
 
@@ -208,7 +208,7 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 
 ### <a name="profile-installation-failed"></a>Profil yüklemesi başarısız oldu
-**Sorun:** Bir kullanıcı bir **profil yüklemesi başarısız oldu** Android cihazında hata.
+**Sorun:** Bir Kullanıcı bir Android cihazında **profil yüklemesi başarısız oldu** hatasını alıyor.
 
 **Çözüm:**
 
@@ -222,7 +222,7 @@ Kullanıcılarınıza cihazlarını Android 6.0 sürümüne yükseltmeyi denemel
 
 ### <a name="android-certificate-issues"></a>Android sertifika sorunları
 
-**Sorunu**: Kullanıcılar cihazlarını şu iletiyi alırsınız: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
+**Sorun**: Kullanıcılar cihazında aşağıdaki iletiyi alırlar: *Cihazınızda gerekli bir sertifika eksik olduğundan oturum açamazsınız.*
 
 **1. Çözüm**:
 
@@ -273,16 +273,16 @@ Aşağıdaki tabloda son kullanıcıların cihazlarını Intune’a kaydederken 
 |AccountNotOnboarded|Mobil cihazın şirketinizin ağıyla iletişim kurmasına olanak tanıyan sertifika ile ilgili bir sorun var.<br /><br />|Apple Anında İletilen Bildirim Servisi (APNs) kayıtlı iOS cihazlarıyla bağlantı kurmak için bir kanal sunar. Aşağıdakiler koşullarda kayıt başarısız olur ve bu ileti görüntülenir:<ul><li>APNs sertifikası alma adımları tamamlanmamıştır veya</li><li>APNs sertifikanın süresi bitmiştir.</li></ul>Daha fazla bilgi için, [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](ios-enroll.md) konusunu gözden geçirin.|
 |DeviceTypeNotSupported|Kullanıcınız iOS olmayan bir cihaz kullanarak kaydolmayı denemiş olabilir. Kaydetmeye çalıştığınız mobil cihaz türü desteklenmemektedir.<br /><br />Cihazın iOS sürüm 8.0 veya üzerini çalıştırdığını onaylayın.<br /><br />|Kullanıcı cihazının iOS sürümü 8.0 veya üzerini çalıştırdığından emin olun.|
 |UserLicenseTypeInvalid|Kullanıcının hesabı henüz gerekli bir kullanıcı grubuna üye olmadığı için cihaz kaydedilemiyor.<br /><br />|Kullanıcıların cihazlarını kaydedebilmesi için doğru kullanıcı grubunun üyesi olmaları gerekir. Bu ileti kullanıcının mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin aşağıdakilerin her ikisi de doğruysa kullanıcı bu hatayı görür:<ol><li>Intune mobil cihaz yönetim yetkilisi olarak ayarlanmıştır</li><li>System Center 2012 R2 Configuration Manager lisansı kullanılıyordur.</li></ol>Daha fazla bilgi için aşağıdaki makaleleri inceleyin:<br /><br />[Microsoft Intune ile iOS ve Mac yönetimi ayarlama](ios-enroll.md) konusunu ve [Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme](users-add.md) ve [kullanıcıları ve cihazları düzenleme](groups-add.md) konularındaki kullanıcı ayarlamayla ilgili bilgileri gözden geçirin.|
-|MdmAuthorityNotDefined|Mobil cihaz yönetim yetkilisi tanımlanmamış.<br /><br />|Mobil cihaz yönetim yetkilisi Intune'da ayarlanmamış.<br /><br />Gözden geçirme öğesi #1 "6. adım: Mobil cihazları kaydetme ve uygulama yükleme"bölümünde [Intune bir 30 günlük deneme sürümünü kullanmaya başlama](free-trial-sign-up.md).|
+|MdmAuthorityNotDefined|Mobil cihaz yönetim yetkilisi tanımlanmamış.<br /><br />|Mobil cihaz yönetim yetkilisi Intune'da ayarlanmamış.<br /><br />"Adım 6: #1 [30 günlük Microsoft Intune deneme sürümünü kullanmaya](free-trial-sign-up.md)başlamak için mobil cihazları kaydetme ve uygulama yüklemeye "bölümü.|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Cihazlar etkin değil veya yönetici konsolu cihazlarla iletişim kuramıyor
 **Sorun:** iOS cihazları Intune hizmetine giriş yapmıyor. Korumalı şirket kaynaklarına erişimin sürdürülmesi için cihazların hizmete düzenli olarak giriş yapması gerekir. Cihazlar giriş yapmazsa:
 
 - Intune hizmetinden ilke, uygulama ve uzak komutları alamaz.
 - Yönetici konsolunda Yönetim Durumu olarak **Uygun olmayan durumda** görüntülenir.
-- Koşullu erişim ilkeleri tarafından korunan kullanıcılar şirket kaynaklarına erişimi kaybedebilir.
+- Koşullu erişim ilkeleriyle korunan kullanıcılar şirket kaynaklarına erişimi kaybedebilir.
 
-**Çözüm:** Son kullanıcılarınızın kurumsal kaynaklara yeniden erişim kazanmak yardımcı olmak için aşağıdaki çözümleri paylaşın.
+**Çözüm:** Şirket kaynaklarına yeniden erişim kazanmalarına yardımcı olmak için aşağıdaki çözümleri son kullanıcılarınız ile paylaşabilirsiniz.
 
 Kullanıcılar iOS Şirket Portalı uygulamasını başlattığında uygulama, cihazlarının Intune ile iletişiminin kesilip kesilmediğini bildirebilir. İletişim olmadığını algılarsa, yeniden bağlanmak için Intune ile eşitlemeyi otomatik olarak dener (kullanıcılar **Eşitlemeye çalışılıyor...** iletisini görür).
 
@@ -317,7 +317,7 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 
 
 ### <a name="profile-installation-failed"></a>Profil yüklemesi başarısız oldu
-**Sorun:** Bir kullanıcı bir **profil yüklemesi başarısız oldu** bir iOS cihazında hata.
+**Sorun:** Bir Kullanıcı bir iOS cihazında **profil yüklemesi başarısız oldu** hatasını alıyor.
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Başarısız olan profil yüklemesi sorunlarını giderme adımları
 
@@ -332,7 +332,7 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 5. iOS için Safari’nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune’la birlikte System Center Configuration Manager kullanıldığında kayıtlı iOS cihazı konsolda gösterilmiyor
-**Sorun:** Kullanıcı, iOS cihazı kaydeder, ancak Configuration Manager Yönetici konsolunda görünmez. Cihaz kayıtlı olduğunu göstermiyor. Olası nedenler:
+**Sorun:** Kullanıcı iOS cihazını kaydeder, ancak Configuration Manager Yönetici Konsolu 'nda görünmez. Cihaz kayıtlı olduğunu göstermiyor. Olası nedenler:
 
 - Configuration Manager sitenizde Microsoft Intune Bağlayıcısı Intune hizmetiyle iletişim kurmuyor.
 - Data Discovery Manager (ddm) bileşeni veya State Manager (statmgr) bileşeni Intune hizmetinden gelen iletileri işlemiyor.
@@ -350,7 +350,7 @@ Bu günlük dosyalarında nelerin aranması gerektiğine ilişkin örnekler yak�
 
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Kullanıcının iOS cihazı bir kayıt ekranında 10 dakikadan uzun bir süredir takılı
 
-**Sorunu**: Kaydolan bir cihaz ya da iki ekran takılabilir:
+**Sorun**: Kaydolan bir cihaz iki ekranda takılmayabilir:
 - "Microsoft"'tan son yapılandırmayı beklerken
 - Kılavuzlu Erişim uygulaması kullanılamadığında. Lütfen yöneticinize başvurun.
 
@@ -366,7 +366,7 @@ Bu sorun şu koşullarda oluşabilir:
 | VPP ile Şirket Portalı'nı yükleme | Belirteç kullanma: belirteç adresi |
 | Kimlik doğrulanana kadar Şirket Portalı'nı Tek Uygulama modunda çalıştırma | Evet |
 
-**Çözüm**: Sorunu gidermek için şunları yapmalısınız:
+**Çözüm**: Sorunu gidermek için şunları yapmanız gerekir:
 1. VPP belirtecinde bir sorun olup olmadığını belirleyin ve varsa sorunu giderin.
 2. Hangi cihazların engellendiğini belirleyin.
 3. Etkilenen cihazları temizleyin.
@@ -400,14 +400,14 @@ Engellenen cihazları sildikten sonra kullanıcılara kayıt işlemini yeniden b
 ### <a name="macos-enrollment-errors"></a>macOS kayıt hataları
 **Hata iletisi 1:** *Bir sanal makine kullanıyorsunuz gibi görünüyor. Sanal makinenizi, seri numarası ve donanım modeli dahil olmak üzere tamamen yapılandırdığınıza emin olun. Bu bir sanal makine değilse lütfen desteğe başvurun.*  
 
-**Hata iletisi 2:** *Cihazınızın yönetilmesini aşmakta sorun yaşıyoruz. Sanal makine kullanıyorsanız, kısıtlı bir seri numaranız varsa veya cihaz başkasına atanmışsa bu sorun ortaya çıkabilir. Bu sorunları nasıl çözeceğinizi öğrenin veya şirketinizin destek birimiyle iletişime geçin.*
+**Hata iletisi 2:** *Cihazınızın yönetilmesini alırken sorun yaşıyoruz. Sanal makine kullanıyorsanız, kısıtlı bir seri numaranız varsa veya cihaz başkasına atanmışsa bu sorun ortaya çıkabilir. Bu sorunları nasıl çözeceğinizi öğrenin veya şirketinizin destek birimiyle iletişime geçin.*
 
-**Sorun:** Bu ileti, aşağıdaki nedenlerden herhangi birinden bir sonucu olabilir:  
+**Sorun:** Bu ileti aşağıdaki nedenlerden herhangi biri olabilir:  
 * Bir macOS sanal makine (VM) doğru yapılandırılmadı  
 * Cihazın şirkete ait olmasını veya Intune’da kayıtlı cihaz seri numarası olmasını gerektiren bazı cihaz kısıtlamaları etkinleştirdiniz  
 * Cihaz zaten kayıtlı ve Intune’da başka bir kişiye atanmış  
 
-**Çözüm:** İlk olarak, hangi sorunların belirlemek için kullanıcı denetimiyle cihazını etkiler. Daha sonra aşağıdaki çözümlerden size en uygun olanını tamamlayın:
+**Çözüm:** İlk olarak, sorunlardan hangilerinin cihaz tarafından etkilendiğinin belirlenmesi için Kullanıcı ile görüşün. Daha sonra aşağıdaki çözümlerden size en uygun olanını tamamlayın:
 * Kullanıcı test amaçlı bir VM kaydediyorsa, Intune’un VM seri numarasını ve donanım modelini tanıyabilmesi için bunun tamamen yapılandırıldığına emin olun. Intune’da [VM ayarlama](macos-enroll.md#enroll-virtual-macos-machines-for-testing) hakkında daha fazla bilgi edinin.  
 * Kuruluşunuz, kişisel macOS cihazları engelleyen bazı kayıt kısıtlamaları etkinleştirdiyse, Intune’a [kişisel cihazın seri numarasını el ile eklemelisiniz](corporate-identifiers-add.md#manually-enter-corporate-identifiers).  
 * Cihaz hala Intune’da başka bir kullanıcıya atanmış durumdaysa, eski kullanıcı Şirket Portalı uygulamasını kullanarak cihazı kaldırmamış veya sıfırlamamış demektir. Eski cihaz kaydını Intune’dan kaldırmak için:  
@@ -419,9 +419,9 @@ Engellenen cihazları sildikten sonra kullanıcılara kayıt işlemini yeniden b
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager’ı Intune kullanırken oluşan sorunlar
 ### <a name="mobile-devices-disappear"></a>Mobil cihazlar kayboluyor
-**Sorun:** Bir mobil cihazı Configuration Manager'a başarıyla kaydettikten sonra mobil cihaz koleksiyonundan kayboluyor. Ancak cihazın hala Yönetim Profili var ve cihaz CSS Ağ Geçidi'nde listeleniyor.
+**Sorun:** Bir mobil cihazı Configuration Manager başarıyla kaydettikten sonra, mobil cihaz koleksiyonundan kaybolur. Ancak cihazın hala Yönetim Profili var ve cihaz CSS Ağ Geçidi'nde listeleniyor.
 
-**Çözüm:** Bu sorun nedeniyle oluşabilir:
+**Çözüm:** Bu sorun şu nedenle oluşabilir:
 - Etki alanına katılmamış cihazları kaldıran özel bir işleminiz var veya 
 - kullanıcı cihaz abonelikten çıkarmış.
 Configuration Manager konsolunda cihazı hangi işlemin veya kullanıcı hesabının kaldırdığını denetlemek ve doğrulamak için, aşağıdaki adımları izleyin.
@@ -452,7 +452,7 @@ iOS kayıt hatalarının listesi, [Microsoft Intune’da iOS cihaz kayıt sorunl
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>Makine zaten kaydoldu - Hata hr 0x8007064c
-**Sorun:** Kayıt hatasıyla başarısız oluyor **makine zaten kaydoldu**. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
+**Sorun:** Kayıt, **makinenin zaten kayıtlı olduğu**hatayla başarısız olur. Kayıt günlüğünde **hr 0x8007064c** hatası gösteriliyor.
 
 Bu hata bilgisayarda şu koşullarda oluşabilir:
 - daha önce kaydedilmiştir veya
@@ -466,9 +466,9 @@ Bu hata bilgisayarda şu koşullarda oluşabilir:
 1. **Sertifikalar**’a çift tıklayın, **Bilgisayar hesabı** > **İleri**’yi ve sonra **Yerel Bilgisayar**’ı seçin.
 1. **Sertifikalar (Yerel bilgisayar)** seçeneğine çift tıklayın ve **Kişisel/ Sertifikalar**’ı seçin.
 1. Sc_Online_Issuing tarafından verilen Intune sertifikasını arayın ve bulursanız silin.
-1. Aşağıdaki kayıt defteri anahtarı varsa, bunu silin: **Hkey_local_machıne\software\microsoft\onlinemanagement regkey** ve tüm alt anahtarlarını.
+1. Aşağıdaki kayıt defteri anahtarı varsa, silin: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement RegKey** ve tüm alt anahtarlar.
 1. Yeniden kaydetmeyi deneyin.
-1. Bilgisayar yine de kaydedilemez, arayın ve varsa, bu anahtarı silin: **Key_classes_root\ınstaller\products\6985f0077d3eeb44ab6849b5d7913e95**.
+1. BILGISAYAR hala kayıt yapamıyor, varsa bu anahtarı bulup silin: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
 1. Yeniden kaydetmeyi deneyin.
 
     > [!IMPORTANT]
@@ -493,11 +493,11 @@ Bu hata bilgisayarda şu koşullarda oluşabilir:
 |0x80043008, 0x80CF3008|Microsoft Online Management Güncelleştirmeleri hizmeti başlatılamadı.|[Microsoft Intune için destek alma](get-support.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.|
 |0x80043009, 0x80CF3009|İstemci bilgisayar hizmete zaten kayıtlı.|İstemci bilgisayarı bu hizmete yeniden kaydetmek için önce devre dışı bırakmanız gerekir.|
 |0x8004300B, 0x80CF300B|İstemci üzerinde çalışan Windows sürümü desteklenmediğinden, istemci yazılımı yükleme paketi çalıştırılamıyor.|Intune istemci bilgisayarda çalışan Windows sürümünü desteklemiyor.|
-|0xAB2|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, şurada açıklanan araçları kullanmanız gerekebilir [Microsoft desteği KB198038: Paket ve dağıtım sorunlarında yararlı Araçlar](https://support.microsoft.com/kb/198038).|
+|0xAB2|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, Microsoft desteği KB198038 ' de [açıklanan araçları kullanmanız gerekebilir: Paket ve dağıtım sorunları](https://support.microsoft.com/kb/198038)için faydalı araçlar.|
 |0x80cf0440|Hizmet uç noktası bağlantısı sonlandırıldı.|Deneme hesabı veya ücretli hesap askıya alındı. Yeni bir deneme hesabı veya ücretli hesap oluşturun ve yeniden kaydolun.|
 
 
 
 
-### <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 Bu sorun giderme bilgileri işe yaramazsa, [Microsoft Intune için destek alma](get-support.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.

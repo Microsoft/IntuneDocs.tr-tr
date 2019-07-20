@@ -17,103 +17,103 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572628"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354545"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
-Microsoft Intune uygulamalarını en son güncelleştirmeleri hakkında daha fazla bilgi edinin. Biz düzenli olarak ekleyin ve Intune Şirket portalı uygulamasını ve Web sitesi geliştirmek. Bu makalede, bir Intune Yöneticisi olduğunuz veya kişi desteklemek için gereken bilgileri sağlanmaktadır:
+Microsoft Intune uygulamalarına yönelik en son güncelleştirmeler hakkında bilgi edinin. Intune Şirket Portalı uygulaması ve Web sitesini düzenli olarak ' ye ekleyip geliştirdik. Bir Intune Yöneticisi veya destek kişiyse, bu makalede şunlar için gereken bilgiler sağlanmaktadır:
 
-* Uyarı Öğrenciler ve çalışanlar uygulama ve kayıt değişiklikler.
-* Kuruluşunuzun belgeleri veya Yardım Masası yordamları güncelleştirin.  
+* Öğrenci ve çalışanları uygulama ve kayıt değişikliklerine karşı uyarır.
+* Kuruluşunuzun belgelerini veya yardım masası yordamlarını güncelleştirin.  
 
-Bir çalışan veya Öğrenci kullanıyorsanız ekran görüntüleri ve bağlantıları Şirket portalı Yardım belgelerine göz atın emin olun. Şirket portalı uygulamasını kullanma hakkında daha fazla bilgi için bkz. [Şirket portalı kullanıcı Yardım belgeleri](https://docs.microsoft.com/intune-user-help/).  
+Bir çalışan ya da öğrenciyseniz, Şirket Portalı yardım belgelerinin ekran görüntülerini ve bağlantılarını kontrol ettiğinizden emin olun. Şirket Portalı uygulamasının nasıl kullanılacağı hakkında daha fazla bilgi için, [Şirket portalı Kullanıcı Yardım belgelerine](https://docs.microsoft.com/intune-user-help/)bakın.  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-june-24-2019"></a>24 Haziran 2019 haftası  
 
-### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>Yeni Şirket portalı web sayfasından yüklü tüm uygulamaları görüntüle <!-- 4224326 -->
-Şirket portalı Web sitesine yeni **yüklü uygulamaların** sayfası, bir kullanıcının cihazlarında yüklü olan tüm yönetilen uygulamalar (gerekli ve kullanılabilir) listeler. Atama türü ek olarak, kullanıcılar uygulamanın yayımcısı, yayımlanma tarihi ve geçerli yükleme durumunu görebilirsiniz. Herhangi bir uygulama gerekli veya kullanılabilir kullanıcılarınıza oluşturmadıysanız, hiçbir şirket uygulamaları yüklü olan açıklayan bir ileti görürler. Yeni sayfa Web'de görmek için Git [Şirket portalı Web sitesine](https://portal.manage.microsoft.com) tıklatıp **yüklü uygulamaların**.   
+### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>Yeni Şirket Portalı Web sayfasından yüklü tüm uygulamaları görüntüle <!-- 4224326 -->
+Şirket Portalı Web sitesinin yeni **yüklü uygulamalar** sayfasında, bir kullanıcının cihazlarında yüklü olan tüm yönetilen uygulamalar (hem gerekli hem de kullanılabilir) listelenir. Atama türüne ek olarak, kullanıcılar uygulamanın yayımcısını, yayımlanma tarihini ve geçerli yükleme durumunu görebilirler. Kullanıcılarınız için gerekli veya kullanılabilir bir uygulama yapmadıysanız, hiçbir şirket uygulaması yüklenmediğini açıklayan bir ileti görür. Web 'deki yeni sayfayı görmek için [Şirket portalı Web sitesine](https://portal.manage.microsoft.com) gidin ve **yüklü uygulamalar**' a tıklayın.   
 
-![Ekran görüntüsü, Şirket portalı Web sitesi, yüklü uygulamalar sayfası.](/intune-user-help/media/intune-installed-apps-1907.png)     
+![Şirket Portalı Web sitesi, yüklü uygulamalar sayfasının ekran görüntüsü.](/intune-user-help/media/intune-installed-apps-1907.png)     
 
-### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>Yeni görünüm tüm yönetilen uygulamalar cihazda yüklü uygulama görmesine olanak tanır <!-- 2352913 -->
-Windows için Şirket portalı uygulaması, bir kullanıcı cihazında yüklü olan tüm yönetilen uygulamalar (gerekli ve kullanılabilir) artık listeler. Kullanıcılar ayrıca denenen ve bekleyen uygulama yüklemelerini ve bunların geçerli durumlarını görebilirsiniz. Uygulamaları gerekli veya kullanılabilir kullanıcılarınıza oluşturmadıysanız, hiçbir şirket uygulamaları yüklü olan açıklayan bir ileti görürler. Yeni görünümü görmek için Şirket portalı Gezinti bölmesine gidin ve seçin **uygulamaları** > **yüklü uygulamaların**.   
+### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>Yeni görünüm, uygulama kullanıcılarının cihazda yüklü olan tüm yönetilen uygulamaları görmesini sağlar <!-- 2352913 -->
+Windows için Şirket Portalı uygulaması artık bir kullanıcının cihazında yüklü olan tüm yönetilen uygulamaları (hem gerekli hem de kullanılabilir) listeler. Kullanıcılar ayrıca, denenen ve bekleyen uygulama yüklemelerini ve bunların geçerli durumlarını görebilir. Kullanıcılarınız için gerekli olan veya kullanıcılarınızın kullanabildiği uygulamalar yapmadıysanız, hiçbir şirket uygulaması yüklenmediğini açıklayan bir ileti görür. Yeni görünümü görmek için şirket portalı gezinti bölmesine gidin ve **uygulamalar** > **yüklü uygulamalar**' ı seçin.   
 
-![Yüklü uygulamalar sayfası olan Windows 10 için Şirket portalı uygulamasının örnek ekran görüntüsü. ](/intune-user-help/media/installed-apps-cp-1906.png)  
+![Windows 10 için Şirket Portalı uygulamasının yüklü uygulamalar sayfasında örnek ekran görüntüsü. ](/intune-user-help/media/installed-apps-cp-1906.png)  
 
 
 ## <a name="week-of-june-17-2019"></a>17 Haziran 2019 haftası  
 
-#### <a name="new-features-in-microsoft-intune-app"></a>Yeni Microsoft Intune uygulama özellikleri
-Android için yeni özellikler Intune uygulama (Önizleme) ekledik. Tam olarak yönetilen Android cihazlarda kullanıcıların artık şunları yapabilirsiniz:  
+### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune uygulamasındaki yeni özellikler
+Android için Microsoft Intune uygulamasına (Önizleme) yeni özellikler ekledik. Tam olarak yönetilen Android cihazlarındaki kullanıcılar artık şunları yapabilir:  
 
-* Görüntüleyin ve yönetin Intune Şirket portalı ya da Microsoft Intune uygulama üzerinden kayıtlı cihazlar.    
-* Kuruluşlarında desteğine başvurun.    
-* Geribildirimler, Microsoft'a gönderin.    
-* Görüntülerseniz hüküm ve koşullar ve kuruluşun ayarlayın. 
+* Intune Şirket Portalı veya Microsoft Intune uygulaması aracılığıyla kaydolduğu cihazları görüntüleyin ve yönetin.    
+* Destek için kuruluşunuzla iletişim kurun.    
+* Geri bildirimlerini Microsoft 'a gönderin.    
+* Kuruluş tarafından ayarlandıysa hüküm ve koşulları görüntüleyin. 
 
 ## <a name="week-of-april-15-2019"></a>15 Nisan 2019 haftası  
 
-### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>Yeni son kullanıcı uygulama (Microsoft Intune uygulama) <!--3903244 -->  
-Android tam olarak yönetilen olarak adlandırılan cihazlar için yeni bir son kullanıcı uygulaması olduğundan **Intune**. Bu yeni uygulama basit ve modern ve benzer bir işlevsellik Şirket portalı uygulamasını sağlar, ancak için tam olarak yönetilen, Kurumsal cihazlar. Daha fazla bilgi için [Google play'de Microsoft Intune uygulama](https://play.google.com/store/apps/details?id=com.microsoft.intune).  
+### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>Yeni Son Kullanıcı uygulaması (Microsoft Intune uygulaması) <!--3903244 -->  
+Android tam olarak yönetilen **Microsoft Intune**adlı yeni bir son kullanıcı uygulaması vardır. Bu yeni uygulama hafif ve modern bir uygulamadır, ancak tam olarak yönetilen, kurumsal cihazlar için Şirket Portalı uygulama olarak benzer işlevsellik sağlar. Daha fazla bilgi için bkz. [Google Play Microsoft Intune uygulama](https://play.google.com/store/apps/details?id=com.microsoft.intune).  
 
-Cihaz ayrıntıları ekranına örnek ekran görüntüsü: 
+Cihaz ayrıntıları ekranının örnek ekran görüntüsü: 
 
-![Gamze'nin Android için cihaz ayrıntılarını gösteren ekran görüntüsü, Microsoft Intune uygulaması.](./media/1904-intune-app-device-details.png)   
+![Microsoft Intune uygulamasının ekran görüntüsü ve Gamze 'nin Android için cihaz ayrıntıları gösteriliyor.](./media/1904-intune-app-device-details.png)   
 
-Örnek ekran **Kurulum erişim** ekran:  
+Örnek, **Kurulum erişim** ekranının ekran görüntüsü:  
 
-![Kurulum erişim kaydı ekranını gösteren ekran görüntüsü, Microsoft Intune uygulaması.](./media/1904-intune-app-setup-access.png)   
+![Microsoft Intune uygulamasının, kurulum erişim kaydı ekranını gösteren ekran görüntüsü.](./media/1904-intune-app-setup-access.png)   
 
-Örnek menüsünün ekran görüntüsü uygulama:  
+Uygulama menüsünün örnek ekran görüntüsü:  
 
-![Yan menü gösteren ekran görüntüsü, Microsoft Intune uygulaması.](./media/1904-intune-app-navigation-menu.png)   
+![Microsoft Intune uygulamasının, yan menüyü gösteren ekran görüntüsü.](./media/1904-intune-app-navigation-menu.png)   
 
-Örnek ekran görüntüsü **yardımcı** ekran:  
+**Yardım** ekranının örnek ekran görüntüsü:  
 
-![Microsoft Intune ekran uygulaması yardım ekranını.](./media/1904-intune-app-help.png)   
+![Microsoft Intune uygulaması, yardım ekranının ekran görüntüsü.](./media/1904-intune-app-help.png)   
 
 
 ## <a name="week-of-april-1-2019"></a>1 Nisan 2019 haftası  
 
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>İOS için Şirket portalı kaydı için 12 cihaz kullanıcılarının değiştirir. <!--3448635 -->  
-İOS kayıt ekranlar ve adımlar için Şirket portalı, Apple iOS 12.2 yayımlanan MDM kayıt değişikliklerle hizalamak için güncelleştirildi. Güncelleştirilmiş iş akışı, kullanıcıların ister:  
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>İOS 12 cihaz kullanıcıları için Şirket Portalı kaydında yapılan değişiklikler <!--3448635 -->  
+İOS kayıt ekranları ve adımları için Şirket Portalı, Apple iOS 12,2 ' de yayınlanan MDM kaydı değişiklikleriyle uyum sağlamak üzere güncelleştirilmiştir. Güncelleştirilmiş iş akışı kullanıcılardan şunları yapmanızı ister:  
 
-* Şirket portalı Web sitesini açın ve Şirket portalı uygulamasında döndürmeden önce yönetim profili yüklemek Safari izin verir.  
-* Yönetim profili cihaza yüklemek üzere ayarlar uygulamasını açın.  
-* Şirket portalı uygulamasının kaydı döndürür.  
+* Safari 'nin Şirket Portalı Web sitesini açmasına ve Şirket Portalı uygulamasına döndürmeden önce yönetim profilini indirmesine izin verin.  
+* Yönetim profilini cihazlarına yüklemek için Ayarlar uygulamasını açın.  
+* Kaydı tamamlamaya yönelik Şirket Portalı uygulamasına geri dönün.  
 
-Güncelleştirilmiş kayıt adımları ve ekranlar için bkz: [iOS Cihazınızı Intune'a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
+Güncelleştirilmiş kayıt adımları ve ekranları için bkz. [iOS cihazını Intune 'A kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>iOS için Şirket Portalı uygulamasında kullanıcı deneyimi güncelleştirmesi <!-- 2536024 -->
-İOS cihazları için Şirket portalı uygulamasının giriş sayfası yeniden tasarlandı. Bu değişiklik, giriş sayfası iOS kullanıcı Arabirimi desenleri daha iyi izleyin ve ayrıca uygulamaları ve e-Kitaplar için geliştirilmiş bulunabilirliği sağlamak.  
+İOS cihazları için Şirket Portalı uygulamasının ana sayfası yeniden tasarlanmıştır. Bu değişiklik ile, giriş sayfası iOS Kullanıcı arabirimi desenlerini daha iyi izler ve ayrıca uygulamalar ve e-kitaplar için geliştirilmiş bulunabilirliği sağlar.  
 
 ## <a name="week-of-february-19-2019"></a>19 Şubat 2019 haftası  
-### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Windows 10 için Şirket portalı uygulamasında yeni uygulama kategorileri ekran<!-- 3834780 WNready4Review -->  
-Adlı yeni bir ekran **uygulama kategorileri** Windows 10 için Şirket portalı uygulaması gezinme ve seçim deneyimini iyileştirmek üzere eklendi. Kullanıcılar artık kategoriler altında gibi sıralanan uygulamalarını görmek **öne çıkan**, **eğitim**, ve **üretkenlik**. Bu değişikliği Şirket portalı sürümleri 10.3.3451.0 görünür ve daha sonra. Uygulamaları şirket Portalı'nda yükleme hakkında daha fazla bilgi için bkz. [yüklemek ve paylaşmak cihazınızdaki uygulamalar](/intune-user-help/install-apps-cpapp-windows).  
+### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Windows 10 için Şirket Portalı uygulamasındaki yeni uygulama kategorileri ekranı<!-- 3834780 WNready4Review -->  
+Windows 10 için Şirket Portalı ' de uygulama gözatma ve seçim deneyimini geliştirmek için **uygulama kategorileri** adlı yeni bir ekran eklenmiştir. Kullanıcılar, uygulamalarını **öne çıkan**, **eğitim**ve **üretkenlik**gibi Kategoriler altında sıralanmış olarak görecektir. Bu değişiklik, 10.3.3451.0 ve sonraki sürümlerde Şirket Portalı görüntülenir. Şirket Portalı ' ye uygulama yükleme hakkında daha fazla bilgi için bkz. [cihazınızdaki uygulamaları yükleme ve paylaşma](/intune-user-help/install-apps-cpapp-windows).  
 
-![Ekran görüntüsü, için Windows 10 Şirket portalı, uygulama kategorileri ekran.](./media/1902_CP_app_categories.png)   
+![Windows 10, uygulama kategorileri ekranının Şirket Portalı ekran görüntüsü.](./media/1902_CP_app_categories.png)   
 
 
 ## <a name="week-of-november-12-2018"></a>12 Kasım 2018 haftası
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows Şirket Portalı klavye kısayolları <!-- 2771518 -->
-Son kullanıcılar artık Windows Şirket portalı'nda uygulama ve cihaz eylem tetikleyici mümkün olacaktır [klavye kısayolları (Hızlandırıcıları) kullanılarak](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
+Son kullanıcılar artık [klavye kısayollarını (Hızlandırıcılar) kullanarak](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts)Windows Şirket portalı uygulama ve cihaz eylemlerini tetikleyebilecektir.
 
 ## <a name="week-of-october-22-2018"></a>22 Ekim 2018 haftası
 
-### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Şirket portalı uygulaması için özel marka resmi Ekle <!-- 1916266 -->
+### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Şirket Portalı uygulaması için özel marka görüntüsü ekleme <!-- 1916266 -->
 Microsoft Intune yöneticisi olarak, iOS Şirket Portalı uygulamasındaki kullanıcı profil sayfasında bir arka plan görüntüsü olarak kullanılacak özel bir marka görüntüsünü karşıya yükleyebilirsiniz. Şirket Portalı uygulamasını yapılandırma hakkında daha fazla bilgi için bkz. [Microsoft Intune Şirket Portalı uygulamasını yapılandırma](company-portal-app.md).  
 
 ## <a name="week-of-august-27-2018"></a>27 Ağustos 2018 Haftası  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Şirket Portalı web sitesi için yeni kullanıcı deneyimi güncelleştirmesi <!--2000968 -->  
-Müşterilerden gelen geri bildirim temelinde Şirket Portalı web sitesine yeni özellikler ekledik. Cihazlarınızın mevcut işlevselliğinde ve kullanılabilirliğinde önemli gelişmeler göreceksiniz. Sitenin, cihaz ayrıntıları, geri bildirim ve destek ve cihaz genel bakışı, gibi belirli alanları artık yeni, modern, hızlı yanıt veren bir tasarım vardır. [Intune Şirket Portalı belgeleri](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) de bu değişiklikleri yansıtacak şekilde güncelleştirildi.   
+Müşterilerden gelen geri bildirim temelinde Şirket Portalı web sitesine yeni özellikler ekledik. Cihazlarınızın mevcut işlevselliğinde ve kullanılabilirliğinde önemli gelişmeler göreceksiniz. Sitenin cihaz ayrıntıları, geri bildirim ve destek ve cihaza genel bakış gibi belirli alanlarında, artık yeni, modern ve hızlı yanıt veren bir tasarıma sahiptir. [Intune Şirket Portalı belgeleri](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) de bu değişiklikleri yansıtacak şekilde güncelleştirildi.   
 
 Karşılaşacağınız güncelleştirmeler şunlardır:  
 
@@ -133,13 +133,13 @@ Karşılaşacağınız güncelleştirmeler şunlardır:
 ## <a name="week-of-july-16-2018"></a>16 Temmuz 2018 haftası  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasında daha fazla eşitleme fırsatı   
-Windows için Şirket Portalı uygulaması artık eşitlemeyi doğrudan Windows görev çubuğu ve Başlat menüsünden başlatmanıza olanak tanır. Göreviniz yalnızca cihazları eşitlemek veya şirket kaynaklarına erişim sağlamak olduğunda, bu özellik çok kullanışlıdır. Yeni özelliğe erişmek için Şirket portalı simgesi, görev çubuğuna sabitlenmiş sağ tıklayın veya **Başlat** menüsü. Menü seçeneklerinde (atlama listesi olarak da bilinir) **Bu cihazı eşitle**’yi seçin. Şirket Portalı, **Ayarlar** sayfasında açılır ve eşitlemenizi başlatır.  
+Windows için Şirket Portalı uygulaması artık eşitlemeyi doğrudan Windows görev çubuğu ve Başlat menüsünden başlatmanıza olanak tanır. Göreviniz yalnızca cihazları eşitlemek veya şirket kaynaklarına erişim sağlamak olduğunda, bu özellik çok kullanışlıdır. Yeni özelliğe erişmek için, görev çubuğuna veya **Başlat** menüsüne sabitlenmiş Şirket portalı simgesine sağ tıklayın. Menü seçeneklerinde (atlama listesi olarak da bilinir) **Bu cihazı eşitle**’yi seçin. Şirket Portalı, **Ayarlar** sayfasında açılır ve eşitlemenizi başlatır.  
 
 ![Bir cihazın masaüstünde Windows görev çubuğunun ekran görüntüsü. Şirket Portalı uygulaması program simgesi tıklanmış ve “Görev çubuğuna sabitle”, “Pencereyi kapat” ve “Bu cihazı eşitle” eylemlerini içeren bir menü görüntülenmiştir.](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows için Şirket Portalı uygulamasında yeni göz atma deneyimleri  
 
-Gözatma veya Windows için Şirket portalı uygulamasında uygulamalar aranıyor, var olan arasında geçiş yapabilirsiniz artık **kutucukları** görünümü ve yeni **ayrıntıları** görünümü. Bu yeni görünüm adı, yayımcı, yayın tarihi ve yükleme durumu gibi uygulama ayrıntılarını listeler.  
+Artık Windows için Şirket Portalı uygulamasındaki uygulamalar taranırken veya ararken, var olan **Kutucuklar** görünümü ve yeni **Ayrıntılar** görünümü arasında geçiş yapabilirsiniz. Bu yeni görünüm, ad, Yayımcı, Yayın tarihi ve yükleme durumu gibi uygulama ayrıntılarını listeler.  
 
 **Uygulamalar** sayfasının **Yüklemeler** görünümü, tamamlanmış ve devam eden uygulama yüklemeleri hakkındaki ayrıntıları görmenizi sağlar.  
 
@@ -152,7 +152,7 @@ Ayrıntılar görünümünü gösteren örnek ekran görüntüsü:
 ![Windows için Intune Şirket Portalı uygulamasının yüklenen uygulamaları ayrıntılar görünümünde gösteren ekran görüntüsü.](/intune/media/details-installed-view-cpapp-1807.png) 
 
 ## <a name="week-of-april-23-2018"></a>23 Nisan 2018 Haftası
-### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 için Şirket portalı uygulamasında güncelleştirilmiş Gezinti görünümü <!-- 1195010 -->
+### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 için Şirket Portalı uygulamasında Gezinti görünümü güncelleştirildi <!-- 1195010 -->
 Windows 10 için Intune Şirket Portalı, [Fluent Design System'in gezinti görünümü](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) ile güncelleştirildi. Uygulamanın yan tarafı boyunca tüm en üst düzey sayfaların statik, dikey bir listesini göreceksiniz. Sayfaları hızla görüntülemek ve aralarında geçiş yapmak için herhangi bir bağlantıya tıklayın. Bu, Intune'da sürekli daha iyi uyarlanmış, anlayışlı ve tanıdık bir deneyim oluşturma çabalarımız kapsamında göreceğiniz birkaç güncelleştirmeden ilkidir. 
 
 ![Fluent Design gezinti görünümünün gösterildiği Şirket Portalı uygulama panosunun ekran görüntüsü](./media/1804_WindowsCP_Fluent_01.png)
@@ -185,7 +185,7 @@ Daha kullanıcı dostu ve şirketinize özgü olabilmesi için Windows 10 için 
 
 ## <a name="week-of-march-12-2018"></a>12 Mart 2018 Haftası
 
-### <a name="company-portal-for-android-visual-updates----976944---"></a>Android görsel güncelleştirmeleri için Şirket portalı <!-- 976944 -->
+### <a name="company-portal-for-android-visual-updates----976944---"></a>Android görsel güncelleştirmeleri için Şirket Portalı <!-- 976944 -->
 
 Android için Şirket Portalı uygulamasını, Android'in [Materyal Tasarım](https://material.io/) yönergelerine uyacak şekilde güncelleştirdik.
 
@@ -202,7 +202,7 @@ Android için Şirket Portalı uygulamasını, Android'in [Materyal Tasarım](ht
 
 ## <a name="week-of-november-27-2017"></a>27 Kasım 2017 Haftası
 
-### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Yeni "Cihaz kategorileri" Şirket portalı uygulamasının kurulum yönergelerinde için Windows 10. adım <!-- 1335292 -->
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Windows 10 için Şirket Portalı uygulaması için Kılavuzlu kurulumda yeni "cihaz kategorileri" adımı <!-- 1335292 -->
 
 [Cihaz grubu eşlemeyi](device-group-mapping.md) etkinleştirdiyseniz, Windows 10 için Şirket Portalı uygulaması artık kullanıcılarınıza cihazı kaydettikten sonra cihaz kategorisi seçerken yol gösterir.
 
@@ -238,14 +238,14 @@ Windows 10 için Şirketi Portalı uygulamasındaki Ayarlar sayfası, ayarların
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
 
 
-### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>Şirket portalı uygulamaları ve Web sitesinde arama iyileştirmeleri <!-- 1418189 -->
+### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>Şirket Portalı uygulamalar ve Web sitesinde iyileştirmeler üzerinde arama yapın <!-- 1418189 -->
 Şirket Portalı uygulamaları artık kategoriler, adlar ve açıklamalarda arama yapabilir. Sonuçlar, azalan ilgi düzeyine göre sıralanır. Bu güncelleştirmelere [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) de ulaşabilirsiniz.
 
 Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıyoruz, bu nedenle lütfen Şirket Portalı web sitesinin en altında bulunan “Geri Bildirim” bağlantısını kullanarak bizi konuyla ilgili bilgilendirin.
 
 ## <a name="week-of-october-16-2017"></a>16 Ekim 2017 Haftası
 
-### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Şirket portalı Web sitesine arama iyileştirmeleri <!-- 1331697 -->
+### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Şirket Portalı Web sitesinde iyileştirmeler arama <!-- 1331697 -->
 [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) başlayarak uygulama arama becerilerimizi iyileştiriyoruz. Artık aramalar, Ad ve Açıklama alanlarına ek olarak uygulama kategorilerinde de gerçekleştirilecek. Varsayılan olarak sonuçlar, azalan ilgi düzeyine göre sıralanacak. 
 
 Şirket Portalı web sitesi, iOS için Şirket Portalı uygulamasının da bir parçası olarak kullanıldığı için bu değişikliği iOS kullanıcıları da alacaktır. Android ve Windows için Şirket Portalı uygulamaları, gelecek aylar içerisinde benzer güncelleştirmeler alacaktır.
@@ -253,7 +253,7 @@ Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıy
 Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıyoruz, bu nedenle lütfen Şirket Portalı web sitesinin en altında bulunan “Geri Bildirim” bağlantısını kullanarak bizi konuyla ilgili bilgilendirin.
 
 
-### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS Şirket portalı büyük simgeler görüntülüyor <!-- 1454593 -->
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS Şirket Portalı büyük simgeleri görüntüler <!-- 1454593 -->
 Bu sürümde iOS Şirket Portalı’nın uygulama kutucuğunda simgeleri görüntülemesiyle ilgili bilinen bir sorunu çözüyoruz. 120x120 piksel veya daha büyük boyutlu uygulama simgeleri yüklerseniz bunlar artık [Şirket portalı web sitesinde](https://portal.manage.microsoft.com) ve iOS Şirket Portalı uygulama sayfalarında bütün uygulama kutucuğunu kaplayacak şekilde görüntülenecek.
 
 
@@ -303,9 +303,9 @@ Android için Şirket Portalı uygulamasında kayıt işlemi, son kullanıcılar
 
 ## <a name="august-2017"></a>Ağustos 2017
 
-### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 Mail uygulaması OAuth destekleyecek <!-- 1196951 -->
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 posta uygulaması OAuth 'ı destekleyecektir <!-- 1196951 -->
 
-Intune ile koşullu erişim, OAuth ile iOS cihazlarda daha güvenli kimlik doğrulamasını destekler. Bunu desteklemek üzere daha güvenli kimlik doğrulamasına imkan vermek için artık iOS için Şirket Portalı uygulamasında farklı bir akış bulunacak. Son kullanıcılar, Mail uygulamasında yeni bir Exchange hesabıyla oturum açmaya çalıştığında web görünümlü bir istem alacaklar. Intune’a kaydolduktan sonra kullanıcılar, yerel Mail uygulamasının sertifikaya erişmesine izin vermek için bir komut istemi görecekler. Pek çok son kullanıcı artık, karantinaya alınmış e-posta görmeyecek. Mevcut posta hesapları, temel kimlik doğrulama protokolünü kullanmaya devam edecek, bu yüzden bu kullanıcılar karantinaya alınmış e-postalar almaya devam edecektir. Son kullanıcılar için bu oturum açma deneyimi, Office mobil uygulamalarına benzerdir.
+Intune ile koşullu erişim, OAuth ile iOS cihazlarında daha güvenli kimlik doğrulamasını destekler. Bunu desteklemek üzere daha güvenli kimlik doğrulamasına imkan vermek için artık iOS için Şirket Portalı uygulamasında farklı bir akış bulunacak. Son kullanıcılar, Mail uygulamasında yeni bir Exchange hesabıyla oturum açmaya çalıştığında web görünümlü bir istem alacaklar. Intune’a kaydolduktan sonra kullanıcılar, yerel Mail uygulamasının sertifikaya erişmesine izin vermek için bir komut istemi görecekler. Pek çok son kullanıcı artık, karantinaya alınmış e-posta görmeyecek. Mevcut posta hesapları, temel kimlik doğrulama protokolünü kullanmaya devam edecek, bu yüzden bu kullanıcılar karantinaya alınmış e-postalar almaya devam edecektir. Son kullanıcılar için bu oturum açma deneyimi, Office mobil uygulamalarına benzerdir.
 
 ![Yerel posta uygulamasında hesap türü seçme.](./media/ios-11-ca-email-after-1708-01.png)
 
@@ -323,7 +323,7 @@ Intune ile koşullu erişim, OAuth ile iOS cihazlarda daha güvenli kimlik doğr
 
 
 
-### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune mobil uygulama yönetimi (MAM) iletişim kutuları modern bir arabirime sahip <!-- 1199015 -->
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune mobil uygulama yönetimi (MAM) iletişim kutuları modern bir arabirime sahip olacaktır <!-- 1199015 -->
 
 Intune Mobil Uygulama Yönetimi (MAM) iletişim kutuları, modern bir görünüm ve hisse sahip olmak için güncelleştirilecek. İletişim kutuları, önceden olduğu gibi çalışmaya devam edecek.
 
@@ -344,13 +344,13 @@ Windows 10 için Şirket Portalı uygulaması, __Kategori__ etiketini başlığ�
 
 ## <a name="july-2017"></a>Temmuz 2017
 
-### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Uygulama Ayrıntıları sayfaları, Android cihazlar için yeni bilgiler görüntülenir <!--1287476-->
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Uygulama ayrıntıları sayfaları, Android cihazlar için yeni bilgiler görüntüler <!--1287476-->
 
 Android için Şirket Portalı uygulamasının uygulama ayrıntıları sayfası, BT yöneticisinin bu uygulama için tanımlamış olduğu uygulama kategorilerini görüntüler.
 
 ![Yeni uygulama ayrıntıları sayfası](./media/cp_android_appdetails_after_1708.png)
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Geliştirilmiş oturum açma deneyimini Şirket portalı uygulamalarında tüm platformlar için <!--User Story 1132123-->
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Tüm platformlar için Şirket Portalı uygulamalar arasında geliştirilmiş oturum açma deneyimi <!--User Story 1132123-->
 
 Android, iOS ve Windows için Intune Şirket Portalı uygulamalarında oturum açma deneyimini geliştirecek bir değişikliği önümüzdeki birkaç ay içinde piyasaya süreceğiz. Yeni kullanıcı deneyimi, Azure AD bu değişikliği gerçekleştirdiğinde Şirket Portalına yönelik tüm platformlarda görünecektir. Ayrıca, kullanıcılar artık tek kullanımlık bir kod ile başka bir cihazdan Şirket Portalında oturum açabilir. Bu, özellikle kullanıcıların kimlik bilgileri olmadan oturum açması gerektiğinde faydalıdır.  
 
@@ -461,7 +461,7 @@ Kullanıcılar iOS cihazlarında diğer Microsoft uygulamalarında oturum açmak
 
 ## <a name="april-2017"></a>Nisan 2017
 
-### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser ve Şirket portalı için yeni simgeler <!--918433, 918431-->
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser ve Şirket Portalı için yeni simgeler <!--918433, 918431-->
 
 Managed Browser uygulamasının hem Android hem de iOS sürümlerinin simgesi güncelleştiriliyor. Yeni simgede Enterprise Mobility + Security (EM+S) paketindeki diğer uygulamalarla tutarlı hale getirmek için güncelleştirilmiş Intune rozeti bulunacak.
 
@@ -482,7 +482,7 @@ Managed Browser uygulamasının hem Android hem de iOS sürümlerinin simgesi g�
 
 Şirket Portalı uygulamasının da Android, iOS ve Windows sürümlerinin simgeleri EM+S paketindeki diğer uygulamalarla daha tutarlı hale getirilmek üzere güncelleştiriliyor. Bu simgeler nisan ayından başlayarak mayıs ayının sonuna kadar kademeli olarak kullanıma sunulacak.
 
-### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>İlerleme göstergesi Android Şirket portalı uygulamasında oturum açmalarını sağlama <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android Şirket Portalı 'de oturum açma işlemi göstergesi <!--953374-->
 
 Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıcı uygulamayı başlattığında veya sürdürdüğünde oturum açma ilerleme göstergesi görüntüleniyor. Kullanıcının uygulamaya erişmesine izin verilmeden önce göstergede "Bağlanıyor..." ile başlayıp sırasıyla "Oturum açılıyor..." ve "Güvenlik gereksinimleri denetleniyor..."durumları gösteriliyor.
 
@@ -504,7 +504,7 @@ Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıc�
 </body>
 </html>
 
-### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Geliştirilmiş Windows 10 Şirket portalı uygulaması yükleme durumu <!--676495-->
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 Şirket Portalı uygulaması için geliştirilmiş uygulama yüklemesi durumu <!--676495-->
 Windows 10 Şirket Portalı uygulaması, artık uygulama ayrıntıları sayfasında bir yükleme durum çubuğu içermektedir. Bu, Windows 10 Yıldönümü Güncelleştirmesi ve üzeri çalıştıran cihazlardaki modern uygulamalar için desteklenir.
 
 __Önce__ ![Yükleme ekranının önceki sürümünün, durum olarak yalnızca 'yükleniyor' ifadesinin gösterildiği bir görüntüsü.](./media/cp_win10_install_status_before_1704.png)
@@ -513,18 +513,18 @@ __Sonra__ ![Yükleme ekranının güncelleştirilmiş sürümünün, şimdi bir 
 
 ## <a name="february-2017"></a>Şubat 2017
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android için Şirket portalı uygulaması için yeni kullanıcı deneyimi <!--621622, announced 1702-->
+### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Android için Şirket Portalı uygulaması için yeni kullanıcı deneyimi <!--621622, announced 1702-->
 Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kılavuzuna](https://material.io/guidelines/material-design/introduction.html) uygun olarak modern bir tasarıma sahip olacak. Bu gelişmiş kullanıcı deneyimi şunları içeriyor olacak:
 
 * __Renkler__: Sekme başlıklarının renkleri özel renk paletinize göre değiştirilebilir.
 
 ![Solda, Android Şirket Portalı uygulamasının güncelleştirme öncesi görüntüsü. Sağda, Android Şirket Portalı uygulamasının güncelleştirme sonrası görüntüsü. Her iki görüntüde de Uygulamalar, Cihazlar ve BT'ye Başvur sekmelerinden Cihazlar sekmesi seçili olarak gösterilmektedir.](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __Arabirimi__: __Öne çıkan uygulamalar__ ve __tüm uygulamalar__ düğmeleri güncelleştirildi __uygulamaları__ sekmesi. __Arama__ düğmesi artık kayan eylem düğmesi şeklinde.
+* __Arabirim__: __Öne çıkan uygulamalar__ ve __tüm uygulamalar__ düğmeleri __uygulamalar__ sekmesinde güncelleştirilmiştir. __Arama__ düğmesi artık kayan eylem düğmesi şeklinde.
 
 ![Solda, Android Şirket Portalı uygulamasının güncelleştirme öncesi görüntüsü. Sağda, Android Şirket Portalı uygulamasının güncelleştirme sonrası görüntüsü. Her iki görüntüde de Uygulamalar, Cihazlar ve BT'ye Başvur sekmelerinden Uygulamalar sekmesi seçili olarak gösterilmektedir.](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __Gezinti__: Tüm uygulamaları gösterir sekmeler halinde görüntüleniyor __öne çıkan__, __tüm__ ve __kategorileri__ daha kolay gezinme için. __BT'ye Başvur__ sekmesi daha kolay okunur hale getirilmiştir.
+* __Gezinti__: Tüm uygulamalar, daha kolay gezinme için __öne çıkan__, __hepsi__ ve __kategorilerin__ sekmeli bir görünümünü gösterir. __BT'ye Başvur__ sekmesi daha kolay okunur hale getirilmiştir.
 
 <html>
 <body>
@@ -540,7 +540,7 @@ Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kı
 
 ## <a name="january-2017"></a>Ocak 2017
 
-### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>Şirket portalı Web sitesi modernleştiriliyor <!--753980, announced 1701-->
+### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>Şirket Portalı Web sitesini modernize etme <!--753980, announced 1701-->
 Şubat ayından itibaren Şirket Portalı web sitesi, yönetilen cihazlara sahip olmayan kullanıcıları hedefleyen uygulamaları destekleyecek. Karşıt renklerden oluşan yeni renk düzeni ve dinamik çizimlerle yeniden tasarlanan web sitesi, yardım masası ilgili kişisine ilişkin ayrıntıların yanı sıra yönetilen mevcut cihazlara yönelik bilgilerin bulunduğu bir "hamburger menüsü" ![Şirket Portalı web sitesinin sol üst köşesine eklenmiş olan hamburger menüsünün küçük resmi](./media/CP_hamburger_menu.png) eklenerek diğer Microsoft ürün ve hizmetleriyle uyumlu hale getirilecek. Kullanıcılara sunulan uygulamaları vurgulayacak şekilde yeniden düzenlenecek olan giriş sayfasında, Öne Çıkan ve Son Güncelleştirilen uygulamaların görüntülendiği döngüler yer alacak.
 
 ![Sol tarafta, Uygulamalar, Cihazlarım ve Öne Çıkanlar ve Kategoriler görünümlerinin önceki sürümleriyle Şirket Portalı web sitesinin mevcut sürümünün bir görüntüsü bulunur. Sağ tarafta, yenilenen uygulama döngüsü, En Son Yayımlanan uygulamaların listesi ve güncelleştirilen Kategoriler görünümüyle Şirket Portalı web sitesinin güncelleştirilmiş sürümünün bir görüntüsü bulunur.](./media/CP_Website_BeforeAfter_Feb2016.png)
@@ -549,10 +549,10 @@ Mart ayından itibaren Android Şirket Portalı uygulaması [Material Design kı
 Bunlar, kullanıcı arabirimimizi güncelleştirerek kullanıcı deneyimini geliştirme yollarımıza yönelik planlardır.
 
 > [!Note]
-> Aşağıdaki görüntülerin Önizleme sürümüne ait olabileceğini ve duyurulan sürümün farklı.  
+> Aşağıdaki görüntüler önizleme olabilir ve duyurulan ürün sunulan sürümlerden farklı olabilir.  
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform yol haritası](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune’daki yenilikler](https://docs.microsoft.com/intune/whats-new)

@@ -1,6 +1,6 @@
 ---
-title: Genel endpoint protection iletileri Microsoft Intune - Azure | Microsoft Docs
-description: "Bkz: Genel iletileri ve kullanarak ve endpoint protection ve Windows Defender'ın Microsoft Intune sorun giderme olası çözüm."
+title: Microsoft Intune-Azure 'da ortak uç nokta koruma iletileri | Microsoft Docs
+description: Microsoft Intune 'da Endpoint Protection ve Windows Defender kullanırken ve sorunlarını giderirken ortak iletilere ve olası çözüme bakın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,37 +17,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402640"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353346"
 ---
-# <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Uç nokta koruma sorunları ve olası çözümlerini Microsoft Intune
+# <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune uç nokta koruma sorunları ve olası çözümleri
 
-Bu makale, listeler ve olası nedenler ve çözümler bazı hatalar ve Uyarılar için açıklar. Endpoint protection'ı kullanırken, sorunların çözümüne yardımcı olmak için bilgileri kullanın.
+Bu makalede, bazı hatalar ve uyarılar için olası nedenler ve çözümler listelenmektedir ve açıklanmaktadır. Endpoint Protection kullanırken sorunları çözmeye yardımcı olması için bu bilgileri kullanın.
 
 ## <a name="windows-defender-error-codes"></a>Windows Defender hata kodları
 
-Olay Günlükleri ve hata kodları inceleyin [Windows Defender AV ile ilgili sorunları giderme](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
+[Windows Defender av ile ilgili sorunları gidermek](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)için olay günlüklerini ve hata kodlarını gözden geçirin.
 
-## <a name="common-intune-errors-and-possible-resolutions"></a>Genel Intune hataları ve olası çözümleri
+## <a name="common-intune-errors-and-possible-resolutions"></a>Yaygın Intune hataları ve olası çözümleri
 
-#### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection altyapısı kullanılamıyor
+### <a name="endpoint-protection-engine-unavailable"></a>Endpoint Protection altyapısı kullanılamıyor
 
 **Olası neden**: Intune Endpoint Protection altyapısı bozuk veya silinmiş.
 
 **Olası çözümler**:
 
-- Endpoint protection bozuk veya güncelleştirme kalmaz, ardından güncelleştirin veya program yeniden yükleyin.
-- Bir güncelleştirmeyi hemen uygulamak. (Büyük olasılıkla çubuğunda) uç nokta koruma istemci programında seçin **güncelleştirme**.
-- Denetim Masası'ndaki > Programlar, **Microsoft Intune Endpoint Protection Aracısı**. Uygulamayı kaldırın.
+- Endpoint Protection bozuksa veya güncelleştirmez, sonra programı güncelleştirin veya yeniden yükleyin.
+- Anında güncelleştirmeye zorla. Endpoint Protection istemci programında (muhtemelen görev çubuğunda) **Güncelleştir**' i seçin.
+- Denetim Masası > Programlar ' da **Microsoft Intune Endpoint Protection Aracısı**' nı seçin. Uygulamayı kaldırın.
 - Sonraki güncelleştirme eşitlemesinde, Microsoft Online Management Güncelleştirme Yöneticisi eksik programı algılar ve zamanlanan yükleme sırasında yeniden yükler.
 
-#### <a name="features-are-disabled"></a>Özellikleri devre dışı bırakılır
+### <a name="features-are-disabled"></a>Özellikler devre dışı
 
-Bazı özellikler devre dışı belirten bir ileti alabilirsiniz. Intune endpoint protection veya Windows Defender yapılandırma profili kullanarak bir yönetici tarafından devre dışı bırakılırsa, bu iletileri gerçekleşebilir. Veya cihazdaki bir son kullanıcı tarafından devre dışı. Olası iletileri:
+Bazı özelliklerin devre dışı bırakıldığını belirten bir ileti alabilirsiniz. Intune Endpoint Protection veya Windows Defender bir yapılandırma profili kullanan bir yönetici tarafından devre dışı bırakılmışsa bu iletiler gerçekleşebilir. Veya, cihazdaki bir son kullanıcı tarafından devre dışı bırakıldı. Olası iletiler:
 
 `Endpoint Protection disabled`  
 `Real-time protection disabled`  
@@ -57,30 +57,30 @@ Bazı özellikler devre dışı belirten bir ileti alabilirsiniz. Intune endpoin
 `Script scanning disabled`  
 `Network Inspection System disabled`  
 
-**Olası çözümler**: Bu özellikleri sağlar. Yönergeler için bkz:
+**Olası çözümler**: Bu özellikleri etkinleştirin. Rehberlik için bkz.:
 
-- [Endpoint protection ayarları ekleme](endpoint-protection-configure.md)
+- [Endpoint Protection ayarları ekle](endpoint-protection-configure.md)
 - [Windows Defender virüsten koruma](device-restrictions-windows-10.md#windows-defender-antivirus)
-- [Son kullanıcılar: Gerçek zamanlı korumayı şirket kaynaklarına erişim](/intune-user-help/turn-on-defender-windows)
+- [Son kullanıcılar: Şirket kaynaklarına erişmek için gerçek zamanlı korumayı açın](/intune-user-help/turn-on-defender-windows)
 
-#### <a name="malware-definitions-out-of-date"></a>Kötü amaçlı yazılım tanımları güncel değil
+### <a name="malware-definitions-out-of-date"></a>Kötü amaçlı yazılım tanımları güncel değil
 
-Bu durum, cihazdaki kötü amaçlı yazılım tanımları 14 gün veya daha eski olduğunda gösterir. Örneğin, cihazın Internet bağlantısı kesildiğinde veya kötü amaçlı yazılım tanımlarını güncel ileti görüntülenebilir.
+Bu durum, cihazdaki kötü amaçlı yazılım tanımlarının 14 gün veya daha fazla zaman aşımına uğrar olduğunu gösterir. Örneğin ileti, cihazın Internet bağlantısı kesildiğinde veya kötü amaçlı yazılım tanımlarının güncel olup olmadığını gösterebilir.
 
-**Olası çözümler**: Kötü amaçlı yazılım tanımları güncel değilse kullanarak tanımları güncelleştirme [Windows Defender virüsten koruma](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Olası çözümler**: Kötü amaçlı yazılım tanımları güncel değilse, tanımları [Windows Defender virüsten koruma](device-restrictions-windows-10.md#windows-defender-antivirus)kullanarak güncelleştirin.
 
-#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Tam tarama süresi doldu veya hızlı tarama süresi doldu
+### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Tam Tarama süresi doldu veya hızlı tarama süresi doldu
 
-14 gün boyunca bir tam tarama veya hızlı tarama tamamlandı edilmemiş. Tam tarama sırasında cihaz yeniden başlatılırsa bu senaryo gerçekleşebilir.
+14 gün boyunca tam tarama veya hızlı tarama tamamlanmadı. Bu senaryo, tam tarama sırasında cihaz yeniden başlatılırsa meydana gelebilir.
 
-**Olası çözümler**: Bir taramanın süresi dolduysa, tek seferlik bir tarama çalıştırabilir veya yinelenen taramalar zamanlayabilirsiniz. Bkz. [Windows Defender Virüsten Koruma](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Olası çözümler**: Taramanın süresi dolduysa, bir kerelik tarama çalıştırabilir veya yinelenen taramalar zamanlayabilirsiniz. Bkz. [Windows Defender Virüsten Koruma](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="another-endpoint-protection-application-running"></a>Başka bir uç nokta koruma uygulaması çalışıyor
+### <a name="another-endpoint-protection-application-running"></a>Başka bir uç nokta koruma uygulaması çalışıyor
 
-Başka bir uç nokta koruma uygulaması çalışıyor ve aygıt iyi durumda.
+Başka bir uç nokta koruma uygulaması çalışıyor ve cihaz sağlıklı.
 
 **Olası çözümler**: Başka bir uç nokta koruma uygulaması yüklüyse ve Intune bu uygulamayı algılarsa, cihaz kararsız hale gelebilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Alma [destekleyen Microsoft gelen Yardım](get-support.md), veya [topluluk forumları](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).
+[Microsoft 'un destek yardımına](get-support.md)ulaşın veya [topluluk forumlarını](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)kullanın.

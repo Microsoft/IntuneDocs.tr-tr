@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547362"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353766"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -30,23 +30,23 @@ Bu makale, altyapınızın nasıl yapılandırılacağı ve ardından Intune ile
 
 - **Active Directory etki alanı**: Bu bölümde listelenen tüm sunucular (Web Uygulaması Ara Sunucusu hariç), Active Directory etki alanınıza katılmalıdır.
 
-- **Sertifika yetkilisi** (CA): Bir Microsoft sertifika yetkilisi (Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan kuruluş CA) olması gerekir. Tek Başına CA desteklenmez. Ayrıntılar için bkz. [Sertifika Yetkilisi'ni yükleme](https://technet.microsoft.com/library/jj125375.aspx).
+- **Sertifika yetkilisi** (CA): Windows Server 2008 R2 veya üzeri bir Enterprise sürümünde çalışan bir Microsoft Kuruluş sertifika yetkilisi (CA) olmalıdır. Tek Başına CA desteklenmez. Ayrıntılar için bkz. [Sertifika Yetkilisi'ni yükleme](https://technet.microsoft.com/library/jj125375.aspx).
     CA'nız Windows Server 2008 R2 çalıştırıyorsa, [KB2483564 ile gelen düzeltmeyi yüklemeniz](http://support.microsoft.com/kb/2483564/)gerekir.
 
-- **NDES sunucusu**: Bir Windows Server 2012 R2 veya sonraki sürümlerde, ağ cihazı kayıt hizmeti (NDES) sunucusu rolü ayarlayın. Intune, Enterprise CA çalıştıran bir sunucuda NDES kullanımını desteklemez. Windows Server 2012 R2’yi NDES’yi barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](https://technet.microsoft.com/library/hh831498.aspx).
-NDES sunucusu, Enterprise CA ile aynı ormanda bulunan bir etki alanına katılmış olmalıdır. NDES sunucusunu ayrı bir ormanda, yalıtılmış ağda veya iç etki alanında dağıtma hakkında daha fazla bilgi, [Ağ Cihazı Kayıt Hizmeti ile İlke Modülü Kullanma](https://technet.microsoft.com/library/dn473016.aspx) başlığı altında bulunabilir. Başka bir MDM ile zaten kullanıldığı bir NDES sunucusunu kullanmak mümkün değildir
+- **NDES sunucusu**: Windows Server 2012 R2 veya sonraki sürümlerde, ağ cihazı kayıt hizmeti (NDES) sunucu rolünü ayarlayın. Intune, Enterprise CA çalıştıran bir sunucuda NDES kullanımını desteklemez. Windows Server 2012 R2’yi NDES’yi barındıracak şekilde yapılandırma yönergeleri için bkz. [Ağ Cihazı Kayıt Hizmeti Kılavuzu](https://technet.microsoft.com/library/hh831498.aspx).
+NDES sunucusu, Enterprise CA ile aynı ormanda bulunan bir etki alanına katılmış olmalıdır. NDES sunucusunu ayrı bir ormanda, yalıtılmış ağda veya iç etki alanında dağıtma hakkında daha fazla bilgi, [Ağ Cihazı Kayıt Hizmeti ile İlke Modülü Kullanma](https://technet.microsoft.com/library/dn473016.aspx) başlığı altında bulunabilir. Zaten başka bir MDM ile kullanılmakta olan bir NDES sunucusu kullanmak mümkün değildir.
 
-- **Microsoft Intune sertifika Bağlayıcısı**: Intune portalında, Git **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**, izlenebilmesini *adımları SCEP bağlayıcısını yükleme*. Sertifika Bağlayıcısı Installer indirmeye başlamak için portalda indirme bağlantısı kullanmak **NDESConnectorSetup.exe**.  NDES rolüne sahip bir sunucuda bu yükleyiciyi çalıştırın.  
+- **Microsoft Intune sertifika Bağlayıcısı**: Intune portalında **cihaz yapılandırma** > **sertifikası bağlayıcıları** > **Ekle**' ye gidin ve *SCEP için bağlayıcı 'yı yüklemek için adımları*izleyin. Sertifika Bağlayıcısı yükleyicisini **Ndesconnectorsetup. exe**' yi indirmeye başlamak için portaldaki indirme bağlantısını kullanın.  NDES rolüne sahip bir sunucuda bu yükleyiciyi çalıştırın.  
 
-Bu sertifikayı NDES bağlayıcı ayrıca Federal Bilgi İşleme Standardı (FIPS) modunu destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
+Bu NDES sertifika Bağlayıcısı Ayrıca federal bilgi Işleme standardı (FIPS) modunu destekler. FIPS gerekli değildir ancak etkinleştirildiğinde sertifika verebilir ve iptal edebilirsiniz.
 
-- **Web uygulaması Ara sunucusu** (isteğe bağlı): Windows Server 2012 R2 çalıştıran bir sunucu kullanın veya daha yeni bir Web uygulaması Ara sunucusu (WAP) sunucusu olarak. Bu yapılandırma:
+- **Web uygulaması ara sunucusu** (isteğe bağlı): Web uygulaması ara sunucusu (WAP) sunucusu olarak Windows Server 2012 R2 veya üstünü çalıştıran bir sunucu kullanın. Bu yapılandırma:
   - Cihazların bir İnternet bağlantısını kullanarak sertifikaları almasını sağlar.
   - Cihazlar sertifikaları almak ve yenilemek için İnternet üzerinden bağlanıyorsa güvenlik açısından önerilir.
   
-- **Azure AD uygulama proxy'si** (isteğe bağlı): Azure AD uygulama proxy'si, NDES sunucusunun Internet'e yayımlamak için ayrılmış bir Web uygulaması Ara sunucusu (WAP) sunucusu yerine kullanılabilir. Daha fazla bilgi için bkz. [Şirket içi uygulamalara güvenli uzaktan erişim sağlama](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+- **Azure AD uygulama ara sunucusu** (isteğe bağlı): Azure AD Uygulama Ara Sunucusu, NDES sunucusunu Internet 'Te yayımlamak için adanmış bir Web uygulaması ara sunucusu (WAP) sunucusu yerine kullanılabilir. Daha fazla bilgi için bkz. [Şirket içi uygulamalara güvenli uzaktan erişim sağlama](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
-#### <a name="additional"></a>Ek
+### <a name="additional"></a>Ek
 
 - WAP'ı barındıran sunucular, Ağ Cihazı Kayıt Hizmeti tarafından kullanılan uzun URL'ler için destek sağlayan [bir güncelleştirmeyi yüklemelidir](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) . Bu güncelleştirmeyi [Aralık 2014 güncelleştirme paketi](http://support.microsoft.com/kb/3013769)ile birlikte veya [KB3011135](http://support.microsoft.com/kb/3011135)güncelleştirmesinden tek başına edinebilirsiniz.
 - WAP sunucusunda dış istemcilere yayımlanan adla eşleşen bir SSL sertifikası olmalı ve NDES sunucusunda kullanılan SSL sertifikasına güvenilmelidir. Bu sertifikalar, WAP sunucusunun istemcilerden gelen SSL bağlantıyı sonlandırmasına ve NDES sunucusuna yeni bir SSL bağlantı oluşturmasına imkan sağlar.
@@ -68,7 +68,7 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 |**Sertifika Şablonu**|Bu şablonu sertifika veren CA'nız üzerinde yapılandırın.|
 |**İstemci kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu sertifikayı NDES Sunucusu'na yüklersiniz.|
 |**Sunucu kimlik doğrulama sertifikası**|Sertifika veren CA'nızdan veya genel CA'dan istenen bu SSL sertifikasını NDES Sunucusu'ndaki IIS'de yüklersiniz ve bağlarsınız. Sertifikada istemci ve sunucu kimlik doğrulaması anahtar kullanımları ayarlıysa (**Gelişmiş Anahtar Kullanımları**) aynı sertifikayı kullanabilirsiniz.|
-|**Güvenilen Kök CA sertifika**|Bu sertifikayı, kök CA’sından veya kök CA’sına güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarırsınız. Ardından, kullanıcılar, cihazlar veya her iki kullanarak güvenilen CA sertifika profili atayın.<br /> **Not:<br />atadığınızdan emin olun, bir SCEP sertifika profili atandığında *güvenilen kök sertifika profilini* SCEP sertifika profili aynı kullanıcı veya cihaz grubuna başvuru.  Bu profili oluşturmak için bkz [bir güvenilen sertifika profili oluşturma](certficates-pfx-configure.md#create-a-trusted-certificate-profile), PKCS sertifika profilleri makalesinde belirtilmiştir.** <br/><br />İşletim sistemi platformu başına tek bir güvenilen kök CA sertifikasını kullanın ve oluşturduğunuz her güvenilen kök sertifika profiliyle ilişkilendirin. <br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
+|**Güvenilen Kök CA sertifika**|Bu sertifikayı, kök CA’sından veya kök CA’sına güvenen herhangi bir cihazdan bir **.cer** dosyası olarak dışarı aktarırsınız. Ardından, güvenilir CA sertifika profilini kullanarak bu uygulamayı kullanıcılara, cihazlara veya her ikisine de atayın.<br /> **Note:<br />bir SCEP sertifika profili atandığında, SCEP sertifika profilinize başvuruda bulunulan *Güvenilen kök sertifika profilini* aynı kullanıcı veya cihaz grubuna atadığınızdan emin olun.  Bu profili oluşturmak için, bkz. PKCS sertifika profillerinde makalesinde belgelenen [bir güvenilen sertifika profili oluşturma](certficates-pfx-configure.md#create-a-trusted-certificate-profile).** <br/><br />İşletim sistemi platformu başına tek bir güvenilen kök CA sertifikası kullanın ve bunu oluşturduğunuz her bir güvenilen kök sertifika profili ile ilişkilendirin. <br /><br />Gerektiğinde ek Güvenilen Kök CA sertifikaları kullanabilirsiniz. Örneğin, Wi-Fi erişim noktalarınız için sunucu kimlik doğrulama sertifikalarını imzalayan bir CA'ya güven sağlamak için bunu yapabilirsiniz.|
 
 ### <a name="accounts"></a>Hesaplar
 
@@ -79,17 +79,17 @@ NDES sunucusunun [Azure AD uygulama ara sunucusu](https://azure.microsoft.com/do
 ## <a name="configure-your-infrastructure"></a>Altyapınızı yapılandırın
 Sertifika profillerini yapılandırabilmek için önce aşağıdaki adımları tamamlayın. Bu adımlar, Windows Server 2012 R2 veya üzeri sürümler ile Active Directory Sertifika Hizmetleri (ADCS) bilgisi gerektirir:
 
-#### <a name="step-1---create-an-ndes-service-account"></a>Adım 1 - NDES hizmet hesabı oluşturma
+### <a name="step-1---create-an-ndes-service-account"></a>Adım 1 - NDES hizmet hesabı oluşturma
 
 NDES hizmet hesabı olarak kullanılacak bir etki alanı kullanıcı hesabı oluşturun. NDES’i yükleyip yapılandırmadan önce, sertifika veren CA’da şablonları yapılandırırken bu hesabı girersiniz. Kullanıcının **Yerel Olarak Oturum Açma**, **Hizmet Olarak Oturum Açma** ve **Toplu iş olarak oturum açma** varsayılan haklarına sahip olduğundan emin olun. Bazı kuruluşların söz konusu hakları devre dışı bırakan sağlamlaştırma ilkeleri vardır.
 
-#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Adım 2 - Sertifika yetkilisinde sertifika şablonlarını yapılandırma
+### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Adım 2 - Sertifika yetkilisinde sertifika şablonlarını yapılandırma
 Bu adımda şunları yapacaksınız:
 
 - NDES için bir sertifika şablonu yapılandırma
 - NDES için oluşturulan sertifika şablonunu yayımlama
 
-##### <a name="configure-the-certification-authority"></a>Sertifika yetkilisini yapılandırma
+#### <a name="configure-the-certification-authority"></a>Sertifika yetkilisini yapılandırma
 
 1. Kuruluş yöneticisi olarak oturum açın.
 
@@ -115,7 +115,7 @@ Bu adımda şunları yapacaksınız:
    - **Güvenlik**’te NDES hizmet hesabını ekleyin ve bu hesaba şablon üzerinde **Kaydetme** izinleri verin. SCEP profillerini oluşturan Intune yöneticilerinin, SCEP profillerini oluştururken şablona göz atabilmeleri için **Okuma** hakları olmalıdır.
 
      > [!NOTE]
-     > Sertifikaları iptal etmek için NDES hizmet hesabı gerekiyor. *Sertifikaları Yayımla ve Yönet* sertifika yetkilisinde hakları. Bu izin için temsilci seçmek için sertifika yetkilisi yönetim konsolunu açın ve sertifika yetkilisi adına sağ tıklayın. Ardından güvenlik sekmesinde ekleyin veya hesabı seçin ve onay kutusunu seçip **Sertifikaları Yayımla ve Yönet**.
+     > Sertifikaları iptal etmek için, NDES hizmet hesabının sertifika yetkilisinde *sertifika verme ve yönetme* hakları olması gerekir. Bu izni devretmek için, sertifika yetkilisi Yönetim konsolunu açın ve sertifika yetkilisi adına sağ tıklayın. Ardından, Güvenlik sekmesinde hesabı ekleyin veya seçin ve ardından **sertifika verme ve yönetme**onay kutusunu seçin.
 
 
 3. Şablonun **Genel** sekmesindeki **Geçerlilik süresi** 'ni gözden geçirin. Varsayılan olarak, Intune şablonda yapılandırılan değeri kullanır. Ancak CA’yı, istekte bulunan kişinin farklı bir değer girmesine izin verecek şekilde yapılandırabilirsiniz ve bu değeri daha sonra Intune yönetim konsolundan ayarlayabilirsiniz. Her zaman şablondaki değeri kullanmak istiyorsanız bu adımın geri kalanını atlayın.
@@ -150,7 +150,7 @@ Bu adımda şunları yapacaksınız:
 
 3. Şablonu **Sertifika Şablonları** klasöründe görüntüleyerek yayımlandığını doğrulayın.
 
-#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Adım 3 - NDES sunucusunda önkoşulları yapılandırma
+### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Adım 3 - NDES sunucusunda önkoşulları yapılandırma
 Bu adımda şunları yapacaksınız:
 
 - NDES'i bir Windows Server'a ekleyin ve IIS'yi NDES'i destekleyecek biçimde yapılandırın
@@ -190,7 +190,7 @@ Bu adımda şunları yapacaksınız:
 
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
-#### <a name="step-4---configure-ndes-for-use-with-intune"></a>Adım 4 - NDES’i Intune’la kullanılacak şekilde yapılandırma
+### <a name="step-4---configure-ndes-for-use-with-intune"></a>Adım 4 - NDES’i Intune’la kullanılacak şekilde yapılandırma
 Bu adımda şunları yapacaksınız:
 
 - NDES'i sertifika veren CA ile kullanmak için yapılandırma
@@ -241,7 +241,7 @@ Bu adımda şunları yapacaksınız:
 
     **503 Hizmet kullanılamıyor** hatası alırsanız, olay görüntüleyicisini gözden geçirin. NDES kullanıcısı için bir hakkın eksik olması nedeniyle uygulama havuzu durdurulmuş olabilir. Bu haklar 1. Adım'da açıklanmıştır.
 
-##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>NDES Sunucusu’nda sertifika yükleme ve bağlama
+#### <a name="install-and-bind-certificates-on-the-ndes-server"></a>NDES Sunucusu’nda sertifika yükleme ve bağlama
 
 1. NDES Sunucunuzda, iç CA'nızdan veya genel CA'dan bir **sunucu kimlik doğrulaması** sertifikası isteyin ve yükleyin. Ardından bu SSL sertifikasını IIS'de bağlarsınız.
 
@@ -263,11 +263,11 @@ Bu adımda şunları yapacaksınız:
 
     İstemci kimlik doğrulama sertifikasının aşağıdaki özelliklere sahip olması gerekir:
 
-    - **Gelişmiş anahtar kullanımı**: Bu değeri içermelidir **istemci kimlik doğrulaması**
+    - **Gelişmiş anahtar kullanımı**: Bu değer **Istemci kimlik doğrulamasını** içermelidir
 
-    - **Konu adı**: Değer (NDES sunucusu) sertifika yüklemekte sunucunun DNS adına eşit olmalıdır
+    - **Konu adı**: Değer, sertifikayı yüklemekte olduğunuz sunucunun DNS adına eşit olmalıdır (NDES sunucusu)
 
-##### <a name="configure-iis-request-filtering"></a>IIS istek filtrelemeyi yapılandırma
+#### <a name="configure-iis-request-filtering"></a>IIS istek filtrelemeyi yapılandırma
 
 1. NDES Sunucusu’nda **IIS Yöneticisi**’ni açın, **Bağlantılar** bölmesinden **Varsayılan Web Sitesi**’ni seçin ve ardından **İstek Filtreleme**’yi açın.
 
@@ -282,33 +282,33 @@ Bu adımda şunları yapacaksınız:
 
     Aşağıdaki değerlerin DWORD girişleri olarak ayarlandığını doğrulayın:
 
-    - Ad: **MaxFieldLength**, ondalık bir değer ile **65534**
-    - Ad: **MaxRequestBytes**, ondalık bir değer ile **65534**
+    - Ad: **MaxFieldLength**, ondalık değeri **65534** ile
+    - Ad: **MaxRequestBytes**, ondalık değeri **65534** ile
 
 4. NDES sunucusunu yeniden başlatın. Sunucu artık Sertifika Bağlayıcısı'nı desteklemeye hazırdır.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Adım 5 - Intune sertifika bağlayıcısını etkinleştirme, yükleme ve yapılandırma
+### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Adım 5 - Intune sertifika bağlayıcısını etkinleştirme, yükleme ve yapılandırma
 Bu adımda şunları yapacaksınız:
 
 - Intune’da NDES desteğini etkinleştirme.
 - Basit Sertifika Kayıt Protokolü (NDES) rolünü barındıran sunucuda Sertifika Bağlayıcısı’nı indirin, yükleyin ve yapılandırın. Kuruluşunuzdaki NDES uygulamasının ölçeğini artırmak için istediğiniz sayıda NDES sunucusuna Microsoft Intune Sertifika Bağlayıcısı yükleyebilirsiniz.
 
-##### <a name="download-install-and-configure-the-certificate-connector"></a>Sertifika bağlayıcısını indirme, yükleme ve yapılandırma
+#### <a name="download-install-and-configure-the-certificate-connector"></a>Sertifika bağlayıcısını indirme, yükleme ve yapılandırma
 
 > [!IMPORTANT] 
 > Microsoft Intune Sertifika Bağlayıcısı, ayrı bir Windows sunucusunda yüklü **olmalıdır**. Sertifika veren Sertifika Yetkilisi’ne (CA) yüklenemez. Ayrıca Ağ Cihazı Kayıt Hizmeti (NDES) rolüyle aynı sunucuda da yüklü **olmalıdır**.
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seçin **cihaz Yapılandırması** > **sertifika Bağlayıcılar** > **Ekle**.
-3. İndirin ve bağlayıcı için SCEP dosyasını kaydedin. Bağlayıcıyı yüklemek için nereye gideceğinizi NDES sunucudan erişilebilir bir konuma kaydedin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. **Cihaz yapılandırması** > **sertifika bağlayıcıları** > **Ekle**' yi seçin.
+3. SCEP dosyası için bağlayıcıyı indirin ve kaydedin. Bağlayıcıyı yükleyeceğiniz NDES sunucusundan erişilebilen bir konuma kaydedin.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. İndirme tamamlandıktan sonra ağ cihazı kayıt hizmeti (NDES) barındıran NDES sunucusuna gidin. Daha sonra:
+4. Yükleme tamamlandıktan sonra, ağ cihazı kayıt hizmeti 'ni (NDES) barındıran NDES sunucusuna gidin. Daha sonra:
 
     1. NDES Sertifika bağlayıcısının gerektirdiği .NET 4.5 Framework’ün yüklü olduğundan emin olun. .NET 4.5 Framework, Windows Server 2012 R2 ve daha yeni sürümlere otomatik olarak eklenir.
-    2. Yükleyiciyi çalıştırmak için sunucu yönetici haklarına sahip bir hesap kullanın (**NDESConnectorSetup.exe**). Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. CRP Web Hizmeti yani CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.
+    2. Yükleyiciyi çalıştırmak için sunucuda yönetici haklarına sahip bir hesap kullanın (**Ndesconnectorsetup. exe**). Yükleyici, NDES ve CRP Web Hizmeti için ilke modülünü de yükler. CRP Web Hizmeti yani CertificateRegistrationSvc, IIS'de bir uygulama olarak çalışır.
 
     > [!NOTE]
     > Tek başına Intune için NDES yüklediğinizde, CRP hizmeti Sertifika Bağlayıcısı ile otomatik olarak yüklenir. Intune’u Configuration Manager ile kullandığınızda, Sertifika Kayıt Noktası'nı ayrı bir site sistem rolü olarak yüklersiniz.
@@ -325,7 +325,7 @@ Bu adımda şunları yapacaksınız:
     > [!TIP]
     > Sertifika Bağlayıcısı Kullanıcı Arabirimi'ni başlatmadan sihirbazı kapatırsanız, aşağıdaki komutu çalıştırarak yeniden açabilirsiniz:
     >
-    > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
+    > < install_Path > \NDESConnectorUI\NDESConnectorUI.exe
 
 7. **Sertifika Bağlayıcısı** kullanıcı arabiriminde:
 
@@ -336,7 +336,7 @@ Bu adımda şunları yapacaksınız:
 
     Kuruluşunuz bir ara sunucu kullanıyorsa ve NDES sunucusunun İnternet’e erişmesi için ara sunucu gerekliyse **Ara sunucu kullan**’a tıklayın. Daha sonra, bağlanmak için ara sunucu adını, bağlantı noktasını ve hesap kimlik bilgilerini girin.
 
-    **Gelişmiş** sekmesini seçin ve ardından sertifika veren Sertifika Yetkilinizde **Sertifika Ver ve Yönet** iznine sahip olan bir hesabın kimlik bilgilerini girin. Yaptığınız değişiklikleri **uygulayın**. Bu izin için NDES hizmet hesabı temsilcisi durumunda olduğunda [sertifika yetkilinizi yapılandırma](#configure-the-certification-authority), o hesabı belirtin. 
+    **Gelişmiş** sekmesini seçin ve ardından sertifika veren Sertifika Yetkilinizde **Sertifika Ver ve Yönet** iznine sahip olan bir hesabın kimlik bilgilerini girin. Yaptığınız değişiklikleri **uygulayın**. [Sertifika yetkilinizi YAPıLANDıRıRKEN](#configure-the-certification-authority)NDES hizmeti hesabınız için bu izni temsilci seçtiyseniz, bu hesabı burada belirtin. 
 
     Şimdi Sertifika Bağlayıcısı kullanıcı arabirimini kapatabilirsiniz.
 
@@ -351,7 +351,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 
 ## <a name="create-a-scep-certificate-profile"></a>Bir SCEP sertifika profili oluşturma
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. SCEP sertifika profili için bir **Ad** ve **Açıklama** girin.
 4. **Platform** açılan listesinde, bu SCEP sertifikası için cihaz platformunu seçin. Şu anda, cihaz kısıtlama ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
@@ -365,15 +365,15 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 5. **Profil** türü açılan listesinde **SCEP sertifikası**’nı seçin.
 6. Aşağıdaki ayarları girin:
 
-   - **Sertifika türü**: Seçin **kullanıcı** kullanıcı sertifikaları için. A **kullanıcı** sertifika türü, konu ve SAN sertifika hem kullanıcı hem de cihaz öznitelikleri içerir.  Seçin **cihaz** bilgi noktaları gibi Kullanıcısız cihazlar gibi senaryolar için ya da Windows cihazlar için sertifika yerel bilgisayar sertifika deposunda yerleştirme. **Cihaz** sertifikalar, konu ve SAN sertifikanın cihaz özniteliklerine yalnızca içerebilir.  **Cihaz** sertifikaları aşağıdaki platformlar için bulunur:  
-     - Android Enterprise - iş profili
+   - **Sertifika türü**: Kullanıcı sertifikaları için **Kullanıcı** ' yı seçin. **Kullanıcı** sertifikası türü, sertifikanın konu ve San 'ı hem Kullanıcı hem de cihaz özniteliklerini içerebilir.  Sertifikayı yerel bilgisayar sertifika deposuna yerleştirerek, kiosks gibi Kullanıcı-daha az cihazlar veya Windows cihazları gibi senaryolar için **cihaz** ' ı seçin. **Cihaz** sertifikaları, sertifikanın konu ve San 'ı yalnızca cihaz özniteliklerini içerebilir.  **Cihaz** sertifikaları aşağıdaki platformlar için bulunur:  
+     - Android kurumsal Iş profili
      - iOS
      - Mac OS
      - Windows 8.1 ve üzeri
      - Windows 10 ve üzeri
 
 
-   - **Konu adı biçimi**: Nasıl Intune otomatik olarak konu adı sertifika isteğindeki seçin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
+   - **Konu adı biçimi**: Intune 'un sertifika isteğinde konu adını otomatik olarak nasıl oluşturduğunu seçin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
 
         **Kullanıcı sertifika türü**  
 
@@ -385,17 +385,17 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         - **E-posta olarak ortak ad**
         - **IMEI (Uluslararası Mobil Donanım Kimliği)**
         - **Seri numarası**
-        - **Özel**: Bu seçeneği belirlediğinizde bir **özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim iki değişkeni destekler: **Ortak ad (CN)** ve **e-posta (E)** . **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
+        - **Özel**: Bu seçeneği belirlediğinizde, bir **özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim iki değişkeni destekler: **Ortak ad (CN)** ve **e-posta (e)** . **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
 
-            - **CN={{UserName}}** : Kullanıcının kullanıcı asıl adı gibi janedoe@contoso.com
-            - **CN={{AAD_Device_ID}}** : Azure Active Directory (AD) bir cihaz kaydettiğinizde atanan bir kimliği. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
-            - **CN = {{SERIALNUMBER}}** : Genellikle bir cihazı tanımlamak için üretici tarafından kullanılan benzersiz seri numarası (SN)
-            - **CN={{IMEINumber}}** : Cep telefonunu tanımlamak için kullanılan uluslararası mobil ekipman kimliği (IMEI) benzersiz numarası
-            - **CN={{OnPrem_Distinguished_Name}}** : Virgül ile ayrılmış bir göreli ayırt edici ad dizisi `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN = {{username}}** : Kullanıcının Kullanıcı asıl adı, örneğinjanedoe@contoso.com
+            - **CN = {{AAD_Device_ID}}** : Azure Active Directory (AD) bir cihazı kaydettiğinizde atanan KIMLIK. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
+            - **CN = {{SERIALNUMBER}}** : Genellikle üretici tarafından bir cihazı tanımlamak için kullanılan benzersiz seri numarası (SN)
+            - **CN = {{ımekarmsayı}}** : Cep telefonu tanımlamak için kullanılan uluslararası mobil ekipman kimliği (ıMEı) benzersiz numarası
+            - **CN = {{OnPrem_Distinguished_Name}}** : Virgülle ayrılmış göreli ayırt edici adların sırası`CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 `{{OnPrem_Distinguished_Name}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onpremisesdistingishedname` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
-            - **CN={{onPremisesSamAccountName}}** : Yöneticiler, Azure Active Directory'den samAccountName özniteliğini eşitlenebilmesi Azure AD kullanarak AD connect adlı bir öznitelikte `onPremisesSamAccountName`. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
+            - **CN={{onPremisesSamAccountName}}** : Yöneticiler, Azure AD Connect 'i adlı `onPremisesSamAccountName`bir özniteliğe kullanarak Active Directory sAMAccountName özniteliğini Azure AD 'ye eşitleyebilir. Intune, bir sertifika verme isteği kapsamında SCEP sertifikasının konusunda bu değişkeni değiştirebilir.  samAccountName özniteliği, Windows'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan kullanıcı oturum açma adıdır. Kullanıcı oturum açma adının biçimi: `DomainName\testUser` veya yalnızca `testUser`.
 
                 `{{onPremisesSamAccountName}}` değişkenini kullanmak için [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak `onPremisesSamAccountName` kullanıcı özniteliğini Azure AD’nizle eşitlediğinizden emin olun.
 
@@ -433,7 +433,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         >  - Belirtilen cihaz değişkenleri desteklenmiyorsa profil cihaza yüklenmez. Örneğin IMEI numarası olmayan bir cihaza atanmış SCEP profilinde konu adı olarak {{IMEI}} kullanılırsa profil yüklemesi başarısız olur. 
 
 
-   - **Konu alternatif adı**: Intune otomatik olarak nasıl konu alternatif adı (SAN) değerlerini sertifika isteğinde oluşturacağını girin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
+   - **Konu diğer adı**: Intune 'un sertifika isteğinde konu alternatif adı (SAN) için değerleri otomatik olarak nasıl oluşturduğunu girin. Seçenekler, **Kullanıcı** ya da **Cihaz** sertifika türünü seçmenize bağlı olarak değişir. 
 
         **Kullanıcı sertifika türü**  
 
@@ -475,23 +475,23 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
         >  - Bir cihaz sertifikası için konuda veya SAN’da IMEI, Seri Numarası ve Tam Etki Alanı Adı gibi cihaz özellikleri kullanırken bunların cihaza erişimi olan birinin kandırma amacıyla değiştirilebileceğine dikkat edin.
         >  - Belirtilen cihaz değişkenleri desteklenmiyorsa profil cihaza yüklenmez. Örneğin IMEI numarası olmayan bir cihaza atanmış SCEP profilinde konu diğer adı olarak {{IMEI}} kullanılırsa profil yüklemesi başarısız olur.  
 
-   - **Sertifika geçerlilik süresi**: Çalıştırdıysanız `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` komutu veren bir özel bir geçerlilik süresine izin veren CA ' nın sertifikanın süresi dolmadan önce kalan süreyi girebilirsiniz.<br>Sertifika şablonundaki geçerlilik süresinden düşük bir değer girebilirsiniz ancak daha yüksek bir değer giremezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa beş yıl değerini giremezsiniz ancak bir yıl değerini girebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir. 
-   - **Anahtar depolama sağlayıcısı (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): Sertifika anahtarının depolandığı girin. Aşağıdaki değerlerden birini seçin:
+   - **Sertifika geçerlilik süresi**: Sertifika veren CA 'da `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` , özel bir geçerlilik süresine izin veren komutunu çalıştırdıysanız, sertifikanın süresi dolmadan önce kalan süreyi girebilirsiniz.<br>Sertifika şablonundaki geçerlilik süresinden düşük bir değer girebilirsiniz ancak daha yüksek bir değer giremezsiniz. Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa beş yıl değerini giremezsiniz ancak bir yıl değerini girebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir. 
+   - **Anahtar depolama sağlayıcısı (KSP)** (Windows Phone 8,1, Windows 8.1, Windows 10): Sertifika anahtarının depolandığı yeri girin. Aşağıdaki değerlerden birini seçin:
      - **Varsa Güvenilir Platform Modülü (TPM) KSP'sine, aksi halde Yazılım KSP'sine kaydol**
      - **Güvenilir Platform Modülü (TPM) KSP'sine kaydol, aksi halde hata ver**
      - **Passport'a kaydet, aksi halde hata ver (Windows 10 ve üzeri)**
      - **Software KSP’ye kaydol**
 
-   - **Anahtar kullanımı**: Sertifika için anahtar kullanımı seçeneklerini girin. Seçenekleriniz şunlardır:
-     - **Anahtar şifreleme**: Yalnızca anahtar şifreli olduğunda anahtar değişimine izin verir.
-     - **Dijital imza**: Yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verir.
-   - **Anahtar boyutu (bit)** : Anahtarın içerdiği bit sayısını seçin
-   - **Karma algoritması** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için kullanılabilir karma algoritma türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
-   - **Kök sertifika**: Seçin bir [güvenilen kök sertifika profilini](certficates-pfx-configure.md#create-a-trusted-certificate-profile) , daha önce oluşturulan ve kullanıcı ve/veya cihaz atanan. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır. SCEP sertifikası profilinde atanan aynı gruba bu güvenilen kök sertifika profilini atama emin olun.
-   - **Genişletilmiş Anahtar Kullanımı**: **Ekleme** sertifikanın değerlerini sertifikaların hedeflenen amacına. Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
+   - **Anahtar kullanımı**: Sertifika için anahtar kullanım seçeneklerini girin. Seçenekleriniz şunlardır:
+     - **Anahtar şifreleme**: Anahtar değişimine yalnızca anahtar şifrelendiğinde izin ver
+     - **Dijital imza**: Yalnızca bir dijital imza anahtarı korumaya yardımcı olduğunda anahtar değişimine izin verin
+   - **Anahtar boyutu (bit)** : Anahtarda bulunan bitlerin sayısını seçin
+   - **Karma algoritması** (Android, Windows Phone 8,1, Windows 8.1, Windows 10): Bu sertifika ile kullanmak için kullanılabilir karma algoritma türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
+   - **Kök sertifika**: Daha önce oluşturduğunuz ve kullanıcıya ve/veya cihaza atadığınız bir [Güvenilen kök sertifika profili](certficates-pfx-configure.md#create-a-trusted-certificate-profile) seçin. Bu CA sertifikası, bu sertifika profilinde yapılandırdığınız sertifikayı veren CA'nın kök sertifikası olmalıdır. Bu güvenilen kök sertifika profilini SCEP sertifika profilinde atanan aynı gruba atadığınızdan emin olun.
+   - **Genişletilmiş anahtar kullanımı**: Sertifikanın amaçlanan amacı için değer **ekleyin** . Çoğu durumda, kullanıcı veya cihazın bir sunucuya kimliğini doğrulayabilmesi için, sertifika **İstemci Kimlik Doğrulaması** gerektirir. Ancak, gerektiğinde başka herhangi bir anahtar kullanımı ekleyebilirsiniz.
    - **Kayıt Ayarları**
-     - **Yenileme eşiği (%)** : Cihaz yenilenmesini sertifikasının kalan sertifika ömrünün yüzde kaç olması girin.
-     - **SCEP sunucu URL'leri**: SCEP aracılığıyla sertifika verecek NDES sunucuları için bir veya daha fazla URL girin. Örneğin, aşağıdakine benzer girin `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
+     - **Yenileme eşiği (%)** : Cihazın sertifikayı yenilemeyi istemesi için kalan sertifika ömrünün yüzdesini girin.
+     - **SCEP sunucu URL 'leri**: SCEP aracılığıyla sertifika veren NDES sunucuları için bir veya daha fazla URL girin. Örneğin şuna benzer `https://ndes.contoso.com/certsrv/mscep/mscep.dll`bir şey girin.
      - **Tamam**’ı seçin ve profilinizi **Oluşturun**.
 
 Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
@@ -507,9 +507,9 @@ Gruplara sertifika profillerini atamadan önce aşağıdaki noktaları göz ön�
 - Her profili ayrı olarak atasanız da Güvenilen Kök CA’sını ve SCEP veya PKCS profilini de atamanız gerekir. Aksi takdirde SCEP veya PKCS sertifika ilkesi başarısız olur.
 
     > [!NOTE]
-    > Bir SCEP sertifika profili bir Wi-Fi veya VPN profilini gibi ek bir profil ile ilişkili olduğunda iOS cihazlarda, cihaz bir sertifika her ek bu profiller için alır. SCEP sertifika isteğiyle teslim birden çok sertifika sahip iOS cihaz sonuçlanır.  
+    > İOS cihazlarında, bir SCEP sertifika profili, Wi-Fi veya VPN profili gibi ek bir profille ilişkilendirildiğinde, cihaz bu ek profillerin her biri için bir sertifika alır. Bu, iOS cihazının SCEP sertifika isteği tarafından sunulan birden çok sertifikaya sahip olmasına neden olur.  
 
-- Ortak yönetim için Intune ve Configuration Manager, Configuration Manager s'te kullanıyorsanız[et iş yükü kaydırıcıyı](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) için *kaynak erişim ilkesi* için **Intune** veya  **Intune Pilot**. Bu ayar Windows 10 istemcileri sertifikası isteme işlemini başlatmak sağlar.  
+- Intune ve Configuration Manager için ortak yönetim kullanıyorsanız, Configuration Manager s 'de, **Intune** veya **pilot Intune**'a *kaynak erişimi ilkesi* için[iş yükü kaydırıcısını](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) kullanın. Bu ayar, Windows 10 istemcilerinin sertifika isteme işlemini başlatmasını sağlar.  
 
 Profillerin nasıl atanacağı hakkında bilgi için bkz. [cihaz profilleri atama](device-profile-assign.md).
 
@@ -554,7 +554,7 @@ Sürüm 6.1806.x.x’ten itibaren Intune Bağlayıcısı Hizmeti, olayları **Ol
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Başarılı  | Başarılı |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Sertifika yetkilisi geçerli değil veya yetkiliye ulaşılamıyor. Sertifika yetkilisinin kullanılabilir olduğunu ve sunucunuzun onunla iletişim kurabildiğini doğrulayın. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Yerel sertifika deposunda Symantec Client Auth sertifikası bulunamadı. Makaleye göz atın [DigiCert PKI Platform için Intune sertifika bağlayıcı'yı ayarlama](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) daha fazla bilgi için.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Yerel sertifika deposunda Symantec Client Auth sertifikası bulunamadı. Daha fazla bilgi için bkz. [DigiCert PKI platformu Için Intune sertifika bağlayıcısını ayarlama](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) makalesi.  |
 | 0x00000402 | RevokeCert_AccessDenied  | Belirtilen hesabın CA'dan sertifika iptal etme izinleri yok. Veren CA'yı saptamak için olay iletisi ayrıntılarında CA Adı alanına bakın.  |
 | 0x00000403 | CertThumbprint_NotFound  | Girişinizle eşleşen bir sertifika bulunamadı. Sertifika bağlayıcısının kaydını yapın ve yeniden deneyin. |
 | 0x00000404 | Certificate_NotFound  | Sağlanan girişle eşleşen bir sertifika bulunamadı. Sertifika bağlayıcısının kaydını yeniden yapın ve bir kez daha deneyin. |
@@ -567,8 +567,8 @@ Sürüm 6.1806.x.x’ten itibaren Intune Bağlayıcısı Hizmeti, olayları **Ol
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [PKCS sertifikalarını kullanmak](certficates-pfx-configure.md), veya [Symantec PKI manager web hizmeti PKCS sertifikaları verme](certificates-symantec-configure.md)
-- [Intune ile SCEP kullanılacak bir 3. taraf CA Ekle](certificate-authority-add-scep-overview.md)
-- Ek Yardım için aşağıdaki kılavuzları kullanın:
+- [PKCS sertifikalarını kullanma](certficates-pfx-configure.md)veya [bir Symantec PKI Manager Web hizmetinden PKCS sertifikaları verme](certificates-symantec-configure.md)
+- [Intune ile SCEP kullanmak için üçüncü taraf bir CA ekleme](certificate-authority-add-scep-overview.md)
+- Ek Yardım için aşağıdaki kılavuzlardan yararlanabilirsiniz:
   - [Microsoft Intune SCEP sertifika profili dağıtımı sorunlarını giderme](https://support.microsoft.com/help/4457481)
-  - [NDES yapılandırması kullanmak Intune sertifika profilleriyle ilgili sorunları giderme](https://support.microsoft.com/help/4459540)
+  - [Microsoft Intune sertifika profilleriyle kullanılmak üzere NDES yapılandırması sorunlarını giderme](https://support.microsoft.com/help/4459540)
