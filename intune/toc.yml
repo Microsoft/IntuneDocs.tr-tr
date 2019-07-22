@@ -34,7 +34,7 @@
       href: quickstart-add-assign-app.md
     - name: Uygulama koruma ilkesini oluşturma ve atama
       href: quickstart-create-assign-app-policy.md
-    - name: Özel bir rol oluşturup atama
+    - name: Özel bir rol oluşturup atayarak
       href: quickstart-create-custom-role.md
     - name: E-posta cihaz profili oluşturma
       href: quickstart-email-profile.md
@@ -382,6 +382,8 @@
               href: privacy-data-view-correct.md
             - name: 'Denetim, dışa aktarma, silme'
               href: privacy-data-audit-export-delete.md
+        - name: Cihazları şifreleme
+          href: encrypt-devices.md
         - name: Koşullu Erişim
           href: conditional-access.md
           items:
