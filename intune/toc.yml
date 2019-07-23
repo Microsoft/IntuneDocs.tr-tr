@@ -171,6 +171,7 @@
       items:
         - name: Cihaz kaydı nedir?
           href: device-enrollment.md
+          displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
         - name: Cihaz yönetimi özellikleri
           href: device-management-capabilities.md
         - name: Kayıt seçenekleri
@@ -184,6 +185,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: Kurumsal tanımlayıcılar
               href: corporate-identifiers-add.md
+              displayName: COD
             - name: Çok faktörlü kimlik doğrulaması
               href: multi-factor-authentication.md
             - name: Cihaz kayıt yöneticisi
@@ -273,6 +275,8 @@
           href: device-remove-user.md
         - name: Birincil kullanıcı bulma
           href: find-primary-user.md
+        - name: Bildirim gönderme
+          href: custom-notifications.md
         - name: macOS cihazını silme
           href: device-erase.md
         - name: Uzaktan denetimli mobil cihazlar
@@ -559,20 +563,27 @@
               href: apps-add-built-in.md
             - name: PowerShell komut dosyaları
               href: intune-management-extension.md
-        - name: Uygulama dağıtma
-          href: apps-deploy.md
+        - name: Uygulamaları atama
           items:
+            - name: Gruplara uygulama atama
+              href: apps-deploy.md
+              displayName: app assignment; assignment
             - name: Uygulama ekleme ve çıkarma
               href: apps-inc-exl-assignments.md
+              displayName: app assignment
             - name: Windows 10 uygulamalarını dağıtma
               href: apps-windows-10-app-deploy.md
             - name: Kamu ortamları için uygulama dağıtma
               href: apps-deploy-gcc-dod.md
         - name: Uygulamaları izleme
           href: apps-monitor.md
+        - name: Bulunan uygulamalar
+          href: app-discovered-apps.md
         - name: Uygulama yapılandırma
-          href: app-configuration-policies-overview.md
           items:
+            - name: Uygulama yapılandırma ilkeleri
+              href: app-configuration-policies-overview.md
+              displayName: App configuration policy; configuration policy
             - name: iOS yönetilen cihazlar
               href: app-configuration-policies-use-ios.md
             - name: Android yönetilen cihazlar
