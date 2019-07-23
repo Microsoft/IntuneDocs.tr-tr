@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402896"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353629"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows bilgisayarlar için kullanıcı-cihaz bağlamayı yönetme
 
@@ -32,7 +32,7 @@ Bu konudaki bilgiler, yalnızca Intune yazılım istemcisini kullanarak bilgisay
 
 Bir kullanıcı için yazılım dağıtmadan önce kullanıcıyı bir bilgisayara bağlamanız gerekir. Bir kullanıcıyı birden çok bilgisayara bağlayabilirsiniz, ancak her bilgisayara yalnızca bir kullanıcı bağlanabilir. Kullanıcılar şirket portalını kullanarak Intune kaydını yaptıkları bilgisayarlara otomatik olarak bağlanır.
 
-Bir cihazın birincil kullanıcısı hakkında daha fazla bilgi için bkz: [Bul birincil kullanıcı](find-primary-user.md).
+Bir cihazın birincil kullanıcısı hakkında daha fazla bilgi için bkz. [birincil kullanıcıyı bulma](find-primary-user.md).
 
 Bir kullanıcıyı bir bilgisayara bağlamak için:
 
@@ -46,13 +46,13 @@ Bir kullanıcıyı bir bilgisayara bağlamak için:
 
    - Bilgisayarın bağlı olduğu bir kullanıcı varsa bilgisayarı bu kullanıcıya bağlı olarak bırakmak için **İptal**'i seçin.
 
-   - Varsa geçerli kullanıcının bağlantısını kaldırmak için <strong>bağlantıyı Kaldır **&gt;** Tamam</strong>.
+   - Varsa, geçerli kullanıcının bağlantısını kaldırmak için <strong> **&gt;** bağlantıyı kaldır Tamam</strong>' ı seçin.
 
    - Bilgisayarı yeni bir kullanıcıya bağlamak için **Tüm kullanıcılar** listesinde bir kullanıcı seçin. Kullanıcı verilerinin doğru olduğundan emin olun ve ardından **Tamam**'ı seçin.
 
 > [!TIP]
 > Son kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtlamak istiyorsanız **Microsoft Intune Aracı Ayarları** ilkesinde **Kullanıcıların bilgisayarlara bağlanma yeteneğini kısıtla** seçeneğini etkinleştirin.
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Intune yazılım istemcisi ile genel Windows bilgisayar yönetim görevleri](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
