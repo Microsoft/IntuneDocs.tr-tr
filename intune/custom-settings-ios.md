@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune - Azure’da iOS cihazlara özel ayarlar ekleme | Microsoft Docs
 titleSuffix: ''
-description: Apple Configurator veya Apple Profile Manager araçlarından iOS ayarlarını dışarı aktarın ve daha sonra bu ayarları Microsoft Intune’a aktarın. Bu ayarlar, oluşturma, kullanma ve özel ayarları ve iOS cihazlarındaki özellikleri denetlemek. Daha sonra bu özel profil, bir ana hat veya standart oluşturmak için kuruluşunuzdaki iOS cihazlara atanabilir veya dağıtılabilir.
+description: Apple Configurator veya Apple Profile Manager araçlarından iOS ayarlarını dışarı aktarın ve daha sonra bu ayarları Microsoft Intune’a aktarın. Bu ayarlar iOS cihazlarında özel ayarları ve özellikleri oluşturabilir, kullanabilir ve denetleyebilir. Daha sonra bu özel profil, bir ana hat veya standart oluşturmak için kuruluşunuzdaki iOS cihazlara atanabilir veya dağıtılabilir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4f9f3cabf0826380dfd97b9c0f772f9846912f0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 37db7b6dcee7721f9d46af032be995029a20e2be
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530270"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375194"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için özel ayarlar kullanma
 
@@ -31,13 +31,17 @@ iOS cihazlarda Intune’a özel ayarlar eklemenin iki yolu vardır:
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-Bir yapılandırma profiline ayar aktarmak için bu araçları kullanabilirsiniz. Intune’da bu dosyayı içeri aktarır ve sonra profili, iOS kullanıcılarınıza ve cihazlarınıza atarsınız. Profil atandıktan sonra ayarlar dağıtılır ve kuruluşunuzda iOS için bir ana hat veya standart oluşturulur.
+Bir yapılandırma profiline ayar aktarmak için bu araçları kullanabilirsiniz. Intune’da bu dosyayı içeri aktarır ve sonra profili, iOS kullanıcılarınıza ve cihazlarınıza atarsınız. Atandıktan sonra ayarlar dağıtılır. Ayrıca, kuruluşunuzda iOS için bir taban çizgisi veya standart oluşturur.
 
-Bu makale, iOS cihazlar için özel profil oluşturma işlemini gösterir. Ayrıca Apple Configurator ve Apple Profile Manager’ı nasıl kullanacağınız konusunda rehberlik sağlar.
+Bu makalede, Apple Configurator ve Apple Profile Manager kullanımı hakkında bazı yönergeler sağlanır ve yapılandırabileceğiniz özellikler açıklanmaktadır.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-- Yapılandırma profilini oluşturmak için **Apple Configurator** kullanırken dışarı aktardığınız ayarların kullandığınız cihazın iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
+[Profili oluşturun](device-profile-create.md).
+
+## <a name="what-you-need-to-know"></a>Bilmeniz gerekenler
+
+- Yapılandırma profilini oluşturmak için **Apple Configurator** kullanırken, dışarı aktarma yaptığınız ayarların cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
 
 - **Apple Profile Manager**’ı kullanırken şunları yapmayı unutmayın:
 
@@ -47,25 +51,19 @@ Bu makale, iOS cihazlar için özel profil oluşturma işlemini gösterir. Ayrı
 
     Bu dosyayı indirin ve kaydedin. Intune profilinde bu dosyayı girmeniz istenir.
 
-  - Apple Profile Manager’dan dışarı aktardığınız ayarların kullandığınız cihazların iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
+  - Apple Profile Manager 'dan dışarı verdiğiniz ayarların cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
 
-## <a name="create-the-profile"></a>Profili oluşturma
+## <a name="custom-configuration-profile-settings"></a>Özel yapılandırma profili ayarları
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
-3. Aşağıdaki ayarları girin:
+- **Özel yapılandırma profili adı**: İlke için bir ad girin. Bu ad, cihazda ve Intune durumunda gösterilir.
+- **Yapılandırma profili dosyası**: Apple Configurator veya Apple Profile Manager 'ı kullanarak oluşturduğunuz yapılandırma profiline gidin. İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
 
-    - **Ad**: Profil için bir ad girmeniz `ios custom profile`.
-    - **Açıklama**: Profil için açıklama girin.
-    - **Platform**: Seçin **iOS**.
-    - **Profil türü**: Seçin **özel**.
+  Ayrıca, `.mobileconfig` dosyalarınıza cihaz belirteçleri ekleyebilirsiniz. Cihaz belirteçleri cihaza özgü bilgileri eklemek için kullanılır. Örneğin, seri numarasını göstermek için girin `{{serialnumber}}`. Cihazda, metin her bir cihaz için benzersiz olan `123456789ABC` öğesine benzer şekilde görünür. Değişken girerken, küme ayraçları `{{ }}`kullandığınızdan emin olun. [Uygulama yapılandırma belirteçleri](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) , kullanılabilecek değişkenlerin bir listesini içerir. Ayrıca, herhangi bir `deviceid` cihaza özgü değeri de kullanabilirsiniz.
 
-4. **Özel yapılandırma**’da şu ayarları girin:
+  > [!NOTE]
+  > Değişkenler kullanıcı arabiriminde doğrulanmaz ve büyük/küçük harfe duyarlıdır. Sonuç olarak, yanlış girişle kaydedilmiş profiller görebilirsiniz. Örneğin, `{{DeviceID}}` `{{deviceid}}`yerine girdiğinizde, cihazın benzersiz kimliği yerine değişmez dize gösterilir. Doğru bilgileri girdiğinizden emin olun.
 
-    - **Özel yapılandırma profili adı**: İlke için bir ad girin. Bu ad, cihazda ve Intune durumunda gösterilir.
-    - **Yapılandırma profili dosyası**: Apple Configurator veya Apple profili Manager'ı kullanarak oluşturduğunuz yapılandırma profiline göz atın. İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
-
-5. **Tamam** > **Oluştur**’a tıklayarak Intune profilini oluşturun. Profiliniz oluşturulduğunda **Cihaz yapılandırması - Profiller** listesinde görünür.
+Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil oluşturulur ve profiller listesinde gösterilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

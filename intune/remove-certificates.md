@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: 351a6017f0d3725a2b1d9502151885053bbc0ffb
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: e5d6bf546a67ef36107aa566de299397959190e3
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354481"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374667"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune’da SCEP ve PKCS sertifikalarını kaldırma
 
@@ -40,7 +40,6 @@ Bu sertifikalar, cihazı [sildiğinizde veya](devices-wipe.md#wipe) [devre dış
 Bir sertifikayı el ile silme, SCEP veya PKCS sertifika profilleri tarafından sağlanan platformlar ve Sertifikalar arasında uygulanan bir senaryodur. Örneğin, bir Kullanıcı bir sertifika ilkesi tarafından hedeflenirse bir cihazdan bir sertifikayı silebilir.
 
 Bu senaryoda, sertifika silindikten sonra cihaz, Intune ile bir dahaki sefer denetlediğinde, beklenen sertifika eksik olduğu için aygıtın uyumsuz olduğu tespit edilir. Intune daha sonra cihazı uyumluluğa geri yüklemek için yeni bir sertifika yayınlar. Sertifikayı geri yüklemek için başka bir eylem gerekmez.
-
 
 ## <a name="windows-devices"></a>Windows cihazları
 
@@ -208,5 +207,5 @@ SCEP sertifikaları cihazda *kalır* (sertifikalar iptal edilmez veya kaldırıl
 
 ### <a name="pkcs-certificates"></a>PKCS sertifikaları
 
-macOS’da PKCS sertifikaları desteklenmez.
+PKCS sertifikaları macOS 'ta desteklenmez.
 

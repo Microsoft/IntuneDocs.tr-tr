@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 239ef40c4a881557cf9f4ccef7a4e1b6f6d2fcff
-ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
+ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68306736"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374853"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise için Microsoft tarafından yönetilen giriş ekranı uygulamasını yapılandırma
 
@@ -70,7 +70,7 @@ Aşağıdaki tablo, yönetilen giriş ekranı kullanılabilir yapılandırma ana
 | Dikey kaydırmayı etkinleştir | bool | FALSE | Yönetilen giriş ekranında dikey kaydırmaya izin vermez. Bu yapılandırma anahtarını etkinleştirirseniz, Son Kullanıcı yatay olarak kaydırarak değil, yalnızca dikey olarak farklı sayfalara gidebilecektir. |
 | Ana ekran temasını ayarla | dize | Theme. Light. Blue | Farklı renklerde, önceden tanımlı Temalar kümesinden giriş ekranının temasını seçmenizi sağlar. Aşağıdaki biçimde dize değerini girerek aşağıdaki temaları seçebilirsiniz.   Theme. Light. yeşil. Koyu bir tema için koyu ile değiştirilebilir ve yeşil, sarı, pembe, kırmızı, turuncu ve mor bir şekilde değiştirilebilir. |
 | Dock 'ı etkinleştir | bool | FALSE | Tüm yüklü uygulamalar için, ana ekranın en altında bulunan, kalıcı uygulamalar görüntülenirken ve giriş noktasıyla birlikte uygulama yerleştirme bölümünü sunar. Bu yapılandırma anahtarını etkinleştirirseniz, Son Kullanıcı dock 'taki uygulamalara erişebilir ve ayrıca tüm uygulama bölümüne erişerek, izin verilenler listesinde olup olmadığına bakılmaksızın cihazlarda yüklü tüm uygulamaların listesine gidebilirsiniz. |
-| Ekran yönünü ayarla | integer | 1\. | Giriş ekranının yönünü dikey moda, yatay moda ayarlamanıza veya otomatik olarak döndürmeye izin verir. Yönü 1 (dikey mod için), 2 (Yatay mod için), 3 (Oto döndürme için) değerini girerek ayarlayabilirsiniz. |
+| Ekran yönünü ayarla | integer | 1 | Giriş ekranının yönünü dikey moda, yatay moda ayarlamanıza veya otomatik olarak döndürmeye izin verir. Yönü 1 (dikey mod için), 2 (Yatay mod için), 3 (Oto döndürme için) değerini girerek ayarlayabilirsiniz. |
 | Giriş ekranı akışını etkinleştir | bool | FALSE | Giriş ekranının sol tarafında görünen ana ekran akışını mümkün bir şekilde sunar. Bu akış haber, takvim, sık kullanılan kullanıcı uygulamaları ve Cortana sesli yardım kartı vb. gibi farklı içerik türlerini görüntüler. Bunu etkinleştirirseniz, son kullanıcı giriş ekranında sola kaydırarak akışa gidebilecektir. |
 | Genel Bakış modunu etkinleştir | bool | FALSE | Son kullanıcıların, varsayılan ekrandan doğrudan çekerek erişilebilen ana ekranda farklı sayfalar eklemesini veya kaldırmasına olanak sağlar. Bu ayarı etkinleştirirseniz, Son Kullanıcı ana sayfanın varsayılan sayfasının sağına disk belleğine ekleyebilecektir, ayrıca varsayılan sayfayı değiştirebilir ve ayrıca yönetilen giriş ekranındaki ayarlara da erişebilecektir. |
 | Cihaz telemetrisini etkinleştir | bool | FALSE | Yönetilen giriş ekranı için yakalanan tüm Telemetriyi sunar. Bu ayarı etkinleştirirseniz, Microsoft, belirli bir uygulamanın bu cihazda başlatılma sayısı gibi cihaz kullanımı telemetrisini yakalayabilir. |
@@ -384,9 +384,8 @@ Aşağıda, tüm kullanılabilir yapılandırma anahtarlarının dahil olduğu b
 }
 ```
 
-## <a name="managed-home-screen-debug-screen-on-android-enterprise-dedicated-devices"></a>Android kurumsal adanmış cihazlarda yönetilen giriş ekranı hata ayıklama ekranı
-
-Hata ayıklama ekranı görüntülenene kadar **geri** düğmesine tıklayarak yönetilen giriş ekranının hata ayıklama ekranına erişebilirsiniz ( **geri** düğmesine 15 kez veya daha fazla tıklayın). Bu hata ayıklama ekranından, Android cihaz Ilkesi uygulamasını başlatabilir, günlükleri görüntüleyebilir ve yükleyebilir ya da yönetilen giriş ekranını konsolda tanımladığınız kodla geçici olarak bırakabilirsiniz (**bilgi noktası modu kodunu** [adanmış cihaz ayarlarında](https://docs.microsoft.com/intune/device-restrictions-android-for-work#dedicated-device-settings)bırakabilirsiniz). 
+## <a name="googles-android-device-policy-app"></a>Google 'ın Android cihaz Ilkesi uygulaması
+Yönetilen giriş ekranı uygulaması artık Google 'ın Android cihaz Ilkesi uygulamasına erişim sağlar. Yönetilen giriş ekranı uygulaması, Intune 'A kayıtlı cihazlar için çok uygulama bilgi noktası modunu kullanan Android kurumsal (AE) adanmış cihazlar olarak kullanılan özel bir başlatıdır. Android cihaz Ilkesi uygulamasına erişebilir veya destek ve hata ayıklama amacıyla kullanıcılara Android cihaz Ilkesi uygulamasına rehberlik edebilirsiniz. Bu başlatma özelliği, cihazın ne zaman kaydolur ve yönetilen giriş ekranına kilitlediği sırada kullanılabilir. Bu işlevselliği kullanmak için ek yükleme gerekmez.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

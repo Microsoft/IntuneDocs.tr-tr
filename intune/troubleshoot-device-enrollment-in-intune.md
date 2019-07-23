@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6cac9f10abf1347964ac8379938cb146877df56
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353378"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375228"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydı sorunlarını giderme
 
@@ -69,7 +69,7 @@ Aşağıdaki adımları izleyerek kullanıcıya cihaz sayısı üst sınırını
 
 3. Kullanıcının kayıtlı cihazlarının sayısı şimdiden cihaz sınırı kısıtlamasına eşitse, aşağıdakilerden biri gerçekleşene kadar başka kaydedemez:
     - [Mevcut cihazlar kaldırılır](devices-wipe.md) veya
-    - [Cihaz kısıtlamalarını ayarlayarak](enrollment-restrictions-set.md#set-device-limit-restrictions) cihaz sınırını artırırsınız.
+    - [Cihaz kısıtlamalarını ayarlayarak](enrollment-restrictions-set.md) cihaz sınırını artırırsınız.
 
 Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kaldırmaya dikkat edin.
 

@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 405cf58f882d40d9bff2f5567a6296352843f3a7
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: 57b459efa5b423f1c73a0d6b7b9172f71f4c86d3
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68346542"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375165"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini kullanma  
 
@@ -56,24 +56,24 @@ Intune ile yönetebileceğiniz Filekasası ayarı hakkında ayrıntılı bilgi i
    - Platform: macOS  
    - Profil türü: Endpoint protection  
 
-3. **Ayarlar** > **Dosya Kasası**' nı seçin.
+3. **Ayarlar** > **Dosya Kasası**' nı seçin.  
 
 4. *Filekasası*için **Etkinleştir**' i seçin.  
 
 5. *Kurtarma anahtarı türü*Için yalnızca **kişisel anahtar** desteklenir.  
 
    Son kullanıcılara cihazlarıyla ilgili kurtarma anahtarını alma hakkında yardım almak için bir ileti eklemeyi düşünün. Bu bilgiler, kişisel kurtarma anahtarı döndürme ayarını kullandığınızda son kullanıcılarınız için yararlı olabilir. Bu, düzenli aralıklarla bir cihaz için otomatik olarak yeni bir kurtarma anahtarı üretebilirler.  
-   
-   Örneğin:  Kayıp veya son döndürülen kurtarma anahtarını almak için herhangi bir cihazdan Intune Şirket Portalı Web sitesinde oturum açın. Portalda *cihazlar* ' a gidin ve filekasasının etkinleştirildiği cihazı seçin ve ardından *Kurtarma anahtarını al*' ı seçin. Geçerli kurtarma anahtarı görüntülenir.  
+
+   Örneğin: Kayıp veya son döndürülen kurtarma anahtarını almak için herhangi bir cihazdan Intune Şirket Portalı Web sitesinde oturum açın. Portalda *cihazlar* ' a gidin ve filekasasının etkinleştirildiği cihazı seçin ve ardından *Kurtarma anahtarını al*' ı seçin. Geçerli kurtarma anahtarı görüntülenir.  
 
 6. Kalan ayarları, iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.  
-   
+
    > [!NOTE]
-   > Dosya Kasası desteği, Temmuz yayını birkaç gün içinde piyasaya sürülene kadar sınırlandırılır. Dağıtım tamamlanana kadar, Filekasasını yapılandırırsanız, **etkinleştirmek**üzere *oturum açana kadar dosya kasasını ertele* seçeneğini ayarlamanız gerekir.   
+   > Dosya Kasası desteği, Temmuz yayını birkaç gün içinde piyasaya sürülene kadar sınırlandırılır. Dağıtım tamamlanana kadar, Filekasasını yapılandırırsanız, **etkinleştirmek**üzere *oturum açana kadar dosya kasasını ertele* seçeneğini ayarlamanız gerekir.  
 
 7. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.  
 
-###  <a name="manage-filevault"></a>Dosya kasasını yönetme  
+### <a name="manage-filevault"></a>Dosya kasasını yönetme  
 
 Intune, bir macOS cihazını Filekasasıyla şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken filekasasını kurtarma anahtarlarını görüntüleyebilir ve yönetebilirsiniz.  
 
@@ -93,7 +93,7 @@ Windows 10 veya sonraki bir platformda Endpoint Protection için bir [cihaz yap�
 
 2. Aşağıdaki seçenekleri ayarlayın:  
    - Platformunun Windows 10 ve üzeri  
-   - Profil türü: Endpoint protection   
+   - Profil türü: Endpoint protection  
 
 3. **Ayarlar** > **Windows şifrelemesi**' ni seçin.
 

@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d976b08ac7943c03b8cb82bceb61cb7c5385f70e
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341384"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375157"
 ---
 # <a name="monitor-device-encryption"></a>Cihaz şifrelemesini izleme  
 
@@ -47,14 +47,14 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
 - **Işletim sistemi** – Windows veya MacOS gibi cihaz platformu.  
 - **Işletim sistemi sürümü** : cihazdaki Windows veya MacOS sürümü.  
 - **TPM sürümü** *(Yalnızca Windows 10 Için geçerlidir)* – Windows 10 cihazında GÜVENILIR Platform Modülü (TPM) yongasının sürümü.  
-- **Şifrelemeye hazır olma** : cihazların değerlendirilmesi, BitLocker veya filekasası Şifrelemesi gibi uygun bir şifreleme teknolojisini desteklemeye hazır olma. Cihazlar şu şekilde tanımlanır:
+- **Şifrelemeye hazır olma** : cihazların değerlendirilmesi, BitLocker veya filekasası Şifrelemesi gibi uygun bir şifreleme teknolojisini desteklemeye hazır olma. Cihazlar şu şekilde tanımlanır:  
   - **Hazırlanıyor**: Cihaz, cihazın aşağıdaki gereksinimleri karşılaması için MDM ilkesi kullanılarak şifrelenebilir:  
     
-    **MacOS cihazları için**:
-    - MacOS sürüm 10,13 veya üzeri
-
-    **WINDOWS 10 cihazları için**:
-    - Sürüm 1703 veya üzeri, *iş*, *Kurumsal*, *eğitim*veya sürüm 1809 ya da *Pro* 'nun daha yeni sürümü 
+    **MacOS cihazları için**:  
+    - MacOS sürüm 10,13 veya üzeri  
+    
+    **Windows 10 cihazları için**:  
+    - Sürüm 1703 veya üzeri, *iş*, *Kurumsal*, *eğitim*veya sürüm 1809 ya da *Pro* 'nun daha yeni sürümü  
     - Cihazda bir TPM yongasının olması gerekir  
     
     Daha fazla bilgi için Windows belgelerindeki [BitLocker yapılandırma hizmeti sağlayıcısına (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) bakın.  
@@ -93,10 +93,8 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
 - **Profil durumu Özeti** : Bu cihaza uygulanan profillerin Özeti. Özet, uygulanabilir profiller genelinde en az iyi koşulu temsil eder. Örneğin, birkaç uygulanabilir profilden yalnızca biri bir hata ile sonuçlanırsa, *profil durumu Özeti* *hata*görüntüler.  
 
 - **Durum ayrıntıları** – cihazın şifreleme durumu hakkında gelişmiş ayrıntılar.  
-
   > [!NOTE]
   > Dosya Kasası desteği, Temmuz yayını birkaç gün içinde piyasaya sürülene kadar sınırlandırılır. Dağıtım tamamlanana kadar, macOS için cihaz durumu ayrıntıları ve cihaz şifreleme ayrıntıları, şifreleme raporunda doğru görüntülenmeyebilir.
-
 
   > [!IMPORTANT]  
   > Windows 10 cihazlarında, Intune yalnızca *Windows 10 nisan 2019 güncelleştirme* veya üstünü çalıştıran cihazların *durum ayrıntılarını* gösterir.  
@@ -106,8 +104,7 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
   Intune 'un rapor verebir durum ayrıntıları aşağıda verilmiştir:  
   
   **MacOS**:
-  
-  - Ön koşul beklerken profil şu anda yüklenemez. 
+  - Ön koşul beklerken profil şu anda yüklenemez.  
  
     *Seçmeyi Bu sonuç bir hata koşulunu temsil etmelidir, ancak cihaz üzerindeki zamanlama, şifreleme isteği cihaza gönderilmeden önce, kurtarma anahtarları için emanet olarak ayarlanmalıdır. Bu, cihazın kilitli kaldığını veya son zamanlarda Intune ile iade edilmedi olduğunu da belirtebilir. Son olarak, bir cihaz takılıncaya kadar Filekasası şifrelemesi başlamadığı için, bir kullanıcının henüz şifrelenmeyen*bir cihaz için kurtarma anahtarı alması mümkündür.  
 
@@ -129,21 +126,21 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
 
   **Windows 10**:  
   - BitLocker ilkesi için Kullanıcı onayı 'Nın, işletim sistemi biriminin şifrelemesini başlatmak üzere BitLocker Sürücü Şifrelemesi Sihirbazı 'Nı başlatması gerekir, ancak Kullanıcı onay vermedi.  
-
+  
   - İşletim sistemi biriminin şifreleme yöntemi BitLocker ilkesiyle eşleşmiyor.  
-
+  
   - BitLocker, işletim sistemi birimini korumak için bir TPM koruyucusu gerektirir, ancak TPM kullanılmaz.  
-
+  
   - BitLocker ilkesi, işletim sistemi birimi için salt TPM koruyucusu gerektirir, ancak TPM koruması kullanılmaz.  
-
+  
   - BitLocker ilkesi, işletim sistemi birimi için TPM + PIN koruması gerektirir, ancak TPM + PIN koruyucusu kullanılmaz.  
-
+  
   - BitLocker ilkesi, işletim sistemi birimi için TPM + başlangıç anahtarı koruması gerektirir, ancak TPM + başlangıç anahtarı koruyucusu kullanılmaz.  
-    
+  
   - BitLocker ilkesi, işletim sistemi birimi için TPM + PIN + başlangıç anahtarı koruması gerektirir, ancak TPM + PIN + başlangıç anahtarı koruyucusu kullanılmaz.  
-
+  
   - İşletim sistemi birimi korumasız.  
-   
+  
   - Kurtarma anahtarı yedeklemesi başarısız oldu.  
   
   - Sabit bir sürücü korumasız.  
@@ -171,7 +168,7 @@ Bu rapor, cihaz gruplarıyla ilgili sorunları belirlemek için kullanılabilir.
 ## <a name="filevault-recovery-keys"></a>Filekasası kurtarma anahtarları   
 Intune, bir macOS cihazını dosya kasası ile ilk kez şifrele, kişisel bir kurtarma anahtarı oluşturulur. Şifreleme sonrasında cihaz, kişisel anahtarı son kullanıcıya tek bir kez görüntüler.  
  
-Intune, yönetilen cihazlarda kişisel kurtarma anahtarının bir kopyasını sağlayabilir. Anahtarların Emanet, Intune yöneticilerinin cihazları korumaya yardımcı olmak için anahtarları döndürmesine ve kullanıcıların kayıp veya döndürülmüş bir kişisel kurtarma anahtarını kurtarmasına olanak sağlar.    
+Intune, yönetilen cihazlarda kişisel kurtarma anahtarının bir kopyasını sağlayabilir. Anahtarların Emanet, Intune yöneticilerinin cihazları korumaya yardımcı olmak için anahtarları döndürmesine ve kullanıcıların kayıp veya döndürülmüş bir kişisel kurtarma anahtarını kurtarmasına olanak sağlar.  
  
 Intune, kişisel kurtarma anahtarlarını döndürmek ve kurtarmak için birden çok seçeneği destekler. Bir anahtarı döndürmanızın bir nedeni, geçerli kişisel anahtarın risk altında olması düşünülmeden kaybolur.  
  
@@ -195,11 +192,12 @@ Intune, kişisel kurtarma anahtarlarını döndürmek ve kurtarmak için birden 
 ### <a name="recover-recovery-keys"></a>Kurtarma anahtarlarını kurtar  
 - **Yönetici**: Yöneticiler, Filekasasıyla şifrelenen cihazların kişisel kurtarma anahtarlarını görüntüleyemez.  
 
-- **Son Kullanıcı**: Son kullanıcılar, herhangi bir cihazdan Şirket portalı Şirket portalı Web sitesini kullanarak yönetilen cihazlarından herhangi biri için geçerli kişisel kurtarma anahtarını görüntüler.  Şirket Portalı uygulamasından kurtarma anahtarlarını görüntüleyemezsiniz.  
+- **Son Kullanıcı**: Son kullanıcılar herhangi bir cihazdan Şirket Portalı Web sitesini kullanarak yönetilen cihazlarından herhangi biri için geçerli kişisel kurtarma anahtarını görüntüler. Şirket Portalı uygulamasından kurtarma anahtarlarını görüntüleyemezsiniz.  
 
  
   Kurtarma anahtarını görüntülemek için:  
-  1. Herhangi bir cihazdan *Intune şirket şirket portalı portalı* Web sitesinde oturum açın.  2. Portalda **cihazlar** ' a gidin ve filekasasıyla şifrelenen MacOS cihazını seçin. Dosya Kasası etkin olan cihaz.  
+  1. Herhangi bir cihazdan *Intune şirket portalı* Web sitesinde oturum açın.  
+  2. Portalda **cihazlar** ' a gidin ve filekasasıyla şifrelenen MacOS cihazını seçin.  
   3. **Kurtarma anahtarını al**' ı seçin. Geçerli kurtarma anahtarı görüntülenir.  
   
      İPhone 'da, *Kurtarma anahtarını al* seçeneği görüntülenmeden önce *üç* noktayı seçmeniz gerekir.  

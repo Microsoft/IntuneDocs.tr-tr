@@ -4,7 +4,7 @@ description: Microsoft 365 Kurumsal, Microsoft Intune'u içerir. Intune 'un kuru
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8525dd143a8e08f6915fa90dff0d51d6632eceea
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884262"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387307"
 ---
 # <a name="what-is-device-management"></a>Cihaz yönetimi nedir? 
 
@@ -73,11 +73,11 @@ Ayrıca [MDM ve MAM](https://docs.microsoft.com/intune/byod-technology-decisions
 
 Intune'u kurarken ayrıca cihazları yönetmek için yalnızca Azure portalında çalışmayı ya da Intune ve Microsoft 365'i birlikte kullanmayı da seçebilirsiniz. [Mobil cihaz yönetiminin Azure Portal Intune 'A geçirilmesi](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) bir Microsoft IT örnek olay araştırmaya sahiptir. Bu durumda, Microsoft BT 'nin modern cihaz yönetimi yaklaşımını nasıl seçtiği hakkında bilgi edinin ve öğrendiğimiz dersleri okuyun.
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>Cihaz Yönetim panosunu kullanarak BT görevlerini basitleştirin
+## <a name="simplify-it-tasks-using-the-device-management-specialist-workspace"></a>Cihaz yönetimi uzman çalışma alanını kullanarak BT görevlerini kolaylaştırın
 
-[Cihaz Yönetim panosu](https://devicemanagement.portal.azure.com/) mobil cihazlarınızın görevlerini yönetmek ve tamamlamak için tek yerdir. Bu pano, Intune ve Azure Active Directory dahil olmak üzere cihaz ve ayrıca istemci uygulama yönetimi için kullanılan hizmetleri içerir. 
+[Cihaz yönetimi uzman çalışma alanı](https://devicemanagement.portal.azure.com/) , mobil cihazlarınızla ilgili görevleri yönetmek ve gerçekleştirmek için tek seferlik bir mağaza ' dur. Bu çalışma alanı, Intune ve Azure Active Directory dahil olmak üzere cihaz yönetimi için kullanılan hizmetleri içerir ve istemci uygulamalarını da yönetir. 
 
-Cihaz Yönetim panosunda şunları yapabilirsiniz:
+Cihaz yönetimi uzmanı çalışma alanında şunları yapabilirsiniz:
 
 - [Cihazları kaydetme](https://docs.microsoft.com/intune/device-enrollment)
 - [Cihaz uyumluluğu ayarlama](https://docs.microsoft.com/intune/device-compliance-get-started)

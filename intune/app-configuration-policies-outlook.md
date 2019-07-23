@@ -15,25 +15,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1c5463406d74b9fcb96d4236d656ad33509a56
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f9819adf100cbe56147f22629e1311e7e3b376e9
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049720"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374902"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook yapılandırma ayarları 
 
 iOS ve Android cihazlarda çalışan Microsoft Outlook ayarlarını yapmak için bir yapılandırma ilkesi kullanın. 
 
-Yönetilen iOS cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-ios.md). Yönetilen Android cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md). 
+Kayıtlı cihazlar için:
+- Yönetilen iOS cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-ios.md). 
+- Yönetilen Android cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md). 
+
+Kayıtlı olmayan cihazlar için, iOS ve Android için Outlook için bir uygulama yapılandırma ilkesi oluşturmak üzere [cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma Ilkeleri ekleme](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) bölümüne bakın.
 
 ## <a name="configuration-settings"></a>Yapılandırma ayarları
 
-Bir yapılandırma İlkesi Intune'a eklenirken Microsoft Outlook iOS ve Android yapılandırma ayarlarını belirtebilirsiniz. Yapılandırma ayarları bölmesinde, e-posta hesabı yapılandırmasını belirtin ve uygulamaya özgü ayarları yapılandırın. Ayrıca, siz bu ayarları yapılandırmak veya ad/değer çiftleri kullanın.
+Intune 'a bir yapılandırma ilkesi eklerken, iOS ve Android için Microsoft Outlook 'U yapılandırmak üzere ayarları belirtebilirsiniz. Yapılandırma ayarları bölmesinde, e-posta hesabı yapılandırmasını belirtebilir ve uygulamaya özgü ayarları yapılandırabilirsiniz.
 
-Outlook hesabı kurulum bilgilerini ve iOS ve Android cihazlarını Microsoft Intune yordamsal adımlar için bkz: [iOS ve Android uygulama yapılandırma ayarları için Outlook dağıtma](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+İOS ve Android için Outlook uygulama yapılandırma ayarları hakkında belirli yordamsal adımlar ve ayrıntılı belgeler için, bkz. [iOS ve Android Için Outlook dağıtımı yapılandırma ayarları](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Daha fazla bilgi için [Intune için uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md)
+- Daha fazla bilgi için bkz. [Microsoft Intune Için uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md)

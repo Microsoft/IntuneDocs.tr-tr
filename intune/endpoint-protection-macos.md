@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d110013c10f0330c0edbbf230c508009fb47b2a6
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: 3a885abfdd7f23f453f03c63fdb0086bed40a7b1
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341322"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375045"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 'da MacOS Endpoint Protection ayarları  
 
@@ -92,18 +92,17 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
   - **Kurtarma anahtarı türü**  
     Cihazlar için *kişisel anahtar* kurtarma anahtarları oluşturulur. Kişisel anahtar için aşağıdaki ayarları yapılandırın.  
 
-     - **Kişisel kurtarma anahtarının konumu** -kullanıcıya kişisel kurtarma anahtarını nasıl alabilecekleri hakkında kısa bir ileti belirtin. Bu metin, kullanıcının dosya kasasını etkinleştirirken gördüğü iletiye eklenir.  
+    - **Kişisel kurtarma anahtarının konumu** -kullanıcıya kişisel kurtarma anahtarını nasıl alabilecekleri hakkında kısa bir ileti belirtin. Bu metin, kullanıcının dosya kasasını etkinleştirirken gördüğü iletiye eklenir.  
       
-     - **Kişisel kurtarma anahtarı döndürme** -bir cihaz için kişisel kurtarma anahtarının ne sıklıkta döndürüleceğini belirtin. **Yapılandırılmadı**' dan varsayılan değeri veya **1** ile **12** ay arasında bir değer seçebilirsiniz.  
+    - **Kişisel kurtarma anahtarı döndürme** -bir cihaz için kişisel kurtarma anahtarının ne sıklıkta döndürüleceğini belirtin. **Yapılandırılmadı**' dan varsayılan değeri veya **1** ile **12** ay arasında bir değer seçebilirsiniz.  
 
-  - **Oturum açana kadar dosya kasasını ertele** 
+  - **Oturum açana kadar dosya kasasını ertele**  
     > [!NOTE]
     > Dosya Kasası desteği, Temmuz yayını birkaç gün içinde piyasaya sürülene kadar sınırlandırılır. Dağıtım tamamlanana kadar, Filekasasını yapılandırırsanız, **etkinleştirmek**üzere *oturum açana kadar dosya kasasını ertele* seçeneğini ayarlamanız gerekir.   
 
     Kullanıcı oturumu kapatana kadar Filekasası etkinleştirilmeyecektir. Yerel bir kullanıcı veya mobil hesap kullanıcısına oturumu kapatma veya bir sonraki oturum açma sırasında dosya kasasını etkinleştirmesi istenecektir.  
     - **Yapılandırılmadı**  
     - **Etkinleştirebilir**  
-    
     **Varsayılan**: Yapılandırılmamış  
 
 
@@ -116,7 +115,7 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
       **Varsayılan**: Yapılandırılmamış  
 
     - **Atlayakaç kez izin verilir**  
-      Kullanıcının oturum açması için dosya kasasından önce dosya kasasını etkinleştirmek üzere bir kullanıcının istekleri yoksaymasına izin sayısını belirleyin.  
+    Kullanıcının oturum açması için dosya kasasından önce dosya kasasını etkinleştirmek üzere bir kullanıcının istekleri yoksaymasına izin sayısını belirleyin.  
 
       - **Yapılandırılmadı** -bir sonraki oturum açma işlemine izin verilmesi için cihazda şifreleme gerekir.  
       -  **1** ila **10** -bir kullanıcının cihazda şifrelemeyi gerektirmeden önce 1 ila 10 kez istemi yoksaymasına izin verin.  
