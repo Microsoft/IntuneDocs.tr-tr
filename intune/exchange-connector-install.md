@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883275"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427328"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune 'de Intune şirket içi Exchange bağlayıcısını ayarlama
 Bu makaledeki bilgiler, Intune için Exchange Active Sync şirket içi bağlayıcıyı yüklemenize ve izlemenize yardımcı olur.  Şirket içi Exchange [posta kutularına erişime izin vermek veya erişimi engellemek için](conditional-access-exchange-create.md), şirket içi Exchange bağlayıcısını koşullu erişim ilkelerinizle birlikte kullanırsınız. 
@@ -152,8 +152,22 @@ Aşağıdaki bölümlerde açıklanan yüksek kullanılabilirlik, izleme ve el i
 Bağlayıcı, belirtilen CA 'ları kullanarak Exchange 'e başarılı bir bağlantı oluşturduktan sonra, yük devretmeyi gerçekleştirmek için bu Exchange kuruluşu için ek CASs 'yi bulur. Ek CASs hakkında bilgi, bağlayıcının varsa, birincil CA 'LAR kullanılabilir hale gelene kadar başka bir CA 'ya yük devretmesine olanak sağlar. Varsayılan olarak, ek CASs 'leri bulma etkindir. Aşağıdaki yordamı kullanarak yük devretmeyi devre dışı bırakabilirsiniz:  
 1. Exchange bağlayıcısının yüklü olduğu sunucuda%*ProgramData*% \ Microsoft\windows Intune Exchange Connector ' a gidin. 
 2. Bir metin düzenleyicisi kullanarak **OnPremisesExchangeConnectorServiceConfiguration.xml** dosyasını açın.
-3. Özelliği devre dışı bırakmak için &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; değerini &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; olarak değiştirin.    
+3. Özelliği devre dışı bırakmak için &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; değerini &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; olarak değiştirin.  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Exchange Connector için isteğe bağlı performans ayarı  
+
+Exchange ActiveSync ile 5.000 veya daha fazla cihazı destekettiğinizde, bağlayıcının performansını artırmak için isteğe bağlı bir ayar yapılandırabilirsiniz. Exchange 'in bir PowerShell komutu çalışma alanının birden çok örneğini kullanmasını etkinleştirerek daha yüksek performans elde edilir. 
+
+Bu değişikliği yapmadan önce, Exchange bağlayıcısını çalıştırmak için kullandığınız hesabın diğer Exchange yönetim amaçları için kullanılmadığından emin olun. Bunun nedeni, Exchange 'in hesap başına 18 çalışma uzayı sınırına sahip olması ve çoğu bağlayıcının bağlayıcı tarafından kullanılması anlamına gelir. 
+
+Bu performans değişikliği, daha eski veya daha yavaş donanımlar üzerinde çalışan bağlayıcılar için uygun değildir.  
+
+1. Bağlayıcının yüklendiği sunucuda, bağlayıcılar yükleme dizinini açın.  Varsayılan konum *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*' dır. 
+2. *OnPremisesExchangeConnectorServiceConfiguration. xml*dosyasını düzenleyin.
+3. **Enableparallelcommandsupport** öğesini bulun ve değeri **true**olarak ayarlayın:  
+     
+   \<Enableparallelcommandsupport > true\</enableparallelcommandsupport >
+4. Dosyayı kaydedin ve ardından Microsoft Intune Exchange Connector hizmetini yeniden başlatın.
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>Şirket içi Exchange bağlayıcısını yeniden yükleme
 Bir Exchange bağlayıcısını yeniden yüklemeniz gerekebilir. Tek bir bağlayıcı her Exchange kuruluşuna bağlanmak üzere desteklendiğinden, bir kuruluş için ikinci bir bağlayıcı yüklerseniz, yüklediğiniz yeni bağlayıcı özgün bağlayıcının yerini alır.

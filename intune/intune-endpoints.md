@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f95e16b9c500f9c4e0750fc0453f5ed1fcea129
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
+ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353972"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68411590"
 ---
-# <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune için ağ uç noktaları
+# <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune için ağ uç noktaları  
 
 Bu sayfada, Intune dağıtımlarınızdaki ara sunucu ayarları için gereken IP adresleri ve bağlantı noktası ayarları listelenir.
 
 Yalnızca bulutta yer alan bir hizmet olan Intune, sunucular veya ağ geçitleri gibi şirket içi altyapıya ihtiyaç duymaz.
+
+## <a name="access-for-managed-devices"></a>Yönetilen cihazlara erişim  
 
 Güvenlik duvarı ve ara sunucular arkasındaki cihazları yönetmek için Intune iletişimini etkinleştirmeniz gerekir.
 
@@ -45,8 +47,8 @@ Yönetilen cihazlar, **Tüm Kullanıcıların** güvenlik duvarları üzerinden 
 
 Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hizmetler listelenir:
 
-|**Etki alanları**|**IP adresi**|
-|---------------------|-----------|
+|Etki Alanları    |IP adresi      |
+|-----------|----------------|
 |login.microsoftonline.com | Daha fazla bilgi için [Office 365 URL’leri ve IP adres aralıkları](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 |
 | sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
@@ -80,8 +82,8 @@ Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hiz
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
 
+## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>PowerShell betikleri ve Win32 uygulamaları için ağ gereksinimleri  
 
-## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>PowerShell betikleri ve Win32 uygulamaları için ağ gereksinimleri
 PowerShell betikleri veya Win32 uygulamaları dağıtmak için Intune kullanıyorsanız, kiracınızın Şu anda bulunduğu uç noktalara da erişim vermeniz gerekir.
 
 |ASU | Depolama adı | CDN |
@@ -108,28 +110,31 @@ PowerShell betikleri veya Win32 uygulamaları dağıtmak için Intune kullanıyo
 | AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
 
-## <a name="windows-push-notification-services-wns"></a>Windows Push Bildirim Hizmetleri (WNS)
-Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune ile yönetilen Windows cihazları için, cihaz eylemleri ve diğer anında Etkinlikler Windows Push Bildirim Hizmetleri (WNS) kullanılmasını gerektirir. Daha fazla bilgi için bkz. [Kurumsal güvenlik duvarları üzerinden Windows Notification trafiğine Izin verme](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    
+## <a name="windows-push-notification-services-wns"></a>Windows Push Bildirim Hizmetleri (WNS)  
 
-## <a name="delivery-optimization-port-requirements"></a>Teslim Iyileştirme bağlantı noktası gereksinimleri
+Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune ile yönetilen Windows cihazları için, cihaz eylemleri ve diğer anında Etkinlikler Windows Push Bildirim Hizmetleri (WNS) kullanılmasını gerektirir. Daha fazla bilgi için bkz. [Kurumsal güvenlik duvarları üzerinden Windows Notification trafiğine Izin verme](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).  
 
-### <a name="port-requirements"></a>Bağlantı noktası gereksinimleri
+## <a name="delivery-optimization-port-requirements"></a>Teslim Iyileştirme bağlantı noktası gereksinimleri  
+
+### <a name="port-requirements"></a>Bağlantı noktası gereksinimleri  
+
 Uçtan uca trafik için, teslim Iyileştirme, NAT çapraz geçişi (isteğe bağlı Teredo) için TCP/IP veya 3544 7680 kullanır. İstemci hizmeti iletişimi için 80/443 bağlantı noktası üzerinden HTTP veya HTTPS kullanılır.
 
-### <a name="proxy-requirements"></a>Proxy gereksinimleri
+### <a name="proxy-requirements"></a>Proxy gereksinimleri  
+
 Teslim Iyileştirme 'yi kullanmak için, bayt aralığı isteklerine izin vermeniz gerekir. Daha fazla bilgi için bkz. [Windows Update Için proxy gereksinimleri](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting).
 
-### <a name="firewall-requirements"></a>Güvenlik duvarı gereksinimleri
+### <a name="firewall-requirements"></a>Güvenlik duvarı gereksinimleri  
+
 Dağıtım Iyileştirmesini desteklemek için güvenlik duvarınız aracılığıyla aşağıdaki ana bilgisayar adlarının kullanılmasına izin verin.
 İstemcilerle teslim Iyileştirme bulut hizmeti arasındaki iletişim için:
-- *.do.dsp.mp.microsoft.com
+- \*. do.dsp.mp.microsoft.com
 
 Teslim Iyileştirme meta verileri için:
-- *.dl.delivery.mp.microsoft.com
-- *.emdl.ws.microsoft.com
+- \*. dl.delivery.mp.microsoft.com
+- \*. emdl.ws.microsoft.com
 
-## <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
-
+## <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri  
 
 |Kullanıldığı yer|Ana bilgisayar adı (IP adresi/alt ağ)|Protocol|Port|
 |-----|--------|------|-------|
@@ -137,4 +142,38 @@ Teslim Iyileştirme meta verileri için:
 |APNS sunucularıyla iletişim|#-courier.push.apple.com<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|    TCP     |  5223 ve 443  |
 |World Wide Web, iTunes Mağazası, macOS App Store, iCloud, mesajlaşma vb. erişim dahil çeşitli işlevler |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 veya 443   |
 
-Daha fazla bilgi için şu Apple belgelerine bakın: [Apple yazılım ürünleri tarafından kullanılan TCP ve UDP bağlantı noktaları](https://support.apple.com/en-us/HT202944), [macOS, iOS ve iTunes sunucusu ana bilgisayar bağlantıları ve iTunes arka plan işlemleri hakkında](https://support.apple.com/en-us/HT201999) ve [macOS ve iOS istemcileriniz Apple anında iletme bildirimlerini almıyorsa](https://support.apple.com/en-us/HT203609).
+Daha fazla bilgi için şu Apple belgelerine bakın: [Apple yazılım ürünleri tarafından kullanılan TCP ve UDP bağlantı noktaları](https://support.apple.com/en-us/HT202944), [macOS, iOS ve iTunes sunucusu ana bilgisayar bağlantıları ve iTunes arka plan işlemleri hakkında](https://support.apple.com/en-us/HT201999) ve [macOS ve iOS istemcileriniz Apple anında iletme bildirimlerini almıyorsa](https://support.apple.com/en-us/HT203609).  
+
+## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Sertifika Bağlayıcısı  
+
+Microsoft Intune Sertifika Bağlayıcısı barındıran sunucu, aşağıdaki tabloda listelenen genel IP konumlarında **TCP** bağlantı noktası **443** ' ü kullanarak erişime sahip olmalıdır.  
+
+|Etki Alanları                             |IP adresi       |
+|---------------|--------------------------------------|
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com|13.76.177.110  |
+|fef.msua06.manage.microsoft.com  |13.78.185.97  |
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com |13.82.96.212  |
+|fef.amsua0502.manage.microsoft.com |13.85.68.142   |
+| portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msuc01.manage.microsoft.com <br> m.fei.msuc01.manage.microsoft.com <br> portal.fei.msuc02.manage.microsoft.com <br> m.fei.msuc02.manage.microsoft.com <br> portal.fei.msuc03.manage.microsoft.com <br> m.fei.msuc03.manage.microsoft.com <br> portal.fei.msuc05.manage.microsoft.com <br> m.fei.msuc05.manage.microsoft.com |20.188.107.228|
+|fef.msua04.manage.microsoft.com  |23.96.112.28  |
+|fef.amsua0402.manage.microsoft.com|40.69.157.122    |
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com |40.83.123.72    |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msub01.manage.microsoft.com <br> m.fei.msub01.manage.microsoft.com <br> portal.fei.amsub0102.manage.microsoft.com <br> m.fei.amsub0102.manage.microsoft.com <br> fei.msub02.manage.microsoft.com <br> portal.fei.msub02.manage.microsoft.com <br> m.fei.msub02.manage.microsoft.com <br> portal.fei.msub03.manage.microsoft.com <br> m.fei.msub03.manage.microsoft.com <br> portal.fei.msub05.manage.microsoft.com <br> m.fei.msub05.manage.microsoft.com <br> portal.fei.amsub0202.manage.microsoft.com <br> m.fei.amsub0202.manage.microsoft.com <br> portal.fei.amsub0302.manage.microsoft.com <br> m.fei.amsub0302.manage.microsoft.com |51.144.161.187 |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msub01.manage.microsoft.com <br> m.fei.msub01.manage.microsoft.com <br> portal.fei.amsub0102.manage.microsoft.com <br> m.fei.amsub0102.manage.microsoft.com <br> fei.msub02.manage.microsoft.com <br> portal.fei.msub02.manage.microsoft.com <br> m.fei.msub02.manage.microsoft.com <br> portal.fei.msub03.manage.microsoft.com <br> m.fei.msub03.manage.microsoft.com <br> portal.fei.msub05.manage.microsoft.com <br> m.fei.msub05.manage.microsoft.com <br> portal.fei.amsub0202.manage.microsoft.com <br> m.fei.amsub0202.manage.microsoft.com <br> portal.fei.amsub0302.manage.microsoft.com <br> m.fei.amsub0302.manage.microsoft.com  |52.138.193.149  |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msua01.manage.microsoft.com <br> m.fei.msua01.manage.microsoft.com <br> portal.fei.msua02.manage.microsoft.com <br> m.fei.msua02.manage.microsoft.com <br> portal.fei.msua04.manage.microsoft.com <br> m.fei.msua04.manage.microsoft.com <br> portal.fei.msua05.manage.microsoft.com <br> m.fei.msua05.manage.microsoft.com <br> portal.fei.amsua0502.manage.microsoft.com <br> m.fei.amsua0502.manage.microsoft.com <br> portal.fei.msua06.manage.microsoft.com <br> m.fei.msua06.manage.microsoft.com <br> portal.fei.amsua0602.manage.microsoft.com <br> m.fei.amsua0602.manage.microsoft.com <br> fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0202.manage.microsoft.com <br> m.fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0402.manage.microsoft.com <br> m.fei.amsua0402.manage.microsoft.com |52.160.70.20  |
+|fef.amsua0602.manage.microsoft.com |52.161.28.64   |
+|fef.amsua0202.manage.microsoft.com |52.165.165.17   |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msua01.manage.microsoft.com <br> m.fei.msua01.manage.microsoft.com <br> portal.fei.msua02.manage.microsoft.com <br> m.fei.msua02.manage.microsoft.com <br> portal.fei.msua04.manage.microsoft.com <br> m.fei.msua04.manage.microsoft.com <br> portal.fei.msua05.manage.microsoft.com <br> m.fei.msua05.manage.microsoft.com <br> portal.fei.amsua0502.manage.microsoft.com <br> m.fei.amsua0502.manage.microsoft.com <br> portal.fei.msua06.manage.microsoft.com <br> m.fei.msua06.manage.microsoft.com <br> portal.fei.amsua0602.manage.microsoft.com <br> m.fei.amsua0602.manage.microsoft.com <br> fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0202.manage.microsoft.com <br> m.fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0402.manage.microsoft.com <br> m.fei.amsua0402.manage.microsoft.com |52.168.54.64   |
+|r.manage.microsoft.com |52.169.9.87    |
+|. manage.microsoft.com  |52.174.26.23   |
+|portal.fei.msuc01.manage.microsoft.com <br> m.fei.msuc01.manage.microsoft.com <br> portal.fei.msuc02.manage.microsoft.com <br> m.fei.msuc02.manage.microsoft.com <br> portal.fei.msuc03.manage.microsoft.com <br> m.fei.msuc03.manage.microsoft.com <br> portal.fei.msuc05.manage.microsoft.com <br> m.fei.msuc05.manage.microsoft.com |52.175.12.209  |
+|fef.msua07.manage.microsoft.com |52.175.208.218     |
+|fef.msua02.manage.microsoft.com |52.177.194.236    |
+|sts.manage.microsoft.com        |104.40.82.191    |
+|fef.msua01.manage.microsoft.com |138.91.243.97     |
+|fef.msua05.manage.microsoft.com |138.91.244.151     |
+
+
+
+
+

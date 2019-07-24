@@ -1,12 +1,12 @@
 ---
 title: Koşullu erişim sorunlarını giderme
 titleSuffix: Microsoft Intune
-description: Kullanıcılarınızın kaynaklarına erişimi Intune koşullu erişim üzerinden erişemediklerinde ne yapmanız gerekenler belirtir.
+description: Kullanıcılarınız, kaynaklara Intune koşullu erişimi aracılığıyla erişim izni alamazsanız ne yapmalı?
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 07/23/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,66 +17,102 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 14a1e0a4d0df3e5c278028b314a34553f7943f8d
+ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530724"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68411650"
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
+Bu makalede, kullanıcılarınız koşullu erişimle korunan kaynaklara erişim izni alamazsanız veya kullanıcılar korumalı kaynaklara erişebiliyorsa ve engellenmesi gereken durumlarda ne yapılacağını açıklar.
 
-Exchange Online, SharePoint Online, Skype gibi Office 365 hizmetlerine erişimi çevrimiçi koruma, Intune ve koşullu erişim kullanarak şirket içi ve diğer hizmetlere Exchange. Bu özellik şirket kaynaklarına erişimi Intune ile kaydedilen cihazlar için kısıtlı ve Intune Yönetici konsolunda veya Azure Active Directory ayarladığınız koşullu erişim kuralları ile uyumlu olduğundan emin olmanızı sağlar. Bu makalede, koşullu erişim ile korunan kaynaklara erişim elde etmek, kullanıcılarınızın başarısız olduğunda veya kullanıcılar, korumalı kaynaklara erişebilir ancak engellenmesi gerektiğini yapmanız gerekenler açıklanmaktadır.
+Intune ve koşullu erişimle, şu gibi hizmetlere erişimi koruyabilirsiniz:
+- Exchange Online, SharePoint Online ve Skype Kurumsal Çevrimiçi gibi Office 365 hizmetleri
+- Exchange Şirket İçi
+- Diğer çeşitli hizmetler
 
-## <a name="requirements-for-conditional-access"></a>Koşullu erişim için gereksinimleri
+Bu özellik, yalnızca Intune 'a kayıtlı ve Intune yönetim konsolunda veya Azure Active Directory şirket kaynaklarınıza erişimi olan koşullu erişim kurallarıyla uyumlu olan cihazların olduğundan emin olmanızı sağlar. 
 
-Koşullu erişimin çalışması için aşağıdaki gereksinimler karşılanmalıdır:
+## <a name="requirements-for-conditional-access"></a>Koşullu erişim için gereksinimler
 
-- Cihazın Intune'a kayıtlı olmalı ve Intune tarafından yönetilmelidir.
+Koşullu erişimin çalışması için aşağıdaki gereksinimlerin karşılanması gerekir:
+
+- Cihazın MDM 'ye kaydolması ve Intune tarafından yönetilmesi gerekir.
+
 - Gerek kullanıcı, gerekse cihaz, atanan Intune ilkeleriyle uyumlu olmalıdır.
-- Kullanıcıya varsayılan olarak bir cihaz uyumluluk ilkesi atanmış olmalıdır. Bu, Intune yönetim portalında **Cihaz Uyumluluğu** > **Uyumluluk İlkesi Ayarları** altındaki **Kendisine hiçbir uyumluluk ilkesi atanmamış cihazları şöyle işaretle** ayarının yapılandırmasına bağlıdır.
-- Kullanıcı Outlook yerine cihazın yerel posta istemcisini kullanıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir. Bu ayar iOS, Windows Phone ve Android cihazlarında otomatik olarak gerçekleşir.
-- Intune Exchange Connector'ınız düzgün şekilde yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
+
+- Kullanıcıya varsayılan olarak bir cihaz uyumluluk ilkesi atanmış olmalıdır. Bu, Intune yönetim portalındaki **cihaz uyumluluk** > **uyumluluğu ilke ayarları** altında olan **Uyumluluk ilkesi atanmamış olan ayar işareti cihazlarının** yapılandırmasına bağlıdır.
+
+- Kullanıcı Outlook yerine cihazın yerel posta istemcisini kullanıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir. Bu, iOS, Windows Phone ve Android Knox cihazları için otomatik olarak gerçekleşir.
+
+- Şirket içi Exchange için Intune Exchange bağlayıcınızın doğru şekilde yapılandırılması gerekir. Daha fazla bilgi için bkz. [Microsoft Intune Exchange Connector 'Da sorun giderme](troubleshoot-exchange-connector.md).
+
+- Şirket içi Skype için karma modern kimlik doğrulamasını yapılandırmanız gerekir. Bkz. [karma modern kimlik doğrulaması genel bakış](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
 
 Azure Yönetim Portalı’nda ve cihaz envanteri raporunda her cihaz için bu koşulları görüntüleyebilirsiniz.
 
 ## <a name="devices-appear-compliant-but-users-are-still-blocked"></a>Cihazlar uyumlu olarak görünüyor, ancak kullanıcılar yine de engelleniyor
 
-- Knox olmayan Android cihazlara, kullanıcı aldığı karantina e-postasındaki **Şimdi Başla** bağlantısına tıklamadan erişim verilmez. Bu kural, kullanıcı daha önceden Intune'a kayıtlı olsa bile geçerlidir. İçinde bağlantı olan e-posta telefonuna gelmezse, kullanıcı, e-postasına erişmek ve e-postayı cihazındaki bir e-posta hesabına iletmek için bir bilgisayarı kullanabilir.
+- Kullanıcının doğru uyumluluk değerlendirmesi için atanmış bir Intune lisansına sahip olduğundan emin olun.
+
+- Kullanıcı aldıkları karantina e-postasında **Şimdi kullanmaya başlayın** bağlantısına tıklayana, Knox olmayan Android cihazlara erişim izni verilmez. Bu kural, kullanıcı daha önceden Intune'a kayıtlı olsa bile geçerlidir. Kullanıcı e-posta bağlantısını telefonlarıyla almazsa, e-postasına erişmek ve cihazındaki bir e-posta hesabına iletmek için bir BILGISAYAR kullanabilir.
+
 - Cihaz ilk kaydedildiğinde cihazın uyumluluk bilgilerinin kaydedilmesi biraz zaman alabilir. Birkaç dakika bekleyin ve tekrar deneyin.
-- iOS cihazlarında, mevcut bir e-posta profili, Intune yöneticisi tarafından oluşturulan ve bu kullanıcıya atanan bir e-posta profilinin dağıtılmasını engelleyerek cihazı uyumsuz hale getirebilir. Bu senaryoda Şirket Portalı uygulaması kullanıcıya el ile yapılandırılmış e-posta profili nedeniyle uyumsuz olduğunu bildirir ve kullanıcıdan bu profili kaldırmasını ister. Kullanıcı mevcut e-posta profilini kaldırdıktan sonra Intune e-posta profili başarıyla dağıtılır. Bu sorunu önlemek için kullanıcılarınızdan kaydolmadan önce cihazlarında bulunan e-posta profillerini kaldırmalarını isteyin.
-- Bir cihaz, uyumluluk denetim durumunda takılı kalarak kullanıcının başka bir giriş işlemini başlatmasını engelleyebilir. Bu durumda olan bir cihazınız varsa aşağıdakileri deneyin:
+
+- İOS cihazlarında, var olan bir e-posta profili, bu kullanıcıya atanan bir Intune yönetici tarafından oluşturulan e-posta profilinin dağıtımını engelleyebilir ve cihaz uyumsuz hale gelebilir. Bu senaryoda, Şirket Portalı uygulama kullanıcıya el ile yapılandırılmış e-posta profilleri nedeniyle uyumlu olmadıklarını bildirir ve kullanıcıdan bu profili kaldırmasını ister. Kullanıcı mevcut e-posta profilini kaldırdığında, Intune e-posta profili başarıyla dağıtılabilir. Bu sorunu önlemek için kullanıcılarınızdan kaydolmadan önce cihazlarında bulunan e-posta profillerini kaldırmalarını isteyin.
+
+- Bir cihaz, bir denetim uyumluluğu durumunda takılmasına ve kullanıcının başka bir iade başlatmasına karşı bir durum alabilir. Bu durumda bir cihazınız varsa:
   - Cihazın Şirket Portalı uygulamasının en son sürümünü kullandığından emin olun.
   - Cihazı yeniden başlatın.
-  - Sorunun farklı ağlarda (hücresel, Wi-Fi vb.) devam edip etmediğine bakın.
+  - Sorunun farklı ağlarda (örneğin, hücresel, Wi-Fi vb.) devam edip etmediğini inceleyin.
 
   Sorun devam ederse, [Microsoft Intune için destek alma](get-support.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.
-- Belirli Android cihazları şifrelenmiş gibi görünebilir, ancak Şirket Portalı uygulaması bu cihazları şifrelenmemiş olarak algılayarak bunları uyumsuz olarak işaretleyebilir. Bu senaryoda kullanıcı, Şirket Portalı uygulamasında cihaz için bir başlangıç geçiş kodu ayarlamasının istendiği bir bildirim görür. Bildirime dokunup, geçerli PIN veya parolayı onayladıktan sonra, **Güvenli başlangıç** ekranında **Cihazı başlatmak için PIN iste** seçeneğini belirleyin, sonra Şirket Portalı uygulamasından cihaz için **Uyumluluğu Denetle** düğmesine dokunun. Cihazın artık şifrelenmiş olarak algılanması gerekir. 
+
+- Bazı Android cihazlar şifrelenmiş gibi görünebilir, ancak Şirket Portalı uygulama bu cihazları şifrelenmemiş olarak tanır ve uyumlu değil olarak işaretler. Bu senaryoda kullanıcı, Şirket Portalı uygulamasında cihaz için bir başlangıç geçiş kodu ayarlamasının istendiği bir bildirim görür. Bildirime dokunup, geçerli PIN veya parolayı onayladıktan sonra, **Güvenli başlangıç** ekranında **Cihazı başlatmak için PIN iste** seçeneğini belirleyin, sonra Şirket Portalı uygulamasından cihaz için **Uyumluluğu Denetle** düğmesine dokunun. Cihazın artık şifrelenmiş olarak algılanması gerekir. 
+
   > [!NOTE]
-  > Bazı cihaz üreticileri cihazlarını kullanıcı tarafından ayarlanan bir PIN yerine varsayılan bir PIN kullanarak şifreler. Intune varsayılan PIN'i kullanan şifrelemeyi güvensiz olarak kabul eder ve bu cihazları kullanıcı yeni ve varsayılan PIN'den farklı bir PIN oluşturuncaya kadar uyumsuz olarak işaretler.
-- Kayıtlı ve uyumlu olan bir Android cihaz, şirket kaynaklarına ilk kez erişmeye çalıştığında yine de karantina bildirimi alabilir. Bu olursa, Şirket Portalı uygulamasının çalışmadığından emin olun, ardından değerlendirme başlatmak için karantina e-postasındaki **Şimdi Başla** bağlantısına tıklayın. Bu, yalnızca koşullu erişim etkinken yapılması gerekir.
+  > Bazı cihaz üreticileri, bu kullanıcı tarafından ayarlanan PIN yerine varsayılan PIN kullanarak cihazlarını şifreler. Intune, varsayılan PIN 'i güvenli olmayan olarak kullanan ve Kullanıcı yeni, varsayılan olmayan bir PIN oluşturana kadar bu cihazları uyumsuz olarak işaretleyen bir şifrelemeyi görüntüler.
+
+- Kayıtlı ve uyumlu bir Android cihaz hala engellenebilir ve ilk olarak şirket kaynaklarına erişmeye çalışırken bir karantina bildirimi alabilir. Bu durumda, Şirket Portalı uygulamasının çalışmadığından emin olun ve değerlendirmeyi tetiklemek için karantina e-postasında **Şimdi kullanmaya başlayın** bağlantısını seçin. Bunun yalnızca koşullu erişim ilk kez etkinleştirildiğinde yapılması gerekir.
+
+- Kayıtlı bir Android cihaz, kullanıcıdan "sertifika bulunamadı" ve O365 kaynaklarına erişim izni verilmeyebilir. Kullanıcı kayıtlı cihazda *tarayıcı erişimini etkinleştir* seçeneğini şu şekilde etkinleştirmelidir:
+  1. Şirket Portalı uygulamasını açın.
+  2. Üçlü noktalar (...) veya donanım menü düğmesinden Ayarlar sayfasına gidin.
+  3. *Tarayıcı erişimini etkinleştir* düğmesini seçin.
+  4. Chrome tarayıcıda, Office 365 oturumunu kapatın ve Chrome’u yeniden başlatın.  
+
 
 ## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>Cihazlar engelleniyor ve hiçbir karantina e-postası alınmıyor
 
-- Cihazın Intune yönetim konsolunda bir Exchange ActiveSync cihazı olarak mevcut olduğundan emin olun. Değilse, cihaz olası bir Exchange Connector sorunu nedeniyle bulunamıyor olabilir. Daha fazla bilgi için bkz. [Intune şirket içi Exchange bağlayıcısında sorun giderme.](troubleshoot-exchange-connector.md)
+- Cihazın Intune yönetim konsolunda bir Exchange ActiveSync cihazı olarak mevcut olduğundan emin olun. Değilse, cihaz olası bir Exchange Connector sorunu nedeniyle bulunamıyor olabilir. Daha fazla bilgi için bkz. [Intune şirket Içi Exchange Connector sorunlarını giderme](troubleshoot-exchange-connector.md).
+
 - Exchange Connector bir cihazı engellemeden önce bir etkinleştirme (karantina) e-postası gönderir. Cihaz çevrimdışıysa, etkinleştirme e-postasını almayabilir. 
+
 - Cihazdaki e-posta istemcisinin e-postayı **Yoklama** yerine **Anında İletme** ile alacak şekilde mi yapılandırıldığına bakın. Öyle yapılandırılmışsa, bu, kullanıcının e-postayı kaçırmasına neden olabilir. **Yoklama** yöntemine geçip cihazın e-postayı alıp almadığına bakın.
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Cihazlar uyumsuz, ancak kullanıcılar engellenmiyor
 
-- Windows bilgisayarlar için koşullu erişim yalnızca yerel e-posta uygulaması, Office 2013 Modern kimlik doğrulaması veya Office 2016 engeller. Outlook veya Windows bilgisayarlarda tüm posta uygulamaları engelleme önceki sürümlerinde, AAD cihaz kaydı ve Active Directory Federasyon Hizmetleri (AD FS) yapılandırmaları olarak başına gerektirir [SharePoint Online ve Exchange Online için Azure Active Directory'yi ayarlama Koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
-- Cihaz seçmeli olarak temizlendiğinde veya Intune kullanımından kaldırıldığında, erişimi birkaç saat daha devam edebilir. Bunun nedeni, Exchange’in, erişim haklarını 6 saat boyunca önbelleğe almasıdır. Bu senaryoda, kullanımdan kaldırılan cihazlardaki verileri korumanın başka yöntemlerini göz önünde bulundurun.
-- Surface Hub cihazları, koşullu erişim desteği: Ancak, cihaz gruplarına (değil kullanıcı grupları) doğru bir değerlendirme için Uyumluluk İlkesi dağıtmanız gerekir.
-- İçin Uyumluluk ilkeleri ve koşullu erişim ilkelerinizi atamaları denetleyin. Kullanıcı ilkelerin atandığı grupta değilse veya dışlanan bir gruptaysa engellenir. Uyumluluk denetimi yalnızca atanan bir grupta olan kullanıcıların cihazlarında yapılır.
+- Windows bilgisayarları için koşullu erişim yalnızca yerel e-posta uygulamasını, modern kimlik doğrulaması ile Office 2013 veya Office 2016 ' i engeller. Outlook 'un önceki sürümlerini veya Windows bilgisayarlarda tüm posta uygulamalarını engellemek, [Azure Active Directory Koşullu Için SharePoint Online ve Exchange Online kurulumu UYARıNCA AAD cihaz kaydı ve Active Directory Federasyon Hizmetleri (AD FS) (AD FS) yapılandırması gerektirir Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication).
+
+- Cihaz seçmeli olarak temizlendiğinde veya Intune kullanımından kaldırıldığında, erişimi birkaç saat daha devam edebilir. Bunun nedeni, Exchange 'in altı saat boyunca erişim haklarının önbelleğe alınır. Bu senaryoda, kullanımdan kaldırılan cihazlardaki verileri korumanın başka yöntemlerini göz önünde bulundurun.
+
+- Surface Hub, toplu kayıtlı ve DEM 'ye kayıtlı Windows cihazları, Intune lisansı atanmış bir Kullanıcı oturum açmışsa koşullu erişimi destekleyebilir. Ancak, Uyumluluk ilkesini doğru değerlendirme için cihaz gruplarına (Kullanıcı grupları değil) dağıtmanız gerekir.
+
+- Uyumluluk ilkelerinizin ve koşullu erişim ilkelerinizin atamalarına bakın. Bir Kullanıcı ilkelerin atandığı grupta yoksa veya dışlanan bir grupta değilse, Kullanıcı engellenmez. Uyumluluk denetimi yalnızca atanan bir grupta olan kullanıcıların cihazlarında yapılır.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Uyumsuz cihaz engellenmiyor
 
-Uyumlu olmayan ancak erişimi olan bir cihazla karşılaşırsanız, aşağıdaki adımları uygulayın.
+Bir cihaz uyumlu değilse ancak erişime sahip olmaya devam ederse, aşağıdaki işlemleri gerçekleştirin.
+
 - Hedef ve Dışlama gruplarını gözden geçirin. Kullanıcı doğru hedef grupta değilse veya dışlama grubundaysa, engellenmez. Yalnızca Hedef grupta olan kullanıcıların cihazlarında uyumluluk denetimi yapılır.
+
 - Cihazın bulunabildiğinden emin olun. Exchange Connector bir Exchange 2010 CAS’ine, buna karşın kullanıcı bir Exchange 2013 sunucusuna mı işaret ediyor? Bu durumda, varsayılan Exchange kuralı İzin Ver ise, kullanıcı Hedef grupta olsa bile Intune cihazın Exchange’a bağlandığının farkında olamaz.
+
 - Exchange’de Cihazın Varlığı/Erişim Durumu’nu kontrol edin:
-  - Bir posta kutusunun tüm mobil cihazlarının listesini almak için bu PowerShell cmdlet'ini kullanın: "Get-ActiveSyncDeviceStatistics-posta kutusu mbx'. Cihaz listede yoksa Exchange’e erişmiyordur.
-  - Cihaz listeleniyorsa, erişim durumu hakkında ayrıntılı bilgi almak için Get-CASmailbox -identity:’upn’ | fl cmdlet’ini kullanın ve bu bilgileri Microsoft Desteği’ne verin.
+  - Bir posta kutusunun tüm mobil cihazlarının listesini almak için bu PowerShell cmdlet 'ini kullanın: ' Get-ActiveSyncDeviceStatistics-Mailbox MBX '. Cihaz listede yoksa Exchange’e erişmiyordur.
+  
+  - Cihaz listeleniyorsa, ' Get-CASmailbox-Identity: ' UPN ' kullanın | fl ' cmdlet 'i, erişim durumu hakkında ayrıntılı bilgi almak ve bu bilgileri Microsoft Desteği sağlamak için sağlar.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Bu bilgiler işinize yaramazsa [Microsoft Intune desteği de alabilirsiniz](get-support.md).

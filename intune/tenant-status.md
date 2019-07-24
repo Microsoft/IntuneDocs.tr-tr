@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune Kiracı durumu sayfası
+title: Microsoft Intune kiracı durumu sayfası
 titleSuffix: Microsoft Intune
-description: Intune portalından ayrılmak zorunda kalmadan önemli Kiracı ayrıntılarını görüntülemek için Intune Kiracı durumu sayfasını kullanabilirsiniz
+description: Intune portalından çıkmadan önemli kiracı ayrıntılarını görüntülemek için Intune kiracı durumu sayfasını kullanın
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,65 +14,65 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3b6aeb7efc60d32891f4b1c69b387a61a2bc25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040509"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882233"
 ---
-# <a name="intune-tenant-status-page"></a>Intune Kiracı durumu sayfası
-Kiracı durumu, bir merkezi hub'ı kiracınız hakkında güncel ve önemli ayrıntılar görüntüleyebileceğiniz sayfasıdır. Lisans kullanılabilirlik ve kullanım, bağlayıcı durumunu ve Intune hizmeti hakkında önemli iletişimleri ayrıntıları içerir.  
+# <a name="intune-tenant-status-page"></a>Intune kiracı durumu sayfası
+Kiracı durumu sayfası, kiracınız hakkındaki güncel ve önemli ayrıntıları görüntüleyebileceğiniz merkezi bir merkezdir. Ayrıntılar lisans kullanılabilirliği ve kullanımı, bağlayıcı durumu ve Intune hizmeti hakkındaki önemli iletişimleri içerir.  
 
-Azure portal gidin, panoyu görüntülemek için **Intune > Kiracı durumu**.  Kiracı durumu altında görünür **Yardım ve Destek grubu**.  
+Panoyu görüntülemek için Azure portal **Intune 'a > kiracı durumu**' na gidin.  Kiracı durumu **Yardım ve destek grubu**altında görünür.  
 
 Sayfa dört alana ayrılır:
 
 ## <a name="tenant-details"></a>Kiracı ayrıntıları
-Kiracınızın ayrıntılarının kiracınız hakkında bir bakışta bilgiler sağlar. Ayrıntıları Görüntüle, Kiracı adınızın ve konumu, MDM yetkilinizi ve kiracılara hizmet sürüm numaranızı gibi. Hizmet sürüm numarasıdır açan bir bağlantıya *Intune'daki yenilikler* Microsoft docs'ta makale. İçinde *yenilikler*, en son özellikler ve güncelleştirmeler hakkında bilgi edinebilirsiniz Intune hizmetine.  
+Kiracı ayrıntıları kiracınız hakkında bir bakışta bilgi sağlar. Kiracı adınız ve konumunuz, MDM yetkiliniz ve kiracılar hizmeti yayın numaranız gibi ayrıntıları görüntüleyin. Hizmet sürüm numarası, Microsoft docs *'Taki Intune 'daki* yenilikler makalesinde açılan bir bağlantıdır. Yenilikler bölümünde, Intune hizmetine yönelik en son özellikler ve güncelleştirmeler hakkında bilgi edinebilirsiniz.  
 
-Bu bölüm, ayrıca mevcut lisanslarınızı ve kaç kullanıcılara atanan ve hakkındaki temel bilgileri sağlar. Cihazlar için lisans gösterilmez.
+Bu bölüm, kullanılabilir lisanslarınızla ilgili temel bilgileri ve kullanıcılara kaç tane atandığını da sağlar. Cihazlar için lisanslar gösterilmez.
 
 ## <a name="connector-status"></a>Bağlayıcı durumu
-Bağlayıcı durumu, Intune için tüm kullanılabilir bağlayıcılar durumunu gözden geçirmek için bir tek yerdir.  
+Bağlayıcı durumu, Intune için kullanılabilir olan tüm bağlayıcıların durumunu gözden geçirmek için tek durağı olan bir konumdur.  
 
 Bağlayıcılar şunlardır:
-- **Dış hizmetler için yapılandırdığınız bağlantı**. Örneğin, *Apple Volume Purchase Program* hizmet veya *Windows Autopilot* hizmeti.  Durum bu tür bir bağlayıcı için son başarılı eşitleme zamanını üzerinde temel alır.
-- **Sertifikaları veya yönetilmeyen bir dış hizmete bağlanmak için gerekli kimlik bilgilerini**gibi *Apple anında iletme bildirimi Hizmetleri* (APNS) sertifikaları. Bu tür bir bağlayıcı için durumu, sertifika veya kimlik bilgisi bitiş zaman damgası üzerinde temel alır.  
+- **Dış hizmetlere yapılandırdığınız bağlantılar**. Örneğin, *Apple Volume Purchase program* hizmeti veya *Windows Autopilot* hizmeti.  Bu tür bağlayıcının durumu, son başarılı eşitleme zamanına göre belirlenir.
+- *Apple Push bildirim hizmetleri* (APNs) sertifikaları gibi **bir dış yönetilmeyen hizmete bağlanmak için gereken sertifikalar veya kimlik bilgileri**. Bu tür bağlayıcının durumu, sertifikanın veya kimlik bilgisinin süre sonu zaman damgasına göre belirlenir.  
 
-Varsayılan olarak, en fazla beş bağlayıcıları gösterir. Seçebileceğiniz **tüm bağlayıcıların** kullanılmak üzere yapılandırılmış henüz bağlayıcılar dahil olmak üzere tüm kullanılabilir bağlayıcılar görüntülemek için bu listeyi genişletin.  
+Varsayılan olarak, ekran en fazla beş bağlayıcı gösterir. Kullanım için yapılandırmadığınız bağlayıcılar da dahil olmak üzere tüm kullanılabilir bağlayıcıları görüntülemek için bu listeyi genişletmek üzere **Tüm bağlayıcıları** göster ' i seçebilirsiniz.  
 
-Sağlıksız bağlayıcılar her zaman listenin en üstünde görüntüler. Sonraki bağlayıcılar uyarıları ve Sağlıklı bağlayıcıların listesi var. Bağlayıcılar henüz yapılandırmadıysanız, son görünür.
+Sağlıksız bağlayıcılar her zaman listenin en üstünde görüntülenir. Ardından uyarılar içeren bağlayıcılar, sonra sağlıklı bağlayıcılar listesi. Henüz yapılandırmadığınız bağlayıcılar son olarak görünür.
 
-Yoktur, herhangi bir türde tek bir bağlayıcıyı birden fazla durum aynı söz konusu bağlayıcıların tümü için özetidir. Tek bir bağlayıcıyı az sağlıklı durumu sistem grubu için kullanılır.  
+Herhangi bir türden birden fazla bağlayıcı varsa, bu durum aynı bağlayıcıların hepsi için bir özettir. Tek bir bağlayıcının en az sağlıklı durumu, grup için sistem durumu olarak kullanılır.  
 
 **Bağlayıcı durumu:**
-- **Sağlıksız:**
-    - Sertifika veya kimlik bilgisi süresi doldu
-    - Son eşitleme en az üç gün öncesine ait
-- **Uyarı:**
-    - Sertifika veya kimlik bilgisi yedi gün içinde sona erecek
-    - Son eşitleme bir günden daha önce olduğu
-- **İyi durumda:**
-    - Sertifika veya kimlik bilgisi sonraki yedi gün içinde süresi dolacak olmaz
-    - Son eşitleme bir günden kısa süre önce oluştu  
+- **Sağlıksız**
+  - Sertifika veya kimlik bilgisinin süresi doldu
+  - Son eşitleme üç veya daha fazla gün önce
+- **Warning**
+  - Sertifikanın veya kimlik bilgisinin süresi yedi gün içinde dolacak
+  - Son eşitleme bir günden daha önce
+- **Sağlıklı**
+  - Sertifika veya kimlik bilgisinin süresi önümüzdeki yedi gün içinde dolacak
+  - Son eşitleme bir günden daha önce  
 
-Listeden bir bağlayıcı'yı seçtiğinizde, portal, oluşturma veya bu bağlayıcıyı yapılandırma ile ilgili portal sayfasının sunar.  Örneğin, seçtiğinizde, **VPP sona erme tarihi** bağlayıcısını **iOS toplu satın alma programı belirteçleri** sayfası bu Bağlayıcısı hakkında daha fazla ayrıntı görüntüleyebileceğiniz açılır. Ardından yeni bir yapılandırma oluşturmak veya da düzenleyebilir ve mevcut bir sorunları giderin.  
+Listeden bir bağlayıcı seçtiğinizde, Portal bu bağlayıcıyı oluşturmaya veya yapılandırmaya uygun olan portal sayfasını gösterir.  Örneğin, **VPP süre sonu tarihi** bağlayıcısını seçtiğinizde, o bağlayıcı hakkında daha fazla ayrıntıyı görüntüleyebileceğiniz **IOS toplu satın alınan program belirteçleri** sayfası açılır. Daha sonra yeni bir yapılandırma oluşturabilir veya var olan bir yapılandırma sorunlarını düzenleyebilir ve çözebilirsiniz.  
 
 ## <a name="intune-service-health"></a>Intune hizmet durumu  
-Microsoft 365 hizmet durumu panosu veya ileti merkezi gitmek zorunda kalmadan etkin olaylar ve önerileri ayrıntılarını görüntüleyebilir, bulunan her ikisi de [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com). Burada etkisi kiracınız etkilemek için Not olayları gösterilmektedir.  
+Microsoft 365 hizmet durumu panosuna veya her ikisi de [Microsoft 365 Yönetim merkezinde](https://admin.microsoft.com)bulunan ileti merkezine gitmek zorunda kalmadan etkin olaylar ve Danışma bilgilerini görüntüleyebilirsiniz. Yalnızca kiracınızı etkilemek için etkinin belirtildiği olaylar gösterilir.  
 
-Bir olay seçtiğinizde, olay ayrıntılarını Kiracı durumu sayfasında doğrudan sunulur. Önerileri ve olayları görüntülemek için seçin **olaylar/önerileri görmek**. Microsoft 365 Yönetici merkezi açılır ve kiracınız için ardından önerileri ve son 30 güne ait olayları görüntüleyebilir.  
+Bir olay seçtiğinizde, olay ayrıntıları doğrudan kiracı durumu sayfasında sunulur. Geçmiş Danışma belgelerini ve olayları görüntülemek için **Geçmiş olayları/Danışma belgelerini**göster ' i seçin. Microsoft 365 Yönetim Merkezi açılır ve kiracınız için son 30 günden sonra Danışma belgelerini ve olayları görüntüleyebilirsiniz.  
 
-Bilgilerini görüntülemek için *Intune hizmet durumu*, hesabınızın olması gerekir **genel yönetici** veya **Hizmet Yöneticisi** Azure Active Directory'de rolü veya Microsoft 365 Yönetim Merkezi. Bu izinleri atamak üzere oturum [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com) genel yönetici izinlerine sahip. Seçin **kullanıcılar > etkin kullanıcılar**ve ardından erişim gerektiren bir hesabı seçin. Seçin **Düzenle** rolleri için seçin *Hizmet Yöneticisi* veya *genel yönetici*, ardından **Kaydet** atamak için Düzenle izinler.  
+*Intune hizmet durumu*bilgilerini görüntülemek için, hesabınız Azure Active Directory veya Microsoft 365 Yönetim Merkezi 'Nde **genel yönetici** veya **Hizmet Yöneticisi** rolüne sahip olmalıdır. Bu izinleri atamak için, [Microsoft 365 Yönetim merkezinde](https://admin.microsoft.com) genel yönetici izinleriyle oturum açın. **Etkin kullanıcılar > kullanıcılar**' ı seçin ve ardından erişim gerektiren hesabı seçin. Roller için **Düzenle** ' yi seçin, *Hizmet Yöneticisi* veya *genel yönetici*' yi seçin ve ardından Izinleri atamak için Düzenle ' yi **kaydedin** .  
 
-İletişim tercihlerinizi Microsoft 365 Yönetim merkezinden Intune hizmet durumu yalnızca ayarlayabilirsiniz.
+Intune hizmet durumu için iletişim tercihlerinizi yalnızca Microsoft 365 Yönetim Merkezi aracılığıyla ayarlayabilirsiniz.
 
-## <a name="intune-news"></a>Intune Haberleri  
-Intune hizmet ekibi bilgilendirme iletişimi, Office ileti merkezine gitmek zorunda kalmadan görüntüleyin. İletişim, Intune hizmetine yakın zamanda gerçekleşen veya şekilde kiracınız için olan değişiklikler hakkında iletileri içerir.  
+## <a name="intune-news"></a>Intune haberleri  
+Office Ileti merkezine gitmek zorunda kalmadan Intune hizmet ekibinin bilgilendirici iletişimlerini görüntüleyin. İletişimler, son zamanlarda Intune hizmetinde gerçekleşen veya kiracınızın bir yolu olan değişikliklerle ilgili mesajlar içerir.  
 
-Varsayılan olarak, son 10 etkin iletileri görüntüleyin. Eski iletileri görüntülemek için seçin **iletilere bakın** açmak için *ileti Merkezi* Microsoft 365 Yönetim merkezinde.  
+Varsayılan olarak, son 10 etkin ileti görüntülenir. Eski iletileri görüntülemek için, Microsoft 365 Yönetim merkezinde *ileti merkezini* açmak üzere **geçmiş iletileri göster** ' i seçin.  
 
-Intune haber bilgilerini görüntülemek için hesabınızın olması gerekir **genel yönetici** veya **Hizmet Yöneticisi** Azure Active Directory'de rol veya **ileti merkezi okuyucu** Microsoft 365 Yönetim merkezinde rol.  Bu izin atamak için oturum açın [Microsoft 365 Yönetim merkezini](https://admin.microsoft.com) yönetici izinlerine sahip. Seçin **kullanıcılar > etkin kullanıcılar**ve ardından erişim gerektiren bir hesabı seçin. Seçin **Düzenle** için *rolleri*seçin *takımlar iletişimleri Yöneticisi*, ardından **Kaydet** izinleri atamak için düzenleme.  
+Intune haberleri bilgilerini görüntülemek için hesabınızın Azure Active Directory **genel yönetici** veya **hizmet yöneticisi** rolüne veya Microsoft 365 Yönetim merkezinde **ileti merkezi okuyucu** rolüne sahip olması gerekir.  Bu izni atamak için yönetici izinlerine sahip [Microsoft 365 Yönetim merkezinde](https://admin.microsoft.com) oturum açın. **Etkin kullanıcılar > kullanıcılar**' ı seçin ve ardından erişim gerektiren hesabı seçin. *Roller*için **Düzenle** ' yi seçin, *takımlar iletişim Yöneticisi*' ni seçin ve ardından Izinleri atamak için Düzenle ' yi **kaydedin** .  
 
-İletişim tercihlerinizi Microsoft 365 Yönetim merkezinden Intune haber yalnızca ayarlayabilirsiniz.
+Yalnızca Microsoft 365 Yönetim Merkezi aracılığıyla Intune haberleri için iletişim tercihlerinizi ayarlayabilirsiniz.

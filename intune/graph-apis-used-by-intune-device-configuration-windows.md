@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune-Azure 'da cihazları yapılandırmak için Graph API 'Leri | Microsoft Docs
 titleSuffix: ''
-description: Windows 10 cihazlarında eşleşen Windows CSP ve dengeleme URI 'sine sahip tüm Graph API varlıkların bir listesini ve Microsoft Intune cihazları yapılandırırken daha yeni kullanıldığını görün. Paylaşılan bilgisayarlar, uç nokta koruması, Windows Defender Gelişmiş tehdit koruması, kimlik koruması, Windows 10 takımları, bilgi noktası ve Iş Windows Update için eşleşen API ve CSP 'ye bakın.
+description: Windows 10 cihazlarında eşleşen Windows CSP ve dengeleme URI 'sine sahip tüm Graph API varlıkların bir listesini ve Microsoft Intune cihazları yapılandırırken daha yeni kullanıldığını görün. Paylaşılan bilgisayarlar, uç nokta koruması, Microsoft Defender Gelişmiş tehdit koruması, kimlik koruması, Windows 10 takımları, bilgi noktası ve Iş Windows Update için eşleşen API ve CSP 'ye bakın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3732a4539c13ad05ae8c95621246429b7f38987e
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 9db6be9c61455056f7ad32a9dba3fa6be9f6f5c3
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354426"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427275"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Intune 'da kullanılan Graph API 'Leri ve eşleşen Windows 10 CSP 'Leri
 

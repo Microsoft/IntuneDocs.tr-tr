@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8525dd143a8e08f6915fa90dff0d51d6632eceea
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387307"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427303"
 ---
 # <a name="what-is-device-management"></a>Cihaz yönetimi nedir? 
 
@@ -59,7 +59,7 @@ Cihaz yönetim çözümlerinin başlıca görevlerinden biri güvenlik ve koruma
 - **Windows Defender** Windows 10 cihazlarını korumaya yardımcı olacak birçok güvenlik özelliği içerir. Örneğin Intune'u ve Windows Defender'ı birlikte kullanarak şunları yapabilirsiniz: 
 
   - Mobil cihazlarda dosya ve uygulamalarda kuşku verici etkinlik aramak için [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10)'ı etkinleştirme. 
-  - Mobil cihazlarda güvenlik ihlallerinin önlenmesine yardımcı olması için [Windows Defender Gelişmiş tehdit koruması (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) kullanın. Ve, bir kullanıcıyı Kurumsal kaynaklardan engelleyerek bir güvenlik ihlalinin etkilerini sınırlandırmaya yardımcı olur.
+  - Mobil cihazlarda güvenlik ihlallerinin önlenmesine yardımcı olması için [Microsoft Defender Gelişmiş tehdit koruması (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) kullanın. Ve, bir kullanıcıyı Kurumsal kaynaklardan engelleyerek bir güvenlik ihlalinin etkilerini sınırlandırmaya yardımcı olur.
 
 - **Koşullu erişim** Azure Active Directory bir özelliktir ve Intune ile birlikte tümleştirilir. [Koşullu erişimi](https://docs.microsoft.com/intune/conditional-access)kullanarak yalnızca uyumlu cihazların e-postaya, SharePoint 'e ve diğer uygulamalara erişimine izin verildiğinden emin olun. 
 
@@ -73,11 +73,11 @@ Ayrıca [MDM ve MAM](https://docs.microsoft.com/intune/byod-technology-decisions
 
 Intune'u kurarken ayrıca cihazları yönetmek için yalnızca Azure portalında çalışmayı ya da Intune ve Microsoft 365'i birlikte kullanmayı da seçebilirsiniz. [Mobil cihaz yönetiminin Azure Portal Intune 'A geçirilmesi](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) bir Microsoft IT örnek olay araştırmaya sahiptir. Bu durumda, Microsoft BT 'nin modern cihaz yönetimi yaklaşımını nasıl seçtiği hakkında bilgi edinin ve öğrendiğimiz dersleri okuyun.
 
-## <a name="simplify-it-tasks-using-the-device-management-specialist-workspace"></a>Cihaz yönetimi uzman çalışma alanını kullanarak BT görevlerini kolaylaştırın
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Cihaz Yönetimi yönetim merkezini kullanarak BT görevlerini kolaylaştırın
 
-[Cihaz yönetimi uzman çalışma alanı](https://devicemanagement.portal.azure.com/) , mobil cihazlarınızla ilgili görevleri yönetmek ve gerçekleştirmek için tek seferlik bir mağaza ' dur. Bu çalışma alanı, Intune ve Azure Active Directory dahil olmak üzere cihaz yönetimi için kullanılan hizmetleri içerir ve istemci uygulamalarını da yönetir. 
+[Cihaz yönetimi Yönetim Merkezi](https://devicemanagement.portal.azure.com/) , mobil cihazlarınızla ilgili görevleri yönetmek ve gerçekleştirmek için tek seferlik bir mağaza ' dur. Bu çalışma alanı, Intune ve Azure Active Directory dahil olmak üzere cihaz yönetimi için kullanılan hizmetleri içerir ve istemci uygulamalarını da yönetir. 
 
-Cihaz yönetimi uzmanı çalışma alanında şunları yapabilirsiniz:
+Cihaz Yönetimi yönetim merkezinde şunları yapabilirsiniz:
 
 - [Cihazları kaydetme](https://docs.microsoft.com/intune/device-enrollment)
 - [Cihaz uyumluluğu ayarlama](https://docs.microsoft.com/intune/device-compliance-get-started)

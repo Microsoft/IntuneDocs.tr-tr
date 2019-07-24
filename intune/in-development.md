@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: f9b02deb529bd6a9bca882fecb3d55d9db513191
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341351"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427164"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune için geliştirme sırasında-Temmuz 2019
 
@@ -58,10 +58,6 @@ Hazırlık ve planlamada yardımcı olması için, bu sayfada Intune Kullanıcı
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Uygulama yönetimi
 
-
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Kullanıcılar ve gruplar için özelleştirilmiş bildirimler    <!-- 16766574   -->
-Yakında, Intune ile yönettiğiniz iOS ve Android cihazlarda kullanıcılara Şirket Portalı uygulamadan özel geçici anında iletme bildirimleri gönderebileceksiniz. Bu özel bildirimler belirli Intune özelliklerine bağlı değildir ve herhangi bir amaçla veya çalışanlarınıza göndermek istediğiniz genel bildirimler dahil olmak üzere, ihtiyacınız olan herhangi bir amaçla kullanılabilir.  
-
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Kuruluş hesapları için uygulama bildirim içeriğini yapılandırma <!-- 2576686 -->
 Android ve iOS cihazlarında Intune uygulama koruma ilkeleri (uygulama), kuruluş hesapları için uygulama bildirim içeriğini denetlemenize olanak tanır. Bu özellik, uygulamalardan destek isteyecek ve UYGULAMANıN etkin olduğu tüm uygulamalarda kullanılamayabilir. UYGULAMA hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
 
@@ -70,7 +66,6 @@ Android iş profili cihazlarına kullanılabilir uygulama yüklemeleri için, uy
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Cihaz yapılandırması
-
 
 ### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>İOS için IKEv2 VPN profilleri desteği <!-- 1943438 -->
 Ikev2 protokolünü kullanarak iOS Native VPN istemcisi için VPN profilleri oluşturabileceksiniz. Ikev2, **cihaz yapılandırma** > **profillerinde** > yeni bir bağlantı türüdür, profil türü > **ayarları**için **VPN** > Platform için**iOS** **oluşturun** > .
@@ -81,39 +76,18 @@ Yapılandırabileceğiniz geçerli VPN ayarlarını görmek için [Microsoft Int
 
 Şunun için geçerlidir: iOS
 
-### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>Windows 10 cihaz yapılandırma profilleri oluştururken "uygulanabilirlik kuralları" nı kullanın <!-- 2549910 -->
-Windows 10 cihaz yapılandırma profilleri oluşturun (**cihaz yapılandırma** > **profilleri** > platform için**Windows 10** **profili** > oluşturur). Profil yalnızca belirli bir sürüm veya belirli bir sürüm için geçerli olacak şekilde bir **uygulanabilirlik kuralı** oluşturabileceksiniz. Örneğin, bazı BitLocker ayarlarını sağlayan bir profil oluşturursunuz. Profili ekledikten sonra, profilin yalnızca Windows 10 Enterprise çalıştıran cihazlara uygulanması için bir uygulanabilirlik kuralı kullanın.
-
-Şunun için geçerlidir: 
-- Windows 10 ve üzeri
-
-### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender güvenlik duvarı için Gelişmiş ayarlar   <!--  1311949     -->
-Genel önizleme olarak, Windows Defender istemcileri üzerinde özel güvenlik duvarı kurallarını yönetmek için yakında Intune 'u kullanabilirsiniz.  
-
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise için bir OEMConfig profili oluştururken yeni yapılandırma Tasarımcısı <!-- 3712769  -->
-Intune 'da, bir OEMConfig uygulaması kullanan bir cihaz yapılandırma profili oluşturabilirsiniz (cihaz yapılandırma > profilleri > > SDK için Android Enterprise > profil türü için OEMConfig). Bunu yaptığınızda bir JSON Düzenleyicisi, değiştirmeniz için bir şablon ve değerlerle açılır. Bu güncelleştirme; başlıklar, açıklamalar ve daha fazlası dahil olmak üzere uygulamada Embedded ayrıntıları gösteren gelişmiş bir kullanıcı deneyimine sahip bir yapılandırma Tasarımcısı içerir. JSON Düzenleyicisi hala kullanılabilir ve yapılandırma tasarımcısında yaptığınız tüm değişiklikleri gösterir.
-
-Geçerli ayarları görmek için, bkz. [OEMConfig Ile Android kurumsal cihazlarını kullanma ve yönetme](android-oem-configuration-overview.md).
-
-Şunun için geçerlidir: Android Kurumsal
-
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>Cihaz yönetimi
 
-### <a name="improve-device-location---3855417---"></a>Cihaz konumunu iyileştirme<!-- 3855417 -->
-**Cihazı bul** eylemini kullanarak bir cihazın tam koordinatlarına yaklaşabileceksiniz. Kayıp iOS cihazlarını bulma hakkında daha fazla bilgi için bkz. [kayıp iOS cihazlarını bulma](device-locate.md).
-
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Otomatik cihaz temizleme süresi limitini 30 güne kadar yapılandırma <!--4231059  -->
 Otomatik cihaz temizleme süresi sınırını, son oturum açma işleminden sonra 30 gün (geçerli 90 günlük sınırı yerine) kadar kısa bir süre içinde ayarlayabileceksiniz. Bunu yapmak için, **Intune** > **cihazları** > **Kurulum** > **cihaz temizleme kuralları**' na gidin.
-
 
 <!-- ***********************************************-->
 ## <a name="security"></a>Güvenlik
 
 ### <a name="import-and-export-security-baselines------3408610------------"></a>Güvenlik temellerini içeri ve dışarı aktarma    <!--3408610          -->  
 Güvenlik temellerini dışarı ve içeri aktarma özelliğini ekleyeceğiz, böylece özelleştirmelerinizi sizinle alabilir ve bunları Intune ortamları arasında paylaşabilirsiniz.
-
 
 
 <!-- ***********************************************-->

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
+title: Intune ile iOS ve Android için Microsoft Edge 'i yönetme
 titleSuffix: ''
 description: Şirket web sitelerine her zaman karşı korumalar ile erişildiğinden emin olmak için Microsoft Edge ile Intune uygulama koruma ilkelerini kullanın.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2deaa53486947ceeedbed56dfd7d192debc4eab
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
-ms.translationtype: HT
+ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
+ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882938"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68287214"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -129,11 +129,11 @@ Ayarları Azure AD 'deki Kullanıcı gruplarına atarsınız. Bu kullanıcı hed
 
 Hem Intune Managed Browser hem de Microsoft Edge İlkeyle korunan tarayıcılar olarak kullanılabilir. Kullanıcılarınızın doğru tarayıcı uygulamasını kullanmak üzere yönlendirildiğinden emin olmak için Intune tarafından yönetilen tüm uygulamalarınızı (örneğin, Outlook, OneDrive ve SharePoint) aşağıdaki yapılandırma ayarıyla hedefleyin:
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.useEdge`    |    Bu değer `true` , kullanıcılarınızı Microsoft Edge 'i indirip kullanacak şekilde yönlendirir.<br>Bu değer `false` , kullanıcılarınızın Intune Managed Browser kullanmasına izin verir.    |
 
-Bu uygulama yapılandırma değeri ayarlanmamışsa, **** aşağıdaki mantık kurumsal bağlantıları açmak için kullanılacak tarayıcıyı tanımlar.
+Bu uygulama yapılandırma değeri ayarlanmamışsa,  aşağıdaki mantık kurumsal bağlantıları açmak için kullanılacak tarayıcıyı tanımlar.
 
 Android’de:
 - Intune Managed Browser, bir Kullanıcı cihazındaki hem Intune Managed Browser hem de Microsoft Edge 'e indirildiyse başlatılır. 
@@ -171,7 +171,7 @@ Outlook 'U **ilke ile yönetilen tarayıcılarla Web Içeriği paylaşma**ayarı
 #### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>2\. adım: Uygulama proxy 'sini etkinleştirmek için uygulama yapılandırma ayarını ayarla
 Microsoft Edge için uygulama ara sunucusunu etkinleştirmek üzere aşağıdaki anahtar/değer çiftine sahip Microsoft Edge 'i hedefleyin:
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com. Microsoft. Intune. mam. managedbrowser. AppProxyRedirection    |    true    |
 
@@ -201,7 +201,7 @@ Bazı ayrıntılar aşağıda verilmiştir:
 
 Yönetilen yer imlerini yapılandırmak için aşağıdaki anahtar/değer çiftini kullanın:
 
-|    Anahtar    |    Value    |
+|    Anahtar    |    Değer    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    com. Microsoft. Intune. mam. managedbrowser. yer imleri    |    Bu yapılandırmanın değeri, yer işaretlerinin bir listesidir. Her yer işareti, yer işareti başlığından ve yer işareti URL 'sinden oluşur. Başlığı ve URL 'yi `|` karakterle ayırın.      Örnek:<br>`Microsoft Bing|https://www.bing.com`<br>Birden çok yer işaretini yapılandırmak için, her çifti çift karakterle `||`ayırın.<p>Örnek:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
@@ -209,7 +209,7 @@ Yönetilen yer imlerini yapılandırmak için aşağıdaki anahtar/değer çifti
 
 Varsayılan olarak, kullanıcılarınız Microsoft Edge yer işaretleri içindeki bir klasör içinde kendilerine yapılandırılmış olan Uygulamaps sitelerini gösterilir. Klasör, kuruluşunuzun adıyla etiketlenir.
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com. Microsoft. Intune. mam. managedbrowser. Uygulamaps    |    **Doğru** , Microsoft Edge yer Işaretlerinin Içindeki uygps 'leri gösterir.<p>**False** , Microsoft Edge Içindeki uygulamaps 'leri gizler.    |
 
@@ -226,19 +226,19 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
 İzin verilen/Engellenen siteler listelerinizi oluşturmak için çeşitli URL biçimleri kullanabilirsiniz. Bu izin verilen desenler aşağıdaki tabloda ayrıntılı olarak verilmiştir. Başlamadan önce bazı notlar: 
 - Tüm URL'leri listeye eklerken başlarına **http** veya **https** önekini yazdığınızdan emin olun.
 - Aşağıdaki izin verilen desenler listesindeki kurallara göre\*joker karakter simgesini () kullanabilirsiniz.
-- Joker karakter, ana bilgisayar adının tamamını (noktalarla ayırarak) veya yolun tüm parçalarını (eğik çizgi ile ayrılmış olarak) eşleştirebilir. Örneğin, `http://*contoso.com` desteklenmez. ****
+- Joker karakter, ana bilgisayar adının tamamını (noktalarla ayırarak) veya yolun tüm parçalarını (eğik çizgi ile ayrılmış olarak) eşleştirebilir. Örneğin, `http://*contoso.com` desteklenmez.
 - Adreste bağlantı noktası numaraları belirtebilirsiniz. Bir bağlantı noktası numarası belirtmezseniz, kullanılan değerler şöyle olacaktır:
   - http için bağlantı noktası 80
   - https için bağlantı noktası 443
-- Bağlantı noktası numarası için joker karakter kullanılması **** desteklenmez. Örneğin `http://www.contoso.com:*` ve `http://www.contoso.com:*/` desteklenmez. 
+- Bağlantı noktası numarası için joker karakter kullanılması  desteklenmez. Örneğin `http://www.contoso.com:*` ve `http://www.contoso.com:*/` desteklenmez. 
 
     |    URL    |    Ayrıntılar    |    Eşleşir    |    Eşleşmez    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    Tek bir sayfayla eşleşir    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Tek bir sayfayla eşleşir    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    `www.contoso.com` ile başlayan tüm URL’lerle eşleşir    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Altındaki tüm alt etki alanlarını eşleştirir`contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    Tek bir klasörle eşleşir    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    `www.contoso.com` ile başlayan tüm URL’lerle eşleşir    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    Altındaki tüm alt etki alanlarını eşleştirir`contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Şununla biten tüm alt etki alanlarını eşleştirir`contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    Tek bir klasörle eşleşir    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Bir bağlantı noktası numarası kullanarak tek bir sayfayla eşleşir    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Güvenli tek bir sayfayla eşleşir    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    Tek bir klasör ve tüm alt klasörleriyle eşleşir    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |

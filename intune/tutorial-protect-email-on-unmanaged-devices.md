@@ -1,7 +1,7 @@
 ---
-title: Öğretici - yönetilmeyen cihazlarda Exchange Online e-postaları koruma
+title: Öğretici-yönetilmeyen cihazlarda Exchange Online e-postasını koruma
 titleSuffix: Microsoft Intune
-description: Intune uygulama koruma ilkelerini ve Azure AD koşullu erişim ile Office 365 Exchange Online güvenli şekilde öğrenin.
+description: Intune uygulama koruma ilkeleriyle Office 365 Exchange Online 'ı ve Azure AD koşullu erişim 'i güvenli hale getirme hakkında bilgi edinin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,140 +16,140 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528690"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884505"
 ---
-# <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Öğretici: Yönetilmeyen cihazlarda Exchange Online e-postaları koruma
+# <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Öğreticide Yönetilmeyen cihazlarda Exchange Online e-postasını koruma
 
-Bile cihazları Intune gibi bir cihaz yönetim çözümüne kayıtlı olmayan, Exchange Online koruma için uygulama koruma ilkeleri ile koşullu erişim kullanma hakkında bilgi edinin. Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz: 
+Cihazlar, Intune gibi bir cihaz yönetimi çözümüne kayıtlı olmadığında bile Exchange Online 'ı korumak için koşullu erişimle birlikte uygulama koruma ilkelerini kullanma hakkında bilgi edinin. Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz: 
 
 > [!div class="checklist"]
-> * Outlook uygulaması için bir Intune uygulama koruma ilkesi oluşturun. Hangi kullanıcı "Farklı Kaydet" engelleyerek ile uygulama verilerini yapın ve kısıtlama sınırlamak kesme, kopyalama ve yapıştırma. 
-> * Yalnızca şirket e-posta Exchange Online'a erişmek Outlook uygulaması sağlayan Azure Active Directory (Azure AD) koşullu erişim ilkeleri oluşturun. Ayrıca, iOS için Outlook ve Android gibi Modern kimlik doğrulaması istemcileri için çok faktörlü kimlik doğrulaması (MFA) ihtiyacınız olacaktır.
+> * Outlook uygulaması için bir Intune uygulama koruma ilkesi oluşturun. "Farklı kaydet" i engellemek ve kesme, kopyalama ve yapıştırma eylemlerini kısıtlamak için kullanıcının uygulama verileriyle neler yapabileceğini sınırlayabilirsiniz. 
+> * Exchange Online 'daki şirket e-postasına yalnızca Outlook uygulamasının erişmesine izin veren Azure Active Directory (Azure AD) koşullu erişim ilkeleri oluşturun. Ayrıca, iOS ve Android için Outlook gibi modern kimlik doğrulama istemcileri için çok faktörlü kimlik doğrulaması (MFA) gerekir.
 
 ## <a name="prerequisites"></a>Önkoşullar
-  - Bu öğretici için aşağıdaki abonelik sahip bir test kiracısına ihtiyacınız olacak:
-    - Azure Active Directory Premium ([ücretsiz deneme](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune aboneliği ([ücretsiz deneme sürümü](free-trial-sign-up.md))
-    - Exchange içeren Office 365 Business aboneliği ([ücretsiz deneme](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- Bu öğretici için aşağıdaki abonelik sahip bir test kiracısına ihtiyacınız olacak:
+  - Azure Active Directory Premium ([ücretsiz deneme](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Intune aboneliği ([ücretsiz deneme](free-trial-sign-up.md))
+  - Exchange içeren Office 365 Business aboneliği ([ücretsiz deneme](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da Genel Yönetici veya Intune Hizmet Yöneticisi olarak oturum açın. Intune, Azure portalında **Tüm hizmetler** > **Intune** seçilerek bulunur.
 
 ## <a name="create-the-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
-Bu öğretici için size bir uygulama düzeyinde koruma yararlanılmasını Outlook uygulaması için Intune uygulama koruma İlkesi ayarlarsınız. Biz, uygulamayı iş bağlamında açmak bir PIN ihtiyacınız olacaktır. Ayrıca uygulamalar arasında veri paylaşımı sınırlamak ve şirket verilerinin kişisel bir konuma kaydedilmesini engelleyen.
+Bu öğretici için, uygulama düzeyinde koruma sağlamak üzere Outlook uygulaması için bir Intune uygulama koruma ilkesi ayarlayacağız. Uygulamayı bir iş bağlamında açmak için PIN gerekir. Ayrıca, uygulamalar arasında veri paylaşımını sınırlayacağız ve şirket verilerinin kişisel bir konuma kaydedilmesini engeller.
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) gidin **istemci uygulamaları** > **uygulama koruma ilkeleri** > **ilkesi oluşturma**.  
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **istemci uygulamaları** > **Uygulama koruma ilkeleri** > **ilke oluştur**' a gidin.  
 2. Aşağıdaki ayarı yapılandırın:  
-   - **Ad**: Girin **Outlook uygulama ilkesi test**.  
-   - **Açıklama**: Girin **Outlook uygulama ilkesi test**.  
-   - **Platform**: Seçin **iOS**.  
-   - **Tüm uygulama türleri için hedef**: Seçin **Hayır**ve ardından **uygulama türlerini**, onay kutusunu seçip **yönetilmeyen cihazlardaki uygulamaları**.  
-3. Seçin **uygulamaları**. Uygulamalar listesinde **Outlook**ve ardından **seçin**.
-4. Seçin **ayarları** ayarlar bölmesini açın. 
-5. Ayarları bölmeden **veri koruma**. Veri koruma bölmesinde aşağıdaki *veri aktarımı*, Bu öğretici için aşağıdaki ayarları yapılandırın:
+   - **Ad**: **Outlook uygulama ilkesi testini**girin.  
+   - **Açıklama**: **Outlook uygulama ilkesi testini**girin.  
+   - **Platform**: **İOS**' ı seçin.  
+   - **Tüm uygulama türlerine hedefle**: **Hayır**' ı seçin ve ardından **uygulama türleri**için **yönetilmeyen cihazlardaki uygulamalar**onay kutusunu seçin.  
+3. **Uygulamalar**' ı seçin. Uygulamalar listesinde **Outlook**' u ve ardından **Seç**' i seçin.
+4. Ayarlar bölmesini açmak için **Ayarlar** ' ı seçin. 
+5. Ayarlar bölmesinde **veri koruma**' yı seçin. Veri koruma bölmesinde *veri aktarımı*altında, bu öğretici için aşağıdaki ayarları yapılandırın:
 
-   - İçin **diğer uygulamalara veri gönderme kuruluş**seçin **hiçbiri**.  
-   - İçin **diğer uygulamalardan veri almasına**seçin **hiçbiri**.  
-   - İçin **kuruluş verilerin kopyasını Kaydet**seçin **blok**.  
-   - İçin **kısıtlama kesme, kopyalama ve yapıştırma diğer uygulamalar arasında**seçin **bloke**. 
-   - Diğer tüm ayarları varsayılan değerlerinde bırakın. 
+   - **Diğer uygulamalara kuruluş verileri göndermek**için **hiçbiri**' ni seçin.  
+   - **Diğer uygulamalardan gelen verileri almak**için **hiçbiri**' ni seçin.  
+   - **Kuruluş verilerinin kopyalarını kaydetmek**için **Engelle**' yi seçin.  
+   - **Diğer uygulamalar arasında kesme, kopyalama ve yapıştırma Işlemlerini kısıtlamak**için **engellendi**öğesini seçin. 
+   - Tüm diğer ayarları varsayılan değerlerinde bırakın. 
    
-   ![Outlook uygulama koruma İlkesi veri yeniden konumlandırma ayarları seçin](media/tutorial-protect-email-on-unmanaged-devices/data-protection-settings.png)
+   ![Outlook uygulama koruma ilkesi verilerini değiştirme ayarlarını seçin](media/tutorial-protect-email-on-unmanaged-devices/data-protection-settings.png)
 
-   Seçin **Tamam** ayarları bölmesine dönmek için.  
+   Ayarlar bölmesine dönmek için **Tamam ' ı** seçin.  
 
-6. Seçin **erişim gereksinimlerini** ve sonra aşağıdaki ayarları yapılandırın:  
+6. **Erişim gereksinimleri** ' ni seçin ve ardından aşağıdaki ayarları yapılandırın:  
 
-   - İçin **erişim için PIN**seçin **gerektiren**.
-   - İçin **işe veya okula erişim için kimlik bilgilerini hesap**seçin **gerektiren**.
-   - Diğer tüm ayarları varsayılan değerlerinde bırakın.
+   - **Erişim Için PIN**için **gerektir**' i seçin.
+   - **Erişim Için iş veya okul hesabı kimlik bilgileri**için **gerektir**' i seçin.
+   - Tüm diğer ayarları varsayılan değerlerinde bırakın.
  
-    ![Uygulama koruma İlkesi Outlook erişim eylemleri seçin](media/tutorial-protect-email-on-unmanaged-devices/access-requirements-settings.png)
+    ![Outlook uygulama koruma ilkesi erişim eylemlerini seçin](media/tutorial-protect-email-on-unmanaged-devices/access-requirements-settings.png)
 
-    Seçin **Tamam** ayarları bölmesine dönmek için.  
+    Ayarlar bölmesine dönmek için **Tamam ' ı** seçin.  
 
-7. Ayarları bölmeden **Tamam**ve oluşturma ilke bölmesinde, ardından **Oluştur**.
+7. Ayarlar bölmesinde **Tamam**' ı seçin ve ardından ilke oluştur bölmesinde **Oluştur**' u seçin.
 
-Outlook için uygulama koruma ilkesi oluşturulur. Ardından, Outlook uygulaması kullanmasını gerektirmek için koşullu erişimi ayarlama.
+Outlook için uygulama koruma ilkesi oluşturulur. Daha sonra, cihazların Outlook uygulamasını kullanmasını gerektirmek için koşullu erişim ayarlayacaksınız.
 
-## <a name="create-conditional-access-policies"></a>Koşullu erişim ilkeleri oluşturun.
-Tüm cihaz platformları kapsayacak şekilde iki koşullu erişim ilkeleri artık oluşturacağız.  
+## <a name="create-conditional-access-policies"></a>Koşullu erişim ilkeleri oluşturma
+Artık tüm cihaz platformlarını kapsayan iki koşullu erişim ilkesi oluşturacağız.  
 
-- İlk ilke, Modern kimlik doğrulaması istemcileri onaylı Outlook uygulama ve çok faktörlü kimlik doğrulaması (MFA) kullanmanız gerekir. Modern kimlik doğrulaması istemcileri, iOS için Outlook ve Android için Outlook içerir.  
+- İlk ilke, modern kimlik doğrulama istemcilerinin onaylanan Outlook uygulamasını ve Multi-Factor Authentication 'ı (MFA) kullanmasını gerektirir. Modern kimlik doğrulama istemcileri iOS için Outlook ve Android için Outlook içerir.  
 
-- İkinci bir ilke, Exchange ActiveSync istemcileri onaylı Outlook uygulaması kullanmasını gerektirir. (Şu anda Exchange Active Sync cihaz platformu farklı koşullar desteklemez). Azure AD portalından veya Intune portalında koşullu erişim ilkelerini yapılandırabilirsiniz. Zaten Intune portalında olduğumuz için ilkeyi burada oluşturalım.  
+- İkinci ilke, Exchange ActiveSync istemcilerinin onaylanan Outlook uygulamasını kullanmasını gerektirir. (Şu anda Exchange Active Sync cihaz platformu dışındaki koşulları desteklemez). Koşullu erişim ilkelerini Azure AD portalında veya Intune portalında yapılandırabilirsiniz. Zaten Intune portalında olduğumuz için ilkeyi burada oluşturalım.  
 
-### <a name="create-an-mfa-policy-for-modern-authentication-clients"></a>Modern kimlik doğrulaması istemcileri için MFA ilkesi oluşturma  
+### <a name="create-an-mfa-policy-for-modern-authentication-clients"></a>Modern kimlik doğrulama istemcileri için MFA ilkesi oluşturma  
 
-1. Intune'da seçin **koşullu erişim** > **ilkeleri** > **yeni ilke**.  
+1. Intune 'da **koşullu erişim** > **ilkeleri** > **Yeni ilke**' yi seçin.  
 
-2. İçin **adı**, girin **modern kimlik doğrulaması istemcileriniz için ilke Test**.  
+2. **Ad**için, **modern kimlik doğrulama istemcileri için test ilkesi**girin.  
 
 3. **Atamalar** altında **Kullanıcılar ve gruplar**’ı seçin. **Dahil et** sekmesinde **Tüm Kullanıcılar**’ı ve daha sonra **Bitti**’yi seçin.
 
-4. Altında **atamaları**seçin **bulut uygulamaları veya Eylemler**. Office 365 Exchange Online e-postalarını korumak istediğimiz için şu adımları izleyeceğiz:  
+4. **Atamalar**' ın altında **bulut uygulamaları veya eylemler**' i seçin. Office 365 Exchange Online e-postalarını korumak istediğimiz için şu adımları izleyeceğiz:  
      
    1. **Dahil et** sekmesinde **Uygulama seç**’i seçin.  
    2. **Seç**’i seçin.  
-   3. Uygulamalar listesinde **Office 365 Exchange Online**ve ardından **seçin**.  
-   4. Seçin **Bitti** yeni ilke bölmesine dönmek için.  
+   3. Uygulamalar listesinde **Office 365 Exchange Online**' ı seçin ve ardından **Seç**' i seçin.  
+   4. Yeni ilke bölmesine dönmek için **bitti** ' yi seçin.  
   
    ![Office 365 Exchange Online uygulamasını seçin](media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-cloud-apps.png)
 
 5. **Atamalar** altında **Koşullar** > **Cihaz platformları**’nı seçin.  
    1. **Yapılandır** altında **Evet**’i seçin.  
-   2. Üzerinde **INCLUDE** sekmesinde **herhangi bir CİHAZDAN**.  
+   2. **Dahil et** sekmesinde **herhangi bir cihaz**seçin.  
    3. **Done** (Bitti) öğesini seçin.  
    
-6. Üzerinde **koşullar** bölmesinde **istemci uygulamaları**.  
+6. **Koşullar** bölmesinde, **istemci uygulamaları**' nı seçin.  
    1. **Yapılandır** altında **Evet**’i seçin.  
-   2. Seçin **mobil uygulamalar ve masaüstü istemciler** ve **Modern kimlik doğrulaması istemcileri**.  
-   3. Bir onay kutularını temizleyin.  
-   4. Seçin **Bitti** > **Bitti** yeni ilke bölmesine dönmek için.  
+   2. **Mobil uygulamalar ve Masaüstü istemcileri** ve **modern kimlik doğrulama istemcileri**' ni seçin.  
+   3. Diğer onay kutularını temizleyin.  
+   4. Yeni ilke bölmesine dönmek için **bitti** > ' yi seçin.  
 
    ![Office 365 Exchange Online uygulamasını seçin](media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. **Erişim denetimleri** altında **Ver**’i seçin. 
      
    1. **Ver** bölmesinde **Erişim ver**’i seçin.
-   2. Seçin **çok faktörlü kimlik doğrulaması gerektiren**.
+   2. **Multi-Factor Authentication gerektir**' i seçin.
    3. **Onaylı istemci uygulaması gerektir**’e tıklayın.
    4. **Çoklu denetim için** altında **Tüm seçili denetimleri gerektir**’i seçin. Bu ayar, bir cihaz e-postaya erişmeye çalıştığında seçtiğiniz her iki gereksinimin de uygulanmasını sağlar.
    5. **Seç**’i seçin.
      
    ![Office 365 Exchange Online uygulamasını seçin](media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
-7. Altında **ilkesini etkinleştir**seçin **üzerinde**ve ardından **Oluştur**.  
+7. **Ilkeyi etkinleştir**altında **Açık**' ı seçin ve ardından **Oluştur**' u seçin.  
      
     ![Office 365 Exchange Online uygulamasını seçin](media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
-Modern kimlik doğrulaması istemciler için koşullu erişim ilkesi oluşturulur. Şimdi, Exchange Active Sync istemciler için bir ilke oluşturabilirsiniz.
+Modern kimlik doğrulama istemcileri için koşullu erişim ilkesi oluşturulur. Artık Exchange Active Sync istemcileri için bir ilke oluşturabilirsiniz.
 
-### <a name="create-a-policy-for-exchange-active-sync-clients"></a>Exchange Active Sync istemciler için bir ilke oluşturun  
-1. Intune'da seçin **koşullu erişim** > **ilkeleri** > **yeni ilke**.  
-2. İçin **adı**, girin **EAS istemciler için ilke Test**.  
+### <a name="create-a-policy-for-exchange-active-sync-clients"></a>Exchange Active Sync istemcileri için ilke oluşturma  
+1. Intune 'da **koşullu erişim** > **ilkeleri** > **Yeni ilke**' yi seçin.  
+2. **Ad**için **EAS istemcileri için test ilkesi**girin.  
 3. **Atamalar** altında **Kullanıcılar ve gruplar**’ı seçin.  
 4. *Dahil et* sekmesinde **Tüm Kullanıcılar**’ı ve daha sonra **Bitti**’yi seçin.  
 
-5. Altında **atamaları**seçin **bulut uygulamaları veya Eylemler**. Bu adımda Office 365 Exchange Online e-posta seçin:  
+5. **Atamalar**' ın altında **bulut uygulamaları veya eylemler**' i seçin. Şu adımlarla Office 365 Exchange Online e-postası ' nı seçin:  
    1. *Dahil et* sekmesinde **Uygulama seç**’i seçin.  
    2. **Seç**’i seçin.  
-   3. Listesinden *uygulamaları*seçin **Office 365 Exchange Online**ve ardından **seçin**, ardından **Bitti**.  
+   3. *Uygulamalar*listesinden **Office 365 Exchange Online**' ı seçin ve ardından **Seç**' i ve ardından **Tamam**' ı seçin.  
   
 6. **Atamalar** altında **Koşullar** > **Cihaz platformları**’nı seçin.  
    1. **Yapılandır** altında **Evet**’i seçin.  
-   2. Üzerinde **INCLUDE** sekmesinde **herhangi bir CİHAZDAN**ve ardından **Bitti**.  
+   2. **Dahil et** sekmesinde **herhangi bir cihaz**seçin ve **bitti**' yi seçin.  
 
-7. Üzerinde **koşullar** bölmesinde **istemci uygulamaları**.  
+7. **Koşullar** bölmesinde, **istemci uygulamaları**' nı seçin.  
    1. **Yapılandır** altında **Evet**’i seçin.  
-   2. Seçin **mobil uygulamalar ve masaüstü istemciler**.  
-   3. Seçin **Exchange ActiveSync istemcileri** ve **ilkeyi yalnızca desteklenen platformlara Uygula**.  
+   2. **Mobil uygulamalar ve Masaüstü istemcileri '** ni seçin.  
+   3. **Exchange ActiveSync istemcileri** ' ni seçin ve **ilkeyi yalnızca desteklenen platformlar için uygulayın**.  
    4. Diğer tüm onay kutularının işaretini kaldırın.  
    5. **Bitti**’yi ve ardından tekrar **Bitti**’yi seçin.  
     
@@ -166,19 +166,19 @@ Modern kimlik doğrulaması istemciler için koşullu erişim ilkesi oluşturulu
 
 9. **Oluştur**’u seçin.  
 
-Uygulama koruma ilkeleri ve koşullu erişim artık yerinde olduğundan ve test için hazır.  
+Uygulama koruma ilkeleriniz ve koşullu erişim artık yerinde ve test etmeye hazır.  
 
 ## <a name="try-it-out"></a>Deneyin  
-Oluşturduğunuz ilkeleri ile cihazlar, ıntune'a ve Office 365 e-postaya erişmek için Outlook mobil uygulaması gerekir. Bu senaryoyu bir iOS cihazda test etmek için test kiracınızdaki kullanıcılardan birine ait kimlik bilgilerini kullanarak Exchange Online’da oturum açmayı deneyin.  
+Oluşturduğunuz ilkelerle birlikte cihazların Intune 'a kaydolması ve Office 365 e-postasına erişmek için Outlook Mobile uygulamasını kullanması gerekir. Bu senaryoyu bir iOS cihazda test etmek için test kiracınızdaki kullanıcılardan birine ait kimlik bilgilerini kullanarak Exchange Online’da oturum açmayı deneyin.  
 1. Bu testi bir iPhone’da yapmak için **Ayarlar** > **Parolalar ve Hesaplar** > **Hesap Ekle** > **Exchange**’i seçin.  
 2. Test kiracınızdaki bir kullanıcıya ait e-posta adresini girin ve **İleri**’ye basın.  
 3. **Oturum Aç**’a basın.  
 4. Test kullanıcısının parolasını girin ve **Oturum aç**’a basın.  
-5. İleti **daha fazla bilgi gerekiyor** görünür istenirse mfa'yı ayarlamak için anlamına gelir. Devam edin ve bir ek doğrulama yöntemi ayarladığını.  
-6. Ardından, bu kaynak BT departmanınız tarafından onaylanan olmayan bir uygulamayla açmaya çalıştığınız belirten bir ileti görürsünüz. İleti, yerel posta uygulamasını kullanmaları engellenme anlamına gelir. Oturum açma iptal edin.  
-7. Outlook uygulamasını açın ve seçin **ayarları** > **hesabı Ekle** > **e-posta hesabı Ekle**.  
+5. İleti **daha fazla bilgi gerekir** , bu da MFA 'yı ayarlamanız istenmekte olduğunuz anlamına gelir. Devam edin ve ek bir doğrulama yöntemi ayarlayın.  
+6. Daha sonra, bu kaynağı BT departmanınız tarafından onaylanmamış bir uygulamayla açmaya çalıştığın bir ileti görürsünüz. İleti, yerel posta uygulamasını kullanmaktan engellediğiniz anlamına gelir. Oturum açma işlemini iptal edin.  
+7. Outlook uygulamasını açın ve **Ayarlar** > **Hesap** > Ekle**e-posta hesabı**Ekle ' yi seçin.  
 8. Test kiracınızdaki bir kullanıcıya ait e-posta adresini girin ve **İleri**’ye basın.  
-9. Tuşuna **oturum Office 365 oturum**. Ek kimlik doğrulama ve kayıt için istenir. Oturumunuz açıldıktan sonra kesme, kopyalama, yapıştırma ve "Farklı Kaydet" gibi eylemler test edebilirsiniz.  
+9. **Office 365 Ile oturum aç '** a basın. Sizden ek kimlik doğrulaması ve kayıt istenir. Oturum açtıktan sonra kesme, kopyalama, yapıştırma ve "farklı kaydet" gibi eylemleri test edebilirsiniz.  
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme  
 Test ilkelerine artık ihtiyacınız kalmadığında bunları kaldırabilirsiniz.  
@@ -186,7 +186,7 @@ Test ilkelerine artık ihtiyacınız kalmadığında bunları kaldırabilirsiniz
 2. **Cihaz Uyumluluğu** > **İlkeler**’i seçin.  
 3. **İlke Adı** listesinde test ilkenizin açılır menüsünü ( **...** ) seçin ve daha sonra **Sil**’e tıklayın. Onaylamak için **Tamam**’ı seçin.  
 4. **Koşullu Erişim** > **İlkeler**’i seçin.  
-5. İçinde **ilke adı** listesinde, bağlam menüsünü seçin ( **...** ) her sınama ilkelerini ve ardından **Sil**. Onaylamak için **Evet**’i seçin.  
+5. **Ilke adı** listesinde, test ilkelerinizin her biri için bağlam menüsünü ( **...** ) seçin ve **Sil**' i seçin. Onaylamak için **Evet**’i seçin.  
 
 ## <a name="next-steps"></a>Sonraki adımlar  
-Bu öğreticide oluşturduğunuz kullanıcı Outlook uygulaması ile neler yapabileceğinizi sınırlamak için uygulama koruma ilkeleri ve koşullu erişim ilkeleri Outlook uygulaması gerektirebilir ve Modern kimlik doğrulaması istemcileri için mfa'yı gerekli oluşturdunuz. Diğer uygulama ve Hizmetleri korumak için Intune ile koşullu erişim kullanma hakkında bilgi edinmek için [koşullu erişimi ayarlama](conditional-access.md).
+Bu öğreticide, kullanıcının Outlook uygulamasıyla neler yapabileceğini sınırlamak için uygulama koruma ilkeleri oluşturdunuz ve Outlook uygulamasını gerektirecek ve modern kimlik doğrulama istemcileri için MFA gerektirirken koşullu erişim ilkeleri oluşturdunuz. Diğer uygulama ve hizmetleri korumak için Intune 'U koşullu erişimle kullanma hakkında bilgi edinmek için bkz. [koşullu erişimi ayarlama](conditional-access.md).

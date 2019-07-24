@@ -1,6 +1,6 @@
 ---
-title: Rota denetim günlükleri Azure İzleyici'yi kullanarak Microsoft Intune - Azure | Microsoft Docs
-description: Denetim günlükleri ve işlem günlüklerini Intune Azure depolama hesabı, olay hub'ları veya log analytics'e göndermek için tanılama ayarları kullanın. Ne kadar süreyle verileri korumak ve bazı farklı boyutta kiracılar için tahmini maliyetleri görmek istediğinizi seçin.
+title: Azure izleyici 'de Microsoft Intune-Azure kullanarak denetim günlüklerini yönlendirme | Microsoft Docs
+description: Azure depolama hesabı, Olay Hub 'ları veya Log Analytics 'e Microsoft Intune denetim günlükleri ve işletimsel Günlükler göndermek için tanılama ayarlarını kullanın. Verileri ne kadar süreyle saklamak istediğinizi seçin ve farklı boyuttaki kiracılar için bazı tahmini maliyetleri görüntüleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,207 +15,207 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412706"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354529"
 ---
-# <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Olay hub'ları, depolama için günlük verileri gönderin veya log analytics (Önizleme) Intune'a
+# <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune 'da günlük verilerini depolama, Olay Hub 'ları veya Log Analytics 'e gönderme (Önizleme)
 
-Microsoft Intune ortamınız hakkında bilgi sağlayan yerleşik günlükleri içerir. **Denetim günlükleri** farklı olayları veya Intune'a gerçekleşen görevler ayrıntılarını gösterir. **İşlem günlüklerinde (Önizleme)** başarıyla diğer kullanıcılar ve cihazlar üzerinde ayrıntılarını göster (veya başarısız), uyumlu olmayan cihazlar hakkında ayrıntılı bilgi yanı sıra kaydetme.
+Microsoft Intune, ortamınız hakkında bilgi sağlayan yerleşik günlükleri içerir. **Denetim günlükleri** , Intune 'da gerçekleşen farklı olay veya görevlerle ilgili ayrıntıları gösterir. **Işletimsel Günlükler (Önizleme)** , aynı zamanda (veya başarısız), uyumlu olmayan cihazların ayrıntılarını ve kaydolmasını sağlayan kullanıcılar ve cihazlar hakkındaki ayrıntıları gösterir.
 
-Bu günlükleri depolama hesapları, olay hub'ları ve log analytics de dahil olmak üzere Azure İzleyici'hizmetine de gönderilir. Özellikle, şunları yapabilirsiniz:
+Bu Günlükler, depolama hesapları, Olay Hub 'ları ve Log Analytics de dahil olmak üzere Azure Izleyici hizmetlerine de gönderilebilir. Özellikle şunları yapabilirsiniz:
 
-* Intune günlükleri verileri tutmak veya bir süre için arşivlemek için bir Azure depolama hesabına arşivleme.
-* Stream Intune Splunk ve QRadar gibi popüler güvenlik bilgileri ve Olay yönetimi (SIEM) araçlarını kullanarak analiz için Azure olay hub'ına kaydeder.
-* Intune günlüklerini, olay hub'ına akış tarafından kendi özel günlük çözümleriyle tümleştirin.
-* Log Analytics, izleme ve uyarı bağlı veriler üzerinde zengin görselleştirmeler etkinleştirmek için Intune günlükleri gönderin.
+* Verileri korumak için Intune günlüklerini bir Azure depolama hesabına arşivleyin veya bir süre için arşivleme yapın.
+* Intune 'U, splunk ve QRadar gibi popüler güvenlik bilgilerini ve olay yönetimi (SıEM) araçlarını kullanarak analiz için bir Azure Olay Hub 'ına kaydeder.
+* Intune günlüklerini bir olay hub 'ına aktararak kendi özel günlük çözümlerinizle tümleştirin.
+* Bağlantılı verilerde zengin görselleştirmeleri, izlemeyi ve uyarı vermeyi etkinleştirmek için Intune günlüklerini Log Analytics gönderin.
 
-Bu özellikler parçası olan **tanılama ayarları** ıntune.
+Bu özellikler, Intune 'da **Tanılama ayarlarının** bir parçasıdır.
 
-Bu makalede nasıl kullanılacağını gösterir **tanılama ayarları** farklı hizmetler için günlük verileri göndermek için örnekler ve maliyet tahminleri sağlar ve bazı sık sorulan soruları yanıtlar.
+Bu makalede, farklı hizmetlere günlük verileri göndermek, örnek ve maliyet tahminleri sağlamak ve bazı yaygın soruların cevapları için **Tanılama ayarlarının** nasıl kullanılacağı gösterilmektedir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu özelliği kullanmak için gerekir:
+Bu özelliği kullanmak için şunlar gerekir:
 
-* Bir Azure aboneliği: Azure aboneliğiniz yoksa, şunları yapabilirsiniz [ücretsiz deneme için kaydolun](https://azure.microsoft.com/free/).
-* Azure'daki Microsoft Intune ortamı (Kiracı)
-* Bir kullanıcı kimin sahip bir **genel yönetici** veya **Intune Hizmet Yöneticisi** Intune kiracınız için.
+* Bir Azure aboneliği: Azure aboneliğiniz yoksa, [ücretsiz deneme için kaydolabilirsiniz](https://azure.microsoft.com/free/).
+* Azure 'da bir Microsoft Intune ortamı (kiracı)
+* Intune kiracısı için **genel yönetici** veya **Intune Hizmet Yöneticisi** olan bir kullanıcı.
 
-Denetim günlüğü verilerini yönlendirmek istediğiniz bağlı olarak, aşağıdaki hizmetlerden biri ihtiyacınız vardır:
+Denetim günlüğü verilerini yönlendirmek istediğiniz yere bağlı olarak, aşağıdaki hizmetlerden birine ihtiyacınız vardır:
 
-* Bir [Azure depolama hesabı](https://docs.microsoft.com/azure/storage/common/storage-account-overview) ile *Listkeys'i* izinleri. Genel bir depolama hesabı ve blob depolama hesabı kullanmanızı öneririz. Depolama fiyatlandırma bilgileri için bkz. [Azure depolama fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/calculator/?service=storage). 
-* Bir [Azure event hubs ad alanı](https://docs.microsoft.com/azure/event-hubs/event-hubs-create#create-an-event-hubs-namespace) üçüncü taraf çözümleriyle tümleştirmek için.
-* Bir [Azure log analytics çalışma alanı](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) günlükleri Log Analytics'e göndermek için.
+* *ListKeys* izinleri olan bir [Azure depolama hesabı](https://docs.microsoft.com/azure/storage/common/storage-account-overview) . BLOB depolama hesabı değil, genel bir depolama hesabı kullanmanızı öneririz. Depolama fiyatlandırma bilgileri için bkz. [Azure Storage Fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/calculator/?service=storage). 
+* Üçüncü taraf çözümlerle tümleştirilecek bir [Azure Olay Hub 'ı ad alanı](https://docs.microsoft.com/azure/event-hubs/event-hubs-create#create-an-event-hubs-namespace) .
+* Log Analytics Günlükler göndermek için bir [Azure Log Analytics çalışma alanı](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) .
 
-## <a name="send-logs-to-azure-monitor"></a>Günlükleri göndermek için Azure İzleyici
+## <a name="send-logs-to-azure-monitor"></a>Günlükleri Azure izleyici 'ye gönderme
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Altında **izleme**seçin **tanılama ayarları**. İlk kez açtığınızda, açın:
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. **İzleme**altında **Tanılama ayarları**' nı seçin. İlk kez açtığınızda açın:
 
-    ![Intune'a günlükleri göndermek için Azure İzleyici için tanılama ayarlarını açın](media/diagnostics-settings-turn-on.png)
+    ![Azure Izleyici 'ye Günlükler göndermek için Intune 'da tanılama ayarlarını etkinleştirin](media/diagnostics-settings-turn-on.png)
 
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Tanılama ayarları için bir ad girin. Bu ayar, girdiğiniz tüm özellikleri içerir. Örneğin, şunu girin: `Route audit logs to storage account`.
-    - **Bir depolama hesabında arşivle**: Azure depolama hesabınız için günlük verileri kaydeder. Kaydet veya verileri arşivlemek istiyorsanız bu seçeneği kullanın.
+    - **Bir depolama hesabına Arşivle**: Günlük verilerini bir Azure depolama hesabına kaydeder. Verileri kaydetmek veya arşivlemek istiyorsanız bu seçeneği kullanın.
 
-        1. Bu seçeneği seçin > **yapılandırma**. 
-        2. Listeden mevcut bir depolama hesabını seçin > **Tamam**.
+        1. **Yapılandır**> Bu seçeneği belirleyin. 
+        2. Listeden var olan bir depolama hesabını seçin > **Tamam ' ı**seçin.
 
-    - **Olay hub'ına Stream**: Akış günlüklerini Azure olay hub'ına. Gibi Splunk ve, QRadar SIEM araçlarını kullanarak verilerinizi log analytics istiyorsanız bu seçeneği belirleyin.
+    - **Bir olay hub 'ına akış**: Günlükleri bir Azure Olay Hub 'ına akıp. Günlük verilerinizde, splunk ve QRadar gibi SıEM araçlarını kullanarak analitik istiyorsanız bu seçeneği belirleyin.
 
-        1. Bu seçeneği seçin > **yapılandırma**. 
-        2. Listeden bir var olan olay hub'ı ad alanını ve ilkesini seçin > **Tamam**.
+        1. **Yapılandır**> Bu seçeneği belirleyin. 
+        2. Listeden var olan bir olay hub 'ı ad alanını ve ilkeyi seçin > **Tamam**' ı seçin.
 
-    - **Log Analytics'e gönderme**: Azure log analytics'e veri gönderir. İzleme ve uyarı günlükleriniz için görselleştirmeler, kullanmak istiyorsanız bu seçeneği belirleyin.
+    - **Log Analytics gönder**: Verileri Azure Log Analytics 'e gönderir. Günlükleriniz için görselleştirmeler, izleme ve uyarı kullanmak istiyorsanız bu seçeneği belirleyin.
 
-        1. Bu seçeneği seçin > **yapılandırma**. 
-        2. Yeni bir çalışma alanı oluşturun ve çalışma alanı ayrıntıları girin. Veya listeden mevcut bir çalışma alanı seçin > **Tamam**.
+        1. **Yapılandır**> Bu seçeneği belirleyin. 
+        2. Yeni bir çalışma alanı oluşturun ve çalışma alanı ayrıntılarını girin. Ya da listeden var olan bir çalışma alanını seçin > **Tamam**' ı seçin.
 
-            [Azure log analytics çalışma alanı](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) bu ayarlar hakkında daha fazla ayrıntı sağlar.
+            [Azure Log Analytics çalışma alanı](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) , bu ayarlar hakkında daha fazla ayrıntı sağlar.
 
-    - **Günlük** > **AuditLogs**: Göndermek için bu seçeneği [Intune denetim günlüklerini](monitor-audit-logs.md) depolama hesabı, olay hub'ı veya log analytics. Intune'da kimin yaptığını dahil olmak üzere, değişikliği oluşturan her görev geçmişini denetim günlüklerini gösterir ve ne zaman.
+    - Günlük > **auditlogs**: [Intune denetim günlüklerini](monitor-audit-logs.md) depolama hesabınıza, Olay Hub 'ına veya Log Analytics 'e göndermek için bu seçeneği belirleyin. Denetim günlükleri, Intune 'da kimin ve ne zaman yaptığına ilişkin bir değişiklik üreten her görevin geçmişini gösterir.
 
-      Bir depolama hesabı kullanmayı seçerseniz, ayrıca (bekletme) verilerini saklamak istediğiniz gün sayısı girin. Verileri sonsuza kadar korumak için ayarlayın **bekletme (gün)** için `0` (sıfır).
+      Bir depolama hesabı kullanmayı seçerseniz, verileri (bekletme) kaç gün tutmak istediğinizi de girin. Verileri süresiz olarak tutmak için, **bekletme (gün)** değerini `0` (sıfır) olarak ayarlayın.
 
-    - **Günlük** > **OperationalLogs**: İşlem günlüklerini (Önizleme), uyumlu olmayan cihazlar hakkında ayrıntılı bilgi yanı sıra Intune, başarı veya başarısızlık kullanıcı ve cihaz gösterir. Log analytics ya da depolama hesabınıza, olay hub'ı kayıt günlüklerini göndermek için bu seçeneği belirleyin.
+    - Günlük > **operationallogs**: İşletimsel Günlükler (Önizleme), Intune 'a kaydolduğunu kullanıcıların ve cihazların başarısını veya başarısızlığını ve uyumlu olmayan cihazların ayrıntılarını gösterir. Kayıt günlüklerini depolama hesabınıza, Olay Hub 'ınıza veya Log Analytics 'e göndermek için bu seçeneği belirleyin.
 
-      Bir depolama hesabı kullanmayı seçerseniz, ayrıca (bekletme) verilerini saklamak istediğiniz gün sayısı girin. Verileri sonsuza kadar korumak için ayarlayın **bekletme (gün)** için `0` (sıfır).
+      Bir depolama hesabı kullanmayı seçerseniz, verileri (bekletme) kaç gün tutmak istediğinizi de girin. Verileri süresiz olarak tutmak için, **bekletme (gün)** değerini `0` (sıfır) olarak ayarlayın.
 
       > [!NOTE]
-      > İşlem günlüklerinde Önizleme aşamasındadır. İşlem günlüklerine dahil bilgiler dahil olmak üzere, geribildirim sağlamak için Git [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) (yeni bir Web sitesini açar).
+      > İşletimsel Günlükler önizlemededir. İşletimsel günlüklere dahil edilen bilgiler dahil olmak üzere geri bildirim sağlamak için [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) (yeni bir Web sitesi açar) sayfasına gidin.
 
-    İşiniz bittiğinde aşağıdaki ayarlara ayarlarınızı benzer: 
+    İşiniz bittiğinde, ayarlarınız aşağıdaki ayarlara benzer şekilde görünür: 
 
-    ![Azure depolama hesabınız için Intune denetim günlüklerini gönderen örneği görüntüsü](media/diagnostics-settings-example.png)
+    ![Intune denetim günlüklerini bir Azure depolama hesabına gönderen örnek resim](media/diagnostics-settings-example.png)
 
-4. Yaptığınız değişiklikleri **kaydedin**. Ayarınız listesinde gösterilir. Oluşturulduktan sonra seçerek ayarlarını değiştirebilirsiniz **ayarını Düzenle** > **Kaydet**.
+4. Yaptığınız değişiklikleri **kaydedin**. Ayarınız listede gösterilir. Oluşturulduktan sonra Ayarları Değiştir **ayarını** > Düzenle ' yi seçerek**değiştirebilirsiniz.**
 
 ## <a name="use-audit-logs-throughout-intune"></a>Intune boyunca denetim günlüklerini kullanma
 
-Ayrıca, Intune, kayıt, uyumluluk, yapılandırma, cihazlar, istemci uygulamaları ve daha da dahil olmak üzere diğer bölümleri denetim günlükleri dışarı aktarabilirsiniz.
+Ayrıca, kayıt, uyumluluk, yapılandırma, cihazlar, istemci uygulamaları ve daha fazlası dahil olmak üzere Intune 'un diğer bölümlerinde denetim günlüklerini dışarı aktarabilirsiniz.
 
-Örneğin, denetim vermek için cihaz uyumluluğu kullanırken kaydeder:
+Örneğin, cihaz uyumluluğunu kullanırken denetim günlüklerini dışarı aktarmak için:
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seçin **cihaz uyumluluğu** > **İzleyici** > **denetim günlükleri**:
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. **Cihaz uyumluluk** > İzleyicisiDenetim > **günlüklerini**seçin:
 
-    ![Depolama alanını Azure izleme, olay hub'ları veya Analiz Intune verileri yönlendirmek için denetim günlüklerini seçin](media/audit-logs-under-monitor-in-compliance.png)
+    ![Intune verilerini Azure Izleyici depolama, Olay Hub 'ları veya analiz 'e yönlendirmek için Denetim günlüklerini seçin](media/audit-logs-under-monitor-in-compliance.png)
 
-3. Seçin **veri ayarlarını dışa aktarma**. Etkin değilse, etkinleştirebilirsiniz **tanılama ayarları**. Günlükleri göndermek nereye açıklandığı seçebilirsiniz [günlükleri göndermek için Azure İzleyici](#send-logs-to-azure-monitor) (Bu makaledeki).
+3. **Veri ayarlarını dışarı aktar**' ı seçin. Etkin değilse, **tanılama ayarlarını**açabilirsiniz. Günlükleri [Azure izleyici 'ye gönderme](#send-logs-to-azure-monitor) (Bu makalede) bölümünde açıklandığı gibi günlüklerin nereden gönderileceğini de seçebilirsiniz.
 
 ## <a name="cost-considerations"></a>Maliyetle ilgili konular
 
-Zaten bir Microsoft Intune lisansınız varsa, depolama hesabı ve olay hub'ı ayarlamak için bir Azure aboneliği gerekir. Azure aboneliği genellikle ücretsizdir. Ancak, Azure kaynakları ödeme yapın ve olay hub'ına akış için depolama hesabı için arşiv dahil. Veri miktarına ve maliyetleri, Kiracı boyutuna bağlı olarak değişir.
+Zaten bir Microsoft Intune lisansınız varsa, depolama hesabını ve Olay Hub 'ını ayarlamak için bir Azure aboneliğine sahip olmanız gerekir. Azure aboneliği genellikle ücretsizdir. Ancak, arşiv için depolama hesabı ve akış için Olay Hub 'ı dahil olmak üzere Azure kaynaklarını kullanmak için ödeme yaparsınız. Veri miktarı ve maliyetler, kiracı boyutuna bağlı olarak değişiklik gösterir.
 
 ### <a name="storage-size-for-activity-logs"></a>Etkinlik günlükleri için depolama boyutu
 
-Her denetim günlüğü olayı yaklaşık 2 KB veri depolama alanı kullanır. 100.000 kullanıcı ile bir kiracı için günde yaklaşık 1,5 milyon olay olabilir. Yaklaşık 3 GB veri depolama günlük gerekebilir. Yazma işlemleri genellikle beş dakikalık toplu işler üzerinde olduğundan, yazma işlemleri ayda yaklaşık olarak 9. 000 bekleyebilirsiniz.
+Her denetim günlüğü olayı yaklaşık 2 KB veri depolama alanı kullanır. 100.000 kullanıcısı olan bir kiracı için günde yaklaşık 1.500.000 olay olabilir. Günde 3 GB veri depolama alanı gerekebilir. Yazma işlemleri genellikle beş dakikalık toplu işlemlerde gerçekleştiğinden ayda yaklaşık 9.000 yazma işlemi bekleyebilir.
 
-Aşağıdaki tablolarda, Kiracı boyutuna bağlı olarak Maliyet tahmini gösterilmektedir. Ayrıca bir genel amaçlı v2 depolama hesabı en az bir yıl süreyle veri saklama, Batı ABD bölgesinde içerir. Günlükleriniz için beklediğiniz veri birimi kestirmek için kullanmak [Azure depolama fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/details/storage/blobs/).
+Aşağıdaki tablolarda, kiracının boyutuna bağlı olarak maliyet tahmini gösterilmektedir. Ayrıca, en az bir yıllık veri saklama için Batı ABD bir genel amaçlı v2 depolama hesabı içerir. Günlüklerinizi istediğiniz veri hacmine yönelik bir tahmin almak için [Azure depolama Fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/details/storage/blobs/)' nı kullanın.
 
-**100.000 kullanıcı ile denetim günlüğü**
-
-| | |
-|---|---|
-|Günlük olayları| 1,5 milyon|
-|Tahmini aylık veri hacmi| 90 GB|
-|(USD) aylık tahmini maliyet| $1.93|
-|Yıl (USD) başına tahmini maliyet| $23.12|
-
-**1.000 kullanıcılarla denetim günlüğü**
+**100.000 kullanıcısı ile denetim günlüğü**
 
 | | |
 |---|---|
-|Günlük olayları| 15.000|
-|Tahmini aylık veri hacmi| 900 MB|
-|(USD) aylık tahmini maliyet| $0.02|
-|Yıl (USD) başına tahmini maliyet| $0.24|
+|Gün başına olay| 1.500.000|
+|Aylık tahmini veri hacmi| 90 GB|
+|Aylık tahmini maliyet (USD)| $1,93|
+|Yıllık tahmini maliyet (USD)| $23,12|
 
-### <a name="event-hub-messages-for-activity-logs"></a>Etkinlik günlükleri Olay hub'ı iletileri
+**1.000 kullanıcısı ile denetim günlüğü**
 
-Olaylar genellikle beş dakikalık aralıklarla toplu ve o zaman çerçevesi içindeki tüm etkinlikleri tek bir ileti olarak gönderilir. Olay hub'ında bir ileti boyut 256 KB üst sınırı vardır. Ardından zaman çerçevesi içinde tüm iletilerin toplam boyutu o birim aşarsanız, birden çok ileti gönderilir.
+| | |
+|---|---|
+|Gün başına olay| 15.000|
+|Aylık tahmini veri hacmi| 900 MB|
+|Aylık tahmini maliyet (USD)| $0,02|
+|Yıllık tahmini maliyet (USD)| $0,24|
 
-Örneğin, yaklaşık 18 olaylar başına ikinci genellikle büyük bir kiracı 100. 000'den fazla kullanıcı için gerçekleşir. Bu beş dakikada (300 saniye x 18 olayları) 5.400 olaylara karşılık gelmektedir. Denetim, olay başına yaklaşık 2 KB günlüklerdir. Bu, veri 10.8 MB karşılık gelmektedir. Bu nedenle, 43 iletileri bu beş dakikalık aralığında olay hub'ına gönderilir.
+### <a name="event-hub-messages-for-activity-logs"></a>Etkinlik günlükleri için Olay Hub 'ı iletileri
 
-Aşağıdaki tablo, bir temel olay hub'ında Batı ABD, olay veri hacmine göre aylık Tahmini maliyetler içerir. Günlükleriniz için beklediğiniz veri hacmi kestirmek için kullanmak [Event Hubs fiyatlandırma hesaplayıcısını](https://azure.microsoft.com/pricing/details/event-hubs/).
+Olaylar genellikle beş dakikalık aralıklarla toplanmış ve bu zaman çerçevesi içindeki tüm olaylara sahip tek bir ileti olarak gönderilir. Olay Hub 'ındaki bir ileti en fazla 256 KB boyutunda bir ileti içerir. Zaman çerçevesi içindeki tüm iletilerin toplam boyutu o birimi aşarsa, birden çok ileti gönderilir.
 
-**100.000 kullanıcı ile denetim günlüğü**
+Örneğin, saniye başına yaklaşık 18 olay, 100.000 'den fazla Kullanıcı büyük bir kiracısında gerçekleşir. Bu, beş dakikada bir 5.400 olayına karşılık gelir (300 saniye x 18 olay). Denetim günlükleri Olay başına yaklaşık 2 KB 'dir. Bu, 10,8 MB veri ile eşitleme yapar. Bu nedenle, 43 ileti bu beş dakikalık aralıkta Olay Hub 'ına gönderilir.
+
+Aşağıdaki tabloda, olay verileri hacmine bağlı olarak Batı ABD bir temel olay hub 'ı için aylık tahmini maliyetler yer alır. Günlüklerinizi istediğiniz veri hacminin tahminini almak için [Event Hubs Fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/details/event-hubs/)' nı kullanın.
+
+**100.000 kullanıcısı ile denetim günlüğü**
 
 | | |
 |---|---|
 |Saniye başına olay| 18|
-|Beş dakikalık aralık başına olay sayısı| 5,400|
-|Aralık başına birim| 10.8 MB|
-|İleti aralığı başına işleme| 43|
-|İleti başına aylık| 371,520|
-|(USD) aylık tahmini maliyet| $10.83|
+|Beş dakikalık Aralık başına olay sayısı| 5\.400|
+|Aralık başına birim| 10,8 MB|
+|Aralık başına ileti| 43|
+|Aylık ileti sayısı| 371.520|
+|Aylık tahmini maliyet (USD)| $10,83|
 
-**1.000 kullanıcılarla denetim günlüğü**
+**1.000 kullanıcısı ile denetim günlüğü**
 
 | | |
 |---|---|
 |Saniye başına olay|0.1 |
-|Beş dakikalık aralık başına olay sayısı| 52|
+|Beş dakikalık Aralık başına olay sayısı| 52|
 |Aralık başına birim|104 KB |
-|İleti aralığı başına işleme|1. |
-|İleti başına aylık|8,640 |
-|(USD) aylık tahmini maliyet|$10.80 |
+|Aralık başına ileti|1\. |
+|Aylık ileti sayısı|8\.640 |
+|Aylık tahmini maliyet (USD)|$10,80 |
 
-### <a name="log-analytics-cost-considerations"></a>Log Analytics'e konuları maliyeti
+### <a name="log-analytics-cost-considerations"></a>Log Analytics maliyet konuları
 
-Log Analytics çalışma alanı yönetmeyle ilgili maliyetleri gözden geçirmek için bkz: [veri hacmini ve saklamayı Log analytics'te kontrol ederek maliyet yönetme](https://docs.microsoft.com/azure/log-analytics/log-analytics-manage-cost-storage).
+Log Analytics çalışma alanını yönetme ile ilgili maliyetleri gözden geçirmek için, bkz. [Log Analytics veri birimi ve bekletme denetimi yaparak maliyeti yönetme](https://docs.microsoft.com/azure/log-analytics/log-analytics-manage-cost-storage).
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-Sık sorulan soruların yanıtlarını alın ve Azure İzleyici'de Intune günlükleri ile ilgili bilinen sorunlar hakkında bilgi edinin.
+Sık sorulan soruların yanıtlarını alın ve Azure Izleyici 'de Intune günlükleriyle ilgili bilinen sorunlar hakkında bilgi edinin.
 
-#### <a name="which-logs-are-included"></a>Hangi günlüklerin dahildir?
+### <a name="which-logs-are-included"></a>Hangi Günlükler dahildir?
 
-Denetim günlükleri ve operasyonel (Önizleme) günlükleri her ikisi de bu özelliği kullanarak yönlendirme için kullanılabilir olan.
+Denetim günlükleri ve işletimsel (Önizleme) günlükleri bu özellik kullanılarak yönlendirme için de kullanılabilir.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Bir eylem sonra ne zaman karşılık gelen günlükleri Olay hub'ı görünüyor?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Bir eylemden sonra, karşılık gelen Günlükler Olay Hub 'ında ne zaman görünür?
 
-Günlükler genellikle, olay hub'ında eylem gerçekleştirildikten sonra birkaç dakika içinde gösterilir. [Azure Event Hubs nedir? ](https://docs.microsoft.com/azure/event-hubs/) daha fazla bilgi sağlar.
+Günlükler genellikle olay hub 'ınızda, eylem gerçekleştirildikten sonra birkaç dakika içinde görünür. [Azure Event Hubs nedir?](https://docs.microsoft.com/azure/event-hubs/) daha fazla bilgi sağlar.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Bir eylem sonra ne zaman karşılık gelen günlükler depolama hesabında görünüyor?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Bir eylemden sonra, karşılık gelen Günlükler depolama hesabında ne zaman görünür?
 
-Azure depolama hesapları için gecikme süresi, 5'ten herhangi bir eylem çalıştıktan sonra 15 dakika ile olan.
+Azure Storage hesaplarında, işlem çalıştıktan sonra gecikme süresi 5 ila 15 dakika olur.
 
-#### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>Tanılama ayarını saklama süresi yöneticinin değişmesi durumunda ne olur?
+### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>Bir yönetici bir tanılama ayarının bekletme süresini değiştirirse ne olur?
 
-Yeni bir bekletme ilkesi değişiklikten sonra toplanan günlükleri uygulanır. İlke değişikliği etkilemeden önce toplanan günlükleri.
+Yeni bekletme ilkesi, değişiklikten sonra toplanan günlüklere uygulanır. İlke değişikliği etkilenmeden önce toplanan Günlükler.
 
-#### <a name="how-much-does-it-cost-to-store-my-data"></a>Bu benim verileri depolamak için nin ücreti ne kadardır?
+### <a name="how-much-does-it-cost-to-store-my-data"></a>Verilerimi depolama maliyeti ne kadar sürer?
 
-Depolama maliyetleri, günlükleri ve seçtiğiniz Bekletme dönemi boyutuna bağlıdır. Oluşturulan günlük birimi üzerinde bağlıdır, kiracılar için tahmini maliyetleri listesi için bkz. [etkinlik günlükleri için depolama boyutu](#storage-size-for-activity-logs) (Bu makaledeki).
+Depolama maliyetleri, günlüklerinizin boyutuna ve seçtiğiniz bekletme dönemine bağlıdır. Oluşturulan günlük birimine bağlı olan kiracılar için tahmini maliyetlerin bir listesi için bkz. [etkinlik günlükleri Için depolama boyutu](#storage-size-for-activity-logs) (Bu makalede).
 
-#### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>Bunu verilerimi bir olay hub'ına akışla aktarmak nin ücreti ne kadardır?
+### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>Verilerden bir olay hub 'ına ne kadar veri akışı maliyeti?
 
-Akış maliyetlerini dakika başına aldığınız ileti sayısını bağlıdır. Maliyetleri hesaplanan ve maliyet tahminleri iletileri sayısına göre hakkında ayrıntılı bilgi için bkz: [etkinlik günlükleri Olay hub'ı iletileri](#event-hub-messages-for-activity-logs) (Bu makaledeki).
+Akış maliyetleri, dakika başına aldığınız ileti sayısına bağlıdır. Maliyetlerin sayısı ve maliyet tahminleri hakkında bilgi edinmek için bkz. [etkinlik günlükleri Için Olay Hub 'ı iletileri](#event-hub-messages-for-activity-logs) (Bu makalede).
 
-#### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Intune denetim günlüklerini SIEM sistemimin ile nasıl tümleştirebilirim?
+### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Nasıl yaparım? SıEM sistemim ile Intune denetim günlüklerini tümleştirsin mi?
 
-Azure İzleyici ile Event Hubs akış günlüklerini SIEM sisteminize için kullanın. İlk olarak, [günlükleri Olay hub'ına akış](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). Ardından, [SIEM aracınızı ayarlayın](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) yapılandırılan olay hub'ı ile. 
+Günlükleri SıEM sisteminize akışındaki Event Hubs Azure Izleyici 'yi kullanın. İlk olarak, [günlükleri bir olay hub 'ına akışı](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)yapın. Ardından, yapılandırılmış olay hub 'ını kullanarak [SıEM aracınızı ayarlayın](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) . 
 
-#### <a name="what-siem-tools-are-currently-supported"></a>Hangi SIEM araçları şu anda destekleniyor mu?
+### <a name="what-siem-tools-are-currently-supported"></a>Şu anda hangi SıEM araçları destekleniyor?
 
-Azure İzleyici tarafından şu anda desteklenen [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar, ve [Sumo mantıksal](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (yeni bir Web sitesini açar). Bağlayıcıları nasıl çalışır hakkında daha fazla bilgi için bkz. [Stream dış bir araç tarafından izleme verileri tüketim için olay hub'ına Azure](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
+Şu anda Azure Izleyici, [splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar ve [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (yeni bir Web sitesi açar) tarafından desteklenir. Bağlayıcıların nasıl çalıştığı hakkında daha fazla bilgi için bkz. [bir dış araçla tüketim Için Azure izleme verilerini bir olay hub 'ına akış](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
 
-#### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Veriler bir olay hub'ından harici bir SIEM aracı kullanmadan erişebilirim?
+### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Bir dış SıEM aracı kullanmadan veriye bir olay hub 'ından erişebilir miyim?
 
-Evet. Özel uygulamanızı günlüklerine erişmek için kullanabileceğiniz [olay hub'ları API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph).
+Evet. Özel uygulamanızdan günlüklere erişmek için [Event HUBS API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph)'sini kullanabilirsiniz.
 
-#### <a name="what-data-is-stored"></a>Hangi veriler depolanır?
+### <a name="what-data-is-stored"></a>Hangi veriler depolanır?
 
-Intune işlem hattı gönderilen tüm verileri depolar. Intune Azure İzleyici ardışık, kiracının yetkilisi veri yönlendirir. Daha fazla bilgi için [Azure İzleyiciye Genel Bakış](https://docs.microsoft.com/azure/azure-monitor/overview).
+Intune, işlem hattı aracılığıyla gönderilen herhangi bir veriyi depolamaz. Intune, kiracı yetkilisinde verileri Azure Izleyici ardışık düzenine yönlendirir. Daha fazla bilgi için bkz. [Azure izleyiciye genel bakış](https://docs.microsoft.com/azure/azure-monitor/overview).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* [Arşiv etkinlik günlükleri bir depolama hesabına](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
-* [Etkinlik günlükleri Olay hub'ına yönlendirme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)
+* [Etkinlik günlüklerini bir depolama hesabına arşivleme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
+* [Etkinlik günlüklerini bir olay hub 'ına yönlendirme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)
 * [Etkinlik günlüklerini Log Analytics ile tümleştirme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
