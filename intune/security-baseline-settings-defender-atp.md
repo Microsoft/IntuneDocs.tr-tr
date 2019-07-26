@@ -5,7 +5,7 @@ description: Microsoft Defender Gelişmiş tehdit koruması 'nı yönetmek için
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 722a19d94dc902cba8856b072dbef2279183ca88
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427365"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491923"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune için Microsoft Defender Gelişmiş tehdit koruması temel ayarları
 
@@ -600,6 +600,13 @@ Daha fazla bilgi için Windows belgelerindeki [Passportforwork CSP](https://docs
 
 - **İş için Windows Hello***tenantıd/policies/usepassportforwork yapılandırma*  -     
   Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir.  
+
+  - *Evet*olarak ayarlandığında, bu ilkeyi etkinleştirir ve cihaz Iş Için Windows Hello 'yu hazırlar.  
+  - *Yapılandırılmadı*olarak ayarlandığında, taban çizgisi cihazın ilke ayarını etkilemez. Bu, Iş için Windows Hello 'nun bir cihazda devre dışı bırakıldığı durumlarda devre dışı kaldığı anlamına gelir. Etkinse, etkin kalır. 
+
+  Bu taban çizgisi aracılığıyla Iş için Windows Hello 'Yu devre dışı bırakayükleyemezsiniz. [Windows kaydını](windows-hello.md)yapılandırırken veya [kimlik koruması](identity-protection-configure.md)için bir cihaz yapılandırma profilinin parçası olarak Iş için Windows Hello 'yu devre dışı bırakabilirsiniz.  
+
+Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir.  
 
   Bu ilke ayarını etkinleştirir veya yapılandırmazsanız, cihaz Iş için Windows Hello 'Yu sağlar. Bu ilke ayarını devre dışı bırakırsanız, cihaz herhangi bir kullanıcı için Iş için Windows Hello 'Yu sağlayamaz.
 

@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3294959e6b11bb8982afa088acdd7262246c3923
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375157"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467433"
 ---
 # <a name="monitor-device-encryption"></a>Cihaz şifrelemesini izleme  
 
@@ -93,8 +93,6 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
 - **Profil durumu Özeti** : Bu cihaza uygulanan profillerin Özeti. Özet, uygulanabilir profiller genelinde en az iyi koşulu temsil eder. Örneğin, birkaç uygulanabilir profilden yalnızca biri bir hata ile sonuçlanırsa, *profil durumu Özeti* *hata*görüntüler.  
 
 - **Durum ayrıntıları** – cihazın şifreleme durumu hakkında gelişmiş ayrıntılar.  
-  > [!NOTE]
-  > Dosya Kasası desteği, Temmuz yayını birkaç gün içinde piyasaya sürülene kadar sınırlandırılır. Dağıtım tamamlanana kadar, macOS için cihaz durumu ayrıntıları ve cihaz şifreleme ayrıntıları, şifreleme raporunda doğru görüntülenmeyebilir.
 
   > [!IMPORTANT]  
   > Windows 10 cihazlarında, Intune yalnızca *Windows 10 nisan 2019 güncelleştirme* veya üstünü çalıştıran cihazların *durum ayrıntılarını* gösterir.  

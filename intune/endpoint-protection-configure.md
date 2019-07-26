@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: d0e3e67cd227c5ce8ac2cb42f79bdea1da8e2d75
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375116"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482781"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune’da Endpoint Protection ayarları ekleme  
 
@@ -63,7 +63,7 @@ Windows 10 için Endpoint Protection kurallarını içeren bir profilin parças�
 - Her profil için, tek bir kural uygulanamazsa, bu profildeki tüm kurallar başarısız olur ve kurala hiçbiri cihaza uygulanmaz.  
 - Bir kural uygulanamazsa, profildeki tüm kurallar başarısız olarak bildirilir. Intune hangi bağımsız kuralın başarısız olduğunu tanımlayamıyor.  
 
-Intune 'un yönetebileceği güvenlik duvarı kuralları, Windows [güvenlik duvarı yapılandırma hizmeti sağlayıcısı]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) 'nda (CSP) ayrıntılı olarak açıklanmıştır. Intune 'un desteklediği Windows 10 cihazlarının özel güvenlik duvarı ayarlarının listesini gözden geçirmek için bkz. [özel güvenlik duvarı kuralları](endpoint-protection-windows-10.md#custom-firewall-rules).  
+Intune 'un yönetebileceği güvenlik duvarı kuralları, Windows [güvenlik duvarı yapılandırma hizmeti sağlayıcısı]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) 'nda (CSP) ayrıntılı olarak açıklanmıştır. Intune 'un desteklediği Windows 10 cihazlarının özel güvenlik duvarı ayarlarının listesini gözden geçirmek için bkz. [özel güvenlik duvarı kuralları](endpoint-protection-windows-10.md#firewall-rules).  
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>Uç nokta koruma profiline özel güvenlik duvarı kuralları eklemek için  
 
@@ -73,7 +73,7 @@ Intune 'un yönetebileceği güvenlik duvarı kuralları, Windows [güvenlik duv
 
 3. Yapılandırma sayfasını açmak için **Windows Defender güvenlik duvarı** ' nı seçin ve ardından *güvenlik duvarı kuralları* için **Ekle** ' yi seçerek **kural oluştur** sayfasını açın.  
 
-4. Güvenlik duvarı kuralı için ayarları belirtin ve sonra kaydetmek için **Tamam** ' ı seçin. Belgelerde bulunan özel güvenlik duvarı kuralı seçeneklerini gözden geçirmek için bkz. [özel güvenlik duvarı kuralları](endpoint-protection-windows-10.md#custom-firewall-rules).  
+4. Güvenlik duvarı kuralı için ayarları belirtin ve sonra kaydetmek için **Tamam** ' ı seçin. Belgelerde bulunan özel güvenlik duvarı kuralı seçeneklerini gözden geçirmek için bkz. [özel güvenlik duvarı kuralları](endpoint-protection-windows-10.md#firewall-rules).  
 
 5. Kuralı kaydettikten sonra, kural listesindeki *Windows Defender güvenlik duvarı* sayfasında görünür.  
 

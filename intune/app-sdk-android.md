@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 07/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b033052ebd5d3d26976482ea2435c8a0d7314c8e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 4f2015bb6997861d8856c7fe89662c21be105f5b
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885055"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482944"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -552,7 +552,7 @@ SaveLocation service, String username);
 - `SaveLocation.LOCAL`
 - `SaveLocation.OTHER`
 
-, `username` Kaydedilmekte olan bulut hizmeti ile ilişkili UPN/Kullanıcı adı/e-posta olmalıdır (Bu , kaydedilmekte olan kullanıcıyla aynı olması gerekmez). AAD UPN ile bulut hizmeti Kullanıcı adı arasında bir eşleme yoksa veya Kullanıcı adı bilinmiyorsa null değerini kullanın.
+, `username` Kaydedilmekte olan bulut hizmeti ile ilişkili UPN/Kullanıcı adı/e-posta*olmalıdır (Bu* , kaydedilmekte olan kullanıcıyla aynı olması gerekmez). AAD UPN ile bulut hizmeti Kullanıcı adı arasında bir eşleme yoksa veya Kullanıcı adı bilinmiyorsa null değerini kullanın.
 
 Kullanıcının ilkesinin çeşitli konumlara veri kaydetmesine izin verip vermediğini belirlemeye yönelik önceki yöntem, aynı **AppPolicy** sınıfındaki `getIsSaveToPersonalAllowed()` yöntemiydi. Bu işlev artık **kullanım dışı bırakılmıştır** ve kullanılmamalıdır; aşağıdaki çağrı `getIsSaveToPersonalAllowed()` ile eşdeğerdir:
 
@@ -684,7 +684,7 @@ Uygulamanızı yapılandırmak ve uygun kimlik doğrulamasını sağlamak için 
 
 * **Skipbroker** varsayılan adal SSO katılım davranışını geçersiz kılmak için kullanılır. SkipBroker yalnızca bir ClientID belirten **ve** aracılı kimlik doğrulaması/CIHAZ genelinde SSO 'yu desteklemeyen uygulamalar için belirtilmelidir. Bu durumda, "true" olarak ayarlanmalıdır. Çoğu uygulama SkipBroker parametresini ayarlanmamalıdır.
 
-  * Bir SkipBroker  değeri belirtmek için bildirimde bir ClientID belirtilmelidir.
+  * Bir SkipBroker değeri belirtmek için bildirimde bir **ClientID belirtilmelidir** .
 
   * Bir ClientID belirtildiğinde, varsayılan değer "false" dır.
 
@@ -695,7 +695,7 @@ Uygulamanızı yapılandırmak ve uygun kimlik doğrulamasını sağlamak için 
 Aşağıda, uygulamanın ADAL ile yapılandırılabilmesinin yaygın yolları açıklanmıştır. Uygulamanızın yapılandırmasını bulun ve ADAL meta veri parametrelerini (yukarıda açıklanan parametreler) gerekli değerlere ayarladığınızdan emin olun. Her durumda, varsayılan olmayan ortamlar için isteniyorsa, yetkili belirlenebilir. Belirtilmemişse, genel üretim AAD yetkilisi kullanılacaktır.
 
 #### <a name="1-app-does-not-integrate-adal"></a>1. Uygulama ADAL ile tümleştirilmezse
-ADAL meta  verileri bildirimde bulunmamalıdır.
+ADAL meta **verileri** bildirimde bulunmamalıdır.
 
 #### <a name="2-app-integrates-adal"></a>2. Uygulama ADAL ile tümleştirilirse
 
@@ -714,7 +714,7 @@ Ayrıca aşağıdaki [Koşullu Erişim](#conditional-access) gereksinimlerini in
 
 #### <a name="3-app-integrates-adal-but-does-not-support-brokered-authenticationdevice-wide-sso"></a>3. Uygulama ADAL 'yi tümleştirir ancak aracılı kimlik doğrulaması/cihaz genelinde SSO 'yu desteklemez
 
-|Gerekli ADAL parametresi| Değer |
+|Gerekli ADAL parametresi| Value |
 |--|--|
 | İstemci Kimliği | Uygulamanın İstemci Kimliği (uygulama kaydedilirken Azure AD tarafından oluşturulur) |
 | SkipBroker | **True** |

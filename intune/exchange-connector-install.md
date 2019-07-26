@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 0a2ebf91efb35ecd46607baffc47abbe73c5fc5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427328"
+ms.locfileid: "68467488"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune 'de Intune şirket içi Exchange bağlayıcısını ayarlama
 Bu makaledeki bilgiler, Intune için Exchange Active Sync şirket içi bağlayıcıyı yüklemenize ve izlemenize yardımcı olur.  Şirket içi Exchange [posta kutularına erişime izin vermek veya erişimi engellemek için](conditional-access-exchange-create.md), şirket içi Exchange bağlayıcısını koşullu erişim ilkelerinizle birlikte kullanırsınız. 
@@ -158,7 +158,7 @@ Bağlayıcı, belirtilen CA 'ları kullanarak Exchange 'e başarılı bir bağla
 
 Exchange ActiveSync ile 5.000 veya daha fazla cihazı destekettiğinizde, bağlayıcının performansını artırmak için isteğe bağlı bir ayar yapılandırabilirsiniz. Exchange 'in bir PowerShell komutu çalışma alanının birden çok örneğini kullanmasını etkinleştirerek daha yüksek performans elde edilir. 
 
-Bu değişikliği yapmadan önce, Exchange bağlayıcısını çalıştırmak için kullandığınız hesabın diğer Exchange yönetim amaçları için kullanılmadığından emin olun. Bunun nedeni, Exchange 'in hesap başına 18 çalışma uzayı sınırına sahip olması ve çoğu bağlayıcının bağlayıcı tarafından kullanılması anlamına gelir. 
+Bu değişikliği yapmadan önce, Exchange bağlayıcısını çalıştırmak için kullandığınız hesabın diğer Exchange yönetim amaçları için kullanılmadığından emin olun. Bunun nedeni, Exchange 'in hesap başına sınırlı sayıda çalışma alanına sahip olması ve çoğu bağlayıcının bağlayıcı tarafından kullanılması anlamına gelir. 
 
 Bu performans değişikliği, daha eski veya daha yavaş donanımlar üzerinde çalışan bağlayıcılar için uygun değildir.  
 

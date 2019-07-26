@@ -5,7 +5,7 @@ description: Windows 10 yönetmek için Intune güvenlik taban çizgisi ayarlar�
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882288"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491899"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune için MDM güvenlik taban çizgisi ayarları  
 
@@ -1773,7 +1773,12 @@ Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYP
   **Varsayılan**: Evet
 
 - **Iş için Windows Hello 'Yu yapılandırma**   
-  Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir. Bu ilke ayarını etkinleştirir veya yapılandırmazsanız, cihaz Iş için Windows Hello 'Yu sağlar. Bu ilke ayarını devre dışı bırakırsanız, cihaz herhangi bir kullanıcı için Iş için Windows Hello 'Yu sağlamaz.
+    Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir.  
+
+  - *Evet*olarak ayarlandığında, bu ilkeyi etkinleştirir ve cihaz Iş Için Windows Hello 'yu hazırlar.  
+  - *Yapılandırılmadı*olarak ayarlandığında, taban çizgisi cihazın ilke ayarını etkilemez. Bu, Iş için Windows Hello 'nun bir cihazda devre dışı bırakıldığı durumlarda devre dışı kaldığı anlamına gelir. Etkinse, etkin kalır. 
+
+  Bu taban çizgisi aracılığıyla Iş için Windows Hello 'Yu devre dışı bırakayükleyemezsiniz. [Windows kaydını](windows-hello.md)yapılandırırken veya [kimlik koruması](identity-protection-configure.md)için bir cihaz yapılandırma profilinin parçası olarak Iş için Windows Hello 'yu devre dışı bırakabilirsiniz.  
 
   **Varsayılan**: Evet
 

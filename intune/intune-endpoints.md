@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
-ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
+ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411590"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482956"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune için ağ uç noktaları  
 
@@ -146,7 +146,7 @@ Daha fazla bilgi için şu Apple belgelerine bakın: [Apple yazılım ürünleri
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Sertifika Bağlayıcısı  
 
-Microsoft Intune Sertifika Bağlayıcısı barındıran sunucu, aşağıdaki tabloda listelenen genel IP konumlarında **TCP** bağlantı noktası **443** ' ü kullanarak erişime sahip olmalıdır.  
+Microsoft Intune Sertifika Bağlayıcısı barındıran sunucu, aşağıdaki tabloda listelenen genel IP konumlarında **TCP** bağlantı noktası **443** ' ü kullanarak erişime sahip olmalıdır. Sertifikalar hakkında daha fazla bilgi için bkz. [Intune Ile PKCS sertifikalarını yapılandırma ve kullanma](certficates-pfx-configure.md) ve [Intune Ile SCEP sertifikalarını yapılandırma ve kullanma](certificates-scep-configure.md).
 
 |Etki Alanları                             |IP adresi       |
 |---------------|--------------------------------------|

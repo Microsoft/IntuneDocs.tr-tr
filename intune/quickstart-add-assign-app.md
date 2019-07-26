@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528316"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482806"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı Başlangıç: Ekleme ve bir istemci uygulama atama
+# <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı başlangıç İstemci uygulaması ekleme ve atama
 
 Bu hızlı başlangıçta şirketinizin iş gücüne bir istemci uygulaması eklemek ve bunu atamak için Intune’u kullanacaksınız. Yöneticinin önceliklerinden biri, son kullanıcıların işlerini yapabilmeleri için gereken uygulamalara erişimleri olduğundan emin olmaktır. 
 
@@ -36,36 +36,35 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](fre
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
-Oturum [Intune](https://aka.ms/intuneportal) olarak bir [genel yönetici veya Intune Hizmet Yöneticisi](users-add.md#types-of-administrators). Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
+[Intune](https://aka.ms/intuneportal) 'da [genel yönetici veya Intune Hizmet Yöneticisi](users-add.md#types-of-administrators)olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
 ## <a name="add-the-client-app-to-intune"></a>İstemci uygulamasını Intune’a ekleme
 
 Intune’un uygulama görünüşünü yönetebilmesi amacıyla herhangi bir uygulama Intune’a dahil edilebilir. 
 
 Intune’a bir uygulama eklemek için aşağıdaki adımları kullanın:
-
 1. [Intune](https://aka.ms/intuneportal)’da **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçin. 
 2. Açılan **Uygulama türü** kutusundaki **Office 365 Paketi** bölümünde **Windows 10**’u seçin.
 3. Office uygulamalarının Intune kullanıcısına atanması için **Uygulama Paketini yapılandır**’ı seçin.
 4. Varsayılan olarak seçili uygulamaları kabul etmek için **Tamam**’a tıklayın.
 5. **Uygulama Paketi bilgileri**’ni seçin.
 6. **Paket Adı** olarak **Microsoft Office 365 uygulama paketi** yazın.
-7. Girin **Microsoft Office 365 uygulama paketini** olarak **Paket açıklaması**.
+7. **Microsoft Office 365 uygulama paketini** **paket açıklaması**olarak girin.
 8. **Şirket Portalı’nda bu uygulamayı öne çıkan uygulama olarak görüntüle** ayarını **Evet** olarak belirleyin.
-9. **Tamam**'ı tıklatın.
+9.           **Tamam**'ı tıklatın.
 
     ![Uygulama bilgileri ekleme ekran görüntüsü](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. **Uygulama Paketi Ayarları**’nı seçin.
-9. Açılan **Güncelleştirme Kanalı** kutusunda **Aylık** seçeneğini belirleyin.
-10. **Tamam** > **Ekle**’ye tıklayın.
+10. **Uygulama Paketi Ayarları**’nı seçin.
+11. Açılan **Güncelleştirme Kanalı** kutusunda **Aylık** seçeneğini belirleyin.
+12. **Tamam** > **Ekle**’ye tıklayın.
 
 ## <a name="assign-the-app-to-a-group"></a>Uygulamayı bir gruba atama
 
 Microsoft Intune’a bir uygulama ekledikten sonra uygulamayı kullanıcı veya cihaz gruplarına atayabilirsiniz.
 
 > [!NOTE]
-> Bu hızlı başlangıçta, önceki hızlı başlangıçlar, bu serinin üzerine inşa edilmiştir. Ayrıntılar için lütfen bu hızlı başlangıçtaki [önkoşullar](quickstart-add-assign-app.md#prerequisites) kısmına bakın.
+> Bu hızlı başlangıç, bu serideki önceki hızlı başlangıçlarda oluşturulur. Ayrıntılar için lütfen bu hızlı başlangıçtaki [önkoşullar](quickstart-add-assign-app.md#prerequisites) kısmına bakın.
 
 Uygulamaları gruplara eklemek için aşağıdaki adımları kullanın:
 1. [Intune](https://aka.ms/intuneportal)’da **İstemci uygulamaları** > **Uygulamalar**’ı seçin. 
@@ -91,7 +90,7 @@ Intune yoluyla kullanılabilir olan **Contoso’nun To-Do** uygulamasını yükl
 4. Intune’u kullanarak eklediğiniz uygulamaya tıklayın. Bu hızlı başlangıçta **Microsoft Office 365 uygulama paketi** uygulamasını eklediniz.
 
     > [!NOTE]
-    > Başarılı bir şekilde herhangi bir uygulama için Intune kullanıcı atamadığınız, şu iletiyi görürsünüz: *BT yöneticiniz tüm uygulamaları kullanılabilir hale değil.*
+    > Herhangi bir uygulamayı Intune kullanıcısına başarıyla atamadıysanız aşağıdaki iletiyi görürsünüz: *BT yöneticiniz size herhangi bir uygulama sağlamadı.*
 
 5. **Yükle**'ye tıklatın.
 
@@ -104,4 +103,4 @@ Bu hızlı başlangıçta Intune’a bazı uygulamalar eklediniz, daha sonra bu 
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Bir uygulama koruma ilkesi oluşturma ve atama](quickstart-create-assign-app-policy.md)
+> [Hızlı başlangıç Uygulama koruma ilkesi oluşturma ve atama](quickstart-create-assign-app-policy.md)

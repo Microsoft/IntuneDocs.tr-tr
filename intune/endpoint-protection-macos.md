@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a885abfdd7f23f453f03c63fdb0086bed40a7b1
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375045"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467412"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 'da MacOS Endpoint Protection ayarları  
 
@@ -92,35 +92,24 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
   - **Kurtarma anahtarı türü**  
     Cihazlar için *kişisel anahtar* kurtarma anahtarları oluşturulur. Kişisel anahtar için aşağıdaki ayarları yapılandırın.  
 
-    - **Kişisel kurtarma anahtarının konumu** -kullanıcıya kişisel kurtarma anahtarını nasıl alabilecekleri hakkında kısa bir ileti belirtin. Bu metin, kullanıcının dosya kasasını etkinleştirirken gördüğü iletiye eklenir.  
+    - **Kişisel kurtarma anahtarının konumu** -kullanıcıya kişisel kurtarma anahtarını nasıl ve nereden alabilecekleri hakkında kısa bir ileti belirtin. Bu metin, bir parola unutursa kişisel kurtarma anahtarını girmeniz istendiğinde kullanıcının oturum açma ekranında gördüğü iletiye eklenir.  
       
     - **Kişisel kurtarma anahtarı döndürme** -bir cihaz için kişisel kurtarma anahtarının ne sıklıkta döndürüleceğini belirtin. **Yapılandırılmadı**' dan varsayılan değeri veya **1** ile **12** ay arasında bir değer seçebilirsiniz.  
 
-  - **Oturum açana kadar dosya kasasını ertele**  
-    > [!NOTE]
-    > Dosya Kasası desteği, Temmuz yayını birkaç gün içinde piyasaya sürülene kadar sınırlandırılır. Dağıtım tamamlanana kadar, Filekasasını yapılandırırsanız, **etkinleştirmek**üzere *oturum açana kadar dosya kasasını ertele* seçeneğini ayarlamanız gerekir.   
-
-    Kullanıcı oturumu kapatana kadar Filekasası etkinleştirilmeyecektir. Yerel bir kullanıcı veya mobil hesap kullanıcısına oturumu kapatma veya bir sonraki oturum açma sırasında dosya kasasını etkinleştirmesi istenecektir.  
+  - **Oturumu kapatmak için istemi devre dışı bırak**  
+    Kullanıcıdan oturum açtıklarında dosya kasasını etkinleştirdikleri isteyen kullanıcıya sorma işlemini engelleyin.  Devre dışı olarak ayarlandığında, oturum kapatma istemi devre dışı bırakılır ve bunun yerine kullanıcıya oturum açtıklarında sorulur.  
     - **Yapılandırılmadı**  
-    - **Etkinleştirebilir**  
+    - **Dıı**  
+
     **Varsayılan**: Yapılandırılmamış  
 
+  - **Atlayakaç kez izin verilir**  
+  Kullanıcının oturum açması için dosya kasasından önce dosya kasasını etkinleştirmek üzere bir kullanıcının istekleri yoksaymasına izin sayısını belirleyin.  
 
-
-    - **Oturumu kapatmak için istemi devre dışı bırak**  
-      Kullanıcıdan oturum açtıklarında dosya kasasını etkinleştirdikleri isteyen kullanıcıya sorma işlemini engelleyin.  
-      - **Yapılandırılmadı**  
-      - **Etkinleştirebilir**  
-
-      **Varsayılan**: Yapılandırılmamış  
-
-    - **Atlayakaç kez izin verilir**  
-    Kullanıcının oturum açması için dosya kasasından önce dosya kasasını etkinleştirmek üzere bir kullanıcının istekleri yoksaymasına izin sayısını belirleyin.  
-
-      - **Yapılandırılmadı** -bir sonraki oturum açma işlemine izin verilmesi için cihazda şifreleme gerekir.  
-      -  **1** ila **10** -bir kullanıcının cihazda şifrelemeyi gerektirmeden önce 1 ila 10 kez istemi yoksaymasına izin verin.  
-      - **Sınır yok, her zaman sor** -kullanıcıdan dosya kasasını etkinleştirmesi istenir, ancak şifreleme hiçbir zaman gerekli değildir.  
+    - **Yapılandırılmadı** -bir sonraki oturum açma işlemine izin verilmesi için cihazda şifreleme gerekir.  
+    - **1** ila **10** -bir kullanıcının cihazda şifrelemeyi gerektirmeden önce 1 ila 10 kez istemi yoksaymasına izin verin.  
+    - **Sınır yok, her zaman sor** -kullanıcıdan dosya kasasını etkinleştirmesi istenir, ancak şifreleme hiçbir zaman gerekli değildir.  
  
-      **Varsayılan**: Yapılandırılmamış  
+    **Varsayılan**: Yapılandırılmamış  
 
 
