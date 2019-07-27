@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e595ee2353a1554d97e49af666d20642a631596
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d05d9dd896321e48c3d1d9dec22cd0d1192dc0b6
+ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549292"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533190"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune planınızı uygulama
 
@@ -42,7 +42,7 @@ Tek başına Intune temel gereksinimleri şöyledir:
 
 - Azure AD Connect (dizin eşitleme için)
 
-- Intune On-Premises Connector için Exchange (için koşullu erişim için Exchange gerekirse şirket içinde)
+- Exchange için Intune şirket Içi Bağlayıcısı (gerekirse şirket Içi Exchange için koşullu erişim için)
 
 - Intune Sertifika Bağlayıcısı (gerekirse SCEP sertifika dağıtımı için)
 
@@ -53,19 +53,19 @@ Tek başına Intune temel gereksinimleri şöyledir:
 
 Bir Intune dağıtımı için 13 ayrı görev tanımladık. İş gereksinimlerinize, mevcut altyapınıza ve cihaz yönetim stratejinize bağlık olarak bu görevlerden bazılarını zaten tamamlamış olabilirsiniz. Bazıları ise planınıza uymayabilir.
 
-### <a name="task-1-get-an-intune-subscription"></a>1\. Görev: Bir Intune aboneliği alın
+### <a name="task-1-get-an-intune-subscription"></a>Görev 1: Intune aboneliği edinme
 
 Yukarıdaki Intune gereksinimleri bölümünde belirtildiği gibi bir EMS veya Intune aboneliği gereklidir. Kuruluşunuzun bu hizmetlere aboneliği yoksa Enterprise Mobility + Security (EMS) veya Intune satın almak istediğinize dair Microsoft’la veya Microsoft hesap ekibiyle iletişime geçin.
 
 - [Microsoft Intune satın alma](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) hakkında daha fazla bilgi edinin.
 
-### <a name="task-2-add-office-365-subscription"></a>2\. Görev: Office 365 aboneliği ekleme
+### <a name="task-2-add-office-365-subscription"></a>Görev 2: Office 365 aboneliği Ekle
 
 Bu adım isteğe bağlıdır. Exchange Online’ı kullanmak Office mobil uygulamalarını uygulama koruma ilkeleriyle yönetmek istiyorsanız Office 365 aboneliğiniz olmalıdır. Kuruluşunuzun Office 365 aboneliği yoksa Office 365 satın almak istediğinize dair Microsoft’la veya Microsoft hesap ekibiyle iletişime geçin.
 
 - [Office 365 satın alma](https://products.office.com/business/compare-office-365-for-business-plans) hakkında daha fazla bilgi edinin.
 
-### <a name="task-3-add-users-groups-in-azure-ad"></a>3\. Görev: Azure AD'de kullanıcı grupları ekleme
+### <a name="task-3-add-users-groups-in-azure-ad"></a>Görev 3: Azure AD 'de Kullanıcı grupları ekleme
 
 Intune dağıtımı kullanım örneği senaryolarına ve gereksinimlerine bağlı olarak Active Directory veya Azure Active Directory’ye kullanıcı veya güvenlik grupları eklemeniz gerekebilir. Active Directory veya Azure Active Directory’deki mevcut kullanıcılarınızı ve güvenlik gruplarınızı gözden geçirerek gereksinimlerinizi tam olarak karşılayıp karşılamadıklarını belirleyin. Yeni kullanıcı ve güvenlik grupları eklerken, bunları Active Directory’ye ekleyip Azure AD Connect ile Azure Active Directory’ye eşitlemenizi öneririz.
 
@@ -75,19 +75,19 @@ Intune dağıtımı kullanım örneği senaryolarına ve gereksinimlerine bağl�
 
 
 
-### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Görev 4: Intune ve Office 365 kullanıcı lisansları atama
+### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Görev 4: Intune ve Office 365 kullanıcı lisanslarını atama
 
-EMS/Intune ve Office 365 dağıtımı için hedeflediğiniz tüm kullanıcıların kendilerine atanmış bir lisansı olması gerekir. EMS/Intune ve Microsoft 365 Yönetim merkezinde bir Office 365 lisansı atayabilirsiniz.
+EMS/Intune ve Office 365 dağıtımı için hedeflediğiniz tüm kullanıcıların kendilerine atanmış bir lisansı olması gerekir. Microsoft 365 Yönetim merkezinde EMS/Intune ve Office 365 lisansları atayabilirsiniz.
 
 - [Intune lisansları atama](licenses-assign.md) hakkında daha fazla bilgi edinin.
 
-### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Görev 5: Mobil cihaz Yönetimi yetkilisi olarak Intune'u ayarlama
+### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>5\. görev: Mobil cihaz yönetimi yetkilisini Intune 'a ayarlama
 
 Intune kullanarak cihazları kurmaya, yapılandırmaya, yönetmeye ve kaydetmeye başlamadan önce cihaz yönetimi yetkilisi olarak Intune’u ayarlamanız gerekir.
 
 - [Cihaz yönetimi yetkilisini ayarlama](mdm-authority-set.md) hakkında daha fazla bilgi edinin.
 
-### <a name="task-6-enable-device-platforms"></a>6\. Görev: Cihaz platformlarını etkinleştirme
+### <a name="task-6-enable-device-platforms"></a>Görev 6: Cihaz platformlarını etkinleştir
 
 Varsayılan olarak, Apple cihazları (iOS ve Mac) dışında çoğu cihaz platformu etkinleştirilmiştir. iOS cihazlarını Intune’a kaydetmek ve Intune ile yönetmek için önce cihaz platformunun etkinleştirilmesi gerekir. Bunu yapmak için bir MDM Anında İletme sertifikası oluşturup bunu Intune’a eklemeniz gerekir.
 
@@ -105,7 +105,7 @@ Intune, genel ve özel olmak üzere iki tür yapılandırma ilkesini destekler. 
 
 - [Yapılandırma ilkeleri ekleme ve dağıtma](device-profiles.md) hakkında daha fazla bilgi edinin.
 
-### <a name="task-9-add-and-deploy-resource-profiles"></a>Görev 9: Ekleme ve kaynak profilleri dağıtma
+### <a name="task-9-add-and-deploy-resource-profiles"></a>Görev 9: Kaynak profilleri ekleme ve dağıtma
 
 Intune e-posta, Wi-Fi ve VPN profillerini destekler. Bu profilleri gerektiği gibi ekleyin ve Intune dağıtım kullanım örneklerinize ve gereksinimlerinize göre hedeflenen gruplara dağıtın.
 
@@ -123,9 +123,9 @@ Intune, uyumluluk ilkelerini destekler. Uyumluluk ilkelerini gerektiği gibi ekl
 
 - [Uyumluluk ilkeleri](device-compliance.md) hakkında daha fazla bilgi edinin.
 
-### <a name="task-12-enable-conditional-access-policies"></a>Görev 12: Koşullu erişim ilkelerini etkinleştirme
+### <a name="task-12-enable-conditional-access-policies"></a>Görev 12: Koşullu erişim ilkelerini etkinleştir
 
-Intune Exchange Online için koşullu erişimi destekler, şirket içinde SharePoint Online, Skype Kurumsal çevrimiçi sürüm ve Dynamics CRM Online için Exchange. Etkinleştirin ve koşullu erişimi Intune dağıtım kullanım örneklerinize ve gereksinimlerinize göre uygun şekilde yapılandırın.
+Intune, Exchange Online, şirket içi Exchange, SharePoint Online, Skype Kurumsal Çevrimiçi ve Dynamics CRM Online için koşullu erişimi destekler. Intune dağıtım kullanım örneklerine ve gereksinimlerinize göre uygun şekilde koşullu erişimi etkinleştirin ve yapılandırın.
 
 - [Koşullu Erişim](conditional-access.md) hakkında daha fazla bilgi edinin.
 
@@ -137,8 +137,4 @@ Intune; iOS, Mac OS, Android, Windows masaüstü ve Windows mobil cihaz platform
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
-
-Intune’un uygulanma işlemi hakkında daha fazla bilgi için bu [Microsoft Sanal Akademi Intune oturumu modülüne](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408) göz atın.
-
-
 [Intune dağıtımınızı sınama ve doğrulama](planning-guide-test-validation.md) rehberlerine göz atın.

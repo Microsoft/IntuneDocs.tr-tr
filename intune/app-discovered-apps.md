@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387816"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590916"
 ---
 # <a name="intune-discovered-apps"></a>Intune bulunan uygulamalar
 
@@ -30,13 +30,22 @@ Intune **bulunan uygulamalar** , Kiracınızdaki Intune 'a kayıtlı cihazlarda 
 
 ## <a name="monitor-discovered-apps-with-intune"></a>Bulunan uygulamaları Intune ile izleme
 
-Intune, kiracınızdaki Intune 'A kayıtlı cihazlarda algılanan uygulamaların bir listesini sağlar.
+Intune, kiracınızdaki Intune 'A kayıtlı cihazlarda algılanan uygulamaların toplanmış bir listesini sağlar.
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Intune** bölmesinde, **istemci uygulamaları** > **bulunan uygulamalar**' ı seçin.
 
 >[!NOTE]
 >Bulunan **uygulamalar dikey penceresinden** **dışarı aktar** ' i seçerek bulunan uygulamalar listesini bir. csv dosyasına dışarı aktarabilirsiniz.
+>
+>Bulunan Win32 uygulamaları için şu anda toplam sayım yok. Bu tür veriler yalnızca cihaz başına temelinde görüntülenebilir.
+
+Intune, kiracınızdaki ayrı bir cihaz için bulunan uygulamaların listesini de sağlar. 
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. Intune bölmesinde **cihazlar** > **tüm cihazlar**' ı seçin.
+3. Cihaz seçin.
+4. Bu cihaza yönelik algılanan uygulamaları görüntülemek için **izleyici** bölümünde **bulunan uygulamalar** ' ı seçin. 
 
 ## <a name="details-of-discovered-apps"></a>Bulunan uygulamaların ayrıntıları
 

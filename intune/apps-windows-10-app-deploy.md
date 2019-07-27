@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 804c6485252883672de13bf13729b28a4d7d2f94
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883847"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590918"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı 
 
@@ -41,7 +41,7 @@ Windows 10 LOB uygulamaları imzalanır ve Intune yönetim konsoluna yüklenir. 
 
 ## <a name="microsoft-store-for-business-apps"></a>İş uygulamaları için Microsoft Mağazası
 
-İş için Microsoft Store uygulamaları, İş için Microsoft Store yönetim portalından satın alınan ve ardından yönetim için Microsoft Intune üzerinden eşitlenen modern uygulamalardır. Uygulamalar **çevrimiçi lisanslanabileceği** gibi **çevrimdışı da lisanslanabilir**. İş için Microsoft Store güncelleştirmeleri doğrudan Microsoft Store tarafından yönetilir; yöneticinin ek işlemler yapması gerekmez. Yönetici ayrıca özel Tekdüzen Kaynak Tanımlayıcısı (URI) kullanarak belirli uygulamalarda güncelleştirme yapılmasını engelleyebilir. Daha fazla bilgi için bkz. [Kurumsal uygulama yönetimi - Uygulamaların otomatik güncelleştirmeleri almasını engelleme](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). Cihazda, son kullanıcı cihazdaki tüm İş için Microsoft Store uygulamalarında da güncelleştirmeleri devre dışı bırakabilir. 
+Iş uygulamaları için Microsoft Store, Microsoft Store Iş Yöneticisi portalından satın alınan modern uygulamalardır ve daha sonra yönetim için Microsoft Intune olarak eşitlenir. Uygulamalar **çevrimiçi lisanslanabileceği** gibi **çevrimdışı da lisanslanabilir**. Iş uygulamaları için Microsoft Store güncelleştirmeleri, sizin tarafınızdan gerekli ek bir işlem olmadan doğrudan Microsoft Store tarafından yönetilir. Ayrıca, özel bir Tekdüzen Kaynak tanımlayıcısı (URI) kullanarak belirli uygulamalara yönelik güncelleştirmeleri engelleyebilirsiniz. Daha fazla bilgi için bkz. [Kurumsal uygulama yönetimi - Uygulamaların otomatik güncelleştirmeleri almasını engelleme](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). Cihazda, son kullanıcı cihazdaki tüm İş için Microsoft Store uygulamalarında da güncelleştirmeleri devre dışı bırakabilir. 
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 cihazlarına uygulamaları yükleme
 Uygulama türüne bağlı olarak, uygulama Windows 10 cihazına iki yoldan biriyle yüklenebilir:
