@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: eec9a275a87b3e1bcfc42e197d95b4a4b315d018
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67812487"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68591075"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar. 
 
@@ -51,19 +51,19 @@ O365 mobil uygulamalarının iOS 11,0 ve üzeri sürümlerde desteklendiğinden,
 - iPhone 5c
 - iPad (4. nesil)
 
-Temmuz 'dan itibaren, iOS 10 ile MDM 'ye kayıtlı cihazlar ve Şirket Portalı işletim sistemini veya cihazını yükseltmek için bir istem alır. Uygulama koruma Ilkeleri (uygulama) kullanıyorsanız, "En düşük iOS işletim sistemi (yalnızca uyarı) ıste" Erişim ayarını da ayarlayabilirsiniz.
+Temmuz 'dan itibaren, iOS 10 ile MDM 'ye kayıtlı cihazlar ve Şirket Portalı işletim sistemini veya cihazını yükseltmek için bir istem alır. Uygulama koruma Ilkeleri (uygulama) kullanıyorsanız, "En düşük iOS işletim sistemi gerektir (yalnızca uyarı)" Erişim ayarını da ayarlayabilirsiniz.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune Raporlama ' yı denetleyin. **Cihazlar** > **tüm cihazlar** ' a gidin ve işletim sistemine göre filtreleyin. Kuruluşunuzdaki kimlerin iOS 10 çalıştıran cihazlara sahip olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın Eylül 'den önce cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmesini isteyin.
 
 ### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Değişiklik planı: İOS için Intune uygulama SDK 'sının sürüm 8.1.1 ve üzeri desteği <!-- 3586942-->
-Intune, 2019 Eylül 'den başlayarak Intune uygulama SDK 'Sı 8.1.1 ve üzeri ile iOS uygulamalarını destekleyecek şekilde hareket edecektir. SDK sürümleri 8.1.1 'dan oluşturulan uygulamalar artık desteklenmeyecektir. Bu değişiklik, Apple 'ın, Eylül ayında gelmesi beklenen ve MC181399 ' de duyurulacak olan iOS 13 sürümü ile etkili olacak.
+Intune, 2019 Eylül 'den başlayarak Intune uygulama SDK 'Sı 8.1.1 ve üzeri ile iOS uygulamalarını destekleyecek şekilde hareket edecektir. SDK sürümleri 8.1.1 'dan oluşturulan uygulamalar artık desteklenmeyecektir. Bu değişiklik, Apple 'ın iOS 13 sürümü ile birlikte devreye girer, bu da Eylül ayında gelmiş olması beklenir ve MC181399 içinde duyuruldu.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
 Intune uygulama SDK 'Sı veya uygulama sarmalama tümleştirmesiyle, veri şifrelemesi aracılığıyla onaylanmamış uygulamalardan ve kullanıcılardan Şirket verilerini koruyabilirsiniz. İOS için Intune uygulama SDK 'Sı, şifreleme Intune Uygulama Koruması Ilkeleri (uygulama) tarafından etkinleştirildiğinde varsayılan olarak 256 bitlik şifreleme anahtarlarını kullanacaktır. Bu değişiklikten sonra, 128-bit şifreleme anahtarları kullanan 8.1.1 ' den önceki SDK sürümlerindeki iOS uygulamaları, artık SDK 8.1.1 ile tümleştirilmiş uygulamalarla veya 256 bit anahtarları kullanarak verileri paylaşamaz. Korunan veri paylaşımına izin vermek için tüm iOS uygulamalarının bir SDK sürümü 8.1.1 veya daha yüksek olması gerekir.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-Microsoft, üçüncü taraf ve iş kolu (LOB) uygulamalarınızı kontrol edin. Intune uygulamasıyla korunan tüm uygulamalarınızın SDK sürüm 8.1.1 veya üstünü kullandığından emin olmanız gerekir.
+Microsoft, üçüncü taraf ve iş kolu (LOB) uygulamalarınızı kontrol edin. Intune uygulamasıyla korunan tüm uygulamalarınızın SDK sürüm 8.1.1 veya üstünü kullandığını doğrulayın.
 
 - LOB uygulamaları için: SDK sürümü 8.1.1 veya üzeri ile tümleştirilmiş uygulamalarınızı yeniden yayımlamanız gerekebilir. En son SDK sürümünü öneririz. LOB uygulamalarınızı uygulama koruma ilkelerine hazırlama hakkında daha fazla bilgi için bkz. [iş kolu uygulamalarını uygulama koruma ilkeleri Için hazırlama](../apps-prepare-mobile-application-management.md).
 - Microsoft/üçüncü taraf uygulamaları için: Bu uygulamaların en son sürümünü kullanıcılarınıza dağıttığınızdan emin olun.
@@ -74,7 +74,7 @@ Ayrıca, bu değişikliği SDK desteği 'ne dahil etmek için geçerliyse belgel
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Değişiklik planı: Intune 'da yeni Windows güncelleştirmeleri ayarları <!-- 4464404 -->
-Intune hizmetine veya 1908 Ağustos sürümünden başlayarak, "kullanıcının yeniden başlatılmasına Izin ver (bağlı yeniden başlatma)" ayarlarını yerine yapılandırabileceğiniz yeni "son tarih ayarları" na ekleniyoruz. 1909 veya Eylül güncelinizdeki Kullanıcı arabirimindeki etkin yeniden başlatma ayarlarını devre dışı bırakmayı planlıyoruz ve ardından bunları Ekim sonuna doğru konsolundan tamamen kaldırdık. 
+Intune hizmetine veya 1908 Ağustos sürümünden başlayarak, "kullanıcının yeniden başlatılmasına Izin ver (serbest yeniden başlatma)" ayarlarını yerine yapılandırabileceğiniz yeni "son tarih ayarları" na ekleniyoruz. 1909 veya Eylül güncelinizdeki Kullanıcı arabirimindeki etkin yeniden başlatma ayarlarını devre dışı bırakmayı planlıyoruz ve ardından bunları Ekim sonuna doğru konsolundan tamamen kaldırdık. 
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
 Windows 10 cihazlarını ortamınızda yönetiyorsanız: 
@@ -83,8 +83,27 @@ Windows 10 cihazlarını ortamınızda yönetiyorsanız:
 - Son tarih ayarları, 1910 güncelleştirmesinin konsolunda bulunan "kullanıcının yeniden başlatılmasına Izin ver (yeniden başlatma) seçeneği yerine geçecek.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-İstenen değerlerle yapılandırarak 1908 içindeki son tarih ayarlarını kullanmaya başlayın. Bunu yaptıktan sonra, Ekim 'de konsolundan kaldırılmalarını hazırlamak için, bağlı yeniden başlatma ayarını "Yapılandırılmadı" olarak ayarlayabilirsiniz.
+İstenen değerlerle yapılandırarak 1908 içindeki son tarih ayarlarını kullanmaya başlayın. Bunu yaptıktan sonra, bu ayarların Ekim 'deki konsolundan kaldırılmasına hazırlanmak için, bağlı yeniden başlatma ayarını "Yapılandırılmadı" olarak ayarlayabilirsiniz.
 
 Belgelerinizi ve gerekirse otomasyon komut dosyalarını güncelleştirin. 
 
 Çalışmaya devam eden yeniden başlatma ayarlarını kaldırmadan önce, Ileti merkezine güncelleştirdiğimiz ve bir anımsatıcı göndereceğiz.
+
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Değişiklik planı: Ekim 'de Android 5,0 ve üstünü desteklemeye yönelik Android için Intune uygulama SDK 'Sı ve uygulama koruma ilkeleri <!--4911065 -->
+Intune, Ekim 'de Android 5. x (Lollipop) ve üstünü destekleyecek şekilde taşınır. Sarmalanan tüm uygulamaları en son Intune uygulama SDK 'Sı ile güncelleştirin ve cihazlarınızı güncelleştirin.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+' I kullanmıyorsanız veya Android için SDK ya da uygulama kullanmayı planlıyorsanız bu değişiklik sizi etkilemez. Intune uygulama SDK 'sını kullanıyorsanız, en son sürüme güncelleştirdiğinizden emin olun ve ayrıca cihazlarınızı Android 5. x ve üzeri olarak güncelleştirin. Güncelleştirme yapmazsanız, uygulamalar güncelleştirmeleri almaz ve deneyiminin kalitesi zaman içinde azalacaktır. 
+
+Android sürüm 4. x çalıştıran Intune 'A kayıtlı ortak cihazların listesini aşağıda bulabilirsiniz. Bu cihazlardan birine sahipseniz, bu cihazın Android sürüm 5,0 veya üstünü desteklediğinden emin olmak veya Android sürüm 5,0 veya üstünü destekleyen bir cihazla değiştirilmesini sağlamak için uygun adımları uygulayın. Bu liste değerlendirilmesi gerekebilecek tüm cihazların bir tam değildir:
+- Samsung SM-T561  
+- Samsung SM-T365 
+- Samsung GT-I9195 
+- Samsung SM-G800F
+- Samsung SM-G357FZ
+- Motorola XT1080
+- Samsung GT-I9305
+- Samsung SM-T231
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
+Uygulamalarınızı en son Intune uygulama SDK 'Sı ile sarın. Ayrıca, kişisel cihazlardaki son kullanıcıları yükseltmeye bildirmek için "En düşük işletim sistemi sürümünü gerektir (yalnızca uyarı)" koşullu başlatma ayarını da ayarlayabilirsiniz.
