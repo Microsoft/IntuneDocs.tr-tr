@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2017
+ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,25 +18,36 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bdf97e6a36a49bc6df5a182af7676c357440f3e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529332"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625128"
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android cihazınızda şirketinizin destek biriminin gerekli kıldığı bir sertifika eksik
+# <a name="install-missing-certificate-required-by-your-organization"></a>Kuruluşunuz için gereken eksik sertifikayı yükler  
 
 Cihazınız Intune’a kayıtlı değilse ve şirketinizin destek birimi tarafından gerekli kılınan bir sertifika cihazınızda bulunmuyorsa, Şirket Portalı uygulamasında oturum açamazsınız. Oturum açmaya çalıştığınızda şu iletiyi görürsünüz:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
-Bu sorunu düzeltmek ve gerekli sertifikayı almak için uygulamanız gereken iki temel adım vardır:
+Gerekli sertifikayı indirmeyi ve cihazınızın kaydedilmesini sağlamak için kullanabileceğiniz iki seçenek vardır. 
 
-- Bir şirket veya okul bilgisayarına bakarak eksik sertifikayı belirleyin.
-- Cihazınızı kullanarak eksik sertifikayı İnternet’ten indirin.
+- Şirket Portalı uygulamasında tarayıcı erişimini etkinleştirin.
+- Şirket veya okul bilgisayarında eksik sertifikayı belirler. Ardından, eksik sertifikayı indirmek için internet 'te arama yapın. 
 
-## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Bir şirket veya okul bilgisayarına bakarak eksik sertifikayı belirleme
+Önce tarayıcı erişimini etkinleştirme adımlarını izleyin. Bundan sonra cihazınızı kaydedemeye devam ediyorsanız, sertifikayı Internet 'te bulmak için adımları izleyin. 
+
+## <a name="enable-browser-access"></a>Tarayıcı erişimini etkinleştir
+Tarayıcı erişimini etkinleştirmek için bu adımları izleyin. Erişimi etkinleştirdikten sonra, Şirket Portalı uygun sertifikayı yükleyecek ve kayıt işlemine devam edecektir.    
+
+1. Şirket Portalı uygulamasında sağ köşeye gidin ve menüyü seçin.  
+2. Seçin **ayarları**.  
+3. **Tarayıcı erişimini etkinleştir** ' ın yanında **Etkinleştir**' i seçin.  
+4. Cihaz Yöneticisi ekranında **Etkinleştir**' i seçin. 
+
+## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Web araması aracılığıyla eksik sertifikayı tanımla ve indir
+Sertifikayı cihazınızda el ile tanımlamak ve yüklemek için bu adımları uygulayın.  
 
 1. Bir bilgisayarda Internet Explorer’ı açın. Bu amaçla kullanabileceğiniz bir bilgisayarınız yoksa, şirketinizin destek birimine başvurun. Şirketinizin destek biriminin iletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.
 
@@ -52,15 +63,13 @@ Bu sorunu düzeltmek ve gerekli sertifikayı almak için uygulamanız gereken ik
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. **Sertifika** iletişim kutusunda **Sertifika yolu** sekmesini seçin ve ardından İnternet’ten almanız gereken sertifikayı belirleyin. Size gereken sertifikanın adı, önceki örnek ekran görüntüsünde vurgulanan sertifikayla aynı konumda olacaktır.
+5. **Sertifika yolu** sekmesini seçin ve ardından Internet 'ten almanız gereken sertifikayı belirleyin. Size gereken sertifikanın adı, önceki örnek ekran görüntüsünde vurgulanan sertifikayla aynı konumda olacaktır.
 
-## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Eksik sertifikayı Android mobil cihazınıza indirme ve yükleme
+6. Bing veya Google gibi bir arama motoru kullanarak, önceki bölümde belirlediğiniz eksik sertifikanın adını arayın. Sertifika, “.crt” veya “.pem” gibi farklı "uzantılarla" bitiyor olabilir.
 
-1. Bing veya Google gibi bir arama motoru kullanarak, önceki bölümde belirlediğiniz eksik sertifikanın adını arayın. Sertifika, “.crt” veya “.pem” gibi farklı "uzantılarla" bitiyor olabilir.
+7. Web sitesinden kök sertifikayı indirin.
 
-2. Web sitesinden kök sertifikayı indirin.
-
-3. Sertifika indirildikten sonra, cihazınızda en üstten aşağı doğru sürükleyerek bildirimlerinizi açın ve bildirimler listesinde sertifikanın adına dokunun.
+8. Sertifika indirildikten sonra, cihazınızda en üstten aşağı doğru sürükleyerek bildirimlerinizi açın ve bildirimler listesinde sertifikanın adına dokunun.
 
 4. Aşağıdaki ekran görüntüsünde gösterilen **Sertifikayı Adlandır** iletişim kutusunda varsayılan sertifika adını kabul edin.
 
