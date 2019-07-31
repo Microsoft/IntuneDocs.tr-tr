@@ -1,6 +1,6 @@
 ---
 title: Ağ erişim denetimini Microsoft Intune - Azure ile tümleştirme | Microsoft Docs
-description: Ağ erişim denetimi (NAC) çözümleri, Intune kullanan cihazlarda kayıt ve uyumluluğu denetler. NAC, belirli davranışları içerir ve koşullu erişim ile çalışır. Çözümü eklemek için adımlara bakın ve ortak çözümlerin bir listesini alın.
+description: Ağ erişim denetimi (NAC) çözümleri, Intune kullanan cihazlarda kayıt ve uyumluluğu denetler. NAC bazı davranışları içerir ve koşullu erişim ile birlikte çalışabilir. Çözümü eklemek için adımlara bakın ve ortak çözümlerin bir listesini alın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: d0f155a9a4900ed10b2030af3c80c13def0bb82e
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572175"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660904"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Ağ erişim denetimini (NAC) Intune ile tümleştirme
 
@@ -43,13 +43,13 @@ Kaynaklara erişimi engellenmiş cihazlar için, engelleme hizmetinin tüm kulla
 
 ## <a name="nac-and-conditional-access"></a>NAC ve koşullu erişim
 
-NAC, erişim denetimi kararları sağlamak için koşullu erişimle birlikte çalışır. Daha fazla bilgi için [Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
+NAC, erişim denetimi kararları sağlamak için koşullu erişimle birlikte çalışmaktadır. Daha fazla bilgi için bkz. [Intune Ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>NAC tümleştirmesi nasıl çalışır?
 
 Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin nasıl çalıştığına genel bir bakış sağlanır. İlk üç adımda (1-3), ekleme işlemi açıklanır. 4-9. adımlar, NAC çözümü ile Intune tümleştirildiğinde devam eden işlemi açıklamaktadır.
 
-![NAC, Intune ile nasıl çalışır kavramsal resmi](./media/ca-intune-common-ways-2.png)
+![NAC 'nin Intune ile nasıl çalıştığı hakkında kavramsal resim](./media/ca-intune-common-ways-2.png)
 
 1. NAC iş ortağı çözümünü Azure Active Directory (AAD) ile kaydedin ve Intune NAC API’sine temsilci izinleri verin.
 2. NAC iş ortağı çözümünü, Intune bulma URL’si de dahil olmak üzere uygun ayarlarla yapılandırın.
@@ -61,40 +61,40 @@ Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin na
 8. Cihaz kayıtlı ve uyumlu hale geldikten sonra NAC iş ortağı çözümü, durumu Intune’dan alır.
 9. Bağlantı başarılı bir şekilde kurulur ve böylece cihazın şirket kaynaklarına erişimi sağlanır.
 
-## <a name="use-nac-for-vpn-on-your-ios-devices"></a>NAC iOS cihazlarınızdaki VPN için kullanın.  
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>İOS cihazlarınızda VPN için NAC kullanma  
 
-- NAC VPN profilinde NAC etkinleştirmeden aşağıdaki VPN üzerinde kullanılabilir:
+- NAC, VPN profilinde NAC 'yi etkinleştirmeden aşağıdaki VPN 'lerde kullanılabilir:
 
-  - NAC Cisco eski AnyConnect
-  - F5'e Erişim eski
+  - Cisco eski AnyConnect için NAC
+  - F5 erişimi eski
   - Citrix VPN
 
-- NAC, ayrıca Citrix SSO ve F5'e erişimi için kullanılabilir. NAC için Citrix SSO'yu etkinleştirmek için:
+- NAC, Citrix SSO ve F5 erişimi için de kullanılabilir. Citrix SSO için NAC 'yı etkinleştirmek için:
 
-  - Citrix ağ geçidi 12.0.59 kullanın veya daha yüksek.  
-  - Kullanıcılar, Citrix SSO 1.1.6 olmalıdır veya sonraki bir sürümü yüklü.
-  - [NetScaler NAC için Intune ile tümleştirme](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) Citrix ürün belgelerinde açıklandığı gibi.
-  - VPN profilinde seçin **temel ayarları** > **etkinleştirme ağ erişim denetimi (NAC)** > seçin **kabul ediyorum**.
+  - Citrix Gateway 12.0.59 veya üstünü kullanın.  
+  - Kullanıcıların Citrix SSO 1.1.6 veya sonraki bir sürümü yüklü olmalıdır.
+  - Citrix ürün belgelerinde açıklandığı gibi [, NetScaler 'ı NAC Için Intune Ile tümleştirin](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) .
+  - VPN profilinde, **temel ayarlar** > **ağ Access Control etkinleştir ' i (NAC)** seçin > **kabul**ediyorum ' u seçin.
 
-  Güvenlik nedenleriyle 24 saatte VPN bağlantısı kesilir. VPN hemen yeniden.
+  Güvenlik nedenleriyle VPN bağlantısının her 24 saatte bir bağlantısı kesilir. VPN hemen yeniden bağlanabilir.
 
-- NAC için F5'e erişimi etkinleştirmek üzere:
+- F5 'e erişim için NAC 'yı etkinleştirmek için:
 
-  - F5 BIG-IP 13.1.1.5 kullanın. BIG-IP 14 desteklenmez.
-  - BIG-IP NAC için Intune ile tümleştirme. [Genel bakış: APM yapılandırma cihaz duruşu için uç nokta yönetim sistemleri ile denetler](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Kılavuzu adımları listeler.
-  - VPN profilinde seçin **temel ayarları** > **etkinleştirme ağ erişim denetimi (NAC)** > seçin **kabul ediyorum**.
+  - F5 BIG-IP 13.1.1.5 kullanın. BÜYÜK IP 14 desteklenmez.
+  - NAC için büyük IP 'yi Intune ile tümleştirin. [Genel bakış: Endpoint Management sistemleri](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) ile cihaz gönderme denetimleri için APM 'yi yapılandırma F5 Guide adımları listeler.
+  - VPN profilinde, **temel ayarlar** > **ağ Access Control etkinleştir ' i (NAC)** seçin > **kabul**ediyorum ' u seçin.
 
-  Güvenlik nedenleriyle 24 saatte VPN bağlantısı kesilir. VPN hemen yeniden.
+  Güvenlik nedenleriyle VPN bağlantısının her 24 saatte bir bağlantısı kesilir. VPN hemen yeniden bağlanabilir.
 
-- Ağ erişim denetimi aşağıdaki iOS VPN istemcisi için desteklenmiyor:
+- İOS üzerinde aşağıdaki VPN istemcisi için ağ erişim denetimi desteklenmez:
   - Cisco AnyConnect
 
-NAC çözümü için daha yeni bu istemcilerden serbest bırakmak için iş ortaklarımızla çalışıyoruz. Bu makalede, çözümleri hazır olduğunuzda, ek bilgilerle güncelleştirilir.
+Bu yeni istemciler için bir NAC çözümü yayınlamak üzere iş ortaklarımız ile çalışıyoruz. Çözümler hazırlandığınızda, bu makale ek bilgilerle güncelleştirilecektir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Cisco ISE’yi Intune ile tümleştirme](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
-- [Citrix NetScaler’ı Intune ile tümleştirme](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-- [F5 BIG-IP Erişim İlkesi Yöneticisi Intune ile tümleştirme](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
+- [Cisco ISE’yi Intune ile tümleştirme](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
+- [Citrix NetScaler’ı Intune ile tümleştirme](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [F5 BIG-IP Access Policy Manager 'ı Intune ile tümleştirme](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [HP Aruba ClearPass’i Intune ile tümleştirme](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
-- [Squadra güvenlik Çıkarılabilir Medya Yöneticisi’ni (secRMM) Intune ile tümleştirme](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)
+- [Squadra güvenlik Çıkarılabilir Medya Yöneticisi’ni (secRMM) Intune ile tümleştirme](https://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

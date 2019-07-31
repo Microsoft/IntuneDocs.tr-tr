@@ -1,7 +1,7 @@
 ---
-title: Veri JAMF Pro'nın Intune'a gönderdiği
+title: Veri JAMF Pro, Intune 'a gönderir
 titleSuffix: Microsoft Intune
-description: Jamf Pro Microsoft Intune gönderdiği verilerin listesi
+description: JAMF Pro 'Yu Intune ile Mac yönetmek üzere tümleştirdiğinizde Microsoft Intune, JAMF Pro tarafından gönderilen veri listesini gözden geçirin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 287ed06ddab0b98117aa4a75942087f360e4656d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048560"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670893"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro’nun Intune’a gönderdiği veriler
 
-Kullanırken [Jamf Pro](https://www.jamf.com) , son kullanıcılar Mac bilgisayarları Intune ile yönetmek için Jamf Pro, yönetilen macOS cihazları hakkında Envanter bilgileri yakalar. Jamf Pro, Intune'a aşağıdaki bilgileri bildirir:
+Intune ile son kullanıcılarınızın Mac 'nizi yönetmek için [JAMF Pro](https://www.jamf.com) kullandığınızda, JAMF Pro yönetilen MacOS cihazlarıyla ilgili envanter bilgilerini yakalar. Jamf Pro, Intune'a aşağıdaki bilgileri bildirir:
 
 * Azure AD cihaz kimliği
 * JAMF Envanter Durumu (son 24 saat içinde Jamf Pro ile kontrol edilen bir bilgisayar stok durumu)
@@ -49,7 +49,7 @@ Kullanırken [Jamf Pro](https://www.jamf.com) , son kullanıcılar Mac bilgisaya
 * Veri Yolu Hızı
 * Önbellek Boyutu
 * Cihaz adı
-* Etki alanına katılma
+* Etki alanına ekleme
 * Jamf kimliği
 * MAC adresi
 * Yapın
@@ -58,7 +58,7 @@ Kullanırken [Jamf Pro](https://www.jamf.com) , son kullanıcılar Mac bilgisaya
 * NIC Hızı
 * Çekirdek Sayısı
 * İşlemci Sayısı
-* İşletim Sistemi
+* OS
 * Platform
 * İşlemci Hızı
 * İşlemci türü

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune-Azure 'da güvenlik temellerini kullanma | Microsoft Docs
-description: Mobil cihaz yönetimi için Microsoft Intune olan cihazlarda Kullanıcı ve verileri korumak için önerilen Windows güvenlik ayarlarını ekleyin veya yapılandırın. BitLocker 'ı etkinleştirin, Microsoft Defender Gelişmiş tehdit korumasını yapılandırın, Internet Explorer 'ı denetleyin, akıllı ekran kullanın, yerel güvenlik ilkelerini ayarlayın, parola gerektir, Internet indirmelerini engelleyin ve daha fazlasını yapın.
+description: Mobil cihaz yönetimi için Microsoft Intune olan cihazlarda Kullanıcı ve verileri korumak için önerilen Windows güvenlik ayarlarını kullanın. Şifrelemeyi etkinleştirin, Microsoft Defender Gelişmiş tehdit korumasını yapılandırın, Internet Explorer 'ı denetleyin, yerel güvenlik ilkelerini ayarlayın, parola gerektir, Internet indirmelerini engelleyin ve daha fazlasını yapın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353599"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671011"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
 
@@ -115,7 +115,7 @@ Ortak yönetilen cihazlar kullanılırken **cihaz yapılandırma** iş yükünü
 
     ![Bu grubun ayarlarını görüntülemek için bir grubu genişletin](./media/security-baselines/sample-list-of-settings.png)
 
-5. Kapsam Etiketleri sekmesini seçin ' i seçerek  kapsam etiketlerini profile atamak için kapsam  etiketleri Seç ' i seçin. 
+5. Kapsam etiketleri **sekmesini seçin** ' i seçerek kapsam etiketlerini profile atamak için kapsam etiketleri Seç ' **i seçin.** 
 
 6. **Atamalar** sekmesinde, **dahil edilecek grupları seç** ' i seçin ve ardından temeli bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için, **hariç tutulacak grupları seçin ' i** kullanın.  
 

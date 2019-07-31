@@ -14,14 +14,14 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: c744878c49dfa5adb1b4f64587abfe06151a69a0
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882233"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670982"
 ---
-# <a name="intune-tenant-status-page"></a>Intune kiracı durumu sayfası
+# <a name="use-the-intune-tenant-status-page"></a>Intune kiracı durumu sayfasını kullanın
 Kiracı durumu sayfası, kiracınız hakkındaki güncel ve önemli ayrıntıları görüntüleyebileceğiniz merkezi bir merkezdir. Ayrıntılar lisans kullanılabilirliği ve kullanımı, bağlayıcı durumu ve Intune hizmeti hakkındaki önemli iletişimleri içerir.  
 
 Panoyu görüntülemek için Azure portal **Intune 'a > kiracı durumu**' na gidin.  Kiracı durumu **Yardım ve destek grubu**altında görünür.  
@@ -29,7 +29,7 @@ Panoyu görüntülemek için Azure portal **Intune 'a > kiracı durumu**' na gid
 Sayfa dört alana ayrılır:
 
 ## <a name="tenant-details"></a>Kiracı ayrıntıları
-Kiracı ayrıntıları kiracınız hakkında bir bakışta bilgi sağlar. Kiracı adınız ve konumunuz, MDM yetkiliniz ve kiracılar hizmeti yayın numaranız gibi ayrıntıları görüntüleyin. Hizmet sürüm numarası, Microsoft docs *'Taki Intune 'daki* yenilikler makalesinde açılan bir bağlantıdır. Yenilikler bölümünde, Intune hizmetine yönelik en son özellikler ve güncelleştirmeler hakkında bilgi edinebilirsiniz.  
+Kiracı ayrıntıları kiracınız hakkında bir bakışta bilgi sağlar. Kiracı adınız ve konumunuz, MDM yetkiliniz ve kiracılar hizmeti yayın numaranız gibi ayrıntıları görüntüleyin. Hizmet sürüm numarası, Microsoft docs *'Taki Intune 'daki* yenilikler makalesinde açılan bir bağlantıdır. Yenilikler *bölümünde,* Intune hizmetine yönelik en son özellikler ve güncelleştirmeler hakkında bilgi edinebilirsiniz.  
 
 Bu bölüm, kullanılabilir lisanslarınızla ilgili temel bilgileri ve kullanıcılara kaç tane atandığını da sağlar. Cihazlar için lisanslar gösterilmez.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune-Azure 'da Microsoft Defender ATP 'yi kullanma | Microsoft Docs
-description: Intune ve Microsoft Defender Güvenlik Merkezi 'nde Microsoft Defender ATP 'yi açma, Microsoft Defender ATP kullanarak cihazları ekleme dahil olmak üzere uçtan uca bir senaryoda Microsoft Defender Gelişmiş tehdit koruması 'nı (Microsoft Defender ATP) Etkinleştirme makalesine bakın. yapılandırma profili, bir Intune cihaz uyumluluk ilkesi oluşturun, bir Azure AD koşullu erişim ilkesi oluşturun ve cihaz uyumluluğunu izleyin.
+description: Microsoft Defender Gelişmiş tehdit koruması 'nı (Microsoft Defender ATP) ayarlama ve yapılandırma, Intune cihazlarınızı ATP ile ekleme ve ardından Intune cihaz uyumluluğuna ve koşullu bir cihaz ATP risk değerlendirmesi kullanma dahil olmak üzere Intune ile birlikte kullanın. ağ kaynaklarını korumak için ilkeleri erişin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ebde15eb39a61bbbafbe40020d90d9bebdce8cf
-ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
+ms.openlocfilehash: 8508915f0b4711b2aa65465dd7ac79f575a8d008
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533170"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670973"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune 'da koşullu erişimle Microsoft Defender ATP için uyumluluğu zorlama  
 

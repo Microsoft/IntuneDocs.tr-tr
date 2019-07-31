@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3294959e6b11bb8982afa088acdd7262246c3923
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467433"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671051"
 ---
-# <a name="monitor-device-encryption"></a>Cihaz şifrelemesini izleme  
+# <a name="monitor-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini izleme   
 
 Microsoft Intune şifreleme raporu, yönetilen cihazlarınızın şifreleme durumuyla ilgili ayrıntıları görüntülemek için merkezi bir konumdur. Cihazın şifreleme durumu hakkındaki ayrıntıları görüntüleyin ve cihaz kurtarma anahtarlarını yönetme seçeneklerini bulun. Kullanılabilir kurtarma anahtarı seçenekleri, görüntülemekte olduğunuz cihazın türüne bağlıdır.  
 
@@ -59,7 +59,7 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
     
     Daha fazla bilgi için Windows belgelerindeki [BitLocker yapılandırma hizmeti sağlayıcısına (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) bakın.  
 
-  - **Hazırlanma**: Cihazın tam şifreleme özellikleri yoktur, ancak yine de şifrelemeyi destekler. Örneğin, bir Windows cihazı, bir kullanıcı tarafından el ile veya bir TMP olmadan şifrelemeye izin vermek üzere ayarlanabilir grup ilkesi aracılığıyla şifrelenmiş olabilir.
+  - **Hazırlanma**: Cihazın tam şifreleme özellikleri yoktur, ancak yine de şifrelemeyi destekler. Örneğin, bir Windows cihazı, bir kullanıcı tarafından el ile veya TPM olmadan şifrelemeye izin vermek üzere ayarlanabilir grup ilkesi aracılığıyla şifrelenmiş olabilir.
   - **Uygulanamaz**: Bu cihazı sınıflandırmak için yeterli bilgi yok.  
 
 - **Şifreleme durumu** – işletim sistemi sürücüsünün şifrelenip şifrelenmediği.  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a2ebf91efb35ecd46607baffc47abbe73c5fc5c
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467488"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660936"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune 'de Intune şirket içi Exchange bağlayıcısını ayarlama
 Bu makaledeki bilgiler, Intune için Exchange Active Sync şirket içi bağlayıcıyı yüklemenize ve izlemenize yardımcı olur.  Şirket içi Exchange [posta kutularına erişime izin vermek veya erişimi engellemek için](conditional-access-exchange-create.md), şirket içi Exchange bağlayıcısını koşullu erişim ilkelerinizle birlikte kullanırsınız. 
@@ -121,7 +121,7 @@ Intune şirket içi Exchange bağlayıcısını yüklemek için aşağıdaki ad�
 
 5. Kullanıcıların Exchange Server posta kutularına bildirim göndermek için gereken kimlik bilgilerini sağlayın. Bu kullanıcı yalnızca bildirimlere ayrılabilir. Bildirimleri kullanıcının e-posta ile bildirim gönderebilmesi için bir Exchange posta kutusu olması gerekir. Bu bildirimleri Intune’da Koşullu Erişim ilkeleriyle yapılandırabilirsiniz.  
 
-       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
+   Otomatik Bulma hizmeti ve Exchange Web Hizmetleri'nin Exchange İstemci Erişimi Sunucusu'nda yapılandırıldığından emin olun. Daha fazla bilgi için bkz. [İstemci Erişimi sunucusu](https://technet.microsoft.com/library/dd298114.aspx).
 
 6. **Parola** alanında, Intune’un Exchange Server'a erişmesini etkinleştirmek için bu hesabın parolasını sağlayın.
 

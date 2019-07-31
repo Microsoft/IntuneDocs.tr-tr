@@ -1,6 +1,7 @@
 ---
-title: Microsoft Intune Windows güncelleştirmelerini güncelleştirme uyumluluğu raporları kullanın. | Microsoft Docs
-description: OMS güncelleştirme uyumluluğu, Intune ile Windows dağıttığınız güncelleştirmeleri için rapor verileri görüntülemek için kullanın.
+title: Microsoft Intune Windows güncelleştirmeleri için Güncelleştirme Uyumluluğu raporlarını kullanın
+titleSuffix: Microsoft Intune
+description: Intune ile dağıttığınız Windows güncelleştirmelerinin rapor verilerini görüntülemek için OMS Güncelleştirme Uyumluluğu kullanın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,18 +15,18 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 09f3cafc16d8a08885731aa244a089367c6c0933
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66039662"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660401"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Güncelleştirmeler için Intune uyumluluk raporları
-Windows update, Windows 10 cihazlara dağıtmak için Intune kullandığınızda, Intune veya ücretsiz bir çözümü kullanarak güncelleştirme uyumluluğunu ayrıntılarını görüntüleme adlı *güncelleştirme uyumluluğu*, Microsoft Operations Management Suite (OMS) bir parçası olduğu.
+Windows 10 cihazlarına Windows Update dağıtmak için Intune 'u kullandığınızda, Intune 'U kullanarak güncelleştirme uyumluluğu hakkındaki ayrıntıları veya Microsoft Operations Management Suite (OMS) bir parçası olan *güncelleştirme uyumluluğu*adlı ücretsiz bir çözümü görüntüleyin.
 
-## <a name="use-intune"></a>Intune kullanın
-Bir ilke raporu, yapılandırdığınız Windows 10 güncelleştirme halkaları için dağıtım durumunu gözden geçirmek için: 
+## <a name="use-intune"></a>Intune 'U kullanma
+Yapılandırdığınız Windows 10 güncelleştirme halkaları için dağıtım durumundaki bir ilke raporunu gözden geçirmek için: 
 1. [Azure Portal](https://portal.azure.com/) oturum açın.
 2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
 3. **Yazılım güncelleştirmeleri** > **Genel bakış**’ı seçin. Atadığınız tüm güncelleştirme halkalarının durumu hakkında genel bilgileri görebilirsiniz.
@@ -42,25 +43,25 @@ Bir ilke raporu, yapılandırdığınız Windows 10 güncelleştirme halkaları 
       - **Cihaz durumu**  
       - **Kullanıcı durumu**  
 
-## <a name="use-update-compliance"></a>Güncelleştirme uyumluluğu kullanın
-Windows 10 güncelleştirme dağıtımlarını kullanarak izleyebileceğiniz [güncelleştirme uyumluluğu](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor), bir Windows analiz çözümüdür. Güncelleştirme uyumluluğu Azure Portalı aracılığıyla sunulur ve ücretsiz karşılayan cihazlar için kullanılabilir, [önkoşulları](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started#update-compliance-prerequisites).  
+## <a name="use-update-compliance"></a>Güncelleştirme Uyumluluğu kullan
+Windows 10 Update piyasaya çıkarma 'i Windows Analytics çözümünü [güncelleştirme uyumluluğu](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)kullanarak izleyebilirsiniz. Güncelleştirme Uyumluluğu Azure portal sunulur ve [önkoşullarını](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started#update-compliance-prerequisites)karşılayan cihazlarda ücretsiz olarak kullanılabilir.  
 
-Bu çözümü kullandığınızda, ticari kimliği tüm Intune dağıttığınız yönetilen Windows 10 cihazlar için güncelleştirme uyumluluğunu raporlamak istediğiniz.  
+Bu çözümü kullandığınızda, güncelleştirme uyumluluğunu raporlamak istediğiniz Intune ile yönetilen Windows 10 cihazlarınızdan birine ticari bir KIMLIK dağıtırsınız.  
 
-Intune konsolunda kullanarak ticari kimliği yapılandırmak için bir özel ilke OMA-URI ayarlarını kullanın Ayrıntılı bilgi için bkz. [Microsoft Intune’daki Windows 10 cihazları için Intune ilke ayarları](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).  
+Intune konsolunda, ticari KIMLIĞI yapılandırmak için özel bir ilkenin OMA-URI ayarlarını kullanırsınız. Ayrıntılı bilgi için bkz. [Microsoft Intune’daki Windows 10 cihazları için Intune ilke ayarları](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).  
 
-Ticari kimliği yapılandırmaya ilişkin OMA-URI (büyük/küçük harfe duyarlı) yolu: *./Vendor/MSFT/DMClient/Provider/MS DM Server/Commercialıd*  
+Ticari KIMLIĞI yapılandırmaya yönelik OMA-URI (büyük/küçük harfe duyarlı) yolu: *./Vendor/MSFT/DMClient/Provider/MS DM Server/Commercial Cıalıd*  
 
 Örneğin, **OMA-URI Ayarı Ekle veya Düzenle** bölümünde aşağıdaki değerleri kullanabilirsiniz:
-- **Ayar adı**: Windows Analytics ticari kimliği
-- **Ayar açıklaması**: Ticari kimliği için Windows Analytics çözümleri yapılandırma
-- **OMA-URI** (büyük/küçük harfe duyarlı): *./Vendor/MSFT/DMClient/Provider/MS DM Server/Commercialıd*
+- **Ayar adı**: Windows Analytics ticari KIMLIĞI
+- **Ayar açıklaması**: Windows Analytics çözümleri için ticari KIMLIĞI yapılandırma
+- **OMA-URI** (büyük/küçük harfe duyarlı): *./Vendor/MSFT/DMClient/Provider/MS DM Server/ticari IDID*
 - **Veri türü**: Dize
-- **Değer**: \<OMS çalışma alanınızdaki Windows Telemetri sekmesinde gösterilen GUID'yi kullanın >
+- **Değer**: \<OMS çalışma alanınızdaki Windows telemetri sekmesinde gösterilen GUID 'yi kullanın >
  
 > [!NOTE]  
 > MS DM Sunucusu hakkında daha fazla bilgi için bkz. [DMClient yapılandırma hizmet sağlayıcısı (CSP)]( https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Intune'da yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md)
+[Intune 'da yazılım güncelleştirmelerini yönetme](windows-update-for-business-configure.md)
 

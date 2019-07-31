@@ -1,7 +1,7 @@
 ---
 title: Windows 10 için Intune güvenlik temelleri ayarları
 titleSuffix: Microsoft Intune
-description: Windows 10 yönetmek için Intune güvenlik taban çizgisi ayarları
+description: Intune ile yönettiğiniz Windows 10 cihazları için Windows MDM güvenlik taban çizgisinde bulunan Varsayılanları ve kullanılabilir ayarları gözden geçirin.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 0c307c7baaef77c697b486adb63a2cee089e1007
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491899"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671039"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune için MDM güvenlik taban çizgisi ayarları  
 
