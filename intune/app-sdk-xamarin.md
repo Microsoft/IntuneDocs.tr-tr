@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794359"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680057"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -114,6 +114,9 @@ Yeniden eşleştirici tarafından mam bir sınıfı hariç tutmak için, proje `
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> Şu anda, remapper ile ilgili bir sorun, Xamarin. Android uygulamalarında hata ayıklamayı engeller. Bu sorun çözülene kadar uygulamanızın hatalarını ayıklamada el ile tümleştirme önerilir.
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Yeniden adlandırılan Yöntemler](app-sdk-android.md#renamed-methods)
 Birçok durumda, Android sınıfında kullanılabilir olan bir yöntem, MAM değiştirme sınıfında kesin olarak işaretlenmiştir. Bu durumda, MAM değiştirme sınıfı benzer ada sahip olup geçersiz kılmanız gereken bir yöntem (`MAM` son ekini alır) sağlar. Örneğin, `MAMActivity`’i geçersiz kılıp `OnCreate()` çağırmak yerine `base.OnCreate()`’den türetilirken, `Activity`, `OnMAMCreate()`’i geçersiz kılmalı ve `base.OnMAMCreate()` çağırmalıdır.
 
@@ -177,7 +180,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 Uygulamalar `Xamarin.Forms` için paket `Microsoft.Intune.MAM.Remapper` , ekleme `MAM` sınıfları tarafından, yaygın olarak kullanılan `Xamarin.Forms` sınıfların Sınıf hiyerarşisine otomatik olarak Mam sınıfı değiştirme işlemini gerçekleştirir. 
 
 > [!NOTE]
-> Xamarin. Forms tümleştirmesi, yukarıda açıklanan Xamarin. Android tümleştirmesine ek olarak yapılır.
+> Xamarin. Forms tümleştirmesi, yukarıda açıklanan Xamarin. Android tümleştirmesine ek olarak yapılır. Yeniden Eşleştirici, Xamarin. Forms uygulamaları için farklı davrandığı için el ile MAM değiştirme işleminin yine de yapılması gerekir.
 
 Yeniden eşleştirici projenize eklendikten sonra, MAM denk değişiklikleri yapmanız gerekir. Örneğin, ve `FormsAppCompatActivity` `FormsApplicationActivity` , uygulamanızda geçersiz kılmaları `OnCreate` sağlayan ve `OnResume` mam eşdeğerlerine `OnMAMCreate` ve `OnMAMResume` sırasıyla değiştirilerek kullanılabilir olmaya devam edebilir.
 
@@ -199,6 +202,9 @@ Bu, yeniden eşleştirici Xamarin sınıflarının devralınmasını değiştird
 
 > [!NOTE]
 > Yeniden Eşleştirici, Visual Studio 'Nun IntelliSense otomatik tamamlama için kullandığı bir bağımlılığı yeniden yazar. Bu nedenle, IntelliSense 'in değişiklikleri doğru tanıması için yeniden eşleştirici eklendiğinde projeyi yeniden yüklemeniz ve yeniden oluşturmanız gerekebilir.
+
+#### <a name="troubleshooting"></a>Sorun giderme
+* Başlatma sırasında uygulamanızda boş bir beyaz ekranla karşılaşdıysanız, ana iş parçacığında gezinti çağrılarını yürütmeye zorlamanız gerekebilir.
 
 ### <a name="company-portal-app"></a>Şirket Portalı uygulaması
 Intune SDK 'Sı Xamarin bağlamaları, uygulama koruma ilkelerini etkinleştirmek için cihazda [Şirket portalı](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android uygulamasının varlığını kullanır. Şirket Portalı uygulama koruma ilkelerini Intune hizmetinden alır. Uygulama başlatıldığında, ilkeyi ve ilkenin zorlanmasına yönelik kodu Şirket Portalı’dan yükler. Kullanıcının oturum açmış olması gerekmez.

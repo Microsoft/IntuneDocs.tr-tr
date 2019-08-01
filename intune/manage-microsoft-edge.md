@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
-ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287214"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701005"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -76,9 +76,6 @@ Azure AD bağlantılı web uygulamalarının iOS ve Android 'de Microsoft Edge '
 
 9. **Atamalar** bölümünde **Kullanıcılar ve gruplar**' ı seçin ve ardından bu ilkeyi atamak istediğiniz kullanıcıları veya grupları seçin.
 
-    > [!NOTE]
-    > Kullanıcıların, Uygulama Yapılandırma ilkelerini alabilmeleri için ayrıca Intune Uygulama Koruması ilkesi ile hedeflenmeleri gerekir. Intune Uygulama Koruma ilkeleri oluşturma hakkında daha fazla bilgi için bkz: [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
-
 10. **Atamalar** bölümünde **Bulut uygulamaları**’nı seçerek bu ilkeyle hangi uygulamaları koruyacağınızı seçin.
 
 Yukarıdaki ilke yapılandırıldıktan sonra, kullanıcılar Microsoft Edge 'i kullanarak bu ilkeyle koruduğunuz Azure AD bağlantılı Web uygulamalarına erişim için zorlanır. Kullanıcılar bu senaryoda yönetilmeyen bir tarayıcı kullanmayı denediklerinde, Microsoft Edge kullanması gereken bir ileti alırlar.
@@ -96,8 +93,6 @@ SSO, cihazınızın iOS cihazları için Microsoft Authenticator uygulaması vey
 > Cihaz kaydı, Azure AD hizmeti ile basit bir iade etme işlemidir. Tam cihaz kaydı gerektirmez ve bu cihaza cihazda ek ayrıcalıklar vermez.
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Korumalı tarayıcı uygulama yapılandırması oluşturma
-
-Uygulama yapılandırmalarının uygulanabilmesi için kullanıcının korumalı tarayıcısı veya cihazdaki başka bir uygulamanın zaten [Intune uygulama koruma ilkesi](app-protection-policy.md)tarafından yönetiliyor olması gerekir.
 
 Microsoft Edge için uygulama yapılandırması oluşturmak için:
 
@@ -133,7 +128,7 @@ Hem Intune Managed Browser hem de Microsoft Edge İlkeyle korunan tarayıcılar 
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.useEdge`    |    Bu değer `true` , kullanıcılarınızı Microsoft Edge 'i indirip kullanacak şekilde yönlendirir.<br>Bu değer `false` , kullanıcılarınızın Intune Managed Browser kullanmasına izin verir.    |
 
-Bu uygulama yapılandırma değeri ayarlanmamışsa,  aşağıdaki mantık kurumsal bağlantıları açmak için kullanılacak tarayıcıyı tanımlar.
+Bu uygulama yapılandırma **değeri ayarlanmamışsa,** aşağıdaki mantık kurumsal bağlantıları açmak için kullanılacak tarayıcıyı tanımlar.
 
 Android’de:
 - Intune Managed Browser, bir Kullanıcı cihazındaki hem Intune Managed Browser hem de Microsoft Edge 'e indirildiyse başlatılır. 
@@ -183,7 +178,7 @@ Bu ayar, Microsoft Edge için bir giriş sayfası kısayolu yapılandırmanıza 
 
 Bir giriş sayfası kısayolunu yapılandırmak için aşağıdaki anahtar/değer çiftini kullanın:
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com. Microsoft. Intune. mam. managedbrowser. giriþ   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örneğinde** <`https://www.bing.com`>
     |
@@ -201,7 +196,7 @@ Bazı ayrıntılar aşağıda verilmiştir:
 
 Yönetilen yer imlerini yapılandırmak için aşağıdaki anahtar/değer çiftini kullanın:
 
-|    Anahtar    |    Değer    |
+|    Anahtar    |    Value    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    com. Microsoft. Intune. mam. managedbrowser. yer imleri    |    Bu yapılandırmanın değeri, yer işaretlerinin bir listesidir. Her yer işareti, yer işareti başlığından ve yer işareti URL 'sinden oluşur. Başlığı ve URL 'yi `|` karakterle ayırın.      Örnek:<br>`Microsoft Bing|https://www.bing.com`<br>Birden çok yer işaretini yapılandırmak için, her çifti çift karakterle `||`ayırın.<p>Örnek:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
@@ -209,7 +204,7 @@ Yönetilen yer imlerini yapılandırmak için aşağıdaki anahtar/değer çifti
 
 Varsayılan olarak, kullanıcılarınız Microsoft Edge yer işaretleri içindeki bir klasör içinde kendilerine yapılandırılmış olan Uygulamaps sitelerini gösterilir. Klasör, kuruluşunuzun adıyla etiketlenir.
 
-|    Anahtar    |    Value    |
+|    Anahtar    |    Değer    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com. Microsoft. Intune. mam. managedbrowser. Uygulamaps    |    **Doğru** , Microsoft Edge yer Işaretlerinin Içindeki uygps 'leri gösterir.<p>**False** , Microsoft Edge Içindeki uygulamaps 'leri gizler.    |
 
@@ -226,11 +221,11 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
 İzin verilen/Engellenen siteler listelerinizi oluşturmak için çeşitli URL biçimleri kullanabilirsiniz. Bu izin verilen desenler aşağıdaki tabloda ayrıntılı olarak verilmiştir. Başlamadan önce bazı notlar: 
 - Tüm URL'leri listeye eklerken başlarına **http** veya **https** önekini yazdığınızdan emin olun.
 - Aşağıdaki izin verilen desenler listesindeki kurallara göre\*joker karakter simgesini () kullanabilirsiniz.
-- Joker karakter, ana bilgisayar adının tamamını (noktalarla ayırarak) veya yolun tüm parçalarını (eğik çizgi ile ayrılmış olarak) eşleştirebilir. Örneğin, `http://*contoso.com` desteklenmez.
+- Joker karakter, ana bilgisayar adının tamamını (noktalarla ayırarak) veya yolun tüm parçalarını (eğik çizgi ile ayrılmış olarak) eşleştirebilir. Örneğin `http://*contoso.com` **, desteklenmez.**
 - Adreste bağlantı noktası numaraları belirtebilirsiniz. Bir bağlantı noktası numarası belirtmezseniz, kullanılan değerler şöyle olacaktır:
   - http için bağlantı noktası 80
   - https için bağlantı noktası 443
-- Bağlantı noktası numarası için joker karakter kullanılması  desteklenmez. Örneğin `http://www.contoso.com:*` ve `http://www.contoso.com:*/` desteklenmez. 
+- Bağlantı noktası numarası için joker karakter kullanılması **desteklenmez.** Örneğin `http://www.contoso.com:*` ve `http://www.contoso.com:*/` desteklenmez. 
 
     |    URL    |    Ayrıntılar    |    Eşleşir    |    Eşleşmez    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|

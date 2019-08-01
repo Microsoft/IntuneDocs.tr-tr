@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c307c7baaef77c697b486adb63a2cee089e1007
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671039"
+ms.locfileid: "68680033"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune için MDM güvenlik taban çizgisi ayarları  
 
 Windows 10 veya üstünü çalıştıran cihazlar için Microsoft Intune tarafından desteklenen MDM güvenlik temeli ayarlarını görüntüleyin. Bu temeldeki ayarların varsayılan değerleri, uygulanabilir cihazlar için önerilen yapılandırmayı temsil eder ve diğer güvenlik temellerinden temel varsayılan varsayılanlar ile eşleşmeyebilir.  
 
-En son temel sürüm, **Spring 2019 güncelleştirmesi Için MDM güvenlik temeliyle belirlenir (19H1)**  
+2019 Mayıs 'un en son temel sürümü **MDM güvenlik temeliyle**  
 
 Önceki sürümden bu taban çizgisinin en son sürümünde nelerin değiştirildiğini öğrenmek için, bkz. [yeni şablondaki değiştirilme öğeleri](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Haziran 2019 ' de, MDM güvenlik temeli önizlemesi, genel kullanıma sunulan (önizlemede değil) *Spring 2019 Güncelleştirmesi (19H1) şablonunun MDM güvenlik temeli* sürümü ile değiştirilmiştir. *Spring 2019 Güncelleştirmesi (19H1) Için MDM güvenlik* temeli 'nin kullanılabilirliği öncesinde oluşturulan profiller, Spring 2019 Update (19h1) sürümü Için MDM güvenlik temelindeki ayarları ve değerleri yansıtacak şekilde güncelleştirmez.  Önizleme şablonunu temel alan yeni profiller oluşturmasanız da, önizleme şablonunu temel alan daha önce oluşturduğunuz profilleri düzenleyebilir ve kullanmaya devam edebilirsiniz.   
+> Haziran 2019 ' de, MDM güvenlik taban çizgisi, genel kullanıma sunulan (önizlemede değil) *mayıs 2019 şablonu Için MDM güvenlik temeli* sürümü ile değiştirilmiştir. *Mayıs 2019 temeli Için MDM güvenlik temelinin* kullanılabilirliği öncesinde oluşturulan profiller, Mayıs 2019 sürümü Için MDM güvenlik temelindeki ayarları ve değerleri yansıtacak şekilde güncellemeyebilir.  Önizleme şablonunu temel alan yeni profiller oluşturmasanız da, önizleme şablonunu temel alan daha önce oluşturduğunuz profilleri düzenleyebilir ve kullanmaya devam edebilirsiniz.   
   
 Intune ile güvenlik temellerini kullanma hakkında bilgi edinmek için bkz. [güvenlik temellerini kullanma](security-baselines.md).  
 
@@ -1825,7 +1825,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-WindowsPowerShell](https
   **Varsayılan**: Enabled
 
 ## <a name="whats-changed-in-the-new-template"></a>Yeni şablonda değiştirilen özellikler
-*Spring 2019 Güncelleştirmesi (19H1) şablonunun MDM güvenlik temeli* , *Önizleme* şablonundan aşağıdaki değişiklikleri içerir.
+*2019 Mayıs şablonuna yönelik MDM güvenlik temeli* , *Önizleme* şablonundan aşağıdaki değişikliklere sahiptir.
 
 ### <a name="changes-to-the-baseline-settings"></a>Taban çizgisi ayarlarındaki değişiklikler
 Aşağıdaki ayarlar şunlardır:

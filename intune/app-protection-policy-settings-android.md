@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f576edb5dd0bd4baa960adb3519fa379397fb94c
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: 128856cf4e81f1ac9fbc93cef1160662e2b5cef0
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329035"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700956"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -93,6 +93,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
   | com.skype.raider | Skype | Skype uygulamasına yalnızca telefon aramasıyla biten belirli eylemlerde izin verilir. |
   | com.android.providers.media | Android medya içeriği sağlayıcısı | Yalnızca zil sesi seçimi eyleminde izin verilen medya içeriği sağlayıcısı. |
   | com.google.android.gms; com.google.android.gsf | Google Play Hizmetleri paketleri | Bu paketlere, anında iletme bildirimleri gibi Google Cloud Messaging eylemleri için izin verilir. |
+  | com. Google. Android. Apps. Maps | Google Haritalar | Gezinmede adreslere izin verilir |
 
 Daha fazla bilgi için bkz. [Uygulamalar için veri aktarım ilkesi özel durumları](app-protection-policies-exception.md).
 

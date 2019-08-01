@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671011"
+ms.locfileid: "68679966"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
 
@@ -67,7 +67,7 @@ Güvenlik temel profilleri, kullanılmakta olan taban çizgisinin [sürümünün
 Aşağıdaki güvenlik temeli örnekleri Intune ile kullanılabilir. Her bir taban çizgisinin en son örneğine ilişkin ayarları görüntülemek için bağlantıları kullanın. 
 
 - **MDM güvenlik temeli**
-  - [Spring 2019 için MDM güvenlik temeli (19H1)](security-baseline-settings-mdm.md)
+  - [2019 Mayıs için MDM güvenlik temeli](security-baseline-settings-mdm.md)
   - [Önizleme: 2018 Ekim için MDM güvenlik temeli](security-baseline-settings-mdm-archive.md)
 
 - **Microsoft Defender ATP temeli**  

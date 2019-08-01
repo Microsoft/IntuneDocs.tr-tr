@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660388"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680112"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
 
@@ -38,8 +38,9 @@ Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler gönd
 ## <a name="considerations-for-using-custom-notifications"></a>Özel bildirimler kullanma konuları  
 
 **Cihaz yapılandırması**:  
-- Kullanıcıların özel bildirimler alabilmesi için cihazda Şirket Portalı uygulamasının yüklü olması gerekir. Ayrıca, Şirket Portalı uygulamasının anında iletme bildirimleri göndermesini sağlamak için izinleri de yapılandırmış olmaları gerekir. Şirket Portalı, kullanıcılardan bildirimlere izin vermesi istenir.  
+- Kullanıcıların özel bildirimler alabilmesi için cihazda Şirket Portalı uygulamasının yüklü olması gerekir. Ayrıca, Şirket Portalı uygulamasının anında iletme bildirimleri göndermesini sağlamak için izinleri de yapılandırmış olmaları gerekir. Şirket Portalı, kullanıcılardan, yüklendiği veya güncelleştirildiği zaman bildirim almasına izin verir.  
 - Android 'de Google Play Hizmetleri gerekli bir bağımlılıkdır.  
+- Cihazın MDM kaydı yapılmalıdır.
 
 **Bildirimler oluşturuluyor**:  
 - Bir ileti oluşturmak için, **kuruluş**için **güncelleştirme** izni içeren bir Intune rolü atanmış bir hesap kullanın. Bir kullanıcıya izin atamak için bkz. [rol atamaları](role-based-access-control.md#role-assignments)  

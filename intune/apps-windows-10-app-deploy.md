@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590918"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680066"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı 
 
@@ -34,6 +34,8 @@ Windows 10 cihazlarında desteklenen uygulama türleri İş kolu (LOB) uygulamal
 > Modern uygulamaları dağıtmak için gereken en düşük Windows 10 güncelleştirmeleri aşağıdaki gibidir:
 > - Windows 10 1803 için [23 Mayıs 2018—KB4100403 (İşletim Sistemi Derlemesi 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
 > - Windows 10 1709 için [21 Haziran 2018 — KB4284822 (İşletim Sistemi Derlemesi 16299.522)](https://support.microsoft.com/help/4284822).
+>
+> Yalnızca Windows 10 1803 ve üzeri, ilişkili birincil kullanıcı olmadığında uygulamaları yüklemeyi destekler.
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 İş kolu uygulamaları
 

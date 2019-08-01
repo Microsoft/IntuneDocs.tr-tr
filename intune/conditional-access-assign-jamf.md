@@ -1,7 +1,7 @@
 ---
 title: Jamf cihazları için cihaz uyumluluk ilkesi
 titleSuffix: Microsoft Intune
-description: Microsoft Intune uyumluluk ilkelerini güvenli Jamf tarafından yönetilen cihazlar için Azure Active Directory koşullu erişimiyle birlikte kullanın.
+description: JAMF tarafından yönetilen cihazların güvenliğini sağlamaya yardımcı olmak için Azure Active Directory Koşullu erişimle Microsoft Intune uyumluluk ilkeleri kullanın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,23 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045206"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680004"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
 
 Şunun için geçerlidir: Azure portalında Intune
 
-Azure Active Directory kullanabilirsiniz ve Microsoft Intune koşullu erişim ilkelerini son kullanıcılarınızın kuruluş gereksinimleriyle uyumlu olduğundan emin olun. Bu politikaları, [Jamf Pro](conditional-access-integrate-jamf.md) ile yönetilen Mac'lere uygulayabilirsiniz. Bu hem Intune hem de Jamf Pro konsollarına erişim gerektirir.
+Azure Active Directory kullanabilirsiniz ve Microsoft Intune koşullu erişim ilkeleri, son kullanıcılarınızın kuruluş gereksinimleriyle uyumlu olduğundan emin olun. Bu politikaları, [Jamf Pro](conditional-access-integrate-jamf.md) ile yönetilen Mac'lere uygulayabilirsiniz. Bu hem Intune hem de Jamf Pro konsollarına erişim gerektirir.
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Intune'da cihaz uyumu politikaları oluşturma
 
-1. Microsoft Azure'ı açın, ardından **Intune** > **Cihaz Uyumluluğu** > **İlkeleri**’ne gidin. Uyumsuz kullanıcılara ve gruplara bir dizi eylem (örneğin, uyarı e-postaları gönderme) de dahil olmak üzere, macOS için ilkeler oluşturabilirsiniz.
-2. İstediğiniz grupları arayın, ardından ilkeleri onlara uygulayın.
+1. Microsoft Azure'ı açın, ardından **Intune** > **Cihaz Uyumluluğu** > **İlkeleri**’ne gidin. Uyumsuz kullanıcılara ve gruplara bir dizi eylemi seçme (örneğin, uyarı e-postaları gönderme) dahil olmak üzere macOS için ilkeler oluşturabilirsiniz.
+2. Atamaları > ilke ' yi seçin. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
+3. Azure AD güvenlik gruplarınızı görmek için Seçili gruplar ' ı seçin. Bu ilkenin uygulanmasını istediğiniz kullanıcı gruplarını seçin > ilkeyi kullanıcılara dağıtmak için Kaydet ' i seçin.
+
+İlkeyi kullanıcılara uyguladınız. İlke tarafından hedeflenen kullanıcılar tarafından kullanılan cihazlar, uyumluluk için değerlendirilir ve Azure Active Directory "cihazın uyumlu olarak işaretlenmesini gerektir" ayarı için karmaşıkla işaretlenir.
 
 > [!Note]
 > Intune, uyumlu olmak için tam disk şifrelemesi gerektirir.
@@ -79,4 +82,4 @@ Son kullanıcılar, cihazı Jamf Pro tarafından yönetilen bir cihaz olarak Azu
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Azure Active Directory’de Koşullu Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
-- [Azure Active Directory'de koşullu erişim ile çalışmaya başlama](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
+- [Azure Active Directory Koşullu erişim ile çalışmaya başlama](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
