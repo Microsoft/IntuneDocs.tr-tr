@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76b9581cac6e9d74e83ce50400e14468a13d3e6
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: e3c4b1541de3500089bafc388779a3cfe97fbd29
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68664180"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756581"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -268,6 +268,119 @@ UPN doğrulanmamış veya yönlendirilemeyen bir etki alanı içeriyorsa, şu ad
 3. **MDM Kullanıcı kapsamını** **Tümü**olarak ayarlayın. Ya da, **MDM Kullanıcı kapsamını** **bazılarına**ayarlayın ve Windows 10 cihazlarını otomatik olarak kaydedebilen grupları seçin.    
 4. **Mam Kullanıcı kapsamını** **none**olarak ayarlayın.
 
+
+### <a name="an-error-occurred-while-creating-autopilot-profile"></a>Autopilot profili oluşturulurken bir hata oluştu.
+
+**Sağlamak** Cihaz adı şablonunun belirtilen adlandırma biçimi gereksinimleri karşılamıyor. Örneğin, seri makro için% seri% yerine% seri% gibi küçük harf kullanırsınız.
+
+#### <a name="resolution"></a>Çözüm
+
+Adlandırma biçiminin aşağıdaki gereksinimleri karşıladığından emin olun:
+
+- Cihazlarınız için benzersiz bir ad oluşturun. Adlar 15 karakter veya daha az olmalıdır ve harf (a-z, A-Z), sayılar (0-9) ve kısa çizgi (verilere erişme) içerebilir.
+- Ancak tamamen sayıdan oluşamaz.
+- Adlarda boşluk bulunamaz.
+- Donanıma özgü bir seri numarası eklemek için% SERIAL% makrosunu kullanın. Ya da rastgele bir sayı dizesi eklemek için% S_SAYI_ÜRET: < basamak sayısı >% makrosunu kullanın, dize > rakamlardan oluşan < # sayısını içerir. Örneğin, MYPC-% S_SAYI_ÜRET:% 6, MYPC-123456 gibi bir ad oluşturur.
+
+### <a name="something-went-wrong-oobeidps"></a>Bir sorun oluştu. OOBEIDPS.
+
+**Sağlamak** Bu sorun, kimlik sağlayıcısına (IDP) erişimi engelleyen bir ara sunucu, güvenlik duvarı veya başka bir ağ aygıtı varsa oluşur.
+
+#### <a name="resolution"></a>Çözüm
+Autopilot için internet tabanlı hizmetlere gereken erişimin engellenmediğinden emin olun. Daha fazla bilgi için bkz. [Windows Autopilot ağ gereksinimleri](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements-network).
+
+
+### <a name="registering-your-device-for-mobile-management-failed3-0x801c03ea"></a>Cihazınızı mobil yönetim için kaydetme (başarısız oldu: 3, 0x801C03EA).
+
+**Sağlamak** Cihazda 2,0 sürümünü destekleyen bir TPM yongası bulunur, ancak henüz 2,0 sürümüne yükseltilmemiştir.
+
+#### <a name="resolution"></a>Çözüm
+TPM yongasını 2,0 sürümüne yükseltin.
+
+Sorun devam ederse, her gruba farklı bir Autopilot profili atanması halinde aynı cihazın iki atanmış grupta olup olmadığını kontrol edin. İki grupda varsa, cihaza hangi Autopilot profilinin uygulanacağını belirleyip, ardından diğer profilin atamasını kaldırın.
+
+Windows cihazını Autopilot ile bilgi noktası modunda dağıtma hakkında daha fazla bilgi için bkz. [Windows Autopilot kullanarak bilgi noktası dağıtma](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
+
+
+### <a name="securing-your-hardware-failed-0x800705b4"></a>Donanımınızın güvenliğini sağlama (başarısız oldu: 0x800705b4).
+
+Hata 800705b4: 
+```
+Securing your hardware (Failed: 0x800705b4)
+Joining your organization's network (Previous step failed)
+Registering your device for mobile management (Previous step failed)
+```
+
+**Sağlamak** Hedeflenen Windows cihazı aşağıdaki gereksinimlerden birini karşılamıyor:
+
+- Cihazda bir fiziksel TPM 2,0 yongasının olması gerekir. Sanal TPMs (örneğin, Hyper-V VM 'Leri) veya TPM 1,2 yongalarına sahip cihazlar kendi kendine dağıtım moduyla çalışmaz.
+- Cihazın aşağıdaki Windows sürümlerinden birini çalıştırıyor olması gerekir:
+    - Windows 10 derleme 1703 veya sonraki bir sürümü.
+    - Karma Azure AD birleşimi kullanılırsa, Windows 10 derleme 1809 veya sonraki bir sürümü.
+
+
+#### <a name="resolution"></a>Çözüm
+Hedeflenen cihazın **neden** bölümünde açıklanan gereksinimleri karşıladığından emin olun.
+
+Windows cihazını Autopilot ile bilgi noktası modunda dağıtma hakkında daha fazla bilgi için bkz. [Windows Autopilot kullanarak bilgi noktası dağıtma](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
+
+
+### <a name="something-went-wrong-error-code-80070774"></a>Bir sorun oluştu. Hata kodu 80070774.
+
+Hata 0x80070774: Bir sorun oluştu. Doğru oturum açma bilgilerini kullandığınızı ve kuruluşunuzun bu özelliği kullandığını onaylayın. Bunu yeniden deneyebilir veya 80070774 hata koduyla sistem yöneticinize başvurabilirsiniz.
+
+Bu sorun, genellikle cihaz ilk oturum açma ekranında zaman aşımına uğrarsa karma bir Azure AD Autopilot senaryosunda cihaz yeniden başlatılmadan önce oluşur. Bağlantı sorunları nedeniyle etki alanı denetleyicisinin bulunamadığını veya başarıyla ulaşılamadığını gösterir. Ya da cihazın etki alanına katılamıyorum bir durum girmiş.
+
+**Sağlamak** En yaygın neden, hibrit Azure AD JOIN 'in kullanıldığı ve Kullanıcı ata özelliğinin Autopilot profilinde yapılandırıldığı bir nedendir. Kullanıcı ata özelliğinin kullanılması, cihazın şirket içi etki alanınıza katılabileceği bir duruma koyduğu ilk oturum açma ekranı sırasında cihazda bir Azure AD katılımı gerçekleştirir. Bu nedenle, Kullanıcı ata özelliği yalnızca standart Azure AD JOIN Autopilot senaryolarında kullanılmalıdır.  Özelliği karma Azure AD JOIN senaryolarında kullanılmalıdır.
+
+#### <a name="resolution"></a>Çözüm
+
+1. **Intune**cihazkaydı > **Windows kayıt** **cihazları**' na gidin. >  >  
+2. Sorunu yaşayan cihazı seçin > en sağ taraftaki üç nokta (...) simgesine tıklayın.
+3. **Kullanıcı atamasını Kaldır** ' ı seçin ve işlemin bitmesini bekleyin.
+4. OOBE 'yi yeniden denemeden önce karma Azure AD Autopilot profilinin atandığını doğrulayın.
+
+#### <a name="second-resolution"></a>İkinci çözünürlük
+Sorun devam ederse, Intune Bağlayıcısı ile çevrimdışı etki alanına katılmayı barındıran sunucuda olay KIMLIĞI 30312 ' ın ODJ bağlayıcı hizmet günlüğünde kayıtlı olup olmadığını denetleyin. Event 30312 şuna benzer:
+
+```
+Log Name:      ODJ Connector Service
+Source:        ODJ Connector Service Source
+Event ID:      30132
+Level:         Error
+Description:
+{
+          "Metric":{
+                   "Dimensions":{
+                             "RequestId":"<RequestId>",
+                             "DeviceId":"<DeviceId>",
+                             "DomainName":"contoso.com",
+                             "ErrorCode":"5",
+                             "RetryCount":"1",
+                              "ErrorDescription":"Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation",
+                              "InstanceId":"<InstanceId>",
+                              "DiagnosticCode":"0x00000800",
+                              "DiagnosticText":"Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation [Exception Message: \"DiagnosticException: 0x00000800. Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation\"] [Exception Message: \"Failed to call NetProvisionComputerAccount machineName=<ComputerName>\"]"
+                   },
+                   "Name":"RequestOfflineDomainJoinBlob_Failure",
+                   "Value":0
+          }
+}
+```
+
+Bu sorun genellikle Windows Autopilot cihazlarının oluşturulduğu kuruluş birimine izinlerin yanlış şekilde verilmesine neden olur. Daha fazla bilgi için bkz. [kuruluş birimindeki bilgisayar hesabı sınırını artırma](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit).
+
+1. **Active Directory Kullanıcıları ve bilgisayarları (dsa. msc)** açın.
+2. **Temsilci denetim**>, karma Azure AD 'ye katılmış bilgisayarları oluşturmak için kullanacağınız kurumsal birimi sağ tıklatın.
+3. **Denetim temsili** sihirbazında, **İleri** > **nesne türleri** **Ekle** > ' yi seçin.
+4. **Nesne türleri** bölmesinde, **Tamam**> **bilgisayarlar** onay kutusunu seçin.
+5. **Kullanıcıları**, **bilgisayarları**veya **grupları** seçin bölmesinde **Seçilecek nesne adlarını girin** kutusuna bağlayıcının yüklendiği bilgisayarın adını girin.
+6. Girdinizi doğrulamak için **adları denetle** '**yi**seçin > **Tamam ' ı** > seçin.
+7.  > **Daha sonra** **atamak için özel bir görev oluştur**' u seçin.
+8. Klasör onay kutusunda **yalnızca şu nesneleri** seçin ve ardından **bilgisayar nesnelerini**seçin, **Bu klasörde seçili nesneleri oluşturun**ve **Seçili nesneleri bu klasörde silin** onay kutularını işaretleyin.
+9. **İleri**’yi seçin.
+10. **İzinler**altında **tam denetim** onay kutusunu seçin. Bu eylem diğer tüm seçenekleri seçer.
+11. **İleri** > **son**' u seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

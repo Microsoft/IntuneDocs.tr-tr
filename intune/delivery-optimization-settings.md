@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cd4eeec59437c73500fa382a55ecabcd4b6e7f3
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660884"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756560"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune için teslim iyileştirme ayarları
 
@@ -67,6 +67,15 @@ Intune 'U bu ayarları kullanacak şekilde yapılandırmak için bkz. [güncelle
 | [Maksimum önbellek yaşı (gün)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | Her bir dosyanın bir cihazdaki teslim iyileştirme önbelleğinde tuttuğu dosyanın ne kadar süreyle başarıyla indirildiğinden emin olmak için belirtin.   <br><br>Intune ile önbellek yaşını gün olarak yapılandırırsınız. Tanımladığınız gün sayısı, Windows 'un bu ayarı nasıl tanımladığına ilişkin geçerli saniye sayısına dönüştürülür. Örneğin, 3 günlük bir Intune yapılandırması cihazda 259200 saniyeye (3 gün) dönüştürülür.  <br><br>**Varsayılan**:   *Yapılandırılmış değer yok*     <br><br>**Önerilen**: 7   <br><br>İlke CSP 'si: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | En büyük önbellek boyutu türü  | *Ayrıntılara bakın*    | Teslim iyileştirme tarafından kullanılan bir cihazdaki disk alanı miktarının nasıl yönetileceğini seçin. Yapılandırılmadığında, önbellek boyutu varsayılan olarak kullanılabilir boş disk alanının% 20 ' si olur.  <br><ul><li>**Yapılandırılmadı** Varsayılanını</li><br><li>**Mutlak** – cihazın teslim iyileştirmesi için kullanabileceği maksimum sürücü alanı miktarını yapılandırmak için [mutlak maksimum önbellek boyutunu (GB cinsinden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size) belirtin. 0 (sıfır) olarak ayarlandığında, önbellek boyutu sınırsızdır, ancak cihaz disk alanı azaldığında, teslim iyileştirmesi önbelleğin işaretini siler. <br><br>Windows 1607 gerektirir<br><br> İlke CSP 'si: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**Yüzde** : bir cihazın teslim iyileştirmesi için kullanabileceği maksimum sürücü alanı miktarını yapılandırmak için [Maksimum önbellek boyutunu (% cinsinden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size) belirtin. Yüzde, kullanılabilir sürücü alanının ve teslim Iyileştirme 'nin sürekli olarak kullanılabilir sürücü alanını değerlendirir ve en fazla önbellek boyutunu küme yüzdesi altında tutmak için önbelleği temizler. <br><br>Windows 1511 gerektirir<br><br>İlke CSP 'si: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [VPN eş önbelleğe alma](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | VPN ile etki alanı ağına bağlıyken eş önbelleğe almaya katılacak bir cihaz yapılandırmak için **etkin** ' i seçin. Etkin olan cihazlar, VPN veya şirket etki alanı ağında diğer etki alanı ağ aygıtlarından indirebilir veya buradan karşıya yükleyebilir.  <br><br>**Varsayılan**: Yapılandırılmamış  <br><br>İlke CSP 'si: [Doallowvpneş önbelleğe alma](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>Yerel sunucu önbelleği  
+
+|Ayar  |Windows sürümü  |Ayrıntılar  |
+|---------|-----------------|---------|
+|Önbellek sunucusu konak adları | 1809  |Cihazınız tarafından teslim iyileştirmesi için kullanılacak olan ağ önbelleği sunucularının IP adresini veya FQDN 'sini belirtin ve ardından bu girdiyi listeye eklemek için **Ekle** ' yi seçin.  <br><br>**Varsayılan**: Yapılandırılmamış  <br><br>İlke CSP 'si: [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[Gecikmeli ön yükleme önbelleği sunucusuna geri dönüş (saniye cinsinden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |Bir ön plan içerik indirmesi için bir önbellek sunucusundan bir için HTTP kaynağına geri dönüşü geciktirmek için saniye cinsinden bir zaman belirtin (0-2592000). Http 'den ön plan indirmeyi geciktir ilkesi ilk olarak uygulanır (önce eşlerden indirmeye izin vermek için). (0-2592000)    <br><br>**Varsayılan**: 0  <br><br>İlke CSP [Dodelaycacheserverfallbackönalanı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |
+|[Gecikmeli arka planda indirme önbelleği sunucusuna geri dönüş (saniye cinsinden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |Bir arka plan içerik indirmesi için bir önbellek sunucusundan HTTP kaynağına geri dönüşü geciktirmek için saniye cinsinden bir zaman belirtin (0-2592000). *Gecikmeli arka plan http indirmesi (saniye cinsinden)* yapılandırıldığında, bu ayar ilk olarak eşler tarafından indirilmelere izin ver için geçerlidir. (0-2592000)   <br><br>**Varsayılan**: 0 <br><br>İlke CSP 'si: [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467412"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756504"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 'da MacOS Endpoint Protection ayarları  
 
@@ -97,11 +97,18 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
     - **Kişisel kurtarma anahtarı döndürme** -bir cihaz için kişisel kurtarma anahtarının ne sıklıkta döndürüleceğini belirtin. **Yapılandırılmadı**' dan varsayılan değeri veya **1** ile **12** ay arasında bir değer seçebilirsiniz.  
 
   - **Oturumu kapatmak için istemi devre dışı bırak**  
-    Kullanıcıdan oturum açtıklarında dosya kasasını etkinleştirdikleri isteyen kullanıcıya sorma işlemini engelleyin.  Devre dışı olarak ayarlandığında, oturum kapatma istemi devre dışı bırakılır ve bunun yerine kullanıcıya oturum açtıklarında sorulur.  
+    Kullanıcıdan oturum açtıklarında dosya kasasını etkinleştirdikleri isteyen kullanıcıya sorma işlemini engelleyin.  Etkin olarak ayarlandığında, oturum kapatma istemi devre dışı bırakılır ve bunun yerine kullanıcıya oturum açtıklarında sorulur.  
     - **Yapılandırılmadı**  
-    - **Dıı**  
+    - **Etkinleştir** -oturum kapatma sırasında istemi devre dışı bırakın.
 
     **Varsayılan**: Yapılandırılmamış  
+
+     > [!IMPORTANT]  
+     > **Oturumu kapatma Isteminde devre dışı bırak** ayarı *Etkinleştir*olarak ayarlandığında bilinen bir sorun vardır. *Enable*olarak ayarlandığında, **atlamaya izin verilen sayısı** ayarı bir değere ayarlanmalıdır ve *yapılandırılmamış*olarak ayarlanmamalıdır. *Yapılandırılmadı*olarak ayarlanırsa, profil cihazda başarısız olur. Bu senaryoda cihaz, daha fazla ayrıntı olmadan bir **profil durumu Özeti** **hatası** olarak rapor ediyor.
+     > 
+     > **Oturumu kapatma sırasında Istemi devre dışı bırak** ayarı *Yapılandırılmadı*olarak ayarlandığında, **atlamaya izin verilen zaman sayısı** *yapılandırılmaz* veya bir değere sahip olabilir.  
+     > 
+     > Bu sorun, gelecekteki bir güncelleştirmede çözümlenir. 
 
   - **Atlayakaç kez izin verilir**  
   Kullanıcının oturum açması için dosya kasasından önce dosya kasasını etkinleştirmek üzere bir kullanıcının istekleri yoksaymasına izin sayısını belirleyin.  

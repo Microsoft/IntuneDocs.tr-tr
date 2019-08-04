@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047284"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756523"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune Azure konsolu ve eski Intune PC istemcisi
 
@@ -45,7 +45,7 @@ Azure AD Gruplarına geçiş nedeniyle, Silverlight konsolu gösterge panosu gö
 1. Bir görünüm seçin.
 2. **Filtreler** kutusuna filtrelemek istediğiniz grubun adını girin ve enter tuşuna basın. Bu liste görünümü belirli bu gruptaki cihazlar için filtre uygular.
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![Seçili olmayan filtre açılan girişi](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Intune PC Client'ı kullanarak Windows 7'yi yönetmeye devam etme
@@ -61,7 +61,7 @@ PC İstemcisi ve MDM özellikleri arasında ayrıntılı bir karşılaştırma i
 Intune PC İstemcisi ile Windows 10 cihazlarını yönetmekten MDM ile yönetime geçiş yapmak için şu adımları izleyin:
 
 1. Silverlight konsolunda, cihazın kaydını PC İstemcisi'nden kaldırmak için bir **Seçmeli silme** gerçekleştirin.
-  ![](media/intune-legacy-pc-client/image02.png)
+  ![' Cihazı seçmeli olarak sil ' radyo düğmesi seçili olan uyarı açılan penceresi](media/intune-legacy-pc-client/image02.png)
 2. [MDM (ve/veya Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll)'i kullanarak cihazı yeniden kaydedin. 
 
 ## <a name="next-steps"></a>Sonraki adımlar

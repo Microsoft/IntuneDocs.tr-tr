@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467458"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756539"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini kullanma  
 
@@ -67,6 +67,13 @@ Intune ile yönetebileceğiniz Filekasası ayarı hakkında ayrıntılı bilgi i
    Örneğin: Kayıp veya son döndürülen kurtarma anahtarını almak için herhangi bir cihazdan Intune Şirket Portalı Web sitesinde oturum açın. Portalda *cihazlar* ' a gidin ve filekasasının etkinleştirildiği cihazı seçin ve ardından *Kurtarma anahtarını al*' ı seçin. Geçerli kurtarma anahtarı görüntülenir.  
 
 6. Kalan [Filekasası ayarlarını](endpoint-protection-macos.md#filevault) iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.  
+
+   > [!IMPORTANT]  
+   > **Oturumu kapatma Isteminde devre dışı bırak** ayarı *Etkinleştir*olarak ayarlandığında bilinen bir sorun vardır. *Enable*olarak ayarlandığında, **atlamaya izin verilen sayısı** ayarı bir değere ayarlanmalıdır ve *yapılandırılmamış*olarak ayarlanmamalıdır. *Yapılandırılmadı*olarak ayarlanırsa, profil cihazda başarısız olur. Bu senaryoda cihaz, daha fazla ayrıntı olmadan bir **profil durumu Özeti** **hatası** olarak rapor ediyor.
+   > 
+   > **Oturumu kapatma sırasında Istemi devre dışı bırak** ayarı *Yapılandırılmadı*olarak ayarlandığında, **atlamaya izin verilen zaman sayısı** *yapılandırılmaz* veya bir değere sahip olabilir.  
+   > 
+   > Bu sorun, gelecekteki bir güncelleştirmede çözümlenir. 
 
 7. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.  
 

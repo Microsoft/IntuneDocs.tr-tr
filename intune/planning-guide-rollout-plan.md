@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 794a0b7e999c8f42d075da982c7246081ce9ed7d
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548407"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756385"
 ---
 # <a name="develop-a-rollout-plan"></a>Dağıtım planı geliştirme
 
@@ -93,16 +93,16 @@ Yukarıdaki Intune piyasaya çıkma planının kayıt yaklaşımları içerecek 
 
 | **Dağıtım aşaması** | **Temmuz** | **Ağustos** | **Eylül** | **Ekim** |
 |:---:|:---:|:---:|:---:|:---:|
-| Sınırlı Pilot |  |  |  |  |                                                         
+| Sınırlı Pilot |  |  |  |  |
 | Self servis | BT |  |  |  |
-| Genişletilmiş Pilot |  |  |  |  |                                                         
+| Genişletilmiş Pilot |  |  |  |  |
 | Self servis | BT |  |  |  |
 | Beyaz eldiven | BT Yöneticileri |  |  |  |
 | Üretim dağıtım aşaması 1 |  | Satış, Pazarlama |  |  |
 | Self servis |  | Satış ve Pazarlama |  |  |
 | Üretim dağıtım aşaması 2 |  |  | Perakende |  |
-| Self servis |  |  |  |  |
-| Üretim dağıtım aşaması 3 |  |  | Perakende |  |
+| Self servis |  |  | Perakende |  |
+| Üretim dağıtım aşaması 3 |  |  |  | Yöneticiler, ık, finans |
 | Self servis |  |  |  | İK, Finans |
 | Beyaz eldiven |  |  |  | Yöneticiler |
 
