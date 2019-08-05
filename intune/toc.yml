@@ -703,18 +703,20 @@
           href: tenant-status.md
         - name: Sorunları Gider
           items:
+            - name: Kullanıcıların sorunları gidermesine yardımcı olma
+              href: help-desk-operators.md
             - name: Kayıt sorunlarını giderme
               items:
                 - name: iOS cihaz kaydıyla ilgili sorunları giderme
                   href: troubleshoot-ios-enrollment-errors.md
                 - name: Windows cihaz kaydıyla ilgili sorunları giderme
                   href: troubleshoot-windows-enrollment-errors.md
-            - name: Kullanıcıların sorunları gidermesine yardımcı olma
-              href: help-desk-operators.md
             - name: Şirket kaynak erişimi sorunlarını giderme
               href: troubleshoot-company-resource-access-problems.md
             - name: Sorun giderme uygulaması kurulum sorunları
               href: troubleshoot-app-install.md
+            - name: Cihaz eylemlerinde sorun giderme
+              href: troubleshoot-device-actions.md
             - name: Mobil uygulama yönetimi sorunlarını giderme
               href: troubleshoot-mam.md
             - name: Intune etkinlikleri için denetleme günlükleri
