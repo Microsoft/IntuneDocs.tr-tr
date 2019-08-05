@@ -11,7 +11,7 @@ ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
 ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2019
+ms.lasthandoff: 08/05/2019
 ms.locfileid: "68775935"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar. 
@@ -37,7 +37,7 @@ Yaz 2020 ' de gelen işlevselliğin azalmasına engel olmak için şunları öne
 - Cihaz Yöneticisi yönetimine yeni cihaz eklemeyin.
 - Bir cihazın Android 10 güncelleştirmesi alması bekleniyorsa, cihazı Cihaz Yöneticisi yönetiminden Android kurumsal yönetim ve/veya uygulama koruma Ilkelerine geçirin.
 
-#### <a name="additional-information"></a>Ek bilgiler
+#### <a name="additional-information"></a>Ek bilgi
 - [Google 'ın cihaz yöneticisinden Android kuruluşa geçiş kılavuzu](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Google 'ın Cihaz Yöneticisi API 'sini kullanımdan kaldırma planına yönelik belgeleri](https://developers.google.com/android/work/device-admin-deprecation)
 
@@ -50,7 +50,7 @@ Telemetrimiz, 5.0.4269.0 ' den önceki Şirket Portalı sürüme sahip cihazlar�
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Google Play aracılığıyla şirket portalı 'nı güncelleştirmek üzere güncelleştirilmemiş son Android cihaz kullanıcılarına sorun. Bir kullanıcının şirket portalı uygulamasının otomatik olarak güncelleştirilmesini tutmamaları durumunda yardım masasına bildirin. Google 'ın FCM platformu ve değişikliği hakkında daha fazla bilgi için bağlantıya bakın.
 
-#### <a name="additional-information"></a>Ek bilgiler
+#### <a name="additional-information"></a>Ek bilgi
 https://firebase.google.com/docs/cloud-messaging/
 
 
@@ -63,7 +63,7 @@ Tam ekran deneyimi, portal.azure.com ve devicemanagement.microsoft.com ' de bir 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
 Herhangi bir eylemde bulunmanıza gerek yoktur, ancak gerekirse BT uzmanı kılavuzunuzu güncellemeyi göz önüne alabilirsiniz. Bu deneyim Azure portal Intune 'daki çeşitli dikey pencerelere yaptığı için belgelerimizi güncelleştireceğiz.
 
-#### <a name="additional-information"></a>Ek bilgiler 
+#### <a name="additional-information"></a>Ek bilgi 
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Değişiklik planı: Intune, Eylül ayının iOS 11 ve üstünü desteklemeye taşınıyor <!-- 4665342-->
@@ -95,7 +95,7 @@ Microsoft, üçüncü taraf ve iş kolu (LOB) uygulamalarınızı kontrol edin. 
 
 Ayrıca, bu değişikliği SDK desteği 'ne dahil etmek için geçerliyse belgelerinizi veya geliştirici kılavuzunuzu da güncelleştirmeniz gerekir.
 
-#### <a name="additional-information"></a>Ek bilgiler
+#### <a name="additional-information"></a>Ek bilgi
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Değişiklik planı: Intune 'da yeni Windows güncelleştirmeleri ayarları <!-- 4464404 -->
