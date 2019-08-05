@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
+ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883021"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68738286"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune’da iOS cihazları kaydetme
 
@@ -32,8 +32,10 @@ Bir Intune yöneticisi olarak, iOS cihazları için kaydı etkinleştirebilirsin
 
 ## <a name="prerequisites-for-ios-enrollment"></a>iOS kaydı için önkoşullar
 iOS cihazları etkinleştirmeden önce aşağıdaki adımları tamamlayın:
+- [Cihazınızın Apple cihaz kaydına uygun olduğundan emin olun](https://support.apple.com/en-us/HT204142#eligibility).
 - [Intune’u ayarlama](setup-steps.md) - Bu adımlar, Intune altyapınızı ayarlar. Cihaz kaydı özellikle [MDM yetkilinizi ayarlamanızı](mdm-authority-set.md) gerektirir.
 - [Bir Apple MDM Anında İletme sertifikası alma](apple-mdm-push-certificate-get.md) - Apple, iOS ve macOS cihazların yönetimini etkinleştirmek için bir sertifika gerektirir.
+
 
 ## <a name="user-owned-ios-devices-byod"></a>Kullanıcıya ait iOS cihazları (KCG)
 
