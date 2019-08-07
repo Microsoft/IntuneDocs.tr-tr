@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969e7bc4804e1f66230c76d742bec2c67c2fa006
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 95eede7c62e728aa0dbade4478eb87f31c252558
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670940"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833554"
 ---
 # <a name="in-development-for-microsoft-intune---august-2019"></a>Microsoft Intune için geliştirme sırasında-Ağustos 2019
 
@@ -73,7 +73,7 @@ Android iş profili cihazlarına kullanılabilir uygulama yüklemeleri için, uy
 ## <a name="device-configuration"></a>Cihaz yapılandırması
 
 ### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809----"></a>Denetlenmeyecek bazı iOS cihaz kısıtlamaları yalnızca iOS 13,0 sürümüyle denetimli olacak. <!-- 4867809  -->
-Bazı ayarlar, iOS 13,0 sürümü ile yalnızca denetimli cihazlara uygulanır. Bu ayarlar şunlardır:
+Bazı ayarlar, iOS 13,0 sürümünden itibaren denetimli cihazlara uygulanır. Bu ayarlar şunlardır:
 
 - Uygulama Mağazası, Belge Görüntüleme, Oyun
   - Uygulama mağazası
@@ -107,7 +107,7 @@ Geçerli ayarları görmek için [iOS cihaz ayarları ' na giderek Intune kullan
   - **Yerleşik uygulamalar** > **Arkadaşlarımı bul (yalnızca denetimli)** : Uygulamamı bul özelliğinde bu özelliği engelleyen yeni ayar. 
   -  > **Wi-Fi durumunda kablosuz değişiklik (yalnızca denetimli)** : Kullanıcıların cihazda Wi-Fi ' i açmasını veya kapatmasını engelleyen yeni ayar.
   - **Klavye ve sözlük** > **hızlı yolu (yalnızca denetimli)** : QuickPath özelliğini engelleyen yeni ayar.
-  - **Bulut ve depolama**: **Etkinlik devamlılığı** iletime olarak yeniden **adlandırıldı.**
+  - **Bulut ve depolama**: **Etkinlik devamlılığı** iletimeolarak yeniden adlandırıldı.
 
   Geçerli ayarları görmek için [iOS cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](device-restrictions-ios.md).
 
@@ -126,7 +126,7 @@ Geçerli ayarları görmek için [Intune 'Da MacOS cihaz özelliği ayarları](m
 - Mac OS
 
 ### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946----"></a>Çok uygulama modundaki Android kurumsal adanmış cihazlar için yeni özellikler <!-- 3755304 3041943 3041946  -->
-Android kurumsal adanmış cihazlarınızda bilgi noktası stili bir deneyimde özellikleri ve ayarları denetleyebileceksiniz. Bunu yapmak için **cihaz yapılandırma** > **profilleri** > **profil** > oluştur ' u seçin**platform için** **yalnızca cihaz sahibi > ve** profil türü için cihaz kısıtlamaları.
+Android kurumsal adanmış cihazlarınızda bilgi noktası stili bir deneyimde özellikleri ve ayarları denetleyebileceksiniz. Bunu yapmak için **cihaz yapılandırma** > **profilleri** >  **profil** > oluştur ' u seçin platform için **yalnızca cihaz sahibi > ve** profil türü için cihaz kısıtlamaları.
 
 Aşağıdaki özellikler eklenecek:
 - **Adanmış cihazlar** > **çoklu uygulama**: **Sanal giriş düğmesi** cihaza çekerek veya ekranda kayan, böylece kullanıcıların taşıyabilmesi için görüntülenebilir.

@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,35 +16,40 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec97819e49bdb1564b8dd75b23302608492e183
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 38b381fca17dec66303958ee04c018967ae0d999
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397354"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833540"
 ---
-# <a name="licenses-that-include-intune"></a>Intune barındıran lisanslar
+# <a name="microsoft-intune-licensing"></a>Microsoft Intune lisanslama
+Microsoft Intune, okullara ve küçük işletmelere yönelik kullanımı kolay yönetim deneyiminden, kurumsal müşterilere gereken daha gelişmiş işlevlere kadar farklı müşteri ihtiyaçları ve kuruluş boyutları için kullanılabilir. Microsoft Intune içeren çoğu lisans, abonelik etkin kaldığı sürece System Center Configuration Manager kullanma haklarını da verir. 
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+## <a name="microsoft-intune"></a>Microsoft Intune
+Intune aşağıdaki lisanslara dahildir:
 
-Aşağıdaki tablo, her bir lisansta hangi Intune sürümünün kullanılabilir olduğunu gösterir:
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Enterprise Mobility + Security E5
+- Enterprise Mobility + Security E3
+- Microsoft 365 İş
+- Microsoft 365 F1
 
-| Lisans | Geçerli Intune sürümü | Fiyat ve özellik karşılaştırması |
-|-----------------------------------------------------------------------|-------------------------------------------------------------|---|
-| Intune | Intune | [Daha fazla bilgi edinin](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E3 | Intune | [Daha fazla bilgi edinin](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E5 | Intune | [Daha fazla bilgi edinin](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Eğitim A1 | Intune için eğitim | [Daha fazla bilgi edinin](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Eğitim A3 | Intune için eğitim | [Daha fazla bilgi edinin](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Eğitim A5 | Intune için eğitim | [Daha fazla bilgi edinin](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 E3 | Intune | [Daha fazla bilgi edinin](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 E5 | Intune | [Daha fazla bilgi edinin](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 F1 | Intune | [Daha fazla bilgi edinin](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 İş | Intune | [Daha fazla bilgi edinin](https://www.microsoft.com/en-us/microsoft-365/business) |
 
-Intune lisansları bu listede yer almıyor.
 
-Bir kullanıcı, lisansın sağladığı herhangi bir özellikten doğrudan veya dolaylı olarak yararlanıyorsa o lisans gereklidir.
+## <a name="microsoft-intune-for-education"></a>Eğitim için Microsoft Intune
+Eğitim için Intune aşağıdaki lisanslara dahildir:
 
-Bir kullanıcıya lisans atamak için bkz. [Kullanıcı hesaplarınıza Intune lisansları atama makalesi](licenses-assign.md).
+- Microsoft 365 Eğitim A5
+- Microsoft 365 Eğitim A3
 
+## <a name="additional-information"></a>Ek bilgiler
+- Microsoft Intune bir Kullanıcı ve cihaz aboneliği, yukarıda listelenen paketler için tek başına olarak kullanılabilir.
+- Yalnızca Microsoft Intune cihaz aboneliği, Kullanıcı benzeşimi özelliklerinin kullanıldığı bilgi noktası türü senaryolar için kullanılabilir.
+- Bir [MICROSOFT API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)üzerinden Microsoft Intune hizmetine erişim de dahil olmak üzere, bir kullanıcı veya cihazın Microsoft Intune hizmetten doğrudan veya dolaylı olarak avantajları durumunda uygun Microsoft Intune lisansı gerekir.
+- Intune, önceki tablolarda olmayan lisanslara dahil değildir.
+
+Ürün sürümleri, ürün lisanslama güncelleştirmeleri, toplu lisanslama planları ve belirli kullanım durumlarınızla ilgili diğer bilgilerle ilgili en son bilgiler için [Microsoft lisanslama](https://www.microsoft.com/licensing/default) sayfasını ziyaret edin.  
+
+Kullanıcı ve cihaz lisanslarının hizmetlere erişimi nasıl etkilediği ve bir kullanıcıya lisans atama hakkında daha fazla bilgi için, Kullanıcı [hesaplarınıza Intune lisansları atama makalesine](licenses-assign.md)bakın.

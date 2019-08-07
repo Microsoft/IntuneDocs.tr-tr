@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884872"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783251"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -116,7 +116,7 @@ Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına, bul
 
 ## <a name="intune-tenant-location"></a>Intune kiracı konumu
 
-Kuruluşunuz küresel olarak faaliyet gösteriyorsa, hizmete abone olurken kiracınızın nerede duracağını planladığınızdan emin olun. Ülke, bir Intune aboneliğine ilk kez kaydolduğunuzda tanımlanır ve aşağıda listelenen dünya genelindeki bölgelerle eşlenir:
+Kuruluşunuz küresel olarak faaliyet gösteriyorsa, hizmete abone olurken kiracınızın nerede duracağını planladığınızdan emin olun. Ülke/bölge, bir Intune aboneliğine ilk kez kaydolduğunuzda tanımlanır ve aşağıda listelenen dünyanın dört bir yanındaki ülkelere/bölgelere eşlenir:
 
 - Kuzey Amerika
 
@@ -125,7 +125,7 @@ Kuruluşunuz küresel olarak faaliyet gösteriyorsa, hizmete abone olurken kirac
 - Asya ve Pasifik
 
 >[!IMPORTANT]
-> Ülke ve kiracı konumunu sonradan değiştirmek mümkün değildir.
+> Ülke/bölge ve kiracı konumunu daha sonra değiştirmek mümkün değildir.
 
 ## <a name="external-dependencies"></a>Dış bağımlılıklar
 

@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511919"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783031"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Kuruluş tarafından sağlanan macOS cihazınızı yönetime kaydedin
 
@@ -40,10 +40,10 @@ Kuruluşunuz cihazlarını *Apple Aygıt Kayıt Programı* (DEP) adı verilen bi
 macOS cihazınızı yönetime kaydetmek için aşağıdaki adımları tamamlayın. Kuruluş tarafından sağlanan bir cihaz yerine kendi cihazınızı kullanıyorsanız, [kişisel cihazlara ve kendi cihazını getir kapsamındaki cihazlara](enroll-your-device-in-intune-macos-cp.md) yönelik adımları izleyin.  
 
 1. macOS cihazınızın güç düğmesini açın. 
-2. Ülkenizi seçin ve **Devam**'a tıklayın.  
+2. Ülkenizi/bölgenizi seçin ve **devam**' a tıklayın.  
 
    ![Aralarından seçim yapılacak dil listesinin gösterildiği macOS cihazı Kurulum Yardımcısı Hoş Geldiniz ekranının görüntüsü.](./media/macos-dep-welcome-1808.png)   
-3. Klavye düzenini seçin. Seçtiğiniz ülke temelinde listede bir veya birden çok seçenek gösterilir. Hangi ülkeyi seçmiş olursanız olun, tüm düzen seçeneklerini görmek için **Tümünü Göster**'e tıklayın. İşiniz bittiğinde **Devam**'a tıklayın.  
+3. Klavye düzenini seçin. Listede, seçtiğiniz ülkeyi/bölgenizi temel alan bir veya daha fazla seçenek gösterilmektedir. Seçtiğiniz ülke/bölgeinizden bağımsız olarak tüm düzen seçeneklerini görmek için **Tümünü göster**' e tıklayın. İşiniz bittiğinde **Devam**'a tıklayın.  
 
    ![Aralarından seçim yapılacak listenin, işaretsiz Tümünü Göster seçeneğinin ve Geri ile Devam düğmesinin gösterildiği macOS cihazı Kurulum Yardımcısı Klayve Düzeni ekranının görüntüsü.](./media/macos-dep-keyboard-1808.png)  
 4. Wi-Fi ağınıza seçin. Kuruluma devam etmek için İnternet bağlantınız olmalıdır. Ağınızı görmüyorsanız veya kablolu ağ üzerinden bağlanmanız gerekiyorsa, **Diğer Ağ Seçenekleri**'ne tıklayın. İşiniz bittiğinde **Devam**'a tıklayın.  

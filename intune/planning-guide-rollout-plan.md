@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 794a0b7e999c8f42d075da982c7246081ce9ed7d
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 4a1ac47fd512323ce809d4ee13c5e98f563ce51c
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756385"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783113"
 ---
 # <a name="develop-a-rollout-plan"></a>Dağıtım planı geliştirme
 
@@ -55,7 +55,7 @@ Başarılı bir pilot aşamasının ardından, kuruluşunuzun geri kalan gruplar
 
 - **Departmanlar** <br/>Her departman bir piyasaya çıkma aşaması olabilir. Tüm departmanı bir seferde hedeflersiniz. Bu piyasaya çıkma türünde, her departmandaki kullanıcılar büyük olasılıkla mobil cihazı aynı şekilde kullanır ve aynı uygulamalara erişir. Kullanıcılar, muhtemelen aynı türde ilkelere sahip olacaktır.
 
-- **Coğrafya** <br/>Bu yaklaşım, aynı kıta, ülke, bölge ya da şirket binasında bulunan tüm kullanıcılara dağıtma gibi belirli bir coğrafi konuma dayalıdır. Bu tür aşamalı dağıtım, kullanıcıların belirli konumuna odaklanma olanağı sağlar. Bu, Intune’un aynı anda dağıtıldığı konum sayısının azalmasıyla daha fazla [beyaz eldiven](#user-assisted-enrollment) yaklaşımına olanak tanıyabilir. Farklı departmanların veya kullanım örneklerinin aynı konumda olma olasılığından dolayı farklı kullanım örnekleri aynı anda dağıtılabilir.
+- **Coğrafya** <br/>Bu yaklaşımda, aynı kıta, ülke/bölge veya aynı şirketin Binası gibi belirli bir Coğrafya 'daki tüm kullanıcılara dağıtırsınız. Bu tür aşamalı dağıtım, kullanıcıların belirli konumuna odaklanma olanağı sağlar. Bu, Intune’un aynı anda dağıtıldığı konum sayısının azalmasıyla daha fazla [beyaz eldiven](#user-assisted-enrollment) yaklaşımına olanak tanıyabilir. Farklı departmanların veya kullanım örneklerinin aynı konumda olma olasılığından dolayı farklı kullanım örnekleri aynı anda dağıtılabilir.
 
 - **Platform** <br/>Bu dağıtım türü aynı anda benzer platformları dağıtmaya dayalıdır. Örneğin ilk ay tüm iOS cihazları, ardından Android ve daha sonra Windows dağıtılabilir. Bu tür aşamalı dağıtımda yardım masasının aynı anda yalnızca tek bir platformu desteklemesi yeterli olacağından, yardım masası desteğini basitleştirmeye yardımcı olur.
 

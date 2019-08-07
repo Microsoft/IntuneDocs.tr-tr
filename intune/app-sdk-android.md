@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f2015bb6997861d8856c7fe89662c21be105f5b
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482944"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783206"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -552,7 +552,7 @@ SaveLocation service, String username);
 - `SaveLocation.LOCAL`
 - `SaveLocation.OTHER`
 
-, `username` Kaydedilmekte olan bulut hizmeti ile ilişkili UPN/Kullanıcı adı/e-posta*olmalıdır (Bu* , kaydedilmekte olan kullanıcıyla aynı olması gerekmez). AAD UPN ile bulut hizmeti Kullanıcı adı arasında bir eşleme yoksa veya Kullanıcı adı bilinmiyorsa null değerini kullanın.
+, `username` Kaydedilmekte olan bulut hizmeti ile ilişkili UPN/Kullanıcı adı/e-posta olmalıdır (Bu , kaydedilmekte olan kullanıcıyla aynı olması gerekmez). AAD UPN ile bulut hizmeti Kullanıcı adı arasında bir eşleme yoksa veya Kullanıcı adı bilinmiyorsa null değerini kullanın.
 
 Kullanıcının ilkesinin çeşitli konumlara veri kaydetmesine izin verip vermediğini belirlemeye yönelik önceki yöntem, aynı **AppPolicy** sınıfındaki `getIsSaveToPersonalAllowed()` yöntemiydi. Bu işlev artık **kullanım dışı bırakılmıştır** ve kullanılmamalıdır; aşağıdaki çağrı `getIsSaveToPersonalAllowed()` ile eşdeğerdir:
 
@@ -636,7 +636,7 @@ Aşağıdaki bildirimler uygulamaya gönderilir ve bazıları uygulama katılım
 > [!NOTE]
 > Bir uygulamanın hiçbir zaman hem `WIPE_USER_DATA` hem de `WIPE_USER_AUXILIARY_DATA` bildirimleri için kaydı olmamalıdır.
 
-### <a name="managementremoved"></a>MANAGEMENT_REMOVED
+### <a name="management_removed"></a>MANAGEMENT_REMOVED
 
 Bildirim `MANAGEMENT_REMOVED` , daha önce ilkeyle yönetilen bir kullanıcının artık Intune MAM ilkesi tarafından yönetilmeyeceğini gösterir. Bu, Kullanıcı verilerini silme veya Kullanıcı oturumu kapatma gerektirmez (bir temizleme gerekliyse `WIPE_USER_DATA` bir bildirim gönderilir). Birçok uygulamanın bu bildirimi hiç işlemesi gerekmez, ancak kullanan `MAMDataProtectionManager` uygulamalar [Bu bildirimin özel durumunu göz önünde](#data-protection)tutabilmelidir.
 
@@ -684,7 +684,7 @@ Uygulamanızı yapılandırmak ve uygun kimlik doğrulamasını sağlamak için 
 
 * **Skipbroker** varsayılan adal SSO katılım davranışını geçersiz kılmak için kullanılır. SkipBroker yalnızca bir ClientID belirten **ve** aracılı kimlik doğrulaması/CIHAZ genelinde SSO 'yu desteklemeyen uygulamalar için belirtilmelidir. Bu durumda, "true" olarak ayarlanmalıdır. Çoğu uygulama SkipBroker parametresini ayarlanmamalıdır.
 
-  * Bir SkipBroker değeri belirtmek için bildirimde bir **ClientID belirtilmelidir** .
+  * Bir SkipBroker değeri belirtmek için bildirimde bir ClientID belirtilmelidir.
 
   * Bir ClientID belirtildiğinde, varsayılan değer "false" dır.
 
@@ -695,7 +695,7 @@ Uygulamanızı yapılandırmak ve uygun kimlik doğrulamasını sağlamak için 
 Aşağıda, uygulamanın ADAL ile yapılandırılabilmesinin yaygın yolları açıklanmıştır. Uygulamanızın yapılandırmasını bulun ve ADAL meta veri parametrelerini (yukarıda açıklanan parametreler) gerekli değerlere ayarladığınızdan emin olun. Her durumda, varsayılan olmayan ortamlar için isteniyorsa, yetkili belirlenebilir. Belirtilmemişse, genel üretim AAD yetkilisi kullanılacaktır.
 
 #### <a name="1-app-does-not-integrate-adal"></a>1. Uygulama ADAL ile tümleştirilmezse
-ADAL meta **verileri** bildirimde bulunmamalıdır.
+ADAL meta verileri bildirimde bulunmamalıdır.
 
 #### <a name="2-app-integrates-adal"></a>2. Uygulama ADAL ile tümleştirilirse
 
@@ -1218,7 +1218,7 @@ Geliştiriciler uygulama kullanıcısının kimliğini azalan öncelik sırasın
   2. `Context`(genellikle `Activity`) düzeyi
   3. İşlem düzeyi
 
-İş parçacığı düzeyinde ayarlanmış bir kimlik, `Context` düzeyinde ayarlanmış bir kimliğin; bağlam düzeyinde ayarlanmış bir kimlikse işlem düzeyinde ayarlanmış bir kimliğin yerini alır. İçindeki bir kimlik kümesi `Context` yalnızca ilgili ilişkili senaryolarda kullanılır. Örneğin, dosya GÇ işlemlerinin ilişkili `Context`bir dosyası yoktur. En yaygın olarak, uygulamalar bir `Context` `Activity`üzerinde kimlik ayarlar. Kimlik aynı  kimliğe ayarlanmadığı takdirde, `Activity` bir uygulamanın yönetilen kimliğin verilerini görüntülemesi gerekir. Genel olarak işlem düzeyi kimliği yalnızca, uygulama belirli bir anda tüm iş parçacıklarında sadece tek bir kullanıcıyla çalışıyorsa kullanışlıdır. Pek çok uygulamanın bunu kullanmaya ihtiyacı yoktur.
+İş parçacığı düzeyinde ayarlanmış bir kimlik, `Context` düzeyinde ayarlanmış bir kimliğin; bağlam düzeyinde ayarlanmış bir kimlikse işlem düzeyinde ayarlanmış bir kimliğin yerini alır. İçindeki bir kimlik kümesi `Context` yalnızca ilgili ilişkili senaryolarda kullanılır. Örneğin, dosya GÇ işlemlerinin ilişkili `Context`bir dosyası yoktur. En yaygın olarak, uygulamalar bir `Context` `Activity`üzerinde kimlik ayarlar. Kimlik aynı kimliğe ayarlanmadığı takdirde, `Activity` bir uygulamanın yönetilen kimliğin verilerini görüntülemesi gerekir. Genel olarak işlem düzeyi kimliği yalnızca, uygulama belirli bir anda tüm iş parçacıklarında sadece tek bir kullanıcıyla çalışıyorsa kullanışlıdır. Pek çok uygulamanın bunu kullanmaya ihtiyacı yoktur.
 
 Uygulamanız sistem hizmetlerini almak için `Application` bağlamını kullanıyorsa, iş parçacığı veya işlem kimliğinin ayarlandığından veya `Application` uygulamanızın bağlamında Kullanıcı arabirimi kimliğini ayarlamış olduğunuzdan emin olun.
 
@@ -1370,7 +1370,7 @@ Uygulamanın kimlik ayarlayabilme özelliğine ek olarak, bir iş parçacığı 
 
   * Bir kimlik değişimi engellenirse, sonuç `Receive` paylaşım ayarları veri girişini yasakladığında olan ile aynıdır.
 
-  * Bir Hizmet ana iş parçacığı üzerinde çalışıyorsa, `reportIdentitySwitchResult` öğesinin zaman uyumlu olarak çağrılması **gerekir**, yoksa UI iş parçacığı kapanır.
+  * Ana iş parçacığında bir hizmet çalışıyorsa, `reportIdentitySwitchResult` zaman uyumlu olarak çağrılmalıdır veya UI iş parçacığı yanıt vermeyi durdurmalıdır.
 
   * Oluşturma **`Activity`** için, `onMAMIdentitySwitchRequired` daha önce `onMAMCreate`çağrılacaktır. Kimlik anahtarına izin verilip verilmeyeceğine karar vermek için uygulamanın UI göstermesi gerekiyorsa, bu UI *farklı* bir etkinlik kullanılarak gösterilmelidir.
 
@@ -1507,7 +1507,7 @@ MAM, bir `Activity` öğesinde okunan dosyalar ve görüntülenen veriler arası
 * Uygulama açılır ve dosyayı işler.
   
 #### <a name="single-identity-to-multi-identity-transition"></a>Tek kimlikle çoklu kimlik geçişi
-Daha önce tek kimlik Intune tümleştirmesiyle yayınlanan bir uygulama, daha sonra çok kimliği tümleştirirse, daha önce yüklenen uygulamalar bir geçişe (kullanıcıya görünmez, ilişkili bir UX yoktur) sahip olur. Uygulamanın bu geçişi işlemek  için açık bir şey yapması gerekmez. Geçişten önce oluşturulan tüm dosyalar yönetilmeye devam edecektir (Bu nedenle, şifreleme ilkesi açık ise şifreli kalacak). İsterseniz, yükseltmeyi algılayabilir ve belirli dosya veya dizinleri boş `MAMFileProtectionManager.protect` kimlikle etiketlemek için kullanabilirsiniz (şifrelendiklerinde şifrelemeyi kaldırır).
+Daha önce tek kimlik Intune tümleştirmesiyle yayınlanan bir uygulama, daha sonra çok kimliği tümleştirirse, daha önce yüklenen uygulamalar bir geçişe (kullanıcıya görünmez, ilişkili bir UX yoktur) sahip olur. Uygulamanın bu geçişi işlemek için açık bir şey yapması gerekmez. Geçişten önce oluşturulan tüm dosyalar yönetilmeye devam edecektir (Bu nedenle, şifreleme ilkesi açık ise şifreli kalacak). İsterseniz, yükseltmeyi algılayabilir ve belirli dosya veya dizinleri boş `MAMFileProtectionManager.protect` kimlikle etiketlemek için kullanabilirsiniz (şifrelendiklerinde şifrelemeyi kaldırır).
 
 #### <a name="offline-scenarios"></a>Çevrimdışı Senaryolar
 

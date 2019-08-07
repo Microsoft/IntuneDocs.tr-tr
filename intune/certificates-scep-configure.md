@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 47c2e509c9eb032dae67dbb5a44839f88fa5de4b
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467492"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783070"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune ile SCEP sertifikalarını yapılandırma ve kullanma
 
@@ -225,7 +225,7 @@ Bu adımda şunları yapacaksınız:
 3. NDES sunucusu çok uzun URL’ler (sorgular) aldığından, iki kayıt defteri girdisi eklemeniz gerekir:
 
 
-   |                        Location                        |      Value      | Type  |      Data       |
+   |                        Location                        |      Değer      | Type  |      Data       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (ondalık) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (ondalık) |
@@ -410,7 +410,7 @@ Hizmetin çalıştığını doğrulamak için bir tarayıcı açın ve aşağıd
 
             **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
 
-            Bu örnekte, CN ve E değişkenlerinin yanı sıra Kuruluş Birimi, Kuruluş, Konum, Eyalet ve Ülke değerleri için dizeler kullanan bir konu adı biçimi oluşturdunuz. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), bu işlevi ve desteklenen dizelerini açıklar.
+            Bu örnekte, CN ve E değişkenlerinin yanı sıra kuruluş birimi, kuruluş, konum, durum ve ülke/bölge değerleri için dizeler kullanan bir konu adı biçimi oluşturdunuz. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), bu işlevi ve desteklenen dizelerini açıklar.
 
         **Cihaz sertifika türü**  
 

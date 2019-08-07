@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8b39c9f4f875ca458817940819716e1188d36eef
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882239"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783264"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Intune cihazlarını uzaktan yönetmek için TeamViewer kullanma
 
@@ -28,7 +28,10 @@ Intune tarafından yönetilen cihazlar [TeamViewer](https://www.teamviewer.com) 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Desteklenen bir cihaz kullanın. Intune ile yönetilen Android, Windows, iOS ve macOS cihazlar, uzaktan yönetimi destekler. TeamViewer Windows Holographic (HoloLens), Windows Team (Surface Hub) veya Windows 10 S. desteklemeyebilir. Desteklenebilirlik için bkz. tüm güncelleştirmeler için [TeamViewer](https://www.teamviewer.com).
+- Desteklenen bir cihaz kullanın. Intune tarafından yönetilen Android Cihaz Yöneticisi, Android Iş profili, Windows, iOS ve macOS cihazları uzaktan yönetimi destekler. TeamViewer Windows Holographic (HoloLens), Windows Team (Surface Hub) veya Windows 10 S. desteklemeyebilir. Desteklenebilirlik için bkz. tüm güncelleştirmeler için [TeamViewer](https://www.teamviewer.com).
+
+> [!NOTE]
+> Android adanmış ve tam olarak yönetilen desteklenmez.
 
 - Azure portalındaki Intune yöneticisi, aşağıdaki [Intune rollerine](role-based-access-control.md) sahip olmalıdır:  
 
