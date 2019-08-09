@@ -39,8 +39,8 @@
 ### İşletim sistemi soruları
 #### [Cihazınızı güncelleştirme](you-need-to-update-your-android-device.md)
 #### [Desteklenmeyen sürüm](your-android-version-isnt-yet-supported.md)
-#### [Cihazınıza kök erişim izni verilmiş ve bağlanamıyorsunuz](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [Gerekli bir sertifika eksik](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Cihaza kök erişim izni verildiğinden bağlanılamıyor](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Gerekli bir sertifika eksik](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [Bilinmeyen kaynakları kapatma](you-need-to-turn-off-unknown-sources-android.md)
 #### [USB hata ayıklamasını kapatma](you-need-to-turn-off-usb-debugging-android.md)
 #### [Güvenlik tehditleri taramasını açma](you-need-to-turn-on-scanning-for-security-threats-android.md)
