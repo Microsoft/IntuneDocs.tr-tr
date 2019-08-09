@@ -16,38 +16,46 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d207d1ac51da5b34f48aeffd83791bdbb40bf971
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: a06b40adee9c2eb66c4eafd44ce9b798a95df39f
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494570"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862359"
 ---
-# <a name="plan-communications"></a>İletişimi planlama 
-İletişim planı, bir Intune geçişi için önemli bir öğedir. Son kullanıcıları eğitmek size yardımcı olması için aşağıdaki araçları ve şablonları sağlanır. Intune benimseme Seti, e-posta şablonları, bir Intune kayıt kılavuzunu ve son kullanıcı kaydı için yol gösterici videoları bağlantılar içerir.  
+# <a name="plan-communications"></a>İletişimi planlama
 
-İndirin:  [Intune benimseme Seti](https://aka.ms/IntuneAdoptionKit)
+İletişim planı, bir Intune geçişinin anahtar öğesidir. Son kullanıcıları eğitime konusunda size yardımcı olmak için aşağıdaki araçlar ve şablonlar sunulmaktadır. Intune benimseme seti, e-posta şablonları, bir Intune Kayıt Kılavuzu ve son kullanıcı kaydı için eğitici videoların bağlantılarını içerir.  
 
-## <a name="email-templates"></a>E-posta Şablonları 
-Aşağıdaki e-posta iletişim planını öneririz. İletişim planınıza uyarlamak şablonlar sağladık:
-- **E-posta #1**: Avantajları, beklentileri ve zaman çizelgesini açıklayın. Intune tarafından yönetilen cihazlarda erişim izni verilecek diğer yeni hizmetleri göstermek için bu fırsattan yararlanın. 
+İndirme  [Intune benimseme seti](https://aka.ms/IntuneAdoptionKit)
 
-- **E-posta #2**: Hizmetleri artık Intune üzerinden erişime hazır olduğunu bildirin. Kullanıcılara şimdi kaydolmalarını söyleyin.  Erişimleri etkilenmeden önce kullanıcılara zaman çizelgesi verin. Kullanıcılara geçişin avantajlarını ve stratejik nedenlerini hatırlatın.
-Belirli bir bir süre sonra koşullu erişim ilkeleri aracılığıyla uyumluluğu zorlamaya ve bunu ölçüt olarak Kurumsal verilere erişmek için açıklandığı şekilde kullanmaya [son kullanıcı benimsemesi koşullu erişimle](migration-guide-drive-adoption.md).
+## <a name="email-templates"></a>E-posta Şablonları
 
-## <a name="intune-enrollment-guide"></a>Intune kayıt Kılavuzu 
-Bu PDF ek, kullanıcılarınıza sağlanan-olan veya Word sürüme iç kaynaklarınızı ekleyin ve kişi bilgilerini özelleştirebilirsiniz.
+Aşağıdaki e-posta iletişim planını öneririz. İletişim planınız için uyarlamanız için şablonlar sağladık:
+
+- **E-posta #1**: Avantajları, beklentileri ve zamanlamayı açıklayın. Intune tarafından yönetilen cihazlarda erişim izni verilecek diğer yeni hizmetleri göstermek için bu fırsattan yararlanın.
+
+- **E-posta #2**: Hizmetlerin artık Intune üzerinden erişim için hazır olduğunu duyurun. Kullanıcılara şimdi kaydolmalarını söyleyin.  Kullanıcılara, erişimleri etkilenmeden önce bir zaman çizelgesi verin. Kullanıcılara geçişin avantajlarını ve stratejik nedenlerini hatırlatın.
+Belirli bir süre geçtikten sonra koşullu erişim ilkeleri aracılığıyla uyumluluğu zorunlu hale başlatabilir ve [koşullu erişimle Son Kullanıcı benimseme](migration-guide-drive-adoption.md)bölümünde açıklandığı gibi bunu kurumsal verilere erişmek için ölçüt olarak kullanabilirsiniz.
+
+## <a name="intune-enrollment-guide"></a>Intune Kayıt Kılavuzu
+
+Bu PDF eki kullanıcılarınıza olduğu gibi sağlanmış olabilir veya Word sürümünü iç kaynaklarınızı ve iletişim bilgilerini içerecek şekilde özelleştirebilirsiniz.
 
 ## <a name="instructional-videos"></a>Eğitici videolar
-Kullanıcılarınızın cihazlarını Intune'a kaydetme kolayca yardımcı olmak için kısa, adım adım video oluşturduk.
+
+Kullanıcılarınızın cihazlarını Intune 'A kolayca kaydetmelerini sağlamak için kısa, adım adım videolar oluşturduk.
+
 - [Android cihazınızı kaydetme](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
-- [Android iş profili Cihazınızı kaydetme](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
+- [Android Iş profili cihazınızı kaydetme](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
 - [iOS cihazınızı kaydetme](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [macOS cihazınızı kaydetme](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
-- [Windows kaydetme](https://www.youtube.com/watch?v=TKQxEckBHiE)
+- [Windows hesabınızı kaydetme](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Intune, kullanıcılarınızı cihaz kaydına teşvik etmek için kullanabileceğiniz ek kaynakları sahiptir:
-- [Son kullanıcılarınızı Microsoft Intune hakkında eğitme](https://docs.microsoft.com/intune/end-user-educate) başlığında, mobil işletim sistemi platformuna göre kayıt adımları ayrıntılı olarak açıklanmıştır. 
-- [BT yöneticileri için Intune cihaz kaydı](https://docs.microsoft.com/intune/device-enrollment) ıntune'da Android, iOS ve Mac cihazların nasıl kaydedileceğini açıklar.
-- Paylaşım [Şirket portalı uygulama URL'si](http://go.microsoft.com/fwlink/?LinkID=396941) Android, iOS ve Windows kullanıcılarınız ile. Bu URL, Android, iOS ve Windows cihazları listeleme uygun Şirket portalı uygulamasını yeniden yönlendirir.
+
+Intune, kullanıcılarınız ile cihaz kaydını yükseltmek için kullanabileceğiniz ek kaynaklara sahiptir:
+
+- [Son kullanıcılarınızı Microsoft Intune hakkında eğitme](https://docs.microsoft.com/intune/end-user-educate) başlığında, mobil işletim sistemi platformuna göre kayıt adımları ayrıntılı olarak açıklanmıştır.
+- [BT yöneticileri Için Intune cihaz kaydı](https://docs.microsoft.com/intune/device-enrollment) , Intune 'da Android, IOS ve Mac cihazlarının nasıl kaydedileceğini açıklar.
+- [Şirket Portalı Uygulama URL](http://go.microsoft.com/fwlink/?LinkID=396941) 'sini Android, IOS ve Windows kullanıcılarınızla paylaşabilirsiniz. Bu URL, Android, iOS ve Windows cihazlarında uygun Şirket Portalı Uygulama listesine yeniden yönlendirir.

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735749"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862313"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Kurumsal cihazınızı Microsoft Intune uygulamasına kaydetme
 
@@ -50,9 +50,9 @@ Cihazınızı ayarlamak ve kaydetmek için aşağıdaki adımları uygulayın.
 
      Başka bir yöntem kullanmanız istenirse adım 3 ' e geçin.    
 
-1. Wi-Fi ' e bağlanın ve **İleri**' ye dokunun. Kayıt yönteminiz ile eşleşen adımı izleyin. 
+3. Wi-Fi ' e bağlanın ve **İleri**' ye dokunun. Kayıt yönteminiz ile eşleşen adımı izleyin. 
 
-    * Simgesinde Google oturum açma ekranına geldiğinizde, [belirteç kaydı](#token-enrollment)'ndaki adımları doldurun.    
+    * Simgesinde Google oturum açma ekranına geldiğinizde, [belirteç kaydı](#token-enrollment)'ndaki adımları doldurun.  
     * Google sıfırı Touch: Wi-Fi ' a Bağlandıktan sonra cihazınız kuruluşunuz tarafından tanınacaktır. 4\. adıma geçin ve kurulum tamamlanana kadar ekrandaki istemleri izleyin.    
  
        ![Google of Touch kullanıyorsanız gördüğünüz Google terimleri ekranının örnek görüntüsü, & devam et ' i vurgulama düğmesi.](./media/google-zero-touch-intune-app-01.png)   
@@ -78,21 +78,19 @@ Cihazınızı ayarlamak ve kaydetmek için aşağıdaki adımları uygulayın.
 
    ![İş telefonunuzu ayarlama ekranınızın örnek görüntüsü, Install düðmesini vurgulaması.](./media/fully-managed-intune-app-11.png)   
 
-10. Cihazınızın hazırlanabileceği iletiyi aldığınızda **bitti**' ye dokunun. 
+10. Microsoft Intune uygulamasını açmak ve cihazınızı kaydetmek için **Başlat** ' a dokunun. 
 
-11. Uygulamalarınıza gidin ve Microsoft Intune uygulamasını açın. **Oturum aç '** ı seçin. 
+    ![İş telefonunuzu ayarlama ekranınızın örnek görüntüsü, Başlat düğmesini vurguladır.](./media/fully-managed-intune-app-17.png)   
 
-12. **Kurulum erişimi** ekranında, bekleyen görevlerin bir listesini görürsünüz. **Devam**' a dokunun.  
+11. **Oturum aç** ' a dokunun ve ardından kayda başlamak için **İleri** ' ye dokunun. Kaydın tamamlandığını belirten iletiyi gördüğünüzde **bitti**' ye dokunun.  
 
-       ![Microsoft Intune uygulamasının örnek görüntüsü, erişim ekranını ayarlama, bekleyen görevleri gösterir.](./media/fully-managed-intune-app-14.png)   
+    ![Erişim ayarlama, cihaz ekranınızı kaydetme, bitti düğmesi gibi örnek görüntü.](./media/fully-managed-intune-app-19.png)   
 
-13. Cihaz kaydı tamamlandığında **devam**' a dokunun. Microsoft Intune ek cihaz ayarlarını güncelleştirmenizi isteyebilir.   
+10. Cihazınızın hazırlanabileceği iletiyi gördüğünüzde **bitti**' ye dokunun.  
 
-       ![Microsoft Intune uygulamasının örnek görüntüsü, cihaz ayarları güncelleştirme ekranı.](./media/fully-managed-intune-app-15-2.png)   
+    ![İş telefonunuzu ayarlama ekranınızın örnek görüntüsü, bitti düğmesini vurgulaması.](./media/fully-managed-intune-app-18.png)   
 
-14. Listedeki tüm öğeler yeşil bir daire gösterayarlandığında Kurulum tamamlanmıştır. Artık şirket kaynaklarına erişebilirsiniz.  
-
-       ![Microsoft Intune uygulamasının örnek görüntüsü, erişim ekranını ayarlama ve Tamamlanan görevleri gösterme.](./media/fully-managed-intune-app-16.png)   
+Kuruluşunuzun kaynaklarına erişirken sorun yaşıyorsanız, cihazınızda ek ayarları güncelleştirmeniz gerekebilir. Gerekli güncelleştirmeleri denetlemek için Microsoft Intune uygulamasında oturum açın.   
 
 
 ## <a name="qr-code-enrollment"></a>QR kod kaydı  
@@ -118,11 +116,7 @@ Bu bölümde, şirketinizin sunduğu belirteci girersiniz. İşiniz bittiğinde 
 
 3. **Bu cihazı kaydet** ekranında **İleri**' yi seçin.  
 
-   ![Bu cihazı kaydetme ekranının örnek görüntüsü. QR kodunun bir resmini gösterir; Ileri vurgu düğmesi.](./media/token-intune-app-02.png)  
-
-4. **Kodu girin**' i seçin.
-
-   ![Etkin bir QR kodu tarayıcısının örnek ekran görüntüsü. Vurgular kod girin düğmesi.](./media/token-intune-app-03.png)  
+4. **Kodu girin**' i seçin.  
 
 5. **Tarama veya kod girme** ekranında, kuruluşunuzun size verdiği kodu yazın.  Ardından **İleri**'ye tıklayın.  
 
