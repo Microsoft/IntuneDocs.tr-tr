@@ -33,7 +33,7 @@ Bu taban çizgisi fiziksel cihazlar için iyileştirilmiştir ve şu anda sanal 
 
 
 > [!NOTE]  
-> ATP taban çizgisi ayarları önizlemededir . Önizleme aşamasında, kullanılabilir ayarların listesi ve bu içeriğin bu ayarları sunduğu sıra, portalda kullanılabilir olanlarla eşleşmeyebilir.  
+> ATP taban çizgisi ayarları önizlemededir. Önizleme aşamasında, kullanılabilir ayarların listesi ve bu içeriğin bu ayarları sunduğu sıra, portalda kullanılabilir olanlarla eşleşmeyebilir.  
 >
 > Taban çizgisi ayarları önizlemeden sonra bu içerik, Intune 'un desteklediği güvenlik temeli ayarlarının geçerli bir listesini yansıtacak şekilde güncelleştirilir.
 
@@ -466,7 +466,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
 ## <a name="windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı
 Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) bölümüne bakın.
 
-- **Silinmeden önce güvenlik ilişkilendirmesi boşta kalma süresi***mdmstore/Global/saıdsaati*  -    
+- **Silinmeden önce güvenlik ilişkilendirmesi boşta kalma süresi** *mdmstore/Global/saıdsaati*  -    
   Güvenlik ilişkilendirmeleri, bu sayıda saniye boyunca ağ trafiği görülmediğinde silinir.  
   **Varsayılan**: 300
 
@@ -598,7 +598,7 @@ Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://do
 
 Daha fazla bilgi için Windows belgelerindeki [Passportforwork CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) bölümüne bakın.
 
-- **İş için Windows Hello***tenantıd/policies/usepassportforwork yapılandırma*  -     
+- **İş için Windows Hello** *tenantıd/policies/usepassportforwork yapılandırma*  -     
   Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir.  
 
   - *Evet*olarak ayarlandığında, bu ilkeyi etkinleştirir ve cihaz Iş Için Windows Hello 'yu hazırlar.  
