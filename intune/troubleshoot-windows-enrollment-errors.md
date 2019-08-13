@@ -95,7 +95,7 @@ Hata 0x801c0003: "Bu kullanıcının kaydolmasına izin verilmiyor. Yeniden dene
 **Sağlamak** **Kullanıcılar cihazları Azure AD ayarına katabilir** , **none**olarak ayarlanır. Bu, yeni kullanıcıların cihazlarını Azure AD 'ye katılmasını önler. Bu nedenle, Intune kaydı başarısız olur.
 
 #### <a name="resolution"></a>Çözüm
-1.  [](https://portal.azure.com/)AzurePortal yönetici olarak oturum açın.    
+1.  [AzurePortal](https://portal.azure.com/) yönetici olarak oturum açın.    
 2. **Azure Active Directory**  **** cihazlarcihazayarları ' na gidin.>>     
 3.  **Kullanıcıları, cihazları Azure AD 'ye** bir **bütün**olarak birleştirebileceği şekilde ayarlayabilirsiniz.    
 4. Cihazı yeniden kaydedin.   
@@ -204,7 +204,7 @@ Hata: "Bir sorun oluştu. Kuruluşunuz bu Windows sürümünü desteklemiyor.  
 #### <a name="resolution"></a>Çözüm
 Tek başına bir Intune ortamında bu sorunu onarmak için aşağıdaki adımları izleyin: 
  
-1.  [](https://portal.azure.com/)AzurePortal yönetici olarak oturum açın.    
+1.  [AzurePortal](https://portal.azure.com/) yönetici olarak oturum açın.    
 2. Sol tarafta **Intune** ' u seçin ve ardından **cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin.    
 3.  **Cihaz türü kısıtlamaları**' nda **platformlar**' a ve ardından Windows için **izin ver** ' i **(MDM)** seçin.    
 4. **Kaydet**’e tıklayın.    
@@ -221,7 +221,7 @@ Bu sorunu Intune ve Configuration Manager ile karma MDM 'de onarmak için aşağ
 **Sağlamak** İlgili sağlama paketinin hesap paketindeki (Package_GUID) Azure AD Kullanıcı hesaplarının cihazların Azure AD 'ye katılmasına izin verilmez. Bu Azure AD hesapları, Windows yapılandırma Tasarımcısı (WCD) veya okul bilgisayarlarını ayarla uygulaması ile bir sağlama paketi ayarlarken otomatik olarak oluşturulur ve bu hesaplar daha sonra cihazları Azure AD 'ye katmak için kullanılır.
 
 #### <a name="resolution"></a>Çözüm
-1.  [](https://portal.azure.com/)AzurePortal yönetici olarak oturum açın.    
+1.  [AzurePortal](https://portal.azure.com/) yönetici olarak oturum açın.    
 2. **Cihaz ayarlarını > Azure Active Directory > cihazlar**' a gidin.    
 3.  **Kullanıcıları, cihazları Azure AD** 'ye **Tüm** veya **Seçili**olarak birleştirebileceği şekilde ayarlar.
 
