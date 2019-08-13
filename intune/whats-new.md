@@ -19,7 +19,7 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7f2e4870d1a2614ecccc1647db828e214a6aede8
 ms.sourcegitcommit: e9911a6bbfb8532a27e70d70402a214a8b2b6c75
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 08/06/2019
 ms.locfileid: "68818800"
@@ -605,7 +605,7 @@ Bu özellikleri görmek için [Microsoft Edge tarayıcı cihaz kısıtlama ayarl
 #### <a name="expanded-support-for-android-enterprise-fully-managed-devices--preview-------3903241-3903244-3903246-----"></a>Android kurumsal tam olarak yönetilen cihazlar için genişletilmiş destek (Önizleme)  <!--   3903241, 3903244, 3903246   -->
 Hala genel önizlemede, Android kurumsal tam olarak yönetilen cihazlar desteğimizi genişlettik (ilk olarak aşağıdaki[2019 ' de](whats-new.md#week-of-january-14-2019) yer alır: 
 
-- Tam olarak yönetilen ve ayrılmış cihazlarda, parola kuralları ve işletim sistemi gereksinimleri (**cihaz uyumluluk** > **ilkeleri** > **ilke** [](compliance-policy-create-android-for-work.md) Oluştur)dahilolmaküzereuyumlulukilkelerioluşturabilirsiniz. >  Platform için **Android Enterprise** > profil türü için **cihaz sahibi** ). 
+- Tam olarak yönetilen ve ayrılmış cihazlarda, parola kuralları ve işletim sistemi gereksinimleri (**cihaz uyumluluk** > **ilkeleri** > **ilke** [uygunluk politikaları](compliance-policy-create-android-for-work.md) Oluştur)dahilolmaküzereuyumlulukilkelerioluşturabilirsiniz. >  Platform için **Android Enterprise** > profil türü için **cihaz sahibi** ). 
 
   Adanmış cihazlarda, cihaz **uyumlu değil**olarak gösterilebilir. Koşullu erişim adanmış cihazlarda kullanılamaz. Ayrılmış cihazların atanan ilkelerinizle uyumlu olmasını sağlamak için gerekli görevleri veya eylemleri gerçekleştirdiğinizden emin olun.
 
