@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783206"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960545"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -1726,7 +1726,7 @@ Aşağıdaki adımlarla varsayılan kaydı etkinleştirin:
 
 1. Uygulamanız ADAL 'yi tümleştirirse veya SSO 'yu etkinleştirmeniz gerekiyorsa, [ortak adal yapılandırma](#common-adal-configurations) #2 takıp eden [adal 'ı yapılandırın](#configure-azure-active-directory-authentication-library-adal) . Aksi takdirde, bu adımı atlayabilirsiniz.
    
-2. Bildirime aşağıdaki değeri koyarak varsayılan kaydı etkinleştirin:
+2. Aşağıdaki değeri `<application>` etiketi altında bulunan bildirime ekleyerek varsayılan kaydı etkinleştirin:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
@@ -1735,7 +1735,7 @@ Aşağıdaki adımlarla varsayılan kaydı etkinleştirin:
    > [!NOTE] 
    > Bu, uygulamadaki tek MAM-WE tümleştirmesi olmalıdır. Başka MAMEnrollmentManager API'si çağırma denemeleri olursa, çakışmalar ortaya çıkar.
 
-3. Gerekli MAM ilkesini, bildirime aşağıdaki kuralı koyarak etkinleştirin:
+3. Aşağıdaki değeri `<application>` etiketi altında bulunan bildirime ekleyerek gerekli mam ilkesini etkinleştirin:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />

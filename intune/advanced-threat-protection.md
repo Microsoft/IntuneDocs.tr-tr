@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8508915f0b4711b2aa65465dd7ac79f575a8d008
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670973"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960659"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune 'da koşullu erişimle Microsoft Defender ATP için uyumluluğu zorlama  
 
@@ -82,11 +82,12 @@ Microsoft Defender ATP 'yi Intune ile birlikte kullanmak için, aşağıdakileri
 Bu görevi genellikle bir kez yaparsınız. Intune kiracınız için Microsoft Defender ATP 'yi etkinleştirdikten sonra, bunu tekrar yapmanız gerekmez.
 
 > [!TIP]  
-> Yeni bir uygulamayı Intune mobil tehdit savunması ile tümleştirdiğinizde ve bağlantıyı etkinleştirdiğinizde, Intune Azure Active Directory içinde klasik bir koşullu erişim ilkesi oluşturur. Her MTD uygulaması, [Defender ATP](advanced-threat-protection.md) veya ek [MTD iş ortaklarından](mobile-threat-defense.md#mobile-threat-defense-partners)herhangi biri gibi, yeni bir klasik koşullu erişim ilkesi oluşturur.  Bu ilkeler yoksayılabilir, ancak düzenlenmemelidir, silinmemelidir veya devre dışı bırakılmalıdır.
+> Yeni bir uygulamayı Intune mobil tehdit savunması ile tümleştirdiğinizde ve Intune bağlantısını etkinleştirdiğinizde, Intune Azure Active Directory içinde klasik bir koşullu erişim ilkesi oluşturur. [Defender ATP](advanced-threat-protection.md) veya ek [MTD iş ortaklarından](mobile-threat-defense.md#mobile-threat-defense-partners)herhangi biri dahil olmak üzere tümleştirilen her MTD uygulaması yeni bir klasik koşullu erişim ilkesi oluşturur. Bu ilkeler yoksayılabilir, ancak düzenlenmemelidir, silinmemelidir veya devre dışı bırakılmalıdır.
 > 
 > MTD uygulamaları için klasik koşullu erişim ilkeleri: 
 > 
-> - , Cihazların bir cihaz KIMLIĞI olması için Azure AD 'ye kaydolmasını gerektirmek üzere Intune MTD tarafından kullanılır. KIMLIK, cihazların ve durumlarını Intune 'a başarıyla bildirebileceği şekilde gereklidir.  
+> - , Cihazların Azure AD 'ye kaydolmasını gerektirmek için, MTD iş ortaklarıyla iletişim kurmadan önce cihaz KIMLIĞI olması için Intune MTD tarafından kullanılır. KIMLIK, cihazların ve durumlarını Intune 'a başarıyla bildirebileceği şekilde gereklidir.  
+> - Diğer bulut uygulamaları veya kaynakları üzerinde hiçbir etkisi yoktur.  
 > - , MTD 'leri yönetmeye yardımcı olmak için oluşturabileceğiniz koşullu erişim ilkelerinden farklıdır.
 > - Varsayılan olarak, değerlendirme için kullandığınız diğer koşullu erişim ilkeleriyle etkileşime geçin.  
 > 
@@ -109,10 +110,10 @@ Yapılandırma paketini kullanarak bir cihaz ekledikten sonra, bunu tekrar yapma
 5. **Profil türü**Için **Microsoft Defender ATP (Windows 10 Masaüstü)** öğesini seçin.
 6. Şu ayarları yapılandırın:
 
-   - **Microsoft Defender ATP istemci yapılandırma paketi türü**: Yapılandırma paketini profile **eklemek için Ekle** ' yi seçin. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
+   - **Microsoft Defender ATP istemci yapılandırma paketi türü**: Yapılandırma paketini Profile eklemek için Ekle ' yi seçin. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
   
      > [!NOTE]  
-     > Microsoft Defender ATP ile düzgün bir şekilde bağlantı oluşturduysanız, **Intune otomatik olarak** yapılandırma profilini, **Microsoft Defender ATP istemci yapılandırma paketi türü** ayarını de kullanıma sunulacaktır.
+     > Microsoft Defender ATP ile düzgün bir şekilde bağlantı oluşturduysanız, Intune otomatik olarak yapılandırma profilini , **Microsoft Defender ATP istemci yapılandırma paketi türü** ayarını de kullanıma sunulacaktır.
   
     - **Tüm dosyalar Için örnek paylaşımı**: **Etkinleştir** ayarı, örneklerin toplanmasına ve MICROSOFT Defender ATP ile paylaşılmasına olanak tanır. Örneğin, şüpheli bir dosya görürseniz, ayrıntılı analiz için Microsoft Defender ATP 'ye gönderebilirsiniz. **Yapılandırılmadı** , MICROSOFT Defender ATP 'ye herhangi bir örnek paylaşmaz.
     - **Telemetri raporlama sıklığını**hızlandırın: Yüksek riskli cihazlarda, bu ayarı **etkinleştirin** ve bu ayarı, MICROSOFT Defender ATP hizmetine daha sık telemetri rapor eder.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884045"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960577"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Tek başına Intune-Win32 uygulama yönetimi
 
@@ -283,6 +283,8 @@ Bu noktada, Intune 'a bir Win32 uygulaması ekleme adımlarını tamamladınız.
 ## <a name="app-dependencies"></a>Uygulama bağımlılıkları
 
 Uygulama bağımlılıkları, Win32 uygulamanızın yüklenebilmesi için yüklenmesi gereken uygulamalardır. Diğer uygulamaların bağımlılık olarak yüklenmesini zorunlu kılabilirsiniz. Özellikle, cihazın Win32 uygulamasını yüklemeden önce bağımlı uygulamaları yüklemesi gerekir. Dahil edilen bağımlılıkların bağımlılıklarını ve uygulamanın kendisini içeren en fazla 100 bağımlılığı vardır. Win32 uygulaması bağımlılıklarını yalnızca Win32 uygulamanız eklendikten ve Intune 'a yüklendikten sonra ekleyebilirsiniz. Win32 uygulamanız eklendikten sonra, Win32 uygulamanızın dikey penceresinde **Bağımlılıklar** seçeneğini görürsünüz. 
+
+Herhangi bir Win32 uygulaması bağımlılığının de bir Win32 uygulaması olması gerekir. Tek MSI LOB uygulamaları veya Mağaza uygulamaları gibi diğer uygulama türlerine bağlı olarak desteklenmez.
 
 Uygulama bağımlılığı eklerken, uygulama adı ve yayımcı temelinde arama yapabilirsiniz. Ek olarak, eklenen bağımlılıklarınızı uygulama adı ve yayımcıya göre sıralayabilirsiniz. Daha önce eklenen uygulama bağımlılıkları, eklenen uygulama bağımlılığı listesinde seçilemez. 
 
