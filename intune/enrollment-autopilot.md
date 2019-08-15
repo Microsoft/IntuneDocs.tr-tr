@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: f275ed15b02b182e6a880dc6fde2ca67140e7d78
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68700993"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993716"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Dört tür Autopilot dağıtımı vardır: Kiosks, dijital imza veya paylaşılan bir cihaz için [kendi kendine dağıtım modu](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) , iş ORTAKLARı ve BT personelinin bir WINDOWS 10 bilgisayarını, tam olarak yapılandırılması ve Iş [için Autopilot, mevcut cihazlara yönelik](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) olarak önceden [sağlamasını sağlar](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) Windows 10 ' un en son sürümünü mevcut cihazlarınıza ve geleneksel kullanıcılar için [Kullanıcı denetimli moda](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) kolayca dağıtmanız gerekir. 
+Dört tür Autopilot dağıtımı vardır: Kiosks, dijital imza veya paylaşılan bir cihaz için [kendi kendine dağıtım modu](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) , iş [](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) ortakları ve BT personelinin bir Windows 10 bilgisayarını, tam olarak yapılandırılması ve iş [için Autopilot, mevcut cihazlara yönelik](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) olarak önceden sağlamasını sağlar Windows 10 ' un en son sürümünü mevcut cihazlarınıza ve geleneksel kullanıcılar için [Kullanıcı denetimli moda](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) kolayca dağıtmanız gerekir. 
 
 
 ## <a name="prerequisites"></a>Önkoşullar

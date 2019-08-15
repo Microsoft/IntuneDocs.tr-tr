@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb5176189cb689c8341704440463881cb1aa7e4f
-ms.sourcegitcommit: 299d8d481f0edfa60041c5dff626e1f27bcbe252
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956558"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022840"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Dağıtım iletişim planı geliştirme
 
@@ -50,7 +50,7 @@ Hangi bilgilerin iletileceği, iletmekte olduğunuz Intune dağıtma sürecine b
 
 **Kayıt sonrası dalgası**<br/> Intune'a kaydolan kuruluş grupları ve kullanıcılarını hedefleyen iletişim. Kullanıcıya yararlı olabilecek ek kaynaklar sağlamalı ve kayıt sırasında ve sonrasındaki deneyimleri hakkında kullanıcılardan geri bildirim toplamalıdır.
 
-Bu [son kullanıcı kayıt kılavuzu](/enterprise-mobility-security/solutions/fasttrack-intune-enduser-enrollment-instructions) yararlı olabilir. Olduğu gibi kullanabilir veya kuruluşunuza göre değiştirebilirsiniz.
+Bu [Intune benimseme setini](https://aka.ms/IntuneAdoptionKit) yararlı bulabilirsiniz. Bunu olduğu gibi kullanabilir veya kuruluşunuz için değiştirebilirsiniz.
 
 ## <a name="communication-delivery-methods"></a>İletişim teslim yöntemleri
 

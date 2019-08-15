@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f2e4870d1a2614ecccc1647db828e214a6aede8
-ms.sourcegitcommit: e9911a6bbfb8532a27e70d70402a214a8b2b6c75
-ms.translationtype: HT
+ms.openlocfilehash: 75e3f6ebf5d36777780ba77b7d503396ab808e22
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68818800"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978577"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -53,6 +53,17 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-5-2019"></a>5 Ağustos 2019 haftası
+
+### <a name="zebra-technologies-is-a-supported-oem-for-oemconfig-on-android-enterprise-devices-----4843713---"></a>Zeköşeli teknolojiler, Android kurumsal cihazlarda OEMConfig için desteklenen bir OEM 'dir  <!-- 4843713 -->
+
+Intune 'da, cihaz yapılandırma profilleri oluşturabilir ve oemconfig kullanarak Android kurumsal cihazlara ayarlar uygulayabilirsiniz (**cihaz yapılandırma** > **profilleri** > **Profil oluştur**  >   **Platform için Android Enterprise** > profil türü Için **oemconfig** ).
+
+Bu güncelleştirmede, Zeköşeli teknolojiler, OEMConfig için desteklenen bir özgün ekipman üreticisi (OEM). OEMConfig hakkında daha fazla bilgi için bkz. [oemconfig Ile Android kurumsal cihazlarını kullanma ve yönetme](android-oem-configuration-overview.md).
+
+Şunun için geçerlidir:  
+- Android kurumsal
 
 ## <a name="week-of-july-22-2019"></a>22 Temmuz 2019 haftası 
 
@@ -138,7 +149,7 @@ Windows 10, sürüm 1903 ve üzeri sürümleri çalıştıran cihazlarda tanıla
 
 ### <a name="device-security"></a>Cihaz güvenliği
 
-#### <a name="advanced-settings-for-windows-defender-firewall--public-preview-------1311949-------"></a>Windows Defender güvenlik duvarı için Gelişmiş ayarlar (Genel Önizleme)  <!--  1311949     -->  
+#### <a name="advanced-settings-for-windows-defender-firewall--public-preview------1311949-------"></a>Windows Defender güvenlik duvarı için Gelişmiş ayarlar (Genel Önizleme)  <!--  1311949     -->  
 Windows 10 ' da Endpoint Protection için [cihaz yapılandırma profilinin bir parçası olarak özel güvenlik duvarı kurallarını](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) yönetmek Için Intune 'u kullanın. Kurallar, uygulamalar, ağ adresleri ve bağlantı noktaları için gelen ve giden davranışı belirtebilir. 
 
 #### <a name="updated-ui-for-managing-security-baselines------4091125-------"></a>Güvenlik temellerini yönetmek için güncelleştirilmiş Kullanıcı arabirimi   <!-- 4091125     -->
@@ -235,7 +246,7 @@ Yeni ayarı görmek için, [özelliklere izin vermek veya erişimi kısıtlamak 
 Şunun için geçerlidir: Windows 10 ve üzeri
 
 #### <a name="deploy-multiple-zebra-mobility-extensions-device-profiles-to-a-device-same-user-group-or-same-devices-group----4089955---"></a>Bir cihaza, aynı kullanıcı grubuna veya aynı cihazlar grubuna birden çok Zeköşeli Mobility uzantıları cihaz profili dağıtma <!-- 4089955 -->
-Intune 'da, Intune 'da yerleşik olmayan Zeköşeli cihazların ayarlarını özelleştirmek için bir cihaz yapılandırma profilinde Zeköşeli Mobility uzantıları 'nı (MX) kullanabilirsiniz. Şu anda tek bir cihaza bir profil dağıtabilirsiniz. Bu güncelleştirmede, aşağıdakileri yapmak için birden çok profil dağıtabilirsiniz:
+Intune 'da yerleşik olmayan Zeköşeli cihazlara yönelik ayarları özelleştirmek için bir cihaz yapılandırma profilinde Zeköşeli Mobility uzantıları (MX) kullanabilirsiniz. Şu anda tek bir cihaza bir profil dağıtabilirsiniz. Bu güncelleştirmede, aşağıdakileri yapmak için birden çok profil dağıtabilirsiniz:
 - Aynı kullanıcı grubu
 - Aynı cihazlar grubu
 - Tek bir cihaz

@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a06b40adee9c2eb66c4eafd44ce9b798a95df39f
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 5688039101e7cecf5631a0ad8dee4f343e183d96
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862359"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022852"
 ---
 # <a name="plan-communications"></a>İletişimi planlama
 
@@ -31,16 +31,19 @@ ms.locfileid: "68862359"
 
 ## <a name="email-templates"></a>E-posta Şablonları
 
-Aşağıdaki e-posta iletişim planını öneririz. İletişim planınız için uyarlamanız için şablonlar sağladık:
+Aşağıdaki e-posta iletişim planını öneririz. Kullanıcılarınızın işletim sistemine ve ortamına hizalamak için metni düzenleyebilirsiniz. İletişim planınız için uyarlamanız için şablonlar sağladık:
 
 - **E-posta #1**: Avantajları, beklentileri ve zamanlamayı açıklayın. Intune tarafından yönetilen cihazlarda erişim izni verilecek diğer yeni hizmetleri göstermek için bu fırsattan yararlanın.
 
-- **E-posta #2**: Hizmetlerin artık Intune üzerinden erişim için hazır olduğunu duyurun. Kullanıcılara şimdi kaydolmalarını söyleyin.  Kullanıcılara, erişimleri etkilenmeden önce bir zaman çizelgesi verin. Kullanıcılara geçişin avantajlarını ve stratejik nedenlerini hatırlatın.
+- **E-posta #2**: Hizmetlerin artık Intune üzerinden erişim için hazır olduğunu duyurun. Kullanıcılara şimdi kaydolmalarını söyleyin. Kullanıcılara, erişimleri etkilenmeden önce bir zaman çizelgesi verin. Kullanıcılara geçişin avantajlarını ve stratejik nedenlerini hatırlatın.
+
 Belirli bir süre geçtikten sonra koşullu erişim ilkeleri aracılığıyla uyumluluğu zorunlu hale başlatabilir ve [koşullu erişimle Son Kullanıcı benimseme](migration-guide-drive-adoption.md)bölümünde açıklandığı gibi bunu kurumsal verilere erişmek için ölçüt olarak kullanabilirsiniz.
 
 ## <a name="intune-enrollment-guide"></a>Intune Kayıt Kılavuzu
 
-Bu PDF eki kullanıcılarınıza olduğu gibi sağlanmış olabilir veya Word sürümünü iç kaynaklarınızı ve iletişim bilgilerini içerecek şekilde özelleştirebilirsiniz.
+Intune kayıt kılavuzunun hem PDF hem de Word sürümlerini sağlıyoruz. PDF 'YI kullanıcılarınıza olduğu gibi sağlayabilir veya Word sürümünü dahili kaynaklarınızı ve iletişim bilgilerinizi içerecek şekilde özelleştirebilirsiniz. Kayıt kılavuzunu, kullanıcılarınızın ortamınıza uygun işletim sistemlerini yansıtacak şekilde düzenlemeniz önerilir.
+
+Son Kullanıcı kayıt Kılavuzu, her bir işletim sistemiyle ilişkili daha ayrıntılı yönergelerin bağlantılarını ve aşağıda bahsedilen videoları içerir.
 
 ## <a name="instructional-videos"></a>Eğitici videolar
 

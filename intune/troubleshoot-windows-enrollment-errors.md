@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c4b1541de3500089bafc388779a3cfe97fbd29
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756581"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993710"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -60,31 +60,31 @@ Bu soruna yönelik birkaç olası çözüm vardır:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Kaydedilen cihazları kaldırma
 1. [Azure Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) oturum açın.    
-2.  **Kullanıcılara** > **tüm kullanıcılar**' a gidin.    
+2. **Kullanıcılara** > **tüm kullanıcılar**' a gidin.    
 3. Etkilenen Kullanıcı hesabını seçin ve ardından **cihazlar**' a tıklayın.    
 4. Kullanılmayan veya istenmeyen cihazları seçin ve ardından **Sil**' e tıklayın. 
 
-##### <a name="increase-thedevice-enrollment-limit"></a>Cihaz kayıt sınırını artırma
+##### <a name="increase-the-device-enrollment-limit"></a>Cihaz kayıt sınırını artırma
 
 > [!NOTE]
 > Bu yöntem, yalnızca etkilenen kullanıcıyı değil, tüm kullanıcılar için cihaz kayıt sınırını artırır.
 
 1. [Azure Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) oturum açın.
-2.  **Cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin ve **cihaz sınırı kısıtlamaları**' nı seçin.    
+2. **Cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin ve **cihaz sınırı kısıtlamaları**' nı seçin.    
 3. **Cihaz sınırının**değerini artırın. 
 
-##### <a name="checkdevice-type-restrictions"></a>Cihaz türü kısıtlamalarını denetle
-1.  [Intune portalında](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) bir genel yönetici hesabıyla oturum açın.
-2.  **Cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin ve ardından **cihaz türü kısıtlamaları**' nın altında **varsayılan** kısıtlamayı seçin.    
-3.  **Platformlar**' ı seçin ve ardından Windows için **izin ver**  **(MDM)** seçeneğini belirleyin.
+##### <a name="check-device-type-restrictions"></a>Cihaz türü kısıtlamalarını denetle
+1. [Intune portalında](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) bir genel yönetici hesabıyla oturum açın.
+2. **Cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin ve ardından **cihaz türü kısıtlamaları**' nın altında **varsayılan** kısıtlamayı seçin.    
+3. **Platformlar**' ı seçin ve ardından Windows Için **ızın ver** **(MDM)** seçeneğini belirleyin.
 
     > [!IMPORTANT]
-    > Geçerli ayar zaten **izin veriyor**ise, bunu **Engelle**olarak değiştirin, ayarı kaydedin ve sonra yeniden **izin** verecek şekilde değiştirin ve ayarı yeniden kaydedin. Bu, kayıt ayarını sıfırlar.
+    > Geçerli ayar zaten **Izin veriyor**ise, bunu **Engelle**olarak değiştirin, ayarı kaydedin ve sonra yeniden **izin** verecek şekilde değiştirin ve ayarı yeniden kaydedin. Bu, kayıt ayarını sıfırlar.
 
 4. Yaklaşık 15 dakika bekleyin ve ardından etkilenen cihazı yeniden kaydedin.    
 
 ##### <a name="upgrade-windows-10-home"></a>Windows 10 Home 'ı yükselt
-[Windows 10 Home 'ı Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) veya daha yüksek bir sürüme yükseltin. 
+[Windows 10 Home 'ı Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro) veya daha yüksek bir sürüme yükseltin. 
 
 
 
@@ -92,17 +92,17 @@ Bu soruna yönelik birkaç olası çözüm vardır:
 
 Hata 0x801c0003: "Bu kullanıcının kaydolmasına izin verilmiyor. Yeniden deneyebilir veya sistem yöneticinize başvurarak 801c0003 hata koduyla iletişim kurun. "
 
-**Sağlamak** **Kullanıcılar cihazları Azure AD ayarına katabilir** , **none**olarak ayarlanır. Bu, yeni kullanıcıların cihazlarını Azure AD 'ye katılmasını önler. Bu nedenle, Intune kaydı başarısız olur.
+**Sağlamak** **Kullanıcılar cihazları Azure AD ayarına katabilir** , **none**olarak ayarlanır. Bu, yeni kullanıcıların cihazlarını Azure AD 'ye katılmasını önler. Bu nedenle, Intune kaydı başarısız olur.
 
 #### <a name="resolution"></a>Çözüm
-1.  [AzurePortal](https://portal.azure.com/) yönetici olarak oturum açın.    
-2. **Azure Active Directory**  **** cihazlarcihazayarları ' na gidin.>>     
-3.  **Kullanıcıları, cihazları Azure AD 'ye** bir **bütün**olarak birleştirebileceği şekilde ayarlayabilirsiniz.    
+1. [Azure Portal](https://portal.azure.com/) yönetici olarak oturum açın.    
+2. **Azure Active Directory** > cihazlarcihaz > **ayarları**' na gidin.    
+3. **Kullanıcıları, cihazları Azure AD 'ye** bir **bütün**olarak birleştirebileceği şekilde ayarlayabilirsiniz.    
 4. Cihazı yeniden kaydedin.   
 
 ### <a name="the-device-is-already-enrolled"></a>Cihaz zaten kayıtlı.
 
-Hata 8018000a: "Bir sorun oluştu. Cihaz zaten kayıtlı.  Sistem yöneticinize başvurarak 8018000a hata koduyla iletişim sağlayabilirsiniz.
+Hata 8018000a: "Bir sorun oluştu. Cihaz zaten kayıtlı.  Sistem yöneticinize başvurarak 8018000a hata koduyla iletişim sağlayabilirsiniz.
 
 **Sağlamak** Aşağıdaki koşullardan biri doğru:
 - Farklı bir Kullanıcı cihazı Intune 'a zaten kaydettiniz veya cihazı Azure AD 'ye katıldı. Durumun bu olup olmadığını anlamak için **Ayarlar** > **hesaplar** > **iş erişimi**' ne gidin. Aşağıdakine benzer bir ileti arayın: "Sistemdeki başka bir kullanıcı zaten bir iş veya okula bağlı. Lütfen bu iş veya okul bağlantısını kaldırın ve yeniden deneyin. "    
@@ -136,7 +136,7 @@ Kullanıcıya geçerli bir Intune lisansı atayın ve ardından cihazı kaydedin
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>MDM kullanım koşulları uç noktası doğru yapılandırılmamış gibi görünüyor.
 
 **Sağlamak** Aşağıdaki koşullardan biri doğru: 
- - Kiracı üzerinde Office 365 ve Intune için hem mobil cihaz yönetimi (MDM) hem de cihazı kaydetmeye çalışan kullanıcının geçerli bir Intune lisansı veya bir Office 365 lisansı yoktur.     
+ - Kiracı üzerinde Office 365 ve Intune için hem mobil cihaz yönetimi (MDM) hem de cihazı kaydetmeye çalışan kullanıcının geçerli bir Intune lisansı veya bir Office 365 lisansı yoktur.     
 - Azure AD 'deki MDM hüküm ve koşulları boş veya doğru URL 'YI içermiyor.    
 
 #### <a name="resolution"></a>Çözüm
@@ -144,12 +144,12 @@ Kullanıcıya geçerli bir Intune lisansı atayın ve ardından cihazı kaydedin
 Bu sorunu onarmak için aşağıdaki yöntemlerden birini kullanın: 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>Kullanıcıya geçerli bir lisans ata
- [Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home)gidin ve ardından kullanıcıya bir Intune veya Office 365 lisansı atayın.
+[Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home)gidin ve ardından kullanıcıya bir Intune veya Office 365 lisansı atayın.
 
-##### <a name="correct-themdm-terms-of-use-url"></a>MDM kullanım koşulları URL 'sini düzeltin
-  1.  [Azure Portal](https://portal.azure.com/)oturum açın ve **Azure Active Directory**' ı seçin.    
-  2.  **Mobility (MDM ve MAM)** öğesini seçin ve ardından **Microsoft Intune**' ye tıklayın.    
-  3.  **Varsayılan MDM URL 'Lerini geri yükle**' yi seçin, **MDM kullanım koşulları URL 'sinin** olarak **https://portal.manage.microsoft.com/TermsofUse.aspx** ayarlandığını doğrulayın.    
+##### <a name="correct-the-mdm-terms-of-use-url"></a>MDM kullanım koşulları URL 'sini düzeltin
+  1. [Azure Portal](https://portal.azure.com/)oturum açın ve **Azure Active Directory**' ı seçin.    
+  2. **Mobility (MDM ve MAM)** öğesini seçin ve ardından **Microsoft Intune**' ye tıklayın.    
+  3. **Varsayılan MDM URL 'Lerini geri yükle**' yi seçin, **MDM kullanım koşulları URL 'sinin** olarak **https://portal.manage.microsoft.com/TermsofUse.aspx** ayarlandığını doğrulayın.    
   4. **Kaydet**’i seçin.    
 
 
@@ -164,10 +164,10 @@ Hata 80180026: "Bir sorun oluştu. Doğru oturum açma bilgilerini kullandığı
 #### <a name="resolution"></a>Çözüm
 Bu sorunu gidermek için aşağıdaki yöntemlerden birini kullanın:
 
-##### <a name="disablemdm-automatic-enrollment-in-azure"></a>Azure 'da MDM otomatik kaydını devre dışı bırakın.
-1.  [Azure Portal](https://portal.azure.com/)oturum açın.    
-2.  > **Azure Active Directory** > **Mobility (MDM ve MAM)**  **Microsoft Intune**gidin.    
-3.  **MDM Kullanıcı kapsamını** **none**olarak ayarlayın ve ardından **Kaydet**' e tıklayın.    
+##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Azure 'da MDM otomatik kaydını devre dışı bırakın.
+1. [Azure Portal](https://portal.azure.com/) oturum açın.    
+2.  >  **Azure Active Directory** > **Mobility (MDM ve MAM)** **Microsoft Intune**gidin.    
+3. **MDM Kullanıcı kapsamını** **none**olarak ayarlayın ve ardından **Kaydet**' e tıklayın.    
      
 ##### <a name="uninstall"></a>Kaldır
 Intune bılgısayar istemcisini veya Configuration Manager istemci aracısını bilgisayardan kaldırın.    
@@ -179,8 +179,8 @@ Hata: "Yazılım yüklenemiyor, 0x80cf4017."
 **Sağlamak** İstemci yazılımı güncel değil.
 
 #### <a name="resolution"></a>Çözüm
-1. Oturum açın [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2.  **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
+1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com) adresinde oturum açın.    
+2. **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
 3. Yükleme paketini kaydedin ve ardından istemci yazılımını yükleme. 
 
 
@@ -191,22 +191,22 @@ Hata: "Hesap sertifikası geçerli değil ve zaman aşımına ermeyebilir, 0x80c
 **Sağlamak** İstemci yazılımı güncel değil.
 
 #### <a name="resolution"></a>Çözüm
-1. Oturum açın [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2.  **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
+1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com) adresinde oturum açın.    
+2. **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
 3. Yükleme paketini kaydedin ve ardından istemci yazılımını yükleme.    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>Kuruluşunuz bu Windows sürümünü desteklemiyor. 
 
-Hata: "Bir sorun oluştu. Kuruluşunuz bu Windows sürümünü desteklemiyor.  (0x80180014) "
+Hata: "Bir sorun oluştu. Kuruluşunuz bu Windows sürümünü desteklemiyor.  (0x80180014) "
 
 **Sağlamak** Windows MDM kaydı, Intune kiracınızda devre dışı bırakıldı.
 
 #### <a name="resolution"></a>Çözüm
 Tek başına bir Intune ortamında bu sorunu onarmak için aşağıdaki adımları izleyin: 
  
-1.  [AzurePortal](https://portal.azure.com/) yönetici olarak oturum açın.    
-2. Sol tarafta **Intune** ' u seçin ve ardından **cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin.    
-3.  **Cihaz türü kısıtlamaları**' nda **platformlar**' a ve ardından Windows için **izin ver** ' i **(MDM)** seçin.    
+1. [Azure Portal](https://portal.azure.com/) yönetici olarak oturum açın.    
+2. Sol tarafta **Intune** ' u seçin ve ardından **cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin.    
+3. **Cihaz türü kısıtlamaları**' nda **platformlar**' a ve ardından Windows için **ızın ver** ' i **(MDM)** seçin.    
 4. **Kaydet**’e tıklayın.    
  
 Bu sorunu Intune ve Configuration Manager ile karma MDM 'de onarmak için aşağıdaki adımları izleyin: 
@@ -221,11 +221,11 @@ Bu sorunu Intune ve Configuration Manager ile karma MDM 'de onarmak için aşağ
 **Sağlamak** İlgili sağlama paketinin hesap paketindeki (Package_GUID) Azure AD Kullanıcı hesaplarının cihazların Azure AD 'ye katılmasına izin verilmez. Bu Azure AD hesapları, Windows yapılandırma Tasarımcısı (WCD) veya okul bilgisayarlarını ayarla uygulaması ile bir sağlama paketi ayarlarken otomatik olarak oluşturulur ve bu hesaplar daha sonra cihazları Azure AD 'ye katmak için kullanılır.
 
 #### <a name="resolution"></a>Çözüm
-1.  [AzurePortal](https://portal.azure.com/) yönetici olarak oturum açın.    
+1. [Azure Portal](https://portal.azure.com/) yönetici olarak oturum açın.    
 2. **Cihaz ayarlarını > Azure Active Directory > cihazlar**' a gidin.    
-3.  **Kullanıcıları, cihazları Azure AD** 'ye **Tüm** veya **Seçili**olarak birleştirebileceği şekilde ayarlar.
+3. **Kullanıcıları, cihazları Azure AD 'ye** **Tüm** veya **Seçili**olarak birleştirebileceği şekilde ayarlar.
 
-    **Seçili**' i seçerseniz, **Seçili**' e tıklayın ve ardından, cihazlarını Azure AD 'ye birleştirebilen tüm kullanıcıları eklemek için **üye Ekle** ' ye tıklayın. Sağlama paketi için tüm Azure AD hesaplarının eklendiğinden emin olun.
+   **Seçili**' i seçerseniz, **Seçili**' e tıklayın ve ardından, cihazlarını Azure AD 'ye birleştirebilen tüm kullanıcıları eklemek için **üye Ekle** ' ye tıklayın. Sağlama paketi için tüm Azure AD hesaplarının eklendiğinden emin olun.
  
 Windows yapılandırma Tasarımcısı için sağlama paketi oluşturma hakkında daha fazla bilgi için bkz. [Windows 10 için sağlama paketi oluşturma](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package).
 
@@ -246,7 +246,7 @@ Grup ilkesi kullanarak bir Windows 10 cihazını otomatik olarak kaydetmeyi dene
     ```
 **Sağlamak** Aşağıdaki koşullardan biri doğru: 
 - UPN,. Local ( joe@contoso.localgibi) doğrulanmamış veya yönlendirilemeyen bir etki alanı içerir.    
-- **MDM Kullanıcı kapsamı**  **none**olarak ayarlanır. 
+- **MDM Kullanıcı kapsamı** **none**olarak ayarlanır. 
 
 #### <a name="resolution"></a>Çözüm
 UPN doğrulanmamış veya yönlendirilemeyen bir etki alanı içeriyorsa, şu adımları izleyin: 
@@ -261,7 +261,7 @@ UPN doğrulanmamış veya yönlendirilemeyen bir etki alanı içeriyorsa, şu ad
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
- **MDM Kullanıcı kapsamı**  **none**olarak ayarlandıysa, şu adımları izleyin: 
+**MDM Kullanıcı kapsamı** **none**olarak ayarlandıysa, şu adımları izleyin: 
  
 1. [Azure Portal](https://portal.azure.com/)oturum açın ve **Azure Active Directory**' ı seçin.
 2. **Mobility (MDM ve MAM)** seçeneğini belirleyip **Microsoft Intune**seçin.    
