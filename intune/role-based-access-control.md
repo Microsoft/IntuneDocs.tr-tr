@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 935d8d0803e5bcfcd25703295f84f24b664f7fce
-ms.sourcegitcommit: 02fb7ceae60d0e2cfa42fb7d017753c7437ccf59
+ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68913822"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549971"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -90,11 +90,11 @@ Rol atamasını görmek için, **Intune** > **rolleri** > **tüm roller** ' i se
 - **[Kapsam (Etiketler)](scope-tags.md)** : Üyelerdeki kullanıcılar aynı kapsam etiketlerine sahip kaynakları görebilirler.
 
 ### <a name="multiple-role-assignments"></a>Çoklu rol atamaları
-Bir kullanıcının birden çok rol ataması varsa, bu rol atamalarındaki izinler aşağıdaki gibi farklı nesnelere genişletilir:
+Bir kullanıcının birden fazla rol ataması, izinleri ve kapsam etiketi varsa, bu rol atamaları aşağıdaki gibi farklı nesnelere genişletilir:
 
-- Atama izinleri yalnızca söz konusu rolün atama kapsamındaki nesneler (ilkeler veya uygulamalar gibi) için geçerlidir (gruplar). Başka atama özel olarak kendisine izin vermediği takdirde, atama izinleri diğer rol atamalarındaki nesnelere uygulanmaz.
-- Diğer izinler (örneğin, oluşturma ve okuma), Kullanıcı atamalarının herhangi birinde aynı türdeki (tüm ilkeler veya tüm uygulamalar gibi) tüm nesnelere uygulanır.
-- Farklı türlerde nesneler için izinler (ilkeler veya uygulamalar gibi), birbirlerine uygulanmaz. Bir ilke için okuma izni, örneğin, Kullanıcı atamalarındaki uygulamalar için okuma izni sağlamaz.
+- İzinleri ve kapsam etiketlerini ata yalnızca söz konusu rolün atama kapsamındaki nesneler (ilkeler veya uygulamalar gibi) için geçerlidir (gruplar). Farklı atama özel olarak kendisine izin vermediği takdirde, atama izinleri ve kapsam etiketleri diğer rol atamalarındaki nesnelere uygulanmaz.
+- Diğer izinler (örneğin, oluşturma, okuma, güncelleştirme, silme) ve kapsam etiketleri, Kullanıcı atamalarının hiçbirinde aynı türdeki (tüm ilkeler veya tüm uygulamalar gibi) tüm nesneler için geçerlidir.
+- Farklı türlerde nesneler için izinler ve kapsam etiketleri (ilkeler veya uygulamalar gibi), birbirlerine uygulanmaz. Bir ilke için okuma izni, örneğin, Kullanıcı atamalarındaki uygulamalar için okuma izni sağlamaz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - [Bir kullanıcıya rol atama](assign-role.md)

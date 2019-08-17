@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91440bc536869fb0559bf7be12386434f217d229
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: df090e0e942291d5430b101db378aca296466bf9
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993916"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549985"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -207,23 +207,28 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
     |------------------------------------------|------------------------------------------|
     | <strong>Geçiş kodu</strong> | Kullanıcıdan geçiş kodu ister. Güvenliği sağlanmayan veya erişim denetimi başka bir yolla (cihazı tek uygulamayla sınırlandıran bilgi noktası modu gibi) sağlanan cihazlar için her zaman geçiş kodu isteyin. |
     | <strong>Konum Hizmetleri</strong> | Kullanıcıdan konum ister. |
-    | <strong>Geri yükleme</strong> | **Uygulamalar ve Veriler** ekranını görüntüler. Bu ekran kullanıcıya cihazı kurarken iCloud Backup'tan verileri geri yükleme veya aktarma seçeneği sağlar. |
-    | <strong>iCloud ve Apple Kimliği</strong> | Kullanıcıya **Apple Kimliği** ile oturum açma ve **iCloud**'u kullanma seçenekleri sağlar.                         |
+    | <strong>Geri yükleme</strong> | Uygulamalar & veri ekranını görüntüleyin. Bu ekran kullanıcıya cihazı kurarken iCloud Backup'tan verileri geri yükleme veya aktarma seçeneği sağlar. |
+    | <strong>iCloud ve Apple Kimliği</strong> | Kullanıcıya Apple KIMLIĞI ile oturum açma ve iCloud kullanma seçeneklerini sunun.                         |
     | <strong>Hüküm ve Koşullar</strong> | Kullanıcının Apple'ın hüküm ve koşullarını kabul etmesini gerektirir. |
     | <strong>Touch ID</strong> | Kullanıcıya cihaz için parmak izi tanımlama özelliğini ayarlama seçeneği sağlar. |
     | <strong>Apple Pay</strong> | Kullanıcıya cihazda Apple Pay ayarlama seçeneği sağlar. |
     | <strong>Yakınlaştırma</strong> | Kullanıcıya cihazı ayarlarken ekranı yakınlaştırma seçeneği sağlar. |
     | <strong>Siri</strong> | Kullanıcıya Siri'yi ayarlama seçeneği sağlar. |
-    | <strong>Tanılama Verileri</strong> | Kullanıcıya **Tanılama** ekranını görüntüler. Bu ekran kullanıcıya Apple'a tanılama verileri gönderme seçeneği sağlar. |
+    | <strong>Tanılama Verileri</strong> | Tanılama ekranını kullanıcıya görüntüleyin. Bu ekran kullanıcıya Apple'a tanılama verileri gönderme seçeneği sağlar. |
     | <strong>Görüntü Tonu</strong> | Kullanıcıya Görüntü Tonunu açma seçeneği sunar. |
     | <strong>Gizlilik</strong> | Kullanıcıya Gizlilik ekranını gösterir. |
     | <strong>Android Geçişi</strong> | Kullanıcıya Android cihazdan veri geçirme seçeneği sunar. |
-    | <strong>iMessage ve FaceTime</strong> | Kullanıcıya iMessage ve FaceTime uygulamalarını ayarlama seçeneği sunar. |
+    | <strong>iMessage ve FaceTime</strong> | Kullanıcıya IMessage ve çok yönlü saat ayarlama seçeneği sunun. |
     | <strong>Ekleme</strong> | Kapak Sayfası, Çok Görevli Çalışma ve Denetim Merkezi gibi kullanıcı eğitimine yönelik ekleme bilgi ekranlarının görüntülenmesini sağlar. |
     | <strong>Watch Geçişi</strong> | Kullanıcıya Watch cihazından veri geçirme seçeneği sunar. |
     | <strong>Ekran Süresi</strong> | Ekran Süresi ekranını görüntüler. |
     | <strong>Yazılım Güncelleştirmesi</strong> | Zorunlu yazılım güncelleştirmesi ekranı görüntüler. |
     | <strong>SIM Ayarları</strong> | Kullanıcıya hücresel plan ekleme seçeneği sunar. |
+    | <strong>Görünüm</strong> | Kullanıcıya Görünüm ekranını gösterir. |
+    | <strong>Hızlı dil</strong>| Kullanıcı için hızlı dil ekranını görüntüleyin. |
+    | <strong>Tercih edilen dil</strong> | Kullanıcıya **tercih edilen dilini**seçme seçeneğini sunun. |
+    | <strong>Cihazdan cihaza geçişe</strong> | Kullanıcıya verileri eski cihazlarından bu cihaza geçirme seçeneğini sunun.|
+    
 
 16. **İleri ' yi** seçerek **gözden geçir + oluştur** sayfasına gidin.
 

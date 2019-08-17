@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35676b95356df002fdd784f67110f048643e444e
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022878"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550193"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -85,12 +85,9 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 
 - **Tek uygulama**: Kullanıcılar cihazdaki tek bir uygulamaya yalnızca erişebilir. Cihaz başlatıldığında, yalnızca belirli uygulamayı başlatır. Kullanıcılar yeni uygulamalar açamaz veya çalışan uygulamayı değiştiremez.
 
-  **Adımları**
-  1. Seçin **bir yönetilen uygulama seçin**, yönetilen Google Play uygulaması listeden seçin. 
+  - **Yönetilen bir uygulama seçin**: Listeden yönetilen Google Play uygulamasını seçin.
 
-      Ardından, listelenen tüm uygulamalar yoksa [bazı Android uygulamaları ekleme](apps-add-android-for-work.md) cihaza. [Uygulamayı adanmış cihazlarınız için oluşturulan cihaz grubuna atadığınızdan](apps-deploy.md)emin olun.
-
-  2. Seçin **Tamam** > **Tamam** seçerek uygulamayı ekleyin.
+    Ardından, listelenen tüm uygulamalar yoksa [bazı Android uygulamaları ekleme](apps-add-android-for-work.md) cihaza. [Uygulamayı adanmış cihazlarınız için oluşturulan cihaz grubuna atadığınızdan](apps-deploy.md)emin olun.
 
   > [!IMPORTANT]
   > Tek uygulama bilgi noktası modu kullanılırken, çevirici/telefon uygulamaları düzgün çalışmayabilir. 
@@ -106,41 +103,63 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
   >
   > Birden çok uygulama bilgi noktası modu kullanılırken, çevirici/telefon uygulamaları düzgün çalışmayabilir. 
 
-  - Seçin **Ekle**ve uygulamalarınızı listeden seçin.
+  - **Ekle**: Listeden uygulamalarınızı seçin.
 
     Varsa **giriş ekranı yönetilen** uygulama listelenmez, ardından [Google Play'den ekleme](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). [Uygulamayı](apps-deploy.md) adanmış cihazlarınız için oluşturulan cihaz grubuna atadığınızdan emin olun.
 
     Ayrıca diğer ekleyebilirsiniz [Android uygulamaları](apps-add-android-for-work.md) ve [web uygulamaları](web-app.md) cihazla kuruluşunuz tarafından oluşturulmuş. [Uygulamayı adanmış cihazlarınız için oluşturulan cihaz grubuna atadığınızdan](apps-deploy.md)emin olun.
 
-  - **Sanal giriş düğmesi**: Adanmış cihazda bir giriş düğmesi göstermek için **Etkinleştir** ' i seçin. Kullanıcıların uygulamalar arasında kolayca geçiş yapabilirsiniz için bu onay kutusu seçildiğinde, cihazın giriş ekranına kullanıcı döndürür. Bazı Android cihazlarda, kullanıcıların giriş düğmesini göster ekranda yukarı a doğru çekin gerekebilir. **Devre dışı** kullanıcılar, uygulamalar arasında geçiş yapmak için geri düğmesini kullanmalısınız bir giriş düğmesi göstermez.
-  - **Bilgi noktası modundan çıkma**: Yöneticilerin cihazı güncelleştirmek için bilgi noktası modunu geçici olarak duraklamasını sağlamak için **Etkinleştir** ' i seçin. Bu özelliği kullanmak için yönetici: 
-  
-    1. "Bilgi noktası çıkış" düğmesi gösterilene kadar geri düğmesini seçmeye devam eder. 
-    2. Düğmeyi seçer ve **bilgi noktası modu kod** sabitini girer.
-    3. Değişiklikleriniz bittiğinde seçin **giriş ekranı yönetilen** uygulama. Bu adım, cihazı çoklu uygulama bilgi noktası moduna relocks. 
+  - **Sanal giriş düğmesi**: Kullanıcıların uygulamalar arasında geçiş yapabilmesi için kullanıcıları yönetilen giriş ekranına getiren bir geçici anahtar düğmesi. Seçenekleriniz şunlardır:
 
-    **Devre dışı** bilgi noktası modu duraklatma özelliği vermez. Yönetici geri düğmesini seçip "bilgi noktası çıkış" düğmesini seçerse, bir geçiş kodunun gerekli olduğunu belirtir.
+    - **Yapılandırılmadı** (varsayılan): Giriş düğmesi gösterilmez. Kullanıcıların, uygulamalar arasında geçiş yapmak için geri düğmesini kullanmaları gerekir.
+    - **Yukarı çekin**: Bir giriş düğmesi, bir kullanıcının cihazda ne zaman bir şekilde yüzümü gösterdiğini gösterir.
+    - **Kayan**: Cihazda kalıcı, kayan bir giriş düğmesi gösterir.
+
+  - **Bilgi noktası modundan çıkma**: Yöneticilerin cihazı güncelleştirmek için bilgi noktası modunu geçici olarak duraklamasını sağlamak için **Etkinleştir** ' i seçin. Bu özelliği kullanmak için yönetici:
+  
+    1. **Çıkış bilgi noktası** düğmesi gösterilene kadar geri düğmesini seçmeye devam eder. 
+    2. **Bilgi noktası çıkış** düğmesini seçer ve **bilgi noktası modu kod** PIN 'ini girer.
+    3. İşiniz bittiğinde, **yönetilen giriş ekranı** uygulamasını seçin. Bu adım, cihazı çoklu uygulama bilgi noktası moduna relocks.
+
+      **Yapılandırılmadı**olarak ayarlandığında, Yöneticiler bilgi noktası modunu duraklatabilir. Yönetici geri düğmesini seçip, **bilgi noktası çıkışı** düğmesini seçerse bir ileti geçiş kodunun gerekli olduğunu belirtir.
 
     - **Bilgi noktası modu kodunu bırak**: 4-6 basamaklı sayısal bir PIN girin. Yönetici bu PIN'i geçici olarak bilgi noktası modu duraklatmak için kullanır.
 
   - **Özel URL arka planı ayarla**: Adanmış cihazda arka plan ekranını özelleştirmek için bir URL girin.
-    
+
     > [!NOTE]
     > Çoğu durumda, en az aşağıdaki boyutlardaki görüntülerle başlamasını öneririz:
     >
     > - Numarası 1080x1920 piksel
     > - \ 1920x1080 px
-    >    
+    >
     > En iyi deneyim ve ayrıntılı Ayrıntılar için, görüntüleme belirtimlerine cihaz başına görüntü varlıkları oluşturulması önerilir.
     >
     > Modern görüntüler, daha yüksek piksel yoğunluklarını ve eşdeğer 2K/4K tanım görüntülerini görüntüleyebilir.
-  - **Wi-Fi yapılandırması**: Son kullanıcıların cihazı farklı WiFi ağlarına bağlanmasına izin vermek için **Etkinleştir** ' i seçin. Bu özelliği etkinleştirmek Ayrıca cihaz konumunu da etkinleştirir. **Yapılandırılmadı** (varsayılan), kullanıcıların yönetilen giriş ekranında (kilit görevi modunda) WiFi ağlarına bağlanmasını engeller.
 
-    [Kilit görev modunda](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) daha fazla (Android 'in Web sitesini açar).
+  - **Wi-Fi yapılandırması**: **Etkinleştir** ayarı, yönetilen giriş ekranında Wi-Fi denetimini gösterir ve son kullanıcıların cihazı farklı WiFi ağlarına bağlanmasına izin verir. Bu özelliği etkinleştirmek Ayrıca cihaz konumunu da etkinleştirir. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında Wi-Fi denetimini göstermez. Kullanıcıların, yönetilen giriş ekranını kullanırken Wi-Fi ağlarına bağlanmasını engeller.
 
-  - **Bluetooth yapılandırması**: Cihazda Bluetooth 'a izin vermek için **Etkinleştir** ' i seçin ve son kullanıcıların cihazları Bluetooth üzerinden eşleştirmesine izin verin. Bu özelliği etkinleştirmek Ayrıca cihaz konumunu da etkinleştirir. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında (kilit görevi modu) kullanıcıların Bluetooth ve eşleme cihazlarını yapılandırmalarını engeller. 
+  - **Bluetooth yapılandırması**: **Etkinleştir** ayarı, yönetilen giriş ekranında Bluetooth denetimini gösterir ve son kullanıcıların cihazları Bluetooth üzerinden eşleştirmesine izin verir. Bu özelliği etkinleştirmek Ayrıca cihaz konumunu da etkinleştirir. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında Bluetooth denetimini göstermez. Yönetilen giriş ekranını kullanırken kullanıcıların Bluetooth ve eşleme cihazlarını yapılandırmalarını engeller.
 
-    [Kilit görev modunda](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) daha fazla (Android 'in Web sitesini açar).
+  - **Flashlight erişimi**: **Etkinleştir** ayarı, yönetilen giriş ekranında el feneri denetimini gösterir ve son kullanıcıların el feneri 'i açmasına veya kapatılmasına izin verir. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında el feneri denetimini göstermez. Yönetilen giriş ekranını kullanırken kullanıcıların el feneri kullanmasını engeller.
+
+  - **Medya birimi denetimi**: **Etkinleştir** ayarı, yönetilen giriş ekranında medya birimi denetimini gösterir ve son kullanıcıların bir kaydırıcı kullanarak cihazın medya birimini ayarlamasına olanak tanır. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında medya birimi denetimini göstermez. Kullanıcıların, donanım düğmeleri onu desteklemediği sürece, yönetilen giriş ekranını kullanırken cihazın medya hacmini değiştirmesini engeller. 
+
+  - **Ekran koruyucu modu**: **Etkinleştir** ayarı, cihaz kilitlendiğinde veya zaman aşımına uğrarsa yönetilen giriş ekranında bir ekran koruyucu görüntüler. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında bir ekran koruyucu göstermez.
+
+    Etkinleştirildiğinde, şunları da yapılandırın:
+
+    - **Özel ekran koruyucu görüntüsünü ayarla**: Özel bir görüntünün URL 'sini girin. Örneğin şunu girin:
+
+      - `http://www.contoso.com/image.jpg`
+      - `www.contoso.com/image.bmp`
+      - `https://www.contoso.com/image.html`
+
+      Bir URL girmezseniz, varsayılan bir görüntü varsa cihazın varsayılan görüntüsü kullanılır.
+
+    - **Ekranı kapatmadan önce cihazın ekran koruyucuyu gösterdiği saniye sayısı**: Cihazın ekran koruyucuyu ne kadar süreyle gösterdüğüne seçin. 0-9999999 saniye arasında bir değer girin. Varsayılan değer `0` saniyedir. Boş bırakıldığında veya sıfır (`0`) olarak ayarlandığında, Kullanıcı cihazla etkileşime gelinceye kadar ekran koruyucusu etkin olur.
+    - **Ekran koruyucuyu göstermeden önce cihazın etkin olmadığı saniye sayısı**: Ekran koruyucuyu göstermeden önce cihazın ne kadar süreyle boşta kalacağını seçin. 1-9999999 saniye arasında bir değer girin. Varsayılan değer `30` saniyedir. Sıfırdan büyük bir sayı girmeniz gerekir (`0`).
+    - **Ekran koruyucusunu başlatmadan önce medyayı Algıla**: **Etkinleştir** (varsayılan), cihazda ses veya video yürütülıyorsa ekran koruyucuyu göstermez. **Yapılandırılmadı** , ses veya video oynatılsa bile ekran koruyucuyu gösterir.
 
 ### <a name="device-password-settings"></a>Cihaz parola ayarları
 

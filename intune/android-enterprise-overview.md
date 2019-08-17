@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 3a51951d02d73a0d79f6246dd9502c3c7fe89759
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885134"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550080"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune ile Android iş profili cihazlarını yönetme
 
@@ -68,7 +68,7 @@ Uygulaman uygulama koruma ilkeleri, iş profilinde ve kişisel profilde tümüyl
 
 VPN desteği, Android VPN profillerine benzerdir. Aynı VPN sağlayıcıları ve temel yapılandırma seçenekleri, Android Kurumsal Yönetimi için iki fark ile kullanılabilir:
 
-- **İş profili kapsamlı VPN** – VPN bağlantıları yalnızca iş profiline dağıtılan uygulamalarla sınırlıdır. Yalnızca Android Enterıse tarafından yönetilen uygulamalar VPN bağlantısını kullanabilir. Cihazdaki kişisel uygulamalar bir yönetilen VPN bağlantısı kullanamaz. Daha fazla bilgi için bkz. [Android ENTERPRISE VPN ayarları](vpn-settings-android.md#android-enterprise-vpn-settings).
+- **İş profili kapsamlı VPN** – VPN bağlantıları yalnızca iş profiline dağıtılan uygulamalarla sınırlıdır. Yalnızca Android Enterıse tarafından yönetilen uygulamalar VPN bağlantısını kullanabilir. Cihazdaki kişisel uygulamalar bir yönetilen VPN bağlantısı kullanamaz. Daha fazla bilgi için bkz. [Android ENTERPRISE VPN ayarları](vpn-settings-android-enterprise.md).
 
 - **Uygulamaya özel VPN** – Uygulamaya özel VPN, VPN sağlayıcısı bunu destekliyorsa Intune’da yapılandırılabilir:
   - uygulamaya özel VPN yapılandırması

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 82d5b26071cad6ee854ae08e85b4ea0cff8d0af3
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530547"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550140"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
@@ -39,7 +39,7 @@ Bu sertifika türlerinden her birinin kendi önkoşulları ve altyapı gereksini
 
 1. Doğru sertifika altyapısının ayarlandığından emin olun. [SCEP sertifikalarını](certificates-scep-configure.md) ve [PKCS sertifikalarını](certficates-pfx-configure.md) kullanabilirsiniz.
 
-2. Her cihaza bir kök sertifika veya ara Sertifika Yetkilisi (CA) sertifikası yükleyerek cihazın Sertifika Yetkilinizin meşruluğunu tanımasını sağlayın. Sertifikayı yüklemek için oluşturma ve atama bir **güvenilen sertifika profili** her aygıt için. Bu profili atadığınızda Intune ile yönetilen cihazlar kök sertifikayı ister ve alır. Her platform için ayrı profil oluşturmanız gerekir. Aşağıdaki platformlar için güvenilen sertifika profilleri sağlanır:
+2. Her cihaza bir kök sertifika veya ara Sertifika Yetkilisi (CA) sertifikası yükleyerek cihazın Sertifika Yetkilinizin meşruluğunu tanımasını sağlayın. Sertifikayı yüklemek için, her cihaza bir **Güvenilen sertifika profili** oluşturun ve atayın. Bu profili atadığınızda Intune ile yönetilen cihazlar kök sertifikayı ister ve alır. Her platform için ayrı profil oluşturmanız gerekir. Aşağıdaki platformlar için güvenilen sertifika profilleri sağlanır:
 
     - iOS 8.0 ve üzeri
     - macOS 10.11 ve üzeri
@@ -50,9 +50,9 @@ Bu sertifika türlerinden her birinin kendi önkoşulları ve altyapı gereksini
     - Windows 10 ve üzeri
 
     > [!NOTE]  
-    > Çalıştıran cihazlara sertifika profilleri desteklenmez *adanmış cihazlar için Android Kurumsal*.
+    > *Adanmış cihazlar Için Android Enterprise*çalıştıran cihazlarda sertifika profilleri desteklenmez.
 
-3. Sertifika profilleri oluşturarak cihazların VPN, Wi-Fi ve e-posta erişimi kimlik doğrulaması için kullanılacak bir sertifika istemelerini sağlayın. Aşağıdaki profil türleri, farklı platformlar için kullanılabilir:  
+3. Sertifika profilleri oluşturarak cihazların VPN, Wi-Fi ve e-posta erişimi kimlik doğrulaması için kullanılacak bir sertifika istemelerini sağlayın. Aşağıdaki profil türleri farklı platformlar için kullanılabilir:  
 
    | Platform     |PKCS sertifikası|SCEP sertifikası| PKCS içeri aktarılmış sertifikası | 
    |--------------|----------------|----------------|-------------------|
@@ -75,7 +75,7 @@ Bu sertifika türlerinden her birinin kendi önkoşulları ve altyapı gereksini
 
 ## <a name="step-1-configure-your-certificate-infrastructure"></a>1\. adım: Sertifika altyapınızı yapılandırma
 
-Her sertifika profilinin türünü için altyapıyı yapılandırma konusunda yardım için aşağıdaki makalelerden birine bakın:
+Her sertifika profili türü için altyapıyı yapılandırmaya yardımcı olması için aşağıdaki makalelerden birine bakın:
 
 - [Intune ile SCEP sertifikalarını yapılandırma ve yönetme](certificates-scep-configure.md)
 - [Intune ile PKCS sertifikalarını yapılandırma ve yönetme](certficates-pfx-configure.md)
@@ -83,35 +83,40 @@ Her sertifika profilinin türünü için altyapıyı yapılandırma konusunda ya
 
 ## <a name="step-2-export-your-trusted-root-ca-certificate"></a>2\. adım: Güvenilen kök CA sertifikanızı dışarı aktarma
 
-Güvenilen Kök Sertifika Yetkilileri (CA) sertifikasını, veren CA'dan veya veren CA'nıza güvenen herhangi bir cihazdan bir ortak sertifika (.cer) olarak dışarı aktarın. Özel anahtarı (.pfx) dışarı yok.
+Güvenilen Kök Sertifika Yetkilileri (CA) sertifikasını, veren CA'dan veya veren CA'nıza güvenen herhangi bir cihazdan bir ortak sertifika (.cer) olarak dışarı aktarın. Özel anahtarı (. pfx) dışarı aktarmayın.
 
 Güvenilen sertifika profili ayarlarken bu sertifikayı içeri aktarırsınız.
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>3\. adım: Güvenilen sertifika profilleri oluşturma
+
 SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Her cihaz platformu için bir güvenilen sertifika profili ve SCEP veya PKCS profili gereklidir. Güvenilen sertifikalar oluşturma adımları tüm cihaz platformlarında benzerdir.
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. **Cihaz yapılandırması** > **Yönet** > **Profiller** > **Profil oluştur**’u seçin.
-4. Güvenilen sertifika profili için bir **Ad** ve **Açıklama** girin.
-5. **Platform** açılan listesinde, bu güvenilen sertifika için cihaz platformunu seçin. Seçenekleriniz şunlardır:
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da **cihaz yapılandırma** > **profilleri** **Yönet** > profillerprofil > **Oluştur**' u seçin.
+2. Aşağıdaki özellikleri girin:
 
-    - **Android**
-    - **Android Kurumsal**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 ve üzeri**
-    - **Windows 10 ve üzeri**
+    - **Ad**: Profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı, **Android kurumsal cihaz sahibi cihazları** veya **IOS cihazları için güvenilen sertifika profili**için güvenilen sertifika profilidir.
+    - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: Cihazlarınızın platformu seçin. Seçenekleriniz şunlardır:
 
-6. **Profil türü** açılan listesinde **Güvenilen sertifika**’yı seçin.
-7. Kaydettiğiniz sertifikaya gidin [2. adım: Güvenilen kök CA sertifikanızı dışarı aktarma](#step-2-export-your-trusted-root-ca-certificate), ardından **Tamam**.
-8. Yalnızca Windows 8.1 ve Windows 10 cihazları için, güvenilen sertifika için **Hedef Depo** olarak şunlardan birini seçin:
+      - **Android**
+      - **Yalnızca Android kurumsal** > **cihaz sahibi**
+      - **Yalnızca Android kurumsal** > **iş profili**
+      - **iOS**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 ve üzeri**
+      - **Windows 10 ve üzeri**
+
+    - **Profil türü**: **Güvenilen sertifika**seçin.
+
+3. 2\. [adımda kaydettiğiniz sertifikaya gidin: Güvenilen kök CA sertifikanızı](#step-2-export-your-trusted-root-ca-certificate)dışarı aktarıp **Tamam**' ı seçin.
+4. Yalnızca Windows 8.1 ve Windows 10 cihazları için, güvenilen sertifika için **Hedef Depo** olarak şunlardan birini seçin:
 
     - **Bilgisayar sertifika deposu - Kök**
     - **Bilgisayar sertifika deposu - Ara**
     - **Kullanıcı sertifika deposu - Ara**
 
-9. Bitirdiğinizde **Tamam**’ı seçin, **Profil Oluştur** bölmesine gidin ve **Oluştur**’u seçin.
+5. Bitirdiğinizde **Tamam**’ı seçin, **Profil Oluştur** bölmesine gidin ve **Oluştur**’u seçin.
 
 Profil oluşturulur ve listede görüntülenir. Bu profili gruplara atamak için bkz. [cihaz profillerini atama](device-profile-assign.md).
 
@@ -120,7 +125,7 @@ Profil oluşturulur ve listede görüntülenir. Bu profili gruplara atamak için
 
 ## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>Adım 4: SCEP veya PKCS sertifika profilleri oluşturma
 
-Yapılandırma ve her sertifika profilinin türünü atama ile ilgili Yardım için aşağıdaki makalelerden birine bakın:
+Her sertifika profili türünü yapılandırma ve atamaya yönelik yardım için aşağıdaki makalelerden birine bakın:
 
 - [Intune ile SCEP sertifikalarını yapılandırma ve yönetme](certificates-scep-configure.md)
 - [Intune ile PKCS sertifikalarını yapılandırma ve yönetme](certficates-pfx-configure.md)
@@ -128,12 +133,13 @@ Yapılandırma ve her sertifika profilinin türünü atama ile ilgili Yardım i�
 Güvenilen sertifika profilini oluşturduktan sonra, kullanmak istediğiniz her platform için SCEP veya PKCS sertifika profillerini oluşturun. SCEP sertifika profilini oluştururken, aynı platform için bir güvenilen sertifika profili girin. Bu adım, iki sertifika profilini birbirine bağlasa da her profili ayrı atamalısınız.
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
 [Cihaz profillerini atama](device-profile-assign.md)  
 [E-postaları imzalamak ve şifrelemek için S/MIME kullanma](certificates-s-mime-encryption-sign.md)  
 [Üçüncü taraf sertifika yetkilisi kullanma](certificate-authority-add-scep-overview.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[NDES yapılandırması kullanmak Intune sertifika profilleriyle ilgili sorunları giderme](https://support.microsoft.com/help/4459540)
+[Microsoft Intune sertifika profilleriyle kullanılmak üzere NDES yapılandırması sorunlarını giderme](https://support.microsoft.com/help/4459540)
 
 [Microsoft Intune SCEP sertifika profili dağıtımı sorunlarını giderme](https://support.microsoft.com/help/4457481)

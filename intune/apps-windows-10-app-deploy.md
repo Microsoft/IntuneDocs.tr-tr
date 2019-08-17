@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680066"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550074"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulaması dağıtımı 
 
@@ -44,6 +44,13 @@ Windows 10 LOB uygulamaları imzalanır ve Intune yönetim konsoluna yüklenir. 
 ## <a name="microsoft-store-for-business-apps"></a>İş uygulamaları için Microsoft Mağazası
 
 Iş uygulamaları için Microsoft Store, Microsoft Store Iş Yöneticisi portalından satın alınan modern uygulamalardır ve daha sonra yönetim için Microsoft Intune olarak eşitlenir. Uygulamalar **çevrimiçi lisanslanabileceği** gibi **çevrimdışı da lisanslanabilir**. Iş uygulamaları için Microsoft Store güncelleştirmeleri, sizin tarafınızdan gerekli ek bir işlem olmadan doğrudan Microsoft Store tarafından yönetilir. Ayrıca, özel bir Tekdüzen Kaynak tanımlayıcısı (URI) kullanarak belirli uygulamalara yönelik güncelleştirmeleri engelleyebilirsiniz. Daha fazla bilgi için bkz. [Kurumsal uygulama yönetimi - Uygulamaların otomatik güncelleştirmeleri almasını engelleme](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). Cihazda, son kullanıcı cihazdaki tüm İş için Microsoft Store uygulamalarında da güncelleştirmeleri devre dışı bırakabilir. 
+
+### <a name="categorize-microsoft-store-for-business-apps"></a>Iş uygulamaları için Microsoft Store kategorilere ayırın 
+Iş uygulamalarına yönelik Microsoft Store sınıflandırmak için aşağıdaki adımları kullanın: 
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. **İstemci uygulamaları** > **uygulamalarını** seçin > bir Microsoft Store Business App > **uygulama bilgileri** > **kategorisi**seçin. 
+3. Açılan menüden bir kategori seçin.
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 cihazlarına uygulamaları yükleme
 Uygulama türüne bağlı olarak, uygulama Windows 10 cihazına iki yoldan biriyle yüklenebilir:

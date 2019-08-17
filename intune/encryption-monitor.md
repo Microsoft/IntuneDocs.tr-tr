@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671051"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550124"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini izleme   
 
@@ -74,7 +74,7 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
 
 - **Şifreleme hazırlığı** -CIHAZLARıN değerlendirmesi MDM ilkesi aracılığıyla şifrelemeyi desteklemeye hazır.  
   
-  Örneğin: Bir Windows 10 cihazının *hazır olmadığından*, şifrelemeyi desteklemeye devam edebilir. Hazırlama *atamasını sağlamak* Için, Windows 10 CIHAZıNıN bir TPM yongasına sahip olması gerekir. Şifrelemeyi desteklemek için TPM yongaları gerekli değildir. (Daha fazla bilgi için önceki bölümde bulunan şifreleme hazırlığı bölümüne bakın.)  
+  Örneğin: Bir Windows 10 cihazının *hazır olmadığından*, şifrelemeyi desteklemeye devam edebilir. Hazırlama atamasını sağlamak Için, Windows 10 CIHAZıNıN bir TPM yongasına sahip olması gerekir. Şifrelemeyi desteklemek için TPM yongaları gerekli değildir. (Daha fazla bilgi için önceki bölümde bulunan şifreleme hazırlığı bölümüne bakın.)  
 
 - **Şifreleme durumu** -işletim sistemi sürücüsünün şifreli olup olmadığı. Intune 'un bir cihazın şifreleme durumunu veya bu duruma yönelik bir değişikliği rapor etmek 24 saate kadar sürebilir.  
 
@@ -102,15 +102,15 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
   Intune 'un rapor verebir durum ayrıntıları aşağıda verilmiştir:  
   
   **MacOS**:
-  - Ön koşul beklerken profil şu anda yüklenemez.  
+  - Kurtarma anahtarı henüz alınmadı ve henüz depolanmadı. Büyük olasılıkla, cihazın kilidi açık değil veya iade edilmedi.  
  
-    *Seçmeyi Bu sonuç bir hata koşulunu temsil etmelidir, ancak cihaz üzerindeki zamanlama, şifreleme isteği cihaza gönderilmeden önce, kurtarma anahtarları için emanet olarak ayarlanmalıdır. Bu, cihazın kilitli kaldığını veya son zamanlarda Intune ile iade edilmedi olduğunu da belirtebilir. Son olarak, bir cihaz takılıncaya kadar Filekasası şifrelemesi başlamadığı için, bir kullanıcının henüz şifrelenmeyen*bir cihaz için kurtarma anahtarı alması mümkündür.  
+    *Seçmeyi Bu sonuç bir hata koşulunu temsil etmelidir, ancak cihaz üzerinde kurtarma anahtarları için Emanet, şifreleme isteği cihaza gönderilmeden önce ayarlanmış olması gereken geçici bir durumdur. Bu durum Ayrıca cihazın kilitli kaldığını veya son zamanlarda Intune ile iade edilmedi olduğunu gösteriyor olabilir. Son olarak, bir cihaz takılıncaya kadar Filekasası şifrelemesi başlamadığı için, bir kullanıcının henüz şifrelenmeyen*bir cihaz için kurtarma anahtarı alması mümkündür.  
 
-  - Filekasa profili yüklendi ancak cihazda Filekasası etkin değil.  
+  - Kullanıcı şifrelemeyi erteleniyor veya şu anda şifreleme sürecinde.  
  
     *Seçmeyi Kullanıcı şifreleme isteğini aldıktan sonra henüz oturum açmamış, çünkü dosya kasasının cihazı şifreleyebilmesi için gerekli olan veya Kullanıcı cihazı el ile şifresini açtı. Intune, bir kullanıcının cihazının şifresini çözmesini engellemez.*  
 
-  - Dosya Kasası, Intune 'un kurtarma işlemini yönetebilmesi için Kullanıcı tarafından zaten etkin.  
+  - Cihaz zaten şifrelendi. Devam etmek için cihazın Kullanıcı tarafından şifresinin çözülmesi gerekir.  
  
     *Seçmeyi Intune, zaten şifrelenmiş bir cihazda Filekasasını ayarlayamıyorum. Bunun yerine, bir cihaz yapılandırma ilkesi ve Intune*tarafından yönetilebilmesi için kullanıcının cihazının el ile şifresinin çözülmesi gerekir. 
  
@@ -118,9 +118,9 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
  
     *Seçmeyi MacOS sürüm 10,15 (Catalina) ile başlayarak, kullanıcının onayladığı kayıt ayarları, kullanıcıların dosya kasasını şifrelemeyi el ile onaylaması gereksinimine yol açabilir. Daha fazla bilgi için bkz. Intune belgelerinde* [Kullanıcı onaylı kayıt](macos-enroll.md) .  
 
-  - iOS cihazı bir NotNow (kilitli) döndürdü.  
+  - Bilinmeyen.  
 
-    *Seçmeyi Cihaz şu anda kilitli ve Intune, Emanet veya şifreleme işlemini başlatamıyor. Cihazın kilidi açıldıktan sonra, ilerleme devam*edebilir.  
+    *Seçmeyi Bilinmeyen durumun olası nedenlerinden biri, cihazın kilitlenmesinden ve Intune 'un Emanet veya şifreleme işlemini başlatamamasına neden olur. Cihazın kilidi açıldıktan sonra, ilerleme devam*edebilir.  
 
   **Windows 10**:  
   - BitLocker ilkesi için Kullanıcı onayı 'Nın, işletim sistemi biriminin şifrelemesini başlatmak üzere BitLocker Sürücü Şifrelemesi Sihirbazı 'Nı başlatması gerekir, ancak Kullanıcı onay vermedi.  
@@ -161,7 +161,7 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
   
 ![Dışarı aktarma ayrıntıları](./media/encryption-monitor/export.png) 
  
-Bu rapor, cihaz gruplarıyla ilgili sorunları belirlemek için kullanılabilir. Örneğin, tüm rapor *Dosya kasasının Kullanıcı tarafından zaten etkinleştirilmiş olduğu*MacOS cihazlarının listesini tanımlamak için raporu kullanabilirsiniz. Bu, Intune 'un dosya Kasası ayarlarını yönetmeye başlayabilmesi için el ile şifresinin çözülmesi gereken cihazları gösterir.  
+Bu rapor, cihaz gruplarıyla ilgili sorunları belirlemek için kullanılabilir. Örneğin, tüm rapor *Dosya kasasının Kullanıcı tarafından zaten etkinleştirilmiş olduğu*MacOS cihazlarının listesini tanımlamak için raporu kullanabilirsiniz. Bu, Intune 'un dosya Kasası Ayarlarını yönetebilmesi için el ile şifresinin çözülmesi gereken cihazları gösterir.  
  
 ## <a name="filevault-recovery-keys"></a>Filekasası kurtarma anahtarları   
 Intune, bir macOS cihazını dosya kasası ile ilk kez şifrele, kişisel bir kurtarma anahtarı oluşturulur. Şifreleme sonrasında cihaz, kişisel anahtarı son kullanıcıya tek bir kez görüntüler.  
