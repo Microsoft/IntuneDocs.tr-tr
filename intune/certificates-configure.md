@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82d5b26071cad6ee854ae08e85b4ea0cff8d0af3
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550140"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582925"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune'daki cihazlarınız için sertifika profili yapılandırma
 
@@ -112,9 +112,9 @@ SCEP veya PKCS sertifika profili oluşturabilmeniz için önce bir güvenilen se
 3. 2\. [adımda kaydettiğiniz sertifikaya gidin: Güvenilen kök CA sertifikanızı](#step-2-export-your-trusted-root-ca-certificate)dışarı aktarıp **Tamam**' ı seçin.
 4. Yalnızca Windows 8.1 ve Windows 10 cihazları için, güvenilen sertifika için **Hedef Depo** olarak şunlardan birini seçin:
 
-    - **Bilgisayar sertifika deposu - Kök**
-    - **Bilgisayar sertifika deposu - Ara**
-    - **Kullanıcı sertifika deposu - Ara**
+    - **Bilgisayar sertifika deposu-kök** SCEP
+    - **Bilgisayar sertifika deposu-ara** SCEP
+    - **Kullanıcı sertifika deposu-ara** (PKCS, SCEP)
 
 5. Bitirdiğinizde **Tamam**’ı seçin, **Profil Oluştur** bölmesine gidin ve **Oluştur**’u seçin.
 

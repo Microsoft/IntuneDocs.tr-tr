@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29483c7694ef96a026942a670aa8a52cb8cc8857
-ms.sourcegitcommit: f75386986d24e7d5dd63a3f1a0a014cb52056063
+ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
+ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560123"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69620212"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -440,9 +440,6 @@ Bu güncelleştirmede, **uygulamalar** özelliği bir alt öğe **Derecelendirme
 
 ### <a name="device-enrollment"></a>Cihaz kaydı
 
-#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>Windows Autopilot sıfırlaması cihazın birincil kullanıcısını kaldırır <!-- 4156123 -->
-Bu özellik gecikti ve yaklaşan bir Sprintte yayımlanacak.    
-
 #### <a name="windows-autopilot-support-for-hybrid-azure-ad-join----4809146--"></a>Karma Azure AD katılımı için Windows Autopilot desteği <!-- 4809146-->
 Mevcut cihazlar için Windows Autopilot artık karma Azure AD JOIN 'i destekliyor (mevcut Azure AD JOIN desteğine ek olarak). Windows 10 sürüm 1809 ve üzeri cihazlar için geçerlidir. Daha fazla bilgi için bkz. [var olan cihazlar Için Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
 
@@ -709,7 +706,7 @@ PowerShell betikleri, kayıt defteri değerleri ve dosya sistemi bilgilerini tem
 #### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227----"></a>Win32 uygulamalarınızı Intune 'a kayıtlı Azure AD 'ye katılmış cihazlara yüklenecek şekilde yapılandırma <!-- 3695227  -->
 Win32 uygulamalarınızı, Intune 'a kayıtlı Azure AD 'ye katılmış cihazlara yüklenecek şekilde atayabilirsiniz. Intune 'da Win32 uygulamaları hakkında daha fazla bilgi için bkz. [Win32 uygulama yönetimi](apps-win32-app-management.md).
 
-#### <a name="device-overview-shows-primary-user---794259----"></a>Cihaza genel bakış birincil kullanıcıyı gösterir <!--794259  -->
+#### <a name="device-overview-shows-primary-user---3794259----"></a>Cihaza genel bakış birincil kullanıcıyı gösterir <!--3794259  -->
 Cihaza genel bakış sayfası, Kullanıcı cihaz benzeşimi kullanıcısı (UDA) olarak da bilinen birincil kullanıcıyı gösterir. Bir cihazın birincil kullanıcısını görmek için **Intune** > **cihazları** > **tüm cihazlar** ' ı seçin > bir cihaz seçin. Birincil Kullanıcı **genel bakış** sayfasının en üstünde görünür.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android Kurumsal iş profili cihazları için ek Yönetilen Google Play uygulaması raporlaması <!-- 4105925  -->

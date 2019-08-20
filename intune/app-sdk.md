@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52235b6b4cfbca6433c5a50b8c1293faac8d657b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1a8722f5cef29dfec8b0d3eabcc6eeac0a188456
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049634"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582876"
 ---
-# <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK'ya genel bakış
-Intune uygulama SDK'sı, iOS ve Android için Intune destek olanak tanır [uygulama koruma ilkeleri](app-protection-policy.md). Uygulamanızı uygulama koruma ilkeleri uygulanmış olduğunda, Intune tarafından yönetilmesi gerektiğini ve yönetilen bir uygulama olarak Intune tarafından tanınan. SDK'sı, uygulama geliştiricisinin yapması gereken kod değişikliklerini en aza indirmek çalışır. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş son kullanıcı ve BT yöneticisi deneyimi için uygulama katılımınızı gerektiren özelliklere desteklemek için uygulamanızın davranışını özelleştirmek için SDK'sının API'lerini kullanabilir.
+# <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune uygulama SDK 'sına genel bakış
+Hem iOS hem de Android için kullanılabilen Intune uygulama SDK 'Sı, uygulamanızın Intune [Uygulama koruma ilkelerini](app-protection-policy.md)desteklemesini sağlar. Uygulamanıza uygulama koruma ilkeleri uygulandığında, Intune tarafından yönetilebilir ve Intune tarafından yönetilen bir uygulama olarak tanınabilirler. SDK, uygulama geliştiricisinden gereken kod değişikliği miktarını en aza indirir. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş Son Kullanıcı ve BT Yöneticisi deneyimi için, uygulamanızın davranışını, uygulama katılımınızı gerektiren özellikleri destekleyecek şekilde özelleştirmek için SDK 'nın API 'Lerini kullanabilirsiniz.
 
-Intune uygulama koruma ilkelerini desteklemek uygulamanızı etkinleştirdikten sonra BT yöneticileri bu ilkeleri uygulama içindeki Kurumsal verileri korumak için dağıtabilir.
+Uygulamanızı Intune uygulama koruma ilkelerini destekleyecek şekilde etkinleştirdikten sonra, BT yöneticileri uygulama içindeki kurumsal verilerini korumak için bu ilkeleri dağıtabilir.
 
 ## <a name="app-protection-features"></a>Uygulama koruma özellikleri
 
@@ -51,7 +51,7 @@ BT yöneticileri, uygulamadaki web bağlantılarının [Intune Managed Browser u
 ### <a name="enforce-a-pin-policy"></a>PIN ilkesini zorunlu kılma
 BT yöneticileri, son kullanıcının uygulamadaki kurumsal verilere erişmeden önce bir PIN girmesini zorunlu kılabilir. Bu, uygulamayı kullanan kişinin başlangıçta iş veya okul hesabıyla oturum açan kişi olmasını sağlar. Son kullanıcılar PIN kodlarını yapılandırdığında, Intune Uygulama SDK'sı Azure Active Directory kullanarak son kullanıcıların kimlik bilgilerini kayıtlı Intune hesabıyla karşılaştırarak doğrular.
 
-### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>Uygulama erişimi için bir iş veya Okul hesabıyla oturum açmasını zorunlu
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>Kullanıcıların uygulama erişimi için bir iş veya okul hesabıyla oturum açmasını gerektir
 BT yöneticileri, kullanıcıların uygulamaya erişmek için iş veya okul hesaplarıyla oturum açmasını zorunlu kılabilir. Intune Uygulama SDK'sı, girilen kimlik bilgilerinin sonraki oturumlar için yeniden kullanıldığı çoklu oturum açma deneyimini sağlamak üzere Azure Active Directory’i kullanır. Ayrıca Azure Active Directory ile federasyon uygulanmış kimlik yönetimi çözümlerinin kimlik doğrulaması da desteklenir.
 
 ### <a name="check-device-health-and-compliance"></a>Cihaz durumunu ve uyumluluğunu denetleme
@@ -80,4 +80,4 @@ Citrix MDX hakkında daha fazla bilgi edinmek için bkz. [MDX Toolkit hakkında]
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Microsoft Intune App SDK ile çalışmaya başlama](app-sdk-get-started.md).
+- [Microsoft Intune uygulama SDK 'sını kullanmaya](app-sdk-get-started.md)başlayın.
