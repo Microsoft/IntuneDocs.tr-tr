@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3740212e8023bb49c7a51e233741791ef2597b10
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582664"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651168"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -181,7 +181,22 @@ Bir giriş sayfası kısayolunu yapılandırmak için aşağıdaki anahtar/değe
 |    Anahtar    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com. Microsoft. Intune. mam. managedbrowser. giriþ   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örneğinde** <`https://www.bing.com`>
-    |
+
+## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Microsoft Edge 'de yeni sekme sayfaları için kuruluşunuzun logosunu ve marka rengini yapılandırın
+
+Bu ayarlar, Microsoft Edge 'in yeni sekme sayfasını, sayfanın arka planı olarak kuruluşunuzun logosunu ve marka rengini görüntüleyecek şekilde özelleştirmenize olanak tanır.
+
+Kuruluşunuzun logosunu ve rengini karşıya yüklemek için, önce aşağıdaki adımları uygulayın:
+- Azure portal içinde, Intune-> Istemci uygulamalarına gidin-> marka ve Özelleştirme-> Şirket kimliği markalaması
+- Markanızı ayarlamak için "görüntü" altında "yalnızca şirket logosu" seçeneğini belirleyin. Saydam arka plan logoları önerilir. 
+- Markaınızın arka plan rengini ayarlamak için "ekran" bölümünde "Tema rengi" seçeneğini belirleyin. Microsoft Edge, yeni sekme sayfasında rengin daha açık bir gölge kopyasını uygular ve bu da sayfanın yüksek okunabilirlik olmasını sağlar. 
+
+Daha sonra, kuruluşların markasını Microsoft Edge 'e çekmek için aşağıdaki anahtar/değer çiftlerini kullanın:
+
+|    Anahtar    |    Value    |
+|--------------------------------------------------------------------|------------|
+|    com. Microsoft. Intune. mam. managedbrowser. NewTabPage. BrandLogo    |    Doğru    |
+|    com. Microsoft. Intune. mam. managedbrowser. NewTabPage. BrandColor    |    Doğru    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Microsoft Edge için yönetilen yer imlerini yapılandırma
 

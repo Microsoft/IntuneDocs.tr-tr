@@ -16,16 +16,16 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403377"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651028"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
-Bir yönetici olarak çok sayıda yeni Windows cihazını Azure Active Directory ve Intune’a dahil edebilirsiniz. Azure AD kiracınıza cihazları toplu kaydetmek için Windows Yapılandırma Tasarımcısı (WCD) uygulaması ile bir sağlama paketi oluşturursunuz. Sağlama paketini şirkete ait cihazlara uygulamak, cihazları Azure AD kiracınıza dahil eder ve Intune yönetimine kaydeder. Paketi uyguladıktan sonra Azure AD kullanıcılarınızın oturum açmak hazırdır.
+Bir yönetici olarak çok sayıda yeni Windows cihazını Azure Active Directory ve Intune’a dahil edebilirsiniz. Azure AD kiracınıza cihazları toplu kaydetmek için Windows Yapılandırma Tasarımcısı (WCD) uygulaması ile bir sağlama paketi oluşturursunuz. Sağlama paketini şirkete ait cihazlara uygulamak, cihazları Azure AD kiracınıza dahil eder ve Intune yönetimine kaydeder. Paket uygulandıktan sonra, Azure AD kullanıcılarınızın oturum açması için bu size hazırlanın.
 
 Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan Intune ilkelerini ve gerekli uygulamaları alırlar. Windows toplu kayıt kullanılarak Intune'a kaydedilmiş olan Windows cihazları, kullanılabilir uygulamaları yüklemek için Şirket Portalı uygulamasını kullanabilir. 
 
@@ -64,7 +64,7 @@ Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan I
 
 9. İsteğe bağlı olarak, **Uygulama ekleyebilir** ve **Sertifika ekleyebilirsiniz**. Bu uygulamalar ve sertifikalar cihazda sağlanır.
 
-10. İsteğe bağlı olarak, sağlama paketinizi parola ile koruyabilirsiniz.  **Oluştur**’a tıklayın.
+10. İsteğe bağlı olarak, sağlama paketinizi parola ile koruyabilirsiniz.  **Oluştur**'a tıklayın.
     ![Windows Yapılandırma Tasarımcısı uygulamasında paket koruması ekran görüntüsü](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Cihaz sağlama
@@ -73,7 +73,7 @@ Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan I
 
 2. Sağlama paketini cihaza nasıl uygulayacağınızı seçin.  Sağlama paketi bir cihaza aşağıdaki yollardan biriyle uygulanabilir:
    - Sağlama paketini bir USB sürücüsüne kaydedin, USB sürücüsünü toplu kaydetmek istediğiniz cihaza yerleştirin ve ilk kurulum sırasında uygulayın
-   - Sağlama paketini bir ağ klasörüne yerleştirin ve ilk kurulum sonrasında toplu kaydetmek istediğiniz cihaza uygulayın
+   - Sağlama paketini bir ağ klasörüne yerleştirin ve ilk kurulumdan sonra uygulayın
 
    Sağlama paketi uygulama ile ilgili adım adım yönergeler için bkz. [Sağlama paketi uygulama](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
@@ -95,4 +95,4 @@ Sağlama, yeni Windows cihazlarda kullanılmak üzere tasarlanmıştır. Sağlam
 Toplu kayıtlı cihazlar, kullanıcı hedefli sertifikaları ve Wi-Fi dağıtımını kullanamaz. Bu bağlantıları yönetmek için [cihaz düzeyinde sertifikalara](certificates-configure.md) ihtiyacınız vardır. 
 
 ### <a name="conditional-access"></a>Koşullu Erişim
-Koşullu erişim, toplu kayıt kullanılarak kaydedilen Windows cihazlar için kullanılabilir değil.
+Toplu kayıt kullanılarak kaydedilen Windows cihazları için koşullu erişim kullanılamaz.

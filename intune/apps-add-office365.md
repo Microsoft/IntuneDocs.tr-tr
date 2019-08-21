@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3b532de1aa790d10efc84be314da903d86dabfd
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: eff9f965649587a929e45d0f9d59305194ffe68b
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582756"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651157"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Office 365 uygulamalarını Windows 10 cihazlara atama
 
@@ -39,7 +39,7 @@ Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune
 - Bu uygulamaları dağıtacağınız cihazların Windows 10 Creators Update veya üzerini çalıştırıyor olması gerekir.
 - Intune, yalnızca Office 365 paketinden Office uygulamaları eklemeyi destekler.
 - Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa yükleme başarısız olabilir ve kullanıcılar kaydedilmeyen dosyalardaki veriler kaybedebilir.
-- Bu yükleme yöntemi Windows 10S, Windows Home, Windows Team, Windows Holographic veya Windows Holographic for Business çalıştıran cihazlarda desteklenmez.
+- Bu yükleme yöntemi Windows Home, Windows Team, Windows holographic veya Windows holographic for Business cihazlarında desteklenmez.
 - Intune, daha önce Intune ile Office 365 uygulamalarını dağıttığınız bir cihaza Microsoft Mağazası’ndan Office 365 masaüstü uygulamalarının (Office Centennial uygulamaları olarak bilinir) yüklenmesini desteklemez. Bu yapılandırmayı yüklerseniz veri kaybına veya bozulmasına neden olabilir.
 - Birden fazla gerekli veya kullanılabilir uygulama ataması aynı anda çalışmaz. Bir uygulama ataması, kendinden önce yüklenmiş diğer uygulama atamalarının üzerine yazar. Örneğin ilk Office uygulamaları kümesi Word’ü barındırıyor ve sonraki barındırmıyorsa, Word kaldırılır. Bu koşul Visio ve Project uygulamaları için geçerli değildir.
 - Multi-Office 365 dağıtımları Şu anda desteklenmemektedir. Cihaza yalnızca bir dağıtım gönderilir
