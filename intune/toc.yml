@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: Uygulama koruma ilkesi teslimi
                   href: app-protection-policy-delivery.md
+                - name: Uygulama uzantılarını koruma
+                  href: app-protection-policy-extensions.md
                 - name: Uygulama koruma kullanıcı durumunu izleme
                   href: app-protection-policies-monitor.md
                 - name: WIP uygulama koruma ilkelerine hazırlanma
