@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd2a2b73c5dc7b792e5766c3fded152eabc1f53b
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: dcfc43c3fe023d54c99a88356f9bfc2a8bdebc47
+ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582898"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894348"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -55,9 +55,11 @@ Intune Uygulama SDK’sı Xamarin Bağlamaları ile derlenen Xamarin uygulamalar
 
 [Lisans koşullarını](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf) gözden geçirin. Kendi kayıtlarınız için lisans koşullarının bir kopyasını yazdırmalı ve saklamalısınız. Intune Uygulama SDK’sı Xamarin Bağlamalarını indirip kullandığınızda bu lisans koşullarını kabul etmiş olursunuz. Kabul etmiyorsanız, yazılımı kullanmayın.
 
-SDK, [kimlik doğrulama](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) ve koşullu başlatma senaryoları için [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) kullanır ve bu sayede uygulamaların [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)ile yapılandırılması gerekir. 
+Intune SDK, [kimlik doğrulama](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) ve koşullu başlatma senaryoları için [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) kullanır ve bu sayede uygulamaların [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)ile yapılandırılması gerekir. 
 
 Uygulamanız zaten ADAL veya MSAL kullanacak şekilde yapılandırıldıysa ve Azure Active Directory kimlik doğrulaması için kendi özel istemci KIMLIĞI kullanılıyorsa, Xamarin uygulama izinlerinizi Intune mobil uygulama yönetimi (MAM) hizmetine verme adımlarının deyiminden. [Intune SDK 'sını kullanmaya başlama](app-sdk-get-started.md)konusunun "[uygulamanızın Intune uygulama koruma hizmeti 'Ne erişmesine izin verme](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" bölümündeki yönergeleri kullanın.
+
+
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS mobil uygulamanızda Intune uygulama koruma ilkelerini etkinleştirme
 1. [Microsoft.Intune.MAM.Xamarin.iOS NuGet paketini](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) Xamain.iOS projenize ekleyin.
@@ -83,13 +85,15 @@ Uygulamanız zaten ADAL veya MSAL kullanacak şekilde yapılandırıldıysa ve A
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
 
-      Uygulamalar, IntuneMAMEnrollmentDelegate’in alt sınıflarından birinde EnrollmentRequestWithStatus yöntemini uygulayarak ve IntuneMAMEnrollmentManager’ın Temsilci özelliğini bu sınıfa ait bir örneğe ayarlayarak bir kayıt denemesinin sonucunu belirleyebilir. Örnek için lütfen [örnek Xamarin.iOS uygulamamıza](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) bakın.
+      Uygulamalar, IntuneMAMEnrollmentDelegate’in alt sınıflarından birinde EnrollmentRequestWithStatus yöntemini uygulayarak ve IntuneMAMEnrollmentManager’ın Temsilci özelliğini bu sınıfa ait bir örneğe ayarlayarak bir kayıt denemesinin sonucunu belirleyebilir. 
 
       Kayıt başarıyla tamamlandıktan sonra uygulamalar, şu özelliği sorgulayarak kaydedilen hesabın UPN’sini (önceden bilinmiyorsa) belirleyebilir: 
 
       ```csharp
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
+### <a name="sample-applications"></a>Örnek uygulamalar
+Xamarin. iOS uygulamalarında MAM işlevlerini vurgulayan örnek uygulamalar [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)' da kullanılabilir.
 
 > [!NOTE] 
 > iOS için bir yeniden eşleyici yok. Bir Xamarin.Forms uygulamasıyla tümleştirme, normal bir Xamarin.iOS projesiyle aynı olacaktır. 
@@ -205,6 +209,7 @@ Bu, yeniden eşleştirici Xamarin sınıflarının devralınmasını değiştird
 
 #### <a name="troubleshooting"></a>Sorun giderme
 * Başlatma sırasında uygulamanızda boş bir beyaz ekranla karşılaşdıysanız, ana iş parçacığında gezinti çağrılarını yürütmeye zorlamanız gerekebilir.
+* Intune SDK 'Sı Xamarin bağlamaları, mvvmcbağlı ve Intune MAM sınıfları arasındaki çakışmalar nedeniyle Mvvmcde gibi platformlar arası bir çerçeve kullanan uygulamaları desteklemez. Bazı müşteriler uygulamalarını düz Xamarin. Forms 'a taşıdıktan sonra tümleştirmede başarılı olmuş olabileceğinden, Mvvmcor kullanan uygulama geliştiricileri için açık kılavuz veya eklentiler sağlamayız.
 
 ### <a name="company-portal-app"></a>Şirket Portalı uygulaması
 Intune SDK 'Sı Xamarin bağlamaları, uygulama koruma ilkelerini etkinleştirmek için cihazda [Şirket portalı](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android uygulamasının varlığını kullanır. Şirket Portalı uygulama koruma ilkelerini Intune hizmetinden alır. Uygulama başlatıldığında, ilkeyi ve ilkenin zorlanmasına yönelik kodu Şirket Portalı’dan yükler. Kullanıcının oturum açmış olması gerekmez.
@@ -215,7 +220,7 @@ Intune SDK 'Sı Xamarin bağlamaları, uygulama koruma ilkelerini etkinleştirme
 Cihaz kaydı olmadan uygulama koruması için kullanıcının Şirket Portalı uygulamasını kullanarak cihazını kaydetmesi gerekli _**değildir**_ .
 
 ### <a name="sample-applications"></a>Örnek uygulamalar
-Xamarin. Android ve Xamarin Forms uygulamalarındaki MAM işlevlerini vurgulayan örnek uygulamalar [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)' da kullanılabilir.
+Xamarin. Android ve Xamarin. Forms uygulamalarındaki MAM işlevlerini vurgulayan örnek uygulamalar [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)' da kullanılabilir.
 
 ## <a name="support"></a>Destek
-Kuruluşunuz mevcut bir Intune müşterisiyse, lütfen Microsoft destek temsilcisiyle birlikte çalışarak bir destek bileti açın ve [GitHub sorunları sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) bir sorun oluşturun ve mümkün olan en kısa sürede yardım edeceğiz. 
+Kuruluşunuz mevcut bir Intune müşterisiyse, lütfen Microsoft destek temsilcisiyle birlikte çalışarak bir destek bileti açın ve [GitHub sorunları sayfasında](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)bir sorun oluşturun. Mümkün olduğunca kısa sürede yardım edeceğiz. 

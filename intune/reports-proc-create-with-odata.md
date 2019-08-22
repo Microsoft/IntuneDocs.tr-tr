@@ -1,12 +1,12 @@
 ---
-title: OData akışına Power BI ile bir rapor oluşturma
+title: Power BI ile OData akışından bir Intune raporu oluşturma
 titleSuffix: Microsoft Intune
 description: Power BI Desktop kullanarak Intune Veri Ambarı API’sinden etkileşimli bir filtre ile ağaç harita görselleştirmesi oluşturun.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
+ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353655"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894309"
 ---
-# <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>OData akışına Power BI ile bir rapor oluşturma
+# <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Power BI ile OData akışından bir Intune raporu oluşturma
 
-Bu makalede, Power BI Desktop kullanarak nasıl etkileşimli bir filtre ile ağaç harita görselleştirmesi oluşturulacağı açıklanır. Örneğin malı işlerden sorumlu genel müdürünüz, şirkete ait cihazlarla kişisel cihazların genel dağılımını öğrenmek isteyebilir. Bu ağaç harita, toplam cihaz türü sayısı hakkında bilgi sağlar. Kaç tane iOS, Android ve Windows cihazın şirkete ait veya kişisel cihaz olduğunu gözden geçirebilirsiniz.
+Bu makalede, kullanıcıların etkileşimli bir filtre Power BI Desktop kullanarak Intune verilerinizin ağaç Haritası görselleştirmesinin nasıl oluşturulacağı açıklanmaktadır. Örneğin, CFO, cihazların genel dağıtımının şirkete ait cihazlar ve kişisel cihazlar arasında nasıl Karşılaştırıldığı hakkında bilgi alabilir. Bu ağaç harita, toplam cihaz türü sayısı hakkında bilgi sağlar. Kaç tane iOS, Android ve Windows cihazın şirkete ait veya kişisel cihaz olduğunu gözden geçirebilirsiniz.
 
 ## <a name="overview-of-creating-the-chart"></a>Grafiği oluşturmaya genel bakış
 
@@ -42,7 +42,7 @@ Bu grafiği oluşturmak için şunları yapmanız gerekir:
 
 Power BI’da tablolar ile çalışırsınız. Tabloların veri alanları bulunur. Her bir veri alanına ait bir veri türü vardır. Alanlar yalnızca uygun veri türüne ait verileri barındırabilir. Veri türleri numara, metin, tarih vb. şeklindedir. Power BI’daki tablolar, modeli yüklediğinizde kiracınızda bulunan geçmiş verilerle dolar. Bazı veriler zamanla değişse de, veri modeli güncelleştirilmediği sürece tablo yapısı değişmez.
 
-_Varlık_ ve _tablo_ terimlerinin kullanımı aklınızı karıştırabilir. Veri modeline OData akışından erişilebilir. OData evreninde tablo olarak bilinen öğelere Power BI’da varlık adı verilir. Her iki terim de aslında aynı olup verilerinizi taşıyan şeye verilen addır.
+*Varlık* ve *tablo* terimlerinin kullanımı aklınızı karıştırabilir. Veri modeline bir OData (açık veri Protokolü) akışı aracılığıyla erişilebilir. OData evreninde tablo olarak bilinen öğelere Power BI’da varlık adı verilir. Her iki terim de aslında aynı olup verilerinizi taşıyan şeye verilen addır. OData hakkında daha fazla bilgi için bkz. [OData 'e genel bakış](/odata/overview).
 
 ## <a name="install-power-bi-desktop"></a>Power BI Desktop’ı yükleme
 
@@ -54,48 +54,48 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop şuradan indir
 > Intune’da **Raporlar** izniniz olmalıdır. Daha fazla bilgi için bkz. [Yetkilendirme](reports-api-url.md).
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Microsoft Intune-genel bakış** dikey penceresinin sağ tarafındaki **diğer görevler** altında bulunan veri ambarı bağlantısını seçerek **Intune veri ambarı** bölmesini açın.
-4. Özel akış URL’sini kopyalayın. Örneğin, `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-1. Power BI Desktop’ı açın.
-2. **Veri Al** > **OData akışı**’nı seçin.
-3. Özel akış URL’sini **OData akışı** penceresindeki URL kutusuna yapıştırın.
-4. **Temel**'i seçin.
+2. **Microsoft Intune-genel bakış** dikey penceresinin sağ tarafındaki **diğer görevler** altında bulunan veri ambarı bağlantısını seçerek **Intune veri ambarı** bölmesini açın.
+3. Özel akış URL’sini kopyalayın. Örneğin, `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Power BI Desktop’ı açın.
+5. MenüÇubuğu ' ndan **Dosya** > **veri** > Al**OData akışı**' nı seçin.
+6. Önceki adımdan kopyaladığınız özel akış URL 'sini **OData akış** penceresindeki URL kutusuna yapıştırın.
+7. **Temel**'i seçin.
 
     ![Kiracınız için Intune veri ambarı için OData akışı](media/reports-create-01-odatafeed.png)
 
-9. **Tamam**’ı seçin.
-10. **Kuruluş hesabı**’nı seçin ve Intune kimlik bilgilerinizle oturum açın.
+8. **Tamam**’ı seçin.
+9. **Kuruluş hesabı**’nı seçin ve Intune kimlik bilgilerinizle oturum açın.
 
     ![Kuruluş hesabı kimlik bilgileri](media/reports-create-02-org-account.png)
 
-11. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
+10. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
 
     ![Gezgin 'in ekran görüntüsü-veri ambarı tablolarının listesi](media/reports-create-02-loadentities.png)
 
-12. **cihazlar** ve **ownerTypes** tablolarını seçin.  **Yükle**’yi seçin. Power BI modele veri yükler.
+11. **cihazlar** ve **ownerTypes** tablolarını seçin.  **Yükle**’yi seçin. Power BI modele veri yükler.
 
 ## <a name="create-a-relationship"></a>Bir ilişki oluşturma
 
-Çözümlemek için birden fazla tabloyu içeri aktarabilirsiniz, yani yalnızca bir tablodaki verileri değil, farklı tablolardaki ilişkili verileri alabilirsiniz.  Power BI’ın sizin için ilişkileri arayan ve oluşturan **otomatik algılama** özelliği mevcuttur. Veri Ambarı’ndaki tablolar, Power BI’ın otomatik algılama özelliğiyle birlikte çalışabilecek şekilde derlenmiştir. Ancak Power BI ilişkileri otomatik olarak bulamasa bile bunları yönetebilirsiniz.
+Çözümlemek için birden fazla tabloyu içeri aktarabilirsiniz, yani yalnızca bir tablodaki verileri değil, farklı tablolardaki ilişkili verileri alabilirsiniz. Power BI, sizin için ilişkileri bulmayı ve oluşturmayı deneyen **Otomatik Algıla** adlı bir özelliğe sahiptir. Veri ambarındaki tablolar, Power BI Otomatik Algıla özelliği ile çalışacak şekilde oluşturulmuştur. Ancak Power BI ilişkileri otomatik olarak bulamazsa, ilişkileri yine de yönetmeye devam edebilirsiniz.
 
 ![Tablolar arasında ilgili verilerin ilişkilerini yönetme](media/reports-create-03-managerelationships.png)
 
 1. **İlişkileri Yönet**’i seçin.
-2. Power BI ilişkileri henüz algılamadıysa **Otomatik algıla...** seçeneğine tıklayın.
+2. Power BI zaten ilişki algılamıyorsa **otomatik algıla...** seçeneğini belirleyin.
 
-İlişki, Kaynak ve Hedef sütunlarında görüntülenir. Bu örnekte **cihazlar** tablosundaki **ownerTypeKey** veri alanı, **ownerTypes** tablosundaki **ownerTypeKey** veri alanına bağlantı sağlar. Bu ilişkiyi kullanarak cihaz türü kodunun düz adını **cihazlar** tablosunda arayabilirsiniz.
+İlişki, Kaynak ve Hedef sütunlarında görüntülenir. Bu örnekte **cihazlar** tablosundaki **ownerTypeKey** veri alanı, **ownerTypes** tablosundaki **ownerTypeKey** veri alanına bağlantı sağlar. **Cihazlar** tablosundaki cihaz türü kodunun düz adını aramak için ilişkiyi kullanırsınız.
 
 ## <a name="create-a-treemap-visualization"></a>Ağaç haritası görselleştirmesi oluşturma
 
-Bir ağaç haritası, hiyerarşik verileri kutu içinde kutu olarak gösterir. Hiyerarşinin her bir dalında kutular bulunur. Bu kutular ise alt dalları gösteren daha küçük kutular barındırır. Intune verilerinizin ağaç haritasını oluşturmak için Power BI Desktop kullanabilirsiniz.
+Ağaç Haritası grafiği, hiyerarşik verileri kutular içindeki kutular olarak gösterir. Hiyerarşinin her bir dalında kutular bulunur. Bu kutular ise alt dalları gösteren daha küçük kutular barındırır. Intune kiracı verilerinizin bir ağaç haritasını oluşturmak için Power BI Masaüstü 'nü kullanarak, cihaz üreticisi türlerinin göreli miktarları gösterilmektedir.
 
 ![Power BI ağaç Haritası görselleştirmeleri](media/reports-create-03-treemap.png)
 
-1. Grafik türü seçin. **Ağaç haritası**’nı seçin.
-2. Veri modelinde **cihazlar** tablosunu bulun.
-3. **Cihazlar** tablosunu genişletin ve **Alanlar** panelindeki **üretici** veri alanını seçin.
-4. **Üretici** veri alanını, rapor tuvalindeki Ağaç Haritasına sürükleyin.
-5. **Cihazlar** tablosundaki **deviceKey** veri alanını **Görselleştirmeler** panelindeki **Değerler** bölümüne sürükleyin ve **Veri alanını buraya sürükleyin** adlı kutuya bırakın.  
+1. **Görsel öğeler** bölmesinde, **ağaç Haritası**' nı bulup seçin. **Treemap** grafiği rapor tuvaline eklenecektir.
+2. **Alanlar** bölmesinde, `devices` tabloyu bulun.
+3. Tabloyu genişletin ve `manufacturer` veri alanını seçin. `devices`
+4. Veri alanını rapor tuvaline sürükleyin ve treemap grafiğine bırakın. `manufacturer`
+5. `devices` Tablodaki veri alanını, görsel öğeler bölmesine sürükleyin ve veri alanı Ekle etiketli kutudaki değerler bölümünün altına bırakın. `deviceKey`  
 
 Artık kuruluşunuzdaki cihaz üreticileri dağılımını gösteren bir görseliniz var.
 
@@ -105,18 +105,19 @@ Artık kuruluşunuzdaki cihaz üreticileri dağılımını gösteren bir görsel
 
 Uygulamanızı kullanarak ilave sorular yanıtlayabilmek için ağaç haritanıza bir filtre ekleyebilirsiniz.
 
+1. Filtre eklemek için, rapor tuvali ' ni seçin ve ardından **görsel öğeler**altında **dilimleyici simgesini** (![veri modeli ve desteklenen ilişkilerle](media/reports-create-slicer.png)ağaç Haritası) seçin. Boş **dilimleyici** görselleştirmesi tuvalde görünür.
+2. **Alanlar** bölmesinde, `ownerTypes` tabloyu bulun.
+3. Tabloyu genişletin ve `ownerTypeName` veri alanını seçin. `ownerTypes`
+4. `ownerTypes`Tablodaki veri alanını filtreler bölmesine sürükleyin ve bu sayfadaki filtreler altında veri alanları Ekle etiketli kutuda bu sayfaya bırakın. `onwerTypeName`  
 
-1. Filtre eklemek için, rapor tuvali ' ni seçin ve ardından **görsel öğeler**altında **dilimleyici simgesini** (![veri modeli ve desteklenen ilişkilerle](media/reports-create-slicer.png)ağaç Haritası) seçin.
-2. **ownerTypes** tablosunu bulun ve **ownerTypeName** veri alanını **Görselleştirmeler** panelindeki **Filtreler**’in altına sürükleyin.  
-
-   Cihazlar tablosu altında **OwnerTypeKey** adlı bir veri alanı vardır. Bu veri alanı, cihazın şirkete ait veya kişisel olmasıyla ilgili bir kod barındırır. Bu filtrede kolay adlar kullanmayı tercih edeceğiniz için **ownerTypes** tablosunu bulun ve **ownerTypeName**’i sürükleyin. Bu örnek, veri modelinin tablolar arasındaki ilişkiyi nasıl desteklediğini gösterir.
+   Tabloda, bir cihazın şirkete ait veya kişisel olup olmadığı `OwnerTypeKey`gibi bir veri içeren adlı bir veri alanı bulunur. `OwnerTypes` Bu filtrede kolay adlar göstermek istiyorsanız, `ownerTypes` tabloya bakın ve **ownerTypeName** öğesini dilimleyiciye sürükleyin. Bu örnek, veri modelinin tablolar arasındaki ilişkiyi nasıl desteklediğini gösterir.
 
 ![Filter ile treemap-tablolar arasındaki ilişkileri destekler](media/reports-create-08_ownertype.png)
 
 Artık şirkete ait ve kişisel cihazlar arasında geçiş yapmak üzere kullanılacak bir filtreniz var. Dağılımın nasıl değiştiğini görmek için bu filtreyi kullanın.
 
-1. **Şirket**’e tıklayarak şirkete ait cihaz dağılımını görüntüleyin.
-2. **Kişisel**’e tıklayarak kişisel cihazları görüntüleyin.
+1. Şirkete ait cihaz dağıtımına sahip olduğunu görmek için Dilimleyicinin içindeki **Şirket** ' ı seçin.
+2. Kişisel cihazları görmek için Dilimleyicinin içinden **Kişisel** ' i seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
