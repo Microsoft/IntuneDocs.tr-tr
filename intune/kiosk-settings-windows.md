@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487746"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998884"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune 'da bilgi noktası olarak çalıştırılacak Windows 10 ve üzeri cihaz ayarları
 
@@ -97,6 +97,17 @@ Cihazda yalnızca bir uygulama çalıştırır.
   - **Mağaza uygulaması Ekle**: **Mağaza uygulaması Ekle**' yi seçin ve listeden bir uygulama seçin.
 
     Listede hiç uygulama yok mu? [İstemci Uygulamaları](apps-add.md)’ndaki adımları kullanarak birkaç uygulama ekleyin.
+    
+ - **Uygulama yeniden başlatmaları Için bakım penceresini belirtin**: Varsayılan değer "Yapılandırılmadı" olarak ayarlandığında, yüklemenin tamamlanabilmesi için yeniden başlatma gerektiren uygulamaları denetlemek için "gerektir" seçeneğini belirleyin.
+ 
+     Bilgi noktası tarayıcısı veya iş için diğer Microsoft Store kullanıyorsanız, uygulama yüklemeyi tamamlaması için yeniden başlatma gerektiren uygulama güncelleştirmelerini ne sıklıkta deneteceğinize karar verin. Yapılandırılmamışsa, Iş uygulamaları için Microsoft Store, bir uygulama güncelleştirmesi yüklendikten sonra zamanlanmamış bir süre 3 gün sonra yeniden başlatılır.
+     
+     - **Bakım penceresi başlangıç zamanı**: Yeniden başlatma gerektiren uygulama güncelleştirmeleri için istemcilerin denetlemeye başlayacağı tarih ve saati seçin. Varsayılan başlangıç saati gece yarısı veya sıfır dakikadır.
+     
+     - **Bakım penceresi yinelemesi**: Varsayılan değer günlük ' dir.
+         Uygulama güncelleştirmelerinin bakım pencerelerinin ne sıklıkla olacağını ayarlayın. Zamanlanmamış uygulama yeniden başlatmalarının önüne geçmek için öneri günlük bir uygulamadır.
+
+  [ApplicationManagement/Scheduleforcerestartforupdatearızaları CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>Çoklu uygulama bilgi noktaları
 

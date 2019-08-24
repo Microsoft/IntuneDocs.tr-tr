@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: e32b40283410a53a9cbb65a27d0d614da0169d6c
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454077"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70001781"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama
 
@@ -44,13 +44,13 @@ Intune, grupları dışlarken kullanıcı-cihaz ilişkisini dikkate almaz. Kulla
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Uygulama atarken grupları dahil etme ve dışlama 
 Dahil etme ve dışlama atamasını kullanarak gruplara uygulama atamak için:
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** bölmesinde **Uygulamalar**’ı seçin. Eklenen uygulamalar listesi gösterilir.
 5. Atamak istediğiniz uygulamayı seçin. Bir panoda uygulama hakkındaki bilgiler görüntülenir. 
 6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin. 
 
-    ![Uygulama atarken uygulama atamalarını dahil](./media/apps-inc-exl-01.png)
+    ![Uygulama atarken uygulama atamalarını dahil etme](./media/apps-inc-exl-01.png)
 7. **Grup ekle**’yi seçerek uygulamaya atanmış kullanıcı gruplarını ekleyin. 
 8. **Grup ekle** bölmesindeki kullanılabilir atama türlerinden bir **Atama türü** seçin.
 9. Atama türü olarak **Kayıtlı veya kayıtsız olarak kullanılabilir**’i seçin.

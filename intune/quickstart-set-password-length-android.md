@@ -1,12 +1,12 @@
 ---
-title: Hızlı Başlangıç - parola Android cihazları için Uyumluluk İlkesi
+title: Hızlı başlangıç-Android cihazları için parola uyumluluk ilkesi
 titleSuffix: Microsoft Intune
 description: Bu hızlı başlangıçta Android cihazlar için gerekli parola uzunluğunu ayarlamak için Microsoft Intune’u kullanacaksınız.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 08/23/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdedbfc611d44b4d6acb01e5e05bf3e73ed7fbda
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 30c4d5976b7f743a12a9691878e2b7031e373b1d
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044204"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70001842"
 ---
-# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Hızlı Başlangıç: Android cihazlar için parola uyumluluk ilkesi oluşturma
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Hızlı başlangıç Android cihazlar için parola uyumluluk ilkesi oluşturma
 
 Bu hızlı başlangıçta Microsoft Intune kullanarak iş gücünüzdeki Android kullanıcılarının Android cihazlarındaki bilgilere erişim kazanmak için belirli uzunluğa sahip parolalar girmesini gerektireceksiniz. 
 
-Intune cihaz uyumluluk ilkesi, cihazların uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları belirtir. Uyumluluk ilkeleri, şirket kaynaklarına erişimine izin verilip için koşullu erişimle birlikte kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz.
+Intune cihaz uyumluluk ilkesi, cihazların uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları belirtir. Şirket kaynaklarına erişim izni vermek veya erişimi engellemek için, koşullu erişimle uyumluluk ilkelerini kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz.
 
 > [!IMPORTANT]
 > İş gücünüzü korumak için parola ayarlarına ek olarak diğer sistem güvenlik ayarlarını da göz önünde bulundurmalısınız. Daha fazla bilgi için bkz. [Sistem güvenlik ayarları](compliance-policy-create-android-for-work.md).
@@ -48,7 +48,7 @@ Bu hızlı başlangıçta iş gücünüzdeki Android kullanıcılarının Androi
 3. **Platform** olarak **Android**’i seçin. 
 4. **Ayarlar** > **Sistem Güvenliği**’ni seçerek Android **Sistem Güvenliği** dikey penceresini görüntüleyin.
 5. **Mobil cihazların kilidini açmak için parola gerektir** ayarını **Gerekli Kıl** olarak belirleyin.
-6. Seçin **en az sayısal** yanındaki **gerekli parola türü**.
+6. **Gerekli parola türü**' nün yanında **en az sayısal** ' ı seçin.
 7. **En düşük parola uzunluğu** olarak **6** değerini girin. 
 
     ![Microsoft Intune'da grup oluşturma işleminin ekran görüntüsü](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
@@ -68,4 +68,4 @@ Bu hızlı başlangıçta iş gücünüze ait Android cihazların en az altı ka
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Bildirimleri göndermek için uyumsuz cihazlar](quickstart-send-notification.md)
+> [Hızlı başlangıç Uyumsuz cihazlara bildirim gönder](quickstart-send-notification.md)

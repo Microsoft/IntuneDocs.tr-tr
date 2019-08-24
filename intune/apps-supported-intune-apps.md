@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2825286c652a7229c32435a24ca816f21b8f2ff4
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: 63ab31845ba4d084c81ff33970703ec630d67daa
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993732"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70002018"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune korumalı uygulamalar  
 
-Intune ile yönetilen uygulamalar, zengin bir mobil uygulama koruma ilkeleri kümesiyle etkinleştirilir. Yönetilen uygulamalar şunları yapmanıza olanak sağlar:
+Bu konuda listelenen uygulamalar, Microsoft Intune ile yaygın olarak kullanılan desteklenen iş ortağı ve Microsoft uygulamalardır. Intune korumalı uygulamalar, zengin bir mobil uygulama koruma ilkeleri kümesiyle etkinleştirilir. Bu uygulamalar şunları yapmanıza olanak sağlar:
 - Kopyala ve Yapıştır ve farklı kaydet işlevlerini kısıtla
 - Web bağlantılarını güvenli Microsoft tarayıcısının içinde açılacak şekilde yapılandırma
 - Çoklu kimlik kullanımı ve uygulama düzeyinde koşullu erişimi etkinleştirme
@@ -77,7 +77,7 @@ Aşağıdaki tablolar, Microsoft Intune ile yaygın olarak kullanılan desteklen
 | Uygulama başlığı | Uygulama açıklaması | Desteklenen platform (ler) için uygulama mağazası bağlantıları | 
 |-------------------------------------------------|-------------------------|---------------------------------------------|
 | **Acronis erişimi**<p><img alt="Partner app - Acronis Access icon" src="./media/apps-supported-intune-apps/icon-p-acronis-access.png" width="100"> | İş dosyalarınıza her yerden ve tüm cihazlardan Acronis erişimiyle güvenli bir şekilde erişin. Dosyaları ve verileri güvenli ve özel tutarken, yalnızca siz ve kuruluşunuzun bunlara dokunmasına karşın, belgeleri iş arkadaşları, müşteriler ve satıcılarla kolayca paylaşın. Uygulama, benzersiz güvenlik, gizlilik ve yönetim özellikleri ile olağanüstü kullanım kolaylığı için tasarlanmıştır. | [iOS Mağazası bağlantısı](https://itunes.apple.com/us/app/acronis-access/id429704844?mt=8) |                       
-| **Microsoft Intune için Adobe Acrobat okuyucu**<p><img alt="Partner app - Adobe Acrobat Reader for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | Intune için Adobe Acrobat Reader ile Microsoft Intune yönetilen bir ortamda PDF 'Leri açın, görüntüleyin ve bunlarla çalışın. İOS ve Android için kullanılabilir. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.adobe.reader.intune),<br>[iOS Mağazası bağlantısı](https://geo.itunes.apple.com/us/app/adobe-acrobat-reader-for-microsoft/id1051980424?mt=8) |                      
+| **Adobe Acrobat okuyucu**<p><img alt="Partner app - Adobe Acrobat Reader icon" src="./media/apps-supported-intune-apps/icon-p-adobe-acrobat-reader.png" width="100"> | Adobe Acrobat Reader ile Microsoft Intune yönetilen bir ortamda PDF 'Leri açın, görüntüleyin ve bunlarla çalışın. İOS ve Android için kullanılabilir. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.adobe.reader),<br>[iOS Mağazası bağlantısı](https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564) |                      
 | **BlackBerry Enterprise Köprüsü**<p><img alt="Partner app - Blackberry Enterprise BRIDGE icon" src="./media/apps-supported-intune-apps/icon-p-blackberry-enterprise-bridge.png" width="100"> | BlackBerry Enterprise Köprüsü, Microsoft Word, Microsoft PowerPoint ve Microsoft Excel gibi Intune tarafından yönetilen Microsoft uygulamalarını kullanarak belgelerinizi BlackBerry Dynamics 'ten güvenli bir şekilde görüntülemenizi, düzenlemenizi ve kaydetmenizi sağlar. Belgelerinizi bir e-posta eki olarak paylaşabilir ve BlackBerry Dynamics ve Intune tarafından yönetilen mobil uygulamalar arasındaki belge paylaşımı işlemi sırasında veri şifrelemesini koruyabilirsiniz. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.blackberry.intune.bridge),<br>[iOS Mağazası bağlantısı](https://itunes.apple.com/us/app/blackberry-enterprise-bridge/id1305494864?mt=8) |
 | **EMM için kutu**<p><img alt="Partner app - Box for EMM icon" src="./media/apps-supported-intune-apps/icon-p-box-for-emm.png" width="100"> | EMM için Box kullanan tüm mobil cihazlarda güvenlik, ilke ve sağlama işlemlerini merkezi olarak yönettiğinizde, çalışanlarınızın bağlı ve işbirliği yapmasına devam edin. | [iOS Mağazası bağlantısı](https://itunes.apple.com/us/app/box-for-emm/id882085676?mt=8) |
 | **Microsoft Intune için CellTrust SL2™**<p><img alt="Partner app - CellTrust SL2 for Microsoft Intune icon" src="./media/apps-supported-intune-apps/icon-p-celltrust-sl2.png" width="100"> | Microsoft Intune için CellTrust SL2™, kişisel ve iş iletişimlerini tek bir cihazda ayrı tutmak için kendi cihazlarınıza güvenli bir mobil Iş numarası (MBN) atayarak kullanılan kurumsal düzeyde bir uygulamadır. Sorunsuz çözümler, kişisel numara kullanmadan, cihazdaki SMS iletilerini ve iş çağrılarını korur. Bu yetenek, iş iletişimleri için daha fazla güvenlik gerektiren kuruluşlar için ve eBulma ve uyumluluk ihtiyaçları için arşivleme açısından önemlidir. <br> Microsoft Intune kurumsal taşınabilirlik yönetimi (EMM) alanındaki bulut tabanlı bir hizmettir ve Şirket verilerinizi korumalı tutarken iş gücünüzün üretken olmasına yardımcı olur. <br> Microsoft Intune için CellTrust SL2™, güçlü bir kurumsal Mobility platformu sunarak çalışanların go üzerinde çalışmasına izin vererek, güvenli iş uygulamalarına ve ses ve metin mesajlaşma erişimine kolay erişim sağlar. Uygulama, kuruluşların sektörde BT gereksinimlerine göre uyarlamalarını sağlamak için Microsoft Intune SDK 'lar ve özelleştirilmiş özelliklerle geliştirilmiştir. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.celltrust.sl2_intune),<br>[iOS Mağazası bağlantısı](https://itunes.apple.com/us/app/celltrust-sl2-for-intune/id1442087513?mt=8) |
