@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680112"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021746"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
 
@@ -51,7 +51,6 @@ Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler gönd
 - Gruplar, kullanıcıları veya cihazları içerebilir ancak iletiler yalnızca kullanıcılara gönderilir ve Kullanıcı tarafından kaydedilen her bir iOS veya Android cihazına gönderilir.  
 
 **Teslim**:  
-- Intune, bir bildirim gönderildikten sonra teslimi bir saate kadar dener.  
 - Intune, kullanıcıların Şirket Portalı uygulamasına iletiler göndererek anında iletme bildirimi oluşturur. Bildirimin cihaza itilmesi için kullanıcıların uygulamada oturum açmış olması gerekmez.  
 - Intune ve Şirket Portalı uygulaması, özel bir bildirimin teslimini garanti edemez. Özel bildirimler, her biri bir süre sonra, acil iletilerde kullanılmamalıdır.  
 - Intune 'dan gelen özel bildirim iletileri cihazlarda standart anında iletme bildirimleri olarak görünür. Şirket Portalı uygulaması bildirimi aldığında bir iOS cihazında açıksa bildirim, bir anında iletme bildirimi yerine uygulamada görüntülenir.  

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca7e7646f51331e4d24cec9b50d7afae4870ebe3
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 8774b5af7555462b7754e4d0f8a6f50a330854ff
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894371"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021825"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -115,21 +115,8 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
      `IntuneMAMResources.bundle` kaynak paketini **Derleme Aşamaları** içindeki **Paket Kaynaklarını Kopyala** altına sürükleyerek kaynak paketini projeye ekleyin.
 
      ![Intune Uygulama SDK'sı iOS: Paket kaynaklarını kopyalama](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-     
-2. Swift 'ten Intune API 'Lerinden herhangi birini çağırmanız gerekiyorsa, uygulamanızın/uzantınızın gerekli Intune SDK üst bilgilerini bir amaç-C köprü oluşturma üst bilgisi aracılığıyla içeri aktarması gerekir. Uygulamanız/uzantınız zaten bir amaç-c köprü oluşturma üst bilgisi içermiyorsa, `SWIFT_OBJC_BRIDGING_HEADER` derleme yapılandırması ayarı veya Xcode Kullanıcı arabirimi 'nin **Hedef-c köprü üstbilgi** alanı aracılığıyla bir tane belirtebilirsiniz. Köprü oluşturma üst bilgisi şuna benzer görünmelidir:
-
-   ```objc
-      #import <IntuneMAMSwift/IntuneMAM.h>
-   ```
-   
-   Bu, tüm Intune SDK 'sının API 'Lerini uygulamanızın/uzantınızdaki tüm Swift kaynak dosyaları genelinde kullanılabilir hale getirir. 
-   
-    > [!NOTE]
-    > * Tüm dahil edilecek ıntunemam. h yerine yalnızca belirli Intune SDK üst bilgilerini Swift 'e köprülemek isteyebilirsiniz
-    > * Tümleştirmiş olduğunuz çerçeve/statik kitaplığa bağlı olarak, üstbilgi dosyalarının yolu farklı olabilir.
-    > * Intune SDK API 'Lerinin bir modül içeri aktarma ifadesiyle (örn: import IntuneMAMSwift) Swift 'ta kullanılabilir hale getirilmesi Şu anda desteklenmemektedir. Amaç-C köprü oluşturma üst bilgisi kullanılması önerilen yaklaşımdır.
-    
-3. Aşağıdaki iOS çerçevelerini projeye ekleyin:  
+         
+2. Aşağıdaki iOS çerçevelerini projeye ekleyin:  
 -  MessageUI.framework  
 -  Security.framework  
 -  MobileCoreServices.framework  
@@ -142,7 +129,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 -  QuartzCore.framework  
 -  WebKit.framework
 
-4. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
+3. Her bir proje hedefinde **Özellikler**’i seçip **Anahtar Zinciri Paylaşımı** anahtarını etkinleştirerek anahtar zinciri paylaşımını etkinleştirin (önceden etkinleştirilmemişse). Anahtarlık paylaşımı, sonraki adıma devam edebilmeniz için gereklidir.
 
    > [!NOTE]
    > Sağlama profilinizin, yeni anahtarlık paylaşımı değerlerini desteklemesi gerekir. Anahtarlık erişim grupları bir joker karakteri desteklemelidir. Bunu,. mobileprovision dosyasını bir metin düzenleyicisinde açıp **Anahtarlık erişim grupları**araması yaparak ve bir joker karakter olmasını sağlayarak denetleyebilirsiniz. Örneğin:
@@ -154,7 +141,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
    >  </array>
    >  ```
 
-5. Anahtarlık paylaşımını etkinleştirdikten sonra Intune uygulama SDK 'sının verilerini depolayabileceği ayrı bir erişim grubu oluşturmak için adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. Anahtarlık erişim grubunu oluşturmak için Kullanıcı arabirimini kullanıyorsanız, şu adımları izlediğinizden emin olun:
+4. Anahtarlık paylaşımını etkinleştirdikten sonra Intune uygulama SDK 'sının verilerini depolayabileceği ayrı bir erişim grubu oluşturmak için adımları izleyin. UI veya yetkilendirmeler dosyasını kullanarak bir anahtarlık erişim grubu oluşturabilirsiniz. Anahtarlık erişim grubunu oluşturmak için Kullanıcı arabirimini kullanıyorsanız, şu adımları izlediğinizden emin olun:
 
      a. Mobil uygulamanızda tanımlanmış bir Anahtarlık erişim grubu yoksa, uygulamanın paket KIMLIĞINI **ilk** grup olarak ekleyin.
     
@@ -172,11 +159,11 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
       > [!NOTE]
       > Yetkilendirme dosyası, mobil uygulamanıza özel, benzersiz bir XML dosyasıdır. iOS uygulamanızda özel izinler ve özellikler belirtmek için kullanılır. Uygulamanızın önceden bir yetkilendirme dosyası yoksa, anahtarlık paylaşımının etkinleştirilmesi (3. adım) Xcode'un uygulamanız için bir dosya oluşturmasına neden olacaktır. Uygulamanın paket KIMLIĞININ listedeki ilk girdi olduğundan emin olun.
 
-6. Uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Sonraki adıma ilerlemeden önce değişikliklerinizi kaydettiğinizden emin olun.
+5. Uygulamanızın `UIApplication canOpenURL` öğesine geçirdiği her protokolü, uygulamanızın Info.plist dosyasının `LSApplicationQueriesSchemes` dizisine dahil edin. Sonraki adıma ilerlemeden önce değişikliklerinizi kaydettiğinizden emin olun.
 
-7. Uygulamanız zaten FaceID kullanmıyorsa [NSFaceIDUsageDescription info.plist anahtarının](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) bir varsayılan iletiyle yapılandırıldığından emin olun. Bu, iOS’un kullanıcıya uygulamanın FaceID’yi nasıl kullanacağını bildirmesi için gereklidir. Intune uygulama koruma ilke ayarları, bir BT yöneticisi tarafından yapılandırılırsa FaceID’nin uygulama erişimi için bir yöntem olarak kullanılmasına imkan verir.
+6. Uygulamanız zaten FaceID kullanmıyorsa [NSFaceIDUsageDescription info.plist anahtarının](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) bir varsayılan iletiyle yapılandırıldığından emin olun. Bu, iOS’un kullanıcıya uygulamanın FaceID’yi nasıl kullanacağını bildirmesi için gereklidir. Intune uygulama koruma ilke ayarları, bir BT yöneticisi tarafından yapılandırılırsa FaceID’nin uygulama erişimi için bir yöntem olarak kullanılmasına imkan verir.
 
-8. Uygulamanızın Info.plist dosyasını yapılandırmayı bitirmek için, [SDK deposuna](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) eklenen IntuneMAMConfigurator aracını kullanın. Araç, üç parametreye sahiptir:
+7. Uygulamanızın Info.plist dosyasını yapılandırmayı bitirmek için, [SDK deposuna](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) eklenen IntuneMAMConfigurator aracını kullanın. Araç, üç parametreye sahiptir:
 
    |Özellik|Kullanımı|
    |---------------|--------------------------------|
@@ -228,7 +215,7 @@ Uygulamanız zaten ADAL veya MSAL kullanıyorsa, aşağıdaki konfigürasyonlar 
 
 Ayrıca, uygulamalar çalışma zamanında bu Azure AD ayarlarını geçersiz kılabilir. Bunu yapmak için `IntuneMAMPolicyManager` örneğinde `aadAuthorityUriOverride`, `aadClientIdOverride` ve `aadRedirectUriOverride` özelliklerini ayarlamanız yeterlidir.
 
-4. İOS uygulama izinlerinizi uygulama koruma ilkesi (APP) hizmetine verme adımlarının izlendiğinden emin olun. "Uygulamanızın Intune uygulama koruma hizmeti 'ne erişmesine izin verin (isteğe bağlı)" altındaki [Intune SDK 'sını](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) kullanmaya başlama yönergelerini kullanın.  
+4. İOS uygulama izinlerinizi uygulama koruma ilkesi (APP) hizmetine verme adımlarının izlendiğinden emin olun. "[Uygulamanızın Intune uygulama koruma hizmeti 'ne erişmesine Izin verin (isteğe bağlı)](https://docs.microsoft.com/intune/app-sdk-get-started#give-your-app-access-to-the-intune-app-protection-service-optional)" altındaki [Intune SDK 'sını](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) kullanmaya başlama yönergelerini kullanın.  
 
 > [!NOTE]
 > Statik olan ve çalışma zamanında saptanması gerekmeyen tüm ayarlar için Info.plist yaklaşımı önerilir. `IntuneMAMPolicyManager` özelliklerine atanan değerler, Info.plist dosyasında belirtilen ve bunlara karşılık gelen tüm değerlerden önceliklidir ve uygulama yeniden başlatıldıktan sonra bile kalıcı olmayı sürdürür. Kullanıcının kaydı silinene ya da değerler temizlenene veya değiştirilene kadar SDK ilke iadelerinde bunları kullanmaya devam edecektir.

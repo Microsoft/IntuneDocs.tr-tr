@@ -541,7 +541,7 @@
       items:
         - name: Intune uygulama yönetimi nedir?
           href: app-management.md
-        - name: Uygulamaları ekleme
+        - name: Uygulama eklemeye genel bakış
           href: apps-add.md
           displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
           items:
@@ -645,7 +645,7 @@
               href: apps-selective-wipe.md
             - name: Uygulama koruma ilkeleri kullanma
               items:
-                - name: Uygulama koruma ilkelerini anlama
+                - name: Uygulama koruma ilkelerine genel bakış
                   href: app-protection-policy.md
                   displayName: app; protection; policy
                 - name: Uygulama koruma ilkeleri oluşturma
