@@ -1,12 +1,12 @@
 ---
-title: Uygulama koruma İlkesi koşullu başlatma eylemleri kullanarak verileri silme
+title: Uygulama koruma ilkesini kullanarak verileri silme koşullu başlatma eylemleri
 titleSuffix: Microsoft Intune
-description: Uygulama koruma İlkesi koşullu başlatma eylemleri Intune kullanarak verileri seçmeli olarak silme hakkında bilgi edinin.
+description: Microsoft Intune 'de uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak temizlemeyi öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558450"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063023"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune uygulama koruma İlkesi koşullu başlatma eylemleri kullanarak verileri seçmeli olarak silme
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
 Intune uygulama koruma ilkelerini kullanarak son kullanıcıların şirket uygulaması veya hesabına erişmelerini engellemek için ayarlar yapılandırabilirsiniz. Bu ayarlar, verileri yeniden konumlandırmayı hedefler ve jailbreak uygulanmış cihazlar veya en düşük işletim sistemi sürümleri gibi öğeler için kuruluşunuz tarafından ayarlanmış gereksinimlere erişir.
  
 Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından şirketinizin kurumsal verilerini silmeyi açıkça seçebilirsiniz. Bazı ayarlarda birden fazla eylem yapılandırabilirsiniz; örneğin belirtilen farklı değerlere bağlı olarak erişimi engellemek ve veri silmek gibi.
 
-## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Koşullu başlatma eylemleri kullanarak bir uygulama koruma ilkesi oluşturma
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Koşullu başlatma eylemlerini kullanarak bir uygulama koruma ilkesi oluşturma
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ni seçin.
 4. **İlke ekle**’ye tıklayın (Mevcut bir ilkeyi de düzenleyebilirsiniz). 
 5. İlke için yapılandırmaya uygun ayarların bir listesini görmek üzere **Gerekli ayarları yapılandır**’a tıklayın. 
-6. Ayarlar bölmesinde aşağı tarafından kaydırma, başlıklı bir bölümde göreceğiniz **koşullu başlatma** düzenlenebilir bir tablosu.
+6. Ayarlar bölmesinde aşağı kaydırarak, düzenlenebilir tabloyla **koşullu başlatma** başlıklı bir bölüm görürsünüz.
 
     ![Intune uygulama koruma erişim eylemlerinin ekran görüntüsü](./media/apps-selective-wipe-access-actions01.png)
 
@@ -81,14 +81,14 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 - En düşük uygulama sürümü
 - En düşük düzeltme eki sürümü
 - Cihaz üreticisi/üreticileri
-- SafetyNet cihaz kanıtı
+- SafetyNet cihaz kanıtlama
 - Uygulamalarda tehdit taraması
 
 **Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
-Örnek Giriş: *Bir üretici; Üretici B* 
+Örnek giriş: *Üretici A; Üretici B* 
 
 >[!NOTE]
-> Bunlar Intune kullanarak cihazları bildirilen bazı yaygın üreticileri ve giriş olarak kullanılabilir: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
+> Bunlar, Intune kullanan cihazlardan bildirilen bazı yaygın üreticlardır ve giriş olarak kullanılabilir: ASUS RT BQ Gionee; Google Hmd genel; HTC Huawei; ınfinx; Kyocera; Limobile; Lenovo LGE; Motorola; OnePlus; Oppo; Samsung Diyez Sony Tecno; Vivo Vodadfone; Xiaomi ZTE; Zuk
 
 Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
 Aşağıdaki eylemlerden birini ayarlayın: 
@@ -111,7 +111,7 @@ Aşağıdaki listede yaygın eylemler verilmiştir:
 
 Bazı durumlarda, örneğin **En düşük işletim sistemi sürümü** ayarında, farklı sürüm numaralarına bağlı olarak ayarı uygulanabilir tüm eylemleri gerçekleştirecek şekilde yapılandırabilirsiniz. 
 
-![Uygulama koruma erişimi eylemleri - en düşük işletim sistemi sürümü görüntüsü](./media/apps-selective-wipe-access-actions05.png)
+![Uygulama koruma erişim eylemlerinin ekran görüntüsü-en düşük işletim sistemi sürümü](./media/apps-selective-wipe-access-actions05.png)
 
 Bir ayar tamamen yapılandırıldıktan sonra ayara ait satır, salt okunur görünüme geçer ve her zaman düzenlenebilir. Ayrıca satırdaki **Ayar** sütununda seçilebilir bir açılan menü bulunur. Yapılandırılmış ve birden fazla eyleme izin vermeyen ayarlarda ise bu açılan menü seçimi bulunmaz.
 

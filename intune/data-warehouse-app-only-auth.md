@@ -1,12 +1,12 @@
 ---
 title: Intune Veri Ambarı uygulaması - yalnızca kimlik doğrulama
 titleSuffix: Microsoft Intune
-description: Bu konuda, veri ambarı uygulaması-yalnızca kimlik doğrulama için Microsoft Intune açıklanmaktadır.
+description: Bu konuda, Microsoft Intune için yalnızca veri ambarı uygulama kimlik doğrulaması açıklanmaktadır.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 08/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f87256580ce3a0e31ef86f15244f49046d9dd35e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2f70ca7d8d85853c38e2e8e88d06bae966431989
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530253"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062969"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Veri Ambarı uygulaması - yalnızca kimlik doğrulama
 
 Azure Active Directory (Azure AD) kullanarak bir uygulamayı ayarlayabilir ve Intune Veri Ambarı’nda kimlik doğrulayabilirsiniz. Bu işlem web siteleri, uygulamalar ve uygulamanın kullanıcı kimlik bilgilerine erişmemesi gereken arka plan işlemlerinde işe yarar. Aşağıdaki adımları izlediğinizde OAuth 2.0 kullanarak uygulamanızı Azure AD’de yetkilendirirsiniz.
 
-## <a name="authorization"></a>Yetkilendirme
+## <a name="authorization"></a>Authorization
 
 Azure Active Directory (Azure AD), OAuth 2.0’ı kullanarak Azure AD kiracınızdaki web uygulamalarına ve web API’lerine erişim yetkisi vermenize olanak tanır. Bu kılavuz, uygulamanızın kimliğini C# kullanarak nasıl doğrulayacağınızı gösterir. OAuth 2.0 yetkilendirme kod akışı, OAuth 2.0 belirtiminin 4.1. bölümünde açıklanmıştır. Daha fazla bilgi için bkz. [OAuth 2.0 ve Azure Active Directory kullanarak web uygulamalarına erişim yetkisi verme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
@@ -92,7 +92,7 @@ Visual Studio’yu kullanarak .NET Framework’ü destekleyen ve kodlama dili ol
 2. Sol tarafta **Visual C#** ’yi seçerek tüm .NET Framework projelerini görüntüleyin.
 3. **Konsol Uygulaması (.NET Framework)** ’nı seçin, bir uygulama adı ekleyin ve **Tamam**’a tıklayarak uygulamayı oluşturun.
 4. **Çözüm Gezgini**’nde **Program.cs**’yi seçerek kodu görüntüleyin.
-5. Çözüm Gezgini'nde derlemesine bir başvuru eklemek `System.Configuration`.
+5. Çözüm Gezgini, derlemeye `System.Configuration`bir başvuru ekleyin.
 6. Açılan menüde **Ekle** > **Yeni öğe**’yi seçin. **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
 7. Sol tarafta, **Visual C#** altında **Kod**’u seçin.
 8. **Sınıf** seçin, sınıfın adını *IntuneDataWarehouseClass.cs* olarak değiştirin ve **Ekle**’ye tıklayın.

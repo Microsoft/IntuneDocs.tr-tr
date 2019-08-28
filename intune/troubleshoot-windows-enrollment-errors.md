@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993710"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063010"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -331,7 +331,7 @@ Hata 0x80070774: Bir sorun oluştu. Doğru oturum açma bilgilerini kullandığ�
 
 Bu sorun, genellikle cihaz ilk oturum açma ekranında zaman aşımına uğrarsa karma bir Azure AD Autopilot senaryosunda cihaz yeniden başlatılmadan önce oluşur. Bağlantı sorunları nedeniyle etki alanı denetleyicisinin bulunamadığını veya başarıyla ulaşılamadığını gösterir. Ya da cihazın etki alanına katılamıyorum bir durum girmiş.
 
-**Sağlamak** En yaygın neden, hibrit Azure AD JOIN 'in kullanıldığı ve Kullanıcı ata özelliğinin Autopilot profilinde yapılandırıldığı bir nedendir. Kullanıcı ata özelliğinin kullanılması, cihazın şirket içi etki alanınıza katılabileceği bir duruma koyduğu ilk oturum açma ekranı sırasında cihazda bir Azure AD katılımı gerçekleştirir. Bu nedenle, Kullanıcı ata özelliği yalnızca standart Azure AD JOIN Autopilot senaryolarında kullanılmalıdır.  Özelliği karma Azure AD JOIN senaryolarında kullanılmalıdır.
+**Sağlamak** En yaygın neden, hibrit Azure AD JOIN 'in kullanıldığı ve Kullanıcı ata özelliğinin Autopilot profilinde yapılandırıldığı bir nedendir. Kullanıcı ata özelliğinin kullanılması, cihazın şirket içi etki alanınıza katılabileceği bir duruma koyduğu ilk oturum açma ekranı sırasında cihazda bir Azure AD katılımı gerçekleştirir. Bu nedenle, Kullanıcı ata özelliği yalnızca standart Azure AD JOIN Autopilot senaryolarında kullanılmalıdır.  Özellik, karma Azure AD JOIN senaryolarında kullanılmamalıdır.
 
 #### <a name="resolution"></a>Çözüm
 
