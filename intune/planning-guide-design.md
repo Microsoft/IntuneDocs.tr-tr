@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a3055d375c98f9a74d0e738b7e894ba038b31776
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783251"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70121854"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -166,7 +166,7 @@ Ortak anahtar altyapısı, bir hizmette güvenli kimlik doğrulaması yapabilmek
 
 Sertifikaları VPN, Wi-Fi veya Intune ile e-posta profilleriyle kullanmayı planlıyorsanız sertifika ilkeleri oluşturmaya ve dağıtmaya hazır, desteklenen bir [PKI altyapısına sahip olduğunuzdan](certificates-configure.md) emin olun.
 
-Ayrıca, SCEP sertifikaları sağlanacaksa hangi sunucunun Ağ Cihazı Kayıt Hizmeti (NDES) özelliğini barındıracağını ve iletişimin nasıl olacağını belirlemeniz gerekir.
+Ayrıca, SCEP sertifika profilleri kullanılacaksa, hangi sunucunun ağ cihazı kayıt hizmeti (NDES) özelliğini barındıraceğini ve iletişimin nasıl olacağını belirlemeniz gerekir.
 
 Daha fazla bilgi:
 
@@ -297,7 +297,7 @@ Sertifika profilleri Intune’un bir kullanıcı veya cihaza sertifika vermesine
 Hangi kullanıcı grubunun sertifikaya ihtiyacı olduğunu, kaç sertifika profili gerekeceğini ve bunların hangi kullanıcı gruplarına dağıtılacağını belgelemeniz önerilir.
 
 >[!NOTE]
-> Güvenilen kök sertifikanın SCEP sertifikası için gerekli olduğunu unutmayın ve SCEP sertifikası için hedeflenen tüm kullanıcıların aynı zamanda güvenilen kök sertifika alacağından emin olun. SCEP sertifikaları gerekiyorsa, hangi SCEP sertifika şablonlarına gerek duyduğunuzu tasarlayın ve belgeleyin.
+> Güvenilir kök sertifikanın SCEP sertifika profili için gerekli olduğunu unutmayın, bu nedenle SCEP sertifika profili için hedeflenen tüm kullanıcıların da güvenilen bir kök sertifika aldığından emin olun. SCEP sertifikaları gerekiyorsa, hangi SCEP sertifika şablonlarına gerek duyduğunuzu tasarlayın ve belgeleyin.
 
 Tasarım sırasında sertifikaları belgelemeye dair bir örnek aşağıda verilmiştir:
 

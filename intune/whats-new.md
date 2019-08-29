@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
-ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
+ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69620212"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122151"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -53,6 +53,18 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-26-2019"></a>26 Ağustos 2019 haftası
+
+### <a name="configure-microsoft-edge-settings-using-administrative-templates-for-windows-10-and-newer----5228061---"></a>Windows 10 ve üzeri için Yönetim Şablonları kullanarak Microsoft Edge ayarlarını yapılandırma <!-- 5228061 -->
+
+Windows 10 ve daha yeni cihazlarda, Intune 'da Grup İlkesi ayarlarını yapılandırmak için yönetim şablonları oluşturabilirsiniz. Bu güncelleştirmede, Microsoft Edge sürüm 77 ve daha yeni sürümleri için uygulanan ayarları yapılandırabilirsiniz.
+
+Yönetim Şablonları hakkında daha fazla bilgi edinmek için bkz. [Intune 'da Grup İlkesi ayarlarını yapılandırmak Için Windows 10 şablonlarını kullanma](administrative-templates-windows.md).
+
+Şunun için geçerlidir:
+
+- Windows 10 ve üzeri (Windows RS4 +)
 
 ## <a name="week-of-august-12-2019"></a>12 Ağustos 2019 haftası
 
@@ -1016,8 +1028,8 @@ Yönetici tarafından yapılan yeni veya mevcut parola ilkesi değişiklikleri, 
 Şunun için geçerlidir:  
 Mac OS
 
-#### <a name="assign-scep-certificates-to-a-userless-macos-device-----2340521----"></a>Kullanıcısız macOS cihazına SCEP sertifikaları atama  <!-- 2340521  -->
-Kullanıcı benzeşimi olmayan cihazlar dahil olmak üzere macOS cihazlarına cihaz özniteliklerini kullanarak Basit Sertifika Kayıt Protokolü (SCEP) sertifikaları atayabilir ve sertifika profilini Wi-Fi veya VPN profilleriyle ilişkilendirebilirsiniz. Bu, Windows, iOS ve Android çalıştıran [Kullanıcı benzeşimi ile ve olmayan CIHAZLARA SCEP sertifikaları atamak](certificates-scep-configure.md#create-a-scep-certificate-profile) için zaten sahip olduğumuz desteği genişletir.  Bu güncelleştirme, macOS için bir SCEP sertifika profili yapılandırırken *cihazın* sertifika türünü seçme seçeneğini ekler.
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521------"></a>Kullanıcısız macOS cihazına SCEP sertifikaları atama    <!-- 2340521    -->
+Kullanıcı benzeşimi olmayan cihazlar dahil olmak üzere macOS cihazlarına cihaz özniteliklerini kullanarak Basit Sertifika Kayıt Protokolü (SCEP) sertifikaları atayabilir ve sertifika profilini Wi-Fi veya VPN profilleriyle ilişkilendirebilirsiniz. Bu, Windows, iOS ve Android çalıştıran [Kullanıcı benzeşimi ile ve olmayan CIHAZLARA SCEP sertifikaları atamak](certificates-profile-scep.md) için zaten sahip olduğumuz desteği genişletir.  Bu güncelleştirme, macOS için bir SCEP sertifika profili yapılandırırken *cihazın* sertifika türünü seçme seçeneğini ekler.
 
 Şunun için geçerlidir: 
 - Mac OS

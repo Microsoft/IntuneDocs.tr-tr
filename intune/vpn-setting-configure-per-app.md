@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 4893f3484c497ed72352b2bbb229003c2d639107
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354497"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122294"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune 'da iOS cihazları için uygulama başına sanal özel ağ (VPN) ayarlama
 
@@ -83,7 +83,7 @@ Güvenilen kök sertifika profili, cihazın VPN sunucusuna otomatik olarak güve
 
 İstemci kimlik doğrulama sertifikasını yapılandırmak ve atamak için aşağıdaki makalelerden birine bakın:
 
-- [Intune ile SCEP sertifikalarını yapılandırma ve yönetme](certificates-scep-configure.md)
+- [Altyapıyı Intune ile SCEP destekleyecek şekilde yapılandırma](certificates-scep-configure.md)
 - [Intune ile PKCS sertifikalarını yapılandırma ve yönetme](certficates-pfx-configure.md)
 
 Sertifikayı istemci kimlik doğrulaması için yapılandırmayı unutmayın. Bu ayarı doğrudan SCEP sertifika profillerinde (**genişletilmiş anahtar kullanımı** listesi > **istemci kimlik doğrulaması**) ayarlayabilirsiniz. PKCS için, sertifika yetkilisinde (CA) sertifika şablonunda istemci kimlik doğrulamasını ayarlayın.
@@ -107,11 +107,11 @@ VPN profili, uygulama başına VPN özelliğinin iOS uygulaması tarafından kul
     - **Kimlik doğrulama sertifikası**: **Tamam**> mevcut bir SCEP veya PKCS sertifikası seçin.      
     - **Bölünmüş tünel**: VPN bağlantısı etkin olduğunda tüm trafiğin VPN tüneli kullanmasına zorlamak için **devre dışı bırak** ' ı seçin. 
 
-      ![Uygulama başına VPN profilinde bir bağlantı, IP adresi veya FQDN, kimlik doğrulama yöntemi ve Microsoft Intune bölünmüş bir denetim girin](./media/vpn-per-app-create-vpn-profile.png)
+      ![Uygulama başına VPN profilinde, Microsoft Intune bir bağlantı, IP adresi veya FQDN, kimlik doğrulama yöntemi ve bölünmüş tünel girin](./media/vpn-per-app-create-vpn-profile.png)
 
     Diğer ayarlar hakkında daha fazla bilgi için bkz. [IOS VPN ayarları](vpn-settings-ios.md).
 
-5.  >   Otomatik VPN uygulama başına VPN türünü seçin > 
+5.  >  Otomatik VPN uygulama başına VPN türünü seçin > 
 
     ![Intune 'da iOS cihazlarda otomatik VPN 'yi uygulama başına VPN olarak ayarlayın](./media/vpn-per-app-automatic.png)
 

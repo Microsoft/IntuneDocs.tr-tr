@@ -1,11 +1,11 @@
 ---
-title: Azure izleyici 'de Microsoft Intune-Azure kullanarak denetim günlüklerini yönlendirme | Microsoft Docs
+title: Microsoft Intune-Azure kullanarak günlükleri Azure Izleyici 'ye yönlendirme | Microsoft Docs
 description: Azure depolama hesabı, Olay Hub 'ları veya Log Analytics 'e Microsoft Intune denetim günlükleri ve işletimsel Günlükler göndermek için tanılama ayarlarını kullanın. Verileri ne kadar süreyle saklamak istediğinizi seçin ve farklı boyuttaki kiracılar için bazı tahmini maliyetleri görüntüleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ed32ad564f850c06b37b15e1994ac066a929ffaa
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354529"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122424"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune 'da günlük verilerini depolama, Olay Hub 'ları veya Log Analytics 'e gönderme (Önizleme)
 
-Microsoft Intune, ortamınız hakkında bilgi sağlayan yerleşik günlükleri içerir. **Denetim günlükleri** , Intune 'da gerçekleşen farklı olay veya görevlerle ilgili ayrıntıları gösterir. **Işletimsel Günlükler (Önizleme)** , aynı zamanda (veya başarısız), uyumlu olmayan cihazların ayrıntılarını ve kaydolmasını sağlayan kullanıcılar ve cihazlar hakkındaki ayrıntıları gösterir.
+Microsoft Intune, ortamınız hakkında bilgi sağlayan yerleşik günlükleri içerir:
+
+- **Denetim günlükleri** , Intune 'da gerçekleşen farklı olay veya görevlerle ilgili ayrıntıları gösterir.
+- **Işletimsel Günlükler (Önizleme)** , uyumlu olmayan cihazlara başarıyla (veya başarısız) kaydolma ve ayrıntıları içeren Kullanıcı ve cihazlara ilişkin ayrıntıları gösterir.
+- **Cihaz uyumluluğu kuruluş günlükleri (Önizleme)** Intune 'da cihaz uyumluluğu ve uyumlu olmayan cihazların ayrıntıları için bir kuruluş raporu gösterir.
 
 Bu Günlükler, depolama hesapları, Olay Hub 'ları ve Log Analytics de dahil olmak üzere Azure Izleyici hizmetlerine de gönderilebilir. Özellikle şunları yapabilirsiniz:
 
@@ -35,7 +39,7 @@ Bu Günlükler, depolama hesapları, Olay Hub 'ları ve Log Analytics de dahil o
 
 Bu özellikler, Intune 'da **Tanılama ayarlarının** bir parçasıdır.
 
-Bu makalede, farklı hizmetlere günlük verileri göndermek, örnek ve maliyet tahminleri sağlamak ve bazı yaygın soruların cevapları için **Tanılama ayarlarının** nasıl kullanılacağı gösterilmektedir.
+Bu makalede, farklı hizmetlere günlük verileri göndermek, örnek ve maliyet tahminleri sağlamak ve bazı yaygın soruların cevapları için **Tanılama ayarlarının** nasıl kullanılacağı gösterilmektedir. Bu özelliği etkinleştirdikten sonra, günlüklerinizin seçtiğiniz Azure Izleyici hizmetine yönlendirilmesidir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -54,7 +58,7 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz yere bağlı olarak, a
 ## <a name="send-logs-to-azure-monitor"></a>Günlükleri Azure izleyici 'ye gönderme
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **İzleme**altında **Tanılama ayarları**' nı seçin. İlk kez açtığınızda açın:
+2. **İzleme**altında **Tanılama ayarları**' nı seçin. İlk kez açtığınızda açın. Aksi takdirde, bir ayar ekleyin.
 
     ![Azure Izleyici 'ye Günlükler göndermek için Intune 'da tanılama ayarlarını etkinleştirin](media/diagnostics-settings-turn-on.png)
 
@@ -87,13 +91,20 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz yere bağlı olarak, a
       Bir depolama hesabı kullanmayı seçerseniz, verileri (bekletme) kaç gün tutmak istediğinizi de girin. Verileri süresiz olarak tutmak için, **bekletme (gün)** değerini `0` (sıfır) olarak ayarlayın.
 
       > [!NOTE]
-      > İşletimsel Günlükler önizlemededir. İşletimsel günlüklere dahil edilen bilgiler dahil olmak üzere geri bildirim sağlamak için [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) (yeni bir Web sitesi açar) sayfasına gidin.
+      > İşletimsel Günlükler önizlemededir. İşletimsel günlüklerde bilgi dahil olmak üzere geri bildirim sağlamak için [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback)'a gidin.
+
+    - Günlük > **devicekarmaşıanceorg**: Cihaz uyumluluğu kuruluş günlükleri (Önizleme) Intune 'da cihaz uyumluluğu ve uyumlu olmayan cihazların ayrıntıları için kuruluş raporunu gösterir. Uyumluluk günlüklerini depolama hesabınıza, Olay Hub 'ına veya Log Analytics 'e göndermek için bu seçeneği belirleyin.
+
+      Bir depolama hesabı kullanmayı seçerseniz, verileri (bekletme) kaç gün tutmak istediğinizi de girin. Verileri süresiz olarak tutmak için, **bekletme (gün)** değerini `0` (sıfır) olarak ayarlayın.
+ 
+      > [!NOTE]
+      > Cihaz uyumluluğu kurumsal günlükleri önizlemededir. Rapordaki bilgiler dahil olmak üzere geri bildirim sağlamak için [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback)' a gidin.
 
     İşiniz bittiğinde, ayarlarınız aşağıdaki ayarlara benzer şekilde görünür: 
 
     ![Intune denetim günlüklerini bir Azure depolama hesabına gönderen örnek resim](media/diagnostics-settings-example.png)
 
-4. Yaptığınız değişiklikleri **kaydedin**. Ayarınız listede gösterilir. Oluşturulduktan sonra Ayarları Değiştir **ayarını** > Düzenle ' yi seçerek**değiştirebilirsiniz.**
+4. Yaptığınız değişiklikleri **kaydedin**. Ayarınız listede gösterilir. Oluşturulduktan sonra Ayarları Değiştir **ayarını** > Düzenle ' yi seçerek değiştirebilirsiniz.
 
 ## <a name="use-audit-logs-throughout-intune"></a>Intune boyunca denetim günlüklerini kullanma
 
