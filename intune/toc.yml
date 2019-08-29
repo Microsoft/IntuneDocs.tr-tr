@@ -510,8 +510,12 @@
           href: certificates-configure.md
           items:
             - name: SCEP
-              href: certificates-scep-configure.md
-              displayName: ksp
+              items:
+                - name: SCEP Altyapısı
+                  href: certificates-scep-configure.md
+                  displayName: ksp
+                - name: SCEP sertifika profilleri
+                  href: certificates-profile-scep.md
             - name: PKCS
               href: certficates-pfx-configure.md
               displayName: ksp
@@ -733,6 +737,8 @@
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: Koşullu erişim sorunlarını giderme
               href: troubleshoot-conditional-access.md
+            - name: Sorun giderme sertifika bağlayıcısı
+              href: troubleshoot-certificate-connector-events.md
             - name: Exchange bağlayıcısı sorunlarını giderme
               href: troubleshoot-exchange-connector.md
         - name: Destek alma
