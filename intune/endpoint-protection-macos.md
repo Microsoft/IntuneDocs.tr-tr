@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82eca1a9c4bfd8944b9ba5ae1716ec46c52a5a81
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021692"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158017"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 'da MacOS Endpoint Protection ayarları  
 
@@ -122,4 +122,5 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
  
     **Varsayılan**: Yapılandırılmamış  
 
+Intune ile Filekasası hakkında daha fazla bilgi için bkz. [filekasası kurtarma anahtarları](encryption-monitor.md#filevault-recovery-keys).
 
