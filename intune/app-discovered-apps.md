@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590916"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206410"
 ---
 # <a name="intune-discovered-apps"></a>Intune bulunan uygulamalar
 
@@ -36,7 +36,7 @@ Intune, kiracınızdaki Intune 'A kayıtlı cihazlarda algılanan uygulamaların
 2. **Intune** bölmesinde, **istemci uygulamaları** > **bulunan uygulamalar**' ı seçin.
 
 >[!NOTE]
->Bulunan **uygulamalar dikey penceresinden** **dışarı aktar** ' i seçerek bulunan uygulamalar listesini bir. csv dosyasına dışarı aktarabilirsiniz.
+>Bulunan uygulamalar dikey penceresinden **dışarı aktar** ' i seçerek bulunan uygulamalar listesini bir. csv dosyasına dışarı aktarabilirsiniz .
 >
 >Bulunan Win32 uygulamaları için şu anda toplam sayım yok. Bu tür veriler yalnızca cihaz başına temelinde görüntülenebilir.
 
@@ -62,6 +62,9 @@ Aşağıdaki liste, uygulama platformu türünü, kişisel cihazlar için izlene
 | Mac OS | Cihazda yüklü tüm uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
 | Android | Yalnızca yönetilen uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
 | Android Kurumsal | Yalnızca yönetilen uygulamalar | Yalnızca Iş profilinde yüklü olan uygulamalar | Her 7 günde bir cihaz kaydı |
+
+> [!NOTE]
+>Intune yönetim uzantısına sahip Windows 10 karma Azure AD 'ye katılmış cihazlar şu anda uygulama envanterini yukarıdaki zamanlamaya göre toplamıyor. Bu bilinen bir sorundur. Bu davranıştaki herhangi bir değişiklik veya güncelleştirme, [geliştirme](in-development.md) ve/veya yenilikler ' [](whats-new.md)de içinde duyurulur.
 
 Bulunan uygulamaların sayısı uygulama yükleme durumu sayısıyla eşleşmeyebilir. Tutarsızlıkların olası nedenleri:
 - Yüklü yönetilen uygulamada bir hedefleme değişikliği, durum dikey penceresindeki yükleme sayısının azalmasına neden olabilir ama algılanan uygulamalarda bildirilmeye devam eder.
