@@ -1,7 +1,7 @@
 ---
-title: Undertastand uygulama koruma İlkesi teslim ve zamanlama
+title: Uygulama koruma ilkesi teslimini ve zamanlamasını anlama
 titleSuffix: Microsoft Intune
-description: Değişiklikleri son kullanıcı cihazlarınızda görüntülendiğinde anlamak uygulama koruma ilkeleri için farklı dağıtım windows öğrenin.
+description: Son Kullanıcı cihazlarınızda değişikliklerin ne zaman görünmeli olduğunu anlamak için, uygulama koruma ilkelerinin farklı dağıtım pencerelerini öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,34 +17,34 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14b4af7145e09e1af3d2a6d3a2fd3ef17319be35
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: e0dcc729eeb76dda1c2d6ddcedbedafdc7f999f0
+ms.sourcegitcommit: 7484ef8006f6b81d8976c328dd704512a31872ec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649017"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70190221"
 ---
-# <a name="understand-app-protection-policy-delivery-timing"></a>Uygulama koruma İlkesi teslim zamanlamasını anlama
+# <a name="understand-app-protection-policy-delivery-timing"></a>Uygulama koruma Ilkesi teslim zamanlamasını anlama
 
-Değişiklikleri son kullanıcı cihazlarınızda görüntülendiğinde anlamak uygulama koruma ilkeleri için farklı dağıtım windows öğrenin.
+Son Kullanıcı cihazlarınızda değişikliklerin ne zaman görünmeli olduğunu anlamak için, uygulama koruma ilkelerinin farklı dağıtım pencerelerini öğrenin.
 
-## <a name="delivery-timing-summary"></a>Teslim zamanlamasını özeti
+## <a name="delivery-timing-summary"></a>Teslim zamanlaması Özeti
 
-Uygulama koruma İlkesi teslim lisans durumu ve kullanıcılarınızın Intune hizmeti kaydını bağlıdır.  
+Uygulama koruma ilkesi teslimi, kullanıcılarınız için lisans durumuna ve Intune hizmeti kaydına bağlıdır.  
 
-|    Kullanıcı durumu    |    Uygulama koruma davranışı     |    Yeniden deneme aralığı (bkz. Not)    |    Bu neden gerçekleşir?    |
+|    Kullanıcı durumu    |    Uygulama koruma davranışı     |    Yeniden deneme aralığı (bkz. nota bakın)    |    Bu neden gerçekleşir?    |
 |-----------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-|    Kiracı eklenmedi    |    Sonraki yeniden deneme zaman aralığını bekler.  Uygulama koruma kullanıcı için etkin değil.    |    24 saat    |    Kiracınız için Intune kurulmadı olduğunda gerçekleşir.    |
-|    Kullanıcı lisanslı değil     |    Sonraki yeniden deneme zaman aralığını bekler.  Uygulama koruma kullanıcı için etkin değil.     |    12 saat - Android cihazlarda ancak, Intune uygulama SDK'sı sürüm 5.6.0 bu aralığı gerektirir veya üzeri. Aksi takdirde Andriod cihazlar için aralığı 24 saattir.   |    Kullanıcının Intune lisansı değil oluşur.    |
-|    Kullanıcı tarafından atanan uygulama koruma ilkeleri yok    |    Sonraki yeniden deneme zaman aralığını bekler.  Uygulama koruma kullanıcı için etkin değil.    |    12 saat        |    Uygulama ayarları kullanıcıya atadığınız değil oluşur.    |
-|    Kullanıcı için Intune MAM başarıyla kaydedildi    |    Uygulama koruma İlkesi ayarları uygulanır.    Güncelleştirmeler yeniden deneme aralığına göre yapılır    |    Intune hizmet, kullanıcı yükü göre tanımlanır.    Genellikle 30 dakika.     |    Kullanıcı MAM yapılandırması için Intune hizmetine başarıyla kaydettiği zaman oluşur.    |
+|    Kiracı eklendi değil    |    Sonraki yeniden deneme aralığı için bekleyin.  Uygulama koruması Kullanıcı için etkin değil.    |    24 saat    |    Intune için kiracınızı kurmayan bir durum oluşur.    |
+|    Kullanıcı lisanslı değil     |    Sonraki yeniden deneme aralığı için bekleyin.  Uygulama koruması Kullanıcı için etkin değil.     |    12 saat, ancak Android cihazlarda bu Aralık, Intune uygulama SDK 'Sı sürüm 5.6.0 veya üstünü gerektirir. Aksi takdirde, Androd cihazları için Aralık 24 saattir.   |    Kullanıcı Intune için lisanslanmadığı zaman gerçekleşir.    |
+|    Kullanıcı, uygulama koruma Ilkeleri atamadı    |    Sonraki yeniden deneme aralığı için bekleyin.  Uygulama koruması Kullanıcı için etkin değil.    |    12 saat        |    Kullanıcıya uygulama ayarları atamadığınızda gerçekleşir.    |
+|    Kullanıcı Intune MAM için başarıyla kaydedildi    |    Uygulama koruması her ilke ayarı için uygulanır.    Güncelleştirmeler, yeniden deneme aralığına göre yapılır    |    Intune hizmeti, Kullanıcı yüküne göre tanımlanır.    Genellikle 30 dakika.     |    Kullanıcı MAM yapılandırması için Intune hizmetine başarıyla kaydolursa oluşur.    |
 
 > [!NOTE]
-> Yeniden deneme aralıkları uygulaması başlatılır yani gerçekleşmesi için etkin uygulaması kullanımı gerektirir ve kullanımda olabilir.  Yeniden deneme aralığı 24 saattir ve kullanıcı uygulamayı başlatmak için 48 saat bekler, uygulama koruma istemci 48 saat yeniden deneyecek.
+> Yeniden deneme aralıkları etkin uygulama kullanımını gerektirebilir, bu da uygulamanın başlatıldığı ve kullanımda olması anlamına gelir.  Yeniden deneme aralığı 24 saattir ve Kullanıcı uygulamayı başlatmak için 48 saat bekliyorsa, uygulama koruma istemcisi 48 saat sonra yeniden dener.
 
-## <a name="handling-network-connectivity-issues"></a>İşleme ağ bağlantısı sorunları
+## <a name="handling-network-connectivity-issues"></a>Ağ bağlantısı sorunlarını işleme
 
-Kullanıcı kaydı ağ bağlantısı sorunları nedeniyle başarısız olduğunda bir hızlandırılmış yeniden deneme aralığı kullanılır.  Uygulama koruması istemci başarılı bir bağlantı yapılır ya da aralığı 60 dakika ulaşana kadar gittikçe daha uzun aralıklarla yeniden deneyecek.  İstemci 60 dakikalık aralıklarla başarılı bir bağlantı kurulana kadar yeniden denemeye devam eder. Ardından, istemci kullanıcı durumuna göre standart yeniden deneme aralığını döndürür.
+Ağ bağlantısı sorunları nedeniyle Kullanıcı kaydı başarısız olduğunda, hızlandırılmış bir yeniden deneme aralığı kullanılır.  Zaman aralığı 60 dakikaya ulaşana veya başarılı bir bağlantı yapılıncaya kadar, uygulama koruma istemcisi giderek daha uzun aralıklarla yeniden dener.  İstemci daha sonra başarılı bir bağlantı yapılıncaya kadar 60 dakikalık aralıklarla yeniden denemeye devam eder. Ardından, istemci, Kullanıcı durumuna göre standart yeniden deneme aralığına geri döner.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
