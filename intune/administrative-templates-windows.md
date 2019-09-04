@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f69ab5f4498519fd0d1dee02eca59ea6865598b7
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122457"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214341"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune 'de Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonlarını kullanın
 
@@ -67,6 +67,7 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
     >
     > - [KB 4512509](https://support.microsoft.com/kb/4512509) yüklü WINDOWS 10 RS4 ve üzeri.
     > - [KB 4512534](https://support.microsoft.com/kb/4512534) yüklü WINDOWS 10 RS5 ve üzeri.
+    > - Windows 10 19H1 ve üzeri [KB 4512941](https://support.microsoft.com/kb/4512941) yüklü.
 
 6. Herhangi bir ayarı seçin. Örneğin, **Office**üzerinde filtreleme yapın ve **Kısıtlanmış taramayı etkinleştir**' i seçin. Ayarın ayrıntılı bir açıklaması gösterilir. **Etkin**, **devre dışı**seçeneğini belirleyin veya ayarı **Yapılandırılmadı** (varsayılan) olarak bırakın. Ayrıntılı açıklama Ayrıca **etkin**, **devre dışı**veya **yapılandırılmamış**' ı seçtiğinizde ne olacağını açıklar.
 7. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.

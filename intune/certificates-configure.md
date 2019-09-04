@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b1d1146a2300311c2c92d0d7a23cd25082b6b84
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 4d9554893a8317b014007bd7089ed62f222975c8
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122361"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214307"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune kimlik doğrulaması için sertifikaları kullanma  
 
@@ -49,8 +49,9 @@ Oluşturduğunuz her ayrı sertifika profili tek bir platformu destekler. Örne�
 ## <a name="supported-platforms-and-certificate-profiles"></a>Desteklenen platformlar ve sertifika profilleri  
 | Platform              | Güvenilen sertifika profili | PKCS sertifika profili | SCEP sertifika profili | PKCS içeri aktarılan sertifika profili  |
 |--|--|--|--|---|
-| Android               | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png)|  ![Desteklenen](./media/certificates-configure/green-check.png) |
-| Android kurumsal    | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) |
+| Android Cihaz Yöneticisi | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png)|  ![Desteklenen](./media/certificates-configure/green-check.png) |
+| Android Kurumsal <br> -Cihaz sahibi   | ![Desteklenen](./media/certificates-configure/green-check.png) |   |  |   |
+| Android Kurumsal <br> -İş profili    | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) | ![Desteklenen](./media/certificates-configure/green-check.png) |
 | Mac OS                 | ![Desteklenen](./media/certificates-configure/green-check.png) |   |![Desteklenen](./media/certificates-configure/green-check.png)|![Desteklenen](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![Desteklenen](./media/certificates-configure/green-check.png)  |  | ![Desteklenen](./media/certificates-configure/green-check.png)| ![Desteklenen](./media/certificates-configure/green-check.png) |

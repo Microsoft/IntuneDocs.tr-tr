@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 09/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cdd36406dc579822324013b4a04ef66404c5d6f
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 0e553229530f826ead91be981ff446b7cb3ebbf2
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70129564"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214291"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
@@ -37,7 +37,11 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. SCEP sertifika profili için bir **Ad** ve **Açıklama** girin.
 4. **Platform** açılan listesinde, bu SCEP sertifikası için desteklenen bir [Cihaz platformu](certificates-configure.md#supported-platforms-and-certificate-profiles) seçin. 
-5. **Profil türü** açılan listesinden **SCEP sertifikası**' nı seçin.
+5. **Profil türü** açılan listesinden **SCEP sertifikası**' nı seçin.  
+
+   > [!NOTE]  
+   > **Android kurumsal** platformu için *profil türü* iki kategoriye ayrılmıştır: Yalnızca *cihaz sahibi* ve *iş profili*.  SCEP sertifika profilleri yalnızca *Iş profili*için desteklenir.
+
 6. **Ayarlar**' ı seçin ve ardından aşağıdaki konfigürasyonları doldurun:
 
    - **Sertifika türü**:   
