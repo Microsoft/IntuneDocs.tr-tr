@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998939"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302290"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Windows 10 (ve üzeri) cihaz ayarları
 
-Bu makalede, Windows 10 ve daha yeni cihazlarda denetleyebilmeniz için kullanabileceğiniz tüm farklı ayarlar listelenmiştir ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak bu ayarları, özelliklere izin vermek veya devre dışı bırakmak, parola kuralları ayarlamak, kilit ekranını özelleştirmek, Windows Defender 'ı kullanmak ve daha fazlasını yapmak için kullanın.
+Bu makalede, Windows 10 ve daha yeni cihazlarda denetleyebilmeniz için kullanabileceğiniz tüm farklı ayarlar listelenmiştir ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak bu ayarları, özelliklere izin vermek veya devre dışı bırakmak, parola kuralları ayarlamak, kilit ekranını özelleştirmek, Microsoft Defender 'ı kullanmak ve daha fazlasını yapmak için kullanın.
 
 Bu ayarlar, Intune 'da bir cihaz yapılandırma profiline eklenir ve ardından Windows 10 cihazlarınıza atanır veya dağıtılır.
 
@@ -79,8 +79,6 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [ApplicationManageme
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="cellular-and-connectivity"></a>Hücresel ve Bağlantı
 
 Bu ayarlar, desteklenen Windows sürümlerini de listelenecek olan [bağlantı ilkesini](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) ve [Wi-Fi ilkesi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) CSP 'leri kullanır.
@@ -114,8 +112,6 @@ Bu ayarlar, [Bluetooth ILKESI CSP](https://docs.microsoft.com/windows/client-man
 
   [Servicesallowedlist kullanım kılavuzu](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) , hizmet listesi hakkında daha fazla bilgi içerir.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 
 Bu ayarlar, [CSP hesabı ilkesini](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts)kullanır; Ayrıca, desteklenen Windows sürümlerini de listeler.
@@ -124,8 +120,6 @@ Bu ayarlar, [CSP hesabı ilkesini](https://docs.microsoft.com/windows/client-man
 - **Microsoft hesabı olmayan**: **Block** , son kullanıcıların kullanıcı arabirimini kullanarak Microsoft olmayan hesaplar eklemesini önler. **Yapılandırılmadı** (varsayılan), kullanıcıların bir Microsoft hesabı ile ilişkilendirilmemiş e-posta hesapları eklemesine olanak sağlar.
 - **Microsoft hesabı Için ayarları eşitleme**: **Yapılandırılmadı** (varsayılan) bir Microsoft hesabı ilişkili cihaz ve uygulama ayarlarının cihazlar arasında eşitlenmesine izin verir. **Blok** bu eşitlemeyi engelliyor.
 - **Microsoft hesabı oturum açma Yardımcısı**: **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, son kullanıcılar **Microsoft hesabı oturum açma Yardımcısı** (wlidsvc) hizmetini başlatabilir ve durdurabilir. Bu işletim sistemi hizmeti, kullanıcıların Microsoft hesabı oturum açmasına olanak tanır. **Disable** , son kullanıcıların Microsoft oturum açma Yardımcısı hizmetini (wlidsvc) denetlemesini engeller.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="cloud-printer"></a>Bulut Yazıcı
 
@@ -140,8 +134,6 @@ Bu ayarlar [Enterprisecloudprint ILKESI CSP](https://docs.microsoft.com/windows/
 
 > [!TIP]
 > Bir [Windows Server hibrit bulutu](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview)oluşturduktan sonra, bu ayarları yapılandırabilir ve ardından Windows cihazlarınıza dağıtabilirsiniz.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="control-panel-and-settings"></a>Denetim Masası ve Ayarlar
 
@@ -165,8 +157,6 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
   - **Gizlilik**: **Blok** , cihazdaki ayarlar uygulamasının gizlilik alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişim sağlar.
   - **Güncelleştirme ve güvenlik**: **Blok** , cihazdaki ayarlar uygulamasının güncelleştirme & güvenlik alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişim sağlar.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="display"></a>Görüntüle
 
 Bu ayarlar, [görüntüleme ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display)'yi kullanır; Ayrıca, desteklenen Windows sürümlerini de listeler.
@@ -182,8 +172,6 @@ GDI DPı ölçeklendirme, DPı kullanmayan uygulamaların, monitör DPı 'si ile
   Listedeki tüm eski uygulamalar için GDI DPı ölçeklendirme kapalıdır.
 
 Ayrıca, uygulama listesiyle bir. csv dosyasını **Içeri aktarabilirsiniz** .
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="general"></a>Genel
 
@@ -230,8 +218,6 @@ Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-manag
 
 - **Görev Yöneticisi 'Nden son işlem**: Bu ayar, yönetici olmayanların Görev Yöneticisi 'nin görevleri sonlandırıp kullanıp kullanamayacağını belirler. **Blok** , standart kullanıcıların (yönetici olmayanlar), Görev Yöneticisi 'ni kullanarak cihazdaki bir işlem veya görevi sonlandırmasını önler. **Yapılandırılmadı** (varsayılan), standart kullanıcıların, Görev Yöneticisi 'Ni kullanarak bir işlem veya görevi sonlandıralmasına izin verir.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="locked-screen-experience"></a>Kilit ekranı deneyimi
 
 - **İşlem merkezi bildirimleri (yalnızca mobil)** : **Blok** , işlem merkezi bildirimlerinin cihaz kilitleme ekranında gösterilmesini engeller. **Yapılandırılmadı** (varsayılan) kullanıcıların hangi uygulamaların kilit ekranında bildirimleri göstermesini seçmesine olanak sağlar.
@@ -255,8 +241,6 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="messaging"></a>Gönderip
 
 Bu ayarlar, [ileti ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging)'sini kullanır; Ayrıca, desteklenen Windows sürümlerini de listeler.
@@ -264,8 +248,6 @@ Bu ayarlar, [ileti ILKESI CSP](https://docs.microsoft.com/windows/client-managem
 - **İleti eşitleme (yalnızca mobil)** : **Blok** , metin iletilerinin yedeklenmesini ve geri yüklenmesini devre dışı bırakır ve iletileri Windows cihazları arasında eşitlemeyi engeller. Devre dışı bırakma, bilgilerin kuruluşun denetimi dışındaki sunucularda depolanmasını önlemeye yardımcı olur. **Yapılandırılmadı** (varsayılan), kullanıcıların bu ayarları değiştirmesine ve iletilerini eşitlemesine izin verir.
 - **MMS (yalnızca mobil)** : **Blok** , cihazda MMS gönderme ve alma işlevini devre dışı bırakır. Kuruluşlar için bu ilkeyi, denetim veya yönetim gereksiniminin parçası olarak cihazlarda MMS 'yi devre dışı bırakmak için kullanın. **Yapılandırılmadı** (varsayılan) MMS gönderme ve alma olanağı sağlar.
 - **RCS (yalnızca mobil)** : **Blok** , cihaza zengin iletişim hizmetleri (RCS) gönderme ve alma işlevini devre dışı bırakır. Kuruluşlar için bu ilkeyi, denetim veya yönetim gereksiniminin parçası olarak cihazlarda RCS 'yi devre dışı bırakmak için kullanın. **Yapılandırılmadı** (varsayılan) RCS 'nin gönderme ve alma sağlar.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge Tarayıcısı
 
@@ -327,7 +309,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
 - **Internet Explorer 'da siteler açılırken ileti**: Microsoft Edge 'i bir site Internet Explorer 11 ' de açılmadan önce bildirim gösterecek şekilde yapılandırmak için bu ayarı kullanın. Seçenekleriniz şunlardır:
   - **İleti gösterme**: İşletim sistemi varsayılan davranışı kullanılır, bu durum bir ileti göstermez.
   - **Sitenin Internet Explorer 11 ' de açıldığını belirten Iletiyi göster**: IE 'de siteleri açarken iletiyi göster. IE 'de açık siteler. 
-  - **Microsoft Edge 'de siteleri açma seçeneği içeren Iletiyi göster**: Siteleri Edge 'de açarken iletiyi gösterir. Bu ileti, kullanıcıların IE yerine Microsoft Edge 'i seçebilmeleri için **Microsoft Edge bağlantısını kullanmaya devam** eder.
+  - **Microsoft Edge 'de siteleri açma seçeneği içeren Iletiyi göster**: Microsoft Edge 'de siteleri açarken oluşan iletiyi gösterir. Bu ileti, kullanıcıların IE yerine Microsoft Edge 'i seçebilmeleri için **Microsoft Edge bağlantısını kullanmaya devam** eder.
 
   > [!IMPORTANT]
   > Bu ayar, **Kurumsal mod site listesi konumu** ayarını, **Intranet trafiğini Internet Explorer 'a gönder** ayarını veya her iki ayarı da kullanmanızı gerektirir.
@@ -335,8 +317,6 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
 - **Microsoft uyumluluk listesine Izin ver**: **Evet** (varsayılan) bir Microsoft Uyumluluk Listesi kullanılmasına izin verir. **Hayır** , Microsoft Edge 'de Microsoft Uyumluluk Listesi 'ni engeller. Microsoft 'un bu listesi, Microsoft Edge 'in bilinen uyumluluk sorunlarına sahip siteleri düzgün şekilde görüntülemesine yardımcı olur.
 - **Başlangıç sayfaları ve yeni sekme sayfası Önyükle**: **Evet** (varsayılan) işletim sistemi varsayılan davranışını kullanır, bu da bu sayfaların önyüklenmesi olabilir. Önceden yükleme, Microsoft Edge 'i başlatma ve yeni sekmeler yükleme süresini en aza indirir. **Hayır** , Microsoft Edge 'in başlangıç sayfalarını ve yeni sekme sayfasını önyüklenmesini engeller.
 - **Başlangıç sayfalarını ve yeni sekme sayfasını önceden başlatın**: **Evet** (varsayılan) işletim sistemi varsayılan davranışını kullanır, bu da bu sayfaların ön başlatması olabilir. Önceden başlatma, Microsoft Edge performansına yardımcı olur ve Microsoft Edge 'i başlatmak için gereken süreyi en aza indirir. **Hayır** , Microsoft Edge 'in başlangıç sayfalarını ve yeni sekme sayfasını başlatmasını önler.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ### <a name="favorites-and-search"></a>Sık Kullanılanlar ve arama
 
@@ -357,8 +337,6 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 - **Arama altyapısında değişikliklere Izin ver**: **Evet** (varsayılan), kullanıcıların yeni arama motorları eklemesine veya Microsoft Edge 'de varsayılan arama altyapısını değiştirmesine izin verir. Kullanıcıların arama altyapısını özelleştirmesini engellemek için **Hayır** ' ı seçin.
 
   Bu ayar yalnızca [normal modda (çok uygulama bilgi noktası)](#use-microsoft-edge-kiosk-mode)çalışırken kullanılabilir.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ### <a name="privacy-and-security"></a>Gizlilik ve güvenlik
 
@@ -383,8 +361,6 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 - **Canlı kutucuk verileri koleksiyonuna Izin ver**: **Evet** (varsayılan), Microsoft Edge 'in başlangıç menüsüne sabitlenmiş canlı kutucukların bilgilerini toplamasını sağlar. **Hayır** , kullanıcılara sınırlı bir deneyim sağlayabilen bu bilgilerin toplanmasını engeller.
 - **Kullanıcı, sertifika hatalarını geçersiz kılabilir**: **Evet** (varsayılan), kullanıcıların Güvenli Yuva Katmanı/Aktarım Katmanı Güvenliği (SSL/TLS) hataları olan Web sitelerine erişmesini sağlar. **Hayır** (Artırılmış güvenlik için önerilir), kullanıcıların Web sitelerine SSL veya TLS hatalarıyla erişmesini önler.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ### <a name="additional"></a>Ek
 
 - **Microsoft Edge tarayıcısına Izin ver** (yalnızca mobil): **Evet** (varsayılan) mobil cihazda Microsoft Edge Web tarayıcısının kullanılmasına izin verir. **Hayır** , cihazda Microsoft Edge kullanımını engeller. **Hayır**' ı seçerseniz, diğer tek ayarlar yalnızca masaüstü için geçerlidir.
@@ -401,8 +377,6 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
   Ayrıca paket aile adlarını içeren bir CSV dosyasını **Içeri aktarabilirsiniz** . Ya da, girdiğiniz paket aile adlarını **dışarı aktarın** .
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="network-proxy"></a>Ağ proxy’si
 
 Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Networkproxy ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)'sini kullanır.
@@ -415,8 +389,6 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Networkproxy ILKESI
   - **Bağlantı noktası numarası**: Ara sunucunuzun bağlantı noktası numarasını girin.
   - **Proxy özel durumları**: Proxy sunucusunu kullanmamalıdır gereken URL 'Leri girin. Her birini ayırmak için noktalı virgül kullanın.
   - **Yerel adres için proxy sunucusunu atla**: **Yapılandırılmadı** (varsayılan), intranetinizdeki yerel adresler için bir proxy sunucusunun kullanılmasını önler. **Izin ver** , yerel adresler için bir proxy sunucu kullanır.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
@@ -466,8 +438,6 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [DeviceLock ILKESI C
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="per-app-privacy-exceptions"></a>Uygulama başına gizlilik özel durumları
 
 "Varsayılan gizlilik" bölümünde tanımladıklarınızdan farklı bir gizlilik davranışına sahip olması gereken uygulamalar ekleyebilirsiniz.
@@ -496,23 +466,17 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 - **Geri bildirim ve tanılama**: Bu uygulamanın tanılama bilgilerine erişip erişemeyeceğini tanımlayın.
 - **Cihazlarla Eşitle**: Bu uygulamanın, cihaz ile açık bir şekilde eşleştirmeyen kablosuz cihazlarla otomatik olarak bilgi paylaşıp eşitleyip eşitleyebileceğini seçin.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="personalization"></a>Kişiselleştirme
 
 Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Kişiselleştirme ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)'sini kullanır.
 
 - **Masaüstü arka plan resmi URL 'si (yalnızca masaüstü)** : Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz. jpg,. jpeg veya. png biçimindeki bir resmin URL 'sini girin. Kullanıcılar bu resmi değiştiremez. Örneğin, şunu girin: `https://contoso.com/logo.png`.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="printer"></a>Yazıcıda
 
 - **Yazıcılar**: Eklenmiş yerel yazıcıların listesi.
 - **Varsayılan yazıcı**: Varsayılan yazıcıyı ayarlayın.
 - **Yeni yazıcı eklemek Için Kullanıcı erişimi**: Yerel yazıcıların kullanılmasına izin verin veya bunları engelleyin.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="privacy"></a>Gizlilik
 
@@ -524,8 +488,6 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Gizlilik ILKESI CSP
 - **Yalnızca yerel etkinlikler**: **Blok** , paylaşılan deneyimleri ve yalnızca yerel etkinliğe bağlı olarak görev değiştiricisinde son kullanılan kaynakların bulunmasını engeller. **Yapılandırılmadı** (varsayılan) bu özelliği sunar.
 
 Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz. Ayrıca, **uygulama başına gizlilik özel durumlarını**kullanarak uygulama temelinde özel durumlar tanımlayın.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ### <a name="exceptions"></a>Özel durumlar
 
@@ -548,8 +510,6 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 - **Geri bildirim ve tanılama**: Bu uygulamanın tanılama bilgilerine erişip erişeseçebilmesine seçin.
 - **Cihazlarla eşitle** - Bu uygulamanın bu PC, tablet veya telefonla açıkça eşleştirilmemiş kablosuz cihazlarla otomatik olarak bilgi paylaşma ve eşitleme işlemleri yapıp yapamayacağını tanımlayın.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="projection"></a>Projeksiyon
 
 Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [kablolu Lessdisplay Ilke CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay)'sini kullanır.
@@ -557,8 +517,6 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [kablolu Lessdisplay
 - **Kablosuz Görüntü alıcılarından Kullanıcı girişi**: **Blok** , kablosuz görüntü alıcılarından Kullanıcı girişini engeller. **Yapılandırılmadı** (varsayılan) bir kablosuz görüntülemenin, kaynak cihaza klavye, fare, kalem ve dokunmatik giriş göndermesini sağlar.
 - **Bu bilgisayara yansıtma**: **Blok** , diğer cihazların yansıtma için cihazı bulmasını önler. **Yapılandırılmadı** (varsayılan) cihazın bulunabilir olmasını sağlar ve kilit ekranının üzerindeki cihaza proje yapabilir.
 - **Eşleştirme IÇIN PIN gerektir**: Projeksiyon cihazına bağlanırken her zaman PIN için istem **iste** ' yi seçin. **Yapılandırılmadı** (varsayılan) cihazı bir projeksiyon cihazına eşleştirmek için PIN gerektirmez.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="reporting-and-telemetry"></a>Raporlama ve telemetri
 
@@ -602,8 +560,6 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [arama ILKESI CSP](h
   - **Katı**: Yetişkinlere yönelik içeriğe karşı en yüksek filtreleme.
   - **Orta**: Yetişkinlere yönelik içeriğe karşı orta filtreleme. Geçerli arama sonuçları filtrelenmez.
 - **Aramada Web sonuçlarını görüntüle**: **Engelleme**olarak ayarlandığında kullanıcılar arama yapamıyor ve web sonuçları aramada gösterilmez. **Yapılandırılmadı** (varsayılan) kullanıcıların Web 'de arama yapmasına izin verir ve sonuçlar cihazda gösterilir.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="start"></a>Start
 
@@ -675,8 +631,6 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Başlangıç ILKESI
   - **Gizle**: Kısayol gizlenir ve Ayarlar uygulamasındaki ayarı devre dışı bırakır.
   - **Göster**: Kısayol gösterilir ve Ayarlar uygulamasındaki ayarı devre dışı bırakır.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
 - **Microsoft Edge Için SmartScreen**: **Gerektir** , Windows Defender SmartScreen 'i kapatır ve kullanıcıların bunu açmasını önler. **Yapılandırılmadı** (varsayılan) SmartScreen 'i etkinleştirir. Kullanıcıların olası tehditlere karşı korunmasına yardımcı olur ve kullanıcıların bunu kapatmasını engeller.
@@ -693,13 +647,11 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
   [Tarayıcı/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 ## <a name="windows-spotlight"></a>Windows Spot
 
 Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience)'sini kullanır.
 
-- **Windows spot**: Kilit ekranında Windows spot 'u kapatır, Windows Ipuçları, Microsoft tüketici özellikleri ve diğer ilgili özellikler. Amacınız, cihazlardan gelen ağ trafiğini en aza indirmektir, bunu **Engelle**olarak ayarlayın. **Yapılandırılmadı** (varsayılan), Windows spot özelliklerine izin verir ve son kullanıcılar tarafından denetlenebilir. Etkinleştirildiğinde, aşağıdaki ayarları da izin verebilir veya engelleyebilirsiniz:
+- **Windows spot**: Kilit ekranında Windows spot **'u kapatır,** Windows Ipuçları, Microsoft tüketici özellikleri ve diğer ilgili özellikler. Amacınız, cihazlardan gelen ağ trafiğini en aza indirmektir, bunu **Engelle**olarak ayarlayın. **Yapılandırılmadı** (varsayılan), Windows spot özelliklerine izin verir ve son kullanıcılar tarafından denetlenebilir. Etkinleştirildiğinde, aşağıdaki ayarları da izin verebilir veya engelleyebilirsiniz:
 
   - **Kilit ekranında Windows spot**: **Blok** , Windows spot 'un cihaz kilitleme ekranında bilgi göstermesini durduruyor. **Yapılandırılmadı** (varsayılan) bu özelliği sunar.
   - **Windows spot 'Da üçüncü taraf önerileri**: **Blok** , Windows spot 'un Microsoft tarafından yayımlanmamış içerik önermasını engeller. **Yapılandırılmadı** (varsayılan) Windows spot Özellikler 'deki iş ortağı yazılım yayımcılarından uygulama ve içerik önerilerine, kilit ekranı servisleri, başlangıç menüsünde önerilen uygulamalar ve Windows ipuçları gibi izin verir.
@@ -709,38 +661,96 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [deneyim ILKESI CSP]
   - **Windows spot kişiselleştirme**: **Blok** , Windows 'un kullanıcıya özelleştirilmiş deneyimler sağlaması için tanılama verilerini kullanmasını engeller. **Yapılandırılmadı** (varsayılan), Microsoft 'un kullanıcının ihtiyaçlarını karşılamak üzere özelleştirilmiş öneriler, ipuçları ve teklifler sunmak için tanılama verilerini kullanmasına izin verir.
   - **Windows Karşılama deneyimi**: **Engelle** , Windows spot Windows hoş geldiniz deneyimi özelliğini kapatır. Windows Karşılama deneyimi, Windows 'da ve uygulamalarında güncelleştirmeler ve değişiklikler olduğunda gösterilmez. **Yapılandırılmadı** (varsayılan) yeni veya güncelleştirilmiş özelliklerle ilgili Kullanıcı bilgilerini gösteren Windows Karşılama deneyimine izin verir.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
-## <a name="windows-defender-antivirus"></a>Windows Defender Virüsten Koruma
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender virüsten koruma
 
 Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)'sini kullanır.
 
-- **Gerçek zamanlı izleme**: **Etkinleştirme** , kötü amaçlı yazılım, casus yazılım ve diğer istenmeyen yazılımlar için gerçek zamanlı taramayı önler. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Davranış izleme**: **Etkinleştir** ayarı, Defender 'ın cihazlarda bilinen şüpheli etkinlik düzenlerini denetlemesini önler. **Yapılandırılmadı** (varsayılan) Windows Defender davranışı Izlemeye izin verir.
-- **Ağ İnceleme sistemi (NIS)** : NIS, cihazları ağ tabanlı saldırılara karşı korumaya yardımcı olur. Kötü amaçlı trafiği algılamaya ve engellemeye yardımcı olmak için Microsoft Endpoint Protection Center’dan bilinen açıkların imzalarını kullanır.
-- **Tüm Indirmeleri Tara**: Defender’ın İnternet’ten indirilen tüm dosyaları tarayıp taramayacağını denetler.
-- **Microsoft Web tarayıcılarında yüklenen betikleri tarayın**: **Yapılandırılmadı** (varsayılan), Defender 'ın Internet Explorer 'da kullanılan betikleri taramasını sağlar. **Etkinleştir** ayarı, bu taramayı önler.
-- **Defender 'A Son Kullanıcı erişimi**: **Blok** , Windows Defender Kullanıcı arabirimini son kullanıcılardan gizler. Tüm Windows Defender bildirimleri de bastırılır. **Yapılandırılmadı** (varsayılan), Windows Defender Kullanıcı arabirimine Kullanıcı erişimine izin verir. Bu ayar değiştirildiğinde, kullanıcının bilgisayarının bir sonraki yeniden başlatılmasında devreye girer.
-- **İmza güncelleştirme aralığı (saat)** : Defender 'ın yeni imza dosyalarını denetleme aralığını 0-24 adresinden girin. Seçenekleriniz şunlardır:
+- **Gerçek zamanlı izleme**: **Etkinleştir** , kötü amaçlı yazılım, casus yazılım ve diğer istenmeyen yazılım için gerçek zamanlı taramayı kapatır. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
 
-  - **Yapılandırılmadı** varsayılanını
-  - **Denetleme**: Defender yeni imza dosyalarını denetetmez.
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **Davranış izleme**: **Etkinleştir** devre dışı bırak Defender, cihazlarda bilinen şüpheli etkinlik desenleri olup olmadığını denetler. **Yapılandırılmadı** (varsayılan) Windows Defender davranışı Izlemeye izin verir.
+
+  [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **Ağ İnceleme sistemi (NIS)** : NIS, cihazları ağ tabanlı saldırılara karşı korumaya yardımcı olur. Kötü amaçlı trafiği algılamaya ve engellemeye yardımcı olmak için Microsoft Endpoint Protection Center’dan bilinen açıkların imzalarını kullanır.
+
+  **Yapılandırılmadı** (varsayılan) ayarı, bu özelliği devre dışı bırakır. Kullanıcıların bilinen güvenlik açıklarına bağlanmasına engellenmemektedir. **Etkin**olarak ayarlandığında, ağ koruması ve ağ engelleme etkinleştirilir ve kullanıcılar bu özelliği kapatamaz. Kullanıcıların bilinen güvenlik açıklarına bağlanması engellenir.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **Tüm Indirmeleri Tara**: **Yapılandırılmadı** (varsayılan) Defender, Internet 'ten indirilen tüm dosyaları tarar. **Etkin**olarak ayarlandığında, bu özellik devre dışıdır. Bu nedenle, Defender indirilen tüm Internet dosyalarını taramaz.
+
+  [Defender/Allowwioavprotection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **Microsoft Web tarayıcılarında yüklenen betikleri tarayın**: **Yapılandırılmadı** (varsayılan), Defender 'ın Internet Explorer 'da kullanılan betikleri taramasını sağlar. **Etkinleştir** ayarı, bu taramayı önler.
+
+  [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **Defender 'A Son Kullanıcı erişimi**: **Blok** , Windows Defender Kullanıcı arabirimini son kullanıcılardan gizler. Tüm Windows Defender bildirimleri de bastırılır. **Yapılandırılmadı** (varsayılan), Windows Defender Kullanıcı arabirimine Kullanıcı erişimine izin verir. Bu ayar değiştirildiğinde, kullanıcının bilgisayarının bir sonraki yeniden başlatılmasında devreye girer.
+
+  [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **Güvenlik Zekası güncelleştirme aralığı (saat)** : Defender 'ın yeni güvenlik zekası için denetleyeceği aralığı 0-24 adresinden girin. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Her 8 saatte bir güncelleştirme olup olmadığını denetleyin.
+  - **Denetleme**: Defender, yeni güvenlik zekası güncelleştirmelerini denetetmez.
   - **1-24**: `1` saatte bir denetim yapın `2` , her iki saatte `24` bir denetim yapın, her gün kontrol eder.
-- **Dosya ve program etkinliğini izle**: Defender’ın cihazlarda dosya ve program etkinliğini izlemesine izin verir.
-- **Karantinaya alınan kötü amaçlı yazılımı silmeden önce geçen gün**: Daha önce etkilenen cihazları el ile kontrol edebilmeniz için, girdiğiniz gün sayısı için çözümlenmiş kötü amaçlı yazılımı izlemeye devam edin. Gün sayısını **0**olarak ayarlarsanız, kötü amaçlı yazılım Karantina klasöründe kalır ve otomatik olarak kaldırılmaz. Olarak `90`ayarlandığında, karantina öğeleri sistemde 90 gün süreyle depolanır ve sonra kaldırılır.
-- **Tarama sırasında CPU kullanım sınırı**: Taramaların kullanmasına izin verilen CPU miktarını, **1** ile **100**arasında sınırlayın.
-- **Arşiv dosyalarını Tara**: **Etkinleştir** , Defender 'ın zip veya CAB dosyaları gibi arşivlenmiş dosyaları taramasını önler. **Yapılandırılmadı** (varsayılan) Bu taramaya izin verir.
+  
+  [Defender/Signatureupdateınterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **Dosya ve program etkinliğini izle**: Defender’ın cihazlarda dosya ve program etkinliğini izlemesine izin verir. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Tüm dosyaları izler
+  - **İzleme devre dışı**
+  - **Tüm dosyaları izle**
+  - **Yalnızca gelen dosyaları izle**
+  - **Yalnızca giden dosyaları izle**
+
+  [Defender/RealTimeScanDirection CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **Karantinaya alınan kötü amaçlı yazılımı silmeden önce geçen gün**: Daha önce etkilenen cihazları el ile kontrol edebilmeniz için, girdiğiniz gün sayısı için çözümlenmiş kötü amaçlı yazılımı izlemeye devam edin. Gün sayısını ayarlarsanız `0`, kötü amaçlı yazılım Karantina klasöründe kalır ve otomatik olarak kaldırılmaz. Olarak `90`ayarlandığında, karantina öğeleri sistemde 90 gün süreyle depolanır ve sonra kaldırılır.
+
+  [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **Tarama sırasında CPU kullanım sınırı**: Taramaların kullanımına izin verilen CPU miktarını ' dan `0` `100`' a sınırlayın.
+- **Arşiv dosyalarını Tara**: Devre dışı bırak Defender, ZIP veya CAB dosyaları gibi arşiv dosyalarını taramasından **etkinleştirir** . **Yapılandırılmadı** (varsayılan) Bu taramaya izin verir.
+
+  [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **Gelen posta Iletilerini Tara**: **Enable** , Defender 'ın cihaza gelen e-posta iletilerini taramasına izin verir. **Yapılandırılmadı** (varsayılan) e-posta taramasını engeller.
+
+  [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **Tam tarama sırasında çıkarılabilir sürücüleri Tara**: **Etkinleştir** ayarı, çıkarılabilir sürücülerin tam taranmasını önler. **Yapılandırılmadı** (varsayılan), Defender 'ın USB sürücüleri gibi çıkarılabilir sürücüleri taramasına olanak sağlar.
+
+  Bir hızlı tarama sırasında, çıkarılabilir sürücüler yine de taranabilecek.
+
+  [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **Tam tarama sırasında eşlenmiş ağ sürücülerine Tara**: **Etkinleştir** , Defender 'ın eşlenen ağ sürücülerindeki dosyaları taramasına olanak sağlar. **Yapılandırılmadı** (varsayılan) tam taramayı önler. Sürücüdeki dosyalar salt okunurdur, Defender bu bilgisayarlarda bulunan herhangi bir kötü amaçlı yazılımı kaldıramıyor.
+
+  Hızlı tarama sırasında, eşlenmiş ağ sürücüleri yine de taranamaz.
+
+  [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **Ağ klasörlerinden açılan dosyaları tara**: **Yapılandırılmadı** (varsayılan) Defender, bir UNC yolundan erişilen dosyalar gibi paylaşılan ağ sürücülerindeki dosyaları taramasına olanak tanır. **Etkinleştir** ayarı, bu taramayı önler. Sürücüdeki dosyalar salt okunurdur, Defender bu bilgisayarlarda bulunan herhangi bir kötü amaçlı yazılımı kaldıramıyor.
+
+  [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **Bulut koruması**: **Yapılandırılmadı** (varsayılan) Microsoft Etkin Koruma Hizmeti yönettiğiniz cihazlardan kötü amaçlı yazılım etkinliğiyle ilgili bilgi almasına izin verir. **Enable** , bu özelliği engeller.
+
+  [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **Örnek göndermeden önce kullanıcılara sor**: Daha fazla analiz gerektirebilecek kötü amaçlı olabilecek dosyaların otomatik olarak Microsoft 'a gönderilip gönderilmeyeceğini denetler. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı**
+
+  - **Yapılandırılmadı** (varsayılan): Güvenli örnekleri otomatik olarak gönderin.
   - **Her zaman sor**
   - **Kişisel verileri göndermeden önce sor**
   - **Hiçbir şekilde veri gönderme**
-  - **Tüm verileri sorulmadan gönder**: Veriler otomatik olarak gönderilir
+  - **Tüm verileri sorulmadan gönder**: Veriler otomatik olarak gönderilir.
+
+  [Defender/Submitsamplesonay CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **Günlük hızlı tarama gerçekleştirme zamanı**: Günlük hızlı tarama çalıştırmak için saati seçin. **Yapılandırılmadı** , günlük tarama çalıştırmaz. Daha fazla özelleştirme istiyorsanız, ayar **yapmak için sistem taraması türünü** yapılandırın.
 
@@ -756,12 +766,16 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
     - **Zamanlanan gün**: Taramanın çalıştırılacağı günü seçin.
     - **Zamanlanan saat**: Taramanın çalıştırılacağı saati seçin.
 
-  Bu ayar **günlük hızlı tarama ayarı gerçekleştirme zamanına** göre çakışabilir. Bazı öneriler:
-
-  - Günlük hızlı tarama çalıştırmak için **günlük hızlı tarama ayarı gerçekleştirme saatini** yapılandırın.
-  - Günlük hızlı taramayı ve her hafta tam taramayı çalıştırmak için, **günlük hızlı tarama gerçekleştirme saatini**yapılandırın. Gün ve saat ile tam tarama yapmak **için sistem taraması türünü** ayarlayın.
-  - **Hızlı tarama**olarak ayarlanacak **sistem taraması türü** ile **günlük hızlı tarama ayarı gerçekleştirmek için geçen süreyi** yapılandırmayın. Bu ayarlar çakışabilir ve bir tarama çalışmayabilir.
-  - Her Salı, 6: dakikada bir hızlı tarama çalıştırmak için **sistem taraması türünü ayarı gerçekleştirecek şekilde** yapılandırın.
+  > [!TIP]
+  > Bu ayar **günlük hızlı tarama ayarı gerçekleştirme zamanına** göre çakışabilir. Bazı öneriler:  
+  >
+  > - Günlük hızlı tarama ve haftalık tam tarama zamanlamak istiyorsanız:
+  >   1. **Günlük hızlı tarama ayarı gerçekleştirme saatini** yapılandırın.
+  >   2. Tam tarama yapmak için **gerçekleştirilecek sistem taraması türünü** yapılandırın.
+  > 
+  > - Her gün yalnızca bir hızlı tarama istiyorsanız (tam tarama gerekmez), iki ayarı kullanın: **Günlük hızlı tarama** veya **gerçekleştirilecek sistem taraması türü**gerçekleştirme süresi. Örneğin, 6 ' da her Salı günde bir hızlı tarama çalıştırmak için, ayar **yapmak için sistem taraması türünü** yapılandırın.
+  > 
+  > - **Hızlı tarama**olarak ayarlanacak **sistem taraması türü** ile **günlük hızlı tarama ayarı gerçekleştirmek için geçen süreyi** yapılandırmayın. Bu ayarlar çakışabilir ve bir tarama çalışmayabilir.
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -774,7 +788,10 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   İstenmeyebilecek uygulamalar hakkında daha fazla bilgi için bkz. istenmeyebilecek [uygulamaları algılama ve engelleme](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Algılanan kötü amaçlı yazılım tehditleri eylemleri**: Defender 'ın algıladığı her tehdit düzeyi için hangi eylemleri ele geçirmesine istediğinizi seçin: düşük, orta, yüksek ve önemli. Mümkün değilse, Windows Defender tehdit 'nin düzeltildiğinden emin olmak için en iyi seçeneği seçer. Seçenekleriniz şunlardır:
+  [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **Algılanan kötü amaçlı yazılım tehditleri eylemleri**: Kötü amaçlı yazılım iş parçacıklarını nasıl işlemek istediğinizi seçin. **Yapılandırılmadı** (varsayılan) Microsoft Defender 'ın en iyi seçeneği seçmesini sağlar. **Etkinleştir**olarak ayarlandığında, Defender 'ın algıladığı her tehdit düzeyi için hangi eylemleri istediğini seçin: düşük, orta, yüksek ve önemli. Seçenekleriniz şunlardır:
+  
   - **Temizle**
   - **Karantina**
   - **Kaldır**
@@ -782,15 +799,15 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
   - **Kullanıcı tanımlı**
   - **Engelle**
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+  Eyleminiz mümkün değilse, Windows Defender tehdit 'nin düzeltildiğinden emin olmak için en iyi seçeneği seçer. 
+
+  [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender Virüsten Koruma Dışlamaları
 
 - **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosyalar ve klasörler**: Dışlama listesinde **C:\Yol** veya **%ProgramFiles%\Yol\dosyaadı.exe** gibi bir veya birden çok dosya ve klasör ekler. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
 - **Taramalardan ve gerçek zamanlı korumanın dışında tutulacak dosya uzantıları**: Dışlama listesine **jpg** veya **txt** gibi bir veya birden çok dosya uzantısı ekleyin. Bu uzantılara sahip tüm dosyalar gerçek zamanlı veya zamanlanmış taramalara dahil değildir.
 - **Taramaların ve gerçek zamanlı korumanın dışında tutulacak süreçler**: Dışlama listesine **.exe**, **.com** veya **.scr** türünde bir veya birden çok işlem ekleyin. Bu süreçler gerçek zamanlı veya zamanlanmış taramalara dahil değildir.
-
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

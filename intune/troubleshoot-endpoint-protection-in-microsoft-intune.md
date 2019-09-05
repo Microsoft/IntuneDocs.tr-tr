@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353346"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302344"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune uç nokta koruma sorunları ve olası çözümleri
 
@@ -60,20 +60,20 @@ Bazı özelliklerin devre dışı bırakıldığını belirten bir ileti alabili
 **Olası çözümler**: Bu özellikleri etkinleştirin. Rehberlik için bkz.:
 
 - [Endpoint Protection ayarları ekle](endpoint-protection-configure.md)
-- [Windows Defender virüsten koruma](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender virüsten koruma](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [Son kullanıcılar: Şirket kaynaklarına erişmek için gerçek zamanlı korumayı açın](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>Kötü amaçlı yazılım tanımları güncel değil
 
 Bu durum, cihazdaki kötü amaçlı yazılım tanımlarının 14 gün veya daha fazla zaman aşımına uğrar olduğunu gösterir. Örneğin ileti, cihazın Internet bağlantısı kesildiğinde veya kötü amaçlı yazılım tanımlarının güncel olup olmadığını gösterebilir.
 
-**Olası çözümler**: Kötü amaçlı yazılım tanımları güncel değilse, tanımları [Windows Defender virüsten koruma](device-restrictions-windows-10.md#windows-defender-antivirus)kullanarak güncelleştirin.
+**Olası çözümler**: Kötü amaçlı yazılım tanımları güncel değilse, tanımları [Windows Defender virüsten koruma](device-restrictions-windows-10.md#microsoft-defender-antivirus)kullanarak güncelleştirin.
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Tam Tarama süresi doldu veya hızlı tarama süresi doldu
 
 14 gün boyunca tam tarama veya hızlı tarama tamamlanmadı. Bu senaryo, tam tarama sırasında cihaz yeniden başlatılırsa meydana gelebilir.
 
-**Olası çözümler**: Taramanın süresi dolduysa, bir kerelik tarama çalıştırabilir veya yinelenen taramalar zamanlayabilirsiniz. Bkz. [Windows Defender Virüsten Koruma](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Olası çözümler**: Taramanın süresi dolduysa, bir kerelik tarama çalıştırabilir veya yinelenen taramalar zamanlayabilirsiniz. Bkz. [Windows Defender Virüsten Koruma](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>Başka bir uç nokta koruma uygulaması çalışıyor
 

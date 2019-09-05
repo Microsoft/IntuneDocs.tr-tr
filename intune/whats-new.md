@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: d8d952194cedde9dc25ecb47e1c7af80035d23fb
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122151"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302300"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -120,7 +120,7 @@ Geçerli ayarları görmek için [Intune 'Da MacOS cihaz özelliği ayarları](m
 - Mac OS
 
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Son tarihler Windows Update halkalar için bağlı yeniden başlatma ayarlarını değiştirir   <!-- 4464404        -->
-Intune 'un Windows 10 [](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)güncelleştirme halkaları, son [tarihleri için ayarları desteklemeye yöneliktir](windows-update-settings.md). *Son tarihler* , bir cihazın özellik ve güvenlik güncelleştirmelerini ne zaman yükleceğini belirlenir.  Windows 10 1903 veya üzerini çalıştıran cihazlarda, *son tarihleri* , ara *yeniden başlatma*yapılandırmalarının yerini alır.  Gelecekte, *son tarihleri* Windows 10 ' un önceki sürümlerinde de *bağlı yeniden başlatmanın* yerini alır.  
+Intune ['un Windows 10](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)güncelleştirme halkaları, son [tarihleri için ayarları desteklemeye yöneliktir](windows-update-settings.md). *Son tarihler* , bir cihazın özellik ve güvenlik güncelleştirmelerini ne zaman yükleceğini belirlenir.  Windows 10 1903 veya üzerini çalıştıran cihazlarda, *son tarihleri* , ara *yeniden başlatma*yapılandırmalarının yerini alır.  Gelecekte, *son tarihleri* Windows 10 ' un önceki sürümlerinde de *bağlı yeniden başlatmanın* yerini alır.  
 
 *Son tarihleri*yapılandırma ' ya yönelik cihaz, cihazların ara *yeniden* başlatma ayarlarını kullanmaya devam eder, ancak Intune, gelecekteki bir güncelleştirmede, [ara yeniden başlatma ayarları desteğini kullanımdan kaldırır](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) .  
 
@@ -144,7 +144,7 @@ Birden çok bağlayıcı kullanmak için bağlayıcı yazılımının en son sü
   - **Yerleşik uygulamalar** > **Arkadaşlarımı bul (yalnızca denetimli)** : Uygulamamı bul özelliğinde bu özelliği engelleyen yeni ayar. 
   -  > **Wi-Fi durumunda kablosuz değişiklik (yalnızca denetimli)** : Kullanıcıların cihazda Wi-Fi ' i açmasını veya kapatmasını engelleyen yeni ayar.
   - **Klavye ve sözlük** > **hızlı yolu (yalnızca denetimli)** : QuickPath özelliğini engelleyen yeni ayar.
-  - **Bulut ve depolama**: **Etkinlik devamlılığı** iletimeolarak yeniden adlandırıldı.
+  - **Bulut ve depolama**: **Etkinlik devamlılığı** iletime olarak yeniden **adlandırıldı.**
 
   Geçerli ayarları görmek için [iOS cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](device-restrictions-ios.md).
 
@@ -185,7 +185,7 @@ Intune 'da Windows 10 cihazlarınızı taramak için Windows Defender virüsten 
 
 Bu güncelleştirmede, bu davranış düzeltilmiştir. Bu nedenle, ayarları gerçekleştirmek için **günlük hızlı tarama** ve **sistem taraması türü** , taramalar başarıyla tamamlandığında başarı durumunu gösterir ve ayarlar uygulanamadığında başarısız bir durum gösterir. 
 
-Windows Defender virüsten koruma ayarları hakkında daha fazla bilgi için bkz. [Windows 10 (ve daha yeni) cihaz ayarları Intune kullanarak özellik sağlamak veya kısıtlamak için](device-restrictions-windows-10.md#windows-defender-antivirus). 
+Windows Defender virüsten koruma ayarları hakkında daha fazla bilgi için bkz. [Windows 10 (ve daha yeni) cihaz ayarları Intune kullanarak özellik sağlamak veya kısıtlamak için](device-restrictions-windows-10.md#microsoft-defender-antivirus). 
 
 ### <a name="device-enrollment"></a>Cihaz kaydı
 
@@ -614,7 +614,7 @@ Geçerli ayarları görmek için, [Intune kullanarak özelliklere izin vermek ve
 Uygulama hedefi: macOS
 
 #### <a name="the-ios-password-to-access-app-store-setting-is-renamed---4557891----"></a>App Store 'a erişmek için iOS parolası ayarı yeniden adlandırıldı<!-- 4557891  -->
-**App Store 'a erişim parolası** , **tüm satın alımlarda iTunes Mağazası parolası gerektirecek** şekilde yeniden adlandırıldı (**cihaz yapılandırma** > **profilleri** > **profil** > oluşturma**iOS** platform > > **Uygulama Mağazası, belge görüntüleme ve oyun**gibi profil türü için **cihaz kısıtlamaları** .
+**App Store 'a erişim parolası** , **tüm satın alımlarda iTunes Mağazası parolası gerektirecek** şekilde yeniden adlandırıldı **(cihaz yapılandırma** > **profilleri** > **profil** > oluşturma**iOS** platform > > **Uygulama Mağazası, belge görüntüleme ve oyun**gibi profil türü için **cihaz kısıtlamaları** .
 
 Kullanılabilir ayarları görmek için [App Store, belge görüntüleme, oyun iOS ayarları '](device-restrictions-ios.md#app-store-doc-viewing-gaming)na gidin.
 
@@ -1145,7 +1145,7 @@ Uygulama ataması başına Son Kullanıcı bildirim bildirimlerinin gösterilmes
 
 #### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Intune uygulama koruma ilkeleri kullanıcı arabirimi güncelleştirmesi <!-- 3251427  -->
 Intune uygulama koruması için ayarların ve düğmelerin etiketlerini, her birinin anlaşılması kolay hale getirmek üzere değiştirdik. Bazı değişiklikler şunları içerir:  
-- Denetimler **Evet** / **olmayan** denetimler, öncelikle**izin verme** ve **devre dışı bırak** / denetimlerini **Engelle** / olarak değiştirilir. Etiketler de güncelleştirilir.  
+- Denetimler **Evet** / **olmayan** denetimler, öncelikle**izin verme** ve **devre dışı bırak** / **denetimlerini** **Engelle** / olarak değiştirilir. Etiketler de güncelleştirilir.  
 - Ayarlar yeniden biçimlendirilir, bu nedenle daha iyi gezinti sağlamak için ayar ve etiketi denetimin içinde yan yana olur.   
 
 Varsayılan ayarlar ve ayar sayısı aynı kalır, ancak bu değişiklik kullanıcının seçili uygulama koruma ilkelerini uygulamak için ayarları daha kolay anlamasına, gezinmeye ve kullanmasına olanak sağlar. Bilgi için bkz. [iOS ayarları](app-protection-policy-settings-ios.md) ve [Android ayarları](app-protection-policy-settings-android.md).
@@ -1321,7 +1321,7 @@ BitLocker da dahil olmak üzere Windows 10 cihazlarında Endpoint Protection aya
 [Kilit ekranında iletileri görüntüleme ayarları](shared-device-settings-ios.md) , ayarları listeler.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>İOS cihazlarına yeni uygulama Mağazası, belge görüntüleme, oyun cihaz kısıtlama ayarları eklendi <!-- 2827760-->
-**Cihaz yapılandırma** > > >**profilleri** > ' nde, uygulama Mağazası, belge görüntüleme, oyun, >  Aşağıdaki ayarlar eklendi: Yönetilen uygulamaların yönetilmeyen kişiler hesaplarına kişi yazmasına izin ver yönetilmeyen uygulamaların yönetilen kişiler hesaplarından okumasına izin ver bu ayarları görmek Için [iOS cihaz kısıtlamalarına](device-restrictions-ios.md#app-store-doc-viewing-gaming)gidin.
+**Cihaz yapılandırma** >  **> >** **profilleri** > ' nde, uygulama Mağazası, belge görüntüleme, oyun, >  Aşağıdaki ayarlar eklendi: Yönetilen uygulamaların yönetilmeyen kişiler hesaplarına kişi yazmasına izin ver yönetilmeyen uygulamaların yönetilen kişiler hesaplarından okumasına izin ver bu ayarları görmek Için [iOS cihaz kısıtlamalarına](device-restrictions-ios.md#app-store-doc-viewing-gaming)gidin.
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android kurumsal cihaz sahibi cihazlara yeni bildirim, ipucu ve keyguard ayarları <!-- 3201839 3201843 -->
 Bu güncelleştirme, cihaz sahibi olarak çalıştırırken Android Kurumsal cihazlarda çeşitli yeni özellikler içerir. Bu özellikleri kullanmak için Git **cihaz Yapılandırması** > **profilleri** > **profili oluşturma** > içinde **platformu**, seçin **Android Kurumsal** > içinde **profil türü**, seçin **yalnızca cihaz sahibi** > **cihaz Kısıtlamaları**.
