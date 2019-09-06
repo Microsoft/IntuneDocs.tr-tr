@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 25beef7e6593865b92e349163768ded5ce3b9e2d
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122391"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376946"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -73,7 +73,7 @@ PKCS sertifikalarını Intune ile kullanmak için aşağıdaki altyapıya sahip 
   - Sunucunuza Microsoft Intune için Içeri aktarılan PFX Sertifika bağlayıcısını yükler.  
   - Önemli güncelleştirmeleri otomatik olarak almak için, bağlayıcının **443**numaralı bağlantı noktasında **AutoUpdate.msappproxy.net** 'e başvurdığına izin veren güvenlik duvarlarının açık olduğundan emin olun.   
 
-  Bağlayıcının erişebilmesi gereken tüm ağ uç noktaları hakkında daha fazla bilgi için bkz. [Microsoft Intune sertifika Bağlayıcısı](intune-endpoints.md#microsoft-intune-certificate-connector).
+  Bağlayıcının erişebilmesi gereken tüm ağ uç noktaları hakkında daha fazla bilgi için bkz. [Microsoft Intune sertifika Bağlayıcısı](intune-endpoints.md).
 
 - **Windows Server**:  
   Barındırmak için bir Windows Server kullanın:
@@ -90,7 +90,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 **Komut satırı kullanın**:  
 1. Kök sertifika yetkilisi sunucusunda yönetici hesabıyla oturum açın.
  
-2. Çalıştır 'a gidin ve ardından komut istemi 'ni açmak için **cmd** girin. >  
+2. Çalıştır ' a gidin ve ardından komut istemi 'ni açmak için **cmd** girin. >  
     
 3. Kök sertifikayı *CA_NAME. cer*adlı bir dosya olarak dışarı aktarmak için **certutil-CA. CERT CA_NAME. cer** öğesini belirtin.
 
