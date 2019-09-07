@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050379"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739220"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Intune’da veri depolama ve işleme
 
@@ -41,13 +41,13 @@ Toplanan ve telemetri olmayan tüm veriler, Intune hizmetinde işlenir ve aşağ
 
 Microsoft, Intune hizmetlerini dünya çapında birçok bölgede sunmakta ve yönetmektedir. Intune, yönetici tarafından Müşteri Verileri için yapılan depolama konumu seçimlerine saygı duyar.
 
-Daha fazla bilgi için bkz. [Microsoft Intune Müşteri verilerim nerede?](For more information, see Microsoft Intune Where is my customer data?)
+Daha fazla bilgi için bkz. [verilerinizin nerede bulunduğu](https://www.microsoft.com/trust-center/privacy/data-location) yer.
 
 ### <a name="personal-data-retention"></a>Kişisel verilerin saklanması
 
-Genel olarak kişisel veriler, kullanıcı Intune yönetiminden kaldırıldıktan sonra otuz gün boyunca Intune tarafından korunur.
+Genel olarak, kişisel veriler, Kullanıcı Intune yönetiminden kaldırıldıktan sonra 30 gün boyunca Intune tarafından korunur.
 
-Intune kullanımının parçası olarak toplanan telemetri verileri en fazla otuz gün saklanır.
+Intune kullanımının bir parçası olarak toplanan telemetri verileri en fazla 30 gün boyunca tutulur.
 
 Denetim günlükleri ise bir sene boyunca saklanabilir.
 

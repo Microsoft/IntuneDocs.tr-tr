@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 07f1a994f6ca7da83d7e98b339021997c506534d
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062942"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739260"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Dört tür Autopilot dağıtımı vardır: Kiosks, dijital imza veya paylaşılan bir cihaz için [kendi kendine dağıtım modu](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) , iş [](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) ortakları ve BT personelinin bir Windows 10 bilgisayarını, tam olarak yapılandırılması ve iş [için Autopilot, mevcut cihazlara yönelik](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) olarak önceden sağlamasını sağlar Windows 10 ' un en son sürümünü mevcut cihazlarınıza ve geleneksel kullanıcılar için [Kullanıcı denetimli moda](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) kolayca dağıtmanız gerekir. 
+Dört tür Autopilot dağıtımı vardır:
+- Kiosks, dijital imza veya paylaşılan bir cihaz için [kendi kendine dağıtım modu](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)
+- [Teknik İnceleme](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) , iş ORTAKLARıNıN veya BT personelinin, tam olarak yapılandırılması Için bir WINDOWS 10 PC 'nin ön sağlamasını sağlar ve[var olan cihazlar için](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) Business-Ready-Autopilot, mevcut cihazlara Windows 10 ' un en son sürümünü kolayca dağıtmanızı sağlar
+- Geleneksel kullanıcılar için [Kullanıcı odaklı mod](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) . 
 
 
 ## <a name="prerequisites"></a>Önkoşullar
@@ -93,7 +96,7 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 4. **İleri**’yi seçin.
 5. **Kullanıma hazır deneyim (OOBE)** sayfasında, **dağıtım modu**için şu iki seçenekten birini seçin:
     - **Kullanıcı odaklı**: Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkilidir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekir.
-    - **Kendi kendine dağıtım (Önizleme)** : (Windows 10, sürüm 1809 veya üzeri gerektirir) bu profile sahip cihazlar, cihazı kaydeden Kullanıcı ile ilişkili değildir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekmez.
+    - **Kendi kendine dağıtım (Önizleme)** : (Windows 10, sürüm 1809 veya üzeri gerektirir) bu profile sahip cihazlar, cihazı kaydeden Kullanıcı ile ilişkili değildir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekmez. Bir cihaza ilişkili kullanıcı olmadığında, Kullanıcı tabanlı uyumluluk ilkeleri buna uygulanmaz. Kendi kendine Dağıtım modunu kullanırken, yalnızca cihazı hedefleyen uyumluluk ilkeleri uygulanır.
 
     ![OOBE sayfasının ekran görüntüsü](media/enrollment-autopilot/create-profile-outofbox.png)
 
@@ -178,7 +181,7 @@ Bir cihazı kiracınızdan tamamen kaldırmak, Intune cihazını, Azure Active D
 
 1. Cihazlar Intune 'A kaydedildiyse, önce [bunları Intune tüm cihazlar dikey penceresinden silmelisiniz](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. Cihazların**Azure AD cihazlarındaki**Azure Active Directory cihazlarındaki > cihazları silin.
+2. **Cihazların** > **Azure AD cihazlarındaki**Azure Active Directory cihazlarındaki cihazları silin.
 
 3. **Cihaz kaydı** > **Windows kayıt** > **cihazlarındaki**Windows Autopilot cihazlarını silin. Silmek istediğiniz cihazları seçin ve **Sil**' i seçin. Windows Autopilot cihaz silme işleminin tamamlanması birkaç dakika sürebilir.
 

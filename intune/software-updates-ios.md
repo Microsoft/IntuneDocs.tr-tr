@@ -12,63 +12,57 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373424"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739197"
 ---
-# <a name="add-ios-software-update-policies-in-intune"></a>Intune'da iOS yazılım güncelleştirme ilkelerini ekleme
+# <a name="add-ios-software-update-policies-in-intune"></a>Intune 'A iOS yazılım güncelleştirme ilkeleri ekleme
 
 Yazılım güncelleştirme ilkeleri, denetimli iOS cihazlarını otomatik olarak en yeni işletim sistemi güncelleştirmesini yüklemeye zorlamanıza olanak sağlar. İlke yapılandırırken, cihazların güncelleştirme yüklemesi yapmalarını istemediğiniz gün ve saatleri ekleyebilirsiniz. 
 
 Bu özellik şu platformlarda geçerlidir:
 
-- iOS 10.3 ve üstünü (denetimli)
+- iOS 10,3 ve üzeri (denetimli)
 
 Cihaz, 8 saatte bir Intune’a iade edilir. Güncelleştirme varsa ve kısıtlanan saatlerde değilse, cihaz en son işletim sistemi güncelleştirmesini indirir ve yükler. Cihazın güncelleştirilmesi için kullanıcı etkileşimi gerekli değildir. İlke, kullanıcının işletim sistemini el ile güncelleştirmesini engellemez.
 
 ## <a name="configure-the-policy"></a>İlkeyi yapılandırma
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Yazılım güncelleştirilmeleri** > **iOS için güncelleştirme ilkeleri** > **Oluştur**’u seçin.
 3. Aşağıdaki ayarları girin:
 
     - **Ad**: Yazılım güncelleştirmeleri ilkeniz için bir ad girin. Örneğin, şunu girin: `iOS restricted update times`.
-    - **Açıklama**: İlkeniz için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Açıklama**: İlkenizin için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
 
-4. Seçin **ayarlar > Yapılandır**. Aşağıdaki ayarları girin:
+4. **Yapılandırma > ayarları**' nı seçin. Aşağıdaki ayarları girin:
 
-    - **Güncelleştirme yüklemelerine engel olmak için saatleri seçin**: Zorla yüklü olmayan güncelleştirmeleri ne zaman sınırlı bir zaman çerçevesi belirtin. 
-      - Gece blokları desteklenmez ve çalışmayabilir. Örneğin, bir ilkeyle yapılandırmayın bir *başlangıç zamanı* 8 PM ve bir *bitiş saati* , 6 AM.
-      - 12'da başlar ve 12: 00 biten bir ilke olarak 0 saat ve değil 24 saat içinde hiçbir kısıtlama sonuçlanır değerlendirilir.
+    - **Güncelleştirme yüklemelerinin önlenmesi için zamanları seçin**: Güncelleştirmeler zorlanmadıkça sınırlı bir zaman dilimi belirtin. 
+      - Fazla gece blokları desteklenmez ve çalışmayabilir. Örneğin, bir ilkeyi 8 PM *Başlangıç saati* ve 6 ' nın *bitiş saati* ile yapılandırmayın.
+      - 12:00 ' da başlayan ve 12 ' de sona erecek bir ilke 0 saat olarak değerlendirilir ve bu, kısıtlama olmadan sonuçlanır.
 
-      Kısıtlı zaman çerçevesini ayarlarken, aşağıdaki bilgileri girin:
+      Kısıtlanmış zaman çerçevesini ayarlarken, aşağıdaki ayrıntıları girin:
 
-      - **Gün**: Güncelleştirmelerin ne zaman yüklü olmayan haftanın günlerini seçin. Örneğin, Pazartesi, Çarşamba ve Cuma şu günlerde yüklü güncelleştirmeleri önlemek için denetleyin.
+      - **Gün sayısı**: Güncelleştirmelerin yüklü olmadığı haftanın gününü seçin. Örneğin, bu günlerde güncelleştirmelerin yüklenmesini engellemek için Pazartesi, Çarşamba ve Cuma ' yı işaretleyin.
       - **Saat dilimi**: Bir saat dilimi seçin.
-      - **Başlangıç saati**: Sınırlı bir zaman çerçevesi başlangıç saati seçin. Örneğin, 05: 00 başlangıç güncelleştirmeleri yüklü şekilde 5'te girin.
-      - **Bitiş saati**: Kısıtlı zaman dilimi bitiş saati seçin. Örneğin, güncelleştirme 1'de başlayarak yüklenebilmesi için 1'da girin.
+      - **Başlangıç zamanı**: Sınırlı zaman çerçevesinin başlangıç saatini seçin. Örneğin, güncelleştirmelerin 5 ' de itibaren yüklenememesi için 5 har girin.
+      - **Bitiş zamanı**: Sınırlı zaman çerçevesinin bitiş saatini seçin. Örneğin, güncelleştirme 1 ' den başlayarak yüklenebilmeleri için 1 har girin.
 
-    - **Zamanlanmış güncelleştirmeler için değişiklik olmadan son kullanıcılara yazılım güncelleştirmelerini görünürlüğünü gecikme (gün)** : 
+    - **Zamanlanan güncelleştirmelere hiçbir değişiklik yapmadan son kullanıcılara yazılım güncelleştirmelerinin görünürlüğünü geciktir (gün)** : 
 
-      **Bu ayar taşınabilir [cihaz kısıtlamaları](device-restrictions-ios.md#general). Portalda bu konumdan kaldırılacak**. Kısa bir süre için burada mevcut ilkeleri değiştirilebilir. Sonra yaklaşık bir ay, mevcut İlkeleri'nden bu ayar kaldırılacak.
+      \* * Denetimli iOS cihazlarınızda yazılım güncelleştirmelerinin görünürlüğünü belirli bir süre için geciktirmek istiyorsanız lütfen [cihaz kısıtlamalarında](device-restrictions-ios.md#general)bu ayarları yapılandırın.
+     
+      > [! Önemli  
+      > *Başlangıç zamanı* ve *bitiş zamanı* 12 ' ye ayarlanmış bir ilke, 24 saat değil 0 saat olarak değerlendirilir. Bu durum hiçbir kısıtlama vermez.  
 
-      Etkisini sınırlamak için önerilir:
-        - Portal bu konumda mevcut ilkeyi kaldırın.
-        - Yeni bir [cihaz kısıtlama ilkesi](device-restrictions-ios.md#general).
-        - Özgün ilkenin olarak aynı kullanıcıları hedefleyebilirsiniz.
-
-      Bir çakışma varsa, bu ayarın hiçbir şey yapmaz *sürece* iki değer aynıdır. Bir çakışmayı önlemek için değiştirmek veya portal bu konumda mevcut ilkeyi kaldırmak emin olun.
-      > [! Önemli]  
-      > Olan bir ilkeye bir *başlangıç zamanı* ve *bitiş saati* 0 saat olarak ve 24 saat 12: 00'olarak değerlendirilir. Bu kısıtlama sonuçlanır.  
-
-5. Seçin **Tamam** > **Oluştur** yaptığınız değişiklikleri kaydedin ve ilkeyi oluşturun.
+5. Değişikliklerinizi kaydetmek ve ilkeyi oluşturmak için **Tamam** > **Oluştur** ' u seçin.
 
 Profil oluşturulur ve ilke listesinde gösterilir.
 
-Intune destek ekibinden yönergeler için bkz [gecikme denetimli cihazlar için ıntune'da yazılım güncelleştirmeleri görünürlüğünü](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
+Intune destek ekibinin Kılavuzu için bkz. [denetimli cihazlar Için Intune 'da yazılım güncelleştirmeleri gecikmesi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
 
 > [!NOTE]
 > Apple MDM, cihazın güncelleştirmeleri belirli bir saatte veya tarihte yüklemeye zorlanmasına izin vermez.
@@ -84,7 +78,7 @@ Intune destek ekibinden yönergeler için bkz [gecikme denetimli cihazlar için 
     3. Kara listeye alınan saatler için başlangıç ve bitiş saatlerini girin
 
     > [!NOTE]
-    > Varsa **başlangıç zamanı** ve **bitiş saati** her iki grup için 12: 00, sonra Intune, güncelleştirmeleri yüklemek ne zaman kısıtlamaları için denetlemez. Bu sahip için tüm yapılandırmaları daha anlamına gelir **güncelleştirme yüklemelerine engel olmak için Select kez** göz ardı edilir ve herhangi bir zamanda güncelleştirmeleri yükleyebilirsiniz.  
+    > **Başlangıç saati** ve **bitiş saatinin** her ikisi de 12Har olarak ayarlandıysa, Intune güncelleştirmelerin ne zaman yükleneceğine ilişkin kısıtlamaları denetlemez. Bu, **güncelleştirme yüklemelerinin yoksayılmasını** ve güncelleştirmelerin herhangi bir zamanda yüklenebilmesini sağlamak için, seçtiğiniz her yapılandırmalardan daha fazla yol gösterir.  
 
 ## <a name="assign-the-policy-to-users"></a>Kullanıcılara ilke atama
 
@@ -99,7 +93,7 @@ Var olan ilkeler gruplara, kullanıcılara ve cihazlara atanır. İlke, atandı�
 
 ## <a name="monitor-device-installation-failures"></a>Cihaz yükleme hatalarını izleme
 <!-- 1352223 -->
-**Yazılım güncelleştirmelerini** > **iOS cihazları için yükleme hataları** cihazları bir güncelleştirme ilkesi tarafından hedeflenen bir güncelleştirmeyi denedi ve güncelleştirilemiyor denetimli iOS listesini gösterir. Her cihazda, cihazın otomatik olarak güncelleştirilememesinin nedenini açıklayan bir durum görebilirsiniz. İyi durumda, güncel cihazlar bu listede gösterilmez. “Güncel” cihazlar, cihazın desteklediği en yeni güncelleştirmeyi içerir.
+ > **İOS cihazları için yazılım güncelleştirmeleri yükleme hatalarıyla** , bir güncelleştirme ilkesi tarafından hedeflenen ve güncelleştirme yapılmaya çalışılan ve güncelleştirilemeyen, denetlenen iOS cihazlarının bir listesi gösterilir. Her cihazda, cihazın otomatik olarak güncelleştirilememesinin nedenini açıklayan bir durum görebilirsiniz. İyi durumda, güncel cihazlar bu listede gösterilmez. “Güncel” cihazlar, cihazın desteklediği en yeni güncelleştirmeyi içerir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

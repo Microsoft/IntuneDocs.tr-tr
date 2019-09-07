@@ -1,26 +1,26 @@
 ---
 title: Microsoft Intune-Azure 'da Microsoft Defender ATP 'yi kullanma | Microsoft Docs
-description: Microsoft Defender Gelişmiş tehdit koruması 'nı (Microsoft Defender ATP) ayarlama ve yapılandırma, Intune cihazlarınızı ATP ile ekleme ve ardından Intune cihaz uyumluluğuna ve koşullu bir cihaz ATP risk değerlendirmesi kullanma dahil olmak üzere Intune ile birlikte kullanın. ağ kaynaklarını korumak için ilkeleri erişin.
+description: Kurulum ve yapılandırma dahil olmak üzere Intune ile Microsoft Defender Gelişmiş tehdit koruması 'nı (Microsoft Defender ATP) kullanın, Intune cihazlarınızı ATP ile ekleme ve ardından Intune cihaz uyumluluğuyla ve koşullu bir cihaz ATP risk değerlendirmesi kullanma ağ kaynaklarını korumak için erişim ilkeleri.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 0d9fe180e81c9e661954dd0986f05ac3b5e749ed
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960659"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739182"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune 'da koşullu erişimle Microsoft Defender ATP için uyumluluğu zorlama  
 
@@ -101,6 +101,7 @@ Microsoft Defender ATP bağlantısı kurduktan sonra Intune, Microsoft Defender 
 
 Yapılandırma paketini kullanarak bir cihaz ekledikten sonra, bunu tekrar yapmanız gerekmez. [Bir grup ilkesi veya System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) kullanarak da cihaz ekleyebilirsiniz.
 
+
 ### <a name="create-the-device-configuration-profile"></a>Cihaz yapılandırma profili oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
@@ -110,10 +111,10 @@ Yapılandırma paketini kullanarak bir cihaz ekledikten sonra, bunu tekrar yapma
 5. **Profil türü**Için **Microsoft Defender ATP (Windows 10 Masaüstü)** öğesini seçin.
 6. Şu ayarları yapılandırın:
 
-   - **Microsoft Defender ATP istemci yapılandırma paketi türü**: Yapılandırma paketini Profile eklemek için Ekle ' yi seçin. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
+   - **Microsoft Defender ATP istemci yapılandırma paketi türü**: Yapılandırma paketini profile **eklemek için Ekle** ' yi seçin. Yapılandırma paketini profilden çıkarmak için **Çıkar**’ı seçin.
   
      > [!NOTE]  
-     > Microsoft Defender ATP ile düzgün bir şekilde bağlantı oluşturduysanız, Intune otomatik olarak yapılandırma profilini , **Microsoft Defender ATP istemci yapılandırma paketi türü** ayarını de kullanıma sunulacaktır.
+     > Microsoft Defender ATP ile düzgün bir şekilde bağlantı oluşturduysanız, **Intune otomatik olarak yapılandırma profilini,** **Microsoft Defender ATP istemci yapılandırma paketi türü** ayarını de kullanıma sunulacaktır.
   
     - **Tüm dosyalar Için örnek paylaşımı**: **Etkinleştir** ayarı, örneklerin toplanmasına ve MICROSOFT Defender ATP ile paylaşılmasına olanak tanır. Örneğin, şüpheli bir dosya görürseniz, ayrıntılı analiz için Microsoft Defender ATP 'ye gönderebilirsiniz. **Yapılandırılmadı** , MICROSOFT Defender ATP 'ye herhangi bir örnek paylaşmaz.
     - **Telemetri raporlama sıklığını**hızlandırın: Yüksek riskli cihazlarda, bu ayarı **etkinleştirin** ve bu ayarı, MICROSOFT Defender ATP hizmetine daha sık telemetri rapor eder.
@@ -122,6 +123,7 @@ Yapılandırma paketini kullanarak bir cihaz ekledikten sonra, bunu tekrar yapma
 
 7. **Tamam**’ı ve **Oluştur**’u seçerek değişikliklerinizi kaydedin, böylece profil oluşturulur.
 8. [Cihaz yapılandırma profilini,](device-profile-assign.md) MICROSOFT Defender ATP ile değerlendirmek Istediğiniz cihazlara atayın.  
+
 
 ## <a name="create-and-assign-the-compliance-policy"></a>Uyumluluk ilkesi oluşturma ve atama  
 
@@ -179,6 +181,9 @@ Ardından, Microsoft Defender ATP Uyumluluk ilkesine sahip cihazların durumunu 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz uyumluluğu** > **İlke uyumluluğu**’nu seçin.
 3. Listede Microsoft Defender ATP ilkenizi bulun ve hangi cihazların uyumlu veya uyumsuz olduğunu görün.
+
+## <a name="view-onboarding-status"></a>Ekleme durumunu görüntüle
+Tüm Intune ile yönetilen Windows 10 cihazlarının ekleme durumunu görüntülemek için **cihaz uyumluluğu** > **Microsoft Defender ATP**'ye gidebilirsiniz. Bu sayfadan, Microsoft Defender ATP 'ye daha fazla cihaz ekleme için bir cihaz yapılandırma profili oluşturmayı da başlatabilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 

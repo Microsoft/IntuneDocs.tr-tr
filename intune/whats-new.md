@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d952194cedde9dc25ecb47e1c7af80035d23fb
-ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
+ms.openlocfilehash: 78ea485b88891680baa68bfcee1ce1641524d90b
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70302300"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739081"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -53,6 +53,13 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 -->  
 
 <!-- ########################## -->
+## <a name="week-of-september-2-2019"></a>2 Eylül 2019 haftası
+
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+#### <a name="intune-user-interface-update--tenant-status-dashboard-----5273210----"></a>Intune kullanıcı arabirimi güncelleştirmesi – kiracı durumu panosu  <!-- 5273210  -->
+Kiracı durum panosu için Kullanıcı arabirimi, Azure Kullanıcı arabirimi stilleriyle hizalanacak şekilde güncelleştirilmiştir. Daha fazla bilgi için bkz. [kiracı durumu](tenant-status.md).
+
 
 ## <a name="week-of-august-26-2019"></a>26 Ağustos 2019 haftası
 
