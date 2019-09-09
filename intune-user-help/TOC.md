@@ -4,7 +4,7 @@
 
 ## [Şirketim, Intune ile hangi bilgileri görüntüleyebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Parolamı güncelleştirme](password-does-not-meet-it-administrator-requirements.md)
+## [Cihaz parolası gereksinimleri](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)
 
