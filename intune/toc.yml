@@ -857,8 +857,8 @@
                   href: custom-settings-windows-10.md
             - name: Güvenlik temelleri
               items:
-                - name: Windows 10 temel ayarları
-                  href: security-baseline-settings-mdm.md
+                - name: Windows 10 MDM temel ayarları
+                  href: security-baseline-settings-mdm-all.md
                 - name: Microsoft Defender ATP temel ayarları
                   href: security-baseline-settings-defender-atp.md
             - name: Windows Update ayarları
@@ -1047,10 +1047,6 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Uç nokta korumasıyla ilgili yaygın hatalar
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: Güvenlik temelleri arşivi
-          items:
-            - name: Arşivlenmiş MDM güvenlik temelleri
-              href: security-baseline-settings-mdm-archive.md
     - name: Senaryo uygulama kılavuzları
       items:
         - name: Exchange Online’ı Koruma
