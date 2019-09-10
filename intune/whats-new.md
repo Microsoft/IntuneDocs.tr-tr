@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/06/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78ea485b88891680baa68bfcee1ce1641524d90b
-ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
+ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739081"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842149"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -53,6 +53,18 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-september-9-2019"></a>9 Eylül 2019 haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="updates-to-microsoft-intune-app----4997846---"></a>Microsoft Intune uygulama güncelleştirmeleri <!-- 4997846 -->
+Android için Microsoft Intune uygulaması aşağıdaki geliştirmelerle güncelleştirilmiştir:
+- En önemli eylemler için alt gezinti eklemek üzere Düzen güncelleştirildi ve geliştirildi.
+- Kullanıcının profilini gösteren ek bir sayfa eklendi.
+- Kullanıcı için, cihaz ayarlarını güncelleştirme ihtiyacı gibi eyleme dönüştürülebilir bildirimlerin görüntüsü eklendi.
+- İOS ve Android için Şirket Portalı uygulamasına son eklenen destek ile uygulamayı hizalamak için özel anında iletme bildirimlerinin görüntüsü eklendi. Daha fazla bilgi için bkz. [Intune 'da özel bildirimler gönderme](custom-notifications.md).
+
 ## <a name="week-of-september-2-2019"></a>2 Eylül 2019 haftası
 
 ### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme

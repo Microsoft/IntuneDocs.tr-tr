@@ -1,13 +1,12 @@
 ---
-title: Microsoft Intune - Azure ile cihazları eşitleme | Microsoft Docs
+title: Cihazları Microsoft Intune ile eşitleme-Azure | Microsoft Docs
 description: En son ilkeleri ve eylemleri almak için Microsoft Intune ile kayıtlı veya yönetilen cihazları eşitleyin. Azure portalını kullanarak eşitleme adımlarını içerir ve yeniden denenebilecek hata kodlarını listeler.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388107"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808637"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Intune ile en son ilkeleri ve eylemleri almak için cihazları eşitleme
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorlar. Bir cihaz giriş yaptığında, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır. Bu özellik, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan hızla doğrulamanıza ve ilkelerin sorunlarını gidermenize yardımcı olur.
+Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorlar. Bir cihaz giriş yaptığında, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır. Bu özellik, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan hızla doğrulamanıza ve ilkelerin sorunlarını gidermenize yardımcı olur.
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -40,15 +37,14 @@ Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorl
 
 ## <a name="sync-a-device"></a>Cihaz eşitleme
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve ardından **Microsoft Intune**’u seçin. 
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın. 
 3. **Intune**'da **Cihazlar** > **Tüm cihazlar**’ı seçin.
-4. Yönettiğiniz cihazların listesinde bir cihaz seçin, **Daha Fazla**’yı ve ardından **Eşitle**'yi seçin.
+4. Yönettiğiniz cihazların listesinde, *genel bakış* bölmesini açmak için bir cihaz seçin ve ardından **Eşitle**' yi seçin.
 5. Onaylamak için **Evet**'i seçin.
 
 Eşitleme eyleminin durumunu görmek için **Cihaz** > **Cihaz eylemleri**’ni seçin.
 
-Standart Intune İlkesi iade frekansları içinde bulabilirsiniz [yenileme döngüsü süreleri](device-profiles.md).
+[Yenileme çevrimi süreleriyle](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)standart Intune ilke iade sıklıklarını bulabilirsiniz.
 
 ## <a name="retryable-error-codes"></a>Yeniden denenebilir hata kodları
 
@@ -64,7 +60,7 @@ Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız ol
 | 2016330894 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın. | Evet |
 | 2016330893 | İnternet bağlantınız kesildi. Bağlantınızı sıfırlayın. | Evet|
 | 2016330892 | Uluslararası dolaşım devre dışı bırakıldı. | Hayır|
-| 2016330891 | Telefon görüşmesi yapılırken bu cihaz için hücresel veri bağlantısına erişilemez. Görüşmenin sonlanmasını bekleyin. | Evet|
+| 2016330891 | Telefon araması sırasında bu cihaz için hücresel veri bağlantısına erişilemiyor. Görüşmenin sonlanmasını bekleyin. | Evet|
 | 2016330890 | Bu cihaz için hücresel ağ. Bu cihazlar şu anda kullanılamıyor. | Hayır|
 | 2016330889 | Güvenli bağlantı başarısız oldu. Bağlantınızı sıfırlayın. | Evet|
 | 2016330888 | Sunucu güven değerlendirmesi başarısız oldu. | Hayır|

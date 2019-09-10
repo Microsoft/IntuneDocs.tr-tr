@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e8aeb3428aeece2de9b94c0ebf7796ce73a0267
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: d02bbac925381d66f05d51a2f2abccee5d890dec
+ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978536"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70815550"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -33,12 +33,12 @@ Yeni bir MDM güvenlik temeli yayımlandığında, önceki ayarlar listesi güve
 
 Bir temel sürümün kullanım için artık desteklenmemesi durumunda bu makaleden kaldırılır.
 
-- [GEÇERLI MDM güvenlik temeliyle](security-baseline-settings-mdm.md) kullanılabilir olan ayarları görüntüleyin 
+- [GEÇERLI MDM güvenlik temeliyle](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019) kullanılabilir olan ayarları görüntüleyin 
 - [Güvenlik temelleri](security-baselines.md)ve güvenlik taban çizgisi profillerindeki temel sürümü yükseltme hakkında bilgi edinin.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Önizleme: 2018 Ekim için MDM güvenlik temeli  
 
-*[2019 Mayıs Için MDM güvenlik temeliyle](security-baseline-settings-mdm.md) Bu taban çizgisinin yerini almıştır*
+*[2019 Mayıs Için MDM güvenlik temeliyle](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019) Bu taban çizgisinin yerini almıştır*
 
 ### <a name="above-lock"></a>Kilidin üstünde  
 
@@ -1440,5 +1440,5 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-WindowsPowerShell](https
  
 ## <a name="next-steps"></a>Sonraki adımlar  
 
-[Geçerli temel sürümü görüntüle](security-baseline-settings-mdm.md)  
+[Geçerli temel sürümü görüntüle](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)  
 [Profilleri yeni bir temel sürümü kullanacak şekilde yükselt](security-baselines.md#change-the-baseline-version-for-a-profile)

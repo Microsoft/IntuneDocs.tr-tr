@@ -1,0 +1,25 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: security-baseline-settings-one
+  title: Güvenlik temelleri
+  prompt: Güvenlik temelinizi seçin
+  pivots:
+  - id: windows-mdm
+    title: Windows MDM
+  - id: microsoft-defender-atp
+    title: Microsoft Defender Gelişmiş tehdit koruması
+- id: windows-mdm-versions
+  title: Windows MDM temel sürümleri
+  prompt: Sürüm seçin
+  pivots:
+  - id: mdm-may-2019
+    title: Mayıs 2019
+  - id: mdm-preview
+    title: Önizleme-Ekim 2018
+metadata:
+  ms.openlocfilehash: 1b1f0e7b28dfda7ba9b4867c9641154147aa4c1f
+  ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+  ms.translationtype: MT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 09/09/2019
+  ms.locfileid: "70816045"

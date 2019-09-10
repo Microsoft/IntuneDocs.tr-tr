@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
+ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063045"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70815465"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
 
@@ -74,8 +74,8 @@ Birden çok güvenlik temeli kullandığınızda, farklı temellerin aynı ayar 
 Aşağıdaki güvenlik temeli örnekleri Intune ile kullanılabilir. Her bir taban çizgisinin en son örneğine ilişkin ayarları görüntülemek için bağlantıları kullanın. 
 
 - **MDM güvenlik temeli**
-  - [2019 Mayıs için MDM güvenlik temeli](security-baseline-settings-mdm.md)
-  - [Önizleme: 2018 Ekim için MDM güvenlik temeli](security-baseline-settings-mdm-archive.md)
+  - [2019 Mayıs için MDM güvenlik temeli](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [Önizleme: 2018 Ekim için MDM güvenlik temeli](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Microsoft Defender ATP temeli**  
   *(Bu temeli kullanmak için ortamınızın [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)'nı kullanmaya yönelik önkoşulları karşılaması gerekir)* .
@@ -125,7 +125,7 @@ Güvenlik temellerinde çalışırken ortak görevler şunları içerir:
 
     ![Bu grubun ayarlarını görüntülemek için bir grubu genişletin](./media/security-baselines/sample-list-of-settings.png)
 
-5. Kapsam Etiketleri sekmesini seçin ' i seçerek kapsam etiketlerini profile atamak için kapsam etiketleri Seç ' i seçin. 
+5. **Kapsam Etiketleri sekmesini seçin** ' i seçerek kapsam etiketlerini profile atamak için kapsam *etiketleri Seç '* **i seçin.** 
 
 6. **Atamalar** sekmesinde, **dahil edilecek grupları seç** ' i seçin ve ardından temeli bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için, **hariç tutulacak grupları seçin ' i** kullanın.  
 
@@ -215,7 +215,7 @@ Kesinlikle konuşuyor, hayır. Microsoft Güvenlik ekibi, bu kuruluşların öne
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - Kullanılabilir temellerin en son sürümlerindeki ayarları görüntüleyin:  
-  - [MDM güvenlik temeli](security-baseline-settings-mdm.md)  
+  - [MDM güvenlik temeli](security-baseline-settings-mdm-all.md)  
   - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)  
 
 - Durumu denetleme ve [temeli ve profili](security-baselines-monitor.md) izleme
