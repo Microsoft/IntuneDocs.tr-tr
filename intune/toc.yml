@@ -546,10 +546,11 @@
         - name: Intune uygulama yönetimi nedir?
           href: app-management.md
           displayName: mam-we
-        - name: Uygulama eklemeye genel bakış
-          href: apps-add.md
-          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
+        - name: Uygulamaları ekleme
           items:
+            - name: Uygulama eklemeye genel bakış
+              href: apps-add.md
+              displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
             - name: Intune korumalı uygulamalar
               href: apps-supported-intune-apps.md
             - name: Mağaza uygulamaları
@@ -561,9 +562,10 @@
                 - name: Windows Phone 8.1 mağaza uygulamaları
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft Mağazası uygulamaları
-                  href: store-apps-windows.md
                   items:
-                    - name: Şirket Portalı uygulamasını elle ekle
+                    - name: Windows uygulamaları
+                      href: store-apps-windows.md
+                    - name: Şirket Portalı uygulaması
                       href: store-apps-company-portal-app.md
                 - name: Yönetilen Google Play uygulamaları
                   href: apps-add-android-for-work.md
@@ -571,10 +573,13 @@
                   href: apps-add-office365.md
                 - name: macOS için Office 365 uygulamaları
                   href: apps-add-office365-macos.md
+            - name: Web uygulamaları
+              href: web-app.md
+              displayName: web; web link; weblink; web-link
+            - name: Yerleşik uygulamalar
+              href: apps-add-built-in.md
             - name: Uygulamanızı (LOB) oluşturun
               items:
-                - name: Win32 uygulama yönetimi
-                  href: apps-win32-app-management.md
                 - name: Android LOB uygulamaları
                   href: lob-apps-android.md
                 - name: iOS LOB uygulamaları
@@ -587,11 +592,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB uygulamaları
                   href: lob-apps-macos.md
-            - name: Web uygulamaları
-              href: web-app.md
-              displayName: web; web link; weblink; web-link
-            - name: Yerleşik uygulamalar
-              href: apps-add-built-in.md
+            - name: Win32 uygulama yönetimi
+              href: apps-win32-app-management.md
             - name: PowerShell komut dosyaları
               href: intune-management-extension.md
         - name: Uygulamaları atama
@@ -849,7 +851,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: Eğitim
+                - name: Güvenli değerlendirme
                   href: education-settings-windows.md
                 - name: Paylaşılan çok kullanıcılı cihaz
                   href: shared-user-device-settings-windows.md
