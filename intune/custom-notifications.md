@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,28 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bffbc96e945d522453c299717a6eb413354a4af4
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021746"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70878044"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
 
-Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler göndermek için Microsoft Intune kullanın. Bu iletiler, bir kullanıcının aygıtındaki Şirket Portalı uygulamadan standart anında iletme bildirimleri gibi görünür, böylece cihazdaki diğer uygulamalardan gelen bildirimler görüntülenir. Intune özel bildirimleri Windows cihazları tarafından desteklenmez.   
+Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler göndermek için Microsoft Intune kullanın. Bu iletiler, Şirket Portalı uygulamadan ve bir kullanıcının aygıtındaki Microsoft Intune uygulamadan standart anında iletme bildirimleri olarak görünür, böylece cihazdaki diğer uygulamalardan gelen bildirimler görüntülenir. Intune özel bildirimleri Windows cihazları tarafından desteklenmez.   
 
 Özel bildirim iletileri, kısa bir başlık ve 500 karakter veya daha kısa bir ileti gövdesi içerir. Bu iletiler, herhangi bir genel iletişim amacı için özelleştirilebilir.
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Özel bildirimler göndermek için yaygın senaryolar  
 
-- Şirket Portalı bulunan yeni bir uygulama hakkında belirli kullanıcıları uyarmak için özel bildirimleri kullanın.  
+- Şirket Portalı yeni bir uygulamanın kullanılabildiği belirli kullanıcıları uyarmak için özel bildirimler kullanın.  
 - Inlement Hava durumu nedeniyle kapanışları oluşturma gibi, zamanlamaya göre değişiklik için tüm çalışanları bilgilendirin.  
 
 ## <a name="considerations-for-using-custom-notifications"></a>Özel bildirimler kullanma konuları  
 
 **Cihaz yapılandırması**:  
-- Kullanıcıların özel bildirimler alabilmesi için cihazda Şirket Portalı uygulamasının yüklü olması gerekir. Ayrıca, Şirket Portalı uygulamasının anında iletme bildirimleri göndermesini sağlamak için izinleri de yapılandırmış olmaları gerekir. Şirket Portalı, kullanıcılardan, yüklendiği veya güncelleştirildiği zaman bildirim almasına izin verir.  
+- Cihazların, kullanıcıların özel bildirimler alabilmesi için Şirket Portalı uygulamasının veya Microsoft Intune uygulamasının yüklü olması gerekir. Ayrıca, Şirket Portalı uygulamasının veya Microsoft Intune uygulamasının anında iletme bildirimleri göndermesini sağlamak için izinleri de yapılandırmış olmaları gerekir. Gerekirse, Şirket Portalı uygulaması ve Microsoft Intune uygulaması kullanıcılardan bildirimlere izin vermesi istenebilir.  
 - Android 'de Google Play Hizmetleri gerekli bir bağımlılıkdır.  
 - Cihazın MDM kaydı yapılmalıdır.
 
@@ -51,8 +51,8 @@ Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler gönd
 - Gruplar, kullanıcıları veya cihazları içerebilir ancak iletiler yalnızca kullanıcılara gönderilir ve Kullanıcı tarafından kaydedilen her bir iOS veya Android cihazına gönderilir.  
 
 **Teslim**:  
-- Intune, kullanıcıların Şirket Portalı uygulamasına iletiler göndererek anında iletme bildirimi oluşturur. Bildirimin cihaza itilmesi için kullanıcıların uygulamada oturum açmış olması gerekmez.  
-- Intune ve Şirket Portalı uygulaması, özel bir bildirimin teslimini garanti edemez. Özel bildirimler, her biri bir süre sonra, acil iletilerde kullanılmamalıdır.  
+- Intune, kullanıcıların Şirket Portalı uygulamasına veya Microsoft Intune uygulamasına iletiler göndererek anında iletme bildirimi oluşturur. Bildirimin cihaza itilmesi için kullanıcıların uygulamada oturum açmış olması gerekmez.  
+- Intune 'un yanı sıra Şirket Portalı uygulaması ve Microsoft Intune uygulaması, özel bir bildirimin teslimini garanti edemez. Özel bildirimler, her biri bir süre sonra, acil iletilerde kullanılmamalıdır.  
 - Intune 'dan gelen özel bildirim iletileri cihazlarda standart anında iletme bildirimleri olarak görünür. Şirket Portalı uygulaması bildirimi aldığında bir iOS cihazında açıksa bildirim, bir anında iletme bildirimi yerine uygulamada görüntülenir.  
 - Özel bildirimler, cihaz ayarlarına bağlı olarak hem iOS hem de Android cihazlarda kilit ekranlarında görülebilir.  
 - Android cihazlarda, diğer uygulamaların özel Bildiriminizdeki verilere erişimi olabilir. Bunları hassas iletişimler için kullanmayın.  
@@ -80,7 +80,7 @@ Intune, göndereceğiniz özel bildirimleri izlemez ve cihazlar, bilgileri cihaz
 
 ## <a name="receive-a-custom-notification"></a>Özel bir bildirim alın  
 
-Bir cihazda, kullanıcılar Şirket Portalı uygulamadan standart bir anında iletme bildirimi olarak Intune tarafından gönderilen özel bildirim iletilerini görürler. Bu bildirimler, kullanıcıların cihazdaki diğer uygulamalardan aldığı anında iletme bildirimlerine benzer.  
+Bir cihazda, kullanıcılar Intune tarafından Şirket Portalı uygulamasından veya Microsoft Intune uygulamadan standart bir anında iletme bildirimi olarak gönderilen özel bildirim iletilerini görürler. Bu bildirimler, kullanıcıların cihazdaki diğer uygulamalardan aldığı anında iletme bildirimlerine benzer.  
 
 İOS cihazlarında, bildirim alındığında Şirket Portalı uygulama açıksa bildirim, anında iletme bildirimi yerine uygulamada görüntülenir.  
 

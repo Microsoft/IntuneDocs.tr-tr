@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3bc5f8a3f0094c363a705b37b904435ef9e91781
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660936"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864482"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune 'de Intune şirket içi Exchange bağlayıcısını ayarlama
 Bu makaledeki bilgiler, Intune için Exchange Active Sync şirket içi bağlayıcıyı yüklemenize ve izlemenize yardımcı olur.  Şirket içi Exchange [posta kutularına erişime izin vermek veya erişimi engellemek için](conditional-access-exchange-create.md), şirket içi Exchange bağlayıcısını koşullu erişim ilkelerinizle birlikte kullanırsınız. 
@@ -106,10 +106,10 @@ Intune şirket içi Exchange bağlayıcısını yüklemek için aşağıdaki ad�
 
    2. Sol üst taraftaki **?** simgesini ve ardından **Hakkında**’yı seçin.
 
-   3.           **POP Dış Sunucu** değerini bulun.
+   3. **POP Dış Sunucu** değerini bulun.
 
    4. Barındırılan Exchange sunucunuzun proxy sunucusu ayarlarını belirtmek için **Proxy Sunucusu**'nu seçin.
-       1.           **Mobil cihaz bilgileri eşitlenirken proxy sunucusu kullan**'ı seçin.
+       1. **Mobil cihaz bilgileri eşitlenirken proxy sunucusu kullan**'ı seçin.
 
        2. Sunucuya erişmek için kullanılan **proxy sunucusu adı** ve **bağlantı noktası numarasını** belirtin.
 
@@ -124,6 +124,9 @@ Intune şirket içi Exchange bağlayıcısını yüklemek için aşağıdaki ad�
    Otomatik Bulma hizmeti ve Exchange Web Hizmetleri'nin Exchange İstemci Erişimi Sunucusu'nda yapılandırıldığından emin olun. Daha fazla bilgi için bkz. [İstemci Erişimi sunucusu](https://technet.microsoft.com/library/dd298114.aspx).
 
 6. **Parola** alanında, Intune’un Exchange Server'a erişmesini etkinleştirmek için bu hesabın parolasını sağlayın.
+
+   > [!NOTE]
+   > Bağlantının başarılı olması için, kiracıya oturum açmak için kullandığınız hesabın en az Intune Hizmet Yöneticisi olması gerekir. Bu olmadan, şu hatayla başarısız bir bağlantı alacaksınız: "Uzak sunucu bir hata döndürdü: (400) hatalı Istek ".
 
 7. **Bağlan**’ı seçin.
 

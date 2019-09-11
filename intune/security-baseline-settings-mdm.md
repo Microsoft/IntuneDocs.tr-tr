@@ -11,17 +11,18 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
+ROBOTS: NOINDEX
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecb3c8bff59f4fc99c6f819823dee1498228612b
-ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
+ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808650"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864549"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune için MDM güvenlik taban çizgisi ayarları  
 
