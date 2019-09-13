@@ -1,7 +1,7 @@
 ---
-title: iOS için Microsoft Intune - Azure'da yerleşik uygulama kimlikleri paket | Microsoft Docs
+title: Microsoft Intune-Azure 'da yerleşik uygulamalar için iOS paket kimlikleri | Microsoft Docs
 titleSuffix: ''
-description: Yerleşik iOS uygulamaları için paket kimliklerinin bir listesini görürsünüz. Bu paket kimliklerini açıkça uygulamalarında cihaz yapılandırma profilleri ve ilkeleri Microsoft Intune izin vermek için kullanın.
+description: Yerleşik iOS uygulamaları için paket kimliklerinin listesini görüntüleyin. Microsoft Intune ' deki cihaz yapılandırma profilleri ve ilkelerindeki uygulamalara açıkça izin vermek için bu paket kimliklerini kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,26 +15,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402758"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912824"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune'da kullanabileceğiniz yerleşik iOS uygulamaları için paket kimlikleri
+# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune 'da kullanabileceğiniz yerleşik iOS uygulamaları için paket kimlikleri
 
-İOS cihazlarda özellik yapılandırmak, iOS cihazlarda yerleşik uygulamaları da ekleyebilirsiniz. Bu makalede, paket kimlikleri bazı yaygın yerleşik iOS uygulamalarının listelenmektedir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun. Apple'nın listesini [iOS paket kimlikleri](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (Apple web sitesini açar).
+İOS cihazlarında özellikleri yapılandırdığınızda, iOS cihazlarına yerleşik uygulamaları da ekleyebilirsiniz. Bu makalede, bazı yaygın yerleşik iOS uygulamalarının paket kimlikleri listelenir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun. Apple 'ın [iOS paket kimlikleri](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) listesine bakın (Apple 'ın Web sitesini açar).
 
 ## <a name="bundle-ids"></a>Paket kimlikleri
 
 | Paket Kimliği                   | Uygulama Adı     | Yayımcı |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | Uygulama Mağazası    | Apple     |
+| com. Apple. Store             | Uygulama Mağazası    | Apple     |
 | com.apple.calculator        | Hesap Makinesi   | Apple     |
 | com.apple.mobilecal         | Takvim     | Apple     |
 | com.apple.camera            | Kamera       | Apple     |
 | com.apple.mobiletimer       | Saat        | Apple     |
+| com. Apple. Clip             | İniz        | Apple     |
 | com.apple.compass           | Pusula      | Apple     |
 | com.apple.MobileAddressBook | Kişiler     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -59,7 +60,7 @@ ms.locfileid: "66402758"
 | com.apple.mobilenotes       | Notlar        | Apple     |
 | com.apple.Numbers           | Sayılar      | Apple     |
 | com.apple.Pages             | Sayfaları        | Apple     |
-| com.apple.mobilephone       | Phone        | Apple     |
+| com. Apple. mobilephone       | Phone        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Fotoğraflar       | Apple     |
 | com.apple.podcasts          | Podcast’ler     | Apple     |
@@ -74,8 +75,8 @@ ms.locfileid: "66402758"
 | com.apple.VoiceMemos        | Sesli Notlar   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | İzleme        | Apple     |
-| com.apple.weather           | Hava durumu      | Apple     |
+| com.apple.weather           | Hava durumu      | Apple     |      
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu paket kimliklerini yapılandırmak için kullanmayı [cihaz özellikleri](ios-device-features-settings.md) ve [izin vermek veya bazı ayarları kısıtlamak](device-restrictions-ios.md) iOS cihazlarda.
+Bu paket kimliklerini, [cihaz özelliklerini](ios-device-features-settings.md) yapılandırmak ve iOS cihazlarında [bazı ayarlara izin vermek veya kısıtlamak](device-restrictions-ios.md) için kullanın.

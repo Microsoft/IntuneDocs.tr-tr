@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 3abf0b45abfe7567692f6bb653c7c2a1c3986546
+ms.sourcegitcommit: f5d216e1b8230045161bb10afbc33d9608782229
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842149"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936652"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -228,7 +228,7 @@ Aşağıdaki Kurulum Yardımcısı ekranlarını atlamak için Aygıt Kayıt Pro
 Kurulum Yardımcısı özelleştirmesi hakkında daha fazla bilgi için bkz. [iOS Için Apple kayıt profili oluşturma](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) ve [MacOS için Apple kayıt profili oluşturma ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Autopilot Device CSV yükleme işlemine bir kullanıcı sütunu ekleyin <!-- 3823054 -->
-Artık Autopilot cihazlara CSV yüklemesine bir kullanıcı sütunu ekleyebilirsiniz. Bu, CSV 'yi içeri aktarırken kullanıcıları toplu olarak atayabilmenizi sağlar. CSV 'deki satırların yeni biçimi şu şekilde görünür: seri numarası, Windows-ürün kimliği, donanım-karma, isteğe bağlı-Grup-etiketi, isteğe bağlı-atanan-kullanıcı. Daha fazla bilgi için bkz. [Windows Autopilot kullanarak Intune 'Da Windows cihazlarını kaydetme](enrollment-autopilot.md).
+Artık Autopilot cihazlara CSV yüklemesine bir kullanıcı sütunu ekleyebilirsiniz. Bu, CSV 'yi içeri aktarırken kullanıcıları toplu olarak atayabilmenizi sağlar. Daha fazla bilgi için bkz. [Windows Autopilot kullanarak Intune 'Da Windows cihazlarını kaydetme](enrollment-autopilot.md).
 
 
 ### <a name="device-management"></a>Cihaz yönetimi

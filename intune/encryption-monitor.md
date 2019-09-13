@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027380"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905051"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini izleme   
 
@@ -74,7 +74,7 @@ Raporu bulmak için [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'D
 
 - **Şifreleme hazırlığı** -CIHAZLARıN değerlendirmesi MDM ilkesi aracılığıyla şifrelemeyi desteklemeye hazır.  
   
-  Örneğin: Bir Windows 10 cihazının *hazır olmadığından*, şifrelemeyi desteklemeye devam edebilir. Hazırlama atamasını sağlamak Için, Windows 10 CIHAZıNıN bir TPM yongasına sahip olması gerekir. Şifrelemeyi desteklemek için TPM yongaları gerekli değildir. (Daha fazla bilgi için, önceki bölümde *şifreleme hazırlığı* bölümüne bakın.)  
+  Örneğin: Bir Windows 10 cihazının *hazır olmadığından*, şifrelemeyi desteklemeye devam edebilir. Hazırlama *atamasını sağlamak* Için, Windows 10 CIHAZıNıN bir TPM yongasına sahip olması gerekir. Şifrelemeyi desteklemek için TPM yongaları gerekli değildir. (Daha fazla bilgi için, önceki bölümde *şifreleme hazırlığı* bölümüne bakın.)  
 
 - **Şifreleme durumu** -işletim sistemi sürücüsünün şifreli olup olmadığı. Intune 'un bir cihazın şifreleme durumunu veya bu duruma yönelik bir değişikliği rapor etmek 24 saate kadar sürebilir. Bu süre, işletim sisteminin şifrelenmesi için zaman ve cihazın Intune 'a geri rapor olması için zaman içerir.  
 
@@ -201,8 +201,7 @@ Intune, kişisel kurtarma anahtarlarını döndürmek ve kurtarmak için birden 
   1. Herhangi bir cihazdan *Intune şirket portalı* Web sitesinde oturum açın.  
   2. Portalda **cihazlar** ' a gidin ve filekasasıyla şifrelenen MacOS cihazını seçin.  
   3. **Kurtarma anahtarını al**' ı seçin. Geçerli kurtarma anahtarı görüntülenir.  
-  
-     İPhone 'da, *Kurtarma anahtarını al* seçeneği görüntülenmeden önce *üç* noktayı seçmeniz gerekir.  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker kurtarma anahtarları  
 

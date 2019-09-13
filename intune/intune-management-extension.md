@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 9cf3a3735688d12e69dc297aa42ab2869c69bfc9
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374950"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904973"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarında PowerShell betikleri kullanma
 
@@ -194,7 +194,29 @@ Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları y
 
   - Betik yürütmeyi Intune olmadan test etmek için, [PsExec aracını](https://docs.microsoft.com/sysinternals/downloads/psexec) yerel olarak kullanarak sistem hesabındaki betikleri çalıştırın:
 
-    `psexec -i -s`
+    `psexec -i -s`  
+    
+  - Betik yürütme başarı bildirirse ancak sonuç gerçekleşmemişse (örneğin, Yukarıdaki betik bir dosya oluşturmaz), virüsten koruma korumalı alana alma Me Texecutor olabilir. Aşağıdaki betik, Intune 'da her zaman bir hata raporlamamalıdır. bir başarı bildirirse, hata çıktısını onaylamak için Deltexecutor. log dosyasına bakın; komut dosyası hiç yürütülerek, uzunluğun > 2 olması gerekir:
+
+    ```powershell
+    Write-Error -Message "Forced Fail" -Category OperationStopped
+    mkdir "c:\temp" 
+    echo "Forced Fail" | out-file c:\temp\Fail.txt
+    ```
+    
+  - . Hata ve. çıktıyı yakalamanız gerekirse, aşağıdaki kod parçacığı, komut dosyasını PSx86 için Çalıştır ve geri dön (Intune yönetim uzantısı yürütmeden sonra günlükleri temizliyor olduğundan):
+  
+    ```powershell
+    $scriptPath = read-host "Enter the path to the script file to execute"
+    $logFolder = read-host "Enter the path to a folder to output the logs to"
+    $outputPath = $logFolder+"\output.output"
+    $errorPath =  $logFolder+"\error.error"
+    $timeoutPath =  $logFolder+"\timeout.timeout"
+    $timeoutVal = 60000 
+    $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
+    $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
+    &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
+    ```
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
