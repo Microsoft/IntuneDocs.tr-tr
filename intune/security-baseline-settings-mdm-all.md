@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b45dde2958535259206c6f99ca1c06a51b28b9d4
-ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+ms.openlocfilehash: 845f798c246d1872080d26ec269662cec154eee2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70816037"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986381"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Intune için Windows MDM güvenlik taban çizgisi ayarları
 Windows 10 veya üstünü çalıştıran cihazlar için Microsoft Intune tarafından desteklenen MDM güvenlik temeli ayarlarını görüntüleyin. Bu temeldeki ayarların varsayılan değerleri, uygulanabilir cihazlar için önerilen yapılandırmayı temsil eder ve diğer güvenlik temellerinden ya da bu taban çizgisinin diğer sürümlerinden taban çizgisi varsayılanlarından eşleşmeyebilir.
@@ -135,17 +135,28 @@ Daha fazla bilgi için Windows [belgelerindeki ilke CSP-](https://docs.microsoft
 
   - **Yazma erişimi için şifreleme gerektir**  
     **Varsayılan**: Evet  
+
 ::: zone-end
 ::: zone pivot="mdm-preview"
-    - **Şifreleme yöntemi**  
-      **Varsayılan**: AES 256bit CBC  
+
+- **Bit dolabı çıkarılabilir sürücü ilkesi**  
+  Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücünü ayrı ayrı yapılandırabileceksiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
+  [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067140) 
+
+  Bit dolabı çıkarılabilir sürücü ilkesi için aşağıdaki ayarı yapılandırın:
+
+  - **Yazma erişimi için şifreleme gerektir**  
+    **Varsayılan**: Evet  
+
+  - **Şifreleme yöntemi**  
+    **Varsayılan**: AES 256bit CBC  
 
 - **Bit dolabı sabit sürücü ilkesi**  
   Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücü ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
  
-   Bit dolabı sabit sürücü ilkesi için aşağıdaki ayarları yapılandırın: 
-   - **Şifreleme yöntemi**
-     **Varsayılanı**: AES 256bit XTS  
+  Bit dolabı sabit sürücü ilkesi için aşağıdaki ayarları yapılandırın: 
+  - **Şifreleme yöntemi**
+    **Varsayılanı**: AES 256bit XTS  
 
 - **Bit dolabı sistem sürücüsü ilkesi**  
   Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücü ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
@@ -1469,7 +1480,9 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-güç](https://docs.micr
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-## <a name="remote-assistance"></a>Uzaktan Yardım
+## <a name="remote-assistance"></a>Uzaktan Yardım   
+Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) bölümüne bakın.  
+
 - **Uzaktan Yardım istenen**  
   Bu ilke ayarı, bu bilgisayarda uzaktan yardım ISTEME veya devre dışı bırakmanıza olanak tanır. 
   - *Bu ilke ayarını etkinleştirirseniz*, bu bilgisayardaki kullanıcılar e-posta veya dosya aktarımını kullanarak birinden yardım isteyebilir. Ayrıca, kullanıcılar bu bilgisayara bağlantılara izin vermek için anlık mesajlaşma programlarını kullanabilir ve ek Uzaktan Yardım ayarlarını yapılandırabilirsiniz. 
@@ -1804,7 +1817,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 ## <a name="windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı  
-Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) bölümüne bakın.  
+Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) bölümüne bakın.  
 
 - **Güvenlik duvarı profili etki alanı**  
   Kuralın ait olduğu profilleri belirtir: Etki alanı, özel, genel. Bu değer, etki alanlarına bağlı ağların profilini temsil eder.  

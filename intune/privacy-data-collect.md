@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 08066c0742ad4ad02f907e55cc84eb65068c9b99
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884773"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986419"
 ---
 # <a name="data-collection-in-intune"></a>Intune’da veri toplama
 
@@ -33,6 +33,9 @@ Kullanıcılar Intune kullanarak şirkete ait veya kişisel cihazlarını kaydet
 - Tanılama, performans ve kullanım bilgileri.
 
 Intune bu kaynaklardan bilgileri şu üç kategori altında toplar: [tanımlanan](#identified-data), [takma ad kullanılan](#pseudonymized-data) ve [toplam](#aggregated-data).
+
+> [!NOTE]
+> Her nedenden dolayı hizmetimizin tarafından toplanan herhangi bir veriyi üçüncü taraflardan satmayacağız.
 
 ## <a name="identified-data"></a>Tanımlanan veriler
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3abf0b45abfe7567692f6bb653c7c2a1c3986546
-ms.sourcegitcommit: f5d216e1b8230045161bb10afbc33d9608782229
+ms.openlocfilehash: f5ea00f2e2631433ece3e9053b8f9ea9d9e359c8
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936652"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986411"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -64,6 +64,10 @@ Android için Microsoft Intune uygulaması aşağıdaki geliştirmelerle güncel
 - Kullanıcının profilini gösteren ek bir sayfa eklendi.
 - Kullanıcı için, cihaz ayarlarını güncelleştirme ihtiyacı gibi eyleme dönüştürülebilir bildirimlerin görüntüsü eklendi.
 - İOS ve Android için Şirket Portalı uygulamasına son eklenen destek ile uygulamayı hizalamak için özel anında iletme bildirimlerinin görüntüsü eklendi. Daha fazla bilgi için bkz. [Intune 'da özel bildirimler gönderme](custom-notifications.md).
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>İOS cihazları için Şirket Portalı kayıt işlemi gizlilik ekranını özelleştirin <!-- 4394993 -->
+Marku kullanarak, son kullanıcıların iOS kaydı sırasında göreceği Şirket Portalı gizlilik ekranını özelleştirebilirsiniz. Özellikle, kuruluşunuzun cihazı göremeyecek veya cihaz üzerinde yapaamayacak işlerin listesini özelleştirebilirsiniz. Daha fazla bilgi için bkz. [Intune şirket portalı uygulamasını yapılandırma](company-portal-app.md#privacy-statement-customization).
+
 
 ## <a name="week-of-september-2-2019"></a>2 Eylül 2019 haftası
 
