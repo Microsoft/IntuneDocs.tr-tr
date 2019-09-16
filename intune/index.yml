@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 08/30/2019
-  ms.openlocfilehash: 4d33b03ecf4a83b4fb962dc3672cb4ca45bfeedb
-  ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
+  ms.openlocfilehash: c671531c878863dc56d00cc0c8cdeb5768517c43
+  ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
   ms.translationtype: HT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 08/31/2019
-  ms.locfileid: "70206438"
+  ms.lasthandoff: 09/13/2019
+  ms.locfileid: "70986391"
 highlightedContent:
   items:
   - title: Intune nedir?
@@ -140,9 +140,20 @@ conceptualContent:
     - url: app-configuration-policies-overview.md
       itemType: overview
       text: Uygulama yapılandırma ilkeleri
+  - title: Uygulama koruma ilkeleri
+    links:
     - url: app-protection-policy.md
       itemType: concept
-      text: Uygulama koruma ilkeleri
+      text: Uygulama koruma ilkelerine genel bakış
+    - url: app-protection-policies.md
+      itemType: overview
+      text: Uygulama koruma ilkeleri oluşturma
+    - url: app-protection-policies-validate.md
+      itemType: how-to-guide
+      text: Uygulama koruma ilkelerini doğrulama
+    - url: app-protection-policies-monitor.md
+      itemType: how-to-guide
+      text: Uygulama koruma ilkelerini izleme
   - title: Yardım ve destek
     links:
     - url: get-support.md
