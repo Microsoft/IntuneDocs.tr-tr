@@ -1,6 +1,6 @@
 # Intune için kullanıcı yardımı
 
-## [İşleri halletmek için yönetilen cihazları kullanma](use-managed-devices-to-get-work-done.md)
+## [Cihaz kaydı nedir?](use-managed-devices-to-get-work-done.md)
 
 ## [Şirketim, Intune ile hangi bilgileri görüntüleyebilir?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 

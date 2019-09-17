@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9554893a8317b014007bd7089ed62f222975c8
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: 76e6ba8cb1ed6804bfb50f69a00817a50fe1912e
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214307"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012446"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune kimlik doğrulaması için sertifikaları kullanma  
 
@@ -98,5 +98,5 @@ Profil, *cihaz yapılandırması – profiller* görünümü bölmesindeki profi
 Güvenilen sertifika profilleri oluşturup atadıktan sonra, kullanmak istediğiniz her platform için SCEP, PKCS veya PKCS içeri aktarılmış sertifika profilleri oluşturun. Devam etmek için aşağıdaki makalelere bakın:  
 - [Intune ile SCEP sertifikalarını destekleyecek altyapıyı yapılandırma](certificates-scep-configure.md)  
 - [Intune ile PKCS sertifikalarını yapılandırma ve yönetme](certficates-pfx-configure.md)  
-- [PKCS içeri aktarılan sertifika profili oluşturma](certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [PKCS içeri aktarılan sertifika profili oluşturma](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
 

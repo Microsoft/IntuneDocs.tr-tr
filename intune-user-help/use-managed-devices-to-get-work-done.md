@@ -1,11 +1,11 @@
 ---
-title: İşleri halletmek için yönetilen cihazları kullanma | Microsoft Docs
-description: Cihazınızı Intune yönetimine kaydetmenin ne anlama geldiğini anlayın.
+title: Cihaz kaydı nedir? | Microsoft Docs
+description: Şirket Portalı ve Microsoft Intune uygulamasına cihazınızı kaydetmek için ne anlama geldiğini anlayın.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,92 +18,97 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f698f03ed3c7523ef1d768d2a1361d6d1a55008
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 98fd937ee379d71874f61152d88ddc94fa5b7a09
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883863"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012428"
 ---
-# <a name="enroll-device-for-access-to-work-or-school-resources"></a>İş veya okul kaynaklarına erişmek için cihazı kaydetme
-Cihazınızı kaydetmek ve e-posta ve uygulamalara erişim sağlamak için Intune Şirket Portalı uygulamasını veya Microsoft Intune uygulamasını yüklemeniz gerekir. Kayıt yaptığınızda, kuruluşunuzun yapılandırdığı parola, PIN ve şifreleme gibi temel yönetim ilkeleri cihazınıza uygulanır. Cihaz ayarlarınız tüm kuruluşunuzun gereksinimlerini karşıladıktan sonra, iş bilgilerinizin neredeyse her yerinden güvenli bir şekilde erişebilirsiniz.  
+# <a name="what-is-device-enrollment"></a>Cihaz kaydı nedir?
+Cihazınızdaki iş veya okul kaynaklarına erişim sağlamak için cihazınızı Intune Şirket Portalı App veya Microsoft Intune uygulamasına kaydetmeniz gerekir. 
 
-Şirket Portalı ve Microsoft Intune uygulamalar, cihaz ayarlarınızın kuruluşunuzun ilkeleriyle eşleşmesini sağlayarak kayıtlı cihazınızı güvende tutar. 
+Cihaz kaydı sırasında:
 
-Şirket Portalı uygulaması ayrıca:  
-* Kişisel ve iş bilgilerinizi ayrı tutar.  
-* İlgili iş ve okul uygulamalarını bulmayı ve yüklemeyi kolaylaştırır.   
+* Cihazınız kuruluşunuza kayıtlı. Bu adım, kuruluşunuzun e-postasına, uygulamalarına ve Wi-Fi erişimine yetki almanızı sağlar. 
+* Kuruluşunuzun cihaz yönetimi ilkeleri cihazınıza uygulanır. İlkeler, cihaz parolaları ve şifreleme gibi işlemler için gereksinimleri içerebilir. Bu gereksinimlerin amacı, cihazınızın ve kuruluşunuzun verilerinin yetkisiz erişime karşı güvende tutulması sağlamaktır.
 
-## <a name="get-the-apps"></a>Uygulamaları edinme
-Şirket Portalı almak için:
+Kuruluşunuzun gereksinimlerini karşılamak üzere cihaz ayarlarınızı güncelleştirdiğinizde kayıt tamamlanmıştır. Neredeyse her yerden iş veya okul hesabınızda güvenli bir şekilde oturum açabilirsiniz.  
 
-- Platforma özgü uygulama mağazasından Şirket Portalı uygulamasını yükler. Bazı durumlarda, kuruluşunuz sizin için Şirket Portalı uygulamayı yükler.  
-- Uygulamaya bir tarayıcıdan erişmek için [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) gidin.  
+Bu makalede, uygulamanın, desteklenen cihazların alınması ve cihazınızın kaldırılması veya sıfırlanması gibi diğer kayıt yönleri açıklanmaktadır.  
 
-Microsoft Intune uygulamasını kullanmanız gerekiyorsa, kuruluşunuz sizin için onu yükler.  
+## <a name="company-portal-and-microsoft-intune-app"></a>Şirket Portalı ve Microsoft Intune uygulaması
 
+Şirket Portalı ve Microsoft Intune uygulamalar, ilke veya değişiklikleri ayarlama konusunda sizi uyarır, bu sayede iş veya okul erişimi kaybetmeksizin işlem gerçekleştirebilirsiniz. 
 
-## <a name="what-information-can-my-company-see-when-i-enroll"></a>Kaydettiğimde şirketim hangi bilgileri görebilir?
-Cihazınız kaydedildikten sonra, kuruluşunuzun destek kişileri yalnızca çalışmayı ilgilendiren bilgileri görebilirler. Kişisel bilgilerinizi göremez. Çalışma sırasında kullanım için kişisel bir cihaz kaydediyorsanız, [tam olarak neler görülemeyeceğini ve görülemeyeceğini öğrenin](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
+Şirket Portalı uygulaması kişisel ve iş bilgilerinizin ayrı kalmasını sağlar, böylece üretken ve odaklanmış olmaya devam edebilirsiniz. Ayrıca iş ve okul uygulamalarının sizin için kullanılabilir olmasını sağlar. bu sayede iş hattınızla ilgili olanları bulabilir ve yükleyebilirsiniz.  
 
+### <a name="get-company-portal"></a>Şirket Portalı al
+
+Bazı durumlarda, kuruluşunuz sizin için Şirket Portalı uygulamasını cihazınıza yükler. Uygulama, Microsoft Store, App Store ve Google Play Store gibi uygulama mağazalarından de yüklenebilir. Uygulamaya bir Web tarayıcısından erişmek için, iş veya okul hesabınızla [Şirket portalı Web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980) oturum açın.  
+
+### <a name="get-microsoft-intune-app"></a>Microsoft Intune uygulaması al
+
+Microsoft Intune uygulamasını kullanmanız gerekiyorsa, kuruluşunuz bunu sizin için cihazınıza yükler.  
 
 ## <a name="whats-the-difference-between-the-apps-and-the-website"></a>Uygulamalar ve Web sitesi arasındaki fark nedir?
 Şirket Portalı uygulaması, Windows 10, iOS, macOS ve Android cihazlarda kullanılabilir. Cihazınızın ilgili platformuyla sorunsuz bir şekilde tümleşir. Web sitesi sürümüne herhangi bir cihazdan erişilebilir ve kullandığınız cihaz ne olduğuna bakılmaksızın aynı, evrensel deneyim elde edersiniz. 
 
-Microsoft Intune uygulaması şirkete ait Android cihazlara yöneliktir.  
+Microsoft Intune uygulaması şirkete ait Android cihazlara yöneliktir ve bir Web sitesi yoktur.  
 
 ## <a name="what-kind-of-devices-can-you-enroll-with-company-portal"></a>Şirket Portalı ne tür cihazlar kaydedebilir?
-- iOS kullanan Apple cihazları (iPhone ve iPad gibi) ve macOS (MacBook ve iMac gibi)
-- Android cihazlar
+Aşağıdaki cihazları Şirket Portalı kaydedebilirsiniz:  
+
 - Windows cihazları
   - Windows 10 Mobile
   - Windows 10 Masaüstü
   - Windows Phone 8.1
   - Windows 8.1
+- Apple cihazları
+    - iOS
+    - Mac OS
+- Android cihazlar
+
 
 ## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>Microsoft Intune uygulamayla ne tür cihazlar kaydedebilir?  
 Kuruluşunuzun uygulamayla kullanılmak üzere ayarlamış olduğu şirkete ait Android cihazlarını kaydedebilirsiniz. Uygulama, Android 6,0 ve üstünü destekler. 
 
-## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>Bir bilgisayarı veya cihazı Şirket Portalı’ndan kaldırabilir misiniz?
-Bir bilgisayarı veya cihazı Şirket Portalı’ndan kaldırabilir ya da sıfırlayabilirsiniz. **Kaldırma** ile **sıfırlama** işlemi birbirinden farklıdır.
+## <a name="can-you-remove-a-device-from-the-company-portal"></a>Bir cihazı Şirket Portalı kaldırabilir miyim?
+Bir cihazı Şirket Portalı kaldırabilir veya sıfırlayabilirsiniz. **Kaldırma** ile **sıfırlama** işlemi birbirinden farklıdır.
 
-Bir bilgisayarı veya cihazı Şirket Portalı kaldırdığınızda, cihazınızın Intune kaydını kaldırdığınızda. Kaydını kaldırdıktan sonra, Şirket Portalı’na artık bu cihazdan erişemezsiniz ve bazı şirket verileri cihazınızdan kaldırılabilir. Cihazınızı Şirket Portalı nasıl kaldıracağınızı öğrenmek için aşağıdaki bağlantılara bakın:  
+Cihazın kaldırılması sırasında Şirket Portalı, cihazın kaydını siler ve kaydı kaldırır. Bu cihaz Şirket Portalı erişimini kaybeder. İş veya okul verileri de kaldırılabilir. 
 
-- [Android cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-android.md)
-- [iOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-ios.md)
-- [macOS cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-macos.md)
-- [Windows cihazınızın kaydını kaldırma](unenroll-your-device-from-intune-windows.md)
+Cihaz sıfırlama sırasında, Şirket Portalı bilgisayarınızı veya cihazınızı üreticinin varsayılan ayarlarına geri döndürmeye çalışır. Tüm iş veya okul verileri ve tüm kişisel veriler cihazdan kaldırılır. Örneğin, cihazınızı kaybederseniz, sıfırlama yararlı olur. Şirket Portalı Web sitesinden uzaktan sıfırlayabilirsiniz.  
 
-Bir bilgisayarı veya cihazı sıfırladığınızda Şirket Portalı, bilgisayarınızı veya cihazınızı üreticinin varsayılan ayarlarına geri döndürmeye çalışır. Cihazınızın sıfırlanması cihazdaki tüm şirket ve kişisel verileri kaldırır. Cihazınızı kaybettiyseniz, Şirket Portalı Web sitesinden uzaktan de sıfırlayabilirsiniz.  
-
-Cihazınızı nasıl sıfırlayacağınızı öğrenmek için, [Şirket portalı Web sitesinden cihazınızı sıfırlama](reset-erase-your-device-cpwebsite.md)bölümüne bakın.  
-
-## <a name="can-you-remove-a-computer-or-device-from-the-microsoft-intune-app"></a>Microsoft Intune uygulamasından bir bilgisayarı veya cihazı kaldırabilir miyim?
+## <a name="can-you-remove-a-device-from-the-microsoft-intune-app"></a>Microsoft Intune uygulamasından bir cihazı kaldırabilir miyim?
 Hayır, şirkete ait bir cihazı Microsoft Intune uygulamasından kaldırmanın bir yolu yoktur.  
 
 ## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>Cihazımı Şirket Portalı veya Microsoft Intune uygulamada göremiyorum ne yapmalıyım?
-Bir cihazı görebilmeniz için önce Şirket Portalı’na eklenmesi gerekir. Yöneticinizin önerdiği Şirket Portalı’na gidin ve cihazınıza yönelik adımları izleyin. Ayrıca, sahibi ve yönetimi şirketinize ait olan cihazları görmezsiniz.
+Bir cihazı Şirket Portalı görmek için öncelikle kaydolmalıdır. Kayıt işleminden sonra, tüm cihazlarınızı görmüyorsanız, Şirket Portalı erişimi eşitlemeyi deneyin veya denetleyin. Şirketiniz tarafından sahip olunan ve yönetilen cihazları görmezsiniz.
 
-Microsoft Intune uygulamasını kullanıyorsanız, yalnızca şu anda kullanmakta olduğunuz cihazı görürsünüz. Diğer kayıtlı cihazlar uygulamada görünür olmayacaktır.  
+Microsoft Intune uygulamasında, yalnızca kullanmakta olduğunuz cihazı görürsünüz. Diğer kayıtlı cihazlar uygulamada görünür olmayacaktır.  
 
 ## <a name="where-else-can-i-go-for-help"></a>Yardım için başka nereye başvurabilirim?  
-Sık karşılaşılan sorunları ve soruları gidermek için platforma özgü bu belgelere göz atın:  
+Sık karşılaşılan sorunları gidermek için platforma özgü bu belgelere göz atın:  
 
 - [Android cihazınızdaki yaygın sorunları çözme](check-compliance-on-your-device-android.md)  
 - [iOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-ios.md)
 - [macOS cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-macos.md)
 - [Windows cihazınızdaki yaygın sorunları çözme](troubleshoot-your-device-windows.md)
 
-Destek sorumlunuza da ulaşabilirsiniz. Şirket Portalı ve Microsoft Intune uygulaması, iletişim bilgilerini ve bir sorunu raporlamak için kullanabileceğiniz yolları içeren yardım ve destek sayfaları sunmaktadır. İletişim bilgileri, kuruluşunuzun [Şirket portalı Web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980)de mevcuttur.  
+BT destek sorumlunuza da başvurabilirsiniz. Şirket Portalı ve Microsoft Intune uygulaması, iletişim bilgilerini ve bir sorunu raporlamak için kullanabileceğiniz yolları içeren yardım ve destek sayfaları sunmaktadır. İletişim bilgileri, kuruluşunuzun [Şirket portalı Web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980)de mevcuttur.  
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 
-Cihazınızın platformuna özgü olan kayıttan başlayarak yardım alın:  
+İş veya okul hesabınıza erişmeye hazırsanız, cihazınızı kaydetmek için kuruluşunuzun yönergelerini izleyin. Aşağıdaki makalelerde adım adım kayıt kılavuzunu de bulabilirsiniz.
 
-- [Android cihazınızı kullanma](using-your-android-device-with-intune.md)
-- [iOS cihazınızı kullanma](using-your-ios-device-with-intune.md)
-- [macOS cihazınızı kullanma](using-your-macos-device-with-intune.md)
-- [Windows cihazınızı kullanma](using-your-windows-device-with-intune.md)
-- [Şirket portalı web sitesini kullanma](using-the-intune-company-portal-website.md)
+* [Windows 10 cihazınızı kaydetme](enroll-windows-10-device.md)
+* [Android cihazınızı kaydetme](enroll-device-android-company-portal.md)
+* [Android iş profili ile kaydolma](enroll-device-android-work-profile.md)
+* [Microsoft Intune uygulaması ile kaydolma](enroll-device-android-microsoft-intune-app.md)
+* [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
+* [Kuruluş tarafından sağlanan iOS cihazınızı kaydetme](enroll-your-device-dep-ios.md)
+* [macOS cihazınızı kaydetme](enroll-your-device-in-intune-macos-cp.md)
+* [Kuruluş tarafından sağlanan macOS cihazınızı kaydetme](enroll-company-device-macos.md)
 
 

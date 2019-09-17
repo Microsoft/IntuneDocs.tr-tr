@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 399b0c6065c51343e4802d4e8aec29381c6dc468
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: fba9bc63a2ee9d68fdc1d6e41698435144676b2e
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861845"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012479"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune ve Windows Autopilot kullanarak karma Azure AD 'ye katılmış cihazları dağıtma
 Karma Azure Active Directory (Azure AD) ile birleştirilmiş cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -106,14 +106,14 @@ Bilgisayar oluşturma hakları verilen kuruluş biriminin eşleşmesi gerekir:
 
 Active Directory için Intune Bağlayıcısı, Windows Server 2016 veya üstünü çalıştıran bir bilgisayarda yüklü olmalıdır. Bilgisayarın Internet erişimi de ve Active Directory aynı zamanda erişimine sahip olması gerekir. Birden fazla Active Directory etki alanını desteklemek üzere ölçek ve kullanılabilirliği artırmak için ortamınıza birden fazla bağlayıcı yükleyebilirsiniz. Bağlayıcıyı, başka bir Intune Bağlayıcısı çalıştırmayan bir sunucuya yüklemenizi öneririz.
 
-1. [Intune](https://aka.ms/intuneportal)'da, Active Directory için **cihaz kaydı** > **Windows kaydı** > Intune Bağlayıcısı ' nı seçin **(Önizleme)**  > **bağlayıcı ekleyin**. 
+1. [Intune](https://aka.ms/intuneportal)'da > Active Directory > Add için cihaz kaydı Windows kaydı Intune Bağlayıcısı ' nı seçin. >  
 2. Bağlayıcıyı indirmek için yönergeleri izleyin.
 3. Bağlayıcıyı yüklemek için, yüklenen bağlayıcı kurulum dosyasını *Odjconnectorbootstrapper. exe*' yi açın.
 4. Kurulumun sonunda **Yapılandır**' ı seçin.
 5. **Oturum aç '** ı seçin.
 6. Kullanıcı genel yöneticisi veya Intune yönetici rolü kimlik bilgilerini girin.  
    Kullanıcı hesabının atanmış bir Intune lisansı olmalıdır.
-7. **Active Directory (Önizleme) için** **cihaz kaydı** > **Windows kaydı** > Intune Bağlayıcısı ' na gidin ve ardından bağlantı durumunun **etkin**olduğunu doğrulayın.
+7. Active Directory için **cihaz kaydı** > **Windows kaydı** > **Intune Bağlayıcısı**' na gidin ve bağlantı durumunun **etkin**olduğunu onaylayın.
 
 > [!NOTE]
 > Bağlayıcıya oturum açtıktan sonra, [Intune](https://aka.ms/intuneportal)'da görüntülenmesi birkaç dakika sürebilir. Yalnızca Intune hizmetiyle başarıyla iletişim kurabiliyorsa görünür.
@@ -170,7 +170,7 @@ Autopilot cihazlarınız *kaydolduktan*sonra Intune 'a kaydolmadan önce, üç y
 - Azure portal Intune 'daki **Azure AD cihazları** bölmesi. **Cihazlar** > **Azure AD cihazları**' nı seçin.
 - **Cihazlar** tümcihazlar'aseçerekAzurePortalAzureActiveDirectoryAzureAD > tüm cihazlar bölmesi.
 
-Autopilot cihazlarınız kaydedildikten sonra,bunlar dört yerde görüntülenir:
+Autopilot cihazlarınız kaydedildikten *sonra, bunlar*dört yerde görüntülenir:
 - Azure portal Intune 'daki **Autopilot cihazları** bölmesi. **Cihaz kaydı** > **Windows kayıt** > **cihazları**' nı seçin.
 - Azure portal Intune 'daki **Azure AD cihazları** bölmesi. **Cihazlar** > **Azure AD cihazları**' nı seçin.
 - Azure portal Azure Active Directory **Azure AD tüm cihazlar** bölmesi. **Cihazlar** > **tüm cihazlar**' ı seçin.
@@ -192,7 +192,7 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 1. **Grupları seç**' i seçin.
 1. **Grupları seçin** bölmesinde, cihaz grubunu seçin ve ardından **Seç**' e tıklayın.
 
-Cihaz profili durumunun *atama* ve, son olarak *atanan*olarak değiştirilmesi yaklaşık 15 dakika sürer.
+Cihaz profili durumunun *atama* ve, son olarak *atanan* *olarak değiştirilmesi* yaklaşık 15 dakika sürer.
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>Seçim Kayıt durumu sayfasını aç
 
