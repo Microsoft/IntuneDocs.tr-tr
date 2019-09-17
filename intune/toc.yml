@@ -519,6 +519,8 @@
             - name: PKCS
               href: certficates-pfx-configure.md
               displayName: ksp
+            - name: İçeri aktarılan PKCS
+              href: certificates-imported-pfx-configure.md
             - name: E-posta şifrelemek için S/MIME kullanma
               href: certificates-s-mime-encryption-sign.md
             - name: SCEP ile üçüncü taraf sertifika yetkilisi kullanma
@@ -744,6 +746,8 @@
               href: troubleshoot-certificate-connector-events.md
             - name: Exchange bağlayıcısı sorunlarını giderme
               href: troubleshoot-exchange-connector.md
+        - name: Intune belgelerini kullanma
+          href: use-docs.md
         - name: Destek alma
           href: get-support.md
 - name: Başvuru
