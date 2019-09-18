@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 83b10bdfacbcf76b9f75b90d99e094b6854d525e
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842070"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061655"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Öğreticide EMM 'yi EMM ve uygulama yapılandırması için Intune kullanacak şekilde yapılandırma
 
@@ -77,7 +77,6 @@ EMM iOS için bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetile
 5. **İlişkili uygulama**' yı seçin.
 6. Arama çubuğuna "EMM için bolluk" yazın ve uygulamayı seçin.
 7. **Tamam**' a tıklayın ve ardından **yapılandırma ayarları**' nı seçin. 
-    - Yapılandırma anahtarları ve değerleri hakkında daha fazla bilgi için, [bolluk 'In AppConfig Web sayfasının](https://www.appconfig.org/company/slack/)"Teknik" sekmesindeki belgelere başvurun.
 8. **Tamam**' ı ve ardından **Ekle**' yi seçin.
 9. Arama çubuğuna "bolluk uygulama yapılandırma ilkesi sınaması" yazın ve yeni eklediğiniz ilkeyi seçin.
 10. Yönet ' den **atamalar**' ı seçin.
