@@ -8,19 +8,19 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f63bbc80c055cfcb3bd52f79e7b810094107ec2a
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511600"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080050"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>Hızlı Başlangıç: Özel bir rol oluşturup atayarak
+# <a name="quickstart-create-and-assign-a-custom-role"></a>Hızlı başlangıç Özel bir rol oluşturup atayarak
 
 Bu Intune hızlı başlangıcında bir güvenlik işlemleri departmanı için belirli izinleri olan özel bir rol oluşturup atayacaksınız. Ardından rolü bu tür işletmenlerden oluşan bir gruba atayacaksınız. Hemen kullanabileceğiniz birkaç varsayılan rol bulunur. Ancak bunun gibi özel roller oluşturarak mobil cihaz yönetim sisteminizin tamamı üzerinde doğru ayarlı bir erişim denetiminiz olur.
 
@@ -56,10 +56,10 @@ Güvenlik işletmeninizin yeni izinleri kullanabilmesi için önce rolü güvenl
 1. Intune’da **Roller** > **Tüm roller** > **Güvenlik işlemleri**’ni seçin.
 2. **Intune rolleri** altında **Atamalar** > **Ata**'yı seçin.
 3. **Atama adı** kutusuna *Güvenlik işletmenleri* ifadesini girin.
-4. **Üye (Gruplar)** > **Ekle**'yi seçin.
+4. **Üye (Gruplar)**  > **Ekle**'yi seçin.
 5. **Contoso Testçileri** grubunu seçin.
 6. **Seç** > **Tamam**'ı seçin.
-7. **Kapsam (Gruplar)** > **Dahil edilecek grupları seç** > **Contoso Testçileri**'ni seçin.
+7. **Kapsam (Gruplar)**  > **Dahil edilecek grupları seç** > **Contoso Testçileri**'ni seçin.
 8. **Seç** > **Tamam** > **Tamam**'ı seçin.
 
 Artık gruptaki herkes *Güvenlik işlemleri* rolünün bir üyesidir ve bir cihaz hakkındaki şu bilgileri inceleyebilir: kurumsal cihaz tanımlayıcıları, cihaz uyumluluk ilkeleri, cihaz yapılandırmaları ve kuruluş bilgileri.
@@ -75,4 +75,4 @@ Bu hızlı başlangıçta özel bir güvenlik işlemleri rolü oluşturup bir gr
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: İOS için bir e-posta cihaz profili oluşturma](quickstart-email-profile.md)
+> [Hızlı başlangıç İOS için bir e-posta cihaz profili oluşturma](quickstart-email-profile.md)

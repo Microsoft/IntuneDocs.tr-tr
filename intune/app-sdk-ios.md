@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8774b5af7555462b7754e4d0f8a6f50a330854ff
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: cde8269ca9d2ca2348fb6da377ad46150c90015a
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021825"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061560"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -412,9 +412,6 @@ Bu temsilci yöntemleri aşağıdaki bilgileri içeren bir `IntuneMAMEnrollmentS
 * İstek sonucunu gösteren bir durum kodu
 * Durum kodunun açıklamasını içeren bir hata dizesi
 * `NSError` nesnesi. Bu nesne, getirilebilecek belirli durum kodlarıyla birlikte `IntuneMAMEnrollmentStatus.h` içinde tanımlanır.
-
-> [!NOTE]
-> Bu bilgiler yalnızca hata ayıklama amacına yöneliktir. Uygulamanızdaki hiçbir iş mantığı bu bildirimlere dayalı olmamalıdır. Bu bilgiler hata ayıklama veya izleme amacıyla telemetri hizmetine gönderilebilir.
 
 ### <a name="sample-code"></a>Örnek kod
 

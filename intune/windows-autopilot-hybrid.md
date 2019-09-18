@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
-ms.reviewer: damionw
+ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fba9bc63a2ee9d68fdc1d6e41698435144676b2e
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: 0bf683aebee50b4f2172f11ce205a910a47d0845
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012479"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071140"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune ve Windows Autopilot kullanarak karma Azure AD 'ye katılmış cihazları dağıtma
 Karma Azure Active Directory (Azure AD) ile birleştirilmiş cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -183,14 +183,17 @@ Autopilot cihazlarınız kaydedildikten sonra, adları cihazın ana bilgisayar a
 Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için kullanılır.
 
 1. [Intune](https://aka.ms/intuneportal)'da **cihaz kaydı** > **Windows kayıt** > **dağıtım profilleri** > **Profil oluştur**' u seçin.
-1. Bir **ad** ve isteğe bağlı olarak bir **Açıklama**yazın.
-1. **Dağıtım modu**için **Kullanıcı odaklı**' ı seçin.
-1. **Azure AD 'ye katıl** kutusunda **karma Azure AD 'ye katılmış (Önizleme)** seçeneğini belirleyin.
-1. **Hazır olmayan deneyim (OOBE)** seçeneğini belirleyin, gerekli seçenekleri yapılandırın ve ardından **Kaydet**' i seçin.
-1. Profili oluşturmak için **Oluştur**'u seçin. 
-1. Profil bölmesinde **atamalar**' ı seçin.
-1. **Grupları seç**' i seçin.
-1. **Grupları seçin** bölmesinde, cihaz grubunu seçin ve ardından **Seç**' e tıklayın.
+2. **Temel bilgiler** sayfasında, bir **ad** ve isteğe bağlı bir **Açıklama**yazın.
+3. Atanan gruplardaki tüm cihazların otomatik olarak Autopilot'a dönüştürülmesini istiyorsanız **Hedeflenen tüm cihazları Autopilot'a dönüştür** seçeneğini **Evet** olarak ayarlayın. Atanan gruplardaki Autopilot olmayan tüm cihazlar Autopilot dağıtım hizmeti ile kaydedilir. Kaydın işlenmesi için 48 saat kadar bekleyin. Kaydı kaldırılıp sıfırlandığında Autopilot cihazı kaydeder. Bir cihaz bu şekilde kaydedildikten sonra bu seçeneğin devre dışı bırakılması veya profil atamasının kaldırılması cihazı Autopilot dağıtım hizmetinden kaldırmaz. Bunun yerine [cihazı doğrudan kaldırmanız](enrollment-autopilot.md#delete-autopilot-devices) gerekir.
+4. **İleri**’yi seçin.
+5. **Kullanıma hazır deneyim (OOBE)** sayfasında, **dağıtım modu**için **Kullanıcı odaklı**' ı seçin.
+6. **Azure AD 'ye katıl** kutusunda **karma Azure AD 'ye katılmış**' i seçin.
+7. **Kullanıma hazır deneyim (OOBE)** sayfasında yer alan diğer seçenekleri gerektiği şekilde yapılandırın.
+8. **İleri**’yi seçin.
+9. **Kapsam etiketleri** sayfasında bu profil için [kapsam etiketleri](scope-tags.md) ' ni seçin.
+10. **İleri**’yi seçin.
+11. **Atamalar** sayfasında, **dahil etmek istediğiniz grupları seçin** > seçin **ve > cihaz grubunu seçin.**
+12. **İleri** > **Oluştur**' u seçin.
 
 Cihaz profili durumunun *atama* ve, son olarak *atanan* *olarak değiştirilmesi* yaklaşık 15 dakika sürer.
 

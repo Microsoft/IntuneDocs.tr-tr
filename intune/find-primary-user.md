@@ -1,7 +1,7 @@
 ---
-title: Bir Microsoft Intune cihazın birincil kullanıcıyı bulun.
+title: Microsoft Intune cihazının birincil kullanıcısını bulun.
 titleSuffix: ''
-description: Birincil kullanıcı (veya kullanıcı cihaz benzeşimi) bir Intune cihaz bulun.
+description: Bir Intune cihazının birincil kullanıcısını (veya Kullanıcı aygıtı benzeşimini) bulun.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,62 +16,62 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
-ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
+ms.openlocfilehash: e7c0947438b42f4a2fa5ccae8e9cab07a60167ae
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67500654"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071694"
 ---
-# <a name="find-the-primary-user-of-an-intune-device"></a>Birincil kullanıcının bir Intune cihaz bulma
+# <a name="find-the-primary-user-of-an-intune-device"></a>Intune cihazının birincil kullanıcısını bulma
 
-Birincil kullanıcı, kullanıcı cihaz benzeşim olarak da bilinir, her Intune cihaz özelliğidir. Bir Intune cihaz, sıfır veya bir birincil kullanıcı kendisine atanmış olabilir. Birincil atanan kullanıcı olduğunda, cihaz, bir "paylaşılan cihaz" olarak adlandırılır.
+Kullanıcı cihaz benzeşimi olarak da bilinen birincil Kullanıcı, her bir Intune cihazının bir özelliğidir. Bir Intune cihazında sıfır veya bir birincil kullanıcı atanmış olabilir. Hiç birincil Kullanıcı atanmamışsa, cihaza "paylaşılan cihaz" adı verilir.
 
-## <a name="how-to-find-a-devices-primary-user"></a>Bir cihazın birincil kullanıcısı bulma
+## <a name="how-to-find-a-devices-primary-user"></a>Bir cihazın birincil kullanıcısını bulma
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seçin **cihazları** > bir cihaz seçin.
-3. Üzerinde **genel bakış** sayfasında **daha fazla bilgi bkz** listelenen birincil kullanıcı göreceksiniz.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. Cihaz seçin > **cihazları** seçin.
+3. **Genel bakış** sayfasında, **daha fazla göster** ' i seçin ve birincil kullanıcının listelendiğini görürsünüz.
 
-## <a name="what-is-the-primary-user"></a>Birincil kullanıcı nedir?
-Birincil kullanıcı özelliği, lisanslı bir Intune kullanıcı cihazlarını eşleştirmek için kullanılır:
-- Şirket portalı uygulaması
-- Son kullanıcı Web sitesi
-- BT sayfaları Azure Portalı'nda sorun giderme gibi pro deneyimleri. Bu sayfalar, kullanıcı hesaplarını kullanarak birincil kullanıcı tarafından cihazlara eşleyin.    
+## <a name="what-is-the-primary-user"></a>Birincil Kullanıcı nedir?
+Birincil Kullanıcı özelliği, lisanslı bir Intune kullanıcısını içindeki cihazlarıyla eşlemek için kullanılır:
+- Şirket Portalı uygulaması
+- Son Kullanıcı Web sitesi
+- Azure portal sayfa sorunlarını giderme gibi BT uzmanı deneyimleri. Bu sayfalar, birincil Kullanıcı kullanılarak kullanıcı hesaplarını cihazlara eşler.    
 
 ### <a name="company-portal-app"></a>Şirket Portalı uygulaması
-Şirket portalı uygulaması, şirket portalında oturum açmıştır kullanıcı hesabının bu cihazın birincil kullanıcısı olduğunu bekliyor. Birincil kullanıcı olarak atanmış olan başka bir kullanıcı, Şirket portalı, bir uyarı gösterir:
+Şirket Portalı uygulaması, Şirket Portalı oturum açan kullanıcı hesabının o cihazın birincil kullanıcısı olmasını bekler. Birincil kullanıcı olarak başka bir Kullanıcı atanırsa, Şirket Portalı bir uyarı gösterir:
 
-"Bu cihaz zaten kuruluşunuzdaki birisi atanır. Birincil cihaz kullanıcısının olma hakkında iletişim şirketinizin destek birimi. Şirket portalı kullanmaya devam edebilirsiniz ancak işlevselliği sınırlı olur."
+"Bu cihaz, kuruluşunuzdaki bir kişiye zaten atanmış. Birincil cihaz kullanıcısı olma hakkında şirket desteği ile iletişim kurun. Şirket Portalı kullanmaya devam edebilirsiniz, ancak işlevler sınırlı olacaktır. "
 
-Ardından birincil kullanıcıya atanan Intune cihaz varsa Şirket portalı uygulaması, paylaşılan cihazlar algılar. Paylaşılan cihazlar "paylaşılan" etiketli cihaz kutucuğuna görünen bir görsel olarak tanımlanabilir. Bu modda, Şirket portalı hala istemek ve mevcut uygulamaları için kullanılabilir. Bununla birlikte, Self Servis bir Eylemler (sıfırlama/yeniden adlandırma/devre dışı bırakma) kullanılamaz.  
+Bir Intune cihazında hiç birincil Kullanıcı atanmamışsa, Şirket Portalı uygulama onu paylaşılan bir cihaz olarak algılar. Paylaşılan cihazlar, cihaz kutucuğunda görüntülenen "paylaşılan" bir etiketle görsel olarak tanımlanabilir. Bu modda Şirket Portalı kullanılabilir uygulamaları talep etmek ve yüklemek için hala kullanılabilir. Ancak self servis eylemleri (sıfırlama/yeniden adlandırma/devre dışı bırakma) kullanılamaz.  
 
-Kullanılabilir uygulamalar, paylaşılan cihazlar üzerindeki şirket Portalı'nda görünmesi için bir kullanıcı grubuna atanmalıdır. Bunlar Sistem bağlamında ya da uygulama BT yöneticiniz tarafından yapılandırılan nasıl bağlı olarak kullanıcı bağlamı, yüklü olması. Uygulama Bağlamı hakkında daha fazla bilgi için bkz. [Windows 10 cihazlarda uygulama yükleme](apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Şirket portalı sürümü 10.3.4651.0 veya daha sonra bu özelliği kullanmak için gereklidir.
+Paylaşılan cihazlardaki Şirket Portalı görünmesi için, kullanılabilir uygulamaların bir kullanıcı grubuna atanması gerekir. Uygulamanın BT Yöneticisi tarafından nasıl yapılandırıldığına bağlı olarak, sistem bağlamına veya Kullanıcı bağlamına yüklenir. Uygulama bağlamı hakkında daha fazla bilgi için bkz. [Windows 10 cihazlarına uygulama yükleme](apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Bu özelliği kullanmak için Şirket Portalı Version 10.3.4651.0 veya üzeri gereklidir.
 
 
-## <a name="who-is-assigned-as-the-primary-user"></a>Birincil kullanıcı olarak atanan kişi?
-Intune otomatik olarak birincil kullanıcı cihazlarına sırasında veya hemen sonra kayıt ekler. Kayıt yöntemi, bir cihaz için birincil kullanıcı eklendiğinde belirler.
+## <a name="who-is-assigned-as-the-primary-user"></a>Birincil kullanıcı olarak kim atanır?
+Intune, kayıt sırasında veya hemen sonrasında cihazlara birincil kullanıcı otomatik olarak ekler. Kayıt yöntemi, birincil kullanıcının bir cihaza ne zaman ekleneceğini belirler.
 
-| Platform | Kayıt yöntemi | Atanan birincil kullanıcı | Birincil kullanıcı olarak atanan |
+| Platform | Kayıt yöntemi | Birincil Kullanıcı atandı | Birincil Kullanıcı atandı |
 | ---- | ---- | ---- | ---- |
-| Windows | İş veya Okul (kullanıcı tabanlı) Ekle | Kullanıcı kaydetme | Kayıt sırasında |   
-| Windows | Modern uygulama oturum açma (kullanıcı temelli) | Kullanıcı kaydetme | Kayıt sırasında | 
-| Windows | MDM'ye yalnızca (kullanıcı güdümlü) kaydetme | Kullanıcı kaydetme | Kayıt sırasında | 
-| Windows | Azure AD'ye katılım (dışı deneyimini) | Kullanıcı kaydetme | Kayıt sırasında | 
-| Windows | Azure AD'ye katılım (Autopilot deneyimini dışında) | Kullanıcı kaydetme | Kayıt sırasında | 
-| Windows | Yalnızca MDM sistemine kaydetme | Kullanıcı kaydetme | Kayıt sırasında | 
-| Windows | Hybrid AADJ + automatic enrollment GPO | Windows için oturum açmak için ilk kullanıcı | Ne zaman ilk Windows için oturum açtığında| 
-| Windows | Ortak yönetim | Windows için oturum açmak için ilk kullanıcı | Ne zaman ilk Windows için oturum açtığında | 
-| Windows | Azure AD'ye katılım (toplu kayıt belirteç) | Yok. | Geçerli değil | 
-| Windows | Azure AD'ye katılım (şirket içinde dağıtma Autopilot mod) | None | Geçerli değil | 
-| Platformlar arası | Şirket portalı uygulaması ile kullanıcı odaklı kaydı | Kullanıcı kaydetme | Kayıt sırasında |
-| Platformlar arası | Cihaz kayıt Yöneticisi (DEM) | DEM kullanıcısı kaydetme | Kayıt sırasında |
-| iOS, macOS | Apple cihaz kaydı (kullanıcı benzeşimi ile DEP'in otomatik | Kullanıcı kaydetme | Kayıt sırasında |
-| iOS, macOS | Apple cihaz kaydı'nı (DEP kullanıcı benzeşimi olmadan) otomatik | Yok. | Geçerli değil |
-| Android | Android şirketin sahip olduğu ve ayrılmış cihazları | None | Geçerli değil |
+| Windows | İş veya okul ekleme (Kullanıcı odaklı) | Kullanıcı kaydediliyor | Kayıt sırasında |   
+| Windows | Modern uygulama oturum açma (Kullanıcı tabanlı) | Kullanıcı kaydediliyor | Kayıt sırasında | 
+| Windows | Yalnızca MDM 'ye kaydolma (Kullanıcı odaklı) | Kullanıcı kaydediliyor | Kayıt sırasında | 
+| Windows | Azure AD katılımı (kullanıma hazır deneyim) | Kullanıcı kaydediliyor | Kayıt sırasında | 
+| Windows | Azure AD katılımı (Autopilot of Box Experience) | Kullanıcı kaydediliyor | Kayıt sırasında | 
+| Windows | Yalnızca MDM 'ye kaydolma | Kullanıcı kaydediliyor | Kayıt sırasında | 
+| Windows | Karma ASıFATı + otomatik kayıt GPO 'SU | Windows 'da oturum açmak için ilk Kullanıcı | İlk Kullanıcı Windows 'da oturum açtığında| 
+| Windows | Ortak yönetim | Windows 'da oturum açmak için ilk Kullanıcı | İlk Kullanıcı Windows 'da oturum açtığında | 
+| Windows | Azure AD birleşimi (toplu kayıt belirteci) | Yok. | Geçerli değil | 
+| Windows | Azure AD katılımı (Autopilot kendi kendine dağıtım modu) | Yok. | Geçerli değil | 
+| platformlar arası | Şirket Portalı uygulamayla Kullanıcı odaklı kayıt | Kullanıcı kaydediliyor | Kayıt sırasında |
+| platformlar arası | Cihaz Kayıt Yöneticisi (DEM) | DEM kullanıcısı kaydediliyor | Kayıt sırasında |
+| iOS, macOS | Apple otomatik cihaz kaydı (Kullanıcı benzeşimi ile DEP | Kullanıcı kaydediliyor | Kayıt sırasında |
+| iOS, macOS | Apple otomatik cihaz kaydı (Kullanıcı benzeşimi olmadan DEP) | Yok. | Geçerli değil |
+| Android | Android şirkete ait, adanmış cihazlar | Yok. | Geçerli değil |
 
-## <a name="primary-user-and-azure-ad-device-owner"></a>Birincil kullanıcı ve Azure AD cihaz sahibi
-Bazı durumlarda, Intune birincil kullanıcı Azure AD cihazın farklı olabilir **sahibi** özelliği (altında görüntülenebilir **cihazları** > **Azure AD cihazları**). Azure AD cihaz sahibi, Azure Active Directory cihaz kaydı sırasında eklenir.
+## <a name="primary-user-and-azure-ad-device-owner"></a>Birincil Kullanıcı ve Azure AD cihaz sahibi
+Bazı durumlarda, Intune birincil Kullanıcı Azure AD cihazının **Owner** özelliğinden farklı olabilir ( **cihazlar** > **Azure AD cihazları**altında görüntülenebilir). Azure AD cihaz sahibi, cihazın kaydı sırasında Azure Active Directory eklenir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Intune cihazlarınızı yönetin.](device-management.md)

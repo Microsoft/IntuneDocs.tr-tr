@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5ea00f2e2631433ece3e9053b8f9ea9d9e359c8
-ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70986411"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061673"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -53,6 +53,21 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-september-16-2019"></a>16 Eylül 2019 haftası
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>Web uygulamaları için macOS desteği <!-- 3174427 -->
+Web 'deki bir URL 'ye kısayol eklemenize olanak sağlayan Web Apps, macOS Şirket Portalı kullanılarak Dock 'a yüklenebilir. Son kullanıcılar, macOS Şirket Portalı bir Web uygulaması için uygulama ayrıntıları sayfasından **Install** eylemine erişebilir. **Web bağlantısı** uygulama türü hakkında daha fazla bilgi için bkz. [Microsoft Intune uygulama ekleme](apps-add.md) ve [Microsoft Intune Web uygulamaları ekleme](web-app.md).
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP uygulamaları için macOS desteği <!-- 3173501  -->
+Apple Business Manager kullanılarak satın alınan macOS uygulamaları, Apple VPP belirteçleri Intune 'da eşitlendiğinde konsolunda görüntülenir. Intune konsolunu kullanarak, gruplar için cihaz ve Kullanıcı tabanlı lisanslar atayabilir, iptal edebilir ve yeniden atayabilirsiniz. Microsoft Intune, şirketinizde kullanılmak üzere satın alınan VPP uygulamalarını şu şekilde yönetmenize yardımcı olur:
+- Uygulama mağazasından lisans bilgilerini raporlama.
+- Kaç lisans kullandığınızı izleme.
+- Sahip olduğunuz uygulamanın daha fazla kopyasını yüklemenize yardımcı olma.
+
+Intune ve VPP hakkında daha fazla bilgi için bkz. [Microsoft Intune ile toplu satın alınan uygulamaları ve kitapları yönetme](vpp-apps.md).
 
 ## <a name="week-of-september-9-2019"></a>9 Eylül 2019 haftası
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure’da ilke sorunlarını giderme | Microsoft Docs
-description: Yerleşik sorun giderme özelliğini kullanın ve uyumluluk ilkeleri ve yapılandırma profillerini Intune kullanılırken karşılaşılan veya sorunları ve çözümleri hakkında okuyun bakın
+description: Bkz. yerleşik sorun giderme özelliğini kullanma ve Microsoft Intune ' de uyumluluk ilkeleri ve yapılandırma profillerini kullanırken yaygın sorunlar ve sorunlar ve bunların çözümleri hakkında bilgi edinin
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,142 +17,142 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298390"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071717"
 ---
-# <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>İlkeler ve Profiller sorun giderme ve ıntune
+# <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>İlke ve profillerin ve Intune 'da sorun giderme
 
-Microsoft Intune yerleşik bazı sorun giderme özellikleri içerir. Uyumluluk ilkeleri ve yapılandırma profillerini, ortamınızdaki gidermenize yardımcı olması için bu özellikleri kullanın.
+Microsoft Intune, bazı yerleşik sorun giderme özellikleri içerir. Ortamınızdaki uyumluluk ilkeleri ve yapılandırma profillerinin sorunlarını gidermeye yardımcı olması için bu özellikleri kullanın.
 
-Bu makalede bazı genel sorun giderme teknikleri listeler ve karşılaşabileceğiniz bazı sorunlar açıklanmaktadır.
+Bu makalede bazı yaygın sorun giderme teknikleri listelenmekte ve karşılaşabileceğiniz bazı sorunlar açıklanmaktadır.
 
-## <a name="check-tenant-status"></a>Kiracı durumu denetleyin
-Denetleme [Kiracı durumu](tenant-status.md) ve aboneliğin etkin olduğunu onaylayın. Etkin olaylar ve ilke veya profili dağıtımınızı etkileyebilecek önerileri ayrıntılarını da görüntüleyebilirsiniz.
+## <a name="check-tenant-status"></a>Kiracı durumunu denetle
+[Kiracı durumunu](tenant-status.md) denetleyin ve aboneliğin etkin olduğunu onaylayın. İlkeyi veya profil dağıtımınızı etkileyebilecek etkin olaylar ve Danışma belgeleri ayrıntılarını da görüntüleyebilirsiniz.
 
 ## <a name="use-built-in-troubleshooting"></a>Yerleşik sorun giderme kullanın
 
-1. İçinde [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)seçin **sorun giderme**:
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'Da **sorun gider**' i seçin:
 
-    ![Intune, Yardım ve Destek gidin ve sorun giderme seçin](./media/help-and-support-troubleshoot.png)
+    ![Intune 'da yardım ve destek ' e gidin ve sorun giderme ' yi seçin.](./media/help-and-support-troubleshoot.png)
 
-2. Seçin **Kullanıcı Seç** > bir sorun bir kullanıcı seçin > **seçin**.
-3. Onaylayın **Intune lisansı** ve **hesap durumu** her ikisini de yeşil denetimleri göster:
+2. **Kullanıcı seç** > seçin > bir sorun yaşayan Kullanıcı Seç ' **i seçin**.
+3. **Intune lisansının** ve **hesap durumunun** her ikisinin de yeşil denetimleri göstermesini onaylayın:
 
-    ![Intune, kullanıcı seçin ve hesap durumu ve Intune lisansı, durum yeşil denetimleri işaretleri Göster onaylayın](./media/account-status-intune-license-show-green.png)
+    ![Intune 'da Kullanıcı seçin ve hesap durumunu onaylayın ve Intune lisansı durum için yeşil denetim işaretlerini göster](./media/account-status-intune-license-show-green.png)
 
     **Faydalı bağlantılar**:
 
     - [Kullanıcıların cihazları kaydedebilmesi için lisans atama](licenses-assign.md)
     - [Intune’a kullanıcı ekleme](users-add.md)
 
-4. Altında **cihazları**, sorun yaşıyor cihaz bulun. Farklı sütunlar gözden geçirin:
+4. **Cihazlar**' ın altında, sorun bulunan cihazı bulun. Farklı sütunları gözden geçirin:
 
-    - **Yönetilen**: Bu özellik bir cihaz uyumluluk veya yapılandırma ilkelerini almaya göstermesi **MDM** veya **EAS/MDM**.
+    - **Yönetilen**: Bir cihazın uyumluluk veya yapılandırma ilkeleri alması için bu özellik **MDM** veya **EAS/MDM**göstermelidir.
 
-      - Varsa **yönetilen** belirlendiğinden **MDM** veya **EAS/MDM**, sonra da bu cihaz kayıtlı değil. Kaydedilene kadar uyumluluk veya yapılandırma ilkeleri almaz.
+      - **Yönetilen** **MDM** veya **EAS/MDM**olarak ayarlanmamışsa, cihaz kayıtlı değildir. Bu, kaydedilinceye kadar uyumluluk veya yapılandırma ilkeleri almaz.
 
-      - Uygulama koruma ilkelerini (mobil uygulama yönetimi), cihazların kaydedilmesi gerekmez. Daha fazla bilgi için [uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md).
+      - Uygulama koruma ilkeleri (mobil uygulama yönetimi) cihazların kaydedilmesini gerektirmez. Daha fazla bilgi için bkz. [Uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md).
 
-    - **Azure AD katılım türü**: Ayarlanmalıdır **çalışma alanına** veya **AzureAD**.
+    - **Azure AD JOIN türü**: **Çalışma alanı** veya **azuread**olarak ayarlanmalıdır.
  
-      - Bu sütun ise **kayıtlı**, kayıt ile ilgili bir sorun olabilir. Genellikle, bu durum kaydını ve cihaz gerektireceğini çözümler.
+      - Bu sütun **kayıtlı değilse**, kayıt ile ilgili bir sorun olabilir. Genellikle, cihazın kaydı geri ve yeniden kaydedilmesi bu durumu çözer.
 
-    - **Intune ile uyumlu**: Olmalıdır **Evet**. Varsa **Hayır** gösterilir, cihazı Intune hizmetine değil veya uyumluluk ilkeleri ile ilgili bir sorun olabilir. Örneğin, cihaz kapalı olabilir veya bir ağ bağlantısı yok. Sonuç olarak, büyük olasılıkla 30 gün sonra cihaz uyumlu olmayan, olur.
+    - **Intune uyumlu**: **Evet**olmalıdır. **Hayır gösterilmediğinde** , uyumluluk ilkeleriyle ilgili bir sorun olabilir veya cihaz Intune hizmetine bağlanmıyor olabilir. Örneğin, cihaz kapalı olabilir veya bir ağ bağlantısına sahip olmayabilir. Sonuç olarak, cihaz, genellikle 30 gün sonra uyumsuz hale gelir.
 
-      Daha fazla bilgi için [cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md).
+      Daha fazla bilgi için bkz. [cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md).
 
-    - **Azure AD uyumlu**: Olmalıdır **Evet**. Varsa **Hayır** gösterilir, cihazı Intune hizmetine değil veya uyumluluk ilkeleri ile ilgili bir sorun olabilir. Örneğin, cihaz kapalı olabilir veya bir ağ bağlantısı yok. Sonuç olarak, büyük olasılıkla 30 gün sonra cihaz uyumlu olmayan, olur.
+    - **Azure AD uyumlu**: **Evet**olmalıdır. **Hayır gösterilmediğinde** , uyumluluk ilkeleriyle ilgili bir sorun olabilir veya cihaz Intune hizmetine bağlanmıyor olabilir. Örneğin, cihaz kapalı olabilir veya bir ağ bağlantısına sahip olmayabilir. Sonuç olarak, cihaz, genellikle 30 gün sonra uyumsuz hale gelir.
 
-      Daha fazla bilgi için [cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md).
+      Daha fazla bilgi için bkz. [cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md).
 
-    - **Son iade**: Son saat ve tarihi olmalıdır. Varsayılan olarak, Intune cihaz iade 8 saatte bir.
+    - **Son iade etme**: Son Tarih ve saat olmalıdır. Varsayılan olarak, Intune cihazları her 8 saatte bir denetler.
 
-      - Varsa **son iade** 24 saatten uzun olduğundan, cihaz ile ilgili bir sorun olabilir. İade edilemiyor bir cihazı Intune'dan ilkelerinizi alamaz.
+      - **Son iade etme** işlemi 24 saatten fazla ise, cihazla ilgili bir sorun olabilir. İade etme yapamıyor bir cihaz, ilkeleri Intune 'dan alamıyor.
 
-      - İade zorlamak için:
-        - Android cihazında Şirket portalı uygulamasını açın > **cihazları** > listeden cihazı seçin > **cihaz ayarları denetle**.
-        - İOS cihazında Şirket portalı uygulamasını açın > **cihazları** > listeden cihazı seçin > **ayarları denetle**. 
-        - Bir Windows cihazında açın **ayarları** > **hesapları** > **işe veya okula erişim** > hesabını veya MDM kaydı seçin >  **Bilgi** > **eşitleme**.
+      - İade etmeye zorlamak için:
+        - Android cihazında Şirket Portalı App > **cihazlarını** açın > cihazı listeden seçin > **cihaz ayarlarını denetleyin**.
+        - İOS cihazında, Şirket portalı uygulaması > **cihazları** açın > cihazı listeden seçin > **ayarları denetle**' ye tıklayın. 
+        - Bir Windows cihazında açık **Ayarlar** > **hesaplar** > **iş veya okul** > hesap veya MDM kaydı > **bilgi** > **eşitleme**' yi seçin.
 
-    - İlkeye özgü belirli bilgi kaldırmak istediğiniz cihazı seçin.
+    - İlkeye özgü bilgileri görmek için cihazı seçin.
 
-      **Cihaz uyumluluğu** cihaza atanmış uyumluluk İlkesi durumlarını gösterir.
+      **Cihaz uyumluluğu** , cihaza atanan uyumluluk ilkelerinin durumlarını gösterir.
 
-      **Cihaz Yapılandırması** yapılandırma ilkelerini cihaza atanan durumlarını gösterir.
+      **Cihaz yapılandırması** cihaza atanan yapılandırma ilkelerinin durumlarını gösterir.
 
-      Beklenen ilkeleri altında gösterilmez, **cihaz uyumluluğu** veya **cihaz Yapılandırması**, ilkeleri doğru şekilde hedeflenen olmayan sonra. İlkeyi açın ve bu kullanıcı veya cihaz ilkeyi atayın.
+      Beklenen ilkeler **cihaz uyumluluğu** veya **cihaz yapılandırması**altında gösterilmiyorsa, ilkeler doğru şekilde hedeflenmez. İlkeyi açın ve ilkeyi bu kullanıcıya veya cihaza atayın.
 
       **İlke durumları**:
 
-      - **Uygulanamaz**: Bu ilke, bu platformda desteklenmiyor. Örneğin, iOS ilkeleri Android'de çalışmaz. Windows cihazlarında Samsung KNOX ilkeleri çalışmaz.
-      - **Çakışma**: Intune geçersiz kılınamaz cihaz üzerinde var olan bir ayar yoktur. Veya farklı değerler kullanarak aynı ayarı ile iki ilke dağıtılır.
-      - **Bekleyen**: İlkeyi almak için Intune'a cihaz iade edilmemiş. Veya cihaz, ilke aldı ancak Intune'a durum bildirilmemiştir.
-      - **Hataları**: Hataları ve olası çözünürlüklerde [şirket kaynak erişimi sorunlarını giderme](troubleshoot-company-resource-access-problems.md).
+      - **Uygulanamaz**: Bu ilke, bu platformda desteklenmiyor. Örneğin, iOS ilkeleri Android üzerinde çalışmaz. Samsung KNOX ilkeleri Windows cihazlarında çalışmaz.
+      - **Çakışma**: Cihazda Intune 'un geçersiz kılamayacağını belirten bir ayar var. Ya da, farklı değerleri kullanarak aynı ayarla iki ilke dağıttınız.
+      - **Bekliyor**: Cihaz, ilkeyi almak için Intune 'a iade edilmedi. Ya da cihaz ilkeyi aldı, ancak durumu Intune 'a bildirmemiştir.
+      - **Hatalar**: [Şirket kaynak erişimi sorunlarını gidermeye yönelik](troubleshoot-company-resource-access-problems.md)hataları ve olası çözümleri arama.
 
       **Faydalı bağlantılar**: 
 
       - [Cihaz uyumluluk ilkelerini dağıtma yolları](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies)
       - [Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)
 
-## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Bir profili doğru şekilde uygulanırsa emin değilseniz
+## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Bir profilin doğru bir şekilde uygulanmış olması konusunda emin değilseniz
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seçin **cihazları** > **tüm cihazlar** > cihazı seçin > **cihaz Yapılandırması**. 
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. **Cihazlar** > **tüm cihazlar** ' ı seçin > Cihazı > **cihaz yapılandırması**' nı seçin. 
 
-    Her cihazda, kendi profilleri listeler. Her profiline sahip bir **durumu**. Tüm donanım ve işletim sistemi kısıtlamaları ve gereksinimleri dahil olmak üzere atanan profillerini birlikte kabul durumu uygulanır. Olası durumlar şunlardır:
+    Her cihazda profillerini listeler. Her profilin bir **durumu**vardır. Bu durum, donanım ve işletim sistemi kısıtlamaları ve gereksinimleri de dahil olmak üzere tüm atanan profillerin birlikte kabul edildiği durumlarda geçerlidir. Olası durumlar şunlardır:
 
-    - **Uygun**: Cihaz profili ve raporları alınan ayarına uyan ıntune.
+    - **Uyumlu**: Cihaz profili ve raporları, ayara uygun olan Intune 'a aldı.
 
-    - **Uygulanamaz**: Profil ayarı geçerli değil. Örneğin, iOS cihazları için e-posta ayarları bir Android cihazı için geçerli değildir.
+    - **Uygulanamaz**: Profil ayarı geçerli değil. Örneğin, iOS cihazları için e-posta ayarları bir Android cihazına uygulanmaz.
 
-    - **Bekleyen**: Profil cihaza gönderilir, ancak Intune'a durum bildirilmemiştir. Örneğin Android’de şifreleme, son kullanıcının şifrelemeyi etkinleştirmesi gerektirdiği için beklemede olarak görünebilir.
+    - **Bekliyor**: Profil cihaza gönderilir, ancak durum Intune 'a bildirilmemiştir. Örneğin Android’de şifreleme, son kullanıcının şifrelemeyi etkinleştirmesi gerektirdiği için beklemede olarak görünebilir.
 
-**Yararlı bağlantı**: [Yapılandırma cihaz profillerini izleme](device-profile-monitor.md)
+**Faydalı bağlantı**: [Yapılandırma cihaz profillerini izleme](device-profile-monitor.md)
 
 > [!NOTE]
 > Farklı kısıtlama düzeylerine sahip iki ilke aynı cihaz veya kullanıcıya uygulanırsa, daha kısıtlayıcı olan ilke uygulanır.
 
-## <a name="policy-troubleshooting-resources"></a>İlke sorun giderme kaynakları
+## <a name="policy-troubleshooting-resources"></a>İlke sorunlarını giderme kaynakları
 
-- [İOS veya Android ilkeleri cihazlara uygulama değil sorun giderme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (başka bir Microsoft sitesi açılır)
-- [Windows 10 Intune İlkesi hatalarında sorun giderme](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (blog açılır)
-- [CSP özel ayarlar Windows 10 için sorun giderme](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (başka bir Microsoft sitesi açılır)
-- [Windows 10 Grup İlkesi vs Intune MDM İlkesi](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (başka bir Microsoft sitesi açılır)
+- [İOS veya Android Ilkelerinin sorun giderme cihazlara uygulanmıyor](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (başka bir Microsoft sitesi açar)
+- [Windows 10 Intune ilke hatalarında sorun giderme](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (bir blog açar)
+- [Windows 10 IÇIN CSP özel ayarları sorunlarını giderme](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (başka bir Microsoft sitesi açar)
+- [Windows 10 Grup İlkesi vs ıNTUNE MDM ilkesi](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (başka bir Microsoft sitesi açar)
 
-## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Uyarı: Erişim kuralları Exchange'e kaydedilemedi
+## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Daki Erişim kuralları Exchange 'e kaydedilemedi
 
-**Sorunu**: Uyarı aldığınız **erişim kuralları Exchange'e oldu** yönetim konsolundaki.
+**Sorun**: Yönetim konsolunda **Exchange 'e erişim kuralları kaydetme** uyarısı alırsınız.
 
-(Yönetici Konsolu) şirket içi Exchange İlkesi çalışma alanında ilkeler oluşturma, ancak Office 365 kullanıyorsanız, yapılandırılan ilke ayarları Intune tarafından zorunlu değildir. Uyarıda ilke kaynağını not alın. Şirket içi Exchange İlkesi çalışma alanında, eski kuralları silin. Eski kuralları, şirket içi Exchange için ıntune'daki genel Exchange kurallarıdır ve Office 365'e uygun değildir. Ardından, Office 365 için yeni ilke oluşturun.
+Şirket Içi Exchange Ilkesi çalışma alanında (Yönetici Konsolu) ilkeler oluşturursanız, ancak Office 365 kullanıyorsanız, yapılandırılan ilke ayarları Intune tarafından zorlanmaz. Uyarıda, ilke kaynağını aklınızda edin. Şirket içi Exchange Ilkesi çalışma alanında eski kuralları silin. Eski kurallar, şirket içi Exchange için Intune 'daki genel Exchange kurallarıdır ve Office 365 ile ilgili değildir. Ardından, Office 365 için yeni ilke oluşturun.
 
-[Intune şirket içi Exchange connector sorunlarını giderme](troubleshoot-exchange-connector.md) iyi bir kaynak olabilir.
+[Intune şirket Içi Exchange Connector 'Da sorun giderme](troubleshoot-exchange-connector.md) iyi bir kaynak olabilir.
 
-## <a name="cant-change-security-policies-for-enrolled-devices"></a>Kayıtlı cihazlar için güvenlik ilkelerini değiştiremezsiniz
+## <a name="cant-change-security-policies-for-enrolled-devices"></a>Kayıtlı cihazlar için güvenlik ilkeleri değiştirilemiyor
 
-Windows Phone cihazları, bunları ayarladıktan sonra azaltılmasına için MDM veya EAS kullanarak ayarlamış güvenlik ilkelerinin izin vermez. Örneğin, bir **parolanın karakter sayısı alt sınırı** 8 ve sonra bunu 4'e indirmeyi deneyin. Daha kısıtlayıcı bir ilke cihaza uygulanır.
+Windows Phone cihazlar, MDM veya EAS kullanılarak ayarlandıktan sonra güvenliği azaltmak için güvenlik ilkelerine izin vermez. Örneğin, **en az sayıda karakter parolası** 8 olarak ayarlanır ve ardından 4 ' e azaltmayı deneyin. Cihaza daha kısıtlayıcı olan ilke uygulanır.
 
-Windows 10 cihazları (durdurma dağıtımı) ilke ataması, güvenlik ilkelerini kaldıramaz. Atanan ilkesini bırakın ve ardından varsayılan değerlere güvenlik ayarlarını değiştirmek gerekebilir.
+İlke atamasını kaldırdığınızda Windows 10 cihazları güvenlik ilkelerini kaldıramayabilir (dağıtımı Durdur). İlkeyi atanmış bırakmanız ve ardından güvenlik ayarlarını varsayılan değerlere geri değiştirmeniz gerekebilir.
 
 Cihaz platformuna bağlı olarak, ilkeyi daha az güvenli bir değerle değiştirmek isterseniz, güvenlik ilkelerini sıfırlamanız gerekebilir.
 
-Örneğin, Windows 8.1, masaüstünde, açmak için sağdan içeri doğru kaydırın **düğmeler** çubuğu. Seçin **ayarları** > **Denetim Masası** > **kullanıcı hesaplarını**. Sol taraftaki **Güvenlik İlkelerini Sıfırla**’yı seçin ve **İlkeleri Sıfırla**’ya tıklayın.
+Örneğin, Windows 8.1 Masaüstünde, sağ taraftaki içeri doğru kaydırın ve sonra da **Charms** çubuğunu açın. **Ayarlar** > **Denetim**MasasıKullanıcı > **hesapları**' nı seçin. Sol taraftaki **Güvenlik İlkelerini Sıfırla**’yı seçin ve **İlkeleri Sıfırla**’ya tıklayın.
 
-Android, iOS ve Windows Phone 8.1 gibi diğer platformlarda devre dışı bırakılması ve daha az kısıtlayıcı bir ilkeyi uygulayabilmeniz için kaydedilmesi gerekebilir.
+Android, iOS ve Windows Phone 8,1 gibi diğer platformların devre dışı bırakılması ve daha az kısıtlayıcı bir ilke uygulamak için yeniden kaydedilmesi gerekebilir.
 
-[Cihaz kaydıyla ilgili sorunları giderme](troubleshoot-device-enrollment-in-intune.md) iyi bir kaynak olabilir.
+[Cihaz kaydı sorunlarını giderme](troubleshoot-device-enrollment-in-intune.md) iyi bir kaynak olabilir.
 
-## <a name="pcs-using-the-intune-software-client---classic-portal"></a>Intune yazılım istemcisi - Klasik portalı kullanarak Windows bilgisayarlarının
+## <a name="pcs-using-the-intune-software-client---classic-portal"></a>Intune yazılım istemcisi ile klasik portalı kullanan bilgisayarlar
 
 > [!NOTE]
-> Bu bölüm Klasik portalda geçerlidir. 
+> Bu bölüm, klasik Portal için geçerlidir. 
 
 ### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log dosyasındaki Microsoft Intune ilkesiyle ilgili hatalar
 
-İlke hataları Intune yazılım istemcisi ile yönetilen Windows bilgisayarlar için `policyplatform.log` dosya, varsayılan olmayan ayarların cihazdaki Windows kullanıcı hesabı denetimi (UAC) içinde gelen olabilir. Varsayılan olmayan bazı UAC ayarları Microsoft Intune istemci yüklemelerini ve ilke yürütmesini etkileyebilir.
+Intune yazılım istemcisiyle yönetilen Windows bilgisayarları için, `policyplatform.log` dosyadaki ilke hataları, cihazdaki Windows Kullanıcı hesabı denetimi 'nde (UAC) varsayılan olmayan ayarlardan olabilir. Varsayılan olmayan bazı UAC ayarları Microsoft Intune istemci yüklemelerini ve ilke yürütmesini etkileyebilir.
 
 #### <a name="resolve-uac-issues"></a>UAC sorunlarını çözme
 
@@ -163,19 +163,19 @@ Android, iOS ve Windows Phone 8.1 gibi diğer platformlarda devre dışı bırak
     > [!NOTE]
     > İstemciyi Programlar ve Özellikler menüsünden kaldırmaya çalışmayın.
 
-3. Başlat menüsünde yazın **UAC** kullanıcı hesabı denetimi ayarlarını açın.
+3. Başlat menüsünde, Kullanıcı hesabı denetimi ayarlarını açmak için **UAC** yazın.
 
-4. Bildirim kaydırıcısını varsayılan ayara getirin.
+4. Bildirim kaydırıcısını varsayılan ayara taşıyın.
 
-### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>HATA: Bilgisayarda, 0x80041013 değeri alınamıyor
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>HATAYLA Bilgisayardan değer alınamıyor, 0x80041013
 
-Yerel sistemdeki saat beş dakika veya daha fazla farklı ise bu hata oluşur. Yerel bilgisayardaki saat eşitleme dışı ise zaman damgaları geçersiz olduğundan güvenli işlemler başarısız.
+Yerel sistemdeki saat beş dakika veya daha fazla farklı ise bu hata oluşur. Yerel bilgisayardaki süre eşitlenmemiş ise, zaman damgaları geçersiz olduğundan güvenli işlemler başarısız olur.
 
-Bu sorunu çözmek için yerel sistem saatini Internet saatine mümkün olduğunca kapatmak ayarlayın. Veya, ağdaki etki alanı denetleyicilerinde zamana ayarlayın.
+Bu sorunu çözmek için, yerel sistem saatini Internet saatine olabildiğince yakın olarak ayarlayın. Ya da, ağ üzerindeki etki alanı denetleyicilerde zaman olarak ayarlayın.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Genel sorunlar ve çözümleri ile e-posta profilleri](troubleshoot-email-profiles-in-microsoft-intune.md)
+[E-posta profilleriyle ilgili yaygın sorunlar ve çözümler](troubleshoot-email-profiles-in-microsoft-intune.md)
 
-Alma [destekleyen Microsoft gelen Yardım](get-support.md), veya [topluluk forumları](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).
+[Microsoft 'un destek yardımına](get-support.md)ulaşın veya [topluluk forumlarını](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)kullanın.

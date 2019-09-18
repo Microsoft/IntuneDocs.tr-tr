@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cf3a3735688d12e69dc297aa42ab2869c69bfc9
-ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
+ms.openlocfilehash: cbf2031a316b1f7c2e22d165363cca12cfd70291
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904973"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061570"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarında PowerShell betikleri kullanma
 
@@ -181,7 +181,7 @@ Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları y
 - Tüm hatalar için günlükleri gözden geçirin. Bkz. [Intune yönetim uzantısı günlükleri](#intune-management-extension-logs) (Bu makalede).
 - Olası izin sorunları için, PowerShell betiğinin özelliklerinin olarak `Run this script using the logged on credentials`ayarlandığından emin olun. Ayrıca, oturum açan kullanıcının betiği çalıştırmak için uygun izinlere sahip olup olmadığını denetleyin.
 
-- Komut dosyası sorunlarını yalıtmak için aşağıdaki adımları uygulayın:
+- Betik sorunlarını yalıtmak için şunları yapabilirsiniz:
 
   - Cihazlarınızda PowerShell yürütme yapılandırmasını gözden geçirin. Rehberlik için [PowerShell yürütme ilkesine](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) bakın.
   - Intune yönetim uzantısını kullanarak bir örnek komut dosyası çalıştırın. Örneğin, `C:\Scripts` dizini oluşturun ve herkese tam denetim verin. Şu betiği çalıştırın:
@@ -196,15 +196,17 @@ Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları y
 
     `psexec -i -s`  
     
-  - Betik yürütme başarı bildirirse ancak sonuç gerçekleşmemişse (örneğin, Yukarıdaki betik bir dosya oluşturmaz), virüsten koruma korumalı alana alma Me Texecutor olabilir. Aşağıdaki betik, Intune 'da her zaman bir hata raporlamamalıdır. bir başarı bildirirse, hata çıktısını onaylamak için Deltexecutor. log dosyasına bakın; komut dosyası hiç yürütülerek, uzunluğun > 2 olması gerekir:
-
+  - Betik başarılı olduğunu bildirirse ancak gerçekten başarılı olmadıysa, virüsten koruma hizmetiniz korumalı alana alma Me Texecutor olabilir. Aşağıdaki komut, Intune 'da her zaman bir hata bildirir. Test olarak, bu betiği kullanabilirsiniz:
+  
     ```powershell
     Write-Error -Message "Forced Fail" -Category OperationStopped
     mkdir "c:\temp" 
     echo "Forced Fail" | out-file c:\temp\Fail.txt
     ```
-    
-  - . Hata ve. çıktıyı yakalamanız gerekirse, aşağıdaki kod parçacığı, komut dosyasını PSx86 için Çalıştır ve geri dön (Intune yönetim uzantısı yürütmeden sonra günlükleri temizliyor olduğundan):
+
+    Betik bir başarı bildirirse, hata çıktısını doğrulamak `AgentExecutor.log` için bölümüne bakın. Betik yürütülüyorsa, uzunluk > 2 olmalıdır.
+
+  - . Error ve. Output dosyalarını yakalamak için aşağıdaki kod parçacığı, komut dosyasını PSx86 (`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`) olarak çalışır. Gözden geçirmeniz için günlükleri tutar. Betik yürütüldükten sonra Intune yönetim uzantısının günlükleri temizleyeceğini unutmayın:
   
     ```powershell
     $scriptPath = read-host "Enter the path to the script file to execute"

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160535"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061586"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
 Uygulama yapılandırma ilkeleri, uygulamayı çalıştırmadan önce son kullanıcılara atanan bir ilkeye yapılandırma ayarlarını atamanıza izin vererek uygulama kurulumu sorunlarını ortadan kaldırmanıza yardımcı olabilir. Bu ayarlar daha sonra uygulama son kullanıcılar cihazında yapılandırıldığında otomatik olarak sağlanır ve son kullanıcıların işlem yapması gerekmez. Yapılandırma ayarları her uygulama için benzersizdir. 
 
-Hem iOS hem de Android uygulamaları için yapılandırma ayarları sağlamak üzere uygulama yapılandırma ilkeleri oluşturabilir ve kullanabilirsiniz. Bu yapılandırma ayarları, uygulama yapılandırmasına ve yönetimine yönelik [sektör standardı yaklaşımıyla](https://www.appconfig.org/) bir uygulamanın özelleştirilbilmesine izin verir. Yapılandırma ilkesi ayarları, uygulama bu ayarları, genellikle uygulamanın ilk çalıştırılışında denetlediğinde kullanılır. 
+Hem iOS hem de Android uygulamaları için yapılandırma ayarları sağlamak üzere uygulama yapılandırma ilkeleri oluşturabilir ve kullanabilirsiniz. Bu yapılandırma ayarları, uygulamanın uygulama yapılandırması ve Yönetimi kullanılarak özelleştirilbilmesine izin verir. Yapılandırma ilkesi ayarları, uygulama bu ayarları, genellikle uygulamanın ilk çalıştırılışında denetlediğinde kullanılır. 
 
 Örneğin, bir uygulama yapılandırma ayarı aşağıdaki ayrıntıların herhangi birini belirtmenizi gerektirebilir:
 
@@ -60,7 +60,7 @@ Intune ile uygulama yapılandırma ilkelerini kullanmak için iki seçeneğiniz 
 ## <a name="apps-that-support-app-configuration"></a>Uygulama yapılandırmasını destekleyen uygulamalar
 
 ### <a name="managed-devices"></a>Yönetilen cihazlar
-Uygulama yapılandırma ilkelerini, onu destekleyen uygulamalar için kullanabilirsiniz. Intune 'da uygulama yapılandırmasını desteklemek için, uygulama yapılandırmalarının [appconfig topluluğu](https://www.appconfig.org/members)tarafından tanımlandığı şekilde kullanımını desteklemek üzere uygulamaların yazılması gerekir. Ayrıntılar için uygulama satıcınıza başvurun.
+Uygulama yapılandırma ilkelerini, onu destekleyen uygulamalar için kullanabilirsiniz. Intune 'da uygulama yapılandırmasını desteklemek için uygulamalar, işletim sistemi tarafından tanımlanan uygulama yapılandırmalarının kullanımını desteklemek üzere yazılmalıdır. Destekledikleri uygulama yapılandırma anahtarlarının ayrıntıları için uygulama satıcınıza başvurun.
 
 ### <a name="managed-apps"></a>Yönetilen uygulamalar
 [Intune uygulama SDK 'sını](app-sdk.md) uygulamaya ekleyerek veya [Intune uygulaması sarmalama aracı](apps-prepare-mobile-application-management.md)kullanılarak geliştirildikten sonra uygulamayı sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. Intune uygulama SDK 'Sı, uygulama geliştiricisinden gereken kod değişikliği miktarını en aza indirir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](app-sdk.md). Intune uygulama SDK 'Sı ile Intune uygulama sarmalama aracı arasında bir karşılaştırma için bkz. [iş kolu uygulamalarını uygulama koruma ilkeleri Için hazırlama](apps-prepare-mobile-application-management.md#feature-comparison).

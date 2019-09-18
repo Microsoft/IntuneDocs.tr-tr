@@ -8,19 +8,19 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b81525034f69b43abeb60f562e4d6ee6a46b866
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e44bbf9396cd2aff3f2b2b134c72eb871f719a91
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511829"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080128"
 ---
-# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Hızlı Başlangıç: Windows 10 cihazları için otomatik kaydını ayarlama
+# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Hızlı başlangıç Windows 10 cihazları için otomatik kaydı ayarlama
 
 Bu hızlı başlangıçta Microsoft Intune'u, belirli kullanıcılar Windows 10 cihazlarında oturum açtığında bu cihazları otomatik kaydetmeye ayarlayacaksınız.
 
@@ -76,4 +76,4 @@ Bu hızlı başlangıçta Windows 10 cihazları için otomatik kaydı ayarlamay�
 Bu Intune hızlı başlangıç serisini takip etmek için bir sonraki hızlı başlangıca ilerleyin.
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Windows 10 Cihazınızı kaydetme](quickstart-enroll-windows-device.md)
+> [Hızlı başlangıç Windows 10 cihazınızı kaydetme](quickstart-enroll-windows-device.md)

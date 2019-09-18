@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: a038f55f6dbdd894742a8712c878e77557a77210
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063023"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061534"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -44,7 +44,7 @@ Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından ş
 8. Gereksinimlerinizi karşılamayan kullanıcılar için bir **Eylem** seçin. Bazı durumlarda tek bir ayar için birden çok eylem yapılandırılabilir. Daha fazla bilgi için bkz. [Uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md).
 
 >[!NOTE]
-> **Cihaz modelleri veya Cihaz üreticileri** ayarını kullanmak için model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini ekleyin. Birden çok değer listesinde boşluklardan kaçının. Bu değerler büyük/küçük harfe duyarlı değildir. 
+> **Cihaz modellerini veya cihaz üreticisini** kullanmak için, cihaz modeli tanımlayıcılarının (iOS) veya cihaz üreticilerinin (Android) noktalı virgülle ayrılmış bir listesini girin. Birden çok değer listesinde boşluklardan kaçının. Bu değerler büyük/küçük harfe duyarlı değildir. 
 
 ## <a name="policy-settings"></a>İlke ayarları 
 
