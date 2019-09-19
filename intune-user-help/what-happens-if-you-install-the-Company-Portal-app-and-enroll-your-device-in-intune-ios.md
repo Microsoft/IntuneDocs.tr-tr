@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545862"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099807"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>Şirket Portalı uygulamasını yükler ve iOS cihazınızı Intune’a kaydederseniz ne olur?
 
@@ -37,7 +37,10 @@ ms.locfileid: "67545862"
 
 - Şirket e-posta hesabınızı otomatik olarak oluşturabilirsiniz.
 
-Cihazınızı Intune’a kaydettikten sonra, şirketinizin destek biriminin cihazınızdaki şirket bilgilerinin korumasına yardımcı olmak için onlara cihazınızı yönetme izni vermiş olursunuz.
+> [!NOTE]
+> Her nedenden dolayı hizmetimizin tarafından toplanan herhangi bir veriyi üçüncü taraflardan satmayacağız.  
+
+Cihazınızı Intune’a kaydettikten sonra, şirketinizin destek biriminin cihazınızdaki şirket bilgilerinin korumasına yardımcı olmak için onlara cihazınızı yönetme izni vermiş olursunuz.  
 
 Cihazınız kaydolduğunda, şirketinizin destek birimi şunları yapabilir:
 
@@ -64,5 +67,7 @@ Cihazınız kaydolduğunda, şirketinizin destek birimi şunları yapabilir:
 - Cihazınızda ses dolaşımını etkinleştirebilir veya devre dışı bırakabilir. Ses dolaşımına izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
 
 - Dolaşım modundayken, cihazınızda otomatik dosya eşitlemesini etkinleştirebilir veya devre dışı bırakabilir. Otomatik dosya eşitlemesine izin verildiyse, dolaşım ücretlerine tabi olabilirsiniz.
+
+
 
 Sorularınız varsa şirketinizin destek birimiyle iletişime geçin. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,28 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bfd8496061b4b3aba2589b73c3e98bce94a5011
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 16d7142e6dc38a177f8820f60e7335b8b23a1eeb
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528658"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099792"
 ---
-# <a name="sign-in-to-company-portal"></a>Şirket portalında oturum açın  
+# <a name="sign-in-to-company-portal"></a>Şirket Portalı oturum açın  
 
-Şirket portalı uygulamasında oturum açmak için üç yolu vardır:
+Şirket Portalı uygulamasında oturum açmak için üç yol vardır:
 
-* İş e-posta adresinizi ve parolanızı bilgilerinizle oturum açın.  
-* Sertifika tabanlı kimlik bilgilerinizle oturum açın.  
-* Başka bir CİHAZDAN oturum açın.    
+* İş e-posta adresiniz ve parolanızla oturum açın.  
+* Sertifika tabanlı kimlik doğrulamasıyla oturum açın.  
+* Başka bir cihazdan oturum açın.    
 
 
-## <a name="sign-in-with-your-email-address-and-password"></a>E-posta adresi ve parolanızla oturum açın
-Aşağıdaki adımlar, iOS için şirket Portalı'ndan ekran görüntüleri gösterir.  
+## <a name="sign-in-with-your-email-address-and-password"></a>E-posta adresiniz ve parolanızla oturum açın
+Aşağıdaki adımlarda iOS için Şirket Portalı ekran görüntüleri gösterilmektedir.  
 
-1. Dokunma ve cihaz uygulamasını açın **oturum**.  
+1. Uygulamayı cihazınızda açın ve **oturum aç**' a dokunun.  
 
-   ![Şirket Portalı oturum açma sayfasında, bir web sitesinin grafik temsili önünde bir kişi simgesi. Metni "şirket kaynaklarına ve bunları güvende tutun Get erişim" ve "Oturum Aç" düğmesi olmasıdır. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
-
+   [![Şirket portalı oturum açma sayfasının örnek ekran görüntüsü. ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. **İş veya okul hesabınızı** girin ve **İleri**’ye dokunun.
@@ -51,11 +50,11 @@ Aşağıdaki adımlar, iOS için şirket Portalı'ndan ekran görüntüleri gös
 
    ![E-posta adresi kabul edildikten sonra kullanıcıdan parolası istenir.](/intune-user-help/media/cp_ios_aad_signin_after_1804_003.png)
 
-4. Uygulama, kimlik bilgilerinizi doğrular. İşiniz bittiğinde, kuruluşunuzun kaynaklarına erişmek ve kullanılabilir uygulamaları yüklemesi.  
+4. Uygulama, kimlik bilgilerinizi doğrulayacaktır. İşiniz bittiğinde kuruluşunuzun kaynaklarına erişebilir ve kullanılabilir uygulamaları yükleyebilirsiniz.  
 
-   ![Kimlik doğrulama işleminden sonra Şirket portalı uygulaması oturum açar ve bir yükleme çubuğu gösterilir.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
+   ![Kimlik doğrulama işleminden sonra Şirket Portalı uygulama oturum açar, bir yükleme çubuğu gösterir.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
-## <a name="sign-in-with-certificate-based-authentication"></a>Sertifika tabanlı kimlik doğrulaması ile oturum
+## <a name="sign-in-with-certificate-based-authentication"></a>Sertifika tabanlı kimlik doğrulamasıyla oturum açın
 
 1. Cihazınızda Şirket Portalı uygulamasını açın.  
 
@@ -65,25 +64,25 @@ Aşağıdaki adımlar, iOS için şirket Portalı'ndan ekran görüntüleri gös
 
 4. Sertifikayı kullanmak için **Devam**’a dokunun.  
 
-## <a name="sign-in-from-another-device"></a>Başka bir CİHAZDAN oturum aç
+## <a name="sign-in-from-another-device"></a>Başka bir cihazdan oturum açma
 
-Şirketiniz, bilgisayarlara erişim için akıllı kartlar kullanıyorsa, başka bir CİHAZDAN oturum açma ile kimlik doğrulaması yapması olasıdır.  
+Şirketiniz, bilgisayarlarınıza erişmek için akıllı kartlar kullanıyorsa, başka bir cihazdan oturum açarak kimlik doğrulamanız gerekebilir.  
 
-1. Cihazınızda Şirket Portalı uygulamasını açın. İş kaynaklarınıza erişmek için kullanacaklardır cihaz olduğundan emin olun.       
+1. Cihazınızda Şirket Portalı uygulamasını açın. İş kaynaklarınıza erişmek için kullanacağınız cihaz olduğundan emin olun.       
 
-1. Seçin **başka bir CİHAZDAN oturum aç**.  
+1. **Başka bir cihazdan oturum aç '** ı seçin.  
 
-   ![Şirket portalı oturum açma sayfasında e-posta adresi kullanıcıya sorar.  "Oturum açmak için başka bir CİHAZDAN." "İleri" düğmesi ve bir bağlantı gösterir. Ayrıca bir “Hesabınıza erişemiyor musunuz?” bağlantısı da vardır. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+   ![Şirket Portalı oturum açma sayfası kullanıcıdan e-posta adresini ister.  "Ileri" düğmesini ve "başka bir cihazdan oturum aç" bağlantısını gösterir. Ayrıca bir “Hesabınıza erişemiyor musunuz?” bağlantısı da vardır. Aşağıdaki bir bağlantı Microsoft Gizlilik ve Tanımlama bilgilerine yönlendirir.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
 2. Şirket Portalı’nda oturum açmak için benzersiz, tek seferlik bir kod alacaksınız. Kodu kopyalayın.
 
    ![İş bilgisayarınızdan benzersiz bir geçiş kodu ile https://microsoft.com/devicelogin sayfasına gidip oturum açmak için bu kodu kullanmaya ilişkin yönergeler sağlanır.](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. Diğer Cihazınızda (kimlik doğrulaması için kullandığınız bir), tarayıcınızı açın ve gidin [ https://microsoft.com/devicelogin ](https://microsoft.com/devicelogin). Kodu yapıştırın veya girin.  
+3. Diğer cihazınızda (kimlik doğrulamak için kullandığınız) tarayıcınızı açın ve adresine gidin [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin). Kodu girin veya yapıştırın.  
 
    ![Kullanıcının Şirket Portalı uygulamasındaki tarayıcı yerine iş bilgisayarındaki tarayıcısının bir resmi. Görüntülenen "Cihaz oturum açma" sayfası kullanıcıdan Şirket Portalı uygulamasından aldığı kodu girmesini ister.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-4. Seçin __devam__ iş Cihazınızda oturum açmak Şirket portalı izin vermek için.   
+4. Şirket Portalı iş cihazınızda oturum açmasını sağlamak için __devam__ ' ı seçin.   
 
    ![Kullanıcı kendi benzersiz kodunu alana girmiştir ve "Cihaz oturum açma" sitesi Intune Şirket Portalı’nın oturum açmak üzere yetkilendirilecek doğru uygulama olup olmadığının doğrulanmasını istemiştir.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
@@ -91,7 +90,7 @@ Aşağıdaki adımlar, iOS için şirket Portalı'ndan ekran görüntüleri gös
 
    ![Bir onay sayfası, kullanıcının kendi cihazında Şirket Portalı uygulamasında oturum açtığını ve bu sayfanın artık kapatılabileceğini belirtir.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
-6. Şirket portalı uygulaması, iş Cihazınızda oturum açıyor.  
+6. Şirket Portalı uygulama, iş cihazınızda oturumunuzu kapatır.  
 
    ![Kimlik doğrulama işleminden sonra Şirket Portalı, ilerlemeyi gösteren bir çubuk ile oturum açar.](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 

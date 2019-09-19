@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 1d9903de9d23532174e138709cb40c9cdf49995f
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775935"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71107361"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar. 
 
@@ -37,7 +37,7 @@ Yaz 2020 ' de gelen işlevselliğin azalmasına engel olmak için şunları öne
 - Cihaz Yöneticisi yönetimine yeni cihaz eklemeyin.
 - Bir cihazın Android 10 güncelleştirmesi alması bekleniyorsa, cihazı Cihaz Yöneticisi yönetiminden Android kurumsal yönetim ve/veya uygulama koruma Ilkelerine geçirin.
 
-#### <a name="additional-information"></a>Ek bilgi
+#### <a name="additional-information"></a>Ek bilgiler
 - [Google 'ın cihaz yöneticisinden Android kuruluşa geçiş kılavuzu](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Google 'ın Cihaz Yöneticisi API 'sini kullanımdan kaldırma planına yönelik belgeleri](https://developers.google.com/android/work/device-admin-deprecation)
 
@@ -50,7 +50,7 @@ Telemetrimiz, 5.0.4269.0 ' den önceki Şirket Portalı sürüme sahip cihazlar�
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Google Play aracılığıyla şirket portalı 'nı güncelleştirmek üzere güncelleştirilmemiş son Android cihaz kullanıcılarına sorun. Bir kullanıcının şirket portalı uygulamasının otomatik olarak güncelleştirilmesini tutmamaları durumunda yardım masasına bildirin. Google 'ın FCM platformu ve değişikliği hakkında daha fazla bilgi için bağlantıya bakın.
 
-#### <a name="additional-information"></a>Ek bilgi
+#### <a name="additional-information"></a>Ek bilgiler
 https://firebase.google.com/docs/cloud-messaging/
 
 
@@ -63,10 +63,10 @@ Tam ekran deneyimi, portal.azure.com ve devicemanagement.microsoft.com ' de bir 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
 Herhangi bir eylemde bulunmanıza gerek yoktur, ancak gerekirse BT uzmanı kılavuzunuzu güncellemeyi göz önüne alabilirsiniz. Bu deneyim Azure portal Intune 'daki çeşitli dikey pencerelere yaptığı için belgelerimizi güncelleştireceğiz.
 
-#### <a name="additional-information"></a>Ek bilgi 
+#### <a name="additional-information"></a>Ek bilgiler 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Değişiklik planı: Intune, Eylül ayının iOS 11 ve üstünü desteklemeye taşınıyor <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Değişiklik planı: Intune, Eylül ayının iOS 11 ve üstünü desteklemeye taşınıyor <!-- 4665324-->
 Eylül ayında, iOS 13 ' ün Apple tarafından Yayınlanma bekliyor. Intune kaydı, Şirket Portalı ve Managed Browser iOS 13 sürümünden kısa bir süre sonra iOS 11 ve sonraki sürümleri destekleyecek şekilde hareket edecektir.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
@@ -76,7 +76,7 @@ O365 mobil uygulamalarının iOS 11,0 ve üzeri sürümlerde desteklendiğinden,
 - iPhone 5c
 - iPad (4. nesil)
 
-Temmuz 'dan itibaren, iOS 10 ile MDM 'ye kayıtlı cihazlar ve Şirket Portalı işletim sistemini veya cihazını yükseltmek için bir istem alır. Uygulama koruma Ilkeleri (uygulama) kullanıyorsanız, "En düşük iOS işletim sistemi gerektir (yalnızca uyarı)" Erişim ayarını da ayarlayabilirsiniz.
+Uygulama koruma Ilkeleri (uygulama) kullanıyorsanız, "En düşük iOS işletim sistemi gerektir (yalnızca uyarı)" Erişim ayarını da ayarlayabilirsiniz.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune Raporlama ' yı denetleyin. **Cihazlar** > **tüm cihazlar** ' a gidin ve işletim sistemine göre filtreleyin. Kuruluşunuzdaki kimlerin iOS 10 çalıştıran cihazlara sahip olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın Eylül 'den önce cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmesini isteyin.
@@ -95,7 +95,7 @@ Microsoft, üçüncü taraf ve iş kolu (LOB) uygulamalarınızı kontrol edin. 
 
 Ayrıca, bu değişikliği SDK desteği 'ne dahil etmek için geçerliyse belgelerinizi veya geliştirici kılavuzunuzu da güncelleştirmeniz gerekir.
 
-#### <a name="additional-information"></a>Ek bilgi
+#### <a name="additional-information"></a>Ek bilgiler
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Değişiklik planı: Intune 'da yeni Windows güncelleştirmeleri ayarları <!-- 4464404 -->

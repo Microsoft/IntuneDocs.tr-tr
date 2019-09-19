@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080042"
+ms.locfileid: "71094658"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -43,7 +43,7 @@ Bir rolü görmek için, **Intune** > **rolleri** > **tüm roller** ' i seçin >
 - **Atamalar**: Hangi kullanıcıların/cihazların erişimi olduğunu tanımlayan [rol atamalarının]( assign-role.md) listesi. Bir rol birden çok atamalara sahip olabilir ve bir Kullanıcı birden çok atama içinde olabilir.
 
 ### <a name="built-in-roles"></a>Yerleşik roller
-Daha fazla yapılandırma olmadan, gruplara yerleşik roller atayabilirsiniz. Yerleşik bir rolün adını, açıklamasını, türünü veya izinlerini silemez veya düzenleyemezsiniz. Yerleşik her rolün izinlerinin tam listesi için bkz. [ıNTUNE RBAC tablosu](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+Daha fazla yapılandırma olmadan, gruplara yerleşik roller atayabilirsiniz. Yerleşik bir rolün adını, açıklamasını, türünü veya izinlerini silemez veya düzenleyemezsiniz.
 
 - **Yardım Masası operatörü**: Kullanıcılar ve cihazlarda uzak görevleri gerçekleştirir ve kullanıcılara veya cihazlara uygulama veya ilke atayabilir.
 - **İlke ve Profil Yöneticisi**: Uyumluluk ilkesini, yapılandırma profillerini, Apple kaydını, kurumsal cihaz tanımlayıcılarını ve güvenlik temellerini yönetir.

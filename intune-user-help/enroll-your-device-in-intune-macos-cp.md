@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9047dd9bbc55162eae4693d3035cb05ff4becb91
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545724"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099854"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -46,7 +46,7 @@ Kayıttan sonra kuruluşunuz, çok faktörlü kimlik doğrulaması gibi yeni bir
 Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yüklediğimde ve cihazımı kaydettiğimde ne olur?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md).  
 
 ## <a name="get-your-device-managed"></a>Cihazınızı yönetime kaydetme  
-OS X El Capitan 10.11 ve sonrasını çalıştıran macOS cihazları kaydetmek için aşağıdaki adımları kullanın.   
+MacOS 10,12 ve üstünü çalıştıran macOS cihazlarını kaydetmek için aşağıdaki adımları kullanın.   
 
 
 1. Şirket Portalı web sitesine erişmek için __Safari__’de yeni bir pencere açın ve https://portal.manage.microsoft.com adresine gidin.  
@@ -60,7 +60,7 @@ OS X El Capitan 10.11 ve sonrasını çalıştıran macOS cihazları kaydetmek i
 
 4. __Cihazlar__ sayfasında yönetilen cihazlar listesi veya bir başlık görüntülenir. Göreceğiniz şey, yönetilen bir cihazınız olup olmamasına bağlıdır. 
     * Listede olmayan bir cihazı eklemek için **Hangi cihazı kullandığınızı bizimle paylaşmak veya yeni bir cihaz eklemek için buraya dokunun** yazılı başlığı seçin.
-    * Herhangi bir cihaza yoksa, başlık okur: **Yönetilen cihazınız yok. Buraya dokunup cihazı ekleyin.** Cihazınızı eklemek için başlığa tıklayın.  
+    * Hiç aygıtınız yoksa, başlık şunu okur: **Yönetilen bir aygıtınız yok. Buraya dokunup cihazı ekleyin.** Cihazınızı eklemek için başlığa tıklayın.  
 
      ![Tıklanacak yeri vurgulamak için başlık seçeneği etrafında kırmızı kare bulunan Cihazlar sayfasının ekran görüntüsü.](./media/CP-enroll-MACOS-1808.png)  
 5. Aşağıdaki adımlardan hangisi Şirket Portalı’nda görmekte olduğunuz iletiyle eşleşiyorsa onu tamamlayın.  
