@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96fa9fac25f6de4180d3dcc9ee4022a2cc43fe
-ms.sourcegitcommit: 7484ef8006f6b81d8976c328dd704512a31872ec
+ms.openlocfilehash: 6ab2e258553c049223806ddf199976c84ff6bcba
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70190239"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140683"
 ---
 # <a name="in-development-for-microsoft-intune---september-2019"></a>Microsoft Intune için geliştirme sırasında-Eylül 2019
 
@@ -97,7 +97,7 @@ Android iş profili cihazlarına kullanılabilir uygulama yüklemeleri için, uy
 
 ### <a name="device-features-device-restrictions-and-extension-profiles-for-ios-and-macos-settings-are-shown-by-enrollment-type----4886161----"></a>İOS ve macOS ayarları için cihaz özellikleri, cihaz kısıtlamaları ve uzantı profilleri kayıt türüne göre gösteriliyor <!-- 4886161  -->
 
-Intune 'da iOS ve MacOS cihazları için profiller oluşturursunuz > (**cihaz yapılandırma** > **profilleri** > **iOS** veya **MacOS** for platform > **cihaz özellikleri** , **Cihaz kısıtlamaları**veya profil türü **uzantıları** ). Şu anda, bu profillerdeki kullanılabilir ayarlar listelenir. 
+Intune 'da iOS ve MacOS cihazları için**profiller oluşturursunuz (**  > **cihaz yapılandırma** > **profilleri** > **iOS** veya **MacOS** for platform > **cihaz özellikleri** , **Cihaz kısıtlamaları**veya profil türü **uzantıları** ). Şu anda, bu profillerdeki kullanılabilir ayarlar listelenir. 
 
 Gelecekteki bir güncelleştirmede, Intune portalındaki kullanılabilir ayarlar, uygulanan kayıt türüne göre kategorize edilir:
 
@@ -213,7 +213,7 @@ Android tam olarak yönetilen cihazlar için aşağıdaki desteği ekleyeceğiz:
     - Android Enterprise 'ın YAPıLACAKLAR bölümünde SCEP profili oluşturma
     - kimlik doğrulaması için SCEP sertifikalarını Wi-Fi profili için bağlama
     - kimlik doğrulaması için SCEP sertifikalarını VPN profillerine bağlama
-    - SCEP sertifikalarını kimlik doğrulaması için e-posta profillerine bağlama (AppConfig aracılığıyla)
+    - kimlik doğrulaması için SCEP sertifikalarını e-posta profillerine bağlama (uygulama yapılandırması aracılığıyla)
 - Sistem uygulamaları, Android kurumsal cihazlarda desteklenecektir. Intune 'da, **istemci uygulamaları** > **uygulamalar** > **Ekle**' yi seçerek bir Android kurumsal sistem uygulaması ekleyeceksiniz. **Uygulama türü** listesinde, **Android kurumsal sistem uygulaması**' nı seçin. Intune'a uygulamaları ekleme hakkında daha fazla bilgi için bkz. [Microsoft Intune'a uygulama ekleme](apps-add.md). <!-- 4062195 -->
 - **Cihaz uyumluluğu** > **Android kurumsal** > **cihaz sahibi**bölümünde, Google SafetyNET kanıtlama düzeyini ayarlayan bir uyumluluk ilkesi oluşturabileceksiniz.   <!-- 4631425 -->
 - Android kurumsal tam olarak yönetilen cihazlarda, mobil tehdit savunma sağlayıcıları desteklenecektir. **Cihaz uyumluluğu** > **Android kurumsal** > **cihaz sahibi**' de, kabul edilebilir tehdit düzeyi seçebilirsiniz. <!-- 4631440 --> [Intune kullanarak cihazları uyumlu veya uyumsuz olarak işaretlemek Için Android kurumsal ayarları](compliance-policy-create-android-for-work.md#device-owner) geçerli ayarları listeler.

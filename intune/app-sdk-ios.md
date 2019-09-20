@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 09/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cde8269ca9d2ca2348fb6da377ad46150c90015a
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: eb9d6921a3a2bfa3556e0a8b010e42dddc62a656
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061560"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140746"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -276,6 +276,9 @@ WebViewHandledURLSchemes | Dize Dizisi | Uygulamanızın WebView’unun işledi�
 ### <a name="overview"></a>Genel Bakış
 
 Intune uygulama koruma ilkesini almak için, uygulamaların Intune MAM hizmetiyle bir kayıt isteği başlatmaları gerekir. Uygulamalar, Intune konsolunda cihaz kaydıyla veya cihaz kaydı olmadan uygulama koruma ilkesini almak için yapılandırılabilir. Kayıt olmadan uygulama koruma ilkesi (**APP-WE** veya MAM-WE olarak da bilinir), uygulamaların Intune mobil cihaz yönetimine (MDM) kaydedilmeden Intune tarafından yönetilmesine izin verir. Her iki durumda da, ilkeyi almak için Intune MAM hizmetine kaydolmak gereklidir.
+
+> [!Important]
+> İOS için Intune uygulama SDK 'Sı, uygulama koruma Ilkeleri tarafından şifreleme etkinleştirildiğinde 256 bitlik şifreleme anahtarlarını kullanır. Korunan veri paylaşımına izin vermek için tüm uygulamaların geçerli bir SDK sürümüne sahip olması gerekir.
 
 ### <a name="apps-that-already-use-adal-or-msal"></a>Zaten ADAL veya MSAL kullanan uygulamalar
 

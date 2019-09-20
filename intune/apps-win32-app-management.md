@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 452602ee98378ecd61ee0cfae8eb16f7fb69cb42
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842195"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140750"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Tek başına Intune-Win32 uygulama yönetimi
 
@@ -187,13 +187,15 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
         - **Çıkış verisi türünü seçin**: Bir gereksinim kuralı eşleşmesi belirlenirken kullanılan veri türünü seçin.
 4. İşiniz bittiğinde **Tamam**’a tıklayın.
 
-### <a name="step-6-configure-app-detection-rules"></a>Adım 6: Uygulama algılama kurallarını yapılandırma
+### <a name="step-6-configure-app-detection-rules"></a>6\. Adım: Uygulama algılama kurallarını yapılandırma
 
 1. **Uygulama ekle** bölmesinde, uygulamanın varlığını algılamaya yönelik kuralları yapılandırmak için **Algılama kuralları**'nı seçin.
 2. **Kuralların biçimi** alanında uygulamanın varlığının nasıl algılanacağını seçin. Algılama kurallarını el ile yapılandırmayı seçebileceğiniz gibi uygulamanın varlığını algılamak için özel bir betik de kullanabilirsiniz. En az bir algılama kuralı seçmelisiniz. 
 
     > [!NOTE]
     > **Algılama kuralları** bölmesinde birden fazla kural eklemeyi seçebilirsiniz. Uygulamanı algılanması için **tüm** kuralların koşullarına uyulmalıdır.
+    >
+    > Intune, uygulamanın cihazda mevcut olmadığını algılarsa, uygulamayı 24 saat sonra yeniden sunar. Bu, yalnızca gerekli amaca yönelik uygulamalar için oluşur.
 
     - **Algılama kurallarını el ile yapılandırın** - Şu kural türlerinden birini seçebilirsiniz:
         1. **MSI** – MSI sürüm denetimine dayanarak doğrulayın. Bu seçenek tek bir kez eklenebilir. Bu kural türünü seçtiğinizde iki ayarınız olur:
@@ -259,7 +261,7 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
     - **Başarılı** – Uygulamanın başarıyla yüklendiğini belirten dönüş kodu.
 3. Dönüş kodları listenizdeki eklemeleri veya değişiklikleri yaptıktan sonra **Tamam**'ı seçin.
 
-### <a name="step-8-add-the-app"></a>8\. Adım: Uygulama ekleme
+### <a name="step-8-add-the-app"></a>Adım 8: Uygulama ekleme
 
 1. **Uygulama ekle** bölmesinde, uygulama bilgilerini doğru yapılandırdığınızı onaylayın.
 2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.

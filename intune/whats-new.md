@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: a39c4a5830f5ce3d724508f5e6da64767c0bcdd0
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061673"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140721"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -57,6 +57,9 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 ## <a name="week-of-september-16-2019"></a>16 Eylül 2019 haftası
 
 ### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="company-portal-experience----1473353-3598357---"></a>Şirket Portalı deneyim <!-- 1473353, 3598357 -->
+Şirket Portalı güncelleştiriliyor. Şirket Portalı içinde uygulamalar sayfasında birden çok filtre kullanabileceksiniz. Cihaz ayrıntıları sayfası, gelişmiş bir kullanıcı deneyimiyle de güncelleştiriliyor. Bu güncelleştirmeleri tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek istiyoruz.
 
 #### <a name="macos-support-for-web-apps----3174427---"></a>Web uygulamaları için macOS desteği <!-- 3174427 -->
 Web 'deki bir URL 'ye kısayol eklemenize olanak sağlayan Web Apps, macOS Şirket Portalı kullanılarak Dock 'a yüklenebilir. Son kullanıcılar, macOS Şirket Portalı bir Web uygulaması için uygulama ayrıntıları sayfasından **Install** eylemine erişebilir. **Web bağlantısı** uygulama türü hakkında daha fazla bilgi için bkz. [Microsoft Intune uygulama ekleme](apps-add.md) ve [Microsoft Intune Web uygulamaları ekleme](web-app.md).

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd4a195af0b3be5038a34b44606abcddf02c5a1e
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 8ca3cf1cfed2d19a4b40aa667c0b6a1325eee531
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071552"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140777"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -115,7 +115,7 @@ Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
 
-Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
+Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar. DEP belirteci başına 100 kayıt profili sınırı vardır.
 
 > [!NOTE]
 > Bir VPP belirteci için yeterli Şirket Portalı lisansı yoksa veya belirtecin süresi dolmuşsa cihazlar engellenir. Belirtecin süresinin dolmasına az zaman kaldığında veya lisans sayısı azaldığında Intune'da bir uyarı görüntülenir.
