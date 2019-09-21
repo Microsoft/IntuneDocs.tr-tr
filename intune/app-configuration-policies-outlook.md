@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979210"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167379"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook yapılandırma ayarları 
 
@@ -30,7 +30,7 @@ Kayıtlı cihazlar için:
 - Yönetilen iOS cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-ios.md). 
 - Yönetilen Android cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md). 
 
-Kayıtlı olmayan cihazlar için, iOS ve Android için Outlook için bir uygulama yapılandırma ilkesi oluşturmak üzere [cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma Ilkeleri ekleme](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) bölümüne bakın.
+Kayıtlı olmayan cihazlar için, iOS ve Android için Outlook için bir uygulama yapılandırma ilkesi oluşturmak üzere [cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-managed-app.md) bölümüne bakın.
 
 ## <a name="configuration-settings"></a>Yapılandırma ayarları
 

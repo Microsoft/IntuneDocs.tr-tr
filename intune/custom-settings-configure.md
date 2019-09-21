@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure'da özel cihaz ayarlarını kullanma | Microsoft Docs
-description: Microsoft Intune kullanarak Windows Phone, Windows 8.1, Windows 10 ve üzeri, Android, Android Kurumsal, macOS ve iOS cihazlar için özel ayarlar kullanmak üzere profil ekleme veya oluşturma
+description: Microsoft Intune kullanarak Windows Phone, Windows 8.1, Windows 10 ve üzeri, Android, Android Enterprise, macOS ve iOS cihazları için özel ayarları kullanmak üzere bir profil ekleyin veya oluşturun
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3bd7deaf96d399dbf07e215309bf146b072c10f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 854e8fc7a46f431ce36c4e30682c196e6484b93e
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043021"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163121"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune'da özel ayarlarla profil oluşturma
 
@@ -39,7 +39,7 @@ Bu makale; Android, Android Kurumsal, iOS, macOS ve Windows için özel profille
 
 - [Android](custom-settings-android.md)
 - [Android Kurumsal](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/ıpados](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
@@ -51,7 +51,7 @@ Platformunuzu seçin ve kullanmaya başlayın:
 
 - [Android](custom-settings-android.md)
 - [Android Kurumsal](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/ıpados](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)

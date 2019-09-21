@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c71edf84fb1ade261eefc1b3de4543e941bf0657
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548324"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166812"
 ---
 # <a name="develop-a-support-plan"></a>Bir destek planı geliştirme
 
@@ -82,9 +82,9 @@ Intune destek eğitim gündemine bir örnek aşağıda verilmiştir.
 
 - Araçlar ve kaynaklar
 
-- Soru ve Cevap
+- Soru - Yanıt
 
-[Intune belgeleri](https://docs.microsoft.com/intune/); Intune’a genel bakış, ayrıntılı özellik açıklamaları ve bazı sorun giderme bilgileri sağlar. [Intune forumu](https://social.technet.microsoft.com/Forums/home), Intune belgelerinde bahsedilmeyen konu ve sorulara yönelik topluluk tabanlı bir kaynaktır.
+[Intune belgeleri](index.yml) , Intune 'a genel bakış, ayrıntılı Özellik açıklamaları ve bazı sorun giderme bilgileri sağlar. [Intune forumu](https://social.technet.microsoft.com/Forums/home), Intune belgelerinde bahsedilmeyen konu ve sorulara yönelik topluluk tabanlı bir kaynaktır.
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Destek ekibinin daha erken katılımını sağlamak için ne gibi fırsatlar var?
 

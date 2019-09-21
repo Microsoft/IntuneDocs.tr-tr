@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e553229530f826ead91be981ff446b7cb3ebbf2
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: a9091b4623e456f5b00134542282b2032ce70e6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214291"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163746"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
@@ -38,9 +38,19 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
 3. SCEP sertifika profili için bir **Ad** ve **Açıklama** girin.
 4. **Platform** açılan listesinde, bu SCEP sertifikası için desteklenen bir [Cihaz platformu](certificates-configure.md#supported-platforms-and-certificate-profiles) seçin. 
 5. **Profil türü** açılan listesinden **SCEP sertifikası**' nı seçin.  
+   
+   **Android kurumsal** platformu için *profil türü* , yalnızca *cihaz sahibi* ve *yalnızca iş profili*olmak üzere iki kategoriye ayrılmıştır. Yönettiğiniz cihazlar için doğru SCEP sertifika profilini seçtiğinizden emin olun.  
 
-   > [!NOTE]  
-   > **Android kurumsal** platformu için *profil türü* iki kategoriye ayrılmıştır: Yalnızca *cihaz sahibi* ve *iş profili*.  SCEP sertifika profilleri yalnızca *Iş profili*için desteklenir.
+   *Yalnızca cihaz sahibi* profılı için SCEP sertifika profilleri aşağıdaki sınırlamalara sahiptir:  
+
+   1. Aşağıdaki değişkenler desteklenmez:  
+
+      - CN = {{OnPrem_Distinguished_Name}}  
+      - CN = {{onPremisesSamAccountName}}  
+
+   2. Izleme altında, sertifika raporlama cihaz sahibi SCEP sertifika profilleri için kullanılamaz.
+   
+   3. Cihaz sahibi için SCEP sertifika profilleri tarafından sağlanan sertifikaların iptali Intune aracılığıyla desteklenmez, ancak bir dış işlem veya doğrudan sertifika yetkilisi aracılığıyla yönetilebilir.
 
 6. **Ayarlar**' ı seçin ve ardından aşağıdaki konfigürasyonları doldurun:
 

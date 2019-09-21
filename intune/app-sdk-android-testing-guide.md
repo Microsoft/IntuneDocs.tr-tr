@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune App SDK test Android Geliştirici Kılavuzu
-description: Microsoft Intune App SDK Android test kılavuzu için Intune tarafından yönetilen Android uygulamanızı test etmenize yardımcı olur.
+title: Android için uygulama SDK 'Sı geliştirici test Kılavuzu Microsoft Intune
+description: Android için Microsoft Intune uygulama SDK 'Sı test Kılavuzu, Intune ile yönetilen Android uygulamanızı test etmenize yardımcı olur.
 keywords: SDK
 author: Erikre
 ms.author: erikre
@@ -16,115 +16,115 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713244"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167174"
 ---
-# <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Microsoft Intune App SDK Kılavuzu test Android geliştiricileri için
+# <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Android için Microsoft Intune uygulama SDK 'Sı geliştiriciler test Kılavuzu
 
-Microsoft Intune App SDK Android test kılavuzu için Intune tarafından yönetilen Android uygulamanızı test etmenize yardımcı olmak için tasarlanmıştır.  
+Android için Microsoft Intune uygulama SDK 'Sı test Kılavuzu, Intune ile yönetilen Android uygulamanızı test etmenize yardımcı olmak için tasarlanmıştır.  
 
 ## <a name="prerequisite-test-accounts"></a>Önkoşul test hesapları
-Yeni hesaplar, önceden oluşturulan verileri olmadan ve oluşturulabilir. Yeni bir hesap oluşturmak için:
-1. Gidin [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) site. 
-2. [Intune'u ayarlama](https://docs.microsoft.com/intune/setup-steps) mobil cihaz Yönetimi (MDM) etkinleştirmek için.
-3. [Kullanıcılar oluşturma](https://docs.microsoft.com/intune/users-add).
-4. [Grup oluşturma](https://docs.microsoft.com/intune/groups-add).
-5. [Lisans atama](https://docs.microsoft.com/intune/licenses-assign) testiniz için uygun şekilde.
+Yeni hesaplar önceden oluşturulmuş verilerle ve ile oluşturulabilir. Yeni bir hesap oluşturmak için:
+1. [Microsoft gösterileri](https://demos.microsoft.com/environments/create/tenant) sitesine gidin. 
+2. [Intune](setup-steps.md) 'u mobil cihaz YÖNETIMI (MDM) etkinleştirecek şekilde ayarlayın.
+3. [Kullanıcı oluşturun](users-add.md).
+4. [Grupları oluşturun](groups-add.md).
+5. Test testiniz için uygun şekilde [lisans atayın](licenses-assign.md) .
 
 
-## <a name="azure-portal-policy-configuration"></a>Azure portal ilkesi yapılandırma
-[Uygulama koruma ilkeleri oluşturma ve atama](https://docs.microsoft.com/intune/app-protection-policies) içinde [Azure portal'ın Intune dikey penceresinde](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). [Uygulama yapılandırma İlkesi](https://docs.microsoft.com/intune/app-configuration-policies-overview) de oluşturulabilir ve Intune dikey penceresinde atanmış.
+## <a name="azure-portal-policy-configuration"></a>Azure portal ilkesi yapılandırması
+[Azure Portal Intune dikey](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)penceresinde [Uygulama koruma ilkeleri oluşturun ve atayın](app-protection-policies.md) . [Uygulama yapılandırma ilkeniz](app-configuration-policies-overview.md) da, Intune dikey penceresinde oluşturulup atanabilir.
 
 > [!NOTE]
-> Uygulamanızı Azure portalında listede yoksa, onu bir ilkeyle seçerek hedefleyebilir **daha fazla uygulama** seçeneği ve paket adı metin kutusunda sağlama.
+> Uygulamanız Azure portal listelenmemişse, **daha fazla uygulama** seçeneğini belirleyerek ve metin kutusunda paket adını sağlayarak bu ilkeyi bir ilkeyle hedefleyebilirsiniz.
 
 > [!IMPORTANT]
-> Uygulamak bir uygulama yapılandırma ilkesi için kaydolan kullanıcı tarafından hedeflenmelidir bir [Intune uygulama koruma İlkesi](https://docs.microsoft.com/intune/app-protection-policy).
+> Uygulama yapılandırma ilkesinin uygulanabilmesi için, kaydolan Kullanıcı bir [Intune uygulama koruma ilkesi](app-protection-policy.md)tarafından hedeflenmelidir.
 
 ## <a name="test-cases"></a>Test çalışmaları
 
-Aşağıdaki test çalışmaları, yapılandırma ve doğrulama adımlarını sağlar. Intune ile yönetilen Android uygulaması sorunlarını gidermenize yardımcı olması için bu kılavuzu kullanın.
+Aşağıdaki test çalışmaları yapılandırma ve onay adımları sağlar. Intune tarafından yönetilen Android uygulama sorunlarını gidermeye yardımcı olması için bu kılavuzu kullanın.
 
-### <a name="required-pin-and-corporate-credentials"></a>Gerekli PIN ve Kurumsal kimlik bilgileri
+### <a name="required-pin-and-corporate-credentials"></a>Gerekli PIN ve şirket kimlik bilgileri
 
-Şirket kaynaklarına erişim için PIN'i zorunlu kılabilir. Ayrıca, kullanıcılar yönetilen uygulamaları kullanabilmesi için önce şirket kimlik doğrulamasını zorunlu kılabilir. Bu gereksinimleri ayarlamak için aşağıdaki adımları kullanın:
+Şirket kaynaklarına erişmek için PIN 'i zorunlu kılabilirsiniz. Ayrıca, kullanıcıların yönetilen uygulamaları kullanabilmesi için önce şirket kimlik doğrulamasını uygulayabilirsiniz. Bu gereksinimleri ayarlamak için aşağıdaki adımları kullanın:
 
-1. Yapılandırma **erişim için PIN'i zorunlu kıl** ve **erişim için Kurumsal kimlik bilgilerini gerektir** için **Evet**. Daha fazla bilgi için [Android uygulama koruma İlkesi ayarları Microsoft Intune](app-protection-policy-settings-android.md#access-requirements).
-2. Aşağıdaki koşulları doğrulayın:
-    - Uygulama başlatma, PIN girişi/Kurulum ve/veya Şirket portalı kayıt sırasında kullanılan üretim kullanıcı için bir istem sunmalıdır.
-    - Geçerli bir oturum açma istemi sunmak için hata, yanlış yapılandırılmış bir android bildirimi, özellikle ADAL tümleştirme (SkipBroker ClientID ve yetkilisi) için değerleri nedeniyle olabilir.
-    - Herhangi bir istemi sunmak için hata nedeniyle yanlış tümleşik olabilir `MAMActivity` değeri. Hakkında daha fazla bilgi için `MAMActivity`, bkz: [Android Geliştirici Kılavuzu için Microsoft Intune App SDK](app-sdk-android.md).
+1. **Erişim IÇIN PIN gerektir** ' i yapılandırın ve **Evet**'e **erişmek için kurumsal kimlik bilgileri gerektir** . Daha fazla bilgi için, bkz. [Microsoft Intune Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md#access-requirements).
+2. Aşağıdaki koşulları onaylayın:
+    - Uygulama başlatma, PIN girişi/kurulumu ve/veya Şirket Portalı kayıt sırasında kullanılan üretim kullanıcısı için bir istem sunmalıdır.
+    - Geçerli bir oturum açma istemi sunamaması, özellikle ADAL tümleştirmesi (SkipBroker, ClientID ve Authority) değerleri için yanlış yapılandırılmış bir Android bildirimi nedeniyle olabilir.
+    - Herhangi bir istem sunma hatası, yanlış tümleşik `MAMActivity` bir değer nedeniyle olabilir. Hakkında `MAMActivity`daha fazla bilgi için bkz. [Android için uygulama SDK 'sı Geliştirici Kılavuzu Microsoft Intune](app-sdk-android.md).
 
 > [!NOTE] 
-> Yukarıdaki test çalışmazsa, aşağıdaki testleri büyük olasılıkla de başarısız olur. Gözden geçirme [SDK](app-sdk-android.md##sdk-integration) ve [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) tümleştirme.
+> Yukarıdaki test çalışmıyorsa aşağıdaki testler de başarısız olur. [SDK](app-sdk-android.md##sdk-integration) ve [adal](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) tümleştirmesini gözden geçirin.
 
-### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Diğer uygulamalarla veri almak ve aktarma kısıtlama
-Aşağıdaki gibi Kurumsal yönetilen uygulamalar arasında veri aktarımını denetleyebilirsiniz:
+### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Diğer uygulamalarla veri aktarımını ve almayı kısıtlama
+Kurumsal yönetilen uygulamalar arasında veri aktarımını şu şekilde denetleyebilirsiniz:
 
-1. Ayarlama **uygulamanın diğer uygulamalara veri aktarmasına izin ver** için **ilkeyle yönetilen uygulamalar**.
-2. Ayarlama **uygulamanın diğer uygulamalardan veri almasına izin ver** için **tüm uygulamalar**. Hedefleri ve içerik sağlayıcıları bu ilkelerden etkilenir.
-3. Aşağıdaki koşulları doğrulayın:
-    - Yönetilmeyen bir uygulamadan uygulama işlevlerinizi doğru açılıyor.
-    - Yönetilen uygulamalar arasında içerik paylaşımını izin verilir.
-    - Yönetilen uygulamalarda yönetilmeyen uygulamalara (örneğin, Chrome) paylaşım ise engellenir.
+1. **Uygulamanın diğer uygulamalara veri aktarmasına Izin ver** **ilkesini ilkeyle yönetilen uygulamalar**olarak ayarlayın.
+2. **Uygulamanın diğer uygulamalardan tüm uygulamalara veri almasına Izin ver** 'i ayarlayın. Amaç ve içerik sağlayıcılarının kullanımı, bu ilkelerden etkilenmez.
+3. Aşağıdaki koşulları onaylayın:
+    - Yönetilmeyen bir uygulamadan uygulama işlevlerinizi doğru açma.
+    - Yönetilen uygulamalar arasında içerik paylaşımına izin verilir.
+    - Yönetilen uygulamalardan Yönetilemeyen uygulamalara (örneğin, Chrome) paylaşılması engellenir.
 
-### <a name="restrict-cut-copy-and-paste"></a>Kesme, kopyalama ve yapıştırma işlemlerini kısıtla
-Yönetilen uygulamalar için sistem panosuna aşağıda açıklandığı şekilde kısıtlayabilirsiniz:
+### <a name="restrict-cut-copy-and-paste"></a>Kesme, kopyalama ve yapıştırmayı kısıtla
+Sistem panosunu yönetilen uygulamalarla şu şekilde kısıtlayabilirsiniz:
 
-1. Ayarlama **kısıtlama kesme, kopyalama ve yapıştırma diğer uygulamalarla** için **yapıştırma seçeneğiyle ilke ile yönetilen**.
-2. Aşağıdaki koşulları doğrulayın:
-    - Metin uygulamanızdan yönetilen kopyalama, yönetilmeyen bir uygulamaya (örneğin, iletiler) engellenir.
+1. **' In yapıştırma ile yönetilen ilkeye** **, diğer uygulamalarla kesme, kopyalama ve yapıştırmayı Kısıtla seçeneğini** belirleyin.
+2. Aşağıdaki koşulları onaylayın:
+    - Uygulamanızdan yönetilen yönetilmeyen bir uygulamaya (örneğin, Iletiler) metin kopyalama engellenir.
 
-### <a name="prevent-save-as"></a>Engelleme **Farklı Kaydet**
-Denetleyebileceğiniz **Kaydet** işlevselliğini aşağıdaki gibi:
+### <a name="prevent-save-as"></a>**Farklı kaydet** 'i engelle
+Farklı **Kaydet** işlevlerini aşağıdaki şekilde denetleyebilirsiniz:
 
-1. Uygulamanızı gerektiriyorsa [tümleşik 'Kaydet' denetimleri](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted)ayarlayın **Engelle 'Kaydet'** için **Evet**.
-2. Aşağıdaki koşulları doğrulayın:
-    - Kaydetme yalnızca uygun yönetilen konumlara sınırlıdır.
+1. Uygulamanız [Tümleşik ' farklı Kaydet ' denetimleri](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted)gerektiriyorsa, **' farklı Kaydet '** seçeneğini **Evet**olarak belirleyin.
+2. Aşağıdaki koşulları onaylayın:
+    - Kaydet yalnızca uygun yönetilen konumlara kısıtlıdır.
 
 ### <a name="file-encryption"></a>Dosya şifreleme
-Ayrıca verileri cihaz üzerinde gibi şifreleme de yapabilirsiniz:
+Cihazdaki verileri aşağıdaki gibi şifreleyebilirsiniz:
 
-1. Ayarlama **uygulama verilerini şifrele** için **Evet**.
-2. Aşağıdaki koşulları doğrulayın:
-    - Normal uygulama davranışı etkilenmeyecektir.
+1. **Uygulama verilerini şifreleyin** ' i **Evet**olarak ayarlayın.
+2. Aşağıdaki koşulları onaylayın:
+    - Normal uygulama davranışı etkilenmez.
 
 ### <a name="prevent-android-backups"></a>Android yedeklemelerini engelle
-Uygulama yedeğini aşağıdaki gibi denetleyebilirsiniz:
+Uygulama yedeklemesini şöyle denetleyebilirsiniz:
 
-1. Ayarladıysanız [tümleşik yedekleme kısıtlamaları](app-sdk-android.md#protecting-backup-data), yapılandırma **Android yedeklemelerini engelle** için **Evet**.
-2. Aşağıdaki koşulları doğrulayın:
-    - Yedeklemeleri kısıtlanır.
+1. [Tümleşik yedekleme kısıtlamaları](app-sdk-android.md#protecting-backup-data)ayarladıysanız, yapılandırma **Android yedeklemelerini** **Evet**olarak engelleyin.
+2. Aşağıdaki koşulları onaylayın:
+    - Yedeklemeler kısıtlıdır.
 
-### <a name="unenrollment"></a>Kayıt kaldırma
-Şirket e-posta ve belgelerini içeren yönetilen uygulamalarının uzaktan silebilir ve artık şu şekilde yönetildiğini, kişisel verilerin şifresi çözülür:
+### <a name="unenrollment"></a>Kayıt kaldırmaya
+Yönetilen uygulamaları, şirket e-postalarından ve belgelerinden uzaktan temizleyebilirsiniz ve kişisel veriler artık şu şekilde yönetilmediğinde çözülür:
 
-1. Azure portalından [bir temizleme sorunu](https://docs.microsoft.com/intune/apps-selective-wipe).
-2. Aşağıdaki koşullardan herhangi bir temizleme işleyicileri onaylamak için uygulamanızı kaydedilmiyorsa:
-    - Uygulamanın tam temizleme gerçekleşir.
-3. Uygulamanız için kayıtlı olmadığını `WIPE_USER_DATA` veya `WIPE_USER_AUXILARY_DATA`, aşağıdaki koşulları doğrulayın:
-    - Yönetilen içerik uygulamadan kaldırılır. Daha fazla bilgi için [Android Geliştirici Kılavuzu - seçmeli silme için Intune uygulama SDK'sı](app-sdk-android.md#selective-wipe).
+1. Azure portal, [silme](apps-selective-wipe.md)işlemi yapın.
+2. Uygulamanız herhangi bir silme işleyicisine kaydolmadığından, aşağıdaki koşulları onaylayın:
+    - Uygulamanın tam temizleme işlemi gerçekleşir.
+3. Uygulamanız veya `WIPE_USER_DATA` `WIPE_USER_AUXILARY_DATA`için kaydedilmişse, aşağıdaki koşulları onaylayın:
+    - Yönetilen içerik uygulamadan kaldırılır. Daha fazla bilgi için bkz. [Android Için Intune uygulama SDK 'sı Geliştirici Kılavuzu-seçmeli silme](app-sdk-android.md#selective-wipe).
 
 ### <a name="multi-identity"></a>Çoklu Kimlik
-Tümleştirme [çoklu kimlik desteği](app-sdk-android.md#multi-identity-optional) baştan sona test edilmesi gereken bir yüksek riskli değişikliktir. Yaygın sorunların çoğunu hatalı ayarı (tehdit düzeyi ve bağlam) kimliğini ve ayrıca dosyaların izlenmesi için son (`MAMFileProtectionManager`).
+[Çoklu kimlik desteğini](app-sdk-android.md#multi-identity-optional) tümleştirme, kapsamlı bir şekilde test olması gereken yüksek riskli bir değişiklik. En yaygın sorunlar, kimlik (bağlam ve tehdit düzeyi) ve izleme dosyaları (`MAMFileProtectionManager`) yanlış ayarı nedeniyle olacaktır.
 
-En düşük düzeyde aşağıdaki senaryolar için birden çok kimliği yeniden doğrulanır:
+Çoklu kimlik için aşağıdaki senaryolar yeniden doğrulanması gerekir:
 
-- **Farklı Kaydet** ilke yönetilen kimlikleri için doğru çalışıyor.
-- Kopyala-yapıştır kısıtlamaları doğru gelen kişisel yönetilen uygulanır.
-- Yalnızca yönetilen kimliğine ait veriler şifrelenir ve kişisel dosyaları değiştirilmedi.
-- Kayıt kaldırma sırasında seçmeli silme yalnızca yönetilen kimlik verilerini kaldırır.
-- Son kullanıcı koşullu başlatma için yönetilmeyen disklerden yönetilen hesabı (yalnızca ilk kez) değiştirirken istenir.
+- **Farklı kaydet** ilkesi, Yönetilen kimlikler için doğru şekilde çalışıyor.
+- Kopyalama yapıştırma kısıtlamaları, yönetilene doğru şekilde uygulanır.
+- Yalnızca yönetilen kimliğe ait veriler şifrelenir ve kişisel dosyalar değiştirilmez.
+- Kayıt kaldırma sırasında seçmeli Temizleme yalnızca yönetilen kimlik verilerini kaldırır.
+- Yönetilmeyen bilgisayardan yönetilen hesaba (yalnızca ilk kez) değiştirilirken, son kullanıcıdan koşul başlatması istenir.
 
-### <a name="app-configuration-optional"></a>Uygulama Yapılandırma (isteğe bağlı)
-Yönetilen uygulamaların davranışı aşağıdaki gibi yapılandırabilirsiniz:
+### <a name="app-configuration-optional"></a>Uygulama yapılandırması (isteğe bağlı)
+Yönetilen uygulamaların davranışını aşağıdaki gibi yapılandırabilirsiniz:
 
-1. Uygulamanızı herhangi bir uygulama yapılandırma ayarlarını kullanırsa, uygulamanızın doğru şekilde (Yönetici) olarak ayarlayabileceğiniz tüm değerleri işler test etmeniz gerekir. [Uygulama yapılandırma ilkeleri](https://docs.microsoft.com/intune/app-configuration-policies-overview) oluşturulabilir ve Intune kullanarak atanmış.
+1. Uygulamanız herhangi bir uygulama yapılandırma ayarını kullanıyorsa, uygulamanızın sizin (yönetici olarak) ayarlayabileceğiniz tüm değerleri doğru bir şekilde işlediğini test etmelisiniz. [Uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md) , Intune kullanılarak oluşturulabilir ve atanabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Android iş kolu satır uygulama Microsoft Intune ekleme](lob-apps-android.md).
+- [Microsoft Intune için bir Android iş kolu uygulaması ekleyin](lob-apps-android.md).

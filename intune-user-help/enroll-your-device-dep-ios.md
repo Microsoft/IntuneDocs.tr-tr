@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61494991"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166786"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Kuruluş tarafından sağlanan iOS cihazınızı yönetime kaydedin
 
@@ -34,15 +34,16 @@ Size iş veya okul tarafından sağlanan iOS cihazlar genellikle elinize ulaşma
 Kuruluma başlamak için cihazınızı açın ve iş veya okul kimlik bilgilerinizle oturum açın. Bu makalenin kalan bölümünde Kurulum Yardımcısı'nda ilerlerken göreceğiniz adımlar ve ekranlar açıklanır. 
 
 ## <a name="what-is-apple-dep"></a>Apple DEP nedir?
-Kuruluşunuz cihazlarını *Apple Aygıt Kayıt Programı* (DEP) adı verilen bir hizmet yoluyla satın almış olabilir. Apple DEP, kuruluşların çok sayıda iOS veya macOS cihaz satın almasına imkan tanır. Ardından kuruluşlar bu cihazları Intune gibi tercih ettikleri bir mobil cihaz yönetim sağlayıcısında yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi edinmek istiyorsanız bkz. [iOS cihazları Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
-## <a name="set-up-your-ios-device"></a>iOS cihazınızı ayarlama  
+Kuruluşunuz cihazlarını *Apple Aygıt Kayıt Programı* (DEP) adı verilen bir hizmet yoluyla satın almış olabilir. Apple DEP, kuruluşların çok sayıda iOS veya macOS cihaz satın almasına imkan tanır. Ardından kuruluşlar bu cihazları Intune gibi tercih ettikleri bir mobil cihaz yönetim sağlayıcısında yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi edinmek istiyorsanız bkz. [iOS cihazları Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md).  
+
+## <a name="set-up-your-ios-device"></a>iOS cihazınızı ayarlama
+
 Kuruluş tarafından sağlanan bir cihaz yerine kendi iOS cihazınızı kullanıyorsanız, [kişisel cihazlara ve kendi cihazını getir kapsamındaki cihazlara](enroll-your-device-in-intune-ios.md) yönelik adımları izleyin.  
 
-1. iOS cihazınızı başlatın. 
+1. iOS cihazınızı başlatın.
 2. **Dil** ayarınızı yaptıktan sonra cihazınızı Wi-Fi’a bağlayın.
-3. **iOS cihaz ayarlama** ekranında şunlardan birini seçin: 
- 
+3. **iOS cihaz ayarlama** ekranında şunlardan birini seçin:
    - **Yeni cihaz olarak ayarla**
    - **iCloud yedeğinden geri yükle**
    - **iTunes yedeğinden geri yükle**
@@ -53,7 +54,7 @@ Kuruluş tarafından sağlanan bir cihaz yerine kendi iOS cihazınızı kullanı
  
    **Yapılandırma şunlar tarafından sağlanır: [Şirketinizin] iOS Ekibi [Adres]**
 
-5. Apple kimliğinizle oturum açın. Oturum açmak, Şirket Portalı uygulamasını yüklemenize ve şirketinizin size e-posta ve uygulamalar gibi kaynakların erişimini sağlamasına izin verecek yönetim profilini yüklemenize imkan verir. 
+5. Apple kimliğinizle oturum açın. Oturum açmak, Şirket Portalı uygulamasını yüklemenize ve şirketinizin size e-posta ve uygulamalar gibi kaynakların erişimini sağlamasına izin verecek yönetim profilini yüklemenize imkan verir.
 6. **Hüküm ve Koşullar**’ı onaylayın ve Apple’a tanılama bilgileri göndermek isteyip istemediğinizi seçin.
 7. Kaydınızı tamamladığınızda, cihazınız daha fazla eylem gerçekleştirmenizi isteyebilir. Bu adımlardan bazıları, e-posta erişimi için parolanızı girmek veya bir geçiş kodu ayarlamak olabilir.
 

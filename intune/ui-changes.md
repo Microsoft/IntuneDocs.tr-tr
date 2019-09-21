@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046328"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166993"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure'daki Intune özelliğim nereye gitti?
 Intune'u Azure portalına taşırken bazı görevleri daha mantıklı bir şekilde organize ettik. Ancak her geliştirme sonrasında atlatılması gereken bir yeni düzene alışma süreci vardır. Bu başvuru kılavuzu, klasik portalda Intune’a aşina olanlar ve bir işlemi Azure portalında Intune’da nasıl gerçekleştireceğini merak edenler için hazırlanmıştır. Aradığınız özellik bu makalede yoksa , güncelleştirebilmemiz için makalenin sonuna yorumlarınızı yazın.
@@ -51,7 +51,7 @@ Klasik portalda, mobil ve modern Windows ve macOS cihazlarının MDM kaydını y
 
 ![Klasik mobil cihaz kayıt kuralları görüntüsü](./media/01-classic-rules.png)
 
-Bu kurallar, özel durum olmadan Intune hesabınızdaki tüm kullanıcılar için geçerli oluyordu. Azure portalında bu kurallar iki farklı ilke türü artık görünür: Cihaz türü kısıtlamaları ve cihaz sınırı kısıtlamaları.
+Bu kurallar, özel durum olmadan Intune hesabınızdaki tüm kullanıcılar için geçerli oluyordu. Azure portal, bu kurallar artık iki ayrı ilke türünde görünür: Cihaz türü kısıtlamaları ve cihaz sınırı kısıtlamaları.
 
 ![Azure mobil cihaz kaydı kısıtlamalarının görüntüsü](./media/02-azure-enroll-restrictions.png)
 
@@ -69,15 +69,15 @@ Kişisel cihazlara izin verme veya bu cihazları engelleme özelliği artık Cih
 
 Yeni kısıtlama özellikleri yalnızca Azure Portal'a eklenir.
 
-## <a name="where-did-my-conditional-access-policies-go"></a>My koşullu erişim ilkeleri nereye gitti?
-Azure portalında kiracınızın geçirildikten sonra kiracınızın koşullu erişim ilkeleri zorlanmaya devam edin. Ancak bunları Azure portalında Intune’da görüntüleyemez veya değiştiremezsiniz.
+## <a name="where-did-my-conditional-access-policies-go"></a>Koşullu erişim ilklerimin nereye gitmediği
+Kiracınız Azure portal geçirdikten sonra, kiracınızın koşullu erişim ilkeleri zorlanmaya devam eder. Ancak bunları Azure portalında Intune’da görüntüleyemez veya değiştiremezsiniz.
 
-Görmek ve Azure portalından koşullu erişim ilkelerini değişiklikler yapmak istiyorsanız, eski ilkeleri Klasik portaldan kaldırmanız gerekir. Daha sonra bunları Azure portalında yeniden oluşturmalısınız. Koşullu erişim ilkeleri geçirme hakkında daha fazla bilgi için bkz. [Azure portalında Klasik ilkeleri geçirme](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
+Azure portal koşullu erişim ilkelerini görüntülemek ve değişiklikler yapmak istiyorsanız, eski ilkeleri klasik portaldan kaldırmanız gerekir. Daha sonra bunları Azure portalında yeniden oluşturmalısınız. Koşullu erişim ilkelerini geçirme hakkında daha fazla bilgi için bkz. [Azure portalında klasik Ilkeleri geçirme](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
 
 ## <a name="where-did-my-compliance-policies-go"></a>Uyumluluk ilkelerim nereye gitti?
 Kiracınız Azure portalına geçtikten sonra kiracınızın uyumluluk ilkeleri uygulanmaya devam eder. Ancak bunları Azure portalında Intune’da görüntüleyemez veya değiştiremezsiniz.
 
-Uyumluluk ilkelerini görüntülemek ve ilkeler üzerinde değişiklik yapmak için Azure portalını kullanmak isterseniz klasik portaldan eski ilkeleri kaldırmanız gerekir. Daha sonra bunları Azure portalında yeniden oluşturmalısınız. Cihaz uyumluluk ilkeleri hakkında daha fazla bilgi için bkz. [Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama](https://docs.microsoft.com/intune/device-compliance-get-started). 
+Uyumluluk ilkelerini görüntülemek ve ilkeler üzerinde değişiklik yapmak için Azure portalını kullanmak isterseniz klasik portaldan eski ilkeleri kaldırmanız gerekir. Daha sonra bunları Azure portalında yeniden oluşturmalısınız. Cihaz uyumluluk ilkeleri hakkında daha fazla bilgi için bkz. [Intune’da cihaz uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md). 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP nereye gitti?
 Klasik portalda Intune’u Apple’ın Aygıt Kayıt Programı ile tümleştirebiliyor ve Apple’ın hizmetiyle el ile eşitleme isteğinde bulunuyordunuz:

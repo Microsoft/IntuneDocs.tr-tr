@@ -10,12 +10,12 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ede8d8a55bf9573bb81daaeb9f5ac174196a8911
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: 278ba505bcc5acd73adcfc4a356dee07fc06d5f7
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71017939"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167750"
 ---
 # <a name="using-the-intune-docs"></a>Intune belgelerini kullanma
 
@@ -67,7 +67,7 @@ Aşağıdaki geri bildirim türlerini göndermek için GitHub sorunlarını kull
 - Sürecindeki İçerik çevirisi hakkında geri bildirim.
 - Arama altyapısı iyileştirmesi (SEO): İçerik arama sorunları hakkında geri bildirim. Yorumlara arama altyapısını, anahtar sözcükleri ve hedef makaleyi dahil edin.
 
-[Ürün geri bildirimi](https://microsoftintune.uservoice.com/forums/291681-ideas), [ürün soruları](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)veya [destek istekleri](https://docs.microsoft.com/intune/get-support)gibi belge olmayan konularla ilgili sorunlar ortaya çıktığında, bu sorunlar kapatılır ve Kullanıcı doğru geri bildirim kanalına yönlendirilir.
+[Ürün geri bildirimi](https://microsoftintune.uservoice.com/forums/291681-ideas), [ürün soruları](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)veya [destek istekleri](get-support.md)gibi belge olmayan konularla ilgili sorunlar ortaya çıktığında, bu sorunlar kapatılır ve Kullanıcı doğru geri bildirim kanalına yönlendirilir.
 
 Docs.microsoft.com platformunda geri bildirim paylaşmak için bkz. [docs feedback](https://aka.ms/sitefeedback). Platform, üst bilgi, içindekiler tablosu ve sağ menü gibi tüm sarmalayıcı bileşenlerini içerir. Ayrıca makalelerin, yazı tipi, uyarı kutuları ve sayfa bağlayıcıları gibi tarayıcıda nasıl işlenmesi.
 

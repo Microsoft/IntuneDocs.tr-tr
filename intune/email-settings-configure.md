@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b579849d9afdb50470b7a772e003cc616e1f94a0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2a534aef3cdb989376dc1c148abedfb4f4e4f78b
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530036"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162880"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune kullanarak cihazlara e-posta ayarları ekleme
 
-Microsoft Intune, kuruluşunuzdaki cihazlara dağıtabileceğiniz farklı e-posta ayarları içerir. BT yöneticisine e-posta profilleri, Office 365 ve Gmail gibi bir e-posta sunucusuna bağlanmak için özel ayarlar oluşturur. Son kullanıcılar ardından bağlanmak, kimlik doğrulaması ve mobil cihazlarından Kurumsal e-posta hesaplarını eşitlemek. Oluşturma ve bir e-posta profili dağıtımı, ayarlar birçok cihaz arasında standart doğrulayabilirsiniz. Ayrıca doğru e-posta ayarlarını bilmeyen son kullanıcılardan gelen destek çağrılarını azaltabilirsiniz.
+Microsoft Intune, kuruluşunuzdaki cihazlara dağıtabileceğiniz farklı e-posta ayarları içerir. BT Yöneticisi, Office 365 ve Gmail gibi bir posta sunucusuna bağlanmak için belirli ayarlarla e-posta profilleri oluşturur. Son kullanıcılar daha sonra mobil cihazlarındaki kurumsal e-posta hesaplarını bağlayıp, kimlik doğrulaması yapar ve eşitler. Bir e-posta profili oluşturup dağıtarak, ayarların birçok cihazda standart olduğunu doğrulayabilirsiniz. Ayrıca doğru e-posta ayarlarını bilmeyen son kullanıcılardan gelen destek çağrılarını azaltabilirsiniz.
 
 Aşağıdaki cihazlarda yerleşik e-posta ayarlarını yapılandırmak için e-posta profillerini kullanabilirsiniz:
 
@@ -38,25 +38,31 @@ Bu makalede, Microsoft Intune’da e-posta profili oluşturma işlemi gösterili
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
-3. E-posta profili için **Ad** ve **Açıklama** girin.
-4. Açılan listeden **Platform** bilginizi seçin. Seçenekleriniz şunlardır:
+3. Aşağıdaki özellikleri girin:
 
-    - **Android** (yalnızca Samsung Android Knox Standard)
-    - **Android kurumsal**
-    - **iOS**
-    - **Windows Phone 8.1**
-    - **Windows 10 ve üzeri**
+    - **Ad**: İlke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı **tüm Windows cihazları Için e-posta ayarları**olur.
+    - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: Cihazlarınızın platformu seçin. Seçenekleriniz şunlardır:
 
-5. **Profil** türü açılan listesinde **E-posta**’yı seçin.
-6. Yapılandırabileceğiniz ayarlar platforma göre değişiklik gösterebilir. Belirli ayarlar için platformunuzu seçin:
+        - **Android** (yalnızca Samsung Android Knox Standard)
+        - **Android kurumsal**
+        - **iOS/ıpados**
+        - **Windows Phone 8.1**
+        - **Windows 10 ve üzeri**
 
-    - [Android Samsung Knox Standard ayarları](email-settings-android.md)
-    - [Android Kurumsal ayarları](email-settings-android-enterprise.md)
-    - [iOS ayarları](email-settings-ios.md)
+    - **Profil türü**: **E-posta**seçeneğini belirleyin.
+
+4. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Ayrıntılı ayarlar için platformunuzu seçin:
+
+    - [Android Samsung KNOX Standard ayarları](email-settings-android.md)
+    - [Android kurumsal ayarları](email-settings-android-enterprise.md)
+    - [iOS/ıpados ayarları](email-settings-ios.md)
     - [Windows Phone 8.1 ayarları](email-settings-windows-phone-8-1.md)
     - [Windows 10 ayarları](email-settings-windows-10.md)
+
+5. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
 Ayarlarınızı girdikten ve profili oluşturduktan sonra profiliniz profil listesinde gösterilir. Daha sonra [bu profili bazı gruplara atayın](device-profile-assign.md).
 
@@ -64,31 +70,31 @@ Ayarlarınızı girdikten ve profili oluşturduktan sonra profiliniz profil list
 
 E-posta profilleri kullanıcı gruplarına değil cihaz gruplarına atanır. Cihazda sadece bir e-posta profili olduğunda bile e-posta profilini kaldırmanın farklı yolları vardır:
 
-- **Seçenek 1**: E-posta profili açın (**cihaz Yapılandırması** > **profilleri**) ve **atamaları**. **Ekle** sekmesi, profil atanmış grupları gösterir. Gruba sağ tıklayın ve **Kaldır**’ı seçin. Değişikliklerinizi kaydetmek için **Kaydet**’e tıklamayı unutmayın.
+- **Seçenek 1**: E-posta profilini (**cihaz yapılandırma** > **profilleri**) açın ve **atamalar**' ı seçin. **Ekle** sekmesi, profil atanmış grupları gösterir. Gruba sağ tıklayın ve **Kaldır**’ı seçin. Değişikliklerinizi kaydetmek için **Kaydet**’e tıklamayı unutmayın.
 
-- **Seçenek 2**: [Cihazı devre dışı bırakma veya silme](devices-wipe.md). Veri ve ayarları seçmeli olarak veya tamamen kaldırmak için bu eylemleri kullanabilirsiniz.
+- **Seçenek 2**: [Cihazı silme veya devre dışı bırakma](devices-wipe.md). Veri ve ayarları seçmeli olarak veya tamamen kaldırmak için bu eylemleri kullanabilirsiniz.
 
 ## <a name="secure-email-access"></a>E-posta erişimini güvenli hale getirme
 
 E-posta profillerinin güvenliği sağlamaya yardımcı olmak için aşağıdaki seçenekleri kullanabilirsiniz:
 
-- **Sertifikaları**: E-posta profilini oluştururken, Intune'da önceden oluşturduğunuz bir sertifika profilini seçin. Bu sertifika, kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini doğrulamak için bir güvenilir sertifika profiline veya kök sertifikaya göre kimlik doğrulaması yapar. Güvenilir sertifika, e-posta bağlantısının kimliğini doğrulayan bilgisayara atanır. Bu bilgisayar genellikle yerel posta sunucusudur.
+- **Sertifikalar**: E-posta profilini oluştururken, daha önce Intune 'da oluşturduğunuz bir sertifika profilini seçersiniz. Bu sertifika, kimlik sertifikası olarak bilinir. Kullanıcının cihazının bağlanmasına izin verildiğini doğrulamak için bir güvenilir sertifika profiline veya kök sertifikaya göre kimlik doğrulaması yapar. Güvenilir sertifika, e-posta bağlantısının kimliğini doğrulayan bilgisayara atanır. Bu bilgisayar genellikle yerel posta sunucusudur.
 
   Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [Intune ile sertifikaları yapılandırma](certificates-configure.md).
 
-- **Kullanıcı adı ve parola**: Son kullanıcı, bir kullanıcı adı ve parola girerek yerel posta sunucusunda kimliğini doğrular. Parola e-posta profilinde bulunmaz. Bu nedenle, son kullanıcının e-postaya bağlanırken parolasını girer.
+- **Kullanıcı adı ve parola**: Son Kullanıcı, bir Kullanıcı adı ve parola girerek Yerel posta sunucusunda kimliğini doğrular. Parola e-posta profilinde bulunmaz. Bu nedenle, son kullanıcı e-postaya bağlanırken parolayı girer.
 
 ## <a name="how-intune-handles-existing-email-accounts"></a>Intune mevcut e-posta hesaplarını nasıl işler?
 
 Kullanıcı zaten bir e-posta hesabı yapılandırılmışsa e-posta profili platforma bağlı olarak farklı şekilde atanır.
 
-- **iOS**: Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Yinelenen e-posta profili, Intune profilinin atamasını engeller. Bu durumda, Şirket portalı uygulaması, uyumlu olmayan ve el ile yapılandırılan profili kaldırmak için son kullanıcı komut istemleri kullanıcıyı uyarır. Bu senaryo önlemeye yardımcı olmak için son kullanıcıların bilgi *önce* Intune'un profili ayarlamasına izin veren bir e-posta profili yükleniyor.
+- **iOS**: Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Yinelenen e-posta profili, Intune profilinin atamasını engeller. Bu durumda, Şirket Portalı uygulama kullanıcıya uyumlu olmadıkları konusunda bilgilendirir ve son kullanıcıdan yapılandırılmış profili el ile kaldırmasını ister. Bu senaryoyu önlemeye yardımcı olmak için son kullanıcılarınıza Intune 'un profili ayarlamasına izin veren bir e-posta profili yüklemeden *önce* kaydolmalarını söyleyin.
 
-- **Windows:** Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Intune son kullanıcı tarafından oluşturulan mevcut e-posta profilinin üzerine yazar.
+- **Windows:** Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Intune, son kullanıcı tarafından oluşturulan mevcut e-posta profilinin üzerine yazar.
 
-- **Android Samsung Knox Standard**: E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanır ve Intune profili bunun üzerine yazılır. Android, profili tanımlamak için ana bilgisayar adı kullanmaz. Farklı ana bilgisayarlarda aynı e-posta adresini kullanarak birden çok e-posta profili oluşturmayın. Profiller birbirinin üzerine.
+- **Android Samsung KNOX Standard**: E-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanır ve Intune profili bunun üzerine yazılır. Android, profili tanımlamak için ana bilgisayar adı kullanmaz. Farklı ana bilgisayarlarda aynı e-posta adresini kullanarak birden çok e-posta profili oluşturmayın. Profiller birbirinin üzerine yazılır.
 
-- **Android iş profilleri**: Intune, iki Android iş e-posta profilleri sağlar: biri Gmail uygulamasını ve Nine Work uygulamasına yönelik biri. Bu uygulamalar Google Play Store’da mevcuttur ve cihaz iş profilinde yüklenir. Bu uygulamalar, yinelenen profiller oluşturmayın. Her iki uygulama da Exchange bağlantılarını destekler. E-posta bağlantısını kullanmak için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın. Ardından uygun e-posta profilini oluşturun ve dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
+- **Android iş profilleri**: Intune iki Android iş e-posta profili sağlar: biri Gmail uygulaması için, diğeri ise dokuz Iş uygulaması için. Bu uygulamalar Google Play Store’da mevcuttur ve cihaz iş profilinde yüklenir. Bu uygulamalar Yinelenen profiller oluşturmaz. Her iki uygulama da Exchange bağlantılarını destekler. E-posta bağlantısını kullanmak için bu e-posta uygulamalarından birini kullanıcılarınızın cihazlarına dağıtın. Ardından uygun e-posta profilini oluşturun ve dağıtın. Nine Work gibi e-posta uygulamaları ücretsiz olmayabilir. Uygulamanın lisanslama ayrıntılarını gözden geçirin veya sorunuz varsa uygulama şirketine başvurun.
 
 ## <a name="changes-to-assigned-email-profiles"></a>Atanan e-posta profillerindeki değişiklikler
 
@@ -96,4 +102,4 @@ Kullanıcı zaten bir e-posta hesabı yapılandırılmışsa e-posta profili pla
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturulduğunda henüz herhangi bir işlem gerçekleştirmez. Ardından, [bazı cihazlara profil atama](device-profile-assign.md).
+Profil oluşturulduğunda henüz herhangi bir işlem gerçekleştirmez. Sonra, [profili bazı cihazlara atayın](device-profile-assign.md).

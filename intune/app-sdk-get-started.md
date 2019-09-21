@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbaeb5efa2b23a7fad4761878b25118786609447
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 4b24387636408d2e28891aae13962c2febf9f329
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842122"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167198"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -161,7 +161,7 @@ iOS veya Android uygulamanızı Intune Uygulama SDK’sıyla tümleştirmek içi
 
   * Mağazaya gönderilmeyecek bir iş kolu uygulaması geliştiriyorsanız kuruluşunuz aracılığıyla Microsoft Intune’a erişiminizin olması beklenir. [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) ile bir aylık ücretsiz deneme için de kaydolabilirsiniz.
 
-  * Uygulamanızı Son Kullanıcı hesabı kullanarak bir mobil cihazda test ediyorsanız, bir yönetici hesabıyla oturum açtıktan sonra Microsoft 365 Yönetim Merkezi Web sitesinde bu hesaba bir Intune lisansı vermiş olduğunuzdan emin olun, bkz. [Microsoft Intune lisansı atama](https://docs.microsoft.com/intune/licenses-assign).
+  * Uygulamanızı Son Kullanıcı hesabı kullanarak bir mobil cihazda test ediyorsanız, bir yönetici hesabıyla oturum açtıktan sonra Microsoft 365 Yönetim Merkezi Web sitesinde bu hesaba bir Intune lisansı vermiş olduğunuzdan emin olun, bkz. [Microsoft Intune lisansı atama](licenses-assign.md).
 
 * **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı test etmek için, her ilke ayarı için beklenen davranışın ne olduğunu bilmeniz gerekir. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](app-protection-policy-settings-android.md). Uygulamanız Intune SDK 'sını tümleştirdiyse, ancak henüz hedeflenen bir uygulama olarak Azure portal listelenmiyorsa, "+ daha fazla uygulama" seçeneğini belirleyerek ve metin kutusuna paket KIMLIĞI (iOS) veya paket adı (Android) sağlayarak bunu bir ilkeyle hedefleyebilirsiniz.
 

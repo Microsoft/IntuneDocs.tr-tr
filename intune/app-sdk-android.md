@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 8d6f0182fed362cba1e4c383ac6b4e083b6baa8e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960545"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167170"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -707,7 +707,7 @@ Gerekirse yetkili belirtilebilir.
 
 Uygulamanızı Azure AD 'ye kaydetmeniz ve uygulamanıza uygulama koruma ilkesi hizmeti erişimi sağlamanız gerekir:
 * Azure AD ile uygulama kaydetme hakkında daha fazla bilgi için [buraya](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) bakın.
-* Android uygulama izinlerinizi uygulama koruma ilkesi (APP) hizmetine verme adımlarının izlendiğinden emin olun. "Uygulamanızın Intune uygulama koruma hizmeti 'ne erişmesine izin verin (isteğe bağlı)" altındaki [Intune SDK 'sını](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) kullanmaya başlama yönergelerini kullanın. 
+* Android uygulama izinlerinizi uygulama koruma ilkesi (APP) hizmetine verme adımlarının izlendiğinden emin olun. "Uygulamanızın Intune uygulama koruma hizmeti 'ne erişmesine izin verin (isteğe bağlı)" altındaki [Intune SDK 'sını](app-sdk-get-started.md#next-steps-after-integration) kullanmaya başlama yönergelerini kullanın. 
 
 Ayrıca aşağıdaki [Koşullu Erişim](#conditional-access) gereksinimlerini inceleyin.
 
@@ -723,18 +723,18 @@ Gerekirse Yetkili ve NonBrokerRedirectURI belirtilebilir.
 
 ### <a name="conditional-access"></a>Koşullu Erişim
 
-Koşullu Erişim (CA), AAD kaynaklarına erişimi denetlemek için kullanılabilen bir Azure Active Directory [özelliğidir](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer). Intune yöneticileri yalnızca Intune tarafından yönetilen cihazlar veya uygulamalardan kaynak erişimine izin veren [CA kurallarını tanımlayabilir](https://docs.microsoft.com/intune/conditional-access). Uygulamanızın uygun olduğunda kaynaklara erişebildiğinden emin olmak için aşağıdaki adımları izlemeniz gerekir. Uygulamanız herhangi bir AAD erişim belirteci gerektirmiyorsa veya yalnızca CA ile korunamayan kaynaklara erişiyorsa bu adımları atlayabilirsiniz.
+Koşullu Erişim (CA), AAD kaynaklarına erişimi denetlemek için kullanılabilen bir Azure Active Directory [özelliğidir](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer). Intune yöneticileri yalnızca Intune tarafından yönetilen cihazlar veya uygulamalardan kaynak erişimine izin veren [CA kurallarını tanımlayabilir](conditional-access.md). Uygulamanızın uygun olduğunda kaynaklara erişebildiğinden emin olmak için aşağıdaki adımları izlemeniz gerekir. Uygulamanız herhangi bir AAD erişim belirteci gerektirmiyorsa veya yalnızca CA ile korunamayan kaynaklara erişiyorsa bu adımları atlayabilirsiniz.
 
 1. [ADAL tümleştirme yönergelerini](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library) izleyin. 
    Aracı kullanımı için özellikle 11. Adıma bakın.
 2. [Uygulamanızı Azure Active Directory ile kaydetme] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
    Yeniden yönlendirme URI’si, yukarıdaki ADAL tümleştirme kılavuzlarında bulunabilir.
 3. Yukarıda [Yaygın ADAL yapılandırmaları](#common-adal-configurations), öğe 2 için bildirim meta veri parametrelerini ayarlayın.
-4. [Azure portalından](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) [cihaz tabanlı CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use)’yı etkinleştirerek her şeyin doğru yapılandırıldığını sınayıp doğrulayın
+4. [Azure portalından](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) [cihaz tabanlı CA](conditional-access-intune-common-ways-use.md)’yı etkinleştirerek her şeyin doğru yapılandırıldığını sınayıp doğrulayın
     - Uygulamanızda oturum açma, Intune Şirket Portalı’nı yüklemeyi ve portala kaydolmayı gerektirir
     - Kayıttan sonra, uygulamanızda oturum açma başarıyla tamamlanır.
-5. Uygulamanız Intune uygulama SDK 'sı tümleştirmesini gönderdikten sonra, msintuneappsdk@microsoft.com [uygulama tabanlı koşullu erişim](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) için onaylanan uygulamalar listesine eklenecek kişi
-6. Uygulamanız onaylananlar listesine eklendikten sonra, [Uygulama tabanlı CA’yı yapılandırarak](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) doğrulayın ve uygulamanıza oturum açmanın başarıyla tamamlandığından emin olun.
+5. Uygulamanız Intune uygulama SDK 'sı tümleştirmesini gönderdikten sonra, msintuneappsdk@microsoft.com [uygulama tabanlı koşullu erişim](conditional-access-intune-common-ways-use.md#app-based-conditional-access) için onaylanan uygulamalar listesine eklenecek kişi
+6. Uygulamanız onaylananlar listesine eklendikten sonra, [Uygulama tabanlı CA’yı yapılandırarak](app-based-conditional-access-intune-create.md) doğrulayın ve uygulamanıza oturum açmanın başarıyla tamamlandığından emin olun.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Cihaz kaydı olmadan uygulama koruma ilkesi
 
@@ -1370,7 +1370,7 @@ Uygulamanın kimlik ayarlayabilme özelliğine ek olarak, bir iş parçacığı 
 
   * Bir kimlik değişimi engellenirse, sonuç `Receive` paylaşım ayarları veri girişini yasakladığında olan ile aynıdır.
 
-  * Ana iş parçacığında bir hizmet çalışıyorsa, `reportIdentitySwitchResult` zaman uyumlu olarak çağrılmalıdır veya UI iş parçacığı yanıt vermeyi durdurmalıdır.
+  * Ana iş parçacığında bir hizmet çalışıyorsa, `reportIdentitySwitchResult` zaman uyumlu olarak çağrılmalıdır veya UI iş parçacığı yanıt vermeyi **durdurmalıdır** .
 
   * Oluşturma **`Activity`** için, `onMAMIdentitySwitchRequired` daha önce `onMAMCreate`çağrılacaktır. Kimlik anahtarına izin verilip verilmeyeceğine karar vermek için uygulamanın UI göstermesi gerekiyorsa, bu UI *farklı* bir etkinlik kullanılarak gösterilmelidir.
 
@@ -1639,7 +1639,7 @@ Varsayılan seçmeli silme, uygulamayı düzgün bir şekilde kapatacak, etkinli
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android uygulamalarınız için MAM hedefli yapılandırmayı etkinleştirme (isteğe bağlı)
-[Mam-we](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) ve [Android iş profili uygulamaları](https://docs.microsoft.com/intune/app-configuration-policies-use-android)için Intune konsolunda uygulamaya özgü anahtar-değer çiftleri yapılandırılabilir.
+[Mam-we](app-configuration-policies-managed-app.md) ve [Android iş profili uygulamaları](app-configuration-policies-use-android.md)için Intune konsolunda uygulamaya özgü anahtar-değer çiftleri yapılandırılabilir.
 Bu anahtar-değer çiftleri, Intune tarafından değiştirilmeden uygulamaya geçirilir. Bu tip bir yapılandırma almak isteyen uygulamalar bunun için `MAMAppConfigManager` ve `MAMAppConfig` sınıflarını kullanabilir. Aynı uygulamaya birden çok ilke hedeflenmişse aynı anahtar için birden çok çakışan değer olabilir.
 
 > [!NOTE] 
@@ -1673,7 +1673,7 @@ Uygulama yapılandırma, yeni bir bildirim türü ekler:
 ### <a name="further-reading"></a>Daha Fazla Bilgi
 Graph API’nin işlevleri hakkında daha fazla bilgi için bkz. [Graph API Başvurusu](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
-Android’de MAM hedefli bir uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi için [Android için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](https://docs.microsoft.com/intune/app-configuration-policies-use-android) konusunun MAM hedefli uygulama yapılandırması hakkındaki bölümüne bakın.
+Android’de MAM hedefli bir uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi için [Android için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](app-configuration-policies-use-android.md) konusunun MAM hedefli uygulama yapılandırması hakkındaki bölümüne bakın.
 
 ## <a name="style-customization-optional"></a>Stil Özelleştirme (isteğe bağlı)
 

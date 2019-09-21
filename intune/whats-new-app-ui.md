@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061720"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167884"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 Microsoft Intune uygulamalarına yönelik en son güncelleştirmeler hakkında bilgi edinin. Intune Şirket Portalı uygulaması ve Web sitesini düzenli olarak ' ye ekleyip geliştirdik. Bir Intune Yöneticisi veya destek kişiyse, bu makalede şunlar için gereken bilgiler sağlanmaktadır:
@@ -120,7 +120,7 @@ Windows 10 için Şirket Portalı ' de uygulama gözatma ve seçim deneyimini ge
 ## <a name="week-of-november-12-2018"></a>12 Kasım 2018 haftası
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows Şirket Portalı klavye kısayolları <!-- 2771518 -->
-Son kullanıcılar artık [klavye kısayollarını (Hızlandırıcılar) kullanarak](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts)Windows Şirket portalı uygulama ve cihaz eylemlerini tetikleyebilecektir.
+Son kullanıcılar artık [klavye kısayollarını (Hızlandırıcılar) kullanarak](company-portal-app.md#windows-company-portal-keyboard-shortcuts)Windows Şirket portalı uygulama ve cihaz eylemlerini tetikleyebilecektir.
 
 ## <a name="week-of-october-22-2018"></a>22 Ekim 2018 haftası
 
@@ -572,4 +572,4 @@ Bunlar, kullanıcı arabirimimizi güncelleştirerek kullanıcı deneyimini geli
 ## <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform yol haritası](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune’daki yenilikler](https://docs.microsoft.com/intune/whats-new)
+* [Intune’daki yenilikler](whats-new.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 53a9c3e8b80f611bc9e293ba7e07c1aece0cfc58
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550193"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163032"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -201,6 +201,9 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 - **Kullanıcı kaldırma**: Kullanıcıların kullanıcıları kaldırmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmamış** CİHAZDAN diğer kullanıcıları kaldırma olanağı sağlar.
 - **Hesap değişiklikleri**: Kullanıcıların hesapları değiştirmesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmamış** kullanıcıların cihazda kullanıcı hesaplarını güncelleştirmek sağlar.
 
+  > [!NOTE]
+  > Bu ayar cihaz sahibi (tam yönetilen) cihazlarda kabul edilemez. Bu ayarı yapılandırırsanız, ayar yok sayılır ve herhangi bir etkisi yoktur.
+
 ### <a name="applications"></a>Uygulamalar
 
 - **Bilinmeyen kaynaklardan yüklemeye Izin ver**: Kullanıcıların **Bilinmeyen kaynakları**açıp kullanabilmesi Için **izin ver** ' i seçin. Bu ayar, uygulamaların Google Play Store dışındaki kaynaklar da dahil olmak üzere bilinmeyen kaynaklardan yüklenmesine izin verir. **Yapılandırılmamış** kullanıcıların açılmasını engeller **bilinmeyen kaynaklar**.
@@ -270,6 +273,10 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 - **Kişisel profilden iş kişilerini ara**: Kullanıcıların kişisel profildeki uygulamalarda iş kişilerini aramasını engellemek için **Engelle** ' yi seçin. **Gerekli değil** iş kişilerini Kişisel profildeki arama sağlar.
 
 - **Kamera**: İş profilindeki cihazdaki kameraya erişimi engellemek için **Engelle** ' yi seçin. Kişisel taraftaki kamera, bu ayardan etkilenmez. **Gerekli değil** iş profilinde kameraya erişim sağlar.
+
+- **İş profili uygulamalarından Pencere öğelerinin kullanılmasına Izin ver**: Etkinleştir ayarı, son kullanıcıların, uygulamalar tarafından kullanıma sunulan pencere öğelerini giriş ekranında **yerleştirmeye** olanak sağlar. **Yapılandırılmadı** (varsayılan) ayarı, bu özelliği devre dışı bırakır.
+
+  Örneğin, Outlook kullanıcılarınızın iş profillerine yüklendi. **Etkin**olarak ayarlandığında, kullanıcılar gündem pencere öğesini cihaz giriş ekranına yerleştirebilir.
 
 #### <a name="work-profile-password"></a>İş profili parolası
 

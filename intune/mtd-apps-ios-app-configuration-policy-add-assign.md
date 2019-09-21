@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 55132570683742bd3e8dcec1c20726b9eb2c4b16
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660961"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166828"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama  
 
@@ -35,8 +35,8 @@ Mobil tehdit savunma (MTD) uygulamalarını eklemek ve dağıtmak için Intune '
 Aşağıdaki adımların [Azure portalında](https://portal.azure.com/) tamamlanması gerekir. Şu işlemlerin nasıl yapıldığını bildiğinizden emin olun:
 
 - [Intune’a uygulama ekleme](apps-add.md).
-- [Intune’a iOS uygulama yapılandırma ilkesi ekleme](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-- [Intune ile uygulama atama](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Intune’a iOS uygulama yapılandırma ilkesi ekleme](app-configuration-policies-use-ios.md).
+- [Intune ile uygulama atama](apps-deploy.md).
 
 > [!TIP]
 > Intune Şirket Portalı, kullanıcıların kimliklerinin Azure AD tarafından denetlenmesi için Android cihazlarda aracı olarak kullanılır.
@@ -73,7 +73,7 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
     1. [Azure portalı](https://portal.azure.com)'na gidin, kimlik bilgilerinizle oturum açın, sonra uygulama sayfasına gidin.
 
-    2.           **Lookout for Work iOS uygulamasını** **yerel istemci uygulaması** olarak ekleyin.
+    2. **Lookout for Work iOS uygulamasını** **yerel istemci uygulaması** olarak ekleyin.
 
     3. IPA’yı imzaladığınızda seçtiğiniz müşteri paketi kimliğini **com.lookout.enterprise.yourcompanyname** ile değiştirin.
 
@@ -136,7 +136,7 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](store-apps-android.md). **Adım 7**' de bu [Wandera mobil uygulama mağazası URL 'sini](https://play.google.com/store/apps/details?id=com.wandera.android) kullanın. **En düşük işletim sistemi**için **Android 5,0**' i seçin.
 
 - **iOS**
-  - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](https://docs.microsoft.com/intune/store-apps-ios). **AppStore URL 'si**için **adım 11** ' de bu [wandera mobil uygulama mağazası URL 'sini](https://itunes.apple.com/app/wandera/id605469330) kullanın.
+  - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](store-apps-ios.md). **AppStore URL 'si**için **adım 11** ' de bu [wandera mobil uygulama mağazası URL 'sini](https://itunes.apple.com/app/wandera/id605469330) kullanın.
 
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD uygulamalarınızı bir iOS uygulama yapılandırma ilkesiyle yapılandırma  
 

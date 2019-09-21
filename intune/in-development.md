@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ab2e258553c049223806ddf199976c84ff6bcba
-ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
+ms.openlocfilehash: 4bd5392abba3ea22127cb9bcbbb53ec4929f2d5e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71140683"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166340"
 ---
 # <a name="in-development-for-microsoft-intune---september-2019"></a>Microsoft Intune için geliştirme sırasında-Eylül 2019
 
@@ -90,7 +90,7 @@ Uygulamalar, Kullanıcı kimlik bilgileri olmadan uygulama kimliği 'ni kullanar
 Android ve iOS cihazlarında Intune uygulama koruma ilkeleri (uygulama), kuruluş hesapları için uygulama bildirim içeriğini denetlemenize olanak tanır. Bu özellik, uygulamalardan destek isteyecek ve UYGULAMANıN etkin olduğu tüm uygulamalarda kullanılamayabilir. UYGULAMA hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md).
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Android iş profilleri için kullanılabilir Google Play uygulama raporlaması <!-- 3041956  -->
-Android iş profili cihazlarına kullanılabilir uygulama yüklemeleri için, uygulama yükleme durumunu ve yönetilen Google Play uygulamalarının yüklü sürümünü görüntüleyebilirsiniz. Daha fazla bilgi için bkz. [Uygulama koruma ilkelerini izleme](app-protection-policies-monitor.md), [Android Iş profili cihazlarını Intune ile yönetme](android-enterprise-overview.md) ve [uygulama türü ile yönetilen Google Play](apps-add-android-for-work.md#managed-google-play-app-type).
+Android iş profili cihazlarına kullanılabilir uygulama yüklemeleri için, uygulama yükleme durumunu ve yönetilen Google Play uygulamalarının yüklü sürümünü görüntüleyebilirsiniz. Daha fazla bilgi için bkz. [Uygulama koruma ilkelerini izleme](app-protection-policies-monitor.md), [Android Iş profili cihazlarını Intune ile yönetme](android-enterprise-overview.md) ve [uygulama türü ile yönetilen Google Play](apps-add-android-for-work.md#managed-google-play-app-types).
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Cihaz yapılandırması
@@ -132,7 +132,7 @@ Gelecekteki bir güncelleştirmede, denetleyebilmeniz için yeni ayarlar olacakt
 - **Ses denetimi**: Bilgi noktası modundayken cihazda ses denetimini mümkün değildir.
 - **Ses denetimi değişikliği**: Kullanıcıların, bilgi noktası modundayken cihazdaki ses denetimi ayarını değiştirmesine izin verin.
 
-Geçerli ayarları görmek için [IOS bilgi noktası (yalnızca denetimli) ayarları](device-restrictions-ios.md#kiosk-supervised-only)' na gidin.
+Geçerli ayarları görmek için [IOS bilgi noktası (yalnızca denetimli) ayarları](device-restrictions-ios.md#kiosk)' na gidin.
 
 Şunun için geçerlidir:
 
@@ -167,7 +167,7 @@ Intune 'da, denetimli iOS cihazlarınızda uygulamaları göstermek veya gizleme
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
 
-Bu ayarlar hakkında daha fazla bilgi için bkz. [uygulamaları gösterme veya gizleme (yalnızca denetimli)](device-restrictions-ios.md#show-or-hide-apps-supervised-only).
+Bu ayarlar hakkında daha fazla bilgi için bkz. [uygulamaları gösterme veya gizleme](device-restrictions-ios.md#show-or-hide-apps).
 
 Şunun için geçerlidir:
 
@@ -191,7 +191,7 @@ Android 'in Cihaz Yöneticisi özellikleri, Android Enterprise tarafından deği
 
 Mevcut kiracılar ortamlarında hiçbir değişikliğe karşılaşmayacak. 
 
-Intune 'da Android Cihaz Yöneticisi hakkında daha fazla bilgi için bkz. [Android Cihaz Yöneticisi kaydı](https://docs.microsoft.com/intune/android-enroll-device-administrator).
+Intune 'da Android Cihaz Yöneticisi hakkında daha fazla bilgi için bkz. [Android Cihaz Yöneticisi kaydı](android-enroll-device-administrator.md).
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>İOS cihazları için Şirket Portalı kayıt işlemi gizlilik ekranını özelleştirin <!-- 4394993  -->
 Marku kullanarak, son kullanıcıların iOS kaydı sırasında göreceği Şirket Portalı gizlilik ekranını özelleştirebileceksiniz. Özellikle, kuruluşunuzun cihazı göremeyecek veya cihaz üzerinde yapaamayacak işlerin listesini özelleştirebilirsiniz.

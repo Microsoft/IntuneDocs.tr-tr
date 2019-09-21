@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071635"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167427"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -105,7 +105,7 @@ Android için KME kullanarak Intune’a kaydedilmiş cihazlarda bir kullanıcın
 
 - **Kullanıcı adı ilişkilendirmesi olmadan:** Knox portalında **cihaz ayrıntıları**' nın altında, eklenen cihazlar IÇIN **Kullanıcı kimliği** ve **parola** alanlarını boş bırakın. Bu seçenek, son kullanıcının Intune 'a kaydolurken hem Kullanıcı adı hem de parola girmesini gerektirir.
 
-- **Kullanıcı adı ilişkilendirmesi ile:** Knox portalında **cihaz ayrıntıları**' nın altında, eklenen cihazlar Için BIR **Kullanıcı kimliği** (atanan kullanıcı veya [Cihaz Kayıt Yöneticisi](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) hesabı için Kullanıcı adı gibi) sağlayın. Bu seçenek Kullanıcı adını önceden doldurur ve Intune 'a kaydolurken son kullanıcının bir parola girmesini gerektirir.
+- **Kullanıcı adı ilişkilendirmesi ile:** Knox portalında **cihaz ayrıntıları**' nın altında, eklenen cihazlar Için BIR **Kullanıcı kimliği** (atanan kullanıcı veya [Cihaz Kayıt Yöneticisi](device-enrollment-manager-enroll.md) hesabı için Kullanıcı adı gibi) sağlayın. Bu seçenek Kullanıcı adını önceden doldurur ve Intune 'a kaydolurken son kullanıcının bir parola girmesini gerektirir.
 
 > [!NOTE]
 >

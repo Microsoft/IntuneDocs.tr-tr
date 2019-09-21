@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b333c848368f00f005ed0febc61f67f098ee7e5e
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: eb470885be8f09f0c99dfe26a1d982570644ac8a
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979196"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167609"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
@@ -427,7 +427,7 @@ KayıtSayısı varlığı, bir cihaz kaydının sonucunu gösterir.
 | ExtensionVersionKey | IntuneManagementExtension sürümünün benzersiz tanımlayıcısı. | 1\.       |
 | ExtensionVersion    | 4 basamaklı sürüm numarası.                                   | 1.0.2.0 |
 
-## <a name="mamapplications"></a>MamApplications
+## <a name="mamapplications"></a>mamApplications
 
 **MamApplication** varlığı, Mobil Uygulama Yönetimi (MAM) aracılığıyla yönetilen ancak kuruluşunuza kayıtlı olmayan iş kolu (LOB) uygulamalarını listeler.
 
@@ -442,7 +442,7 @@ KayıtSayısı varlığı, bir cihaz kaydının sonucunu gösterir.
 | RowLastModifiedDateTimeUTC |Bu MAM uygulamasının veri ambarında son değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 
 
-## <a name="mamapplicationinstances"></a>MamApplicationInstances
+## <a name="mamapplicationinstances"></a>mamApplicationInstances
 
 **MamApplicationInstance** varlığı, Mobil Uygulama Yönetimi (MAM) uygulamalarını kullanıcı ve cihaz başına tekil örnekler olarak listeler. Varlıkta listelenen tüm kullanıcılar ve cihazlar korunur. Örneğin, hepsine en az bir MAM İlkesi atanmıştır.
 
@@ -466,7 +466,7 @@ KayıtSayısı varlığı, bir cihaz kaydının sonucunu gösterir.
 |       DeletedDateUtc       |                                                                             IsDeleted değerinin True olarak değiştirildiği tarih ve UTC diliminde saat.                                                                              |        23.11.2016 12:00:00        |
 | RowLastModifiedDateTimeUtc |                                                           Bu MAM uygulaması örneğinin, veri ambarında son değiştirildiği tarih ve UTC diliminde saat.                                                            |        23.11.2016 12:00:00        |
 
-## <a name="mamcheckins"></a>MamCheckins
+## <a name="mamcheckins"></a>mamCheckins
 
 **MamCheckin** varlığı, bir Mobil Uygulama Yönetimi (MAM) uygulama örneği Intune Hizmetine iade etme işlemi yaparken toplanan verileri temsil eder. 
 
@@ -494,7 +494,7 @@ KayıtSayısı varlığı, bir cihaz kaydının sonucunu gösterir.
 | DeviceHealthName |Cihazın durumunu temsil eder. <br>Kullanılamıyor - bu cihaz hakkında bilgi yok. <br>İyi durumda - cihazın işletim sistemi kısıtlamaları kaldırılmamış. <br>İyi durumda değil - cihazın işletim sistemi kısıtlamaları kaldırılmış. |Kullanılamıyor, İyi durumda, İyi durumda değil |
 | RowLastModifiedDateTimeUtc |Bu MAM Cihaz Durumunun, veri ambarında son değiştirildiği tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 
-## <a name="mamplatforms"></a>MamPlatforms
+## <a name="mamplatforms"></a>mamPlatforms
 
 **MamPlatform** varlığı, Mobil Uygulama Yönetimi (MAM) uygulamasının yüklendiği platform adlarını ve türlerini listeler.
 
@@ -731,5 +731,4 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Intune Veri Ambarı hakkında daha fazla bilgi için bkz. [Veri Ambarı veri modeli](https://docs.microsoft.com/intune/reports-ref-data-model).
-
+Intune Veri Ambarı hakkında daha fazla bilgi için bkz. [Veri Ambarı veri modeli](reports-ref-data-model.md).

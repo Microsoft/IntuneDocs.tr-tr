@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 972f58da34c73253c85f4ca6183ad6fd4ce4c2e7
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882889"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167840"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune hizmet açıklaması
 
@@ -33,7 +33,7 @@ Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerin
 
 Intune, kimlik ve erişim denetimi için Azure Active Directory (Azure AD), veri koruma için ise Azure Information Protection ile yakın bir tümleştirmede çalışır. Ayrıca, yönetim özelliklerinizi genişletmek için System Center Configuration Manager ile de tümleştirebilirsiniz.
 
-Intune ile cihazları ve uygulamaları nasıl yöneteceğiniz ve kurumsal verileri nasıl koruyacağınız hakkında bilgi için bkz. [Intune belgeleri](https://docs.microsoft.com/intune/).
+Intune ile cihazları ve uygulamaları nasıl yöneteceğiniz ve kurumsal verileri nasıl koruyacağınız hakkında bilgi için bkz. [Intune belgeleri](index.yml).
 
 ## <a name="30-day-free-trial"></a>30 günlük ücretsiz deneme sürümü
 Intune'u 100 kullanıcı lisansı içeren 30 günlük ücretsiz bir denemeyle kullanmaya başlayabilirsiniz. Ücretsiz denemeyi başlatmak için [Intune Kayıt sayfasına gidin](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Kuruluşunuzda bir Kurumsal Anlaşma veya eşdeğer toplu lisans sözleşmesi varsa, ücretsiz deneme sürümünüzü ayarlamak için Microsoft temsilcinize başvurun.

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270288"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167240"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune kullanarak Microsoft Defender ATP tarafından tanımlanan güvenlik açıklarını düzeltin  
 
@@ -37,13 +37,15 @@ Microsoft Defender Güvenlik Merkezi konsolunda, ATP güvenlik yöneticileri uç
 Bir görev kabul edildiğinde, Intune Yöneticisi güvenlik görevinin bir parçası olarak sunulan kılavuzdan yararlanarak Intune ' da güvenlik açığını düzeltmeye çalışır.  
 
 Düzeltme için genel eylemler şunları içerir:  
+
 - Bir uygulamanın çalıştırılmasını **engelleyin**  
 - Güvenlik açığını azaltmak için bir işletim sistemi güncelleştirmesi **dağıtın** .  
 - Bir kayıt defteri değerini **değiştirin** .  
 - Güvenlik açığını etkilemek için yapılandırmayı **devre dışı bırakın** veya **etkinleştirin** .  
 - Sağlanması gereken uygun bir öneri olmadığında yöneticiye **dikkat edin** .  
 
-Örnek iş akışı:  
+Örnek iş akışı:
+
 - Microsoft Defender ATP içinde, contoso Media Player v4 adlı bir uygulamaya yönelik bir güvenlik açığı bulunur ve bir yönetici bu uygulamayı güncelleştirmek için bir güvenlik görevi oluşturur. Contoso medya oynatıcı, Intune ile dağıtılan yönetilmeyen bir uygulamadır.  
 
   Bu güvenlik görevi, Intune konsolunda bekliyor durumuyla görüntülenir:  
@@ -61,13 +63,16 @@ Düzeltme için genel eylemler şunları içerir:
 ## <a name="prerequisites"></a>Önkoşullar  
 
 **Abonelikler**:  
+
 - Microsoft Intune  
 - Microsoft Defender Gelişmiş tehdit koruması ([ücretsiz deneme Için kaydolun](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink).)  
 
 **ATP Için Intune yapılandırması**:  
+
 - Microsoft Defender ATP ile hizmet bağlantısı için bir hizmet yapılandırın.  
 - ATP tarafından değerlendirilme riskini alacak cihazlara **Microsoft Defender ATP (Windows 10 Masaüstü)** profil türüyle cihaz uyumluluk ilkesi dağıtın.
-  Intune 'u ATP ile çalışacak şekilde ayarlama hakkında daha fazla bilgi için bkz. [Intune 'Da koşullu erişim Ile Microsoft Defender ATP için uyumluluğu zorlama](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).  
+
+  Intune 'u ATP ile çalışacak şekilde ayarlama hakkında daha fazla bilgi için bkz. [Intune 'Da koşullu erişim Ile Microsoft Defender ATP için uyumluluğu zorlama](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Güvenlik görevleriyle çalışma  
 
@@ -89,6 +94,6 @@ Düzeltme için genel eylemler şunları içerir:
 Düzeltme başarılı olduktan sonra, düzeltilen cihazlardan gelen yeni bilgilere bağlı olarak ATP 'deki risk etkilenme puanı düşürülemiyor. 
 
 ## <a name="next-steps"></a>Sonraki Adımlar
-Intune ve [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection) hakkında daha fazla bilgi edinin  
-Intune [Mobile Threat](https://docs.microsoft.com/intune/mobile-threat-defense) Defense 'i gözden geçirme  
+Intune ve [Microsoft Defender ATP](advanced-threat-protection.md) hakkında daha fazla bilgi edinin  
+Intune [Mobile Threat](mobile-threat-defense.md) Defense 'i gözden geçirme  
 Microsoft Defender ATP 'de [tehdit & güvenlik açığı yönetimi panosunu](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) gözden geçirin

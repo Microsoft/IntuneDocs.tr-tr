@@ -1,6 +1,6 @@
 ---
-title: Intune Şirket portalı uygulamasında cihaz sıfırlama | Microsoft Docs
-description: Cihazınız Windows 10 için Şirket portalı fabrika ayarlarına sıfırlayabilirsiniz.
+title: Cihazı Intune Şirket Portalı uygulamadan Sıfırla | Microsoft Docs
+description: Cihazınızı Windows 10 için Şirket Portalı fabrika ayarlarına sıfırlayın.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,34 +18,35 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882248261f4386a8191067a0e8533c4c24fc2a5b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504426"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163352"
 ---
-# <a name="reset-device-from-the-company-portal-app"></a>Şirket portalı uygulamasından cihazı Sıfırla  
+# <a name="reset-device-from-the-company-portal-app"></a>Şirket Portalı uygulamadan cihazı sıfırlama  
 
-Kullanılan, kayıp veya çalınan bir cihazın Şirket portalı uygulamasından fabrika ayarlarına sıfırlayın.  
+Kullanılan, kaybolan veya çalınan bir cihazı Şirket Portalı uygulamasındaki fabrika ayarlarına sıfırlayın.  
 
-Bir cihaz sıfırlandıktan sonra artık şirket portalında görünmez. Kendi mevcut uygulamalar ve dosyalar silinir ve kullanıma hazır ayarlarına geri yüklenir.  
+Bir cihazı sıfırladıktan sonra, Şirket Portalı artık görünmez. Mevcut uygulamaları ve dosyaları silinecek ve kendi hazır ayarlarına geri yüklenecek.  
 
-1. Açık Şirket portalı.  
-2. Altında **Cihazlarım**, sıfırlamak istediğiniz cihazı seçin.   
 
-    ![Örnek ekran Şirket portalı uygulamasının Cihazlarım bölümünde vurgulama, giriş ekranı.](./media/1802-cp-app-windows-home.png)  
+1. Şirket Portalı açın.  
+2. **Cihazlarım**altında, sıfırlamak istediğiniz cihazı seçin.   
 
-3. Üzerinde **cihaz ayrıntıları** ekranındayken **daha fazla bilgi bkz** menüsü.  
+    ![Şirket Portalı uygulamasının, ana ekranın, cihazlarımı vurgulayan örnek ekran görüntüsü.](./media/1802-cp-app-windows-home.png)  
 
-    ![Cihazı Şirket portalı uygulamasının örnek ekran görüntüsüne bakın vurgulama ekran, diğer menüsü ayrıntılı olarak açıklanmaktadır.](./media/1802-cp-app-windows-device-details.png)  
+3. **Cihaz ayrıntıları** ekranında, **daha fazla göster** menüsünü seçin.  
+
+    ![Şirket Portalı uygulamasının, cihaz ayrıntıları ekranının örnek ekran görüntüsü, vurgulamanın daha fazla menü bölümüne bakın.](./media/1802-cp-app-windows-device-details.png)  
 
 4. **Sıfırla**’yı seçin.  
 
-     ![Cihaz ayrıntıları ekranına sıfırlama eylemi vurgulama, Şirket portalı uygulamasının örnek ekran görüntüsü. ](./media/1802-cp-app-windows-device-details-reset.png)  
+     ![Şirket Portalı uygulamasının, cihaz ayrıntıları ekranının örnek ekran görüntüsü, sıfırlama eylemini vurgulama. ](./media/1802-cp-app-windows-device-details-reset.png)  
 
-5. Onaylamak için sorulduğunda **sıfırlama**. Cihazın kendisi sıfırlar.  
+5. Onaylamanız istendiğinde **Sıfırla**' yı seçin. Cihaz kendisini sıfırlayacaktır.  
 
-     ![Örnek ekran Şirket portalı uygulamasının Reset, Sıfırla düğmesi vurgulama onay iletisi. ](./media/1802-cp-app-windows-reset-confirm.png)  
+     ![Şirket Portalı uygulamasının örnek ekran görüntüsü, onay iletisini sıfırlama, sıfırlama düğmesini vurgulama. ](./media/1802-cp-app-windows-reset-confirm.png)  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

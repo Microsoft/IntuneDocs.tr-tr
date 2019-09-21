@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,21 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546797"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163355"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihaz geçiş kodunuzu sıfırlama
 
-Cihaz PIN’ini veya parolasını kaybederseniz, sıfırlamak için [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) kullanabilirsiniz.  
+Cihaz PIN’ini veya parolasını kaybederseniz, sıfırlamak için [Şirket Portalı web sitesini](https://portal.manage.microsoft.com) kullanabilirsiniz. 
 
-Şirkete kayıtlı bir cihaz kullanıyorsanız cihaz geçiş kodunuzu sıfırlama seçeneğini göremeyebilirsiniz. Sizin için geçiş kodunu sıfırlaması adına şirketinizin destek birimiyle görüşün.
+Geçiş kodunu Sıfırla seçeneği, şirkete kayıtlı bir cihaz için görünmeyebilir. Bu durumda, sizin için sıfırlamasını sağlamak için şirketinizin destek birimine başvurun.  
 
-   > [!NOTE]
-   > Android 7.0 ve üzerini çalıştıran cihazlarda geçiş kodunu sıfırlayamazsınız. Parolanızı unutursanız cihazı fabrika ayarlarına sıfırlamanız gerekir. 
+Android 7,0 ve üstünü çalıştıran cihazlarda geçiş kodu sıfırlaması kullanılamaz. Bu cihazlardan birinde geçiş kodunuzu unutursanız, fabrika ayarlarına sıfırlamanız gerekir.  
 
 ## <a name="reset-your-passcode"></a>Geçiş kodunuzu sıfırlama
 
@@ -40,15 +39,15 @@ Cihaz PIN’ini veya parolasını kaybederseniz, sıfırlamak için [Şirket Por
 
 2. Geçiş kodu sıfırlaması yapılacak cihazı seçin.  
 
-    ![Tanımlanmamış, genel olarak adlandırılmış cihazları gösteren 2 kutucuğun bulunduğu Cihazlar sayfasının ekran görüntüsü. Cihazların hemen altında gri bir başlık yer alır ve kullanıcılardan kullandıkları cihazı tanımlamalarını veya yeni bir tane eklemelerini ister.](./media/rename-reset-device-step2-1808.png) 
+    ![, Tanımlanmamış, genel olarak adlandırılmış cihazları gösteren iki kutucuk içeren cihazlar sayfasının ekran görüntüsü. Gri bir başlık doğrudan cihazların altında bulunur ve kullanıcının kullanmakta oldukları aygıtı belirlemesini veya yeni bir tane eklemesini ister.](./media/rename-reset-device-step2-1808.png) 
 
 3. **Geçiş Kodunu Sıfırla**’ya dokunun. Geçiş kodu seçeneği sayfanın üst kısmında görünmüyorsa **Diğer (...)**  > **Geçiş Kodunu Sıfırla**’yı seçin.   
 
    ![Şirket Portalı web sitesinde seçilen bir cihaza yönelik cihaz ayrıntıları sayfası; üst kısmında Yeniden Adlandır, Kaldır, Cihazı Sıfırla, Geçiş Kodunu Sıfırla ve Uzaktan Kilitle bağlantıları ile. ](./media/rename-reset-device-1808.png)   
 
-    ![Diğer simgesinin yakınlaştırılmış ve kırmızı okla vurgulanmış görünümü.](./media/rename-reset-device-step3-more-1808.png)  
+    ![Daha fazla simgenin kırmızı oklu vurgulanmış ekran görüntüsü.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. İstendiğinde, **Oturumu kapat**’a tıklayın. Yeniden istendiğinde, tekrar oturum açın. Beş dakika içerisinde Şirket Portalı web sitesinde yeniden oturum açmanız gerekir, aksi takdirde Şirket Portalı cihaz geçiş kodunu sıfırlamaz.  
+4. İstendiğinde, **Oturumu kapat**’a tıklayın. Yeniden istendiğinde, tekrar oturum açın. Beş dakika içinde Şirket Portalı Web sitesinde yeniden oturum açın veya Şirket Portalı cihaz geçiş kodunu sıfırlayamaz.  
 
    > [!NOTE]
    > Kimliğinizi doğrulamak için yeniden oturum açmanız gerekir. Bu, kötü amaçlı cihaz geçiş kodu sıfırlama girişimlerine karşı bir önlemdir.
@@ -61,7 +60,7 @@ Cihaz PIN’ini veya parolasını kaybederseniz, sıfırlamak için [Şirket Por
 
    ![İkinci geçiş kodu sıfırlama iletisini gösteren örnek ekran görüntüsü. Yeni bir geçiş kodu ayarlamak ve geçiş kodunu sıfırlamak/sıfırlamayı iptal etmek için kullanılan düğmeler hakkındaki belgelerden daha fazla bilgi edinmek için bir bağlantı içerir.](./media/iwp-reset-passcode-popup2-1808.png) 
 
-6. Bir iOS cihazda geçiş kodu sıfırlıyorsanız, cihazdaki geçerli geçiş kodu kaldırılır. Windows veya Android cihazlarda ise cihazın kilidini açıp yeni bir geçiş kodu ayarlamanız için size geçici bir geçiş kodu verilir. 
+6. Bir iOS cihazda geçiş kodu sıfırlıyorsanız, cihazdaki geçerli geçiş kodu kaldırılır. Windows veya Android cihazlarında, cihazın kilidini açmak ve yeni bir geçiş kodu ayarlamak için geçici bir geçiş kodu verilir. 
 
    > [!NOTE]
    > Windows ve Android cihazlar için geçici parolayı Şirket Portalı’nda, cihazın ayrıntılar sayfasında bulabilirsiniz. İşletim sistemine özgü geçiş kodu hakkında daha fazla açıklama için [Yeni bir geçiş kodu ayarlama](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode) bölümüne bakın.  
@@ -74,12 +73,12 @@ Cihaz PIN’ini veya parolasını kaybederseniz, sıfırlamak için [Şirket Por
 
 Bu bölüm, geçiş kodunu sıfırlamayı ve tüm cihaz platformlarındaki parola davranışını açıklar.  
 
-**Android**: Mevcut geçiş kodu kaldırılır ve harf ve sayılardan oluşan geçici bir geçiş kodu oluşturur.
+**Android**: Mevcut geçiş kodunu kaldırır ve harflerden ve numaralardan oluşan geçici bir geçiş kodu oluşturur.
 
-**iOS**: Geçiş kodu kaldırılır ve geçici bir geçiş kodu oluşturulmaz. Cihazınızı açmak veya satın alma işlemleri yapmak için Touch ID parmak izi tarayıcısını kullanıyorsanız, bunu yeniden ayarlamanız gerekir.  
+**iOS**: Mevcut geçiş kodunu kaldırır ve geçici bir geçiş kodu oluşturmaz. Cihazınızı açmak veya satın alma işlemleri yapmak için Touch ID kullanırsanız, tekrar ayarlamanız gerekir.  
 
-**Windows 10 Mobile**: Mevcut geçiş kodu kaldırılır ve harf ve sayılardan oluşan geçici bir geçiş kodu oluşturur. Bu ayarlanırsa, Windows Hello yüz tanıma cihazda çalışmaya devam eder.
+**Windows 10 Mobile**: Mevcut geçiş kodunu kaldırır ve harflerden ve numaralardan oluşan geçici bir geçiş kodu oluşturur. Bu ayarlanırsa, Windows Hello yüz tanıma cihazda çalışmaya devam eder.
 
-**Windows Phone 8.1**: Mevcut geçiş kodunu kaldırır ve sayıda oluşan geçici bir geçiş kodu oluşturur.  
+**Windows Phone 8,1**: Mevcut geçiş kodunu kaldırır ve sayıdan oluşan geçici bir geçiş kodu oluşturur.  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

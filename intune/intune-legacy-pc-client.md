@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756523"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166359"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune Azure konsolu ve eski Intune PC istemcisi
 
@@ -31,7 +31,7 @@ Kuruluşunuzun Windows aygıtlarını yönetmek için Azure'de Intune kullanırk
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>MDM kullanarak Windows 10 cihazları yönetme
 
-Eski Intune PC istemcisini kullanmak yerine Windows 10 cihazlarınızı yönetmek için [Mobil Cihaz Yönetimi'ni (MDM)](https://docs.microsoft.com/intune/device-restrictions-windows-10) kullanmanızı öneririz. MDM aracılığıyla Windows 10'u yönetme olanağı Intune on Azure portalında bulunur. Windows 10 MDM, eski Intune PC istemcisi aracılığıyla bulunmayan pek çok yeni yönetim ve güvenlik özelliği sunar.
+Eski Intune PC istemcisini kullanmak yerine Windows 10 cihazlarınızı yönetmek için [Mobil Cihaz Yönetimi'ni (MDM)](device-restrictions-windows-10.md) kullanmanızı öneririz. MDM aracılığıyla Windows 10'u yönetme olanağı Intune on Azure portalında bulunur. Windows 10 MDM, eski Intune PC istemcisi aracılığıyla bulunmayan pek çok yeni yönetim ve güvenlik özelliği sunar.
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Eski PC İstemcisi özellikleri yalnızca Silverlight konsolunda bulunur
 
@@ -54,7 +54,7 @@ MDM kullanarak yönetilemeyen Windows 7 için yalnızca var olan Silverlight kon
 
 ## <a name="mdm-capabilities"></a>MDM Özellikleri
 
-PC İstemcisi ve MDM özellikleri arasında ayrıntılı bir karşılaştırma için bkz. [Windows PC'leri bilgisayarlar veya mobil cihazlar olarak yönetmeyi karşılaştırma](pc-management-comparison.md). MDM güncellemeleri, Win 32 uygulamaları için seçenekler de dahil olmak üzere MDM'ye kaydolan Windows 10 cihazlarına yeni yönetim özellikleri getirmeye devam edecektir. Hizmete en son sürüm eklemeleri için [Yenilikler](https://docs.microsoft.com/intune/whats-new)'i görüntüleyin.
+PC İstemcisi ve MDM özellikleri arasında ayrıntılı bir karşılaştırma için bkz. [Windows PC'leri bilgisayarlar veya mobil cihazlar olarak yönetmeyi karşılaştırma](pc-management-comparison.md). MDM güncellemeleri, Win 32 uygulamaları için seçenekler de dahil olmak üzere MDM'ye kaydolan Windows 10 cihazlarına yeni yönetim özellikleri getirmeye devam edecektir. Hizmete en son sürüm eklemeleri için [Yenilikler](whats-new.md)'i görüntüleyin.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>PC istemciden MDM’ye geçiş yapmak için
 
@@ -62,9 +62,7 @@ Intune PC İstemcisi ile Windows 10 cihazlarını yönetmekten MDM ile yönetime
 
 1. Silverlight konsolunda, cihazın kaydını PC İstemcisi'nden kaldırmak için bir **Seçmeli silme** gerçekleştirin.
   ![' Cihazı seçmeli olarak sil ' radyo düğmesi seçili olan uyarı açılan penceresi](media/intune-legacy-pc-client/image02.png)
-2. [MDM (ve/veya Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll)'i kullanarak cihazı yeniden kaydedin. 
+2. [MDM (ve/veya Azure AD Join)](windows-enroll.md)'i kullanarak cihazı yeniden kaydedin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Windows cihazlarını kaydetme](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[Windows cihazlarını kaydetme](windows-enroll.md)

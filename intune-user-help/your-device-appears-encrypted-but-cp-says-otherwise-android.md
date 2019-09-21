@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d63ecdb23b107d844c37d7a805247092116618e1
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022746"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167434"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Cihaz şifrelendi, ancak uygulamalar bu şekilde söyleniyor
 
@@ -48,16 +48,17 @@ Bu bölüm yalnızca Şirket Portalı uygulaması için geçerlidir. Cihazınız
 
 ## <a name="specific-manufacturer-issues"></a>Belirli üretici sorunları
 
-Sürüm 7,0 ve üzeri sürümlerde bazı Android cihazlar, belirli Android Platform standartları ile tutarsız yollarla verileri şifreler. Bu şifreleme yöntemleri cihaz bilgilerini riske koyar. Sonuç olarak, bu cihazlar desteklenmez. 
+Sürüm 7,0 ve üzeri sürümlerde bazı Android cihazlar, belirli Android Platform standartları ile tutarsız yollarla verileri şifreler. Bu şifreleme yöntemleri cihaz bilgilerini riske koyar. Sonuç olarak, bu cihazlar desteklenmez.
 
-Desteklenen Android cihazlarının ayrıntılı olmayan bir listesi için bkz. [Intune 'Da desteklenen işletim sistemleri ve tarayıcılar](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)makalesi. Cihazınız listede yoksa, cihaz üreticisine başvurun veya destek sorumlunuza başvurun. 
+Desteklenen Android cihazlarının ayrıntılı olmayan bir listesi için bkz. [Intune 'Da desteklenen işletim sistemleri ve tarayıcılar](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices)makalesi. Cihazınız listede yoksa, cihaz üreticisine başvurun veya destek sorumlunuza başvurun.
 
 > [!Note]
-> Microsoft, test ederken veya kullanıcıların bize rapor verdiği sorunları ele almak için üreticilerle birlikte çalışmaktadır. Yeni bilgiler mevcut oldukça bu makaleyi güncelleştireceğiz. 
+> Microsoft, test ederken veya kullanıcıların bize rapor verdiği sorunları ele almak için üreticilerle birlikte çalışmaktadır. Yeni bilgiler mevcut oldukça bu makaleyi güncelleştireceğiz.
 
-## <a name="update-devices"></a>Cihazları güncelleştirme   
+## <a name="update-devices"></a>Cihazları güncelleştirme
 
 Cihazınızı en son Android sürümüne güncelleştirmediyseniz, cihazınızın **Ayarlar** uygulamasına gidin ve **Güncelleştir**' i seçin.  
 
-## <a name="next-steps"></a>Sonraki adımlar   
+## <a name="next-steps"></a>Sonraki adımlar
+
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.  

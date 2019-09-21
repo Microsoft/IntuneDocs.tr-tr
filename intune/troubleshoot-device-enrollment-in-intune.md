@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 23b3e8df9b3d5bafb567b6795b08d4be32aa8c88
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375228"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167807"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydı sorunlarını giderme
 
@@ -447,7 +447,7 @@ iOS kayıt hatalarının listesi, [Microsoft Intune’da iOS cihaz kayıt sorunl
 
 |Hata iletisi|Sorun|Çözüm|
 |---|---|---|
-|**Erişim için BT yöneticisinin lisans ataması gerekiyor**<br>BT yöneticiniz bu uygulamayı kullanmanız için size erişim vermemiş. BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Cihaz kaydedilemiyor çünkü bu kullanıcının hesabında gerekli lisans yok.|Cihazlar kaydedilmeden önce kullanıcılara gerekli lisans atanmış olmalıdır. Bu ileti kullanıcının mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin aşağıdakilerin her ikisi de doğruysa kullanıcı bu hatayı görür: <ol><li>Intune mobil cihaz yönetim yetkilisi olarak ayarlanmıştır</li><li>Kullanıcı System Center 2012 R2 Configuration Manager lisansı kullanmaktadır.</li></ol>[Kullanıcı hesaplarınıza Intune lisansları atama](https://docs.microsoft.com/intune/licenses-assign) hakkında bilgi alın.|
+|**Erişim için BT yöneticisinin lisans ataması gerekiyor**<br>BT yöneticiniz bu uygulamayı kullanmanız için size erişim vermemiş. BT yöneticinizden yardım isteyin veya daha sonra tekrar deneyin.|Cihaz kaydedilemiyor çünkü bu kullanıcının hesabında gerekli lisans yok.|Cihazlar kaydedilmeden önce kullanıcılara gerekli lisans atanmış olmalıdır. Bu ileti kullanıcının mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin aşağıdakilerin her ikisi de doğruysa kullanıcı bu hatayı görür: <ol><li>Intune mobil cihaz yönetim yetkilisi olarak ayarlanmıştır</li><li>Kullanıcı System Center 2012 R2 Configuration Manager lisansı kullanmaktadır.</li></ol>[Kullanıcı hesaplarınıza Intune lisansları atama](licenses-assign.md) hakkında bilgi alın.|
 
 
 

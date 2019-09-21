@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: 8248991e1facc78def580d75a5b7e7e6ba353c98
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482781"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163680"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune’da Endpoint Protection ayarları ekleme  
 
@@ -54,7 +54,6 @@ Bir profil oluşturmadan önce, Intune 'un desteklenen her platform için yönet
    Profil oluşturulur ve profil listesi sayfasında görüntülenir. Bu profili gruplara atamak için bkz. [cihaz profillerini atama](device-profile-assign.md).  
 
 ## <a name="add-custom-firewall-rules-for-windows-10-devices"></a>Windows 10 cihazları için özel güvenlik duvarı kuralları ekleme  
-***Özel güvenlik duvarı kuralları genel önizlemede.***  
 
 Windows 10 için Endpoint Protection kurallarını içeren bir profilin parçası olarak Windows Defender güvenlik duvarı 'nı yapılandırdığınızda güvenlik duvarları için özel kurallar yapılandırabilirsiniz. Özel kurallar, Windows 10 için desteklenen önceden tanımlanmış güvenlik duvarı kuralları kümesini genişletmenizi sağlar.  
 

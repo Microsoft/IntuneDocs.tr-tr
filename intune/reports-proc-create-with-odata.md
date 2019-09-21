@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894309"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167867"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Power BI ile OData akışından bir Intune raporu oluşturma
 
@@ -122,4 +122,4 @@ Artık şirkete ait ve kişisel cihazlar arasında geçiş yapmak üzere kullan�
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - Power BI Desktop’ta [ilişki oluşturma ve yönetme](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) hakkında Power BI belgelerinden daha fazla bilgi edinin.
-- [Intune Veri Ambarı](https://docs.microsoft.com/intune/reports-ref-data-model)’na başvurun.
+- [Intune Veri Ambarı](reports-ref-data-model.md)’na başvurun.

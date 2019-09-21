@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5688039101e7cecf5631a0ad8dee4f343e183d96
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 325a0efeff56a2bc930fa0082023202f9c2e7696
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022852"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166779"
 ---
 # <a name="plan-communications"></a>İletişimi planlama
 
@@ -59,6 +59,6 @@ Kullanıcılarınızın cihazlarını Intune 'A kolayca kaydetmelerini sağlamak
 
 Intune, kullanıcılarınız ile cihaz kaydını yükseltmek için kullanabileceğiniz ek kaynaklara sahiptir:
 
-- [Son kullanıcılarınızı Microsoft Intune hakkında eğitme](https://docs.microsoft.com/intune/end-user-educate) başlığında, mobil işletim sistemi platformuna göre kayıt adımları ayrıntılı olarak açıklanmıştır.
-- [BT yöneticileri Için Intune cihaz kaydı](https://docs.microsoft.com/intune/device-enrollment) , Intune 'da Android, IOS ve Mac cihazlarının nasıl kaydedileceğini açıklar.
+- [Son kullanıcılarınızı Microsoft Intune hakkında eğitme](end-user-educate.md) başlığında, mobil işletim sistemi platformuna göre kayıt adımları ayrıntılı olarak açıklanmıştır.
+- [BT yöneticileri Için Intune cihaz kaydı](device-enrollment.md) , Intune 'da Android, IOS ve Mac cihazlarının nasıl kaydedileceğini açıklar.
 - [Şirket Portalı Uygulama URL](http://go.microsoft.com/fwlink/?LinkID=396941) 'sini Android, IOS ve Windows kullanıcılarınızla paylaşabilirsiniz. Bu URL, Android, iOS ve Windows cihazlarında uygun Şirket Portalı Uygulama listesine yeniden yönlendirir.

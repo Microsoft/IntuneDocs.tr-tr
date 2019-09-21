@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
-ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
+ms.openlocfilehash: 22bee478160347256e7e2fa1422b74ccbead57b9
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69651206"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167058"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
@@ -60,7 +60,7 @@ Bu raporda gezindikçe her bir ayar için uyumluluk durumu da dahil olmak üzere
 Grafik, Intune’a kayıtlı tüm cihazlar için uyumluluk durumunu gösterir. Cihaz uyumluluk durumları iki farklı veritabanında tutulur: Intune ve Azure Active Directory. 
 
 > [!IMPORTANT]
-> Intune, cihazdaki tüm uyumluluk değerlendirmeleri için cihaz iade zamanlamasını kullanır. [Cihaz iade zamanlaması hakkında daha fazla bilgi edinin](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
+> Intune, cihazdaki tüm uyumluluk değerlendirmeleri için cihaz iade zamanlamasını kullanır. [Cihaz iade zamanlaması hakkında daha fazla bilgi edinin](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 Farklı cihaz uyumluluk ilkesi durumlarının açıklamaları:
 
@@ -154,7 +154,7 @@ Belirli bir ayar seçtiğinizde bu ayarın hedeflediği tüm cihazların **uyuml
 > [!NOTE]
 > Bir ilke bir cihaza ve aynı cihazdaki bir kullanıcıya atanabilir. Bazı senaryolarda, cihaz yeniden başlatıldığında olduğu gibi, Kullanıcı oturum açmadan önce bir cihaz eşitlenebilir. Uyumluluk bu kullanıcıyı değerlendirebilir ve cihazı uyumlu değil olarak gösterebilir. Bu davranış, sistem hesabını uyumlu olmayan bir kullanıcı olarak da gösterebilir.
 >
-> Bu, çok kullanıcılı Windows 10 cihazlarındaki bilinen bir sorundur. Bu davranıştaki herhangi bir değişiklik veya güncelleştirme, [geliştirme](in-development.md) ve/veya yenilikler ' [](whats-new.md)de içinde duyurulur.
+> Bu, çok kullanıcılı Windows 10 cihazlarındaki bilinen bir sorundur. Bu davranıştaki herhangi bir değişiklik veya güncelleştirme, [geliştirme](in-development.md) ve [/veya yenilikler](whats-new.md)' de içinde duyurulur.
 
 ## <a name="view-status-of-device-policies"></a>Cihaz ilkelerinin durumunu görüntüleme
 

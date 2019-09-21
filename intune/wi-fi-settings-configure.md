@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 80e70db4b64770af1a96ee7f24a3cf875269adce
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69545923"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163504"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune’da cihazlarınız için Wi-Fi ayarları ekleme ve kullanma
 
@@ -57,7 +57,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
       - **Android**
       - **Android Kurumsal**
-      - **iOS**
+      - **iOS/ıpados**
       - **macOS**
       - **Windows 8.1 ve üzeri**
       - **Windows 10 ve üzeri**
@@ -73,7 +73,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
     - [Android](wi-fi-settings-android.md)
     - Adanmış cihazlar dahil [Android Enterprise](wi-fi-settings-android-enterprise.md)
-    - [iOS](wi-fi-settings-ios.md)
+    - [iOS/ıpados](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 ve üzeri](wi-fi-settings-windows.md)
     - [Windows 8.1 ve sonrası](wi-fi-settings-import-windows-8-1.md), Windows Holographic for Business dahil

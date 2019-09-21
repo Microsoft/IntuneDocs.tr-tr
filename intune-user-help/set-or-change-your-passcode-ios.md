@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,20 +16,21 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503940"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163290"
 ---
 # <a name="set-or-change-your-passcode"></a>Geçiş kodunuzu ayarlama veya değiştirme
 
-iOS cihazınız şirketinizin destek biriminin geçiş kodu ilkesiyle uyumlu değilse, sorunu kısaca açıklayan ve geçiş kodunuzun gereksinimlere uymasını sağlamak için yapmanız gerekenleri anlatan bir ileti görüntülenir.
+Yeni bir geçiş kodu oluşturun veya mevcut olanı kuruluşunuzun gereksinimlerini karşılayacak şekilde değiştirin. Geçiş kodu, yetkisiz kişilerin cihazınızı kilidini kapatıp kullanmasını engeller. 
 
-Şirketinizin destek birimi, birden çok geçiş kodu gereksinimi ayarlayabilir. Örneğin, geçiş kodunun belirli sayıda karakter içermesi ve rakam, harf ve karakterlerin bir karışımından oluşması gerekebilir. Birden çok gereksinim ayarlanabildiğinden, bu yönergelerde yalnızca geçiş kodunuzu nasıl ayarlayacağınız veya değiştireceğiniz açıklanır. Mümkün olan tüm gereksinim bileşimleri açıklanmaz. Bu geçiş kodları, örneğin kilit ekranından cihazınıza erişmek için kullanılır.
+Kuruluşunuz birden çok geçiş kodu gereksinimi ayarlayabilir. Ortak parola gereksinimlerinin bir listesi için bkz. [Kayıtlı cihazlar Için cihaz parolası gereksinimleri](password-does-not-meet-it-administrator-requirements.md).  
 
-Geçiş kodu gereksinimlerine uyan bir geçiş kodu ayarlama konusunda sorun yaşıyorsanız, yardım için şirketinizin destek birimine başvurun.
+Geçiş kodunuzu oluştururken veya değiştirirken sorun yaşıyorsanız BT destek sorumlunuza başvurun.  
+
 
 ## <a name="set-your-passcode"></a>Geçiş kodunuzu ayarlama
 
