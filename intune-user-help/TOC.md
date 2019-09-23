@@ -60,7 +60,7 @@
 ##### [Zimperium zIPS’i Kullanma](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [iOS cihazınızı kullanma](using-your-iOS-device-with-intune.md)
-### [Bir iOS cihazı kaydettiğinizde ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [iOS cihaz sıfırlamasının etkileri](effects-of-device-reset-company-portal-ios.md)
 ### [Şirket Portalı'nı yükleme ve uygulamada oturum açma](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
 ### [Kuruluş tarafından sağlanan iOS cihazınızı kaydetme](enroll-your-device-dep-ios.md)

@@ -321,30 +321,33 @@
           href: device-profiles.md
         - name: Profil oluşturma
           href: device-profile-create.md
-        - name: Yönetim şablonları
+        - name: Windows’ta yönetim şablonları
           href: administrative-templates-windows.md
-        - name: Cihaz özellikleri
+          displayName: 'group policy, gpo, admx'
+        - name: iOS ve macOS üzerinde cihaz özellikleri
           href: device-features-configure.md
         - name: Cihaz ayarlarını ve özelliklerini kısıtlama
           href: device-restrictions-configure.md
           displayName: Device restrictions
-        - name: Güncelleştirme sağlama
+        - name: Güncelleştirmeler
           href: delivery-optimization-windows.md
-          displayName: delivery optimization; updates
+          displayName: delivery optimization; Windows update
         - name: Yükseltme sürümleri ve S modu
           href: edition-upgrade-configure-windows-10.md
-        - name: E-posta yapılandırma
+        - name: E-posta
           href: email-settings-configure.md
-        - name: Bilgi noktası modunu etkinleştirme
+        - name: Bilgi noktaları ve ayrılmış cihazlar
           href: kiosk-settings.md
-        - name: VPN ekleme
+        - name: Paylaşılan çok kullanıcılı cihazlar
+          href: shared-user-device-settings.md
+        - name: VPN
           href: vpn-settings-configure.md
           items:
             - name: Android için uygulama başına VPN
               href: android-pulse-secure-per-app-vpn.md
             - name: iOS için Uygulama Başına VPN
               href: vpn-setting-configure-per-app.md
-        - name: Kablosuz Wi-Fi ağı ekleme
+        - name: Wi-Fi ağı
           href: wi-fi-settings-configure.md
           displayName: wifi
           items:
@@ -354,8 +357,6 @@
           href: kernel-extensions-overview-macos.md
         - name: Eğitim Sınav Zamanı uygulaması
           href: education-settings-configure.md
-        - name: Paylaşılan çok kullanıcılı cihazlar
-          href: shared-user-device-settings.md
         - name: Zebra cihazlarda Mobility Uzantıları
           href: android-zebra-mx-overview.md
           displayName: mx
@@ -594,6 +595,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB uygulamaları
                   href: lob-apps-macos.md
+            - name: Android Kurumsal sistem uygulamaları
+              href: apps-ae-system.md
             - name: Win32 uygulama yönetimi
               href: apps-win32-app-management.md
             - name: PowerShell komut dosyaları
@@ -623,12 +626,24 @@
               href: app-configuration-policies-use-ios.md
             - name: Android yönetilen cihazlar
               href: app-configuration-policies-use-android.md
-            - name: Yönetilen Giriş Ekranı’nı yapılandırma
-              href: app-configuration-managed-home-screen-app.md
-            - name: Yönetilen uygulamalar
+            - name: Yönetilen uygulamaları kaydolmadan yapılandırma
               href: app-configuration-policies-managed-app.md
             - name: iOS uygulama sağlama profillerini kullanma
               href: app-provisioning-profile-ios.md
+            - name: Belirli uygulamaları yapılandırma
+              items:
+                - name: Yönetilen Giriş Ekranı’nı yapılandırma
+                  href: app-configuration-managed-home-screen-app.md
+                - name: Şirket Portalı’nı yapılandırma
+                  href: company-portal-app.md
+                - name: Managed Browser’ı yapılandırma
+                  href: app-configuration-managed-browser.md
+                - name: Microsoft Launcher’ı yapılandırma
+                  href: configure-microsoft-launcher.md
+                - name: Microsoft Edge’i yapılandırma
+                  href: manage-microsoft-edge.md
+                - name: Outlook’u yapılandırma
+                  href: app-configuration-policies-outlook.md
             - name: Toplu satın alınan uygulamalar ve kitaplar
               items:
                 - name: VPP uygulamalarını ve defterlerini yönetme
@@ -640,14 +655,6 @@
                   href: windows-store-for-business.md
                 - name: iOS e-Kitapları
                   href: vpp-ebooks-ios.md
-            - name: Şirket Portalı’nı yapılandırma
-              href: company-portal-app.md
-            - name: Managed Browser’ı yapılandırma
-              href: app-configuration-managed-browser.md
-            - name: Microsoft Edge’i yapılandırma
-              href: manage-microsoft-edge.md
-            - name: Outlook’u yapılandırma
-              href: app-configuration-policies-outlook.md
         - name: Uygulamaları koruma
           items:
             - name: Uygulamaları seçmeli silme
