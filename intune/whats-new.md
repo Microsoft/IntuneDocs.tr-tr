@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbdd143e25e632601ec1f8ee4b57c9b77c3b3caf
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 35d64aba1c4c9a06e295699ac862198c29d8b9b1
+ms.sourcegitcommit: 9f91d803dfc39336a954b79ccec6420e58375d31
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166893"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211555"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -92,15 +92,6 @@ Uygulamalar, Kullanıcı kimlik bilgileri olmadan uygulama kimliği 'ni kullanar
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-configuration"></a>Cihaz yapılandırması
-
-#### <a name="allow-or-restrict-adding-app-widgets-to-the-home-screen-on-android-enterprise-work-profile-devices----1109650--wnstaged--"></a>Android kurumsal iş profili cihazlarındaki giriş ekranına uygulama pencere öğelerinin eklenmesine izin ver veya kısıtla <!-- 1109650  wnstaged--> 
-
-Android kurumsal cihazlarda iş profilindeki özellikleri yapılandırabilirsiniz (**cihaz yapılandırma** > **profilleri** > platform için bir**profil** > oluşturma**Android Enterprise** >  **İş profili yalnızca profil türü için cihaz kısıtlamalarını >** ). Bu güncelleştirmede, kullanıcıların iş profili uygulamaları tarafından sunulan pencere öğelerini cihaz giriş ekranına eklemesine izin verebilirsiniz.
-
-Yapılandırabileceğiniz ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](device-restrictions-android-for-work.md).
-
-Şunun için geçerlidir:
-- Android kurumsal iş profili
 
 #### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438-----"></a>İOS için IKEv2 VPN profilleri desteği <!-- 1943438   -->
 Bu güncelleştirmede, Ikev2 protokolünü kullanarak iOS Native VPN istemcisi için VPN profilleri oluşturabilirsiniz. Ikev2, **cihaz yapılandırma** > **profillerinde** > yeni bir bağlantı türüdür ve profil türü > **bağlantı türü**için **VPN** > Platform için**iOS** **oluşturun** > .
@@ -189,6 +180,14 @@ Windows 10 uyumluluk ayarları hakkında daha fazla bilgi için bkz. [Windows 10
  #### <a name="updated-ui-for-configuring-microsoft-exchange-on-premises-access-------4092920---"></a>Microsoft Exchange şirket içi erişimini yapılandırmak için güncelleştirilmiş Kullanıcı arabirimi    <!-- 4092920 -->  
 [Microsoft Exchange şirket içi](conditional-access-exchange-create.md)erişim erişimini yapılandırdığınız konsolu güncelleştirdik. Şirket içi Exchange erişimi için tüm yapılandırmalara artık, *Şirket Içi Exchange erişim denetimini etkinleştirdiğiniz*konsolun aynı bölmesinde erişilebilir.  
 
+#### <a name="allow-or-restrict-adding-app-widgets-to-the-home-screen-on-android-enterprise-work-profile-devices----1109650----"></a>Android kurumsal iş profili cihazlarındaki giriş ekranına uygulama pencere öğelerinin eklenmesine izin ver veya kısıtla <!-- 1109650  --> 
+Android kurumsal cihazlarda iş profilindeki özellikleri yapılandırabilirsiniz (**cihaz yapılandırma** > **profilleri** > platform için bir**profil** > oluşturma**Android Enterprise** >  **İş profili yalnızca profil türü için cihaz kısıtlamalarını >** ). Bu güncelleştirmede, kullanıcıların iş profili uygulamaları tarafından sunulan pencere öğelerini cihaz giriş ekranına eklemesine izin verebilirsiniz.
+
+Yapılandırabileceğiniz ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](device-restrictions-android-for-work.md).
+
+Şunun için geçerlidir:
+- Android kurumsal iş profili
+
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-enrollment"></a>Cihaz kaydı
 
@@ -216,7 +215,7 @@ Android tam olarak yönetilen cihazlar için aşağıdaki desteği ekledik:
 - Sistem uygulamaları, Android kurumsal cihazlarda desteklenir. Intune 'da, **istemci uygulamaları** > **uygulamalar** > **Ekle**' yi seçerek bir Android kurumsal sistem uygulaması ekleyin. **Uygulama türü** listesinde, **Android kurumsal sistem uygulaması**' nı seçin. Daha fazla bilgi için bkz. [Microsoft Intune Android kurumsal sistem uygulamaları ekleme](apps-ae-system.md). <!-- 4062195 -->
 - **Cihaz uyumluluğu** > **Android kurumsal** > **cihaz sahibi**bölümünde, Google SafetyNET kanıtlama düzeyini ayarlayan bir uyumluluk ilkesi oluşturabilirsiniz.   <!-- 4631425 -->
 - Android kurumsal tam yönetilen cihazlarda, mobil tehdit savunma sağlayıcıları desteklenir. **Cihaz uyumluluğu** > **Android kurumsal** > **cihaz sahibi**' de, kabul edilebilir tehdit düzeyi seçebilirsiniz. <!-- 4631440 --> [Intune kullanarak cihazları uyumlu veya uyumsuz olarak işaretlemek Için Android kurumsal ayarları](compliance-policy-create-android-for-work.md#device-owner) geçerli ayarları listeler.
-- Android kurumsal tam olarak yönetilen cihazlarda, Microsoft başlatıcı uygulaması artık tam olarak yönetilen cihazda standartlaştırılmış bir son kullanıcı deneyimine izin vermek için uygulama koruma ilkeleri aracılığıyla yapılandırılabilir. Microsoft başlatıcısı uygulaması, Android cihazınızı kişiselleştirmek için kullanılabilir. Uygulamayı bir Microsoft hesabı veya iş/okul hesabıyla birlikte kullanarak, kişiselleştirilmiş akışınızdaki takvim, belgeleriniz ve son etkinliklerinize erişebilirsiniz. Ayrıca, cihazlarınız arasında üretken olmak için Windows bilgisayarınızda fotoğraf, belge ve Web sayfaları da açabilirsiniz. <!-- 5334044 -->
+- Android kurumsal tam olarak yönetilen cihazlarda, Microsoft başlatıcı uygulaması artık tam olarak yönetilen cihazda standartlaştırılmış bir son kullanıcı deneyimine izin vermek için uygulama koruma ilkeleri aracılığıyla yapılandırılabilir. Microsoft başlatıcısı uygulaması, Android cihazınızı kişiselleştirmek için kullanılabilir. Uygulamayı bir Microsoft hesabı veya iş/okul hesabıyla birlikte kullanarak, kişiselleştirilmiş akışınızdaki takvim, belgeleriniz ve son etkinliklerinize erişebilirsiniz. <!-- 5334044 -->
 
 Bu güncelleştirmeyle, Android kurumsal tam olarak yönetilen Intune desteğinin artık genel kullanıma sunulduğunu duyurmaktan mutluluk duyuyoruz. 
 
