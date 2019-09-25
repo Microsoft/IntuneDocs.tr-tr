@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ea64a8b9c4e8fb044e0fd66be32dcc71e4a5aefc
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885061"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239441"
 ---
 # <a name="review-client-app-protection-logs"></a>İstemci uygulama koruma günlüklerini gözden geçirme
 
@@ -31,14 +31,14 @@ Uygulama koruma günlüklerinde inceleyebileceğiniz ayarlar hakkında bilgi edi
 Günlükleri etkinleştirme ve toplama işlemi platforma göre farklılık gösterir:
 - **Android cihazlar** - *Şirket portalı*kullanın. [Şirketinizin destek Için e-posta günlüklerine](/intune-user-help/send-logs-to-your-it-admin-by-email-android)bakın.
 - **iOS cihazları** -günlükleri toplamak için bir Managed Browser veya *Microsoft Edge* kullanın. Ayrıntılar için, [Intune Managed Browser günlük Gönderimi Için Intune destek ekibi blogu yeni Intune Tanılama konsoluna](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021)bakın. 
-- **Windows 10 cihazları** - *mdmdiag* ve olay günlüklerini kullanın. Windows istemci yönetimi içeriğinde [Windows 10 ' da MDM başarısızlıklarını tanılama](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) ve blog [sorunlarını giderme Windows 10 Intune ilke hatalarıyla ilgili](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) bilgi
+- **Windows 10 cihazları** - *mdmdiag* ve olay günlüklerini kullanın. Windows istemci yönetimi içeriğinde [Windows 10 ' da MDM başarısızlıklarını tanılama](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) ve blog [sorunlarını giderme Windows 10 Intune ilke hatalarıyla ilgili](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)bilgi için bkz.
 
 
 Aşağıdaki tabloda, günlüğe kaydedilen ayarların adı ve açıklaması listelenmektedir.
 
 ## <a name="app-protection-policy-settings"></a>Uygulama koruma ilkesi ayarları
 
-| Ad                        | Olası değer(ler)                                                                                                                                                                                                                                                                                           | Azure Intune Mobil Uygulama Yönetimi portalında ayarlama                                                                                                                            |
+| Name                        | Olası değer(ler)                                                                                                                                                                                                                                                                                           | Azure Intune Mobil Uygulama Yönetimi portalında ayarlama                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x dakika                                                                                                                                                                                                                                                                                                   | [Erişim] Erişim gereksinimlerini tekrar kontrol edin - Çevrimdışı Kullanım Süresi<br>Not: Bu, cihaz çevrimdışıyken uygulama için erişim gereksinimlerinin yeniden denetlenmesi için geçen zaman döneğidir.             |
 | AccessRecheckOnlineTimeout  | _x_ dakika                                                                                                                                                                                                                                                                                                   | [Access] Erişim gereksinimlerini tekrar kontrol edin - Zaman aşımı.<br>Not: Bu, cihaz çevrimiçiyse uygulama başlatıldıktan sonra uygulamanın erişim gereksinimlerinin yeniden denetlenmesi için geçen zaman dönedir. |

@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394238"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239292"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS kullanıcılarınız uygulamalarını nasıl alır
 
@@ -36,7 +35,7 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları son kullanıc
 
 **Yönetilen uygulamalar**--İlkeler aracılığıyla yönetilebilen ve Intune tarafından “sarmalanmış” veya Intune Uygulama Yazılım Geliştirme Seti (SDK) ile oluşturulmuş uygulamalardır. Bu uygulamalar Intune tarafından yönetilebilir ve bunlara uygulama koruma ilkeleri uygulanabilir.
 
-**Yönetilmeyen uygulamalar**--İlkeler aracılığıyla yönetilebilen ve Intune tarafından sarmalanmamış veya Intune Uygulama SDK’sını içermeyen uygulamalardır. Uygulama ilkeleri bu uygulamalara uygulanamaz.
+**Yönetilmeyen uygulamalar**--kullanıcıların Intune uygulama SDK 'sı ile tümleştirilen IOS App Store 'dan indirebileceği uygulamalar. Intune, bu uygulamaların dağıtım, yönetim veya seçmeli silme üzerinde herhangi bir denetime sahip değildir.  
 
 Apple kısıtlamaları, iş kolu ve yönetilen App Store uygulamalarının Şirket Portalı uygulamasında listelenmesini yasaklar. Bu sorunu aşmak amacıyla iOS için Şirket Portalı uygulamasındaki kutucuklar, kullanıcıları tüm uygulamalarda farklı görünümle tek konuma, yani Şirket Portalı web sitesine yönlendirir.
 
@@ -53,7 +52,7 @@ Kayıtlı kullanıcılar, Şirket Portalı uygulamasının Uygulamalar ekranınd
 
 Uygulama ekleme hakkında bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md).
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 [Android kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-android.md)
 
 [Windows kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-windows.md)

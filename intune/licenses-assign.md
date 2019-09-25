@@ -7,22 +7,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd8b35fbbff89ca7f4c259e1903f4c9f9a6e3b38
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459909"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238369"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Cihazlarını Intune’a kaydedebilmeleri için kullanıcılara lisans atama
 
@@ -30,22 +29,22 @@ ms.locfileid: "57459909"
 
 El ile kullanıcı eklediğinizde veya şirket içi Active Directory'nizden eşitlediğinizde, kullanıcıların cihazlarını Intune'a kaydedebilmesi için önce her kullanıcıya bir Intune lisansı atamanız gerekir. Lisans listesi için bkz. [Intune barındıran lisanslar](licenses.md).
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 Yönetim merkezinden bir Intune lisansı atayın
+## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 Yönetim merkezinde bir Intune lisansı atama
 
-Kullanabileceğiniz [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) el ile bulut tabanlı kullanıcılar eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory'nizden Azure AD'ye eşitlenen hesaplara lisans atamak için.
+Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory Azure AD 'ye eşitlenen hesaplara lisans atamak için [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanabilirsiniz.
 
-1. Oturum [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) Kiracı Yöneticisi kimlik bilgilerinizi kullanarak ve ardından **kullanıcılar** > **etkin kullanıcılar**.
+1. [Microsoft 365 Yönetim merkezinde](http://go.microsoft.com/fwlink/p/?LinkId=698854) kiracı yöneticisi kimlik bilgilerinizi kullanarak oturum açın ve ardından **Kullanıcılar** > **etkin kullanıcılar**' ı seçin.
 
 2. Intune kullanıcı lisansı atamak istediğiniz kullanıcı hesabını seçin ve **Ürün lisansları** > **Düzenle**’yi seçin.
 
 3. **Intune** veya **Enterprise Mobility + Security**’i **Açık** konuma getirin ve **Kaydet**’i seçin.
 
-   ![Lisansları bölümünün ürün Microsoft 365 Yönetim merkezinin ekran görüntüsü.](./media/office-assign-license.png)
+   ![Microsoft 365 Yönetim Merkezi ürün lisansları bölümünün ekran görüntüsü.](./media/office-assign-license.png)
 
 4. Kullanıcı hesabı artık hizmeti kullanmak ve yönetime cihaz kaydetmek için gereken izinlere sahiptir.
 
 > [!NOTE]
-> Kullanıcılar, sadece cihazlarını kaydettikten sonra Yönetim konsolunda görünür. Ayrıca, seçili tüm kullanıcılar için lisans ekleme veya değiştirmeyi seçerek bir grup kullanıcıyı aynı anda düzenlemek üzere seçebilirsiniz.
+> Kullanıcılar, klasik Intune portalında yalnızca Intune bılgısayar istemcisini kullanarak bir cihazı kaydettikten sonra görüntülenir. Ayrıca, seçili tüm kullanıcılar için lisans ekleme veya değiştirmeyi seçerek bir grup kullanıcıyı aynı anda düzenlemek üzere seçebilirsiniz.
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Azure Active Directory kullanarak bir Intune lisansı atama
 
@@ -63,7 +62,7 @@ Eğitim için Intune lisansı atadığınızda, Intune A Direct lisansının da 
 SDS hakkında daha fazla bilgi edinmek için bkz. [School Data Sync’e genel bakış](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Kullanıcı ve cihaz lisansları hizmetlere erişimi nasıl etkiler?
-* Bir kullanıcı yazılım lisansı atadığınız her **kullanıcı** uygulamaları yönetmek için ve 15 cihaza kadar çevrimiçi hizmetlere ve ilgili yazılımlara (System Center yazılımı dahil olmak üzere) erişebilir ve bunları kullanabilir.
+* Bir kullanıcı yazılım lisansı atadığınız her bir **Kullanıcı** , uygulamaları yönetmek için çevrimiçi hizmetler ve ilgili yazılımlara (System Center yazılımı dahil olmak üzere) erişebilir ve kullanabilir ve en fazla 15 MDM cihazı kullanabilir. Intune bılgısayar Aracısı kullanıcı lisansı başına 5 fiziksel ve 1 sanal makineye izin verir.
 * Kullanıcı lisanslarından ayrı olarak her cihaz için lisans satın alabilirsiniz. Cihaz lisanslarının cihazlara atanması gerekmez. Çevrimiçi hizmetlere ve ilgili yazılımlara (System Center yazılımı da dahil) erişen ve bunları kullanan her cihazın bir cihaz lisansı olmalıdır.
 * Bir cihaz birden fazla kullanıcı tarafından kullanılıyorsa, her biri için cihaz yazılım lisansı gerekir veya tüm kullanıcıların bir kullanıcı yazılım lisansı kullanması gerekir.
 

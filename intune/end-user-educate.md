@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898488"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239789"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Son kullanıcılarınızı Microsoft Intune hakkında bilgilendirme
 
@@ -44,7 +43,7 @@ __Kullanıcılarınızın teknolojideki deneyim düzeyi nedir?__ Kullanıcılar�
 
 __Hareketlilik yönetimi kullanıcılar için ne anlama gelir?__ Kullanıcılar, onların cihazları ve bilgileri üzerinde sahip olduğunuz (veya olmadığınız) erişim düzeyini tam olarak anlamamış olabilir. BT'nin ve yönetim kadrosunun eylemlerini izleme potansiyeli konusunda endişeleri olabilir. Daha az deneyimli cihaz kullanıcıları, cihazlarındaki tüm etkinliğin özel olduğunu inanabilir. 
 
-__Intune kullanıcıların işini nasıl zorlaştırabilir?__  Uygulamaları yüklemek, cihazları kaydetmek ve uyumluluğu korumak için kullanıcıların ihtiyacı olan süreyi göz önünde bulundurun ve buna saygılı davranın. Tüm Intune dağıtımlarında en öncelikli konu şirket verilerinin güvenliğini sağlamaktır. Bununla birlikte, aşağıdakiler gibi ilkeleri zorunlu tutarsanız kullanıcıların cihaz yönetimine yaklaşımı olumsuz etkilenebilir:  
+__Intune kullanıcıların işini nasıl zorlaştırabilir?__  Uygulamaları yüklemek, cihazları kaydetmek ve uyumluluğu korumak için kullanıcıların ihtiyacı olan süreyi göz önünde bulundurun ve buna saygılı davranın. Tüm Intune dağıtımlarında en öncelikli konu şirket verilerinin güvenliğini sağlamaktır. Bununla birlikte, ilke (örneğin, şu şekilde) varsa, cihaz yönetimine doğru Kullanıcı tarafından bir yandan da olumsuz etkilenebilir.  
 * Kişisel cihazlarda aşırı geçiş kodları isteme
 * Gerekli uygulama güncelleştirmelerini işle ilgili kritik görüşmelerin ortasında gönderme  
 
@@ -58,9 +57,9 @@ Kuruluşunuzun Intune dağıtımını cihaz kullanıcıları açısından kolayl
 
 * __Erişilebilir olun.__ Kullanıcılara cihaz sorunları için nereden yardım alabileceklerini söyleyin. [Şirket Portalı'nı özelleştirdiğinizde](company-portal-customize.md), BT yöneticinizin iletişim bilgilerini de eklemeyi unutmayın.
 
-* __Kişisel olun.__ Kuruluşunuzdaki dağıtıma özgü yönergeleri sağlayın. Bu eylem kullanıcılara, onların deneyimine önem verdiğinizi gösterir. Kullanıcılarınız için kendi kayıt yönergelerinizi oluşturmak üzere bu [özelleştirilebilir, Intune kullanıcısı kayıt şablonunu](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) kullanın.
+* __Kişisel olun.__ Kuruluşunuzdaki dağıtıma özgü yönergeleri sağlayın. Bu eylem kullanıcılara, onların deneyimine önem verdiğinizi gösterir. Kullanıcılarınız için kendi kayıt yönergelerinizi oluşturmak üzere bu özelleştirilebilir [Intune benimseme setini](https://aka.ms/IntuneAdoptionKit) kullanın.
 
-* __İletişim kurmak için farklı yollar bulun.__ Kullanıcıların [öğrenme tarzları birbirinden farklıdır](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) ve bilgileri kullanmak için farklı yollar tercih ederler. Görsel yöntemlerle öğrenenler için, Intune Channel 9'da [çeşitli cihaz türlerinin kaydını gösteren video uyarlamaları](https://channel9.msdn.com/Series/IntuneEnrollment) sağlar. Videolar doğrudan kendi [SharePoint sitenize](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) eklenebilir. Ayrıca, görüntü ve ses parçalarının yerel kopyalarını indirebilirsiniz.
+* __İletişim kurmak için farklı yollar bulun.__ Kullanıcıların [öğrenme tarzları birbirinden farklıdır](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/) ve bilgileri kullanmak için farklı yollar tercih ederler. Görsel yöntemlerle öğrenenler için, Intune Channel 9'da [çeşitli cihaz türlerinin kaydını gösteren video uyarlamaları](https://channel9.msdn.com/Series/IntuneEnrollment) sağlar. Videolar doğrudan kendi [SharePoint sitenize](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) eklenebilir. Ayrıca, görüntü ve ses parçalarının yerel kopyalarını indirebilirsiniz.
 
 * __Farkında olun.__ Intune kullanıcı deneyimi üretkenliğinizi de etkiler. Kullanıcıların deneyimini anladığınızda, cihaz ve kullanıcı sorunlarını daha kolay giderebilirsiniz. Örneğin, kullanıcılarınızın uygulamalarını nasıl aldığını öğrenebilir ve anlayabilirsiniz. Bu bilgiye önceden sahip olmak, sorunları tanılamayı ve çözmeyi kolaylaştırır ve hızlandırır.
 

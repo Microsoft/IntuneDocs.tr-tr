@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 09/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: e7b1ea4914b2c4593c0d4abe6396e349020d1a95
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394890"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "71239543"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -33,7 +32,7 @@ Intune Uygulaması Sarmalama Aracı’nı veya Intune Uygulama SDK’sını kull
 ## <a name="intune-app-wrapping-tool"></a>Intune Uygulaması Sarmalama Aracı
 Uygulama Sarmalama Aracı öncelikle **iç** iş kolu (LOB) uygulamaları için kullanılır. Araç, uygulamanın çevresinde bir sarmalayıcı oluşturan ve sonra uygulamanın bir Intune uygulama koruma ilkesiyle yönetilmesine izin veren bir komut satırı uygulamasıdır. Bağımsız yazılım satıcısı (ISV) tarafından sağlanan bir uygulamayı korurken, ISV'nin sarmalanmış uygulamayı yine de destekleyip desteklemeyeceğini netleştirmek önemlidir.
 
-Aracı kullanmak için kaynak kodu gerekli değildir, ancak imzalama kimlik bilgileri gereklidir. İmzalama kimlik bilgileri hakkında daha fazla bilgi için bkz. [Intune blogu](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Uygulama Sarmalama Aracı belgeleri için bkz. [Android Uygulaması Sarmalama Aracı](app-wrapper-prepare-android.md) ve [iOS Uygulaması Sarmalama Aracı](app-wrapper-prepare-ios.md).
+Aracı kullanmak için kaynak kodu gerekli değildir, ancak imzalama kimlik bilgileri gereklidir. İmzalama kimlik bilgileri hakkında daha fazla bilgi için bkz. [Intune blogu](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Uygulama sarmalama aracı belgeleri için bkz. [Android uygulama sarmalama aracı](app-wrapper-prepare-android.md) ve [IOS uygulaması sarmalama aracı](app-wrapper-prepare-ios.md).
 
 Uygulama Sarmalama Aracı, Apple App Store veya Google Play Store'daki uygulamaları **desteklemez**. Ayrıca geliştirici tümleştirmesi gerektiren bazı özellikler için de destek sunmaz (aşağıdaki özellik karşılaştırma tablosuna bakın).
 
@@ -74,6 +73,9 @@ SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](app-sdk.md). S
 |**iOS**|Evet – [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
 |**Android**| Evet - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
 
+### <a name="not-using-an-app-development-platform-listed-above"></a>Yukarıda listelenen bir uygulama geliştirme platformu kullanmıyor musunuz? 
+Intune SDK geliştirme ekibi etkin bir şekilde sınar ve yerel Android, iOS (obj-C, Swift), Xamarin, Xamarin. Forms ve Cordova platformlarıyla oluşturulmuş uygulamalar için destek sağlar. Bazı müşteriler, bir Kullanıcı ve NativeScript gibi diğer platformlarla Intune SDK tümleştirmesi ile başarılı olmuş olsa da, desteklenen platformlarımızdan başka herhangi bir şeyi kullanarak uygulama geliştiricileri için açık rehberlik veya eklentiler sağlamayız. 
+
 ## <a name="feature-comparison"></a>Özellik karşılaştırması
 Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğiniz ayarlar listelenmektedir.
 
@@ -87,36 +89,39 @@ Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğini
 |Uygulamanın diğer uygulamalara veri aktarmasına izin ver|X|X|
 |Uygulamanın diğer uygulamalardan veri almasına izin ver|X|X|
 |Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla|X|X|
-|Yönetilen bir uygulamadan kopyalanan veya kesin olabilir karakter sayısını belirtin|X|X|
+|Yönetilen bir uygulamadan kesilebilir veya kopyalanabilecek karakter sayısını belirtin|X|X|
 |Erişim için basit PIN gerektir|X|X|
 |PIN sıfırlanmadan önceki deneme sayısını belirtin|X|X|
 |PIN yerine parmak izine izin ver|X|X|
 |PIN yerine yüz tanımaya izin ver (yalnızca iOS)|X|X|
 |Erişim için kurumsal kimlik bilgileri gerektir|X|X|
+|PIN süre sonu ayarlama|X|X|
 |Yönetilen cihazların, jailbreak uygulanmış veya kökü belirtilmiş cihazlarda çalışmasını engelle|X|X|
 |Uygulama verilerini şifreleme|X|X|
 |Belirtilen sayıda dakika sonrasında erişim gereksinimlerini yeniden denetle|X|X|
 |Çevrimdışı kullanım süresini belirtin|X|X|
 |Ekran yakalamayı engelle (yalnızca Android)|X|X|
 |Cihaz kaydı olmadan MAM desteği|X|X|
-|Uygulama verilerinin tam temizleme|X|X|
-|Çok kimlikli senaryolarda iş ve Okul verilerini seçmeli temizleme işlemi <br><br>**Not:** İOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
+|Uygulama verilerini tam Temizleme|X|X|
+|Çoklu kimlik senaryolarında iş ve okul verilerinin seçmeli silme <br><br>**Not:** İOS için, Yönetim profili kaldırıldığında, uygulama da kaldırılır.|X||
 |“Farklı Kaydet”i önleme|X||
-|Hedeflenen Uygulama Yapılandırması|X||
+|Hedeflenen uygulama yapılandırması (veya "MAM Channel" aracılığıyla uygulama yapılandırması)|X|X|
 |Çoklu Kimlik Desteği|X||
 |Özelleştirilebilir Stil |X|||
 |Citrix mVPN ile isteğe bağlı uygulama VPN bağlantıları|X|X| 
 |Kişilerin eşitlenmesini devre dışı bırak|X|X|
 |Yazdırmayı devre dışı bırak|X|X|
 |En düşük uygulama sürümünü zorunlu tut|X|X|
-|En düşük işletim sistemini zorunlu tut (iOS ve Android)|X|X|
+|En düşük işletim sistemi gerektir|X|X|
 |En düşük Android güvenlik düzeltme eki sürümünü zorunlu tut (yalnızca Android)|X|X|
 |iOS için en düşük Intune SDK’sını zorunlu tut (yalnızca iOS)|X|X|
+|SafetyNet cihaz kanıtlama (yalnızca Android)|X|X|
+|Uygulamalarda tehdit taraması (yalnızca Android)|X|X|
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Uygulama koruma ilkeleri ve Intune hakkında daha fazla bilgi edinmek için aşağıdaki konulara bakın:
 
-  - [Android uygulama sarmalama aracı](app-wrapper-prepare-android.md)<br>
-  - [iOS uygulama sarmalama aracı](app-wrapper-prepare-ios.md)<br>
-  - [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](app-sdk.md)
+- [Android uygulama sarmalama aracı](app-wrapper-prepare-android.md)<br>
+- [iOS uygulama sarmalama aracı](app-wrapper-prepare-ios.md)<br>
+- [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](app-sdk.md)

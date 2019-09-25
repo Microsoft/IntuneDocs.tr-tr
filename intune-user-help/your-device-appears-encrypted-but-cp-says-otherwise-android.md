@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167434"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238970"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Cihaz şifrelendi, ancak uygulamalar bu şekilde söyleniyor
 
@@ -50,7 +50,7 @@ Bu bölüm yalnızca Şirket Portalı uygulaması için geçerlidir. Cihazınız
 
 Sürüm 7,0 ve üzeri sürümlerde bazı Android cihazlar, belirli Android Platform standartları ile tutarsız yollarla verileri şifreler. Bu şifreleme yöntemleri cihaz bilgilerini riske koyar. Sonuç olarak, bu cihazlar desteklenmez.
 
-Desteklenen Android cihazlarının ayrıntılı olmayan bir listesi için bkz. [Intune 'Da desteklenen işletim sistemleri ve tarayıcılar](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices)makalesi. Cihazınız listede yoksa, cihaz üreticisine başvurun veya destek sorumlunuza başvurun.
+Desteklenen Android cihazlarının ayrıntılı olmayan bir listesi için bkz. [Intune 'Da desteklenen işletim sistemleri ve tarayıcılar](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)makalesi. Cihazınız listede yoksa, cihaz üreticisine başvurun veya destek sorumlunuza başvurun.
 
 > [!Note]
 > Microsoft, test ederken veya kullanıcıların bize rapor verdiği sorunları ele almak için üreticilerle birlikte çalışmaktadır. Yeni bilgiler mevcut oldukça bu makaleyi güncelleştireceğiz.

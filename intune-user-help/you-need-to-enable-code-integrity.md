@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c518e0eeb18f51fa17d15a72735e319aef1d647d
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 6a545bff8624f4447ca9805aecf6d4d288fe4314
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167480"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239515"
 ---
 # <a name="enable-code-integrity"></a>Kod bütünlüğünü etkinleştir
 
@@ -35,7 +35,7 @@ Kendinizi gelişmiş bir cihaz kullanıcısı olarak tanımlayabilir ve ilgili a
 
 ## <a name="additional-resources-for-it-administrators"></a>BT yöneticileri için ek kaynaklar
 
-Bir Intune yöneticisiyseniz ve Intune 'un cihaz sistem durumu uyumluluk ayarları hakkında daha fazla bilgi edinmek istiyorsanız, bkz. [Intune 'Da Windows 10 cihazları için cihaz uyumluluk Ilkesi ekleme](https://docs.microsoft.com/intune/compliance-policy-create-windows.md). Intune 'da gerçekleştirebileceğiniz uyumluluk eylemlerine ilişkin ayrıntılı bir bakış için, bkz. [Healthkanıtlama CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)'si.  
+Bir Intune yöneticisiyseniz ve Intune 'un cihaz sistem durumu uyumluluk ayarları hakkında daha fazla bilgi edinmek istiyorsanız, bkz. [Intune 'Da Windows 10 cihazları için cihaz uyumluluk Ilkesi ekleme](https://docs.microsoft.com/intune/compliance-policy-create-windows). Intune 'da gerçekleştirebileceğiniz uyumluluk eylemlerine ilişkin ayrıntılı bir bakış için, bkz. [Healthkanıtlama CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)'si.  
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

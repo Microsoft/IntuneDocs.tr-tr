@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37f76f0e4a382dc356f6d5994c31178ad6f496df
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 22bdb41d8af69ed7e52ee3bcbc7775ac1d6768a6
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166526"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239409"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>MacOS cihazı için kurtarma anahtarı al
 
@@ -47,7 +47,7 @@ Bir anahtar bulunamazsa ancak cihazınız düzgün şekilde şifrelendiyse, kuru
 
 ## <a name="it-pro-support"></a>BT uzmanı desteği
 
-BT destek sorumlunuza sahipseniz ve macOS cihazları için dosya Kasası şifrelemesini yapılandırmak ve yönetmek istiyorsanız, bkz. [Intune ile cihaz şifrelemesini kullanma](https://docs.microsoft.com/intune/encrypt-devices.md).
+BT destek sorumlunuza sahipseniz ve macOS cihazları için dosya Kasası şifrelemesini yapılandırmak ve yönetmek istiyorsanız, bkz. [Intune ile cihaz şifrelemesini kullanma](https://docs.microsoft.com/intune/encrypt-devices).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

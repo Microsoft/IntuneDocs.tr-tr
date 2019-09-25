@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2168c39c80369e16284078df608bdab5f29858c6
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59894974"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239359"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> Aşağıdaki bilgiler yalnızca Android 6.0 ve üstü cihazlar için geçerlidir.
+> Aşağıdaki bilgiler yalnızca Android 6.0 + ve iOS 10 + cihazları için geçerlidir.
 
 Son kullanıcıların Şirket Portalı'nda görebileceği farklı uygulama iletilerini anlayın. Bu uygulama iletileri, genellikle kayıt işleminin farklı noktalarında görüntülenir. İletilerin nerede görüntüleneceğini, ne anlama geldiğini ve kullanıcıların erişimi reddetmesi durumunda ne olacağını öğrenin. Ayrıca, iletileri kullanıcılara en iyi nasıl açıklayacağınızı öğrenin.
 
 - __Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?__
 - __Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?__
+
+> [!NOTE]
+> Her nedenden dolayı hizmetimizin tarafından toplanan herhangi bir veriyi üçüncü taraflardan satmayacağız.
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?
 
@@ -140,5 +142,5 @@ Bu tür uygulamaları Şirket Portalı'ndan yükleyip çalıştırmak için indi
     Bu adımların ardından şirket uygulamasını çalıştırabilir ve kullanabilirsiniz.
 
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 [Son kullanıcılarınıza Intune kullanma hakkında söylemeniz gerekenler](end-user-educate.md)

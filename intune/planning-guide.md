@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 03eb6e8f58d644d0f5ad1058984d0dc2ce4a5a9b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59897162"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71239555"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune dağıtım planlama, tasarım ve uygulama kılavuzu
 
@@ -35,33 +34,33 @@ Başarılı bir Microsoft Intune dağıtımı iyi bir plan ve tasarıma sahip ol
 
 Bu kılavuz Intune'u uçtan uca dağıtma sürecinde size adım adım rehberlik edecek bölümler içerir. Amaçlarınızı, hedeflerinizi ve zorlukları netleştirmek için Bölüm 1 ile başlayın. Ardından ihtiyaçlarınıza en çok uyan sırada 2. – 7. Bölümlere geçin. Bu bölümleri sırayla çalışmanız gerekmez; paralel olarak da tamamlayabilirsiniz.
 
--   [Bölüm 1: Intune dağıtım hedeflerini, amaçlarını ve zorluklarını belirleme](planning-guide-deployment-goals.md)
+- [Bölüm 1: Intune dağıtım hedeflerini, amaçlarını ve zorluklarını belirleme](planning-guide-deployment-goals.md)
 
--   [Bölüm 2: Kullanım örneği senaryolarını tanımlama](planning-guide-scenarios.md)
+- [Bölüm 2: Kullanım örneği senaryolarını tanımlama](planning-guide-scenarios.md)
 
--   [Bölüm 3: Kullanım örneği gereksinimlerini belirleme](planning-guide-requirements.md)
+- [Bölüm 3: Kullanım örneği gereksinimlerini belirleme](planning-guide-requirements.md)
 
--   [Bölüm 4: Dağıtım planı geliştirme](planning-guide-rollout-plan.md)
+- [Bölüm 4: Dağıtım planı geliştirme](planning-guide-rollout-plan.md)
 
--   [Bölüm 5: Dağıtım iletişim planı geliştirme](planning-guide-communication-plan.md)
+- [Bölüm 5: Dağıtım iletişim planı geliştirme](planning-guide-communication-plan.md)
 
--   [Bölüm 6: Destek planı geliştirme](planning-guide-support-plan.md)
+- [Bölüm 6: Destek planı geliştirme](planning-guide-support-plan.md)
 
--   [Bölüm 7: Intune tasarımı oluşturma](planning-guide-design.md)
+- [Bölüm 7: Intune tasarımı oluşturma](planning-guide-design.md)
 
--   [Bölüm 8: Intune’un uygulanması](planning-guide-onboarding.md)
+- [Bölüm 8: Intune’un uygulanması](planning-guide-onboarding.md)
 
--   [Bölüm 9: Sınama ve doğrulama](planning-guide-test-validation.md)
+- [Bölüm 9: Sınama ve doğrulama](planning-guide-test-validation.md)
 
 Bu kılavuz ayrıca, Intune dağıtım planlaması, tasarım ve uygulama süreçlerinde size yardım edebilecek ek teknik bilgiler ve tablo şablonları sağlar.
 
--   [Ek kaynaklar: Bağlantılar ve tablo şablonları](planning-guide-resources.md)
+- [Ek kaynaklar: Bağlantılar ve tablo şablonları](planning-guide-resources.md)
 
 ## <a name="assumptions"></a>Varsayımlar
 
--   Intune’u zaten bir kavram kanıtı (PoC) ortamında değerlendirdiniz ve kuruluşunuzda mobil cihaz yönetimi çözümü olarak kullanmaya karar verdiniz.
+- Intune’u zaten bir kavram kanıtı (PoC) ortamında değerlendirdiniz ve kuruluşunuzda mobil cihaz yönetimi çözümü olarak kullanmaya karar verdiniz.
 
--   Intune ve özellikleri konusunda zaten bilgi sahibisiniz.
+- Intune ve özellikleri konusunda zaten bilgi sahibisiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 228a4af302a1344f60dc43c02c12efac23e34f74
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566667"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71238713"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -102,7 +101,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 4. **Sertifikalar, Kimlikler ve Profiller**’e tıklayın.
 
-   ![Apple Geliştirici Portalı - sertifikalar, kimlikler ve Profiller](./media/iOS-signing-cert-1.png)
+   ![Apple geliştirici portalı-sertifikalar, kimlikler & profiller](./media/iOS-signing-cert-1.png)
 
 5. &nbsp; ![Sağ üst köşedeki Apple Geliştirici portalı artı işaretine](./media/iOS-signing-cert-2.png) tıklayarak bir iOS sertifikası ekleyin.
 
@@ -127,7 +126,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 11. Bir CSR dosyasının nasıl oluşturulacağını öğrenmek için Apple geliştirici sitesindeki yönergeleri izleyin. CSR dosyasını Mac OS bilgisayarınıza kaydedin.
 
-    ![Aşağıda sertifika bilgilerini girin](./media/iOS-signing-cert-6.png)
+    ![İstediğiniz sertifikayla ilgili bilgileri girin](./media/iOS-signing-cert-6.png)
 
 12. Apple Geliştirici sitesine dönün. **Devam**’a tıklayın. Ardından CSR dosyasını karşıya yükleyin.
 
@@ -143,7 +142,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 16. Bir bilgi iletisi görüntülenir. En alta kaydırın ve **Parmak izleri** etiketinin altına bakın. Uygulama Sarmalama Aracı’nda "-c" için bağımsız değişken olarak kullanmak üzere **SHA1** dizesini (bulanıklaştırılmış) kopyalayın.
 
-    ![iPhone bilgiler - parmak izleri SHA1 dizesi](./media/iOS-signing-cert-9.png)
+    ![iPhone bilgileri-Parmak Izi SHA1 dizesini yazdırır](./media/iOS-signing-cert-9.png)
 
 
 
@@ -169,9 +168,9 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 ## <a name="download-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını indirin
 
-1.  [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)'daki Uygulama Sarmalama Aracı dosyalarını bir macOS bilgisayara indirin.
+1. [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)'daki Uygulama Sarmalama Aracı dosyalarını bir macOS bilgisayara indirin.
 
-2.  **Microsoft Intune App Wrapping Tool for iOS.dmg** dosyasına çift tıklayın. Son Kullanıcı Lisans Sözleşmesi (EULA) ile bir pencere görüntülenir. Belgeyi dikkatli okuyun.
+2. **Microsoft Intune App Wrapping Tool for iOS.dmg** dosyasına çift tıklayın. Son Kullanıcı Lisans Sözleşmesi (EULA) ile bir pencere görüntülenir. Belgeyi dikkatli okuyun.
 
 3. Paketi bilgisayarınıza bağlayan EULA’yı kabul etmek için **Kabul et**’i seçin.
 
@@ -188,7 +187,7 @@ macOS Terminali'ni açın ve aşağıdaki komutu çalıştırın:
 > [!NOTE]
 > Bazı parametreler aşağıdaki tabloda gösterildiği gibi isteğe bağlıdır.
 
-**Örnek:** Aşağıdaki örnek komut, MyApp.ipa adlı uygulamanın üzerinde uygulama sarmalama aracını çalıştırır. Bir sağlama profili ve imzalama sertifikasının SHA-1 karması belirtilir ve sarmalanan uygulamayı imzalamak için kullanılır. Uygulama çıktısı (MyApp_Wrapped.ipa) oluşturulur ve Masaüstü klasörünüzde depolanır.
+**Örnek:** Aşağıdaki örnek komut, MyApp. ipa adlı uygulama üzerinde uygulama sarmalama aracını çalıştırır. Bir sağlama profili ve imzalama sertifikasının SHA-1 karması belirtilir ve sarmalanan uygulamayı imzalamak için kullanılır. Uygulama çıktısı (MyApp_Wrapped.ipa) oluşturulur ve Masaüstü klasörünüzde depolanır.
 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -203,30 +202,38 @@ Aşağıdaki komut satırı parametrelerini Uygulama Sarmalama Aracı ile birlik
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
-|**-h**|Uygulama Sarmalama Aracı için kullanılabilir komut satırı özellikleri hakkında ayrıntılı kullanım bilgilerini gösterir.|
-|**-v**|(İsteğe bağlı) Konsola ayrıntılı ileti çıkışı yapar. Bu bayrağın hataları ayıklamak için kullanılması önerilir.|
+|**-h**| Uygulama Sarmalama Aracı için kullanılabilir komut satırı özellikleri hakkında ayrıntılı kullanım bilgilerini gösterir. |
+|**-aa**|Seçim `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` yani `login.windows.net/common` |
+|**-AC**|Seçim `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` Bu GUID, istemci kimliği alanındaki GUID 'in uygulama kaydı dikey penceresindeki uygulamanızın listelemesi ' dir. |
+|**-Ar**|Seçim `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` Bu, uygulama kaydlarınızın yapılandırdığı yeniden yönlendirme URI 'sidir. Genellikle, Microsoft Authenticator uygulamanın aracılı kimlik doğrulamasından sonra geri döndürdüğü uygulamanın URL protokolü olur. |
+|**-v**| (İsteğe bağlı) Konsola ayrıntılı ileti çıkışı yapar. Bu bayrağın hataları ayıklamak için kullanılması önerilir. |
 |**-e**| (İsteğe bağlı) Uygulama Sarmalama Aracının uygulamayı işlerken eksik yetkilendirmeleri kaldırmasını sağlamak için bu bayrağı kullanın. Daha fazla ayrıntı için [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements) bölümüne bakın.|
 |**-xe**| (İsteğe bağlı) Uygulamadaki iOS uzantıları hakkında bilgi ve bunları kullanmak için hangi yetkilendirmelerin gerektiğini yazdırır. Daha fazla ayrıntı için [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements) bölümüne bakın. |
 |**-x**| (İsteğe bağlı) `<An array of paths to extension provisioning profiles>`. Uygulamanızda uzantı sağlayan profiller gerekiyorsa bunu kullanın.|
-|**-f**|(İsteğe bağlı) `<Path to a plist file specifying arguments.>` -i, -o ve -p gibi geri kalan IntuneMAMPackager özelliklerini belirtmek için plist şablonu kullanmayı tercih ederseniz bu bayrağı [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) dosyasının önünde kullanın. Bağımsız değişkenler girişi için bir plist kullanma bölümüne bakın. |
 |**-b**|(İsteğe bağlı) Sarmalanan çıkış uygulamasının giriş uygulamasıyla aynı paket sürümüne sahip olmasını isterseniz (önerilmez), -b’yi bağımsız değişken olmadan kullanın. <br/><br/> Sarmalanan uygulamanın özel CFBundleVersion içermesini istiyorsanız `-b <custom bundle version>` kullanın. Özel CFBundleVersion belirtmek isterseniz, yerel uygulamanın CFBundleVersion’unun en az önemli bileşen tarafından artırılması iyi bir fikirdir, ör. 1.0.0 -> 1.0.1. |
+|**-Citrix**|Seçim Citrix XenMobile uygulama SDK 'sını (yalnızca ağ varyantı) dahil edin. Bu seçeneği kullanmak için [CITRIX MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) 'in yüklü olması gerekir. |
+|**-f**|(İsteğe bağlı) `<Path to a plist file specifying arguments.>` -i, -o ve -p gibi geri kalan IntuneMAMPackager özelliklerini belirtmek için plist şablonu kullanmayı tercih ederseniz bu bayrağı [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) dosyasının önünde kullanın. Bağımsız değişkenler girişi için bir plist kullanma bölümüne bakın. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Bağımsız değişkenler girişi için bir plist kullanma
 Uygulama Sarmalama Aracı’nı çalıştırmanın kolay bir yolu, tüm komut satırı bağımsız değişkenlerini bir [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) dosyasına yerleştirmektir. Plist, bir form arabirimi ile komut satırı bağımsız değişkenlerinizin girişi için kullanabileceğiniz, XML'e benzer bir dosya biçimidir.
 
 IntuneMAMPackager/Contents/MacOS klasöründe, `Parameters.plist` öğesini (boş bir plist şablonu), bir metin düzenleyici veya Xcode ile açın. Aşağıdaki anahtarlar için bağımsız değişkenlerinizi girin:
 
-| Plist anahtarı |  Varsayılan değer| Notlar |
-|------------------|--------------|-----|
-| Giriş Uygulama Paketi Yolu  |boş| -i ile aynı|
-| Çıkış Uygulama Paketi Yolu |boş| -o ile aynı|
-| Profil Yolu Sağlama |boş| -p ile aynı|
-| SHA-1 Sertifika Karması |boş| -c ile aynı|
-| Ayrıntılı Mod Etkin |false| -v ile aynı|
-| Eksik Yetkilendirmeleri Kaldır | false| -c ile aynı|
-| Varsayılan Derlemeyi Engelle |false | Bağımsız değişkenler olmadan -b kullanma ile eşdeğerdir|
-|Dize Geçersiz Kılmayı Derle | boş| Sarmalanan çıkış uygulaması için özel CFBundleVersion |
-|Uzantı Sağlayan Profil Yolları | boş| Uygulamanın uzantı sağlama profillerinin bir dizisi.
+| Plist anahtarı | Type |  Default Value | Notlar |
+|------------------|-----|--------------|-----|
+| Giriş Uygulama Paketi Yolu |Dize|boş| -i ile aynı|
+| Çıkış Uygulama Paketi Yolu |Dize|boş| -o ile aynı|
+| Profil Yolu Sağlama |Dize|boş| -p ile aynı|
+| SHA-1 Sertifika Karması |Dize|boş| -c ile aynı|
+| ADAL yetkilisi |Dize|boş| -AA ile aynı|
+| ADAL Istemci KIMLIĞI |Dize|boş| -AC ile aynı|
+| ADAL yanıt URI 'SI |Dize|boş| -AR ile aynı|
+| Ayrıntılı Mod Etkin |Boole değeri|false| -v ile aynı|
+| Eksik Yetkilendirmeleri Kaldır |Boole değeri|false| -c ile aynı|
+| Varsayılan derleme güncelleştirmesini engelle |Boolen|false| Bağımsız değişkenler olmadan -b kullanma ile eşdeğerdir|
+| Dize Geçersiz Kılmayı Derle |Dize|boş| Sarmalanan çıkış uygulaması için özel CFBundleVersion|
+| Citrix XenMobile App SDK (yalnızca ağ varyantı) dahil et|Boole değeri|false| -Citrix ile aynı|
+| Uzantı Sağlayan Profil Yolları |Dize Dizisi|boş| Uygulamanın uzantı sağlama profillerinin bir dizisi.
 
 
 IntuneMAMPackager’ı plist ile tek bağımsız değişken olarak çalıştırın:
@@ -280,20 +287,21 @@ Uygulama sarmalama aracı başarılı bir şekilde tamamlanamazsa, konsolda aşa
 |Belirttiğiniz giriş uygulaması imzalı değil. Geçerli bir imzalı uygulama belirtin.|Uygulama sarmalama aracı, uygulamaların imzalı olmasını gerektirir. Sarmalanan bir uygulamanın nasıl imzalanacağını öğrenmek için geliştirici belgelerinize başvurun.|
 |Belirttiğiniz giriş uygulaması .ipa veya .app biçiminde olmalıdır.|Uygulama sarmalama aracı tarafından yalnızca .app ve .ipa uzantıları kabul edilir. Giriş dosyanızın geçerli bir uzantısı olduğundan ve bir .app veya .ipa dosyası olarak derlendiğinden emin olun.|
 |Belirttiğiniz giriş uygulaması zaten sarmalanmış ve ilke şablonunun son sürümünde yer alıyor.|Uygulama Sarmalama Aracı, var olan bir sarmalanmış uygulamayı ilkesi şablonunun son sürümü ile yeniden sarmalamaz.|
-|UYARI: SHA1 Sertifika Karması belirtmediniz. Sarmalanan uygulamanızı dağıtmadan önce mutlaka imzalayın.|Geçerli bir SHA1 karması belirttiğinizden –c komut satırı bayrağını takip ederek emin olun. |
+|WARNING Bir SHA1 sertifika karması belirtmediniz. Sarmalanan uygulamanızı dağıtmadan önce mutlaka imzalayın.|Geçerli bir SHA1 karması belirttiğinizden –c komut satırı bayrağını takip ederek emin olun. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için günlük dosyaları
 Uygulama Sarmalama Aracı kullanılarak sarmalanan uygulamalar, iOS istemci cihaz konsoluna yazılan günlükler oluşturur. Bu bilgiler, uygulamayla ilgili sorun yaşadığınızda ve sorunun Uygulama Sarmalama Aracı ile ilişkili olup olmadığını belirlemeniz gerektiğinde yararlıdır. Bu bilgileri almak için aşağıdaki adımları kullanın:
 
-1.  Uygulamayı çalıştırarak sorunu yeniden oluşturun.
+1. Uygulamayı çalıştırarak sorunu yeniden oluşturun.
 
-2.  Apple tarafından sunulan [Dağıtılan iOS Uygulamalarının Hatalarını Ayıklama](https://developer.apple.com/library/ios/qa/qa1747/_index.html)yönergelerini izleyerek konsol çıkışını alın.
+2. Apple tarafından sunulan [Dağıtılan iOS Uygulamalarının Hatalarını Ayıklama](https://developer.apple.com/library/ios/qa/qa1747/_index.html)yönergelerini izleyerek konsol çıkışını alın.
 
-3.  Konsola aşağıdaki betiği girerek Uygulama Kısıtlamaları çıkışı için kaydedilen günlükleri filtreleyin:
+3. Konsola aşağıdaki betiği girerek Uygulama Kısıtlamaları çıkışı için kaydedilen günlükleri filtreleyin:
 
     ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
+
     Filtrelenmiş günlükleri Microsoft'a gönderebilirsiniz.
 
     > [!NOTE]
@@ -331,7 +339,7 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 
 ### <a name="steps-to-enable-entitlements"></a>Yetkilendirmeleri etkinleştirme adımları
 
-1.  Uygulamanızda yetenekleri etkinleştirin:
+1. Uygulamanızda yetenekleri etkinleştirin:
 
     a.  Xcode’da, uygulamanızın hedefine gidin ve **Yetenekler** bölmesine tıklayın.
 
@@ -341,7 +349,7 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 
     d.  Uygulamanızı oluşturun ve sarmalamak üzere imzalayın.
 
-2.  Sağlama profilinizde yetkilendirmeleri etkinleştirin:
+2. Sağlama profilinizde yetkilendirmeleri etkinleştirin:
 
     a.  Apple Geliştirici Üye Merkezi’nde oturum açın.
 
@@ -351,7 +359,7 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 
     d.  Sağlama profili sihirbazını tamamlayın ve dosyanızı indirin.
 
-3.  Tüm önkoşullara uyduğunuzdan emin olun ve ardından uygulamayı sarmalayın.
+3. Tüm önkoşullara uyduğunuzdan emin olun ve ardından uygulamayı sarmalayın.
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Sık karşılaşılan yetkilendirme sorunlarını giderme
 iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıdaki sorun giderme adımlarını deneyin.
@@ -364,20 +372,20 @@ iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıd
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>İmzalı bir uygulamanın var olan yetkilendirmelerini bulma
 İmzalı uygulamanın ve sağlama profilinin var olan yetkilendirmelerini gözden geçirmek için:
 
-1.  .ipa dosyasını bulun ve uzantısını .zip olarak değiştirin.
+1. .ipa dosyasını bulun ve uzantısını .zip olarak değiştirin.
 
-2.  .zip dosyasını genişletin. Bu işlem, .app paketinizi içeren bir Payload klasörü oluşturur.
+2. .zip dosyasını genişletin. Bu işlem, .app paketinizi içeren bir Payload klasörü oluşturur.
 
-3.  .app paketinde yetkilendirmeleri denetlemek için kod imzalama aracını kullanın; burada `YourApp.app`, .app paketinizin gerçek adıdır:
+3. .app paketinde yetkilendirmeleri denetlemek için kod imzalama aracını kullanın; burada `YourApp.app`, .app paketinizin gerçek adıdır:
 
     ```bash
-    $ codesign -d --entitlements :- "Payload/YourApp.app"
+    codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
-4.  Uygulamanın gömülü sağlama profilinin yetkilendirmelerini denetlemek için güvenlik aracını kullanın; burada `YourApp.app`, .app paketinizin gerçek adıdır.
+4. Uygulamanın gömülü sağlama profilinin yetkilendirmelerini denetlemek için güvenlik aracını kullanın; burada `YourApp.app`, .app paketinizin gerçek adıdır.
 
     ```bash
-    $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Uygulamadan yetkilendirmeleri kaldırmak için –e parametresini kullanma
@@ -390,19 +398,19 @@ Bu komut, uygulamada etkinleştirilmiş olan ve yetkilendirmeler dosyasında yer
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için güvenlik ve gizlilik
 Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından aşağıdaki en iyi uygulamaları kullanın.
 
--   Belirttiğiniz imzalama sertifikası, sağlama profili ve iş kolu uygulaması, uygulama sarmalama aracını çalıştırmak için kullandığınız Mac OS makinesinde olmalıdır. Dosyalar bir UNC yolu üzerindeyse, bunların Mac OS makineden erişilebilir olduğundan emin olun. Yol, IPsec veya SMB imzalama aracılığıyla korunmalıdır.
+- Belirttiğiniz imzalama sertifikası, sağlama profili ve iş kolu uygulaması, uygulama sarmalama aracını çalıştırmak için kullandığınız Mac OS makinesinde olmalıdır. Dosyalar bir UNC yolu üzerindeyse, bunların Mac OS makineden erişilebilir olduğundan emin olun. Yol, IPsec veya SMB imzalama aracılığıyla korunmalıdır.
 
     Yönetici konsoluna içeri aktarılan kaydırılan uygulama, aracı çalıştırdığınız bilgisayarda bulunmalıdır. Dosya bir UNC yolu üzerindeyse, yolun yönetici konsolunu çalıştıran bilgisayarda erişilebilir durumda olduğundan emin olun. Yol, IPsec veya SMB imzalama aracılığıyla korunmalıdır.
 
--   Uygulama Sarmalama Aracının GitHub deposundan indirildiği ortamın IPsec veya SMB imzalama aracılığıyla korunması gerekir.
+- Uygulama Sarmalama Aracının GitHub deposundan indirildiği ortamın IPsec veya SMB imzalama aracılığıyla korunması gerekir.
 
--   İşlediğiniz uygulama, saldırılara karşı koruma sağlamak için güvenilir bir kaynaktan gelmelidir.
+- İşlediğiniz uygulama, saldırılara karşı koruma sağlamak için güvenilir bir kaynaktan gelmelidir.
 
--   Uygulama Sarmalama Aracında belirttiğiniz çıkış klasörünün, özellikle uzak bir klasör ise, güvenli olduğundan emin olun.
+- Uygulama Sarmalama Aracında belirttiğiniz çıkış klasörünün, özellikle uzak bir klasör ise, güvenli olduğundan emin olun.
 
--   Karşıya dosya yükleme iletişim kutusu içeren iOS uygulamaları, kullanıcıların uygulama için geçerli olan kes, kopyala ve yapıştır kısıtlamalarını aşmasına imkan sağlar. Örneğin, bir kullanıcı karşıya dosya yükleme iletişim kutusunu kullanarak uygulama verilerinin ekran görüntüsünü karşıya yükleyebilir.
+- Karşıya dosya yükleme iletişim kutusu içeren iOS uygulamaları, kullanıcıların uygulama için geçerli olan kes, kopyala ve yapıştır kısıtlamalarını aşmasına imkan sağlar. Örneğin, bir kullanıcı karşıya dosya yükleme iletişim kutusunu kullanarak uygulama verilerinin ekran görüntüsünü karşıya yükleyebilir.
 
--   Cihazınızdaki belgeler klasörünü sarmalanan bir uygulamadan izliyorsanız, .msftintuneapplauncher adında bir klasör görebilirsiniz. Bu dosyayı değiştirir veya silerseniz, bu, kısıtlanan uygulamaların düzgün çalışmasını etkileyebilir.
+- Cihazınızdaki belgeler klasörünü sarmalanan bir uygulamadan izliyorsanız, .msftintuneapplauncher adında bir klasör görebilirsiniz. Bu dosyayı değiştirir veya silerseniz, bu, kısıtlanan uygulamaların düzgün çalışmasını etkileyebilir.
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Citrix MDX mVPN ile iOS için Intune Uygulama Sarmalama Aracı
 Bu özellik, iOS için Citrix MDX uygulama sarmalayıcıyla bir tümleştirmedir. Tümleştirme, gelen Intune Uygulama Sarmalama Araçları'na yönelik ek, isteğe bağlı bir komut satırı bayrağıdır (`-citrix`).
@@ -418,11 +426,13 @@ Bu özellik, iOS için Citrix MDX uygulama sarmalayıcıyla bir tümleştirmedir
 Yalnızca genel uygulama sarmalama komutunu sonuna `-citrix` bayrağı eklenmiş olarak çalıştırın. `-citrix` bayrağı şu anda hiçbir bağımsız değişken almamaktadır.
 
 **Kullanım biçimi**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Örnek komut**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
@@ -442,5 +452,5 @@ Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini alma
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)
-- [Genel Sorular, sorunlar ve çözümleri cihaz ilkeleri ve profilleri](device-profile-troubleshoot.md)
+- [Cihaz ilkeleri ve profillerle ilgili yaygın sorular, sorunlar ve çözümler](device-profile-troubleshoot.md)
 - [SDK’yı kullanarak uygulamaları mobil uygulama yönetimi için etkinleştirme](app-sdk.md)

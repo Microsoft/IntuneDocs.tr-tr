@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 36e7b8468e4ee9d1f6be71a82d18f066bd7568d4
+ms.sourcegitcommit: 9110124a481160039d476cf0374a4fa0464a8509
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883785"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256210"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Koşullu erişim ilkelerini klasik Intune portalından Azure portal yeniden atama
 
@@ -194,15 +194,9 @@ Koşullu erişim ilkelerinizi Azure portal yeniden atadıktan sonra klasik Intun
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Koşullu erişim ilkelerini devre dışı bırakmak için
 
-1. [Klasik Intune portalına](https://manage.microsoft.com) gidin ve kimlik bilgilerinizle oturum açın.
+MDM, klasik Intune portalından kaldırıldığından, klasik bu ilkeleri görüntülemek/devre dışı bırakmak için aşağıdaki bağlantı verilmiştir:
 
-2. Soldaki menüden **İlkeler**’i seçin.
-
-3. **Koşullu erişim**' i seçin ve ardından Için koşullu erişim Ilkesi oluşturduğunuz Microsoft bulut hizmetini (örneğin, Exchange Online veya SharePoint Online) seçin.
-
-4. **Koşullu erişim Ilkesini etkinleştir**seçeneğinin işaretini kaldırın ve ardından **Kaydet**' e tıklayın.
-
-    ![Klasik Intune portalında koşullu erişim ilkelerini devre dışı bırakma görüntüsü](./media/reassign-ca-18.png)
+https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

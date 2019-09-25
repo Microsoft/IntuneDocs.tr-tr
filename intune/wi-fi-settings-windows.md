@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884252"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239447"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune’da Windows 10 ve üzeri cihazlar için Wi-Fi ayarları ekleme
 
@@ -62,6 +62,9 @@ Bu makalede bu ayarlar açıklanır.
     
       > [!NOTE]
       > Wi-Fi profilini kaydettiğinizde, girdiğiniz PSK değeri güvenlik nedeniyle gösterilmez. PSK’nin profile kaydedilmesine rağmen önceden paylaşılan filigran **Yapılandırılmadı** olarak görünür. PSK’yi değiştirmek için yeni bir anahtar girin ve profili kaydedin. PSK’yi kaydeder, ilkeyi düzenler ve PSK’yi boş bırakırsanız mevcut PSK kullanılmaya devam eder.
+      
+      > [!IMPORTANT]
+      > PSK, profule 'yi hedeflediğiniz tüm cihazlar için aynıdır. Anahtar tehlikeye girerse, Wi-Fi ağına bağlanmak için herhangi bir cihaz tarafından kullanılabilir. Yetkisiz erişimin olmaması için PSKs 'i güvende tutun.
 
 - **Şirket proxy ayarları**: Kuruluşunuzun içindeki proxy ayarlarını kullanmayı seçin. Seçenekleriniz şunlardır:
   - **Hiçbiri**: Yapılandırılmış bir proxy ayarı yok.

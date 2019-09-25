@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239418"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Kuruluş tarafından sağlanan iOS cihazınızı yönetime kaydedin
 
@@ -35,7 +35,7 @@ Kuruluma başlamak için cihazınızı açın ve iş veya okul kimlik bilgilerin
 
 ## <a name="what-is-apple-dep"></a>Apple DEP nedir?
 
-Kuruluşunuz cihazlarını *Apple Aygıt Kayıt Programı* (DEP) adı verilen bir hizmet yoluyla satın almış olabilir. Apple DEP, kuruluşların çok sayıda iOS veya macOS cihaz satın almasına imkan tanır. Ardından kuruluşlar bu cihazları Intune gibi tercih ettikleri bir mobil cihaz yönetim sağlayıcısında yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi edinmek istiyorsanız bkz. [iOS cihazları Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md).  
+Kuruluşunuz cihazlarını *Apple Aygıt Kayıt Programı* (DEP) adı verilen bir hizmet yoluyla satın almış olabilir. Apple DEP, kuruluşların çok sayıda iOS veya macOS cihaz satın almasına imkan tanır. Ardından kuruluşlar bu cihazları Intune gibi tercih ettikleri bir mobil cihaz yönetim sağlayıcısında yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi edinmek istiyorsanız bkz. [iOS cihazları Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
 ## <a name="set-up-your-ios-device"></a>iOS cihazınızı ayarlama
 

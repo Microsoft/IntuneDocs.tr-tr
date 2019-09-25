@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35d64aba1c4c9a06e295699ac862198c29d8b9b1
-ms.sourcegitcommit: 9f91d803dfc39336a954b79ccec6420e58375d31
+ms.openlocfilehash: 657f30748d3c4e6c4a819c5ed888c541bcb7b5c1
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211555"
+ms.locfileid: "71238219"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -62,8 +62,8 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 #### <a name="managed-google-play-private-lob-apps----1464182----"></a>Yönetilen Google Play özel LOB uygulamaları <!-- 1464182  -->
 Intune artık BT yöneticilerinin Intune konsoluna katıştırılmış bir iframe aracılığıyla özel Android LOB uygulamalarını yönetilen Google Play yayımlamasına olanak tanır.  Daha önce BT yöneticileri, çeşitli adımları gerektiren ve zaman tüketen, LOB uygulamalarını doğrudan Google Play yayımlama konsoluna yayımlamak için gereklidir. Bu yeni özellik, Intune konsolundan ayrılmak zorunda kalmadan LOB uygulamalarının en az bir adım kümesiyle kolayca yayımlanmasını sağlar.  Yöneticiler artık Google ile bir geliştirici olarak el ile Kaydolmayacak ve artık Google $25 kayıt ücretini ödemem gerekmez.  Yönetilen Google Play kullanan Android kurumsal yönetim senaryolarından herhangi biri bu özellikten yararlanabilir (iş profili, adanmış, tam olarak yönetilen ve kayıtlı olmayan cihazlar). Intune 'da, **istemci uygulamaları** > **uygulamalar** > **Ekle**' yi seçin. Ardından, **uygulama türü** listesinden **yönetilen Google Play** ' yi seçin. Yönetilen Google Play uygulamalar hakkında daha fazla bilgi için bkz. [Intune Ile Android Enterprise cihazlarına yönetilen Google Play uygulamaları ekleme](apps-add-android-for-work.md).
 
-#### <a name="company-portal-experience----1473353-3598357---"></a>Şirket Portalı deneyim <!-- 1473353, 3598357 -->
-Şirket Portalı güncelleştiriliyor. Şirket Portalı içinde uygulamalar sayfasında birden çok filtre kullanabileceksiniz. Cihaz ayrıntıları sayfası, gelişmiş bir kullanıcı deneyimiyle de güncelleştiriliyor. Bu güncelleştirmeleri tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek istiyoruz.
+#### <a name="windows-company-portal-experience----1473353-3598357---"></a>Windows Şirket Portalı deneyimi <!-- 1473353, 3598357 -->
+Windows Şirket Portalı güncelleştiriliyor. Windows Şirket Portalı içindeki uygulamalar sayfasında birden çok filtre kullanabileceksiniz. Cihaz ayrıntıları sayfası, gelişmiş bir kullanıcı deneyimiyle de güncelleştiriliyor. Bu güncelleştirmeleri tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek istiyoruz.
 
 #### <a name="macos-support-for-web-apps----3174427---"></a>Web uygulamaları için macOS desteği <!-- 3174427 -->
 Web 'deki bir URL 'ye kısayol eklemenize olanak sağlayan Web Apps, macOS Şirket Portalı kullanılarak Dock 'a yüklenebilir. Son kullanıcılar, macOS Şirket Portalı bir Web uygulaması için uygulama ayrıntıları sayfasından **Install** eylemine erişebilir. **Web bağlantısı** uygulama türü hakkında daha fazla bilgi için bkz. [Microsoft Intune uygulama ekleme](apps-add.md) ve [Microsoft Intune Web uygulamaları ekleme](web-app.md).
@@ -237,10 +237,10 @@ Intune artık iOS 13 ve macOS Catalina cihazlarının yönetimini desteklemekted
 #### <a name="bitlocker-support-for-client-driven-recovery-password-rotation-------3444125---"></a>İstemci tabanlı kurtarma parolası dönüşü için BitLocker desteği   <!--  3444125 -->
 Windows sürüm 1909 veya üstünü çalıştıran cihazlarda BitLocker için [istemci odaklı kurtarma parolası döndürmeyi](endpoint-protection-windows-10.md#windows-encryption) yapılandırmak için Intune Endpoint Protection ayarlarını kullanın.
 
-Bu ayar, bir işletim sistemi sürücüsü kurtarmasından (Bootmgr veya WinRE kullanılarak) ve bir sabit veri sürücüsünde kurtarma parolası kilidi açma işleminden sonra istemci temelli kurtarma parolası yenileme işlemini başlatır. Bu ayar, kullanılan belirli kurtarma parolasını yeniler ve birimdeki diğer kullanılmayan parolalar değişmeden kalır. Daha fazla bilgi için bkz. [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation)IÇIN BitLocker CSP belgeleri.
+Bu ayar, bir işletim sistemi sürücüsü kurtarmasından (Bootmgr veya WinRE kullanılarak) ve bir sabit veri sürücüsünde kurtarma parolası kilidi açma işleminden sonra istemci temelli kurtarma parolası yenileme işlemini başlatır. Bu ayar, kullanılan belirli kurtarma parolasını yeniler ve birimdeki diğer kullanılmayan parolalar değişmeden kalır. Daha fazla bilgi için bkz. [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)IÇIN BitLocker CSP belgeleri.
 
 #### <a name="tamper-protection-for-windows-defender-antivirus-----4705448----------"></a>Windows Defender virüsten koruma için yetkisiz koruma  <!-- 4705448        -->
-Windows Defender virüsten koruma için yetkisiz *korumayı* yönetmek üzere Intune 'u kullanın. Windows 10 Endpoint Protection için cihaz yapılandırma profillerini kullanırken, Microsoft Defender güvenlik merkezi grubunda, yetkisiz [koruma ayarını](endpoint-protection-windows-10.md#windows-defender-security-center) bulabilirsiniz. Temper koruma kısıtlamalarını açmak için devre dışı bırakma korumasını etkinleştirmek, devre dışı bırakmak için *devre dışı* bırakmak veya cihazları güncel yapılandırmayı yerinde bırakmak için*yapılandırılmamış* *olarak ayarlamanız* gerekir.  
+Windows Defender virüsten koruma için yetkisiz *korumayı* yönetmek üzere Intune 'u kullanın. Windows 10 Endpoint Protection için cihaz yapılandırma profillerini kullanırken, Microsoft Defender güvenlik merkezi grubunda, yetkisiz [koruma ayarını](endpoint-protection-windows-10.md#windows-defender-security-center) bulabilirsiniz. Etkin koruma kısıtlamalarını etkinleştirmek, *devre dışı bırakmak Için devre dışı* bırakmak veya cihazları güncel yapılandırmayı yerinde bırakmak üzere*yapılandırılmamış* olarak ayarlamak için *etkin* duruma getirebilir.  
 
 Daha fazla koruma hakkında daha fazla bilgi için bkz. Windows belgelerindeki [güvenlik ayarlarını önleme korumasıyla](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) değiştirme. 
 

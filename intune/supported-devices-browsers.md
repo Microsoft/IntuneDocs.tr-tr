@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460623"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239586"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Desteklenen işletim sistemleri ve tarayıcılar ıntune
 
@@ -33,7 +32,7 @@ Microsoft Intune'u ayarlamadan önce, desteklenen işletim sistemleriyle tarayı
 
 Cihazınıza Intune yüklerken Yardım almak için bkz: [işleri halletmek için yönetilen cihazları kullanma](/intune-user-help/company-portal-frequently-asked-questions) ve [Intune ağ bant genişliği kullanımı](network-bandwidth-use.md).
 
-Yapılandırma hizmet sağlayıcısı destek hakkında daha fazla bilgi için ziyaret [yapılandırma hizmet sağlayıcısı başvurusu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+Yapılandırma hizmeti sağlayıcısı desteği hakkında daha fazla bilgi için [yapılandırma hizmeti sağlayıcı başvurusunu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)ziyaret edin.
 
 ## <a name="intune-supported-operating-systems"></a>Intune tarafından desteklenen işletim sistemleri
 
@@ -115,12 +114,12 @@ Bu portallar için aşağıdaki tarayıcılar desteklenir:
 
 ### <a name="intune-classic-portal"></a>Intune klasik portalı
 
-Intune bilgisayar istemci yazılımı ve Mobil Tehdit Savunması ortakları ile tümleştirme gibi özellikler yalnızca klasik Intune portalında (https://manage.microsoft.com) bulunur. Klasik Intune portalı, Silverlight tarayıcı desteği gerektirir.
+Klasik Intune portalı yalnızca Intune PC yazılım istemcisi (https://manage.microsoft.com). Klasik Intune portalı, Silverlight tarayıcı desteği gerektirir.
 
 Aşağıdaki Silverlight tarayıcıları klasik Intune konsolunu destekler:
 - Internet Explorer 10 veya üstü
 - Google Chrome (42. sürümden önceki sürümler)
-- Silverlight etkinleştirilmiş olarak Mozilla Firefox [Daha fazla bilgi](https://go.microsoft.com/fwlink/?linkid=836872)
+- Silverlight özellikli Mozilla Firefox (sürüm 56 ' den önceki sürümler)
 
 > [!Note]
 > Microsoft Edge ve mobil tarayıcılar, [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx)’ı desteklemediklerinden klasik Intune portalı için desteklenmez.
