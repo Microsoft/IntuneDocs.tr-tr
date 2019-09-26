@@ -1,14 +1,13 @@
 ---
 title: Windows 10 Şirket Portalı uygulamasını el ile ekleme
 titleSuffix: Microsoft Intune
-description: Nasıl iş gücünüzün el ile Windows 10 Şirket portalı uygulamasını Bilgisayarlarını için Microsoft Store eklemeyi öğrenin.
+description: İş gücünüzün Windows 10 Şirket Portalı uygulamasını Microsoft Store BILGISAYARA nasıl el ile ekleyebileceğinizi öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a55993e564297016c6c926c6d3be46c32fe1d86b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50846ae3bfdea435a24e0a387817b5b1a96cf535
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394502"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "71303163"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme
 
@@ -47,24 +46,25 @@ Kullanıcılarınız, cihaz yönetmek ve uygulama yüklemek için Intune Şirket
 3. Çevrimdışı Şirket Portalı uygulamasını almak ve envanterinize eklemek için **Uygulamayı al**’ı seçin.
 4. **Şirket Portalı** uygulama sayfasında **Yönet**’i seçin.
 5. **Platform** olarak **Windows 10 tüm cihazlar**’ı seçin ve ardından uygun **En düşük sürüm**, **Mimari** ve **Uygulama indirme meta verileri** değerlerini seçin. 
-6. Dosyayı yerel makinenize kaydetmek için **İndir**’i seçin.
+6. Dosyayı yerel makinenize kaydetmek için **paket ayrıntıları** altında **İndir** ' i seçin.
 
-    ![Windows 10 cihazları, burada mimarisi X86 eşittir, seçili](./media/Win10CP-all-devices.png)
+    ![Mimari x86 'ya eşit olan Windows 10 cihazları seçilidir](./media/Win10CP-all-devices.png)
 
 7. **İndir**’i seçerek “Gerekli Çerçeveler” başlığı altındaki tüm paketleri indirin.  
-    Bu eylem x86, x64 ve ARM mimarileri için gerçekleştirilmelidir. Yani toplam 12 paket gerekir.
-8. Şirket portalı uygulamasını Intune'a yüklemeden önce bir klasör oluşturun (örneğin: C:\Company Portal adresine) paketlerin aşağıdaki şekilde yapılandırıldığı:
-   - Şirket Portalı paketini C:\Company Portal adresine koyun. Bu konumda bir *Bağımlılıklar* alt klasörü oluşturun.  
 
-     ![APPXBUN dosyasıyla kaydedilen Bağımlılıklar klasörünün görüntüsü](./media/Win10CP-Dependencies-save.png)
+    Bu eylemin x86, x64 ve ARM mimarileri için tamamlanması gerekir:<br> 
+    *En düşük işletim sistemi sürümü olarak 1507 ' i seçerken, 1511 ' i seçerken 12 paket ve 1607 seçilirken 15 paket olan 9 gerekli çerçeve paketi vardır.*
 
-   - Bağımlılık paketlerini *Dependencies* klasörüne yerleştirin. 
+8. Azure portalında Microsoft Intune’da Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulama **Ekle** bölmesinde Uygulama **türü** olarak iş kolu uygulaması ' nı seçerek uygulamayı eklersiniz. Ardından uygulama paketi dosyasını (uzantısı) seçersiniz. Appxdemeti).
+
+9. **Bağımlılık uygulama dosyalarını Seç** ' in altında, adım 7 ' de indirdiğiniz tüm bağımlılıkları Shift tuşuna basarak seçin ve **eklenen** sütunun, ihtiyacınız olan mimarilere göre **Evet** görüntülendiğini doğrulayın.
 
      > [!NOTE]
-     > Bağımlılıklar doğru biçimde yerleştirilmezse, Intune dosyaları tanıyamaz ve paket karşıya yükleme işlemi sırasında bunları karşıya yükleyemez. Bu durumda, karşıya yükleme başarısız olur ve bir hata görüntülenir.
+     > Bağımlılıklar eklenmemişse, uygulama belirtilen cihaz türlerine yüklenemeyebilir.
 
-9. Azure portalında Microsoft Intune’da Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. 
-10. Şirket Portalı uygulamasını, seçili hedef kullanıcılar kümenize gerekli uygulama olarak atayın.  
+10. **Tamam**' a tıklayın, Istenen **uygulama bilgilerini**girin ve **Ekle**' ye tıklayın.
+
+11. Şirket Portalı uygulamasını seçtiğiniz kullanıcı veya cihaz grupları kümesine gerekli bir uygulama olarak atayın.  
 
 Intune’un Evrensel uygulamaların bağımlılıklarını nasıl işlediği hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune MDM aracılığıyla bağımlılıkları olan bir appxbundle dağıtma](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
 

@@ -1,14 +1,13 @@
 ---
 title: Intune ile uygulama tabanlı koşullu erişim
 titleSuffix: Microsoft Intune
-description: Intune ile uygulama tabanlı koşullu erişimin nasıl çalıştığı hakkında bilgi edinin.
+description: Uygulama tabanlı Koşullu erişimin Intune ile nasıl çalıştığını öğrenin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/11/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4c39a1d95a10c96b8f34703f99c4d8414efbbf0
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 18f662bd733b42e2f35652d7d29c3ee6ff3556c7
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59894068"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "71304353"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim
 
@@ -31,7 +30,7 @@ ms.locfileid: "59894068"
 
 [Intune uygulama koruma ilkeleri](app-protection-policy.md) Intune’da kayıtlı cihazlarda şirket verilerinizi korumaya yardımcı olur. Uygulama koruma ilkelerini, yönetilmek üzere Intune’da kaydedilmemiş çalışan cihazları üzerinde de uygulayabilirsiniz. Bu durumda, şirketiniz cihazı yönetmiyor olmasına rağmen, şirket verilerinizin ve kaynaklarınızın korunmasını sağlamanız gerekir.
 
-Uygulama tabanlı koşullu erişim ve istemci uygulama yönetimi Exchange online ve diğer Office 365 hizmetlerine yalnızca Intune uygulama koruma ilkelerini destekleyen istemci uygulamaların erişmesine izin vererek bir güvenlik katmanı ekler.
+Uygulama tabanlı koşullu erişim ve istemci uygulama yönetimi, yalnızca Intune uygulama koruma ilkelerini destekleyen istemci uygulamalarının Exchange Online ve diğer Office 365 hizmetlerine erişebilmesini sağlayarak bir güvenlik katmanı ekler.
 
 > [!NOTE]
 > Yönetilen bir uygulama, uygulama koruma ilkelerinin uygulandığı ve Intune tarafından yönetilebilen bir uygulamadır.
@@ -39,27 +38,27 @@ Uygulama tabanlı koşullu erişim ve istemci uygulama yönetimi Exchange online
 Exchange Online'a yalnızca Microsoft Outlook uygulamasının erişmesine izin verdiğinizde, iOS ve Android üzerindeki yerleşik posta uygulamalarını engelleyebilirsiniz. Ayrıca, Intune uygulama koruma ilkelerinin uygulanmadığı uygulamaların SharePoint Online'a erişmesini engelleyebilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
-Bir uygulama tabanlı koşullu erişim ilkesi oluşturmadan önce aşağıdakilere sahip olmanız gerekir:
+Uygulama tabanlı bir koşullu erişim ilkesi oluşturmadan önce, şunları yapmanız gerekir:
 
 - **Enterprise Mobility + Security (EMS)** veya bir **Azure Active Directory (AD) Premium aboneliği**
 - Kullanıcıların EMS veya Azure AD lisansına sahip olması gerekir
 
-Daha fazla bilgi için bkz. [Enterprise Mobility fiyatlandırma](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırma](https://azure.microsoft.com/pricing/details/active-directory/).
+Daha fazla bilgi için bkz. [Enterprise Mobility fiyatlandırması](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) veya [Azure Active Directory fiyatlandırması](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="supported-apps"></a>Desteklenen uygulamalar
 
-Uygulama tabanlı koşullu erişimi destekleyen uygulamaların listesi [Azure Active Directory koşullu erişim teknik başvuru belgeleri](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference) içinde bulunabilir.
+Uygulama tabanlı koşullu erişimi destekleyen uygulamaların listesi [Azure Active Directory Koşullu erişim teknik başvuru belgelerinde bulunabilir.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)
 
-Uygulama tabanlı koşullu erişim [iş kolu (LOB) uygulamalarını da destekler](app-modern-authentication-block.md), ancak bu uygulamaların [Office 365 modern kimlik doğrulaması](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) kullanması gerekir. 
+Uygulama tabanlı koşullu erişim, [iş kolu (LOB) uygulamalarını da destekler](app-modern-authentication-block.md), ancak bu uygulamaların [Office 365 modern kimlik doğrulamasını](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)kullanması gerekir. 
 
-## <a name="how-app-based-conditional-access-works"></a>Uygulama tabanlı koşullu erişim nasıl çalışır?
+## <a name="how-app-based-conditional-access-works"></a>Uygulama tabanlı Koşullu erişimin nasıl çalıştığı
 
-Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamış, ardından Outlook uygulamasını kurumsal e-postaya erişirken kullanılabilecek onaylı uygulamalar listesine ekleyen bir koşullu erişim ilkesi eklemiştir.
+Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamıştır ve ardından Outlook uygulamasını kurumsal e-postaya erişirken kullanılabilecek onaylanan uygulamalar listesine ekleyen bir koşullu erişim kuralı gelir.
 
 > [!NOTE]
 > Aşağıdaki akış çizelgesi yapısı diğer yönetilen uygulamalar için kullanılabilir.
 
-![Akış grafiğinde gösterilen uygulama tabanlı koşullu erişim süreci](./media/ca-intune-common-ways-3.png)
+![Akış grafiğinde gösterilen uygulama tabanlı koşullu erişim işlemi](./media/ca-intune-common-ways-3.png)
 
 1. Kullanıcı, Azure AD kimlik doğrulamasını Outlook uygulamasından gerçekleştirmeye çalışır.
 
@@ -69,7 +68,7 @@ Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamı�
 
 3. Aracı uygulama cihaza yüklenir.
 
-4. Aracı uygulama, Azure AD'de bir cihaz kaydı oluşturan Azure AD kayıt işlemini başlatır. Bu, mobil cihaz yönetimi (MDM) kayıt işlemi ile aynı değildir, ancak koşullu erişim ilkelerinin cihazda uygulanabilmesi için bu kayıt gereklidir.
+4. Aracı uygulama, Azure AD'de bir cihaz kaydı oluşturan Azure AD kayıt işlemini başlatır. Bu, mobil cihaz yönetimi (MDM) kayıt işlemiyle aynı değildir, ancak koşullu erişim ilkelerinin cihazda zorlanabilmesi için bu kayıt gereklidir.
 
 5. Aracı uygulama, uygulamanın kimliğini doğrular. Aracı uygulamanın kullanıcı tarafından kullanılma yetkisi olup olmadığının doğrulayabilmesi için bir güvenlik katmanı vardır.
 

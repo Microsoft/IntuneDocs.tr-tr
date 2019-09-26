@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da cihaz kısıtlama ayarlarını yapılandırma | Microsoft Docs
-description: Microsoft Intune’da Android, macOS, iOS, Windows Phone ve Windows 10 cihazlarda özellikleri kısıtlamak için bir cihaz profili ekleme
+title: Microsoft Intune-Azure 'da ilke kullanarak cihaz özelliklerini kısıtlama | Microsoft Docs
+description: Android, macOS, iOS, ıpados, Windows Phone ve Windows 10 cihazlarında özellikleri kısıtlamak için bir cihaz profili ekleyin Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,46 +14,56 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cae90723c7ff92a8042f068fb49c1709506c7ff
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 8030d3c12ca3f0eda3afef39a940cce6d53bc5e8
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412422"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302387"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da cihaz kısıtlama ayarlarını yapılandırma
 
-Cihaz kısıtlamaları, bir dizi kategori altında yönettiğiniz çok çeşitli ayarları ve özellikleri denetlemenize olanak tanır, örneğin:
-- Güvenlik
-- Tarayıcı
-- Donanım
-- Veri paylaşımı ayarları
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Örneğin, iOS cihazı kullanıcılarının cihaz kamerasına erişmesini engelleyen bir cihaz kısıtlama profili oluşturabilirsiniz.
+Intune, yöneticilerin Android, iOS, macOS ve Windows cihazlarını denetlemesine yardımcı olan cihaz kısıtlama ilkeleri içerir. Bu kısıtlamalar, kuruluşunuzun kaynaklarını korumak için çok çeşitli ayarları ve özellikleri denetlemenize olanak tanır. Örneğin, yöneticiler şunları yapabilir:
 
-Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özellikler hakkında bilgi edinmek için her platform için daha fazla makale okuyun.
+- Cihaz kamerasına izin ver veya engelle
+- Google Play, uygulama mağazalarına erişimi denetleme, belgeleri ve oyunları görüntüleme
+- Yerleşik uygulamaları engelleyin veya izin verilen veya yasaklanmış uygulamaların bir listesini oluşturun
+- Dosyaları bulut ve depolama hesaplarına yedeklemeye izin ver veya engelle
+- En az parola uzunluğu ayarla ve basit parolaları engelle
+
+Bu özellikler Intune 'da kullanılabilir ve yönetici tarafından yapılandırılabilir. Intune, kuruluşunuzun ihtiyaçlarına göre bu ayarları oluşturmak ve özelleştirmek için "yapılandırma profillerini" kullanır. Bu özellikleri bir profile ekledikten sonra, profili kuruluşunuzdaki cihazlara gönderebilir veya dağıtabilirsiniz.
+
+Bu makalede bir cihaz kısıtlama profili oluşturma yöntemi gösterilmektedir. Farklı platformlar için kullanılabilir tüm ayarları da görebilirsiniz.
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
-3. Cihaz kısıtlama profili için bir **Ad** ve **Açıklama** girin.
-4. **Platform** açılan listesinden, özel ayarları uygulamak istediğiniz cihaz platformunu seçin. Şu anda, cihaz kısıtlama ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
+3. Aşağıdaki özellikleri girin:
 
-    - **Android**
-    - **Android kurumsal**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 ve üzeri**
-    - **Windows 10 ve üzeri**
+    - **Ad**: İlke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı iOS örneğidir **: Cihazlarda**kamerayı engelleyin.
+    - **Açıklama**: İlke için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: Cihazlarınızın platformu seçin. Seçenekleriniz şunlardır:  
 
-5. Açılan **Profil** türü listesinden **Cihaz kısıtlamaları**’nı seçin. Bir cihaz oluşturmak için kısıtlamaları profili Surface Hub gibi Windows 10 Team cihazlarının sonra seçin **cihaz kısıtlamaları (Windows 10 Team)** .
-6. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Ayrıntılı ayarları platformunuzu seçin:
+        - **Android**
+        - **Android kurumsal**
+        - **iOS/ıpados**
+        - **macOS**
+        - **Windows Phone 8.1**
+        - **Windows 8.1 ve üzeri**
+        - **Windows 10 ve üzeri**
+
+    - **Profil türü**: **Cihaz kısıtlamalarını**seçin.
+
+        Windows 10 Team cihazları için Surface Hub gibi bir cihaz kısıtlama profili oluşturmak için, **cihaz kısıtlamaları (Windows 10 ekibi)** öğesini seçin.
+
+4. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Ayrıntılı ayarlar için platformunuzu seçin:
 
     - [Android ayarları](device-restrictions-android.md)
-    - [Android Kurumsal ayarları](device-restrictions-android-for-work.md)
-    - [iOS ayarları](device-restrictions-ios.md)
+    - [Android kurumsal ayarları](device-restrictions-android-for-work.md)
+    - [iOS/ıpados ayarları](device-restrictions-ios.md)
     - [macOS ayarları](device-restrictions-macos.md)
     - [Windows Phone 8.1 ayarları](device-restrictions-windows-phone-8-1.md)
     - [Windows 8.1](device-restrictions-windows-8-1.md)
@@ -61,13 +71,13 @@ Cihaz kısıtlama profili temel bilgilerini öğrenin ve cihazlara özgü özell
     - [Windows 10 Team ayarları](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business ayarları](device-restrictions-windows-holographic.md)
 
-7. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
+5. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
-Profil oluşturulur ve profil listesinde gösterilir.
+Profil oluşturulur ve profiller listesinde gösterilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturulduktan sonra atanmak üzere hazırdır. Ardından [profili atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
+Profil oluşturulduktan sonra atanmak için hazırlanın. Ardından [profili atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

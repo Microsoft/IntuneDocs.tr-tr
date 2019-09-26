@@ -5,9 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/12/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,154 +14,159 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05fd362ff6f068669b85b9b78cb1dfd7d3c8011f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c7e144c91f91da998a868868880e9a12d2370e81
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397291"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71302437"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune’da yazılım güncelleştirmelerini yönetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Nasıl ve ne zaman Windows 10 cihazlarınızın hizmet olarak Windows güncelleştirmeleri belirtin güncelleştirme halkalarını tanımlamak üzere Intune kullanın. Güncelleştirme kademeleri olan ilkeleri, cihaz gruplarına atayabilirsiniz. Güncelleştirme kademelerini kullanarak işletmenizin ihtiyaçlarına uygun bir güncelleştirme stratejisi oluşturabilirsiniz. Daha fazla bilgi için bkz. [İşletmeler için Windows Update'i kullanarak güncelleştirmeleri yönetme](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
+Windows 10 cihazlarınızı bir hizmet olarak Windows 'un nasıl ve ne zaman güncelleştirçalıştığını belirten güncelleştirme halkalarını tanımlamak için Intune 'U kullanın. Güncelleştirme halkaları, cihaz gruplarına atadığınız ilkeleridir. Güncelleştirme kademelerini kullanarak işletmenizin ihtiyaçlarına uygun bir güncelleştirme stratejisi oluşturabilirsiniz. Daha fazla bilgi için bkz. [İşletmeler için Windows Update'i kullanarak güncelleştirmeleri yönetme](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
 Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. En son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
 
 
-İş İçin Windows Update kullanarak güncelleştirme yönetimi deneyimini basitleştirirsiniz. Cihaz grupları için ayrı ayrı güncelleştirmeleri onaylamanız gerekmez. Bir güncelleştirmeyi piyasaya sunma stratejisi yapılandırarak ortamlarınızda riskleri yönetebilirsiniz. Intune aşağıdakileri yapabilmenizi sağlar [güncelleştirme ayarlarını yapılandırma](windows-update-settings.md) cihazlarda ve güncelleştirme yüklemelerini erteleme olanağı tanır. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. Windows 10 güncelleştirmelerini yüklendiğinde, yapılandıran bu ayarlar koleksiyonunu adlı bir *Windows 10 güncelleştirme halkası*.
+İş İçin Windows Update kullanarak güncelleştirme yönetimi deneyimini basitleştirirsiniz. Cihaz grupları için ayrı ayrı güncelleştirmeleri onaylamanız gerekmez. Bir güncelleştirmeyi piyasaya sunma stratejisi yapılandırarak ortamlarınızda riskleri yönetebilirsiniz. Intune, cihazlarda [güncelleştirme ayarlarını yapılandırma](windows-update-settings.md) ve güncelleştirme yüklemesini erteleme olanağı sağlar. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. Windows 10 güncelleştirmelerinin yüklendiği zaman yapılandıran Bu ayar koleksiyonu, *Windows 10 güncelleştirme halkası*olarak adlandırılır.
 
-Windows 10 güncelleştirme halkası Destek [kapsam etiketleri](scope-tags.md). Kapsam etiketleri, filtrelemek ve kullandığınız yapılandırmaları kümelerini yönetmenize yardımcı olmak için güncelleştirme halkaları ile kullanabilirsiniz.
+Windows 10 güncelleştirme halkaları [kapsam etiketlerini](scope-tags.md)destekler. Kullandığınız yapılandırmaların kümelerini filtrelemenize ve yönetmenize yardımcı olması için kapsam etiketlerini güncelleştirme halkalarıyla birlikte kullanabilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar  
 
-Intune'da Windows 10 cihazları için Windows güncelleştirmelerini kullanmak için aşağıdaki önkoşulların karşılanması gerekir.  
+Intune 'da Windows 10 cihazları için Windows güncelleştirmelerini kullanmak üzere aşağıdaki önkoşulların karşılanması gerekir.  
 
-- Windows 10 bilgisayarları en az çalıştırmalısınız Windows 10 Pro veya sonraki sürümleriyle Windows Yıldönümü Güncelleştirmesi (sürüm 1607 veya üzeri)
-- Windows güncelleştirme, aşağıdaki Windows 10 sürümleri destekler:
+- Windows 10 bilgisayarları, Windows yıldönümü güncelleştirmesi veya sonraki sürümüyle en az Windows 10 Pro çalıştırmalıdır (sürüm 1607 veya üzeri)
+- Windows Update aşağıdaki Windows 10 sürümlerini destekler:
   - Windows 10
   - Windows 10 Team (Surface Hub cihazları için)
   - Windows 10 Holographic for Business  
 
-    Windows Holographic for Business dahil olmak üzere Windows güncelleştirmeleri için ayarların bir alt kümesini destekler:
+    Windows holographic for Business, aşağıdakiler dahil olmak üzere Windows güncelleştirmeleri için bir ayar alt kümesini destekler:
     - **Otomatik güncelleştirme davranışı**
     - **Microsoft ürün güncelleştirmeleri**
-    - **Hizmet kanalı**: Destekler **yarı yıllık kanal** ve **yarı yıllık kanal (hedefli)** seçenekleri  
+    - **Bakım kanalı**: **Yarı yıllık kanal** ve **yarı yıllık kanal (hedefli)** seçeneklerini destekler. Daha fazla bilgi için bkz. [Windows holographic 'ı yönetme](windows-holographic-for-business.md).  
 
-    Daha fazla bilgi için [Windows Holographic yönetme](windows-holographic-for-business.md)  
-  
-  Windows 10 Mobile çalıştıran cihazlar desteklenmez.
+    > [!NOTE]  
+    > **Desteklenmeyen sürümler ve sürümler**:
+    > - Windows 10 Mobile  
+    > - Windows 10 Enterprise LTSC. Windows Update for Business (WUfB) Şu anda *uzun süreli hizmet kanalı* sürümlerini desteklememektedir. WSUS veya Configuration Manager gibi alternatif düzeltme eki uygulama yöntemlerini kullanmayı planlayın.  
 
-- Windows cihazlarda **geri bildirim ve tanılama** > **tanılama ve kullanım verileri** ayarlanmalıdır **temel**, **geliştirilmiş**, veya **tam**.  
+- Windows cihazlarında **geri bildirim & tanılama** > **tanılaması ve kullanım verilerinin** **temel**, **Gelişmiş**veya **tam**olarak ayarlanması gerekir.  
 
-  Bu ayarı el ile yapılandırabilir veya bir Intune cihaz kısıtlama profili Windows 10 ve üzeri için kullanın. Cihaz kısıtlama profili kullanmak için ayarın **genel** > **tanılama verilerinin gönderimine** için en az **temel**. Cihaz profilleri hakkında daha fazla bilgi için bkz. [cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md).  
+  Windows 10 cihazları için *Tanılama ve kullanım verileri* ayarını el ile yapılandırabilir veya Windows 10 ve üzeri Için bir Intune cihaz kısıtlama profili kullanabilirsiniz. Bir cihaz kısıtlama profili kullanıyorsanız, **kullanım verilerini paylaşma** [cihaz kısıtlama ayarını](device-restrictions-windows-10.md#reporting-and-telemetry) en az **temel**olarak ayarlayın. Bu ayar, Windows 10 veya üzeri için bir cihaz kısıtlama ilkesi yapılandırdığınızda **Raporlama ve telemetri** kategorisi altında bulunur.
 
-- Azure Klasik portalı kullanıyorsanız [ayarlarınızı Azure portalına geçiş](#migrate-update-settings-to-the-azure-portal).  
+  Cihaz profilleri hakkında daha fazla bilgi için bkz. [cihaz kısıtlama ayarlarını yapılandırma](device-restrictions-configure.md).  
+
+- Klasik Azure portalını kullanıyorsanız, [ayarlarınızı Azure Portal geçirin](#migrate-update-settings-to-the-azure-portal).  
+
 
 ## <a name="create-and-assign-update-rings"></a>Güncelleştirme halkaları oluşturma ve atama
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve ardından **Microsoft Intune**’u seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Yazılım güncelleştirmeleri** > **Windows 10 Güncelleştirme Halkaları** > **Oluştur**’u seçin.
 4. Bir ad ve açıklama (isteğe bağlı) girin ve ardından **Yapılandır**’ı seçin.
-5. İçinde **ayarları**, iş gereksinimleriniz için ayarları yapılandırın. Kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. [Windows update ayarları](windows-update-settings.md).  
+5. **Ayarlar**' da, iş gereksinimleriniz için ayarları yapılandırın. Kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. [Windows Update ayarları](windows-update-settings.md).  
 6. İşiniz bittiğinde **Tamam**’ı seçin. **Güncelleştirme Halkası Oluştur**’da **Oluştur**’u seçin. Yeni güncelleştirme kademesi, güncelleştirme kademeleri listesinde görünür.
-7. Güncelleştirme kademeleri listesinde kademeyi atamak kademeyi seçin ve ardından \<kademe adı > sekmesinde **atamaları**.
-8. Kullanım **Ekle** ve **hariç** sekmeler, gruplar bu kademeyi tanımlamak için atanan ve ardından **Kaydet** seçerek atama işlemini tamamlayın.
+7. Halka atamak için, güncelleştirme halkaları listesinde bir halka seçin ve sonra \<halka adı > sekmesinde **atamalar**' ı seçin.
+8. Bu halkanın hangi gruplara atandığını tanımlamak için **dahil etme** ve **hariç tutma** sekmelerini kullanın ve ardından atamayı tamamlaması için **Kaydet** ' i seçin.
 
-## <a name="manage-your-windows-10-update-rings"></a>Windows 10 güncelleştirme halkaları yönetme
-Portalı'nda açmak için bir Windows 10 güncelleştirme kademesi seçin, **genel bakış** bölmesi. Bu bölmeden halkaları atama durumu görüntüleyebilir ve halka yönetmek için ek eylemler. 
-### <a name="to-view-an-updates-rings-overview-pane"></a>Bir güncelleştirme halkaları genel bakış bölmesini görüntülemek için: 
+## <a name="manage-your-windows-10-update-rings"></a>Windows 10 güncelleştirme Halkalarınızı yönetin
+Portalda, **genel bakış** bölmesini açmak Için bir Windows 10 güncelleştirme halkası seçebilirsiniz. Bu bölmeden halkalar atama durumunu görüntüleyebilir ve halkayı yönetmek için ek eylemler gerçekleştirebilirsiniz. 
+### <a name="to-view-an-updates-rings-overview-pane"></a>Bir güncelleştirme halkalarının genel bakış bölmesini görüntülemek için: 
 1. Azure Portal’da oturum açın.
-2. Gidin **Intune** > **yazılım güncelleştirmelerini** > **Windows 10 güncelleştirme halkaları**.
-3. Yönetmek veya görüntülemek istediğiniz güncelleştirme kademesi seçin.  
+2. **Intune** > **yazılım**güncelleştirmeleriWindows > **10 güncelleştirme halkaları**' na gidin.
+3. Görüntülemek veya yönetmek istediğiniz güncelleştirme halkasını seçin.  
 
-Atama durumu görüntülemenin yanı sıra güncelleştirme kademesi yönetmek için genel bakış bölmesinin üst kısmından aşağıdaki eylemlerden birini seçebilirsiniz:  
+Atama durumunu görüntülemenin yanı sıra, güncelleştirme halkasını yönetmek için genel bakış bölmesinin üst kısmından aşağıdaki işlemleri seçebilirsiniz:  
 - [Silme](#delete)  
-- [Duraklat](#pause)  
-- [Sürdür](#resume)  
-- [Genişletme](#extend)  
+- [Tamazsınız](#pause)  
+- [Bilmeniz](#resume)  
+- [Genişletmeyi](#extend)  
 - [Kaldırma](#uninstall)  
 
 ![Kullanılabilir eylemler](./media/windows-update-for-business-configure/overview-actions.png)
 
 ### <a name="delete"></a>Sil  
-Seçin **Sil** seçilen Windows 10 güncelleştirme halkası ayarlarını zorlamayı durdurmak için. Intune artık uygular ve bu ayarlar zorunlu kılar. böylece bir halka silme yapılandırmasıyla Intune'dan kaldırır.  
+Seçili Windows 10 güncelleştirme halkası ayarlarının uygulanmasını durdurmak için **Sil** ' i seçin. Bir halkayı silmek, Intune 'un yapılandırmasını artık geçerli olmaması ve bu ayarları zorunlu kıldığı şekilde Intune 'dan kaldırır.  
 
-Bir halka Intune kaydını silme, güncelleştirme kademesi atanmış olan cihazlarda ayarları değiştirmez.  Bunun yerine, cihaz, geçerli ayarlarını korur. Bu cihazlar hangi ayarları yerinde önceden yapılan bir geçmiş kaydını bulundurmaz olduğundan ve cihaz ayarları etkin ek güncelleştirme halkaları alabilirsiniz çünkü değildir.  
+Bir halkanın Intune 'dan silinmesi, güncelleştirme halkasının atandığı cihazlarda ayarları değiştirmez.  Bunun yerine, cihaz geçerli ayarlarını korur. Bunun nedeni, cihazların daha önce hangi ayarların yerinde olduğunu ve cihazın etkin kalan ek güncelleştirme halkalarından ayarları almasına yönelik bir geçmiş kaydını korumadığı bir şeydir.  
 
-#### <a name="to-delete-a-ring"></a>Bir halka silmek için  
-1. Genel Bakış sayfası için bir güncelleştirme halkası görüntülerken seçin **Sil**.  
+#### <a name="to-delete-a-ring"></a>Bir halkayı silmek için  
+1. Bir güncelleştirme halkasının genel bakış sayfasını görüntülerken **Sil**' i seçin.  
 2. **Tamam**’ı seçin.  
 
 ### <a name="pause"></a>Duraklat  
-Seçin **duraklatmak** halka duraklatma atanan cihazların zamandan 35 güne kadar özellik güncelleştirmeleri veya kalite güncelleştirmeleri almasını önlemek için. En fazla gün sayısı geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmeleri’ni tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz. Sürdürürseniz, duraklatılmış bir güncelleştirme kademesi ve sonra bu kademeyi yeniden duraklatma 35 gün dönem sıfırlar duraklatın.  
+Atanan cihazların, halyi duraklatışınızda 35 güne kadar bir özellik güncelleştirmesi veya kalite güncelleştirmeleri almasını engellemek için **Duraklat** ' ı seçin. En fazla gün sayısı geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmeleri’ni tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz. Duraklatılmış bir güncelleştirme halkasını devam ettirdikten sonra bu halkayı yeniden duraklatabilirsiniz, duraklatma süresi 35 güne sıfırlanır.  
 
- #### <a name="to-pause-a-ring"></a>Bir halka duraklatma  
-1. Genel Bakış sayfası için bir güncelleştirme halkası görüntülerken seçin **duraklatma**.  
-2. Şunlardan birini seçin **özellik** veya **kalite** güncelleştirme türü duraklatmak ve ardından **Tamam**.  
-3. Duraklattıktan sonra bir güncelleştirme türü, bir güncelleştirme türünü yeniden duraklatmak için duraklatma seçebilirsiniz.  
+#### <a name="to-pause-a-ring"></a>Bir halkayı duraklatmak için  
+1. Bir güncelleştirme halkasının genel bakış sayfasını görüntülerken **Duraklat**' ı seçin.  
+2. Bu tür bir güncelleştirmeyi duraklatmak için **özellik** veya **kalite** ' yi seçin ve ardından **Tamam**' ı seçin.  
+3. Bir güncelleştirme türünü durakladıktan sonra, diğer güncelleştirme türünü duraklatmak için yeniden Duraklat ' ı seçebilirsiniz.  
 
-Kaç gün önce bu güncelleştirmeyi kalır genel bakış bölmesinin o kademesi için bir güncelleştirme türünü duraklatıldığında görüntüler yazın sürdürür.
+Bir güncelleştirme türü duraklatıldığında, bu halkaya ilişkin genel bakış bölmesi, bu güncelleştirme türünün devam edebilmesi için kaç gün kaldığını gösterir.
 
 > [!IMPORTANT]  
-> Bir duraklatma komutu yürütün sonra cihaz, bu komut onlar iade hizmette oturum açtığında alır. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür. Ayrıca, hedeflenen bir cihaz duraklatma komutunu verdiğiniz sırada kapalıysa bu cihaz açıldığında Intune’u denetlemeden önce, zamanlanmış güncelleştirmeleri indirip yükleyebilir.
+> Bir duraklatma komutu verdikten sonra, cihazlar bu komutu hizmete bir dahaki sefer denetduklarında alır. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür. Ayrıca, hedeflenen bir cihaz duraklatma komutunu verdiğiniz sırada kapalıysa bu cihaz açıldığında Intune’u denetlemeden önce, zamanlanmış güncelleştirmeleri indirip yükleyebilir.
 
 ### <a name="resume"></a>Sürdür  
-Güncelleştirme halkası duraklatılmış durumdayken, seçebileceğiniz **sürdürme** çan özellik ve kalite güncelleştirmeleri etkin bir işlem için geri yüklemek için. Güncelleştirme halkası sürdürme sonra bu kademeyi yeniden duraklatabilirsiniz.  
+Bir güncelleştirme halkası duraklatıldığında, bu halkaya yönelik özellik ve kalite güncelleştirmelerini etkin işleme geri yüklemek için **özgeçmişi** ' ı seçebilirsiniz. Bir güncelleştirme halkasını devam ettirdikten sonra, bu halkayı yeniden duraklatabilirsiniz.  
 
-#### <a name="to-resume-a-ring"></a>Bir halka sürdürmek için  
-1. Duraklatılmış bir güncelleştirme kademesi için bir genel bakış sayfası görüntülerken seçin **sürdürme**.  
-2. Ya da sürdürmek için kullanılabilir seçenekler arasından seçim **özellik** veya **kalite** güncelleştirmeleri tıklayın ve ardından **Tamam**.  
-3. Bir güncelleştirme türü devam ettirildikten sonra bir güncelleştirme türünü yeniden sürdürmek için devam seçebilirsiniz.  
+#### <a name="to-resume-a-ring"></a>Bir halkayı sürdürmesini sağlamak için  
+1. Duraklatılmış bir güncelleştirme halkası için genel bakış sayfasını görüntülerken, yeniden Güncelleştir ' **i seçin.**  
+2. **Özelliklerin** veya **kalite** güncelleştirmelerinin her birini sürdürmesini sağlamak için kullanılabilir seçenekler arasından seçim yapın ve ardından **Tamam**' ı seçin.  
+3. Bir güncelleştirme türüne devam ettikten sonra, diğer güncelleştirme türünü sürdürmek için yeniden devam etmeyi seçebilirsiniz.  
 
 ### <a name="extend"></a>Genişletme  
-Güncelleştirme halkası duraklatılmış durumdayken, seçebileceğiniz **Genişlet** hem özellik ve kalite güncelleştirmelerini duraklatma süresi söz konusu güncelleştirme kademesi için 35 gün öncesine sıfırlanır.  
+Bir güncelleştirme halkası duraklatıldığında, bu güncelleştirme halkası için her iki özellik ve kalite güncelleştirmesi için de duraklatma süresini 35 gün olarak sıfırlamak için **Genişlet** ' i seçebilirsiniz.  
 
-#### <a name="to-extend-the-pause-period-for-a-ring"></a>Bir halka duraklatma süresini uzatmak için  
-1. Duraklatılmış bir güncelleştirme kademesi için bir genel bakış sayfası görüntülerken seçin **Genişlet**. 
-2. Ya da sürdürmek için kullanılabilir seçenekler arasından seçim **özellik** veya **kalite** güncelleştirmeleri tıklayın ve ardından **Tamam**.  
-3. Bir güncelleştirme tipi için duraklatma genişletildikten sonra yeniden başka bir güncelleştirme türü genişletmek için Genişlet seçebilirsiniz.  
+#### <a name="to-extend-the-pause-period-for-a-ring"></a>Bir halka için duraklatma süresini uzatmak için  
+1. Duraklatılmış bir güncelleştirme halkası için genel bakış sayfasını görüntülerken **Genişlet**' i seçin. 
+2. **Özelliklerin** veya **kalite** güncelleştirmelerinin her birini sürdürmesini sağlamak için kullanılabilir seçenekler arasından seçim yapın ve ardından **Tamam**' ı seçin.  
+3. Bir güncelleştirme türü için duraklama 'yı genişlettikten sonra, diğer güncelleştirme türünü genişletmek için yeniden Genişlet seçeneğini belirleyebilirsiniz.  
 
 ### <a name="uninstall"></a>Kaldır  
-Intune yönetici **kaldırma** en son (geri alma) kaldırmak için *özellik* güncelleştirme veya en son *kalite* etkin ya da duraklatılmış güncelleştirme halkası güncelleştirmesi. Bir tür kaldırıldıktan sonra diğer tür kaldırabilirsiniz. Intune desteklemez veya güncelleştirmelerini kaldırma yeteneğinin kullanıcıları yönetme.  
+Bir Intune Yöneticisi, etkin veya duraklatılmış bir güncelleştirme halkası için en son *özellik* güncelleştirmesini veya en son *kalite* güncelleştirmesini kaldırmak (geri almak) için **kaldırmayı** kullanabilir. Bir tür kaldırıldıktan sonra, diğer türü kaldırabilirsiniz. Intune, kullanıcıların güncelleştirmeleri kaldırma yeteneğini desteklemez veya yönetemez.  
 
-Kaldırma başarılı olması için:  
-- Bir cihaz Windows çalıştırmalısınız 10 Nisan 2018 Güncelleştirmesi (sürüm 1803) veya üzeri.  
+Kaldırma işleminin başarılı olabilmesi için:  
+- Bir cihazın Windows 10 Nisan 2018 Güncelleştirmesi (sürüm 1803) veya üzerini çalıştırması gerekir.  
 
-Bir cihazı en son güncelleştirmeyi yüklemiş olmanız gerekir. Güncelleştirmeleri birikmeli özelliktedir olduğundan, en son güncelleştirmeyi yükleme cihazları en son özellik ve kalite güncelleştirmelerini olmayacak. Son güncelleştirme, Windows 10 makinelerde en son sorun keşfedin geri almak için bu seçeneği ne zaman kullanabileceğinize bir örnek olduğu.  
+Bir cihazın en son güncelleştirmeyi yüklemiş olması gerekir. Güncelleştirmeler birikimli olduğundan, en son güncelleştirmeyi yükleyen cihazlar en son özellik ve kalite güncelleştirmesine sahip olacaktır. Bu seçeneği ne zaman kullanacağınızı bir örnek, Windows 10 makinelerinizde önemli bir sorun bulmalısınız.  
 
-Kaldırma kullanırken aşağıdakileri göz önünde bulundurun:  
+Kaldırma kullandığınızda aşağıdakileri göz önünde bulundurun:  
 - Özellik veya kalite güncelleştirmesini kaldırma işlemi yalnızca hizmetin içinde açıldığı hizmet kanalında kullanılabilir.  
 
-- Özelliği kaldırmak veya kalite güncelleştirmeleri, Windows 10 makineler önceki güncelleştirmeye geri yüklemek için bir ilke tetikler.  
+- Özellik veya kalite güncelleştirmeleri için kaldırma özelliğinin kullanılması, Windows 10 makinelerinizde önceki güncelleştirmeyi geri yüklemek için bir ilke tetikler.  
 
-- Kalite güncelleştirme başarıyla geri alındıktan sonra bir Windows 10 cihazında bulunan son kullanıcılara listelenen güncelleştirmeyi görmeye devam **Windows ayarları** > **güncelleştirmeleri**  >  **Güncelleştirme geçmişi**.  
+- Bir Windows 10 cihazında, bir kalite güncelleştirmesi başarıyla geri alındıktan sonra, son kullanıcılar **Windows ayarları** > **güncelleştirmeler** > **güncelleştirme geçmişi**' nde listelenen güncelleştirmeyi görmeye devam eder.  
 
-- Özel özellik güncelleştirmelerinin için özellik güncelleştirmesini kaldırma güncelleştirme kademeleri güncelleştirme ayarında yapılandırılan 2-60 gün cinsinden sınırlı zamandır **özellik güncelleştirmesini kaldırma süresini Ayarla (2-60 gün)**. Özellik Güncelleştirme için yapılandırılan süre kaldırmak daha uzun yüklendikten sonra bir cihazda yüklü olan bir özellik güncelleştirmesini geri alamazsınız.  
+- Özellikle özellik güncelleştirmeleri için, özellik güncelleştirmesini kaldırabilmeniz gereken süre 2-60 günden sınırlıdır ve güncelleştirme halkaları güncelleştirme ayarı, **özellik güncelleştirme kaldırma süresi (2 – 60 gün)** ile yapılandırılır. Özellik Güncelleştirmesi yapılandırılmış kaldırma süresinden daha uzun bir süre için yüklendikten sonra bir cihaza yüklenmiş bir özellik güncelleştirmesini geri alamazsınız.  
 
-  Örneğin, bir özellik ile güncelleştirme halkası düşünün güncelleştirmesini kaldırma süresini 20 güne. 25 gün sonra en son özellik güncelleştirmesine geri alma ve Kaldır seçeneğini kullanmak karar verin.  Özellik güncelleştirmesini üzerinde 20 gün önce yüklü olduğu cihazlara bakım işleminin bir parçası olarak gerekli bitleri kaldırdıysanız gibi kaldıramazsınız. Ancak, bunlar başarıyla 20 gün kaldırma süresi aşan önce kaldırma komutu almak üzere giriş yalnızca özellik güncelleştirmesini yukarı 19 gün önce yüklü olduğu cihazlara güncelleştirme kaldırabilirsiniz.  
+  Örneğin, özellik güncelleştirme kaldırma süresi 20 gün olan bir güncelleştirme halkasını düşünün. 25 gün sonra en son özellik güncelleştirmesini geri alma ve kaldırma seçeneğini kullanma kararı verirsiniz.  Özellik güncelleştirmesini 20 gün önce yükleyen cihazlar, bakımının bir parçası olarak gerekli bitleri kaldırdıklarından bu sürümü kaldıramıyor. Ancak, yalnızca 19 güne kadar olan özellik güncelleştirmesini yükleyen cihazlar, 20 günlük kaldırma süresini aşmadan önce kaldırma komutunu almak üzere iade ederseniz güncelleştirmeyi kaldırabilir.  
 
-Windows Update ilkeleri hakkında daha fazla bilgi için bkz. [CSP'yi güncelleştirme](https://docs.microsoft.com/windows/client-management/mdm/update-csp) Windows istemci yönetim belgelerinde.  
+Windows Update ilkeleri hakkında daha fazla bilgi için bkz. Windows istemci yönetimi belgelerinde [CSP güncelleştirme](https://docs.microsoft.com/windows/client-management/mdm/update-csp) .  
 
-#### <a name="to-uninstall-the-latest-windows-10-update"></a>En son Windows 10 güncelleştirme kaldırmak için  
-1. Duraklatılmış bir güncelleştirme kademesi için bir genel bakış sayfası görüntülerken seçin **kaldırma**.  
-2. Ya da kaldırmak için kullanılabilir seçenekler arasından seçim **özellik** veya **kalite** güncelleştirmeleri tıklayın ve ardından **Tamam**.  
-3. Bir güncelleştirme türünü kaldırma işlemini tetikleme sonra kalan güncelleştirme türü yeniden kaldırmak için Uninstall seçebilirsiniz.  
+#### <a name="to-uninstall-the-latest-windows-10-update"></a>En son Windows 10 güncelleştirmesini kaldırmak için  
+1. Duraklatılmış bir güncelleştirme halkası için genel bakış sayfasını görüntülerken **Kaldır**' ı seçin.  
+2. **Özellik** veya **kalite** güncelleştirmelerini kaldırmak için kullanılabilir seçeneklerden birini belirleyin ve ardından **Tamam**' ı seçin.  
+3. Bir güncelleştirme türü için kaldırmayı tetikledikten sonra, kalan güncelleştirme türünü kaldırmak için Kaldır ' ı tekrar seçebilirsiniz.  
 
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Güncelleştirme ayarlarını Azure portalına geçirme  
-Ayrıca Azure klasik portalındaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. Bu ayarlardan herhangi birini yapılandırdıysanız Azure portalına geçiş sırasında aşağıdakileri yapmanız kesinlikle önerilir:  
+## <a name="migrate-update-settings-to-the-azure-portal"></a>Güncelleştirme ayarlarını Azure portal geçirme  
+Ayrıca Azure klasik portalındaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. Azure portal geçiş yaparken bu ayarlardan herhangi birini yapılandırdıysanız, aşağıdaki eylemleri yapmanızı kesinlikle öneririz:  
 
 1. Azure portalında ihtiyaç duyduğunuz ayarlara sahip Windows 10 güncelleştirme kademeleri oluşturun. **Yayın öncesi özelliklere izin ver** ayarı, en son Windows 10 derlemelerinde geçerli olmadığından Azure portal’da desteklenmez. Windows 10 güncelleştirme kademeleri oluştururken kalan üç ayarı ve diğer Windows 10 güncelleştirme ayarlarını yapılandırabilirsiniz.  
 
    > [!NOTE]  
    > Klasik portalda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak bu ayarlar uygulanır. Bu ayarlardan herhangi birini geçirir ve geçirilen ilkeyi Azure portalından düzenlerseniz söz konusu ayarlar ilkeden kaldırılır.  
 
-2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme halkasına ekledikten sonra, olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. Örneğin aynı ayar farklı değerlerle yapılandırılırsa bir çakışma olur. Klasik portalda yapılandırdığınız ayar Azure portalında görüntülemez bilmek kolay bir yol değil.  
+2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme halkasına ekledikten sonra, olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. Örneğin aynı ayar farklı değerlerle yapılandırılırsa bir çakışma olur. Klasik portalda yapılandırılan ayar Azure portal görüntülenmediğinden, bildiğiniz kolay bir yol yoktur.  
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Windows Intune tarafından desteklenen ayarlarını güncelleştirme](windows-update-settings.md)  
+[Intune tarafından desteklenen Windows Update ayarları](windows-update-settings.md)  
 
 [Güncelleştirmeler için Intune uyumluluk raporları](windows-update-compliance-reports.md)
+
+[Windows 10 güncelleştirme halkaları sorunlarını giderme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
 

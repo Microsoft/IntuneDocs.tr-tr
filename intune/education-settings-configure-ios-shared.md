@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0b8230a842a7b4e3b1368388cb186defa8df72
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8747a398447dc1f477e2b0149104c4c65d3ed741
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566599"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "71302183"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 
@@ -44,7 +43,7 @@ Paylaşılan iPad özelliklerini kullanmak için önkoşullar şunlardır:
 - Apple School Manager kurulumunun bir parçası olarak [Apple kimliklerini yönet](http://help.apple.com/schoolmanager/#/tes78b477c81)'i öğrenciler için yapılandırın. [Yönetilen Apple kimlikleri hakkında daha fazla bilgi edinin](https://support.apple.com/HT205918).
 - Apple School Manager'dan eşitlenmiş cihaz seri numaraları için bir kayıt profili oluşturun.
 
-## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>1. Adım - Okul verilerinizi Azure Active Directory'ye aktarın
+## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>1\. Adım - Okul verilerinizi Azure Active Directory'ye aktarın
 
 Mevcut Öğrenci Bilgi Sisteminden (SIS) Azure Active Directory’ye (Azure AD) okul kayıtlarını içeri aktarmak için Microsoft'un School Data Sync (SDS) özelliğini kullanın.
 SDS, SIS bilgilerinizi eşitler ve Azure AD'de depolar. Azure AD, kullanıcıları ve cihazları düzenlemenize yardımcı olan bir Microsoft yönetim sistemidir. Ardından öğrencilerinizi ve sınıflarınızı yönetmenize yardımcı olması için bu verileri kullanabilirsiniz. [SDS dağıtma hakkında daha fazla bilgi edinin](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
@@ -64,12 +63,11 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 - [Azure Active Directory'de lisanslama hakkında daha fazla bilgi edinin](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>2. Adım - Intune’da bir iOS Eğitim profili oluşturun ve atayın
+## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>2\. Adım - Intune’da bir iOS Eğitim profili oluşturun ve atayın
 
 ### <a name="configure-general-settings"></a>Genel ayarları yapılandırma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 5. Profiller bölmesinde **Profil oluştur**’u seçin.
@@ -137,10 +135,9 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 
 Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
-## <a name="step-3---create-a-device-category"></a>3. Adım - Bir cihaz kategorisi oluşturun
+## <a name="step-3---create-a-device-category"></a>3\. Adım - Bir cihaz kategorisi oluşturun
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **Cihaz kaydı**'nı seçin.
 4. **Cihaz kaydı - Genel Bakış** bölmesinde **Cihaz kategorileri**’ni seçin.
 5. **Cihaz kaydı - Cihaz Kategorileri** bölmesinde **Oluştur**'u seçin.
@@ -149,10 +146,9 @@ Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
 Cihaz kategorisi **Kayıt – Cihaz Kategorileri** bölmesinde oluşturulur.
 
-## <a name="step-4--create-a-dynamic-group"></a>4. Adım – Dinamik bir grup oluşturun
+## <a name="step-4--create-a-dynamic-group"></a>4\. Adım – Dinamik bir grup oluşturun
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **Gruplar**'ı seçin.
 4. **Kullanıcılar ve Gruplar – Tüm Gruplar** bölmesinde **Yeni grup**'u seçin.
 5. **Grup** bölmesinde **Grup türü**'nü seçin ve grup için **Ad** ve **Açıklama** girin.
@@ -167,10 +163,9 @@ Cihaz kategorisi **Kayıt – Cihaz Kategorileri** bölmesinde oluşturulur.
 
 Dinamik grup **Kullanıcılar ve Gruplar – Tüm Gruplar** bölmesinde oluşturulur.
 
-## <a name="step-5--assign-a-device-to-a-category-carts"></a>5. Adım – Bir kategoriye cihaz atayın (Sepetler)
+## <a name="step-5--assign-a-device-to-a-category-carts"></a>5\. Adım – Bir kategoriye cihaz atayın (Sepetler)
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **Cihazlar**’ı seçin.
 4. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.
 5. **Cihazlar – Tüm cihazlar** bölmesinde bir cihaz seçin.
@@ -180,31 +175,29 @@ Dinamik grup **Kullanıcılar ve Gruplar – Tüm Gruplar** bölmesinde oluştur
 
 Cihaz artık cihaz kategorisiyle ilişkilendirilmiştir. Bu işlemi, oluşturduğunuz cihaz kategorisiyle ilişkilendirmek istediğiniz tüm cihazlar için yineleyin.
 
-## <a name="step-6--create-classroom-profiles"></a>6. Adım – Sınıf profilleri oluşturma
+## <a name="step-6--create-classroom-profiles"></a>6\. Adım – Sınıf profilleri oluşturma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 4. **Cihaz yapılandırması** bölmesinde **Yönet** > **Sepet Profilleri**'ni seçin.
 5. Profiller bölmesinde **Profil Oluştur**’u seçin.
 6. **İlişkilendirme Oluştur** bölmesinde, bir **Ad** ve **Açıklama** girin.
 7. Grupları Sepet Profili ile ilişkilendirmek için **Sınıf Seç** > **Yapılandır** seçeneklerini belirleyin.
-8. Sepet Profili'ne dahil edilecek sınıfları seçin sonra **Seç**'i işaretleyin. 
+8. Sepet Profili'ne dahil edilecek sınıfları seçin sonra **Seç**'i işaretleyin. 
 9. Grupları Sepet Profili ile ilişkilendirmek için **Sepet Seç** > **Yapılandır**'ı seçin.
 10. Sepet Profili'ne dahil etmek istediğiniz grupları seçin, sonra **Seç**'i işaretleyin.
 11. **İlişkilendirme Oluştur** bölmesinde, Sepet Profili'ni kaydetmek için **Kaydet**'i seçin.
 
 Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
-## <a name="step-7---assign-the-cart-profile-to-classes"></a>7. Adım - Sepet Profilini Sınıflara Atama
+## <a name="step-7---assign-the-cart-profile-to-classes"></a>7\. Adım - Sepet Profilini Sınıflara Atama
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 4. **Cihaz yapılandırması** bölmesinde, **İzle** > **Atama durumu**'nu seçin.
 5. **Atama durumu** bölmesinde, oluşturduğunuz **Sepet Profili**'ni seçin.
 6. **Sepet Profili** bölmesinde **Atamalar**'ı seçin, sonra **Dahil Et**'in altından **Dahil edilecek grupları seç**'i seçin.
-7. Sepet profilinin hedeflemesini istediğiniz sınıfları seçin (bir grup seçmeyin), sonra **Seç**'i işaretleyin. 
+7. Sepet profilinin hedeflemesini istediğiniz sınıfları seçin (bir grup seçmeyin), sonra **Seç**'i işaretleyin. 
 8. İşiniz bittiğinde **Kaydet**’i seçin.
 
 Atama tamamlanır ve Intune, sınıf atamasını temel alarak Classroom profilini hedeflenen cihazlara dağıtır.

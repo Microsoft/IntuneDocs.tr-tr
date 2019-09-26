@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 0424c9749a15e5505dd8f9eacc7e44a92439cfbc
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900541"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302238"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -34,12 +33,16 @@ ms.locfileid: "59900541"
 
 ## <a name="wipe"></a>Silme
 
-**Silme** eylemi, cihazı fabrika varsayılan ayarlarına geri yükler. **Kayıt durumu ve kullanıcı hesabını koru** onay kutusunu seçerseniz kullanıcı verileri saklanır. Aksi takdirde sürücü güvenli bir şekilde silinir.
+**Silme** eylemi, cihazı fabrika varsayılan ayarlarına geri yükler. **Kayıt durumu ve kullanıcı hesabını koru** onay kutusunu seçerseniz kullanıcı verileri saklanır. Aksi takdirde, tüm veriler, uygulamalar ve ayarlar kaldırılır.
 
 |Silme eylemi|**Kayıt durumu ve kullanıcı hesabını koru**|Intune yönetiminden kaldırıldı|Açıklama|
 |:-------------:|:------------:|:------------:|------------|
 |**Silme**| İşaretli değil | Evet | Tüm kullanıcı hesapları, verileri, MDM ilkeleri ve ayarlarını siler. İşletim sistemini varsayılan durum ve ayarlarına sıfırlar.|
 |**Silme**| İşaretli | Hayır | Tüm MDM ilkelerini temizler. Kullanıcı hesapları ve verilerini saklar. Kullanıcı ayarlarını varsayılana sıfırlar. İşletim sistemini varsayılan durum ve ayarlarına sıfırlar.|
+
+
+> [!NOTE]
+> Silme eylemi, Kullanıcı kaydıyla kaydedilen iOS cihazları için kullanılamaz.
 
 **Kayıt durumu ve kullanıcı hesabını koru** seçeneği yalnızca Windows 10 sürüm 1709 veya sonraki sürümlerde kullanılabilir.
 
@@ -49,8 +52,7 @@ Silme, cihazı yeni bir kullanıcıya vermeden önce veya cihaz kaybolduğunda/�
 
 ### <a name="wiping-a-device"></a>Bir cihazı silme
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Cihazlar** > **Tüm cihazlar**’ı seçin.
 4. Silme eylemini uygulamak istediğiniz cihazın adını seçin.
 5. Cihaz adının gösterildiği bölmede **Sil**’i seçin.
@@ -73,7 +75,7 @@ Cihaz açık ve bağlı olduğu sürece, **Silme** eylemi 15 dakikadan kısa sü
 
 ## <a name="retire"></a>Devre dışı bırakma
 
-**Kullanımdan kaldırma** eylemi; yönetilen uygulama verilerini (varsa), ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Cihaz Intune yönetiminden kaldırılır. Bu durum cihaz iade etme işlemi gerçekleştirdiğinde ve **Kullanımdan kaldırma** uzak eylemini aldığında ortaya çıkar.
+**Kullanımdan kaldırma** eylemi; yönetilen uygulama verilerini (varsa), ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Cihaz Intune yönetiminden kaldırılır. Bu durum cihaz iade etme işlemi gerçekleştirdiğinde ve **Kullanımdan kaldırma** uzak eylemini aldığında ortaya çıkar. Cihaz, cihaz iade edilene kadar Intune 'da görünmeye devam eder. Eski cihazları hemen kaldırmak istiyorsanız, bunun yerine [silme eylemini](devices-wipe.md#delete-devices-from-the-intune-portal) kullanın.
 
 **Kullanımdan kaldırma**, kullanıcının kişisel verilerini cihazda bırakır.  
 
@@ -88,7 +90,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Yönetim profili kaldırılır.|
-|E-posta|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
+|Email|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
 |Azure AD'den ayrılma|Azure AD kaydı kaldırılır.|
 
 ### <a name="android"></a>Android
@@ -104,7 +106,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikaları iptal edilir ama kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
-|E-posta|Yok (E-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
+|Email|Yok (E-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
 |Azure AD'den ayrılma|Azure AD kaydı kaldırılır.|Azure AD kaydı kaldırılır.|
 
 ### <a name="android-work-profile"></a>Android iş profili
@@ -129,14 +131,17 @@ Yalnızca bilgi noktası cihazlarını silebilirsiniz. Android bilgi noktası ci
 
 ### <a name="windows"></a>Windows
 
-|Veri türü|Windows 8.1 (MDM) ve Windows RT 8.1|Windows RT|Windows Phone 8.1 ve Windows Phone 8|Windows 10|
+|Veri türü|Windows 8.1 (MDM) ve Windows RT 8.1|Windows RT|Windows Phone 8.1 ve Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|EFS tarafından korunan dosyalar için anahtarlar iptal edilir. Kullanıcı dosyaları açamaz.|Şirket uygulamaları kaldırılmaz.|Başlangıçta Şirket Portalı üzerinden yüklenen uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.|Uygulamalar kaldırılır. Dışarıdan yükleme anahtarları kaldırılır.<br>Windows 10 sürüm 1703 (Creators Update) ve üzerinde Office 365 ProPlus uygulamaları kaldırılmaz. Kaydı kaldırılan cihazlardaki Intune yönetim uzantısıyla yüklenmiş olan Win32 uygulamaları kaldırılmaz. Yöneticiler, KCG cihazlarına Win32 uygulamalarını sunmamak amacıyla bunları atamadan hariç tutma seçeneğini değerlendirebilir.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
-|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|Desteklenmez.|Kaldırıldı.|
-|Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|Sertifikalar kaldırılır ve iptal edilir.|Desteklenmez.|Sertifikalar kaldırılır ve iptal edilir.|
-|E-posta|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir.|Desteklenmez.|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir. Intune tarafından sağlanan posta hesaplarını kaldırır.|
-|Azure AD'den ayrılma|Hayır.|Hayır.|Azure AD kaydı kaldırılır.|Yok. Windows 10’da Azure AD katılımlı cihazları kullanımdan kaldıramazsınız.|
+|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|Desteklenmiyor.|Kaldırıldı.|
+|Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|Sertifikalar kaldırılır ve iptal edilir.|Desteklenmiyor.|Sertifikalar kaldırılır ve iptal edilir.|
+|Email|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir.|Desteklenmiyor.|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir. Intune tarafından sağlanan posta hesaplarını kaldırır.|
+|Azure AD'den ayrılma|Hayır.|Hayır.|Azure AD kaydı kaldırılır.|Azure AD kaydı kaldırılır.|
+
+> [!NOTE]
+> İlk kurulum (OOBE) sırasında Azure AD 'ye eklenen Windows 10 cihazlarında, devre dışı bırakma komutu cihazdan tüm Azure AD hesaplarını kaldırır. Yerel yönetici olarak oturum açmak ve kullanıcının yerel verilerine yeniden erişim kazanmak için [Bilgisayarınızı güvenli modda başlatma bölümündeki](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) adımları izleyin. 
 
 ### <a name="retire"></a>Devre dışı bırakma
 
@@ -158,7 +163,7 @@ Cihazları Intune portalından kaldırmak istiyorsanız, bunları belirli bir ci
 Intune’u etkin olmayan, eski veya yanıt vermeyen cihazları otomatik olarak silmek üzere yapılandırabilirsiniz. Bu temizleme kuralları, cihaz kayıtlarınızın güncel kalması için cihazınızı kesintisiz bir şekilde izler. Bu şekilde silinen cihazlar, Intune yönetiminden kaldırılır.
 1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
 2. **Cihazlar** > **Cihaz temizleme kuralları** > **Evet**’i seçin.
-3. **Şu kadar gün boyunca iade etme işlemi yapmayan cihazları sil** kutusuna 90 ila 270 arasında bir sayı girin.
+3. **Bu çok gün için iade edilmemiş cihazlarda silme** kutusuna 30 ile 270 arasında bir sayı girin.
 4. **Kaydet**’i seçin.
 
 
@@ -167,13 +172,13 @@ Intune’u etkin olmayan, eski veya yanıt vermeyen cihazları otomatik olarak s
 
 İletişim sorunları veya eksik cihazlar nedeniyle, cihazları Azure AD'den silmeniz gerekebilir. Ulaşılamaz olduğunu ve Azure ile yeniden iletişim kurmasının pek olası olmadığını bildiğiniz cihazlarda, cihaz kayıtlarını Azure portalından kaldırmak için **Sil** eylemini kullanabilirsiniz. **Sil** eylemi, cihazı yönetimden kaldırmaz.
 
-1.  Yönetici kimlik bilgilerinizi kullanarak [Azure portalında Azure Active Directory](http://aka.ms/accessaad)’de oturum açın. Ayrıca [Microsoft 365 yönetim merkezinde](https://admin.microsoft.com) de oturum açabilirsiniz. Menüden **Yönetim merkezleri** > **Azure AD**'yi seçin.
-2.  Azure aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez ( **Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
-3.  **Azure Active Directory**’yi ve sonra da kuruluşunuzu seçin.
-4.  **Kullanıcılar** sekmesini seçin.
+1. Yönetici kimlik bilgilerinizi kullanarak [Azure portalında Azure Active Directory](https://aka.ms/accessaad)’de oturum açın. Ayrıca [Microsoft 365 yönetim merkezinde](https://admin.microsoft.com) de oturum açabilirsiniz. Menüden **Yönetim merkezleri** > **Azure AD**'yi seçin.
+2. Azure aboneliğiniz yoksa, bir abonelik oluşturun. Ücretli bir hesabınız varsa, bu işlem için kredi kartı veya ödeme gerekmez ( **Ücretsiz Azure Active Directory kaydınız** abonelik bağlantısını seçin).
+3. **Azure Active Directory**’yi ve sonra da kuruluşunuzu seçin.
+4. **Kullanıcılar** sekmesini seçin.
 5. Silmek istediğiniz cihazla ilişkilendirilmiş olan kullanıcıyı seçin.
-6.  **Cihazlar**’ı seçin.
-7.  Gereken cihazları kaldırın. Örneğin, artık kullanımda olmayan veya tanımları yanlış olan cihazları kaldırabilirsiniz.
+6. **Cihazlar**’ı seçin.
+7. Gereken cihazları kaldırın. Örneğin, artık kullanımda olmayan veya tanımları yanlış olan cihazları kaldırabilirsiniz.
 
 ## <a name="retire-an-apple-dep-device-from-intune"></a>Intune’daki Apple DEP cihazını devre dışı bırakma
 
@@ -182,18 +187,16 @@ Apple DEP cihazını Intune yönetiminden tamamen kaldırmak istiyorsanız bu ad
 1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
 2. **Cihazlar** > **Tüm cihazlar**’ı seçin, cihazı seçin ve sonra da **Kullanımdan kaldır**’ı seçin.
 ![Kullanımdan kaldırma ekran görüntüsü](./media/devices-wipe/retire.png)
-3. **Cihaz kaydı** > **Apple Kaydı** > **Kayıt programı belirteçleri**'ni seçin, belirteci seçin, ardından **Cihazlar**'ı ve cihazın onay kutusunu belirttikten sonra **Sil** > **Evet**’i seçin.
-![Cihazı sil için ekran görüntüsü](./media/devices-wipe/delete-device.png)
-4. [Deploy.apple.com](http://deploy.apple.com)’u ziyaret edin ve seri numarasıyla cihazı arayın.
-5. **Atanan** menüsünde **Atanmış**’ı seçin.
+3. [Deploy.apple.com](http://deploy.apple.com)’u ziyaret edin ve seri numarasıyla cihazı arayın.
+4. **Atanan** menüsünde **Atanmış**’ı seçin.
 
-6. **Yeniden Ata**’yı seçin.
+5. **Yeniden Ata**’yı seçin.
 
     ![Apple yeniden atama ekran görüntüsü](./media/devices-wipe/apple-reassign.png)
 
 ## <a name="fresh-start"></a>Yeni Başlangıç
 
-Windows 10 cihazlarda kullanılabilir. [Yeni Başlangıç](https://docs.microsoft.com/intune/device-fresh-start) hakkında daha fazla bilgi edinin.
+Windows 10 cihazlarda kullanılabilir. [Yeni Başlangıç](device-fresh-start.md) hakkında daha fazla bilgi edinin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

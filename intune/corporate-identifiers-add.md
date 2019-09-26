@@ -1,29 +1,28 @@
 ---
 title: Intune’a kurumsal tanımlayıcılar ekleme
 titleSuffix: ''
-description: Microsoft Intune’a kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin.
+description: Microsoft Intune Kurumsal tanımlayıcıları (kayıt yöntemi, IMEI ve seri numaraları) eklemeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
-ms.reviewer: dagerrit
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28ad1e492c4bdd7c87371611530cd3f8e2abc2e1
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 0d8478683ddc7b159dfd069b7a97fd7d1ad99b9c
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900970"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71305005"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -43,7 +42,16 @@ Kayıttan sonra **Kişisel** veya **Şirket** arasında [sahiplik ayarını değ
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Şirkete ait cihazları IMEI veya seri numarası ile belirleme
 
-Bir Intune yöneticisi olarak, 14 basamaklı IMEI numaralarını veya seri numaraları listeleyen bir virgülle ayrılmış değer (.csv) dosyası oluşturup içeri aktarabilirsiniz. Intune, cihaz kaydı sırasında cihaz sahipliğini şirket olarak belirtmek için bu tanımlayıcıları kullanır. Desteklenen tüm platformlar için IMEI numaraları bildirebilirsiniz. Yalnızca iOS, macOS ve Android cihazlar için seri numarası bildirebilirsiniz. Listede her IMEI numarası veya seri numarasının yönetim amacıyla belirtilen ayrıntıları bulunabilir.
+Bir Intune yöneticisi olarak, 14 basamaklı IMEI numaralarını veya seri numaraları listeleyen bir virgülle ayrılmış değer (.csv) dosyası oluşturup içeri aktarabilirsiniz. Intune, cihaz kaydı sırasında cihaz sahipliğini şirket olarak belirtmek için bu tanımlayıcıları kullanır. Listede her IMEI numarası veya seri numarasının yönetim amacıyla belirtilen ayrıntıları bulunabilir.
+
+Bu özellik aşağıdaki platformlar için desteklenir:
+
+| Platform | IMEı numaraları | Seri numaraları |
+|---|---|---|
+| Windows | Desteklenen (Windows Phone) | Desteklenmiyor |
+| iOS/macOS | Desteklenmiyor | Desteklenen |
+| Cihaz Yöneticisi yönetilen Android OS ile v10 arasındaki | Desteklenmiyor | Desteklenmiyor |
+| Diğer Android | Desteklenmiyor | Desteklenen |
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
@@ -69,14 +77,14 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 > [!IMPORTANT]
 > Bazı Android ve iOS cihazları birden çok IMEI numarasına sahiptir. Intune, kayıtlı cihaz başına yalnızca bir IMEI numarasını okur. IMEI numarasını içeri aktarıyorsanız ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse cihaz şirkete ait değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değerini görüntüler.<br>
->Ayrıca şunları da unutmayın: Seri Numaraları, iOS cihazlar için önerilen tanımlama biçimindedir.
+>Ayrıca şu şekilde aklınızda: Seri Numaraları, iOS cihazlar için önerilen tanımlama biçimindedir.
 >Android Seri numaralarının mevcut veya benzersiz olacağı garanti değildir. Seri numarasının güvenilir bir cihaz kimliği olup olmadığını anlamak için cihaz sağlayıcınızla görüşün.
 >Cihazın Intune’a gönderdiği seri numaralar, cihazdaki Android Ayarları/Hakkında menülerinde gösterilen kimlikle eşleşmeyebilir. Cihaz üreticisi tarafından belirtilen seri numarasının türünü doğrulayın.
 >Nokta (.) içeren seri numaralara sahip bir dosya yükleme denemesi, karşıya yükleme işleminin başarısız olmasına yol açar. Nokta içeren seri numaraları desteklenmez.
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Kurumsal tanımlayıcıları içeren .csv listesini karşıya yükleme
 
-1. [Azure portalında Intune’da](https://portal.azure.com) **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > **Ekle** > **CSV dosyasını karşıya yükle**’yi seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > **karşıya yükleme CSV dosyası** **Ekle** > ' yi seçin.
 
    ![Kurumsal cihaz tanımlayıcısı çalışma alanı ile Ekle düğmesinin vurgulanmış hali](./media/add-corp-id.png)
 
@@ -88,11 +96,11 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 ## <a name="manually-enter-corporate-identifiers"></a>Kurumsal tanımlayıcıları el ile girme
 
-1. [Azure portalında Intune’da](https://portal.azure.com) **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > **Ekle** > **El ile gir**’i seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > ' nı seçin**ENTER el ile** **ekleyin** > .
 
 2. **Tanımlayıcıları ekle** dikey penceresinde tanımlayıcı türünü seçin: **IMEI** veya **Seri**.
 
-3. Eklemek istediğiniz tüm tanımlayıcılar için **Tanımlayıcı** ve **Ayrıntılar**’ı girin. Tanımlayıcıları girmeyi tamamladığınızda **Ekle**’yi seçin.
+3. Eklemek istediğiniz her tanımlayıcı için **tanımlayıcıyı** ve **ayrıntıları** girin. Tanımlayıcıları girmeyi tamamladığınızda **Ekle**’yi seçin.
 
 5. Intune’da zaten bulunan ancak farklı ayrıntılara sahip kurumsal tanımlayıcılar girdiyseniz, **Yinelenen tanımlayıcıları gözden geçirin** açılır penceresi karşınıza çıkar. Intune’da üzerine yazmak istediğiniz tanımlayıcıları seçin ve **Tamam**’a tıklayarak bunları ekleyin. Her bir tanımlayıcı için yalnızca ilk yinelenen öğe karşılaştırılır.
 
@@ -102,7 +110,7 @@ Yeni cihaz tanımlayıcılarını görmek için **Yenile**'ye tıklayabilirsiniz
 
 ## <a name="delete-corporate-identifiers"></a>Kurumsal tanımlayıcıları silme
 
-1. [Azure portalında Intune’da](https://portal.azure.com) **Cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları**’nı seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları**' nı seçin.
 2. Silmek istediğiniz cihaz tanımlayıcılarını seçin ve **Sil**’e dokunun.
 3. Silmeyi onaylayın.
 
@@ -116,8 +124,8 @@ Uluslararası Mobil Donanım Kimlikleri (IMEI) hakkındaki ayrıntılı belirtim
 Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** görüntülenir. Yönetici olarak, cihazları **Kişisel** veya **Şirkete ait** olarak belirtebilirsiniz.
 
 **Cihaz sahipliğini değiştirmek için:**
-1. [Azure portalında Intune](https://portal.azure.com)’da, **Cihazlar**’a gidin ve cihazı seçin.
-2. **Özellikler**’i seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihazlar** ' a gidin ve cihazı seçin.
+2. Seçin **özellikleri**.
 3. **Cihaz sahipliği**’ni **Kişisel** veya **Şirkete ait** olarak belirtin.
 
    ![Cihaz kategorisi ve Cihaz sahipliği seçeneklerini gösteren cihaz özellikleri](./media/device-properties.png)

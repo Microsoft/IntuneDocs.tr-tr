@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
-ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.openlocfilehash: eae10cc2a7e1965d83d2c0c59d138b44eafcddf0
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64764732"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71303379"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir Windows iş kolu uygulaması ekleme
 
@@ -31,16 +30,15 @@ ms.locfileid: "64764732"
 
 İş kolu (LOB) uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Bu tür bir uygulama genellikle şirket içinde yazılmıştır. Aşağıdaki adımlar, Microsoft Intune'a bir Windows LOB uygulaması eklemenize yardımcı olan yönergeler sağlar.
 
-## <a name="step-1-specify-the-software-setup-file"></a>1. adım: Yazılım kurulum dosyasını belirtme
+## <a name="step-1-specify-the-software-setup-file"></a>1\. adım: Yazılım kurulum dosyasını belirtme
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
 6. **Uygulama ekle** bölmesinde **İş kolu uygulaması**’nı seçin.
 
-## <a name="step-2-configure-the-app-package-file"></a>2. adım: Uygulama paketi dosyasını yapılandırma
+## <a name="step-2-configure-the-app-package-file"></a>2\. adım: Uygulama paketi dosyasını yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
 2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra **.msi**, **.appx** veya **.appxbundle** uzantısına sahip bir Windows yükleme dosyası seçin.
@@ -51,7 +49,7 @@ ms.locfileid: "64764732"
 1. İşiniz bittiğinde **Tamam**’a tıklayın.
 
 
-## <a name="step-3-configure-app-information"></a>3. adım: Uygulama bilgilerini yapılandırma
+## <a name="step-3-configure-app-information"></a>3\. adım: Uygulama bilgilerini yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
 2. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
@@ -63,7 +61,7 @@ ms.locfileid: "64764732"
     - **Şirket Portalı’nda bu uygulamayı öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz attığında, uygulamayı şirket portalının ana sayfasında önce çıkacak şekilde görüntüleyin.
     - **Bilgi URL'si**: İsteğe bağlı olarak, uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
     - **Gizlilik URL’si**: İsteğe bağlı olarak, uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
-    - **Komut satırı bağımsız değişkenleri**: İsteğe bağlı olarak, çalıştığında .msi dosyasına uygulamak istediğiniz komut satırı bağımsız değişkenleri girin.  Örneğin **/q**. MSIEXEC komutu veya bağımsız değişken gibi içermez **/i** veya **/x**gibi otomatik olarak kullanılır. Daha fazla bilgi için [komut satırı seçenekleri](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). 
+    - **Komut satırı bağımsız değişkenleri**: İsteğe bağlı olarak, çalıştığında .msi dosyasına uygulamak istediğiniz komut satırı bağımsız değişkenleri girin.  Örneğin **/q**. Otomatik olarak kullanıldıkları için, MSIEXEC komutunu veya **/ı** veya **/x**gibi bağımsız değişkenleri eklemeyin. Daha fazla bilgi için bkz. [komut satırı seçenekleri](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). . MSI dosyası için ek komut satırı seçenekleri gereklidir [Win32 App Management](apps-win32-app-management.md)kullanmayı düşünün.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
     - **Sahip**: İsteğe bağlı olarak uygulama sahibinin adını girin. Örneğin **İK departmanı**.
     - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
@@ -79,6 +77,9 @@ ms.locfileid: "64764732"
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
+   > [!NOTE]
+   > Intune hizmetinin yeni bir appx dosyasını cihaza başarıyla dağıtması için, appx paketinizin appxmanifest. xml dosyasındaki `Version` dizeyi artırmanız gerekir.
+    
 ## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Sürüm denetim işlemini yoksaymak için bir kendi kendini güncelleştiren MSI uygulaması yapılandırma
 
 Sürüm denetim işlemini yoksaymak için bilinen bir kendi kendini güncelleştiren MSI uygulaması yapılandırabilirsiniz. 

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec071622a2e0d49068864f8bfb47954f54c8ba4
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: bde1c296abb99e8c0c81b44908e78b204c62388e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900290"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304123"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz iOS ayarları
 
@@ -40,7 +39,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 [Uyumluluk ilkesi oluşturma](create-compliance-policy.md#create-the-policy). **Platform** olarak **iOS**’u seçin.
 
-## <a name="email"></a>E-posta
+## <a name="email"></a>Email
 
 - **Mobil cihazların yönetilen e-posta profillerine sahip olmasını gerekli kıl**: **Gerekli Kıl** olarak ayarlandığında Intune tarafından yönetilen bir e-posta profiline sahip olmayan cihazlar uyumlu olarak kabul edilmez. Bir cihaz doğru hedeflenmediğinde veya kullanıcı cihazda e-posta hesabını el ile ayarladığında, cihazda yönetilen bir e-posta profili olmaz. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
 
@@ -71,7 +70,7 @@ E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Intune ile e-posta p
 
 ## <a name="system-security"></a>Sistem güvenliği
 
-### <a name="password"></a>Parola
+### <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
 > [!NOTE]
 > iOS cihazına uyumluluk veya yapılandırma ilkesi uygulandıktan sonra her 15 dakikada bir kullanıcılardan bir geçiş kodu ayarlamaları istenir. Geçiş kodu ayarlanana kadar kullanıcılara sürekli bu istem gönderilir.
@@ -85,7 +84,7 @@ E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Intune ile e-posta p
     Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
 
 - **Parola istenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi girin.
-- **Parola zaman aşımı (gün sayısı)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
+- **Parola zaman aşımı (gün sayısı)** : Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
 - **Yeniden kullanılması önlenecek önceki parola sayısı**: Daha önce kullanılan kaç parolanın kullanılamayacağını belirtir.
 
 ### <a name="device-security"></a>Cihaz güvenliği

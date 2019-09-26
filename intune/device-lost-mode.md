@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/25/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66a3ba7d57d71aeb446bf86449f39c4a557eed62
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e327d545e64a3edca12c57e399c405a72630b9c
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392297"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304735"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune ile iOS cihazlarda kayıp modunu etkinleştirme
 
@@ -41,8 +40,7 @@ Bu özellik aşağıdakilerde desteklenmez:
 
 ## <a name="enable-lost-mode"></a>Kayıp modunu etkinleştirme
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
 4. Yönettiğiniz cihazların listesinden bir iOS cihazı seçin ve sonra da **...Diğer** öğesini seçin. Ardından **Kayıp modu** uzak eylemini seçin.
 5. **Kayıp modu**’nda, bu özelliği etkinleştirin. Ardından, gösterilecek iletiyi ve ilgili kişi telefon numarasını girin.

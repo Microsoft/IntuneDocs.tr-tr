@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3458570f617fb24fa2798c843ca4d7c69342472
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: e4d891d38b9bbd305a29265a79889ec7eeab2783
+ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896576"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "71301750"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir Windows Phone iş kolu uygulaması ekleme
 
@@ -31,23 +30,22 @@ ms.locfileid: "59896576"
 
 Windows Phone iş kolu (LOB) uygulamalarını Microsoft Intune’a eklemek için bu makaledeki bilgileri kullanın. LOB uygulamaları, bir uygulama yükleme dosyasından Intune’a eklediğiniz uygulamalardır. Bu tür bir uygulama genellikle şirket içinde yazılmıştır. Intune, LOB uygulamasını kullanıcının cihazına yükler. 
 
-## <a name="step-1-specify-the-software-setup-file"></a>Adım 1: Yazılım kurulum dosyasını belirtme
+## <a name="step-1-specify-the-software-setup-file"></a>1\. adım: Yazılım kurulum dosyasını belirtme
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
 5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
 6. **Uygulama ekle** bölmesinde **İş kolu uygulaması**’nı seçin.
 
-## <a name="step-2-configure-the-app-package-file"></a>Adım 2: Uygulama paketi dosyasını yapılandırma
+## <a name="step-2-configure-the-app-package-file"></a>2\. adım: Uygulama paketi dosyasını yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
 2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra **.xap** uzantısına sahip bir Windows Phone yükleme dosyası seçin.
 3. İşiniz bittiğinde **Tamam**’a tıklayın.
 
 
-## <a name="step-3-configure-app-information"></a>Adım 3: Uygulama bilgilerini yapılandırma
+## <a name="step-3-configure-app-information"></a>3\. adım: Uygulama bilgilerini yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
 2. **Uygulama bilgileri** bölmesinde uygulama bilgilerini yapılandırın. Seçtiğiniz uygulamaya bağlı olarak bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.

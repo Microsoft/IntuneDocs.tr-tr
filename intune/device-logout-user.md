@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/27/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23af88f4d595669589b8f7104cbac0c5b695602f
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 15c2cbd80f30db73b5459d1c838ebc2fa0aab887
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898845"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71303586"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Intune tarafından yönetilen iOS cihazlarında geçerli kullanıcı oturumunu kapatma
 
@@ -41,11 +40,11 @@ ms.locfileid: "59898845"
 
 ## <a name="how-to-log-out-the-current-user"></a>Geçerli kullanıcının oturumunu kapatma
 
-1.  Azure Portal’da oturum açın.
-2.  **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
-3.  **Intune** dikey penceresinde **Cihazlar**’ı seçin.
-4.  **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
-5.  Yönettiğiniz cihazlar listesinden bir iOS cihazı seçin, ardından **Geçerli kullanıcı oturumunu kapat** uzak cihaz eylemini seçin.
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçin.
+3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
+4. **Cihazlar ve gruplar** dikey penceresinde **Tüm cihazlar**’ı seçin.
+5. Yönettiğiniz cihazlar listesinden bir iOS cihazı seçin, ardından **Geçerli kullanıcı oturumunu kapat** uzak cihaz eylemini seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

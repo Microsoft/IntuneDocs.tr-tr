@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c75923440b8b8147f7ed75a06df2435ed6eb0981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3bcfad3937b4ab6f533cd7ac915a964f2551be45
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565290"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71302298"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 cihaz kısıtlama ayarları
 
@@ -32,30 +31,30 @@ Bu makalede, Windows Phone 8.1 çalıştıran cihazlar için yapılandırabilece
 
 ## <a name="general"></a>Genel
 
--   **Kamera** - Cihazın kamerasını etkinleştirir veya engeller.
--   **Kopyala ve yapıştır** - Cihazda kopyalama ve yapıştırma işlevlerini etkinleştirir veya engeller.
--   **Çıkarılabilir depolama** - Cihazın SD kartları gibi çıkarılabilir depolama birimleri kullanmasına olanak tanır.
--   **Coğrafi konum** - Cihazın konum bilgilerini kullanmasına olanak tanır.
--   **Microsoft hesabı** - Kullanıcının cihaza bir Microsoft hesabı bağlamasını etkinleştirin veya engelleyin.
--   **Ekran yakalama** - Kullanıcının ekran içeriğini resim dosyası olarak yakalamasına olanak tanır.
--   **Tanılama verisi gönderme** - Cihazın Microsoft’a tanılama bilgileri göndermesini etkinleştirir.
--   **Özel e-posta hesapları eşitleme** - Cihazın Microsoft olmayan e-posta hesaplarına bağlanmasına olanak tanır.
+- **Kamera** - Cihazın kamerasını etkinleştirir veya engeller.
+- **Kopyala ve yapıştır** - Cihazda kopyalama ve yapıştırma işlevlerini etkinleştirir veya engeller.
+- **Çıkarılabilir depolama** - Cihazın SD kartları gibi çıkarılabilir depolama birimleri kullanmasına olanak tanır.
+- **Coğrafi konum** - Cihazın konum bilgilerini kullanmasına olanak tanır.
+- **Microsoft hesabı** - Kullanıcının cihaza bir Microsoft hesabı bağlamasını etkinleştirin veya engelleyin.
+- **Ekran yakalama** - Kullanıcının ekran içeriğini resim dosyası olarak yakalamasına olanak tanır.
+- **Tanılama verisi gönderme** - Cihazın Microsoft’a tanılama bilgileri göndermesini etkinleştirir.
+- **Özel e-posta hesapları eşitleme** - Cihazın Microsoft olmayan e-posta hesaplarına bağlanmasına olanak tanır.
 
 ## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
--   **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
-    -   **Gerekli parola türü** - Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).
-    -   **En az parola uzunluğu** - Parolada bulunması gereken karakter sayısı alt sınırını belirtir.
-    -   **Basit parolalar** - ‘0000’ ve ‘1234’ gibi basit parolaların kullanılabileceğini belirtir.
-    -   **Cihaz silinmeden önceki oturum açma hatası sayısı** - Cihaz temizlenmeden önce kullanıcının kaç kez hatalı parola girilebileceğini belirtir.
-    -   **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - Ekran otomatik olarak kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.
-    -   **Parola süresinin sonu (gün)** - Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.
-    -   **Önceki parolaların yeniden kullanılmasını engelle** - Önceden kullanılmış olan kaç parolanın anımsanacağını belirtir.
--   **Şifreleme** - Desteklenen mobil cihazlarda verilerin şifrelenmesini zorunlu tutar.
+- **Parola** - Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
+  - **Gerekli parola türü** - Gerekli parola türünü belirtir (alfasayısal veya yalnızca sayısal gibi).
+  - **En az parola uzunluğu** - Parolada bulunması gereken karakter sayısı alt sınırını belirtir.
+  - **Basit parolalar** - ‘0000’ ve ‘1234’ gibi basit parolaların kullanılabileceğini belirtir.
+  - **Cihaz silinmeden önceki oturum açma hatası sayısı** - Cihaz temizlenmeden önce kullanıcının kaç kez hatalı parola girilebileceğini belirtir.
+  - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** - Ekran otomatik olarak kilitlenmeden önce cihazın boşta bekleyeceği süreyi belirtir.
+  - **Parola süresinin sonu (gün)** - Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını belirtir.
+  - **Önceki parolaların yeniden kullanılmasını engelle** - Önceden kullanılmış olan kaç parolanın anımsanacağını belirtir.
+- **Şifreleme** - Desteklenen mobil cihazlarda verilerin şifrelenmesini zorunlu tutar.
 
 ## <a name="app-store"></a>Uygulama Mağazası
 
--   **Uygulama mağazası** - Kullanıcıların cihazdan uygulama mağazasına bağlanmasına olanak tanır.
+- **Uygulama mağazası** - Kullanıcıların cihazdan uygulama mağazasına bağlanmasına olanak tanır.
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
@@ -80,18 +79,18 @@ Uygulamanın sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu izin v
 
 ### <a name="additional-options"></a>Ek seçenekler
 
-Ayrıca, **İçeri Aktar**’a tıklayarak listeyi <*uygulama url’si*>, <*uygulama adı*> , <app publisher> biçimindeki bir csv dosyasından doldurabilir veya **Dışarı Aktar**’a tıklayarak kısıtlı uygulama listesinin içeriğiyle, aynı biçimde bir csv dosyası oluşturabilirsiniz.
+Ayrıca, **Içeri aktar** ' a tıklayarak listeyi <*uygulama URL 'si*>, <*uygulama adı*>, <*uygulama yayımcısı*> veya kısıtlanmış Içeriğini içeren bir CSV dosyası oluşturmak için **dışarı aktar** ' a tıklayabilirsiniz. Aynı biçimdeki uygulamalar listesi.
 
 
-## <a name="browser"></a>Tarayıcı
+## <a name="browser"></a>Browser
 
--   **Web tarayıcısı** - Cihazlarda yerleşik web tarayıcısını etkinleştirir veya engeller.
+- **Web tarayıcısı** - Cihazlarda yerleşik web tarayıcısını etkinleştirir veya engeller.
 
 ## <a name="cellular-and-connectivity"></a>Hücresel ve Bağlantı
 
--   **Wi-Fi** - Cihazda Wi-Fi işlevselliğini etkinleştirir veya devre dışı bırakır.
--   **Wi-Fi paylaşımı** - Cihazda Wi-Fi paylaşımının kullanımını etkinleştirir.
--   **Wi-Fi etkin noktalarına otomatik bağlanma** - Cihazın ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmasına ve tüm kullanım koşullarını otomatik olarak kabul etmesine olanak tanır.
--   **Wi-Fi etkin nokta raporlama** - Kullanıcının yakındaki bağlantıların keşfetmesine yardımcı olmak için Wi-Fi bağlantıları hakkında bilgi gönderir.
--   **NFC** - Bu özelliği destekleyen cihazlarda yakın alan iletişimini kullanan işlemleri etkinleştirir veya devre dışı bırakır.
--   **Bluetooth** - Cihazda Bluetooth işlevselliğini etkinleştirir veya devre dışı bırakır.
+- **Wi-Fi** - Cihazda Wi-Fi işlevselliğini etkinleştirir veya devre dışı bırakır.
+- **Wi-Fi paylaşımı** - Cihazda Wi-Fi paylaşımının kullanımını etkinleştirir.
+- **Wi-Fi etkin noktalarına otomatik bağlanma** - Cihazın ücretsiz Wi-Fi etkin noktalarına otomatik olarak bağlanmasına ve tüm kullanım koşullarını otomatik olarak kabul etmesine olanak tanır.
+- **Wi-Fi etkin nokta raporlama** - Kullanıcının yakındaki bağlantıların keşfetmesine yardımcı olmak için Wi-Fi bağlantıları hakkında bilgi gönderir.
+- **NFC** - Bu özelliği destekleyen cihazlarda yakın alan iletişimini kullanan işlemleri etkinleştirir veya devre dışı bırakır.
+- **Bluetooth** - Cihazda Bluetooth işlevselliğini etkinleştirir veya devre dışı bırakır.

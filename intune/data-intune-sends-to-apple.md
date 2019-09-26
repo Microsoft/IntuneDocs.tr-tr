@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1fbf8f37b989112025bd6d54328dd61246913f7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 88c3292405f159874c2a9fc1d4357e15152603c4
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400220"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304956"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune’un Apple’a gönderdiği veriler
 
@@ -40,11 +39,11 @@ Microsoft Intune’un bir bağlantı kurabilmesi için, önce Apple hizmetlerini
 
 Aşağıdaki tabloda Microsoft Intune'un bir cihazdan etkinleştirilmiş Apple hizmetlerine gönderdiği veriler listelenir. 
 
-| Hizmet | Apple’a gönderilen veriler | İçin kullanılan |
+| Hizmet | Apple’a gönderilen veriler | Kullanıldığı yer |
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Belirteç, PushMagic | Sunucu cihazı kabul ederse cihaz, anında iletme bildirimi cihaz belirtecini sunucuya sağlar. Sunucu, cihaza anında iletme mesajı göndermek için bu belirteci kullanmalıdır. Bu iade etme iletisi ayrıca bir PushMagic dizesi içerir. Sunucu bu dizeyi hatırlamalı ve cihaza gönderdiği tüm anında iletme mesajlarına eklemelidir. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Sunucu belirteci | Apple hizmetinde kimlik doğrulaması için kullanılan anında iletme bildirimi cihaz belirteci. |
-| ASM/DEP | SERVER_NAME | MDM sunucusu için tanımlanabilir bir ad. |
+| ASM/DEP | server_name | MDM sunucusu için tanımlanabilir bir ad. |
 | ASM/DEP | server_uuid | Sistem tarafından oluşturulan sunucu tanımlayıcısı. |
 | ASM/DEP | admin_id | Kullanılmakta olan geçerli belirteçleri oluşturan kişinin Apple kimliği. |
 | ASM/DEP | org_name | Kuruluş adı. |

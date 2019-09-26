@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,35 +15,43 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 7eaed88adc8603ee1f79f47cbd94eec1c3b71b95
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387097"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71301858"
 ---
-# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Intune 'da ortak iOS özelliklerini kullanmak için iOS cihaz ayarları
+# <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune 'da ortak iOS özelliklerini kullanmak için iOS ve ıpados cihaz ayarları
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune, iOS kullanıcılarının cihazlarında farklı Apple özellikleri kullanmasına izin veren bazı yerleşik ayarlar içerir. Örneğin, Yöneticiler iOS kullanıcılarının AirPrint yazıcılarını nasıl kullandığını denetleyebilir, giriş ekranındaki yerleştirme ve sayfalara uygulama ve klasör ekleme, uygulama bildirimlerini gösterme, kilit ekranında varlık etiketi ayrıntılarını gösterme, çoklu oturum açma kimlik doğrulaması kullanma ve kullanıcıların kimliğini doğrulama işlemlerinin nasıl yapılacağını denetleyebilir Sertifikalar ile.
 
 Bu özellikleri, mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak iOS cihazlarını denetlemek için kullanın.
 
-Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar.
+Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Bu özellikler hakkında daha fazla bilgi için [iOS veya macOS cihaz özelliği ayarları ekle](device-features-configure.md)' ye gidin.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[İOS cihaz yapılandırma profili oluşturun](device-features-configure.md#create-a-device-profile).
+[İOS cihaz yapılandırma profili oluşturun](device-features-configure.md).
+
+> [!NOTE]
+> Bu ayarlar, bazı ayarların tüm kayıt seçeneklerine uygulanmasıyla farklı kayıt türleri için geçerlidir. Farklı kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](ios-enroll.md).
 
 ## <a name="airprint"></a>AirPrint
+
+### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: Tüm kayıt türleri
 
 - **IP adresi**: Yazıcının IPv4 veya IPv6 adresini girin. Yazıcıları tanımlamak için ana bilgisayar adları kullanırsanız, terminaldeki yazıcıya ping ekleyerek IP adresini alabilirsiniz. IP adresini ve yolu al (Bu makalede) daha fazla ayrıntı sağlar.
 - **Yol**: Yol, genellikle `ipp/print` ağınızdaki yazıcılar içindir. IP adresini ve yolu al (Bu makalede) daha fazla ayrıntı sağlar.
 - **Bağlantı noktası**: AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özelliği boş bırakırsanız AirPrint varsayılan bağlantı noktasını kullanır. İOS 11,0 ve üzeri sürümlerde kullanılabilir.
 - **TLS**: Aktarım Katmanı Güvenliği (TLS) ile AirPrint bağlantılarını güvenli hale getirmek için **Etkinleştir** ' i seçin. İOS 11,0 ve üzeri sürümlerde kullanılabilir.
 
-**Ekle** , AirPrint sunucusunu listeye ekler. Birçok AirPrint sunucusu eklenebilir. Ayrıca, bu bilgilerle virgülle ayrılmış bir dosyayı (. csv) **Içeri aktarabilirsiniz** . **Dışarı aktar** , eklediğiniz AirPrint sunucularının bir listesini oluşturur.
+AirPrint sunucuları eklemek için şunları yapabilirsiniz:
 
-Listenizi kaydetmek için **Tamam ' ı** seçin.
+- **Ekle** , AirPrint sunucusunu listeye ekler. Birçok AirPrint sunucusu eklenebilir.
+- Bu bilgilerle, virgülle ayrılmış bir dosyayı (. csv) **Içeri aktarın** . Ya da, eklediğiniz AirPrint sunucularının bir listesini oluşturmak için **dışa aktarın** .
 
 ### <a name="get-server-ip-address-resource-path-and-port"></a>Sunucu IP adresi, kaynak yolu ve bağlantı noktası al
 
@@ -60,9 +68,13 @@ AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve ba�
 
 4. IP adresi ve kaynak yolu değerlerini kullanın. Bu örnekte, IP adresi `10.50.25.21`ve kaynak yolu olur. `/ipp/port1`
 
-## <a name="home-screen-layout-settings"></a>Giriş ekranı Düzen ayarları
+## <a name="home-screen-layout"></a>Giriş ekranı düzeni
 
-Bu ayarlar, iOS cihazlarının Dock ve giriş ekranlarındaki uygulama düzeni ve klasörlerini yapılandırır. Bu özelliği kullanmak için iOS cihazlarının denetimli modda olması ve iOS 9,3 veya sonraki bir sürümü çalıştırması gerekir.
+Bu özellik şu platformlarda geçerlidir:
+
+- iOS 9,3 veya üzeri
+
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: Otomatik cihaz kaydı (denetimli)
 
 ### <a name="dock"></a>Dock
 
@@ -78,8 +90,6 @@ Cihaz yuvası için en fazla **altı** öğe (birleştirilmiş uygulamalar ve kl
     - **Uygulama adı**: Uygulama için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
     - **Uygulama Paketi Kimliği**: Uygulamanın paket KIMLIĞINI girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
-    Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
   - **Klasör**: Ekrandaki yerleştirmeyi bir klasör eklemek için bu seçeneği belirleyin.
 
     Bir klasördeki bir sayfaya eklediğiniz uygulamalar, soldan sağa ve listeyle aynı sırada düzenlenir. Bir sayfaya sığmayacak kadar fazla uygulama eklerseniz, uygulamalar başka bir sayfaya taşınır.
@@ -92,8 +102,6 @@ Cihaz yuvası için en fazla **altı** öğe (birleştirilmiş uygulamalar ve kl
       - **Uygulama Paketi Kimliği**: Uygulamanın paket KIMLIĞINI girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
       Cihaz yuvası için en fazla **20** sayfa ekleyebilirsiniz.
-
-    Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 > [!NOTE]
 > Yerleştirme ayarlarını kullanarak simgeler eklediğinizde, ana ekrandaki ve sayfalardaki simgeler kilitlenir ve taşınamaz. Bu, iOS ve Apple 'ın MDM ilkeleriyle tasarlayabilirsiniz.
@@ -132,8 +140,6 @@ Bir cihaza en fazla **40** sayfa ekleyebilirsiniz.
         - **Uygulama adı**: Uygulama için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
         - **Uygulama Paketi Kimliği**: Uygulamanın paket KIMLIĞINI girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
       - **Klasör**: Ekrandaki yerleştirmeyi bir klasör eklemek için bu seçeneği belirleyin.
 
         Bir klasördeki bir sayfaya eklediğiniz uygulamalar, soldan sağa ve listeyle aynı sırada düzenlenir. Bir sayfaya sığmayacak kadar fazla uygulama eklerseniz, uygulamalar başka bir sayfaya taşınır.
@@ -145,8 +151,6 @@ Bir cihaza en fazla **40** sayfa ekleyebilirsiniz.
           - **Uygulama adı**: Uygulama için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
           - **Uygulama Paketi Kimliği**: Uygulamanın paket KIMLIĞINI girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
 #### <a name="example"></a>Örnek
 
 Aşağıdaki örnekte, **contoso** adlı yeni bir sayfa eklenmiştir. Sayfa, arkadaşları ve ayarları bul uygulamalarını gösterir. Ayarlar uygulaması özelliklerini göstermek için seçilmiştir:
@@ -157,9 +161,9 @@ Aşağıdaki örnekte, **contoso** adlı yeni bir sayfa eklenmiştir. Sayfa, ark
 
 ![Değiştirilmiş giriş ekranı ile iOS cihazı](./media/Bd37PHa.png)
 
-## <a name="app-notifications-settings"></a>Uygulama bildirimleri ayarları
+## <a name="app-notifications"></a>Uygulama bildirimleri
 
-İOS cihazlarındaki yüklü uygulamaların nasıl bildirim gönderileceğini seçin. Bu ayarlar, iOS 9.3 ve üzerini çalıştıran denetimli cihazları destekler.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: Otomatik cihaz kaydı (denetimli)
 
 - **Ekle**: Uygulamalar için bildirim ekleyin:
 
@@ -178,13 +182,13 @@ Aşağıdaki örnekte, **contoso** adlı yeni bir sayfa eklenmiştir. Sayfa, ark
     - **Uygulama simgesinde rozet**: Uygulama simgesine rozet eklemek için **Etkinleştir** ' i seçin. Rozet, uygulamanın bir bildirim gönderdiği anlamına gelir.
     - **Sesler**: Bildirim teslim edildiğinde bir ses çalmak için **Etkinleştir** ' i seçin.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+## <a name="lock-screen-message"></a>Kilit ekranı iletisi
 
-## <a name="lock-screen-message-settings"></a>Kilit ekranı ileti ayarları
+Bu özellik şu platformlarda geçerlidir:
 
-Oturum açma penceresinde ve kilit ekranında özel bir ileti veya metin göstermek için bu ayarları kullanın. Örneğin, bir "kaybolursa, return to..." girebilirsiniz. ileti ve varlık etiketi bilgileri. 
+- iOS 9.3 ve üzeri
 
-Bu özellik iOS 9,3 ve üstünü çalıştıran denetimli cihazları destekler.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: Otomatik cihaz kaydı (denetimli)
 
 - **Varlık etiketi bilgileri**: Cihazın varlık etiketiyle ilgili bilgileri girin. Örneğin `Owned by Contoso Corp` veya `Serial Number: {{serialnumber}}` girin.
 
@@ -197,18 +201,9 @@ Bu özellik iOS 9,3 ve üstünü çalıştıran denetimli cihazları destekler.
   > [!NOTE]
   > Değişkenler kullanıcı arabiriminde doğrulanmaz ve büyük/küçük harfe duyarlıdır. Sonuç olarak, yanlış girişle kaydedilmiş profiller görebilirsiniz. Örneğin, `{{DeviceID}}` `{{deviceid}}`yerine girdiğinizde, cihazın benzersiz kimliği yerine değişmez dize gösterilir. Doğru bilgileri girdiğinizden emin olun.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+## <a name="single-sign-on"></a>Çoklu oturum açma
 
-## <a name="single-sign-on-settings"></a>Çoklu oturum açma ayarları
-
-İş Kolu (LOB) uygulamalarının çoğunda güvenliği desteklemek için belirli bir düzeyde kullanıcı kimlik doğrulaması gereklidir. Çoğu durumda, kimlik doğrulaması, kullanıcının Kullanıcı için sinir bozucu olan kimlik bilgilerini tekrar tekrar girmesini gerektirir. Geliştiriciler, Kullanıcı deneyimini geliştirmek için çoklu oturum açma (SSO) kullanan uygulamalar oluşturabilir. Çoklu oturum açma kullanımı, bir kullanıcının kimlik bilgilerini girmesi gereken kaç kez azaltığını azaltır.
-
-Çoklu oturum açma 'yı kullanmak için, şunları yaptığınızdan emin olun:
-
-- Cihazdaki çoklu oturum açma bölümünde Kullanıcı kimlik bilgileri deposunu aramak için kodlanmış bir uygulama.
-- Intune'u iOS cihazında çoklu oturum açma için yapılandırma.
-
-![Çoklu Oturum Açma bölmesi](./media/sso-blade.png)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: Cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
 - **AAD 'Den Kullanıcı adı özniteliği**: Intune, Azure AD 'de her bir kullanıcı için bu özniteliğe bakar. Ardından Intune, cihaza yüklenen XML oluşturmadan önce ilgili alanı (UPN gibi) doldurur. Seçenekleriniz şunlardır:
 
@@ -249,11 +244,9 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 - **Kimlik bilgileri yenileme sertifikası**: Kimlik doğrulaması için Sertifikalar (parolalar değil) kullanılıyorsa, mevcut SCEP veya PFX sertifikasını kimlik doğrulama sertifikası olarak seçin. Genellikle, bu sertifika, kullanıcıya VPN, Wi-Fi veya e-posta gibi diğer profiller için dağıtılan sertifikadır.
 
-Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+## <a name="web-content-filter"></a>Web içeriği filtresi
 
-## <a name="web-content-filter-settings"></a>Web içeriği filtre ayarları
-
-Bu ayarlar, denetimli iOS cihazlarında tarayıcı URL 'SI erişimini denetler.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: Otomatik cihaz kaydı (denetimli)
 
 - **Filtre türü**: Belirli Web sitelerine izin vermeyi seçin. Seçenekleriniz şunlardır:
 
@@ -261,14 +254,10 @@ Bu ayarlar, denetimli iOS cihazlarında tarayıcı URL 'SI erişimini denetler.
 
     - **Izin verilen URL 'ler**: İzin vermek istediğiniz URL 'Leri **ekleyin** . Bu URL 'Ler Apple 'ın Web filtresini atlar.
 
-      > [!NOTE]
+        > [!NOTE]
         > Girdiğiniz URL 'ler, Apple Web filtresi tarafından evauluated istemediğiniz URL 'lerdir. Bu URL 'Ler, izin verilen Web sitelerinin bir listesi değildir. İzin verilen Web sitelerinin bir listesini oluşturmak için **filtre türünü** **yalnızca belirli Web siteleri**olarak ayarlayın.
 
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
     - **Engellenen URL 'ler**: Apple Web Filter ayarlarından bağımsız olarak, durdurmak istediğiniz URL 'Leri açma işleminden sonra **ekleyin** .
-
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
   - **Yalnızca belirli Web siteleri** (yalnızca Safari Web tarayıcısı için): Bu URL 'Ler Safari tarayıcısının yer işaretlerine eklenir. Kullanıcının **yalnızca** bu siteleri ziyaret etme izni vardır; başka hiçbir site açılamaz. Bu seçeneği yalnızca kullanıcıların erişebileceği URL'lerin tam listesini biliyorsanız kullanın.
 
@@ -278,13 +267,68 @@ Bu ayarlar, denetimli iOS cihazlarında tarayıcı URL 'SI erişimini denetler.
 
     Herhangi bir URL girmezseniz, son kullanıcılar `microsoft.com`, `microsoft.net`ve `apple.com`dışında herhangi bir Web sitesine erişemez. Bu URL 'Lere Intune tarafından otomatik olarak izin verilir.
 
-    Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+## <a name="single-sign-on-app-extension"></a>Çoklu oturum açma uygulama uzantısı
 
-## <a name="wallpaper-settings"></a>Duvar kağıdı ayarları
+Bu özellik şu platformlarda geçerlidir:
 
-Denetimli iOS cihazlarınıza özel bir. png,. jpg veya. JPEG görüntüsü ekleyin. Örneğin, kilit ekranında bir şirket logosu kullanın.
+- iOS 13,0 ve üzeri
+- ıpados 13,0 ve üzeri
+
+### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: Tüm kayıt türleri
+
+- **SSO uygulama uzantısı türü**: Kimlik bilgisi SSO uygulaması uzantısının türünü seçin. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı**: Uygulama uzantıları kullanılmıyor. Bir uygulama uzantısını devre dışı bırakmak için, SSO uygulama uzantısı türünü **Kerberos** veya **kimlik bilgilerinden** **yapılandırılmamış**olarak değiştirebilirsiniz.
+  - **Kimlik bilgisi**: SSO gerçekleştirmek için genel, özelleştirilebilir bir kimlik bilgisi uygulama uzantısı kullanın. Kuruluşunuzun SSO uygulaması uzantısının uzantı KIMLIĞINI öğrendiğinizden emin olun.
+  - **Kerberos**: İOS 13,0 (ve üzeri) ve ıpados 13,0 (ve üzeri) ' de bulunan Apple 'ın yerleşik Kerberos uzantısını kullanın. Bu seçenek, **kimlik bilgisi** uygulama uzantısının Kerberos 'a özgü bir sürümüdür.
+
+  > [!TIP]
+  > **Kimlik bilgisi** türü ile, uzantısından geçirilecek kendi yapılandırma değerlerinizi eklersiniz. Bunun yerine, **Kerberos** türünde Apple tarafından sunulan yerleşik yapılandırma ayarlarını kullanmayı göz önünde bulundurun.
+
+- **UZANTı kimliği** (Yalnızca kimlik bilgileri): SSO uygulaması uzantınızı `com.apple.extensiblesso`tanımlayan paket tanımlayıcısını (gibi) girin.
+- **Takım Kimliği** (Yalnızca kimlik bilgileri): SSO uygulaması uzantınızın ekip tanımlayıcısını girin. Takım tanımlayıcısı, Apple tarafından oluşturulan ve `ABCDE12345`gibi 10 karakterlik alfasayısal bir dizedir (sayılar ve harfler). Takım KIMLIĞI gerekli değildir.
+
+  [Takım kimliğinizi bulun](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 'ın Web sitesini açar) daha fazla bilgi içerir.
+
+- **Bölge**: Kerberos bölgesi adını girin. Bölge adı, `CONTOSO.COM`gibi büyük harfli olmalıdır. Genellikle, bölge adınız DNS etki alanı adınızla aynıdır, ancak tümü büyük harfle aynıdır.
+
+- **Etki alanları**: SSO aracılığıyla kimlik doğrulayabilecek sitelerin etki alanını veya ana bilgisayar adlarını girin. Örneğin, Web siteniz ise `mysite.contoso.com` `mysite` , ana bilgisayar adı ve `contoso.com` etki alanı adıdır. Kullanıcılar bu sitelerden birine bağlandıklarında, uygulama uzantısı kimlik doğrulama sınamasını işler. Bu kimlik doğrulaması, kullanıcıların oturum açmak için yüz KIMLIĞI, Touch ID veya Apple pincode/geçiş kodu kullanmasına izin verir.
+
+  - Çoklu oturum açma uygulama uzantılarınızın Intune profillerindeki tüm etki alanları benzersiz olmalıdır. Farklı türlerde SSO uygulama uzantıları kullanıyor olsanız bile, bir etki alanını hiçbir oturum açma uygulama uzantısı profilinde tekrarlayamıyorum.
+  - Bu etki alanları büyük/küçük harfe duyarlı değildir.
+
+- **Ek yapılandırma** (Yalnızca kimlik bilgileri): SSO uygulama uzantısına geçirilecek uzantıya özgü ek veriler girin:
+  - **Yapılandırma anahtarı**: Eklemek istediğiniz öğenin adını (örneğin `user name`,) girin.
+  - **Değer türü**: Veri türünü girin. Seçenekleriniz şunlardır:
+
+    - Dize
+    - Boolean **Yapılandırma değeri**' nde, `True` veya `False`girin.
+    - gir **Yapılandırma değeri**alanına bir sayı girin.
+    
+  - **Yapılandırma değeri**: Verileri girin.
+
+  - **Ekle**: Yapılandırma anahtarlarınızı eklemek için seçin.
+
+- **Anahtarlık kullanımı** (Yalnızca Kerberos): Parolaların anahtarlıkta kaydedilmesini ve saklanmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan), parolaların anahtarlıkta kaydedilmesine ve depolanmasına izin verir.
+- **Yüz kimliği, Touch ID veya geçiş kodu** (Yalnızca Kerberos): Kullanıcıların eklediğiniz etki alanlarında oturum açması için yüz KIMLIKLERINI, Touch ID 'sini veya Apple geçiş kodunu girmesini **zorunlu kılın** . **Yapılandırılmadı** (varsayılan), kullanıcıların oturum açmak için Biyometri veya geçiş kodu kullanmalarını gerektirmez.
+- **Varsayılan bölge** (Yalnızca Kerberos): Varsayılan bölge olarak girdiğiniz **bölge** değerini ayarlamak için **Etkinleştir** ' i seçin. **Yapılandırılmadı** (varsayılan) varsayılan bir bölge yapmaz.
+
+  > [!TIP]
+  > - Kuruluşunuzda birden çok Kerberos SSO uygulama uzantısını yapılandırıyorsanız, bu ayarı **etkinleştirin** .
+  > - Birden çok bölge kullanıyorsanız bu ayarı **etkinleştirin** . Girdiğiniz **bölge** değerini varsayılan bölge olarak ayarlar.
+  > - Yalnızca bir bölge varsa, **Yapılandırılmadı** (varsayılan) olarak bırakın.
+
+- **Asıl ad** (Yalnızca Kerberos): Kerberos sorumlusunun Kullanıcı adını girin. Bölge adını eklemeniz gerekmez. Örneğin, içinde `user@contoso.com` `user` asıl addır ve `contoso.com` bölge adıdır.
+- **Active Directory site kodu** (Yalnızca Kerberos): Kerberos uzantısının kullanması gereken Active Directory sitenin adını girin. Kerberos uzantısı Active Directory site kodunu otomatik olarak bulagerekebilmeniz için bu değeri değiştirmeniz gerekebilir.
+- **Önbellek adı** (Yalnızca Kerberos): Kerberos önbelleğinin genel güvenlik hizmetleri (GSS) adını girin. Büyük olasılıkla bu değeri ayarlamanız gerekmez.
+- **Uygulama paketi kimlikleri** (Yalnızca Kerberos): Cihazlarınızda çoklu oturum açma kullanması gereken uygulama paketi tanımlayıcılarını **ekleyin** . Bu uygulamalara, Kerberos Anahtar verme bileti, kimlik doğrulama bileti ve kullanıcılara erişim yetkisi oldukları hizmetler için kimlik doğrulaması erişimi verilir.
+- **Etki alanı bölge eşleme** (Yalnızca Kerberos): Bölge ile eşleşmesi gereken etki alanı DNS soneklerini **ekleyin** . Ana bilgisayarların DNS adları bölge adıyla eşleşmezse bu ayarı kullanın. Büyük olasılıkla bu özel etki alanı/bölge eşlemesini oluşturmanız gerekmez.
+
+## <a name="wallpaper"></a>Duvar
 
 Var olan bir görüntüye sahip cihazlara sahip olmayan bir profil atandığında beklenmeyen davranışlarla karşılaşabilirsiniz. Örneğin, görüntü olmadan bir profil oluşturursunuz. Bu profil, zaten bir görüntüsü olan cihazlara atanır. Bu senaryoda, görüntü cihaz varsayılana değişebilir veya orijinal görüntü cihazda kalabilir. Bu davranış, Apple 'ın MDM platformu tarafından denetlenir ve sınırlandırılmıştır.
+
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: Otomatik cihaz kaydı (denetimli)
 
 - **Duvar kağıdı görünen konumu**: Görüntüyü göstermek için cihazda bir konum seçin. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı**: Cihaza özel bir görüntü eklenmez. Cihaz, işletim sistemi varsayılanını kullanır.

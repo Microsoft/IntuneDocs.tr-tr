@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/15/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,53 +17,53 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bd57d12630d5e2c8b69963f513ef007a9023f9b
-ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
+ms.openlocfilehash: 746d9b35e63e5f68ed018ff65ace129b364f18d7
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59704901"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71303837"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bir iOS uygulamasına özel yapılandırma ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu yapılandırma ayarlarını uygulama tedarikçileri yöne bağlı uygulama özelleştirilmesine olanak sağlar. Bu yapılandırma ayarlarını (anahtarlar ve değerleri) uygulama sağlayıcısından almanız gerekir. Uygulamayı yapılandırmak için ayarları, anahtarlar ve değerler olarak veya anahtarlar ve değerler içeren bir XML olarak belirtin. Ayrıca bu yapılandırma ilkelerini kullanıcılara ve cihazlara doğrudan atamayın. Bunun yerine, yapılandırma ilkesini bir uygulamayla ilişkilendirin ve bu uygulamayı atayın. Yapılandırma ilkesi ayarları, uygulama tarafından denetim gerçekleştirildiğinde, genellikle de uygulama ilk defa çalıştırıldığında kullanılır.
+Bir iOS uygulamasına özel yapılandırma ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Bu yapılandırma ayarları, uygulamanın uygulama tedarikçileri yönüne göre özelleştirilbilmesine izin verir. Bu yapılandırma ayarlarını (anahtarlar ve değerleri) uygulama sağlayıcısından almanız gerekir. Uygulamayı yapılandırmak için ayarları, anahtarlar ve değerler olarak veya anahtarlar ve değerler içeren bir XML olarak belirtin.
+
+Microsoft Intune yöneticisi olarak yönetilen cihazlarda hangi kullanıcı hesaplarının Microsoft Office uygulamalarına eklendiğini denetleyebilirsiniz. Erişimi yalnızca izin verilen kullanıcı hesaplarıyla sınırlayabilecek ve kayıtlı cihazlarda kişisel hesapları engelleyebilirsiniz. Destekleyen uygulamalar, uygulama yapılandırmasını işler ve onaylanmamış hesapları kaldırıp engeller. Yapılandırma ilkesi ayarları, uygulama tarafından denetim gerçekleştirildiğinde, genellikle de uygulama ilk defa çalıştırıldığında kullanılır.
 
 Bir uygulama yapılandırma ilkesini ekledikten sonra bu uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladıktan sonra ilkenin uygulandığı kullanıcı gruplarını dahil etmeyi veya dışlamayı seçebilirsiniz. Bir veya daha fazla grubu dahil etmeyi seçtiğinizde, belirli grupları dahil etmeyi veya yerleşik grupları kullanmayı seçebilirsiniz. Yerleşik gruplar **Tüm Kullanıcılar**, **Tüm Cihazlar** ve **Tüm Kullanıcılar + Tüm Cihazlar** şeklindedir. 
 
->[!NOTE]
->Intune size kolaylık sağlamak adına konsolda önceden oluşturulmuş ve yerleşik iyileştirmeleri bulunan **Tüm Kullanıcılar** ve **Tüm Cihazlar** gruplarını sağlar. Tüm kullanıcı ve cihazları hedeflemek için kendi oluşturacağınız “Tüm kullanıcılar” veya “Tüm cihazlar” grupları yerine bu grupları kullanmanızı kesinlikle öneririz.<p></p>
->Microsoft Intune yöneticisi olarak yönetilen cihazlarda hangi kullanıcı hesaplarının Microsoft Office uygulamalarına eklendiğini denetleyebilirsiniz. Erişimi yalnızca izin verilen kullanıcı hesaplarıyla sınırlayabilecek ve kayıtlı cihazlarda kişisel hesapları engelleyebilirsiniz. Destekleyen uygulamalar, uygulama yapılandırmasını işler ve onaylanmamış hesapları kaldırıp engeller.
+> [!NOTE]
+> Intune size kolaylık sağlamak adına konsolda önceden oluşturulmuş ve yerleşik iyileştirmeleri bulunan **Tüm Kullanıcılar** ve **Tüm Cihazlar** gruplarını sağlar. Tüm kullanıcı ve cihazları hedeflemek için kendi oluşturacağınız “Tüm kullanıcılar” veya “Tüm cihazlar” grupları yerine bu grupları kullanmanızı kesinlikle öneririz.
 
 Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışlamak üzere de belirli grupları seçebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama](apps-inc-exl-assignments.md).
 
 > [!TIP]
 > Bu ilke türü şu anda yalnızca iOS 8.0 ve üzeri sistemleri çalıştıran cihazlar için kullanılabilir. Aşağıdaki uygulama yükleme türlerini destekler:
 >
-> -   **Uygulama mağazasından yönetilen iOS uygulaması**
-> -   **iOS için uygulama paketi**
+> - **Uygulama mağazasından yönetilen iOS uygulaması**
+> - **iOS için uygulama paketi**
 >
-> Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md).
+> Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md). Uygulama yapılandırmasını yönetilen cihazlar için. ipa uygulama paketinize ekleme hakkında daha fazla bilgi için bkz. [iOS Geliştirici belgelerindeki](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html)yönetilen uygulama yapılandırması.
 
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
 
-1. [Azure portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **İstemci uygulamaları** iş yükünü seçin.
 4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
 5. Aşağıdaki bilgileri ayarlayın:
     - **Ad** - Azure portalında görünen profil adı.
     - **Açıklama** - Azure portalında görünen profil açıklaması.
-    - **Cihaz kayıt türü** -seçin **yönetilen cihazlar** Intune'a kayıtlı cihazlar için.
+    - **Cihaz kayıt türü** -Intune 'a kaydedilmiş cihazlar için **yönetilen cihazlar** ' ı seçin.
 6. **Platform** için **iOS**’u seçin.
-7.  **İlişkili uygulama**’yı seçin. Daha sonra **İlişkili uygulama** bölmesinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı ve ardından **Tamam**’ı seçin.
-8.  **Yapılandırma ilkesi ekle** bölmesinde **Yapılandırma ayarları**’nı seçin.
+7. **İlişkili uygulama**’yı seçin. Daha sonra **İlişkili uygulama** bölmesinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı ve ardından **Tamam**’ı seçin.
+8. **Yapılandırma ilkesi ekle** bölmesinde **Yapılandırma ayarları**’nı seçin.
 9. **Yapılandırma ayarları biçimi**’ni seçin. Yapılandırma bilgilerini eklemek için aşağıdaki yöntemlerden birini seçin:
     - **Yapılandırma tasarımcısını kullanma**
     - **XML verileri girme**<br><br>
     Yapılandırma tasarımcısını kullanma hakkında ayrıntılar için bkz. [Yapılandırma tasarımcısını kullanma](#use-configuration-designer). XML verileri girme hakkında ayrıntılar için bkz. [XML verileri girme](#enter-xml-data). 
-10. Yapılandırma bilgilerinizi ekledikten sonra seçin **Tamam**ve ardından **Ekle** yapılandırma ilkesini eklemek için. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
+10. Yapılandırma bilgilerinizi ekledikten sonra **Tamam**' ı seçin ve ardından yapılandırma ilkesini eklemek için **Ekle** ' yi seçin. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
 11. **Atamalar**’ı seçerek dahil etme ve dışlama seçeneklerini görüntüleyin. 
 
     ![İlke atamaları Ekle sekmesinin ekran görüntüsü](./media/app-config-policy01.png)
@@ -85,7 +84,7 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 
 Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Microsoft Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, temel alınan XML dilini oluşturmanıza yardımcı olan belirli yapılandırma anahtarları ve değerlerini yapılandırmanıza imkan tanır. Ayrıca her bir değer için veri türünü belirtmeniz gerekir. Uygulamalar yüklendiğinde bu ayarlar uygulamalara otomatik olarak sağlanır.
 
-### <a name="add-a-setting"></a>Ayar Ekle
+### <a name="add-a-setting"></a>Ayar ekleme
 
 1. Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
    - **Yapılandırma anahtarı** - Belirli ayar yapılandırmalarını benzersiz olarak tanımlayan anahtar.
@@ -95,21 +94,21 @@ Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Micros
 
 ### <a name="delete-a-setting"></a>Bir ayarı silme
 
-1. Ayarların yanındaki üç nokta simgesini (**...**) seçin.
+1. Ayarların yanındaki üç nokta simgesini ( **...** ) seçin.
 2. **Sil**’i seçin.
 
 \{\{ ve \}\} karakterleri yalnızca belirteç türleri tarafından kullanılır ve başka bir amaçla kullanılmamalıdır.
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Çok kimlikli uygulamalarda yalnızca yapılandırılmış kuruluş hesaplarına izin verme 
 
-İOS cihazları için aşağıdaki anahtar/değer çiftleri kullanın:
+İOS cihazları için aşağıdaki anahtar/değer çiftlerini kullanın:
 
 | **Anahtar** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Değerler** | <ul><li>**Etkin**: İzin verilen tek hesap tarafından tanımlanan yönetilen kullanıcı hesabıdır [Intunemamupn](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarı.</li><li>**Devre dışı bırakılmış** (veya büyük küçük harfe duyarlı bir eşleşme değil herhangi bir değer **etkin**): Herhangi bir hesaba izin verilir.</li></ul> |.
+| **Değerler** | <ul><li>**Etkin**: İzin verilen tek hesap, [ıntunemamupn](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarı tarafından tanımlanan yönetilen kullanıcı hesabıdır.</li><li>**Devre dışı** (veya büyük/küçük harf duyarsız olmayan bir değer **etkin**): Hesaba izin verilir.</li></ul> |.
 
    > [!NOTE]
-   > İOS 10.34 veya üzeri OneDrive ve Outlook 2.99.0 iOS için kullanmanız gerekir ya da daha sonra ve uygulama ile hedeflenmelidir [Intune uygulama koruma ilkeleri](app-protection-policy.md) ne zaman izin vererek yalnızca yapılandırılan kuruluş hesapları ile birden çok kimliği.
+   > İOS için OneDrive 10,34 veya sonraki bir sürümü ve iOS 2.99.0 veya üzeri için Outlook 'U kullanmanız gerekir ve yalnızca birden çok kimliği olan yapılandırılmış kuruluş hesaplarına izin verirken uygulamanın [Intune uygulama koruma ilkelerini](app-protection-policy.md) hedeflemeli olması gerekir.
 
 ## <a name="enter-xml-data"></a>XML verilerini girme
 
@@ -119,7 +118,7 @@ Intune XML biçimini doğrular. Ancak Intune, XML özellik listesinin (PList) he
 
 XML özellik listeleri hakkında daha fazla bilgi edinmek için:
 
-  -  iOS Geliştirici Kitaplığı’nda [XML Özellik Listelerini anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
+- iOS Geliştirici Kitaplığı’nda [XML Özellik Listelerini anlama](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) konusuna bakın.
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>Uygulama yapılandırma XML dosyası için örnek biçim
 
@@ -151,6 +150,7 @@ Uygulama yapılandırma dosyasını oluşturduğunuzda, bu biçimi kullanarak a�
   <string>{{aaddeviceid}}</string>
 </dict>
 ```
+
 ### <a name="supported-xml-plist-data-types"></a>Desteklenen XML PList veri türleri
 
 Intune, bir özellik listesinde aşağıdaki veri türlerini destekler:
@@ -176,8 +176,36 @@ Ayrıca, Intune özellik listesinde aşağıdaki belirteç türlerini destekler:
 - \{\{serialnumberlast4digits\}\}—örneğin, **G5V2** (iOS cihazlar için)
 - \{\{aaddeviceid\}\}—örneğin **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
+## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>İOS DEP cihazlarını desteklemek için Şirket Portalı uygulamasını yapılandırma
+
+DEP (Apple Aygıt Kayıt Programı) kayıtları, Şirket Portalı uygulamasının App Store sürümü ile uyumlu değildir. Ancak, aşağıdaki adımları kullanarak Şirket Portalı uygulamasını iOS DEP cihazlarını destekleyecek şekilde yapılandırabilirsiniz.
+
+1. Intune Azure portal:
+    - Gerekirse, **Intune** > **istemci uygulamaları** > uygulamalarEkle > ' ye giderek Intune şirket portalı ekleyin.
+    - Şirket portalı uygulaması için bir uygulama yapılandırma ilkesi oluşturmak için **istemci uygulamaları** > **uygulama yapılandırma ilkeleri**' ne gidin.
+2. Aşağıda XML ile bir uygulama yapılandırma ilkesi oluşturun. Uygulama yapılandırma ilkesi oluşturma ve XML verilerinin girilmesi hakkında daha fazla bilgi için, [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md) veya karma MDM Için, [System Center 'da uygulama yapılandırma ilkeleriyle ayarları iOS uygulamalarına uygulama hakkında daha fazla bilgi bulabilirsiniz. Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+
+    ``` xml
+    <dict>
+        <key>IntuneCompanyPortalEnrollmentAfterUDA</key>
+        <dict>
+            <key>IntuneDeviceId</key>
+            <string>{{deviceid}}</string>
+            <key>UserId</key>
+            <string>{{userid}}</string>
+        </dict>
+    </dict>
+    ```
+
+3. Şirket Portalı, istenen gruplara hedeflenmiş uygulama yapılandırma ilkesiyle cihazlara dağıtın. İlkeyi yalnızca DEP kaydı yapılmış olan cihazların gruplarına dağıttığınızdan emin olun.
+4. Son kullanıcılara otomatik olarak yüklendiğinde Şirket Portalı uygulamasında oturum açmasını söyleyin.
+
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Cihaz başına iOS uygulama yapılandırma durumunu izleme 
 Yapılandırma ilkesi atandıktan sonra, yönetilen her cihaz için iOS uygulama yapılandırma durumunu izleyebilirsiniz. Azure portalında **Microsoft Intune**'dan **Cihazlar** > **Tüm cihazlar**'ı seçin. Yönetilen cihaz listesinden belirli bir cihazı seçerek o cihazın dikey penceresini görüntüleyin. Cihaz dikey penceresinde **Uygulama yapılandırması**'nı seçin.  
+
+## <a name="additional-information"></a>Ek bilgiler
+
+- [İOS ve Android uygulama yapılandırma ayarları için Outlook dağıtımı](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

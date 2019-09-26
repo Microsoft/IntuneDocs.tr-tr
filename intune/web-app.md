@@ -1,14 +1,13 @@
 ---
 title: Microsoft Intune’a web uygulamaları ekleme
 titleSuffix: ''
-description: Web apps (istemci-sunucu uygulamaları) Microsoft Intune ekleme hakkında bilgi edinin.
+description: Microsoft Intune için Web uygulamaları (istemci-sunucu uygulamaları) ekleme hakkında bilgi edinin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 09/13/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f1f0c36441b98c334311bdbfa85fa725c26b675
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4beab94e6facd3d5f35292d68b6256577d59073a
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393556"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71302658"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune’a web uygulamaları ekleme
 
@@ -34,31 +33,29 @@ Intune, web uygulamaları da dahil olmak üzere çeşitli uygulama türlerini de
 Kullanıcılarınız için uygulamaları yönetebilmek ve atayabilmek için önce uygulamayı Intune’a ekleyin. Intune, kullanıcının cihazındaki giriş ekranında web uygulaması için bir kısayol oluşturur.
 
 > [!Note]
-> Android iş profili ve macOS cihazlarda web uygulamaları desteklenmez.
+> Android iş profili cihazlarında Web uygulamaları desteklenmez.
 
 ## <a name="add-a-web-app-to-intune"></a>Intune’a bir web uygulaması ekleme
 Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin.  
-    Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
 5. **Uygulamalar** bölmesinde **Ekle**’yi seçin.
 6. **Uygulama ekle** bölmesinde, **Uygulama türü** açılan listesinden **Web bağlantısı** türünü seçin.
 7. **Yapılandır**’ı seçin.
 8. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri ekleyin:
-    - **Ad**:  Şirket portalı'nda görüntülenecek olduğu gibi bir uygulama adı girin. 
-    
+    - **Ad**:  Şirket portalında görüntülendiği şekliyle uygulamanın adını girin. 
+
         > [!NOTE]
         > Uygulamayı dağıttıktan ve yükledikten sonra Intune Azure portalı aracılığıyla uygulamanın adını değiştirirseniz, uygulama artık komutlar kullanılarak hedeflenemez.
-    
+
     - **Açıklama**: Uygulama için bir açıklama girin. Bu açıklama Şirket Portalı’nda kullanıcılara görüntülenir.Açıklama şirket portalında kullanıcılara görüntülenir.
     - **Yayımcı**: Bu uygulamanın yayımcısının adını girin.
-    - **Uygulama URL'sini**: Atamak istediğiniz uygulamayı barındıran Web sitesinin URL'sini girin.
-    - **Kategori**: İsteğe bağlı olarak, bir veya daha fazla yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz bir kategoriyi seçin. Böylelikle, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
-    - **Bunu şirket Portalı'nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken uygulama paketinin şirket Portalı'nın ana sayfasında göze çarpacak şekilde görüntüleyin için. Bu seçeneği belirleyin.
-    - **Bu bağlantının açılabilmesi için yönetilen tarayıcı gerektir**: Intune ile yönetilen tarayıcıda açmak bir Web sitesi veya web uygulaması için bir bağlantı, kullanıcılara atamak için bu seçeneği belirleyin. Bu tarayıcı cihazlarında yüklü olmalıdır.
+    - **Uygulama URL 'si**: Atamak istediğiniz uygulamayı barındıran Web sitesinin URL 'sini girin.
+    - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Böylelikle, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
+    - **Şirket Portalı’nda bu uygulamayı öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz attığında, uygulama paketini şirket portalının ana sayfasında önce çıkacak şekilde görüntülemek için bu seçeneği belirleyin.
+    - **Bu bağlantıyı açmak için yönetilen bir tarayıcı gerektir**: Kullanıcılarınıza Intune Managed Browser 'da açabildikleri bir Web sitesi veya Web uygulamasına bir bağlantı atamak için bu seçeneği belirleyin. Bu tarayıcı cihazlarında yüklü olmalıdır.
     - **Logo**: Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
 9. **Tamam**’ı seçin.
 10. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.

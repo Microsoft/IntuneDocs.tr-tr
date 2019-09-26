@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323431"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302618"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 otomatik kayıt özelliğini etkinleştirme
 
@@ -36,12 +36,12 @@ Otomatik kayıt, kullanıcıların Windows 10 cihazlarını Intune’a kaydetmes
    - **Tümü** - Tüm kullanıcılar Windows 10 cihazlarını otomatik olarak kaydedebilir
 
       > [!IMPORTANT]
-      > MAM kullanıcı kapsamı hem de MDM kullanıcı kapsamı (otomatik MDM kaydını) tüm kullanıcılar (veya aynı kullanıcı gruplarını) etkinleştirilip etkinleştirilmediğini KCG cihazlarında, MAM kullanıcı kapsamı öncelik kazanır. (Bunları yapılandırdıysanız) cihaz MDM'ye olmak yerine Windows bilgi Koruması (WIP) ilkelerini kullanır.
+      > KCG cihazlarında, tüm kullanıcılar (veya aynı kullanıcı grupları) için hem MAM Kullanıcı kapsamı hem de MDM Kullanıcı kapsamı (otomatik MDM kaydı) etkinleştirilmişse MAM Kullanıcı kapsamı önceliklidir. Cihaz, MDM kaydı yerine Windows Information Protection (WıP) Ilkelerini kullanır (bunları yapılandırdıysanız).
       >
-      > Her iki kapsam etkinleştirilip etkinleştirilmediğini şirket cihazları için MDM kullanıcı kapsamı öncelik kazanır. MDM kayıtlı cihazlara alın.
+      > Kurumsal cihazlarda, her iki kapsam de etkinse MDM Kullanıcı kapsamı öncelikli olur. Cihazlar MDM 'ye kaydolmuş.
 
    > [!NOTE]
-   > MAM kullanıcı kapsamı, bir kullanıcı grubu veya toplama ayarlamanız gerekir.
+   > MDM Kullanıcı kapsamı, Kullanıcı nesneleri içeren bir Azure AD grubuna ayarlanmalıdır.
 
    ![Azure portalının ekran görüntüsü](../media/auto-enroll-scope.png)
 

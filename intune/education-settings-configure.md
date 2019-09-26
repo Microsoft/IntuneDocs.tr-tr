@@ -1,13 +1,12 @@
 ---
-title: Ekleme veya Microsoft Intune - Azure eğitim ayarlarını yapılandırma | Microsoft Docs
-description: Sınav zamanı uygulamasının Windows 10 ve üzeri cihazlar Intune cihaz yapılandırma profili kullanın. Eğitim settiings kullanarak bir yapılandırma profili oluşturma ve test uygulama URL'sini girin, sonra da nasıl kullanıcı oturum açma, test sırasında ekran izleme ve izin ver veya test sırasında metin önerilerine önlemek seçin.
+title: Microsoft Intune-Azure 'da eğitim ayarları ekleme veya yapılandırma | Microsoft Docs
+description: Microsoft Intune Windows 10 ve üzeri cihazlarda bir cihaz yapılandırma profilinde bir test yap uygulamasını kullanın. Eğitim ayarlarını kullanarak bir yapılandırma profili oluşturun ve bir test uygulaması URL 'SI girin, kullanıcıların oturum açma biçimini seçin, test sırasında ekranı izleyin ve test sırasında metin önerilerine izin verin veya bu önerileri önleyin.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,35 +16,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: efa990e12416c292d9446428165e4bff99c7eca2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a64c5c6779d3fcc34f4ff120ed27e7f300bc09b0
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393216"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "71301963"
 ---
-# <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Windows 10 cihazlarda Microsoft Intune sınav zamanı uygulamasının kullanın
+# <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 'da Windows 10 cihazlarda bir test alma uygulaması kullanın
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune'da eğitim profilleri, bir test veya sınavı cihazlarda gerçekleştirilecek Öğrenciler için tasarlanmıştır. Bu özellik şunları içerir **sınav** uygulama ve bir test URL'si eklemek için ayarları seçin nasıl son kullanıcılar test ve daha fazlası için oturum açın. Bu özellik, platformu destekler:
+Intune 'da eğitim profilleri, öğrenciler için cihazlarda bir test veya sınava yönelik olarak tasarlanmıştır. Bu özellik bir test URL 'SI eklemek için **bir test** uygulaması ve ayarlar alma, son kullanıcıların teste nasıl oturum açmasını ve daha fazlasını içerir. Bu özellik aşağıdaki platformu destekler:
 
 - Windows 10 ve üzeri
 
-Kullanıcı oturum açtığında sınav zamanı uygulaması otomatik olarak girdiğiniz test ile açılır. Test sürerken cihaz üzerinde başka hiçbir uygulama çalıştırabilirsiniz. [Windows 10'da testleri ele](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) uygulamasının sınav zamanı hakkında daha fazla ayrıntı sağlar.
+Kullanıcı oturum açtığında, bir test al uygulaması girdiğiniz test ile otomatik olarak açılır. Test devam ederken cihazda başka hiçbir uygulama çalıştırılamaz. [Windows 10 ' da testleri al](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) test alma uygulaması hakkında daha fazla bilgi sağlar.
 
-Bu makalede, Microsoft Intune cihaz yapılandırma profili oluşturma adımları listelenir. Ayrıca, okuma ve Windows 10 cihazlarınız için kullanılabilir eğitim ayarları hakkında bilgi edinmek için bilgi içerir.
+Bu makalede Microsoft Intune ' de bir cihaz yapılandırma profili oluşturma adımları listelenir. Ayrıca, Windows 10 cihazlarınıza yönelik kullanılabilir eğitim ayarları hakkında bilgi almak ve bunları öğrenmek için bilgileri de içerir.
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Platform**: Seçin **Windows 10 ve üzeri**.
-    - **Profili**: Seçin **eğitim profili**.
+    - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: **Windows 10 ve üstünü**seçin.
+    - **Profil**: **Eğitim profili**seçin.
 
 4. Yapılandırmak istediğiniz ayarları girin:
 
@@ -57,6 +56,6 @@ Ayarlarınızı girdikten ve profili oluşturduktan sonra profiliniz profil list
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Listesini [Windows 10 education ayarlarını](education-settings-windows.md) ve açıklamalarının.
+[Windows 10 eğitim ayarlarının](education-settings-windows.md) ve açıklamalarının listesini görüntüleyin.
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).

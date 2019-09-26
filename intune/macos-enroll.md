@@ -8,22 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/13/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
-ms.reviewer: chrisbal
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: ef8bbe90b9cc3f1b04300646c8b56676cbd23766
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59893876"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71303371"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune’da macOS cihazların kaydını ayarlama
 
@@ -37,6 +36,7 @@ Intune yöneticisi olarak, şirkete ait macOS cihazları ile kişilere ait macOS
 
 macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın:
 
+- [Cihazınızın Apple cihaz kaydına uygun olduğundan emin olun](https://support.apple.com/en-us/HT204142#eligibility).
 - [Etki alanlarını yapılandırma](custom-domain-name-configure.md)
 - [MDM Yetkilisini ayarlama](mdm-authority-set.md)
 - [Grup oluşturma](groups-add.md)

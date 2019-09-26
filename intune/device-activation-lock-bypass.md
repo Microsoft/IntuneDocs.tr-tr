@@ -8,21 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
+ms.reviewer: coferro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 406a08788663603340ab4af78217a07e68e66604
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 962202b3d46d7e162f564e35fd5d58946f406358
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898420"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71303661"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Denetimli iOS cihazlarda Intune ile Etkinleştirme Kilidini atlama
 
@@ -73,8 +73,7 @@ Cihazlarda Etkinleştirme Kilidi’ni atlayabilmeniz için aşağıdaki yönerge
 
 Intune **Etkinleştirme Kilidini Atla** uzak cihaz eylemi, bir iOS cihazından Etkinleştirme Kilidini kullanıcının Apple Kimliğini ve parolasını gerektirmeden kaldırır. Etkinleştirme Kilidini atladıktan sonra, iPhone’umu Bul uygulaması başlatıldığında cihaz Etkinleştirme Kilidini yeniden açar. Etkinleştirme Kilidini, yalnızca cihaza fiziksel erişiminiz varsa atlayın.
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
 4. **Cihazlar** dikey penceresinde **Tüm cihazlar**'ı seçin.
 5. Yönettiğiniz cihazlar listesinde **Etkinleştirme Kilidini Atla** uzak cihaz eylemini seçin.
@@ -83,8 +82,8 @@ Intune **Etkinleştirme Kilidini Atla** uzak cihaz eylemi, bir iOS cihazından E
     >[!NOTE]
     >Cihazı silmeden önce atlama kodunu kopyalayın. Kodu kopyalamadan önce cihaz ayarlarını sıfırlarsanız kod Azure’dan kaldırılır.
 
-7.  Cihazın **Genel bakış** dikey penceresine gidin ve **Sil**’i seçin.
-8.  Cihaz sıfırlandıktan sonra *Apple kimliğiniz* ve *parolanız* istenir. *Kimlik* alanını boş bırakın ve ardından *parola* için **atlama kodunu** girin. Bu işlem, hesabı cihazdan kaldırır. 
+7. Cihazın **Genel bakış** dikey penceresine gidin ve **Sil**’i seçin.
+8. Cihaz sıfırlandıktan sonra *Apple kimliğiniz* ve *parolanız* istenir. *Kimlik* alanını boş bırakın ve ardından *parola* için **atlama kodunu** girin. Bu işlem, hesabı cihazdan kaldırır. 
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

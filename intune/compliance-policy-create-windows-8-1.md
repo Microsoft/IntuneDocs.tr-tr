@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ed863378616f8001beab89177c642404287e7d3
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 57a860edd99bfbbd41ff7df8fd98d0343f4f5ba6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59893898"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304109"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz Windows 8.1 ayarları
 
@@ -48,7 +47,7 @@ Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işlet
 
 ## <a name="system-security"></a>Sistem güvenliği
 
-### <a name="password"></a>Parola
+### <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
 - **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmesi için önce bir parola girmesini **zorunlu tutun**.
 - **Basit parolalar**: Bunu **Engelle** şeklinde ayarlayarak, kullanıcıların **1234** veya **1111** gibi basit parolalar oluşturmalarının önüne geçin. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
@@ -72,7 +71,7 @@ Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işlet
     - Veya en düşük karakter kümesi sayısı ikiden fazlaysa
 
 - **Parola istenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi girin.
-- **Parola zaman aşımı (gün sayısı)**: Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
+- **Parola zaman aşımı (gün sayısı)** : Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
 - **Yeniden kullanılması önlenecek önceki parola sayısı**: Daha önce kullanılan kaç parolanın kullanılamayacağını belirtir.
 
 ### <a name="encryption"></a>Şifreleme

@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,18 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: b9215dc0d814b4269c239595183e024ebb073455
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900018"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "71302048"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune yöneticisi olarak, Intune ile yönetime kaydedilebilecek cihazların sayısını ve türlerini tanımlayan kayıt kısıtlamaları oluşturabilir ve bunları yönetebilirsiniz. Birden çok kısıtlama oluşturabilir ve bunları farklı kullanıcı gruplarına uygulayabilirsiniz. Farklı kısıtlamalarınız için [öncelik sırası](#change-enrollment-restriction-priority) ayarlayabilirsiniz.
+Bir Intune Yöneticisi olarak, cihazları aşağıdakiler dahil olmak üzere hangi cihazların Intune ile yönetime kaydolabileceğini tanımlayan kayıt kısıtlamaları oluşturabilir ve bunları yönetebilirsiniz:
+- cihaz sayısı
+- işletim sistemleri ve sürümleri birden çok kısıtlama oluşturabilir ve bunları farklı Kullanıcı gruplarına uygulayabilirsiniz. Farklı kısıtlamalarınız için [öncelik sırası](#change-enrollment-restriction-priority) ayarlayabilirsiniz.
 
 >[!NOTE]
 >Kayıt kısıtlamaları güvenlik özellikleri değildir. Güvenliği aşılan cihazlar karakterlerini yanlış gösterebilir. Bu kısıtlamalar, kötü amaçlı olmayan kullanıcılara yönelik olabilecek en iyi engeldir.
@@ -38,95 +39,64 @@ Intune yöneticisi olarak, Intune ile yönetime kaydedilebilecek cihazların say
 
 - Kayıtlı cihaz sayısı üst sınırı.
 - Kaydedilebilecek cihaz platformları:
-  - Android
-  - Android iş profili
+  - Android Cihaz Yöneticisi
+  - Android kurumsal iş profili
   - iOS
   - Mac OS
   - Windows
   - Windows Mobile
-- iOS, Android, Android iş profili, Windows ve Windows Mobile için platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
+- İOS, Android Cihaz Yöneticisi, Android kurumsal iş profili, Windows ve Windows Mobile için Platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
   - En düşük sürüm.
   - En yüksek sürüm.
-- Kişisel cihazları kısıtlama (yalnızca iOS, Android, Android iş profili, macOS, Windows ve Windows Mobile).
+- Kişisel cihazları kısıtlama (iOS, Android Cihaz Yöneticisi, Android kurumsal iş profili, macOS, Windows ve Windows Mobile).
 
 ## <a name="default-restrictions"></a>Varsayılan kısıtlamalar
 
 Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayılan kısıtlamalar otomatik olarak sağlanır. Varsayılanların seçeneklerini değiştirebilirsiniz. Varsayılan kısıtlamalar tüm kullanıcı kayıtlarıyla kullanıcısız kayıtlar için geçerlidir. Daha yüksek önceliklere sahip yeni kısıtlamalar oluşturarak, bu varsayılan kısıtlamaları geçersiz kılabilirsiniz.
 
-## <a name="create-a-restriction"></a>Kısıtlama oluşturma
+## <a name="create-a-device-type-restriction"></a>Cihaz türü kısıtlaması oluşturma
 
-1. Azure portalında oturum açın.
+1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
-3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
-4. **Kısıtlama oluştur**'u seçin.
-5. Kısıtlamaya bir ad ve açıklama ekleyin.
-6. **Kısıtlama türü**'nü ve **Oluştur**'u seçin.
-7. Cihaz sınırı kısıtlamaları için, **Cihaz sınırı**'nı seçin ve kullanıcının kaydedebileceği cihaz sayısı üst sınırını ayarlayın.
-8. Cihaz türü kısıtlamaları için, çeşitli platformlara ve sürümlere izin vermek veya bunları engellemek üzere **Platformlar**'ı ve **Platform yapılandırmaları**'nı seçin.
-9. **Atamalar** > **+ Grupları seçin** öğesini seçin.
-10. **Grupları seçin** alanında, bir veya birden çok grup seçin ve ardından **Seç** düğmesini kullanın. Kısıtlama yalnızca atandığı gruplara uygulanır. Kısıtlamayı en az bir gruba atamazsanız, hiçbir etkisi olmaz.
-11. **Kaydet**’i seçin.
-12. Yeni kısıtlama, varsayılan öncelik düzeyinin hemen üstündeki öncelik düzeyiyle oluşturulur. [Önceliği değiştirebilirsiniz](#change-enrollment-restriction-priority).
-
-## <a name="set-device-type-restrictions"></a>Cihaz türü kısıtlamalarını ayarlama
-
-Aşağıdaki adımları izleyerek bir cihaz türü kısıtlamasının ayarlarını değiştirebilirsiniz. Bu kısıtlamalar, zaten kayıtlı olan cihazları etkilemez. Bu özellikle [Intune PC aracısı](manage-windows-pcs-with-microsoft-intune.md) ile kaydedilen cihazlar engellenemez.
-
-1. Azure portalında oturum açın.
-2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
-3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
-4. **Cihaz Türü Kısıtlamaları** altında ayarlamak istediğiniz kısıtlamayı seçin > **Özellikler** > **Platform seçin**. Listelenen her platform için **İzin Ver** veya **Engelle**'yi seçin.
-    ![Bir platforma izin verme veya platformu engelleme ekran görüntüsü](media/enrollment-restrictions-set/platform-allow-block.png)
-5. **Tamam**’ı seçin.
-6. **Platformları yapılandır**’ı seçin.
-    ![Platform yapılandırma ekran görüntüsü](media/enrollment-restrictions-set/configure-platforms.png)
-7. Listelenen platformlar için en düşük ve en yüksek **Sürümler**’i seçin. Desteklenen sürüm biçimleri:
-    - Android iş profili desteği major.minor.rev.build.
+3. **Cihaz kaydı** > **Kayıt kısıtlamaları** >  **' nı seçin kısıtlama** **cihazı türü kısıtlaması**oluştur. > 
+    ![Cihaz türü kısıtlaması oluşturmaya yönelik ekran ucu](media/enrollment-restrictions-set/create-device-type-restriction.png)
+4. **Temel bilgiler** sayfasında, kısıtlamaya bir **ad** ve isteğe bağlı bir **Açıklama**sağlayın.
+5. **İleri ' yi** seçerek **Platform ayarları** sayfasına gidin.
+6. **Platform**altında, bu kısıtlamanın izin vermek istediğiniz platformlar Için **izin ver** ' i seçin.
+    ![Platform ayarlarını seçmek için ekran ucu](media/enrollment-restrictions-set/choose-platform-settings.png)
+7. **Sürümler**altında, izin verilen platformların desteklemesini istediğiniz en düşük ve en yüksek sürümleri seçin. Sürüm kısıtlamaları yalnızca Şirket Portalı kaydedilmiş cihazlara uygulanır.
+     Desteklenen sürüm biçimleri:
+    - Android Cihaz Yöneticisi ve Android kurumsal iş profili, ana. ikincil. Rev. Build 'yi destekler.
     - iOS major.minor.rev destekler. İşletim sistemi sürümleri, Aygıt Kayıt Programı, Apple School Manager veya Apple Configurator uygulaması ile kaydedilen Apple cihazlar için geçerli değildir.
     - Windows, yalnızca Windows 10 için major.minor.rev.build destekler.
-> [!Note]
-> Windows 10, kayıt sırasında derleme numarası sağlamaz. Bu nedenle 10.0.17134.100 değerini girmeniz durumunda 10.0.17134.174 değerine sahip cihazlar kayıt sırasında engellenir.
-8. Listelenen her platformda **Kişiye ait** cihazlar için **İzin Ver** veya **Engelle**’yi seçin.
-9. **Tamam**’ı seçin.
+    > [!Note]
+    > Windows 10, kayıt sırasında derleme numarası sağlamaz. Bu nedenle 10.0.17134.100 değerini girmeniz durumunda 10.0.17134.174 değerine sahip cihazlar kayıt sırasında engellenir.
 
-### <a name="blocking-personal-android-devices"></a>Kişisel Android cihazlarını engelleme
-- Kişisel Android cihazların kaydını engellerseniz kişisel Android iş profili cihazları hala kaydedilebilir durumda olacaktır.
-- Varsayılan olarak, Android iş profili cihaz ayarlarınız Android cihazlarınızın ayarlarıyla aynı olur. Android iş profili ayarlarınızı değiştirdikten sonra artık bu durum oluşmaz.
-- Kişisel Android iş profili kaydını engellerseniz, yalnızca kurumsal Android cihazlar Android iş profili olarak kaydedilebilir.
+8. **Kişisel**olarak sahip olunan cihazlara izin vermek istediğiniz platformlar Için **izin ver** ' i seçin.
+9. **Atamalar** sayfasına gitmek için **İleri ' yi** seçin.
+10. **Dahil edilecek grupları seç** ' i seçin ve ardından bu kısıtlamaya dahil etmek istediğiniz grupları bulmak için arama kutusunu kullanın. Kısıtlama yalnızca atandığı gruplara uygulanır. Kısıtlamayı en az bir gruba atamazsanız, hiçbir etkisi olmaz. Daha sonra **Seç**’e tıklayın. 
+    ![Platform ayarlarını seçmek için ekran ucu](media/enrollment-restrictions-set/select-groups.png)
+11. **İleri ' yi** seçerek **gözden geçir + oluştur** sayfasına gidin.
+12. Kısıtlamayı oluşturmak için **Oluştur** ' u seçin.
+13. Yeni kısıtlama, varsayılan öncelik düzeyinin hemen üstündeki öncelik düzeyiyle oluşturulur. [Önceliği değiştirebilirsiniz](#change-enrollment-restriction-priority).
 
-### <a name="blocking-personal-windows-devices"></a>Kişisel Windows cihazlarını engelleme
-Kişisel Windows cihazlarının kayıt yapmasını engellerseniz, Intune, kurumsal bir kayıt olarak yetkilendirildiğinden emin olmak için her yeni Windows kayıt isteğini denetler. Yetkilendirilmemiş kayıtlar engellenir.
 
-Windows şirket kaydı olarak yetkilendirme için aşağıdaki yöntemler uygundur:
- - Kaydeden kullanıcı [cihaz kayıt yöneticisi hesabı]( device-enrollment-manager-enroll.md) kullanıyor.
-- Cihaz [Windows AutoPilot](enrollment-autopilot.md) yoluyla kaydediliyor.
-- Cihaz Windows Autopilot ile kaydediliyor ancak Windows Ayarları'ndan bir yalnızca MDM kaydı seçeneği değil.
-- Cihazın IMEI numarası **Cihaz kaydı** > **[Şirket cihaz tanımlayıcıları](corporate-identifiers-add.md)**’nda listelenmiş. (Windows Phone 8.1 için desteklenmez.)
-- Cihaz bir [toplu sağlama paketi](windows-bulk-enroll.md) ile kaydediliyor.
-- Cihaz GPO veya [ortak yönetim için SCCM’den otomatik kayıt](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) yoluyla kaydediliyor.
- 
-Aşağıdaki kayıtlar Intune tarafından kurumsal olarak işaretlenir. Ancak Intune yöneticisi cihaz başına denetim sağlamadığı için engellenir:
- - [Windows kurulumu sırasında Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
-- [Windows Ayarları'ndan Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
- 
-Aşağıdaki kişisel kayıt yöntemleri de engellenir:
-- [Windows Ayarları'ndan İş Hesabı ekleme](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
-- Windows Ayarları’ndan [Yalnızca MDM kaydı]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) seçeneği.
+## <a name="create-a-device-limit-restriction"></a>Cihaz sınırı kısıtlaması oluşturma
 
-\* Bunlar, Autopilot ile kaydedilirse engellenmez.
-
-## <a name="set-device-limit-restrictions"></a>Cihaz sınırı kısıtlamalarını ayarlama
-
-Aşağıdaki adımları izleyerek bir cihaz sınırı kısıtlamasının ayarlarını değiştirebilirsiniz:
-
-1. Azure portalında oturum açın.
+1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
-3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
-4. **Cihaz Sınırı Kısıtlamaları**'nın altında, ayarlamak istediğiniz kısıtlamayı seçin.
-5. **Cihaz Sınırı**'nı seçin ve ardından, açılan listede kullanıcının kaydedebileceği cihaz sayısı üst sınırını belirtin.
-    ![Cihaz sınır kısıtlamalarını içeren cihaz sınır kısıtlamaları dikey penceresi.](./media/device-restrictions-limit.png)
-6. **Kaydet**’i seçin.
-
+3. **Cihaz kaydı** > **Kayıt kısıtlamaları** > ilkeoluşturmacihaz > **sınırı kısıtlaması**' nı seçin.
+    ![Cihaz sınırı kısıtlaması oluşturmaya yönelik ekran ucu](media/enrollment-restrictions-set/create-device-limit-restriction.png)
+4. **Temel bilgiler** sayfasında, kısıtlamaya bir **ad** ve isteğe bağlı bir **Açıklama**sağlayın.
+5. **Cihaz sınırı** sayfasına gitmek için **İleri ' yi** seçin.
+6. **Cihaz sınırı**için, bir kullanıcının kaydedebileceği en fazla cihaz sayısını seçin.
+    ![Cihaz sınırı seçmek için ekran ucu](media/enrollment-restrictions-set/choose-device-limit.png)
+7. **Atamalar** sayfasına gitmek için **İleri ' yi** seçin.
+8. **Dahil edilecek grupları seç** ' i seçin ve ardından bu kısıtlamaya dahil etmek istediğiniz grupları bulmak için arama kutusunu kullanın. Kısıtlama yalnızca atandığı gruplara uygulanır. Kısıtlamayı en az bir gruba atamazsanız, hiçbir etkisi olmaz. Daha sonra **Seç**’e tıklayın. 
+    ![Grupları seçmek için ekran ucu](media/enrollment-restrictions-set/select-groups-device-limit.png)
+11. **İleri ' yi** seçerek **gözden geçir + oluştur** sayfasına gidin.
+12. Kısıtlamayı oluşturmak için **Oluştur** ' u seçin.
+13. Yeni kısıtlama, varsayılan öncelik düzeyinin hemen üstündeki öncelik düzeyiyle oluşturulur. [Önceliği değiştirebilirsiniz](#change-enrollment-restriction-priority).
 
 KCG kayıtları sırasında kullanıcılar, kayıtlı cihaz sınırına ulaştığında bunu belirten bir bildirim görür. Örneğin iOS üzerinde:
 
@@ -139,9 +109,49 @@ KCG kayıtları sırasında kullanıcılar, kayıtlı cihaz sınırına ulaştı
 > - Azure Active Directory katılımlı kayıtlar
 > - Toplu Azure Active Directory katılımlı kayıtlar
 > - Autopilot kayıtları
+> - Cihaz kayıt yöneticisi kayıtları
 >
-> Paylaşılan cihaz senaryosu olarak kabul edildiğinden cihaz sınırı kısıtlamaları bu kayıt türleri için uygulanmaz.
-> [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings)'de bu kayıt türleri için sabit sınır belirleyebilirsiniz.
+> Cihaz sınırı kısıtlamaları, paylaşılan cihaz senaryolarında kabul edildiği için bu kayıt türleri için zorlanmaz.
+> [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal#configure-device-settings)'de bu kayıt türleri için sabit sınır belirleyebilirsiniz.
+
+
+## <a name="change-enrollment-restrictions"></a>Kayıt kısıtlamalarını değiştirme
+
+Aşağıdaki adımları izleyerek, bir kayıt kısıtlamasının ayarlarını değiştirebilirsiniz. Bu kısıtlamalar, zaten kaydedilmiş olan cihazları etkilemez. Bu özellikle [Intune PC aracısı](manage-windows-pcs-with-microsoft-intune.md) ile kaydedilen cihazlar engellenemez.
+
+1. Azure Portal’da oturum açın.
+2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
+3. **Cihaz kaydı** > **Kayıt kısıtlamaları** ' nı seçin > > **özelliklerini**değiştirmek istediğiniz kısıtlamayı seçin.
+4. Değiştirmek istediğiniz ayarların yanındaki **Düzenle** ' yi seçin.
+5. **Düzenle** sayfasında, istediğiniz değişiklikleri yapın ve **gözden geçir + kaydet** sayfasına ilerleyin ve ardından **Kaydet**' i seçin.
+
+
+## <a name="blocking-personal-android-devices"></a>Kişisel Android cihazlarını engelleme
+- Kişisel Android Cihaz Yöneticisi cihazlarını kayıttan engellerseniz, kişisel Android kurumsal iş profili cihazları yine de kayıt yapabilir.
+- Varsayılan olarak, Android kurumsal iş profili cihazlarınızın ayarları, Android Cihaz Yöneticisi cihazlarınızla ilgili ayarlarınızla aynıdır. Android kurumsal iş profilinizi veya Android Cihaz Yöneticisi ayarlarınızı değiştirdikten sonra bu durum artık böyle değildir.
+- Kişisel Android kurumsal iş profili kaydını engellerseniz, yalnızca şirkete ait Android cihazları Android kurumsal iş profillerine kaydedebilir.
+
+## <a name="blocking-personal-windows-devices"></a>Kişisel Windows cihazlarını engelleme
+Kişisel Windows cihazlarının kayıt yapmasını engellerseniz, Intune, kurumsal bir kayıt olarak yetkilendirildiğinden emin olmak için her yeni Windows kayıt isteğini denetler. Yetkilendirilmemiş kayıtlar engellenir.
+
+Windows şirket kaydı olarak yetkilendirme için aşağıdaki yöntemler uygundur:
+- Kaydeden kullanıcı [cihaz kayıt yöneticisi hesabı]( device-enrollment-manager-enroll.md) kullanıyor.
+- Cihaz [Windows Autopilot](enrollment-autopilot.md) yoluyla kaydediliyor.
+- Cihaz Windows Autopilot ile kaydediliyor ancak Windows Ayarları'ndan bir yalnızca MDM kaydı seçeneği değil.
+- Cihazın IMEI numarası **Cihaz kaydı** >  **[Şirket cihaz tanımlayıcıları](corporate-identifiers-add.md)** ’nda listelenmiş. (Windows Phone 8.1 için desteklenmez.)
+- Cihaz bir [toplu sağlama paketi](windows-bulk-enroll.md) ile kaydediliyor.
+- Cihaz GPO veya [ortak yönetim için SCCM’den otomatik kayıt](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1) yoluyla kaydediliyor.
+ 
+Aşağıdaki kayıtlar Intune tarafından kurumsal olarak işaretlenir. Ancak Intune yöneticisi cihaz başına denetim sağlamadığı için engellenir:
+- [Windows kurulumu sırasında Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows Ayarları'ndan Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+ 
+Aşağıdaki kişisel kayıt yöntemleri de engellenir:
+- [Windows Ayarları'ndan İş Hesabı ekleme](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- Windows Ayarları’ndan [Yalnızca MDM kaydı]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) seçeneği.
+
+\* Bunlar, Autopilot ile kaydedilirse engellenmez.
+
 
 ## <a name="change-enrollment-restriction-priority"></a>Kayıt kısıtlama önceliğini değiştirme
 
@@ -153,7 +163,7 @@ Cihaz kaydı, hem cihaz türü hem de cihaz sınırı kısıtlamaları için var
 
 Varsayılan kısıtlamalar dışındaki tüm kısıtlamaların önceliğini değiştirebilirsiniz.
 
-1. Azure portalında oturum açın.
+1. Azure Portal’da oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. Öncelik listesinde kısıtlamanın üzerine gelin.

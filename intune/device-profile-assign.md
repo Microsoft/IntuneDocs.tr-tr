@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c950efdd95fd8d856ec677385712a022dead870
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 568c1e0dfe711ef95c5713854315f65ecf16607c
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898743"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304699"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
 
@@ -34,7 +33,7 @@ Bu makalede profil atama yöntemlerinin yanı sıra profillerinizde kapsam etike
 
 ## <a name="assign-a-device-profile"></a>Bir cihaz profili atama
 
-1. [Azure portalında](https://portal.azure.com) **Tüm Hizmetler**’i seçin > **Intune**’u filtreleyin ve **Intune**’u seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller**'i seçin. Tüm profiller listelenir.
 3. Atamak istediğiniz profili ve ardından **Atamalar**'ı seçin.
 4. Grupları **Dahil Etmeyi** veya **Dışlamayı** seçin ve sonra da gruplarınızı belirtin. Gruplarınızı seçtiğinizde, bir Azure AD grubu seçersiniz. Birden çok grup seçmek için grupları seçerken **Ctrl** tuşunu basılı tutun.
@@ -52,22 +51,27 @@ Profili atadıktan sonra etkilenen kullanıcı sayısını da **değerlendirebil
 
 **Değerlendir** düğmesi gri gösteriliyorsa, profilin bir veya birden fazla gruba atandığından emin olun.
 
+## <a name="use-scope-tags-or-applicability-rules"></a>Kapsam etiketlerini veya uygulanabilirlik kurallarını kullanma
 
-## <a name="use-scope-tags"></a>Kapsam etiketlerini kullanma
-
-Profil oluşturma veya güncelleştirme sırasında kapsam etiketi de ekleyebilirsiniz.
+Bir profil oluşturduğunuzda veya güncelleştirdiğinizde, profile kapsam etiketleri ve Uygulanabilirlik kuralları da ekleyebilirsiniz.
 
 **Kapsam etiketleri**, ilkeleri İnsan Kaynakları veya Merkez ofis çalışanları gibi belirli gruplara atamak ve filtreleme yapmak için kullanabileceğiniz bir yöntemdir. Daha fazla bilgi için bkz. [Dağıtılmış BT için RBAC ve kapsam etiketlerini kullanma](scope-tags.md).
 
+Windows 10 cihazlarında, profil yalnızca belirli bir işletim sistemi sürümü veya belirli bir Windows sürümü için geçerli olacak şekilde **uygulanabilirlik kuralları** ekleyebilirsiniz. [Uygulanabilirlik kurallarında](device-profile-create.md#applicability-rules) daha fazla bilgi bulunur.
+
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Grupları bir profil atamasından dışlama
 
-Intune cihaz yapılandırma profilleri, grupları ilke atamasından dışlamanıza olanak tanır. Örneğin **Tüm şirket kullanıcıları** grubuna bir cihaz profili atayabilir ve **Üst Düzey Yönetim Kadrosu** grubundan belirli üyeleri dışlayabilirsiniz.
+Intune cihaz yapılandırma profilleri, grupları ilke atamasından dışlamanıza olanak tanır.
 
-Grupları, yalnızca kullanıcıları veya cihaz gruplarını (grupların bir karışımını değil) bir atamadan dışladığınızda; Intune herhangi bir kullanıcı-cihaz ilişkisini dikkate almaz. Kullanıcı gruplarını dahil ederken cihaz gruplarını dışlamak, istediğiniz sonuçları vermeyebilir. Karışık gruplar kullanmanız veya başka çakışmaların ortaya çıkması durumunda, dahil etme işleminin dışlama işlemine önceliği vardır.
+Intune, Kullanıcı-cihaz grubu ilişkilerine bakar. Kullanıcı gruplarını dahil ederken cihaz gruplarını dışlamak, istediğiniz sonuçları vermeyebilir. Kullanıcı grubundan Kullanıcı grubu ve cihaz grubundan cihaza grup senaryolarında dışlama, dahil edilmeye göre önceliklidir.
 
-Örneğin kuruluşunuzda bilgi noktası cihazları hariç tüm cihazlara cihaz profilleri atamak istiyorsunuz. Bunun için **Tüm Kullanıcılar** grubunu dahil edip **Tüm Cihazlar** grubunu dışlıyorsunuz. Bu durumda, cihazı **Tüm Cihazlar** grubunun parçası olan kullanıcılar bile dahil olmak üzere tüm kullanıcılarınız ve onların cihazları bu ilkeyi alır.
+Örneğin, **tüm kurumsal kullanıcılar** kullanıcı grubuna bir cihaz profili atarsınız, ancak üst **düzey yönetim personeli** Kullanıcı grubundaki üyeleri dışlayabilirsiniz. Her iki grup da Kullanıcı grupları olduğundan, **tüm şirket kullanıcıları** dahil et grubunun üyesi olsalar dahi, üst **düzey yönetim personelinin** tüm üyeleri ilkeden çıkarılır.
 
-Dışlama yalnızca doğrudan gruba üye olanları dikkate alır. Kullanıcıyla ilişkilendirilen cihazları dahil etmez. Ancak, bir kullanıcısı olmayan cihazlara ilke uygulanmaz. Bunun nedeni, bu cihazların **Tüm Kullanıcılar** grubuyla ilişkisi olmamasıdır.
+Ekleme, Kullanıcı grubundan cihaza grup veya cihaz grubundan Kullanıcı grubu gibi karma grupları kullanırken dışlamaya göre önceliklidir.
+
+Örneğin, kuruluşunuzdaki tüm kullanıcılara bilgi noktası cihazları dışında bir cihaz profili atamak istiyorsunuz. Bunun için **Tüm Kullanıcılar** grubunu dahil edip **Tüm Cihazlar** grubunu dışlıyorsunuz. Bu durumda, cihazı **Tüm Cihazlar** grubunun parçası olan kullanıcılar bile dahil olmak üzere tüm kullanıcılarınız ve onların cihazları bu ilkeyi alır.
+
+Dışlama yalnızca doğrudan gruba üye olanları dikkate alır. Kullanıcıyla ilişkilendirilen cihazları dahil etmez. Ancak, bir kullanıcısı olmayan cihazlar, ilke almaz. Bu davranış, kullanıcıları olmayan cihazların **tüm kullanıcılar** grubuyla ilişkisi olmadığı için oluşur.
 
 **Tüm Cihazlar** grubunu dahil edip **Tüm Kullanıcılar** grubunu dışlarsanız ilkeyi tüm gruplar alacaktır. Bu senaryodaki amaç, ilişkili kullanıcısı olan cihazları bu ilkeden dışlamaktır. Ancak cihazlar dışlanmaz çünkü dışlama, yalnızca grupların doğrudan üyesi olanları hesaba katar.
 

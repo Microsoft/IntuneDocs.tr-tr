@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1db613f93e50caa377297e3873f6817a39714fe7
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 13b1a8851e9e88648311f3cd12bea89bb0bc2396
+ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900630"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "71305261"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -55,9 +54,8 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 
 ## <a name="assign-an-app"></a>Uygulama atama
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **Intune** menüsünde **İstemci uygulamaları**’nı seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. Menünün **Yönet** bölümünde **Uygulamalar**’ı seçin.
 5. **Uygulamalar** bölmesinde atamak istediğiniz uygulamayı seçin.
 6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin.
@@ -69,9 +67,13 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
    - **Kaldır**: Intune'un uygulamayı cihaza bir "Kayıtlı cihazlar için bulunur" veya "Gerekli" ataması aracılığıyla ve aynı dağıtımı kullanarak yüklemiş olması halinde uygulama, seçilen gruplardaki cihazlardan kaldırılır. Dağıtım sonrasında web bağlantıları kaldırılamaz.
 
      > [!NOTE]
-     > **Yalnızca iOS uygulamaları için**: Uygulamaya göre VPN ayarlarını barındıran bir iOS VPN profili oluşturduysanız **VPN**'nin altında VPN profilini seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
+     > **Yalnızca iOS uygulamaları için**:
+     > - Cihazların artık yönetilmediği yönetilen uygulamalara ne olduğunu yapılandırmak için, **cihaz kaldırma sırasında**, istenen ayarını seçebilirsiniz. Daha fazla bilgi için bkz. [iOS tarafından yönetilen uygulamalar Için uygulama kaldırma ayarı](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
+     > - Uygulamaya göre VPN ayarlarını barındıran bir iOS VPN profili oluşturduysanız **VPN**'nin altında VPN profilini seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](vpn-settings-ios.md).
      >
      > **Yalnızca Android uygulamaları için**: **Kayıtlı veya kayıtsız olarak kullanılabilir** atamasıyla dağıttığınız Android uygulamalarında raporlama durumu yalnızca kayıtlı cihazlarda kullanılabilir.
+     >
+     > **Kayıtlı cihazlar Için kullanılabilir**: Uygulama yalnızca Şirket Portalı oturum açmış olan Kullanıcı, cihazı kaydeden birincil kullanıcı ve uygulama cihaz için geçerliyse kullanılabilir olarak görüntülenir.
 
 9. Bu uygulama atamasından etkilenecek kullanıcı gruplarını belirtmek için, **Dahil Edilen Gruplar**'ı seçin.
 10. Dahil etmek üzere bir veya daha fazla grup belirttikten sonra **Seç** düğmesini seçin.
@@ -85,7 +87,8 @@ Uygulama artık seçtiğiniz gruplara atanır. Uygulama atamalarını dahil etme
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Uygulama amaçları arasındaki çakışmalar nasıl çözümlenir
 
-Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. Aşağıdaki tabloda verilen bilgiler, bu durum ortaya çıktığında sonuçta söz konusu olan amacı anlamanıza yardımcı olabilir:
+Tek bir grubun birden çok uygulama atama amacı için hedeflenemez, ancak bir kullanıcı veya cihaz, her biri farklı hedeflerle atanmış birden çok grubun üyesiyse çakışmaya neden olur. Uygulamalar için atama çakışmalarının oluşturulması önerilmez.
+Aşağıdaki tablodaki bilgiler, bir çakışma oluştuğunda ortaya çıkan amacı anlamanıza yardımcı olabilir:
 
 | Grup 1 amacı | Grup 2 amacı | Ortaya çıkan amaç |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -123,7 +126,8 @@ Bazı durumlarda, aynı uygulama farklı amaçlarla birden çok gruba atanır. A
 
 > [!NOTE]
 > Yalnızca yönetilen iOS mağazası uygulamalarını Microsoft Intune’a ekleyip **Gerekli** olarak atadığınızda, bu uygulamalar hem **Gerekli** hem de **Kullanılabilir** amaçlarıyla otomatik olarak oluşturulur.<br><br>
-> Gerekli amaçla hedefi belirlenmiş iOS Store uygulamaları (iOS VPP uygulamaları değil), cihazı iade etme sırasında cihazda zorunlu tutulur ve Şirket Portalı uygulamasında da gösterilir.
+> Gerekli amaçla hedefi belirlenmiş iOS Store uygulamaları (iOS VPP uygulamaları değil), cihazı iade etme sırasında cihazda zorunlu tutulur ve Şirket Portalı uygulamasında da gösterilir.<br><br>
+> **Cihaz kaldırma** ayarında çakışmalar oluştuğunda, cihaz artık yönetilmediğinde uygulama cihazdan kaldırılmaz.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Yönetilmeyen cihazlara Yönetilen Google Play uygulaması dağıtımı
 Kayıtlı olmayan Kayıt Olmadan Uygulama Koruma İlkesi (APP-WE) dağıtım senaryosundaki Android cihazlar için Yönetilen Google Play'i kullanarak kullanıcılara mağaza ve iş kolu (LOB) uygulamaları dağıtabilirsiniz. **Kayıtlı veya kayıtsız olarak kullanılabilir** olarak hedeflenene Yönetilen Google Play uygulamaları, son kullanıcının cihazında Şirket Portalı uygulamasında değil Play Store uygulamasında görünür. Bu sayede son kullanıcı Play uygulamasına dağıtılan uygulamalara göz atabilir ve bunları yükleyebilir. Uygulamalar yönetilen Google Play'den yüklendiği için son kullanıcının bilinmeyen kaynaklardan uygulama yüklenmesine izin verme amacıyla cihaz ayarlarını değiştirmesi gerekmez ve bu sayede cihaz daha güvenli olur. Uygulama geliştiricisinin, kullanıcının cihazına yüklenen uygulama için Play'de yeni bir sürüm yayımlaması durumunda uygulama Play tarafından otomatik olarak güncelleştirilir. 
@@ -138,6 +142,23 @@ Yönetilmeyen cihazlara Yönetilen Google Play uygulaması atama adımları:
 6. Son kullanıcı, Play Store uygulamasındaki bağlam menüsünü genişleterek kişisel Google hesaplarıyla (kişisel uygulamalarının bulunduğu) iş hesapları (kendilerini hedefleyen mağaza ve iş kolu uygulamalarının bulunduğu) arasında geçiş yapabilir. Son kullanıcılar, Play Store uygulamasında Yükle'ye dokunarak uygulamaları yükleyebilir.
 
 Intune konsolundan uygulamaya özgü bir silme işlemi başlatıldığında iş hesabı Play Store uygulamasından otomatik olarak kaldırılır ve bu işlemden sonra son kullanıcı Play Store uygulama kataloğunda iş uygulamalarını göremez. İş hesabı bir cihazdan kaldırıldığında Play Store'dan yüklenen uygulamalar cihazda yüklü şekilde kalır ve kaldırılmaz. 
+
+## <a name="app-uninstall-setting-for-ios-managed-apps"></a>İOS ile yönetilen uygulamalar için uygulama kaldırma ayarı
+İOS cihazlarında, cihazın Intune kaydını silmek veya **cihaz kaldırma ayarında Kaldır '** ı kullanarak yönetim profilini kaldırmak için, yönetilen uygulamalara ne olacağını seçebilirsiniz. Bu ayar yalnızca cihaz kaydedildikten ve uygulamalar yönetilen olarak yüklendikten sonra uygulamalar için geçerlidir. Ayar Web uygulamaları veya Web bağlantıları için yapılandırılamaz. 
+
+Ayar için varsayılan değerler, yeni atamalar için aşağıdaki gibi önceden doldurulur:
+
+|iOS uygulama türü | "Cihaz kaldırma sırasında kaldırma" için varsayılan ayar |
+|--------------------|----------------|
+| İş kolu uygulaması | Evet |
+| Mağaza uygulaması | Hayır |
+| VPP uygulaması | Hayır |
+| Buit-ın uygulaması | Hayır |
+
+>[!NOTE]
+>**"Kullanılabilir" atama türleri:** "Kayıtlı cihazlar için kullanılabilir" veya "kayıt olmaksızın kullanılabilir" grupları için bu ayarı güncelleştiriyorsanız, zaten yönetilen uygulamaya sahip olan kullanıcılar, cihazı Intune ile eşitlemeden ve uygulamayı yeniden yüklemeden, güncelleştirilmiş ayarı almaz. 
+>
+>**Önceden var olan Atamalar:** Bu ayarın kullanıma sunulmasından önce var olan atamalar değiştirilmemiş ve tüm yönetilen uygulamalar, yönetim 'ten cihaz kaldırılırken kaldırılacak.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

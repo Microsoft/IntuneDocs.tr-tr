@@ -1,14 +1,13 @@
 ---
-title: Toplu satın alınan yönetmenize veya iş için Microsoft Store uygulamaları ücretsiz
+title: Iş için Microsoft Store VPP uygulamalarını yönetme
 titleSuffix: Microsoft Intune
-description: İş için Microsoft Store ıntune'a satın alınan (ya da ücretsiz) uygulamaları nasıl eşitleyebilirsiniz öğrenin.
+description: Iş için Microsoft Store uygulamaları Intune 'a nasıl eşitleyebileceğinizi öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 08/12/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,20 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67d99977776657219638980eb6de8a4079384185
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: a58136fc9e973963fbfe12efd03f92b5b8a01f9f
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587510"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71302518"
 ---
-# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Nasıl Intune Microsoft ile iş için Microsoft Store ' ndan toplu satın alınan (ya da ücretsiz) uygulamaları yönetme
+# <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Toplu satın alınan uygulamaları Microsoft Store Iş için Microsoft Intune ile yönetme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [İş İçin Microsoft Mağazası](https://www.microsoft.com/business-store), kuruluşunuz için tek tek veya toplu olarak uygulamaları bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayı Microsoft Intune’a bağlayarak toplu satın alınan uygulamaları Azure portalından yönetebilirsiniz. Örneğin:
-* Satın aldığınız (veya boş olmayan) uygulamalar listesini eşitleyebilirsiniz ıntune'la mağazadan.
+* Satın almış olduğunuz (veya ücretsiz) uygulamaların listesini Intune ile eşzamanlı olarak saklayabilirsiniz.
 * Eşitlenen uygulamalar, Intune yönetim konsolunda gösterilir; bu uygulamaları herhangi bir uygulama gibi atayabilirsiniz.
+* Uygulamaların hem çevrimiçi hem de çevrimdışı lisanslı sürümleri Intune ile eşitlenir. Portalda "çevrimiçi" veya "çevrimdışı" olarak, uygulama adlarına eklenecektir.
 * Kaç tane kullanılabilir lisans olduğunu ve bunlardan kaç tanesinin kullanıldığını Intune yönetim konsolunda izleyebilirsiniz.
 * Kullanılabilir lisans sayısı yetersiz olduğunda Intune uygulamaların atanmasını ve yüklenmesini engeller.
 * İş İçin Microsoft Store ile yönetilen uygulamalar, kullanıcı işletmeden ayrıldığında veya yönetici kullanıcıyı ve kullanıcı cihazlarını kaldırdığında, lisansları otomatik olarak iptal eder.
@@ -54,9 +54,9 @@ Ayrıca, İş İçin Microsoft Store'dan eşitlenen ilgili kümeler ve Çevrimd�
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>İş İçin Microsoft Mağazası hesabınızı Intune’la ilişkilendirme
 Intune konsolunda eşitlemeyi etkinleştirmek için, önce mağaza hesabınızı yönetim aracı olarak Intune’u kullanacak şekilde yapılandırmanız gerekir:
-1. İçine oturum olun [iş için Microsoft Store](https://www.microsoft.com/business-store) Intune'a oturum açmak için kullandığınız Kiracı hesabının aynısını kullandığınızdan.
-2. İş Store içinde seçin **Yönet** sekmesinde **ayarları**ve **Dağıt** sekmesi.
-3. Özellikle yoksa **Intune** kullanılabilir bir mobil cihaz yönetim aracı olarak seçin **Yönetim Aracı Ekle** eklemek için **Intune**. Öğeniz yoksa **Intune** , mobil cihaz yönetim aracı olarak etkinleştirilmiş tıklayın **etkinleştirme** yanındaki **Intune**. Etkinleştirilmesi gerektiğini unutmayın **Intune** yerine **Microsoft Intune kaydı**.
+1. Intune 'da oturum açmak için kullandığınız kiracı hesabını kullanarak [iş Microsoft Store](https://www.microsoft.com/business-store) oturum açmanızı sağlayın.
+2. Iş Mağazası 'nda **Yönet** sekmesini seçin, **Ayarlar**' ı seçin ve **Dağıt** sekmesini seçin.
+3. Mobil cihaz yönetim aracı olarak **Microsoft Intune** özel olarak yoksa, **Microsoft Intune**eklemek için **Yönetim Aracı Ekle** ' yi seçin. Mobil cihaz yönetimi aracınız olarak **Microsoft Intune** etkinleştirilmemişse, **Microsoft Intune**' nin yanındaki **Etkinleştir** ' e tıklayın. **Microsoft Intune kayıt**yerine **Microsoft Intune** etkinleştirmeniz gerektiğini unutmayın.
 
 > [!NOTE]
 > Daha önce İş İçin Microsoft Mağazası ile uygulama atamak üzere yalnızca bir yönetim aracı ilişkilendirebiliyordunuz. Artık mağaza ile Intune ve Configuration Manager gibi birden fazla yönetim aracını ilişkilendirebilirsiniz. 
@@ -65,8 +65,7 @@ Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 ## <a name="configure-synchronization"></a>Eşitlemeyi yapılandırma
 
-1. [Azure portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 1. **İstemci uygulamaları** bölmesinde **Kurulum** > **İş İçin Microsoft Store**’u seçin.
 2. **Etkinleştir**'e tıklayın.
@@ -78,6 +77,9 @@ Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 1. **İstemci uygulamaları** iş yükünde **Kurulum** > **İş İçin Microsoft Store**’u seçin.
 2. Microsoft Mağazası’ndan satın aldığınız uygulamaları Intune’a almak için **Eşitle**’ye tıklayın.
+
+> [!NOTE]
+> Şifrelenmiş uygulama paketlerine sahip uygulamalar şu anda desteklenmemektedir ve Intune ile eşitlenmez.
 
 ## <a name="assign-apps"></a>Uygulamaları atama
 
@@ -94,12 +96,12 @@ Mağazadan alınan uygulamaları, diğer tüm Intune uygulamalarıyla aynı şek
 
 ## <a name="remove-apps"></a>Uygulamaları kaldırma
 
-İş İçin Microsoft Store’dan eşitlenmiş bir uygulamayı kaldırmak için İş İçin Microsoft Store’da oturum açıp uygulamayı iade etmelisiniz. Uygulama boş olup olmadığını işlemi aynıdır. Ücretsiz bir uygulama için deponun 0 ABD Doları para iadesi. Aşağıdaki örnek, ücretsiz bir uygulama için para iadesi gösterir. 
+İş İçin Microsoft Store’dan eşitlenmiş bir uygulamayı kaldırmak için İş İçin Microsoft Store’da oturum açıp uygulamayı iade etmelisiniz. İşlem, uygulamanın boş olup olmadığına bakılmaksızın aynıdır. Ücretsiz bir uygulama için mağaza $0 para iadesi olur. Aşağıdaki örnekte, ücretsiz bir uygulama için bir para iadesi gösterilmektedir. 
 
 ![Uygulama kaldırma ayrıntılarının ekran görüntüsü](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> Özel depoda bir uygulamanızın görünürlüğünü kaldırma, Intune uygulama eşitlenmesini tutulmaz. Uygulama uygulamasını tamamen kaldırmak için para iadesi gerekir.
+> Uygulamanın özel depoda görünürlüğünü kaldırmak, Intune 'un uygulamayı eşitlemesini kaybetmez. Uygulamayı tamamen kaldırmak için uygulamayı geri almanız gerekir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

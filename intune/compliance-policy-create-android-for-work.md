@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 09/16/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7a9a5ff686ce3cff8b60c2bd1c0c5d108d58760
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: c6351aa7adf9d9d5ca333bb2bd97e552e6f1e156
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896896"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71304147"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz Android Kurumsal ayarları
 
@@ -37,13 +36,39 @@ Bu özellik şu platformlarda geçerlidir:
 Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun kaynaklarının korunmasına yardımcı olabilirsiniz. Uyumluluk ilkeleri ve işlevleri hakkında daha fazla bilgi için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
 > [!IMPORTANT]
-> Uyumluluk ilkeleri, ayrılmış Android Kurumsal cihazları için de geçerlidir. Bir cihaza uyumluluk ilkesinin atanması durumunda cihaz **Uyumlu değil** şeklinde görünebilir. Koşullu erişim ve uyumluluk zorlama, ayrılmış cihazlarda kullanılamaz. Ayrılmış cihazların atanan ilkelerinizle uyumlu olmasını sağlamak için gerekli görevleri veya eylemleri gerçekleştirdiğinizden emin olun.
+> Uyumluluk ilkeleri, ayrılmış Android Kurumsal cihazları için de geçerlidir. Bir cihaza uyumluluk ilkesinin atanması durumunda cihaz **Uyumlu değil** şeklinde görünebilir. Koşullu erişim ve uyumluluk zorlama adanmış cihazlarda kullanılamaz. Ayrılmış cihazların atanan ilkelerinizle uyumlu olmasını sağlamak için gerekli görevleri veya eylemleri gerçekleştirdiğinizden emin olun.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 [Uyumluluk ilkesi oluşturma](create-compliance-policy.md#create-the-policy). **Platform** olarak **Android Kurumsal**’ı seçin.
 
 ## <a name="device-owner"></a>Cihaz sahibi
+
+### <a name="device-health"></a>Cihaz Sistem Durumu
+
+- **Cihazın Cihaz Tehdit Düzeyinde veya bu düzeyin altında olmasını gerekli kıl**: [Mobil tehdit savunması hizmetiniz](mobile-threat-defense.md)tarafından değerlendirilen izin verilen maksimum cihaz tehdit düzeyini seçin. Bu tehdit düzeyini aşan cihazlar uyumsuz olarak işaretlenir. Bu ayarı kullanmak için izin verilen tehdit düzeyini seçin:
+
+  - **Yapılandırılmadı** (varsayılan): Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
+  - **Güvenli**: Bu seçenek en güvenlisidir ve cihazda hiçbir tehdit olmaması gerektiği anlamına gelir. Herhangi bir tehdit düzeyi algılanırsa cihaz uyumsuz olarak değerlendirilir.
+  - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
+  - **Orta**: Cihazdaki tehditler düşük veya orta düzeydeyse cihaz, uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
+  - **Yüksek**: Tüm tehdit düzeylerine izin verdiği için bu seçenek en düşük güvenliğe sahiptir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
+  
+> [!NOTE] 
+> Aşağıdaki Mobile Threat Defence (MTD) sağlayıcıları, uygulama yapılandırması kullanılarak Android kurumsal cihaz sahibi dağıtımlarını destekler:
+> - Daha iyi mobil 
+> - Pradeo
+> - Sophos Mobile
+> - Zimperium 
+>  
+>  Intune 'da Android kurumsal cihaz sahibi platformlarını desteklemek için gereken tam yapılandırma için MTD sağlayıcınızla görüşün. Bu liste, Android kurumsal cihaz sahibi senaryolarını destekleyen MTD 'ler olarak güncelleştirilir. 
+
+#### <a name="google-play-protect"></a>Google Play Koruması
+
+- **SafetyNet cihaz kanıtı**: Uyulması gereken [SafetyNet kanıtı](https://developer.android.com/training/safetynet/attestation.html) düzeyini ayarlayın. Seçenekleriniz şunlardır:
+  - **Yapılandırılmadı** (varsayılan): Ayar, uyumluluk veya uyumsuzluk açısından değerlendirilmez.
+  - **Temel bütünlük denetimi**
+  - **Temel bütünlük ve sertifikalı cihaz denetimi**
 
 ### <a name="device-properties"></a>Cihaz özellikleri
 
@@ -57,10 +82,10 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
   Bu ayar cihaz düzeyinde uygulanır. Yalnızca iş profili düzeyinde parola kullanılmasını istiyorsanız bir yapılandırma ilkesi kullanabilirsiniz. Bkz. [Android için Intune cihaz yapılandırma ayarları](device-restrictions-android-for-work.md).
 
   - **Gerekli parola türü**: Parolanın yalnızca sayısal karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından mı oluşacağını seçin. Seçenekleriniz şunlardır:
-    - **Cihaz varsayılanı**
+    - **Cihaz varsayılanı**: Parola uyumluluğunu değerlendirmek için, **cihaz varsayılanı**dışında bir parola gücü seçtiğinizden emin olun.  
     - **Parola gerekli, kısıtlama yok**
     - **Zayıf biyometrik**: [Güçlü ile zayıf biyometrik arasındaki farklar](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (Android web sitesinde açılır)
-    - **Sayısal**: Parola yalnızca sayı olmalıdır, örneğin: `123456789`. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+    - **Sayısal** (varsayılan): Parola yalnızca sayı olmalıdır, örneğin: `123456789`. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
     - **Sayısal karmaşıklık**: Yinelenen veya ardışık sayılara (örneğin "1111" veya "1234") izin verilmez. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
     - **Alfabetik**: Alfabedeki harflerin kullanılması gerekir. Rakamlar ve simgeler zorunlu tutulmaz. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
     - **Alfasayısal**: Büyük harfler, küçük harfler ve sayısal karakterleri içerir. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
@@ -82,14 +107,14 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
   Android Kurumsal cihazlarında şifreleme zorunlu olduğundan bu ayarı yapılandırmanız gerekmez.
 
-Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
-
 ## <a name="work-profile"></a>İş profili
 
 ### <a name="device-health"></a>Device health
 
 - **Kök erişim izni verilmiş cihazlar**: Kök erişim izni verilmiş (jailbreak uygulanmış) cihazları uyumsuz olarak işaretlemek için **Engelle**’yi seçin. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez.
-- **Cihazın Cihaz Tehdit Düzeyinde veya bu düzeyin altında olmasını gerekli kıl**: Lookout MTP çözümünden alınan risk değerlendirmesini uyumluluk koşulu olarak kullanmak için bu ayarı etkinleştirin. **Yapılandırılmadı** (varsayılan) seçeneğini belirtirseniz bu ayar uyumluluk veya uyumsuzluk açısından değerlendirilmez. Bu ayarı kullanmak için izin verilen tehdit düzeyini seçin:
+- **Cihazın Cihaz Tehdit Düzeyinde veya bu düzeyin altında olmasını gerekli kıl**: [Mobil tehdit savunması hizmetiniz](mobile-threat-defense.md)tarafından değerlendirilen izin verilen maksimum cihaz tehdit düzeyini seçin. Bu tehdit düzeyini aşan cihazlar uyumsuz olarak işaretlenir. Bu ayarı kullanmak için izin verilen tehdit düzeyini seçin:
+
+  - **Yapılandırılmadı** (varsayılan): Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
   - **Güvenli**: Bu seçenek en güvenlisidir ve cihazda hiçbir tehdit olmaması gerektiği anlamına gelir. Herhangi bir tehdit düzeyi algılanırsa cihaz uyumsuz olarak değerlendirilir.
   - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumlu olarak değerlendirilir. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
   - **Orta**: Cihazdaki tehditler düşük veya orta düzeydeyse cihaz, uyumlu olarak değerlendirilir. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
@@ -159,8 +184,6 @@ Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
   Android Kurumsal cihazlarında USB hata ayıklama zaten devre dışı olduğundan bu ayarı yapılandırmanız gerekmez.
 
 - **Minimum güvenlik düzeltme düzeyi**: Bir cihazda olabilecek en eski güvenlik düzeltme eki düzeyini seçin. Bu yama düzeyinin altındaki cihazlar uyumsuz kabul edilir. Tarihin *YYYY-AA-GG* biçiminde girilmesi gerekir.
-
-Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

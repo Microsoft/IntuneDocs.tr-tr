@@ -6,9 +6,8 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 08/27/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 454000ccc7ac2d6f531b5ab43bb7652541559992
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 40bb5e1b14fa0c8c9b1af4e5a07e6a855808324a
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896125"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "71303128"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>iOS mağaza uygulamalarını Microsoft Intune’a ekleme
 
@@ -41,15 +40,13 @@ Bu yöntemi kullanarak yalnızca App Store’da ücretsiz olan uygulamaları ata
 >[!NOTE]
 >Microsoft Intune ile çalışırken Microsoft Edge veya Google Chrome tarayıcılarını kullanmanızı öneririz.
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin.  
-    Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
 4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
 5. **Uygulamalar** bölmesinde **Ekle**’yi seçin.
 6. **Uygulama türü** listesindeki **Mağaza uygulaması** türleri altında **iOS**’u seçin.
 7. **App Store’da Ara**’yı seçin.
-8. **App Store’da Ara** bölmesinde App Store ülke yerel ayarını seçin.
+8. **App Store 'Da ara** bölmesinde, App Store ülke/bölge yerel ayarını seçin.
 9. **Ara** kutusuna uygulama adını (veya adın bir kısmını) yazın.  
     Intune, mağazada arama yapar ve ilgili sonuçların listesini getirir.
 10. Sonuçlar listesinde istediğiniz uygulamayı seçin ve ardından **Seçin**’e tıklayın.
@@ -70,7 +67,7 @@ Bu yöntemi kullanarak yalnızca App Store’da ücretsiz olan uygulamaları ata
     - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin. Bu alan yalnızca bir yönetici tarafından görülebilir, son kullanıcılar tarafından görülemez.
     - **Logo**: İsteğe bağlı olarak, uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
 13. **Tamam**’ı seçin.
-14. **Ekle**’yi seçin.
+14. **Add (Ekle)** seçeneğini belirleyin.
 
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz.
 

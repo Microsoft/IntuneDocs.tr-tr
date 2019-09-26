@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166350"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71279913"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar. 
 
@@ -66,38 +66,6 @@ Herhangi bir eylemde bulunmanıza gerek yoktur, ancak gerekirse BT uzmanı kıla
 #### <a name="additional-information"></a>Ek bilgiler 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Değişiklik planı: Intune, Eylül ayının iOS 11 ve üstünü desteklemeye taşınıyor <!-- 4665324-->
-Eylül ayında, iOS 13 ' ün Apple tarafından Yayınlanma bekliyor. Intune kaydı, Şirket Portalı ve Managed Browser iOS 13 sürümünden kısa bir süre sonra iOS 11 ve sonraki sürümleri destekleyecek şekilde hareket edecektir.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-O365 mobil uygulamalarının iOS 11,0 ve üzeri sürümlerde desteklendiğinden, bu durum sizi etkilemeyebilir; büyük olasılıkla işletim sistemini veya cihazlarınızı zaten yükseltdiniz. Ancak, aşağıda listelenen bir cihaz varsa veya aşağıda listelenen cihazların herhangi birini kaydetmeyi seçerseniz, aşağıdaki cihazların iOS 10 ' dan büyük bir işletim sistemini desteklemediğini öğrenin. Bu cihazların, iOS 11 veya üstünü destekleyen bir cihaza yükseltilmesi gerekir:
-
-- iPhone 5
-- iPhone 5c
-- iPad (4. nesil)
-
-Uygulama koruma Ilkeleri (uygulama) kullanıyorsanız, "En düşük iOS işletim sistemi gerektir (yalnızca uyarı)" Erişim ayarını da ayarlayabilirsiniz.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune Raporlama ' yı denetleyin. **Cihazlar** > **tüm cihazlar** ' a gidin ve işletim sistemine göre filtreleyin. Kuruluşunuzdaki kimlerin iOS 10 çalıştıran cihazlara sahip olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın Eylül 'den önce cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmesini isteyin.
-
-### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Değişiklik planı: İOS için Intune uygulama SDK 'sının sürüm 8.1.1 ve üzeri desteği <!-- 3586942-->
-Intune, 2019 Eylül 'den başlayarak Intune uygulama SDK 'Sı 8.1.1 ve üzeri ile iOS uygulamalarını destekleyecek şekilde hareket edecektir. SDK sürümleri 8.1.1 'dan oluşturulan uygulamalar artık desteklenmeyecektir. Bu değişiklik, Apple 'ın iOS 13 sürümü ile birlikte devreye girer, bu da Eylül ayında gelmiş olması beklenir ve MC181399 içinde duyuruldu.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Intune uygulama SDK 'Sı veya uygulama sarmalama tümleştirmesiyle, veri şifrelemesi aracılığıyla onaylanmamış uygulamalardan ve kullanıcılardan Şirket verilerini koruyabilirsiniz. İOS için Intune uygulama SDK 'Sı, şifreleme Intune Uygulama Koruması Ilkeleri (uygulama) tarafından etkinleştirildiğinde varsayılan olarak 256 bitlik şifreleme anahtarlarını kullanacaktır. Bu değişiklikten sonra, 128-bit şifreleme anahtarları kullanan 8.1.1 ' den önceki SDK sürümlerindeki iOS uygulamaları, artık SDK 8.1.1 ile tümleştirilmiş uygulamalarla veya 256 bit anahtarları kullanarak verileri paylaşamaz. Korunan veri paylaşımına izin vermek için tüm iOS uygulamalarının bir SDK sürümü 8.1.1 veya daha yüksek olması gerekir.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-Microsoft, üçüncü taraf ve iş kolu (LOB) uygulamalarınızı kontrol edin. Intune uygulamasıyla korunan tüm uygulamalarınızın SDK sürüm 8.1.1 veya üstünü kullandığını doğrulayın.
-
-- LOB uygulamaları için: SDK sürümü 8.1.1 veya üzeri ile tümleştirilmiş uygulamalarınızı yeniden yayımlamanız gerekebilir. En son SDK sürümünü öneririz. LOB uygulamalarınızı uygulama koruma ilkelerine hazırlama hakkında daha fazla bilgi için bkz. [iş kolu uygulamalarını uygulama koruma ilkeleri Için hazırlama](../apps-prepare-mobile-application-management.md).
-- Microsoft/üçüncü taraf uygulamaları için: Bu uygulamaların en son sürümünü kullanıcılarınıza dağıttığınızdan emin olun.
-
-Ayrıca, bu değişikliği SDK desteği 'ne dahil etmek için geçerliyse belgelerinizi veya geliştirici kılavuzunuzu da güncelleştirmeniz gerekir.
-
-#### <a name="additional-information"></a>Ek bilgiler
-[İş kolu uygulamalarını uygulama koruma ilkeleri için hazırlama](../apps-prepare-mobile-application-management.md)
-
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Değişiklik planı: Intune 'da yeni Windows güncelleştirmeleri ayarları <!-- 4464404 -->
 Intune hizmetine veya 1908 Ağustos sürümünden başlayarak, "kullanıcının yeniden başlatılmasına Izin ver (serbest yeniden başlatma)" ayarlarını yerine yapılandırabileceğiniz yeni "son tarih ayarları" na ekleniyoruz. 1909 veya Eylül güncelinizdeki Kullanıcı arabirimindeki etkin yeniden başlatma ayarlarını devre dışı bırakmayı planlıyoruz ve ardından bunları Ekim sonuna doğru konsolundan tamamen kaldırdık. 
 
@@ -132,3 +100,19 @@ Android sürüm 4. x çalıştıran Intune 'A kayıtlı ortak cihazların listes
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Uygulamalarınızı en son Intune uygulama SDK 'Sı ile sarın. Ayrıca, kişisel cihazlardaki son kullanıcıları yükseltmeye bildirmek için "En düşük işletim sistemi sürümünü gerektir (yalnızca uyarı)" koşullu başlatma ayarını da ayarlayabilirsiniz.
+
+
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune değişiklik planı: Windows 7 için destek sonuna yaklaşıyor <!-- 3042987 -->
+MC148476 tarihinde son Eylül 2018 ' de ve yeniden MC176794 ' de 2019 ' de, Windows 7, 14 Ocak 2020 tarihinde Genişletilmiş desteğin sonuna ulaştığında. Bu sırada, Intune, Windows 7 çalıştıran cihazların desteğini devre dışı bırakacaktır, böylece yeni teknolojileri desteklemeye ve harika yeni son kullanıcı deneyimleri sağlamaya yönelik yatırımımızı odaklamaya devam edebilir. Bu tarihten sonra, Windows 7 BILGISAYARıNıZı korumaya yardımcı olan teknik yardım ve otomatik güncelleştirmeler artık Intune aracılığıyla kullanılamayacak. Microsoft, artık kullanılamayan hizmet veya desteğe ihtiyacınız olan bir senaryoya engel olmak için 2020 Ocak 'tan önce Windows 10 ' a geçmeniz önerilir. [Burada](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)Windows destek yaşam döngüsü hakkında daha fazla bilgi edinin.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Bu iletiyi şu anda Windows 7 PC 'yi eski Intune PC yazılım Aracısı 'nı kullanarak yönettiğiniz için alıyorsunuz. Windows 7 genişletilmiş destek 'in sonundan önceki bir yıldan daha az bir süre ile, kuruluşunuzun Windows 10 ' a en kısa sürede yükseltilmesini kesinlikle öneririz. BILGISAYAR yönetimi özellikleri doğrudan Windows 10 işletim sisteminde yerleşiktir ve artık Windows 7 için Intune yazılım Istemcisi gibi bir istemci aracısını yüklemeniz gerekmez. Microsoft, Windows 8.1 başlayarak Windows bilgisayarlarını sağlamak, yapılandırmak, güncelleştirmek ve yönetmek için mobil cihaz yönetimi (MDM) mimarisini kullanır. Intune 'u ayarladıktan sonra, Windows 10 bilgisayarlarını MDM kanalı aracılığıyla [Intune 'a](..\windows-enroll.md) kaydederek Windows kaydını kolaylaştırabilirsiniz. Windows 10 PC 'nizi yönetmek için bu "aracısız" MDM yönetimi çözümünü kullanmanızı öneririz.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
+Kuruluşunuzun bu eylem planını anında kabul etmeyi öneririz:
+
+- 14 Ocak 2020 tarihinden önce Windows 7 ' yi planlayın ve Windows 10 ' a yükseltin.
+- Mevcut Windows 7 PC 'nizin Windows 10 ' a nasıl yükseltileceğiyle ilgili daha fazla bilgi edinmek için [Windows 10 dağıtım desteğini](https://docs.microsoft.com/windows/deployment/) araştırın.
+- [Masaüstü uygulamasını](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) gözden geçirin Microsoft 'un uygulama uyumluluğu taahhüdüne yardımcı olacak hızlı bir izleme aracılığıyla teklif sunun.
+- Mevcut eski Intune yazılım Istemcisi tarafından yönetilen cihazları, MDM yönetimi kullanarak Windows 10 yönetmek için önerilen Microsoft çözümüne geçirin. Tüm yeni Windows 10 bilgisayarlarını, Azure portal Intune için MDM yönetimini kullanarak kaydedin.
+- Daha fazla bilgi için [buraya gönderilen bloga](https://aka.ms/Windows7_Intune) bakın.

@@ -1,13 +1,12 @@
 ---
-title: Kullanım StageNow günlükleri Microsoft Intune - Azure'da Android Zebra cihazlarda | Microsoft Docs
-description: Genel sorunlar ve çözümleri StageNow Intune Android cihazlarda kullanırken bakın. Ayrıca günlükleri alın ve başarı veya Hata günlüklerini okumak örnekleri Bkz öğrenin.
+title: Microsoft Intune-Azure 'da Android Zeköşeli cihazlarda StageNow günlüklerini kullanma | Microsoft Docs
+description: Microsoft Intune ile Android cihazlarda StageNow kullanırken karşılaşılan yaygın sorunlar ve çözümleri bölümüne bakın. Ayrıca günlükleri nasıl alabileceğinizi öğrenin ve başarılı veya hatalara yönelik günlüklerin nasıl okunduğunu gösteren örneklere bakın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: ''
 ms.technology: ''
@@ -17,63 +16,63 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36476820805c00cefafcd9f64dd2f08a014762c0
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 6110476aace30daa27450326aea3f4abd4fb3ea0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490550"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71303884"
 ---
-# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Sorun giderme ve Microsoft Intune Android Zebra cihazları üzerinde olası sorunlara bakın
+# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Microsoft Intune Android Zeköşeli cihazlarda sorun giderme ve olası sorunları görme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune kullanabileceğiniz [Zebra Android cihazları yönetmek için Zebra Mobility Uzantıları (MX)](android-zebra-mx-overview.md). Zebra cihazlarını kullanırken ayarlarını yönetmek için StageNow profilleri oluşturmak ve bunları Intune'a yükleyin. Intune, cihazlarda ayarları uygulamak için StageNow uygulama kullanır. StageNow uygulama sorunlarını gidermek için kullanılan cihaz ayrıntılı bir günlük dosyası da oluşturur.
+Microsoft Intune, [Zeköşeli Mobility uzantıları 'nı (MX) kullanarak Android zezemi cihazlarını yönetebilirsiniz](android-zebra-mx-overview.md). Zeköşeli cihazları kullanırken, ayarları yönetmek ve Intune 'a yüklemek için StageNow 'da Profiller oluşturun. Intune, ayarları cihazlara uygulamak için StageNow uygulamasını kullanır. StageNow uygulaması, sorun gidermek için kullanılan cihazda ayrıntılı bir günlük dosyası da oluşturur.
 
 Bu özellik şu platformlarda geçerlidir:
 
 - Android
 
-Örneğin, bir cihaz yapılandırma StageNow bir profil oluşturun. StageNow profili oluştururken, son adım profil testi için bir dosya oluşturur. Cihazdaki StageNow uygulaması ile bu dosyayı tükettiğiniz.
+Örneğin, bir cihazı yapılandırmak için StageNow 'da bir profil oluşturursunuz. StageNow profilini oluşturduğunuzda, son adım profili test etmeniz için bir dosya oluşturur. Bu dosyayı cihazdaki StageNow uygulamasıyla kullanırsınız.
 
-Başka bir örnekte StageNow bir profil oluşturmak ve test. Intune, StageNow profili ekleyin ve ardından, Zebra cihazlara atayabilirsiniz. Atanan profil durumu denetlenirken profili üst düzey bir durumu gösterir.
+Başka bir örnekte, StageNow 'da bir profil oluşturur ve test edin. Intune 'da StageNow profilini ekleyin ve ardından Zeköşeli cihazlarınıza atayın. Atanan profilin durumu denetlenirken profil, üst düzey bir durumu gösterir.
 
-Her iki bu durumda, cihazda kaydedilen StageNow profili uygulanır her seferinde hangi StageNow günlük dosyasından daha fazla ayrıntıya ulaşabilirsiniz.
+Her iki durumda da, bir StageNow profili her seferinde cihaza kaydedilen StageNow günlük dosyasından daha ayrıntılı bilgi edinebilirsiniz.
 
-Bazı sorunlar StageNow profili içeriğini ilişkili olmayan ve günlüklerde yansıtılmıyor.
+Bazı sorunlar StageNow profilinin içeriğiyle ilgili değildir ve günlüklere yansıtılmaz.
 
-Bu makalede StageNow günlüklerini okumak nasıl gösterir ve günlüklerde yansımayabilir Zebra cihazlarla başka bir olası sorunları listeler.
+Bu makale, StageNow günlüklerinin nasıl okunacağını gösterir ve günlüklerde yansıtılmamış olan Zeköşeli cihazlarla ilgili diğer olası sorunları listeler.
 
-[Zebra Mobility uzantıları Zebra cihazları yönetme ve kullanma](android-zebra-mx-overview.md) bu özellik hakkında daha fazla bilgi bulunur.
+Zeköşeli [Mobility uzantıları Ile zeköşeli cihazlarını kullanın ve yönetin](android-zebra-mx-overview.md) bu özellik hakkında daha fazla bilgi içerir.
 
-## <a name="get-the-logs"></a>Günlükleri alın
+## <a name="get-the-logs"></a>Günlükleri al
 
 ### <a name="use-the-stagenow-app-on-the-device"></a>Cihazda StageNow uygulamasını kullanma
-Test ettiğinizde, doğrudan kullanmak yerine, bilgisayarınızın StageNow kullanan bir profil [Intune'un profili dağıtmasına izin](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow), cihazdaki StageNow uygulama günlükleri testten kaydeder. Günlük dosyası almak için kullanın **daha fazla (...)**  cihazda StageNow uygulamasında seçeneği.
+' De bilgisayarınızda StageNow kullanarak doğrudan bir profil test ettiğinizde, [profili dağıtmak Için Intune](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow)kullanmak yerine cihazdaki stagenow uygulaması, günlükleri testten kaydeder. Günlük dosyasını almak için, cihazdaki StageNow uygulamasında **daha fazla (...)** seçeneğini kullanın.
 
-### <a name="get-logs-using-android-debug-bridge"></a>Android hata ayıklama Köprüsü'nü kullanarak günlükleri alın
-Profil, Intune'a zaten dağıtıldıktan sonra günlüklerini almak için bir bilgisayar cihazı bağlayın [Android hata ayıklama Köprüsü'ne (adb)](https://developer.android.com/studio/command-line/adb) (Android web sitesini açar).
+### <a name="get-logs-using-android-debug-bridge"></a>Android Debug Bridge kullanarak günlükleri al
+Profil zaten Intune ile dağıtıldıktan sonra günlükleri almak için cihazı [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb) olan bir bilgisayara bağlayın (Android 'in Web sitesini açar).
 
-Günlükleri kaydedilen cihazda `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
+Cihazda Günlükler kaydedilir`/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
 
-### <a name="get-logs-from-email"></a>Günlükleri e-posta alın
-Profil, Intune'a zaten dağıtıldıktan sonra günlüklerini almak için son kullanıcılar, cihazda bir e-posta uygulamasını kullanarak günlükleri e-posta gönderebilirsiniz. Zebra cihazda Şirket portalı uygulamasını açın ve [günlükleri gönderme](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). Gönderme günlükleri özelliğini kullanarak da oluşturur bir PowerLift olay kimliği, Microsoft Destek'e başvurarak başvurabilir.
+### <a name="get-logs-from-email"></a>E-postadaki günlükleri al
+Profil Intune ile zaten dağıtıldıktan sonra günlükleri almak için, son kullanıcılar cihazdaki bir e-posta uygulaması kullanarak günlüklere e-posta gönderebilir. Zeköşeli cihazda Şirket Portalı uygulamasını açın ve [günlükleri gönderin](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). Günlükleri Gönder özelliğinin kullanılması, Microsoft desteği 'ne başvurduğunuzda başvurduğunuzda kullanabileceğiniz bir Powerasansör olay KIMLIĞI de oluşturur.
 
-## <a name="read-the-logs"></a>Günlüklerini okuyun
+## <a name="read-the-logs"></a>Günlükleri okuyun
 
-Günlüklere aranırken bir hata var. gördüğünüz her `<characteristic-error>` etiketi. Hata ayrıntılarını yazılır `<parm-error>` etiket > `desc` özelliği.
+Günlüklere baktığınızda, `<characteristic-error>` etiketi gördüğünüz zaman bir hata oluştu. Hata ayrıntıları `<parm-error>` etiket > `desc` özelliğine yazılır.
 
 ## <a name="error-types"></a>Hata türleri
 
-Zebra cihazlar farklı hata raporlama seviyelerini şunlardır:
+Zeköşeli cihazlar farklı hata raporlama düzeyleri içerir:
 
-- CSP, cihaz üzerinde desteklenmiyor. Örneğin, cihaz hücresel cihaz değil ve bir hücresel Yöneticisi yok.
-- MX veya OSX sürüm eşleşmiyor. Her CSP sürümlü ' dir. Görmek için tam destek matrisi, [Zebra'nın belgeleri](http://techdocs.zebra.com/mx/) (Zebra'nın web sitesini açar).
-- Cihaz başka bir sorun veya hata bildirir.
+- CSP cihazda desteklenmiyor. Örneğin, cihaz bir hücresel cihaz değildir ve hücresel Yöneticisi yoktur.
+- MX veya OSX sürümü eşleşmiyor. Her CSP sürümü oluşturulur. Tam destek matrisi için bkz. [Zela 'nın belgeleri](http://techdocs.zebra.com/mx/) (Zela 'nın Web sitesini açar).
+- Cihaz başka bir sorun veya hata bildiriyor.
 
 ## <a name="examples"></a>Örnekler
 
-Örneğin, aşağıdaki giriş profil vardır:
+Örneğin, aşağıdaki giriş profiline sahipsiniz:
 
 ```xml
 <wap-provisioningdoc>
@@ -86,7 +85,7 @@ Zebra cihazlar farklı hata raporlama seviyelerini şunlardır:
 </wap-provisioningdoc>
 ```
 
-Oturum, XML giriş aynıdır. Eşleşen bu çıkış, herhangi bir hata cihaza başarıyla uygulandı profili anlamına gelir:
+Günlükte XML, girişle aynıdır. Bu eşleşen çıkış, profilin cihaza başarıyla uygulandığı anlamına gelir ve hata yok:
 
 ```xml
 <wap-provisioningdoc>
@@ -99,7 +98,7 @@ Oturum, XML giriş aynıdır. Eşleşen bu çıkış, herhangi bir hata cihaza b
 </wap-provisioningdoc>
 ```
 
-Başka bir örnekte, aşağıdaki giriş vardır:
+Başka bir örnekte, aşağıdaki girişe sahipsiniz:
 
 ```xml
 <wap-provisioningdoc>
@@ -113,7 +112,7 @@ Başka bir örnekte, aşağıdaki giriş vardır:
 </wap-provisioningdoc>
 ```
 
-İçerdiğinden günlük bir hata gösterir. bir `<characteristic-error>` etiketi. Bu senaryoda, profil belirtilen yolda mevcut olmayan bir Android paketin (APK) yüklemeye çalıştı:
+Günlükte bir `<characteristic-error>` etiketi bulunduğu için günlük bir hata gösterir. Bu senaryoda profil, belirtilen yolda mevcut olmayan bir Android paketini (APK) yüklemeye çalıştı:
 
 ```xml
 <wap-provisioningdoc>
@@ -127,28 +126,28 @@ Başka bir örnekte, aşağıdaki giriş vardır:
 </wap-provisioningdoc>
 ```
 
-## <a name="other-potential-issues-with-zebra-devices"></a>Zebra cihazları ile ilgili diğer olası sorunlar
+## <a name="other-potential-issues-with-zebra-devices"></a>Zeköşeli cihazlarıyla ilgili diğer olası sorunlar
 
-Bu bölümde Zebra cihazların cihaz Yöneticisi ile kullanırken görebilirsiniz diğer olası sorunları listelenir. Bu sorunları StageNow günlüklerde bildirilen değildir.
+Bu bölümde, Zeköşeli cihazları cihaz yöneticisiyle kullanırken görebileceğiniz diğer olası sorunlar listelenmektedir. Bu sorunlar StageNow günlüklerinde bildirilmemektedir.
 
-### <a name="android-system-webview-is-out-of-date"></a>Android System WebView'u güncel değil
+### <a name="android-system-webview-is-out-of-date"></a>Android System WebView güncel değil
 
-Eski cihazları Şirket portalı uygulamasını kullanarak oturum açtığınızda, kullanıcılar yükseltilmiş System WebView bileşenin güncel değil ve gerekli bir ileti görebilirsiniz. Cihazda Google Play yüklü, internet ve güncelleştirmeleri denetlemenizi bağlanın. Cihazda yoksa Google Play yüklü, bileşen güncelleştirilmiş sürümü edinmek ve cihazlar için geçerlidir. Veya en son işletim sistemi tarafından Zebra verilen cihazı güncelleştirin.
+Eski cihazlar Şirket Portalı uygulamasını kullanarak oturum açtığında, kullanıcılar sistem Web görünümü bileşeninin güncel olmadığını ve yükseltilmesi gerektiğini belirten bir ileti görebilirler. Cihazda Google Play yüklüyse, internet 'e bağlayın ve güncelleştirmeleri denetleyin. Cihazda yüklü Google Play yoksa, bileşenin güncelleştirilmiş sürümünü alın ve cihazlara uygulayın. Veya, Zeköşeli tarafından verilen en son cihaz işletim sistemine güncelleştirin.
 
-### <a name="management-actions-take-a-long-time"></a>Zaman yönetimi eylemleri
+### <a name="management-actions-take-a-long-time"></a>Yönetim eylemleri uzun zaman alabilir
 
-Google Play Hizmetleri kullanılamaz ise bazı görevlerin tamamlanması 8 saat yararlanın. [Android için Intune sınırlamaları Şirket portalı uygulaması](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (başka bir Microsoft web sitesi açılır) iyi bir kaynak olabilir.
+Google Play hizmetleri yoksa, bazı görevlerin tamamlanması 8 saate kadar sürer. [Android için Intune şirket portalı uygulamasının sınırlamaları](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (başka bir Microsoft Web sitesini açan) iyi bir kaynak olabilir.
 
-### <a name="device-spoofing-suspected-shows-in-intune"></a>"Cihaz kimlik sahtekarlığı tespit edildiğinde alınan önlemlerin" Intune'da gösterir
+### <a name="device-spoofing-suspected-shows-in-intune"></a>Intune 'da "cihaz yanıltma şüpheli" gösteriliyor
 
-Bu hata Intune Zebra Android cihaz olarak Zebra cihaz üreticisi ve modeli raporlama şüphelendiği anlamına gelir.
+Bu hata, Intune 'un bir zekesiz Android cihazı, modelini ve üreticisini bir Zeköşeli cihaz olarak raporlamadığını gösterir.
 
-### <a name="company-portal-app-is-older-than-minimum-required-version"></a>Şirket portalı uygulaması gereken en düşük sürümden daha eski
+### <a name="company-portal-app-is-older-than-minimum-required-version"></a>Şirket Portalı uygulama en düşük gerekli sürümden daha eski
 
-Intune Şirket portalı uygulaması, gerekli en düşük sürümü güncelleştirebilir. Google Play cihazda yüklü değilse, Şirket portalı uygulamasını otomatik olarak güncelleştirilmesini değil. Gereken en düşük sürümü yüklü olan sürümden daha yeniyse, Şirket portalı uygulamasını çalışmayı durdurur. En son Şirket portalı uygulamasını kullanarak güncelleştirme [Zebra cihazlara dışarıdan yükleme](android-zebra-mx-overview.md#sideload-the-company-portal-app).
+Intune, Şirket Portalı uygulamasının gerekli en düşük sürümünü güncelleştirebilir. Cihazda Google Play yüklü değilse, Şirket Portalı uygulama otomatik olarak güncellenmez. Gerekli en düşük sürüm yüklü sürümden daha yeniyse Şirket Portalı uygulama çalışmayı durduruyor. [Zeköşeli cihazlarda dışarıdan yükleme](android-zebra-mx-overview.md#sideload-the-company-portal-app)kullanarak en son Şirket Portalı uygulamasına güncelleştirin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Zebra tartışma panoları](https://developer.zebra.com/community/home/discussions) (Zebra'nın web sitesi açılır)
+[Zeköşeli tartışma panoları](https://developer.zebra.com/community/home/discussions) (Zeköşeli 'ın Web sitesini açar)
 
-[Intune'da Zebra Mobility uzantılarıyla Zebra cihazları yönetmek ve kullanın](android-zebra-mx-overview.md)
+[Intune 'da Zeköşeli Mobility uzantıları ile Zeköşeli cihazları kullanma ve yönetme](android-zebra-mx-overview.md)

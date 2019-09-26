@@ -1,134 +1,124 @@
 ---
 title: Exchange koşullu erişim ilkesi oluşturma
 titleSuffix: Microsoft Intune
-description: Intune'da Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişimi yapılandırın.
+description: Intune 'da Exchange şirket içi ve eski Exchange Online adanmış koşullu erişimi yapılandırın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
+ms.reviewer: stama
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 003e6e5aa78440861e6aff5be138c4a302171c1b
-ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
+ms.openlocfilehash: 0b53f3dc338f543468984df362b22f6b88ee5c53
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59571748"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71304067"
 ---
-# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online Dedicated için koşullu erişim ilkesi oluşturun.
+# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online ayrılmış için koşullu erişim ilkesi oluşturma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu makalede, cihaz uyumluluğuna bağlı olarak şirket içi Exchange için koşullu erişimi nasıl yapılandıracağınız gösterilir.
+Bu makalede cihaz uyumluluğuna göre şirket içi Exchange için Koşullu erişimin nasıl yapılandırılacağı gösterilir.
 
-Ayrılmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa, lütfen hesap yöneticinize başvurun. Şirket İçi Exchange’e veya eski Ayrılmış Exchange Online ortamına e-posta erişimini denetlemek için, Intune’da Şirket İçi Exchange’e koşullu erişim yapılandırın.
+Ayrılmış Exchange Online ortamınız varsa ve bunun yapılandırmasının yeni mi yoksa eski mi olduğunu bulmanız gerekiyorsa, hesap yöneticinize başvurun. Şirket içi Exchange 'e veya eski Exchange Online ayrılmış ortamınıza e-posta erişimini denetlemek için, Intune 'da şirket içi Exchange 'e koşullu erişimi yapılandırın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Koşullu erişim yapılandırabilmek için önce aşağıdakileri doğrulayın:
+Koşullu erişimi yapılandırmadan önce, aşağıdaki yapılandırmaların mevcut olduğunu doğrulayın:
 
-- Exchange sürümünüzün **Exchange 2010 SP1 veya üzeri** olması gerekir. Exchange Server İstemci Erişimi Sunucusu (CAS) dizisi desteklenir.
+- Exchange sürümünüz **exchange 2010 SP1 veya sonraki**bir sürümü. Exchange Server İstemci Erişimi Sunucusu (CAS) dizisi desteklenir.
 
-- Intune hizmetini şirket içi Exchange’e bağlayan [Exchange Active Sync şirket içi Exchange bağlayıcısını](exchange-connector-install.md) kullanmanız gerekir.
+- Intune 'u şirket içi Exchange 'e bağlayan [Şirket Içi Exchange bağlayıcısını Exchange Active Sync](exchange-connector-install.md)yüklediniz ve kullanıyorsunuz.
 
-    >[!IMPORTANT]
-    >Şirket içi Exchange bağlayıcısı, Intune kiracınıza özgüdür ve başka bir kiracıyla kullanılamaz. Intune artık abonelik başına birden çok şirket içi Exchange bağlayıcısını destekler. Birden çok şirket içi Exchange kuruluşunuz varsa, her Exchange kuruluşu için ayrı bağlayıcılar ayarlayabilirsiniz.
+    >[!IMPORTANT]  
+    >Intune abonelik başına birden çok şirket içi Exchange bağlayıcısını destekler.  Ancak, her bir şirket içi Exchange Bağlayıcısı tek bir Intune kiracısına özeldir ve başka hiçbir kiracıyla kullanılamaz.  Birden çok şirket içi Exchange kuruluşunuz varsa, her Exchange kuruluşu için ayrı bağlayıcılar ayarlayabilirsiniz.
 
-- Şirket içi Exchange kuruluşu için bu bağlayıcı, makine Exchange sunucusuyla iletişim kurabildiği sürece herhangi bir makineye yüklenebilir.
+- Şirket içi Exchange kuruluşunun Bağlayıcısı, makinenin Exchange sunucusuyla iletişim kurabildiği sürece herhangi bir makineye yüklenebilir.
 
-- Bağlayıcı **Exchange CAS ortamını** destekler. İsterseniz, teknik olarak bağlayıcıyı doğrudan Exchange CAS sunucusuna yükleyebilirsiniz, ancak sunucu üzerindeki yükü artıracağından bunun yapılması önerilmez. Bağlayıcıyı yapılandırırken Exchange CAS sunucularından biriyle iletişim kurabilecek şekilde yapılandırmanız gerekir.
+- Bağlayıcı **Exchange CAS ortamını** destekler. Intune, bağlayıcıyı doğrudan Exchange CAS sunucusuna yüklemeyi destekler, ancak bağlayıcının sunucuya koyduğu ek yük nedeniyle ayrı bir bilgisayara yüklemenizi öneririz. Bağlayıcıyı yapılandırırken Exchange CAS sunucularından biriyle iletişim kurabilecek şekilde yapılandırmanız gerekir.
 
 - **Exchange ActiveSync**, sertifika tabanlı kimlik doğrulaması veya kullanıcı kimlik bilgileri girişiyle yapılandırılmalıdır.
 
-- Koşullu biçimlendirme ilkeleri yapılandırıldığında ve hedef kullanıcı belirlendiğinde, kullanıcının e-postasına bağlanabilmesi için önce **cihazın** şu özellikleri taşıması gerekir:
-    - Intune’a **kayıtlı** veya etki alanına katılmış bir bilgisayar olmalıdır.
-    - **Azure Active Directory’de kayıtlı olmalıdır**. Buna ek olarak, istemci Exchange ActiveSync kimliği Azure Active Directory’de kayıtlı olmalıdır.
-<br></br>
-- Azure AD Cihaz Kayıt Hizmeti (DRS), Intune ve Office 365 müşterileri için otomatik olarak etkinleştirilir. ADFS Cihaz Kayıt Hizmeti'ni zaten dağıtmış olan müşteriler, kayıtlı cihazlarını şirket içi Active Directory'lerinde görmez. **Bu, Windows bilgisayarları ve Windows Phone cihazları için geçerli değildir**.
+- Koşullu erişim ilkeleri yapılandırıldığında ve bir kullanıcıya hedeflenirse, bir kullanıcının e-postasına bağlanabilmesi için, kullandıkları **cihaz** şu şekilde olmalıdır:
+  - Intune’a **kayıtlı** veya etki alanına katılmış bir bilgisayar olmalıdır.
+  - **Azure Active Directory’de kayıtlı olmalıdır**. Buna ek olarak, istemci Exchange ActiveSync kimliği Azure Active Directory’de kayıtlı olmalıdır.
+
+- Azure AD Cihaz Kayıt Hizmeti (DRS), Intune ve Office 365 müşterileri için otomatik olarak etkinleştirilir. ADFS cihaz kayıt hizmeti 'ni zaten dağıtan müşteriler, kayıtlı cihazları şirket içi Active Directory göremez. **Bu, Windows bilgisayarları ve Windows Phone cihazları için geçerli değildir**.
 
 - Söz konusu cihaza dağıtılan cihaz uyumluluk ilkeleriyle **uyumluluk**.
 
-- Cihaz, koşullu erişim ayarlarına uyum sağlamıyorsa kullanıcıya oturum açtığında aşağıdaki iletilerden biri gösterilir:
-    - Cihaz Intune’a kaydolmadıysa veya Azure Active Directory’de kayıtlı değilse, Şirket Portalı uygulamasını yükleme, cihazı kaydetme ve e-postayı etkinleştirme yönergelerinin bulunduğu bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki cihaz kaydıyla ilişkilendirir.
-    - Cihaz uyumlu değilse, kullanıcıyı sorun hakkında bilgi bulabileceği ve sorunu düzeltebileceği Intune Şirket Portalı Web sitesine veya Şirket Portalı uygulamasına yönlendiren bir ileti görüntülenir.
+- Cihaz koşullu erişim ayarlarını karşılamıyorsa, oturum açtığında kullanıcıya şu iletilerden biri sunulur:
+  - Cihaz Intune 'a kaydedilmediyse veya Azure Active Directory kayıtlı değilse, Şirket Portalı uygulamasının nasıl yükleneceğine, cihazın nasıl kaydedileceği ve e-postayı nasıl etkinleştireceğinize ilişkin yönergeler içeren bir ileti görüntülenir. Bu işlem cihazın Exchange ActiveSync kimliğini de Azure Active Directory’deki cihaz kaydıyla ilişkilendirir.
+  - Cihaz uyumlu değilse, kullanıcıyı Intune Şirket Portalı Web sitesine veya sorun hakkında bilgi bulabileceği ve sorunu nasıl düzeltebileceği Şirket Portalı uygulamayı yönlendiren bir ileti görüntülenir.
 
 ### <a name="support-for-mobile-devices"></a>Mobil cihaz desteği
 
 - Windows Phone 8.1 ve üzeri
 - iOS’ta yerel e-posta uygulaması.
 - Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri.
-- EAS posta istemcileri **Android iş profili cihazları:** Yalnızca **Gmail** ve **Nine Work Android Enterprise için** içinde **iş profilindeki** Android iş profili cihazları üzerinde desteklenir. Android iş profili cihazlarında koşullu erişimin çalışması için Gmail veya Android Enterprise için Nine Work uygulamasına yönelik bir e-posta profili dağıtmalısınız. Ayrıca bu uygulamaları da zorunlu yükleme olarak dağıtmanız gerekir.
+- EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **Iş profilinde** **Android Enterprise için Gmail ve dokuz iş** desteklenir. Android iş profilleriyle çalışmak üzere koşullu erişim için, Android Enterprise uygulaması için Gmail veya dokuz Iş için bir e-posta profili dağıtmanız ve ayrıca bu uygulamaları gerekli bir yükleme olarak dağıtmanız gerekir.
 
 > [!NOTE]
-> Android ve iOS için Microsoft Outlook, Exchange şirket içi bağlayıcısı aracılığıyla desteklenmiyor. Azure Active Directory koşullu erişim ilkeleri ve iOS için Outlook ve Android için şirket içi kutularınıza ile Intune uygulama koruma ilkelerini kullanmak istiyorsanız, bkz. Lütfen [kullanarak karma iOS için Outlook ile Modern kimlik doğrulaması ve Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
+> Android ve iOS için Microsoft Outlook, şirket içi Exchange Bağlayıcısı aracılığıyla desteklenmez. Şirket içi posta kutularınız için iOS ve Android için Outlook ile koşullu erişim ilkeleri ve Intune Uygulama Koruması Ilkeleri Azure Active Directory yararlanmak istiyorsanız lütfen bkz. [iOS ve Android Için Outlook ile karma modern kimlik doğrulamasını kullanma](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) . 
 
 ### <a name="support-for-pcs"></a>Bilgisayarlar için destek
 
-Windows 8.1 ve üstündeki yerel **Posta** uygulaması (Intune ile kaydedildiğinde)
-
+Windows 8.1 ve sonraki sürümlerde yerel **posta** uygulaması (ıNTUNE ile MDM 'ye kaydolduğunda)
 
 ## <a name="configure-exchange-on-premises-access"></a>Şirket içi Exchange erişimini yapılandırma
 
-1. [Azure portalı](https://portal.azure.com/)’na gidin ve Intune kimlik bilgilerinizle oturum açın.
+Şirket içi Exchange erişim denetimini ayarlamak için aşağıdaki yordamı kullanabilmeniz için önce şirket içi Exchange için en az bir [Intune şirket Içi Exchange Bağlayıcısı](exchange-connector-install.md) yükleyip yapılandırmanız gerekir.
 
-2. Git **Intune** > **Exchange erişimi**ve ardından **Exchange şirket içi erişim**. 
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açma
 
-3. Üzerinde **şirket içi Exchange erişimi** bölmesinde seçin **Evet** için *etkinleştirme şirket içi Exchange erişim denetimini*.
+2. **Exchange erişimi**' ne gidin ve **Şirket içi Exchange erişimi**' ni seçin. 
 
-4. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
+3. Şirket içi **Exchange erişimi** bölmesinde, Şirket *içi Exchange erişim denetimini etkinleştirmek*için **Evet** ' i seçin.
 
-5. **Intune**’u seçin, **Intune Panosu**’nu görürsünüz.
+4. **Atama**altında, **dahil edilecek grupları seç**' i seçin ve ardından erişimi yapılandırmak için bir veya daha fazla grup seçin. 
 
-6. **Şirket içi erişim**'i seçin. **Şirket içi erişim** bölmesinde koşullu erişim ilkesinin durumu ve bundan etkilenen cihazlar gösterilir.
+   Seçtiğiniz grupların üyelerine, şirket içi Exchange erişimi için koşullu erişim ilkesi uygulanır. Bu ilkeyi alan kullanıcıların şirket içi Exchange 'e erişebilmesi için cihazlarını Intune 'A kaydetmesi ve uyumluluk profilleriyle uyumlu olmaları gerekir.
 
-7. **Yönet**’in altında **Şirket içi Exchange erişimi**’ni seçin.
+5. Grupları dışlamak için, **hariç tutulacak grupları seçin**' i seçin ve ardından Şirket içi Exchange 'e erişmeden önce cihazları kaydetmek ve uyumluluk profilleriyle uyumlu olmak için gereksinimlerden muaf tutulan bir veya daha fazla grup seçin. 
 
-8. **Şirket içi Exchange erişimi** bölmesinde **Evet**’i seçerek şirket içi Exchange erişim denetimini etkinleştirin.
+6. Ardından, Intune şirket içi Exchange Connector ayarlarını yapılandırın.  **Exchange erişimi bölmesindeki** **Kurulum** ' un altında **Exchange ActiveSync şirket içi Bağlayıcısı** ' nı seçin ve ardından yapılandırmak istediğiniz Exchange kuruluşunun bağlayıcısını seçin.
 
-    > [!NOTE]
-    > Exchange Active Sync şirket içi bağlayıcısını yapılandırmadıysanız, bu seçenek devre dışı bırakılır.  Şirket içi Exchange için koşullu erişimi etkinleştirebilmek için önce en az bir bağlayıcıyı yüklemeli ve yapılandırmalısınız. Diğer ayrıntılar için bkz. [Intune Şirket İçi Exchange Connector’ı yükleme](exchange-connector-install.md).
+7. **Ayarlar**altında **Kullanıcı bildirimleri** ' ni seçerek, cihazları uyumlu olmayan ve şirket içi Exchange 'e erişmek istedikleri kullanıcılara gönderilen varsayılan e-posta iletisini değiştirin. İleti şablonunda Biçimlendirme dili kullanılır.  Ayrıca yazarken iletinin nasıl görüneceğini gösteren bir önizleme de görebilirsiniz.
+   > [!TIP]
+   > Biçimlendirme dili hakkında daha fazla bilgi edinmek için bu Wikipedia [makalesine](https://en.wikipedia.org/wiki/Markup_language) bakın.
+ 
+   Exchange şirket içi erişimi yapılandırmasını tamamladıktan sonra düzenlemelerinizi kaydetmek için **Tamam ' ı** seçin.
 
-9. **Atama**’nın altında **Eklenen Gruplar**’ı seçin.  Koşullu erişimin uygulanacağı güvenlik kullanıcı grubunu seçin. Bu eylem için kullanıcıların cihazlarını Intune’da kaydetmeleri ve uyumluluk profilleriyle uyumlu olmaları gerekir.
+8. Ardından, **gelişmiş Exchange Active Sync erişim ayarları** ' nı seçerek cihaz erişim kurallarını yapılandırdığınız *Gelişmiş Exchange ActiveSync erişim ayarları* bölmesini açın:  
 
-10. Belirli kullanıcı gruplarını dışta tutmak istiyorsanız, **Dışlanan Gruplar**’ı seçip ardından da cihaz kaydı ve uyumluluk gereksiniminden muaf tutmak istediğiniz kullanıcı grubunu seçerek bunu yapabilirsiniz.
+   - **Yönetilmeyen cihaz erişimi**Için, koşullu erişim veya diğer kurallardan etkilenmeyen cihazlardan erişim için genel varsayılan kuralı ayarlayın:
 
-11. Varsayılan e-posta iletisini değiştirmek için, **Ayarlar**’ın altında **Kullanıcı bildirimleri**’ni seçin. Bu ileti, cihazı uyumlu olmayan ve şirket içi Exchange’e erişmek isteyen kullanıcılara gönderilir. İleti şablonunda Biçimlendirme dili kullanılır.  Ayrıca yazarken iletinin nasıl görüneceğini gösteren bir önizleme de görebilirsiniz.
-    > [!TIP]
-    > Biçimlendirme dili hakkında daha fazla bilgi edinmek için bu Wikipedia [makalesine](https://en.wikipedia.org/wiki/Markup_language) bakın.
+     - **Erişime Izin ver** -tüm cihazlar şirket içi Exchange 'e hemen erişebilir. Önceki yordamda dahil olarak yapılandırdığınız gruplardaki kullanıcılara ait olan cihazlar, daha sonra uyumlu ilkelerle uyumlu değil veya Intune 'A kayıtlı değil olarak değerlendiriliyorsa engellenir.
 
-12. **Gelişmiş Exchange Active Sync erişim ayarları** bölmesinde, Intune tarafından yönetilmeyen cihazlardan erişim için ve sonraki iki adımda açıklandığı gibi platform düzeyi kuralları için genel varsayılan kuralı ayarlayın. Gelişmiş ayarlar bölmesini almak için *Exchange erişim - Exchange şirket içi erişim* görüntülenecek *- Exchange ActiveSync şirket içi Bağlayıcısı*.
+     - **Erişimi engelle** ve **karantinaya al** – tüm cihazların başlangıçta şirket içi Exchange 'e erişimi hemen engellenir. Önceki yordamda dahil olarak yapılandırdığınız gruplardaki kullanıcılara ait cihazlar, cihazın Intune 'A kaydolur ve uyumlu olarak değerlendirilmesinden sonra erişim sağlar. 
 
-13. Koşullu erişimden veya diğer kurallardan etkilenmeyen bir cihaz söz konusu olduğunda, cihazın Exchange’e erişmesine izin vermeyi, veya engellemeyi seçebilirsiniz.
+       Samsung KNOX Standard *çalıştırmayan Android* cihazlar bu ayarı desteklemez ve her zaman engellenir.
 
-   - Bunu erişime izin verecek şekilde ayarlarsanız, tüm cihazlar şirket içi Exchange’e hemen erişebilir.  **Eklenen Gruplar** içindeki kullanıcılara ait cihazlar, sonunda uyumluluk ilkelerine uymadığı veya Intune’a kaydedilmemiş olduğu belirlenirse engellenir.
-   - Bunu erişimi engelleyecek şekilde ayarlarsanız, başlangıçta tüm cihazların şirket içi Exchange’e erişimi hemen engellenir.  **Eklenen Gruplar** içindeki kullanıcılara ait cihazlar, Intune’a kaydolduğunda ve uyumlu olarak değerlendirildiğinde erişim kazanır. Samsung Knox Standard çalıştırmayan Android cihazlar bu ayarı desteklemediğinden, her zaman engellenir.
+   -  **Cihaz platformu özel durumları**Için, **Ekle**' yi seçin ve ardından ortamınız için gereken platform ayrıntılarını belirtin. 
+   
+      **Yönetilmeyen cihaz erişimi** ayarı **engellendi**olarak ayarlandıysa, bunları engellemek için bir platform özel durumu olsa bile, kayıtlı ve uyumlu cihazlara izin verilir.  
+   
+   Düzenlemelerinizi kaydetmek için **Tamam ' ı** seçin.
 
-14. **Cihaz platformu özel durumları**’nın altında **Ekle**’yi seçerek platformları belirtin. **Yönetilmeyen cihaz erişimi** ayarı **engellendi** olarak belirlenirse, engellemek için bir platform özel durumu olsa bile, kayıtlı ve uyumlu cihazlara izin verilir. Ayarları kaydetmek için **Tamam**’ı seçin.
+9. Exchange koşullu erişim ilkesini kaydetmek için **Kaydet** ' i seçin.
 
-15. **Şirket içi** bölmesinde **Kaydet**’e tıklayarak koşullu erişim ilkesini kaydedin.
-
-## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Intune'da Azure AD Koşullu erişim ilkeleri oluşturma
-
-Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır.  
-
-> [!IMPORTANT]
-> Intune Azure portalından Azure AD koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.
-
-### <a name="to-create-a-conditional-access-policy"></a>Koşullu erişim ilkesi oluşturma
-
-1. İçinde **Intune Panosu**seçin **koşullu erişim**.
-
-2. İçinde **ilkeleri** bölmesinde **yeni ilke** yeni Azure AD koşullu erişim ilkenizi oluşturun.
+Ardından, bir uyumluluk ilkesi oluşturun ve Intune 'un mobil cihazlarını değerlendirmesi için kullanıcılara atayın, bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Azure Active Directory’de Koşullu Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
+[Microsoft Intune 'de Intune şirket Içi Exchange Connector sorunlarını giderme](https://support.microsoft.com/help/4471887)

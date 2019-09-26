@@ -1,14 +1,13 @@
 ---
-title: Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
+title: Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme
 titleSuffix: Microsoft Intune
-description: Kullanıcılar bir Android iş profili uygulamasını çalıştırdığında ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın.
+description: Kullanıcılar yönetilen bir Google Play uygulamasını çalıştırdığınızda ayarları sağlamak için Microsoft Intune 'de uygulama yapılandırma ilkeleri kullanın.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,49 +17,51 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: b3e21e1e72520bb600f63adedc94e512cd22e73c
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896432"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304299"
 ---
-# <a name="add-app-configuration-policies-for-managed-android-devices"></a>Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme
+# <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android iş profili uygulamalarına ayarları sağlamak için Microsoft Intune’daki uygulama yapılandırma ilkelerini kullanın. Uygulama için yapılandırma ayarlarını belirtmek adına uygulama geliştiricisinin Android yönetilen uygulama yapılandırma ayarlarını kullanıma sunması gerekir. Ayarların uygulanmasını istediğiniz kullanıcı grubuna uygulama yapılandırma ilkesini atayın.  İlke ayarları, uygulama tarafından bunlar için her denetim gerçekleştirildiğinde, genellikle ilk çalıştırıldığında kullanılır.
+Microsoft Intune içindeki uygulama yapılandırma ilkeleri, yönetilen Android kurumsal cihazlarda yönetilen Google Play uygulamalar için ayarları sağlar. Uygulama geliştiricisi, Android tarafından yönetilen uygulama yapılandırma ayarlarını gösterir. Intune, yöneticinin uygulama için özellikleri yapılandırmasına izin vermek için bu sunulan ayarı kullanır. Uygulama yapılandırma ilkesi Kullanıcı gruplarınıza atanır. İlke ayarları, uygulama tarafından, genellikle uygulama ilk kez çalıştırıldığında kullanılır.
 
-> [!Note]  
-> Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın, uygulama yapılandırma ilkelerini destekleyecek şekilde oluşturulup oluşturulmadığını öğrenmek için uygulamanın geliştiricisine başvurun.
+> [!NOTE]  
+> Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın uygulama yapılandırma ilkelerini destekleyip desteklemediğini görmek için uygulama geliştiricisine danışın.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **İstemci uygulamaları** iş yükünü seçin.
-4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
-5. Aşağıdaki bilgileri ayarlayın:
-    - **Ad** - Azure portalında görünecek profil adı.
-    - **Açıklama** - Azure portalında görünecek profil açıklaması.
-    - **Cihaz kayıt türü** - **Yönetilen uygulamalar**’ı seçin.
-6. **Platform** için **Android**’i seçin.
-7. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android iş profili uygulamaları listesinden seçim yapın.
-8. **İzinler**’i seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da, **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** >  **Ekle**' yi seçin.
+2. Aşağıdaki özellikleri girin:
+
+    - **Ad**: İlke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı **tüm şirket Için Android kurumsal dokuz iş uygulaması ilkesidir**.
+    - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Cihaz kayıt türü**: **Yönetilen cihazlar**’ı seçin.
+    - **Platform**: **Android**’i seçin.
+
+3. **Ilişkili uygulama**' yı seçin. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçin. Onaylanan ve Intune ile eşitlenen yönetilen Google Play uygulamalar listesinden seçim yapın.
+4. **İzinler**’i seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
+
     - [Yapılandırma tasarımcısı](#use-the-configuration-designer)
     - [JSON düzenleyicisi](#enter-the-json-editor)
-9. **Tamam**’ı ve daha sonra **Ekle**’yi seçin.
+
+5. **Tamam** > **Ekle**' yi seçin.
 
 ## <a name="use-the-configuration-designer"></a>Yapılandırma tasarımcısını kullanma
 
-Yapılandırma ayarlarını destekleyecek şekilde tasarlanmış Android uygulamaları için yapılandırma tasarımcısını kullanabilirsiniz. Yapılandırma, Intune’a kayıtlı cihazlarda uygulanır. Tasarımcı, bir uygulamanın kullanıma sunduğuna kıyasla daha ayrıntılı yapılandırma değerleri yapılandırmanıza imkan tanır.
+Uygulama yapılandırma ayarlarını destekleyecek şekilde tasarlandıysa, yönetilen Google Play uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Yapılandırma, Intune 'a kayıtlı cihazlar için geçerlidir. Tasarımcı, uygulama tarafından sunulan ayarlar için belirli yapılandırma değerlerini yapılandırmanızı sağlar.
 
-**Ekle**’yi seçerek uygulama için belirtmek istediğiniz yapılandırma ayarları listesini seçin.  
-Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
+1. **Add (Ekle)** seçeneğini belirleyin. Uygulama için girmek istediğiniz yapılandırma ayarları listesini seçin.
 
-  - **Değer türü**  
-    Yapılandırma değerinin veri türü. Dize değer türleri için isteğe bağlı olarak bir değişken veya sertifika profili seçebilirsiniz.
-  - **Yapılandırma değeri**  
-    Yapılandırmanın değeri. Değer türü için bir değişken veya sertifika seçerseniz açılan yapılandırma değeri penceresindeki değişken veya sertifika profili listesinden seçim yapabilirsiniz.  Bir sertifika seçerseniz cihaza dağıtılan sertifikanın sertifika diğer adı, çalışma zamanında doldurulur.
-    
+    E-posta uygulamanız için GMail veya dokuz Iş kullanıyorsanız, bu ayarlarla ilgili daha fazla bilgi için [e-postayı yapılandırmak üzere Android kurumsal cihaz ayarları](email-settings-android-enterprise.md) ' na bakın.
+
+2. Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
+
+    - **Değer türü**: Yapılandırma değerinin veri türü. Dize değer türleri için isteğe bağlı olarak bir değişken veya sertifika profili seçebilirsiniz.
+    - **Yapılandırma değeri**: Yapılandırmanın değeri. **Değer türü**için değişken veya sertifika ' yı seçerseniz, bir değişken veya sertifika profili listesinden öğesini seçin. Bir sertifika seçerseniz, cihaza dağıtılan sertifikanın sertifika diğer adı çalışma zamanında doldurulur.
+
 ### <a name="supported-variables-for-configuration-values"></a>Yapılandırma değerleri için desteklenen değişkenler
 
 Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim yapabilirsiniz:
@@ -68,9 +69,9 @@ Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim y
 | Seçenek | Örnek |
 |----|----|
 | Mail | john@contoso.com |
-| Kullanıcı Asıl Adı | john@contoso.com |
+| Kullanıcı asıl adı | john@contoso.com |
 | Kısmi UPN | john |
-| Etki Alanı | contoso.com |
+| Etki Alanı | Contoso.com |
 | Kullanıcı adı | John Doe |
 | Hesap kimliği | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
 | Kullanıcı Kimliği | 3ec2c00f-b125-4519-acf0-302ac3761822 |
@@ -81,51 +82,54 @@ Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim y
 Android cihazlarda aşağıdaki anahtar/değer çiftlerini kullanın:
 
 | **Anahtar** | com.microsoft.intune.mam.AllowedAccountUPNs |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|
 | **Değerler** | <ul><li>Bir veya daha fazla <code>;</code> ile sınırlandırılmış UPN.</li><li>Yalnızca bu anahtar ile tanımlanan yönetilen kullanıcı hesaplarına izin verilir.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul> |
 
    > [!NOTE]
    > Çoklu kimlik ile yalnızca yapılandırılmış kuruluş hesaplarına izin vermek için Android için Outlook 2.2.222 veya üzeri sürümleri kullanmanız gerekir.<p></p>
-   > Microsoft Intune yöneticisi olarak yönetilen cihazlarda hangi kullanıcı hesaplarının Microsoft Office uygulamalarına eklendiğini denetleyebilirsiniz. Erişimi yalnızca izin verilen kullanıcı hesaplarıyla sınırlayabilecek ve kayıtlı cihazlarda kişisel hesapları engelleyebilirsiniz. Destekleyen uygulamalar, uygulama yapılandırmasını işler ve onaylanmamış hesapları kaldırıp engeller.<p></p>
+   > Microsoft Intune Yöneticisi olarak, yönetilen cihazlarda Microsoft Office uygulamalarına hangi kullanıcı hesaplarının ekleneceğini denetleyebilirsiniz. Erişimi yalnızca izin verilen kullanıcı hesaplarıyla sınırlayabilecek ve kayıtlı cihazlarda kişisel hesapları engelleyebilirsiniz. Destekleyen uygulamalar, uygulama yapılandırmasını işler ve onaylanmamış hesapları kaldırıp engeller.<p></p>
    > Microsoft Word, Microsoft Excel, Microsoft PowerPoint için 16.0.9327.1000 ve üzeri uygulama sürümlerini kullanmanız gerekir. 
 
 ## <a name="enter-the-json-editor"></a>JSON düzenleyicisini girme
 
-Uygulamalardaki (örneğin, Paket türleri içerenler) bazı yapılandırma ayarları yapılandırma tasarımcısı ile yapılandırılamaz. Bu değerler için JSON düzenleyicisini kullanmanız gerekir. Uygulama yüklendiğinde ayarlar uygulamalara otomatik olarak sağlanır.
+Uygulamalarda bazı yapılandırma ayarları (örneğin, paket türlerine sahip uygulamalar) yapılandırma Tasarımcısı ile yapılandırılamaz. Bu değerler için JSON düzenleyicisini kullanın. Uygulama yüklendiğinde ayarlar uygulamalara otomatik olarak sağlanır.
 
 1. **Yapılandırma ayarları biçimi** için **JSON düzenleyicisine gir**’i seçin.
 2. Düzenleyicide, yapılandırma ayarları için JSON değerlerini tanımlayabilirsiniz. Örnek bir dosya indirip ardından yapılandırmak için **JSON şablonu indir**’i seçebilirsiniz.
 3. **Tamam**’ı ve daha sonra **Ekle**’yi seçin.
 
-İlke oluşturulur ve ilke listesi dikey penceresinde görüntülenir.
+İlke oluşturulur ve listede gösterilir.
 
 Atanan uygulama bir cihazda çalıştırıldığında, uygulama yapılandırma ilkesinde yapılandırdığınız ayarlarla çalışır.
 
 ## <a name="preconfigure-the-permissions-grant-state-for-apps"></a>Uygulamalar için izin verme durumunu önceden yapılandırma
 
-Uygulamaların Android cihaz özelliklerine erişmesi iznini de önceden yapılandırabilirsiniz. Varsayılan olarak, konuma veya cihaz kamerasına erişim gibi cihaz izinlerine ihtiyacı olan Android uygulamaları kullanıcıdan izinleri kabul etmesini veya reddetmesini ister. Örneğin, uygulama cihazın mikrofonunu kullanıyorsa, kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
+Ayrıca, Android cihaz özelliklerine erişmek için uygulama izinlerini önceden yapılandırabilirsiniz. Varsayılan olarak, konuma veya cihaz kamerasına erişim gibi cihaz izinleri gerektiren Android Uygulamaları, kullanıcılardan izinleri kabul etmesini veya reddetmesini ister.
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
-3. **İstemci uygulamaları**’nı seçin.
-3. **Yönet** altında, **Uygulama yapılandırma ilkelerini** seçip **Ekle**’ye tıklayın.
-4. Aşağıdaki bilgileri ayarlayın:
-    - **Ad**. Azure portalında görünecek profil adı.
-    - **Açıklama**. Azure portalında görünecek profil açıklaması.
-    - **Cihaz kaydı türü**. **Yönetilen cihazlar**’ı seçin.
-    - **Platform**. **Android**’i seçin.
-5. Bir yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçmek için **İlişkili Uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş Android iş profili uygulamaları listesinden seçim yapın.
-6. **İzinler** ve ardından **Ekle**’yi seçin.
-7. Kullanılabilir uygulama izinleri listesinden seçim yapın ve ardından **Tamam**’ı seçin.
-8. Bu ilkeyle verilecek her izin için bir seçenek belirleyin:
+Örneğin, bir uygulama cihazın mikrofonunu kullanır. Kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da, **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** >  **Ekle**' yi seçin.
+2. Aşağıdaki özellikleri girin:
+
+    - **Ad**: İlke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı, **tüm şirket Için Android kurumsal istem izinleri uygulama ilkesidir**.
+    - **Açıklama**. Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Cihaz kayıt türü**: **Yönetilen cihazlar**’ı seçin.
+    - **Platform**: **Android**’i seçin.
+
+3. **Ilişkili uygulama**' yı seçin. Yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçin. Onaylanan ve Intune ile eşitlenen Android iş profili uygulamaları listesinden seçim yapın.
+4. **İzin** > **Ekle**' yi seçin. Listeden, kullanılabilir uygulama izinlerini seçin > **Tamam**' ı seçin.
+5. Bu ilkeyle verilecek her izin için bir seçenek belirleyin:
     - **Sor**. Kullanıcıdan kabul etmesini veya reddetmesini isteme.
     - **Otomatik olarak izin ver**. Kullanıcıya bildirmeden otomatik olarak onayla.
     - **Otomatik olarak reddet**. Kullanıcıya bildirmeden otomatik olarak reddet.
-9. Uygulama yapılandırma ilkesi atamak için uygulama yapılandırma ilkesini seçin, **Atama**’yı ve ardından **Grupları Seç**’i seçin.
-10. Atanacak kullanıcı gruplarını seçin ve **Seç**’i seçin.
-11. İlkeyi atamak için **Kaydet**’i seçin.
+6. Uygulama yapılandırma ilkesini atamak için, uygulama yapılandırma ilkesi > **atama** > **grupları seçin**' i seçin. Atanacak Kullanıcı gruplarını seçin > **seçin**.
+7. İlkeyi atamak için **Kaydet**’i seçin.
+
+## <a name="additional-information"></a>Ek bilgiler
+
+- [Android kurumsal cihazlara yönetilen Google Play uygulaması atama](apps-add-android-for-work.md#assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices)
+- [İOS ve Android uygulama yapılandırma ayarları için Outlook dağıtımı](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Uygulamayı [atamaya](apps-deploy.md) ve [izlemeye](apps-monitor.md) devam edin.
-

@@ -1,13 +1,12 @@
 ---
-title: Microsoft Intune'da Android cihazları için VPN ayarlarını yapılandırma - Azure | Microsoft Docs
-description: Android ve Android for Work cihazları için VPN yapılandırma profili oluştururken bağlantı adını girin, VPN sunucusunun IP adresini veya FQDN’sini girin, kullanıcıların VPN sunucusunda nasıl kimlik doğrulayacağını belirleyin ve daha sonra Citrix, SonicWall, Check Point Capsule, Pulse Secure ve Microsoft Edge bağlantı türlerini seçin.
+title: Microsoft Intune-Azure 'da Android cihazları için VPN ayarlarını kullanma | Microsoft Docs
+description: Microsoft Intune 'de Android cihazlarda VPN bağlantıları oluşturmak için tüm ayarları görüntüleyin. VPN sunucusunun bağlantı adını, IP adresini veya FQDN 'sini girin, kullanıcıların kimlik doğrulamasını yapın ve Citrix, SonicWall, Check Point kapsül ve Pulse Secure bağlantı türlerini seçin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 08/06/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,65 +14,55 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 666b61eec021fa6a2cdad5126f572234d97b6883
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 36806769e3b4c2c726038c23edf22cb006819d8c
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566106"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "71302810"
 ---
-# <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>Intune’da Android çalıştıran cihazlar için VPN ayarları yapılandırma
+# <a name="android-device-settings-to-configure-vpn-in-intune"></a>Intune 'da VPN yapılandırmak için Android cihaz ayarları
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bu makale, Android çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi sağlar.
+Bu makalede, Android cihazlarda denetleyebilmeniz için farklı VPN bağlantısı ayarları listelenir ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları kullanarak bir VPN bağlantısı oluşturun, VPN 'in kimlik doğrulamasını yapın, bir VPN sunucusu türü seçin ve daha fazlasını yapın.
 
-Aşağıdaki platformlar için VPN ayarları yapılandırabilirsiniz:
+Bir Intune Yöneticisi olarak, Android cihazlara VPN ayarları oluşturabilir ve atayabilirsiniz. 
 
-- [Android](#android-vpn-settings)
-- [Android kurumsal](#android-enterprise-vpn-settings)
+Intune 'da VPN profilleri hakkında daha fazla bilgi edinmek için bkz. [VPN profilleri](vpn-settings-configure.md).
 
-Seçtiğiniz ayarlara bağlı olarak, aşağıdaki değerlerden bazıları yapılandırılamaz.
+## <a name="before-you-begin"></a>Başlamadan önce
 
-## <a name="android-vpn-settings"></a>Android VPN ayarları
+[Bir cihaz yapılandırma profili oluşturun](vpn-settings-configure.md#create-a-device-profile)ve **Android**' i seçin.
 
-- **Bağlantı adı**: Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür.
-- **IP adresi veya FQDN**: IP adresi veya cihazların bağlandığı VPN sunucusunun tam etki alanı adı (FQDN) girin. Örneğin, **192.168.1.1** veya **vpn.contoso.com** yazın.
+## <a name="base-vpn"></a>Taban VPN
 
-  - **Kimlik doğrulama yöntemi**: Cihazların VPN sunucusuna kimliklerini nasıl doğrulayacaklarını seçin. Seçenekleriniz şunlardır:
+- **Bağlantı adı**: Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür. Örneğin, şunu girin: `Contoso VPN`.
+- **IP adresi veya FQDN**: Cihazların bağlanacağı VPN sunucusunun IP adresini veya tam etki alanı adını (FQDN) girin. Örneğin, **192.168.1.1** veya **vpn.contoso.com** yazın.
 
-    - **Sertifikaları**: Bağlantı kimliğini doğrulamak için bir var olan SCEP veya PKCS sertifika profilini seçin. [Sertifikaları yapılandırın](certificates-configure.md), sertifika profili oluşturma adımlarını listeler.
-    - **Kullanıcı adı ve parola**: VPN sunucusunda oturum açarken, son kullanıcıların bir kullanıcı adı ve parola girmeniz istenir.
+  - **Kimlik doğrulama yöntemi**: Cihazların VPN sunucusunda kimlik doğrulamasını seçin. Seçenekleriniz şunlardır:
 
-- **Bağlantı türü**: VPN bağlantı türünü seçin. Seçenekleriniz şunlardır:
-
-  - **Check Point Capsule VPN**
-  - **Cisco AnyConnect**
-  - **SonicWall Mobile Connect**
-  - **F5 Edge Client**
-  - **Pulse Secure**
-  - **Citrix**
-
-- **Parmak izi** (denetimi yalnızca Point Capsule VPN): Gibi bir dize girin **Contoso parmak izi kodu**VPN sunucusunun güvenilir olduğunu doğrulamak için. Parmak izi, bağlanırken aynı parmak izine sahip herhangi bir sunucuya güvenmesi için istemciye gönderilebilir. Cihazda parmak izi yoksa, parmak izini göstererek kullanıcıdan VPN sunucusuna güvenmesini ister. Kullanıcı parmak izini el ile doğrular ve bağlanmak için güven seçeneğini belirtir.
-- **Citrix VPN öznitelikleri için anahtar ve değer çiftlerini girin** (yalnızca Citrix): Citrix tarafından sağlanan anahtar ve değer çiftlerini girin. Bu değerler VPN bağlantısının özelliklerini yapılandırır.
-
-## <a name="android-enterprise-vpn-settings"></a>Android Kurumsal VPN ayarları
-
-- **Bağlantı adı**: Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan son kullanıcılar bu adı görür.
-- **IP adresi veya FQDN**: IP adresi veya cihazların bağlandığı VPN sunucusunun tam etki alanı adı (FQDN) girin. Örneğin, **192.168.1.1** veya **vpn.contoso.com** yazın.
-
-  - **Kimlik doğrulama yöntemi**: Cihazların VPN sunucusuna kimliklerini nasıl doğrulayacaklarını seçin. Seçenekleriniz şunlardır:
-  
-    - **Sertifikaları**: Bağlantı kimliğini doğrulamak için bir var olan SCEP veya PKCS sertifika profilini seçin. [Sertifikaları yapılandırın](certificates-configure.md), sertifika profili oluşturma adımlarını listeler.
-    - **Kullanıcı adı ve parola**: VPN sunucusunda oturum açarken, son kullanıcıların bir kullanıcı adı ve parola girmeniz istenir.
+    - **Sertifikalar**: Bağlantının kimliğini doğrulamak için mevcut bir SCEP veya PKCS sertifika profili seçin. [Sertifikaları yapılandırın](certificates-configure.md), sertifika profili oluşturma adımlarını listeler.
+    - **Kullanıcı adı ve parola**: VPN sunucusunda oturum açarken, son kullanıcılardan Kullanıcı adını ve parolasını girmesi istenir.
 
 - **Bağlantı türü**: VPN bağlantı türünü seçin. Seçenekleriniz şunlardır:
 
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
   - **SonicWall Mobile Connect**
-  - **F5'e erişim**
+  - **F5 erişimi**
   - **Pulse Secure**
+  - **Citrix SSO**
+
+- **Parmak izi** (Check Point kapsül yalnızca VPN): VPN sunucusunun güvenilir olduğunu doğrulamak için **contoso Parmak Izi kodu**gibi bir dize girin. İstemcinin aynı parmak izine sahip herhangi bir sunucuya güvenmesi için istemciye bir parmak izi gönderilir. Cihazda parmak izi yoksa, parmak izini göstererek kullanıcıdan VPN sunucusuna güvenmesini ister. Kullanıcı parmak izini el ile doğrular ve bağlanmak için güvenmeyi seçer.
+- **CITRIX VPN öznitelikleri için anahtar ve değer çiftlerini girin** (Yalnızca Citrix): Citrix tarafından sunulan anahtar ve değer çiftlerini girin. Bu değerler VPN bağlantısının özelliklerini yapılandırır. 
+
+  Ayrıca, anahtarlar ve değer çiftleri ile bir virgülle ayrılmış değerler dosyası (. csv) **Içeri aktarabilirsiniz** . **Verilerin üst bilgileri** ve **anahtar** özelliklerini gözden geçirdiğinizden emin olun.
+
+  Anahtar ve değer çiftlerinizi ekledikten sonra, verilerinizi bir. csv dosyasına yedeklemek için **dışarı aktar** ' ı kullanın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Intune’da VPN profilleri](vpn-settings-configure.md)
+
+[Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
+
+[Android Enterprise](vpn-settings-android-enterprise.md), [iOS](vpn-settings-ios.md), [MacOS](vpn-settings-macos.md), [Windows 10 ve üzeri](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md)ve [Windows Phone 8,1](vpn-settings-windows-phone-8-1.md) cihazları için de VPN profilleri oluşturabilirsiniz.

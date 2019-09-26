@@ -8,22 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4ecfe3f407082d0a51910b35ad8ac8d6724f9c
-ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
+ms.openlocfilehash: eead9845c2d525dbc3974824dc9b72739bbbe661
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671892"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71305546"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator ile iOS cihaz kaydını ayarlama
 
@@ -119,13 +118,13 @@ Profil oluşturup seri numaralarını atadıktan sonra profili Intune'dan URL ol
 1. Mac bilgisayarda **Apple Configurator 2**'yi açın. Menü çubuğunda **Apple Configurator 2**’yi, sonra **Tercihler**’i seçin.
     > [!WARNING]
     > Cihazlar kayıt işlemi sırasında fabrika yapılandırmalarına sıfırlanır. En iyi uygulama olarak cihazı sıfırlayın ve açın. Cihazı bağladığınızda cihazın **Merhaba** ekranında olması gerekir.
-    > Apple ID hesabı ile cihaz kaydedilmiş ise kayıt işlemini başlatmadan önce Apple iCloud cihaz silinmelidir. "[Cihaz adı] etkinleştirmek için yapılandırılamıyor" prompt hata görüntülenir.
+    > Cihaz Apple KIMLIĞI hesabıyla zaten kaydedilmişse, kayıt işlemine başlamadan önce cihazın Apple iCloud 'dan silinmesi gerekir. İstem hatası "etkinleştirilemiyor [Cihaz adı]" olarak görüntülenir.
 
 2. **Tercihler** bölmesinde **Sunucular**’ı seçin ve MDM Sunucusu sihirbazını başlatmak için (+) artı simgesini seçin. Seçin **sonraki**.
 3. Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı altındaki MDM sunucusunun **Konak adı veya URL’si** ve **kayıt URL'sini** girin. Kayıt URL’si olarak Intune’dan dışarı aktarılan kayıt profili URL’sini girin. Seçin **sonraki**.  
     “Sunucu URL'si doğrulanmadı” uyarısı alırsanız göz ardı edebilirsiniz. Devam etmek için sihirbaz tamamlanana kadar **İleri**’yi seçin.
-4.  iOS mobil cihazları bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
-5.  Yönetmek istediğiniz iOS cihazları ve ardından **Hazırla**’yı seçin. **iOS Cihazını Hazırla** bölmesinde **El ile**’yi ve daha sonra **İleri**’yi seçin.
+4. iOS mobil cihazları bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
+5. Yönetmek istediğiniz iOS cihazları ve ardından **Hazırla**’yı seçin. **iOS Cihazını Hazırla** bölmesinde **El ile**’yi ve daha sonra **İleri**’yi seçin.
 6. **MDM Sunucusuna Kaydol** bölmesinde, oluşturduğunuz sunucunun adını ve sonra da **İleri**’yi seçin.
 7. **Cihazları Denetle** bölmesinde, denetim düzeyini seçin, sonra **İleri**’yi seçin.
 8. **Kuruluş Oluştur** bölmesinde **Kuruluş**’u seçin veya yeni bir kuruluş oluşturun, sonra **İleri**’yi seçin.

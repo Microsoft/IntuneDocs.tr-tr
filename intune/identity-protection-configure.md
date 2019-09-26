@@ -1,13 +1,12 @@
 ---
-title: Windows 10 cihazlarına Microsoft Intune - Azure kullanarak oturum açmak için PIN kullanma | Microsoft Docs
-description: Windows iş için Hello bir PIN, parmak izi ve daha fazlasını kullanarak cihazlara oturum açmalarını sağlamak için kullanın. Intune Windows 10 cihazlar için şu ayarlarla bir kimlik koruma yapılandırma profili oluşturma ve kullanıcı grupları ve cihaz grupları için profil atayın.
+title: Microsoft Intune-Azure kullanarak Windows 10 cihazlarda oturum açmak için PIN kullanma | Microsoft Docs
+description: Kullanıcıların bir PIN, parmak izi ve daha fazlasını kullanarak cihazlarda oturum açmalarına olanak tanımak için Iş için Windows Hello 'Yu kullanın. Bu ayarlarla Windows 10 cihazları için Intune 'da bir kimlik koruması yapılandırma profili oluşturun ve profili Kullanıcı gruplarına ve cihaz gruplarına atayın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,22 +14,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d52c140a8cf408955d8a8d4cbce6038349b5b66b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b6dd7f33aa38a8d3ab4afb2c06952c08093fa64d
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395789"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "71301771"
 ---
-# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Windows Hello iş için Windows 10 cihazlarda Microsoft Intune ile kullanma
+# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Windows 10 cihazlarda Iş için Windows Hello 'Yu kullanma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Windows iş için Hello Windows cihazlar için parolaları, akıllı kartlar ve sanal akıllı kartları değiştirerek oturum açma yöntemidir. Yöneticiler, yapılandırma ve iş için Windows Hello'yu kullanma Intune yerleşik ayarlarını içerir. Örneğin, bu ayarlar için kullanabilirsiniz:
+Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows cihazlarda oturum açmaya yönelik bir yöntemdir. Intune, yöneticilerin Iş için Windows Hello 'Yu yapılandırıp kullanabilmesi için yerleşik ayarları içerir. Örneğin, bu ayarları kullanarak şunları yapabilirsiniz:
 
-- Windows iş için Hello'yu cihazlar ve kullanıcılar için etkinleştir
-- Bir minimum veya maksimum PIN uzunluğu'dahil olmak üzere, cihaz PIN gereksinimlerini ayarlama
-- Kullanıcılar (veya kullanamazsınız) bir parmak izi gibi hareketler izin cihazlara oturum açmak için
+- Cihazlar ve kullanıcılar için Iş için Windows Hello 'Yu etkinleştir
+- Minimum veya maksimum PIN uzunluğu dahil cihaz PIN gereksinimlerini ayarla
+- Kullanıcıların cihazlarda oturum açmasını sağlayan (veya kullanabilecek) parmak izi gibi hareketlere izin ver
 
 Bu özellik şunları çalıştıran cihazlarda geçerlidir:
 
@@ -38,31 +37,31 @@ Bu özellik şunları çalıştıran cihazlarda geçerlidir:
 - Windows 10 Mobile
 - Windows 10 Holographic for Business
 
-Intune kullanır "yapılandırma profillerini" oluşturabilir ve kuruluşunuzun ihtiyaçları için bu ayarları özelleştirebilirsiniz. Bu özellikler bir profilde ekledikten sonra anında iletme veya kullanıcı ve cihaz grupları, kuruluşunuzda bu ayarları dağıtın.
+Intune, kuruluşunuzun ihtiyaçlarına göre bu ayarları oluşturmak ve özelleştirmek için "yapılandırma profillerini" kullanır. Bu özellikleri bir profilde ekledikten sonra bu ayarları kuruluşunuzdaki Kullanıcı ve cihaz gruplarına gönderin veya dağıtın.
 
-Bu makalede bir cihaz yapılandırma profilinin nasıl oluşturulacağını gösterir. Tüm ayarların bir listesi ve ne yaptıkları için bkz. [Windows iş için Hello etkinleştirmek için Windows 10 cihaz ayarları](identity-protection-windows-settings.md).
+Bu makalede bir cihaz yapılandırma profili oluşturma konusu gösterilmektedir. Tüm ayarların bir listesi ve ne yapacaklarınız için Windows 10 cihaz ayarları ' na bakın ve [iş Için Windows Hello 'yu etkinleştirin](identity-protection-windows-settings.md).
 
 ## <a name="create-the-device-profile"></a>Cihaz profili oluşturma
 
-1. İçinde [Azure portalında](https://portal.azure.com)seçin **tüm hizmetleri** > Filtre **Intune** > seçin **Intune**.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Platform**: Seçin **Windows 10 ve üzeri**. İş İçin Windows Hello, yalnızca Windows 10 ve üzeri çalıştıran cihazlarda desteklenir.
-    - **Profil türü**: Seçin **kimlik koruması**.
-    - **İş için Windows Hello yapılandırma**: Nasıl Windows iş için Hello yapılandırmak istediğinizi seçin. Seçenekleriniz şunlardır:
+    - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: **Windows 10 ve üstünü**seçin. İş İçin Windows Hello, yalnızca Windows 10 ve üzeri çalıştıran cihazlarda desteklenir.
+    - **Profil türü**: **Kimlik koruması**' nı seçin.
+    - **İş Için Windows Hello 'Yu Yapılandır**: Iş için Windows Hello 'yu nasıl yapılandırmak istediğinizi seçin. Seçenekleriniz şunlardır:
 
-        - **Yapılandırılmamış**: [Sağlayan Windows iş için Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) cihazda. Kimlik koruma profillerini yalnızca kullanıcılara atarken cihaz bağlamı varsayılan olarak **Yapılandırılmadı** olur.
-        - **Devre dışı bırakılmış**: İş için Windows Hello'yu kullanma istemiyorsanız bu seçeneği belirleyin. Bu seçenek Windows iş için Hello tüm kullanıcılar için devre dışı bırakır.
-        - **Etkin**: Bu seçeneği [sağlama]((https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning))ve Windows Hello for Business ayarları ıntune yapılandırın. Yapılandırmak istediğiniz ayarları girin. Tüm ayarların bir listesi ve ne yaptıkları için bkz:
+        - **Yapılandırılmadı**: Cihazda [iş Için Windows Hello 'Yu sağlar](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) . Kimlik koruma profillerini yalnızca kullanıcılara atarken cihaz bağlamı varsayılan olarak **Yapılandırılmadı** olur.
+        - **Devre dışı**: Iş için Windows Hello 'Yu kullanmak istemiyorsanız bu seçeneği belirleyin. Bu seçenek tüm kullanıcılar için Iş için Windows Hello 'Yu devre dışı bırakır.
+        - **Etkin**: Intune 'da Iş için Windows Hello ayarlarını [sağlamak](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)ve yapılandırmak için bu seçeneği belirleyin. Yapılandırmak istediğiniz ayarları girin. Tüm ayarların bir listesi ve ne yapacaklarınız için, bkz.:
 
-            - [Windows iş için Hello etkinleştirmek için Windows 10 cihaz ayarları](identity-protection-windows-settings.md)
+            - [Iş için Windows Hello 'Yu etkinleştirmek için Windows 10 cihaz ayarları](identity-protection-windows-settings.md)
 
 4. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
-Profil oluşturulur ve Profiller listede görünür. Ardından, [atama](device-profile-assign.md) bu profile ihtiyaçlarınızı karşılamak için kullanıcı ve cihaz grupları.
+Profil oluşturulur ve profiller listesinde görüntülenir. Daha sonra, gereksinimlerinizi karşılamak için bu profili Kullanıcı ve cihaz gruplarına [atayın](device-profile-assign.md) .
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
@@ -76,5 +75,5 @@ In this high-level example, you'll create a device restriction policy that block
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Tüm listesini görmek [ayarları ve ne yaptıklarını](identity-protection-windows-settings.md).
+- Tüm ayarların bir listesini [ve ne yaptığını](identity-protection-windows-settings.md)görün.
 - [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).

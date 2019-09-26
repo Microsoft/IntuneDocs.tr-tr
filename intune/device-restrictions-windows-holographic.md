@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fed8c33bbf4ff302d08576dc5e34ce1257425090
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bea8d6d8e3503b9ec6fba7b2eda4842b68786e54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565256"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302316"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Windows Holographic for Business izin vermek veya Intune kullanarak özellikleri kısıtlamak için cihaz ayarları
 
@@ -34,32 +33,32 @@ Bu makale, listeler ve farklı ayarları denetleyebilirsiniz gibi Microsoft Holo
 
 ## <a name="general"></a>Genel
 
-- **Elle kayıt kaldırmaya**: Kullanıcının iş yeri hesabını cihazdan el ile silmesine olanak sağlar.
+- **El ile kayıt kaldırma**: Kullanıcının iş yeri hesabını cihazdan el ile silmesine olanak sağlar.
 - **Cortana**: Cortana sesli yardımcısını etkinleştirin veya devre dışı bırakın.
 - **Coğrafi konum**: Cihazın konum hizmetleri bilgilerini kullanıp kullanamayacağını belirtir.
 
 ## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
 - **Parola**: Son kullanıcının cihaza erişmek için parola girmesini zorunlu tutun.
-- **Cihaz boşta durumundan çıkarken parola iste**: Kullanıcının cihaz kilidini açmak için bir parola girmesi gerektiğini belirtir.
+- **Cihaz boşta durumundan çıkarken parola iste**: Kullanıcının cihazın kilidini açmak için bir parola girmesi gerektiğini belirtir.
 
 ## <a name="app-store"></a>Uygulama Mağazası
 
-- **Mağaza uygulamalarını otomatik güncelleştir**: Otomatik olarak güncelleştirilmesi için Microsoft Store yüklenen uygulamalar sağlar.
-- **Güvenilen uygulama yüklemesi**: Dışarıdan yüklenmesine izin güvenilen bir sertifikayla imzalanan uygulamaların sağlar.
-- **Geliştirici kilidini açma**: Dışarıdan yüklenen uygulamaların son kullanıcı tarafından değiştirilmesine izin verme gibi Windows Geliştirici ayarlarına izin verin.
+- **Mağazadan uygulamaları otomatik güncelleştir**: Microsoft Store yüklenen uygulamaların otomatik olarak güncelleştirilmesini sağlar.
+- **Güvenilen uygulama yüklemesi**: Güvenilen bir sertifikayla imzalanan uygulamaların dışarıdan yüklenmesine izin verir.
+- **Geliştirici kilidi açma**: Dışarıdan yüklenen uygulamaların Son Kullanıcı tarafından değiştirilmesine izin verme gibi Windows Geliştirici ayarlarına izin verin.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge Tarayıcısı
 
-- **Tanımlama bilgilerini**: Tarayıcının internet tanımlama bilgilerini cihaza kaydetmesine olanak tanır.
-- **Açılır pencereler**: (Yalnızca Windows 10 Masaüstü için geçerlidir) tarayıcıdaki açılır pencereleri engeller.
+- **Tanımlama bilgileri**: Tarayıcının internet tanımlama bilgilerini cihaza kaydetmesine izin verir.
+- **Açılır pencereler**: Tarayıcıda açılır pencereleri engeller (yalnızca Windows 10 Masaüstü için geçerlidir).
 - **Arama önerileri**: Siz arama tümcecikleri yazarken arama motorunuzun site önerilerinde bulunmasına olanak sağlar.
-- **Parola Yöneticisi**: Etkinleştirmek veya Microsoft Edge parola Yöneticisi özelliğini devre dışı bırakın.
-- **Kullanıcıyı-izleme üst bilgileri gönderme**: Göndermek için Microsoft Edge tarayıcısı yapılandırır üst bilgileri, kullanıcıların ziyaret ettiği Web sitelerine izleme (Dnt).
+- **Parola Yöneticisi**: Microsoft Edge parola Yöneticisi özelliğini etkinleştirin veya devre dışı bırakın.
+- **Do-Track üstbilgileri gönder**: Microsoft Edge tarayıcısını, kullanıcıların ziyaret ettiği Web sitelerine üst bilgileri izlememek üzere yapılandırır.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
-- **Microsoft Edge için SmartScreen**: Site ve dosya yüklemeleri erişmek için Microsoft Edge Smartscreen'i etkinleştirin.
+- **Microsoft Edge Için SmartScreen**: Site ve dosya indirmelerine erişmek için Microsoft Edge SmartScreen 'i etkinleştirin.
 
 ## <a name="search"></a>Ara
 
@@ -71,13 +70,13 @@ Bu makale, listeler ve farklı ayarları denetleyebilirsiniz gibi Microsoft Holo
 
 ## <a name="cellular-and-connectivity"></a>Hücresel ve Bağlantı
 
-- **Bluetooth**: Kullanıcı etkinleştirme ve cihazda Bluetooth yapılandırabilir olup olmadığını denetler.
-- **Bluetooth bulunabilirlik**: Cihazın diğer Bluetooth özellikli cihazlar tarafından bulunabilmesine olanak sağlar.
-- **Bluetooth reklamlarına**: Cihazın Bluetooth üzerinden reklam almasına izin verir.
+- **Bluetooth**: Kullanıcının cihazda Bluetooth 'U etkinleştirip yapılandırıp yapılandıramayacağını denetler.
+- **Bluetooth bulunabilirliği**: Cihazın diğer Bluetooth özellikli cihazlar tarafından keşfedilmesini sağlar.
+- **Bluetooth tanıtımı**: Cihazın Bluetooth üzerinden reklam almasına izin verir.
 
 ## <a name="control-panel-and-settings"></a>Denetim Masası ve Ayarlar
 
-- **Sistem saatinin değiştirilmesi**: Son kullanıcının cihaz tarih ve saatini değiştirmesini engeller.
+- **Sistem saati değişikliği**: Son kullanıcının cihaz tarih ve saatini değiştirmesini engeller.
 
 ## <a name="kiosk---obsolete"></a>Bilgi noktası - Eski
 
@@ -87,25 +86,25 @@ Bir bilgi noktası cihazı genellikle belirli bir uygulama çalıştırır. Kull
 
 - **Bilgi noktası modu**: İlke tarafından desteklenen bilgi noktası modu türünü tanımlar. Şu seçenekler mevcuttur:
 
-  - **Yapılandırılmamış** (varsayılan): İlke, bilgi noktası modunu etkinleştirmez. 
-  - **Tek uygulama bilgi noktası**: Profil, cihazın yalnızca bir uygulama çalıştırmasına olanak tanır. Kullanıcı oturum açtığında belirli bir uygulama başlar. Bu mod ayrıca kullanıcının yeni uygulamalar açmasını veya çalışan uygulamayı değiştirmesini önler.
-  - **Çoklu uygulama bilgi noktası**: Profil, cihazın birden fazla uygulama çalıştırmasına olanak tanır. Yalnızca eklediğiniz uygulamalar kullanıcı tarafından kullanılabilir. Bir çoklu uygulama bilgi noktasının veya sabit amaçlı cihazın yararı, yalnızca ihtiyaç duyulan uygulamalara erişim sağlayarak bireylere anlaşılması kolay bir deneyim sunmasıdır. İhtiyaç duymadıkları uygulamaları ise gözlerinin önünden kaldırır. 
+  - **Yapılandırılmadı** (varsayılan): İlke bilgi noktası modunu etkinleştirmez. 
+  - **Tek uygulama bilgi noktası**: Profil, cihazın yalnızca bir uygulama çalıştırmasına olanak sağlar. Kullanıcı oturum açtığında belirli bir uygulama başlar. Bu mod ayrıca kullanıcının yeni uygulamalar açmasını veya çalışan uygulamayı değiştirmesini önler.
+  - **Birden çok uygulama bilgi noktası**: Profil, cihazın birden çok uygulama çalıştırmasına olanak sağlar. Yalnızca eklediğiniz uygulamalar kullanıcı tarafından kullanılabilir. Bir çoklu uygulama bilgi noktasının veya sabit amaçlı cihazın yararı, yalnızca ihtiyaç duyulan uygulamalara erişim sağlayarak bireylere anlaşılması kolay bir deneyim sunmasıdır. İhtiyaç duymadıkları uygulamaları ise gözlerinin önünden kaldırır. 
   
-    Çoklu uygulama bilgi noktası deneyimi için uygulama eklediğinizde, başlat menüsü düzen dosyası da eklersiniz. [Başlat menüsü düzeni dosyası](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune), Intune’da kullanılabilecek örnek bir XML içerir. 
+    Çoklu uygulama bilgi noktası deneyimi için uygulama eklediğinizde, başlat menüsü düzen dosyası da eklersiniz. [Başlat menüsü düzeni dosyası](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others), Intune’da kullanılabilecek örnek bir XML içerir. 
 
-#### <a name="single-app-kiosks"></a>Tek uygulama bilgi noktaları
+### <a name="single-app-kiosks"></a>Tek uygulama bilgi noktaları
 
 Aşağıdaki ayarları girin:
 
-- **Kullanıcı hesabı**: Yerel (cihaz) kullanıcı hesabını veya Azure AD hesabını girin bilgi noktası uygulamasıyla ilişkili oturum açma. Azure AD etki alanlarına katılmış hesapları `domain\username@tenant.org` biçiminde girin. 
+- **Kullanıcı hesabı**: Yerel (cihaza) Kullanıcı hesabını veya bilgi noktası uygulamasıyla ilişkili Azure AD hesabı oturum açma bilgilerini girin. Azure AD etki alanlarına katılmış hesapları `domain\username@tenant.org` biçiminde girin. 
 
     Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `AzureAD\user@contoso.com` biçimini kullanın.
 
-- **Uygulama kullanıcı modeli kimliği (AUMID)**: Bilgi noktası uygulamasının AUMID'sini girin. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+- Uygulamanın **uygulama Kullanıcı MODELI kimliği (AUMıD)** : Bilgi noktası uygulamasının AUMıD 'sini girin. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
 ## <a name="reporting-and-telemetry"></a>Raporlama ve Telemetri
 
-- **Kullanım verilerini paylaş**: Tanılama verisi gönderme düzeyini seçin.
+- **Kullanım verilerini paylaşma**: Tanılama veri gönderimi düzeyini seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

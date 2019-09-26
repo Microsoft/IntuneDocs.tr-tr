@@ -1,13 +1,12 @@
 ---
-title: Bir Windows cihazından Microsoft Intune - Azure ile yeniden adlandırma | Microsoft Docs
-description: Bir Windows cihazı Intune kullanarak yeniden adlandırın.
+title: Microsoft Intune-Azure ile cihaz yeniden adlandırma | Microsoft Docs
+description: Microsoft Intune kullanarak bir cihazı yeniden adlandırma.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 07/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,33 +15,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8dfdc3641d583fc045346034ee8543feff1e7cbf
-ms.sourcegitcommit: 1144247aa7f042eb1b99d8fd8dd17b909eae38c5
+ms.openlocfilehash: 9d109529e2c5dafdf8d5b4e0d73191d1715ecd8c
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567563"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304650"
 ---
-# <a name="rename-a-windows-device-in-intune"></a>Windows Cihazınızı ıntune'a yeniden adlandır
+# <a name="rename-a-device-in-intune"></a>Intune 'da bir cihazı yeniden adlandırma
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**Yeniden adlandırma cihaz** Intune'a kayıtlı şirkete ait bir Windows cihazı yeniden adlandır eylemi olanak tanır. Cihazın adı ıntune'da ve cihazda değiştirilir. 
+**Cihazı yeniden adlandır** eylemi, Intune 'a kaydedilmiş bir cihazı yeniden adlandırmanızı sağlar. Cihazın adı Intune 'da ve cihazda değişir.
 
-Bu özellik, yeniden adlandırma karma Azure AD Windows cihazları şu anda desteklemiyor.
+Aşağıdaki cihaz türlerini yeniden adlandırabilirsiniz:
+- şirkete ait pencereler 
+- iOS denetimli
+- şirkete ait MacOS 10
 
-## <a name="rename-a-device"></a>Bir cihazı yeniden adlandır
+Bu özellik şu anda karma Azure AD Windows cihazlarının yeniden adlandırılmasını desteklemiyor.
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. Seçin **tüm hizmetleri**, filtre **Intune**ve **Intune**.
-3. Seçin **cihazları** > **tüm cihazlar** > Windows cihazı seçin > **daha fazla** > **yeniden adlandırma cihaz**.
-4. İçinde **yeniden adlandırma cihaz** dikey penceresinde, metin kutusuna yeni adı yazın. Harf, rakam ve kısa çizgiler kullanabilirsiniz. Ad en az bir harf veya kısa çizgi içermelidir.
-5. Cihazı yeniden adlandırıldıktan sonra yeniden başlatmak istiyorsanız seçin **Evet** yanındaki **yeniden başlatma sonrasında yeniden adlandırma**.
-6. Seçin **Yeniden Adlandır**.
+## <a name="rename-a-device"></a>Bir cihazı yeniden adlandırma
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+3.  > Cihazlar > **tüm cihazlar** ' ı seçin > cihaz seçin **>** **cihazı yeniden adlandır**.
+4. **Cihazı yeniden adlandır** dikey penceresinde, metin kutusuna yeni adı yazın. Harf, sayı ve kısa çizgi kullanabilirsiniz. Ad en az bir harf veya kısa çizgi içermelidir.
+5. Yeniden adlandırdıktan sonra cihazı yeniden başlatmak istiyorsanız Yeniden Adlandır ' ın yanındaki **Evet** ' i seçerek yeniden **başlatın**.
+6. **Yeniden Adlandır**' ı seçin.
 
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Durumu görmek için **Yeniden Adlandır** cihaz eylemi, onay **genel bakış** cihaz sayfası.
+Cihazı **Yeniden Adlandır** eyleminin durumunu görmek için, cihazın **genel bakış** sayfasını kontrol edin.

@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 07/01/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7d7834719b42a1aaa6240510a951733a96f6add
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 615509c8a1e7063644d9fa3e0250096b9153c3e3
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59899883"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71304370"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -39,7 +38,7 @@ MAM destekli uygulamalar listesi arıyorsanız bkz. [MAM uygulamaları listesi](
 
 Kuruluşunuzun iş kolu (LOB) uygulamalarını uygulama koruma ilkelerine hazırlamak üzere Microsoft Intune'a ekleme hakkında bilgi için bkz. [Uygulamaları Microsoft Intune'a ekleme](apps-add.md).
 
-##  <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
+## <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
 1. Intune portalında **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ne gidin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar.
 2. **İlke Oluştur**'u seçin.
 
@@ -76,11 +75,11 @@ Oluşturduğunuz yeni ilkeler siz açıkça dağıtana kadar herhangi bir kullan
 
    ![Dahil edilecek grupları seçin menüsü ile Atamalar bölmesinin ekran görüntüsü](./media/app-protection-policy-add-users.png)
 
-3.  **Azure Active Directory**’nizdeki tüm güvenlik gruplarının listesi görüntülenir. Bu ilkenin geçerli olmasını istediğiniz kullanıcı gruplarını seçin ve sonra da **Seç**'i kullanın. 
+3. **Azure Active Directory**’nizdeki tüm güvenlik gruplarının listesi görüntülenir. Bu ilkenin geçerli olmasını istediğiniz kullanıcı gruplarını seçin ve sonra da **Seç**'i kullanın. 
 
     ![Azure AD kullanıcılarının listesiyle Kullanıcı grubu ekle bölmesinin ekran görüntüsü](./media/azure-ad-user-group-list.png)
 
-4.  Grupları dahil edip hariç tuttuktan sonra yapılandırmayı kaydetmek ve ilkeyi kullanıcılara dağıtmak için **Kaydet**'i seçin. Yapılandırmanızı kaydetmeden **Vazgeç**'i seçerseniz *Ekle* ve *Dışla* sekmesinde yaptığınız tüm değişiklikler silinir.   
+4. Grupları dahil edip hariç tuttuktan sonra yapılandırmayı kaydetmek ve ilkeyi kullanıcılara dağıtmak için **Kaydet**'i seçin. Yapılandırmanızı kaydetmeden **Vazgeç**'i seçerseniz *Ekle* ve *Dışla* sekmesinde yaptığınız tüm değişiklikler silinir.   
  
      ![Kaydetme ve vazgeçme seçeneklerini gösteren ekran görüntüsü](./media/save-assignment.png)
   
@@ -91,61 +90,70 @@ Yalnızca Microsoft Intune lisansları atanmış kullanıcılar ilkeden etkileni
 >[!IMPORTANT]
 > Cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
-Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.:
+Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. Daha fazla bilgi için bkz.
 * [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-android.md)
 * [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-ios.md)
 
-##  <a name="change-existing-policies"></a>Mevcut ilkeleri değiştirme
+## <a name="change-existing-policies"></a>Mevcut ilkeleri değiştirme
 Mevcut ilkeyi düzenleyebilir ve bunu hedeflenen kullanıcılara uygulayabilirsiniz. Bununla birlikte, mevcut ilkeleri değiştirdiğinizde uygulamalarda oturum açmış olan kullanıcılar bu değişiklikleri sekiz saat boyunca görmez.
 
 Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama oturumunu kapatması ve yeniden oturum açması gerekir.
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>İlkeyle ilişkili uygulamalar listesini değiştirmek için
 
-1.  **Uygulama koruma ilkeleri** bölmesinde değiştirmek istediğiniz ilkeyi seçin.
+1. **Uygulama koruma ilkeleri** bölmesinde değiştirmek istediğiniz ilkeyi seçin.
 
-2.  *Intune Uygulama Koruması* bölmesinde, uygulamaların listesini açmak için **Hedeflenen uygulamalar**’ı seçin.
+2. *Intune Uygulama Koruması* bölmesinde, uygulamaların listesini açmak için **Hedeflenen uygulamalar**’ı seçin.
 
-3.  Uygulamaları listeden kaldırın veya listeye ekleyin ve ardından değişikliklerinizi kaydetmek için **Kaydet** simgesini seçin.
+3. Uygulamaları listeden kaldırın veya listeye ekleyin ve ardından değişikliklerinizi kaydetmek için **Kaydet** simgesini seçin.
 
 ### <a name="to-change-the-list-of-user-groups"></a>Kullanıcı grupları listesini değiştirmek için
 
 
-1.  **Uygulama koruma ilkeleri** bölmesinde, değiştirmek istediğiniz ilkeyi seçin.
+1. **Uygulama koruma ilkeleri** bölmesinde, değiştirmek istediğiniz ilkeyi seçin.
 
-2.  *Intune Uygulama Koruması* bölmesinde, bu ilkeye sahip mevcut kullanıcı gruplarının listesini gösteren **Intune Uygulama Koruması - Atamalar** bölmesini açmak için **Atamalar**'ı seçin.
+2. *Intune Uygulama Koruması* bölmesinde, bu ilkeye sahip mevcut kullanıcı gruplarının listesini gösteren **Intune Uygulama Koruması - Atamalar** bölmesini açmak için **Atamalar**'ı seçin.
 
-3.  İlkeye yeni bir kullanıcı grubu eklemek için, *Dahil Et* sekmesinde **Dahil edilecek grupları seç**’i ve kullanıcı grubunu seçin. Gruba eklemek için **Seç**'i belirleyin. 
+3. İlkeye yeni bir kullanıcı grubu eklemek için, *Dahil Et* sekmesinde **Dahil edilecek grupları seç**’i ve kullanıcı grubunu seçin. Gruba eklemek için **Seç**'i belirleyin. 
 
-4.  Bir kullanıcı grubunu dışlamak için, *Dışla* sekmesinde **Dışlanacak grupları seç**’i ve kullanıcı grubunu seçin. Kullanıcı grubunu kaldırmak için **Seç**’i seçin.  
+4. Bir kullanıcı grubunu dışlamak için, *Dışla* sekmesinde **Dışlanacak grupları seç**’i ve kullanıcı grubunu seçin. Kullanıcı grubunu kaldırmak için **Seç**’i seçin.  
 
-5.  Önceden eklenen grupları silmek için *Ekle* veya *Dışla* sekmesinde üç noktayı (...) ve ardından **Sil**'i seçin. 
+5. Önceden eklenen grupları silmek için *Ekle* veya *Dışla* sekmesinde üç noktayı (...) ve ardından **Sil**'i seçin. 
 
-5.  Atamalarda yaptığınız değişiklikler hazır duruma geldiğinde **Kaydet**'i seçerek yapılandırmayı kaydedebilir ve ilkeyi yeni kullanıcı grubuna dağıtabilirsiniz. Yapılandırmanızı kaydetmeden **Vazgeç**'i seçerseniz *Ekle* ve *Dışla* sekmesinde yaptığınız tüm değişiklikler silinir.
+5. Atamalarda yaptığınız değişiklikler hazır duruma geldiğinde **Kaydet**'i seçerek yapılandırmayı kaydedebilir ve ilkeyi yeni kullanıcı grubuna dağıtabilirsiniz. Yapılandırmanızı kaydetmeden **Vazgeç**'i seçerseniz *Ekle* ve *Dışla* sekmesinde yaptığınız tüm değişiklikler silinir.
 
 ### <a name="to-change-policy-settings"></a>İlke ayarlarını değiştirmek için
 
-1.  **Uygulama koruma ilkeleri** bölmesinde değiştirmek istediğiniz ilkeyi seçin.
+1. **Uygulama koruma ilkeleri** bölmesinde değiştirmek istediğiniz ilkeyi seçin.
 
-2.  *Intune Uygulama Koruması* bölmesinde, düzenleyebileceğiniz ayar alanlarının listesini açmak için **Özellikler**’i seçin. 
+2. *Intune Uygulama Koruması* bölmesinde, düzenleyebileceğiniz ayar alanlarının listesini açmak için **Özellikler**’i seçin. 
 
-3.  Değiştirmek istediğiniz ayarların bulunduğu ayarlar alanını seçin (örneğin **Verileri yeniden konumlandırma** veya **Erişim gereksinimleri**). Ardından ayarları yeni değerlerle değiştirin.
+3. Değiştirmek istediğiniz ayarların bulunduğu ayarlar alanını seçin (örneğin **Verileri yeniden konumlandırma** veya **Erişim gereksinimleri**). Ardından ayarları yeni değerlerle değiştirin.
 
-4.  Değişikliklerinizi kaydetmek için **Kaydet** simgesini seçin. Tüm değişiklikleriniz tamamlanana kadar bir ayarlar alanı seçmek ve ardından değişikliklerinizi kaydetmek için işlemi yineleyin. Ardından *Intune Uygulama Koruması - Özellikler* bölmesini kapatabilirsiniz. 
+4. Değişikliklerinizi kaydetmek için **Kaydet** simgesini seçin. Tüm değişiklikleriniz tamamlanana kadar bir ayarlar alanı seçmek ve ardından değişikliklerinizi kaydetmek için işlemi yineleyin. Ardından *Intune Uygulama Koruması - Özellikler* bölmesini kapatabilirsiniz. 
 
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Cihaz yönetim durumuna bağlı olarak uygulama koruma ilkeleri hedefleme
 Pek çok kuruluşta son kullanıcıların Intune Mobil Cihaz Yönetimi (MDM) ile yönetilen cihazları (şirkete ait cihazlar gibi) ve yalnızca Intune uygulama koruma ilkeleriyle korunan yönetilmeyen cihazları kullanmalarına izin verilir. Yönetilmeyen cihazlar genellikle Kendi Cihazını Getir (KCG) cihazları olarak bilinir.
 
-Intune uygulama koruma ilkeleri, bir kullanıcının kimliğini hedeflendiği için kullanıcı koruma ayarları hem kaydedilmiş (MDM ile yönetilen) hem de kaydedilmemiş (MDM’siz) cihazlara uygulanabilir. Bu nedenle bir Intune uygulama koruma ilkesinde Intune’a kayıtlı olan veya olmayan iOS ve Android cihazları hedefleyebilirsiniz. Yönetilmeyen cihazlar için katı veri kaybı önleme (DLP) denetimlerinin etkin olduğu bir koruma ilkesi ve MDM ile yönetilen cihazlar için DLP denetimlerinin daha esnek olabileceği ayrı bir koruma ilkesi yapılandırabilirsiniz. 
+Intune uygulama koruma ilkeleri, bir kullanıcının kimliğini hedeflendiği için kullanıcı koruma ayarları hem kaydedilmiş (MDM ile yönetilen) hem de kaydedilmemiş (MDM’siz) cihazlara uygulanabilir. Bu nedenle bir Intune uygulama koruma ilkesinde Intune’a kayıtlı olan veya olmayan iOS ve Android cihazları hedefleyebilirsiniz. Kesin veri kaybı önleme (DLP) denetimlerinin yerinde olduğu yönetilmeyen cihazlar için bir koruma ilkenize ve MDM ile yönetilen cihazlar için DLP denetimlerinin çok daha gevşek olabileceği ayrı bir koruma ilkesine sahip olabilirsiniz. Bunun kişisel Android Enterprise cihazlarında nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri ve iş profilleri](android-deployment-scenarios-app-protection-work-profiles.md).
 
 Bu ilkeleri oluşturmak için Intune konsolunda **İstemci uygulamaları** > **Uygulama koruma ilkeleri**'ne gidin ve **İlke Oluştur**’u seçin. Mevcut bir koruma ilkesini de düzenleyebilirsiniz. Uygulama koruma ilkesinin hem yönetilen hem yönetilmeyen cihazlara uygulanması için, **Tüm uygulama türlerini hedefle**’nin varsayılan değer olan **Evet** değerine ayarlandığını doğrulayın. Yönetim durumuna bağlı olarak ayrı atamalar yapmak istiyorsanız **Tüm uygulama türlerini hedefle** seçeneğini **Hayır** olarak ayarlayın. 
 
 ![Tüm uygulama türlerini hedefle ile İlke ekle penceresinin ekran görüntüsü](./media/app-protection-policies-target-all.png)
 
-Uygulama ayarlarının Intune'a kayıtlı cihazlardaki uygulamalara yansıtılması için iOS cihazlarda ek uygulama yapılandırma ayarları gereklidir:
-- MDM ile yönetilen tüm uygulamalarda **IntuneMAMUPN** yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
-- Üçüncü taraf ve LOB MDM ile yönetilen tüm uygulamalarda **IntuneMAMDeviceID** yapılandırılmalıdır. **IntuneMAMDeviceID**, cihaz kimliği belirtecinde yapılandırılmalıdır. Örneğin, `key=IntuneMAMDeviceID, value={{deviceID}}`. Daha fazla bilgi için bkz. [Yönetilen iOS cihazlar için uygulama yapılandırma ilkeleri ekleme](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
-- Yalnızca **IntuneMAMDeviceID** yapılandırıldığında Intune uygulaması cihazı yönetilmeyen cihaz olarak görür.  
+### <a name="app-types"></a>Uygulama türleri
+
+- **Yönetilmeyen cihazlardaki uygulamalar**: Yönetilmeyen cihazlar, Intune MDM yönetiminin algılanmadığı cihazlardır. Buna üçüncü taraf MDM satıcıları dahildir.
+- **Intune yönetilen cihazlarındaki uygulamalar**: Yönetilen cihazlar, Intune MDM tarafından yönetilir.
+- **Android Iş profilindeki uygulamalar**: Android kurumsal iş profili cihazları olarak kaydedilmiş yönetilen cihazlar.
+
+> Android cihazları, hangi uygulama türünün seçildiğine bakılmaksızın Intune Şirket Portalı uygulamasını yüklemek için istemde bulunur. Örneğin, ' Intune yönetilen cihazlarda uygulamalar ' ı seçerseniz, yönetilmeyen Android cihazlara sahip olan kullanıcılara yine de sorulacaktır.
+
+İOS için, uygulama koruma ilkesi (uygulama) ayarlarını Intune 'a kayıtlı cihazlardaki uygulamalara hedeflemek için ek uygulama yapılandırma ayarları gerekir:
+
+- MDM ile yönetilen tüm uygulamalarda **IntuneMAMUPN** yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- Üçüncü taraf ve LOB MDM ile yönetilen tüm uygulamalarda **IntuneMAMDeviceID** yapılandırılmalıdır. **IntuneMAMDeviceID**, cihaz kimliği belirtecinde yapılandırılmalıdır. Örneğin, `key=IntuneMAMDeviceID, value={{deviceID}}`. Daha fazla bilgi için bkz. [Yönetilen iOS cihazlar için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-ios.md).
+- Yalnızca **IntuneMAMDeviceID** yapılandırıldığında Intune uygulaması cihazı yönetilmeyen cihaz olarak görür.
 
 > [!NOTE]
 > Yönetim durumuna bağlı uygulama koruma ilkeleri hakkında belirli iOS destek bilgilerine ulaşmak istiyorsanız bkz. [Yönetim durumuna bağlı olarak hedeflenen MAM koruma ilkeleri](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
@@ -159,6 +167,6 @@ iOS ve Android ilke ayarlarının tam listesini görmek için, aşağıdaki bağ
 ## <a name="next-steps"></a>Sonraki adımlar
 [Uyumluluğu ve kullanıcı durumunu izleme](app-protection-policies-monitor.md)
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 * [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-android.md)
 * [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](app-protection-enabled-apps-ios.md)

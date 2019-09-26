@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
-ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
+ms.openlocfilehash: eeaf3dc1e7f1dfa1cfc3ff0da554f65d416a354b
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739197"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274821"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune 'A iOS yazılım güncelleştirme ilkeleri ekleme
 
@@ -51,9 +51,9 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Güncelleştirme varsa ve kısıtlan
       - **Başlangıç zamanı**: Sınırlı zaman çerçevesinin başlangıç saatini seçin. Örneğin, güncelleştirmelerin 5 ' de itibaren yüklenememesi için 5 har girin.
       - **Bitiş zamanı**: Sınırlı zaman çerçevesinin bitiş saatini seçin. Örneğin, güncelleştirme 1 ' den başlayarak yüklenebilmeleri için 1 har girin.
 
-    - **Zamanlanan güncelleştirmelere hiçbir değişiklik yapmadan son kullanıcılara yazılım güncelleştirmelerinin görünürlüğünü geciktir (gün)** : 
+    - Yazılım **güncelleştirme ilkesinde zamanlanan güncelleştirmelerde değişiklik yapmadan son kullanıcılara yazılım güncelleştirmelerinin görünürlüğünü geciktir (gün)** : 
 
-      \* * Denetimli iOS cihazlarınızda yazılım güncelleştirmelerinin görünürlüğünü belirli bir süre için geciktirmek istiyorsanız lütfen [cihaz kısıtlamalarında](device-restrictions-ios.md#general)bu ayarları yapılandırın.
+      \* * Denetimli iOS cihazlarınızda yazılım güncelleştirmelerinin görünürlüğünü belirli bir süre için geciktirmek istiyorsanız lütfen [cihaz kısıtlamalarında](device-restrictions-ios.md#general)bu ayarları yapılandırın. Yazılım güncelleştirme ilkeleri tüm cihaz kısıtlamalarını geçersiz kılar. Her iki küme de varsa, yazılım güncelleştirme ilkesi ilk olarak her zaman gelir. 
      
       > [! Önemli  
       > *Başlangıç zamanı* ve *bitiş zamanı* 12 ' ye ayarlanmış bir ilke, 24 saat değil 0 saat olarak değerlendirilir. Bu durum hiçbir kısıtlama vermez.  

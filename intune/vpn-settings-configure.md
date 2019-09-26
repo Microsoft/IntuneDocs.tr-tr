@@ -1,13 +1,12 @@
 ---
-title: Microsoft Intune - Azure’da VPN cihaz profili oluşturma | Microsoft Docs
-description: iOS cihazlarda sanal özel ağ (VPN) bağlantı türlerini görüntüleyin, Azure portalında bir VPN profili oluşturun ve VPN profilini Intune’da sertifikalar veya kullanıcı adı ve parola ile güvenlik altına alma seçeneklerinize bakın.
+title: Microsoft Intune-Azure 'da cihazlara VPN ayarları ekleme | Microsoft Docs
+description: Android, Android Enterprise, iOS, macOS ve Windows cihazlarında, Microsoft Intune ' de sanal özel ağ (VPN) bağlantıları oluşturmak için yerleşik ayarları kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/25/2018
+ms.date: 09/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,85 +14,94 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11684ceea5aafa7de5a2663e5a69bbbe7367b655
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d43c41e0ba6c2f8ccaccdfd0804b02f501b9e3a1
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394036"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302787"
 ---
-# <a name="create-vpn-profiles-in-intune"></a>Intune’da VPN profilleri oluşturma
+# <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune 'da VPN sunucularına bağlanmak için VPN profilleri oluşturma
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Sanal özel ağlar (VPN’ler), kullanıcılarınıza şirket ağınıza güvenli uzaktan erişim vermenize olanak tanır. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. VPN ayarlarını kuruluşunuzdaki kullanıcılar ve cihazlara atamak için Microsoft Intune’da **VPN profilleri** kullanarak ağa kolay ve güvenli bir şekilde bağlanabilmelerini sağlayın.
+Sanal özel ağlar (VPN 'Ler), kullanıcılarınızın kuruluş ağınıza güvenli uzaktan erişim olanağı sağlar. Cihazlar VPN sunucusuyla bir bağlantı başlatmak için bir VPN bağlantısı profili kullanır. Microsoft Intune ' deki **VPN profilleri** , kuruluşunuzun kullanıcılara ve cihazlarına VPN ayarları atayarak kurumsal ağınıza kolayca ve güvenli bir şekilde bağlanabilmelerini sağlar.
 
-Örneğin, tüm iOS cihazlara kurumsal ağ üzerindeki bir dosya paylaşımına bağlanmak için gereken ayarları sağlamak istediğinizi varsayın. Şirket ağına bağlanmak için gereken ayarları içeren bir VPN profili oluşturursunuz. Ardından bu profili iOS cihaz kullanan tüm kullanıcılara atarsınız. Kullanıcılar, VPN bağlantısını kullanılabilir ağlar listesinde görür ve ağa kolaylıkla bağlanabilir.
+Örneğin, kuruluş ağındaki bir dosya paylaşımıyla bağlantı kurmak için gerekli ayarlarla tüm iOS cihazlarını yapılandırmak istiyorsunuz. Bu ayarları içeren bir VPN profili oluşturursunuz. Ardından, bu profili iOS cihazlarından oluşan tüm kullanıcılara atarsınız. Kullanıcılar, VPN bağlantısını kullanılabilir ağlar listesinde görür ve ağa kolaylıkla bağlanabilir.
 
-Aşağıdaki platformlar için VPN profilleri oluştururken Intune özel yapılandırma ilkelerini kullanabilirsiniz:
-
-* Android 4 ve üzeri
-* Windows 8.1 ve üzeri çalıştıran kayıtlı cihazlar
-* Windows Phone 8.1 ve üzeri
-* Windows 10 masaüstü çalıştıran kayıtlı cihazlar
-* Windows 10 Mobile
-* Windows 10 Holographic for Business
+> [!NOTE]
+> Aşağıdaki platformlar için VPN profilleri oluşturmak üzere [Intune özel yapılandırma ilkelerini](custom-settings-configure.md) kullanabilirsiniz:
+>
+> * Android 4 ve üzeri
+> * Windows 8.1 ve üzeri çalıştıran kayıtlı cihazlar
+> * Windows Phone 8.1 ve üzeri
+> * Windows 10 masaüstü çalıştıran kayıtlı cihazlar
+> * Windows 10 Mobile
+> * Windows 10 Holographic for Business
 
 ## <a name="vpn-connection-types"></a>VPN bağlantısı türleri
 
 VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsiniz:
 
-|Bağlantı türü|Android<br>Android iş profilleri|iOS|Mac OS|Windows Phone 8.1|Windows 8.1|Windows 10|
-|-|-|-|-|-|-|-|
-|Otomatik|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
-|Check Point Capsule VPN|Evet|Evet|Evet|Evet|Evet|Evet|
-|Cisco AnyConnect|Evet|Evet|Evet|Hayır|Hayır|Hayır|
-|SonicWall Mobile Connect|Evet|Evet|Evet|Evet|Evet|Evet|
-|F5 Edge Client|Evet|Evet|Evet|Evet|Evet|Evet|
-|Palo Alto Networks GlobalProtect|Hayır|Evet|Hayır|Hayır|Hayır|Evet|
-|Pulse Secure|Evet|Evet|Evet|Evet|Evet|Evet|
-|Cisco (IPSec)|Hayır|Evet|Hayır|Hayır|Hayır|Hayır|
-|Citrix|Evet (yalnızca Android)|Evet|Hayır|Hayır|Hayır|Evet|
-|IKEv2|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
-|L2TP|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
-|PPTP|Hayır|Hayır|Hayır|Hayır|Hayır|Evet|
-|Zscaler|Hayır|Evet|Hayır|Hayır|Hayır|Hayır|
-|Özel VPN|Hayır|Evet|Evet|Hayır|Hayır|Hayır|
+|Bağlantı türü|Platform|
+|-|-|
+|Otomatik|Windows 10|
+|Check Point Capsule VPN|-Android<br/>-Android kurumsal iş profilleri<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
+|Cisco AnyConnect|-Android<br/>-Android kurumsal iş profilleri<br/>-Android kurumsal cihaz sahibi (tam olarak yönetilen)<br/>-iOS<br/>-macOS|
+|Cisco (IPSec)|iOS|
+|Citrix SSO|-Android<br/>-Android kurumsal iş profilleri: [Uygulama yapılandırma ilkesini](app-configuration-policies-use-android.md) kullanma<br/>-iOS<br/>-Windows 10|
+|Özel VPN|-iOS<br/>-macOS|
+|F5 Access|-Android<br/>-Android kurumsal iş profilleri<br/>-Android kurumsal cihaz sahibi (tam olarak yönetilen)<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
+|IKEv2|Windows 10|
+|L2TP|Windows 10|
+|Palo Alto Networks GlobalProtect|-Android kurumsal iş profilleri: [Uygulama yapılandırma ilkesini](app-configuration-policies-use-android.md) kullanma<br/>-iOS<br/>-Windows 10|
+|PPTP|Windows 10|
+|Pulse Secure|-Android<br/>-Android kurumsal iş profilleri<br/>-Android kurumsal cihaz sahibi (tam olarak yönetilen)<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
+|SonicWall Mobile Connect|-Android<br/>-Android kurumsal iş profilleri<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
+|Zscaler|-Android kurumsal iş profilleri: [Uygulama yapılandırma ilkesini](app-configuration-policies-use-android.md) kullanma<br/>-iOS|
 
 > [!IMPORTANT]
 > Bir cihaza atanan VPN profillerini kullanmadan önce profil için geçerli VPN uygulamasını yüklemeniz gerekir. Uygulamayı Intune kullanarak atamanıza yardımcı olması için [Microsoft Intune'da uygulama yönetimi nedir?](app-management.md) makalesinde verilen bilgileri kullanabilirsiniz.  
 
 [Özel ayarları olan bir profil oluşturma](custom-settings-configure.md) konu başlığı altında verilen URI ayarlarını kullanarak özel VPN profilleri oluşturmayı öğrenin.
 
-## <a name="create-a-device-profile-containing-vpn-settings"></a>VPN ayarlarını içeren bir cihaz profili oluşturma
+## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
-3. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
-4. VPN profili için bir **Ad** ve **Açıklama** girin.
-5. **Platform** açılan listesinden, VPN ayarlarını uygulamak istediğiniz cihaz platformunu seçin. Şu anda, VPN cihaz ayarları için aşağıdaki platformlardan birini seçebilirsiniz:
-   - **Android**
-   - **Android kurumsal**
-   - **iOS**
-   - **macOS**
-   - **Windows Phone 8.1**
-   - **Windows 8.1 ve üzeri**
-   - **Windows 10 ve üzeri**
-6. **Profil** türü açılan listesinden **VPN**’yi seçin.
-7. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki konulardan birine gidin:
-   - [Android ve Android iş profili ayarları](vpn-settings-android.md)
-   - [iOS ayarları](vpn-settings-ios.md)
-   - [macOS ayarları](vpn-settings-macos.md)
-   - [Windows Phone 8.1 ayarları](vpn-settings-windows-phone-8-1.md)
-   - [Windows 8.1 ayarları](vpn-settings-windows-8-1.md)
-   - [Windows 10 ayarları](vpn-settings-windows-10.md) (Windows Holographic for Business dahil)
-8. İşiniz bittiğinde profilinizi **Oluşturun**
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da **cihaz yapılandırma** > **profilleri** > **Profil oluştur**' u seçin.
+2. Aşağıdaki özellikleri girin:
+
+    - **Ad**: Profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı **Şirket genelinde VPN profilidir**.
+    - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Platform**: Cihazlarınızın platformu seçin. Seçenekleriniz şunlardır:
+
+      - **Android**
+      - **Yalnızca Android kurumsal** > **cihaz sahibi**
+      - **Yalnızca Android kurumsal** > **iş profili**
+      - **iOS/ıpados**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 ve üzeri**
+      - **Windows 10 ve üzeri**
+
+    - **Profil türü**: **VPN**' yi seçin.
+
+3. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki makalelere bakın:
+
+    - [Android ayarları](vpn-settings-android.md)
+    - [Android kurumsal ayarları](vpn-settings-android-enterprise.md)
+    - [iOS/ıpados ayarları](vpn-settings-ios.md)
+    - [macOS ayarları](vpn-settings-macos.md)
+    - [Windows Phone 8.1 ayarları](vpn-settings-windows-phone-8-1.md)
+    - [Windows 8.1 ayarları](vpn-settings-windows-8-1.md)
+    - [Windows 10 ayarları](vpn-settings-windows-10.md) (Windows Holographic for Business dahil)
+
+4. İşiniz bittiğinde, profilinizi **oluşturun** .
 
 Profil oluşturulur ve profil listesinde görüntülenir. Bu profili gruplara atamak için bkz. [cihaz profillerini atama](device-profile-assign.md).
 
-## <a name="methods-of-securing-vpn-profiles"></a>VPN profillerini güvenli hale getirme yöntemleri
+## <a name="secure-your-vpn-profiles"></a>VPN profillerinizin güvenliğini sağlama
 
-VPN profilleri, farklı üreticilerden farklı bağlantı türleri ve farklı protokoller kullanabilir. Bu bağlantılar genellikle iki yöntemden biri kullanılarak güvenli hale getirilir.
+VPN profilleri, farklı üreticilerden farklı bağlantı türleri ve farklı protokoller kullanabilir. Bu bağlantılar genellikle aşağıdaki yöntemlerle güvenli hale getirilir.
 
 ### <a name="certificates"></a>Sertifikalar
 
@@ -104,3 +112,9 @@ Intune’da sertifika profillerini oluşturma ve kullanma hakkında daha fazla b
 ### <a name="user-name-and-password"></a>Kullanıcı adı ve parola
 
 Kullanıcı, kullanıcı adı ve parola girerek VPN sunucusunda kimliğini doğrular.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Profil oluşturulduğunda henüz herhangi bir işlem gerçekleştirmez. Sonra, [profili](device-profile-assign.md) bazı cihazlara atayın.
+
+Ayrıca, [Android](android-pulse-secure-per-app-vpn.md) ve [iOS](vpn-setting-configure-per-app.md) cihazlarında uygulama başına VPN 'ler oluşturabilir ve kullanabilirsiniz.

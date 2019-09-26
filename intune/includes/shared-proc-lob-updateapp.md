@@ -1,5 +1,13 @@
+---
+ms.openlocfilehash: 66abce3b3dd2adc645695c9aab5fe6729713bbdc
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "71301825"
+---
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.  
+1. [Azure Portal](https://portal.azure.com) oturum açın.  
 2. **Tüm Hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümündedir.  
 3. **İstemci uygulamaları** > **Uygulamalar**’ı seçin.
 4. Uygulama listesinde uygulamanızı bulun ve seçin.  

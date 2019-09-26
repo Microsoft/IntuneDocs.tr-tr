@@ -8,22 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: chrisbal
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e980049797ffc3c727d89c197037c019b94326a
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 118cd6e1d2506e5eb8d35ff8a27cc70f33a26697
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900137"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304633"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android Kurumsal ayrılmış cihazları için Intune kaydını ayarlama
 
@@ -54,9 +53,12 @@ Android Kurumsal ayrılmış cihaz yönetimini ayarlamak için aşağıdaki adı
 
 ### <a name="create-an-enrollment-profile"></a>Kayıt profili oluşturma
 
+> [!NOTE]
+> Belirtecin süresi dolmuşsa, onunla ilişkili profil, **cihaz kaydı** > **Android kaydı** > **şirkete ait adanmış cihazlarda**gösterilmez. Hem etkin hem de etkin olmayan belirteçlerle ilişkili tüm profilleri görmek için **filtre** ' ye tıklayın ve hem "etkin" hem de "etkin olmayan" ilke durumlarının onay kutularını işaretleyin. 
+
 Ayrılmış cihazlarınızı kaydedebilmek için bir kayıt profili oluşturmalısınız. Profil oluşturulduktan sonra size bir kayıt belirteci (rastgele dize) ve QR kodu sağlar. Cihazın Android işletim sistemi ve cihazın sürümüne bağlı olarak [ayrılmış cihazı kaydetmek](#enroll-the-dedicated-devices) için belirteci veya QR kodunu kullanabilirsiniz.
 
-1. [Intune portalına](https://portal.azure.com) gidip **Cihaz kaydı** > **Android kaydı** > **Şirkete ait ayrılmış cihazlar**'ı seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz kaydı** > **Android kaydı** > **şirkete ait adanmış cihazlar**' ı seçin.
 2. **Oluştur**’u seçin ve gerekli alanları doldurun.
     - **Ad**: Profili dinamik cihaz grubuna atarken kullanacağınız bir ad yazın.
     - **Belirtecin sona erme tarihi**: Belirtecin süresinin sona ereceği tarih. Google, en fazla 90 günü kabul eder.
@@ -66,7 +68,7 @@ Ayrılmış cihazlarınızı kaydedebilmek için bir kayıt profili oluşturmal�
 
 Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsiniz. Dinamik AAD cihaz gruplarını, belirli bir kayıt profili ile kaydedilmiş cihazları otomatik olarak dolduracak şekilde yapılandırmak için şu adımları izleyin:
 
-1. [Intune portalı](https://portal.azure.com)’na gidin ve **Gruplar** > **Tüm gruplar** > **Yeni grup**’u seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **gruplar** > **tüm gruplar** > **Yeni Grup**' ı seçin.
 2. **Grup** dikey penceresinde gerekli alanları aşağıdaki gibi doldurun:
     - **Grup türü**: Güvenlik
     - **Grup adı**: Kullanımı kolay bir ad yazın (Fabrika 1 cihazları gibi)
@@ -82,16 +84,14 @@ Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsin
 
 ### <a name="replace-or-remove-tokens"></a>Belirteçleri kaldırma veya değiştirme
 
-Belirteçleri veya QR kodlarını yenisiyle değiştirebilir ya da kaldırabilirsiniz.
-
 - **Belirteci değiştir**: Belirteci Değiştir’i kullanarak süresi dolmak üzere olan belirteç/QR kodu yerine yenisini oluşturabilirsiniz.
 - **Belirteci iptal et**: Belirtecin/QR kodunun süresinin hemen dolmasını sağlayabilirsiniz. Bu noktadan itibaren belirteç/QR kodu kullanılabilir olmaktan çıkar. Şu durumlarda bu seçeneği kullanmak isteyebilirsiniz:
-    - belirteci/QR kodunu yanlışlıkla yetkisiz taraflarla paylaşırsanız
-    - tüm kayıtları tamamlayıp belirtece/QR koduna artık ihtiyaç duymazsanız
+  - belirteci/QR kodunu yanlışlıkla yetkisiz taraflarla paylaşırsanız
+  - tüm kayıtları tamamlayıp belirtece/QR koduna artık ihtiyaç duymazsanız
 
 Bir belirteci/QR kodunu değiştirmek veya iptal etmek, önceden kaydedilmiş cihazları etkilemez.
 
-1. [Intune portalına](https://portal.azure.com) gidip **Cihaz kaydı** > **Android kaydı** > **Şirkete ait ayrılmış cihazlar**'ı seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz kaydı** > **Android kaydı** > **Coporate adanmış cihazlar**' ı seçin.
 2. Çalışmak istediğiniz profili seçin.
 3. **Belirteç**’i seçin.
 4. Belirteci değiştirmek için **Belirteci değiştir**’i seçin.
@@ -108,8 +108,8 @@ Android Kurumsal ayrılmış cihazlarına yalnızca Atama türü [Gerekli](apps-
 Yönetilen cihazlarda uygulamalar, uygulama geliştiricisi Google Play’e bir güncelleştirme yayımladığında otomatik olarak güncelleştirilir.
 
 Android Kurumsal ayrılmış cihazlarından bir uygulama kaldırmak için şunlardan birini yapabilirsiniz:
--   Gerekli uygulama dağıtımını silin.
--   Uygulama için bir kaldırma dağıtımı oluşturun.
+- Gerekli uygulama dağıtımını silin.
+- Uygulama için bir kaldırma dağıtımı oluşturun.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - [Android uygulamalarını dağıtma](apps-deploy.md)

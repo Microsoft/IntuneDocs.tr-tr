@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,14 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04b864689bce1814eba78dc2435905d4df82e8c0
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 2358ec854e9cc78cbc36570c45a96b98d2844f5d
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022674"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302579"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için Wi-Fi ayarları ekleme
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Belirli Wi-Fi ayarları ile bir profil oluşturabilir ve ardından bu profili iOS cihazlarınıza dağıtabilirsiniz. Microsoft Intune; ağınızda kimlik doğrulama, bir PKS veya SCEP sertifikası ekleme ve daha fazlası gibi pek çok özellik sunar.
 
@@ -34,6 +36,9 @@ Bu makalede bu ayarlar açıklanır.
 
 [Cihaz profili oluşturma](device-profile-create.md).
 
+> [!NOTE]
+> Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](ios-enroll.md).
+
 ## <a name="basic-profiles"></a>Temel profiller
 
 - **Wi-Fi türü**: **Temel**’i seçin.
@@ -44,7 +49,7 @@ Bu makalede bu ayarlar açıklanır.
 - **Güvenlik türü**: Wi-Fi ağına kimlik doğrulaması yapmak için güvenlik protokolünü seçin. Seçenekleriniz şunlardır:
 
   - **Açık (kimlik doğrulaması yok)** : Yalnızca ağ güvenli değilse bu seçeneği kullanın.
-  - **WPA/WPA2-Kişisel**: Parolayı **önceden paylaşılan anahtarda**girin. Kuruluşunuzun ağı ayarlandığında veya yapılandırıldığında bir parola veya ağ anahtarı da yapılandırılır. PSK değeri için bu parolayı veya ağ anahtarını girin.
+  - **WPA/WPA2-Kişisel**: **Önceden paylaşılan anahtar**parolayı girin. Kuruluşunuzun ağı ayarlandığında veya yapılandırıldığında bir parola veya ağ anahtarı da yapılandırılır. PSK değeri için bu parolayı veya ağ anahtarını girin.
   - **4**
 
 - **Ara sunucu ayarları**: Seçenekleriniz şunlardır:
@@ -74,18 +79,12 @@ Bu makalede bu ayarlar açıklanır.
     - **Sunucu güven** - **sertifikası sunucu adları**: Güvenilen sertifika yetkiliniz (CA) tarafından verilen sertifikalarda, kablosuz ağ erişim sunucularınıza kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin, veya `mywirelessserver`ekleyin `mywirelessserver.contoso.com` . Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
     - **Sunucu doğrulaması Için kök sertifika**: Var olan bir güvenilen kök sertifika profili seçin. Bu sertifika, istemcinin kablosuz ağ erişim sunucusunun sertifikasına güvenmesini sağlar.
 
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
     -  - İstemci**kimlik doğrulaması (kimlik sertifikası) için**istemci kimlik doğrulama istemci sertifikası: Cihaza de dağıtılan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
-
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
   - **EAP-TTLS**: Şunları da girin:
 
     - **Sunucu güven** - **sertifikası sunucu adları**: Güvenilen sertifika yetkiliniz (CA) tarafından verilen sertifikalarda, kablosuz ağ erişim sunucularınıza kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin, veya `mywirelessserver`ekleyin `mywirelessserver.contoso.com` . Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
     - **Sunucu doğrulaması Için kök sertifika**: Var olan bir güvenilen kök sertifika profili seçin. Bu sertifika, istemcinin kablosuz ağ erişim sunucusunun sertifikasına güvenmesini sağlar.
-
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
     - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:
 
@@ -96,8 +95,6 @@ Bu makalede bu ayarlar açıklanır.
 
       - **Sertifikalar**: Cihaza de dağıtılan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
 
-        Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
       - **Kimlik gizliliği (dış kimlik)** : Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
 
   - **LEAP**
@@ -107,15 +104,11 @@ Bu makalede bu ayarlar açıklanır.
     - **Sunucu güven** - **sertifikası sunucu adları**: Güvenilen sertifika yetkiliniz (CA) tarafından verilen sertifikalarda, kablosuz ağ erişim sunucularınıza kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin, veya `mywirelessserver`ekleyin `mywirelessserver.contoso.com` . Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
     - **Sunucu doğrulaması Için kök sertifika**: Var olan bir güvenilen kök sertifika profili seçin. Bu sertifika, istemcinin kablosuz ağ erişim sunucusunun sertifikasına güvenmesini sağlar.
 
-      Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
-
     - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:
 
       - **Kullanıcı adı ve parola**: Bağlantının kimliğini doğrulamak için kullanıcıdan bir Kullanıcı adı ve parola iste. 
 
       - **Sertifikalar**: Cihaza de dağıtılan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
-
-        Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
       - **Kimlik gizliliği (dış kimlik)** : Bir EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
 
@@ -124,12 +117,8 @@ Bu makalede bu ayarlar açıklanır.
   - **El ile**: **Proxy sunucu adresini** bir IP adresi olarak ve **bağlantı noktası numarasını**girin.
   - **Otomatik**: Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL’si** (örneğin `http://proxy.contoso.com`) değerini girin.
 
-Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil oluşturuldu ve profiller listesinde gösteriliyor.
-
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturuldu ancak hiçbir şey yapmıyor. Daha sonra [bu profili atayın](device-profile-assign.md).
+Profil oluşturuldu ancak hiçbir şey yapmıyor. Sonra, [Bu profili atayın](device-profile-assign.md)ve [durumunu izleyin](device-profile-monitor.md).
 
-## <a name="more-resources"></a>Daha fazla kaynak
-
-Diğer kullanılabilir platformlar dahil olmak üzere [Wi-Fi ayarlarına genel bakış](wi-fi-settings-configure.md).
+[Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [MacOS](wi-fi-settings-macos.md)ve [Windows 10](wi-fi-settings-windows.md) cihazlarında Wi-Fi ayarlarını yapılandırın.

@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/10/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c22822f34f426897549383df5e9c71b21b497a7e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e7b6b4525bd3374e1eac960f35c4ebd309c6cfd9
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391208"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71304818"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -33,40 +32,29 @@ Bu makalede, tüm cihazlarınızı ve özelliklerini Azure portalında nasıl g�
 
 ## <a name="view-the-device-details"></a>Cihaz ayrıntılarını görüntüleme
 
-1. [Azure Portal](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler**’i seçin, **Intune**’u filtreleyin ve **Microsoft Intune**’u seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Cihazlar** > **Tüm cihazlar**’a gidin ve listelenen cihazlarınızdan birini seçip ayrıntılarını görüntüleyin:
 
-   - **Genel Bakış**, cihazın adını gösterir ve kendi cihazını getir (KCG) cihazı olup olmadığı, ne zaman iade edildiği gibi bazı temel özellikleri listeler. Cihazda aşağıdaki işlemleri yapabilirsiniz:
+   - **Genel bakış** , cihaz adını gösterir ve kendi cihazını getir (KCG) cihazı, zaman içinde çek ve daha fazlasını belirtir. Cihazda şunları yapabilirsiniz:
       - [Devre Dışı Bırak](devices-wipe.md#retire)
-        - [Silme](devices-wipe.md#wipe)
-        - [Uzaktan kilitleme](device-remote-lock.md)
-        - [Cihazı eşitleme](device-sync.md)
-        - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
-        - [Yeniden başlatma](device-restart.md) (yalnızca Windows)
-        - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
-     - Uzaktan yardım oturumu başlatma
+      - [Silme](devices-wipe.md#wipe)
+      - [Uzaktan kilitleme](device-remote-lock.md)
+      - [Cihazı eşitleme](device-sync.md)
+      - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
+      - [Yeniden başlatma](device-restart.md) (yalnızca Windows)
+      - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
+      - Uzaktan yardım oturumu başlatma
    - **Özellikler**’i kullanarak [oluşturduğunuz bir cihaz kategorisini](device-group-mapping.md) atayabilir ve cihazın sahipliğini kişisel veya şirket olarak değiştirebilirsiniz.
-   - **Donanımda** cihaz hakkında pek çok bilgi bulunur. Örneğin cihaz kimliği, işletim sistemi ve sürümü, depolama alanı, model ve üretici, koşullu erişim ayarları vb.
-   - **Bulunan uygulamalar**, Intune’un cihazda yüklü olduğunu bulduğu tüm uygulamaları ve uygulama sürümlerini listeler. Uygulama listesini bir .csv dosyası olarak **Dışarı Aktarabilirsiniz**. Bu liste, 7 günde bir güncelleştirilir.
+   - **Donanım** cihaz kimliği, işletim sistemi ve sürümü, depolama alanı ve daha fazla ayrıntı gibi cihazla ilgili birçok ayrıntıyı içerir.
+   - **Bulunan uygulamalar**, Intune’un cihazda yüklü olduğunu bulduğu tüm uygulamaları ve uygulama sürümlerini listeler. Daha fazla bilgi için bkz. [Intune bulunan uygulamalar](app-discovered-apps.md).
    - **Cihaz uyumluluğu**, atanmış tüm uyumluluk ilkelerini ve cihazın uyumlu olup olmadığını listeler.
    - **Cihaz yapılandırması**, cihaza atanmış tüm yapılandırma ilkelerini ve ilkenin başarılı olup olmadığını gösterir.
 
-Intune, yalnızca şirkete ait cihazlarda uygulama listesi toplar. Kişisel cihazlarda uygulamalar denetlenmez. Windows 10 bilgisayarlarda, şirkete ait cihazlar için yalnızca modern uygulamalar listelenir. Intune, cihazdaki Win32 uygulamalar hakkında bilgi toplamaz. Cihazlarda kullanılan operatöre bağlı olarak, tüm uygulamalar toplanamayabilir.
-
-|Platform|Kişiye ait cihazlar için|Şirketinize ait cihazlar için|  
-|--------------|---------------------------------|--------------------------------|  
-|Windows 10 (Configuration Manager istemcisi olmadan)|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|
-|Windows 8.1 (Configuration Manager istemcisi olmadan)|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|  
-|Windows Phone 8|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|  
-|Windows RT|Yalnızca yönetilen uygulamalar|Yalnızca yönetilen uygulamalar|  
-|iOS|Yalnızca yönetilen uygulamalar|Cihazda yüklü tüm uygulamaları|
-|Mac OS|Cihazda yüklü tüm uygulamaları|Cihazda yüklü tüm uygulamaları|  
-|Android|Yalnızca yönetilen uygulamalar|Cihazda yüklü tüm uygulamaları|  
-|Android Kurumsal|Yalnızca yönetilen uygulamalar|Yalnızca iş profilinde yüklü uygulamalar|  
-
 ## <a name="hardware-device-details"></a>Donanım cihazı durumu
-Cihazlar tarafından kullanılan operatöre bağlı olarak, tüm ayrıntıları toplanabilir
+Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntılar toplanmayabilir
+
+> [!Note]  
+> Donanım ve yazılım envanteri, Intune hizmetinde her 7 günde bir yenilenir.
 
 |Ayrıntı|Açıklama|Platform| 
 |--------------|----------------------|----|  
@@ -76,10 +64,12 @@ Cihazlar tarafından kullanılan operatöre bağlı olarak, tüm ayrıntıları 
 |Intune Cihaz Kimliği|Cihazı benzersiz şekilde tanımlayan GUID.|Windows, iOS|
 |Seri numarası|Üreticisinden cihazın seri numarası.|Windows, iOS|
 |Paylaşılan cihaz|**Evet** ise cihaz birden fazla kullanıcı tarafından paylaşılır.|Windows, iOS|
-|Kullanıcı onaylı kayıt|**Evet** ise cihazda yöneticilerin belirli cihaz güvenlik ayarlarını yönetmesini sağlayan kullanıcı onaylı kayıt vardır.|Windows, iOS|
+|Kullanıcı onaylı kayıt|Yanıt **Evet**ise, cihazın cihazdaki belirli güvenlik ayarlarını yönetmesine olanak tanıyan Kullanıcı onaylı kaydı vardır.|Windows, iOS|
 |İşletim sistemi|Cihazda kullanılan işletim sistemi.|Windows, iOS|
 |İşletim sistemi sürümü|Cihazdaki işletim sistemi sürümü.|Windows, iOS|
 |İşletim sistemi dili|Cihazdaki işletim sisteminin dil kümesi.|Windows, iOS|
+|Yapı numarası|İşletim sisteminin yapı numarası.|Android|
+|Güvenlik Düzeltme eki düzeyi|Cihaz için güvenlik düzeltme eki düzeyi.|Android|
 |Toplam depolama alanı|Cihazdaki toplam depolama alanı (gigabayt olarak).|Windows, iOS|
 |Boş depolama alanı|Cihazdaki kullanılmayan depolama alanı (gigabayt olarak).|Windows, iOS|
 |IMEI|Cihazın Uluslararası Mobil Ekipman Tanımlayıcısı.|Windows, iOS, Android|
@@ -95,11 +85,12 @@ Cihazlar tarafından kullanılan operatöre bağlı olarak, tüm ayrıntıları 
 |Son iletişim|Cihazın Intune’a son bağlandığı tarih ve saat.|Windows, iOS, Android|
 |Etkinleştirme kilidi atlama kodu|Etkinleştirme kilidini atlamak için kullanılabilecek kod.|Windows, iOS, Android|
 |Azure AD kayıtlı|**Evet** ise cihaz Azure Directory’ye kayıtlıdır.|Windows, iOS, Android|
+|Intune kayıtlı|Yanıt **Evet**ise, cihaz Intune 'a kaydedilir|Windows, iOS, Android|
 |Uyumluluk|Cihazın uyumluluk durumu.|Windows, iOS, Android|
 |EAS etkin|**Evet** ise cihaz Exchange posta kutusu ile eşitlenir.|Windows, iOS, Android|
 |EAS etkinleştirme kimliği|Cihazın Exchange ActiveSync tanımlayıcısı.|Windows, iOS, Android|
 |Denetimli|**Evet** ise yöneticiler cihaz üzerinde gelişmiş denetime sahiptir.|Windows, iOS, Android|
-|Şifreli|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
+|Memiştir|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
 
 
 

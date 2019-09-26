@@ -1,14 +1,13 @@
 ---
-title: Windows bilgi Koruması (WIP) uygulama koruma İlkesi
+title: Windows Information Protection (WıP) uygulama koruma ilkesi
 titleSuffix: Microsoft Intune
 description: Microsoft Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8aaa94428a5a8606a7ba05f0661e96600f24e2d4
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: 869491098afc9e68ea1bbcb21bf6e7720e80564c
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587425"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "71303219"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -37,15 +36,15 @@ Bir WIP ilkesi eklerken kullanılan birkaç kavramı anlamanız gerekir:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>İzin verilen ve muaf uygulamaların listesi
 
--   **Korumalı uygulamalar:** Bu uygulamalar, bu ilkeye bağlı kalması gereken uygulamalardır.
+- **Korumalı uygulamalar:** Bu uygulamalar, bu ilkeye bağlı kalması gereken uygulamalardır.
 
--   **Muaf uygulamalar:** Bu uygulamalar bu ilkeden muaftır ve kurumsal verilere Kısıtlamasız erişebilir.
+- **Muaf tutulan uygulamalar:** Bu uygulamalar bu ilkeden muaf tutulur ve şirket verilerine kısıtlama olmadan erişebilir.
 
 ### <a name="types-of-apps"></a>Uygulama türleri
 
--   **Önerilen uygulamalar:** Önceden doldurulmuş uygulama listesi (çoğunlukla Microsoft Office) uygulamaların kolayca izin ilkesine içeri aktarabilir.
--   **Store uygulamaları için:** Herhangi bir uygulamayı Windows Mağazası'ndan ilkeye ekleyebilirsiniz.
--   **Windows Masaüstü uygulamaları:** (Örneğin, .exe, .dll) ilkeye tüm geleneksel Windows Masaüstü uygulamalarını ekleyebilirsiniz
+- **Önerilen uygulamalar:** İlkeye kolayca aktarmanıza izin veren uygulamalar (çoğunlukla Microsoft Office) için önceden doldurulmuş bir liste.
+- **Mağaza uygulamaları:** Windows Mağazası 'ndan herhangi bir uygulamayı ilkeye ekleyebilirsiniz.
+- **Windows Masaüstü uygulamaları:** İlkeye geleneksel Windows Masaüstü uygulamaları ekleyebilirsiniz (örneğin,. exe,. dll)
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -56,8 +55,8 @@ Bir WIP uygulama koruma ilkesi oluşturabilmeniz için önce MAM sağlayıcısı
 
 Ayrıca aşağıdaki lisans ve güncelleştirmeye de sahip olmanız gerekir:
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) lisansı
--   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
+- [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) lisansı
+- [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 
 
@@ -77,11 +76,11 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 4. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
 5. **İlke ekle** dikey penceresini görüntülemek için **İlke ekle**’yi seçin.
 6. Aşağıdaki değerleri ekleyin:
-    - **Adı:** (Yeni ilkeniz için gereklidir) bir ad yazın.
-    - **Açıklama:** (İsteğe bağlı) Bir açıklama yazın.
-    - **Platform:** Seçin **Windows 10** uygulama koruma ilkesi için desteklenen platform olarak.
-    - **Kayıt durumu:** Seçin **kayıtsız** ilkeniz için kayıt durumu olarak.
-7.  **Oluştur**’u seçin. İlke oluşturulur ve **Uygulama koruma ilkeleri** dikey penceresindeki tabloda görüntülenir.
+    - **Ada** Yeni ilkeniz için bir ad (gerekli) yazın.
+    - **Açıklama:** Seçim Bir açıklama yazın.
+    - **Platformunun** Uygulama koruma ilkeniz için desteklenen platform olarak **Windows 10** ' ı seçin.
+    - **Kayıt durumu:** İlkenizin kayıt durumu olarak **kayıt olmadan** öğesini seçin.
+7. **Oluştur**’u seçin. İlke oluşturulur ve **Uygulama koruma ilkeleri** dikey penceresindeki tabloda görüntülenir.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Korunan uygulamalar listenize önerilen uygulamalar eklemek için
 
@@ -150,11 +149,11 @@ WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiket
 
 ### <a name="add-a-protection-mode"></a>Koruma modu ekleme
 
-1.  **Uygulama ilkesi** dikey penceresinden, ilkenizin adını, ardından **Gerekli ayarlar**’ı seçin.
+1. **Uygulama ilkesi** dikey penceresinden, ilkenizin adını, ardından **Gerekli ayarlar**’ı seçin.
 
     ![Öğrenme modu bölmesinin ekran görüntüsü](./media/learning-mode-sc1.png)
 
-1.  Bir ayar seçin ve ardından **Kaydet**’i seçin.
+1. Bir ayar seçin ve ardından **Kaydet**’i seçin.
 
 ### <a name="use-wip-learning"></a>WIP Öğrenme’yi kullanma
 
@@ -188,11 +187,11 @@ Bu uygulama koruma ilkesi seçeneği, Windows Bilgi Koruması ilkesinin **Geliş
 
 WIP uygulama koruma ilkenizi oluşturduktan sonra, bu ilkeyi MAM’yi kullanarak kuruluşunuza dağıtmanız gerekir.
 
-1.  **Uygulama ilkesi** dikey penceresinde, yeni oluşturduğunuz uygulama koruma ilkesini ve **Kullanıcı grupları** > **Kullanıcı grubu ekle**’yi seçin.
+1. **Uygulama ilkesi** dikey penceresinde, yeni oluşturduğunuz uygulama koruma ilkesini ve **Kullanıcı grupları** > **Kullanıcı grubu ekle**’yi seçin.
 
     Azure Active Directory’nizdeki tüm güvenlik gruplarından oluşan kullanıcı grupları listesi, **Kullanıcı grubu ekle** dikey penceresinde açılır.
 
-2.  İlkenizin uygulanmasını istediğiniz grubu seçin, ardından ilkeyi dağıtmak için **Seç** öğesini belirleyin.
+2. İlkenizin uygulanmasını istediğiniz grubu seçin, ardından ilkeyi dağıtmak için **Seç** öğesini belirleyin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -1,13 +1,13 @@
 ---
-title: Intune ile uygulama tabanlı koşullu erişim ilkesi ayarlama
+title: Intune ile uygulama tabanlı koşullu erişim ilkesini ayarlama
 titleSuffix: Microsoft Intune
-description: Intune ile uygulama tabanlı koşullu erişim ilkesi oluşturmayı öğrenin.
+description: Intune ile uygulama tabanlı bir koşullu erişim ilkesi oluşturmayı öğrenin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
-ms.prod: ''
+ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,36 +17,36 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1514fe9dfcd09e2b77967b0fed8c36fb7a06634f
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 6bb07f1ddfcbe05f8039f934725c8122ecd96590
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896040"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71303879"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim ilkeleri ayarlama
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Onaylı uygulamalar listesinin parçası olan uygulamalar için uygulama tabanlı koşullu erişim ilkeleri ayarlayın. Liste, Microsoft tarafından sınanan onaylı uygulamalardan oluşur.
+Onaylanan uygulamalar listesinin parçası olan uygulamalar için uygulama tabanlı koşullu erişim ilkeleri ayarlayın. Liste, Microsoft tarafından sınanan onaylı uygulamalardan oluşur.
 
 > [!IMPORTANT]
-> Bu makale uygulama tabanlı bir koşullu erişim ilkesini ekleme konusunda size adım adım yol gösterir. Onaylı uygulamalar listesinden SharePoint Online, Microsoft Teams ve Microsoft Exchange Online gibi uygulamaları eklerken de aynı adımları kullanabilirsiniz.
+> Bu makale, uygulama tabanlı bir koşullu erişim ilkesi ekleme adımlarında size yol gösterir. Onaylı uygulamalar listesinden SharePoint Online, Microsoft Teams ve Microsoft Exchange Online gibi uygulamaları eklerken de aynı adımları kullanabilirsiniz.
 
-## <a name="create-app-based-conditional-access-policies"></a>Uygulama tabanlı koşullu erişim ilkesi oluşturma
+## <a name="create-app-based-conditional-access-policies"></a>Uygulama tabanlı koşullu erişim ilkeleri oluşturma
 Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır. Başka bir deyişle ilkeleri yapılandırmak için Intune ile Azure AD arasında geçiş yapmanız gerekmez.
 
 > [!IMPORTANT]
-> Intune portalından koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansınız olması gerekir.
+> Intune portalından koşullu erişim ilkeleri oluşturmak için bir Azure AD Premium lisansa sahip olmanız gerekir.
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>Uygulama tabanlı bir koşullu erişim ilkesi oluşturmak için
 
 > [!IMPORTANT]
-> Uygulama tabanlı koşullu erişim ilkelerini kullanmadan önce uygulamalarınıza [Intune uygulama koruma ilkeleri](app-protection-policies.md) uygulamanız gerekir.
+> Uygulama tabanlı koşullu erişim ilkelerini kullanmadan önce uygulamalarınıza [Intune uygulama koruma ilkelerinin](app-protection-policies.md) uygulanması gerekir.
 
-1. **Intune Panosu**’nda, **Koşullu erişim**’i seçin.
+1. **Intune panosunda** **koşullu erişim**' i seçin.
 
-2. **İlkeler** bölmesinde **Yeni ilke**’yi seçerek yeni uygulama tabanlı koşullu erişim ilkenizi oluşturun.
+2. **İlkeler** bölmesinde yeni **ilke** ' yi seçerek yeni uygulama tabanlı koşullu erişim ilkenizi oluşturun.
 
 4. İlke için bir ad girip **Atamalar** kısmından uygun ayarları yapılandırdıktan sonra **Erişim denetimleri** bölümünden **Ver**’i seçin.
 
@@ -55,7 +55,7 @@ Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*
 ## <a name="next-steps"></a>Sonraki adımlar
 [Modern kimlik doğrulaması olmayan uygulamaları engelleme](app-modern-authentication-block.md)
 
-### <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uygulama koruma ilkeleriyle uygulama verilerini koruma](app-protection-policies.md)
 [Azure Active Directory’de Koşullu Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

@@ -6,24 +6,23 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
-ms.reviewer: damionw
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 6e90bd41a59975a85350229dc517aa03fd853f19
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900171"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71302592"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
@@ -48,9 +47,17 @@ Windows cihaz kaydını nasıl basit hale getirebileceğinizi iki faktör belirl
 
 Otomatik kayıt kullanabilen kuruluşlar, Windows Yapılandırma Tasarımcısı uygulamasını kullanarak [cihazları toplu kaydetmeyi](windows-bulk-enroll.md) de yapılandırabilirler.
 
+## <a name="device-enrollment-prerequisites"></a>Cihaz kaydı önkoşulları
+
+Yöneticinin yönetim için cihazları Intune 'a kaydedebilmesi için, lisansların yönetici hesabına zaten atanmış olması gerekir. [Cihaz kaydı için lisans atama hakkında bilgi edinin](licenses-assign.md)
+
 ## <a name="multi-user-support"></a>Çok kullanıcı desteği
 
-Intune, Windows 10 Oluşturucu güncelleştirmesi çalıştıran ve Azure Active Directory etki alanına katılmış cihazlar için çoklu yönetimi destekler. Standart kullanıcılar Azure AD kimlik bilgileriyle oturum açtığında, kullanıcı adlarına atanmış uygulama ve ilkeler alırlar. Kullanıcılar uygulama yükleme gibi self servis senaryoları için Şirket Portalı'nı şu anda kullanamamaktadır.
+Intune, her ikisini de içeren cihazlarda birden çok kullanıcıyı destekler:
+- Windows 10 Creator 'ın güncelleştirmesini çalıştırma
+- Azure Active Directory etki alanına katılmış.
+
+Standart kullanıcılar Azure AD kimlik bilgileriyle oturum açtığında, kullanıcı adlarına atanmış uygulama ve ilkeler alırlar. Yalnızca cihazın [birincil kullanıcısı](find-primary-user.md) , uygulama yükleme ve cihaz eylemleri gerçekleştirme gibi self servis senaryoları için şirket portalı kullanabilir (kaldırma, sıfırlama). Birincil Kullanıcı atanmamış paylaşılan Windows 10 cihazlarında, Şirket Portalı kullanılabilir uygulamaları yüklemek için yine de kullanılabilir.
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
@@ -79,7 +86,7 @@ Contoso DNS yöneticisinin aşağıdaki CNAME'leri oluşturması gerekir:
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 saat|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 saat|
-|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 saat|
+|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 saat|
 
 `EnterpriseEnrollment-s.manage.microsoft.com` – E-postanın etki alanı adından etki alanını tanıma ile Intune hizmetine yeniden yönlendirmeyi destekler
 

@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/05/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38763d5c16d5cba36220c03e9d74b30a465d752b
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: f6eca8e2f4544255f67d3a4e0e1673e415123967
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59899610"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71304623"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune özel profili kullanarak Android cihazları için uygulama başına VPN profili oluşturma
 
@@ -38,11 +37,10 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 > Bu profil için yalnızca Pulse Secure ve Citrix bağlantı türleri desteklenir.
 
 
-## <a name="step-1-create-a-vpn-profile"></a>Adım 1: VPN profili oluşturma
+## <a name="step-1-create-a-vpn-profile"></a>1\. adım: VPN profili oluşturma
 
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 2. Profil listesi bölmesinde **Profil oluştur**’u seçin.
@@ -53,10 +51,9 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 
 VPN profilini oluştururken, belirttiğiniz **Bağlantı Adı** değerini bir yere not edin. Bu ad sonraki adımda gerekli olacaktır. Örneğin, **UygulamaVpnProfilim**.
 
-## <a name="step-2-create-a-custom-configuration-policy"></a>Adım 2: Özel yapılandırma ilkesi oluşturma
+## <a name="step-2-create-a-custom-configuration-policy"></a>2\. adım: Özel yapılandırma ilkesi oluşturma
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 3. Profiller bölmesinde **Profil Oluştur**’a tıklayın.
@@ -75,14 +72,14 @@ VPN profilini oluştururken, belirttiğiniz **Bağlantı Adı** değerini bir ye
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Uygulama listenizi kara liste veya beyaz liste olarak ayarlama (isteğe bağlı)
   **KARA LİSTE** değerini kullanarak, VPN bağlantısını *kullanamayacak* uygulamaların listesini belirtebilirsiniz. Diğer tüm uygulamalar VPN üzerinden bağlanır.
 Alternatif olarak, **BEYAZ LİSTE** değerini kullanabilir ve VPN bağlantısını *kullanabilecek* uygulamaların listesini belirtebilirsiniz. Listede yer almayan uygulamalar VPN üzerinden bağlanmaz.
-  1.    **Özel OMA-URI Ayarları** bölmesinde **Ekle**’yi seçin.
-  2.    Bir ayar adı girin.
-  3.    **OMA-URI** için şu dizeyi kullanın: **./Vendor/MSFT/VPN/Profile/*Ad*/Mode**; burada *Ad*, 1. Adım’da not ettiğiniz VPN profili adıdır. Bizim örneğimizde, dize şöyle olabilir: **./Vendor/MSFT/VPN/Profile/UygulamamVpnProfili/Mode**.
-  4.    **Veri türü** olarak **Dize**’yi belirtin.
-  5.    **Değer** alanı için **KARA LİSTE** veya **BEYAZ LİSTE** girin.
+  1. **Özel OMA-URI Ayarları** bölmesinde **Ekle**’yi seçin.
+  2. Bir ayar adı girin.
+  3. **OMA-URI** için şu dizeyi kullanın: **./Vendor/MSFT/VPN/Profile/*Ad*/Mode**; burada *Ad*, 1. Adım’da not ettiğiniz VPN profili adıdır. Bizim örneğimizde, dize şöyle olabilir: **./Vendor/MSFT/VPN/Profile/UygulamamVpnProfili/Mode**.
+  4. **Veri türü** olarak **Dize**’yi belirtin.
+  5. **Değer** alanı için **KARA LİSTE** veya **BEYAZ LİSTE** girin.
 
 
 
-## <a name="step-3-assign-both-policies"></a>Adım 3: Her iki ilkeyi de atama
+## <a name="step-3-assign-both-policies"></a>3\. adım: Her iki ilkeyi de atama
 
 Gerekli kullanıcılara veya cihazlara her iki profili de atamak için, [Cihaz profillerini atama](device-profile-assign.md) başlığı altında verilen yönergeleri kullanın.

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure’da iOS veya macOS cihaz profili oluşturma | Microsoft Docs
-description: Ekleme veya bir iOS veya macOS cihaz profili oluşturma ve ardından Intune AirPrint, giriş ekranı, uygulama bildirimleri, paylaşılan cihaz, çoklu oturum açma ve web içeriği filtresi ayarları düzeni için ayarları yapılandırın.
+description: İOS veya macOS cihaz profili ekleyin veya oluşturun ve ardından Microsoft Intune ' deki AirPrint, ana ekran düzeni, uygulama bildirimleri, paylaşılan cihaz, çoklu oturum açma ve Web içerik filtresi ayarlarını yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,51 +15,212 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5c85c936e49c277b54b542f372f97b247d6a37
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: eefc444e4323db6677ee274d1ba28e8179e43df2
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373815"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71303598"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune’da iOS veya macOS cihaz özelliği ayarları ekleme
 
-Intune birçok özellik içerir ve yardımcı Yöneticiler ayarları iOS ve macOS cihazlarını denetleyebilirsiniz. Örneğin, yöneticiler şunları yapabilir:
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-- Kullanıcılar, ağınızdaki AirPrint yazıcıları erişmesine
-- Uygulama ve klasörleri yeni sayfalar ekleme dahil olmak üzere ana ekrana Ekle
-- Varsa ve uygulama içi bildirimler gösterilen nasıl seçin
-- Kilit ekranında bir ileti veya varlık etiketi, paylaşılan cihazlar için özellikle göstermek için yapılandırma
-- Kullanıcıların kimlik bilgilerini uygulamalar arasında paylaşmak için güvenli çoklu oturum açma deneyimini sağlamak.
-- Yetişkin dili kullanın ve izin veren veya özel web sitelerini engelleme Filtresi web siteleri
+Intune, yöneticilerin iOS ve macOS cihazlarını denetlemesine yardımcı olan birçok özellik ve ayarı içerir. Örneğin, yöneticiler şunları yapabilir:
 
-Bu özellikler, Intune'da bulunan ve yönetici tarafından yapılandırılabilir. Intune kullanır "yapılandırma profillerini" oluşturabilir ve kuruluşunuzun ihtiyaçları için bu ayarları özelleştirebilirsiniz. Bu özellikler bir profilde ekledikten sonra daha sonra anında iletme veya kuruluşunuzda iOS ve macOS cihazlarına profil dağıtmak.
+- Kullanıcılarınızın ağınızdaki AirPrint yazıcılara erişmesine izin ver
+- Yeni sayfa ekleme dahil olmak üzere giriş ekranına uygulama ve klasör ekleme
+- Uygulama bildirimlerinin gösterilip gösterilmeyeceğini ve nasıl gösterileceğini seçin
+- Kilit ekranını, özellikle paylaşılan cihazlar için bir ileti veya varlık etiketi gösterecek şekilde yapılandırın
+- Kullanıcılara kimlik bilgilerini uygulamalar arasında paylaşmak için güvenli bir çoklu oturum açma deneyimi sağlayın
+- Yetişkinlere yönelik dil kullanan ve belirli Web sitelerine izin veren veya engelleyen web sitelerini filtrele
 
-Bu makalede bir cihaz yapılandırma profilinin nasıl oluşturulacağını gösterir. İçin tüm kullanılabilir ayarlar da görebilirsiniz [iOS](ios-device-features-settings.md) ve [macOS](macos-device-features-settings.md) cihazlar.
+Intune, kuruluşunuzun ihtiyaçlarına göre bu ayarları oluşturmak ve özelleştirmek için "yapılandırma profillerini" kullanır. Bu özellikleri bir profile ekledikten sonra, profili kuruluşunuzdaki iOS ve macOS cihazlarına gönderirsiniz veya dağıtabilirsiniz.
+
+Bu makalede yapılandırabileceğiniz farklı özellikler açıklanmakta ve bir cihaz yapılandırma profili nasıl oluşturacağınız gösterilmektedir. [İOS](ios-device-features-settings.md) ve [MacOS](macos-device-features-settings.md) cihazları için kullanılabilir tüm ayarları da görebilirsiniz.
+
+## <a name="airprint"></a>AirPrint
+
+AirPrint, cihazların bir kablosuz ağ üzerinden dosyalara yazdırmasını sağlayan bir Apple özelliğidir. Intune 'da cihazlara AirPrint bilgilerini ekleyebilirsiniz.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. macOS 'ta iOS ve [AirPrint](macos-device-features-settings.md#airprint) [üzerinde AirPrint](ios-device-features-settings.md#airprint) .
+
+AirPrint hakkında daha fazla bilgi için Apple 'ın Web sitesinde [AirPrint hakkında](https://support.apple.com/HT201311) bölümüne bakın.
+
+Şunun için geçerlidir:
+
+- iOS 7,0 ve üzeri
+- ıpados 13,0 ve üzeri
+- macOS 10,10 ve üzeri
+
+## <a name="app-notifications"></a>Uygulama bildirimleri
+
+İOS ve iPad cihazlarınızdaki uygulamaların nasıl bildirim alacağını seçin. Örneğin, Intune 'dan bildirim merkezinde göstermek, kilit ekranında göstermek veya ses çalmak için uygulama bildirimleri gönderin.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde uygulama bildirimleri](ios-device-features-settings.md#app-notifications).
+
+Bu özellik hakkında daha fazla bilgi için bkz. Apple 'ın Web sitesindeki [Bildirimler](https://developer.apple.com/notifications/) .
+
+Şunun için geçerlidir:
+
+- iOS 9,3 ve üzeri
+- ıpados 13,0 ve üzeri
+
+## <a name="associated-domains"></a>İlişkili etki alanları
+
+İlişkili etki alanları `contoso.com`, ve uygulamalarınız gibi etki alanlarınız arasında bir ilişki oluşturmanıza olanak sağlar. Bu özellik şunları yapmanıza olanak sağlar:
+
+- Kuruluşunuzdaki uygulamalar ve Web siteleri arasında veri paylaşma ve oturum açma kimlik bilgileri.
+- Çoklu oturum açma uygulaması uzantısı, evrensel bağlantılar ve parola otomatik doldurma gibi Web sitenize dayalı uygulama özelliklerini kullanın.
+
+  Örneğin, parola otomatik olarak, uygulamanızla ilişkili Web siteleri için parola gibi kimlik bilgilerini önermeye izin vermek üzere, ilişkili bir etki alanı oluşturun.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [macOS 'Ta ilişkili etki alanları](macos-device-features-settings.md#associated-domains).
+
+Bu özellik hakkında daha fazla bilgi için bkz. Apple 'ın Web sitesinde [bir uygulamanın Ilişkili etki alanlarını ayarlama](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains) .
+
+Şunun için geçerlidir:
+
+- macOS 10,15 ve üzeri
+
+## <a name="home-screen-layout"></a>Giriş ekranı düzeni
+
+Bu ayarlar, iOS ve ıpados cihazlarında yerleştirme ve giriş ekranlarındaki uygulama düzeni ve klasörlerini yapılandırır. Şunları yapabilirsiniz:
+
+- Ekrana uygulama veya klasör eklemek için **yerleştirme** ayarlarını kullanın. Örneğin, cihaz Dock 'da Safari ve posta uygulamasını görüntüleyin.
+- Giriş ekranında görünmesini istediğiniz **sayfaları** ve her sayfada görünmesini istediğiniz uygulamaları ekleyin. Örneğin, bir **contoso** sayfası ekleyin ve Ayarlar uygulamasını bu sayfaya ekleyin.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS 'Ta giriş ekranı düzeni](ios-device-features-settings.md#home-screen-layout).
+
+Şunun için geçerlidir:
+
+- iOS 9,3 ve üzeri
+- ıpados 13,0 ve üzeri
+
+## <a name="lock-screen-message"></a>Kilit ekranı iletisi
+
+Oturum açma penceresinde ve kilit ekranında özel bir ileti veya metin göstermek için bu ayarları kullanın. Örneğin, bir "kaybolursa, return to..." girebilirsiniz. ileti ve varlık etiketi bilgilerini göster.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde kilit ekranı ileti ayarları](ios-device-features-settings.md#lock-screen-message).
+
+Kilit ekranı Iletisi hakkında daha fazla bilgi için bkz. Apple 'ın Web sitesinde [Lockscreenmessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) .
+
+Şunun için geçerlidir:
+
+- iOS 9,3 ve üzeri
+- ıpados 13,0 ve üzeri
+
+## <a name="login-items"></a>Oturum açma öğeleri
+
+Kullanıcılar cihazlarda oturum açtıklarında açık olan uygulamaları, özel uygulamaları, dosyaları ve klasörleri seçmek için bu özelliği kullanın. 
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [macOS 'Ta oturum açma öğeleri](macos-device-features-settings.md#login-items).
+
+Şunun için geçerlidir:
+
+- macOS 10,13 ve üzeri
+
+## <a name="login-window"></a>Oturum açma penceresi
+
+Oturum açmadan önce kullanıcılara sunulan oturum açma ekranının ve işlevlerinin görünümünü denetleyin. Örneğin, özel bir iletiyle bir başlık ekleyin, uyku düğmesinin gösterilip gösterilmeyeceğini ve daha fazlasını yapın.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [macOS 'Ta oturum açma penceresi](macos-device-features-settings.md#login-window).
+
+Şunun için geçerlidir:
+
+- macOS 10,7 ve üzeri
+
+## <a name="single-sign-on"></a>Çoklu oturum açma
+
+İş Kolu (LOB) uygulamalarının çoğunda güvenliği desteklemek için belirli bir düzeyde kullanıcı kimlik doğrulaması gereklidir. Çoğu durumda, kimlik doğrulaması kullanıcının aynı kimlik bilgilerini tekrar tekrar girmesini gerektirir. Geliştiriciler, Kullanıcı deneyimini geliştirmek için çoklu oturum açma (SSO) kullanan uygulamalar oluşturabilir. Çoklu oturum açma kullanımı, bir kullanıcının kimlik bilgilerini girmesi gereken kaç kez azaltığını azaltır.
+
+Çoklu oturum açma 'yı kullanmak için, şunları yaptığınızdan emin olun:
+
+- Cihazdaki çoklu oturum açma bölümünde Kullanıcı kimlik bilgileri deposunu aramak için kodlanmış bir uygulama.
+- Intune'u iOS cihazında çoklu oturum açma için yapılandırma.
+
+![Çoklu Oturum Açma bölmesi](./media/sso-blade.png)
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS 'Ta çoklu oturum açma](ios-device-features-settings.md#single-sign-on).
+
+Şunun için geçerlidir:
+
+- iOS 7,0 ve üzeri
+- ıpados 13,0 ve üzeri
+
+## <a name="single-sign-on-app-extension"></a>Çoklu oturum açma uygulama uzantısı
+
+Bu ayarlar iOS, ıpados ve macOS cihazlarınız için çoklu oturum açma (SSO) sağlayan bir uygulama uzantısı yapılandırır. Çoğu Iş kolu (LOB) uygulamaları ve kuruluş web siteleri, bazı düzeyde güvenli Kullanıcı kimlik doğrulaması gerektirir. Çoğu durumda, kimlik doğrulama kullanıcıların aynı kimlik bilgilerini tekrar tekrar girmesini gerektirir. SSO, kullanıcılara kimlik bilgilerini bir kez girdikten sonra uygulamalara ve Web sitelerine erişim sağlar. Oturum açtıktan sonra kullanıcılar uygulamalara ve Web sitelerine otomatik olarak erişebilir veya erişim kazanmak için yüz KIMLIĞI, Touch ID veya Apple geçiş kodunu kullanabilir.
+
+Intune 'da, Apple 'ın yerleşik Kerberos uzantısını yapılandırmak veya kuruluşunuz tarafından oluşturulan bir SSO uygulama uzantısını yapılandırmak için bu ayarları kullanın. SSO uygulama uzantısı kullanıcılarınız için kimlik doğrulamasını işler. Bu ayarlar, sınama ve yanıt kimlik doğrulama akışları için tasarlanan kimlik bilgisi türü SSO uygulama uzantılarını yapılandırır. Apple tarafından sunulan Kerberos 'a özgü kimlik bilgisi uzantısı ve genel kimlik bilgisi uzantısı arasında seçim yapabilirsiniz.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [IOS SSO uygulama uzantısı](ios-device-features-settings.md#single-sign-on-app-extension) ve [MacOS SSO uygulama uzantısı](macos-device-features-settings.md#single-sign-on-app-extension).
+
+SSO uygulama uzantısı geliştirme hakkında daha fazla bilgi için Apple 'ın Web sitesinde [Genişletilebilir Kurumsal SSO](https://developer.apple.com/videos/play/tech-talks/301) 'yu izleyin.
+
+> [!NOTE]
+> **Çoklu oturum açma uygulama uzantısı** özelliği, **Çoklu oturum açma** özelliğinden farklı:
+>
+> - **Çoklu oturum açma uygulama uzantısı** ayarları, ıdos 13,0 (ve üzeri) ve iOS 13,0 (ve üzeri) için geçerlidir. **Çoklu oturum açma** ayarları, ıdos 13,0 (ve üzeri) ve iOS 7,0 ve daha yeni bir sürümü için geçerlidir.
+> - **Çoklu oturum açma uygulama uzantısı** , işletim sistemiyle kimlik doğrulamasını işler. **Çoklu oturum açma**bölümünde, belirli bir uygulama kimlik doğrulamasını işler.
+> - **Çoklu oturum açma uygulama uzantısını**kullanırken, kullanıcılar uygulama ve web sitelerinde sessizce veya yüz kimliği, Touch ID veya Apple 'ın pincode veya geçiş kodu ile oturum açabilirler. **Çoklu oturum açma**kullanılırken, kullanıcılar uygulama ve web sitelerinde başka bir uygulama kullanarak oturum açabilirler.
+>
+>    **Çoklu oturum açma uygulama uzantısı** , kimlik doğrulaması için Apple işletim sistemini kullanır. Bu nedenle, daha iyi bir son kullanıcı deneyimi sağlayabilir.
+>
+> - Geliştirme açısından, **Çoklu oturum açma uygulama uzantısı** herhangi bir KIMLIK bilgisi SSO kimlik doğrulaması türünü kullanabilir. **Çoklu oturum açma**Ile yalnızca Kerberos SSO kimlik doğrulamasını kullanabilirsiniz.  
+
+Şunun için geçerlidir:
+
+- iOS 13,0 ve üzeri
+- ıpados 13,0 ve üzeri
+- macOS 10,15 ve üzeri
+
+## <a name="wallpaper"></a>Duvar
+
+Denetimli iOS cihazlarınıza özel bir. png,. jpg veya. JPEG görüntüsü ekleyin. Örneğin, cihazlarınızdaki kilit ekranına bir şirket logosu eklemek için Intune ' u kullanın.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde duvar kağıdı](ios-device-features-settings.md#wallpaper).
+
+Şunun için geçerlidir:
+
+- iOS
+- ıpados 13,0 ve üzeri
+
+## <a name="web-content-filter"></a>Web içeriği filtresi
+
+Bu ayarlar Apple 'ın yerleşik otomatik filtre algoritmasını, Web sayfalarını değerlendirmek ve yetişkinlere yönelik içeriği ve yetişkinlere yönelik dili engellemek için kullanabilir. Ayrıca, izin verilen Web bağlantıları ve kısıtlanmış Web bağlantıları listesini de oluşturabilirsiniz. Örneğin, yalnızca `contoso` Web sitelerinin açmasına izin verebilirsiniz.
+
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde Web içeriği filtresi](ios-device-features-settings.md#web-content-filter).
+
+Şunun için geçerlidir:
+
+- iOS 7,0 ve üzeri
+- ıpados 13,0 ve üzeri
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. Oturum [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki özellikleri girin:
 
-    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+    - **Ad**: İlke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı **MacOS: Oturum açma ekranını**yapılandırır.
     - **Açıklama**: Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Platform**: Platformunuzu seçin:
-        - **iOS**
+    - **Platform**: Cihazlarınızın platformu seçin. Seçenekleriniz şunlardır:  
+        - **iOS/ıpados**
         - **macOS**
-    - **Profil türü**: Seçin **cihaz özellikleri**.
-    - **Ayarları**: Yapılandırmak istediğiniz ayarları girin. Tüm ayarların bir listesi ve ne yaptıkları için bkz:
+    - **Profil türü**: **Cihaz özellikleri**' ni seçin.
 
-        - [iOS](ios-device-features-settings.md)
-        - [macOS](macos-device-features-settings.md)
+4. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Ayrıntılı ayarlar için platformunuzu seçin:
 
-4. İşiniz bittiğinde **Tamam**’ı ve değişikliklerinizi kaydetmek için **Oluştur**’u seçin.
+    - [iOS/ıpados](ios-device-features-settings.md)
+    - [macOS](macos-device-features-settings.md)
 
-Profil oluşturulur ve listede gösterilen. Mutlaka [profili atama](device-profile-assign.md) ve [atamanın durumunu izlemenize](device-profile-monitor.md).
+5. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
+
+Profil oluşturulur ve profiller listesinde gösterilir. [Profili atayıp](device-profile-assign.md) [durumunu izlemeyi](device-profile-monitor.md)unutmayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturulduktan sonra atanmak üzere hazırdır. Ardından [profili atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
+Profil oluşturulduktan sonra atanmak için hazırlanın. Ardından [profili atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
 
-İçin tüm cihaz özelliği ayarlarını görüntüleme [iOS](ios-device-features-settings.md) ve [macOS](macos-device-features-settings.md) cihazlar.
+[İOS](ios-device-features-settings.md) ve [MacOS](macos-device-features-settings.md) cihazları için tüm cihaz özelliği ayarlarını görüntüleyin.

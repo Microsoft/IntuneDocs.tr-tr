@@ -6,7 +6,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 09/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d30f2f392a760701337fb17b902458ea01ed00b
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: a1e952acc2fe8eafc6376b0cab9012af52b0acf4
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71238816"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274858"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
@@ -28,7 +28,10 @@ ms.locfileid: "71238816"
 
 Bir Intune Yöneticisi olarak, Şirket Portalı uygulaması da dahil olmak üzere masaüstü veya Windows 10 Masaüstü & Mobil cihazlara Windows 8.1 iş kolu (LOB) Universal uygulamaları dağıtabilirsiniz. Windows 8.1. appx uygulamalarını masaüstü veya Windows 10 Masaüstü & Mobil cihazlara dağıtmak için, Windows cihazlarınız tarafından zaten güvenilen bir genel sertifika yetkilisinden kod imzalama sertifikası kullanabilir veya kendi sertifika yetkilinizi kullanabilirsiniz.
 
-Windows 8.1 Masaüstü, dışarıdan yüklemeyi etkinleştirmek için bir kuruluş ilkesi veya dışarıdan Yükleme anahtarlarının (etki alanına katılmış cihazlar için otomatik olarak etkinleştirilir) kullanılmasını gerektirir. Daha fazla bilgi için bkz. [Windows 8 dışarıdan yükleme](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
+ > [!NOTE]
+ > Windows 8.1 Masaüstü, dışarıdan yüklemeyi etkinleştirmek için bir kuruluş ilkesi veya dışarıdan Yükleme anahtarlarının (etki alanına katılmış cihazlar için otomatik olarak etkinleştirilir) kullanılmasını gerektirir. Daha fazla bilgi için bkz. [Windows 8 dışarıdan yükleme](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
+
+## <a name="windows-10-sideloading"></a>Windows 10 dışarıdan yükleme
 
 Windows 10 ' da, dışarıdan yükleme Windows 'un önceki sürümlerinden farklıdır:
 
@@ -36,18 +39,17 @@ Windows 10 ' da, dışarıdan yükleme Windows 'un önceki sürümlerinden farkl
 
 - Symantec telefon sertifikaları ve dışarıdan yükleme lisans anahtarları gerekli değildir. Ancak, şirket içi bir sertifika yetkilisi yoksa, bir genel sertifika yetkilisinden kod imzalama sertifikası edinmeniz gerekebilir. Daha fazla bilgi için bkz. [kod Imzalamaya giriş](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing).
 
+### <a name="code-sign-your-app"></a>Uygulamanızı kodla imzalama
 
-## <a name="code-sign-your-app"></a>Uygulamanızı kodla imzalama
+İlk adım, appx paketinizi yeniden kodlayabilirseniz. Ayrıntılar için bkz. [SignTool kullanarak uygulama paketini imzalama](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool).
 
-İlk adım, appx paketinizi yeniden kodlaya, bkz. [SignTool kullanarak uygulama paketini imzalama](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool)
+### <a name="upload-your-app"></a>Uygulamanızı karşıya yükleyin
 
-## <a name="upload-your-app"></a>Uygulamanızı karşıya yükleyin
-
-Ardından, imzalı appx dosyasını, [lob Windows uygulamasını karşıya yükle](lob-apps-windows.md) bölümünde açıklandığı gibi karşıya yüklersiniz
+Ardından, imzalanmış appx dosyasını karşıya yüklemeniz gerekir. Ayrıntılar için bkz. [Windows iş kolu uygulaması ekleme Microsoft Intune](lob-apps-windows.md).
 
 Uygulamayı kullanıcılara veya cihazlara gereken şekilde dağıtırsanız, ınutne Şirket Portalı uygulamasına ihtiyacınız yoktur. Ancak, uygulamayı kullanıcılara kullanılabilir olarak dağıtırsanız, ortak Microsoft Store Şirket Portalı uygulamayı kullanabilir, Iş için özel Microsoft Store Şirket Portalı uygulamayı kullanabilir veya Intune şirketini imzalayıp el ile dağıtmanız gerekir Portal uygulaması.
 
-## <a name="upload-the-code-signing-certificate"></a>Kod imzalama sertifikasını karşıya yükleme
+### <a name="upload-the-code-signing-certificate"></a>Kod imzalama sertifikasını karşıya yükleme
 
 Windows 10 cihazınız sertifika yetkilisine zaten güvenmezse, appx paketinizi imzaladıktan ve Intune hizmetine yükledikten sonra, kod imzalama sertifikasını Intune portalına yüklemeniz gerekir:
 1. Istemci uygulamaları ' na tıklayın
@@ -61,7 +63,7 @@ Intune yalnızca karşıya yüklenen en son. cer dosyasını dağıtır. Kurulu�
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Symantec kurumsal kod imzalama sertifikasını yenileme
 
-Windows Phone 8,1 mobil uygulamaları dağıtmak için kullanılan sertifika, 28 2019 Şubat tarihinde kaldırılmıştır ve artık Symantec 'ten yenileme için kullanılamaz. WIndows 10 Mobile 'a dağıtıyorsanız, Windows 10 yönergelerini izleyerek Symantec masaüstü kurumsal kod imzalama sertifikalarını kullanmaya devam edebilirsiniz.
+Windows Phone 8,1 mobil uygulamaları dağıtmak için kullanılan sertifika, 28 2019 Şubat tarihinde kaldırılmıştır ve artık Symantec 'ten yenileme için kullanılamaz. WIndows 10 Mobile 'a dağıtıyorsanız, [Windows 10 dışarıdan yükleme](app-sideload-windows.md#windows-10-sideloading) yönergelerini Izleyerek Symantec masaüstü kurumsal kod imzalama sertifikaları kullanmaya devam edebilirsiniz.
 
 ## <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>İş kolu (LOB) uygulamaları için güncelleştirilmiş sertifika yükleme
 
