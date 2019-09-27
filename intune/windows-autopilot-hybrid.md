@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bf683aebee50b4f2172f11ce205a910a47d0845
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 68d65af1527008c80debb15300781bfad2fb8341
+ms.sourcegitcommit: ec0a69c88fdb30b538df1ac4f407a62a28ddf8d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071140"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71320027"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune ve Windows Autopilot kullanarak karma Azure AD 'ye katılmış cihazları dağıtma
 Karma Azure Active Directory (Azure AD) ile birleştirilmiş cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için bu makaledeki adımları izleyin.
@@ -184,7 +184,7 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 
 1. [Intune](https://aka.ms/intuneportal)'da **cihaz kaydı** > **Windows kayıt** > **dağıtım profilleri** > **Profil oluştur**' u seçin.
 2. **Temel bilgiler** sayfasında, bir **ad** ve isteğe bağlı bir **Açıklama**yazın.
-3. Atanan gruplardaki tüm cihazların otomatik olarak Autopilot'a dönüştürülmesini istiyorsanız **Hedeflenen tüm cihazları Autopilot'a dönüştür** seçeneğini **Evet** olarak ayarlayın. Atanan gruplardaki Autopilot olmayan tüm cihazlar Autopilot dağıtım hizmeti ile kaydedilir. Kaydın işlenmesi için 48 saat kadar bekleyin. Kaydı kaldırılıp sıfırlandığında Autopilot cihazı kaydeder. Bir cihaz bu şekilde kaydedildikten sonra bu seçeneğin devre dışı bırakılması veya profil atamasının kaldırılması cihazı Autopilot dağıtım hizmetinden kaldırmaz. Bunun yerine [cihazı doğrudan kaldırmanız](enrollment-autopilot.md#delete-autopilot-devices) gerekir.
+3. Atanan gruplardaki tüm cihazların otomatik olarak Autopilot'a dönüştürülmesini istiyorsanız **Hedeflenen tüm cihazları Autopilot'a dönüştür** seçeneğini **Evet** olarak ayarlayın. Atanan gruplardaki şirkete ait olmayan tüm Autopilot cihazları Autopilot dağıtım hizmetine kaydolacaktır. Kişiye ait cihazlar Autopilot 'e dönüştürülmeyecektir. Kaydın işlenmesi için 48 saat kadar bekleyin. Kaydı kaldırılıp sıfırlandığında Autopilot cihazı kaydeder. Bir cihaz bu şekilde kaydedildikten sonra bu seçeneğin devre dışı bırakılması veya profil atamasının kaldırılması cihazı Autopilot dağıtım hizmetinden kaldırmaz. Bunun yerine [cihazı doğrudan kaldırmanız](enrollment-autopilot.md#delete-autopilot-devices) gerekir.
 4. **İleri**’yi seçin.
 5. **Kullanıma hazır deneyim (OOBE)** sayfasında, **dağıtım modu**için **Kullanıcı odaklı**' ı seçin.
 6. **Azure AD 'ye katıl** kutusunda **karma Azure AD 'ye katılmış**' i seçin.

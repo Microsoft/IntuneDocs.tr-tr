@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 235cb317625786c1254ecf572726c66480c01b2e
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: 7b7a0df354c505272ced187ead615734ae1c830f
+ms.sourcegitcommit: 022f52cb03e25d555229019599cdafc994427327
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274835"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71313440"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -62,7 +62,7 @@ Apple 'ın iOS 13,1 sürümü, iOS cihazları için basit yönetimin yeni bir bi
 - Kullanıcı kaydını Kullanıcı gruplarına hedefleyin.
 - Son kullanıcılara cihazlarını kaydettiklerinde daha hafif Kullanıcı kaydı veya daha güçlü bir cihaz kaydı arasından seçim yapma olanağı sunun.
 
-9/24/2019 ' den başlayarak, iOS 31,1 ' nin yayımlanmasından itibaren, bu güncelleştirmeleri tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek için çalışıyoruz.
+9/24/2019 ' den başlayarak, iOS 13,1 ' nin yayımlanmasından itibaren, bu güncelleştirmeleri tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek için çalışıyoruz.
 Şunun için geçerlidir:
 
 iOS 13,1 ve üzeri

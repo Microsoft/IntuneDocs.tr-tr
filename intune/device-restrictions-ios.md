@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/24/2019
+ms.date: 09/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e31fc3b199f6437bbdd7b12e4be8b17ead689c7e
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 4b9b2db7aa58d2db519615ca2741b28c09f29096
+ms.sourcegitcommit: ec0a69c88fdb30b538df1ac4f407a62a28ddf8d1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71302381"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71320036"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
@@ -130,36 +130,51 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 ## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
+> [!NOTE]
+> Gelecekteki bir sürümde, Intune kullanıcı arabirimindeki bu parola ayarları, kayıt türüyle eşleşecek şekilde güncelleştiriliyor.
+
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: Tüm kayıt türleri
 
 - **Parola**: **Gerekli** ayarı son kullanıcının cihaza erişmek için parola girmesini zorunlu tutar. **Yapılandırılmadı** (varsayılan) kullanıcıların bir parola girmeden cihaza erişmesine izin verir.
-  - **Basit parolalar**: Daha karmaşık parolaları zorunlu tutmak için **Engelle**'yi seçin. **Yapılandırılmadı** ayarı `0000` ve `1234` gibi basit parolalara izin verir.
-  - **Gerekli parola türü**: Kuruluşunuzun gerektirdiği parola türünü seçin. Seçenekleriniz şunlardır:
+
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: Cihaz kaydı, otomatik cihaz kaydı (denetimli)
+
+> [!IMPORTANT]
+> Kullanıcı tarafından kaydedilen cihazlarda, herhangi bir parola ayarını yapılandırırsanız, **basit parolalar** ayarları otomatik olarak **engelleme**olarak ayarlanır ve 6 basamaklı bir PIN zorlanır.
+>
+> Örneğin, **parola süre sonu** ayarını yapılandırır ve bu ilkeyi Kullanıcı tarafından kaydedilen cihazlara gönderirsiniz. Cihazlarda aşağıdakiler olur:
+>
+>  - **Parola süre sonu** ayarı yok sayılır.
+>  - `1111` Veya`1234`gibi basit parolalara izin verilmez.
+>  - 6 basamaklı bir PIN zorlanır. 
+
+- **Basit parolalar**: Daha karmaşık parolaları zorunlu tutmak için **Engelle**'yi seçin. **Yapılandırılmadı** ayarı `0000` ve `1234` gibi basit parolalara izin verir.
+
+- **Gerekli parola türü**: Kuruluşunuzun gerektirdiği parola türünü seçin. Seçenekleriniz şunlardır:
     - **Cihaz varsayılanı**
     - **Sayısal**
     - **Alfasayısal**
-  - **Paroladaki alfasayısal olmayan karakter sayısı**: Parolada bulunması gereken `#` veya `@` gibi simge karakterlerinin sayısını belirtin.
-  - **Minimum parola uzunluğu**: Kullanıcının girmesi gereken minimum uzunluğu 4 ile 14 karakter arasında girin. Kullanıcı kayıtlı cihazlarda 4 ila 6 karakter uzunluğunda bir uzunluk girin.
-  
-    > [!NOTE]
-    > Kullanıcı tarafından kaydedilen cihazlar için:
-    >  - Mevcut bir PIN 6 karakterden fazlaysa, yalnızca ilk 6 karakter kullanılır. Örneğin, PIN 'iniz ise `12345678`, PIN ' i `123456`kısaltıldı.
-    >  - Kullanıcılar 6 karakterden büyük yeni bir PIN girerseniz, yalnızca ilk 6 karakter kullanılır. Örneğin, PIN olarak girerseniz `12345678` , PIN ' i `123456`kısaltıldı.
+- **Paroladaki alfasayısal olmayan karakter sayısı**: Parolada bulunması gereken `#` veya `@` gibi simge karakterlerinin sayısını belirtin.
 
-  - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Cihaz temizlenmeden önce izin verilecek başarısız oturum açma işlemlerinin sayısını girin (4-11 arasında).
+- **Minimum parola uzunluğu**: Kullanıcının girmesi gereken minimum uzunluğu 4 ile 14 karakter arasında girin. Kullanıcı kayıtlı cihazlarda 4 ila 6 karakter uzunluğunda bir uzunluk girin.
   
-    iOS, bu ayarı etkileyebilecek yerleşik güvenliğe sahiptir. Örneğin, iOS, oturum açma hatalarının sayısına bağlı olarak ilkeyi tetikleyebilir. Aynı zamanda aynı geçiş kodunu bir girişimlerle tekrar girmeyi de düşünebilirsiniz. Apple 'ın [iOS Güvenlik Kılavuzu](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (Apple 'ın Web sitesini açar) iyi bir kaynaktır ve Passcodes hakkında daha ayrıntılı bilgiler sağlar.
+  > [!NOTE]
+  > Kullanıcı kayıtlı cihazlarda, kullanıcılar 6 basamaktan daha büyük bir PIN ayarlayabilir. Ancak cihazda 6 ' dan fazla basamak uygulanmaz. Örneğin, bir yönetici minimum uzunluğu olarak `8`ayarlar. Kullanıcı tarafından kaydedilen cihazlarda, kullanıcılardan yalnızca 6 basamaklı bir PIN ayarlaması gerekir. Intune, Kullanıcı tarafından kaydedilen cihazlarda 6 basamaktan daha büyük bir PIN 'ı zorlamaz.
+
+- **Cihaz silinmeden önceki oturum açma hatası sayısı**: Cihaz temizlenmeden önce izin verilecek başarısız oturum açma işlemlerinin sayısını girin (4-11 arasında).
   
-  - **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**<sup>1</sup>: Kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalacağını girin. Girdiğiniz süre cihazda şu anda ayarlanmış olan süreden uzunsa, cihaz girdiğiniz süreyi yoksayar. iOS 8.0 ve daha yeni cihazlarda desteklenir.
-  - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**<sup>1</sup>: Ekran otomatik olarak kilitlenmeden önce izin verilecek işlem yapılmayan en fazla dakika sayısını girin. Girdiğiniz süre cihazda şu anda ayarlanmış olan süreden uzunsa, cihaz girdiğiniz süreyi yoksayar. **Hemen**olarak ayarlandığında ekran, cihazın en kısa zamanına bağlı olarak kilitlenir. İPhone 'da 30 saniyedir. İPad 'de bu iki dakikadır.
-  - **Parola zaman aşımı (gün sayısı)** : Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını girin.
-  - **Önceki parolaların yeniden kullanılmasını engelleme**: Eski bir parolanın yeniden kullanılabilmesi için önce kullanılması gereken yeni parola sayısını girin.
-  - **Dokunma kimliği ve yüz kimliği kilit açma**: Cihazın kilidini açmak için parmak izi veya yüz kullanımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının bu yöntemleri kullanarak cihazın kilidini açmasına izin verir.
+  iOS, bu ayarı etkileyebilecek yerleşik güvenliğe sahiptir. Örneğin, iOS, oturum açma hatalarının sayısına bağlı olarak ilkeyi tetikleyebilir. Aynı zamanda aynı geçiş kodunu bir girişimlerle tekrar girmeyi de düşünebilirsiniz. Apple 'ın [iOS Güvenlik Kılavuzu](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (Apple 'ın Web sitesini açar) iyi bir kaynaktır ve Passcodes hakkında daha ayrıntılı bilgiler sağlar.
+  
+- **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**<sup>1</sup>: Kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalacağını girin. Girdiğiniz süre cihazda şu anda ayarlanmış olan süreden uzunsa, cihaz girdiğiniz süreyi yoksayar. iOS 8.0 ve daha yeni cihazlarda desteklenir.
+- **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**<sup>1</sup>: Ekran otomatik olarak kilitlenmeden önce izin verilecek işlem yapılmayan en fazla dakika sayısını girin. Girdiğiniz süre cihazda şu anda ayarlanmış olan süreden uzunsa, cihaz girdiğiniz süreyi yoksayar. **Hemen**olarak ayarlandığında ekran, cihazın en kısa zamanına bağlı olarak kilitlenir. İPhone 'da 30 saniyedir. İPad 'de bu iki dakikadır.
+- **Parola zaman aşımı (gün sayısı)** : Cihaz parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını girin.
+- **Önceki parolaların yeniden kullanılmasını engelleme**: Eski bir parolanın yeniden kullanılabilmesi için önce kullanılması gereken yeni parola sayısını girin.
+- **Dokunma kimliği ve yüz kimliği kilit açma**: Cihazın kilidini açmak için parmak izi veya yüz kullanımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının bu yöntemleri kullanarak cihazın kilidini açmasına izin verir.
 
-    Bu ayarı engellemek, cihazın kilidini açmak için çok yönlü kimlik doğrulamasının kullanılmasını da engeller.
+  Bu ayarı engellemek, cihazın kilidini açmak için çok yönlü kimlik doğrulamasının kullanılmasını da engeller.
 
-    Yüz KIMLIĞI şu şekilde geçerlidir:  
-    - iOS 11,0 ve üzeri
+  Yüz KIMLIĞI şu şekilde geçerlidir:  
+  - iOS 11,0 ve üzeri
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: Otomatik cihaz kaydı (denetimli)
 
