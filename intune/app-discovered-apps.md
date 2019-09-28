@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
-ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
+ms.openlocfilehash: f2e2e203c1d592d6313591f1bea18a37b1fcfeff
+ms.sourcegitcommit: 01a4e09eb27bfed14121de1a4ad56142b7d56eb2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70206410"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481939"
 ---
 # <a name="intune-discovered-apps"></a>Intune bulunan uygulamalar
 
@@ -36,14 +36,14 @@ Intune, kiracınızdaki Intune 'A kayıtlı cihazlarda algılanan uygulamaların
 2. **Intune** bölmesinde, **istemci uygulamaları** > **bulunan uygulamalar**' ı seçin.
 
 >[!NOTE]
->Bulunan uygulamalar dikey penceresinden **dışarı aktar** ' i seçerek bulunan uygulamalar listesini bir. csv dosyasına dışarı aktarabilirsiniz .
+>Bulunan **uygulamalar dikey penceresinden** **dışarı aktar** ' i seçerek bulunan uygulamalar listesini bir. csv dosyasına dışarı aktarabilirsiniz.
 >
 >Bulunan Win32 uygulamaları için şu anda toplam sayım yok. Bu tür veriler yalnızca cihaz başına temelinde görüntülenebilir.
 
 Intune, kiracınızdaki ayrı bir cihaz için bulunan uygulamaların listesini de sağlar. 
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. Intune bölmesinde **cihazlar** > **tüm cihazlar**' ı seçin.
+2. Intune bölmesinde, **cihazlar** > **tüm cihazlar**' ı seçin.
 3. Cihaz seçin.
 4. Bu cihaza yönelik algılanan uygulamaları görüntülemek için **izleyici** bölümünde **bulunan uygulamalar** ' ı seçin. 
 
@@ -64,7 +64,7 @@ Aşağıdaki liste, uygulama platformu türünü, kişisel cihazlar için izlene
 | Android Kurumsal | Yalnızca yönetilen uygulamalar | Yalnızca Iş profilinde yüklü olan uygulamalar | Her 7 günde bir cihaz kaydı |
 
 > [!NOTE]
->Intune yönetim uzantısına sahip Windows 10 karma Azure AD 'ye katılmış cihazlar şu anda uygulama envanterini yukarıdaki zamanlamaya göre toplamıyor. Bu bilinen bir sorundur. Bu davranıştaki herhangi bir değişiklik veya güncelleştirme, [geliştirme](in-development.md) ve/veya yenilikler ' [](whats-new.md)de içinde duyurulur.
+> Windows 10 hibrit Azure AD 'ye katılmış cihazlar, SCCM 'deki uygulama yönetimi iş yükünde gösterildiği gibi, şu anda yukarıdaki zamanlamaya göre Intune yönetim uzantısı (IME) aracılığıyla uygulama envanterini toplamamaktadır. Bu sorunu gidermek için, SCCM 'deki uygulama yönetimi iş yükünün, IME 'nin cihaza yüklenebilmesi için Intune 'a geçiş yapması gerekir (Win32 envanter ve PowerShell dağıtımı için IME gereklidir). Bu davranıştaki tüm değişikliklerin veya güncelleştirmelerin [geliştirme](in-development.md) ve [/veya yenilikler](whats-new.md)' de duyurulduğunu unutmayın.
 
 Bulunan uygulamaların sayısı uygulama yükleme durumu sayısıyla eşleşmeyebilir. Tutarsızlıkların olası nedenleri:
 - Yüklü yönetilen uygulamada bir hedefleme değişikliği, durum dikey penceresindeki yükleme sayısının azalmasına neden olabilir ama algılanan uygulamalarda bildirilmeye devam eder.
