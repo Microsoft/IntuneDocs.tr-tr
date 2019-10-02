@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91aefbc8c3960100ce5e9164ce48a2b9d33c3f3e
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: ecc73fc9c51ae11f7541d1b9d28f0ccc8297c187
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238954"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721200"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Android cihazınızın yönetim kaydını silme  
 
@@ -51,31 +51,31 @@ Kayıtlı bir Android cihazın kuruluşunuz tarafından yönetilmesini sonlandı
 
 Android için Şirket Portalı uygulamasının cihazınızda depoladığı tüm verileri kaldırmak üzere:
 
-- **Uygulamalar** > **[*uygulama adı*]**  > **açık verileri**dokunarak uygulama verilerini temizleyin.
+- Uygulama verilerini, **uygulamalar** > **[*uygulamanın adı*]**  > **şifresiz verileri**dokunarak temizleyin.
 - Şu klasörü silin: \storage\ınternal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
 ## <a name="uninstall-the-company-portal-app"></a>Şirket Portalı uygulamasını kaldırma
 
 Şirket Portalı bir cihaz yönetimi uygulamasıdır. Cihazınızın yönetimine kaydoluncaya kadar kaldırılamaz. Bu işlemi tamamladıysanız Şirket Portalı uygulamasının simgesine dokunun ve **Kaldır** seçeneğini görene kadar basılı tutun. **Kaldır**’a dokunarak uygulamayı cihazınızdan kaldırın.  
 
-Alternatif olarak, **Ayarlar** > **uygulamalar** > Şirket portalıKaldır > ' a dokunun.  
+Alternatif olarak, **ayarlar** > **uygulamalar** > **Şirket portalı** > **Kaldır**' a dokunun.  
 
 ### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>Şirket Portalı uygulamasını bir cihaz yöneticisi olarak kaldırma
 
 Son çare olarak, uygulamayı cihazınızdan bir cihaz yöneticisi olarak kaldırabilirsiniz.  
 
-Şirkete ait bir cihazınız varsa, kuruluşunuz her zaman cihazınızda Şirket Portalı gerekebilir. Yüklemesini kaldırırsanız, uygulama yeniden yükleninceye kadar e-posta, uygulamalar, Wi-Fi veya VPN gibi korunan şirket kaynaklarına erişiminizi kaybedebilirsiniz. Gerekli uygulamaları yükleme, güncelleştirme veya kaldırma hakkında daha fazla bilgi için bkz. [Microsoft Intune uygulama ekleme](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
+Şirkete ait bir cihazınız varsa, kuruluşunuz her zaman cihazınızda Şirket Portalı gerekebilir. Yüklemesini kaldırırsanız, uygulama yeniden yükleninceye kadar e-posta, uygulamalar, Wi-Fi veya VPN gibi korunan şirket kaynaklarına erişiminizi kaybedebilirsiniz. Gerekli uygulamaları yükleme, güncelleştirme veya kaldırma hakkında daha fazla bilgi için bkz. [Microsoft Intune uygulama ekleme](https://docs.microsoft.com/intune/apps/apps-add.md#apps-that-are-added-automatically-by-intune).
 
 Şirket Portalı Cihaz Yöneticisi olarak devre dışı bırakabilirsiniz. Her ayarın gerçek adları, Android cihazınızda farklılık gösterebilir.  
 
 **Seçenek 1**:  
 
-1. **Ayarlar** **Güvenlik ek güvenlik**ayarlarıcihaz > **yöneticileri ' ni seçin.**  >  >   
+1. @No__t **ayarları**seçin-1**güvenlik** > **ek güvenlik ayarları** > **cihaz yöneticileri**.  
 2. **Şirket portalı** seçimini temizleyin.  
 
 **Seçenek 2**:
 
-1.  >  > Ayarlar > **kilit ekranı ve güvenlik** **diğer güvenlik ayarları** **Cihaz yönetici uygulamaları**' nı seçin.
+1. @No__t **ayarları**seçin-1**kilit ekranı ve güvenlik** > **diğer güvenlik ayarları** > **Cihaz Yöneticisi uygulamaları**.
 2. **Şirket portalı** seçimini temizleyin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

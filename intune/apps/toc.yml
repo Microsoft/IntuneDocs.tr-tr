@@ -1,0 +1,202 @@
+- name: Uygulamaları yönetme
+  href: index.yml
+- name: Genel bakış
+  expanded: true
+  items:
+    - name: Uygulama yönetimine genel bakış
+      href: app-management.md
+- name: Hızlı girişler
+  items:
+    - name: Uygulama ekleme ve atama
+      href: quickstart-add-assign-app.md
+    - name: Uygulama koruma ilkesini oluşturma ve atama
+      href: quickstart-create-assign-app-policy.md
+- name: Öğreticiler
+  items:
+    - name: Yönetilmeyen cihazlarda e-posta koruma
+      href: ../protect/tutorial-protect-email-on-unmanaged-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
+    - name: Slack’i Intune kullanmak üzere yapılandırma
+      href: tutorial-configure-slack-enterprise-grid.md
+- name: Kavramlar
+  items:
+    - name: Uygulama yaşam döngüsü
+      href: app-lifecycle.md
+    - name: Uygulama koruma ilkeleri ve çalışma profilleri (Android)
+      href: android-deployment-scenarios-app-protection-work-profiles.md
+      displayName: app-we; without; without enrollment
+    - name: MAM İLE İLGİLİ SSS
+      href: mam-faq.md
+- name: Nasıl yapılır kılavuzları
+  items:
+    - name: Uygulamaları ekleme
+      items:
+        - name: Uygulama eklemeye genel bakış
+          href: apps-add.md
+        - name: Intune korumalı uygulamalar
+          href: apps-supported-intune-apps.md
+        - name: Mağaza uygulamaları
+          items:
+            - name: Android mağaza uygulamaları
+              href: store-apps-android.md
+            - name: iOS mağaza uygulamaları
+              href: store-apps-ios.md
+            - name: Windows Phone 8.1 mağaza uygulamaları
+              href: store-apps-windows-phone-8-1.md
+            - name: Microsoft Mağazası uygulamaları
+              items:
+                - name: Windows uygulamaları
+                  href: store-apps-windows.md
+                - name: Şirket Portalı uygulaması
+                  href: store-apps-company-portal-app.md
+            - name: Yönetilen Google Play uygulamaları
+              href: apps-add-android-for-work.md
+            - name: Windows 10 için Office 365 uygulamaları
+              href: apps-add-office365.md
+            - name: macOS için Office 365 uygulamaları
+              href: apps-add-office365-macos.md
+        - name: Web uygulamaları
+          href: web-app.md
+          displayName: web; web link; weblink; web-link
+        - name: Yerleşik uygulamalar
+          href: apps-add-built-in.md
+        - name: Uygulamanızı (LOB) oluşturun
+          items:
+            - name: Android LOB uygulamaları
+              href: lob-apps-android.md
+            - name: iOS LOB uygulamaları
+              href: lob-apps-ios.md
+            - name: Windows Phone LOB uygulamaları
+              href: lob-apps-windows-phone.md
+            - name: Windows LOB uygulaması
+              href: lob-apps-windows.md
+            - name: Windows LOB uygulamalarını dışarıdan yükleme
+              href: app-sideload-windows.md
+            - name: macOS LOB uygulamaları
+              href: lob-apps-macos.md
+        - name: Android Kurumsal sistem uygulamaları
+          href: apps-ae-system.md
+        - name: Win32 uygulama yönetimi
+          href: apps-win32-app-management.md
+        - name: PowerShell komut dosyaları
+          href: intune-management-extension.md
+    - name: Uygulamaları atama
+      items:
+        - name: Gruplara uygulama atama
+          href: apps-deploy.md
+          displayName: app assignment; assignment
+        - name: Uygulama ekleme ve çıkarma
+          href: apps-inc-exl-assignments.md
+          displayName: app assignment
+        - name: Windows 10 uygulamalarını dağıtma
+          href: apps-windows-10-app-deploy.md
+        - name: Kamu ortamları için uygulama dağıtma
+          href: apps-deploy-gcc-dod.md
+    - name: Uygulamaları izleme
+      href: apps-monitor.md
+    - name: Bulunan uygulamalar
+      href: app-discovered-apps.md
+    - name: Uygulama yapılandırma
+      items:
+        - name: Uygulama yapılandırma ilkeleri
+          href: app-configuration-policies-overview.md
+          displayName: App configuration policy; configuration policy
+        - name: iOS yönetilen cihazlar
+          href: app-configuration-policies-use-ios.md
+        - name: Android yönetilen cihazlar
+          href: app-configuration-policies-use-android.md
+        - name: Yönetilen Giriş Ekranı’nı yapılandırma
+          href: app-configuration-managed-home-screen-app.md
+        - name: Yönetilen uygulamalar
+          href: app-configuration-policies-managed-app.md
+        - name: iOS uygulama sağlama profillerini kullanma
+          href: app-provisioning-profile-ios.md
+        - name: Toplu satın alınan uygulamalar ve kitaplar
+          items:
+            - name: VPP uygulamalarını ve defterlerini yönetme
+              href: vpp-apps.md
+              displayName: vpp; volume purchased
+            - name: iOS VPP uygulamaları
+              href: vpp-apps-ios.md
+            - name: İş uygulamaları için Microsoft Mağazası
+              href: windows-store-for-business.md
+            - name: iOS e-Kitapları
+              href: vpp-ebooks-ios.md
+        - name: Şirket Portalı’nı yapılandırma
+          href: company-portal-app.md
+        - name: Managed Browser’ı yapılandırma
+          href: app-configuration-managed-browser.md
+        - name: Microsoft Edge’i yapılandırma
+          href: manage-microsoft-edge.md
+        - name: Microsoft Launcher’ı yapılandırma
+          href: configure-microsoft-launcher.md
+        - name: Outlook’u yapılandırma
+          href: app-configuration-policies-outlook.md
+    - name: Uygulamaları koruma
+      items:
+        - name: Uygulamaları seçmeli silme
+          href: apps-selective-wipe.md
+        - name: Uygulama koruma ilkeleri kullanma
+          items:
+            - name: Uygulama koruma ilkelerine genel bakış
+              href: app-protection-policy.md
+              displayName: app; protection; policy
+            - name: Uygulama koruma ilkeleri oluşturma
+              items:
+                - name: Genel ayarlar
+                  href: app-protection-policies.md
+                  displayName: dlp; data loss prevention
+                - name: Android ayarları
+                  href: app-protection-policy-settings-android.md
+                - name: iOS ayarları
+                  href: app-protection-policy-settings-ios.md
+                - name: Erişim Eylemleri
+                  href: app-protection-policies-access-actions.md
+                - name: Veri aktarımı özel durumları
+                  href: app-protection-policies-exception.md
+            - name: Uygulama koruma ilkelerini doğrulama
+              href: app-protection-policies-validate.md
+            - name: Uygulama koruma ilkesi teslimi
+              href: app-protection-policy-delivery.md
+            - name: Uygulama uzantılarını koruma
+              href: app-protection-policy-extensions.md
+            - name: Uygulama koruma kullanıcı durumunu izleme
+              href: app-protection-policies-monitor.md
+            - name: WIP uygulama koruma ilkelerine hazırlanma
+              href: app-protection-policies-configure-windows-10.md
+            - name: WIP uygulama koruma ilkelerini oluşturma ve atama
+              href: windows-information-protection-policy-create.md
+            - name: iOS uygulamaları arasında veri aktarımını yönetme
+              href: data-transfer-between-apps-manage-ios.md
+    - name: Sorunları Gider
+      items:
+        - name: Kullanıcıların sorunları gidermesine yardımcı olma
+          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+        - name: Sorun giderme uygulaması kurulum sorunları
+          href: troubleshoot-app-install.md
+        - name: Mobil uygulama yönetimi sorunlarını giderme
+          href: troubleshoot-mam.md
+        - name: Uygulama koruma günlüklerini gözden geçirme
+          href: app-protection-policy-settings-log.md
+- name: Başvuru
+  items:
+    - name: Intune Uygulama SDK’sı ile uygulama koruma
+      href: ../developer/app-sdk.md
+      items:
+        - name: Intune Uygulama SDK’sını kullanmaya başlama
+          href: ../developer/app-sdk-get-started.md
+        - name: Uygulama koruması için LOB uygulamalarını hazırlama
+          href: ../developer/apps-prepare-mobile-application-management.md
+        - name: iOS için Uygulama Sarmalama Aracı
+          href: ../developer/app-wrapper-prepare-ios.md
+        - name: iOS için Intune Uygulama SDK'sı
+          href: ../developer/app-sdk-ios.md
+        - name: Android için Uygulama Sarmalama Aracı
+          href: ../developer/app-wrapper-prepare-android.md
+          displayName: dex
+        - name: Android için Intune Uygulama SDK'sı
+          href: ../developer/app-sdk-android.md
+          items:
+            - name: Android için Intune Uygulama SDK’sı test kılavuzu
+              href: ../developer/app-sdk-android-testing-guide.md
+        - name: Intune Uygulama SDK’sı Xamarin Bağlamaları
+          href: ../developer/app-sdk-xamarin.md
