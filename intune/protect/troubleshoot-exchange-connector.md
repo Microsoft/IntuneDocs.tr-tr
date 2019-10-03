@@ -1,12 +1,12 @@
 ---
-title: Exchange bağlayıcısı sorunlarını giderme
+title: Exchange bağlayıcılarının sorunlarını giderme
 titleSuffix: Microsoft Intune
-description: Intune şirket içi Exchange bağlayıcısı ile ilgili sorunları giderin.
+description: Intune şirket içi Exchange Bağlayıcısı ile ilgili sorunları giderin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/18/2018
+ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,39 +17,65 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 217241ab4cead7f1087fe5bf6128cbf3dadb6ee2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729433"
+ms.locfileid: "71814049"
 ---
-# <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune şirket içi Exchange bağlayıcısında sorun giderme
+# <a name="troubleshoot-the-intune-exchange-connector"></a>Intune Exchange Connector sorunlarını giderme
 
-Bu makale, Intune şirket içi Exchange bağlayıcısı ile ilgili sorunların nasıl giderileceğini açıklar.
+Bu makalede, Intune Exchange Connector ile ilgili sorunların nasıl giderileceği açıklanmaktadır.
 
-## <a name="steps-for-checking-the-connector-configuration"></a>Bağlayıcı yapılandırmasını denetleme adımları 
+## <a name="before-you-start"></a>Başlamadan önce
 
-[Intune şirket içi Exchange bağlayıcısı kurulumunu](exchange-connector-install.md) denetleyerek bağlayıcının doğru yapılandırıldığından emin olun. Bazı yaygın görülen sorunlar aşağıda verilmiştir. Düzeltme yaptıktan sonra sorunun çözümlenmiş olup olmadığına bakın.
+Intune 'da bir Exchange Connector sorununu gidermeye başlamadan önce, bir Solid Foundation üzerinde çalışırken bazı temel bilgiler toplayın. Bu yaklaşım, sorunun doğasını daha iyi anlamanıza ve daha hızlı bir şekilde çözümlemenize yardımcı olabilir.
 
-- Microsoft Intune Exchange Connector iletişim kutusunda, [gerekli Windows PowerShell Exchange cmdlet’lerini](exchange-connector-install.md#exchange-cmdlet-requirements) yürütmek için uygun izinlere sahip bir kullanıcı hesabı belirttiğinizden emin olun.
-- Bildirimleri etkinleştirin ve bir bildirim hesabı belirtin.
-- Exchange Connector’ı yapılandırırken, bir Exchange bağlayıcısı barındıran sunucuya olabildiğince yakın bir İstemci Erişimi Sunucusu (CAS) belirtin. CAS ile Exchange bağlayıcısı arasındaki iletişim gecikmesi, özellikle Exchange Online Dedicated kullanılırken cihaz bulmayı geciktirebilir.
-- Yeni kaydedilen bir cihazın kullanıcısına sağlanacak erişim, Exchange bağlayıcısı ile Exchange CAS eşitlenene kadar gecikebilir. Tam eşitleme günde bir kez gerçekleşirken delta eşitlemesi (hızlı eşitleme) birkaç kez gerçekleşir.  Gecikmeleri olabildiğince azaltmak için [bir hızlı veya tam eşitlemeyi el ile zorlayabilirsiniz](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync).
- 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange’den bulunmayan Exchange ActiveSync cihazı
-Exchange bağlayıcısının Exchange sunucusu ile eşitlenip eşitlenmediğini görmek için [Exchange bağlayıcısı etkinliğini izleyin](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support). Cihaz katıldıktan sonra bir tam veya hızlı eşitleme başarıyla tamamlandıysa aşağıda listelenen diğer olası sorunları denetleyebilirsiniz. Hiçbir eşitleme gerçekleşmediyse eşitleme günlüklerini toplayın ve bir destek isteğine ekleyin.
+- İşleminizin yükleme gereksinimlerini karşıladığını doğrulayın. Bkz. Şirket [Içi Intune Exchange bağlayıcısını ayarlama](exchange-connector-install.md).
+- Hesabınızda hem Exchange hem de Intune yönetici izinlerinin olduğunu doğrulayın.
+- Tam ve tam hata iletisi metnini, ayrıntılarını ve iletinin nerede görüntülendiğini aklınızda yapın.
+- Sorunun ne zaman başlatıldığını belirle: 
+  - Bağlayıcıyı ilk kez ayarlıyor musunuz? 
+  - Bağlayıcı doğru şekilde çalışıyor ve başarısız oldu mu?
+  - Çalışıyorsa, Intune ortamında, Exchange ortamında veya bağlayıcı yazılımını çalıştıran bilgisayarda hangi değişiklikler meydana geldi?
+- MDM yetkilisi nedir? System Center Configuration Manager, Configuration Manager hangi sürümü kullanıyorsunuz?
+- Hangi Exchange sürümünü kullanıyorsunuz?
 
-- Kullanıcının Intune lisansı olduğundan emin olun, aksi takdirde Exchange bağlayıcısı kullanıcının cihazlarını bulamaz.
-- Kullanıcının birincil SMTP adresi, Azure Active Directory’deki (Azure AD) UPN’sinden farklıysa Exchange Connector bu kullanıcı için hiçbir cihaz bulamaz. Bu sorunu çözmek için birincil SMTP adresini düzeltin.
-- Ortamınızda hem Exchange 2010 hem de Exchange 2013 posta kutusu sunucuları varsa Exchange bağlayıcısını bir Exchange 2013 CAS’sine yöneltmenizi öneririz. Aksi takdirde, Exchange bağlayıcısı Exchange 2010 CAS ile iletişim kurmak üzere ayarlanmışsa Exchange 2013 kullanıcılarının cihazlarını bulamaz. 
-- Exchange Online Dedicated ortamlarında, bağlayıcı CAS ile yalnızca Powershell cmdlet’lerini çalıştırırken iletişim kuracağı için ayrılmış ortamda ilk kurulum sırasında Exchange bağlayıcısını bir Exchange 2013 CAS’sine (Exchange 2010 değil) yöneltmelisiniz.
+### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Exchange Connector sorunları hakkında daha fazla veri almak için PowerShell 'i kullanma
 
-
-## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>Exchange Connector sorunlarına ilişkin daha fazla veri almak için Powershell kullanma
 - Bir posta kutusunun tüm mobil cihazlarının listesini almak için @no__t kullanın-0
 - Posta kutusu için SMTP adreslerinin bir listesini almak için @no__t kullanın-0
 - Bir cihazın erişim durumu hakkında ayrıntılı bilgi almak için @no__t kullanın-0
 
+## <a name="review-the-connector-configuration"></a>Bağlayıcı yapılandırmasını gözden geçirme
+
+Ortamınızın ve bağlayıcının doğru yapılandırıldığından emin olmak için [Şirket Içi Exchange Connector gereksinimlerini](exchange-connector-install.md#intune-exchange-connector-requirements) gözden geçirin. 
+
+### <a name="general-considerations-for-the-connector"></a>Bağlayıcı için genel hususlar
+
+- Güvenlik duvarınızın ve proxy sunucularınızın, Intune Exchange bağlayıcısını ve Intune hizmetini barındıran sunucu arasında iletişime izin verdiğinizden emin olun.
+
+- Intune Exchange bağlayıcısını ve Exchange Istemci erişim sunucusunu (CAS) barındıran bilgisayar, etki alanına katılmış ve aynı LAN üzerinde olmalıdır. Intune Exchange Connector tarafından kullanılan hesap için gerekli izinlerin eklendiğinden emin olun.
+
+- Bildirim hesabı otomatik *bulma* ayarlarını almak için kullanılır. Exchange 'de otomatik kaldır hakkında daha fazla bilgi için bkz. [Exchange Server 'da otomatik bulma hizmeti](https://docs.microsoft.com/exchange/architecture/client-access/autodiscover?view=exchserver-2016).
+
+- Intune Exchange Bağlayıcısı, bildirim e-posta iletilerini (Intune 'a kaydolmak için) kullanmaya *başlama* bağlantısıyla birlikte göndermek üzere bildirim hesabı kimlik BILGILERINI kullanarak EWS URL 'sine bir istek gönderir. Kayıt için kullanmaya *başlama* bağlantısı, Android Knox olmayan cihazlar için bir gereksinimdir. Aksi takdirde, bu cihazlar koşullu erişim tarafından engellenir.
+
+### <a name="common-issues-for-connector-configurations"></a>Bağlayıcı yapılandırmalarına ilişkin genel sorunlar
+
+- **Hesap izinleri**: Microsoft Intune Exchange Connector iletişim kutusunda, [gerekli Windows PowerShell Exchange cmdlet 'lerini](exchange-connector-install.md#exchange-cmdlet-requirements)çalıştırmak için uygun izinlere sahip bir kullanıcı hesabı belirttiğinizden emin olun.
+- **Bildirim e-posta iletileri**: bildirimleri etkinleştirin ve bir bildirim hesabı belirtin.
+- **Istemci erişimi sunucusu eşitleme**: Exchange bağlayıcısını yapılandırırken, Exchange bağlayıcısını barındıran sunucuda mümkün olan en düşük ağ gecikmesi olan bir CA belirtin. CA 'LAR ve Exchange Connector arasındaki iletişim gecikmesi, özellikle Exchange Online adanmış kullanılırken cihaz bulmayı geciktirebilirler.
+- **Eşitleme zamanlaması**: Exchange Connector Exchange CA 'ları ile eşitlenene kadar, yeni kaydedilmiş bir cihaza sahip bir Kullanıcı erişim elde etme ile gecikebilir. Tam eşitleme günde bir kez gerçekleşir ve bir Delta (hızlı) eşitleme günde birkaç kez gerçekleştirilir. Gecikme olasılığını en aza indirmek için [hızlı eşitlemeyi veya tam eşitlemeyi el ile zorlayabilirsiniz](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) .
+
 ## <a name="next-steps"></a>Sonraki adımlar
-Bu bilgiler işinize yaramazsa [Microsoft Intune desteği de alabilirsiniz](../fundamentals/get-support.md).
+Aşağıdaki makaleler, yaygın sorunların ve belirli hataların çözümlenmesine yardımcı olabilir:
+
+- [Intune Exchange Connector için sık karşılaşılan sorunları çözün](troubleshoot-exchange-connector-common-problems.md).
+- [Intune Exchange Connector için sık karşılaşılan hataları çözün](troubleshoot-exchange-connector-common-errors.md).
+
+Destek veya Intune Community 'den yardım arama:
+
+- Sorunu gidermeye yardımcı olması veya Microsoft ile bir destek talebi açmak için bkz. Intune konsolunu kullanma [desteği alın](../fundamentals/get-support.md) . 
+- Sorununuzu [Microsoft Intune forumlarına](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)gönderin.  

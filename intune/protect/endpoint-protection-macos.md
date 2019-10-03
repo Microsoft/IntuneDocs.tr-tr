@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da macOS cihazlara Endpoint Protection ekleme | Microsoft Docs
-description: macOS cihazlarda, Mac Apple Store dahil olmak üzere uygulamaların nereye yükleneceğini belirlemek için ağ geçidi denetleyicisini kullanın. Microsoft Intune kullanarak belirli uygulamalara izin vermek, belirli uygulamaları engellemek, gizli mod kullanmak ve hatta bazı gelen bağlantı türlerini engellemek için bir güvenlik duvarı etkinleştirin veya yapılandırın.
+title: Microsoft Intune-Azure 'da macOS 'a Endpoint Protection ekleme | Microsoft Docs
+description: MacOS cihazlarında, Mac App Store dahil olmak üzere uygulamaların yüklenebilecekleri yeri öğrenmek için ağ geçidi denetleyicisini kullanın. Ayrıca, belirli uygulamalara izin veren bir güvenlik duvarı etkinleştirin veya yapılandırın, özellikleri uygulamaları engeller, gizli modu kullanın ve hatta Microsoft Intune kullanarak belirli gelen bağlantı türlerini engelleyin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6090d329eee6f27da21b6133a2b7ccdc7072feb3
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729301"
+ms.locfileid: "71814124"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 'da MacOS Endpoint Protection ayarları  
 
@@ -32,35 +32,35 @@ Bu makalede, macOS çalıştıran cihazlar için yapılandırabileceğiniz Endpo
 
   - **Yapılandırılmadı**  
   - **Mac App Store**  
-  - **Mac App Store ve tanımlı geliştiriciler**  
-  - **Her yer**  
+  - **Mac App Store ve tanımlanan geliştiriciler**  
+  - **Yerdeki**  
 
   **Varsayılan**: yapılandırılmadı  
 
 - **Kullanıcı, ağ geçidi denetleyicisini geçersiz kılabilir**  
-  Kullanıcıların, Gatekeeper ayarını geçersiz kılmasını engeller ve kullanıcıların bir uygulama yüklemek için tıklamasını denetlemesini engeller. Etkinleştirildiğinde, kullanıcılar Control tuşuna tıklama ile herhangi bir uygulamayı yükleyebilir.  
+  Kullanıcıların, Gatekeeper ayarını geçersiz kılmasını engeller ve kullanıcıların bir uygulama yüklemek için tıklamasını denetlemesini engeller. Etkinleştirildiğinde, kullanıcılar herhangi bir uygulamayı denetleyebilir ve yükleyebilir.  
  
   - **Yapılandırılmadı** -kullanıcılar, uygulamaları yüklemek için ' yi denetleyebilir.  
   - **Engelle** -kullanıcıların uygulamaları yüklemek için Control-Click kullanmasını engeller.  
 
   **Varsayılan**: yapılandırılmadı  
 
-## <a name="firewall"></a>Duvarını  
+## <a name="firewall"></a>Güvenlik Duvarı  
 
-Bağlantı noktası yerine uygulama başına bağlantıları denetlemek için güvenlik duvarı kullanın. Uygulama başına ayarlar kullanmak, güvenlik duvarı korumasından faydalanmayı kolaylaştırır. Ayrıca istenmeyen uygulamaların, güvenilen uygulamalara açık olan ağ bağlantı noktalarının kontrolünü ele geçirmelerini önler.  
+Bağlantı noktası başına değil, uygulama başına bağlantıları denetlemek için güvenlik duvarını kullanın. Uygulama başına ayarların kullanılması, güvenlik duvarı korumasının avantajlarını daha kolay hale getirir. Ayrıca, istenmeyen uygulamaların meşru uygulamalar için açık olan ağ bağlantı noktalarının denetimini ele almasını önlemeye de yardımcı olur.  
 
 **Genel**
-- **Duvarını**  
+- **Güvenlik duvarı**  
   Gelen bağlantıların ortamınızda nasıl işleneceğini yapılandırmak için güvenlik duvarını etkinleştirin.  
   - **Yapılandırılmadı**  
-  - **Etkinleştirebilir**  
+  - **Etkinleştirme**  
 
   **Varsayılan**: yapılandırılmadı  
 
 - **Gelen bağlantılar**  
-  DHCP, Bonjour ve IPSec gibi temel Internet Hizmetleri için gereken bağlantılar hariç tüm gelen bağlantıları engelleyin. Bu özellik ayrıca, Dosya Paylaşımı ve Ekran Paylaşımı gibi tüm paylaşım hizmetlerini engeller. Paylaşım cihazları kullanıyorsanız bu ayarı *Yapılandırılmadı* olarak bırakın.  
+  DHCP, Bonjour ve IPSec gibi temel Internet Hizmetleri için gereken bağlantılar hariç tüm gelen bağlantıları engelleyin. Bu özellik, dosya paylaşımı ve ekran paylaşımı gibi tüm paylaşım hizmetlerini de engeller. Paylaşım Hizmetleri kullanıyorsanız, bu ayarı *yapılandırılmamış*olarak tutun.  
   - **Yapılandırılmadı**  
-  - **Engelle**  
+  - **Engelleyin**  
 
   **Varsayılan**: yapılandırılmadı  
 
@@ -73,9 +73,9 @@ Bağlantı noktası yerine uygulama başına bağlantıları denetlemek için g�
     Gelen bağlantıları engellemesi gereken uygulamaları seçin.  
 
   - **Gizli mod**  
-    Bilgisayarın yoklama isteklerine yanıt vermesini engellemek için gizli modu etkinleştirin. Cihaz, yetkilendirilmiş uygulamalardan gelen istekleri yanıtlamaya devam eder. ICMP (ping) gibi beklenmedik istekler yoksayılır.  
+    Bilgisayarın yoklama isteklerine yanıt vermesini engellemek için gizli modu etkinleştirin. Cihaz, yetkili uygulamalar için gelen istekleri yanıtlamaya devam eder. ICMP (ping) gibi beklenmeyen istekler yok sayılır.  
     - **Yapılandırılmadı**  
-    - **Etkinleştirebilir**  
+    - **Etkinleştirme**  
 
     **Varsayılan**: yapılandırılmadı  
 
@@ -85,10 +85,10 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
 > [!IMPORTANT]  
 > MacOS 10,15 itibariyle, Filekasası yapılandırması kullanıcı onaylı MDM kaydı gerektirir. 
 
-- **FileVault**  
+- **Dosya Kasası**  
   MacOS 10,13 ve üstünü çalıştıran cihazlarda Filekasasıyla XTS-AES 128 kullanarak tam disk şifrelemeyi *etkinleştirebilirsiniz* .  
   - **Yapılandırılmadı**  
-  - **Etkinleştirebilir**  
+  - **Etkinleştirme**  
 
   **Varsayılan**: yapılandırılmadı  
 
@@ -107,13 +107,13 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
     **Varsayılan**: yapılandırılmadı  
 
   - **Atlayakaç kez izin verilir**  
-  Kullanıcının oturum açması için dosya kasasından önce dosya kasasını etkinleştirmek üzere bir kullanıcının istekleri yoksaymasına izin sayısını belirleyin.  
+  Kullanıcının oturum açması için dosya kasasından önce dosya kasasını etkinleştirmek üzere bir kullanıcının istekleri yoksaymasına izin sayısını belirleyin. 
 
     - **Yapılandırılmadı** -bir sonraki oturum açma işlemine izin verilmesi için cihazda şifreleme gerekir.  
     - **1** ila **10** -bir kullanıcının cihazda şifrelemeyi gerektirmeden önce 1 ila 10 kez istemi yoksaymasına izin verin.  
     - **Sınır yok, her zaman sor** -kullanıcıdan dosya kasasını etkinleştirmesi istenir, ancak şifreleme hiçbir zaman gerekli değildir.  
  
-    **Varsayılan**: yapılandırılmadı  
+    **Varsayılan**: *değişir* - *oturumu kapatma sırasında devre dışı bırakma istemi* **Yapılandırılmadı**olarak ayarlandığında, bu ayar varsayılan olarak **yapılandırılmaz**. *Oturumu kapatma sırasında Disable* seçeneğini devre **dışı**bırak olarak ayarlarsanız, bu ayar varsayılan olarak **1** ' dir ve **yapılandırılmamış** bir değer bir seçenek değildir.
 
 Intune ile Filekasası hakkında daha fazla bilgi için bkz. [filekasası kurtarma anahtarları](encryption-monitor.md#filevault-recovery-keys).
 

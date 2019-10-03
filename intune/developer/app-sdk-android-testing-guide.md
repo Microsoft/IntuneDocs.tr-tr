@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/09/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8ffc81ec2dba3eac0af4eeb94e22002ec8afa87
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1484567721283ddb91f3ecebbc448e7356ceaf5a
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730361"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830545"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Android için Microsoft Intune uygulama SDK 'Sı geliştiriciler test Kılavuzu
 
@@ -41,9 +41,6 @@ Yeni hesaplar önceden oluşturulmuş verilerle ve ile oluşturulabilir. Yeni bi
 
 > [!NOTE]
 > Uygulamanız Azure portal listelenmemişse, **daha fazla uygulama** seçeneğini belirleyerek ve metin kutusunda paket adını sağlayarak bu ilkeyi bir ilkeyle hedefleyebilirsiniz.
-
-> [!IMPORTANT]
-> Uygulama yapılandırma ilkesinin uygulanabilmesi için, kaydolan Kullanıcı bir [Intune uygulama koruma ilkesi](../apps/app-protection-policy.md)tarafından hedeflenmelidir.
 
 ## <a name="test-cases"></a>Test çalışmaları
 
@@ -109,7 +106,7 @@ Yönetilen uygulamaları, şirket e-postalarından ve belgelerinden uzaktan temi
 3. Uygulamanız `WIPE_USER_DATA` veya `WIPE_USER_AUXILARY_DATA` için kaydedilmişse, aşağıdaki koşulları onaylayın:
     - Yönetilen içerik uygulamadan kaldırılır. Daha fazla bilgi için bkz. [Android Için Intune uygulama SDK 'sı Geliştirici Kılavuzu-seçmeli silme](app-sdk-android.md#selective-wipe).
 
-### <a name="multi-identity"></a>Çoklu Kimlik
+### <a name="multi-identity"></a>Çoklu kimlik
 [Çoklu kimlik desteğini](app-sdk-android.md#multi-identity-optional) tümleştirme, kapsamlı bir şekilde test olması gereken yüksek riskli bir değişiklik. En yaygın sorunlar, kimliğin (bağlam ve tehdit düzeyi) yanlış ayarı ve ayrıca izleme dosyaları (`MAMFileProtectionManager`) nedeniyle olacaktır.
 
 Çoklu kimlik için aşağıdaki senaryolar yeniden doğrulanması gerekir:

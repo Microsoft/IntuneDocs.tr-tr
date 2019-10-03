@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 48a7fe51c2fa6bc27ed4dda206335a3171c2500c
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729389"
+ms.locfileid: "71814144"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune ile içeri aktarılan PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -55,7 +55,7 @@ Intune ile S/MIME kullanma hakkında daha fazla bilgi için, [e-postayı şifrel
 
 - **Visual studio 2015 veya üzeri** (isteğe bağlı): PFX sertifikalarını Microsoft Intune içeri aktarmaya yönelik cmdlet 'lerle birlikte yardımcı PowerShell modülünü oluşturmak Için Visual Studio 'yu kullanırsınız. Yardımcı PowerShell cmdlet 'lerini almak için bkz. [GitHub 'Da Pfxımport PowerShell projesi](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
-## <a name="how-it-works"></a>Nasıl çalıştığı
+## <a name="how-it-works"></a>Nasıl çalışır
 
 Bir kullanıcıya **içeri aktarılan BIR PFX sertifikasını** dağıtmak için Intune 'u kullandığınızda, cihaza ek olarak iki bileşen oynatılır: 
 
@@ -71,9 +71,9 @@ Bir kullanıcıya **içeri aktarılan BIR PFX sertifikasını** dağıtmak için
 2. *Microsoft Intune Için PFX Sertifika bağlayıcısını* , bağlayıcıyı yükleyeceğiniz sunucudan erişilebilen bir konuma indirmek için yönergeleri izleyin.
 3. İndirme tamamlandıktan sonra, sunucusunda oturum açın ve yükleyiciyi (PfxCertificateConnectorBootstrapper. exe) çalıştırın.  
    - Varsayılan yükleme konumunu kabul ettiğinizde, bağlayıcı `Program Files\Microsoft Intune\PFXCertificateConnector` ' a yüklenir.
-   - Bağlayıcı hizmeti yerel sistem hesabının altında çalışır. İnternet erişimi için bir proxy gerekliyse, yerel hizmet hesabının sunucudaki proxy ayarlarına erişediğini doğrulayın.
+   - Bağlayıcı hizmeti yerel sistem hesabı altında çalışır. İnternet erişimi için bir proxy gerekliyse, yerel hizmet hesabının sunucudaki proxy ayarlarına erişediğini doğrulayın.
 
-4. Microsoft Intune için PFX Sertifika Bağlayıcısı yüklendikten sonra **Kayıt** sekmesini açar. Intune bağlantısını etkinleştirmek için **Oturum Aç**'ı seçin ve Azure genel yöneticisi veya Intune yöneticisi izinleri olan bir hesap girin.
+4. Microsoft Intune için PFX Sertifika Bağlayıcısı, yüklemeden sonra **kayıt** sekmesini açar. Intune bağlantısını etkinleştirmek için **oturum açın**ve Azure genel yönetici veya Intune yönetici izinleri olan bir hesap girin.
 
    > [!WARNING]
    > Varsayılan olarak, Windows Server **IE artırılmış güvenlik yapılandırması** **Açık** olarak ayarlanır ve bu, Office 365 ' de oturum açma sorunları oluşmasına neden olabilir.
@@ -133,7 +133,7 @@ Ortak/özel anahtar çiftini oluşturmak ve depolamak için bir donanım güvenl
 
 Aşağıdaki işlem, PFX sertifikalarının nasıl içeri aktarılacağını gösteren bir örnek olarak PowerShell cmdlet 'lerini kullanır. Gereksinimlerinize bağlı olarak farklı seçenekler seçebilirsiniz.
 
-Şu seçenekler mevcuttur:  
+Seçeneklere şunlar dahildir:  
 - Amaçlanan amaç (bir etiketi temel alarak sertifikaları gruplandırır):  
   - atanmadı
   - SMIME şifreleme
@@ -161,7 +161,7 @@ Anahtarı oluşturmak için kullandığınız sağlayıcıyla eşleşen anahtar 
 5. İçeri aktardığınız her PFX dosyası için parolayı, `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force` çalıştırarak güvenli bir dizeye dönüştürün.  
 6. **Userpfxsertifika** nesnesi oluşturmak için `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>"` ' i çalıştırın
 
-   Örneğin: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
+   Örneğin, `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
 
    > [!NOTE]  
    > Sertifikayı bağlayıcının yüklü olduğu sunucudan başka bir sistemden içeri aktardığınızda, Use anahtar dosya yolunu içeren aşağıdaki komutu kullanmalıdır: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>" "<File path to public key file>"`
@@ -172,26 +172,26 @@ Anahtarı oluşturmak için kullandığınız sağlayıcıyla eşleşen anahtar 
 
 Kullanılabilir diğer komutlar hakkında daha fazla bilgi için, [GitHub 'da, Pfxımport PowerShell projesinde](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)bulunan Benioku dosyasına bakın.
 
-## <a name="create-a-pkcs-imported-certificate-profile"></a>PKCS içeri aktarılmış sertifika profili oluşturma
+## <a name="create-a-pkcs-imported-certificate-profile"></a>PKCS içeri aktarılan sertifika profili oluşturma
 
-Sertifikaları Intune’da içeri aktardıktan sonra bir **PKCS içeri aktarılmış sertifikası** profili oluşturun ve bu profili Azure Active Directory gruplarına atayın.
+Sertifikaları Intune 'a aktardıktan sonra, **PKCS içeri aktarılmış bir sertifika** profili oluşturun ve Azure Active Directory gruplarına atayın.
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) portalında **cihaz yapılandırması**@no__t **-2**profil  > **Profil oluştur**' a gidin.
 2. Aşağıdaki özellikleri girin:
 
-   - Profil için **Ad**
+   - Profil için **ad**
    - İsteğe bağlı olarak bir açıklama ayarlayın
-   - Profili dağıtmak için **Platform**
-   - **Profil Türü**’nü **PKCS içeri aktarılan sertifikası** olarak ayarlayın
+   - Profilin dağıtılacağı **Platform**
+   - **Profil türünü** **PKCS içeri aktarılan sertifikası** olarak ayarla
 
-3. **Ayarlar**'a gidin ve aşağıdaki özellikleri girin:
+3. **Ayarlar**' a gidin ve aşağıdaki özellikleri girin:
 
-   - **Amaçlanan amaç**: Bu profil için içeri aktarılan sertifikaların amaçlanan amacını belirtin. Yöneticiler, sertifikaları farklı amaçlanan amaçlarla (kimlik doğrulama, S/MIME imzalama veya S/MIME Şifrelemesi gibi) içeri aktarabilir. Sertifika profilinde seçilen kullanım amacı, sertifika profilini doğru içeri aktarılmış sertifikalarla eşleştirir. Amaçlanan amaç, içeri aktarılan sertifikaları gruplamak için bir etikettir ve bu etiketle içeri aktarılan sertifikaların amaçlanan amacı karşıladığını garanti etmez.  
+   - **Amaçlanan amaç**: Bu profil için içeri aktarılan sertifikaların amaçlanan amacını belirtin. Yöneticiler, sertifikaları farklı amaçlanan amaçlarla (kimlik doğrulama, S/MIME imzalama veya S/MIME Şifrelemesi gibi) içeri aktarabilir. Sertifika profilinde seçilen amaçlanan amaç, sertifika profiliyle, doğru içeri aktarılan sertifikalarla eşleşir. Amaçlanan amaç, içeri aktarılan sertifikaları gruplamak için bir etikettir ve bu etiketle içeri aktarılan sertifikaların amaçlanan amacı karşıladığını garanti etmez.  
    - **Sertifika geçerlilik süresi**: geçerlilik süresi sertifika şablonunda değiştirilmediği takdirde, bu seçenek varsayılan olarak bir yıl olur.  
-   - **Anahtar depolama sağlayıcısı (KSP)** : Windows için, cihazdaki anahtarları nereye depolayacağınızı seçin.  
+   - **Anahtar depolama sağlayıcısı (KSP)** : Windows için, anahtarların cihazda depolanacağı yeri seçin.  
 
-4. Profilinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
-5. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profillerini atama](../configuration/device-profile-assign.md).
+4. Profilinizi kaydetmek için **tamam** > **Oluştur** ' u seçin.
+5. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profilleri atama](../configuration/device-profile-assign.md).
 
 
 

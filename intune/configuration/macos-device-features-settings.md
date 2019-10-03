@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3e270fc3efcc92a138fe97cbe599f7bd2bf1e55
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730569"
+ms.locfileid: "71816864"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 'da macOS cihaz özelliği ayarları
 
@@ -90,7 +90,7 @@ AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve ba�
 
 - **Menü çubuğunda ek bilgileri göster**: menü çubuğundaki saat alanı **seçildiğinde, ana** bilgisayar adı ve MacOS sürümünü gösterir. **Yapılandırılmadı** (varsayılan), bu bilgileri menü çubuğunda göstermez.
 - **Başlık**: cihazda oturum açma ekranında gösterilen bir ileti girin. Örneğin, kuruluş bilgilerinizi, bir hoş geldiniz iletisini, kayıp ve bulunan bilgileri girin ve bu şekilde devam edin.
-- **Oturum açma biçimini seçin**: kullanıcıların cihazda nasıl oturum açmasını seçin. Seçenekleriniz şunlardır:
+- **Oturum açma biçimini seçin**: kullanıcıların cihazda nasıl oturum açmasını seçin. Seçenekleriniz:
   - **Kullanıcı adı ve parola iste** (varsayılan): kullanıcıların bir Kullanıcı adı ve parola girmesini gerektirir.
   - **Tüm kullanıcıları Listele, parola iste**: Kullanıcıların Kullanıcı listesinden kullanıcı adını seçmesini ve sonra parolasını girmesini gerektirir. Ayrıca şunları yapılandırın:
 
@@ -106,7 +106,7 @@ AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve ba�
 - **Yeniden Başlat düğmesi**: **Gizle** , oturum açma ekranında yeniden Başlat düğmesini göstermez. **Yapılandırılmadı** (varsayılan) yeniden Başlat düğmesini gösterir.
 - **Uyku düğmesi**: **Gizle** , oturum açma ekranında uyku düğmesini göstermez. **Yapılandırılmadı** (varsayılan) uyku düğmesini gösterir.
 
-#### <a name="other"></a>farklı
+#### <a name="other"></a>Diğer
 
 - **Konsoldan Kullanıcı oturumunu devre dışı bırak**: **devre dışı bırak** , oturum açmak için kullanılan MacOS komut satırını gizler. Tipik kullanıcılar için bu ayarı **devre dışı bırakın** . **Yapılandırılmadı** (varsayılan), gelişmiş kullanıcıların MacOS komut satırını kullanarak oturum açmasına izin verir. Konsol modunu girmek için, kullanıcılar Kullanıcı adı alanına `>console` girer ve konsol penceresinde kimlik doğrulaması yapılmalıdır.
 
@@ -122,13 +122,13 @@ Kullanıcılar cihazlarda oturum açtıktan sonra, aşağıdaki ayarlar neler ya
 
 ## <a name="single-sign-on-app-extension"></a>Çoklu oturum açma uygulama uzantısı
 
-Bu özellik şu platformlarda geçerlidir:
+Bu özellik için geçerlidir:
 
 - macOS 10,15 ve üzeri
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri 
 
-- **SSO uygulama uzantısı türü**: KIMLIK bilgisi SSO uygulaması uzantısının türünü seçin. Seçenekleriniz şunlardır:
+- **SSO uygulama uzantısı türü**: KIMLIK bilgisi SSO uygulaması uzantısının türünü seçin. SSO uygulama uzantısı profilini kaydettiğinizde, SSO uygulama uzantısı türünü değiştiremezsiniz. Seçenekleriniz:
 
   - **Yapılandırılmadı**: uygulama uzantıları kullanılmıyor. SSO uygulama uzantısını devre dışı bırakmak için, SSO uygulama uzantısı türünü **Kerberos** veya **kimlik bilgilerinden** **Yapılandırılmadı**olarak değiştirin.
   - **Kimlik bilgisi**: SSO kullanmak için genel, özelleştirilebilir bir kimlik bilgisi uygulama uzantısı kullanın. Kuruluşunuzun SSO uygulaması uzantısının uzantı KIMLIĞINI ve takım KIMLIĞINI öğrendiğinizden emin olun.  
@@ -150,7 +150,7 @@ Bu özellik şu platformlarda geçerlidir:
 
 - **Ek yapılandırma** (yalnızca kimlik bilgileri): SSO uygulama uzantısına geçirilecek uzantıya özgü ek verileri girin:
   - **Yapılandırma anahtarı**: `user name` gibi eklemek istediğiniz öğenin adını girin.
-  - **Değer türü**: veri türünü girin. Seçenekleriniz şunlardır:
+  - **Değer türü**: veri türünü girin. Seçenekleriniz:
 
     - Dize
     - Boole: **yapılandırma değeri**' nde `True` veya `False` girin.
@@ -192,7 +192,7 @@ Intune 'da şunları yapabilirsiniz:
 - Birçok uygulamadan etki alanı ilişkilendirmesi ekleyin.
 - Birçok etki alanını aynı uygulamayla ilişkilendirin.
 
-Bu özellik şu platformlarda geçerlidir:
+Bu özellik için geçerlidir:
 
 - macOS 10,15 ve üzeri
 
@@ -208,6 +208,8 @@ Bu özellik şu platformlarda geçerlidir:
 
 - **Etki alanı**: bir uygulamayla ilişkilendirilecek Web sitesi etki alanını girin. Etki alanı bir hizmet türü ve `webcredentials:www.contoso.com` gibi tam konak adı içerir.
 
+  Etki alanının başlangıcından önce `*.` (bir yıldız joker karakteri ve bir nokta) girerek ilişkili bir etki alanının tüm alt etki alanlarını eşleştirebilirsiniz. Süre gereklidir. Tam etki alanları joker etki alanlarından daha yüksek önceliğe sahiptir. Bu nedenle, tam alt etki *alanında bir eşleşme* bulunmazsa üst etki alanlarından desenler eşleştirilir.
+
   Hizmet türü şu olabilir:
 
   - **authsrv**: çoklu oturum açma uygulama uzantısı
@@ -221,6 +223,6 @@ Bu özellik şu platformlarda geçerlidir:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
+[Profili atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
 
 [İOS](ios-device-features-settings.md)üzerinde cihaz özelliklerini de yapılandırabilirsiniz.
