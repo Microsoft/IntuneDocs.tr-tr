@@ -1,12 +1,12 @@
 ---
-title: Kullanıcı - Intune Veri Ambarı
+title: Kullanıcı-Intune veri ambarı
 titleSuffix: Microsoft Intune
-description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Kullanıcı kategorisi için başvuru konusu.
-keywords: Intune Veri Ambarı
+description: Intune veri ambarı API 'sindeki varlık koleksiyonlarının Kullanıcı kategorisi için başvuru konusu.
+keywords: Intune veri ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/09/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,35 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 971322a85b00b68f3c6aee3c2026394756b36b50
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 444ed3ad156e81a15eec0b86bb670eb63b5b04e7
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730109"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71939920"
 ---
 # <a name="reference-for-user-entity"></a>Kullanıcı varlığı için başvuru
 
 **Kullanıcılar** kategorisi, veri modelindeki Kullanıcı özelliklerini tanımlayan **Kullanıcı** varlığını içerir.
 
-## <a name="users"></a>kullanıcılarına
+## <a name="users"></a>kullanıcılar
 
-**user** varlığı, kuruluşunuzda kendisine lisans atanmış olan tüm Azure Active Directory (Azure AD) kullanıcılarını listeler.
+**Kullanıcı** varlığı, kuruluşunuzda lisanslanan Lisansların atandığı tüm Azure Active Directory (Azure AD) kullanıcılarını listeler.
 
-**Kullanıcı** varlık koleksiyonu, kullanıcı verilerini içerir. Bu kayıtlar, kullanıcı kaldırıldıysa dahi, veri toplama döneminde kullanıcı durumlarını içerir. Örneğin, bir kullanıcı Intune'a eklenebilir ve son bir ay içerisinde kaldırılabilir. Bu kullanıcı, raporun olduğu saatte bulunmasa da kullanıcı ve durum, önceki ayın verilerinde bulunuyor. Kullanıcının verilerinizdeki varlığının süresini gösterecek bir rapor oluşturabilirsiniz.
+Kullanıcı **varlık koleksiyonu** , Kullanıcı verilerini içerir. Bu kayıtlar, Kullanıcı kaldırılmış olsa bile veri toplama süresi boyunca Kullanıcı durumlarını içerir. Örneğin, bir Kullanıcı Intune 'a eklenebilir ve son ayın kursu sırasında kaldırılabilir. Bu Kullanıcı rapor sırasında mevcut olmasa da, önceki ayın verilerinde Kullanıcı ve durum bulunur. Verilerdeki geçmiş olma süresini gösteren bir rapor oluşturabilirsiniz.
 
-|          Özellik          |                                                                                                           Description                                                                                                          |                Örnek               |
+|          Özellik          |                                                                                                           Açıklama                                                                                                          |                Örnek               |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
-| userKey                    | Veri ambarındaki kullanıcının benzersiz tanımlayıcısı - vekil anahtar.                                                                                                                                                         | 123                                  |
-| UserID                     | Kullanıcının benzersiz tanımlayıcısı - UserKey’e benzerdir ancak doğal bir anahtardır.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
+| UserKey                    | Veri ambarındaki kullanıcının benzersiz tanımlayıcısı-vekil anahtar.                                                                                                                                                         | 123                                  |
+| UserID                     | Kullanıcının benzersiz tanımlayıcısı-UserKey 'e benzer ancak doğal bir anahtardır.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | Kullanıcı e-postası                  | Kullanıcının e-posta adresi.                                                                                                                                                                                                     | John@constoso.com                    |
-| userPrincipalName                        | Kullanıcının kullanıcı asıl adı.                                                                                                                                                                                               | John@constoso.com                    |
-| displayName                | Kullanıcının görünen adı.                                                                                                                                                                                                      | John                                 |
-| Intunelisanslanmış             | Kullanıcının Intune lisansı olup olmadığını belirtir.                                                                                                                                                                              | Doğru/Yanlış                           |
-| isDeleted                  | Kullanıcının tüm lisanslarının geçerliliğini yitirip yitirmediğini ve kullanıcının buna bağlı olarak Intune’dan kaldırılıp kaldırılmadığını belirtir. Tek bir kayıt için bu bayrak değişmez. Bunun yerine, yeni bir kullanıcı durumu için yeni bir kayıt oluşturulur. | Doğru/Yanlış                           |
-| RowLastModifiedDateTimeUTC | Kaydın veri ambarında son değiştirilme tarihi ve saati (UTC)                                                                                                                                                 | 23.11.2016 0:00                      |
+| userPrincipalName                        | Kullanıcının Kullanıcı asıl adı.                                                                                                                                                                                               | John@constoso.com                    |
+| DisplayName                | Kullanıcının görünen adı.                                                                                                                                                                                                      | \                                 |
+| Intunelisanslanmış             | Bu kullanıcının Intune lisanslı olup olmadığını belirtir.                                                                                                                                                                              | Doğru/yanlış                           |
+| IsDeleted                  | Tüm Kullanıcı lisanslarının kullanım dışı olup olmadığını ve kullanıcının bu nedenle Intune 'dan kaldırılıp kaldırılmadığını belirtir. Tek bir kayıt için bu bayrak değişmez. Bunun yerine, yeni bir Kullanıcı durumu için yeni bir kayıt oluşturulur. | Doğru/yanlış                           |
+| RowLastModifiedDateTimeUTC | Kayıt, veri ambarında son değiştirildiği tarih ve saat (UTC)                                                                                                                                                 | 11/23/2016 0:00                      |
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
-- Kullanıcı verilerini şu anda etkin olan kullanıcılarla sınırlamak için **Geçerli Kullanıcı** varlık koleksiyonunu kullanabilirsiniz. Daha fazla bilgi için bkz. [Geçerli kullanıcı varlığı için referans](../reports-ref-current-user.md).
-- Veri ambarının kullanıcının ömrünü Intune’da nasıl izlediği hakkında daha fazla bilgi edinmek için bkz. [Intune Veri Ambarı’nda kullanıcı ömrü gösterimi](reports-ref-user-timeline.md).
+- **Geçerli Kullanıcı** varlığı koleksiyonunu, Kullanıcı verilerini Şu anda etkin olan kullanıcılarla sınırlandırmak için kullanabilirsiniz. Daha fazla bilgi için bkz. [geçerli kullanıcı varlığı Için başvuru](../reports-ref-current-user.md).
+- Veri ambarının Intune 'da bir kullanıcının ömrünü nasıl izlediği hakkında daha fazla bilgi edinmek için bkz. [Intune veri ambarındaki Kullanıcı ömrü gösterimi](reports-ref-user-timeline.md).

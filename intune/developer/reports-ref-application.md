@@ -1,12 +1,12 @@
 ---
 title: Uygulama varlıkları için başvuru
 titleSuffix: Microsoft Intune
-description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Uygulama kategorisi için başvuru konusu.
-keywords: Intune Veri Ambarı
+description: Intune veri ambarı API 'sindeki varlık koleksiyonlarının uygulama kategorisi için başvuru konusu.
+keywords: Intune veri ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/09/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,91 +17,91 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1e737f1cce594b5dd40b2f43048ba37578f5d7c9
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730165"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940433"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
-**Uygulama** kategorisi, mobil cihazlar için aşağıdaki gibi bilgileri izleyen varlıklar içerir:
+**Uygulama** kategorisi, mobil cihazlar için şu gibi bilgileri izleyen varlıklar içerir:
 
 - Uygulamanın sürümleri
 - Uygulamanın yükleme kaynağı
-- Uygulamayı oluşturan geliştirici türü
-- Uygulamanın yönetilen yazılım türleri, örneğin **sepet** veya **masaüstü**
-- Uygulamanın Volume Purchasing Program (VPP) durumu
+- Bir uygulamayı oluşturan geliştiricilerin türü
+- Bir uygulama için yönetilen yazılım türleri, örneğin **sepet** veya **Masaüstü**
+- Uygulamanın toplu satın alma programı (VPP) durumu
 
-## <a name="apprevisions"></a>appRevisions
+## <a name="apprevisions"></a>Apprevizyonlar
 
-**appRevision** varlığı, uygulamaların tüm sürümlerini listeler.
+**Apprevision** varlığı, tüm uygulama sürümlerini listeler.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | AppKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
-| Uygulama |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| Uncaya |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
-| title |Uygulama başlığı. |Excel |
-| 'In |Uygulama yayımcısı. |Microsoft |
-| UploadState |Uygulamanın karşıya yüklenme durumu. |1 |
-| AppTypeKey |Aşağıdaki bölümde açıklanan AppType özelliğine başvuru. | |
-| VppProgramTypeKey |Aşağıda açıklanan VppProgramType özelliğine başvuru. | |
-| CreationTime |Düzeltmenin oluşturulduğu zaman. |23.11.2016 12:00:00 |
-| ModifiedTime |Bu düzeltmeyle ilgili herhangi bir şeyin en son değiştirildiği an. |23.11.2016 12:00:00 |
-| boyut |İkili boyutu. | |
-| startDateInclusiveUTC |Bu uygulama düzeltmesi, veri ambarında oluşturulduğunda tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
-| EndDateExclusiveUTC |Bu uygulama düzeltmesi kullanımdan kalktığında tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
-| IsCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir. |Doğru/Yanlış |
-| RowLastModifiedDateTimeUTC |Bu uygulama sürümü, veri ambarında son değiştirildiğinde tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
+| Uygulama |Uygulamanın benzersiz tanımlayıcısı-AppKey ile benzerdir, ancak bu anahtar doğal bir uygulamadır. |b66bc706-ffff-7437-0340-032819502773 |
+| Uncaya |İkilinin karşıya yüklenmesi sırasında yönetici tarafından belirtilen sürüm. |2 |
+| Başlığın |Uygulamanın başlığı. |Excel |
+| 'In |Uygulamanın yayımcısı. |Microsoft |
+| UploadState |Uygulamanın durumunu karşıya yükleyin. |1\. |
+| AppTypeKey |Aşağıdaki bölümde açıklanan AppType öğesine başvuru. | |
+| VppProgramTypeKey |Aşağıda açıklanan VppProgramType öğesine başvuru. | |
+| CreationTime |Bu düzeltmenin oluşturulduğu zaman. |11/23/2016 12:00:00 |
+| ModifiedTime |Bu düzeltme ile ilgili herhangi bir şeyin değiştirildiği son zaman. |11/23/2016 12:00:00 |
+| size |İkilinin boyutu. | |
+| StartDate, Iveutc |Bu uygulama düzeltmesinin veri ambarında oluşturulduğu tarih ve saat (UTC). |11/23/2016 12:00:00 |
+| EndDateExclusiveUTC |Bu uygulama düzeltmesi kullanımdan kalktığında UTC Tarih ve saat. |11/23/2016 12:00:00 |
+| IsCurrent |Bu uygulama sürümünün, veri ambarında güncel olup olmadığını gösterir. |Doğru/yanlış |
+| RowLastModifiedDateTimeUTC |Bu uygulama sürümünün, veri ambarında son değiştirildiği tarih ve saat (UTC). |11/23/2016 12:00:00 |
 
-## <a name="apptypes"></a>appTypes
+## <a name="apptypes"></a>AppTypes
 
-**appTypes** varlığı, bir uygulamanın yükleme kaynağını listeler.
+**Apptype** varlığı, bir uygulamanın yükleme kaynağını listeler.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
-| Apptypeıd |Tür kimliği |
+| Apptypeıd |Türün KIMLIĞI |
 | AppTypeKey |Anahtar için yedek anahtar |
 | AppTypeName |Uygulama türü |
 
 ### <a name="example"></a>Örnek
 
-| AppTypeID  | Ad | Description |
+| Apptypeıd  | Name | Açıklama |
 |---------|------------|--------|
-| 0 |Android mağazası uygulaması | Bir Android mağazası uygulaması. |
-| 1 |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
-| 2 |Yönetilen Android mağazası uygulaması (MAM) | Yönetimi etkin bir Android mağazası uygulaması. |
-| 3 |iOS mağazası uygulaması | Bir iOS mağazası uygulaması. |
-| 4 |iOS LOB uygulaması | Bir iOS iş kolu uygulaması. |
-| 5 |Yönetilen iOS mağazası uygulaması (MAM?) | Yönetimi etkin bir iOS mağazası uygulaması. |
+| 0 |Android Mağazası uygulaması | Android Mağazası uygulaması. |
+| 1\. |Android LOB uygulaması | Android iş kolu uygulaması. |
+| 2 |Yönetilen Android Mağazası uygulaması (MAM) | Yönetimi etkin bir Android Mağazası uygulaması. |
+| 3 |iOS Mağazası uygulaması | Bir iOS Mağazası uygulaması. |
+| 4 |iOS LOB uygulaması | İOS iş kolu uygulaması. |
+| 5 |Yönetilen iOS Mağazası uygulaması (MAM?) | Yönetim etkin olan bir ıossan uygulaması. |
 | 6 |O365 Pro Plus Suite | Windows 10 için Office 365 Pro Plus Suite. |
-| 7 |Web uygulaması | Bir web uygulaması. |
-| 8 |Windows Phone 8.1 mağazası uygulaması | Bir Windows Phone 8.1 mağazası uygulaması. |
-| 9 |Windows mağazası uygulaması | Bir Windows mağazası uygulaması. |
-| 10 |Windows LOB uygulaması | Bir Windows AppX iş kolu uygulaması. |
-| 11 |Windows Mobile MSI | Bir MSI iş kolu uygulaması. |
+| 7 |Web uygulaması | Bir Web uygulaması. |
+| 8 |Windows Phone 8,1 Mağazası uygulaması | Windows Phone 8,1 Mağazası uygulaması. |
+| 9 |Windows Mağazası uygulaması | Bir Windows Mağazası uygulaması. |
+| 10 |Windows LOB uygulamaları | Bir Windows AppX iş kolu uygulaması. |
+| 11 |Windows Mobile MSI | MSI iş kolu uygulaması. |
 | 12 |Windows Phone LOB uygulaması | Bir Windows Phone iş kolu uygulaması. |
 
 
-## <a name="vppprogramtypes"></a>vppProgramTypes
+## <a name="vppprogramtypes"></a>VppProgramTypes
 
-**vppProgramType** varlığı, bir uygulama için olası VPP program türlerini listeler.
+**Vppprogramtype** varlığı, bir uygulama IÇIN olası VPP program türlerini listeler.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
-| Vppprogramtypeıd | Tür kimliği. |
-| VppProgramTypeKey | Anahtar için vekil anahtar. |
-| VppProgramTypeName | VPP Program türü. |
+| Vppprogramtypeıd | Türün KIMLIĞI. |
+| VppProgramTypeKey | Anahtar için yedek anahtar. |
+| VppProgramTypeName | VPP program türü. |
 
 ### <a name="example"></a>Örnek
 
-| VppProgramID  | Ad | Description |
+| Vppprogramıd  | Name | Açıklama |
 |---------|------------|--------|
-| 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft’un VPP programı. |
-| 00000000-0000-0000-0000-000000000000 | Henüz kullanılamıyor | Varsayılan değer, No VPP. |
-| B54814E0-68EA-4BA4-8088-B5AAB58E737B | Apple | Apple’ın VPP programı. |
+| 3DDAV2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft 'un VPP programı. |
+| 00000000-0000-0000-0000-000000000000 | Henüz kullanılamıyor | Varsayılan değer, VPP yok. |
+| B54814E0-68EA-4BA4-8088-B5AAB58E737B | Apple | Apple 'ın VPP programı. |
 
 
 
@@ -109,23 +109,23 @@ ms.locfileid: "71730165"
 
 **Applicationınventory** varlığı, envanter koleksiyonu sırasında cihazda bulunan uygulamaları listeler.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
-| DeviceKey | Bu, Intune cihaz kimliğini içeren Cihaz tablosuna bir başvurudur. |
-| dateKey | Envanterin alındığı günü gösteren tarih tablosuna başvuru. |
+| DeviceKey | Bu, Intune cihaz KIMLIĞINI içeren cihaz tablosuna bir başvurudur. |
+| DateKey | Sayım gününü gösteren tarih tablosuna başvuru. |
 | ApplicationName | Uygulama adı. |
 | ApplicationVersion | Uygulamanın sürümü. |
 | Paketleme Taboyutu | Uygulamanın bayt cinsinden boyutu. |
 
-## <a name="mobileappinstallstates"></a>mobileAppInstallStates
+## <a name="mobileappinstallstates"></a>Mobileappınstallstates
 
 **Mobileappınstallstate** varlığı, bir mobil uygulamanın cihaz, Kullanıcı veya her ikisini de içeren bir gruba atandıktan sonra yüklenmesi durumunu temsil eder.
 
-| Özellik | Description |
+| Özellik | Açıklama |
 |---|---|
-| Appınstallstatekey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
-| Appınstallstate | Uygulama yükleme durumunun Enum değeri. |
-| Appınstallstatename | Uygulama yükleme durumunun adı. |
+| Appınstallstatekey | Hesabınız için uygulama yüklemesi durumunun benzersiz KIMLIĞI. |
+| Appınstallstate | Uygulama yüklemesi durumunun Enum değeri. |
+| Appınstallstatename | Uygulama yüklemesi durumunun adı. |
 
 
 

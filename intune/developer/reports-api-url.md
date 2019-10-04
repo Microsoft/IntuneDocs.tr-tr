@@ -1,12 +1,12 @@
 ---
-title: Intune Veri Ambarı API uç noktası
+title: Intune veri ambarı API uç noktası
 titleSuffix: Microsoft Intune
 description: Bu başvuru konusu Microsoft Intune veri ambarı API 'SI yapısını açıklar. Filtre örnekleri verilmiştir.
-keywords: Intune Veri Ambarı
+keywords: Intune veri ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 10/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,70 +17,70 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e431ba349d8e454429bab9f2a51bcfb623a23e0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f73e80fed5de74bc074e26502270467b7d846e5c
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730221"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940157"
 ---
-# <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
+# <a name="intune-data-warehouse-api-endpoint"></a>Intune veri ambarı API uç noktası
 
-Intune Veri Ambarı API’sini, belirli rol tabanlı erişim denetimlerine ve Azure AD kimlik bilgilerine sahip bir hesapla kullanabilirsiniz. Daha sonra REST istemcinizi, OAuth 2.0 kullanarak Azure AD’de yetkilendirirsiniz. Ve son olarak, veri ambarı kaynağı olarak kullanılacak anlamlı bir URL oluşturursunuz.
+Intune veri ambarı API 'sini, belirli rol tabanlı erişim denetimlerine ve Azure AD kimlik bilgilerine sahip bir hesapla kullanabilirsiniz. Daha sonra, OAuth 2,0 kullanarak REST istemcinizi Azure AD ile yetkilendirirsiniz. Son olarak, veri ambarı kaynağını çağırmak için anlamlı bir URL oluşturacak.
 
 [!INCLUDE [reports-credential-reqs](../includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Yetkilendirme
 
-Azure Active Directory (Azure AD), OAuth 2.0’ı kullanarak Azure AD kiracınızdaki web uygulamalarına ve web API’lerine erişim yetkisi vermenize olanak tanır. Bu kılavuz dilden bağımsızdır ve açık kaynak kitaplıklarının hiçbirini kullanmadan nasıl HTTP iletileri gönderip alacağınızı açıklar. OAuth 2.0 yetkilendirme kod akışı, OAuth 2.0 belirtiminin [4.1. bölümünde](https://tools.ietf.org/html/rfc6749#section-4.1) açıklanmıştır.
+Azure Active Directory (Azure AD), Azure AD kiracınızdaki Web uygulamalarına ve Web API 'Lerine erişim yetkisi verme olanağı sağlamak için OAuth 2,0 kullanır. Bu kılavuz dilden bağımsızdır ve herhangi bir açık kaynak kitaplığı kullanmadan HTTP iletilerinin nasıl gönderileceğini ve alınacağını açıklar. OAuth 2,0 yetkilendirme kodu akışı, OAuth 2,0 belirtiminin [4,1 bölümünde](https://tools.ietf.org/html/rfc6749#section-4.1) açıklanmaktadır.
 
-Daha fazla bilgi için bkz. [OAuth 2.0 ve Azure Active Directory kullanarak web uygulamalarına erişim yetkisi verme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
+Daha fazla bilgi için bkz. [OAuth 2,0 ve Azure Active Directory kullanarak Web uygulamalarına erişim yetkisi verme](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
 ## <a name="api-url-structure"></a>API URL yapısı
 
-Veri Ambarı API uç noktaları, her kümenin varlıklarını okur. Bu API, bir **GET** HTTP fiili ve bir sorgu seçenekleri alt kümesini destekler.
+Veri ambarı API uç noktaları, her bir küme için varlıkları okur. API, **Get** http fiilini ve sorgu seçeneklerinin bir alt kümesini destekler.
 
-Intune URL’si aşağıdaki biçimdedir:  
+Intune URL 'SI aşağıdaki biçimi kullanır:  
 `https://fef.{location}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity-collection}?api-version={api-version}`
 
 > [!NOTE]
-> Yukarıdaki URL’de `{location}`, `{entity-collection}` ve `{api-version}` değerlerini aşağıdaki tabloda sağlanan ayrıntılarla değiştirin.
+> Yukarıdaki URL 'de, aşağıdaki tabloda belirtilen ayrıntılara göre `{location}`, `{entity-collection}` ve `{api-version}` ' yi değiştirin.
 
-Bu URL aşağıdaki öğeleri içerir:
+URL aşağıdaki öğeleri içerir:
 
-| Öğe | Örnek | Description |
+| Öğe | Örnek | Açıklama |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
-| location | msua06 | Temel URL, Azure portalında Veri Ambarı API’si dikey penceresinde bulunabilir. |
-| varlık-koleksiyonu | devicePropertyHistories | OData varlık koleksiyonu adı. Veri modelindeki koleksiyonlar ve varlıklar hakkında daha fazla bilgi için bkz. [Veri Modeli](reports-ref-data-model.md). |
-| api-sürümü | beta | Sürüm, erişilecek API’nin sürümüdür. Daha fazla bilgi için bkz. [Sürüm](reports-api-url.md#api-version-information). |
-| maxhistorydays | 7 | (İsteğe bağlı) Geçmişin alınacağı en fazla gün sayısı. Bu parametre herhangi bir koleksiyon için sağlanabilir ancak yalnızca anahtar özelliğinin bir parçası olarak `dateKey` içeren koleksiyonlarda geçerli olacaktır. Daha fazla bilgi için [DateKey Aralık Filtreleri](reports-api-url.md#datekey-range-filters)’ne bakın. |
+| konum | msua06 | Temel URL, Azure portal veri ambarı API dikey penceresi görüntüleyerek bulunabilir. |
+| varlık koleksiyonu | Devicepropertygeçmişleri | OData varlık koleksiyonunun adı. Veri modelindeki koleksiyonlar ve varlıklar hakkında daha fazla bilgi için bkz. [veri modeli](reports-ref-data-model.md). |
+| api sürümü | Beta | Sürüm, erişim için API 'nin sürümüdür. Daha fazla bilgi için bkz. [Sürüm](reports-api-url.md#api-version-information). |
+| maxhistorydays | 7 | Seçim Alınacak geçmişin en fazla gün sayısı. Bu parametre herhangi bir koleksiyona sağlanabilir, ancak yalnızca anahtar özelliğinin bir parçası olarak `dateKey` içeren koleksiyonlar için geçerli olur. Daha fazla bilgi için bkz. [DateKey Range filtreleri](reports-api-url.md#datekey-range-filters) . |
 
-## <a name="api-version-information"></a>API sürüm bilgisi
+## <a name="api-version-information"></a>API sürüm bilgileri
 
-Artık sorgu parametresini ayarlayarak Intune Veri Ambarı’nın v1.0 sürümünü kullanabilirsiniz `api-version=v1.0`. Veri Ambarı’ndaki koleksiyonlara yapılan güncelleştirmeler ek olarak yapılır, yani mevcut senaryoları bozmaz.
+Artık @ no__t-0 sorgu parametresini ayarlayarak Intune veri ambarının v 1.0 sürümünü kullanabilirsiniz. Veri ambarındaki koleksiyonlara yapılan güncelleştirmelerin doğası gereği, mevcut senaryoları bozmayın.
 
-Beta sürümünü kullanarak Veri Ambarı’nın en yeni işlevlerini deneyebilirsiniz. Beta sürümünü kullanabilmeniz için URL’nizin sorgu parametresini içermesi gerekir `api-version=beta`. Özellikler, desteklenen bir hizmet olarak herkesin kullanımına açılmadan önce beta sürümünde sunulur. Intune yeni özellikler ekledikçe beta sürümünün davranışında ve veri anlaşmalarında değişiklikler olabilir. Beta sürümüne bağımlı olan özel kodlar veya raporlama araçları, devam eden güncelleştirmelerle birlikte kesilebilir.
+Beta sürümünü kullanarak veri ambarının en son işlevlerini deneyebilirsiniz. Beta sürümünü kullanmak için URL 'nizin @ no__t-0 sorgu parametresini içermesi gerekir. Beta sürümü, desteklenen bir hizmet olarak genel kullanıma sunulmadan önce özellikler sunar. Intune yeni özellikler eklerse, beta sürümü davranış ve veri sözleşmelerini değiştirebilir. Beta sürümüne bağımlı olan özel kod veya raporlama araçları, devam eden güncelleştirmelerle kesintiye uğraşmayabilir.
 
 ## <a name="odata-query-options"></a>OData sorgu seçenekleri
 
 Geçerli sürüm şu OData sorgu parametrelerini destekliyor: `$filter`, `$select`, `$skip,` ve `$top`. @No__t-0 ' da, sütunlar geçerliyse yalnızca `DateKey` veya `RowLastModifiedDateTimeUTC` desteklenebilir ve diğer özellikler hatalı bir istek tetikleyecektir.
 
-## <a name="datekey-range-filters"></a>DateKey Aralık Filtreleri
+## <a name="datekey-range-filters"></a>DateKey Aralık filtreleri
 
-`DateKey` aralık filtreleri, anahtar özelliği `dateKey` olan koleksiyonların bazılarından indirilebilen veri miktarını sınırlamak için kullanılabilir. `DateKey` filtresi, aşağıdaki `$filter` sorgu parametresini sağlayarak hizmet performansını en iyi duruma getirmek için kullanılabilir:
+`DateKey` Aralık filtresi, anahtar özelliği olarak `dateKey` olan bazı koleksiyonlar için indirilecek veri miktarını sınırlamak için kullanılabilir. @No__t-0 filtresi, aşağıdaki `$filter` sorgu parametresini sağlayarak hizmet performansını iyileştirmek için kullanılabilir:
 
-1. `$filter` içinde `lt/le/eq/ge/gt` işleçlerini destekleyen ve `and` mantıksal işleciyle birleştirilen tek başına `DateKey`; bir başlangıç tarihi ve/veya bitiş tarihiyle eşlenebilir.
-2. `maxhistorydays`, özel sorgu seçeneği olarak sağlanır.<br>
+1. `$filter` ' de tek başına @no__t, `lt/le/eq/ge/gt` işleçlerini destekleyerek ve bir başlangıç tarihi ve/veya bitiş tarihi ile eşleştirilebileceği `and` Logic operator ile birleştirme.
+2. `maxhistorydays` özel sorgu seçeneği olarak sağlanır.<br>
 
 ## <a name="filter-examples"></a>Filtre örnekleri
 
 > [!NOTE]
 > Filtre örnekleri bugün 2/21/2019 olduğunu varsayar.
 
-|                             Filtrele                             |           Performansı En İyi Duruma Getirme           |                                          Description                                          |
+|                             Filtrele                             |           Performans Iyileştirmesi           |                                          Açıklama                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-|    `maxhistorydays=7`                                            |    Tümünü                                      |    `DateKey` ile 20180214 ve 20180221 arasında veri döndürülür.                                     |
-|    `$filter=DateKey eq 20180214`                                 |    Tümünü                                      |    `DateKey` ile 20180214’e eşit veri döndürülür.                                                    |
-|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Tümünü                                      |    `DateKey` ile 20180214 ve 20180220 arasında veri döndürülür.                                     |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Tümünü                                      |    `DateKey` ile 20180214’e eşit veri döndürülür. `maxhistorydays` yoksayılır.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Tümünü                                       |    @No__t-0 olan dönüş verileri `2018-02-21T23:18:51.3277273Z` ' den büyük veya buna eşit                             |
+|    `maxhistorydays=7`                                            |    Tam                                      |    20180214 ile 20180221 arasında `DateKey` ile veri döndürün.                                     |
+|    `$filter=DateKey eq 20180214`                                 |    Tam                                      |    @No__t-0 ile 20180214 arasında bir veri döndürün.                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Tam                                      |    20180214 ile 20180220 arasında `DateKey` ile veri döndürün.                                     |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Tam                                      |    @No__t-0 ile 20180214 arasında bir veri döndürün. `maxhistorydays` yok sayılır.                            |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Tam                                       |    @No__t-0 olan dönüş verileri `2018-02-21T23:18:51.3277273Z` ' den büyük veya buna eşit                             |

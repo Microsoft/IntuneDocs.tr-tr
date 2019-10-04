@@ -32,6 +32,7 @@
       items:
         - name: Uygulama eklemeye genel bakış
           href: apps-add.md
+          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
         - name: Intune korumalı uygulamalar
           href: apps-supported-intune-apps.md
         - name: Mağaza uygulamaları
@@ -104,12 +105,24 @@
           href: app-configuration-policies-use-ios.md
         - name: Android yönetilen cihazlar
           href: app-configuration-policies-use-android.md
-        - name: Yönetilen Giriş Ekranı’nı yapılandırma
-          href: app-configuration-managed-home-screen-app.md
         - name: Yönetilen uygulamalar
           href: app-configuration-policies-managed-app.md
         - name: iOS uygulama sağlama profillerini kullanma
           href: app-provisioning-profile-ios.md
+        - name: Belirli uygulamaları yapılandırma
+          items:
+            - name: Yönetilen Giriş Ekranı’nı yapılandırma
+              href: app-configuration-managed-home-screen-app.md
+            - name: Şirket Portalı’nı yapılandırma
+              href: company-portal-app.md
+            - name: Managed Browser’ı yapılandırma
+              href: app-configuration-managed-browser.md
+            - name: Microsoft Launcher’ı yapılandırma
+              href: configure-microsoft-launcher.md
+            - name: Microsoft Edge’i yapılandırma
+              href: manage-microsoft-edge.md
+            - name: Outlook’u yapılandırma
+              href: app-configuration-policies-outlook.md
         - name: Toplu satın alınan uygulamalar ve kitaplar
           items:
             - name: VPP uygulamalarını ve defterlerini yönetme
@@ -121,16 +134,6 @@
               href: windows-store-for-business.md
             - name: iOS e-Kitapları
               href: vpp-ebooks-ios.md
-        - name: Şirket Portalı’nı yapılandırma
-          href: company-portal-app.md
-        - name: Managed Browser’ı yapılandırma
-          href: app-configuration-managed-browser.md
-        - name: Microsoft Edge’i yapılandırma
-          href: manage-microsoft-edge.md
-        - name: Microsoft Launcher’ı yapılandırma
-          href: configure-microsoft-launcher.md
-        - name: Outlook’u yapılandırma
-          href: app-configuration-policies-outlook.md
     - name: Uygulamaları koruma
       items:
         - name: Uygulamaları seçmeli silme

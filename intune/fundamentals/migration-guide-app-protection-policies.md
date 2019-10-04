@@ -1,12 +1,12 @@
 ---
 title: Geçiş sırasında uygulama koruma ilkelerini yapılandırma
 titleSuffix: Microsoft Intune
-description: Bu makalede, bir Microsoft Intune geçişi sırasında uygulama koruma ilkeleri ayarlamak için gerekli adımlar sağlanmaktadır.
+description: Bu makalede, Microsoft Intune geçişi sırasında uygulama koruma ilkeleri ayarlamak için gerekli adımlar sağlanmaktadır.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,36 +16,36 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c088b14285b42b300aa38ce133dc6e216f054bd9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 49246302cf71fc95d20cdb84099323ba9beffdb3
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732329"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940480"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Uygulama koruma ilkelerini yapılandırma (isteğe bağlı)
 
 
-Uygulama koruma ilkeleri ile şunları yapabilirsiniz:
+Uygulama koruma ilkeleri şunları yapmanıza olanak sağlar:
 * Uygulamaları şifreleme
-* Uygulamaya erişildiğinde kullanılacak bir PIN tanımlama
-* Uygulamaların jail-break uygulanmış veya kökü belirtilmiş cihazlarda çalışmasını engelleme ve daha pek çok koruma işlemi.
+* Uygulamaya erişildiğinde bir PIN tanımlayın
+* Uygulamaların, caıl kopuk veya kökü belirtilmiş cihazlarda çalışmasını engelleyin ve diğer birçok koruma.
 
-Kullanıcının telefonu kayıpsa veya çalındıysa kişisel bilgilere dokunmadan yalnızca kurumsal verileri seçmeli olarak uzaktan silebilirsiniz.
+Kullanıcının telefonu kaybolur veya çalınırsa, kişisel verileri bozulmadan bırakarak şirket verilerini uzaktan seçerek temizleyebilirsiniz.
 
-Uygulama koruma ilkeleri uygulama düzeyinde güvenlik uygular ve cihaz kaydı gerektirmez. Bunları, Intune’a kayıtlı olan veya olmayan cihazlarla kullanabilirsiniz. Ayrıca, bir üçüncü taraf MDM sağlayıcısına kayıtlı cihazlara da uygulayabilirsiniz.
+Uygulama koruma ilkeleri, uygulama düzeyinde güvenlik uygular ve cihaz kaydı gerektirmez. Bunları, Intune 'a kayıtlı olan cihazlarla kullanabilirsiniz. Ayrıca, bir üçüncü taraf MDM sağlayıcısına kayıtlı cihazlara de uygulayabilirsiniz.
 
-## <a name="app-protection-policies-with-lob-apps"></a>İş kolu uygulamaları ile uygulama koruma ilkeleri
+## <a name="app-protection-policies-with-lob-apps"></a>LOB uygulamaları ile uygulama koruma ilkeleri
 
-[Microsoft Intune App SDK](../developer/app-sdk-get-started.md) veya Microsoft Intune Uygulama Sarmalama Aracını hem iOS hem de Android platformları için kullanarak mobil uygulama koruma ilkelerini iş kolu (LOB) uygulamalarınıza genişletebilirsiniz. Daha fazla bilgi için bkz. [iOS için Uygulama Sarmalama Aracı](../developer/app-wrapper-prepare-ios.md) ve [Android için Uygulama Sarmalama Aracı](./../developer/app-wrapper-prepare-android.md). Ayrıca bkz. [Uygulama koruması için LOB uygulamalarını hazırlama](../developer/apps-prepare-mobile-application-management.md).
+Ayrıca, hem iOS hem de Android platformları için [Microsoft Intune uygulama SDK 'sını](../developer/app-sdk-get-started.md) Microsoft Intune veya uygulama sarmalama aracı 'nı kullanarak mobil uygulama koruma ilkelerini iş kolu (LOB) uygulamalarınıza genişletebilirsiniz. Daha fazla bilgi için bkz. [iOS Için uygulama sarmalama aracı](../developer/app-wrapper-prepare-ios.md) ve [Android Için uygulama sarmalama aracı](./../developer/app-wrapper-prepare-android.md). Ayrıca bkz. [uygulama koruması IÇIN LOB uygulamalarını hazırlama](../developer/apps-prepare-mobile-application-management.md).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Uygulama koruma ilkeleri geçiş sırasında nasıl yardımcı olur?
 
-Geçiş işleminde, cihazları eski MDM sağlayıcısından kaldırıp Intune’a kaydetmeniz gerektirir. Bunun için planlama yapmanız ve son kullanıcılarınızı eski MDM sağlayıcılarını bırakıp hemen Intune'a kaydolmaya teşvik etmeniz gerekir. Ancak, geçiş sırasında kayıt işlemini geciktiren kullanıcılar olabilir ve cihazları hiçbir MDM sağlayıcısı tarafından yönetilmiyor olabilir.
+Bir geçişte, cihazları eski MDM sağlayıcısından kaldırmalı ve bunları Intune 'a kaydetmeniz gerekir. Bunu planlamanız ve son kullanıcılarınızın eski MDM sağlayıcısını bırakıp hemen Intune 'a kaydolmasını öneririz. Bununla birlikte, geçiş sırasında kayıt işlemini tamamlamak ve cihazları MDM sağlayıcısı tarafından yönetilmediği kullanıcılar olabilir.
 
-Bu dönem, şirket kaynaklarına erişime hala izin veriliyorsa kuruluşunuzu cihaz hırsızlığına ve şirket verilerinin kaybedilmesine karşı daha savunmasız hale getirebilir. Ayrıca şirket kaynaklarına erişim engellenirse kullanıcı verimliliğinin kaybıyla karşı karşıya da bırakabilir.
+Bu süre, kurumsal kaynak erişimine hala izin veriliyorsa, kuruluşunuzda cihaz hırsızlığı ve şirket veri kaybı için daha savunmasız kalabilir. Ayrıca kurumsal kaynak erişimi engellenmişse Kullanıcı üretkenliğini azaltmaya da yol açabilir.
 
-Intune geçiş sırasında şirket verileri için koruma sunar, böylece cihaz düzeyinde yönetim yokken şirket verileriniz için güvenliğe sahip olursunuz.
+Intune, geçiş sırasında kurumsal veri korumaları sunabilir, böylece cihaz düzeyinde yönetim olmadığında kurumsal verilerinize yönelik güvenlik kapsamına sahip olabilirsiniz.
 
 Eski MDM sağlayıcısında koşullu erişimi devre dışı bıraktığınızda, kullanıcılar bunları Intune 'a oluştururken üretken olmaya devam edebilir.
 
@@ -57,4 +57,4 @@ Eski MDM sağlayıcısında koşullu erişimi devre dışı bıraktığınızda,
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Geçiş konusunda dikkat edilmesi gereken önemli noktalar](migration-guide-considerations.md)
+[Özel geçiş konuları](migration-guide-considerations.md)
