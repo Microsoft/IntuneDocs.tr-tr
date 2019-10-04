@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Geliştirici kılavuzu
+summary: LOB uygulamalarını korumak için Intune Uygulama SDK’sı ve Uygulama Sarmalama Aracı, Intune başarısını izlemek için Intune Veri Ambarı raporlama özelliklerini ile API’sini ve Azure AD kullanarak Intune işlevselliğine erişmek için Microsoft Graph gibi Intune geliştirici kaynaklarını kullanmayı öğrenin.
+metadata:
+  title: Geliştirici kılavuzu
+  description: LOB uygulamalarını korumak için Intune Uygulama SDK’sı ve Uygulama Sarmalama Aracı, Intune başarısını izlemek için Intune Veri Ambarı raporlama özelliklerini ile API’sini ve Azure AD kullanarak Intune işlevselliğine erişmek için Microsoft Graph gibi Intune geliştirici kaynaklarını kullanmayı öğrenin.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/23/2019
+  ms.openlocfilehash: f7d48e1b5473d84743adee4a7ef7b6c83b960d19
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728882"
+landingContent:
+- title: Intune Uygulama SDK’sı ile uygulama koruma
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft Intune Uygulama SDK’sına genel bakış
+      url: app-sdk.md
+  - linkListType: concept
+    links:
+    - text: Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
+      url: app-sdk-get-started.md
+    - text: İş kolu uygulamalarını uygulama koruma için hazırlama
+      url: apps-prepare-mobile-application-management.md
+  - linkListType: how-to-guide
+    links:
+    - text: iOS için Intune Uygulama SDK'sı
+      url: app-sdk-ios.md
+    - text: iOS uygulamalarını uygulama koruma ilkelerine hazırlama
+      url: app-wrapper-prepare-ios.md
+    - text: Android için Intune Uygulama SDK'sı
+      url: app-wrapper-prepare-android.md
+- title: Intune Veri Ambarını kullanma
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Veri ambarına genel bakış
+      url: reports-nav-create-intune-reports.md
+    - text: Veri Ambarı API’si için değişiklik günlüğü
+      url: reports-changelog.md
+    - text: Intune Veri Ambarı API’sine genel bakış
+      url: reports-nav-intune-data-warehouse.md
+    - text: Intune Veri Ambarı veri modeline genel bakış
+      url: reports-ref-data-model.md
+  - linkListType: concept
+    links:
+    - text: Intune Veri Ambarı Koleksiyonları
+      url: intune-data-warehouse-collections.md
+  - linkListType: how-to-guide
+    links:
+    - text: Power BI ile Veri Ambarına bağlanma
+      url: reports-proc-get-a-link-powerbi.md
+    - text: OData akışından Power BI ile bir Intune raporu oluşturma
+      url: reports-proc-create-with-odata.md
+    - text: REST istemcisi ile Intune Veri Ambarı API’sinden veri alma
+      url: reports-proc-data-rest.md
+    - text: Intune Veri Ambarı API uç noktası
+      url: reports-api-url.md
+- title: Microsoft Graph’ta Intune API’lerine erişme
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Intune’da kullanılan Graph API’leri ve eşleşen Windows 10 CSP’leri
+      url: graph-apis-used-by-intune-device-configuration-windows.md
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
+      url: intune-graph-apis.md
+  - linkListType: reference
+    links:
+    - text: Intune Graph API başvurusu
+      url: https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta

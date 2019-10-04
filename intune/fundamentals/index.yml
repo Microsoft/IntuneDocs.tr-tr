@@ -1,0 +1,85 @@
+### YamlMime:Landing
+title: Microsoft Intune temelleri
+summary: Microsoft Intune, çalışanlarınızın üretken olmasını sağlarken kurumsal verilerinizin korunmasına yardımcı olur. Intune için planlama, geçiş ve kurulum hakkında temel bilgileri öğrenin.
+metadata:
+  title: Intune temelleri
+  description: Intune için planlama, geçiş ve kurulum hakkında temel bilgileri öğrenin.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/29/2019
+  ms.openlocfilehash: c0d75116a31c668971950d144645009a9564654c
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728746"
+landingContent:
+- title: Microsoft Intune hakkında
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Intune nedir?
+      url: what-is-intune.md
+    - text: Yenilikler
+      url: whats-new.md
+    - text: Geliştirme aşamasındaki özellikler
+      url: in-development.md
+  - linkListType: tutorial
+    links:
+    - text: Azure portalında Intune’u gözden geçirme
+      url: tutorial-walkthrough-intune-portal.md
+  - linkListType: concept
+    links:
+    - text: Cihaz yönetimi nedir?
+      url: what-is-device-management.md
+    - text: Üst düzey mimari
+      url: high-level-architecture.md
+    - text: Intune'u kullanmanın yaygın yolları
+      url: common-scenarios.md
+    - text: EMS ile KCG için teknoloji kararları
+      url: byod-technology-decisions.md
+- title: Intune benimseme
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: İletişimi planlama
+      url: migration-guide-communication-plan.md
+    - text: Planlama kılavuzu
+      url: planning-guide.md
+    - text: Geçiş kılavuzu
+      url: migration-guide.md
+    - text: Intune Benimseme Seti
+      url: https://www.microsoft.com/download/details.aspx?id=58348
+- title: Intune’u ayarlama
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Intune'u ücretsiz olarak deneyin
+      url: free-trial-sign-up.md
+  - linkListType: concept
+    links:
+    - text: Desteklenen yapılandırmalar
+      url: supported-devices-browsers.md
+    - text: Ağ yapılandırma gereksinimleri
+      url: network-bandwidth-use.md
+    - text: Intune ağ uç noktaları
+      url: intune-endpoints.md
+    - text: Rol tabanlı erişim denetimi
+      url: role-based-access-control.md
+    - text: Intune lisansları
+      url: licenses.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intune'u ayarlama adımları
+      url: setup-steps.md
+    - text: Kullanıcı ekleme
+      url: users-add.md
+    - text: Grup ekleme
+      url: groups-add.md
+    - text: Kapsam etiketlerini kullanma
+      url: scope-tags.md

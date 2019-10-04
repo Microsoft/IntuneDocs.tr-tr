@@ -1,0 +1,264 @@
+- name: Microsoft Intune temelleri
+  href: index.yml
+- name: Genel bakış
+  expanded: true
+  items:
+    - name: Microsoft Intune genel bakış
+      href: what-is-intune.md
+      displayName: ems; emm; azure ad; active directory; ad
+    - name: Intune şirketim için ne yapabilir?
+      href: get-started-evaluation.md
+    - name: Yenilikler
+      href: whats-new.md
+      items:
+        - name: Uygulama kullanıcı arabirimindeki yenilikler
+          href: whats-new-app-ui.md
+        - name: Geliştirme aşamasındaki özellikler
+          href: in-development.md
+- name: Hızlı girişler
+  items:
+    - name: Intune'u ücretsiz olarak deneyin
+      href: free-trial-sign-up.md
+      displayName: 'tenant; trial; get started, start; help'
+    - name: Kullanıcı oluşturma
+      href: quickstart-create-user.md
+    - name: Grup oluşturma
+      href: quickstart-create-group.md
+    - name: Özel bir rol oluşturup atayarak
+      href: quickstart-create-custom-role.md
+- name: Öğreticiler
+  items:
+    - name: Azure portalında Intune’u gözden geçirme
+      href: tutorial-walkthrough-intune-portal.md
+- name: Kavramlar
+  items:
+    - name: Cihaz yönetimi nedir?
+      href: what-is-device-management.md
+      displayName: teamviewer
+    - name: Eğitim için Intune nedir?
+      href: introduction-intune-education.md
+    - name: Üst düzey mimari
+      href: high-level-architecture.md
+    - name: Cihaz yaşam döngüsü
+      href: device-lifecycle.md
+    - name: Uygulama yaşam döngüsü
+      href: ../apps/app-lifecycle.md
+    - name: Yaygın senaryolar
+      href: common-scenarios.md
+    - name: EMS ile KCG için teknoloji kararları
+      href: byod-technology-decisions.md
+    - name: İşletim sistemi sürümlerini yönetme
+      href: manage-os-versions.md
+    - name: Windows Holographic’i Yönetme
+      href: windows-holographic-for-business.md
+- name: Nasıl yapılır kılavuzları
+  items:
+    - name: Dağıtım planlama
+      items:
+        - name: Planlama kılavuzu
+          href: planning-guide.md
+          items:
+            - name: Hedef ve amaçları belirleme
+              href: planning-guide-deployment-goals.md
+            - name: Senaryoları tanımlama
+              href: planning-guide-scenarios.md
+            - name: Gereksinimleri belirleme
+              href: planning-guide-requirements.md
+            - name: Dağıtım planı geliştirme
+              href: planning-guide-rollout-plan.md
+            - name: İletişim planı geliştirme
+              href: planning-guide-communication-plan.md
+            - name: Bir destek planı geliştirme
+              href: planning-guide-support-plan.md
+            - name: Tasarım
+              href: planning-guide-design.md
+            - name: Uygulama
+              href: planning-guide-onboarding.md
+            - name: Sınama ve doğrulama
+              href: planning-guide-test-validation.md
+            - name: Ek kaynaklar
+              href: planning-guide-resources.md
+        - name: Geçiş kılavuzu
+          href: migration-guide.md
+          items:
+            - name: Intune’u Hazırlama
+              href: migration-guide-prepare.md
+              items:
+                - name: Temel kurulum
+                  href: migration-guide-setup.md
+                - name: Cihaz ve uygulama yönetimi ilkelerini yapılandırma
+                  href: migration-guide-configure-policies.md
+                - name: Uygulama koruma ilkelerini yapılandırma
+                  href: migration-guide-app-protection-policies.md
+                - name: Geçiş konuları
+                  href: migration-guide-considerations.md
+            - name: Geçiş kampanyası
+              href: migration-guide-campaign.md
+              items:
+                - name: İletişimi planlama
+                  href: migration-guide-communication-plan.md
+                - name: Benimsemeyi artırma
+                  href: migration-guide-drive-adoption.md
+                - name: Tipik geçiş döngüsü
+                  href: migration-guide-cycle.md
+        - name: İletişimi planlama
+          href: migration-guide-communication-plan.md
+        - name: Kullanıcıları eğitme
+          items:
+            - name: Son kullanıcılarınızı nasıl bilgilendirebilirsiniz
+              href: end-user-educate.md
+            - name: Şirket Portalı iletileri
+              href: end-user-company-portal-messages.md
+            - name: Android uygulama koruması
+              href: end-user-mam-apps-android.md
+            - name: iOS’ta uygulama koruması
+              href: end-user-mam-apps-ios.md
+            - name: Android uygulamalarını edinme
+              href: end-user-apps-android.md
+            - name: iOS uygulamalarını edinme
+              href: end-user-apps-ios.md
+            - name: Windows uygulamalarını edinme
+              href: end-user-apps-windows.md
+            - name: Intune’un Apple’a gönderdiği veriler
+              href: ../protect/data-intune-sends-to-apple.md
+            - name: Intune’un Google’a gönderdiği veriler
+              href: ../protect/data-intune-sends-to-google.md
+            - name: Apple’ın Intune’a gönderdiği veriler
+              href: ../protect/data-apple-sends-to-intune.md
+            - name: Google’ın Intune’a gönderdiği veriler
+              href: ../protect/data-google-sends-to-intune.md
+    - name: Intune’u ayarlama
+      items:
+        - name: Intune'u ayarlama adımları
+          href: setup-steps.md
+          displayName: fasttrack
+        - name: Desteklenen yapılandırmalar
+          href: supported-devices-browsers.md
+          items:
+            - name: Ağ yapılandırması
+              href: network-bandwidth-use.md
+            - name: Intune uç noktaları
+              href: intune-endpoints.md
+            - name: Intune ABD kamu uç noktaları
+              href: intune-us-government-endpoints.md
+        - name: Intune'da oturum açma
+          href: account-sign-up.md
+        - name: Etki alanlarını yapılandırma
+          href: custom-domain-name-configure.md
+        - name: Kullanıcı ekleme
+          href: users-add.md
+        - name: Grup ekleme
+          href: groups-add.md
+        - name: Lisans atama
+          href: licenses-assign.md
+        - name: Intune lisansları
+          href: licenses.md
+        - name: MDM yetkilisini ayarlama
+          href: mdm-authority-set.md
+        - name: Rolleri yönetme
+          items:
+            - name: Rol tabanlı erişim denetimi
+              href: role-based-access-control.md
+            - name: Bir kullanıcıya rol atama
+              href: assign-role.md
+            - name: Özel rol oluşturma
+              href: create-custom-role.md
+            - name: Kapsam etiketlerini kullanma
+              href: scope-tags.md
+    - name: Cihazları kaydetme
+      href: ../enrollment/index.yml
+    - name: Cihazları uzaktan yönetme
+      href: ../remote-actions/index.yml
+    - name: Uyumluluk kuralları oluşturma
+      href: ../protect/index.yml
+    - name: Cihaz özelliklerini ve ayarlarını denetleme
+      href: ../configuration/index.yml
+    - name: Cihazları ve verileri koruma
+      href: ../protect/index.yml
+    - name: uygulama yönetme ve koruma
+      href: ../apps/index.yml
+    - name: Geliştirici kılavuzu
+      href: ../developer/index.yml
+    - name: Yardım ve destek alma
+      items:
+        - name: Kiracı durumu
+          href: tenant-status.md
+        - name: Kullanıcıların sorunları gidermesine yardımcı olma
+          href: help-desk-operators.md
+        - name: Intune etkinlikleri için denetleme günlükleri
+          href: monitor-audit-logs.md
+        - name: Azure İzleyici ile günlükleri gözden geçirme
+          href: review-logs-using-azure-monitor.md
+        - name: Intune belgelerini kullanma
+          href: use-docs.md
+        - name: Destek alma
+          href: get-support.md
+- name: Başvuru
+  items:
+    - name: Hata kodları ve açıklamaları
+      items:
+        - name: Şirket kaynak erişimi sorunlarını giderme
+          href: troubleshoot-company-resource-access-problems.md
+- name: Kaynaklar
+  items:
+    - name: Arşiv
+      items:
+        - name: Yenilikler arşivi
+          items:
+            - name: Yenilikler arşivi (Azure portalı)
+              href: whats-new-archive.md
+            - name: Yenilikler arşivi (klasik portal)
+              href: whats-new-archive-classic.md
+        - name: Azure’da Intune klasik özellikleri
+          href: ui-changes.md
+        - name: Intune klasik grupları
+          href: groups-get-started.md
+        - name: iOS eğitim ayarları
+          items:
+            - name: iPad
+              href: education-settings-configure-ios.md
+            - name: Paylaşılan iPad'ler
+              href: education-settings-configure-ios-shared.md
+        - name: Eski Intune bilgisayar istemcisi
+          href: intune-legacy-pc-client.md
+        - name: Yazılım aracısıyla bilgisayarları yönetme
+          href: manage-windows-pcs-with-microsoft-intune.md
+          items:
+            - name: Bilgisayar yönetimini karşılaştırma
+              href: pc-management-comparison.md
+            - name: Bilgisayar istemcisini yükleme
+              href: install-the-windows-pc-client-with-microsoft-intune.md
+            - name: Genel bilgisayar yönetim görevleri
+              href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+              items:
+                - name: Bilgisayar ilkeleri
+                  href: use-policies-to-simplify-windows-pc-management.md
+                - name: Envanteri görüntüleme
+                  href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+                - name: Bilgisayarları devre dışı bırakma
+                  href: retire-a-windows-pc-with-microsoft-intune.md
+                - name: Bilgisayarları kullanıcılara bağlama
+                  href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+                - name: Uzaktan yardım
+                  href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+            - name: Windows bilgisayarları koruma ilkeleri
+              href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+              items:
+                - name: Yazılım güncelleştirmeleri
+                  href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+                - name: Windows Güvenlik Duvarı
+                  href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+                - name: Uç Nokta Koruma
+                  href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+            - name: Intune istemci bilgisayarları için uygulama ekleme
+              href: add-apps-for-windows-pcs-in-microsoft-intune.md
+            - name: Lisans anlaşmalarını yönetme
+              href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+            - name: İlke çakışmalarını çözme
+              href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: Yazılım güncelleştirmesi sorunlarını giderme
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: Uç nokta korumasıyla ilgili yaygın hatalar
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Intune son kullanıcı belgeleri
+      href: /intune-user-help/use-managed-devices-to-get-work-done
