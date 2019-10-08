@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 009b9cf22bcdd73eb563c772cc9995047f05a9c1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0e7c4e5ed45455dda941fb0c61c989c12c57135d
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731757"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999314"
 ---
 # <a name="in-development-for-microsoft-intune---october-2019"></a>Microsoft Intune için geliştirme sırasında-Ekim 2019
 
@@ -29,7 +29,7 @@ Hazırlık ve planlamada yardımcı olması için, bu sayfada Intune Kullanıcı
 
 - Bir değişiklikten önce işlem yapmanız gerektiğini düşünüyorsanız, tamamlayıcı bir Office Ileti merkezi gönderisini yayımlayacağız.
 - Bir özellik üretimde başlatıldığında, önizleme veya genel kullanıma açık olarak, özellik açıklaması bu sayfayı ve yenilikler [sayfasına](whats-new.md)taşınır.
-- Bu sayfa ve yenilikler [sayfası](whats-new.md) düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeleri daha sonra denetleyin.
+- Bu sayfa ve yenilikler [sayfası](whats-new.md) düzenli aralıklarla güncelleştirilir. Ek güncelleştirmeler için yeniden denetleyin.
 - Stratejik teslim edilebilirler ve zaman çizelgeleri için [M365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) inceleyin.
 
 > [!Note]
@@ -115,7 +115,7 @@ Android iş profili cihazlarına kullanılabilir uygulama yüklemeleri için, uy
 
 Geçerli ayarları görmek için [iOS cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
 
@@ -126,23 +126,23 @@ Bu ayarı bir Wi-Fi profilinde kullanırsanız, **Connect 'in otomatik olarak** 
 
 Geçerli ayarları görmek için [Android Wi-Fi ayarları](../configuration/wi-fi-settings-android.md) veya [Android Enterprise Wi-Fi ayarları](../configuration/wi-fi-settings-android-enterprise.md)' na gidin.
 
-Uygulama hedefi:
+Uygulama alanı:
 - Android
-- Android Kurumsal
+- Android kurumsal
 
 ### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339----"></a>Android kurumsal cihaz sahibi cihazlarda genel HTTP proxy oluşturma <!-- 4816339  -->
-Android kurumsal cihazlarda, farklı VPN istemcileriyle bir VPN**profili oluşturabilirsiniz (** **cihaz yapılandırma** > **profilleri** >  platform için  > **Android Enterprise** > **cihaz sahibi >** Profil türü > **bağlantısı**için cihaz kısıtlamaları). Kuruluşunuzun Web tarama standartlarını karşılamak için genel bir HTTP proxy 'si yapılandırabileceksiniz. HTTP Web sitelerine gidecek tüm uygulamalar bu proxy 'yi kullanır.
+Android kurumsal cihazlarda, kuruluşunuzun Web tarama standartlarını (**cihaz yapılandırma** > **profilleri** > **Profil oluştur** > **ANDROID Enterprise** ) karşılamak için genel bir http proxy 'si yapılandırabilirsiniz. Platform > **cihaz sahibi >** profil türü > **bağlantı**) için cihaz kısıtlamaları. Yapılandırıldıktan sonra tüm HTTP trafiği bu proxy 'yi kullanır.
 
-Uygulama hedefi:
+Uygulama alanı:
 - Android kurumsal cihaz sahibi
 
 ### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Windows 10 ve üzeri cihazlar için yeni cihaz üretici yazılımı yapılandırma arabirimi profili <!-- 2266073  -->
 Windows 10 ve üzeri sürümlerde, ayarları ve özellikleri denetlemek için bir cihaz yapılandırma profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > **Profil oluştur** >  Platform için**Windows 10 ve üzeri** ). Intune 'un UEFı (BIOS) ayarlarını yönetmesine izin veren yeni bir cihaz üretici yazılımı yapılandırma arabirimi profil türü olacaktır.
 
-Yapılandırabileceğiniz tüm ayarların bir özetini görmek için, bkz. [Microsoft Intune cihaz profillerini kullanarak cihazlarınızda özellikleri ve ayarları uygulama](../configuration/device-profiles.md).
+Yapılandırabileceğiniz tüm geçerli ayarları görmek için, bkz. [Microsoft Intune cihaz profillerini kullanarak cihazlarınızda özellikleri ve ayarları uygulama](../configuration/device-profiles.md).
 
-Uygulama hedefi:
-- Windows 10 RS5 (1809) ve bazı OEM 'Ler üzerinde daha yeni
+Uygulama alanı:
+- Windows 10 RS5 (1809) ve daha yeni bir cihaz seçin
 
 ### <a name="pkcs-certificates-for-macos-----1333650------------------"></a>MacOS için PKCS sertifikaları  <!-- 1333650                -->
 MacOS çalıştıran cihazlarda PKCS sertifikaları için tam destek ekleyeceğiz. Kullanıcılar, özelleştirme konusu ve konu alternatif adı alanlarıyla Kullanıcı ve cihaz sertifikaları dağıtabilecek. Ayrıca, tüm uygulamalara erişime Izin veren yeni bir ayarımız olacaktır, bu da etkinleştirerek tüm ilişkili uygulamaların özel anahtara erişmesini sağlar. Bu ayar hakkında daha fazla bilgi için şu Apple belgelerini ziyaret edin: https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
@@ -220,12 +220,12 @@ Geliştirmeye devam etmenin bir parçası olarak, Intune için konsol içi deste
 
 
 <!-- ***********************************************-->
-## <a name="notices"></a>Bildirimler
+## <a name="notices"></a>Bildirimleri
 
 [!INCLUDE [Intune notices](../includes/intune-notices.md)]
 
-## <a name="see-also"></a>Ayrıca bkz:
-Son geliştirmelere ilişkin ayrıntılar için bkz. [Microsoft Intune’daki Yenilikler](whats-new.md).
+## <a name="see-also"></a>Ayrıca bkz.
+Son geliştirmelerin ayrıntıları için [Microsoft Intune](whats-new.md) yenilikleri inceleyin.
 
 
 

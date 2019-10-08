@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48a7fe51c2fa6bc27ed4dda206335a3171c2500c
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814144"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999332"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune ile içeri aktarılan PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -55,7 +55,7 @@ Intune ile S/MIME kullanma hakkında daha fazla bilgi için, [e-postayı şifrel
 
 - **Visual studio 2015 veya üzeri** (isteğe bağlı): PFX sertifikalarını Microsoft Intune içeri aktarmaya yönelik cmdlet 'lerle birlikte yardımcı PowerShell modülünü oluşturmak Için Visual Studio 'yu kullanırsınız. Yardımcı PowerShell cmdlet 'lerini almak için bkz. [GitHub 'Da Pfxımport PowerShell projesi](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
-## <a name="how-it-works"></a>Nasıl çalışır
+## <a name="how-it-works"></a>Nasıl çalıştığı
 
 Bir kullanıcıya **içeri aktarılan BIR PFX sertifikasını** dağıtmak için Intune 'u kullandığınızda, cihaza ek olarak iki bileşen oynatılır: 
 
@@ -133,9 +133,9 @@ Ortak/özel anahtar çiftini oluşturmak ve depolamak için bir donanım güvenl
 
 Aşağıdaki işlem, PFX sertifikalarının nasıl içeri aktarılacağını gösteren bir örnek olarak PowerShell cmdlet 'lerini kullanır. Gereksinimlerinize bağlı olarak farklı seçenekler seçebilirsiniz.
 
-Seçeneklere şunlar dahildir:  
+Seçenekler şunlardır:  
 - Amaçlanan amaç (bir etiketi temel alarak sertifikaları gruplandırır):  
-  - atanmadı
+  - atanmamış
   - SMIME şifreleme
   - SMIME imzalama
 
@@ -161,7 +161,7 @@ Anahtarı oluşturmak için kullandığınız sağlayıcıyla eşleşen anahtar 
 5. İçeri aktardığınız her PFX dosyası için parolayı, `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force` çalıştırarak güvenli bir dizeye dönüştürün.  
 6. **Userpfxsertifika** nesnesi oluşturmak için `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>"` ' i çalıştırın
 
-   Örneğin, `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
+   Örneğin: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`.
 
    > [!NOTE]  
    > Sertifikayı bağlayıcının yüklü olduğu sunucudan başka bir sistemden içeri aktardığınızda, Use anahtar dosya yolunu içeren aşağıdaki komutu kullanmalıdır: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>" "<File path to public key file>"`
@@ -186,7 +186,7 @@ Sertifikaları Intune 'a aktardıktan sonra, **PKCS içeri aktarılmış bir ser
 
 3. **Ayarlar**' a gidin ve aşağıdaki özellikleri girin:
 
-   - **Amaçlanan amaç**: Bu profil için içeri aktarılan sertifikaların amaçlanan amacını belirtin. Yöneticiler, sertifikaları farklı amaçlanan amaçlarla (kimlik doğrulama, S/MIME imzalama veya S/MIME Şifrelemesi gibi) içeri aktarabilir. Sertifika profilinde seçilen amaçlanan amaç, sertifika profiliyle, doğru içeri aktarılan sertifikalarla eşleşir. Amaçlanan amaç, içeri aktarılan sertifikaları gruplamak için bir etikettir ve bu etiketle içeri aktarılan sertifikaların amaçlanan amacı karşıladığını garanti etmez.  
+   - **Amaçlanan amaç**: Bu profil için içeri aktarılan sertifikaların amaçlanan amacını belirtin. Yöneticiler, sertifikaları farklı amaçlanan amaçlarla (S/MIME imzalama veya S/MIME Şifrelemesi gibi) içeri aktarabilir. Sertifika profilinde seçilen amaçlanan amaç, sertifika profiliyle, doğru içeri aktarılan sertifikalarla eşleşir. Amaçlanan amaç, içeri aktarılan sertifikaları gruplamak için bir etikettir ve bu etiketle içeri aktarılan sertifikaların amaçlanan amacı karşıladığını garanti etmez.  
    - **Sertifika geçerlilik süresi**: geçerlilik süresi sertifika şablonunda değiştirilmediği takdirde, bu seçenek varsayılan olarak bir yıl olur.  
    - **Anahtar depolama sağlayıcısı (KSP)** : Windows için, anahtarların cihazda depolanacağı yeri seçin.  
 
