@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19f398f58c643928497d8083c173f88862cb0c24
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
+ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940075"
+ms.locfileid: "71960890"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Android kurumsal sistem uygulamalarını Microsoft Intune ekleyin
 
@@ -39,8 +39,8 @@ Aşağıdakileri yaparak Azure portal Intune 'a bir Android kurumsal sistem uygu
     - **Uygulama adı**: uygulamanın adını girin.
     - **Yayımcı**: uygulamanın yayımcısının adını girin.  
     - **Paket adı**: bir paket adı girin. Intune, paket adının geçerli olduğunu doğrular.
-5. **Tamam ' ı**seçin.
-6. **Ekle**' yi seçin.
+5. **Tamam**’ı seçin.
+6. **Add (Ekle)** seçeneğini belirleyin.
 
 > [!NOTE]
 > Etkinleştirmek/devre dışı bırakmak istediğiniz uygulamanın paket adını bulmak için cihazınızın OEM ile çalışmanız gerekir.
@@ -49,8 +49,6 @@ Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada seç
 
 Android kurumsal sistem uygulamaları, zaten platformun parçası olan uygulamaları etkinleştirir veya devre dışı bırakır. Bir uygulamayı etkinleştirmek için, sistem uygulamasını **gerektiği**şekilde atayın. Bir uygulamayı devre dışı bırakmak için, sistem uygulamasını **kaldırma**olarak atayın. Sistem uygulamaları, bir kullanıcı için kullanılabilir olarak atanamaz.
 
-> [!TIP]
-> Bir sistem uygulamasını, fabrika sıfırlaması olmadan devre dışı bırakıldıktan sonra etkinleştirebiliyorsanız, bu seçeneği çağırın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
