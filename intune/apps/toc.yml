@@ -43,18 +43,20 @@
               href: store-apps-ios.md
             - name: Windows Phone 8.1 mağaza uygulamaları
               href: store-apps-windows-phone-8-1.md
-            - name: Microsoft Mağazası uygulamaları
-              items:
-                - name: Windows uygulamaları
-                  href: store-apps-windows.md
-                - name: Şirket Portalı uygulaması
-                  href: store-apps-company-portal-app.md
+            - name: Windows uygulamaları
+              href: store-apps-windows.md
+            - name: İş uygulamaları için Microsoft Mağazası
+              href: windows-store-for-business.md
             - name: Yönetilen Google Play uygulamaları
               href: apps-add-android-for-work.md
+        - name: Office 365 Suite
+          items:
             - name: Windows 10 için Office 365 uygulamaları
               href: apps-add-office365.md
             - name: macOS için Office 365 uygulamaları
               href: apps-add-office365-macos.md
+        - name: Android Kurumsal sistem uygulamaları
+          href: apps-ae-system.md
         - name: Web uygulamaları
           href: web-app.md
           displayName: web; web link; weblink; web-link
@@ -74,10 +76,12 @@
               href: app-sideload-windows.md
             - name: macOS LOB uygulamaları
               href: lob-apps-macos.md
-        - name: Android Kurumsal sistem uygulamaları
-          href: apps-ae-system.md
-        - name: Win32 uygulama yönetimi
-          href: apps-win32-app-management.md
+            - name: Win32 uygulama yönetimi
+              href: apps-win32-app-management.md
+        - name: Belirli uygulamalar ekleme
+          items:
+            - name: Şirket Portalı uygulaması
+              href: store-apps-company-portal-app.md
         - name: PowerShell komut dosyaları
           href: intune-management-extension.md
     - name: Uygulamaları atama

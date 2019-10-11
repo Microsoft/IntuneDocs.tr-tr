@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e597d6dbfbfe399422c3e1679f675c9525abcd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8048b29bdd456f9db8bb3d01e84bad5899e0b9a6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720995"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163557"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>MacOS cihazı için kurtarma anahtarı al
 
@@ -43,14 +43,14 @@ Bu seçenek yalnızca, dosya Kasası kullanılarak kuruluşunuz tarafından şif
 
     Güvenlik nedenleriyle, bu anahtar beş dakika sonra kaybolacaktır. Anahtarı tekrar görmek için **Kurtarma anahtarını al**' ı seçin.
 
-Bir anahtar bulunamazsa ancak cihazınız düzgün şekilde şifrelendiyse, kuruluşunuzun destek ekibine başvurun. İletişim bilgileri için [Şirket portalı Web sitesini](https://go.microsoft.com/fwlink/?linkid=2010980)denetleyin.  
+Bir anahtar bulunamazsa ancak cihazınız düzgün şekilde şifrelendiyse, kuruluşunuzun destek ekibine başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
 
 ## <a name="it-pro-support"></a>BT uzmanı desteği
 
-BT destek sorumlunuza sahipseniz ve macOS cihazları için dosya Kasası şifrelemesini yapılandırmak ve yönetmek istiyorsanız, bkz. [Intune ile cihaz şifrelemesini kullanma](https://docs.microsoft.com/intune/protect/encrypt-devices.md).
+BT destek sorumlunuza sahipseniz ve macOS cihazları için dosya Kasası şifrelemesini yapılandırmak ve yönetmek istiyorsanız, bkz. [Intune ile cihaz şifrelemesini kullanma](/intune/protect/encrypt-devices).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Şirket Portalı Web sitesinden yapabileceğiniz diğer şeyleri öğrenin. Eylemler listesi için [Intune şirket portalı Web sitesini kullanma](using-the-intune-company-portal-website.md) konusuna bakın.  
 
-Hala yardıma mı ihtiyacınız var? BT destek sorumlunuza başvurun. İletişim bilgileri için [Şirket portalı Web sitesini](https://go.microsoft.com/fwlink/?linkid=2010980)denetleyin.  
+Bu bilgiler yardımcı olmadı mı? BT destek sorumlunuza başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

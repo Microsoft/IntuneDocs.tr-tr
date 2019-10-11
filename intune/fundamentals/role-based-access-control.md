@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab50a21ea01cd4075bd78add980d2839606a1a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e9df15efc7a16a0ce1ee6b0412f9160831efdec
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729489"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163519"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -66,6 +66,7 @@ Daha fazla yapılandırma olmadan, gruplara yerleşik roller atayabilirsiniz. Ye
 | Güvenlik okuyucusu | Salt okunurdur | Salt okunurdur |
 | Uyumluluk Yöneticisi | Yok. | Salt okunurdur |
 | Uyumluluk verileri Yöneticisi | Yok. | Salt okunurdur |
+| Genel okuyucu | Salt okunurdur | Salt okunurdur |
 
 > [!TIP]
 > Intune, Azure AD RBAC ile denetlenen üç Azure AD uzantısını da gösterir: **Kullanıcılar**, **gruplar**ve **koşullu erişim**. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla bilgi için bkz. [Azure AD Ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

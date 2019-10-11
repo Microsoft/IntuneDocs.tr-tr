@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729253"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163575"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları  
 
@@ -775,26 +775,27 @@ Bu ayarlar özellikle çıkarılabilir veri sürücülerine uygulanır.
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
 
-Çalışanlarınızın kullandığı uygulamalarda saldırı yüzeyini yönetmek ve azaltmak için [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) kullanın.  
+Çalışanlarınız tarafından kullanılan uygulamaların saldırı yüzeyini yönetmek ve azaltmak için [Exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) 'ı kullanın.  
 
 ### <a name="attack-surface-reduction"></a>Saldırı Yüzeyini Azaltma  
 
-*Saldırı yüzeyi azaltma* kuralları hakkında daha fazla bilgi için bkz. Windows Defender Exploit Guard belgelerindeki [Windows Defender Exploit Guard Ile saldırı yüzeylerini azaltma](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) .  
+Saldırı yüzeyi azaltma kuralları, bir kötü amaçlı yazılımın kötü amaçlı koda sahip bilgisayarlara bulaşmasını önlemeye yardımcı olur.  
 
 #### <a name="attack-surface-reduction-rules"></a>Saldırı yüzeyi azaltma kuralları  
 
 - **Windows yerel güvenlik yetkilisi alt sisteminden kimlik bilgisi çalma eylemlerine bayrak ekleme**  
   **Varsayılan**: yapılandırılmadı  
-  Exploit Guard: [saldırı yüzeyi azaltma kuralları](https://go.microsoft.com/fwlink/?linkid=874499)
+  Kural: [Windows yerel güvenlik yetkilisi alt sisteminden kimlik bilgisi çalmasını engelle (Lsass. exe)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   Genellikle, kötü amaçlı yazılım bulaşarak zararlı yazılımlara karşı kullanılan eylemleri ve uygulamaları önlemeye yardımcı olun.  
+
   - **Yapılandırılmadı**  
   - Windows yerel güvenlik yetkilisi alt sisteminden (Lsass. exe) kimlik bilgisi çalmasını etkinleştir ' i **etkinleştirin** .  
   - **Yalnızca denetim**  
 
 - **Adobe Reader 'dan işlem oluşturma (Beta)**  
   **Varsayılan**: yapılandırılmadı  
-  Exploit Guard: [saldırı yüzeyi azaltma kuralları](https://go.microsoft.com/fwlink/?linkid=853979)  
+  Kural: [Adobe Reader 'ın alt işlem oluşturmasını engelle](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - **Yapılandırılmadı**  
   - **Enable** -Adobe Reader 'dan oluşturulan alt süreçlerini engelleyin.  
@@ -806,7 +807,7 @@ Office uygulamalarının aşağıdaki eylemleri yapmasını engelleyin:
 
 - **Office uygulamalarının diğer işlemlere katılması (özel durum yok)**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=872974)  
+  Kural: [Office uygulamalarının ekleme koddan diğer Işlemlere engel](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **Yapılandırılmadı**  
   - **Engelle** -Office uygulamalarının diğer işlemlere ekleme engelleyin.  
@@ -814,7 +815,7 @@ Office uygulamalarının aşağıdaki eylemleri yapmasını engelleyin:
 
 - **Office uygulamaları/makrolarının yürütülebilir içerik oluşturması**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=872975)  
+  Kural: [Office uygulamalarının yürütülebilir içerik oluşturmasını engelleyin](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **Yapılandırılmadı**  
   - **Engelle** -Office uygulamalarının ve makroların yürütülebilir içerik oluşturmasını engelleyin.  
@@ -822,7 +823,7 @@ Office uygulamalarının aşağıdaki eylemleri yapmasını engelleyin:
 
 - **Office uygulamalarının alt işlemler başlatması**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=872976)  
+  Kural: [tüm Office uygulamalarının alt işlem oluşturmasını engelle](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **Yapılandırılmadı**  
   - **Engelle** -Office uygulamalarının alt işlemlerin başlatılmasını engelleyin.  
@@ -830,7 +831,7 @@ Office uygulamalarının aşağıdaki eylemleri yapmasını engelleyin:
   
 - **Win32’nin Office makro kodundan içeri aktarması**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=872977)  
+  Kural: [Office makrolarından gelen Win32 API çağrıları engelle](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **Yapılandırılmadı**  
   - **Block** -Office 'teki makro kodundan Win32 içeri aktarmaları engelleyin.  
@@ -838,7 +839,7 @@ Office uygulamalarının aşağıdaki eylemleri yapmasını engelleyin:
   
 - **Office iletişim ürünlerinden işlem oluşturma**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=874499)  
+  Kural: [Office iletişim uygulamasının alt işlem oluşturmasını engelle](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **Yapılandırılmadı**  
   - **Enable** -Office iletişim uygulamalarından alt işlem oluşturmayı engelleyin.  
@@ -850,7 +851,7 @@ Komut dosyası tehditlerini önlemeye yardımcı olmak için aşağıdakileri en
 
 - **Karartılmış js/vbs/ps/makro kod**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=872978)    
+  Kural: [büyük olasılıkla karıştırılmış betiklerin yürütülmesini engelle](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **Yapılandırılmadı**  
   - **Block** -tüm karıştırılmış js/vbs/PS/makro kodunu engelleyin.  
@@ -858,7 +859,7 @@ Komut dosyası tehditlerini önlemeye yardımcı olmak için aşağıdakileri en
 
 - **İnternetten indirilen zararlı yükü yürüten js/vbs(özel durum yok)**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=872979)  
+  Kural: [JavaScript veya VBScript 'in indirilen yürütülebilir içeriği başlatmasını engelle](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **Yapılandırılmadı**  
   - **Block** -Block js/vbs, Internet 'ten indirilen yükü yürütmeyi engelliyor.  
@@ -866,7 +867,7 @@ Komut dosyası tehditlerini önlemeye yardımcı olmak için aşağıdakileri en
 
 - **PSExec ve WMI komutlarından işlem oluşturma**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=874500)  
+  Kural: [PSExec ve WMI komutlarından kaynaklanan işlem oluşturma Işlemlerini engelleyin](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - **Yapılandırılmadı**  
   - **Blok** -PSExec ve WMI komutlarından kaynaklanan işlem oluşturma işlemlerini engelleyin.  
@@ -875,7 +876,7 @@ Komut dosyası tehditlerini önlemeye yardımcı olmak için aşağıdakileri en
 
 - **USB’den çalışan güvenilmeyen ve imzasız işlemler**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=874502)    
+  Kural: [USB 'den çalıştırılan güvenilmeyen ve imzasız Işlem engelle](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - **Yapılandırılmadı**  
   - **Engelle** -USB 'den çalıştırılan güvenilmeyen ve imzasız işlem engelle.  
@@ -883,7 +884,7 @@ Komut dosyası tehditlerini önlemeye yardımcı olmak için aşağıdakileri en
   
 - **Bir yaygınlık, yaş veya güvenilenler listesi kriterine uymayan yürütülebilir dosyalar**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=874503)    
+  Kural: [bir Preter, Age veya güvenilir liste ölçütüne uymadıkları takdirde yürütülebilir dosyaların çalıştırılmasını engelleyin](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - **Yapılandırılmadı**  
   - **Blok** blokları, bir Preter, Age veya güvenilir liste ölçütlerine uymadığı müddetçe yürütülebilir dosyaların çalıştırılmasını engeller.  
@@ -895,7 +896,7 @@ E-posta tehditlerini önlemeye yardımcı olmak için aşağıdakileri engelleyi
 
 - **E-postadan (web posta/posta istemcisi) gelen yürütülebilir içeriklerin (exe, dll, ps, js, vbs vb.) yürütülmesi**  
   **Varsayılan**: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=872980)  
+  Kural: [e-posta istemcisinden ve Web postasından 'ten yürütülebilir içeriği engelle](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **Yapılandırılmadı**  
   - **Block** -email (exe, dll, PS, js, vbs, vb.), e-postadan (Webmail/mail-Client) bırakılan yürütülebilir içeriklerin (exe, dll, PS  
@@ -905,7 +906,7 @@ E-posta tehditlerini önlemeye yardımcı olmak için aşağıdakileri engelleyi
 
 - **Gelişmiş fidye yazılımı koruması**  
   Varsayılan: yapılandırılmadı  
-  [Exploit Guard belgeleri](https://go.microsoft.com/fwlink/?linkid=874504)  
+  Kural: [fidye yazılımı ile gelişmiş koruma kullan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - **Yapılandırılmadı**  
   - **Enable** -agresif fidye yazılımı korumasını kullanın.  
@@ -931,7 +932,7 @@ E-posta tehditlerini önlemeye yardımcı olmak için aşağıdakileri engelleyi
 
 ### <a name="controlled-folder-access"></a>Denetlenen klasör erişimi  
 
-Fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden [değerli verileri korumaya](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) yardımcı olun.  
+Fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden [değerli verileri korumaya](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) yardımcı olun.  
 
 - **Klasör koruması**  
   **Varsayılan**: yapılandırılmadı  
@@ -978,7 +979,7 @@ Herhangi bir uygulamadan gelen giden bağlantıları, düşük itibarlı sahip I
 - **XML 'yi karşıya yükle**  
   **Varsayılan**: *Yapılandırılmadı*  
 
-  [Cihazların kötüye kullanımını korumak](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)üzere Exploit Protection 'ı kullanmak için, istediğiniz sistem ve uygulama azaltma ayarlarını IÇEREN bir XML dosyası oluşturun. XML dosyasını oluşturmak için iki yöntem vardır:  
+  [Cihazların kötüye kullanımını korumak](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)üzere Exploit Protection 'ı kullanmak için, istediğiniz sistem ve uygulama azaltma ayarlarını IÇEREN bir XML dosyası oluşturun. XML dosyasını oluşturmak için iki yöntem vardır:  
 
   - *PowerShell* - *Get-processhafifletme*, *set-Processazaltma*ve *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlet 'lerinden bir veya daha fazlasını kullanın. Cmdlet'ler risk azaltma ayarlarını yapılandırır ve bunların XML gösterimini dışarı aktarır.  
 

@@ -1,80 +1,80 @@
 ---
-title: Microsoft Intune - Azure’da cihaz uyumluluk ilkeleri | Microsoft Docs
+title: Microsoft Intune-Azure 'da cihaz uyumluluk ilkeleri | Microsoft Docs
 description: Cihaz uyumluluk ilkelerini kullanma, durum ve önem düzeylerine genel bakış, Yetkisizkullanımsüresinde durumunu kullanma, koşullu erişim ile çalışma, cihazları atanmış bir ilke olmadan işleme ve Azure portal ve uyumluluk farklılıkları ile çalışmaya başlama Microsoft Intune 'de klasik Portal
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ffd1e120a364be1ecaa98e01ff71ac723672b546
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729745"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237188"
 ---
-# <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da uyumluluk ilkesi oluşturma
+# <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune bir uyumluluk ilkesi oluşturma
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune’da cihazların uyumlu olarak değerlendirilmesi için uyması gereken minimum işletim sistemi sürümü gibi kurallar ve ayarlar oluşturabilirsiniz. Cihaz uyumlu değilse, [koşullu erişim](conditional-access.md)kullanarak verilere ve kaynaklara erişimi engelleyebilirsiniz.
+Cihaz uyumluluk ilkeleri, kuruluşunuzun kaynaklarını korumak için Intune kullanırken temel bir özelliktir. Intune 'da, cihazların en düşük işletim sistemi sürümü gibi uyumlu kabul edilmesi için uyması gereken kurallar ve ayarlar oluşturabilirsiniz. Cihaz uyumlu değilse, [koşullu erişim](conditional-access.md)kullanarak verilere ve kaynaklara erişimi engelleyebilirsiniz.
 
-Ayrıca uyumsuzluğa yönelik olarak kullanıcıya bildirim gönderme gibi önlemler alabilirsiniz. Uyumluluk ilkelerinin işlevleri ve kullanım şekilleri hakkında genel bilgilere için bkz. [Cihaz uyumluluğuna başlama](device-compliance-get-started.md).
+Ayrıca, kullanıcıya bir bildirim e-postası gönderilmesi gibi uyumsuzluk için eylemler gerçekleştirebilirsiniz. Uyumluluk ilkelerine ne yaptığını ve bunların nasıl kullanıldığını bir genel bakış için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
-Bu makalede:
+Bu makale:
 
-- Uyumluluk ilkesi oluşturmak için gerekli önkoşullar ve adımlar listelenmiştir.
-- İlkeyi kullanıcı ve cihaz gruplarınıza atama adımları gösterilmiştir.
-- İlkelerinizi "filtrelemek" için kullanabileceğiniz kapsam etiketleri gibi ek adımlar ve uyumlu olmayan cihazlarda gerçekleştirebileceğiniz işlemler anlatılmıştır.
-- Cihazların ilke güncelleştirmelerini aldığı iade yenileme döngüsü süreleri listelenmiştir.
+- Karmaşık pozisyon ilkesi oluşturmak için önkoşulları ve adımları listeler.
+- İlkeyi Kullanıcı ve cihaz gruplarınıza nasıl atayacağınızı gösterir.
+- İlkelerine "filtre uygulama" ve uyumlu olmayan cihazlarda uygulayabileceğiniz adımlar dahil olmak üzere ek özellikleri açıklar.
+- Cihazların ilke güncelleştirmelerini aldığı sırada iade yenileme döngüsünü listeler.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
+Cihaz uyumluluk ilkelerini kullanmak için şunları yaptığınızdan emin olun:
 
 - Aşağıdaki abonelikleri kullanın:
 
   - Intune
-  - Koşullu erişim kullanıyorsanız, Azure Active Directory (AD) Premium sürümü gerekir. [Azure Active Directory fiyatlandırması](https://azure.microsoft.com/pricing/details/active-directory/) sayfasında farklı sürümlerde sunulan özelliklere yer verilmiştir. Intune uyumluluğu için Azure AD gerekli değildir.
+  - Koşullu erişim kullanıyorsanız, Azure Active Directory (AD) Premium sürümü gerekir. [Azure Active Directory fiyatlandırması](https://azure.microsoft.com/pricing/details/active-directory/) , farklı sürümlerle ne olduğunu listeler. Intune uyumluluğu Azure AD gerektirmez.
 
 - Desteklenen bir platform kullanın:
 
   - Android
-  - Android Kurumsal
+  - Android kurumsal
   - iOS
-  - macOS (önizleme)
+  - macOS (Önizleme)
   - Windows 10
   - Windows 8.1
-  - WVPN profillerinidows Phone 8.1
+  - Windows Phone 8.1
 
-- Cihazları Intune'a kaydetme (uyumluluk durumunu görmek için gereklidir)
+- Cihazları Intune 'A kaydetme (uyumluluk durumunu görmek için gereklidir)
 
-- Cihazları bir kullanıcıya kaydedin veya birincil kullanıcı olmadan kaydedin. Cihazların birden çok kullanıcıya kaydedilmesi desteklenmez.
+- Cihazları bir kullanıcıya kaydetme veya birincil kullanıcı olmadan kaydetme. Birden çok kullanıcıya kayıtlı cihazlar desteklenmez.
 
 ## <a name="create-the-policy"></a>İlkeyi oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz uyumluluğu**'nu seçin. Aşağıdaki seçenekleriniz vardır:
+2. **Cihaz uyumluluğu**' nu seçin. Şu seçenekleriniz vardır:
 
-    - **Genel bakış**: uyumlu ve hesaplanmayan cihazların bir özetini ve sayısını gösterir. Ayrıca ilkeleriniz ve ilkelerinizdeki ayarlar da listelenir. [Intune cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md) sayfasında faydalı bilgiler yer almaktadır.
+    - **Genel bakış**: uyumlu ve hesaplanmayan cihazların bir özetini ve sayısını gösterir. Ayrıca ilkelerinizin ilkelerini ve ayrı ayarlarını listeler. [Intune cihaz uyumluluk Ilkelerini izleme](compliance-policy-monitor.md) , bazı iyi bilgiler sağlar.
     - **Yönetin**: cihaz ilkeleri oluşturun, uyumsuz cihazlara [bildirim](quickstart-send-notification.md) gönderin ve [ağ](use-network-locations.md)oluşturma özelliğini etkinleştirin.
-    - **İzleme**: cihazlarınızın uyumluluk durumunu ve ayar ve ilke düzeyinde kontrol edin. [Intune cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md) bu konuda faydalı bir kaynaktır. Ayrıca günlükleri görüntüleyebilir ve cihazlarınızın tehdit aracısı durumunu denetleyebilirsiniz.
+    - **İzleme**: cihazlarınızın uyumluluk durumunu ve ayar ve ilke düzeyinde kontrol edin. [Intune cihaz uyumluluk Ilkelerini izleme](compliance-policy-monitor.md) iyi bir kaynaktır. Ayrıca, günlükleri görüntüleyin ve cihazlarınızın tehdit Aracısı durumunu denetleyin.
     - **Kurulum**: [yerleşik uyumluluk Ilkelerini](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies)kullanın, [Microsoft Defender GELIŞMIŞ tehdit koruması 'nı (ATP)](advanced-threat-protection.md)etkinleştirin, bir [Mobil tehdit savunma Bağlayıcısı](mobile-threat-defense.md)ekleyin ve [JAMF](conditional-access-integrate-jamf.md)kullanın.
 
-3. **İlkeler** > **İlke Oluştur**’u seçin. Aşağıdaki özellikleri girin:
+3. @No__t **ilkeleri**seçin-1**ilke oluştur**. Aşağıdaki özellikleri girin:
 
-    - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. **Jailbreak uygulanmış iOS cihazlarını uyumlu değil olarak işaretle** iyi bir ilke adı örneğidir.
-    - **Açıklama**: ilke için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:  
+    - **Ad**: ilke için açıklayıcı bir ad girin. Daha sonra kolayca tanımlayabilmeniz için ilkelerinizi adlandırın. Örneğin, iyi bir ilke adı **iOS jailbreak uygulanmış cihazlarını uyumlu değil olarak işaretler**.
+    - **Açıklama**: ilke için bir açıklama girin. Bu ayar isteğe bağlıdır, ancak önerilir.
+    - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz:  
 
        - **Outlook Web Access (OWA)**
        - **Android kurumsal**
@@ -87,88 +87,88 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
     - **Ayarlar**: aşağıdaki makaleler her platformun ayarlarını listeler ve anlatmaktadır:
 
         - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
-        - [Android Kurumsal](compliance-policy-create-android-for-work.md)
+        - [Android kurumsal](compliance-policy-create-android-for-work.md)
         - [Android](compliance-policy-create-ios.md)
         - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1, Windows 8.1 ve üzeri](compliance-policy-create-windows-8-1.md)
+        - [Windows Phone 8,1, Windows 8.1 ve üzeri](compliance-policy-create-windows-8-1.md)
         - [Windows 10 ve üzeri](compliance-policy-create-windows.md)
 
-4. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Tamam** > **Oluştur**'u seçin. İlke oluşturulur ve listede gösterilir. Şimdi ilkeyi gruplarınıza atayın.
+4. İşiniz bittiğinde, değişikliklerinizi kaydetmek için **tamam** > **Oluştur** ' u seçin. İlke oluşturulur ve listede gösterilir. Ardından, ilkeyi gruplarınızı atayın.
 
-## <a name="assign-user-groups"></a>Kullanıcı gruplarını atama
+## <a name="assign-the-policy"></a>İlkeyi ata
 
-İlke oluşturulduktan sonra yapmanız gereken bunu gruplarınıza atamaktır:
+Bir ilke oluşturulduktan sonra, bir sonraki adım ilkeyi gruplarınızı atamak için kullanılır:
 
-1. Oluşturduğunuz ilkelerden birini seçin. Mevcut ilkeler **Cihaz uyumluluğu** > **İlkeler**’de bulunur.
-2. İlkeyi ve ardından **Atamalar**'ı seçin. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
-3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar**’ı seçin. Bu ilkeyi uygulamak istediğiniz kullanıcı gruplarını seçin ve daha sonra ilkeyi kullanıcılara dağıtmak için **Kaydet**’i seçin.
+1. Oluşturduğunuz bir ilkeyi seçin. Mevcut ilkeler **cihaz uyumluluk** > **ilkelerdir**.
+2. **Atamaları**> ilke ' yi seçin. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya dışlayabilirsiniz.
+3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar** ' ı seçin. Bu ilkenin uygulanmasını istediğiniz grupları seçin > ilkeyi dağıtmak için **Kaydet** ' i seçin.
 
-İlkeyi kullanıcılara uyguladınız. İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, uyumluluk için değerlendirilir.
+İlkenize göre hedeflenen kullanıcı veya cihazlar, Intune ile iade edildiğinde uyumluluk için değerlendirilir.
 
-### <a name="evaluate-how-many-users-are-targeted"></a>Kaç kullanıcının hedeflendiğini değerlendirme
+### <a name="evaluate-how-many-users-are-targeted"></a>Kaç kullanıcının hedeflenmekte olduğunu değerlendirin
 
-İlkeyi atadıktan sonra etkilenen kullanıcı sayısını da **değerlendirebilirsiniz**. Bu özellik, cihaz değil kullanıcı sayısını hesaplar.
+İlkeyi atadığınızda, kaç kullanıcının etkilendiğini de **değerlendirebilirsiniz** . Bu özellik kullanıcıları hesaplar; cihazları hesaplamaz.
 
-1. Intune’da **Cihaz uyumluluğu** > **İlkeler**'i seçin.
-2. Bir ilke seçip **Atamalar** > **Değerlendir** yolunu izleyin. Bu ilkenin kaç kullanıcıyı hedeflediğini gösteren bir ileti görüntülenir.
+1. Intune 'da **cihaz uyumluluk** > **ilkeleri**' ni seçin.
+2. Bir ilke > **atamaları** > **değerlendir**' i seçin. Bu ilke tarafından kaç kullanıcının hedeflendiğinden bir ileti gösterilir.
 
-**Değerlendir** düğmesi gri gösteriliyorsa, ilkenin bir veya birden fazla gruba atandığından emin olun.
+**Değerlendir** düğmesi gri ise, ilkenin bir veya daha fazla gruba atandığından emin olun.
 
-## <a name="actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemler
+## <a name="actions-for-noncompliance"></a>Uyumsuzluk için Eylemler
 
-Uyumluluk ilkelerinizi karşılamayan cihazlara otomatik olarak ve sırayla uygulanacak eylemler belirleyebilirsiniz. Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örneğin, bir gün sonra olarak). Ayrıca, cihaz uyumlu olmadığında kullanıcıya e-posta gönderen ikinci bir eylem de yapılandırabilirsiniz.
+Uyumluluk ilkelerinizi karşılamayan cihazlarda otomatik olarak uygulanacak bir dizi eylem ekleyebilirsiniz. Cihaz uyumsuz olarak işaretlendiğinde (bir gün sonra) zamanlamayı değiştirebilirsiniz. Ayrıca, cihaz uyumlu olmadığında kullanıcıya bir e-posta gönderen ikinci bir eylem da yapılandırabilirsiniz.
 
-[Uyumsuz cihazlar için eylem ekleme](actions-for-noncompliance.md) makalesinde, kullanıcılarınıza e-posta ile gönderilecek bir bildirim oluşturma da dahil olmak üzere daha fazla bilgi sağlanmıştır.
+[Uyumsuz cihazlar için eylem ekleme](actions-for-noncompliance.md) , kullanıcılarınıza bir bildirim e-postası oluşturma da dahil olmak üzere daha fazla bilgi sağlar.
 
-Örneğin Konumlar özelliğini kullanıyor ve uyumluluk ilkesinde bir konum ekliyorsunuz. En az bir konum seçtiğinizde uyumsuzluk için varsayılan eylem uygulanır. Cihaz, seçili konumlara bağlı değilse hemen uyumsuz olarak değerlendirilir. Kullanıcılarınıza bir gün gibi bir yetkisiz kullanım süresi tanıyabilirsiniz.
+Örneğin, konumlar özelliğini kullanıyorsunuz ve uyumluluk ilkesinde bir konum eklersiniz. En az bir konum seçtiğinizde uyumsuzluk için varsayılan eylem geçerlidir. Cihaz seçilen konumlara bağlı değilse, bu, hemen uyumlu değil olarak kabul edilir. Kullanıcılarınıza bir gün gibi yetkisiz kullanım süresi verebilirsiniz.
 
 ## <a name="scope-tags"></a>Kapsam etiketleri
 
-Satış, İK, Merkez ofis çalışanları gibi belirli gruplara ilke atamanın ve filtrelemenin ideal bir yolu olarak kapsam etiketlerini kullanabilirsiniz. Uyumluluk ilkelerinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. [İlke filtrelemek için kapsam etiketleri kullanma](../fundamentals/scope-tags.md) sayfası bu konuda faydalı bir kaynaktır.
+Kapsam etiketleri; Sales, HR, tüm ABD-NC çalışanları vb. gibi belirli gruplara ilke atamak ve filtrelemek için harika bir yoldur. Ayarları ekledikten sonra, uyumluluk ilkelerinize bir kapsam etiketi de ekleyebilirsiniz. [İlkeleri filtrelemek için kapsam etiketlerini kullanın](../fundamentals/scope-tags.md) iyi bir kaynaktır.
 
-## <a name="refresh-cycle-times"></a>Yenileme döngüsü süreleri
+## <a name="refresh-cycle-times"></a>Yenileme döngüsünü Yenile
 
 Intune, uyumluluk ilkelerine yönelik güncelleştirmeleri denetlemek için farklı yenileme döngüleri kullanır. Cihaz yakın zamanda kaydedildiyse, iade etme daha sık çalışır. [İlke ve profil yenileme döngüleri](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) tahmini yenileme zamanlarını listeler.
 
 Herhangi bir zamanda, kullanıcılar Şirket Portalı uygulamayı açabilir ve cihaz güncelleştirmelerini anında denetlemek için cihazı eşitleyebilir.
 
-### <a name="assign-an-ingraceperiod-status"></a>InGracePeriod durumu atama
+### <a name="assign-an-ingraceperiod-status"></a>Yetkisizkullanımsüresinde durumu atama
 
-InGracePeriod durumu, uyumluluk ilkesi için bir değerdir. Bu değer, cihazın yetkisiz kullanım süresi ile bu uyumluluk ilkesi için asıl cihaz durumunun bir bileşimi ile belirlenir.
+Bir uyumluluk ilkesinin Yetkisizkullanımsüresinde durumu bir değerdir. Bu değer, bir cihazın yetkisiz kullanım süresinin ve bu uyumluluk ilkesi için bir cihazın gerçek durumunun birleşimiyle belirlenir.
 
-Yani bir cihazın atanmış bir uyumluluk ilkesi için Uyumsuz durumu varsa ve:
+Özellikle, bir cihazın atanmış uyumluluk ilkesi için uyumsuz bir durumu varsa ve:
 
 - Cihaza atanmış bir yetkisiz kullanım süresi yoksa, uyumluluk ilkesi için atanan değer uyumsuz
 - Cihazda süresi geçen bir yetkisiz kullanım süresi varsa, uyumluluk ilkesi için atanan değer uyumsuz olur
 - Cihazda daha sonra bir yetkisiz kullanım süresi varsa, uyumluluk ilkesi için atanan değer Yetkisizkullanımsüresinde olur
 
-Aşağıdaki tabloda bu noktalar özetlenmektedir:
+Aşağıdaki tabloda bu noktaları özetlenmektedir:
 
-|Asıl uyumluluk durumu|Atanmış yetkisiz kullanım süresi değeri|Geçerli uyumluluk durumu|
+|Gerçek uyumluluk durumu|Atanan yetkisiz kullanım süresi değeri|Etkili uyumluluk durumu|
 |---------|---------|---------|
-|Uyumsuz |Bir yetkisiz kullanım süresi atanmamış |Uyumsuz |
-|Uyumsuz |Önceki günün tarihi|Uyumsuz|
-|Uyumsuz |Sonraki günün tarihi|YetkisizKullanımSüresinde|
+|Izde |Hiçbir yetkisiz kullanım süresi atanmadı |Izde |
+|Izde |Dünün tarihi|Izde|
+|Izde |Yarının tarihi|Yetkisizkullanımsüresinde|
 
-Cihaz uyumluluk ilkelerini izleme hakkında daha fazla bilgi için bkz. [Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md).
+Cihaz uyumluluk ilkelerini izleme hakkında daha fazla bilgi için bkz. [Intune cihaz uyumluluk Ilkelerini izleme](compliance-policy-monitor.md).
 
-### <a name="assign-a-resulting-compliance-policy-status"></a>Tek bir uyumluluk ilkesi durumu atama
+### <a name="assign-a-resulting-compliance-policy-status"></a>Sonuç olarak bir uyumluluk ilkesi durumu atama
 
-Bir cihazda birden fazla uyumluluk ilkesi varsa ve cihazın bu atanmış uyumluluk ilkelerinden iki veya daha fazlası için farklı uyumluluk durumları varsa, cihaza tek bir uyumluluk durumu atanır. Bu atama, uyumluluk durumlarına atanan kavramsal önem derecesi düzeyine dayalı olarak yapılır. Uyumluluk durumlarının önem derecesi aşağıdaki gibidir:
+Bir cihazda birden fazla uyumluluk ilkesi varsa ve cihazın bu atanmış uyumluluk ilkelerinden iki veya daha fazlası için farklı uyumluluk durumları varsa, tek bir sonuç uyumluluk durumu atanır. Bu atama, her uyumluluk durumuna atanan kavramsal önem derecesini temel alır. Her uyumluluk durumu aşağıdaki önem düzeyine sahiptir:
 
 |Durum  |Önem Derecesi  |
 |---------|---------|
-|Bilinmiyor     |1|
-|NotApplicable     |2|
-|Uyumlu|3|
-|YetkisizKullanımSüresinde|4|
-|Uyumsuz|5|
+|Bilinmiyor     |1\.|
+|Notapplıcable     |2|
+|uyumlu|3|
+|Yetkisizkullanımsüresinde|4|
+|Izde|5|
 |Hata|6|
 
-Bir cihazda birden fazla uyumluluk ilkesi varsa, bu ilkelerden en yüksek önem derecesine sahip olanı bu cihaza atanır.
+Bir cihazda birden fazla uyumluluk ilkesi olduğunda, tüm ilkelerin en yüksek önem derecesi bu cihaza atanır.
 
-Örneğin bir cihaza üç uyumluluk ilkesi atandığını düşünelim: biri Bilinmiyor durumunda (önem derecesi = 1), biri Uyumlu durumunda (önem derecesi = 3) ve biri InGracePeriod durumunda (önem derecesi = 4). InGracePeriod durumu en yüksek önem düzeyine sahiptir. Bu nedenle üç ilke de InGracePeriod uyumluluk durumuna sahip olur.
+Örneğin, bir cihaza atanmış üç uyumluluk ilkesi vardır: bir bilinmeyen durum (önem derecesi = 1), bir uyumluluk durumu (önem derecesi = 3) ve bir Yetkisizkullanımsüresinde durumu (önem derecesi = 4). Yetkisizkullanımsüresinde durumu en yüksek önem düzeyine sahiptir. Bu nedenle, üç ilkenin tümünde Yetkisizkullanımsüresinde uyumluluk durumu vardır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[İlkelerinizi izleme](compliance-policy-monitor.md).
+[Ilkelerinizi izleyin](compliance-policy-monitor.md).

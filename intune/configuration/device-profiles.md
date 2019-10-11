@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 656a6903284be01b8afd493cdbd36afe299db02a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730789"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036451"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune'daki cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama
 
@@ -40,7 +40,7 @@ Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak bu yapıland�
 
 Bu makalede oluşturabileceğiniz profil türlerine genel bir bakış sağlanmaktadır. Cihazlardaki bazı özelliklere izin vermek veya bunları engellemek için bu profilleri kullanabilirsiniz.
 
-## <a name="administrative-templates-preview"></a>Yönetim şablonları (Önizleme)
+## <a name="administrative-templates"></a>Yönetim şablonları
 
 [Yönetim şablonları](administrative-templates-windows.md) Internet Explorer, OneDrive, uzak masaüstü, Word, Excel ve diğer Office programları için yapılandırabileceğiniz yüzlerce ayarı içerir.
 

@@ -1,6 +1,6 @@
 ---
-title: Kuruluşunuzun sunduğu iOS cihazını yönetime kaydedin. | Microsoft Docs
-description: Intune 'A, kuruluşunuz tarafından satın alınan ve sunulan bir iOS cihazının nasıl kaydedileceğini açıklar.
+title: Kuruluş tarafından sağlanan iOS cihazınızı yönetime kaydedin. | Microsoft Docs
+description: Kuruluşunuz tarafından satın alınan ve sağlanan bir iOS cihazın Intune’a nasıl kaydedildiğini açıklar
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,44 +18,44 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca7ff55653d12d352b4fb90163f4622a9e573ab
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0719aca1dbb84358b0c54fbfac57143d2a77c0de
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720998"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163462"
 ---
-# <a name="enroll-your-organization-provided-ios-device-in-management"></a>Kuruluşunuzun sunduğu iOS cihazını yönetime kaydetme
+# <a name="enroll-your-organization-provided-ios-device-in-management"></a>Kuruluş tarafından sağlanan iOS cihazınızı yönetime kaydedin
 
-Intune 'da yeni iOS cihazınızı nasıl yönetileceğini öğrenin.  
+Yeni iOS cihazınızı Intune yönetimine kaydetmeyi öğrenin.  
 
-İş veya okul tarafından size sunulan iOS cihazları, genellikle bunları almadan önce önceden yapılandırılmıştır. Kuruluşunuz, önceden bu ayarları açtıktan sonra, ilk kez oturum açtıktan sonra cihazınıza gönderir. Cihazınız kurulumu tamamladıktan sonra, iş veya okul kaynaklarınıza erişim elde edersiniz.  
+Size iş veya okul tarafından sağlanan iOS cihazlar genellikle elinize ulaşmadan önce yapılandırılmış olur. Cihazınızı ilk kez açtığınızda ve oturum açtığınızda kuruluşunuz cihaza bu önceden yapılandırılmış ayarları gönderir. Cihazınızın kurulumu tamamlandıktan sonra, iş veya okul kaynaklarınıza erişim elde edersiniz.  
 
-Kuruluma başlamak için cihazınızı başlatın ve iş veya okul kimlik bilgilerinizle oturum açın. Bu makalenin geri kalanında, Kurulum Yardımcısı ' na kılavuzluk ettiğiniz için göreceğiniz adımlar ve ekranlar açıklanmaktadır.
+Kuruluma başlamak için cihazınızı açın ve iş veya okul kimlik bilgilerinizle oturum açın. Bu makalenin kalan bölümünde Kurulum Yardımcısı'nda ilerlerken göreceğiniz adımlar ve ekranlar açıklanır.
 
 ## <a name="what-is-apple-dep"></a>Apple DEP nedir?
 
-Kuruluşunuz cihazlarını *Apple aygıt kayıt programı* (DEP) adlı bir şekilde satın almış olabilir. Apple DEP, kuruluşların büyük miktarlarda iOS veya macOS cihazı satın almasını sağlar. Kuruluşlar daha sonra bu cihazları Intune gibi tercih edilen mobil cihaz yönetimi sağlayıcıları içinde yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi istiyorsanız bkz. [apple aygıt kayıt programı iOS cihazlarını otomatik olarak kaydetme](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-ios.md).  
+Kuruluşunuz cihazlarını *Apple Aygıt Kayıt Programı* (DEP) adı verilen bir hizmet yoluyla satın almış olabilir. Apple DEP, kuruluşların çok sayıda iOS veya macOS cihaz satın almasına imkan tanır. Ardından kuruluşlar bu cihazları Intune gibi tercih ettikleri bir mobil cihaz yönetim sağlayıcısında yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi edinmek istiyorsanız bkz. [iOS cihazları Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme](/intune/enrollment/device-enrollment-program-enroll-ios).
 
-## <a name="set-up-your-ios-device"></a>İOS cihazınızı ayarlama
+## <a name="set-up-your-ios-device"></a>iOS cihazınızı ayarlama
 
-Bir kuruluş tarafından sağlanmaktansa kendi iOS cihazınızı kullanıyorsanız, [kişisel ve kendi cihazlarını getir](enroll-your-device-in-intune-ios.md)adımlarını izleyin.  
+Kuruluş tarafından sağlanan bir cihaz yerine kendi iOS cihazınızı kullanıyorsanız, [kişisel cihazlara ve kendi cihazını getir kapsamındaki cihazlara](enroll-your-device-in-intune-ios.md) yönelik adımları izleyin.  
 
-1. İOS cihazınızı açın.
-2. **Dilinizi**seçtikten sonra, cihazınızı Wi-Fi ' a bağlayın.
-3. **İOS cihazını ayarla** ekranında, aşağıdakileri yapmak isteyip istemediğinizi seçin:
+1. iOS cihazınızı başlatın.
+2. **Dil** ayarınızı yaptıktan sonra cihazınızı Wi-Fi’a bağlayın.
+3. **iOS cihaz ayarlama** ekranında şunlardan birini seçin:
    - **Yeni cihaz olarak ayarla**
-   - **İCloud yedeğinden geri yükle**
-   - **İTunes yedeğinden geri yükle**
+   - **iCloud yedeğinden geri yükle**
+   - **iTunes yedeğinden geri yükle**
 
-4. Wi-Fi ' a Bağlandıktan sonra **yapılandırma** ekranı görüntülenir. Bu, **[şirketiniz] tarafından cihazınızı otomatik olarak yapılandıracaksınız.**
+4. Wi-Fi’a bağlandıktan sonra **Yapılandırma** ekranı görünür. Bu ekranda **[Şirketiniz], cihazınızı otomatik olarak yapılandıracaktır** ifadesi yer alır.
 
    **Yapılandırma [şirketiniz] uygulamasının bu cihazı hava üzerinden yönetmesine olanak tanır. Yönetici, e-posta ve ağ hesapları ayarlamanıza, uygulama yükleyip yapılandırmanıza ve ayarları uzaktan yönetmenize yardımcı olabilir. Bir yönetici özellikleri devre dışı bırakabilir, uygulama yükleyip kaldırabilir, Internet trafiğinizi izleyip kısıtlayabilir ve bu cihazı uzaktan silebilir.**
 
-   **Yapılandırma tarafından sağlanır: [Şirketinizin] iOS ekibi [Adres]**
+   **Yapılandırma şunlar tarafından sağlanır: [Şirketinizin] iOS Ekibi [Adres]**
 
-5. Apple KIMLIĞINIZLE oturum açın. Oturum açma, Şirket Portalı uygulamasını yüklemenize ve şirketinizin e-posta ve uygulamalar gibi kaynaklarına erişmenizi sağlayacak yönetim profilini yüklemenize olanak sağlar.
-6. **Hüküm ve koşulları** kabul edin ve Apple 'a tanılama bilgileri göndermek isteyip istemediğinize karar verin.
-7. Kaydınız tamamlandıktan sonra cihazınız daha fazla işlem yapmanız istenebilir. Bu adımlardan bazıları e-posta erişimi için parolanızı veya bir geçiş kodu ayarlamayı giriyor olabilir.
+5. Apple kimliğinizle oturum açın. Oturum açmak, Şirket Portalı uygulamasını yüklemenize ve şirketinizin size e-posta ve uygulamalar gibi kaynakların erişimini sağlamasına izin verecek yönetim profilini yüklemenize imkan verir.
+6. **Hüküm ve Koşullar**’ı onaylayın ve Apple’a tanılama bilgileri göndermek isteyip istemediğinizi seçin.
+7. Kaydınızı tamamladığınızda, cihazınız daha fazla eylem gerçekleştirmenizi isteyebilir. Bu adımlardan bazıları, e-posta erişimi için parolanızı girmek veya bir geçiş kodu ayarlamak olabilir.
 
-Hala yardıma mı ihtiyacınız var? Şirketinizin destek birimine başvurun. İletişim bilgileri için [Şirket portalı Web sitesini](https://go.microsoft.com/fwlink/?linkid=2010980)denetleyin.
+Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

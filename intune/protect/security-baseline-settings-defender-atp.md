@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729505"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163496"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune için Microsoft Defender Gelişmiş tehdit koruması temel ayarları
 
@@ -86,7 +86,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-SmartScreen](https://doc
 ## <a name="attack-surface-reduction"></a>Saldırı Yüzeyini Azaltma  
 
 - **Office uygulamaları alt işlem türünü Başlat**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *blok*olarak ayarlandığında Office uygulamalarının alt işlem oluşturmasına izin verilmez. Office uygulamaları, Word, Excel, PowerPoint, OneNote ve Access ' i içerir. Özel bir işlemin oluşturulması, özellikle de kötü amaçlı dosyaları başlatmak veya indirmek üzere Office uygulamalarını kullanmaya çalışacak makro tabanlı saldırılar için tipik bir kötü amaçlı yazılım davranışıdır.  
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *blok*olarak ayarlandığında Office uygulamalarının alt işlem oluşturmasına izin verilmez. Office uygulamaları, Word, Excel, PowerPoint, OneNote ve Access ' i içerir. Özel bir işlemin oluşturulması, özellikle de kötü amaçlı dosyaları başlatmak veya indirmek üzere Office uygulamalarını kullanmaya çalışacak makro tabanlı saldırılar için tipik bir kötü amaçlı yazılım davranışıdır.  
 
   **Varsayılan**: engelle
 
@@ -101,7 +101,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-SmartScreen](https://doc
   **Varsayılan**: etkinleştir
 
 - **E-posta içeriği yürütme türü**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *blok*olarak ayarlandığında, bu kural aşağıdaki dosya türlerinin Microsoft Outlook veya Web postasından 'de (gmail.com veya Outlook.com gibi) görülen bir e-postadan çalıştırılmasını ya da başlatılmasını engeller:  
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *blok*olarak ayarlandığında, bu kural aşağıdaki dosya türlerinin Microsoft Outlook veya Web postasından 'de (gmail.com veya Outlook.com gibi) görülen bir e-postadan çalıştırılmasını ya da başlatılmasını engeller:  
 
   - Yürütülebilir dosyalar (. exe,. dll veya. scr gibi)  
   - Betik dosyaları (PowerShell. PS, VisualBasic. vbs veya JavaScript. js dosyası gibi)  
@@ -110,17 +110,17 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-SmartScreen](https://doc
   **Varsayılan**: engelle
 
 - **Bir alt işlemde Adobe Reader başlatma**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Adobe Reader 'ın bir alt işlem oluşturmasını engellemek için bu kuralı *etkinleştirin* . Kötü amaçlı yazılım, sosyal mühendisler veya güvenlik açıkları aracılığıyla ek yükleri indirebilir ve başlatabilir ve Adobe Reader 'dan daha fazla kesebilir.  
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Adobe Reader 'ın bir alt işlem oluşturmasını engellemek için bu kuralı *etkinleştirin* . Kötü amaçlı yazılım, sosyal mühendisler veya güvenlik açıkları aracılığıyla ek yükleri indirebilir ve başlatabilir ve Adobe Reader 'dan daha fazla kesebilir.  
 
   **Varsayılan**: etkinleştir
 
 - **Betik gizleme makro kod türü**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – kötü amaçlı yazılım ve diğer tehditler bazı betik dosyalarında kötü amaçlı kodlarını gizlemeyi veya gizlemeyi deneyebilir. Bu kural, görünmeyen görünen betiklerin çalışmasını engeller.  
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – kötü amaçlı yazılım ve diğer tehditler bazı betik dosyalarında kötü amaçlı kodlarını gizlemeyi veya gizlemeyi deneyebilir. Bu kural, görünmeyen görünen betiklerin çalışmasını engeller.  
     
   **Varsayılan**: engelle
 
 - **Güvenilmeyen USB işlem türü**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – USB çıkarılabilir sürücülerden *blok*, imzasız veya güvenilmeyen yürütülebilir dosyalar olarak ayarlandığında ve SD kartları çalıştırılamaz.
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – USB çıkarılabilir sürücülerden *blok*, imzasız veya güvenilmeyen yürütülebilir dosyalar olarak ayarlandığında ve SD kartları çalıştırılamaz.
 
   Yürütülebilir dosyalar şunları içerir:
   - Yürütülebilir dosyalar (. exe,. dll veya. scr gibi)
@@ -129,22 +129,22 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-SmartScreen](https://doc
   **Varsayılan**: engelle
 
 - **Office uygulamaları diğer işlem ekleme türü**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - *blok*olarak ayarlandığında Word, Excel, PowerPoint ve OneNote dahil Office uygulamaları diğer işlemlere kod ekleyemez. Kod ekleme, genellikle kötü amaçlı yazılım tarafından virüsten koruma tarama altyapılarından etkinliği gizleme girişimi için kullanılır.  
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - *blok*olarak ayarlandığında Word, Excel, PowerPoint ve OneNote dahil Office uygulamaları diğer işlemlere kod ekleyemez. Kod ekleme, genellikle kötü amaçlı yazılım tarafından virüsten koruma tarama altyapılarından etkinliği gizleme girişimi için kullanılır.  
 
   **Varsayılan**: engelle
 
 - **Office makro kodu Win32 içeri aktarmalar türüne izin ver**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - *blok*olarak ayarlandığında, bu kural Win32 DLL 'leri içeri aktarabilen makro kodunu içeren Office dosyalarını engellemeye çalışır. Office dosyaları Word, Excel, PowerPoint ve OneNote içerir. Kötü amaçlı yazılım, sistem genelinde daha fazla bulaşma sağlamak üzere API çağrıları yapmak için kullanılan Win32 DLL 'Lerini içeri aktarmak ve yüklemek üzere Office dosyalarındaki makro kodunu kullanabilir.  
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - *blok*olarak ayarlandığında, bu kural Win32 DLL 'leri içeri aktarabilen makro kodunu içeren Office dosyalarını engellemeye çalışır. Office dosyaları Word, Excel, PowerPoint ve OneNote içerir. Kötü amaçlı yazılım, sistem genelinde daha fazla bulaşma sağlamak üzere API çağrıları yapmak için kullanılan Win32 DLL 'Lerini içeri aktarmak ve yüklemek üzere Office dosyalarındaki makro kodunu kullanabilir.  
 
   **Varsayılan**: engelle
 
 - **Office iletişim uygulamaları bir alt işlemde başlatılır**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *Etkinleştir*olarak ayarlandığında, bu kural Outlook 'un alt işlem oluşturmasını engeller. Bir alt işlemin oluşturulması engellenerek, bu kural sosyal mühendislik saldırılarına karşı koruma sağlar ve Outlook 'taki bir güvenlik açığını kullanarak açıktan yararlanma kodunu engeller.  
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *Etkinleştir*olarak ayarlandığında, bu kural Outlook 'un alt işlem oluşturmasını engeller. Bir alt işlemin oluşturulması engellenerek, bu kural sosyal mühendislik saldırılarına karşı koruma sağlar ve Outlook 'taki bir güvenlik açığını kullanarak açıktan yararlanma kodunu engeller.  
 
   **Varsayılan**: etkinleştir
 
 - **Office uygulamaları yürütülebilir içerik oluşturma veya başlatma türü**  
-  [Saldırı yüzeyi Azaltma kuralı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *blok*olarak ayarlandığında Office uygulamaları yürütülebilir içerik oluşturamaz. Office uygulamaları, Word, Excel, PowerPoint, OneNote ve Access ' i içerir.  
+  [Saldırı yüzeyi Azaltma kuralı](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *blok*olarak ayarlandığında Office uygulamaları yürütülebilir içerik oluşturamaz. Office uygulamaları, Word, Excel, PowerPoint, OneNote ve Access ' i içerir.  
 
   Bu kural, şüpheli ve kötü amaçlı eklentiler ve yürütülebilir dosyalar oluşturan ya da Başlatan olağan dışı eklentiler ve betikler (Uzantılar) tarafından kullanılan tipik davranışları hedefler. Bu tipik bir kötü amaçlı yazılım tekniğidir. Uzantıların Office uygulamaları tarafından kullanılması engellenir. Genellikle, bu uzantılar belirli görevleri otomatikleştiren betikleri çalıştırmak veya Kullanıcı tarafından oluşturulan eklenti özellikleri sağlamak için Windows komut dosyası konağını (. WSH dosyaları) kullanır.
 
@@ -273,7 +273,7 @@ Daha fazla bilgi için Windows belgelerindeki [Windowsadvancedthreatprotection C
 ## <a name="exploit-protection"></a>Exploit koruması  
 
 - **Exploit Protection XML**  
-  Daha fazla bilgi için Windows belgelerindeki [Exploit Protection yapılandırmalarının içeri ve dışarı](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml) aktarılması bölümüne bakın.  
+  Daha fazla bilgi için Windows belgelerindeki [Exploit Protection yapılandırmalarının içeri ve dışarı](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml) aktarılması bölümüne bakın.  
 
   BT yöneticisinin, kuruluştaki tüm cihazlara istenen sistem ve uygulama azaltma seçeneklerini temsil eden bir yapılandırma gönderebilmesini sağlar. Yapılandırma bir XML ile temsil edilir. 
 

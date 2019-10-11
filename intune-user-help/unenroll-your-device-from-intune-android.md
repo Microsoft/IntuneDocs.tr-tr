@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecc73fc9c51ae11f7541d1b9d28f0ccc8297c187
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8f2e9313cf2a4d639096f783b895596fc2535649
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721200"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163541"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Android cihazınızın yönetim kaydını silme  
 
@@ -64,7 +64,7 @@ Alternatif olarak, **ayarlar** > **uygulamalar** > **Şirket portalı** > **Kald
 
 Son çare olarak, uygulamayı cihazınızdan bir cihaz yöneticisi olarak kaldırabilirsiniz.  
 
-Şirkete ait bir cihazınız varsa, kuruluşunuz her zaman cihazınızda Şirket Portalı gerekebilir. Yüklemesini kaldırırsanız, uygulama yeniden yükleninceye kadar e-posta, uygulamalar, Wi-Fi veya VPN gibi korunan şirket kaynaklarına erişiminizi kaybedebilirsiniz. Gerekli uygulamaları yükleme, güncelleştirme veya kaldırma hakkında daha fazla bilgi için bkz. [Microsoft Intune uygulama ekleme](https://docs.microsoft.com/intune/apps/apps-add.md#apps-that-are-added-automatically-by-intune).
+Şirkete ait bir cihazınız varsa, kuruluşunuz her zaman cihazınızda Şirket Portalı gerekebilir. Yüklemesini kaldırırsanız, uygulama yeniden yükleninceye kadar e-posta, uygulamalar, Wi-Fi veya VPN gibi korunan şirket kaynaklarına erişiminizi kaybedebilirsiniz. Gerekli uygulamaları yükleme, güncelleştirme veya kaldırma hakkında daha fazla bilgi için bkz. [Microsoft Intune uygulama ekleme](/intune/apps/apps-add#apps-that-are-added-automatically-by-intune).
 
 Şirket Portalı Cihaz Yöneticisi olarak devre dışı bırakabilirsiniz. Her ayarın gerçek adları, Android cihazınızda farklılık gösterebilir.  
 

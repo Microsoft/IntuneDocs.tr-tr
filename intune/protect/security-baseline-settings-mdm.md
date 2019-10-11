@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731961"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237258"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune için MDM güvenlik taban çizgisi ayarları  
 
@@ -154,7 +154,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Browser](https://docs.mi
   
   **Varsayılan**: Evet  
 
-## <a name="connectivity"></a>Bilirlik  
+## <a name="connectivity"></a>Bağlanabilirlik  
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-bağlantı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) bölümüne bakın.  
 
 - **Web yayımı ve çevrimiçi sipariş sihirbazları için Internet 'ten indirmeyi engelleyin**  
@@ -219,7 +219,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-DeviceGuard](https://doc
   **Varsayılan**: UEFI kilidi ile etkinleştir 
 
 - **Sanallaştırma tabanlı güvenlik @no__t etkinleştirme**-1  
-  Bir sonraki yeniden başlatmada sanallaştırma tabanlı güvenliği (VBS) açar. Sanallaştırma tabanlı güvenlik, güvenlik hizmetlerine destek sağlamak için Windows Hiper Yöneticisi'ni kullanır.  
+  Bir sonraki yeniden başlatmada sanallaştırma tabanlı güvenliği (VBS) açar. Sanallaştırma tabanlı güvenlik, güvenlik hizmetleri için destek sağlamak üzere Windows Hiper Yöneticisi 'ni kullanır.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067066)  
   
   **Varsayılan**: Evet  
@@ -284,12 +284,12 @@ Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-DeviceLock](https://do
   *Parola ıste* *Evet*olarak ayarlandığında aşağıdaki ayarlar kullanılabilir.
 
   - **Parola en az karakter kümesi sayısı**  
-    Güçlü bir PIN veya parola için gereken karmaşık öğe türleri sayısı (büyük ve küçük harfler, rakamlar ve noktalama işaretleri). PIN masaüstü ve mobil cihazlar için aşağıdaki davranışı zorlar: 1-yalnızca basamak 2 rakamları ve küçük harflerin 3 basamaklı, küçük harflerin ve büyük harflerin olması gerekir. Masaüstü Microsoft hesaplarında ve etki alanı hesaplarında desteklenmez. 4 basamaklı, küçük harfler, büyük harfler ve özel karakterler gereklidir. Masaüstünde desteklenmez. Varsayılan değer 1 ' dir.  
+    Güçlü bir PIN veya parola için gereken karmaşık öğe türleri sayısı (büyük ve küçük harfler, rakamlar ve noktalama işaretleri). PIN masaüstü ve mobil cihazlar için aşağıdaki davranışı zorlar: 1-yalnızca basamak 2 rakamları ve küçük harflerin 3 basamaklı, küçük harflerin ve büyük harflerin olması gerekir. Masaüstü Microsoft hesaplarında ve etki alanı hesaplarında desteklenmez. 4 basamaklı, küçük harfler, büyük harfler ve özel karakterler gereklidir. Masaüstünde desteklenmez. Varsayılan değer 1’dir.  
     [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067055)  
     
     **Varsayılan**: 3  
 
-  - **Cihaz silinmeden önceki oturum açma hatası sayısı**  
+  - **Cihaz silinmeden önceki oturum açma hatalarının sayısı**  
     Cihaz temizlenmeden önce izin verilen kimlik doğrulama hatalarının sayısı. 0 değeri cihaz temizleme işlevini devre dışı bırakır.  
     [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
@@ -307,7 +307,7 @@ Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-DeviceLock](https://do
     
     **Varsayılan**: alfasayısal  
 
-  - **En düşük parola uzunluğu**  
+  - **Minimum parola uzunluğu**  
     Minimum parola uzunluğu ilke ayarı, bir kullanıcı hesabı için parola oluşturmak üzere en az karakter sayısını belirler. 1 ila 14 karakter arasında bir değer ayarlayabilir veya karakter sayısını 0 olarak ayarlayarak parola gerekmesiz bir değer belirleyebilirsiniz.  
     [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067024)  
     
@@ -320,7 +320,7 @@ Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-DeviceLock](https://do
     **Varsayılan**: Evet  
       *Evet ayarı basit parolaların kullanımını engeller.* 
 
-  - **Önceki parolaların yeniden kullanılmasını engelleme**  
+  - **Önceki parolaların yeniden kullanılmasını engelle**  
     Bu, kullanılamayan bir geçmişe kaç parola depolanabileceğini belirtir. Değer, kullanıcının geçerli parolasını içerir. Örneğin, *1* ayarı ile Kullanıcı yeni bir parola seçerken geçerli parolasını yeniden kullantıramıyorum. *5* ayarı, kullanıcının yeni parolasını geçerli parolasına veya önceki dört parolalarından birine ayarlayamayacağı anlamına gelir.  
     [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2066795)  
     
@@ -368,7 +368,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-EventLogService](https:/
   
   **Varsayılan**: 32768  
 
-## <a name="experience"></a>Deneyim  
+## <a name="experience"></a>Deneyimleri  
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-deneyim](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) bölümüne bakın.  
 
 - **Windows spot 'u engelle**  
@@ -689,7 +689,7 @@ Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-ınternebir](https:
   **Varsayılan**: devre dışı  
   
 - **Internet Explorer Internet bölgesi VBscript 'in çalışmasına izin verir**  
-  Bu ilke ayarı, VBScript 'in belirli Internet Explorer bölgelerindeki sayfalarda çalıştırılıp etmeyeceğine karar vermenizi sağlar. Şu seçenekler mevcuttur: 
+  Bu ilke ayarı, VBScript 'in belirli Internet Explorer bölgelerindeki sayfalarda çalıştırılıp etmeyeceğine karar vermenizi sağlar. Seçenekler şunlardır: 
   - *Enable* -herhangi bir etkileşim olmadan belirli bölgelerdeki sayfalarda VBScript çalıştırmaları. 
   - *İstem* -çalışanlara VBScript 'in bölgede çalışmasına izin verip vermeyeceğine sorulur. 
   - *Disable* -VBScript 'in bölgede çalışması engellenir. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız VBScript, belirtilen bölgede herhangi bir etkileşim olmadan çalışır.    
@@ -1190,7 +1190,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOpt
   **Varsayılan**: Evet
   
 - **Sunucu iletişimlerini her zaman dijital olarak imzalamasını gerektir**  
-  Bu güvenlik ayarı, SMB istemcisinin SMB paket imzalama anlaşması yapıp denemeyeceğini belirler. Sunucu ileti bloğu (SMB) protokolü, Microsoft dosya ve yazıcı paylaşımı ve uzak Windows yönetimi gibi birçok farklı ağ işlemi için temel sağlar. Geçiş sırasında SMB paketlerini değiştiren bağlantıyı izinsiz izleme saldırıları engellemek için SMB protokolü, SMB paketlerinin dijital imzalanmasını destekler. Bu ilke ayarı, SMB istemci bileşeninin bir SMB sunucusuna bağlanırken SMB paket imzalama anlaşması yapıp denemeyeceğini belirler. Bu ayar etkinleştirilirse, Microsoft ağ istemcisi, oturum kurulumundan sonra sunucudan SMB paket imzalamayı gerçekleştirmesini ister. Sunucuda paket imzalama etkinleştirildiyse, paket imzalama anlaşması yapılır. Bu ilke devre dışıysa, SMB istemcisi hiçbir şekilde SMB paket imzalamayı hiçbir şekilde anlaşacaktır.  
+  Bu güvenlik ayarı, SMB istemcisinin SMB paket imzalama anlaşması yapıp denemeyeceğini belirler. Sunucu ileti bloğu (SMB) protokolü, Microsoft dosya ve yazıcı paylaşımı ve uzak Windows yönetimi gibi birçok farklı ağ işlemi için temel sağlar. Geçiş sırasında SMB paketlerini değiştiren bağlantıyı izinsiz izleme saldırıları engellemek için SMB protokolü, SMB paketlerinin dijital imzalanmasını destekler. Bu ilke ayarı, SMB istemci bileşeninin bir SMB sunucusuna bağlanırken SMB paket imzalama anlaşması yapıp denemeyeceğini belirler. Bu ayar etkinleştirilirse, Microsoft ağ istemcisi, oturum kurulumundan sonra sunucudan SMB paket imzalamayı gerçekleştirmesini ister. Sunucuda paket imzalama etkinleştirilmişse, paket imzalama işlemi yapılır. Bu ilke devre dışıysa, SMB istemcisi hiçbir şekilde SMB paket imzalamayı hiçbir şekilde anlaşacaktır.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067319)  
   
   **Varsayılan**: Evet
@@ -1223,7 +1223,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOpt
   - *Eylem yok*. 
   - *Iş Istasyonunu kilitle* -akıllı kart kaldırıldığında iş istasyonu kilitlenir, kullanıcıların alanı terk etmeleri, akıllı kartlarını bunlara sahip olması ve hala korumalı bir oturum sürdürmesine izin verir.
   - *Kapanmaya zorla* -akıllı kart kaldırıldığında Kullanıcı oturumu otomatik olarak kapatılır.
-  - *Uzak Masaüstü oturumunun bağlantısını kesme* -akıllı kartın kaldırılması, kullanıcının oturumunu kapatmadan oturumun bağlantısını keser. Bu, kullanıcının akıllı kartı eklemesini ve oturumu daha sonra ya da başka bir akıllı kart okuyucusu ile donatılmış bir bilgisayara yeniden oturum açmak zorunda kalmadan sürdürmesini sağlar. Yerel bir oturum söz konusuysa, bu ilke İş İstasyonunu Kilitle ilkesiyle tam olarak aynı işlevi görür.
+  - *Uzak Masaüstü oturumunun bağlantısını kesme* -akıllı kartın kaldırılması, kullanıcının oturumunu kapatmadan oturumun bağlantısını keser. Bu, kullanıcının akıllı kartı eklemesini ve oturumu daha sonra ya da başka bir akıllı kart okuyucusu ile donatılmış bir bilgisayara yeniden oturum açmak zorunda kalmadan sürdürmesini sağlar. Oturum yerel ise, bu ilke Iş Istasyonunu kilitleme ile aynı şekilde çalışır.
   
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067331) 
     
@@ -1369,7 +1369,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-MSSLegacy](https://docs.
 
   **Varsayılan**: devre dışı
   
-## <a name="power"></a>Açılma  
+## <a name="power"></a>Üs  
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-güç](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) bölümüne bakın.  
 
 - **Prize takılıyken uyanma durumunda parola iste**  
@@ -1516,7 +1516,7 @@ Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-RemoteProcedureCall](h
 Daha fazla bilgi için bkz. [Ilke CSP-](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) Windows belgelerinde arama.  
 
 - **Şifrelenmiş öğelerin dizinini oluşturmayı devre dışı bırak**  
-  Öğeler için dizin oluşturulmasına izin verir veya engeller. Bu anahtar, Windows Information Protection (WıP) korumalı dosyalar gibi şifrelenmiş öğelerin dizinini oluşturulup oluşturulmayacağını denetleyen Windows Arama Dizin Oluşturucusu içindir. İlke etkinleştirildiğinde, WIP korumalı öğelerin dizini oluşturulur ve bunlar hakkındaki meta veriler şifrelenmemiş bir konumda depolanır. Meta veriler, dosya yolu ve değiştirilme tarihi gibi veriler içerir. İlke devre dışı bırakıldığında, WıP korumalı öğelerin dizini oluşturulmaz ve Cortana veya dosya Gezgini sonuçlarında gösterilmez. Cihazda çok sayıda WIP korumalı medya dosyası varsa fotoğraflar ve Groove uygulamaları performansını da etkileyebilir.  
+  Öğelerin dizinlenmesini sağlar veya izin vermez. Bu anahtar, Windows Information Protection (WıP) korumalı dosyalar gibi şifrelenmiş öğelerin dizinini oluşturulup oluşturulmayacağını denetleyen Windows Arama Dizin Oluşturucusu içindir. İlke etkinleştirildiğinde, WıP korumalı öğeler dizine alınır ve bunlarla ilgili meta veriler şifrelenmemiş bir konumda depolanır. Meta veriler dosya yolu ve değiştirilme tarihi gibi şeyleri içerir. İlke devre dışı bırakıldığında, WıP korumalı öğelerin dizini oluşturulmaz ve Cortana veya dosya Gezgini sonuçlarında gösterilmez. Cihazda çok sayıda WıP korumalı medya dosyası varsa Fotoğraflar ve Groove uygulamaları üzerinde de bir performans etkisi olabilir.  
   [Daha fazla bilgi edinin]( https://go.microsoft.com/fwlink/?linkid=2067303)  
   
   **Varsayılan**: Evet
@@ -1622,7 +1622,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
 
 - **E-posta içeriği yürütme türü**  
   Bu kural, aşağıdaki dosya türlerinin Microsoft Outlook veya Web postasından (örn. exe,. dll veya. SCR) komut dosyaları (örneğin, PowerShell. PS, VisualBasic. vbs gibi) görülen bir e-postadan çalıştırılmasını veya başlatılmasını engeller. ya da JavaScript. js dosyası) betik Arşivi dosyaları.  
-  [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [Daha fazla bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **Varsayılan**: engelle
 
@@ -1632,7 +1632,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
 
 - **Ağ koruma türü**  
   Bu ilke, Windows Defender Exploit Guard 'da ağ korumasını (engelleme/denetim) açmanıza veya kapatmanıza olanak sağlar. Ağ koruması, herhangi bir uygulamanın kimlik avı dolandırıcılığı, yararlanma ve barındırma siteleri ve Internet 'teki kötü amaçlı içeriklere erişmesini koruyan bir Windows Defender Exploit Guard özelliğidir. Bu, üçüncü taraf tarayıcıların tehlikeli sitelere bağlanmasını engellemeyi de kapsar. Değer türü tamsayı. Bu ayarı etkinleştirirseniz, ağ koruması açıktır ve çalışanlar bu özelliği kapatamaz. Davranışı şu seçenekler tarafından denetlenebilir: Block ve audit. Bu ilkeyi "engelle" seçeneği ile etkinleştirirseniz, kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanması engellenir. Bu etkinliği Windows Defender Güvenlik Merkezi 'nde görebilirsiniz. Bu ilkeyi "Denetim" seçeneği ile etkinleştirirseniz, kullanıcıların/uygulamaların tehlikeli etki alanlarına bağlanması engellenmez. Bununla birlikte, yine de bu etkinliği Windows Defender Güvenlik Merkezi 'nde görürsünüz. Bu ilkeyi devre dışı bırakırsanız, kullanıcıların/uygulamaların tehlikeli etki alanlarına bağlanması engellenmez. Windows Defender Güvenlik Merkezi 'nde herhangi bir ağ etkinliği görmezsiniz. Bu ilkeyi yapılandırmazsanız, ağ engelleme varsayılan olarak devre dışıdır.  
-  [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [Daha fazla bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Varsayılan**: etkinleştir
   
@@ -1665,7 +1665,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
   
   **Varsayılan**: Evet  
   
-- **Arşiv dosyalarını tara**  
+- **Arşiv dosyalarını Tara**  
   Defender arşiv dosyalarını tarar.
   
   **Varsayılan**: Evet
@@ -1719,7 +1719,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
   
   **Varsayılan**: engelle
 
-## <a name="windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı  
+## <a name="windows-defender-firewall"></a>Windows Defender güvenlik duvarı  
 Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) bölümüne bakın.  
 
 - **Güvenlik duvarı profili etki alanı**  
@@ -1776,7 +1776,7 @@ Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYP
   - **Güvenlik Duvarı etkin**  
     **Varsayılan**: izin verildi
 
-## <a name="windows-hello-for-business"></a>İş İçin Windows Hello  
+## <a name="windows-hello-for-business"></a>Iş için Windows Hello  
 - **Kullanılabilir olduğunda gelişmiş yanıltma koruması gerektir**  
   Yanıt Evet ise, cihazlar, kullanılabilir olduğunda gelişmiş yanıltma koruması kullanacaktır. Hayır ise, sahtekarlığı önleme engellenir. Yapılandırılmadı, istemci üzerinde gerçekleştirilen yapılandırmalara uyar.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067192)
