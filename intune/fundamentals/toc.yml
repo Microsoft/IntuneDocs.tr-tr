@@ -6,8 +6,9 @@
     - name: Microsoft Intune genel bakış
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: Intune şirketim için ne yapabilir?
-      href: get-started-evaluation.md
+    - name: Cihaz yönetimine genel bakış
+      href: what-is-device-management.md
+      displayName: teamviewer
     - name: Yenilikler
       href: whats-new.md
       items:
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: Kavramlar
   items:
-    - name: Cihaz yönetimi nedir?
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: Eğitim için Intune nedir?
       href: introduction-intune-education.md
     - name: Üst düzey mimari

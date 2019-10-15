@@ -1,5 +1,5 @@
 ---
-title: Desteklenen platformlar şifreleme yöntemlerini kullanarak Microsoft Intune cihazları şifreleme
+title: Platformlar desteklenen şifreleme yöntemiyle cihazları şifreleyin
 titleSuffix: Microsoft Intune
 description: BitLocker veya Filekasası gibi yerleşik şifreleme yöntemleriyle cihazları şifreleyin ve bu şifrelenmiş cihazların kurtarma anahtarlarını Intune portalından yönetin.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad995a4b8b67a2ff7e3604f899fdbeebc2bad8cc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f885cbddf8ecb984dc6e98db38c9adbc6a07119a
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729289"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306860"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini kullanma  
 
@@ -121,6 +121,6 @@ Yönetmek için şifreleme raporunu kullanın:
 
 Intune ile yapılandırabileceğiniz şifreleme ayarlarını inceleyerek şunları yapabilirsiniz:  
 - [Kurulumu](endpoint-protection-windows-10.md#windows-encryption)  
-- [FileVault](endpoint-protection-macos.md#filevault)  
+- [Dosya Kasası](endpoint-protection-macos.md#filevault)  
  
  

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0d4bf6a52fd860695433e0020e9ec7390f98eca6
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730949"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314641"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune 'de Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonlarını kullanın
 
@@ -28,7 +28,7 @@ Kuruluşunuzdaki cihazları yönetirken, farklı cihaz gruplarına uygulanan aya
 
 Bu görevi, Microsoft Intune **Yönetim Şablonları** kullanarak tamamlayabilirsiniz. Yönetim Şablonları, Microsoft Edge sürüm 77 ve üzeri, Internet Explorer, Microsoft Office programlar, Uzak Masaüstü, OneDrive, parolalar ve PIN 'Ler gibi özellikleri denetleyen yüzlerce ayarı içerir. Bu ayarlar, grup yöneticilerinin bulutu kullanarak grup ilkelerini yönetmesine olanak tanır.
 
-Windows ayarları Active Directory (AD) içindeki Grup İlkesi (GPO) ayarlarına benzerdir. Bu ayarlar Windows 'da yerleşiktir ve XML kullanan [ADMX ile desteklenen ayarlardır](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) . Office ve Microsoft Edge ayarları, ADMX kullanımına alınır ve [Office Yönetim şablonu dosyaları](https://www.microsoft.com/download/details.aspx?id=49030) ve [Microsoft Edge YÖNETIM şablonu dosyalarında](https://www.microsoftedgeinsider.com/enterprise)ADMX ayarlarını kullanır. Ancak, Intune şablonları% 100 bulut tabanlıdır. Ayarları yapılandırmak için basit ve düz ileri bir yol sunar ve istediğiniz ayarları bulur.
+Windows ayarları Active Directory (AD) içindeki Grup İlkesi (GPO) ayarlarına benzerdir. Bu ayarlar Windows 'da yerleşiktir ve XML kullanan [ADMX ile desteklenen ayarlardır](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) . Office ve Microsoft Edge ayarları, ADMX kullanımına alınır ve [Office Yönetim şablonu dosyaları](https://www.microsoft.com/download/details.aspx?id=49030) ve [Microsoft Edge YÖNETIM şablonu dosyalarında](https://www.microsoftedgeinsider.com/enterprise)ADMX ayarlarını kullanır. Ancak, Intune şablonları %100 bulut tabanlıdır. Ayarları yapılandırmak için basit ve düz ileri bir yol sunar ve istediğiniz ayarları bulur.
 
 **Yönetim Şablonları** , Intune 'da yerleşik olarak bulunur ve OMA-URI kullanımı dahil olmak üzere herhangi bir özelleştirme gerektirmez. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak, Windows 10 cihazlarınızı yönetmek için bu şablon ayarlarını tek durdurulmalı bir mağaza olarak kullanın.
 
@@ -38,20 +38,20 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
 
 - Bu ayarlardan bazıları Windows 10 sürüm 1703 (RS2) ile başlayarak kullanılabilir. Bazı ayarlar tüm Windows sürümlerinde bulunmaz. En iyi deneyim için, Windows 10 Enterprise sürüm 1903 (19H1) ve daha yeni bir sürümü kullanmanız önerilir.
 
-- Windows ayarları [Windows Ilkesi CSP 'leri](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)kullanır. CSP 'Ler Home, Professional, Enterprise vb. gibi farklı Windows sürümlerinde çalışır. CSP 'nin belirli bir sürümde çalışıp çalışmadığını görmek için [Windows Ilke CSP 'leri](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)' ne gidin.
+- Windows ayarları [Windows Ilkesi CSP 'leri](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies)kullanır. CSP 'Ler Home, Professional, Enterprise vb. gibi farklı Windows sürümlerinde çalışır. CSP 'nin belirli bir sürümde çalışıp çalışmadığını görmek için [Windows Ilke CSP 'leri](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies)' ne gidin.
 
 ## <a name="create-a-template"></a>Şablon oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+2. @No__t-3**Profil oluştur**@no__t **cihaz yapılandırması**' nı seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: profil için bir ad girin.
-    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Açıklama**: profil için bir açıklama girin. Bu ayar isteğe bağlıdır, ancak önerilir.
     - **Platform**: **Windows 10 ve üstünü**seçin.
     - **Profil türü**: **Yönetim Şablonları**seçin.
 
-4. **Oluştur**’u seçin. Yeni pencerede **Ayarlar**' ı seçin. Her ayar listelenir ve daha fazla ayarı görmek için önceki ve sonraki okları kullanabilirsiniz:
+4. **Oluştur**'u seçin. Yeni pencerede **Ayarlar**' ı seçin. Her ayar listelenir ve daha fazla ayarı görmek için önceki ve sonraki okları kullanabilirsiniz:
 
     ![Ayarların örnek listesini görüntüleyin ve önceki ve sonraki düğmeleri kullanın](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
 
@@ -71,9 +71,9 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
     > - [KB 4512941](https://support.microsoft.com/kb/4512941) yüklü Windows 10 19H1 ve üzeri
 
 6. Herhangi bir ayarı seçin. Örneğin, **Office**üzerinde filtreleme yapın ve **Kısıtlanmış taramayı etkinleştir**' i seçin. Ayarın ayrıntılı bir açıklaması gösterilir. **Etkin**, **devre dışı**seçeneğini belirleyin veya ayarı **Yapılandırılmadı** (varsayılan) olarak bırakın. Ayrıntılı açıklama Ayrıca **etkin**, **devre dışı**veya **yapılandırılmamış**' ı seçtiğinizde ne olacağını açıklar.
-7. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+7. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
-Ayarlar listesinden ilerleyin ve ortamınızda istediğiniz ayarları yapılandırın. Aşağıda bazı örnekler verilmiştir:
+Ayarlar listesinden ilerleyin ve ortamınızda istediğiniz ayarları yapılandırın. İşte bazı örnekler:
 
 - Word ve Excel dahil farklı Microsoft Office programlarındaki VBA makrolarını işlemek için **VBA makro bildirimi ayarları** ayarını kullanın.
 - Internet Explorer 'dan İndirmeleri izin vermek veya engellemek için **Dosya Indirmelerine Izin ver** ayarını kullanın.

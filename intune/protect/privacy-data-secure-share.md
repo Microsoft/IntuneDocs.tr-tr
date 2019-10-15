@@ -1,6 +1,7 @@
 ---
-title: Intune’da veri güvenliği ve paylaşımı
-description: Intune’da kişisel verilerin nasıl güvenlik altına alınıp paylaşıldığını öğrenin.
+title: Intune 'da veri güvenliği ve paylaşımı
+titleSuffix: Microsoft Intune
+description: Kişisel verilerin Intune 'da güvenli ve paylaşılan olduğunu öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,63 +17,63 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 631d76aca2c393be3c81cb8b6f532605664f4ce4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 53480b7a2e008af46f4f8929cc6321e10b042b33
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729529"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306743"
 ---
-# <a name="data-security-and-sharing-in-intune"></a>Intune’da veri güvenliği ve paylaşımı
+# <a name="data-security-and-sharing-in-intune"></a>Intune 'da veri güvenliği ve paylaşımı
 
 
 ## <a name="data-security"></a>Veri güvenliği
 
-Microsoft Intune, Microsoft Enterprise Mobility ve Security Suite bulut hizmeti teklifinin önemli bir bileşenidir. [Veri yönetimi stratejisini](https://www.microsoft.com/en-us/TrustCenter/Security/default.aspx) desteklemek için tüm Microsoft bulut hizmetleri [Microsoft Gizliliği](https://www.microsoft.com/en-us/trustcenter/privacy) ve [Microsoft Güvenliği](https://www.microsoft.com/en-us/trustcenter/security/) metodolojileri ile geliştirilmiştir.  
+Microsoft Intune, Microsoft Enterprise Mobility ve Security Suite Bulut hizmeti teklifi 'nin temel bir bileşenidir. [Veri idare stratejisini](https://www.microsoft.com/en-us/TrustCenter/Security/default.aspx)desteklemek için, tüm Microsoft bulut Hizmetleri [Microsoft gizliliği](https://www.microsoft.com/en-us/trustcenter/privacy) ve [Microsoft Güvenlik](https://www.microsoft.com/en-us/trustcenter/security/) yöntemleri ile geliştirilmiştir.  
 
-Microsoft Intune, Microsoft Azure hizmet ekiplerinin veri güvenliği ihlali işlemlerine karşı güvenliği sağlamak için aldığı teknik ve organizasyonel önlemleri alır.
+Microsoft Intune, Microsoft Azure hizmet ekiplerinin veri ihlali işlemlerine karşı güvenliğini sağlamak için aldığı teknik ve kurumsal ölçüleri izler.
 
-Daha fazla bilgi için bkz. [Hizmet Güveni Portalı](https://www.microsoft.com/en-us/TrustCenter/stp).
+Daha fazla bilgi için bkz. [hizmet güveni portalı](https://www.microsoft.com/en-us/TrustCenter/stp).
 
-Intune, aşağıdakilere benzer veri azaltma teknikleri kullanır:
+Intune, şunun gibi en düşük düzeyde veri seçme tekniklerini kullanır
 
-- toplama
-- bazı özellikler için isteğe bağlı veri toplama
-- doğruluğu veya hassaslığı azaltılan veriler
+- Toplama
+- Bazı özellikler için isteğe bağlı veri toplama
+- veriler daha az kesin veya gizli hale getirilir
 
-Intune, Varsayılan olarak Veri Korumasını sağlamak amacıyla destek olayları için RBAC ve JiT güvenliği gibi teknikler de kullanır. 
+Intune, varsayılan olarak veri korumayı sağlamak için destek olayları için RBAC ve JIT güvenlik gibi teknikler de kullanır. 
 
-### <a name="data-breach-reporting"></a>Veri ihlalini raporlama
+### <a name="data-breach-reporting"></a>Veri ihlali raporlaması
 
-Müşterinin Raporlayabildiği Güvenlik Olayı (CRSI) tanımlandığında müşteriler bilgilendirilir. Bu işlem, Intune kullanan Microsoft O365 müşterilerine ihlal bildirimi yapmak için Microsoft O365 ekibiyle birlikte çalışmayı içerir.
+Müşteri tarafından raporlanabilir bir güvenlik olayı (CRSı) tanımlandığında müşteriler bilgilendirilir. Bu işlem, Intune kullanarak herhangi bir Microsoft O365 müşterisi için ihlal bildirimine iletişim kurmak üzere Microsoft O365 ekibiyle çalışmayı içerir.
 
 ## <a name="data-sharing"></a>Veri paylaşımı
 
-Kiracı yöneticileri bazı işlevleri (Apple Aygıt Kayıt Programı gibi) açtığında, Microsoft Intune uygun üçüncü taraflarla veri paylaşımı için yönetici onayı alır. Böyle durumlarda Intune, şu taraflarla kişisel verileri paylaşabilir:
+Kiracı yöneticileri belirli işlevleri (Apple Aygıt Kayıt Programı gibi) açıp, Microsoft Intune uygun üçüncü taraflarla veri paylaşımı için yönetici onayı edinir. Bu gibi durumlarda, Intune kişisel verileri ile paylaşabilir:
 
-- Microsoft’un aracısı olarak davranan üçüncü taraflar.
-- Yalnızca kiracı yöneticileri Intune’a açıkça bu izni verdiğinde Microsoft’un aracısı olarak davranan üçüncü taraflar.
+- Microsoft 'un aracıları gibi davranan üçüncü taraflar.
+- Üçüncü taraflar, Microsoft 'un aracıları olarak davranmayan, ancak yalnızca kiracı yöneticilerinin Intune iznini açıkça izin vermesi durumunda.
 
-Microsoft aracısı olarak davranan tüm üçüncü tarafları [Online Services Alt Yüklenici listesinde](https://aka.ms/Online_Serv_Subcontractor_List) bulabilirsiniz.
+Microsoft aracıları gibi davranan tüm üçüncü taraflar, [çevrimiçi hizmetler taşeronları listesine](https://aka.ms/Online_Serv_Subcontractor_List)dahil edilmiştir.
 
-Bu varlıklarla veri paylaşmanın amacı müşteri desteğine ve teknik desteğe, hizmet bakımına ve diğer işlemlere yardımcı olmaktır.
+Bu tür varlıklarla veri paylaşımı, müşteri ve teknik desteğe, hizmet bakımını ve diğer işlemlere yardımcı olmak için yapılır.
 
-Bir kiracının üçüncü tarafla anlaşması, üçüncü tarafın hizmetinde tutulan Intune kişisel verilerini yönetir. Bu anlaşma ayrıca Intune’a üçüncü taraf hizmete veri iletme izni verir.  
+Üçüncü tarafa sahip bir kiracının sözleşmesi, üçüncü tarafın hizmetinde tutulan Intune kişisel verilerini yönetir. Ayrıca, Intune 'a verileri üçüncü taraf hizmetine aktarma izni verir.  
 
 Belirli üçüncü taraflarla paylaşılan veriler hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
-- [Intune’un Apple’a gönderdiği veriler](data-intune-sends-to-apple.md)
-- [Intune’un Google’a gönderdiği veriler](data-intune-sends-to-google.md)
-- [Apple’ın Intune’a gönderdiği veriler](data-apple-sends-to-intune.md)
-- [Google’ın Intune’a gönderdiği veriler](data-google-sends-to-intune.md)
+- [Intune 'un Apple 'a gönderdiği veriler](data-intune-sends-to-apple.md)
+- [Intune 'un Google 'a gönderdiği veriler](data-intune-sends-to-google.md)
+- [Apple Intune 'a gönderilen veriler](data-apple-sends-to-intune.md)
+- [Google 'ın Intune 'a gönderdiği veriler](data-google-sends-to-intune.md)
 - [Veri JAMF Pro, Intune 'a gönderir](data-jamf-sends-to-intune.md)
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager veri paylaşımı
 
-Microsoft Intune, System Center Configuration Manager ile herhangi bir veri paylaşmaz. System Center Configuration Manager, doğrudan müşteri tarafından dağıtılan, yönetilen ve işletilen bir şirket içi ürünüdür. Configuration Manager tarafından toplanan tanılama ve kullanım verileri yalnızca gelecek sürümlerin yükleme deneyimini, kalitesini ve güvenliğini geliştirmek için kullanılır.
+Microsoft Intune, System Center Configuration Manager hiçbir veri paylaşmaz. System Center Configuration Manager, doğrudan müşteri tarafından dağıtılan, yönetilen ve çalıştırılan şirket içi bir üründür. Configuration Manager tarafından toplanan tanılama ve kullanım verileri, gelecekteki sürümlerin yükleme deneyimini, kalitesini ve güvenliğini geliştirmek içindir.
 
-Daha fazla bilgi edinmek için bkz. [SCCM için tanılama ve kullanım verileri](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data). 
+Daha fazla bilgi için bkz. [SCCM Için tanılama ve kullanım verileri](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data). 
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Intune’da kişisel verileri [görüntülemeyi ve düzeltmeyi](privacy-data-view-correct.md) öğrenin.
+Intune 'da kişisel verileri [görüntüleme ve düzeltme](privacy-data-view-correct.md) hakkında bilgi edinin.

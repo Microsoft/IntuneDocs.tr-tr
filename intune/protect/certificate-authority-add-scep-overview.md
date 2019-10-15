@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune-Azure 'da SCEP ile üçüncü taraf sertifika yetkilileri (CA) kullanma | Microsoft Docs
-description: Microsoft Intune, SCEP protokolünü kullanarak mobil cihazlara sertifika vermek için bir satıcı veya üçüncü taraf sertifika yetkilisi (CA) ekleyebilirsiniz. Bu genel bakışta, bir Azure Active Directory (Azure AD) uygulaması Microsoft Intune'a sertifikaları doğrulamak için izinler verir. Ardından, sertifikaları vermek için SCEP sunucunuzun kurulumunda AAD uygulamasının uygulama kimliğini, kimlik doğrulama anahtarını ve kiracı kimliğini kullanın.
+description: Microsoft Intune, SCEP protokolünü kullanarak mobil cihazlara sertifika vermek için bir satıcı veya üçüncü taraf sertifika yetkilisi (CA) ekleyebilirsiniz. Bu genel bakışta, bir Azure Active Directory (Azure AD) uygulaması, sertifikaları doğrulamak için Microsoft Intune izinleri verir. Ardından, sertifika vermek için SCEP sunucunuzun kurulumunda AAD uygulamasının uygulama KIMLIĞI, kimlik doğrulama anahtarı ve kiracı KIMLIĞINI kullanın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,62 +15,62 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4b82124fe8f6da7116c8333e293f219d7c667f9c
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036423"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310920"
 ---
-# <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP kullanarak Intune'da iş ortağı sertifika yetkilisi ekleme
+# <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP kullanarak Intune 'A iş ortağı sertifika yetkilisi ekleme
 
 Intune ile üçüncü taraf sertifika yetkilileri (CA) kullanın. Üçüncü taraf CA 'Lar, Basit Sertifika Kayıt Protokolü (SCEP) kullanarak yeni veya yenilenen sertifikalarla mobil aygıtlar sağlayabilir ve Windows, iOS, Android ve macOS cihazlarını destekleyebilir.
 
-Bu özelliğin kullanımı iki bölümden oluşur: açık kaynak API'si ve Intune yönetici görevleri.
+Bu özelliği kullanmanın iki bölümü vardır: açık kaynaklı API ve Intune yönetici görevleri.
 
-**1. Bölüm - Açık kaynak API'sini kullanma**  
+**1. Bölüm-açık kaynaklı API kullanma**  
 Microsoft, Intune ile tümleşecek bir API oluşturdu. API, sertifikaları doğrulayabilir, başarı veya başarısızlık bildirimleri gönderebilir ve Intune ile iletişim kurmak için SSL (özellikle SSL soket fabrikası) kullanabilirsiniz.
 
-API'yi [Intune SCEP API genel GitHub deposundan](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) indirebilir ve çözümlerinizde kullanabilirsiniz. SCEP bir cihaza sertifika sağlamadan önce Intune 'da özel sınama doğrulaması çalıştırmak için bu API 'YI üçüncü taraf SCEP sunucularıyla birlikte kullanın.
+API 'niz, çözümlerinizde indirmeniz ve kullanmanız için [ıNTUNE SCEP API genel GitHub deposunda](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) kullanılabilir. SCEP bir cihaza sertifika sağlamadan önce Intune 'da özel sınama doğrulaması çalıştırmak için bu API 'YI üçüncü taraf SCEP sunucularıyla birlikte kullanın.
 
-[Intune SCEP yönetim çözümüyle tümleştirme](scep-libraries-apis.md) başlığı altında API'nin kullanımı, yöntemleri ve derlediğiniz çözümün testi hakkında daha fazla ayrıntı sağlanır.
+[INTUNE SCEP yönetimi çözümüyle tümleştirme](scep-libraries-apis.md) , API 'yi, yöntemlerini ve oluşturduğunuz çözümü test etme hakkında daha fazla ayrıntı sağlar.
 
-**2. Bölüm - Uygulamayı ve profili oluşturma**  
-Azure Active Directory (Azure AD) uygulamasını kullanarak, cihazlardan gelen SCEP isteklerini işlemesi için Intune'a temsilci hakları verebilirsiniz. Azure AD uygulaması, geliştiricinin oluşturduğu API çözümü içinde kullanılan uygulama kimliğini ve kimlik doğrulama anahtarını içerir. Daha sonra Yöneticiler, Intune kullanarak SCEP sertifikaları profilleri oluşturup dağıtır ve cihazlarda dağıtım durumundaki raporları görüntüleyebilir.
+**2. Bölüm-uygulamayı ve profili oluşturma**  
+Azure Active Directory (Azure AD) uygulaması kullanarak, cihazlardan gelen SCEP isteklerini işlemek üzere Intune 'a haklar atayabilirsiniz. Azure AD uygulaması, geliştirici oluşturduğu API çözümünde kullanılan uygulama KIMLIĞI ve kimlik doğrulama anahtarı değerlerini içerir. Daha sonra Yöneticiler, Intune kullanarak SCEP sertifikaları profilleri oluşturup dağıtır ve cihazlarda dağıtım durumundaki raporları görüntüleyebilir.
 
-Bu makalede Azure AD uygulaması oluşturma da dahil olmak üzere Yönetici perspektifinden bu özelliğe bir genel bakış sağlanır.
+Bu makalede, Azure AD uygulaması oluşturma da dahil olmak üzere bir yönetici perspektifinden bu özelliğe genel bir bakış sunulmaktadır.
 
-## <a name="overview"></a>İlke
+## <a name="overview"></a>Genel Bakış
 
 Aşağıdaki adımlarda, Intune 'da sertifikalar için SCEP kullanılmasına genel bir bakış sağlanmaktadır:
 
-1. Intune'da, yönetici SCEP sertifika profilini oluşturur ve ardından profille kullanıcıları veya cihazları hedefler.
-2. Cihaz Intune'a iade edilir.
-3. Intune benzersiz bir SCEP sınaması oluşturur. Ayrıca, beklenen konunun ve SAN'ın ne olması gerektiği gibi başka veri bütünlüğü denetimi bilgileri de ekler.
-4. Intune hem sınama hem de veri bütünlüğü denetimi bilgilerini şifreler, imzalar ve sonra bu bilgileri SCEP isteğiyle birlikte cihaza gönderir.
-5. Cihaz, Intune'dan gönderilen SCEP sertifika profili temelinde bir sertifika imzalama isteği (CSR) ve ortak/özel anahtar çifti oluşturur.
-6. CSR ve şifrelenmiş/imzalanmış sınama üçüncü taraf SCEP sunucu uç noktasına gönderilir.
-7. SCEP sunucusu CSR'yi ve sınamayı Intune'a gönderir. Ardından Intune imzayı doğrular, yükün şifresini çözer ve CSR'yi veri bütünlüğü denetimi bilgileriyle karşılaştırır.
-8. Intune geriye SCEP sunucusuna bir yanıt gönderir ve sınama doğrulamasının başarılı olup olmadığını belirtir.  
-9. Sınama başarıyla doğrulanırsa, SCEP sunucusu sertifikayı cihaza verir.
+1. Intune 'da, bir yönetici bir SCEP sertifika profili oluşturur ve ardından profili kullanıcılara veya cihazlara hedefler.
+2. Cihaz Intune 'a iade eder.
+3. Intune, benzersiz bir SCEP sınaması oluşturur. Ayrıca, beklenen konu ve SAN gibi ek bütünlük denetimi bilgileri de ekler.
+4. Intune hem zorluk hem de bütünlük denetimi bilgilerini şifreler ve imzalar ve bu bilgileri, SCEP isteğiyle cihaza gönderir.
+5. Cihaz, Intune 'dan gönderilen SCEP sertifika profilini temel alan cihazda bir sertifika imzalama isteği (CSR) ve ortak/özel anahtar çifti oluşturur.
+6. CSR ve şifreli/imzalı sınama, üçüncü taraf SCEP sunucu uç noktasına gönderilir.
+7. SCEP sunucusu, CSR 'yi ve sınamayı Intune 'a gönderir. Daha sonra Intune imzayı doğrular, yükün şifresini çözer ve CSR 'yi bütünlük denetimi bilgileriyle karşılaştırır.
+8. Intune, SCEP sunucusuna bir yanıt gönderir ve sınama doğrulamasının başarılı olup olmadığını belirtir.  
+9. Sınama başarıyla doğrulanırsa, SCEP sunucusu sertifikayı cihaza yayınlar.
 
-Aşağıdaki diyagramda Intune'la üçüncü taraf SCEP tümleştirmesinin ayrıntılı akışı gösterilir:
+Aşağıdaki diyagramda, Intune ile üçüncü taraf SCEP tümleştirmesinin ayrıntılı bir akışı gösterilmektedir:
 
 ![Üçüncü taraf sertifika yetkilisi SCEP Microsoft Intune ile nasıl tümleştirilir?](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
 ## <a name="set-up-third-party-ca-integration"></a>Üçüncü taraf CA tümleştirmesini ayarlama
 
-### <a name="validate-third-party-certification-authority"></a>Üçüncü taraf sertifika yetkilisini doğrulama
+### <a name="validate-third-party-certification-authority"></a>Üçüncü taraf sertifika yetkilisini doğrula
 
-Üçüncü taraf sertifika yetkililerini Intune ile tümleştirmeden önce, kullandığınız CA'nın Intune'u desteklediğini onaylayın. [Üçüncü taraf CA iş ortakları](#third-party-certification-authority-partners) (bu makalede) bir liste içerir. Daha fazla bilgi için sertifika yetkilinizin kılavuzunu da gözden geçirebilirsiniz. CA, bunları uygulamaya özgü kurulum yönergeleri de içerebilir.
+Üçüncü taraf sertifika yetkililerini Intune ile tümleştirmadan önce, kullanmakta olduğunuz CA 'nın Intune desteklediğinden emin olun. [Üçüncü taraf CA iş ortakları](#third-party-certification-authority-partners) (Bu makalede) bir liste içerir. Daha fazla bilgi için sertifika yetkilinizin kılavuzunu da denetleyebilirsiniz. CA, uygulamalarına özgü kurulum yönergelerini içerebilir.
 
-### <a name="authorize-communication-between-ca-and-intune"></a>CA ile Intune arasındaki iletişimi yetkilendirme
+### <a name="authorize-communication-between-ca-and-intune"></a>CA ve Intune arasında iletişimi yetkilendirme
 
-Üçüncü taraf SCEP sunucusunun özel sınama doğrulaması çalıştırmasına izin vermek için, Azure AD'de bir uygulama oluşturun. Bu uygulama Intune'a SCEP isteklerini doğrulaması için temsilci hakları verir.
+Üçüncü taraf bir SCEP sunucusunun Intune ile özel sınama doğrulaması çalıştırmasına izin vermek için Azure AD 'de bir uygulama oluşturun. Bu uygulama, SCEP isteklerini doğrulamak için Intune 'a temsilci izinleri verir.
 
 Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emin olun. Azure AD belgelerinde [gerekli izinlere](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions)bakın.
 
-#### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory bir uygulama oluşturma  
+#### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory’de uygulama oluşturma  
 
 1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **uygulama kaydı**' na gidin ve ardından **Yeni kayıt**' ı seçin.  
 
@@ -103,8 +103,8 @@ Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emi
 
 
 
-### <a name="configure-and-deploy-a-scep-certificate-profile"></a>SCEP sertifika profilini yapılandırma ve dağıtma
-Yönetici olarak, kullanıcıları veya cihazları hedefleyecek bir SCEP sertifika profili oluşturun. Sonra, profili atayın.
+### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Bir SCEP sertifika profilini yapılandırma ve dağıtma
+Yönetici olarak, kullanıcılara veya cihazlara hedeflemek için bir SCEP sertifika profili oluşturun. Ardından, profili atayın.
 
 - [SCEP sertifika profili oluşturma](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
@@ -112,14 +112,14 @@ Yönetici olarak, kullanıcıları veya cihazları hedefleyecek bir SCEP sertifi
 
 ## <a name="removing-certificates"></a>Sertifikaları kaldırma
 
-Cihazın kaydını kaldırdığınızda veya cihazı temizlediğinizde, sertifikalar kaldırılır. Sertifikalar iptal edilmez.
+Cihazın kaydını kaldırdığınızda veya sildiğinizde, sertifikalar kaldırılır. Sertifikalar iptal edilmez.
 
-## <a name="third-party-certification-authority-partners"></a>Üçüncü taraf kök sertifika yetkilisi iş ortakları
-Aşağıdaki üçüncü taraf sertifika yetkilileri Intune'u destekler:
+## <a name="third-party-certification-authority-partners"></a>Üçüncü taraf sertifika yetkilisi iş ortakları
+Aşağıdaki üçüncü taraf sertifika yetkilileri Intune 'U destekler:
 
 - [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
-- [EJBCA GitHub açık kaynak sürümü](https://github.com/agerbergt/intune-ejbca-connector)
-- [EverTrust](https://evertrust.fr/en/products/)
+- [EJBCA GitHub açık kaynaklı sürümü](https://github.com/agerbergt/intune-ejbca-connector)
+- [Her yaprak güveni](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [Idnomıc](https://www.idnomic.com/)
 - [Sectıgo](https://sectigo.com/products)
@@ -127,13 +127,13 @@ Aşağıdaki üçüncü taraf sertifika yetkilileri Intune'u destekler:
 - [Venafi](https://www.venafi.com/platform/enterprise-mobility)
 - [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
-Ürününüzü Intune ile tümleştirmek isteyen bir üçüncü taraf CA'ysanız, API kılavuzunu gözden geçirin:
+Ürününüzü Intune ile tümleştirmeyle ilgilenen bir üçüncü taraf CA 'nız varsa API kılavuzunu gözden geçirin:
 
-- [Intune SCEP API'si GitHub deposu](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
-- [Üçüncü taraf CA'lar için Intune SCEP API'si kılavuzu](scep-libraries-apis.md)
+- [Intune SCEP API GitHub deposu](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Üçüncü taraf CA 'Lar için Intune SCEP API Kılavuzu](scep-libraries-apis.md)
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Sertifika profillerini yapılandırma](certificates-scep-configure.md)
-- [Intune SCEP API'si GitHub deposu](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
-- [Üçüncü taraf CA'lar için Intune SCEP API'si kılavuzu](scep-libraries-apis.md)
+- [Intune SCEP API GitHub deposu](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Üçüncü taraf CA 'Lar için Intune SCEP API Kılavuzu](scep-libraries-apis.md)

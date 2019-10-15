@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bf8fd189e50a704e96fc24d0804c5c5d6f91bb4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 64a560dc79d3c03f52b8e9389c3e47e3e256ee58
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732513"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306671"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Wandera Mobile Threat Protection 'ı Intune ile tümleştirme  
 
@@ -29,11 +29,11 @@ Wandera Mobile Threat Defense çözümünü Intune ile bütünleştirmek için a
 
 Wandera 'yı Intune ile tümleştirme işlemine başlamadan önce, aşağıdaki önkoşulların yerine geldiğinden emin olun:
 - Microsoft Intune aboneliği  
-- Şu izinleri vermek için Azure Active Directory yönetici kimlik bilgileri:  
-  - Oturum açma ve kullanıcı profilini okuma  
-  - Oturum açmış kullanıcı olarak dizine erişim  
+- Aşağıdaki izinleri vermek için yönetici kimlik bilgilerini Azure Active Directory:  
+  - Oturum açın ve kullanıcı profilini okuyun  
+  - Oturum açmış kullanıcı olarak dizine erişin  
   - Dizin verilerini okuma  
-  - Intune’a cihaz bilgilerini gönderme  
+  - Cihaz bilgilerini Intune 'a gönderme  
 
 - Wandera aboneliği:
   - EMM bağlantısı için lisanslı bir veya daha fazla Wandera hesabı  
@@ -72,7 +72,7 @@ Wandera için *EMM Connect* kurulumu, hem Intune hem de wandera konsollarında t
 
 7. RADAR konsolundan, **EMM etiketinin**altında görünen **synconly** grubunun adını kopyalayın. Bu adı, bir grubu Wandera ile eşitleme için Intune 'da yapılandırmak üzere kullanacaksınız.
 
-   ![Tümleştirmeler ve izinler](./media/wandera-mtd-connector-integration/sync-group-name.png) 
+   ![Eşitleme grubu](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
 8. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) konsoluna dönün ve Wandera MTD bağlayıcısını düzenleyin. Kullanılabilir geçiş düğmelerini **Açık**olarak ayarlayın ve yapılandırmayı **kaydedin** .  
 

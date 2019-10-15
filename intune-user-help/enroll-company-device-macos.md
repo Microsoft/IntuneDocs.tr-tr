@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2e2ecc79cd24a68c1a5642f64474f2d31217bd7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9c20ad54f71eb44f69638eacd4ae1c3796771896
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721028"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314653"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Kuruluşunuzda sağlanmış macOS cihazınızı yönetime kaydetme
 
@@ -35,7 +35,7 @@ Yönetim Kurulumu 'nu başlatmak için cihazınızda güç açın ve iş veya ok
 
 ## <a name="what-is-apple-dep"></a>Apple DEP nedir?
 
-Kuruluşunuz cihazlarını *Apple aygıt kayıt programı* (DEP) adlı bir şekilde satın almış olabilir. Apple DEP, kuruluşların büyük miktarlarda iOS veya macOS cihazı satın almasını sağlar. Kuruluşlar daha sonra bu cihazları Intune gibi tercih edilen mobil cihaz yönetimi sağlayıcıları içinde yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi istiyorsanız bkz. [macOS cihazlarını apple aygıt kayıt programı Ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-macos.md).  
+Kuruluşunuz cihazlarını *Apple aygıt kayıt programı* (DEP) adlı bir şekilde satın almış olabilir. Apple DEP, kuruluşların büyük miktarlarda iOS veya macOS cihazı satın almasını sağlar. Kuruluşlar daha sonra bu cihazları Intune gibi tercih edilen mobil cihaz yönetimi sağlayıcıları içinde yapılandırabilir ve yönetebilir. Yöneticiyseniz ve Apple DEP hakkında daha fazla bilgi istiyorsanız bkz. [macOS cihazlarını apple aygıt kayıt programı Ile otomatik olarak kaydetme](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-macos).  
 
 ## <a name="get-your-device-managed"></a>Cihazınızın yönetilmesini sağlayın
 
@@ -51,11 +51,11 @@ MacOS cihazınızı yönetime kaydetmek için aşağıdaki adımları tamamlayı
 4. Wi-Fi ağınızı seçin. Kuruluma devam etmek için bir internet bağlantınızın olması gerekir. Ağınızı görmüyorsanız veya kablolu ağ üzerinden bağlanmanız gerekiyorsa **diğer ağ seçenekleri**' ne tıklayın. İşiniz bittiğinde **devam**' a tıklayın.  
 
    ![MacOS cihaz Kurulum Yardımcısı 'nın ekran görüntüsü Wi-Fi ağ ekranınızı seçerek, aralarından seçim yapabileceğiniz kullanılabilir ağların bir listesini gösterir. Ayrıca diğer bir ağ seçenekleri düğmesini, geri düğmesini ve devam düğmesini gösterir.](./media/macos-dep-wifi-1808.png)  
-5. Wi-Fi ' a Bağlandıktan sonra, **Uzaktan Yönetim** ekranı görünür. Uzaktan Yönetim, kuruluşunuzun yöneticisinin cihazınızı şirket için gerekli hesaplar, ayarlar, uygulamalar ve ağlarla uzaktan yapılandırmasını sağlar. Cihazınızın nasıl yönetildiğini anlamanıza yardımcı olması için uzaktan yönetim açıklamasını okuyun. Sonra **devam**' a tıklayın.  
+5. Wi-Fi ' a Bağlandıktan sonra, **Uzaktan Yönetim** ekranı görünür. Uzaktan Yönetim, kuruluşunuzun yöneticisinin cihazınızı şirket için gerekli hesaplar, ayarlar, uygulamalar ve ağlarla uzaktan yapılandırmasını sağlar. Cihazınızın nasıl yönetildiğini anlamanıza yardımcı olması için uzaktan yönetim açıklamasını okuyun. Daha sonra **Devam**’a tıklayın.  
 
    ![MacOS cihazı Kurulum Yardımcısı uzaktan yönetim ekranının ekran görüntüsü, uzaktan yönetimi açıklayan metin ve daha fazla bilgi için belgelere bir bağlantı. Ayrıca bir geri düğmesi gösterir ve devam et düğmesi.](./media/macos-dep-remote-management-1-1808.png)  
 6. İstendiğinde, iş veya okul hesabınızla oturum açın. Kimliğiniz doğrulandıktan sonra, cihazınız bir yönetim profili yükler. Profil, kuruluşunuzun kaynaklarına erişiminizi yapılandırır ve sağlar.  
-7. Daha sonra kişisel bilgilerin toplandığını tanımlayabilmeniz için Apple Data & Gizlilik simgesi hakkında bilgi edinin. Sonra **devam**' a tıklayın.  
+7. Daha sonra kişisel bilgilerin toplandığını tanımlayabilmeniz için Apple Data & Gizlilik simgesi hakkında bilgi edinin. Daha sonra **Devam**’a tıklayın.  
 
    ![MacOS cihaz Kurulum Yardımcısı verileri & Gizlilik ekranının ekran görüntüsü, iki kişinin gerçekleşmesi ileri bir resmini gösterir ve Apple 'ın kişisel bilgi kullanımını açıklayarak tanımlar. Ayrıca bir geri ve devam düğmesi gösterir.](./media/macos-dep-apple-data-privacy-1808.png)  
 8. Cihazınız kaydedildikten sonra, tamamlanacak ek adımlara sahip olabilirsiniz. Gördüğünüz adımlar, kuruluşunuzun kurulum deneyimini nasıl özelleştirmiş olduğuna bağlıdır. Şunları yapmanız gerekebilir:

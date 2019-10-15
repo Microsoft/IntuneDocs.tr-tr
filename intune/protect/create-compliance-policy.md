@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune-Azure 'da cihaz uyumluluk ilkeleri | Microsoft Docs
-description: Cihaz uyumluluk ilkelerini kullanma, durum ve önem düzeylerine genel bakış, Yetkisizkullanımsüresinde durumunu kullanma, koşullu erişim ile çalışma, cihazları atanmış bir ilke olmadan işleme ve Azure portal ve uyumluluk farklılıkları ile çalışmaya başlama Microsoft Intune 'de klasik Portal
+title: Microsoft Intune-Azure 'da cihaz uyumluluk ilkeleri oluşturma | Microsoft Docs
+description: Yetkisizkullanımsüresinde durumunu, koşullu erişimle çalışma, atanmış bir ilke olmadan cihazları işleme ve Azure portal ile klasik portalda uyumluluk farklarını kullanarak cihaz uyumluluk ilkeleri oluşturun, durum ve önem düzeylerine genel bakış yapın. Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffd1e120a364be1ecaa98e01ff71ac723672b546
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237188"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306589"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune bir uyumluluk ilkesi oluşturma
 
@@ -30,7 +30,7 @@ Cihaz uyumluluk ilkeleri, kuruluşunuzun kaynaklarını korumak için Intune kul
 
 Ayrıca, kullanıcıya bir bildirim e-postası gönderilmesi gibi uyumsuzluk için eylemler gerçekleştirebilirsiniz. Uyumluluk ilkelerine ne yaptığını ve bunların nasıl kullanıldığını bir genel bakış için bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
-Bu makale:
+Bu makalede:
 
 - Karmaşık pozisyon ilkesi oluşturmak için önkoşulları ve adımları listeler.
 - İlkeyi Kullanıcı ve cihaz gruplarınıza nasıl atayacağınızı gösterir.
@@ -54,7 +54,7 @@ Cihaz uyumluluk ilkelerini kullanmak için şunları yaptığınızdan emin olun
   - macOS (Önizleme)
   - Windows 10
   - Windows 8.1
-  - Windows Phone 8.1
+  - Windows Phone 8,1
 
 - Cihazları Intune 'A kaydetme (uyumluluk durumunu görmek için gereklidir)
 
@@ -63,7 +63,7 @@ Cihaz uyumluluk ilkelerini kullanmak için şunları yaptığınızdan emin olun
 ## <a name="create-the-policy"></a>İlkeyi oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz uyumluluğu**' nu seçin. Şu seçenekleriniz vardır:
+2. **Cihaz uyumluluğu**' nu seçin. Aşağıdaki seçenekleriniz vardır:
 
     - **Genel bakış**: uyumlu ve hesaplanmayan cihazların bir özetini ve sayısını gösterir. Ayrıca ilkelerinizin ilkelerini ve ayrı ayarlarını listeler. [Intune cihaz uyumluluk Ilkelerini izleme](compliance-policy-monitor.md) , bazı iyi bilgiler sağlar.
     - **Yönetin**: cihaz ilkeleri oluşturun, uyumsuz cihazlara [bildirim](quickstart-send-notification.md) gönderin ve [ağ](use-network-locations.md)oluşturma özelliğini etkinleştirin.
@@ -76,19 +76,19 @@ Cihaz uyumluluk ilkelerini kullanmak için şunları yaptığınızdan emin olun
     - **Açıklama**: ilke için bir açıklama girin. Bu ayar isteğe bağlıdır, ancak önerilir.
     - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz:  
 
-       - **Outlook Web Access (OWA)**
-       - **Android kurumsal**
        - **Android**
+       - **Android kurumsal**
+       - **iOS**
        - **macOS**
-       - **Windows Phone 8.1**
+       - **Windows Phone 8,1**
        - **Windows 8.1 ve üzeri**
        - **Windows 10 ve üzeri**
 
     - **Ayarlar**: aşağıdaki makaleler her platformun ayarlarını listeler ve anlatmaktadır:
 
-        - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
+        - [Android](compliance-policy-create-android.md)
         - [Android kurumsal](compliance-policy-create-android-for-work.md)
-        - [Android](compliance-policy-create-ios.md)
+        - [iOS](compliance-policy-create-ios.md)
         - [macOS](compliance-policy-create-mac-os.md)
         - [Windows Phone 8,1, Windows 8.1 ve üzeri](compliance-policy-create-windows-8-1.md)
         - [Windows 10 ve üzeri](compliance-policy-create-windows.md)
@@ -158,9 +158,9 @@ Bir cihazda birden fazla uyumluluk ilkesi varsa ve cihazın bu atanmış uyumlul
 
 |Durum  |Önem Derecesi  |
 |---------|---------|
-|Bilinmiyor     |1\.|
+|Bilinmiyor     |1|
 |Notapplıcable     |2|
-|uyumlu|3|
+|Uyumlu|3|
 |Yetkisizkullanımsüresinde|4|
 |Izde|5|
 |Hata|6|

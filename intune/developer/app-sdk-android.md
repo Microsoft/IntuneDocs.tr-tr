@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1d1d0c52db57ca6b41c399aeefc948735eea0af
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: b4316c155645ad8e956cfd89c448da688ac133b3
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830521"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314552"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android için Microsoft Intune uygulama SDK 'Sı Geliştirici Kılavuzu
 
@@ -536,15 +536,6 @@ String toString();
 
 > [!NOTE]
 > `MAMPolicyManager.getPolicy`, cihaz veya uygulama bir Intune yönetim ilkesi altında olmasa bile her zaman null olmayan bir uygulama Ilkesi döndürür.
-
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>Örnek: uygulama için PIN gerekip gerekmediğini belirleme
-
-Uygulamanın kendi PIN Kullanıcı deneyimi varsa, BT Yöneticisi SDK 'Yı bir uygulama PIN 'ı isteyecek şekilde yapılandırdıysa devre dışı bırakmak isteyebilirsiniz. BT yöneticisinin uygulama PIN ilkesini bu uygulamaya dağıtıp dağıtmadığını öğrenmek için, geçerli Son Kullanıcı için aşağıdaki yöntemi çağırın:
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
 
 ### <a name="example-determine-if-pin-is-required-for-the-app"></a>Örnek: uygulama için PIN gerekip gerekmediğini belirleme
 
@@ -1755,7 +1746,7 @@ enum StringQueryType {
 
 Uygulamanız ham verileri anahtar-değer çiftleri kümesinin bir listesi olarak da talep edebilir.
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 
