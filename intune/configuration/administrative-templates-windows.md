@@ -58,7 +58,7 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
     > [!TIP]
     > Intune 'daki Windows ayarları, Yerel Grup İlkesi Düzenleyicisi gördüğünüz şirket içi Grup İlkesi yoluyla bağıntılı (`gpedit`).
 
-5. Varsayılan olarak, açılan listede **Tüm ürünler**gösterilmektedir. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
+5. Varsayılan olarak, açılan listede **Tüm ürünler**gösterilmektedir. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Microsoft Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
 
     ![Intune 'da yönetim şablonlarındaki tüm pencereleri veya tüm Office ayarlarını göstermek için listeyi filtreleyin](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
