@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59d93bed7bae2b757a4bd1e7b1dffc814629f6a1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731437"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350021"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -86,9 +86,8 @@ Android cihazlarda aşağıdaki anahtar/değer çiftlerini kullanın:
 | **Deðerler** | <ul><li>Bir veya daha fazla <code>;</code> ile sınırlandırılmış UPN.</li><li>Yalnızca bu anahtar ile tanımlanan yönetilen kullanıcı hesaplarına izin verilir.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul> |
 
    > [!NOTE]
-   > Çoklu kimlik ile yalnızca yapılandırılmış kuruluş hesaplarına izin vermek için Android için Outlook 2.2.222 veya üzeri sürümleri kullanmanız gerekir.<p></p>
+   > Yalnızca birden çok kimliği olan yapılandırılmış kuruluş hesaplarına izin verirken Android 2.2.222 ve üzeri, Word, Excel, Android 16.0.9327.1000 ve üzeri ya da OneDrive for Android 5,28 ve üzeri için Outlook 'U kullanmanız gerekir.<p></p>
    > Microsoft Intune Yöneticisi olarak, yönetilen cihazlarda Microsoft Office uygulamalarına hangi kullanıcı hesaplarının ekleneceğini denetleyebilirsiniz. Erişimi yalnızca izin verilen kullanıcı hesaplarıyla sınırlayabilecek ve kayıtlı cihazlarda kişisel hesapları engelleyebilirsiniz. Destekleyen uygulamalar, uygulama yapılandırmasını işler ve onaylanmamış hesapları kaldırıp engeller.<p></p>
-   > Microsoft Word, Microsoft Excel, Microsoft PowerPoint için 16.0.9327.1000 ve üzeri uygulama sürümlerini kullanmanız gerekir. 
 
 ## <a name="enter-the-json-editor"></a>JSON düzenleyicisini girme
 

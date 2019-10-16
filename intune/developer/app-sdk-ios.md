@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 553c4ae4dab211cf33e21c328b4b35408d8bfeb0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2eb9705d1e530924b2cad98985997e8778880581
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730321"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379851"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -34,7 +34,7 @@ iOS için Microsoft Intune Uygulama SDK’sı, Intune uygulama koruma ilkelerini
 
 * OS X 10.8.5 veya üstünü çalıştıran bir Mac OS bilgisayara ihtiyacınız vardır ve Ayrıca Xcode 9 veya üzeri bir sürümü yüklü olur.
 
-* Uygulamanız iOS 10 veya üzeri sürümlere yönelik olmalıdır.
+* Uygulamanız iOS 11 veya üzeri için hedeflenmelidir.
 
 * [iOS için Intune Uygulama SDK'sı Lisans Koşulları](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf)'nı gözden geçirmelisiniz. Kendi kayıtlarınız için lisans koşullarının bir kopyasını yazdırmalı ve saklamalısınız. iOS için Intune Uygulama SDK'sını indirip kullandığınızda bu lisans koşullarını kabul etmiş olursunuz.  Kabul etmiyorsanız, yazılımı kullanmayın.
 
@@ -253,8 +253,6 @@ ADALCacheKeychainGroupOverride | Dize  | "Com. Microsoft. adalcache" yerine ADAL
 AppGroupIdentifiers | Dizeler dizisi  | Uygulamanın yetkilendirme dosyasının com.apple.security.application bölümündeki uygulama grupları dizisi. | Uygulama, uygulama grupları kullanıyorsa gereklidir. |
 ContainingAppBundleId | Dize | Uzantıyı içeren uygulamanın paket kimliğini belirtir. | iOS uzantıları için gereklidir. |
 DebugSettingsEnabled| Boole değeri | EVET olarak ayarlanırsa, Ayarlar paketindeki sınama ilkeleri uygulanabilir. Uygulamalar bu ayar etkin olarak *gönderilmemelidir*. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
-MainNibFile<br>MainNibFile~ipad  | Dize  | Bu ayar, uygulamanın ana nib dosya adını içerir.  | Uygulama, Info.plist dosyasında MainNibFile tanımlıyorsa gereklidir. |
-MainStoryboardFile<br>MainStoryboardFile~ipad  | Dize  | Bu ayar, uygulamanın ana görsel taslak dosya adını içerir. | Uygulama, Info.plist dosyasında UIMainStoryboardFile tanımlıyorsa gereklidir. |
 AutoEnrollOnLaunch| Boole değeri| Mevcut bir yönetilen kimlik tespit edilirse ve bu kimlik henüz kaydedilmemişse uygulama başlatıldığında otomatik olarak kaydetmeye çalışılıp çalışılmayacağını belirtir. Varsayılan ayar HAYIR’dır. <br><br> Notlar: yönetilen kimlik bulunamazsa veya ADAL/MSAL önbelleğinde kimlik için geçerli bir belirteç yoksa, uygulama aynı zamanda MAMPolicyRequired Evet olarak ayarlanmadığı müddetçe kayıt girişimi kimlik bilgileri istenmeden sessizce başarısız olur. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MAMPolicyRequired| Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: MAMPolicyRequired ayarı EVET olarak ayarlanmışsa uygulamalar App Store’a gönderilemez. MAMPolicyRequired EVET olarak ayarlandığında AutoEnrollOnLaunch da EVET olarak ayarlanmalıdır. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MAMPolicyWarnAbsent | Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılırken kullanıcıyı uyarıp uyarmayacağını belirtir. <br><br> Not: Kullanıcılar, uyarı kapatıldıktan sonra da uygulamayı ilke olmadan kullanabilecektir. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
@@ -262,9 +260,10 @@ MultiIdentity | Boole değeri| Uygulamanın çoklu kimliği fark edip edemediği
 SafariViewControllerBlockedOverride | Boole değeri| SFSafariViewController, SFAuthSession veya ASWebAuthSession aracılığıyla MSAL kimlik doğrulamasını etkinleştirmek için Intune 'un SafariViewController kancalarını devre dışı bırakır. | İsteğe bağlı. Varsayılan ayar Hayır’dır. Uyarı: yanlış kullanıldığında veri sızıntısı oluşabilir. Yalnızca kesinlikle gerekliyse etkinleştirin. Ayrıntılar için [msal kullanırken özel noktalara](#special-considerations-when-using-msal) bakın.  |
 SplashIconFile <br>SplashIconFile~ipad | Dize  | Intune giriş (başlangıç) simge dosyasını belirtir. | İsteğe bağlı. |
 SplashDuration | Sayı | Intune başlangıç ekranının uygulama başlatılırken gösterileceği en kısa süre miktarı (saniye cinsinden). Varsayılan olarak 1,5’tir. | İsteğe bağlı. |
-BackgroundColor| Dize| Başlangıç ve PIN ekranlarının arka plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.   | İsteğe bağlı. Varsayılan olarak açık gridir. |
-ForegroundColor| Dize| Metin rengi gibi başlangıç ve PIN ekranlarının ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. Varsayılan olarak siyahtır. |
-AccentColor | Dize| PIN ekranının düğme metni rengi ve kutu vurgu rengi gibi vurgu rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.| İsteğe bağlı. Varsayılan olarak sistem mavisidir. |
+BackgroundColor| Dize| Intune SDK 'sının Kullanıcı arabirimi bileşenleri için arka plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.   | İsteğe bağlı. İOS sürümlerinde ve iOS koyu mod ayarına göre değişebilen sistem arka plan rengi varsayılan olarak değişir. |
+ForegroundColor| Dize| Intune SDK 'sının Kullanıcı arabirimi bileşenlerinin metin rengi gibi ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. İOS sürümlerinde ve iOS koyu mod ayarına göre değişebilen sistem etiketi rengine varsayılan olarak izin verebilir. |
+AccentColor | Dize| Intune SDK 'sının Kullanıcı arabirimi bileşenlerinin düğme metin rengi ve PIN kutusu vurgu rengi gibi vurgu rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.| İsteğe bağlı. Varsayılan olarak sistem mavisidir. |
+SupportsDarkMode| Boole değeri | BackgroundColor/ForegroundColor/AccentColor için açık bir değer ayarlanmamışsa, Intune SDK 'sının Kullanıcı arabirimi renk düzeninin sistem koyu Mod ayarını gözlemeyeceğini belirtir | İsteğe bağlı. Varsayılan değer Evet ' tir. |
 MAMTelemetryDisabled| Boole değeri| SDK’nın arka ucuna herhangi bir telemetri verisi gönderip göndermeyeceğini belirtir.| İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MAMTelemetryUsePPE | Boole değeri | MAM SDK'sının PPE telemetri arka ucuna veri gönderip göndermeyeceğini belirtir. Sınama telemetri verilerinin müşteri verileriyle karışmaması için uygulamalarınızı Intune ilkesiyle sınarken bunu kullanın. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MaxFileProtectionLevel | Dize | İsteğe bağlı. Uygulamanın destekleyebildiği maksimum `NSFileProtectionType` belirtmesine olanak tanır. Düzey uygulamanın destekleyebildiğinden daha yüksekse, bu değer hizmet tarafından gönderilen ilkeyi geçersiz kılar. Olası değerler: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
@@ -458,7 +457,7 @@ Bu yöntemin dönüş değeri, uygulamanın gerekli yeniden başlatma işlemini 
 
 Intune Uygulama SDK'sında, uygulamaya dağıtılan Intune APP ilkesi hakkında bilgi almak için çağırabileceğiniz birkaç API vardır. Uygulamanızın davranışını özelleştirmek için bu verileri kullanabilirsiniz. Aşağıdaki tabloda, kullanacağınız bazı temel Intune sınıfları hakkında bilgi verilmektedir.
 
-Sınıfı | Description
+sınıfı | Description
 ----- | -----------
 IntuneMAMPolicyManager.h | IntuneMAMPolicyManager sınıfı, uygulamaya dağıtılan Intune APP ilkesini gösterir. Özellikle, [Çoklu kimliği etkinleştirme](app-sdk-ios.md#enable-multi-identity-optional) için faydalı olan API’leri gösterir. |
 IntuneMAMPolicy.h | IntuneMAMPolicy sınıfı uygulamaya uygulanan bazı MAM ilkesi ayarlarını gösterir. Bu ilke ayarları, uygulamanın kendi kullanıcı arabirimini özelleştirebilmesi için gösterilir. İlke ayarlarının çoğu uygulama değil SDK tarafından zorlanır. Uygulamada kullanılması gereken tek ayar Farklı kaydet denetimidir. Bu sınıf Farklı kaydet'i uygulamak için gereken bazı API'leri gösterir. |

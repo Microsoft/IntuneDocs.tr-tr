@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 10/15/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f481c17e6cb1285147c7f6361bfff73801b2bba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 89382f70b0a982c4acc406ff373b02013f75cf7b
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732077"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350055"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune yazılımı istemcisi ile Windows PC’leri bilgisayar olarak yönetme
 
 [!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+
+> [!WARNING]
+> Microsoft [Windows 7 desteğinin 14 Ocak 2020'de sona erdiğini](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020) duyurdu. Aynı tarihte Intune'da Windows 7 çalıştıran cihazlar için desteğini kaldıracaktır. Microsft, hizmet ve destek kesintilerini önlemek için Windows 10'a geçmenizi özellikle önerir.
+> 
+> Daha fazla bilgi için bkz. [Intune için plan planı: Windows 7 için destek sonuna yaklaşma](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-).
 
 > [!NOTE]
 > Aşağıda açıklandığı gibi Windows bilgisayarlarını [mobil cihaz yönetimi (MDM) ile mobil cihazlar olarak](../enrollment/windows-enroll.md) ya da Intune yazılım istemcisi ile bilgisayarlar olarak yönetmek için Microsoft Intune’u kullanabilirsiniz. Ancak Microsoft, müşterilerin mümkün olan her durumda [MDM yönetim çözümünü kullanmasını](../enrollment/windows-enroll.md) önerir. Daha fazla bilgi için bkz. [Windows bilgisayarlarını bilgisayar veya mobil cihaz olarak yönetmeyi karşılaştırma](pc-management-comparison.md) 
@@ -35,7 +40,6 @@ Intune, mobil cihazların yönetimi için kuruluşlara yönelik kapsamlı bir ç
 Intune yazılım istemcisi, mobil cihaz olarak yönetilemeyen Windows 7 gibi eski işletim sistemlerini çalıştıran Windows PC’ler için uygundur. Intune yazılım istemcisi PC’leri buluttan yönetmek için Grup İlkesi gibi yönetim özelliklerini kullanır.
 
 Intune, yazılım istemcisi kullanılarak Windows PC’lerin bilgisayar olarak yönetilmesini 7000 PC’ye kadar destekler. Daha büyük dağıtımlar için Windows 10 PC’leri mobil cihaz olarak yönetin. Her Intune sürümü ve Windows 10 güncelleştirmesi, mobil cihaz yönetimi mimarisine göre yönetim özellikleri içerir. Kuruluşunuzu mobil cihaz olarak yönetilen Windows 10’a taşımanızı kesinlikle öneririz.
-
 
 > [!NOTE]
 > Windows 8.1 ve üzeri cihazları, Intune istemci yazılımı ile bilgisayar olarak veya mobil cihaz olarak yönetebilirsiniz. İki yöntemi aynı cihazda birlikte kullanamazsınız. Bilgisayarları Intune istemci yazılımı ile yönetmeye karar vermeden önce dikkatlice düşünün. Bu konu, yalnızca Intune istemci yazılımını kullanarak cihazları bilgisayar olarak yönetme işlemi için geçerlidir.
@@ -60,9 +64,6 @@ Intune istemci yazılımını yüklemeye yönelik en düşük donanım gereksini
 |Yönetim izinleri|İstemci yazılımını yükleyen hesabın bu cihaz üzerinde yerel yönetici izinleri olmalıdır.|
 |Windows Installer 3.1|Bilgisayarda en azından Windows Installer 3.1 olmalıdır.<br /><br />Bir bilgisayardaki Windows Installer sürümünü görüntülemek için:<br /><br />  Bilgisayarda **%windir%\System32\msiexec.exe** dosyasına sağ tıklayın ve ardından **Özellikler**’e tıklayın.<br /><br />En son Windows Installer sürümünü Microsoft Developer Network web sitesindeki [Windows Installer Yeniden Dağıtılabilir Öğeleri](http://go.microsoft.com/fwlink/?LinkID=234258) bölümünden indirebilirsiniz.|
 |Uyumsuz istemci yazılımını kaldırma|Intune istemci yazılımını yüklemeden önce, bu bilgisayardan tüm Configuration Manager, Operations Manager ve Service Manager istemci yazılımlarını kaldırmalısınız.|
-
-> [!WARNING]
-> Microsoft [Windows 7 desteğinin 14 Ocak 2020'de sona erdiğini](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020) duyurdu. Aynı tarihte Intune'da Windows 7 çalıştıran cihazlar için desteğini kaldıracaktır. Microsft, hizmet ve destek kesintilerini önlemek için Windows 10'a geçmenizi özellikle önerir. 
 
 ## <a name="deploying-the-intune-software-client"></a>Intune yazılım istemcisini dağıtma
 Bir Intune yöneticisi olarak, Intune yazılımı istemcisini çeşitli şekillerde kullanıcılara sunabilirsiniz. Yönergeler için bkz. [Windows PC’lere Intune yazılım istemcisini yükleme](../install-the-windows-pc-client-with-microsoft-intune.md).

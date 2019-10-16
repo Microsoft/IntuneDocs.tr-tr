@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732561"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379710"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune cihazının birincil kullanıcısını bulma
 
@@ -46,7 +46,7 @@ Birincil Kullanıcı özelliği, lisanslı bir Intune kullanıcısını içindek
 
 Bir Intune cihazında hiç birincil Kullanıcı atanmamışsa, Şirket Portalı uygulama onu paylaşılan bir cihaz olarak algılar. Paylaşılan cihazlar, cihaz kutucuğunda görüntülenen "paylaşılan" bir etiketle görsel olarak tanımlanabilir. Bu modda Şirket Portalı kullanılabilir uygulamaları talep etmek ve yüklemek için hala kullanılabilir. Ancak self servis eylemleri (sıfırlama/yeniden adlandırma/devre dışı bırakma) kullanılamaz.  
 
-Paylaşılan cihazlardaki Şirket Portalı görünmesi için, kullanılabilir uygulamaların bir kullanıcı grubuna atanması gerekir. Uygulamanın BT Yöneticisi tarafından nasıl yapılandırıldığına bağlı olarak, sistem bağlamına veya Kullanıcı bağlamına yüklenir. Uygulama bağlamı hakkında daha fazla bilgi için bkz. [Windows 10 cihazlarına uygulama yükleme](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Bu özelliği kullanmak için Şirket Portalı Version 10.3.4651.0 veya üzeri gereklidir.
+Paylaşılan cihazlardaki Şirket Portalı görünmesi için, kullanılabilir uygulamaların bir kullanıcı grubuna atanması gerekir. Uygulamanın BT Yöneticisi tarafından nasıl yapılandırıldığına bağlı olarak, sistem bağlamına veya Kullanıcı bağlamına yüklenir. Uygulama bağlamı hakkında daha fazla bilgi için bkz. [Windows 10 cihazlarına uygulama yükleme](../apps/apps-windows-10-app-deploy.md). Bu özelliği kullanmak için Şirket Portalı Version 10.3.4651.0 veya üzeri gereklidir.
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>Birincil kullanıcı olarak kim atanır?
@@ -64,8 +64,8 @@ Intune, kayıt sırasında veya hemen sonrasında cihazlara birincil kullanıcı
 | Windows | Ortak yönetim | Windows 'da oturum açmak için ilk Kullanıcı | İlk Kullanıcı Windows 'da oturum açtığında | 
 | Windows | Azure AD birleşimi (toplu kayıt belirteci) | Yok. | Not applicable | 
 | Windows | Azure AD katılımı (Autopilot kendi kendine dağıtım modu) | Yok. | Not applicable | 
-| platformlar arası | Şirket Portalı uygulamayla Kullanıcı odaklı kayıt | Kullanıcı kaydediliyor | Kayıt sırasında |
-| platformlar arası | Cihaz Kayıt Yöneticisi (DEM) | DEM kullanıcısı kaydediliyor | Kayıt sırasında |
+| Platformlar arası | Şirket Portalı uygulamayla Kullanıcı odaklı kayıt | Kullanıcı kaydediliyor | Kayıt sırasında |
+| Platformlar arası | Cihaz Kayıt Yöneticisi (DEM) | DEM kullanıcısı kaydediliyor | Kayıt sırasında |
 | iOS, macOS | Apple otomatik cihaz kaydı (Kullanıcı benzeşimi ile DEP | Kullanıcı kaydediliyor | Kayıt sırasında |
 | iOS, macOS | Apple otomatik cihaz kaydı (Kullanıcı benzeşimi olmadan DEP) | Yok. | Not applicable |
 | Android | Android şirkete ait, adanmış cihazlar | Yok. | Not applicable |

@@ -210,7 +210,7 @@
     - name: Sorunları Gider
       items:
         - name: İlke ve profillerle ilgili sorunları giderme
-          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?toc=/intune/protect/toc.json&bc=/protect/breadcrumb/toc.json
         - name: Koşullu erişim sorunlarını giderme
           href: troubleshoot-conditional-access.md
         - name: Sorun giderme sertifika bağlayıcısı

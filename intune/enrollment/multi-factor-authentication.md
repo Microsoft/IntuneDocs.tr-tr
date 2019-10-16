@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731749"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379828"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune cihaz kayıtları için çok faktörlü kimlik doğrulaması isteme
 
@@ -56,7 +56,7 @@ Bir cihaz kaydedildiğinde MFA istemek için şu adımları izleyin:
 6. **Atamalar** kısmında **Kullanıcılar ve gruplar**’ı seçin. 
 7. **Kullanıcılar ve gruplar**’da **Kullanıcı veya grup seçin**’e tıklayın ve **Kullanıcılar ve gruplar**’ı işaretleyin. Daha sonra, bu ilkeyi alacak kullanıcı ve/veya grupları seçin ve **Bitti**’ye tıklayın.
 8. **Atamalar** kısmında **Bulut uygulamaları**’nı seçin.
-9. **Bulut uygulamaları**‘nın **Ekleme** sekmesinde, **Uygulama seç**’i, daha sonra **Seçin** > **Microsoft Intune Kaydı**’nı ve son olarak **Bitti**’yi seçin.
+9. **Bulut uygulamaları**‘nın **Ekleme** sekmesinde, **Uygulama seç**’i, daha sonra **Seçin** > **Microsoft Intune Kaydı**’nı ve son olarak **Bitti**’yi seçin. **Microsoft Intune kaydı**' nı seçerek, koşullu erişim MFA yalnızca cihazın kaydına uygulanır (tek seferlik MFA istemi).
 10. **Atamalar** bölümünde, **Koşullar** altında MFA için hiçbir ayar yapılandırmanız gerekmez.
 11. **Erişim denetimleri** kısmında **Ver**’i seçin.
 12. **Ver** kısmında **Erişim ver**’i ve daha sonra **Çok faktörlü kimlik doğrulamasını gerektir**’i seçin. **Cihazın uyumlu olarak işaretlenmesini gerektir**’i seçmeyin çünkü bir cihaz kaydedilene kadar cihazın uyumluluğu değerlendirilemez. Daha sonra **Seç**’e tıklayın.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731177"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350017"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -165,7 +165,7 @@ Kullanıcılar, Şirket Portalı uygulaması veya Web sitesi aracılığıyla ye
 - **Eşitleme** – bu eylem, Intune hizmeti ile bir cihaz iade işlemini başlatır. Bu, Şirket Portalı **denetim durumunu** gösterir.
 - **Uzaktan kilitleme** – bu, cihazın kilidini açmak için PIN gerektiren cihazı kilitler.
 - **Geçiş kodunu Sıfırla** – bu eylem, cihaz geçiş kodunu sıfırlamak için kullanılır. İOS cihazlarında geçiş kodu kaldırılır ve son kullanıcının ayarlar ' da yeni bir kod girmesi gerekecektir. Desteklenen Android cihazlarda Intune tarafından yeni bir geçiş kodu oluşturulur ve geçici olarak Şirket Portalı görüntülenir.
-- **Anahtar kurtarma** – bu eylem, şifrelenmiş cihazların şifreleme anahtarını kurtarmak için kullanılır.
+- **Anahtar kurtarma** – bu eylem, Şirket portalı Web sitesinden şifrelenmiş MacOS cihazları için kişisel kurtarma anahtarını kurtarmak üzere kullanılır. 
 
 ### <a name="self-service-actions"></a>Self Servis eylemleri
 
@@ -180,7 +180,7 @@ Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez
 
 
 <sup>(1)</sup> devre dışı bırakma, Azure AD 'ye katılmış Windows cihazlarında her zaman engellenir.<br>
-<sup>(2)</sup> MacOS Için anahtar kurtarma yalnızca Web portalı aracılığıyla kullanılabilir.<br>
+<sup>(2)</sup> MacOS için kişisel anahtar kurtarma yalnızca şirket portalı Web sitesi aracılığıyla kullanılabilir.<br> 
 <sup>(3)</sup> bir cihaz kayıt yöneticisi kaydı kullanılıyorsa tüm uzak eylemler devre dışı bırakılır.<br>
 <sup>(4)</sup> yeniden adlandırma yalnızca cihaz adını cihazda değil şirket portalı uygulamasında veya Web sitesinde değiştirir.<br>
 <sup>(5)</sup> MacOS cihazlarında uzaktan silme kullanılamaz.<br>

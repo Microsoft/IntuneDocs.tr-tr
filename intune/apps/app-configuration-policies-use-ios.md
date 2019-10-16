@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 542d9c7890f9484311ca8e6400d0a75a41e13d7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 94480c8dcfe44dc451ea6a2409f52f06c2a87cf5
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731425"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350084"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -108,7 +108,7 @@ Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Micros
 | **Deðerler** | <ul><li>**Enabled**: İzin verilen tek hesap, [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarıyla tanımlanan yönetilen kullanıcı hesabıdır.</li><li>**Disabled** (veya **Enabled** ile eşleşmeyen bir değer): Tüm hesaplara izin verilir.</li></ul> |.
 
    > [!NOTE]
-   > İOS için OneDrive 10,34 veya sonraki bir sürümü ve iOS 2.99.0 veya üzeri için Outlook 'U kullanmanız gerekir ve yalnızca birden çok kimliği olan yapılandırılmış kuruluş hesaplarına izin verirken uygulamanın [Intune uygulama koruma ilkelerini](app-protection-policy.md) hedeflemeli olması gerekir.
+   > İOS için OneDrive 10,34 veya üzeri, iOS 2.99.0 veya sonraki bir sürümü veya iOS 44.8.7 veya üzeri için Outlook 'U ya da yalnızca çok kimlikli kuruluş hesaplarına izin verirken uygulamanın [Intune uygulama koruma ilkelerini](app-protection-policy.md) hedeflemeli olması gerekir.
 
 ## <a name="enter-xml-data"></a>XML verilerini girme
 

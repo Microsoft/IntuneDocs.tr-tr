@@ -17,74 +17,74 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: b7772a7476f197f455191debf8e252ba83e06f49
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830554"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379751"
 ---
-# <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulama dağıtımı 
+# <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulama dağıtımı 
 
-Microsoft Intune Şu anda Windows 10 cihazlarında çeşitli uygulama türlerini ve dağıtım senaryolarını destekler. Bir uygulamayı Intune 'a ekledikten sonra, uygulamayı kullanıcılara ve cihazlara atayabilirsiniz. Aşağıdaki bilgiler, desteklenen Windows 10 senaryolarıyla ilgili daha fazla ayrıntı sağlar. Ayrıca, aşağıdaki bilgiler, Windows 'a uygulama dağıtımında önemli ayrıntılar sağlar. 
+Microsoft Intune, Windows 10 cihazlarında çeşitli uygulama türlerini ve dağıtım senaryolarını destekler. Intune’a bir uygulama ekledikten sonra uygulamayı kullanıcılara ve cihazlara atayabilirsiniz. Bu makalede desteklenen Windows 10 senaryoları hakkında daha ayrıntılı bilgi sağlanır ve ayrıca Windows 'a uygulama dağıttığınızda göz önünde bulunan önemli ayrıntıları ele alınmaktadır. 
 
-İş kolu (LOB) uygulamaları ve Microsoft Store for Business Apps, Windows 10 cihazlarında desteklenen uygulama türleridir. Windows uygulamaları için dosya uzantıları **. msi**, **. appx**ve **. appxdemeti**içerir.  
+Windows 10 cihazlarında desteklenen uygulama türleri İş kolu (LOB) uygulamaları ve İş için Microsoft Store uygulamalarıdır. Windows uygulamaları için dosya uzantıları. msi,. appx ve. appxdemeti içerir.  
 
 > [!Note]
-> Modern uygulamaları dağıtmak için gereken en düşük Windows 10 güncelleştirmeleri aşağıdaki gibidir:
-> - Windows 10 1803 için [23 Mayıs 2018 — KB4100403 (OS Build 17134,81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)için.
-> - Windows 10 1709 için [21 Haziran 2018 — KB4284822 (OS Build 16299,522)](https://support.microsoft.com/help/4284822).
+> Modern uygulamaları dağıtmak için en azından şunlar gerekir:
+> - Windows 10 1803 için [23 Mayıs 2018—KB4100403 (İşletim Sistemi Derlemesi 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
+> - Windows 10 1709 için [21 Haziran 2018 — KB4284822 (İşletim Sistemi Derlemesi 16299.522)](https://support.microsoft.com/help/4284822).
 >
 > Yalnızca Windows 10 1803 ve üzeri, ilişkili birincil kullanıcı olmadığında uygulamaları yüklemeyi destekler.
 >
-> Windows 10 Home sürümlerini çalıştıran cihazlarda LOB uygulama dağıtımı desteklenmez.
+> Windows 10 Home Edition çalıştıran cihazlarda LOB uygulama dağıtımı desteklenmez.
 
-## <a name="windows-10-line-of-business-apps"></a>Windows 10 iş kolu uygulamaları
+## <a name="windows-10-lob-apps"></a>Windows 10 LOB uygulamaları
 
-Windows 10 LOB uygulamaları imzalanır ve Intune yönetim konsoluna yüklenir ve Evrensel Windows Platformu (UWP) uygulamaları ve Windows uygulama paketleri (AppX) gibi modern uygulamaların yanı sıra, basit Microsoft ınstaller paket dosyaları (MSI) gibi Win 32 uygulamaları da içerebilir. LOB uygulamalarının güncelleştirmeleri yönetici tarafından her seferinde el ile yüklenip dağıtılmalıdır. Dağıtılan güncelleştirmeler, uygulamayı kullanıcı müdahalesi olmadan yükleyen Son Kullanıcı cihazlarına otomatik olarak yüklenir. Kullanıcının güncelleştirmeler üzerinde denetimi yoktur. 
+Windows 10 LOB uygulamalarını imzalayabilir ve Intune yönetim konsoluna yükleyebilirsiniz. Bunlar, Evrensel Windows Platformu (UWP) uygulamaları ve Windows uygulama paketleri (AppX) gibi modern uygulamaların yanı sıra basit Microsoft yükleyicisi paket dosyaları (MSI) gibi Win 32 uygulamaları da içerebilir. Yöneticinin LOB uygulamalarının güncelleştirmelerini el ile yüklemesi ve dağıtması gerekir. Bu güncelleştirmeler, uygulamayı yüklemiş olan Kullanıcı cihazlarına otomatik olarak yüklenir. Kullanıcı müdahalesi gerekli değildir ve kullanıcının güncelleştirmeler üzerinde denetimi yoktur. 
 
-## <a name="microsoft-store-for-business-apps"></a>Iş uygulamaları için Microsoft Store
+## <a name="microsoft-store-for-business-apps"></a>İş uygulamaları için Microsoft Mağazası
 
-Iş uygulamaları için Microsoft Store, Microsoft Store Iş Yöneticisi portalından satın alınan modern uygulamalardır ve daha sonra yönetim için Microsoft Intune olarak eşitlenir. Uygulamalar **çevrimiçi lisanslanmış** ya da **çevrimdışı lisanslanabilir**. Iş uygulamaları için Microsoft Store güncelleştirmeleri, sizin tarafınızdan gerekli ek bir işlem olmadan doğrudan Microsoft Store tarafından yönetilir. Ayrıca, özel bir Tekdüzen Kaynak tanımlayıcısı (URI) kullanarak belirli uygulamalara yönelik güncelleştirmeleri engelleyebilirsiniz. Daha fazla bilgi için bkz. [Kurumsal uygulama yönetimi-otomatik güncelleştirmelerden uygulamayı engelle](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). Cihazda, Son Kullanıcı cihazdaki tüm Iş uygulamaları Microsoft Store güncelleştirmelerini de devre dışı bırakabilir. 
+Iş uygulamaları için Microsoft Store, Microsoft Store for Business yönetici portalından satın alınan modern uygulamalardır. Daha sonra yönetim için Microsoft Intune için eşitlenir. Uygulamalar çevrimiçi lisanslanmış ya da çevrimdışı lisanslanabilir. Microsoft Store, yönetici tarafından hiçbir ek eylem gerekmeden güncelleştirmeleri doğrudan yönetir. Ayrıca, özel bir Tekdüzen Kaynak tanımlayıcısı (URI) kullanarak belirli uygulamalara yönelik güncelleştirmeleri engelleyebilirsiniz. Daha fazla bilgi için bkz. [Kurumsal uygulama yönetimi - Uygulamaların otomatik güncelleştirmeleri almasını engelleme](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). Kullanıcı aynı zamanda cihazdaki tüm Iş uygulamaları için Microsoft Store güncelleştirmelerini devre dışı bırakabilir. 
 
 ### <a name="categorize-microsoft-store-for-business-apps"></a>Iş uygulamaları için Microsoft Store kategorilere ayırın 
-Iş uygulamalarına yönelik Microsoft Store sınıflandırmak için aşağıdaki adımları kullanın: 
+Iş uygulamalarına yönelik Microsoft Store kategorilere ayırmak için: 
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **İstemci uygulamaları** > **uygulamalar** ' ı seçin > bir Microsoft Store Iş uygulaması > **uygulama bilgileri** > **kategorisi**seçin. 
-3. Açılan menüden bir kategori seçin.
+2. **İstemci uygulamaları** > **uygulamalar**' ı seçin. Iş için bir Microsoft Store seçin. Ardından @no__t **uygulama bilgileri**-1**kategorisini**seçin. 
+3. Bir kategori seçin.
 
-## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 cihazlarına uygulama yükleme
-Uygulama türüne bağlı olarak, uygulama iki şekilde bir Windows 10 cihazına yüklenebilir:
+## <a name="install-apps-on-windows-10-devices"></a>Windows 10 cihazlarına uygulama yüklemesi
+Uygulama türüne bağlı olarak, uygulamayı iki şekilde bir Windows 10 cihazına yükleyebilirsiniz:
 
 - **Kullanıcı bağlamı**: bir uygulama kullanıcı bağlamında dağıtıldığında, Kullanıcı cihazda oturum açtığında, yönetilen uygulama cihazdaki bu kullanıcı için yüklenir. Kullanıcı cihazda oturum açana kadar uygulama yüklemesinin başarılı olamayacağını unutmayın. 
-  - Modern iş kolu uygulamaları ve iş için Microsoft Mağazası uygulamaları (hem çevrimiçi hem de çevrimdışı) kullanıcı bağlamında dağıtılabilir ve hem gerekli hem de kullanılabilir amacı destekleyecektir.
-  - **Kullanıcı modu** veya **ikili mod** olarak oluşturulan Win32 uygulamaları, kullanıcı bağlamında dağıtılabilir ve hem **gerekli** hem de **kullanılabilir** amacı destekleyecektir. 
-- **Cihaz bağlamı**: bir uygulama cihaz bağlamına dağıtıldığında, yönetilen uygulama doğrudan cihaza Intune tarafından yüklenir.
-  - Yalnızca modern iş kolu uygulamaları ve Iş kolu uygulamaları için çevrimdışı lisanslı Microsoft Store cihaz bağlamına dağıtılabilir ve yalnızca gerekli amacı destekleyecektir.
-  - **Makine modu** ya da **ikili mod** olarak oluşturulan Win32 uygulamaları, kullanıcı bağlamında dağıtılabilir ve yalnızca **gerekli** amacı destekler.
+  - Modern iş kolu uygulamaları ve Iş uygulamaları için Microsoft Store (hem çevrimiçi hem de çevrimdışı), kullanıcı bağlamında dağıtılabilir. Uygulamalar hem gerekli hem de kullanılabilir amaçları destekler.
+  - Kullanıcı modu veya Ikili mod olarak oluşturulan Win32 uygulamaları, kullanıcı bağlamında dağıtılabilir ve hem gerekli hem de kullanılabilir amaçları destekler. 
+- **Cihaz bağlamı**: bir uygulama cihaz bağlamında dağıtıldığında, yönetilen uygulama doğrudan cihaza Intune tarafından yüklenir.
+  - Cihaz bağlamında yalnızca modern iş kolu uygulamaları ve çevrimdışı lisanslı Microsoft Store Iş uygulamaları dağıtılabilir. Bu uygulamalar yalnızca gerekli amacı destekler.
+  - Makine modu veya Ikili mod olarak oluşturulan Win32 uygulamaları cihaz bağlamında dağıtılabilir ve yalnızca gerekli amacı destekleyebilir.
 
 > [!NOTE]
-> **Çift modlu** uygulamalar olarak oluşturulan Win32 uygulamaları için, uygulamanın bu örnekle ilişkili tüm atamalar Için **Kullanıcı modu** veya **makine modu** uygulaması olarak işlev görür. Dağıtım bağlamı atama başına değiştirilemez.  
+> Çift modlu uygulamalar olarak oluşturulan Win32 uygulamaları için, uygulamanın bu örnekle ilişkili tüm atamalar için Kullanıcı modu veya makine modu uygulaması olarak işlev görür olması gerekir. Dağıtım bağlamı atama başına değiştirilemez.  
 
-Bir uygulama cihaz bağlamına dağıtıldığında, yükleme yalnızca cihaz bağlamını destekleyen bir cihaza hedeflendiğinde başarılı olur. Ayrıca, cihaz bağlamına dağıtmak aşağıdaki koşulları destekler:
-- Bir uygulama cihaz bağlamında dağıtılırsa ve bir kullanıcıya hedeflenirse, yükleme aşağıdaki durum ve hata, yönetici konsolunda görüntülenmesiyle başarısız olur:
-  - Durum: başarısız oldu.
+Bir uygulama cihaz bağlamına dağıtıldığında, yükleme yalnızca cihaz bağlamını destekleyen bir cihaza hedeflendiğinde başarılı olur. Buna ek olarak, cihaz bağlamında dağıtım aşağıdaki koşulları destekler:
+- Bir uygulama cihaz bağlamında dağıtılırsa ve bir kullanıcıya hedeflenirse, yükleme başarısız olur. Yönetim konsolunda aşağıdaki durum ve hata görüntülenir:
+  - Durum: Başarısız.
   - Hata: bir Kullanıcı, cihaz bağlamı yüklemesi ile hedeflenmiyor.
-- Bir uygulama cihaz bağlamına dağıtılmışsa ancak cihaz bağlamını desteklemeyen bir cihaza hedeflendiyse, yükleme yönetim konsolunda aşağıdaki durum ve hata ile başarısız olur:
-  - Durum: başarısız oldu.
+- Bir uygulama cihaz bağlamına dağıtılmışsa, ancak cihaz bağlamını desteklemeyen bir cihaza hedeflenirse, yükleme başarısız olur. Yönetim konsolunda aşağıdaki durum ve hata görüntülenir:
+  - Durum: Başarısız.
   - Hata: Bu platform cihaz bağlamı yüklemelerini desteklemiyor. 
 
 > [!Note]
-> Uygulama ataması belirli bir dağıtımla kaydedildikten sonra, modern uygulamalar dışında bu atama için bağlam değiştirilemez. Modern uygulama durumu için, bağlam Kullanıcı bağlamından cihaz bağlamına değiştirilebilir. 
+> Belirli bir dağıtıma sahip bir uygulama atamasını kaydettikten sonra, modern uygulamalar haricinde, bu atamanın bağlamını değiştiremezsiniz. Modern uygulamalar için, bağlamı Kullanıcı bağlamından cihaz bağlamına dönüştürebilirsiniz. 
 
-Tek bir Kullanıcı/cihazdaki ilkelerde bir çakışma olması durumunda, son ilkeyi belirlemede kullanılacak ilke öncelikleri aşağıda verilmiştir:
-- Bir cihaz bağlamı ilkesi, bir kullanıcı bağlamı ilkesinden daha yüksek bir önceliktir. 
-- Yükleme ilkesi, kaldırma ilkesinden daha yüksek bir önceliktir.
+Tek bir kullanıcı veya cihazdaki ilkelerde çakışma varsa, aşağıdaki öncelikler geçerlidir:
+- Cihaz bağlamı ilkesi, kullanıcı bağlamı ilkesinden daha yüksek önceliklidir. 
+- Yükleme ilkesi, kaldırma ilkesinden daha yüksek önceliklidir.
 
-Microsoft Intune kullanarak uygulama atama hakkında daha fazla bilgi için, bkz. [Microsoft Intune olan gruplara uygulama atama](apps-deploy.md) ve [Microsoft Intune uygulama atamalarını dahil etme ve hariç tutma](apps-inc-exl-assignments.md). Intune 'da uygulama türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune uygulama ekleme](apps-add.md).
+Daha fazla bilgi için bkz. [Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama](apps-inc-exl-assignments.md). Intune'daki uygulama türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune'a uygulama ekleme](apps-add.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Gruplara uygulama atama hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune olan gruplara uygulama atama](apps-deploy.md).
-- Uygulama atamalarını izleme hakkında daha fazla bilgi için bkz. [uygulamaları izleme](apps-monitor.md).
+- [Microsoft Intune olan gruplara uygulama atama](apps-deploy.md)
+- [Uygulamaları izleme](apps-monitor.md)
