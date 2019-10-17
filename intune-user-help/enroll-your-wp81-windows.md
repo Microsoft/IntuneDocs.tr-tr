@@ -9,6 +9,7 @@ ms.date: 01/03/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 searchScope:
@@ -18,23 +19,23 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd15e960b3c2802930981271cb6cd9ffea841cee
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545499"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506158"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1 cihazınızı Intune'a kaydetme  
 
-İş veya Okul e-posta, dosyalar ve diğer kaynaklara erişmek için cihazları kaydetme. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [Şirketinizin destek biriminin cihazınızda görebilecekleri ve göremeyecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
+İş veya okul e-postasına, dosyalarına ve diğer kaynaklara erişim sağlamak için cihazlarınızı kaydedin. Cihazlarınızı kaydettiğinizde, kuruluşunuz şirket verilerini güvenli tutabilir. Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamasını yükler ve cihazınızı Intune’a kaydederseniz ne olur?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) ve [Şirketinizin destek biriminin cihazınızda görebilecekleri ve göremeyecekleri](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
-Cihazınızı ıntune'a kaydetmek için belirlenen izinler veya geçerli hesap durumu eşleşen yönergeleri izleyin.
+Cihazınızı Intune 'a kaydetmek için izinleriniz veya geçerli hesap durumlarınız ile eşleşen yönergeler kümesini izleyin.
 
-## <a name="enroll-through-company-portal"></a>Şirket portalı aracılığıyla kaydetme  
-Şirket portalı uygulamasını Microsoft Store yükleyebileceğiniz şu adımları izleyin. 
+## <a name="enroll-through-company-portal"></a>Şirket Portalı kaydetme  
+Microsoft Store Şirket Portalı uygulamayı yükleyebiliyorsanız bu adımları izleyin. 
 
-1. Dokunun **Başlat** > **Store**.  
+1. @No__t-1**depolamaya** **başla**' ya dokunun.  
 
 2. **Ara**’ya dokunun, sonra **şirket portalı** yazın.  
 
@@ -57,7 +58,7 @@ Cihazınızı kaydedin:
 
 3. **Cihazlarım**’a doğru çekin.  
 
-4. Seçin **bu cihazı kaydetmek veya tanımlamak için dokunun**.  
+4. **Bu cihazı kaydetmek veya tanımlamak Için dokunun '** ı seçin.  
 
 
     ![Bu cihazı kaydetmek veya tanımlamak için dokunun ekranı](./media/WP81-enroll-1-swipe-my-devices.png)  
@@ -77,8 +78,8 @@ Cihazınızı kaydedin:
 
     ![Hesap eklendi ekranı](./media/WP81-enroll-4-account-added.png)  
 
-## <a name="enroll-through-settings-app"></a>Ayarlar uygulamasında kaydetme  
-Windows Phone cihazınızdaki Microsoft Store erişemiyorsanız veya bir Microsoft Account yoksa aşağıdaki adımları izleyin.
+## <a name="enroll-through-settings-app"></a>Ayarlar uygulaması aracılığıyla kaydolma  
+Windows Phone cihazınızdan Microsoft Store erişemezseniz veya bir Microsoft hesabınız yoksa, bu adımları izleyin.
 
 1. **Ayarlar** &gt; **iş yeri**’ne dokunun.  
 

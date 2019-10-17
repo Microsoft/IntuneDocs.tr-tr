@@ -9,6 +9,7 @@ ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
@@ -18,15 +19,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbd4f8f0925aac5aada44277c4d21a71b412e0e7
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: bbc251479652079cb33b1ca4dd08103103b91aa9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546674"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508205"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 cihaz kaydı sorunlarınızı giderme
-Cihazınız kayıtlı rağmen iş veya Okul e-postası ve dosyalarına erişemiyorsanız, bu sorun giderme adımlarını deneyin.  
+Cihazınızı kaydettiyseniz, ancak iş veya okul e-postanıza ve dosyalarınıza erişemiyorsanız, bu sorun giderme adımlarını deneyin.  
 
 1. Sonraki iki ekrana bakarak kendi cihazınızda gördüğünüze benzeyeni bulun. Cihazınızda gördüğünüz ekrana uyan ekranın yanında yer alan adımları uygulayın.
 
@@ -44,22 +45,22 @@ Cihazınız kayıtlı rağmen iş veya Okul e-postası ve dosyalarına erişemiy
 
 2. Aşağıdakilerden birini yapın:
 
-   - Aşağıdaki görüntüye benzer bir bağlantı görürseniz üzerine dokunun, Yönet, Bilgi ve Bağlantıyı Kes seçeneklerini görüp görmediğinizi denetleyin. Bu seçenekleri görürseniz, şimdi kaydedilmiş bağlı ve.
+   - Aşağıdaki görüntüye benzer bir bağlantı görürseniz üzerine dokunun, Yönet, Bilgi ve Bağlantıyı Kes seçeneklerini görüp görmediğinizi denetleyin. Bu seçenekleri görürseniz, artık kaydolmuş ve bağlanırsınız.
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Yukarıda gösterilen bağlantı bilgilerini görmüyorsanız veya bakın, ancak bazı seçenekleri eksik, dokunun **Connect**. Ardından iş veya Okul kimlik bilgilerinizle bağlanmak için oturum açın.  
+   - Yukarıda gösterilen bağlantı bilgilerini görmüyorsanız veya onu görüyorsanız, ancak bu seçeneklerin bir kısmı eksikse, **Bağlan**' a dokunun. Daha sonra bağlanmak için iş veya okul kimlik bilgilerinizle oturum açın.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>“Hesabınız”ı görüyorsanız izlenecek sorun giderme adımları
 
 Yukarıdaki adımları izlemenize rağmen iş veya okul e-postanıza, dosyalarınıza ve diğer verilerinize erişemiyorsanız, **Hesaplar**’a dönün ve **İş erişimi**’ne dokunun
 
-- İş veya Okul hesabınızın listelenmesi ise bağlandınız.  
+- İş veya okul hesabınızı listede görürseniz, bağlanırsınız.  
 
 - İş veya okul hesabınızı görmüyorsanız **Bağlan**’a dokunun ve ardından iş veya okul kimlik bilgilerinizle oturum açın.
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>“İş veya okul hesabı ayarlama”yı görüyorsanız izlenecek sorun giderme adımları
 
-<strong>“Girdiğiniz kullanıcı adıyla eşleşen bir yönetim uç noktası otomatik bulunamadı” şeklinde bir ileti görürseniz lütfen kullanıcı adınızı kontrol edin ve oturum açmayı yeniden deneyin. Yönetim uç noktanızın URL’sini biliyorsanız lütfen girin.</strong> Daha sonra kullanıcı adınız ve parolanızı yeniden girmeyi deneyin. Sorun yaşamaya devam ederseniz <strong>Yönetim uç noktası</strong> metin kutusunda sağlamanız gereken web sitesi için şirketinizin destek birimiyle görüşün. Bu web sitesi büyük olasılıkla şu şekilde olacaktır: <strong>www.şirketiniz.onmicrosoft.com</strong>.
+<strong>Girilen kullanıcı adıyla eşleşen bir yönetim uç noktasını otomatik olarak bulamadığımıza bildiren bir ileti görürseniz. Lütfen Kullanıcı adınızı denetleyip yeniden deneyin. Yönetim uç noktanızın URL 'sini biliyorsanız lütfen girin.</strong>ardından Kullanıcı adınızı ve parolanızı yeniden girmeyi deneyin. Sorun yaşamaya devam ederseniz <strong>Yönetim uç noktası</strong> metin kutusunda sağlamanız gereken web sitesi için şirketinizin destek birimiyle görüşün. Bu web sitesi büyük olasılıkla şu şekilde olacaktır: <strong>www.şirketiniz.onmicrosoft.com</strong>.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

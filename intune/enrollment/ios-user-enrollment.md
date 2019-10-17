@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/2/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57162664d6ca3a35696e56088c4e86acadf45371
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: f201cdac0f881ce03863704dd80d8635de52074a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71955460"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505467"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>İOS ve ıpados Kullanıcı kaydını ayarlama (Önizleme)
 
@@ -33,9 +34,9 @@ Kullanıcı kaydında kullanılabilen seçenekler hakkında daha fazla bilgi iç
 > [!NOTE]
 > Apple 'ın Intune 'da Kullanıcı kaydı desteği şu anda önizlemededir.
 
-## <a name="prerequisites"></a>Prerequisites
-- [Mobil cihaz yönetimi (MDM) yetkilisi](../fundamentals/mdm-authority-set.md)
-- [Apple MDM anında Iletme sertifikası](apple-mdm-push-certificate-get.md)
+## <a name="prerequisites"></a>Önkoşullar
+- [Mobil Cihaz Yönetimi (MDM) Yetkilisi](../fundamentals/mdm-authority-set.md)
+- [Apple MDM Anında İletme sertifikası](apple-mdm-push-certificate-get.md)
 - [Yönetilen Apple kimlikleri](https://support.apple.com/guide/apple-business-manager/mdm1c9622977/web).
 
 ## <a name="create-a-user-enrollment-profile-in-intune"></a>Intune 'da Kullanıcı kayıt profili oluşturma
@@ -46,12 +47,12 @@ Kayıt profili, kayıt sırasında bir cihaz grubuna uygulanan ayarları tanıml
 
     ![Apple kayıt profili oluştur](./media/ios-user-enrollment/create-profile.png)
 
-2. **Temel bilgiler** sayfasında, yönetim amaçları için profil Için bir **ad** ve **Açıklama** girin. Kullanıcılar bu ayrıntıları görmez. Azure Active Directory içinde dinamik bir grup oluşturmak için bu **ad** alanını kullanabilirsiniz. Bu kayıt profiliyle cihazları atamak için Kayıtlıprofilename parametresini tanımlamak üzere profil adını kullanın. [Azure Active Directory dinamik gruplar](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices)hakkında daha fazla bilgi edinin.
+2. **Temel bilgiler** sayfasında, yönetim amaçları için profil Için bir **ad** ve **Açıklama** girin. Kullanıcılar bu ayrıntıları göremez. Azure Active Directory’de dinamik bir grup oluşturmak için **Ad** alanını kullanabilirsiniz. enrollmentProfileName parametresini, bu kayıt profiliyle cihazlara atamak amacıyla tanımlamak için profil adını kullanın. [Azure Active Directory dinamik grupları](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices) hakkında daha fazla bilgi edinin.
 
     ![Temel bilgiler sayfası](./media/ios-user-enrollment/basics-page.png)
 
 
-3. **İleri ' yi**seçin.
+3. **İleri**'yi seçin.
 
 4. **Ayarlar** sayfasında, kullanıcılara hangi kayıt türünün kullanılacağını tercih edebilirsiniz. Alternatif olarak, varsayılan ayar yapabilirsiniz.
 
@@ -70,13 +71,13 @@ Kayıt profili, kayıt sırasında bir cihaz grubuna uygulanan ayarları tanıml
     > "Kullanıcı kaydıyla hedeflenen cihazlarda çalışmaya yönelik koşullu erişim için, çoklu oturum açma ve Workplace Join etkinleştirmek üzere Azure Authenticator uygulamasını bu kullanıcı grubu için gerekli bir uygulama olarak göndermeniz gerekir."
     > Yönetici olarak, kimlik doğrulayıcı uygulamasını kullanıcılarınıza göndermek için herhangi bir işlem yapmanız gerekmez. Kullanıcılarınıza, bu senaryoların düzgün çalışmasını sağlamak üzere Kullanıcı kayıt işlemini gerçekleştirmek üzere kimlik doğrulayıcı uygulamasını yüklemek için Şirket Portalı içinde talimat alınacaktır.
 
-5. **İleri ' yi**seçin.
+5. **İleri**'yi seçin.
 
 6. **Atamalar** sayfasında, bu profilin atanmasını istediğiniz kullanıcıları içeren Kullanıcı gruplarını seçin. Profili tüm kullanıcılara veya belirli gruplara atamayı seçebilirsiniz. Seçili gruplardaki tüm kullanıcılar, yukarıda seçilen kayıt türünü kullanır. Özellik, cihazlar yerine Kullanıcı kimliklerini temel aldığı için, Kullanıcı kayıt senaryolarında cihaz grupları desteklenmez. Profili tüm kullanıcılara veya belirli gruplara atamayı seçebilirsiniz.
 
     ![Atamalar sayfası](./media/ios-user-enrollment/assignments-page.png)
 
-7. **İleri ' yi**seçin.
+7. **İleri**'yi seçin.
 
 8. **İnceleme ve oluşturma** sayfasında, seçimlerinizi gözden geçirin ve ardından profili kullanıcılara atamak için **Oluştur** ' u seçin.
 

@@ -1,7 +1,7 @@
 ---
-title: Exchange bağlayıcılarının sorunlarını giderme
+title: Exchange bağlayıcısı sorunlarını giderme
 titleSuffix: Microsoft Intune
-description: Intune şirket içi Exchange Bağlayıcısı ile ilgili sorunları giderin.
+description: Intune şirket içi Exchange bağlayıcısı ile ilgili sorunları giderin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814049"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508847"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Intune Exchange Connector sorunlarını giderme
 
@@ -67,7 +68,7 @@ Ortamınızın ve bağlayıcının doğru yapılandırıldığından emin olmak 
 - **Hesap izinleri**: Microsoft Intune Exchange Connector iletişim kutusunda, [gerekli Windows PowerShell Exchange cmdlet 'lerini](exchange-connector-install.md#exchange-cmdlet-requirements)çalıştırmak için uygun izinlere sahip bir kullanıcı hesabı belirttiğinizden emin olun.
 - **Bildirim e-posta iletileri**: bildirimleri etkinleştirin ve bir bildirim hesabı belirtin.
 - **Istemci erişimi sunucusu eşitleme**: Exchange bağlayıcısını yapılandırırken, Exchange bağlayıcısını barındıran sunucuda mümkün olan en düşük ağ gecikmesi olan bir CA belirtin. CA 'LAR ve Exchange Connector arasındaki iletişim gecikmesi, özellikle Exchange Online adanmış kullanılırken cihaz bulmayı geciktirebilirler.
-- **Eşitleme zamanlaması**: Exchange Connector Exchange CA 'ları ile eşitlenene kadar, yeni kaydedilmiş bir cihaza sahip bir Kullanıcı erişim elde etme ile gecikebilir. Tam eşitleme günde bir kez gerçekleşir ve bir Delta (hızlı) eşitleme günde birkaç kez gerçekleştirilir. Gecikme olasılığını en aza indirmek için [hızlı eşitlemeyi veya tam eşitlemeyi el ile zorlayabilirsiniz](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) .
+- **Eşitleme zamanlaması**: Exchange Connector Exchange CA 'ları ile eşitlenene kadar, yeni kaydedilmiş bir cihaza sahip bir Kullanıcı erişim elde etme ile gecikebilir. Tam eşitleme günde bir kez gerçekleşirken delta eşitlemesi (hızlı eşitleme) birkaç kez gerçekleşir. Gecikmeleri olabildiğince azaltmak için [bir hızlı veya tam eşitlemeyi el ile zorlayabilirsiniz](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Aşağıdaki makaleler, yaygın sorunların ve belirli hataların çözümlenmesine yardımcı olabilir:

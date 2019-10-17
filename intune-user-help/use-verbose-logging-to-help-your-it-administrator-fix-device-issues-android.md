@@ -1,5 +1,5 @@
 ---
-title: Intune uygulamalarında günlüğe kaydetme ayarlarını yapılandırmak | Microsoft Docs
+title: Intune uygulamalarında günlük ayarlarını yapılandırma | Microsoft Docs
 description: Ayrıntılı günlük kaydı kullanarak şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma
 keywords: ''
 author: lenewsad
@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
@@ -18,33 +19,33 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75b4b4ce88eb11e817175bc7d7a22a25c04d88b8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61500618"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508012"
 ---
-# <a name="configure-logging-settings"></a>Günlüğe kaydetme ayarlarını yapılandırın
+# <a name="configure-logging-settings"></a>Günlük ayarlarını yapılandırma
 
-Şirket portalı uygulaması, Microsoft Intune uygulama ve Intune ile yönetilen uygulamaların kayıt uygulama eylemleri bildirmek için günlüğe kaydetme ayarlarını yapılandırın. Destek ekibinizin, hiç olmadığı kadar uygulama bir sorunla karşılaşabilirsiniz ve bu rapor, daha fazla ayrıntı için bu günlükleri incelenecektir. 
+Şirket Portalı uygulama, Microsoft Intune uygulama ve Intune tarafından yönetilen uygulamaların uygulama eylemlerini kaydetmesine izin vermek için günlük ayarlarınızı yapılandırın. Uygulamada bir sorunla karşılaşırsanız ve raporu raporlarsa, destek ekibiniz daha fazla ayrıntı için bu günlükleri gözden geçirir. 
 
 > [!NOTE]
-> Destek ekibinizin gönderdiğiniz günlükler e-posta adresinizi içerecektir.  
+> Destek ekibinize göndereceğiniz Günlükler e-posta adresinizi de içerecektir.  
 
-## <a name="configure-company-portal-logging"></a>Şirket portalı günlük tutmayı yapılandırma
-Ayrıntılı günlük kaydı, Şirket portalı uygulamasında gerçekleştirdiğiniz her eylem kaydeder. Bu, Cihazınızda varsayılan olarak etkindir. Şirket portalı'nda oturum kapatma ayrıntılı etkinleştirmek için:  
+## <a name="configure-company-portal-logging"></a>Şirket Portalı günlüğünü yapılandırma
+Ayrıntılı günlük kaydı, Şirket Portalı uygulamasında gerçekleştirmeniz gereken her eylemi kaydeder. Bu, cihazınızda varsayılan olarak etkinleştirilmiştir. Ayrıntılı günlük kaydı kapatmak için Şirket Portalı:  
 
 1. Şirket Portalı uygulamasında oturum açın.
-2. Dokunun **ayarları**.
-3. Yanındaki **ayrıntılı günlük kaydı**, anahtara çevirme **kapalı**.
+2. **Ayarlar**' a dokunun.
+3. **Ayrıntılı günlük kaydı**' nın yanındaki anahtarı **kapalı**çevirin.
 
-## <a name="configure-microsoft-intune-app-logging"></a>Microsoft Intune Uygulama günlüğünü yapılandırma
-Microsoft Intune uygulamada, günlük ayrıntı düzeyini yapılandırabilirsiniz. Varsayılan olarak bir düzey **önemli**. Günlük kaydı ayrıntılarını ayarlamak için:  
+## <a name="configure-microsoft-intune-app-logging"></a>Microsoft Intune uygulama günlüğünü yapılandırma
+Microsoft Intune uygulamasında, günlük ayrıntılarının düzeyini yapılandırabilirsiniz. Düzey varsayılan olarak **önemli**olur. Günlüğe kaydetme ayrıntılarını ayarlamak için:  
 
 1. Microsoft Intune uygulamasını açın.  
-2. Dokunun **ayarları**.  
-3. Altında **günlük düzeyi ayrıntısı**seçin **ayrıntılı** kaydedilen ayrıntı düzeyini artırmak veya **kapalı** günlüğü kapatmak için.  
+2. **Ayarlar**' a dokunun.  
+3. **Günlük düzeyi ayrıntısı**altında, kaydedilen ayrıntıların düzeyini artırmak için **verbose** ' i seçin veya günlüğü kapatmak için **Kapat** ' ı seçin.  
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 

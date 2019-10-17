@@ -9,6 +9,7 @@ ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aefde274ec7ca925d45dd101ee0ebef1083f7f19
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f8aa54c5ed2a5121246f917a5b5306fab5d89edc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504012"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508424"
 ---
 # <a name="resolve-access-point-restrictions"></a>Erişim noktası kısıtlamalarını çözme
 

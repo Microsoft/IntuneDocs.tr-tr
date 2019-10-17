@@ -9,6 +9,7 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328ec3111aae5f8363f2743d423a56eafc47d765
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 289d99603314be7c1097d54d59d4a0e90cae0bed
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546263"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508339"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows cihazınızı el ile eşitleme
 
-Uygulama yükleme hızı istediğiniz kadar yüksek değilse el ile eşitlemeyi başlatın. El ile eşitlemeler, en son güncelleştirmeler ve iletişimler için cihazınızı Intune’a bağlanmaya zorlar. Cihaz eşitlemesi tamamlandıktan sonra yükleme hızı artabilir.
+Uygulama yükleme hızı ideal olduğunda, el ile bir cihaz eşitlemesi başlatın. El ile eşitlemeler, cihazınızı en son güncelleştirmeler ve iletişimler için Intune 'a bağlanmaya zorlar. Cihaz eşitlemesi tamamlandıktan sonra yükleme hızı artabilir.
 
 Intune; Şirket Portalı uygulamasından, masaüstü görev çubuğu ve Başlat menüsünden ve cihazın Ayarlar uygulamasından el ile eşitlemeyi destekler. Şirket Portalı uygulaması işlevselliği, Creator’s Update (1703) ve üzerini çalıştıran Windows 10 cihazlarda desteklenir. 
 
@@ -104,7 +105,7 @@ Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ve Windows Phone 8.1 c
 
     ![Cihaz yönetimi için şirket adı seçme](./media/win10pc-sync-4-tap-com-name.png)
 
-3. **Eşitle**’ye tıklayın. Eşitleme tamamlanana kadar düğme devre dışı kalır.
+3. **Eşitle**' ye tıklayın. Eşitleme tamamlanana kadar düğme devre dışı kalır.
 
     ![Eşitleme düğmesini seçme](./media/win10pc-sync-5-tap-sync.png)  
 
@@ -133,9 +134,9 @@ Bu yönergeler, Windows 10 Yıldönümü Güncelleştirmesi (RS1 olarak da bilin
 2. **Hesaplar** > **İş Erişimi**’ni seçin.  
     ![Hesaplar bağlantısının vurgulandığı HoloLens ayarlar uygulamasının ekran görüntüsü](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-3. Bağlı hesabınızı ve ardından **Eşitle**’yi seçin.  ![Eşitle düğmesinin vurgulandığı HoloLens ayarlar uygulamasının ekran görüntüsü](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+3. **Eşitleme**> bağlı hesabınızı seçin.  ![Ekran görüntüsü HoloLens ayarları uygulaması, eşitleme düğmesi vurgulanmış @ no__t-2  
 
-### <a name="windows-phone-81"></a>Windows Phone 8.1
+### <a name="windows-phone-81"></a>WVPN profillerinidows Phone 8.1
 
 1. **Tüm uygulamalar** > **Ayarlar** > **çalışma alanı**’na gidin.
 

@@ -1,7 +1,7 @@
 ---
-title: Kişisel verileri görüntüleme ve düzeltme
+title: Görünüm ve doğru kişisel veriler
 titleSuffix: Microsoft Intune
-description: Kişisel verileri görüntüleme ve düzeltme hakkında bilgi edinin.
+description: Kişisel verileri görüntülemeyi ve düzeltmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
@@ -17,40 +18,40 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b6ca291f55511be9e88b0ff898d9383691542bf
-ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
+ms.openlocfilehash: 913bf3103254abdd73913e0efc81da3a38ca991b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310896"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504261"
 ---
-# <a name="view-and-correct-personal-data"></a>Kişisel verileri görüntüleme ve düzeltme
+# <a name="view-and-correct-personal-data"></a>Görünüm ve doğru kişisel veriler
 
-Intune yöneticileri, bazı kişisel verileri erişim izinlerine göre görüntüleyebilir, ancak yalnızca son kullanıcılar cihazının kişisel verilerini değiştirebilir.
+Intune yöneticileri, erişim izinlerine bağlı olarak bazı kişisel verileri görüntüleyebilir ancak yalnızca son kullanıcılar kendi cihazlarındaki kişisel verileri değiştirebilir.
 
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-dsr-and-stp-note.md)]
 
 
-## <a name="view-personal-data"></a>Kişisel verileri görüntüle
+## <a name="view-personal-data"></a>Kişisel verileri görüntüleme
 
-Yöneticiler, Son Kullanıcı kişisel bilgilerini Intune kullanıcı arabirimindeki çeşitli dikey pencerelerde görebilir. Aşağıdaki makalelerde, yöneticilerin hangi bilgileri yaptığını ve erişimi yok açıklanmaktadır:
-- Intune 'da [cihaz ayrıntılarına bakın](../remote-actions/device-inventory.md) son kullanıcının cihazına ilişkin ayrıntıları nasıl gözden geçirebileceğinizi açıklar.
-- [Uygulama bilgilerini ve atamalarını izleme,](../apps/apps-monitor.md) son kullanıcının cihazında yüklü olan uygulamalarla ilgili ayrıntıları nasıl görebileceğinizi açıklar.
-- [Cihazımı kaydettiğimde şirketim hangi bilgileri görebilir? makalesi](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) , son kullanıcılara, şirketlerinin görebileceği ve görebilecekleri verilerin bir listesini sağlar. Kullanıcılarınıza ne tür verileri topladığınızı ve neden topladığınızı açıkça söylemek en iyisidir. Bu makale, saydamlığın ilk adımı olabilir.
+Yöneticiler, Intune kullanıcı arabirimindeki çeşitli dikey pencerelerde son kullanıcı kişisel bilgilerini görebilir. Aşağıdaki makaleler, yöneticilerin hangi bilgileri görüp hangilerini göremediğini açıklar:
+- Intune’daki [Cihaz ayrıntılarını görme](../remote-actions/device-inventory.md) makalesi, bir son kullanıcı cihazındaki ayrıntıları nasıl gözden geçirebileceğinizi açıklar.
+- [Uygulama bilgilerini ve atamalarını izleme](../apps/apps-monitor.md) makalesi, bir son kullanıcı cihazında yüklü uygulamalar hakkında ayrıntıları nasıl görebileceğinizi açıklar.
+- [Cihazımı kaydettiğimde şirketim hangi bilgileri görebilir?](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) makalesi, son kullanıcılara şirketlerinin görebileceği ve göremeyeceği verilerin bir listesini sağlar. Kullanıcılara ne tür veriler toplayacağınızı ve bunları neden toplayacağınızı açıkça anlatmak en iyi yöntemdir. Bu şeffaflığın sağlanması için bu makale ilk adımınız olabilir.
 
 ### <a name="who-can-view-the-data"></a>Verileri kim görebilir?
 
-Microsoft, müşteri verilerine erişimi yönetmek için katı denetimleri kullanır, anahtar görevlerinin tamamı için gereken en düşük erişim düzeyini ve artık gerekli olmadığında erişimi iptal eder. 
+Microsoft, müşteri verilerine erişimi yönetmek için katı denetimler kullanır; önemli görevleri tamamlamaya yetecek en düşük erişim düzeyini verip ihtiyaç kalmadığında erişimi iptal eder. 
 
-Rol tabanlı yönetim denetimi (RBAC) kullanarak Son Kullanıcı kişisel verilerine erişimi güvenli hale getirebilirsiniz ve denetleyebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune Ile RBAC](../fundamentals/role-based-access-control.md).
+Rol tabanlı yönetim denetimini (RBAC) kullanarak son kullanıcının kişisel verilerine erişimi güvenlik altına alabilir ve denetleyebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Intune ile RBAC](../fundamentals/role-based-access-control.md).
 
-Çevrimiçi hizmet koşulları ve [Microsoft Online Services gizlilik bildirimi](https://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409)' ni okuyarak Microsoft veri uygulamaları hakkında daha fazla bilgi edinebilirsiniz. 
+Online Services Hükümleri ve [Microsoft Online Services Gizlilik Bildirimi](https://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409)’ni okuyarak Microsoft veri uygulamaları hakkında daha fazla bilgi edinebilirsiniz. 
 
-## <a name="correct-end-user-personal-data"></a>Son Kullanıcı kişisel verilerini doğru
+## <a name="correct-end-user-personal-data"></a>Son kullanıcı kişisel bilgilerini düzeltme
 
-Yöneticiler cihaz veya uygulamaya özgü bilgileri güncelleştiremez. Bir son kullanıcı, kişisel verileri (Cihaz adı gibi) düzeltmek isterse, bunu doğrudan cihazlarından yapması gerekir. Bu değişiklikler, Intune 'a bir dahaki sefer bağlandıklarında eşitlenir.
+Yöneticiler, cihaza veya uygulamaya özgü bilgileri güncelleştiremez. Bir son kullanıcı herhangi bir kişisel veriyi düzeltmek istiyorsa (örneğin cihaz adı), bunu doğrudan kendi cihazında yapmalıdır. Bu tür değişiklikler, kullanıcı Intune’a bağlandığı zaman eşitlenir.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Intune 'da kişisel verileri [denetleme, dışarı aktarma veya silme](privacy-data-audit-export-delete.md) hakkında bilgi edinin.
+Intune’da kişisel verileri [denetleme, dışarı aktarma ve silme](privacy-data-audit-export-delete.md) hakkında bilgi edinin.

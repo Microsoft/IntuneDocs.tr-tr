@@ -1,7 +1,7 @@
 ---
-title: Intune 'da veri depolama ve işleme
+title: Intune’da veri depolama ve işleme
 titleSuffix: Microsoft Intune
-description: Kişisel verilerin Intune 'da nasıl depolandığını ve işlendiğini öğrenin.
+description: Intune’da kişisel verilerin nasıl depolanıp işlendiğini öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: edb07842-6a16-482e-8c1d-541a29e169a8
@@ -17,58 +18,58 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c9a8bd5888ab0977d1ca553d059c1e96cccda75
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 07a9232203c7d93eb1b9e81b962d2369e77b7421
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306888"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509054"
 ---
-# <a name="data-storage-and-processing-in-intune"></a>Intune 'da veri depolama ve işleme
+# <a name="data-storage-and-processing-in-intune"></a>Intune’da veri depolama ve işleme
 
-Intune [verileri topladıktan](privacy-data-collect.md)sonra bu verilerin depolanması ve işlenmesi aşağıda ayrıntılı olarak devam eder.
+Intune [verileri topladıktan](privacy-data-collect.md) sonra, verilerin depolanması ve işlenmesi aşağıda ayrıntılı olarak açıklanmıştır.
 
 ## <a name="storing-personal-data"></a>Kişisel verileri depolama
 
-Toplanan tüm telemetri olmayan veriler, Intune hizmeti aracılığıyla işlenir ve aşağıdaki depolama konumlarından bir veya daha fazlasına depolanır: 
+Toplanan ve telemetri olmayan tüm veriler, Intune hizmetinde işlenir ve aşağıdaki depolama konumlarından bir veya birkaçında depolanır: 
 
 - SQLAzure 
 - Güvenilir Koleksiyonlar (Service Fabric)  
-- Azure Storage 
+- Azure depolama 
 
-İzleme için anahtar olan telemetri (hizmet günlükleri, performans günlükleri, hatalar vb.) Microsoft 'un telemetri veri depolarına gönderilir.
+İzlemenin ve düzgün çalışan bir hizmet sağlamanın anahtarı olan telemetri (hizmet günlükleri, performans günlükleri, hatalar vb.) Microsoft’un telemetri veri depolarına gönderilir.
 
 ### <a name="storage-locations"></a>Depolama konumları
 
-Microsoft, Intune hizmetlerini dünya çapındaki birçok bölgede sunar ve çalışır. Intune, müşteri verileri için yönetici tarafından yapılan depolama konumu eleimlerini uyar.
+Microsoft, Intune hizmetlerini dünya çapında birçok bölgede sunmakta ve yönetmektedir. Intune, yönetici tarafından Müşteri Verileri için yapılan depolama konumu seçimlerine saygı duyar.
 
 Daha fazla bilgi için bkz. [verilerinizin nerede bulunduğu](https://www.microsoft.com/trust-center/privacy/data-location) yer.
 
-### <a name="personal-data-retention"></a>Kişisel veri saklama
+### <a name="personal-data-retention"></a>Kişisel verilerin saklanması
 
 Genel olarak, kişisel veriler, Kullanıcı Intune yönetiminden kaldırıldıktan sonra 30 gün boyunca Intune tarafından korunur.
 
 Intune kullanımının bir parçası olarak toplanan telemetri verileri en fazla 30 gün boyunca tutulur.
 
-Denetim günlükleri bir yıla kadar tutulur.
+Denetim günlükleri ise bir sene boyunca saklanabilir.
 
-## <a name="processing-personal-data"></a>Kişisel verileri işleme
+## <a name="processing-personal-data"></a>Kişisel verilerin işlenmesi
 
-Intune, kişisel verileri ISO sertifikalı sistemlerle işler. Daha fazla bilgi için bkz. [hizmet güveni portalı](https://www.microsoft.com/en-us/TrustCenter/stp).
+Intune, kişisel verileri ISO sertifikalı sistemlerle işler. Daha fazla bilgi için bkz. [Hizmet Güveni Portalı](https://www.microsoft.com/en-us/TrustCenter/stp).
 
 ### <a name="profiling-and-marketing"></a>Profil oluşturma ve pazarlama
 
-Microsoft Intune profil oluşturma veya pazarlama amaçları için hizmeti sağlamanın bir parçası olarak toplanan kişisel verileri kullanmaz. 
+Microsoft Intune, hizmet sağlama işleminin parçası olarak toplanan hiçbir kişisel veriyi profil oluşturma veya pazarlama amacıyla kullanmaz. 
 
-### <a name="restrict-processing-of-personal-data"></a>Kişisel verilerin işlenmesini kısıtla
+### <a name="restrict-processing-of-personal-data"></a>Kişisel verilerin işlenmesini kısıtlama
 
-Bir kullanıcının kişisel verilerinin işlenmesini kısıtlamak için, kullanıcılar hesabını şu şekilde silebilirsiniz:
-1. Kullanıcının kişisel verilerinin elektronik kopyasını dışarı aktarma
-    - accounts
+Bir kullanıcıya ait kişisel verilerin işlenmesini kısıtlamak için kullanıcı hesabını aşağıdaki yollarla silebilirsiniz:
+1. Kullanıcının aşağıdakiler dahil olmak üzere kişisel verilerinin elektronik kopyasını dışarı aktararak
+    - hesaplar
     - hizmet verileri
-    - ilişkili Günlükler
-2. Kullanıcının hesabı ve Intune 'dan ilişkili veriler siliniyor.
+    - ilişkili uygulamalar
+2. Kullanıcının hesabını ve ilişkili verilerini Intune’dan silerek.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Intune 'un kişisel verileri nasıl [güvenlik altına aldığı ve paylaştığı](privacy-data-secure-share.md) hakkında daha fazla bilgi edinin. 
+Intune’un verileri nasıl [güvenlik altına aldığı ve paylaştığı](privacy-data-secure-share.md) hakkında daha fazla bilgi edinin. 

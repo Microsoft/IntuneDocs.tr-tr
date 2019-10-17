@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 5daa9f6b9f50c561876818e75e56c9a948a8f955
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546610"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508070"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS cihazınızdaki yönetilen uygulamaları kullanma
 
@@ -45,12 +46,12 @@ Yönetilen uygulamaları birkaç farklı yöntemle edinebilirsiniz:
 Şirketinizin destek birimi bazen, yüklediğiniz bir uygulama için birden çok lisans satın almış olabilir. Apple Volume Purchase Program sözleşmesini kabul etmenizi isteyen bir ileti görürseniz bu normaldir, kabul edebilirsiniz. Kabul etmediğiniz takdirde uygulamayı yükleyemezsiniz.
 
 ## <a name="available-apps"></a>Kullanılabilir uygulamalar   
- Kuruluşunuz sizin için işe veya okula uygun ve kullanışlı uygulamalar seçer. Bu uygulamalar, şirket Portalı'nda bulabilirsiniz yalnızca olanlardır.   
+ Kuruluşunuz, iş veya okul ortamınızda uygun ve yararlı olan uygulamaları seçer. Bu uygulamalar Şirket Portalı bulacağınız tek alanlardır.   
 
- Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, iOS için Şirket portalı uygulamasını kullanıyorsanız, iOS uygulamaları, ancak değil Android uygulamaları için erişim gerekir.   
+ Uygulamalar, cihaz türüne bağlı olarak sizin için de kullanılabilir hale getirilir. Örneğin, iOS için Şirket Portalı uygulamasını kullanıyorsanız iOS uygulamalarına erişim sahibi olursunuz, ancak Android uygulamalarına erişemezsiniz.   
 
-## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek   
- Bir uygulama gerekir, ancak şirket portalında görmüyorum varsa, isteyebilirsiniz. İletişim ayrıntılarını bulun, **Yardım Masası** Şirket portalı uygulamasının **Destek** sekmesi. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).   
+## <a name="request-an-app-for-work-or-school"></a>İş veya okul için bir uygulama isteyin   
+ İhtiyacınız olan bir uygulama varsa, ancak Şirket Portalı görmüyorsanız, isteyebilirsiniz. Şirket Portalı uygulamasının **destek** sekmesinde **yardım masasına** ait iletişim ayrıntılarını bulun. Aynı iletişim bilgilerini [Şirket portalı Web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980)bulacaksınız.   
  
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?  

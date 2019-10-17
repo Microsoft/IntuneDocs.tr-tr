@@ -1,6 +1,6 @@
 ---
-title: Intune Şirket portalı macOS cihazınızın kaydını silme | Microsoft Docs
-description: Şirket portalı'ndan bir macOS cihaz kaydını nasıl sileceğiniz açıklanır
+title: MacOS cihazınızın Intune Şirket Portalı kaydını silme | Microsoft Docs
+description: MacOS cihazının Şirket Portalı kaydını silme işlemini açıklar
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: dd79fc4d-6265-4dd0-87fb-8ab66b1cf692
 searchScope:
@@ -18,24 +19,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e7290820134ffba2638c313adb4297d7da29c3b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d4d6ecdc84371c0f485fc1cf26065ed681f29804
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545946"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501932"
 ---
-# <a name="unenroll-your-macos-device-from-company-portal"></a>Şirket portalı macOS cihazınızın kaydını silme
+# <a name="unenroll-your-macos-device-from-company-portal"></a>MacOS cihazınızın Şirket Portalı kaydını kaldırma
 
 MacOS cihazınızın Intune kaydını sildiğinizde, cihazınız artık şirket kaynaklarına erişemez.
 
 macOS cihazınızın yönetim kaydını silmek için bu adımları izleyin:
 
-1. MacOS için şirket portalında oturum açın.
-2. Git **cihazları** ve kaydını kaldırmak istediğiniz cihazı seçin.
+1. MacOS için Şirket Portalı oturum açın.
+2. **Cihazlar** ' a gidin ve kaydını kaldırmak istediğiniz cihazı seçin.
 
-3. Üç nokta menüsü simgesi seçin > **Kaldır**.
-4. Bir onay iletisi görüntülenir. Seçin **Kaldır** cihazınızın kaydını silmek için. 
+3. **Kaldırmak**> üç nokta menü simgesini seçin.
+4. Bir onay iletisi görüntülenir. Cihazınızın kaydını **kaldırmak Için kaldır** ' ı seçin. 
 
 Cihazınızı Intune’dan kaldırdığınızda şunlar olur:
 

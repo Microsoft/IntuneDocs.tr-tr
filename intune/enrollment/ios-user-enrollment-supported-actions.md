@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/2/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acf1112f96b28b156b3c4857485de30d7ad553ef
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71955436"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505407"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple Kullanıcı kaydıyla desteklenen Intune eylemleri ve seçenekleri
 
@@ -39,7 +40,7 @@ Kullanıcı kayıt cihazlarında, herhangi bir parola ayarını yapılandırırs
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Yönetici uzak cihaz eylemleri ve seçenekleri
 Yöneticiler, Kullanıcı kayıt cihazlarında aşağıdaki eylemleri ve seçenekleri gerçekleştirebilir:
-- Bırakmak
+- Devre dışı bırakma
 - Sil
 - Uzaktan Kilitleme
 - Eşitleme
@@ -75,7 +76,7 @@ Aşağıdaki kısıtlamalar desteklenir:
 - Ekran görüntülerini engelle
 - Kurumsal kitap yedeklemesini engelle
 - Kurumsal kitap meta veri eşitlemesini engelle
-- Şifrelenmiş yedekleme gerektir
+- Şifreli yedekleme iste
 - İzleme bilek algılama gerektir
 - Siri engelle
 - Cihaz kilitliyken Siri 'i engelle

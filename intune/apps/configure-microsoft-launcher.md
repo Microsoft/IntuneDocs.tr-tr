@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469f969b6429cc39b5a8b8d3c041b96fc773c9ec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731189"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497969"
 ---
 # <a name="configure-microsoft-launcher"></a>Microsoft Launcher’ı yapılandırma
 
@@ -59,7 +60,7 @@ Aşağıdaki tabloda, Microsoft başlatıcısı kullanılabilir yapılandırma a
 |    Kayıt türü    |    Dize     |    Varsayılanını    |    Bu ilkenin uygulanması gereken kayıt türünü ayarlamanıza olanak sağlar. Şu anda **varsayılan** değer **CorporateOwnedBuisnessOnly**' e başvurur. Var olan başka bir desteklenen kayıt türü yok.        JSON anahtar adı: management_mode_key        |
 |    Giriş ekranı uygulama siparişi kullanıcı değişikliğine Izin verildi    |    Boole değeri    |    True    |    **Giriş ekranı uygulama sırası** ayarının Son Kullanıcı tarafından değiştirilip değiştirilemeyeceğini belirtmenize olanak tanır.<ul><li>**True**olarak ayarlanırsa, ilkede tanımlanan uygulama sırası yalnızca ilk dağıtım için zorlanır. Daha sonra, Kullanıcı yapmış olabileceği değişikliklere göre ilke zorlanmaz.</li><li>**False**olarak ayarlanırsa, uygulama sırası her eşitlemede zorlanır.</li></ul><br>**Note:** Giriş ekranı uygulama sırası yalnızca JSON Düzenleyicisi aracılığıyla yapılandırılabilir.<br><br>JSON anahtar adı:<br>`com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed`    |
 |    Izgara boyutunu ayarla    |    Dize    |    Otomatik    |    Ana ekranda konumlandırılmış uygulamaların kılavuz boyutunu ayarlamanıza olanak sağlar. Kılavuz boyutunu tanımlamak için uygulama satır ve sütun sayısını şu biçimde ayarlayabilirsiniz: `columns;rows`. Kılavuz boyutunu tanımlarsanız, giriş ekranındaki bir satırda gösterilecek en fazla uygulama sayısı, ayarladığınız satır sayısı ve giriş ekranındaki bir sütunda gösterilecek en fazla uygulama sayısı, ayarladığınız sütun sayısı olacak şekilde değişir.<br><br>        JSON anahtar adı:<br>`com.microsoft.launcher.HomeScreen.GridSize`    |
-|    Cihaz duvar kağıdını ayarla    |    Dize    |    Değer    |    Duvar kağıdı olarak ayarlamak istediğiniz görüntünün URL 'sini girerek tercih ettiğiniz bir duvar kağıdını ayarlamanıza olanak sağlar.<br><br>JSON anahtar adı:<br>`com.microsoft.launcher.Wallpaper.URL`    |
+|    Cihaz duvar kağıdını ayarla    |    Dize    |    değer    |    Duvar kağıdı olarak ayarlamak istediğiniz görüntünün URL 'sini girerek tercih ettiğiniz bir duvar kağıdını ayarlamanıza olanak sağlar.<br><br>JSON anahtar adı:<br>`com.microsoft.launcher.Wallpaper.URL`    |
 |    Cihaz duvar kağıdı kullanıcı değişikliğine Izin verildi    |    Bool    |    True    |    Cihazın duvar kağıdını ayarla ayarının Son Kullanıcı tarafından değiştirilip değiştirilemeyeceğini belirtmenize olanak tanır.<ul><li>**True**olarak ayarlanırsa, ilkedeki duvar kağıdı yalnızca ilk dağıtım için zorunlu kılınır. Daha sonra, Kullanıcı yapmış olabileceği değişikliklere göre ilke zorlanmaz.</li><li>**False**olarak ayarlanırsa, bu duvar kağıdı her eşitlemede zorlanır.</li></ul><br>JSON anahtar adı:<br>`com.microsoft.launcher.Wallpaper.URL.UserChangeAllowed`        |
 |    Akış etkinleştir    |    Boole değeri    |    True    |    Kullanıcı ana ekranda sağa doğru geldiğinde, cihazda Başlatıcı akışını etkinleştirmenizi sağlar.<ul><li>**True**olarak ayarlanırsa akış etkinleştirilir.</li><li>**False**olarak ayarlanırsa akış devre dışı bırakılır.</li></ul><br>JSON anahtar adı:<br>`com.microsoft.launcher.Feed.Enabled`    |
 |    Akış etkinleştirme kullanıcı değişikliğine Izin verildi    |    Boole değeri    |    True    |     **Akış etkinleştirme** ayarının Son Kullanıcı tarafından değiştirilip değiştirilemeyeceğini belirtmenize olanak tanır.<ul><li>**True**olarak ayarlanırsa, akış yalnızca ilk dağıtım için zorlanır. Daha sonra, Kullanıcı yapmış olabileceği değişikliklere göre ilke zorlanmaz.</li><li>**False**olarak ayarlanırsa, akış her eşitlemede zorlanır.</li></ul><br>JSON anahtar adı: `com.microsoft.launcher.Feed.Enabled.UserChangeAllowed`    |

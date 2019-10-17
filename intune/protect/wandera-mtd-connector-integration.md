@@ -9,17 +9,18 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a560dc79d3c03f52b8e9389c3e47e3e256ee58
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: a548b1e1728928ca74ca7207b7e60d91ba5fc8aa
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306671"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503587"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Wandera Mobile Threat Protection 'ı Intune ile tümleştirme  
 
@@ -29,11 +30,11 @@ Wandera Mobile Threat Defense çözümünü Intune ile bütünleştirmek için a
 
 Wandera 'yı Intune ile tümleştirme işlemine başlamadan önce, aşağıdaki önkoşulların yerine geldiğinden emin olun:
 - Microsoft Intune aboneliği  
-- Aşağıdaki izinleri vermek için yönetici kimlik bilgilerini Azure Active Directory:  
-  - Oturum açın ve kullanıcı profilini okuyun  
-  - Oturum açmış kullanıcı olarak dizine erişin  
+- Şu izinleri vermek için Azure Active Directory yönetici kimlik bilgileri:  
+  - Oturum açma ve kullanıcı profilini okuma  
+  - Oturum açmış kullanıcı olarak dizine erişim  
   - Dizin verilerini okuma  
-  - Cihaz bilgilerini Intune 'a gönderme  
+  - Intune’a cihaz bilgilerini gönderme  
 
 - Wandera aboneliği:
   - EMM bağlantısı için lisanslı bir veya daha fazla Wandera hesabı  

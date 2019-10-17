@@ -1,5 +1,5 @@
 ---
-title: JAMF cihazları için cihaz uyumluluk ilkesi
+title: Jamf cihazları için cihaz uyumluluk ilkesi
 titleSuffix: Microsoft Intune
 description: JAMF tarafından yönetilen cihazların güvenliğini sağlamaya yardımcı olmak için Azure Active Directory Koşullu erişimle Microsoft Intune uyumluluk ilkeleri kullanın.
 keywords: ''
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74ee1eaf0581c4500830514fa9ad272f0de09d3b
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71813986"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502457"
 ---
-# <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>JAMF Pro ile yönetilen Mac 'Lere uygunluğu zorla
+# <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
 
 [JAMF Pro 'Yu Intune ile tümleştirdiğinizde](conditional-access-integrate-jamf.md), Kurumsal gereksinimlerinize göre Mac cihazlarınızda uyumluluğu zorlamak Için koşullu erişim ilkelerini kullanabilirsiniz.  Bu makale aşağıdaki görevlerde size yardımcı olur:  
 
@@ -34,7 +35,7 @@ ms.locfileid: "71813986"
  
 Bu makaledeki yordamlar hem Intune hem de JAMF Pro konsollarına erişim gerektirir.
 
-## <a name="set-up-device-compliance-policies-in-intune"></a>Intune 'da cihaz uyumluluk ilkelerini ayarlama
+## <a name="set-up-device-compliance-policies-in-intune"></a>Intune'da cihaz uyumu politikaları oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz uyumluluğu** > **ilkeleri**' ne gidin. 
 2. Daha önce oluşturulmuş bir ilke kullanıyorsanız, konsolda Bu ilkeyi seçin ve sonra bu yordamın sonraki adımına gidin.  
@@ -48,9 +49,9 @@ Bu makaledeki yordamlar hem Intune hem de JAMF Pro konsollarına erişim gerekti
 Dağıttığınız ilkeler, atanan kullanıcılar tarafından kullanılan cihazları hedefleyin. Bu cihazlar uyumluluk için değerlendirilir. Uyumlu cihazlar, Azure AD 'de "*cihazın uyumlu olarak Işaretlenmesini gerektir*" ayarı için uyumlu olarak işaretlenir.  
 
 > [!NOTE]
-> Intune, tam disk şifrelemenin uyumlu olmasını gerektirir.
+> Intune, uyumlu olmak için tam disk şifrelemesi gerektirir.
 
-## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>JAMF Pro 'da macOS için Şirket Portalı uygulamasını dağıtma
+## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Jamf Pro'da macOS için Şirket Portalı uygulamasını dağıtma
 
 Intune Şirket Portalı dağıtmak için JAMF Pro 'da bir ilke oluşturun. Bu ilke, JAMF Self Service 'te kullanılabilmesi için şirket portalı uygulamasını dağıtır. Bu ilkeyi, kullanıcıların Azure AD 'ye cihaz kaydedebilmesi için JAMF Pro 'da ilke oluşturmadan önce oluşturun.  
 
@@ -64,22 +65,22 @@ Aşağıdaki yordamı gerçekleştirmek için bir macOS cihazına ve JAMF Pro po
 
 3. MacOS için Şirket Portalı uygulamayla yeni bir paket oluşturun ve ardından **Kaydet**' i seçin.
 
-4. @No__t **bilgisayarlar**' ı açın ve sonra **Yeni** **' yi seçin**.
+4. **Bilgisayarlar** > **İlkeler** ve ardından **Yeni**’yi seçin.
 
-5. İlke ayarlarını yapılandırmak için **genel** yükü kullanın. Bu ayarlar şu şekilde olmalıdır:
-   - Tetikleyici: **kayıt tamamlamayı** ve **yinelenen iadeyi** seçin
-   - Yürütme sıklığı: **bilgisayar başına bir kez** seçin
+5. **Genel** yükünü kullanarak ilkenin ayarlarını yapılandırın. Bu ayarlar şöyle olmalıdır:
+   - Tetikleyici: **Kayıt Tamamlandı** ve **Yinelenen İade Etme**'yi seçin
+   - Yürütme Sıklığı: **Bilgisayar başına bir kez**'i seçin
 
-6. **Paketler** yükünü seçin ve **Yapılandır**' a tıklayın.
+6. **Paketler** yükünü seçin ve **Yapılandır**'ı tıklayın.
 
-7. Şirket Portalı uygulamayla paketi seçmek için **Ekle** ' ye tıklayın.
+7. Şirket Portalı uygulamasıyla paketi seçmek için **Ekle**'yi tıklayın.
 
 8. **Eylem** açılır menüsünden **yüklemeyi** seçin.
 9. Paket için ayarları yapılandırın.
 
 10. Şirket Portalı uygulamasının hangi bilgisayarlarda yüklenmesi gerektiğini belirtmek için **kapsam** sekmesini seçin. **Kaydet**’i seçin. İlke, seçilen tetikleyicinin bilgisayarda bir sonraki sefer gerçekleştiği sırada ve **genel** yükteki ölçütler karşılandığında kapsamlı cihazlarda çalışır.
 
-## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>Kullanıcıların cihazlarını Azure Active Directory kaydetmelerini sağlamak için JAMF Pro 'da bir ilke oluşturun  
+## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>Kullanıcıların cihazlarını Azure Active Directory'ye kaydetmesini sağlamak için Jamf Pro'da bir ilke oluşturma  
 
 JAMF Pro Self Service aracılığıyla macOS için [Şirket portalı dağıttıktan](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) sonra, bir kullanıcının CIHAZıNı Azure AD 'ye kaydeden JAMF Pro ilkesini oluşturabilirsiniz. 
 
@@ -92,11 +93,11 @@ Cihaz kaydı, bir cihaz kullanıcısının JAMF Self Service içinden Intune Şi
 
 1. JAMF Pro 'da **bilgisayarlar** > **ilkeleri**' ne gidin ve ardından cihaz kaydı için yeni bir ilke oluşturun.
 
-2. Tetikleyici ve yürütme sıklığı da dahil olmak üzere **Microsoft Intune tümleştirme** yükünü yapılandırın.
+2. Tetikleyici ve yürütme sıklığı da dahil olmak üzere **Microsoft Intune Tümleştirmesi** yükünü yapılandırın.
 
 3. **Kapsam** sekmesini seçin ve ardından ilkeyi hedeflenen tüm cihazlara kapsamını belirleyin.
 
-4. İlkeyi JAMF Self Service 'te kullanılabilir hale getirmek için **self servis** sekmesini seçin. İlkeyi **cihaz uyumluluk** kategorisine ekleyin. **Kaydet** düğmesine tıklayın.
+4. İlkeyi JAMF Self Service 'te kullanılabilir hale getirmek için **self servis** sekmesini seçin. İlkeyi **Cihaz Uyumluluğu** kategorisine ekleyin. **Kaydet**'e tıklayın.
 
 ## <a name="validate-intune-and-jamf-integration"></a>Intune ve JAMF tümleştirmesini doğrulama  
 
@@ -109,13 +110,13 @@ JAMF Pro ve Microsoft Intune arasındaki iletişimin başarılı olduğunu onayl
 JAMF Pro konsolundaki bağlantı testi başarısız olursa, JAMF yapılandırmasını gözden geçirin. 
 
 
-## <a name="removing-a-jamf-managed-device-from-intune"></a>JAMF ile yönetilen bir cihazı Intune 'dan kaldırma
+## <a name="removing-a-jamf-managed-device-from-intune"></a>Jamf ile yönetilen bir cihazı Intune’dan kaldırma
 
-**Tüm cihazlar** görünümünde **Sil** ' i seçerek JAMF Ile yönetilen bir cihazı Intune konsolundan kaldırabilirsiniz. Toplu cihaz silme, birden çok cihaz seçilerek ve **Sil**tıklatılarak etkinleştirilebilir.
+**Tüm cihazlar** görünümünde **Sil**’i seçerek Jamf tarafından yönetilen bir cihazı Intune konsolundan kaldırabilirsiniz. Toplu cihaz silme işlemi birden çok cihaz seçip **Sil**’e tıklayarak etkinleştirilebilir.
 
 JAMF [Pro belgelerinden JAMF ile yönetilen bir cihazı kaldırma](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)hakkında bilgi alın. Ek Yardım için [JAMF desteğiyle](https://www.jamf.com/support/) bir destek bileti de oluşturabilirsiniz. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Azure Active Directory Koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Azure Active Directory’de Koşullu Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 - [Azure Active Directory Koşullu erişim ile çalışmaya başlama](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

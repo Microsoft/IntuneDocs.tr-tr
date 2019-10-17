@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d31df7ba639f703c89345440b737c990949ccc9
-ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310884"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503653"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Intune Exchange Connector ile ilgili yaygın sorunları çözme
  
@@ -35,7 +36,7 @@ Exchange ActiveSync cihazı Exchange 'den keşfedildiğinde Exchange bağlayıc�
 
 - Kullanıcıların bir Intune lisansına sahip olduğundan emin olun. Aksi takdirde, Exchange Connector cihazlarını bulamaz.  
 
-- Kullanıcının birincil SMTP adresi Azure Active Directory (Azure AD) içindeki Kullanıcı asıl adından (UPN) farklıysa, Exchange Connector bu kullanıcı için herhangi bir cihaz bulamaz. Sorunu çözmek için birincil SMTP adresini çözün.  
+- Kullanıcının birincil SMTP adresi Azure Active Directory (Azure AD) içindeki Kullanıcı asıl adından (UPN) farklıysa, Exchange Connector bu kullanıcı için herhangi bir cihaz bulamaz. Bu sorunu çözmek için birincil SMTP adresini düzeltin.  
 
 - Ortamınızda hem Exchange 2010 hem de Exchange 2013 posta kutusu sunucusuna sahipseniz, Exchange bağlayıcısının bir Exchange 2013 Istemci erişim sunucusuna (CAS) işaret etmenizi öneririz. Exchange Connector bir Exchange 2010 CA 'larla iletişim kuracak şekilde ayarlandıysa Exchange Connector, Exchange 2013 ' deki hiçbir Kullanıcı cihazını bulamaz.  
 

@@ -1,5 +1,5 @@
 ---
-title: Power BI ile OData akışından bir Intune raporu oluşturma
+title: OData akışından Power BI ile bir Intune raporu oluşturma
 titleSuffix: Microsoft Intune
 description: Power BI Desktop kullanarak Intune Veri Ambarı API’sinden etkileşimli bir filtre ile ağaç harita görselleştirmesi oluşturun.
 keywords: Intune Veri Ambarı
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730225"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490481"
 ---
-# <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Power BI ile OData akışından bir Intune raporu oluşturma
+# <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>OData akışından Power BI ile bir Intune raporu oluşturma
 
 Bu makalede, kullanıcıların etkileşimli bir filtre Power BI Desktop kullanarak Intune verilerinizin ağaç Haritası görselleştirmesinin nasıl oluşturulacağı açıklanmaktadır. Örneğin, CFO, cihazların genel dağıtımının şirkete ait cihazlar ve kişisel cihazlar arasında nasıl Karşılaştırıldığı hakkında bilgi alabilir. Bu ağaç harita, toplam cihaz türü sayısı hakkında bilgi sağlar. Kaç tane iOS, Android ve Windows cihazın şirkete ait veya kişisel cihaz olduğunu gözden geçirebilirsiniz.
 

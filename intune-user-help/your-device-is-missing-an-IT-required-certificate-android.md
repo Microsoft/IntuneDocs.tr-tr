@@ -9,6 +9,7 @@ ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 25ec84946aec9562aedce12b4199269f8de06f76
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862134"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500021"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Kuruluşunuz için gereken eksik sertifikayı yükler  
 
@@ -42,7 +43,7 @@ Gerekli sertifikayı indirmeyi ve cihazınızın kaydedilmesini sağlamak için 
 Tarayıcı erişimini etkinleştirmek için bu adımları izleyin. Erişimi etkinleştirdikten sonra, Şirket Portalı uygun sertifikayı yükleyecek ve kayıt işlemine devam edecektir.    
 
 1. Şirket Portalı uygulamasında sağ köşeye gidin ve menüyü seçin.  
-2. Seçin **ayarları**.  
+2. **Ayarlar**’ı seçin.  
 3. **Tarayıcı erişimini etkinleştir** ' ın yanında **Etkinleştir**' i seçin.  
 4. Cihaz Yöneticisi ekranında **Etkinleştir**' i seçin. 
 

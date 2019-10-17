@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune için uygulama yapılandırma ilkeleri
 titleSuffix: ''
-description: Microsoft Intune ' de bir iOS veya Android cihazında uygulama yapılandırma ilkelerini kullanmayı öğrenin.
+description: Microsoft Intune ile bir iOS veya Android cihazında uygulama yapılandırma ilkelerini nasıl kullanacağınızı öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08017be16e4257ef0bd7bfb775197feaa20baf75
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 42d17c15a2a32f828c5715dfad51f34c5e531e76
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940378"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507555"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
@@ -48,10 +49,10 @@ Kullanılabilir yapılandırma parametreleri sonunda uygulamanın geliştiricile
 >
 > Android cihazlar için kayıt türü olarak yönetilen cihazlar ' ı kullanırken, yalnızca [yönetilen Google Play deposundan](https://play.google.com/work)uygulama görürsünüz, [Google Play deposundan](https://play.google.com/store/apps)değil. Android for Work (AfW) ve Android kurumsal olarak da bildiğiniz yönetilen Google Play Store, uygulama yapılandırmasını destekleyen uygulama sürümlerini içeren Iş profilindeki uygulamalardır.
 
-Bir uygulama yapılandırma ilkesini, [ekleme ve dışlama atamalarının](apps-inc-exl-assignments.md)bir birleşimini kullanarak bir son kullanıcı ve cihaz grubuna atayabilirsiniz. Bir uygulama yapılandırma ilkesi ekledikten sonra, uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladığınızda, ilkenin uygulandığı son kullanıcı [gruplarını](../fundamentals/groups-add.md) dahil etme ve hariç tutma seçeneğini belirleyebilirsiniz. Bir veya daha fazla grup eklemeyi seçtiğinizde, yerleşik grupları dahil etmek veya seçmek için belirli grupları seçebilirsiniz. Yerleşik gruplar **tüm kullanıcılar**, **tüm cihazlar**ve tüm **Kullanıcılar + tüm cihazlar**' ı kapsar.
+Bir uygulama yapılandırma ilkesini, [ekleme ve dışlama atamalarının](apps-inc-exl-assignments.md)bir birleşimini kullanarak bir son kullanıcı ve cihaz grubuna atayabilirsiniz. Bir uygulama yapılandırma ilkesini ekledikten sonra bu uygulama yapılandırma ilkesi için atamaları ayarlayabilirsiniz. İlke için atamaları ayarladığınızda, ilkenin uygulandığı son kullanıcı [gruplarını](../fundamentals/groups-add.md) dahil etme ve hariç tutma seçeneğini belirleyebilirsiniz. Bir veya daha fazla grubu dahil etmeyi seçtiğinizde, belirli grupları dahil etmeyi veya yerleşik grupları kullanmayı seçebilirsiniz. Yerleşik gruplar, **Tüm Kullanıcılar**, **Tüm Cihazlar** ve **Tüm Kullanıcılar + Tüm Cihazlar** şeklindedir.
 
 Intune ile uygulama yapılandırma ilkelerini kullanmak için iki seçeneğiniz vardır:
-- **Yönetilen cihazlar** -cihaz, mobil cihaz YÖNETIMI (MDM) sağlayıcısı olarak Intune tarafından yönetilir. Uygulama, uygulama yapılandırmasını destekleyecek şekilde tasarlanmalıdır.
+- **Yönetilen cihazlar** - Cihaz, mobil cihaz yetkilisi (MDM) sağlayıcısı olarak Intune tarafından yönetilir. Uygulama, uygulama yapılandırmasını destekleyecek şekilde tasarlanmalıdır.
 - **Yönetilen uygulamalar** -Intune uygulama SDK 'sını bütünleştirmek için geliştirilmiş bir uygulama. Bu, kayıt olmadan mobil uygulama yönetimi olarak bilinir ([mam-we](app-management.md#mobile-application-management-mam-basics)). Ayrıca, Intune uygulama SDK 'sını uygulamak ve desteklemek için bir uygulamayı sardırabilirsiniz. Bir uygulamayı sarmalama hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri için iş kolu uygulamalarını hazırlama](../developer/apps-prepare-mobile-application-management.md).
 
     > [!NOTE]
@@ -63,7 +64,7 @@ Intune ile uygulama yapılandırma ilkelerini kullanmak için iki seçeneğiniz 
 Uygulama yapılandırma ilkelerini, onu destekleyen uygulamalar için kullanabilirsiniz. Intune 'da uygulama yapılandırmasını desteklemek için uygulamalar, işletim sistemi tarafından tanımlanan uygulama yapılandırmalarının kullanımını desteklemek üzere yazılmalıdır. Destekledikleri uygulama yapılandırma anahtarlarının ayrıntıları için uygulama satıcınıza başvurun.
 
 ### <a name="managed-apps"></a>Yönetilen uygulamalar
-[Intune uygulama SDK 'sını](../developer/app-sdk.md) uygulamaya ekleyerek veya [Intune uygulaması sarmalama aracı](../developer/apps-prepare-mobile-application-management.md)kullanılarak geliştirildikten sonra uygulamayı sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. Intune uygulama SDK 'Sı, uygulama geliştiricisinden gereken kod değişikliği miktarını en aza indirir. Daha fazla bilgi için bkz. [Intune uygulama SDK 'sına genel bakış](../developer/app-sdk.md). Intune uygulama SDK 'Sı ile Intune uygulama sarmalama aracı arasında bir karşılaştırma için bkz. [iş kolu uygulamalarını uygulama koruma ilkeleri Için hazırlama](../developer/apps-prepare-mobile-application-management.md#feature-comparison).
+[Intune uygulama SDK 'sını](../developer/app-sdk.md) uygulamaya ekleyerek veya [Intune uygulaması sarmalama aracı](../developer/apps-prepare-mobile-application-management.md)kullanılarak geliştirildikten sonra uygulamayı sarmalayarak iş kolu uygulamalarınızı hazırlayabilirsiniz. Intune uygulama SDK 'Sı, uygulama geliştiricisinden gereken kod değişikliği miktarını en aza indirir. Daha fazla bilgi için bkz. [Intune Uygulama SDK’sına genel bakış](../developer/app-sdk.md). Intune uygulama SDK 'Sı ile Intune uygulama sarmalama aracı arasında bir karşılaştırma için bkz. [iş kolu uygulamalarını uygulama koruma ilkeleri Için hazırlama](../developer/apps-prepare-mobile-application-management.md#feature-comparison).
 
 **Cihaz kayıt türü** olarak **yönetilen uygulamalar** , cihaz yönetimine kayıtlı olmayan bir cihazda Intune yapılandırma ilkeleri tarafından yapılandırılan uygulamalara başvurur, ancak **yönetilen cihazlar** dağıtılan uygulamalar için geçerli olur MDM kanalı aracılığıyla Intune tarafından yönetilir. Bu açıklamalara göre uygun seçimi seçin. 
 
@@ -100,7 +101,7 @@ Yönetilen uygulama yapılandırması için, yönetilmeyen cihazlarda **Intune t
 4. **Günlükleri paylaşma**' ya tıklayın.
 5. Bilgisayarınızda görüntülenebilmeleri için günlüğü kendinize göndermek üzere seçtiğiniz posta uygulamasını kullanın. 
 6. Metin dosyası görüntüleyicinizdeki **ıntunemamdiagnostics. txt dosyasını** gözden geçirin.
-7. @No__t arayın-0. Sonuçlar aşağıdaki gibi görünür:
+7. `ApplicationConfiguration` arayın. Sonuçlar aşağıdaki gibi görünür:
 
     ``` JSON
         {
@@ -144,7 +145,7 @@ Yönetilen uygulama yapılandırması için, yönetilen cihazlarda **Intune tan�
 4. **Günlükleri paylaşma**' ya tıklayın.
 5. Bilgisayarınızda görüntülenebilmeleri için günlüğü kendinize göndermek üzere seçtiğiniz posta uygulamasını kullanın. 
 6. Metin dosyası görüntüleyicinizdeki **ıntunemamdiagnostics. txt dosyasını** gözden geçirin.
-7. @No__t arayın-0. Sonuçlarınız, kiracınız için yapılandırılmış uygulama yapılandırma ilkeleriyle eşleşmelidir.
+7. `AppConfig` arayın. Sonuçlarınız, kiracınız için yapılandırılmış uygulama yapılandırma ilkeleriyle eşleşmelidir.
 
 ### <a name="android-configuration-on-managed-devices"></a>Yönetilen cihazlarda Android yapılandırması
 
@@ -161,7 +162,7 @@ Android cihazından günlükleri toplamak için, siz veya son kullanıcının, b
     
 ## <a name="graph-api-support-for-app-configuration"></a>Uygulama yapılandırması için Graph API desteği
 
-Graph API, uygulama yapılandırma görevlerini gerçekleştirmek için kullanabilirsiniz. Ayrıntılar için bkz. [Graph API Reference mam hedeflenen yapılandırma](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
+Graph API, uygulama yapılandırma görevlerini gerçekleştirmek için kullanabilirsiniz. Ayrıntılar için bkz. [Graph API’si Başvurusu MAM Hedefli Yapılandırma](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
@@ -172,9 +173,9 @@ Günlükler, uygulanması onaylanan bir yapılandırma parametresi gösterip iş
 
 ### <a name="managed-devices"></a>Yönetilen cihazlar
 
-- İOS cihazlarınızla uygulama yapılandırmasını nasıl kullanacağınızı öğrenin.  Bkz. [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md).
-- Android cihazlarınızla uygulama yapılandırmasını nasıl kullanacağınızı öğrenin.  Bkz. [yönetilen Android cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-android.md).
+- iOS cihazlarınızla uygulama yapılandırmasını kullanma hakkında bilgi edinin.  Bkz. [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md).
+- Android cihazlarınızla uygulama yapılandırmasını kullanma hakkında bilgi edinin.  Bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Yönetilen uygulamalar
 
-- Uygulama yapılandırmasını yönetilen uygulamalarla nasıl kullanacağınızı öğrenin. Bkz. [cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-managed-app.md).
+- Yönetilen uygulamalarla uygulama yapılandırmasını kullanma hakkında bilgi edinin. Bkz. [Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-managed-app.md).

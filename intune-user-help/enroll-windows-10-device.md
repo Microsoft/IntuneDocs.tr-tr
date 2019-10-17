@@ -9,6 +9,7 @@ ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
-ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
+ms.openlocfilehash: ca8b24a1e8d0da4386ab185533fec38d9b34eb21
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71302455"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506263"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Windows 10 cihazlarını Intune Şirket Portalı kaydetme
 
@@ -61,7 +62,7 @@ Bu adımlar, Windows 10, sürüm 1607 ve üzeri sürümlerde çalışan bir ciha
 
 7. **Her şey hazırsınız!** ekranını görünce **Bitti**’yi seçin. Cihazınız artık kaydedilmiştir.  
 
-8. Bağlantınızı iki kez denetlemek için **Ayarlar** > **hesaplar** > **iş veya okula erişim**bölümüne dönün.  Hesabınız artık listelenmelidir.  
+8. Bağlantınızı iki kez kontrol etmek için **ayarlar** > **Hesap** > **erişim iş veya okul**' ye geri dönün.  Hesabınız artık listelenmelidir.  
 
 
     ![Bağlantının düzgün biçimde ayarlandığını doğrulama](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
@@ -75,7 +76,7 @@ Bu adımlar, Windows 10, sürüm 1511 ve önceki sürümlerde çalışan bir cih
 
 2. **Ayarlar** uygulamasını açın. Uygulama, uygulamalar listenizde hazır değilse, arama çubuğuna gidin ve "Ayarlar" yazın.
 
-3. **Hesabınızı seçin**. >   
+3. Hesabınız **@no__t** **Hesap**' ı seçin.  
 
 
     ![Hesabınızı seçme](./media/W10-enroll-2-accounts-your-account.png)  

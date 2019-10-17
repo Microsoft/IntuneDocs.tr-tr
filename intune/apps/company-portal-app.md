@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: 37c2a85162c781db7272b6ead11fbb3320a08343
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350017"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498009"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -174,7 +175,7 @@ Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez
 |     Platfveyam    |    Devre dışı bırakma    |    Silme     |    Yeniden Adlandır<sup>(4)</sup>    |    Eşitleme    |    Uzaktan Kilitleme    |    Geçiş kodunu Sıfırla    |    Anahtar kurtarma    |
 |------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
 |    Windows 10<sup>(3)</sup>    |    Kullanılabilir<sup>(1)</sup>    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    Yalnızca Windows Phone    |    Yalnızca Windows Phone    |    YANA    |
-|    iOS<sup>(3)</sup>    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    YANA    |
+|    iOS<sup>(3)</sup>    |    Kullanılabilir    |    Kullanılabilir<sup>(8)</sup>    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir<sup>(8)</sup>    |    Kullanılabilir    |    YANA    |
 |    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Kullanılabilir    |    YANA    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    YANA    |    Kullanılabilir<sup>(2)</sup>    |
 |    Android<sup>(3)</sup>    |    Kullanılabilir<sup>(7)</sup>    |    Kullanılabilir<sup>(7)</sup>    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir<sup>(6)</sup>    |    YANA    |
 
@@ -186,6 +187,7 @@ Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez
 <sup>(5)</sup> MacOS cihazlarında uzaktan silme kullanılamaz.<br>
 <sup>(6)</sup> geçiş kodu sıfırlama bazı Android ve Android kurumsal yapılandırmalarında desteklenmez. Daha fazla bilgi için bkz. [Intune 'da cihaz geçiş kodunu sıfırlama veya kaldırma](../remote-actions/device-passcode-reset.md).<br>
 <sup>(7)</sup> devre dışı bırakma ve Temizleme, Android kurumsal cihaz sahibi SENARYOLARıNDA (Cope, Cobo, cosu) kullanılamaz.<br> 
+<sup>(8)</sup> silme ve sıfırlama geçiş kodu, Kullanıcı kaydıyla kaydedilen iOS cihazlarında kullanılamaz.<br> 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

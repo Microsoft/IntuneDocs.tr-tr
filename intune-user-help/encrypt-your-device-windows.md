@@ -1,6 +1,6 @@
 ---
 title: Windows cihazınızı şifrelemeyle koruma | Microsoft Docs
-description: Windows 10 Cihazınızı şifrelemek için BitLocker'ı Aç
+description: Windows 10 cihazını şifrelemek için BitLocker 'ı açma
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 01/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f23fac9f7e01b08175e227c74cc54e6f86bf8430
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545277"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506342"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Windows cihazınızı şifreleme kullanarak koruma
 

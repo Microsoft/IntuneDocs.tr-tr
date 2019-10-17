@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862313"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506301"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Kurumsal cihazınızı Microsoft Intune uygulamasına kaydetme
 
@@ -44,24 +45,24 @@ Cihazınızı ayarlamak ve kaydetmek için aşağıdaki adımları uygulayın.
 
 1. Yeni veya fabrika ayarlarına sıfırlama cihazınızı açın.  
 2. **Hoş Geldiniz** ekranında dili seçin.   QR kodu veya NFC ile kayıt yapmanız istenirse, yöntemiyle eşleşen aşağıdaki adımları izleyin.  
-     * 'YE Kuruluşunuzun ağına bağlanmak için bir programcı cihazında NFC ile desteklenen cihazınıza dokunun. Ekrandaki istemleri izleyin. Chrome 'un hizmet koşulları ekranına ulaştığınızda, 5. adıma geçin.  
+     * NFC: kuruluşunuzun ağına bağlanmak için bir programcı cihazında NFC ile desteklenen cihazınıza dokunun. Ekrandaki istemleri izleyin. Chrome 'un hizmet koşulları ekranına ulaştığınızda, 5. adıma geçin.  
 
-     * QR kodu: [QR kod kaydı](#qr-code-enrollment)'ndaki adımları doldurun.  
+     * QR kodu: [QR kod kaydı](#qr-code-enrollment)'Ndaki adımları doldurun.  
 
      Başka bir yöntem kullanmanız istenirse adım 3 ' e geçin.    
 
 3. Wi-Fi ' e bağlanın ve **İleri**' ye dokunun. Kayıt yönteminiz ile eşleşen adımı izleyin. 
 
-    * Simgesinde Google oturum açma ekranına geldiğinizde, [belirteç kaydı](#token-enrollment)'ndaki adımları doldurun.  
+    * Belirteç: Google oturum açma ekranına geldiğinizde, [belirteç kaydı](#token-enrollment)'ndaki adımları doldurun.  
     * Google sıfırı Touch: Wi-Fi ' a Bağlandıktan sonra cihazınız kuruluşunuz tarafından tanınacaktır. 4\. adıma geçin ve kurulum tamamlanana kadar ekrandaki istemleri izleyin.    
  
        ![Google of Touch kullanıyorsanız gördüğünüz Google terimleri ekranının örnek görüntüsü, & devam et ' i vurgulama düğmesi.](./media/google-zero-touch-intune-app-01.png)   
    
-4. Google 'ın şartlarını gözden geçirin. Sonra **&AMP; devam et**' e dokunun.  
+4. Google 'ın şartlarını gözden geçirin. Sonra **& devam et**' e dokunun.  
 
       ![Google terms ekranının örnek görüntüsü, kabul & devam et düğmesine vurgu.](./media/fully-managed-intune-app-04.png)   
 
-6. Chrome 'un hizmet koşullarını gözden geçirin. Sonra **&AMP; devam et**' e dokunun.  
+6. Chrome 'un hizmet koşullarını gözden geçirin. Sonra **& devam et**' e dokunun.  
 
    ![Chrome hizmet koşulları ekranının örnek görüntüsü, & devam et düğmesine vurgu.](./media/fully-managed-intune-app-06.png)   
 
@@ -118,7 +119,7 @@ Bu bölümde, şirketinizin sunduğu belirteci girersiniz. İşiniz bittiğinde 
 
 4. **Kodu girin**' i seçin.  
 
-5. **Tarama veya kod girme** ekranında, kuruluşunuzun size verdiği kodu yazın.  Ardından **İleri**'ye tıklayın.  
+5. **Tarama veya kod girme** ekranında, kuruluşunuzun size verdiği kodu yazın.  ardından **İleri**' ye tıklayın.  
 
    ![Taramanın örnek görüntüsü veya kod girme, Ileri vurgu düğmesi.](./media/token-intune-app-04.png)  
 

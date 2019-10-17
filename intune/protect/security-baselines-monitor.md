@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b16b4ee95647b3bb182af075bbe7f7aad71351f0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1be2ba947a5b92b6982e8c868e935460c4eaa5bb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731949"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508952"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'de güvenlik taban çizgisini ve profillerini izleme  
 
@@ -75,7 +76,7 @@ Genel bakış bölmesi, taban çizgisi için kategori başına bir grafik görü
  
 ![Durumun kategori başına görünümü](./media/security-baselines-monitor/monitor-baseline-per-category.png)
 
-Cihazların% 100 ' ü kategori için bu durumu bildirene kadar, **eşleşmelerin temeli** için durum görüntülenmez.   
+Cihazların %100 ' ü kategori için bu durumu bildirene kadar, **eşleşmelerin temeli** için durum görüntülenmez.   
 
 Sütunun en üstünde yukarı aşağı ok simgesini seçerek Kategori tarafından her sütuna göre sıralama yapabilirsiniz.  
 

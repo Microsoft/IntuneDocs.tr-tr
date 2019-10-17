@@ -8,17 +8,18 @@ manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d999603abc539fda4d152d15dd1ab965c465f39e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b4be1755a07e6ec304edb7bceba8041d5b58263e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732265"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509992"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Microsoft Intune olayları izlemek ve izlemek için Denetim günlüklerini kullanma
 
@@ -53,7 +54,7 @@ Bu özellik hakkında daha fazla bilgi için bkz. [depolama, Olay Hub 'ları vey
 
 ## <a name="review-audit-events"></a>Denetim olaylarını gözden geçirme
 
-![Olayların denetim günlükleri gerçekleştiği sırada eylemleri ve tarihleri görmek Için Intune 'da denetim günlükleri ' ni seçin](./media/monitor-audit-logs/monitor-audit-logs.png "")
+![Etkinlik gerçekleştiği sırada eylemleri ve tarihleri görmek için Intune 'da denetim günlüklerini seçin](./media/monitor-audit-logs/monitor-audit-logs.png "Denetim günlükleri")
 
 Denetim günlüğünün aşağıdaki öğeleri gösteren bir varsayılan liste görünümü vardır:
 
@@ -67,7 +68,7 @@ Denetim günlüğünün aşağıdaki öğeleri gösteren bir varsayılan liste g
 
 Bir olayla ilgili daha ayrıntılı bilgileri görmek için listeden bir öğe seçin:
 
-Intune(./media/monitor-audit-logs/monitor-audit-log-detail.png "Denetim günlüğü ayrıntılarında") ![Denetim günlüklerinde neleri gerçekleştirdikleriniz hakkında daha ayrıntılı bilgi alın]
+![Intune 'da denetim günlüklerinde kim olduğuna ilişkin daha özel bilgiler alın](./media/monitor-audit-logs/monitor-audit-log-detail.png "Denetim günlüğü ayrıntıları")
 
 > [!NOTE]
 > **Başlatan (aktör)** , görevi kimin çalıştırdığını ve nerede Çalıştırıldığın bilgilerini içerir. Örneğin, etkinliği Azure portal Intune 'da çalıştırırsanız, **uygulama** **Microsoft Intune Portal uzantısını** her zaman listeler ve **uygulama kimliği** her zaman aynı GUID 'yi kullanır.

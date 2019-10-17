@@ -1,6 +1,6 @@
 ---
-title: Yönetilen Samsung Knox ile sık karşılaşılan sorunları düzeltmek cihazları | Microsoft Docs
-description: Samsung Knox cihazınız sorunlarını giderin.
+title: Yönetilen Samsung KNOX cihazlarıyla ilgili yaygın sorunları giderme | Microsoft Docs
+description: Samsung KNOX cihazınızda sorun giderin.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 78c08b30-dc5f-46d9-9ee8-6cc8dee1e404
 searchScope:
@@ -17,16 +18,16 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37f8b5626802a3000d50eca2fd3142732aafd783
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 54a8eaafba0705968672275ba67449d9672f5c46
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490976"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502075"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Samsung Knox cihazınızdaki yaygın sorunları çözme
 
-Yönetilen Samsung Knox cihazları ile ilgili sık karşılaşılan sorunları giderin. Listede olmayan bir sorunu bildirmek için burada yapabilecekleriniz [tanılama günlüklerinizi gönderin](send-logs-to-microsoft-android.md) Intune ya da şirket portalı uygulaması aracılığıyla. Microsoft geliştiricileri, sorunu tanılamak ve bir çözüm bulmak için uygulamaya özgü günlüklere bakar.    
+Yönetilen Samsung KNOX cihazlarıyla ilişkili yaygın sorunları giderin. Burada listelenmeyen bir sorunu bildirmek için [Tanılama günlüklerinizi](send-logs-to-microsoft-android.md) Şirket Portalı veya Microsoft Intune uygulaması aracılığıyla gönderebilirsiniz. Microsoft geliştiricileri, sorunu tanılamak ve bir çözüm bulmak için uygulamaya özel günlüklere bakar.    
 
 ## <a name="network-activation-error"></a>Ağ etkinleştirme hatası  
 
@@ -50,6 +51,6 @@ Yönetilen Samsung Knox cihazları ile ilgili sık karşılaşılan sorunları g
 
 |Hata iletisi|Denemeniz gerekenler|
 |---|---|
-|**Samsung Knox etkinleştirme hatası** - Samsung KNOX lisansı etkinleştirilemedi. Güç tasarrufu modunu etkin olmasından kaynaklanıyor olabilir. Cihaz ayarlarında güç tasarrufu modunu devre dışı bırakın ve yeniden deneyin. |Cihazınızın güç ayarları şirket kaynaklarınızla çalışma açısından doğru olmayabilir. Bu ayar hakkında daha fazla bilgi için [güç modu kaydetme](power-saving-mode-android.md).|  
+|**Samsung Knox etkinleştirme hatası** - Samsung KNOX lisansı etkinleştirilemedi. Bunun nedeni, güç tasarrufu modunun açık olması olabilir. Cihaz ayarları ' nda güç tasarrufu modunu kapatın ve yeniden deneyin. |Cihazınızın güç ayarları şirket kaynaklarınızla çalışma açısından doğru olmayabilir. Bu ayar hakkında daha fazla bilgi edinmek için bkz. [güç tasarrufu modu](power-saving-mode-android.md).|  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

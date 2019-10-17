@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune-Azure 'da macOS 'a Endpoint Protection ekleme | Microsoft Docs
-description: MacOS cihazlarında, Mac App Store dahil olmak üzere uygulamaların yüklenebilecekleri yeri öğrenmek için ağ geçidi denetleyicisini kullanın. Ayrıca, belirli uygulamalara izin veren bir güvenlik duvarı etkinleştirin veya yapılandırın, özellikleri uygulamaları engeller, gizli modu kullanın ve hatta Microsoft Intune kullanarak belirli gelen bağlantı türlerini engelleyin.
+title: Microsoft Intune - Azure’da macOS cihazlara Endpoint Protection ekleme | Microsoft Docs
+description: macOS cihazlarda, Mac Apple Store dahil olmak üzere uygulamaların nereye yükleneceğini belirlemek için ağ geçidi denetleyicisini kullanın. Microsoft Intune kullanarak belirli uygulamalara izin vermek, belirli uygulamaları engellemek, gizli mod kullanmak ve hatta bazı gelen bağlantı türlerini engellemek için bir güvenlik duvarı etkinleştirin veya yapılandırın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6090d329eee6f27da21b6133a2b7ccdc7072feb3
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 358a396e762f1f20051abadfc2f3df80f37ca8c8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814124"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502303"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 'da MacOS Endpoint Protection ayarları  
 
@@ -32,35 +33,35 @@ Bu makalede, macOS çalıştıran cihazlar için yapılandırabileceğiniz Endpo
 
   - **Yapılandırılmadı**  
   - **Mac App Store**  
-  - **Mac App Store ve tanımlanan geliştiriciler**  
-  - **Yerdeki**  
+  - **Mac App Store ve tanımlı geliştiriciler**  
+  - **Her yer**  
 
   **Varsayılan**: yapılandırılmadı  
 
 - **Kullanıcı, ağ geçidi denetleyicisini geçersiz kılabilir**  
-  Kullanıcıların, Gatekeeper ayarını geçersiz kılmasını engeller ve kullanıcıların bir uygulama yüklemek için tıklamasını denetlemesini engeller. Etkinleştirildiğinde, kullanıcılar herhangi bir uygulamayı denetleyebilir ve yükleyebilir.  
+  Kullanıcıların, Gatekeeper ayarını geçersiz kılmasını engeller ve kullanıcıların bir uygulama yüklemek için tıklamasını denetlemesini engeller. Etkinleştirildiğinde, kullanıcılar Control tuşuna tıklama ile herhangi bir uygulamayı yükleyebilir.  
  
   - **Yapılandırılmadı** -kullanıcılar, uygulamaları yüklemek için ' yi denetleyebilir.  
   - **Engelle** -kullanıcıların uygulamaları yüklemek için Control-Click kullanmasını engeller.  
 
   **Varsayılan**: yapılandırılmadı  
 
-## <a name="firewall"></a>Güvenlik Duvarı  
+## <a name="firewall"></a>Duvarını  
 
-Bağlantı noktası başına değil, uygulama başına bağlantıları denetlemek için güvenlik duvarını kullanın. Uygulama başına ayarların kullanılması, güvenlik duvarı korumasının avantajlarını daha kolay hale getirir. Ayrıca, istenmeyen uygulamaların meşru uygulamalar için açık olan ağ bağlantı noktalarının denetimini ele almasını önlemeye de yardımcı olur.  
+Bağlantı noktası yerine uygulama başına bağlantıları denetlemek için güvenlik duvarı kullanın. Uygulama başına ayarlar kullanmak, güvenlik duvarı korumasından faydalanmayı kolaylaştırır. Ayrıca istenmeyen uygulamaların, güvenilen uygulamalara açık olan ağ bağlantı noktalarının kontrolünü ele geçirmelerini önler.  
 
 **Genel**
-- **Güvenlik duvarı**  
+- **Duvarını**  
   Gelen bağlantıların ortamınızda nasıl işleneceğini yapılandırmak için güvenlik duvarını etkinleştirin.  
   - **Yapılandırılmadı**  
-  - **Etkinleştirme**  
+  - **Etkinleştirebilir**  
 
   **Varsayılan**: yapılandırılmadı  
 
 - **Gelen bağlantılar**  
-  DHCP, Bonjour ve IPSec gibi temel Internet Hizmetleri için gereken bağlantılar hariç tüm gelen bağlantıları engelleyin. Bu özellik, dosya paylaşımı ve ekran paylaşımı gibi tüm paylaşım hizmetlerini de engeller. Paylaşım Hizmetleri kullanıyorsanız, bu ayarı *yapılandırılmamış*olarak tutun.  
+  DHCP, Bonjour ve IPSec gibi temel Internet Hizmetleri için gereken bağlantılar hariç tüm gelen bağlantıları engelleyin. Bu özellik ayrıca, Dosya Paylaşımı ve Ekran Paylaşımı gibi tüm paylaşım hizmetlerini engeller. Paylaşım cihazları kullanıyorsanız bu ayarı *Yapılandırılmadı* olarak bırakın.  
   - **Yapılandırılmadı**  
-  - **Engelleyin**  
+  - **Engelle**  
 
   **Varsayılan**: yapılandırılmadı  
 
@@ -73,9 +74,9 @@ Bağlantı noktası başına değil, uygulama başına bağlantıları denetleme
     Gelen bağlantıları engellemesi gereken uygulamaları seçin.  
 
   - **Gizli mod**  
-    Bilgisayarın yoklama isteklerine yanıt vermesini engellemek için gizli modu etkinleştirin. Cihaz, yetkili uygulamalar için gelen istekleri yanıtlamaya devam eder. ICMP (ping) gibi beklenmeyen istekler yok sayılır.  
+    Bilgisayarın yoklama isteklerine yanıt vermesini engellemek için gizli modu etkinleştirin. Cihaz, yetkilendirilmiş uygulamalardan gelen istekleri yanıtlamaya devam eder. ICMP (ping) gibi beklenmedik istekler yoksayılır.  
     - **Yapılandırılmadı**  
-    - **Etkinleştirme**  
+    - **Etkinleştirebilir**  
 
     **Varsayılan**: yapılandırılmadı  
 
@@ -85,10 +86,10 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
 > [!IMPORTANT]  
 > MacOS 10,15 itibariyle, Filekasası yapılandırması kullanıcı onaylı MDM kaydı gerektirir. 
 
-- **Dosya Kasası**  
+- **FileVault**  
   MacOS 10,13 ve üstünü çalıştıran cihazlarda Filekasasıyla XTS-AES 128 kullanarak tam disk şifrelemeyi *etkinleştirebilirsiniz* .  
   - **Yapılandırılmadı**  
-  - **Etkinleştirme**  
+  - **Etkinleştirebilir**  
 
   **Varsayılan**: yapılandırılmadı  
 

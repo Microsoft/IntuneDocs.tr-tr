@@ -1,6 +1,6 @@
 ---
-title: Intune için Android Cihazınızı şifrelemenizi | Microsoft Docs
-description: Intune tarafından istendiğinde Android cihaz şifrelemeyi etkinleştirmek için adımları
+title: Intune için Android cihazını şifreleme | Microsoft Docs
+description: Intune için gerektiğinde Android cihaz şifrelemesini açma adımları
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
@@ -18,55 +19,55 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfc17c60412a1cfe90693216caa69ada3d2d2c9a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545253"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506355"
 ---
-# <a name="encrypting-your-android-device"></a>Android Cihazınızı şifreleme
+# <a name="encrypting-your-android-device"></a>Android cihazınızı şifreleme
 
-Cihazınız kaybolur veya çalınırsa, cihaz şifreleme, dosya ve klasörlerinizi yetkisiz erişime karşı korur. Cihaz şifreleme etkinleştirdikten sonra sadece bireyleri doğru parolayı veya PIN'i ile cihazınıza oturum açmak mümkün olacaktır. 
+Cihazınız kaybolur veya çalınırsa, cihaz şifreleme, dosyalarınızı ve klasörlerinizi yetkisiz erişimden korur. Cihaz şifrelemesini etkinleştirdikten sonra, yalnızca doğru parolaya veya PIN 'e sahip kişiler cihazınızda oturum açabilirler. 
 
-Okul veya iş kaynaklarına erişebilmeniz için önce kuruluşunuzun Android Cihazınızı şifrelemenizi gerektirebilir. Varsayılan olarak, bazı yeni Android cihazları şifrelenmiş kullanıma hazır.  
+Okul veya iş kaynaklarına erişebilmek için kuruluşunuz, Android cihazınızı şifrelemenizi gerektirebilir. Yeni bazı Android cihazlar varsayılan olarak, kullanıma hazır olarak şifrelenir.  
 
-## <a name="turn-on-encryption"></a>Şifrelemesini açma
+## <a name="turn-on-encryption"></a>Şifrelemeyi aç
 
-Şirket portalı veya Microsoft Intune uygulama Cihazınızı şifrelemenizi isterse, aşağıdaki adımları tamamlayın. 
+Şirket Portalı veya Microsoft Intune uygulama cihazınızı şifrelemenizi isterse, aşağıdaki adımları uygulayın. 
 
 > [!Note]
-> Huawei, Vivo ve OPPO belirli Android cihazlar şifrelenemez. Daha fazla bilgiyi [burada](your-device-appears-encrypted-but-cp-says-otherwise-android.md) bulabilirsiniz.  
+> Huawei, vivo ve OPPO 'dan gelen belirli Android cihazları şifrelenemez. Daha fazla bilgiyi [burada](your-device-appears-encrypted-but-cp-says-otherwise-android.md) bulabilirsiniz.  
 
-1. Bir cihaz ekran kilidi ayarlayın.  
-    a. Git **ayarları** > **kilit ekranı ve güvenlik** > **ekran kilidi türünü**.  
-    b. Şunlardan birini seçin **PIN**, **parola**, veya **deseni**.  
-    c. Ekran kilidinizi yapılandırmak için ekrandaki yönergeleri izleyin.  
+1. Bir cihaz ekranı kilidi ayarlayın.  
+    a. **Ayarlar** > **kilit ekranı ve güvenlik** > **ekran kilidi türü**' ne gidin.  
+    b. **PIN**, **parola**veya **model**seçeneklerinden birini belirleyin.  
+    c. Ekran kilitinizi yapılandırmak için ekrandaki yönergeleri izleyin.  
 
-2. Geri Git **kilit ekranı ve güvenlik** seçip **güvenli başlangıç**.
-3. Seçin **cihazı açtığında PIN gerektir** > **Tamam**.
-4. Onayla ve Cihazınızı şifrelemek için bir PIN kodunuzu girin.
-5. Ya da Microsoft Intune Şirket portalı uygulamasını açın.
-    * Şirket portalı kullanıcıları: Cihazınızı seçin ve dokunun **cihaz ayarlarını denetle**. 
-    * Microsoft Intune kullanıcılar: Sayfa güncelleştirmelerini kadar beklemeniz gerekecektir ancak mevcut olduğunda, şifreleme durumu uyumlu olarak değiştirmeniz gerekir.  
+2. **Kilit ekranı ve güvenlik** bölümüne dönüp **güvenli başlatma**' yı seçin.
+3. Cihaz **@no__t 1** **' i açtığında PIN gerektir '** i seçin.
+4. Cihazınızı doğrulamak ve şifrelemek için PIN 'inizi girin.
+5. Şirket Portalı veya Microsoft Intune uygulamasını açın.
+    * Şirket Portalı kullanıcılar: cihazınızı seçin ve **cihaz ayarlarını denetle**' ye dokunun. 
+    * Microsoft Intune kullanıcılar: sayfa güncellene kadar beklemeniz gerekir, ancak bunu yaparken şifreleme durumunuz uyumlu olarak değiştirilmelidir.  
 
-Android 4.4 ve önceki sürümleri çalıştıran cihazlara sahip olmayabilirsiniz **güvenli başlatma** seçeneği. Bu durumda, Cihazınızı şifrelemek için aşağıdaki adımları tamamlayın.
+Android 4,4 ve öncesini çalıştıran cihazlarda **güvenli başlangıç** seçeneği bulunmayabilir. Bu durumda, cihazınızı şifrelemek için aşağıdaki adımları izleyin.
 
-1. Git **ayarları** > **güvenlik** > **Cihazınızı şifrelemenizi**. Ekranda etiketleri Android cihazlar arasında farklılık gösterir. Görmüyorsanız **cihazı şifrele** seçeneğinde, iade:
+1. **Ayarlar** > **güvenlik** > **şifreleme cihazı**' na gidin. Ekran etiketleri, Android cihazlar arasında farklılık gösterir. **Cihaz şifreleme** seçeneğini görmüyorsanız, iade edin:
     * **Depolama** > **depolama şifrelemesi**
     * **Depolama** > **kilit ekranı ve güvenlik** > **diğer güvenlik ayarları** 
 
-2. Ekrandaki yönergeleri takip edin. Şifreleme sırasında cihazınız birkaç kez yeniden başlatılması.
-3. Ya da Microsoft Intune Şirket portalı uygulamasını açın.
-    * Şirket portalı kullanıcıları: Cihazınızı seçin ve dokunun **cihaz ayarlarını denetle**.  
-    * Microsoft Intune kullanıcılar: Sayfa güncelleştirmelerini kadar beklemeniz gerekecektir ancak mevcut olduğunda, şifreleme durumu uyumlu olarak değiştirmeniz gerekir.
+2. Ekrandaki yönergeleri takip edin. Şifreleme sırasında, cihazınız birkaç kez yeniden başlatılabilir.
+3. Şirket Portalı veya Microsoft Intune uygulamasını açın.
+    * Şirket Portalı kullanıcılar: cihazınızı seçin ve **cihaz ayarlarını denetle**' ye dokunun.  
+    * Microsoft Intune kullanıcılar: sayfa güncellene kadar beklemeniz gerekir, ancak bunu yaparken şifreleme durumunuz uyumlu olarak değiştirilmelidir.
 
-## <a name="troubleshoot"></a>Sorun giderme  
-**Sorunu**: Cihazınızı zaten şifrelediyseniz ve
+## <a name="troubleshoot"></a>Sorunları Gider  
+**Sorun**: cihazınızı zaten şifreledi ve
 
 - Şifreleme düğmesi devre dışı.
 - Yine de şifrelemeniz gerektiğini bildiren bir iletiyle karşılaşıyorsunuz.
-- Şirket portalı ya da Microsoft Intune uygulamasını kullanmaya çalışırken hatayla karşılaşıyorsunuz.
+- Şirket Portalı veya Microsoft Intune uygulamasını kullanmaya çalışırken hata alırsınız.
 
 **Bunları deneyin:**
 

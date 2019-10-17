@@ -9,20 +9,21 @@ manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b87d87017b0e1df0b649cb1e50dd6353cb0d2e9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c99c166713b9e3d8614ebe8f2756a586356c5b3b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730305"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490726"
 ---
-# <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Intune 'da kullanılan Graph API 'Leri ve eşleşen Windows 10 CSP 'Leri
+# <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Intune’da kullanılan Graph API’leri ve eşleşen Windows 10 CSP’leri
 
 Microsoft Intune, Windows 10 ve üstünü çalıştıran cihazları (**ıntune** > **cihaz yapılandırması**) yapılandırmak için [Graph API varlıklarını](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (başka bir docs sitesini açar) kullanır. Graph API, cihazlarda yapılandırma ayarlarını okumak, ayarlamak, değiştirmek ve/veya silmek için yapılandırma hizmeti sağlayıcılarını (CSP) kullanır.
 

@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 05/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1eda7fef3ee9c2ca4e4a13d9b6effba2ed121b0e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730925"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506964"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune 'da kullanabileceğiniz yerleşik iOS uygulamaları için paket kimlikleri
 
@@ -39,7 +40,7 @@ ms.locfileid: "71730925"
 | com.apple.compass           | Pusula      | Apple     |
 | com.apple.MobileAddressBook | Kişiler     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
-| com.apple.DocumentsApp      | Dosyalarý        | Apple     |
+| com.apple.DocumentsApp      | dosyalarý        | Apple     |
 | com.apple.mobileme.fmf1     | Arkadaşları Bul | Apple     |
 | com.apple.mobileme.fmip1    | iPhone’u Bul  | Apple     |
 | com.apple.gamecenter        | Oyun Merkezi  | Apple     |
@@ -60,7 +61,7 @@ ms.locfileid: "71730925"
 | com.apple.mobilenotes       | Notlar        | Apple     |
 | com.apple.Numbers           | Sayılar      | Apple     |
 | com.apple.Pages             | Pages        | Apple     |
-| com. Apple. mobilephone       | numarası        | Apple     |
+| com. Apple. mobilephone       | Numarası        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Fotoğraflar       | Apple     |
 | com.apple.podcasts          | Podcast’ler     | Apple     |

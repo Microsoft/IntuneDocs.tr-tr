@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f52e80f83426c076ac7925d308daacf4595f88
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251510"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498788"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune kullanarak Android cihazları için Google Chrome 'U yapılandırma 
 
@@ -73,7 +74,7 @@ Intune 'a yönetilen Google Play uygulaması ekleme hakkında daha fazla bilgi i
     Yukarıdaki ayarlar yer işaretlerini oluşturur ve `baidu.com`, `yahoo.com` ve `chrome://` hariç tüm Web sitelerine erişime izin verir.
 
 5. Yapılandırma ilkenizi Intune 'a eklemek için **Tamam** ve **Ekle** ' ye tıklayın.
-6. Bu yapılandırma ilkesini bir kullanıcı grubuna atayın. Daha fazla bilgi için bkz. [Microsoft Intune sahip gruplara uygulama atama](~/apps/apps-deploy.md). 
+6. Bu yapılandırma ilkesini bir kullanıcı grubuna atayın. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](~/apps/apps-deploy.md). 
 
 ## <a name="verify-the-device-settings"></a>Cihaz ayarlarını doğrulama
 
@@ -105,7 +106,7 @@ Google Chrome 'ı başlatın ve uygulanan ayarları görürsünüz.
 
     ![Ayarların başarıyla uygulandığını doğrulayın](~/apps/media/apps-configure-chrome-android/confirm.png)
 
-## <a name="additional-information"></a>Ek Bilgi
+## <a name="additional-information"></a>Ek bilgiler
 
 - [Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme](~/app-configuration-policies-use-android.md)
 - [Chrome kurumsal ilke listesi](https://cloud.google.com/docs/chrome-enterprise/policies/)

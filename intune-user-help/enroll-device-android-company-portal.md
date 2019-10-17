@@ -1,6 +1,6 @@
 ---
-title: Android Cihazınızı Intune Şirket portalı ile kaydetme | Microsoft Docs
-description: Bir Android cihazı Intune Şirket portalı ile ıntune'a nasıl kaydedildiği açıklanır
+title: Android cihazını Intune Şirket Portalı kaydetme | Microsoft Docs
+description: Intune Şirket Portalı bir Android cihazının nasıl kaydedileceğini açıklar
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,25 +19,25 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 736b1d891207a19f281aa1127975de1a55889e8b
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 1670ddf9299d12312f09d188e4410d14ac40fbe7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197024"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506326"
 ---
-# <a name="enroll-your-device-with-company-portal"></a>Cihazınızı Şirket portalı ile kaydetme  
-Şirket e-posta, uygulamalar ve veriler güvenli erişim elde etmek için kişisel veya şirkete ait Android Cihazınızı kaydetme. Şirket portalı Android cihazlarında Samsung Knox dahil olmak üzere Android 4.4 ve üzeri çalıştıran destekler.  
+# <a name="enroll-your-device-with-company-portal"></a>Cihazınızı Şirket Portalı kaydetme  
+Şirket e-postasına, uygulamalarına ve verilerine güvenli erişim sağlamak için kişisel veya şirkete ait Android cihazınızı kaydedin. Şirket Portalı, Android 4,4 ve üstünü çalıştıran Samsung KNOX dahil Android cihazlarını destekler.  
 </br>
 > [!VIDEO https://www.youtube.com/embed/k0Q_sGLSx6o?rel=0]
 
 > [!NOTE]
-> Samsung Knox, bazı Samsung cihazlarının yerel Android tarafından sağlanan korumanın dışında ek koruma için kullandığı bir güvenlik türüdür. Bir Samsung Knox cihazınız olup olmadığını denetlemek için > Git **ayarları** > **cihaz hakkında**. Görmüyorsanız **Knox sürümü** listelenip, yerel bir Android cihazına sahipsinizdir.
+> Samsung KNOX, belirli Samsung cihazlarının, yerel Android 'in sağladığı her yerde ek koruma için kullandığı bir güvenlik türüdür. Samsung KNOX cihazınız olup olmadığını denetlemek için > **ayarlar** > **cihaz hakkında**' ya gidin. Burada listelenen **Knox sürümünü** görmüyorsanız, yerel bir Android cihazınız vardır.
 
-## <a name="enroll-device"></a>Cihaz kaydetme  
-Emin olun [ücretsiz Intune Şirket portalı uygulamasını Google Play'den yükleyin](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). 
+## <a name="enroll-device"></a>Cihazı kaydetme  
+[Ücretsiz Intune şirket portalı uygulamasını Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)yüklediğinizden emin olun. 
 
-Kayıt sırasında Cihazınızı kullanma şeklinizi en iyi şekilde açıklayan bir kategoriyi seçmeniz istenebilir. Şirketinizin destek birimi, erişiminiz olan uygulamaları denetlemek için yanıtınız kullanır.  
+Kayıt sırasında cihazınızı nasıl kullanacağınızı en iyi açıklayan bir kategori seçmeniz istenebilir. Şirketinizin destek, erişiminiz olan uygulamaları denetlemek için yanıtınızı kullanır.  
 
 1. Şirket Portalı uygulamasını açın.  
 
@@ -44,7 +45,7 @@ Kayıt sırasında Cihazınızı kullanma şeklinizi en iyi şekilde açıklayan
 
    ![Kullanıcıdan gerekli iş veya okul hesabıyla oturum açmasını isteyen Android için Şirket Portalı uygulaması hoş geldiniz ekranı. Microsoft hesapları ve diğer kişisel hesapların kabul edilmediği konusunda da uyarmaktadır.](./media/and-enroll-0-welcome-screen.png)   
 
-4. Kuruluşunuzun hüküm ve koşullarını kabul etmeniz istenirse, dokunun **kabul**. Bu ekran aşağıdaki örnek ekran görüntüsünden biraz farklı olabilir. 
+4. Kuruluşunuzun hüküm ve koşullarını kabul etmeniz istenirse **kabul et**' e dokunun. Bu ekran aşağıdaki örnek ekran görüntüsünden biraz farklı olabilir. 
 
    ![android-şirket-portalı-oturum-açma](./media/and-enroll-3-accept-terms.png)
 
@@ -76,7 +77,7 @@ Kayıt sırasında Cihazınızı kullanma şeklinizi en iyi şekilde açıklayan
 
    Bu iletiyi görürseniz, **İZİN VER**’e dokunun. İZİN VER’e dokunmak güvenlidir, çünkü **Microsoft hiçbir zaman telefon çağrısı yapmaz veya telefon çağrılarınızı yönetmez**! İleti metni Google’ın kontrolündedir ve Microsoft bunu değiştiremez. Erişime izin verdiğinizde, tüm yaptığınız cihazınızın uluslararası mobil cihaz kodunu (IMEI) Intune'a göndermesine izin vermektir. IMEI, seri numarası gibi, bir mobil cihazı benzersiz şekilde tanımlayan bir numaradır.
 
-   Erişimi reddederseniz, tekrar şirket portalında oturum açın sonraki durumda ileti görünür. Gelecekteki iletileri kapatabilirsiniz için seçin **daha sorma**. Erişim izni tersine çevirmek için Git **ayarları** > **uygulamaları** > **Şirket portalı** > **izinleri**   >  **Telefon**ve ardından izni etkinleştirebilirler.  
+   Erişimi reddederseniz, Şirket Portalı bir sonraki oturum açışınızda ileti tekrar görünür. Gelecek iletileri kapatmak için **hiçbir zaman sorma**' yı seçin. Erişim iznini tersine çevirmek için **ayarlar** > **uygulamalar** > **Şirket Portalı** > **Telefon** **@no__t ve**sonra izni açın.  
 
    - **Şirket Portalı’nın, kişilerinize erişmesine izin verilsin mi?**
 
@@ -124,11 +125,11 @@ Kayıt sırasında Cihazınızı kullanma şeklinizi en iyi şekilde açıklayan
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 
-Şirket uygulamalarını yüklemeyi denemeden önce Git **ayarları** > **güvenlik**ve açma **bilinmeyen kaynaklar**. Uygulamaları yüklemeyi denemeden önce bu seçeneği açmazsanız aşağıdaki iletiyi görürsünüz: "Yükleme engellendi. Güvenlik nedeniyle cihazınız bilinmeyen kaynaklardan gelen uygulamaların yüklenmesini engelleyecek şekilde ayarlanmış." iletisini görürsünüz. Hata iletişim kutusunda **Ayarlar** öğesine dokunarak **Bilinmeyen kaynaklar** seçeneğine gidin.  
+Şirket uygulamalarını yüklemeyi denemeden önce **ayarlar** > **güvenlik**' e gidin ve **Bilinmeyen kaynaklar**' ı açın. Uygulamaları yüklemeyi denemeden önce bu seçeneği açmazsanız "Yükleme engellendi. Güvenlik nedeniyle cihazınız bilinmeyen kaynaklardan gelen uygulamaların yüklenmesini engelleyecek şekilde ayarlanmış." iletisini görürsünüz. Hata iletişim kutusunda **Ayarlar** öğesine dokunarak **Bilinmeyen kaynaklar** seçeneğine gidin.  
 
 > [!Note]
 > Kuruluşunuzda telekomünikasyon gider yönetimi yazılımı kullanılıyorsa, cihazınız tam olarak kaydedilmeden önce tamamlamanız gereken ek birkaç adım vardır. Daha fazla bilgiyi [burada](enroll-your-device-with-telecom-expense-management-android.md) bulabilirsiniz.
 
-Cihazınızı ıntune'a kaydetmeye çalışırken hata alırsanız, yapabilecekleriniz [şirketinizin Destek e-posta](send-logs-to-your-it-admin-by-email-android.md).  
+Cihazınızı Intune 'a kaydetmeyi denerken bir hata alırsanız, [şirketinizin destek 'e e-posta](send-logs-to-your-it-admin-by-email-android.md)gönderebilirsiniz.  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek birimine başvurun (iletişim bilgileri için [Şirket Portalı web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın) veya <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android ekibine</a> yazın.

@@ -1,5 +1,5 @@
 ---
-title: JAMF Pro 'Yu uyumluluk için Microsoft Intune tümleştirin
+title: Uyumluluk için Jamf Pro’yu Microsoft Intune ile tümleştirme
 titleSuffix: Microsoft Intune
 description: JAMF tarafından yönetilen cihazların tümleştirilmesine ve güvenliğini sağlamaya yardımcı olmak için Azure Active Directory Koşullu erişimle Microsoft Intune uyumluluk ilkeleri kullanın.
 keywords: ''
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09566e314f801c0de3f371384126cf672403b6a3
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: a75b1403e351981d1f6ab827d4c10648430b21fb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306627"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504602"
 ---
-# <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için JAMF Pro 'Yu Intune ile tümleştirme
+# <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
-Uygulama hedefi: Intune Azure portal
+Uygulama hedefi: Azure portalında Intune
 
 Kuruluşunuz macOS cihazlarını yönetmek için [JAMF Pro 'yu](https://www.jamf.com) kullandığında, kuruluşunuzdaki cihazların erişebilmeleri için uyumlu olduğundan emin olmak için Azure Active Directory (Azure AD) koşullu erişim ile Microsoft Intune uyumluluk ilkelerini kullanabilirsiniz. Şirket kaynakları. Bu makale, Intune ile JAMF tümleştirmesini yapılandırmanıza yardımcı olur.
 
@@ -40,9 +41,9 @@ Tümleştirmeyi yapılandırdıktan sonra JAMF ve Intune 'u, JAMF tarafından y�
 ### <a name="products-and-services"></a>Ürünler ve hizmetler
 JAMF Pro ile koşullu erişimi yapılandırmak için aşağıdakiler gerekir:
 
-- JAMF Pro 10.1.0 veya üzeri
+- Jamf Pro 10.1.0 veya daha yenisi
 - [MacOS için Şirket Portalı uygulaması](https://aka.ms/macoscompanyportal)
-- OS X 10,11 Yosemite veya üzeri olan macOS cihazları
+- OS X 10.11 ile Yosemite veya sonrası olan macOS cihazları
 
 ### <a name="network-ports"></a>Ağ bağlantı noktaları
 <!-- source: https://support.microsoft.com/en-us/help/4519171/troubleshoot-problems-when-integrating-jamf-with-microsoft-intune -->
@@ -69,7 +70,7 @@ Intune 'u JAMF Pro ile bağlamak için:
 2. Intune 'u JAMF Pro ile tümleşecek şekilde etkinleştirin.
 3. JAMF Pro 'da koşullu erişimi yapılandırın.
 
-## <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory’de uygulama oluşturma
+## <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory bir uygulama oluşturma
 
 1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **uygulama kaydı**' na gidin ve ardından **Yeni kayıt**' ı seçin. 
 
@@ -101,7 +102,7 @@ Intune 'u JAMF Pro ile bağlamak için:
     > [!NOTE]
     > İstemci parolasının süresi dolarsa, Azure 'da yeni bir istemci parolası oluşturmanız ve ardından JAMF Pro 'daki koşullu erişim verilerini güncelleştirmeniz gerekir. Azure, hizmet kesintilerini engellemek için hem eski gizli anahtar hem de yeni anahtarın etkin olmasını sağlar.
 
-## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune 'u JAMF Pro ile tümleşecek şekilde etkinleştirme
+## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Jamf Pro ile tümleştirmek için Intune’u etkinleştirme
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın ve **Microsoft Intune** > **cihaz uyumluluğu** > **iş ortağı cihaz yönetimi**' ne gidin.
 
@@ -109,9 +110,9 @@ Intune 'u JAMF Pro ile bağlamak için:
 
 3. **Kaydet**’i seçin.
 
-## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>JAMF Pro 'da Microsoft Intune tümleştirmesini yapılandırma
+## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro'da Microsoft Intune tümleştirmesini yapılandırma
 
-1. JAMF Pro 'da **genel yönetim** > **koşullu erişim**' e gidin. **MacOS Intune tümleştirmesi** sekmesinde **Düzenle** düğmesine tıklayın.
+1. Jamf Pro'da **Küresel Yönetim** > **Şartlı Erişim**'e gidin. **MacOS Intune tümleştirmesi** sekmesinde **Düzenle** düğmesine tıklayın.
 
 2. **MacOS Için Intune tümleştirmesini etkinleştir**onay kutusunu işaretleyin.
 
@@ -138,5 +139,5 @@ Kuruluşunuzda Mac 'i yönetmek için JAMF Pro 'Yu kullanmıyorsanız ve kullan�
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [JAMF tarafından yönetilen cihazlara uyumluluk ilkeleri uygulama](conditional-access-assign-jamf.md)
+- [Jamf tarafından yönetilen cihazlar için uyumluluk ilkelerini uygula](conditional-access-assign-jamf.md)
 - [Veri JAMF, Intune 'a gönderiyor](data-jamf-sends-to-intune.md)

@@ -9,6 +9,7 @@ ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f207f1f94d34e6aa1768bb5ae0f5179710839c71
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: e468042ab81d563c9fa4b272661508a340d61aa9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099861"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506240"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Şirket kaynaklarınıza iOS cihaz erişimi ayarlayın  
 
@@ -80,7 +81,7 @@ Kayıt sırasında birkaç dakikadan uzun bir süre durakladığında uygulaman�
 > Bu sonraki adımlar ve ekranlar, iOS sürümünüze bağlı olarak farklılık gösterir. İOS sürümünüz için adımları izleyin. 
 
 6. Safari, cihazınızda Şirket Portalı Web sitesini açar. Yapılandırma profilini indirmeniz istendiğinde, **Izin ver**' e dokunun. Çalıştıran bir cihazımız varsa:  
-    * iOS 12,2 ve üzeri: İndirme işlemi tamamlandığında bitti ' ye dokunun **.** Bu makalede 7. adıma geçin.
+    * iOS 12,2 ve üzeri: İndirme tamamlandığında bitti ' ye dokunun **.** Bu makalede 7. adıma geçin.
     * iOS 12,1 ve öncesi: Ayarlar uygulamasına otomatik olarak yönlendirilirsiniz. Bu makaledeki 8. adıma atlayın.  
  
     Yanlışlıkla **Yoksay**' a dokunmanız durumunda sayfayı yenileyin. Şirket Portalı uygulamasını açmanız istenir. Uygulamadan **tekrar indir**' e dokunabilirsiniz.
@@ -94,7 +95,7 @@ Kayıt sırasında birkaç dakikadan uzun bir süre durakladığında uygulaman�
 
 8. Ayarlar uygulamasına gidin ve **profil indirildi**' a dokunun.  
 
-    **İndirilen profil** bir seçenek olarak görünmezse **genel** > **profiller**' e gidin. Profili hala görmüyorsanız, yeniden indirmeniz gerekebilir.  
+    **Indirilen profil** bir seçenek olarak görünmezse, **genel** > **profillerine**gidin. Profili hala görmüyorsanız, yeniden indirmeniz gerekebilir.  
 
     ![Ayarlar uygulaması, profil Indirilen ayarı örnek ekran görüntüsü.](./media/ios-1904-settings-badge.PNG)  
 

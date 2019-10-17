@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ab0ebd9a7977b5433c814e9496276ce7a7fc900
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731733"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503097"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -280,7 +281,7 @@ Adlandırma biçiminin aşağıdaki gereksinimleri karşıladığından emin olu
 - Cihazlarınız için benzersiz bir ad oluşturun. Adlar 15 karakter veya daha az olmalıdır ve harf (a-z, A-Z), sayılar (0-9) ve kısa çizgi (verilere erişme) içerebilir.
 - Ancak tamamen sayıdan oluşamaz.
 - Adlarda boşluk bulunamaz.
-- Donanıma özgü bir seri numarası eklemek için% SERIAL% makrosunu kullanın. Ya da rastgele bir sayı dizesi eklemek için% S_SAYI_ÜRET: < basamak sayısı >% makrosunu kullanın, dize > rakamlardan oluşan < # sayısını içerir. Örneğin, MYPC-% S_SAYI_ÜRET:% 6, MYPC-123456 gibi bir ad oluşturur.
+- Donanıma özgü bir seri numarası eklemek için% SERIAL% makrosunu kullanın. Ya da rastgele bir sayı dizesi eklemek için% S_SAYI_ÜRET: < basamak sayısı >% makrosunu kullanın, dize > rakamlardan oluşan < # sayısını içerir. Örneğin, MYPC-% S_SAYI_ÜRET: %6, MYPC-123456 gibi bir ad oluşturur.
 
 ### <a name="something-went-wrong-oobeidps"></a>Bir sorun oluştu. OOBEIDPS.
 

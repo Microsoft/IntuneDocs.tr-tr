@@ -9,6 +9,7 @@ ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9047dd9bbc55162eae4693d3035cb05ff4becb91
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: ee725d118353e18924858569ac861992d19f839a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099854"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506191"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Şirket Portalı uygulaması ile macOS cihazınızı Intune’a kaydetme
 
@@ -60,7 +61,7 @@ MacOS 10,12 ve üstünü çalıştıran macOS cihazlarını kaydetmek için aşa
 
 4. __Cihazlar__ sayfasında yönetilen cihazlar listesi veya bir başlık görüntülenir. Göreceğiniz şey, yönetilen bir cihazınız olup olmamasına bağlıdır. 
     * Listede olmayan bir cihazı eklemek için **Hangi cihazı kullandığınızı bizimle paylaşmak veya yeni bir cihaz eklemek için buraya dokunun** yazılı başlığı seçin.
-    * Hiç aygıtınız yoksa, başlık şunu okur: **Yönetilen bir aygıtınız yok. Buraya dokunup cihazı ekleyin.** Cihazınızı eklemek için başlığa tıklayın.  
+    * Hiç aygıtınız yoksa, başlık şunu okur: **yönetilen bir aygıtınız yok. Buraya dokunarak bu olanı ekleyin.** Cihazınızı eklemek için başlığa tıklayın.  
 
      ![Tıklanacak yeri vurgulamak için başlık seçeneği etrafında kırmızı kare bulunan Cihazlar sayfasının ekran görüntüsü.](./media/CP-enroll-MACOS-1808.png)  
 5. Aşağıdaki adımlardan hangisi Şirket Portalı’nda görmekte olduğunuz iletiyle eşleşiyorsa onu tamamlayın.  
@@ -76,7 +77,7 @@ MacOS 10,12 ve üstünü çalıştıran macOS cihazlarını kaydetmek için aşa
 
 7. Yükleyici tamamlandığında **Başlatma çubuğuna** gidin ve **Şirket Portalı**’nı açın.  
 
-8. macOS cihazınız, Şirket Portalı uygulamasını açmak istediğinizi onaylamanızı ister. Tıklayın **açık**.  
+8. macOS cihazınız, Şirket Portalı uygulamasını açmak istediğinizi onaylamanızı ister. **Aç**'a tıklayın.  
 
    > [!TIP]
    > Cihazınızın, kuruluşunuzun kaynaklarına erişmek için yeterli güvenliğe sahip olduğunu doğrulamak için Intune'un bilgisayarınıza erişmesi gerekir. Bilgisayarınız Şirket Portalı uygulamasını açmazsa [ağ geçidi denetleyicisini kapatın](https://support.apple.com/HT202491). Ardından uygulamayı açın.

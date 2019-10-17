@@ -1,6 +1,6 @@
 ---
-title: Karşıya yükleme ve bir USB kablosu kullanarak günlükleri e-posta | Microsoft Docs
-description: Veri günlüklerini USB kablosu ile bir CİHAZDAN karşıya yükle
+title: USB kablosu kullanarak karşıya yükleme ve e-posta günlükleri | Microsoft Docs
+description: USB kablosuyla cihazınızdaki veri günlüklerini karşıya yükleme
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 searchScope:
@@ -18,19 +19,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 071a6e7a4db6fbe6c13ffc6753ae73c5ce63660b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8a0ffebe7472666ce9ccd53a47460ab5f0a9b34d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491019"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508324"
 ---
-# <a name="upload-and-email-logs-using-a-usb-cable"></a>Karşıya yükleme ve bir USB kablosu kullanarak günlükleri e-posta
+# <a name="upload-and-email-logs-using-a-usb-cable"></a>USB kablosu kullanarak karşıya yükleme ve e-posta günlükleri
 
-E-posta şirketinizin destek birimi Şirket portalı uygulamasında karşılaştığınız sorun hakkında. Hata ayrıntılarını kaydedilir ve adlı özel bir belgede Cihazınızda depolanan bir _tanılama günlüğü_. Bu makalede, bilgisayarınıza cihazınızdan günlüklerin karşıya nasıl yükleneceği açıklanır. Bu adımları tamamlamak için USB kablosu gerekir.   
+Şirket Portalı uygulamasında karşılaştığınız bir sorun hakkında e-posta şirketi desteği. Hata ayrıntıları, cihazınızda, _tanılama günlüğü_adlı özel bir belgede kaydedilir ve depolanır. Bu makalede, günlüklerin bilgisayarınıza nasıl yükleneceği açıklanır. Bu adımları tamamlayabilmeniz için bir USB kablonuz olması gerekir.   
 
 > [!Note]
-> Başlamadan önce destek ekibinizin e-posta adresini bildiğinizden emin olun. Şirket iletişim bilgilerini bulun [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) ve Şirket portalı uygulaması. 
+> Başlamadan önce destek ekibinizin e-posta adresini kullanışlı bir şekilde kullandığınızdan emin olun. [Şirket portalı Web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980) ve şirket portalı uygulamasında iletişim bilgilerini bulun. 
 
 1. Hata ekranında **Bilgi Gönder**’e dokunun. Günlükleri göndermek için hangi yöntemi kullanmak istediğinizi soran bir ileti gördüğünüzde, dosyaları cihazınıza kaydedecek seçeneği işaretleyin.  
 

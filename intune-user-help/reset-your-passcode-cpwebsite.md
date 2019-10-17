@@ -9,6 +9,7 @@ ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
-ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.openlocfilehash: 2056d37b00f5e2ae7b36c6e1c02f20dc244eb290
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71163355"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502135"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihaz geçiş kodunuzu sıfırlama
 
@@ -47,7 +48,7 @@ Android 7,0 ve üstünü çalıştıran cihazlarda geçiş kodu sıfırlaması k
 
     ![Daha fazla simgenin kırmızı oklu vurgulanmış ekran görüntüsü.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. İstendiğinde, **Oturumu kapat**’a tıklayın. Yeniden istendiğinde, tekrar oturum açın. Beş dakika içinde Şirket Portalı Web sitesinde yeniden oturum açın veya Şirket Portalı cihaz geçiş kodunu sıfırlayamaz.  
+4. İstendiğinde **Oturumu Kapat**' a tıklayın. Tekrar sorulduğunda tekrar oturum açın. Beş dakika içinde Şirket Portalı Web sitesinde yeniden oturum açın veya Şirket Portalı cihaz geçiş kodunu sıfırlayamaz.  
 
    > [!NOTE]
    > Kimliğinizi doğrulamak için yeniden oturum açmanız gerekir. Bu, kötü amaçlı cihaz geçiş kodu sıfırlama girişimlerine karşı bir önlemdir.
@@ -73,12 +74,12 @@ Android 7,0 ve üstünü çalıştıran cihazlarda geçiş kodu sıfırlaması k
 
 Bu bölüm, geçiş kodunu sıfırlamayı ve tüm cihaz platformlarındaki parola davranışını açıklar.  
 
-**Android**: Mevcut geçiş kodunu kaldırır ve harflerden ve numaralardan oluşan geçici bir geçiş kodu oluşturur.
+**Android**: Mevcut geçiş kodunu kaldırır; harfler ve sayılardan oluşan geçici bir geçiş kodu oluşturur.
 
-**iOS**: Mevcut geçiş kodunu kaldırır ve geçici bir geçiş kodu oluşturmaz. Cihazınızı açmak veya satın alma işlemleri yapmak için Touch ID kullanırsanız, tekrar ayarlamanız gerekir.  
+**iOS**: mevcut geçiş kodunu kaldırır ve geçici bir geçiş kodu oluşturmaz. Cihazınızı açmak veya satın alma işlemleri yapmak için Touch ID kullanırsanız, tekrar ayarlamanız gerekir.  
 
-**Windows 10 Mobile**: Mevcut geçiş kodunu kaldırır ve harflerden ve numaralardan oluşan geçici bir geçiş kodu oluşturur. Bu ayarlanırsa, Windows Hello yüz tanıma cihazda çalışmaya devam eder.
+**Windows 10 Mobile**: Mevcut geçiş kodunu kaldırır; harfler ve sayılardan oluşan geçici bir geçiş kodu oluşturur. Bu ayarlanırsa, Windows Hello yüz tanıma cihazda çalışmaya devam eder.
 
-**Windows Phone 8,1**: Mevcut geçiş kodunu kaldırır ve sayıdan oluşan geçici bir geçiş kodu oluşturur.  
+**Windows Phone 8.1**: Mevcut geçiş kodunu kaldırır, sayılardan oluşan geçici bir geçiş kodu oluşturur.  
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

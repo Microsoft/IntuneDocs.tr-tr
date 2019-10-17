@@ -1,6 +1,6 @@
 ---
 title: Windows için Intune Şirket Portalı’ndan uygulama yükleme
-description: Yükleme ve Windows için Şirket portalı uygulamasından uygulama paylaşma
+description: Windows için Şirket Portalı App 'ten uygulama yükleyip paylaşma
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,28 +19,29 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cb8168075badda65b3cd02f8ae059119769c7c
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413886"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506122"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
+
 Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
 
 ## <a name="install-apps"></a>Uygulama yükleme
 
 1. Şirket Portalı’nı açın ve iş veya okul hesabınızla oturum açın.  
 
-    ![Windows 10 için Şirket Portalı uygulaması giriş sayfası.](./media/RS1_AppDetailsPage_Installed_03.png)    
+    ![Windows 10 için Şirket Portalı uygulaması giriş sayfası.](./media/RS1_AppDetailsPage_Installed_03.png)
 2. Şirket Portalı uygulamasının aşağıdaki bölümlerinden birinde uygulamaları bulup yükleyin:  
 
-    * **Giriş**: Kuruluşunuzun öne çıkan uygulamalar listesinden seçin.  
-    * **Tümünü Göster**: Gelen **giriş sayfası** > **uygulamaları** bölümünde **Tümünü Göster** tüm kullanılabilir uygulamaları görmek için.  
-    * **Tüm uygulamalar**: Bu sayfa, yüklü ve öne çıkan dahil olmak üzere tüm kullanılabilir uygulamaları görmek için Gezinti bölmesinde seçin. Görüntüleme, sıralama ve filtre uygulamalar. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
-    * **Uygulama kategorileri**: Gezinti bölmesinde, tür veya işlev göre uygulamaları seçmek için bu sayfayı seçin. Uygulamaları sıralanır kategoriler altında gibi **öne çıkan**, **eğitim**, ve **üretkenlik**.  
-    * **Uygulama arama**: Statik Arama çubuğuna uygulamanın Gezinti Bölmesi'nde bulunur.  Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
+    * **Giriş**: Kuruluşunuzun öne çıkan uygulamalar listesinden bir seçim yapın.  
+    * **Tümünü göster**: **Giriş sayfası** > **Uygulamalar** bölümünde **Tümünü göster**'e tıklayarak bulunan tüm uygulamaları görüntüleyin.  
+    * **Tüm uygulamalar**: Yüklü olanlar ve öne çıkanlar dahil bulunan tüm uygulamaları görmek için gezinti bölmesinde bu sayfayı seçin. Uygulamaları görüntüleyin, sıralayın ve filtreleyin. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
+    * **Uygulama kategorileri**: tür veya işleve göre uygulamalar seçmek için gezinti bölmesinde bu sayfayı seçin. Uygulamalar **öne çıkan**, **eğitim**ve **üretkenlik**gibi Kategoriler altında sıralanır.  
+    * **Uygulama ara**: Uygulamanın gezinti bölmesinde statik bir arama çubuğu durur.  Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
 
 3. Bir uygulama seçin.   
 4. Uygulama ayrıntıları sayfasında **Yükle**'ye tıklayın. Yükleme tamamlandıktan sonra **Yüklendi** durumunu göreceksiniz.  
@@ -49,7 +51,7 @@ Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
     ![Windows 10 için Şirket Portalı uygulaması, uygulama ayrıntıları sayfası, uygulama yüklendikten sonra gösterilen "Yüklendi" durumu. Yükleme düğmesi Yeniden Yükle olarak değişir.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
 > [!IMPORTANT]
-> Yüklemek gerekli bir uygulama başarısız olur ve kuruluşunuzun el ile yükleyin, seçmek için kullanılabilir yapar **yeniden**. Bu güncelleştirilmiş durumunu görmek on dakika kadar sürebilir. Seçerseniz **yeniden** yeniden sırasında bu saat ve uygun olan bir hata alıyorsunuz. Güncelleştirilmiş bir durum için on dakika beklemeye devam edin.   
+> Gerekli bir uygulama yüklenemezse ve kuruluşunuz bunu el ile yüklemek için kullanılabilir hale getirir, **yeniden dene**' yi seçin. Güncelleştirilmiş durumu görmek yaklaşık on dakika sürebilir. Bu süre boyunca yeniden **dene** ' yi seçer ve bir hata alırsanız, bu sorun devam edersiniz. Güncelleştirilmiş bir durum için on dakika beklemeye devam edin.   
 
 Şirketinizin büyüklüğüne bağlı olarak Şirket Portalı'nda indirilebilecek birden fazla Office sürümü görebilirsiniz. Windows cihazları için Office paketi hakkında daha ayrıntılı bilgi için bkz. [Windows cihazınıza Office 365 yükleme](./install-office-windows.md).
 
@@ -67,34 +69,34 @@ Uygulamaları iş veya okuldaki tanıdığınız kişilerle paylaşın veya bu k
 
 Paylaşmadan sonra alıcı bir bağlantı ve uygulama ayrıntılarını görüntülemek için bir ileti alır. Bağlantı Şirket Portalı **Uygulama ayrıntıları** sayfasını açar. 
 
-## <a name="available-and-required-apps"></a>Gerekli ve kullanılabilir uygulamalar
-Uygulamaların size kuruluşunuz tarafından atanan ve şirket Portalı'nda etiketlenmiş **kullanılabilir** veya **gerekli**. 
+## <a name="available-and-required-apps"></a>Kullanılabilir ve gerekli uygulamalar
+Uygulamalar size kuruluşunuz tarafından atanır ve **kullanılabilir** veya **gerekli**olduğu gibi şirket portalı etiketlidir. 
 
-* Kullanılabilir uygulamalar: Bu uygulamalar, kuruluşunuz tarafından seçilir ve iş veya Okul için uygun ve kullanışlı. İsteğe bağlı oldukları yükleyin ve yalnızca uygulamaları yüklemek için şirket Portalı'nda bulabilirsiniz. 
+* Kullanılabilir uygulamalar: Bu uygulamalar kuruluşunuz tarafından seçilir ve uygun ve iş ya da okul için yararlıdır. Yüklemek için isteğe bağlıdır ve yüklemek üzere Şirket Portalı bulacağınız uygulamalar vardır. 
 
-* Gerekli uygulamaları: Bu uygulamalar, iş ve Okul için gerekli olan ve doğrudan cihazınıza dağıtılır. Bu uygulamalar otomatik olarak sizin için müdahalesi olmadan yüklenir. 
+* Gerekli uygulamalar: Bu uygulamalar iş ve okul için gereklidir ve doğrudan cihazınıza dağıtılır. Bu uygulamalar sizin için müdahale etmeden otomatik olarak yüklenir. 
 
-Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, Windows için Şirket portalı uygulamasını kullanıyorsanız, Windows uygulamaları, ancak iOS uygulamaları için erişim gerekir.
+Uygulamalar, cihaz türüne bağlı olarak sizin için de kullanılabilir hale getirilir. Örneğin, Windows için Şirket Portalı uygulamasını kullanıyorsanız, iOS uygulamalarına değil, Windows uygulamalarına erişebilirsiniz.
 
-## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek  
-Uygulama gerekiyor, ancak şirket portalında görmüyorum varsa, bu istek. İletişim ayrıntılarını bulun, **Yardım Masası** Şirket portalı uygulamasında Yardım ve Destek sayfasında. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).    
+## <a name="request-an-app-for-work-or-school"></a>İş veya okul için bir uygulama isteyin  
+İhtiyacınız olan bir uygulamaya sahipseniz, ancak Şirket Portalı görmüyorsanız, isteyin. Yardım & Destek sayfasında, Şirket Portalı uygulamasındaki Yardım **masasına** ait iletişim ayrıntılarını bulun. Aynı iletişim bilgilerini [Şirket portalı Web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980)bulacaksınız.    
 
-  ![Windows 10, Yardım ve Destek sayfasında, Yardım Masası ayrıntıları vurgulamak için Şirket portalı uygulaması. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+  ![Windows 10 için Şirket Portalı uygulaması, yardım masası ayrıntılarını vurgulayan yardım & destek sayfası. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
-## <a name="view-installed-apps"></a>Uygulamaları yüklü görüntüleme  
-Cihazınıza yüklenen tüm uygulamaların bir listesini görüntüleyin. **Yüklenen uygulamalar** her uygulamayla ilgili aşağıdaki ayrıntıları sayfasında listelenir:
+## <a name="view-installed-apps"></a>Yüklü uygulamaları görüntüleme  
+Cihazınızda yüklü tüm uygulamaların listesini görüntüleyin. **Yüklü uygulamalar** sayfasında her uygulamayla ilgili aşağıdaki ayrıntılar listelenir:
 
-* Ad: Uygulama adı. Kullanılabilir uygulamalar için bir bağlantı eklemek **uygulama ayrıntılarını** sayfası.
-* Atama türü: Nasıl uygulama atanır ve size sunulan. 
-* Yayımcı: Geliştirici veya dağıtılmış uygulamayı şirket adı. Bir yayımcı, genellikle bir yazılım satıcısı veya kuruluşunuz oluşur.  
-* Yayımlanma tarihi: Uygulamayı indirmek kullanılabilir olan tarih. Yayımlama tarihi uygulamanın ilk sürüm göstermek veya bir uygulamanın en son güncelleştirme.
-* Durum: Cihazınızda uygulamayı geçerli yükleme durumu. Uygulamaları gösterebilir yükleme olarak yüklü ve yükleme başarısız oldu. Gerekli uygulamaları bir güncel durumunu göstermek için 10 dakika sürebilir. Altındaki nota bakın [uygulama yükleme](#install-apps) için gerekli bir uygulama yükleme hakkında önemli ayrıntıları. 
+* Ad: uygulamanın adı. Kullanılabilir uygulamalar, **uygulama ayrıntıları** sayfasının bağlantısını içerir.
+* Atama türü: uygulama nasıl atanır ve size kullanılabilir hale getirilir. 
+* Yayımcı: uygulamayı dağıtmayan geliştirici veya şirketin adı. Yayımcı genellikle bir yazılım satıcısı veya kuruluştur.  
+* Yayımlanma tarihi: uygulamanın indirilmek üzere kullanılabilir hale getirilme tarihi. Yayımlama tarihi, bir uygulamanın ilk sürümünü veya uygulamanın en son güncelleştirmesini gösterebilir.
+* Durum: cihazınızdaki uygulamanın geçerli yükleme durumu. Uygulamalar yükleme, yükleme ve yükleme başarısız olarak gösterilebilir. Gerekli uygulamalar güncel durumu göstermek için 10 dakikaya kadar sürebilir. Gerekli bir uygulamayı yükleme hakkında önemli ayrıntılar için [uygulamaları yükleme](#install-apps) altındaki nota bakın. 
 
-Bu sayfaya ulaşmak için Gezinti menüsüne gidin ve seçin **yüklenen uygulamalar**. 
+Bu sayfaya ulaşmak için, gezinti menüsüne gidin ve **yüklü uygulamalar**' ı seçin. 
 
-  ![Yüklü uygulamalar sayfası olan Windows 10 için Şirket portalı uygulamasının örnek ekran görüntüsü. ](./media/installed-apps-cp-1906.png)  
+  ![Windows 10 için Şirket Portalı uygulamasının yüklü uygulamalar sayfasında örnek ekran görüntüsü. ](./media/installed-apps-cp-1906.png)  
 
 
-Kullanım **sıralama ölçütü** publisher, uygulamaları atama türü adına göre alfabetik sırada yeniden düzenleyebilir veya kronolojik olarak yayımlama tarihi için. Kullanım **filtre** yükleme durumu tarafından gördüğünüz uygulamaları sınırlamak için.  Uygulama yok ise, hiçbir şirket uygulamaları yüklü olan bir ileti görürsünüz.  
+Uygulamalar atama türünü, yayımcıyı, ada göre alfabetik olarak veya yayımlama tarihine göre kronolojik olarak yeniden düzenlemek için **sıralama ölçütü** ' nu kullanın. Yükleme durumuna göre gördüğünüz uygulamaları sınırlamak için **filtre ölçütü** ' ni kullanın.  Kullanılabilir uygulama yoksa, hiçbir şirket uygulaması yüklenmediğini belirten bir ileti görürsünüz.  
 
 Ek Yardım mı gerekiyor? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

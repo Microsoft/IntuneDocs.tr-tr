@@ -9,6 +9,7 @@ ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50833b33583dcc1b49eb9009995b8ccd6c79e1f0
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e64911ea9b1b1d3c619a82eac9dc78e4e78a53e9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546639"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508135"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Windows cihazınızı yönetimden kaldırma
 
@@ -92,8 +93,8 @@ Bir Windows 8.1 telefonunu Intune'dan kaldırmak için aşağıdaki adımları t
 
 Şirket Portalı’nın Windows cihazınızda depoladığı iki tür veri vardır:
 
-- **Tanılama günlükleri**: Microsoft tarafından toplanan standart uygulama etkinlik verileri. Bu, Şirket Portalı uygulamasını kaldırdığınızda otomatik olarak silinir. Uygulama etkinlik verileri, uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi verilerdir.
-- **Uygulama önbelleği**: Simge ve ayarlar gibi çalışması uygulama için gerekli olan dosyaları destekler.
+- **Tanılama günlükleri**: Microsoft’un topladığı standart uygulama etkinliği verileri. Bu, Şirket Portalı uygulamasını kaldırdığınızda otomatik olarak silinir. Uygulama etkinlik verileri, uygulamanın ne kadar süre açık kaldığı veya kilitlenip kilitlenmediği gibi verilerdir.
+- **Uygulama önbelleği**: Simge ve ayarlar gibi bir uygulamanın çalışması için gereken destek dosyaları.
 
 Depolanan günlükleri ve önbelleği silmek için aşağıdaki adımlardan birini tamamlayın:
 

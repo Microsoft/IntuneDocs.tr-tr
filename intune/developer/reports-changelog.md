@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a1e797f1ed7b0e60d0f9550eaa9e571b8701ca4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f9740eed3ab727d76a9af4e46642d8279b310fd9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730237"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490530"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune Veri Ambarı API’si için değişiklik günlüğü
 
@@ -51,15 +52,15 @@ Aşağıdaki tabloda, daha önce **Mdmdeviceınventorygeçmişin** koleksiyonund
 
 |    Eski Özellik                |    Değiştirme/değiştirme                                                           |
 |--------------------------------|---------------------------------------------------------------------------------|
-|    CellularTechnology          |    cihazlar koleksiyonunda cellularTechnology                                     |
+|    cellularTechnology          |    cihazlar koleksiyonunda cellularTechnology                                     |
 |    DeviceClientID              |    cihazlar koleksiyonundaki DeviceID                                               |
 |    deviceManufacturer          |    cihazlar için üretici koleksiyonu                                           |
 |    deviceModel                 |    cihazlar koleksiyonundaki model                                                  |
-|    DeviceName                  |    cihazlar koleksiyonundaki aygıtadı                                             |
+|    deviceName                  |    cihazlar koleksiyonundaki aygıtadı                                             |
 |    deviceOsPlatform            |    cihazlar koleksiyonunda deviceTypeKey                                          |
 |    deviceOsVersion             |    Devicepropertygeçmişde koleksiyonda osVersion                              |
-|    DeviceType                  |    cihazlar koleksiyonunda deviceTypeKey, DeviceType koleksiyonuna başvuruyor    |
-|    EncryptionState             |    cihazlar koleksiyonundaki encryptionState özelliği                           |
+|    deviceType                  |    cihazlar koleksiyonunda deviceTypeKey, DeviceType koleksiyonuna başvuruyor    |
+|    encryptionState             |    cihazlar koleksiyonundaki encryptionState özelliği                           |
 |    exchangeActiveSyncId        |    Devices koleksiyonundaki Easdeviceıd özelliği                               |
 |    Exchangedeviceıd            |    cihazlar koleksiyonundaki Easdeviceıd                                            |
 |    imei                        |    cihazlar için IMEI koleksiyonu                                                   |
@@ -68,7 +69,7 @@ Aşağıdaki tabloda, daha önce **Mdmdeviceınventorygeçmişin** koleksiyonund
 |    meid                        |    cihazlar koleksiyonundaki MEID özelliği                                      |
 |    $                         |    cihazlar için üretici koleksiyonu                                           |
 |    osName                      |    cihazlar koleksiyonunda deviceTypeKey, DeviceType koleksiyonuna başvuruyor    |
-|    PhoneNumber                 |    cihazlar koleksiyonundaki phoneNumber                                            |
+|    phoneNumber                 |    cihazlar koleksiyonundaki phoneNumber                                            |
 |    platformType                |    cihazlar koleksiyonundaki model                                                  |
 |    ürün                     |    cihazlar koleksiyonunda deviceTypeKey                                          |
 |    productVersion              |    Devicepropertygeçmişde koleksiyonda osVersion                              |
@@ -85,7 +86,7 @@ Aşağıdaki tabloda [Devicepropertygeçmişleri](intune-data-warehouse-collecti
 |    CategoryID                    |    deviceCategoryKey, deviceCategories koleksiyonuna başvuruyor       |
 |    certExpirationDate            |    Kaldırılır                                                          |
 |    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
-|    CreatedDate                   |    cihazlar koleksiyonunda Kaydoleddatetime                           |
+|    createdDate                   |    cihazlar koleksiyonunda Kaydoleddatetime                           |
 |    deviceTypeKey                 |    cihazlar koleksiyonunda deviceTypeKey                              |
 |    Easıd                         |    cihazlar koleksiyonundaki Easdeviceıd                                |
 |    Kaydolma kullanıcısı                |    cihazlar koleksiyonundaki Kullanıcı kimliği                                     |
@@ -98,13 +99,13 @@ Aşağıdaki tabloda [Devicepropertygeçmişleri](intune-data-warehouse-collecti
 |    lastExchangeStatusUtc         |    Kaldırılır                                                          |
 |    lastModifiedDateTimeUTC       |    Kaldırılır                                                          |
 |    lastPolicyUpdateUtc           |    Kaldırılır                                                          |
-|    ManagementAgentKey            |    managementStateKey                                               |
+|    managementAgentKey            |    managementStateKey                                               |
 |    üretici                  |    cihazlar için üretici koleksiyonu                               |
 |    mdmStatusKey                  |    Karmaşıkstes koleksiyonuna başvuruda bulunan Karmaşıkstatekey    |
 |    model                         |    cihazlar koleksiyonundaki model                                      |
 |    osFamily                      |    cihazlar koleksiyonunda operatingSystem                            |
 |    osRevisionNumber              |    cihazlar koleksiyonundaki osVersion                                  |
-|    processorArchitecture         |    Kaldırılır                                                          |
+|    ProcessorArchitecture         |    Kaldırılır                                                          |
 |    Referenceıd                   |    cihazlar koleksiyonundaki Azureaddeviceıd                            |
 |    serialNumber                  |    cihazlar koleksiyonunda serialNumber                               |
 |    workplaceJoinStateKey         |    azureAdRegistered                                                |
@@ -116,20 +117,20 @@ Aşağıdaki tabloda, [cihazlar](intune-data-warehouse-collections.md#devices) k
 |    CategoryID                    |    deviceCategoryKey, deviceCategories koleksiyonuna başvuruyor       |
 |    certExpirationDate            |    Kaldırılır                                                          |
 |    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
-|    CreatedDate                   |    Kaydoleddatetime                                                 |
+|    createdDate                   |    Kaydoleddatetime                                                 |
 |    Easıd                         |    Easdeviceıd                                                      |
 |    Kaydolma kullanıcısı                |    UserID                                                           |
 |    kayıtkonumunda Menttypekey             |    deviceEnrollmentTypeKey                                          |
 |    Graphdeviceısuyumlu        |    Kaldırılır                                                          |
 |    Graphdeviceısmanaged          |    Kaldırılır                                                          |
-|    lastContact                   |    LastSyncDateTime                                                 |
+|    lastContact                   |    lastSyncDateTime                                                 |
 |    lastContactNotification       |    Kaldırılır                                                          |
 |    Lastcontactworkplacejoın      |    Kaldırılır                                                          |
 |    lastExchangeStatusUtc         |    Kaldırılır                                                          |
 |    lastPolicyUpdateUtc           |    Kaldırılır                                                          |
 |    mdmStatusKey                  |    Karmaşıkstes koleksiyonuna başvuruda bulunan Karmaşıkstatekey    |
-|    osFamily                      |    OperatingSystem                                                  |
-|    processorArchitecture         |    Kaldırılır                                                          |
+|    osFamily                      |    operatingSystem                                                  |
+|    ProcessorArchitecture         |    Kaldırılır                                                          |
 |    Referenceıd                   |    Azureaddeviceıd                                                  |
 |    workplaceJoinStateKey         |    azureAdRegistered                                                |
 
@@ -143,7 +144,7 @@ Aşağıdaki tabloda, [Mamapplications](intune-data-warehouse-collections.md#mam
 
 |    Eski Özellik       |    Değiştirme/değiştirme    |
 |-----------------------|--------------------------|
-|    ApplicationKey     |    mamApplicationKey     |
+|    applicationKey     |    mamApplicationKey     |
 |    ApplicationName    |    mamApplicationName    |
 |    Uygulama      |    mamApplicationId      |
 
@@ -153,14 +154,14 @@ Aşağıdaki tabloda, [mamApplicationInstances](intune-data-warehouse-collection
 |---------------------|--------------------------|
 |    Uygulama    |    mamApplicationId      |
 |    DeviceID         |    Mamdeviceıd           |
-|    DeviceType       |    mamDeviceType         |
-|    DeviceName       |    Mamaygıtadı         |
+|    deviceType       |    mamDeviceType         |
+|    deviceName       |    Mamaygıtadı         |
 
 Aşağıdaki tabloda, [Mamcheckins](intune-data-warehouse-collections.md#mamcheckins) koleksiyonunda bulunan özelliklerde yapılan değişiklikler listelenmiştir: 
 
 |    Eski Özellik      |    Değiştirme/değiştirme    |
 |----------------------|--------------------------|
-|    ApplicationKey    |    mamApplicationKey     |
+|    applicationKey    |    mamApplicationKey     |
 
 Aşağıdaki tabloda, [Kullanıcılar](intune-data-warehouse-collections.md#users) koleksiyonunda bulunan özelliklerde yapılan değişiklikler listelenmiştir: 
 

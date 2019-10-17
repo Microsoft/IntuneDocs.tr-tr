@@ -1,6 +1,6 @@
 ---
-title: Intune Şirket portalı Web sitesinden uygulamaları yönetme
-description: Kullanılabilir ve yüklü uygulamaları görüntüleyin ve yönetin
+title: Intune Şirket Portalı Web sitesinden uygulama yönetme
+description: Kullanılabilir ve yüklü uygulamaları yönetme ve görüntüleme
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,84 +19,84 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c7b91e63a559c45cbbcbd7056a7f5e259e07481
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416861"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506098"
 ---
-# <a name="manage-apps-from-the-company-portal-website"></a>Şirket portalı Web sitesinden uygulamaları yönetme 
-Ziyaret [Şirket portalı Web sitesine](https://portal.manage.microsoft.com) görüntülemek ve kuruluşunuzdaki uygulamaları yönetmek için. 
+# <a name="manage-apps-from-the-company-portal-website"></a>Şirket Portalı Web sitesinden uygulamaları yönetme 
+Kuruluşunuzdaki uygulamaları görüntülemek ve yönetmek için [Şirket portalı Web sitesini](https://portal.manage.microsoft.com) ziyaret edin. 
 
 ## <a name="view-all-apps"></a>Tüm uygulamaları görüntüle  
-Menüden **uygulamaları** kuruluşunuz tarafından kullanıma sunulan tüm uygulamaları görmek için. 
+Kuruluşunuzda sunulan tüm uygulamaları görmek için menüsünde **uygulamalar** ' ı seçin. 
 
-   ![Ekran görüntüsü, Şirket portalı Web sitesi, İyileştir seçeneklerini gösteren uygulamalar sayfasında.](./media/intune-view-apps-1907.png)  
+   ![Şirket Portalı Web sitesinin, uygulamalar sayfasının ekran görüntüsü, Iyileştirme seçeneklerini gösterir.](./media/intune-view-apps-1907.png)  
 
-Bu sayfada her uygulamayla ilgili aşağıdaki ayrıntıları listelenir:  
+Bu sayfada her uygulamayla ilgili aşağıdaki ayrıntılar listelenir:  
 
-* Ad: Uygulama Ayrıntıları sayfası bağlantısını içeren bir uygulama adı.
-* Yayımcı: Geliştirici veya dağıtılmış uygulamayı şirket adı. Bir yayımcı, genellikle bir yazılım satıcısı veya kuruluşunuz oluşur.  
-* Yayımlanma tarihi: Uygulamayı indirmek kullanılabilir olan tarih. Yayımlama tarihi uygulamanın ilk sürüm göstermek veya bir uygulamanın en son güncelleştirme.
-* Durum: Kullanılabilir, yüklenen ve yükleme içeren Cihazınızda uygulamanın geçerli durumu. 
-* Kategori: Uygulamanın işlevi veya gibi öne çıkan amaç, mühendislik, eğitim ve üretkenlik.  
+* Ad: uygulamanın ayrıntılar sayfasına bir bağlantı ile uygulamanın adı.
+* Yayımcı: uygulamayı dağıtmayan geliştirici veya şirketin adı. Yayımcı genellikle bir yazılım satıcısı veya kuruluştur.  
+* Yayımlanma tarihi: uygulamanın indirilmek üzere kullanılabilir hale getirilme tarihi. Yayımlama tarihi, bir uygulamanın ilk sürümünü veya uygulamanın en son güncelleştirmesini gösterebilir.
+* Durum: cihazınızda, kullanılabilir, yüklenmiş ve yükleme dahil olmak üzere uygulamanın geçerli durumu. 
+* Kategori: uygulama işlevi veya amacı, öne çıkan, mühendislik, eğitim ve üretkenlik gibi.  
 
-### <a name="search-and-refine"></a>Arama ve geliştirin   
+### <a name="search-and-refine"></a>Arama ve belirginleştirme   
 
-Uygulama bulmak için arama çubuğunu kullanın. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
+Uygulamaları bulmak için arama çubuğunu kullanın. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
 
-   ![Ekran görüntüsü, Şirket portalı Web sitesi, İyileştir seçeneklerini gösteren uygulamalar sayfasında.](./media/intune-refine-all-apps-1907.png)  
+   ![Şirket Portalı Web sitesinin, uygulamalar sayfasının ekran görüntüsü, Iyileştirme seçeneklerini gösterir.](./media/intune-refine-all-apps-1907.png)  
 
-Seçin **İyileştir** filtreleme ve sıralama görmek için Seçenekler. Dahil olmak üzere belirli ölçütlerle uygulamalar gösterilecek listeyi filtreleyin **türü**, **kullanılabilirlik**, ve **yayımcılar**. Seçin **sıralama** uygulamaların yeniden düzenlemek için:
+Filtre ve sıralama seçeneklerini görmek için **iyileştir** ' i seçin. **Türü**, **kullanılabilirliği**ve **yayımcıları**dahil olmak üzere belirli ölçütlere sahip uygulamaları göstermek için listeyi filtreleyin. Uygulamaları yeniden düzenlemek için **Sırala** ' yı seçin:
 
-* Uygulama adı, alfabetik olarak azalan veya artan 
-* Yayımcı adı alfabetik olarak azalan veya artan 
-* Yayımlama tarihi, eski veya en yeni  
+* Uygulama adı, artan veya azalan alfabetik 
+* Yayımcı adı, artan veya azalan alfabetik 
+* Yayımlama tarihi, en eski veya en yeni  
 
-## <a name="view-installed-apps"></a>Uygulamaları yüklü görüntüleme  
-Menüden **yüklü uygulamaların** cihazınıza yüklenen tüm uygulamaların bir listesini görüntülemek için.  
+## <a name="view-installed-apps"></a>Yüklü uygulamaları görüntüleme  
+Aygıtınızdaki yüklü tüm uygulamaların listesini görüntülemek için menüden **yüklü uygulamalar** ' ı seçin.  
 
-   ![Ekran görüntüsü, Şirket portalı Web sitesi, yüklü uygulamalar sayfası.](./media/intune-installed-apps-1907.png)  
+   ![Şirket Portalı Web sitesi, yüklü uygulamalar sayfasının ekran görüntüsü.](./media/intune-installed-apps-1907.png)  
 
 
-Bu sayfada her uygulamayla ilgili aşağıdaki ayrıntıları listelenir:  
+Bu sayfada her uygulamayla ilgili aşağıdaki ayrıntılar listelenir:  
 
-* Ad: Uygulama Ayrıntıları sayfası bağlantısını içeren bir uygulama adı.
-* Atama türü: Nasıl uygulama atanır ve size sunulan. Kullanılabilir ve gerekli uygulamaları daha fazla ayrıntı için bkz. Kuruluşunuz ya da bir uygulama için kendiniz yüklemek kullanılabilir yapabilir veya gerektirir ve bir uygulamanın, Cihazınızda otomatik olarak yüklemek.  
-* Yayımcı: Geliştirici veya dağıtılmış uygulamayı şirket adı. Bir yayımcı, genellikle bir yazılım satıcısı veya kuruluşunuz oluşur.  
-* Yayımlanma tarihi: Uygulamayı indirmek kullanılabilir olan tarih. Yayımlama tarihi uygulamanın ilk sürüm göstermek veya bir uygulamanın en son güncelleştirme.
-* Durum: Cihazınızda uygulamayı geçerli yükleme durumu. Uygulamaları gösterebilir yükleme olarak yüklü ve yükleme başarısız oldu. Gerekli uygulamaları bir güncel durumunu göstermek için 10 dakika sürebilir.  
+* Ad: uygulamanın ayrıntılar sayfasına bir bağlantı ile uygulamanın adı.
+* Atama türü: uygulama nasıl atanır ve size kullanılabilir hale getirilir. Daha fazla ayrıntı için bkz. kullanılabilir ve gerekli uygulamalar. Kuruluşunuz, uygulamayı sizin yükleyebileceğiniz şekilde kullanabilir veya bir uygulamayı cihazınıza otomatik olarak isteyebilir ve yükleyebilir.  
+* Yayımcı: uygulamayı dağıtmayan geliştirici veya şirketin adı. Yayımcı genellikle bir yazılım satıcısı veya kuruluştur.  
+* Yayımlanma tarihi: uygulamanın indirilmek üzere kullanılabilir hale getirilme tarihi. Yayımlama tarihi, bir uygulamanın ilk sürümünü veya uygulamanın en son güncelleştirmesini gösterebilir.
+* Durum: cihazınızdaki uygulamanın geçerli yükleme durumu. Uygulamalar yükleme, yükleme ve yükleme başarısız olarak gösterilebilir. Gerekli uygulamalar güncel durumu göstermek için 10 dakikaya kadar sürebilir.  
 
-### <a name="search-and-refine"></a>Arama ve geliştirin  
+### <a name="search-and-refine"></a>Arama ve belirginleştirme  
 
-Uygulama bulmak için arama çubuğunu kullanın. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
+Uygulamaları bulmak için arama çubuğunu kullanın. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
 
-   ![Ekran görüntüsü, Şirket portalı Web sitesi, yüklü uygulamalar seçenekleri daraltın.](./media/intune-installed-refine-1907.png)  
+   ![Şirket Portalı Web sitesinin, yüklü uygulamaların ve iyileştirme seçeneklerinin ekran görüntüsü.](./media/intune-installed-refine-1907.png)  
 
-Seçin **İyileştir** filtreleme ve sıralama görmek için Seçenekler. Dahil olmak üzere belirli ölçütlerle uygulamalar gösterilecek listeyi filtreleyin **türleri**, **yayımcılar**, ve **durumları**. Seçin **sıralama** uygulamaların yeniden düzenlemek için:
+Filtre ve sıralama seçeneklerini görmek için **iyileştir** ' i seçin. **Türler**, **yayımcılar**ve **durumlar**dahil olmak üzere belirli ölçütlere sahip uygulamaları göstermek için listeyi filtreleyin. Uygulamaları yeniden düzenlemek için **Sırala** ' yı seçin:
 
-* Uygulama adı, alfabetik olarak azalan veya artan  
-* Yayımcı adı alfabetik olarak azalan veya artan  
-* Yayımlama tarihi, eski veya en son  
+* Uygulama adı, artan veya azalan alfabetik  
+* Yayımcı adı, artan veya azalan alfabetik  
+* Yayımlama tarihi, en eski veya en son  
 
 Ek Yardım mı gerekiyor? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
 
-### <a name="available-and-required-apps"></a>Gerekli ve kullanılabilir uygulamalar
-Uygulamaların size kuruluşunuz tarafından atanan ve kullanılabilir veya gerekli olarak etiketlenmiş. **Yüklenen uygulamalar** sayfasında hangi uygulamaların bulunduğu altında gösterir **atama türü** sütun. 
+### <a name="available-and-required-apps"></a>Kullanılabilir ve gerekli uygulamalar
+Uygulamalar size kuruluşunuz tarafından atanır ve kullanılabilir ya da gerekli olarak etiketlenir. **Yüklü uygulamalar** sayfasında, **atama türü** sütunu altında sahip olduğunuz uygulamalar gösterilir. 
 
 
-* Kullanılabilir uygulamalar: Bu uygulamalar, kuruluşunuz tarafından seçilir ve iş veya Okul için uygun ve kullanışlı. İsteğe bağlı oldukları yükleyin ve yalnızca uygulamaları yüklemek için şirket Portalı'nda bulabilirsiniz. 
+* Kullanılabilir uygulamalar: Bu uygulamalar kuruluşunuz tarafından seçilir ve uygun ve iş ya da okul için yararlıdır. Yüklemek için isteğe bağlıdır ve yüklemek üzere Şirket Portalı bulacağınız uygulamalar vardır. 
 
-* Gerekli uygulamaları: Kuruluşunuz, Cihazınızı doğrudan gerekli iş ve Okul uygulamalar dağıtabilirsiniz. Bu uygulamalar otomatik olarak sizin için müdahalesi olmadan yüklenir. 
+* Gerekli uygulamalar: Kuruluşunuz gerekli iş ve okul uygulamalarını doğrudan cihazınıza dağıtabilir. Bu uygulamalar sizin için müdahale etmeden otomatik olarak yüklenir. 
 
-Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, bir Windows cihazında Şirket portalı Web sitesini kullanıyorsanız, Windows uygulamaları, ancak iOS uygulamaları için erişim gerekir.  
+Uygulamalar, cihaz türüne bağlı olarak sizin için de kullanılabilir hale getirilir. Örneğin, bir Windows cihazında Şirket Portalı Web sitesini kullanıyorsanız, iOS uygulamalarına değil, Windows uygulamalarına erişebilirsiniz.  
 
-## <a name="view-app-details"></a>Uygulama ayrıntılarını görüntüle  
-Bir uygulama seçin **uygulamaları** veya **yüklenen uygulamalar** ayrıntılarını görüntülemek için sayfa. İçin gidersiniz **uygulama ayrıntılarını**, uygulamanın açıklaması ve gereksinimleri burada bulabilirsiniz. Bir uygulamanın, Cihazınızda zaten yüklü değilse, bu sayfadan yükleyebilirsiniz. 
+## <a name="view-app-details"></a>Uygulama ayrıntılarını görüntüleme  
+Ayrıntılarını görüntülemek için **uygulamalar** veya **yüklü uygulamalar** sayfasında bir uygulama seçin. Uygulamanın açıklaması ve gereksinimlerini bulacağınız **uygulama ayrıntılarına**yönlendirilirsiniz. Bir uygulama cihazınızda zaten yüklü değilse, bu sayfadan yükleyebilirsiniz. 
 
 
-   ![Ekran görüntüsü, Şirket portalı Web sitesi, uygulama Ayrıntıları sayfası.](./media/intune-app-details-1907.png)  
+   ![Şirket Portalı Web sitesinin ekran görüntüsü, uygulama ayrıntıları sayfası.](./media/intune-app-details-1907.png)  
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Daha fazla yardıma mı ihtiyacınız var? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

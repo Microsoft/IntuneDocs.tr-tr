@@ -1,14 +1,14 @@
 ---
-title: Yardım alın ve Windows 10 için Şirket portalı desteği | Microsoft Docs
-description: Günlükleri göndermek, Yardım Masası ile iletişime geçin ve Şirket portalı Yardım ve Destek sayfasında SSS'leri okuyun.
+title: Windows 10 için Şirket Portalı yardım ve destek alın | Microsoft Docs
+description: Şirket Portalı yardım & Destek sayfasında Günlükler gönderin, yardım masasına başvurun ve SSS makalesini okuyun.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
@@ -18,44 +18,44 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2544ddf5d925d7dc62438a9fcc8c5e4e6b60828
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5eb532f830d20d9e4ff6c323fd3b7788bd3a11b2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61498490"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505879"
 ---
-# <a name="get-help-and-support-in-company-portal-for-windows-10"></a>Yardım alın ve Windows 10 için Şirket portalı desteği
+# <a name="get-help-and-support-in-company-portal-for-windows-10"></a>Windows 10 için Şirket Portalı 'da yardım ve destek alın
 
-Şirket portalı ziyaret **Yardım ve Destek** sayfasında, uygulama ve erişim sorunlarını giderme başlatmak için.   
+Uygulamanızın sorunlarını gidermeye başlamak ve erişim sorunlarını gidermek için Şirket Portalı **yardım & destek** sayfasını ziyaret edin.   
 
-Gelen **Yardım ve Destek** şunları yapabilirsiniz:  
+**Yardım & destek** 'ten şunları yapabilirsiniz:  
 
-* Uygulama sorunları ile ilgili yardım alın
-* Yardım Masası kişi ayrıntılarını görüntüle
-* Sık sorulan sorular (SSS) yanıtlarını bulun 
-* Microsoft rapor uygulama sorunları
+* Uygulama sorunlarıyla ilgili yardım alın
+* Yardım Masası iletişim ayrıntılarını görüntüle
+* Sık sorulan soruların yanıtlarını bulun (SSS) 
+* Uygulama sorunlarını Microsoft 'a bildirme
 
-![Windows 10, Yardım ve Destek sayfasında, her bölüm başlığı vurgulama için Şirket portalı uygulamasının örnek ekran görüntüsü.](./media/1812_UCP_Help_Support_sections.png)  
+![Windows 10 için Şirket Portalı uygulamasının örnek ekran görüntüsü, yardım & destek sayfası, her bölüm başlığını vurgular.](./media/1812_UCP_Help_Support_sections.png)  
 
-## <a name="get-help-with-app-problems"></a>Uygulama sorunları ile ilgili yardım alın
+## <a name="get-help-with-app-problems"></a>Uygulama sorunlarıyla ilgili yardım alın
 
-Kuruluşunuz şirket Portalı'nda herhangi bir sorun hakkında e-posta. Seçin **yardımcı** sorunu açıklayan başlatmak için. Kuruluşunuz, sorun giderme bilgileri kullanır. Sorunu tanılamak için daha fazla Yardım gerekirse, kuruluşunuzun tanılama kimliği kullanacağı&ndash;e-postayı otomatik olarak dahil&ndash;Microsoft Destek ekibine ulaşın.  
+Şirket Portalı karşılaştığınız sorunlar hakkında kuruluşunuza e-posta gönderin. Sorunu tanımlamaya başlamak için **Yardım al** ' ı seçin. Kuruluşunuz, sorunu gidermek için sağladığınız bilgileri kullanacaktır. Sorunu belirlemede daha fazla yardım gerekirse, kuruluşunuz Microsoft 'un destek ekibine ulaşmak için @ no__t-1e-postasına otomatik olarak eklenen @ no__t-0tanılama KIMLIĞINI kullanır.  
 
-Adım adım yordam için bkz: [şirketinize gönderme günlükleri, Windows 10 için Şirket portalı uygulamasından Destek](send-logs-to-your-it-admin-cp-windows.md).  
+Adım adım yordam için, bkz. [Windows 10 için şirket portalı uygulamasından şirketinizin destek bölümüne günlük gönderme](send-logs-to-your-it-admin-cp-windows.md).  
 
-## <a name="view-helpdesk-contact-details"></a>Yardım Masası kişi ayrıntılarını görüntüle  
-İş veya Okul erişimi hızla gidermek için kuruluşunuzun Yardım Masası Ayrıntılar, telefon numaranız, e-posta ve Web sitesi gibi kullanın.  
+## <a name="view-helpdesk-contact-details"></a>Yardım Masası iletişim ayrıntılarını görüntüle  
+İş veya okul erişiminin hızla giderilmesi için telefon numarası, e-posta ve Web sitesi gibi kuruluşunuzun yardım masası ayrıntılarını kullanın.  
 
 ## <a name="find-answers-to-frequently-asked-questions"></a>Sık sorulan soruların yanıtlarını bulun  
-Yanıt yardımcı veya kaydı ve erişim sorunlarını gidermek için sık sorulan sorular listesi bir araya getirdik. Kendi Yardım makalesi Microsoft.docs.com üzerinde görüntülemek için herhangi bir konunun seçin.  
+Kayıt ve erişim sorunlarını gidermeye yardımcı olmak için SSS listesini bir araya koyduk. Microsoft.docs.com sayfasındaki yardım makalesini görüntülemek için herhangi bir konu seçin.  
 
-## <a name="report-app-problems-to-microsoft"></a>Microsoft rapor uygulama sorunları  
-Seçtiğinizde, **rapor sorunu Microsoft'a**, gideceğiniz **geri bildirim gönder** sayfası. Buradan şunları yapabilirsiniz:
+## <a name="report-app-problems-to-microsoft"></a>Uygulama sorunlarını Microsoft 'a bildirme  
+**Microsoft 'a sorun bildir**' i seçtiğinizde **geri bildirim gönder** sayfasına gidebilirsiniz. Buradan şunları yapabilirsiniz:
 
-* Bir sorun veya uygulamada gördüğünüz hata bildirme  
-* Bir öneri veya sahip olduğunuz uygulama için fikir gönderin  
-* İçinde Microsoft Store uygulaması için bir gözden geçirme bırakın   
+* Uygulamada gördüğünüz bir sorunu veya hatayı bildirin  
+* Uygulama için sahip olduğunuz bir öneri veya fikir gönderin  
+* Microsoft Store uygulama için bir gözden geçirme bırakın   
 
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

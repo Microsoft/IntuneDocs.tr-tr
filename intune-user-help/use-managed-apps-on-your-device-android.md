@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546027"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501887"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android cihazınızdaki yönetilen uygulamaları kullanma
 Yönetilen uygulamalar, kuruluşunuzun güvenlik gereksinimlerini karşılamak ve iş veya okul verilerini korumak üzere yapılandırılmıştır. Bu uygulamalar, otomatik olarak yüklemeniz veya kullanmanız için cihazınızda sunulmuştur. 
@@ -52,25 +53,25 @@ Okullar ve iş yerlerinde yaygın olarak gerekli veya kullanılabilir hale getir
 - Microsoft Word, Excel ve PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>Yönetilen uygulamaları nasıl edinirim?
-Yönetilen uygulamaları alma üç yolu vardır.  
+Yönetilen uygulamaları almanın üç yolu vardır.  
 * Kuruluşunuz, kayıt sırasında cihazınıza uygulamaları otomatik olarak yükler.  
 * Google Play mağazasından bir uygulama yükleyip uygulamada iş veya okul hesabınızla oturum açarsınız.    
-* Kuruluşunuz, yönetilen uygulamaları Şirket Portalı’nda sizin için kullanılabilir hale getirir. Şirket portalı uygulaması veya kullanılabilir uygulamaları yüklemesi aramak ve görüntülemek için Web sitesine gidin. Bu uygulamalar hakkında daha fazla bilgi için sonraki bölüme bakın [kullanılabilir uygulamaları](#available-apps).  
+* Kuruluşunuz, yönetilen uygulamaları Şirket Portalı’nda sizin için kullanılabilir hale getirir. Kullanılabilir uygulamaları aramak, görüntülemek ve yüklemek için Şirket Portalı uygulamasına veya Web sitesine gidin. Bu uygulamalar hakkında daha fazla bilgi için, [kullanılabilir uygulamalar](#available-apps)başlıklı sonraki bölüme bakın.  
 
 ### <a name="available-apps"></a>Kullanılabilir uygulamalar   
- Kuruluşunuz sizin için işe veya okula uygun ve kullanışlı ve size şirket Portalı'nda ayıklanarak uygulamaları seçebilirsiniz.  
+ Kuruluşunuz, iş veya okul için uygun ve yararlı olan uygulamaları seçebilir ve bunları Şirket Portalı için kullanılabilir hale getirebilirsiniz.  
 
- Uygulamalar Ayrıca, cihaz türüne göre sunulur. Örneğin, Android için Şirket portalı uygulamasını kullanıyorsanız, Android uygulamaları, ancak iOS uygulamaları için erişim gerekir.   
+ Uygulamalar, cihaz türüne bağlı olarak sizin için de kullanılabilir hale getirilir. Örneğin, Android için Şirket Portalı uygulaması kullanıyorsanız, Android uygulamalarına yönelik olarak iOS uygulamalarına erişebileceksiniz.   
 
-## <a name="request-an-app-for-work-or-school"></a>İş veya Okul için uygulama istek   
- Bir uygulama gerekir, ancak şirket portalında görmüyorum varsa, isteyebilirsiniz. İletişim ayrıntılarını bulun, **Yardım Masası** ya da uygulamasının **BT'ye** sekmesi. Aynı iletişim bilgilerini bulabilirsiniz [Şirket portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980).   
+## <a name="request-an-app-for-work-or-school"></a>İş veya okul için bir uygulama isteyin   
+ İhtiyacınız olan bir uygulama varsa, ancak Şirket Portalı görmüyorsanız, isteyebilirsiniz. **Yardım masasına** ait iletişim AYRıNTıLARıNı uygulamanın **BT iletişim** sekmesinde bulabilirsiniz. Aynı iletişim bilgilerini [Şirket portalı Web sitesinde](https://go.microsoft.com/fwlink/?linkid=2010980)bulacaksınız.   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>Şirketimin destek birimi bir uygulamada neleri yönetebilir?  
 Aşağıdaki liste, şirketinizin destek biriminin bir uygulama içerisinde yönetebileceği ayarları açıklar. Bu ayarlar, cihazınızda iş veya okul verilerini görüntülemenizi, bunlara erişiminizi ve bunları nasıl kullanacağınızı etkiler:
 
 * Belirli web sitelerine erişim  
 
-* Microsoft Edge ve Azure Active Directory proxy kullanarak şirket içi Web sitelerine erişim  
+* Microsoft Edge ve Azure Active Directory proxy kullanarak iç şirket web sitelerine erişim  
 
 * En düşük uygulama sürümü, işletim sistemi sürümü
 

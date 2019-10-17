@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e92e3442e1347cb1a2cd1c737078912b74f075c9
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817558"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503571"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>JAMF Pro ile Microsoft Intune tümleştirme sorunlarını giderme
 
@@ -41,14 +42,14 @@ Sorun gidermeye başlamadan önce, sorunu açıklığa kavuşturmak ve çözüm 
 
 
 Intune ile JAMF Pro tümleştirmesini araştırırken aşağıdaki bilgileri göz önünde bulundurun: 
-- Hata iletisinde tam olarak ne yazıyor?
+- Tam hata iletisi nedir?
 - Hata iletisi nerede?
 - Sorun ne zaman başladı?  Intune ile JAMF Pro tümleştirmesi hiç çalıştı mı?
 - Kaç Kullanıcı etkilendi? Tüm kullanıcılar mı etkilendi?
 - Kaç cihaz etkilendi? Tüm cihazlar etkileniyor mu ya da yalnızca bir şey var mı?
  
 
-## <a name="common-problems"></a>Yaygın sorunlar 
+## <a name="common-problems"></a>Sık karşılaşılan sorunlar 
 
 Aşağıdaki bilgiler, Intune ve JAMF Pro tümleştirmesini ayarladıktan sonra cihazlarda yaygın sorunları belirlemenize ve çözmenize yardımcı olabilir.  
 
@@ -95,7 +96,7 @@ Intune ve JAMF Pro tümleştirmesini yapılandırdıktan ve koşullu erişim ilk
 **Neden**: Bu Istemler, Azure ad kaydı gerektiren her ilgili uygulama Için JAMF Pro tarafından oluşturulmuştur. 
 
 **Çözüm**   
-Sorulduğunda, kullanıcının Azure AD 'de oturum açmak için cihaz parolasını sağlaması gerekir. Seçeneklere şunlar dahildir:
+Sorulduğunda, kullanıcının Azure AD 'de oturum açmak için cihaz parolasını sağlaması gerekir. Şu seçenekler mevcuttur:
 - **Reddet** -oturum açma ve uygulamayı kullanmayın.
 - **Izin ver** -bir kez oturum açma. Uygulama bir dahaki sefer açıldığında, oturum açmayı yeniden sorar.
 - **Her zaman Izin ver** -oturum açma kimlik bilgileri uygulama için önbelleğe alınır. Uygulama bir dahaki sefer açıldığında oturum açma istemez.  
@@ -161,11 +162,11 @@ Kayıt kaynağını Intune 'dan JAMF 'ye değiştirmek için:
 
 3. Portal açıldığında, gördüğünüz ilk ekran oturum açmanızı ister. İş veya okul hesabınızı kullanın  
 
-4. Şirket Portalı hesap bilgilerinizi onaylar ve cihaz kaydınız ile cihaz uyumluluk durumlarını gösterir. Sarı üçgenler, macOS cihazınızın okul veya çalışma için güvenliğini sağlamak üzere gerçekleştirmeniz gereken eylemleri vurgular. Kaydı başlatmak için Başlat ' a tıklayın.  
+4. Şirket Portalı hesap bilgilerinizi onaylar ve cihaz kaydınız ile cihaz uyumluluk durumlarını gösterir. Okul veya iş için macOS cihazınızı güvenlik altına almak adına uygulamanız gereken eylemler, sarı üçgenlerle vurgulanır. Kaydı başlatmak için Başlat ' a tıklayın.  
 
 5. İstenirse bilgisayarınızın oturum açma bilgilerini yazın.  
      
-Cihazınızın yönetimine kaydedilmesi birkaç dakika sürebilir. Bu süre boyunca cihazınızda başka şeyler yapabilirsiniz. Şirket erişimi kurulumunu tamamladıktan sonra, işiniz gerektiğini bilmenizi sağlamak için bir ileti alırsınız.
+Cihazınızı yönetime kaydetmek birkaç dakika alabilir. Bu süre boyunca cihazınızda başka şeyler yapabilirsiniz. Şirket Portalı kurulumu tamamlandıktan sonra işiniz bittiğine dair bir ileti alırsınız.
 
 #### <a name="cause-5"></a>Neden 5  
 

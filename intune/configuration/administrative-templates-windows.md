@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bf6a52fd860695433e0020e9ec7390f98eca6
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314641"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507023"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune 'de Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonlarını kullanın
 
@@ -43,22 +44,22 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
 ## <a name="create-a-template"></a>Şablon oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. @No__t-3**Profil oluştur**@no__t **cihaz yapılandırması**' nı seçin.
+2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: profil için bir ad girin.
-    - **Açıklama**: profil için bir açıklama girin. Bu ayar isteğe bağlıdır, ancak önerilir.
+    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
     - **Platform**: **Windows 10 ve üstünü**seçin.
     - **Profil türü**: **Yönetim Şablonları**seçin.
 
-4. **Oluştur**'u seçin. Yeni pencerede **Ayarlar**' ı seçin. Her ayar listelenir ve daha fazla ayarı görmek için önceki ve sonraki okları kullanabilirsiniz:
+4. **Oluştur**’u seçin. Yeni pencerede **Ayarlar**' ı seçin. Her ayar listelenir ve daha fazla ayarı görmek için önceki ve sonraki okları kullanabilirsiniz:
 
     ![Ayarların örnek listesini görüntüleyin ve önceki ve sonraki düğmeleri kullanın](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
 
     > [!TIP]
     > Intune 'daki Windows ayarları, Yerel Grup İlkesi Düzenleyicisi gördüğünüz şirket içi Grup İlkesi yoluyla bağıntılı (`gpedit`).
 
-5. Varsayılan olarak, açılan listede **Tüm ürünler**gösterilmektedir. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Microsoft Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
+5. Varsayılan olarak, açılan listede **Tüm ürünler**gösterilmektedir. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
 
     ![Intune 'da yönetim şablonlarındaki tüm pencereleri veya tüm Office ayarlarını göstermek için listeyi filtreleyin](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
@@ -71,9 +72,9 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
     > - [KB 4512941](https://support.microsoft.com/kb/4512941) yüklü Windows 10 19H1 ve üzeri
 
 6. Herhangi bir ayarı seçin. Örneğin, **Office**üzerinde filtreleme yapın ve **Kısıtlanmış taramayı etkinleştir**' i seçin. Ayarın ayrıntılı bir açıklaması gösterilir. **Etkin**, **devre dışı**seçeneğini belirleyin veya ayarı **Yapılandırılmadı** (varsayılan) olarak bırakın. Ayrıntılı açıklama Ayrıca **etkin**, **devre dışı**veya **yapılandırılmamış**' ı seçtiğinizde ne olacağını açıklar.
-7. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
+7. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-Ayarlar listesinden ilerleyin ve ortamınızda istediğiniz ayarları yapılandırın. İşte bazı örnekler:
+Ayarlar listesinden ilerleyin ve ortamınızda istediğiniz ayarları yapılandırın. Aşağıda bazı örnekler verilmiştir:
 
 - Word ve Excel dahil farklı Microsoft Office programlarındaki VBA makrolarını işlemek için **VBA makro bildirimi ayarları** ayarını kullanın.
 - Internet Explorer 'dan İndirmeleri izin vermek veya engellemek için **Dosya Indirmelerine Izin ver** ayarını kullanın.
