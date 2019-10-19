@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68ac751ee169e74c117e14bf80a2ee09b3e3e775
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8029c62aeec431c19db080ec444c02565905443f
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505515"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585322"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot kullanarak Windows cihazlarını Intune 'A kaydetme  
 Windows Autopilot, cihazların Intune 'A kaydedilmesini basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -80,7 +80,7 @@ Bilgilerini içeren CSV dosyasını içeri aktararak Windows Autopilot cihazlar�
     Henüz kaydedilmemiş Autopilot cihazları, adın cihaz seri numarası olduğu cihazlardır.
 4. Yukarıda **Üyelik türü** olarak **Dinamik Cihazlar**’ı seçtiyseniz **Gruplar** dikey penceresinde **Dinamik cihaz üyeleri**’ni seçin ve **Gelişmiş kural** kutusuna aşağıdaki kodlardan birini yazın. Yalnızca Autopilot cihazları tarafından sahip olan öznitelikleri hedeflerse, yalnızca Autopilot cihazları bu kurallar tarafından toplanır. Autopilot olmayan öznitelikleri temel alan bir grup oluşturmak, grupta yer alan cihazların gerçekten Autopilot 'e kaydolduğundan emin olmaz.
     - Tüm Autopilot cihazlarınızı içeren bir grup oluşturmak istiyorsanız şunu yazın: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Intune 'un Grup etiketi alanı, Azure AD cihazlarındaki OrderID özniteliğiyle eşlenir. Belirli bir grup etiketine sahip tüm Autopilot cihazlarınızı (Azure AD cihaz OrderID) içeren bir grup oluşturmak istiyorsanız, şunu yazmanız gerekir: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Intune 'un Grup etiketi alanı, Azure AD cihazlarındaki OrderID özniteliğiyle eşlenir. Belirli bir grup etiketi (Azure AD cihaz OrderID) ile tüm Autopilot cihazlarınızı içeren bir grup oluşturmak istiyorsanız, şunu yazmanız gerekir: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Belirli bir Satın Alma Sipariş Kimliğine sahip tüm Autopilot cihazlarınızı içeren bir grup oluşturmak istiyorsanız `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")` yazın
     
     **Gelişmiş kural** kodunu ekledikten sonra **Kaydet**’i seçin.
@@ -129,7 +129,7 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
     ![Inceleme sayfasının ekran görüntüsü](./media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune, atanan gruplardaki yeni cihazları düzenli olarak kontrol eder ve ardından bu cihazlara profil atama işlemini başlatır. Bu işlemin tamamlanması birkaç dakika sürebilir. Bir cihaz dağıtılmadan önce, bu işlemin tamamlandığından emin olun.  "Atanmamış" iken "atama" ve son olarak "atandı" olarak bir profil durumu değişikliğini görmeniz gereken **cihaz kaydı** > **Windows kaydı**@no__t **-3 cihaz** ' ın altına bakabilirsiniz.
+> Intune, atanan gruplardaki yeni cihazları düzenli olarak kontrol eder ve ardından bu cihazlara profil atama işlemini başlatır. Bu işlemin tamamlanması birkaç dakika sürebilir. Bir cihaz dağıtılmadan önce, bu işlemin tamamlandığından emin olun.  Profil durumunun "atanmamış" iken "atama" ve son olarak "atandı" olarak değiştirilmesini görmeniz gereken **cihaz kaydı**  > **Windows kayıt**  > **cihazları** ' na bakabilirsiniz.
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Bir Autopilot dağıtım profilini düzenleme
 Bir Autopilot dağıtım profili oluşturduktan sonra bu profilin bazı kısımlarını düzenleyebilirsiniz.   
@@ -142,6 +142,18 @@ Bir Autopilot dağıtım profili oluşturduktan sonra bu profilin bazı kısıml
 
 > [!NOTE]
 > Profilde yapılan değişiklikler, bu profile atanmış cihazlara uygulanır. Ancak güncelleştirilmiş profil, Intune’a önceden kaydedilmiş cihazlarda cihaz sıfırlanıp yeniden kaydedilene kadar uygulanmaz.
+
+## <a name="edit-autopilot-device-attributes"></a>Autopilot cihaz özniteliklerini Düzenle
+Bir Autopilot cihazını karşıya yükledikten sonra, cihazın belirli özniteliklerini düzenleyebilirsiniz.
+
+1. Azure portal Intune 'da, **cihaz kaydı**' nı seçin.
+2. **Windows kaydı**altında, **Windows Autopilot** bölümünde **cihazlar**' ı seçin.
+3. Düzenlemek istediğiniz cihazı seçin.
+4. Ekranın sağ tarafındaki bölmede, cihaz adını, Grup etiketini veya Kullanıcı dostu adını (bir Kullanıcı atadıysanız) düzenleyebilirsiniz.
+5. **Kaydet**’i seçin.
+
+> [!NOTE]
+> Cihaz adları tüm cihazlar için yapılandırılabilir, ancak karma Azure AD 'ye katılmış dağıtımlarda yok sayılır. Cihaz adı, karma Azure AD cihazları için etki alanı katılımı profilinden hala geliyor.
 
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows Autopilot atanmamış cihazlar için uyarılar  <!-- 163236 -->  
 
@@ -169,6 +181,11 @@ Belirli bir Autopilot cihazına kullanıcı atayabilirsiniz. Bu atama, Windows k
 
 4. **Tamam**’ı seçin.
 
+## <a name="autopilot-deployments-report"></a>Autopilot dağıtımları raporu
+Windows Autopilot aracılığıyla dağıtılan her bir cihazda ayrıntıları görebilirsiniz.
+Raporu görmek için **Intune** 'a gidin ve **izleyici**altında **Autopilot dağıtımlar**' ı seçin.
+Veriler dağıtımdan sonra 30 gün boyunca kullanılabilir.
+
 
 ## <a name="delete-autopilot-devices"></a>Autopilot cihazlarını silme
 
@@ -180,7 +197,7 @@ Bir cihazı kiracınızdan tamamen kaldırmak, Intune cihazını, Azure Active D
 
 1. Cihazlar Intune 'A kaydedildiyse, önce [bunları Intune tüm cihazlar dikey penceresinden silmelisiniz](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. Cihazlarda Azure Active Directory cihazlarındaki cihazları **silme @no__t-** 1**Azure AD cihazlarıdır**.
+2. Cihazlarda Azure Active Directory cihazlarda cihazları**Azure AD cihazları** ** >  silin** .
 
 3. **Cihaz kaydı** > **Windows kaydı** > **cihazındaki**cihazları Windows Autopilot 'den silin. Silmek istediğiniz cihazları seçin ve **Sil**' i seçin. Windows Autopilot cihaz silme işleminin tamamlanması birkaç dakika sürebilir.
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4be1755a07e6ec304edb7bceba8041d5b58263e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509992"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585252"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Microsoft Intune olayları izlemek ve izlemek için Denetim günlüklerini kullanma
 
@@ -50,7 +50,8 @@ Denetim günlükleri ve işletimsel Günlükler de Azure Izleyici 'ye yönlendir
 
 ![Intune 'da veri ayarlarını dışarı aktar ' i seçerek günlük verilerini Azure izleyici 'ye aktarın](./media/monitor-audit-logs/audit-logs-export-data-settings.png)
 
-Bu özellik hakkında daha fazla bilgi için bkz. [depolama, Olay Hub 'ları veya Log Analytics 'e günlük verileri gönderme](review-logs-using-azure-monitor.md).
+> [!NOTE]
+> Bu özellik hakkında daha fazla bilgi edinmek ve bunu kullanmak üzere önkoşulları gözden geçirmek için bkz. [depolama, Olay Hub 'ları veya Log Analytics 'e günlük verileri gönderme](review-logs-using-azure-monitor.md).
 
 ## <a name="review-audit-events"></a>Denetim olaylarını gözden geçirme
 
@@ -72,7 +73,7 @@ Bir olayla ilgili daha ayrıntılı bilgileri görmek için listeden bir öğe s
 
 > [!NOTE]
 > **Başlatan (aktör)** , görevi kimin çalıştırdığını ve nerede Çalıştırıldığın bilgilerini içerir. Örneğin, etkinliği Azure portal Intune 'da çalıştırırsanız, **uygulama** **Microsoft Intune Portal uzantısını** her zaman listeler ve **uygulama kimliği** her zaman aynı GUID 'yi kullanır.
-> 
+>
 > **Hedef (ler)** bölümünde birden çok hedef ve değiştirilen özellikler listelenir.  
 
 ## <a name="filter-audit-events"></a>Denetim olaylarını filtreleme

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba51f3eaead4f44d3725f1939a6ece5daec5a7f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507371"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584942"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uygulamalarınızın süresinin dolmasını engellemek için iOS uygulama sağlama profillerini kullanma
 
@@ -45,14 +45,22 @@ Yönetici olarak, iOS uygulama sağlama yapılandırmasını atamak için güven
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS mobil uygulama sağlama profili oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-1. **İstemci uygulamaları** iş yükünde **Yönet** > **iOS uygulama sağlama profilleri** seçeneğini belirleyin.
-2. Profil listesi bölmesinde **Profil oluştur**’u seçin.
-3. **Profil oluştur** bölmesinde aşağıdakileri değerleri yapılandırın:
+2. **Intune** bölmesinde, **Istemci uygulamaları**  > **iOS uygulama sağlama profilleri**  > **Profil oluştur**' u seçin.
+3. **Temel bilgiler** sayfasında, aşağıdaki değerleri ekleyin:
     - **Ad** - Bu mobil sağlama profiline bir ad verin.
     - **Açıklama** - İsteğe bağlı olarak, ilke için bir açıklama sağlayın.
     - **Profili dosyasını karşıya yükleme** - **Aç** simgesini seçin ve ardından [Apple Developer web sitesinden](https://developer.apple.com/) indirdiğiniz Apple Mobil Yapılandırma dosyasını (`.mobileprovision` uzantısına sahip) seçin.
-4. İşiniz bittiğinde **Oluştur**’u seçin.
+
+   **Sona erme tarihi** , yukarıda eklediğiniz Apple mobil yapılandırma profili dosyasındaki bir değerden doldurulur.<br>
+
+   <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
+
+4. Ileri ' ye tıklayın **: kapsam etiketleri**.<br>
+   **Kapsam etiketleri** sayfasında, Intune 'da iOS uygulama sağlama profilini kimlerin görebileceğini belirleyebilmek için isteğe bağlı olarak kapsam etiketlerini yapılandırabilirsiniz. Kapsam etiketleri hakkında daha fazla bilgi için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi ve kapsam etiketleri kullanma](../fundamentals/scope-tags.md).
+5. **İleri: atamalar**' a tıklayın.<br>
+   **Atamalar** sayfası, profili kullanıcılara ve cihazlara atamanıza olanak tanır. Cihazın Intune tarafından yönetilip yönetilmediği bir cihaza profil atayabileceğinizi unutmayın.
+6. Ileri ' ye tıklayın, profil için girdiğiniz değerleri gözden geçirmek için **+ Oluştur** ' a tıklayın.
+7. İşiniz bittiğinde, Intune 'da iOS uygulama sağlama profili oluşturmak için **Oluştur** ' a tıklayın. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

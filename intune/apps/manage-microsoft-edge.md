@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e245ddffa91941d3b700bf1c698b33395893bb56
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497735"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593686"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -127,7 +127,7 @@ Hem Intune Managed Browser hem de Microsoft Edge İlkeyle korunan tarayıcılar 
 
 |    Anahtar    |    Değer    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    @No__t-0 değeri, kullanıcılarınıza Microsoft Edge 'i indirmek ve kullanmak için yönlendirecektir.<br>@No__t-0 değeri kullanıcılarınızın Intune Managed Browser kullanmasına izin verir.    |
+|    `com.microsoft.intune.useEdge`    |    @No__t_0 değeri, kullanıcılarınıza Microsoft Edge 'i indirmek ve kullanmak için yönlendirecektir.<br>@No__t_0 değeri, kullanıcılarınızın Intune Managed Browser kullanmasına izin verir.    |
 
 Bu uygulama yapılandırma **değeri ayarlanmamışsa,** aşağıdaki mantık kurumsal bağlantıları açmak için kullanılacak tarayıcıyı tanımlar.
 
@@ -181,7 +181,7 @@ Bir giriş sayfası kısayolunu yapılandırmak için aşağıdaki anahtar/değe
 
 |    Anahtar    |    Değer    |
 |-------------------------------------------------------------------|-------------|
-|    com. Microsoft. Intune. mam. managedbrowser. giriþ   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örnek:**  < @ no__t-2 @ no__t-3
+|    com. Microsoft. Intune. mam. managedbrowser. giriþ   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örnek:**  < `https://www.bing.com` >
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Microsoft Edge 'de yeni sekme sayfaları için kuruluşunuzun logosunu ve marka rengini yapılandırın
 
@@ -205,7 +205,7 @@ Erişim kolaylığı için, kullanıcılarınızın Microsoft Edge kullanırken 
 
 Bazı ayrıntılar aşağıda verilmiştir:
 
-- Bu yer işaretleri yalnızca kullanıcılar Microsoft Edge 'in kurumsal modunu kullanırken görüntülenir. 
+- Bu yer işaretleri yalnızca kullanıcılar Microsoft Edge 'in [Kurumsal modunu](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser) kullanırken görüntülenir. 
 - Bu yer işaretleri kullanıcılar tarafından silinemez veya değiştirilemez.
 - Bu yer işaretleri listenin en üstünde görünür. Kullanıcıların oluşturmakta olduğu tüm yer işaretleri bu yer işaretlerinin altında görünür.
 - Uygulama proxy 'Si yeniden yönlendirmeyi etkinleştirdiyseniz, iç veya dış URL 'lerini kullanarak uygulama proxy 'Si Web uygulamaları ekleyebilirsiniz.
@@ -237,7 +237,7 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
 İzin verilen/Engellenen siteler listelerinizi oluşturmak için çeşitli URL biçimleri kullanabilirsiniz. Bu izin verilen desenler aşağıdaki tabloda ayrıntılı olarak verilmiştir. Başlamadan önce bazı notlar: 
 - Tüm URL'leri listeye eklerken başlarına **http** veya **https** önekini yazdığınızdan emin olun.
 - Aşağıdaki izin verilen desenler listesindeki kurallara göre joker karakter sembolünü (\*) kullanabilirsiniz.
-- Joker karakter, ana bilgisayar adının tamamını (noktalarla ayırarak) veya yolun tüm parçalarını (eğik çizgi ile ayrılmış olarak) eşleştirebilir. Örneğin, @no__t- **0 desteklenmez.**
+- Joker karakter, ana bilgisayar adının tamamını (noktalarla ayırarak) veya yolun tüm parçalarını (eğik çizgi ile ayrılmış olarak) eşleştirebilir. Örneğin **, `http://*contoso.com` desteklenmez.**
 - Adreste bağlantı noktası numaraları belirtebilirsiniz. Bir bağlantı noktası numarası belirtmezseniz, kullanılan değerler şöyle olacaktır:
   - http için bağlantı noktası 80
   - https için bağlantı noktası 443
@@ -248,8 +248,8 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
     |    `http://www.contoso.com`    |    Tek bir sayfayla eşleşir    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Tek bir sayfayla eşleşir    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    `www.contoso.com` ile başlayan tüm URL’lerle eşleşir    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    @No__t-0 altındaki tüm alt etki alanlarını eşleştirir    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
-    |    `http://*contoso.com/*`    |    @No__t ile biten tüm alt etki alanlarını eşleştirir    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    @No__t_0 altındaki tüm alt etki alanlarını eşleştirir    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    @No__t_0 ile biten tüm alt etki alanlarını eşleştirir    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    Tek bir klasörle eşleşir    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Bir bağlantı noktası numarası kullanarak tek bir sayfayla eşleşir    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Güvenli tek bir sayfayla eşleşir    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8139e9b266e6a3d449db29104f737bdf4bb574ae
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503544"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593776"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için Wi-Fi ayarları ekleme
 
@@ -80,7 +80,13 @@ Bu makalede bu ayarlar açıklanır.
     - **Sunucu güveni** - **sertifika sunucu adları**: güvenilir SERTIFIKA yetkiliniz (CA) tarafından verilen sertifikalarda kablosuz ağ erişim sunucularınıza kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin `mywirelessserver.contoso.com` veya `mywirelessserver` ' i ekleyin. Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
     - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemcinin kablosuz ağ erişim sunucusunun sertifikasına güvenmesini sağlar.
 
-    - **İstemci Kimlik Doğrulaması** - **İstemci kimlik doğrulaması için istemci sertifikası (Kimlik sertifikası)** : Cihaza da dağıtılmış olan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
+    - **Istemci kimlik doğrulaması** Bir **kimlik doğrulama yöntemi**seçin. Seçenekleriniz şunlardır:
+      
+      - **Türetilmiş kimlik bilgileri**: türetilmiş bir kimlik bilgisi veren yapılandırılmamışsa, Intune bunu yapmanızı ister.
+      
+      - **Sertifikalar**: Cihaza da dağıtılmış olan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
+
+    - **Kimlik gizliliği (dış kimlik)** : EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
 
   - **EAP-TTLS**: Ayrıca şunları girin:
 
@@ -89,6 +95,8 @@ Bu makalede bu ayarlar açıklanır.
 
     - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:
 
+      - **Türetilmiş kimlik bilgileri**: türetilmiş bir kimlik bilgisi veren yapılandırılmamışsa, Intune bunu yapmanızı ister.  
+      
       - **Kullanıcı adı ve Parola**: Bağlantının kimliğini doğrulamak için kullanıcıdan bir kullanıcı adı ve parola girmesini isteyin. Şunları da girin:
         - **EAP dışı yöntem (iç kimlik)** : Bağlantının kimliğini nasıl doğrulayacağınızı seçin. Wi-Fi ağınızda yapılandırılmış olan protokolü seçtiğinizden emin olun.
 
@@ -107,6 +115,8 @@ Bu makalede bu ayarlar açıklanır.
 
     - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:
 
+      - **Türetilmiş kimlik bilgileri**: türetilmiş bir kimlik bilgisi veren yapılandırılmamışsa, Intune bunu yapmanızı ister.  
+      
       - **Kullanıcı adı ve Parola**: Bağlantının kimliğini doğrulamak için kullanıcıdan bir kullanıcı adı ve parola girmesini isteyin. 
 
       - **Sertifikalar**: Cihaza da dağıtılmış olan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.

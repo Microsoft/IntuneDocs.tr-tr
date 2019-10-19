@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure’da cihaz uyumluluk ilkeleri | Microsoft Docs
 description: Cihaz uyumluluk ilkelerini kullanma, durum ve önem düzeylerine genel bakış, Yetkisizkullanımsüresinde durumunu kullanma, koşullu erişim ile çalışma, cihazları atanmış bir ilke olmadan işleme ve Azure portal ve uyumluluk farklılıkları ile çalışmaya başlama Microsoft Intune 'de klasik Portal
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/22/2019
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6ab0fd0220b252fe2361c0721ea026afcc232c0
-ms.sourcegitcommit: 62e264052738fc7fc6f22750589fb4bee7cd9d09
-ms.translationtype: HT
+ms.openlocfilehash: 86a1822321cb606776b69a8a7328f5a62bd85630
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72532009"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585496"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune'u kullanarak kuruluşunuzdaki kaynaklara erişim izni verme amacıyla cihazlarda kural oluşturun
 
@@ -116,13 +116,13 @@ Aşağıdaki tabloda, bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıl
 
 |**İlke ayarı**| **Platform** |
 | --- | ----|
-| **PIN veya Parola yapılandırması** | - **Android 4,0 ve üzeri**: karantinaya alındı</br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı</br>- **Android Enterprise**: karantinaya alındı</br></br>- **iOS 8,0 ve üzeri**: düzeltildi</br>- **MacOS 10,11 ve üzeri**: düzeltildi</br></br>- **Windows 8.1 ve üzeri**: düzeltildi</br>- **Windows Phone 8,1 ve üzeri**: düzeltildi|
-| **Cihaz şifrelemesi** | - **Android 4,0 ve üzeri**: karantinaya alındı</br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı</br>- **Android Enterprise**: karantinaya alındı</br></br>- **iOS 8,0 ve üzeri**: DÜZELTILDI (PIN ayarlanarak)</br>- **MacOS 10,11 ve üzeri**: DÜZELTILDI (PIN ayarlanarak)</br></br>- **Windows 8.1 ve üzeri**: uygulanamaz</br>- **Windows Phone 8,1 ve üzeri**: düzeltildi |
-| **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | - **Android 4,0 ve üzeri**: karantinaya alındı (ayar değil)</br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı (ayar değil)</br>- **Android Enterprise**: karantinaya alındı (ayar değil)</br></br>- **iOS 8,0 ve üzeri**: karantinaya alındı (ayar değil)</br>- **MacOS 10,11 ve üzeri**: uygulanamaz</br></br>- **Windows 8.1 ve üzeri**: uygulanamaz</br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
-| **E-posta profili** | - **Android 4,0 ve üzeri**: uygulanamaz</br>- **Samsung KNOX Standard 4,0 ve üzeri**: uygulanamaz</br>- **Android Enterprise**: uygulanamaz</br></br>- **iOS 8,0 ve üzeri**: karantinaya alındı</br>- **MacOS 10,11 ve üzeri**: karantinaya alındı</br></br>- **Windows 8.1 ve üzeri**: uygulanamaz</br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
-| **En düşük işletim sistemi sürümü** | - **Android 4,0 ve üzeri**: karantinaya alındı</br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı</br>- **Android Enterprise**: karantinaya alındı</br></br>- **iOS 8,0 ve üzeri**: karantinaya alındı</br>- **MacOS 10,11 ve üzeri**: karantinaya alındı</br></br>- **Windows 8.1 ve üzeri**: karantinaya alındı</br>- **Windows Phone 8,1 ve üzeri**: karantinaya alındı |
-| **En yüksek işletim sistemi sürümü** | - **Android 4,0 ve üzeri**: karantinaya alındı</br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı</br>- **Android Enterprise**: karantinaya alındı</br></br>- **iOS 8,0 ve üzeri**: karantinaya alındı</br>- **MacOS 10,11 ve üzeri**: karantinaya alındı</br></br>- **Windows 8.1 ve üzeri**: karantinaya alındı</br>- **Windows Phone 8,1 ve üzeri**: karantinaya alındı |
-| **Windows durum kanıtlama** | - **Android 4,0 ve üzeri**: uygulanamaz</br>- **Samsung KNOX Standard 4,0 ve üzeri**: uygulanamaz</br>- **Android Enterprise**: uygulanamaz</br></br>- **iOS 8,0 ve üzeri**: uygulanamaz</br>- **MacOS 10,11 ve üzeri**: uygulanamaz</br></br>- **Windows 10 ve Windows 10 Mobile**: karantinaya alındı</br>- **Windows 8.1 ve üzeri**: karantinaya alındı</br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
+| **PIN veya Parola yapılandırması** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı  <br>  <br>- **iOS 8,0 ve üzeri**: düzeltildi<br>- **MacOS 10,11 ve üzeri**: düzeltildi  <br>  <br>- **Windows 8.1 ve üzeri**: düzeltildi<br>- **Windows Phone 8,1 ve üzeri**: düzeltildi|
+| **Cihaz şifrelemesi** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı<br><br>- **iOS 8,0 ve üzeri**: DÜZELTILDI (PIN ayarlanarak)<br>- **MacOS 10,11 ve üzeri**: DÜZELTILDI (PIN ayarlanarak)<br><br>- **Windows 8.1 ve üzeri**: uygulanamaz<br>- **Windows Phone 8,1 ve üzeri**: düzeltildi |
+| **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | - **Android 4,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **Android Enterprise**: karantinaya alındı (ayar değil)<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **MacOS 10,11 ve üzeri**: uygulanamaz<br><br>- **Windows 8.1 ve üzeri**: uygulanamaz<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
+| **E-posta profili** | - **Android 4,0 ve üzeri**: uygulanamaz<br>- **Samsung KNOX Standard 4,0 ve üzeri**: uygulanamaz<br>- **Android Enterprise**: uygulanamaz<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı<br>- **MacOS 10,11 ve üzeri**: karantinaya alındı<br><br>- **Windows 8.1 ve üzeri**: uygulanamaz<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
+| **En düşük işletim sistemi sürümü** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı<br>- **MacOS 10,11 ve üzeri**: karantinaya alındı<br><br>- **Windows 8.1 ve üzeri**: karantinaya alındı<br>- **Windows Phone 8,1 ve üzeri**: karantinaya alındı |
+| **En yüksek işletim sistemi sürümü** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı<br>- **MacOS 10,11 ve üzeri**: karantinaya alındı<br><br>- **Windows 8.1 ve üzeri**: karantinaya alındı<br>- **Windows Phone 8,1 ve üzeri**: karantinaya alındı |
+| **Windows durum kanıtlama** | - **Android 4,0 ve üzeri**: uygulanamaz<br>- **Samsung KNOX Standard 4,0 ve üzeri**: uygulanamaz<br>- **Android Enterprise**: uygulanamaz<br><br>- **iOS 8,0 ve üzeri**: uygulanamaz<br>- **MacOS 10,11 ve üzeri**: uygulanamaz<br><br>- **Windows 10 ve Windows 10 Mobile**: karantinaya alındı<br>- **Windows 8.1 ve üzeri**: karantinaya alındı<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
 
 ---------------------------
 

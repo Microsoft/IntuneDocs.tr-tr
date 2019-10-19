@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6110cdf76649c2f4e0f06cf14fc892d7156d34b9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 17057100f9bc762de8c679880145014cf5806432
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506857"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584853"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune’da cihaz profillerini izleme
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune'un Azure portalında cihaz yapılandırma profillerinizi izlemeye ve yönetmeye yardımcı olacak bazı özellikleri vardır. Örneğin, profilin durumunu denetleyebilir, hangi cihazların atandığına bakabilir ve profilin özelliklerini güncelleştirebilirsiniz.
+Intune, cihaz yapılandırma profillerinizi izlemeye ve yönetmeye yardımcı olacak bazı özellikler içerir. Örneğin, profilin durumunu denetleyebilir, hangi cihazların atandığına bakabilir ve profilin özelliklerini güncelleştirebilirsiniz.
 
 ## <a name="view-existing-profiles"></a>Mevcut profilleri görüntüleme
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Cihaz yapılandırması** > **Profiller**'i seçin.
+2. **Cihaz yapılandırması** > **Profiller**'i seçin.
 
 Tüm mevcut profilleriniz listelenir, ayrıca platform gibi ayrıntılar ve profilin herhangi bir cihaza atanıp atanmadığı gösterilir.
 
@@ -44,13 +44,13 @@ Cihaz profilinizi oluşturduktan sonra, Intune grafikler sağlar. Bu grafikler p
 1. Mevcut bir profil seçin. Örneğin, bir macOS profili seçin.
 2. **Genel Bakış** sekmesini seçin.
 
-    Üstteki grafikte, belirli bir cihaz profiline atanan cihazların sayısı gösterilir. Örneğin, yapılandırma cihaz profili macOS cihazlarında geçerliyse, grafik macOS cihazlarının sayısını listeler.
+    Üstteki grafik grafik, cihaz profiline atanan cihazların sayısını gösterir. Örneğin, yapılandırma cihaz profili macOS cihazlarında geçerliyse, grafik macOS cihazlarının sayısını listeler.
 
     Ayrıca ayrı cihaz profiline atanmış olan diğer platformlardaki cihazların sayısını da gösterir. Örneğin, macOS olmayan cihazların sayısını gösterir.
 
     ![Cihaz profiline atanmış olan cihazların sayısını görüntüleme](./media/device-profile-monitor/device-configuration-profile-graphical-chart.png)
 
-    Alttaki grafikte, belirli bir cihaz profiline atanan kullanıcıların sayısı gösterilir. Örneğin, yapılandırma cihaz profili macOS kullanıcılarında geçerliyse, grafik macOS kullanıcılarının sayısını listeler.
+    Alt grafik grafik, cihaz profiline atanan kullanıcı sayısını gösterir. Örneğin, yapılandırma cihaz profili macOS kullanıcılarında geçerliyse, grafik macOS kullanıcılarının sayısını listeler.
 
 3. Üstteki grafikte yer alan daireyi seçin. **Cihaz durumu** açılır.
 
@@ -68,12 +68,12 @@ Cihaz profilinizi oluşturduktan sonra, Intune grafikler sağlar. Bu grafikler p
     - **Özellikler**: Adı değiştirin veya mevcut ayarlardan herhangi birini güncelleştirin.
     - **Atamalar**: İlkenin uygulanacağı cihazları dahil edin veya dışlayın. Belirli grupları seçmek için **Seçili Gruplar**'ı seçin.
     - **Cihaz durumu**: Profile atanmış olan cihazlar listelenir ve profilin başarıyla dağıtılıp dağıtılmadığı gösterilir. Belirli bir cihazı seçerek, yüklü uygulamalar da dahil olmak üzere daha da fazla ayrıntı görebilirsiniz.
-    - **Kullanıcı durumu**: Bu profilden etkilenen cihazlara sahip kullanıcı adlarını listeler ve profilin başarıyla dağıtılıp dağıtılmadığını gösterir. Belirli bir kullanıcı seçerek daha da fazla ayrıntı görebilirsiniz.
+    - **Kullanıcı durumu**: bu profilden etkilenen cihazların bulunduğu Kullanıcı adlarını ve profil başarıyla dağıtılırsa listeler. Belirli bir kullanıcı seçerek daha da fazla ayrıntı görebilirsiniz.
     - **Ayar başına durum**: Profil içindeki tek tek ayarları göstererek çıkışa filtre uygular ve ayarın başarıyla uygulanıp uygulanmadığını gösterir.
 
 ## <a name="view-conflicts"></a>Çakışmaları görüntüleme
 
-**Cihazlar** > **Tüm cihazlar**’da çakışma yaratan ayarları görebilirsiniz. Bir çakışma olduğunda, bu ayarı içeren tüm yapılandırma profilleri de gösterilir. Yöneticiler bu özelliği kullanarak sorun gidermeye ve profiller arasındaki herhangi bir uyuşmazlığı düzeltmeye yardımcı olabilir.
+**Cihazlar** > **Tüm cihazlar**’da çakışma yaratan ayarları görebilirsiniz. Bir çakışma olduğunda, bu ayarı içeren tüm yapılandırma profillerini de görürsünüz. Yöneticiler bu özelliği kullanarak sorun gidermeye ve profiller arasındaki herhangi bir uyuşmazlığı düzeltmeye yardımcı olabilir.
 
 1. Intune’da **Cihazlar** > **Tüm Cihazlar**’ı seçtikten sonra listeden mevcut bir cihazı seçin. Son kullanıcılar, Şirket Portalı uygulamasından cihaz adını alabilir.
 2. **Cihaz yapılandırması**’nı seçin. Cihaza uygulanan tüm yapılandırma ilkeleri listelenir.
@@ -82,5 +82,6 @@ Cihaz profilinizi oluşturduktan sonra, Intune grafikler sağlar. Bu grafikler p
 Çakışma yaratan ayarı ve bunu içeren ilkelerin hangileri olduğunu bulduğunuza göre çakışmayı çözümlemeniz daha kolay olacaktır. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Kullanıcı ve cihaz profillerini atama](../device-profile-assign.md)  
-[Cihaz profilleri ile ilgili sık karşılaşılan sorunlar ve çözüm yolları](device-profile-troubleshoot.md)
+
+[Cihaz profilleriyle ilgili yaygın sorular, sorunlar ve çözümler](device-profile-troubleshoot.md)  
+[İlke ve profillerin ve Intune 'da sorun giderme](troubleshoot-policies-in-microsoft-intune.md)

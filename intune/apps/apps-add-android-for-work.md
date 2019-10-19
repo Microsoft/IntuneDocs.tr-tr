@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890dc68afd11862d11effd3e2d3a160815d6ad8c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507350"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584951"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune ile Yönetilen Google Play uygulamalarını Android Kurumsal cihazlarına ekleme
 
@@ -49,9 +49,9 @@ Intune kiracınızı yönetilen Google Play bağlama sırasında Android kurumsa
 ## <a name="managed-google-play-app-types"></a>Yönetilen Google Play uygulama türleri
 Yönetilen Google Play kullanılabilecek üç tür uygulama vardır:
 
-* **Yönetilen Google Play Mağazası uygulaması** -genel olarak, Play Store açık olan uygulamalar. Yönetmek istediğiniz uygulamalara göz atarak bu uygulamaları Intune 'da yönetin, bunları onaylama ve sonra Intune 'a eşitleme.
-* **Yönetilen Google Play özel uygulama** -bu, Intune yöneticileri tarafından yönetilen Google Play yayımlanan lob uygulamalardır.  Bu uygulamalar özeldir ve yalnızca Intune kiracınız tarafından kullanılabilir. Bu, LOB uygulamalarının yönetilen Google Play ve Android Kurumsal ile yönetilmesi ve dağıtılması.
-* **Yönetilen Google Play web bağlantısı** -Android kurumsal cihazlara DAĞITILABILIR ve BT Yöneticisi tarafından tanımlanan simgelerle Web bağlantıları. Bunlar, normal uygulamalar gibi cihazın uygulama listesindeki cihazlarda görünürler.
+- **Yönetilen Google Play Mağazası uygulaması** -genel olarak, Play Store açık olan uygulamalar. Yönetmek istediğiniz uygulamalara göz atarak bu uygulamaları Intune 'da yönetin, bunları onaylama ve sonra Intune 'a eşitleme.
+- **Yönetilen Google Play özel uygulama** -bu, Intune yöneticileri tarafından yönetilen Google Play yayımlanan lob uygulamalardır.  Bu uygulamalar özeldir ve yalnızca Intune kiracınız tarafından kullanılabilir. Bu, LOB uygulamalarının yönetilen Google Play ve Android Kurumsal ile yönetilmesi ve dağıtılması.
+- **Yönetilen Google Play web bağlantısı** -Android kurumsal cihazlara DAĞITILABILIR ve BT Yöneticisi tarafından tanımlanan simgelerle Web bağlantıları. Bunlar, normal uygulamalar gibi cihazın uygulama listesindeki cihazlarda görünürler.
 
 ## <a name="managed-google-play-store-apps"></a>Yönetilen Google Play Mağazası uygulamaları
 Intune ile yönetilen Google Play Mağazası uygulamalarını taramak ve onaylamak için iki yol vardır:
@@ -210,8 +210,7 @@ Alternatif olarak, Google Play’i uygulama izinlerini uygulama başına otomati
 
 ## <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices"></a>Android Kurumsal iş profili cihazları için ek Yönetilen Google Play uygulaması raporlaması
 
-Android Kurumsal iş profili cihazlarına dağıtılan Yönetilen Google Play uygulamaları için, cihazda yüklü olan uygulamanın sürüm numarasını görüntüleyebilirsiniz. Bu yalnızca gerekli uygulamalar için geçerlidir. 
-
+Android kurumsal iş profili cihazlarına dağıtılan yönetilen Google Play uygulamaları için, Intune kullanarak bir cihazda yüklü olan uygulamanın durum ve sürüm numarasını görüntüleyebilirsiniz. 
 
 ## <a name="delete-managed-google-play-apps"></a>Yönetilen Google Play uygulamalarını silme
 Gerektiğinde, yönetilen Google Play uygulamalarını Microsoft Intune'dan silebilirsiniz. Yönetilen Google Play uygulamasını silmek için Azure portalında Microsoft Intune'u açın ve **İstemci uygulamaları** > **Uygulamalar**'ı seçin. Uygulama listesinden, yönetilen Google Play uygulamasının sağ tarafındaki üç noktayı (...) seçin ve görüntülenen listeden **Sil**'i seçin. Uygulama listesinden yönetilen Google Play uygulamasını sildikten sonra, yönetilen Google Play uygulamasının onayı otomatik olarak kaldırılır.

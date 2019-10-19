@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7836b0d08367d8b021a8ea0c7f0e06311fe972b1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498579"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585408"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -38,6 +38,8 @@ Intune, yönettiğiniz uygulamanın özelliklerini izlemeniz ve uygulama atama d
 
 > [!NOTE]
 > **Kullanılabilir** olarak dağıtılan Android Mağazası uygulamaları yükleme durumlarını bildirmez.
+>
+> Android kurumsal iş profili cihazlarına dağıtılan yönetilen Google Play uygulamaları için, Intune kullanarak bir cihazda yüklü olan uygulamanın durum ve sürüm numarasını görüntüleyebilirsiniz. 
 
 ## <a name="app-overview-pane"></a>Uygulamaya genel bakış bölmesi
 

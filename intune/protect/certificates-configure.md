@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure’da sertifika profilleri oluşturma | Microsoft Docs
-description: Cihazlarınız için, SCEP veya PKCS sertifika ortamını yapılandırarak bir sertifika profili ekleyin veya oluşturun, ortak sertifikayı dışa aktarın, Azure portalında profili oluşturun ve ardından Azure portalında Microsoft Intune'daki sertifika profillerine SCEP veya PKCS atayın
+description: Microsoft Intune ile Basit Sertifika Kayıt Protokolü (SCEP) veya ortak anahtar şifreleme standartları (PKCS) sertifikaları ve sertifika profillerini kullanma hakkında bilgi edinin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67ceabae543a520851de2d2f6d05281c9e1cc42c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 67952532a452a91e771a66dd5a5b4229c07ac802
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509579"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584821"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune kimlik doğrulaması için sertifikaları kullanma  
 
@@ -31,7 +31,7 @@ VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılarınızın uygu
 ## <a name="intune-supported-certificates-and-usage"></a>Intune tarafından desteklenen sertifikalar ve kullanım
 | Tür              | Kimlik doğrulama | S/MIME Imzalama | S/MIME şifrelemesi  |
 |--|--|--|--|
-| PKCS içeri aktarılmış sertifikası |  | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png)|
+| Ortak anahtar şifreleme standartları (PKCS) içeri aktarılan sertifika |  | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png)|
 | PKCS#12 (veya PFX)    | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |  |
 | Basit Sertifika Kayıt Protokolü (SCEP)  | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | |
 
@@ -56,20 +56,20 @@ Oluşturduğunuz her ayrı sertifika profili tek bir platformu destekler. Örne�
 | Android Kurumsal <br> -Adanmış (cihaz sahibi)   |  |   |  |   |
 | Android Kurumsal <br> -İş profili    | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |
-| Mac OS                 | ![Desteklenir](./media/certificates-configure/green-check.png) |   |![Desteklenir](./media/certificates-configure/green-check.png)|![Desteklenir](./media/certificates-configure/green-check.png)|
+| Mac OS                 | ![Desteklenir](./media/certificates-configure/green-check.png) |  ![Desteklenir](./media/certificates-configure/green-check.png) |![Desteklenir](./media/certificates-configure/green-check.png)|![Desteklenir](./media/certificates-configure/green-check.png)|
 | WVPN profillerinidows Phone 8.1     |![Desteklenir](./media/certificates-configure/green-check.png)  |  | ![Desteklenir](./media/certificates-configure/green-check.png)| ![Desteklenir](./media/certificates-configure/green-check.png) |
 | Windows 8.1 ve üzeri |![Desteklenir](./media/certificates-configure/green-check.png)  |  |![Desteklenir](./media/certificates-configure/green-check.png) |   |
 | Windows 10 ve üzeri  | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>Güvenilen kök CA sertifikasını dışarı aktarma  
-PKCS, SCEP ve PKCS içeri aktarılan sertifikaları kullanmak için cihazların kök sertifika yetkilinizle güvenmesi gerekir. Bu güveni oluşturmak için, güvenilen kök sertifika yetkilisi (CA) sertifikasını ve tüm ara veya veren sertifika yetkilisi sertifikalarını ortak bir sertifika (. cer) olarak dışarı aktaralırsınız. Bu sertifikaları, veren CA 'dan veya veren CA 'nıza güvenen herhangi bir cihazdan alabilirsiniz.  
+PKCS, SCEP ve PKCS içeri aktarılan sertifikaları kullanmak için cihazların kök sertifika yetkilinizle güvenmesi gerekir. Güven oluşturmak için, güvenilen kök sertifika yetkilisi (CA) sertifikasını ve tüm ara veya veren sertifika yetkilisi sertifikalarını ortak bir sertifika (. cer) olarak dışarı aktarın. Bu sertifikaları, veren CA 'dan veya veren CA 'nıza güvenen herhangi bir cihazdan alabilirsiniz.  
 
 Sertifikayı dışarı aktarmak için, sertifika yetkilinizin belgelerine bakın. Ortak sertifikayı bir. cer dosyası olarak dışarı aktarmanız gerekir.  Bir. pfx dosyası olan özel anahtarı dışarı aktarmayın.  
 
 Bu. cer dosyasını, bu sertifikayı cihazlarınıza dağıtmak için [Güvenilen sertifika profilleri oluştururken](#create-trusted-certificate-profiles) kullanacaksınız.  
 
 ## <a name="create-trusted-certificate-profiles"></a>Güvenilen sertifika profilleri oluşturma  
-Bir SCEP, PKCS veya PKCS içeri aktarılan sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Güvenilen bir sertifika profili dağıtmak, her bir cihazın CA 'nızın yasallığını tanımasını sağlar. SCEP sertifika profilleri doğrudan bir güvenilen sertifika profiline başvurur. PKCS sertifika profilleri, güvenilen sertifika profiline doğrudan başvurmazlar, ancak CA 'nizi barındıran sunucuya doğrudan başvurur. PKCS içeri aktarılan sertifika profilleri, güvenilen sertifika profiline doğrudan başvurmazlar, ancak bunu cihazda kullanabilir. Güvenilen bir sertifika profilinin cihazlara dağıtımı, bu güvenin kurulabilmesini sağlar. Bir cihaz kök CA 'ya güvenmezse, SCEP veya PKCS sertifika profili ilkesi başarısız olur.  
+Bir SCEP, PKCS veya PKCS içeri aktarılan sertifika profili oluşturabilmeniz için önce bir güvenilen sertifika profili oluşturun. Güvenilen bir sertifika profili dağıtmak, her bir cihazın CA 'nızın yasallığını tanımasını sağlar. SCEP sertifika profilleri doğrudan bir güvenilen sertifika profiline başvurur. PKCS sertifika profilleri, güvenilen sertifika profiline doğrudan başvurmazlar, ancak CA 'nizi barındıran sunucuya doğrudan başvurur. PKCS içeri aktarılan sertifika profilleri güvenilen sertifika profiline doğrudan başvurmazlar, ancak bunu cihazda kullanabilir. Güvenilen bir sertifika profilinin cihazlara dağıtımı, bu güvenin kurulabilmesini sağlar. Bir cihaz kök CA 'ya güvenmezse, SCEP veya PKCS sertifika profili ilkesi başarısız olur.  
 
 Desteklemek istediğiniz her cihaz platformu için, SCEP, PCKS ve PKCS içeri aktarılan sertifika profillerinde olduğu gibi ayrı bir güvenilen sertifika profili oluşturun.  
 
@@ -98,7 +98,7 @@ Profil, *cihaz yapılandırması – profiller* görünümü bölmesindeki profi
 - [Üçüncü taraf sertifika yetkilisini kullanma](certificate-authority-add-scep-overview.md)  
 
 ## <a name="next-steps"></a>Sonraki adımlar  
-Güvenilen sertifika profilleri oluşturup atadıktan sonra, kullanmak istediğiniz her platform için SCEP, PKCS veya PKCS içeri aktarılmış sertifika profilleri oluşturun. Devam etmek için aşağıdaki makalelere bakın:  
+Kullanmak istediğiniz her platform için SCEP, PKCS veya PKCS içeri aktarılmış sertifika profilleri oluşturun. Devam etmek için aşağıdaki makalelere bakın:  
 - [Intune ile SCEP sertifikalarını destekleyecek altyapıyı yapılandırma](certificates-scep-configure.md)  
 - [Intune ile PKCS sertifikalarını yapılandırma ve yönetme](certficates-pfx-configure.md)  
 - [PKCS içeri aktarılan sertifika profili oluşturma](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  

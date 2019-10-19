@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26165681195a47da0fcfeb86e4cfdbe2da942ec9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510325"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585292"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma  
 
@@ -83,7 +83,7 @@ Yardım ve desteğe erişmek için aşağıdaki seçenekleri kullanın:
   4. Intune yardım ve destek bağlantısı sayfasını seçin.
 
 > [!NOTE]  
-> Intune örneğiniz, Azure Kamu gibi bir bağımsız bulutu olarak da bilinen kamu işlem bulutu 'nda (GCC) barındırılıyorsa, bu makalenin ilerleyen kısımlarında kamu işlem bulutu için Intune desteği ' ne bakın. Intune *Yardım ve destek* deneyimi, bu yılda daha sonra GCC 'de kullanılamaz. 
+> Intune örneğiniz, Azure Kamu gibi bir sogeign bulutu olarak da bilinen kamu varlıkları için özel bulutta barındırılıyorsa, bu makalenin ilerleyen kısımlarında [kamu için özel bulut Için Intune desteği](#intune-support-for-private-cloud-for-government)bölümüne bakın. Intune *Yardım ve destek* deneyimi, bu yıl sonrasına kadar kamu için özel bulutta kullanılamaz. 
 
 
 *Yardım ve destek*' i açtığınızda, Portal etkin destek olaylarına sahip olup olmadığına ve Premier destek, bazı ek öğelere ve seçeneklere bağlı olarak bir görünüm görüntüler.
@@ -91,7 +91,7 @@ Yardım ve desteğe erişmek için aşağıdaki seçenekleri kullanın:
 - **Etkin destek olayları**: etkin olaylarınızın listesini görüntüleyen [destek biletleri](#view-support-cases) sayfasını görürsünüz.  
 - **Premier destek sözleşmesi**: deneyiminizin ilk iki seçenek ile aynı olması gerekir, ancak bu konuda yardım almak için aşağıdaki ek öğeleri görürsünüz. sayfasında 
   - Sayfa başlığının **yardımına ihtiyacı var mı?** , Premier destek başlığını görürsünüz:  
-    ![Premier support başlık @ no__t-1
+    ![Premier destek başlığını ](./media/get-support/premier-banner.png)
   - Sayfanın **Destek Al** bölümünde, telefonla bir hizmet isteği oluştururken başlangıç **önem derecesi** düzeyini ayarlayabilirsiniz.
 
 
@@ -163,20 +163,20 @@ Oluşturduğunuz destek olaylarını görüntülemek için geçmiş düğmesini 
 
 Sol gezinti bölmesi **Yardım + Destek**' i kullandığınızda veya **?** seçeneği Azure portal, Intune yardım ve destek deneyiminden farklı olan Azure yardım + destek deneyimini açarsınız.  
 
-2019 Nisan 'dan itibaren, aboneliğiniz kamu Işlem bulutu 'nda (GCC) yoksa, Intune ile ilgili yardım almak için Azure *Yardım + Destek* deneyimine erişemezsiniz.  
+2019 Nisan 'dan itibaren, aboneliğiniz kamu varlıkları için özel bir bulutta olmadığı takdirde Intune ile ilgili yardım almak için Azure *Yardım + Destek* deneyimine erişemezsiniz.  
 
-Intune örneğiniz GCC üzerinde çalıştırılmazsa Azure *Yardım + Destek* aracılığıyla gezinmek, destek olaylarını oluşturmak ve yönetmek Için Intune *Yardım ve destek* deneyimine yönlendirir.  
+Intune örneğiniz kamu için özel bir bulutta çalıştırılmazsa, Azure *Yardım + Destek* aracılığıyla gezinmek, destek olayları oluşturmak ve bunları yönetmek Için sizi Intune *Yardım ve destek* deneyimine yönlendirir.  
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>Kamu Işlem bulutu için Intune desteği  
+## <a name="intune-support-for-private-cloud-for-government"></a>Kamu için özel bulut için Intune desteği  
 
-Azure Kamu gibi bir bağımsız bulutu olarak da bilinen kamu işlem bulutu (GCC) üzerinde barındırılan Intune aboneliğiniz, henüz yeni Intune yardım ve destek deneyimine erişiminiz yok.  Bunun yerine, aşağıdaki bilgileri kullanarak Intune için destek alın bölümüne gidin. 
+Intune aboneliğiniz, Azure Kamu gibi bir sogeign bulutu olarak da bilinen kamu varlıkları için özel bulutta barındırıldığında, henüz daha yeni Intune yardım ve destek deneyimine erişiminiz yoktur.  Bunun yerine, aşağıdaki bilgileri kullanarak Intune için destek alın bölümüne gidin. 
 
 
 ### <a name="create-an-online-support-ticket"></a>Çevrimiçi destek bileti oluşturma 
 
 >[!IMPORTANT]    
-> *Yardım ve destek* , gcc için henüz kullanılamayan yeni bir sisteme geçiş yaparken, bir destek olayı oluşturduğunuzda, Portal, 15 basamaklı bir kimlik numarası kullanan bir destek durumunu tanımlar. 15 basamaklı bir durum oluşturulduğunda, bu durumda Microsoft Desteği tarafından kullanılmak üzere bir yansıtma oluşturulur. Bu yansıtma durumu yeni bir destek sisteminde oluşturulur, 8 basamaklı bir durum KIMLIĞI kullanır ve destek olayınız için tüm işleri ve iletişimleri izlemek üzere Destek Hizmetleri tarafından kullanılır. 15 basamaklı bir durum oluşturulduktan sonra, destek hizmetleri tarafından kullanılan yansıtılmış destek çalışmasının 8 basamaklı sayısını tanımlayan bir e-posta alırsınız.  
+> *Yardım ve destek* , kamu için özel bulut için henüz kullanılamayan yeni bir sisteme geçiş yaparken, bir destek olayı oluşturduğunuzda Portal, 15 basamaklı bir kimlik numarası kullanan bir destek durumunu tanımlar. 15 basamaklı bir durum oluşturulduğunda, bu durumda Microsoft Desteği tarafından kullanılmak üzere bir yansıtma oluşturulur. Bu yansıtma durumu yeni bir destek sisteminde oluşturulur, 8 basamaklı bir durum KIMLIĞI kullanır ve destek olayınız için tüm işleri ve iletişimleri izlemek üzere Destek Hizmetleri tarafından kullanılır. 15 basamaklı bir durum oluşturulduktan sonra, destek hizmetleri tarafından kullanılan yansıtılmış destek çalışmasının 8 basamaklı sayısını tanımlayan bir e-posta alırsınız.  
 > 
 > Kişisel işleri destekler ve 8 basamaklı destek durumundan iletişim kurun ve yalnızca iletişimleri günlüğe kaydetmek ve olay ilerlemesini izlemek için 8 basamaklı destek örneğini kullanın. Bu nedenle, büyük/küçük harf çalışma izleme kaydınızdan söz konusu 8 basamaklı destek çalışmasının e-posta güncelleştirmelerini alacaksınız. 15 basamaklı destek olayına hiçbir ayrıntı kaydedilmez. Destek sonucuna ve 8 basamaklı destek örneği kapandığında, bu durum Azure portalından görüntüleyebileceğiniz 15 basamaklı destek örneğine göre yansıtılır.  15 basamaklı destek durumu için başka bir güncelleştirme veya durum değişikliği beklenmemelidir.  
 > 
@@ -224,7 +224,7 @@ Destek isteklerinizi Azure portal içinden görüntüleyebilirsiniz. Ancak, sın
 2. **Yardım + Destek** sayfasında, **son destek isteklerinin**listesini görüntüleyebilirsiniz.
 
    > [!IMPORTANT]  
-   > Kamu Işlem bulutu müşterileri yalnızca 15 basamaklı destek talebi numarasını ve olay durumunu görüntüleyebilir. Tüm servis talebi iletişimleri ve iş veya uyarıların izlenmesi, e-posta ile gönderilir ve Intune konsolundan açılan destek çalışmasının bir görüntüsü olarak oluşturulan 8 basamaklı destek örneği numarasına başvurur.   
+   > Kamu müşterileri için özel bulut yalnızca 15 basamaklı destek talebi numarasını ve olay durumunu görüntüleyebilir. Tüm servis talebi iletişimleri ve iş veya uyarıların izlenmesi, e-posta ile gönderilir ve Intune konsolundan açılan destek çalışmasının bir görüntüsü olarak oluşturulan 8 basamaklı destek örneği numarasına başvurur.   
 
 ## <a name="additional-resources"></a>Ek kaynaklar  
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37c2a85162c781db7272b6ead11fbb3320a08343
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498009"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585000"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -129,6 +129,14 @@ Kuruluşunuzda yönetilen iOS cihazlarında görüntülenen gizlilik bildirimini
 - Listenin gösterildiği gibi kullanılması için **Varsayılanı** kabul edin veya
 - Kuruluşunuzun yönetilen iOS cihazlarını göremediği veya bu cihazlarda yapayapabileceği öğelerin listesini özelleştirmek için **özel** ' i seçin. [Marku](https://daringfireball.net/projects/markdown/) kullanarak madde işaretleri, kalın, italik ve bağlantılar ekleyebilirsiniz.
 
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>İOS cihazları için türetilmiş kimlik bilgilerini Şirket Portalı
+Intune, kişisel kimlik doğrulama (PıV) ve ortak erişim kartı (CAC) ile birlikte gelen kimlik bilgilerini, DıŞA geçmiş kimlik bilgisi sağlayıcıları, Entrust Datacard ve ıntercede ile iş ortaklığı için destekler. Son kullanıcılar, Şirket Portalı uygulamasındaki kimliklerini doğrulamak üzere iOS cihazlarının kayıt sonrası ek adımlara geçer. Türetilmiş kimlik bilgileri, önce kiracınız için bir kimlik bilgisi sağlayıcısı ayarlayıp, ardından kullanıcılara veya cihazlara türetilmiş kimlik bilgilerini kullanan bir profili hedefleyerek kullanıcılara etkinleştirilir.
+
+> [!NOTE]
+> Kullanıcı, Intune aracılığıyla belirttiğiniz bağlantıya bağlı olarak türetilmiş kimlik bilgileri hakkındaki yönergeleri görür.
+
+İOS cihazları için türetilmiş kimlik bilgileri hakkında daha fazla bilgi için bkz. [Microsoft Intune türetilmiş kimlik bilgilerini kullanma](~/protect/derived-credentials.md).
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows Şirket Portalı klavye kısayolları
 
 Son kullanıcılar, Windows Şirket Portalı’nda klavye kısayollarını (hızlandırıcılar) kullanarak gezinti, uygulama ve cihaz eylemlerini tetikleyebilirler.
@@ -172,22 +180,25 @@ Kullanıcılar, Şirket Portalı uygulaması veya Web sitesi aracılığıyla ye
 
 Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez. Aşağıdaki tabloda self servis eylemleri hakkında daha ayrıntılı bilgi verilmektedir:
 
-|     Platfveyam    |    Devre dışı bırakma    |    Silme     |    Yeniden Adlandır<sup>(4)</sup>    |    Eşitleme    |    Uzaktan Kilitleme    |    Geçiş kodunu Sıfırla    |    Anahtar kurtarma    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    Kullanılabilir<sup>(1)</sup>    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    Yalnızca Windows Phone    |    Yalnızca Windows Phone    |    YANA    |
-|    iOS<sup>(3)</sup>    |    Kullanılabilir    |    Kullanılabilir<sup>(8)</sup>    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir<sup>(8)</sup>    |    Kullanılabilir    |    YANA    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Kullanılabilir    |    YANA    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    YANA    |    Kullanılabilir<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    Kullanılabilir<sup>(7)</sup>    |    Kullanılabilir<sup>(7)</sup>    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir    |    Kullanılabilir<sup>(6)</sup>    |    YANA    |
+|  | Windows 10<sup>(3)</sup> | iOS/ıpados<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+| Devre dışı bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir<sup>(8)</sup> | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
+| Silme | Kullanılabilir | Kullanılabilir | YANA | Kullanılabilir<sup>(7)</sup> |
+| Yeniden Adlandır<sup>(4)</sup> | Kullanılabilir | Kullanılabilir<sup>(8)</sup> | Kullanılabilir | Kullanılabilir |
+| Eşitleme | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
+| Uzaktan Kilitleme | Yalnızca Windows Phone | Kullanılabilir | Kullanılabilir | Kullanılabilir |
+| Geçiş kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir | YANA | Kullanılabilir<sup>(6)</sup> |
+| Anahtar kurtarma | YANA | YANA | Kullanılabilir<sup>(2)</sup> | YANA |
+| Koyu mod | YANA | Kullanılabilir | YANA | YANA |
 
-
-<sup>(1)</sup> devre dışı bırakma, Azure AD 'ye katılmış Windows cihazlarında her zaman engellenir.<br>
-<sup>(2)</sup> MacOS için kişisel anahtar kurtarma yalnızca şirket portalı Web sitesi aracılığıyla kullanılabilir.<br> 
+<sup>(1)</sup> **devre dışı BıRAKMA** , Azure AD 'ye katılmış Windows cihazlarında her zaman engellenir.<br>
+<sup>(2)</sup> MacOS Için **anahtar kurtarma** yalnızca Web portalı aracılığıyla kullanılabilir.<br>
 <sup>(3)</sup> bir cihaz kayıt yöneticisi kaydı kullanılıyorsa tüm uzak eylemler devre dışı bırakılır.<br>
-<sup>(4)</sup> yeniden adlandırma yalnızca cihaz adını cihazda değil şirket portalı uygulamasında veya Web sitesinde değiştirir.<br>
-<sup>(5)</sup> MacOS cihazlarında uzaktan silme kullanılamaz.<br>
-<sup>(6)</sup> geçiş kodu sıfırlama bazı Android ve Android kurumsal yapılandırmalarında desteklenmez. Daha fazla bilgi için bkz. [Intune 'da cihaz geçiş kodunu sıfırlama veya kaldırma](../remote-actions/device-passcode-reset.md).<br>
-<sup>(7)</sup> devre dışı bırakma ve Temizleme, Android kurumsal cihaz sahibi SENARYOLARıNDA (Cope, Cobo, cosu) kullanılamaz.<br> 
-<sup>(8)</sup> silme ve sıfırlama geçiş kodu, Kullanıcı kaydıyla kaydedilen iOS cihazlarında kullanılamaz.<br> 
+<sup>(4)</sup> **yeniden adlandırma** yalnızca cihaz adını cihazda değil şirket portalı uygulamasında veya Web sitesinde değiştirir.<br>
+<sup>(5)</sup> MacOS cihazlarında **uzaktan silme** kullanılamaz.<br>
+<sup>(6)</sup> bazı Android ve Android kurumsal yapılandırmalarında, **geçiş kodu sıfırlama** işlemi desteklenmez. Daha fazla bilgi için bkz. [Intune 'da cihaz geçiş kodunu sıfırlama veya kaldırma](../remote-actions/device-passcode-reset.md).<br>
+<sup>(7)</sup> **devre dışı bırakma** ve **Temizleme** , ANDROID kurumsal cihaz sahibi senaryolarında (Cope, Cobo, cosu) kullanılamaz.<br> 
+<sup>(8)</sup> **devre dışı bırak** (cihazı Kaldır) ve **yeniden adlandırma** tüm kayıt türlerinde kullanılabilir. Diğer eylemler Kullanıcı kaydı için desteklenmez.<br> 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

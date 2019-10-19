@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fa95aca680d3aa47906cad2b31695c87964fdb7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8fab3ea722e94f2613a0fb1e474a16ecb5971569
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510089"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585259"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Uygulama koruma ilkelerini yapılandırma (isteğe bağlı)
 
@@ -52,9 +52,7 @@ Eski MDM sağlayıcısında koşullu erişimi devre dışı bıraktığınızda,
 
 ## <a name="task-list-for-app-protection-policies"></a>Uygulama koruma ilkeleri için görev listesi
 
-1. [Uygulama koruma ilkesi oluşturma](../apps/app-protection-policies.md#create-an-app-protection-policy)
-2. [İlke dağıtma](../apps/app-protection-policies.md#deploy-a-policy-to-users)
-
+- [Uygulama koruma ilkeleri oluşturma ve atama](~/apps/app-protection-policies.md)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

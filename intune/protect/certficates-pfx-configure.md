@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune-Azure 'da özel ve ortak anahtar sertifikaları kullanma | Microsoft Docs
-description: Kök sertifikayı dışarı aktarma, sertifika şablonunu yapılandırma, indirme ve Intune sertifika Bağlayıcısı 'nı (NDES) yükleme adımları da dahil olmak üzere Microsoft Intune ile ortak anahtar şifreleme standartları (PKCS) sertifikaları ekleyin veya oluşturun, cihaz oluşturun yapılandırma profili ve Azure 'da ve sertifika yetkiliniz için bir PKCS sertifika profili oluşturun.
+description: Microsoft Intune ile ortak anahtar şifreleme standartları (PKCS) sertifikaları kullanın. Bu, kök sertifikalar ve sertifika şablonları ile çalışmayı, Intune sertifika Bağlayıcısı 'nı (NDES) ve bir PKCS sertifikası için cihaz yapılandırma profillerini yüklemeyi içerir.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6f4734e9154c5da16f6bdf561700c34e28228db
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f3f4a8c9be4e22f3bc64288a6e3d2ec708186de6
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509614"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585197"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -59,7 +59,7 @@ PKCS sertifikalarını Intune ile kullanmak için aşağıdaki altyapıya sahip 
 - **Microsoft Intune sertifika Bağlayıcısı** ( *NDES sertifika Bağlayıcısı*da denir):  
   Intune portalında, **cihaz yapılandırması** > **sertifika bağlayıcıları** > **Ekle**' ye gidin ve *PKCS #12 bağlayıcısını yüklemek için adımları*izleyin. Sertifika Bağlayıcısı yükleyicisini **Ndesconnectorsetup. exe**' yi indirmeye başlamak için portaldaki indirme bağlantısını kullanın.  
 
-  Intune, her örnek ayrı bir Windows Server üzerinde olmak üzere, kiracı başına bu bağlayıcının en fazla 100 örneğini destekler. Bu bağlayıcının bir örneğini, Microsoft Intune için PFX Sertifika bağlayıcısının bir örneğiyle aynı sunucuya yükleyebilirsiniz. Birden çok bağlayıcı kullandığınızda, kullanılabilir bağlayıcı örnekleri PKCS sertifika isteklerinizi işleyebilmeniz için bağlayıcı altyapısı yüksek kullanılabilirliği ve yük dengelemeyi destekler. 
+  Intune, kiracı başına bu bağlayıcının en fazla 100 örneğini destekler. Her bir Bağlayıcısı örneği ayrı bir Windows Server üzerinde olmalıdır. Bu bağlayıcının bir örneğini, Microsoft Intune için PFX Sertifika bağlayıcısının bir örneğiyle aynı sunucuya yükleyebilirsiniz. Birden çok bağlayıcı kullandığınızda bağlayıcı altyapısı, kullanılabilir bağlayıcı örnekleri PKCS sertifika isteklerinizi işleyebilmeniz için yüksek kullanılabilirlik ve yük dengelemeyi destekler. 
 
   Bu bağlayıcı, kimlik doğrulama veya S/MIME e-posta imzalama için kullanılan PKCS sertifika isteklerini işler.
 
@@ -76,7 +76,7 @@ PKCS sertifikalarını Intune ile kullanmak için aşağıdaki altyapıya sahip 
   - Sunucunuza Microsoft Intune için PFX Sertifika bağlayıcısını yükler.  
   - Önemli güncelleştirmeleri otomatik olarak almak için, bağlayıcının **443**numaralı bağlantı noktasında **AutoUpdate.msappproxy.net** 'e başvurdığına izin veren güvenlik duvarlarının açık olduğundan emin olun.   
 
-  Intune ve bağlayıcının erişebilmesi gereken ağ uç noktaları hakkında daha fazla bilgi için bkz. [Microsoft Intune Için ağ uç noktaları](../fundamentals/intune-endpoints.md).
+  Intune ve bağlayıcının erişimi olan ağ uç noktaları hakkında daha fazla bilgi için bkz. [Microsoft Intune Için ağ uç noktaları](../fundamentals/intune-endpoints.md).
 
 - **Windows Server**:  
   Barındırmak için bir Windows Server kullanın:
@@ -93,7 +93,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 **Komut satırı kullanın**:  
 1. Kök sertifika yetkilisi sunucusunda yönetici hesabıyla oturum açın.
  
-2. @No__t-1**Çalıştır**' **a gidin ve**ardından komut Istemi 'ni açmak için **cmd** girin. 
+2. **Başlat**  > **Çalıştır**' a gidin ve ardından komut Istemi 'ni açmak için **cmd** yazın. 
     
 3. Kök sertifikayı *CA_NAME. cer*adlı bir dosya olarak dışarı aktarmak için **certutil-CA. CERT CA_NAME. cer** öğesini belirtin.
 
@@ -103,7 +103,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 
 1. Yönetici ayrıcalıklarına sahip bir hesapla Kurumsal CA’nızda oturum açın.
 2. **Sertifika Yetkilisi** konsolunu açın, **Sertifika Şablonları**'na sağ tıklayın ve **Yönet**'i seçin.
-3. **Kullanıcı** sertifika şablonunu bulun, şablona sağ tıklayın ve **Şablonu Yinele**’yi seçin. **Yeni Şablon Özellikleri** açılır.
+3. **Kullanıcı** sertifika şablonunu bulun, sağ tıklayın ve **Yinelenen şablon** ' u seçerek **yeni şablonun özelliklerini**açın.
 
     > [!NOTE]
     > S/MIME e-posta imzalama ve şifreleme senaryolarında, birçok yönetici imzalama ve şifreleme için ayrı sertifikalar kullanır. Microsoft Active Directory Sertifika Hizmetlerini kullanıyorsanız, S/MIME e-posta imzalama sertifikaları için **Yalnızca Exchange İmzası** şablonunu ve S/MIME şifreleme sertifikaları için de **Exchange Kullanıcısı** şablonunu kullanabilirsiniz.  3\. taraf bir sertifika yetkilisi kullanıyorsanız, imzalama ve şifreleme şablonlarını ayarlamaya yönelik kendi kılavuzlarını gözden geçirmeniz önerilir.
@@ -143,7 +143,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 > Microsoft Intune Sertifika Bağlayıcısı, veren sertifika yetkilisine (CA) yüklenemez ve bunun yerine ayrı bir Windows Server 'da yüklü olmalıdır.  
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. @No__t **cihaz yapılandırması**' nı seçin-3**sertifika Bağlayıcısı** > **Ekle**.
+2. **Ekle** >  **cihaz yapılandırması**  > **sertifika bağlayıcıları** ' nı seçin.
 3. Bağlayıcıyı yükleyeceğiniz sunucudan erişebileceğiniz bir konuma bağlayıcı dosyasını indirin ve kaydedin.
 
     ![Microsoft Intune Sertifika Bağlayıcısı indir](./media/certficates-pfx-configure/download-ndes-connector.png)
@@ -166,8 +166,8 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 
 ## <a name="create-a-trusted-certificate-profile"></a>Güvenilen bir sertifika profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) **Intune** > **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**’a gidin.
-    ![ıntune 'a gidin ve güvenilen sertifika için yeni bir profil oluşturun @ no__t-1
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz yapılandırması** > **profiller** > **Profil oluştur**' a gidin.
+    Intune 'a ![Navigate ve güvenilen bir sertifika için yeni bir profil oluşturun ](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. Aşağıdaki özellikleri girin:
 
@@ -188,7 +188,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 
 ## <a name="create-a-pkcs-certificate-profile"></a>PKCS sertifika profili oluşturma
 
-1. [Azure portalında](https://portal.azure.com) **Intune** > **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**’a gidin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz yapılandırması** > **profiller** > **Profil oluştur**' a gidin.
 2. Aşağıdaki özellikleri girin:
 
     - Profil için **Ad**
@@ -196,22 +196,81 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
     - Profili dağıtmak için **Platform**
     - **Profil türü**’nü **PKCS sertifikası** olarak ayarlayın
 
-3. **Ayarlar**'a gidin ve aşağıdaki özellikleri girin:
-
-    - **Yenileme eşiği (%)** : %20 önerilir.
-    - **Sertifika geçerlilik süresi**: Sertifika şablonunu değiştirmediyseniz bu seçenek bir yıla ayarlanabilir.
-    - **Anahtar depolama sağlayıcısı (KSP)** : Windows için, cihazdaki anahtarları nereye depolayacağınızı seçin.
-    - **Sertifika yetkilisi**: Kurumsal CA'nızın dahili tam etki alanı adını (FQDN) görüntüler.
-    - **Sertifika yetkilisi adı**: “Contoso Sertifika Yetkilisi” gibi Kurumsal CA'nızın adını listeler.
-    - **Sertifika şablonu adı**: Daha önce oluşturduğunuz şablonun adı. **Şablon adı**’nın varsayılan olarak **Şablon görüntü adı** ile *boşluksuz* aynı olduğunu unutmayın.
-    - **Konu adı biçimi**: Aksi gerekmedikçe, bu seçeneği **Ortak ad** olarak ayarlayın.
-    - **Konu alternatif adı**: Aksi gerekmedikçe, bu seçeneği **Kullanıcı asıl adı (UPN)** olarak ayarlayın.
+3. **Ayarlar**' a gidin ve seçtiğiniz platforma uygulanan özellikleri yapılandırın:  
+   
+   |Ayar     | Platfveyam     | Details   |
+   |------------|------------|------------|
+   |**Yenileme eşiği (%)**        |Tümü         |Önerilen %20  | 
+   |**Sertifika geçerlilik süresi**  |Tümü         |Sertifika şablonunu değiştirmediyseniz bu seçenek bir yıla ayarlanmış olabilir. |
+   |**Anahtar depolama sağlayıcısı (KSP)**   |Windows 10  | Windows için, cihazdaki anahtarların depolanacağı yeri seçin. |
+   |**Sertifika yetkilisi**      |Tümü         |Kuruluş sertifika yetkilinizin iç tam etki alanı adını (FQDN) görüntüler.  |
+   |**Sertifika yetkilisi adı** |Tümü         |Kuruluş SERTIFIKA yetkilinizin adını (örneğin, "contoso sertifika yetkilisi") listeler. |
+   |**Sertifika türü**             |Mac OS       |Bir tür seçin: <br> **-** **Kullanıcı** sertifikaları hem Kullanıcı hem de cihaz özniteliklerini, sertifikanın konu ve San 'ını içerebilir. <br><br>**-** **cihaz** sertifikaları, sertifikanın konu ve San 'ına yalnızca cihaz özniteliklerini içerebilir. Cihazı, bilgi noktaları veya diğer paylaşılan cihazlar gibi Kullanıcı-daha az cihazlar gibi senaryolar için kullanın.  <br><br> Bu seçim konu adı biçimini etkiler. |
+   |**Konu adı biçimi**          |Tümü         |Çoğu platformda, aksi belirtilmedikçe bu seçeneği **ortak ad** olarak ayarlayın.<br><br>MacOS için, konu adı biçimi sertifika türü tarafından belirlenir. Bu makalenin ilerleyen kısımlarında [macOS Için konu adı biçimi](#subject-name-format-for-macos) bölümüne bakın. |
+   |**Konu diğer adı**     |Tümü         |Aksi belirtilmedikçe, bu seçeneği **Kullanıcı asıl adı (UPN)** olarak ayarlayın. |
+   |**Genişletilmiş anahtar kullanımı**           |**-** Android Cihaz Yöneticisi <br>**-** Android Enterprise (*cihaz sahibi*, *iş profili*) <br> **-** Windows 10 |Sertifikalar genellikle kullanıcı veya cihazın bir sunucuda kimliğini doğrulayabilmesi için *Istemci kimlik doğrulaması* gerektirir. |
+   |**Tüm uygulamaların özel anahtara erişimine izin ver** |Mac OS  |İlişkili Mac cihaz için yapılandırılmış uygulamaların PKCS Certificates özel anahtarına erişimi **sağlamak için '** i ayarlayın. <br><br> Bu ayar hakkında daha fazla bilgi için Apple geliştirici belgelerindeki [yapılandırma profili başvurusunun](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) sertifika yükü *bölümüne bakın.* |
+   |**Kök sertifika**             |**-** Android Cihaz Yöneticisi <br> **-** Android Enterprise (*cihaz sahibi*, *iş profili*) |Daha önce atanmış olan bir kök CA sertifika profili seçin. |
 
 4. Profilinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
 5. Yeni profili bir veya daha fazla cihaza atamak için bkz. [Microsoft Intune cihaz profillerini atama](../configuration/device-profile-assign.md).
 
    > [!NOTE]
    > Android kurumsal profiline sahip cihazlarda, PKCS sertifika profili kullanılarak yüklenen sertifikalar cihazda görünmez. Başarılı sertifika dağıtımını onaylamak için, Intune konsolundaki profilin durumunu denetleyin.
+
+### <a name="subject-name-format-for-macos"></a>MacOS için konu adı biçimi
+
+Bir macOS PKCS sertifika profili oluştururken, konu adı biçimi seçenekleri, seçtiğiniz sertifika türüne, **Kullanıcı** veya **cihaza**bağlıdır.  
+
+> [!NOTE]  
+> Sonuç sertifika Imzalama Isteğindeki (CSR) konu adı, kaçış karakteri olarak şu karakterlerden birini içerdiğinde [, SCEP için görülen aynı sorun olan](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) sertifikaları almak için pcks kullanma konusunda bilinen bir sorun vardır ( ters eğik çizgi \\):
+> - \+
+> - ;
+> - ,
+> - =
+
+- **Kullanıcı sertifika türü**  
+  *Konu adı biçimi* için biçim seçenekleri iki değişken Içerir: **ortak ad (CN)** ve **e-posta (e)** . **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
+
+  - **CN = {{username}}** : kullanıcının janedoe@contoso.com gibi Kullanıcı asıl adı.
+  - **CN={{AAD_Device_ID}}** : Azure Active Directory’ye (AD) yeni bir cihaz kaydettiğinizde atanan bir kimlik. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
+  - **CN = {{SERIALNUMBER}}** : genellikle üretici tarafından bir cihazı tanımlamak için kullanılan benzersiz seri numarası (sn).
+  - **CN = {{ımekarmsayı}}** : bir cep telefonu tanımlamak Için kullanılan uluslararası mobil ekipman KIMLIĞI (IMEI) benzersiz numarası.
+  - **CN = {{OnPrem_Distinguished_Name}}** : *CN = Gamze Etikan, OU = USERACCOUNTS, DC = Corp, DC = contoso, DC = com*gibi virgülle ayrılmış göreli ayırt edici adların sırası.
+
+    *{{OnPrem_Distinguished_Name}}* değişkenini kullanmak Için, Azure AD 'nize [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak *onpremisesdistinguishedname* User özniteliğini eşitlediğinizden emin olun.
+
+  - **CN = {{onPremisesSamAccountName}}** : Yöneticiler, *adlı BIR*özniteliğe Azure AD connect kullanarak sAMAccountName ÖZNITELIĞINI Active Directory 'den Azure AD 'ye eşitleyebilir. Intune, bu değişkeni bir sertifika konusunun sertifika verme isteğinin bir parçası olarak kullanabilir. SamAccountName özniteliği, Windows 'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan Kullanıcı oturum açma adıdır. Kullanıcı oturum açma adı biçimi: EtkiAlanıAdı \ *testuser*veya yalnızca *testuser*.
+
+    *{{OnPremisesSamAccountName}}* değişkenini kullanmak Için, Azure AD 'nize [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak *onPremisesSamAccountName* User özniteliğini eşitlediğinizden emin olun.
+
+  Bu değişkenlerin ve statik dizelerin bir veya birkaç tanesinin bir bileşimini kullanarak aşağıdaki gibi özel bir konu adı biçimi oluşturabilirsiniz:  
+  - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+  
+  Bu örnekte, CN ve E değişkenlerini kullanan bir konu adı biçimi ve kuruluş birimi, kuruluş, konum, durum ve ülke değerleri için dizeler bulunur. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), bu işlevi ve desteklenen dizelerini açıklar.
+
+- **Cihaz sertifika türü**  
+  Konu adı biçimi için biçim seçenekleri aşağıdaki değişkenleri içerir: 
+  - **{{AAD_Device_ID}}**
+  - **{{Device_Serial}}**
+  - **{{Device_IMEI}}**
+  - **{{SerialNumber}}**
+  - **{{Imekarmsayı}}**
+  - **{{Azureaddeviceıd}}**
+  - **{{WiFiMacAddress}}**
+  - **{{IMEı}}**
+  - **{{Aygıtadı}}**
+  - **{{Fullyıqualifieddomainname}}** *(yalnızca Windows ve etki alanına katılmış cihazlar için geçerlidir)*
+  - **{{MEıD}}**
+   
+  Bu değişkenleri ve metin kutusu içinde değişkeni için metni belirtebilirsiniz. Örneğin, *Device1* adlı bir cihazın ortak adı **CN = {{aygıtadı}} Device1**olarak eklenebilir.
+
+  > [!IMPORTANT]  
+  > - Bir değişken belirttiğinizde, bir hatadan kaçınmak için, değişken adını örnekte görüldüğü gibi küme ayraçları {} içine alın.  
+  > - **IMEI**, **SerialNumber**ve **fullyıqualifieddomainname**gibi bir cihaz sertifikasının *Konu* veya *San* 'ı üzerinde kullanılan cihaz özellikleri, cihaza erişimi olan bir kişi tarafından sızılmış özelliklerdir.
+  > - Bir cihazın, bu cihaza yüklemek için bir sertifika profilinde belirtilen tüm değişkenleri desteklemesi gerekir.  Örneğin, bir SCEP profilinin konu adında **{{IMEI}}** kullanılıyorsa ve IMEI numarası olmayan bir cihaza atanırsa, profil yüklenemez.  
+ 
+
 
 ## <a name="whats-new-for-connectors"></a>Bağlayıcılar yenilikleri
 İki sertifika Bağlayıcısı için güncelleştirmeler düzenli aralıklarla yayımlanır. Bir bağlayıcıyı güncelleştirdiğimiz zaman, buradaki değişiklikler hakkında bilgi edinebilirsiniz. 

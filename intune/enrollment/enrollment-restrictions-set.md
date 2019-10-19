@@ -18,20 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83a0533ee7767035ea26fa971a6dbe73470f1717
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503194"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587947"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Bir Intune Yöneticisi olarak, cihazları aşağıdakiler dahil olmak üzere hangi cihazların Intune ile yönetime kaydolabileceğini tanımlayan kayıt kısıtlamaları oluşturabilir ve bunları yönetebilirsiniz:
-- cihaz sayısı
-- işletim sistemleri ve sürümleri birden çok kısıtlama oluşturabilir ve bunları farklı Kullanıcı gruplarına uygulayabilirsiniz. Farklı kısıtlamalarınız için [öncelik sırası](#change-enrollment-restriction-priority) ayarlayabilirsiniz.
+- Cihaz sayısı.
+- İşletim sistemleri ve sürümleri.
+
+Birden çok kısıtlama oluşturabilir ve bunları farklı kullanıcı gruplarına uygulayabilirsiniz. Farklı kısıtlamalarınız için [öncelik sırası](#change-enrollment-restriction-priority) ayarlayabilirsiniz.
 
 >[!NOTE]
 >Kayıt kısıtlamaları güvenlik özellikleri değildir. Güvenliği aşılan cihazlar karakterlerini yanlış gösterebilir. Bu kısıtlamalar, kötü amaçlı olmayan kullanıcılara yönelik olabilecek en iyi engeldir.
@@ -59,24 +61,33 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
 
 1. Azure portalında oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
-3. **Cihaz kaydı**@no__t seçin-1**Kayıt kısıtlamaları** > **kısıtlama oluşturma** > **cihaz türü kısıtlaması**.
-    bir cihaz türü kısıtlaması oluşturmak için ![Ekran Cap @ no__t-1
+3. **Cihaz kaydı**  > **Kayıt kısıtlamaları** ' nı seçin  > **cihaz türü kısıtlaması** **oluşturma**  > .
+    cihaz türü kısıtlaması oluşturmak için ![Screen Cap ](./media/enrollment-restrictions-set/create-device-type-restriction.png)
 4. **Temel bilgiler** sayfasında, kısıtlamaya bir **ad** ve isteğe bağlı bir **Açıklama**sağlayın.
 5. **İleri ' yi** seçerek **Platform ayarları** sayfasına gidin.
 6. **Platform**altında, bu kısıtlamanın izin vermek istediğiniz platformlar Için **izin ver** ' i seçin.
-    Platform ayarlarını seçmek için ![Ekran ucu @ no__t-1
+    Platform ayarlarını seçmek için ![Screen Cap ](./media/enrollment-restrictions-set/choose-platform-settings.png)
 7. **Sürümler**altında, izin verilen platformların desteklemesini istediğiniz en düşük ve en yüksek sürümleri seçin. Sürüm kısıtlamaları yalnızca Şirket Portalı kaydedilmiş cihazlara uygulanır.
      Desteklenen sürüm biçimleri:
     - Android Cihaz Yöneticisi ve Android kurumsal iş profili, ana. ikincil. Rev. Build 'yi destekler.
     - iOS, ana. Minor. Rev 'ı destekler. İşletim sistemi sürümleri Aygıt Kayıt Programı, Apple Okul Yöneticisi veya Apple Configurator uygulaması ile kaydolmasını sağlayan Apple cihazlarına uygulanmaz.
     - Windows yalnızca Windows 10 için ana. Minor. Build. Rev 'ı destekler.
-    > [!Note]
-    > Windows 10 kayıt sırasında Rev numarası sağlamaz, örneğin, 10.0.17134.100 içine girdiğinizde ve cihaz 10.0.17134.174 ise kayıt sırasında engellenir.
+    
+    > [!IMPORTANT]
+    > Android Enterprise (iş profili) ve Android Cihaz Yöneticisi platformları aşağıdaki davranışa sahiptir:
+    > - Aynı grup için her iki platformda de izin veriliyorsa kullanıcılar, cihazları destekliyorsa bir iş profiliyle kaydedilir, aksi takdirde DA olarak kaydedilir. 
+    > - Grup için her iki platforma de izin veriliyorsa ve bu ve çakışmayan olmayan sürümler için, kullanıcılar işletim sistemi sürümleri için tanımlanan kayıt akışını alır. 
+    > - Her iki platforma de izin veriliyorsa, ancak aynı sürümler için engelleniyorsa, engellenen sürümlere sahip cihazlardaki kullanıcılar Android Cihaz Yöneticisi kayıt akışını aşağı götürülecektir ve sonra kayıt işleminden sonra oturum kapatması istenir. 
+    >
+    > Android kaydında uygun dilekleri tamamlanana kadar iş profili veya cihaz yöneticisi kaydının çalışmayacak şekilde dikkat edin. 
+    
+   > [!Note]
+   > Windows 10 kayıt sırasında Rev numarası sağlamaz, örneğin, 10.0.17134.100 içine girdiğinizde ve cihaz 10.0.17134.174 ise kayıt sırasında engellenir.
 
 8. **Kişisel**olarak sahip olunan cihazlara izin vermek istediğiniz platformlar Için **izin ver** ' i seçin.
 9. **Atamalar** sayfasına gitmek için **İleri ' yi** seçin.
 10. **Dahil edilecek grupları seç** ' i seçin ve ardından bu kısıtlamaya dahil etmek istediğiniz grupları bulmak için arama kutusunu kullanın. Kısıtlama yalnızca atandığı gruplara uygulanır. Kısıtlamayı en az bir gruba atamazsanız, hiçbir etkisi olmaz. Daha sonra **Seç**’e tıklayın. 
-    Platform ayarlarını seçmek için ![Ekran ucu @ no__t-1
+    Platform ayarlarını seçmek için ![Screen Cap ](./media/enrollment-restrictions-set/select-groups.png)
 11. **İleri ' yi** seçerek **gözden geçir + oluştur** sayfasına gidin.
 12. Kısıtlamayı oluşturmak için **Oluştur** ' u seçin.
 13. Yeni kısıtlama, varsayılan öncelik düzeyinin hemen üstündeki öncelik düzeyiyle oluşturulur. [Önceliği değiştirebilirsiniz](#change-enrollment-restriction-priority).
@@ -86,15 +97,15 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
 
 1. Azure portalında oturum açın.
 2. **Diğer Hizmetler**'i seçin, **Intune** için arama yapın ve ardından **Intune**'u seçin.
-3. **Cihaz kaydı**@no__t seçin-1**Kayıt kısıtlamaları** > **kısıtlama oluşturma** > **cihaz sınır kısıtlaması**.
-    cihaz sınırı kısıtlaması oluşturmak için ![Ekran Cap @ no__t-1
+3. **Cihaz kaydı**  > **Kayıt kısıtlamaları** ' nı seçin  > **cihaz sınırı kısıtlaması** > **oluşturun** .
+    cihaz sınırı kısıtlaması oluşturmak için ![Screen Cap ](./media/enrollment-restrictions-set/create-device-limit-restriction.png)
 4. **Temel bilgiler** sayfasında, kısıtlamaya bir **ad** ve isteğe bağlı bir **Açıklama**sağlayın.
 5. **Cihaz sınırı** sayfasına gitmek için **İleri ' yi** seçin.
 6. **Cihaz sınırı**için, bir kullanıcının kaydedebileceği en fazla cihaz sayısını seçin.
-    cihaz sınırı seçimi için ![Ekran Cap @ no__t-1
+    cihaz sınırı seçmek için ![Screen uç ](./media/enrollment-restrictions-set/choose-device-limit.png)
 7. **Atamalar** sayfasına gitmek için **İleri ' yi** seçin.
 8. **Dahil edilecek grupları seç** ' i seçin ve ardından bu kısıtlamaya dahil etmek istediğiniz grupları bulmak için arama kutusunu kullanın. Kısıtlama yalnızca atandığı gruplara uygulanır. Kısıtlamayı en az bir gruba atamazsanız, hiçbir etkisi olmaz. Daha sonra **Seç**’e tıklayın. 
-    @no__t-Grup seçme için 0Ekran Cap @ no__t-1
+    grupları seçmek için ![Screen uç ](./media/enrollment-restrictions-set/select-groups-device-limit.png)
 11. **İleri ' yi** seçerek **gözden geçir + oluştur** sayfasına gidin.
 12. Kısıtlamayı oluşturmak için **Oluştur** ' u seçin.
 13. Yeni kısıtlama, varsayılan öncelik düzeyinin hemen üstündeki öncelik düzeyiyle oluşturulur. [Önceliği değiştirebilirsiniz](#change-enrollment-restriction-priority).

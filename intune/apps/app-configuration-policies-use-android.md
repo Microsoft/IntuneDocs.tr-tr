@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fecdc56e6140a939959ac92bbe8fa410d43ccc5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507516"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584989"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -69,14 +69,16 @@ Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim y
 
 | Seçenek | Örnek |
 |----|----|
-| Mail | john@contoso.com |
-| Kullanıcı asıl adı | john@contoso.com |
-| Kısmi UPN | john |
-| Etki Alanı | Contoso.com |
-| Kullanıcı adı | John Doe |
+| AAD cihaz KIMLIĞI | dc0dc142-11d8-4b12-bfea-cae2a8514c82 |
 | Hesap kimliği | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| Intune Cihaz Kimliği | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| Etki Alanı | Contoso.com |
+| Mail | john@contoso.com |
+| Kısmi UPN | john |
 | Kullanıcı KIMLIĞI | 3ec2c00f-b125-4519-acf0-302ac3761822 |
-| Cihaz Kimliği | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| Kullanıcı adı | John Doe |
+| Kullanıcı asıl adı | john@contoso.com |
+
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Çok kimlikli uygulamalarda yalnızca yapılandırılmış kuruluş hesaplarına izin verme 
 
@@ -117,7 +119,7 @@ Ayrıca, Android cihaz özelliklerine erişmek için uygulama izinlerini öncede
     - **Platform**: **Android**' i seçin.
 
 3. **Ilişkili uygulama**' yı seçin. Yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçin. Onaylanan ve Intune ile eşitlenen Android iş profili uygulamaları listesinden seçim yapın.
-4. @No__t **izinleri**seçin-1**Ekle**. Listeden, kullanılabilir uygulama izinlerini seçin > **Tamam**' ı seçin.
+4. **Ekle** >  **izinleri** seçin. Listeden, kullanılabilir uygulama izinlerini seçin > **Tamam**' ı seçin.
 5. Bu ilkeyle verilecek her izin için bir seçenek belirleyin:
     - **Sor**. Kullanıcıdan kabul etmesini veya reddetmesini isteme.
     - **Otomatik olarak izin ver**. Kullanıcıya bildirmeden otomatik olarak onayla.

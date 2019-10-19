@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c8507f98a757f2f80580014eab3589da12f8de8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a8e105dae43c4e7139c8e44a8c6535baebe31cc4
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499195"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585457"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Microsoft Intune uygulama koruma ilkelerini oluşturmayı ve kullanıcılarınıza atamayı öğrenin. Bu konu, mevcut ilkelerde nasıl değişiklik yapılacağını da açıklar.
+Kuruluşunuzun kullanıcıları için Microsoft Intune uygulama koruma ilkeleri (uygulama) oluşturmayı ve atamayı öğrenin. Bu konu, mevcut ilkelerde nasıl değişiklik yapılacağını da açıklar.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -39,19 +39,87 @@ MAM destekli uygulamalar listesi arıyorsanız bkz. [MAM uygulamaları listesi](
 
 Kuruluşunuzun iş kolu (LOB) uygulamalarını uygulama koruma ilkelerine hazırlamak üzere Microsoft Intune'a ekleme hakkında bilgi için bkz. [Uygulamaları Microsoft Intune'a ekleme](apps-add.md).
 
-## <a name="create-an-app-protection-policy"></a>Uygulama koruma ilkesi oluşturma
-1. Intune portalında **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ne gidin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar.
-2. **İlke Oluştur**'u seçin.
+Şu anda, bir uygulama koruma ilkesi oluşturmak için işlem akışı platforma göre farklılık gösterir:
+- İOS/ıpados ve Android uygulamaları için uygulama koruma ilkeleri
+- Windows 10 uygulamaları için uygulama koruma ilkeleri
 
-   ![“İlke ekle” dikey penceresinin ekran görüntüsü](./media/app-protection-policies/app-protection-add-policy.png)
+## <a name="app-protection-policies-for-iosipados-and-android-apps"></a>İOS/ıpados ve Android uygulamaları için uygulama koruma ilkeleri
 
-3. İlke için bir ad belirtin, kısa bir açıklama ekleyin ve ilkeniz için platform türünü seçin. Her platform için birden çok ilke oluşturabilirsiniz.
+İOS/ıpados ve Android uygulamaları için bir uygulama koruma ilkesi oluşturduğunuzda, yeni bir uygulama koruma ilkesine neden olan modern bir Intune işlem akışını takip edersiniz.
 
-4. Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar** dikey penceresini açmak için **Uygulamalar**'ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçin. İlke oluşturmak için en az bir uygulama seçin.  
+### <a name="create-an-iosipados-or-android-app-protection-policy"></a>İOS/ıpados veya Android uygulama koruma ilkesi oluşturma
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. Intune portalında, **istemci uygulamaları**  > **Uygulama koruma ilkeleri**' ni seçin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar.
+3. **Ilke oluştur** ' u seçin ve **IOS/ıpados** ya da **Android**' i seçin. **Ilke oluştur** dikey penceresi görüntülenir.
+4. **Temel bilgiler** sayfasında, aşağıdaki değerleri ekleyin:
 
-5. Uygulamaları seçtikten sonra seçiminizi kaydetmek için **Seç**’i seçin.
+    | Değer | Description |
+    |--------------|------------------------------------------------|
+    | Ad | Bu uygulama koruma ilkesinin adı. |
+    | Description | Seçim Bu uygulama koruma ilkesinin açıklaması. |
 
-6. **İlke ekle** dikey penceresinde, **Ayarlar**’ı açmak için **Gerekli ayarları yapılandır**’ı seçin.
+
+    **Platform** değeri, yukarıdaki seçeneğe göre ayarlanır.
+
+    ![İlke oluştur dikey penceresinin temel bilgiler sayfasının ekran görüntüsü](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+
+5. **İleri** ' ye tıklayarak **uygulamalar** sayfasını görüntüleyin.<br>
+    **Uygulamalar** sayfası, bu ilkeyi farklı cihazlardaki uygulamalara nasıl uygulamak istediğinizi seçmenizi sağlar. En az bir uygulama eklemeniz gerekir.<p>
+    
+    | Değer/seçenek | Description |
+    |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Tüm cihaz türlerindeki uygulamalar için hedef | İlkenizi herhangi bir yönetim durumundaki cihazlarda uygulamalara hedeflemek için bu seçeneği kullanın. Belirli cihaz türlerindeki uygulamaları hedeflemek için **Hayır** ' ı seçin. |
+    |     Cihaz türleri | Bu ilkenin MDM yönetilen cihazlara veya yönetilmeyen cihazlara uygulanıp uygulanmayacağını belirtmek için bu seçeneği kullanın. İOS uygulama ilkeleri için **yönetilmeyen** ve **yönetilen** cihazlar arasından seçim yapın. Android uygulama ilkeleri için **yönetilmeyen**, **Android Cihaz Yöneticisi**ve **Android kurumsal**' i seçin.  |
+    | Ortak uygulamalar | Hedeflenecek uygulamaları seçmek için **ortak uygulamaları seç** ' e tıklayın. |
+    | Özel uygulamalar | Bir paket KIMLIĞINE göre hedeflemek üzere özel uygulamalar seçmek için **özel uygulamalar Seç** ' e tıklayın. |
+    
+    Seçtiğiniz uygulamalar ortak ve özel uygulamalar listesinde görünür. 
+6. **İleri** ' ye tıklayarak **veri koruma** sayfasını görüntüleyin.<br>
+    Bu sayfa, kesme, kopyalama, yapıştırma ve farklı kaydet kısıtlamaları dahil olmak üzere veri kaybı önleme (DLP) denetimleri için ayarlar sağlar. Bu ayarlar, kullanıcıların bu uygulama koruma ilkesinin uygulandığı uygulamalardaki verilerle nasıl etkileşime gireceğini tespit ediyor.
+
+    **Veri koruma ayarları**:<br>
+    - **iOS/ıpados veri koruma** -bilgi için bkz. [iOS uygulama koruma Ilkesi ayarları-veri koruma](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **Android veri koruma** -bilgi için bkz. [Android uygulama koruma Ilkesi ayarları-veri koruma](~/apps/app-protection-policy-settings-android.md#data-protection).
+
+7. **İleri** ' ye tıklayarak **erişim gereksinimleri** sayfasını görüntüleyin.<br>
+    Bu sayfa, kullanıcıların bir iş bağlamındaki uygulamalara erişmek için karşılaması gereken PIN ve kimlik bilgisi gereksinimlerini yapılandırmanıza izin veren ayarları sağlar. 
+ 
+    **Erişim gereksinimleri ayarları**:<br>
+    - **iOS/ıpados erişim gereksinimleri** -bilgi için bkz. [iOS uygulama koruma Ilkesi ayarları-erişim gereksinimleri](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    - **Android erişim gereksinimleri** -daha fazla bilgi için bkz. [Android uygulama koruma Ilkesi ayarları-erişim gereksinimleri](~/apps/app-protection-policy-settings-android.md#access-requirements).
+
+8. **Koşullu başlatma** sayfasını göstermek için **İleri** ' ye tıklayın.<br>
+    Bu sayfa, uygulama koruma ilkeniz için oturum açma güvenlik gereksinimlerini ayarlamaya yönelik ayarları sağlar. Bir **Ayar** seçin ve kullanıcıların şirket uygulamanızda oturum açması için karşılaması gereken bir **Değer** girin. Ardından, kullanıcılar gereksinimlerinizi karşılamıyorsa gerçekleştirmek istediğiniz **eylemi** seçin. Bazı durumlarda tek bir ayar için birden çok eylem yapılandırılabilir.
+
+    **Koşullu başlatma ayarları**:<br>
+    - **iOS/ıpados koşullu başlatma** -bilgi için bkz. [iOS uygulama koruma Ilkesi ayarları-koşullu başlatma](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    - **Android koşullu başlatma** -bilgi için bkz. [Android uygulama koruma Ilkesi ayarları-koşullu başlatma](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+
+7. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.<br>
+   **Atamalar** sayfası, uygulama koruma ilkesini Kullanıcı gruplarına atamanıza olanak tanır. 
+8. **İleri** ' ye tıklayın ve bu uygulama koruma ilkesi için girdiğiniz değerleri ve ayarları gözden geçirin.
+9. İşiniz bittiğinde, Intune 'da uygulama koruma ilkesini oluşturmak için **Oluştur** ' a tıklayın. 
+
+## <a name="app-protection-policies-for-windows-10-apps"></a>Windows 10 uygulamaları için uygulama koruma ilkeleri
+
+Windows 10 uygulamaları için bir uygulama koruma ilkesi oluşturduğunuzda, klasik bir Intune işlem akışını takip edersiniz.
+
+### <a name="create-a-windows-10-app-protection-policy"></a>Windows 10 uygulama koruma ilkesi oluşturma
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. Intune portalında, **istemci uygulamaları**  > **Uygulama koruma ilkeleri**' ni seçin. Bu seçim, yeni ilkeler oluşturacağınız ve mevcut ilkeleri düzenleyeceğiniz **Uygulama koruma ilkeleri** ayrıntılarını açar.
+3. **Ilke oluştur**' u seçin.
+
+    <img alt="Screenshot of the 'Create policy' blade for Windows 10" src="~/apps/media/app-protection-policies/app-protection-add-policy.png" width="350">
+
+4. İlke için bir ad belirtin, kısa bir açıklama ekleyin ve ilkeniz için platform türünü seçin. Her platform için birden çok ilke oluşturabilirsiniz.
+
+4. **Tüm uygulama türleri Için hedef**seçebilirsiniz seçeneğini belirleyebilirsiniz. Bu seçenek, ilkenizi herhangi bir yönetim durumunun cihazlarındaki uygulamalara hedefetmenize olanak tanır. İlke çakışma çözümü sırasında, bir kullanıcının belirli bir yönetim durumu için hedeflenmiş bir ilkesi varsa bu ayarın yerini alınır. Daha fazla bilgi için bkz. [Cihaz yönetim durumuna bağlı olarak uygulama koruma ilkeleri hedefleme](~/apps/app-protection-policies.md#target-app-protection-policies-based-on-device-management-state).
+
+5. Kullanılabilir uygulamaların listesini görüntüleyen **Uygulamalar** dikey penceresini açmak için **Uygulamalar**'ı seçin. Oluşturmakta olduğunuz ilke ile ilişkilendirmek istediğiniz bir veya daha fazla uygulamayı listeden seçin. İlke oluşturmak için en az bir uygulama seçin.  
+
+6. Uygulamaları seçtikten sonra seçiminizi kaydetmek için **Seç**’i seçin.
+
+7. **İlke ekle** dikey penceresinde, **Ayarlar**’ı açmak için **Gerekli ayarları yapılandır**’ı seçin.
 
    İlke ayarları üç kategoriye ayrılır:
    - **Veri koruma** - Bu grup kesme, kopyalama, yapıştırma ve farklı kaydetme kısıtlamaları gibi veri kaybı önleme (DLP) denetimlerini içerir. Bu ayarlar, kullanıcıların uygulamalarda verilerle nasıl etkileşim kurduğunu belirler.
@@ -63,12 +131,12 @@ Kuruluşunuzun iş kolu (LOB) uygulamalarını uygulama koruma ilkelerine hazır
    > [!TIP]
    > Bu ilke ayarları, yalnızca uygulamalar iş bağlamında kullanılırken uygulanır. Son kullanıcı, uygulamayı kişisel bir görev için kullanırken bu ilkelerden etkilenmez. Yeni bir dosya oluşturduğunuzda bunun kişisel bir dosya olarak kabul edildiğini unutmayın. 
 
-7. Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** dikey penceresine geri dönersiniz.
-8. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
+8. Bu yapılandırmayı kaydetmek için **Tamam**’ı seçin. **İlke ekle** dikey penceresine geri dönersiniz.
+9. İlkeyi oluşturmak ve ayarlarınızı kaydetmek için **Oluştur**’u seçin.
 
-Oluşturduğunuz yeni ilkeler siz açıkça dağıtana kadar herhangi bir kullanıcıya dağıtılmaz. Bir ilkeyi dağıtmak için bkz. [Bir ilkeyi kullanıcılara dağıtma](app-protection-policies.md#deploy-a-policy-to-users).
+Oluşturduğunuz yeni Windows 10 ilkeleri, açıkça bunu yapana kadar hiçbir kullanıcıya atanmaz. Bir Windows 10 ilkesi atamak için bkz. [kullanıcılara Windows 10 Ilkesi atama](~/apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)
 
-## <a name="deploy-a-policy-to-users"></a>Bir ilkeyi kullanıcılara dağıtma
+### <a name="assign-a-windows-10-policy-to-users"></a>Kullanıcılara bir Windows 10 ilkesi atama 
 
 1. **Uygulama koruma ilkeleri** bölmesinde, bir ilke seçin.
 
@@ -95,7 +163,7 @@ Son kullanıcılar uygulamaları App Store veya Google Play’den indirebilir. D
 * [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-android.md)
 * [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-ios.md)
 
-## <a name="change-existing-policies"></a>Mevcut ilkeleri değiştirme
+### <a name="change-existing-windows-10-policies"></a>Mevcut Windows 10 ilkelerini değiştirme
 Mevcut ilkeyi düzenleyebilir ve bunu hedeflenen kullanıcılara uygulayabilirsiniz. Bununla birlikte, mevcut ilkeleri değiştirdiğinizde uygulamalarda oturum açmış olan kullanıcılar bu değişiklikleri sekiz saat boyunca görmez.
 
 Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama oturumunu kapatması ve yeniden oturum açması gerekir.
@@ -108,8 +176,7 @@ Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama otu
 
 3. Uygulamaları listeden kaldırın veya listeye ekleyin ve ardından değişikliklerinizi kaydetmek için **Kaydet** simgesini seçin.
 
-### <a name="to-change-the-list-of-user-groups"></a>Kullanıcı grupları listesini değiştirmek için
-
+#### <a name="to-change-the-list-of-user-groups"></a>Kullanıcı grupları listesini değiştirmek için
 
 1. **Uygulama koruma ilkeleri** bölmesinde, değiştirmek istediğiniz ilkeyi seçin.
 
@@ -123,7 +190,7 @@ Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama otu
 
 5. Atamalarda yaptığınız değişiklikler hazır duruma geldiğinde **Kaydet**'i seçerek yapılandırmayı kaydedebilir ve ilkeyi yeni kullanıcı grubuna dağıtabilirsiniz. Yapılandırmanızı kaydetmeden **Vazgeç**'i seçerseniz *Ekle* ve *Dışla* sekmesinde yaptığınız tüm değişiklikler silinir.
 
-### <a name="to-change-policy-settings"></a>İlke ayarlarını değiştirmek için
+### <a name="to-change-windows-10-policy-settings"></a>Windows 10 ilke ayarlarını değiştirmek için
 
 1. **Uygulama koruma ilkeleri** bölmesinde değiştirmek istediğiniz ilkeyi seçin.
 
@@ -136,9 +203,9 @@ Değişikliklerin etkisini hemen görmek için, son kullanıcının uygulama otu
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Cihaz yönetim durumuna bağlı olarak uygulama koruma ilkeleri hedefleme
 Pek çok kuruluşta son kullanıcıların Intune Mobil Cihaz Yönetimi (MDM) ile yönetilen cihazları (şirkete ait cihazlar gibi) ve yalnızca Intune uygulama koruma ilkeleriyle korunan yönetilmeyen cihazları kullanmalarına izin verilir. Yönetilmeyen cihazlar genellikle Kendi Cihazını Getir (KCG) cihazları olarak bilinir.
 
-Intune uygulama koruma ilkeleri, bir kullanıcının kimliğini hedeflendiği için kullanıcı koruma ayarları hem kaydedilmiş (MDM ile yönetilen) hem de kaydedilmemiş (MDM’siz) cihazlara uygulanabilir. Bu nedenle bir Intune uygulama koruma ilkesinde Intune’a kayıtlı olan veya olmayan iOS ve Android cihazları hedefleyebilirsiniz. Kesin veri kaybı önleme (DLP) denetimlerinin yerinde olduğu yönetilmeyen cihazlar için bir koruma ilkenize ve MDM ile yönetilen cihazlar için DLP denetimlerinin çok daha gevşek olabileceği ayrı bir koruma ilkesine sahip olabilirsiniz. Bunun kişisel Android Enterprise cihazlarında nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri ve iş profilleri](android-deployment-scenarios-app-protection-work-profiles.md).
+Intune uygulama koruma ilkeleri, bir kullanıcının kimliğini hedeflendiği için kullanıcı koruma ayarları hem kaydedilmiş (MDM ile yönetilen) hem de kaydedilmemiş (MDM’siz) cihazlara uygulanabilir. Bu nedenle bir Intune uygulama koruma ilkesinde Intune’a kayıtlı olan veya olmayan iOS ve Android cihazları hedefleyebilirsiniz. Kesin veri kaybı önleme (DLP) denetimlerinin yerinde olduğu yönetilmeyen cihazlar için bir koruma ilkenize ve MDM ile yönetilen cihazlar için DLP denetimlerinin çok daha gevşek olabileceği ayrı bir koruma ilkesine sahip olabilirsiniz. Bunun kişisel Android kurumsal cihazlarda nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri ve iş profilleri](android-deployment-scenarios-app-protection-work-profiles.md).
 
-Bu ilkeleri oluşturmak için Intune konsolunda **İstemci uygulamaları** > **Uygulama koruma ilkeleri**'ne gidin ve **İlke Oluştur**’u seçin. Mevcut bir koruma ilkesini de düzenleyebilirsiniz. Uygulama koruma ilkesinin hem yönetilen hem yönetilmeyen cihazlara uygulanması için, **Tüm uygulama türlerini hedefle**’nin varsayılan değer olan **Evet** değerine ayarlandığını doğrulayın. Yönetim durumuna bağlı olarak ayrı atamalar yapmak istiyorsanız **Tüm uygulama türlerini hedefle** seçeneğini **Hayır** olarak ayarlayın. 
+Bu ilkeleri oluşturmak için Intune konsolunda **İstemci uygulamaları** > **Uygulama koruma ilkeleri**'ne gidin ve **İlke Oluştur**’u seçin. Mevcut bir koruma ilkesini de düzenleyebilirsiniz. Uygulama koruma ilkesinin hem yönetilen hem de yönetilmeyen cihazlara uygulanmasını sağlamak için, **uygulamalar** sayfasına gidin ve **tüm cihaz türlerindeki uygulamalar hedefinin** , varsayılan değer olan **Evet**olarak ayarlandığını onaylayın. Yönetim durumuna göre daha fazla **atama yapmak istiyorsanız**, **hedefi tüm cihaz türlerindeki uygulamalar olarak** ayarlayın. 
 
 ![Tüm uygulama türlerini hedefle ile İlke ekle penceresinin ekran görüntüsü](./media/app-protection-policies/app-protection-policies-target-all.png)
 

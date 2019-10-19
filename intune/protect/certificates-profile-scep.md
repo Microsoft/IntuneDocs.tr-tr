@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16a6e35fd1d7b60d9abce5e2b3491fee1efb41c3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502538"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585429"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
@@ -50,7 +50,7 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
 
    2. Izleme altında, sertifika raporlama cihaz sahibi SCEP sertifika profilleri için kullanılamaz.
    
-   3. Cihaz sahibi için SCEP sertifika profilleri tarafından sağlanan sertifikaların iptali Intune aracılığıyla desteklenmez, ancak bir dış işlem veya doğrudan sertifika yetkilisi aracılığıyla yönetilebilir.
+   3. Cihaz sahipleri için SCEP sertifika profilleri tarafından sağlanan sertifikaları iptal etmek için Intune 'U kullanamazsınız. İptali bir dış işlem veya doğrudan sertifika yetkilisi ile yönetebilirsiniz. 
 
 6. **Ayarlar**' ı seçin ve ardından aşağıdaki konfigürasyonları doldurun:
 
@@ -113,15 +113,13 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
         - **{{Aygıtadı}}**
         - **{{Fullyıqualifieddomainname}}** *(yalnızca Windows ve etki alanına katılmış cihazlar için geçerlidir)*
         - **{{MEıD}}**
-        
+
         Bu değişkenleri ve metin kutusu içinde değişkeni için metni belirtebilirsiniz. Örneğin, *Device1* adlı bir cihazın ortak adı **CN = {{aygıtadı}} Device1**olarak eklenebilir.
 
         > [!IMPORTANT]  
         > - Bir değişken belirttiğinizde, bir hatadan kaçınmak için, değişken adını örnekte görüldüğü gibi küme ayraçları {} içine alın.  
         > - **IMEI**, **SerialNumber**ve **fullyıqualifieddomainname**gibi bir cihaz sertifikasının *Konu* veya *San* 'ı üzerinde kullanılan cihaz özellikleri, cihaza erişimi olan bir kişi tarafından sızılmış özelliklerdir.
         > - Bir cihazın, bu cihaza yüklemek için bir sertifika profilinde belirtilen tüm değişkenleri desteklemesi gerekir.  Örneğin, bir SCEP profilinin konu adında **{{IMEI}}** kullanılıyorsa ve IMEI numarası olmayan bir cihaza atanırsa, profil yüklenemez.  
- 
-
 
    - **Konu diğer adı**:  
      Intune 'un sertifika isteğinde konu alternatif adı 'nı (SAN) otomatik olarak nasıl oluşturduğunu seçin. SAN seçenekleri seçtiğiniz sertifika türüne bağlıdır; **Kullanıcı** ya da **cihaz**.  
@@ -198,15 +196,15 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
      Sertifikanın amaçlanan amacı için değer ekleyin. Çoğu durumda, Kullanıcı veya cihazın bir sunucuda kimliğini doğrulayabilmesi için sertifika *istemci kimlik doğrulaması* gerektirir. Gerektiğinde ek anahtar kullanımları ekleyebilirsiniz.
 
    - **Yenileme eşiği (%)** :  
-     Cihazın sertifikayı yenilemeyi istemesi için kalan sertifika ömrünün yüzdesini girin. Örneğin, 20 girerseniz sertifika yenileme işlemi, sertifikanın %80 ' si dolduğunda ve yenileme başarılı olana kadar denenmeye devam eder. Yenileme, yeni bir ortak/özel anahtar çifti ile sonuçlanan yeni bir sertifika oluşturur.
+     Cihazın sertifikayı yenilemeyi istemesi için kalan sertifika ömrünün yüzdesini girin. Örneğin, 20 girerseniz, sertifikanın %80 ' ı dolduğunda sertifikanın yenilenmesi denenir. Yenileme başarılı olana kadar yenileme denemeleri devam eder. Yenileme, yeni bir ortak/özel anahtar çifti ile sonuçlanan yeni bir sertifika oluşturur.
 
    - **SCEP sunucu URL 'leri**:  
-     SCEP aracılığıyla sertifika veren NDES sunucuları için bir veya daha fazla URL girin. Örneğin *https://ndes.contoso.com/certsrv/mscep/mscep.dll* gibi bir ad girin. URL 'Ler, profille cihaza rastgele gönderildiğinden, yük dengeleme için gereken ek SCEP URL 'Leri ekleyebilirsiniz. SCEP sunucularından biri kullanılamıyorsa, SCEP isteği başarısız olur ve sonraki cihaz iadelerinde, sertifika isteği aşağı doğru aynı sunucuya göre yapılabilmesini olanaklı hale gelir.
+     SCEP aracılığıyla sertifika veren NDES sunucuları için bir veya daha fazla URL girin. Örneğin *https://ndes.contoso.com/certsrv/mscep/mscep.dll* gibi bir ad girin. URL 'Ler, profille cihaza rastgele gönderildiğinden, yük dengeleme için gereken ek SCEP URL 'Leri ekleyebilirsiniz. SCEP sunucularından biri kullanılamıyorsa, SCEP isteği başarısız olur ve daha sonraki cihaz iadelerinde, sertifika isteği aşağı doğru aynı sunucuya göre yapılabilir.
 
 7. **Tamam**' ı ve ardından **Oluştur**' u seçin. Profil oluşturulur ve *cihaz yapılandırması-profiller* listesinde görüntülenir.
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Kaçışlı özel karakterlerle sertifika imzalama isteklerinden kaçının
-Bir kaçış karakteri olarak aşağıdaki özel karakterlerden birini veya birkaçını içeren bir konu adı (CN) içeren SCEP sertifika istekleri için bilinen bir sorun vardır. Kaçış karakteri olarak özel karakterlerden birini içeren konu adları, bir CSR 'de yanlış konu adı olan bir CSR 'de sonuçlanır ve bu da Intune SCEP sınama doğrulaması başarısız olur ve sertifika verilmemiş olur.  
+Bir kaçan karakter olarak aşağıdaki özel karakterlerden birini veya daha fazlasını içeren bir konu adı (CN) içeren SCEP ve PKCS sertifika istekleri için bilinen bir sorun vardır. Kaçış karakteri olarak özel karakterlerden birini içeren konu adları, yanlış konu adına sahip bir CSR 'de sonuçlanır. Yanlış konu adı, Intune SCEP sınama doğrulaması başarısız olur ve sertifika verilmemiş olur.
 
 Özel karakterler şunlardır:
 - \+
@@ -223,7 +221,7 @@ Konu adınız özel karakterlerden birini içerdiğinde, bu sınırlamaya geçic
 - **Virgülü kaldırın**: *CN = test kullanıcısı (testcompany LLC), OU = useraccounts, DC = Corp, DC = contoso, DC = com*
 
  Ancak, bir ters eğik çizgi karakterini kullanarak virgül kaçış girişimleri, CRP günlüklerinde hata vererek başarısız olur:  
-- **Atlanan virgül**: *CN = test kullanıcısı (testcompany @ no__t-2, LLC), OU = useraccounts, DC = Corp, DC = contoso, DC = com*
+- **Atlanan virgül**: *CN = test kullanıcısı (TESTCOMPANY \\, LLC), OU = USERACCOUNTS, DC = Corp, DC = contoso, DC = com*
 
 Hata aşağıdaki hatayla benzerdir: 
 

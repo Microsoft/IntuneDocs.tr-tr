@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60b38e80a8d477220c0a6cfd59b521ac815c5ae6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503061"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585287"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
@@ -90,6 +90,8 @@ Sağlama, yeni Windows cihazlarda kullanılmak üzere tasarlanmıştır. Sağlam
 
 - Yerel bir hesap oluşturmayan bir Active Directory etki alanına veya Azure Active Directory kiracısına katılmayı deneyen bir sağlama paketinin, ağ bağlantısı olmaması nedeniyle etki alanına katılma işlemi başarısız olursa cihaza ulaşılamayabilir.
 - Sağlama paketi tarafından çalıştırılan betikler, sistem bağlamında çalıştırılır. Betikler cihaz dosya sisteminde ve yapılandırmalarında rastgele değişiklikler yapabilir. Kötü amaçlı veya hatalı bir betik, cihazın yalnızca yeniden görüntü oluşturma veya silinme yollarıyla kurtarılabilecek bir duruma gelmesine neden olabilir.
+
+Olay Görüntüleyicisi içindeki **sağlama-tanılama-sağlayıcı** Yönetim günlüğünde paketinizdeki ayarların başarısını/başarısız olup olmadığını kontrol edebilirsiniz.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi ile toplu kayıt 
 

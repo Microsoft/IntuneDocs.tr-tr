@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c5f089edd63d55f288a606de782448fa3d29b88
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 327e0d56400a2aac545d1bae92279e242aa2006a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509733"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585235"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
@@ -69,7 +69,7 @@ Android Enterprise, çok uygulama, bilgi noktası modundaki cihazlarda yönetile
 Bilgi noktası ayarlarını görmek için bkz. [Android kurumsal cihaz kısıtlamaları](../configuration/device-restrictions-android-for-work.md).
 
 #### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Uygulama koruma ilkesi ataması Kaydet ve Uygula <!-- 3104570 -->
-Artık [Uygulama koruma ilkesi atamalarınız](../apps/app-protection-policies.md#deploy-a-policy-to-users)üzerinde daha iyi denetime sahipsiniz. Bir ilkenin atamalarını ayarlamak veya düzenlemek için *atamalar* ' ı seçtiğinizde, değişikliğin geçerli olması Için yapılandırmanızı **kaydetmelisiniz** . Ekleme veya dışlama listelerinde değişiklik yapmadan yaptığınız tüm değişiklikleri temizlemek için **at** ' i kullanın.  Kaydetmeyi veya atmayı zorunlu kılarak yalnızca sizin istediğiniz kullanıcılara bir uygulama koruma ilkesi atanır.
+Artık [Uygulama koruma ilkesi atamalarınız](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)üzerinde daha iyi denetime sahipsiniz. Bir ilkenin atamalarını ayarlamak veya düzenlemek için *atamalar* ' ı seçtiğinizde, değişikliğin geçerli olması Için yapılandırmanızı **kaydetmelisiniz** . Ekleme veya dışlama listelerinde değişiklik yapmadan yaptığınız tüm değişiklikleri temizlemek için **at** ' i kullanın.  Kaydetmeyi veya atmayı zorunlu kılarak yalnızca sizin istediğiniz kullanıcılara bir uygulama koruma ilkesi atanır.
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Windows 10 ve üzeri için yeni Microsoft Edge tarayıcı ayarları <!-- 3174639 -->
 Bu güncelleştirme, cihazlarınızda Microsoft Edge tarayıcısını denetlemeye ve yönetmeye yardımcı olacak yeni ayarlar içerir. Bu ayarların listesi için bkz. [Windows 10 Için cihaz kısıtlaması (ve daha yeni)](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser).

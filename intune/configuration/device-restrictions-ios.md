@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e39464705b0a3bac70616d49eb80681515db801
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72489977"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584883"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
@@ -146,7 +146,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 > Örneğin, **parola süre sonu** ayarını yapılandırır ve bu ilkeyi Kullanıcı tarafından kaydedilen cihazlara gönderirsiniz. Cihazlarda aşağıdakiler olur:
 >
 > - **Parola süre sonu** ayarı yok sayılır.
-> - @No__t-0 veya `1234` gibi basit parolalara izin verilmez.
+> - @No__t_0 veya `1234` gibi basit parolalara izin verilmez.
 > - 6 basamaklı bir PIN zorlanır.
 
 - **Basit parolalar**: daha karmaşık parolalar Istemek için **Engelle** ' yi seçin. **Yapılandırılmadı** ayarı `0000` ve `1234` gibi basit parolalara izin verir.
@@ -268,6 +268,11 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
   İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
 
+- **Dosyalar uygulamasında ağ sürücüsüne erişim**: sunucu ileti bloğu (SMB) protokolünü kullanarak, cihazlar bir ağ sunucusundaki dosyalara veya diğer kaynaklara erişebilir. **Devre dışı bırak ayarı** , BIR ağ SMB sürücüsündeki dosyalara erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS ve ıpados 13,0 ve üzeri
+
 ## <a name="built-in-apps"></a>Yerleşik Uygulamalar
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri
@@ -378,7 +383,7 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
-- **Uygulama türü listesi**: gösterilecek veya gizlenecek uygulamaların bir listesini oluşturun. Seçenekleriniz şunlardır:
+- **Uygulama türü listesi**: gösterilecek veya gizlenecek uygulamaların bir listesini oluşturun. Yerleşik uygulamaları ve iş kolu uygulamalarını gösterebilir veya gizleyebilirsiniz. Apple 'ın Web sitesinde [yerleşik bir Apple Apps](https://support.apple.com/HT208094)listesi bulunur. Seçenekleriniz şunlardır:
 
   - **Gizli uygulamalar**: kullanıcılardan gizlenen uygulamaların listesini girin. Kullanıcılar bu uygulamaları görüntüleyemez veya açamaz.
   - **Görünür uygulamalar**: kullanıcıların görüntüleyebileceği ve başlatabileceği uygulamaların bir listesini girin. Başka hiçbir uygulama görüntülenemez veya başlatılamaz.
@@ -433,7 +438,12 @@ Uygulamaları eklemek için şunları yapabilirsiniz:
   - iOS 12,2 ve üzeri
 
 - **Yalnızca yapılandırma profillerini kullanarak Wi-Fi ağlarına katılarak**: **gerektir** ayarı, cihazı yalnızca Intune yapılandırma profilleri aracılığıyla ayarlanan Wi-Fi ağlarını kullanmaya zorlar. **Yapılandırılmadı** (varsayılan) ayarı cihazın diğer Wi-Fi ağlarını kullanmasına izin verir.
-- **Wi-Fi durumu değişikliği**: **Yapılandırılmadı** (varsayılan), kullanıcıların cihazda Wi-Fi ' ı açmasına veya kapatmasına izin verir. **Blok** , Wi-Fi ' ı etkinleştirmeyi veya kapatmayı engeller.
+- **Wi-Fi her zaman açık**: **gerektir**olarak ayarlandığında, Ayarlar uygulamasında Wi-Fi açık kalır. Cihaz uçak modundayken bile ayarlarda veya denetim merkezinde devre dışı bırakılamaz. **Yapılandırılmadı** (varsayılan), kullanıcının Wi-Fi açma veya kapatma özelliğini denetlemesine izin verir.
+
+  Bu ayarın yapılandırılması, kullanıcıların bir Wi-Fi ağı seçmesini engellemez.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS ve ıpados 13,0 ve üzeri
 
 ## <a name="connected-devices"></a>Bağlı Cihazlar
 
@@ -459,6 +469,11 @@ Uygulamaları eklemek için şunları yapabilirsiniz:
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11,0 ve üzeri
+
+- **USB sürücüsündeki dosyalara erişim**: cihazlar, dosyaları bir USB sürücüsünde bağlayıp açabilir. **Devre dışı bırak ayarı** , cihaza USB bağlandığında dosyalar uygulamasında USB sürücüsüne cihaz erişimini engeller. Bu özelliğin devre dışı bırakılması, son kullanıcıların bir iPad 'e bağlı USB sürücüsüne dosya aktarımını engeller. **Yapılandırılmadı** (varsayılan) dosyalar uygulamasında USB sürücüsüne erişime izin verir.
+
+  Bu özellik şu platformlarda geçerlidir:  
+  - iOS ve ıpados 13,0 ve üzeri
 
 ## <a name="keyboard-and-dictionary"></a>Klavye ve Sözlük
 

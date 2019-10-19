@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31a55f5749b35139368b6c3543fd8ff95db6100d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2c578cb430bd6c62c274322ea1e46b5d37d2e143
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506829"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584966"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune'daki cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama
 
@@ -67,7 +67,7 @@ Bu özellik şunları destekler:
 
 ## <a name="custom-profile"></a>Özel profil
 
-[Özel ayarlar](../custom-settings-configure.md), yöneticilerin Intune'da yerleşik olarak sağlanmayan cihaz ayarlarını atamasına olanak tanır. Android cihazlarda, OMA-URI değerleri girebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz.
+[Özel ayarlar](custom-settings-configure.md), yöneticilerin Intune'da yerleşik olarak sağlanmayan cihaz ayarlarını atamasına olanak tanır. Android cihazlarda, OMA-URI değerleri girebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz.
 
 Bu özellik şunları destekler:
 
@@ -79,7 +79,7 @@ Bu özellik şunları destekler:
 
 ## <a name="delivery-optimization"></a>Teslim iyileştirme
 
-[Teslim iyileştirme](../delivery-optimization-windows.md), yazılım güncelleştirmelerini teslim etmek için daha iyi bir deneyim sunar. Bu ayarlar, **Yazılım Güncelleştirmeleri** > **Windows 10 güncelleştirme halkası** ayarlarının yerini alır.
+[Teslim iyileştirme](delivery-optimization-windows.md), yazılım güncelleştirmelerini teslim etmek için daha iyi bir deneyim sunar. Bu ayarlar, **Yazılım Güncelleştirmeleri** > **Windows 10 güncelleştirme halkası** ayarlarının yerini alır.
 
 Bu ayarları kullanarak yazılım güncelleştirmelerinin kuruluşunuzdaki ayarlara nasıl indirileceğini denetleyebilirsiniz. Örneğin kullanıcıların kendi güncelleştirmelerini yapmalarına izin verebilir veya teslim iyileştirme bulut hizmetlerini bir cihaz profilinde kullanarak güncelleştirmeleri almalarını sağlayabilirsiniz.
 
@@ -89,7 +89,7 @@ Bu özellik şunları destekler:
 
 ## <a name="device-features"></a>Cihaz özellikleri
 
-[Cihaz özellikleri](../device-features-configure.md), iOS ve macOS cihazlarda AirPrint, bildirimler ve kilit ekranı iletileri gibi özellikleri denetler.
+[Cihaz özellikleri](device-features-configure.md), iOS ve macOS cihazlarda AirPrint, bildirimler ve kilit ekranı iletileri gibi özellikleri denetler.
 
 Bu özellik şunları destekler:
 
@@ -211,9 +211,9 @@ Bu özellik şunları destekler:
 
 ## <a name="update-policies"></a>Güncelleştirme ilkeleri
 
-[iOS güncelleştirme ilkeleri](../software-updates-ios.md), iOS cihazlarınıza yazılım güncelleştirmelerini yüklemek için iOS ilkelerini nasıl oluşturacağınızı ve atayacağınızı gösterir. Ayrıca yükleme durumunu da gözden geçirebilirsiniz.
+[iOS güncelleştirme ilkeleri](../protect/software-updates-ios.md), iOS cihazlarınıza yazılım güncelleştirmelerini yüklemek için iOS ilkelerini nasıl oluşturacağınızı ve atayacağınızı gösterir. Ayrıca yükleme durumunu da gözden geçirebilirsiniz.
 
-Windows cihazlardaki güncelleştirme ilkeleri hakkında bilgi için bkz. [Teslim iyileştirme](../delivery-optimization-windows.md). 
+Windows cihazlardaki güncelleştirme ilkeleri hakkında bilgi için bkz. [Teslim iyileştirme](delivery-optimization-windows.md). 
 
 Bu özellik şunları destekler:
 
@@ -266,7 +266,7 @@ Bu özellik şunları destekler:
 
 ## <a name="manage-and-troubleshoot"></a>Yönetme ve sorun giderme
 
-[Profillerinizi yöneterek](../device-profile-monitor.md) cihazların ve atanan profillerin durumunu denetleyin. Ayrıca, çakışma yaratan ayarları ve bu ayarları içeren profilleri görerek çakışmaların çözümlenmesine yardımcı olun. [Sık karşılaşılan sorunlar ve çözümleri](device-profile-troubleshoot.md) sayfası, yöneticilere profiller üzerinde çalışma konusunda yardımcı olur. Profil sildiğinizde gerçekleşen işlemleri, cihazlara bildirim gönderilmesine neden olan işlemleri ve daha fazlasını anlatmaktadır.
+[Profillerinizi yöneterek](device-profile-monitor.md) cihazların ve atanan profillerin durumunu denetleyin. Ayrıca, çakışma yaratan ayarları ve bu ayarları içeren profilleri görerek çakışmaların çözümlenmesine yardımcı olun. [Sık karşılaşılan sorunlar ve çözümleri](device-profile-troubleshoot.md) sayfası, yöneticilere profiller üzerinde çalışma konusunda yardımcı olur. Profil sildiğinizde gerçekleşen işlemleri, cihazlara bildirim gönderilmesine neden olan işlemleri ve daha fazlasını anlatmaktadır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

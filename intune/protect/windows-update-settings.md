@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9882328efa2ddc5a6c5d6924fe15176e50b7837
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508711"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584465"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune için Windows Update ayarları  
 
@@ -217,45 +217,9 @@ Kullanıcı deneyimi ayarları, cihaz yeniden başlatma ve anımsatıcıları i�
   - **Yeniden başlatma uyarılarını hariç tüm bildirimleri kapat**
   - **Yeniden başlatma uyarıları dahil tüm bildirimleri kapat**  
 
-- **Kullanıcının yeniden başlatılmasına izin ver (bağlı yeniden başlatma)**  
-  **Varsayılan**: yapılandırılmadı  
-  > [!IMPORTANT]  
-  > Kullanım için *yeniden başlatma* ayarları artık önerilmez. Bunun yerine, *denetimli yeniden başlatma* ayarlarının yerini aldığı yeni *son tarih* ayarlarını kullanın. Intune, gelecekteki bir güncelleştirmede, [ *denetimli yeniden başlatma* ayarları desteğini kullanımdan](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) kaldırır.
-
-  Windows 10 sürüm 1803 ve üzeri için, Kullanıcı için yeniden başlatma desteklenir. 
-
-  > [!NOTE]  
-  > Windows 10 sürüm 1809, özellik ve kalite güncelleştirmelerine ayrı ayarların uygulanmasını sağlayan, ek olarak kullanılabilir yeniden başlatma ayarları sunar. Ancak, Intune tarafından yönetilen ayarlar farklı güncelleştirme türlerine ayrı olarak uygulanmaz. Bunun yerine, Intune aynı değerleri özellik ve kalite güncelleştirmelerine uygular.  
-  
-  - **Yapılandırılmadı**  
-  - **Gerekli** -Windows 10 güncelleştirmeleri için etkin yeniden başlatma seçeneklerinin kullanımını etkinleştirmek için *gerekli* olarak ayarlayın. Bu seçenekler, bir cihazın yeniden başlatılmasını gerektiren bir güncelleştirme yükledikten sonra cihazın ne zaman yeniden başlatılmasının yönetilmesine yardımcı olmak için bir cihazın kullanıcısını devreye sok.  
-
-  Bu seçenek hakkında daha fazla bilgi için bkz. güncelleştirmeleri dağıtmak için Windows 10 belgelerinde [bağlı yeniden başlatma](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart) .  
-
-  Aşağıdaki ayarlar, ne zaman yeniden başlatma eylemlerinin gerçekleşeceğini denetlemek için kullanılır.  
-
-  - **Otomatik yeniden başlatmadan sonra kullanıcılara Kullanıcı tarafından yeniden başlatma için geçiş yapın (gün)**  
-    **Varsayılan**: YAPıLANDıRıLMADı Windows Update CSP: [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
-    
-    Cihaz, boşta yeniden başlatma davranışına girene kadar güncelleştirme yüklendikten sonra **2** ila **30** gün arasında bir değer belirtin. Yapılandırılan gün sayısından sonra, kullanıcılar cihazı yeniden başlatmak için bir istem alır.  
-
-  - **Yeniden başlatma için yeniden başlatma anımsatıcısı (gün)**  
-    **Varsayılan**: yapılandırılmadı    
-    Windows Update CSP: [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    Yeniden başlatma isteminin ne kadar süreyle ertelendi olabilir **1** ile **3** arasında bir değer belirtin.  Erteleme süresinden sonra yeniden başlatma istemi tekrar sunulur. Kullanıcı, yükleme son tarihine ulaşıncaya kadar anımsatıcıyı geri almaya devam edebilir.  
-
-  - **Bekleyen yeniden başlatmalar için son tarihi ayarla (gün)**  
-    **Varsayılan**: yapılandırılmadı  
-    Windows Update CSP: [Update/EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    Bir cihaz gerekli yeniden başlatmayı zorunlu yapmadan önce, boşta yeniden başlatma davranışı başladıktan sonra beklenecek en fazla gün sayısı olarak **2** ile **30 arasında** bir değer belirtin. Bu yeniden başlatma, kullanıcılardan işlerini kaydetmesini ister.
-
 - **Son tarih ayarlarını kullan**  
   **Varsayılan**: yapılandırılmadı  
-  > [!IMPORTANT]  
-  > Intune için Ağustos güncelleştirmesiyle başlayarak, ara yeniden başlatma ayarlarının yerini alan aşağıdaki son tarih ayarlarını kullanmanızı öneririz. Intune, gelecekteki bir Intune güncelleştirmesinde, BT için [ *yeniden başlatma* ayarlarının desteğini kullanımdan](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) kaldırır.  
-
+ 
   Kullanıcının son tarih ayarlarını kullanmasına izin verir.  
 
   - **Yapılandırılmadı**
@@ -264,21 +228,21 @@ Kullanıcı deneyimi ayarları, cihaz yeniden başlatma ve anımsatıcıları i�
   *Izin ver*olarak ayarlandığında, son tarihleri için aşağıdaki ayarları yapılandırabilirsiniz:
 
   - **Özellik güncelleştirmeleri için son tarih**  
-    **Varsayılan**: 7  
+    **Varsayılan**: *Yapılandırılmadı*  
     Windows Update CSP: [Update/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     Bir kullanıcının, cihazlarına otomatik olarak yüklenmesi için gereken gün sayısını belirtir (2-30).
 
   - **Kalite güncelleştirmeleri için son tarih**  
-    **Varsayılan**: 7  
+    **Varsayılan**: *Yapılandırılmadı*  
     Windows Update CSP: [Update/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     Bir kullanıcının, kalite güncelleştirmelerinin cihazlarına otomatik olarak yüklenmesi için gereken gün sayısını belirtir (2-30).
 
   - **Yetkisiz kullanım süresi**  
-    **Varsayılan**: 2 Windows Update CSP: [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **Varsayılan**: *Yapılandırılmadı* Windows Update CSP: [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    Yeniden başlatmalar otomatik olarak gerçekleşene kadar geçen en az gün sayısını belirtir (0-7).
+    Yeniden başlatmalar otomatik olarak gerçekleşene kadar geçen en az gün sayısını belirtir (2-7).
 
   - **Son tarihten önce otomatik yeniden başlatma**  
     **Varsayılan**: Evet Windows Update CSP: [Update/Configuredeadlinenooto reboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -286,9 +250,6 @@ Kullanıcı deneyimi ayarları, cihaz yeniden başlatma ve anımsatıcıları i�
     Cihazın son tarihten önce otomatik olarak yeniden başlatılması gerekip gerekmediğini belirtir.
     - **Yes**
     - **Hayır**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>Teslim iyileştirme indirme modu  
 

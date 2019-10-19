@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9e18182ff8cbddff1ae41298120928f2e2cb948a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5ebab881a524bc361e271856b6762776974cea20
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502773"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601519"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
 
@@ -71,22 +71,6 @@ Herhangi bir eylemde bulunmanıza gerek yoktur, ancak gerekirse BT uzmanı kıla
 #### <a name="additional-information"></a>Ek bilgiler 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Değişiklik planı: Intune 'da yeni Windows güncelleştirmeleri ayarları <!-- 4464404 -->
-Intune hizmetine veya 1908 Ağustos sürümünden başlayarak, "kullanıcının yeniden başlatılmasına Izin ver (serbest yeniden başlatma)" ayarlarını yerine yapılandırabileceğiniz yeni "son tarih ayarları" na ekleniyoruz. 1909 veya Eylül güncelinizdeki Kullanıcı arabirimindeki yeniden başlatma ayarlarını devre dışı bırakmayı planlıyoruz ve ardından bunları Ekim sonuna doğru konsolundan tamamen kaldırdık.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Windows 10 cihazlarını ortamınızda yönetiyorsanız:
-
-- Intune Ağustos güncelleştirmesi veya 1908 ile, eski yeniden başlatma ayarlarına ek olarak konsolunda yeni son tarih ayarlarını görürsünüz.
-- Bu eski ve yeni ayarların her ikisi de yapılandırıldığında, son tarih ayarı değerleri, bağlı yeniden başlatma ayarı değerlerini geçersiz kılar.
-- Son tarih ayarları, konsolundaki 1910 güncelleştirmesinde "kullanıcının yeniden başlatılmasına Izin ver (yeniden başlatma)" seçeneği yerine geçecek.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-İstenen değerlerle yapılandırarak 1908 içindeki son tarih ayarlarını kullanmaya başlayın. Bunu yaptıktan sonra, bu ayarların Ekim 'de konsolundan kaldırılmasına hazırlanmak için, bağlı yeniden başlatma ayarını "Yapılandırılmadı" olarak ayarlayabilirsiniz.
-
-Belgelerinizi ve gerekirse otomasyon komut dosyalarını güncelleştirin.
-
-Çalışmaya devam eden yeniden başlatma ayarlarını kaldırmadan önce, ileti merkezine güncelleştirdiğimiz ve bir anımsatıcı göndereceğiz.
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Değişiklik planı: Ekim 'de Android 5,0 ve üstünü desteklemeye yönelik Android için Intune uygulama SDK 'Sı ve uygulama koruma ilkeleri <!--4911065 -->
 Intune, Ekim 'de Android 5. x (Lollipop) ve üstünü destekleyecek şekilde taşınır. Sarmalanan tüm uygulamaları en son Intune uygulama SDK 'Sı ile güncelleştirin ve cihazlarınızı güncelleştirin.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a29c5fc03285535565a4db57ea013f72a2936439
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494048"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585376"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Android kurumsal cihaz ayarları
 
@@ -68,7 +68,7 @@ Bu makale, Android kurumsal cihazlarda denetleyebilmeniz için farklı ayarları
 - **Sistem güncelleştirmesi**: cihazın kablosuz güncelleştirmeleri nasıl işlediğini tanımlamak için bir seçenek belirleyin:
   - **Cihaz Varsayılanı**: Cihazın varsayılan ayarını kullanın.
   - **Otomatik**: Güncelleştirmeler, kullanıcı etkileşimi olmadan otomatik olarak yüklenir. Bu ilkeyi seçmek, bekleyen tüm güncelleştirmeleri hemen yükler.
-  - **Erteleme**: Güncelleştirmeler 30 gün boyunca ertelenir. 30 günün sonunda Android, kullanıcıdan güncelleştirmeyi yüklemesini ister. Cihaz üreticilerin veya taşıyıcıların önemli güvenli güncelleştirmelerinin ertelenmesini engellemek (muaf tutmak) mümkündür. Muaf tutulan bir güncelleştirme cihazda kullanıcıya bir sistem bildirimi gösterir. 
+  - **Erteleme**: Güncelleştirmeler 30 gün boyunca ertelenir. 30 günün sonunda Android, kullanıcıdan güncelleştirmeyi yüklemesini ister. Cihaz üreticilerin veya taşıyıcıların önemli güvenli güncelleştirmelerinin ertelenmesini engellemek (muaf tutmak) mümkündür. Muaf tutulan bir güncelleştirme cihazda kullanıcıya bir sistem bildirimi gösterir.
   - **Bakım penceresi**: Güncelleştirmeleri Intune'da ayarladığınız bir günlük bakım penceresi içinde otomatik olarak yükler. Yükleme 30 gün boyunca günlük olarak çalışır ve yeterli alan veya pil düzeyi yoksa başarısız olabilir. 30 gün sonra, Android kullanıcıdan yüklemesini ister. Bu pencere ayrıca Oynatma uygulamalarının güncelleştirmelerini yüklemek için de kullanılır. Tek uygulamayla ayrılmış cihaz ön plan uygulamaları güncelleştirilemeyebilir, kiosks gibi adanmış cihazlar için bu seçeneği kullanın.
 
 - Bildirim pencereleri: **devre dışı**olarak ayarlandığında, **tofıler**, gelen çağrılar, giden çağrılar, sistem uyarıları ve sistem hataları dahil olmak üzere pencere bildirimleri cihazda gösterilmez. **Yapılandırılmadı**olarak ayarlandığında, varsayılan işletim sistemi kullanılır ve bu da bildirimleri göstermek olabilir.
@@ -99,8 +99,8 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
   > Çok uygulamayla ayrılmış cihazlarda, Google Play [yönetilen giriş ekranı uygulamasının](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) şu **olması gerekir**:
   >   - Intune 'da [istemci uygulaması olarak eklendi](../apps/apps-add-android-for-work.md)
   >   - Adanmış cihazlarınız için oluşturulan [cihaz grubuna atandı](../apps/apps-deploy.md)
-  > 
-  > **Yönetilen giriş ekranı** uygulamasının yapılandırma profilinde olması gerekmez, ancak istemci uygulaması olarak eklenmesi gerekir. **Yönetilen giriş ekranı** uygulaması bir istemci uygulaması olarak eklendiğinde, yapılandırma profiline eklediğiniz diğer uygulamalar **yönetilen giriş ekranı** uygulamasında simgeler olarak gösterilir. 
+  >
+  > **Yönetilen giriş ekranı** uygulamasının yapılandırma profilinde olması gerekmez, ancak istemci uygulaması olarak eklenmesi gerekir. **Yönetilen giriş ekranı** uygulaması bir istemci uygulaması olarak eklendiğinde, yapılandırma profiline eklediğiniz diğer uygulamalar **yönetilen giriş ekranı** uygulamasında simgeler olarak gösterilir.
   >
   > Birden çok uygulama bilgi noktası modu kullanılırken, çevirici/telefon uygulamaları düzgün çalışmayabilir. 
 
@@ -242,7 +242,22 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 
   Trafiğin VPN tünelinden veya mobil ağdan akmasına izin vermek için **Yapılandırılmadı**'yı seçin.
 
-## <a name="work-profile-only"></a>Yalnızca iş profili 
+- **Önerilen küresel ara sunucu**: cihazlara genel bir proxy eklemek için **Etkinleştir** ' i seçin. Etkinleştirildiğinde, HTTP ve HTTPS trafiği, cihazdaki bazı uygulamalar dahil olmak üzere girdiğiniz proxy 'yi kullanır. Bu proxy yalnızca bir önerimiz. Bazı uygulamalar proxy kullanmaz. **Yapılandırılmadı** (varsayılan) önerilen küresel ara sunucu eklemez.
+
+  Bu özellik hakkında daha fazla bilgi için bkz. [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (bir Android sitesi açar).
+
+  Etkinleştirildiğinde, proxy **türünü** de girin. Seçenekleriniz şunlardır:
+
+  - **Doğrudan**: proxy sunucu ayrıntılarını el ile girmek için bu seçeneği belirleyin, örneğin:
+    - **Ana bilgisayar**: proxy sunucunuzun ana bilgisayar adını veya IP adresini girin. Örneğin `proxy.contoso.com` veya `127.0.0.1` girin.
+    - **Bağlantı noktası numarası**: proxy sunucusu tarafından kullanılan TCP bağlantı noktası numarasını girin. Örneğin, şunu girin: `8080`.
+    - **Dışlanan konaklar**: proxy 'yi kullanmayan konak ADLARıNıN veya IP adreslerinin bir listesini girin. Bu liste, boşluk olmadan bir yıldız işareti (`*`) joker karakteri ve noktalı virgülle (`;`) ayrılmış birden çok Konağı içerebilir. Örneğin, şunu girin: `127.0.0.1;web.contoso.com;*.microsoft.com`.
+
+  - **Proxy otomatik**yapılandırma: bir proxy otomatik yapılandırma betiğine **Pac URL** 'sini girin. Örneğin, şunu girin: `https://proxy.contoso.com/proxy.pac`.
+
+    PAC dosyaları hakkında daha fazla bilgi için bkz. [proxy otomatik yapılandırma (PAC) dosyası](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (Microsoft dışı bir site açar).
+
+## <a name="work-profile-only"></a>Yalnızca iş profili
 
 ### <a name="work-profile-settings"></a>İş profili ayarları
 
@@ -250,9 +265,10 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 
 - **İş ve kişisel profiller arasında kopyalama ve yapıştırma**: iş ve kişisel uygulamalar arasında kopyalamayı ve yapıştırmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların kişisel profildeki uygulamalarla Kopyala ve Yapıştır kullanarak veri paylaşmasına izin verir 
 - **İş ve kişisel profiller arasında veri paylaşımı**: iş profilindeki uygulamaların kişisel profildeki uygulamalarla paylaşıp paylaşabilmesini seçin. Örneğin, uygulamalar içinde paylaşım eylemlerini (paylaşım gibi) denetleyebilirsiniz **...** seçeneği gibi uygulamalardaki paylaşma eylemlerini denetler. Bu ayar, kopyala/yapıştır pano davranışında geçerli değildir. Paylaşım seçenekleriniz:
-  - **Varsayılan paylaşım kısıtlamaları**: Cihazın, Android sürümüne göre farklılık gösteren varsayılan paylaşım davranışı. Kişisel profilden iş profiline paylaşmaya varsayılan olarak izin verilir. Buna karşın iş profilinden kişisel profile paylaşma varsayılan olarak engellenir. Bu ayar, iş profilinden kişisel profile veri paylaşılmasını önler. Sürüm 6.0 ve üzerini çalıştıran cihazlarda Google kişisel profilden iş profiline paylaşımı engellemez.
+  - **Cihaz varsayılanı**: cihaz, Android sürümüne bağlı olarak farklılık gösteren varsayılan paylaşım davranışıdır. Kişisel profilden iş profiline paylaşmaya varsayılan olarak izin verilir. Buna karşın iş profilinden kişisel profile paylaşma varsayılan olarak engellenir. Bu ayar, iş profilinden kişisel profile veri paylaşılmasını önler. Sürüm 6.0 ve üzerini çalıştıran cihazlarda Google kişisel profilden iş profiline paylaşımı engellemez.
   - **İş profilindeki uygulamalar kişisel profilden gelen paylaşım isteklerini işleyebilir**: Kişisel profilden iş profiline paylaşıma izin veren yerleşik Android özelliğini etkinleştirir. Etkinleştirildiğinde, kişisel profildeki bir uygulamadan gelen bir paylaşım isteği, iş profilindeki uygulamalarla paylaşım kullanabilir. Bu ayar, 6.0 öncesi sürümleri çalıştıran Android cihazlarının varsayılan davranışıdır.
-  - **Sınırlar arası paylaşıma izin ver**: İş profili sınırının ötesinde her iki yönde paylaşımı etkinleştirir. Bu ayarı seçtiğinizde, iş profilinizdeki uygulamalar kişisel profildeki rozetsiz uygulamalar ile veri paylaşabilir. Bu ayar iş profilindeki yönetilen uygulamaların cihazın yönetilmeyen kısmındaki uygulamalarla paylaşmasına izin verir. Bu nedenle bu ayarı dikkatli kullanın.
+  - **Sınırlar arasında tüm paylaşımları engelle**: iş ve kişisel profiller arasında paylaşmayı engeller.
+  - **Paylaşımda kısıtlama yok**: iş profili sınırları genelinde her iki yönde paylaşımı mümkün değildir. Bu ayarı seçtiğinizde, iş profilinizdeki uygulamalar kişisel profildeki rozetsiz uygulamalar ile veri paylaşabilir. Bu ayar iş profilindeki yönetilen uygulamaların cihazın yönetilmeyen kısmındaki uygulamalarla paylaşmasına izin verir. Bu nedenle bu ayarı dikkatli kullanın.
 
 - **Cihaz kilitliyken iş profili bildirimleri**: iş profilindeki uygulamaların Cihaz kilitliyken bildirimlerde veri gösterip gösteremeyeceğini denetler. **Blok** , verileri göstermez. **Yapılandırılmadı** , verileri gösterir.
 - **Varsayılan uygulama izinleri**: İş profilindeki tüm uygulamalar için varsayılan izin ilkesini ayarlar. Android 6 ile başlayarak, kullanıcıdan, belirli uygulamalar açıldığında bunlar için gereken bazı izinleri vermesi istenir. Bu ilke ayarı, kullanıcıdan iş profilindeki tüm uygulamalar için izin istenip istenmeyeceğini belirlemenize olanak tanır. Örneğin, iş profiline konum erişimi gerektiren bir uygulama atarsınız. Normalde bu uygulama kullanıcıdan konum erişimini onaylamasını veya reddetmesini ister. Bu ilkeyi istem kullanmadan otomatik olarak izinler vermek, izin vermeyi reddetmek veya kararı kullanıcıya bırakmak için kullanabilirsiniz. Aşağıdakilerden birini seçin:
@@ -326,6 +342,13 @@ Bu parola ayarları, bir iş profili kullanan cihazlardaki kişisel profiller i�
 
    > [!Note]
    > Bu ayar yalnızca Android O ve üstü cihazlarda çalışır.
+
+- **Kişisel profilde bilinmeyen kaynaklardan uygulama yüklemelerini engelleyin**: tasarım, Android kurumsal iş profili cihazları Play Store dışındaki kaynaklardan uygulama yükleyemez. Doğası gereği, iş profili cihazlarının çift profil olması amaçlanmıştır:
+
+  - MDM kullanılarak yönetilen bir iş profili.
+  - MDM yönetiminden yalıtılmış bir kişisel profil.
+
+  Bu ayar, yöneticilerin bilinmeyen kaynaklardan uygulama yüklemelerinin daha fazla denetimine erişmesini sağlar. **Yapılandırılmadı** (varsayılan), kişisel profilde bilinmeyen kaynaklardan uygulama yüklemelerine izin verir. **Block** , kişisel profildeki Play Store dışındaki kaynaklardan uygulama yüklemelerinin yapılmasını engeller.
 
 ### <a name="connectivity"></a>Bilirlik
 
