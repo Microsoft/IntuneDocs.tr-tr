@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6579ad9eb902bcd5ad43662115f56a10681c32ba
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506878"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550811"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
 
@@ -34,6 +34,10 @@ Bu makalede profil atama yöntemlerinin yanı sıra profillerinizde kapsam etike
 
 > [!NOTE]  
 > Bir ilke kaldırıldığında veya bir cihaza artık atanmadıysa, ayar varolan değeri tutabilir. Ayar varsayılan değere dönmez. Ayarı farklı bir değer olarak değiştirmek için yeni bir ilke oluşturun ve atayın.
+
+## <a name="before-you-begin"></a>Başlamadan önce
+
+İlke atamak için uygun role sahip olduğunuzdan emin olun. Daha fazla bilgi için bkz. [Microsoft Intune Ile rol tabanlı erişim denetimi (RBAC)](../fundamentals/role-based-access-control.md).
 
 ## <a name="assign-a-device-profile"></a>Bir cihaz profili atama
 
