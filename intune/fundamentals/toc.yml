@@ -41,6 +41,16 @@
       href: device-lifecycle.md
     - name: Uygulama yaşam döngüsü
       href: ../apps/app-lifecycle.md
+    - name: Kılavuzlu senaryolar
+      items:
+        - name: Kılavuzlu senaryolara genel bakış
+          href: guided-scenarios-overview.md
+        - name: Mobil Cihazlar için Microsoft Edge’i dağıtma
+          href: guided-scenarios-edge.md
+        - name: Bulutta Yönetilen Modern Masaüstü
+          href: guided-scenarios-cloud-managed-pc.md
+        - name: Microsoft Office mobil uygulamalarının güvenliğini sağlama
+          href: guided-scenarios-office-mobile.md
     - name: Yaygın senaryolar
       href: common-scenarios.md
     - name: EMS ile KCG için teknoloji kararları
@@ -175,6 +185,8 @@
       href: ../protect/index.yml
     - name: uygulama yönetme ve koruma
       href: ../apps/index.yml
+    - name: İlke kümelerini kullanma
+      href: ~/fundamentals/policy-sets.md
     - name: Geliştirici kılavuzu
       href: ../developer/index.yml
     - name: Yardım ve destek alma

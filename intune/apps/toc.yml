@@ -82,6 +82,10 @@
           items:
             - name: Şirket Portalı uygulaması
               href: store-apps-company-portal-app.md
+            - name: Windows 10 için Microsoft Edge
+              href: apps-windows-edge.md
+            - name: macOS için Microsoft Edge
+              href: apps-edge-macos.md
         - name: PowerShell komut dosyaları
           href: intune-management-extension.md
     - name: Uygulamaları atama
