@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,19 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2f3dbafb10b91f221af27f965ffed06cce199fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 54d02f46b3296770f1eb24917e7e874e7b3977ac
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509550"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681272"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast’ı Intune ile tümleştirme
 
+Check Point SandBlast Mobile Threat Defense çözümünü Intune ile bütünleştirmek için aşağıdaki adımları izleyin.
+
+> [!NOTE]
+> Bu mobil tehdit savunma satıcısı, kayıtlı olmayan cihazlar için desteklenmez.
+
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-> [!NOTE] 
-> [Check Point SandBlast Mobile MTD konsolunda](https://intune-4.eu1.locsec.net/) aşağıdaki adımlar atılmalıdır.
+Bu makaledeki yönergeler [Check Point SandBlast Mobile konsolunda](https://intune-4.eu1.locsec.net/)yapılır. 
 
 Check Point SandBlast’ı Intune ile tümleştirme işlemine başlamadan önce, aşağıdakileri sağladığınızdan emin olun:
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d445263655d3209b900763bf6bd5b62376e0ba85
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494739"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681451"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
@@ -77,6 +77,7 @@ Bu makalede:
        - [Kimlik koruması](../protect/identity-protection-configure.md)  
        - [Bilgi noktası](kiosk-settings.md)
        - [PKCS sertifikası](../protect/certficates-pfx-configure.md)
+       - [PKCS içeri aktarılan sertifika](../protect/certificates-imported-pfx-configure.md)
        - [SCEP sertifikası](../protect/certificates-scep-configure.md)
        - [Güvenilir sertifika](../protect/certificates-configure.md)
        - [Güncelleştirme ilkeleri](../software-updates-ios.md)
@@ -150,7 +151,7 @@ Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlev
     - **Işletim sistemi sürümü**: listede, kuralınıza dahil etmek istediğiniz Windows 10 sürümlerini (veya hariç tutmak) denetleyin.
     - **Işletim sistemi sürümü**: kuralınıza dahil etmek (veya dışlamak) istediğiniz **En düşük** ve **en yüksek** Windows 10 sürüm numaralarını girin. Her iki değer de gereklidir.
 
-      Örneğin, minimum sürüm için `10.0.16299.0` (RS3 veya 1709) ve en yüksek sürüm için `10.0.17134.0` (RS4 veya 1803) girebilirsiniz. Ya da daha ayrıntılı olabilir ve en yüksek sürüm için en düşük sürüm ve `10.0.17134.319` @no__t girebilirsiniz.
+      Örneğin, minimum sürüm için `10.0.16299.0` (RS3 veya 1709) ve en yüksek sürüm için `10.0.17134.0` (RS4 veya 1803) girebilirsiniz. Ya da daha ayrıntılı olabilir ve en yüksek sürüm için en düşük sürüm ve `10.0.17134.319` `10.0.16299.001` girebilirsiniz.
 
 4. Değişikliklerinizi kaydetmek için **Ekle** ' yi seçin.
 

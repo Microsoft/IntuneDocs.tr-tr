@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a548b1e1728928ca74ca7207b7e60d91ba5fc8aa
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f42acb38d84394a6b61fa16072de6320b84a67b5
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503587"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681302"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Wandera Mobile Threat Protection 'ı Intune ile tümleştirme  
 
 Wandera Mobile Threat Defense çözümünü Intune ile bütünleştirmek için aşağıdaki adımları izleyin.  
+
+> [!NOTE]
+> Bu mobil tehdit savunma satıcısı, kayıtlı olmayan cihazlar için desteklenmez.
 
 ## <a name="before-you-begin"></a>Başlamadan önce  
 
@@ -119,7 +122,7 @@ Daha fazla bilgi için bkz. [uygulamaları dağıtma](../apps/apps-deploy.md)
 
 3. *Grup Ekle* bölmesinde *atama türü* için **gerekli**' yi seçin.
 
-4. **Dahil edilen gruplar**' ı seçin ve ardından **dahil edilecek grupları seçin**. Wandera eşitlemesi için oluşturduğunuz grubu belirtin ve ardından @no__t **seçin**-1**Tamam** > **Tamam**' a tıklayın. Grup atamasını gerçekleştirmek için **Kaydet** ' i seçin.  
+4. **Dahil edilen gruplar**' ı seçin ve ardından **dahil edilecek grupları seçin**. Wandera eşitlemesi için oluşturduğunuz grubu belirtin ve sonra**tamam** ** >   > ** **Seç** ' e tıklayın. Grup atamasını gerçekleştirmek için **Kaydet** ' i seçin.  
  
 
 ## <a name="next-steps"></a>Sonraki Adımlar  

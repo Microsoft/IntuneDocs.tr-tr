@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c29035feeb8b35921a5837699fe0f58a3516f4a1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
-ms.translationtype: MT
+ms.openlocfilehash: df6427f1986cd55755d2375ed00cab057e48d8c3
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585902"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681436"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Kılavuzlu senaryo-bulutta yönetilen modern masaüstü
 
@@ -96,7 +96,7 @@ Kullanıcı ve cihaz yeni güvenlik gruplarına eklenecektir. Ayrıca, iş veya 
 
 ## <a name="additional-information"></a>Ek bilgiler
 
-### <a name="register-device-with-windows-auto-pilot-optional"></a>Windows otomatik pilot ile cihaz kaydetme (Isteğe bağlı)
+### <a name="register-device-with-windows-autopilot-optional"></a>Windows Autopilot ile cihaz kaydetme (Isteğe bağlı)
 
 İsteğe bağlı olarak, kayıtlı bir Autopilot cihazı kullanmayı seçebilirsiniz. Autopilot için, Bu Kılavuzlu senaryo bir Autopilot dağıtım profili ve kayıt durumu sayfası profili atayacaktır. Autopilot dağıtım profili aşağıdaki şekilde yapılandırılır:
 - Kullanıcı odaklı mod – Yani, son kullanıcının Windows kurulumu sırasında Kullanıcı adı ve parola girmelerini gerektir.

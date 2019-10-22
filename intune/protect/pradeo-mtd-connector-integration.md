@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,19 @@ ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 193b6693a6d2da4a13731c8356d5041162fc3f2a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 32e67ac961f2831a881bc160e19cefdb75723ff0
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509070"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681248"
 ---
 # <a name="integrate-pradeo-mobile-threat-defense-with-intune"></a>Pradeo Mobile Threat Defense 'i Intune ile tümleştirme
 
 Pradeo Mobile Threat Defense çözümünü Intune ile tümleştirmek için aşağıdaki adımları tamamlayın.
+
+> [!NOTE]  
+> Bu mobil tehdit savunma satıcısı, kayıtlı olmayan cihazlar için desteklenmez.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -87,4 +90,4 @@ Pradeo uygulama yetkilendirme işlemi şu şekildedir:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Pradeo uygulamalarını ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Kayıtlı cihazlar için Pradeo uygulamalarını ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)

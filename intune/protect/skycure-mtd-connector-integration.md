@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/21/2017
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd33d19ecfe86a67620bf3a3e8a394e36374a625
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f6c28b222307ee20e3198033ef6aa4af3d756e7e
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504111"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681329"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile'ın Intune ile tümleştirmesini ayarlama
 
 Symantec Endpoint Protection Mobile (SEP Mobile) çözümünü Intune ile tümleştirmek için aşağıdaki adımları tamamlayın. Çoklu Oturum Açma özelliklerini kullanabilmek için Azure AD’ye SEP Mobile uygulamalarını eklemelisiniz.
+
+> [!NOTE]
+> Bu mobil tehdit savunma satıcısı, kayıtlı olmayan cihazlar için desteklenmez.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 

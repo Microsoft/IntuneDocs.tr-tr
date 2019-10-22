@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a66f16ea681ec75a4a3aa7d85a57c4faa555ab9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504530"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681378"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Cihaz tabanlı koşullu erişim ilkesi oluşturma
 
@@ -62,7 +62,7 @@ Koşullu erişim ilkesi, korumak istediğiniz uygulama veya Hizmetleri, uygulama
 
     - **Uygulamalar**' ı seçin: Bu seçeneği belirleyin, **Seç**' i seçin ve ardından, korumak istediğiniz uygulamaları veya hizmetleri aramak ve seçmek için uygulamalar listesini kullanın.
     
-      ![Yeni bir koşullu erişim ilkesi oluşturma](./media/create-conditional-access-intune/create-ca-select-apps.png)
+      ![Koşullu erişim ilkesi için atamaları yapılandırma](./media/create-conditional-access-intune/create-ca-select-apps.png)
 
 7. **Bitti**’yi seçin.
 8. **Atamalar**' ın altında **koşullar**' ı seçin.
@@ -72,7 +72,7 @@ Koşullu erişim ilkesi, korumak istediğiniz uygulama veya Hizmetleri, uygulama
     - **İstemci uygulamaları**: ilkenin tarayıcı uygulamaları, mobil uygulamalar ve Masaüstü istemcilerine uygulanması gerekip gerekmediğini belirtmek için **Evet** ' i seçin. Ayrıca, **modern kimlik doğrulama istemcilerini** (IOS için Outlook veya Android için Outlook gibi) ve **Exchange ActiveSync istemcileri**de seçebilirsiniz.
     - **Cihaz durumu**: koşullu erişim Ilkesi, Evet ' i seçmediğiniz ve özellikle de durum cihazı karma Azure AD 'ye katılmış ya da uyumlu olarak işaretlenmiş cihaz (veya her ikisi) hariç tutmadığınız sürece tüm cihaz durumlarına uygulanır.
     
-      ![Yeni bir koşullu erişim ilkesi oluşturma](./media/create-conditional-access-intune/create-ca-device-platforms.png)
+      ![Koşullu erişim ilkesi için koşulları ayarlama](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
       > Hem **modern kimlik doğrulama** istemcilerini hem de **Exchange ActiveSync istemcilerini**korumak istiyorsanız, her istemci türü için bir tane olmak üzere iki ayrı koşullu erişim ilkesi oluşturun. Exchange ActiveSync modern kimlik doğrulamasını desteklese de, Exchange ActiveSync tarafından desteklenen tek koşul platformudur. Multi-Factor Authentication dahil diğer koşullar desteklenmez. Exchange ActiveSync 'ten Exchange Online 'a erişimi etkili bir şekilde korumak için, Cloud App Office 365 Exchange Online 'ı ve istemci uygulaması Exchange ActiveSync 'i yalnızca desteklenen platformlara Uygula seçiliyken belirten bir koşullu erişim ilkesi oluşturun.
