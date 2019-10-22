@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5234a8568911de075b1c8ee5d679ae40c6c494a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e0ef623fef49fdf43efc80375716af711bdbcb3c
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502620"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681339"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune 'da koşullu erişimle Microsoft Defender ATP için uyumluluğu zorlama  
 
@@ -57,6 +57,9 @@ Microsoft Defender ATP 'yi Intune ile birlikte kullanmak için, aşağıdakileri
 - Enterprise Mobility + Security E3 ve Windows E5 (veya Microsoft 365 Kurumsal E5) için lisanslı kiracı
 - Azure AD’ye katılmış [Intune tarafından yönetilen](../enrollment/windows-enroll.md) Windows 10 cihazların olduğu Microsoft Intune ortamı
 - Microsoft [Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) ve Microsoft Defender güvenlik MERKEZI (ATP portalı) erişimi
+
+> [!NOTE]
+> Microsoft Defender ATP, Intune uygulama koruma ilkeleriyle desteklenmez.
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Intune 'da Microsoft Defender ATP 'yi etkinleştirme
 

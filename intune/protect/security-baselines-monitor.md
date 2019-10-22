@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1be2ba947a5b92b6982e8c868e935460c4eaa5bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9c4d47a11f07a2099d79f5ce4ce90795a087718b
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508952"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681471"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'de güvenlik taban çizgisini ve profillerini izleme  
 
@@ -60,7 +60,7 @@ Bir cihaz, taban çizgisinde farklı kategorilerden farklı bir duruma sahip old
 Çeşitli durumlara sahip cihazların listesini incelemek ve görüntülemek için grafiğe tıklayabilirsiniz. Böylece, tek tek cihazların ayrıntılarını görüntülemek için bu listeden tek tek cihazları seçebilirsiniz. Örneğin:
 - **Cihaz yapılandırması** ' nı seçin > bir hata durumu Içeren profili seçin:
 
-  ![Cihazların durumunu denetleme](./media/security-baselines-monitor/device-configuration-profile-list.png)
+  ![Bir profilin durumunu görüntüleme](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
 - Hata profilini seçin. Profildeki tüm ayarların listesi ve durumları gösterilir. Şimdi, hataya neden olan ayarı bulmak için kaydırma yapabilirsiniz:
 
@@ -91,7 +91,7 @@ Profili izlemek, cihazlarınızın dağıtım durumu hakkında fikir verir, anca
 
     ![Kaç cihaza ve kullanıcıya güvenlik temelleri profili atandığını öğrenin](./media/security-baselines-monitor/existing-profile-overview.png)
 
-3. @No__t-1**özelliklerini** **Yönet**altında, taban çizgisinde tüm ayarların bir listesi gösterilir. Ayrıca, bu ayarlardan herhangi birini değiştirebilirsiniz:
+3. **Yönet**  > **özellikleri**altında, taban çizgisinde tüm ayarların bir listesi gösterilir. Ayrıca, bu ayarlardan herhangi birini değiştirebilirsiniz:
 
     ![Güvenlik temelleri profilindeki ayarları görme ve güncelleştirme](./media/security-baselines-monitor/manage-settings.png)
 
