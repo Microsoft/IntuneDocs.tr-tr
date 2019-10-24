@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c578cb430bd6c62c274322ea1e46b5d37d2e143
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584966"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749352"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune'daki cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama
 
@@ -49,7 +49,7 @@ Yöneticiler, bu şablonlar sayesinde grup ilkelerine benzeyen ancak tamamen bul
 
 Bu özellik şunları destekler:
 
-- Windows 10 ve üzeri
+- Desteklenen bellenim üzerinde Windows 10 1809 ve üzeri.
 
 ## <a name="certificates"></a>Sertifikalar
 
@@ -95,6 +95,14 @@ Bu özellik şunları destekler:
 
 - iOS/ıpados
 - Mac OS
+
+## <a name="device-firmware-configuration-interface"></a>Cihaz üretici yazılımı yapılandırma arabirimi
+
+[Cihaz üretici yazılımı yapılandırma arabirimi](device-firmware-configuration-interface-windows.md) (dfcı), yöneticilerin ıNTUNE kullanarak UEFı (BIOS) ayarlarını etkinleştirmesine veya devre dışı bırakmasına olanak sağlar. Bu ayarları, genellikle kötü amaçlı saldırılara karşı daha dayanıklı olan bellenim düzeyinde güvenliği geliştirmek için kullanın.
+
+Bu özellik şunları destekler:
+
+- Windows 10 ve üzeri
 
 ## <a name="device-restrictions"></a>Cihaz kısıtlamaları
 

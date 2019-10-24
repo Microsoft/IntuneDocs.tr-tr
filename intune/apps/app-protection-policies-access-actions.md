@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8d516c0ebb03ce8c8202e1383afb73324305ef1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499506"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785682"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -60,6 +60,7 @@ iOS’ta **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yap
 - En düşük uygulama sürümü
 - En düşük SDK sürümü
 - Cihaz modeli/modelleri
+- İzin verilen en fazla cihaz tehdit düzeyi
 
 **Cihaz modelleri** ayarını kullanmak için iOS model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini ekleyin. [HockeyApp'in destek belgelerindeki](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) Device Type sütunu altında bir iOS model tanımlayıcısı bulabilirsiniz.<br>
 Örnek giriş: *iPhone5,2;iPhone5,3*
@@ -84,6 +85,7 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 - Cihaz üreticisi/üreticileri
 - SafetyNet cihaz kanıtlama
 - Uygulamalarda tehdit taraması
+- İzin verilen en fazla cihaz tehdit düzeyi
 
 **Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
 Örnek giriş: *Üretici A;Üretici B* 

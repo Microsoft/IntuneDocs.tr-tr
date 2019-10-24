@@ -2,10 +2,10 @@
 title: Microsoft Intune-Azure 'da cihaz uyumluluk ilkeleri oluşturma | Microsoft Docs
 description: Yetkisizkullanımsüresinde durumunu, koşullu erişimle çalışma, atanmış bir ilke olmadan cihazları işleme ve Azure portal ile klasik portalda uyumluluk farklarını kullanarak cihaz uyumluluk ilkeleri oluşturun, durum ve önem düzeylerine genel bakış yapın. Microsoft Intune
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15ac42f34d440c32026d39aca577bd8e3b1f62ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504547"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786069"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da uyumluluk ilkesi oluşturma
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune’da cihazların uyumlu olarak değerlendirilmesi için uyması gereken minimum işletim sistemi sürümü gibi kurallar ve ayarlar oluşturabilirsiniz. Cihaz uyumlu değilse, [koşullu erişim](conditional-access.md)kullanarak verilere ve kaynaklara erişimi engelleyebilirsiniz.
 
@@ -49,10 +47,10 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
 
 - Desteklenen bir platform kullanın:
 
-  - Android
+  - Android Cihaz Yöneticisi
   - Android Kurumsal
   - iOS
-  - macOS (önizleme)
+  - Mac OS
   - Windows 10
   - Windows 8.1
   - WVPN profillerinidows Phone 8.1
@@ -73,26 +71,40 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
 
 3. **İlkeler** > **İlke Oluştur**’u seçin. Aşağıdaki özellikleri girin:
 
-    - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. **Jailbreak uygulanmış iOS cihazlarını uyumlu değil olarak işaretle** iyi bir ilke adı örneğidir.
-    - **Açıklama**: ilke için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:  
+   - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. **Jailbreak uygulanmış iOS cihazlarını uyumlu değil olarak işaretle** iyi bir ilke adı örneğidir.  
 
-       - **Outlook Web Access (OWA)**
-       - **Android kurumsal**
-       - **Android**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 ve üzeri**
-       - **Windows 10 ve üzeri**
+   - **Açıklama**: ilke için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.  
 
-    - **Ayarlar**: aşağıdaki makaleler her platformun ayarlarını listeler ve anlatmaktadır:
+   - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:
+     - **Android Cihaz Yöneticisi**
+     - **Android Kurumsal**
+     - **iOS/ıpados**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 ve üzeri**
+     - **Windows 10 ve üzeri**
 
-        - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
-        - [Android Kurumsal](compliance-policy-create-android-for-work.md)
-        - [Android](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1, Windows 8.1 ve üzeri](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 ve üzeri](compliance-policy-create-windows.md)
+     *Android Enterprise*için, bir **profil türü**seçmeniz gerekir:
+     - **Cihaz sahibi**
+     - **İş profili**
+
+   - **Ayarlar**: aşağıdaki makaleler her platformun ayarlarını listeler ve anlatmaktadır:
+     - [Android Cihaz Yöneticisi](compliance-policy-create-android.md)
+     - [Android Kurumsal](compliance-policy-create-android-for-work.md)
+     - [iOS/ıpados](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1, Windows 8.1 ve üzeri](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 ve üzeri](compliance-policy-create-windows.md)  
+
+   - **Konumlar** *(Android Cihaz Yöneticisi)* : ilkenizde cihazın konumuna göre uyumluluğu zorlayabilirsiniz. Mevcut konumlar arasından seçim yapın. Henüz bir konumunuz yok mu? Intune'da [Konumları (ağ yalıtımı) kullanma](use-network-locations.md) başlığı altında bazı yönergeler sağlanır.  
+
+   - **Uyumsuzluk eylemleri**: uyumluluk ilkelerinizi karşılamayan cihazlarda otomatik olarak uygulanacak bir dizi eylem ekleyebilirsiniz. Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örneğin, bir gün sonra olarak). Ayrıca, cihaz uyumlu olmadığında kullanıcıya e-posta gönderen ikinci bir eylem de yapılandırabilirsiniz.
+    
+     [Uyumsuz cihazlar için eylem ekleme](actions-for-noncompliance.md) makalesinde, kullanıcılarınıza e-posta ile gönderilecek bir bildirim oluşturma da dahil olmak üzere daha fazla bilgi sağlanmıştır.
+
+     Örneğin Konumlar özelliğini kullanıyor ve uyumluluk ilkesinde bir konum ekliyorsunuz. En az bir konum seçtiğinizde uyumsuzluk için varsayılan eylem uygulanır. Cihaz, seçili konumlara bağlı değilse hemen uyumsuz olarak değerlendirilir. Kullanıcılarınıza bir gün gibi bir yetkisiz kullanım süresi tanıyabilirsiniz.
+
+   - **Kapsam (Etiketler)** : kapsam etiketleri, ilkeleri satış, ık ve tüm ABD-NC çalışanları gibi belirli gruplara atamak ve filtrelemek için harika bir yoldur. Uyumluluk ilkelerinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. [İlke filtrelemek için kapsam etiketleri kullanma](../fundamentals/scope-tags.md) sayfası bu konuda faydalı bir kaynaktır.
 
 4. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Tamam** > **Oluştur**'u seçin. İlke oluşturulur ve listede gösterilir. Şimdi ilkeyi gruplarınıza atayın.
 
@@ -115,17 +127,18 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
 
 **Değerlendir** düğmesi gri gösteriliyorsa, ilkenin bir veya birden fazla gruba atandığından emin olun.
 
-## <a name="actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemler
+<!-- ## Actions for noncompliance
 
-Uyumluluk ilkelerinizi karşılamayan cihazlara otomatik olarak ve sırayla uygulanacak eylemler belirleyebilirsiniz. Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örneğin, bir gün sonra olarak). Ayrıca, cihaz uyumlu olmadığında kullanıcıya e-posta gönderen ikinci bir eylem de yapılandırabilirsiniz.
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-[Uyumsuz cihazlar için eylem ekleme](actions-for-noncompliance.md) makalesinde, kullanıcılarınıza e-posta ile gönderilecek bir bildirim oluşturma da dahil olmak üzere daha fazla bilgi sağlanmıştır.
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-Örneğin Konumlar özelliğini kullanıyor ve uyumluluk ilkesinde bir konum ekliyorsunuz. En az bir konum seçtiğinizde uyumsuzluk için varsayılan eylem uygulanır. Cihaz, seçili konumlara bağlı değilse hemen uyumsuz olarak değerlendirilir. Kullanıcılarınıza bir gün gibi bir yetkisiz kullanım süresi tanıyabilirsiniz.
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>Kapsam etiketleri
+## Scope tags
 
-Satış, İK, Merkez ofis çalışanları gibi belirli gruplara ilke atamanın ve filtrelemenin ideal bir yolu olarak kapsam etiketlerini kullanabilirsiniz. Uyumluluk ilkelerinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. [İlke filtrelemek için kapsam etiketleri kullanma](../fundamentals/scope-tags.md) sayfası bu konuda faydalı bir kaynaktır.
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>Yenileme döngü süreleri
 

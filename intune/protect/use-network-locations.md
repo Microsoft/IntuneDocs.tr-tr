@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc1a241d327bd98db8ae50187b1e1aed5e00e71
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503561"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749452"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune'da Konumları (ağ yalıtımı) kullanma
 
@@ -69,9 +69,8 @@ Konum tabanlı bir uyumluluk ilkesi oluşturmak için:
 
 ## <a name="create-the-location-compliance-policy"></a>Konum uyumluluk ilkesini oluşturma
 
-Uyumluluk ilkesini oluşturduğunuzda, **Platform** için **Android**'i seçin. **Konumlar**'da, eklediğiniz ağ konumlarından birini veya birden çoğunu seçin. Bu konumlar, cihazlarınız için oluşturduğunuz ağ yalıtımının parçasıdır.
+[Uyumluluk ilkesini oluştururken](create-compliance-policy.md) **Platform**için **Android** ' i seçin. **Konumlar**'da, eklediğiniz ağ konumlarından birini veya birden çoğunu seçin. Bu konumlar, cihazlarınız için oluşturduğunuz ağ yalıtımının parçasıdır. 
 
-[Uyumluluk ilkesi temelinde ağ konumu oluşturma](compliance-policy-create-android.md#locations) altında bazı yönergeler sağlanır.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemleri yapılandırma
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86a1822321cb606776b69a8a7328f5a62bd85630
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585496"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749169"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune'u kullanarak kuruluşunuzdaki kaynaklara erişim izni verme amacıyla cihazlarda kural oluşturun
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Çoğu mobil cihaz yönetimi (MDM) çözümü, kullanıcıların ve cihazların bazı gereksinimleri karşılamasını şart koşarak kuruluş verilerin korunmasına yardımcı olmaktadır. Intune'da bu özellik "uyumluluk ilkeleri" olarak adlandırılır. Uyumluluk ilkeleri, kullanıcıların ve cihazların uyumlu olmak için karşılaması gereken kuralları ve ayarları tanımlar. Yönetici, koşullu erişim ile birleştirildiğinde, kuralları karşılamayan kullanıcıları ve cihazları engelleyebilirler.
 
@@ -90,7 +88,7 @@ Intune ayrıca bir dizi yerleşik uyumluluk ilkesi ayarına da sahiptir. Aşağ�
 
 - **Kendisine hiçbir uyumluluk ilkesi atanmamış cihazları şöyle işaretle**: Bu özelliğin iki değeri vardır:
 
-  - **Uyumlu**(varsayılan): güvenlik özelliği kapalı
+  - **Uyumlu** (*varsayılan*): güvenlik özelliği kapalı
   - **Uyumlu değil**: güvenlik özelliği açık
 
   Bir cihaza bir uyumluluk ilkesi atanmamışsa, bu cihaz varsayılan olarak uyumlu olarak değerlendirilir. Uyumluluk ilkeleriyle koşullu erişim kullanıyorsanız, varsayılan ayarı **uyumlu değil**olarak değiştirmeniz önerilir. Bir ilke atanmadığı için son kullanıcı uyumsuzsa, [Şirket Portalı](../apps/company-portal-app.md) `No compliance policies have been assigned` ifadesine yer verir.
@@ -157,8 +155,9 @@ Azure portalındaki yeni cihaz uyumluluk özelliklerini kullanmak için doğruda
   - [Android Kurumsal](compliance-policy-create-android-for-work.md)
   - [Android](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows 10 ve üzeri](compliance-policy-create-windows.md)
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
-  - [Windows 8.1 ve Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows 8.1 ve üzeri](compliance-policy-create-windows-8-1.md)
+  - [Windows 10 ve üzeri](compliance-policy-create-windows.md)
 
 - [İlke varlıkları için başvuru](../reports-ref-policy.md) sayfasında Intune Veri Ambarı ilke varlıkları hakkında bilgiler yer almaktadır.
