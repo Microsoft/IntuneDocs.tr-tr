@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
-ms.reviewer: heenamac
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17057100f9bc762de8c679880145014cf5806432
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: a1c68421bf7c5dea0d93d45e0cbb748204d0f66b
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584853"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749388"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune’da cihaz profillerini izleme
 
@@ -80,6 +80,33 @@ Cihaz profilinizi oluşturduktan sonra, Intune grafikler sağlar. Bu grafikler p
 3. İlkeyi seçin. İlke, cihaza uygulanan ilkedeki tüm ayarları gösterir. Bir cihaz **Çakışma** durumundaysa, o satırı seçin. Açılan yeni pencerede, çakışma yaratan ayara sahip tüm profilleri ve profil adlarını görürsünüz.
 
 Çakışma yaratan ayarı ve bunu içeren ilkelerin hangileri olduğunu bulduğunuza göre çakışmayı çözümlemeniz daha kolay olacaktır. 
+
+## <a name="device-firmware-configuration-interface-profile-reporting"></a>Cihaz üretici yazılımı yapılandırma arabirimi profil raporlaması
+
+> [!WARNING]
+> İzleme DFCı profilleri şu anda oluşturuluyor. DFCı genel önizlemede olduğundan, izleme verileri eksik veya eksik olabilir.
+
+DFCı profilleri, diğer cihaz yapılandırma profillerinde olduğu gibi, ayar temelinde raporlanır. Üreticinin DFCı desteğine bağlı olarak bazı ayarlar uygulanmayabilir.
+
+DFCı profil ayarlarınız ile aşağıdaki durumları görebilirsiniz:
+
+- **Uyumlu**: Bu durum profildeki ayar değeri cihazdaki ayarla eşleştiğinde gösterir. Bu durum, aşağıdaki senaryolarda oluşabilir:
+
+  - DFCı profili, profildeki ayarı başarıyla yapılandırdı.
+  - Cihazda, bu ayar tarafından denetlenen donanım özelliği yok ve profil ayarı **devre dışı bırakıldı**.
+  - UEFı, DFCı 'ın özelliği devre dışı bırakmasına izin vermez ve profil ayarı **etkinleştirilir**.
+  - Cihazda özelliği devre dışı bırakma donanımı eksik ve profil ayarı **etkin**.
+
+- **Uygulanamaz**: Bu durum, profildeki bir ayar değerinin **etkin**olduğu ve cihazdaki eşleşen ayar bulunamadığı zaman gösterir. Cihaz donanımının özelliği yoksa, bu durum oluşabilir.
+
+- **Uyumsuz**: Bu durum profildeki ayar değerinin cihazdaki ayarla eşleşmediği zaman gösterir. Bu durum, aşağıdaki senaryolarda oluşabilir:
+
+  - UEFı, DFCı 'nin bir ayarı devre dışı bırakmasına izin vermez ve profil ayarı **devre dışı bırakılır**.
+  - Cihazda özelliği devre dışı bırakma donanımı eksik ve profil ayarı **devre dışı bırakıldı**.
+  - Cihazda en son DFCı bellenim sürümü yok.
+  - DFCı, UEFı menüsünde yerel bir "opt" denetimi kullanılarak Intune 'A kaydedilmeden önce devre dışı bırakıldı.
+  - Cihaz Intune 'a Autopilot kaydı dışında kaydedildi.
+  - Cihaz bir Microsoft CSP tarafından Autopilot 'e kaydolmadı veya doğrudan OEM tarafından kaydolmadı.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

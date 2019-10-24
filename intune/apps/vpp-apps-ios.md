@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a63bf187d0774b9f50351b45e53095d994720878
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496649"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785525"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile Apple Volume Purchase Program aracılığıyla satın alınan iOS ve macOS uygulamalarını yönetme
 
@@ -94,7 +94,7 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve Intune hesabınıza y�
         > Ülke/bölge 'yi değiştirmek, bu belirteçle oluşturulan uygulamalar için Apple hizmetiyle bir sonraki eşitlemede uygulamalar meta verilerini ve mağaza URL 'sini güncelleştirir. Uygulama, yeni ülke/bölge deposunda yoksa güncelleştirilmeyecek.
 
     - **VPP hesabı türü** - **İş** veya **Eğitim**’i seçin.
-    - **Otomatik uygulama güncelleştirmeleri** - Otomatik güncelleştirmeleri etkinleştirmek için **Açık** veya **Kapalı** olarak ayarlayın. Bu etkinleştirildiğinde Intune, uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılar ve cihaz iade edildiğinde bunları cihaza otomatik olarak gönderir. Apple VPP uygulamaları için otomatik uygulama güncelleştirmeleri yalnızca **Gerekli** yükleme amacı ile dağıtılmış olan uygulamaları otomatik olarak güncelleştirir. **Kullanılabilir** yüklemede dağıtılan uygulamalar için otomatik güncelleştirme, uygulamanın yeni bir sürümünün kullanılabildiğini bildiren yönetici için bir bildirim oluşturur. Kullanıcı ayrıca eski bir sürümü yüklenmiş olsa dahi uygulamanın Şirket Portalında yüklü olmadığını görecektir. Bu durumda, kullanıcı uygulamanın yeni sürümünü yüklemek için Şirket Portalı uygulamasındaki uygulama ayrıntıları ekranında **Yükle** ' ye tıklayarak uygulamayı yeniden yükleyebilir.
+    - **Otomatik uygulama güncelleştirmeleri** - Otomatik güncelleştirmeleri etkinleştirmek için **Açık** veya **Kapalı** olarak ayarlayın. Bu etkinleştirildiğinde Intune, uygulama mağazasındaki VPP uygulama güncelleştirmelerini algılar ve cihaz iade edildiğinde bunları cihaza otomatik olarak gönderir. Apple VPP uygulamaları için otomatik uygulama güncelleştirmeleri yalnızca **Gerekli** yükleme amacı ile dağıtılmış olan uygulamaları otomatik olarak güncelleştirir. **Kullanılabilir** yüklemede dağıtılan uygulamalar için otomatik GÜNCELLEŞTIRME, BT Yöneticisi için, uygulamanın yeni bir sürümünün kullanılabildiğini bildiren bir durum iletisi oluşturur. Bu durum iletisi, uygulama seçilerek, cihaz yüklemesi durumu seçilerek ve durum ayrıntıları denetlenerek görüntülenebilir. Kullanıcı ayrıca eski bir sürümü yüklenmiş olsa dahi uygulamanın Şirket Portalında yüklü olmadığını görecektir. Bu durumda, kullanıcı uygulamanın yeni sürümünü yüklemek için Şirket Portalı uygulamasındaki uygulama ayrıntıları ekranında **Yükle** ' ye tıklayarak uygulamayı yeniden yükleyebilir.
 
         > [!NOTE]
         > Otomatik uygulama güncelleştirmeleri, iOS 11,0 ve üzeri ya da macOS 10,12 ve üzeri için hem cihaz hem de Kullanıcı lisanslı uygulamalar için çalışır.

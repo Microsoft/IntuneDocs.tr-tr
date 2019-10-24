@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3f4a8c9be4e22f3bc64288a6e3d2ec708186de6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585197"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72787873"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -223,7 +223,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 Bir macOS PKCS sertifika profili oluştururken, konu adı biçimi seçenekleri, seçtiğiniz sertifika türüne, **Kullanıcı** veya **cihaza**bağlıdır.  
 
 > [!NOTE]  
-> Sonuç sertifika Imzalama Isteğindeki (CSR) konu adı, kaçış karakteri olarak şu karakterlerden birini içerdiğinde [, SCEP için görülen aynı sorun olan](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) sertifikaları almak için pcks kullanma konusunda bilinen bir sorun vardır ( ters eğik çizgi \\):
+> Elde edilen sertifika Imzalama Isteğindeki (CSR) konu adı, kaçış karakteri olarak aşağıdaki karakterlerden birini içerdiğinde [, SCEP için görülen aynı sorun olan](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) sertifikaları almak için PKCS kullanma konusunda bilinen bir sorun vardır. ters eğik çizgi \\):
 > - \+
 > - ;
 > - ,

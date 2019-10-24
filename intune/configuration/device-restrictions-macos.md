@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494017"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776877"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune'u kullanarak özelliklere izin vermeyi veya bunları kısıtlamayı sağlayan macOS cihaz ayarları
 
@@ -40,7 +40,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra m
 
 ## <a name="general"></a>Genel
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı
 
 - **Tanım arama**: **blok** , kullanıcının bir sözcüğü vurgulamasını ve sonra da cihazda tanımını aramasını engeller. **Yapılandırılmadı** (varsayılan) ayarı, tanım arama özelliğine erişim sağlar.
 - **Dikte**: **blok** , kullanıcının metin girmesi için ses girişi kullanmasını engeller. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcının dikteyle girişi kullanmasına izin verir.
@@ -82,7 +82,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra m
 
 ## <a name="password"></a>Parola
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı
 
 - **Parola**: son kullanıcının cihaza erişmek için bir parola girmesini **gerektir** . **Yapılandırılmadı** (varsayılan) parola gerektirmez. Ayrıca basit parolaları engelleme veya minimum uzunluğu ayarlama gibi herhangi bir kısıtlamayı zorlamaz.
   - **Gerekli parola türü**: parolanın yalnızca sayısal olup olmayacağını ya da alfasayısal (harfler ve sayılar içeren) olması gerektiğini belirtin.
@@ -114,7 +114,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra m
 
 ## <a name="built-in-apps"></a>Yerleşik Uygulamalar
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı
 
 - **Safari Safari otomatik doldurma**: **blok** cihazdaki otomatik doldurma özelliğini devre dışı bırakır. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcıların web tarayıcısındaki otomatik tamamlama ayarlarını değiştirmesine olanak tanır.
 - **Kamerayı engelle**: cihazdaki kameraya erişimi engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, cihazın kamerasına erişim sağlar.
@@ -127,7 +127,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra m
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı
 
 - **Kısıtlanmış uygulamalar listesi türü**: Kullanıcıların yüklemesine veya kullanmasına izin verilmeyen uygulamaların bir listesini oluşturun. Seçenekleriniz şunlardır:
 
@@ -145,14 +145,14 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
 
 ## <a name="connected-devices"></a>Bağlı cihazlar
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı
 
 - **AirDrop bloğu**: **Block** cihazda AirDrop kullanımını engeller. **Yapılandırılmadı** (varsayılan) ayarı, yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verir.
 - **Apple Watch otomatik kilit açma engelle**: **Block** , kullanıcıların MacOS cihazını Apple Watch kilidini açmalarını engeller. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcıların Apple Watch cihazlarıyla macOS cihazlarının kilidini açmalarına izin verir.
 
 ## <a name="cloud-and-storage"></a>Bulut ve depolama
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı
 
 - **ICloud anahtar zinciri eşitlemesini engelle**: anahtarlıkta depolanan kimlik bilgilerinin iCloud 'a eşitlenmesini devre dışı bırakmak için **bloğu** seçin. **Yapılandırılmadı** (varsayılan), kullanıcıların bu kimlik bilgilerini eşitlemesine izin verir.
 - **ICloud belge eşitlemesini engelle**: **blok** , iCloud 'ın belge ve verileri eşitlemesini engeller. **Yapılandırılmadı** (varsayılan), iCloud depolama alanınızda belge ve anahtar-değer eşitlemesine izin verir.
@@ -170,7 +170,7 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı
 
 - **E-posta etki alanı URL 'si**: listeye bir veya daha fazla URL **ekleyin** . Kullanıcılar, yapılandırdığınız sunucudan farklı bir etki alanından e-posta aldıklarında, macOS Mail uygulamasında e-posta güvenilir değil olarak işaretlenir.
 

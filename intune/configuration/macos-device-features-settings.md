@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506660"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776921"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 'da macOS cihaz özelliği ayarları
 
@@ -42,7 +42,7 @@ Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Ayr�
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı 
 
 - **IP adresi**: yazıcının IPv4 veya IPv6 adresini girin. Yazıcıları tanımlamak için konak adlarını kullanıyorsanız, Terminal uygulamasındaki yazıcıya ping ekleyerek IP adresini alabilirsiniz. [IP adresini ve yolu al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
 - **Yol**: yazıcının yolunu girin. Yol, ağınızdaki yazıcılar için genellikle `ipp/print` ' dır. [IP adresini ve yolu al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
@@ -85,7 +85,7 @@ AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve ba�
 
 ## <a name="login-window"></a>Oturum açma penceresi
 
-### <a name="settings-apply-to-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı 
 
 #### <a name="window-layout"></a>Pencere düzeni
 
@@ -177,7 +177,7 @@ Bu özellik şu platformlarda geçerlidir:
 - **Minimum parola uzunluğu** (yalnızca Kerberos): bir kullanıcının parolasını oluşturmak için gereken en az karakter sayısını girin. **Yapılandırılmadı** (varsayılan), kullanıcılar için en az parola uzunluğu uygulamaz.
 - **Parola yeniden kullanım sınırı** (yalnızca Kerberos): etki alanında önceki bir parolanın yeniden kullanılabilmesi için kullanılması gereken yeni parola sayısını 1-24 ' dan girin. **Yapılandırılmadı** (varsayılan) parola yeniden kullanım sınırını zorlamaz.
 - **En az parola yaşı** (yalnızca Kerberos): bir kullanıcının değiştirebilmesi için, etki alanında bir parolanın kullanılması gereken gün sayısını girin. **Yapılandırılmadı** (varsayılan), silinmeden önce en az bir parola geçerlilik süresi uygulamaz.
-- **Parola süre sonu bildirimi** (yalnızca Kerberos): parolanın süresi dolmadan önce kullanıcıların parolasının süresinin dolacağını belirten gün sayısını girin. **Yapılandırılmadı** (varsayılan) @no__t 1 gün kullanır.
+- **Parola süre sonu bildirimi** (yalnızca Kerberos): parolanın süresi dolmadan önce kullanıcıların parolasının süresinin dolacağını belirten gün sayısını girin. **Yapılandırılmadı** (varsayılan) `15` gün kullanır.
 - **Parola kullanım süresi** (yalnızca Kerberos): cihaz parolasının değiştirilmesi gereken gün sayısını girin. **Yapılandırılmadı** (varsayılan) kullanıcı parolalarının hiçbir zaman dolmayacağı anlamına gelir.
 - **Asıl ad** (yalnızca Kerberos): Kerberos sorumlusunun Kullanıcı adını girin. Bölge adını eklemeniz gerekmez. Örneğin, `user@contoso.com` ' da, `user` ana addır ve `contoso.com` bölge adıdır.
 - **Active Directory site kodu** (yalnızca Kerberos): Kerberos uzantısının kullanması gereken Active Directory sitenin adını girin. Kerberos uzantısı Active Directory site kodunu otomatik olarak bulagerekebilmeniz için bu değeri değiştirmeniz gerekebilir.

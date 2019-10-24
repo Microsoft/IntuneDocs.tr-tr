@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8029c62aeec431c19db080ec444c02565905443f
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749401"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot kullanarak Windows cihazlarını Intune 'A kaydetme  
 Windows Autopilot, cihazların Intune 'A kaydedilmesini basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -142,18 +142,6 @@ Bir Autopilot dağıtım profili oluşturduktan sonra bu profilin bazı kısıml
 
 > [!NOTE]
 > Profilde yapılan değişiklikler, bu profile atanmış cihazlara uygulanır. Ancak güncelleştirilmiş profil, Intune’a önceden kaydedilmiş cihazlarda cihaz sıfırlanıp yeniden kaydedilene kadar uygulanmaz.
-
-## <a name="edit-autopilot-device-attributes"></a>Autopilot cihaz özniteliklerini Düzenle
-Bir Autopilot cihazını karşıya yükledikten sonra, cihazın belirli özniteliklerini düzenleyebilirsiniz.
-
-1. Azure portal Intune 'da, **cihaz kaydı**' nı seçin.
-2. **Windows kaydı**altında, **Windows Autopilot** bölümünde **cihazlar**' ı seçin.
-3. Düzenlemek istediğiniz cihazı seçin.
-4. Ekranın sağ tarafındaki bölmede, cihaz adını, Grup etiketini veya Kullanıcı dostu adını (bir Kullanıcı atadıysanız) düzenleyebilirsiniz.
-5. **Kaydet**’i seçin.
-
-> [!NOTE]
-> Cihaz adları tüm cihazlar için yapılandırılabilir, ancak karma Azure AD 'ye katılmış dağıtımlarda yok sayılır. Cihaz adı, karma Azure AD cihazları için etki alanı katılımı profilinden hala geliyor.
 
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows Autopilot atanmamış cihazlar için uyarılar  <!-- 163236 -->  
 
