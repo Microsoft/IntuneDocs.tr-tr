@@ -96,13 +96,21 @@
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
-            - name: MTD için Intune ayarlama
+            - name: Kayıtlı olmayan cihazlarda MTD
               items:
-                - name: MTD uygulamaları ekleme
+                - name: Kayıtlı olmayan cihazlara MTD uygulamaları ekleme
+                  href: mtd-add-apps-unenrolled-devices.md
+                - name: MTD uygulaması koruma ilkesi oluşturma
+                  href: mtd-app-protection-policy.md
+                - name: Kayıtlı olmayan cihazlar için MTD’yi etkinleştirme
+                  href: mtd-enable-unenrolled-devices.md
+            - name: Kayıtlı cihazlarda MTD
+              items:
+                - name: Kayıtlı cihazlara MTD uygulamaları ekleme
                   href: mtd-apps-ios-app-configuration-policy-add-assign.md
                 - name: Bir MTD cihaz uyumluluk ilkesi oluşturma
                   href: mtd-device-compliance-policy-create.md
-                - name: Intune’da MTD’yi etkinleştirme
+                - name: Kayıtlı cihazlar için MTD’yi etkinleştirme
                   href: mtd-connector-enable.md
             - name: MTD uygulamaları
               items:
