@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5334505c0692a62f7f1025d4c360073bd2d8369
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498416"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786031"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune korumalı uygulamalar  
 
@@ -72,6 +72,7 @@ Aşağıdaki tablolar, Microsoft Intune ile yaygın olarak kullanılan desteklen
 | **Microsoft Visio Görüntüleyicisi**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | İPhone 'daki Visio diyagramlarını ücretsiz olarak görüntüleyebilir ve bunlarla etkileşime geçebilirsiniz. Microsoft hesabınızla oturum açın veya e-postadaki bir Visio ekini açın ve iOS 9,0 veya üzerini çalıştıran herhangi bir iPhone 'da Visio diyagramlarının harika görünümünü yaşayın. Ayrıca, diyagramları daha sonra iPhone veya bir Web tarayıcısı üzerinde Visio diyagramlarını, Windows Desktop 'ta yüklü olmasa bile daha sonra görüntüleyebilecekleri kişilerle paylaşabilirsiniz.| [iOS Mağazası bağlantısı](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | Word belgelerinin tabletinizdeki ve telefonunuzdaki her zamankinden daha iyi görünmesini sağlayın. Belge düzenlerken veya oluşturduğunuz zaman, bilgisayarlar, Mac 'ler, tabletler ve telefonlar arasında tam olarak istediğiniz gibi görünecektir. Sezgisel bir dokunma deneyimiyle birlikte tanıdık bir Office görünümü ile birlikte çalışır durumda ve ücretsiz olarak çalışmaya başlayabilirsiniz.<p><p>Bu uygulama, Android ve iOS için çok kimlikli bir uygulama olarak kullanılabilir. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.microsoft.office.word),<br>[iOS Mağazası bağlantısı](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Microsoft çalışma klasörleri**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | Bireysel çalışanların dosyalarına, çalışma klasörleri, bir Windows Server özelliği kullanarak şirket ortamının içindeki ve dışından güvenli bir şekilde erişmesini sağlar. | [iOS Mağazası bağlantısı](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
+| **Microsoft beyaz tahta**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | Microsoft beyaz tahta uygulaması, ekiplerin bulut aracılığıyla görsel olarak etkili, oluşturabileceğiniz ve işbirliği yapabildiği bir serbest biçim akıllı tuvali sağlar.  Tüm ekip üyelerinin, nerede olurlarsa olsun, doğrudan tuvalde gerçek zamanlı olarak düzenleme ve yorum yapmasına izin vererek ekiple çalışmayı geliştirir. Tüm çalışmanız bulutta güvenli kalır ve herhangi bir cihazdan yedekleme yapmaya hazırlanın. | [iOS Mağazası bağlantısı](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yayımlamayı**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | Kurumsal siloları kesin ve Yammer ile ekip işbirliğini kolaylaştırma. Kuruluşunuzdaki doğru kişilere bağlanın, takımlar genelinde bilgi paylaşın ve arayın, daha fazlasını yapabilmeniz için projeler ve fikirler etrafında düzenleme yapın. | [Android mağaza bağlantısı](https://play.google.com/store/apps/details?id=com.yammer.v1),<br>[iOS Mağazası bağlantısı](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>İş ortağı uygulamaları 
