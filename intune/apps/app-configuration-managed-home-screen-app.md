@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47cee2c26960775d268b317845c118e99b85fe9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507584"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813491"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise için Microsoft tarafından yönetilen giriş ekranı uygulamasını yapılandırma
 
@@ -60,25 +60,15 @@ Aşağıdaki tablo, yönetilen giriş ekranı kullanılabilir yapılandırma ana
 | Yapılandırma anahtarı | Değer Türü | Varsayılan Değer | Description |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Izgara boyutunu ayarla | dize | Otomatik | Yönetilen giriş ekranında, uygulamaların kılavuz boyutunu ayarlamanızı sağlar. Izgara boyutunu tanımlamak için uygulama satır ve sütun sayısını aşağıdaki biçimde ayarlayabilirsiniz `columns;rows`. Kılavuz boyutunu tanımlarsanız, giriş ekranındaki bir satırda gösterilecek en fazla uygulama sayısı, ayarladığınız satır sayısı ve giriş ekranındaki bir sütunda gösterilecek en fazla uygulama sayısı, ayarladığınız sütun sayısı olacak şekilde değişir. |
-| Ekran üstbilgisini etkinleştir | Bool | DEĞERI | Yönetilen giriş ekranının, akış veya akış kartları gibi sunduğu farklı görünümler için üst üstbilgiyi sağlar. Bu ayarı etkinleştirirseniz, cihaz kullanıcıları üst bilgiyi görür. |
-| Cihaz durum çubuğunu etkinleştir | Bool | DEĞERI | Ana ekranda durum çubuğunu (WiFi ve vb. gibi geçerli bağlantıları görüntüleyen üst çubuk) sunar. Bu yapılandırma anahtarını etkinleştirirseniz, son kullanıcı bağlantıları ve etkin uygulamaları temsil eden durum çubuklarında görüntülenen simgeleri görebilir. |
 | Bildirimleri etkinleştir rozet | Bool | YANLÝÞ | Uygulamadaki yeni bildirimlerin sayısını gösteren uygulama simgeleri için bildirim rozetini sunar. Bu ayarı etkinleştirirseniz, son kullanıcılar okunmamış bildirimlere sahip uygulamalarda bildirim rozetlerini görür. Bu yapılandırma anahtarını devre dışı tutarsanız, Son Kullanıcı okunmamış bildirimlere sahip olabilecek uygulamalar için herhangi bir bildirim görmeyecektir. |
-| Giriş ekranını kilitle | Bool | DEĞERI | Son kullanıcının, ana ekranda uygulama simgeleri etrafında hareket etme yeteneğini kaldırır. Bu yapılandırma anahtarını etkinleştirirseniz, giriş ekranındaki uygulama simgeleri kilitlenir ve Son Kullanıcı, ana ekranın farklı kılavuz konumlarına sürükleyip bırakamaz. @No__t-0 ' a açıldıysa, son kullanıcılar yönetilen giriş ekranındaki uygulama ve Web bağlantısı simgeleri etrafında hareket edebilir.  |
+| Giriş ekranını kilitle | Bool | DEĞERI | Son kullanıcının, ana ekranda uygulama simgeleri etrafında hareket etme yeteneğini kaldırır. Bu yapılandırma anahtarını etkinleştirirseniz, giriş ekranındaki uygulama simgeleri kilitlenir ve Son Kullanıcı, ana ekranın farklı kılavuz konumlarına sürükleyip bırakamaz. `false`açıldıysa, son kullanıcılar yönetilen giriş ekranındaki uygulama ve Web bağlantısı simgeleri etrafında hareket edebilir.  |
 | Cihaz duvar kağıdını ayarla | dize | Varsayılanını | Duvar kağıdı olarak ayarlamak istediğiniz görüntünün URL 'sini girerek tercih ettiğiniz bir duvar kağıdını ayarlamanıza olanak sağlar. |
 | Uygulama simge boyutunu ayarla | integer | 2 | Ana ekranda görüntülenecek uygulamalar için simge boyutunu ayarlamanıza olanak sağlar. Bu yapılandırmada, farklı boyutlar (en küçük), 1 (küçük), 2 (normal), 3 (büyük) ve 4 (en büyük) için aşağıdaki değerleri seçebilirsiniz. |
 | Uygulama klasörü simgesini ayarla | integer | 0 | Ana ekranda uygulama klasörlerinin görünümünü tanımlamanızı sağlar. Şu değerlerden görünümü seçebilirsiniz: koyu kare (0);   Koyu Daire (1); Açık kare (2); Açık daire (3). |
-| Hareketleri etkinleştir | Bool | YANLÝÞ | Son kullanıcının çekme ve aşağı çekme gibi farklı hareketlere eylem atama yeteneğini etkinleştirin. Bu yapılandırma anahtarını devre dışı bırakırsanız, son kullanıcılar yalnızca ikinci bir sayfa varsa ve giriş sayfasına geri döndüğünüzde yalnızca sağa çekme işlemi yapabilir. |
-| Dikey kaydırmayı etkinleştir | Bool | YANLÝÞ | Yönetilen giriş ekranında dikey kaydırmaya izin vermez. Bu yapılandırma anahtarını etkinleştirirseniz, Son Kullanıcı yatay olarak kaydırarak değil, yalnızca dikey olarak farklı sayfalara gidebilecektir. |
-| Ana ekran temasını ayarla | dize | Theme. Light. Blue | Farklı renklerde, önceden tanımlı Temalar kümesinden giriş ekranının temasını seçmenizi sağlar. Aşağıdaki biçimde dize değerini girerek aşağıdaki temaları seçebilirsiniz.   Theme. Light. yeşil. Koyu bir tema için koyu ile değiştirilebilir ve yeşil, sarı, pembe, kırmızı, turuncu ve mor bir şekilde değiştirilebilir. |
-| Dock 'ı etkinleştir | Bool | YANLÝÞ | Tüm yüklü uygulamalar için, ana ekranın en altında bulunan, kalıcı uygulamalar görüntülenirken ve giriş noktasıyla birlikte uygulama yerleştirme bölümünü sunar. Bu yapılandırma anahtarını etkinleştirirseniz, Son Kullanıcı dock 'taki uygulamalara erişebilir ve ayrıca tüm uygulama bölümüne erişerek, izin verilenler listesinde olup olmadığına bakılmaksızın cihazlarda yüklü tüm uygulamaların listesine gidebilirsiniz. |
 | Ekran yönünü ayarla | integer | 1 | Giriş ekranının yönünü dikey moda, yatay moda ayarlamanıza veya otomatik olarak döndürmeye izin verir. Yönü 1 (dikey mod için), 2 (Yatay mod için), 3 (Oto döndürme için) değerini girerek ayarlayabilirsiniz. |
-| Giriş ekranı akışını etkinleştir | Bool | YANLÝÞ | Giriş ekranının sol tarafında görünen ana ekran akışını mümkün bir şekilde sunar. Bu akış haber, takvim, sık kullanılan kullanıcı uygulamaları ve Cortana sesli yardım kartı vb. gibi farklı içerik türlerini görüntüler. Bunu etkinleştirirseniz, son kullanıcı giriş ekranında sola kaydırarak akışa gidebilecektir. |
-| Genel Bakış modunu etkinleştir | Bool | YANLÝÞ | Son kullanıcıların, varsayılan ekrandan doğrudan çekerek erişilebilen ana ekranda farklı sayfalar eklemesini veya kaldırmasına olanak sağlar. Bu ayarı etkinleştirirseniz, Son Kullanıcı ana sayfanın varsayılan sayfasının sağına disk belleğine ekleyebilecektir, ayrıca varsayılan sayfayı değiştirebilir ve ayrıca yönetilen giriş ekranındaki ayarlara da erişebilecektir. |
 | Cihaz telemetrisini etkinleştir | Bool | YANLÝÞ | Yönetilen giriş ekranı için yakalanan tüm Telemetriyi sunar. Bu ayarı etkinleştirirseniz, Microsoft, belirli bir uygulamanın bu cihazda başlatılma sayısı gibi cihaz kullanımı telemetrisini yakalayabilir. |
 | İzin verilen uygulamaları ayarla | Paketleme Learray | YANLÝÞ | , Cihazda yüklü uygulamalar arasından giriş ekranında görünür olan uygulama kümesini tanımlamanızı sağlar. Uygulamaları, görünür hale getirmek istediğiniz uygulamaların uygulama paketi adını girerek tanımlayabilirsiniz, örneğin com. Microsoft. emmx, ayarları giriş ekranında erişilebilir hale getirir. Bu bölümde izin verilen uygulamaların, ana ekranda görünür olması için cihazda zaten yüklü olması gerekir. |
 | Sabitlenmiş Web bağlantıları ayarla | Paketleme Learray | YANLÝÞ | Web sitelerini giriş ekranında hızlı başlatma simgeleri olarak sabitetmenize olanak tanır. Bu yapılandırmayla, URL 'YI tanımlayabilir ve son kullanıcının tarayıcıda tek bir dokunmayla başlatması için giriş ekranına ekleyebilirsiniz. |
-| Arama çubuğunu etkinleştir | Bool | YANLÝÞ | Ana ekranda arama çubuğunu sunar. Bu ayarı etkinleştirirseniz, cihazın kullanıcıları giriş ekranında, Web üzerinde arama yapmak istedikleri her şeyi girebilecekleri arama çubuğunu görür. |
-| Ayarları uygulamayı devre dışı bırak | Bool | YANLÝÞ | Yönetilen giriş ekranının ayarlar sayfasını devre dışı bırakır. Bunu devre dışı bırakırsanız, cihazın son kullanıcısı yönetilen giriş ekranının ayarlarına erişemez. |
 | Ekran koruyucuyu etkinleştir | Bool | YANLÝÞ | Ekran koruyucu modunu etkinleştirmek için. True olarak ayarlanırsa **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**ve **media_detect_screen_saver**yapılandırabilirsiniz. |
 | Ekran koruyucu görüntüsü | dize |   | Ekran koruyucu görüntüsünün URL 'sini ayarlayın. Hiçbir URL ayarlanmamışsa, ekran koruyucusu etkinleştirildiğinde cihazlar varsayılan ekran koruyucu görüntüsünü gösterir. Varsayılan görüntüde, yönetilen giriş ekranı uygulaması simgesi gösterilir.  |
 | Ekran koruyucunun zamanı gösterme | integer | 0 | Cihazın ekran koruyucu modu sırasında ekran koruyucuyu görüntüleyeceği süre miktarını saniye cinsinden ayarlama seçeneği sunar. 0 olarak ayarlanırsa, ekran koruyucusu cihaz etkin hale gelene kadar ekran koruyucu modunda süresiz olarak görünür.  |
@@ -116,18 +106,6 @@ Aşağıda, tüm kullanılabilir yapılandırma anahtarlarının dahil olduğu b
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
         {
-            "key": "keep_page_header",
-            "valueBool": true
-        },
-        {
-            "key": "keep_status_bar",
-            "valueBool": true
-        },
-        {
-            "key": "show_notification_badge",
-            "valueBool": false
-        },
-        {
             "key": "lock_home_screen",
             "valueBool": true
         },
@@ -144,32 +122,8 @@ Aşağıda, tüm kullanılabilir yapılandırma anahtarlarının dahil olduğu b
             "valueInteger": 0
         },
         {
-            "key": "gesture_on",
-            "valueBool": false
-        },
-        {
-            "key": "vertical_scrolling",
-            "valueBool": false
-        },
-        {
-            "key": "theme",
-            "valueString": "Theme.Light.Blue"
-        },
-        {
-            "key": "dock_enable",
-            "valueBool": false
-        },
-        {
             "key": "screen_orientation",
             "valueInteger": 1
-        },
-        {
-            "key": "feed_enable",
-            "valueBool": false
-        },
-        {
-            "key": "allow_overview_mode",
-            "valueBool": false
         },
         {
             "key": "enable_telemetry",
@@ -204,14 +158,6 @@ Aşağıda, tüm kullanılabilir yapılandırma anahtarlarının dahil olduğu b
                     ]
                 }
             ]
-        },
-        {
-            "key": "search_bar",
-            "valueBool": false
-        },
-        {
-            "key": "hide_settings",
-            "valueBool": false
         },
         {
             "key": "show_virtual_home",

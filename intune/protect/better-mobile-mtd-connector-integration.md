@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9faf34a9b417962e412eaa730cf91cd821ff7eb6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0528ec962165f358b35afce98f58c8b9b4efe93c
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509624"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810330"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile'ı Intune ile tümleştirme
 
@@ -28,8 +28,7 @@ Better Mobile Threat Defense çözümünü Intune ile tümleştirmek için aşa�
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-> [!NOTE]
-> Aşağıdaki adımların [Better Mobile yönetim konsolunda](https://aad.bmobi.net) tamamlanması gerekir.
+Aşağıdaki adımlar [daha iyi bir mobil yönetici konsolunda](https://aad.bmobi.net) tamamlanacak ve Intune 'a kayıtlı cihazlar (cihaz uyumluluğu kullanılarak) ve kayıtlı olmayan cihazlar (uygulama koruma ilkeleri kullanılarak) Için daha Iyi bir mobil hizmete bağlantı sağlar.
 
 Better Mobile'ı Intune ile tümleştirme sürecini başlatmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
@@ -76,4 +75,5 @@ Better Mobile uygulama yetkilendirme işlemi şu şekildedir:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Daha İyi İstemci Uygulamaları Kurma](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Kayıtlı cihazlar için daha Iyi mobil uygulamalar ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Kayıtlı olmayan cihazlar için daha Iyi mobil uygulamalar ayarlama](~/protect/mtd-add-apps-unenrolled-devices.md)

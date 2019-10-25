@@ -2,10 +2,10 @@
 title: Microsoft Intune - Azure’daki Windows 8.1 uyumluluk ilkeleri | Microsoft Docs
 description: Microsoft Intune'da Windows 8.1 ve Windows Phone 8.1 cihazlarınızda uyumluluk ayarı yaparken kullanabileceğiniz tüm ayarların bulunduğu listeyi inceleyin. İşletim sistemi alt ve üst sınırı uyumluluğunu denetleyin, parola kısıtlamalarını ve uzunluğunu belirleyin, veri depolama alanında şifrelemeyi etkinleştirin ve çok daha fazlasını yapın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 322d6f1e23464f1f75cc79346d839a9ccdbd7bc7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3e074d922078a9772ca67a6ebd99948bc3e64601
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504648"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813219"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz Windows 8.1 ayarları
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Bu makalede Intune'daki Windows 8.1 cihazları için yapılandırabileceğiniz farklı uyumluluk ayarları listelenmekte ve anlatılmaktadır. Bu ayarları mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak kullanarak basit parola kullanılmasını engelleyebilir, işletim sistemi için alt ve üst sınır belirleyebilir ve çok daha fazlasını yapabilirsiniz.
 
@@ -39,47 +37,83 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 [Uyumluluk ilkesi oluşturma](create-compliance-policy.md#create-the-policy). **Platform** olarak **Windows Phone 8.1** veya **Windows 8.1 ve sonrası**'nı seçin.
 
-## <a name="device-properties"></a>Cihaz özellikleri
+## <a name="device-properties"></a>Cihaz Özellikleri
 
-- **Gerekli en düşük işletim sistemi**: izin verilen en düşük sürümü girin. Bir cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı görüntülenir. Son kullanıcı, cihazını yükseltmeyi seçip şirket kaynaklarına erişebilir.
-- **İzin verilen en yüksek işletim sistemi sürümü**: izin verilen en yüksek sürümü girin. Cihaz kurala girilenden sonraki bir işletim sistemi sürümünü kullandığında, şirket kaynaklarına erişim engellenir. Kullanıcıdan BT yöneticisine başvurması istenir. Cihaz, işletim sistemi sürümüne izin vermek için kuralı değiştirene kadar kuruluş kaynaklarına erişemez.
+### <a name="operating-system-version"></a>İşletim Sistemi Sürümü
+
+**Windows Phone 8,1 ve üzeri**
+- **Mobil cihazlar Için en düşük işletim sistemi sürümü**:  
+  İzin verilen en düşük sürümü girin. Bir cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Cihaz kullanıcısı cihazlarını yükseltmeyi seçebilir ve ardından şirket kaynaklarına erişim alabilir.
+
+- **Mobil cihazlar Için en yüksek işletim sistemi sürümü**:  
+  İzin verilen en yüksek sürümü girin. Bir cihaz, kurala girilen sürümden daha sonraki bir işletim sistemi sürümünü kullanırken, kuruluş kaynaklarına erişim engellenir. Cihaz kullanıcısına BT yöneticisine başvurması istenir. Cihaz, işletim sistemi sürümüne izin vermek için bir kural olana kadar kuruluş kaynaklarına erişemez.
+
+**Windows 8.1 ve üzeri**
+- **En düşük işletim sistemi sürümü**:  
+  İzin verilen en düşük sürümü girin. Bir cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Cihaz kullanıcısı cihazlarını yükseltmeyi seçebilir ve ardından şirket kaynaklarına erişim alabilir.
+
+- **En yüksek işletim sistemi sürümü**:  
+  İzin verilen en yüksek sürümü girin. Bir cihaz, kurala girilen sürümden daha sonraki bir işletim sistemi sürümünü kullanırken, kuruluş kaynaklarına erişim engellenir. Cihaz kullanıcısına BT yöneticisine başvurması istenir. Cihaz, işletim sistemi sürümüne izin vermek için bir kural olana kadar kuruluş kaynaklarına erişemez.
 
 Windows 8.1 bilgisayarları **3** sürümünü döndürür. Windows için işletim sistemi sürüm kuralı Windows 8.1’e ayarlanırsa, cihaz Windows 8.1’e sahip olsa bile uyumsuz olarak bildirilir.
 
-## <a name="system-security"></a>Sistem güvenliği
+## <a name="system-security"></a>Sistem Güvenliği
 
 ### <a name="password"></a>Parola
 
-- **Mobil cihazların kilidini açmak için parola gerektir**: Kullanıcıların cihazlarına erişebilmek için bir parola girmelerini **gerektir**in.
-- **Basit parolalar**: Bunu **Engelle** şeklinde ayarlayarak, kullanıcıların **1234** veya **1111** gibi basit parolalar oluşturmalarının önüne geçin. Kullanıcıların **1234** veya **1111** gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** olarak ayarlayın.
-- **Minimum parola uzunluğu**: Parolada bulunması gereken rakam veya karakter sayısı alt sınırını girin.
+- **Mobil cihazların kilidini açmak için bir parola iste**:  
+  - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
+  - **Gerektir** -kullanıcıların cihazına erişebilmeleri için önce bir parola girmesi gerekir.
 
-  Windows çalıştıran ve bir Microsoft hesabı ile erişilen cihazlarda uyumluluk ilkesi, şu durumlarda doğru değerlendirme yapamaz:
-  - En düşük parola uzunluğu sekiz karakterden fazlaysa
-  - Veya en düşük karakter kümesi sayısı ikiden fazlaysa
+- **Basit parolalar**:  
+  - **Yapılandırılmadı** (*varsayılan*)-kullanıcılar, **1234** veya **1111**gibi basit parolalar oluşturabilir.
+  - **Engelle** -kullanıcılar, **1234** veya **1111**gibi basit parolalar oluşturamaz.  
 
-- **Parola türü**: Parolanın yalnızca **Sayısal** karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından (**Alfasayısal**) mı oluşması gerektiğini seçin.
-  
-  - **Paroladaki alfasayısal olmayan karakter sayısı:** **Gerekli parola türü** **Alfasayısal** olarak ayarlandıysa, bu ayar parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtir. Dört karakter kümesi şunlardır:
+- **Minimum parola uzunluğu**:  
+  Parolanın sahip olması gereken minimum rakam veya karakter sayısını girin.
+
+  Windows çalıştıran ve bir Microsoft hesabı ile erişilen cihazlarda, aşağıdaki koşullardan biri karşılandığında uyumluluk ilkesi doğru şekilde değerlendirilemiyor:  
+  - Minimum parola uzunluğu sekiz karakterden fazla
+  - En az karakter kümesi sayısı ikiden büyük
+
+- **Parola türü**:  
+  Bir parolanın yalnızca **sayısal** karakterleri olması gerekip gerekmediğini veya sayıların ve diğer karakterlerin (**alfasayısal**) bir karışımı olması gerekip gerekmediğini seçin.
+
+  *Alfasayısal*olarak ayarlandığında, aşağıdaki ayar kullanılabilir.  
+
+  - **Paroladaki alfasayısal olmayan karakter sayısı**:  
+    *Parola türü* **alfasayısal**olarak ayarlandığında, parolanın içermesi gereken karakter kümesi sayısı alt sınırını belirtin. Seçenekler **0** ile **4** küme arasındadır ve varsayılan değer **1**' dir.
+    
+    Dört karakter kümesi şunlardır:
     - Küçük harfler
     - Büyük harfler
     - Simgeler
     - Sayılar
 
-    Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir. Bir Microsoft hesabı ile erişilen cihazlarda uyumluluk ilkesi, şu durumlarda doğru değerlendirme yapamaz:
+    Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir. Microsoft hesabı ile erişilen cihazlarda, aşağıdaki koşullardan biri karşılandığında uyumluluk ilkesi doğru şekilde değerlendirilemiyor:
 
-    - En düşük parola uzunluğu sekiz karakterden fazlaysa
-    - Veya en düşük karakter kümesi sayısı ikiden fazlaysa
+    - Minimum parola uzunluğu sekiz karakterden fazla
+    - En az karakter kümesi sayısı ikiden büyük
 
-- **Parola istenmeden önce geçmesi gereken işlem yapılmayan dakika sayısı**: Kullanıcıdan, parolasını yeniden girmesi istenmeden önce boşta geçen süreyi girin.
-- **Parola kullanım süresi (gün)** : Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin.
-- **Yeniden kullanılmasını önleyen önceki parola sayısı**: daha önce kullanılan parolaların sayısını girin.
+- **Parola istenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**:  
+  Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi girin.
+
+- **Parola kullanım süresi (gün olarak)** :  
+  Parolanın süresi dolmadan önce geçecek gün sayısını seçin ve kullanıcıların yeni bir tane oluşturması gerekir.
+
+- **Yeniden kullanılması önlenecek önceki parola sayısı**:  
+  Daha önce kullanılan kaç parolanın kullanılamayacağını belirtir.
 
 ### <a name="encryption"></a>Şifreleme
 
-- **Mobil cihazda şifreleme gerektir:** Cihazın veri deposu kaynaklarına bağlanmak için şifrelenmesini **gerektir**in.
+- **Cihazda veri deposunun şifrelenmesi**:  
+  - **Yapılandırılmadı** (*varsayılan*)
+  - **Gerektir** -kullanım, cihazlarınızda veri depolamayı şifrelemek için *gerektir* .
 
-Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
+
+<!-- not on phone   
+- **Require encryption on mobile device**: **Require** the device to be encrypted to connect to data storage resources.
+--> 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b61281b0e82bcb839efdc31726d398eea08c364f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502195"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810230"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Intune ile mobil uç nokta güvenliği tümleştirmesini ayarlama
 [Önkoşulları](lookout-mobile-threat-defense-connector.md#prerequisites)karşılayan bir ortam sayesinde, mobil uç nokta güvenliğini Intune ile tümleştirebilirsiniz. Bu makaledeki bilgiler, Intune ile kullanım için, tümleştirme ayarlama ve önemli ayarları yapılandırma konusunda size kılavuzluk eder.  
@@ -69,13 +69,16 @@ Mobil uç nokta güvenlik aboneliği tümleştirmesini Intune ile etkinleştirme
    Bu bilgileri topladıktan sonra, BT desteği ile iletişime geçin (e-posta: enterprisesupport@lookout.com). GEVME desteği, verdiğiniz bilgileri kullanarak aboneliğinizi eklemek ve GEVME kurumsal hesabınızı oluşturmak için birincil Kişinizden çalışacaktır.  
 
 ## <a name="configure-your-lookout-subscription"></a>Gevbir abonelik aboneliğinizi yapılandırma  
+
+Aşağıdaki adımlar, kuruluş yönetim konsolunda tamamlanacaktır ve Intune 'a kayıtlı cihazlar (cihaz uyumluluğu aracılığıyla) **ve** kayıtlı olmayan cihazlar (uygulama koruma ilkeleri aracılığıyla) için bakım hizmetine bir bağlantı etkinleştirecektir.
+
 Gevrme desteği, gevþsiz kurumsal hesabınızı oluşturduktan sonra, bir sorun açma desteği, oturum açma URL 'sine bir bağlantı ile şirketiniz için birincil ilgili kişiye bir e-posta gönderir: https://aad.lookout.com/les?action=consent. 
 
 ### <a name="initial-sign-in"></a>İlk oturum açma  
 Gevrme MES konsolundaki ilk oturum açma, bir onay sayfası (https://aad.lookout.com/les?action=consent) ) görüntüler. Bir Azure AD Genel Yöneticisi, oturum açıp **kabul etmeniz**yeterlidir. Sonraki oturum açma, kullanıcının bu düzeyde Azure AD ayrıcalığına sahip olmasını gerektirmez. 
 
  Bir onay sayfası görüntülenir. Kaydı tamamlamak için **Kabul Et**’i seçin. 
-   @no__t-ilk kez oturum açma konsolunun @ no__t-1 ' i ilk kez oturum açma sayfasının 0ekran görüntüsü
+   GEVME konsolunun ilk kez oturum açma sayfasının ekran görüntüsünü ![](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
 Kabul edip onay aldığınızda, Gevyorla konsoluna yönlendirilirsiniz.
 
@@ -110,26 +113,13 @@ Aşağıdaki yordamda, daha önce Azure AD 'de Gevyorma dağıtımınızı test 
 6. Bağlayıcının yapılandırmasını tamamladıktan sonra **bağlayıcı oluştur** ' u seçin. Daha sonra, sonuçlarınızdan memnun kaldığınızda, kaydı ek kullanıcı gruplarına genişletebilirsiniz.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Intune 'U bir mobil tehdit savunma sağlayıcısı olarak GEVME kullanacak şekilde yapılandırma
-GEVMES yapılandırıldıktan sonra Intune 'da GEVME bağlantısı ayarlamanız gerekir.  
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-
-2. **Cihaz uyumluluk** > **Mobil tehdit savunması** ' na gidin ve **Ekle**' yi seçin.
-
-3. *Bağlayıcı Ekle* bölmesinde açılan eklentiyi kullanın ve **Lookout for Work**' ı seçin.  
-
-4. **Oluştur**’u seçin. Bağlayıcı, Gevlanlarla iletişim kurarak *bağlayıcı ayarları* kullanılabilir hale gelir.
-
-5. **IOS cihazları Için uygulama eşitlemesini** **Açık**olarak ayarlayın. 
-
-6. Yapılandırmayı gerçekleştirmek için **Kaydet** ' i seçin.  Intune ve Gevleği artık tümleşiktir ve kullanıma hazırdır.
-
+GEVMES yapılandırıldıktan sonra [Intune 'Da GEVME](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable)bağlantısı ayarlamanız gerekir.  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Gevmes uçlarınızdaki ek ayarlar
 Aşağıda, GEVME MES konsolunda yapılandırabileceğiniz ek ayarlar verilmiştir.  
 
 ### <a name="configure-enrollment-settings"></a>Kayıt ayarlarını yapılandırma
-GEVME MES konsolunda **sistem** >  @no__t**kayıt ayarlarını yönet**-3**kayıt ayarları**' nı seçin.  
+Gevmes Uçpenceresinde **sistem** > kayıt > **kayıt ayarlarını** **Yönet** ' i seçin.  
 
 - **Bağlantısı kesilmiş durum**için, bağlı olmayan bir cihazın bağlantısı kesik olarak işaretlenmeden önce geçecek gün sayısını belirtin.  
 
@@ -145,8 +135,6 @@ Tehditler hakkında e-posta uyarıları almak için, uyarı almak zorunda olan k
 - Artık e-posta bildirimleri almak istemiyorsanız, bildirimleri **kapalı** olarak ayarlayın ve değişikliklerinizi kaydedin.
 
   ![Kullanıcı hesabının görüntülendiği Tercihler sayfasının ekran görüntüsü](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
-
-
 
 ## <a name="configure-threat-classifications"></a>Tehdit sınıflandırmalarını yapılandırma  
 GEVME mobil uç nokta güvenliği, çeşitli türlerdeki mobil tehditleri sınıflandırır. GEVME tehdit sınıflandırmalarının kendileriyle ilişkili varsayılan risk düzeyleri vardır. Risk düzeyleri, Şirket gereksinimlerinize uyacak şekilde herhangi bir zamanda değiştirilebilir.
@@ -167,4 +155,5 @@ Cihaza dağıtılan *Lookout for Work* uygulamasının nasıl alınacağı hakk�
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Lookout uygulamalarını ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Kayıtlı cihazlar için gevan uygulamaları ayarlama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Kayıtlı olmayan cihazlar için GEVME uygulamalarını ayarlama](~/protect/mtd-add-apps-unenrolled-devices.md)
