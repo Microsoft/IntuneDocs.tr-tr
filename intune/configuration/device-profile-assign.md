@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550811"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892627"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
 
@@ -69,19 +69,28 @@ Windows 10 cihazlarında, profil yalnızca belirli bir işletim sistemi sürüm�
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Grupları bir profil atamasından dışlama
 
-Intune cihaz yapılandırma profilleri, grupları ilke atamasından dışlamanıza olanak tanır.
+Intune cihaz yapılandırma profilleri, ilke atamasından grupları eklemenizi ve dışlanmasını sağlar.
 
-Intune, Kullanıcı-cihaz grubu ilişkilerine bakar. Kullanıcı gruplarını dahil ederken cihaz gruplarını dışlamak, istediğiniz sonuçları vermeyebilir. Kullanıcı grubundan Kullanıcı grubu ve cihaz grubundan cihaza grup senaryolarında dışlama, dahil edilmeye göre önceliklidir.
+En iyi uygulama olarak, Kullanıcı gruplarınız için özel ilkeler oluşturun ve atayın. Ve, özel olarak cihaz gruplarınız için farklı ilkeler oluşturun ve atayın. Gruplar hakkında daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](../fundamentals/groups-add.md).
 
-Örneğin, **tüm kurumsal kullanıcılar** kullanıcı grubuna bir cihaz profili atarsınız, ancak üst **düzey yönetim personeli** Kullanıcı grubundaki üyeleri dışlayabilirsiniz. Her iki grup da Kullanıcı grupları olduğundan, **tüm şirket kullanıcıları** dahil et grubunun üyesi olsalar dahi, üst **düzey yönetim personelinin** tüm üyeleri ilkeden çıkarılır.
+İlkelerinizi atadığınızda, grupları dahil etmek ve dışlamak için aşağıdaki tabloyu kullanın. Onay işareti, atamanın desteklendiği anlamına gelir:
 
-Ekleme, Kullanıcı grubundan cihaza grup veya cihaz grubundan Kullanıcı grubu gibi karma grupları kullanırken dışlamaya göre önceliklidir.
+![Desteklenen seçenekler bir profil atamasında grupları içerir veya hariç tutar](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-Örneğin, kuruluşunuzdaki tüm kullanıcılara bilgi noktası cihazları dışında bir cihaz profili atamak istiyorsunuz. Bunun için **Tüm Kullanıcılar** grubunu dahil edip **Tüm Cihazlar** grubunu dışlıyorsunuz. Bu durumda, cihazı **Tüm Cihazlar** grubunun parçası olan kullanıcılar bile dahil olmak üzere tüm kullanıcılarınız ve onların cihazları bu ilkeyi alır.
+### <a name="what-you-should-know"></a>Bilmeniz gerekenler
 
-Dışlama yalnızca doğrudan gruba üye olanları dikkate alır. Kullanıcıyla ilişkilendirilen cihazları dahil etmez. Ancak, bir kullanıcısı olmayan cihazlar, ilke almaz. Bu davranış, kullanıcıları olmayan cihazların **tüm kullanıcılar** grubuyla ilişkisi olmadığı için oluşur.
+- Dışlama, aşağıdaki aynı grup türü senaryolarına dahil edilmeye göre önceliklidir:
 
-**Tüm Cihazlar** grubunu dahil edip **Tüm Kullanıcılar** grubunu dışlarsanız ilkeyi tüm gruplar alacaktır. Bu senaryodaki amaç, ilişkili kullanıcısı olan cihazları bu ilkeden dışlamaktır. Ancak cihazlar dışlanmaz çünkü dışlama, yalnızca grupların doğrudan üyesi olanları hesaba katar.
+  - Kullanıcı gruplarını dahil etme ve Kullanıcı gruplarını hariç tutma
+  - Cihaz gruplarını ekleme ve cihaz grubunu hariç tutma
+
+  Örneğin, **tüm kurumsal kullanıcılar** kullanıcı grubuna bir cihaz profili atarsınız, ancak üst **düzey yönetim personeli** Kullanıcı grubundaki üyeleri dışlayabilirsiniz. Her iki grup da Kullanıcı grupları olduğundan, üst **düzey yönetim personeli** hariç **tüm kurumsal kullanıcılar** ilkeyi alır.
+
+- Intune, Kullanıcı-cihaz grubu ilişkilerini değerlendirmez. Karışık gruplara ilke atarsanız, sonuçlar istediğiniz veya beklediğiniz gibi olabilir.
+
+  Örneğin, **tüm kullanıcılar** kullanıcı grubuna bir cihaz profili atarsınız, ancak **tüm kişisel cihazlar** cihaz grubunu dışlayamazsınız. Bu karma Grup İlkesi atamasında, **tüm kullanıcılar** ilkeyi alır. Dışlama uygulanmaz.
+
+  Sonuç olarak, karışık gruplara ilke atanması önerilmez.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

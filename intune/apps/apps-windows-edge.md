@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585862"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892567"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune Windows 10 için Microsoft Edge ekleyin
 
@@ -94,7 +94,7 @@ Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygu
 
 ## <a name="troubleshooting"></a>Sorun giderme
 **Windows 10 için Microsoft Edge sürüm 77 ve üzeri:**<br>
-Intune, Windows 10 cihazlarına atanan Microsoft Edge yükleyicisini indirmek ve dağıtmak için Intune yönetim uzantısını kullanır ve ardından Microsoft Edge tarayıcısını indiren ve yükleyen Microsoft Edge yükleyicisi ile dağıtım ayarlarını iletişim kurar doğrudan CDN 'den. [Intune yönetim uzantısının ön koşullarını](~/apps/intune-management-extension.md#prerequisites)ve ağ yapılandırmanızın Windows 10 cihazlarının bu konumlara erişmesine izin verdiğinden emin olmak Için Azure Update HIZMETINE ve CDN 'ye erişme bölümünde özetlenen en iyi yöntemleri başvuru.
+Intune, Windows 10 cihazlarına atanan Microsoft Edge yükleyicisini indirmek ve dağıtmak için Intune yönetim uzantısını kullanır ve ardından Microsoft Edge tarayıcısını indiren ve yükleyen Microsoft Edge yükleyicisi ile dağıtım ayarlarını iletişim kurar doğrudan CDN 'den. [Intune yönetim uzantısının ön koşullarını](~/apps/intune-management-extension.md#prerequisites)ve ağ yapılandırmanızın Windows 10 cihazlarının bu konumlara erişmesine izin verdiğinden emin olmak Için Azure Update HIZMETINE ve CDN 'ye erişme bölümünde özetlenen en iyi yöntemleri başvuru. Ayrıca, tarayıcıyı yüklemek üzere bir CDN 'den yükleme dosyalarına erişim izni vermek için Windows Update uç noktalara erişime izin vermeniz gerekir. Daha fazla bilgi için, bkz. [Windows 10, sürüm 1809 – Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#windows-update) ve [Microsoft Intune ağ uç noktaları](~/fundamentals/intune-endpoints.md)Için bağlantı uç noktalarını yönetme.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - [Gruplara uygulama ekleme](~/apps/apps-deploy.md)

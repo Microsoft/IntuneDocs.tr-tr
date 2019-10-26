@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdb3623a61c16f69773703b8acdbb8f7c02b4ac4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e648d2eff8fd95cd3c995e9cce1bd0c9dfff32da
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504752"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889514"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Intune ile Windows holographic ve HoloLens cihazlarda farklı cihaz yönetimi özelliklerini yönetme ve kullanma
 
@@ -80,7 +80,7 @@ Microsoft Intune, Windows Holographic for Business çalıştıran Microsoft Holo
 - Microsoft HoloLens için uygulama geliştirmek hakkında daha fazla bilgi edinmek için bkz. [Microsoft HoloLens için karma gerçeklik uygulamaları](https://www.microsoft.com/hololens/apps). 
 
 > [!NOTE]
-> Windows 10 Holographic for Business 1607 çalıştıran HoloLens cihazlar, İş İçin Microsoft Store’dan çevrimiçi lisanslandırılmış uygulamaları desteklemez. Daha fazla bilgi için bkz. [HoloLens’te uygulama yükleme](https://docs.microsoft.com/hololens/hololens-install-apps).
+> Windows 10 Holographic for Business 1607 çalıştıran HoloLens cihazlar, İş İçin Microsoft Store’dan çevrimiçi lisanslandırılmış uygulamaları desteklemez. Daha fazla bilgi için bkz. [HoloLens’te uygulama yükleme](/hololens/holographic-store-apps).
 
 ## <a name="device-actions"></a>Cihaz eylemleri
 Intune’da BT yöneticilerinin gerek cihazda yerel olarak gerekse Azure portalında Intune yoluyla uzaktan farklı görevler yapmasına imkan veren bazı yerleşik eylemler vardır. Kullanıcılar Intune'a kayıtlı kişiye ait cihazlara Intune Şirket Portalı’ndan uzaktan komut da verebilir.

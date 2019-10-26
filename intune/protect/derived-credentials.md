@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c42e5ef50f8a5a8514bc43670fc743f42b1b2d6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 1716da820fd0d9a4b6d1bbc5024440cfb141c5a1
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585930"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889562"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Microsoft Intune ' de türetilmiş kimlik bilgilerini kullan
 
@@ -64,7 +64,7 @@ Intune, kiracı başına tek bir türetilmiş kimlik bilgisi veren destekler. In
 - **Entrust Datacard**: https://www.entrustdatacard.com/
 - **Intercede**: https://www.intercede.com/
 
-Farklı verenler kullanma hakkında önemli ayrıntılar için, verenler Son Kullanıcı iş akışı dahil olmak üzere bu veren için kılavuzu gözden geçirin. Daha fazla bilgi için bu makaledeki [türetilmiş kimlik bilgilerini planlayın](#plan-for-derived-credentials) bölümüne bakın.
+Farklı verenler kullanma hakkında önemli ayrıntılar için bu veren için kılavuzu gözden geçirin<!-- , including the issuers end-user workflow-->. Daha fazla bilgi için bu makaledeki [türetilmiş kimlik bilgilerini planlayın](#plan-for-derived-credentials) bölümüne bakın.
 
 > [!IMPORTANT]  
 > Kiracıdan türetilmiş bir kimlik bilgisi veren silerseniz, bu veren aracılığıyla ayarlanan türetilmiş kimlik bilgileri artık çalışmaz.  
@@ -101,11 +101,14 @@ Genel bilgiler:
 
 ### <a name="2-review-the-end-user-workflow-for-your-chosen-issuer"></a>2) seçtiğiniz veren için son kullanıcı iş akışını gözden geçirin
 
-Aşağıda, desteklenen her iş ortağı için önemli noktalar ve bu veren son kullanıcı iş akışının bağlantıları verilmiştir.  Intune ilkelerinizin ve yapılandırmalarının, Kullanıcı ve cihazların, bu verenden türetilmiş bir kimlik bilgisi kaydını başarıyla tamamlamasını engellemek için bu bilgileri öğrenmiş olun.
+Desteklenen her iş ortağı için önemli konular aşağıda verilmiştir<!--  , and links to that issuers end-user workflow -->.  Intune ilkelerinizin ve yapılandırmalarının, Kullanıcı ve cihazların, bu verenden türetilmiş bir kimlik bilgisi kaydını başarıyla tamamlamasını engellemek için bu bilgileri öğrenmiş olun.
 
 #### <a name="disa-purebred"></a>DıŞA purebred
 
-[Dışa Popurebred için Kullanıcı iş akışını](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred)gözden geçirin. Bu iş akışı için temel gereksinimler şunlardır:  
+Son Kullanıcı iş akışını ve anahtar gereksinimlerini anlayın:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
+-->
 
 - Kullanıcıların, verenin kimliğini doğrulamak için akıllı kartlarını kullanabilecekleri bir bilgisayar veya bilgi noktası erişimine ihtiyacı vardır. 
 
@@ -120,8 +123,11 @@ Aşağıda, desteklenen her iş ortağı için önemli noktalar ve bu veren son 
 DıŞA ınpurebred uygulamasını alma ve yapılandırma hakkında bilgi için bu makalenin ilerleyen kısımlarında bulunan [dışa ınpurebred uygulamasını dağıtma](#deploy-the-disa-purebred-app) bölümüne bakın.  
 
 #### <a name="entrust-datacard"></a>Entrust Datacard  
-[Entrust Datacard için Kullanıcı iş akışını](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust)gözden geçirin. Bu iş akışı için temel gereksinimler şunlardır: 
 
+Son Kullanıcı iş akışını ve anahtar gereksinimlerini anlayın:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
+--> 
 - Kullanıcıların, verenin kimliğini doğrulamak için akıllı kartlarını kullanabilecekleri bir bilgisayar veya bilgi noktası erişimine ihtiyacı vardır. 
 
 - Türetilmiş bir kimlik bilgisine kaydedilecek cihazların Intune Şirket Portalı uygulamasını yüklemeleri gerekir.
@@ -129,8 +135,11 @@ DıŞA ınpurebred uygulamasını alma ve yapılandırma hakkında bilgi için b
 - Mobil cihazdan türetilmiş kimlik bilgisi isteğine kimlik doğrulama isteğini bağlayan bir QR kodunu taramak için bir cihaz Kamerası kullanın.
 
 #### <a name="intercede"></a>Intercede
-[Intercede için Kullanıcı iş akışını](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede)gözden geçirin. Bu iş akışı için temel gereksinimler şunlardır: 
 
+Son Kullanıcı iş akışını ve anahtar gereksinimlerini anlayın:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
+-->
 - Kullanıcıların, verenin kimliğini doğrulamak için akıllı kartlarını kullanabilecekleri bir bilgisayar veya bilgi noktası erişimine ihtiyacı vardır. 
 
 - Türetilmiş bir kimlik bilgisine kaydedilecek cihazların Intune Şirket Portalı uygulamasını yüklemeleri gerekir.

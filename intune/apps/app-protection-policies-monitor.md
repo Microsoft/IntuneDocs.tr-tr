@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507446"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889589"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetl
 - **Son eşitleme**: uygulama Intune ile son kez eşitlendiğinde. 
 
 >[!NOTE]
-> **Son eşitleme** sütunu, hem konsol içi Kullanıcı durumu raporunda hem de uygulama koruma ilkesi [verilebilir. csv raporunda](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv)aynı değeri temsil eder. Bu fark, iki rapordaki değer arasındaki eşitlemede küçük bir gecikme olur. 
+> **Son eşitleme** sütunu, hem konsol içi Kullanıcı durumu raporunda hem de uygulama koruma ilkesi [verilebilir. csv raporunda](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities)aynı değeri temsil eder. Bu fark, iki rapordaki değer arasındaki eşitlemede küçük bir gecikme olur. 
 >
 > Son eşitlemede başvurulan süre, Intune 'un uygulama örneğini son gördüğünüz. Bir Kullanıcı bir uygulamayı başlattığında, en son ne zaman iade edilene bağlı olarak bu başlatma zamanında Intune Uygulama Koruması hizmetine bildirimde bulunabilir. [Uygulama koruma ilkesi için yeniden deneme aralığı zamanlarını](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)inceleyin. Bir Kullanıcı bu uygulamayı son iade aralığında (genellikle etkin kullanım için 30 dakika) kullanmadıysanız ve uygulamayı başlamışsa:
 >

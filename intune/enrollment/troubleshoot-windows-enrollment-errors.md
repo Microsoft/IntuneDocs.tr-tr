@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503097"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892533"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -180,7 +180,7 @@ Hata: "yazılım yüklenemiyor, 0x80cf4017."
 **Neden:** İstemci yazılımı güncel değil.
 
 #### <a name="resolution"></a>Çözüm
-1. [@No__t-1](https://admin.manage.microsoft.com)' de oturum açın.    
+1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)oturum açın.    
 2. **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
 3. Yükleme paketini kaydedin ve ardından istemci yazılımını yükleme. 
 
@@ -192,7 +192,7 @@ Hata: "hesap sertifikası geçerli değil ve zaman aşımına ermeyebilir, 0x80c
 **Neden:** İstemci yazılımı güncel değil.
 
 #### <a name="resolution"></a>Çözüm
-1. [@No__t-1](https://admin.manage.microsoft.com)' de oturum açın.    
+1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)oturum açın.    
 2. **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
 3. Yükleme paketini kaydedin ve ardından istemci yazılımını yükleme.    
 
@@ -214,7 +214,7 @@ Bu sorunu Intune ve Configuration Manager ile karma MDM 'de onarmak için aşağ
 1. Configuration Manager konsolunu açın.    
 2. **Yönetim**' i ve ardından **Cloud Services**' yi seçin.    
 3. **Microsoft Intune aboneliği**' ne sağ tıklayın ve ardından **Windows > platformları Yapılandır**' ı seçin.    
-4. **Windows kaydını etkinleştir** >  @no__t**Uygula**-3**Tamam ' ı**işaretleyin.  
+4. **Windows kaydını etkinleştir** > **Tamam** > **Uygula** ' yı işaretleyin.  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Toplu kayıt sırasında bir kurulum hatası oluştu.
@@ -336,7 +336,7 @@ Bu sorun, genellikle cihaz ilk oturum açma ekranında zaman aşımına uğrarsa
 
 #### <a name="resolution"></a>Çözüm
 
-1. @No__t-1**cihaz kaydı** > **Windows kayıt** > **cihazındaki** **Intune**'a gidin.
+1. **Windows kayıt** > **cihazları** > **Intune** >  **cihaz kaydı** ' na gidin.
 2. Sorunu yaşayan cihazı seçin > en sağ taraftaki üç nokta (...) simgesine tıklayın.
 3. **Kullanıcı atamasını Kaldır** ' ı seçin ve işlemin bitmesini bekleyin.
 4. OOBE 'yi yeniden denemeden önce karma Azure AD Autopilot profilinin atandığını doğrulayın.
@@ -377,7 +377,7 @@ Bu sorun genellikle Windows Autopilot cihazlarının oluşturulduğu kuruluş bi
 4. **Nesne türleri** bölmesinde, **Tamam**> **bilgisayarlar** onay kutusunu seçin.
 5. **Kullanıcıları**, **bilgisayarları**veya **grupları** seçin bölmesinde **Seçilecek nesne adlarını girin** kutusuna bağlayıcının yüklendiği bilgisayarın adını girin.
 6. Girişinizi doğrulamak için **adları denetle** ' yi seçin ve**sonra**> **Tamam** > .
-7. @No__t **-1 ' i** **temsilci olarak atamak için özel bir görev oluştur**seçeneğini belirleyin.
+7.  > **devretmek için özel bir görev oluştur** ' u seçin.
 8. Klasör onay kutusunda **yalnızca şu nesneleri** seçin ve ardından **bilgisayar nesnelerini**seçin, **Bu klasörde seçili nesneleri oluşturun**ve **Seçili nesneleri bu klasörde silin** onay kutularını işaretleyin.
 9. **İleri**'yi seçin.
 10. **İzinler**altında **tam denetim** onay kutusunu seçin. Bu eylem diğer tüm seçenekleri seçer.
@@ -390,3 +390,4 @@ Bu sorun genellikle Windows Autopilot cihazlarının oluşturulduğu kuruluş bi
 - [Microsoft Intune destek ekibi blogunu denetleyin](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Microsoft Enterprise Mobility ve Security blogunu denetleyin](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Microsoft Intune için destek alın](../fundamentals/get-support.md)
+- [Ortak yönetim kayıt hatalarını bulma](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
