@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 5d13511948d0dbfa19b3b3f1fda7faea3e4f12b3
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585000"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915754"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -180,25 +180,24 @@ Kullanıcılar, Şirket Portalı uygulaması veya Web sitesi aracılığıyla ye
 
 Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez. Aşağıdaki tabloda self servis eylemleri hakkında daha ayrıntılı bilgi verilmektedir:
 
-|  | Windows 10<sup>(3)</sup> | iOS/ıpados<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/ıpados<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Devre dışı bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir<sup>(8)</sup> | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
-| Silme | Kullanılabilir | Kullanılabilir | YANA | Kullanılabilir<sup>(7)</sup> |
-| Yeniden Adlandır<sup>(4)</sup> | Kullanılabilir | Kullanılabilir<sup>(8)</sup> | Kullanılabilir | Kullanılabilir |
+| Devre dışı bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
+| Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | YANA | Kullanılabilir<sup>(7)</sup> |
+| Yeniden Adlandır<sup>(4)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
 | Eşitleme | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
 | Uzaktan Kilitleme | Yalnızca Windows Phone | Kullanılabilir | Kullanılabilir | Kullanılabilir |
-| Geçiş kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir | YANA | Kullanılabilir<sup>(6)</sup> |
+| Geçiş kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir<sup>(8)</sup> | YANA | Kullanılabilir<sup>(6)</sup> |
 | Anahtar kurtarma | YANA | YANA | Kullanılabilir<sup>(2)</sup> | YANA |
-| Koyu mod | YANA | Kullanılabilir | YANA | YANA |
 
 <sup>(1)</sup> **devre dışı BıRAKMA** , Azure AD 'ye katılmış Windows cihazlarında her zaman engellenir.<br>
 <sup>(2)</sup> MacOS Için **anahtar kurtarma** yalnızca Web portalı aracılığıyla kullanılabilir.<br>
 <sup>(3)</sup> bir cihaz kayıt yöneticisi kaydı kullanılıyorsa tüm uzak eylemler devre dışı bırakılır.<br>
-<sup>(4)</sup> **yeniden adlandırma** yalnızca cihaz adını cihazda değil şirket portalı uygulamasında veya Web sitesinde değiştirir.<br>
-<sup>(5)</sup> MacOS cihazlarında **uzaktan silme** kullanılamaz.<br>
+<sup>(4)</sup> **yeniden adlandırma** yalnızca cihaz adını cihazda değil şirket portalı uygulamasında veya Web portalında değiştirir.<br>
+<sup>(5)</sup> Kullanıcı kayıtlı iOS cihazlarında **silme** kullanılamıyor.<br>
 <sup>(6)</sup> bazı Android ve Android kurumsal yapılandırmalarında, **geçiş kodu sıfırlama** işlemi desteklenmez. Daha fazla bilgi için bkz. [Intune 'da cihaz geçiş kodunu sıfırlama veya kaldırma](../remote-actions/device-passcode-reset.md).<br>
 <sup>(7)</sup> **devre dışı bırakma** ve **Temizleme** , ANDROID kurumsal cihaz sahibi senaryolarında (Cope, Cobo, cosu) kullanılamaz.<br> 
-<sup>(8)</sup> **devre dışı bırak** (cihazı Kaldır) ve **yeniden adlandırma** tüm kayıt türlerinde kullanılabilir. Diğer eylemler Kullanıcı kaydı için desteklenmez.<br> 
+<sup>(8)</sup> Kullanıcı tarafından kaydedilen IOS cihazlarında **geçiş kodunu sıfırlama** işlemi desteklenmez.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

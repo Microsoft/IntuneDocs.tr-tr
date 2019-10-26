@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b89de9a1eb5f3b9884d20beb6f3582370c4061fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9df7f5a34313d55b460bf6d8492b0790b1424d2f
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504193"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923376"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
 
@@ -80,7 +80,7 @@ Aşağıdaki güvenlik temeli örnekleri Intune ile kullanılabilir. Her bir tab
 
 - **Microsoft Defender ATP temeli**  
   *(Bu temeli kullanmak için ortamınızın [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)'nı kullanmaya yönelik önkoşulları karşılaması gerekir)* .
-  - [Önizleme: Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)  
+  - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)  
 
   > [!NOTE]
   > Microsoft Defender ATP güvenlik temeli fiziksel cihazlar için iyileştirildi ve şu anda sanal makinelerde (VM) veya VDı uç noktalarında kullanılması önerilmez. Belirli taban çizgisi ayarları, sanallaştırılmış ortamlarda uzak etkileşimli oturumları etkileyebilir.  Daha fazla bilgi için bkz. Windows belgelerindeki [Microsoft Defender ATP güvenlik temeliyle uyumluluğu artırma](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) .

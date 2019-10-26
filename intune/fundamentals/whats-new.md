@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a085cbe1337ecfd104d858e78d452e8a4f66105d
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 5e88aa93e3b3e21f16271049f66bbdc4b927383b
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601566"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915790"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -56,6 +56,43 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 
 <!-- ########################## -->
 
+## <a name="week-of-october-21-2019"></a>21 Ekim 2019 haftası
+
+### <a name="microsoft-365-device-management"></a>Microsoft 365 cihaz yönetimi
+
+#### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>Microsoft 365 cihaz yönetiminde geliştirilmiş yönetim deneyimi
+
+Yenilenmiş ve kolaylaştırılmış bir yönetim deneyimi, artık aşağıdakiler de dahil olmak üzere [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)Microsoft 365 cihaz yönetimi uzman çalışma alanında genel kullanıma sunulmuştur:
+
+- **Gezinti güncelleştirildi**: özellikleri mantıksal olarak gruplandıran, Basitleştirilmiş bir 1. düzey gezinti bulacaksınız.
+- **Yeni platform filtreleri**: cihazlar ve uygulamalar sayfalarında yalnızca seçili platformun ilkelerini ve uygulamalarını gösteren tek bir platform seçebilirsiniz.
+- **Yeni bir giriş sayfası**: yeni giriş sayfasında hizmet durumunu, kiracınızın durumunu, Haberler, vb. hızlı bir şekilde görüntüleyin.
+
+Bu geliştirmeler hakkında daha fazla bilgi için Microsoft Tech Community Web sitesindeki [Enterprise Mobility + Security blog gönderisine](https://go.microsoft.com/fwlink/?linkid=2109094) bakın.
+
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>Kayıtlı olmayan cihazlara mobil tehdit savunma uygulamaları ekleme <!-- 3005337 -->
+Kullanıcıların şirket verilerini bir cihazın sistem durumuna göre engelleyebilen veya seçmeli olarak silebilecek bir Intune uygulama koruma ilkesi oluşturabilirsiniz. Cihazın sistem durumu, seçtiğiniz Mobile Threat Defense (MTD) çözümünüz kullanılarak belirlenir. Bu özellik günümüzde Intune 'A kayıtlı cihazlar cihaz uyumluluk ayarı olarak mevcuttur. Bu yeni özellik sayesinde, tehdit algılamayı bir mobil tehdit savunma satıcısından kayıtlı olmayan cihazlarda çalışacak şekilde genişlettik. Daha fazla bilgi için bkz. [Intune Ile mobil tehdit savunma uygulama koruma Ilkesi oluşturma](~/protect/mtd-app-protection-policy.md).
+
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Windows 10 ve üzeri cihazlar için yeni cihaz üretici yazılımı yapılandırma arabirimi profili <!-- 2266073  -->
+
+Windows 10 ve üzeri sürümlerde, ayarları ve özellikleri denetlemek için bir cihaz yapılandırma profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > **Profil oluştur** >  Platform için**Windows 10 ve üzeri** ). Bu güncelleştirmede, Intune 'un UEFı (BIOS) ayarlarını yönetmesine izin veren yeni bir cihaz üretici yazılımı yapılandırma arabirimi profil türü vardır. Bu özelliği tüm müşterilere kullanıma sunuyoruz ve önümüzdeki hafta sonuna kadar tamamlanmasını bekleiyoruz.
+
+Bu özellik hakkında daha fazla bilgi için, bkz. [Microsoft Intune Windows cihazlarda dfcı profillerini kullanma](../configuration/device-firmware-configuration-interface-windows.md).
+
+Uygulama hedefi:
+- Windows 10 RS5 (1809) ve desteklenen bellenim üzerinde daha yeni
+
+### <a name="device-enrollment"></a>Cihaz kaydı
+
+#### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe---3959566--"></a>Yalnızca hazır olmayan deneyim (OOBE) tarafından sağlanan cihazlarda kayıt durumu sayfasını göstermek için değiştirin <!--3959566-->
+Artık Autopilot OOBE tarafından sağlanan cihazlarda kayıt durumu sayfasını göstermeyi tercih edebilirsiniz.
+
+Yeni geçişi görmek için **ıntune** > **cihaz kaydı** > **Windows kayıt** > **kayıt durumu sayfası** ' nı seçin > yalnızca profil > **ayarları** **Oluştur** >  **kullanıma hazır deneyim (OOBE) tarafından sağlanan cihazlara sayfayı gösterin**.
+
 ## <a name="week-of-october-14-2019"></a>14 Ekim 2019 haftası
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -65,7 +102,12 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 Android kurumsal iş profili, adanmış ve tam olarak yönetilen cihazlarda kullanılabilir uygulama yüklemeleri için, uygulama yükleme durumunu ve yönetilen Google Play uygulamalarının yüklü sürümünü görüntüleyebilirsiniz. Daha fazla bilgi için bkz. [Uygulama koruma ilkelerini izleme](~/apps/app-protection-policies-monitor.md), [Android Iş profili cihazlarını Intune ile yönetme](~/enrollment/android-enterprise-overview.md) ve [uygulama türü ile yönetilen Google Play](~/apps/apps-add-android-for-work.md#managed-google-play-app-types).
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Windows 10 ve macOS için Microsoft Edge sürüm 77 ve üzeri (Genel Önizleme) <!-- 3872025, 4678761  -->
-Microsoft Edge sürüm 77 ve üzeri sürümleri artık Windows 10 ve macOS çalıştıran bilgisayarlara dağıtım için kullanılabilir. Genel Önizleme, Windows 10 için **geliştirme** ve **Beta** kanalları ve MacOS için bir **Beta** kanalı sunar. Dağıtım yalnızca Ingilizce (EN) ' dir, ancak son kullanıcılar tarayıcıdaki görüntüleme dilini **ayarlar**  > **dilleri**altında değiştirebilir. Microsoft Edge, sistem bağlamında ve benzer mimarilere (x86 IŞLETIM sisteminde x86 uygulaması ve x64 IŞLETIM sisteminde x64 uygulaması) yüklenen bir Win32 uygulamasıdır. Ayrıca, tarayıcının otomatik güncelleştirmeleri varsayılan olarak **Açık** olur ve Microsoft Edge kaldırılamaz. Daha fazla bilgi için bkz. [Windows 10 Için Microsoft Edge 'i Microsoft Intune](~/apps/apps-windows-edge.md) ve [Microsoft Edge belgelerini](https://go.microsoft.com/fwlink/?linkid=2103823)ekleme.
+Microsoft Edge sürüm 77 ve üzeri, Windows 10 ve macOS çalıştıran bilgisayarlara dağıtmak için kullanılabilir. 
+
+>[!NOTE]
+>Bu özelliğin dağıtımı, bu ay daha sonra gecikti.
+
+Genel Önizleme, Windows 10 için **geliştirme** ve **Beta** kanalları ve MacOS için bir **Beta** kanalı sunar. Dağıtım yalnızca Ingilizce (EN) ' dir, ancak son kullanıcılar tarayıcıdaki görüntüleme dilini **ayarlar**  > **dilleri**altında değiştirebilir. Microsoft Edge, sistem bağlamında ve benzer mimarilere (x86 IŞLETIM sisteminde x86 uygulaması ve x64 IŞLETIM sisteminde x64 uygulaması) yüklenen bir Win32 uygulamasıdır. Ayrıca, tarayıcının otomatik güncelleştirmeleri varsayılan olarak **Açık** olur ve Microsoft Edge kaldırılamaz. Daha fazla bilgi için bkz. [Windows 10 Için Microsoft Edge 'i Microsoft Intune](~/apps/apps-windows-edge.md) ve [Microsoft Edge belgelerini](https://go.microsoft.com/fwlink/?linkid=2103823)ekleme.
 
 #### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>Uygulama koruma Kullanıcı arabirimi ve iOS uygulama sağlama Kullanıcı arabirimine güncelleştirme <!-- 4102027, 4102029   -->
 Intune 'da uygulama koruma ilkeleri ve iOS uygulama sağlama profilleri oluşturma ve düzenleme için Kullanıcı arabirimi güncelleştirilmiştir. UI değişiklikleri şunları içerir:
@@ -157,18 +199,12 @@ Uygulama hedefi:
 Intune cihaz türü kısıtlamalarını kullanarak, Android kurumsal iş profili kaydı veya Android Cihaz Yöneticisi kaydını hangi kullanıcı cihazlarının kullanacağı belirtmek için cihazın işletim sistemi sürümünü kullanabilirsiniz.  Daha fazla bilgi için bkz. [kayıt kısıtlamalarını ayarlama](../enrollment/enrollment-restrictions-set.md).
 
 #### <a name="windows-autopilot-deployment-reports----3856172---"></a>Windows Autopilot dağıtım raporları <!-- 3856172 -->
-Yeni bir rapor, Windows Autopilot aracılığıyla dağıtılan her bir cihazın ayrıntılarına sahiptir. Daha fazla bilgi için bkz. [Autopilot Deployment Report](../enrollment/enrollment-autopilot.md#autopilot-deployments-report).
+Yeni bir rapor, Windows Autopilot aracılığıyla dağıtılan her bir cihazın ayrıntılarına sahiptir. Daha fazla bilgi için bkz. [Autopilot Deployment Report](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). Bu özelliği tüm müşterilere kullanıma sunuyoruz ve önümüzdeki hafta sonuna kadar tamamlanmasını bekleiyoruz.
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>Cihaz yönetimi
 
-#### <a name="edit-device-name-value-for-autopilot-devices---4816775----"></a>Autopilot cihazlar için cihaz adı değerini Düzenle<!-- 4816775  -->
-Azure AD 'ye katılmış Autopilot cihazları için cihaz adı değerini düzenleyebilirsiniz.  Daha fazla bilgi için bkz. [Autopilot cihaz özniteliklerini düzenleme](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
-
-#### <a name="edit-group-tag-value-for-autopilot-devices---4816775----"></a>Autopilot cihazlar için Grup etiketi değerini Düzenle<!-- 4816775  -->
-Autopilot cihazlar için Grup etiketi değerini düzenleyebilirsiniz. Daha fazla bilgi için bkz. [Autopilot cihaz özniteliklerini düzenleme](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
-
-#### <a name="new-restrictions-for-renaming-windows-devices----2640074----"></a>Windows cihazlarını yeniden adlandırmaya yönelik yeni kısıtlamalar <!-- 2640074  -->
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>Windows cihazlarını yeniden adlandırmaya yönelik yeni kısıtlamalar <!-- 3478938  -->
 Bir Windows cihazını yeniden adlandırırken yeni kuralları izlemeniz gerekir:
 - 15 karakter veya daha az (63 bayttan küçük veya buna eşit olmalı, sondaki NULL dahil değildir)
 - Null veya boş dize değil
@@ -189,7 +225,7 @@ Cihazlara genel bakış sayfasına yeni bir rapor, her bir cihaz yönetimi çöz
 #### <a name="pkcs-certificates-for-macos-----1333650---------"></a>MacOS için PKCS sertifikaları  <!-- 1333650       -->
 Artık [macOS Ile PKCS sertifikaları kullanabilirsiniz](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). MacOS için bir profil türü olarak PKCS sertifikasını seçebilir ve [özelleştirilmiş konu ve konu alternatif adı alanlarına](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)sahip kullanıcı ve cihaz sertifikalarını dağıtabilirsiniz.  
 
-MacOS için PCKS sertifikası yeni bir ayarı da destekler ve _tüm uygulamaların erişimine Izin verir_. Bu ayarla, ilişkili tüm uygulamaların, sertifikanın özel anahtarına erişmesini sağlayabilirsiniz.  Bu ayar hakkında daha fazla bilgi için https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf Apple belgelerine bakın.
+MacOS için PKCS sertifikası yeni bir ayarı da destekler, _tüm uygulamaların erişimine Izin verir_. Bu ayarla, ilişkili tüm uygulamaların, sertifikanın özel anahtarına erişmesini sağlayabilirsiniz.  Bu ayar hakkında daha fazla bilgi için https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf Apple belgelerine bakın.
 
 ####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>İOS mobil cihazlarını sertifikalarla sağlamak için türetilmiş kimlik bilgileri      <!--  1736036, 1736037, 1772050, 2777333         -->  
 Intune, [türetilmiş kimlik bilgilerinin](../protect/derived-credentials.md) bir kimlik doğrulama yöntemi ve iOS cihazları için S/MIME imzalama ve şifreleme için kullanımını destekler. Türetilmiş kimlik bilgileri, cihazlara sertifika dağıtmaya yönelik *ulusal standartlar ve Teknoloji Enstitüsü (NIST) 800-157* standardının bir uygulamasıdır.  
@@ -335,7 +371,7 @@ Uygulama hedefi:
 #### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices----4928474-----"></a>İOS denetimli cihazlarda uygulamaları gösterirken veya gizlerken iTunes App Store URL 'sindeki "iTunes" ve "Apps" kullanın <!-- 4928474   --> 
 Intune 'da, denetimli iOS cihazlarınızda uygulamaları göstermek veya gizlemek için ilkeler oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** >  platform için cihaz**oluşturma** > **iOS** > **cihaz kısıtlamaları** profil türü > **uygulamaları göster veya gizle**). 
 
-@No__t_0 gibi iTunes App Store URL 'sini girebilirsiniz. Bu güncelleştirmede, URL 'de `apps` ve `itunes` kullanılabilir:
+`https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`gibi iTunes App Store URL 'sini girebilirsiniz. Bu güncelleştirmede, URL 'de `apps` ve `itunes` kullanılabilir:
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
 
@@ -689,7 +725,7 @@ Intune API 'SI için Microsoft Graph aracılığıyla destek sağlayan Intune Po
 - Yalnızca uygulama kimlik doğrulama okuma işlemlerini destekler. 
 - Kolay kısaltılmış adları diğer ad olarak destekler.
 - PowerShell adlandırma kurallarına uyar. Özellikle, `PSCredential` parametresi (`Connect-MSGraph` cmdlet 'inde) `Credential` olarak yeniden adlandırıldı.
-- @No__t_1 cmdlet 'i kullanılırken `Content-Type` üst bilgisinin değerini el ile belirtmeyi destekler.
+- `Invoke-MSGraphRequest` cmdlet 'i kullanılırken `Content-Type` üst bilgisinin değerini el ile belirtmeyi destekler.
 
 Daha fazla bilgi için bkz. [Microsoft Intune Graph API Için POWERSHELL SDK](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune).
 

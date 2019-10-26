@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503381"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923386"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android Kurumsal ayrılmış cihazları için Intune kaydını ayarlama
 
@@ -55,7 +55,7 @@ Android Kurumsal ayrılmış cihaz yönetimini ayarlamak için aşağıdaki adı
 ### <a name="create-an-enrollment-profile"></a>Kayıt profili oluşturma
 
 > [!NOTE]
-> Belirtecin süresi dolmuşsa, onunla ilişkili profil **, @no__t-** 1**Android kaydı** > **şirkete ait adanmış cihazlarda**görüntülenmez. Hem etkin hem de etkin olmayan belirteçlerle ilişkili tüm profilleri görmek için **filtre** ' ye tıklayın ve hem "etkin" hem de "etkin olmayan" ilke durumlarının onay kutularını işaretleyin. 
+> Belirtecin süresi dolmuşsa, onunla ilişkili profil, **şirkete ait adanmış cihazlarda** > **Android kaydı** > **cihaz kaydı** 'nda gösterilmez. Hem etkin hem de etkin olmayan belirteçlerle ilişkili tüm profilleri görmek için **filtre** ' ye tıklayın ve hem "etkin" hem de "etkin olmayan" ilke durumlarının onay kutularını işaretleyin. 
 
 Ayrılmış cihazlarınızı kaydedebilmek için bir kayıt profili oluşturmalısınız. Profil oluşturulduktan sonra size bir kayıt belirteci (rastgele dize) ve QR kodu sağlar. Cihazın Android işletim sistemi ve cihazın sürümüne bağlı olarak [ayrılmış cihazı kaydetmek](#enroll-the-dedicated-devices) için belirteci veya QR kodunu kullanabilirsiniz.
 
@@ -78,7 +78,7 @@ Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsin
 4. **Dinamik üyelik kuralları** dikey penceresindeki alanları aşağıdaki gibi doldurun:
     - **Dinamik üyelik kuralı ekle**: Basit kural
     - **Cihaz eklenecek konum**: enrollmentProfileName
-    - Ortadaki kutudan **Eşleştir**’i seçin.
+    - Ortadaki kutuda **eşittir**' i seçin.
     - Son alana ise daha önce oluşturduğunuz kayıt profili adını girin.
     Dinamik üyelik kuralları hakkında daha fazla bilgi için bkz: [AAD grupları için dinamik üyelik kuralları](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). 
 5. **Sorgu ekle** > **Oluştur**’u seçin.

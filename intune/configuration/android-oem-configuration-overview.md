@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550832"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915720"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune 'de OEMConfig ile Android kurumsal cihazlarını kullanma ve yönetme
 
@@ -66,7 +66,7 @@ Cihazlarınızda OEMConfig kullanmak için aşağıdaki gereksinimlere sahip old
 
 - Intune 'A kayıtlı bir Android kurumsal cihaz.
 - OEM tarafından oluşturulan ve Google Play yüklenen bir OEMConfig uygulaması. Google Play yoksa daha fazla bilgi için OEM ile görüşün.
-- Intune Yöneticisi, **mobil uygulamalar** ve **deviceconfigurations**için rol tabanlı erişim denetimi (RBAC) izinlerine sahiptir. OEMConfig profilleri cihaz yapılandırmalarını yönetmek için yönetilen uygulama yapılandırmalarını kullandığından, bu izinler gereklidir.
+- Intune Yöneticisi, **mobil uygulamalar**için rol tabanlı erişim denetımı (RBAC) izinlerine, **cihaz yapılandırmalarına**ve **Android for Work**altında "okuma" iznine sahiptir. OEMConfig profilleri cihaz yapılandırmalarını yönetmek için yönetilen uygulama yapılandırmalarını kullandığından, bu izinler gereklidir.
 
 ## <a name="prepare-the-oemconfig-app"></a>OEMConfig uygulamasını hazırlama
 
