@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3325593eed83781ffcb7059a137210e126b9c175
+ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506735"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980337"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune 'da ortak iOS özelliklerini kullanmak için iOS ve ıpados cihaz ayarları
 
@@ -200,7 +200,7 @@ Bu özellik şu platformlarda geçerlidir:
 
 - **Kilit ekranı dipnotu**: Cihaz kaybolur veya çalınırsa, cihazın döndürülmesini sağlamaya yardımcı olabilecek bir durum girin. İstediğiniz herhangi bir metin girebilirsiniz. Örneğin `If found, call Contoso at ...` gibi bir URI girebilirsiniz.
 
-  Cihaz belirteçleri, bu alanlara cihaza özgü bilgiler eklemek için de kullanılabilir. Örneğin, seri numarasını göstermek için `Serial Number: {{serialnumber}}` girin. Kilit ekranında metin, `Serial Number 123456789ABC` ' a benzer şekilde görünür. Değişken girerken, `{{ }}` ' ı kullandığınızdan emin olun. [Uygulama yapılandırma belirteçleri](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) , kullanılabilecek değişkenlerin bir listesini içerir. @No__t-0 veya diğer cihaza özgü bir değeri de kullanabilirsiniz.
+  Cihaz belirteçleri, bu alanlara cihaza özgü bilgiler eklemek için de kullanılabilir. Örneğin, seri numarasını göstermek için `Serial Number: {{serialnumber}}` girin. Kilit ekranında metin, `Serial Number 123456789ABC` ' a benzer şekilde görünür. Değişken girerken, `{{ }}` ' ı kullandığınızdan emin olun. [Uygulama yapılandırma belirteçleri](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) , kullanılabilecek değişkenlerin bir listesini içerir. `deviceName` veya başka bir cihaza özgü değeri de kullanabilirsiniz.
 
   > [!NOTE]
   > Değişkenler kullanıcı arabiriminde doğrulanmaz ve büyük/küçük harfe duyarlıdır. Sonuç olarak, yanlış girişle kaydedilmiş profiller görebilirsiniz. Örneğin, `{{deviceid}}` yerine `{{DeviceID}}` girerseniz, aygıtın benzersiz KIMLIĞI yerine değişmez dize gösterilir. Doğru bilgileri girdiğinizden emin olun.
@@ -236,13 +236,13 @@ Bu özellik şu platformlarda geçerlidir:
   > [!NOTE]
   > Bu URL'ler düzgün biçimlendirilmiş FQDN'ler olmalıdır. Apple bunların `http://<yourURL.domain>` biçiminde olmasını gerektirir.
 
-  URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit bir dize eşleşmesi çalıştırılır, bu nedenle `http://www.contoso.com/` URL öneki-1 @no__t eşleşmez. İOS 10,0 veya üzeri ile, eşleşen tüm değerleri girmek için tek bir joker \* kullanılabilir. Örneğin, `http://*.contoso.com/` hem `http://store.contoso.com/` hem de `http://www.contoso.com` ile eşleşir.
+  URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit bir dize eşleşmesi çalıştırılır, bu nedenle `http://www.contoso.com/` URL öneki `http://www.contoso.com:80/`eşleşmez. İOS 10,0 veya üzeri ile, eşleşen tüm değerleri girmek için tek bir joker \* kullanılabilir. Örneğin, `http://*.contoso.com/` hem `http://store.contoso.com/` hem de `http://www.contoso.com` ile eşleşir.
 
-  @No__t-0 ve `https://.com` desenleri sırasıyla tüm HTTP ve HTTPS URL 'Leriyle eşleşir.
+  `http://.com` ve `https://.com` desenleri sırasıyla tüm HTTP ve HTTPS URL 'Leriyle eşleşir.
 
 - **Çoklu Oturum Açma kullanan uygulamalar**: Son kullanıcıların cihazlarına çoklu oturum açma kullanabilecek uygulamalar **ekleyin**.
 
-  @No__t-0 dizisi, uygulama paketi kimlikleriyle eşleşen dizeler içermelidir. Bu dizeler `com.contoso.myapp` gibi tam eşleşmeler olabilir veya \* joker karakterini kullanarak paket KIMLIĞINDE bir ön ek eşleşmesi girebilirsiniz. Joker karakter, bir nokta karakterinden (.) sonra görünmelidir ve dizenin sonunda, `com.contoso.*` gibi yalnızca bir kez görünebilir. Joker karakter eklendiğinde, paket kimlikleri bu ön ekle başlayan tüm uygulamaların hesaba erişimine izin verilir.
+  `AppIdentifierMatches` dizi, uygulama paketi kimlikleriyle eşleşen dizeler içermelidir. Bu dizeler `com.contoso.myapp` gibi tam eşleşmeler olabilir veya \* joker karakterini kullanarak paket KIMLIĞINDE bir ön ek eşleşmesi girebilirsiniz. Joker karakter, bir nokta karakterinden (.) sonra görünmelidir ve dizenin sonunda, `com.contoso.*` gibi yalnızca bir kez görünebilir. Joker karakter eklendiğinde, paket kimlikleri bu ön ekle başlayan tüm uygulamaların hesaba erişimine izin verilir.
 
   **Uygulama Adı**’nı kullanarak paket kimliğini ayırt etmenize yardımcı olacak bir kolay ad ekleyin.
 
@@ -266,7 +266,7 @@ Bu özellik şu platformlarda geçerlidir:
   - **Yalnızca belirli Web siteleri** (yalnızca Safari Web tarayıcısı için): Bu URL 'ler Safari tarayıcısının yer işaretlerine eklenir. Kullanıcının **yalnızca** bu siteleri ziyaret etme izni vardır; başka hiçbir site açılamaz. Bu seçeneği yalnızca kullanıcıların erişebileceği URL'lerin tam listesini biliyorsanız kullanın.
 
     - **URL**: izin vermek istediğiniz Web sitesinin URL 'sini girin. Örneğin, şunu girin: `https://www.contoso.com`.
-    - **Yer Işareti yolu**: yer işaretinin depolandığı yolu girin. Örneğin, şunu girin: `/Contoso/Business Apps`. Bir yol eklemezseniz yer işareti cihazdaki varsayılan yer işareti klasörüne eklenir.
+    - **Yer Işareti yolu**: Apple bu ayarı değiştirdi. Tüm yer işaretleri **onaylanan siteler** klasörüne gider. Yer işaretleri girdiğiniz yer işareti yoluna gitmez.
     - **Başlık**: yer işareti için açıklayıcı bir başlık girin.
 
     Herhangi bir URL girmezseniz, son kullanıcılar `microsoft.com`, `microsoft.net` ve `apple.com` dışındaki web sitelerine erişemez. Bu URL 'Lere Intune tarafından otomatik olarak izin verilir.

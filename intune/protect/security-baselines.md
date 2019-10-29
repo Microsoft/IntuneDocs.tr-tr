@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,27 +16,27 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9df7f5a34313d55b460bf6d8492b0790b1424d2f
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: d447f2bf45d1bf3e6355a9d5dcc42b4bc2f3a9f3
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923376"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999754"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
 
-Kullanıcılarınızın ve cihazlarınızın güvenliğini sağlamanıza ve korumanıza yardımcı olması için Intune 'un güvenlik temellerini kullanın. Güvenlik temelleri, bilinen bir ayar grubunu ve ilgili güvenlik ekipleri tarafından önerilen varsayılan değerleri uygulamanıza yardımcı olan önceden yapılandırılmış Windows ayarları gruplarıdır. Intune 'da bir güvenlik temeli profili oluşturduğunuzda bir *cihaz yapılandırma* profili oluşturursunuz.
+Kullanıcılarınızın ve cihazlarınızın güvenliğini sağlamanıza ve korumanıza yardımcı olması için Intune 'un güvenlik temellerini kullanın. Güvenlik temelleri, bilinen bir ayar grubunu ve ilgili güvenlik ekipleri tarafından önerilen varsayılan değerleri uygulamanıza yardımcı olan önceden yapılandırılmış Windows ayarları gruplarıdır. Intune 'da bir güvenlik temeli profili oluşturduğunuzda, birden çok *cihaz yapılandırma* profilinden oluşan bir şablon oluşturursunuz.
 
 Bu özellik şu platformlarda geçerlidir:
 
 - Windows 10 sürüm 1809 ve üzeri
 
-Güvenlik temellerini Intune 'daki Kullanıcı veya cihaz gruplarına dağıtırsınız ve ayarlar Windows 10 veya üstünü çalıştıran cihazlara uygulanır. Örneğin, *MDM güvenlik temeli* çıkarılabilir sürücüler Için BitLocker 'ı otomatik olarak sağlar, otomatik olarak bir cihazın kilidini açmak için bir parola gerektirir, temel kimlik doğrulamasını otomatik olarak devre dışı bırakır ve daha fazlasını Ortamınız için varsayılan bir değer çalışmazsa, ihtiyacınız olan ayarları uygulamak için taban çizgisini özelleştirin.  
+Güvenlik temellerini Intune 'daki Kullanıcı veya cihaz gruplarına dağıtırsınız ve ayarlar Windows 10 veya üstünü çalıştıran cihazlara uygulanır. Örneğin, *MDM güvenlik temeli* çıkarılabilir sürücüler Için BitLocker 'ı otomatik olarak sağlar, otomatik olarak bir cihazın kilidini açmak için bir parola gerektirir, temel kimlik doğrulamasını otomatik olarak devre dışı bırakır ve daha fazlasını Ortamınız için varsayılan bir değer çalışmazsa, ihtiyacınız olan ayarları uygulamak için taban çizgisini özelleştirin.
 
-Ayrı taban çizgisi türleri aynı ayarları içerebilir, ancak bu ayarlar için farklı varsayılan değerleri kullanır. Kullanmayı seçtiğiniz temellerin varsayılan değerlerini anlamanız ve sonra her bir taban çizgisini Kuruluş gereksinimlerinize uyacak şekilde değiştirmek önemlidir.  
+Ayrı taban çizgisi türleri aynı ayarları içerebilir, ancak bu ayarlar için farklı varsayılan değerleri kullanır. Kullanmayı seçtiğiniz temellerin varsayılan değerlerini anlamanız ve sonra her bir taban çizgisini Kuruluş gereksinimlerinize uyacak şekilde değiştirmek önemlidir.
 
 > [!NOTE]
-> Microsoft, bir üretim ortamında güvenlik temellerinin önizleme sürümlerinin kullanılmasını önermez. Önizleme temelindeki ayarlar Önizleme kursu üzerinde değişebilir. 
+> Microsoft, bir üretim ortamında güvenlik temellerinin önizleme sürümlerinin kullanılmasını önermez. Önizleme temelindeki ayarlar Önizleme kursu üzerinde değişebilir.
 
 Güvenlik temelleri, Microsoft 365 çalışırken uçtan uca güvenli bir iş akışına sahip olmanıza yardımcı olabilir. Bazı avantajlardan bazıları şunlardır:
 
@@ -44,153 +44,150 @@ Güvenlik temelleri, Microsoft 365 çalışırken uçtan uca güvenli bir iş ak
 - Intune 'a yeni başladıysanız ve nereden başlayabileceğiniz konusunda emin değilseniz, güvenlik temelleri size bir avantaj sunar. Kuruluşunuzun kaynaklarını ve verilerini korumaya yardımcı olduğunuzu bilerek, güvenli bir profil oluşturup dağıtabilirsiniz.
 - Şu anda Grup ilkesi kullanıyorsanız, yönetim için Intune 'a geçiş bu temellerle çok daha kolay olur. Bu taban çizgileri, Intune 'da yerel olarak yerleşik olarak bulunur ve modern bir yönetim deneyimi içerir.
 
-
-
 [Windows güvenlik temelleri](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) , bu özellik hakkında daha fazla bilgi edinmek için harika bir kaynaktır. [Mobil cihaz yönetimi](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) MDM ile ilgili harika bir kaynaktır ve Windows cihazlarında neler yapabilirsiniz.
 
 ## <a name="about-baseline-versions-and-instances"></a>Temel sürümler ve örnekler hakkında
 
-Bir taban çizgisinin her yeni sürüm örneği, ayarları ekleyebilir veya kaldırabilir veya diğer değişiklikleri getirebilir. Örneğin, yeni Windows 10 ayarları Windows 10 ' un yeni sürümleriyle kullanılabilir hale geldiğinde, MDM güvenlik temeli en yeni ayarları içeren yeni bir sürüm örneği alabilir.  
+Bir taban çizgisinin her yeni sürüm örneği, ayarları ekleyebilir veya kaldırabilir veya diğer değişiklikleri getirebilir. Örneğin, yeni Windows 10 ayarları Windows 10 ' un yeni sürümleriyle kullanılabilir hale geldiğinde, MDM güvenlik temeli en yeni ayarları içeren yeni bir sürüm örneği alabilir.
 
-Intune konsolunda her bir taban çizgisi için kutucuk, taban çizgisi şablon adını ve bu taban çizgisi hakkındaki temel bilgileri görüntüler. Bu bilgiler, bu taban çizgisi türünü kullanan profillerin sayısını, taban çizgisi türünün kaç farklı örneğine (sürümlerini) kullanılabildiğini ve temel şablonun kiracınıza ne zaman eklendiğini belirleyen *son Yayımlanma* tarihini içerir. Aşağıdaki örnek, iyi kullanılan bir MDM güvenlik temeli için kutucuğu göstermektedir:  
+Intune konsolunda her bir taban çizgisi için kutucuk, taban çizgisi şablon adını ve bu taban çizgisi hakkındaki temel bilgileri görüntüler. Bu bilgiler, bu taban çizgisi türünü kullanan profillerin sayısını, taban çizgisi türünün kaç farklı örneğine (sürümlerini) kullanılabildiğini ve temel şablonun kiracınıza ne zaman eklendiğini belirleyen *son Yayımlanma* tarihini içerir. Aşağıdaki örnek, iyi kullanılan bir MDM güvenlik temeli için kutucuğu göstermektedir:
 
 ![Taban çizgisi kutucuğu](./media/security-baselines/baseline-tile.png)
 
-Kullandığınız temel sürümler hakkında daha fazla bilgi görüntülemek için bir temel kutucuk seçerek *genel bakış* bölmesini açın ve ardından **sürümler**' i seçin. Intune, profilleriniz tarafından kullanılan bu taban çizgisinin sürümleriyle ilgili ayrıntıları görüntüler. Sürümler bölmesinde, bu sürümü kullanan profillerle ilgili daha derin ayrıntıları görüntülemek için tek bir sürüm seçebilirsiniz. Ayrıca, iki farklı sürüm seçebilir ve bu farklılıkları ayrıntılarıyla bir CSV dosyası indirmek için **temelleri Karşılaştır** ' ı seçebilirsiniz.  
+Kullandığınız temel sürümler hakkında daha fazla bilgi görüntülemek için bir temel kutucuk seçerek *genel bakış* bölmesini açın ve ardından **sürümler**' i seçin. Intune, profilleriniz tarafından kullanılan bu taban çizgisinin sürümleriyle ilgili ayrıntıları görüntüler. Sürümler bölmesinde, bu sürümü kullanan profillerle ilgili daha derin ayrıntıları görüntülemek için tek bir sürüm seçebilirsiniz. Ayrıca, iki farklı sürüm seçebilir ve bu farklılıkları ayrıntılarıyla bir CSV dosyası indirmek için **temelleri Karşılaştır** ' ı seçebilirsiniz.
 
 ![Temelleri Karşılaştır](./media/security-baselines/compare-baselines.png)
 
-Bir güvenlik temeli *profili*oluşturduğunuzda, profil otomatik olarak en son yayınlanan güvenlik temeli örneğini kullanır.  Önizleme sürümü kullanılarak oluşturulan taban çizgileri dahil daha önce daha önce oluşturduğunuz profilleri kullanmaya ve düzenlemeye devam edebilirsiniz. 
+Bir güvenlik temeli *profili*oluşturduğunuzda, profil otomatik olarak en son yayınlanan güvenlik temeli örneğini kullanır.  Önizleme sürümü kullanılarak oluşturulan taban çizgileri dahil daha önce daha önce oluşturduğunuz profilleri kullanmaya ve düzenlemeye devam edebilirsiniz.
 
-Belirli bir profille kullanılan bir taban çizgisinin [sürümünün değiştirilmesini](#change-the-baseline-version-for-a-profile) seçebilirsiniz. Bu, yeni bir sürüm geldiğinde, bundan faydalanmak için yeni bir temel profil oluşturmanız gerekmediği anlamına gelir. Bunun yerine, hazır olduğunuzda bir temel profil seçebilir ve sonra bu profilin örnek sürümünü yeni bir profil olarak değiştirmek için yerleşik seçeneğini kullanabilirsiniz.  
+Belirli bir profille kullanılan bir taban çizgisinin [sürümünün değiştirilmesini](#change-the-baseline-version-for-a-profile) seçebilirsiniz. Bu, yeni bir sürüm geldiğinde, bundan faydalanmak için yeni bir temel profil oluşturmanız gerekmediği anlamına gelir. Bunun yerine, hazır olduğunuzda bir temel profil seçebilir ve sonra bu profilin örnek sürümünü yeni bir profil olarak değiştirmek için yerleşik seçeneğini kullanabilirsiniz.
 
-## <a name="available-security-baselines"></a>Kullanılabilir güvenlik temelleri 
+## <a name="available-security-baselines"></a>Kullanılabilir güvenlik temelleri
 
- Intune ortamınızda kullanılabilen bir veya daha fazla temeli aynı anda kullanabilirsiniz. Farklı Özelleştirmelerdeki aynı güvenlik temellerinin birden çok örneğini de kullanabilirsiniz. 
+ Intune ortamınızda kullanılabilen bir veya daha fazla temeli aynı anda kullanabilirsiniz. Farklı Özelleştirmelerdeki aynı güvenlik temellerinin birden çok örneğini de kullanabilirsiniz.
 
-Birden çok güvenlik temeli kullandığınızda, farklı temellerin aynı ayar için çakışan değerleri ne zaman tanıttığını belirlemek için her birindeki ayarları gözden geçirin. Farklı amaçlar için tasarlanan güvenlik temellerini dağıtabileceğiniz ve özelleştirilmiş ayarları içeren aynı taban çizgisinin birden çok örneğini dağıttığınız için, [Araştırılması gereken cihazlar için yapılandırma çakışmaları oluşturabilir ve çözüldü](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Ayrıca, aynı ayarların birçoğunu güvenlik temellerine göre yapılandırabilen [cihaz yapılandırma profillerinizin](../configuration/device-profiles.md)farkında olun. 
+Birden çok güvenlik temeli kullandığınızda, farklı temellerin aynı ayar için çakışan değerleri ne zaman tanıttığını belirlemek için her birindeki ayarları gözden geçirin. Farklı amaçlar için tasarlanan güvenlik temellerini dağıtabileceğiniz ve özelleştirilmiş ayarları içeren aynı taban çizgisinin birden çok örneğini dağıttığınız için, [Araştırılması gereken cihazlar için yapılandırma çakışmaları oluşturabilir ve çözüldü](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Ayrıca, aynı ayarların birçoğunu güvenlik temellerine göre yapılandırabilen [cihaz yapılandırma profillerinizin](../configuration/device-profiles.md)farkında olun.
 
-
-
-Aşağıdaki güvenlik temeli örnekleri Intune ile kullanılabilir. Her bir taban çizgisinin en son örneğine ilişkin ayarları görüntülemek için bağlantıları kullanın. 
+Aşağıdaki güvenlik temeli örnekleri Intune ile kullanılabilir. Her bir taban çizgisinin en son örneğine ilişkin ayarları görüntülemek için bağlantıları kullanın.
 
 - **MDM güvenlik temeli**
   - [2019 Mayıs için MDM güvenlik temeli](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
   - [Önizleme: 2018 Ekim için MDM güvenlik temeli](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
-- **Microsoft Defender ATP temeli**  
-  *(Bu temeli kullanmak için ortamınızın [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)'nı kullanmaya yönelik önkoşulları karşılaması gerekir)* .
-  - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)  
+- **Microsoft Defender ATP taban çizgisi**
+   *(Bu temeli kullanmak Için ortamınız [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)'nı kullanmaya yönelik önkoşulları karşılamalıdır)* .
+  - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
   > Microsoft Defender ATP güvenlik temeli fiziksel cihazlar için iyileştirildi ve şu anda sanal makinelerde (VM) veya VDı uç noktalarında kullanılması önerilmez. Belirli taban çizgisi ayarları, sanallaştırılmış ortamlarda uzak etkileşimli oturumları etkileyebilir.  Daha fazla bilgi için bkz. Windows belgelerindeki [Microsoft Defender ATP güvenlik temeliyle uyumluluğu artırma](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) .
 
-Önizleme şablonu yeni profiller oluşturmak için artık kullanılabilir olmadığında bile, daha önce bir önizleme şablonunu temel alarak oluşturduğunuz profilleri kullanmaya ve düzenlemeye devam edebilirsiniz. 
+Önizleme şablonu yeni profiller oluşturmak için artık kullanılabilir olmadığında bile, daha önce bir önizleme şablonunu temel alarak oluşturduğunuz profilleri kullanmaya ve düzenlemeye devam edebilirsiniz.
 
-## <a name="manage-baselines"></a>Temelleri yönetme  
+## <a name="manage-baselines"></a>Temelleri yönetme
 
 Güvenlik temellerinde çalışırken ortak görevler şunları içerir:
-- [Bir profil oluşturun](#create-the-profile) – kullanmak istediğiniz ayarları yapılandırmak için, taban çizgisini gruplara atayın.
+
+- [Profil oluşturma](#create-the-profile) – kullanmak istediğiniz ayarları yapılandırın ve taban çizgisini gruplara atayın.
 - [Sürümü değiştirme](#change-the-baseline-version-for-a-profile) – bir profil tarafından kullanılan temel sürümü değiştirin.
 - [Taban çizgisi atamasını kaldırma](#remove-a-security-baseline-assignment) -ayarları güvenlik temeliyle yönetmeyi durdurduğunuzda ne olacağını öğrenin.
 
 
 ### <a name="prerequisites"></a>Önkoşullar
+
 - Intune 'da temelleri yönetmek için hesabınızın [ilke ve Profil Yöneticisi](../fundamentals/role-based-access-control.md#built-in-roles) yerleşik rolüne sahip olması gerekir.
 
-- Bazı temellerin kullanımı, Microsoft Defender ATP gibi ek hizmetlere etkin bir aboneliğinizin olmasını gerektirebilir.  
-
+- Bazı temellerin kullanımı, Microsoft Defender ATP gibi ek hizmetlere etkin bir aboneliğinizin olmasını gerektirebilir.
 
 ### <a name="create-the-profile"></a>Profili oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve kullanılabilir temeller listesini görüntülemek için **cihaz güvenliği** > **güvenlik temelleri** ' ni seçin.
 
+   ![Yapılandırmak için bir güvenlik temeli seçin](./media/security-baselines/available-baselines.png)
 
-    ![Yapılandırmak için bir güvenlik temeli seçin](./media/security-baselines/available-baselines.png)
-
-2. Kullanmak istediğiniz taban çizgisini seçin ve ardından **Profil oluştur**' u seçin.  
+2. Kullanmak istediğiniz taban çizgisini seçin ve ardından **Profil oluştur**' u seçin.
 
 3. **Temel bilgiler** sekmesinde, aşağıdaki özellikleri belirtin:
 
-    - **Ad**: güvenlik temelleri profiliniz için bir ad girin. Örneğin, *Defender ATP Için standart profil*girin.
+   - **Ad**: güvenlik temelleri profiliniz için bir ad girin. Örneğin, *Defender ATP Için standart profil*girin.
 
-    - **Açıklama**: Bu temelin ne yaptığını açıklayan bir metin girin. Açıklama, istediğiniz herhangi bir metin girmenize yöneliktir. İsteğe bağlıdır, ancak önerilir.  
+   - **Açıklama**: Bu temelin ne yaptığını açıklayan bir metin girin. Açıklama, istediğiniz herhangi bir metin girmenize yöneliktir. İsteğe bağlıdır, ancak önerilir.
 
-   Sonraki sekmeye gitmek için **İleri ' yi** seçin. Yeni bir sekmeye gelişmiş bir sekmeye kadar, daha önce görüntülenen bir sekmeye geri dönmek için sekme adını seçebilirsiniz.  
+   Sonraki sekmeye gitmek için **İleri ' yi** seçin. Yeni bir sekmeye gelişmiş bir sekmeye kadar, daha önce görüntülenen bir sekmeye geri dönmek için sekme adını seçebilirsiniz.
 
 4. Yapılandırma ayarları sekmesinde, seçtiğiniz taban çizgisinde kullanılabilir olan **ayar** gruplarını görüntüleyin. Bu gruptaki ayarları görüntülemek için bir grubu genişletebilir ve bu ayarlar için taban çizgisinde varsayılan değerleri kullanabilirsiniz. Belirli ayarları bulmak için:
-   - Genişletilecek bir grup seçin ve kullanılabilir ayarları gözden geçirin.  
-   - *Arama* çubuğunu kullanın ve yalnızca arama ölçütlerinizi içeren grupları görüntülemek için görünümü filtreleyen anahtar sözcükleri belirtin.  
- 
-   Bir taban çizgisinin her bir ayarı, bu temel sürüm için varsayılan bir yapılandırmaya sahiptir. Varsayılan ayarları, iş gereksinimlerinizi karşılayacak şekilde yeniden yapılandırın. Farklı temeller aynı ayarı içerebilir ve taban çizgisinin amacına bağlı olarak ayar için farklı varsayılan değerleri kullanır. 
+   - Genişletilecek bir grup seçin ve kullanılabilir ayarları gözden geçirin.
+   - *Arama* çubuğunu kullanın ve yalnızca arama ölçütlerinizi içeren grupları görüntülemek için görünümü filtreleyen anahtar sözcükleri belirtin.
 
-    ![Bu grubun ayarlarını görüntülemek için bir grubu genişletin](./media/security-baselines/sample-list-of-settings.png)
+   Bir taban çizgisinin her bir ayarı, bu temel sürüm için varsayılan bir yapılandırmaya sahiptir. Varsayılan ayarları, iş gereksinimlerinizi karşılayacak şekilde yeniden yapılandırın. Farklı temeller aynı ayarı içerebilir ve taban çizgisinin amacına bağlı olarak ayar için farklı varsayılan değerleri kullanır.
 
-5. **Kapsam Etiketleri sekmesini seçin** ' i seçerek kapsam etiketlerini profile atamak için kapsam *etiketleri Seç '* **i seçin.** 
+   ![Bu grubun ayarlarını görüntülemek için bir grubu genişletin](./media/security-baselines/sample-list-of-settings.png)
 
-6. **Atamalar** sekmesinde, **dahil edilecek grupları seç** ' i seçin ve ardından temeli bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için, **hariç tutulacak grupları seçin ' i** kullanın.  
+5. **Kapsam Etiketleri sekmesini seçin** ' i seçerek kapsam etiketlerini profile atamak için kapsam *etiketleri Seç '* **i seçin.**
+
+6. **Atamalar** sekmesinde, **dahil edilecek grupları seç** ' i seçin ve ardından temeli bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için, **hariç tutulacak grupları seçin ' i** kullanın.
 
    ![Profil atama](./media/security-baselines/assignments.png)
-  
-7. Temeli dağıtmaya hazırsanız, **gözden geçir + oluştur** sekmesine ilerleyin ve taban çizgisinin ayrıntılarını gözden geçirin. Profili kaydetmek ve dağıtmak için **Oluştur** ' u seçin.  
+
+7. Temeli dağıtmaya hazırsanız, **gözden geçir + oluştur** sekmesine ilerleyin ve taban çizgisinin ayrıntılarını gözden geçirin. Profili kaydetmek ve dağıtmak için **Oluştur** ' u seçin.
 
    Profili oluşturur almaz, atanan gruba gönderilir ve hemen uygulanabilir.
 
-   > [!TIP]  
-   > Bir profili önce gruplara atamadan kaydederseniz, daha sonra profili düzenleyerek bunu yapabilirsiniz.  
+   > [!TIP]
+   > Bir profili önce gruplara atamadan kaydederseniz, daha sonra profili düzenleyerek bunu yapabilirsiniz.
 
-   ![Taban çizgisini gözden geçirme](./media/security-baselines/review.png) 
+   ![Taban çizgisini gözden geçirme](./media/security-baselines/review.png)
 
-  
-8. Bir profil oluşturduktan sonra **cihaz güvenliği** > **güvenlik temelleri**' ne giderek düzenleyin, yapılandırdığınız taban çizgisi türünü seçin ve ardından **profiller**' i seçin. Kullanılabilir profiller listesinden profili seçin ve ardından **Özellikler**' i seçin. Tüm kullanılabilir yapılandırma sekmelerinden ayarları düzenleyebilir ve değişikliklerinizi uygulamak için **gözden geçir + kaydet** ' i seçebilirsiniz.  
+8. Bir profil oluşturduktan sonra **cihaz güvenliği** > **güvenlik temelleri**' ne giderek düzenleyin, yapılandırdığınız taban çizgisi türünü seçin ve ardından **profiller**' i seçin. Kullanılabilir profiller listesinden profili seçin ve ardından **Özellikler**' i seçin. Tüm kullanılabilir yapılandırma sekmelerinden ayarları düzenleyebilir ve değişikliklerinizi uygulamak için **gözden geçir + kaydet** ' i seçebilirsiniz.
 
-### <a name="change-the-baseline-version-for-a-profile"></a>Bir profilin temel sürümünü değiştirme  
+### <a name="change-the-baseline-version-for-a-profile"></a>Bir profilin temel sürümünü değiştirme
 
-Kullanılan temel örnek sürümünü bir profille değiştirebilirsiniz.  Sürümü değiştirdiğinizde, aynı taban çizgisinin kullanılabilir bir örneğini seçersiniz. Bir profili, MDM güvenlik temelini kullanarak Defender ATP için bir taban çizgisi kullanarak değiştirme gibi iki farklı taban çizgisi türü arasında geçiş yapamazsınız. 
+Kullanılan temel örnek sürümünü bir profille değiştirebilirsiniz.  Sürümü değiştirdiğinizde, aynı taban çizgisinin kullanılabilir bir örneğini seçersiniz. Bir profili, MDM güvenlik temelini kullanarak Defender ATP için bir taban çizgisi kullanarak değiştirme gibi iki farklı taban çizgisi türü arasında geçiş yapamazsınız.
 
-Taban çizgisi sürümünün bir değişikliğini yapılandırırken, dahil edilen iki temel sürüm arasındaki değişiklikleri listeleyen bir CSV dosyası indirebilirsiniz. Tüm özelleştirmelerinizi özgün temel sürümden tutma veya yeni sürümü varsayılan değerlerini kullanarak uygulama seçeneğiniz de vardır. Bir profil için bir taban çizgisinin sürümünü değiştirdiğinizde tek tek ayarlarda değişiklik yapma seçeneğiniz yoktur. 
+Taban çizgisi sürümünün bir değişikliğini yapılandırırken, dahil edilen iki temel sürüm arasındaki değişiklikleri listeleyen bir CSV dosyası indirebilirsiniz. Tüm özelleştirmelerinizi özgün temel sürümden tutma veya yeni sürümü varsayılan değerlerini kullanarak uygulama seçeneğiniz de vardır. Bir profil için bir taban çizgisinin sürümünü değiştirdiğinizde tek tek ayarlarda değişiklik yapma seçeneğiniz yoktur.
 
-Kaydetme sırasında, dönüştürme işlemi tamamlandıktan sonra, taban çizgisi atanan gruplara hemen yeniden dağıtılır.  
+Kaydetme sırasında, dönüştürme işlemi tamamlandıktan sonra, taban çizgisi atanan gruplara hemen yeniden dağıtılır.
 
 **Dönüştürme sırasında**:
-- Kullanmakta olduğunuz Orijinal sürümde olmayan yeni ayarlar eklendi ve varsayılan değerleri kullanacak şekilde ayarlandı.  
 
-- Seçtiğiniz yeni temel sürümde olmayan ayarlar kaldırılır ve artık bu güvenlik temeli profili tarafından zorlanmaz.  
+- Kullanmakta olduğunuz Orijinal sürümde olmayan yeni ayarlar eklendi ve varsayılan değerleri kullanacak şekilde ayarlandı.
 
-  Bir ayar artık temel bir profil tarafından yönetilmediğinde, bu ayar cihazda sıfırlanmaz. Bunun yerine, başka bir işlem değişiklik ayarlarını yönetene kadar cihazdaki ayar en son yapılandırmaya ayarlanır. Yönetimi durdurduktan sonra bir ayarı değiştirebiliyor işlem örnekleri, farklı bir temel profil, bir Grup İlkesi ayarı veya cihazda yapılan el ile yapılandırma içerir. 
+- Seçtiğiniz yeni temel sürümde olmayan ayarlar kaldırılır ve artık bu güvenlik temeli profili tarafından zorlanmaz.
 
-#### <a name="to-change-the-baseline-version-for-a-profile"></a>Bir profilin temel sürümünü değiştirmek için  
+  Bir ayar artık temel bir profil tarafından yönetilmediğinde, bu ayar cihazda sıfırlanmaz. Bunun yerine, başka bir işlem değişiklik ayarlarını yönetene kadar cihazdaki ayar en son yapılandırmaya ayarlanır. Yönetimi durdurduktan sonra bir ayarı değiştirebiliyor işlem örnekleri, farklı bir temel profil, bir Grup İlkesi ayarı veya cihazda yapılan el ile yapılandırma içerir.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve ardından **cihaz güvenliği** > **güvenlik temelleri**' ni seçin ve ardından değiştirmek istediğiniz profile sahip olan temel türün kutucuğunu seçin.  
+#### <a name="to-change-the-baseline-version-for-a-profile"></a>Bir profilin temel sürümünü değiştirmek için
 
-2. Ardından, **profiller**' i seçin ve ardından düzenlemek istediğiniz profilin onay kutusunu seçin ve ardından **sürümü Değiştir**' i seçin.  
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve ardından **cihaz güvenliği** > **güvenlik temelleri**' ni seçin ve ardından değiştirmek istediğiniz profile sahip olan temel türün kutucuğunu seçin.
 
-   ![taban çizgisi seçin](./media/security-baselines/select-baseline.png)  
+2. Ardından, **profiller**' i seçin ve ardından düzenlemek istediğiniz profilin onay kutusunu seçin ve ardından **sürümü Değiştir**' i seçin.
 
-3. **Sürümü Değiştir** bölmesinde, açılan menüyü **güncelleştirmek için bir güvenlik temeli Seç** ' i kullanın ve kullanmak istediğiniz sürüm örneğini seçin.  
+   ![taban çizgisi seçin](./media/security-baselines/select-baseline.png)
 
-   ![Sürüm seçin](./media/security-baselines/select-instance.png)  
-   
-4. Profiller geçerli örnek sürümü ve seçtiğiniz yeni sürüm arasındaki farkı gösteren bir CSV dosyası indirmek için **güncelleştirmeyi gözden geçir** ' i seçin. Hangi ayarların yeni veya kaldırılmış olduğunu ve bu ayarların varsayılan değerlerinin güncelleştirilmiş profilde ne olduğunu anlamak için bu dosyayı gözden geçirin.  
+3. **Sürümü Değiştir** bölmesinde, açılan menüyü **güncelleştirmek için bir güvenlik temeli Seç** ' i kullanın ve kullanmak istediğiniz sürüm örneğini seçin.
 
-   Hazırsanız, bir sonraki adımla devam edin.  
+   ![Sürüm seçin](./media/security-baselines/select-instance.png)
 
-5. **Profili güncelleştirmek için bir yöntem seçmek üzere**iki seçenekten birini belirleyin: 
+4. Profiller geçerli örnek sürümü ve seçtiğiniz yeni sürüm arasındaki farkı gösteren bir CSV dosyası indirmek için **güncelleştirmeyi gözden geçir** ' i seçin. Hangi ayarların yeni veya kaldırılmış olduğunu ve bu ayarların varsayılan değerlerinin güncelleştirilmiş profilde ne olduğunu anlamak için bu dosyayı gözden geçirin.
+
+   Hazırsanız, bir sonraki adımla devam edin.
+
+5. **Profili güncelleştirmek için bir yöntem seçmek üzere**iki seçenekten birini belirleyin:
    - **Temel değişiklikleri kabul et ancak var olan ayar özelleştirmelerini tut** -Bu seçenek, taban çizgisi profilinde yaptığınız özelleştirmeleri korur ve bunları kullanmak üzere seçtiğiniz yeni sürüme uygular.
-   - **Temel değişiklikleri kabul et ve var olan ayar özelleştirmelerini at** -Bu seçenek özgün profilinizi tamamen geçersiz kılar. Güncelleştirilmiş profil tüm ayarlar için varsayılan değerleri kullanır.  
+   - **Temel değişiklikleri kabul et ve var olan ayar özelleştirmelerini at** -Bu seçenek özgün profilinizi tamamen geçersiz kılar. Güncelleştirilmiş profil tüm ayarlar için varsayılan değerleri kullanır.
 
 6. **Gönder**' i seçin. Profil, seçili temel sürüme ve dönüştürme tamamlandıktan sonra güncelleştirilir ve taban çizgisi atanan gruplara hemen yeniden dağıtılır.
 
 ### <a name="remove-a-security-baseline-assignment"></a>Güvenlik temeli atamasını kaldırma
-Bir güvenlik temeli ayarı bir cihaz için artık geçerli olmadığında veya bir taban çizgisinin ayarları *Yapılandırılmadı*olarak ayarlandığında, bir cihazdaki bu ayarlar önceden yönetilen bir yapılandırmaya dönmez. Bunun yerine, daha önce yönetilen ayarlar, bazı diğer işlemler cihazdaki bu ayarları güncelleştirene kadar son yapılandırmalarının taban çizgisinden alınmış olarak tutulmasını saklar.  
 
-Daha sonra cihazdaki ayarları değiştirebilecek diğer işlemlere, farklı veya yeni bir güvenlik taban çizgisi, cihaz yapılandırma profili, grup ilkesi yapılandırmaları veya cihazdaki ayarı el ile düzenleme sayılabilir.  
+Bir güvenlik temeli ayarı bir cihaz için artık geçerli olmadığında veya bir taban çizgisinin ayarları *Yapılandırılmadı*olarak ayarlandığında, bir cihazdaki bu ayarlar önceden yönetilen bir yapılandırmaya dönmez. Bunun yerine, daha önce yönetilen ayarlar, bazı diğer işlemler cihazdaki bu ayarları güncelleştirene kadar son yapılandırmalarının taban çizgisinden alınmış olarak tutulmasını saklar.
+
+Daha sonra cihazdaki ayarları değiştirebilecek diğer işlemlere, farklı veya yeni bir güvenlik taban çizgisi, cihaz yapılandırma profili, grup ilkesi yapılandırmaları veya cihazdaki ayarı el ile düzenleme sayılabilir.
 
 ## <a name="co-managed-devices"></a>Ortak yönetilen cihazlar
 
 Intune tarafından yönetilen cihazlarda güvenlik temelleri, Configuration Manager ile birlikte yönetilen cihazlara benzerdir. Ortak yönetilen cihazlar Windows 10 cihazlarını eşzamanlı olarak yönetmek için System Center Configuration Manager ve Microsoft Intune kullanır. Mevcut Configuration Manager yatırımınızın Intune avantajlarından faydalanmasına olanak tanır. [Ortak yönetime genel bakış](https://docs.microsoft.com/sccm/comanage/overview) , Configuration Manager kullanırsanız ve ayrıca bulutun avantajlarından yararlanmak istiyorsanız harika bir kaynaktır.
 
-Ortak yönetilen cihazlar kullanılırken **cihaz yapılandırma** iş yükünü (ayarlarını) Intune 'a geçmeniz gerekir. [Cihaz yapılandırma iş yükleri](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) daha fazla bilgi sağlar.  
+Ortak yönetilen cihazlar kullanılırken **cihaz yapılandırma** iş yükünü (ayarlarını) Intune 'a geçmeniz gerekir. [Cihaz yapılandırma iş yükleri](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) daha fazla bilgi sağlar.
 
 ## <a name="q--a"></a>Soru ve Cevap
 
@@ -215,9 +212,9 @@ Kesinlikle konuşuyor, hayır. Microsoft Güvenlik ekibi, bu kuruluşların öne
 - Şirket içi Active Directory Grup ilkelerinden Microsoft Intune ile Azure Active Directory (AD) kullanan saf bir bulut çözümüne geçiş bir yolculuğa sahip olur. Yardım için, karma AD ve Azure AD 'ye katılmış cihazları yönetmeye yardımcı olabilecek [Güvenlik uyumluluğu araç seti](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) 'ne dahil edilen grup ilkesi şablonları vardır. Bu cihazlar, bulut (Intune) ve Grup İlkesi ayarlarından, gerektiğinde şirket içi etki alanı denetleyicilerinden MDM ayarları alabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-- Kullanılabilir temellerin en son sürümlerindeki ayarları görüntüleyin:  
-  - [MDM güvenlik temeli](security-baseline-settings-mdm-all.md)  
-  - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)  
+
+- Kullanılabilir temellerin en son sürümlerindeki ayarları görüntüleyin:
+  - [MDM güvenlik temeli](security-baseline-settings-mdm-all.md)
+  - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)
 
 - Durumu denetleme ve [temeli ve profili](security-baselines-monitor.md) izleme
-

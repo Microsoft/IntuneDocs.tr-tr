@@ -7,14 +7,28 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 599c92d0fc00f2475bb93cda884b40862eb38575
+ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749386"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72999441"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
+
+### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Değişiklik planı: ' Siri komutları için sunucu tarafında günlüğe kaydetme ' ayarı Intune konsolundan kaldırılacak <!-- 5468501-->
+
+Intune konsolundaki "Siri komutları için sunucu tarafında günlüğe kaydetme" ayarını, Kasım güncelleştirmesi ile Intune hizmetine kaldırmayı planlıyoruz. Bu değişiklik, Apple 'ın bu ayarı kendi tarafında kaldırmış olduğu şekilde hizalar.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Kasım güncelleştirmesi veya 1911, orta Kasım 'Dan sonra çalıştırıldığında, bu ayarın Intune konsolundaki iOS yapılandırma profillerinin cihaz kısıtlamaları menüsünden (yerleşik uygulamalar) kaldırıldığını görürsünüz. İlkelerinizde ve hedeflenen cihazın yönetim profilinde görünebilir, ancak bu ayarın cihazınızda hiçbir etkisi yoktur. Yönetim profilinde görseniz bile şu anda cihazlarda çalışmadıklarından, işlevselliğe çok etkisi önliyoruz.
+
+İki yoldan birini seçebilirsiniz:
+- Bu ayarı ilkelerinizden silmek istiyorsanız, bu ayarı içeren profile gidebilirsiniz, ikincil düzenleme yapabilir ve ilkeyi kaydedebilirsiniz. İlke arka uçta yeniden işlem görür ve bu ayar ilkeden silinir.
+- Bu eylemi gerçekleştirmek istemiyorsanız, son kullanıcılar bu ayarı cihazlarının yönetim profilinde görür ancak ayarın hiçbir etkisi olmayacaktır.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+Yukarıdaki bölüme göre işlem gerçekleştirebilir veya ilkenizi olduğu gibi bırakabilirsiniz. Bu değişiklik tamamlandığında, yenilikler sayfası ve belgeleri güncelleştireceğiz.
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Eski PC yönetimi için destek sonu
 

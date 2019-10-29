@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785682"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999483"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -84,8 +84,11 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 - En düşük düzeltme eki sürümü
 - Cihaz üreticisi/üreticileri
 - SafetyNet cihaz kanıtlama
-- Uygulamalarda tehdit taraması
+- Uygulamalarda tehdit taraması iste
+- Min Şirket Portalı sürümü
 - İzin verilen en fazla cihaz tehdit düzeyi
+
+**Min Şirket portalı sürümünü**kullanarak, bir son kullanıcı cihazında zorlanan Şirket portalı için belirli bir en düşük tanımlı sürümü belirtebilirsiniz. Bu koşullu başlatma ayarı, her bir değer karşılanmazsa **erişimi engellemek**, **verileri silmek**ve olası eylemler olarak **uyarmak** için değerler ayarlamanıza olanak sağlar. Bu değer için olası biçimler *[ana] düzenine uyar. [ İkincil]* , *[birincil]. [ İkincil]. [Derleme]* veya *[birincil]. [ İkincil]. [Derleme]. [Düzeltme]* . Bazı son kullanıcılar, bir uygulama için bu şekilde zorlanan bir güncelleştirme tercih edemeyebilir, bu ayar yapılandırılırken ' warn ' seçeneği ideal olabilir. Google Play Store, uygulama güncelleştirmeleri için yalnızca Delta baytlarını göndermenin iyi bir işini yapar, ancak bu, kullanıcının güncelleştirme sırasında veriler üzerinde olmaları durumunda kullanmak istememe büyük miktarda veri olabilir. Güncelleştirme zorlamak ve böylece güncelleştirilmiş bir uygulamanın indirilmesi, güncelleştirme sırasında beklenmeyen veri ücretlerine neden olabilir. Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı sürüm 5.0.4560.0 ve gelecekteki tüm şirket portalı sürümlerini alan son kullanıcıları etkileyecektir. Bu ayarın, bu özelliğin yayımlandığı sürümden daha eski bir Şirket Portalı sürümünü kullanan kullanıcılar üzerinde hiçbir etkisi olmayacaktır. En son Şirket Portalı sürümünde olabilecekleri için, cihazlarından uygulama otomatik güncelleştirmelerini kullanan son kullanıcılar bu özellikten hiçbir iletişim kutusu görmeyecektir. Bu ayar yalnızca kayıtlı ve kayıtlı olmayan cihazlar için uygulama korumasıyla Android 'dir.
 
 **Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
 Örnek giriş: *Üretici A;Üretici B* 

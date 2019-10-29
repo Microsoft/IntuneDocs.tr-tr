@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e88aa93e3b3e21f16271049f66bbdc4b927383b
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 8d9bbe916314d5571dccf3c073f735c6448226e6
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915790"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999506"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -54,10 +54,33 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 -->  
 
 
-<!-- ########################## -->
+## <a name="week-of-october-28-2019"></a>28 Ekim 2019 haftası
 
+### <a name="app-management"></a>Uygulama yönetimi 
+
+#### <a name="dark-mode-for-ios-company-portal----4911422---"></a>İOS Şirket Portalı için koyu mod <!-- 4911422 -->
+İOS Şirket Portalı için koyu mod kullanılabilir. Kullanıcılar şirket uygulamalarını indirebilir, cihazlarını yönetebilir ve cihaz ayarlarına bağlı olarak tercih ettikleri renk düzeninde BT desteği alabilir. İOS Şirket Portalı, son kullanıcının cihaz ayarlarını koyu veya hafif modda otomatik olarak eşleştirecektir. Daha fazla bilgi için bkz. [iOS için Microsoft Intune şirket portalı üzerinde koyu moda giriş](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453). İOS Şirket Portalı hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](~/apps/company-portal-app.md).
+
+#### <a name="android-company-portal-enforced-minimum-app-version----2378776---"></a>Android Şirket Portalı En düşük uygulama sürümünü zorunlu <!-- 2378776 -->
+Bir uygulama koruma ilkesinin **Min Şirket portalı sürümü** ayarını kullanarak, bir son kullanıcı cihazında zorlanan Şirket portalı belirli bir en düşük tanımlı sürümü belirtebilirsiniz. Bu koşullu başlatma ayarı, değeri karşılanmazsa **erişimi engellemeyi**, **verileri silmeyi**veya olası eylemler olarak **uyarmasını** sağlar. Bu değer için olası biçimler *[ana] düzenine uyar. [ İkincil]* , *[birincil]. [ İkincil]. [Derleme]* veya *[birincil]. [ İkincil]. [Derleme]. [Düzeltme]* . 
+
+Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı sürüm 5.0.4560.0 ve gelecekteki tüm şirket portalı sürümlerini alan son kullanıcıları etkileyecektir. Bu ayarın, bu özelliğin yayımlandığı sürümden daha eski bir Şirket Portalı sürümünü kullanan kullanıcılar üzerinde hiçbir etkisi olmayacaktır. En son Şirket Portalı sürümünde olabilecekleri için, cihazlarından uygulama otomatik güncelleştirmelerini kullanan son kullanıcılar bu özellikten hiçbir iletişim kutusu görmeyecektir. Bu ayar yalnızca kayıtlı ve kayıtlı olmayan cihazlar için uygulama korumasıyla Android 'dir. Daha fazla bilgi için bkz. [Android uygulama koruma ilkesi ayarları-koşullu başlatma](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Cihaz yönetimi 
+#### <a name="intune-supports-ios-11-and-later----4665324-idready-wnready---"></a>Intune, iOS 11 ve üstünü destekler <!-- 4665324 idready wnready -->
+Intune kaydı ve Şirket Portalı artık iOS sürümleri 11 ve üstünü desteklemektedir. Eski sürümler desteklenmez.
+
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+#### <a name="updated-support-experience------5012398---"></a>Güncelleştirilmiş destek deneyimi   <!-- 5012398 -->
+
+[Intune için yardım ve destek almak](get-support.md) üzere konsol içi deneyim güncelleştirilir ve kolaylaştırılmıştır.  Genel sorunlar ve destek ile iletişim kurmak için kullandığınız iş akışı için konsol içi arama ve geri bildirim geliştirdik. Bir destek sorunu açarken, bir geri çağırma veya e-posta yanıtı beklendiğinde gerçek zamanlı tahminleri görürsünüz ve Premier ve Birleşik destek müşterileri, daha hızlı destek almaya yardımcı olmak için kendi sorunları için kolayca önem derecesi belirtebilir.
+
+<!-- ########################## -->
 ## <a name="week-of-october-21-2019"></a>21 Ekim 2019 haftası
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="microsoft-365-device-management"></a>Microsoft 365 cihaz yönetimi
 
 #### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>Microsoft 365 cihaz yönetiminde geliştirilmiş yönetim deneyimi
@@ -70,10 +93,11 @@ Yenilenmiş ve kolaylaştırılmış bir yönetim deneyimi, artık aşağıdakil
 
 Bu geliştirmeler hakkında daha fazla bilgi için Microsoft Tech Community Web sitesindeki [Enterprise Mobility + Security blog gönderisine](https://go.microsoft.com/fwlink/?linkid=2109094) bakın.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Uygulama yönetimi
 
 #### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>Kayıtlı olmayan cihazlara mobil tehdit savunma uygulamaları ekleme <!-- 3005337 -->
-Kullanıcıların şirket verilerini bir cihazın sistem durumuna göre engelleyebilen veya seçmeli olarak silebilecek bir Intune uygulama koruma ilkesi oluşturabilirsiniz. Cihazın sistem durumu, seçtiğiniz Mobile Threat Defense (MTD) çözümünüz kullanılarak belirlenir. Bu özellik günümüzde Intune 'A kayıtlı cihazlar cihaz uyumluluk ayarı olarak mevcuttur. Bu yeni özellik sayesinde, tehdit algılamayı bir mobil tehdit savunma satıcısından kayıtlı olmayan cihazlarda çalışacak şekilde genişlettik. Daha fazla bilgi için bkz. [Intune Ile mobil tehdit savunma uygulama koruma Ilkesi oluşturma](~/protect/mtd-app-protection-policy.md).
+Kullanıcıların şirket verilerini bir cihazın sistem durumuna göre engelleyebilen veya seçmeli olarak silebilecek bir Intune uygulama koruma ilkesi oluşturabilirsiniz. Cihazın sistem durumu, seçtiğiniz Mobile Threat Defense (MTD) çözümünüz kullanılarak belirlenir. Bu özellik günümüzde Intune 'A kayıtlı cihazlar cihaz uyumluluk ayarı olarak mevcuttur. Bu yeni özellik sayesinde, tehdit algılamayı bir mobil tehdit savunma satıcısından kayıtlı olmayan cihazlarda çalışacak şekilde genişlettik. Android 'de, bu özellik cihazda en son Şirket Portalı gerektirir. İOS 'ta, bu özellik, uygulamalar en son Intune SDK 'sını (v 12.0.15 +) tümleştirdiğinizde kullanıma sunulacaktır. İlk uygulama en son Intune SDK 'sını benimseme konusundaki yenilikler konusunu güncelleştireceğiz. Kalan uygulamalar, düzenli olarak kullanılabilir hale gelir. Daha fazla bilgi için bkz. [Intune Ile mobil tehdit savunma uygulama koruma Ilkesi oluşturma](~/protect/mtd-app-protection-policy.md).
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
@@ -93,6 +117,8 @@ Artık Autopilot OOBE tarafından sağlanan cihazlarda kayıt durumu sayfasını
 
 Yeni geçişi görmek için **ıntune** > **cihaz kaydı** > **Windows kayıt** > **kayıt durumu sayfası** ' nı seçin > yalnızca profil > **ayarları** **Oluştur** >  **kullanıma hazır deneyim (OOBE) tarafından sağlanan cihazlara sayfayı gösterin**.
 
+
+<!-- ########################## -->
 ## <a name="week-of-october-14-2019"></a>14 Ekim 2019 haftası
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->

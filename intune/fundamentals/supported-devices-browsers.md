@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9fec08511303c15a7197014fd80834d95948191
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504876"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999674"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 'da desteklenen işletim sistemleri ve tarayıcılar
 
@@ -89,6 +89,15 @@ Aşağıdaki listede adı geçen Samsung cihaz modelleri, Knox desteklemez. Andr
 ### <a name="windows-pc-software-client"></a>Windows bilgisayarı yazılım istemcisi
 
 Bir [Intune yazılım istemcisi](../manage-windows-pcs-with-microsoft-intune.md) alternatif bir kayıt yöntemi olarak Windows bilgisayarlara dağıtılabilir ve yüklenebilir. Bu işlev, yalnızca klasik Intune portalında kullanılabilir. Intune yazılım istemcisini, Windows 7 ve üzerini (Windows 10 Home Edition dışında) çalıştıran bilgisayarları yönetmek için kullanabilirsiniz.
+
+> [!Note]
+> Microsoft, Windows 7 desteğinin 14 Ocak 2020 tarihinde bittiğini duyurmuştur. Aynı tarihte Intune'da Windows 7 çalıştıran cihazlar için desteğini kaldıracaktır.
+
+> Daha fazla bilgi için bkz [. Intune için değişiklik planı: Windows 7 için destek sonuna yaklaşma](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+
+> Microsoft Intune, 15 Ekim 2020 ' de Silverlight tabanlı Intune Konsolu desteğini devre dışı bırakacaktır. Bu kullanımdan kaldırma, Silverlight konsolu yapılandırılmış bılgısayar yazılım istemcisi (bılgısayar Aracısı olarak da bilinir) için son desteği içerir
+
+> Daha fazla bilgi için bkz [. Silverlight tabanlı yönetim konsolu için Microsoft Intune desteğini sonlandırma](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
 
 <!--  ### Exchange ActiveSync management
 
