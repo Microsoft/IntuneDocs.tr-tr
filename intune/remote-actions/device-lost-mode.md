@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509445"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057536"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune ile iOS cihazlarda kayıp modunu etkinleştirme
 
@@ -43,8 +43,10 @@ Bu özellik aşağıdakilerde desteklenmez:
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 3. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
-4. Yönettiğiniz cihazların listesinden bir iOS cihazı seçin ve sonra da **...Diğer** öğesini seçin. Ardından **Kayıp modu** uzak eylemini seçin.
-5. **Kayıp modu**’nda, bu özelliği etkinleştirin. Ardından, gösterilecek iletiyi ve ilgili kişi telefon numarasını girin.
+4. Yönettiğiniz cihazların listesinden bir iOS cihazı seçin ve **kayıp modu (yalnızca denetimli)** seçin.
+5. **Kayıp modu**altında **Etkinleştir**' i seçin.
+6. **Kilit ekranında görüntülenecek ileti**içinde, cihazın kilit ekranında görüntülenecek bir ileti yazın.
+7. İsteğe bağlı olarak, **görüntülenecek telefon numarası** kutusuna bir telefon numarası girin.
 6. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 Kayıp modunu etkinleştirdiğinizde cihazın tüm kullanımı engellenir. Siz kayıp modunu devre dışı bırakmadıkça son kullanıcı cihaza erişemez. Kayıp modu etkin durumdayken, cihazı bulmak için [Cihazı bul](device-locate.md) eylemini kullanın.

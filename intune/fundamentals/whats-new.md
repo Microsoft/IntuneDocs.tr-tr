@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d9bbe916314d5571dccf3c073f735c6448226e6
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999506"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057633"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -67,8 +67,27 @@ Bir uygulama koruma ilkesinin **Min Şirket portalı sürümü** ayarını kulla
 Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı sürüm 5.0.4560.0 ve gelecekteki tüm şirket portalı sürümlerini alan son kullanıcıları etkileyecektir. Bu ayarın, bu özelliğin yayımlandığı sürümden daha eski bir Şirket Portalı sürümünü kullanan kullanıcılar üzerinde hiçbir etkisi olmayacaktır. En son Şirket Portalı sürümünde olabilecekleri için, cihazlarından uygulama otomatik güncelleştirmelerini kullanan son kullanıcılar bu özellikten hiçbir iletişim kutusu görmeyecektir. Bu ayar yalnızca kayıtlı ve kayıtlı olmayan cihazlar için uygulama korumasıyla Android 'dir. Daha fazla bilgi için bkz. [Android uygulama koruma ilkesi ayarları-koşullu başlatma](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### <a name="device-management"></a>Cihaz yönetimi 
-#### <a name="intune-supports-ios-11-and-later----4665324-idready-wnready---"></a>Intune, iOS 11 ve üstünü destekler <!-- 4665324 idready wnready -->
+
+### <a name="microsoft-365-device-management"></a>Microsoft 365 cihaz yönetimi
+
+#### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management-------5630102---"></a>Microsoft 365 cihaz yönetiminde Endpoint Security düğümünü tanıtma    <!-- 5630102 -->
+
+**Uç nokta güvenlik** düğümü artık https://devicemanagement.microsoft.com ' de Microsoft 365 cihaz yönetimi uzman çalışma alanında genel olarak kullanıma sunulmuştur, bu, örneğin:
+
+- Güvenlik temelleri: Microsoft tarafından önerilen bilinen ayar grubunu ve varsayılan değerleri uygulamanıza yardımcı olan önceden yapılandırılmış ayarlar grubu.
+
+- Güvenlik görevleri: Microsoft Defender ATPs tehdidi ve güvenlik açığı yönetimi 'nin (TVM) avantajlarından yararlanın ve uç nokta zayıf noktalarını düzeltmek için Intune 'U kullanın.
+
+- Microsoft Defender ATP: güvenlik ihlallerinin engellenmesine yardımcı olmak için tümleşik Microsoft Defender Gelişmiş tehdit koruması (ATP).
+
+Bu ayarlar, cihazlar gibi diğer ilgili düğümlerin erişimine açık olmaya devam edecektir ve geçerli yapılandırılmış durum, bu özellikleri nerede eriştiğinize ve etkinleştirdiğiniz her durumda aynı olacaktır.
+
+Bu geliştirmeler hakkında daha fazla bilgi için Microsoft Tech Community Web sitesinde [Intune müşteri başarısı blog gönderisine](https://aka.ms/Endpoint_security_node) bakın.
+
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="intune-supports-ios-11-and-later----4665324----"></a>Intune, iOS 11 ve üstünü destekler <!-- 4665324  -->
+
 Intune kaydı ve Şirket Portalı artık iOS sürümleri 11 ve üstünü desteklemektedir. Eski sürümler desteklenmez.
 
 ### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme

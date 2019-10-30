@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3325593eed83781ffcb7059a137210e126b9c175
-ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
+ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980337"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057655"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune 'da ortak iOS özelliklerini kullanmak için iOS ve ıpados cihaz ayarları
 
@@ -280,14 +280,14 @@ Bu özellik şu platformlarda geçerlidir:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri
 
-- **SSO uygulama uzantısı türü**: KIMLIK bilgisi SSO uygulaması uzantısının türünü seçin. SSO uygulama uzantısı profilini kaydettiğinizde, SSO uygulama uzantısı türünü değiştiremezsiniz. Seçenekleriniz şunlardır:
+- **SSO uygulama uzantısı türü**: KIMLIK bilgisi SSO uygulaması uzantısının türünü seçin. Seçenekleriniz şunlardır:
 
   - **Yapılandırılmadı**: uygulama uzantıları kullanılmıyor. Bir uygulama uzantısını devre dışı bırakmak için, SSO uygulama uzantısı türünü **Kerberos** veya **kimlik bilgilerinden** **yapılandırılmamış**olarak değiştirebilirsiniz.
   - **Kimlik bilgisi**: SSO gerçekleştirmek için genel, özelleştirilebilir bir kimlik bilgisi uygulama uzantısı kullanın. Kuruluşunuzun SSO uygulaması uzantısının uzantı KIMLIĞINI öğrendiğinizden emin olun.
   - **Kerberos**: iOS 13,0 (ve üzeri) ve ıpados 13,0 (ve daha yeni) ' de bulunan Apple 'ın yerleşik Kerberos uzantısını kullanın. Bu seçenek, **kimlik bilgisi** uygulama uzantısının Kerberos 'a özgü bir sürümüdür.
 
   > [!TIP]
-  > **Kimlik bilgisi** türü ile, uzantısından geçirilecek kendi yapılandırma değerlerinizi eklersiniz. Bunun yerine, **Kerberos** türünde Apple tarafından sunulan yerleşik yapılandırma ayarlarını kullanmayı göz önünde bulundurun.
+  > **Kimlik bilgisi** türü ile, uzantısından geçirilecek kendi yapılandırma değerlerinizi eklersiniz. Bunun yerine, Apple tarafından **Kerberos** türünde sunulan yerleşik yapılandırma ayarlarını kullanmayı göz önünde bulundurun.
 
 - **UZANTı kimliği** (yalnızca kimlik bilgileri): `com.apple.extensiblesso` gibi SSO uygulama uzantınızı tanımlayan paket tanımlayıcısını girin.
 - **Takım Kimliği** (yalnızca kimlik bilgileri): SSO uygulama uzantınızın ekip tanımlayıcısını girin. Takım tanımlayıcısı, Apple tarafından oluşturulan `ABCDE12345` gibi 10 karakterlik alfasayısal bir dizedir (sayılar ve harfler). Takım KIMLIĞI gerekli değildir.

@@ -6,44 +6,46 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785760"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057575"
 ---
-# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi nedir?
-Intune, mobil tehdit savunma satıcısındaki verileri cihaz uyumluluk ilkeleri ve cihaz koşullu erişim kuralları için bir bilgi kaynağı olarak tümleştirebilir. Bu bilgileri, güvenliği aşılmış mobil cihazlardan erişimi engelleyerek Exchange ve SharePoint gibi kurumsal kaynakların korunmasına yardımcı olmak için kullanabilirsiniz.
+# <a name="mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi
+
+Intune, mobil tehdit savunma (MTD) satıcısındaki verileri cihaz uyumluluk ilkeleri ve cihaz koşullu erişim kuralları için bir bilgi kaynağı olarak tümleştirebilir. Bu bilgileri, güvenliği aşılmış mobil cihazlardan erişimi engelleyerek Exchange ve SharePoint gibi kurumsal kaynakların korunmasına yardımcı olmak için kullanabilirsiniz.
 
 Intune, Intune uygulama koruma ilkelerini kullanarak, kayıtlı olmayan cihazlar için bu verileri kaynak olarak kullanabilir. Bu nedenle, Yöneticiler bu bilgileri [Microsoft Intune korunan bir uygulamadaki](~/apps/apps-supported-intune-apps.md)kurumsal verileri korumak ve bir blok veya seçmeli silme vermek için kullanabilir.
 
-## <a name="what-problem-does-this-solve"></a>Hangi sorunu çözer?
-Mobil tehdit savunma satıcısından bilgi Tümleştirme, mobil platformları etkileyen tehditlere karşı şirket kaynaklarınızı korumanıza yardımcı olabilir.  
+## <a name="protect-corporate-resources"></a>Kurumsal kaynakları koruma
 
-Genellikle, şirketler güvenlik açıklarından ve saldırılara karşı koruma sağlarken, mobil cihazlar genellikle izlenmeyen ve korumasız bir şekilde hareket ederken bu bilgisayarlara saldırır. Mobil platformların uygulama yalıtımı ve taklit edilmiş tüketici uygulama depoları gibi yerleşik koruması olduğu durumlarda, bu platformlar gelişmiş saldırılara karşı savunmasız kalır. Daha fazla çalışan cihazları iş için kullanırken ve hassas bilgilere erişebildiklerinden, mobil tehdit savunma satıcısından alınan bilgiler cihazları ve kaynaklarınızı giderek daha fazla karmaşık saldırılara karşı korumanıza yardımcı olabilir.  
+MTD satıcılarından bilgi Tümleştirme, mobil platformları etkileyen tehditlere karşı şirket kaynaklarınızı korumanıza yardımcı olabilir.  
 
-## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense bağlayıcıları nasıl çalışır?
+Genellikle, şirketler güvenlik açıklarından ve saldırılara karşı koruma sağlarken, mobil cihazlar genellikle izlenmeyen ve korumasız bir şekilde hareket ederken bu bilgisayarlara saldırır. Mobil platformların uygulama yalıtımı ve taklit edilmiş tüketici uygulama depoları gibi yerleşik koruması olduğu durumlarda, bu platformlar gelişmiş saldırılara karşı savunmasız kalır. Daha fazla çalışan cihazları iş için kullanıyor ve hassas bilgilere erişmek için MTD satıcılarından alınan bilgiler, cihazları ve kaynaklarınızı giderek daha fazla karmaşık saldırılara karşı korumanıza yardımcı olabilir.
 
-Intune, Intune ile seçtiğiniz Mobile Threat Defense satıcınız arasında bir iletişim kanalı oluşturmak için bir mobil tehdit savunma Bağlayıcısı kullanır. Intune Mobile Threat Defense iş ortakları, mobil cihazlar için uygulama dağıtımı kolay ve kolay bir şekilde sunar. Bu uygulamalar, Intune ile paylaşmak üzere tehdit bilgilerini etkin bir şekilde tarar ve analiz eder. Intune, verileri raporlama veya zorlama amacıyla kullanabilir.  
+## <a name="intune-mobile-threat-defense-connectors"></a>Intune Mobile Threat Defense bağlayıcıları
 
-Örneğin: bağlı bir mobil tehdit savunma uygulaması, ağınızdaki bir telefonun ortadaki saldırılara açık olan bir ağa bağlı olduğunu Mobile Threat Defense satıcısına bildirir. Bu bilgiler, düşük, orta veya yüksek uygun bir risk düzeyine göre kategorize edilir. Bu risk düzeyi daha sonra Intune 'da ayarladığınız risk düzeyi kesintileri ile karşılaştırılır. Bu karşılaştırmaya bağlı olarak, cihazın güvenliği tehlikeye atıldığında seçtiğiniz belirli kaynaklara erişim iptal edilebilir.
+Intune, Intune ve seçtiğiniz MTD satıcınız arasında bir iletişim kanalı oluşturmak için bir mobil tehdit savunma Bağlayıcısı kullanır. Intune MTD iş ortakları, mobil cihazlar için uygulama dağıtmayı kolay ve kolay bir şekilde sunar. Bu uygulamalar, Intune ile paylaşmak üzere tehdit bilgilerini etkin bir şekilde tarar ve analiz eder. Intune, verileri raporlama veya zorlama amacıyla kullanabilir.
 
-## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune, Mobile Threat Defense için hangi verileri topluyor?
+Örneğin: bağlı bir MTD uygulaması, ağınızdaki bir telefonun Şu anda ortadaki adam saldırılarına karşı savunmasız olan bir ağa bağlı olduğunu MTD satıcısına bildirir. Bu bilgiler, düşük, orta veya yüksek uygun bir risk düzeyine göre kategorize edilir. Bu risk düzeyi daha sonra Intune 'da ayarladığınız risk düzeyi kesintileri ile karşılaştırılır. Bu karşılaştırmaya bağlı olarak, cihazın güvenliği tehlikeye atıldığında seçtiğiniz belirli kaynaklara erişim iptal edilebilir.
 
-Bu etkinleştirildiğinde Intune, kişisel ve şirkete ait cihazlardan uygulama envanter bilgilerini toplayarak Lookout for Work gibi Mobile Threat Defense (MTD) sağlayıcıları tarafından alınabilir hale getirir. iOS cihaz kullanıcılarından uygulama envanteri toplayabilirsiniz.
+## <a name="data-that-intune-collects-for-mobile-threat-defense"></a>Intune 'un mobil tehdit savunması için topladığı veriler
+
+Etkinleştirilirse, Intune hem kişisel hem de şirkete ait cihazlardan uygulama envanter bilgilerini toplar ve Lookout for Work gibi MTD sağlayıcılarının getirme için kullanılabilir hale getirir. iOS cihaz kullanıcılarından uygulama envanteri toplayabilirsiniz.
 
 Bu hizmet isteğe bağlıdır, varsayılan olarak hiçbir uygulama envanteri bilgisi paylaşılmaz. Bir Intune Yöneticisi, herhangi bir uygulama envanteri bilgisinin paylaşılmadan önce Mobile Threat Defense bağlayıcı ayarlarındaki **iOS cihazları Için uygulama eşitlemesini** etkinleştirmelidir.
 
@@ -77,8 +79,8 @@ virüslü bir mobil tehdit savunması cihazını gösteren ![resim](./media/mobi
 Cihaz düzeltildiğinde erişim izni verilir:<br>
 Mobil tehdit savunması erişimi verilen ![resim](./media/mobile-threat-defense/MTD-image-4.png)
 
-> [!NOTE] 
-> Intune ile birden fazla Mobil Tehdit Savunması (MTD) satıcısı kullanımı desteklenmez. Birden çok MTD bağlayıcısının etkin olması, tüm MTD uygulamalarının tehditlere karşı cihazlara yüklenmesini ve taranmasını zorlayacaktır.
+> [!NOTE]
+> Tek bir Intune kiracısıyla birden çok mobil savunma satıcısı kullanabilirsiniz. Ancak, iki veya daha fazla satıcı aynı platform için kullanılmak üzere yapılandırıldığında, o platformu çalıştıran tüm cihazların her MTD uygulamasını yüklemesi ve tehditler taraması gerekir. Yapılandırılmış uygulamalardan bir tarama göndermemesi, cihazın uyumsuz olarak işaretlenmesine neden olur. 
 
 ## <a name="mobile-threat-defense-partners"></a>Mobile Threat Defense iş ortakları
 
