@@ -6,7 +6,9 @@
 
 ## [Cihaz parolası gereksinimleri](password-does-not-meet-it-administrator-requirements.md)
 
-## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)
+## [Şirket Portalı’nda oturum açma](sign-in-to-the-company-portal.md)  
+
+## [Mobile Threat Defense uygulamasını yükleme](set-up-mobile-threat-defense.md)  
 
 ## Android cihazınızı kullanma
 ### [Android cihazınızı neden kaydetmelisiniz?](why-enroll-android-device.md)
