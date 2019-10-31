@@ -78,6 +78,8 @@
               href: lob-apps-macos.md
             - name: Win32 uygulama yönetimi
               href: apps-win32-app-management.md
+            - name: Win32 uygulaması S modu cihazları
+              href: apps-win32-s-mode.md
         - name: Belirli uygulamalar ekleme
           items:
             - name: Şirket Portalı uygulaması
