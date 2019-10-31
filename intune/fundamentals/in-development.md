@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4beb9c841cb2f4a5b7198fe031caa67da9e28842
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 3720b0b9a67f0c3462993feef4162ef35f7f3f92
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999430"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182930"
 ---
 # <a name="in-development-for-microsoft-intune---november-2019"></a>Microsoft Intune için geliştirme sırasında-Kasım 2019
 
@@ -66,9 +66,6 @@ Intune, macOS uygulamalarını ve cihazı yapılandırmak için mevcut bir Terci
 
 ### <a name="assignment-type-value-in-windows-company-portal----5459950----"></a>Windows Şirket Portalı atama türü değeri <!-- 5459950  -->
 Windows Şirket Portalı uygulamasının **yüklü uygulamalar** sayfası güncelleştirilecektir. **Yüklü uygulamalar** sayfasının **atama türü** sütunu, "kuruluşunuz tarafından gerektirilir" olarak güncelleştirilmiştir. Gerekli ve kullanılabilir uygulamaları belirlemek için, olası değerler **Evet** veya **Hayır** ' tir. Bu değişiklik, bazı Son Kullanıcı karışıklığına yanıt olarak yapılıyor. Windows Şirket portalı hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](~/apps/company-portal-app.md).
-
-### <a name="apply-dark-mode-in-ios-company-portal----4911422----"></a>İOS Şirket Portalı koyu modunu Uygula <!-- 4911422  -->
-Koyu modda iOS Şirket Portalı planlanmaktadır. Şirket uygulamalarını indirebilir, cihazlarınızı yönetebilir ve tercih ettiğiniz renk şemasında bu destek alabilirsiniz. İOS Şirket Portalı hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](../apps/company-portal-app.md).
 
 ### <a name="run-win32-apps-on-windows-10-s-mode-devices----3747604----"></a>Win32 uygulamalarını Windows 10 S modu cihazlarda çalıştırma <!-- 3747604  --> 
 Windows 10 S modunda yönetilen cihazlara Win32 uygulamaları yükleyip çalıştırabileceksiniz. Windows Defender uygulama denetimi (WDAC) PowerShell araçlarını kullanarak S modu için bir veya daha fazla ek ilke oluşturun. Ek ilkeleri imzalamak için Device Guard imzalama portalını kullanın. Ardından Intune aracılığıyla ilkeleri karşıya yükleyin ve dağıtın. 

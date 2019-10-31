@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 10/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86ea53ef2def05f622ef49fa37965d3f93d796d9
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 186ab336d90bf8f2b21d273dbec1ccde67fb0d87
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999645"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143233"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
 
@@ -42,9 +42,16 @@ Intune için Yardım ve destek deneyimi [Microsoft 365 Cihaz Yönetimi portalın
 
 *Yardım ve destek* deneyimi, [Microsoft 365 Yönetim merkezinde](https://admin.microsoft.com/)görülen deneyimle benzerdir ve Azure 'daki diğer hizmetlerin yerinde kalan önceki *Yardım + desteğinin*yerini alır.
 
-Yardım ve desteğe erişmek için aşağıdaki seçenekleri kullanın:
+### <a name="options-to-access-help-and-support"></a>Yardım ve desteğe erişme seçenekleri 
 
-- **Cihaz Yönetimi Panosu:**
+- **Azure portal:**
+
+  - Herhangi bir Intune dikey penceresinde veya sayfasından **Yardım ve destek '** i seçin.
+
+  > [!NOTE]  
+  > Intune örneğiniz, Azure Kamu gibi bir sogeign bulutu olarak da bilinen kamu için özel bulutta barındırılıyorsa, bu makalede daha sonra [kamu için özel bulut Için Intune desteği](#intune-support-for-private-cloud-for-government)bölümüne bakın. Intune *Yardım ve destek* deneyimi, bir sonraki yıla kadar kamu için özel bulutta kullanılamaz.
+
+- **Cihaz yönetimi panosundan:**
   - Intune için bir özellik alanı seçtikten sonra **Yardım ve destek**seçeneğini belirleyin.
   - Cihaz yönetim portalındaki herhangi bir düğümden öğesini **seçin.** simgesine tıklayın ve sonra da yardım almak istediğiniz hizmeti seçmek için açılan listesini kullanın. **?** Cihaz yönetim portalındaki simge birden çok hizmeti destekler ve yardım almak istediğiniz belirli hizmeti seçmeniz gerekir.  
 
@@ -56,11 +63,7 @@ Yardım ve desteğe erişmek için aşağıdaki seçenekleri kullanın:
 
     ![Hizmetinizi onaylayın](./media/get-support/confirm-your-service-selection.png)
 
-- **Azure portal:**
-  - Herhangi bir Intune dikey penceresinde veya sayfasından **Yardım ve destek '** i seçin.
-
-  > [!NOTE]  
-  > Intune örneğiniz, Azure Kamu gibi bir sogeign bulutu olarak da bilinen kamu için özel bulutta barındırılıyorsa, bu makalede daha sonra [kamu için özel bulut Için Intune desteği](#intune-support-for-private-cloud-for-government)bölümüne bakın. Intune *Yardım ve destek* deneyimi, bu yıl sonrasına kadar kamu için özel bulutta kullanılamaz.
+###  <a name="the-support-experience"></a>Destek deneyimi
 
   Yardım ve destek ' i açtığınızda, portalda **Yardım gerekiyor mu?** penceresi görüntülenir:
 
@@ -72,7 +75,7 @@ Yardım ve desteğe erişmek için aşağıdaki seçenekleri kullanın:
 
   *Yardım mı gerekiyor?* *çözüm bul* bölmesine açılır. Ancak etkin bir destek örneğine sahipseniz, etkin ve kapalı destek durumlarınız hakkındaki ayrıntıları görüntüleyebileceğiniz *hizmet istekleri* bölmesinde pencere açılır.
 
-### <a name="find-solutions"></a>Çözüm bulma
+#### <a name="find-solutions"></a>Çözüm bulma
 
 ![Çözüm bul bölmesini seçin](./media/get-support/find-solutions.png)
 
@@ -84,7 +87,7 @@ Anlayadığınızda Ayrıntılar için güçlü bir eşleşme bulunduğunda, sor
 
 ![Sorun giderme öngörülerini görüntüleme](./media/get-support/troubleshooting-insights.png)
 
-### <a name="contact-support"></a>Desteğe başvurun
+#### <a name="contact-support"></a>Desteğe başvurun
 
 ![Desteğe başvurun bölmesini seçin](./media/get-support/contact-support.png)
 
@@ -96,7 +99,7 @@ Yardım isteğinde bulunduğunuzda, sorunun bir açıklamasını gerektiği kada
 
 Gerekli bilgileri doldurduktan sonra, isteği göndermek için **benimle Iletişim kurun** ' i seçin.
 
-### <a name="service-requests"></a>Hizmet istekleri
+#### <a name="service-requests"></a>Hizmet istekleri
 
 ![Hizmet istekleri bölmesini seçin](./media/get-support/service-requests.png)
 
@@ -108,7 +111,7 @@ Etkin bir destek servis talebi numaranız varsa, bu soruna gitmek için buraya g
 
 Bir olayın ayrıntılarını görüntülemeyi tamamladıktan sonra, yardım isteği penceresinin en üstünde, üç *gereksinim yardımına* ilişkin simgelerin hemen üstünde görünen sol oku seçin. Geri oku, ekranda açtığınız destek olayları listesine döner.
 
-### <a name="premier-and-unified-support-customers"></a>Premier ve Birleşik destek müşterileri
+#### <a name="premier-and-unified-support-customers"></a>Premier ve Birleşik destek müşterileri
 
 **Premier** veya **Birleşik** destek sözleşmesine sahip bir müşteri olarak, sorununuz için önem derecesi belirtebilir ve belirli bir saat ve gün için destek geri araması zamanlayabilirsiniz. Bu seçenekler, yeni bir sorun açtığınızda veya gönderdiğinizde ve etkin bir destek durumunu düzenlerken kullanılabilir.
 
@@ -123,11 +126,25 @@ Bir olayın ayrıntılarını görüntülemeyi tamamladıktan sonra, yardım ist
 
 ## <a name="azure-help--support-experience"></a>Azure Yardım + Destek deneyimi
 
-Sol gezinti bölmesi **Yardım + Destek**' i kullandığınızda veya **?** seçeneği Azure portal, Intune yardım ve destek deneyiminden farklı olan Azure yardım + destek deneyimini açarsınız.
+Aboneliğiniz kamu için özel bir bulutta olmadığı takdirde, Intune ile ilgili yardım almak için artık Azure *Yardım + Destek* deneyimini kullanamazsınız.
+Intune örneğiniz kamu için özel bir bulutta çalıştırılmazsa, Azure *Yardım + Destek* aracılığıyla gezinmek, destek olayları oluşturmak ve bunları yönetmek Için sizi Intune *Yardım ve destek* deneyimine yönlendirir:
 
-2019 Nisan 'dan itibaren, aboneliğiniz kamu için özel bir bulutta olmadığı takdirde Intune ile ilgili yardım almak için Azure *Yardım + Destek* deneyimine erişemezsiniz. 
+Sol gezinti bölmesi **Yardım + Destek**' i kullandığınızda veya **?** *Yardım* bölmesini açma ve sonra **Yardım + Destek**seçeneklerini seçme seçeneği için Azure *Yardım + Destek* sayfasını açarsınız. 
 
-Intune örneğiniz kamu için özel bir bulutta çalıştırılmazsa, Azure *Yardım + Destek* aracılığıyla gezinmek, destek olayları oluşturmak ve bunları yönetmek Için sizi Intune *Yardım ve destek* deneyimine yönlendirir.
+
+Bu sayfadan **+ Yeni destek isteği** ' ni seçerek *Yardım + destek + yeni destek Isteği* sayfasının *temel bilgiler* sekmesini açın.
+
+![Yardım ve destek](./media/get-support/help-plus-support.png)
+
+Bu sayfada:
+
+- *Sorun türü*için **Teknik**' i seçin.
+- *Hizmet*için **Microsoft Intune**' yi seçin.
+
+  Daha sonra sizi [Intune yardım ve destek sayfasına](https://aka.ms/intunehelpsupport)yönlendiren bir bağlantı sunulur.
+  
+  ![Yeni destek isteği](./media/get-support/new-request.png)
+
 
 ## <a name="intune-support-for-private-cloud-for-government"></a>Kamu için özel bulut için Intune desteği
 
@@ -142,7 +159,7 @@ Azure Kamu gibi bir sogeign bulutu olarak da bilinen, kamu sektörü için özel
 >
 > Destek Araçları arasındaki geçişler bu yıldan daha sonra tamamlandığında, kamu bulutunda barındırılan destek deneyimi Intune, şu anda şirket içinde barındırılan Intune abonelikleri için mevcut olan varsayılan *Yardım ve destek* deneyimine benzer olacaktır. genel bulut.
 
-1. Intune yönetici kimlik bilgilerinizle Azure portalında (<https://portal.azure.com>) oturum açın ve **?** işaretini seçin simgesini seçin ve daha sonra **Yardım + destek**’i seçerek [Azure Yardım + destek](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
+1. Intune yönetici kimlik bilgilerinizle Azure portalında (<https://portal.azure.us>) oturum açın ve **?** işaretini seçin simgesini seçin ve daha sonra **Yardım + destek**’i seçerek [Azure Yardım + destek](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) sayfasına gidin.
 
    ![Yardım + destek bağlantısının vurgulandığı soru işareti bağlantısının resmi](./media/get-support/azure-get-support.png)
 

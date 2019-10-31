@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d6fb5a703aad09592bfac3b5a16390389059d33
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cf860056c3918f7ae90e6b9b850a98a37dcfd56e
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498034"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143203"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Tek başına Intune-Win32 uygulama yönetimi
 
@@ -139,7 +139,7 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
 
 ### <a name="step-4-configure-app-installation-details"></a>4\. Adım: Uygulama yükleme ayrıntılarını yapılandırma
 1. **Uygulama ekle** bölmesinde, uygulamanın yükleme ve kaldırma komutlarını yapılandırmak için **Program**'ı seçin.
-2. Uygulamayı yüklemek için yükleme komut satırının tamamını ekleyin. 
+2. **Install komutunu**yapılandırmak için, uygulamayı yüklemek üzere yükleme komut satırını tamamen ekleyin. 
 
     Örneğin, uygulamanızın dosya adı **MyApp123**ise aşağıdakini ekleyin:<br>
     `msiexec /p “MyApp123.msp”`<p>
@@ -148,9 +148,11 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
     Yukarıdaki komutta `ApplicationName.exe` paketi, `/quiet` komut bağımsız değişkenini destekler.<p> 
     Uygulama paketi tarafından desteklenen belirli bağımsız değişkenler için uygulama satıcınıza başvurun.
 
-3. Uygulamanın GUID'si temelinde uygulamayı kaldırmak için kaldırma komut satırının tamamını ekleyin. 
+3. **Kaldırma komutunu**yapılandırmak için uygulamayı uygulamanın GUID 'ine göre kaldırmak üzere kaldırma komut satırını tamamen ekleyin. 
 
     Örneğin: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+4. **Install davranışını** **sistem** veya **Kullanıcı**olarak ayarlayın.
 
     > [!NOTE]
     > Bir Win32 uygulamasını **Kullanıcı** veya **Sistem** bağlamında yüklenecek şekilde yapılandırabilirsiniz. **Kullanıcı** bağlamı yalnızca belirli bir kullanıcıyı ifade eder. **Sistem** bağlamı bir Windows 10 cihazın tüm kullanıcılarını ifade eder.
@@ -159,7 +161,13 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
     > 
     > Win32 uygulaması yükleme ve kaldırma, uygulama kullanıcı bağlamında yüklenmek üzere ayarlandığında ve cihazdaki son kullanıcının yönetici ayrıcalıklarına sahip olması durumunda yönetici ayrıcalıkları altında (varsayılan olarak) yürütülür.
 
-4. İşiniz bittiğinde **Tamam**’a tıklayın.
+5. **Cihaz yeniden başlatma davranışını**yapılandırmak için aşağıdaki seçeneklerden birini seçin:
+    - **Dönüş kodlarına dayalı davranışı belirle**: [geri dönüş kodları](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes) yapılandırma ayarlarına bağlı olarak cihazı yeniden başlatmak için bu seçeneği belirleyin.
+    - **Belirli bir eylem yok**: MSI tabanlı uygulamaların uygulama yüklemesi sırasında cihaz yeniden başlatmalarının görüntülenmesini sağlamak için bu seçeneği belirleyin.
+    - **Uygulama yükleme bir cihazın yeniden başlatılmasını zorlayabilir**: uygulama yüklemesinin yeniden başlatmalar olmadan tamamlanmasına izin vermek için bu seçeneği belirleyin.
+    - **Intune zorunlu bir cihaz yeniden başlatmaya zorlayacaktır**: başarılı bir uygulama yüklemesinden sonra cihazı her zaman yeniden başlatmak için bu seçeneği belirleyin.
+
+6. İşiniz bittiğinde **Tamam**’a tıklayın.
 
 ### <a name="step-5-configure-app-requirements"></a>5\. Adım: Uygulama gereksinimlerini yapılandırma
 
@@ -279,10 +287,11 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
     - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir.
     - **Kaldırma**: Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
 4. **Eklenen Gruplar**'ı seçin ve bu uygulamayı kullanacak grupları atayın.
-5. Dahil edilen gruplar seçimini tamamlamak için **Ata** bölmesinde **Tamam**'ı seçin.
-6. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız, **Grupları Dışla**'yı seçin.
-7. **Grup ekle** bölmesinde **Tamam**’ı seçin.
-8. Uygulamanın **Atamalar** bölmesinde **Kaydet**'i seçin.
+5. **Ata** bölmesinde, kullanıcılara veya cihazlara göre ata ' yı seçin. Atamalarınızı seçtiğinizde, **Son Kullanıcı deneyimini**de seçebilirsiniz. **Son Kullanıcı deneyimi** , **Son Kullanıcı bildirimlerini**, **yeniden başlatma süresini**, **kullanılabilirliği**ve **yükleme son tarihini**ayarlamanıza olanak sağlar. Daha fazla bilgi için bkz. **Win32 uygulama kullanılabilirliğini ve bildirimlerini ayarlama**.
+6. dahil edilen gruplar seçimini gerçekleştirmek için **Tamam ' ı** seçin.
+7. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız, **Grupları Dışla**'yı seçin.
+8. **Grup ekle** bölmesinde **Tamam**’ı seçin.
+9. Uygulamanın **Atamalar** bölmesinde **Kaydet**'i seçin.
 
 Bu noktada, Intune 'a bir Win32 uygulaması ekleme adımlarını tamamladınız. Uygulama atama ve izleme hakkında bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md) ve [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md).
 
@@ -328,6 +337,36 @@ Son Kullanıcı, gerekli ve kullanılabilir uygulama yüklemeleri için Windows 
 Aşağıdaki görüntüde, son kullanıcıya cihazda uygulama değişikliklerinin yapıldığını bildirir.
 
 ![Kullanıcıya uygulama değişikliklerinin yapıldığını bildiren ekran görüntüsü](./media/apps-win32-app-management/apps-win32-app-09.png)    
+
+## <a name="set-win32-app-availability-and-notifications"></a>Win32 uygulama kullanılabilirliğini ve bildirimlerini ayarlama
+Bir Win32 uygulaması için başlangıç saatini ve son tarih saatini yapılandırabilirsiniz. Başlangıç zamanında, Intune yönetim uzantısı uygulama içeriğini indirmeyi başlatacak ve gerekli amaç için önbelleğe alacak. Uygulama son tarihte yüklenecektir. Kullanılabilir uygulamalar için, uygulama Şirket Portalı görünür olduğunda başlangıç zamanı görüntülenir ve Son Kullanıcı uygulamayı Şirket Portalı istediğinde içerik indirilir. Ayrıca, yeniden başlatma yetkisiz kullanım süresini de etkinleştirebilirsiniz. 
+
+Aşağıdaki adımları kullanarak, gerekli bir uygulama için bir tarih ve saate göre uygulama kullanılabilirliğini ayarlayın:
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. **Intune** dikey penceresinde **Istemci uygulamaları** > **uygulamalar**' ı seçin.
+3. Listeden var olan bir **Windows uygulaması (Win32)** seçin. 
+4. Uygulama dikey penceresinde **atamalar** > **Grup Ekle**' yi seçin. 
+5. **Atama türü** olarak **Gerekli** ayarlayın. Uygulama kullanılabilirliği atama türüne göre ayarlanılabileceğini unutmayın. **Atama türü** **gerekli**, **Kayıtlı cihazlar için kullanılabilir**veya **kaldırma**olabilir.
+6. Hangi kullanıcı grubuna uygulama atandığını belirlemek için **dahil edilen gruplar** ' ı seçin. **Ata** dikey penceresi görüntülenir.
+7. **Bu uygulamayı tüm kullanıcılar için gerekli yap** ayarını **Evet**olarak belirleyin.
+
+    > [!NOTE]
+    > **Atama türü** seçenekleri şunları içerir:<br>
+    > - **Gerekli**: **Bu uygulamayı tüm kullanıcılar için gerekli hale getirme** ve/veya **Bu uygulamayı tüm cihazlarda gerekli hale**getirme seçeneğini belirleyebilirsiniz.<br>
+    > - **Kayıtlı cihazlar Için kullanılabilir**: **Bu uygulamayı kayıtlı cihazları olan tüm kullanıcılar için kullanılabilir**hale getirme seçeneğini belirleyebilirsiniz.<br>
+    > - **Kaldır**: ***Bu uygulamayı tüm kullanıcılar için Kaldır** ve/veya **Bu uygulamayı tüm cihazlar için Kaldır**seçeneğini belirleyebilirsiniz.
+
+8. **Son Kullanıcı deneyimi** seçeneklerini değiştirmek için **Düzenle**' yi seçin.
+9. **Atama düzenleme** dikey penceresinde, bu **Kullanıcı bildirimlerini** **tüm bildirim bildirimlerini gösterecek**şekilde ayarlayın. **Son Kullanıcı bildirimlerini** **tüm bildirim bildirimlerini göstermek**, **bilgisayar yeniden başlatmaları için bildirimleri göstermek**veya **Tüm bildirimleri gizlemek**için ayarlayabileceğinizi unutmayın.
+10. **uygulama kullanılabilirliğini** **belirli bir tarih ve saate** ayarlayın ve Tarih ve saati seçin. Bu tarih ve saat, uygulamanın son kullanıcılar cihazına ne zaman indirildiğini belirtir. 
+11. **Uygulama yükleme son tarihini** **belirli bir tarih ve saate** ayarlayın ve Tarih ve saati seçin. Bu tarih ve saat, uygulamanın son kullanıcılar cihazında yüklü olduğunu belirtir. Aynı kullanıcı veya cihaz için birden çok atama yapıldığında, uygulama yüklemesinin son tarihi, mümkün olan en erken zamana göre çekilir.
+12. **Yeniden başlatma yetkisiz kullanım süresinin**yanında **etkin** ' e tıklayın. Yeniden başlatma yetkisiz kullanım süresi, cihazda uygulama yüklemesi tamamlandıktan hemen sonra başlar. Devre dışı bırakıldığında, cihaz uyarı vermeden yeniden başlatılabilir. <br>Aşağıdaki seçenekleri özelleştirebilirsiniz:
+    - **Cihaz yeniden başlatma yetkisiz kullanım süresi (dakika)** : beklenen değer 1440 dakikadır (24 saat). Bu değer en fazla 2 hafta olabilir.
+    - **Yeniden başlatma işleminin (dakika) ardından yeniden başlatma geri sayımı iletişim kutusunun ne zaman gösterileceğini seçin (dakika)** : varsayılan değer 15 dakikadır.
+    - **Kullanıcının yeniden başlatma bildirimini yeniden görüntülemesine Izin ver**: **Evet** veya **Hayır**seçeneğini belirleyebilirsiniz.
+        - **Erteleme süresini (dakika) seçin**: varsayılan değer 240 dakikadır (4 saat). Erteleme değeri, yeniden başlatma yetkisiz kullanım süresinden daha fazla olamaz.
+13.  > Tamam ' a tıklayarak atamayı eklemek **için > ** ** > Tamam '** a tıklayın.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Win32 uygulamaları için bildirim bildirimleri 
 Gerekirse, uygulama ataması başına Son Kullanıcı bildirim bildirimlerinin gösterilmesini gizleyebilirsiniz. Intune 'da, **istemci uygulamaları** > **uygulamalar** ' ı seçin > Uygulama > **atamaları** > **Ekle grupları**' nı seçin. 

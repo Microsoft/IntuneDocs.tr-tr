@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503031"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143181"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durumu sayfası ayarlama
  
@@ -55,7 +55,8 @@ Ayrıca, her bir profilin öncelik sırasını aynı kullanıcıya yönelik çak
 <tr><td>Yükleme hatası oluşursa kullanıcıların cihazı sıfırlamasına izin ver<td>Yükleme hatası varsa, <b>cihazı Sıfırla</b> düğmesi görüntülenir.<td>Yükleme hatası varsa, <b>cihazı Sıfırla</b> düğmesi gösterilmez.
 <tr><td>Yükleme hatası oluşursa kullanıcıların cihazı kullanmasına izin ver<td>Yükleme hatası varsa <b>yine de devam et</b> düğmesi görüntülenir.<td>Yükleme hatası varsa <b>devam et</b> düğmesi gösterilmez.
 <tr><td>Yükleme belirtilen dakika sayısından daha uzun sürerse zaman aşımı hatası göster<td colspan="2">Yüklemenin tamamlanmasını beklemek için beklenecek dakika sayısını belirtin. Varsayılan 60 dakikalık bir değer girilir.
-<tr><td>Bir hata oluştuğunda özel iletiyi göster<td>Bir yükleme hatası oluşursa görüntülenecek özel bir ileti belirtebileceğiniz bir metin kutusu sağlanır.<td>Varsayılan ileti görüntülenir: <br><b>Yüklemesi, kuruluşunuz tarafından ayarlanan zaman sınırını aştı. Yardım almak için yeniden deneyin veya BT destek sorumlunuza başvurun. <b> @ no__t-1<tr><td>Kullanıcıların yükleme hatalarıyla ilgili günlükleri toplamasına izin ver<td>Yükleme hatası varsa, bir biriktirme <b>günlüğü</b> düğmesi görüntülenir. <br>Kullanıcı bu düğmeye tıkladığında, <b>Mdmdiagreport. cab</b> günlük dosyasını kaydetmek için bir konum seçmesi istenir<td>Yükleme hatası varsa <b>günlükleri topla</b> düğmesi gösterilmez.
+<tr><td>Bir hata oluştuğunda özel iletiyi göster<td>Bir yükleme hatası oluşursa görüntülenecek özel bir ileti belirtebileceğiniz bir metin kutusu sağlanır.<td>Varsayılan ileti görüntülenir: <br><b>Yüklemesi, kuruluşunuz tarafından ayarlanan zaman sınırını aştı. Yardım almak için yeniden deneyin veya BT destek sorumlunuza başvurun.<b>
+<tr><td>Kullanıcıların yükleme hatalarıyla ilgili günlükleri toplamasına izin ver<td>Yükleme hatası varsa, bir biriktirme <b>günlüğü</b> düğmesi görüntülenir. <br>Kullanıcı bu düğmeye tıkladığında, <b>Mdmdiagreport. cab</b> günlük dosyasını kaydetmek için bir konum seçmesi istenir<td>Yükleme hatası varsa <b>günlükleri topla</b> düğmesi gösterilmez.
 <tr><td>Bu gerekli uygulamalar kullanıcıya/cihaza atanırsa yüklenene kadar cihaz kullanımını engelle<td colspan="2"><b>Tümü</b> veya <b>Seçili</b>öğesini seçin. <br><br><b>Seçili</b> seçilirse, cihazı etkinleştirmeden önce hangi uygulamaların yüklü olması gerektiğini seçmenize olanak sağlayan bir <b>uygulamalar seçin</b> düğmesi görüntülenir.
 </table>
 
@@ -190,7 +191,6 @@ Aşağıda bilinen sorunlar verilmiştir.
 - ESP profilini devre dışı bırakmak cihazlardan ESP ilkesini kaldırmaz ve kullanıcılar cihazda ilk kez oturum açtıklarında yine de ESP almaya devam eder. ESP profili devre dışı bırakıldığında ilke kaldırılmaz. ESP 'yi devre dışı bırakmak için OMA-URI ' i dağıtmanız gerekir. OMA-URI kullanarak ESP 'yi devre dışı bırakma hakkında yönergeler için bkz. Yukarıdaki. 
 - Bekleyen bir yeniden başlatma işlemi her zaman zaman aşımına neden olur. Zaman aşımı, cihazın yeniden başlatılması gerektiğinden oluşur. Kayıt durumu sayfasında izlenen öğenin tamamlanmasına izin vermek için yeniden başlatma gerekir. Yeniden başlatma işlemi, kayıt durumu sayfasının çıkmasına ve önyükleme sonrasında cihaz, yeniden başlatmadan sonra hesap kurulumu sırasında girmeyecektir.  Uygulama yüklemesiyle yeniden başlatma gerektirmeyi düşünün. 
 - Cihaz kurulumu sırasında yeniden başlatma işlemi, kullanıcıyı hesap kurulum aşamasına geçmeden önce kimlik bilgilerini girmeye zorlar. Kullanıcı kimlik bilgileri, yeniden başlatma sırasında korunmaz. Kullanıcının kimlik bilgilerini girmesini sağlamak için kayıt durumu sayfası devam edebilir. 
-- Iş için Windows Hello ilkelerine sahip SCEP sertifikaları, Kullanıcı, SCEP sertifikası yüklemesinin yarışmasına izin vermek için Hello PIN 'i yapılandırmayı tamamlayamadığından zaman aşımına neden olur.  Geçici çözüm yoktur. ETA 'yi onarma 2019 yazın. 
 - Kayıt durumu sayfası, 1903 ' den küçük Windows 10 sürümlerinde iş ve okul hesabı kaydı ekleme sırasında her zaman zaman aşımına uğrar. Kayıt durumu sayfası, Azure AD kaydının tamamlanmasını bekler. Sorun Windows 10 sürüm 1903 ve daha yeni sürümlerde düzeltildi.  
 - ESP ile hibrit Azure AD Autopilot dağıtımı, ESP profilinde tanımlanan zaman aşımı süresinden daha uzun sürer. Karma Azure AD Autopilot dağıtımlarında, ESP, ESP profilinde ayarlanan değerden 40 dakika daha uzun sürer. Bu gecikme, şirket içi AD bağlayıcısının yeni cihaz kaydını Azure AD 'ye oluşturması için zaman kazandırır. 
 - Windows oturum açma sayfası, Autopilot kullanıcı denetimli modundaki Kullanıcı adı ile önceden doldurulmuyor. ESP 'nin cihaz kurulumu aşamasında bir yeniden başlatma işlemi varsa:

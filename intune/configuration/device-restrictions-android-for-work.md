@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915713"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143031"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Android kurumsal cihaz ayarları
 
@@ -42,7 +42,7 @@ Bu makale, Android kurumsal cihazlarda denetleyebilmeniz için farklı ayarları
   - **Otomatik olarak izin ver**: İzinler otomatik olarak verilir.
   - **Otomatik olarak reddet**: İzinler otomatik reddedilir.
 - **Tarih ve saat değişiklikleri**: kullanıcıların tarih ve saati el ile ayarlamamasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** ayarı, kullanıcıların cihazdaki tarih ve saati belirlemesine izin verir.
-- **Ses düzeyi değişiklikleri**: Kullanıcıların cihaz ses düzeyini değiştirmesini önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** , cihazdaki birim ayarlarının kullanılmasına izin verir.
+- **Birim değişiklikleri**: **Engelle** , kullanıcıların cihazın birimini değiştirmesini önler ve ana birimi de kapatır. **Yapılandırılmadı** , cihazdaki birim ayarlarının kullanılmasına izin verir.
 - **Fabrika Sıfırlaması**: kullanıcıların cihaz ayarlarındaki fabrika sıfırlaması seçeneğini kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların cihazda bu ayarı kullanmasına izin verir.
 - **Güvenli önyükleme**: Kullanıcıların cihazı güvenli moda önyüklemesini önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** , kullanıcıların cihazı güvenli modda yeniden açmasına izin verir.
 - **Durum çubuğu**: bildirimler ve hızlı ayarlar dahil olmak üzere durum çubuğuna erişimi engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların durum çubuğuna erişmesine izin verir.

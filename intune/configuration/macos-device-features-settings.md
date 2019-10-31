@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776921"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143164"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 'da macOS cihaz özelliği ayarları
 
@@ -129,7 +129,7 @@ Bu özellik şu platformlarda geçerlidir:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri 
 
-- **SSO uygulama uzantısı türü**: KIMLIK bilgisi SSO uygulaması uzantısının türünü seçin. SSO uygulama uzantısı profilini kaydettiğinizde, SSO uygulama uzantısı türünü değiştiremezsiniz. Seçenekleriniz şunlardır:
+- **SSO uygulama uzantısı türü**: KIMLIK bilgisi SSO uygulaması uzantısının türünü seçin. Seçenekleriniz şunlardır:
 
   - **Yapılandırılmadı**: uygulama uzantıları kullanılmıyor. SSO uygulama uzantısını devre dışı bırakmak için, SSO uygulama uzantısı türünü **Kerberos** veya **kimlik bilgilerinden** **Yapılandırılmadı**olarak değiştirin.
   - **Kimlik bilgisi**: SSO kullanmak için genel, özelleştirilebilir bir kimlik bilgisi uygulama uzantısı kullanın. Kuruluşunuzun SSO uygulaması uzantısının uzantı KIMLIĞINI ve takım KIMLIĞINI öğrendiğinizden emin olun.  
@@ -143,7 +143,7 @@ Bu özellik şu platformlarda geçerlidir:
 
   [Takım kimliğinizi bulun](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 'ın Web sitesini açar) daha fazla bilgi içerir.
 
-- **Bölge**: Kerberos bölgesi adını girin. Bölge adı, `CONTOSO.COM` gibi büyük harfli olmalıdır. Genellikle, bölge adınız DNS etki alanı adınızla aynıdır, ancak tümü büyük harfle aynıdır.
+- **Bölge**: kimlik doğrulama erişim alanının adını girin. Bölge adı, `CONTOSO.COM` gibi büyük harfli olmalıdır. Genellikle, bölge adınız DNS etki alanı adınızla aynıdır, ancak tümü büyük harfle aynıdır.
 - **Etki alanları**: SSO aracılığıyla kimlik doğrulaması yapılabilecek sitelerin etki alanını veya ana bilgisayar adlarını girin. Örneğin, Web siteniz `mysite.contoso.com` ise, `mysite` ana bilgisayar adıdır ve `contoso.com` etki alanı adıdır. Kullanıcılar bu sitelerden birine bağlandıklarında, uygulama uzantısı kimlik doğrulama sınamasını işler. Bu kimlik doğrulaması, kullanıcıların oturum açmak için yüz KIMLIĞI, Touch ID veya Apple pincode/geçiş kodu kullanmasına izin verir.
 
   - Çoklu oturum açma uygulama uzantılarınızın Intune profillerindeki tüm etki alanları benzersiz olmalıdır. Farklı türlerde SSO uygulama uzantıları kullanıyor olsanız bile, bir etki alanını hiçbir oturum açma uygulama uzantısı profilinde tekrarlayamıyorum.

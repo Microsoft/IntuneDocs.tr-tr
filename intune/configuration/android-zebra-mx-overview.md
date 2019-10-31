@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496047"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182851"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune'da Zebra Mobility Uzantılarını içeren Zebra cihazlarını kullanma ve yönetme
 
@@ -30,7 +30,7 @@ ms.locfileid: "72496047"
 
 Intune uygulamaları yönetme ve cihaz ayarlarını yapılandırma gibi çok zengin özellikler içerir. Bu yerleşik özellikler ve ayarlar, Zeköşeli teknolojiler tarafından üretilen Android cihazlarını, "Zekare cihazları" olarak da bilinen bir şekilde yönetir.
 
-Android cihazlarında Zebra'ya özgü daha fazla ayarı özelleştirmek veya eklemek için **Mobility Uzantıları (MX)** profillerini kullanın.
+Android cihazlarda, daha fazla zeye özgü ayarı özelleştirmek veya eklemek için Zeköşeli **Mobility uzantıları (MX)** profillerini kullanın.
 
 Bu makalede Microsoft Intune'da Zebra cihazlarında Zebra Mobility Uzantılarının (MX) nasıl kullanılacağı gösterilir.
 
@@ -52,6 +52,7 @@ Intune'u kullanarak Zebra cihazlarını kaydedip bu cihazlara iş kolu uygulamal
 - Zebra Teknologies'den StageNow masaüstü uygulamasının en son sürümünü aldığınızdan emin olun.
 - Oluşturduğunuz profillerin cihazın MX sürümü, işletim sistemi sürümü ve modeliyle uyumlu olduğunu onaylamak için [Zebra'nın tam MX özellik matrisini](http://techdocs.zebra.com/mx/compatibility) (Zebra'nın web sitesini açar) gözden geçirdiğinizden emin olun.
 - TC20/25 cihazları gibi bazı cihazlar StageNow'da sağlanan MX özelliklerinin tümünü desteklemez. Güncelleştirilmiş destek bilgileri için [Zebra'nın özellik matrisini](http://techdocs.zebra.com/mx/tc2x/) (Zebra'nın web sitesini açar) gözden geçirdiğinizden emin olun.
+
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>1\. Adım: en son Şirket Portalı uygulamayı yüklemeyi
 

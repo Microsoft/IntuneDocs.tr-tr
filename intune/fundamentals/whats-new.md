@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 591a9af597fc64509a4a7dd19d83d25948a6118e
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057633"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182936"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -57,6 +57,15 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 ## <a name="week-of-october-28-2019"></a>28 Ekim 2019 haftası
 
 ### <a name="app-management"></a>Uygulama yönetimi 
+
+#### <a name="win32-apps-on-windows-10-s-mode-devices----3747604---"></a>Windows 10 S modundaki cihazlarda Win32 uygulamaları <!-- 3747604 --> 
+Windows 10 S modunda yönetilen cihazlara Win32 uygulamaları yükleyebilir ve çalıştırabilirsiniz. Bunu yapmak için, Windows Defender uygulama denetimi (WDAC) PowerShell araçlarını kullanarak S modu için bir veya daha fazla ek ilke oluşturabilirsiniz. Ek ilkeleri Device Guard Imzalama portalı ile imzalayın ve ardından Intune aracılığıyla ilkeleri karşıya yükleyin ve dağıtın. Intune 'da, bu özelliği **istemci uygulamalar** > **Windows 10 S ek ilkeleri**' ni seçerek bulacaksınız. Daha fazla bilgi için bkz. [S modundaki cihazlarda Win32 uygulamalarını etkinleştirme](~/apps/apps-win32-s-mode.md).
+
+#### <a name="set-win32-app-availability-based-on-a-date-and-time----3510685---"></a>Bir tarih ve saate göre Win32 uygulama kullanılabilirliğini ayarlama <!-- 3510685 -->
+Yönetici olarak, gerekli bir Win32 uygulaması için başlangıç saatini ve son tarih saatini yapılandırabilirsiniz. Başlangıç zamanında, Intune yönetim uzantısı uygulama içeriğini indirmeyi başlatacak ve önbelleğe alacak. Uygulama son tarihte yüklenecektir. Kullanılabilir uygulamalar için, uygulama Şirket Portalı görünür olduğunda başlangıç zamanı görüntülenir. Daha fazla bilgi için bkz. [Intune Win32 uygulama yönetimi](~/apps/apps-win32-app-management.md#set-win32-app-availability-and-notifications).
+
+#### <a name="require-device-restart-based-on-grace-period-after-win32-app-install----3136567---"></a>Win32 uygulama yüklemesi sonrasında yetkisiz kullanım süresi temelinde cihaz yeniden başlatması iste <!-- 3136567 -->
+Bir Win32 uygulaması başarıyla yüklendikten sonra cihazın yeniden başlatılmasını zorunlu kılabilirsiniz. Daha fazla bilgi için bkz. [Win32 uygulama yönetimi-uygulama yükleme ayrıntılarını yapılandırma](~/apps/apps-win32-app-management.md#step-4-configure-app-installation-details).
 
 #### <a name="dark-mode-for-ios-company-portal----4911422---"></a>İOS Şirket Portalı için koyu mod <!-- 4911422 -->
 İOS Şirket Portalı için koyu mod kullanılabilir. Kullanıcılar şirket uygulamalarını indirebilir, cihazlarını yönetebilir ve cihaz ayarlarına bağlı olarak tercih ettikleri renk düzeninde BT desteği alabilir. İOS Şirket Portalı, son kullanıcının cihaz ayarlarını koyu veya hafif modda otomatik olarak eşleştirecektir. Daha fazla bilgi için bkz. [iOS için Microsoft Intune şirket portalı üzerinde koyu moda giriş](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453). İOS Şirket Portalı hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](~/apps/company-portal-app.md).
@@ -148,9 +157,6 @@ Android kurumsal iş profili, adanmış ve tam olarak yönetilen cihazlarda kull
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Windows 10 ve macOS için Microsoft Edge sürüm 77 ve üzeri (Genel Önizleme) <!-- 3872025, 4678761  -->
 Microsoft Edge sürüm 77 ve üzeri, Windows 10 ve macOS çalıştıran bilgisayarlara dağıtmak için kullanılabilir. 
-
->[!NOTE]
->Bu özelliğin dağıtımı, bu ay daha sonra gecikti.
 
 Genel Önizleme, Windows 10 için **geliştirme** ve **Beta** kanalları ve MacOS için bir **Beta** kanalı sunar. Dağıtım yalnızca Ingilizce (EN) ' dir, ancak son kullanıcılar tarayıcıdaki görüntüleme dilini **ayarlar**  > **dilleri**altında değiştirebilir. Microsoft Edge, sistem bağlamında ve benzer mimarilere (x86 IŞLETIM sisteminde x86 uygulaması ve x64 IŞLETIM sisteminde x64 uygulaması) yüklenen bir Win32 uygulamasıdır. Ayrıca, tarayıcının otomatik güncelleştirmeleri varsayılan olarak **Açık** olur ve Microsoft Edge kaldırılamaz. Daha fazla bilgi için bkz. [Windows 10 Için Microsoft Edge 'i Microsoft Intune](~/apps/apps-windows-edge.md) ve [Microsoft Edge belgelerini](https://go.microsoft.com/fwlink/?linkid=2103823)ekleme.
 
