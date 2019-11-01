@@ -249,6 +249,8 @@
               href: security-baseline-settings-mdm-all.md
             - name: Microsoft Defender ATP temel ayarları
               href: security-baseline-settings-defender-atp.md
+            - name: Microsoft Edge temel ayarları
+              href: security-baseline-settings-edge.md
         - name: Windows Update ayarları
           href: windows-update-settings.md
         - name: Uyumluluk ilkesi ayarları - Android

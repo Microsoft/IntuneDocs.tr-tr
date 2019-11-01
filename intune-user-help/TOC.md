@@ -64,8 +64,14 @@
 ## [iOS cihazınızı kullanma](using-your-iOS-device-with-intune.md)
 ### [iOS cihaz sıfırlamasının etkileri](effects-of-device-reset-company-portal-ios.md)
 ### [Şirket Portalı'nı yükleme ve uygulamada oturum açma](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-### [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
-### [Kuruluş tarafından sağlanan iOS cihazınızı kaydetme](enroll-your-device-dep-ios.md)
+### Cihazınızı kaydedin
+#### [iOS cihazınızı kaydetme](enroll-your-device-in-intune-ios.md)
+#### [Kuruluş tarafından sağlanan iOS cihazını kaydetme](enroll-your-device-dep-ios.md)
+#### Türetilmiş kimlik bilgileriyle kaydetme
+##### [Entrust Datacard ile kaydetme](enroll-ios-device-entrust-datacard.md)
+##### [Intercede ile kaydetme](enroll-ios-device-intercede.md)
+##### [DISA Purebred ile kaydetme](enroll-ios-device-disa-purebred.md)
+
 
 ### [Cihazınızdaki yönetilen uygulamaları kullanma](use-managed-apps-on-your-device-ios.md)
 ### [Geçiş kodunuzu ayarlama veya değiştirme](set-or-change-your-passcode-ios.md)
