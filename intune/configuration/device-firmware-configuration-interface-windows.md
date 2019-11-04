@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,19 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5afe2414db063aad53a89fd8125a68a53457ca49
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
-ms.translationtype: HT
+ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
+ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414646"
+ms.locfileid: "73432535"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Windows cihazlarında cihaz üretici yazılımı yapılandırma arabirimi profillerini Microsoft Intune (Genel Önizleme) kullanma
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-> [!Note]
-> Her [aylık güncelleştirmenin](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) piyasaya sürülme birkaç gün sürebilir. Bazı özellikler birkaç hafta boyunca alabilir ve tüm müşteriler tarafından hemen kullanılamayabilir.
 
 Autopilot cihazlarını yönetmek için Intune kullandığınızda, cihaz üretici yazılımı yapılandırma arabirimini (DFCı) kullanarak, UEFı (BIOS) ayarlarını, kaydolduktan sonra yönetebilirsiniz. Avantajlar, senaryolar ve önkoşullara genel bakış için bkz. [DFCı 'Ya genel bakış](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 93915e8371d3951a843d6d3131678c1744747c4f
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
-ms.translationtype: HT
+ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73415045"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445889"
 ---
 
 
@@ -13,12 +13,8 @@ ms.locfileid: "73415045"
 - Mac OS X 10,12 ve üzeri
 
 ### <a name="google"></a>Google
-- Android 4.4 ve üzeri (Samsung Knox Standard 4.4 ve üzeri dahil)
-
-  [Android ve Samsung Knox Standard ilke ayarları](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)’nda doğrulanan Samsung Knox Standard cihazlarının tam listesini bulabilirsiniz.
-
-
-- Android kurumsal [gereksinimleri](https://support.google.com/work/android/answer/6174145?hl=en).
+- Android 5,0 ve üzeri (Samsung KNOX Standard 2,4 ve üzeri dahil: [gereksinimler](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
+- Android Enterprise: [gereksinimler](https://support.google.com/work/android/topic/9428066)
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -26,7 +22,7 @@ ms.locfileid: "73415045"
 - Windows 10 (Home, S, Pro, Education ve Enterprise sürümleri)
 - Windows 10 Enterprise 2019 LTSC
 
-  Windows 10 2019 LTSC çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [Windows 10 Enterprise 2019 ltsc 'deki](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019) yenilikler
+  Windows 10 2019 LTSC çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [Windows 10 Enterprise 2019 ltsc 'deki](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019) yenilikler
   
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
@@ -37,7 +33,7 @@ ms.locfileid: "73415045"
 
 - Windows 10 ekipleri (Surface Hub)
 
-   Windows 10 ekipleri çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [MDM ile Surface Hub yönetme](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub)
+   Windows 10 ekipleri çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [MDM ile Surface Hub yönetme](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)
 - Windows Phone 8.1, Windows 8.1 RT, Windows 8.1 (Sürdürme modu) çalıştıran bilgisayarlar
 
 > [!NOTE]
