@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune’a kaydolma veya Intune’da oturum açma
-description: Microsoft Intune aboneliğine kaydolma veya aboneliğinizi başlatmak için oturum açma.
+description: Microsoft Intune aboneliğine kaydolma veya aboneliğinizle başlamak için oturum açma.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509164"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414663"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Microsoft Intune’a kaydolma veya Intune’da oturum açma
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Bu konu, sistem yöneticilerinin Intune hesabına nasıl kaydolacaklarını açıklar.
 
@@ -46,14 +44,17 @@ Zaten bir iş veya okul hesabınız varsa bu hesapla **oturum açın** ve abonel
 2. Kaydol sayfasında, yeni Intune aboneliğinizi yönetmek için oturum açın veya kaydolun.
 
 ## <a name="post-sign-up-considerations"></a>Kayıttan sonra dikkate alınacak noktalar
+
 Yeni abonelik için kaydolduktan sonra, kayıt işlemi sırasında sağladığınız e-posta adresine hesap bilgilerinizi içeren bir e-posta iletisi alırsınız. Bu e-posta, aboneliğinizin etkin olduğunu doğrular.
 
 Kaydolma işlemini tamamladıktan sonra, Kullanıcı eklemek ve lisansları atamak için kullanılan Microsoft 365 yönetim merkezine yönlendirilirsiniz. Yalnızca varsayılan onmicrosoft.com etki alanı adınızın kullanıldığı bulut tabanlı hesaplarınız varsa devam edip bu noktada kullanıcıları ekleyebilir ve lisansları atayabilirsiniz. Öte yandan, kuruluşunuzun [özel etki alanı adını](custom-domain-name-configure.md) kullanmayı veya şirket içi Active Directory’den [kullanıcı hesabı bilgilerini eşitlemeyi](users-add.md#sync-active-directory-and-add-users-to-intune) planlıyorsanız, bu tarayıcı penceresini kapatabilirsiniz.
 
 ## <a name="sign-in-to-microsoft-intune"></a>Microsoft Intune oturum açın
+
 Intune 'a kaydolduktan sonra, hizmeti yönetmek üzere [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açmak için [desteklenen bir tarayıcıyla](supported-devices-browsers.md#intune-supported-web-browsers) herhangi bir cihazı kullanabilirsiniz.
 
 Varsayılan olarak, hesabınız Azure AD 'de aşağıdaki izinlerden birine sahip olmalıdır:
+
 - Genel Yönetici
 - Intune Hizmet Yöneticisi (Intune Yöneticisi olarak da bilinir)
 
@@ -76,4 +77,5 @@ Microsoft 365 İş: https://portal.microsoft.com/adminportal
 Office 365 mobil cihaz yönetimi: https://portal.office.com/adminportal/home#/MifoDevices
 
 ## <a name="see-also"></a>Ayrıca bkz:
+
 [Office 365, Azure veya Intune 'da oturum açamazsınız](https://support.microsoft.com/help/2412085)

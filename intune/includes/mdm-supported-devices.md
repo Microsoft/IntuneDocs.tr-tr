@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
-ms.translationtype: MT
+ms.openlocfilehash: 93915e8371d3951a843d6d3131678c1744747c4f
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "71239592"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73415045"
 ---
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 10.0 ve üzeri
+- Apple iOS ve ıpados 11,0 ve üzeri
 - Mac OS X 10,12 ve üzeri
 
 ### <a name="google"></a>Google
@@ -33,7 +33,7 @@ ms.locfileid: "71239592"
 - Windows 10 IoT Mobile Enterprise
 - Windows 10 Holographic for Business
 
-  Windows Holographic for Business çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [Window Holographic for Business desteği](../windows-holographic-for-business.md).
+  Windows Holographic for Business çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [Window Holographic for Business desteği](../fundamentals/windows-holographic-for-business.md).
 
 - Windows 10 ekipleri (Surface Hub)
 
@@ -43,6 +43,6 @@ ms.locfileid: "71239592"
 > [!NOTE]
 > Tüm Windows sürümleri, MDM aracılığıyla yapılandırılmakta olan tüm kullanılabilir işletim sistemi özelliklerini desteklemez. Bkz. [Windows yapılandırma hizmeti sağlayıcısı başvuru belgeleri](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Her CSP, hangi Windows sürümlerinin desteklendiğini vurgular.
 
-Enterprise Management + Security (EMS) müşterileri de kullanabilir [Azure Active Directory (Windows 10 cihazlarını kaydetmek için Azure AD)](/intune/windows-enroll).
+Enterprise Management + Security (EMS) kullanan müşteriler, [Windows 10 cihazlarını kaydetmek için Azure Active Directory (Azure AD)](/intune/windows-enroll)de kullanabilir.
 
 

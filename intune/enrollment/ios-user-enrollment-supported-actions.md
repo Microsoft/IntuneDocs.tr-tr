@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505407"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445307"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple Kullanıcı kaydıyla desteklenen Intune eylemleri ve seçenekleri
 
 Kullanıcı kaydı, cihaz yönetimi seçeneklerinin bir alt kümesini destekler. Önceden var olan bir yapılandırma profili bir kullanıcı kayıt cihazına uygulanmışsa, bu cihaza yalnızca Kullanıcı kaydı tarafından desteklenen ayarlar uygulanır.
+
+> [!NOTE]
+> Apple 'ın Intune 'da Kullanıcı kaydı desteği şu anda önizlemededir.
 
 ## <a name="password-settings"></a>Parola ayarları
 
@@ -35,7 +38,7 @@ Kullanıcı kayıt cihazlarında, herhangi bir parola ayarını yapılandırırs
 
 Örneğin, **parola süre sonu** ayarını yapılandırır ve bu ilkeyi Kullanıcı tarafından kaydedilen cihazlara gönderirsiniz. Cihazlarda aşağıdakiler olur:
 - **Parola süre sonu** ayarı yok sayılır.
-- @No__t-0 veya `1234` gibi basit parolalara izin verilmez.
+- `1111` veya `1234`gibi basit parolalara izin verilmez.
 - 6 basamaklı bir PIN zorlanır.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Yönetici uzak cihaz eylemleri ve seçenekleri
@@ -97,6 +100,19 @@ Kullanıcı kaydıyla kaydedilen cihazlarda aşağıdaki seçenekler desteklenme
 - Yönetilen APFS birimi dışındaki uygulamaların MDM denetimi.
 - Uygulama koruma Ilkeleri bu uygulamalar için uygulanmaya devam edecektir. Ancak, Kullanıcı bu uygulamaları cihazlarından silmedikleri takdirde yönetimi veya bu uygulamaların yönetilen bir sürümünü dağıtmanız mümkün olmayacaktır.
 - İşlemler, konfigürasyonlar, ayarlar ve gözetimvision gerektiren komutlar. 
+
+## <a name="options-not-supported-in-preview"></a>Önizlemede desteklenmeyen seçenekler
+- Kişisel cihazlara izin verme/engelleme için kayıt cihazı tür kısıtlamaları 
+
+## <a name="known-issues-in-preview"></a>Önizlemede bilinen sorunlar
+- VPP lisansı iptali: lisansın iptal edildiğini belirten bir bildirim görüntülenir. Geçerli davranış, iptal işleminin başarılı olması ancak son kullanıcıya bildirilmemelidir. 
+- VPP uygulama raporlaması: Istemci uygulamalarında bulunan > Uygulamalar > [uygulama adı] > cihaz yüklemesi durumu, Kullanıcı tarafından kaydedilen cihazlara dağıtılan VPP uygulamaları, uygulama başarıyla cihaza dağıtıldığında bile "başarısız" olarak raporlanır. 
+- Uygulama raporlama: Kullanıcı kaydında desteklenmeyen uygulama türleri Için raporlar, ilgisiz hata iletileri sağlayabilir. 
+- Uygulama deneyimi Şirket Portalı: kullanıcılar, bu uygulama türlerinin Kullanıcı tarafından kaydedilen cihazlarda desteklenip desteklenmediğini bağımsız olarak, onlara hedeflenen tüm uygulamaları görür. 
+- Uygulama deneyimi Şirket Portalı: kullanıcılar, kuruluşların Kullanıcı ve cihaz kaydı için neleri görebileceğini ve göremeyeceğini belirten metni görürler.
+- Bir kullanıcı kayıt sırasında "Kuruluşumun bu cihaza sahip olduğu" seçeneğini seçerse, Yönetici Konsolu 'nda veya Graph aracılığıyla değiştirilmedikleri sürece cihaz hala Intune 'da kişisel olarak tanımlanır. 
+- Kayıt hedefleme: ıpados platform seçicisinde listelenmez. ıpados önizleme sürümünde desteklenir, ancak yönetici konsolu içinde açıkça belirtilmedi. 
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

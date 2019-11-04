@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
-ms.translationtype: MT
+ms.openlocfilehash: 5afe2414db063aad53a89fd8125a68a53457ca49
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889569"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414646"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Windows cihazlarında cihaz üretici yazılımı yapılandırma arabirimi profillerini Microsoft Intune (Genel Önizleme) kullanma
 
@@ -45,7 +45,7 @@ Bu özellik şu platformlarda geçerlidir:
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-- Cihaz üreticisinin, üretim işlemindeki UEFı bellenimine veya yüklediğiniz bir bellenim güncelleştirmesine sahip olması gerekir. DFCı 'yı destekleyen üreticileri veya DFCı 'yi kullanmak için gereken bellenim sürümünü öğrenmek için cihaz satıcılarınızla birlikte çalışın.
+- Cihaz üreticisinin, üretim işlemindeki UEFı bellenimine veya yüklediğiniz bir bellenim güncelleştirmesine sahip olması gerekir. [Dfcı 'yı destekleyen üreticileri](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci)veya dfcı 'yi kullanmak için gereken bellenim sürümünü öğrenmek için cihaz satıcılarınızla birlikte çalışın.
 
 - Cihaz, bir [Microsoft bulut çözümü sağlayıcısı (CSP) iş ortağı](https://partner.microsoft.com/cloud-solution-provider)tarafından Windows Autopilot veya doğrudan OEM tarafından kaydedilmiş olmalıdır. 
 

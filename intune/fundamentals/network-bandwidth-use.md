@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505238"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415106"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune ağ yapılandırma gereksinimleri ve bant genişliği
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Intune dağıtımlarınızın bant genişliği gereksinimlerini anlamak için bu bilgileri kullanabilirsiniz.
 
 ## <a name="average-network-traffic"></a>Ortalama ağ trafiği
+
 Bu tabloda her istemci için ağ üzerinden geçen ortak içeriğin yaklaşık boyutu ve sıklığı listelenmiştir.
 
 > [!NOTE]
@@ -53,9 +52,11 @@ Bu tabloda her istemci için ağ üzerinden geçen ortak içeriğin yaklaşık b
 |Yazılım dağıtımı|Değişir<br /><br />Boyut, dağıttığınız yazılıma bağlıdır.|**Değişir**<br /><br />Yazılımı ne zaman dağıttığınızda bağlıdır.|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>Ağ bant genişliği kullanımını azaltmanın yolları
+
 Intune istemcilerinin ağ bant genişliği kullanımını azaltmak için aşağıdaki yöntemlerden birini veya daha fazlasını kullanabilirsiniz.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>İçerik isteklerini önbelleğe almak için proxy sunucusu kullanma
+
 Bir ara sunucu, yinelenen indirmeleri azaltmak ve İnternet’ten alınan içeriğin ağ bant genişliğini düşürmek için içerikleri önbelleğe alabilir.
 
 İstemcilerden içerik istekleri alan bir önbelleğe alma ara sunucusu, bu içeriği alıp web yanıtları ve indirmeleri önbelleğe alabilir. Sunucu, istemcilerden daha sonra gelecek istekleri yanıtlamak için önbelleğe alınmış verileri kullanır.
@@ -74,6 +75,7 @@ Intune istemcileri için içerikleri önbelleğe alan bir proxy sunucunun kullan
 Önbelleğe içerik almak için proxy sunucu kullanma hakkında bilgi için proxy sunucunuzun çözümünü içeren belgelere bakın.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Bilgisayarlarda Arka Plan Akıllı Aktarım Hizmeti'ni (BITS) kullanma
+
 Ağ bant genişliğini azaltmak için belirlediğiniz saatlerde Windows yüklü bir bilgisayar üzerinde BITS hizmetini kullanabilirsiniz. BITS ilkesini Intune Aracısı ilkesinin **Ağ bant genişliği** sayfasında yapılandırabilirsiniz.
 
 > [!NOTE]
@@ -82,14 +84,15 @@ Ağ bant genişliğini azaltmak için belirlediğiniz saatlerde Windows yüklü 
 BITS ve Windows bilgisayarlar hakkında daha fazla bilgi için TechNet Kitaplığında [Arka Plan Akıllı Aktarım Hizmeti](https://technet.microsoft.com/library/bb968799.aspx) konusuna bakın.
 
 ### <a name="delivery-optimization"></a>Teslim Iyileştirme
+
 Teslim Iyileştirme, Windows 10 cihazlarınız uygulamaları ve güncelleştirmeleri indirdiğinizde bant genişliği tüketimini azaltmak için Intune 'U kullanmanızı sağlar. Kendini düzenleme dağıtılan bir önbellek kullanarak, indirme işlemleri geleneksel sunuculardan ve diğer kaynaklardan (ağ eşleri gibi) çekerek yapılabilir.
 
 Teslim Iyileştirme tarafından desteklenen Windows 10 sürümlerinin ve içerik türlerinin tam listesini görmek için, bkz. [Windows 10 Için teslim iyileştirme güncelleştirmeleri makalesi](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements).
 
 [Teslim iyileştirme](../configuration/delivery-optimization-settings.md) 'yi cihaz yapılandırma profillerinizin bir parçası olarak ayarlayabilirsiniz.
 
-
 ### <a name="use-branchcache-on-computers"></a>Bilgisayarlarda BranchCache kullanma
+
 Intune istemcileri geniş alan ağı (WAN) trafiğini azaltmak için BranchCache kullanabilir. Aşağıdaki işletim sistemleri BranchCache’i desteklemektedir:
 
 - Windows 7

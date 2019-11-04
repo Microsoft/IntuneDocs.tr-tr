@@ -1,11 +1,11 @@
 ---
-title: Android iş profilini Intune Şirket Portalı kaydetme | Microsoft Docs
-description: Intune Şirket Portalı bir iş profili oluşturma ve cihazı kaydetme.
+title: Android iş profilini Intune Şirket Portalı Kaydet | Microsoft Docs
+description: Bir iş profili oluşturma ve Intune Şirket Portalı cihazı kaydetme.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,16 +19,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50e4bde49f671a7f828ddb982fa18a3e68de25f6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 210eb94cf77ac703076611d2c0c06c60a12cb0ed
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506269"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414923"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Cihazı Android iş profiline kaydetme
 
-Şirket e-postasına, uygulamalarına ve diğer iş verilerine erişim sağlamak için kişisel Android cihazınızı kaydedin. Kayıt sırasında bir Android iş profili ayarlarsınız. Bu profil, cihazınızdaki kişisel verileri iş verilerinize ayırır. Şirketinizin destek yalnızca iş dosyalarını ve verileri içeren iş profilini yönetir. Şirketinizin destek, cihazınızdaki kişisel verileri yönetemez.
+İş veya okul e-postasına, uygulamalarına ve diğer verilere erişim sağlamak için kişisel Android cihazınızı kaydedin. Kayıt sırasında bir Android iş profili ayarlarsınız. Bu profil, cihazınızdaki kişisel verileri iş verilerinize ayırır. Kuruluşunuz, iş dosyalarından ve verilerinden oluşan iş profilini yönetir. Şirketinizin destek, cihazınızdaki kişisel verileri yönetemez.  
 </br>
 > [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
 
@@ -36,51 +36,51 @@ ms.locfileid: "72506269"
 
 ## <a name="create-work-profile-and-enroll-device"></a>İş profili oluşturma ve cihaz kaydetme
 
-1. İş veya okul hesabınızla Android uygulamasına yönelik Şirket Portalı oturum açın. Ücretsiz uygulamayı yüklemediyseniz [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)' dan yükleyebilirsiniz.  
+1. Şirket Portalı’nı açın ve iş veya okul hesabınızla oturum açın. Ücretsiz uygulamayı yüklemediyseniz [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)' dan yükleyebilirsiniz.  
 
-2. **Şirket Erişimi Kurulumu** ekranında, **DEVAM**’a dokunun.  
+2. **Şirket Erişimi Kurulumu** ekranında **BAŞLA**’ya dokunun.  
 
-    ![Şirket erişimi kurulumu ekranının ekran görüntüsü](./media/android-wp-02-1908.png)  
+    ![Şirket erişimi kurulumu ekranının ekran görüntüsü](./media/access-setup-work-profile-1911.png)  
 
-3. Şirketinizin destek alanının cihazınızda neleri görebileceğini ve göremiyorum listesini okuyun. Sonra **devam**' a dokunun.   
+3. Kuruluşunuzun neleri görebileceğini ve neleri görebileceklerini inceleyin. Sonra **devam**' a dokunun. 
 
-    ![Gizlilik ekranının ekran görüntüsü](./media/android-wp-03-1908.png)  
+    ![Örnek görüntü Şirket Portalı, gizlilik ekranınızı, devam düğmesini vurguladık.](./media/android-privacy-screen-1911.png)  
+4. Yaklaşan adımlarda neleri beklediğinizi gözden geçirin. Sonra **İleri**' ye dokunun.  
 
-4. **Sıradaki nedir?** ekranında, kayıt sırasında ne olacağı hakkında bilgi edinin. Sonra **İleri**' ye dokunun.  
+    ![Şirket Portalı örnek görüntüsü, ileri bir sonraki düğme vurgulandığında.](./media/android-wp-04-1908.png)  
 
-    ![İleri ekranının ekran görüntüsü](./media/android-wp-04-1908.png)
-
-5. Sonraki ekranda, iş profili oluşturmak için Google koşulları gösterilmektedir. Koşulları okuyun ve ardından **kabul & devam**et ' e dokunun. Bu ekranın görünümü cihazınızın Android sürümüne bağlı olarak değişir. 
+5. Google 'ın iş profili oluşturma koşullarını gözden geçirin. Sonra **& devam et**' e dokunun. Bu ekranın görünümü cihazınızın Android sürümüne bağlı olarak değişir. 
 
     ![Google 'ın iş profili koşullarının ekran görüntüsü](./media/android-wp-05-1908.png)  
 
-    İş profiliniz kuruluma başlayacak. 
+6. İş profiliniz ayarlandığında bekleyin.  
 
-     !["İş profili ayarlama" ekranının ekran görüntüsü.](./media/android-wp-05a-1908.png) 
+    !["İş profili ayarlama" ekranının ekran görüntüsü.](./media/android-wp-05a-1908.png)  
 
-     Android sürümünüze bağlı olarak, kurulum süresince üst yarısında olduğunuzu belirten ek bir ekran görebilirsiniz. Bu ekranı görürseniz, yeniden yönlendirilene ve Şirket Portalı uygulamasına oturum açana kadar birkaç dakika bekleyin.  
+   Android sürümünüze bağlı olarak, ek bir ekran görebilirsiniz. Bu, kurulum sırasında üst yarısında olduğunu gösterir. Bu ekranı görürseniz, yeniden yönlendirilene ve Şirket Portalı uygulamasına oturum açana kadar birkaç dakika bekleyin.  
 
-     ![Yeniden yönlendirme iletisi içeren "üst yarısında bulunuyor" ekranının ekran görüntüsü.](./media/android-wp-05b-1908.png) 
+    ![Yeniden yönlendirme iletisi içeren "üst yarısında bulunuyor" ekranının ekran görüntüsü.](./media/android-wp-05b-1908.png)  
 
-6. **Şirket erişimi kurulumu** ekranında, iş profilinizin oluşturulup oluşturulmadıysa emin olun. Sonra **devam**' a dokunun.  
+7. **Şirket erişimi kurulumu** ekranında, iş profilinizin oluşturulup oluşturulmadıysa emin olun. Sonra **devam**' a dokunun.  
 
-    ![İş profilini gösteren şirket erişimi kurulumunun ekran görüntüsü.](./media/android-wp-06-1908.png)  
+    ![İş profilini gösteren şirket erişimi kurulumunun ekran görüntüsü.](./media/work-profile-complete-1911.png)  
 
-7. İş profilinizin etkin olup olmadığını denetleyin. Sonra **devam**' a dokunun. 
+8. İş profilinizin etkin olup olmadığını denetleyin. Sonra **devam**' a dokunun. 
 
-    ![İş profilinin etkin olduğunu gösteren şirket erişimi kurulumunun ekran görüntüsü.](./media/android-wp-07-1908.png)  
+    ![İş profilinin etkin olduğunu gösteren şirket erişimi kurulumunun ekran görüntüsü.](./media/work-profile-active-1911.png)  
 
-8. Kuruluşunuz, bir parola ayarlama gibi cihaz ayarlarınızı güncelleştirmenizi gerektirebilir. Bu işlemi tamamladıktan sonra **devam**' a dokunun.  
+9. Kuruluşunuz, cihaz ayarlarınızı güncelleştirmenizi gerektirebilir. Bir ayarı ayarlamak için **Çöz** ' e dokunun. Ayarları güncelleştirmeyi tamamladığınızda **devam**' a dokunun.    
 
-    ![Cihaz ayarlarını güncelleştirme ekranının ekran görüntüsü.](./media/android-wp-08-1908.png) 
-
-9. **Her şey hazırsınız!** ekranında **bitti**' ye dokunun.  
-
-    ![Şirket Erişimi Kurulumu iş profili ve kaydın tamamlandığını gösterir](./media/android-wp-09-1908.png)  
+    ![Şirket Portalı örnek görüntüsü, cihaz ayarlarını güncelleştirme ekranı, Çözümle ve devam et düğmelerine vurgu.](./media/resolve-settings-1911.png) 
 
 
-Artık şirket uygulamalarını cihazınıza yükleyebilirsiniz. Bu uygulamaları bulmak ve yüklemek için yönetilen Google Play deposuna gidin. 
+10. Kurulum tamamlandığında **bitti**' ye dokunun.  
+
+    ![Şirket Portalı, şirket erişimi kurulumu ekranının örnek görüntüsü, tamamlanan kurulum ve vurgulama bitti düğmesini gösterir.](./media/work-profile-done-1911.png)  
+
 
 ## <a name="next-steps"></a>Sonraki adımlar  
+
+Cihazınız kaydolduktan sonra, cihazınıza okul veya iş uygulamaları yükleyebilirsiniz. Bu uygulamaları bulmak ve yüklemek için yönetilen Google Play deposuna gidin. 
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

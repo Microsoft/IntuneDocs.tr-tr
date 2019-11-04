@@ -17,24 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490981"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413868"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Şirket içi iOS uygulamaları için Intune uygulama koruma özelliklerini uygulamanın kodunu değiştirmeden etkinleştirmek üzere iOS için Microsoft Intune Uygulama Sarmalama Aracı'nı kullanın.
 
 Araç, bir uygulama etrafında sarmalayıcı oluşturan bir Mac OS komut satırı uygulamasıdır. İşleme alındıktan sonra bir uygulamanın işlevselliğini [uygulama koruma ilkeleri](../apps/app-protection-policies.md) dağıtarak değiştirebilirsiniz.
 
 Aracı indirmek için bkz. GitHub üzerinde [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
-
-
 
 ## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için genel önkoşullar
 
@@ -74,6 +70,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 * Şirket içi dağıtım sağlama profili.
 
 ### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Apple Geliştirici Kuruluş hesabı oluşturma adımları
+
 1. [Apple Geliştirici Kurumsal Programı sitesine](https://developer.apple.com/programs/enterprise/) gidin.
 
 2. Sayfanın sağ üst kısmında **Kaydet**’e tıklayın.
@@ -86,11 +83,11 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 6. Kuruluşunuzun bilgilerini girerek formu doldurun. **Devam'a** tıklayın. Bu noktada Apple, kuruluşunuzu kaydetme yetkiniz olup olmadığını doğrulamak için sizinle irtibat kurar.
 
-8. Doğrulamadan sonra **Lisansı Kabul Et**'e tıklayın.
+7. Doğrulamadan sonra **Lisansı Kabul Et**'e tıklayın.
 
-9. Lisansı kabul ettikten sonra, **satın alma ve programı etkinleştirme** seçeneğiyle işlemi tamamlayın.
+8. Lisansı kabul ettikten sonra, **satın alma ve programı etkinleştirme** seçeneğiyle işlemi tamamlayın.
 
-10. Ekip aracısı (Apple Geliştirici Kurumsal Programı’na kuruluşunuz adına katılan kişi) sizseniz ilk olarak ekip üyelerini davet ederek ve rolleri atayarak ekibinizi oluşturun. Ekibinizi nasıl yöneteceğinizi öğrenmek için [Geliştirici Hesap Ekibinizi Yönetme](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) bölümündeki Apple belgelerini okuyun.
+9. Ekip aracısı (Apple Geliştirici Kurumsal Programı’na kuruluşunuz adına katılan kişi) sizseniz ilk olarak ekip üyelerini davet ederek ve rolleri atayarak ekibinizi oluşturun. Ekibinizi nasıl yöneteceğinizi öğrenmek için [Geliştirici Hesap Ekibinizi Yönetme](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) bölümündeki Apple belgelerini okuyun.
 
 ### <a name="steps-to-create-an-apple-signing-certificate"></a>Apple imzalama sertifikası oluşturma adımları
 
@@ -145,8 +142,6 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
     ![iPhone bilgileri-Parmak Izi SHA1 dizesini yazdırır](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
 
-
-
 ### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Şirket İçi Dağıtım Sağlama profili oluşturma adımları
 
 1. [Apple Geliştirici hesabı portalına](https://developer.apple.com/account/) geri giderek kuruluşunuzun Apple kimliğiyle **oturum açın**.
@@ -164,8 +159,6 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 6. Profilinizi (.mobileprovision uzantısı ile) Mac OS bilgisayarınıza yükleme adımlarını izleyin.
 
 7. Dosyayı hatırlayacağınız bir konuma kaydedin. Bu dosya, Uygulama Sarmalama Aracı kullanılırken -p parametresi için kullanılır.
-
-
 
 ## <a name="download-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını indirin
 
@@ -195,6 +188,7 @@ macOS Terminali'ni açın ve aşağıdaki komutu çalıştırın:
 ```
 
 ### <a name="command-line-parameters"></a>Komut satırı parametreleri
+
 Aşağıdaki komut satırı parametrelerini Uygulama Sarmalama Aracı ile birlikte kullanabilirsiniz:
 
 |Özellik|Kullanımı|
@@ -216,6 +210,7 @@ Aşağıdaki komut satırı parametrelerini Uygulama Sarmalama Aracı ile birlik
 |**-f**|(İsteğe bağlı) `<Path to a plist file specifying arguments.>` -i, -o ve -p gibi geri kalan IntuneMAMPackager özelliklerini belirtmek için plist şablonu kullanmayı tercih ederseniz bu bayrağı [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) dosyasının önünde kullanın. Bağımsız değişkenler girişi için bir plist kullanma bölümüne bakın. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Bağımsız değişkenler girişi için bir plist kullanma
+
 Uygulama Sarmalama Aracı’nı çalıştırmanın kolay bir yolu, tüm komut satırı bağımsız değişkenlerini bir [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) dosyasına yerleştirmektir. Plist, bir form arabirimi ile komut satırı bağımsız değişkenlerinizin girişi için kullanabileceğiniz, XML'e benzer bir dosya biçimidir.
 
 IntuneMAMPackager/Contents/MacOS klasöründe, `Parameters.plist` öğesini (boş bir plist şablonu), bir metin düzenleyici veya Xcode ile açın. Aşağıdaki anahtarlar için bağımsız değişkenlerinizi girin:
@@ -236,7 +231,6 @@ IntuneMAMPackager/Contents/MacOS klasöründe, `Parameters.plist` öğesini (bo�
 | Citrix XenMobile App SDK (yalnızca ağ varyantı) dahil et|Boole değeri|yanlış| -Citrix ile aynı|
 | Uzantı Sağlayan Profil Yolları |Dize Dizisi|boş| Uygulamanın uzantı sağlama profillerinin bir dizisi.
 
-
 IntuneMAMPackager’ı plist ile tek bağımsız değişken olarak çalıştırın:
 
 ```bash
@@ -255,19 +249,24 @@ Sarmalanan uygulama, daha önce belirttiğiniz çıkış klasörüne kaydedilir.
 Artık uygulamayı kullanıcı gruplarınıza dağıtabilir ve uygulama için uygulama koruma ilkelerini hedefleyebilirsiniz. Uygulama cihazda belirttiğiniz uygulama ilkeleri kullanılarak çalıştırılır.
 
 ## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamamı ne sıklıkta yeniden sarmalamalıyım?
+
 Uygulamalarınızı yeniden sarmalamanız gereken ana senaryolar aşağıdaki gibidir:
+
 * Uygulamanın yeni bir sürümünü yayınlandı. Uygulamanın önceki sürümü sarmalandı ve Intune konsoluna yüklendi.
 * iOS için Intune Uygulama Sarmalama Aracı uygulamasının hata düzeltmeleri veya yeni, belirli Intune uygulama koruma ilkesi özellikleri içeren yeni bir sürümü yayınlandı. Bu, [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) için 6-8 hafta sonra bir GitHub deposundan gerçekleşir.
 
 iOS için, uygulamayı imzalamak için kullanılan asıl sertifika/sağlama profilinden farklı bir tanesi ile sarmalamak mümkün olsa da, uygulamada belirtilen yetkilendirmeler yeni sağlama profilinde mevcut değilse sarmalama başarısız olacaktır. Uygulamadaki eksik yetkilendirmeleri kaldıran “-e” komut satırı seçeneği kullanılarak sarmalama işleminin başarısız olmamaya zorlanması, uygulamada bozuk işlevselliğe yol açabilir.
 
 Yeniden sarmalama için bazı en iyi uygulamalar şunlardır:
+
 * Farklı bir sağlama profilinin önceki sağlama profillerindeki tüm gerekli yetkilendirmelere sahip olduğundan emin olmak. 
 
 ## <a name="error-messages-and-log-files"></a>Hata iletileri ve günlük dosyaları
+
 Uygulama sarmalama aracında karşılaştığınız sorunları gidermek için aşağıdaki bilgileri kullanın.
 
 ### <a name="error-messages"></a>Hata iletileri
+
 Uygulama sarmalama aracı başarılı bir şekilde tamamlanamazsa, konsolda aşağıdaki hata iletilerinden biri görüntülenir:
 
 |Hata iletisi|Daha fazla bilgi|
@@ -291,6 +290,7 @@ Uygulama sarmalama aracı başarılı bir şekilde tamamlanamazsa, konsolda aşa
 |UYARI: SHA1 sertifika karması belirtmediniz. Sarmalanan uygulamanızı dağıtmadan önce mutlaka imzalayın.|Geçerli bir SHA1 karması belirttiğinizden –c komut satırı bayrağını takip ederek emin olun. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için günlük dosyaları
+
 Uygulama Sarmalama Aracı kullanılarak sarmalanan uygulamalar, iOS istemci cihaz konsoluna yazılan günlükler oluşturur. Bu bilgiler, uygulamayla ilgili sorun yaşadığınızda ve sorunun Uygulama Sarmalama Aracı ile ilişkili olup olmadığını belirlemeniz gerektiğinde yararlıdır. Bu bilgileri almak için aşağıdaki adımları kullanın:
 
 1. Uygulamayı çalıştırarak sorunu yeniden oluşturun.
@@ -310,7 +310,6 @@ Uygulama Sarmalama Aracı kullanılarak sarmalanan uygulamalar, iOS istemci ciha
 
     Sarmalanan uygulamalar, mevcut kullanıcılara da uygulama kilitlendikten sonra doğrudan cihazdan e-posta yoluyla günlükleri gönderme seçeneği sunar. Kullanıcılar, incelemeniz ve gerekiyorsa Microsoft'a iletmeniz için günlükleri size gönderebilir.
 
-
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Sertifika, sağlama profili ve kimlik doğrulaması gereksinimleri
 
 Tam işlevsellik garantisi için iOS için Uygulama Sarmalama Aracında karşılanması gereken bazı gereksinimler vardır.
@@ -321,8 +320,8 @@ Tam işlevsellik garantisi için iOS için Uygulama Sarmalama Aracında karşıl
 |iOS imzalama sertifikası|İmzalama sertifikasını belirtmeden önce, geçerli olduğundan emin olun. Araç, iOS uygulamalarını işlerken bir sertifikanın süresinin dolup dolmadığını denetlemez. Süresi dolmuş bir sertifika için karma sağlanırsa, araç uygulamayı işler ve imzalar, ancak uygulama cihazlara yüklenemez.<br /><br />Sarmalanan uygulamayı imzalamak için sağlanan sertifikanın, sağlama profilinde bir eşleşmeye sahip olduğundan emin olun. Araç, sağlama profilinin sarmalanan uygulamayı imzalamak için sağlanan sertifikaya yönelik bir eşleşme içerip içermediğini doğrulamaz.|
 |Kimlik doğrulama|Şifrelemenin çalışması için cihazın PIN’e sahip olması gerekir. Sarmalanan uygulama dağıtılan cihazlarda durum çubuğuna dokunma, kullanıcının iş veya okul hesabıyla yeniden oturum açmasını gerektirir. Sarmalanan bir uygulamada varsayılan ilke, *yeniden başlatma sırasında kimlik doğrulaması* şeklindedir. iOS tüm dış bildirimleri (bir telefon araması gibi) uygulamadan çıkıp uygulamayı yeniden başlatarak işler.
 
-
 ## <a name="setting-app-entitlements"></a>Uygulama yetkilendirmelerini ayarlama
+
 Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek izinler ve yetenekler sağlamak için *yetkilendirmeler* verebilirsiniz. *Yetkilendirme dosyası*, uygulamanızın içinde özel izinleri (örneğin, paylaşılan bir anahtarlığa erişim) belirlemek için kod imzalama sırasında kullanılır. *Yetenekler* olarak adlandırılan belirli uygulama hizmetleri, uygulama geliştirme sırasında Xcode içinde etkinleştirilir. Yetenekler bir kez etkinleştirildikten sonra, yetkilendirmeler dosyanız bunları yansıtır. Yetkilendirmeler ve yetenekler hakkında daha fazla bilgi için, iOS Geliştirici Kitaplığı’nda [Yetenekleri Ekleme](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) konusuna bakın. Desteklenen yeteneklerin tam listesi için bkz. [Desteklenen yetenekler](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>iOS için Uygulama Sarmalama Aracı’nda desteklenen yetenekler
@@ -363,6 +362,7 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 3. Tüm önkoşullara uyduğunuzdan emin olun ve ardından uygulamayı sarmalayın.
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Sık karşılaşılan yetkilendirme sorunlarını giderme
+
 iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıdaki sorun giderme adımlarını deneyin.
 
 |Sorun|Nedeni|Çözüm|
@@ -371,6 +371,7 @@ iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıd
 |Sağlama profilinde yetkilendirmeler eksik (eksik yetkilendirmeler listelenmiştir). Uygulamayı, söz konusu yetkilendirmeleri içeren bir sağlama profiliyle yeniden paketleyin.|Sağlama profiliyle etkinleştirilen yetkilendirmelerle uygulamada etkinleştirilen yetenekler arasında bir uyuşmazlık var. Bu uyuşmazlık, belirli yeteneklerle ilişkilendirilen kimlikler için de geçerlidir (uygulama grupları ve anahtarlık erişimi gibi).|Genel olarak, uygulamayla aynı yetenekleri etkinleştiren yeni bir sağlama profili oluşturabilirsiniz. Profille uygulama arasında kimlikler eşleşmezse, Uygulama Sarmalama Aracı kimlikleri (yapabilirse) değiştirir. Yeni sağlama profili oluşturduktan sonra da bu hatayı almaya devam ediyorsanız, –e parametresini kullanarak uygulamadan yetkilendirmeleri kaldırabilirsiniz (Uygulamadan yetkilendirmeleri kaldırmak için –e parametresini kullanma bölümüne bakın).|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>İmzalı bir uygulamanın var olan yetkilendirmelerini bulma
+
 İmzalı uygulamanın ve sağlama profilinin var olan yetkilendirmelerini gözden geçirmek için:
 
 1. .ipa dosyasını bulun ve uzantısını .zip olarak değiştirin.
@@ -390,6 +391,7 @@ iOS için Uygulama Sarmalama Aracı yetkilendirme hatası gösterirse, aşağıd
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Uygulamadan yetkilendirmeleri kaldırmak için –e parametresini kullanma
+
 Bu komut, uygulamada etkinleştirilmiş olan ve yetkilendirmeler dosyasında yer almayan tüm yetenekleri kaldırır. Uygulama tarafından kullanılmakta olan yetenekleri kaldırırsanız, uygulamanız bozulabilir. Eksik yetenekleri kaldırabileceğiniz durumlara örnek olarak, tüm yeteneklere varsayılan olarak sahip olan, satıcı tarafından oluşturulmuş bir uygulama verilebilir.
 
 ```bash
@@ -397,6 +399,7 @@ Bu komut, uygulamada etkinleştirilmiş olan ve yetkilendirmeler dosyasında yer
 ```
 
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için güvenlik ve gizlilik
+
 Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından aşağıdaki en iyi uygulamaları kullanın.
 
 - Belirttiğiniz imzalama sertifikası, sağlama profili ve iş kolu uygulaması, uygulama sarmalama aracını çalıştırmak için kullandığınız Mac OS makinesinde olmalıdır. Dosyalar bir UNC yolu üzerindeyse, bunların Mac OS makineden erişilebilir olduğundan emin olun. Yol, IPsec veya SMB imzalama aracılığıyla korunmalıdır.
@@ -414,6 +417,7 @@ Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından a�
 - Cihazınızdaki belgeler klasörünü sarmalanan bir uygulamadan izliyorsanız, .msftintuneapplauncher adında bir klasör görebilirsiniz. Bu dosyayı değiştirir veya silerseniz, bu, kısıtlanan uygulamaların düzgün çalışmasını etkileyebilir.
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Citrix MDX mVPN ile iOS için Intune Uygulama Sarmalama Aracı
+
 Bu özellik, iOS için Citrix MDX uygulama sarmalayıcıyla bir tümleştirmedir. Tümleştirme, gelen Intune Uygulama Sarmalama Araçları'na yönelik ek, isteğe bağlı bir komut satırı bayrağıdır (`-citrix`).
 
 ### <a name="requirements"></a>Gereksinimler
@@ -424,6 +428,7 @@ Bu özellik, iOS için Citrix MDX uygulama sarmalayıcıyla bir tümleştirmedir
 > Intune ve Citrix tümleştirmesi desteği yalnızca iOS 10+ cihazlarıyla sınırlıdır.
 
 ### <a name="use-the--citrix-flag"></a>`-citrix` bayrağını kullanma
+
 Yalnızca genel uygulama sarmalama komutunu sonuna `-citrix` bayrağı eklenmiş olarak çalıştırın. `-citrix` bayrağı şu anda hiçbir bağımsız değişken almamaktadır.
 
 **Kullanım biçimi**:
@@ -439,6 +444,7 @@ Yalnızca genel uygulama sarmalama komutunu sonuna `-citrix` bayrağı eklenmiş
 ```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>Sarmalanmış uygulamalarınız için günlükleri alma
+
 Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini almak için aşağıdaki adımları kullanın.
 
 1. Cihazınızda iOS Ayarları uygulamasına gidin ve LOB uygulamanızı seçin.

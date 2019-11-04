@@ -17,20 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1750f789cfac98af998ebbd86b10a4e93a1772a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490825"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413823"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
-
-[!INCLUDE[both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Intune Uygulaması Sarmalama Aracı’nı veya Intune Uygulama SDK’sını kullanarak uygulamalarınızın uygulama koruma ilkeleri kullanmasını sağlayabilirsiniz. Bu iki yöntem ve ne zaman kullanılacakları hakkında bilgi edinmek için bu bilgileri kullanın.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune Uygulaması Sarmalama Aracı
+
 Uygulama Sarmalama Aracı öncelikle **iç** iş kolu (LOB) uygulamaları için kullanılır. Araç, uygulamanın çevresinde bir sarmalayıcı oluşturan ve sonra uygulamanın bir Intune uygulama koruma ilkesiyle yönetilmesine izin veren bir komut satırı uygulamasıdır. Bağımsız yazılım satıcısı (ISV) tarafından sağlanan bir uygulamayı korurken, ISV'nin sarmalanmış uygulamayı yine de destekleyip desteklemeyeceğini netleştirmek önemlidir.
 
 Aracı kullanmak için kaynak kodu gerekli değildir, ancak imzalama kimlik bilgileri gereklidir. İmzalama kimlik bilgileri hakkında daha fazla bilgi için bkz. [Intune blogu](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Uygulama sarmalama aracı belgeleri için bkz. [Android uygulama sarmalama aracı](app-wrapper-prepare-android.md) ve [IOS uygulaması sarmalama aracı](app-wrapper-prepare-ios.md).
@@ -40,6 +39,7 @@ Uygulama Sarmalama Aracı, Apple App Store veya Google Play Store'daki uygulamal
 Intune’a kayıtlı olmayan cihazlarda uygulama koruma ilkeleri uygulamak için kullanılan Uygulama Sarmalama Aracı hakkında daha fazla bilgi için bkz. [Microsoft Intune’a kayıtlı olmayan cihazlarda iş kolu uygulamaları ve verilerini koruma](../apps/apps-add.md).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı kullanma nedenleri
+
 * Uygulamanız yerleşik veri koruma özelliklerine sahip değil
 * Uygulamanız basit
 * Uygulamanız dahili olarak dağıtılmış
@@ -55,11 +55,13 @@ Intune’a kayıtlı olmayan cihazlarda uygulama koruma ilkeleri uygulamak için
 |**Outlook Web Access (OWA)**|Hayır - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Evet|
 
 ## <a name="intune-app-sdk"></a>Intune Uygulama SDK'sı
+
 Uygulama SDK'sı temel olarak App Store veya Google Play Store’da uygulamaları olan ve uygulamaları Intune ile yönetebilmek isteyen müşteriler için tasarlanmıştır. Ancak, bir iş kolu uygulaması olsa bile SDK’yı tümleştirme özelliğinden her uygulama yararlanabilir.
 
 SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](app-sdk.md). SDK’yı kullanmaya başlamak için bkz. [Microsoft Intune Uygulama SDK’sını Kullanmaya Başlama](app-sdk-get-started.md).
 
 ### <a name="reasons-to-use-the-sdk"></a>SDK kullanma nedenleri
+
 * Uygulamanız yerleşik veri koruma özelliklerine sahip değil
 * Uygulamanız karmaşık ve birçok deneyim içeriyor
 * Uygulamanız Google Play veya Apple App Store gibi genel bir uygulama mağazasında dağıtılmış
@@ -74,10 +76,12 @@ SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](app-sdk.md). S
 |**Android**|Evet – [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
 |**Outlook Web Access (OWA)**| Evet - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Yukarıda listelenen bir uygulama geliştirme platformu kullanmıyor musunuz? 
+### <a name="not-using-an-app-development-platform-listed-above"></a>Yukarıda listelenen bir uygulama geliştirme platformu kullanmıyor musunuz?
+
 Intune SDK geliştirme ekibi etkin bir şekilde sınar ve yerel Android, iOS (obj-C, Swift), Xamarin, Xamarin. Forms ve Cordova platformlarıyla oluşturulmuş uygulamalar için destek sağlar. Bazı müşteriler, bir Kullanıcı ve NativeScript gibi diğer platformlarla Intune SDK tümleştirmesi ile başarılı olmuş olsa da, desteklenen platformlarımızdan başka herhangi bir şeyi kullanarak uygulama geliştiricileri için açık rehberlik veya eklentiler sağlamayız. 
 
 ## <a name="feature-comparison"></a>Özellik karşılaştırması
+
 Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğiniz ayarlar listelenmektedir.
 
 > [!NOTE]

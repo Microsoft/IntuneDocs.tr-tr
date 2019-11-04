@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999674"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415054"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 'da desteklenen işletim sistemleri ve tarayıcılar
 
@@ -37,14 +37,14 @@ Yapılandırma hizmeti sağlayıcısı desteği hakkında daha fazla bilgi için
 
 Aşağıdaki işletim sistemlerini çalıştıran cihazları yönetebilirsiniz:
 
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Desteklenen Samsung Knox Standard cihazları
 
 MDM kaydını önleyen Knox etkinleştirme hatalarının önüne geçmek için Şirket Portalı uygulaması, yalnızca cihazın [desteklenen Knox cihazları listesinde](https://www.samsungknox.com/knox-supported-devices/knox-workspace) görüntülendiği durumlarda MDM kaydı sırasında Samsung Knox etkinleştirmesi yapmaya çalışır. Samsung Knox etkinleştirmesini desteklemeyen cihazlar, standart Android cihazlar olarak kaydedilir. Bir Samsung cihazının Knox’u destekleyen model numaraları olabilir, diğerlerinin olamaz. Samsung cihazlar satın alıp dağıtmadan önce, cihazınızın kurumsal bayisinden Knox uyumluluğunu doğrulayın.
 
 > [!NOTE]
-> Samsung Knox cihazlarının kaydı için [Samsung sunucularına erişimi etkinleştirmeniz](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers) gerekebilir. 
+> Samsung Knox cihazlarının kaydı için [Samsung sunucularına erişimi etkinleştirmeniz](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers) gerekebilir.
 
 Aşağıdaki listede adı geçen Samsung cihaz modelleri, Knox desteklemez. Android için Şirket Portalı tarafından yerel Android cihazlar olarak kaydedilirler:
 
@@ -85,18 +85,17 @@ Aşağıdaki listede adı geçen Samsung cihaz modelleri, Knox desteklemez. Andr
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### <a name="windows-pc-software-client"></a>Windows bilgisayarı yazılım istemcisi
 
-Bir [Intune yazılım istemcisi](../manage-windows-pcs-with-microsoft-intune.md) alternatif bir kayıt yöntemi olarak Windows bilgisayarlara dağıtılabilir ve yüklenebilir. Bu işlev, yalnızca klasik Intune portalında kullanılabilir. Intune yazılım istemcisini, Windows 7 ve üzerini (Windows 10 Home Edition dışında) çalıştıran bilgisayarları yönetmek için kullanabilirsiniz.
+Bir [Intune yazılım istemcisi](manage-windows-pcs-with-microsoft-intune.md) alternatif bir kayıt yöntemi olarak Windows bilgisayarlara dağıtılabilir ve yüklenebilir. Bu işlev, yalnızca klasik Intune portalında kullanılabilir. Intune yazılım istemcisini, Windows 7 ve üzerini (Windows 10 Home Edition dışında) çalıştıran bilgisayarları yönetmek için kullanabilirsiniz.
 
 > [!Note]
 > Microsoft, Windows 7 desteğinin 14 Ocak 2020 tarihinde bittiğini duyurmuştur. Aynı tarihte Intune'da Windows 7 çalıştıran cihazlar için desteğini kaldıracaktır.
-
-> Daha fazla bilgi için bkz [. Intune için değişiklik planı: Windows 7 için destek sonuna yaklaşma](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
-
+>
+> Daha fazla bilgi için bkz [. Intune için değişiklik planı: Windows 7 için destek sonuna yaklaşma](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+>
 > Microsoft Intune, 15 Ekim 2020 ' de Silverlight tabanlı Intune Konsolu desteğini devre dışı bırakacaktır. Bu kullanımdan kaldırma, Silverlight konsolu yapılandırılmış bılgısayar yazılım istemcisi (bılgısayar Aracısı olarak da bilinir) için son desteği içerir
-
+>
 > Daha fazla bilgi için bkz [. Silverlight tabanlı yönetim konsolu için Microsoft Intune desteğini sonlandırma](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
 
 <!--  ### Exchange ActiveSync management
@@ -107,24 +106,23 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 Farklı yönetim görevleri aşağıdaki yönetim web sitelerinden birini kullanmanızı gerektirir.
 
-- [Microsoft 365 Yönetim Merkezi](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 Yönetim Merkezi](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure portalı](https://portal.azure.com/)
 
 Bu portallar için aşağıdaki tarayıcılar desteklenir:
+
 - Microsoft Edge (en son sürüm)
 - Microsoft Internet Explorer 11
 - Safari (en so sürüm, yalnızca Mac)
 - Chrome (en son sürüm)
 - Firefox (en son sürüm)
 
-
-
-
 ### <a name="intune-classic-portal"></a>Intune klasik portalı
 
 Klasik Intune portalı yalnızca Intune PC yazılım istemcisi (https://manage.microsoft.com) ' a kaydedilmiş cihazların yönetilmesi için kullanılır. Klasik Intune portalı, Silverlight tarayıcı desteği gerektirir.
 
 Aşağıdaki Silverlight tarayıcıları klasik Intune konsolunu destekler:
+
 - Internet Explorer 10 veya üstü
 - Google Chrome (42. sürümden önceki sürümler)
 - Silverlight özellikli Mozilla Firefox (sürüm 56 ' den önceki sürümler)

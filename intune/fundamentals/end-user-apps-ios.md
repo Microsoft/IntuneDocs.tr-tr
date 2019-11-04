@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc298691ea3df923d1804005be61217325f52112
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510276"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413990"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS kullanıcılarınız uygulamalarını nasıl alır
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Microsoft Intune aracılığıyla dağıttığınız uygulamaları son kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın.
 
@@ -48,12 +46,12 @@ Kayıtlı kullanıcılar, Şirket Portalı uygulamasının Uygulamalar ekranınd
 
 - **Kategoriler**, Şirket Portalı web sitesinin KATEGORİLER sekmesine yönlendirir.
 
-
 ![iOS Şirket Portalı uygulaması ekranı](./media/end-user-apps-ios/ios-cp-app-main-apps-screen.png)
 
 Uygulama ekleme hakkında bilgi için bkz. [Microsoft Intune’a uygulama ekleme](../apps/apps-add.md).
 
 ## <a name="see-also"></a>Ayrıca bkz:
+
 [Android kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-android.md)
 
 [Windows kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-windows.md)

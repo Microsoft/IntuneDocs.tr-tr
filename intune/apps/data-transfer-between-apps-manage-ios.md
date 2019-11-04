@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db583b1fc89edf72f329a605cc86363593eaaa9d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497905"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414630"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 
@@ -51,7 +51,7 @@ Kullanıcı UPN ayarını yapılandırmak, kayıtlı Kullanıcı hesabını tan�
 
 3. Aşağıdaki uygulama yapılandırma ayarlarıyla uygulamayı yönetilen cihaza dağıtın:
 
-      **anahtar** = ıntunemamupn, **değer** =  @ no__t-3
+      **anahtar** = ıntunemamupn, **değer** = <username@company.com>
 
       Örnek: [‘IntuneMAMUPN’, ‘janellecraig@contoso.com’]
       
@@ -68,7 +68,7 @@ Kullanıcı UPN ayarını yapılandırmak, kayıtlı Kullanıcı hesabını tan�
 
 2. Uygulama Yapılandırması bölümünde aşağıdaki ayarı girin:
 
-   **anahtar** = ıntunemamupn, **değer** =  @ no__t-3
+   **anahtar** = ıntunemamupn, **değer** = <username@company.com>
 
    Anahtar/değer çiftinin tam söz dizimi, üçüncü taraf MDM sağlayıcınıza göre farklılık gösterebilir. Aşağıdaki tabloda, üçüncü taraf MDM sağlayıcılarının örnekleri ve anahtar/değer çifti için girmeniz gereken tam değerler gösterilmektedir.
 
@@ -81,7 +81,7 @@ Kullanıcı UPN ayarını yapılandırmak, kayıtlı Kullanıcı hesabını tan�
    |ManageEngine Mobil Cihaz Yöneticisi | IntuneMAMUPN | Dize | %upn% |
 
 > [!NOTE]  
-> İOS 'ta Outlook uygulaması için, "yapılandırma tasarımcısını kullanma" seçeneğiyle bir uygulama yapılandırma Ilkesi dağıtırsanız, ilke için arka planda otomatik olarak yapılandırma anahtarı ıntunemamupn yapılandırma anahtarı yapılandırılır. [Yeni Outlook for iOS ve Android uygulama yapılandırma Ilkesi deneyimi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)hakkında daha fazla bilgi için bkz. genel uygulama yapılandırması. 
+> İOS için Outlook için, "yapılandırma Tasarımcısı 'nı kullanma" seçeneğiyle yönetilen bir cihazlar uygulama yapılandırma Ilkesi dağıtırsanız ve **yalnızca iş veya okul hesaplarına Izin ver**' i etkinleştirirseniz, ıntunemamupn yapılandırma anahtarı arka planda otomatik olarak yapılandırılır ilkesi için. Daha fazla ayrıntı [için, yeni Outlook for iOS ve Android uygulama yapılandırma Ilkesi deneyimi-genel uygulama yapılandırması](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)konusundaki SSS bölümünde bulabilirsiniz. 
 
 
 ### <a name="example-2-end-user-experience"></a>Örnek 2: Son kullanıcı deneyimi

@@ -17,16 +17,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a9fb3e006489603a04039e0810684a6fef152dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510296"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414064"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 > [!NOTE]
 > Aşağıdaki bilgiler yalnızca Android 6.0 + ve iOS 10 + cihazları için geçerlidir.
@@ -42,9 +40,11 @@ Son kullanıcıların Şirket Portalı'nda görebileceği farklı uygulama ileti
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?
 
 ### <a name="where-it-appears"></a>Göründüğü yer
+
 **Şirket Portalı’nın telefon çağrıları yapmasına ve çağrıları yönetmesine izin verilsin mi?** iletisi, kullanıcılar cihazlarını kaydederken Şirket Portalı uygulamasında **Kaydol**’a dokunduklarında görünür.
 
 ### <a name="what-it-means"></a>Anlamı
+
 Bu istemi kabul ederek, kullanıcılar, cihazlarının telefon ve IMEI numaralarının Intune hizmetine gönderilmesine izin vermiş olur. Bunlar, yönetim konsolundaki __Donanım__ sayfasında görünür.
 
 > [!NOTE]
@@ -53,6 +53,7 @@ Bu istemi kabul ederek, kullanıcılar, cihazlarının telefon ve IMEI numaralar
 **Donanım** sayfasını görmek için, **Gruplar** > **Tüm mobil cihazlar** > **Cihazlar**’a gitmeniz gerekir. Kullanıcının cihazını seçin ve **Özellikleri Görüntüle** > **Donanım**’a gidin.
 
 ### <a name="what-happens-if-users-deny-access"></a>Kullanıcılar erişimi reddederse ne olur
+
 Kullanıcıların erişimi reddederse, Şirket Portalı uygulamasını kullanmaya ve cihazlarını kaydetmeye devam edebilirler. Ancak, cihazın telefon numarası ile IMEI numarası, Yönetim konsolundaki __Donanım__ sayfasında boş olacaktır. Kullanıcılar, erişimi reddettikten sonra Şirket Portalı uygulamasında ikinci kez oturum açtığında, kullanıcıların istemi durdurmak için seçebileceği **Bir daha sorma** onay kutusu görüntülenir.
 
 Kullanıcılar erişime izin verip daha sonra erişimi reddederse kullanıcıların kayıt işleminin ardından Şirket Portalı uygulamasında bir sonraki oturum açışlarında ileti görüntülenir.
@@ -60,20 +61,24 @@ Kullanıcılar erişime izin verip daha sonra erişimi reddederse kullanıcılar
 Kullanıcılar daha sonra erişime izin vermeye karar verirse, **Ayarlar** > **Uygulamalar** > **Şirket Portalı** > **İzinler** > **Telefon**’a gidebilir ve ardından izni etkinleştirebilirler.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Bunu kullanıcılarınıza açıklama
+
 Daha fazla bilgi için kullanıcılarınızı [Android cihazınızı Intune'a kaydetme](/intune-user-help/enroll-device-android-company-portal) bölümüne yönlendirin.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Şirket Portalı’nın, kişilerinize erişmesine izin verilsin mi?
 
 ### <a name="where-it-appears"></a>Göründüğü yer
+
 **Şirket Portalı’nın kişilerinize erişmesine izin verilsin mi?** iletisi, kullanıcılar cihazlarını kaydederken Şirket Portalı uygulamasında **Kaydol**’a dokunduklarında görünür.
 
 ### <a name="what-it-means"></a>Anlamı
+
 Bu istem kabul edildiğinde, kullanıcılar Intune’un kendileri için iş hesabı oluşturmasına ve o cihazdaki kullanıcı için kaydedilen Azure Active Directory kimliğini yönetmesine izin vermiş olur.
 
 > [!NOTE]
 > **Microsoft kişilerinize hiçbir zaman erişmez!** İleti metni Google tarafından denetlenir ve değiştirilemez.
 
 ### <a name="what-happens-if-users-deny-access"></a>Kullanıcılar erişimi reddederse ne olur
+
 Kullanıcılar erişime izin vermezse, cihazları Intune’a kaydedilmez ve yönetilemez. Kullanıcılar, erişimi reddettikten sonra Şirket Portalı uygulamasında ikinci kez oturum açtığında, kullanıcıların istemi durdurmak için seçebileceği **Bir daha sorma** onay kutusu görüntülenir.
 
 Kullanıcılar erişime izin verip daha sonra erişimi reddederse ileti, kullanıcılar kayıt işleminin ardından Şirket Portalı uygulamasında bir sonraki sefer oturum açtığında görüntülenir.
@@ -81,31 +86,37 @@ Kullanıcılar erişime izin verip daha sonra erişimi reddederse ileti, kullan�
 Kullanıcılar daha sonra erişime izin vermeye karar verirse, **Ayarlar** > **Uygulamalar** > **Şirket Portalı** > **İzinler** > **Telefon**’a gidebilir ve ardından izni etkinleştirebilirler.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Bunu kullanıcılarınıza açıklama
+
 Daha fazla bilgi için kullanıcılarınızı [Android cihazınızı Intune'a kaydetme](/intune-user-help/enroll-device-android-company-portal) bölümüne yönlendirin.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>Şirket Portalı’nın cihazınızdaki fotoğraflara, medyaya ve dosyalara erişmesine izin verilsin mi?
 
 ### <a name="where-it-appears"></a>Göründüğü yer
+
 **Şirket Portalı'na, cihazınızdaki resimlere, medyaya ve dosyalara erişim izni verilsin mi?** iletisi, kullanıcılar, veri günlüklerini BT yöneticilerine göndermek üzere **Verileri Gönder**’e dokunduğunda görünür.
 
 ### <a name="what-it-means"></a>Anlamı
+
 Bu istem kabul edildiğinde kullanıcılar, veri günlüklerinin cihazın SD kartına yazılmasına izin verir. Bu ayrıca günlüklerin bir USB kablosu kullanılarak taşınmasını sağlar.   
 
 > [!NOTE]
 > **Şirket Portalı uygulaması hiçbir zaman kullanıcının fotoğraflarına, medyasına ve dosyalarına erişmez!** İleti metni Google tarafından denetlenir ve değiştirilemez.
 
 ### <a name="what-happens-if-users-deny-access"></a>Kullanıcılar erişimi reddederse ne olur
+
 Kullanıcılar erişimi reddederse, veri günlüklerini e-posta ile yine gönderebilirler, ancak günlükler cihazın SD kartına kopyalanmaz.
 
 Kullanıcılar, erişimi reddettikten sonra Şirket Portalı uygulamasında ikinci kez oturum açtığında, kullanıcıların iletinin bir daha görüntülenmemesini seçebilmesi için **Bir daha sorma** onay kutusu görüntülenir. Kullanıcılar erişime izin verip daha sonra erişimi reddederse ileti, kullanıcılar günlükleri tekrar göndermeye çalıştığında görüntülenir. Ancak kullanıcılar daha sonra erişime izin vermeye karar verirse **Ayarlar** > **Uygulamalar** > **Şirket Portalı** > **İzinler** > **Depolama**’ya gidip izni etkinleştirebilir.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>Bunu kullanıcılarınıza açıklama
+
 Kullanıcılarınızı [Günlükleri e-posta ile BT yöneticinize gönderme](/intune-user-help/send-logs-to-your-it-admin-by-email-android) bölümüne yönlendirin. 
 
 ## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>Şirketinizin destek birimi, size şirket kaynakları erişimi sağlamalıdır
 
 ### <a name="where-it-appears"></a>Göründüğü yer
+
 Şirket Portalı uygulamasını **İzin verilen uygulamalar** veya **Muaf uygulamalar** listesine eklemediyseniz ve bir kullanıcı oturum açmaya çalışırsa oturum açma işlemi başarısız olur. Aşağıdaki ileti görüntülenir:
 
 > **Şirketinizin destek birimi, size şirket kaynakları erişimi sağlamalıdır**  
@@ -118,11 +129,13 @@ Kullanıcılarınızı [Günlükleri e-posta ile BT yöneticinize gönderme](/in
 ## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>iOS cihazınızda iOS şirket uygulamasını (iş kolu uygulaması) onaylama 
 
 ### <a name="where-it-appears"></a>Göründüğü yer
+
 Cihazınız, kuruluşunuz tarafından geliştirilen ancak App Store'da bulunmayan iOS uygulamalarına varsayılan olarak güvenmez. Bu tür uygulamaları Şirket Portalı'ndan yükleyip çalıştırdığınızda aşağıdaki ileti görüntülenir:
 
 ![iOS uygulaması iletisi - Güvenilmeyen Kurumsal Geliştirici](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
 
 ### <a name="what-it-means"></a>Anlamı
+
 Bu ileti, şirketiniz tarafından geliştirilen bir uygulamayı iOS cihazınızda onaylamak ve yüklemek için iOS cihazı ayarlarınızı değiştirmeniz gerektiğini belirtir.
 
 Bu tür uygulamaları Şirket Portalı'ndan yükleyip çalıştırmak için indirdikten sonra aşağıdaki adımları izleyerek onaylamanız gerekir:

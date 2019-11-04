@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509990"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415154"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 
@@ -36,6 +36,23 @@ Bir çalışan ya da öğrenciyseniz, Şirket Portalı yardım belgelerinin ekra
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>28 Ekim 2019 haftası  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Android için Şirket Portalı App 'te geliştirilmiş denetim listesi tasarımı <!-- 5550857 -->  
+Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif bir tasarım ve yeni simgelerle güncelleştirilmiştir. Değişiklikler, iOS için Şirket Portalı uygulamasına yapılan son güncelleştirmelerle birlikte hizalanır. Uygulama güncelleştirmelerini tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek için çalışıyoruz. Güncelleştirilmiş kayıt adımlarına bakmak için bkz. [Android iş profiline kaydolma](/intune-user-help/enroll-device-android-work-profile) ve [Android cihazınızı kaydetme](/intune-user-help/enroll-device-android-company-portal).  
+
+Aşağıdaki ekranlar, Android iş profili kaydı için güncelleştirilmiş denetim listesini gösterir:
+
+|Güncellendi|Öncekini|  
+|---|---|  
+|![Şirket Portalı 'de iş profili kurulumunun örnek görüntüsü, Basitleştirilmiş denetim listesi ve yeni simgeler gösteriliyor.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Bir busier denetim listesi gösteren Şirket Portalı önceki iş profili kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+Aşağıdaki ekranlar, Android Cihaz Yöneticisi kaydı için güncelleştirilmiş denetim listesini gösterir:  
+
+|Güncellendi|Öncekini|  
+|---|---|  
+|![Şirket Portalı 'de, Basitleştirilmiş denetim listesi ve yeni simgeleri gösteren Android Cihaz Yöneticisi kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/android-checklist-1911.png)|![Bir busier denetim listesi gösteren Şirket Portalı önceki Android Cihaz Yöneticisi kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>9 Eylül 2019 haftası
 
@@ -572,6 +589,6 @@ Bunlar, kullanıcı arabirimimizi güncelleştirerek kullanıcı deneyimini geli
 
 
 ## <a name="see-also"></a>Ayrıca bkz:
-* [Microsoft Intune Blogu](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Microsoft Intune Blogu](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform yol haritası](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune’daki yenilikler](../whats-new.md)
+* [Intune’daki yenilikler](whats-new.md)

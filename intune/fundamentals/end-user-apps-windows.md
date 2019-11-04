@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cd4dd270d276969d759bc9a9dccef80b281251
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502933"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414589"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows kullanıcılarınız uygulamalarını nasıl alır
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Microsoft Intune aracılığıyla dağıttığınız uygulamaları kullanıcılarınızın nasıl ve nereden alacağını anlamak için bu bilgileri kullanın.
 
@@ -39,5 +37,6 @@ Microsoft Intune aracılığıyla dağıttığınız uygulamaları kullanıcıla
 **Yönetilmeyen uygulamalar**, ilkeler aracılığıyla yönetilebilen ve Intune tarafından sarmalanmamış veya Intune Uygulama SDK’sını içermeyen uygulamalardır. Bu uygulamalara uygulama koruma ilkeleri uygulanamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz:
+
 [Android kullanıcılarınız uygulamalarını nasıl alır?](end-user-apps-android.md)
 [iOS kullanıcılarınız uygulamalarını nasıl alır?](end-user-apps-android.md)

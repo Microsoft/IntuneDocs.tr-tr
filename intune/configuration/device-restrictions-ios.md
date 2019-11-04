@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785516"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414685"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
@@ -146,7 +146,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 > Örneğin, **parola süre sonu** ayarını yapılandırır ve bu ilkeyi Kullanıcı tarafından kaydedilen cihazlara gönderirsiniz. Cihazlarda aşağıdakiler olur:
 >
 > - **Parola süre sonu** ayarı yok sayılır.
-> - @No__t_0 veya `1234` gibi basit parolalara izin verilmez.
+> - `1111` veya `1234`gibi basit parolalara izin verilmez.
 > - 6 basamaklı bir PIN zorlanır.
 
 - **Basit parolalar**: daha karmaşık parolalar Istemek için **Engelle** ' yi seçin. **Yapılandırılmadı** ayarı `0000` ve `1234` gibi basit parolalara izin verir.
@@ -167,7 +167,33 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
   iOS, bu ayarı etkileyebilecek yerleşik güvenliğe sahiptir. Örneğin, iOS, oturum açma hatalarının sayısına bağlı olarak ilkeyi tetikleyebilir. Aynı zamanda aynı geçiş kodunu bir girişimlerle tekrar girmeyi de düşünebilirsiniz. Apple 'ın [iOS Güvenlik Kılavuzu](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (Apple 'ın Web sitesini açar) iyi bir kaynaktır ve Passcodes hakkında daha ayrıntılı bilgiler sağlar.
   
 - **Parola istenmeden önce ekran kilitlenmesinden sonraki en fazla dakika**<sup>1</sup>: kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalacağını girin. Girdiğiniz süre cihazda şu anda ayarlanmış olan süreden uzunsa, cihaz girdiğiniz süreyi yoksayar. iOS 8.0 ve daha yeni cihazlarda desteklenir.
-- **Ekran kilitlenmeden önce geçmesi gereken en fazla dakika**sayısı<sup>1</sup>: ekran kilitlenmeden önce cihazda izin verilen en fazla dakika cinsinden süre sayısını girin. Girdiğiniz süre cihazda şu anda ayarlanmış olan süreden uzunsa, cihaz girdiğiniz süreyi yoksayar. **Hemen**olarak ayarlandığında ekran, cihazın en kısa zamanına bağlı olarak kilitlenir. İPhone 'da 30 saniyedir. İPad 'de bu iki dakikadır.
+
+- **Ekran kilitlenmeden önce geçmesi gereken en fazla dakika**sayısı<sup>1</sup>: ekran kilitlenmeden önce cihazda izin verilen en fazla dakika cinsinden süre sayısını girin.
+
+  **iOS seçenekleri**:  
+
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayara dokunmaz.
+  - **Hemen**: 30 saniyelik işlem yapılmadan sonra ekran kilitleri.
+  - **1**: 1 dakikalık bir işlem yapılmadan sonra ekran kilitleri.
+  - **2**: 2 dakikalık bir işlem yapılmadan sonra ekran kilitleri.
+  - **3**: 3 dakikalık bir işlem yapılmadan sonra ekran kilitleri.
+  - **4**: 4 dakikalık bir işlem yapılmadan sonra ekran kilitleri.
+  - **5**: 5 dakikalık bir işlem yapılmadan sonra ekran kilitleniyor.
+    
+  **ıpados seçenekleri**:  
+
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayara dokunmaz.
+  - **Hemen**: 2 dakikalık bir işlem yapılmadan sonra ekran kilitleri.
+  - **2**: 2 dakikalık bir işlem yapılmadan sonra ekran kilitleri.
+  - **5**: 5 dakikalık bir işlem yapılmadan sonra ekran kilitleniyor.
+  - **10**: 10 dakikalık bir işlem yapılmadan sonra ekran kilitleniyor.
+  - **15**: 15 dakika etkin olmadığında ekran kilitleri.
+
+  Bir değer iOS veya ıpados için uygulanmazsa, Apple en yakın *En düşük* değeri kullanır. Örneğin, `4` dakika girerseniz, ıpados cihazları `2` dakika kullanır. `10` dakika girerseniz, iOS cihazları `5` dakika kullanır. Bu bir Apple kısıtlamasıdır.
+  
+  > [!NOTE]
+  > Bu ayar için Intune kullanıcı arabirimi iOS ve ıpados tarafından desteklenen değerleri birbirinden ayırır. Kullanıcı arabirimi gelecek bir sürümde güncelleştirilmiş olabilir.
+
 - **Parola kullanım süresi (gün)** : cihaz parolasının değiştirilmesi gereken gün sayısını girin.
 - **Önceki parolaların yeniden kullanılmasını engelle**: eski bir parolanın yeniden kullanılabilmesi için kullanılması gereken yeni parola sayısını girin.
 - **Dokunma kimliği ve yüz kimliği kilit açma**: cihazın kilidini açmak için parmak izini veya yüzü kullanmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının bu yöntemleri kullanarak cihazın kilidini açmasına izin verir.
