@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507575"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592086"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak web erişimini yönetme
 
@@ -179,7 +179,7 @@ Yukarıdaki yordamı kullanarak bir Microsoft Edge uygulama yapılandırması ol
 > [!NOTE]
 > Uygulama yapılandırmasında belirtilen Microsoft Edge ve ilişkili uygulamaları yöneten uygulama koruma ilkesinde aşağıdaki veri koruma ilkesi ayarlarının ayarlandığından emin olun:
 > - Diğer uygulamalara kuruluş verileri gönderme: **ilkeyle yönetilen uygulamalar**
-> - İlke ile yönetilen tarayıcılarla Web içeriği paylaşma: **gerektir**
+> - Diğer uygulamalarla Web içeriği aktarımını kısıtla: **ilkeyle yönetilen tarayıcılar**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Korumalı tarayıcılar için Uygulama Ara Sunucusu ayarlarını yapılandırma
 

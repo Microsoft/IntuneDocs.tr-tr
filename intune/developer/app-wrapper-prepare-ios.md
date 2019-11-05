@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 98672a0f292ffd1e6c43b2b9696c345c0decb41b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413868"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592105"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -289,26 +289,27 @@ Uygulama sarmalama aracı başarılı bir şekilde tamamlanamazsa, konsolda aşa
 |Belirttiğiniz giriş uygulaması zaten sarmalanmış ve ilke şablonunun son sürümünde yer alıyor.|Uygulama Sarmalama Aracı, var olan bir sarmalanmış uygulamayı ilkesi şablonunun son sürümü ile yeniden sarmalamaz.|
 |UYARI: SHA1 sertifika karması belirtmediniz. Sarmalanan uygulamanızı dağıtmadan önce mutlaka imzalayın.|Geçerli bir SHA1 karması belirttiğinizden –c komut satırı bayrağını takip ederek emin olun. |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı için günlük dosyaları
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Cihazdan sarmalanmış uygulamalarınız için Günlükler toplanıyor
+Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini almak için aşağıdaki adımları kullanın.
 
-Uygulama Sarmalama Aracı kullanılarak sarmalanan uygulamalar, iOS istemci cihaz konsoluna yazılan günlükler oluşturur. Bu bilgiler, uygulamayla ilgili sorun yaşadığınızda ve sorunun Uygulama Sarmalama Aracı ile ilişkili olup olmadığını belirlemeniz gerektiğinde yararlıdır. Bu bilgileri almak için aşağıdaki adımları kullanın:
+1. Cihazınızda iOS Ayarları uygulamasına gidin ve LOB uygulamanızı seçin.
+2. **Tanılama Konsolu** düğmesini **Açık** duruma getirin.
+3. LOB uygulamanızı başlatın.
+4. "Başlarken" bağlantısına tıklayın.
+5. Artık uygulamaları e-posta aracılığıyla veya bir OneDrive konumuna kopyalayarak paylaşabilirsiniz.
+
+> [!NOTE]
+> Günlük işlevi, Intune Uygulama Sarmalama Aracı sürüm 7.1.13 veya üstüyle sarmalanmış uygulamalar için etkinleştirilir.
+
+### <a name="collecting-crash-logs-from-the-system"></a>Sistemden kilitlenme günlüklerini toplama
+
+Uygulamanız, iOS istemci cihaz konsoluna yararlı bilgileri günlüğe kaydetmeye başlayabilir. Bu bilgiler, uygulamayla ilgili sorun yaşadığınızda ve sorunun uygulama sarmalama aracı ya da uygulamanın kendisi ile ilişkili olup olmadığını belirlemeniz gerektiğinde faydalıdır. Bu bilgileri almak için aşağıdaki adımları kullanın:
 
 1. Uygulamayı çalıştırarak sorunu yeniden oluşturun.
 
 2. Apple tarafından sunulan [Dağıtılan iOS Uygulamalarının Hatalarını Ayıklama](https://developer.apple.com/library/ios/qa/qa1747/_index.html)yönergelerini izleyerek konsol çıkışını alın.
 
-3. Konsola aşağıdaki betiği girerek Uygulama Kısıtlamaları çıkışı için kaydedilen günlükleri filtreleyin:
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    Filtrelenmiş günlükleri Microsoft'a gönderebilirsiniz.
-
-    > [!NOTE]
-    > Günlük dosyasında, 'yapı sürümü' öğesi, Xcode yapı sürümünü temsil eder.
-
-    Sarmalanan uygulamalar, mevcut kullanıcılara da uygulama kilitlendikten sonra doğrudan cihazdan e-posta yoluyla günlükleri gönderme seçeneği sunar. Kullanıcılar, incelemeniz ve gerekiyorsa Microsoft'a iletmeniz için günlükleri size gönderebilir.
+Sarmalanan uygulamalar, mevcut kullanıcılara da uygulama kilitlendikten sonra doğrudan cihazdan e-posta yoluyla günlükleri gönderme seçeneği sunar. Kullanıcılar, incelemeniz ve gerekiyorsa Microsoft'a iletmeniz için günlükleri size gönderebilir.
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Sertifika, sağlama profili ve kimlik doğrulaması gereksinimleri
 
@@ -442,19 +443,6 @@ Yalnızca genel uygulama sarmalama komutunu sonuna `-citrix` bayrağı eklenmiş
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>Sarmalanmış uygulamalarınız için günlükleri alma
-
-Sorun giderme sırasında sarmalanmış uygulamalarınızın günlüklerini almak için aşağıdaki adımları kullanın.
-
-1. Cihazınızda iOS Ayarları uygulamasına gidin ve LOB uygulamanızı seçin.
-2. **Tanılama Konsolu** düğmesini **Açık** duruma getirin.
-3. LOB uygulamanızı başlatın.
-4. "Başlarken" bağlantısına tıklayın.
-5. Artık uygulamaları e-posta aracılığıyla veya bir OneDrive konumuna kopyalayarak paylaşabilirsiniz.
-
-> [!NOTE]
-> Günlük işlevi, Intune Uygulama Sarmalama Aracı sürüm 7.1.13 veya üstüyle sarmalanmış uygulamalar için etkinleştirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz:
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6886060cce77004b107dac02ecea57f2090ac8f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503473"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592015"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -63,7 +63,7 @@ Size ulaşmak ve kayıt işlemine devam etmek için anket yanıtlarınızda list
 Uygulamanızın ayrıntılı bağlantısı gelecekte değişirse, uygulamanızı yeniden kaydetmeniz gerekir.
 
 > [!NOTE]
-> Uygulamanızı Intune Uygulama SDK'sının yeni bir sürümüyle güncelleştirirseniz bunu lütfen bize bildirin.
+> Uygulamanızı Intune uygulama SDK 'sının yeni bir sürümüyle güncelleştirirseniz bize bildirmeniz gerekir.
 
 ## <a name="download-the-sdk-files"></a>SDK dosyalarını indirme
 
@@ -72,7 +72,7 @@ Yerel iOS ve Android için Intune Uygulama SDK'ları bir Microsoft GitHub hesab�
 * [iOS için Intune Uygulama SDK'sı](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Android için Intune Uygulama SDK'sı](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Uygulamanız bir Xamarin uygulaması ise lütfen şu SDK çeşidini kullanın:
+Uygulamanız bir Xamarin uygulaması ise, bu SDK türevini kullanın:
 
 * [Intune Uygulama SDK’sı Xamarin Bağlamaları](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 
@@ -181,6 +181,9 @@ Uygulamanızı bir Azure kiracısında kaydettikten ve **tüm uygulamalar**altı
 5. Arama kutusuna **Microsoft Mobil Uygulama Yönetimi** yazın.
 6. **Temsilci izinleri**altında **Devicemanagementmanagedapps. ReadWrite: kullanıcının uygulama yönetimi verilerini okuma ve yazma**onay kutusunu seçin.
 7. **Izin Ekle**' ye tıklayın.
+
+> [!NOTE]
+> Uygulamanız bu kaynağa erişirken bir hata nedeniyle oturum açmanızı kısıtlıyor: https://intunemam.microsoftonline.com, uygulamanızın Istemci KIMLIĞI ile msintuneappsdk@microsoft.com için bir notun gönderilmesi gerekir. Bu, bugün el ile yapılan bir onay işlemidir.
 
 ### <a name="badge-your-app-optional"></a>Uygulamanıza rozet ekleyin (isteğe bağlı)
 

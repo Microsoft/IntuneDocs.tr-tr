@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb7f9167602aa3f5b21e1c042aa3a049f02c952c
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 12c070ec9539e3fd1c87b4e61910a5660700e2bb
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414911"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592039"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
@@ -69,7 +69,7 @@ Android Enterprise, çok uygulama, bilgi noktası modundaki cihazlarda yönetile
 Bilgi noktası ayarlarını görmek için bkz. [Android kurumsal cihaz kısıtlamaları](../configuration/device-restrictions-android-for-work.md).
 
 #### <a name="app-protection-policy-assignment-save-and-apply---3104570---"></a>Uygulama koruma ilkesi ataması Kaydet ve Uygula<!-- 3104570 -->
-Artık [Uygulama koruma ilkesi atamalarınız](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)üzerinde daha iyi denetime sahipsiniz. Bir ilkenin atamalarını ayarlamak veya düzenlemek için *atamalar* ' ı seçtiğinizde, değişikliğin geçerli olması Için yapılandırmanızı **kaydetmelisiniz** . Ekleme veya dışlama listelerinde değişiklik yapmadan yaptığınız tüm değişiklikleri temizlemek için **at** ' i kullanın.  Kaydetmeyi veya atmayı zorunlu kılarak yalnızca sizin istediğiniz kullanıcılara bir uygulama koruma ilkesi atanır.
+Artık [Uygulama koruma ilkesi atamalarınız](../apps/app-protection-policies.md)üzerinde daha iyi denetime sahipsiniz. Bir ilkenin atamalarını ayarlamak veya düzenlemek için *atamalar* ' ı seçtiğinizde, değişikliğin geçerli olması Için yapılandırmanızı **kaydetmelisiniz** . Ekleme veya dışlama listelerinde değişiklik yapmadan yaptığınız tüm değişiklikleri temizlemek için **at** ' i kullanın.  Kaydetmeyi veya atmayı zorunlu kılarak yalnızca sizin istediğiniz kullanıcılara bir uygulama koruma ilkesi atanır.
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later---3174639---"></a>Windows 10 ve üzeri için yeni Microsoft Edge tarayıcı ayarları<!-- 3174639 -->
 Bu güncelleştirme, cihazlarınızda Microsoft Edge tarayıcısını denetlemeye ve yönetmeye yardımcı olacak yeni ayarlar içerir. Bu ayarların listesi için bkz. [Windows 10 Için cihaz kısıtlaması (ve daha yeni)](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser).
@@ -127,7 +127,7 @@ Bu ayarlar hakkında daha fazla bilgi edinmek için bkz. [iOS](../configuration/
 
 #### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview---1048100--"></a>Karma Azure Active Directory katılmış cihazlar için Autopilot desteği (Önizleme)<!-- 1048100-->
 Artık karma Azure Active Directory’ye katılmış olan cihazları Autopilot kullanarak ayarlayabilirsiniz. Hibrit Autopilot özelliğini kullanmak için cihazların kuruluşunuzun ağına katılmış olması gerekir. Daha fazla bilgi için bkz. [Karma Azure Active Directory’ye katılmış olan cihazları Intune ve Windows Autopilot kullanarak dağıtma](../enrollment/windows-autopilot-hybrid.md).
-Bu özellik, kullanıcı tabanının kullanımına gelecek birkaç gün içinde sunulacaktır. Bu nedenle, bu özellik hesabınız için kullanılabilir olana kadar bu adımları uygulayamayabilirsiniz.
+Bu özellik, gelecek birkaç gün içinde kullanıcı tabanının kullanımına sunulacaktır. Dolayısıyla bu özellik hesabınız için kullanılabilir olana kadar bu adımları uygulayamayabilirsiniz.
 
 #### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Kayıt durumu sayfasında izlenen uygulamaları seçin<!-- 2531007 -->
 Kayıt durumu sayfasında hangi uygulamaların izleneceğini seçebilirsiniz. Bu uygulamalar yüklenene kadar, Kullanıcı cihazı kullanamaz. Daha fazla bilgi için bkz. [kayıt durumu sayfası ayarlama](../enrollment/windows-enrollment-status.md).
@@ -294,7 +294,7 @@ Bu ayarın bir iOS VPN profilindeki kullanımı hakkında bilgi için bkz. [Micr
 Önceden, cihazda sadece bir e-posta profilinin *olması* durumunda bu e-posta profilini cihazdan kaldırmak mümkün değildi. Bu güncelleştirme ile bu davranış değişiyor. Artık cihazdaki tek e-posta profilini bile kaldırabilirsiniz. Ayrıntılar için bkz. [Intune kullanarak cihazlara e-posta ayarları ekleme](../configuration/email-settings-configure.md).
 
 #### <a name="powershell-scripts-and-aad---2309469---"></a>PowerShell betikleri ve AAD<!-- 2309469 -->
-Intune’da PowerShell betikleri AAD cihaz güvenlik gruplarına hedeflenebilir.
+Intune’da PowerShell betikleri AAD cihaz güvenlik grupları tarafından hedeflenebilir.
 
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Android, Android Enterprise için yeni "gerekli parola türü" varsayılan ayarı<!-- 2649963 -->
 Yeni bir uyumluluk ilkesi oluşturduğunuzda (**Intune** > **Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Android** veya Platform > Sistem Güvenliği için **Android kurumsal**), **Gerekli parola türü** varsayılan değeri değişir:
@@ -352,7 +352,7 @@ Intune, Configuration Manager aracılığıyla [mevcut cihazlar için Autopilot]
 Intune uygulama koruma ilkeleri, Microsoft Outlook ve Microsoft Word gibi Intune tarafından korunan uygulamalar için çeşitli veri koruma ayarlarını yapılandırmanıza olanak sağlar. Ayrı ayrı ayarların bulunmasını kolaylaştırmak için hem [iOS](../apps/app-protection-policy-settings-ios.md) hem de [Android](../apps/app-protection-policy-settings-android.md) üzerinde bu ayarların görünümünde ve işlevinde değişiklik yaptık. İlke ayarları üç kategoriye ayrılır:
 - **Verileri yeniden konumlandırma** - Bu grup kesme, kopyalama, yapıştırma ve farklı kaydetme kısıtlamaları gibi veri kaybı önleme (DLP) denetimlerini içerir. Bu ayarlar, kullanıcıların uygulamalarda verilerle nasıl etkileşim kurduğunu belirler.
 - **Erişim gereksinimleri** - Bu grup, son kullanıcının uygulamalara iş bağlamında nasıl eriştiğini belirleyen uygulama başına PIN seçenekleri içerir.  
-- **Koşullu başlatma** - Bu grup en düşük işletim sistemi ayarları, jailbreak uygulanmış ve kök erişim izni verilmiş cihazları algılama ve çevrimdışı yetkisiz kullanım süreleri gibi ayarları içerir.  
+- **Koşullu başlatma** - Bu grup; en düşük işletim sistemi ayarları, jailbreak uygulanmış ve kök erişim izni verilmiş cihazları algılama ve çevrimdışı yetkisiz kullanım süreleri gibi ayarları içerir.  
   
 Ayarların işlevselliği değişmedi, ancak ilke yazma akışında çalışırken bu ayarları bulmanız artık daha kolay.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6678b7c3519328623d9c0035c725af3877a36ba8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6600c75ce3e6120143b17fb863670b2eb423a09f
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507062"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592052"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune’a web uygulamaları ekleme
 
@@ -36,7 +36,7 @@ Kullanıcılarınız için uygulamaları yönetebilmek ve atayabilmek için önc
 Intune, kullanıcının cihazında Web uygulaması için bir kısayol oluşturur. İOS cihazlarında, giriş ekranına Web uygulaması için bir kısayol eklenir. Android cihazlarda, Intune şirket portalı pencere öğesine Web uygulaması için bir kısayol eklenir ve pencere öğesinin Kullanıcı tarafından el ile sabitlenilmesi gerekir. Windows cihazlarında, Web uygulamasının bir kısayolu Başlat menüsüne yerleştirilir.
 
 > [!Note]
-> Android iş profili cihazlarında Web uygulamaları desteklenmez. Web uygulamalarını başlatmak için kullanıcının cihazında bir tarayıcı yüklü olmalıdır.
+> Web uygulamalarını başlatmak için kullanıcının cihazında bir tarayıcı yüklü olmalıdır.
 
 ## <a name="add-a-web-app-to-intune"></a>Intune’a bir web uygulaması ekleme
 Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
