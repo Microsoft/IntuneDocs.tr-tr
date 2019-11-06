@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.openlocfilehash: fae163cbcd97feb4f333d8ddfd44f2202dd343d6
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810295"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627698"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune'da Mobil Threat Defense bağlayıcısını etkinleştirme
 
@@ -63,14 +63,14 @@ Klasik koşullu erişim ilkelerini görüntülemek için [Azure](https://portal.
 Kuruluşunuzun gereksinimlerine göre hangi mobil tehdit savunması için etkinleştirmeniz gerektiğine karar verebilirsiniz. Daha fazla ayrıntı aşağıdadır:
 
 **MDM uyumluluk Ilkesi ayarları**
-- \* * Android 4.1 + cihazlarını *\<MTD iş ortağı adına bağlama > * * *: Bu seçeneği etkinleştirdiğinizde, Android 4.1 + cihazların güvenlik riskini Intune 'a geri bildirimini sağlayabilirsiniz.
-- \* * İOS 8.0 + cihazlarını *\<MTD iş ortağı adına bağlama > * * *: Bu seçeneği etkinleştirdiğinizde, iOS 8.0 + cihazların güvenlik riskini Intune 'a geri bildirimini sağlayabilirsiniz.
+- **Android 4.1 + cihazlarını _\<MTD iş ortağı adına bağlama >_** : Bu seçeneği etkinleştirdiğinizde, Android 4.1 + cihazların güvenlik riskini Intune 'a geri bildirimini sağlayabilirsiniz.
+- **İOS 8.0 + cihazlarını _\<MTD iş ortağı adına bağlama >_** : Bu seçeneği etkinleştirdiğinizde, iOS 8.0 + cihazların güvenlik riskini Intune 'a geri raporlamasını sağlayabilirsiniz.
 - **iOS Cihazlar için Uygulama Eşitlemeyi etkinleştir**: Bu Mobil Tehdit Savunması iş ortağının tehdit analizi için kullanmak amacıyla Intune’dan iOS uygulamalarının meta verilerini istemesine izin verir.
 - **Desteklenmeyen işletim sistemi sürümlerini engelle**: Cihaz, desteklenen en düşük sürümden düşük bir işletim sistemi çalıştırıyorsa engellenir.
 
 **Uygulama koruma Ilkesi ayarları**
 - **4,1 ve üzeri sürüm Android cihazlarını uygulama koruma ilkesi değerlendirmesi için *\<MTD iş ortağı adı >* bağlayın**: Bu seçeneği etkinleştirdiğinizde, cihaz tehdit düzeyi kuralını kullanan uygulama koruma ilkeleri cihazları değerlendirir Bu bağlayıcıdaki veriler.
-- **@No__t_2MTD iOS 8,0 cihazlarını uygulama koruma ilkesi değerlendirmesi için *> iş ortağı adına* bağlama**: Bu seçeneği etkinleştirdiğinizde, cihaz tehdit düzeyi kuralını kullanan uygulama koruma ilkeleri, verileri de içeren cihazları değerlentirecektir Bu bağlayıcı.
+- ***\<MTD iş ortağı adı* için iOS cihazları 8,0 ve üzeri bir sürüme bağlanarak uygulama koruma ilkesi değerlendirmesi için >** . bu seçeneği etkinleştirdiğinizde, cihaz tehdit düzeyi kuralını kullanan uygulama koruma ilkeleri, verileri de içeren cihazları değerlentirecektir Bu bağlayıcı.
 
 Intune Uygulama Koruması Ilkesi değerlendirmesi için Mobile Threat Defense bağlayıcıları kullanma hakkında daha fazla bilgi edinmek için bkz. [kayıtlı olmayan cihazlar Için mobil tehdit savunması ayarlama](~/protect/mtd-enable-unenrolled-devices.md).
 

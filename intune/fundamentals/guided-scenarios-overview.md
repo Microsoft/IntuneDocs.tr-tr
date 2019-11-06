@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c88366ea64182ccf8d45bc3e890a2579df20f1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585874"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635359"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Intune destekli senaryolara genel bakış 
 
@@ -46,7 +46,7 @@ Kılavuzlu senaryolar belirli işlevleri sunar. Aşağıdaki ayrıntılar, kıla
 
 ### <a name="launching"></a>Başlatılıyor  
 
-Tüm Kılavuzlu senaryolar **[cihaz yönetim portalından](https://devicemanagement.microsoft.com)**  > **sorun giderme ve yardım**  > **Kılavuzlu senaryolar**aracılığıyla kullanılabilir. 
+Tüm Kılavuzlu senaryolar **[cihaz yönetim portalından](https://devicemanagement.microsoft.com)**  > , **sorun giderme +** **destekli senaryolar** > destek aracılığıyla kullanılabilir. 
 
 Kılavuzlu senaryo, senaryonun amacını ve kurulumu tamamlaması gereken önkoşulları açıklayan bir giriş ile başlar. Bu noktada, senaryoyu tamamlamaya yönelik tüm gerekli ayrıcalıklara sahip olduğunuzu doğrulamak için yönetici izinleriniz denetlenir.  
 

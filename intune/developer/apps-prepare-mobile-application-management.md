@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413823"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635330"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -110,7 +110,7 @@ Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğini
 |Uygulama verilerini tam Temizleme|X|X|
 |Çoklu kimlik senaryolarında iş ve okul verilerinin seçmeli silme <br><br>**Not:** iOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
 |“Farklı Kaydet”i önleme|X||
-|Hedeflenen uygulama yapılandırması (veya "MAM Channel" aracılığıyla uygulama yapılandırması)|X|X|
+|Hedeflenen uygulama yapılandırması (veya "MAM Channel" aracılığıyla uygulama yapılandırması)|X||
 |Çoklu Kimlik Desteği|X||
 |Özelleştirilebilir Stil |X|||
 |Citrix mVPN ile isteğe bağlı uygulama VPN bağlantıları|X|X| 

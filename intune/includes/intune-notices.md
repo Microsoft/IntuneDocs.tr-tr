@@ -4,17 +4,32 @@ description: dosya ekle
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 03/28/2019
+ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415096"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73612191"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
+
+### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Değişiklik planı: Intune 'da Android kurumsal adanmış cihazlarını kaydetme deneyimi güncelleştirildi<!--5198878-->
+Intune 'a Kasım veya 1911 sürümü ile, Wi-Fi profillerine sertifika tabanlı erişim sağlamak için Android kurumsal adanmış cihazlara SCEP cihaz sertifikası dağıtımı desteği ekledik. Bu değişiklik Ayrıca Android kurumsal adanmış cihazları kaydedilirken akış küçük değişiklikler içerir.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Ortamınızdaki Android kurumsal adanmış cihazları yönetiyorsanız, Kasım ayında bazı değişiklikleri kullanıma sunarak çalışmaya başlayabilirsiniz.
+
+- Yeni Android kurumsal adanmış cihaz kayıtları için: son kullanıcılar, kayıt sırasında cihazlarda farklı bir adım kümesi görür. Kayıt, bugün (QR, NFC, sıfır-Touch veya cihaz tanımlayıcısı ile) çalışmaya devam eder, ancak Kasım hizmeti sürümünden sonra zorunlu bir uygulama yüklemesi adımı olacaktır.
+- Adanmış cihazlar olarak kaydedilen mevcut Android cihazları için: Intune, ilk Kasım 'Dan başlayarak cihazlara Microsoft Intune uygulamasını otomatik olarak yüklemeye başlar. Herhangi bir işlem yapmanız gerekmez. Uygulama, cihazlara otomatik olarak indirilir ve yüklenir. 
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+Son Kullanıcı kılavuzunuzu güncelleştirmeyi planlamalısınız ve yardım masanızla bu değişikliği bilmesini sağlayabilirsiniz. Daha fazla ayrıntı ve ekran görüntüsü için ek bilgiler ' e tıklayın. Bu değişiklik kullanıma sunulmaya başladığında yenilikler sayfamızı güncelleştireceğiz.
+
+#### <a name="additional-information"></a>Ek bilgiler
+[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Değişiklik planı: ' Siri komutları için sunucu tarafında günlüğe kaydetme ' ayarı Intune konsolundan kaldırılacak <!-- 5468501-->
 
