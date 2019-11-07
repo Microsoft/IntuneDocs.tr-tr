@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502606"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713293"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune ile uygulama tabanlı koşullu erişim
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 [Intune uygulama koruma ilkeleri](../apps/app-protection-policy.md) Intune’da kayıtlı cihazlarda şirket verilerinizi korumaya yardımcı olur. Uygulama koruma ilkelerini, yönetilmek üzere Intune’da kaydedilmemiş çalışan cihazları üzerinde de uygulayabilirsiniz. Bu durumda, şirketiniz cihazı yönetmiyor olmasına rağmen, şirket verilerinizin ve kaynaklarınızın korunmasını sağlamanız gerekir.
 
@@ -39,6 +37,7 @@ Uygulama tabanlı koşullu erişim ve istemci uygulama yönetimi, yalnızca Intu
 Exchange Online'a yalnızca Microsoft Outlook uygulamasının erişmesine izin verdiğinizde, iOS ve Android üzerindeki yerleşik posta uygulamalarını engelleyebilirsiniz. Ayrıca, Intune uygulama koruma ilkelerinin uygulanmadığı uygulamaların SharePoint Online'a erişmesini engelleyebilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
+
 Uygulama tabanlı bir koşullu erişim ilkesi oluşturmadan önce, şunları yapmanız gerekir:
 
 - **Enterprise Mobility + Security (EMS)** veya bir **Azure Active Directory (AD) Premium aboneliği**
@@ -57,7 +56,7 @@ Uygulama tabanlı koşullu erişim, [iş kolu (LOB) uygulamalarını da destekle
 Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamıştır ve ardından Outlook uygulamasını kurumsal e-postaya erişirken kullanılabilecek onaylanan uygulamalar listesine ekleyen bir koşullu erişim kuralı gelir.
 
 > [!NOTE]
-> Aşağıdaki akış çizelgesi yapısı diğer yönetilen uygulamalar için kullanılabilir.
+> Aşağıdaki akış çizelgesi diğer yönetilen uygulamalar için kullanılabilir.
 
 ![Akış grafiğinde gösterilen uygulama tabanlı koşullu erişim işlemi](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 

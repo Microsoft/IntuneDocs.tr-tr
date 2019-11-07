@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143181"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709324"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durumu sayfası ayarlama
  
@@ -64,14 +64,14 @@ Ayrıca, her bir profilin öncelik sırasını aynı kullanıcıya yönelik çak
 
 Kayıt durumu sayfasını açmak için aşağıdaki adımları izleyin.
  
-1. [Intune](https://aka.ms/intuneportal)'Da, **cihaz kaydı** > **Windows kaydı** > **kayıt durumu sayfası**' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows kaydı** > **kayıt durumu sayfası** > **cihaz kaydı** ' nı seçin.
 2. **Kayıt Durumu Sayfası** dikey penceresinde, **Varsayılan** > **Ayarlar**’ı seçin.
 3. **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**’i seçin.
 4. Açmak istediğiniz diğer ayarları seçin ve **Kaydet**’i seçin.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Kayıt durumu sayfası profili oluşturma ve gruba atama
 
-1. [Intune](https://aka.ms/intuneportal)'da **cihaz kaydı** > **Windows kaydı** > **kayıt durumu sayfası** > **Profil oluştur**' u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Windows kaydı** > **kayıt durumu sayfası** > **Profil oluştur**' u seçin.
 2. Bir **Ad** ve **Açıklama** sağlayın.
 3. **Oluştur**’u seçin.
 4. **Kayıt Durumu Sayfası** listesinde yeni profili seçin.
@@ -82,7 +82,7 @@ Kayıt durumu sayfasını açmak için aşağıdaki adımları izleyin.
 
 Bir kullanıcı birçok grupta olabilir ve birçok kayıt durumu sayfası profili bulunabilir. Bu tür çakışmaları işlemek için her bir profilin önceliklerini ayarlayabilirsiniz. Kaydetme sırasında, birisinin birden fazla kayıt durumu sayfası profili varsa, kaydolan cihaza yalnızca en yüksek öncelikli profil uygulanır.
 
-1. [Intune](https://aka.ms/intuneportal)'Da, **cihaz kaydı** > **Windows kaydı** > **kayıt durumu sayfası**' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows kaydı** > **kayıt durumu sayfası** > **cihaz kaydı** ' nı seçin.
 2. Listede profilin üzerine gelin.
 3. Üç dikey noktayı kullanarak, profili listede dilediğiniz konuma sürükleyin.
 
@@ -90,7 +90,7 @@ Bir kullanıcı birçok grupta olabilir ve birçok kayıt durumu sayfası profil
 
 Kullanıcının masaüstüne erişebilmesi için yüklenmesi gereken uygulamaları belirtebilirsiniz.
 
-1. Intune 'da, **cihaz kaydı** > **Windows kaydı** > **kayıt durumu sayfası**' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows kaydı** > **kayıt durumu sayfası** > **cihaz kaydı** ' nı seçin.
 2. Bir profil seçip **Ayarlar**'a tıklayın.
 3. **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**'i seçin.
 4. **Tüm uygulamalar ve profiller yüklenene kadar cihaz kullanımını engelle** için **Evet**'i seçin.

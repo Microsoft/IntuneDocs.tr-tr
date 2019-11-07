@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39ea8b3859d3d2525433c4cafdf566e7a2c8d2ab
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509208"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709190"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Öğretici - Intune’a cihaz kaydetmek için Windows Autopilot kullanma
 
@@ -60,7 +60,7 @@ Windows Autopilot’ı ayarlamanın ilk adımı, Windows cihazları Intune’a e
 
 2. CSV dosyasını kaydedin.
 
-3. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar** > **İçeri Aktar**’ı seçin.
+3. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Windows kaydı** > **cihazlar** > **içeri aktar**' ı seçin.
 
     ![Windows Autopilot cihazlarının ekran görüntüsü](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
 
@@ -78,7 +78,7 @@ Windows Autopilot’ı ayarlamanın ilk adımı, Windows cihazları Intune’a e
 
 Daha sonra bir cihaz grubu oluşturacak ve az önce yüklediğiniz Autopilot cihazları buraya koyacaksınız.
 
-1. [Azure portalında Intune](https://aka.ms/intuneportal)'da **Gruplar** > **Yeni grup**'u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **gruplar** > **Yeni Grup**' u seçin.
 2. **Gruplar** dikey penceresinde:
     1. **Grup türü** olarak **Güvenlik**’i seçin.
     2. **Grup adı** olarak *Autopilot Grubu* yazın. **Grup açıklaması** olarak *Autopilot cihazlar için test grubu* yazın.
@@ -90,7 +90,7 @@ Daha sonra bir cihaz grubu oluşturacak ve az önce yüklediğiniz Autopilot cih
 
 Bir cihaz grubu oluşturduktan sonra, Autopilot cihazları yapılandırabilmek için bir dağıtım profili oluşturmalısınız.
 
-1. [Azure portalında Intune’da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Dağıtım Profilleri** > **Profil Oluştur**’u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Profil oluştur** > **Windows kaydı** > **dağıtım profilleri** > **cihaz kaydı** ' nı seçin.
 2. **Temel bilgiler** sayfasında, Tor **adı**, *Autopilot profile*girin. **Açıklama** olarak *Autopilot cihazlar için test profili* yazın.
 3. **Tüm hedeflenen cihazları Autopilot’a dönüştür** ayarını **Evet** olarak seçin. Bu ayar, listedeki tüm cihazların Autopilot dağıtım hizmetine kaydolmasını sağlar. Kaydın işlenmesi için 48 saat kadar bekleyin.
 4. **İleri**'yi seçin.
@@ -116,7 +116,7 @@ Artık Autopilot cihazlarını kullanmak istemiyorsanız, bunları silebilirsini
 
 1. Cihazlar Intune’a kayıtlıysa önce bunları [Azure Active Directory portalından silmeniz](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal) gerekir.
 
-2. [Azure portalında Intune'da](https://aka.ms/intuneportal), **Cihaz kaydı** > **Windows kaydı** > **Cihazlar**'ı seçin.
+2. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Windows kayıt** > **cihazları**' nı seçin.
 
 3. **Windows Autopilot cihazları** bölümünde silmek istediğiniz cihazları, sonra da **Sil**'i seçin.
 

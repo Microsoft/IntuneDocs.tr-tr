@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: c06fe931bf17b812def3f22b3d9a5d92d9933e2b
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923386"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709474"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android Kurumsal ayrılmış cihazları için Intune kaydını ayarlama
 
@@ -59,7 +59,7 @@ Android Kurumsal ayrılmış cihaz yönetimini ayarlamak için aşağıdaki adı
 
 Ayrılmış cihazlarınızı kaydedebilmek için bir kayıt profili oluşturmalısınız. Profil oluşturulduktan sonra size bir kayıt belirteci (rastgele dize) ve QR kodu sağlar. Cihazın Android işletim sistemi ve cihazın sürümüne bağlı olarak [ayrılmış cihazı kaydetmek](#enroll-the-dedicated-devices) için belirteci veya QR kodunu kullanabilirsiniz.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz kaydı** > **Android kaydı** > **şirkete ait adanmış cihazlar**' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) ' nde oturum açın ve **cihaz kaydı** > **Android kaydı** > **şirkete ait adanmış cihazlar**' ı seçin.
 2. **Oluştur**’u seçin ve gerekli alanları doldurun.
     - **Ad**: Profili dinamik cihaz grubuna atarken kullanacağınız bir ad yazın.
     - **Belirteç sona erme tarihi**: Belirteç süresinin dolduğu tarih. Google, en fazla 90 günü kabul eder.
@@ -69,7 +69,7 @@ Ayrılmış cihazlarınızı kaydedebilmek için bir kayıt profili oluşturmal�
 
 Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsiniz. Dinamik AAD cihaz gruplarını, belirli bir kayıt profili ile kaydedilmiş cihazları otomatik olarak dolduracak şekilde yapılandırmak için şu adımları izleyin:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **gruplar** > **tüm gruplar** > **Yeni Grup**' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) ' nde oturum açın ve **gruplar** > **tüm gruplar** > **Yeni Grup**' a tıklayın.
 2. **Grup** dikey penceresinde gerekli alanları aşağıdaki gibi doldurun:
     - **Grup türü**: Güvenlik
     - **Grup adı**: Kullanımı kolay bir ad yazın (Fabrika 1 cihazlar gibi)
@@ -92,7 +92,7 @@ Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsin
 
 Bir belirteci/QR kodunu değiştirmek veya iptal etmek, önceden kaydedilmiş cihazları etkilemez.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz kaydı** > **Android kaydı** > **Coporate adanmış cihazlar**' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) ' nde oturum açın ve **cihaz kaydı** > **Android kaydı** > **Coporate adanmış cihazlar**' ı seçin.
 2. Çalışmak istediğiniz profili seçin.
 3. **Belirteç**’i seçin.
 4. Belirteci değiştirmek için **Belirteci değiştir**’i seçin.

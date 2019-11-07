@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf2a8e55963dd3da98e20f5700a464d00c3c62a9
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 06784a3d0e842be791286469737c4716760ea32d
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999458"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709949"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -50,7 +50,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 ### <a name="encryption"></a>Şifreleme
 | Ayar | Nasıl kullanılır? | Varsayılan değer |
 |------|------|------|
-| **Kuruluş verilerini şifreleme** | Bu uygulamadaki iş veya okul verilerinin şifrelenmesini etkinleştirmek için **gerektir** ' i seçin. Intune, uygulama verilerini güvenli bir şekilde şifrelemek için Android keystore sistemiyle birlikte OpenSSL, 256 bit AES şifreleme şeması kullanır. Veriler, dosya GÇ görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. Yeni dosyalar 256 bitlik anahtarlarla şifrelenir. Mevcut 128 bit şifrelenmiş dosyalar, 256-bit anahtarlara geçiş girişimine sahip olur ancak işlem garanti edilmez. 128 bitlik anahtarlarla şifrelenen dosyalar okunabilir olmaya devam edecektir. <br><br> Şifreleme yöntemi FIPS 140-2 uyumludur.     |  **Gerekli**|  
+| **Kuruluş verilerini şifreleme** | Bu uygulamadaki iş veya okul verilerinin şifrelenmesini etkinleştirmek için **gerektir** ' i seçin. Intune, uygulama verilerini güvenli bir şekilde şifrelemek için Android keystore sistemiyle birlikte OpenSSL, 256 bit AES şifreleme şeması kullanır. Veriler, dosya GÇ görevleri sırasında eş zamanlı olarak şifrelenir. Cihaz depolamasındaki içerik her zaman şifrelenir. Yeni dosyalar 256 bitlik anahtarlarla şifrelenir. Mevcut 128 bit şifrelenmiş dosyalar, 256-bit anahtarlara geçiş girişimine sahip olur ancak işlem garanti edilmez. 128 bitlik anahtarlarla şifrelenen dosyalar okunabilir olmaya devam edecektir. <br><br> Şifreleme yöntemi FIPS 140-2 ile onaylanır; daha fazla bilgi için bkz. [OpenSSL FIPS kitaplığı ve Android Kılavuzu](https://wiki.openssl.org/images/7/76/OpenSSL_FIPS_Library_and_Android_Guide.pdf).     |  **Gerekli**|  
 | <ul><ui>**kayıtlı cihazlarda kuruluş verilerini şifreleyin** | Tüm cihazlarda Intune uygulama katmanı şifrelemesi ile kuruluş verilerini şifrelemeyi zorunlu kılmak için **gerektir** ' i seçin. Kayıtlı cihazlarda Intune uygulama katmanı şifrelemesi ile kuruluş verilerini şifrelemeyi **zorlayamayan ' ı seçin.**| **Gerekli** |
 
 

@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509262"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713498"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydı sorunlarını giderme
 
@@ -64,9 +64,9 @@ Bu sorunlar, tüm cihaz platformlarında oluşabilir.
 
 Aşağıdaki adımları izleyerek kullanıcıya cihaz sayısı üst sınırını aşan sayıda cihaz atanıp atanmadığını denetleyin:
 
-1. Intune'da **Cihaz kaydı** > **Kayıt kısıtlamaları** > **Cihaz sınırı kısıtlamaları**’nı seçin. **Cihaz sınırı** sütunundaki değeri not alın.
+1. [Microsoft Uç Nokta Yöneticisi Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), cihaz **kaydı** > **Kayıt kısıtlamaları** ' nı **cihaz sınırı kısıtlamaları** > ' nı seçin. **Cihaz sınırı** sütunundaki değeri not alın.
 
-2. Intune'da **Kullanıcılar** > **Tüm kullanıcılar**'ı seçin, kullanıcıyı seçin ve sonra da **Cihazlar**'ı seçin. Cihaz sayısını not alın.
+2. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **Kullanıcılar** > **tüm kullanıcılar** ' ı seçin > Kullanıcı > **cihazlarını**seçin. Cihaz sayısını not alın.
 
 3. Kullanıcının kayıtlı cihazlarının sayısı şimdiden cihaz sınırı kısıtlamasına eşitse, aşağıdakilerden biri gerçekleşene kadar başka kaydedemez:
     - [Mevcut cihazlar kaldırılır](../remote-actions/devices-wipe.md) veya
@@ -125,7 +125,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 
         - Tüm kullanıcıları görmek için: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        - Belirli kullanıcıları görmek için aşağıdaki sorguyu kullanın; burada% TestUser1%, aramak istediğiniz kullanıcı için username@domain.com için bir yer tutucudur: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        - Belirli kullanıcıları görmek için aşağıdaki sorguyu kullanın; burada% TestUser1%, aramak istediğiniz kullanıcı için bir username@domain.com yer tutucudur: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         Sorguyu yazdıktan sonra **!Execute** komutunu seçin.
         Sonuçlar döndürüldüğünde, bulut kullanıcı kimliğine bakın.  Hiç kimlik bulunmazsa, kullanıcının Intune’u kullanma lisansı yok demektir.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec234a3d93127a26af4203a4776545602334858b
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503444"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709561"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune Uygulama SDK’sı Xamarin Bağlamaları
 
@@ -80,7 +80,7 @@ Uygulamanız zaten ADAL veya MSAL kullanacak şekilde yapılandırıldıysa ve A
 
       Çağrı sırasında kullanıcının UPN’si bilinmiyorsa uygulamalar null olarak geçebilir. Bu durumda kullanıcılardan e-posta adreslerini ve parolalarını girmeleri istenir.
       
-      Uygulamanız kullanıcıların kimliğini doğrulamak için zaten ADAL veya MSAL kullanılıyorsa, uygulamanız ile Intune SDK’sı arasında çoklu oturum açma (SSO) deneyimi yapılandırabilirsiniz. İlk olarak, belirteçleri iOS için Intune Xamarin Bağlamaları (com.microsoft.adalcache) tarafından kullanılan anahtarlık erişim grubunda depolamak için ADAL/MSAL’ı yapılandırmanız gerekir. ADAL için, [AuthenticationContext 'In ıoskeychainsecuritygroup özelliğini ayarlayarak](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access)bunu yapabilirsiniz. MSAL için, [PublicClientApplication öğesinin ıoskeychainsecuritygroup özelliğini ayarlamanız](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access)gerekir. Sonrasında, Intune SDK’sı tarafından uygulamanızın ayarlarıyla birlikte kullanılan varsayılan AAD ayarlarını geçersiz kılmanız gerekir. Bunu, [iOS için Intune Uygulama SDK'sı Geliştirici Kılavuzu](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)'nda belirtildiği gibi uygulamanın Info.plist dosyasındaki IntuneMAMSettings sözlüğü aracılığıyla yapabilirsiniz veya IntuneMAMPolicyManager örneğinin AAD geçersiz kılma özelliklerini kullanabilirsiniz. ADAL ayarları statik olan uygulamalarda Info.plist yaklaşımı önerilirken, bu değerleri çalışma zamanında belirleyen uygulamalar için geçersiz kılma özelliklerinin kullanılması önerilir. Tüm SSO ayarları yapılandırıldığında uygulamanız, başarıyla kimlik doğrulaması yaptıktan sonra IntuneMAMEnrollmentManager’ın RegisterAndEnrollAccount yöntemi için kullanıcının UPN’sini sağlayacaktır:
+      Uygulamanız kullanıcıların kimliğini doğrulamak için zaten ADAL veya MSAL kullanılıyorsa, uygulamanız ile Intune SDK’sı arasında çoklu oturum açma (SSO) deneyimi yapılandırabilirsiniz. İlk olarak, Intune SDK tarafından uygulamanızla ilgili olarak kullanılan varsayılan AAD ayarlarını geçersiz kılmanız gerekir. Bunu, [iOS Için Intune uygulama SDK 'Sı Geliştirici Kılavuzu](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)' nda belirtildiği gibi uygulamanın Info. plist dosyasındaki ıntunemamsettings sözlüğü aracılığıyla yapabilirsiniz veya bunu, ıntunemamsettings sınıfının AAD geçersiz kılma özellikleri aracılığıyla kod içinde yapabilirsiniz. ADAL ayarları statik olan uygulamalarda Info.plist yaklaşımı önerilirken, bu değerleri çalışma zamanında belirleyen uygulamalar için geçersiz kılma özelliklerinin kullanılması önerilir. Tüm SSO ayarları yapılandırıldığında uygulamanız, başarıyla kimlik doğrulaması yaptıktan sonra IntuneMAMEnrollmentManager’ın RegisterAndEnrollAccount yöntemi için kullanıcının UPN’sini sağlayacaktır:
 
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
@@ -182,7 +182,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms tümleştirmesi
 
-@No__t-0 uygulamaları için `Microsoft.Intune.MAM.Remapper` paketi, ekleme `MAM` sınıfları tarafından yaygın olarak kullanılan `Xamarin.Forms` sınıflarının sınıf hiyerarşisine otomatik olarak MAM sınıfı değişikliği gerçekleştirir. 
+`Xamarin.Forms` uygulamalar için `Microsoft.Intune.MAM.Remapper` paketi, ekleme `MAM` sınıfları tarafından, yaygın olarak kullanılan `Xamarin.Forms` sınıflarının sınıf hiyerarşisine otomatik olarak MAM sınıfı değişikliği gerçekleştirir. 
 
 > [!NOTE]
 > Xamarin. Forms tümleştirmesi, yukarıda açıklanan Xamarin. Android tümleştirmesine ek olarak yapılır. Yeniden Eşleştirici, Xamarin. Forms uygulamaları için farklı davrandığı için el ile MAM değiştirme işleminin yine de yapılması gerekir.
@@ -202,7 +202,7 @@ Yeniden eşleştirici projenize eklendikten sonra, MAM denk değişiklikleri yap
 
 Değişiklikler yapılmadığından, değişiklikleri yapana kadar aşağıdaki derleme hatalarıyla karşılaşabilirsiniz:
 * [Derleyici hatası CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). Bu hata genellikle bu biçimde ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed`` ' dır.
-Bu, yeniden eşleştirici Xamarin sınıflarının devralınmasını değiştirdiğinde, bazı işlevlerin @no__t (0) yapılması ve bunun yerine geçersiz kılınmasına yeni bir MAM Variant eklendiği için beklenmektedir.
+Yeniden eşleştirici Xamarin sınıflarının devralınmasını değiştirdiğinde bu beklenen bir işlem olur, bazı işlevler `sealed` yapılır ve bunun yerine geçersiz kılma için yeni bir MAM Variant eklenir.
 * [Derleyici Hatası CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): Bu hata genellikle ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...`` biçiminde görülür. Remapper, Xamarin sınıflarının bazılarının devralınmasını değiştirdiğinde, bazı üye işlevleri `public` olarak değiştirilir. Bu işlevlerden herhangi birini geçersiz kılarsınız, bu geçersiz kılmaların erişim değiştiricilerini de `public` olarak değiştirmeniz gerekecektir.
 
 > [!NOTE]

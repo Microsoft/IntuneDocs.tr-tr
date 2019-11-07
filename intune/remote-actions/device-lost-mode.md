@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057536"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712235"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune ile iOS cihazlarda kayıp modunu etkinleştirme
 
@@ -41,7 +41,7 @@ Bu özellik aşağıdakilerde desteklenmez:
 
 ## <a name="enable-lost-mode"></a>Kayıp modunu etkinleştirme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 3. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
 4. Yönettiğiniz cihazların listesinden bir iOS cihazı seçin ve **kayıp modu (yalnızca denetimli)** seçin.
 5. **Kayıp modu**altında **Etkinleştir**' i seçin.

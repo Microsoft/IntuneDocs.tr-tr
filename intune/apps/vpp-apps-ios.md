@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: e76077553d4394366ca3e4403e74f4f3c9d8b996
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785525"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712869"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile Apple Volume Purchase Program aracılığıyla satın alınan iOS ve macOS uygulamalarını yönetme
 
@@ -89,6 +89,8 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve Intune hesabınıza y�
 5. **VPP belirteci oluştur** bölmesinde aşağıdaki bilgileri girin:
     - **VPP belirteç dosyası** - Henüz kaydolmadıysanız Volume Purchase Program for Business veya Education programına kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin ve burada seçin.
     - **Apple Kimliği** - Toplu satın alma programıyla ilişkilendirilmiş hesabın Apple kimliğini girin.
+    - **Başka BIR MDM 'den belirteç denetimini al** -bu seçeneğin **Evet** olarak ayarlanması, belirtecin başka bir MDM 'den Intune 'a yeniden atanalmasına izin verir.
+    - **Belirteç adı** -belirteç adını ayarlamak için bir yönetim alanı.    
     - **Ülke/bölge** -VPP ülke/bölge deposunu seçin.  Intune, VPP uygulamalarını belirtilen VPP ülke/bölge deposundan tüm yerel ayarlar için eşitler.
         > [!WARNING]  
         > Ülke/bölge 'yi değiştirmek, bu belirteçle oluşturulan uygulamalar için Apple hizmetiyle bir sonraki eşitlemede uygulamalar meta verilerini ve mağaza URL 'sini güncelleştirir. Uygulama, yeni ülke/bölge deposunda yoksa güncelleştirilmeyecek.
@@ -98,6 +100,9 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve Intune hesabınıza y�
 
         > [!NOTE]
         > Otomatik uygulama güncelleştirmeleri, iOS 11,0 ve üzeri ya da macOS 10,12 ve üzeri için hem cihaz hem de Kullanıcı lisanslı uygulamalar için çalışır.
+
+    - **Microsoft 'a hem Kullanıcı hem de cihaz bilgilerini Apple 'a göndermek için izin veriyorum.** -Devam etmek için **kabul** ediyorum ' u seçmeniz gerekir. Apple 'a gönderilen veri Microisoft gözden geçirmek için bkz. [Intune, Apple 'a gönderilir](~/protect/data-intune-sends-to-apple.md).
+
 6. İşiniz bittiğinde **Oluştur**’u seçin.
 
 Belirteç, belirteçler listesi bölmesinde görüntülenir.

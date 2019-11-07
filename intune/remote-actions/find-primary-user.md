@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6f594e20abf1a507d1d4e00641a4821fe1ba9b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509338"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712243"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune cihazının birincil kullanıcısını bulma
 
@@ -30,7 +30,7 @@ Kullanıcı cihaz benzeşimi olarak da bilinen birincil Kullanıcı, her bir Int
 
 ## <a name="how-to-find-a-devices-primary-user"></a>Bir cihazın birincil kullanıcısını bulma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. Cihaz seçin > **cihazları** seçin.
 3. **Genel bakış** sayfasında, **daha fazla göster** ' i seçin ve birincil kullanıcının listelendiğini görürsünüz.
 

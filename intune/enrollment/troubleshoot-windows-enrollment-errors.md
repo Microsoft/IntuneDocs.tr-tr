@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892533"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712849"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -60,7 +60,7 @@ Hata 80180003: "bir sorun oluştu. Bu kullanıcının kaydolma yetkisi yok. Bunu
 Bu soruna yönelik birkaç olası çözüm vardır:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Kaydedilen cihazları kaldırma
-1. [Azure portalı](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)’nda oturum açın.    
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.    
 2. **Kullanıcılar** > **tüm kullanıcılar**' a gidin.    
 3. Etkilenen Kullanıcı hesabını seçin ve ardından **cihazlar**' a tıklayın.    
 4. Kullanılmayan veya istenmeyen cihazları seçin ve ardından **Sil**' e tıklayın. 
@@ -70,12 +70,12 @@ Bu soruna yönelik birkaç olası çözüm vardır:
 > [!NOTE]
 > Bu yöntem, yalnızca etkilenen kullanıcıyı değil, tüm kullanıcılar için cihaz kayıt sınırını artırır.
 
-1. [Azure portalı](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)’nda oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin ve **cihaz sınırı kısıtlamaları**' nı seçin.    
 3. **Cihaz sınırının**değerini artırın. 
 
 ##### <a name="check-device-type-restrictions"></a>Cihaz türü kısıtlamalarını denetle
-1. [Intune portalında](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) bir genel yönetici hesabıyla oturum açın.
+1. Genel yönetici hesabıyla [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın.
 2. **Cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin ve ardından **cihaz türü kısıtlamaları**' nın altında **varsayılan** kısıtlamayı seçin.    
 3. **Platformlar**' ı seçin ve ardından Windows Için **ızın ver** **(MDM)** seçeneğini belirleyin.
 

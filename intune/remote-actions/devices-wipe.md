@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508575"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712207"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -53,7 +53,7 @@ Silme, cihazı yeni bir kullanıcıya vermeden önce veya cihaz kaybolduğunda/�
 
 ### <a name="wiping-a-device"></a>Bir cihazı silme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 3. **Cihazlar** > **Tüm cihazlar**’ı seçin.
 4. Silme eylemini uygulamak istediğiniz cihazın adını seçin.
 5. Cihaz adının gösterildiği bölmede **Sil**’i seçin.
@@ -146,7 +146,7 @@ Yalnızca bilgi noktası cihazlarını silebilirsiniz. Android bilgi noktası ci
 
 ### <a name="retire"></a>Devre dışı bırakma
 
-1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.
 3. Kullanımdan kaldırma eylemini uygulamak istediğiniz cihazın adını seçin.
 4. Cihaz adının gösterildiği bölmede **Kullanımdan kaldır**’ı seçin. Onaylamak için **Evet**'i seçin.
@@ -157,12 +157,12 @@ Cihaz açık ve bağlı olduğu sürece, **Kullanımdan kaldırma** eylemi 15 da
 
 Cihazları Intune portalından kaldırmak istiyorsanız, bunları belirli bir cihaz bölmesinden silebilirsiniz. Cihazın bir sonraki iade edilişinde, üzerindeki tüm şirket verileri kaldırılır.
 
-1. [Azure portalında Intune’da](https://aka.ms/intuneportal) oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** > **Tüm cihazlar** > silmek istediğiniz cihazları seçin > **Sil**'i seçin.
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>Temizleme kuralları ile cihazları otomatik olarak silme
 Intune’u etkin olmayan, eski veya yanıt vermeyen cihazları otomatik olarak silmek üzere yapılandırabilirsiniz. Bu temizleme kuralları, cihaz kayıtlarınızın güncel kalması için cihazınızı kesintisiz bir şekilde izler. Bu şekilde silinen cihazlar, Intune yönetiminden kaldırılır.
-1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** > **Cihaz temizleme kuralları** > **Evet**’i seçin.
 3. **Bu çok gün için iade edilmemiş cihazlarda silme** kutusuna 30 ile 270 arasında bir sayı girin.
 4. **Kaydet**’i seçin.
@@ -185,7 +185,7 @@ Intune’u etkin olmayan, eski veya yanıt vermeyen cihazları otomatik olarak s
 
 Apple DEP cihazını Intune yönetiminden tamamen kaldırmak istiyorsanız bu adımları izleyin:
 
-1. [Azure portalında Intune'da](https://aka.ms/intuneportal) oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** > **Tüm cihazlar**’ı seçin, cihazı seçin ve sonra da **Kullanımdan kaldır**’ı seçin.
 ![Kullanımdan kaldırma ekran görüntüsü](./media/devices-wipe/retire.png)
 3. [Deploy.apple.com](http://deploy.apple.com)’u ziyaret edin ve seri numarasıyla cihazı arayın.

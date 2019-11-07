@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 002989bd61167d6f0d20e2c5cb3fa80a4051a99c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508667"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713231"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
 
@@ -69,7 +69,7 @@ Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler gönd
 
 ## <a name="send-a-custom-notification-to-groups"></a>Gruplara özel bildirim gönder  
 
-1. Bildirim oluşturma ve gönderme izinlerine sahip bir hesapla [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihazlara**gidin  > **özel bildirimler gönderin**.  
+1. Bildirim oluşturma ve gönderme izinlerine sahip bir hesapla [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın ve **özel bildirimler göndermek** > **cihazlar** ' a gidin.  
 
 2. Temel bilgiler sekmesinde, aşağıdakileri belirtin ve devam etmek için **İleri** ' yi seçin.  
    - **Title** : Bu bildirim için bir başlık belirtin. Başlıklar 50 karakterle sınırlıdır.  
@@ -89,7 +89,7 @@ Intune, göndereceğiniz özel bildirimleri izlemez ve cihazlar, bilgileri cihaz
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Tek bir cihaza özel bildirim gönder  
 
-1. Bildirim oluşturma ve gönderme izinlerine sahip bir hesapla [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve ardından **cihazlar** > **tüm cihazlar**' a gidin.  
+1. Bildirim oluşturma ve gönderme izinlerine sahip bir hesapla [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın ve ardından **cihazlar** > **tüm cihazlar**' a gidin.  
 
 2. Bildirim göndermek istediğiniz cihazı seçin.  
 

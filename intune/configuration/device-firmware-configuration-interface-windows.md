@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: f6d4b076b508316cdb2d3d5f2814fc5e46a014e7
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432535"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709519"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Windows cihazlarında cihaz üretici yazılımı yapılandırma arabirimi profillerini Microsoft Intune (Genel Önizleme) kullanma
 
@@ -127,9 +127,11 @@ Bu profil, yapılandırdığınız DFCı ayarlarını içerir.
 
 Profiller oluşturulduktan sonra, [atanmak için hazırlırlar](../configuration/device-profile-assign.md). Profilleri, DFCı cihazlarınızı içeren Azure AD güvenlik gruplarına atadığınızdan emin olun.
 
-Cihaz eşitlendikten sonraki sefer veya cihaz yeniden başlatıldığında, DFCı profil ayarları uygulanır. İlke uygulandıktan sonra, cihazı yeniden başlatın.
+Cihaz Windows Autopilot çalıştırdığında, kayıt durumu sayfasında, DFCı yeniden başlatmayı zorlayabilir. Bu ilk yeniden başlatma, UEFı 'yi Intune 'a kaydeder. 
 
-Cihaz Windows cihaz kurulumunu çalıştırdığında, DFCı kayıt durumu sayfası sırasında yeniden başlatmaya zorlayabilir. Kurulum tamamlandıktan sonra, cihaz yeniden başlatılarak DFCı ayarlarının etkin olduğunu doğrulayabilirsiniz. Ardından, UEFı menüsünü açmak için cihaz üreticisinin yönergelerini kullanın.
+Cihazın kaydedildiğini doğrulamak istiyorsanız, cihazı yeniden başlatabilirsiniz, ancak bu gerekli değildir. UEFı menüsünü açmak için cihaz üreticisinin yönergelerini kullanın ve UEFı 'nin artık yönetildiğini doğrulayın.
+
+Cihaz Intune ile eşitlendikten sonraki sefer, Windows DFCı ayarlarını alır. Cihazı yeniden başlatın. Bu üçüncü yeniden başlatma, UEFı 'nin Windows 'dan DFCı ayarlarını alması için gereklidir.
 
 ## <a name="update-existing-dfci-settings"></a>Mevcut DFCı ayarlarını Güncelleştir
 
