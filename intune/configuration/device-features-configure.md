@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54d7ccabf958c3b8532f1a115724559607783a57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 272a7303e7d529a4867334cbe05e6df31e6c5683
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495227"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755366"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune’da iOS veya macOS cihaz özelliği ayarları ekleme
 
@@ -200,8 +200,8 @@ Uygulama hedefi:
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı **MacOS: oturum açma ekranını yapılandırır**.

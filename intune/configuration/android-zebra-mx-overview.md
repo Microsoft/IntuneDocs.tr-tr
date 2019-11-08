@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: jieyan
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
-ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.openlocfilehash: 7f343ace48c917e65d9d59cd7c42c53e9b892968
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182851"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756719"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune'da Zebra Mobility Uzantılarını içeren Zebra cihazlarını kullanma ve yönetme
 
@@ -52,7 +52,6 @@ Intune'u kullanarak Zebra cihazlarını kaydedip bu cihazlara iş kolu uygulamal
 - Zebra Teknologies'den StageNow masaüstü uygulamasının en son sürümünü aldığınızdan emin olun.
 - Oluşturduğunuz profillerin cihazın MX sürümü, işletim sistemi sürümü ve modeliyle uyumlu olduğunu onaylamak için [Zebra'nın tam MX özellik matrisini](http://techdocs.zebra.com/mx/compatibility) (Zebra'nın web sitesini açar) gözden geçirdiğinizden emin olun.
 - TC20/25 cihazları gibi bazı cihazlar StageNow'da sağlanan MX özelliklerinin tümünü desteklemez. Güncelleştirilmiş destek bilgileri için [Zebra'nın özellik matrisini](http://techdocs.zebra.com/mx/tc2x/) (Zebra'nın web sitesini açar) gözden geçirdiğinizden emin olun.
-
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>1\. Adım: en son Şirket Portalı uygulamayı yüklemeyi
 
@@ -134,8 +133,8 @@ Dosyayı test ettiğinizde, sonraki adım Intune'u kullanarak profili cihazlara 
 
 Intune'da cihaz yapılandırma profili oluşturun:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz Yapılandırması** > **Profiller** > **Profil oluştur**’u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Yeni profil için açıklayıcı bir ad girin.

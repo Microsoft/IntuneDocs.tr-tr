@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3804409acadbfc3dfc1c7d6f3372dc939b7b3630
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491757"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755048"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune 'da VPN sunucularına bağlanmak için VPN profilleri oluşturma
 
@@ -68,15 +68,16 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)' da, **cihaz yapılandırması** > **profiller** > **Profil oluştur**' u seçin.
-2. Aşağıdaki özellikleri girin:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
+3. Aşağıdaki özellikleri girin:
 
     - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı **Şirket genelinde VPN profilidir**.
     - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
     - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:
 
       - **Outlook Web Access (OWA)**
-      - **Android kurumsal**@no__t-**yalnızca 1 cihaz sahibi**
+      - Yalnızca **Android kurumsal** > **cihaz sahibi**
       - Yalnızca **Android kurumsal** > **iş profili**
       - **iOS/ıpados**
       - **macOS**
@@ -86,7 +87,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 
     - **Profil türü**: **VPN**' yi seçin.
 
-3. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki makalelere bakın:
+4. Seçtiğiniz platforma bağlı olarak, yapılandırabileceğiniz ayarlar farklılık gösterir. Her platformun ayrıntılı ayarları için aşağıdaki makalelere bakın:
 
     - [Android ayarları](vpn-settings-android.md)
     - [Android kurumsal ayarları](vpn-settings-android-enterprise.md)
@@ -96,7 +97,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
     - [Windows 8.1 ayarları](vpn-settings-windows-8-1.md)
     - [Windows 10 ayarları](vpn-settings-windows-10.md) (Windows Holographic for Business dahil)
 
-4. İşiniz bittiğinde, profilinizi **oluşturun** .
+5. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
 Profil oluşturulur ve profil listesinde görüntülenir. Bu profili gruplara atamak için bkz. [cihaz profillerini atama](device-profile-assign.md).
 

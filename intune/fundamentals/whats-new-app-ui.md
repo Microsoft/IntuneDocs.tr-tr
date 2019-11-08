@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415154"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801787"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 
@@ -40,7 +40,7 @@ Bir çalışan ya da öğrenciyseniz, Şirket Portalı yardım belgelerinin ekra
 ## <a name="week-of-october-28-2019"></a>28 Ekim 2019 haftası  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Android için Şirket Portalı App 'te geliştirilmiş denetim listesi tasarımı <!-- 5550857 -->  
-Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif bir tasarım ve yeni simgelerle güncelleştirilmiştir. Değişiklikler, iOS için Şirket Portalı uygulamasına yapılan son güncelleştirmelerle birlikte hizalanır. Uygulama güncelleştirmelerini tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek için çalışıyoruz. Güncelleştirilmiş kayıt adımlarına bakmak için bkz. [Android iş profiline kaydolma](/intune-user-help/enroll-device-android-work-profile) ve [Android cihazınızı kaydetme](/intune-user-help/enroll-device-android-company-portal).  
+Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif bir tasarım ve yeni simgelerle güncelleştirilmiştir. Değişiklikler, iOS için Şirket Portalı uygulamasına yapılan son güncelleştirmelerle birlikte hizalanır. Güncelleştirilmiş kayıt adımlarına bakmak için bkz. [Android iş profiline kaydolma](/intune-user-help/enroll-device-android-work-profile) ve [Android cihazınızı kaydetme](/intune-user-help/enroll-device-android-company-portal).  
 
 Aşağıdaki ekranlar, Android iş profili kaydı için güncelleştirilmiş denetim listesini gösterir:
 

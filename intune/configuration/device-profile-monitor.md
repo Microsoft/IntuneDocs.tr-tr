@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1c68421bf7c5dea0d93d45e0cbb748204d0f66b
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 4dc349ef7af2683b4dafeaa1cc09f5b7a727e843
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749388"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755297"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune’da cihaz profillerini izleme
 
@@ -32,8 +32,8 @@ Intune, cihaz yapılandırma profillerinizi izlemeye ve yönetmeye yardımcı ol
 
 ## <a name="view-existing-profiles"></a>Mevcut profilleri görüntüleme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller**'i seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin.
 
 Tüm mevcut profilleriniz listelenir, ayrıca platform gibi ayrıntılar ve profilin herhangi bir cihaza atanıp atanmadığı gösterilir.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635484"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801657"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune kullanarak Android cihazları için Google Chrome 'U yapılandırma 
 
@@ -63,7 +63,7 @@ Intune 'a yönetilen Google Play uygulaması ekleme hakkında daha fazla bilgi i
 
     Ortak ayarların örneği aşağıda verilmiştir:
     - **URL listesine erişimi engelleyin**: `["*"]`
-    - **URL listesine erişime Izin ver**: `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **URL listesine erişime Izin ver**: `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **Yönetilen yer işaretleri**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Inbilito modu kullanılabilirliği**: `Incognito mode disabled`
 
@@ -71,7 +71,7 @@ Intune 'a yönetilen Google Play uygulaması ekleme hakkında daha fazla bilgi i
 
     ![Ortak ayarlar](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    Yukarıdaki ayarlar yer işaretlerini oluşturur ve `baidu.com`, `yahoo.com` ve `chrome://` hariç tüm Web sitelerine erişime izin verir.
+    Yukarıdaki ayarlar, `baidu.com`, `yahoo.com`, `chromium.org`ve `chrome://`hariç tüm URL 'Lere erişimi engeller ve yer işaretleri oluşturur.
 
 5. Yapılandırma ilkenizi Intune 'a eklemek için **Tamam** ve **Ekle** ' ye tıklayın.
 6. Bu yapılandırma ilkesini bir kullanıcı grubuna atayın. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](~/apps/apps-deploy.md). 

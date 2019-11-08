@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593686"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754413"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -106,7 +106,7 @@ Microsoft Edge için uygulama yapılandırması oluşturmak için:
 7. **Yapılandırma ayarlarını** seçin. **Yapılandırma** dikey penceresinde, Microsoft Edge yapılandırmalarını sağlamak için anahtar ve değer çiftleri tanımlarsınız. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
 
     > [!NOTE]
-    > Microsoft Edge, Managed Browser ile aynı anahtar ve değer çiftini kullanır. 
+    > Microsoft Edge, Managed Browser ile aynı anahtar ve değer çiftini kullanır. Android 'de, uygulama yapılandırma ilkelerinin etkili olabilmesi için Microsoft Edge 'in uygulama koruma ilkelerini hedeflemeli olması gerekir.
 
 8. İşiniz bittiğinde **Tamam**' ı seçin.
 9. **Yapılandırma ilkesi ekle** dikey penceresinde, **Ekle**’yi seçin.<br>
@@ -127,7 +127,7 @@ Hem Intune Managed Browser hem de Microsoft Edge İlkeyle korunan tarayıcılar 
 
 |    Anahtar    |    Değer    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    @No__t_0 değeri, kullanıcılarınıza Microsoft Edge 'i indirmek ve kullanmak için yönlendirecektir.<br>@No__t_0 değeri, kullanıcılarınızın Intune Managed Browser kullanmasına izin verir.    |
+|    `com.microsoft.intune.useEdge`    |    `true` değeri, kullanıcılarınıza Microsoft Edge 'i indirmek ve kullanmak için yönlendirecektir.<br>`false` değeri, kullanıcılarınızın Intune Managed Browser kullanmasına izin verir.    |
 
 Bu uygulama yapılandırma **değeri ayarlanmamışsa,** aşağıdaki mantık kurumsal bağlantıları açmak için kullanılacak tarayıcıyı tanımlar.
 
@@ -248,8 +248,8 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
     |    `http://www.contoso.com`    |    Tek bir sayfayla eşleşir    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Tek bir sayfayla eşleşir    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    `www.contoso.com` ile başlayan tüm URL’lerle eşleşir    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    @No__t_0 altındaki tüm alt etki alanlarını eşleştirir    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
-    |    `http://*contoso.com/*`    |    @No__t_0 ile biten tüm alt etki alanlarını eşleştirir    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    `contoso.com` altındaki tüm alt etki alanlarını eşleştirir    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    `contoso.com/` ile biten tüm alt etki alanlarını eşleştirir    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    Tek bir klasörle eşleşir    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Bir bağlantı noktası numarası kullanarak tek bir sayfayla eşleşir    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Güvenli tek bir sayfayla eşleşir    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |

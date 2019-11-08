@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 50b91251572e45669f197df7ac4e5ff94caf47a1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892627"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755324"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
 
@@ -41,8 +41,8 @@ Bu makalede profil atama yöntemlerinin yanı sıra profillerinizde kapsam etike
 
 ## <a name="assign-a-device-profile"></a>Bir cihaz profili atama
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller**'i seçin. Tüm profiller listelenir.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Tüm profiller listelenir.
 3. Atamak istediğiniz profili ve ardından **Atamalar**'ı seçin.
 4. Grupları **Dahil Etmeyi** veya **Dışlamayı** seçin ve sonra da gruplarınızı belirtin. Gruplarınızı seçtiğinizde, bir Azure AD grubu seçersiniz. Birden çok grup seçmek için grupları seçerken **Ctrl** tuşunu basılı tutun.
 
@@ -54,7 +54,7 @@ Bu makalede profil atama yöntemlerinin yanı sıra profillerinizde kapsam etike
 
 Profili atadıktan sonra etkilenen kullanıcı sayısını da **değerlendirebilirsiniz**. Bu özellik, cihaz değil kullanıcı sayısını hesaplar.
 
-1. Intune'da **Cihaz yapılandırması** > **Profiller**'i seçin.
+1. Yönetim merkezinde **cihazlar** > **yapılandırma profilleri**' ni seçin.
 2. Bir profil seçip **Atamalar** > **Değerlendir** yolunu izleyin. Bu profilin kaç kullanıcıyı hedeflediğini gösteren bir ileti görüntülenir.
 
 **Değerlendir** düğmesi gri gösteriliyorsa, profilin bir veya birden fazla gruba atandığından emin olun.

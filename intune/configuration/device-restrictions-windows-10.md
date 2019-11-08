@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493902"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755269"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Windows 10 (ve üzeri) cihaz ayarları
 
@@ -223,12 +223,12 @@ Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-manag
 
 - **İşlem merkezi bildirimleri (yalnızca mobil)** : **blok** , cihaz kilitleme ekranında işlem merkezi bildirimlerinin gösterilmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların hangi uygulamaların kilit ekranında bildirimleri göstermesini seçmesine izin verir.
 
-  [AboveLock/AllowActionCenterNotifications CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+  [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **Kilitli ekran resmi URL 'si (yalnızca masaüstü)** : Windows kilit ekranı duvar kağıdı olarak kullanılan jpg, JPEG veya PNG biçiminde bir resmin URL 'sini girin. Örneğin, şunu girin: `https://contoso.com/image.png`. Bu ayar görüntüyü kilitler ve daha sonra değiştirilemez.
 - **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** : **izin ver** kullanıcıların ekran zaman aşımını yapılandırmasına izin verir. **Yapılandırılmadı** (varsayılan), kullanıcılara bu seçeneği vermez.
 
-  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
 - **Kilitli ekranda Cortana** (yalnızca masaüstü): **blok** kullanıcıların, cihaz kilit ekranı üzerinde olduğunda Cortana ile etkileşime geçmesini engeller. **Yapılandırılmadı** (varsayılan) Cortana ile etkileşime izin verir.
 
@@ -240,7 +240,7 @@ Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-manag
 
 - **Ekran zaman aşımı (yalnızca mobil)** : ekran kilitlemeden ekrana kadar geçen süreyi (saniye cinsinden) ayarlayın. Desteklenen değerler 11-1800 ' dir. Örneğin, bu zaman aşımını 5 dakikaya ayarlamak için `300` girin.
 
-  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
 ## <a name="messaging"></a>Gönderip
 
@@ -300,7 +300,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
 - **Ilk çalıştırma deneyimini göster sayfası (yalnızca mobil)** : **Evet** (varsayılan) Microsoft Edge 'de ilk kullanıma giriş sayfasını gösterir. **Hayır** , Microsoft Edge 'i ilk kez çalıştırdığınızda giriş sayfasının gösterilmesini engeller. Bu özellik, bu sayfayı engellemek için sıfır emisyonlarını yapılandırmasına kayıtlı kuruluşlar gibi kuruluşlara izin verir.
 - **Ilk çalıştırma DENEYIMI URL listesi konumu** (yalnızca Windows 10 Mobile): ilk çalıştırma sayfa URL 'SINI içeren XML dosyasına işaret eden URL 'yi girin. Örneğin, şunu girin: `https://www.contoso.com/sites.xml`.
 
-- **Boşta kalma zamanından sonra tarayıcıyı yenile**: 0-1440 dakika içinde tarayıcı yenilenene kadar boşta kalma dakikalarının sayısını girin. Varsayılan değer `5` dakikadır. @No__t-0 (sıfır) olarak ayarlandığında tarayıcı, boşta kaldıktan sonra yenilenmez.
+- **Boşta kalma zamanından sonra tarayıcıyı yenile**: 0-1440 dakika içinde tarayıcı yenilenene kadar boşta kalma dakikalarının sayısını girin. Varsayılan değer `5` dakikadır. `0` (sıfır) olarak ayarlandığında tarayıcı, boşta kaldıktan sonra yenilenmez.
 
   Bu ayar yalnızca [InPrivate genel göz atma (tek uygulama bilgi noktası)](#use-microsoft-edge-kiosk-mode)içinde çalıştırılırken kullanılabilir.
 
@@ -369,7 +369,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
   - Microsoft Edge ve Microsoft Hizmetleri arasındaki ağ bant genişliğini en aza indirmeye yardımcı olun.
   - Microsoft Edge > ayarlarını **Yazarken arama ve site önerilerini göster ' i** devre dışı bırakın.
 - **Tam ekran moduna Izin ver**: **Evet** (varsayılan), Microsoft Edge 'in yalnızca Web Içeriğini gösteren ve Microsoft Edge Kullanıcı arabirimini gizleyen tam ekran modunu kullanmasına izin verir. **Hayır** , Microsoft Edge 'de tam ekran modunu engeller.
-- **Bayrak hakkında Izin ver sayfası**: **Evet** (varsayılan), `about:flags` sayfasına erişime izin verebilecek işletim sistemi varsayılanını kullanır. @No__t-0 sayfası kullanıcıların geliştirici ayarlarını değiştirmesine ve deneysel özellikleri etkinleştirmesine olanak sağlar. **Hayır** , son kullanıcıların Microsoft Edge 'deki `about:flags` sayfasına erişmesini önler.
+- **Bayrak hakkında Izin ver sayfası**: **Evet** (varsayılan), `about:flags` sayfasına erişime izin verebilecek işletim sistemi varsayılanını kullanır. `about:flags` sayfası kullanıcıların geliştirici ayarlarını değiştirmesine ve deneysel özellikleri etkinleştirmesine olanak sağlar. **Hayır** , son kullanıcıların Microsoft Edge 'deki `about:flags` sayfasına erişmesini önler.
 - **Geliştirici araçlarına Izin ver**: **Evet** (varsayılan), kullanıcıların varsayılan olarak Web sayfalarını derlemek ve hatalarını ayıklamak için F12 geliştirici araçlarını kullanmasına izin verir. **Hayır** , son kullanıcıların F12 geliştirici araçlarını kullanmasını önler.
 - **JavaScript 'e Izin ver**: **Evet** (varsayılan) JavaScript gibi betiklerin Microsoft Edge tarayıcısında çalışmasına izin verir. **Hayır** , tarayıcıda Java betikleri çalıştırılmasını önler.
 - **Kullanıcı Uzantıları yükleyebilir**: **Evet** (varsayılan) son kullanıcıların cihaza Microsoft Edge uzantıları yüklemesine izin verir. **Hayır** , yüklemeyi engeller.
@@ -435,7 +435,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [DeviceLock ILKESI C
 
   [Kimlik doğrulama/Enablewebsignın CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
 
-- **Tercih edilen Azure AD kiracı etki alanı**: Azure AD kuruluşunuzda mevcut bir etki alanı adı girin. Bu etki alanındaki kullanıcılar oturum açtığında, etki alanı adını yazmak zorunda kalmaz. Örneğin, şunu girin: `contoso.com`. @No__t-0 etki alanındaki kullanıcılar, `abby@contoso.com` yerine `abby` gibi kullanıcı adlarını kullanarak oturum açabilir.
+- **Tercih edilen Azure AD kiracı etki alanı**: Azure AD kuruluşunuzda mevcut bir etki alanı adı girin. Bu etki alanındaki kullanıcılar oturum açtığında, etki alanı adını yazmak zorunda kalmaz. Örneğin, şunu girin: `contoso.com`. `contoso.com` etki alanındaki kullanıcılar, `abby@contoso.com`yerine `abby`gibi kullanıcı adlarını kullanarak oturum açabilir.
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
@@ -722,7 +722,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   - **Yapılandırılmadı** (varsayılan): her 8 saatte bir güncelleştirmeleri denetleyin.
   - **Denetleme**: Defender yeni güvenlik zekası güncelleştirmelerini denetlemez.
-  - **1-24**: her saatte @no__t 1 denetim `2` her iki saatte bir `24` denetim, her gün ve bu şekilde devam eder.
+  - **1-24**: her saatte bir denetim `1`, `2` her iki saatte bir denetim `24` denetler ve bu şekilde devam eder.
   
   [Defender/Signatureupdateınterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
   
@@ -736,7 +736,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   [Defender/RealTimeScanDirection CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
 
-- **Karantinaya alınan kötü amaçlı yazılımı silmeden önce geçen gün**: daha önce etkilenen cihazları el ile kontrol edebilmeniz için, girdiğiniz gün sayısı için çözümlenmiş kötü amaçlı yazılımı izlemeye devam edin Gün sayısını `0` olarak ayarlarsanız, kötü amaçlı yazılım Karantina klasöründe kalır ve otomatik olarak kaldırılmaz. @No__t-0 olarak ayarlandığında, karantina öğeleri sistemde 90 gün boyunca depolanır ve sonra kaldırılır.
+- **Karantinaya alınan kötü amaçlı yazılımı silmeden önce geçen gün**: daha önce etkilenen cihazları el ile kontrol edebilmeniz için, girdiğiniz gün sayısı için çözümlenmiş kötü amaçlı yazılımı izlemeye devam edin Gün sayısını `0` olarak ayarlarsanız, kötü amaçlı yazılım Karantina klasöründe kalır ve otomatik olarak kaldırılmaz. `90`olarak ayarlandığında, karantina öğeleri sistemde 90 gün boyunca depolanır ve sonra kaldırılır.
 
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 

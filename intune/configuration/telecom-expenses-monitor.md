@@ -6,24 +6,24 @@ keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
-ms.reviewer: sumitp
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 20743d19ba101a9c400cb9f72dca59223254e6de
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506634"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755066"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune'da telekom gider yönetimi hizmeti ayarlama
 
@@ -54,7 +54,7 @@ Datalert hizmetini Intune ile kullanmak için, Datalert ve Intune 'da bazı yap�
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Microsoft Intune ve [Azure Portal](https://portal.azure.com) erişimi için bir abonelik
+- [Microsoft Endpoint Manager yönetim merkezine](https://go.microsoft.com/fwlink/?linkid=2109431) Microsoft Intune ve erişim için bir abonelik
 - [Datalert](http://www.datalert.biz/) aboneliği (datalert 'in Web sitesini açar)
 
 ## <a name="telecom-expense-management-providers"></a>Telekom gider yönetimi sağlayıcıları
@@ -109,9 +109,9 @@ Intune, aşağıdaki Telekom gider yönetimi sağlayıcısıyla tümleştirilir:
 
 1\. adımı tamamladıktan sonra bağlantınız otomatik olarak etkinleştirilir. Intune 'da bağlantı durumu **etkin**' i gösterir. Durumun etkin olduğunu doğrulamak için aşağıdaki adımları kullanın:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. **Cihaz yapılandırma** > **Telekom gider yönetimi**' ni seçin. **Etkin** bağlantı durumunu arayın:
+2. **Kiracı yönetimi** > **bağlayıcılar ve belirteçler** > **Telekom gider yönetimi**' ni seçin. **Etkin** bağlantı durumunu arayın:
 
    ![Datalert bağlantı durumunu Etkin olarak gösteren Intune sayfası](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -138,7 +138,7 @@ Bu kategoriler, kayıt sırasında kullanıcılara gösterilir ([Android cihazla
 
 Aşağıdaki adımlarda Datalert uygulaması eklenir. Örnek olarak, iOS kullanılır. [Uygulama ekleme](../apps/apps-add.md) ve [kapsam etiketlerini kullanma](../fundamentals/scope-tags.md) bu adımlarla ilgili daha belirgin bilgilere sahiptir.
 
-1. **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** 'Da, **istemci uygulamaları** > **uygulama** > **Ekle**' yi seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin.
 
 2. **Uygulama türü**' nü seçin. Örneğin, iOS için **mağaza app-iOS**' ı seçin.
 
@@ -156,9 +156,9 @@ Aşağıdaki adımlarda Datalert uygulaması eklenir. Örnek olarak, iOS kullan�
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Datalert uygulamasını kurumsal cihaz grubuna atama
 
-1. **İstemci uygulamaları-uygulamalar**' da, önceki adımda eklediğiniz datalert uygulamasını seçin.
+1. **Uygulamalar** > **tüm uygulamalar**' da, önceki adımda eklediğiniz datalert uygulamasını seçin.
 
-2. @No__t **atamaları**seçin-1**Grup ekleyin**. Uygulamanın nasıl atandığını seçin. [Intune 'daki gruplara uygulama atama](../apps/apps-deploy.md) , bu ayarlar hakkında daha fazla ayrıntı içerir.
+2. **Grup ekle** > **atamalar** ' ı seçin. Uygulamanın nasıl atandığını seçin. [Intune 'daki gruplara uygulama atama](../apps/apps-deploy.md) , bu ayarlar hakkında daha fazla ayrıntı içerir.
 
     Bu adımlarda, uygulama yüklemesini gerekli veya grup için isteğe bağlı yapmayı tercih edeceksiniz. Aşağıdaki örnek, yükleme gereken şekilde gösterir. Gerektiğinde, kullanıcıların cihazlarını kaydettikten sonra Datalert uygulamasını yüklemeleri gerekir.
 
@@ -183,7 +183,7 @@ Son Kullanıcı deneyimi için aşağıdaki makaleler yardımcı olabilir:
 
 ## <a name="turn-off-the-datalert-service"></a>Datalert hizmetini kapatma
 
-1. **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** 'da **cihaz yapılandırması** > **Telekom gider yönetimi**' ni seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Kiracı Yönetimi** > **Bağlayıcılar ve belirteçler** > **Telekom gider yönetimi**' ni seçin.
 2. **Telekom gider yönetimini etkinleştir ' i ayarlayın ve devre dışı bırakmak için yapılandırdığınız kullanım kotalarını aşan cihazlarda hücresel veya dolaşım verilerini engelleyin** .
 3. Yaptığınız değişiklikleri **kaydedin**.
 

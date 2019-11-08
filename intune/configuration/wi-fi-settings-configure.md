@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a794d724fe162ad7d464760661fecb45bd874431
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 589fc32db22de02f70ba78f79ebb413a31e92f1d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506441"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754849"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune’da cihazlarınız için Wi-Fi ayarları ekleme ve kullanma
 
@@ -49,8 +50,9 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)' da, **cihaz yapılandırması** > **profiller** > **Profil oluştur**' u seçin.
-2. Aşağıdaki özellikleri girin:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
+3. Aşağıdaki özellikleri girin:
 
     - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı **tüm şirket Için WiFi profilidir**.
     - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
@@ -70,7 +72,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
       > - Adanmış bir cihaz (bilgi noktası) olarak çalışan **Android kurumsal** cihazlarda **yalnızca cihaz sahibi**' i  > **Wi-Fi**' ı seçin.
       > - **Windows 8.1 ve sonrasında** **Wi-Fi içeri aktar**’ı seçebilirsiniz. Bu seçenek, Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
 
-3. Bazı Wi-Fi ayarları platformdan platforma farklılık gösterir. Belirli bir platformun ayarlarını görmek için platformunuzu seçin:
+4. Bazı Wi-Fi ayarları platformdan platforma farklılık gösterir. Belirli bir platformun ayarlarını görmek için platformunuzu seçin:
 
     - [Outlook Web Access (OWA)](wi-fi-settings-android.md)
     - Adanmış cihazlar dahil [Android Enterprise](wi-fi-settings-android-enterprise.md)
@@ -79,7 +81,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
     - [Windows 10 ve üzeri](wi-fi-settings-windows.md)
     - [Windows 8.1 ve sonrası](wi-fi-settings-import-windows-8-1.md), Windows Holographic for Business dahil
 
-4. İşiniz bittiğinde **Profil oluştur** > **Oluştur**' u seçin.
+5. İşiniz bittiğinde **Profil oluştur** > **Oluştur**' u seçin.
 
 Profil oluşturulur ve profiller listesinde gösterilir (**cihaz yapılandırması** > **profilleri**).
 

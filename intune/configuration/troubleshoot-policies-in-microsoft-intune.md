@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492128"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754966"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>İlke ve profillerin ve Intune 'da sorun giderme
 
@@ -32,11 +32,12 @@ Microsoft Intune, bazı yerleşik sorun giderme özellikleri içerir. Ortamını
 Bu makalede bazı yaygın sorun giderme teknikleri listelenmekte ve karşılaşabileceğiniz bazı sorunlar açıklanmaktadır.
 
 ## <a name="check-tenant-status"></a>Kiracı durumunu denetle
+
 [Kiracı durumunu](../fundamentals/tenant-status.md) denetleyin ve aboneliğin etkin olduğunu onaylayın. İlkeyi veya profil dağıtımınızı etkileyebilecek etkin olaylar ve Danışma belgeleri ayrıntılarını da görüntüleyebilirsiniz.
 
 ## <a name="use-built-in-troubleshooting"></a>Yerleşik sorun giderme kullanın
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'Da **sorun gider**' i seçin:
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde **sorun giderme + Destek**' i seçin:
 
     ![Intune 'da yardım ve destek ' e gidin ve sorun giderme ' yi seçin.](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ Bu makalede bazı yaygın sorun giderme teknikleri listelenmekte ve karşılaşa
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Bir profilin doğru bir şekilde uygulanmış olması konusunda emin değilseniz
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** > **tüm cihazlar** ' ı seçin > Cihaz > cihaz **yapılandırmasını**seçin. 
 
     Her cihazda profillerini listeler. Her profilin bir **durumu**vardır. Bu durum, donanım ve işletim sistemi kısıtlamaları ve gereksinimleri de dahil olmak üzere tüm atanan profillerin birlikte kabul edildiği durumlarda geçerlidir. Olası durumlar şunlardır:
@@ -141,7 +142,7 @@ Windows Phone cihazlar, MDM veya EAS kullanılarak ayarlandıktan sonra güvenli
 
 Cihaz platformuna bağlı olarak, ilkeyi daha az güvenli bir değerle değiştirmek isterseniz, güvenlik ilkelerini sıfırlamanız gerekebilir.
 
-Örneğin, Windows 8.1 Masaüstünde, sağ taraftaki içeri doğru kaydırın ve sonra da **Charms** çubuğunu açın. @No__t **ayarları**-1**Denetim Masası** > **Kullanıcı hesabı**' nı seçin. Sol taraftaki **Güvenlik İlkelerini Sıfırla**’yı seçin ve **İlkeleri Sıfırla**’ya tıklayın.
+Örneğin, Windows 8.1 Masaüstünde, sağ taraftaki içeri doğru kaydırın ve sonra da **Charms** çubuğunu açın. **Kullanıcı hesapları** > **Denetim Masası** > **Ayarlar** ' ı seçin. Sol taraftaki **Güvenlik İlkelerini Sıfırla**’yı seçin ve **İlkeleri Sıfırla**’ya tıklayın.
 
 Android, iOS ve Windows Phone 8,1 gibi diğer platformların devre dışı bırakılması ve daha az kısıtlayıcı bir ilke uygulamak için yeniden kaydedilmesi gerekebilir.
 

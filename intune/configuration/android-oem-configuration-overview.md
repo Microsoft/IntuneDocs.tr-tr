@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915720"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756762"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune 'de OEMConfig ile Android kurumsal cihazlarını kullanma ve yönetme
 
@@ -80,8 +80,8 @@ Cihazın OEMConfig 'i desteklediğinden emin olun, Intune 'a doğru OEMConfig uy
 
 ## <a name="create-an-oemconfig-profile"></a>OEMConfig profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz Yapılandırması** > **Profiller** > **Profil oluştur**’u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: Yeni profil için açıklayıcı bir ad girin.
@@ -108,11 +108,11 @@ Cihazın OEMConfig 'i desteklediğinden emin olun, Intune 'a doğru OEMConfig uy
       - Birçok ayar OEM tarafından sağlanan varsayılan değerlere sahiptir. Varsayılan bir değer olup olmadığını görmek için, ayarın yanındaki bilgi simgesinin üzerine gelin. Araç ipucu, bu ayar (varsa) için varsayılan değerleri ve OEM tarafından sağlanmış diğer ayrıntıları gösterir.
 
       - **Temizle** ' ye tıkladığınızda profilden bir ayar silinir. Bir ayar profilde değilse, profil uygulandığında cihazdaki değeri değişmez.
-        
+
       - Yapılandırma tasarımcısında boş (yapılandırılmamış) bir paket oluşturursanız, JSON düzenleyicisine geçildiğinde silinir.
 
     - **JSON Düzenleyicisi**: Bu seçeneği belirlediğinizde, uygulamada gömülü tam yapılandırma şeması için bir şablon IÇEREN bir JSON Düzenleyicisi açılır. Düzenleyicide, şablonu farklı ayarlar için değerlerle özelleştirin. Değerlerinizi değiştirmek için **yapılandırma tasarımcısını** KULLANıRSANıZ, JSON Düzenleyicisi şablonun üzerine yapılandırma tasarımcısından değerler yazar.
-    
+
       - Var olan bir profili güncelleştiriyorsanız JSON Düzenleyicisi, en son profille kaydedilen ayarları gösterir.
 
       - OEMConfig şemaları büyük ve karmaşık olabilir. Bu ayarları farklı bir düzenleyici kullanarak güncelleştirmeyi tercih ediyorsanız **JSON şablonu indir** düğmesini seçin. Yapılandırma değerlerinizi şablona eklemek için istediğiniz düzenleyiciyi kullanın. Ardından, içindeki güncelleştirilmiş JSON ' ı kopyalayın ve **JSON Düzenleyicisi** özelliğine yapıştırın.

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492872"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755202"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune kullanarak cihazlara e-posta ayarları ekleme
 
@@ -39,8 +39,8 @@ Bu makalede, Microsoft Intune’da e-posta profili oluşturma işlemi gösterili
 
 ## <a name="create-a-device-profile"></a>Bir cihaz profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı **tüm Windows cihazları Için e-posta ayarları**olur.
@@ -71,7 +71,7 @@ Ayarlarınızı girdikten ve profili oluşturduktan sonra profiliniz profil list
 
 E-posta profilleri kullanıcı gruplarına değil cihaz gruplarına atanır. Cihazda sadece bir e-posta profili olduğunda bile e-posta profilini kaldırmanın farklı yolları vardır:
 
-- **1. Seçenek**: E-posta profilini açın (**Cihaz yapılandırması** > **Profiller**)ve **Atamalar**’ı seçin. **Ekle** sekmesi, profil atanmış grupları gösterir. Gruba sağ tıklayın ve **Kaldır**’ı seçin. Değişikliklerinizi kaydetmek için **Kaydet**’e tıklamayı unutmayın.
+- **Seçenek 1**: e-posta profilini açın (**cihazlar** > **yapılandırma profilleri** > profilinizi seçin) ve **atamalar**' ı seçin. **Ekle** sekmesi, profil atanmış grupları gösterir. Gruba sağ tıklayın ve **Kaldır**’ı seçin. Değişikliklerinizi kaydetmek için **Kaydet**’e tıklamayı unutmayın.
 
 - **2. Seçenek**: [Cihazı devre dışı bırakın veya silin](../remote-actions/devices-wipe.md). Veri ve ayarları seçmeli olarak veya tamamen kaldırmak için bu eylemleri kullanabilirsiniz.
 
@@ -103,4 +103,4 @@ Kullanıcı zaten bir e-posta hesabı yapılandırılmışsa e-posta profili pla
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturulduğunda henüz herhangi bir işlem gerçekleştirmez. Sonra, [profili bazı cihazlara atayın](../device-profile-assign.md).
+Profil oluşturulduğunda henüz herhangi bir işlem gerçekleştirmez. Daha sonra, [profili atayın](../device-profile-assign.md).

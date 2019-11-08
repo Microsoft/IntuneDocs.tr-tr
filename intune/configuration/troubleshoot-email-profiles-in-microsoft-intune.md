@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506589"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755011"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 'daki e-posta profilleriyle ilgili yaygın sorunlar ve çözümler
 
@@ -32,7 +32,6 @@ Bazı genel e-posta profili sorunlarını gözden geçirin ve bunları nasıl gi
 ## <a name="what-you-need-to-know"></a>Bilmeniz gerekenler
 
 - E-posta profilleri, cihazı kaydeden Kullanıcı için dağıtılır. Intune, e-posta profilini yapılandırmak için kayıt sırasında kullanıcının e-posta profilindeki Azure Active Directory (AD) özelliklerini kullanır. [Cihazlara e-posta ayarları eklemek](email-settings-configure.md) iyi bir kaynak olabilir.
-- Configuration Manager hibrit 'ten tek başına Intune 'a geçiş yaptıktan sonra, Configuration Manager hibrit e-posta profili cihazda 7 gün boyunca kalır. Bu beklenen davranıştır. E-posta profilinin daha önce kaldırılması gerekiyorsa [Intune desteğine](../fundamentals/get-support.md)başvurun.
 - Android Enterprise için, yönetilen Google Play Store kullanarak Gmail veya dokuz Iş için dağıtım yapın. [Yönetilen Google Play uygulamaları ekleme](../apps/apps-add-android-for-work.md) adımları listeler.
 - İOS ve Android için Microsoft Outlook, e-posta profillerini desteklemez. Bunun yerine, bir uygulama yapılandırma ilkesi dağıtın. Daha fazla bilgi için bkz. [Outlook yapılandırma ayarı](../apps/app-configuration-policies-outlook.md).
 - Cihaz gruplarına (Kullanıcı grupları değil) hedeflenmiş e-posta profilleri cihaza teslim edilemeyebilir. Cihazın birincil kullanıcısı varsa, cihaz hedefleme çalışmalıdır. E-posta profili Kullanıcı sertifikaları içeriyorsa, Kullanıcı gruplarını hedeflediğinizden emin olun.
@@ -62,22 +61,10 @@ Samsung KNOX için EAS profili yapılandırmanızı ve kaynak ilkeyi gözden ge�
 
 E-posta hesapları otomatik olarak yapılandırılmış kullanıcılar, cihazlarından resim veya resim gönderemez. Bu senaryo, **üçüncü taraf uygulamalardan e-posta gönderilmesine Izin ver** etkinleştirilmemişse gerçekleşebilir.
 
-### <a name="intune-solution"></a>Intune çözümü
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırma** > **profilleri**' ni seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin.
 3. E-posta profilinizi > **özellikler** > **ayarları**' nı seçin.
 4. **Etkinleştirmek**için **üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver** ayarını belirleyin.
-
-### <a name="configuration-manager-hybrid"></a>Karma Configuration Manager
-
-1. Configuration Manager konsolunu > **varlıkları ve uyumluluğu**açın.
-
-2. **Genel bakış** > **Uyumluluk ayarları** > **Şirket kaynağına erişimi**genişletin ve **e-posta profilleri**' ni seçin.
-
-3. E-posta profiline sağ tıklayın ve **Özellikler**’i açın.
-
-4. **Eşitleme Ayarları** sekmesinde **Üçüncü taraf uygulamalardan e-posta gönderilmesine izin ver**’i seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

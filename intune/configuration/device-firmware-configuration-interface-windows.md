@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d4b076b508316cdb2d3d5f2814fc5e46a014e7
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709519"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755355"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Windows cihazlarında cihaz üretici yazılımı yapılandırma arabirimi profillerini Microsoft Intune (Genel Önizleme) kullanma
 
@@ -77,8 +77,8 @@ Bu profil, Windows kurulumu sırasında cihazların doğrulanıp doğrulandığ�
 
 Bu profil, yapılandırdığınız DFCı ayarlarını içerir.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: profil için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı **Windows: Windows cihazlarında dfcı ayarlarını yapılandırın**.
@@ -158,7 +158,7 @@ Cihazı sildikten sonra, cihazı yeni DFCı ve Autopilot profillerini atayan gru
 
 Cihazı devre dışı bırakmaya ve yönetimden yayınlamaya hazırsanız, DFCı profilini çıkış durumunda istediğiniz UEFı (BIOS) ayarlarına güncelleştirin. Genellikle tüm ayarların etkinleştirilmesini istersiniz. Örneğin:
 
-1. DFCı profilinizi açın (**cihaz yapılandırma** > **profilleri**).
+1. DFCı profilinizi (**cihazlar** > **yapılandırma profilleri**) açın.
 2. **Yerel kullanıcının UEFI (BIOS) ayarlarını** **yalnızca yapılandırılmadı ayarlarına**değiştirmesine izin ver ayarını değiştirin.
 3. Diğer tüm ayarları **Yapılandırılmadı**olarak ayarlayın.
 4. Ayarlarınızı kaydedin.

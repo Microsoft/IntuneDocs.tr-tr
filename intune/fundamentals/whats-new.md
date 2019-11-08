@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 0d1aeea4d9fb47daeef8e44f501e1a61776b0e94
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635349"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801761"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -58,10 +58,10 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 ### <a name="app-management"></a>Uygulama yönetimi
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Android için Şirket Portalı App 'te geliştirilmiş denetim listesi tasarımı<!-- 5550857 -->  
-Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif bir tasarım ve yeni simgelerle güncelleştirilmiştir. Değişiklikler, iOS için Şirket Portalı uygulamasına yapılan son güncelleştirmelerle birlikte hizalanır. Uygulama güncelleştirmelerini tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek için çalışıyoruz. Değişikliklerin yan yana karşılaştırması için bkz. [uygulama kullanıcı arabirimindeki](whats-new-app-ui.md)yenilikler. Güncelleştirilmiş kayıt adımlarına bakmak için bkz. [Android iş profiline kaydolma](/intune-user-help/enroll-device-android-work-profile) ve [Android cihazınızı kaydetme](/intune-user-help/enroll-device-android-company-portal).  
+Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif bir tasarım ve yeni simgelerle güncelleştirilmiştir. Değişiklikler, iOS için Şirket Portalı uygulamasına yapılan son güncelleştirmelerle birlikte hizalanır. Değişikliklerin yan yana karşılaştırması için bkz. [uygulama kullanıcı arabirimindeki](whats-new-app-ui.md)yenilikler. Güncelleştirilmiş kayıt adımlarına bakmak için bkz. [Android iş profiline kaydolma](/intune-user-help/enroll-device-android-work-profile) ve [Android cihazınızı kaydetme](/intune-user-help/enroll-device-android-company-portal).  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Windows 10 S modundaki cihazlarda Win32 uygulamaları<!-- 3747604 --> 
-Windows 10 S modunda yönetilen cihazlara Win32 uygulamaları yükleyebilir ve çalıştırabilirsiniz. Bunu yapmak için, Windows Defender uygulama denetimi (WDAC) PowerShell araçlarını kullanarak S modu için bir veya daha fazla ek ilke oluşturabilirsiniz. Ek ilkeleri Device Guard Imzalama portalı ile imzalayın ve ardından Intune aracılığıyla ilkeleri karşıya yükleyin ve dağıtın. Intune 'da, bu özelliği **istemci uygulamalar** > **Windows 10 S ek ilkeleri**' ni seçerek bulacaksınız. Daha fazla bilgi için bkz. [S modundaki cihazlarda Win32 uygulamalarını etkinleştirme](~/apps/apps-win32-s-mode.md).
+Windows 10 S modunda yönetilen cihazlara Win32 uygulamaları yükleyebilir ve çalıştırabilirsiniz. Bunu yapmak için, Windows Defender uygulama denetimi (WDAC) PowerShell araçlarını kullanarak S modu için bir veya daha fazla ek ilke oluşturabilirsiniz. Ek ilkeleri Device Guard Imzalama portalı ile imzalayın ve ardından Intune aracılığıyla ilkeleri karşıya yükleyin ve dağıtın. Intune 'da, bu özelliği **Windows 10 S ek ilkeleri** > **istemci uygulamaları** ' nı seçerek bulacaksınız. Daha fazla bilgi için bkz. [S modundaki cihazlarda Win32 uygulamalarını etkinleştirme](~/apps/apps-win32-s-mode.md).
 
 #### <a name="set-win32-app-availability-based-on-a-date-and-time---3510685---"></a>Bir tarih ve saate göre Win32 uygulama kullanılabilirliğini ayarlama<!-- 3510685 -->
 Yönetici olarak, gerekli bir Win32 uygulaması için başlangıç saatini ve son tarih saatini yapılandırabilirsiniz. Başlangıç zamanında, Intune yönetim uzantısı uygulama içeriğini indirmeyi başlatacak ve önbelleğe alacak. Uygulama son tarihte yüklenecektir. Kullanılabilir uygulamalar için, uygulama Şirket Portalı görünür olduğunda başlangıç zamanı görüntülenir. Daha fazla bilgi için bkz. [Intune Win32 uygulama yönetimi](~/apps/apps-win32-app-management.md#set-win32-app-availability-and-notifications).
@@ -133,7 +133,7 @@ Kullanıcıların şirket verilerini bir cihazın sistem durumuna göre engelley
 
 #### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>Windows 10 ve üzeri cihazlar için yeni cihaz üretici yazılımı yapılandırma arabirimi profili<!-- 2266073  -->
 
-Windows 10 ve üzeri sürümlerde, ayarları ve özellikleri denetlemek için bir cihaz yapılandırma profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > **Profil oluştur** >  Platform için**Windows 10 ve üzeri** ). Bu güncelleştirmede, Intune 'un UEFı (BIOS) ayarlarını yönetmesine izin veren yeni bir cihaz üretici yazılımı yapılandırma arabirimi profil türü vardır.
+Windows 10 ve üzeri sürümlerde, ayarları ve özellikleri denetlemek için bir cihaz yapılandırma profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > , platform için **Windows 10 ve üzeri sürümler** ) > **profil oluşturma** ). Bu güncelleştirmede, Intune 'un UEFı (BIOS) ayarlarını yönetmesine izin veren yeni bir cihaz üretici yazılımı yapılandırma arabirimi profil türü vardır.
 
 Bu özellik hakkında daha fazla bilgi için, bkz. [Microsoft Intune Windows cihazlarda dfcı profillerini kullanma](../configuration/device-firmware-configuration-interface-windows.md).
 
@@ -179,11 +179,11 @@ Intune artık Intune 'da belirli bir görevi veya görev kümesini tamamlamanız
 Daha fazla bilgi için bkz. [Intune Kılavuzlu senaryolara genel bakış](guided-scenarios-overview.md).
 
 #### <a name="additional-app-configuration-variable-available---4969237-----"></a>Ek uygulama yapılandırma değişkeni kullanılabilir<!-- 4969237   -->
-Bir uygulama yapılandırma ilkesi oluştururken, `AAD Device ID` Yapılandırma değişkenini yapılandırma ayarlarınızın bir parçası olarak dahil edebilirsiniz. Intune 'da, **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**' yi seçin. Yapılandırma **ayarları** dikey penceresini görüntülemek için yapılandırma ilkesi ayrıntılarınızı girip **yapılandırma ayarları** ' nı seçin. Daha fazla bilgi için bkz. [yönetilen Android kurumsal cihazlar Için uygulama yapılandırma ilkeleri-yapılandırma tasarımcısını kullanın](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer).
+Bir uygulama yapılandırma ilkesi oluştururken, `AAD Device ID` Yapılandırma değişkenini yapılandırma ayarlarınızın bir parçası olarak dahil edebilirsiniz. Intune 'da, **ekle** > **uygulama yapılandırma ilkeleri** > **istemci uygulamaları** ' nı seçin. Yapılandırma **ayarları** dikey penceresini görüntülemek için yapılandırma ilkesi ayrıntılarınızı girip **yapılandırma ayarları** ' nı seçin. Daha fazla bilgi için bkz. [yönetilen Android kurumsal cihazlar Için uygulama yapılandırma ilkeleri-yapılandırma tasarımcısını kullanın](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer).
 
 
 #### <a name="create-groups-of-management-objects-called-policy-sets---3762880----"></a>İlke kümeleri olarak adlandırılan yönetim nesnesi grupları oluşturma<!-- 3762880  -->
-İlke kümeleri, önceden tanımlanmış, hedeflenen ve tek bir kavramsal birim olarak izlenmesi gereken yönetim varlıklarının başvuruları için bir paket oluşturmanıza olanak sağlar. İlke kümeleri varolan kavramları veya nesneleri değiştirmez. Intune 'da tek tek nesneleri atamaya devam edebilir ve bir ilke kümesinin parçası olarak tek tek nesnelere başvurabilirsiniz. Bu nedenle, bağımsız nesnelerde yapılan tüm değişiklikler Ilke kümesine yansıtılır.  Intune 'da, **ilke kümelerini** > **Oluştur** ' u seçerek yeni bir ilke kümesi oluşturabilirsiniz. 
+İlke kümeleri, önceden tanımlanmış, hedeflenen ve tek bir kavramsal birim olarak izlenmesi gereken yönetim varlıklarının başvuruları için bir paket oluşturmanıza olanak sağlar. İlke kümeleri varolan kavramları veya nesneleri değiştirmez. Intune 'da tek tek nesneleri atamaya devam edebilir ve bir ilke kümesinin parçası olarak tek tek nesnelere başvurabilirsiniz. Bu nedenle, bağımsız nesnelerde yapılan tüm değişiklikler Ilke kümesine yansıtılır.  Intune 'da yeni bir Ilke kümesi oluşturmak için > **Oluştur** ' u seçerek **ilke kümelerini** seçersiniz. 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-configuration"></a>Cihaz yapılandırması
@@ -214,7 +214,7 @@ Uygulama hedefi:
 - Android kurumsal iş profili
 
 #### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices---4816339-----"></a>Android kurumsal cihaz sahibi cihazlarda genel HTTP proxy oluşturma<!-- 4816339   -->
-Android kurumsal cihazlarda, kuruluşunuzun Web tarama standartlarını (**cihaz yapılandırma** > **profilleri** > **Profil oluştur** > **ANDROID Enterprise** ) karşılamak için genel bir http proxy 'si yapılandırabilirsiniz. Platform > **cihaz sahibi >** profil türü > **bağlantı**) için cihaz kısıtlamaları. Yapılandırıldıktan sonra tüm HTTP trafiği bu proxy 'yi kullanır.
+Android kurumsal cihazlarda, kuruluşunuzun Web tarama standartlarını (**cihaz yapılandırma** > **profilleri** > ve **Android Enterprise** > **profil oluşturmak** için genel bir http proxy 'si yapılandırabilirsiniz. Platform > **cihaz sahibi >** profil türü > **bağlantı**) için cihaz kısıtlamaları. Yapılandırıldıktan sonra tüm HTTP trafiği bu proxy 'yi kullanır.
 
 Bu özelliği yapılandırmak ve yapılandırdığınız tüm ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
@@ -234,7 +234,7 @@ Uygulama hedefi:
 
 
 #### <a name="new-device-configuration-settings-for-supervised-ios-and-ipados-devices---5199328-----"></a>Denetimli iOS ve ıpados cihazları için yeni cihaz yapılandırma ayarları<!-- 5199328   -->
-İOS ve ıpados cihazlarında, cihazlarda özellikleri ve ayarları kısıtlamak için bir profil oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** >  platform > cihaz Için  > **iOS/ıpados** **oluşturma**profil türü için kısıtlamalar). Bu güncelleştirmede, denetleyebilmeniz için yeni ayarlar vardır: 
+İOS ve ıpados cihazlarında, cihazlarda özellikleri ve ayarları kısıtlamak için bir profil oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > platform > cihazı Için **iOS/ıpados** > **profil oluşturma** .profil türü için kısıtlamalar). Bu güncelleştirmede, denetleyebilmeniz için yeni ayarlar vardır: 
 - Dosyalar uygulamasındaki ağ sürücüsüne erişim  
 - Dosyalar uygulamasındaki USB sürücüsüne erişim 
 - Wi-Fi her zaman açık 
@@ -270,7 +270,7 @@ Bir Windows cihazını yeniden adlandırırken yeni kuralları izlemeniz gerekir
  Daha fazla bilgi için bkz. [Intune 'da cihazı yeniden adlandırma](../remote-actions/device-rename.md).
 
 ### <a name="new-android-report-on-devices-overview-page---4924364---"></a>Cihazlara ilişkin yeni Android raporuna genel bakış sayfası<!-- 4924364 -->
-Cihazlara genel bakış sayfasına yeni bir rapor, her bir cihaz yönetimi çözümüne kaç tane Android cihaz kaydedildiğini gösterir. Bu grafik iş profilini, tam olarak yönetilen, adanmış ve Cihaz Yöneticisi kayıtlı cihaz sayısını gösterir. Raporu görmek için **ıntune** > **cihaz** > **genel bakış**' ı seçin.
+Cihazlara genel bakış sayfasına yeni bir rapor, her bir cihaz yönetimi çözümüne kaç tane Android cihaz kaydedildiğini gösterir. Bu grafik iş profilini, tam olarak yönetilen, adanmış ve Cihaz Yöneticisi kayıtlı cihaz sayısını gösterir. Raporu görmek için **ıntune** > **cihazlar** > **genel bakış**' ı seçin.
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-security"></a>Cihaz güvenliği

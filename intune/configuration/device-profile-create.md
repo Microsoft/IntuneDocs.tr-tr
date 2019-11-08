@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 51ec328a60ef2737c776bf6cf5d4b8dc1b32460c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681451"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755319"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
@@ -39,16 +39,16 @@ Bu makalede:
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. **Cihaz yapılandırması**’nı seçin. Aşağıdaki seçenekleriniz vardır:
+2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Aşağıdaki seçenekleriniz vardır:
 
     - **Genel bakış**: profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar.
     - **Yönetin**: cihaz profilleri oluşturun, profil içinde çalıştırılacak özel [PowerShell betikleri](../apps/intune-management-extension.md) yükleyin ve [esım](esim-device-configuration.md)kullanarak cihazlara veri planları ekleyin.
     - **İzleme**: bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profilinizde günlükleri görüntüleyin.
     - **Kurulum**: bir SCEP veya PFX Sertifika yetkilisi ekleyin ya da profilde [Telekom gider yönetimini](telecom-expenses-monitor.md) etkinleştirin.
 
-3. **Profiller** > **Profil Oluştur**'u seçin. Aşağıdaki özellikleri girin:
+3. **Profil oluştur**' u seçin. Aşağıdaki özellikleri girin:
 
    - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin **Şirketin tamamı için WP e-posta profili** gibi bir profil adı kullanabilirsiniz.
    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
@@ -155,7 +155,7 @@ Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlev
 
 4. Değişikliklerinizi kaydetmek için **Ekle** ' yi seçin.
 
-## <a name="refresh-cycle-times"></a>Yenileme döngü süreleri
+## <a name="refresh-cycle-times"></a>Yenileme döngüsü süreleri
 
 Intune, yapılandırma profillerinin güncelleştirmelerini denetlemek için farklı yenileme döngüleri kullanır. Cihaz yakın zamanda kaydedildiyse, iade etme daha sık çalışır. [İlke ve profil yenileme döngüleri](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) tahmini yenileme zamanlarını listeler.
 

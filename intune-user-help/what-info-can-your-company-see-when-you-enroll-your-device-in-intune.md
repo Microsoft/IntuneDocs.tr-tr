@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c219b628348f51c2a5601e4977664d2636effb45
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fc50f48afbd527f3c6d82cc0c71a166b0356ab9e
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505912"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801474"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Cihazımı kaydettiğimde kuruluşum hangi bilgileri görebilir?
 
@@ -52,8 +52,8 @@ Bir cihazı Microsoft Intune’a kaydettiğinizde kuruluşunuz kişisel bilgiler
 
 **Kuruluşunuzun görme olasılığı olan şeyler:**
 
-- Telefon numarası: **Şirkete** ait cihazlarda tam telefon numaranız görülebilir. **Kişisel** cihazlarda ise numaranızın yalnızca son dört hanesi kuruluşunuz tarafından görülebilir. Tüm cihazlarda **Cihaz Ayrıntıları** sayfasını açarak cihazın **Sahiplik Türü**’nü görebilirsiniz.
+- Telefon numarası: şirkete ait cihazlar Için, tam telefon numaranız görünebilirler. Kişiye ait cihazlarda, telefon numaranız için yalnızca son dört basamak kuruluşunuz tarafından görülebilir. Her bir aygıtın sahiplik türünü, **cihaz ayrıntıları** sayfasında görebilirsiniz.
 - Cihaz depolama alanı: Gerekli bir uygulamayı yükleyemiyorsanız kuruluşunuz, yeterli alan olup olmadığını anlamak için cihazınızın depolama alanına bakabilir.  
 - Konum: kayıp, denetimli bir iOS cihazını kurtarmanız gerekmiyorsa kuruluşunuz cihazınızın konumunu hiçbir şekilde göremez. Denetimli cihazlar hakkında daha fazla bilgi edinmek için [Apple iOS belgelerini](https://go.microsoft.com/fwlink/?linkid=853816) ziyaret edin.  
-- Uygulama envanteri ayrıntıları: Kuruluşunuz mobil tehdit savunması kullanıyorsa, iOS cihazınızda bulunan uygulamalarla ilgili ayrıntıları görüntüleyebilecektir. [Mobil Tehdit Savunması](you-are-prompted-to-install-mtd-ios.md) hakkında daha fazla bilgi edinin.
+- Uygulama envanteri ayrıntıları: Kuruluşunuz mobil tehdit savunması kullanıyorsa, iOS cihazınızda bulunan uygulamalarla ilgili ayrıntıları görüntüleyebilecektir. [Mobil Tehdit Savunması](you-are-prompted-to-install-mtd-ios.md) hakkında daha fazla bilgi edinin. Kişisel bir cihazınız varsa, kuruluşunuz yalnızca yönetilen uygulama envanterinizi görebilir. Şirkete ait bir cihazınız varsa, kuruluşunuz tüm uygulama envanterinizi görebilir.
 - Ağ bilgisi: Android cihazlar için ağ bağlantılarıyla ilgili bazı bilgiler kuruluşunuzun destek birimi tarafından görülebilir. Örneğin kuruluşunuz cihazların belli bir bina içerisinde kalmasını gerektiriyorsa cihazınız, bağlı olduğu şebekeyi tanımlar. 

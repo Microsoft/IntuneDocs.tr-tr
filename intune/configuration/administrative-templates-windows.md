@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50fc2d274531dce3d2466ba40a4738035b9b6811
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507023"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756775"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune 'de Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonlarını kullanın
 
@@ -43,8 +43,8 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
 
 ## <a name="create-a-template"></a>Şablon oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
     - **Ad**: profil için bir ad girin.
@@ -59,7 +59,7 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
     > [!TIP]
     > Intune 'daki Windows ayarları, Yerel Grup İlkesi Düzenleyicisi gördüğünüz şirket içi Grup İlkesi yoluyla bağıntılı (`gpedit`).
 
-5. Varsayılan olarak, açılan listede **Tüm ürünler**gösterilmektedir. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
+5. Açılan listede, **Tüm ürünler**' i seçin. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
 
     ![Intune 'da yönetim şablonlarındaki tüm pencereleri veya tüm Office ayarlarını göstermek için listeyi filtreleyin](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
@@ -92,11 +92,11 @@ Bu şablonlarda yüzlerce ayar bulunur. Belirli ayarları bulmayı kolaylaştır
 
   ![Intune 'daki yönetim şablonlarında Grup İlkesi veya ADMX yolu tarafından gruplanmış tüm ayarları göstermek için yol ' a tıklayın](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Şablonunuzda, belirli ayarları bulmak için **arama** kutusunu kullanın. Başlık veya yol ayarlayarak arama yapabilirsiniz. Örneğin `copy` ' ı arayın. @No__t-0 olan tüm ayarlar gösterilir:
+- Şablonunuzda, belirli ayarları bulmak için **arama** kutusunu kullanın. Başlık veya yol ayarlayarak arama yapabilirsiniz. Örneğin `copy` ' ı arayın. `copy` olan tüm ayarlar gösterilir:
 
   ![Intune 'da yönetim şablonlarındaki tüm Windows ve Office ayarlarını göstermek için Kopyala araması yapın](./media/administrative-templates-windows/search-copy-settings.png) 
 
-  Başka bir örnekte, `microsoft word` ' ı arayın. Microsoft Word programı için ayarlayabileceğiniz tüm ayarları görürsünüz. Şablonunuza ekleyebileceğiniz tüm Internet Explorer ayarlarını görmek için @no__t arayın-0.
+  Başka bir örnekte, `microsoft word` ' ı arayın. Microsoft Word programı için ayarlayabileceğiniz tüm ayarları görürsünüz. Şablonunuza ekleyebileceğiniz tüm Internet Explorer ayarlarını görmek için `explorer` aratın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

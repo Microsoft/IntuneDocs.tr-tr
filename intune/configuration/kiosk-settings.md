@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492363"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755156"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Intune kullanarak adanmış bir bilgi noktası olarak çalışacak Windows 10 ve Windows holographic for Business cihaz ayarları
 
@@ -39,8 +39,8 @@ Bu makalede bir cihaz yapılandırma profili oluşturma konusu gösterilmektedir
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller** > **Profil Oluştur**’u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
@@ -60,7 +60,7 @@ Bu makalede bir cihaz yapılandırma profili oluşturma konusu gösterilmektedir
       - [Windows 10 bilgi noktası ayarları](kiosk-settings-windows.md)
       - [Windows holographic for Business bilgi noktası ayarları](kiosk-settings-holographic.md)
 
-5. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin. 
+5. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
 Profil oluşturulur ve profiller listesinde gösterilir. Sonra, profili [atayın](device-profile-assign.md) .
 
