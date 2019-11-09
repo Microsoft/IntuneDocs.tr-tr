@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d1aeea4d9fb47daeef8e44f501e1a61776b0e94
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801761"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882486"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -52,6 +52,14 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+## <a name="week-of-november-4-2019"></a>4 Kasım 2019 haftası
+
+### <a name="device-security"></a>Cihaz güvenliği
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>Güvenlik temelleri Microsoft Azure Kamu destekleniyor<!-- 4062552 -->
+
+*Microsoft Azure Kamu* barındırılan Intune örnekleri artık kullanıcılarınızın ve cihazlarınızın güvenliğini sağlamanıza ve korumanıza yardımcı olan [güvenlik temellerini](../protect/security-baselines.md) kullanabilir.
 
 ## <a name="week-of-october-28-2019"></a>28 Ekim 2019 haftası
 
@@ -1049,7 +1057,7 @@ Ayrıca, iOS Şirket Portalı **cihaz ekranınızı belirler** . Bu nedenle, ko�
 Şirket Portalı, zaten kayıtlı DEP cihazlarına yüklemek için Intune > Istemci uygulamalarına gitmeniz ve uygulamayı uygulama yapılandırma ilkeleriyle yönetilen bir uygulama olarak göndermeniz gerekir. 
 
 #### <a name="configure-how-end-users-update-a-line-of-business-lob-app-using-an-app-protection-policy---3568384---"></a>Son kullanıcıların bir uygulama koruma ilkesi kullanarak iş kolu (LOB) uygulamasını nasıl güncelleştirmelerini yapılandırma<!-- 3568384 -->
-Artık son kullanıcılarınızın, iş kolu (LOB) uygulamasının güncelleştirilmiş bir sürümünü nereden alabilirim? Son kullanıcılar bu özelliği **En düşük uygulama sürümü** koşullu başlatma iletişim kutusunda görür. Bu, son kullanıcıların lob uygulamasının en düşük bir sürümüne güncelleştirilmesini ister. Bu güncelleştirme ayrıntılarını, LOB uygulama koruma ilkenizin (APP) bir parçası olarak sağlamanız gerekir. Bu özellik iOS ve Android 'de kullanılabilir. İOS 'ta, bu özellik, uygulamanın iOS için Intune SDK 'Sı ile tümleştirilebilmesi (veya sarmalama aracı kullanılarak sarmalanması) gerekir. 10.0.7 veya üzeri. Android 'de, bu özellik en son Şirket Portalı gerektirir. Bir son kullanıcının bir LOB uygulamasını nasıl güncelleştirmiş olduğunu yapılandırmak için, uygulamaya bir yönetilen uygulama yapılandırma ilkesine, `com.microsoft.intune.myappstore` anahtarı ile gönderilmesi gerekir. Gönderilen değer, son kullanıcının uygulamayı hangi depoya indirecek tanımlar. Uygulama Şirket Portalı aracılığıyla dağıtılırsa, değer `CompanyPortal` olmalıdır. Diğer herhangi bir mağaza için, URL 'nin tamamını girmeniz gerekir.
+Artık son kullanıcılarınızın, iş kolu (LOB) uygulamasının güncelleştirilmiş bir sürümünü nereden alabilirim? Son kullanıcılar bu özelliği **En düşük uygulama sürümü** koşullu başlatma iletişim kutusunda görür. Bu, son kullanıcıların lob uygulamasının en düşük bir sürümüne güncelleştirilmesini ister. Bu güncelleştirme ayrıntılarını, LOB uygulama koruma ilkenizin (APP) bir parçası olarak sağlamanız gerekir. Bu özellik iOS ve Android 'de kullanılabilir. İOS 'ta, bu özellik, uygulamanın iOS için Intune SDK 'Sı ile tümleştirilebilmesi (veya sarmalama aracı kullanılarak sarmalanması) gerekir. 10.0.7 veya üzeri. Android 'de, bu özellik en son Şirket Portalı gerektirir. Bir son kullanıcının bir LOB uygulamasını nasıl güncelleştirmiş olduğunu yapılandırmak için, uygulamaya bir yönetilen uygulama yapılandırma ilkesine, `com.microsoft.intune.myappstore` anahtarı ile gönderilmesi gerekir. Gönderilen değer, son kullanıcının uygulamayı hangi depoya indirecek tanımlar. Uygulama Şirket Portalı aracılığıyla dağıtılırsa, değer `CompanyPortal`olmalıdır. Diğer herhangi bir mağaza için, URL 'nin tamamını girmeniz gerekir.
 
 #### <a name="intune-management-extension-powershell-scripts---3734186----"></a>Intune yönetim uzantısı PowerShell betikleri<!-- 3734186  -->
 PowerShell betiklerini, kullanıcının cihazdaki yönetici ayrıcalıklarıyla çalışacak şekilde yapılandırabilirsiniz. Daha fazla bilgi için bkz. [Intune 'Da Windows 10 cihazlarında PowerShell betikleri kullanma](../apps/intune-management-extension.md) ve [Win32 uygulama yönetimi](../apps/app-management.md).
