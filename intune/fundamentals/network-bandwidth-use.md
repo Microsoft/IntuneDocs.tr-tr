@@ -68,7 +68,7 @@ Intune istemcileri için içerikleri önbelleğe alan bir proxy sunucunun kullan
 |----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Önbellek boyutu         |             5 GB ila 30 GB             | Bu değer, ağınızdaki istemci bilgisayarların sayısına ve kullandığınız yapılandırmalara bağlı olarak değişir. Dosyaların çok kısa sürede silinmesini önlemek için ortamınıza yönelik önbellek boyutunu ayarlayın. |
 | Tek önbellek dosyası boyutu |                950 MB                 |                                                                     Bu ayar, tüm önbelleğe alan proxy sunucularında kullanılamayabilir.                                                                     |
-|   Önbelleğe alınacak nesne türleri    | istemcileri iki protokolü de kullandığından, proxy sunucusu hem<br /><br />hem de<br /><br />BİT |                                               Intune paketleri HTTP üzerinden Arka Plan Akıllı Aktarım Hizmeti (BITS) indirmesi tarafından alınan CAB dosyalarıdır.                                               |
+|   Önbelleğe alınacak nesne türleri    | istemcileri iki protokolü de kullandığından, proxy sunucusu hem<br /><br />hem de<br /><br />BITS |                                               Intune paketleri HTTP üzerinden Arka Plan Akıllı Aktarım Hizmeti (BITS) indirmesi tarafından alınan CAB dosyalarıdır.                                               |
 > [!NOTE]
 > İçerik isteklerini önbelleğe almak için bir ara sunucu kullanıyorsanız, istemci ile ara sunucu arasındaki ve ara sunucudan Intune'a giden trafik şifrelenir. İstemci ile Intune arasındaki bağlantıda uçtan uca şifreleme uygulanmaz.
 
@@ -79,7 +79,7 @@ Intune istemcileri için içerikleri önbelleğe alan bir proxy sunucunun kullan
 Ağ bant genişliğini azaltmak için belirlediğiniz saatlerde Windows yüklü bir bilgisayar üzerinde BITS hizmetini kullanabilirsiniz. BITS ilkesini Intune Aracısı ilkesinin **Ağ bant genişliği** sayfasında yapılandırabilirsiniz.
 
 > [!NOTE]
-> Windows üzerinde MDM yönetimi için yalnızca işletim sisteminin MobileMSI uygulama türüne ait yönetim arabirimi indirme işlemler için BITS hizmetini kullanır. AppX/MsiX, kendi BITS olmayan indirme yığınını kullanırken Intune aracısı üzerinden erişilene Win32 uygulamaları da BITS yerine Teslim İyileştirme özelliğinden faydalanır.
+> Windows üzerinde MDM yönetimi için yalnızca işletim sisteminin MobileMSI uygulama türüne ait yönetim arabirimi indirme işlemler için BITS hizmetini kullanır. AppX/MsiX, kendi BITS olmayan indirme yığınını kullanırken Intune aracısı üzerinden erişilen Win32 uygulamaları da BITS yerine Teslim İyileştirme özelliğinden faydalanır.
 
 BITS ve Windows bilgisayarlar hakkında daha fazla bilgi için TechNet Kitaplığında [Arka Plan Akıllı Aktarım Hizmeti](https://technet.microsoft.com/library/bb968799.aspx) konusuna bakın.
 

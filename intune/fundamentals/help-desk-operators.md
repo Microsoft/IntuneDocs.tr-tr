@@ -287,7 +287,7 @@ Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 | Autopilot cihazı kaldırıldı | Kaydedilmeye çalışan cihaz, bu hesap için Autopilot sisteminden kaldırıldı. |
 | Cihaz sınırına ulaşıldı | Bu kayıt, yönetici tarafından yapılandırılmış bir cihaz sınırı nedeniyle engellendi. |
 | Apple ekleme işlemi | Intune bir Apple MDM anında iletme sertifikası eksik olduğu veya sertifikanın süresi dolduğu için tüm iOS cihazlarının kaydı dönemde engellendi. |
-| Cihaz önceden kayıtlı değil | Kurumsal önceden şirkete ait olarak kaydedilmediğinden tüm kişisel kayıtlar bir yönetici tarafından engellendi. |
+| Cihaz önceden kayıtlı değil | Cihaz önceden kurumsal olarak kaydedilmemiş ve tüm kişisel kayıtlar bir yönetici tarafından engellenmiş. |
 | Özellik desteklenmiyor | Kullanıcı büyük olasılıkla Intune yapılandırmanız ile uyumlu olmayan bir yöntem aracılığıyla kaydolmaya çalışıyordu. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Mobil cihazdan kullanılabilir verileri toplama
