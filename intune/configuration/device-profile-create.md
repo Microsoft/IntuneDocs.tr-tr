@@ -46,7 +46,7 @@ Bu makalede:
     - **Genel bakış**: profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar.
     - **Yönetin**: cihaz profilleri oluşturun, profil içinde çalıştırılacak özel [PowerShell betikleri](../apps/intune-management-extension.md) yükleyin ve [esım](esim-device-configuration.md)kullanarak cihazlara veri planları ekleyin.
     - **İzleme**: bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profilinizde günlükleri görüntüleyin.
-    - **Kurulum**: bir SCEP veya PFX Sertifika yetkilisi ekleyin ya da profilde [Telekom gider yönetimini](telecom-expenses-monitor.md) etkinleştirin.
+    - **Kurulum**: bir SCEP veya PFX Sertifika yetkilisi ekleyin ya da profilde [Telekom Gider Yönetimi](telecom-expenses-monitor.md)’ni etkinleştirin.
 
 3. **Profil oluştur**' u seçin. Aşağıdaki özellikleri girin:
 
@@ -94,7 +94,7 @@ Bu makalede:
 
 ## <a name="scope-tags"></a>Kapsam etiketleri
 
-Profilinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. İK veya Merkez ofis çalışanları gibi belirli gruplara ilke atamak ve filtrelemek kapsam etiketlerini kullanabilirsiniz.
+Profilinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. İK veya Merkez ofis çalışanları gibi belirli gruplara ilke atamak ve filtrelemek için kapsam etiketlerini kullanabilirsiniz.
 
 Kapsam etiketleri ve yapabilecekleriniz hakkında daha fazla bilgi için bkz. [Dağıtılmış BT için RBAC ve kapsam etiketlerini kullanma](../fundamentals/scope-tags.md).
 

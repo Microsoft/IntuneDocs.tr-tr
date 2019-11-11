@@ -43,7 +43,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 ## <a name="device-owner"></a>Cihaz sahibi
 
-### <a name="device-health"></a>Cihaz Sistem Durumu
+### <a name="device-health"></a>Cihaz durumu
 
 - **Cihazın cihaz tehdit düzeyinde veya bunun altında olmasını gerektir**: [Mobile Threat Defense hizmetiniz](mobile-threat-defense.md)tarafından değerlendirilen izin verilen maksimum cihaz tehdit düzeyini seçin. Bu tehdit düzeyini aşan cihazlar uyumsuz olarak işaretlenir. Bu ayarı kullanmak için izin verilen tehdit düzeyini seçin:
 
@@ -139,7 +139,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 ## <a name="work-profile"></a>İş profili
 
-### <a name="device-health"></a>Cihaz Sistem Durumu
+### <a name="device-health"></a>Cihaz durumu
 
 - **Kök erişim izni verilmiş cihazlar**: 
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
