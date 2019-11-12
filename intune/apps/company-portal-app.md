@@ -69,7 +69,8 @@ Bir Kullanıcı Şirket Portalı bir iOS uygulaması yüklerken bir istem alır.
 
 
 ## <a name="company-identity-branding-customization"></a>Şirket kimliği marka özelleştirme
-Şirket Portalınızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz.
+Şirket Portalı''nızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz.
+
 
 ### <a name="theme-color-and-logo-in-the-company-portal"></a>Şirket Portalı’nda tema rengi ve logo
 Şirket Portalı’na bir tema rengi uygulayın. Standart renklerden birini seçin veya özel renk için alt basamaklı onaltılık kodu girin.
