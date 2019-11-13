@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681351"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984189"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune 'A iOS yazılım güncelleştirme ilkeleri ekleme
 
@@ -28,7 +28,7 @@ Bu özellik şu platformlarda geçerlidir:
 
 - iOS 10,3 ve üzeri (denetimli)
 
-Cihaz, 8 saatte bir Intune’a iade edilir. Bir güncelleştirme varsa, cihaz, kısıtlı zamanlar dışında indirir ve yükler. Cihazın güncelleştirilmesi için kullanıcı etkileşimi gerekli değildir. İlke, kullanıcının işletim sistemini el ile güncelleştirmesini engellemez.
+Cihaz, 8 saatte bir Intune’a iade edilir. Bir güncelleştirme varsa, cihaz, kısıtlı zamanlar dışında indirir ve yükler. Güncelleştirme işlemi genellikle herhangi bir kullanıcı etkileşimini kapsamaz, ancak cihazın bir geçiş kodu varsa, bir yazılım güncelleştirmesi başlatmak için kullanıcının bu parolayı girmesi gerekir. Bu, iOS 10,3 ve sonraki sürümleri için geçerlidir. İlke, kullanıcının işletim sistemini el ile güncelleştirmesini engellemez.
 
 ## <a name="configure-the-policy"></a>İlkeyi yapılandırma
 
@@ -80,7 +80,7 @@ Varolan bir ilkeyi, sınırlı zamanları değiştirme dahil olmak üzere düzen
 1. **Yazılım güncelleştirmeleri**' nde **iOS için güncelleştirme ilkeleri** ' ni seçin ve ardından düzenlemek istediğiniz ilkeyi seçin.
 
 2. İlke **özelliklerini**görüntülerken, değiştirmek istediğiniz ilke sayfası için **Düzenle** ' yi seçin.  
-   poliie ](./media/software-updates-ios/edit-policy.png) ![Edit   
+   poliie](./media/software-updates-ios/edit-policy.png) ![düzenleme   
 
 3. Bir değişikliği gönderdikten sonra, düzenlemelerinizi kaydetmek için **gözden geçir + kaydet**  > **Kaydet** ' i seçin ve ilkeler *özelliklerine*geri dönün.  
  

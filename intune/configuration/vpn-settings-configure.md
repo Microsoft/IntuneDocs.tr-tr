@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3804409acadbfc3dfc1c7d6f3372dc939b7b3630
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 59a1b5679b81a8de90e39d6ec13bbe87dac90947
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755048"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984181"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune 'da VPN sunucularına bağlanmak için VPN profilleri oluşturma
 
@@ -50,7 +50,7 @@ VPN profillerini oluştururken aşağıdaki bağlantı türlerini kullanabilirsi
 |Check Point Capsule VPN|-Android<br/>-Android kurumsal iş profilleri<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
 |Cisco AnyConnect|-Android<br/>-Android kurumsal iş profilleri<br/>-Android kurumsal cihaz sahibi (tam olarak yönetilen)<br/>-iOS<br/>-macOS|
 |Cisco (IPSec)|iOS|
-|Citrix SSO|-Android<br/>-Android kurumsal iş profilleri: [uygulama yapılandırma Ilkesini](../apps/app-configuration-policies-use-android.md) kullanma<br/>-iOS<br/>-Windows 10|
+|Citrix SSO|-Android<br/>-Android kurumsal iş profilleri: [uygulama yapılandırma Ilkesini](../apps/app-configuration-policies-use-android.md) kullanma<br/>-Android kurumsal cihaz sahibi (tamamen yönetilen): [uygulama yapılandırma Ilkesini](../apps/app-configuration-policies-use-android.md) kullanma<br/>-iOS<br/>-Windows 10|
 |Özel VPN|-iOS<br/>-macOS|
 |F5 Access|-Android<br/>-Android kurumsal iş profilleri<br/>-Android kurumsal cihaz sahibi (tam olarak yönetilen)<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
 |IKEv2| -iOS<br/>-Windows 10|
