@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 022df428658a3c8791a07cbd797145bfe9a392bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ae29d2ee5add475db89f6895b22299793a94ac36
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496472"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984090"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma aracılığıyla satın aldığınız iOS e-Kitaplarını yönetme
 
@@ -42,7 +42,6 @@ iOS kitapları için çok sayıda lisansı [Apple İş İçin Volume Purchase Pr
 ## <a name="before-you-start"></a>Başlamadan önce
 Başlamadan önce, Apple'dan bir VPP belirteci alın ve Intune hesabınıza yükleyin. Ek olarak:
 
-* Intune hesabınızla en çok 256 VPP belirtecini ilişkilendirebilirsiniz.
 * Daha önce bir VPP belirtecini farklı bir ürünle kullandıysanız Intune ile kullanılacak yeni bir tane oluşturmanız gerekir.
 * Her belirteç bir yıl için geçerlidir.
 * Varsayılan olarak Intune, Apple VPP hizmetiyle günde iki kez eşitlenir. Dilediğiniz zaman bir el ile eşitleme başlatabilirsiniz.

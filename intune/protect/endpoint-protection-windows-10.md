@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a6cada91cdad6c117fddd143007e2cdf40939119
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502273"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984143"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları  
 
@@ -270,7 +270,8 @@ Aşağıdaki ayarlar bu makalede tek bir kez listelenirse, ancak tümü üç öz
 
   - **Yapılandırılmadı**  
   - **Engelle** -yerel depodaki yetkili uygulama güvenlik duvarı kuralları yok sayılır ve zorlanmaz.  
-  - @No__t **Izin ver** -1 ' i etkinleştirmek için yerel depoda güvenlik duvarı kurallarını **Etkinleştir** ' i seçin ve zorlanır.  
+  - **Izin ver** -
+   , güvenlik duvarı kurallarını yerel depoda **Etkinleştir** ' i seçerek tanınırlar ve zorlanır.  
 
 - **Yerel depodan genel bağlantı noktası Windows Defender güvenlik duvarı kuralları**  
   **Varsayılan**: yapılandırılmadı  
@@ -353,7 +354,7 @@ Bir veya daha fazla özel güvenlik duvarı kuralı **ekleyebilirsiniz** . Daha 
 
 Bu kuralın uygulandığı yerel ve uzak adresleri belirtin.  
 
-- @No__t **Yerel adresler**-1  
+- **Yerel adresler**    
   **Varsayılan**: herhangi bir adres  
   Güvenlik Duvarı CSP: [FirewallRules/*Firewallrulename*/Localportranges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)  
 
@@ -443,8 +444,6 @@ Cihazda Microsoft Edge yüklü olmalıdır.
  
 ### <a name="windows-settings"></a>Windows Ayarları  
 
-Bu şifreleme ayarları tüm Windows 10 sürümleri için geçerlidir.  
-
 - **Cihazları şifreleme**  
   **Varsayılan**: yapılandırılmadı  
   BitLocker CSP: [Requiredeviceencryption](https://go.microsoft.com/fwlink/?linkid=872523)  
@@ -478,7 +477,7 @@ Temel ayarlar, tüm veri sürücüsü türleri için evrensel BitLocker ayarlar�
   *Blok*olarak ayarlandığında, aşağıdaki ayarı yapılandırabilirsiniz:  
 
   - **Standart kullanıcıların Azure AD katılımı sırasında şifrelemeyi etkinleştirmesine izin ver**  
-    *Bu ayar yalnızca Azure Active Directory katılmış (Azure SıFATı) cihazları için geçerlidir ve önceki "`Warning for other disk encryption`" ayarına bağlıdır.*  
+    *Bu ayar yalnızca Azure Active Directory katılmış (Azure SıFATı) cihazları için geçerlidir ve `Warning for other disk encryption`önceki ayara bağlıdır.*  
     **Varsayılan**: yapılandırılmadı  
     BitLocker CSP: [Allowstandarduserencryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -980,7 +979,7 @@ Herhangi bir uygulamadan gelen giden bağlantıları, düşük itibarlı sahip I
 - **XML 'yi karşıya yükle**  
   **Varsayılan**: *Yapılandırılmadı*  
 
-  [Cihazların kötüye kullanımını korumak](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)üzere Exploit Protection 'ı kullanmak için, istediğiniz sistem ve uygulama azaltma ayarlarını IÇEREN bir XML dosyası oluşturun. XML dosyasını oluşturmak için iki yöntem vardır:  
+  [Cihazların kötüye kullanımını korumak](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)üzere Exploit Protection 'ı kullanmak için, istediğiniz sistem ve uygulama azaltma ayarlarını IÇEREN bir XML dosyası oluşturun. XML dosyasını oluşturmak için iki yöntem vardır:  
 
   - *PowerShell* - *Get-processhafifletme*, *set-Processazaltma*ve *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlet 'lerinden bir veya daha fazlasını kullanın. Cmdlet'ler risk azaltma ayarlarını yapılandırır ve bunların XML gösterimini dışarı aktarır.  
 

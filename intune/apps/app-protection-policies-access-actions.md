@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999483"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984013"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -44,9 +44,6 @@ Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından ş
 7. Bir **Ayar** seçin ve kullanıcıların şirket uygulamanızda oturum açması için karşılaması gereken bir **Değer** girin. 
 8. Gereksinimlerinizi karşılamayan kullanıcılar için bir **Eylem** seçin. Bazı durumlarda tek bir ayar için birden çok eylem yapılandırılabilir. Daha fazla bilgi için bkz. [Uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md).
 
->[!NOTE]
-> **Cihaz modellerini veya cihaz üreticisini** kullanmak için, cihaz modeli tanımlayıcılarının (iOS) veya cihaz üreticilerinin (Android) noktalı virgülle ayrılmış bir listesini girin. Birden çok değer listesinde boşluklardan kaçının. Bu değerler büyük/küçük harfe duyarlı değildir. 
-
 ## <a name="policy-settings"></a>İlke ayarları 
 
 Uygulama koruma ilkesi ayarları tablosunda **Ayar**, **Değer**, ve **Eylem** sütunları bulunur.
@@ -62,7 +59,7 @@ iOS’ta **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yap
 - Cihaz modeli/modelleri
 - İzin verilen en fazla cihaz tehdit düzeyi
 
-**Cihaz modelleri** ayarını kullanmak için iOS model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini ekleyin. [HockeyApp'in destek belgelerindeki](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) Device Type sütunu altında bir iOS model tanımlayıcısı bulabilirsiniz.<br>
+**Cihaz modelleri** ayarını kullanmak için iOS model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini ekleyin. Bu değerler büyük/küçük harfe duyarlı değildir. ' Cihaz modeli (ler) ' girişi için Intune raporlama kapsamında, [HockeyApp 'in destek belgelerindeki](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) veya bu [üçüncü taraf GitHub deposundaki](https://gist.github.com/adamawolf/3048717)cihaz türü sütununda bir iOS model tanımlayıcısı bulabilirsiniz.<br>
 Örnek giriş: *iPhone5,2;iPhone5,3*
 
 Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
@@ -88,9 +85,9 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 - Min Şirket Portalı sürümü
 - İzin verilen en fazla cihaz tehdit düzeyi
 
-**Min Şirket portalı sürümünü**kullanarak, bir son kullanıcı cihazında zorlanan Şirket portalı için belirli bir en düşük tanımlı sürümü belirtebilirsiniz. Bu koşullu başlatma ayarı, her bir değer karşılanmazsa **erişimi engellemek**, **verileri silmek**ve olası eylemler olarak **uyarmak** için değerler ayarlamanıza olanak sağlar. Bu değer için olası biçimler *[ana] düzenine uyar. [ İkincil]* , *[birincil]. [ İkincil]. [Derleme]* veya *[birincil]. [ İkincil]. [Derleme]. [Düzeltme]* . Bazı son kullanıcılar, bir uygulama için bu şekilde zorlanan bir güncelleştirme tercih edemeyebilir, bu ayar yapılandırılırken ' warn ' seçeneği ideal olabilir. Google Play Store, uygulama güncelleştirmeleri için yalnızca Delta baytlarını göndermenin iyi bir işini yapar, ancak bu, kullanıcının güncelleştirme sırasında veriler üzerinde olmaları durumunda kullanmak istememe büyük miktarda veri olabilir. Güncelleştirme zorlamak ve böylece güncelleştirilmiş bir uygulamanın indirilmesi, güncelleştirme sırasında beklenmeyen veri ücretlerine neden olabilir. Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı sürüm 5.0.4560.0 ve gelecekteki tüm şirket portalı sürümlerini alan son kullanıcıları etkileyecektir. Bu ayarın, bu özelliğin yayımlandığı sürümden daha eski bir Şirket Portalı sürümünü kullanan kullanıcılar üzerinde hiçbir etkisi olmayacaktır. En son Şirket Portalı sürümünde olabilecekleri için, cihazlarından uygulama otomatik güncelleştirmelerini kullanan son kullanıcılar bu özellikten hiçbir iletişim kutusu görmeyecektir. Bu ayar yalnızca kayıtlı ve kayıtlı olmayan cihazlar için uygulama korumasıyla Android 'dir.
+**Min Şirket portalı sürümünü**kullanarak, bir son kullanıcı cihazında zorlanan Şirket portalı için belirli bir en düşük tanımlı sürümü belirtebilirsiniz. Bu koşullu başlatma ayarı, her bir değer karşılanmazsa **erişimi engellemek**, **verileri silmek**ve olası eylemler olarak **uyarmak** için değerler ayarlamanıza olanak sağlar. Bu değer için olası biçimler *[ana] düzenine uyar. [ İkincil]*, *[birincil]. [ İkincil]. [Derleme]* veya *[birincil]. [ İkincil]. [Derleme]. [Düzeltme]*. Bazı son kullanıcılar, bir uygulama için bu şekilde zorlanan bir güncelleştirme tercih edemeyebilir, bu ayar yapılandırılırken ' warn ' seçeneği ideal olabilir. Google Play Store, uygulama güncelleştirmeleri için yalnızca Delta baytlarını göndermenin iyi bir işini yapar, ancak bu, kullanıcının güncelleştirme sırasında veriler üzerinde olmaları durumunda kullanmak istememe büyük miktarda veri olabilir. Güncelleştirme zorlamak ve böylece güncelleştirilmiş bir uygulamanın indirilmesi, güncelleştirme sırasında beklenmeyen veri ücretlerine neden olabilir. Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı sürüm 5.0.4560.0 ve gelecekteki tüm şirket portalı sürümlerini alan son kullanıcıları etkileyecektir. Bu ayarın, bu özelliğin yayımlandığı sürümden daha eski bir Şirket Portalı sürümünü kullanan kullanıcılar üzerinde hiçbir etkisi olmayacaktır. En son Şirket Portalı sürümünde olabilecekleri için, cihazlarından uygulama otomatik güncelleştirmelerini kullanan son kullanıcılar bu özellikten hiçbir iletişim kutusu görmeyecektir. Bu ayar yalnızca kayıtlı ve kayıtlı olmayan cihazlar için uygulama korumasıyla Android 'dir.
 
-**Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Cihazın Android üreticisini, cihaz ayarlarının altında bulabilirsiniz.<br>
+**Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Bu değerler büyük/küçük harfe duyarlı değildir. Intune raporlama 'nın yanı sıra, cihaz ayarları altında bir cihazın Android üreticisini bulabilirsiniz. <br>
 Örnek giriş: *Üretici A;Üretici B* 
 
 >[!NOTE]

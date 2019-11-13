@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709751"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984116"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
@@ -447,11 +447,20 @@ Uygulamaları eklemek için şunları yapabilirsiniz:
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
+Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olması için Ipucu veya önemli not): Bu ayar hedeflenen cihazın yönetim profilinde gösterilmez. Bunun nedeni, bu ayarın uzak bir cihaz eylemi olarak kabul edilmesidir ve cihazdaki veri dolaşımı durumu her değiştirildiğinde, Intune hizmeti tarafından yeniden engellenir. Yönetim profilinde olmasa dahi, yönetim konsolundaki raporlamadan başarı olarak gösterilse de çalışır. 
 - **Veri dolaşımı**: hücresel ağ üzerinde veri dolaşımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı cihaz cep telefonu şebekesindeyken veri dolaşımına izin verir.
+
+  > [!IMPORTANT]
+  > Bu ayar uzak cihaz eylemi olarak değerlendirilir. Bu nedenle, bu ayar cihazdaki yönetim profilinde gösterilmez. Cihazda veri dolaşımı durumu her değiştiğinde **veri dolaşımı** , Intune hizmeti tarafından engellenir. Intune 'da, raporlama durumu bir başarı gösteriyorsa, bu ayar cihazdaki yönetim profilinde gösterilmese de, çalıştığını öğrenin.
+
 - **Dolaşım sırasında genel arka plan getirme**: **blok** , hücresel ağ üzerinde dolaşımda genel arka plan getirme özelliğinin kullanılmasını engeller. **Yapılandırılmadı** ayarı cihazın cep telefonu şebekesi üzerinde dolaşımdayken e-posta gibi verileri almasına izin verir.
 - **Sesli arama**: kullanıcıların cihazda sesli arama özelliğini kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı cihazda sesli aramaya izin verir.
 - **Ses dolaşımı**: hücresel ağ üzerinde ses dolaşımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı cihaz cep telefonu şebekesindeyken ses dolaşımına izin verir.
 - **Kişisel etkin nokta**: **Engelle** , kullanıcıların cihazındaki kişisel etkin noktayı her cihaz eşitlemesine karşı kapatır. Bu ayar bazı taşıyıcılar ile uyumlu olmayabilir. **Yapılandırılmadı** (varsayılan) ayarı kişisel etkin nokta yapılandırmasını kullanıcı tarafından ayarlanmış varsayılan değerinde bırakır.
+
+  > [!IMPORTANT]
+  > Bu ayar uzak cihaz eylemi olarak değerlendirilir. Bu nedenle, bu ayar cihazdaki yönetim profilinde gösterilmez. Kişisel etkin nokta durumu cihazda her değiştiğinde **Kişisel etkin nokta** , Intune hizmeti tarafından engellenir. Intune 'da, raporlama durumu bir başarı gösteriyorsa, bu ayar cihazdaki yönetim profilinde gösterilmese de, çalıştığını öğrenin.
+
 - **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)** : yönetilen uygulamaların hücresel ağlarda ne zaman kullanabileceği veri türlerini tanımlayın. Seçenekleriniz şunlardır:
   - **Hücresel veri kullanımını engelleyin**: **tüm yönetilen uygulamalar** için hücresel veri kullanmayı engelleyin veya **belirli uygulamaları seçin**.
   - **Dolaşım sırasında hücresel veri kullanımını engelle**: **tüm yönetilen uygulamalar** için Dolaşımda hücresel veri kullanmayı engelleyin veya **belirli uygulamaları seçin**.

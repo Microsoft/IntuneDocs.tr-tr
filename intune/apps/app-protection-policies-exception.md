@@ -1,7 +1,7 @@
 ---
 title: Uygulamalar için veri aktarım ilkesi özel durumları
 titleSuffix: Microsoft Intune
-description: Intune Mobil Uygulama Yönetimi (MAM) veri aktarımı ilkesi için özel durumlar oluşturun.
+description: Intune Uygulama Koruması Ilkesi (uygulama) veri aktarımı ilkesi için özel durumlar oluşturun.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813341"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984066"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune Mobil Uygulama Yönetimi (MAM) veri aktarımı ilkesi için özel durumlar oluşturma
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune Uygulama Koruması Ilkesi (uygulama) veri aktarımı ilkesi için özel durumlar oluşturma
 
-Yönetici olarak, Intune Mobil Uygulama Yönetimi (MAM) veri aktarımı ilkesi için özel durumlar oluşturabilirsiniz. Bir özel durum, hangi yönetilmeyen uygulamaların yönetilen uygulamalara/uygulamalardan veri aktarabileceğini seçmenizi sağlar. Bu, özel durum listesine eklediğiniz yönetilmeyen uygulamalara güvenmelidir. 
+Yönetici olarak, Intune Uygulama Koruması Ilkesi (uygulama) veri aktarımı ilkesi için özel durumlar oluşturabilirsiniz. Bir özel durum, hangi yönetilmeyen uygulamaların yönetilen uygulamalara/uygulamalardan veri aktarabileceğini seçmenizi sağlar. Bu, özel durum listesine eklediğiniz yönetilmeyen uygulamalara güvenmelidir. 
 
 >[!WARNING] 
 > Veri aktarımı özel durum ilkesinde değişiklik yapmaktan siz sorumlusunuz. Bu ilkeye yapılan eklemeler, yönetilmeyen uygulamaların (Intune tarafından yönetilmeyen uygulamalar) yönetilen uygulamalar tarafından korunan verilere erişmesine izin verir. Korunan verilere bu erişim, veri güvenliği sızıntılarına neden olabilir. Yalnızca kuruluşunuzun kullanması gereken, ancak Intune APP'yi (Uygulama Koruma İlkeleri) desteklemeyen uygulamalar için veri aktarımı özel durumları ekleyin. Ayrıca, yalnızca veri sızıntısı riski içerdiğini düşünmediğiniz uygulamalar için özel durumlar ekleyin.
@@ -65,6 +65,8 @@ MAM veri aktarımı ilkesine bir özel durum olarak **Webex** paketinin eklenmes
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Android **sertifika yükleyicisi** örneği: Android Için Outlook 'un Android keystore 'A bir S/MIME sertifikası (e-posta eki olarak sunulan) yükleyebilmesi Için yerel **sertifika yükleyicisi** uygulamasını muaf tutmak üzere şu dize için veri aktarımı özel durumu eklemeniz gerekir: <code>com.android.certinstaller</code>. Daha fazla bilgi için bkz. [iOS ve Android Için Outlook 'Ta duyarlılık etiketleme ve koruma](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
