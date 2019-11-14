@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/12/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 535ae4dd986940da17d247136b37185cfaa58b57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f00a680d8d7799e0307021926677d1e0ed1e9a12
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510214"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059694"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune için Endpoint Protection ile Windows bilgisayarların korunmasına yardımcı olma
 
@@ -189,7 +189,7 @@ Intune, cihazda en son algılanan kötü amaçlı yazılım yollarının en fazl
 4. Sütun başlığına sağ tıklayın. Kullanılabilir sütunlar listesi görüntülenir. Listede **Son Algılama Yolları** onay kutusunu seçin. **Son Algılama Yolları** sütunu görüntülenir ve cihazda en son izlenen en fazla 10 kötü amaçlı yazılım örneğini gösterir.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Bilgisayarda kötü amaçlı yazılım taraması çalıştırma veya kötü amaçlı yazılım tanımlarını güncelleştirme
-Intune, Intune istemcinin yüklü olduğu uzaktan yönetilen bir bilgisayarda Endpoint Protection’ı veya Windows Defender’ı kullanarak tam veya hızlı kötü amaçlı yazılım taraması çalıştırabilir.
+Intune, Intune istemcisinin yüklü olduğu uzaktan yönetilen bir bılgısayarda Endpoint Protection veya Microsoft Defender kullanarak tam veya hızlı kötü amaçlı yazılım taraması çalıştırabilir.
 
 1. [Microsoft Intune yönetim konsolunda](https://manage.microsoft.com/) **Gruplar** > **Genel Bakış** > **Tüm Cihazlar** > **Tüm Bilgisayarlar**’a gidin ve ardından hedeflemek istediğiniz bilgisayarı seçin.
 

@@ -2,8 +2,8 @@
 title: Microsoft Intune-Azure 'da Windows 10 cihazlarına PowerShell betikleri ekleme | Microsoft Docs
 description: PowerShell betikleri oluşturup çalıştırın, betik ilkesini Azure Active Directory gruplara atayın, betikleri izlemek için raporları kullanın ve Microsoft Intune Windows 10 cihazlarına eklediğiniz betikleri silme adımlarını görün. Ayrıca bkz. bazı yaygın sorunlar ve çözümleri.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94653c51bccc59fde93fdacc16f2b83e7860346b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497796"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059715"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarında PowerShell betikleri kullanma
 
@@ -102,7 +102,7 @@ Intune yönetim uzantısında aşağıdaki Önkoşullar bulunur. Önkoşullar ka
 
     2. İşiniz bittiğinde **İleri**' yi seçin.
 
-6. @No__t **atamaları**seçin-1**Eklenecek grupları seçin**. Mevcut bir Azure AD grupları listesi gösteriliyor.
+6. **Atamaları** seçin > **Eklenecek grupları**seçin. Mevcut bir Azure AD grupları listesi gösteriliyor.
 
     1. Cihazları betiği alan kullanıcıları içeren bir veya daha fazla grup seçin. **Seçin** öğesini belirleyin. Seçtiğiniz gruplar listede gösterilir ve ilkenize gönderilir.
 
@@ -177,7 +177,7 @@ Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları y
 
 - Cihazların [Azure AD 'ye katılmış](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)olduğundan emin olun. Yalnızca çalışma alanınıza veya kuruluşunuza (Azure AD 'ye[kayıtlı](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) ) katılmış olan cihazlar betikleri almaz.
 - Intune yönetim uzantısı istemcisi, Intune 'da betikteki veya ilkedeki değişiklikler için saatte bir kez kontrol eder.
-- Intune yönetim uzantısının `%ProgramFiles(x86)%\Microsoft Intune Management Extension` ' a indirildiğini doğrulayın.
+- Intune yönetim uzantısının `%ProgramFiles(x86)%\Microsoft Intune Management Extension`için yüklendiğini onaylayın.
 - Betikler, Surface Hub 'Larda veya Windows 10 ' da S modunda çalışmaz.
 - Tüm hatalar için günlükleri gözden geçirin. Bkz. [Intune yönetim uzantısı günlükleri](#intune-management-extension-logs) (Bu makalede).
 - Olası izin sorunları için, PowerShell betiğinin özelliklerinin `Run this script using the logged on credentials` olarak ayarlandığından emin olun. Ayrıca, oturum açan kullanıcının betiği çalıştırmak için uygun izinlere sahip olup olmadığını denetleyin.

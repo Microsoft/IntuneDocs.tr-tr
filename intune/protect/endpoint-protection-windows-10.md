@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune-Azure 'da Windows 10 cihazları için koruma ayarları | Microsoft Docs
-description: Windows 10 cihazlarında, Application Guard, güvenlik duvarı, SmartScreen, şifreleme ve BitLocker, Exploit Guard, uygulama denetimi, güvenlik merkezi ve güvenlik dahil olmak üzere Windows Defender özelliklerini etkinleştirmek için Endpoint Protection ayarlarını kullanın veya yapılandırın Microsoft Intune yerel cihazlar.
+description: Windows 10 cihazlarında, Application Guard, güvenlik duvarı, SmartScreen, şifreleme ve BitLocker, Exploit Guard, uygulama denetimi, güvenlik merkezi ve güvenlik dahil olmak üzere Microsoft Defender özelliklerini etkinleştirmek için Endpoint Protection ayarlarını kullanın veya yapılandırın Microsoft Intune yerel cihazlar.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,20 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6cada91cdad6c117fddd143007e2cdf40939119
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984143"
+ms.locfileid: "74058421"
 ---
-# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları  
+# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+Microsoft Intune cihazlarınızın korunmasına yardımcı olmak için birçok ayar içerir. Bu makalede, Windows 10 ve daha yeni cihazlarda etkinleştirebileceğinizi ve yapılandırabileceğiniz tüm ayarlar açıklanmaktadır. Bu ayarlar, BitLocker ve Microsoft Defender dahil olmak üzere güvenliği denetlemek için Intune 'da bir Endpoint Protection yapılandırma profilinde oluşturulur.  
 
-Microsoft Intune cihazlarınızın korunmasına yardımcı olmak için birçok ayar içerir. Bu makalede, Windows 10 ve daha yeni cihazlarda etkinleştirebileceğinizi ve yapılandırabileceğiniz tüm ayarlar açıklanmaktadır. Bu ayarlar, BitLocker ve Windows Defender gibi güvenliği denetlemek için Intune 'da bir Endpoint Protection yapılandırma profilinde oluşturulur.  
-
-Windows Defender virüsten koruma yapılandırmak için bkz. [Windows 10 cihaz kısıtlamaları](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).  
+Microsoft Defender virüsten koruma yapılandırmak için bkz. [Windows 10 cihaz kısıtlamaları](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).  
 
 ## <a name="before-you-begin"></a>Başlamadan önce  
 
@@ -38,9 +36,9 @@ Windows Defender virüsten koruma yapılandırmak için bkz. [Windows 10 cihaz k
 
 Yapılandırma hizmeti sağlayıcıları (CSP 'Ler) hakkında daha fazla bilgi için bkz. [yapılandırma hizmeti sağlayıcısı başvurusu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).  
 
-## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard  
+## <a name="microsoft-defender-application-guard"></a>Microsoft Defender Application Guard  
 
-Microsoft Edge kullanırken Windows Defender Application Guard, ortamınızı kuruluşunuz tarafından güvenilir olarak tanımlanmayan sitelerden korur. Kullanıcılar yalıtılmış ağ sınırlarında listelenmeyen siteleri ziyaret ettiğinde, siteler bir Hyper-V sanal gözatma oturumunda açılır. Güvenilen siteler, cihaz yapılandırmasında yapılandırılan bir ağ sınırı tarafından tanımlanır.  
+Microsoft Edge kullanırken, Microsoft Defender Application Guard, ortamınızı kuruluşunuz tarafından güvenilmeyen sitelerden korur. Kullanıcılar yalıtılmış ağ sınırlarında listelenmeyen siteleri ziyaret ettiğinde, siteler bir Hyper-V sanal gözatma oturumunda açılır. Güvenilen siteler, cihaz yapılandırmasında yapılandırılan bir ağ sınırı tarafından tanımlanır.  
 
 Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. Bu profili kullanmak, Application Guard’ı etkinleştirmek için bir Win32 bileşeni yükler.  
 
@@ -122,7 +120,7 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
   - **Etkinleştir** -kullanıcılar, sanallaştırılmış tarayıcıdan konak işletim sistemine dosya indirebilir.  
   - **Yapılandırılmadı** -dosyaları cihazda yerel olarak tutar ve dosyaları ana bilgisayar dosya sistemine indirmez.  
 
-## <a name="windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender güvenlik duvarı  
  
 ### <a name="global-settings"></a>Genel ayarlar  
 
@@ -196,7 +194,7 @@ Aşağıdaki ayarlar bu makalede tek bir kez listelenirse, ancak tümü üç öz
 
 #### <a name="general-settings"></a>Genel ayarlar  
 
-- **Windows Defender Güvenlik Duvarı**  
+- **Microsoft Defender güvenlik duvarı**  
   **Varsayılan**: yapılandırılmadı  
   Güvenlik Duvarı CSP: [EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -224,7 +222,7 @@ Aşağıdaki ayarlar bu makalede tek bir kez listelenirse, ancak tümü üç öz
   **Varsayılan**: yapılandırılmadı  
   Güvenlik Duvarı CSP: [korumalı](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **Yapılandırılmadı**  
-    - **Block** -Windows Defender güvenlik duvarı açık olduğunda ve bu ayar *Engelle*olarak ayarlandığında, diğer ilke ayarlarından bağımsız olarak tüm gelen trafik engellenir. 
+    - **Block** -Microsoft Defender güvenlik duvarı açık olduğunda ve bu ayar *Engelle*olarak ayarlandığında, diğer ilke ayarlarından bağımsız olarak tüm gelen trafik engellenir. 
     - **Izin ver** - *izin ver*olarak ayarlandığında, bu ayar kapalı olur ve diğer ilke ayarlarına bağlı olarak gelen trafiğe izin verilir.
 
 - **Çok noktaya yayın yayınlarına tek noktaya yayın yanıtları**  
@@ -264,7 +262,7 @@ Aşağıdaki ayarlar bu makalede tek bir kez listelenirse, ancak tümü üç öz
 
 #### <a name="rule-merging"></a>Kural birleştirme  
 
-- **Yerel depodan yetkilendirilmiş uygulama Windows Defender güvenlik duvarı kuralları**  
+- **Yerel depodan yetkilendirilmiş uygulama Microsoft Defender güvenlik duvarı kuralları**  
   **Varsayılan**: yapılandırılmadı  
   Güvenlik Duvarı CSP 'si: [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -273,7 +271,7 @@ Aşağıdaki ayarlar bu makalede tek bir kez listelenirse, ancak tümü üç öz
   - **Izin ver** -
    , güvenlik duvarı kurallarını yerel depoda **Etkinleştir** ' i seçerek tanınırlar ve zorlanır.  
 
-- **Yerel depodan genel bağlantı noktası Windows Defender güvenlik duvarı kuralları**  
+- **Yerel depodan genel bağlantı noktası Microsoft Defender güvenlik duvarı kuralları**  
   **Varsayılan**: yapılandırılmadı  
   Güvenlik Duvarı CSP 'si: [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -281,7 +279,7 @@ Aşağıdaki ayarlar bu makalede tek bir kez listelenirse, ancak tümü üç öz
   - **Engelle** -yerel depodaki genel bağlantı noktası güvenlik duvarı kuralları yok sayılır ve zorlanmaz.  
   - **Izin ver** -yerel depodaki genel bağlantı noktası güvenlik duvarı kurallarını tanınmak ve zorunlu olacak şekilde Uygula.  
 
-- **Yerel depodan Windows Defender güvenlik duvarı kuralları**  
+- **Yerel depodan Microsoft Defender güvenlik duvarı kuralları**  
   **Varsayılan**: yapılandırılmadı  
   Güvenlik Duvarı CSP: [Allowlocalpolicymerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -422,7 +420,7 @@ Bu kuralın uygulandığı yerel ve uzak bağlantı noktalarını belirtin.
   Bu kural için yetkili yerel kullanıcıların bir listesini belirtin. Bu kural bir Windows hizmeti için geçerliyse yetkili kullanıcıların listesi belirtilemez.  
 
 
-## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen ayarları  
+## <a name="microsoft-defender-smartscreen-settings"></a>Microsoft Defender SmartScreen ayarları  
  
 Cihazda Microsoft Edge yüklü olmalıdır.  
 
@@ -477,7 +475,7 @@ Temel ayarlar, tüm veri sürücüsü türleri için evrensel BitLocker ayarlar�
   *Blok*olarak ayarlandığında, aşağıdaki ayarı yapılandırabilirsiniz:  
 
   - **Standart kullanıcıların Azure AD katılımı sırasında şifrelemeyi etkinleştirmesine izin ver**  
-    *Bu ayar yalnızca Azure Active Directory katılmış (Azure SıFATı) cihazları için geçerlidir ve `Warning for other disk encryption`önceki ayara bağlıdır.*  
+    *Bu ayar yalnızca Azure Active Directory katılmış (Azure SıFATı) cihazları için geçerlidir ve önceki ayara bağlıdır `Warning for other disk encryption`.*  
     **Varsayılan**: yapılandırılmadı  
     BitLocker CSP: [Allowstandarduserencryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -773,7 +771,7 @@ Bu ayarlar özellikle çıkarılabilir veri sürücülerine uygulanır.
     - **Engelle** -başka bir kuruluşta yapılandırılmış cihazlara blok yazma erişimi.  
     - **Yapılandırılmadı** -yazma erişimini reddet.  
  
-## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender Exploit Guard  
 
 Çalışanlarınız tarafından kullanılan uygulamaların saldırı yüzeyini yönetmek ve azaltmak için [Exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) 'ı kullanın.  
 
@@ -969,12 +967,11 @@ Herhangi bir uygulamadan gelen giden bağlantıları, düşük itibarlı sahip I
 
   Bu ayarın amacı, kimlik avı dolandırıcılığı, yararlanma siteleri ve Internet 'teki kötü amaçlı içeriklere erişimi olan uygulamalardan son kullanıcıları korumaktır. Ayrıca, üçüncü taraf tarayıcıların tehlikeli sitelere bağlanmasını engeller.  
 
-  - **Yapılandırılmadı** -bu özelliği devre dışı bırakın. Kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlantısı engellenmiyor. Yöneticiler bu etkinliği Windows Defender Güvenlik Merkezi 'nde göremez.  
-  - **Etkinleştirin** -ağ korumasını açın ve kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanmasını engelleyin. Yöneticiler, bu etkinliği Windows Defender Güvenlik Merkezi 'nde görebilir.  
-  - **Yalnızca denetim**:-kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanması engellenmez. Yöneticiler, bu etkinliği Windows Defender Güvenlik Merkezi 'nde görebilir.  
+  - **Yapılandırılmadı** -bu özelliği devre dışı bırakın. Kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlantısı engellenmiyor. Yöneticiler bu etkinliği Microsoft Defender Güvenlik Merkezi 'nde göremez.  
+  - **Etkinleştirin** -ağ korumasını açın ve kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanmasını engelleyin. Yöneticiler, bu etkinliği Microsoft Defender Güvenlik Merkezi 'nde görebilir.  
+  - **Yalnızca denetim**:-kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanması engellenmez. Yöneticiler, bu etkinliği Microsoft Defender Güvenlik Merkezi 'nde görebilir.  
 
 ### <a name="exploit-protection"></a>Exploit protection  
- 
 
 - **XML 'yi karşıya yükle**  
   **Varsayılan**: *Yapılandırılmadı*  
@@ -983,7 +980,7 @@ Herhangi bir uygulamadan gelen giden bağlantıları, düşük itibarlı sahip I
 
   - *PowerShell* - *Get-processhafifletme*, *set-Processazaltma*ve *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlet 'lerinden bir veya daha fazlasını kullanın. Cmdlet'ler risk azaltma ayarlarını yapılandırır ve bunların XML gösterimini dışarı aktarır.  
 
-  - *Windows Defender Güvenlik Merkezi kullanıcı arabirimi* -Windows Defender Güvenlik Merkezi 'Nde, uygulama & tarayıcısı denetimi ' ne tıklayın ve ardından, yararlanma korumasını bulmak için ortaya çıkan ekranın en altına gidin. Önce Sistem ayarları ve Program ayarları sekmelerini kullanarak risk azaltma ayarlarını yapılandırın. Daha sonra bunların bir XML temsilini dışarı aktarmak için ekranın altında yer alan Dışarı aktarma ayarları bağlantısını bulun.  
+  - *Microsoft Defender Güvenlik Merkezi kullanıcı arabirimi* -Microsoft Defender Güvenlik Merkezi ' nde, uygulama & tarayıcısı denetimi ' ne tıklayın ve ardından, yararlanma korumasını bulmak için ortaya çıkan ekranın en altına gidin. Önce Sistem ayarları ve Program ayarları sekmelerini kullanarak risk azaltma ayarlarını yapılandırın. Daha sonra bunların bir XML temsilini dışarı aktarmak için ekranın altında yer alan Dışarı aktarma ayarları bağlantısını bulun.  
 
 - **Exploit Protection arabirimini Kullanıcı düzenlemesi**  
   **Varsayılan**: yapılandırılmadı  
@@ -993,9 +990,9 @@ Herhangi bir uygulamadan gelen giden bağlantıları, düşük itibarlı sahip I
   - **Block** -bellek, denetim akışı ve ilke kısıtlamalarını yapılandırmanıza olanak tanıyan bir XML dosyasını karşıya yükleyin. XML dosyasındaki ayarlar bir uygulamanın açıklarından yararlanılmasını engellemek için kullanılabilir.  
   - **Yapılandırılmadı** -özel yapılandırma kullanılmıyor.  
 
-## <a name="windows-defender-application-control"></a>Windows Defender Uygulama Denetimi  
+## <a name="microsoft-defender-application-control"></a>Microsoft Defender uygulama denetimi  
 
-Tarafından denetlenmesi gereken ya da Windows Defender uygulama denetimi tarafından çalıştırılacak şekilde güvenilen ek uygulamalar seçin. Windows mağazasındaki Windows bileşenlerinin ve tüm uygulamaların çalıştırılmasına otomatik olarak güvenilir.  
+Tarafından denetlenmesi gereken veya Microsoft Defender uygulama denetimi tarafından çalıştırılacak şekilde güvenilen ek uygulamalar seçin. Windows mağazasındaki Windows bileşenlerinin ve tüm uygulamaların çalıştırılmasına otomatik olarak güvenilir.  
 
 
 - **Uygulama denetimi kod bütünlüğü ilkeleri**  
@@ -1010,9 +1007,9 @@ Tarafından denetlenmesi gereken ya da Windows Defender uygulama denetimi taraf�
  
   - **Yalnızca denetim** -uygulamalar engellenmiyor. Tüm olaylar yerel istemci günlüklerine kaydedilir.  
 
-## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Microsoft Defender Credential Guard  
 
-Windows Defender Credential Guard kimlik bilgileri hırsızlığı saldırılarına karşı korur. Gizli dizileri yalnızca ayrıcalıklı sistem yazılımlarının erişebileceği şekilde yalıtır.  
+Microsoft Defender Credential Guard, kimlik bilgilerinin hırsızlık saldırılarına karşı koruma sağlar. Gizli dizileri yalnızca ayrıcalıklı sistem yazılımlarının erişebileceği şekilde yalıtır.  
 
 - **Credential Guard**  
   **Varsayılan**: devre dışı  
@@ -1034,19 +1031,19 @@ Windows Defender Credential Guard kimlik bilgileri hırsızlığı saldırılar�
   - **Dizin belleği erişimiyle güvenli önyükleme**  
     Güvenli önyükleme ve doğrudan bellek erişimi (DMA) korumalarının bulunduğu VBS 'yi etkinleştirir. DMA korumaları donanım desteği gerektirir ve yalnızca doğru yapılandırılmış cihazlarda etkinleştirilir.  
 
-## <a name="windows-defender-security-center"></a>Windows Defender Güvenlik Merkezi  
+## <a name="microsoft-defender-security-center"></a>Microsoft Defender Güvenlik Merkezi  
 
-Windows Defender Güvenlik Merkezi, diğer tüm özelliklerden ayrı bir uygulama veya işlem olarak çalışır. İşlem Merkezi aracılığıyla bildirimler gösterir. Durumu görmek için bir toplayıcı veya tek bir yer görevi görür ve özelliklerin her biri için bir yapılandırma çalıştırın. [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) belgelerinden daha fazla bilgi edinin.  
+Microsoft Defender Güvenlik Merkezi, her bir özelliklerden ayrı bir uygulama veya işlem olarak çalışır. İşlem Merkezi aracılığıyla bildirimler gösterir. Durumu görmek için bir toplayıcı veya tek bir yer görevi görür ve özelliklerin her biri için bir yapılandırma çalıştırın. [Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) belgeleri ' nde daha fazla bilgi edinin.  
 
-### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender Güvenlik Merkezi uygulaması ve bildirimleri  
+### <a name="microsoft-defender-security-center-app-and-notifications"></a>Microsoft Defender Güvenlik Merkezi uygulaması ve bildirimleri  
 
-Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kullanıcı erişimini engelleyin. Bir bölümü gizlemek, bu bölümle ilgili bildirimleri de engeller.  
+Microsoft Defender Güvenlik Merkezi uygulamasının çeşitli bölümlerine Son Kullanıcı erişimini engelleyin. Bir bölümü gizlemek, bu bölümle ilgili bildirimleri de engeller.  
 
 - **Virüs ve tehdit koruması**  
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  Son kullanıcıların Windows Defender Güvenlik Merkezi 'nde virüs ve tehdit koruması alanını görüntüleyip görüntüleyemadığını yapılandırın. Bu bölümün gizlenmesi, virüs ve tehdit koruması ile ilgili tüm bildirimleri de engeller.  
+  Son kullanıcıların Microsoft Defender Güvenlik Merkezi ' nde virüs ve tehdit koruması alanını görüntüleyip görüntüleyemadığını yapılandırın. Bu bölümün gizlenmesi, virüs ve tehdit koruması ile ilgili tüm bildirimleri de engeller.  
 
   - **Yapılandırılmadı**  
   - **Gizlenecek**  
@@ -1055,7 +1052,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [Hideransomwaredatarecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  Son kullanıcıların Windows Defender Güvenlik Merkezi 'nde fidye yazılımı koruma alanını görüntüleyip görüntüleyebir şekilde yapılandırılacağını yapılandırın. Bu bölümün gizlenmesi, fidye korumasıyla ilgili tüm bildirimleri de engeller.  
+  Son kullanıcıların Microsoft Defender Güvenlik Merkezi ' nde fidye yazılımı koruma alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, fidye korumasıyla ilgili tüm bildirimleri de engeller.  
 
   - **Yapılandırılmadı**  
   - **Gizlenecek**  
@@ -1064,7 +1061,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [Disableaccountprotectionuı](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  Son kullanıcıların Windows Defender Güvenlik Merkezi 'nde hesap koruma alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, hesap korumasıyla ilgili tüm bildirimleri de engeller.  
+  Son kullanıcıların Microsoft Defender Güvenlik Merkezi ' nde hesap koruma alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, hesap korumasıyla ilgili tüm bildirimleri de engeller.  
 
   - **Yapılandırılmadı**  
   - **Gizlenecek**  
@@ -1073,7 +1070,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [Disablenetworkuı](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  Son kullanıcıların Windows Defender Güvenlik Merkezi 'nde güvenlik duvarı ve ağ koruması alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, güvenlik duvarı ve ağ koruması ile ilgili tüm bildirimleri de engeller.  
+  Son kullanıcıların Microsoft Defender Güvenlik Merkezi 'nde güvenlik duvarı ve ağ koruması alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, güvenlik duvarı ve ağ koruması ile ilgili tüm bildirimleri de engeller.  
 
   - **Yapılandırılmadı**  
   - **Gizlenecek**  
@@ -1082,7 +1079,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [Disableappbrowserui](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  Son kullanıcıların Windows Defender Güvenlik Merkezi 'nde uygulama ve tarayıcı denetim alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, uygulama ve tarayıcı denetimiyle ilgili tüm bildirimleri de engeller.  
+  Son kullanıcıların Microsoft Defender Güvenlik Merkezi 'nde uygulama ve tarayıcı denetim alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, uygulama ve tarayıcı denetimiyle ilgili tüm bildirimleri de engeller.  
 
   - **Yapılandırılmadı**  
   - **Gizlenecek**  
@@ -1091,7 +1088,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [Disabledevicesecurityuı](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  Son kullanıcıların Windows Defender Güvenlik Merkezi 'nde donanım koruma alanını görüntüleyip görüntüleyebir şekilde yapılandırılacağını yapılandırın. Bu bölümün gizlenmesi, donanım korumasıyla ilgili tüm bildirimleri de engeller.  
+  Son kullanıcıların Microsoft Defender Güvenlik Merkezi 'nde donanım koruma alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, donanım korumasıyla ilgili tüm bildirimleri de engeller.  
 
   - **Yapılandırılmadı**  
   - **Gizlenecek**  
@@ -1100,7 +1097,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [Disablehealthuı](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  Son kullanıcıların Windows Defender Güvenlik Merkezi 'nde cihaz performansı ve sistem durumu alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, cihaz performansı ve sistem durumu ile ilgili tüm bildirimleri de engeller.  
+  Son kullanıcıların Microsoft Defender Güvenlik Merkezi ' nde cihaz performans ve sistem durumu alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, cihaz performansı ve sistem durumu ile ilgili tüm bildirimleri de engeller.  
   
   - **Yapılandırılmadı**  
   - **Gizlenecek**  
@@ -1109,7 +1106,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  Son kullanıcıların Windows Defender Güvenlik Merkezi ' nde aile seçenekleri alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, Aile seçenekleriyle ilgili tüm bildirimleri de engeller.  
+  Son kullanıcıların Microsoft Defender Güvenlik Merkezi ' nde aile seçenekleri alanını görüntüleyip görüntüleyebir şekilde yapılandırın. Bu bölümün gizlenmesi, Aile seçenekleriyle ilgili tüm bildirimleri de engeller.  
   
   - **Yapılandırılmadı**  
   - **Gizlenecek**  
@@ -1118,7 +1115,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
   **Varsayılan**: yapılandırılmadı  
   Windowssavunma Dersecuritycenter CSP: [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  Son kullanıcılara görüntülenecek bildirimleri seçin. Kritik olmayan bildirimlere, Windows Defender Antivirus etkinliğinin özetleri ve taramalar tamamlandığında verilen bildirimler dahildir. Diğer tüm bildirimler kritik olarak kabul edilir.  
+  Son kullanıcılara görüntülenecek bildirimleri seçin. Kritik olmayan bildirimler, taramalar tamamlandığında Bildirimler dahil olmak üzere Microsoft Defender virüsten koruma etkinliğinin özetlerini içerir. Diğer tüm bildirimler kritik olarak kabul edilir.  
 
   - **Yapılandırılmadı**  
   - **Kritik olmayan bildirimleri engelle**  
@@ -1158,7 +1155,7 @@ Windows Defender Güvenlik Merkezi uygulamasının çeşitli alanlarına son kul
 
 ### <a name="it-contact-information"></a>BT iletişim bilgileri  
 
-Windows Defender Güvenlik Merkezi uygulaması ve uygulama bildirimlerinde gösterilecek BT iletişim bilgilerini sağlayın.  
+Microsoft Defender Güvenlik Merkezi uygulamasında ve uygulama bildirimlerinde görüntülenecek BT iletişim bilgilerini sağlayın.  
 
 **Uygulamada ve bildirimlerde göster**, **Yalnızca uygulamada göster**, **Yalnızca bildirimlerde göster** veya **Gösterme** seçeneklerinden birini seçebilirsiniz. **BT kuruluş adı** ile aşağıdaki iletişim seçeneklerinden en az birini girin:  
 
@@ -1637,6 +1634,240 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
   - **El ile**
   - **Otomatik**
   - **Devre dışı**
+
+## <a name="user-rights"></a>Kullanıcı hakları
+
+- **Kimlik bilgisi yöneticisine güvenilir arayan olarak erişin**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+
+  Bu kullanıcı hakkı, yedekleme ve geri yükleme işlemleri sırasında Credential Manager tarafından kullanılır. Bu ayrıcalık diğer varlıklara verildiyse kullanıcıların kayıtlı kimlik bilgileri tehlikeye girebilir.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Yerel oturum açmaya izin ver**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların bilgisayarda oturum açabilyeceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Ağdan erişime izin ver**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların ve grupların bilgisayara ağ üzerinden bağlanmasına izin verileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **İşletim sisteminin bir parçası olarak davran**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+
+  İşletim sisteminin bir parçası olarak davran
+  - **Yapılandırılmadı**
+  - **İzin ver**  
+
+- **Dosyaları ve dizinleri yedekleme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/Backupfilesanddizinler](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+
+  Bu kullanıcı hakkı, dosyaları ve dizinleri yedeklerken hangi kullanıcıların dosya, dizin, kayıt defteri ve diğer kalıcı nesne izinlerini atlayabileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Sistem saatini değiştirme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/Changessystemtime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların ve grupların bilgisayarın dahili saatindeki tarih ve saati değiştirebileceklerini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Genel nesneler oluştur**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+
+  Bu güvenlik ayarı, kullanıcıların tüm oturumlarda kullanılabilir olan genel nesneler oluşturup oluşturamayacağını belirler. Genel nesneler oluşturabileceğiniz kullanıcılar, uygulama hatasına veya veri bozulmasına neden olabilecek diğer kullanıcıların oturumları altında çalışan süreçler etkileyebilir.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Disk belleği dosyası oluşturma**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/CreatePageFile](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+
+  Bu kullanıcı hakkı, bir sayfa dosyasının boyutunu oluşturmak ve değiştirmek için dahili API 'yi çağırabilen kullanıcıları ve grupları belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Kalıcı paylaşılan nesneler oluşturma**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+
+  Bu kullanıcı hakkı, nesne Yöneticisi 'ni kullanarak bir dizin nesnesi oluşturmak için işlem tarafından hangi hesapların kullanılabileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Sembolik bağlantılar oluştur**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/Createsemboliclinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+
+  Bu kullanıcı hakkı, kullanıcının oturum açtığı bilgisayardan sembolik bir bağlantı oluşturup oluşturamayacağını belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Belirteç oluşturma**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/CreateToken](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+
+  Bu kullanıcı hakkı, işlem tarafından, bir erişim belirteci oluşturmak için bir iç API kullandığında herhangi bir yerel kaynağa erişim sağlamak için kullanılabilecek bir belirteç oluşturmak üzere işlemler tarafından hangi kullanıcıların/grupların kullanılabileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Hata ayıklama programları**  
+  **Varsayılan**: yapılandırılmadı  
+    CSP: [Userrights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların herhangi bir işleme veya çekirdeğe bir hata ayıklayıcı ekleyebileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Ağdan erişimi Reddet**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların bir bilgisayara ağ üzerinden erişmesini engellediğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Hizmet olarak oturum açma iznini reddetme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+
+  Bu güvenlik ayarı, hangi hizmet hesaplarının bir işlemi hizmet olarak kaydetmesinin engellendiğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Uzak Masaüstü Hizmetleri aracılığıyla oturum açmaya izin verme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların ve grupların Uzak Masaüstü Hizmetleri istemci olarak oturum açmasını yasakladığını belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Temsilciyi etkinleştir**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/Enabletemsili](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+
+ Bu kullanıcı hakkı, bir kullanıcı veya bilgisayar nesnesi üzerinde, hangi kullanıcıların temsilciliğini güvenilir ayarını ayarlayabileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Güvenlik denetimleri oluşturma**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+
+  Bu kullanıcı hakkı, güvenlik günlüğüne giriş eklemek için bir işlem tarafından hangi hesapların kullanılabileceğini belirler. Güvenlik günlüğü yetkisiz sistem erişimini izlemek için kullanılır.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **İstemcinin kimliğine bürün**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+
+  Bu kullanıcı hakkını bir kullanıcıya atamak, bu kullanıcı adına çalışan programların istemcinin kimliğine bürünmesini sağlar. Bu tür bir kimliğe bürünme için bu kullanıcı hakkının gerekli olması, yetkisiz bir kullanıcının bir istemciyi oluşturdukları bir hizmete bağlanmasını ve daha sonra bu istemciyi taklit etmesini engeller ve bu da yetkisiz kullanıcının izinlerini yükseltebilir Yönetim veya sistem düzeyleri.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Zamanlama önceliğini artır**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+
+  Bu kullanıcı hakkı, diğer işleme atanan yürütme önceliğini artırmak için, başka bir işleme yazma özelliği olan bir işlemi hangi hesapların kullanabileceğinizi belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Cihaz sürücülerini yükleme ve kaldırma**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların cihaz sürücülerini veya diğer kodu çekirdek moduna dinamik olarak yükleyip kaldırabileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Bellekteki sayfaları kilitleme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+
+  Bu kullanıcı hakkı, verilerin fiziksel bellekte tutulması için bir işlemi hangi hesapların kullanabileceğinizi belirler. bu durum, sistemin diskteki sanal bellek üzerinde veri sayfalaması yapılmasını önler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Denetim ve güvenlik günlüğünü yönetme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+
+  Bu kullanıcı hakkı, dosyalar, Active Directory nesneleri ve kayıt defteri anahtarları gibi ayrı kaynaklar için hangi kullanıcıların nesne erişim denetimi seçeneklerini belirtbileceklerini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Toplu bakım görevlerini gerçekleştirme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların ve grupların bir birimde, uzaktan birleştirme gibi bakım görevlerini çalıştırabileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Üretici yazılımı ortam değerlerini değiştirme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+
+  Bu kullanıcı hakkı, Bellenim ortamı değerlerini kimin değiştirebileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Nesne etiketini değiştirme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+
+  Bu kullanıcı hakkı; dosyalar, kayıt defteri anahtarları veya diğer kullanıcılara ait süreçler gibi nesnelerin bütünlük etiketini hangi kullanıcı hesaplarının değiştirebileceklerini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Tek işlem profili**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/ProfileSingleProcess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+
+  Bu kullanıcı hakkı, sistem işlemlerinin performansını izlemek için hangi kullanıcıların performans izleme araçlarını kullanabileceğinizi belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+
+- **Uzaktan kapatmalar**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/Remotekapatması](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+
+  Bu kullanıcı hakkı, hangi kullanıcıların bir bilgisayarı ağdaki uzak bir konumdan kapatmasına izin verileceğini belirler. Bu kullanıcı hakkının kötüye kullanılması hizmet reddine neden olabilir.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+  
+- **Dosyaları ve dizinleri geri yükleme**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/Restorefilesanddizinler](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  
+  Bu kullanıcı hakkı, yedeklenen dosya ve dizinleri geri yüklerken hangi kullanıcıların dosya, dizin, kayıt defteri ve diğer kalıcı nesne izinlerini atlayabileceğini belirler ve hangi kullanıcıların geçerli güvenlik sorumlusunu bir nesnenin sahibi olarak ayarlayabileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
+  
+- **Dosyaların veya nesnelerin sahipliğini al**  
+  **Varsayılan**: yapılandırılmadı  
+  CSP: [Userrights/Takesahiplik](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+
+  Bu kullanıcı hakkı, sistemdeki Active Directory nesneler, dosyalar ve klasörler, yazıcılar, kayıt defteri anahtarları, süreçler ve iş parçacıkları dahil tüm güvenli kılınabilir nesnelerin sahipliğini alabileceğini belirler.
+  - **Yapılandırılmadı**
+  - **İzin ver**
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

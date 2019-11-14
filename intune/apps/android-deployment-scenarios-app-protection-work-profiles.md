@@ -2,8 +2,8 @@
 title: Microsoft Intune-Azure 'da uygulama koruma ilkeleri ve iş profilleri | Microsoft Docs
 description: Microsoft Intune ' de kişisel veya KCG Android Kurumsal cihazları için uygulama koruma ilkeleri veya iş profilleri kullanmaya karar verirken farkları ve uzmanları ve dezavantajları inceleyin. Kayıt (APP-WE) ve Android kurumsal iş profilleri olmadan uygulama koruma ilkeleriyle aldığınız farkları ve özellikleri karşılaştırın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a2c71e04cf842fda7b16fb8ad4a05668ccbfaa84
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507609"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059790"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune 'da Android kurumsal cihazlarda uygulama koruma ilkeleri ve iş profilleri
 

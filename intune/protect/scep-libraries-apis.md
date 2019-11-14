@@ -3,8 +3,8 @@ title: 3\. taraf sertifika yetkililerini eklemek için API 'Ler
 titleSuffix: Microsoft Intune
 description: Microsoft Intune’daki cihazlara SCEP sertifikaları vermek için üçüncü taraf sertifika yetkililerine (CA) yönelik SCEP GitHub çözümünü ekleyin veya tümleştirin. Bu çözüm sertifikaları doğrulayan, Intune’a başarı ve başarısızlık bildirimleri gönderen ve Intune’la iletişim kurarken SSL yuva fabrikasını kullanan Java ve C# API’leri içerir. Ayrıca, SCEP CA yapılandırmanızı test etme adımlarına genel bakış bilgilerini görüntüleyin.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cadadcb8379d2de73b166d863c0b471747f5f6c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504101"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058233"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API’leri kullanarak Intune’a SCEP için üçüncü taraf CA’ları ekleme
 

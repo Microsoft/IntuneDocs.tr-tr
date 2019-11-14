@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 884e4211a880feb3eb533238a5e7246b2738ce46
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d17f5a749252cd8e0e0e5e5ae8babf164f8b9836
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502309"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058466"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune’da Endpoint Protection ayarları ekleme  
 
@@ -29,7 +29,7 @@ Intune ile, cihazlarda aşağıdakiler de dahil olmak üzere ortak uç nokta kor
 - Duvarını   
 - BitLocker  
 - Uygulamalara izin verme ve bunları engelleme  
-- Windows Defender ve şifreleme  
+- Microsoft Defender ve şifreleme  
 
 Örneğin yalnızca macOS kullanıcılarının Mac App Store’dan uygulama indirmesine izin veren bir Endpoint Protection profili oluşturabilirsiniz. Veya Windows 10 cihazlarda uygulama çalıştırırken Windows SmartScreen’i etkinleştirebilirsiniz.  
 
@@ -56,7 +56,7 @@ Bir profil oluşturmadan önce, Intune 'un desteklenen her platform için yönet
 
 ## <a name="add-custom-firewall-rules-for-windows-10-devices"></a>Windows 10 cihazları için özel güvenlik duvarı kuralları ekleme  
 
-Windows 10 için Endpoint Protection kurallarını içeren bir profilin parçası olarak Windows Defender güvenlik duvarı 'nı yapılandırdığınızda güvenlik duvarları için özel kurallar yapılandırabilirsiniz. Özel kurallar, Windows 10 için desteklenen önceden tanımlanmış güvenlik duvarı kuralları kümesini genişletmenizi sağlar.  
+Microsoft Defender güvenlik duvarını Windows 10 için Endpoint Protection kurallarını içeren bir profilin parçası olarak yapılandırdığınızda güvenlik duvarları için özel kurallar yapılandırabilirsiniz. Özel kurallar, Windows 10 için desteklenen önceden tanımlanmış güvenlik duvarı kuralları kümesini genişletmenizi sağlar.  
 
 Özel güvenlik duvarı kuralları içeren profiller için plan yaparken, profillerinizin güvenlik duvarı kurallarını nasıl seçecağınızı etkileyebilecek aşağıdaki bilgileri göz önünde bulundurun:  
 - Her profil en fazla 150 güvenlik duvarı kuralını destekler. 150 'den fazla kural kullandığınızda, her biri 150 kuralla sınırlı ek profiller oluşturun.  
@@ -71,11 +71,11 @@ Intune 'un yönetebileceği güvenlik duvarı kuralları, Windows [güvenlik duv
 
 2. *Platform*için **Windows 10 ve üzeri**' i seçin ve ardından *profil türü* için **Endpoint Protection**' ı seçin.  
 
-3. Yapılandırma sayfasını açmak için **Windows Defender güvenlik duvarı** ' nı seçin ve ardından *güvenlik duvarı kuralları* için **Ekle** ' yi seçerek **kural oluştur** sayfasını açın.  
+3. Yapılandırma sayfasını açmak için **Microsoft Defender güvenlik duvarı** ' nı seçin ve ardından *güvenlik duvarı kuralları* için **Ekle** ' yi seçerek **kural oluştur** sayfasını açın.  
 
 4. Güvenlik duvarı kuralı için ayarları belirtin ve sonra kaydetmek için **Tamam** ' ı seçin. Belgelerde bulunan özel güvenlik duvarı kuralı seçeneklerini gözden geçirmek için bkz. [özel güvenlik duvarı kuralları](endpoint-protection-windows-10.md#firewall-rules).  
 
-5. Kuralı kaydettikten sonra, kural listesindeki *Windows Defender güvenlik duvarı* sayfasında görünür.  
+5. Kuralı kaydettikten sonra, kural listesindeki *Microsoft Defender güvenlik duvarı* sayfasında görünür.  
 
 6. Bir kuralı değiştirmek için listeden kuralı seçin, kuralı **Düzenle** sayfasını açın.  
 

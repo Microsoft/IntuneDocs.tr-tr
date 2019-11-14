@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune-Azure 'da ortak uç nokta koruma iletileri | Microsoft Docs
-description: Microsoft Intune 'da Endpoint Protection ve Windows Defender kullanırken ve sorunlarını giderirken ortak iletilere ve olası çözüme bakın.
+description: Microsoft Intune 'de Endpoint Protection ve Microsoft Defender kullanırken ve sorun giderirken ortak iletilere ve olası çözüme bakın.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 11/13/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e34e1cb30469593c8ec9e756659ad03589ae38bc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 819586a923f5c0f3a81a6d59c4a3895898182f6b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509784"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059169"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune uç nokta koruma sorunları ve olası çözümleri
 
 Bu makalede, bazı hatalar ve uyarılar için olası nedenler ve çözümler listelenmektedir ve açıklanmaktadır. Endpoint Protection kullanırken sorunları çözmeye yardımcı olması için bu bilgileri kullanın.
 
-## <a name="windows-defender-error-codes"></a>Windows Defender hata kodları
+## <a name="microsoft-defender-error-codes"></a>Microsoft Defender hata kodları
 
-[Windows Defender av ile ilgili sorunları gidermek](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)için olay günlüklerini ve hata kodlarını gözden geçirin.
+[Microsoft Defender av ile ilgili sorunları gidermek](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)için olay günlüklerini ve hata kodlarını gözden geçirin.
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>Yaygın Intune hataları ve olası çözümleri
 
@@ -48,7 +48,7 @@ Bu makalede, bazı hatalar ve uyarılar için olası nedenler ve çözümler lis
 
 ### <a name="features-are-disabled"></a>Özellikler devre dışı
 
-Bazı özelliklerin devre dışı bırakıldığını belirten bir ileti alabilirsiniz. Intune Endpoint Protection veya Windows Defender bir yapılandırma profili kullanan bir yönetici tarafından devre dışı bırakılmışsa bu iletiler gerçekleşebilir. Veya, cihazdaki bir son kullanıcı tarafından devre dışı bırakıldı. Olası iletiler:
+Bazı özelliklerin devre dışı bırakıldığını belirten bir ileti alabilirsiniz. Intune Endpoint Protection veya Microsoft Defender bir yapılandırma profili kullanan bir yönetici tarafından devre dışı bırakılmışsa bu iletiler gerçekleşebilir. Veya, cihazdaki bir son kullanıcı tarafından devre dışı bırakıldı. Olası iletiler:
 
 `Endpoint Protection disabled`  
 `Real-time protection disabled`  
@@ -61,20 +61,20 @@ Bazı özelliklerin devre dışı bırakıldığını belirten bir ileti alabili
 **Olası çözümler**: Bu özellikleri etkinleştirin. Rehberlik için bkz.:
 
 - [Endpoint Protection ayarları ekle](../protect/endpoint-protection-configure.md)
-- [Windows Defender virüsten koruma](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
+- [Microsoft Defender virüsten koruma](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [Son kullanıcılar: şirket kaynaklarına erişmek için gerçek zamanlı korumayı etkinleştirin](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>Kötü amaçlı yazılım tanımları güncel değil
 
 Bu durum, cihazdaki kötü amaçlı yazılım tanımlarının 14 gün veya daha fazla zaman aşımına uğrar olduğunu gösterir. Örneğin ileti, cihazın Internet bağlantısı kesildiğinde veya kötü amaçlı yazılım tanımlarının güncel olup olmadığını gösterebilir.
 
-**Olası çözümler**: kötü amaçlı yazılım tanımları güncel değilse, tanımları [Windows Defender virüsten koruma](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)kullanarak güncelleştirin.
+**Olası çözümler**: kötü amaçlı yazılım tanımları güncel değilse, tanımları [Microsoft Defender virüsten koruma](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)kullanarak güncelleştirin.
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Tam Tarama süresi doldu veya hızlı tarama süresi doldu
 
 14 gün boyunca tam tarama veya hızlı tarama tamamlanmadı. Bu senaryo, tam tarama sırasında cihaz yeniden başlatılırsa meydana gelebilir.
 
-**Olası çözümler**: Taramanın süresi dolduysa, bir kerelik tarama çalıştırabilir veya yinelenen taramalar zamanlayabilirsiniz. Bkz. [Windows Defender Virüsten Koruma](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
+**Olası çözümler**: Taramanın süresi dolduysa, bir kerelik tarama çalıştırabilir veya yinelenen taramalar zamanlayabilirsiniz. Bkz. [Microsoft Defender virüsten koruma](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>Başka bir uç nokta koruma uygulaması çalışıyor
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593783"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059809"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihazlarına VPN ayarları ekleme
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Microsoft Intune, iOS cihazlarınıza dağıtılabilir pek çok VPN ayarı içerir. Bu ayarlar, kuruluşunuzun ağına yönelik VPN bağlantıları oluşturmak ve yapılandırmak için kullanılır. Bu makalede bu ayarlar açıklanır. Bazı ayarlar yalnızca Citrix ve Zscaler gibi bazı VPN istemcileri için kullanılabilir.
 
@@ -73,7 +71,7 @@ Aşağıdaki listede gösterilen ayarlar, seçtiğiniz VPN bağlantı türüne g
     > [!NOTE]
     > Cisco IPsec VPN için kimlik doğrulama yöntemi olarak kullanıcı adı ve parola kullanılacaksa bunlar, özel bir Apple Configurator profili ile SharedSecret’ı teslim etmelidir.
 
-  - **Türetilmiş kimlik bilgileri**: türetilmiş bir kimlik bilgisi veren yapılandırılmamışsa, Intune bunu yapmanızı ister.
+  - **Türetilmiş kimlik bilgileri**: kullanıcının akıllı kartından türetilmiş bir sertifika kullanın. Türetilmiş bir kimlik bilgisi veren yapılandırılmamışsa, Intune sizden bir tane eklemeniz istenir. Daha fazla bilgi için bkz. [Microsoft Intune türetilmiş kimlik bilgilerini kullanma](../protect/derived-credentials.md).
 
 - **Dışlanan URL’ler** (yalnızca Zscaler): Zscaler VPN’e bağlıyken, listelenen URL’lere Zscaler bulutu dışında da erişilebilir. 
 
@@ -102,7 +100,7 @@ Aşağıdaki listede gösterilen ayarlar, seçtiğiniz VPN bağlantı türüne g
   - NAC etkinleştirildiğinde, VPN her 24 saatte bir kesilir. VPN hemen yeniden bağlanabilir.
   - Cihaz KIMLIĞI profilin bir parçasıdır, ancak Intune 'da gösterilmez. Bu kimlik Microsoft tarafından herhangi bir yerde depolanmaz ve paylaşılmaz.
 
-  Cihaz KIMLIĞI VPN iş ortakları tarafından desteklenerek, Citrix SSO gibi VPN istemcisi KIMLIĞI alabilir. Daha sonra, cihazın kaydedildiğini ve VPN profilinin uyumlu veya uyumlu olmadığını doğrulamak için Intune 'U sorgulayabilir.
+  Cihaz KIMLIĞINI destekleyen VPN ortakları için, Citrix SSO gibi VPN istemcisi KIMLIĞI alabilir. Daha sonra, cihazın kaydedildiğini ve VPN profilinin uyumlu veya uyumlu olmadığını doğrulamak için Intune 'U sorgulayabilir.
 
   - Bu ayarı kaldırmak için profili yeniden oluşturun ve **Kabul ediyorum**’u seçmeyin. Daha sonra profili yeniden atayın.
 
@@ -138,8 +136,8 @@ Bu ayarlar  >  Ikev2 **bağlantı türünü**seçtiğinizde geçerlidir.
   - **Orta** (varsayılan): 10 dakikada bir canlı tutma iletisi gönderir.
   - **Yüksek**: her 60 saniyede bir KeepAlive iletisi gönderir.
 
-- **TLS sürüm aralığı en az**: kullanılacak en düşük TLS sürümünü girin. @No__t_0, `1.1` veya `1.2` girin. Boş bırakılırsa, `1.0` ' ın varsayılan değeri kullanılır.
-- **En yüksek TLS sürüm aralığı**: kullanılacak en fazla TLS sürümünü girin. @No__t_0, `1.1` veya `1.2` girin. Boş bırakılırsa, `1.2` ' ın varsayılan değeri kullanılır.
+- **TLS sürüm aralığı en az**: kullanılacak en düşük TLS sürümünü girin. `1.0`, `1.1`veya `1.2`girin. Boş bırakılırsa, `1.0` ' ın varsayılan değeri kullanılır.
+- **En yüksek TLS sürüm aralığı**: kullanılacak en fazla TLS sürümünü girin. `1.0`, `1.1`veya `1.2`girin. Boş bırakılırsa, `1.2` ' ın varsayılan değeri kullanılır.
 - **Kusursuz iletme gizliliği**: kusursuz iletme gizliliği 'NI (PFS) açmak için **Etkinleştir** ' i seçin. PFS, bir oturum anahtarının güvenliğinin tehlikeye girdiği etkiyi azaltan bir IP güvenlik özelliğidir. **Devre dışı bırak** (varsayılan) PFS kullanmaz.
 - **Sertifika iptal denetimi**: VPN bağlantısının başarılı olmasına izin vermeden önce sertifikaların iptal edilmediğinden emin olmak için **Etkinleştir** ' i seçin. Bu denetim en iyi çabadır. Sertifikanın iptal edilip edilmediğini belirlemekten önce VPN sunucusu zaman aşımına uğrarsa, erişim izni verilir. **Devre dışı bırak** (varsayılan) iptal edilen sertifikaları denetlemez.
 
@@ -158,7 +156,7 @@ Bu ayarlar  >  Ikev2 **bağlantı türünü**seçtiğinizde geçerlidir.
     - SHA2-384
     - SHA2-512
   - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2` ' dır.
-  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. @No__t_0 ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440` ' dır.
+  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440` ' dır.
 
 - **Alt güvenlik ilişkilendirmeleri için ayrı bir parametre kümesi yapılandırın**: IOS, Ike bağlantısı için ayrı parametreleri ve tüm alt bağlantıları yapılandırmanıza olanak tanır. 
 
@@ -177,7 +175,7 @@ Bu ayarlar  >  Ikev2 **bağlantı türünü**seçtiğinizde geçerlidir.
     - SHA2-384
     - SHA2-512
   - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2` ' dır.
-  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. @No__t_0 ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440` ' dır.
+  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440` ' dır.
 
 ## <a name="automatic-vpn-settings"></a>Otomatik VPN ayarları
 
@@ -189,7 +187,10 @@ Bu ayarlar  >  Ikev2 **bağlantı türünü**seçtiğinizde geçerlidir.
 - **İsteğe bağlı VPN**: VPN bağlantısının ne zaman başlatılacağını denetleyen koşullu kurallar yapılandırın. Örneğin, yalnızca cihaz şirketin Wi-Fi ağına bağlı olmadığında VPN bağlantısının kullanılacağı bir koşul oluşturun. Ya da bir koşul oluşturun. Örneğin, bir cihaz girdiğiniz DNS arama etki alanına erişemezse VPN bağlantısı başlatılmaz.
 
   - **SSID’ler veya DNS arama etki alanları**: Bu koşulun kablosuz ağ **SSID’lerini** mi yoksa **DNS arama etki alanlarını** mı kullanacağını seçin. Bir veya birden çok SSID veya arama etki alanı yapılandırmak için **Ekle**’yi seçin.
-  - **URL dizesi araştırması**: İsteğe bağlıdır. Kuralın test olarak kullanacağı bir URL girin. Bu profille cihaz bu URL 'ye yeniden yönlendirmesiz erişirse VPN bağlantısı başlatılır. Cihaz hedef URL’ye bağlanır. Kullanıcı, URL dize araştırma sitesini görmez. URL dize yoklaması, VPN’i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusunun adresidir. Başka bir seçenek de URL’nin, cihazı VPN aracılığıyla hedef URL’ye bağlamadan önce VPN’in bir siteye bağlanma yeteneğini sınamasıdır.
+  - **URL dizesi araştırması**: İsteğe bağlıdır. Kuralın test olarak kullanacağı bir URL girin. Cihaz bu URL 'ye yeniden yönlendirmesiz erişirse VPN bağlantısı başlatılır. Cihaz hedef URL’ye bağlanır. Kullanıcı, URL dize araştırma sitesini görmez.
+
+    Örneğin, URL dize araştırması, VPN 'i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusu URL 'sidir. Ya da URL, VPN aracılığıyla cihazı hedef URL 'ye bağlamadan önce VPN 'in bir siteye bağlanma yeteneğini sınar.
+.
   - **Etki alanı eylemi**: Aşağıdaki öğelerden birini seçin:
     - Gerekirse bağlan
     - Hiçbir zaman bağlanma

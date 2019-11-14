@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983974"
+ms.locfileid: "74059770"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune’da Android uygulama koruma ilkesi ayarları
 Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklanır. Açıklanan ilke ayarları, Azure portalındaki **Ayarlar** dikey penceresinde bir uygulama koruma ilkesi için [yapılandırılabilir](app-protection-policies.md).
@@ -45,7 +45,7 @@ Bu makalede Android cihazları için uygulama koruma ilkesi ayarları açıklan�
 | **Diğer uygulamalar arasında kesme, kopyalama ve yapıştırmayı kısıtla** | Bu uygulamada kes, kopyala ve yapıştır eylemlerinin ne zaman kullanılabileceğini belirtin. Aşağıdakilerden birini seçin: <ul><li>**Engellendi**: Bu uygulama ve diğer herhangi bir uygulama arasında kesme, kopyalama ve yapıştırma eylemlerine izin verilmez.</li><li>**İlkeyle yönetilen uygulamalar**: Bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kesme, kopyalama ve yapıştırma eylemlerine izin verilir.</li><li>**Yapıştırma seçeneğiyle ilke ile yönetilen**: Bu uygulama ve diğer ilkeyle yönetilen uygulamalar arasında kesme veya kopyalama eylemine izin verilir. Herhangi bir uygulamadan verilerin bu uygulamaya yapıştırılmasına izin verir.</li><li>**Herhangi bir uygulama**: Bu uygulamaya veya bu uygulamadan kesme, kopyalama ve yapıştırma eylemleriyle ilgili bir kısıtlama olmaz. | **Herhangi bir uygulama** |
 | <ul>**tüm uygulamalar Için kesme ve kopyalama karakter sınırını** <ui> | Kuruluş verileri ve hesaplardan kesilebilecek veya kopyalanabilecek karakter sayısını belirtin.  Bu, "diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla" ayarı ne olursa olsun, herhangi bir uygulamaya belirtilen sayıda karakter paylaşımına izin verir.<p>Varsayılan Değer = 0<p>**Note**: Intune Şirket Portalı sürüm 5.0.4364.0 veya üstünü gerektirir.  | **0** |
 | **Ekran yakalama ve Google Yardımcısı** | Bu uygulamayı kullanırken cihazın ekran yakalama ve **Google Assistant** özelliklerini engellemek Için **devre dışı bırak** ' ı seçin. **Devre dışı bırak** seçeneğinin belirlenmesi, bu uygulamayı bir iş veya okul hesabıyla kullanırken App-değiştirici önizleme görüntüsünü de bulanıklaştıracaktır.| **Etkinleştirebilir** |
-
+| **Kuruluş verileri bildirimleri** | Kuruluş hesapları için işletim sistemi bildirimleri aracılığıyla ne kadar kuruluş verilerinin paylaşılacağını belirtin. Bu ilke ayarı, yerel cihazı ve wearables ve akıllı hoparlörler gibi bağlı tüm cihazları etkiler. Uygulamalar, bildirim davranışını özelleştirmek için ek denetimler sağlayabilir veya tüm değerleri kabul etmeyebilir. Aşağıdakilerden birini seçin: <ul><li>**Engelle**: bildirimleri paylaşma.</li><ul><li>Uygulama tarafından desteklenmiyorsa bildirimlere izin verilir.</li></ul><li>**Kuruluş verilerini engelle**: Kuruluş verilerini bildirimlerde paylaşma. Örneğin, "Yeni postanız var"; "Toplantınız var"</li><UL><li>Uygulama tarafından desteklenmiyorsa, bildirimler engellenir.</li></ul><li>**Izin ver**: bildirimlerde kuruluş verilerini paylaşır</li><li>**Herhangi bir uygulama**: Bu uygulamaya veya bu uygulamadan kesme, kopyalama ve yapıştırma eylemleriyle ilgili bir kısıtlama olmaz.</ul> <p>**Note**: *Bu ayar uygulama desteği gerektirir. Şu anda, Android 4.75.0 veya üzeri için Outlook bu ayarı destekler, bu da 16 Aralık 2019 ' nin haftası yayınlanmasıyla beklenmektedir.* | **İzin ver**   |
   
 ### <a name="encryption"></a>Şifreleme
 | Ayar | Nasıl kullanılır? | Varsayılan değer |

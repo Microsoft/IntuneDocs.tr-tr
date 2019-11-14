@@ -5,7 +5,7 @@ description: Microsoft Defender Gelişmiş tehdit koruması 'nı yönetmek için
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923398"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060063"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune için Microsoft Defender Gelişmiş tehdit koruması temel ayarları
 
@@ -37,7 +37,7 @@ Daha fazla bilgi için Windows belgelerindeki [Windowssavunma Derapplicationguar
 
 Microsoft Edge kullanırken, Microsoft Defender Application Guard, ortamınızı kuruluşunuz tarafından güvenilmeyen sitelerden korur. Kullanıcılar yalıtılmış ağ sınırlarında listelenmeyen siteleri ziyaret ettiğinde, siteler bir Hyper-V sanal gözatma oturumunda açılır. Güvenilen siteler bir ağ sınırı tarafından tanımlanır.  
 
-- **Application guard** - *Ayarlar/Allowwindowssavunma derapplicationguard*  
+- **Application guard** - *Settings/Allowwindowssavunma derapplicationguard*  
   Güvenilmeyen siteleri bir Hyper-V sanallaştırılmış gözatma kapsayıcısında açan bu özelliği açmak için *Evet* ' i seçin. *Yapılandırılmadı*olarak ayarlandığında, cihazda herhangi bir site (güvenilen ve güvenilmeyen) açılır ve sanallaştırılmış bir kapsayıcıda değildir.  
 
   **Varsayılan**: Evet
@@ -47,7 +47,7 @@ Microsoft Edge kullanırken, Microsoft Defender Application Guard, ortamınızı
  
     **Varsayılan**: Evet
 
-  - **Pano davranışı** - *Ayarlar/clipboardsettings*  
+  - **Pano davranışı** - *ayarları/clipboardsettings*  
     Yerel BILGISAYAR ile Application Guard sanal tarayıcısı arasında kopyalama ve yapıştırma eylemlerine izin verileceğini seçin.  Şu seçenekler mevcuttur:
     - Yapılandırılmadı  
     - Hem BILGISAYAR hem de tarayıcı bloğu arasında kopyalama ve yapıştırmayı engelle. BILGISAYAR ve sanal tarayıcı arasında veri aktarılamaz.  
@@ -91,7 +91,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-SmartScreen](https://doc
   **Varsayılan**: engelle 
 
 - **Kimlik bilgisi hırsızlığı türünü engelle**  
-  [Türetilmiş etki alanı kimlik bilgilerini Credential Guard Ile korumak](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)için *etkin* olarak ayarlayın. Windows Defender Credential Guard, gizli dizileri yalnızca ayrıcalıklı sistem yazılımlarının erişebileceği şekilde yalıtmak için sanallaştırma tabanlı güvenlik kullanır. Bu gizli dizi erişimi, karma değer geçişi veya anahtar geçişi gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Windows Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.  
+  [Türetilmiş etki alanı kimlik bilgilerini Credential Guard Ile korumak](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)için *etkin* olarak ayarlayın. Microsoft Defender Credential Guard, yalnızca ayrıcalıklı sistem yazılımlarının erişebilmesi için gizli dizileri yalıtmak üzere sanallaştırma tabanlı güvenlik kullanır. Bu gizli dizi erişimi, karma değer geçişi veya anahtar geçişi gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Microsoft Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.  
 
   **Varsayılan**: etkinleştir
 
@@ -227,7 +227,7 @@ Daha fazla bilgi için, Windows belgelerindeki [BitLocker Grup İlkesi ayarları
   - **Engellenen donanım cihaz tanımlayıcıları**  
     Bu ayar yalnızca *cihaz tanımlayıcılarına göre donanım cihaz yüklemesi* , *donanım cihazı yüklemeyi engelleyecek*şekilde ayarlandığında kullanılabilir. Bu ayarı yapılandırmak için, seçeneğini genişletin, **+ Ekle**' yi seçin ve ardından engellemek istediğiniz donanım cihaz tanımlayıcısını belirtin.  
 
-    **Varsayılan**: Pcı\cc_0c0a
+    **Varsayılan**: pcı \ CC_0C0A
 
 - **Doğrudan bellek erişimini engelle**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) -bir Kullanıcı Windows 'a oturum açana kadar, bir cihazdaki tüm ETKIN takılabilir PCI aşağı akış bağlantı noktalarında doğrudan bellek ERIŞIMINI (DMA) engellemek için bu ilke ayarını kullanın. Kullanıcı oturum açtıktan sonra Windows, ana bilgisayar eklentisi PCI bağlantı noktalarına bağlı PCI cihazlarını numaralandırır. Kullanıcı makineyi her kilitlediğinde, Kullanıcı yeniden oturum açana kadar alt cihazları olmayan hot plug PCI bağlantı noktalarında DMA engellenir. Makine kilidi açıldığında zaten numaralandırılan cihazlar, söküle kadar çalışmaya devam eder. 
@@ -263,7 +263,7 @@ Daha fazla bilgi için Windows belgelerindeki [Windowsadvancedthreatprotection C
 
   **Varsayılan**: Evet
 
-- **Tüm dosyalar Için örnek paylaşımı** - *yapılandırma/samplesharing* 
+- *Yapılandırma/samplesharing* - **tüm dosyalar için örnek paylaşımı** 
 
   Microsoft Defender Gelişmiş tehdit koruması örnek paylaşımı yapılandırma parametresini döndürür veya ayarlar.  
 
@@ -281,7 +281,7 @@ Daha fazla bilgi için Windows belgelerindeki [Windowsadvancedthreatprotection C
   Ayrıca, var olan bir EMET yapılandırma XML dosyasını bir Exploit Protection yapılandırması XML dosyasına dönüştürebilir ve içeri aktarabilirsiniz.
 
 - **Açıktan yararlanma korumasını geçersiz kılmayı engelle**  
-  [Windowssavunma Dersecuritycenter/Disallowpatıprotectionoverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – kullanıcıların Windows Defender Güvenlik Merkezi 'ndeki Exploit Protection ayarları alanında değişiklik yapmasını engellemek için *Evet* olarak ayarlayın. Bu ayarı devre dışı bırakır veya yapılandırmazsanız, yerel kullanıcılar, açıktan yararlanma koruması ayarları alanında değişiklik yapabilirler.  
+  [Windowssavunma Dersecuritycenter/Disallowpatıprotectionoverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – kullanıcıların Microsoft Defender Güvenlik Merkezi 'ndeki Exploit Protection ayarları alanında değişiklik yapmasını engellemek için *Evet* olarak ayarlayın. Bu ayarı devre dışı bırakır veya yapılandırmazsanız, yerel kullanıcılar, açıktan yararlanma koruması ayarları alanında değişiklik yapabilirler.  
   **Varsayılan**: Evet  
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender virüsten koruma  
@@ -289,17 +289,17 @@ Daha fazla bilgi için Windows belgelerindeki [Windowsadvancedthreatprotection C
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) bölümüne bakın.
 
 - **Microsoft Web tarayıcılarında yüklenen betikleri tarama**  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) : Windows Defender betik tarama işlevselliğine izin vermek için *Evet* olarak ayarlayın.  
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – Microsoft Defender betik tarama işlevselliğine izin vermek için *Evet* olarak ayarlayın.  
 
   **Varsayılan**: Evet
 
 - **Gelen posta iletilerini Tara**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – Windows Defender 'ın e-postayı taramasına izin vermek için *Evet* olarak ayarlayın.  
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – Microsoft Defender 'ın e-postayı taramasına izin vermek için *Evet* olarak ayarlayın.  
 
   **Varsayılan**: Evet
 
 - **Defender örnek gönderim onayı**  
-  [Defender/Submitsamplesonayını](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) -veri göndermek Için Windows Defender 'daki Kullanıcı izin düzeyini denetler. Gerekli onay zaten verildiyse, Windows Defender bunları gönderir. Değilse (ve Kullanıcı hiçbir zaman sorma olarak belirtilmişse), veri göndermeden önce Kullanıcı onayını ( *buluta teslim edilen koruma* *Evet*olarak ayarlandığında) istemek için Kullanıcı arabirimi başlatılır.  
+  [Defender/Submitsamplesonay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) -veri göndermek Için Microsoft Defender 'daki Kullanıcı izin düzeyini denetler. Gerekli onay zaten verildiyse, Microsoft Defender bunları gönderir. Değilse (ve Kullanıcı hiçbir zaman sorma olarak belirtilmişse), veri göndermeden önce Kullanıcı onayını ( *buluta teslim edilen koruma* *Evet*olarak ayarlandığında) istemek için Kullanıcı arabirimi başlatılır.  
 
   **Varsayılan**: güvenli örnekleri otomatik olarak gönder
 
@@ -319,7 +319,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
     **Varsayılan**: Evet
 
 - **Erişim Koruması 'nda Defender bloğu**  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – *Evet*olarak ayarlandığında, erişim koruması 'nda Windows Defender etkin olur.  
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – *Evet*olarak ayarlandığında, Access Protection 'da Microsoft Defender etkin olur.  
 
   **Varsayılan**: Evet
 
@@ -346,30 +346,30 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
   **Varsayılan**: 2 ÖÖ
 
 - **Buluta teslim edilen koruma**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – *Evet*olarak ayarlandığında, Windows Defender bulduğu sorunlar hakkında Microsoft 'a bilgi gönderir. Microsoft bu bilgileri analiz eder, sizi ve diğer müşterileri etkileyen sorunlar hakkında daha fazla bilgi edinin ve geliştirilmiş çözümler sunar.
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – *Evet*olarak ayarlandığında, Microsoft Defender bulduğu sorunlar hakkında Microsoft 'a bilgi gönderir. Microsoft bu bilgileri analiz eder, sizi ve diğer müşterileri etkileyen sorunlar hakkında daha fazla bilgi edinin ve geliştirilmiş çözümler sunar.
 
   Bu ilke *Evet*olarak ayarlandığında, kullanıcıların cihazlarından bilgi göndermesi için denetim sağlamak üzere *Defender örnek gönderimi izin türü* ' nu kullanabilirsiniz.  
 
   **Varsayılan**: Evet
 
 - **Defender istenmeyebilecek uygulama eylemi**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Windows Defender virüsten koruma, istenmeyebilecek *uygulamaları* (PUAs) ağınızdaki uç noktalara indirip yüklemeye yönelik olarak tanımlayabilir ve engelleyebilir. 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Microsoft Defender virüsten koruma, istenmeyebilecek *uygulamaları* (PUAs) ağınızdaki uç noktalara indirip yüklemeye yönelik olarak tanımlayabilir ve engelleyebilir. 
  
-  - *Block*olarak ayarlandığında, Windows Defender PUAs 'yi engeller ve bunları diğer tehditlere karşı geçmiş olarak listeler.
-  - *Denetim*olarak ayarlandığında, Windows Defender PUAs algılar, ancak bunları engellemez. Windows Defender tarafından gerçekleştirilecek uygulamalar hakkında bilgi, Olay Görüntüleyicisi Windows Defender tarafından oluşturulan olayları arayarak bulunabilir.  
+  - *Block*olarak ayarlandığında, Microsoft Defender PUAs 'yi engeller ve bunları diğer tehditlere karşı geçmiş olarak listeler.
+  - *Denetim*olarak ayarlandığında, Microsoft Defender PUAs algılar, ancak bunları engellemez. Microsoft Defender tarafından gerçekleştirilecek uygulamalar hakkında bilgi, Olay Görüntüleyicisi Microsoft Defender tarafından oluşturulan olayları arayarak bulunabilir.  
   - *Cihaz varsayılanı*olarak ayarlandığında Pua koruması kapalıdır.  
  
   **Varsayılan**: engelle
 
 - **Defender bulutu genişletilmiş zaman aşımı**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) -Windows Defender virüsten koruma 'nın buluttan bir sonuç beklerken dosyayı engellemesi gereken en fazla ek süreyi belirtin. Windows Defender 'ın beklediği sürenin taban süresi 10 saniyedir. Burada belirttiğiniz ek zaman (50 saniyeye kadar) bu 10 saniyeye eklenir. Çoğu durumda, tarama en büyük boyuttan daha az zaman alır. Bu süreyi artırmak, bulutun şüpheli klasörleri ayrıntılı olarak araştırmasına olanak verir.  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) -Microsoft Defender virüsten koruma 'nın buluttan bir sonuç beklerken bir dosyayı engellemesi gereken en fazla ek süreyi belirtin. Microsoft Defender 'ın beklediği taban süresi 10 saniyedir. Burada belirttiğiniz ek zaman (50 saniyeye kadar) bu 10 saniyeye eklenir. Çoğu durumda, tarama en büyük boyuttan daha az zaman alır. Bu süreyi artırmak, bulutun şüpheli klasörleri ayrıntılı olarak araştırmasına olanak verir.  
 
   Varsayılan olarak, genişletilmiş saat değeri 0 ' dır (devre dışı). Intune, bu ayarı etkinleştirmenizi ve en az 20 ek saniye belirtmenizi önerir.  
  
   **Varsayılan**: 0
 
 - **Arşiv dosyalarını tara**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – Windows Defender 'ın arşiv dosyalarını taraması için *Evet* olarak ayarlayın.  
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – Microsoft Defender 'ın arşiv dosyalarını taraması için *Evet* olarak ayarlayın.  
 
   **Varsayılan**: Evet
 
@@ -381,17 +381,17 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
   **Varsayılan**: Kullanıcı tanımlı
 
 - **Davranış izleme**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Windows Defender davranış izleme işlevini açmak için *Evet* olarak ayarlayın. Windows 10 ' da Embedded Windows Defender davranış Izleme algılayıcısı, işletim sisteminden davranış sinyallerini toplayıp işler ve bu algılayıcı verilerini Microsoft Defender ATP 'nin özel, yalıtılmış, bulut örneğine gönderir.  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Microsoft Defender davranış izleme işlevini açmak için *Evet* olarak ayarlayın. Windows 10 ' da Embedded Microsoft Defender davranış Izleme algılayıcısı, işletim sisteminden davranış sinyallerini toplayıp işler ve bu algılayıcı verilerini Microsoft Defender ATP 'nin özel, yalıtılmış, bulut örneğine gönderir.  
 
   **Varsayılan**: Evet
 
 - **Ağ klasörlerinden açılan dosyaları tara**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) : Windows Defender 'ın ağ üzerinde dosya taraması için *Evet* olarak ayarlayın. Kullanıcı algılanan kötü amaçlı yazılımları salt okuma dosyalarından kaldıramayacak.  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – Microsoft Defender 'ın ağ üzerinde dosya taraması için *Evet* olarak ayarlayın. Kullanıcı algılanan kötü amaçlı yazılımları salt okuma dosyalarından kaldıramayacak.  
 
   **Varsayılan**: Evet
 
 - **Defender bulut blok düzeyi**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – agresif Windows Defender virüsten koruma 'nın şüpheli dosyaları engelleyip taramakta olduğunu öğrenmek için bu ilkeyi kullanın. Şu seçenekler mevcuttur:
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Microsoft Defender virüsten koruma 'nın şüpheli dosyaları engelleme ve tarama konusunda ne kadar ısrarlı olduğunu öğrenmek için bu ilkeyi kullanın. Şu seçenekler mevcuttur:
 
   - İstemci performansını iyileştirirken (hatalı pozitif sonuçlar için büyük olasılıkla) yüksek performanslı, bilinmeyen dosyaları engelle
   - Yüksek artı-bilinmeyen dosyaları engelle ve ek koruma önlemleri Uygula (istemci performansını etkileyebilir)
@@ -400,24 +400,24 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
   **Varsayılan**: yapılandırılmadı
 
 - **Gerçek zamanlı izleme**  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – Windows Defender gerçek zamanlı izlemeye izin vermek için *Evet* olarak ayarlayın.  
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – Microsoft Defender gerçek zamanlı izlemeye izin vermek için *Evet* olarak ayarlayın.  
 
   **Varsayılan**: Evet
 
 - **Tarama sırasında CPU kullanım sınırı**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Windows Defender 'ın tarama sırasında kullanabileceği en yüksek ortalama CPU kullanımını belirtin.  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Microsoft Defender 'ın tarama sırasında kullanabileceği en yüksek ortalama CPU kullanımını belirtin.  
 
   **Varsayılan**: 50
 
 - **Tam tarama sırasında eşlenmiş ağ sürücülerine tarama**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) -Windows Defender 'ın ağ üzerinde dosyaları taramasını sağlamak için *Evet* olarak ayarlayın. Kullanıcı algılanan kötü amaçlı yazılımları salt okuma dosyalarından kaldıramaz,
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) -Microsoft Defender 'ın ağ üzerinde dosyaları taramasını sağlamak için *Evet* olarak ayarlayın. Kullanıcı algılanan kötü amaçlı yazılımları salt okuma dosyalarından kaldıramaz,
 
   Bu listedeki ilgili ayar: *Defender/AllowScanningNetworkFiles*
 
   **Varsayılan**: Evet
 
 - **Defender 'a Son Kullanıcı erişimini engelleyin**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) : son kullanıcıların cihazındaki Windows Defender Kullanıcı arabirimine erişimini engellemek için *Evet* olarak ayarlayın.  
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) : son kullanıcıların cihazındaki Microsoft Defender Kullanıcı arabirimine erişimini engellemek için *Evet* olarak ayarlayın.  
 
   **Varsayılan**: Evet
 
@@ -426,7 +426,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
 
   **Varsayılan**: 2 ÖÖ
 
-## <a name="windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender güvenlik duvarı
 Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) bölümüne bakın.
 
 - **Silinmeden önce güvenlik ilişkilendirmesi boşta kalma süresi** - *Mdmstore/Global/saıdsaati*   
@@ -469,7 +469,7 @@ Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://do
   - **Grup ilkesinden ilke kuralları birleştirilmedi**  
     **Varsayılan**: Evet
 
-- **Güvenlik duvarı profili ortak** - *FirewallRules/FirewallRuleName/Profiles*  
+- **Güvenlik duvarı profili genel** - *FirewallRules/FirewallRuleName/Profiles*  
   Kuralın ait olduğu profilleri belirtir: etki alanı, özel, genel. Bu değer, ortak ağların profilini temsil eder. Bu ağlar, sunucu konağındaki yöneticiler tarafından genel olarak sınıflandırılır. Sınıflandırma, ana bilgisayarın ağa ilk bağlanışında meydana gelir. Genellikle bu ağlar havaalanları, kafeterler ve ağdaki veya ağ yöneticisinin güvendiği diğer genel yerlerden oluşur.  
 
   Kullanılabilir ayarlar:
@@ -560,29 +560,29 @@ Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://do
 ## <a name="web--network-protection"></a>Web & ağ koruması  
 
 - **Ağ koruma türü**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) -bu Ilke, Windows Defender Exploit Guard 'da ağ korumasını açıp kapaetmenize olanak tanır. Ağ koruması, herhangi bir uygulamanın kimlik avı dolandırıcılığı, yararlanma ve barındırma siteleri ve Internet 'teki kötü amaçlı içeriklere erişmesini koruyan bir Windows Defender Exploit Guard özelliğidir. Bu, üçüncü taraf tarayıcıların tehlikeli sitelere bağlanmasını engellemeyi de kapsar.  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) -bu Ilke, Microsoft Defender Exploit Guard 'da ağ korumasını açıp kapaetmenize olanak tanır. Ağ koruması, Microsoft Defender Exploit Guard 'ın herhangi bir uygulamayı kullanan çalışanları, kimlik avı dolandırıcılığı, yararlanma siteleri ve Internet 'teki kötü amaçlı içeriklere erişmesini koruyan bir özelliktir. Bu, üçüncü taraf tarayıcıların tehlikeli sitelere bağlanmasını engellemeyi de kapsar.  
 
-  *Etkin* veya *Denetim moduna*ayarlandığında, kullanıcılar ağ korumasını kapatamaz ve bağlantı denemeleri hakkındaki bilgileri görüntülemek Için Windows Defender Güvenlik Merkezi 'ni kullanabilirsiniz.  
+  *Etkin* veya *Denetim moduna*ayarlandığında, kullanıcılar ağ korumasını kapatamaz ve bağlantı denemeleri hakkındaki bilgileri görüntülemek Için Microsoft Defender Güvenlik Merkezi ' ni kullanabilirsiniz.  
  
   - *Etkinleştir* ayarı, kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanmasını engeller.  
   - *Denetim modu* , kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanmasını engellemez.  
 
-  *Kullanıcı tanımlı*olarak ayarlandığında, kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanması engellenmez ve bağlantılar hakkındaki bilgiler Windows Defender Güvenlik Merkezi 'nde kullanılamaz.  
+  *Kullanıcı tanımlı*olarak ayarlandığında, kullanıcıların ve uygulamaların tehlikeli etki alanlarına bağlanması engellenmez ve bağlantılar hakkındaki bilgiler Microsoft Defender Güvenlik Merkezi 'nde kullanılamaz.  
 
   **Varsayılan**: Denetim modu
 
 - **Microsoft Edge için SmartScreen gerektir**  
-  [Tarayıcı/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) -Microsoft Edge, kullanıcıların olası kimlik avı dolandırıcılarından ve kötü amaçlı yazılımlardan varsayılan olarak korunmasını sağlamak Için Windows Defender SmartScreen (açık) kullanır. Varsayılan olarak, bu ilke etkinleştirilmiştir ( *Evet*olarak ayarlanır) ve etkinleştirildiğinde kullanıcıların Windows Defender SmartScreen 'i kapatmasını engeller.  Bir cihaz için geçerli ilke Yapılandırılmadı olarak eşitse, kullanıcılar Windows Defender SmartScreen 'i kapatabilir ve bu da cihazı korumasız olarak bırakır.  
+  [Tarayıcı/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) -Microsoft Edge, kullanıcıların olası kimlik avı dolandırıcılarından ve kötü amaçlı yazılımlardan varsayılan olarak korunmasını sağlamak Için Microsoft Defender SmartScreen (açık) kullanır. Varsayılan olarak, bu ilke etkinleştirilmiştir ( *Evet*olarak ayarlanır) ve etkin olduğunda kullanıcıların Microsoft Defender SmartScreen 'i kapatmasını engeller.  Bir cihaz için geçerli ilke Yapılandırılmadı olarak eşitse, kullanıcılar Microsoft Defender SmartScreen 'i kapatabilir ve bu da cihazı korumasız olarak bırakır.  
 
   **Varsayılan**: Evet
   
 - **Kötü amaçlı Site erişimini engelleyin**  
-  [Tarayıcı/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) -varsayılan olarak Microsoft Edge, kullanıcıların siteye devam etmesine izin veren kötü amaçlı olabilecek siteler hakkındaki Windows Defender SmartScreen uyarılarını atlamasına (yoksaymasına) izin verir. Bu ilke etkinken ( *Evet*olarak ayarlanırsa), Microsoft Edge kullanıcıların uyarıları atlamasını ve siteye devam etmesini engeller.  
+  [Tarayıcı/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) , varsayılan olarak Microsoft Edge, kullanıcıların siteye devam etmesine izin veren olası kötü amaçlı sitelerle Ilgili Microsoft Defender SmartScreen uyarılarını atlamasına (yoksaymasına) izin verir. Bu ilke etkinken ( *Evet*olarak ayarlanırsa), Microsoft Edge kullanıcıların uyarıları atlamasını ve siteye devam etmesini engeller.  
 
   **Varsayılan**: Evet
 
 - **Doğrulanmamış dosya indirmeyi engelle**  
-  [Tarayıcı/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) -varsayılan olarak, Microsoft Edge, kullanıcıların, zararlı olabilecek dosyalarla Ilgili Windows Defender SmartScreen uyarılarını atlamasına (yoksaymasına) izin verir ve bu da doğrulanmamış dosyaları indirmeye devam edebilir. Bu ilke etkinken ( *Evet*olarak ayarlanır), kullanıcıların uyarıları atlaması ve doğrulanmamış dosyaları indiremez.  
+  [Tarayıcı/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) -varsayılan olarak Microsoft Edge, kullanıcıların, zararlı olabilecek dosyalarla Ilgili Microsoft Defender SmartScreen uyarılarını atlamasına (yoksaymasına) izin verir ve bu da doğrulanmamış dosyaları indirmeye devam edebilir. Bu ilke etkinken ( *Evet*olarak ayarlanır), kullanıcıların uyarıları atlaması ve doğrulanmamış dosyaları indiremez.  
 
   **Varsayılan**: Evet
 
@@ -590,7 +590,7 @@ Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://do
 
 Daha fazla bilgi için Windows belgelerindeki [Passportforwork CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) bölümüne bakın.
 
-- **İş Için Windows Hello 'Yu yapılandırma** - *Tenantıd/policies/UsePassportForWork*    
+- **İş Için Windows Hello** - *Tenantıd/policies/UsePassportForWork*   yapılandırın  
   Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir.  
 
   - *Evet*olarak ayarlandığında, bu ilkeyi etkinleştirir ve cihaz Iş Için Windows Hello 'yu hazırlar.  
@@ -606,12 +606,12 @@ Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartl
 
   **Varsayılan**: Evet  
 
-- **PIN 'de küçük harfler iste** - *Tenantıd/policies/pinkarmaşıklık/* küçük harf kullanımı  
+- **PIN kodunda küçük harfler iste** - *Tenantıd/policies/pinkarmaşıklık/* küçük harfe bağlama  
   **Varsayılan**: izin verildi  
 
 - **PIN 'de özel karakterler iste** - *Tenantıd/policies/Pinkarmaşıklık/specialcharacters*  
   **Varsayılan**: izin verildi  
 
-- **PIN kodunda büyük harfler iste** - *Tenantıd/policies/pinkarmaşıklık/* en üst düzey ayırıcılar    
+- **PIN kodunda büyük harfler iste** - *Tenantıd/policies/pinkarmaşıklığa/en üst üstelerde*   
   **Varsayılan**: izin verildi  
 

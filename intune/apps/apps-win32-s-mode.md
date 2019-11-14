@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3a9eb45898102e9d5fcde88f69026467255c513
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445272"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059766"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S modundaki cihazlarda Win32 uygulamalarını etkinleştirme
 
-[Windows 10 S modu](https://docs.microsoft.com/windows/deployment/s-mode) , yalnızca mağaza uygulamalarını çalıştıran kilitli bir işletim sistemidir. Varsayılan olarak, Windows S modu cihazları Win32 uygulamalarının yüklenmesine ve yürütülmesine izin vermez. Bu cihazlar tek bir *Win 10s temel ilkesi*içerir ve bu, S modu cihazının üzerinde herhangi bir Win32 uygulaması çalıştırmasını kilitler. Ancak, Intune 'da **S modu ek ilkesi** oluşturup kullanarak, Windows 10 S modunda yönetilen cihazlara Win32 uygulamaları yükleyip çalıştırabilirsiniz. [Windows Defender uygulama denetimi (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) PowerShell araçlarını kullanarak, Windows S modu için bir veya daha fazla ek ilke oluşturabilirsiniz. Ek ilkeleri [Device Guard Imzalama hizmeti (DGSS)](https://go.microsoft.com/fwlink/?linkid=2095629) veya [SignTool. exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) Ile imzalamanız ve ardından Intune aracılığıyla ilkeleri karşıya yüklemeniz ve dağıtmanız gerekir. Alternatif olarak, ek ilkeleri kuruluşunuzdan bir kod imzalama sertifikası ile imzalayabilirsiniz, ancak tercih edilen yöntem DGSS 'yi kullanmaktır. Kuruluşunuzdaki kod imzalama sertifikasını kullandığınız örnekte, kod imzalama sertifikası 'nın zincirinin bulunduğu kök sertifika cihazda mevcut olmalıdır.
+[Windows 10 S modu](https://docs.microsoft.com/windows/deployment/s-mode) , yalnızca mağaza uygulamalarını çalıştıran kilitli bir işletim sistemidir. Varsayılan olarak, Windows S modu cihazları Win32 uygulamalarının yüklenmesine ve yürütülmesine izin vermez. Bu cihazlar tek bir *Win 10s temel ilkesi*içerir ve bu, S modu cihazının üzerinde herhangi bir Win32 uygulaması çalıştırmasını kilitler. Ancak, Intune 'da **S modu ek ilkesi** oluşturup kullanarak, Windows 10 S modunda yönetilen cihazlara Win32 uygulamaları yükleyip çalıştırabilirsiniz. [Microsoft Defender uygulama denetimi (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) PowerShell araçlarını kullanarak, Windows S modu için bir veya daha fazla ek ilke oluşturabilirsiniz. Ek ilkeleri [Device Guard Imzalama hizmeti (DGSS)](https://go.microsoft.com/fwlink/?linkid=2095629) veya [SignTool. exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) Ile imzalamanız ve ardından Intune aracılığıyla ilkeleri karşıya yüklemeniz ve dağıtmanız gerekir. Alternatif olarak, ek ilkeleri kuruluşunuzdan bir kod imzalama sertifikası ile imzalayabilirsiniz, ancak tercih edilen yöntem DGSS 'yi kullanmaktır. Kuruluşunuzdaki kod imzalama sertifikasını kullandığınız örnekte, kod imzalama sertifikası 'nın zincirinin bulunduğu kök sertifika cihazda mevcut olmalıdır.
 
 Intune 'da S modu ek ilkesini atayarak, cihazın, yüklenen ilgili imzalı uygulama kataloğuna izin veren mevcut S modu ilkesinde bir özel durum yapmasını sağlayabilirsiniz. İlke, S modu cihazında kullanılabilecek bir izin verilen uygulamalar listesi (uygulama kataloğu) ayarlar.
 
@@ -40,7 +40,7 @@ Win32 uygulamalarının bir Windows 10 cihazında S modunda çalışmasına izin
 
 1. Windows 10 S kayıt işleminin bir parçası olarak Intune aracılığıyla S modu cihazlarını etkinleştirin.
 2. Win32 uygulamalarına izin vermek için ek bir ilke oluşturun:
-   - Ek bir ilke oluşturmak için, [Windows Defender uygulama denetimi (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) araçlarını kullanabilirsiniz. İlke içindeki temel ilke kimliği, S modu temel ilke kimliğiyle (istemcide sabit kodlanmış) eşleşmelidir. Ayrıca, ilke sürümünün önceki sürümden daha yüksek olduğundan emin olun.
+   - Ek bir ilke oluşturmak için [Microsoft Defender uygulama denetimi (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) araçlarını kullanabilirsiniz. İlke içindeki temel ilke kimliği, S modu temel ilke kimliğiyle (istemcide sabit kodlanmış) eşleşmelidir. Ayrıca, ilke sürümünün önceki sürümden daha yüksek olduğundan emin olun.
    - Ek ilkenizi imzalamak için DGSS 'yi kullanırsınız. Daha fazla bilgi için bkz. [cihaz koruyucu imzalama ile kod bütünlüğü ilkesi imzalama](https://docs.microsoft.com/microsoft-store/sign-code-integrity-policy-with-device-guard-signing).
    - İmzalanmış ek ilkesini, Windows 10 S modu ek ilkesi oluşturarak Intune 'a yüklersiniz (aşağıya bakın).
 3. Intune aracılığıyla Win32 uygulama kataloglarına izin verin:

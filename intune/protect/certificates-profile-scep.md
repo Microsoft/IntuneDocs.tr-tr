@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3cfcc4ac0c5125324102c55dc7bc887006df6b
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: 9469bbe7098bf8c3d29a6357cb5ad971124bde09
+ms.sourcegitcommit: f46df983b66845bea24a90aaa2ac6cace16b9b0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801418"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051925"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
@@ -115,12 +115,11 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
 
         Konu adı biçimi için biçim seçenekleri aşağıdaki değişkenleri içerir:
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** veya **{{azureaddeviceıd}}** -her iki değişken de BIR cihazı Azure AD kimliğine göre belirlemek için kullanılabilir.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{Imekarmsayı}}**
-        - **{{Azureaddeviceıd}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEı}}**
         - **{{Aygıtadı}}**
@@ -157,12 +156,11 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
 
         *Cihaz* sertifika türüyle değer için aşağıdaki cihaz sertifika değişkenlerini kullanabilirsiniz:
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** veya **{{azureaddeviceıd}}** -her iki değişken de BIR cihazı Azure AD kimliğine göre belirlemek için kullanılabilir.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{Imekarmsayı}}**
-        - **{{Azureaddeviceıd}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEı}}**
         - **{{Aygıtadı}}**

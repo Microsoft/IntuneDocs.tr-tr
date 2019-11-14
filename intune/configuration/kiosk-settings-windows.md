@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17dce8f7c5aa55a2044e663f724a5784cee8b375
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506687"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059338"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune 'da bilgi noktası olarak çalıştırılacak Windows 10 ve üzeri cihaz ayarları
 
@@ -40,6 +40,8 @@ Intune 'da Windows bilgi noktası özelliği hakkında daha fazla bilgi edinmek 
 
   1. Bu bilgi noktası profilini, cihazı bilgi noktası modunda çalıştırmak için oluşturun.
   2. [Cihaz kısıtlamaları profilini](device-restrictions-windows-10.md#microsoft-edge-browser)oluşturun ve Microsoft Edge 'de izin verilen belirli özellikleri ve ayarları yapılandırın.
+
+- Tüm dosyaların, betiklerin ve kısayolların yerel sistemde bulunduğundan emin olun. Diğer Windows gereksinimleri dahil daha fazla bilgi için bkz. [Özelleştirme ve dışa aktarma başlangıç düzeni](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout).
 
 > [!IMPORTANT]
 > Bu bilgi noktası profilini [Microsoft Edge profilinizle](device-restrictions-windows-10.md#microsoft-edge-browser)aynı cihazlara atadığınızdan emin olun.
@@ -194,3 +196,5 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
 [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)ve [Windows holographic for Business](kiosk-settings-holographic.md) cihazları için bilgi noktası profilleri de oluşturabilirsiniz.
+
+Ayrıca bkz. [tek uygulama bilgi noktası ayarlama](https://docs.microsoft.com/windows/configuration/kiosk-single-app) veya Windows kılavuzunda [birden çok uygulama bilgi noktası](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps) ayarlama.

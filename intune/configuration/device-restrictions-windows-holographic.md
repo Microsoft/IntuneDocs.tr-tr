@@ -1,11 +1,11 @@
 ---
 title: Windows holographic Business cihaz ayarları-Microsoft Intune-Azure | Microsoft Docs
-description: Windows Holographic for Business için Microsoft Intune’da kaydı kaldırma, coğrafi konum, parolalar, uygulama mağazasından uygulama yükleme, Microsoft Edge’de çerezler ve açılır pencereler, Windows Defender, arama, bulut ve depolama, bluetooth bağlantısı, sistem saati ve Azure’da kullanım verileri gibi cihaz kısıtlama ayarları hakkında bilgi edinin ve bu ayarları yapılandırın.
+description: Windows holographic for Business için Microsoft Intune, kayıt, coğrafi konum, parolalar, App Store 'dan uygulama yüklemesi, Microsoft Edge, Microsoft Defender, ara, tanımlama bilgileri ve açılır pencereler dahil cihaz kısıtlama ayarlarını okuyun ve yapılandırın. Azure 'daki bulut ve depolama, Bluetooth bağlantısı, sistem saati ve kullanım verileri.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28a697b841d8b264a19d97059d272b7119bc7f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493910"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059500"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Windows holographic for Business cihaz ayarları
 
@@ -57,7 +57,7 @@ Bu makalede, Microsoft HoloLens gibi Windows holographic for Business cihazları
 - **Parola Yöneticisi**: Microsoft Edge parola Yöneticisi özelliğini etkinleştirin veya devre dışı bırakın.
 - **Do-Not-Track üst bilgileri gönder**: Microsoft Edge tarayıcısını, kullanıcıların ziyaret ettiği Web sitelerini izleme üst bilgilerini gönderecek şekilde yapılandırır.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender akıllı ekranı
 
 - **Microsoft Edge Için SmartScreen**: site ve dosya indirmelerine erişmek Için Microsoft Edge SmartScreen 'i etkinleştirin.
 

@@ -2,10 +2,10 @@
 title: Microsoft Intune'da ağ konumuna göre Android cihazlarını bağlama - Azure | Microsoft Docs
 description: Android cihazları için Microsoft Intune'da ağ konumlarını oluşturun veya yapılandırın. Cihazları bulundukları ağ konumuna göre uyumsuz olarak işaretleyebilirsiniz. Cihaz ağ konumunun dışına çıkarsa, şirket kaynaklarına erişimi engelleyebilirsiniz.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749452"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058146"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune'da Konumları (ağ yalıtımı) kullanma
 
@@ -50,7 +50,7 @@ Konum tabanlı bir uyumluluk ilkesi oluşturmak için:
 
 ## <a name="create-a-location"></a>Konum oluşturma
 
-1. Intune'da **Cihaz uyumluluğu** > **Konumlar** > **Oluştur**'u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz** > **uyumluluk ilkeleri** ** >  > ** **Oluştur**' u seçin.
 
 2. Aşağıdaki özellikleri girin:  
 
@@ -69,8 +69,7 @@ Konum tabanlı bir uyumluluk ilkesi oluşturmak için:
 
 ## <a name="create-the-location-compliance-policy"></a>Konum uyumluluk ilkesini oluşturma
 
-[Uyumluluk ilkesini oluştururken](create-compliance-policy.md) **Platform**için **Android** ' i seçin. **Konumlar**'da, eklediğiniz ağ konumlarından birini veya birden çoğunu seçin. Bu konumlar, cihazlarınız için oluşturduğunuz ağ yalıtımının parçasıdır. 
-
+[Uyumluluk ilkesini oluştururken](create-compliance-policy.md) **Platform**için **Android** ' i seçin. **Konumlar**'da, eklediğiniz ağ konumlarından birini veya birden çoğunu seçin. Bu konumlar, cihazlarınız için oluşturduğunuz ağ yalıtımının parçasıdır.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Uyumsuzluğa yönelik eylemleri yapılandırma
 
@@ -83,5 +82,6 @@ Uyumluluk ilkesi oluşturulduktan sonra, uyumsuzluğa yönelik varsayılan eylem
 Cihaz konumlarınıza bağlandığında, Şirket Portalı uygulamasında uyumlu olarak gösterilir. Cihaz konumlarınızdan birine bağlı olmadığında uyumsuz olarak gösterilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
 [Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md)  
 [Uyumluluk ilkelerini kullanmaya başlama](device-compliance-get-started.md)

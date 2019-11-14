@@ -3,8 +3,8 @@ title: Yardım masası maliyetlerini azaltma
 titleSuffix: Microsoft Intune
 description: Self servis parola sıfırlama ile yardım masası maliyetlerini azaltma
 keywords: Azure Active Directory SSPR parola sıfırlama
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
@@ -15,16 +15,17 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1da1758dcc1743087191f69bd4d57bc113774d81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08dc14a3abed634721b39fedaae840e2b18c151b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509305"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058108"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Self servis parola sıfırlama ile yardım masası maliyetlerini azaltma
 
 Çalışanların, yardım masasının desteğine gerek duymadan iş ve okul hesap parolalarını sıfırlamalarına izin verebilirsiniz. Bu tür bir self servis parola sıfırlama, aşağıdaki durumlarda önerilir:
+
 * Şirketiniz ve okulunuz, iş ve okul hesapları için Azure Active Directory kullanıyorsa.
 * Çalışanların ve öğrencilerin internete erişimi varsa.
 * Yardım masası maliyetlerini düşürmek istiyorsanız.
@@ -39,6 +40,7 @@ ms.locfileid: "72509305"
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Aşağıdaki makalelerde daha fazla bilgi edinin:
+
 * [En iyi parola uygulamaları](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Self servis parola sıfırlama lisansı](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 

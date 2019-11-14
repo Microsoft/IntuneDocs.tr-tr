@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure’da Windows 10 cihaz kısıtlama ayarları | Microsoft Docs
-description: Windows 10 ve üzeri cihazlarda cihaz kısıtlamaları oluşturmaya yönelik tüm ayarların ve bunların açıklamalarının listesini görüntüleyin. Bu ayarları, ekran görüntülerini, parola gereksinimlerini, bilgi noktası ayarlarını, depodaki uygulamaları, Microsoft Edge tarayıcısı, Windows Defender, buluta erişimi, Başlangıç menüsünü ve Microsoft Intune daha fazlasını denetlemek için bir yapılandırma profilinde kullanın.
+description: Windows 10 ve üzeri cihazlarda cihaz kısıtlamaları oluşturmaya yönelik tüm ayarların ve bunların açıklamalarının listesini görüntüleyin. Bu ayarları, ekran görüntülerini, parola gereksinimlerini, bilgi noktası ayarlarını, depodaki uygulamaları, Microsoft Edge tarayıcısı, Microsoft Defender, buluta erişimi, Başlangıç menüsünü ve Microsoft Intune daha fazlasını denetlemek için bir yapılandırma profilinde kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755269"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059491"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Windows 10 (ve üzeri) cihaz ayarları
 
@@ -68,7 +68,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [ApplicationManageme
 
   [SmartScreen/Enableappınstallcontrol CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Yüklemeler üzerinde Kullanıcı denetimi**: **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Windows Installer kullanıcıların, dosyaları yüklemek için Dizin girme gibi sistem yöneticileri için genellikle ayrılmış yükleme seçeneklerini değiştirmelerini engeller . **Engelle** , kullanıcıların bu yükleme seçeneklerini değiştirmesine izin verir ve Windows Installer güvenlik özelliklerinden bazıları atlanır.
+- **Yüklemeler üzerinde Kullanıcı denetimi**: **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcıların, dosyaları yüklemek için Dizin girme gibi sistem yöneticileri için genellikle ayrılmış yükleme seçeneklerini değiştirmelerini engelleyin Windows Installer. **Engelle** , kullanıcıların bu yükleme seçeneklerini değiştirmesine izin verir ve Windows Installer güvenlik özelliklerinden bazıları atlanır.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
@@ -109,7 +109,7 @@ Bu ayarlar, [Bluetooth ILKESI CSP](https://docs.microsoft.com/windows/client-man
 - **Bluetooth bulunabilirliği**: **blok** cihazın diğer Bluetooth özellikli cihazlar tarafından keşfedilmesini engeller. **Yapılandırılmadı** (varsayılan), kulaklık gibi diğer Bluetooth özellikli cihazların cihazı bulmasını sağlar.
 - **Bluetooth önceden eşleme**: **blok** , belirli Bluetooth cihazlarının bir konak cihazla otomatik olarak eşleşmesini önler. **Yapılandırılmadı** (varsayılan) konak cihazla otomatik eşleştirmeye izin verir.
 - **Bluetooth reklamcılık**: **blok** cihazın Bluetooth tanıtımları göndermesini engeller. **Yapılandırılmadı** (varsayılan), cihazın Bluetooth tanıtımları göndermesini sağlar.
-- **Bluetooth izin verilen hizmetler**: Izin verilen Bluetooth hizmetleri ve profillerinin bir listesini, `{782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}` gibi onaltılı dizeler olarak **ekleyin** .
+- **Bluetooth izin verilen hizmetler**: Izin verilen Bluetooth hizmetleri ve profillerinin bir listesini, `{782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}`gibi onaltılı dizeler olarak **ekleyin** .
 
   [Servicesallowedlist kullanım kılavuzu](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) , hizmet listesi hakkında daha fazla bilgi içerir.
 
@@ -130,7 +130,7 @@ Bu ayarlar [Enterprisecloudprint ILKESI CSP](https://docs.microsoft.com/windows/
 - **Yazıcı erişim yetkilisi URL 'si**: OAuth belirteçlerini almak için kimlik doğrulama uç noktası URL 'sini girin. Örneğin, şunu girin: `https://azuretenant.contoso.com/adfs`.
 - **Azure yerel istemci uygulama GUID 'si**: OAuthAuthority 'den OAuth belirteçleri almaya izin verilen bir ISTEMCI uygulamasının GUID 'sini girin. Örneğin, şunu girin: `E1CF1107-FF90-4228-93BF-26052DD2C714`.
 - **Yazdırma hizmeti kaynak URI 'si**: Azure Portal yapılandırılmış yazdırma hizmeti için OAUTH Kaynak URI 'sini girin. Örneğin, şunu girin: `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
-- **Sorgulanacak en fazla yazıcı**: sorgulanmasını istediğiniz en fazla yazıcı sayısını girin. Varsayılan değer `20` ' dır.
+- **Sorgulanacak en fazla yazıcı**: sorgulanmasını istediğiniz en fazla yazıcı sayısını girin. Varsayılan değer `20`.
 - **Yazıcı bulma hizmeti kaynak URI 'si**: Azure Portal için yapılandırılmış yazıcı bulma hizmeti OAUTH Kaynak URI 'sini girin. Örneğin, şunu girin: `http://MopriaDiscoveryService/CloudPrint`.
 
 > [!TIP]
@@ -282,12 +282,12 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
 ### <a name="start-experience"></a>Deneyim başlangıcı
 
 - **Microsoft Edge 'i Ile Başlat**: Microsoft Edge başladığında hangi sayfaların açılacağını seçin. Seçenekleriniz şunlardır:
-  - **Özel başlangıç sayfaları**: `http://www.contoso.com` gibi başlangıç sayfalarını girin. Microsoft Edge, girdiğiniz başlangıç sayfalarını yükler.
+  - **Özel başlangıç sayfaları**: `http://www.contoso.com`gibi başlangıç sayfalarını girin. Microsoft Edge, girdiğiniz başlangıç sayfalarını yükler.
   - **Yeni sekme sayfası**: **Yeni sekme URL 'Si** ayarında Microsoft Edge yükleme her şey girilir.
   - **Son oturum sayfası**: Microsoft Edge son oturum sayfasını yükler.
   - **Yerel uygulama ayarlarındaki sayfaları Başlat**: Microsoft Edge, işletim sistemi tarafından tanımlanan varsayılan başlangıç sayfası ile başlar.
 
-- **Kullanıcının başlangıç sayfalarını değiştirmesine Izin ver**: **Evet** (varsayılan), kullanıcıların başlangıç sayfalarını değiştirmesine izin verir. Yöneticiler, Microsoft Edge 'i açtığınızda kullanıcıların varsayılan olarak göreceği başlangıç sayfalarını girmek için `EdgeHomepageUrls` ' i kullanabilir. **Hayır** , kullanıcıların başlangıç sayfalarını değiştirmesini engeller.
+- **Kullanıcının başlangıç sayfalarını değiştirmesine Izin ver**: **Evet** (varsayılan), kullanıcıların başlangıç sayfalarını değiştirmesine izin verir. Yöneticiler, Microsoft Edge 'i açtığınızda kullanıcıların varsayılan olarak göreceği başlangıç sayfalarını girmek için `EdgeHomepageUrls` kullanabilir. **Hayır** , kullanıcıların başlangıç sayfalarını değiştirmesini engeller.
 - **Yeni sekme sayfasında Web Içeriğine Izin ver**: **Evet** (varsayılan) olarak ayarlandığında, Microsoft Edge **Yeni sekme URL 'si** ayarında girilen URL 'yi açar. **Yeni sekme URL 'si** ayarı boşsa, Microsoft Edge, Microsoft Edge ayarlarında listelenen yeni sekme sayfasını açar. Kullanıcılar bunu değiştirebilir. **Hayır**olarak ayarlandığında, Microsoft Edge boş bir sayfayla yeni bir sekme açar. Kullanıcılar bu değişikliği değiştiremezler.
 - **Yeni sekme URL 'si**: yeni sekme sayfasında açılacak URL 'yi girin. Örneğin `https://www.bing.com` veya `https://www.contoso.com` girin.
 
@@ -369,7 +369,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
   - Microsoft Edge ve Microsoft Hizmetleri arasındaki ağ bant genişliğini en aza indirmeye yardımcı olun.
   - Microsoft Edge > ayarlarını **Yazarken arama ve site önerilerini göster ' i** devre dışı bırakın.
 - **Tam ekran moduna Izin ver**: **Evet** (varsayılan), Microsoft Edge 'in yalnızca Web Içeriğini gösteren ve Microsoft Edge Kullanıcı arabirimini gizleyen tam ekran modunu kullanmasına izin verir. **Hayır** , Microsoft Edge 'de tam ekran modunu engeller.
-- **Bayrak hakkında Izin ver sayfası**: **Evet** (varsayılan), `about:flags` sayfasına erişime izin verebilecek işletim sistemi varsayılanını kullanır. `about:flags` sayfası kullanıcıların geliştirici ayarlarını değiştirmesine ve deneysel özellikleri etkinleştirmesine olanak sağlar. **Hayır** , son kullanıcıların Microsoft Edge 'deki `about:flags` sayfasına erişmesini önler.
+- **Bayrak hakkında Izin ver sayfası**: **Evet** (varsayılan) işletim sistemi varsayılanını kullanır ve bu, `about:flags` sayfasına erişime izin verebilir. `about:flags` sayfası kullanıcıların geliştirici ayarlarını değiştirmesine ve deneysel özellikleri etkinleştirmesine olanak sağlar. **Hayır** , son kullanıcıların Microsoft Edge 'de `about:flags` sayfasına erişmesini önler.
 - **Geliştirici araçlarına Izin ver**: **Evet** (varsayılan), kullanıcıların varsayılan olarak Web sayfalarını derlemek ve hatalarını ayıklamak için F12 geliştirici araçlarını kullanmasına izin verir. **Hayır** , son kullanıcıların F12 geliştirici araçlarını kullanmasını önler.
 - **JavaScript 'e Izin ver**: **Evet** (varsayılan) JavaScript gibi betiklerin Microsoft Edge tarayıcısında çalışmasına izin verir. **Hayır** , tarayıcıda Java betikleri çalıştırılmasını önler.
 - **Kullanıcı Uzantıları yükleyebilir**: **Evet** (varsayılan) son kullanıcıların cihaza Microsoft Edge uzantıları yüklemesine izin verir. **Hayır** , yüklemeyi engeller.
@@ -414,7 +414,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [DeviceLock ILKESI C
   - **Parola kullanım süresi (gün)** : cihaz parolasının değiştirilme tarihi olan 1-365 ' dan gün cinsinden süre uzunluğunu girin. Örneğin, 90 gün sonra parolayı sona erdirmek için `90` girin.
   - **Önceki parolaların yeniden kullanılmasını engelle**: daha önce kullanılan ve 1-24 'den kullanılamayan parolaların sayısını girin. Örneğin, kullanıcıların geçerli parolasına veya önceki dört parolalarından birine yeni bir parola ayarlayamaması için `5` girin.
   - **Cihaz boşta durumundan çıktığında parola iste** (Mobile ve holographic): **gerektir** ' i seçin, böylece kullanıcılar, boşta kaldıktan sonra cihazın kilidini açmak için bir parola girmelidir. **Yapılandırılmadı** (varsayılan) cihaz boşta durumundan çıktığında PIN veya parola gerektirmez.
-  - **Basit parolalar**: kullanıcıların `1234` veya `1111` gibi basit parolalar oluşturabilmesi için **Engelle** olarak ayarlayın. Kullanıcıların `1234` veya `1111` gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** (varsayılan) olarak ayarlayın. Bu ayar, Windows resimli parolalarının kullanımına izin verir veya bunu engeller.
+  - **Basit parolalar**: kullanıcıların `1234` veya `1111`gibi basit parolalar oluşturmaması için **Engelle** olarak ayarlayın. Kullanıcıların `1234` veya `1111`gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** (varsayılan) olarak ayarlayın. Bu ayar, Windows resimli parolalarının kullanımına izin verir veya bunu engeller.
 - **Aayarlaması sırasında otomatik şifreleme**: **blok** , cihaz Azure AD 'ye katılmış olduğunda otomatik BitLocker cihaz şifrelemesini engeller. **Yapılandırılmadı** (varsayılan), şifrelemeyi etkinleştirebilen işletim sistemi varsayılanını kullanır. [BitLocker cihaz şifrelemesi](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)hakkında daha fazla bilgi.
 
   [Güvenlik/koruyucu Tautomaticdeviceencryptionforazureadjoineddevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
@@ -523,7 +523,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [kablolu Lessdisplay
 
 - **Kullanım verilerini paylaşma**: gönderilen tanılama verilerinin düzeyini seçin. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı**: hiçbir veri paylaşılmıyor.
-  - **Güvenlik**: bağlı kullanıcı deneyimi ve telemetri bileşen ayarları, kötü amaçlı yazılım kaldırma aracı ve Windows Defender hakkındaki veriler de dahil olmak üzere Windows 'un daha güvenli kalmasına yardımcı olmak için gereken bilgiler.
+  - **Güvenlik**: bağlı kullanıcı deneyimi ve telemetri bileşen ayarları, kötü amaçlı yazılım kaldırma aracı ve Microsoft Defender hakkındaki veriler de dahil olmak üzere Windows 'un daha güvenli kalmasına yardımcı olmak için gereken bilgiler.
   - **Temel**: kalite ile ilgili verileri, uygulama uyumluluğunu, uygulama kullanımı verilerini ve güvenlik düzeyinden verileri içeren temel cihaz bilgileri.
   - **Gelişmiş**: Windows, Windows Server, System Center ve uygulamaların nasıl kullanıldığı, gelişmiş güvenilirlik verilerinin ve hem temel hem de güvenlik seviyelerinin verileri dahil olmak üzere ek Öngörüler.
   - **Full**: sorunları belirlemek ve gidermek için gereken tüm veriler ile güvenlik, temel ve gelişmiş düzeylerdeki veriler.
@@ -632,19 +632,19 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Başlangıç ILKESI
   - **Gizle**: kısayol gizlenir ve Ayarlar uygulamasındaki ayarı devre dışı bırakır.
   - **Göster**: kısayol gösterilir ve Ayarlar uygulamasındaki ayarı devre dışı bırakır.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender akıllı ekranı
 
-- **Microsoft Edge Için SmartScreen**: **gerekli** Windows Defender SmartScreen 'i kapatır ve kullanıcıların bunu açmasını önler. **Yapılandırılmadı** (varsayılan), SmartScreen 'i etkinleştirir. Kullanıcıların olası tehditlere karşı korunmasına yardımcı olur ve kullanıcıların bunu kapatmasını engeller.
+- **Microsoft Edge Için SmartScreen**: **gerektir** , Microsoft Defender SmartScreen 'i kapatır ve kullanıcıların bunu açmasını önler. **Yapılandırılmadı** (varsayılan), SmartScreen 'i etkinleştirir. Kullanıcıların olası tehditlere karşı korunmasına yardımcı olur ve kullanıcıların bunu kapatmasını engeller.
 
-  Microsoft Edge, kullanıcıların olası kimlik avı dolandırıcılarından ve kötü amaçlı yazılımlardan korunması için Windows Defender SmartScreen (açık) kullanır.
+  Microsoft Edge, kullanıcıların olası kimlik avı dolandırıcılarından ve kötü amaçlı yazılımlardan korunması için Microsoft Defender SmartScreen (açık) kullanır.
 
   [Tarayıcı/AllowSmartScreen CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- **Kötü amaçlı site erişimi**: **engelleme** , kullanıcıların Windows Defender SmartScreen Filtresi uyarılarını yok saymalarını engeller ve siteye gitmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların uyarıları yoksaymasına ve siteye devam etmesine izin verir.
+- **Kötü amaçlı site erişimi**: **blok** kullanıcıların Microsoft Defender SmartScreen Filtresi uyarılarını yok saymalarını engeller ve siteye gitmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların uyarıları yoksaymasına ve siteye devam etmesine izin verir.
 
   [Tarayıcı/PreventSmartScreenPromptOverride CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- **Doğrulanmamış dosya indirme**: **engelleme** , kullanıcıların Windows Defender SmartScreen Filtresi uyarılarını yok saymasını ve doğrulanmamış dosyaları indirmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların uyarıları yoksaymasına ve doğrulanmamış dosyaları indirmeye devam etmesine izin verir.
+- **Doğrulanmamış dosya indirme**: **engelleme** , kullanıcıların Microsoft Defender SmartScreen Filtresi uyarılarını yoksaymasını ve doğrulanmamış dosyaları indirmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların uyarıları yoksaymasına ve doğrulanmamış dosyaları indirmeye devam etmesine izin verir.
 
   [Tarayıcı/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -736,11 +736,11 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   [Defender/RealTimeScanDirection CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
 
-- **Karantinaya alınan kötü amaçlı yazılımı silmeden önce geçen gün**: daha önce etkilenen cihazları el ile kontrol edebilmeniz için, girdiğiniz gün sayısı için çözümlenmiş kötü amaçlı yazılımı izlemeye devam edin Gün sayısını `0` olarak ayarlarsanız, kötü amaçlı yazılım Karantina klasöründe kalır ve otomatik olarak kaldırılmaz. `90`olarak ayarlandığında, karantina öğeleri sistemde 90 gün boyunca depolanır ve sonra kaldırılır.
+- **Karantinaya alınan kötü amaçlı yazılımı silmeden önce geçen gün**: daha önce etkilenen cihazları el ile kontrol edebilmeniz için, girdiğiniz gün sayısı için çözümlenmiş kötü amaçlı yazılımı izlemeye devam edin Gün sayısını `0`ayarlarsanız, kötü amaçlı yazılım Karantina klasöründe kalır ve otomatik olarak kaldırılmaz. `90`olarak ayarlandığında, karantina öğeleri sistemde 90 gün boyunca depolanır ve sonra kaldırılır.
 
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
-- **Tarama sırasında CPU kullanım sınırı**: `0` ' den `100` ' ye kadar taramaların kullanmasına ızın verilen CPU miktarını sınırlayın.
+- **Tarama sırasında CPU kullanım sınırı**: taramaların kullanmasına ızın verilen CPU miktarını, `0` `100`ile sınırlayın.
 - **Arşiv dosyalarını Tara**: **Enable** , zip veya CAB dosyaları gibi arşiv dosyalarını taramak için Defender 'ı etkinleştirir. Kullanıcılar bu ayarı kapatamaz.
 
   **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu taramayı etkinleştirir ve kullanıcıların değiştirmesini sağlar.
@@ -833,9 +833,9 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - İstenmeyebilecek **uygulamaları Algıla**: Windows istenmeyebilecek uygulamalar algıladığında koruma düzeyini seçin. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı** (varsayılan): Windows Defender istenmeyebilecek uygulamalar koruması devre dışı bırakıldı.
-  - **Engelle**: Windows Defender istenmeyebilecek uygulamaları algılar ve algılanan öğeler engellenir. Bu öğeler, diğer tehditlerle birlikte geçmiş olarak gösterilir.
-  - **Denetim**: Windows Defender istenmeyebilecek uygulamaları algılar, ancak hiçbir işlem gerçekleşmez. Windows Defender 'ın işlem yapması için gereken uygulamalar hakkındaki bilgileri gözden geçirebilirsiniz. Örneğin, Olay Görüntüleyicisi Windows Defender tarafından oluşturulan olayları arayın.
+  - **Yapılandırılmadı** (varsayılan): Microsoft Defender istenmeyebilecek uygulamalar koruması devre dışı bırakıldı.
+  - **Engelle**: Microsoft Defender istenmeyebilecek uygulamaları algılar ve algılanan öğeler engellenir. Bu öğeler, diğer tehditlerle birlikte geçmiş olarak gösterilir.
+  - **Denetim**: Microsoft Defender istenmeyebilecek uygulamaları algılar, ancak hiçbir işlem gerçekleşmez. Microsoft Defender 'ın işlem yapması için gereken uygulamalarla ilgili bilgileri gözden geçirebilirsiniz. Örneğin, Olay Görüntüleyicisi Microsoft Defender tarafından oluşturulan olayları arayın.
 
   İstenmeyebilecek uygulamalar hakkında daha fazla bilgi için bkz. istenmeyebilecek [uygulamaları algılama ve engelleme](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
@@ -850,11 +850,11 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
   - **Kullanıcı tanımlı**
   - **Engelle**
 
-  Eyleminiz mümkün değilse, Windows Defender tehdit 'nin düzeltildiğinden emin olmak için en iyi seçeneği seçer. 
+  Eyleminiz mümkün değilse, Microsoft Defender tehdit 'nin düzeltildiğinden emin olmak için en iyi seçeneği seçer. 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender Virüsten Koruma Dışlamaları
+### <a name="microsoft-defender-antivirus-exclusions"></a>Microsoft Defender virüsten koruma dışlamaları
 
 - **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosya ve klasörler**: dışlamalar listesine **C:\path** veya **%ProgramFiles%\yol\filename.exe** gibi bir veya daha fazla dosya ve klasör ekler. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
 - **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosya uzantıları**: dışlamalar listesine **jpg** veya **txt** gibi bir veya daha fazla dosya uzantısı ekleyin. Bu uzantılara sahip tüm dosyalar gerçek zamanlı veya zamanlanmış taramalara dahil değildir.

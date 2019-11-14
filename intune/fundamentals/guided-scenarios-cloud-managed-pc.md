@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 4a757da6cf4f4a2a3bde907f0025d4a08a52131b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749335"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059648"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Kılavuzlu senaryo-bulutta yönetilen modern masaüstü
 
-Modern masaüstü, bilgi çalışanı için son teknoloji üretkenlik platformudur. Office 365 ProPlus ve Windows 10, modern masaüstünün temel bileşenleridir ve Windows 10 ve Windows Defender Gelişmiş tehdit koruması için en son güvenlik temelleriyle birlikte bulunur. 
+Modern masaüstü, bilgi çalışanı için son teknoloji üretkenlik platformudur. Office 365 ProPlus ve Windows 10, Windows 10 ve Microsoft Defender Gelişmiş tehdit koruması için en son güvenlik temelleriyle birlikte modern masaüstünün temel bileşenleridir. 
 
 Modern masaüstü 'nü buluttan yönetmek, internet genelindeki uzak eylemlerin ek avantajını getirir. Bulut yönetimi, yerleşik Windows mobil cihaz yönetimi ilkelerini kullanır ve yerel Active Directory Grup İlkesi bağımlılıklarını kaldırır. 
 
@@ -118,5 +118,5 @@ Kullanıcı cihazı Azure Active Directory katıldıktan sonra cihaza aşağıda
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Windows Defender Gelişmiş tehdit algılama kullanıyorsanız, Defender tehdit analizinin uyumluluğu karşılaması için bir [Intune uyumluluk ilkesi](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) oluşturun.
+- Microsoft Defender Gelişmiş tehdit algılama kullanıyorsanız, Defender tehdit analizinin uyumluluğu karşılaması için bir [Intune uyumluluk ilkesi](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) oluşturun.
 - Cihaz Intune uyumluluğunu karşılamıyorsa, erişimi engellemek için [cihaz tabanlı bir koşullu erişim ilkesi](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy) oluşturun.
