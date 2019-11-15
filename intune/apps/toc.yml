@@ -185,7 +185,7 @@
     - name: Sorunları Gider
       items:
         - name: Kullanıcıların sorunları gidermesine yardımcı olma
-          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: Sorun giderme uygulaması kurulum sorunları
           href: troubleshoot-app-install.md
         - name: Mobil uygulama yönetimi sorunlarını giderme
