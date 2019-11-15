@@ -169,7 +169,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
   - **Temel bütünlük ve sertifikalı cihaz denetimi**
 
 > [!NOTE]
-> Android Kurumsal cihazlardaki **Uygulamalarda tehdit taraması**, bir cihaz yapılandırma ilkesidir. Yöneticiler, yapılandırma ilkesini kullanarak bu ayarı cihazlarda etkinleştirebilir. Bkz. [Android için Intune cihaz kısıtlama ayarları](../configuration/device-restrictions-android-for-work.md).
+> Android Kurumsal cihazlardaki **Uygulamalarda tehdit taraması**, bir cihaz yapılandırma ilkesidir. Yöneticiler, yapılandırma ilkesini kullanarak bu ayarı cihazlarda etkinleştirebilir. Bkz. [Android Kurumsal cihaz kısıtlama ayarları](../configuration/device-restrictions-android-for-work.md).
 
 ### <a name="device-properties"></a>Cihaz Özellikleri
 
