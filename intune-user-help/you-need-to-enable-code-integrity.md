@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,18 +19,18 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 2b26717e2e8beed2e92f47dca17cbea0ec47a82b
+ms.sourcegitcommit: 244a75622f9cebaaaf5b33aadd8931407a2e2e48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754986"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74096755"
 ---
 # <a name="enable-code-integrity"></a>Kod bütünlüğünü etkinleştir
 
 Kuruluşunuz, BILGISAYARıNıZıN *kod bütünlüğü*adlı bir tehdit koruması özelliği ile etkinleştirilmesini gerektirebilir. Kod bütünlüğü, cihazınızdaki sürücü ve sistem dosyalarını, bozulma veya kötü amaçlı yazılım belirtileri için denetler. Kod bütünlüğü için cihazınızda çalışması için [*Güvenli önyükleme*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) adlı başka bir güvenlik özelliğinin de etkinleştirilmesi gerekir.
 
-Kod bütünlüğü devre dışı bırakıldığından BILGISAYARıNıZ uyumlu değilse, kuruluşunuzun BT destek ekibine başvurmanız gerekir. Bu kişiler, cihazınızı bir sonraki başlatmanızda kod bütünlüğünü tetikleyecek güvenli önyükleme 'yi etkinleştirmenize yardımcı olur.
+Kod bütünlüğü devre dışı bırakıldığından BILGISAYARıNıZ uyumlu değilse, kuruluşunuzun BT destek sorumlunuza başvurun. Destek sorumlunuza, cihazınızı bir sonraki başlatmanızda kod bütünlüğünü tetikleyecek güvenli önyüklemeyi etkinleştirmenize yardımcı olur. 
 
 Kendinizi gelişmiş bir cihaz kullanıcısı olarak tanımlayabilir ve ilgili adımları kendiniz denemek istiyorsanız, bkz. [güvenli önyüklemeyi yeniden etkinleştirme](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 

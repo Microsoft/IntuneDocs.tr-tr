@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbdef7cffa76beeb158c47ab3651d438de2d6ccc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503164"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098192"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune’da macOS cihazların kaydını ayarlama
 
@@ -42,15 +42,16 @@ macOS cihaz kaydını ayarlamadan önce, aşağıdaki önkoşulları tamamlayın
 - [MDM Yetkilisini ayarlama](../fundamentals/mdm-authority-set.md)
 - [Grup oluşturma](../fundamentals/groups-add.md)
 - [Şirket Portalı’nı yapılandırma](../apps/company-portal-app.md)
-- [Microsoft 365 yönetim merkezinde](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
+- [Microsoft 365 yönetim merkezinde](https://go.microsoft.com/fwlink/p/?LinkId=698854) kullanıcı lisanslarını atama
 - [Bir MDM anında iletme sertifikası alma](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>Kullanıcıya ait macOS cihazları (KCG)
 
-Kullanıcıların kendi cihazlarını Intune yönetimine kaydetmesine izin verebilirsiniz. Bu, “kendi cihazını getir” veya KCG olarak bilinir. Önkoşulları tamamladıktan ve kullanıcılara lisans atadıktan sonra, kullanıcılarınız cihazlarını kaydetmek için:
+Kullanıcıların kendi kişisel cihazlarını Intune yönetimine kaydetmelerini sağlayabilirsiniz. Bu, "kendi cihazını getir" veya KCG olarak bilinir. Önkoşulları ve atanan kullanıcı lisanslarını tamamladıktan sonra, kullanıcılarınız cihazlarını şu şekilde kaydedebilir:
 - [Şirket Portalı web sitesine](https://portal.manage.microsoft.com) gidebilir veya
-- Şirket Portalı uygulamasını indirebilir.
-Kullanıcılara, çevrimiçi kaydolma adımlarını gösteren bir bağlantı da gönderebilirsiniz: [macOS cihazınızı Intune’a kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+- [aka.MS/EnrollMyMac](https://aka.ms/EnrollMyMac)adresindeki Mac Şirket portalı uygulaması indiriliyor.
+
+Kullanıcılarınıza çevrimiçi kayıt adımları için bir bağlantı da gönderebilirsiniz: [macOS cihazınızı Intune 'A kaydetme](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Diğer son kullanıcı görevleri hakkında daha fazla bilgi için şu makalelere bakın:
 
@@ -77,12 +78,17 @@ Parallels Desktop kullanırsanız, Intune’un sanal makineleri tanıyabilmesi i
 VMware Fusion kullanırsanız, sanal makinenin donanım türü ve seri numarasını ayarlamak için [.vmx dosyasını düzenlemeniz](https://kb.vmware.com/s/article/1014782) gerekir. Sanal makineleri çalıştıran cihazın donanım türünü, oluşturduğunuz sanal makinelerin donanım türüyle eşleştirmenizi öneririz. Bu donanım türünü **Apple menüsü** > **Bu Mac hakkında** > **Sistem Raporu** > **Model Tanımlayıcı**’da bulabilirsiniz. 
 
 ## <a name="user-approved-enrollment"></a>Kullanıcı Onaylı kayıt
-
 Kullanıcı Onaylı MDM kaydı, güvenlik açısından hassas bazı ayarları yönetmek için kullanabileceğiniz bir macOS kayıt türüdür. Daha fazla bilgi için [Apple'ın destek belgelerine](https://support.apple.com/HT208019) bakın.
 
-Kullanıcı onaylı olması için, son kullanıcının macOS Şirket Portalı aracılığıyla kaydettikten sonra Sistem Tercihleri'ni kullanarak el ile onay sağlaması gerekir. Bu işlemi yapma yönergeleri, macOS 10.13.2 veya üzerini kullanan kullanıcılar için macOS Şirket Portalı'nda sağlanır.
+2019 Kasım 'Dan itibaren, kullanıcının başarıyla kaydedilmesi için yönetim profilini el ile yüklemesi gerektiğinden, yeni kullanıcıya ait tüm macOS kayıtları Kullanıcı tarafından onaylanır. [Kayıt işlemi](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)sırasında Kullanıcı, Apple Yönetim profilini **Sistem Tercihleri** > **profillerine**yükler.  Yönetim profilini yüklemeye yönelik yönergeler macOS Şirket Portalı uygulamasında bulunabilir.
 
-Cihazın Kullanıcı Onaylı olup olmadığını öğrenmek için, Intune portalına gidin ve **Cihazlar** > **Tüm cihazlar**> cihaz seçin > **Donanım**'ı seçin. **Kullanıcı Onaylı** alanını işaretleyin.
+Kullanıcı yönetim profilini el ile onaylamadıysa 2019 Kasım 'dan önce kaydedilen cihazlar Kullanıcı onaylı olmayabilir. Ancak, kullanıcılar **sistem tercihleri** > **profiller** ' e giderek yönetim profilini onaylayabilir ve > **Yönetim profilini** seçin > **Onayla**' ya tıklayın.
+
+### <a name="find-out-if-a-device-is-user-approved"></a>Bir cihazın Kullanıcı tarafından onaylanmış olup olmadığını bulma
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm cihazlar** > **cihazları** seçin > Cihaz > **donanımını**seçin.
+3. **Kullanıcının onayladığı kayıt** alanını denetleyin.
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

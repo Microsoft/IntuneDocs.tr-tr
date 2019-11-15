@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74ef6380ed4cbc8215f4e68865e740b506f21eb4
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059390"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098213"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 
@@ -41,7 +41,15 @@ Bir çalışan ya da öğrenciyseniz, Şirket Portalı yardım belgelerinin ekra
 #### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows Şirket Portalı uygulamasından başlatılan web uygulamaları<!-- 5030972 -->
 Son kullanıcılar artık doğrudan Windows Şirket Portalı uygulamasından Web uygulamaları başlatabilir. Son kullanıcılar Web uygulamasını seçip **tarayıcıda aç**seçeneğini belirleyebilir. Yayınlanan Web URL 'SI doğrudan bir Web tarayıcısında açılır. Bu işlevsellik bir sonraki hafta boyunca alınacaktır. Web Apps hakkında daha fazla bilgi için bkz. [Microsoft Intune Web Apps ekleme](~/apps/web-app.md).
 
-![Windows Şirket Portalı uygulamasından başlatılan bir Web uygulamasının örnek görüntüsü](./media/whats-new-app-ui/webapp-open-in-browser.png)
+![Windows Şirket Portalı uygulamasından başlatılan bir Web uygulamasının örnek görüntüsü](./media/whats-new-app-ui/webapp-open-in-browser.png)  
+
+### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Şirket Portalı 'de geliştirilmiş macOS kayıt deneyimi <!-- 5074349 WNready -->  
+MacOS kayıt deneyiminin Şirket Portalı, iOS kayıt deneyimi için Şirket Portalı daha yakından hizalanan daha basit bir kayıt işlemine sahiptir. Cihaz kullanıcıları şimdi şunları görür:  
+
+* Bir uyleyici Kullanıcı arabirimi.  
+* İyileştirilmiş bir kayıt denetim listesi.  
+* Cihazlarını nasıl kaydedebileceğinize ilişkin daha net yönergeler.  
+* Gelişmiş sorun giderme seçenekleri.  
 
 ## <a name="week-of-october-28-2019"></a>28 Ekim 2019 haftası  
 

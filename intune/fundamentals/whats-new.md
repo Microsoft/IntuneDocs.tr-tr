@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1bbf085cc5d3ffd3b37bd2c475f015be6418f6d
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: ace59f4bfad70eece9e693d4ca74094a6d5af460
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74058538"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098087"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -53,12 +53,22 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 ### Role-based access control
 -->  
 
-## <a name="week-of-november-11-2019"></a>11 Kasım 2019 haftası
 
-### <a name="app-management"></a>Uygulama yönetimi
+## <a name="week-of-november-11-2019"></a>11 Kasım 2019 haftası  
+
+### <a name="app-management"></a>Uygulama yönetimi  
+
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Şirket Portalı 'de geliştirilmiş macOS kayıt deneyimi <!-- 5074349 WNready -->  
+MacOS kayıt deneyiminin Şirket Portalı, iOS kayıt deneyimi için Şirket Portalı daha yakından hizalanan daha basit bir kayıt işlemine sahiptir. Cihaz kullanıcıları şimdi şunları görür:  
+
+* Bir uyleyici Kullanıcı arabirimi.  
+* İyileştirilmiş bir kayıt denetim listesi.  
+* Cihazlarını nasıl kaydedebileceğinize ilişkin daha net yönergeler.  
+* Gelişmiş sorun giderme seçenekleri.  
 
 #### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows Şirket Portalı uygulamasından başlatılan web uygulamaları<!-- 5030972 -->
 Son kullanıcılar artık doğrudan Windows Şirket Portalı uygulamasından Web uygulamaları başlatabilir. Son kullanıcılar Web uygulamasını seçip **tarayıcıda aç**seçeneğini belirleyebilir. Yayınlanan Web URL 'SI doğrudan bir Web tarayıcısında açılır. Bu işlevsellik bir sonraki hafta boyunca alınacaktır. Web Apps hakkında daha fazla bilgi için bkz. [Microsoft Intune Web Apps ekleme](~/apps/web-app.md).
+
 
 ## <a name="week-of-november-4-2019"></a>4 Kasım 2019 haftası
 
@@ -146,7 +156,7 @@ Kullanıcıların şirket verilerini bir cihazın sistem durumuna göre engelley
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
-#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>Windows 10 ve üzeri cihazlar için yeni cihaz üretici yazılımı yapılandırma arabirimi profili<!-- 2266073  -->
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices-public-preview---2266073----"></a>Windows 10 ve üzeri cihazlar için yeni cihaz üretici yazılımı yapılandırma arabirimi profili (Genel Önizleme)<!-- 2266073  -->
 
 Windows 10 ve üzeri sürümlerde, ayarları ve özellikleri denetlemek için bir cihaz yapılandırma profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > , platform için **Windows 10 ve üzeri sürümler** ) > **profil oluşturma** ). Bu güncelleştirmede, Intune 'un UEFı (BIOS) ayarlarını yönetmesine izin veren yeni bir cihaz üretici yazılımı yapılandırma arabirimi profil türü vardır.
 

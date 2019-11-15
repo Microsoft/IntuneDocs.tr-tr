@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709196"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098188"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
@@ -117,6 +117,15 @@ Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a k
 > Otomatik MDM kaydını etkinleştirmediyseniz ancak Azure AD’ye katılmış Windows 10 cihazlarınız varsa, kayıt sonrasında Intune konsolunda iki kayıt görünecektir. Azure AD’ye katılmış cihazların, aynı hesabı kullanarak **Hesaplar** > **İş veya okula erişim** ve **Bağlan**’a gitmesini sağlayarak bunu önleyebilirsiniz. 
 
 Son kullanıcı görevleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](../fundamentals/end-user-educate.md).
+
+## <a name="registration-and-enrollment-cnames"></a>Kayıt ve kayıt CNAMEs
+Azure Active Directory iOS, Android ve Windows cihazları için cihaz kaydı için kullandığı farklı bir CNAME 'e sahiptir. Intune koşullu erişimi, cihazların "çalışma alanına katılmış" olarak da kaydedilmesini gerektirir. Koşullu erişim kullanmayı planlıyorsanız, sahip olduğunuz her şirket adı için EnterpriseRegistration CNAME 'i de yapılandırmalısınız.
+
+| Tür | Konak adı | Şunu gösterir: | TTL |
+| --- | --- | --- | --- |
+| ADA | EnterpriseRegistration. company_domain. com | EnterpriseRegistration.windows.net | 1 saat|
+
+Cihaz kaydı hakkında daha fazla bilgi için bkz [. Azure Portal kullanarak cihaz kimliklerini yönetme](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
