@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506122"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126204"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
 
@@ -41,7 +41,7 @@ Windows için Şirket Portalı uygulamasından cihazınıza uygulama yükleyin.
     * **Tümünü göster**: **Giriş sayfası** > **Uygulamalar** bölümünde **Tümünü göster**'e tıklayarak bulunan tüm uygulamaları görüntüleyin.  
     * **Tüm uygulamalar**: Yüklü olanlar ve öne çıkanlar dahil bulunan tüm uygulamaları görmek için gezinti bölmesinde bu sayfayı seçin. Uygulamaları görüntüleyin, sıralayın ve filtreleyin. Arama sonuçları otomatik olarak ilgi düzeyine göre sıralanır.  
     * **Uygulama kategorileri**: tür veya işleve göre uygulamalar seçmek için gezinti bölmesinde bu sayfayı seçin. Uygulamalar **öne çıkan**, **eğitim**ve **üretkenlik**gibi Kategoriler altında sıralanır.  
-    * **Uygulama ara**: Uygulamanın gezinti bölmesinde statik bir arama çubuğu durur.  Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
+    * **Uygulama ara**: Uygulamanın gezinti bölmesinde statik bir arama çubuğu durur. Mevcut uygulamalarınızı bulmak için uygulama adına ve yayımcıya göre arama yapın.  
 
 3. Bir uygulama seçin.   
 4. Uygulama ayrıntıları sayfasında **Yükle**'ye tıklayın. Yükleme tamamlandıktan sonra **Yüklendi** durumunu göreceksiniz.  
@@ -69,10 +69,10 @@ Uygulamaları iş veya okuldaki tanıdığınız kişilerle paylaşın veya bu k
 
 Paylaşmadan sonra alıcı bir bağlantı ve uygulama ayrıntılarını görüntülemek için bir ileti alır. Bağlantı Şirket Portalı **Uygulama ayrıntıları** sayfasını açar. 
 
-## <a name="available-and-required-apps"></a>Kullanılabilir ve gerekli uygulamalar
-Uygulamalar size kuruluşunuz tarafından atanır ve **kullanılabilir** veya **gerekli**olduğu gibi şirket portalı etiketlidir. 
+## <a name="optional-and-required-apps"></a>İsteğe bağlı ve gerekli uygulamalar
+Uygulamalar size kuruluşunuz tarafından atanır. Kuruluşunuz, bazı uygulamalara sahip olmanızı gerektirir ve diğer uygulamaları isteğe bağlı hale getirir. Hangi uygulamaların zorunlu olduğunu ve isteğe bağlı olduğunu öğrenmek için, **yüklü uygulamalar** ' a gidin ve kuruluşunuz için **gereken**sütunun altına bakın.  
 
-* Kullanılabilir uygulamalar: Bu uygulamalar kuruluşunuz tarafından seçilir ve uygun ve iş ya da okul için yararlıdır. Yüklemek için isteğe bağlıdır ve yüklemek üzere Şirket Portalı bulacağınız uygulamalar vardır. 
+* İsteğe bağlı uygulamalar: Bu uygulamalar kuruluşunuz tarafından seçilir ve uygun ve iş ya da okul için yararlıdır. Bunlar sizin için kullanılabilir hale getirilir, ancak bunları yüklemek isteyip istemediğiniz. Bunlar, yüklemek için Şirket Portalı bulacağınız tek uygulama türüdür. 
 
 * Gerekli uygulamalar: Bu uygulamalar iş ve okul için gereklidir ve doğrudan cihazınıza dağıtılır. Bu uygulamalar sizin için müdahale etmeden otomatik olarak yüklenir. 
 
@@ -86,15 +86,13 @@ Uygulamalar, cihaz türüne bağlı olarak sizin için de kullanılabilir hale g
 ## <a name="view-installed-apps"></a>Yüklü uygulamaları görüntüleme  
 Cihazınızda yüklü tüm uygulamaların listesini görüntüleyin. **Yüklü uygulamalar** sayfasında her uygulamayla ilgili aşağıdaki ayrıntılar listelenir:
 
-* Ad: uygulamanın adı. Kullanılabilir uygulamalar, **uygulama ayrıntıları** sayfasının bağlantısını içerir.
+* Ad: uygulamanın adı. İsteğe bağlı uygulamalar, **uygulama ayrıntıları** sayfasının bağlantısını içerir.
 * Atama türü: uygulama nasıl atanır ve size kullanılabilir hale getirilir. 
 * Yayımcı: uygulamayı dağıtmayan geliştirici veya şirketin adı. Yayımcı genellikle bir yazılım satıcısı veya kuruluştur.  
 * Yayımlanma tarihi: uygulamanın indirilmek üzere kullanılabilir hale getirilme tarihi. Yayımlama tarihi, bir uygulamanın ilk sürümünü veya uygulamanın en son güncelleştirmesini gösterebilir.
 * Durum: cihazınızdaki uygulamanın geçerli yükleme durumu. Uygulamalar yükleme, yükleme ve yükleme başarısız olarak gösterilebilir. Gerekli uygulamalar güncel durumu göstermek için 10 dakikaya kadar sürebilir. Gerekli bir uygulamayı yükleme hakkında önemli ayrıntılar için [uygulamaları yükleme](#install-apps) altındaki nota bakın. 
 
-Bu sayfaya ulaşmak için, gezinti menüsüne gidin ve **yüklü uygulamalar**' ı seçin. 
-
-  ![Windows 10 için Şirket Portalı uygulamasının yüklü uygulamalar sayfasında örnek ekran görüntüsü. ](./media/installed-apps-cp-1906.png)  
+Bu sayfaya ulaşmak için, gezinti menüsüne gidin ve **yüklü uygulamalar**' ı seçin.  
 
 
 Uygulamalar atama türünü, yayımcıyı, ada göre alfabetik olarak veya yayımlama tarihine göre kronolojik olarak yeniden düzenlemek için **sıralama ölçütü** ' nu kullanın. Yükleme durumuna göre gördüğünüz uygulamaları sınırlamak için **filtre ölçütü** ' ni kullanın.  Kullanılabilir uygulama yoksa, hiçbir şirket uygulaması yüklenmediğini belirten bir ileti görürsünüz.  

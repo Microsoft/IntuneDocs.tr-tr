@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509239"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126154"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme
 
@@ -84,13 +84,15 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 1. Şirket Portalı uygulamayı cihazdan kaldırın.
 2. **Microsoft Intune şirket portalı** uygulamasını **App Store**'dan indirin ve yükleyin.
 3. Cihazı yeniden kaydedin.
+ > [!NOTE]
+    > Bu hata, Kullanıcı cihaz kaydı izin verilecek şekilde yapılandırıldığından daha fazla cihaz kaydetmeye çalışıyorsa de oluşabilir. Bu adımlar sorunu gidermezse, aşağıda **ulaşılan cihaz sınırına** yönelik çözüm adımlarını izleyin.
 
 ### <a name="device-cap-reached"></a>Cihaz sınırına ulaşıldı
 
 **Neden:** Kullanıcı cihaz kayıt sınırından daha fazla cihaz kaydetmeye çalışır.
 
 #### <a name="resolution"></a>Çözüm
-1. [Intune yönetici portalı](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **tüm cihazlar** **@no__t ve**kullanıcının kaydolduğu cihaz sayısını kontrol edin.
+1. [Intune yönetim portalı](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **cihazları** > **tüm cihazlar**' ı açın ve kullanıcının kaydolduğu cihaz sayısını denetleyin.
     > [!NOTE]
     > Ayrıca, etkilenen kullanıcının [Intune kullanıcı portalında](https://portal.manage.microsoft.com/) oturum açmasını ve kaydolmuş cihazları kontrol etmeniz gerekir. Intune [Kullanıcı portalında](https://portal.manage.microsoft.com/) görünen ancak [Intune yönetim portalında](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)yer alan cihazlar olabilir, bu da cihaz kayıt sınırına doğru sayılır.
 2. **Yönetim** > **mobil cihaz yönetimi** > **kayıt kuralları** > cihaz kayıt sınırını kontrol edin. Varsayılan olarak, sınır 15 olarak ayarlanır. 
@@ -121,7 +123,7 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 **Neden:** Cihazı kaydetmeye çalışan kullanıcının geçerli bir Intune lisansı yok.
 
 1. [Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **Kullanıcılar** > **Etkin Kullanıcı**' yı seçin.
-2. Etkilenen Kullanıcı hesabını seçin ve ardından @no__t **ürün lisansları**-1**Düzenle**' yi seçin.
+2. Etkilenen Kullanıcı hesabını seçin ve ardından **ürün lisansları** > **Düzenle**' yi seçin.
 3. Bu kullanıcıya geçerli bir Intune lisansının atandığını doğrulayın.
 4. Cihazı yeniden kaydedin.
 
@@ -156,7 +158,7 @@ APNs sertifikasını yenileyin ve sonra cihazı yeniden kaydedin.
 - Intune hibrit Configuration Manager ile APNs sertifikasını yenilemek için, bkz. [System Center Configuration Manager ve Microsoft Intune Ile iOS hibrit cihaz yönetimini ayarlama](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Office 365 ' de APNs sertifikasını yenilemek için bkz. [iOS cihazları Için APNs sertifikası oluşturma](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
-### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR bağlantısı geçersiz
+### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR bağlantı geçersiz
 
 Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, kayıt başarısız olur ve aşağıdaki hata iletisini alırsınız:
 
