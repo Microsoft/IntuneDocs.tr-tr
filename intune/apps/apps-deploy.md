@@ -65,7 +65,7 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
    - **Kayıtlı cihazlar Için kullanılabilir**: uygulamayı şirket portalı uygulamadan veya Web sitesinden yükleyebilen Kullanıcı gruplarına atayın.
    - **Kayıtlı veya kayıtsız olarak kullanılabilir**: Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. Kullanıcılara Intune lisansı atanmış olmalıdır, bkz. [Intune Lisansları](../fundamentals/licenses.md).
    - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir. Bazı platformlarda yükleme başlamadan önce son kullanıcıya ek sorular ve bilgiler sunulabilir.
-   - **Kaldır**: Intune, uygulamayı daha önce kayıtlı cihazlar için kullanılabilir "veya aynı dağıtımı kullanarak" gerekli "atama yoluyla cihaza daha önce yükletiyse, seçilen gruplardaki cihazlardan kaldırılır. Dağıtım sonrasında web bağlantıları kaldırılamaz.
+   - **Kaldır**: Intune'un "Kayıtlı cihazlar için mevcut"' veya "Gerekli" ataması aracılığıyla aynı dağıtımı kullanarak uygulamayı cihaza daha önce yüklemiş olması halinde, uygulama seçilen gruplardaki cihazlardan kaldırılır. Dağıtım sonrasında web bağlantıları kaldırılamaz.
 
      > [!NOTE]
      > **Yalnızca iOS uygulamaları için**:

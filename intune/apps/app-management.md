@@ -85,7 +85,7 @@ Aşağıda gösterilen yolla erişilen **İstemci uygulamaları** iş yükünde,
 
 Sıradaki dört bölüm, **İstemci uygulamaları** bölmesindeki kullanılabilir seçenekleri açıklar.
 
-### <a name="manage"></a>Bilgisayarlarda
+### <a name="manage"></a>Yönet
 - **Uygulamalar**: İş gücünüz tarafından kullanılan uygulamaları eklemek, görüntülemek, atamak ve izlemek için bu seçeneği belirleyin. Daha fazla bilgi için bkz.:
   - [Uygulama ekleme](apps-add.md).
   - [Uygulama atama](apps-deploy.md).

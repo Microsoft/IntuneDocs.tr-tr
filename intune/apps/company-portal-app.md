@@ -45,7 +45,7 @@ Bir Kullanıcı Şirket Portalı bir iOS uygulaması yüklerken bir istem alır.
 > Azure Kamu kullanıyorsanız, bir sorunla ilgili yardım alma sürecini başlattığında bunu nasıl paylaşacağına karar vermesi için son kullanıcıya uygulama günlükleri sunulur. Ancak Azure Kamu kullanmıyorsa, kullanıcı bir sorunla ilgili yardım alma sürecini başlattığında Windows 10 için Şirket Portalı uygulama günlüklerini doğrudan Microsoft'a gönderir. Uygulama günlüklerini Microsoft'a göndermek sorunları gidermeyi ve çözmeyi kolaylaştıracaktır. 
 
 ## <a name="company-information-and-privacy-statement"></a>Şirket bilgileri ve gizlilik bildirimi
-Şirket adı, Şirket Portalı’nın başlığı olarak görüntülenir. Gizlilik bildirimini, kullanıcı gizlilik bağlantısına tıkladığında görüntülenir.
+Şirket adı, Şirket Portalı’nın başlığı olarak görüntülenir. Gizlilik bildirimi, kullanıcı gizlilik bağlantısına tıkladığında görüntülenir.
 
 | Alan adı | Uzunluk üst sınırı | Daha fazla bilgi |
 |---|---|---|

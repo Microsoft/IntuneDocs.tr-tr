@@ -29,7 +29,8 @@ ms.locfileid: "73712982"
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Artık [Apple School Manager](https://school.apple.com/) programı aracılığıyla satın alınan iOS cihazlarını Intune ile yönetebilirsiniz. Intune’u Apple School Manager ile birlikte kullanarak, çok sayıda iOS cihazını hiç dokunmadan kaydedebilirsiniz. Bir öğrenci veya öğretmen cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz yönetime kaydedilir.
+Intune'u
+ [Apple School Manager](https://school.apple.com/) programı aracılığıyla satın alınan iOS cihazlarını kaydetmek üzere ayarlayabilirsiniz. Intune’u Apple School Manager ile birlikte kullanarak, çok sayıda iOS cihazını hiç dokunmadan kaydedebilirsiniz. Bir öğrenci veya öğretmen cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz yönetime kaydedilir.
 
 Apple School Manager kaydını etkinleştirmek için Intune ve Apple School Manager portallarını kullanmanız gerekir. Cihazlarınızı, Intune ile yönetilmek üzere atayabilmeniz için seri numaraları listesi veya sipariş numarası gereklidir. Kayıt sırasında cihazlara uygulanan ayarları içeren DEP kayıt profilleri oluşturun.
 
@@ -100,7 +101,7 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
     > [!NOTE]
     > Aşağıdakilerden herhangi birini yapmak istiyorsanız, **Apple Kurulum Yardımcısı yerine Şirket Portalı ile kimliği doğrula** ayarını **Evet** değerine ayarlayın.
     >    - çok faktörlü kimlik doğrulaması kullanma
-    >    - ilk kez oturum açarken parolalarını değiştirmesi gereken kullanıcılara bunu bildirme
+    >    - parolalarını değiştirmesi gereken kullanıcılara ilk oturum açışlarında bu durumu bildirme
     >    - kayıt sırasında kullanıcılardan süresi dolmuş parolalarını sıfırlamalarını isteme
     >
     > Apple Kurulum Yardımcısı ile kimliği doğrularken bunlar desteklenmez.

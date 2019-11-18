@@ -190,7 +190,8 @@ OneDrive Admin konsolundan bulunabilecek ayarlar **Genel** ilke olarak adlandır
 
 Etkinleştirildikten sonra iOS ve Android için OneDrive ve SharePoint uygulamaları varsayılan olarak seçilen ayarlar tarafından korunur. Bir BT uzmanı bu ilkeyi Intune konsolunda düzenleyebilir ve hedeflenen başka uygulamalar ekleyebilir ve herhangi bir ilke ayarını değiştirebilir. 
 
-Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Ancak kiracı başına fazladan genel ilkeler oluşturmak için [Intune Grafik API'leri](../developer/intune-graph-apis.md) kullanılabilirse de bu önerilmez. Fazladan genel ilkeler oluşturmak, böyle bir ilkenin uygulanmasındaki sorunları gidermek karmaşık hale gelebileceği için önerilmez.
+Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Kiracı başına ek genel ilkeler oluşturmak için
+ [Intune Grafik API'lerini](../developer/intune-graph-apis.md) de kullanabilirsiniz, ancak bu önerilen bir uygulama değildir. Fazladan genel ilkeler oluşturmak, böyle bir ilkenin uygulanmasındaki sorunları gidermek karmaşık hale gelebileceği için önerilmez.
 
 **Genel** ilke kiracınızdaki tüm kullanıcılar için geçerli olsa da herhangi bir standart Intune uygulama koruma ilkesi bu ayarları geçersiz kılabilir.
 
