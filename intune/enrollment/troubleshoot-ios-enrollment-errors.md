@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 11/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.openlocfilehash: ca0702744e19c8d09533c1c0ac38356233c1d314
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74126154"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164600"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme
 
@@ -63,9 +63,53 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 1. Azure portalında oturum açın.
 2. **Diğer hizmetler**' i seçin, Intune ' u arayın ve ardından **Intune**' u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
-4. **Cihaz türü kısıtlamaları**' nın altında, ayarlamak istediğiniz kısıtlamayı seçin > **özellikleri** > **platformları seçin** > **iOS**Için **izin ver** ' i seçin ve ardından **Tamam**' a tıklayın.
+4. **Cihaz türü kısıtlamaları**' nın altında, **özellikleri** > ayarlamak istediğiniz kısıtlamayı seçin > **platformları seçin** > **iOS**Için **izin ver** ' i seçin ve ardından **Tamam**' a tıklayın.
 5. **Platformları Yapılandır**' ı seçin, kişisel IOS cihazlarına **izin ver** ' i seçin ve ardından **Tamam**' a tıklayın.
 6. Cihazı yeniden kaydedin.
+
+**Neden:** DNS 'de gerekli CNAME kayıtları yok.
+
+#### <a name="resolution"></a>Çözüm
+Şirketinizin etki alanı için CNAME DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin etki alanı contoso.com ise, DNS 'de EnterpriseEnrollment.contoso.com EnterpriseEnrollment-s.manage.microsoft.com 'e yönlendiren bir CNAME oluşturun.
+
+CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. CNAME kaydı bulunamazsa, kullanıcıların MDM sunucu adını (enrollment.manage.microsoft.com) el ile girmesi istenir.
+
+Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kaydı oluşturun. CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
+
+|TÜR|Konak adı|Şunu gösterir:|TTL|
+|------|------|------|------|
+|CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1 sa|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 sa|
+
+Şirketiniz kullanıcı kimlik bilgileri için birden fazla etki alanı kullanıyorsa, her etki alanı için bir CNAME kaydı oluşturun.
+
+> [!NOTE]
+> DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yayılıncaya kadar DNS değişikliğini Intune'da doğrulayamazsınız.
+
+**Neden:** Daha önce farklı bir kullanıcı hesabıyla kaydedilmiş bir cihazı kaydeder ve önceki Kullanıcı Intune 'dan uygun şekilde kaldırılmadı.
+
+#### <a name="resolution"></a>Çözüm
+1. Geçerli profil yüklemesini iptal edin.
+2. Safari 'de [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) açın.
+3. Cihazı yeniden kaydedin.
+
+> [!NOTE]
+> Kayıt hala başarısız olursa, Safari 'de tanımlama bilgilerini kaldırın (tanımlama bilgilerini engellemez) ve ardından cihazı yeniden kaydedin.
+
+**Neden:** Cihaz zaten başka bir MDM sağlayıcısına kayıtlı.
+
+#### <a name="resolution"></a>Çözüm
+1. İOS cihazında **ayarları** açın, **Genel > cihaz yönetimi**' ne gidin.
+2. Var olan tüm yönetim profillerini kaldırın.
+3. Cihazı yeniden kaydedin.
+
+**Neden:** Cihazı kaydetmeye çalışan kullanıcının Microsoft Intune lisansı yok.
+
+#### <a name="resolution"></a>Çözüm
+1. [Office 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **etkin kullanıcılar > Kullanıcılar**' ı seçin.
+2. Intune kullanıcı lisansı atamak istediğiniz kullanıcı hesabını seçin ve ardından **düzenle > ürün lisansları**' nı seçin.
+3. Bu kullanıcıya atamak istediğiniz lisansın konumunu **Açık** konumuna geçirin ve ardından **Kaydet**' i seçin.
+4. cihazı e-Kaydet.
 
 ### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Bu hizmet desteklenmiyor. Kayıt Ilkesi yok.
 
@@ -95,7 +139,7 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 1. [Intune yönetim portalı](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **cihazları** > **tüm cihazlar**' ı açın ve kullanıcının kaydolduğu cihaz sayısını denetleyin.
     > [!NOTE]
     > Ayrıca, etkilenen kullanıcının [Intune kullanıcı portalında](https://portal.manage.microsoft.com/) oturum açmasını ve kaydolmuş cihazları kontrol etmeniz gerekir. Intune [Kullanıcı portalında](https://portal.manage.microsoft.com/) görünen ancak [Intune yönetim portalında](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)yer alan cihazlar olabilir, bu da cihaz kayıt sınırına doğru sayılır.
-2. **Yönetim** > **mobil cihaz yönetimi** > **kayıt kuralları** > cihaz kayıt sınırını kontrol edin. Varsayılan olarak, sınır 15 olarak ayarlanır. 
+2. **Yönetim** > **mobil cihaz yönetimi** > **kayıt kuralları** ' na gidin > cihaz kayıt sınırını denetleyin. Varsayılan olarak, sınır 15 olarak ayarlanır. 
 3. Kaydedilen cihazların sayısı sınıra ulaştıysa, gereksiz cihazları kaldırın veya cihaz kayıt sınırını artırın. Kayıtlı her cihaz bir Intune lisansı kullandığından, önce gereksiz cihazları her zaman kaldırmanız önerilir.
 4. Cihazı yeniden kaydedin.
 
@@ -113,7 +157,7 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 **Neden:** Cihazı kaydetmeye çalışan kullanıcının geçerli bir Intune lisansı yok.
 
 #### <a name="resolution"></a>Çözüm
-1. [Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **Kullanıcılar** > **Etkin Kullanıcı**' yı seçin.
+1. [Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **Kullanıcılar** > **etkin kullanıcılar**' ı seçin.
 2. Etkilenen Kullanıcı hesabını > **ürün lisansları** > **Düzenle**' yi seçin.
 3. Bu kullanıcıya geçerli bir Intune lisansının atandığını doğrulayın.
 4. Cihazı yeniden kaydedin.
@@ -122,7 +166,7 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 
 **Neden:** Cihazı kaydetmeye çalışan kullanıcının geçerli bir Intune lisansı yok.
 
-1. [Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **Kullanıcılar** > **Etkin Kullanıcı**' yı seçin.
+1. [Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **Kullanıcılar** > **etkin kullanıcılar**' ı seçin.
 2. Etkilenen Kullanıcı hesabını seçin ve ardından **ürün lisansları** > **Düzenle**' yi seçin.
 3. Bu kullanıcıya geçerli bir Intune lisansının atandığını doğrulayın.
 4. Cihazı yeniden kaydedin.
@@ -186,7 +230,7 @@ Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, Intune ka
 #### <a name="resolution"></a>Çözüm
 
 1. Kayıt profilini düzenleyin. Profilde herhangi bir değişiklik yapabilirsiniz. Amaç, profilin değiştirilme saatini güncelleştirmedir.
-2. DEP ile yönetilen cihazları eşitleme: Intune portalını > **yönetici** > **mobil cihaz yönetimi** > **iOS** > **aygıt kayıt programı** > **eşitleme**' yi açın. Apple'a bir eşitleme isteği gönderilir.
+2. DEP ile yönetilen cihazları eşitleme: Intune portalını > **yönetici** > **mobil cihaz yönetimi** > **IOS** > **aygıt kayıt programı** > **Şimdi Eşitle**' ye açın. Apple'a bir eşitleme isteği gönderilir.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP kaydı kullanıcı oturum açma sırasında takıldı
 Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, kimlik bilgilerini girdikten sonra ilk kurulum açılır.

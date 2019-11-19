@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498976"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164706"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme 
 
@@ -151,7 +151,7 @@ Bulut depolama alanı gereksinimleri aşağıda belirtilmiştir:
 - Karşıya yüklediğiniz her dosya için boyut üst sınırı 8 GB’tır.
 
   > [!NOTE]
-  > Windows iş kolu (LOB) uygulamaları, uygulama başına 8 GB üst sınıra sahiptir. iOS LOB uygulamaları, uygulama başına 4 GB üst sınıra sahiptir.
+  > Win32, Windows Universal AppX, Windows Universal AppX demeti, Windows Universal MSI X ve Windows Universal MSI X demeti dahil olmak üzere Windows iş kolu (LOB) uygulamaları, uygulama başına en fazla 8 GB boyut sınırına sahiptir. İOS LOB uygulamaları dahil olmak üzere tüm diğer LOB uygulamaları, uygulama başına en fazla 2 GB boyut sınırına sahiptir.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Uygulamalar için kategorileri oluşturma ve düzenleme
 

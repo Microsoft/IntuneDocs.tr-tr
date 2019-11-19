@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b553c89704ca68ab6be261e74f1cc62ad58476ed
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713009"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164722"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
@@ -155,7 +155,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
     >
     > Apple Kurulum Yardımcısı ile kimliği doğrularken bunlar desteklenmez.
 
-6. **Kullanıcıların kimliğini doğrulamak**için **Şirket Portalı** seçtiyseniz, Şirket portalı cihaza otomatik olarak yüklemek için bir VPP belirteci kullanabilirsiniz. Bu durumda kullanıcının bir Apple Kimliği sağlamasına gerek kalmaz. VPP belirteciyle Şirket Portalı'nı yüklemek için, **VPP ile Şirket Portalı yükle**'nin altında bir belirteç seçin. Şirket Portalı VPP belirtecine zaten eklenmiş olmasını gerektirir. İlkeyi kullanıcılara gerektirecek şekilde yapılandırmayın, Intune bu kayıt profili uygulanmış cihazlara Şirket Portalı otomatik olarak yükler. Belirtecin süresinin dolmadığından ve Şirket Portalı uygulaması için yeterli cihaz lisansınız olduğundan emin olun. Belirtecin süresi dolarsa veya yeterli lisans yoksa, Intune bunun yerine App Store Şirket Portalı’nı yükler ve Apple Kimliği ister. 
+6. **Kullanıcıların kimliğini doğrulamak**için **Şirket Portalı** seçtiyseniz, Şirket portalı cihaza otomatik olarak yüklemek için bir VPP belirteci kullanabilirsiniz. Bu durumda kullanıcının bir Apple Kimliği sağlamasına gerek kalmaz. VPP belirteciyle Şirket Portalı'nı yüklemek için, **VPP ile Şirket Portalı yükle**'nin altında bir belirteç seçin. Şirket Portalı VPP belirtecine zaten eklenmiş olmasını gerektirir. Şirket Portalı uygulamasının kayıt sonrasında güncellenmeye devam etmesini sağlamak için, Intune 'da (Intune > Istemci uygulamaları) bir uygulama dağıtımı yapılandırdığınızdan emin olun. Kullanıcı etkileşimi gerekli olmadığından, büyük olasılıkla bir iOS VPP uygulaması olarak Şirket Portalı olması, gerekli bir uygulamayı yapmanız ve atama için cihaz lisansını kullanmanız gerekecektir. Belirtecin süresinin dolmadığından ve Şirket Portalı uygulaması için yeterli cihaz lisansınız olduğundan emin olun. Belirtecin süresi dolarsa veya yeterli lisans yoksa, Intune bunun yerine App Store Şirket Portalı’nı yükler ve Apple Kimliği ister. 
 
     > [!NOTE]
     > **Kullanıcıların kimlik doğrulaması yapması gereken yeri seçin** **Şirket portalı**, cihaz kayıt IŞLEMININ, Şirket portalının DEP cihazına indirilmekte olan ilk 24 saat içinde gerçekleştirildiğinden emin olun. Aksi takdirde kayıt başarısız olabilir ve cihazı kaydetmek için bir fabrika sıfırlaması gerekecektir.

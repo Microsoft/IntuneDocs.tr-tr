@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
+ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502457"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161598"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro ile yönetilen Mac bilgisayarları üzerinde uyumluluğu zorla
 
@@ -37,12 +37,11 @@ Bu makaledeki yordamlar hem Intune hem de JAMF Pro konsollarına erişim gerekti
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Intune'da cihaz uyumu politikaları oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz uyumluluğu** > **ilkeleri**' ne gidin. 
-2. Daha önce oluşturulmuş bir ilke kullanıyorsanız, konsolda Bu ilkeyi seçin ve sonra bu yordamın sonraki adımına gidin.  
-   
-   **Ilke oluştur** ' u seçin ve ardından **MacOS** *platformuyla* bir ilkenin ayrıntılarını belirtin. Kurumsal gereksinimlerinizi karşılamak için *uyumsuzluk Için* *ayarları* ve eylemleri yapılandırın ve ardından ilkeyi kaydetmek için **Oluştur** ' u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-3. İlkelere *genel bakış* bölmesinde **atamalar**' ı seçin. Bu ilkeyi hangi Azure Active Directory (Azure AD) kullanıcılarının ve güvenlik gruplarının alacağını yapılandırmak için kullanılabilir seçenekleri kullanın. Intune ile JAMF tümleştirmesi, cihaz gruplarını hedefleyen Uyumluluk ilkesini desteklemez. 
+2. **Uyumluluk ilkeleri** > **cihazları** seçin. Daha önce oluşturulmuş bir ilke kullanıyorsanız, konsolda Bu ilkeyi seçin ve sonra bu yordamın sonraki adımına gidin. Yeni bir ilke oluşturmak için, **Ilke oluştur** ' u seçin ve ardından **MacOS** *platformuyla* bir ilkenin ayrıntılarını belirtin. Kurumsal gereksinimlerinizi karşılamak için *uyumsuzluk Için* *ayarları* ve eylemleri yapılandırın ve ardından ilkeyi kaydetmek için **Oluştur** ' u seçin.
+
+3. İlkelere *genel bakış* bölmesinde **atamalar**' ı seçin. Bu ilkeyi hangi Azure Active Directory (Azure AD) kullanıcılarının ve güvenlik gruplarının alacağını yapılandırmak için kullanılabilir seçenekleri kullanın. Intune ile JAMF tümleştirmesi, cihaz gruplarını hedefleyen Uyumluluk ilkesini desteklemez.
 
 4. **Kaydet**' i seçtiğinizde, ilke kullanıcılara dağıtılır.  
 
@@ -103,7 +102,7 @@ Cihaz kaydı, bir cihaz kullanıcısının JAMF Self Service içinden Intune Şi
 
 JAMF Pro ve Microsoft Intune arasındaki iletişimin başarılı olduğunu onaylamak için JAMF Pro konsolunu kullanın. 
 
-- JAMF Pro 'da **ayarlar** > **küresel yönetim** > **Microsoft Intune tümleştirmesi**' ne gidin ve ardından **Test**' i seçin. 
+- JAMF Pro 'da **ayarlar** > **genel yönetim** > **Microsoft Intune tümleştirme**' e gidin ve ardından **Test**' i seçin.
 
     Konsol, bağlantının başarılı veya başarısız olduğunu belirten bir ileti görüntüler.  
 
@@ -112,7 +111,7 @@ JAMF Pro konsolundaki bağlantı testi başarısız olursa, JAMF yapılandırmas
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Jamf ile yönetilen bir cihazı Intune’dan kaldırma
 
-**Tüm cihazlar** görünümünde **Sil**’i seçerek Jamf tarafından yönetilen bir cihazı Intune konsolundan kaldırabilirsiniz. Toplu cihaz silme işlemi birden çok cihaz seçip **Sil**’e tıklayarak etkinleştirilebilir.
+JAMF ile yönetilen bir cihazı kaldırmak için Microsoft Endpoint Manager yönetim merkezini açın ve **cihazlar** > **tüm cihazlar**' ı seçin, cihazı seçin ve ardından **Sil**' i seçin.  Toplu cihaz silme işlemi birden çok cihaz seçip **Sil**’e tıklayarak etkinleştirilebilir.
 
 JAMF [Pro belgelerinden JAMF ile yönetilen bir cihazı kaldırma](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)hakkında bilgi alın. Ek Yardım için [JAMF desteğiyle](https://www.jamf.com/support/) bir destek bileti de oluşturabilirsiniz. 
 

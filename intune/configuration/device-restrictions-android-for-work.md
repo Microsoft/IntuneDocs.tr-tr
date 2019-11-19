@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 33f7c2aa6d6575dd4ebf4d3cd772bb7f02472578
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143031"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164533"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Android kurumsal cihaz ayarları
 
@@ -57,7 +57,7 @@ Bu makale, Android kurumsal cihazlarda denetleyebilmeniz için farklı ayarları
 - **NFC kullanarak Kirme verileri**: uygulamalardan gelen verileri Kirmek Için yakın alan ILETIŞIMI (NFC) teknolojisini kullanmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazlar arasında veri paylaşmak için NFC 'nin kullanılmasına izin verir.
 - **Hata ayıklama özellikleri**: kullanıcıların cihazdaki hata ayıklama özelliklerini kullanmasına izin vermek Için **izin ver** ' i seçin. **Yapılandırılmadı** , kullanıcıların cihazdaki hata ayıklama özelliklerini kullanmalarını önler.
 - **Mikrofon ayarlaması**: kullanıcıların mikrofonu kapatıp mikrofon sesini ayarlamasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının cihazdaki mikrofonun hacmini kullanmasına ve ayarlamasına izin verir.
-- **Fabrika Sıfırlaması koruma e-postaları**: **Google hesabı e-posta adreslerini**seçin. Temizlenmeden sonra cihazın kilidini açabilebilen cihaz yöneticilerinin e-posta adreslerini girin. E-posta adreslerini `admin1@gmail.com;admin2@gmail.com` gibi noktalı virgülle ayırdığınızdan emin olun. E-posta girilmemişse, fabrika ayarlarına geri yüklendikten sonra herkes cihazın kilidini açabilir. Bu e-postalar yalnızca, Kurtarma menüsünü kullanarak Fabrika Sıfırlaması çalıştırma gibi kullanıcı olmayan bir fabrika sıfırlaması çalıştırıldığında geçerlidir.
+- **Fabrika Sıfırlaması koruma e-postaları**: **Google hesabı e-posta adreslerini**seçin. Temizlenmeden sonra cihazın kilidini açabilebilen cihaz yöneticilerinin e-posta adreslerini girin. E-posta adreslerini `admin1@gmail.com;admin2@gmail.com`gibi noktalı virgülle ayırdığınızdan emin olun. E-posta girilmemişse, fabrika ayarlarına geri yüklendikten sonra herkes cihazın kilidini açabilir. Bu e-postalar yalnızca, Kurtarma menüsünü kullanarak Fabrika Sıfırlaması çalıştırma gibi kullanıcı olmayan bir fabrika sıfırlaması çalıştırıldığında geçerlidir.
 - **Ağ çıkış taraması**: kullanıcıların ağ çıkış tarama özelliğini etkinleştirmesine izin vermek için **Etkinleştir** ' i seçin. Cihaz önyüklendiğinde bir ağ bağlantısı yapılmazsa, çıkış taraması geçici olarak bir ağa bağlanmayı ve cihaz ilkesini yenilemeyi ister. Bu ilke uygulandıktan sonra geçici ağ unutulur ve cihaz önyüklemeye devam eder. Bu özellik aşağıdaki durumlarda cihazları bir ağa bağlar:
   - Son ilkede uygun bir ağ yok.
   - Cihaz, kilit görevi modunda bir uygulamada önyüklenir.
@@ -158,7 +158,7 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 
       Bir URL girmezseniz, varsayılan bir görüntü varsa cihazın varsayılan görüntüsü kullanılır.
 
-    - **Cihazın ekranı kapatmadan önce ekran koruyucuyu gösterdiği saniye sayısı**: cihazın ekran koruyucuyu ne kadar süreyle gösterdüğüne seçin. 0-9999999 saniye arasında bir değer girin. Varsayılan değer `0` saniyedir. Boş bırakıldığında veya sıfıra (`0`) ayarlandığında, Kullanıcı cihazla etkileşime gelene kadar ekran koruyucusu etkin olur.
+    - **Cihazın ekranı kapatmadan önce ekran koruyucuyu gösterdiği saniye sayısı**: cihazın ekran koruyucuyu ne kadar süreyle gösterdüğüne seçin. 0-9999999 saniye arasında bir değer girin. Varsayılan değer `0` saniyedir. Boş bırakıldığında veya sıfır (`0`) olarak ayarlandığında, Kullanıcı cihazla etkileşime gelinceye kadar ekran koruyucusu etkin olur.
     - **Ekran koruyucuyu göstermeden önce cihazın etkin olmadığı saniye sayısı**: ekran koruyucuyu göstermeden önce cihazın ne kadar süreyle boşta kalacağını seçin. 1-9999999 saniye arasında bir değer girin. Varsayılan değer `30` saniyedir. Sıfırdan büyük bir sayı girmeniz gerekir (`0`).
     - **Ekran koruyucuyu başlatmadan önce medyayı Algıla**: cihazda ses veya video yürütülıyorsa, **Etkinleştir** (varsayılan) ekran koruyucuyu göstermez. **Yapılandırılmadı** , ses veya video oynatılsa bile ekran koruyucuyu gösterir.
 
@@ -184,7 +184,7 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
     - **Gereken küçük harfli karakter sayısı**: parolanın, 0 ile 16 karakter arasında olması gereken küçük harfli karakter sayısını girin.
     - **Gerekli olan büyük harfli karakter sayısı**: parolanın, 0 ile 16 karakter arasında olması gereken büyük harfli karakter sayısını girin.
     - **Gerekli harf olmayan karakter sayısı**: parolanın, 0 ile 16 karakter arasında olması gereken harf olmayan karakter sayısını (alfabedeki harfler dışında bir şey) girin.
-    - **Gerekli sayısal karakter sayısı**: parolanın 0 ile 16 karakter arasında olması gereken sayısal karakter sayısını (`1`, `2`, `3` vb.) girin.
+    - **Gerekli sayısal karakter sayısı**: parolanın 0 ile 16 karakter arasında olması gereken sayısal karakter sayısını (`1`, `2`, `3`vb.) girin.
     - **Gerekli simge karakter sayısı**: parolanın 0 ile 16 karakter arasında olması gereken simge karakterlerinin (`&`, `#`, `%`vb.) sayısını girin.
 
 - **Parolanın süresi dolana kadar geçen gün sayısı**: cihaz parolasının değiştirilmesi gereken gün sayısını, 1-365 arasında girin. Örneğin parolanın 60 gün sonra değiştirilmesi için `60` girin. Parola geçerlilik süresi dolduğunda kullanıcıların yeni bir parola oluşturması istenir.
@@ -342,7 +342,7 @@ Bu parola ayarları, bir iş profili kullanan cihazlardaki kişisel profiller i�
 - **Uygulamalarda tehdit taraması**: **gerekli** , Iş ve kişisel profillerde **uygulamaları doğrula** ayarının etkinleştirilmesini zorunlu kılar.
 
    > [!Note]
-   > Bu ayar yalnızca Android O ve üstü cihazlarda çalışır.
+   > Bu ayar yalnızca Android 8 (Oreo) ve üzeri cihazlar için geçerlidir.
 
 - **Kişisel profilde bilinmeyen kaynaklardan uygulama yüklemelerini engelleyin**: tasarım, Android kurumsal iş profili cihazları Play Store dışındaki kaynaklardan uygulama yükleyemez. Doğası gereği, iş profili cihazlarının çift profil olması amaçlanmıştır:
 

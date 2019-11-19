@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a757da6cf4f4a2a3bde907f0025d4a08a52131b
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059648"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164574"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Kılavuzlu senaryo-bulutta yönetilen modern masaüstü
 
@@ -33,7 +33,7 @@ Bulutta yönetilen bir modern masaüstünü kendi kuruluşunuzda değerlendirmek
 
 ## <a name="prerequisites"></a>Önkoşullar
 - [MDM yetkilisini Intune olarak ayarlama](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) -mobil cihaz YÖNETIMI (MDM) yetkilisi ayarı, cihazlarınızı nasıl yöneteceğinizi belirler. Kullanıcıların yönetilmek üzere cihaz kaydedebilmeleri için, BT yöneticisi olarak bir MDM yetkilisi ayarlamanız gerekir.
-- M356 E3 en düşük (veya en iyi güvenlik için M365 E5)
+- M365 E3 en düşük (veya en iyi güvenlik için M365 E5)
 - Windows 10 1903 cihazı (en iyi Son Kullanıcı deneyimi için Windows Autopilot ile kaydedilir)
 - Bu Kılavuzlu senaryoyu gerçekleştirmek için Intune yönetici izinleri gereklidir:
   - Cihaz yapılandırması okuma, oluşturma, silme, atama ve güncelleştirme

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,111 +17,117 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2fd5f686e837194af2672b4ad864590a49ec0cd1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ce5db670f0084626f1c053b64679623ccf28eb21
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502339"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164614"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini kullanma  
 
-Cihazlarda verileri korumak üzere yerleşik bir diski veya sürücü şifrelemeyi yönetmek için Intune 'U kullanın.  
+Cihazlarda verileri korumak üzere yerleşik bir diski veya sürücü şifrelemeyi yönetmek için Intune 'U kullanın.
 
-Uç nokta koruma için cihaz yapılandırma profilinin bir parçası olarak disk şifrelemeyi yapılandırın. Intune tarafından aşağıdaki platformlar ve şifreleme teknolojileri desteklenir:  
-- macOS: Filekasası   
-- Windows 10 ve üzeri: BitLocker  
+Uç nokta koruma için cihaz yapılandırma profilinin bir parçası olarak disk şifrelemeyi yapılandırın. Intune tarafından aşağıdaki platformlar ve şifreleme teknolojileri desteklenir:
 
-Intune Ayrıca, tüm yönetilen cihazlarınızda cihazların şifreleme durumu hakkında ayrıntılı bilgiler sunan yerleşik bir [şifreleme raporu](encryption-monitor.md) sağlar.  
+- macOS: Filekasası
+- Windows 10 ve üzeri: BitLocker
 
-## <a name="filevault-encryption-for-macos"></a>MacOS için dosya Kasası şifrelemesi  
+Intune Ayrıca, tüm yönetilen cihazlarınızda cihazların şifreleme durumu hakkında ayrıntılı bilgiler sunan yerleşik bir [şifreleme raporu](encryption-monitor.md) sağlar.
 
-MacOS çalıştıran cihazlarda Filekasadisk şifrelemesini yapılandırmak için Intune 'U kullanın. Daha sonra, bu cihazların şifreleme ayrıntılarını görüntülemek ve Filekasasına şifrelenmiş cihazların kurtarma anahtarlarını yönetmek için Intune şifreleme raporunu kullanın.  
+## <a name="filevault-encryption-for-macos"></a>MacOS için dosya Kasası şifrelemesi
 
-Filekasası, macOS ile birlikte gelen bir tam disk şifreleme programıdır. **MacOS 10,13 veya üstünü**çalıştıran cihazlarda dosya kasasını yapılandırmak Için Intune 'u kullanabilirsiniz.  
+MacOS çalıştıran cihazlarda Filekasadisk şifrelemesini yapılandırmak için Intune 'U kullanın. Daha sonra, bu cihazların şifreleme ayrıntılarını görüntülemek ve Filekasasına şifrelenmiş cihazların kurtarma anahtarlarını yönetmek için Intune şifreleme raporunu kullanın.
 
-Filekasasını yapılandırmak için, macOS platformu için Endpoint Protection için bir [cihaz yapılandırma profili](../configuration/device-profile-create.md) oluşturun. Filekasası ayarları, macOS Endpoint Protection için kullanılabilir ayar kategorilerinden biridir.  
+Filekasası, macOS ile birlikte gelen bir tam disk şifreleme programıdır. **MacOS 10,13 veya üstünü**çalıştıran cihazlarda dosya kasasını yapılandırmak Için Intune 'u kullanabilirsiniz.
+
+Filekasasını yapılandırmak için, macOS platformu için Endpoint Protection için bir [cihaz yapılandırma profili](../configuration/device-profile-create.md) oluşturun. Filekasası ayarları, macOS Endpoint Protection için kullanılabilir ayar kategorilerinden biridir.
 
 Cihazları dosya kasası ile şifrelemek için bir ilke oluşturduktan sonra, ilke iki aşamada cihazlara uygulanır. İlk olarak cihaz, Intune 'un kurtarma anahtarını alıp yedeklemesini sağlamak için hazır hale getirilir. Bu, Emanet olarak adlandırılır. Anahtar alındıktan sonra, disk şifrelemesi başlayabilir.
 
 ![Dosya Kasası ayarları](./media/encrypt-devices/filevault-settings.png)
 
-Intune ile yönetebileceğiniz Filekasası ayarı hakkında ayrıntılı bilgi için bkz. macOS Endpoint Protection ayarları için Intune makalesindeki [filekasası](endpoint-protection-macos.md#filevault) .  
+Intune ile yönetebileceğiniz Filekasası ayarı hakkında ayrıntılı bilgi için bkz. macOS Endpoint Protection ayarları için Intune makalesindeki [filekasası](endpoint-protection-macos.md#filevault) .
 
-### <a name="how-to-configure-macos-filevault"></a>MacOS Filekasasını yapılandırma 
+### <a name="how-to-configure-macos-filevault"></a>MacOS Filekasasını yapılandırma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz yapılandırması** > **profiller** > **Profil oluştur**' a gidin.  
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Aşağıdaki seçenekleri ayarlayın:  
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 
-   - Platform: macOS  
-   - Profil türü: Endpoint Protection  
+3. Aşağıdaki seçenekleri ayarlayın:
 
-3. @No__t-1**Dosya kasasında** **Ayarlar**' ı seçin.  
+   - Platform: macOS
+   - Profil türü: Endpoint Protection
 
-4. *Filekasası*için **Etkinleştir**' i seçin.  
+4. **Dosya kasası** > **ayarları** ' nı seçin.
 
-5. *Kurtarma anahtarı türü*Için yalnızca **kişisel anahtar** desteklenir.  
+5. *Filekasası*için **Etkinleştir**' i seçin.
 
-   Son kullanıcılara cihazlarıyla ilgili kurtarma anahtarını alma hakkında yardım almak için bir ileti eklemeyi düşünün. Bu bilgiler, kişisel kurtarma anahtarı döndürme ayarını kullandığınızda son kullanıcılarınız için yararlı olabilir. Bu, düzenli aralıklarla bir cihaz için otomatik olarak yeni bir kurtarma anahtarı üretebilirler.  
+6. *Kurtarma anahtarı türü*Için yalnızca **kişisel anahtar** desteklenir.
+
+   Son kullanıcılara cihazlarıyla ilgili kurtarma anahtarını alma hakkında yardım almak için bir ileti eklemeyi düşünün. Bu bilgiler, kişisel kurtarma anahtarı döndürme ayarını kullandığınızda son kullanıcılarınız için yararlı olabilir. Bu, düzenli aralıklarla bir cihaz için otomatik olarak yeni bir kurtarma anahtarı üretebilirler.
 
    Örneğin: kayıp veya son döndürülen kurtarma anahtarını almak Için herhangi bir cihazdan Intune Şirket Portalı Web sitesinde oturum açın. Portalda *cihazlar* ' a gidin ve filekasasının etkinleştirildiği cihazı seçin ve ardından *Kurtarma anahtarını al*' ı seçin. Geçerli kurtarma anahtarı görüntülenir.  
 
-6. Kalan [Filekasası ayarlarını](endpoint-protection-macos.md#filevault) iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.  
+7. Kalan [Filekasası ayarlarını](endpoint-protection-macos.md#filevault) iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.
 
-   > [!IMPORTANT]  
+   > [!IMPORTANT]
    > **Oturumu kapatma Isteminde devre dışı bırak** ayarı *Etkinleştir*olarak ayarlandığında bilinen bir sorun vardır. *Enable*olarak ayarlandığında, **atlamaya izin verilen sayısı** ayarı bir değere ayarlanmalıdır ve *yapılandırılmamış*olarak ayarlanmamalıdır. *Yapılandırılmadı*olarak ayarlanırsa, profil cihazda başarısız olur. Bu senaryoda cihaz, daha fazla ayrıntı olmadan **profil durumu özetini** **hata** olarak bildirir.
-   > 
-   > **Oturumu kapatma sırasında Istemi devre dışı bırak** ayarı *Yapılandırılmadı*olarak ayarlandığında, **atlamaya izin verilen zaman sayısı** *yapılandırılmaz* veya bir değere sahip olabilir.  
-   > 
-   > Bu sorun, gelecekteki bir güncelleştirmede çözümlenir. 
+   >
+   > **Oturumu kapatma sırasında Istemi devre dışı bırak** ayarı *Yapılandırılmadı*olarak ayarlandığında, **atlamaya izin verilen zaman sayısı** *yapılandırılmaz* veya bir değere sahip olabilir.
+   >
+   > Bu sorun, gelecekteki bir güncelleştirmede çözümlenir.
 
-7. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.  
+8. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.  
 
-### <a name="manage-filevault"></a>Dosya kasasını yönetme  
+### <a name="manage-filevault"></a>Dosya kasasını yönetme
 
-Intune, bir macOS cihazını Filekasasıyla şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken filekasasını kurtarma anahtarlarını görüntüleyebilir ve yönetebilirsiniz.  
+Intune, bir macOS cihazını Filekasasıyla şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken filekasasını kurtarma anahtarlarını görüntüleyebilir ve yönetebilirsiniz.
 
-Intune bir macOS cihazını Filekasasıyla şifreledikten sonra, bu cihazın kişisel kurtarma anahtarını herhangi bir cihazdaki Web Şirket Portalı görüntüleyebilirsiniz. Web Şirket Portalı bir kez, şifrelenen macOS cihazını seçin ve ardından "kurtarma anahtarını al" seçeneğini bir uzak cihaz eylemi olarak belirleyin. 
+Intune bir macOS cihazını Filekasasıyla şifreledikten sonra, bu cihazın kişisel kurtarma anahtarını herhangi bir cihazdaki Web Şirket Portalı görüntüleyebilirsiniz. Web Şirket Portalı bir kez, şifrelenen macOS cihazını seçin ve ardından "kurtarma anahtarını al" seçeneğini bir uzak cihaz eylemi olarak belirleyin.
 
-## <a name="bitlocker-encryption-for-windows-10"></a>Windows 10 için BitLocker şifrelemesi  
+## <a name="bitlocker-encryption-for-windows-10"></a>Windows 10 için BitLocker şifrelemesi
 
-Windows 10 çalıştıran cihazlarda BitLocker Sürücü Şifrelemesi yapılandırmak için Intune 'u kullanın. Ardından, bu cihazların şifreleme ayrıntılarını görüntülemek için Intune şifreleme raporunu kullanın. Ayrıca, Azure Active Directory (Azure AD) içinde bulunan ve cihazlarınızdan BitLocker için önemli bilgilere erişebilirsiniz.  
+Windows 10 çalıştıran cihazlarda BitLocker Sürücü Şifrelemesi yapılandırmak için Intune 'u kullanın. Ardından, bu cihazların şifreleme ayrıntılarını görüntülemek için Intune şifreleme raporunu kullanın. Ayrıca, Azure Active Directory (Azure AD) içinde bulunan ve cihazlarınızdan BitLocker için önemli bilgilere erişebilirsiniz.
 
-BitLocker, **Windows 10 veya üzerini**çalıştıran cihazlarda kullanılabilir.  
+BitLocker, **Windows 10 veya üzerini**çalıştıran cihazlarda kullanılabilir.
 
-Windows 10 veya sonraki bir platformda Endpoint Protection için bir [cihaz yapılandırma profili](../configuration/device-profile-create.md) oluşturduğunuzda BitLocker 'ı yapılandırın. BitLocker ayarları, Windows 10 Endpoint Protection için Windows şifreleme ayarları kategorisinde bulunur.    
+Windows 10 veya sonraki bir platformda Endpoint Protection için bir [cihaz yapılandırma profili](../configuration/device-profile-create.md) oluşturduğunuzda BitLocker 'ı yapılandırın. BitLocker ayarları, Windows 10 Endpoint Protection için Windows şifreleme ayarları kategorisinde bulunur.
 
-![BitLocker ayarları](./media/encrypt-devices/bitlocker-settings.png) 
+![BitLocker ayarları](./media/encrypt-devices/bitlocker-settings.png)
 
-### <a name="how-to-configure-windows-10-bitlocker"></a>Windows 10 BitLocker 'ı yapılandırma  
+### <a name="how-to-configure-windows-10-bitlocker"></a>Windows 10 BitLocker 'ı yapılandırma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve profil oluştur > cihaz yapılandırma > Profiller ' e gidin.  
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Aşağıdaki seçenekleri ayarlayın:  
-   - Platform: Windows 10 ve üzeri  
-   - Profil türü: Endpoint Protection  
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 
-3. @No__t-1**Windows şifrelemesi** **ayarlarını**seçin.
+3. Aşağıdaki seçenekleri ayarlayın:
 
-4. BitLocker ayarlarını iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.  
+   - Platform: Windows 10 ve üzeri
+   - Profil türü: Endpoint Protection
 
-5. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.  
+4. **Windows şifrelemesi** > **Ayarlar** ' ı seçin.
+
+5. BitLocker ayarlarını iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.
+
+6. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.
 
 ### <a name="manage-bitlocker"></a>BitLocker 'ı yönetme  
 
-Intune bir Windows 10 cihazını BitLocker ile şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken BitLocker kurtarma anahtarlarını görüntüleyebilir ve alabilirsiniz.  
+Intune bir Windows 10 cihazını BitLocker ile şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken BitLocker kurtarma anahtarlarını görüntüleyebilir ve alabilirsiniz.
 
-## <a name="next-steps"></a>Sonraki adımlar  
+## <a name="next-steps"></a>Sonraki adımlar
 
-[Cihaz uyumluluk](compliance-policy-create-windows.md) ilkesi oluşturma  
+[Cihaz uyumluluk](compliance-policy-create-windows.md) ilkesi oluşturma
 
-Yönetmek için şifreleme raporunu kullanın:  
+Yönetmek için şifreleme raporunu kullanın:
+
 - [BitLocker kurtarma anahtarları](encryption-monitor.md#bitlocker-recovery-keys)
 - [Filekasası kurtarma anahtarları](encryption-monitor.md#filevault-recovery-keys)
 
-Intune ile yapılandırabileceğiniz şifreleme ayarlarını inceleyerek şunları yapabilirsiniz:  
-- [Kurulumu](endpoint-protection-windows-10.md#windows-encryption)  
-- [FileVault](endpoint-protection-macos.md#filevault)  
- 
- 
+Intune ile yapılandırabileceğiniz şifreleme ayarlarını inceleyerek şunları yapabilirsiniz:
+
+- [Kurulumu](endpoint-protection-windows-10.md#windows-encryption)
+- [FileVault](endpoint-protection-macos.md#filevault)
