@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure’da İş İçin Windows Update’i yapılandırma | Microsoft Docs
-description: Windows 10 cihazlarda Microsoft Intune kullanarak İş İçin Windows Update ayarlarında bir güncelleştirme halkası oluşturmak, uyumluluğu gözden geçirmek ve güncelleştirmeleri duraklatmak için bir profildeki Yazılım Güncelleştirme ayarlarını güncelleştirin.
+description: Manage Windows 10 Software Updates by using update rings and feature updates policy. You can review compliance, and  pause update installation with Windows Update for Business settings using Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,188 +15,245 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d34e44c6e046ddbc9b47bbe90900f5992df9e85
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584541"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199324"
 ---
-# <a name="manage-software-updates-in-intune"></a>Intune’da yazılım güncelleştirmelerini yönetme
+# <a name="manage-windows-10-software-updates-in-intune"></a>Manage Windows 10 software updates in Intune
 
-Windows 10 cihazlarınızı bir hizmet olarak Windows 'un nasıl ve ne zaman güncelleştirçalıştığını belirten güncelleştirme halkalarını tanımlamak için Intune 'U kullanın. Güncelleştirme halkaları, cihaz gruplarına atadığınız ilkeleridir. Güncelleştirme kademelerini kullanarak işletmenizin ihtiyaçlarına uygun bir güncelleştirme stratejisi oluşturabilirsiniz. Daha fazla bilgi için bkz. [İşletmeler için Windows Update'i kullanarak güncelleştirmeleri yönetme](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
+Use Intune to manage the install of Windows 10 software updates from Windows Update for Business.
 
-Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. En son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
+İş İçin Windows Update kullanarak güncelleştirme yönetimi deneyimini basitleştirirsiniz. Cihaz grupları için ayrı ayrı güncelleştirmeleri onaylamanız gerekmez. Bir güncelleştirmeyi piyasaya sunma stratejisi yapılandırarak ortamlarınızda riskleri yönetebilirsiniz. Intune provides the ability to [configure update settings](windows-update-settings.md) on devices and gives you the ability to defer update installation. You can also prevent devices from installing features from new Windows versions to help keep them stable, while allowing those devices to continue installing updates for quality and security.
 
+Intune stores only the update policy assignments, not the updates themselves. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir.
 
-İş İçin Windows Update kullanarak güncelleştirme yönetimi deneyimini basitleştirirsiniz. Cihaz grupları için ayrı ayrı güncelleştirmeleri onaylamanız gerekmez. Bir güncelleştirmeyi piyasaya sunma stratejisi yapılandırarak ortamlarınızda riskleri yönetebilirsiniz. Intune, cihazlarda [güncelleştirme ayarlarını yapılandırma](../windows-update-settings.md) ve güncelleştirme yüklemesini erteleme olanağı sağlar. Intune, güncelleştirmeleri değil yalnızca güncelleştirme ilkesi atamalarını depolar. Cihazlar, güncelleştirmeler için doğrudan Windows Update’e erişir. Windows 10 güncelleştirmelerinin yüklendiği zaman yapılandıran Bu ayar koleksiyonu, *Windows 10 güncelleştirme halkası*olarak adlandırılır.
+Intune provides the following policy types to manage updates:
 
-Windows 10 güncelleştirme halkaları [kapsam etiketlerini](../fundamentals/scope-tags.md)destekler. Kullandığınız yapılandırmaların kümelerini filtrelemenize ve yönetmenize yardımcı olması için kapsam etiketlerini güncelleştirme halkalarıyla birlikte kullanabilirsiniz.
+- **Windows 10 update ring**: This policy is a collection of settings that configures when Windows 10 updates get installed.
 
-## <a name="prerequisites"></a>Önkoşullar  
+- **Windows 10 feature updates (public preview)** : This policy brings devices to the Windows version you specify and freezes the feature set on those devices until you choose to update them to a later Windows version.  While the feature version remains static, devices can continue to install quality and security updates that are available for their feature version.
 
-Intune 'da Windows 10 cihazları için Windows güncelleştirmelerini kullanmak üzere aşağıdaki önkoşulların karşılanması gerekir.  
+You assign policies for Windows 10 update rings and Windows 10 feature updates to groups of devices. You can use both policy types in the same Intune environment to manage software updates for your Windows 10 devices and to create an update strategy that mirrors your business needs.
 
-- Windows 10 bilgisayarları, Windows yıldönümü güncelleştirmesi veya sonraki sürümüyle en az Windows 10 Pro çalıştırmalıdır (sürüm 1607 veya üzeri)
-- Windows Update aşağıdaki Windows 10 sürümlerini destekler:
+Daha fazla bilgi için bkz. [İşletmeler için Windows Update'i kullanarak güncelleştirmeleri yönetme](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
+
+## <a name="prerequisites"></a>Önkoşullar
+
+The following prerequisites must be met to use Windows updates for Windows 10 devices in Intune.
+
+- Windows 10 PCs must run the following Windows 10 versions:
+  - **Windows 10 update rings**: version 1607 or later
+  - **Windows 10 feature updates**: version 1703 or later
+
+- Windows Update supports the following Windows 10 editions:
   - Windows 10
-  - Windows 10 Team (Surface Hub cihazları için)
-  - Windows 10 Holographic for Business  
+  - Windows 10 Team - for Surface Hub devices (doesn't support *Windows 10 feature updates*)
+  - Windows 10 Holographic for Business
 
-    Windows holographic for Business, aşağıdakiler dahil olmak üzere Windows güncelleştirmeleri için bir ayar alt kümesini destekler:
+    Windows Holographic for Business supports a subset of settings for Windows updates, including:
     - **Otomatik güncelleştirme davranışı**
     - **Microsoft ürün güncelleştirmeleri**
-    - **Bakım kanalı**: **yarı yıllık kanal** ve **yarı yıllık kanal (hedeflenen)** seçeneklerini destekler. Daha fazla bilgi için bkz. [Windows holographic 'ı yönetme](../fundamentals/windows-holographic-for-business.md).  
+    - **Servicing channel**: Supports **Semi-annual channel** and **Semi-annual channel (Targeted)** options. For more information, see [Manage Windows Holographic](../fundamentals/windows-holographic-for-business.md).
 
-    > [!NOTE]  
-    > **Desteklenmeyen sürümler ve sürümler**:
-    > - Windows 10 Mobile  
-    > - Windows 10 Enterprise LTSC. Windows Update for Business (WUfB) Şu anda *uzun süreli hizmet kanalı* sürümlerini desteklememektedir. WSUS veya Configuration Manager gibi alternatif düzeltme eki uygulama yöntemlerini kullanmayı planlayın.  
+  > [!NOTE]
+  > **Unsupported versions and editions**:
+  > - Windows 10 Mobile  
+  > - Windows 10 Enterprise LTSC. Windows Update for Business (WUfB) does not currently support *Long Term Service Channel* releases. Plan to use alternative patching methods, like WSUS or Configuration Manager.
 
-- Windows cihazlarında **geri bildirim & tanılama** > **Tanılama ve kullanım verileri** **temel**, **Gelişmiş**veya **tam**olarak ayarlanmalıdır.  
+- On Windows devices, **Feedback & diagnostics** > **Diagnostic and usage data** must be set to **Basic**, **Enhanced**, or **Full**.  
 
-  Windows 10 cihazları için *Tanılama ve kullanım verileri* ayarını el ile yapılandırabilir veya Windows 10 ve üzeri Için bir Intune cihaz kısıtlama profili kullanabilirsiniz. Bir cihaz kısıtlama profili kullanıyorsanız, **kullanım verilerini paylaşma** [cihaz kısıtlama ayarını](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) en az **temel**olarak ayarlayın. Bu ayar, Windows 10 veya üzeri için bir cihaz kısıtlama ilkesi yapılandırdığınızda **Raporlama ve telemetri** kategorisi altında bulunur.
+  You can configure the *Diagnostic and usage data* setting for Windows 10 devices manually or use an Intune device restriction profile for Windows 10 and later. If you use a device restriction profile, set the [device restriction setting](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) of **Share usage data** to at least **Basic**. This setting is found under the  **Reporting and Telemetry** category when you configure a device restriction policy for Windows 10 or later.
 
-  Cihaz profilleri hakkında daha fazla bilgi için bkz. [cihaz kısıtlama ayarlarını yapılandırma](../configuration/device-restrictions-configure.md).  
+  Cihaz profilleri hakkında daha fazla bilgi için bkz. [cihaz kısıtlama ayarlarını yapılandırma](../configuration/device-restrictions-configure.md).
 
-- Klasik Azure portalını kullanıyorsanız, [ayarlarınızı Azure Portal geçirin](#migrate-update-settings-to-the-azure-portal).  
-
-
-## <a name="create-and-assign-update-rings"></a>Güncelleştirme halkaları oluşturma ve atama
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve ardından**Windows 10 güncelleştirme halkalarını** ** >   > ** **Oluştur**' u seçin.  
-
-2. Temel bilgiler sekmesinde bir ad, açıklama (isteğe bağlı) belirtin ve ardından **İleri**' yi seçin.  
-
-   ![Windows 10 güncelleştirme halkası iş akışı oluşturma](./media/windows-update-for-business-configure/basics-tab.png)
-
-3. **Güncelleştirme halkası ayarları** sekmesinde, iş gereksinimlerinize göre ayarları yapılandırın. Kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. [Windows Update ayarları](windows-update-settings.md). *Güncelleştirme* ve *Kullanıcı deneyimi* ayarlarını yapılandırdıktan sonra **İleri**' yi seçin.  
-
-4. **Kapsam etiketleri** sekmesinde **+ kapsam etiketlerini Seç** ' i seçerek bunları güncelleştirme halkalarına uygulamak istiyorsanız *etiketleri Seç* bölmesini açın.  
-
-   - **Etiketleri seçin** bölmesinde bir veya daha fazla etiket seçin ve ardından **Seç** ' e tıklayarak bunları güncelleştirme halkalarına ekleyin ve *kapsam etiketleri* bölmesine dönün.  
-
-   Hazırlandığınızda, *atamalara*devam etmek için **İleri** ' yi seçin. 
-
-5. **Atamalar** sekmesinde **+ dahil edilecek grupları seç** ' i seçin ve ardından güncelleştirme halkasını bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için **+ Select grupları** kullanın. Devam etmek için **İleri ' yi** seçin.  
-
-6. **Gözden geçir + oluştur** sekmesinde ayarları gözden geçirin ve Windows 10 güncelleştirme halkasını kaydetmeye hazırsanız **Oluştur** ' u seçin. Yeni güncelleştirme halkalarınız, güncelleştirme halkaları listesinde görüntülenir.
-
-## <a name="manage-your-windows-10-update-rings"></a>Windows 10 güncelleştirme Halkalarınızı yönetin
-
-Portalda, **genel bakış** bölmesini açmak Için bir Windows 10 güncelleştirme halkası seçebilirsiniz. Bu bölmeden, halkalar atama durumunu görüntüleyebilir ve halkayı yönetmek için ek eylemler gerçekleştirebilirsiniz.
-
-### <a name="to-view-an-updates-rings-overview-pane"></a>Bir güncelleştirme halkalarının genel bakış bölmesini görüntülemek için: 
-
-1. Azure portalında oturum açın.
-2. **Intune** > **yazılım güncelleştirmeleri** > **Windows 10 güncelleştirme halkaları**' na gidin.
-3. Görüntülemek veya yönetmek istediğiniz güncelleştirme halkasını seçin.  
-
-Atama durumunu görüntülemenin yanı sıra, güncelleştirme halkasını yönetmek için genel bakış bölmesinin üst kısmından aşağıdaki işlemleri seçebilirsiniz:  
-- [Sil](#delete)  
-- [Tamazsınız](#pause)  
-- [Bilmeniz](#resume)  
-- [Genişletmeyi](#extend)  
-- [Kaldırma](#uninstall)  
-
-![Kullanılabilir eylemler](./media/windows-update-for-business-configure/overview-actions.png)
-
-### <a name="delete"></a>Sil  
-
-Seçili Windows 10 güncelleştirme halkası ayarlarının uygulanmasını durdurmak için **Sil** ' i seçin. Bir halkayı silmek, Intune 'un yapılandırmasını artık geçerli olmaması ve bu ayarları zorunlu kıldığı şekilde Intune 'dan kaldırır.  
-
-Bir halkanın Intune 'dan silinmesi, güncelleştirme halkasının atandığı cihazlarda ayarları değiştirmez.  Bunun yerine, cihaz geçerli ayarlarını korur. Cihazlar, daha önce tuttuğu ayarların geçmiş kaydını korumaz. Cihazlar, etkin kalan ek güncelleştirme halkalarının ayarlarını da alabilir.  
-
-#### <a name="to-delete-a-ring"></a>Bir halkayı silmek için  
-
-1. Bir güncelleştirme halkasının genel bakış sayfasını görüntülerken **Sil**' i seçin.  
-2. **Tamam**’ı seçin.  
-
-### <a name="pause"></a>Tamazsınız  
-
-Atanan cihazların, halyi duraklatışınızda 35 güne kadar bir özellik güncelleştirmesi veya kalite güncelleştirmeleri almasını engellemek için **Duraklat** ' ı seçin. En fazla gün sayısı geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmeleri’ni tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz. Duraklatılmış bir güncelleştirme halkasını devam ettirdikten sonra bu halkayı yeniden duraklatabilirsiniz, duraklatma süresi 35 güne sıfırlanır.  
-
-#### <a name="to-pause-a-ring"></a>Bir halkayı duraklatmak için  
-
-1. Bir güncelleştirme halkasının genel bakış sayfasını görüntülerken **Duraklat**' ı seçin.  
-2. Bu tür bir güncelleştirmeyi duraklatmak için **özellik** veya **kalite** ' yi seçin ve ardından **Tamam**' ı seçin.  
-3. Bir güncelleştirme türünü durakladıktan sonra, diğer güncelleştirme türünü duraklatmak için yeniden Duraklat ' ı seçebilirsiniz.  
-
-Bir güncelleştirme türü duraklatıldığında, bu halkaya ilişkin genel bakış bölmesi, bu güncelleştirme türünün devam edebilmesi için kaç gün kaldığını gösterir.
-
-> [!IMPORTANT]  
-> Bir duraklatma komutu verdikten sonra, cihazlar bu komutu hizmete bir dahaki sefer denetduklarında alır. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür. Ayrıca, hedeflenen bir cihaz duraklatma komutunu verdiğiniz sırada kapalıysa bu cihaz açıldığında Intune’u denetlemeden önce, zamanlanmış güncelleştirmeleri indirip yükleyebilir.
-
-### <a name="resume"></a>Bilmeniz  
-
-Bir güncelleştirme halkası duraklatıldığında, bu halkaya yönelik özellik ve kalite güncelleştirmelerini etkin işleme geri yüklemek için **özgeçmişi** ' ı seçebilirsiniz. Bir güncelleştirme halkasını devam ettirdikten sonra, bu halkayı yeniden duraklatabilirsiniz.  
-
-#### <a name="to-resume-a-ring"></a>Bir halkayı sürdürmesini sağlamak için  
-
-1. Duraklatılmış bir güncelleştirme halkası için genel bakış sayfasını görüntülerken, yeniden Güncelleştir ' **i seçin.**  
-2. **Özelliklerin** veya **kalite** güncelleştirmelerinin her birini sürdürmesini sağlamak için kullanılabilir seçenekler arasından seçim yapın ve ardından **Tamam**' ı seçin.  
-3. Bir güncelleştirme türüne devam ettikten sonra, diğer güncelleştirme türünü sürdürmek için yeniden devam etmeyi seçebilirsiniz.  
-
-### <a name="extend"></a>Genişletmeyi  
-
-Bir güncelleştirme halkası duraklatıldığında, bu güncelleştirme halkası için her iki özellik ve kalite güncelleştirmesi için de duraklatma süresini 35 gün olarak sıfırlamak için **Genişlet** ' i seçebilirsiniz.  
-
-#### <a name="to-extend-the-pause-period-for-a-ring"></a>Bir halka için duraklatma süresini uzatmak için  
-
-1. Duraklatılmış bir güncelleştirme halkası için genel bakış sayfasını görüntülerken **Genişlet**' i seçin. 
-2. **Özelliklerin** veya **kalite** güncelleştirmelerinin her birini sürdürmesini sağlamak için kullanılabilir seçenekler arasından seçim yapın ve ardından **Tamam**' ı seçin.  
-3. Bir güncelleştirme türü için duraklama 'yı genişlettikten sonra, diğer güncelleştirme türünü genişletmek için yeniden Genişlet seçeneğini belirleyebilirsiniz.  
-
-### <a name="uninstall"></a>Kaldır  
-
-Bir Intune Yöneticisi, etkin veya duraklatılmış bir güncelleştirme halkası için en son *özellik* güncelleştirmesini veya en son *kalite* güncelleştirmesini kaldırmak (geri almak) için **kaldırmayı** kullanabilir. Bir tür kaldırıldıktan sonra, diğer türü kaldırabilirsiniz. Intune, kullanıcıların güncelleştirmeleri kaldırma yeteneğini desteklemez veya yönetemez.  
-
-> [!IMPORTANT] 
-> *Kaldırma* seçeneğini kullandığınızda, Intune kaldırma isteğini cihazlara hemen geçirir. 
-> - Windows cihazları, Intune ilkesinde değişiklik aldıkları anda güncelleştirmelerin kaldırılmasına başlar. Güncelleştirme kaldırma, güncelleştirme halkasının parçası olarak yapılandırıldıklarında bile bakım zamanlamalarıyla sınırlı değildir. 
-> - Güncelleştirme kaldırma işlemi bir cihazın yeniden başlatılmasını gerektiriyorsa cihaz kullanıcılarına, gecikme süresi seçeneği sunulmadan cihaz yeniden başlatılır.
+- If you use the Azure classic portal, [migrate your settings to the Azure portal](#migrate-update-settings-to-the-azure-portal).
 
 
-Kaldırma işleminin başarılı olabilmesi için:  
-- Bir cihazın Windows 10 Nisan 2018 Güncelleştirmesi (sürüm 1803) veya üzerini çalıştırması gerekir.  
+## <a name="windows-10-update-rings"></a>Windows 10 update rings
 
-Bir cihazın en son güncelleştirmeyi yüklemiş olması gerekir. Güncelleştirmeler birikimli olduğundan, en son güncelleştirmeyi yükleyen cihazlar en son özellik ve kalite güncelleştirmesine sahip olacaktır. Bu seçeneği ne zaman kullanacağınızı bir örnek, Windows 10 makinelerinizde önemli bir sorun bulmalısınız.  
+Create update rings that specify how and when Windows as a Service updates your Windows 10 devices with Feature and Quality updates. Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. En son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
 
-Kaldırma kullandığınızda aşağıdakileri göz önünde bulundurun:  
-- Özellik veya kalite güncelleştirmesini kaldırma işlemi yalnızca hizmetin içinde açıldığı hizmet kanalında kullanılabilir.  
+Windows 10 update rings support [scope tags](../fundamentals/scope-tags.md). You can use scope tags with update rings to help you filter and manage sets of configurations that you use.
 
-- Özellik veya kalite güncelleştirmeleri için kaldırma özelliğinin kullanılması, Windows 10 makinelerinizde önceki güncelleştirmeyi geri yüklemek için bir ilke tetikler.  
+### <a name="create-and-assign-update-rings"></a>Güncelleştirme halkaları oluşturma ve atama
 
-- Bir Windows 10 cihazında, bir kalite güncelleştirmesi başarıyla geri alındıktan sonra, son kullanıcılar **Windows ayarları**  > **güncelleştirmeler**  > **güncelleştirme geçmişi**' nde listelenen güncelleştirmeyi görmeye devam eder.  
+1. Sign in to the [Microsoft Endpoint Manager Admin Center]( https://go.microsoft.com/fwlink/?linkid=2109431).
 
-- Özellikle özellik güncelleştirmeleri için, özellik güncelleştirmesini kaldırabilmeniz gereken süre 2-60 günden sınırlıdır ve güncelleştirme halkaları güncelleştirme ayarı, **özellik güncelleştirme kaldırma süresi (2 – 60 gün)** ile yapılandırılır. Özellik Güncelleştirmesi yapılandırılmış kaldırma süresinden daha uzun bir süre için yüklendikten sonra bir cihaza yüklenmiş bir özellik güncelleştirmesini geri alamazsınız.  
+2. Select **Devices** > **Windows** > **Windows 10 Update Rings** > **Create**.
 
-  Örneğin, özellik güncelleştirme kaldırma süresi 20 gün olan bir güncelleştirme halkasını düşünün. 25 gün sonra en son özellik güncelleştirmesini geri alma ve kaldırma seçeneğini kullanma kararı verirsiniz.  Özellik güncelleştirmesini 20 gün önce yükleyen cihazlar, bakımının bir parçası olarak gerekli bitleri kaldırdıklarından bu sürümü kaldıramıyor. Ancak, yalnızca 19 güne kadar olan özellik güncelleştirmesini yükleyen cihazlar, 20 günlük kaldırma dönemini aşmadan önce Uninstall komutunu almak üzere iade ederseniz güncelleştirmeyi kaldırabilir.  
+3. Under *Basics*, specify a name, a description (optional), and then select **Next**.
+  ![Create an update ring]( ./media/windows-update-for-business-configure/basics-tab.png)
+  
+4. Under **Update ring settings**, configure settings for your business needs. For information about the available settings, see Windows update settings. After configuring *Update and User experience* settings, select **Next**.
 
-Windows Update ilkeleri hakkında daha fazla bilgi için bkz. Windows istemci yönetimi belgelerinde [CSP güncelleştirme](https://docs.microsoft.com/windows/client-management/mdm/update-csp) .  
+5. Under **Scope tags**, select **+ Select scope tags** to open the *Select tags* pane if you want to apply them to the update ring. Choose one or more tags, and then click **Select** to add them to the update ring and return to the *Scope tag*s page.
 
-#### <a name="to-uninstall-the-latest-windows-10-update"></a>En son Windows 10 güncelleştirmesini kaldırmak için  
+   When ready, select **Next** to continue to *Assignments*.
 
-1. Duraklatılmış bir güncelleştirme halkası için genel bakış sayfasını görüntülerken **Kaldır**' ı seçin.  
-2. **Özellik** veya **kalite** güncelleştirmelerini kaldırmak için kullanılabilir seçeneklerden birini belirleyin ve ardından **Tamam**' ı seçin.  
-3. Bir güncelleştirme türü için kaldırmayı tetikledikten sonra, kalan güncelleştirme türünü kaldırmak için Kaldır ' ı tekrar seçebilirsiniz.  
+6. Under **Assignments**, choose **+ Select groups to include** and then assign the update ring to one or more groups. Use **+ Select groups to exclude** to fine-tune the assignment. Select **Next** to continue.
 
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Güncelleştirme ayarlarını Azure portal geçirme  
+7. Under**Review + create**, review the settings and then select **Create** when ready to save your Windows 10 update ring. Your new update ring is displayed in the list of update rings.
 
-Ayrıca Azure klasik portalındaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. Azure portal geçiş yaparken bu ayarlardan herhangi birini yapılandırdıysanız, aşağıdaki eylemleri yapmanızı kesinlikle öneririz:  
+### <a name="manage-your-windows-10-update-rings"></a>Manage your Windows 10 Update rings
 
-1. Azure portalında ihtiyaç duyduğunuz ayarlara sahip Windows 10 güncelleştirme kademeleri oluşturun. **Yayın öncesi özelliklere izin ver** ayarı, en son Windows 10 derlemelerinde geçerli olmadığından Azure portal’da desteklenmez. Güncelleştirme halkaları oluştururken diğer üç ayarı ve diğer Windows 10 güncelleştirme ayarlarını yapılandırabilirsiniz.  
+In the portal, navigate to **Devices** > **Windows** > **Windows 10 Update Rings** and select the policy that you want to manage.  The policy opens to its **Overview** page.
 
-   > [!NOTE]  
-   > Klasik portalda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak bu ayarlar uygulanır. Bu ayarlardan herhangi birini geçirir ve geçirilen ilkeyi Azure portalından düzenlerseniz söz konusu ayarlar ilkeden kaldırılır.  
+From this page, you can view the rings assignment status and select the following actions from the top of the Overview pane to manage the update ring:
 
-2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme halkasına ekledikten sonra, olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. Örneğin, aynı ayar farklı değerlerle yapılandırıldığında bir çakışma vardır. Klasik portalda yapılandırılan ayar Azure portal görüntülenmediğinden, bildiğiniz kolay bir yol yoktur.  
+- [Sil](#delete)
+- [Pause](#pause)
+- [Resume](#resume)
+- [Extend](#extend)
+- [Uninstall](#uninstall)
+
+![Available actions](./media/windows-update-for-business-configure/overview-actions.png)
+
+#### <a name="delete"></a>Sil
+
+Select **Delete** to stop enforcing the settings of the selected Windows 10 update ring. Deleting a ring removes its configuration from Intune so that Intune no longer applies and enforces those settings.
+
+Deleting a ring from Intune doesn't modify the settings on devices that were assigned the update ring.  Instead, the device keeps its current settings. Devices don't maintain a historical record of what settings they held previously. Devices can also receive settings from additional update rings that remain active.
+
+##### <a name="to-delete-a-ring"></a>To delete a ring
+
+1. While viewing the overview page for an Update Ring, select **Delete**.
+2. **Tamam**’ı seçin.
+
+#### <a name="pause"></a>Pause
+
+Select **Pause** to prevent assigned devices from receiving Feature Updates or Quality Updates for up to 35 days from the time you pause the ring. En fazla gün sayısı geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmeleri’ni tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz.
+If you resume a paused update ring, and then pause that ring again, the pause period resets to 35 days.
+
+##### <a name="to-pause-a-ring"></a>To pause a ring
+
+1. While viewing the overview page for an Update Ring, select **Pause**.
+2. Select either **Feature** or **Quality** to pause that type of update, and then select **OK**.
+3. After pausing one update type, you can select Pause again to pause the other update type.
+
+When an update type is paused, the Overview pane for that ring displays how many days remain before that update type resumes.
+
+> [!IMPORTANT]
+> After you issue a pause command, devices receive this command the next time they check into the service. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür. Ayrıca, hedeflenen bir cihaz duraklatma komutunu verdiğiniz sırada kapalıysa bu cihaz açıldığında Intune’u denetlemeden önce, zamanlanmış güncelleştirmeleri indirip yükleyebilir.
+
+#### <a name="resume"></a>Resume
+
+While an update ring is paused, you can select **Resume** to restore Feature and Quality updates for that ring to active operation. After you resume an update ring, you can pause that ring again.
+
+##### <a name="to-resume-a-ring"></a>To resume a ring
+
+1. While viewing the overview page for a paused Update Ring, select **Resume**.
+2. Select from the available options to resume either **Feature** or **Quality** updates, and then select **OK**.
+3. After resuming one update type, you can select Resume again to resume the other update type.
+
+#### <a name="extend"></a>Extend  
+
+While an update ring is paused, you can select **Extend** to reset the pause period for both Feature and Quality updates for that update ring to 35 days.
+
+##### <a name="to-extend-the-pause-period-for-a-ring"></a>To Extend the pause period for a ring
+
+1. While viewing the overview page for a paused Update Ring, select **Extend**.
+2. Select from the available options to resume either **Feature** or **Quality** updates, and then select **OK**.
+3. After extending the pause for one update type, you can select Extend again to extend the other update type.
+
+#### <a name="uninstall"></a>Kaldır  
+
+An Intune administrator can use **Uninstall** to uninstall (roll back) the latest *feature* update or the latest *quality* update for an active or paused update ring. After uninstalling one type, you can then uninstall the other type. Intune doesn't support or manage the ability of users to uninstall updates.  
+
+> [!IMPORTANT]
+> When you use the *Uninstall* option, Intune passes the uninstall request to devices immediately.
+>
+> - Windows devices start removal of updates as soon as they receive the change in Intune policy. Update removal isn't limited to maintenance schedules, even when they're configured as part of the update ring.
+> - If the update removal requires a device restart, the device  restarts without offering device users an option to delay.
+
+For Uninstall to be successful:
+
+- A device must run the Windows 10 April 2018 update (version 1803) or later.
+
+A device must have installed the latest update. Because updates are cumulative, devices that install the latest update will have the most recent feature and quality update. An example of when you might use this option is to roll back the last update should you discover a breaking issue on your Windows 10 machines.
+
+Consider the following when you use Uninstall:
+
+- Özellik veya kalite güncelleştirmesini kaldırma işlemi yalnızca hizmetin içinde açıldığı hizmet kanalında kullanılabilir.
+
+- Using uninstall for Feature or Quality updates triggers a policy to restore the previous update on your Windows 10 machines.
+
+- On a Windows 10 device, after a quality update is successfully rolled back, device users continue to see the update listed in **Windows settings** > **Updates** > **Update History**.
+
+- For Feature updates specifically, the time you can uninstall the update is limited from 2-60 days. This period is configured by the update rings Update setting **Set feature update uninstall period (2 – 60 days)** . You can't roll back a feature update that's been installed on a device after the update has been installed for longer than the configured uninstall period.
+
+  For example, consider an update ring with a feature update uninstall period of 20 days. After 25 days you decide to roll back the latest feature update and use the Uninstall option.  Devices that installed the feature update over 20 days ago can't uninstall it as they've removed the necessary bits as part of their maintenance. However, devices that only installed the feature update up to 19 days ago can uninstall the update if they successfully check in to receive the uninstall command before exceeding the 20-day uninstall period.
+
+For more information about Windows Update policies, see [Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp) in the Windows client management documentation.
+
+##### <a name="to-uninstall-the-latest-windows-10-update"></a>To uninstall the latest Windows 10 update
+
+1. While viewing the overview page for a paused Update Ring, select **Uninstall**.
+2. Select from the available options to uninstall either **Feature** or **Quality** updates, and then select **OK**.
+3. After triggering the uninstall for one update type, you can select Uninstall again to uninstall the remaining update type.
+
+## <a name="windows-10-feature-updates"></a>Windows 10 feature updates
+
+*This feature is in public preview.*
+
+With *Windows 10 feature updates*, you select the Windows feature version that you want devices to remain at, like Windows 10 version 1803 or version 1809. You can set a feature level of 1803 or later.
+
+When a device receives a Windows 10 feature updates policy:
+
+- The device will update to the version of Windows specified in the policy. A device that already runs a later version of Windows remains at its current version. By freezing the version, the devices feature set remains stable for the duration of the policy.
+
+- While the installed version of Windows remains set, devices can still receive and install quality and security updates for their Windows version for the duration of support for that version, which helps you to keep devices current and secure.
+
+- Unlike using *Pause* with an update ring, which expires after 35 days, the Windows 10 feature updates policy remains in effect. Devices won’t install a new Windows version until you modify or remove the Windows 10 feature updates policy. If you edit the policy to specify a newer version, devices can then install the features from that Windows version.
+
+> [!IMPORTANT]
+> When you deploy both a *Windows 10 feature update* and a *Windows 10 update ring* policy to the same device, review the update ring for the following configurations:
+>
+> - The **Feature update deferral period (days)** must be set to **0**
+> - Feature updates for the update ring must be *running*. They must not be paused.
+
+Windows 10 Feature updates aren't supported with Windows Autopilot.
+
+### <a name="create-and-assign-windows-10-feature-updates"></a>Create and assign Windows 10 feature updates
+
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Select **Devices** > **Windows** > **Windows 10 Feature updates** > **Create**.
+
+3. Under **Basics**, specify a name, a description (optional), and for **Feature update to deploy**, select the version of Windows with the feature set you want, and then select **Next**.
+
+4. Under **Assignments**, choose **+ Select groups to include** and then assign the update ring to one or more groups. Select **Next** to continue.
+
+5. Under **Review + create**, review the settings and select **Create** when ready to save the Windows 10 feature updates policy.  
+
+### <a name="manage-windows-10-feature-updates"></a>Manage Windows 10 Feature updates
+
+In the admin center, go to **Devices** > **Windows** > **Windows 10 Feature updates** and select the policy that you want to manage. The policy opens to its **Overview** pane.
+
+From this pane, you can:
+
+- Select **Delete** to delete the policy from Intune and remove it from devices.
+- Select **Properties** to modify the deployment.  On the *Properties* pane, select **Edit** to open the *Deployment settings or Assignments*, where you can then modify the deployment.
+- Select **End user update status** to view information about the policy.
+
+## <a name="migrate-update-settings-to-the-azure-portal"></a>Migrate update settings to the Azure portal
+
+Ayrıca Azure klasik portalındaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. If any of these settings are configured when you migrate to the Azure portal, we strongly recommend that you do the following actions:
+
+1. Azure portalında ihtiyaç duyduğunuz ayarlara sahip Windows 10 güncelleştirme kademeleri oluşturun. **Yayın öncesi özelliklere izin ver** ayarı, en son Windows 10 derlemelerinde geçerli olmadığından Azure portal’da desteklenmez. You can configure the other three settings and the other Windows 10 updates settings when you create update rings.
+
+   > [!NOTE]
+   > Klasik portalda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak bu ayarlar uygulanır. Bu ayarlardan herhangi birini geçirir ve geçirilen ilkeyi Azure portalından düzenlerseniz söz konusu ayarlar ilkeden kaldırılır.
+
+2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme halkasına ekledikten sonra, olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. For example, when the same setting is configured with different values, there's a conflict. There isn't an easy way to know because the setting configured in the classic portal doesn't display in the Azure portal.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Intune tarafından desteklenen Windows Update ayarları](../windows-update-settings.md)  
+[Windows update settings supported by Intune](../windows-update-settings.md)
 
-[Güncelleştirmeler için Intune uyumluluk raporları](../windows-update-compliance-reports.md)
+[Intune compliance reports for updates](../windows-update-compliance-reports.md)
 
-[Windows 10 güncelleştirme halkaları sorunlarını giderme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
+[Troubleshooting Windows 10 update rings](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
 

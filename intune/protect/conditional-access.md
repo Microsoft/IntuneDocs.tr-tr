@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune koşullu erişim
+title: Conditional Access with Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Microsoft Intune'da kullanıcıların, cihazların ve uygulamaların şirket kaynaklarına erişmek için uymaları gereken koşulları tanımlamayı öğrenin.
+description: Learn how to define the conditions that users, devices, and apps must meet to access company resources in Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,52 +17,50 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504551"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188287"
 ---
-# <a name="learn-about-conditional-access-and-intune"></a>Koşullu erişim ve Intune hakkında bilgi edinin
+# <a name="learn-about-conditional-access-and-intune"></a>Learn about Conditional Access and Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+With Conditional Access, you can control the devices and apps that can connect to your email and company resources. 
 
-Koşullu erişim, e-postanıza ve şirket kaynaklarınıza bağlanmasına izin verilen cihazları ve uygulamaları denetleyebilmeniz için yollar anlamına gelir. Bu konu başlığında, cihaz tabanlı ve uygulama tabanlı koşullu erişim hakkında bilgi edinin ve Intune ile koşullu erişim kullanmaya yönelik yaygın senaryolar bulun.
-
-Enterprise Mobility + Security (EMS) Koşullu Erişim, tek başına bir ürün değildir; EMS'nin parçası olan tüm ürün ve hizmetlerde yer alan bir çözümdür. Kurumsal verilerinizi güvenli tutmak için ayrıntılı erişim denetimi sağlarken, kullanıcılara herhangi bir cihazdan ve herhangi bir yerden en iyi şekilde çalışmalarına izin veren bir deneyim sunar.
+Enterprise Mobility + Security (EMS)  is not a standalone product. It's a solution that takes part on all services and products that are part of EMS. Conditional Access provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.
 
 Kurumsal verilerinize erişim için konum, cihaz, kullanıcı durumu ve uygulama hassaslığı temelinde bir geçit oluşturan koşullar tanımlayabilirsiniz.
 
-> [!NOTE] 
+> [!NOTE]
 > Koşullu Erişim, sahip olduğu özellikleri [Office 365 hizmetlerine](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access) de yayar.
 
-![Koşullu erişim mimari diyagramı](./media/conditional-access/ca-diagram-1.png)
+![Conditional Access diagram](./media/conditional-access/ca-diagram-1.png)
 
-## <a name="use-conditional-access-with-intune"></a>Intune ile koşullu erişim kullanma
+## <a name="use-conditional-access-with-intune"></a>Use Conditional Access with Intune
 
-Koşullu erişim, bir Azure Active Directory Premium lisansıyla birlikte sunulan bir Azure Active Directory özelliğidir. Intune, çözüme mobil cihaz uyumluluğu ve mobil uygulama yönetimi ekleyerek bu özelliği geliştirir. 
+Conditional Access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. Intune, çözüme mobil cihaz uyumluluğu ve mobil uygulama yönetimi ekleyerek bu özelliği geliştirir. 
 
-![EMS kullanırken Intune ve koşullu erişim](./media/conditional-access/intune-with-ca-1.png)
+![Intune and Conditional Access when using EMS](./media/conditional-access/intune-with-ca-1.png)
 
-Intune ile koşullu erişim kullanmanın yolları:
+Ways to use Conditional Access with Intune:
 
-- **Cihaz tabanlı koşullu erişim**
+- **Device-based Conditional Access**
 
-  - Şirket içi Exchange için koşullu erişim
+  - Conditional Access for Exchange on-premises
 
-  - Ağ erişim denetimi tabanlı koşullu erişim
+  - Conditional Access based on network access control
 
-  - Cihaz riskine dayalı koşullu erişim
+  - Conditional Access based on device risk
 
-  - Windows bilgisayarları için koşullu erişim
+  - Conditional Access for Windows PCs
 
     - Şirkete ait olanlar
 
     - Kendi cihazını getir (KCG)
 
-- **Uygulama tabanlı koşullu erişim**
+- **App-based Conditional Access**
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Intune ile koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md)
+[Common ways to use Conditional Access with Intune](conditional-access-intune-common-ways-use.md)

@@ -1,12 +1,12 @@
 ---
 title: Uyumluluk için Jamf Pro’yu Microsoft Intune ile tümleştirme
 titleSuffix: Microsoft Intune
-description: JAMF tarafından yönetilen cihazların tümleştirilmesine ve güvenliğini sağlamaya yardımcı olmak için Azure Active Directory Koşullu erişimle Microsoft Intune uyumluluk ilkeleri kullanın.
+description: Use Microsoft Intune compliance policies with Azure Active Directory Conditional Access to help integrate and secure Jamf-managed devices.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/20/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,126 +18,133 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
-ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
+ms.openlocfilehash: 6615933f604f2ff4156885bc6559af7e46d4ccb2
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627655"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188509"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
 Uygulama hedefi: Azure portalında Intune
 
-Kuruluşunuz macOS cihazlarını yönetmek için [JAMF Pro 'yu](https://www.jamf.com) kullandığında, kuruluşunuzdaki cihazların erişebilmeleri için uyumlu olduğundan emin olmak için Azure Active Directory (Azure AD) koşullu erişim ile Microsoft Intune uyumluluk ilkelerini kullanabilirsiniz. Şirket kaynakları. Bu makale, Intune ile JAMF tümleştirmesini yapılandırmanıza yardımcı olur.
+When your organization uses [Jamf Pro](https://www.jamf.com) to manage macOS devices, you can use Microsoft Intune compliance policies with Azure Active Directory (Azure AD) Conditional Access to ensure that devices in your organization are compliant before they can access company resources. This article will help you configure Jamf integration with Intune.
 
-JAMF Pro, Intune ile tümleştiriliyorsa, macOS cihazlarındaki envanter verilerini Azure AD aracılığıyla Intune ile eşitleyebilirsiniz. Intune 'un uyumluluk altyapısı daha sonra bir rapor oluşturmak için envanter verilerini analiz eder. Intune 'un analizi, koşullu erişim aracılığıyla uygulamanın zorlanması için cihaz kullanıcısının Azure AD kimliğiyle ilgili zeka birleştirilir. Koşullu erişim ilkeleriyle uyumlu olan cihazlar, korunan şirket kaynaklarına erişim elde edebilir.
+When Jamf Pro integrates with Intune, you can sync the inventory data from macOS devices with Intune, through Azure AD. Intune's compliance engine then analyzes the inventory data to generate a report. Intune's analysis is combined with intelligence about the device user’s Azure AD identity to drive enforcement through Conditional Access. Devices that are compliant with the Conditional Access policies can gain access to protected company resources.
 
-Tümleştirmeyi yapılandırdıktan sonra JAMF ve Intune 'u, JAMF tarafından yönetilen cihazlarda [koşullu erişimle uyumluluğu zorlamak üzere yapılandırırsınız](conditional-access-assign-jamf.md) .  
+After you configure integration, you'll then [configure Jamf and Intune to enforce compliance with Conditional Access](conditional-access-assign-jamf.md) on devices managed by Jamf.  
 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-### <a name="products-and-services"></a>Ürünler ve hizmetler
-JAMF Pro ile koşullu erişimi yapılandırmak için aşağıdakiler gerekir:
+### <a name="products-and-services"></a>Products and services
+You need the following to configure Conditional Access with Jamf Pro:
 
 - Jamf Pro 10.1.0 veya daha yenisi
 - [MacOS için Şirket Portalı uygulaması](https://aka.ms/macoscompanyportal)
 - OS X 10.11 ile Yosemite veya sonrası olan macOS cihazları
 
-### <a name="network-ports"></a>Ağ bağlantı noktaları
+### <a name="network-ports"></a>Network ports
 <!-- source: https://support.microsoft.com/en-us/help/4519171/troubleshoot-problems-when-integrating-jamf-with-microsoft-intune -->
-JAMF ve Intune 'un doğru tümleşmesini sağlamak için aşağıdaki bağlantı noktalarına erişilebilir olmalıdır: 
-- **Intune**: bağlantı noktası 443
-- **Apple**: Ports 2195, 2196 ve 5223 (Intune 'a anında iletme bildirimleri)
-- **JAMF**: bağlantı noktaları 80 ve 5223
+The following ports should be accessible for Jamf and Intune to integrate correctly: 
+- **Intune**: Port 443
+- **Apple**: Ports 2195, 2196, and 5223 (push notifications to Intune)
+- **Jamf**: Ports 80 and 5223
 
-APNS 'nin ağda düzgün çalışmasını sağlamak için, giden bağlantıları da etkinleştirmeniz ve ' den yeniden yönlendirmelerinin olması gerekir:
-- Tüm istemci ağlarından 5223 ve 443 TCP bağlantı noktaları üzerinde Apple 17.0.0.0/8 bloğu.   
-- JAMF Pro sunucularından 2195 ve 2196 bağlantı noktaları.  
+To allow APNS to function correctly on the network, you must also enable outgoing connections to, and redirects from:
+- the Apple 17.0.0.0/8 block over TCP ports 5223 and 443 from all client networks.   
+- ports 2195 and 2196 from Jamf Pro servers.  
 
-Bu bağlantı noktaları hakkında daha fazla bilgi için aşağıdaki makalelere bakın:  
-- [Intune ağ yapılandırma gereksinimleri ve bant genişliği](../fundamentals/network-bandwidth-use.md).
-- Jamf.com üzerinde [JAMF Pro tarafından kullanılan ağ bağlantı noktaları](https://www.jamf.com/jamf-nation/articles/34/network-ports-used-by-jamf-pro) .
-- Support.apple.com üzerinde [Apple yazılım ürünleri tarafından kullanılan TCP ve UDP bağlantı noktaları](https://support.apple.com/HT202944)
+For more information about these ports, see the following articles:  
+- [Intune network configuration requirements and bandwidth](../fundamentals/network-bandwidth-use.md).
+- [Network Ports Used by Jamf Pro](https://www.jamf.com/jamf-nation/articles/34/network-ports-used-by-jamf-pro) on jamf.com.
+- [TCP and UDP ports used by Apple software products](https://support.apple.com/HT202944) on support.apple.com
 
 
-## <a name="connect-intune-to-jamf-pro"></a>Intune 'U JAMF Pro 'ya bağlama
+## <a name="connect-intune-to-jamf-pro"></a>Connect Intune to Jamf Pro
 
-Intune 'u JAMF Pro ile bağlamak için:
+To connect Intune with Jamf Pro:
 
-1. Azure 'da yeni bir uygulama oluşturun.
-2. Intune 'u JAMF Pro ile tümleşecek şekilde etkinleştirin.
-3. JAMF Pro 'da koşullu erişimi yapılandırın.
+1. Create a new application in Azure.
+2. Enable Intune to integrate with Jamf Pro.
+3. Configure Conditional Access in Jamf Pro.
 
-## <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory bir uygulama oluşturma
+### <a name="create-an-application-in-azure-active-directory"></a>Create an application in Azure Active Directory
 
-1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **uygulama kaydı**' na gidin ve ardından **Yeni kayıt**' ı seçin. 
+1. In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory** > **App Registrations**, and then select **New registration**. 
 
-2. **Uygulama kaydetme** sayfasında, aşağıdaki ayrıntıları belirtin:
-   - **Ad** bölümünde, bir anlamlı uygulama adı girin, örneğin **JAMF koşullu erişim**.
-   - **Desteklenen hesap türleri** bölümü için **herhangi bir kuruluş dizininde hesaplar**' ı seçin. 
-   - **Yeniden yönlendirme URI 'si**için, varsayılan Web ' i bırakın ve sonra JAMF Pro örneğiniz için URL 'yi belirtin.  
+2. On the **Register an application** page, specify the following details:
+   - In the **Name** section, enter a meaningful application name, for example **Jamf Conditional Access**.
+   - For the **Supported account types** section, select **Accounts in any organizational directory**. 
+   - For **Redirect URI**, leave the default of Web, and then specify the URL for your Jamf Pro instance.  
 
-3. Uygulamayı oluşturmak için **Kaydet** ' i seçin ve yeni uygulama Için **genel bakış** sayfasını açın.  
+3. Select **Register** to create the application and to open the **Overview** page for the new app.  
 
-4. Uygulamaya **genel bakış** sayfasında, **uygulama (istemci) kimlik** değerini kopyalayın ve daha sonra kullanmak üzere kaydedin. Sonraki yordamlarda bu değere ihtiyacınız olacaktır.  
+4. On the app **Overview** page, copy the **Application (client) ID** value and record it for later use. You'll need this value in later procedures.  
 
-5. **Yönet**altında **Sertifikalar & parolaları** ' nı seçin. **Yeni istemci parolası** düğmesini seçin. **Açıklama**değerinde bir değer girin, **süre sonu** için herhangi bir seçenek belirleyin ve **Ekle**' yi seçin.
+5. Select **Certificates & secrets** under **Manage**. Select the **New client secret** button. Enter a value in **Description**, select any option for **Expires** and choose **Add**.
 
    > [!IMPORTANT]  
-   > Bu sayfadan ayrılmadan önce, istemci sırrı için değeri kopyalayın ve daha sonra kullanmak üzere kaydedin. Sonraki yordamlarda bu değere ihtiyacınız olacaktır. Bu değer, uygulama kaydını yeniden oluşturmadan tekrar kullanılamaz.  
+   > Before you leave this page, copy the value for the client secret and record it for later use. You will need this value in later procedures. This value isn’t available again, without recreating the app registration.  
 
-6. **Yönet**altında **API izinleri** ' ni seçin. Mevcut izinleri seçin ve ardından bu izinleri silmek için **Izni kaldır** ' ı seçin. Yeni bir izin ekleyeceğiniz için tüm mevcut izinlerin kaldırılması gerekir ve uygulama yalnızca tek gerekli izni varsa işe yarar.  
+6. Select **API permissions** under **Manage**. Select the existing permissions and then select **Remove permission** to delete those permissions. Removal of all existing permissions is necessary as you’ll add a new permission, and the application only works if it has the single required permission.  
 
-7. Yeni bir izin atamak için **Izin Ekle**' yi seçin. **API Izinleri iste** sayfasında, **Intune**' u seçin ve ardından **Uygulama izinleri**' ni seçin. Yalnızca **update_device_attributes**onay kutusunu seçin.  
+7. To assign a new permission, select **Add a permission**. On the **Request API permissions** page, select **Intune**, and then select **Application permissions**. Select only the check box for **update_device_attributes**.  
 
-   Bu yapılandırmayı kaydetmek için **Izin Ekle** ' yi seçin.  
+   Select **Add permission** to save this configuration.  
 
-8. **API izinleri** sayfasında,  **_kiracı >\<_ için yönetici onayı ver**' i seçin ve ardından **Evet**' i seçin.  Uygulama başarıyla kaydedildikten sonra, API izinleri şu şekilde görünmelidir: ![başarılı izinler](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
+8. On the **API permissions** page, select **Grant admin consent for _\<your tenant>_** , and then select **Yes**.  After the app is registered successfully, the API permissions should appear as follows: ![Successful permissions](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 
-   Azure AD 'de uygulama kayıt işlemi tamamlanmıştır.
+   The app registration process in Azure AD is complete.
 
 
     > [!NOTE]
-    > İstemci parolasının süresi dolarsa, Azure 'da yeni bir istemci parolası oluşturmanız ve ardından JAMF Pro 'daki koşullu erişim verilerini güncelleştirmeniz gerekir. Azure, hizmet kesintilerini engellemek için hem eski gizli anahtar hem de yeni anahtarın etkin olmasını sağlar.
+    > If the client secret expires, you must create a new client secret in Azure and then update the Conditional Access data in Jamf Pro. Azure allows you to have both the old secret and new key active to prevent service disruptions.
 
-## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Jamf Pro ile tümleştirmek için Intune’u etkinleştirme
+### <a name="enable-intune-to-integrate-with-jamf-pro"></a>Jamf Pro ile tümleştirmek için Intune’u etkinleştirme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın ve **Microsoft Intune** > **cihaz uyumluluğu** > **iş ortağı cihaz yönetimi**' ne gidin.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Önceki yordam sırasında kaydettiğiniz uygulama KIMLIĞINI **jamf Azure Active Directory Uygulama kimliği** alanına yapıştırarak JAMF Için uyumluluk bağlayıcısını etkinleştirin.
+2. Select **Tenant administration** > **Connectors and tokens** > **Partner device management**.
 
-3. **Kaydet**’i seçin.
+3. Enable the *Compliance Connector for Jamf* by pasting the Application ID you saved during the previous procedure into the **Specify the Azure Active Directory App ID for Jamf** field.
 
-## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro'da Microsoft Intune tümleştirmesini yapılandırma
+4. **Kaydet**’i seçin.
 
-1. Jamf Pro'da **Küresel Yönetim** > **Şartlı Erişim**'e gidin. **MacOS Intune tümleştirmesi** sekmesinde **Düzenle** düğmesine tıklayın.
+### <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro'da Microsoft Intune tümleştirmesini yapılandırma
 
-2. **MacOS Için Intune tümleştirmesini etkinleştir**onay kutusunu işaretleyin.
+1. Jamf Pro'da **Küresel Yönetim** > **Şartlı Erişim**'e gidin. Click the **Edit** button on the **macOS Intune Integration** tab.
 
-3. Azure kiracınız hakkında **konum**, **etki alanı adı**, **uygulama kimliği**ve Azure AD 'de uygulamayı oluştururken kaydettiğiniz *istemci sırrı* için değer dahil olmak üzere gerekli bilgileri sağlayın.  
+2. Select the check box for **Enable Intune Integration for macOS**.
 
-4. **Kaydet**’i seçin. JAMF Pro, ayarlarınızı sınar ve başarısını doğrular.
+3. Provide the required information about your Azure tenant, including **Location**, **Domain name**, the **Application ID**, and the value for the *client secret* that you saved when you created the app in Azure AD.  
+
+4. **Kaydet**’i seçin. Jamf Pro tests your settings and verifies your success.
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Uyumluluk ilkelerini ayarlama ve cihazları kaydetme
 
-Intune ve JAMF arasındaki tümleştirmeyi yapılandırdıktan sonra, [JAMF tarafından yönetilen cihazlara uyumluluk ilkeleri uygulamanız](conditional-access-assign-jamf.md)gerekir.
+After you configure integration between Intune and Jamf, you need to [apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md).
 
 
-## <a name="disconnect-jamf-pro-and-intune"></a>JAMF Pro ve Intune bağlantısını kesme 
+## <a name="disconnect-jamf-pro-and-intune"></a>Disconnect Jamf Pro and Intune
 
-Kuruluşunuzda Mac 'i yönetmek için JAMF Pro 'Yu kullanmıyorsanız ve kullanıcıların Intune tarafından yönetilmesini istiyorsanız, JAMF Pro ve Intune arasındaki bağlantıyı kaldırmanız gerekir. JAMF Pro konsolunu kullanarak bağlantıyı kaldırın. 
+If you no longer use Jamf Pro to manage Macs in your organization and want users to be managed by Intune, you must remove the connection between Jamf Pro and Intune. Remove the connection by using the Jamf Pro console.
 
-1. JAMF Pro 'da **genel yönetim** > **koşullu erişim**' e gidin. **MacOS Intune tümleştirmesi** sekmesinde **Düzenle**' yi seçin.
-2. **MacOS Için Intune tümleştirmesini etkinleştir** onay kutusunu temizleyin.
-3. **Kaydet**’i seçin. JAMF Pro, yapılandırmanızı Intune 'a gönderir ve tümleştirme sonlandırılacak.
-4. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın. Durumun artık **sonlandırıldığını**doğrulamak için, **Microsoft Intune** > **cihaz uyumluluğu** > **iş ortağı cihaz yönetimi** ' ne gidin. 
+1. In Jamf Pro, go to **Global Management** > **Conditional Access**. On the **macOS Intune Integration** tab, select **Edit**.
+
+2. Clear the **Enable Intune Integration for macOS** check box.
+
+3. **Kaydet**’i seçin. Jamf Pro sends your configuration to Intune and the integration will be terminated.
+
+4. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+5. Select **Tenant administration** > **Connectors and tokens** > **Partner device management** to verify that the status is now **Terminated**.
 
    > [!NOTE]
-   > Kuruluşunuzun Mac cihazları konsolunda gösterilen tarihte (3 ay) kaldırılacaktır. 
+   > Your organization's Mac devices will be removed at the date (3 months) shown in your console.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Jamf tarafından yönetilen cihazlar için uyumluluk ilkelerini uygula](conditional-access-assign-jamf.md)
-- [Veri JAMF, Intune 'a gönderiyor](data-jamf-sends-to-intune.md)
+- [Data Jamf sends to Intune](data-jamf-sends-to-intune.md)

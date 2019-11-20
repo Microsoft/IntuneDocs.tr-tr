@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune-Azure 'da Android kurumsal cihaz ayarları | Microsoft Docs
-description: Android Enterprise veya Android for Work cihazlarında, kopyalama ve yapıştırma, bildirimleri gösterme, uygulama izinleri, veri paylaşımı, parola uzunluğu, oturum açma sayısı, kilidi açmak, parolaları yeniden kullanmak ve Bluetooth 'u etkinleştirmek dahil olmak üzere cihazdaki ayarları kısıtlayın iş kişilerinin paylaşılması. Tek bir uygulama veya birden çok uygulama çalıştırmak için cihazları adanmış bir cihaz bilgi noktası olarak yapılandırın.
+title: Android Enterprise device settings in Microsoft Intune - Azure | Microsoft Docs
+description: On Android Enterprise or Android for Work devices, restrict settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, use fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. Configure devices as a dedicated device kiosk to run one app, or multiple apps.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,209 +15,212 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 33f7c2aa6d6575dd4ebf4d3cd772bb7f02472578
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 25af87f2bd4eaf5371a1e1a1237298a6808f4f5e
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164533"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188171"
 ---
-# <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Android kurumsal cihaz ayarları
+# <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise device settings to allow or restrict features using Intune
 
-Bu makale, Android kurumsal cihazlarda denetleyebilmeniz için farklı ayarları listeler ve tanımlar. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak bu ayarları, özelliklere izin vermek veya devre dışı bırakmak, uygulamaları adanmış cihazlarda çalıştırmak, güvenliği denetlemek ve daha fazlasını yapmak için kullanın.
+This article lists and describes the different settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, run apps on dedicated devices, control security, and more.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Bir cihaz yapılandırma profili oluşturun](device-restrictions-configure.md).
+[Create a device configuration profile](device-restrictions-configure.md).
 
-## <a name="device-owner-only"></a>Yalnızca cihaz sahibi
+## <a name="device-owner-only"></a>Device owner only
 
 ### <a name="general-settings"></a>Genel ayarlar
 
-- **Ekran yakalama**: cihazda ekran görüntülerini veya ekran yakalamalarını engellemek için **Engelle** ' yi seçin. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Yapılandırılmadı** , kullanıcının ekran içeriğini bir resim olarak yakalamasına olanak sağlar.
-- **Kamera**: cihazdaki kameraya erişimi engellemek için **Engelle** ' yi seçin. **Gerekli değildir** cihaz kamerasına erişim izni verir.
+- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Not configured** lets the user capture the screen contents as an image.
+- **Camera**: Choose **Block** to prevent access to the camera on the device. **Not required** allows access to the device's camera.
 - **Varsayılan izin ilkesi**: Bu ayar, çalışma zamanı izin istekleri için varsayılan izin ilkesini tanımlar. Olası değerler şöyledir:
   - **Cihaz varsayılanı**: Cihazın varsayılan ayarını kullanın.
   - **İstem**: Kullanıcıdan izni onaylaması istenir.
   - **Otomatik olarak izin ver**: İzinler otomatik olarak verilir.
   - **Otomatik olarak reddet**: İzinler otomatik reddedilir.
-- **Tarih ve saat değişiklikleri**: kullanıcıların tarih ve saati el ile ayarlamamasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** ayarı, kullanıcıların cihazdaki tarih ve saati belirlemesine izin verir.
-- **Birim değişiklikleri**: **Engelle** , kullanıcıların cihazın birimini değiştirmesini önler ve ana birimi de kapatır. **Yapılandırılmadı** , cihazdaki birim ayarlarının kullanılmasına izin verir.
-- **Fabrika Sıfırlaması**: kullanıcıların cihaz ayarlarındaki fabrika sıfırlaması seçeneğini kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların cihazda bu ayarı kullanmasına izin verir.
-- **Güvenli önyükleme**: Kullanıcıların cihazı güvenli moda önyüklemesini önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** , kullanıcıların cihazı güvenli modda yeniden açmasına izin verir.
-- **Durum çubuğu**: bildirimler ve hızlı ayarlar dahil olmak üzere durum çubuğuna erişimi engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların durum çubuğuna erişmesine izin verir.
-- **Dolaşım veri Hizmetleri**: hücresel ağ üzerinde veri dolaşımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihaz hücresel ağ üzerindeyken veri dolaşımına izin verir.
-- **Wi-Fi ayarı değişiklikleri**: kullanıcıların cihaz sahibi tarafından oluşturulan Wi-Fi ayarlarını değiştirmesini engellemek için **Engelle** ' yi seçin. Kullanıcılar kendi Wi-Fi yapılandırmalarının oluşturulmasını sağlayabilir. **Yapılandırılmadı** , kullanıcıların cihazdaki Wi-Fi ayarlarını değiştirmesine izin verir.
-- **Wi-Fi erişim noktası yapılandırması**: kullanıcıların herhangi bir Wi-Fi yapılandırması oluşturmasını veya değiştirmesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların cihazdaki Wi-Fi ayarlarını değiştirmesine izin verir.
-- **Bluetooth yapılandırması**: kullanıcıların cihazda Bluetooth 'u yapılandırmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda Bluetooth kullanımına izin verir.
-- **Internet paylaşımı ve etkin noktalara erişim**: **engellemeyi** engellemek için bloğu seçin ve taşınabilir etkin noktalara erişin. **Yapılandırılmadı** , internet paylaşımı ve taşınabilir etkin noktalara erişim sağlar.
-- **USB depolama**: cihazda USB depolamaya erişime **izin ver** ' i seçin. **Yapılandırılmamış** , USB depolamaya erişimi engeller.
-- **USB dosya aktarımı**: USB üzerinden dosya aktarımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , dosyaların aktarılmasına izin verir.
-- **Dış medya**: cihazda herhangi bir dış medyanın kullanılmasını veya bağlanmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda dış medyaya izin verir.
-- **NFC kullanarak Kirme verileri**: uygulamalardan gelen verileri Kirmek Için yakın alan ILETIŞIMI (NFC) teknolojisini kullanmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazlar arasında veri paylaşmak için NFC 'nin kullanılmasına izin verir.
-- **Hata ayıklama özellikleri**: kullanıcıların cihazdaki hata ayıklama özelliklerini kullanmasına izin vermek Için **izin ver** ' i seçin. **Yapılandırılmadı** , kullanıcıların cihazdaki hata ayıklama özelliklerini kullanmalarını önler.
-- **Mikrofon ayarlaması**: kullanıcıların mikrofonu kapatıp mikrofon sesini ayarlamasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının cihazdaki mikrofonun hacmini kullanmasına ve ayarlamasına izin verir.
-- **Fabrika Sıfırlaması koruma e-postaları**: **Google hesabı e-posta adreslerini**seçin. Temizlenmeden sonra cihazın kilidini açabilebilen cihaz yöneticilerinin e-posta adreslerini girin. E-posta adreslerini `admin1@gmail.com;admin2@gmail.com`gibi noktalı virgülle ayırdığınızdan emin olun. E-posta girilmemişse, fabrika ayarlarına geri yüklendikten sonra herkes cihazın kilidini açabilir. Bu e-postalar yalnızca, Kurtarma menüsünü kullanarak Fabrika Sıfırlaması çalıştırma gibi kullanıcı olmayan bir fabrika sıfırlaması çalıştırıldığında geçerlidir.
-- **Ağ çıkış taraması**: kullanıcıların ağ çıkış tarama özelliğini etkinleştirmesine izin vermek için **Etkinleştir** ' i seçin. Cihaz önyüklendiğinde bir ağ bağlantısı yapılmazsa, çıkış taraması geçici olarak bir ağa bağlanmayı ve cihaz ilkesini yenilemeyi ister. Bu ilke uygulandıktan sonra geçici ağ unutulur ve cihaz önyüklemeye devam eder. Bu özellik aşağıdaki durumlarda cihazları bir ağa bağlar:
-  - Son ilkede uygun bir ağ yok.
-  - Cihaz, kilit görevi modunda bir uygulamada önyüklenir.
-  - Kullanıcı, cihaz ayarlarına ulaşamıyor.
+- **Date and Time changes**: Choose **Block** to prevent users from manually setting the date and time. **Not configured** allows users to the set date and time on the device.
+- **Volume changes**: **Block** prevents users from changing the device's volume, and also mutes the master volume. **Not configured** allows using the volume settings on the device.
+- **Factory reset**: Choose **Block** to prevent users from using the factory reset option in the device's settings. **Not configured** allows users to use this setting on the device.
+- **Güvenli önyükleme**: Kullanıcıların cihazı güvenli moda önyüklemesini önlemek için **Engelle** olarak ayarlayın. **Not configured** allows users to reboot the device in safe mode.
+- **Status bar**: Choose **Block** to prevent access to the status bar, including notifications and quick settings. **Not configured** allows users access to the status bar.
+- **Roaming data services**: Choose **Block** to prevent data roaming over the cellular network. **Not configured** allows data roaming when the device is on a cellular network.
+- **Wi-Fi setting changes**: Choose **Block** to prevent users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. **Not configured** allows users to change the Wi-Fi settings on the device.
+- **Wi-Fi access point configuration**: Choose **Block** to prevent users from creating or changing any Wi-Fi configurations. **Not configured** allows users to change the Wi-Fi settings on the device.
+- **Bluetooth configuration**: Choose **Block** to prevent users from configuring Bluetooth on the device. **Not configured** allows using Bluetooth on the device.
+- **Tethering and access to hotspots**: Choose **Block** to prevent tethering and access to portable hotspots. **Not configured** allows tethering and access to portable hotspots.
+- **USB storage**: Choose **Allow** to access USB storage on the device. **Not configured** prevents access to USB storage.
+- **USB file transfer**: Choose **Block** to prevent transferring files over USB. **Not configured** allows transferring files.
+- **External media**: Choose **Block** to prevent using or connecting any external media on the device. **Not configured** allows external media on the device.
+- **Beam data using NFC**: Choose **Block** to prevent using the Near Field Communication (NFC) technology to beam data from apps. **Not configured** allows using NFC to share data between devices.
+- **Debugging features**: Choose **Allow** to let users use debugging features on the device. **Not configured** prevents users from using the debugging features on the device.
+- **Microphone adjustment**: Choose **Block** to prevent users from unmuting the microphone and adjusting the microphone volume. **Not configured** allows the user to use and adjust the volume of the microphone on the device.
+- **Factory reset protection emails**: Choose **Google account email addresses**. Enter the email addresses of device administrators that can unlock the device after it's wiped. Be sure to separate the email addresses with a semi-colon, such as `admin1@gmail.com;admin2@gmail.com`. If an email isn't entered, anyone can unlock the device after it's restored to the factory settings. These emails only apply when a non-user factory reset is ran, such as running a factory reset using the recovery menu.
+- **Network escape hatch**: Choose **Enable** to allow users to turn on the network escape hatch feature. If a network connection isn't made when the device boots, then the escape hatch asks to temporarily connect to a network and refresh the device policy. Bu ilke uygulandıktan sonra geçici ağ unutulur ve cihaz önyüklemeye devam eder. This feature connects devices to a network if:
+  - There isn't a suitable network in the last policy.
+  - The device boots into an app in lock task mode.
+  - The user is unable to reach the device settings.
 
-  **Yapılandırılmadı** seçeneği, kullanıcıların cihazda ağ çıkış tarama özelliğini açmasını önler.
+  **Not configured** prevents users from turning on the network escape hatch feature on the device.
 
-- **Sistem güncelleştirmesi**: cihazın kablosuz güncelleştirmeleri nasıl işlediğini tanımlamak için bir seçenek belirleyin:
+- **System update**: Choose an option to define how the device handles over-the-air updates:
   - **Cihaz Varsayılanı**: Cihazın varsayılan ayarını kullanın.
   - **Otomatik**: Güncelleştirmeler, kullanıcı etkileşimi olmadan otomatik olarak yüklenir. Bu ilkeyi seçmek, bekleyen tüm güncelleştirmeleri hemen yükler.
-  - **Erteleme**: Güncelleştirmeler 30 gün boyunca ertelenir. 30 günün sonunda Android, kullanıcıdan güncelleştirmeyi yüklemesini ister. Cihaz üreticilerin veya taşıyıcıların önemli güvenli güncelleştirmelerinin ertelenmesini engellemek (muaf tutmak) mümkündür. Muaf tutulan bir güncelleştirme cihazda kullanıcıya bir sistem bildirimi gösterir.
-  - **Bakım penceresi**: Güncelleştirmeleri Intune'da ayarladığınız bir günlük bakım penceresi içinde otomatik olarak yükler. Yükleme 30 gün boyunca günlük olarak çalışır ve yeterli alan veya pil düzeyi yoksa başarısız olabilir. 30 gün sonra, Android kullanıcıdan yüklemesini ister. Bu pencere ayrıca Oynatma uygulamalarının güncelleştirmelerini yüklemek için de kullanılır. Tek uygulamayla ayrılmış cihaz ön plan uygulamaları güncelleştirilemeyebilir, kiosks gibi adanmış cihazlar için bu seçeneği kullanın.
+  - **Erteleme**: Güncelleştirmeler 30 gün boyunca ertelenir. At the end of the 30 days, Android prompts the user to install the update. Cihaz üreticilerin veya taşıyıcıların önemli güvenli güncelleştirmelerinin ertelenmesini engellemek (muaf tutmak) mümkündür. Muaf tutulan bir güncelleştirme cihazda kullanıcıya bir sistem bildirimi gösterir.
+  - **Bakım penceresi**: Güncelleştirmeleri Intune'da ayarladığınız bir günlük bakım penceresi içinde otomatik olarak yükler. Installation tries daily for 30 days, and can fail if there's insufficient space or battery levels. After 30 days, Android prompts the user to install. Bu pencere ayrıca Oynatma uygulamalarının güncelleştirmelerini yüklemek için de kullanılır. Use this option for dedicated devices, such as kiosks, as single-app dedicated device foreground apps can be updated.
 
-- Bildirim pencereleri: **devre dışı**olarak ayarlandığında, **tofıler**, gelen çağrılar, giden çağrılar, sistem uyarıları ve sistem hataları dahil olmak üzere pencere bildirimleri cihazda gösterilmez. **Yapılandırılmadı**olarak ayarlandığında, varsayılan işletim sistemi kullanılır ve bu da bildirimleri göstermek olabilir.
-- **İlk kullanım Ipuçlarını atla**: uygulama başladığında öğreticilerle gezinmek veya tanıtım ipuçlarını okumak üzere uygulamalardan önerileri gizlemek veya atlamak için **Etkinleştir** ' i seçin. **Yapılandırılmadı**olarak ayarlandığında, uygulama başlatıldığında Bu önerilerin gösterilmesi için işletim sistemi varsayılanı kullanılır.
+- **Notification windows**: When set to **Disable**, window notifications, including toasts, incoming calls, outgoing calls, system alerts, and system errors are not shown on the device. When set to **Not configured**, the operating system default is used, which may be to show notifications.
+- **Skip first use hints**: Choose **Enable** to hide or skip suggestions from apps to step through tutorials or read any introductory hints when the app starts. When set to **Not configured**, the operating system default is used, which may be to show these suggestions when the app starts.
 
 ### <a name="system-security-settings"></a>Sistem güvenliği ayarları
 
-- **Uygulamalarda tehdit taraması**: **gerektir** (varsayılan), uygulamaları yüklenmeden önce ve sonra taraması için Google Play koruma sağlar. Tehdit algılarsa, uygulamayı cihazdan kaldırmak için kullanıcıyı uyarabilir. **Yapılandırılmadı** , uygulamaları taramak Için Google Play koruma sağlamaz veya çalıştırılmaz.
+- **Threat scan on apps**: **Require** (default) enables Google Play Protect to scan apps before and after they’re installed. If it detects a threat, it may warn the user to remove the app from the device. **Not configured** doesn't enable or run Google Play Protect to scan apps.
 
-### <a name="dedicated-device-settings"></a>Adanmış cihaz ayarları
+### <a name="dedicated-device-settings"></a>Dedicated device settings
 
-Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak için bu ayarları kullanın. Bir cihazı tek bir uygulamayı çalıştıracak şekilde yapılandırabilir veya birçok uygulama çalıştırabilirsiniz. Cihaz bilgi noktası moduyla ayarlandığında, yalnızca eklediğiniz uygulamalar kullanılabilir. Bu ayarlar Android kurumsal adanmış cihazlara uygulanır. Android kurumsal tam yönetilen cihazlara uygulanmaz.
+Use these settings to configure a kiosk-style experience on your dedicated devices. You can configure a device to run one app, or run many apps. When a device is set with kiosk mode, only the apps you add are available. These settings apply to Android Enterprise dedicated devices. They don't apply to Android Enterprise fully managed devices.
 
-**Bilgi noktası modu**: cihazın bir uygulama çalıştırmasını veya birden çok uygulamayı çalıştırmasını seçin.
+**Kiosk mode**: Choose if the device runs one app or runs multiple apps.
 
-- **Tek uygulama**: kullanıcılar cihazdaki tek bir uygulamaya yalnızca erişebilir. Cihaz başlatıldığında yalnızca belirli bir uygulama başlatılır. Kullanıcılar yeni uygulamalar açamaz veya çalışan uygulamayı değiştiremez.
+- **Single app**: Users can only access a single app on the device. When the device starts, only the specific app starts. Kullanıcılar yeni uygulamalar açamaz veya çalışan uygulamayı değiştiremez.
 
-  - **Yönetilen bir uygulama seçin**: listeden yönetilen Google Play uygulamasını seçin.
+  - **Select a managed app**: Select the managed Google Play app from the list.
 
-    Listelenen uygulamalarınız yoksa cihaza [bazı Android uygulamaları ekleyin](../apps/apps-add-android-for-work.md) . [Uygulamayı adanmış cihazlarınız için oluşturulan cihaz grubuna atadığınızdan](../apps/apps-deploy.md)emin olun.
-
-  > [!IMPORTANT]
-  > Tek uygulama bilgi noktası modu kullanılırken, çevirici/telefon uygulamaları düzgün çalışmayabilir. 
-  
-- **Çoklu uygulama**: kullanıcılar cihazdaki sınırlı bir uygulama kümesine erişebilir. Cihaz başlatıldığında yalnızca eklediğiniz uygulamalar başlatılır. Ayrıca, kullanıcıların açabilme bazı Web bağlantıları ekleyebilirsiniz. İlke uygulandığında, kullanıcılar giriş ekranında izin verilen uygulamalar için simgeler görür.
+    If you don't have any apps listed, then [add some Android apps](../apps/apps-add-android-for-work.md) to the device. Be sure to [assign the app to the device group created for your dedicated devices](../apps/apps-deploy.md).
 
   > [!IMPORTANT]
-  > Çok uygulamayla ayrılmış cihazlarda, Google Play [yönetilen giriş ekranı uygulamasının](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) şu **olması gerekir**:
-  >   - Intune 'da [istemci uygulaması olarak eklendi](../apps/apps-add-android-for-work.md)
-  >   - Adanmış cihazlarınız için oluşturulan [cihaz grubuna atandı](../apps/apps-deploy.md)
-  >
-  > **Yönetilen giriş ekranı** uygulamasının yapılandırma profilinde olması gerekmez, ancak istemci uygulaması olarak eklenmesi gerekir. **Yönetilen giriş ekranı** uygulaması bir istemci uygulaması olarak eklendiğinde, yapılandırma profiline eklediğiniz diğer uygulamalar **yönetilen giriş ekranı** uygulamasında simgeler olarak gösterilir.
-  >
-  > Birden çok uygulama bilgi noktası modu kullanılırken, çevirici/telefon uygulamaları düzgün çalışmayabilir. 
-
-  - **Ekle**: listeden uygulamalarınızı seçin.
-
-    **Yönetilen giriş ekranı** uygulaması listede yoksa [Google Play ekleyin](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Uygulamayı adanmış cihazlarınız için oluşturulan cihaz grubuna [atadığınızdan](../apps/apps-deploy.md) emin olun.
-
-    Ayrıca, kuruluşunuz tarafından oluşturulan diğer [Android uygulamalarını](../apps/apps-add-android-for-work.md) ve [Web uygulamalarını](../apps/web-app.md) cihaza ekleyebilirsiniz. [Uygulamayı adanmış cihazlarınız için oluşturulan cihaz grubuna atadığınızdan](../apps/apps-deploy.md)emin olun.
-
-  - **Sanal giriş düğmesi**: kullanıcıların uygulamalar arasında geçiş yapabilmesi Için kullanıcıları yönetilen giriş ekranına döndüren bir yazılım tuşu düğmesi. Seçenekleriniz şunlardır:
-
-    - **Yapılandırılmadı** (varsayılan): Giriş düğmesi gösterilmez. Kullanıcıların, uygulamalar arasında geçiş yapmak için geri düğmesini kullanmaları gerekir.
-    - **Yukarı çek**: bir giriş düğmesi, bir kullanıcının cihazda ne zaman yüzümü gösterdiğini gösterir.
-    - **Kayan**: cihazda kalıcı, kayan bir giriş düğmesi gösterir.
-
-  - **Bilgi noktası modunu bırak**: yöneticilerin cihazı güncelleştirmek için bilgi noktası modunu geçici olarak duraklamasını sağlamak için **Etkinleştir** ' i seçin. Bu özelliği kullanmak için yönetici:
+  > When using single-app kiosk mode, dialer/phone apps may not function properly. 
   
-    1. **Çıkış bilgi noktası** düğmesi gösterilene kadar geri düğmesini seçmeye devam eder. 
-    2. **Bilgi noktası çıkış** düğmesini seçer ve **bilgi noktası modu kod** PIN 'ini girer.
-    3. İşiniz bittiğinde, **yönetilen giriş ekranı** uygulamasını seçin. Bu adım, cihazı çok uygulama bilgi noktası moduna yeniden kilitler.
+- **Multi-app**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
 
-      **Yapılandırılmadı**olarak ayarlandığında, Yöneticiler bilgi noktası modunu duraklatabilir. Yönetici geri düğmesini seçip, **bilgi noktası çıkışı** düğmesini seçerse bir ileti geçiş kodunun gerekli olduğunu belirtir.
+  > [!IMPORTANT]
+  > For multi-app dedicated devices, the [Managed Home Screen app](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) from Google Play **must be**:
+  >   - [Added as a client app](../apps/apps-add-android-for-work.md) in Intune
+  >   - [Assigned to the device group](../apps/apps-deploy.md) created for your dedicated devices
+  >
+  > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app. When the **Managed Home Screen** app is added as a client app, any other apps you add in the configuration profile are shown as icons on the **Managed Home Screen** app.
+  >
+  > When using multi-app kiosk mode, dialer/phone apps may not function properly. 
 
-    - **Bilgi noktası modu kodunu bırak**: 4-6 basamaklı sayısal bir PIN girin. Yönetici bilgi noktası modunu geçici olarak duraklatmak için bu PIN 'ı kullanır.
+  - **Add**: Select your apps from the list.
 
-  - **Özel URL arka planı ayarla**: adanmış cihazda arka plan ekranını özelleştirmek IÇIN bir URL girin.
+    If the **Managed Home Screen** app isn't listed, then [add it from Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Be sure to [assign the app](../apps/apps-deploy.md) to the device group created for your dedicated devices.
+
+    You can also add other [Android apps](../apps/apps-add-android-for-work.md) and [web apps](../apps/web-app.md) created by your organization to the device. Be sure to [assign the app to the device group created for your dedicated devices](../apps/apps-deploy.md).
+
+  - **Virtual home button**: A soft-key button that returns users to the Managed Home Screen so users can switch between apps. Seçenekleriniz şunlardır:
+
+    - **Not configured** (default): A home button isn't shown. Users must use the back button to switch between apps.
+    - **Swipe up**: A home button shows when a user swipes up on the device.
+    - **Floating**: Shows a persistent, floating home button on the device.
+
+  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator:
+  
+    1. Continues to select the back button until the **Exit kiosk** button is shown. 
+    2. Selects the **Exit kiosk** button, and enters the **Leave kiosk mode code** PIN.
+    3. When finished, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode.
+
+      When set to **Not configured**, administrators can't pause kiosk mode. If the administrator continues to select the back button, and selects the **Exit kiosk** button, then a message states that a passcode is required.
+
+    - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
+
+  - **Set custom URL background**: Enter a URL to customize the background screen on the dedicated device.
 
     > [!NOTE]
-    > Çoğu durumda, en az aşağıdaki boyutlardaki görüntülerle başlamasını öneririz:
+    > For most cases, we recommend starting with images of at least the following sizes:
     >
-    > - Telefon: 1080x1920 px
+    > - Phone: 1080x1920 px
     > - Tablet: 1920x1080 px
     >
-    > En iyi deneyim ve ayrıntılı Ayrıntılar için, görüntüleme belirtimlerine cihaz başına görüntü varlıkları oluşturulması önerilir.
+    > For the best experience and crisp details, it’s suggested that per device image assets be created to the display specifications.
     >
-    > Modern görüntüler, daha yüksek piksel yoğunluklarını ve eşdeğer 2K/4K tanım görüntülerini görüntüleyebilir.
+    > Modern displays have higher pixel densities and can display equivalent 2K/4K definition images.
 
-  - **Wi-Fi yapılandırması**: **Etkinleştir** ayarı, yönetilen giriş ekranında Wi-Fi denetimini gösterir ve son kullanıcıların cihazı farklı WiFi ağlarına bağlanmasına izin verir. Bu özelliği etkinleştirmek Ayrıca cihaz konumunu da etkinleştirir. **Yapılandırılmamış** (varsayılan), yönetilen giriş ekranında Wi-Fi denetimini göstermez. Kullanıcıların, yönetilen giriş ekranını kullanırken Wi-Fi ağlarına bağlanmasını engeller.
+  - **Wi-Fi configuration**: **Enable** shows the Wi-Fi control on the Managed Home Screen, and allows end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Wi-Fi control on the Managed Home Screen. It prevents users from connecting to Wi-Fi networks while using the Managed Home Screen.
 
-  - **Bluetooth yapılandırması**: **Etkinleştir** ayarı, yönetilen giriş ekranında Bluetooth denetimini gösterir ve son kullanıcıların cihazları Bluetooth üzerinden eşleştirmesine izin verir. Bu özelliği etkinleştirmek Ayrıca cihaz konumunu da etkinleştirir. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında Bluetooth denetimini göstermez. Yönetilen giriş ekranını kullanırken kullanıcıların Bluetooth ve eşleme cihazlarını yapılandırmalarını engeller.
+  - **Bluetooth configuration**: **Enable** shows the Bluetooth control on the Managed Home Screen, and allows end users to pair devices over Bluetooth. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Bluetooth control on the Managed Home Screen. It prevents users from configuring Bluetooth and pairing devices while using the Managed Home Screen.
 
-  - **El feneri erişimi**: **Enable** , yönetilen giriş ekranında el feneri denetimini gösterir ve son kullanıcıların el feneri 'i açmasına veya kapatılmasına izin verir. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında el feneri denetimini göstermez. Yönetilen giriş ekranını kullanırken kullanıcıların el feneri kullanmasını engeller.
+  - **Flashlight access**: **Enable** shows the flashlight control on the Managed Home Screen, and allows end users to turn the flashlight on or off. **Not configured** (default) doesn't show the flashlight control on Managed Home Screen. It prevents users from using the flashlight while using the Managed Home Screen.
 
-  - **Media Volume Control**: **Enable** ayarı, yönetilen giriş ekranında medya birimi denetimini gösterir ve son kullanıcıların bir kaydırıcı kullanarak cihazın medya birimini ayarlamasına olanak tanır. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında medya birimi denetimini göstermez. Kullanıcıların, donanım düğmeleri onu desteklemediği sürece, yönetilen giriş ekranını kullanırken cihazın medya hacmini değiştirmesini engeller. 
+  - **Media volume control**: **Enable** shows the media volume control on the Managed Home Screen, and allows end users to adjust the device's media volume using a slider. **Not configured** (default) doesn't show the media volume control on Managed Home Screen. It prevents users from adjusting the device's media volume while using the Managed Home Screen, unless their hardware buttons support it. 
 
-  - **Ekran koruyucu modu**: **Etkinleştir** , cihaz kilitlendiğinde veya zaman aşımına uğrarsa yönetilen giriş ekranında bir ekran koruyucu gösterir. **Yapılandırılmadı** (varsayılan), yönetilen giriş ekranında bir ekran koruyucu göstermez.
+  - **Screen saver mode**: **Enable** shows a screensaver on the Managed Home Screen when the device is locked or times out. **Not configured** (default) doesn't show a screensaver on the Managed Home Screen.
 
-    Etkinleştirildiğinde, şunları da yapılandırın:
+    When enabled, also configure:
 
-    - **Özel ekran koruyucu görüntüsünü ayarla**: özel bır görüntünün URL 'sini girin. Örneğin şunu girin:
+    - **Set custom screen saver image**: Enter the URL to a custom PNG, JPG, JPEG, GIF, BMP, WebP, or ICOimage. For example, enter:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
-      - `https://www.contoso.com/image.html`
+      - `https://www.contoso.com/image.webp`
 
-      Bir URL girmezseniz, varsayılan bir görüntü varsa cihazın varsayılan görüntüsü kullanılır.
+      If you don't enter a URL, then the device's default image is used, if there is a default image.
+      
+      > [!TIP]
+      > Any file resource URL that can be turned into a bitmap is supported.
 
-    - **Cihazın ekranı kapatmadan önce ekran koruyucuyu gösterdiği saniye sayısı**: cihazın ekran koruyucuyu ne kadar süreyle gösterdüğüne seçin. 0-9999999 saniye arasında bir değer girin. Varsayılan değer `0` saniyedir. Boş bırakıldığında veya sıfır (`0`) olarak ayarlandığında, Kullanıcı cihazla etkileşime gelinceye kadar ekran koruyucusu etkin olur.
-    - **Ekran koruyucuyu göstermeden önce cihazın etkin olmadığı saniye sayısı**: ekran koruyucuyu göstermeden önce cihazın ne kadar süreyle boşta kalacağını seçin. 1-9999999 saniye arasında bir değer girin. Varsayılan değer `30` saniyedir. Sıfırdan büyük bir sayı girmeniz gerekir (`0`).
-    - **Ekran koruyucuyu başlatmadan önce medyayı Algıla**: cihazda ses veya video yürütülıyorsa, **Etkinleştir** (varsayılan) ekran koruyucuyu göstermez. **Yapılandırılmadı** , ses veya video oynatılsa bile ekran koruyucuyu gösterir.
+    - **Number of seconds the device shows screen saver before turning off screen**: Choose how long the device shows the screensaver. Enter a value between 0-9999999 seconds. Default is `0` seconds. When left blank, or set to zero (`0`), the screen saver is active until a user interacts with the device.
+    - **Number of seconds the device is inactive before showing screen saver**: Choose how long the device is idle before showing the screensaver. Enter a value between 1-9999999 seconds. Default is `30` seconds. You must enter a number greater than zero (`0`).
+    - **Detect media before starting screen saver**: **Enable** (default) doesn't show the screen saver if audio or video is playing on the device. **Not configured** shows the screen saver, even if audio or video is playing.
 
 ### <a name="device-password-settings"></a>Cihaz parola ayarları
 
-- **Kilit ekranını devre dışı bırak**: kullanıcıların cihazda keyguard kilit ekranı özelliğini kullanmalarını engellemek Için **devre dışı bırak** ' ı seçin. **Yapılandırılmadı** , kullanıcının keyguard özelliklerini kullanmasına izin verir.
-- **Devre dışı kilit ekranı özellikleri**: cihazda keyguard etkinleştirildiğinde, hangi özelliklerin devre dışı bırakılacağını seçin. Örneğin, **güvenli kamera** işaretlendiğinde kamera özelliği cihazda devre dışı bırakılır. Denetlenmeyen tüm özellikler cihazda etkinleştirilir.
+- **Disable lock screen**: Choose **Disable** to prevent users from using Keyguard lock screen feature on the device. **Not configured** allows the user to use the Keyguard features.
+- **Disabled lock screen features**: When keyguard is enabled on the device, choose which features to disable. For example, when **Secure camera** is checked, the camera feature is disabled on the device. Any features not checked are enabled on the device.
 
-  Bu özellikler, cihaz kilitlendiğinde kullanıcılar tarafından kullanılabilir. Kullanıcılar işaretli özellikleri göremez veya erişemez.
+  These features are available to users when the device is locked. Users won't see or access features that are checked.
 
 - **Gerekli parola türü**: Cihaz için gerekli parola türünü tanımlayın. Seçenekleriniz şunlardır:
   - **Cihaz varsayılanı**
   - **Parola gerekli, kısıtlama yok**
-  - **Zayıf biyometrik**: [güçlü ve zayıf Biyometri](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (Android 'in Web sitesini açar)
-  - **Sayısal**: parola yalnızca sayı olmalıdır, örneğin `123456789`. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
-  - **Sayısal karmaşık**: "1111" veya "1234" gibi yinelenen veya ardışık numaralara izin verilmez. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
-  - **Alfabetik**: alfabedeki harfler gereklidir. Rakamlar ve simgeler zorunlu tutulmaz. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
-  - **Alfasayısal**: büyük harfler, küçük harfler ve sayısal karakterler içerir. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
-  - **Simgelerle alfasayısal**: büyük harfler, küçük harfler, sayısal karakterler, noktalama işaretleri ve semboller içerir. Şunları da girin:
+  - **Weak biometric**: [Strong vs. weak biometrics](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (opens Android's web site)
+  - **Numeric**: Password must only be numbers, such as `123456789`. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+  - **Numeric complex**: Repeated or consecutive numbers, such as "1111" or "1234", aren't allowed. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+  - **Alphabetic**: Letters in the alphabet are required. Rakamlar ve simgeler zorunlu tutulmaz. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+  - **Alphanumeric**: Includes uppercase letters, lowercase letters, and numeric characters. Kullanıcının girmesi gereken **parolanın uzunluk alt sınırını** girin (4 ile 16 karakter arasında).
+  - **Alphanumeric with symbols**: Includes uppercase letters, lowercase letters, numeric characters, punctuation marks, and symbols. Şunları da girin:
 
-    - **Minimum parola uzunluğu**: parolanın, 4 ile 16 karakter arasında olması gereken minimum uzunluğu girin.
-    - **Gerekli karakter sayısı**: parolanın, 0 ile 16 karakter arasında olması gereken karakter sayısını girin.
-    - **Gereken küçük harfli karakter sayısı**: parolanın, 0 ile 16 karakter arasında olması gereken küçük harfli karakter sayısını girin.
-    - **Gerekli olan büyük harfli karakter sayısı**: parolanın, 0 ile 16 karakter arasında olması gereken büyük harfli karakter sayısını girin.
-    - **Gerekli harf olmayan karakter sayısı**: parolanın, 0 ile 16 karakter arasında olması gereken harf olmayan karakter sayısını (alfabedeki harfler dışında bir şey) girin.
-    - **Gerekli sayısal karakter sayısı**: parolanın 0 ile 16 karakter arasında olması gereken sayısal karakter sayısını (`1`, `2`, `3`vb.) girin.
-    - **Gerekli simge karakter sayısı**: parolanın 0 ile 16 karakter arasında olması gereken simge karakterlerinin (`&`, `#`, `%`vb.) sayısını girin.
+    - **Minimum password length**: Enter the minimum length the password must have, between 4 and 16 characters.
+    - **Number of characters required**: Enter the number of characters the password must have, between 0 and 16 characters.
+    - **Number of lowercase characters required**: Enter the number of lowercase characters the password must have, between 0 and 16 characters.
+    - **Number of uppercase characters required**: Enter the number of uppercase characters the password must have, between 0 and 16 characters.
+    - **Number of non-letter characters required**: Enter the number of non-letters (anything other than letters in the alphabet) the password must have, between 0 and 16 characters.
+    - **Number of numeric characters required**: Enter the number of numeric characters (`1`, `2`, `3`, and so on) the password must have, between 0 and 16 characters.
+    - **Number of symbol characters required**: Enter the number of symbol characters (`&`, `#`, `%`, and so on) the password must have, between 0 and 16 characters.
 
-- **Parolanın süresi dolana kadar geçen gün sayısı**: cihaz parolasının değiştirilmesi gereken gün sayısını, 1-365 arasında girin. Örneğin parolanın 60 gün sonra değiştirilmesi için `60` girin. Parola geçerlilik süresi dolduğunda kullanıcıların yeni bir parola oluşturması istenir.
-- **Kullanıcının bir parolayı yeniden kullanabilmesi için gereken parola sayısı**: 1-24 arasında yeniden kullanılamayacak son parola sayısını girin. Son kullanıcının daha önce kullanılmış parolalar oluşturmasını önlemek için bu ayarı kullanın.
-- **Cihaz silinmeden önceki oturum açma hatalarının sayısı**: cihaz temizlenmeden önce izin verilen başarısız oturum açma işlemlerinin sayısını (4-11) girin.
+- **Number of days until password expires**: Enter the number of days, between 1-365, until the device password must be changed. Örneğin parolanın 60 gün sonra değiştirilmesi için `60` girin. Parola geçerlilik süresi dolduğunda kullanıcıların yeni bir parola oluşturması istenir.
+- **Number of passwords required before user can resuse a password**: Enter the number of recent passwords that can't be reused, between 1-24. Son kullanıcının daha önce kullanılmış parolalar oluşturmasını önlemek için bu ayarı kullanın.
+- **Number of sign-in failures before wiping device**: Enter the number, between 4-11, of failed sign-ins to allow before the device is wiped.
 
 ### <a name="power-settings"></a>Güç ayarları
 
-- **Kilit süresi ekranı**: bir kullanıcının cihaz kilitlenmeden önce ayarlayabilen en uzun süreyi girin. Örneğin, bu ayarı **10 dakika**olarak ayarlarsanız, kullanıcılar süreyi 15 saniye ila 10 dakikaya ayarlayabilir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya denetlemez.
+- **Time to lock screen**: Enter the maximum time a user can set until the device locks. For example, if you set this setting to **10 minutes**, then users can set the time from 15 seconds up to 10 minutes. When set to **Not configured** (default), Intune doesn't change or control this setting.
 
 - **Cihaz prize takılıyken ekran açık**: Cihaz prize takılıyken hangi güç kaynaklarının ekranın açık kalmasına neden olacağını seçin.
 
 ### <a name="users-and-accounts-settings"></a>Kullanıcılar ve Hesaplar ayarları
 
-- **Yeni kullanıcı ekle**: Kullanıcıların yeni kullanıcı eklemesini önlemek için **Engelle** olarak ayarlayın. Her Kullanıcı, cihazda özel giriş ekranları, hesaplar, uygulamalar ve ayarlar için bir kişisel alana sahiptir. **Yapılandırılmadı** , kullanıcıların cihaza başka kullanıcılar eklemesine izin verir.
-- **Kullanıcı kaldırma**: Kullanıcıların kullanıcı kaldırmasını önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** , kullanıcıların cihazdan diğer kullanıcıları kaldırmasına izin verir.
-- **Hesap değişiklikleri**: Kullanıcıların hesaplarda değişiklik yapmasını önlemek için **Engelle** olarak ayarlayın. **Yapılandırılmadı** , kullanıcıların cihazdaki kullanıcı hesaplarını güncelleştirmesine izin verir.
+- **Yeni kullanıcı ekle**: Kullanıcıların yeni kullanıcı eklemesini önlemek için **Engelle** olarak ayarlayın. Each user has a personal space on the device for custom Home screens, accounts, apps, and settings. **Not configured** allows users to add other users to the device.
+- **Kullanıcı kaldırma**: Kullanıcıların kullanıcı kaldırmasını önlemek için **Engelle** olarak ayarlayın. **Not configured** allows users to remove other users from the device.
+- **Hesap değişiklikleri**: Kullanıcıların hesaplarda değişiklik yapmasını önlemek için **Engelle** olarak ayarlayın. **Not configured** allows users to update user accounts on the device.
 
   > [!NOTE]
-  > Bu ayar cihaz sahibi (tam yönetilen) cihazlarda kabul edilemez. Bu ayarı yapılandırırsanız, ayar yok sayılır ve herhangi bir etkisi yoktur.
+  > This setting isn't honored on device owner (fully managed) devices. If you configure this setting, then the setting is ignored, and has no impact.
 
 ### <a name="applications"></a>Uygulamalar
 
-- **Bilinmeyen kaynaklardan yüklemeye Izin ver**: kullanıcıların **Bilinmeyen kaynakları**açıp kullanabilmesi için **izin ver** ' i seçin. Bu ayar, uygulamaların Google Play Store dışındaki kaynaklar da dahil olmak üzere bilinmeyen kaynaklardan yüklenmesine izin verir. **Yapılandırılmadı** seçeneği, kullanıcıların **Bilinmeyen kaynakları**açmasını engeller.
-- **Google Play Store 'daki tüm uygulamalara erişime Izin ver**: **izin ver**olarak ayarlandığında, kullanıcılar Google Play deposundaki tüm uygulamalara erişim sağlar. [Istemci uygulamalarında](../apps/apps-add-android-for-work.md)yönetici blokları olan uygulamalara erişim almaz. **Yapılandırılmadı** , kullanıcıları yalnızca yöneticinin kullanılabilir Google Play depolama alanı veya [istemci uygulamalarında](../apps/apps-add-android-for-work.md)gerekli uygulamalar üzerinde yaptığı uygulamalara erişmesine zorlar.
-- **Uygulama otomatik güncelleştirmeleri**: otomatik güncelleştirmelerin ne zaman yükleneceğini seçin. Seçenekleriniz şunlardır:
+- **Allow installation from unknown sources**: Choose **Allow** so users can turn on **Unknown sources**. This setting allows apps to install from unknown sources, including sources other than the Google Play Store. **Not configured** prevents users from turning on **Unknown sources**.
+- **Allow access to all apps in Google Play store**: When set to **Allow**, users get access to all apps in Google Play store. They don't get access to the apps the administrator blocks in [Client Apps](../apps/apps-add-android-for-work.md). **Not configured** forces users to only access the apps the administrator makes available Google Play store, or apps required in [Client Apps](../apps/apps-add-android-for-work.md).
+- **App auto-updates**: Choose when automatic updates are installed. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı**
-  - **Kullanıcı seçimi**
-  - **Amaçlan**
-  - **Yalnızca Wi-Fi**
-  - **Her**
+  - **User choice**
+  - **Never**
+  - **Wi-Fi only**
+  - **Always**
 
-### <a name="connectivity"></a>Bilirlik
+### <a name="connectivity"></a>Connectivity
 
 - **Her Zaman Açık VPN**: Bir VPN istemcisini VPN'ye otomatik olarak bağlanmak ve yeniden bağlanmak üzere ayarlamak için **Etkinleştir**'i seçin. Her Zaman Açık VPN bağlantıları; kullanıcı cihazı kilitlediğinde, cihaz yeniden başlatıldığında veya kablosuz ağ değiştiğinde bağlı durumda kalır veya hemen bağlanır. 
 
@@ -237,26 +240,26 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
   > [!IMPORTANT]
   > - Seçtiğiniz VPN istemcisinin cihaza yüklenmesi ve cihazın uygulama başına VPN iş profillerini desteklemesi gerekir. Aksi takdirde bir hata oluşur. 
   > - VPN istemci uygulamasını yine de **Yönetilen Google Play Mağazası**'nda onaylamanız, uygulamayı Intune ile eşitlemeniz ve cihaza dağıtmanız gerekir. Bu yapıldıktan sonra uygulama kullanıcının iş profiline yüklenir.
-  > - Android 3.0.4 için F5 Access ile uygulama başına VPN kullanılırken bilinen sorunlar olabilir. Daha fazla bilgi için bkz. [Android Için F5 erişimi Için F5's sürüm notları 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) .
+  > - There may be known issues when using per-app VPN with F5 Access for Android 3.0.4. See [F5's release notes for F5 Access for Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) for more information.
 
-- **Kilitleme modu**: tüm ağ trafiğinin VPN tüneli kullanmasını zorlamak için **Etkinleştir** ' i seçin. VPN'e bir bağlantı oluşturulmazsa, cihazın ağ erişimi olmaz.
+- **Lockdown mode**: Choose **Enable** to force all network traffic to use the VPN tunnel. VPN'e bir bağlantı oluşturulmazsa, cihazın ağ erişimi olmaz.
 
   Trafiğin VPN tünelinden veya mobil ağdan akmasına izin vermek için **Yapılandırılmadı**'yı seçin.
 
-- **Önerilen küresel ara sunucu**: cihazlara genel bir proxy eklemek için **Etkinleştir** ' i seçin. Etkinleştirildiğinde, HTTP ve HTTPS trafiği, cihazdaki bazı uygulamalar dahil olmak üzere girdiğiniz proxy 'yi kullanır. Bu proxy yalnızca bir önerimiz. Bazı uygulamalar proxy kullanmaz. **Yapılandırılmadı** (varsayılan) önerilen küresel ara sunucu eklemez.
+- **Recommended global proxy**: Choose **Enable** to add a global proxy to the devices. When enabled, HTTP and HTTPS traffic, including some apps on the device, use the proxy you enter. This proxy is only a recommendation. It's possible some apps won't use the proxy. **Not configured** (default) doesn't add a recommended global proxy.
 
-  Bu özellik hakkında daha fazla bilgi için bkz. [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (bir Android sitesi açar).
+  For more information on this feature, see [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (opens an Android site).
 
-  Etkinleştirildiğinde, proxy **türünü** de girin. Seçenekleriniz şunlardır:
+  When enabled, also enter the **Type** of proxy. Seçenekleriniz şunlardır:
 
-  - **Doğrudan**: proxy sunucu ayrıntılarını el ile girmek için bu seçeneği belirleyin, örneğin:
-    - **Ana bilgisayar**: proxy sunucunuzun ana bilgisayar adını veya IP adresini girin. Örneğin `proxy.contoso.com` veya `127.0.0.1` girin.
-    - **Bağlantı noktası numarası**: proxy sunucusu tarafından kullanılan TCP bağlantı noktası numarasını girin. Örneğin, şunu girin: `8080`.
-    - **Dışlanan konaklar**: proxy 'yi kullanmayan konak ADLARıNıN veya IP adreslerinin bir listesini girin. Bu liste, boşluk olmadan bir yıldız işareti (`*`) joker karakteri ve noktalı virgülle (`;`) ayrılmış birden çok Konağı içerebilir. Örneğin, şunu girin: `127.0.0.1;web.contoso.com;*.microsoft.com`.
+  - **Direct**: Choose this option to manually enter the proxy server details, including:
+    - **Host**: Enter the hostname or IP address of your proxy server. Örneğin `proxy.contoso.com` veya `127.0.0.1` girin.
+    - **Port number**: Enter the TCP port number used by the proxy server. Örneğin, şunu girin: `8080`.
+    - **Excluded hosts**: Enter a list of host names or IP addresses that won't use the proxy. This list can include an asterisk (`*`) wildcard and multiple hosts separated by semicolons (`;`) with no spaces. Örneğin, şunu girin: `127.0.0.1;web.contoso.com;*.microsoft.com`.
 
-  - **Proxy otomatik**yapılandırma: bir proxy otomatik yapılandırma betiğine **Pac URL** 'sini girin. Örneğin, şunu girin: `https://proxy.contoso.com/proxy.pac`.
+  - **Proxy Auto-Config**: Enter the **PAC URL** to a proxy auto-configuration script. Örneğin, şunu girin: `https://proxy.contoso.com/proxy.pac`.
 
-    PAC dosyaları hakkında daha fazla bilgi için bkz. [proxy otomatik yapılandırma (PAC) dosyası](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (Microsoft dışı bir site açar).
+    For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
 
 ## <a name="work-profile-only"></a>Yalnızca iş profili
 
@@ -264,14 +267,14 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 
 #### <a name="general"></a>Genel
 
-- **İş ve kişisel profiller arasında kopyalama ve yapıştırma**: iş ve kişisel uygulamalar arasında kopyalamayı ve yapıştırmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların kişisel profildeki uygulamalarla Kopyala ve Yapıştır kullanarak veri paylaşmasına izin verir 
-- **İş ve kişisel profiller arasında veri paylaşımı**: iş profilindeki uygulamaların kişisel profildeki uygulamalarla paylaşıp paylaşabilmesini seçin. Örneğin, uygulamalar içinde paylaşım eylemlerini (paylaşım gibi) denetleyebilirsiniz **...** seçeneği gibi uygulamalardaki paylaşma eylemlerini denetler. Bu ayar, kopyala/yapıştır pano davranışında geçerli değildir. Paylaşım seçenekleriniz:
-  - **Cihaz varsayılanı**: cihaz, Android sürümüne bağlı olarak farklılık gösteren varsayılan paylaşım davranışıdır. Kişisel profilden iş profiline paylaşmaya varsayılan olarak izin verilir. Buna karşın iş profilinden kişisel profile paylaşma varsayılan olarak engellenir. Bu ayar, iş profilinden kişisel profile veri paylaşılmasını önler. Sürüm 6.0 ve üzerini çalıştıran cihazlarda Google kişisel profilden iş profiline paylaşımı engellemez.
+- **Copy and paste between work and personal profiles**: Choose **Block** to prevent copy-and-paste between work and personal apps. **Not configured** allows users to share data using copy-and-paste with apps in the personal profile 
+- **Data sharing between work and personal profiles**: Choose if apps in the work profile can share with apps in the personal profile. For example, you can control sharing actions within applications, such as the **Share…** seçeneği gibi uygulamalardaki paylaşma eylemlerini denetler. Bu ayar, kopyala/yapıştır pano davranışında geçerli değildir. Your sharing options:
+  - **Device default**: The default sharing behavior of the device, which varies depending on the Android version. Kişisel profilden iş profiline paylaşmaya varsayılan olarak izin verilir. Buna karşın iş profilinden kişisel profile paylaşma varsayılan olarak engellenir. Bu ayar, iş profilinden kişisel profile veri paylaşılmasını önler. Sürüm 6.0 ve üzerini çalıştıran cihazlarda Google kişisel profilden iş profiline paylaşımı engellemez.
   - **İş profilindeki uygulamalar kişisel profilden gelen paylaşım isteklerini işleyebilir**: Kişisel profilden iş profiline paylaşıma izin veren yerleşik Android özelliğini etkinleştirir. Etkinleştirildiğinde, kişisel profildeki bir uygulamadan gelen bir paylaşım isteği, iş profilindeki uygulamalarla paylaşım kullanabilir. Bu ayar, 6.0 öncesi sürümleri çalıştıran Android cihazlarının varsayılan davranışıdır.
-  - **Sınırlar arasında tüm paylaşımları engelle**: iş ve kişisel profiller arasında paylaşmayı engeller.
-  - **Paylaşımda kısıtlama yok**: iş profili sınırları genelinde her iki yönde paylaşımı mümkün değildir. Bu ayarı seçtiğinizde, iş profilinizdeki uygulamalar kişisel profildeki rozetsiz uygulamalar ile veri paylaşabilir. Bu ayar iş profilindeki yönetilen uygulamaların cihazın yönetilmeyen kısmındaki uygulamalarla paylaşmasına izin verir. Bu nedenle bu ayarı dikkatli kullanın.
+  - **Prevent any sharing across boundaries**: Prevents sharing between work and personal profiles.
+  - **No restrictions on sharing**: Enables sharing across the work profile boundary in both directions. Bu ayarı seçtiğinizde, iş profilinizdeki uygulamalar kişisel profildeki rozetsiz uygulamalar ile veri paylaşabilir. Bu ayar iş profilindeki yönetilen uygulamaların cihazın yönetilmeyen kısmındaki uygulamalarla paylaşmasına izin verir. Bu nedenle bu ayarı dikkatli kullanın.
 
-- **Cihaz kilitliyken iş profili bildirimleri**: iş profilindeki uygulamaların Cihaz kilitliyken bildirimlerde veri gösterip gösteremeyeceğini denetler. **Blok** , verileri göstermez. **Yapılandırılmadı** , verileri gösterir.
+- **Work profile notifications while device locked**: Controls whether apps in the work profile can show data in notifications when the device is locked. **Block** doesn't show the data. **Not configured** shows the data.
 - **Varsayılan uygulama izinleri**: İş profilindeki tüm uygulamalar için varsayılan izin ilkesini ayarlar. Android 6 ile başlayarak, kullanıcıdan, belirli uygulamalar açıldığında bunlar için gereken bazı izinleri vermesi istenir. Bu ilke ayarı, kullanıcıdan iş profilindeki tüm uygulamalar için izin istenip istenmeyeceğini belirlemenize olanak tanır. Örneğin, iş profiline konum erişimi gerektiren bir uygulama atarsınız. Normalde bu uygulama kullanıcıdan konum erişimini onaylamasını veya reddetmesini ister. Bu ilkeyi istem kullanmadan otomatik olarak izinler vermek, izin vermeyi reddetmek veya kararı kullanıcıya bırakmak için kullanabilirsiniz. Aşağıdakilerden birini seçin:
   - **Cihaz varsayılanı**
   - **Sor**
@@ -280,25 +283,25 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 
   Ayrıca tek tek uygulamalara izinler vermek için bir Uygulama Yapılandırma ilkesi de kullanabilirsiniz (**İstemci Uygulamaları** > **Uygulama yapılandırma ilkeleri**).
 
-- **Hesap ekleme ve kaldırma**: son kullanıcıların iş profilinde hesapları el ile eklemesini veya kaldırmasını engellemek için **Engelle** ' yi seçin. Örneğin, Gmail uygulamasını bir Android iş profiline dağıttığınızda, son kullanıcıların bu iş profiline hesap eklemesini veya buradan kaldırmasını engelleyebilirsiniz. **Yapılandırılmadı** , iş profilinde hesapların eklenmesine izin verir.  
+- **Add and remove accounts**: Choose **Block** to prevent end users from manually adding or removing accounts in the work profile. Örneğin, Gmail uygulamasını bir Android iş profiline dağıttığınızda, son kullanıcıların bu iş profiline hesap eklemesini veya buradan kaldırmasını engelleyebilirsiniz. **Not configured** allows adding accounts in the work profile.  
 
 - **Bluetooth ile kişi paylaşımı**: Bluetooth kullanarak eşleştirilmiş bir cihazdan, örneğin araba, iş kişilerine erişime izin verir. Bu ayar varsayılan olarak yapılandırılmamıştır ve iş profili kişileri gösterilmez. Bu paylaşıma izin verip iş profili kişilerini görüntülemek için **Etkinleştir**’i seçin. Bu ayar, Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları için geçerlidir. Bu ayarı etkinleştirmek, bazı Bluetooth cihazlarının ilk bağlantı sırasında iş kişilerini önbelleğe almasına izin verebilir. İlk eşleme/eşitleme sonrasına bunu devre dışı bırakmak ise Bluetooth cihazından iş kişilerini kaldırmayabilir.
 
-- **Ekran yakalama**: iş profilindeki cihazda ekran görüntülerini veya ekran yakalamalarını engellemek için **Engelle** ' yi seçin. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Yapılandırılmadı** , ekran görüntüleri almayı sağlar.
+- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device in the work profile. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Not configured** allows getting screenshots.
 
-- **Kişisel profilde iş kişisi arayan kimliğini görüntüle**: etkinleştirildiğinde (**yapılandırılmadığında**), iş iletişim çağıranu ayrıntıları kişisel profilde görüntülenir. **Blok**olarak ayarlandığında, kişisel profilde iş kişisi arayan numarası gösterilmez. Android işletim sistemi v6.0 ve daha yeni sürümlerde geçerlidir.
+- **Display work contact caller-id in personal profile**: When enabled (**Not configured**), the work contact caller details are displayed in the personal profile. When set to **Block**, the work contact caller number isn't displayed in the personal profile. Android işletim sistemi v6.0 ve daha yeni sürümlerde geçerlidir.
 
-- **Kişisel profilden iş kişileri ara**: kullanıcıların kişisel profildeki uygulamalarda iş kişilerini aramasını engellemek için **Engelle** ' yi seçin. **Gerekli değildir** kişisel profilde iş kişileri aramaya izin verir.
+- **Search work contacts from personal profile**: Choose **Block** to prevent users from searching for work contacts in apps in the personal profile. **Not required** allows searching for work contacts in the personal profile.
 
-- **Kamera**: iş profilindeki cihazdaki kameraya erişimi engellemek için **Engelle** ' yi seçin. Kişisel taraftaki kamera, bu ayardan etkilenmez. **Gerekli değildir** iş profilinde kameraya erişime izin verir.
+- **Camera**: Choose **Block** to prevent access to the camera on the device in the work profile. Kişisel taraftaki kamera, bu ayardan etkilenmez. **Not required** allows access to the camera in the work profile.
 
-- **İş profili uygulamalarından Pencere öğelerinin oluşturulmasına Izin ver**: **Etkinleştir** ayarı, son kullanıcıların ana ekranda uygulamalar tarafından sunulan pencere öğelerini almasına izin verir. **Yapılandırılmadı** (varsayılan) ayarı, bu özelliği devre dışı bırakır.
+- **Allow widgets from work profile apps**: **Enable** allows end users to put widgets exposed by apps on the home screen. **Yapılandırılmadı** (varsayılan) ayarı, bu özelliği devre dışı bırakır.
 
-  Örneğin, Outlook kullanıcılarınızın iş profillerine yüklendi. **Etkin**olarak ayarlandığında, kullanıcılar gündem pencere öğesini cihaz giriş ekranına yerleştirebilir.
+  For example, Outlook is installed on your users' work profiles. When set to **Enable**, users can put the agenda widget on the device home screen.
 
-#### <a name="work-profile-password"></a>İş profili parolası
+#### <a name="work-profile-password"></a>Work Profile Password
 
-- **İş Profili Parolası Gerektir**: İş profilinin etkinleştirildiği Android 7.0 ve üzerine uygulanır. Yalnızca iş profilindeki uygulamalar için geçerli olacak bir geçiş kodu ilkesi girmek için **gerektir** ' i seçin. Varsayılan olarak, son kullanıcı birbirinden ayrı tanımlanmış iki PIN kullanabilir veya PIN’leri iki PIN'den daha güçlü olanın altında birleştirmeyi seçebilir. **Yapılandırılmadı** , kullanıcının bir parola girmeden iş uygulamalarını kullanmasına izin verir.
+- **İş Profili Parolası Gerektir**: İş profilinin etkinleştirildiği Android 7.0 ve üzerine uygulanır. Choose **Require** to enter a passcode policy that applies only to the apps in the work profile. Varsayılan olarak, son kullanıcı birbirinden ayrı tanımlanmış iki PIN kullanabilir veya PIN’leri iki PIN'den daha güçlü olanın altında birleştirmeyi seçebilir. **Not configured** allows the user to use work apps, without entering a password.
 - **En düşük parola uzunluğu**: Kullanıcı parolalarında olması gereken en düşük rakam veya karakter sayısını **4**-**16** arasından belirtin.
 - **İş profili kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: İş profili kilitlenmeden önce geçmesi gereken süreyi seçin. Daha sonra kullanıcının kimlik bilgilerini girerek tekrar erişim kazanması gerekir.
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: İş profili cihazdan silinmeden önce girilebilecek hatalı parola sayısını girin.
@@ -313,12 +316,12 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
   - **En az alfasayısal**
   - **En az simgeler ile alfasayısal**
 - **Önceki parolaların yeniden kullanılmasını engelle**: Eski bir parolanın yeniden kullanılabilmesi için kullanılmış olması gereken yeni parola sayısını girin (**1**-**24** arası).
-- **Parmak iziyle kilit açma**: son kullanıcıların cihazın kilidini açmak için cihaz parmak izi tarayıcısını kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların iş profilinde parmak izine sahip cihazların kilidini açmasına olanak sağlar.
-- **Akıllı kilit ve diğer güven aracıları**: akıllı kilit veya diğer güven aracılarının uyumlu cihazlarda kilit ekranı ayarlarını değiştirmesini engellemek için **Engelle** ' yi seçin. Güven aracısı olarak da bilinen bu özellik, cihaz güvenilir bir konumdayken cihaz kilidi ekran parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Örneğin cihaz belirli bir Bluetooth cihazına bağlıyken ya da bir NFC etiketinin yakınındayken iş profili parolasını atlama. Bu ayarı, kullanıcıların Akıllı Kilit'i yapılandırmasını önlemek için kullanın.
+- **Fingerprint unlock**: Choose **Block** to prevent end users from using the device fingerprint scanner to unlock the device. **Not configured** allows users to unlock devices with a fingerprint in the work profile.
+- **Smart Lock and other trust agents**: Choose **Block** to prevent Smart Lock or other trust agents from adjusting lock screen settings on compatible devices. This feature, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location. Örneğin cihaz belirli bir Bluetooth cihazına bağlıyken ya da bir NFC etiketinin yakınındayken iş profili parolasını atlama. Bu ayarı, kullanıcıların Akıllı Kilit'i yapılandırmasını önlemek için kullanın.
 
 ### <a name="device-password"></a>Cihaz parolası
 
-Bu parola ayarları, bir iş profili kullanan cihazlardaki kişisel profiller için geçerlidir.
+These password settings apply to personal profiles on devices that use a work profile.
 
 - **En düşük parola uzunluğu**: Kullanıcı parolalarında olması gereken en düşük rakam veya karakter sayısını **4**-**14** arasından belirtin.
 - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Etkin olmayan bir cihaz otomatik olarak kilitlenmeden önce geçmesi gereken süreyi seçin
@@ -334,24 +337,24 @@ Bu parola ayarları, bir iş profili kullanan cihazlardaki kişisel profiller i�
   - **En az alfasayısal**
   - **En az simgeler ile alfasayısal**
 - **Önceki parolaların yeniden kullanılmasını engelle**: Eski bir parolanın yeniden kullanılabilmesi için kullanılmış olması gereken yeni parola sayısını girin (**1**-**24** arası).
-- **Parmak iziyle kilit açma**: son kullanıcının cihazın kilidini açmak için cihaz parmak izi tarayıcısını kullanmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** ayarı, kullanıcının cihaz kilidini parmak izi kullanarak açmasını sağlar.
-- **Akıllı kilit ve diğer güven aracıları**: akıllı kilit veya diğer güven aracılarının uyumlu cihazlarda kilit ekranı ayarlarını değiştirmesini engellemek için **Engelle** ' yi seçin. Güven aracısı olarak da bilinen bu özellik, cihaz güvenilir bir konumdayken cihaz kilidi ekran parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Örneğin cihaz belirli bir Bluetooth cihazına bağlıyken ya da bir NFC etiketinin yakınındayken iş profili parolasını atlama. Bu ayarı, kullanıcıların Akıllı Kilit'i yapılandırmasını önlemek için kullanın.
+- **Fingerprint unlock**: Choose **Block** to prevent end user from using the device fingerprint scanner to unlock the device. **Yapılandırılmadı** ayarı, kullanıcının cihaz kilidini parmak izi kullanarak açmasını sağlar.
+- **Smart Lock and other trust agents**: Choose **Block** to prevent Smart Lock or other trust agents from adjusting lock screen settings on compatible devices. This feature, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location. Örneğin cihaz belirli bir Bluetooth cihazına bağlıyken ya da bir NFC etiketinin yakınındayken iş profili parolasını atlama. Bu ayarı, kullanıcıların Akıllı Kilit'i yapılandırmasını önlemek için kullanın.
 
-### <a name="system-security"></a>Sistem güvenliği
+### <a name="system-security"></a>System security
 
-- **Uygulamalarda tehdit taraması**: **gerekli** , Iş ve kişisel profillerde **uygulamaları doğrula** ayarının etkinleştirilmesini zorunlu kılar.
+- **Threat scan on apps**: **Require** enforces that the **Verify Apps** setting is enabled for work and personal profiles.
 
    > [!Note]
-   > Bu ayar yalnızca Android 8 (Oreo) ve üzeri cihazlar için geçerlidir.
+   > This setting only works for devices that are Android 8 (Oreo) and above.
 
-- **Kişisel profilde bilinmeyen kaynaklardan uygulama yüklemelerini engelleyin**: tasarım, Android kurumsal iş profili cihazları Play Store dışındaki kaynaklardan uygulama yükleyemez. Doğası gereği, iş profili cihazlarının çift profil olması amaçlanmıştır:
+- **Prevent app installations from unknown sources in the personal profile**: By design, Android Enterprise work profile devices can't install apps from sources other than the Play Store. By nature, work profile devices are intended to be dual-profile:
 
-  - MDM kullanılarak yönetilen bir iş profili.
-  - MDM yönetiminden yalıtılmış bir kişisel profil.
+  - A work profile managed using MDM.
+  - A personal profile that's isolated from MDM management.
 
-  Bu ayar, yöneticilerin bilinmeyen kaynaklardan uygulama yüklemelerinin daha fazla denetimine erişmesini sağlar. **Yapılandırılmadı** (varsayılan), kişisel profilde bilinmeyen kaynaklardan uygulama yüklemelerine izin verir. **Block** , kişisel profildeki Play Store dışındaki kaynaklardan uygulama yüklemelerinin yapılmasını engeller.
+  This setting allows administrators more control of app installations from unknown sources. **Not configured** (default) allows app installations from unknown sources in the personal profile. **Block** prevents app installations from sources other than the Play Store in the personal profile.
 
-### <a name="connectivity"></a>Bilirlik
+### <a name="connectivity"></a>Connectivity
 
 - **Her Zaman Açık VPN**: Bir VPN istemcisini VPN'ye otomatik olarak bağlanmak ve yeniden bağlanmak üzere ayarlamak için **Etkinleştir**'i seçin. Her Zaman Açık VPN bağlantıları; kullanıcı cihazı kilitlediğinde, cihaz yeniden başlatıldığında veya kablosuz ağ değiştiğinde bağlı durumda kalır veya hemen bağlanır. 
 
@@ -371,9 +374,9 @@ Bu parola ayarları, bir iş profili kullanan cihazlardaki kişisel profiller i�
   > [!IMPORTANT]
   > - Seçtiğiniz VPN istemcisinin cihaza yüklenmesi ve cihazın uygulama başına VPN iş profillerini desteklemesi gerekir. Aksi takdirde bir hata oluşur. 
   > - VPN istemci uygulamasını yine de **Yönetilen Google Play Mağazası**'nda onaylamanız, uygulamayı Intune ile eşitlemeniz ve cihaza dağıtmanız gerekir. Bu yapıldıktan sonra uygulama kullanıcının iş profiline yüklenir.
-  > - Android 3.0.4 için F5 Access ile uygulama başına VPN kullanılırken bilinen sorunlar olabilir. Daha fazla bilgi için bkz. [Android Için F5 erişimi Için F5's sürüm notları 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) .
+  > - There may be known issues when using per-app VPN with F5 Access for Android 3.0.4. See [F5's release notes for F5 Access for Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) for more information.
 
-- **Kilitleme modu**: tüm ağ trafiğinin VPN tüneli kullanmasını zorlamak için **Etkinleştir** ' i seçin. VPN'e bir bağlantı oluşturulmazsa, cihazın ağ erişimi olmaz.
+- **Lockdown mode**: Choose **Enable** to force all network traffic to use the VPN tunnel. VPN'e bir bağlantı oluşturulmazsa, cihazın ağ erişimi olmaz.
 
   Trafiğin VPN tünelinden veya mobil ağdan akmasına izin vermek için **Yapılandırılmadı**'yı seçin.
 
@@ -381,8 +384,8 @@ Bu parola ayarları, bir iş profili kullanan cihazlardaki kişisel profiller i�
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
-Ayrıca, [Android](device-restrictions-android.md#kiosk) ve [Windows 10](kiosk-settings.md) cihazları için adanmış cihaz bilgi noktası profilleri oluşturabilirsiniz.
+You can also create dedicated device kiosk profiles for [Android](device-restrictions-android.md#kiosk) and [Windows 10](kiosk-settings.md) devices.
 
 ## <a name="see-also"></a>Ayrıca bkz:
 
-[Microsoft Intune Android kurumsal cihazlarını yapılandırma ve sorunlarını giderme](https://support.microsoft.com/help/4476974)
+[Configuring and troubleshooting Android enterprise devices in Microsoft Intune](https://support.microsoft.com/help/4476974)

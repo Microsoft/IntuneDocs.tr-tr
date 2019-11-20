@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 839a62e32c2fafcaaa591e38cd5b2e297ed3750f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 86b61f628dc559bf0520dbe16ef58644bd360269
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502938"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188442"
 ---
-# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
+# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Configure Intune education settings for shared iPad devices
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> Sınıf uygulaması için Intune ayarları Intune 'da kullanımdan kalkmıştır. Bu makale, yalnızca Intune’da mevcut eğitim profilleri olan kullanıcılar için geçerlidir.
+> Intune doesn't currently support configuring the Classroom app. This article is only applicable for users with existing iOS Education profiles in Intune.
 
 Intune, öğretmenlerin sınıfta öğrenimi yönlendirmesine ve öğrenci cihazlarını denetlemesine yardımcı olan iOS Classroom uygulamasını destekler. Classroom uygulamasına ek olarak Apple, öğrenci iPad cihazlarının, birden çok öğrenci tek bir cihazı paylaşacak şekilde yapılandırılmasını destekler. Bu belge, Intune ile bu hedefe ulaşmada size yol gösterir.
 
@@ -68,7 +68,7 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 
 ### <a name="configure-general-settings"></a>Genel ayarları yapılandırma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 5. Profiller bölmesinde **Profil oluştur**’u seçin.
@@ -138,7 +138,7 @@ Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
 ## <a name="step-3---create-a-device-category"></a>3\. Adım - Bir cihaz kategorisi oluşturun
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde **Cihaz kaydı**'nı seçin.
 4. **Cihaz kaydı - Genel Bakış** bölmesinde **Cihaz kategorileri**’ni seçin.
 5. **Cihaz kaydı - Cihaz Kategorileri** bölmesinde **Oluştur**'u seçin.
@@ -149,7 +149,7 @@ Cihaz kategorisi **Kayıt – Cihaz Kategorileri** bölmesinde oluşturulur.
 
 ## <a name="step-4--create-a-dynamic-group"></a>4\. Adım – Dinamik bir grup oluşturun
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde **Gruplar**'ı seçin.
 4. **Kullanıcılar ve Gruplar – Tüm Gruplar** bölmesinde **Yeni grup**'u seçin.
 5. **Grup** bölmesinde **Grup türü**'nü seçin ve grup için **Ad** ve **Açıklama** girin.
@@ -166,7 +166,7 @@ Dinamik grup **Kullanıcılar ve Gruplar – Tüm Gruplar** bölmesinde oluştur
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>5\. Adım – Bir kategoriye cihaz atayın (Sepetler)
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde **Cihazlar**’ı seçin.
 4. **Cihazlar** bölmesinde, **Tüm cihazlar**'ı seçin.
 5. **Cihazlar – Tüm cihazlar** bölmesinde bir cihaz seçin.
@@ -178,7 +178,7 @@ Cihaz artık cihaz kategorisiyle ilişkilendirilmiştir. Bu işlemi, oluşturdu�
 
 ## <a name="step-6--create-classroom-profiles"></a>6\. Adım – Sınıf profilleri oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
 4. **Cihaz yapılandırması** bölmesinde **Yönet** > **Sepet Profilleri**'ni seçin.
 5. Profiller bölmesinde **Profil Oluştur**’u seçin.
@@ -193,7 +193,7 @@ Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>7\. Adım - Sepet Profilini Sınıflara Atama
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
 4. **Cihaz yapılandırması** bölmesinde, **İzle** > **Atama durumu**'nu seçin.
 5. **Atama durumu** bölmesinde, oluşturduğunuz **Sepet Profili**'ni seçin.

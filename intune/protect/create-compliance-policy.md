@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune-Azure 'da cihaz uyumluluk ilkeleri oluşturma | Microsoft Docs
-description: Yetkisizkullanımsüresinde durumunu, koşullu erişimle çalışma, atanmış bir ilke olmadan cihazları işleme ve Azure portal ile klasik portalda uyumluluk farklarını kullanarak cihaz uyumluluk ilkeleri oluşturun, durum ve önem düzeylerine genel bakış yapın. Microsoft Intune
+title: Create device compliance policies in Microsoft Intune - Azure | Microsoft Docs
+description: Create device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with Conditional Access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786069"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188257"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da uyumluluk ilkesi oluşturma
 
-Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune’da cihazların uyumlu olarak değerlendirilmesi için uyması gereken minimum işletim sistemi sürümü gibi kurallar ve ayarlar oluşturabilirsiniz. Cihaz uyumlu değilse, [koşullu erişim](conditional-access.md)kullanarak verilere ve kaynaklara erişimi engelleyebilirsiniz.
+Intune’un kuruluşunuzun kaynaklarını korumaya yönelik kullanımında cihaz uyumluluk ilkeleri en önemli özelliklerdendir. Intune’da cihazların uyumlu olarak değerlendirilmesi için uyması gereken minimum işletim sistemi sürümü gibi kurallar ve ayarlar oluşturabilirsiniz. If the device isn't compliant, you can then block access to data and resources using [Conditional Access](conditional-access.md).
 
 Ayrıca uyumsuzluğa yönelik olarak kullanıcıya bildirim gönderme gibi önlemler alabilirsiniz. Uyumluluk ilkelerinin işlevleri ve kullanım şekilleri hakkında genel bilgilere için bkz. [Cihaz uyumluluğuna başlama](device-compliance-get-started.md).
 
@@ -43,11 +43,11 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
 - Aşağıdaki abonelikleri kullanın:
 
   - Intune
-  - Koşullu erişim kullanıyorsanız, Azure Active Directory (AD) Premium sürümü gerekir. [Azure Active Directory fiyatlandırması](https://azure.microsoft.com/pricing/details/active-directory/) sayfasında farklı sürümlerde sunulan özelliklere yer verilmiştir. Intune uyumluluğu için Azure AD gerekli değildir.
+  - If you use Conditional Access, then you need Azure Active Directory (AD) Premium edition. [Azure Active Directory fiyatlandırması](https://azure.microsoft.com/pricing/details/active-directory/) sayfasında farklı sürümlerde sunulan özelliklere yer verilmiştir. Intune uyumluluğu için Azure AD gerekli değildir.
 
 - Desteklenen bir platform kullanın:
 
-  - Android Cihaz Yöneticisi
+  - Android device administrator
   - Android Kurumsal
   - iOS
   - Mac OS
@@ -61,50 +61,46 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
 
 ## <a name="create-the-policy"></a>İlkeyi oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz uyumluluğu**'nu seçin. Aşağıdaki seçenekleriniz vardır:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    - **Genel bakış**: uyumlu ve hesaplanmayan cihazların bir özetini ve sayısını gösterir. Ayrıca ilkeleriniz ve ilkelerinizdeki ayarlar da listelenir. [Intune cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md) sayfasında faydalı bilgiler yer almaktadır.
-    - **Yönetin**: cihaz ilkeleri oluşturun, uyumsuz cihazlara [bildirim](quickstart-send-notification.md) gönderin ve [ağ](use-network-locations.md)oluşturma özelliğini etkinleştirin.
-    - **İzleme**: cihazlarınızın uyumluluk durumunu ve ayar ve ilke düzeyinde kontrol edin. [Intune cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md) bu konuda faydalı bir kaynaktır. Ayrıca günlükleri görüntüleyebilir ve cihazlarınızın tehdit aracısı durumunu denetleyebilirsiniz.
-    - **Kurulum**: [yerleşik uyumluluk Ilkelerini](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies)kullanın, [Microsoft Defender GELIŞMIŞ tehdit koruması 'nı (ATP)](advanced-threat-protection.md)etkinleştirin, bir [Mobil tehdit savunma Bağlayıcısı](mobile-threat-defense.md)ekleyin ve [JAMF](conditional-access-integrate-jamf.md)kullanın.
+2. Select **Devices** > **Compliance policies** > **Create Policy**.
 
-3. **İlkeler** > **İlke Oluştur**’u seçin. Aşağıdaki özellikleri girin:
+3. Specify the following properties:
 
-   - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. **Jailbreak uygulanmış iOS cihazlarını uyumlu değil olarak işaretle** iyi bir ilke adı örneğidir.  
+   - **Name**: Enter a descriptive name for the policy. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. **Jailbreak uygulanmış iOS cihazlarını uyumlu değil olarak işaretle** iyi bir ilke adı örneğidir.
 
-   - **Açıklama**: ilke için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.  
+   - **Description**: Enter a description for the policy. Bu ayar isteğe bağlıdır ancak önerilir.
 
-   - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:
-     - **Android Cihaz Yöneticisi**
+   - **Platform**: Choose the platform of your devices. Seçenekleriniz şunlardır:
+     - **Android device administrator**
      - **Android Kurumsal**
-     - **iOS/ıpados**
+     - **iOS/iPadOS**
      - **macOS**
      - **Windows Phone 8.1**
      - **Windows 8.1 ve üzeri**
      - **Windows 10 ve üzeri**
 
-     *Android Enterprise*için, bir **profil türü**seçmeniz gerekir:
-     - **Cihaz sahibi**
-     - **İş profili**
+     For *Android Enterprise*, you must then select a **Profile type**:
+     - **Device owner**
+     - **Work Profile**
 
-   - **Ayarlar**: aşağıdaki makaleler her platformun ayarlarını listeler ve anlatmaktadır:
-     - [Android Cihaz Yöneticisi](compliance-policy-create-android.md)
+   - **Settings**: The following articles list and describe the settings for each platform:
+     - [Android device administrator](compliance-policy-create-android.md)
      - [Android Kurumsal](compliance-policy-create-android-for-work.md)
-     - [iOS/ıpados](compliance-policy-create-ios.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
      - [macOS](compliance-policy-create-mac-os.md)
      - [Windows Phone 8.1, Windows 8.1 ve üzeri](compliance-policy-create-windows-8-1.md)
      - [Windows 10 ve üzeri](compliance-policy-create-windows.md)  
 
-   - **Konumlar** *(Android Cihaz Yöneticisi)* : ilkenizde cihazın konumuna göre uyumluluğu zorlayabilirsiniz. Mevcut konumlar arasından seçim yapın. Henüz bir konumunuz yok mu? Intune'da [Konumları (ağ yalıtımı) kullanma](use-network-locations.md) başlığı altında bazı yönergeler sağlanır.  
+   - **Locations** *(Android device administrator)* : In your policy, you can force compliance by the location of the device. Mevcut konumlar arasından seçim yapın. Henüz bir konumunuz yok mu? Intune'da [Konumları (ağ yalıtımı) kullanma](use-network-locations.md) başlığı altında bazı yönergeler sağlanır.  
 
-   - **Uyumsuzluk eylemleri**: uyumluluk ilkelerinizi karşılamayan cihazlarda otomatik olarak uygulanacak bir dizi eylem ekleyebilirsiniz. Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örneğin, bir gün sonra olarak). Ayrıca, cihaz uyumlu olmadığında kullanıcıya e-posta gönderen ikinci bir eylem de yapılandırabilirsiniz.
-    
+   - **Actions for noncompliance**: For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. Cihazın uyumsuz olarak işaretlenme zamanlamasını değiştirebilirsiniz (örneğin, bir gün sonra olarak). Ayrıca, cihaz uyumlu olmadığında kullanıcıya e-posta gönderen ikinci bir eylem de yapılandırabilirsiniz.
+
      [Uyumsuz cihazlar için eylem ekleme](actions-for-noncompliance.md) makalesinde, kullanıcılarınıza e-posta ile gönderilecek bir bildirim oluşturma da dahil olmak üzere daha fazla bilgi sağlanmıştır.
 
      Örneğin Konumlar özelliğini kullanıyor ve uyumluluk ilkesinde bir konum ekliyorsunuz. En az bir konum seçtiğinizde uyumsuzluk için varsayılan eylem uygulanır. Cihaz, seçili konumlara bağlı değilse hemen uyumsuz olarak değerlendirilir. Kullanıcılarınıza bir gün gibi bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
-   - **Kapsam (Etiketler)** : kapsam etiketleri, ilkeleri satış, ık ve tüm ABD-NC çalışanları gibi belirli gruplara atamak ve filtrelemek için harika bir yoldur. Uyumluluk ilkelerinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. [İlke filtrelemek için kapsam etiketleri kullanma](../fundamentals/scope-tags.md) sayfası bu konuda faydalı bir kaynaktır.
+   - **Scope (Tags)** : Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. Uyumluluk ilkelerinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. [İlke filtrelemek için kapsam etiketleri kullanma](../fundamentals/scope-tags.md) sayfası bu konuda faydalı bir kaynaktır.
 
 4. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Tamam** > **Oluştur**'u seçin. İlke oluşturulur ve listede gösterilir. Şimdi ilkeyi gruplarınıza atayın.
 
@@ -112,18 +108,21 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
 
 İlke oluşturulduktan sonra yapmanız gereken bunu gruplarınıza atamaktır:
 
-1. Oluşturduğunuz ilkelerden birini seçin. Mevcut ilkeler **Cihaz uyumluluğu** > **İlkeler**’de bulunur.
-2. İlkeyi ve ardından **Atamalar**'ı seçin. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
-3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar**’ı seçin. Bu ilkenin uygulanmasını istediğiniz grupları seçin > ilkeyi dağıtmak için **Kaydet** ' i seçin.
+1. Oluşturduğunuz ilkelerden birini seçin. Existing policies are in **Devices** > **Compliance policies** > **Policies**.
 
-İlkenize göre hedeflenen kullanıcı veya cihazlar, Intune ile iade edildiğinde uyumluluk için değerlendirilir.
+2. Select the *policy* > **Assignments**. Azure Active Directory (AD) güvenlik gruplarını dahil edebilir veya hariç tutabilirsiniz.
+
+3. Azure AD güvenlik gruplarınızı görmek için **Seçili gruplar**’ı seçin. Select the groups you want this policy to apply > Choose **Save** to deploy the policy.
+
+The users or devices targeted by your policy are evaluated for compliance when they check-in with Intune.
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>Kaç kullanıcının hedeflendiğini değerlendirme
 
 İlkeyi atadıktan sonra etkilenen kullanıcı sayısını da **değerlendirebilirsiniz**. Bu özellik, cihaz değil kullanıcı sayısını hesaplar.
 
-1. Intune’da **Cihaz uyumluluğu** > **İlkeler**'i seçin.
-2. Bir ilke seçip **Atamalar** > **Değerlendir** yolunu izleyin. Bu ilkenin kaç kullanıcıyı hedeflediğini gösteren bir ileti görüntülenir.
+1. In Intune, select **Devices** > **Compliance policies** > **Policies**.
+
+2. Select a *policy* > **Assignments** > **Evaluate**. Bu ilkenin kaç kullanıcıyı hedeflediğini gösteren bir ileti görüntülenir.
 
 **Değerlendir** düğmesi gri gösteriliyorsa, ilkenin bir veya birden fazla gruba atandığından emin olun.
 
@@ -140,11 +139,11 @@ For example, you're using the Locations feature, and add a location in a complia
 Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
 -->
 
-## <a name="refresh-cycle-times"></a>Yenileme döngü süreleri
+## <a name="refresh-cycle-times"></a>Yenileme döngüsü süreleri
 
-Intune, uyumluluk ilkelerine yönelik güncelleştirmeleri denetlemek için farklı yenileme döngüleri kullanır. Cihaz yakın zamanda kaydedildiyse, iade etme daha sık çalışır. [İlke ve profil yenileme döngüleri](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) tahmini yenileme zamanlarını listeler.
+Intune uses different refresh cycles to check for updates to compliance policies. If the device recently enrolled, the check-in runs more frequently. [Policy and profile refresh cycles](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lists the estimated refresh times.
 
-Herhangi bir zamanda, kullanıcılar Şirket Portalı uygulamayı açabilir ve cihaz güncelleştirmelerini anında denetlemek için cihazı eşitleyebilir.
+At any time, users can open the Company Portal app, and sync the device to immediately check for policy updates.
 
 ### <a name="assign-an-ingraceperiod-status"></a>InGracePeriod durumu atama
 
@@ -152,9 +151,9 @@ InGracePeriod durumu, uyumluluk ilkesi için bir değerdir. Bu değer, cihazın 
 
 Yani bir cihazın atanmış bir uyumluluk ilkesi için Uyumsuz durumu varsa ve:
 
-- Cihaza atanmış bir yetkisiz kullanım süresi yoksa, uyumluluk ilkesi için atanan değer uyumsuz
-- Cihazda süresi geçen bir yetkisiz kullanım süresi varsa, uyumluluk ilkesi için atanan değer uyumsuz olur
-- Cihazda daha sonra bir yetkisiz kullanım süresi varsa, uyumluluk ilkesi için atanan değer Yetkisizkullanımsüresinde olur
+- The device has no grace period assigned to it, then the assigned value for the compliance policy is NonCompliant
+- The device has a grace period that's expired, then the assigned value for the compliance policy is NonCompliant
+- The device has a grace period that's in the future, then the assigned value for the compliance policy is InGracePeriod
 
 Aşağıdaki tabloda bu noktalar özetlenmektedir:
 
