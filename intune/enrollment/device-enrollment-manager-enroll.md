@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b3c82faab08248640e19573582ccbd232e0587d
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: 0012a80f0e9ea60b41c94a582e42d5f647c6bbc2
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923347"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239212"
 ---
-# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Cihaz kayıt yöneticisi hesabı kullanarak cihazları Intune 'A kaydetme
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Bir cihaz kayıt yöneticisi hesabı kullanarak cihazları ıntune'a kaydetme
 
 Bir cihaz kayıt yöneticisi (DEM) hesabı kullanarak tek bir Azure Active Directory hesabıyla 1.000 adede kadar mobil cihaz kaydedebilirsiniz. DEM, bir AAD kullanıcı hesabına uygulanabilen ve kullanıcının 1.000 adede kadar cihaz kaydetmesine imkan veren bir Intune iznidir. DEM hesapları, cihazların kullanıcılarına teslim edilmeden önce kaydedilip hazırlandığı senaryolarda kullanışlıdır. Tasarım yaparak Microsoft Intune 150 cihaz kayıt Yöneticisi (DEM) hesabı sınırlaması vardır.
 
@@ -36,9 +36,10 @@ DEM kullanıcı hesapları ve bir DEM kullanıcı hesabıyla kaydedilen cihazlar
 - DEM hesabı kullanıcısına bir Intune lisansı atanmalıdır.
 - Silme işlemi Şirket Portalı’ndan yapılamaz. DEM kullanıcı hesabı tarafından kaydedilen bir cihazı silme işlemi, Azure portalında Intune’dan yapılamaz.
 - Şirket Portalı uygulamasında veya web sitesinde yalnızca yerel cihaz görünür.
-- DEM kullanıcı hesapları, uygulama yönetimi için kullanıcı başına Apple Kimliği gereksinimlerinden dolayı Apple Volume Purchase Program (VPP) uygulamalarını Apple VPP lisanslarıyla kullanamaz.
+- DEM Kullanıcı hesapları, uygulama yönetimi için Kullanıcı başına Apple KIMLIĞI gereksinimlerinden dolayı Apple VPP Kullanıcı lisanslarıyla Apple Volume Purchase Program (VPP) uygulamalarını kullanamaz.
+- DEM hesapları, cihazları Apple Aygıt Kayıt Programı (DEP) aracılığıyla kaydederken kullanılamaz.
 - Cihazlar, Apple VPP cihaz lisansına sahipse VPP uygulamalarını yükleyebilir.
-- Windows 10 1803 + dışında koşullu erişim için cihazlar engellenir
+- Cihazların Windows 10 1803 + hariç olmak üzere koşullu erişim engellenir
 - DEM hesaplarına kaydedilen her cihazın Intune tarafından yönetilmek üzere düzgün şekilde lisanslanması gerekir. Lisans, bir Intune kullanıcı lisansı veya bir Intune cihaz lisansı olabilir.
 - Bir DEM hesabı kullanarak [Android kurumsal iş profili cihazlarını](android-work-profile-enroll.md) kaydediyorsanız, hesap başına kaydedilenebilir 10 cihaz sınırı vardır.
 

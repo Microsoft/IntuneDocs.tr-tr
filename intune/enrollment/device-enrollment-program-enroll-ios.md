@@ -18,20 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164722"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239225"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
 Artık Apple'ın [Aygıt Kayıt Programı (DEP)](https://deploy.apple.com) aracılığıyla satın alınan iOS cihazlarını Intune ile yönetebilirsiniz. DEP, hiç dokunmadan çok sayıda cihazı kaydetmenizi sağlar. iPhone ve iPad’ler gibi cihazları doğrudan kullanıcılara gönderebilirsiniz. Kullanıcı cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz yönetime kaydedilir.
 
-DEP kaydını etkinleştirmek için Intune ve Apple DEP portallarını birlikte kullanmanız gerekir. Cihazlarınızı, Intune ile yönetilmek üzere atayabilmeniz için seri numaraları listesi veya sipariş numarası gereklidir. Kayıt sırasında cihazlara uygulanan ayarları içeren DEP kayıt profilleri oluşturun.
-
-Bu arada, DEP kaydının [cihaz kayıt yöneticisiyle](device-enrollment-manager-enroll.md) birlikte kullanılamayacağına dikkat edin.
+DEP kaydını etkinleştirmek için Intune ve Apple DEP portallarını birlikte kullanmanız gerekir. Cihazlarınızı, Intune ile yönetilmek üzere atayabilmeniz için seri numaraları listesi veya sipariş numarası gereklidir. Kayıt sırasında cihazlara uygulanan ayarları içeren DEP kayıt profilleri oluşturun. DEP kaydının bir [Cihaz Kayıt Yöneticisi](device-enrollment-manager-enroll.md) hesabıyla kullanılamayacağını unutmayın.
 
 > [!NOTE]
 > DEP, son kullanıcı tarafından kaldırılamayan cihaz yapılandırmasını ayarlar. Bu nedenle, [DEP 'e](../fundamentals/migration-guide-considerations.md)geçmeden önce cihazın bir kullanıma hazır (yeni) duruma dönmesi için temizlenmiş olması gerekir.
@@ -70,7 +68,7 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 > [!NOTE]
 > Belirteci Azure’a geçirmeden önce klasik Intune portalında silerseniz Intune, silinen bir Apple DEP belirtecini geri yükleyebilir. DEP belirtecini Azure portalından tekrar silebilirsiniz.
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1\. Adım Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Adım 1. Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** **Ekle** > ' yi seçin.
 
@@ -105,13 +103,13 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
    Apple portalında **Dağıtım Programları** &gt; **Aygıt Kayıt Programı** &gt; **Atama Geçmişini Görüntüle**’ye giderek cihazların listesi ile MDM sunucu atamalarına göz atabilirsiniz.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Adım 3. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3\. Adım. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
 
 [Microsoft Uç Nokta Yöneticisi Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), daha sonra başvurmak üzere Apple kimliğini sağlayın.
 
 ![Kayıt programı belirtecini oluşturmak için kullanılan Apple kimliğini belirtme ve kayıt programı belirtecine gözatma işleminin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>Adım 4. Belirtecinizi karşıya yükleyin ve kapsam etiketlerini seçin.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>4\. adımı. Belirtecinizi karşıya yükleyin ve kapsam etiketlerini seçin.
 
 1. **Apple belirteci** kutusunda sertifika (.pem) dosyasına göz atın ve **Aç**’ı seçin.
 2. Bu DEP belirtecine [kapsam etiketi](../fundamentals/scope-tags.md) uygulamak istiyorsanız **Kapsam (etiketler)** öğesini ve ardından istediğiniz kapsam etiketlerini seçin. Belirtece uygulanan kapsam etiketleri, bu belirtece eklenen profiller ve cihazlar tarafından devralınır.
@@ -168,7 +166,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
     Multi-Factor Authentication tek bir uygulama modunda kilitlenmiş tek bir cihazda desteklenmez. Bu sınırlama, cihazın ikinci kimlik doğrulama faktörünü tamamlaması için farklı bir uygulamaya geçiş yaptığından oluşur. Bu nedenle, tek bir App Mode cihazında çok faktörlü kimlik doğrulaması istiyorsanız ikinci faktör farklı bir cihazda olmalıdır.
 
-    Bu özellik yalnızca iOS 11.3.1 ve üzeri sürümlerde desteklenir.
+    Bu özellik yalnızca iOS 11.3.1 ve üzerinde desteklenir.
 
    ![Tek uygulama modunun ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
@@ -199,7 +197,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 15. **Kurulum Yardımcısı özelleştirmesi** sayfasında, aşağıdaki profil ayarlarını yapılandırın: kurulum yardımcısı özelleştirmesini ![.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    | Departman ayarları | Description |
+    | Departman ayarları | Açıklama |
     |---|---|
     | <strong>Departman Adı</strong> | Kullanıcı, etkinleştirme sırasında <strong>Yapılandırma Hakkında</strong> öğesine dokunduğunda görüntülenir. |
     |    <strong>Departman Telefonu</strong>     | Kullanıcı, etkinleştirme sırasında <strong>Yardım Gerekli</strong> düğmesine dokunduğunda görüntülenir. |

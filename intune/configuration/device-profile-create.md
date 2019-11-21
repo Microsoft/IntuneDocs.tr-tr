@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02603651587837211d9a67d7e4bbeb90cb358dc5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 694e2ae67ef2bf7795dcf63a03480fdaed8cfbc4
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059568"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261637"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Cihaz profillerini kullanarak ayar ekleyip yapılandırabilir ve daha sonra bu ayarları kuruluşunuzdaki cihazlara gönderebilirsiniz. [Cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama](device-profiles.md) sayfasında yapabileceğiniz işlemlerle ilgili ayrıntılı bilgilere yer verilmiştir.
 
@@ -54,7 +52,7 @@ Bu makalede:
    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
    - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:  
 
-       - **Outlook Web Access (OWA)**
+       - **Android**
        - **Android kurumsal**
        - **iOS/ıpados**
        - **macOS**
@@ -106,7 +104,7 @@ Kapsam etiketleri ve yapabilecekleriniz hakkında daha fazla bilgi için bkz. [D
 
 ## <a name="applicability-rules"></a>Uygulanabilirlik kuralları
 
-Uygulama hedefi:
+Şunun için geçerlidir:
 
 - Windows 10 ve üzeri
 
@@ -119,7 +117,7 @@ Bu görevi yapmak için bir **uygulanabilirlik kuralı**oluşturun. Bu kurallar 
 
 Bu senaryolara yaklaşımak için şunları yapın:
 
-- Bellows üniversite 'deki tüm cihazları içeren bir cihaz grubu oluşturun. Profilde, işletim sistemi en düşük sürümü `16299` ise ve en yüksek sürüm `17134` ise uygulanacak bir uygulanabilirlik kuralı ekleyin. Bu profili Bellows okul cihazları grubuna atayın.
+- Bellows üniversite 'deki tüm cihazları içeren bir cihaz grubu oluşturun. Profilde, işletim sistemi en düşük sürümü `16299` ve en yüksek sürüm `17134`, bu nedenle uygulanacak bir uygulanabilirlik kuralı ekleyin. Bu profili Bellows okul cihazları grubuna atayın.
 
   Atandığında profil, girdiğiniz en düşük ve en yüksek sürüm arasındaki cihazlara uygulanır. Girdiğiniz en düşük ve en yüksek sürümler arasında olmayan cihazlarda, durumları **geçerli değil**olarak gösterilir.
 
@@ -151,7 +149,7 @@ Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlev
     - **Işletim sistemi sürümü**: listede, kuralınıza dahil etmek istediğiniz Windows 10 sürümlerini (veya hariç tutmak) denetleyin.
     - **Işletim sistemi sürümü**: kuralınıza dahil etmek (veya dışlamak) istediğiniz **En düşük** ve **en yüksek** Windows 10 sürüm numaralarını girin. Her iki değer de gereklidir.
 
-      Örneğin, minimum sürüm için `10.0.16299.0` (RS3 veya 1709) ve en yüksek sürüm için `10.0.17134.0` (RS4 veya 1803) girebilirsiniz. Ya da daha ayrıntılı olabilir ve en yüksek sürüm için en düşük sürüm ve `10.0.17134.319` `10.0.16299.001` girebilirsiniz.
+      Örneğin, en yüksek sürüm için en düşük sürüm ve `10.0.17134.0` (RS4 veya 1803) için `10.0.16299.0` (RS3 veya 1709) girebilirsiniz. Ya da daha ayrıntılı olabilir ve en yüksek sürüm için en düşük sürüm ve `10.0.17134.319` `10.0.16299.001` girebilirsiniz.
 
 4. Değişikliklerinizi kaydetmek için **Ekle** ' yi seçin.
 
@@ -160,6 +158,32 @@ Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlev
 Intune, yapılandırma profillerinin güncelleştirmelerini denetlemek için farklı yenileme döngüleri kullanır. Cihaz yakın zamanda kaydedildiyse, iade etme daha sık çalışır. [İlke ve profil yenileme döngüleri](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) tahmini yenileme zamanlarını listeler.
 
 Kullanıcılar profil güncelleştirmelerini istedikleri zaman denetlemek için Şirket Portalı uygulamasını açıp cihazı eşitleyebilir.
+
+## <a name="recommendations"></a>Öneriler
+
+Profiller oluştururken aşağıdaki önerileri göz önünde bulundurun:
+
+- İlkelerine ne olduğunu ve ne yaptığını bilmek için ilkelerinizi adlandırın. Tüm [uyumluluk ilkeleri](../protect/create-compliance-policy.md) ve [yapılandırma profillerinin](../configuration/device-profile-create.md) isteğe bağlı bir **Açıklama** özelliği vardır. **Açıklama**' da, özel olarak, diğerlerinin ilkenin ne yaptığını bilmesi için bilgi ekleyin.
+
+  Bazı yapılandırma profili örnekleri şunları içerir:
+
+  **Profil adı**: yönetici şablonu-tüm Windows 10 kullanıcıları için OneDrive yapılandırma profili  
+  **Profil açıklaması**: tüm Windows 10 kullanıcıları için en düşük ve temel ayarları içeren OneDrive yönetici şablonu profili. Kullanıcıların kurumsal verileri kişisel OneDrive hesaplarına paylaşmasını engellemek için user@contoso.com tarafından oluşturulur.
+
+  **Profil adı**: tüm iOS kullanıcıları için VPN profili  
+  **Profil açıklaması**: Tüm IOS KULLANıCıLARıNıN contoso VPN 'ye bağlanması için en düşük ve temel ayarları içeren VPN profili. Kullanıcıların Kullanıcı adı ve parola istemek yerine VPN 'de otomatik olarak kimlik doğrulaması yaptığı için user@contoso.com tarafından oluşturulur.
+
+- Microsoft Edge ayarlarını yapılandırma, Microsoft Defender Anti-Virus ayarlarını etkinleştirme, iOS jailbreak uygulanmış cihazlarını engelleme vb. gibi kendi görevine göre profilinizi oluşturun.
+
+- Pazarlama, satış, BT yöneticileri veya konuma veya okul sistemine göre belirli gruplar için uygulanan Profiller oluşturun.
+
+- Kullanıcı ilkelerini cihaz ilkelerinden ayırın.
+
+  Örneğin, [Intune 'da Yönetim Şablonları](administrative-templates-windows.md) yüzlerce ADMX ayarı vardır. Bu şablon, bir ayarların kullanıcılar veya cihazlar için geçerli olup olmadığını gösterir. Yönetici şablonları oluştururken, kullanıcı ayarlarınızı bir kullanıcılar grubuna atayın ve cihaz ayarlarınızı bir cihaz grubuna atayın.
+
+  Aşağıdaki görüntüde kullanıcılara uygulanabilecek ve/veya cihazlara uygulanabilecek bir ayarın örneği gösterilmektedir:
+
+  ![Kullanıcı ve cihazlar için geçerli olan Intune yönetici şablonu](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

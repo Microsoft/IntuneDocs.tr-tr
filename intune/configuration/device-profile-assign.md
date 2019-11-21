@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae8bc7d5797a2ba6404331166e9d955bbb2fadf9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059590"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261682"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Bir profil oluşturursunuz ve girdiğiniz tüm ayarlar burada saklanır. Bir sonraki adım, profili Azure Active Directory (Azure AD) kullanıcı veya cihaz gruplarınıza dağıtmak veya "atamaktır". Atanan profiller kullanıcılara ve cihazlara ulaşır ve girdiğiniz ayarlar uygulanır.
 
 Bu makalede profil atama yöntemlerinin yanı sıra profillerinizde kapsam etiketlerini kullanma adımları hakkında bilgilere yer verilmiştir.
 
 > [!NOTE]  
-> Bir ilke kaldırıldığında veya bir cihaza artık atanmadıysa, ayar varolan değeri tutabilir. Ayar varsayılan değere dönmez. Ayarı farklı bir değer olarak değiştirmek için yeni bir ilke oluşturun ve atayın.
+> Bir profil kaldırıldığında veya bir cihaza artık atanmadıysa, ayar varolan değeri tutabilir. Ayar varsayılan değere dönmez. Ayarı farklı bir değere değiştirmek için yeni bir profil oluşturun ve atayın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-İlke atamak için uygun role sahip olduğunuzdan emin olun. Daha fazla bilgi için bkz. [Microsoft Intune Ile rol tabanlı erişim denetimi (RBAC)](../fundamentals/role-based-access-control.md).
+Profiller atamak için uygun role sahip olduğunuzdan emin olun. Daha fazla bilgi için bkz. [Microsoft Intune Ile rol tabanlı erişim denetimi (RBAC)](../fundamentals/role-based-access-control.md).
 
 ## <a name="assign-a-device-profile"></a>Bir cihaz profili atama
 
@@ -63,17 +61,49 @@ Profili atadıktan sonra etkilenen kullanıcı sayısını da **değerlendirebil
 
 Bir profil oluşturduğunuzda veya güncelleştirdiğinizde, profile kapsam etiketleri ve Uygulanabilirlik kuralları da ekleyebilirsiniz.
 
-**Kapsam etiketleri**, ilkeleri İnsan Kaynakları veya Merkez ofis çalışanları gibi belirli gruplara atamak ve filtreleme yapmak için kullanabileceğiniz bir yöntemdir. Daha fazla bilgi için bkz. [Dağıtılmış BT için RBAC ve kapsam etiketlerini kullanma](../fundamentals/scope-tags.md).
+**Kapsam etiketleri** , profilleri, insan kaynakları veya tüm ABD-NC çalışanları gibi belirli gruplara atamak ve filtrelemek için harika bir yoldur. Daha fazla bilgi için bkz. [Dağıtılmış BT için RBAC ve kapsam etiketlerini kullanma](../fundamentals/scope-tags.md).
 
 Windows 10 cihazlarında, profil yalnızca belirli bir işletim sistemi sürümü veya belirli bir Windows sürümü için geçerli olacak şekilde **uygulanabilirlik kuralları** ekleyebilirsiniz. [Uygulanabilirlik kurallarında](device-profile-create.md#applicability-rules) daha fazla bilgi bulunur.
 
+## <a name="user-groups-vs-device-groups"></a>Kullanıcı grupları ve cihaz grupları karşılaştırması
+
+Birçok kullanıcı, Kullanıcı gruplarını ne zaman kullanacağınızı ve cihaz gruplarının ne zaman kullanılacağını sorar. Yanıt, amacınız için farklılık gösterir. İşte başlamanıza yardımcı olacak bazı rehberlik.
+
+### <a name="device-groups"></a>Device groups
+
+Bir cihaza, kim oturum açmış olduğunuza bakılmaksızın ayarları uygulamak istiyorsanız, profillerinizi bir cihaz grubuna atayın. Cihaz gruplarına uygulanan ayarlar, Kullanıcı değil, her zaman cihaza gider.
+
+Örneğin:
+
+- Cihaz grupları, adanmış bir kullanıcısı olmayan cihazları yönetmek için yararlıdır. Örneğin, anahtarları, tarama envanterini Yazdır, vardiya çalışanları tarafından paylaşılır, belirli bir ambara atanmış ve bu şekilde devam eden cihazlara sahip olursunuz. Bu cihazları bir cihaz grubuna koyun ve profillerinizi bu aygıtlar grubuna atayın.
+
+- BIOS 'ta ayarları güncelleştiren bir [cihaz üretici yazılımı yapılandırma arabirimi (DFCı) Intune profili](device-firmware-configuration-interface-windows.md) oluşturursunuz. Örneğin, bu profili cihaz kamerayı devre dışı bırakacak şekilde yapılandırır veya kullanıcıların başka bir işletim sistemini önyüklemesine engel olmak için önyükleme seçeneklerini kilitler. Bu profil, bir cihazlar grubuna atamak için iyi bir senaryodur.
+
+- Bazı belirli Windows cihazlarında, cihazı kimin kullandığını fark etmeksizin her zaman bazı Microsoft Edge ayarlarını denetlemek istersiniz. Örneğin, tüm indirmeleri engellemek, tüm tanımlama bilgilerini geçerli gözatma oturumuyla sınırlamak ve gözatma geçmişini silmek isteyebilirsiniz. Bu senaryo için, bu belirli Windows cihazlarını bir cihazlar grubuna yerleştirin. Ardından, [Intune 'da bir yönetim şablonu](administrative-templates-windows.md)oluşturun, bu cihaz ayarlarını ekleyin ve ardından bu profili cihazlar grubuna atayın.
+
+Özetlemek gerekirse, cihazda oturum açmış olan kişileri veya herkesin oturum açmış olduğunu önemsemezseniz cihaz gruplarını kullanın. Ayarlarınızı her zaman cihazda olmasını istiyorsunuz.
+
+### <a name="user-groups"></a>Kullanıcı grupları
+
+Kullanıcı gruplarına uygulanan profil ayarları her zaman kullanıcıya gider ve çok sayıda cihazda oturum açıldığında kullanıcıya gider. Kullanıcıların Surface Pro for Work ve bir kişisel iOS cihazı gibi birçok cihazı olması normaldir. Ayrıca, bir kişinin e-postaya ve diğer kuruluş kaynaklarına bu cihazlardan erişmesi normaldir.
+
+Örneğin:
+
+- Tüm cihazlarındaki tüm kullanıcılar için bir yardım masası simgesi koymak istiyorsunuz. Bu senaryoda, bu kullanıcıları bir Users grubuna koyun ve yardım masası simgesi profilinizi bu kullanıcılar grubuna atayın.
+- Kullanıcı, kuruluşa ait yeni bir cihaz alır. Kullanıcı, cihazda etki alanı hesabıyla oturum açar. Cihaz otomatik olarak Azure AD 'ye kaydedilir ve Intune tarafından otomatik olarak yönetilir. Bu profil, bir kullanıcılar grubuna atamak için iyi bir senaryodur.
+- Bir Kullanıcı cihazda oturum açtığında, OneDrive veya Office gibi uygulamalardaki özellikleri denetlemek istersiniz. Bu senaryoda, OneDrive veya Office profil ayarlarınızı bir kullanıcılar grubuna atayın.
+
+  Örneğin, Office uygulamalarınızda güvenilmeyen ActiveX denetimlerini engellemek isteyebilirsiniz. [Intune 'da bir yönetim şablonu](administrative-templates-windows.md)oluşturabilir, bu ayarı yapılandırabilir ve ardından bu profili bir Users grubuna atayabilirsiniz.
+
+Özetlemek gerekirse, ayarlarınızı ve kurallarınızı her zaman kullanıcıya, hangi cihazdan kullandıklarından bağımsız olarak gitmek istediğinizde kullanıcı gruplarını kullanın.
+
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Grupları bir profil atamasından dışlama
 
-Intune cihaz yapılandırma profilleri, ilke atamasından grupları eklemenizi ve dışlanmasını sağlar.
+Intune cihaz yapılandırma profilleri, profil atamasından grupları eklemenizi ve dışlanmasını sağlar.
 
-En iyi uygulama olarak, Kullanıcı gruplarınız için özel ilkeler oluşturun ve atayın. Ve, özel olarak cihaz gruplarınız için farklı ilkeler oluşturun ve atayın. Gruplar hakkında daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](../fundamentals/groups-add.md).
+En iyi uygulama olarak, Kullanıcı gruplarınız için özel profiller oluşturun ve atayın. Ve, özel olarak cihaz gruplarınız için farklı profiller oluşturun ve atayın. Gruplar hakkında daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](../fundamentals/groups-add.md).
 
-İlkelerinizi atadığınızda, grupları dahil etmek ve dışlamak için aşağıdaki tabloyu kullanın. Onay işareti, atamanın desteklendiği anlamına gelir:
+Profillerinizi atadığınızda, grupları dahil etmek ve dışlamak için aşağıdaki tabloyu kullanın. Onay işareti, atamanın desteklendiği anlamına gelir:
 
 ![Desteklenen seçenekler bir profil atamasında grupları içerir veya hariç tutar](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
@@ -84,13 +114,13 @@ En iyi uygulama olarak, Kullanıcı gruplarınız için özel ilkeler oluşturun
   - Kullanıcı gruplarını dahil etme ve Kullanıcı gruplarını hariç tutma
   - Cihaz gruplarını ekleme ve cihaz grubunu hariç tutma
 
-  Örneğin, **tüm kurumsal kullanıcılar** kullanıcı grubuna bir cihaz profili atarsınız, ancak üst **düzey yönetim personeli** Kullanıcı grubundaki üyeleri dışlayabilirsiniz. Her iki grup da Kullanıcı grupları olduğundan, üst **düzey yönetim personeli** hariç **tüm kurumsal kullanıcılar** ilkeyi alır.
+  Örneğin, **tüm kurumsal kullanıcılar** kullanıcı grubuna bir cihaz profili atarsınız, ancak üst **düzey yönetim personeli** Kullanıcı grubundaki üyeleri dışlayabilirsiniz. Her iki grup da Kullanıcı grupları olduğundan, üst **düzey yönetim personeli** hariç **tüm şirket kullanıcıları** profili alırlar.
 
-- Intune, Kullanıcı-cihaz grubu ilişkilerini değerlendirmez. Karışık gruplara ilke atarsanız, sonuçlar istediğiniz veya beklediğiniz gibi olabilir.
+- Intune, Kullanıcı-cihaz grubu ilişkilerini değerlendirmez. Bunları karışık gruplara atarsanız, sonuçlar istediğiniz veya beklediğiniz gibi olabilir.
 
-  Örneğin, **tüm kullanıcılar** kullanıcı grubuna bir cihaz profili atarsınız, ancak **tüm kişisel cihazlar** cihaz grubunu dışlayamazsınız. Bu karma Grup İlkesi atamasında, **tüm kullanıcılar** ilkeyi alır. Dışlama uygulanmaz.
+  Örneğin, **tüm kullanıcılar** kullanıcı grubuna bir cihaz profili atarsınız, ancak **tüm kişisel cihazlar** cihaz grubunu dışlayamazsınız. Bu karma grup profili atamasında, **tüm kullanıcılar** profili alır. Dışlama uygulanmaz.
 
-  Sonuç olarak, karışık gruplara ilke atanması önerilmez.
+  Sonuç olarak, profillerin karışık gruplara atanması önerilmez.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
