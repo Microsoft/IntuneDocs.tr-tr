@@ -1,12 +1,12 @@
 ---
-title: Uygulama varlıkları için başvuru
+title: Reference for Application entities
 titleSuffix: Microsoft Intune
 description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Uygulama kategorisi için başvuru konusu.
 keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac40be5cf3d0a0a217340b3c745daf740a24e8e7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490370"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290957"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
-**Uygulama** kategorisi, mobil cihazlar için aşağıdaki gibi bilgileri izleyen varlıklar içerir:
+The **Application** category contains entities for devices that track information such as:
 
 - Uygulamanın sürümleri
 - Uygulamanın yükleme kaynağı
@@ -42,10 +42,10 @@ ms.locfileid: "72490370"
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | appKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
-| Uygulama |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| uncaya |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
+| applicationId |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
+| revision |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
 | title |Uygulama başlığı. |Excel |
-| 'ın |Uygulama yayımcısı. |Microsoft |
+| publisher |Uygulama yayımcısı. |Microsoft |
 | uploadState |Uygulamanın karşıya yüklenme durumu. |1 |
 | appTypeKey |Aşağıdaki bölümde açıklanan AppType özelliğine başvuru. | |
 | vppProgramTypeKey |Aşağıda açıklanan VppProgramType özelliğine başvuru. | |
@@ -54,7 +54,7 @@ ms.locfileid: "72490370"
 | boyut |İkili boyutu. | |
 | startDateInclusiveUTC |Bu uygulama düzeltmesi, veri ambarında oluşturulduğunda tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 | endDateExclusiveUTC |Bu uygulama düzeltmesi kullanımdan kalktığında tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
-| IsCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir. |Doğru/Yanlış |
+| isCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir. |Doğru/Yanlış |
 | rowLastModifiedDateTimeUTC |Bu uygulama sürümü, veri ambarında son değiştirildiğinde tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 
 ## <a name="apptypes"></a>appTypes
@@ -63,7 +63,7 @@ ms.locfileid: "72490370"
 
 | Özellik  | Description |
 |---------|------------|
-| Apptypeıd |Tür kimliği |
+| appTypeID |Tür kimliği |
 | appTypeKey |Anahtar için yedek anahtar |
 | appTypeName |Uygulama türü |
 
@@ -92,7 +92,7 @@ ms.locfileid: "72490370"
 
 | Özellik  | Description |
 |---------|------------|
-| Vppprogramtypeıd | Tür kimliği. |
+| vppProgramTypeID | Tür kimliği. |
 | vppProgramTypeKey | Anahtar için vekil anahtar. |
 | vppProgramTypeName | VPP Program türü. |
 
@@ -106,27 +106,27 @@ ms.locfileid: "72490370"
 
 
 
-## <a name="applicationinventories"></a>Applicationenvanterler
+## <a name="applicationinventories"></a>applicationInventories
 
-**Applicationınventory** varlığı, envanter koleksiyonu sırasında cihazda bulunan uygulamaları listeler.
+The **applicationInventory** entity lists the applications found on the device at the time of inventory collection.
 
 | Özellik  | Description |
 |---------|------------|
 | deviceKey | Bu, Intune cihaz kimliğini içeren Cihaz tablosuna bir başvurudur. |
 | dateKey | Envanterin alındığı günü gösteren tarih tablosuna başvuru. |
-| ApplicationName | Uygulama adı. |
+| applicationName | Uygulama adı. |
 | applicationVersion | Uygulamanın sürümü. |
-| Paketleme Taboyutu | Uygulamanın bayt cinsinden boyutu. |
+| bundleSize | Uygulamanın bayt cinsinden boyutu. |
 
 ## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-**Mobileappınstallstate** varlığı, bir mobil uygulamanın cihaz, Kullanıcı veya her ikisini de içeren bir gruba atandıktan sonra yüklenmesi durumunu temsil eder.
+The **mobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
 
 | Özellik | Description |
 |---|---|
-| Appınstallstatekey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
-| Appınstallstate | Uygulama yükleme durumunun Enum değeri. |
-| Appınstallstatename | Uygulama yükleme durumunun adı. |
+| appInstallStateKey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
+| appInstallState | Uygulama yükleme durumunun Enum değeri. |
+| appInstallStateName | Uygulama yükleme durumunun adı. |
 
 
 
