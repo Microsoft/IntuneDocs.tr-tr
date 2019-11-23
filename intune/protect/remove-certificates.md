@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,30 +17,30 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: e00600abb8327623eff4efe8509670779710ab7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dbf6d95c8902a95993b972ff7639d4afb4324ac8
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509022"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410167"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune’da SCEP ve PKCS sertifikalarını kaldırma
 
-Microsoft Intune, cihazlara sertifika eklemek için Basit Sertifika Kayıt Protokolü (SCEP) ve ortak anahtar şifreleme standartları (PKCS) sertifika profillerini kullanabilirsiniz.
+In Microsoft Intune, you can use Simple Certificate Enrollment Protocol (SCEP) and Public Key Cryptography Standards (PKCS) certificate profiles to add certificates to devices.
 
-Bu sertifikalar [, cihazı sildiğinizde veya](../remote-actions/devices-wipe.md#wipe) [devre dışı](../remote-actions/devices-wipe.md#retire) bırakıldığında kaldırılabilir. Ayrıca, sertifikaların otomatik olarak kaldırıldığı senaryolar ve sertifikaların cihazda kalacağı senaryolar da vardır. Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikaları üzerindeki etkisi listelenmiştir.
+These certificates can be removed when you [wipe](../remote-actions/devices-wipe.md#wipe) or [retire](../remote-actions/devices-wipe.md#retire) the device. There are also scenarios where certificates are automatically removed, and scenarios where certificates stay on the device. Bu makalede bazı yaygın senaryolar ve bu senaryoların PKCS ve SCEP sertifikaları üzerindeki etkisi listelenmiştir.
 
 > [!NOTE]
-> Şirket içi Active Directory veya Azure Active Directory (Azure AD) ' den çıkarılan bir kullanıcının sertifikalarını kaldırmak ve iptal etmek için şu adımları sırasıyla izleyin:
+> To remove and revoke certificates for a user who's being removed from on-premises Active Directory or Azure Active Directory (Azure AD), follow these steps in order:
 >
-> 1. Kullanıcının cihazını temizleyin veya devre dışı bırakın.
-> 2. Kullanıcıyı şirket içi Active Directory veya Azure AD 'den kaldırın.
+> 1. Wipe or retire the user's device.
+> 2. Remove the user from on-premises Active Directory or Azure AD.
 
-## <a name="manually-deleted-certificates"></a>El ile silinen sertifikalar
+## <a name="manually-deleted-certificates"></a>Manually deleted certificates
 
-Bir sertifikayı el ile silme, SCEP veya PKCS sertifika profilleri tarafından sağlanan platformlar ve Sertifikalar arasında uygulanan bir senaryodur. Örneğin, bir Kullanıcı bir sertifika ilkesi tarafından hedeflenirse bir cihazdan bir sertifikayı silebilir.
+Manual deletion of a certificate is a scenario that applies across platforms and certificates provisioned by SCEP or PKCS certificate profiles. For example, a user might delete a certificate from a device, when the device remains targeted by a certificate policy.
 
-Bu senaryoda, sertifika silindikten sonra cihaz, Intune ile bir dahaki sefer denetlediğinde, beklenen sertifika eksik olduğu için aygıtın uyumsuz olduğu tespit edilir. Intune daha sonra cihazı uyumluluğa geri yüklemek için yeni bir sertifika yayınlar. Sertifikayı geri yüklemek için başka bir eylem gerekmez.
+In this scenario, after the certificate is deleted, the next time the device checks in with Intune it's found to be out of compliance as it is missing the expected certificate. Intune then issues a new certificate to restore the device to compliance. No additional action is needed to restore the certificate.
 
 ## <a name="windows-devices"></a>Windows cihazları
 
@@ -48,165 +48,188 @@ Bu senaryoda, sertifika silindikten sonra cihaz, Intune ile bir dahaki sefer den
 
 Bir SCEP sertifikası şu durumlarda iptal edilir *ve* kaldırılır:
 
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
-- Cihaz bir Azure AD grubundan kaldırılır.
-- Bir sertifika profili grup atamasından kaldırılır.
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+- The device is removed from an Azure AD group.
+- A certificate profile is removed from the group assignment.
 
 Bir SCEP sertifikası şu durumlarda iptal edilir:
-- Bir yönetici, SCEP profilini değiştirir veya güncelleştirir.
 
-Şu durumlarda bir kök sertifika kaldırılır:
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+- An administrator changes or updates the SCEP profile.
 
-SCEP sertifikaları cihazda *kalır* (sertifikalar iptal edilmez veya kaldırılmaz):
-- Bir Kullanıcı Intune lisansını kaybeder.
-- Bir yönetici, Intune lisansını çizer.
-- Yönetici, kullanıcıyı veya grubu Azure AD 'den kaldırır.
+A root certificate is removed when:
+
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+
+SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
+
+- A user loses the Intune license.
+- An administrator withdraws the Intune license.
+- An administrator removes the user or group from Azure AD.
 
 ### <a name="pkcs-certificates"></a>PKCS sertifikaları
 
 Bir PKCS sertifikası şu durumlarda iptal edilir *ve* kaldırılır:
 
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
-Şu durumlarda bir kök sertifika kaldırılır:
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+A root certificate is removed when:
 
-PKCS sertifikaları cihazda *kalır* (sertifikalar iptal edilmez veya kaldırılmaz):
-- Bir Kullanıcı Intune lisansını kaybeder.
-- Bir yönetici, Intune lisansını çizer.
-- Yönetici, kullanıcıyı veya grubu Azure AD 'den kaldırır.
-- Bir yönetici, PKCS profilini değiştirir veya güncelleştirir.
-- Bir sertifika profili grup atamasından kaldırılır.
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+
+PKCS certificates *stay* on the device (certificates aren't revoked or removed) when:
+
+- A user loses the Intune license.
+- An administrator withdraws the Intune license.
+- An administrator removes the user or group from Azure AD.
+- An administrator changes or updates the PKCS profile.
+- A certificate profile is removed from the group assignment.
 
 
-## <a name="ios-devices"></a>iOS cihazları
+## <a name="ios-devices"></a>iOS devices
 
 ### <a name="scep-certificates"></a>SCEP sertifikaları
 
 Bir SCEP sertifikası şu durumlarda iptal edilir *ve* kaldırılır:
 
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
-- Cihaz Azure AD grubundan kaldırılır.
-- Bir sertifika profili grup atamasından kaldırılır.
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+- The device is removed from the Azure AD group.
+- A certificate profile is removed from the group assignment.
 
 Bir SCEP sertifikası şu durumlarda iptal edilir:
-- Bir yönetici, SCEP profilini değiştirir veya güncelleştirir.
 
-Şu durumlarda bir kök sertifika kaldırılır:
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+- An administrator changes or updates the SCEP profile.
 
-SCEP sertifikaları cihazda *kalır* (sertifikalar iptal edilmez veya kaldırılmaz):
-- Bir Kullanıcı Intune lisansını kaybeder.
-- Bir yönetici, Intune lisansını çizer.
-- Yönetici, kullanıcıyı veya grubu Azure AD 'den kaldırır.
+A root certificate is removed when:
+
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+
+SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
+
+- A user loses the Intune license.
+- An administrator withdraws the Intune license.
+- An administrator removes the user or group from Azure AD.
 
 ### <a name="pkcs-certificates"></a>PKCS sertifikaları
 
 Bir PKCS sertifikası şu durumlarda iptal edilir *ve* kaldırılır:
 
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 Bir PKCS sertifikası şu durumlarda kaldırılır:
-- Bir sertifika profili grup atamasından kaldırılır.
 
-Şu durumlarda bir kök sertifika kaldırılır:
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+- A certificate profile is removed from the group assignment.
 
-PKCS sertifikaları cihazda *kalır* (sertifikalar iptal edilmez veya kaldırılmaz):
-- Bir Kullanıcı Intune lisansını kaybeder.
-- Bir yönetici, Intune lisansını çizer.
-- Yönetici, kullanıcıyı veya grubu Azure AD 'den kaldırır.
-- Bir yönetici, PKCS profilini değiştirir veya güncelleştirir.
+A root certificate is removed when:
+
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+
+PKCS certificates *stay* on the device (certificates aren't revoked or removed) when:
+
+- A user loses the Intune license.
+- An administrator withdraws the Intune license.
+- An administrator removes the user or group from Azure AD.
+- An administrator changes or updates the PKCS profile.
 
 ## <a name="android-knox-devices"></a>Android KNOX cihazları
 
 ### <a name="scep-certificates"></a>SCEP sertifikaları
 
 Bir SCEP sertifikası şu durumlarda iptal edilir *ve* kaldırılır:
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
+
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
 
 Bir SCEP sertifikası şu durumlarda iptal edilir:
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
-- Cihaz bir Azure AD grubundan kaldırılır.
-- Bir sertifika profili grup atamasından kaldırılır.
-- Yönetici, kullanıcıyı veya grubu Azure AD 'den kaldırır.
-- Bir yönetici, SCEP profilini değiştirir veya güncelleştirir.
 
-Şu durumlarda bir kök sertifika kaldırılır:
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+- The device is removed from an Azure AD group.
+- A certificate profile is removed from the group assignment.
+- An administrator removes the user or group from Azure AD.
+- An administrator changes or updates the SCEP profile.
 
-SCEP sertifikaları cihazda *kalır* (sertifikalar iptal edilmez veya kaldırılmaz):
-- Bir Kullanıcı Intune lisansını kaybeder.
-- Bir yönetici, Intune lisansını çizer.
-- Yönetici, kullanıcıyı veya grubu Azure AD 'den kaldırır.
+A root certificate is removed when:
+
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+
+SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
+
+- A user loses the Intune license.
+- An administrator withdraws the Intune license.
+- An administrator removes the user or group from Azure AD.
 
 ### <a name="pkcs-certificates"></a>PKCS sertifikaları
 
 Bir PKCS sertifikası şu durumlarda iptal edilir *ve* kaldırılır:
 
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
-Şu durumlarda bir kök sertifika kaldırılır:
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [silme](../remote-actions/devices-wipe.md#wipe) eylemini çalıştırır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
+A root certificate is removed when:
 
-PKCS sertifikaları cihazda *kalır* (sertifikalar iptal edilmez veya kaldırılmaz):
-- Bir Kullanıcı Intune lisansını kaybeder.
-- Bir yönetici, Intune lisansını çizer.
-- Yönetici, kullanıcıyı veya grubu Azure AD 'den kaldırır.
-- Bir yönetici, PKCS profilini değiştirir veya güncelleştirir.
-- Bir sertifika profili grup atamasından kaldırılır.
+- A user unenrolls.
+- An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
+- An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
+
+PKCS certificates *stay* on the device (certificates aren't revoked or removed) when:
+- A user loses the Intune license.
+
+- An administrator withdraws the Intune license.
+- An administrator removes the user or group from Azure AD.
+- An administrator changes or updates the PKCS profile.
+- A certificate profile is removed from the group assignment.
 
 
 > [!NOTE]
-> Android for Work cihazları önceki senaryolar için doğrulanmaz.
-> Android eski cihazlar (Samsung olmayan, iş dışı tüm profil cihazları) sertifika kaldırma için etkinleştirilmemiştir.
+> Android for Work devices are not validated for the preceding scenarios.
+> Android legacy devices (any non-Samsung, non-work profile devices) are not enabled for certificate removal.
 
 ## <a name="macos-certificates"></a>macOS sertifikaları
 
 ### <a name="scep-certificates"></a>SCEP sertifikaları
 
 Bir SCEP sertifikası şu durumlarda iptal edilir *ve* kaldırılır:
-- Bir kullanıcı kaydı geri alır.
-- Yönetici [devre dışı bırakma](../remote-actions/devices-wipe.md#retire) eylemini çalıştırır.
-- Cihaz bir Azure AD grubundan kaldırılır.
-- Bir sertifika profili grup atamasından kaldırılır.
+
+- A user unenrolls.
+- An administrator runs a [retire](../remote-actions/devices-wipe.md#retire) action.
+- The device is removed from an Azure AD group.
+- A certificate profile is removed from the group assignment.
 
 Bir SCEP sertifikası şu durumlarda iptal edilir:
-- Bir yönetici, SCEP profilini değiştirir veya güncelleştirir.
 
-SCEP sertifikaları cihazda *kalır* (sertifikalar iptal edilmez veya kaldırılmaz):
-- Bir Kullanıcı Intune lisansını kaybeder.
-- Bir yönetici, Intune lisansını çizer.
-- Yönetici, kullanıcıyı veya grubu Azure AD 'den kaldırır.
+- An administrator changes or updates the SCEP profile.
+
+SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
+
+- A user loses the Intune license.
+- An administrator withdraws the Intune license.
+- An administrator removes the user or group from Azure AD.
 
 > [!NOTE]
 > macOS cihazlarda fabrika sıfırlaması yapmak için [silme](../remote-actions/devices-wipe.md#wipe) eyleminin kullanımı desteklenmez.
 
 ### <a name="pkcs-certificates"></a>PKCS sertifikaları
 
-PKCS sertifikaları macOS 'ta desteklenmez.
+PKCS certificates aren't supported on macOS.
 
+## <a name="next-steps"></a>Sonraki adımlar
+
+[Use certificates for authentication](certificates-configure.md)

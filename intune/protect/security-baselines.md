@@ -1,223 +1,227 @@
 ---
-title: Microsoft Intune-Azure 'da güvenlik temellerini kullanma | Microsoft Docs
-description: Mobil cihaz yönetimi için Microsoft Intune olan cihazlarda Kullanıcı ve verileri korumak için önerilen Windows güvenlik ayarlarını kullanın. Şifrelemeyi etkinleştirin, Microsoft Defender Gelişmiş tehdit korumasını yapılandırın, Internet Explorer 'ı denetleyin, yerel güvenlik ilkelerini ayarlayın, parola gerektir, Internet indirmelerini engelleyin ve daha fazlasını yapın.
+title: Use security baselines in Microsoft Intune - Azure | Microsoft Docs
+description: Use the recommended windows security settings to protect user and data on devices with Microsoft Intune for mobile device management. Enable encryption, configure Microsoft Defender Advanced Threat Protection, control Internet Explorer, set local security policies, require a password, block internet downloads, and more.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413831"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409983"
 ---
-# <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
+# <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Use security baselines to configure Windows 10 devices in Intune
 
-Kullanıcılarınızın ve cihazlarınızın güvenliğini sağlamanıza ve korumanıza yardımcı olması için Intune 'un güvenlik temellerini kullanın. Güvenlik temelleri, bilinen bir ayar grubunu ve ilgili güvenlik ekipleri tarafından önerilen varsayılan değerleri uygulamanıza yardımcı olan önceden yapılandırılmış Windows ayarları gruplarıdır. Intune 'da bir güvenlik temeli profili oluşturduğunuzda, birden çok *cihaz yapılandırma* profilinden oluşan bir şablon oluşturursunuz.
+Use Intune's security baselines to help you secure and protect your users and devices. Security baselines are pre-configured groups of Windows settings that help you apply a known group of settings and default values that are recommended by the relevant security teams. When you create a security baseline profile in Intune, you're creating a template that consists of multiple *device configuration* profiles.
 
 Bu özellik şu platformlarda geçerlidir:
 
-- Windows 10 sürüm 1809 ve üzeri
+- Windows 10 version 1809 and later
 
-Güvenlik temellerini Intune 'daki Kullanıcı veya cihaz gruplarına dağıtırsınız ve ayarlar Windows 10 veya üstünü çalıştıran cihazlara uygulanır. Örneğin, *MDM güvenlik temeli* çıkarılabilir sürücüler Için BitLocker 'ı otomatik olarak sağlar, otomatik olarak bir cihazın kilidini açmak için bir parola gerektirir, temel kimlik doğrulamasını otomatik olarak devre dışı bırakır ve daha fazlasını Ortamınız için varsayılan bir değer çalışmazsa, ihtiyacınız olan ayarları uygulamak için taban çizgisini özelleştirin.
+You deploy security baselines to groups of users or devices in Intune, and the settings apply to devices that run Windows 10 or later. For example, the *MDM Security Baseline* automatically enables BitLocker for removable drives, automatically requires a password to unlock a device, automatically disables basic authentication, and more. When a default value doesn’t work for your environment, customize the baseline to apply the settings you need.
 
-Ayrı taban çizgisi türleri aynı ayarları içerebilir, ancak bu ayarlar için farklı varsayılan değerleri kullanır. Kullanmayı seçtiğiniz temellerin varsayılan değerlerini anlamanız ve sonra her bir taban çizgisini Kuruluş gereksinimlerinize uyacak şekilde değiştirmek önemlidir.
+Separate baseline types can include the same settings but use different default values for those settings. It's important to understand the defaults in the baselines you choose to use, and to then modify each baseline to fit your organizational needs.
 
 > [!NOTE]
-> Microsoft, bir üretim ortamında güvenlik temellerinin önizleme sürümlerinin kullanılmasını önermez. Önizleme temelindeki ayarlar Önizleme kursu üzerinde değişebilir.
+> Microsoft doesn't recommend using preview versions of security baselines in a production environment. The settings in a preview baseline might change over the course of the preview.
 
-Güvenlik temelleri, Microsoft 365 çalışırken uçtan uca güvenli bir iş akışına sahip olmanıza yardımcı olabilir. Bazı avantajlardan bazıları şunlardır:
+Security baselines can help you to have an end-to-end secure workflow when working with Microsoft 365. Some of the benefits include:
 
-- Güvenlik temeli, güvenliği etkileyen ayarlarla ilgili en iyi uygulamaları ve önerileri içerir. Intune, Grup İlkesi güvenlik temelleri oluşturan aynı Windows güvenlik ekibine sahip iş ortakları. Bu öneriler, kılavuzluk ve kapsamlı deneyimi temel alır.
-- Intune 'a yeni başladıysanız ve nereden başlayabileceğiniz konusunda emin değilseniz, güvenlik temelleri size bir avantaj sunar. Kuruluşunuzun kaynaklarını ve verilerini korumaya yardımcı olduğunuzu bilerek, güvenli bir profil oluşturup dağıtabilirsiniz.
-- Şu anda Grup ilkesi kullanıyorsanız, yönetim için Intune 'a geçiş bu temellerle çok daha kolay olur. Bu taban çizgileri, Intune 'da yerel olarak yerleşik olarak bulunur ve modern bir yönetim deneyimi içerir.
+- A security baseline includes the best practices and recommendations on settings that impact security. Intune partners with the same Windows security team that creates group policy security baselines. These recommendations are based on guidance and extensive experience.
+- If you're new to Intune, and not sure where to start, then security baselines gives you an advantage. You can quickly create and deploy a secure profile, knowing that you're helping protect your organization's resources and data.
+- If you currently use group policy, migrating to Intune for management is much easier with these baselines. These baselines are natively built in to Intune, and include a modern management experience.
 
-[Windows güvenlik temelleri](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) , bu özellik hakkında daha fazla bilgi edinmek için harika bir kaynaktır. [Mobil cihaz yönetimi](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) MDM ile ilgili harika bir kaynaktır ve Windows cihazlarında neler yapabilirsiniz.
+[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature. [Mobile device management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) is a great resource about MDM, and what you can do on Windows devices.
 
-## <a name="about-baseline-versions-and-instances"></a>Temel sürümler ve örnekler hakkında
+## <a name="about-baseline-versions-and-instances"></a>About baseline versions and instances
 
-Bir taban çizgisinin her yeni sürüm örneği, ayarları ekleyebilir veya kaldırabilir veya diğer değişiklikleri getirebilir. Örneğin, yeni Windows 10 ayarları Windows 10 ' un yeni sürümleriyle kullanılabilir hale geldiğinde, MDM güvenlik temeli en yeni ayarları içeren yeni bir sürüm örneği alabilir.
+Each new version instance of a baseline can add or remove settings or introduce other changes. For example, as new Windows 10 settings become available with new versions of Windows 10, the MDM Security Baseline might receive a new version instance that includes the newest settings.
 
-Intune konsolunda her bir taban çizgisi için kutucuk, taban çizgisi şablon adını ve bu taban çizgisi hakkındaki temel bilgileri görüntüler. Bu bilgiler, bu taban çizgisi türünü kullanan profillerin sayısını, taban çizgisi türünün kaç farklı örneğine (sürümlerini) kullanılabildiğini ve temel şablonun kiracınıza ne zaman eklendiğini belirleyen *son Yayımlanma* tarihini içerir. Aşağıdaki örnek, iyi kullanılan bir MDM güvenlik temeli için kutucuğu göstermektedir:
+In the Intune console, the tile for each baseline displays the baseline template name and basic information about that baseline. The information includes how many profiles you have that use that baseline type, how many separate instances (versions) of the baseline type are available, and a *Last Published* date that identifies when that baseline template was added to your tenant. The following example shows the tile for a well-used MDM Security Baseline:
 
-![Taban çizgisi kutucuğu](./media/security-baselines/baseline-tile.png)
+![Baseline tile](./media/security-baselines/baseline-tile.png)
 
-Kullandığınız temel sürümler hakkında daha fazla bilgi görüntülemek için bir temel kutucuk seçerek *genel bakış* bölmesini açın ve ardından **sürümler**' i seçin. Intune, profilleriniz tarafından kullanılan bu taban çizgisinin sürümleriyle ilgili ayrıntıları görüntüler. Sürümler bölmesinde, bu sürümü kullanan profillerle ilgili daha derin ayrıntıları görüntülemek için tek bir sürüm seçebilirsiniz. Ayrıca, iki farklı sürüm seçebilir ve bu farklılıkları ayrıntılarıyla bir CSV dosyası indirmek için **temelleri Karşılaştır** ' ı seçebilirsiniz.
+To view more information about the baseline versions you use, select a baseline tile to open its *Overview* pane, and then select **Versions**. Intune displays details about the versions of that baseline that are in use by your profiles. On the Versions pane, you can select a single version to view deeper details about the profiles that use that version. You can also select two different versions and then choose **Compare baselines** to download a CSV file that details those differences.
 
-![Temelleri Karşılaştır](./media/security-baselines/compare-baselines.png)
+![Compare baselines](./media/security-baselines/compare-baselines.png)
 
-Bir güvenlik temeli *profili*oluşturduğunuzda, profil otomatik olarak en son yayınlanan güvenlik temeli örneğini kullanır.  Önizleme sürümü kullanılarak oluşturulan taban çizgileri dahil daha önce daha önce oluşturduğunuz profilleri kullanmaya ve düzenlemeye devam edebilirsiniz.
+When you create a security baseline *profile*, the profile automatically uses the most recently released security baseline instance.  You can continue to use and edit profiles that you previously created that use an earlier baseline version instance, including baselines created using a Preview version.
 
-Belirli bir profille kullanılan bir taban çizgisinin [sürümünün değiştirilmesini](#change-the-baseline-version-for-a-profile) seçebilirsiniz. Bu, yeni bir sürüm geldiğinde, bundan faydalanmak için yeni bir temel profil oluşturmanız gerekmediği anlamına gelir. Bunun yerine, hazır olduğunuzda bir temel profil seçebilir ve sonra bu profilin örnek sürümünü yeni bir profil olarak değiştirmek için yerleşik seçeneğini kullanabilirsiniz.
+You can choose to [change of the version](#change-the-baseline-version-for-a-profile) of a baseline that’s in use with a given profile. This means when a new version comes out, you don’t have to create a new baseline profile to take advantage of it. Instead, when you’re ready, you can select a baseline profile and then use the built-in option to change the instance version for that profile to a new one.
 
-## <a name="available-security-baselines"></a>Kullanılabilir güvenlik temelleri
+## <a name="available-security-baselines"></a>Available security baselines
 
- Intune ortamınızda kullanılabilen bir veya daha fazla temeli aynı anda kullanabilirsiniz. Farklı Özelleştirmelerdeki aynı güvenlik temellerinin birden çok örneğini de kullanabilirsiniz.
+ You can use one or more of the available baselines in your Intune environment at the same time. You can also use multiple instances of the same security baselines that have different customizations.
 
-Birden çok güvenlik temeli kullandığınızda, farklı temellerin aynı ayar için çakışan değerleri ne zaman tanıttığını belirlemek için her birindeki ayarları gözden geçirin. Farklı amaçlar için tasarlanan güvenlik temellerini dağıtabileceğiniz ve özelleştirilmiş ayarları içeren aynı taban çizgisinin birden çok örneğini dağıttığınız için, [Araştırılması gereken cihazlar için yapılandırma çakışmaları oluşturabilir ve çözüldü](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Ayrıca, aynı ayarların birçoğunu güvenlik temellerine göre yapılandırabilen [cihaz yapılandırma profillerinizin](../configuration/device-profiles.md)farkında olun.
+When you use multiple security baselines, review the settings in each one to identify when different baselines introduce conflicting values for the same setting. Because you can deploy security baselines that are designed for different intents, and deploy multiple instances of the same baseline that includes customized settings, you might create configuration [conflicts for devices that must be investigated and resolved](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Also be aware of your [device configuration profiles](../configuration/device-profiles.md), which can configure many of the same settings as security baselines.
 
-Aşağıdaki güvenlik temeli örnekleri Intune ile kullanılabilir. Her bir taban çizgisinin en son örneğine ilişkin ayarları görüntülemek için bağlantıları kullanın.
+The following security baseline instances are available for use with Intune. Use the links to view the settings for the most recent instance of each baseline.
 
-- **MDM güvenlik temeli**
-  - [2019 Mayıs için MDM güvenlik temeli](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
-  - [Önizleme: 2018 Ekim için MDM güvenlik temeli](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
+- **MDM Security Baseline**
+  - [MDM Security Baseline for May 2019](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
+  - [Preview: MDM Security Baseline for October 2018](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
-- **Microsoft Defender ATP taban çizgisi**
-   *(Bu temeli kullanmak Için ortamınız [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)'nı kullanmaya yönelik önkoşulları karşılamalıdır)* .
-  - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)
+- **Microsoft Defender ATP baseline**
+   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .
+  - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
-  > Microsoft Defender ATP güvenlik temeli fiziksel cihazlar için iyileştirildi ve şu anda sanal makinelerde (VM) veya VDı uç noktalarında kullanılması önerilmez. Belirli taban çizgisi ayarları, sanallaştırılmış ortamlarda uzak etkileşimli oturumları etkileyebilir.  Daha fazla bilgi için bkz. Windows belgelerindeki [Microsoft Defender ATP güvenlik temeliyle uyumluluğu artırma](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) .
+  > The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.  For more information, see [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) in the Windows documentation.
 
-- **Microsoft Edge taban çizgisi** 
-  - [Önizleme: Microsoft Edge taban çizgisi](security-baseline-settings-edge.md)
+- **Microsoft Edge Baseline**
+  - [Preview: Microsoft Edge baseline](security-baseline-settings-edge.md)
 
-Önizleme şablonu yeni profiller oluşturmak için artık kullanılabilir olmadığında bile, daha önce bir önizleme şablonunu temel alarak oluşturduğunuz profilleri kullanmaya ve düzenlemeye devam edebilirsiniz.
+You can continue to use and edit profiles that you previously created based on a preview template, even when that preview template is no longer available for creating new profiles.
 
-## <a name="manage-baselines"></a>Temelleri yönetme
+## <a name="manage-baselines"></a>Manage baselines
 
-Güvenlik temellerinde çalışırken ortak görevler şunları içerir:
+Common tasks when you work with security baselines include:
 
-- [Profil oluşturma](#create-the-profile) – kullanmak istediğiniz ayarları yapılandırın ve taban çizgisini gruplara atayın.
-- [Sürümü değiştirme](#change-the-baseline-version-for-a-profile) – bir profil tarafından kullanılan temel sürümü değiştirin.
-- [Taban çizgisi atamasını kaldırma](#remove-a-security-baseline-assignment) -ayarları güvenlik temeliyle yönetmeyi durdurduğunuzda ne olacağını öğrenin.
+- [Create a profile](#create-the-profile) – Configure the settings you want to use and assign the baseline to groups.
+- [Change the version](#change-the-baseline-version-for-a-profile) – Change the baseline version in use by a profile.
+- [Remove a baseline assignment](#remove-a-security-baseline-assignment) - Learn what happens when you stop managing settings with a security baseline.
 
 
 ### <a name="prerequisites"></a>Önkoşullar
 
-- Intune 'da temelleri yönetmek için hesabınızın [ilke ve Profil Yöneticisi](../fundamentals/role-based-access-control.md#built-in-roles) yerleşik rolüne sahip olması gerekir.
+- To manage baselines in Intune, your account must have the [Policy and Profile Manager](../fundamentals/role-based-access-control.md#built-in-roles) built-in role.
 
-- Bazı temellerin kullanımı, Microsoft Defender ATP gibi ek hizmetlere etkin bir aboneliğinizin olmasını gerektirebilir.
+- Use of some baselines might require you to have an active subscription to additional services, like Microsoft Defender ATP.
 
 ### <a name="create-the-profile"></a>Profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve kullanılabilir temeller listesini görüntülemek için **cihaz güvenliği** > **güvenlik temelleri** ' ni seçin.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-   ![Yapılandırmak için bir güvenlik temeli seçin](./media/security-baselines/available-baselines.png)
+2. Select **Endpoint security** > **Security baselines** to view the list of available baselines.
 
-2. Kullanmak istediğiniz taban çizgisini seçin ve ardından **Profil oluştur**' u seçin.
+   ![Select a security baseline to configure](./media/security-baselines/available-baselines.png)
 
-3. **Temel bilgiler** sekmesinde, aşağıdaki özellikleri belirtin:
+3. Select the baseline you'd like to use, and then select **Create profile**.
 
-   - **Ad**: güvenlik temelleri profiliniz için bir ad girin. Örneğin, *Defender ATP Için standart profil*girin.
+4. On the **Basics** tab, specify the following properties:
 
-   - **Açıklama**: Bu temelin ne yaptığını açıklayan bir metin girin. Açıklama, istediğiniz herhangi bir metin girmenize yöneliktir. İsteğe bağlıdır, ancak önerilir.
+   - **Name**: Enter a name for your security baselines profile. For example, enter *Standard profile for Defender ATP*.
 
-   Sonraki sekmeye gitmek için **İleri ' yi** seçin. Yeni bir sekmeye gelişmiş bir sekmeye kadar, daha önce görüntülenen bir sekmeye geri dönmek için sekme adını seçebilirsiniz.
+   - **Description**: Enter some text that describes what this baseline does. The description is for you to enter any text you want. It's optional, but recommended.
 
-4. Yapılandırma ayarları sekmesinde, seçtiğiniz taban çizgisinde kullanılabilir olan **ayar** gruplarını görüntüleyin. Bu gruptaki ayarları görüntülemek için bir grubu genişletebilir ve bu ayarlar için taban çizgisinde varsayılan değerleri kullanabilirsiniz. Belirli ayarları bulmak için:
-   - Genişletilecek bir grup seçin ve kullanılabilir ayarları gözden geçirin.
-   - *Arama* çubuğunu kullanın ve yalnızca arama ölçütlerinizi içeren grupları görüntülemek için görünümü filtreleyen anahtar sözcükleri belirtin.
+   Select **Next** to go to the next tab. After you advanced to a new tab, you can select the tab name to return to a previously viewed tab.
 
-   Bir taban çizgisinin her bir ayarı, bu temel sürüm için varsayılan bir yapılandırmaya sahiptir. Varsayılan ayarları, iş gereksinimlerinizi karşılayacak şekilde yeniden yapılandırın. Farklı temeller aynı ayarı içerebilir ve taban çizgisinin amacına bağlı olarak ayar için farklı varsayılan değerleri kullanır.
+5. On the Configuration settings tab, view the groups of **Settings** that are available in the baseline you selected. You can expand a group to view the settings in that group, and the default values for those settings in the baseline. To find specific settings:
+   - Select a group to expand and review the available settings.
+   - Use the *Search* bar and specify keywords that filter the view to display only those groups that contain your search criteria.
 
-   ![Bu grubun ayarlarını görüntülemek için bir grubu genişletin](./media/security-baselines/sample-list-of-settings.png)
+   Each setting in a baseline has a default configuration for that baseline version. Reconfigure the default settings to meet your business needs. Different baselines might contain the same setting, and use different default values for the setting, depending on the intent of the baseline.
 
-5. **Kapsam Etiketleri sekmesini seçin** ' i seçerek kapsam etiketlerini profile atamak için kapsam *etiketleri Seç '* **i seçin.**
+   ![Expand a group to view the settings for that group](./media/security-baselines/sample-list-of-settings.png)
 
-6. **Atamalar** sekmesinde, **dahil edilecek grupları seç** ' i seçin ve ardından temeli bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için, **hariç tutulacak grupları seçin ' i** kullanın.
+6. On the **Scope tags** tab, select **Select scope tags** to open the *Select tags* pane to assign scope tags to the profile.
+
+7. On the **Assignments** tab, select **Select groups to include** and then  assign the baseline to one or more groups. Use **Select groups to exclude** to fine-tune the assignment.
 
    ![Profil atama](./media/security-baselines/assignments.png)
 
-7. Temeli dağıtmaya hazırsanız, **gözden geçir + oluştur** sekmesine ilerleyin ve taban çizgisinin ayrıntılarını gözden geçirin. Profili kaydetmek ve dağıtmak için **Oluştur** ' u seçin.
+8. When you're ready to deploy the baseline, advance to the **Review + create** tab and review the details for the baseline. Select **Create** to save and deploy the profile.
 
-   Profili oluşturur almaz, atanan gruba gönderilir ve hemen uygulanabilir.
+   As soon as you create the profile, it's pushed to the assigned group and might apply immediately.
 
    > [!TIP]
-   > Bir profili önce gruplara atamadan kaydederseniz, daha sonra profili düzenleyerek bunu yapabilirsiniz.
+   > If you save a profile without first assigning it to groups, you can later edit the profile to do so.
 
-   ![Taban çizgisini gözden geçirme](./media/security-baselines/review.png)
+   ![Review the baseline](./media/security-baselines/review.png)
 
-8. Bir profil oluşturduktan sonra **cihaz güvenliği** > **güvenlik temelleri**' ne giderek düzenleyin, yapılandırdığınız taban çizgisi türünü seçin ve ardından **profiller**' i seçin. Kullanılabilir profiller listesinden profili seçin ve ardından **Özellikler**' i seçin. Tüm kullanılabilir yapılandırma sekmelerinden ayarları düzenleyebilir ve değişikliklerinizi uygulamak için **gözden geçir + kaydet** ' i seçebilirsiniz.
+9. After you create a profile, edit it by going to **Device security** > **Security baselines**, select the baseline type that you configured, and then select **Profiles**. Select the profile from the list of available profiles, and then select **Properties**. You can edit settings from all the available configuration tabs, and select **Review + save** to commit your changes.
 
-### <a name="change-the-baseline-version-for-a-profile"></a>Bir profilin temel sürümünü değiştirme
+### <a name="change-the-baseline-version-for-a-profile"></a>Change the baseline version for a profile
 
-Kullanılan temel örnek sürümünü bir profille değiştirebilirsiniz.  Sürümü değiştirdiğinizde, aynı taban çizgisinin kullanılabilir bir örneğini seçersiniz. Bir profili, MDM güvenlik temelini kullanarak Defender ATP için bir taban çizgisi kullanarak değiştirme gibi iki farklı taban çizgisi türü arasında geçiş yapamazsınız.
+You can change the version of the baseline instance that in use with a profile.  When you change the version, you select an available instance of the same baseline. You can’t change between two different baseline types, such as changing a profile from using a baseline for Defender ATP to using the MDM security baseline.
 
-Taban çizgisi sürümünün bir değişikliğini yapılandırırken, dahil edilen iki temel sürüm arasındaki değişiklikleri listeleyen bir CSV dosyası indirebilirsiniz. Tüm özelleştirmelerinizi özgün temel sürümden tutma veya yeni sürümü varsayılan değerlerini kullanarak uygulama seçeneğiniz de vardır. Bir profil için bir taban çizgisinin sürümünü değiştirdiğinizde tek tek ayarlarda değişiklik yapma seçeneğiniz yoktur.
+While configuring a change of the baseline version, you can download a CSV file that lists the changes between the two baseline versions involved. You also have the choice to keep all your customizations from the original baseline version, or implement the new version using all of its default values. You don't have the option to make changes to individual settings when you change the version of a baseline for a profile.
 
-Kaydetme sırasında, dönüştürme işlemi tamamlandıktan sonra, taban çizgisi atanan gruplara hemen yeniden dağıtılır.
+Upon saving, after the conversion is complete, the baseline is immediately redeployed to assigned groups.
 
-**Dönüştürme sırasında**:
+**During conversion**:
 
-- Kullanmakta olduğunuz Orijinal sürümde olmayan yeni ayarlar eklendi ve varsayılan değerleri kullanacak şekilde ayarlandı.
+- New settings that weren't in the original version you were using are added and set to use the default values.
 
-- Seçtiğiniz yeni temel sürümde olmayan ayarlar kaldırılır ve artık bu güvenlik temeli profili tarafından zorlanmaz.
+- Settings that aren't in the new baseline version you select are removed and no longer enforced by this security baseline profile.
 
-  Bir ayar artık temel bir profil tarafından yönetilmediğinde, bu ayar cihazda sıfırlanmaz. Bunun yerine, başka bir işlem değişiklik ayarlarını yönetene kadar cihazdaki ayar en son yapılandırmaya ayarlanır. Yönetimi durdurduktan sonra bir ayarı değiştirebiliyor işlem örnekleri, farklı bir temel profil, bir Grup İlkesi ayarı veya cihazda yapılan el ile yapılandırma içerir.
+  When a setting is no longer managed by a baseline profile, that setting isn’t reset on the device. Instead, the setting on the device remains set to its last configuration until some other process manages the setting to change it. Examples of processes that can change a setting after you stop managing it include a different baseline profile, a group policy setting, or manual configuration that’s made on the device.
 
-#### <a name="to-change-the-baseline-version-for-a-profile"></a>Bir profilin temel sürümünü değiştirmek için
+#### <a name="to-change-the-baseline-version-for-a-profile"></a>To change the baseline version for a profile
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve ardından **cihaz güvenliği** > **güvenlik temelleri**' ni seçin ve ardından değiştirmek istediğiniz profile sahip olan temel türün kutucuğunu seçin.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431). 
 
-2. Ardından, **profiller**' i seçin ve ardından düzenlemek istediğiniz profilin onay kutusunu seçin ve ardından **sürümü Değiştir**' i seçin.
+2. Select **Endpoint security** > **Security baselines**, and then select the tile for the baseline type that has the profile you want to change.
 
-   ![taban çizgisi seçin](./media/security-baselines/select-baseline.png)
+3. Next, select **Profiles**, and then select the check box for the profile you want to edit, and then select **Change Version**.
 
-3. **Sürümü Değiştir** bölmesinde, açılan menüyü **güncelleştirmek için bir güvenlik temeli Seç** ' i kullanın ve kullanmak istediğiniz sürüm örneğini seçin.
+   ![select a baseline](./media/security-baselines/select-baseline.png)
 
-   ![Sürüm seçin](./media/security-baselines/select-instance.png)
+4. On the **Change Version** pane, use the **Select a security baseline to update to** dropdown, and select the version instance you want to use.
 
-4. Profiller geçerli örnek sürümü ve seçtiğiniz yeni sürüm arasındaki farkı gösteren bir CSV dosyası indirmek için **güncelleştirmeyi gözden geçir** ' i seçin. Hangi ayarların yeni veya kaldırılmış olduğunu ve bu ayarların varsayılan değerlerinin güncelleştirilmiş profilde ne olduğunu anlamak için bu dosyayı gözden geçirin.
+   ![select a version](./media/security-baselines/select-instance.png)
 
-   Hazırsanız, bir sonraki adımla devam edin.
+5. Select **Review update** to download a CSV file that displays the difference between the profiles current instance version and the new version you’ve selected. Review this file so that you understand which settings are new or removed, and what the default values for these settings are in the updated profile.
 
-5. **Profili güncelleştirmek için bir yöntem seçmek üzere**iki seçenekten birini belirleyin:
-   - **Temel değişiklikleri kabul et ancak var olan ayar özelleştirmelerini tut** -Bu seçenek, taban çizgisi profilinde yaptığınız özelleştirmeleri korur ve bunları kullanmak üzere seçtiğiniz yeni sürüme uygular.
-   - **Temel değişiklikleri kabul et ve var olan ayar özelleştirmelerini at** -Bu seçenek özgün profilinizi tamamen geçersiz kılar. Güncelleştirilmiş profil tüm ayarlar için varsayılan değerleri kullanır.
+   When ready, continue to the next step.
 
-6. **Gönder**' i seçin. Profil, seçili temel sürüme ve dönüştürme tamamlandıktan sonra güncelleştirilir ve taban çizgisi atanan gruplara hemen yeniden dağıtılır.
+6. Choose one of the two options for **Select a method to update the profile**:
+   - **Accept baseline changes but keep my existing setting customizations** - This option keeps the customizations you made to the baseline profile and applies them to the new version you've selected to use.
+   - **Accept baseline changes and discard existing setting customizations** - This option overwrites your original profile completely. The updated profile will use the default values for all settings.
 
-### <a name="remove-a-security-baseline-assignment"></a>Güvenlik temeli atamasını kaldırma
+7. Select **Submit**. The profile updates to the selected baseline version and after the conversion is complete, the baseline immediately redeploys to assigned groups.
 
-Bir güvenlik temeli ayarı bir cihaz için artık geçerli olmadığında veya bir taban çizgisinin ayarları *Yapılandırılmadı*olarak ayarlandığında, bir cihazdaki bu ayarlar önceden yönetilen bir yapılandırmaya dönmez. Bunun yerine, daha önce yönetilen ayarlar, bazı diğer işlemler cihazdaki bu ayarları güncelleştirene kadar son yapılandırmalarının taban çizgisinden alınmış olarak tutulmasını saklar.
+### <a name="remove-a-security-baseline-assignment"></a>Remove a security baseline assignment
 
-Daha sonra cihazdaki ayarları değiştirebilecek diğer işlemlere, farklı veya yeni bir güvenlik taban çizgisi, cihaz yapılandırma profili, grup ilkesi yapılandırmaları veya cihazdaki ayarı el ile düzenleme sayılabilir.
+When a security baseline setting no longer applies to a device, or settings in a baseline are set to *Not configured*, those settings on a device don’t revert to a pre-managed configuration. Instead, the previously managed settings on the device keep their last configurations as received from the baseline until some other process updates those settings on the device.
 
-## <a name="co-managed-devices"></a>Ortak yönetilen cihazlar
+Other processes that might later change settings on the device include a different or new security baseline, device configuration profile, Group Policy configurations, or manual edit of the setting on the device.
 
-Intune tarafından yönetilen cihazlarda güvenlik temelleri, Configuration Manager ile birlikte yönetilen cihazlara benzerdir. Ortak yönetilen cihazlar Windows 10 cihazlarını eşzamanlı olarak yönetmek için System Center Configuration Manager ve Microsoft Intune kullanır. Mevcut Configuration Manager yatırımınızın Intune avantajlarından faydalanmasına olanak tanır. [Ortak yönetime genel bakış](https://docs.microsoft.com/sccm/comanage/overview) , Configuration Manager kullanırsanız ve ayrıca bulutun avantajlarından yararlanmak istiyorsanız harika bir kaynaktır.
+## <a name="co-managed-devices"></a>Co-managed devices
 
-Ortak yönetilen cihazlar kullanılırken **cihaz yapılandırma** iş yükünü (ayarlarını) Intune 'a geçmeniz gerekir. [Cihaz yapılandırma iş yükleri](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) daha fazla bilgi sağlar.
+Security baselines on Intune-managed devices are similar to co-managed devices with Configuration Manager. Co-managed devices use System Center Configuration Manager and Microsoft Intune to manage the Windows 10 devices simultaneously. It lets you cloud-attach your existing Configuration Manager investment to the benefits of Intune. [Co-management overview](https://docs.microsoft.com/sccm/comanage/overview) is a great resource if you use Configuration Manager, and also want the benefits of the cloud.
+
+When using co-managed devices, you must switch the **Device configuration** workload (its settings) to Intune. [Device configuration workloads](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) provides more information.
 
 ## <a name="q--a"></a>Soru ve Cevap
 
-### <a name="why-these-settings"></a>Bu ayarlar neden?
+### <a name="why-these-settings"></a>Why these settings?
 
-Microsoft Güvenlik ekibinin, bu önerileri oluşturmak için Windows geliştiricileriyle ve güvenlik topluluğuyla doğrudan çalışma deneyimi vardır. Bu taban çizgisinin ayarları, güvenlikle ilgili en ilgili yapılandırma seçenekleri olarak değerlendirilir. Her yeni Windows derlemesinde, takım önerilerini yeni yayınlanan özelliklere göre ayarlar.
+The Microsoft security team has years of experience working directly with Windows developers and the security community to create these recommendations. The settings in this baseline are considered the most relevant security-related configuration options. In each new build of Windows, the team adjusts its recommendations based on newly released features.
 
-### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Grup İlkesi ve Intune için Windows güvenlik temelleri önerilerinde bir farklılık var mı?
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Is there a difference in the recommendations for Windows security baselines for group policy vs. Intune?
 
-Aynı Microsoft Güvenlik ekibinin her bir taban çizgisi için ayarları seçtiği ve düzenleyen aynı. Intune, Intune güvenlik temelindeki tüm ilgili ayarları içerir. Grup İlkesi taban çizgisinde, şirket içi etki alanı denetleyicisine özgü bazı ayarlar vardır. Bu ayarlar Intune 'un önerilerinden çıkarılır. Diğer tüm ayarlar aynıdır.
+The same Microsoft security team chose and organized the settings for each baseline. Intune includes all the relevant settings in the Intune security baseline. There are some settings in the group policy baseline that are specific to an on-premises domain controller. These settings are excluded from Intune's recommendations. All the other settings are the same.
 
-### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune güvenlik temelleri CIS veya NSıT uyumlu mı?
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Are the Intune security baselines CIS or NSIT compliant?
 
-Kesinlikle konuşuyor, hayır. Microsoft Güvenlik ekibi, bu kuruluşların önerilerini derlemek için CIS gibi danışmanları sağlar. Ancak, "CIS uyumlu" ve Microsoft taban çizgileri arasında bire bir eşleme yoktur.
+Strictly speaking, no. The Microsoft security team consults organizations, such as CIS, to compile its recommendations. But, there isn't a one-to-one mapping between “CIS-compliant” and Microsoft baselines.
 
-### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft 'un güvenlik temelleri hangi sertifikaları kullanıyor? 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>What certifications does Microsoft’s security baselines have? 
 
-- Microsoft, birçok yıla sahip olduğu için Grup ilkeleri (GPO 'Lar) ve [Güvenlik uyumluluk araç seti](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10)için güvenlik temellerini yayımlamaya devam etmektedir. Bu taban çizgileri birçok kuruluş tarafından kullanılır. Bu temellerin önerileri, Microsoft Güvenlik ekibinin, Savunma Bakanlığı (DoD), ulusal standartlar ve Teknoloji Enstitüsü (NıST) ve daha fazlası dahil olmak üzere kurumsal müşteriler ve dış kurumlarla olan katılımından oluşur. Önerilerimizi ve temellerimizi bu kuruluşlarla paylaşıyoruz. Bu kuruluşların, Microsoft 'un önerilerini yakından yansıtan kendi önerileri de vardır. Mobil cihaz yönetimi (MDM) buluta büyümeye devam ettiğinden, Microsoft bu Grup İlkesi temellerinin eşdeğer MDM önerilerini oluşturmuştur. Bu ek taban çizgileri Microsoft Intune için yerleşiktir ve taban çizgisini izleyen (veya takip etmeyin) kullanıcılara, gruplara ve cihazlara uyumluluk raporları dahil edilir.
+- Microsoft continues to publish security baselines for group policies (GPOs) and the [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), as it has for many years. These baselines are used by many organizations. The recommendations in these baselines are from the Microsoft security team’s engagement with enterprise customers and external agencies, including the Department of Defense (DoD), National Institute of Standards and Technology (NIST), and more. We share our recommendations and baselines with these organizations. These organizations also have their own recommendations that closely mirror Microsoft's recommendations. As mobile device management (MDM) continues to grow into the cloud, Microsoft created equivalent MDM recommendations of these group policy baselines. These additional baselines are built in to Microsoft Intune, and include compliance reports on users, groups, and devices that follow (or don't follow) the baseline.
 
-- Birçok müşteri, Intune temel önerilerini başlangıç noktası olarak kullanıyor ve ardından BT ve güvenlik taleplerini karşılayacak şekilde özelleştiriliyor. Microsoft 'un Windows 10 RS5 **MDM güvenlik temeli** , yayınlanacak ilk temeldir. Bu taban çizgisi, müşterilerin, en sonunda CIS, NıST ve diğer standartlara dayalı diğer güvenlik temellerini içeri aktarmasını sağlayan bir genel altyapı olarak oluşturulmuştur. Şu anda Windows için kullanılabilir ve sonunda iOS ve Android de bulunur.
+- Many customers are using the Intune baseline recommendations as a starting point, and then customizing it to meet their IT and security demands. Microsoft’s Windows 10 RS5 **MDM Security Baseline** is the first baseline to release. This baseline is built as a generic infrastructure that allows customers to eventually import other security baselines based on CIS, NIST, and other standards. Currently, it's available for Windows and will eventually include iOS and Android.
 
-- Şirket içi Active Directory Grup ilkelerinden Microsoft Intune ile Azure Active Directory (AD) kullanan saf bir bulut çözümüne geçiş bir yolculuğa sahip olur. Yardım için, karma AD ve Azure AD 'ye katılmış cihazları yönetmeye yardımcı olabilecek [Güvenlik uyumluluğu araç seti](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) 'ne dahil edilen grup ilkesi şablonları vardır. Bu cihazlar, bulut (Intune) ve Grup İlkesi ayarlarından, gerektiğinde şirket içi etki alanı denetleyicilerinden MDM ayarları alabilir.
+- Migrating from on-premises Active Directory group policies to a pure cloud solution using Azure Active Directory (AD) with Microsoft Intune is a journey. To help, there are group policy templates included in the [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) that can help manage hybrid AD and Azure AD-joined devices. These devices can get MDM settings from the cloud (Intune) and group policy settings from on-premises domain controllers as needed.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Kullanılabilir temellerin en son sürümlerindeki ayarları görüntüleyin:
-  - [MDM güvenlik temeli](security-baseline-settings-mdm-all.md)
-  - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)
+- View the settings in the latest versions of the available baselines:
+  - [MDM security baseline](security-baseline-settings-mdm-all.md)
+  - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)
 
-- Durumu denetleme ve [temeli ve profili](security-baselines-monitor.md) izleme
+- Check the status and monitor the [baseline and profile](security-baselines-monitor.md)

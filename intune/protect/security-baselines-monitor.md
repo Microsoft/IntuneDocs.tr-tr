@@ -1,131 +1,139 @@
 ---
-title: Microsoft Intune-Azure 'da güvenlik temellerinin başarısını veya başarısızlığını denetleyin | Microsoft Docs
-description: Microsoft Intune MDM 'deki kullanıcılara ve cihazlara güvenlik temelleri dağıtımında hata, çakışma ve başarı durumunu denetleyin. Bkz. istemci günlüklerini kullanarak sorun giderme ve Intune 'daki rapor özellikleri.
+title: Check the success or failure of security baselines in Microsoft Intune - Azure | Microsoft Docs
+description: Check the error, conflict, and success status when deploying security baselines to users and devices in Microsoft Intune MDM. See how to troubleshoot using client logs, and the report features in Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c4d47a11f07a2099d79f5ce4ce90795a087718b
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681471"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410094"
 ---
-# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'de güvenlik taban çizgisini ve profillerini izleme  
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitor security baseline and profiles in Microsoft Intune
 
-Intune, güvenlik temellerinizi izlemek için çeşitli seçenekler sunar. Kullanıcılarınız ve cihazlarınız için geçerli olan güvenlik temelleri profilini izleyebilirsiniz. Ayrıca, gerçek taban çizgisini ve (veya eşleşmeyen) önerilen değerleri de izleyebilirsiniz.
+Intune provides several options to monitor your security baselines. You can monitor the security baselines profile that applies to your users and devices. You can also monitor the actual baseline, and any devices that match (or don't match) the recommended values.
 
-Bu makalede, izleme seçeneklerinde her ikisi de anlatılmaktadır.
+This article walks you through both monitoring options.
 
-[Intune 'Daki güvenlik temelleri](../security-baselines.md) Microsoft Intune içindeki güvenlik temelleri özelliği hakkında daha fazla bilgi sağlar.
+[Security baselines in Intune](../security-baselines.md) provides more details on the security baselines feature in Microsoft Intune.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Taban çizgisini ve cihazlarınızı izleyin  
+## <a name="monitor-the-baseline-and-your-devices"></a>Monitor the baseline and your devices
 
-Bir taban çizgisini izlerken, Microsoft 'un önerilerine bağlı olarak cihazlarınızın güvenlik durumu hakkında öngörüler elde edersiniz. Bu öngörüleri Intune konsolundaki güvenlik temelinin genel bakış bölmesinden görüntüleyebilirsiniz.  İlk olarak bir taban çizgisi atadıktan sonra verilerin görünmesi 24 saate kadar sürer. Sonraki değişikliklerin görünmesi altı saate kadar sürer.  
+When you monitor a baseline, you get insight into the security state of your devices based on Microsoft's recommendations. You can view these insights from the Overview pane of the security baseline in the Intune console.  It takes up to 24 hours for data to appear after you first assign a baseline. Later changes take up to six hours to appear.
 
-Taban çizgisi ve cihazlara ilişkin izleme verilerini görüntülemek için [Intune portalında](https://go.microsoft.com/fwlink/?linkid=2090973)oturum açın. Sonra **cihaz güvenliği** > **güvenlik temelleri**' ni seçin, bir taban çizgisi seçin ve **genel bakış** bölmesini görüntüleyin.
+To view monitoring data for the baseline and devices, sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431). Next, select **Endpoint security** > **Security Baselines**, select a baseline, and view the **Overview** pane.
 
-**Genel bakış** bölmesi, durumu izlemek için iki yöntem sunar:
-- **Cihaz görünümü** : taban çizgisinin her bir durum kategorisinde kaç cihaz olduğunu gösteren bir Özet.  
-- **Kategori başına** -her bir kategoriyi taban çizgisinde görüntüleyen ve her bir temel kategori için her bir durum grubu için cihazların yüzdesini içeren bir görünüm. 
+The **Overview** pane provides two methods to monitor status:
 
-Her cihaz, hem *cihaz* görünümünde hem de *Kategori başına* görünümlerde kullanılan aşağıdaki durumlardan biriyle temsil edilir:  
-- **Taban çizgisi Ile eşleşir** -taban çizgisinin tüm ayarları önerilen ayarlarla eşleşir.
-- **Taban çizgisine uymuyor** -temeldeki en az bir ayar önerilen ayarlarla eşleşmiyor.
-- **Yanlış yapılandırılmış** -en az bir ayar düzgün yapılandırılmamış. Bu durum, ayarın çakışma, hata veya bekleme durumunda olduğu anlamına gelir.
-- **Uygulanamaz** -en az bir ayar uygulanabilir değildir ve uygulanmaz.
+- **Device view** – A summary of how many devices are in each status category for the baseline.
+- **Per-category** - A view that displays each category in the baseline and includes the percentage of devices for each status group for each baseline category.
 
+Each device is represented by one of the following statuses, which are used in both the *device* view, and the *per-category* views:
 
-### <a name="device-view"></a>Cihaz görünümü
-Genel bakış bölmesi, ana hat için kaç cihazın belirli bir duruma sahip olduğunu gösteren grafik tabanlı bir Özet görüntüler. **Atanan Windows 10 cihazları için güvenlik temeli duruşunu**.  
+- **Matches baseline** - All the settings in the baseline match the recommended settings.
+- **Does not match baseline** - At least one setting in the baseline doesn't match the recommended settings.
+- **Misconfigured** - At least one setting isn't properly configured. This status means the setting is in a conflict, error, or a pending state.
+- **Not applicable** - At least one setting isn't applicable, and isn't applied.
 
-![Cihazların durumunu denetleme](./media/security-baselines-monitor/overview.png)
+### <a name="device-view"></a>Device view
 
-Bir cihaz, taban çizgisinde farklı kategorilerden farklı bir duruma sahip olduğunda, cihaz tek bir durum ile temsil edilir. Cihazı temsil eden durum, aşağıdaki öncelik sırasına göre alınır: **yanlış yapılandırılmış**, **taban çizgisine uymuyor**, **uygulanamaz**, **taban çizgisiyle eşleşir**.  
+The Overview pane displays a chart-based summary of how many devices have a specific status for the baseline; **Security baseline posture for assigned Windows 10 devices**.
 
-Örneğin, bir cihazın *yanlış yapılandırılmış* olarak sınıflandırılan bir ayarı varsa ve bir veya daha fazla ayar *taban çizgisiyle eşleşmezse*, cihaz *yanlış*şekilde sınıflandırılır.  
+![Check the status of the devices](./media/security-baselines-monitor/overview.png)
 
-Çeşitli durumlara sahip cihazların listesini incelemek ve görüntülemek için grafiğe tıklayabilirsiniz. Böylece, tek tek cihazların ayrıntılarını görüntülemek için bu listeden tek tek cihazları seçebilirsiniz. Örneğin:
-- **Cihaz yapılandırması** ' nı seçin > bir hata durumu Içeren profili seçin:
+When a device has different status from different categories in the baseline, the device is represented by a single status. The status that represents the device is taken from the following order of precedence: **Misconfigured**, **Does not match baseline**, **Not applicable**, **Matches baseline**.
 
-  ![Bir profilin durumunu görüntüleme](./media/security-baselines-monitor/device-configuration-profile-list.png)
+For example, if a device has a setting classified as *misconfigured* and one or more settings classified as *Does not match baseline*, the device is classified as *Misconfigured*.
 
-- Hata profilini seçin. Profildeki tüm ayarların listesi ve durumları gösterilir. Şimdi, hataya neden olan ayarı bulmak için kaydırma yapabilirsiniz:
+You can click on the chart to drill through and view a list of devices with various statuses. You can then select individual devices from that list to view details about individual devices. Örneğin:
 
-  ![Hataya neden olan ayara bakın](./media/security-baselines-monitor/profile-with-error-status.png)
+- Select **Device configuration** > Select the profile with an Error state:
 
-Bir profilde soruna neden olan ayarları görmek için bu raporlamayı kullanın. Ayrıca cihazlara dağıtılan ilkelerin ve profillerin daha ayrıntılı ayrıntılarını alın.
+  ![View the status of a profile](./media/security-baselines-monitor/device-configuration-profile-list.png)
+
+- Select the Error profile. A list of all settings in the profile, and their state is shown. Now, you can scroll to find the setting causing the error:
+
+  ![See the setting causing the error](./media/security-baselines-monitor/profile-with-error-status.png)
+
+Use this reporting to see any settings in a profile that are causing an issue. Also get more details of policies and profiles deployed to devices.
 
 > [!NOTE]
-> Bir özellik taban çizgisinde **Yapılandırılmadı** olarak ayarlandığında, ayar yok sayılır ve hiçbir kısıtlama zorlanmaz. Özelliği herhangi bir raporlamada gösterilmez.
+> When a property is set to **Not configured** in the baseline, the setting is ignored, and no restrictions are enforced. The property isn't shown in any reporting.
 
-### <a name="per-category-view"></a>Kategori başına görünüm
-Genel bakış bölmesi, taban çizgisi için kategori başına bir grafik görüntüler; **Kategoriye göre güvenlik temeli sonrası**.  Bu görünüm, taban çizgisinden her bir kategoriyi görüntüler ve bu kategorilerin her biri için bir durum sınıflandırmasına giren cihazların yüzdesini tanımlar. 
- 
-![Durumun kategori başına görünümü](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+### <a name="per-category-view"></a>Per category view
 
-Cihazların %100 ' ü kategori için bu durumu bildirene kadar, **eşleşmelerin temeli** için durum görüntülenmez.   
+The Overview pane displays a per-category chart for the baseline; **Security baseline posture by category**.  This view displays each category from the baseline and identifies the percentage of devices that fall into a status classification for each of those categories.
 
-Sütunun en üstünde yukarı aşağı ok simgesini seçerek Kategori tarafından her sütuna göre sıralama yapabilirsiniz.  
+![Per-Category view of status](./media/security-baselines-monitor/monitor-baseline-per-category.png)
 
+Status for **Matches baseline** does not display until 100% of devices report that status for the category.
 
-## <a name="monitor-the-profile"></a>Profili izleme
+You can sort the by-category view by each column, by selecting up-down arrow icon at the top of the column.
 
-Profili izlemek, cihazlarınızın dağıtım durumu hakkında fikir verir, ancak temel önerilere göre güvenlik durumunu etkilemez.
+## <a name="monitor-the-profile"></a>Monitor the profile
 
-1. Intune 'da **güvenlik temelleri** ' ni seçin > oluşturulan temel > **profillerini**seçin.
+Monitoring the profile gives you insight into the deployment state of your devices, but not the security state based on the baseline recommendations.
 
-2. Bir profil seçin. **Genel bakışta**görüntüde bu profilin kaç cihaz ve Kullanıcı tarafından atandığını gösterilmektedir:
+1. In Intune, select **Security Baselines** > select a baseline > **Profiles created**.
 
-    ![Kaç cihaza ve kullanıcıya güvenlik temelleri profili atandığını öğrenin](./media/security-baselines-monitor/existing-profile-overview.png)
+2. Select a profile. In **Overview**, the image shows how many devices and users have this profile assigned:
 
-3. **Yönet**  > **özellikleri**altında, taban çizgisinde tüm ayarların bir listesi gösterilir. Ayrıca, bu ayarlardan herhangi birini değiştirebilirsiniz:
+   ![See how many devices and users are assigned the security baselines profile](./media/security-baselines-monitor/existing-profile-overview.png)
 
-    ![Güvenlik temelleri profilindeki ayarları görme ve güncelleştirme](./media/security-baselines-monitor/manage-settings.png)
+3. Under **Manage** > **Properties**, a list of all the settings in the baseline are shown. You can also change any of these settings:
 
-4. **İzleyici**' de, her bir cihazda profilin dağıtım durumunu, her bir kullanıcının durumunu ve her bir ayarın durumunu Baseline olarak görebilirsiniz:
+   ![See and update settings in the security baselines profile](./media/security-baselines-monitor/manage-settings.png)
 
-    ![Güvenlik temelleri profili için farklı izleyici seçeneklerine bakın](./media/security-baselines-monitor/monitor-status-options.png)
+4. In **Monitor**, you can see the deployment status of the profile on individual devices, the status for each user, and the status for each setting in the baseline:
 
-## <a name="troubleshoot-using-per-setting-status"></a>Ayar başına durumu kullanarak sorun giderme
+   ![See the different monitor options for a security baselines profile](./media/security-baselines-monitor/monitor-status-options.png)
 
-Bir güvenlik temeli dağıttıysanız, ancak dağıtım durumu bir hata gösterir. Aşağıdaki adımlar, hatayı gidermeye yönelik bazı yönergeler sağlar.
+## <a name="troubleshoot-using-per-setting-status"></a>Troubleshoot using per-setting status
 
-1. Intune 'da **güvenlik temelleri** ' ni seçin > oluşturulan temel > **profillerini**seçin.
-2. **İzleme** > **ayar durumu**' nun altında bir profil > seçin.
-3. Tabloda tüm ayarlar ve her ayarın durumu gösterilmektedir. Hataya neden olan ayarı görmek için **hata** sütununu veya **Çakışma** sütununu seçin.
+You deployed a security baseline, but the deployment status shows an error. The following steps give you some guidance on troubleshooting the error.
 
-### <a name="mdm-diagnostic-information"></a>MDM tanılama bilgileri
+1. In Intune, select **Security Baselines** > select a baseline > **Profiles created**.
 
-Artık sorunlu ayarı öğrenmiş oldunuz. Bir sonraki adım, bu ayarın neden bir hata veya çakışmaya neden olduğunu bulmadır. 
+2. Select a profile > Under **Monitor** > **Per-setting status**.
 
-Windows 10 cihazlarında, yerleşik bir MDM tanılama bilgileri raporu vardır. Bu rapor varsayılan değerleri, geçerli değerleri, ilkeyi listeler, cihaza veya kullanıcıya dağıtılıp dağıtılmadığını gösterir ve daha fazlasını içerir. Ayarın bir çakışmaya veya hataya neden neden olduğunu belirlemenize yardımcı olması için bu raporu kullanın.
+3. The table shows all the settings, and the status of each setting. Select the **Error** column or the **Conflict** column to see the setting causing the error.
 
-1. Cihazda **ayarlar** > **Hesap** > **erişim iş veya okul ' ya**gidin.
-2. Hesap > **bilgi** > **gelişmiş tanılama raporu** > **rapor oluştur**' u seçin.
-3. **Dışarı aktar**' ı seçin ve oluşturulan dosyayı açın.
-4. Raporda, raporun farklı bölümlerinde hata veya çakışma ayarını bulun.
+### <a name="mdm-diagnostic-information"></a>MDM diagnostic information
 
-  Örneğin, **kayıtlı yapılandırma kaynakları ve hedef kaynaklar** bölümüne veya **yönetilmeyen ilkeler** bölümüne bakın. Neden bir hata veya çakışmaya neden olduğuna ilişkin bir fikir alabilirsiniz.
+Now you know the problematic setting. The next step is to find out why this setting is causing an error or conflict.
 
-[Windows 10 ' da MDM başarısızlıklarını tanılama](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) bu yerleşik rapor hakkında daha fazla bilgi sağlar.
+On Windows 10 devices, there's a built-in MDM diagnostic information report. This report includes default values, current values, lists the policy, shows if it's deployed to the device or the user, and more. Use this report to help determine why the setting is causing a conflict or error.
+
+1. On the device, go to **Settings** > **Accounts** > **Access work or school**.
+
+2. Select the account > **Info** > **Advanced Diagnostic Report** > **Create report**.
+
+3. Choose **Export**, and open the generated file.
+
+4. In the report, look for the error or conflict setting in the different sections of the report.
+
+  For example, look in the **Enrolled configuration sources and target resources** section or the **Unmanaged policies** section. You may get an idea of why it's causing an error or conflict.
+
+[Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) provides more information on this built-in report.
 
 > [!TIP]
-> - Bazı ayarlar GUID 'YI de listeler. Herhangi bir küme değeri için yerel kayıt defterinde (regedit) Bu GUID için arama yapabilirsiniz.
-> - Olay Görüntüleyicisi Günlükler, sorunlu ayarla ilgili bazı hata bilgilerini de içerebilir (**olay görüntüleyicisi** > **uygulama ve hizmet günlükleri** > **Microsoft** > **Windows** >  **DeviceManagement-kuruluş-tanılama-sağlayıcı** > **Yöneticisi**).
+> - Some settings also list the GUID. You can search for this GUID in the local registry (regedit) for any set values.
+> - The Event Viewer logs may also include some error information on the problematic setting (**Event viewer** > **Applications and Services Logs** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Admin**).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Cihaz profillerini izleyin](../configuration/device-profile-monitor.md) ve [bazı yaygın sorunlar ve çözümleri görüntüleyin](../configuration/device-profile-troubleshoot.md).
+[Monitor device profiles](../configuration/device-profile-monitor.md) and [see some common issues and resolutions](../configuration/device-profile-troubleshoot.md).
