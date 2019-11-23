@@ -60,7 +60,7 @@ iOS için Şirket Portalı uygulamasında artık daha açıklayıcı hata iletil
 
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 Şirket Portalı uygulaması için geliştirilmiş uygulama yüklemesi durumu <!--676495-->
 
-Windows 10 Şirket Portalı uygulamasında uygulama yüklemesi için yeni geliştirmeler şunları içerir:
+Windows 10 Şirket portalı uygulamasında başlatılan uygulama yükleme için yeni geliştirmeler şunlardır:
 - MSI paketleri için daha hızlı yükleme durumu raporlaması
 - Windows 10 Yıldönümü Güncelleştirmesi ve üzerini çalıştıran cihazlardaki modern uygulamalar için daha hızlı yükleme durumu raporlaması
 - Windows 10 Yıldönümü Güncelleştirmesi ve üzerini çalıştıran cihazlardaki modern uygulama yüklemeleri için yeni ilerleme çubuğu
@@ -143,7 +143,7 @@ Artık, Microsoft Intune ile tümleşen bir mobil tehdit savunması çözümü o
 - Uygulama savunması
 - Güvenlik açıkları savunması
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Symantec Endpoint Protection Mobile (ufuk) risk değerlendirmesi temelinde EMS koşullu erişim ilkelerini yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumsuz cihazların şirket kaynaklarına erişimine izin vermek ya da erişimi engellemek için bu ilkeleri kullanabilirsiniz. Daha fazla bilgi için bkz. [Symantec Endpoint Protection Mobile Bağlayıcısı](../protect/skycure-mobile-threat-defense-connector.md).
+Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Symantec Endpoint Protection Mobile (ufuk) risk değerlendirmesi temelinde EMS koşullu erişim ilkelerini yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumsuz cihazların şirket kaynaklarına erişimine izin vermek ya da erişimi engellemek için bu ilkeleri kullanabilirsiniz. Daha fazla bilgi için [Symantec Endpoint Protection Mobile Bağlayıcısı](../protect/skycure-mobile-threat-defense-connector.md).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android için Şirket Portalı uygulaması için yeni kullanıcı deneyimi <!--621622-->
 
@@ -253,7 +253,7 @@ Azure’da Intune önizlemesindeki yenilikleri [buradan](whats-new.md) bulabilir
 ### <a name="new-capabilities"></a>Yeni Özellikler
 
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Kayıt olmadan MAM için konsol içi raporlar <!--677961-->
-Hem kayıtlı hem kayıtlı olmayan cihazlar için yeni uygulama koruma raporları eklenmiştir. [Intune ile mobil uygulama yönetimi ilkelerini nasıl izleyebileceğinizi](../apps/app-protection-policies-monitor.md)öğrenmek için daha fazla bilgi edinin.
+Hem kayıtlı hem kayıtlı olmayan cihazlar için yeni uygulama koruma raporları eklenmiştir. Nasıl yapabilecekleriniz hakkında daha fazla bilgi edinin [Intune ile mobil uygulama yönetimi ilkelerini izleme](../apps/app-protection-policies-monitor.md).
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 desteği <!--694397-->
 Intune artık Android 7.1.1 sürümünü tam olarak destekler ve yönetir.
@@ -303,7 +303,7 @@ iOS için Şirket Portalı, kullanıcıya gerçekleşen yükleme işlemleri hakk
 Azure portalındaki yönetici deneyimi, duyurulan yeni gruplandırma ve hedefleme işlevselliğini kullanır; mevcut kiracınız yeni gruplandırma deneyimine geçirildiğinde, siz de kiracınıza yönelik yeni yönetici deneyimini önizlemek üzere geçirilirsiniz. Bu sırada, Azure portalında Microsoft Intune hakkında bilgilere [yeni belgelerimizden](what-is-intune.md) ulaşabilirsiniz.
 
 __Azure portal genel önizlemede Telekom gider yönetimi tümleştirmesi__ <!--747605-->
-Artık Azure portalında üçüncü taraf telekom gider yönetimi (TEM) hizmetleri ile tümleştirme önizlemesine başlıyoruz. Yurt içi verilerin ve dolaşım verilerinin kullanımına yönelik sınırlamalarını zorunlu olarak uygulamak için Intune'u kullanabilirsiniz. Bu tümleştirmelere [Saaswedo](http://www.saaswedo.com/) ile başlıyoruz. Deneme kiracınızda bu özelliği etkinleştirmek için lütfen [Microsoft desteğine başvurun](get-support.md).
+Artık Azure portalında üçüncü taraf telekom gider yönetimi (TEM) hizmetleri ile tümleştirme önizlemesine başlıyoruz. Yurt içi verilerin ve dolaşım verilerinin kullanımına yönelik sınırlamalarını zorunlu olarak uygulamak için Intune'u kullanabilirsiniz. Bu tümleştirmelere [Saaswedo](http://www.saaswedo.com/) ile başlıyoruz. Deneme kiracınızda bu özelliği etkinleştirmek için lütfen [Microsoft desteğe başvurun](get-support.md).
 
 ### <a name="new-capabilities"></a>Yeni Özellikler
 
@@ -322,7 +322,7 @@ Intune, BT yöneticileri [bu makalede](../enrollment/device-enrollment.md) anlat
 __Kayıt sırasında Multi-Factor Authentication Azure portal taşıma__ <!--VSO 750545-->
 Daha önce yöneticiler Intune kaydı sırasında MFA ayarlamak için Intune konsoluna veya Configuration Manager (Ekim 2016'dan önceki sürümler) konsoluna gitmek durumundaydı. Bu güncelleştirilmiş özellik sayesinde, artık [Microsoft Azure portalında](https://manage.windowsazure.com) Intune kimlik bilgilerinizi kullanarak oturum açar ve MFA ayarlarını Azure AD ile yapılandırırsınız. Bunun hakkında daha fazla bilgi için [burayı](https://aka.ms/mfa_ad) okuyun.
 
-__Android için şirket portalı uygulaması artık Çin 'de   ' de kullanıma sunuldu__<!--VSO 658093-->
+__Android için şirket portalı artık Çin 'de kullanıma sunuldu__ <!--VSO 658093-->
 Android için Şirket Portalı uygulamasını karşıdan yüklenebilir olarak Çin’de yayımlıyoruz. Çin 'de Google Play Store olmaması nedeniyle, Android cihazlarının uygulamaları Çince uygulama marketlerinden alması gerekir. Android için Şirket Portalı uygulaması aşağıdaki mağazalardan yüklenebilir:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)

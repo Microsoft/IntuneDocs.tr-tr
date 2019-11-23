@@ -40,7 +40,7 @@ Uygulamanızın sorunlarını gidermeye başlamak ve erişim sorunlarını gider
 
 ## <a name="get-help-with-app-problems"></a>Uygulama sorunlarıyla ilgili yardım alın
 
-Şirket Portalı karşılaştığınız sorunlar hakkında kuruluşunuza e-posta gönderin. Sorunu tanımlamaya başlamak için **Yardım al** ' ı seçin. Kuruluşunuz, sorunu gidermek için sağladığınız bilgileri kullanacaktır. Sorunu belirlemede daha fazla yardım gerekirse, kuruluşunuz Microsoft 'un destek ekibine ulaşmak için @ no__t-1e-postasına otomatik olarak eklenen @ no__t-0tanılama KIMLIĞINI kullanır.  
+Şirket Portalı karşılaştığınız sorunlar hakkında kuruluşunuza e-posta gönderin. Sorunu tanımlamaya başlamak için **Yardım al** ' ı seçin. Kuruluşunuz, sorunu gidermek için sağladığınız bilgileri kullanacaktır. Sorunu belirlemede daha fazla yardım gerekirse, kuruluşunuz Microsoft 'un destek ekibine ulaşmak için e-posta&ndash;otomatik olarak eklenen&ndash;tanılama KIMLIĞINI kullanır.  
 
 Adım adım yordam için, bkz. [Windows 10 için şirket portalı uygulamasından şirketinizin destek bölümüne günlük gönderme](send-logs-to-your-it-admin-cp-windows.md).  
 

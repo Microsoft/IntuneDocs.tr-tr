@@ -69,7 +69,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adres
 
     ![Kuruluş hesabı kimlik bilgileri](./media/reports-proc-create-with-odata/reports-create-02-org-account.png)
 
-10. **Bağlan**' ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
+10. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
 
     ![Gezgin 'in ekran görüntüsü-veri ambarı tablolarının listesi](./media/reports-proc-create-with-odata/reports-create-02-loadentities.png)
 
@@ -94,9 +94,9 @@ Ağaç Haritası grafiği, hiyerarşik verileri kutular içindeki kutular olarak
 
 1. **Görsel öğeler** bölmesinde, **ağaç Haritası**' nı bulup seçin. **Treemap** grafiği rapor tuvaline eklenecektir.
 2. **Alanlar** bölmesinde `devices` tablosunu bulun.
-3. @No__t-0 tablosunu genişletin ve `manufacturer` veri alanını seçin.
-4. @No__t-0 veri alanını rapor tuvaline sürükleyin ve **treemap** grafiğine bırakın.
-5. @No__t-0 veri alanını `devices` tablosundan **görsel öğeler** bölmesine sürükleyin ve **burada veri Ekle alanları**etiketli kutudaki **değerler** bölümünün altına bırakın.  
+3. `devices` tablosunu genişletin ve `manufacturer` veri alanını seçin.
+4. `manufacturer` veri alanını rapor tuvaline sürükleyin ve **treemap** grafiğine bırakın.
+5. `deviceKey` veri alanını `devices` tablosundan **görsel öğeler** bölmesine sürükleyin ve **veri alanı Ekle**etiketli kutudaki **değerler** bölümünün altına bırakın.  
 
 Artık kuruluşunuzdaki cihaz üreticileri dağılımını gösteren bir görseliniz var.
 
@@ -106,12 +106,12 @@ Artık kuruluşunuzdaki cihaz üreticileri dağılımını gösteren bir görsel
 
 Uygulamanızı kullanarak ilave sorular yanıtlayabilmek için ağaç haritanıza bir filtre ekleyebilirsiniz.
 
-1. Bir filtre eklemek için, rapor tuvalini seçin ve ardından **görsel öğeler**altındaki **dilimleyici simgesini** (veri modeliyle ![treemap ve desteklenen ilişkiler @ no__t-2) seçin. Boş **dilimleyici** görselleştirmesi tuvalde görünür.
+1. Bir filtre eklemek için, rapor tuvali ' ni seçin ve ardından **görsel öğeler**altında **dilimleyici simgesini** (veri modeliyle![treemap ve desteklenen ilişkiler](./media/reports-proc-create-with-odata/reports-create-slicer.png)) seçin. Boş **dilimleyici** görselleştirmesi tuvalde görünür.
 2. **Alanlar** bölmesinde `ownerTypes` tablosunu bulun.
-3. @No__t-0 tablosunu genişletin ve `ownerTypeName` veri alanını seçin.
-4. @No__t-0 veri alanını `ownerTypes` tablosundan **Filtreler** bölmesine sürükleyin ve **veri alanları Ekle**etiketli kutudaki **Bu sayfadaki filtreler** bölümünden bırakın.  
+3. `ownerTypes` tablosunu genişletin ve `ownerTypeName` veri alanını seçin.
+4. `onwerTypeName` veri alanını `ownerTypes` tablosundan **Filtreler** bölmesine sürükleyin ve **Bu sayfadaki filtreler** altında **veri alanları Ekle**etiketli kutuda bu sayfaya bırakın.  
 
-   @No__t-0 tablosu altında, bir cihazın şirkete ait mi yoksa kişisel mi olduğunu gösteren bir veri içeren `OwnerTypeKey`adlı bir veri alanı bulunur. Bu filtrede kolay adlar göstermek istediğinizden bu yana `ownerTypes` tablosunu bulun ve **ownerTypeName** öğesini dilimleyiciye sürükleyin. Bu örnek, veri modelinin tablolar arasındaki ilişkiyi nasıl desteklediğini gösterir.
+   `OwnerTypes` tablosu altında, bir cihazın şirkete ait veya kişisel olup olmadığı gibi bir veri içeren `OwnerTypeKey`adlı bir veri alanı bulunur. Bu filtrede kolay adlar göstermek istediğinizden bu yana `ownerTypes` tablosunu bulun ve **ownerTypeName** öğesini dilimleyiciye sürükleyin. Bu örnek, veri modelinin tablolar arasındaki ilişkiyi nasıl desteklediğini gösterir.
 
 ![Filter ile treemap-tablolar arasındaki ilişkileri destekler](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

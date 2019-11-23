@@ -1,7 +1,7 @@
 ---
 title: Şirket Portalı uygulamasını yapılandırma
 titleSuffix: Microsoft Intune
-description: Learn how you can apply company-specific branding to the Intune Company Portal app.
+description: Intune Şirket Portalı uygulamasına şirkete özgü markalamayı nasıl uygulayabileceğinizi öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -29,23 +29,23 @@ ms.locfileid: "74199205"
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Microsoft Intune şirket portalı, kullanıcıların şirket verilerine eriştiği ve cihaz kaydetmek, uygulama yüklemek ve BT departmanınızdan yardım için bilgi bulmak gibi genel görevleri gerçekleştirebilecekleri yerdir. Additionally, the company portal app allows user to securely access company resources. The company portal app provides several different pages, such as Home, Apps, App details, Devices, and Device details. To quickly find apps within the Company Portal, you can filter the apps on the Apps page.
+Microsoft Intune şirket portalı, kullanıcıların şirket verilerine eriştiği ve cihaz kaydetmek, uygulama yüklemek ve BT departmanınızdan yardım için bilgi bulmak gibi genel görevleri gerçekleştirebilecekleri yerdir. Ayrıca, Şirket portalı uygulaması kullanıcının şirket kaynaklarına güvenli bir şekilde erişmesini sağlar. Şirket portalı uygulaması, giriş, uygulamalar, uygulama ayrıntıları, cihazlar ve cihaz ayrıntıları gibi çeşitli farklı sayfalar sağlar. Şirket Portalı içindeki uygulamaları hızlıca bulmak için uygulamalar sayfasındaki uygulamaları filtreleyebilirsiniz.
 
 > [!IMPORTANT]
-> To support Google’s Firebase Cloud Messaging (FCM), you must update your Android Company Portal app to the latest version.  
+> Google 'ın Firebase bulut mesajlaşma 'yı (FCM) desteklemek için Android Şirket Portalı uygulamanızı en son sürüme güncelleştirmeniz gerekir.  
 
 > [!Tip]
 > Şirket Portalı’nı özelleştirdiğinizde, yapılandırmalar hem Şirket Portalı web sitesi hem de Şirket Portalı uygulamaları için geçerli olur. Şirket Portalı'na erişmek isteyen kullanıcılara Intune lisansı atanmış olmalıdır.
 
 Şirket Portalı’nı özelleştirerek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlanmasına yardımcı olabilirsiniz. Bunun için Intune portalında **İstemci uygulamaları** > **Markalama ve özelleştirme**'yi seçip gerekli ayarları yapılandırın.
 
-When a user is installing an iOS application from the Company Portal they will receive a prompt. This occurs when the iOS app is linked to the app store, linked to a volume-purchase program (VPP), or linked to a line-of-business (LOB) app. The prompt allows the users to accept the action or allow management of the app. The prompt will display your company name, or when your company name is unavailable, **Company Portal** will be displayed. 
+Bir Kullanıcı Şirket Portalı bir iOS uygulaması yüklerken bir istem alır. Bu durum, iOS uygulaması bir toplu satın alma programı (VPP) ile bağlantılı veya iş kolu (LOB) uygulamasına bağlanan bir App Store 'a bağlandığında oluşur. İstem, kullanıcıların eylemi kabul etmesine veya uygulamanın yönetimine izin veriyor. İstem şirketinizin adını gösterir veya şirketinizin adı kullanılamadığında **Şirket portalı** görüntülenir. 
 
 > [!Note]
 > Azure Kamu kullanıyorsanız, bir sorunla ilgili yardım alma sürecini başlattığında bunu nasıl paylaşacağına karar vermesi için son kullanıcıya uygulama günlükleri sunulur. Ancak Azure Kamu kullanmıyorsa, kullanıcı bir sorunla ilgili yardım alma sürecini başlattığında Windows 10 için Şirket Portalı uygulama günlüklerini doğrudan Microsoft'a gönderir. Uygulama günlüklerini Microsoft'a göndermek sorunları gidermeyi ve çözmeyi kolaylaştıracaktır. 
 
 ## <a name="company-information-and-privacy-statement"></a>Şirket bilgileri ve gizlilik bildirimi
-Şirket adı, Şirket Portalı’nın başlığı olarak görüntülenir. Gizlilik bildirimini, kullanıcı gizlilik bağlantısına tıkladığında görüntülenir.
+Şirket adı, Şirket Portalı’nın başlığı olarak görüntülenir. Gizlilik bildirimi, kullanıcı gizlilik bağlantısına tıkladığında görüntülenir.
 
 | Alan adı | Uzunluk üst sınırı | Daha fazla bilgi |
 |---|---|---|
@@ -53,23 +53,23 @@ When a user is installing an iOS application from the Company Portal they will r
 | **Gizlilik bildirimi URL'si** |     79     | Kullanıcılar Şirket Portalı’nda gizlilik bağlantılarına tıkladığında görüntülenecek kendi şirket gizlilik bildiriminizi belirtebilirsiniz. `<https://www.contoso.com>` biçiminde geçerli bir URL girmeniz gerekir. |
 
 > [!NOTE]
-> Consistent with Microsoft and Apple policy, we do not sell any data collected by our service to any third parties for any reason.
+> Microsoft ve Apple ilkesiyle tutarlı olan her nedenden dolayı hizmetimiz tarafından toplanan herhangi bir veriyi üçüncü taraflardan satmayacağız.
 
 ## <a name="support-information"></a>Destek bilgileri
 Çalışanınıza Intune'la ilgili sorularında bir başvuru noktası sağlamak için şirketinizin destek bilgilerini girin.
 
 |Alan adı|Uzunluk üst sınırı|Daha fazla bilgi|
 |---|---|---|
-|**Kişi adı** | 40 | This name is displayed on the **Help and Support** page. |
-|**Telefon numarası** | 20 | This contact number is displayed on the **Help and Support** page to enable employees to contact you for support. |
-|**E-posta adresi**| 40 | This contact address is displayed on the **Help and Support** page. `alias@domainname.com` biçiminde geçerli bir e-posta adresi girmeniz gerekir. |
-|**Web sitesinin adı**| 40 | Bu ad destek web sitesi URL'si için görüntülenen kolay addır. If you specify a support website URL and no friendly name, then Go to IT website is displayed on the **Help and Support** page in the Company Portal. |
-|**Web sitesi URL'si**| 150 | Kullanıcılarınızın kullanmasını istediğiniz bir destek web siteniz varsa, URL'sini burada belirtin. URL, `https://www.contoso.com` biçiminde olmalıdır. If you don't specify a URL, nothing is displayed for the support website on the **Help and Support** page in the Company Portal. |
-| **Ek bilgiler**| 120 | Displayed on the **Help and Support** page. |
+|**Kişi adı** | 40 | Bu ad, **Yardım ve destek** sayfasında görüntülenir. |
+|**Telefon numarası** | 20 | Bu iletişim numarası, çalışanların destek için sizinle iletişim kurmasını sağlamak üzere **Yardım ve destek** sayfasında görüntülenir. |
+|**E-posta adresi**| 40 | Bu iletişim adresi **Yardım ve destek** sayfasında görüntülenir. `alias@domainname.com` biçiminde geçerli bir e-posta adresi girmeniz gerekir. |
+|**Web sitesinin adı**| 40 | Bu ad destek web sitesi URL'si için görüntülenen kolay addır. Bir destek web sitesi URL 'SI belirtirseniz ve kolay ad yoksa, Şirket Portalı **Yardım ve destek** sayfasında BT Web sitesine gidin görüntülenir. |
+|**Web sitesi URL'si**| 150 | Kullanıcılarınızın kullanmasını istediğiniz bir destek web siteniz varsa, URL'sini burada belirtin. URL, `https://www.contoso.com` biçiminde olmalıdır. Bir URL belirtmezseniz, Şirket Portalı **Yardım ve destek** sayfasında destek web sitesi için hiçbir şey gösterilmez. |
+| **Ek bilgiler**| 120 | **Yardım ve destek** sayfasında gösterilir. |
 
 
 ## <a name="company-identity-branding-customization"></a>Şirket kimliği marka özelleştirme
-Şirket Portalınızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz.
+Şirket Portalı''nızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz.
 
 ### <a name="theme-color-and-logo-in-the-company-portal"></a>Şirket Portalı’nda tema rengi ve logo
 Şirket Portalı’na bir tema rengi uygulayın. Standart renklerden birini seçin veya özel renk için alt basamaklı onaltılık kodu girin.
@@ -96,7 +96,7 @@ Beyaz veya açık renk arka planlarda en iyi görünecek logoyu seçin.
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
-|**Marka imajınızı karşıya yükleyin**| Bu seçenek, marka imajı görüntülemenizi sağlar. iOS Şirket Portalı'nda kullanıcı profili sayfasında arka plan görüntüsü olarak görünür.<p><ul><li>Recommended image width: Greater than 1125px (required to be at least 650 px)</li><li>En yüksek görüntü boyutu: 1,3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
+|**Marka imajınızı karşıya yükleyin**| Bu seçenek, marka imajı görüntülemenizi sağlar. iOS Şirket Portalı'nda kullanıcı profili sayfasında arka plan görüntüsü olarak görünür.<p><ul><li>Önerilen Görüntü genişliği: 1125mb 'den büyük (en az 650 piksel olması gerekir)</li><li>En yüksek görüntü boyutu: 1,3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
 
 Doğru bir marka imajı sayesinde şirket markanızı güçlü bir şekilde tanıtarak Şirket Portalı’nda kullanıcı güvenini artırabilirsiniz. Aşağıda, Şirket Portalı için imaj elde etme, seçme ve iyileştirme hakkında bazı ipuçları bulabilirsiniz. 
 
@@ -120,26 +120,26 @@ Aşağıdaki görüntüde örnek bir iPhone marka imajı gösterilmektedir:
 
 ![Örnek iPad marka imajının ekran görüntüsü](./media/company-portal-app/company-portal-app-02.png)
 
-## <a name="privacy-statement-customization"></a>Privacy statement customization
+## <a name="privacy-statement-customization"></a>Gizlilik bildirimi özelleştirmesi
 
-You can customize the privacy statement that appears for your organization on managed iOS devices. This message lists the items that your organization can't see or do on managed iOS devices.
+Kuruluşunuzda yönetilen iOS cihazlarında görüntülenen gizlilik bildirimini özelleştirebilirsiniz. Bu ileti, kuruluşunuzun yönetilen iOS cihazlarını göremediği veya üzerinde yapayapabileceği öğeleri listeler.
 
-Under **Company Portal customization** > **Device management and privacy message**, you can:
+**Şirket portalı özelleştirme** > **cihaz yönetimi ve gizlilik iletisi**altında şunları yapabilirsiniz:
 
-- Accept the **Default** to use the list as shown, or
-- Choose **Custom** to customize the the list of items that your organization can’t see or do on managed iOS devices. You can use [markdown](https://daringfireball.net/projects/markdown/) to add bullets, bolding, italics, and links.
+- Listenin gösterildiği gibi kullanılması için **Varsayılanı** kabul edin veya
+- Kuruluşunuzun yönetilen iOS cihazlarını göremediği veya bu cihazlarda yapayapabileceği öğelerin listesini özelleştirmek için **özel** ' i seçin. [Marku](https://daringfireball.net/projects/markdown/) kullanarak madde işaretleri, kalın, italik ve bağlantılar ekleyebilirsiniz.
 
-## <a name="company-portal-derived-credentials-for-ios-devices"></a>Company Portal derived credentials for iOS devices
-Intune supports Personal Identity Verification (PIV) and Common Access Card (CAC) Derived Credentials in partnership with credential providers DISA Purebred, Entrust Datacard, and Intercede. End users will go through additional steps post-enrollment of their iOS device to verify their identity in the Company Portal application. Derived Credentials will be enabled for users by first setting up a credential provider for your tenant, then targeting a profile that uses Derived Credentials to users or devices.
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>İOS cihazları için türetilmiş kimlik bilgilerini Şirket Portalı
+Intune, kişisel kimlik doğrulama (PıV) ve ortak erişim kartı (CAC) ile birlikte gelen kimlik bilgilerini, DıŞA geçmiş kimlik bilgisi sağlayıcıları, Entrust Datacard ve ıntercede ile iş ortaklığı için destekler. Son kullanıcılar, Şirket Portalı uygulamasındaki kimliklerini doğrulamak üzere iOS cihazlarının kayıt sonrası ek adımlara geçer. Türetilmiş kimlik bilgileri, önce kiracınız için bir kimlik bilgisi sağlayıcısı ayarlayıp, ardından kullanıcılara veya cihazlara türetilmiş kimlik bilgilerini kullanan bir profili hedefleyerek kullanıcılara etkinleştirilir.
 
 > [!NOTE]
-> The user will see instructions about derived credentials based on the link that you have specified via Intune.
+> Kullanıcı, Intune aracılığıyla belirttiğiniz bağlantıya bağlı olarak türetilmiş kimlik bilgileri hakkındaki yönergeleri görür.
 
-For more information about derived credentials for iOS devices, see [Use derived credentials in Microsoft Intune](~/protect/derived-credentials.md).
+İOS cihazları için türetilmiş kimlik bilgileri hakkında daha fazla bilgi için bkz. [Microsoft Intune türetilmiş kimlik bilgilerini kullanma](~/protect/derived-credentials.md).
 
-## <a name="dark-mode-for-ios-company-portal"></a>Dark Mode for iOS Company Portal
+## <a name="dark-mode-for-ios-company-portal"></a>İOS Şirket Portalı için koyu mod
 
-Dark Mode is available for the iOS Company Portal. Users can download company apps, manage their devices, and get IT support in the color scheme of their choice based on device settings. The iOS Company Portal will automatically match the end user's device settings for dark or light mode. 
+İOS Şirket Portalı için koyu mod kullanılabilir. Kullanıcılar şirket uygulamalarını indirebilir, cihazlarını yönetebilir ve cihaz ayarlarına bağlı olarak tercih ettikleri renk düzeninde BT desteği alabilir. İOS Şirket Portalı, son kullanıcının cihaz ayarlarını koyu veya hafif modda otomatik olarak eşleştirecektir. 
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows Şirket Portalı klavye kısayolları
 
@@ -147,11 +147,11 @@ Son kullanıcılar, Windows Şirket Portalı’nda klavye kısayollarını (hız
 
 Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir.
 
-| Alan | Description | Keyboard shortcut |
+| Alan | Açıklama | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
 | Gezinti menüsü | Gezinti | Alt+M |
-|  | Giriş | Alt+H |
-|  | Tüm uygulamalar | Alt+A |
+|  | Ana Sayfası | Alt+H |
+|  | Tüm uygulamalar | Alt + A |
 |  | Yüklenen uygulamalar | Alt+I |
 |  | Geri bildirim gönder | Alt+F |
 |  | Profilim | Alt+U |
@@ -162,46 +162,46 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 | Cihaz ayrıntıları | Yeniden Adlandır | F2 |
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
-| Uygulama ayrıntıları | Yükle | Ctrl+I |
+| Uygulama ayrıntıları | Yükleme | Ctrl+I |
 | Cihazlar | Kullanılabilir | Ctrl+D |
 
 Son kullanıcılar, Windows Şirket Portalı uygulamasında kullanılabilen kısayolları da görebilir.
 
 ![Windows Şirket Portalı'nda kullanılabilen kısayolların ekran görüntüsü](./media/company-portal-app/company-portal-app-01.png)
 
-## <a name="user-self-service-device-actions-from-the-company-portal"></a>User self-service device actions from the Company Portal
+## <a name="user-self-service-device-actions-from-the-company-portal"></a>Şirket Portalı Kullanıcı self servis cihaz eylemleri
 
-Users can perform actions on their local or remote devices via the Company Portal app or Website. The actions that a user can perform varies based on device platform and configuration. In all cases, the remote device actions can only be performed by device’s Primary User.
-- **Retire** – Removes the device from Intune Management. In the company portal app and website, this shows as **Remove**.
-- **Wipe** – This action initiates a device reset. In the company portal website this is shown as **Reset**, or **Factory Reset** in the iOS Company Portal App.
-- **Rename** – This action changes the device name that the user can see in the Company Portal. It does not change the local device name, only the listing in the Company Portal.
-- **Sync** – This action initiates a device check-in with the Intune service. This shows as **Check Status** in the Company Portal.
-- **Remote Lock** – This locks the device, requiring a PIN to unlock it.
-- **Reset Passcode** – This action is used to reset device passcode. On iOS devices the passcode will be removed and the end user will be required to enter a new code in settings. On supported Android devices, a new passcode is generated by Intune and temporarily displayed in the Company Portal.
-- **Key Recovery** – This action is used to recover a personal recovery key for encrypted macOS devices from the Company Portal website. 
+Kullanıcılar, Şirket Portalı uygulaması veya Web sitesi aracılığıyla yerel veya uzak cihazlarında eylemler gerçekleştirebilir. Bir kullanıcının gerçekleştirebileceği eylemler cihaz platformu ve yapılandırmasına göre farklılık gösterir. Her durumda, uzak cihaz eylemleri yalnızca cihazın birincil kullanıcısı tarafından gerçekleştirilebilir.
+- **Devre dışı bırak** – cihazı Intune yönetiminden kaldırır. Şirket portalı uygulamasında ve Web sitesinde bu, **Kaldır**olarak gösterilir.
+- **Silme** – bu eylem bir cihaz sıfırlamayı başlatır. Şirket portalı Web sitesinde bu, **sıfırlama**veya iOS şirket portalı uygulamasında **Fabrika Sıfırlaması** olarak gösterilir.
+- **Yeniden Adlandır** – bu eylem, kullanıcının şirket portalı görebileceği cihaz adını değiştirir. Yerel cihaz adını değiştirmez, yalnızca Şirket Portalı listelemez.
+- **Eşitleme** – bu eylem, Intune hizmeti ile bir cihaz iade işlemini başlatır. Bu, Şirket Portalı **denetim durumunu** gösterir.
+- **Uzaktan kilitleme** – bu, cihazın kilidini açmak için PIN gerektiren cihazı kilitler.
+- **Geçiş kodunu Sıfırla** – bu eylem, cihaz geçiş kodunu sıfırlamak için kullanılır. İOS cihazlarında geçiş kodu kaldırılır ve son kullanıcının ayarlar ' da yeni bir kod girmesi gerekecektir. Desteklenen Android cihazlarda Intune tarafından yeni bir geçiş kodu oluşturulur ve geçici olarak Şirket Portalı görüntülenir.
+- **Anahtar kurtarma** – bu eylem, Şirket portalı Web sitesinden şifrelenmiş MacOS cihazları için kişisel kurtarma anahtarını kurtarmak üzere kullanılır. 
 
-### <a name="self-service-actions"></a>Self Service Actions
+### <a name="self-service-actions"></a>Self Servis eylemleri
 
-Some platforms and configurations do not allow self-service device actions. This table below provides further details about self service actions:
+Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez. Aşağıdaki tabloda self servis eylemleri hakkında daha ayrıntılı bilgi verilmektedir:
 
-|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/ıpados<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Devre dışı bırakma | Available<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Available<sup>(7)</sup> |
-| Silme | Kullanılabilir | Available<sup>(5)</sup> | NA | Available<sup>(7)</sup> |
-| Rename<sup>(4)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
-| Sync | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
-| Uzaktan Kilitleme | Windows Phone only | Kullanılabilir | Kullanılabilir | Kullanılabilir |
-| Reset Passcode | Windows Phone only | Available<sup>(8)</sup> | NA | Available<sup>(6)</sup> |
-| Key Recovery | NA | NA | Available<sup>(2)</sup> | NA |
+| Devre Dışı Bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
+| Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | NA | Kullanılabilir<sup>(7)</sup> |
+| Yeniden Adlandır<sup>(4)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
+| Eşitleme | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
+| Uzaktan Kilitleme | Yalnızca Windows Phone | Kullanılabilir | Kullanılabilir | Kullanılabilir |
+| Geçiş kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir<sup>(8)</sup> | NA | Kullanılabilir<sup>(6)</sup> |
+| Anahtar Kurtarma | NA | NA | Kullanılabilir<sup>(2)</sup> | NA |
 
-<sup>(1)</sup> **Retire** is always blocked on Azure AD Joined Windows devices.<br>
-<sup>(2)</sup> **Key Recovery** for MacOS is only available via the Web Portal.<br>
-<sup>(3)</sup> All remote actions are disabled if using a Device Enrollment Manager enrollment.<br>
-<sup>(4)</sup> **Rename** only changes the device name in the Company Portal app or Web Portal, not on the device.<br>
-<sup>(5)</sup> **Wipe** is not available on User Enrolled iOS devices.<br>
-<sup>(6)</sup> **Reset Passcode** is not supported on some Android and Android Enterprise configurations. For more information, see [Reset or remove a device passcode in Intune](../remote-actions/device-passcode-reset.md).<br>
-<sup>(7)</sup> **Retire** and **Wipe** are not available on Android Enterprise Device Owner scenarios (COPE, COBO, COSU).<br> 
-<sup>(8)</sup> **Reset Passcode** is not supported on User Enrolled iOS devices.
+<sup>(1)</sup> **devre dışı BıRAKMA** , Azure AD 'ye katılmış Windows cihazlarında her zaman engellenir.<br>
+<sup>(2)</sup> MacOS Için **anahtar kurtarma** yalnızca Web portalı aracılığıyla kullanılabilir.<br>
+<sup>(3)</sup> bir cihaz kayıt yöneticisi kaydı kullanılıyorsa tüm uzak eylemler devre dışı bırakılır.<br>
+<sup>(4)</sup> **yeniden adlandırma** yalnızca cihaz adını cihazda değil şirket portalı uygulamasında veya Web portalında değiştirir.<br>
+<sup>(5)</sup> Kullanıcı kayıtlı iOS cihazlarında **silme** kullanılamıyor.<br>
+<sup>(6)</sup> bazı Android ve Android kurumsal yapılandırmalarında, **geçiş kodu sıfırlama** işlemi desteklenmez. Daha fazla bilgi için bkz. [Intune 'da cihaz geçiş kodunu sıfırlama veya kaldırma](../remote-actions/device-passcode-reset.md).<br>
+<sup>(7)</sup> **devre dışı bırakma** ve **Temizleme** , ANDROID kurumsal cihaz sahibi senaryolarında (Cope, Cobo, cosu) kullanılamaz.<br> 
+<sup>(8)</sup> Kullanıcı tarafından kaydedilen IOS cihazlarında **geçiş kodunu sıfırlama** işlemi desteklenmez.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

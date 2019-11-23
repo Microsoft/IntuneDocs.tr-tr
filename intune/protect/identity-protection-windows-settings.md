@@ -91,7 +91,7 @@ Intune 'da Iş için Windows Hello profilleri hakkında daha fazla bilgi edinmek
 
     **Varsayılan**: yapılandırılmadı  
 
-  - **PIN kurtarmayı etkinleştir**   
+  - **PIN kurtarma  etkinleştir**  
     Kullanıcının Iş için Windows Hello PIN kurtarma hizmetini kullanmasına izin verir. 
     
     - **Etkin** -PIN kurtarma gizli anahtarı cihazda depolanır ve gerekirse Kullanıcı PIN 'ini değiştirebilir.  
@@ -99,7 +99,7 @@ Intune 'da Iş için Windows Hello profilleri hakkında daha fazla bilgi edinmek
 
     **Varsayılan**: yapılandırılmadı
 
-  - **Güvenilir Platform Modülü (TPM)**   kullanın  
+  - **Güvenilir Platform Modülü (TPM) kullanın**   
     TPM yongası ek bir veri güvenliği katmanı sağlar.  
 
     - **Etkin** -yalnızca erişilebilir TPM 'ye sahip cihazlar Iş Için Windows Hello 'yu sağlayabilir.
@@ -115,7 +115,7 @@ Intune 'da Iş için Windows Hello profilleri hakkında daha fazla bilgi edinmek
 
     **Varsayılan**: yapılandırılmadı
 
-  - **Kullanılabilir olduğunda gelişmiş yanıltma koruması kullan**  
+  - **Kullanılabildiğinde, gelişmiş yanıltma koruması kullan**  
     Windows Hello’nun yanıltmaya karşı koruma özelliklerinin bunu destekleyen cihazlarda kullanılıp kullanılmayacağını yapılandırır (örneğin, gerçek yüz yerine yüzün fotoğrafı olduğunu algılama).  
     - **Etkinleştir** -Windows, desteklendiğinde yüz özellikleri için tüm kullanıcıların yanıltma koruması kullanmasını gerektirir.
     - **Yapılandırılmadı** -Windows cihazda kimlik sahtekarlığı önleme yapılandırmasını alır.

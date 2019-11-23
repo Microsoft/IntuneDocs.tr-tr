@@ -32,11 +32,11 @@ ms.locfileid: "72505619"
 | Kayıt yöntemi | Adanmış ve tam olarak yönetilen cihazlar için en düşük Android işletim sistemi sürümü |
 | ----- | ----- |
 | Yakın Alan İletişimi | 5.1 |
-| Belirteç girişi | 6,0 |
-| QR kodu | 7,0 |
-| Zero Touch  | 8.0 @ no__t-0 |
+| Belirteç girişi | 6.0 |
+| QR kodu | 7.0 |
+| Zero Touch  | 8,0\* |
 
-Katılımcı üreticilerle \*.
+katılan üreticilerle \*.
 
 ## <a name="enroll-by-using-near-field-communication-nfc"></a>Yakın Alan İletişimi (NFC) kullanarak kaydetme
 

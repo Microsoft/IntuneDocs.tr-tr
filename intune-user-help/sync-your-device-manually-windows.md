@@ -134,9 +134,9 @@ Bu yönergeler, Windows 10 Yıldönümü Güncelleştirmesi (RS1 olarak da bilin
 2. **Hesaplar** > **İş Erişimi**’ni seçin.  
     ![Hesaplar bağlantısının vurgulandığı HoloLens ayarlar uygulamasının ekran görüntüsü](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-3. **Eşitleme**> bağlı hesabınızı seçin.  ![Ekran görüntüsü HoloLens ayarları uygulaması, eşitleme düğmesi vurgulanmış @ no__t-2  
+3. **Eşitleme**> bağlı hesabınızı seçin.  ![ekran görüntüsü HoloLens ayarları uygulaması, Eşitle düğmesi vurgulanmış](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
-### <a name="windows-phone-81"></a>WVPN profillerinidows Phone 8.1
+### <a name="windows-phone-81"></a>Windows Phone 8.1
 
 1. **Tüm uygulamalar** > **Ayarlar** > **çalışma alanı**’na gidin.
 

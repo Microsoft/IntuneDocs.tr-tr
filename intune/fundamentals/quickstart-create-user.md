@@ -55,7 +55,7 @@ Bir kullanıcı oluşturduktan sonra, bu kullanıcılara bir Intune lisansı ata
 Bir kullanıcıya bir Intune lisansı atamak için:
 
 1. [Microsoft 365 Yönetim merkezinde](http://go.microsoft.com/fwlink/p/?LinkId=698854) Intune 'da oturum açmak için kullandığınız kimlik bilgileriyle oturum açın.
-2. @No__t **kullanıcıları**seçin-1**Etkin Kullanıcı** > ve yeni oluşturduğunuz kullanıcıyı seçin.
+2. **Kullanıcıları** > **etkin kullanıcılar** > seçin ve yeni oluşturduğunuz kullanıcıyı seçin.
 3. **Ürün lisansları**’nın yanında bulunan **Düzenle**’yi seçin.
 4. **Konum** altında kullanıcı için bir konum seçin.
 5. Intune lisansının (veya Intune içeren başka bir lisansın) **yanındaki ileri '** ye tıklayın. Görüntülenen [ürün adı](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** Azure yönetiminde hizmet planı olarak kullanılır 
@@ -68,7 +68,7 @@ Yeni etkin Intune kullanıcısı artık bir **Intune** lisansı kullandığını
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme
 
-Bu kullanıcıya artık ihtiyacınız yoksa, [Microsoft 365 yönetim merkezine](http://go.microsoft.com/fwlink/p/?LinkId=698854) giderek kullanıcıları silebilir ve **Kullanıcılar** > **etkin @no__t kullanıcılar**' ı seçin  > **Kullanıcı Sil** >  **Kullanıcı @no__t silme**-10**Değişiklikleri Onayla**2**Close**.
+Bu kullanıcıya artık ihtiyacınız yoksa, [Microsoft 365 yönetim merkezine](http://go.microsoft.com/fwlink/p/?LinkId=698854) giderek **kullanıcıları** silebilir ve Kullanıcı > **etkin kullanıcılar** ' ı *seçerek > Kullanıcı* **Sil** >  > Kullanıcı Sil ** > ** **Değişiklikleri onaylayın** ve **Kapat**' a tıklayın. > 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

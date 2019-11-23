@@ -40,12 +40,12 @@ Okul veya iş kaynaklarına erişebilmek için kuruluşunuz, Android cihazınız
 > Huawei, vivo ve OPPO 'dan gelen belirli Android cihazları şifrelenemez. Daha fazla bilgiyi [burada](your-device-appears-encrypted-but-cp-says-otherwise-android.md) bulabilirsiniz.  
 
 1. Bir cihaz ekranı kilidi ayarlayın.  
-    a. **Ayarlar** > **kilit ekranı ve güvenlik** > **ekran kilidi türü**' ne gidin.  
+    a. **Ayarlar** > **kilit ekranı ve güvenlik** > **ekran kilit türü**' ne gidin.  
     b. **PIN**, **parola**veya **model**seçeneklerinden birini belirleyin.  
     c. Ekran kilitinizi yapılandırmak için ekrandaki yönergeleri izleyin.  
 
 2. **Kilit ekranı ve güvenlik** bölümüne dönüp **güvenli başlatma**' yı seçin.
-3. Cihaz **@no__t 1** **' i açtığında PIN gerektir '** i seçin.
+3. Cihaz > **Tamam ' ı** **açtığında PIN gerektir '** i seçin.
 4. Cihazınızı doğrulamak ve şifrelemek için PIN 'inizi girin.
 5. Şirket Portalı veya Microsoft Intune uygulamasını açın.
     * Şirket Portalı kullanıcılar: cihazınızı seçin ve **cihaz ayarlarını denetle**' ye dokunun. 
@@ -53,7 +53,7 @@ Okul veya iş kaynaklarına erişebilmek için kuruluşunuz, Android cihazınız
 
 Android 4,4 ve öncesini çalıştıran cihazlarda **güvenli başlangıç** seçeneği bulunmayabilir. Bu durumda, cihazınızı şifrelemek için aşağıdaki adımları izleyin.
 
-1. **Ayarlar** > **güvenlik** > **şifreleme cihazı**' na gidin. Ekran etiketleri, Android cihazlar arasında farklılık gösterir. **Cihaz şifreleme** seçeneğini görmüyorsanız, iade edin:
+1. **Ayarlar** > **güvenlik** > **cihazı şifreleme**' ye gidin. Ekran etiketleri, Android cihazlar arasında farklılık gösterir. **Cihaz şifreleme** seçeneğini görmüyorsanız, iade edin:
     * **Depolama** > **depolama şifrelemesi**
     * **Depolama** > **kilit ekranı ve güvenlik** > **diğer güvenlik ayarları** 
 
@@ -62,7 +62,7 @@ Android 4,4 ve öncesini çalıştıran cihazlarda **güvenli başlangıç** se�
     * Şirket Portalı kullanıcılar: cihazınızı seçin ve **cihaz ayarlarını denetle**' ye dokunun.  
     * Microsoft Intune kullanıcılar: sayfa güncellene kadar beklemeniz gerekir, ancak bunu yaparken şifreleme durumunuz uyumlu olarak değiştirilmelidir.
 
-## <a name="troubleshoot"></a>Sorunları Gider  
+## <a name="troubleshoot"></a>Sorun giderme  
 **Sorun**: cihazınızı zaten şifreledi ve
 
 - Şifreleme düğmesi devre dışı.

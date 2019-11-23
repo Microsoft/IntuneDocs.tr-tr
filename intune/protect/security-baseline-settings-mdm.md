@@ -122,7 +122,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-BitLocker](https://docs.
     **Varsayılan**: Evet  
   
 
-## <a name="browser"></a>Tarayıcı  
+## <a name="browser"></a>Browser  
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) bölümüne bakın.  
 
 - **Microsoft Edge için SmartScreen gerektir**  
@@ -155,7 +155,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Browser](https://docs.mi
   
   **Varsayılan**: Evet  
 
-## <a name="connectivity"></a>Bilirlik  
+## <a name="connectivity"></a>Bağlantı  
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-bağlantı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) bölümüne bakın.  
 
 - **Web yayımı ve çevrimiçi sipariş sihirbazları için Internet 'ten indirmeyi engelleyin**  
@@ -285,7 +285,7 @@ Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-DeviceLock](https://do
   *Parola ıste* *Evet*olarak ayarlandığında aşağıdaki ayarlar kullanılabilir.
 
   - **Parola en az karakter kümesi sayısı**  
-    Güçlü bir PIN veya parola için gereken karmaşık öğe türleri sayısı (büyük ve küçük harfler, rakamlar ve noktalama işaretleri). PIN masaüstü ve mobil cihazlar için aşağıdaki davranışı zorlar: 1-yalnızca basamak 2 rakamları ve küçük harflerin 3 basamaklı, küçük harflerin ve büyük harflerin olması gerekir. Masaüstü Microsoft hesaplarında ve etki alanı hesaplarında desteklenmez. 4 basamaklı, küçük harfler, büyük harfler ve özel karakterler gereklidir. Masaüstünde desteklenmez. Varsayılan değer 1 ' dir.  
+    Güçlü bir PIN veya parola için gereken karmaşık öğe türleri sayısı (büyük ve küçük harfler, rakamlar ve noktalama işaretleri). PIN masaüstü ve mobil cihazlar için aşağıdaki davranışı zorlar: 1-yalnızca basamak 2 rakamları ve küçük harflerin 3 basamaklı, küçük harflerin ve büyük harflerin olması gerekir. Masaüstü Microsoft hesaplarında ve etki alanı hesaplarında desteklenmez. 4 basamaklı, küçük harfler, büyük harfler ve özel karakterler gereklidir. Masaüstünde desteklenmez. Varsayılan değer 1’dir.  
     [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067055)  
     
     **Varsayılan**: 3  
@@ -1161,7 +1161,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOpt
   **Varsayılan**: NTLM V2 ve 128 bit şifrelemeyi gerektir  
   
 - **Ekran koruyucusu etkinleşene kadar kilit ekranının işlem yapılmayan dakika sayısı**  
-  Windows bir oturum açma oturumunun etkinlik dışı olduğunu fark eder ve etkin olmayan sürenin miktarı etkin olmama sınırını aşarsa, ekran koruyucusu çalışır ve oturumu kilitler.  
+  Windows, bir oturumun etkin olmamasını fark eder ve etkin olmama süresi etkin olmama sınırını aşarsa, ekran koruyucusu çalışarak oturumu kilitler.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067210)  
   
   **Varsayılan**: 15
@@ -1616,7 +1616,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
   **Varsayılan**: engelle
   
 - **Kimlik bilgisi hırsızlığı türünü engelle**  
-  Microsoft Defender Credential Guard, yalnızca ayrıcalıklı sistem yazılımlarının erişebilmesi için gizli dizileri yalıtmak üzere sanallaştırma tabanlı güvenlik kullanır. Bu gizli dizi erişimi, karma değer geçişi veya anahtar geçişi gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Microsoft Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.  
+  Microsoft Defender Credential Guard, yalnızca ayrıcalıklı sistem yazılımlarının erişebilmesi için gizli dizileri yalıtmak üzere sanallaştırma tabanlı güvenlik kullanır. Bu parolalara yetkisiz erişim, Pass-the-Hash veya Pass-The-Ticket gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Microsoft Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **Varsayılan**: etkinleştir

@@ -45,9 +45,9 @@ Intune 'da bir Exchange Connector sorununu gidermeye başlamadan önce, bir Soli
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Exchange Connector sorunları hakkında daha fazla veri almak için PowerShell 'i kullanma
 
-- Bir posta kutusunun tüm mobil cihazlarının listesini almak için @no__t kullanın-0
-- Posta kutusu için SMTP adreslerinin bir listesini almak için @no__t kullanın-0
-- Bir cihazın erişim durumu hakkında ayrıntılı bilgi almak için @no__t kullanın-0
+- Bir posta kutusunun tüm mobil cihazlarının listesini almak için `Get-ActiveSyncDeviceStatistics -mailbox mbx` kullanın
+- Posta kutusu için SMTP adreslerinin bir listesini almak için `Get-Mailbox -Identity user | select emailaddresses | fl` kullanın
+- Bir cihazın erişim durumu hakkında ayrıntılı bilgi almak için `Get-CASMailbox <upn> | fl` kullanın
 
 ## <a name="review-the-connector-configuration"></a>Bağlayıcı yapılandırmasını gözden geçirme
 

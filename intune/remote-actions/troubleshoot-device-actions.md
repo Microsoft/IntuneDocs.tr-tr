@@ -54,7 +54,7 @@ Hayır. Ve kısa çizgileri girmeniz gerekmez.
 ## <a name="remove-devices-action"></a>Cihazları kaldır eylemi
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Nasıl yaparım? devre dışı bırakmayı/silmeyi kimin başlatdığına söylüyorsunuz?
-@No__t **ıntune** **@no__t-** 3**cihaz > eylemleri** ' ne giderek **başlatılan** sütununa bakın.
+**Cihaz eylemleri** > **Intune** > **cihazlar** ' a gidin ve **başlatılan** sütunu işaretleyin >.
 Giriş görmüyorsanız, eylemi başlatan en olası kişi cihazın kullanıcısı olur. Büyük olasılıkla Şirket Portalı uygulamasını veya portal.manage.microsoft.com kullandık.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Uygulamam kullanımdan kaldırıldıktan sonra neden kaldırılamadı?
@@ -63,13 +63,13 @@ Yönetilen bir uygulama olarak kabul edilmedi. Bu bağlamda, yönetilen bir uygu
 - Uygulama kullanılabilir olarak dağıtıldı ve sonra Şirket Portalı uygulamasının içinden Son Kullanıcı tarafından yüklendi.
 
 ### <a name="why-is-wipe-grayed-out-for-android-enterprise-work-profile-devices"></a>Android kurumsal Iş profili cihazlarında neden gri renkte görünüyor?
-Bu beklenen davranıştır. Google, Iş profili cihazlarının MDM sağlayıcısından fabrika ayarlarına sıfırlamaya izin vermez.
+Bu beklenen bir davranıştır. Google, Iş profili cihazlarının MDM sağlayıcısından fabrika ayarlarına sıfırlamaya izin vermez.
 
 ### <a name="why-can-i-sign-back-into-my-office-apps-after-my-device-was-retired"></a>Aygıtım kullanımdan kaldırıldıktan sonra neden Office uygulamalarıma yeniden oturum açamıyorum?
 Bir cihazı devre dışı bırakma, erişim belirteçlerini iptal etmez. Bu durumu azaltmak için koşullu erişim ilkelerini kullanabilirsiniz.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Devre dışı bırakma/silme eylemini verildikten sonra nasıl izleyebilirim?
-@No__t-3**cihaz eylemi**@no__t **Intune**'a gidin.
+**Cihaz eylemleri** > **Intune** > **cihazlar** 'a gidin.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Wpes neden bazen süresiz olarak bekliyor olarak gösterilmelidir?
 Cihazların durumu, sıfırlama başlatılmadan önce her zaman Intune hizmetine rapor vermez. Bu nedenle, eylem beklemede olarak gösterilir. Eylemi başarıyla onayladıysanız, cihazı hizmetten silin.

@@ -91,7 +91,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-SmartScreen](https://doc
   **Varsayılan**: engelle 
 
 - **Kimlik bilgisi hırsızlığı türünü engelle**  
-  [Türetilmiş etki alanı kimlik bilgilerini Credential Guard Ile korumak](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)için *etkin* olarak ayarlayın. Microsoft Defender Credential Guard, yalnızca ayrıcalıklı sistem yazılımlarının erişebilmesi için gizli dizileri yalıtmak üzere sanallaştırma tabanlı güvenlik kullanır. Bu gizli dizi erişimi, karma değer geçişi veya anahtar geçişi gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Microsoft Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.  
+  [Türetilmiş etki alanı kimlik bilgilerini Credential Guard Ile korumak](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)için *etkin* olarak ayarlayın. Microsoft Defender Credential Guard, yalnızca ayrıcalıklı sistem yazılımlarının erişebilmesi için gizli dizileri yalıtmak üzere sanallaştırma tabanlı güvenlik kullanır. Bu parolalara yetkisiz erişim, Pass-the-Hash veya Pass-The-Ticket gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Microsoft Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.  
 
   **Varsayılan**: etkinleştir
 
@@ -429,7 +429,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
 ## <a name="microsoft-defender-firewall"></a>Microsoft Defender güvenlik duvarı
 Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) bölümüne bakın.
 
-- **Silinmeden önce güvenlik ilişkilendirmesi boşta kalma süresi** - *Mdmstore/Global/saıdsaati*   
+- **Silinmeden önce güvenlik ilişkilendirmesi boşta kalma süresi**  - mdmstore/Global/saıdsaati   
   Güvenlik ilişkilendirmeleri, bu sayıda saniye boyunca ağ trafiği görülmediğinde silinir.  
   **Varsayılan**: 300
 
@@ -590,7 +590,7 @@ Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://do
 
 Daha fazla bilgi için Windows belgelerindeki [Passportforwork CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) bölümüne bakın.
 
-- **İş Için Windows Hello** - *Tenantıd/policies/UsePassportForWork*   yapılandırın  
+- **İş için Windows Hello**  - tenantıd/policies/usepassportforwork yapılandırma    
   Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir.  
 
   - *Evet*olarak ayarlandığında, bu ilkeyi etkinleştirir ve cihaz Iş Için Windows Hello 'yu hazırlar.  

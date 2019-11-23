@@ -54,14 +54,14 @@ Zeköşeli [Mobility uzantıları Ile zeköşeli cihazlarını kullanın ve yön
 ### <a name="get-logs-using-android-debug-bridge"></a>Android Debug Bridge kullanarak günlükleri al
 Profil zaten Intune ile dağıtıldıktan sonra günlükleri almak için cihazı [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb) olan bir bilgisayara bağlayın (Android 'in Web sitesini açar).
 
-Cihazda Günlükler @no__t kaydedilir-0
+Cihazda Günlükler `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files` kaydedilir
 
 ### <a name="get-logs-from-email"></a>E-postadaki günlükleri al
 Profil Intune ile zaten dağıtıldıktan sonra günlükleri almak için, son kullanıcılar cihazdaki bir e-posta uygulaması kullanarak günlüklere e-posta gönderebilir. Zeköşeli cihazda Şirket Portalı uygulamasını açın ve [günlükleri gönderin](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). Günlükleri Gönder özelliğinin kullanılması, Microsoft desteği 'ne başvurduğunuzda başvurduğunuzda kullanabileceğiniz bir Powerasansör olay KIMLIĞI de oluşturur.
 
 ## <a name="read-the-logs"></a>Günlükleri okuyun
 
-Günlüklere baktığınızda, `<characteristic-error>` etiketini her gördüğünüzde bir hata vardır. Hata ayrıntıları `desc` özelliğine > `<parm-error>` etiketine yazılır.
+Günlüklere baktığınızda, `<characteristic-error>` etiketi gördüğünüz zaman bir hata oluştu. Hata ayrıntıları `desc` özelliğine > `<parm-error>` etiketine yazılır.
 
 ## <a name="error-types"></a>Hata türleri
 
@@ -113,7 +113,7 @@ Başka bir örnekte, aşağıdaki girişe sahipsiniz:
 </wap-provisioningdoc>
 ```
 
-Günlük, `<characteristic-error>` etiketi içerdiğinden bir hata gösterir. Bu senaryoda profil, belirtilen yolda mevcut olmayan bir Android paketini (APK) yüklemeye çalıştı:
+Günlük bir `<characteristic-error>` etiketi içerdiğinden bir hata gösterir. Bu senaryoda profil, belirtilen yolda mevcut olmayan bir Android paketini (APK) yüklemeye çalıştı:
 
 ```xml
 <wap-provisioningdoc>

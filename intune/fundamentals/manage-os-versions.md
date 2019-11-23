@@ -66,10 +66,10 @@ Intune uygulama koruma ilkeleri ve mobil uygulama yönetimi (MAM) erişim ayarla
  
 İki farklı seçeneğiniz vardır: 
 - **Uyarı** -uyar, son kullanıcıya, belirtilen sürümün altında işletim sistemi sürümü olan bir cihazda uygulama koruma ILKESI veya mam erişim ayarları içeren bir uygulama açtıklarında yükseltme olmaları gerektiğini bildirir. Uygulama ve kuruluş verileri için erişime izin verilir.
-  ![Android güncelleştirme Uyarısı iletişim kutusu @ no__t-1 
+  Android güncelleştirme Uyarısı iletişim kutusunun ![görüntüsü](./media/manage-os-versions/os-version-update-warning.png) 
 
 - **Block** Block, son kullanıcıya, belirtilen sürümün altında işletim sistemi sürümü olan bir cihazda uygulama koruma ILKESI veya mam erişim ayarları içeren bir uygulama açtıklarında yükseltmeleri gerektiğini bildirir. Uygulama ve kuruluş verileri için erişime izin verilmez.
-  ![ uygulama erişimi engellendi iletişim kutusu @ no__t-1
+  Uygulama erişimi engellendi iletişim kutusunun ![görüntüsü](./media/manage-os-versions/os-version-access-blocked.png)
 
 ### <a name="in-practice"></a>Uygulama
 Günümüzde kuruluşlar, uygulama koruma ilkesi ayarlarını uygulamalar açıldığında veya devam ettirildiğinde, uygulamaları güncel tutmaları konusunda son kullanıcıları eğitmek amacıyla kullanır. Örnek yapılandırma: Son kullanıcıların sürümleri güncel sürümün bir altı olduğunda uyarılır ve güncel sürümün iki altı olduğunda engellenir.

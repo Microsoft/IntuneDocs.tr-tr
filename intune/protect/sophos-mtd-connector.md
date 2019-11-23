@@ -43,25 +43,25 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 ![Algılanan kötü amaçlı uygulamaların kavramsal görüntüsü](./media/sophos-mtd-connector/sophos_malicious_apps_blocked.png)  
 
 **Düzeltmeye erişim izni verildi**:  
-Düzeltme @ no__t-1 ' den sonra izin verilen erişimin ![ ' dan kavramsal görüntüsü
+düzeltmeden sonra erişim izni verilen ![kavramsal görüntüsünü](./media/sophos-mtd-connector/sophos_malicious_apps_unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak erişimi denetleme  
 Ağ ile ilgili tehditleri, ortadaki adam saldırıları gibi algılayın ve cihaz riskine dayalı olarak Wi-Fi ağlarına erişimi koruyun.  
 
 **Wi-Fi üzerinden ağ erişimini engelleyin**:  
-![Wi-Fi @ no__t-1 üzerinden ağ erişimini engelleyin
+![Wi-Fi ile ağ erişimini engelleyin](./media/sophos-mtd-connector/sophos_network_wifi_blocked.png)
 
 **Düzeltmeye erişim izni verildi**:   
-![ düzeltme için @ no__t-1 ile erişim verildi  
+Düzeltme](./media/sophos-mtd-connector/sophos_network_wifi_unblocked.png) ![erişim izni verildi  
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Ağa yönelik tehdide dayalı olarak SharePoint Online’a erişimi denetleme  
 Ağınız için, ortadaki adam saldırıları gibi tehditleri algılayın ve cihaz riskine dayalı olarak kurumsal dosyaların eşitlenmesini önleyin.  
 
 **Ağ tehditleri algılandığında SharePoint Online 'ı engelleyin**:   
-![ ağ tehditleri algılandığında SharePoint Online 'ı engelle @ no__t-1  
+![ağ tehditleri algılandığında SharePoint Online 'ı engelleyin](./media/sophos-mtd-connector/sophos_network_spo_blocked.png)  
 
 **Düzeltmeye erişim izni verildi**:  
-![Erişim SharePoint için düzeltmeye verildi @ no__t-1  
+![erişim SharePoint örneği için düzeltmeye verildi](./media/sophos-mtd-connector/sophos_network_spo_unblocked.png)  
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar  
 - Android 5,0 ve üzeri

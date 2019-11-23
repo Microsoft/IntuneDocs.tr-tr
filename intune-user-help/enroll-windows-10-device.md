@@ -62,7 +62,7 @@ Bu adımlar, Windows 10, sürüm 1607 ve üzeri sürümlerde çalışan bir ciha
 
 7. **Her şey hazırsınız!** ekranını görünce **Bitti**’yi seçin. Cihazınız artık kaydedilmiştir.  
 
-8. Bağlantınızı iki kez kontrol etmek için **ayarlar** > **Hesap** > **erişim iş veya okul**' ye geri dönün.  Hesabınız artık listelenmelidir.  
+8. Bağlantınızı iki kez kontrol etmek için, **ayarlar** > **hesaplara** geri dönün > **iş veya okul erişimine erişin**.  Hesabınız artık listelenmelidir.  
 
 
     ![Bağlantının düzgün biçimde ayarlandığını doğrulama](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
@@ -76,7 +76,7 @@ Bu adımlar, Windows 10, sürüm 1511 ve önceki sürümlerde çalışan bir cih
 
 2. **Ayarlar** uygulamasını açın. Uygulama, uygulamalar listenizde hazır değilse, arama çubuğuna gidin ve "Ayarlar" yazın.
 
-3. Hesabınız **@no__t** **Hesap**' ı seçin.  
+3. **Hesabınız** > **hesaplar** ' ı seçin.  
 
 
     ![Hesabınızı seçme](./media/W10-enroll-2-accounts-your-account.png)  

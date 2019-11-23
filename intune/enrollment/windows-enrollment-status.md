@@ -55,7 +55,7 @@ Ayrıca, her bir profilin öncelik sırasını aynı kullanıcıya yönelik çak
 <tr><td>Yükleme hatası oluşursa kullanıcıların cihazı sıfırlamasına izin ver<td>Yükleme hatası varsa, <b>cihazı Sıfırla</b> düğmesi görüntülenir.<td>Yükleme hatası varsa, <b>cihazı Sıfırla</b> düğmesi gösterilmez.
 <tr><td>Yükleme hatası oluşursa kullanıcıların cihazı kullanmasına izin ver<td>Yükleme hatası varsa <b>yine de devam et</b> düğmesi görüntülenir.<td>Yükleme hatası varsa <b>devam et</b> düğmesi gösterilmez.
 <tr><td>Yükleme belirtilen dakika sayısından daha uzun sürerse zaman aşımı hatası göster<td colspan="2">Yüklemenin tamamlanmasını beklemek için beklenecek dakika sayısını belirtin. Varsayılan 60 dakikalık bir değer girilir.
-<tr><td>Bir hata oluştuğunda özel iletiyi göster<td>Bir yükleme hatası oluşursa görüntülenecek özel bir ileti belirtebileceğiniz bir metin kutusu sağlanır.<td>Varsayılan ileti görüntülenir: <br><b>Yüklemesi, kuruluşunuz tarafından ayarlanan zaman sınırını aştı. Yardım almak için yeniden deneyin veya BT destek sorumlunuza başvurun.<b>
+<tr><td>Bir hata oluştuğunda özel iletiyi göster<td>Bir yükleme hatası oluşursa görüntülenecek özel bir ileti belirtebileceğiniz bir metin kutusu sağlanır.<td>Varsayılan ileti görüntülenir: <br><b>yükleme, kuruluşunuz tarafından ayarlanan zaman sınırını aştı. Yardım almak için yeniden deneyin veya BT destek sorumlunuza başvurun.<b>
 <tr><td>Kullanıcıların yükleme hatalarıyla ilgili günlükleri toplamasına izin ver<td>Yükleme hatası varsa, bir biriktirme <b>günlüğü</b> düğmesi görüntülenir. <br>Kullanıcı bu düğmeye tıkladığında, <b>Mdmdiagreport. cab</b> günlük dosyasını kaydetmek için bir konum seçmesi istenir<td>Yükleme hatası varsa <b>günlükleri topla</b> düğmesi gösterilmez.
 <tr><td>Bu gerekli uygulamalar kullanıcıya/cihaza atanırsa yüklenene kadar cihaz kullanımını engelle<td colspan="2"><b>Tümü</b> veya <b>Seçili</b>öğesini seçin. <br><br><b>Seçili</b> seçilirse, cihazı etkinleştirmeden önce hangi uygulamaların yüklü olması gerektiğini seçmenize olanak sağlayan bir <b>uygulamalar seçin</b> düğmesi görüntülenir.
 </table>
@@ -93,9 +93,9 @@ Kullanıcının masaüstüne erişebilmesi için yüklenmesi gereken uygulamalar
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows kaydı** > **kayıt durumu sayfası** > **cihaz kaydı** ' nı seçin.
 2. Bir profil seçip **Ayarlar**'a tıklayın.
 3. **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**'i seçin.
-4. **Tüm uygulamalar ve profiller yüklenene kadar cihaz kullanımını engelle** için **Evet**'i seçin.
+4. Seçin **Evet** için **tüm uygulamalar ve Profiller yüklenene kadar cihaz kullanımını engelle**.
 5. **Bu gerekli uygulamalar kullanıcıya/cihaza atanırsa, bu uygulamaların yüklenmesi Için seçili cihaz kullanımını engelle**' yi seçin.
-6. **Uygulama seç**'e tıklayın, uygulamaları seçin ve **Seç** > **Kaydet** yolunu izleyin.
+6. Seçin **uygulamaları Seç** > uygulamalar'ı seçin > **seçin** > **Kaydet**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Kayıt durumu sayfası izleme bilgileri
 
@@ -134,7 +134,7 @@ Hesap kurulumu için, kayıt durumu sayfası şu anda oturum açmış olan kulla
   - Tüm Kullanıcılar veya cihazı kaydeden kullanıcının üyesi olduğu bir kullanıcı grubuna atanan makine başına LoB MSI uygulamaları.
   - Aşağıdaki nesnelerden birine atanan LoB Mağazası uygulamaları, çevrimiçi mağaza uygulamaları ve çevrimdışı mağaza uygulamaları:
     - Tüm Cihazlar
-    - All Users
+    - Tüm Kullanıcılar
     - Cihazı kaydeden Kullanıcı grubu, yükleme bağlamı Kullanıcı olarak ayarlanan bir üyedir.
   - Win32 uygulamaları (yalnızca Windows 10 sürüm 1903 ve üzeri) 
 - Bağlantı profilleri
@@ -198,7 +198,7 @@ Aşağıda bilinen sorunlar verilmiştir.
     - Cihaz kurulum aşamasından hesap kurulum aşamasına geçmeden önce kullanıcının kimlik bilgilerini tekrar girmesi gerekir
 - ESP uzun bir süre takılmış veya "tanımlama" aşamasını hiçbir zaman tamamlıyor. Intune, tanımlama aşamasında ESP ilkelerini hesaplar. Geçerli kullanıcıya bir Intune lisansı atanmış değilse bir cihaz, ESP ilkelerini hesaplama hiçbir şekilde tamamlanmayabilir.  
 - Microsoft Defender uygulama denetimi 'nin yapılandırılması, Autopilot sırasında yeniden başlatma istemi oluşmasına neden olur. Microsoft Defender uygulamasının (AppLocker CSP) yapılandırılması için yeniden başlatma gerekir. Bu ilke yapılandırıldığında, Autopilot sırasında cihazın yeniden başlatılmasına neden olabilir. Şu anda, yeniden başlatmayı bastırmayı veya ertelemeyi yapmanın bir yolu yoktur.
-- DeviceLock ilkesi (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), bir ESP profilinin bir parçası olarak etkinleştirildiğinde, iki nedenden dolayı OOBE veya Kullanıcı masaüstü oturum açma hatası unexpectantly başarısız olabilir.
+- DeviceLock ilkesi (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), bir ESP profilinin bir parçası olarak etkinleştirildiğinde, iki nedenden dolayı OOBE veya Kullanıcı masaüstü oturum açma işlemi unexpectantly başarısız olabilir.
   - Cihaz, ESP cihaz kurulum aşamasından çıkmadan önce yeniden başlatmadıysanız, kullanıcıdan Azure AD kimlik bilgilerini girmesi istenebilir. Bu istem, kullanıcının Windows ilk oturum açma animasyonunu gördüğü başarılı bir otomatik oturum açma yerine oluşur.
   - Kullanıcı Azure AD kimlik bilgilerini girdikten sonra, ancak ESP cihaz kurulum aşamasından çıkmadan önce, bir cihaz yeniden başlatıldığında, oto logn başarısız olur. Bu hata, ESP cihaz Kurulum aşaması hiç tamamlanmadığından oluşur. Geçici çözüm, cihazı sıfırlamadır.
 

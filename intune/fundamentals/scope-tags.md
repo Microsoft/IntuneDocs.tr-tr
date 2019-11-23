@@ -43,27 +43,27 @@ Varsayılan kapsam etiketi özelliği, System Center Configuration Manager güve
 
 ## <a name="to-create-a-scope-tag"></a>Kapsam etiketi oluşturmak için
 
-1. Intune 'da **, @no__t-** 1**kapsam (Etiketler)**  > **Oluştur**' u seçin.
+1. Intune ' da, **rol** > **kapsam (Etiketler)**  > **Oluştur**' u seçin.
 
     ![Kapsam etiketi oluşturma ekranının ekran görüntüsü.](./media/scope-tags/create-scope-tag.png)
 
 3. Belirli gruplardaki tüm cihazları istiyorsanız, **seçili gruplardaki tüm cihazlara kapsam etiketi ata**' yı seçin.
     1. **Dahil edilecek grupları seçin** sayfasında, bu kapsam etiketini atamak istediğiniz cihazları içeren grupları seçin.
-    2. **Seçin** öğesini belirleyin.
+    2. **Seç**’i seçin.
 4. **Oluştur**’u seçin.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Kapsam etiketini bir role atamak için
 
-1. Intune 'da, 1. @no__t **Roller**' i seçin >**tüm roller** ' i seçin  > **ata**> **atamaları**seçin.
+1. Intune 'da **tüm roller** > **Roller** ' i seçin > bir rol > **atamalar** > **ata**' yı seçin.
 
     ![Role kapsam atama ekran görüntüsü.](./media/scope-tags/assign-scope-to-role.png)
 
 2. **Atama adı** ve **açıklaması**sağlayın.
-3. **Üyeler (gruplar)** seçin  > **Ekle** > Bu atamanın parçası olarak istediğiniz grupları seçin >  > **Tamam ' ı** **seçin**. Bu gruptaki kullanıcıların, kapsamdaki kullanıcıları/cihazları yönetme izinleri olacaktır (gruplar).
+3. **Eklemek** > **Üyeler (gruplar)** seçin > Bu atamanın bir parçası olarak istediğiniz grupları seçin > > **Tamam ' ı** **seçin** . Bu gruptaki kullanıcıların, kapsamdaki kullanıcıları/cihazları yönetme izinleri olacaktır (gruplar).
 
     ![Üye gruplarının Seç ekran görüntüsü.](./media/scope-tags/select-member-groups.png)
 
-4. Belirli bir grup kümesindeki kullanıcıları/cihazları yönetmek istiyorsanız, **kapsam (gruplar)**  > **Seçili gruplar**' ı seçin  > **dahil edilecek grupları seçin** > grupları seçin >  > **Tamam ' ı** **seçin**. Bu gruptaki tüm kullanıcılar/cihazlar, Üyeler (Grup) içindeki Yöneticiler tarafından yönetilecektir.
+4. Belirli bir grup kümesindeki kullanıcıları/cihazları yönetmek istiyorsanız **kapsam (gruplar)**  > **Seçili gruplar** > ' ı seçin.**dahil edilecek grupları seçin** > grupları seçinTamam ' ı >  **seçin**. Bu gruptaki tüm kullanıcılar/cihazlar, Üyeler (Grup) içindeki Yöneticiler tarafından yönetilecektir.
 
     ![Kapsam gruplarının Seç ekran görüntüsü.](./media/scope-tags/select-scope-groups.png)
 
@@ -71,7 +71,7 @@ Varsayılan kapsam etiketi özelliği, System Center Configuration Manager güve
 
     ![Seçim kapsam grupları için diğer seçeneklerin ekran görüntüsü.](./media/scope-tags/scope-group-other-options.png)
     
-5. **Kapsam (Etiketler)** seçin  > **Ekle** > Bu role eklemek istediğiniz etiketleri seçin >  > **Tamam ' ı** **seçin**. Üyeler (gruplar) içindeki kullanıcılar aynı kapsam etiketine sahip olan Intune nesnelerine de erişebilir.
+5. **Kapsam (Etiketler)** seçin > **Ekle** > Bu role eklemek istediğiniz etiketleri seçin > > **Tamam ' ı** **seçin** . Üyeler (gruplar) içindeki kullanıcılar aynı kapsam etiketine sahip olan Intune nesnelerine de erişebilir.
 
     ![Seçim kapsamı etiketlerinin ekran görüntüsü.](./media/scope-tags/select-scope-tags.png)
 
@@ -81,16 +81,16 @@ Varsayılan kapsam etiketi özelliği, System Center Configuration Manager güve
 
 Kapsam etiketlerini destekleyen nesneler için, kapsam etiketleri genellikle **Özellikler**altında görünür. Örneğin, bir yapılandırma profiline bir kapsam etiketi atamak için aşağıdaki adımları izleyin:
 
-1. Intune 'da **cihaz yapılandırma** > **profilleri** ' ni seçin > bir profil seçin.
+1. Intune 'da **cihaz yapılandırma** > **profiller** ' i seçin > bir profil seçin.
 
     ![Profil seçme ekran görüntüsü.](./media/scope-tags/choose-profile.png)
 
-2. **Özellikler** > **kapsam (Etiketler)**  > **Ekle**' yi seçin.
+2. **Ekle** > **kapsam (Etiketler)**  > **Özellikler** ' i seçin.
 
     ![Kapsam etiketleri Ekle ekran görüntüsü.](./media/scope-tags/add-scope-tags.png)
 
 3. **Etiket Seç**' in altında, Profile eklemek istediğiniz etiketleri seçin.
-4. @No__t **Seç**-1**Tamam** > **Kaydet**' i seçin.
+4.  > Tamam ' **ı** seçin > **Kaydet**' **i** seçin.
 
 
 ## <a name="scope-tag-details"></a>Kapsam etiketi ayrıntıları

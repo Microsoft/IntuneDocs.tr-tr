@@ -67,8 +67,8 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
 
   İzin verilen Pano içeriğini seçin.  
   - **Yapılandırılmadı**  
-  - **Metinleri**  
-  - **Yansımasını**  
+  - **Metin**  
+  - **Görüntüler**  
   - **Metin ve görüntüler**  
 
 - **Kurumsal sitelerdeki dış içerik**  
@@ -88,7 +88,7 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
   Yazdırmaya *izin* aldığınızda, aşağıdaki ayarı yapılandırabilirsiniz:
   - **Yazdırma türleri** Aşağıdaki seçeneklerden birini veya daha fazlasını seçin:  
     - BELGESINI  
-    - DO  
+    - XPS  
     - Yerel yazıcılar
     - Ağ yazıcıları  
 
@@ -390,7 +390,7 @@ Bu kuralın uygulandığı yerel ve uzak adresleri belirtin.
 #### <a name="port-and-protocol-settings"></a>Bağlantı noktası ve protokol ayarları  
 Bu kuralın uygulandığı yerel ve uzak bağlantı noktalarını belirtin.  
 
-- **Protocol**  
+- **Protokolü**  
   **Varsayılan**: any  
   Güvenlik Duvarı CSP: [FirewallRules/*Firewallrulename*/Protocol](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#protocol)  
   Aşağıdakilerden birini seçin ve gerekli tüm konfigürasyonları doldurun:  
@@ -642,7 +642,7 @@ Bu ayarlar, belirli işletim sistemi veri sürücüleri için geçerlidir.
     
     Bu ayar, bir işletim sistemi sürücü kurtarmasından sonra (Bootmgr veya WinRE kullanarak) istemci tabanlı bir kurtarma parolası dönüşü başlatır.  
 
-    - Yapılandırılmadı  
+    - Yapılandırılmamış  
     - Anahtar döndürme devre dışı  
     - Azure AD 'ye katılmış ana için anahtar döndürme etkinleştirildi  
     - Azure AD ve Hibriya katılmış cihazlar için anahtar döndürme etkinleştirildi  
@@ -739,7 +739,7 @@ Bu ayarlar özellikle sabit veri sürücülerine uygulanır.
     
     Bu ayar, bir işletim sistemi sürücü kurtarmasından sonra (Bootmgr veya WinRE kullanarak) istemci tabanlı bir kurtarma parolası dönüşü başlatır.  
 
-    - Yapılandırılmadı  
+    - Yapılandırılmamış  
     - Anahtar döndürme devre dışı  
     - Azure AD 'ye katılmış ana için anahtar döndürme etkinleştirildi  
     - Azure AD ve Hibriya katılmış cihazlar için anahtar döndürme etkinleştirildi  
@@ -939,7 +939,7 @@ Fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden [değerli 
   Dosya ve klasörleri kötü amaçlı uygulamaların yetkisiz değişikliklerinden korur.  
 
   - **Yapılandırılmadı**  
-  - **Etkinleştirebilir**  
+  - **Etkinleştir**  
   - **Yalnızca denetim**  
   - **Disk değişikliğini engelle**  
   - **Disk değişikliğini denetleme**  
@@ -1211,7 +1211,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
    - **Engelle** -yalnızca boş parolalara sahip yerel hesapların cihazın klavyesini kullanarak oturum açmasını sağlar.  
    - **Yapılandırılmadı** -boş parolalara sahip yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasını sağlar.  
 
-#### <a name="admin"></a>Yönetim  
+#### <a name="admin"></a>Yönetici  
 
 - **Yerel yönetici hesabı**  
   **Varsayılan**: yapılandırılmadı  
@@ -1403,7 +1403,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
   
   Bu güvenlik ayarı, bir sunucunun 128 bitlik şifreleme ve/veya NTLMv2 oturum güvenliği için anlaşma sağlamasına izin verir.  
 
-  - **Yok.**  
+  - **Yok**  
   - **NTLMv2 oturum güvenliği gerektir**  
   - **128 bit şifreleme gerektir**  
   - **Ntlmv2'yi ve 128 bit şifreleme**  
@@ -1414,7 +1414,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 
   Bu güvenlik ayarı, ağ oturum açmaları için hangi sınama/yanıt kimlik doğrulama protokolünün kullanıldığını belirler.  
 
-  - **Yok.**  
+  - **Yok**  
   - **NTLMv2 oturum güvenliği gerektir**  
   - **128 bit şifreleme gerektir**  
   - **Ntlmv2'yi ve 128 bit şifreleme**  

@@ -1,5 +1,5 @@
 ---
-title: Azure 'da eski Intune PC istemcisi ve Intune
+title: Eski Intune PC istemcisi ve azure'da Intune
 description: Azure'de Intune'u kuruluşunuzdaki Windows cihazlarını yönetmek için kullanırken dikkat edilecek hususlar.
 keywords: ''
 author: ErikjeMS
@@ -23,9 +23,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72510180"
 ---
-# <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure konsolu ve eski Intune PC istemcisinde Intune
+# <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune Azure konsolu ve eski Intune PC istemcisi
 
-Intune, Azure tabanlı SaaS uygulama hizmeti mimarisini kullanır. Azure, ölçek, kapasite ve performans açısından önemli gelişmeler sağlar. Bu, Azure portal gelişmiş Intune yönetim deneyimleri ve iyileştirilmiş iş akışları sunar. 
+Intune, bir Azure tabanlı SaaS uygulama hizmeti mimarisi kullanır. Azure, ölçek, kapasite ve performans açısından önemli gelişmeler sağlar. Bu, Gelişmiş Intune yönetim deneyimleri ve iyileştirilmiş Azure portalında iş akışları sağlar. 
 
 Kuruluşunuzun Windows aygıtlarını yönetmek için Azure'de Intune kullanırken, aşağıdaki noktaları göz önünde bulundurun:
 
@@ -63,7 +63,7 @@ PC İstemcisi ve MDM özellikleri arasında ayrıntılı bir karşılaştırma i
 Intune PC İstemcisi ile Windows 10 cihazlarını yönetmekten MDM ile yönetime geçiş yapmak için şu adımları izleyin:
 
 1. Silverlight konsolunda, cihazın kaydını PC İstemcisi'nden kaldırmak için bir **Seçmeli silme** gerçekleştirin.
-  ' cihaz seçmeli olarak sil ' radyo düğmesi seçili @ no__t-1 ' i ![Warning açılır penceresi
+  ' cihazı seçmeli olarak sil ' radyo düğmesi seçili olan ![uyarı açılır penceresi](./media/intune-legacy-pc-client/image02.png)
 2. [MDM (ve/veya Azure AD Join)](../enrollment/windows-enroll.md)'i kullanarak cihazı yeniden kaydedin.
 
 ## <a name="next-steps"></a>Sonraki adımlar

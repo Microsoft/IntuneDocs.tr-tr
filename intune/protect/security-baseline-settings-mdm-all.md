@@ -156,8 +156,8 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-BitLocker](https://docs.
   Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücü ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
  
   Bit dolabı sabit sürücü ilkesi için aşağıdaki ayarları yapılandırın: 
-  - **Şifreleme yöntemi**
-    **varsayılan**: AES 256bit XTS  
+  - **Şifreleme yöntemi** **varsayılan**
+    : AES 256bit XTS  
 
 - **Bit dolabı sistem sürücüsü ilkesi**  
   Bu ilke ayarı, şifreleme yöntemini ve şifre gücünü denetlemek için kullanılır. Bu ilkenin değerleri BitLocker 'ın şifreleme için kullandığı şifre gücünü belirlemektir. Kuruluşlar, artırılmış güvenlik için şifreleme düzeyini denetlemek isteyebilir (AES-256, AES-128 ' den daha güçlüdür). Bu ayarı etkinleştirirseniz, sabit veri sürücüleri, işletim sistemi sürücüleri ve çıkarılabilir veri sürücüleri için şifreleme algoritması ve anahtar şifreleme gücü ayrı ayrı yapılandırabilirsiniz. Sabit ve işletim sistemi sürücüleri için, XTS-AES algoritmasını kullanmanızı öneririz. Sürücü, Windows 10, sürüm 1511 veya üzerini çalıştırmayan diğer cihazlarda kullanılıyorsa, çıkarılabilir sürücüler için AES-CBC 128-bit veya AES-CBC 256-bit ' i kullanmanız gerekir. Sürücü zaten şifrelendiyse veya şifreleme devam ediyorsa şifreleme yönteminin değiştirilmesi etkisizdir. Bu durumlarda, bu ilke ayarı yok sayılır.  
@@ -168,7 +168,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-BitLocker](https://docs.
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-## <a name="browser"></a>Tarayıcı  
+## <a name="browser"></a>Browser  
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) bölümüne bakın.  
 
 - **Microsoft Edge için SmartScreen gerektir**  
@@ -201,7 +201,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Browser](https://docs.mi
   
   **Varsayılan**: Evet  
 
-## <a name="connectivity"></a>Bilirlik  
+## <a name="connectivity"></a>Bağlantı  
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-bağlantı](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) bölümüne bakın.  
 
 - **Web yayımı ve çevrimiçi sipariş sihirbazları için Internet 'ten indirmeyi engelleyin**  
@@ -284,7 +284,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-DeviceGuard](https://doc
   
   **Varsayılan**: Evet  
 
-- **System guard @no__t başlatın**-1  
+- **System guard   Başlat**  
   **Varsayılan**: etkin  
 
 ## <a name="device-installation"></a>Cihaz yüklemesi  
@@ -343,7 +343,7 @@ Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-DeviceLock](https://do
   *Parola ıste* *Evet*olarak ayarlandığında aşağıdaki ayarlar kullanılabilir.
 
   - **Parola en az karakter kümesi sayısı**  
-    Güçlü bir PIN veya parola için gereken karmaşık öğe türleri sayısı (büyük ve küçük harfler, rakamlar ve noktalama işaretleri). PIN masaüstü ve mobil cihazlar için aşağıdaki davranışı zorlar: 1-yalnızca basamak 2 rakamları ve küçük harflerin 3 basamaklı, küçük harflerin ve büyük harflerin olması gerekir. Masaüstü Microsoft hesaplarında ve etki alanı hesaplarında desteklenmez. 4 basamaklı, küçük harfler, büyük harfler ve özel karakterler gereklidir. Masaüstünde desteklenmez. Varsayılan değer 1 ' dir.  
+    Güçlü bir PIN veya parola için gereken karmaşık öğe türleri sayısı (büyük ve küçük harfler, rakamlar ve noktalama işaretleri). PIN masaüstü ve mobil cihazlar için aşağıdaki davranışı zorlar: 1-yalnızca basamak 2 rakamları ve küçük harflerin 3 basamaklı, küçük harflerin ve büyük harflerin olması gerekir. Masaüstü Microsoft hesaplarında ve etki alanı hesaplarında desteklenmez. 4 basamaklı, küçük harfler, büyük harfler ve özel karakterler gereklidir. Masaüstünde desteklenmez. Varsayılan değer 1’dir.  
     [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067055)  
     
     **Varsayılan**: 3  
@@ -932,13 +932,13 @@ Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-ınternebir](https:
   
   **Varsayılan**: devre dışı  
   
-- **Internet Explorer kilitli yasak bölge Java izinlerini**   
+- **Internet Explorer kısıtlı bölge Java izinlerini kilitli**   
   Bu ilke ayarı, Java uygulamaları için izinleri yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, açılan kutudan Seçenekler ' i seçebilirsiniz. Özel, izin ayarlarını tek tek denetlemek için. Düşük güvenlik, uygulamaların tüm işlemleri gerçekleştirmesini sağlar. Orta düzey güvenlik, uygulamaların korumalı alanları üzerinde (programın çağrı yapamasının dışında bir alan) ve boş alan (istemci bilgisayardaki güvenli ve güvenli bir depolama alanı) ve kullanıcı denetimli dosya g/ç gibi yetenekler üzerinde çalışmasına imkan sağlar. Yüksek güvenlik, uygulamaların kendi korumalı kuruluşlarının çalışmasına olanak sağlar. Tüm uygulamaların çalıştırılmasını engellemek için Java 'Yı devre dışı bırakın. Bu ilke ayarını devre dışı bırakırsanız, Java uygulamaları çalıştırılamaz. Bu ilke ayarını yapılandırmazsanız Java uygulamaları devre dışı bırakılır.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067181)  
   
   **Varsayılan**: Java 'yı devre dışı bırak 
   
-- **Internet Explorer Internet bölgesi yalnızca onaylanan etki alanlarının ActiveX denetimlerini kullanmasına izin veriyor**   
+- **Internet Explorer Internet bölgesi yalnızca onaylanan etki alanlarının ActiveX denetimlerini kullanmasına izin verir**   
   Bu ilke ayarı, kullanıcıdan ActiveX denetimini yükleyen web sitesi dışındaki web sitelerinde ActiveX denetimlerinin çalışmasına izin istenip istenmeyeceğini denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki Web sitelerinden ActiveX denetimleri çalıştırılmadan önce kullanıcıya sorulur. Kullanıcı, denetimin geçerli siteden veya tüm sitelerden çalışmasına izin vermeyi seçebilir. Bu ilke ayarını devre dışı bırakırsanız, Kullanıcı site başına ActiveX istemi 'ni görmez ve ActiveX denetimleri bu bölgedeki tüm sitelerden çalıştırılabilir.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067091)  
   
@@ -962,7 +962,7 @@ Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-ınternebir](https:
   
   **Varsayılan**: devre dışı 
   
-- **Internet Explorer kilitli yasak bölge akıllı ekranı**   
+- **Internet Explorer kilitli, kısıtlı bölge akıllı ekranını**   
   Bu ilke ayarı, SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler. Bu ilke ayarını etkinleştirirseniz SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içeriğe karşı tarar. Bu ilke ayarını devre dışı bırakırsanız, SmartScreen Filtresi bu bölgedeki sayfaları kötü amaçlı içerik için taramaz. Bu ilke ayarını yapılandırmazsanız kullanıcı SmartScreen Filtresi 'nin bu bölgedeki sayfaları kötü amaçlı içerik için tarayıp taramayacağını seçebilir. Note: Internet Explorer 7 ' de bu ilke ayarı, kimlik avı filtresinin bu bölgedeki sayfaları kötü amaçlı içerik için taramayacağını denetler.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067092)  
   
@@ -1028,7 +1028,7 @@ Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-ınternebir](https:
   
   **Varsayılan**: devre dışı  
   
-- **Internet Explorer Işlemi Active X yüklemesini kısıtla**   
+- **Internet Explorer işlemi, etkin X yüklemesini kısıtlar**   
   Bu ilke ayarı, Web tarayıcısı denetimini barındıran uygulamaların, ActiveX denetimi yüklemesinin otomatik olarak sorulmasını engellemesini sağlar. Bu ilke ayarını etkinleştirirseniz, Web tarayıcısı denetimi tüm işlemlerde ActiveX denetimi yüklemesinin otomatik olarak sorulmasını engeller. Bu ilke ayarını devre dışı bırakır veya yapılandırmazsanız, Web tarayıcısı denetimi tüm işlemlerde ActiveX denetimi yüklemesinin otomatik olarak sorulmasını engellemez.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067250)  
   
@@ -1088,7 +1088,7 @@ Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-ınternebir](https:
   
   **Varsayılan**: Java 'yı devre dışı bırak 
   
-- **Internet Explorer kısıtlı bölgesi, etkin X denetimlerine karşı kötü amaçlı yazılımdan koruma**   
+- **Internet Explorer kısıtlı bölgesi, kötü amaçlı yazılımdan koruma 'Yi etkin X denetimlerine karşı çalıştırmaz**   
   Bu ilke ayarı, Internet Explorer 'ın, sayfalarda güvenli olup olmadığını denetlemek için kötü amaçlı yazılımdan koruma programlarını ActiveX denetimlerine karşı çalıştırmasını belirler. Bu ilke ayarını etkinleştirirseniz, Internet Explorer, ActiveX denetiminin bir örneğini oluşturmanın güvenli olup olmadığını görmek için kötü amaçlı yazılımdan koruma programınızı denetlemez. Bu ilke ayarını devre dışı bırakırsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Bu ilke ayarını yapılandırmazsanız, Internet Explorer, ActiveX denetiminin bir örneğinin oluşturulması için güvenli olup olmadığını görmek üzere her zaman kötü amaçlı yazılımdan koruma programınızı denetler. Kullanıcılar, Internet Explorer güvenlik ayarlarını kullanarak bu davranışı etkinleştirebilir veya devre dışı bırakabilirsiniz.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067089)
   
@@ -1136,7 +1136,7 @@ Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-ınternebir](https:
   
   **Varsayılan**: devre dışı  
   
-- **Internet Explorer Internet bölgesi farklı etki alanlarındaki Windows ve çerçevelere gider**   
+- **Internet Explorer Internet bölgesi farklı etki alanlarındaki pencereler ve çerçevelere gider**   
   Bu ilke ayarı, farklı etki alanlarındaki pencerelerin ve çerçevelerin açılmasını ve uygulama erişimini yönetmenizi sağlar. Bu ilke ayarını etkinleştirirseniz, kullanıcılar diğer etki alanlarından Windows ve çerçeveler açabilir ve diğer etki alanlarından uygulamalara erişebilir. Açılır kutuda sor ' u seçerseniz, kullanıcılar Windows ve çerçevelerin diğer etki alanlarından uygulamalara erişmesine izin verilip verilmeyeceğini belirtir. Bu ilke ayarını devre dışı bırakırsanız, kullanıcılar farklı etki alanlarından uygulamalara erişmek için Windows ve çerçeveler açamaz. Bu ilke ayarını yapılandırmazsanız, kullanıcılar diğer etki alanlarından Windows ve çerçeveler açabilir ve diğer etki alanlarından uygulamalara erişebilir.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067083)  
   
@@ -1154,13 +1154,13 @@ Daha fazla bilgi için bkz. Windows belgelerindeki [Ilke CSP-ınternebir](https:
   
   **Varsayılan**: devre dışı  
   
-- **Internet Explorer işlemi @no__t dosya indirmeyi kısıtlar**-1  
+- **Internet Explorer işlemi dosya indirmeyi kısıtlar**   
   Bu ilke ayarı, Web tarayıcısı denetimini barındıran uygulamaların, Kullanıcı tarafından başlatılmayan dosya indirmelerinin otomatik olarak sorulmasını engellemesini sağlar. Bu ilke ayarını etkinleştirirseniz, Web tarayıcısı denetimi, tüm işlemlerde Kullanıcı tarafından başlatılmayan dosya indirmelerinin otomatik olarak sorulmasını engeller. Bu ilke ayarını devre dışı bırakırsanız, Web tarayıcısı denetimi, tüm işlemlerde Kullanıcı tarafından başlatılmayan dosya indirmelerinin otomatik olarak sorulmasını engellemez.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067164)  
   
   **Varsayılan**: etkin  
   
-- **Internet Explorer kısıtlı bölgesi yalnızca onaylanan etki alanlarının Active X denetimlerini kullanmasına izin veriyor**   
+- **Internet Explorer kısıtlı bölgesi yalnızca onaylanan etki alanlarının Active X denetimlerini kullanmasına izin verir**   
   Bu ilke ayarı, kullanıcıdan ActiveX denetimini yükleyen web sitesi dışındaki web sitelerinde ActiveX denetimlerinin çalışmasına izin istenip istenmeyeceğini denetler. Bu ilke ayarını etkinleştirirseniz, bu bölgedeki Web sitelerinden ActiveX denetimleri çalıştırılmadan önce kullanıcıya sorulur. Kullanıcı, denetimin geçerli siteden veya tüm sitelerden çalışmasına izin vermeyi seçebilir. Bu ilke ayarını devre dışı bırakırsanız, Kullanıcı site başına ActiveX istemi 'ni görmez ve ActiveX denetimleri bu bölgedeki tüm sitelerden çalıştırılabilir.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067233)  
   
@@ -1243,7 +1243,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-LocalPoliciesSecurityOpt
   **Varsayılan**: NTLM V2 ve 128 bit şifrelemeyi gerektir  
   
 - **Ekran koruyucusu etkinleşene kadar kilit ekranının işlem yapılmayan dakika sayısı**  
-  Windows bir oturum açma oturumunun etkinlik dışı olduğunu fark eder ve etkin olmayan sürenin miktarı etkin olmama sınırını aşarsa, ekran koruyucusu çalışır ve oturumu kilitler.  
+  Windows, bir oturumun etkin olmamasını fark eder ve etkin olmama süresi etkin olmama sınırını aşarsa, ekran koruyucusu çalışarak oturumu kilitler.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067210)  
   
   **Varsayılan**: 15
@@ -1526,7 +1526,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-RemoteDesktopServices](h
   **Varsayılan**: etkin
   
 - **Sürücü yeniden yönlendirmeyi engelle**  
-  Bu ilke ayarı, Uzak Masaüstü Hizmetleri oturumunda istemci sürücülerinin eşlenmesinin engellenip engellenmeyeceğini belirtir (sürücü yeniden yönlendirme). Varsayılan olarak, bir RD Oturumu Ana Bilgisayarı sunucusu bağlantı kurulduğunda istemci sürücüleri otomatik olarak eşler. Eşlenen sürücüler *\<> sürücüharfi* *\<computername >* biçimindeki dosya Gezgini veya bilgisayardaki oturum klasörü ağacında görüntülenir. Bu davranışı geçersiz kılmak için bu ilke ayarını kullanabilirsiniz. Bu ilke ayarını etkinleştirirseniz, Uzak Masaüstü Hizmetleri oturumlarında istemci sürücü yönlendirmesine izin verilmez ve Windows Server 2003, Windows 8 ve Windows XP çalıştıran bilgisayarlarda Pano dosya kopyası yeniden yönlendirmesine izin verilmez. Bu ilke ayarını devre dışı bırakırsanız, istemci sürücü yeniden yönlendirmesine her zaman izin verilir. Ayrıca, pano yeniden yönlendirmesine izin veriliyorsa Pano dosya kopyalama yönlendirmesine her zaman izin verilir. Bu ilke ayarını yapılandırmazsanız, istemci sürücü yeniden yönlendirmesi ve Pano dosya kopyalama yönlendirmesi grup ilkesi düzeyinde belirtilmez.  
+  Bu ilke ayarı, Uzak Masaüstü Hizmetleri oturumunda istemci sürücülerinin eşlenmesinin engellenip engellenmeyeceğini belirtir (sürücü yeniden yönlendirme). Varsayılan olarak, bir RD Oturumu Ana Bilgisayarı sunucusu bağlantı kurulduğunda istemci sürücüleri otomatik olarak eşler. Eşlenen sürücüler, *\<computername >* üzerinde *\<SürücüHarfi >* Dosya Gezgini veya bilgisayardaki oturum klasörü ağacında görüntülenir. Bu davranışı geçersiz kılmak için bu ilke ayarını kullanabilirsiniz. Bu ilke ayarını etkinleştirirseniz, Uzak Masaüstü Hizmetleri oturumlarında istemci sürücü yönlendirmesine izin verilmez ve Windows Server 2003, Windows 8 ve Windows XP çalıştıran bilgisayarlarda Pano dosya kopyası yeniden yönlendirmesine izin verilmez. Bu ilke ayarını devre dışı bırakırsanız, istemci sürücü yeniden yönlendirmesine her zaman izin verilir. Ayrıca, pano yeniden yönlendirmesine izin veriliyorsa Pano dosya kopyalama yönlendirmesine her zaman izin verilir. Bu ilke ayarını yapılandırmazsanız, istemci sürücü yeniden yönlendirmesi ve Pano dosya kopyalama yönlendirmesi grup ilkesi düzeyinde belirtilmez.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067197)  
   
   **Varsayılan**: etkin
@@ -1703,7 +1703,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
   **Varsayılan**: engelle
   
 - **Kimlik bilgisi hırsızlığı türünü engelle**  
-  Microsoft Defender Credential Guard, yalnızca ayrıcalıklı sistem yazılımlarının erişebilmesi için gizli dizileri yalıtmak üzere sanallaştırma tabanlı güvenlik kullanır. Bu gizli dizi erişimi, karma değer geçişi veya anahtar geçişi gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Microsoft Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.  
+  Microsoft Defender Credential Guard, yalnızca ayrıcalıklı sistem yazılımlarının erişebilmesi için gizli dizileri yalıtmak üzere sanallaştırma tabanlı güvenlik kullanır. Bu parolalara yetkisiz erişim, Pass-the-Hash veya Pass-The-Ticket gibi kimlik bilgisi hırsızlığı saldırılarına yol açabilir. Microsoft Defender Credential Guard, NTLM parola karmalarını, Kerberos bileti verme biletlerini ve uygulamalar tarafından etki alanı kimlik bilgileri olarak depolanan kimlik bilgilerini koruyarak bu saldırıları engeller.  
   [Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **Varsayılan**: etkinleştir
@@ -1881,7 +1881,7 @@ Daha fazla bilgi için Windows protokolleri belgelerindeki [2.2.2 FW_PROFILE_TYP
 
   **Varsayılan**: Evet
 
-- **İş Için Windows Hello @no__t yapılandırma**-1  
+- **İş Için Windows Hello 'Yu yapılandırma**   
     Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir.  
 
   - *Evet*olarak ayarlandığında, bu ilkeyi etkinleştirir ve cihaz Iş Için Windows Hello 'yu hazırlar.  

@@ -45,7 +45,7 @@ Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Ayr�
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı 
 
 - **IP adresi**: yazıcının IPv4 veya IPv6 adresini girin. Yazıcıları tanımlamak için konak adlarını kullanıyorsanız, Terminal uygulamasındaki yazıcıya ping ekleyerek IP adresini alabilirsiniz. [IP adresini ve yolu al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
-- **Yol**: yazıcının yolunu girin. Yol, ağınızdaki yazıcılar için genellikle `ipp/print` ' dır. [IP adresini ve yolu al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
+- **Yol**: yazıcının yolunu girin. Yol, genellikle ağınızdaki yazıcılar için `ipp/print`. [IP adresini ve yolu al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
 - **Bağlantı noktası** (iOS 11,0 ve üzeri): AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özelliği boş bırakırsanız AirPrint varsayılan bağlantı noktasını kullanır.
 - **TLS** (iOS 11,0 ve üzeri): Aktarım katmanı GÜVENLIĞI (TLS) Ile güvenli AirPrint bağlantıları sağlamak için **Etkinleştir** ' i seçin.
 
@@ -58,7 +58,7 @@ Ayrıca, AirPrint yazıcılarının listesini içeren bir virgülle ayrılmış 
 AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve bağlantı noktası gerekir. Aşağıdaki adımlarda bu bilgilerin nasıl alınacağı gösterilmektedir.
 
 1. AirPrint yazıcıları ile aynı yerel ağa (alt ağ) bağlı bir Mac üzerinde, açık **Terminal** ( **/Applications/Utilities**).
-2. Terminal uygulamasında `ippfind` yazın ve ENTER ' u seçin.
+2. Terminal uygulamasında `ippfind`yazın ve ENTER ' u seçin.
 
     Yazıcı bilgilerini aklınızda edin. Örneğin, `ipp://myprinter.local.:631/ipp/port1`benzer bir işlem döndürebilir. İlk bölüm, yazıcının adıdır. Son Bölüm (`ipp/port1`) kaynak yoludur.
 
@@ -72,7 +72,7 @@ AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve ba�
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri
 
-- **Dosyalar, klasörler ve özel uygulamalar**: bir Kullanıcı cihazda oturum açtığında açmak istediğiniz bir dosya, klasör, özel uygulama veya sistem uygulamasının yolunu **ekleyin** . Kuruluşunuz için oluşturulmuş veya özelleştirilmiş olan sistem uygulamaları veya uygulamalar, genellikle `Applications` klasöründe ve `/Applications/AppName.app` ' e benzer bir yoldur. 
+- **Dosyalar, klasörler ve özel uygulamalar**: bir Kullanıcı cihazda oturum açtığında açmak istediğiniz bir dosya, klasör, özel uygulama veya sistem uygulamasının yolunu **ekleyin** . Kuruluşunuz için oluşturulmuş veya özelleştirilmiş olan sistem uygulamaları veya uygulamalar genellikle `Applications` klasöründedir ve `/Applications/AppName.app`benzer bir yoldur. 
 
   Birçok dosya, klasör ve uygulama ekleyebilirsiniz. Örneğin şunu girin:  
   
@@ -81,7 +81,7 @@ AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve ba�
   - `/Applications/Microsoft Office/root/Office16/winword.exe`
   - `/Users/UserName/music/itunes.app`
   
-  Herhangi bir uygulama, klasör veya dosya eklerken doğru yolu girdiğinizden emin olun. Tüm öğeler `Applications` klasöründe değil. Bir Kullanıcı bir öğeyi bir konumdan diğerine taşıdıysanız yol değişir. Bu taşınan öğe, Kullanıcı oturum açtığında açılmaz.
+  Herhangi bir uygulama, klasör veya dosya eklerken doğru yolu girdiğinizden emin olun. Tüm öğeler `Applications` klasöründedir. Bir Kullanıcı bir öğeyi bir konumdan diğerine taşıdıysanız yol değişir. Bu taşınan öğe, Kullanıcı oturum açtığında açılmaz.
 
 ## <a name="login-window"></a>Oturum açma penceresi
 
@@ -107,7 +107,7 @@ AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve ba�
 - **Yeniden Başlat düğmesi**: **Gizle** , oturum açma ekranında yeniden Başlat düğmesini göstermez. **Yapılandırılmadı** (varsayılan) yeniden Başlat düğmesini gösterir.
 - **Uyku düğmesi**: **Gizle** , oturum açma ekranında uyku düğmesini göstermez. **Yapılandırılmadı** (varsayılan) uyku düğmesini gösterir.
 
-#### <a name="other"></a>farklı
+#### <a name="other"></a>Diğer
 
 - **Konsoldan Kullanıcı oturumunu devre dışı bırak**: **devre dışı bırak** , oturum açmak için kullanılan MacOS komut satırını gizler. Tipik kullanıcılar için bu ayarı **devre dışı bırakın** . **Yapılandırılmadı** (varsayılan), gelişmiş kullanıcıların MacOS komut satırını kullanarak oturum açmasına izin verir. Konsol modunu girmek için, kullanıcılar Kullanıcı adı alanına `>console` girer ve konsol penceresinde kimlik doğrulaması yapılmalıdır.
 
@@ -138,7 +138,7 @@ Bu özellik şu platformlarda geçerlidir:
   > [!TIP]
   > **Kimlik bilgisi** türü ile, uzantısından geçirilecek kendi yapılandırma değerlerinizi eklersiniz. Bunun yerine, **Kerberos** türünde Apple tarafından sunulan yerleşik yapılandırma ayarlarını kullanmayı göz önünde bulundurun.
 
-- **UZANTı kimliği** (yalnızca kimlik bilgileri): `com.apple.ssoexample` gibi SSO uygulama uzantınızı tanımlayan paket tanımlayıcısını girin.
+- **UZANTı kimliği** (yalnızca kimlik bilgileri): `com.apple.ssoexample`gibi SSO uygulama uzantınızı tanımlayan paket tanımlayıcısını girin.
 - **Takım Kimliği** (yalnızca kimlik bilgileri): SSO uygulama uzantınızın ekip tanımlayıcısını girin. Takım tanımlayıcısı, Apple tarafından oluşturulan `ABCDE12345`gibi 10 karakterlik alfasayısal bir dizedir (sayılar ve harfler). 
 
   [Takım kimliğinizi bulun](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 'ın Web sitesini açar) daha fazla bilgi içerir.
@@ -200,15 +200,15 @@ Bu özellik şu platformlarda geçerlidir:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri
 
-- **Uygulama kimliği**: bir Web sitesiyle ilişkilendirilecek uygulamanın uygulama tanımlayıcısını girin. Uygulama tanımlayıcısı, takım KIMLIĞI ve bir paket KIMLIĞI içerir: `TeamID.BundleID`.
+- **Uygulama kimliği**: bir Web sitesiyle ilişkilendirilecek uygulamanın uygulama tanımlayıcısını girin. Uygulama tanımlayıcısı, takım KIMLIĞINI ve paket KIMLIĞINI içerir: `TeamID.BundleID`.
 
-  Takım KIMLIĞI, `ABCDE12345` gibi, uygulama geliştiricileriniz için Apple tarafından oluşturulan 10 karakterlik alfasayısal bir dizedir (harfler ve rakamlar). [Takım kimliğinizi bulun](https://help.apple.com/developer-account/#/dev55c3c710c)  (Apple 'ın Web sitesini açar) daha fazla bilgi içerir.
+  Takım KIMLIĞI, uygulama geliştiricileriniz için `ABCDE12345`gibi Apple tarafından oluşturulan 10 karakterlik alfasayısal bir dizedir (harfler ve rakamlar). [Takım kimliği bulun](https://help.apple.com/developer-account/#/dev55c3c710c) (Apple 'ın Web sitesini açar) daha fazla bilgi içerir.
 
-  Paket KIMLIĞI, uygulamayı benzersiz şekilde tanımlar ve genellikle ters etki alanı adı gösteriminde biçimlendirilir. Örneğin, Finder 'ın paket KIMLIĞI `com.apple.finder` ' dır. Paket KIMLIĞINI bulmak için terminalde AppleScript kullanın:
+  Paket KIMLIĞI, uygulamayı benzersiz şekilde tanımlar ve genellikle ters etki alanı adı gösteriminde biçimlendirilir. Örneğin, Finder 'ın paket KIMLIĞI `com.apple.finder`. Paket KIMLIĞINI bulmak için terminalde AppleScript kullanın:
 
   `osascript -e 'id of app "ExampleApp"'`
 
-- **Etki alanı**: bir uygulamayla ilişkilendirilecek Web sitesi etki alanını girin. Etki alanı bir hizmet türü ve `webcredentials:www.contoso.com` gibi tam konak adı içerir.
+- **Etki alanı**: bir uygulamayla ilişkilendirilecek Web sitesi etki alanını girin. Etki alanı, `webcredentials:www.contoso.com`gibi bir hizmet türü ve tam konak adı içerir.
 
   Etki alanının başlangıcından önce `*.` (bir yıldız joker karakteri ve bir nokta) girerek ilişkili bir etki alanının tüm alt etki alanlarını eşleştirebilirsiniz. Süre gereklidir. Tam etki alanları joker etki alanlarından daha yüksek önceliğe sahiptir. Bu nedenle, tam alt etki *alanında bir eşleşme* bulunmazsa üst etki alanlarından desenler eşleştirilir.
 
@@ -221,7 +221,7 @@ Bu özellik şu platformlarda geçerlidir:
 - **Ekle**: uygulamalarınızı ve ilişkili etki alanlarınızı eklemek için seçin.
 
 > [!TIP]
-> MacOS cihazınızda sorun gidermek için **sistem tercihleri** > **profilleri**' ni açın. Oluşturduğunuz profilin cihaz profilleri listesinde olduğunu onaylayın. Listeleniyorsa, **Ilişkili etki alanı yapılandırmasının** profilde olduğundan emin olun ve doğru uygulama kimliği ve etki alanlarını içerir.
+> MacOS cihazınızda sorun gidermek için, **sistem tercihleri** > **profiller**' i açın. Oluşturduğunuz profilin cihaz profilleri listesinde olduğunu onaylayın. Listeleniyorsa, **Ilişkili etki alanı yapılandırmasının** profilde olduğundan emin olun ve doğru uygulama kimliği ve etki alanlarını içerir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

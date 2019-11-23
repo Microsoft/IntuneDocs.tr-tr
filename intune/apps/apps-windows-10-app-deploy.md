@@ -52,7 +52,7 @@ Iş uygulamaları için Microsoft Store, Microsoft Store for Business yönetici 
 Iş uygulamalarına yönelik Microsoft Store kategorilere ayırmak için: 
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **İstemci uygulamaları** > **uygulamalar**' ı seçin. Iş için bir Microsoft Store seçin. Ardından @no__t **uygulama bilgileri**-1**kategorisini**seçin. 
+2. **İstemci uygulamaları** > **uygulamalar**' ı seçin. Iş için bir Microsoft Store seçin. Ardından > **uygulama bilgileri** **kategorisini**seçin. 
 3. Bir kategori seçin.
 
 ## <a name="install-apps-on-windows-10-devices"></a>Windows 10 cihazlarına uygulama yüklemesi

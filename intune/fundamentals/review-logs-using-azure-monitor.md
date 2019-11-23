@@ -95,7 +95,7 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz yere bağlı olarak, a
       > [!NOTE]
       > İşletimsel Günlükler önizlemededir. İşletimsel günlüklerde bilgi dahil olmak üzere geri bildirim sağlamak için [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback)'a gidin.
 
-    - **Günlük** > **Devicekarmaşıkla org**: cihaz uyumluluğu kurumsal günlükleri (Önizleme) Intune 'da cihaz uyumluluğu ve uyumlu olmayan cihazların ayrıntıları için kuruluş raporunu gösterir. Uyumluluk günlüklerini depolama hesabınıza, Olay Hub 'ına veya Log Analytics 'e göndermek için bu seçeneği belirleyin.
+    - **Günlük** > **Devicekarmaşıkanceorg**: cihaz uyumluluğu kurumsal günlükleri (Önizleme) Intune 'da cihaz uyumluluğu ve uyumlu olmayan cihazların ayrıntıları için kuruluş raporunu gösterir. Uyumluluk günlüklerini depolama hesabınıza, Olay Hub 'ına veya Log Analytics 'e göndermek için bu seçeneği belirleyin.
 
       Bir depolama hesabı kullanmayı seçerseniz, verileri (bekletme) kaç gün tutmak istediğinizi de girin. Verileri süresiz olarak tutmak için, **bekletme (gün)** değerini `0` (sıfır) olarak ayarlayın.
  
@@ -115,13 +115,13 @@ Ayrıca, kayıt, uyumluluk, yapılandırma, cihazlar, istemci uygulamaları ve d
 Örneğin, cihaz uyumluluğunu kullanırken denetim günlüklerini dışarı aktarmak için:
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz uyumluluk**@no__t seçin-1**izleyici** > **Denetim günlükleri**:
+2. **Cihaz uyumluluğu** > **izleme** > **Denetim günlüklerini**seçin:
 
     ![Intune verilerini Azure Izleyici depolama, Olay Hub 'ları veya analiz 'e yönlendirmek için Denetim günlüklerini seçin](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
 
 3. **Veri ayarlarını dışarı aktar**' ı seçin. Etkin değilse, **tanılama ayarlarını**açabilirsiniz. Günlükleri [Azure izleyici 'ye gönderme](#send-logs-to-azure-monitor) (Bu makalede) bölümünde açıklandığı gibi günlüklerin nereden gönderileceğini de seçebilirsiniz.
 
-## <a name="cost-considerations"></a>Maliyet konuları
+## <a name="cost-considerations"></a>Maliyetle ilgili konular
 
 Zaten bir Microsoft Intune lisansınız varsa, depolama hesabını ve Olay Hub 'ını ayarlamak için bir Azure aboneliğine sahip olmanız gerekir. Azure aboneliği genellikle ücretsizdir. Ancak, arşiv için depolama hesabı ve akış için Olay Hub 'ı dahil olmak üzere Azure kaynaklarını kullanmak için ödeme yaparsınız. Veri miktarı ve maliyetler, kiracı boyutuna bağlı olarak değişiklik gösterir.
 
@@ -172,7 +172,7 @@ Aşağıdaki tabloda, olay verileri hacmine bağlı olarak Batı ABD bir temel o
 
 | | |
 |---|---|
-|Saniye başına olay|0,1 |
+|Saniye başına olay|0.1 |
 |Beş dakikalık Aralık başına olay sayısı| 52|
 |Aralık başına birim|104 KB |
 |Aralık başına ileti|1 |

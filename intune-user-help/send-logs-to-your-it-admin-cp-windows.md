@@ -46,7 +46,7 @@ Yardım istediğinizde, bir önceden doldurulmuş e-posta açılarak sorunu ayr�
 ## <a name="steps-to-get-help"></a>Yardım almak için gereken adımlar  
 
 1. **Şirket Portalı** uygulamasını açın.
-2. **Yardım & destek**@no__t **-1 ' i seçin**.  
+2. Yardım **& destek** > Yardım **alın**' ı seçin.  
 
    ![Yardım & destek sayfasının ekran görüntüsü, sol gezinti çubuğunu vurgulama ve yardım alma bölümü.](./media/1812_UCP_Help_Support_Get_Help_Logs.png)    
 
