@@ -33,7 +33,7 @@ Kılavuzlu senaryolar, Intune 'un normal iş akışlarından farklı bir yöneti
 
 ## <a name="types-of-guided-scenarios"></a>Kılavuzlu senaryo türleri 
 
-Kolaylık sağlaması için, tüm Kılavuzlu senaryolar <link> kapsam etiketleri, dışlama grupları ve sanal Grup atamaları <link> karmaşık kapsam özelliklerini atlayın. Bir Kılavuzlu senaryo tarafından oluşturulan tüm kaynaklar, senaryoyu tamamlayan yöneticinin her kapsam etiketini miras alır. Belirli senaryolar, yaygın olarak ilgili senaryoları kapsayan ortak ayar için bir özelleştirme düzeyi sunar. Bu senaryolar, Grup atamasını yalnızca gruplara dahil etmek için destekler. Diğer Kılavuzlu senaryolar için, tüm senaryo hiçbir özelleştirme teklifi sunarak tutarlı bir deneyim sağlar ve tüm atamaları alacak şekilde otomatik olarak yeni bir grup oluşturur. Kılavuzlu senaryo tamamlandıktan sonra, varolan ilke, uygulama ve profil iş yükleri aracılığıyla doğrudan daha gelişmiş atamalar kullanabilirsiniz.  
+Kolaylık sağlaması için, tüm Kılavuzlu senaryolar <link>kapsam etiketleri, dışlama grupları ve sanal Grup atamaları <link>karmaşık kapsam özelliklerini atlayın. Bir Kılavuzlu senaryo tarafından oluşturulan tüm kaynaklar, senaryoyu tamamlayan yöneticinin her kapsam etiketini miras alır. Belirli senaryolar, yaygın olarak ilgili senaryoları kapsayan ortak ayar için bir özelleştirme düzeyi sunar. Bu senaryolar, Grup atamasını yalnızca gruplara dahil etmek için destekler. Diğer Kılavuzlu senaryolar için, tüm senaryo hiçbir özelleştirme teklifi sunarak tutarlı bir deneyim sağlar ve tüm atamaları alacak şekilde otomatik olarak yeni bir grup oluşturur. Kılavuzlu senaryo tamamlandıktan sonra, varolan ilke, uygulama ve profil iş yükleri aracılığıyla doğrudan daha gelişmiş atamalar kullanabilirsiniz.  
 
 Aşağıdaki senaryolar Kılavuzlu: 
 - Mobil için Microsoft Edge dağıtma 
@@ -44,7 +44,7 @@ Aşağıdaki senaryolar Kılavuzlu:
 
 Kılavuzlu senaryolar belirli işlevleri sunar. Aşağıdaki ayrıntılar, kılavuzlu bir senaryoyu izleyerek yapabileceklerinizi ve yapamadıklarınızı açıklamaya yardımcı olur.
 
-### <a name="launching"></a>Başlatılıyor  
+### <a name="launching"></a>Başlatma  
 
 Tüm Kılavuzlu senaryolar **[cihaz yönetim portalından](https://devicemanagement.microsoft.com)**  > , **sorun giderme +** **destekli senaryolar** > destek aracılığıyla kullanılabilir. 
 
@@ -60,7 +60,7 @@ Sonraki adım, senaryoyu dağıtmaktır. Bir senaryonun dağıtımı, gerekli t�
 > Kılavuzlu senaryonun sonunda sunulan liste kaydedilmez ve yalnızca Kılavuzlu senaryo açıkken görüntülenebilir.  
 Senaryo dağıtımı sırasında bir hata oluşursa, tüm değişiklikler geri alınacaktır. 
 
-### <a name="editing"></a>Düzenlendiğinde 
+### <a name="editing"></a>Düzenleme 
 
 Kılavuzlu senaryolar mevcut kaynakları düzenlemek için kullanılamaz. Oluşturulduktan sonra tüm kaynaklar, gruplar ve atamalar mevcut iş yükleri kullanılarak düzenlenmelidir.
 
