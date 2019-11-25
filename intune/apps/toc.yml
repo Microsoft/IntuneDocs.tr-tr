@@ -133,6 +133,8 @@
               href: manage-microsoft-edge.md
             - name: Outlook’u yapılandırma
               href: app-configuration-policies-outlook.md
+            - name: Outlook için S/MIME’yi yapılandırma
+              href: app-configuration-policies-outlook-smime.md
             - name: Android için Google Chrome’u yapılandırma
               href: apps-configure-chrome-android.md
         - name: Toplu satın alınan uygulamalar ve kitaplar

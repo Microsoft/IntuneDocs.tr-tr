@@ -205,6 +205,10 @@
           href: use-docs.md
         - name: Destek alma
           href: get-support.md
+    - name: Reports
+      items:
+        - name: Intune raporları
+          href: reports.md
 - name: Başvuru
   items:
     - name: Hata kodları ve açıklamaları
