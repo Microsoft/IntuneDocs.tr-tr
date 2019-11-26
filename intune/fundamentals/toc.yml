@@ -16,6 +16,8 @@
           href: whats-new-app-ui.md
         - name: Geliştirme aşamasındaki özellikler
           href: in-development.md
+        - name: Önemli bildirimler
+          href: 'whats-new.md#notices'
 - name: Hızlı girişler
   items:
     - name: Intune'u ücretsiz olarak deneyin
