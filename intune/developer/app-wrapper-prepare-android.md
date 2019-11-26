@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8fa63540afa18450f731180da3c2cee729010a65
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490760"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465711"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile Android uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -54,9 +54,10 @@ Aracı çalıştırmadan önce bkz. [Uygulama Sarmalama Aracını çalıştırma
     > [!NOTE]
     > Intune Uygulama Sarmalama Aracı uygulama imzalama için Google'ın v2 ve yakında çıkacak v3 imza düzenlerini desteklemiyor. Intune Uygulama Sarmalama Aracı'nı kullanarak .apk uygulamasını sarmaladıktan sonra, [Google'ın sağladığı Apksigner aracının]( https://developer.android.com/studio/command-line/apksigner) kullanılması önerilir. Bu sayede uygulama son kullanıcıların cihazlarına ulaştığında Android standartları tarafından düzgün başlatılabilir. 
 
-- Seçim Bazen bir uygulama, sarmalama sırasında eklenen Intune MAM SDK sınıfları nedeniyle Dalvik çalıştırılabilir (DEX) boyut sınırına ulaşmayabilir. DEX dosyaları, Android uygulamaları derlemesinin bir parçasıdır. Intune uygulama sarmalama aracı, en düşük API düzeyi 21 veya daha yüksek olan uygulamalar için ( [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)itibariyle), dizin oluşturma sırasında otomatik olarak Dex dosyası taşmasını işler. En iyi API düzeyi < 21 olan uygulamalar için en iyi yöntem, sarmalayıcı `-UseMinAPILevelForNativeMultiDex` bayrağını kullanarak en düşük API düzeyini artırmalıdır. Müşterilerin, uygulamanın en düşük API düzeyini artıramasından dolayı aşağıdaki DEX overflow geçici çözümleri kullanılabilir. Bazı kuruluşlarda bu, uygulamayı (IE. app Build ekibi) derleyen ile çalışmayı gerektirebilir:
-* Uygulamanın birincil DEX dosyasından kullanılmayan sınıf başvurularını ortadan kaldırmak için ProGuard 'ı kullanın.
-* Android Gradle eklentisinin v 3.1.0 veya üstünü kullanan müşteriler için [D8 Dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)'yi devre dışı bırakın.  
+- (Optional) Sometimes an app may hit the Dalvik Executable (DEX) size limit due to the Intune MAM SDK classes that are added during wrapping. DEX dosyaları, Android uygulamaları derlemesinin bir parçasıdır. The Intune App Wrapping Tool automatically handles DEX file overflow during wrapping for apps with a min API level of 21 or higher (as of [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). For apps with a min API level of < 21, best practice would be to increase the min API level using the wrapper's `-UseMinAPILevelForNativeMultiDex` flag. For customers unable to increase the app’s minimum API level, the following DEX overflow workarounds are available. In certain organizations, this may require working with whoever compiles the app (ie. the app build team):
+
+  - Use ProGuard to eliminate unused class references from the app’s primary DEX file.
+  - For customers using v3.1.0 or higher of the Android Gradle plugin, disable the [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracını yükleme
 
@@ -94,7 +95,7 @@ Aracı yüklediğiniz klasörü not edin. Varsayılan konum: C:\Program Files (x
 |**-KeyAlias**&lt;Dize&gt;|İmzalama için kullanılacak anahtarın adı.| |
 |**-KeyPassword**&lt;GüvenliDize&gt;|İmzalama için kullanılan özel anahtarın şifresini çözmek için kullanılan parola.| |
 |**-SigAlg**&lt;GüvenliDize&gt;| (İsteğe bağlı) İmzalama için kullanan imza algoritmasının adı. Algoritma, özel anahtar ile uyumlu olmalıdır.|Örnekler: SHA256withRSA, SHA1withRSA|
-|**-UseMinAPILevelForNativeMultiDex**| Seçim Kaynak Android uygulamasının en düşük API düzeyini 21 ' e yükseltmek için bu bayrağı kullanın. Bu bayrak, bu uygulamayı kimlerin yükleyebilen ile sınırlı olacağı için onay isteyecek. Kullanıcılar "-Onayla: $false" parametresini PowerShell komutuna ekleyerek onay iletişim kutusunu atlayabilir. Bayrak yalnızca, DEX taşma hataları nedeniyle başarıyla kaydıramayan en az API < 21 olan uygulamalardaki müşteriler tarafından kullanılmalıdır. | |
+|**-UseMinAPILevelForNativeMultiDex**| (Optional) Use this flag to increase the source Android app’s minimum API level to 21. This flag will prompt for confirmation as it will limit who may install this app. Users can skip the confirmation dialog by appending the parameter “-Confirm:$false” to their PowerShell command. The flag should only be used by customers on apps with min API < 21 that fail to wrap successfully due to DEX overflow errors. | |
 | **&lt;CommonParameters&gt;** | (İsteğe bağlı) Komut, ayrıntılı ve hata ayıklama gibi ortak PowerShell parametrelerini destekler. |
 
 
