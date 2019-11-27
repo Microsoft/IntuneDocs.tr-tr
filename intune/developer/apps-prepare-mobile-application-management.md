@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635330"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547697"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -52,7 +52,7 @@ Intune’a kayıtlı olmayan cihazlarda uygulama koruma ilkeleri uygulamak için
 |**Uygulama Sarmalama Aracı** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**Android** |Evet|Evet|
-|**Android**|Hayır - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Evet|
+|**Outlook Web Access (OWA)**|Hayır - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Evet|
 
 ## <a name="intune-app-sdk"></a>Intune Uygulama SDK'sı
 
@@ -74,7 +74,7 @@ SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](app-sdk.md). S
 |**Intune Uygulama SDK'sı** |**Xamarin** |**Cordova**
 |------|----|----|
 |**Android**|Evet – [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
-|**Android**| Evet - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
+|**Outlook Web Access (OWA)**| Evet - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
 
 ### <a name="not-using-an-app-development-platform-listed-above"></a>Yukarıda listelenen bir uygulama geliştirme platformu kullanmıyor musunuz?
 
@@ -82,10 +82,7 @@ Intune SDK geliştirme ekibi etkin bir şekilde sınar ve yerel Android, iOS (ob
 
 ## <a name="feature-comparison"></a>Özellik karşılaştırması
 
-Bu tabloda Uygulama SDK'si ve Uygulama Kaydırma Aracı için kullanabileceğiniz ayarlar listelenmektedir.
-
-> [!NOTE]
-> Uygulama Sarmalama Aracı, tek başına Intune veya Configuration Manager ile Intune ile kullanılabilir.
+Bu tabloda Uygulama SDK'si ve Uygulama Sarmalama Aracı için kullanabileceğiniz ayarlar listelenmektedir.
 
 |Özellik|Uygulama SDK'sı|Uygulama Sarmalama Aracı|
 |-----------|---------------------|-----------|

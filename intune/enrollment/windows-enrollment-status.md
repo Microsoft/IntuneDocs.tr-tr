@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059696"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547992"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durumu sayfası ayarlama
  
@@ -64,14 +64,14 @@ Ayrıca, her bir profilin öncelik sırasını aynı kullanıcıya yönelik çak
 
 Kayıt durumu sayfasını açmak için aşağıdaki adımları izleyin.
  
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows kaydı** > **kayıt durumu sayfası** > **cihaz kaydı** ' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows** > **Windows kaydı** > **kayıt durumu sayfası** > **cihazlar** ' ı seçin.
 2. **Kayıt Durumu Sayfası** dikey penceresinde, **Varsayılan** > **Ayarlar**’ı seçin.
 3. **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**’i seçin.
 4. Açmak istediğiniz diğer ayarları seçin ve **Kaydet**’i seçin.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Kayıt durumu sayfası profili oluşturma ve gruba atama
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Windows kaydı** > **kayıt durumu sayfası** > **Profil oluştur**' u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows** > **Windows kayıt** > **kayıt durumu sayfası** > **Profil oluştur** > **cihazlar** ' ı seçin.
 2. Bir **Ad** ve **Açıklama** sağlayın.
 3. **Oluştur**’u seçin.
 4. **Kayıt Durumu Sayfası** listesinde yeni profili seçin.
@@ -82,7 +82,7 @@ Kayıt durumu sayfasını açmak için aşağıdaki adımları izleyin.
 
 Bir kullanıcı birçok grupta olabilir ve birçok kayıt durumu sayfası profili bulunabilir. Bu tür çakışmaları işlemek için her bir profilin önceliklerini ayarlayabilirsiniz. Kaydetme sırasında, birisinin birden fazla kayıt durumu sayfası profili varsa, kaydolan cihaza yalnızca en yüksek öncelikli profil uygulanır.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows kaydı** > **kayıt durumu sayfası** > **cihaz kaydı** ' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows** > **Windows kaydı** > **kayıt durumu sayfası** > **cihazlar** ' ı seçin.
 2. Listede profilin üzerine gelin.
 3. Üç dikey noktayı kullanarak, profili listede dilediğiniz konuma sürükleyin.
 
@@ -90,12 +90,12 @@ Bir kullanıcı birçok grupta olabilir ve birçok kayıt durumu sayfası profil
 
 Kullanıcının masaüstüne erişebilmesi için yüklenmesi gereken uygulamaları belirtebilirsiniz.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows kaydı** > **kayıt durumu sayfası** > **cihaz kaydı** ' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows** > **Windows kaydı** > **kayıt durumu sayfası** > **cihazlar** ' ı seçin.
 2. Bir profil seçip **Ayarlar**'a tıklayın.
 3. **Uygulama ve profil yükleme ilerleyişini göster** için **Evet**'i seçin.
-4. Seçin **Evet** için **tüm uygulamalar ve Profiller yüklenene kadar cihaz kullanımını engelle**.
+4. **Tüm uygulamalar ve profiller yüklenene kadar cihaz kullanımını engelle** için **Evet**'i seçin.
 5. **Bu gerekli uygulamalar kullanıcıya/cihaza atanırsa, bu uygulamaların yüklenmesi Için seçili cihaz kullanımını engelle**' yi seçin.
-6. Seçin **uygulamaları Seç** > uygulamalar'ı seçin > **seçin** > **Kaydet**.
+6. **Uygulama seç**'e tıklayın, uygulamaları seçin ve **Seç** > **Kaydet** yolunu izleyin.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Kayıt durumu sayfası izleme bilgileri
 
@@ -134,7 +134,7 @@ Hesap kurulumu için, kayıt durumu sayfası şu anda oturum açmış olan kulla
   - Tüm Kullanıcılar veya cihazı kaydeden kullanıcının üyesi olduğu bir kullanıcı grubuna atanan makine başına LoB MSI uygulamaları.
   - Aşağıdaki nesnelerden birine atanan LoB Mağazası uygulamaları, çevrimiçi mağaza uygulamaları ve çevrimdışı mağaza uygulamaları:
     - Tüm Cihazlar
-    - Tüm Kullanıcılar
+    - All Users
     - Cihazı kaydeden Kullanıcı grubu, yükleme bağlamı Kullanıcı olarak ayarlanan bir üyedir.
   - Win32 uygulamaları (yalnızca Windows 10 sürüm 1903 ve üzeri) 
 - Bağlantı profilleri

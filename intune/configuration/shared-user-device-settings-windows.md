@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 588b6d39f1e3dc86f76279ef0446d9d58dc3e1df
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0e59a4ba7a929df448eddaf36038c2d6deaa0a7a
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506608"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547927"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Intune kullanarak paylaşılan cihazları yönetmek için Windows 10 ve üzeri ayarları
 
@@ -56,7 +56,7 @@ Intune 'da bu özellik hakkında daha fazla bilgi için bkz. [PAYLAŞıLAN bilgi
 - **Güç ilkeleri**: **etkin**olarak ayarlandığında, kullanıcılar hazırda beklemeyi kapatamaz, tüm uyku işlemlerini geçersiz kılamaz (kapağı kapatma gibi) ve güç ayarlarını değiştiremezler. **Devre dışı**olarak ayarlandığında, kullanıcılar cihazı hazırda beklemeye alabilir, cihazı uyku moduna almak için kapağı kapatabilir ve güç ayarlarını değiştirebilir. **Yapılandırılmadı** (varsayılan), bu ayarı Intune tarafından yönetilmeyen olarak bırakır ve bir cihazda bu ayarı denetlemek için herhangi bir ilke göndermez.
 - **Uyku zaman aşımı (saniye cinsinden)** : Cihaz uyku moduna geçmeden önce etkin olmayan saniyeler (0-100) sayısını girin. Bir zaman ayarlamazsanız, cihaz 60 dakika sonra uyku moduna geçer.
 - **Bilgisayar uyandığında oturum açma**: kullanıcıların cihaz uyku modundan çıktığında bir parolayla oturum açmasını gerektirmek için **etkin** olarak ayarlanır. Kullanıcıların Kullanıcı adı ve parolasını girmesi gerekmiyorsa **devre dışı** öğesini seçin. **Yapılandırılmadı** (varsayılan), bu ayarı Intune tarafından yönetilmeyen olarak bırakır ve bir cihazda bu ayarı denetlemek için herhangi bir ilke göndermez.
-- **Bakım başlangıç zamanı (gece yarısından itibaren dakika)** : Windows Update, gibi otomatik bakım görevleri çalıştırıldığında, dakika cinsinden süreyi (0-1440) girin. Varsayılan başlangıç saati gece yarısı veya sıfır (`0`) dakikadır. Başlangıç saatini, gece yarısından dakikalar içinde bir başlangıç saati girerek değiştirin. Örneğin, bakımın 2 ' de başlamasını istiyorsanız `120` girin. Bakımın 8 PM 'de başlamasını istiyorsanız `1200` girin.
+- **Bakım başlangıç zamanı (gece yarısından itibaren dakika)** : Windows Update, gibi otomatik bakım görevleri çalıştırıldığında, dakika cinsinden süreyi (0-1440) girin. Varsayılan başlangıç saati gece yarısı veya sıfır (`0`) dakikadır. Başlangıç saatini, gece yarısından dakikalar içinde bir başlangıç saati girerek değiştirin. Örneğin, bakımın 2 ' de başlamasını istiyorsanız `120`girin. Bakımın 8 PM 'de başlamasını istiyorsanız `1200`girin.
 - **Eğitim ilkeleri**: okullar için kullanılan ve daha kısıtlayıcı olan cihazlar için önerilen ayarları kullanmak üzere **etkin** ' i seçin. Varsayılan ve önerilen eğitim ilkelerinin kullanılmamış olması için **devre dışı** öğesini seçin. **Yapılandırılmadı** (varsayılan), bu ayarı Intune tarafından yönetilmeyen olarak bırakır ve bir cihazda bu ayarı denetlemek için herhangi bir ilke göndermez.
 
   Eğitim ilkelerinin ne yaptığı hakkında daha fazla bilgi için bkz. [Eğitim müşterileri Için Windows 10 yapılandırma önerileri](https://docs.microsoft.com/education/windows/configure-windows-for-education).

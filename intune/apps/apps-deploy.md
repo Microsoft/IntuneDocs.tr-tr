@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99e89db1bbef3d08cd6709b2600c4a684ac618f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498615"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540758"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -65,7 +65,7 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
    - **Kayıtlı cihazlar Için kullanılabilir**: uygulamayı şirket portalı uygulamadan veya Web sitesinden yükleyebilen Kullanıcı gruplarına atayın.
    - **Kayıtlı veya kayıtsız olarak kullanılabilir**: Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. Kullanıcılara Intune lisansı atanmış olmalıdır, bkz. [Intune Lisansları](../fundamentals/licenses.md).
    - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir. Bazı platformlarda yükleme başlamadan önce son kullanıcıya ek sorular ve bilgiler sunulabilir.
-   - **Kaldır**: Intune'un "Kayıtlı cihazlar için mevcut"' veya "Gerekli" ataması aracılığıyla aynı dağıtımı kullanarak uygulamayı cihaza daha önce yüklemiş olması halinde, uygulama seçilen gruplardaki cihazlardan kaldırılır. Dağıtım sonrasında web bağlantıları kaldırılamaz.
+   - **Kaldır**: Intune, uygulamayı daha önce kayıtlı cihazlar için kullanılabilir "veya aynı dağıtımı kullanarak" gerekli "atama yoluyla cihaza daha önce yükletiyse, seçilen gruplardaki cihazlardan kaldırılır. Dağıtım sonrasında web bağlantıları kaldırılamaz.
 
      > [!NOTE]
      > **Yalnızca iOS uygulamaları için**:
@@ -94,35 +94,23 @@ Aşağıdaki tablodaki bilgiler, bir çakışma oluştuğunda ortaya çıkan ama
 | Grup 1 amacı | Grup 2 amacı | Ortaya çıkan amaç |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Kullanıcı Gerekli|Kullanıcı Mevcut|Gerekli ve Kullanılabilir|
-|Kullanıcı Gerekli|Kullanıcı Mevcut Değil|Gerekli|
 |Kullanıcı Gerekli|Kullanıcı Kaldır|Gerekli|
-|Kullanıcı Mevcut|Kullanıcı Mevcut Değil|Kullanılamıyor|
 |Kullanıcı Mevcut|Kullanıcı Kaldır|Kaldır|
-|Kullanıcı Mevcut Değil|Kullanıcı Kaldır|Kaldır
 |Kullanıcı Gerekli|Cihaz Gerekli|İkisi de mevcut, Intune Gerekli olanı işler
 |Kullanıcı Gerekli|Cihaz Kaldır|İkisi de mevcut, Intune Gerekli olanı çözümler
 |Kullanıcı Mevcut|Cihaz Gerekli|İkisi de mevcut; Intune Gerekli (Gerekli ve Kullanılabilir) olanı çözümler
 |Kullanıcı Mevcut|Cihaz Kaldır|İkisi de mevcut, Intune Kullanılabilir olanı çözümler.<br><br>Uygulama, Şirket Portalında görüntülenir.<br><br>Uygulama zaten yüklüyse (önceki amacıyla gerekli bir uygulama olarak) kaldırılır.<br><br>Kullanıcı **Şirket Portalı'ndan yükle**'yi seçerse uygulama yüklenir ve kaldırma amacı yerine getirilmez.|
-|Kullanıcı Mevcut Değil|Cihaz Gerekli|Gerekli|
-|Kullanıcı Mevcut Değil|Cihaz Kaldır|Kaldır|
 |Kullanıcı Kaldır|Cihaz Gerekli|İkisi de mevcut, Intune Gerekli olanı çözümler|
 |Kullanıcı Kaldır|Cihaz Kaldır|İkisi de mevcut, Intune Kaldır eylemini çözümler|
 |Cihaz Gerekli|Cihaz Kaldır|Gerekli|
 |Kullanıcı Gerekli ve Mevcut|Kullanıcı Mevcut|Gerekli ve Kullanılabilir|
 |Kullanıcı Gerekli ve Mevcut|Kullanıcı Kaldır|Gerekli ve Kullanılabilir|
-|Kullanıcı Gerekli ve Mevcut|Kullanıcı Mevcut Değil|Gerekli ve Kullanılabilir|
 |Kullanıcı Gerekli ve Mevcut|Cihaz Gerekli|İkisi de mevcut; Gerekli ve Mevcut
-|Kullanıcı Gerekli ve Mevcut|Cihaz Mevcut Değil|Gerekli ve Kullanılabilir|
 |Kullanıcı Gerekli ve Mevcut|Cihaz Kaldır|İkisi de mevcut; Intune Gerekli (Gerekli ve Kullanılabilir) olanı çözümler
-|Kullanıcı Mevcut Değil|Cihaz Mevcut Değil|Kullanılamıyor|
-|Kullanıcı Mevcut|Cihaz Mevcut Değil|Kullanılabilir|
-|Kullanıcı Gerekli|Cihaz Mevcut Değil|Gerekli|
 |Kullanıcı kayıt olmadan Mevcut|Kullanıcı Gerekli ve Mevcut|Gerekli ve Kullanılabilir
 |Kullanıcı kayıt olmadan Mevcut|Kullanıcı Gerekli|Gerekli
-|Kullanıcı kayıt olmadan Mevcut|Kullanıcı Mevcut Değil|Kullanılamıyor
 |Kullanıcı kayıt olmadan Mevcut|Kullanıcı Mevcut|Kullanılabilir|
 |Kullanıcı kayıt olmadan Mevcut|Cihaz Gerekli|Gerekli ve kayıt olmadan Mevcut|
-|Kullanıcı kayıt olmadan Mevcut|Cihaz Mevcut Değil|Kayıt olmadan Mevcut|
 |Kullanıcı kayıt olmadan Mevcut|Cihaz Kaldır|Kaldırma ve kayıt olmadan Mevcut.<br><br>Kullanıcı uygulamayı Şirket Portalı'ndan yüklemediyse kaldırma işlemi yerine getirilir.<br><br>Kullanıcı uygulamayı Şirket Portalı'ndan yüklerse, yüklemenin kaldırmaya göre önceliği vardır.|
 
 > [!NOTE]

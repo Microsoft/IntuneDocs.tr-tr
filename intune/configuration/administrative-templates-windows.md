@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cec7395fc766f6a937e6c43ef3a32fb21610be
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059980"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547983"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune 'de Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonlarını kullanın
 
@@ -57,7 +57,7 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
     ![Ayarların örnek listesini görüntüleyin ve önceki ve sonraki düğmeleri kullanın](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
 
     > [!TIP]
-    > Intune 'daki Windows ayarları, Yerel Grup İlkesi Düzenleyicisi gördüğünüz şirket içi Grup İlkesi yoluyla bağıntılı (`gpedit`).
+    > Intune 'daki Windows ayarları Yerel Grup İlkesi Düzenleyicisi (`gpedit`) ' de gördüğünüz şirket içi Grup İlkesi yoluyla ilişkilendirilebilir.
 
 5. Açılan listede, **Tüm ürünler**' i seçin. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
 
@@ -92,12 +92,14 @@ Bu şablonlarda yüzlerce ayar bulunur. Belirli ayarları bulmayı kolaylaştır
 
   ![Intune 'daki yönetim şablonlarında Grup İlkesi veya ADMX yolu tarafından gruplanmış tüm ayarları göstermek için yol ' a tıklayın](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Şablonunuzda, belirli ayarları bulmak için **arama** kutusunu kullanın. Başlık veya yol ayarlayarak arama yapabilirsiniz. Örneğin `copy` ' ı arayın. `copy` olan tüm ayarlar gösterilir:
+- Şablonunuzda, belirli ayarları bulmak için **arama** kutusunu kullanın. Başlık veya yol ayarlayarak arama yapabilirsiniz. Örneğin, `copy`için arama yapın. `copy` olan tüm ayarlar gösterilir:
 
   ![Intune 'da yönetim şablonlarındaki tüm Windows ve Office ayarlarını göstermek için Kopyala araması yapın](./media/administrative-templates-windows/search-copy-settings.png) 
 
-  Başka bir örnekte, `microsoft word` ' ı arayın. Microsoft Word programı için ayarlayabileceğiniz tüm ayarları görürsünüz. Şablonunuza ekleyebileceğiniz tüm Internet Explorer ayarlarını görmek için `explorer` aratın.
+  Başka bir örnekte, `microsoft word`için arama yapın. Microsoft Word programı için ayarlayabileceğiniz tüm ayarları görürsünüz. Şablonunuza ekleyebileceğiniz tüm Internet Explorer ayarlarını görmek için `explorer` aratın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Şablon oluşturuldu, ancak henüz bir şey yapmadım. Sonra, [profil olarak da adlandırılan şablonu atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
+
+[Yönetim şablonlarını kullanarak Office 365](administrative-templates-update-office.md)' i güncelleştirin.

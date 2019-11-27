@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61771ce2b6179b2e74a4d13f72794ece97907034
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502577"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540809"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP kullanarak Intune'da iş ortağı sertifika yetkilisi ekleme
 
@@ -57,7 +57,8 @@ Aşağıdaki adımlarda, Intune 'da sertifikalar için SCEP kullanılmasına gen
 
 Aşağıdaki diyagramda Intune'la üçüncü taraf SCEP tümleştirmesinin ayrıntılı akışı gösterilir:
 
-![Üçüncü taraf sertifika yetkilisi SCEP Microsoft Intune ile nasıl tümleştirilir?](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
+> [!div class="mx-imgBorder"]
+> üçüncü taraf sertifika yetkilisi SCEP Microsoft Intune ile nasıl tümleştiğini ![](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
 ## <a name="set-up-third-party-ca-integration"></a>Üçüncü taraf CA tümleştirmesini ayarlama
 
@@ -73,7 +74,7 @@ Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emi
 
 #### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory bir uygulama oluşturma  
 
-1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **uygulama kaydı**' na gidin ve ardından **Yeni kayıt**' ı seçin.  
+1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **uygulama kayıtları**' na gidin ve ardından **Yeni kayıt**' ı seçin.  
 
 2. **Uygulama kaydetme** sayfasında, aşağıdaki ayrıntıları belirtin:  
    - **Ad** bölümünde anlamlı bir uygulama adı girin.  
@@ -88,7 +89,7 @@ Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emi
    > [!IMPORTANT]  
    > Bu sayfadan ayrılmadan önce, istemci sırrı için değeri kopyalayın ve daha sonra üçüncü taraf CA uygulamanız ile kullanmak üzere kaydedin. Bu değer bir daha gösterilmez. Üçüncü taraf sertifika yetkilinizin kılavuzunu, uygulama KIMLIĞI, kimlik doğrulama anahtarı ve kiracı KIMLIĞI 'nin nasıl yapılandırılacağını istediğlerine göre gözden geçirdiğinizden emin olun.  
 
-6. **KIRACı kimliğinizi**kaydedin. Kiracı KIMLIĞI, hesabınızdaki @ işaretinden sonra gelen etki alanı metindir. Örneğin, hesabınız *admin@name.onmicrosoft.com* ise, kiracı kimliğiniz **Name.onmicrosoft.com**olur.  
+6. **KIRACı kimliğinizi**kaydedin. Kiracı KIMLIĞI, hesabınızdaki @ işaretinden sonra gelen etki alanı metindir. Örneğin, hesabınız *admin@name.onmicrosoft.com* , kiracı kimliğiniz **Name.onmicrosoft.com**olur.  
 
 7. Uygulamanın gezinti bölmesinde, **Yönet**' ın altındaki **API izinleri** ' ne gidin ve **izin Ekle**' yi seçin.  
 

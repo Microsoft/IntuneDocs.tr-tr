@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: bc781ea72b54468b21fb70e60e334f1c8d8832ea
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709190"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547944"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Öğretici - Intune’a cihaz kaydetmek için Windows Autopilot kullanma
 
@@ -60,9 +60,9 @@ Windows Autopilot’ı ayarlamanın ilk adımı, Windows cihazları Intune’a e
 
 2. CSV dosyasını kaydedin.
 
-3. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Windows kaydı** > **cihazlar** > **içeri aktar**' ı seçin.
+3. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **Windows** > **cihazları** ' nı ( **Windows Autopilot dağıtım > programı** ' nın altında **içeri aktar**' ı seçin.
 
-    ![Windows Autopilot cihazlarının ekran görüntüsü](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
+    ![Windows Autopilot cihazlarının ekran görüntüsü](./media/enrollment-autopilot/autopilot-import-device.png)
 
 4. **Windows Autopilot cihazlar ekle** altında kaydettiğiniz CSV dosyasına göz atın.
 
@@ -70,7 +70,7 @@ Windows Autopilot’ı ayarlamanın ilk adımı, Windows cihazları Intune’a e
 
 5. Cihaz bilgilerini içeri aktarmayı başlatmak için **İçeri Aktar**'ı seçin. İçeri aktarma birkaç dakika sürebilir.
 
-4. İçeri aktarma işlemi tamamlandıktan sonra, **cihaz kaydı** > **Windows kaydı** > **Windows Autopilot** > **cihazları** > **eşitleme**' yi seçin. Eşitlemenin devam ettiğini gösteren bir ileti görüntülenir. Kaç tane cihaz eşitlediğinize bağlı olarak işlemin tamamlanması birkaç dakikayı bulabilir.
+4. İçeri aktarma işlemi tamamlandıktan sonra **windows > Windows** **kayıt** > **cihazları** > **cihazlar** ' ı ( **Windows Autopilot dağıtım > programı** ' nın altında **Eşitle**) seçin. Eşitlemenin devam ettiğini gösteren bir ileti görüntülenir. Kaç tane cihaz eşitlediğinize bağlı olarak işlemin tamamlanması birkaç dakikayı bulabilir.
 
 5. Yeni cihazları görmek için görüntüyü yenileyin.
 
@@ -90,7 +90,7 @@ Daha sonra bir cihaz grubu oluşturacak ve az önce yüklediğiniz Autopilot cih
 
 Bir cihaz grubu oluşturduktan sonra, Autopilot cihazları yapılandırabilmek için bir dağıtım profili oluşturmalısınız.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Profil oluştur** > **Windows kaydı** > **dağıtım profilleri** > **cihaz kaydı** ' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows** > **windows kayıt** > **dağıtım profilleri** > **Profil oluştur** > **cihazlar** ' ı seçin.
 2. **Temel bilgiler** sayfasında, Tor **adı**, *Autopilot profile*girin. **Açıklama** olarak *Autopilot cihazlar için test profili* yazın.
 3. **Tüm hedeflenen cihazları Autopilot’a dönüştür** ayarını **Evet** olarak seçin. Bu ayar, listedeki tüm cihazların Autopilot dağıtım hizmetine kaydolmasını sağlar. Kaydın işlenmesi için 48 saat kadar bekleyin.
 4. **İleri**'yi seçin.
@@ -116,9 +116,9 @@ Artık Autopilot cihazlarını kullanmak istemiyorsanız, bunları silebilirsini
 
 1. Cihazlar Intune’a kayıtlıysa önce bunları [Azure Active Directory portalından silmeniz](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal) gerekir.
 
-2. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Windows kayıt** > **cihazları**' nı seçin.
+2. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **Windows > ** **Windows kayıt** > **cihazlar** > **cihazlar** ' ı ( **Windows Autopilot dağıtım programı**altında) seçin.
 
-3. **Windows Autopilot cihazları** bölümünde silmek istediğiniz cihazları, sonra da **Sil**'i seçin.
+3. Silmek istediğiniz cihazları seçin ve **Sil**' i seçin.
 
 4. **Evet**'i seçerek silme işlemini onaylayın. Silme işlemi birkaç dakika sürebilir.
 

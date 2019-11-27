@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61957140fa8d942be0f3dca2543da2aed6183535
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7fe0bed94c66a1b82ed26bdbd43f68073223101e
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059251"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540690"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune’da cihazlarınız için Wi-Fi ayarları ekleme ve kullanma
 
@@ -69,7 +69,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
       > [!TIP]
       >
-      > - Adanmış bir cihaz (bilgi noktası) olarak çalışan **Android kurumsal** cihazlarda **yalnızca cihaz sahibi**' i  > **Wi-Fi**' ı seçin.
+      > - Adanmış bir cihaz (bilgi noktası) olarak çalışan **Android kurumsal** cihazlarda **yalnızca cihaz sahibi** > **Wi-Fi**' y i seçin.
       > - **Windows 8.1 ve sonrasında** **Wi-Fi içeri aktar**’ı seçebilirsiniz. Bu seçenek, Wi-Fi ayarlarını daha önce başka cihazdan dışarı aktarmış olduğunuz bir XML dosyası olarak içeri aktarmanıza olanak tanır.
 
 4. Bazı Wi-Fi ayarları platformdan platforma farklılık gösterir. Belirli bir platformun ayarlarını görmek için platformunuzu seçin:
@@ -81,10 +81,12 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
     - [Windows 10 ve üzeri](wi-fi-settings-windows.md)
     - [Windows 8.1 ve sonrası](wi-fi-settings-import-windows-8-1.md), Windows Holographic for Business dahil
 
-5. İşiniz bittiğinde **Profil oluştur** > **Oluştur**' u seçin.
+5. İşiniz bittiğinde, **oluştur** > **Profil oluştur** ' u seçin.
 
-Profil oluşturulur ve profiller listesinde gösterilir (**cihaz yapılandırması** > **profilleri**).
+Profil oluşturulur ve profiller listesinde gösterilir (**cihaz yapılandırma** > **profilleri**).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Profil oluşturuldu ancak hiçbir şey yapmıyor. Sonra, [Bu profili atayın](device-profile-assign.md) ve [durumunu izleyin.](device-profile-monitor.md)
+
+[Intune 'Da Troubles Wi-Fi profilleri](troubleshoot-wi-fi-profiles.md).

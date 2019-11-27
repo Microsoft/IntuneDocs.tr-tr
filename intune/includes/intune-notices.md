@@ -7,20 +7,35 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
-ms.translationtype: HT
+ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309834"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74549528"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
+
+### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>' Intune için Adobe Acrobat Reader ' mobil uygulaması için destek özeti güncelleştirildi<!--5746776-->
+Ağustos ayının sonunda MC188653 ' de paylaşıyoruz. Bu, Intune mobil uygulaması için Adobe Acrobat Reader 'ın 1 Aralık 2019 ' de sona erecek ve Adobe uygulamasının, ana Acrobat Reader uygulaması içinde Intune 'un uygulama koruma ilkelerini desteklemeyi planlıyor olması. Bundan sonra, BT yöneticilerinin hedeflemesini sağlamak için daha fazla zaman sunduğumuz ve son kullanıcıların Intune için Adobe Acrobat Reader kullanmaya başlamasını sağlayan müşteri geri bildirimi aldık. Son Kullanıcı cihazlarında Intune için Adobe Acrobat Reader 'ın yüksek kullanımı ve kurumsal senaryolarda önem derecesi verildiğinde, tüm deneyimin kuruluşunuzun uygulama koruma ihtiyaçlarını karşıladığından emin olmak istiyoruz. 
+
+Acrobat Reader mobil uygulaması uygulama koruma Ilkelerini desteklediğinden ve Intune SDK ile tümleştirildiği için ilkelerinizde genel Acrobat Reader mobil uygulamasını hedeflemek öneriyoruz, ancak Intune için Adobe Acrobat Reader uygulaması desteklenmeye devam edecek 31 Mart 2020 tarihine kadar. 
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Bu iletiyi, raporumuz kuruluşunuzdaki bir veya daha fazla ilkeyi Intune için Adobe Acrobat Reader uygulamasını hedeflediğinden ve/veya önceki EOL iletişimimizi almış olabilirsiniz. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
+Son kullanıcılarınıza ve yardım masasına bu değişikliğin haberdar olmasına izin verin. Intune ile ilgili sorulara yönelik bir kanal oluşturmak için [Şirket portalı destek bilgileri işlevselliğini](../apps/company-portal-app.md#support-information) kullanabilirsiniz.
+
+#### <a name="additional-information"></a>Ek bilgi
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
 
 ### <a name="end-support-for-windows-phone-81--3544909--"></a>Windows Phone 8,1 için destek bitişi<!--3544909-->
 Windows Phone 8,1 için Microsoft temel desteği 2017 Temmuz 'da sona erdi ve genişletilmiş destek Haziran 2019 ' de sona erdi. Windows Phone 8,1 için Şirket Portalı uygulaması, 2017 ' den bu yana bir moda sahip. Microsoft Intune, Windows Phone 8,1 için 20 Şubat 2020 ' de desteği sona erdirmek için.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-20 Şubat 2020 ' den sonra bu cihazlar herhangi bir güvenlik güncelleştirmesi almaz ve yeni cihazları kaydedemeyeceksiniz. Mevcut Windows Phone 8,1 cihazları kayıtlı kalır (ilke, uygulamalar, raporlama), ancak mevcut bir kaydın tüm sorunlarını giderme işlemi bu tarihten sonra desteklenmez; üçüncü taraf sertifikaları gibi birçok bileşen, platformunun. Intune, Intune ile uyumluluk sınamasını durdurur ve 8,1 Windows Phone.
+20 Şubat 2020 ' den sonra bu cihazlar herhangi bir güvenlik güncelleştirmesi almaz ve yeni cihazları kaydedemeyeceksiniz. Mevcut Windows Phone 8,1 cihazları kayıtlı kalır (ilke, uygulamalar, raporlama), ancak üçüncü taraf sertifikalar gibi birçok bileşen bu tarihten sonra, bu tarihten sonra var olan bir kaydın tüm sorunlarını gidermeye devam edin. platformunun. Intune, Intune ile uyumluluk sınamasını durdurur ve 8,1 Windows Phone.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune raporlamayı kontrol edebilirsiniz. Cihazlar > Tüm cihazlar'a gidin ve işletim sistemine göre filtre uygulayın. Kuruluşunuzda Windows Phone 8,1 çalıştıran cihazların kim olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmesini isteyin.
@@ -36,7 +51,7 @@ Yeni özellikler sunulmadığından, ne zaman, aşağıdaki uygulama yapılandı
 - com. Microsoft. Outlook. Calendar. NotificationsEnabled. UserChangeAllowed
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Bu yeni özellik için hazırlık bölümünde "org Data Notifications" adlı Intune Uygulama Koruması Ilkesi veri koruma ayarını "org Data Notifications" değeriyle yapılandırmanızı öneririz. 16 Aralık 2019 ' den başlayarak iOS ve Android için Outlook, "kuruluş verileri bildirimleri" veri koruma ayarını kabul eder ve bundan böyle belirtilen anahtarları desteklememektedir. Yukarıdaki yapılandırma anahtarları artık desteklenmediğinde, bu yeni ayarı yapılandırmak hassas verilerin sızmasını sağlayacaktır. Ayrıca, "kuruluş verileri bildirimleri" adlı veri koruma ayarı "Kuruluş verilerini engelle" olarak ayarlandığında, "takvim bildirimleri" adlı ek bir uygulama yapılandırma ayarıyla Outlook ek ayrıntı düzeyi sağlıyor. Uygulama koruma Ilkesi ayarı ve bu uygulama yapılandırma ayarı, e-posta bildirimlerinde hassas bilgileri, kullanıcıların glancing göre toplantılarına erişebilmesi için Takvim bildirimlerinde hassas bilgileri ortaya çıkaran şekilde sınırlar. anında veya bildirim merkezinde hızlı bir şekilde.
+Bu yeni özellik için hazırlık bölümünde "org Data Notifications" adlı Intune Uygulama Koruması Ilkesi veri koruma ayarını "org Data Notifications" değeriyle yapılandırmanızı öneririz. 16 Aralık 2019 ' den başlayarak iOS ve Android için Outlook, "kuruluş verileri bildirimleri" veri koruma ayarını kabul eder ve bundan böyle belirtilen anahtarları desteklememektedir. Bu yeni ayarı yapılandırmak, yukarıdaki yapılandırma anahtarları artık desteklenmediğinde hassas verilerin sızmasını sağlayacaktır. Ayrıca, "kuruluş verileri bildirimleri" adlı veri koruma ayarı "Kuruluş verilerini engelle" olarak ayarlandığında, "takvim bildirimleri" adlı ek bir uygulama yapılandırma ayarıyla Outlook ek ayrıntı düzeyi sağlıyor. Uygulama koruma Ilkesi ayarı ve bu uygulama yapılandırma ayarı, e-posta bildirimlerinde hassas bilgileri, kullanıcıların glancing göre toplantılarına erişebilmesi için Takvim bildirimlerinde hassas bilgileri ortaya çıkaran şekilde sınırlar. anında veya bildirim merkezinde hızlı bir şekilde.
 
 #### <a name="additional-information"></a>Ek bilgiler
 Uygulama ayarları ve Outlook ayarları hakkında daha fazla bilgi için bkz.:
@@ -49,7 +64,7 @@ Uygulama ayarları ve Outlook ayarları hakkında daha fazla bilgi için bkz.:
 Windows 10, sürüm 1703 (Windows 10, RS2 olarak da bilinir), kurumsal ve EDU sürümleri için 8 Ekim 2019 tarihinde hizmet dışına geçmiştir. Intune, RS2/RS1 için karşılık gelen Şirket Portalı uygulamasına yönelik destek, 26 Aralık 2019 ' den itibaren sona acaktır.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Bundan sonra, Şirket Portalı uygulamasının belirli bir sürümünde yeni özellikler görmezsiniz, ancak bu Şirket Portalı uygulamasının bu sürümünü 2019 Aralık ' e kadar bir şekilde desteklemeye devam edeceğiz, ancak şu şekilde Şirket Portalı uygulamasına yönelik güvenlik güncelleştirmeleri sağlar duyulduğunda. Bununla birlikte, Windows 10, sürüm 1703, hizmet dışına taşındıktan sonra herhangi bir güvenlik güncelleştirmesi almadıklarından, Windows cihazlarınızı daha yeni bir Windows sürümüne güncelleştirmenizi ve en son Şirket Portalı uygulamada olduğunuzdan emin olmanız önerilir. yeni özellikler ve ek işlevler.
+Bundan sonra, Şirket Portalı uygulamasının belirli bir sürümünde yeni özellikler görmezsiniz, ancak bu Şirket Portalı uygulamasının bu sürümünü Şirket Portalı Aralık 2019 ' e kadar bir şekilde desteklemeye devam edeceğiz, ancak şu şekilde uygulamasına güvenlik güncelleştirmeleri sağlar duyulduğunda. Ancak, Windows 10, sürüm 1703, bakım bittikten sonra herhangi bir güvenlik güncelleştirmesi almaması için, Windows cihazlarınızı daha yeni bir Windows sürümüne güncelleştirmenizi ve en son Şirket Portalı uygulamada olduğunuzdan emin olmanız önerilir. yeni özellikler ve ek işlevler.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Gerçekleştirebileceğiniz adımlar ortamınızın nasıl yapılandırıldığına bağlıdır. Genel olarak, işletim sisteminin eski sürümüne ve/veya Şirket Portalı cihazlarındaki cihazları ve güncelleştirmeleri belirlemeniz gerekir. Windows 10 güncelleştirme Halkalarınızı ayarlamak için Intune-> yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları ' na oturum açın. Şirket Portalı en son sürümü 10.3.5601.0 sürümüdür. Lütfen kullanıcılarınızın gelecek sürümlerde güncel kalmasını sağlamak için bunu Microsoft Store almak üzere doğrudan yönlendirin. Intune 'u, [iş için Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business)aracılığıyla en son Windows cihazlarınıza yüklemek için de kullanabilirsiniz.
@@ -97,7 +112,7 @@ Son Kullanıcı kılavuzunuzu güncelleştirmeyi planlamalısınız ve yardım m
 
 Eski PC yönetimi, 15 Ekim 2020 ' de destek altına geçiyor. Cihazları Windows 10 ' a yükseltin ve Intune tarafından yönetilmek üzere bunları mobil cihaz yönetimi (MDM) cihazları olarak yeniden kaydedin.
 
-[Daha fazlasını öğrenin](https://go.microsoft.com/fwlink/?linkid=2107122)
+[Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2107122)
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Android Cihaz Yöneticisi desteğini azaltma 
 Android Cihaz Yöneticisi (bazen "eski" Android yönetimi ve Android 2,2 ile kullanıma sunulan) Android cihazlarını yönetmenin bir yoludur. Ancak, geliştirilmiş yönetim işlevselliği artık [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (Android 5,0 ile yayımlanmıştır) ile kullanılabilir. Modern, daha zengin ve daha güvenli cihaz yönetimine geçiş çabasında, Google yeni Android sürümlerindeki Cihaz Yöneticisi desteğini düşürdüğünde.
@@ -129,7 +144,7 @@ Intune, gelecek sürümlerde Android 5. x (Lollipop) ve üstünü destekleyecek 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
 ' I kullanmıyorsanız veya Android için SDK ya da uygulama kullanmayı planlıyorsanız bu değişiklik sizi etkilemez. Intune uygulama SDK 'sını kullanıyorsanız, en son sürüme güncelleştirdiğinizden emin olun ve ayrıca cihazlarınızı Android 5. x ve üzeri olarak güncelleştirin. Güncelleştirme yapmazsanız, uygulamalar güncelleştirmeleri almaz ve deneyiminin kalitesi zaman içinde azalyacaktır.
 
-Android sürüm 4. x çalıştıran Intune 'A kayıtlı ortak cihazların listesini aşağıda bulabilirsiniz. Bu cihazlardan birine sahipseniz, bu cihazın Android sürüm 5,0 veya üstünü desteklediğinden emin olmak veya Android sürüm 5,0 veya üstünü destekleyen bir cihazla değiştirilmesini sağlamak için uygun adımları uygulayın. Bu liste değerlendirilmesi gerekebilecek tüm cihazların bir tam değildir:
+Android sürüm 4. x çalıştıran Intune 'A kayıtlı ortak cihazların listesini aşağıda bulabilirsiniz. Bu cihazlardan birine sahipseniz, bu cihazın Android sürüm 5,0 veya üstünü desteklediğinden emin olmak veya Android sürüm 5,0 veya üstünü destekleyen bir cihazla değiştirilmesini sağlamak için uygun adımları uygulayın. Bu liste değerlendirilmesi gerekebilecek tüm cihazların kapsamlı bir şekilde değildir:
 
 - Samsung SM-T561  
 - Samsung SM-T365

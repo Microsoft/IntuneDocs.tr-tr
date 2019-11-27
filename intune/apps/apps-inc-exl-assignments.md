@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b47ecc2363244634cb355fdeaeb51074417322e4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507301"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547958"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama
 
@@ -31,9 +31,20 @@ Intune'da, dahil etmek ve dışlamak üzere kullanıcı gruplarını atayarak bi
 
 Uygulamanın kullanılabilirliğini ayarlamak için, bir dahil etme ve dışlama grup atamaları bileşimi kullanarak bir kullanıcı veya cihaz grubuna uygulama atamalarını dahil edebilir veya dışlayabilirsiniz. Bu özellik, büyük bir grubu dahil ederek uygulamayı sunup daha sonra küçük bir grubu dışlayarak seçili kullanıcıları azalttığınızda kullanışlı olabilir. Bu küçük grup, bir test grubu veya yönetici grubu olabilir. 
 
-Uygulama atamasından grupları dışlarken, yalnızca kullanıcı gruplarını veya yalnızca cihaz gruplarını dışlamanız gerekir. Kullanıcı gruplarıyla cihaz gruplarının bir bileşimini dışlayamazsınız. 
+En iyi uygulama olarak, özel olarak Kullanıcı gruplarınız için uygulamalar oluşturup, cihaz gruplarınız için ayrı olarak atayın. Gruplar hakkında daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](~/fundamentals/groups-add.md).  
 
-Intune, grupları dışlarken kullanıcı-cihaz ilişkisini dikkate almaz. Kullanıcı gruplarını dahil ederken cihaz gruplarını dışlamak, istediğiniz sonuçları vermeyebilir. Dahil etme, dışlamadan önceliklidir. Örneğin bir iOS uygulamasını **Tüm Kullanıcılar** olarak hedefler ancak **Tüm iPad’ler** grubunu dışlarsanız, sonuç olarak iPad’i olan tüm kullanıcılar uygulamayı yine de alır. Öte yandan, iOS uygulamasını **Tüm Cihazlar** olarak hedefler ve **Tüm iPad’ler** grubunu dışlarsanız, o zaman dağıtım başarılı olur.  
+Uygulama atamalarını dahil etmek veya hariç bırakmak için önemli senaryolar vardır:
+
+- Dışlama, aşağıdaki aynı grup türü senaryolarına dahil edilmeye göre önceliklidir:
+    - Uygulama atarken Kullanıcı gruplarını ve Kullanıcı gruplarını dışlayarak ekleme
+    - Uygulama atarken cihaz gruplarını ekleme ve cihaz grubunu hariç tutma
+
+    Örneğin, **tüm kurumsal kullanıcılar Kullanıcı** grubuna bir cihaz grubu atarsanız, ancak üst **düzey yönetim personeli** Kullanıcı grubundaki üyeleri dışladığınızda, üst **düzey yönetim personeli** hariç **tüm kurumsal kullanıcılar** atama alır, çünkü her iki grup da kullanıcı gruplarıdır.
+- Intune, Kullanıcı-cihaz grubu ilişkilerini değerlendirmez. Uygulamaları karışık gruplara atarsanız, sonuçlar istediğiniz gibi olabilir veya beklenmez.
+
+    Örneğin, **tüm kullanıcılar** kullanıcı grubuna bir cihaz grubu atarsanız, ancak **tüm kişisel cihazlar** cihaz grubunu dışlayabilirsiniz. Bu karma Grup uygulaması atamasında, **tüm kullanıcılar** uygulamayı alır. Dışlama uygulanmaz.
+
+Sonuç olarak, karışık gruplara uygulama atanması önerilmez.
 
 > [!NOTE]
 > Bir uygulama için grup ataması ayarlarken, **Uygulanamaz** türü kullanım dışıdır ve bunun yerini grup dışlama işlevi almıştır. 
@@ -41,7 +52,6 @@ Intune, grupları dışlarken kullanıcı-cihaz ilişkisini dikkate almaz. Kulla
 > Intune konsolda önceden oluşturulmuş **Tüm Kullanıcılar** ve **Tüm Cihazlar** gruplarını sağlar. Size kolaylık sağlamak için grupların yerleşik iyileştirmeleri vardır. Tüm kullanıcı ve cihazları hedeflemek için kendi oluşturabileceğiniz "tüm kullanıcılar" veya "tüm cihazlar" grupları yerine bu grupları kullanmanızı kesinlikle öneririz.  
 >
 > Android kurumsal, grupları dahil etmeyi ve dışlamayı destekler. Android kurumsal uygulama ataması için yerleşik **Tüm Kullanıcılar** ve **Tüm Cihazlar** gruplarından yararlanabilirsiniz. 
-
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Uygulama atarken grupları dahil etme ve dışlama 
 Dahil etme ve dışlama atamasını kullanarak gruplara uygulama atamak için:
