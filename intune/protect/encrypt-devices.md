@@ -1,7 +1,7 @@
 ---
-title: Encrypt devices with the platforms supported encryption method
+title: Platformlar desteklenen şifreleme yöntemiyle cihazları şifreleyin
 titleSuffix: Microsoft Intune
-description: Encrypt devices with built-in encryption methods like BitLocker or FileVault, and manage the recovery keys for those encrypted devices from within the Intune portal.
+description: BitLocker veya Filekasası gibi yerleşik şifreleme yöntemleriyle cihazları şifreleyin ve bu şifrelenmiş cihazların kurtarma anahtarlarını Intune portalından yönetin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -24,134 +24,134 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74390318"
 ---
-# <a name="use-device-encryption-with-intune"></a>Use device Encryption with Intune
+# <a name="use-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini kullanma
 
-Use Intune to manage a devices built-in disk or drive encryption to protect data on your devices.
+Cihazlarda verileri korumak üzere yerleşik bir diski veya sürücü şifrelemeyi yönetmek için Intune 'U kullanın.
 
-Configure disk encryption as part of a device configuration profile for endpoint protection. The following platforms and encryption technologies are supported by Intune:
+Uç nokta koruma için cihaz yapılandırma profilinin bir parçası olarak disk şifrelemeyi yapılandırın. Intune tarafından aşağıdaki platformlar ve şifreleme teknolojileri desteklenir:
 
-- macOS: FileVault
-- Windows 10 and later: BitLocker
+- macOS: Filekasası
+- Windows 10 ve üzeri: BitLocker
 
-Intune also provides a built-in [encryption report](encryption-monitor.md) that presents details about the encryption status of devices, across all your managed devices.
+Intune Ayrıca, tüm yönetilen cihazlarınızda cihazların şifreleme durumu hakkında ayrıntılı bilgiler sunan yerleşik bir [şifreleme raporu](encryption-monitor.md) sağlar.
 
-## <a name="filevault-encryption-for-macos"></a>FileVault encryption for macOS
+## <a name="filevault-encryption-for-macos"></a>MacOS için dosya Kasası şifrelemesi
 
-Use Intune to configure FileVault disk encryption on devices that run macOS. Then, use the Intune encryption report to view encryption details for those devices and to manage recovery keys for FileVault encrypted devices.
+MacOS çalıştıran cihazlarda Filekasadisk şifrelemesini yapılandırmak için Intune 'U kullanın. Daha sonra, bu cihazların şifreleme ayrıntılarını görüntülemek ve Filekasasına şifrelenmiş cihazların kurtarma anahtarlarını yönetmek için Intune şifreleme raporunu kullanın.
 
-FileVault is a whole-disk encryption program that is included with macOS. You can use Intune to configure FileVault on devices that run **macOS 10.13 or later**.
+Filekasası, macOS ile birlikte gelen bir tam disk şifreleme programıdır. **MacOS 10,13 veya üstünü**çalıştıran cihazlarda dosya kasasını yapılandırmak Için Intune 'u kullanabilirsiniz.
 
-To configure FileVault, create a [device configuration profile](../configuration/device-profile-create.md) for endpoint protection for the macOS platform. FileVault settings are one of the available settings categories for macOS endpoint protection.
+Filekasasını yapılandırmak için, macOS platformu için Endpoint Protection için bir [cihaz yapılandırma profili](../configuration/device-profile-create.md) oluşturun. Filekasası ayarları, macOS Endpoint Protection için kullanılabilir ayar kategorilerinden biridir.
 
-After you create a policy to encrypt devices with FileVault, the policy is applied to devices in two stages. First, the device is prepared to enable Intune to retrieve and back up the recovery key. This is referred to as escrow. After the key is escrowed, the disk encryption can start.
+Cihazları dosya kasası ile şifrelemek için bir ilke oluşturduktan sonra, ilke iki aşamada cihazlara uygulanır. İlk olarak cihaz, Intune 'un kurtarma anahtarını alıp yedeklemesini sağlamak için hazır hale getirilir. Bu, Emanet olarak adlandırılır. Anahtar alındıktan sonra, disk şifrelemesi başlayabilir.
 
-![FileVault settings](./media/encrypt-devices/filevault-settings.png)
+![Dosya Kasası ayarları](./media/encrypt-devices/filevault-settings.png)
 
-For details about the FileVault setting you can manage with Intune, see [FileVault](endpoint-protection-macos.md#filevault) in the Intune article for macOS endpoint protection settings.
+Intune ile yönetebileceğiniz Filekasası ayarı hakkında ayrıntılı bilgi için bkz. macOS Endpoint Protection ayarları için Intune makalesindeki [filekasası](endpoint-protection-macos.md#filevault) .
 
-### <a name="how-to-configure-macos-filevault"></a>How to configure macOS FileVault
+### <a name="how-to-configure-macos-filevault"></a>MacOS Filekasasını yapılandırma
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Devices** > **Configuration profiles** > **Create profile**.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 
-3. Set the following options:
+3. Aşağıdaki seçenekleri ayarlayın:
 
    - Platform: macOS
-   - Profile type: Endpoint protection
+   - Profil türü: Endpoint Protection
 
-4. Select **Settings** > **FileVault**.
+4. **Dosya kasası** > **ayarları** ' nı seçin.
 
-5. For *FileVault*, select **Enable**.
+5. *Filekasası*için **Etkinleştir**' i seçin.
 
-6. For *Recovery key type*, only **Personal key** is supported.
+6. *Kurtarma anahtarı türü*Için yalnızca **kişisel anahtar** desteklenir.
 
-   Consider adding a message to help guide end-users on how to retrieve the recovery key for their device. This information can be useful for your end-users when you use the setting for Personal recovery key rotation, which can automatically generate a new recovery key for a device periodically.
+   Son kullanıcılara cihazlarıyla ilgili kurtarma anahtarını alma hakkında yardım almak için bir ileti eklemeyi düşünün. Bu bilgiler, kişisel kurtarma anahtarı döndürme ayarını kullandığınızda son kullanıcılarınız için yararlı olabilir. Bu, düzenli aralıklarla bir cihaz için otomatik olarak yeni bir kurtarma anahtarı üretebilirler.
 
-   For example: To retrieve a lost or recently rotated recovery key, sign in to the Intune Company Portal website from any device. In the portal, go to *Devices* and select the device that has FileVault enabled, and then select *Get recovery key*. The current recovery key is displayed.
+   Örneğin: kayıp veya son döndürülen kurtarma anahtarını almak Için herhangi bir cihazdan Intune Şirket Portalı Web sitesinde oturum açın. Portalda *cihazlar* ' a gidin ve filekasasının etkinleştirildiği cihazı seçin ve ardından *Kurtarma anahtarını al*' ı seçin. Geçerli kurtarma anahtarı görüntülenir.
 
-7. Configure the remaining [FileVault settings](endpoint-protection-macos.md#filevault) to meet your business needs, and then select **OK**.
+7. Kalan [Filekasası ayarlarını](endpoint-protection-macos.md#filevault) iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.
 
    > [!IMPORTANT]
-   > There is a known issue when the setting **Disable prompt at sign out** is set to *Enable*. When set to *Enable*, the setting for **Number of times allowed to bypass** must be set to a value and must not be set as *Not configured*. If set to *Not configured*, the profile fails on the device. In this scenario the device reports it's **Profile State Summary** as **Error** with no further details.
+   > **Oturumu kapatma Isteminde devre dışı bırak** ayarı *Etkinleştir*olarak ayarlandığında bilinen bir sorun vardır. *Enable*olarak ayarlandığında, **atlamaya izin verilen sayısı** ayarı bir değere ayarlanmalıdır ve *yapılandırılmamış*olarak ayarlanmamalıdır. *Yapılandırılmadı*olarak ayarlanırsa, profil cihazda başarısız olur. Bu senaryoda cihaz, daha fazla ayrıntı olmadan **profil durumu özetini** **hata** olarak bildirir.
    >
-   > When **Disable prompt at sign out** is set to *Not configured*, **Number of times allowed to bypass** can be *Not configured* or have a value.
+   > **Oturumu kapatma sırasında Istemi devre dışı bırak** ayarı *Yapılandırılmadı*olarak ayarlandığında, **atlamaya izin verilen zaman sayısı** *yapılandırılmaz* veya bir değere sahip olabilir.
    >
-   > This issue will be resolved in a future update.
+   > Bu sorun, gelecekteki bir güncelleştirmede çözümlenir.
 
-8. Complete configuration of additional settings, and then save the profile.  
+8. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.  
 
-### <a name="manage-filevault"></a>Manage FileVault
+### <a name="manage-filevault"></a>Dosya kasasını yönetme
 
-After Intune encrypts a macOS device with FileVault, you can view and manage the FileVault recovery keys when you view the Intune [encryption report](encryption-monitor.md).
+Intune, bir macOS cihazını Filekasasıyla şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken filekasasını kurtarma anahtarlarını görüntüleyebilir ve yönetebilirsiniz.
 
-After Intune encrypts a macOS device with FileVault, you can view that device's personal recovery key from the web Company Portal on any device. Once in the web Company Portal, choose the encrypted macOS device, and then choose to "Get recovery key" as a remote device action.
+Intune bir macOS cihazını Filekasasıyla şifreledikten sonra, bu cihazın kişisel kurtarma anahtarını herhangi bir cihazdaki Web Şirket Portalı görüntüleyebilirsiniz. Web Şirket Portalı bir kez, şifrelenen macOS cihazını seçin ve ardından "kurtarma anahtarını al" seçeneğini bir uzak cihaz eylemi olarak belirleyin.
 
-## <a name="bitlocker-encryption-for-windows-10"></a>BitLocker encryption for Windows 10
+## <a name="bitlocker-encryption-for-windows-10"></a>Windows 10 için BitLocker şifrelemesi
 
-Use Intune to configure BitLocker Drive Encryption on devices that run Windows 10. Then, use the Intune encryption report to view encryption details for those devices. You can also access important information for BitLocker from your devices, as found in Azure Active Directory (Azure AD).
+Windows 10 çalıştıran cihazlarda BitLocker Sürücü Şifrelemesi yapılandırmak için Intune 'u kullanın. Ardından, bu cihazların şifreleme ayrıntılarını görüntülemek için Intune şifreleme raporunu kullanın. Ayrıca, Azure Active Directory (Azure AD) içinde bulunan ve cihazlarınızdan BitLocker için önemli bilgilere erişebilirsiniz.
 
-BitLocker is available on devices that run **Windows 10 or later**.
+BitLocker, **Windows 10 veya üzerini**çalıştıran cihazlarda kullanılabilir.
 
-Configure BitLocker when you create a [device configuration profile](../configuration/device-profile-create.md) for endpoint protection for the Windows 10 or later platform. BitLocker settings are in the Windows Encryption settings category for Windows 10 endpoint protection.
+Windows 10 veya sonraki bir platformda Endpoint Protection için bir [cihaz yapılandırma profili](../configuration/device-profile-create.md) oluşturduğunuzda BitLocker 'ı yapılandırın. BitLocker ayarları, Windows 10 Endpoint Protection için Windows şifreleme ayarları kategorisinde bulunur.
 
-![BitLocker settings](./media/encrypt-devices/bitlocker-settings.png)
+![BitLocker ayarları](./media/encrypt-devices/bitlocker-settings.png)
 
-### <a name="how-to-configure-windows-10-bitlocker"></a>How to configure Windows 10 BitLocker
+### <a name="how-to-configure-windows-10-bitlocker"></a>Windows 10 BitLocker 'ı yapılandırma
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Devices** > **Configuration profiles** > **Create profile**.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 
-3. Set the following options:
+3. Aşağıdaki seçenekleri ayarlayın:
 
-   - Platform: Windows 10 and later
-   - Profile type: Endpoint protection
+   - Platform: Windows 10 ve üzeri
+   - Profil türü: Endpoint Protection
 
-4. Select **Settings** > **Windows Encryption**.
+4. **Windows şifrelemesi** > **Ayarlar** ' ı seçin.
 
-5. Configure settings for BitLocker to meet your business needs, and then select **OK**.
+5. BitLocker ayarlarını iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.
 
-6. Complete configuration of additional settings, and then save the profile.
+6. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.
 
-### <a name="manage-bitlocker"></a>Manage BitLocker
+### <a name="manage-bitlocker"></a>BitLocker 'ı yönetme
 
-After Intune encrypts a Windows 10 device with BitLocker, you can view and retrieve BitLocker recovery keys when you view the Intune [encryption report](encryption-monitor.md).
+Intune bir Windows 10 cihazını BitLocker ile şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken BitLocker kurtarma anahtarlarını görüntüleyebilir ve alabilirsiniz.
 
-### <a name="rotate-bitlocker-recovery-keys"></a>Rotate BitLocker recovery keys
+### <a name="rotate-bitlocker-recovery-keys"></a>BitLocker kurtarma anahtarlarını döndür
 
-You can use an Intune device action to remotely rotate the BitLocker recovery key of a device that runs Windows 10 version 1909 or later.
+Windows 10 sürüm 1909 veya üstünü çalıştıran bir cihazın BitLocker kurtarma anahtarını uzaktan döndürmek için bir Intune cihaz eylemini kullanabilirsiniz.
 
 #### <a name="prerequisites"></a>Önkoşullar
 
-Devices must meet the following prerequisites to support rotation of the BitLocker recovery key:
+Cihazların BitLocker kurtarma anahtarının döndürmesini desteklemek için aşağıdaki önkoşulları karşılaması gerekir:
 
-- Devices must run Windows 10 version 1909 or later
+- Cihazların Windows 10 sürüm 1909 veya üstünü çalıştırması gerekir
 
-- Azure AD-joined and Hybrid-joined devices must have support for key rotation enabled:
+- Azure AD 'ye katılmış ve Hibriya katılmış cihazlarda anahtar döndürme özelliğinin etkinleştirilmesi için destek bulunmalıdır:
 
-  - **Client-driven recovery password rotation**
+  - **İstemci tabanlı kurtarma parolası döndürme**
 
-  This setting is found under *Windows Encryption* as part of a device configuration policy for Windows 10 Endpoint Protection.
+  Bu ayar, Windows 10 Endpoint Protection cihaz yapılandırma ilkesinin bir parçası olarak *Windows şifrelemesi* altında bulunur.
   
-#### <a name="to-rotate-the-bitlocker-recovery-key"></a>To rotate the BitLocker recovery key
+#### <a name="to-rotate-the-bitlocker-recovery-key"></a>BitLocker kurtarma anahtarını döndürmek için
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
 2. **Cihazlar** > **Tüm cihazlar**’ı seçin.
 
-3. In the list of devices that you manage, select a device, select **More**, and then select the **BitLocker key rotation** device remote action.
+3. Yönettiğiniz cihazların listesinde bir cihaz seçin, **daha fazla**' yı seçin ve ardından **BitLocker anahtar döndürme** cihazı uzak eylemi ' ni seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Create [a device compliance](compliance-policy-create-windows.md) policy.
+[Bir cihaz uyumluluk](compliance-policy-create-windows.md) ilkesi oluşturun.
 
-Use the encryption report, to manage:
+Yönetmek için şifreleme raporunu kullanın:
 
-- [BitLocker recovery keys](encryption-monitor.md#bitlocker-recovery-keys)
-- [FileVault recovery keys](encryption-monitor.md#filevault-recovery-keys)
+- [BitLocker kurtarma anahtarları](encryption-monitor.md#bitlocker-recovery-keys)
+- [Filekasası kurtarma anahtarları](encryption-monitor.md#filevault-recovery-keys)
 
-Review the encryption settings you can configure with Intune for:
+Intune ile yapılandırabileceğiniz şifreleme ayarlarını inceleyerek şunları yapabilirsiniz:
 
-- [BitLocker](endpoint-protection-windows-10.md#windows-encryption)
+- [Kurulumu](endpoint-protection-windows-10.md#windows-encryption)
 - [FileVault](endpoint-protection-macos.md#filevault)

@@ -1,7 +1,7 @@
 ---
 title: Uygulamalardan yalnızca şirket verilerini temizleme
 titleSuffix: Microsoft Intune
-description: Learn how to selectively wipe only corporate data from Intune-managed apps with Microsoft Intune.
+description: Microsoft Intune ile yalnızca şirket verilerini Intune tarafından yönetilen uygulamalardan seçerek silmeyi öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -32,40 +32,40 @@ ms.locfileid: "74390417"
 Cihaz kaybolduğunda veya çalındığında ya da çalışan şirketten ayrıldığında, şirket uygulama verilerinin cihazdan kaldırıldığından emin olmak istersiniz. Ancak özellikle cihaz çalışana aitse kişisel verilerin kaldırılmasını istemeyebilirsiniz.
 
 >[!NOTE]
-> The iOS, Android, and Windows 10 platforms are the only platforms currently supported for wiping corporate data from Intune managed apps. Intune managed apps are applications that include the Intune APP SDK and have a licensed user account for your organization. Deployment of Application Protection Policies are not required to enable app selective wipe.
+> İOS, Android ve Windows 10 platformları, şu anda Intune tarafından yönetilen uygulamalardan şirket verilerini silmek için desteklenen platformlardır. Intune ile yönetilen uygulamalar, Intune uygulama SDK 'sını içeren ve kuruluşunuz için lisanslı bir kullanıcı hesabına sahip olan uygulamalardır. Uygulama koruma Ilkelerinin dağıtımı, uygulama seçmeli silme özelliğini etkinleştirmek için gerekli değildir.
 
 Şirket uygulaması verilerini seçmeli olarak silmek için bu konu başlığındaki adımları kullanarak bir silme isteği oluşturun. İstek tamamlandıktan sonra, uygulama cihaz üzerinde ilk kez çalıştığında şirket verileri uygulamadan kaldırılır. Silme isteğine ek olarak, Uygulama Koruma İlkeleri (APP) Erişim ayarlarının koşullarına uyulmadığında yeni bir eylem olarak kuruluşunuzun verilerinin seçmeli silinmesini yapılandırabilirsiniz. Bu özellik, önceden yapılandırılmış ölçütler temelinde hassas kuruluş verilerini otomatik olarak korumanıza ve uygulamalardan kaldırmanıza yardımcı olur.
 
 >[!IMPORTANT]
 > Uygulamadan yerel adres defterine doğrudan eşitlenen kişiler kaldırılır. Yerel adres defterinden başka bir dış kaynağa eşitlenen kişiler silinemez. Şu anda bu özellik yalnızca Microsoft Outlook uygulaması için geçerlidir.
 
-## <a name="deployed-wip-policies-without-user-enrollment"></a>Deployed WIP policies without user enrollment
-Windows Information Protection (WIP) policies can be deployed without requiring MDM users to enroll their Windows 10 device. Bu yapılandırma, kullanıcıların Windows cihazlarının yönetimini sürdürmesini sağlarken şirketlerin de kurumsal belgelerini WIP yapılandırmasına göre korumasını sağlar. Belgeler bir kez bir WIP ilkesiyle korunduktan sonra korumalı veriler bir Intune yöneticisi tarafından seçmeli olarak silinebilir. Kullanıcı ve cihaz seçilerek ve bir silme isteği gönderilerek WIP İlkesi aracılığıyla korunan tüm veriler kullanılamaz hale getirilir. From the Intune in the Azure portal, select **Client app** > **App selective wipe**. Daha fazla bilgi için bkz. [Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma](windows-information-protection-policy-create.md).
+## <a name="deployed-wip-policies-without-user-enrollment"></a>Kullanıcı kaydı olmadan dağıtılmış WıP ilkeleri
+Windows Information Protection (WıP) ilkeleri, MDM kullanıcılarının Windows 10 cihazını kaydetmesine gerek kalmadan dağıtılabilir. Bu yapılandırma, kullanıcıların Windows cihazlarının yönetimini sürdürmesini sağlarken şirketlerin de kurumsal belgelerini WIP yapılandırmasına göre korumasını sağlar. Belgeler bir kez bir WIP ilkesiyle korunduktan sonra korumalı veriler bir Intune yöneticisi tarafından seçmeli olarak silinebilir. Kullanıcı ve cihaz seçilerek ve bir silme isteği gönderilerek WIP İlkesi aracılığıyla korunan tüm veriler kullanılamaz hale getirilir. Azure portal Intune 'da, **istemci uygulaması** > **uygulama seçmeli silme**' yi seçin. Daha fazla bilgi için bkz. [Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma](windows-information-protection-policy-create.md).
 
 ## <a name="create-a-wipe-request"></a>Temizleme isteği oluşturma
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. In the Intune pane, select **Client apps** > **App selective wipe** > **Create wipe request**.<br>
-   The **Create wipe request** pane is displayed.
-3. Click **Select user**, choose the user whose app data you want to wipe, and click **Select** at the bottom of the **Select user** pane.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. Intune bölmesinde, **uygulama seçmeli silme** > **silme Isteği oluştur** > **istemci uygulamaları** ' nı seçin.<br>
+   **Temizleme Isteği oluştur** bölmesi görüntülenir.
+3. **Kullanıcı Seç**' e tıklayın, uygulama verilerini silmek istediğiniz kullanıcıyı seçin ve **Kullanıcı Seç** bölmesinin en altında bulunan **Seç** ' e tıklayın.
 
-    ![Screenshot of the 'Select user' pane](./media/apps-selective-wipe/apps-selective-wipe-01.png)
+    ![' Kullanıcı Seç ' bölmesinin ekran görüntüsü](./media/apps-selective-wipe/apps-selective-wipe-01.png)
 
-4. Click **Select the device**, choose the device, and click **Select** at the bottom of the **Select Device** pane.
+4. **Cihazı seç**' e tıklayın, cihazı seçin ve **cihaz Seç** bölmesinin en altında bulunan **Seç** ' e tıklayın.
 
-    ![Screenshot of 'Create wipe request' pane where device is selected](./media/apps-selective-wipe/apps-selective-wipe-02.png)
+    ![Cihazın seçildiği ' temizleme isteği oluştur ' bölmesinin ekran görüntüsü](./media/apps-selective-wipe/apps-selective-wipe-02.png)
 
-5. Click **Create** to make a wipe request.
+5. Silme isteği **oluşturmak Için oluştur** ' a tıklayın.
 
 Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur ve bu isteklerle temizleme isteği ile ilişkilendirilmiş kullanıcıyı izler.
 
-   ![Screenshot of 'Client apps - App selective wipe' pane](./media/apps-selective-wipe/apps-selective-wipe-03.png)
+   ![' Istemci uygulamalar-uygulama seçmeli silme ' bölmesinin ekran görüntüsü](./media/apps-selective-wipe/apps-selective-wipe-03.png)
 
 ## <a name="monitor-your-wipe-requests"></a>Silme isteklerinizi izleme
 
 Temizleme isteğinin genel durumunu gösteren ve bekleyen isteklerle hataların sayısını içeren bir özet raporunuz olabilir. Daha fazla bilgi almak için şu adımları izleyin:
 
-1. On the **Client Apps** > **App selective wipe** pane, you can see the list of your requests grouped by users. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
+1. **Istemci uygulamaları** > **uygulama seçmeli silme** bölmesinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
 
     ![Uygulama seçmeli silme bölmesinde temizleme isteği durumunun ekran görüntüsü](./media/apps-selective-wipe/wipe-request-status-1.png)
 

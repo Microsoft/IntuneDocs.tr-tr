@@ -36,7 +36,7 @@ Uyumluluk raporları, cihaz uyumluluğunu gözden geçirmenize ve kuruluşunuzda
 
 **Intune cihaz uyumluluğu panosunu** açın:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 
 2. **Cihaz uyumluluğu** > **Genel Bakış**’ı seçin. **Cihaz uyumluluğu panosu** açılacaktır.
 
@@ -57,9 +57,9 @@ Pano açıldığında tüm uyumluluk raporları ile genel bir bakış elde eders
 
 Bu raporda gezindikçe her bir ayar için uyumluluk durumu da dahil olmak üzere belirli bir cihazda geçerli bazı uyumluluk ilkeleri ve ayarlarını da görebilirsiniz.
 
-### <a name="device-compliance-status"></a>Device compliance status
+### <a name="device-compliance-status"></a>Cihaz uyumluluk durumu
 
-The **Device compliance status** chart shows the compliance states for all Intune enrolled devices. Cihaz uyumluluk durumları iki farklı veritabanında tutulur: Intune ve Azure Active Directory.
+**Cihaz uyumluluk durumu** grafiği, Intune 'a kayıtlı tüm cihazların uyumluluk durumlarını gösterir. Cihaz uyumluluk durumları iki farklı veritabanında tutulur: Intune ve Azure Active Directory.
 
 > [!IMPORTANT]
 > Intune, cihazdaki tüm uyumluluk değerlendirmeleri için cihaz iade zamanlamasını kullanır. [Cihaz iade zamanlaması hakkında daha fazla bilgi edinin](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
@@ -72,14 +72,14 @@ Farklı cihaz uyumluluk ilkesi durumlarının açıklamaları:
 
   - [Uyumlu olmayan cihazlara yönelik eylemler](actions-for-noncompliance.md) hakkında daha fazla bilgi edinin.
 
-- **Değerlendirilmedi**: Yeni kaydedilen cihazlar için ilk durum. Other possible reasons for this state include:
+- **Değerlendirilmedi**: Yeni kaydedilen cihazlar için ilk durum. Bu durumun diğer olası nedenleri şunlardır:
 
-  - Devices that aren't assigned a compliance policy and don't have a trigger to check for compliance
-  - Devices that haven't checked in since the compliance policy was last updated
-  - Devices not associated to a specific user, such as:
-    - iOS devices purchased through Apple's Device Enrollment Program (DEP) that don't have user affinity
-    - Android kiosk or Android Enterprise dedicated devices
-  - Devices enrolled with a device enrollment manager (DEM) account
+  - Uyumluluk ilkesi atanmamış ve uyumluluğu denetlemek için bir tetikleyicisi olmayan cihazlar
+  - Uyumluluk ilkesinin son güncelleştirilme sonrasında iade edilmemiş cihazlar
+  - Belirli bir kullanıcıyla ilişkilendirilmemiş cihazlar, örneğin:
+    - Apple 'ın Kullanıcı benzeşimi olmayan Aygıt Kayıt Programı (DEP) aracılığıyla satın alınan iOS cihazları
+    - Android bilgi noktası veya Android kurumsal adanmış cihazlar
+  - Cihaz Kayıt Yöneticisi (DEM) hesabıyla kaydedilen cihazlar
 
 - **Uyumsuz**: Cihaz, bir veya daha fazla cihaz uyumluluk ilkesi ayarını uygulayamadı. Veya kullanıcı ilkelere uyum sağlamadı.
 
@@ -98,7 +98,7 @@ Farklı cihaz uyumluluk ilkesi durumlarının açıklamaları:
 
 ![Uyumsuz durumunu seçme](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-That action opens the **Device compliance** window, and displays devices in a **Device status** chart. The chart shows you more details on the devices in that state, including operating system platform, last check-in date, and more. 
+Bu eylem **cihaz uyumluluk** penceresini açar ve cihazları bir **cihaz durumu** grafiğinde görüntüler. Grafik, işletim sistemi platformu, son iade tarihi ve daha fazlası dahil olmak üzere söz konusu durumdaki cihazlar hakkında daha fazla ayrıntı gösterir. 
 
 ![Pano görüntüsü, bu durumdaki cihazlar hakkında daha fazla ayrıntı sağlar](./media/compliance-policy-monitor/drill-down-details.png)
 
@@ -108,21 +108,21 @@ Belirli bir kullanıcıya ait tüm cihazları görmek istiyorsanız kullanıcın
 
 ![Grafikteki sonuçları değiştirmek için Filtre ve Sütun’u seçme](./media/compliance-policy-monitor/filter-columns.png)
 
-When you select the **Filter** button, the filter fly-out opens with more options, including the **Compliance** state, **Jailbroken** devices, and more. Sonuçları güncelleştirmek için filtreyi **Uygulayın**.
+**Filtre** düğmesini seçtiğinizde, filtre, **Uyumluluk** durumu, **jailbreak uygulanmış** cihazları ve daha fazlası dahil olmak üzere daha fazla seçenek ile açılır. Sonuçları güncelleştirmek için filtreyi **Uygulayın**.
 
 Grafik çıkışında sütun eklemek ve kaldırmak için **Sütunlar** özelliğini kullanın. Örneğin **Kullanıcı asıl adı**, cihazda kayıtlı e-posta adreslerini gösterebilir. Sonuçları güncelleştirmek için sütunları **Uygulayın**.
 
 #### <a name="device-details"></a>Cihaz ayrıntıları
 
-In the **Device details** chart, select a specific device, and then select **Device compliance**:
+**Cihaz ayrıntıları** grafiğinde, belirli bir cihaz seçin ve ardından **cihaz uyumluluğu**' nu seçin:
 
 ![Belirli bir cihazı ve daha sonra Cihaz Uyumluluğu’nu seçerek uygulanan uyumluluk ilkelerini görüntüleme](./media/compliance-policy-monitor/see-policies-applied-specific-device.png)
 
-Intune displays more details on the device compliance policy settings applied on that device. Belirli bir ilkeyi seçtiğinizde ilkedeki tüm ayarlar gösterilir.
+Intune, bu cihaza uygulanan cihaz uyumluluk ilkesi ayarları hakkında daha fazla ayrıntı görüntüler. Belirli bir ilkeyi seçtiğinizde ilkedeki tüm ayarlar gösterilir.
 
-### <a name="devices-without-compliance"></a>Devices without compliance
+### <a name="devices-without-compliance"></a>Uyumlu olmayan cihazlar
 
-On the *Compliance status* page, next to the *Policy compliance* chart, you can select the **Devices without compliance policy** tile to view information about devices that don't have any compliance policies assigned:
+Uyumluluk *durumu* sayfasında, *ilke uyumluluk* grafiği ' nin yanında, uyumluluk ilkeleri atanmamış cihazlarla ilgili bilgileri görüntülemek Için **Uyumluluk ilkesi olmayan cihazlar** kutucuğunu seçebilirsiniz:
 
 ![Uyumluluk ilkesi olmayan cihazları görüntüleme](./media/compliance-policy-monitor/devices-without-policies.png)
 
@@ -132,7 +132,7 @@ Kutucuğu seçtiğinizde uyumluluk ilkeleri olmayan cihazlar görüntülenir. Ay
 
 - **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle** güvenlik ayarı için uyumluluk ilkesi olmayan cihazları belirlemek önemlidir. Cihazlar belirlendikten sonra bunlara en az bir uyumluluk ilkesi atayabilirsiniz.
 
-  Bu güvenlik ayarı, Intune portalında yapılandırılabilir. To to **Devices** > **Compliance policies** > **Compliance policy settings**. Daha sonra **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle** seçeneğini **Uyumlu** veya **Uyumsuz** olarak ayarlayın. 
+  Bu güvenlik ayarı, Intune portalında yapılandırılabilir. **Cihazlara** , uyumluluk **ilkeleri** > **Uyumluluk ilkesi ayarları** > . Daha sonra **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle** seçeneğini **Uyumlu** veya **Uyumsuz** olarak ayarlayın. 
 
   Bu [Intune hizmetinde güvenlik geliştirmesi](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) hakkında daha fazla bilgi edinin.
 
@@ -140,38 +140,38 @@ Kutucuğu seçtiğinizde uyumluluk ilkeleri olmayan cihazlar görüntülenir. Ay
 
 ### <a name="per-policy-device-compliance"></a>İlkeye göre cihaz uyumluluğu
 
-The **Policy compliance** chart shows you the policies, and how many devices are compliant and noncompliant. 
+**İlke uyumluluk** grafiği, ilkeleri ve kaç cihazın uyumlu ve uyumsuz olduğunu gösterir. 
 
 ![İlke listesi ile ilke için uyumlu ve uyumsuz cihaz sayısını görme](./media/compliance-policy-monitor/idc-8.png)
 
 ### <a name="setting-compliance"></a>Ayar uyumluluğu
 
-The **Setting compliance** chart shows you all device compliance policy settings from all compliance policies, the platforms the policy settings are applied, and the number of noncompliant devices.
+**Ayar uyumluluğu** grafiği tüm uyumluluk ilkelerinden tüm cihaz uyumluluk ilkesi ayarlarını, ilke ayarlarının uygulandığı platformları ve uyumlu olmayan cihazların sayısını gösterir.
 
 ![Farklı ilkelerdeki ayar listesini görme](./media/compliance-policy-monitor/idc-10.png)
 
 > [!NOTE]
-> A policy can be assigned to a device, and a user on that same device. In some scenarios, a device may sync before the user signs in, such as when the device reboots. Compliance may evaluate this user, and show the device as non compliant. This behavior may also show the System Account as a non-compliant user.
+> Bir ilke bir cihaza ve aynı cihazdaki bir kullanıcıya atanabilir. Bazı senaryolarda, cihaz yeniden başlatıldığında olduğu gibi, Kullanıcı oturum açmadan önce bir cihaz eşitlenebilir. Uyumluluk bu kullanıcıyı değerlendirebilir ve cihazı uyumlu değil olarak gösterebilir. Bu davranış, sistem hesabını uyumlu olmayan bir kullanıcı olarak da gösterebilir.
 >
-> This is a known issue with multi-user Windows 10 devices. Any changes or updates on this behavior are announced in [in development](../fundamentals/in-development.md) and/or [what's new](../fundamentals/whats-new.md).
+> Bu, çok kullanıcılı Windows 10 cihazlarındaki bilinen bir sorundur. Bu davranıştaki herhangi bir değişiklik veya güncelleştirme, [geliştirme](../fundamentals/in-development.md) ve [/veya yenilikler](../fundamentals/whats-new.md)' de içinde duyurulur.
 
-## <a name="view-compliance-reports"></a>View compliance reports
+## <a name="view-compliance-reports"></a>Uyumluluk raporlarını görüntüle
 
-In addition to using the charts on *Compliance status*, you can view compliance reports from the *Monitor* page of the Admin Center.
+*Uyumluluk durumundaki*grafikleri kullanmanın yanı sıra, yönetim merkezinin *izleyici* sayfasından Uyumluluk raporlarını görüntüleyebilirsiniz.
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Devices** > **Monitor**, and then from below **Compliance** select the report you want to view. Some of the available compliance reports include:
+2. **Cihazlar** > **İzleyicisi**' ni seçin ve ardından aşağıdaki **Uyumluluk** ' den görüntülemek istediğiniz raporu seçin. Kullanılabilir uyumluluk raporlarının bazıları şunlardır:
 
    - Cihaz uyumluluğu
-   - Noncompliant devices
+   - Uyumsuz cihazlar
    - Uyumluluk ilkesi olmayan cihazlar
    - Ayar uyumluluğu
-   - Policy compliance
-   - Windows health attestation report
+   - İlke uyumluluğu
+   - Windows sistem durumu kanıtlama raporu
    - Tehdit aracısı durumu
 
-For more information about reports, see [Intune reports](../fundamentals/reports.md)
+Raporlar hakkında daha fazla bilgi için bkz. [Intune raporları](../fundamentals/reports.md)
 
 ## <a name="view-status-of-device-policies"></a>Cihaz ilkelerinin durumunu görüntüleme
 
@@ -179,14 +179,14 @@ Platforma göre, ilkelerinizin farklı durumlarını denetleyebilirsiniz. Örne�
 
 Bu özellik cihaz durumu bildirimine eklenmiştir:
 
-1. Select **Devices** > **Compliance policies** > **Policies**. Platform da dahil olmak üzere ilkelerin listesi, ilkenin atanıp atanmadığı ve diğer ayrıntılar gösterilir.
+1. **Cihaz** > **uyumluluk ilkeleri** > **ilkeleri**' ni seçin. Platform da dahil olmak üzere ilkelerin listesi, ilkenin atanıp atanmadığı ve diğer ayrıntılar gösterilir.
 2. Bir ilke seçin ve **Genel Bakış**'ı seçin. Bu görünümde, ilke ataması aşağıdaki durumları içerir:
 
-    - **Succeeded**: Policy is applied
-    - **Error**: The policy failed to apply. Bu ileti, genellikle bir açıklamaya bağlantı veren bir hata kodu görüntüler. 
-    - **Conflict**: Two settings are applied to the same device, and Intune can't sort out the conflict. Yöneticinin gözden geçirmesi gerekir.
-    - **Pending**: The device hasn’t checked in with Intune to receive the policy yet. 
-    - **Not applicable**: The device can't receive the policy. Örneğin ilke, iOS 11.1’e özel bir ayarı güncelleştiriyor ancak cihaz iOS 10 kullanıyor. 
+    - **Başarılı**: ilke uygulandı
+    - **Hata**: ilke uygulanamadı. Bu ileti, genellikle bir açıklamaya bağlantı veren bir hata kodu görüntüler. 
+    - **Çakışma**: aynı cihaza iki ayar uygulanır ve Intune çakışmayı sıralayamazsınız. Yöneticinin gözden geçirmesi gerekir.
+    - **Bekliyor**: cihaz, ilkeyi henüz alacak şekilde Intune ile iade edilmedi. 
+    - **Uygulanamaz**: cihaz ilkeyi alamıyor. Örneğin ilke, iOS 11.1’e özel bir ayarı güncelleştiriyor ancak cihaz iOS 10 kullanıyor. 
 
 3. Bu ilkeyi kullanan cihazlarla ilgili ayrıntıları görmek için, durumlardan birini seçin. Örneğin **Başarılı**'yı seçin. Sonraki pencerede, cihaz adı ve dağıtım durumu gibi belirli cihaz ayrıntıları listelenir.
 

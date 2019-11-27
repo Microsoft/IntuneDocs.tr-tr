@@ -33,7 +33,7 @@ BT yöneticisi olarak, kullanıcılarınızın işlerini yapması için gereken 
 
 ## <a name="get-to-your-devices"></a>Cihazlarınıza ulaşma
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 3. **Cihazlar**’ı seçin. Burada ayrı ayrı tüm cihazlar hakkında ayrıntılı bilgiler ve bu cihazlarla yapabilecekleriniz görüntülenir. Yapabilecekleriniz şöyledir:
 
    - **Genel Bakış**, kayıtlı cihazların görsel anlık görüntüsünü ve kaç tane cihazın Android, iOS vb. gibi farklı platformlar kullandığını gösterir.
@@ -41,7 +41,7 @@ BT yöneticisi olarak, kullanıcılarınızın işlerini yapması için gereken 
 
      **Dışarı Aktar** özelliğini kullanarak tüm cihazların .csv listesini oluşturabilirsiniz. Listenin sınırları 10.000 (Internet Explorer) ve 30.000’dir (Microsoft Edge, Chrome).
 
-     Select any device to [view additional details about that device](device-inventory.md), including hardware details, installed apps, its compliance policy status, and more.
+     Donanım ayrıntıları, yüklü uygulamalar, uyumluluk ilkesi durumu ve daha fazlası dahil olmak üzere [Bu cihazla ilgili ek ayrıntıları görüntülemek](device-inventory.md)için herhangi bir cihaz seçin.
 
    - **Azure AD cihazları**, Azure Active Directory (AD) ile kaydedilen veya bu hizmete katılan cihazların listesini gösterir. [Azure AD cihaz yönetimi](https://docs.microsoft.com/azure/active-directory/device-management-introduction) hakkında daha fazla bilgi edinin.
    - **Cihaz eylemleri**; eylem, eylemin durumu, eylemi kimin başlattığı ve süresi dahil olmak üzere cihazda gerçekleştirilen uzak eylemlerin geçmişini gösterir.
@@ -57,10 +57,10 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
 
 - [Cihaz envanterini görüntüleme](device-inventory.md)
 - Uzak cihaz eylemlerini çalıştırın:
-  - [Devre Dışı Bırak](devices-wipe.md#retire)
+  - [Devre dışı bırak](devices-wipe.md#retire)
   - [Silme](devices-wipe.md#wipe)
   - [Uzaktan kilitleme](device-remote-lock.md)
-  - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
+  - [Geçiş kodunu sıfırla](device-passcode-reset.md)
   - [Etkinleştirme Kilidini Atlama](device-activation-lock-bypass.md) (yalnızca iOS)
   - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
   - [Kayıp modu](device-lost-mode.md) (yalnızca iOS)
@@ -69,8 +69,8 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
   - [Windows 10 PIN sıfırlama](device-windows-pin-reset.md)
   - [Android için uzaktan denetim](teamviewer-support.md)
   - [Cihazı eşitleme](device-sync.md)
-  - [Send custom notification](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
-  - [BitLocker key rotation](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (Windows only)
+  - [Özel bildirim gönderme](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [BitLocker anahtar döndürme](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (yalnızca Windows)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

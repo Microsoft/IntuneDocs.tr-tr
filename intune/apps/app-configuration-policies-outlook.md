@@ -27,18 +27,18 @@ ms.locfileid: "74199158"
 
 iOS ve Android cihazlarda çalışan Microsoft Outlook ayarlarını yapmak için bir yapılandırma ilkesi kullanın. 
 
-For enrolled devices:
+Kayıtlı cihazlar için:
 - Yönetilen iOS cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-ios.md). 
 - Yönetilen Android cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md). 
 
-For unenrolled devices, see [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md) to create an app configuration policy for Outlook for iOS and Android.
+Kayıtlı olmayan cihazlar için, iOS ve Android için Outlook için bir uygulama yapılandırma ilkesi oluşturmak üzere [cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-managed-app.md) bölümüne bakın.
 
-## <a name="configuration-settings"></a>Configuration settings
+## <a name="configuration-settings"></a>Yapılandırma ayarları
 
-When adding a configuration policy in Intune, you can specify settings to configure Microsoft Outlook for iOS and Android. In the Configuration settings pane, you can specify the email account configuration and configure app-specific settings.
+Intune 'a bir yapılandırma ilkesi eklerken, iOS ve Android için Microsoft Outlook 'U yapılandırmak üzere ayarları belirtebilirsiniz. Yapılandırma ayarları bölmesinde, e-posta hesabı yapılandırmasını belirtebilir ve uygulamaya özgü ayarları yapılandırabilirsiniz.
 
-For specific procedural steps and detailed documentation on the app configuration settings Outlook for iOS and Android supports, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+İOS ve Android için Outlook uygulama yapılandırma ayarları hakkında belirli yordamsal adımlar ve ayrıntılı belgeler için, bkz. [iOS ve Android Için Outlook dağıtımı yapılandırma ayarları](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- For more information, see [App configuration policies for Microsoft Intune](app-configuration-policies-overview.md)
+- Daha fazla bilgi için bkz. [Microsoft Intune Için uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md)

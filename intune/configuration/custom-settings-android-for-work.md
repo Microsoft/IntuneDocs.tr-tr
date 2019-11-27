@@ -26,23 +26,23 @@ ms.locfileid: "74319824"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Microsoft Intune’da Android Kurumsal cihazlar için özel ayarlar kullanma
 
-Using Microsoft Intune, you can add or create custom settings for your Android Enterprise Work Profile devices using a "custom profile". Özel profiller, bir Intune özelliğidir. Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini eklemek için tasarlanmıştır.
+Microsoft Intune kullanarak, "özel profil" kullanarak Android kurumsal Iş profili cihazlarınız için özel ayarlar ekleyebilir veya oluşturabilirsiniz. Özel profiller, bir Intune özelliğidir. Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini eklemek için tasarlanmıştır.
 
 Android Kurumsal özel profilleri, Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) ayarlarını kullanarak Android Kurumsal cihazlardaki özellikleri denetler. Bu ayarlar normalde mobil cihaz üreticileri tarafından bu özellikleri denetlemek için kullanılır.
 
-Intune supports the following limited number of Android Enterprise custom profiles:
+Intune, aşağıdaki sınırlı sayıda Android kurumsal özel profili destekler:
 
-- ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [Create a Wi-Fi profile with a pre-shared key](wi-fi-profile-shared-key.md) has some examples.
-- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [Create a per-app VPN profile](android-pulse-secure-per-app-vpn.md) has some examples.
-- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: See the [example](#example) in this article. This setting is also available in the user interface. For more information, see [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
+- ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [önceden paylaşılan anahtarla bir Wi-Fi profili oluşturma](wi-fi-profile-shared-key.md) bazı örneklere sahiptir.
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [uygulama BAŞıNA VPN profili oluşturma](android-pulse-secure-per-app-vpn.md) bazı örneklere sahiptir.
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: Bu makaledeki [örneğe](#example) bakın. Bu ayar Kullanıcı arabiriminde da kullanılabilir. Daha fazla bilgi için bkz. [özelliklere izin vermek veya erişimi kısıtlamak Için Android kurumsal cihaz ayarları](device-restrictions-android-for-work.md).
 
-If you need additional settings, see [OEMConfig for Android Enterprise](android-oem-configuration-overview.md).
+Ek ayarlara ihtiyacınız varsa bkz. [Android Için Oemconfig Enterprise](android-oem-configuration-overview.md).
 
 Bu makale, Android Kurumsal cihazlar için özel profil oluşturma işlemini gösterir. Ayrıca kopyalama ve yapıştırmayı engelleyen bir özel profil örneği sağlar.
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 
@@ -77,7 +77,7 @@ Bu makale, Android Kurumsal cihazlar için özel profil oluşturma işlemini gö
 
 Bu örnekte, Android Kurumsal cihazlarda iş uygulamaları ve kişisel uygulamalar arasında kopyalama ve yapıştırma eylemlerini kısıtlayan bir özel profil oluşturacaksınız.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
 3. Aşağıdaki ayarları girin:
 

@@ -1,6 +1,6 @@
 ---
-title: Create a custom role in Intune
-description: Learn how to create a custom role in Microsoft Intune.
+title: Intune 'da özel bir rol oluşturma
+description: Microsoft Intune özel rol oluşturmayı öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -24,9 +24,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74390697"
 ---
-# <a name="create-a-custom-role-in-intune"></a>Create a custom role in Intune
+# <a name="create-a-custom-role-in-intune"></a>Intune 'da özel bir rol oluşturma
 
-You can create a custom Intune role that includes any permissions required for a specific job function. Örneğin bir BT departmanı grubu, uygulamaları, ilkeleri ve yapılandırma profillerini yönetiyorsa tüm bu izinleri tek bir özel role ekleyebilirsiniz. After creating a custom role, you can [assign](assign-role.md) it to any users that need those permissions.
+Belirli bir iş işlevi için gerekli izinleri içeren özel bir Intune rolü oluşturabilirsiniz. Örneğin bir BT departmanı grubu, uygulamaları, ilkeleri ve yapılandırma profillerini yönetiyorsa tüm bu izinleri tek bir özel role ekleyebilirsiniz. Özel bir rol oluşturduktan sonra, bu izinlere ihtiyacı olan tüm kullanıcılara [atayabilirsiniz](assign-role.md) .
 
 Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de aşağıdaki izinlerden birine sahip olması gerekir:
 - **Genel Yönetici**
@@ -38,33 +38,33 @@ Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de a
 
 2. Soldaki menüden **Tüm hizmetler**’i seçtikten sonra metin kutusu filtresine **Intune** yazın.
 
-3. Choose **Intune** > **Roles** > **All roles** > **Add**.
+3. **Add** > **tüm roller** > **Intune** > **rolleri** ' ni seçin.
 
 4. **Özel Rol Ekle** dikey penceresinde yeni rol için ad ve açıklama girin, ardından **İzinler**'e tıklayın.
 
 5. **İzinler** dikey penceresinde, bu rolle birlikte kullanmak istediğiniz izinleri seçin.
 
-6. On the **Scope (Tags)** blade, choose the tags for this role. This role can access resources that also have these tags.
+6. **Kapsam (Etiketler)** dikey penceresinde bu rolün etiketlerini seçin. Bu rol, bu etiketlerin de bulunduğu kaynaklara erişebilir.
 
 7. İşiniz bittiğinde **Tamam**’ı seçin.
 
-8. **Özel Rol Ekle** dikey penceresinde **Oluştur**’a tıklayın. The new role is displayed in the list on the **Intune roles - All roles** blade.
+8. **Özel Rol Ekle** dikey penceresinde **Oluştur**’a tıklayın. Yeni rol, **Intune rolleri-tüm roller** dikey penceresinde listede görüntülenir.
 
 
-## <a name="copy-a-role"></a>Copy a role
+## <a name="copy-a-role"></a>Rolü kopyalama
 
-You can also copy an existing role.
+Ayrıca, varolan bir rolü de kopyalayabilirsiniz.
 
-1. Sign into the [Azure portal](https://portal.azure.com) with your Intune credentials and select **Intune**.
+1. [Azure Portal](https://portal.azure.com) Intune kimlik bilgilerinizle oturum açın ve **Intune**' u seçin.
 
-2. Select **Roles** > **All roles** > select a role in the list > **Duplicate**.
+2. **Tüm roller** > **Roller** ' i seçin > listede bir rol seçin > **Yinele**' ye tıklayın.
 
-3. Under **Duplicate role**, enter a name. Make sure to use a unique name.
+3. **Yinelenen rol**altında bir ad girin. Benzersiz bir ad kullandığınızdan emin olun.
 
-4. All the permissions and scope tags from the original role will already be selected. You can subsequently change the duplicate role's **Name**, **Description**, **Permissions**, and **Scope (Tags)** .
+4. Özgün rolün tüm izinleri ve kapsam etiketleri zaten seçilmeyecektir. Daha sonra yinelenen rolün **adını**, **açıklamasını**, **izinlerini**ve **kapsamını (etiketleri)** değiştirebilirsiniz.
 
 5. **Oluştur**’u seçin. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
-- [Assign a role to a user](assign-role.md)
-- [Learn more about role-based access control in Intune](role-based-access-control.md)
+- [Bir kullanıcıya rol atama](assign-role.md)
+- [Intune 'da rol tabanlı erişim denetimi hakkında daha fazla bilgi edinin](role-based-access-control.md)

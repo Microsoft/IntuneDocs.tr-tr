@@ -27,7 +27,7 @@ ms.locfileid: "74409692"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune ile Mobile Threat Defense (MTD) cihaz uyumluluk ilkesi oluşturma
 
-Intune ile MTD, mobil cihazlarda tehditleri algılayıp risk değerlendirmesi yapmanıza yardımcı olur. Bir cihazın uyumlu olup olmadığını belirlemek üzere risk değerlendirmesi yapan bir Intune cihaz uyumluluk ilkesi kuralı oluşturabilirsiniz. You can then use a [Conditional Access policy](create-conditional-access-intune.md) to block access to services based on device compliance.
+Intune ile MTD, mobil cihazlarda tehditleri algılayıp risk değerlendirmesi yapmanıza yardımcı olur. Bir cihazın uyumlu olup olmadığını belirlemek üzere risk değerlendirmesi yapan bir Intune cihaz uyumluluk ilkesi kuralı oluşturabilirsiniz. Daha sonra, cihaz uyumluluğuna göre hizmetlere erişimi engellemek için bir [koşullu erişim ilkesi](create-conditional-access-intune.md) kullanabilirsiniz.
 
 > [!NOTE]
 > Bu bilgiler, tüm Mobile Threat Defense iş ortakları için geçerlidir.
@@ -42,15 +42,15 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>MTD cihaz uyumluluk ilkesi oluşturmak için
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Device** > **Compliance policies** > **Create policy**.
+2. **Ilke oluştur** > **cihaz** > **uyumluluk ilkeleri** ' ni seçin.
 
-3. Specify a device compliance policy **Name**, **Description**, select the **Platform**, then select **Configure** under the **Settings** section.
+3. Bir cihaz uyumluluk ilkesi **adı**belirtin, **Açıklama**, **platformu**seçin ve **Ayarlar** bölümü altında **Yapılandır** ' ı seçin.
 
 4. **Uyumluluk ilkesi** bölmesinden **Cihaz Sistem Durumu**’nu seçin.
 
-5. On the **Device Health** pane, choose the Mobile Threat Level from the drop-down list for **Require the device to be at or under the Device Threat Level**.
+5. **Cihaz durumu** bölmesinde, cihazın **cihaz tehdit düzeyinde veya altında olmasını gerektir ' ın**açılan listesinden mobil tehdit düzeyini seçin.
 
    - **Güvenli**: En güvenli düzeydir. Cihazda herhangi bir tehdit mevcut olamaz ve yine de şirket kaynaklarına erişebilir. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
 
@@ -60,22 +60,22 @@ MTD ile cihaz uyumluluk ilkesinin önkoşulları:
 
    - **Yüksek**: Bu, en az güvenli düzeydir. Bu, tüm tehdit düzeylerine izin verir ve Mobile Threat Defense’i yalnızca raporlama amacıyla kullanır. Cihazlar, bu ayar ile MTD uygulamasının etkin olmasını gerektirir.
 
-6. Select **OK** twice, then select **Create** to create the policy.
+6. **Tamam** ' ı iki kez seçin ve ilkeyi oluşturmak için **Oluştur** ' u seçin.
 
 > [!IMPORTANT]
-> If you create Conditional Access policies for Office 365 or other services, the device compliance evaluation is assessed and noncompliant devices are blocked from accessing corporate resources until the threat is resolved in the device.
+> Office 365 veya diğer hizmetler için koşullu erişim ilkeleri oluşturursanız, cihaz uyumluluk değerlendirmesi değerlendirilir ve uyumlu olmayan cihazların, tehdit cihazda çözümlenene kadar kurumsal kaynaklara erişmesi engellenir.
 
 ## <a name="to-assign-an-mtd-device-compliance-policy"></a>MTD cihaz uyumluluk ilkesini atamak için
 
-To assign a device compliance policy to users:
+Kullanıcılara bir cihaz uyumluluk ilkesi atamak için:
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Device** > **Compliance policies**.
+2. **Cihaz** > **uyumluluk ilkeleri**' ni seçin.
 
-3. Select the policy you want to assign to users, and then select **Assignments**. Use the available options to *Include* and *Exclude* groups to receive this policy.  
+3. Kullanıcılara atamak istediğiniz ilkeyi seçin ve ardından **atamalar**' ı seçin. Bu ilkeyi almak üzere grupları *dahil* etmek ve *dışlamak* için kullanılabilir seçenekleri kullanın.  
 
-4. Select Save to complete the assignment. When you save the assignment, the policy deploys to your selected users and their devices are evaluated for compliance.
+4. Atamayı gerçekleştirmek için Kaydet ' i seçin. Atamayı kaydettiğinizde, ilke seçili kullanıcılarınıza dağıtılır ve cihazları uyumluluk için değerlendirilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

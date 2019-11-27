@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure’da cihaz profilleri oluşturma | Microsoft Docs
-description: Microsoft Intune’da cihaz yapılandırma profili ekleyin veya yapılandırın. Select the platform type, configure the settings, add a scope tag.
+description: Microsoft Intune’da cihaz yapılandırma profili ekleyin veya yapılandırın. Platform türünü seçin, ayarları yapılandırın, bir kapsam etiketi ekleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -32,36 +32,36 @@ Bu makalede:
 
 - Profil oluşturma adımları listelenmiştir.
 - Profili "filtrelemek" için kapsam etiketi ekleme adımları gösterilmektedir.
-- Describes applicability rules on Windows 10 devices, and shows you how to create a rule.
+- Windows 10 cihazlarında uygulanabilirlik kurallarını açıklar ve bir kuralın nasıl oluşturulacağını gösterir.
 - Cihazların profilleri ve profil güncelleştirmelerini aldığı iade yenileme döngüsü süreleri listelenmiştir.
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Devices** > **Configuration profiles**. You have the following options:
+2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Aşağıdaki seçenekleriniz vardır:
 
-    - **Overview**: Lists the status of your profiles, and provides additional details on the profiles you assigned to users and devices.
-    - **Manage**: Create device profiles, upload custom [PowerShell scripts](../apps/intune-management-extension.md) to run within the profile, and add data plans to devices using [eSIM](esim-device-configuration.md).
-    - **Monitor**: Check the status of a profile for success or failure, and also view logs on your profiles.
-    - **Setup**: Add a SCEP or PFX certificate authority, or enable [Telecom Expense Management](telecom-expenses-monitor.md) in the profile.
+    - **Genel bakış**: profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar.
+    - **Yönetin**: cihaz profilleri oluşturun, profil içinde çalıştırılacak özel [PowerShell betikleri](../apps/intune-management-extension.md) yükleyin ve [esım](esim-device-configuration.md)kullanarak cihazlara veri planları ekleyin.
+    - **İzleme**: bir profilin başarı veya başarısızlık durumunu denetleyin ve ayrıca profilinizde günlükleri görüntüleyin.
+    - **Kurulum**: bir SCEP veya PFX Sertifika yetkilisi ekleyin ya da profilde [Telekom gider yönetimini](telecom-expenses-monitor.md) etkinleştirin.
 
-3. Select **Create profile**. Aşağıdaki özellikleri girin:
+3. **Profil oluştur**' u seçin. Aşağıdaki özellikleri girin:
 
-   - **Name**: Enter a descriptive name for the profile. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin **Şirketin tamamı için WP e-posta profili** gibi bir profil adı kullanabilirsiniz.
+   - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin **Şirketin tamamı için WP e-posta profili** gibi bir profil adı kullanabilirsiniz.
    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-   - **Platform**: Choose the platform of your devices. Seçenekleriniz şunlardır:  
+   - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:  
 
-       - **Outlook Web Access (OWA)**
+       - **Android**
        - **Android kurumsal**
-       - **iOS/iPadOS**
+       - **iOS/ıpados**
        - **macOS**
        - **Windows Phone 8.1**
        - **Windows 8.1 ve üzeri**
        - **Windows 10 ve üzeri**
 
-   - **Profile type**: Select the type of settings you want to create. Gösterilen liste, seçtiğiniz **platforma** bağlıdır.
-   - **Settings**: The following articles describe the settings for each profile type:
+   - **Profil türü**: oluşturmak istediğiniz ayarların türünü seçin. Gösterilen liste, seçtiğiniz **platforma** bağlıdır.
+   - **Ayarlar**: aşağıdaki makaleler her profil türü için ayarları anlatmaktadır:
 
        - [Yönetim şablonları](administrative-templates-windows.md)
        - [Özel](../custom-settings-configure.md)
@@ -70,13 +70,13 @@ Bu makalede:
        - [Cihaz kısıtlamaları](device-restrictions-configure.md)
        - [Sürüm yükseltme ve mod değiştirme](edition-upgrade-configure-windows-10.md)
        - [Eğitim](education-settings-configure.md)
-       - [Email](email-settings-configure.md)
+       - [E-posta](email-settings-configure.md)
        - [Uç nokta koruması](../protect/endpoint-protection-configure.md)
        - [Kimlik koruması](../protect/identity-protection-configure.md)  
        - [Bilgi noktası](kiosk-settings.md)
        - [PKCS sertifikası](../protect/certficates-pfx-configure.md)
-       - [PKCS imported certificate](../protect/certificates-imported-pfx-configure.md)
-       - [Preference file](preference-file-settings-macos.md)
+       - [PKCS içeri aktarılan sertifika](../protect/certificates-imported-pfx-configure.md)
+       - [Tercih dosyası](preference-file-settings-macos.md)
        - [SCEP sertifikası](../protect/certificates-scep-configure.md)
        - [Güvenilir sertifika](../protect/certificates-configure.md)
        - [Güncelleştirme ilkeleri](../software-updates-ios.md)
@@ -85,7 +85,7 @@ Bu makalede:
        - [Microsoft Defender ATP](../protect/advanced-threat-protection.md)
        - [Windows Bilgi Koruması](../protect/windows-information-protection-configure.md)
 
-     For example, if you select **iOS/iPadOS** for the platform, your profile type options look similar to the following profile:
+     Örneğin, platform için **iOS/ıpados** ' ı seçerseniz, profil türü seçenekleriniz aşağıdaki profile benzer şekilde görünür:
 
      ![Intune'da iOS profili oluşturma](./media/device-profile-create/create-device-profile.png)
 
@@ -103,88 +103,88 @@ Kapsam etiketleri ve yapabilecekleriniz hakkında daha fazla bilgi için bkz. [D
 2. **Ekle**'yi seçerek yeni bir kapsam etiketi oluşturun. İsterseniz listedeki kapsam etiketlerinden birini de seçebilirsiniz.
 3. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
-## <a name="applicability-rules"></a>Applicability rules
+## <a name="applicability-rules"></a>Uygulanabilirlik kuralları
 
-Applies to:
+Şunun için geçerlidir:
 
 - Windows 10 ve üzeri
 
-Applicability rules allow administrators to target devices in a group that meet specific criteria. For example, you create a device restrictions profile that applies to the **All Windows 10 devices** group. And, you only want the profile assigned to devices running Windows 10 Enterprise.
+Uygulanabilirlik kuralları, yöneticilerin belirli ölçütlere uyan bir gruptaki cihazları hedeflemesini sağlar. Örneğin, **tüm Windows 10 cihazları** grubuna uygulanan bir cihaz kısıtlama profili oluşturursunuz. Ancak, profili yalnızca Windows 10 Enterprise çalıştıran cihazlara atanmasını istersiniz.
 
-To do this task, create an **applicability rule**. These rules are great for the following scenarios:
+Bu görevi yapmak için bir **uygulanabilirlik kuralı**oluşturun. Bu kurallar aşağıdaki senaryolar için uygundur:
 
-- You use Windows 10 Education (EDU). At Bellows College, you want to target all Windows 10 EDU devices between RS3 and RS4.
-- You want to target all users in Human Resources at Contoso, but only want Windows 10 Professional or Enterprise devices.
+- Windows 10 eğitim (EDU) kullanıyorsunuz. Bellows üniversite 'de, tüm Windows 10 EDU cihazlarını RS3 ve RS4 arasında hedeflemek istiyorsunuz.
+- Contoso 'daki Insan kaynakları ' nda tüm kullanıcıları hedeflemek istiyorsunuz, ancak yalnızca Windows 10 Professional veya Kurumsal cihazları istiyorum.
 
-To approach these scenarios, you:
+Bu senaryolara yaklaşımak için şunları yapın:
 
-- Create a devices group that includes all devices at Bellows College. In the profile, add an applicability rule so it applies if the OS minimum version is `16299` and the maximum version is `17134`. Assign this profile to the Bellows College devices group.
+- Bellows üniversite 'deki tüm cihazları içeren bir cihaz grubu oluşturun. Profilde, işletim sistemi en düşük sürümü `16299` ve en yüksek sürüm `17134`, bu nedenle uygulanacak bir uygulanabilirlik kuralı ekleyin. Bu profili Bellows okul cihazları grubuna atayın.
 
-  When it's assigned, the profile applies to devices between the minimum and maximum versions you enter. For devices that aren't between the minimum and maximum versions you enter, their status shows as **Not applicable**.
+  Atandığında profil, girdiğiniz en düşük ve en yüksek sürüm arasındaki cihazlara uygulanır. Girdiğiniz en düşük ve en yüksek sürümler arasında olmayan cihazlarda, durumları **geçerli değil**olarak gösterilir.
 
-- Create a users group that includes all users in Human Resources (HR) at Contoso. In the profile, add an applicability rule so it applies to devices running Windows 10 Professional or Enterprise. Assign this profile to the HR users group.
+- Contoso 'da Insan kaynakları (HR) içindeki tüm kullanıcıları içeren bir Kullanıcı grubu oluşturun. Profilde, Windows 10 Professional veya Enterprise çalıştıran cihazlara uygulanacak bir uygulanabilirlik kuralı ekleyin. Bu profili HR kullanıcıları grubuna atayın.
 
-  When it's assigned, the profile applies to devices running Windows 10 Professional or Enterprise. For devices that aren't running these editions, their status shows as **Not applicable**.
+  Atandığında, profil Windows 10 Professional veya Enterprise çalıştıran cihazlara uygulanır. Bu sürümleri çalıştırmayan cihazlarda, durumları **geçerli değil**olarak gösterilir.
 
-- If there are two profiles with the exact same settings, then the profile without an applicability rule is applied. 
+- Tam olarak aynı ayarlara sahip iki profil varsa, bir uygulanabilirlik kuralı olmayan profil uygulanır. 
 
-  For example, ProfileA targets the Windows 10 devices group, enables BitLocker, and doesn’t have an applicability rule. ProfileB targets the same Windows 10 devices group, enables BitLocker, and has an applicability rule to only apply the profile to Windows 10 Enterprise.
+  Örneğin, ProfileA, Windows 10 cihazlar grubunu hedefler, BitLocker 'ı etkinleştirmez ve bir uygulanabilirlik kuralına sahip değildir. ProfileB aynı Windows 10 cihazları grubunu hedefler, BitLocker 'ı sağlar ve profili yalnızca Windows 10 Enterprise 'a uygulamak için bir uygulanabilirlik kuralına sahiptir.
 
-  When both profiles are assigned, ProfileA is applied because it doesn’t have an applicability rule. 
+  Her iki profil atandığında, bir uygulanabilirlik kuralına sahip olmadığından ProfileA uygulanır. 
 
-When you assign the profile to the groups, the applicability rules act as a filter, and only target the devices that meet your criteria.
+Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlevi görür ve yalnızca ölçütlerinizi karşılayan cihazları hedefleyin.
 
-### <a name="add-a-rule"></a>Add a rule
+### <a name="add-a-rule"></a>Kural Ekle
 
-1. Select **Applicability Rules**. You can choose the **Rule**, **Property**, and **OS edition**:
+1. **Uygulanabilirlik kuralları**' nı seçin. **Kural**, **özellik**ve **işletim sistemi sürümünü**seçebilirsiniz:
 
-    ![Add an applicability rule to a device configuration profile in Microsoft Intune](./media/device-profile-create/applicability-rules.png)
+    ![Microsoft Intune cihaz yapılandırma profiline uygulanabilirlik kuralı ekleme](./media/device-profile-create/applicability-rules.png)
 
-2. In **Rule**, choose if you want to include or exclude users or groups. Seçenekleriniz şunlardır:
+2. **Kuralda**, kullanıcıları veya grupları dahil etmek veya dışlamak istediğinizi seçin. Seçenekleriniz şunlardır:
 
-    - **Assign profile if**: Includes users or groups that meet the criteria you enter.
-    - **Don't assign profile if**: Excludes users or groups that meet the criteria you enter.
+    - **Profil ata**: girdiğiniz ölçütlere uyan kullanıcıları veya grupları içerir.
+    - Şu **durumlarda profil atamayın**: girdiğiniz ölçütlere uyan kullanıcıları veya grupları dışlar.
 
-3. In **Property**, choose your filter. Seçenekleriniz şunlardır: 
+3. **Özellik**' de filtrenizi seçin. Seçenekleriniz şunlardır: 
 
-    - **OS edition**: In the list, check the Windows 10 editions you want to include (or exclude) in your rule.
-    - **OS version**: Enter the **min** and **max** Windows 10 version numbers of you want to include (or exclude) in your rule. Both values are required.
+    - **Işletim sistemi sürümü**: listede, kuralınıza dahil etmek istediğiniz Windows 10 sürümlerini (veya hariç tutmak) denetleyin.
+    - **Işletim sistemi sürümü**: kuralınıza dahil etmek (veya dışlamak) istediğiniz **En düşük** ve **en yüksek** Windows 10 sürüm numaralarını girin. Her iki değer de gereklidir.
 
-      For example, you can enter `10.0.16299.0` (RS3 or 1709) for minimum version and `10.0.17134.0` (RS4 or 1803) for maximum version. Or, you can be more granular and enter `10.0.16299.001` for minimum version and `10.0.17134.319` for maximum version.
+      Örneğin, en yüksek sürüm için en düşük sürüm ve `10.0.17134.0` (RS4 veya 1803) için `10.0.16299.0` (RS3 veya 1709) girebilirsiniz. Ya da daha ayrıntılı olabilir ve en yüksek sürüm için en düşük sürüm ve `10.0.17134.319` `10.0.16299.001` girebilirsiniz.
 
-4. Select **Add** to save your changes.
+4. Değişikliklerinizi kaydetmek için **Ekle** ' yi seçin.
 
 ## <a name="refresh-cycle-times"></a>Yenileme döngüsü süreleri
 
-Intune uses different refresh cycles to check for updates to configuration profiles. If the device recently enrolled, the check-in runs more frequently. [Policy and profile refresh cycles](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lists the estimated refresh times.
+Intune, yapılandırma profillerinin güncelleştirmelerini denetlemek için farklı yenileme döngüleri kullanır. Cihaz yakın zamanda kaydedildiyse, iade etme daha sık çalışır. [İlke ve profil yenileme döngüleri](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) tahmini yenileme zamanlarını listeler.
 
 Kullanıcılar profil güncelleştirmelerini istedikleri zaman denetlemek için Şirket Portalı uygulamasını açıp cihazı eşitleyebilir.
 
 ## <a name="recommendations"></a>Öneriler
 
-When creating profiles, consider the following recommendations:
+Profiller oluştururken aşağıdaki önerileri göz önünde bulundurun:
 
-- Name your policies so you know what they are, and what they do. All [compliance policies](../protect/create-compliance-policy.md) and [configuration profiles](../configuration/device-profile-create.md) have an optional **Description** property. In **Description**, be specific and include information so others know what the policy does.
+- İlkelerine ne olduğunu ve ne yaptığını bilmek için ilkelerinizi adlandırın. Tüm [uyumluluk ilkeleri](../protect/create-compliance-policy.md) ve [yapılandırma profillerinin](../configuration/device-profile-create.md) isteğe bağlı bir **Açıklama** özelliği vardır. **Açıklama**' da, özel olarak, diğerlerinin ilkenin ne yaptığını bilmesi için bilgi ekleyin.
 
-  Some configuration profile examples include:
+  Bazı yapılandırma profili örnekleri şunları içerir:
 
-  **Profile name**: Admin template - OneDrive configuration profile for all Windows 10 users  
-  **Profile description**: OneDrive admin template profile that includes the minimum and base settings for all Windows 10 users. Created by user@contoso.com to prevent users from sharing organizational data to personal OneDrive accounts.
+  **Profil adı**: yönetici şablonu-tüm Windows 10 kullanıcıları için OneDrive yapılandırma profili  
+  **Profil açıklaması**: tüm Windows 10 kullanıcıları için en düşük ve temel ayarları içeren OneDrive yönetici şablonu profili. Kullanıcıların kurumsal verileri kişisel OneDrive hesaplarına paylaşmasını engellemek için user@contoso.com tarafından oluşturulur.
 
-  **Profile name**: VPN profile for all iOS users  
-  **Profile description**: VPN profile that includes the minimum and base settings for all iOS users to connect to Contoso VPN. Created by user@contoso.com so users automatically authenticate to VPN, instead of prompting users for their username and password.
+  **Profil adı**: tüm iOS kullanıcıları için VPN profili  
+  **Profil açıklaması**: Tüm IOS KULLANıCıLARıNıN contoso VPN 'ye bağlanması için en düşük ve temel ayarları içeren VPN profili. Kullanıcıların Kullanıcı adı ve parola istemek yerine VPN 'de otomatik olarak kimlik doğrulaması yaptığı için user@contoso.com tarafından oluşturulur.
 
-- Create your profile by its task, such as configure Microsoft Edge settings, enable Microsoft Defender anti-virus settings, block iOS jailbroken devices, and so on.
+- Microsoft Edge ayarlarını yapılandırma, Microsoft Defender Anti-Virus ayarlarını etkinleştirme, iOS jailbreak uygulanmış cihazlarını engelleme vb. gibi kendi görevine göre profilinizi oluşturun.
 
-- Create profiles that apply to specific groups, such as Marketing, Sales, IT Administrators, or by location or school system.
+- Pazarlama, satış, BT yöneticileri veya konuma veya okul sistemine göre belirli gruplar için uygulanan Profiller oluşturun.
 
-- Separate user policies from device policies.
+- Kullanıcı ilkelerini cihaz ilkelerinden ayırın.
 
-  For example, [Administrative Templates in Intune](administrative-templates-windows.md) have hundreds of ADMX settings. These template shows if a settings applies to users or devices. When creating admin templates, assign your users settings to a users group, and assign your device settings to a devices group.
+  Örneğin, [Intune 'da Yönetim Şablonları](administrative-templates-windows.md) yüzlerce ADMX ayarı vardır. Bu şablon, bir ayarların kullanıcılar veya cihazlar için geçerli olup olmadığını gösterir. Yönetici şablonları oluştururken, kullanıcı ayarlarınızı bir kullanıcılar grubuna atayın ve cihaz ayarlarınızı bir cihaz grubuna atayın.
 
-  The following image shows an example of a setting that can apply to users and/or apply to devices:
+  Aşağıdaki görüntüde kullanıcılara uygulanabilecek ve/veya cihazlara uygulanabilecek bir ayarın örneği gösterilmektedir:
 
-  ![Intune admin template that applies to user and devices](./media/device-profile-create/setting-applies-to-user-and-device.png)
+  ![Kullanıcı ve cihazlar için geçerli olan Intune yönetici şablonu](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -1,7 +1,7 @@
 ---
-title: Troubleshooting tips for BitLocker policies in Microsoft Intune
+title: Microsoft Intune 'de BitLocker ilkeleri için sorun giderme ipuçları
 titleSuffix: Microsoft Intune
-description: Describes how to enable BitLocker encryption on a device by using Intune policy and how to verify that your policy successfully deployed to a device.
+description: Intune ilkesi kullanılarak bir cihazda BitLocker şifrelemesini etkinleştirmeyi ve ilkenizin başarıyla bir cihaza dağıtıldığını doğrulama işlemini açıklar.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -23,110 +23,110 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74410362"
 ---
-# <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Troubleshoot BitLocker policies in Microsoft Intune
+# <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Microsoft Intune 'de BitLocker ilkeleri sorunlarını giderme
 
-This article can help Intune administrators understand how Windows 10 devices configure BitLocker based on Intune policy. This article also provides guidance on how to troubleshoot problems with BitLocker settings on devices you manage with Intune.  
+Bu makale, Intune yöneticilerinin Windows 10 cihazlarının Intune ilkesi tabanlı BitLocker 'ı nasıl yapılandırduklarını anlamasına yardımcı olabilir. Bu makalede ayrıca, Intune ile yönettiğiniz cihazlarda BitLocker ayarlarıyla ilgili sorunları gidermeye yönelik yönergeler de sağlanmaktadır.  
 
-## <a name="understanding-bitlocker"></a>Understanding BitLocker
+## <a name="understanding-bitlocker"></a>BitLocker 'ı anlama
 
-BitLocker drive encryption is a service offered by Microsoft Windows operating systems that allows users to encrypt data on their hard drives. BitLocker supports encryption for operating system drives, removable media drives, and fixed data drives. BitLocker also supports use of 256-bit encryption for better protection of sensitive data.  
+BitLocker Sürücü Şifrelemesi, Microsoft Windows işletim sistemleri tarafından sunulan ve kullanıcıların sabit sürücülerinde verileri şifrelemesine olanak tanıyan bir hizmettir. BitLocker işletim sistemi sürücüleri, çıkarılabilir medya sürücüleri ve sabit veri sürücüleri için şifrelemeyi destekler. BitLocker, hassas verilerin daha iyi korunması için 256 bitlik şifreleme kullanımını da destekler.  
 
-With Microsoft Intune, you have the following methods to manage BitLocker on Windows 10 devices:
+Microsoft Intune, Windows 10 cihazlarda BitLocker 'ı yönetmek için aşağıdaki yöntemleri kullanabilirsiniz:
 
-- **Device Configuration policies** - Certain built-in policy options are available in Intune when you create a device configuration profile to manage endpoint protection. To find these options, [create a device profile for endpoint protection](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings), selecting **Windows 10 and later** for the *Platform*, and then selecting the **Windows Encryption** category for *Settings*. 
+- **Cihaz yapılandırma ilkeleri** -Endpoint Protection 'ı yönetmek üzere bir cihaz yapılandırma profili oluşturduğunuzda Intune 'da belirli yerleşik ilke seçenekleri mevcuttur. Bu seçenekleri bulmak için, [Endpoint Protection için bir cihaz profili oluşturun](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings), *Platform*için **Windows 10 ve üzeri** ' i seçin ve ardından *Ayarlar*için **Windows şifreleme** kategorisi ' ni seçin. 
 
-   You can read about the available options and features here: [Windows Encryption](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+   Kullanılabilir seçenekler ve özellikler hakkında buradan bilgi edinebilirsiniz: [Windows şifrelemesi](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
-- **Security baselines** - [Security baselines](security-baselines.md) are known groups of settings and default values that are recommended by the relevant security team to help secure Windows devices. Different baseline sources, like the *MDM Security Baseline* or *Microsoft Defender ATP Baseline* can manage the same settings as well different settings than each other. They can also manage the same settings you manage with device configuration policies. 
+- **Güvenlik temelleri - güvenlik** [temelleri,](security-baselines.md) Windows cihazlarının güvenli hale getirilmesine yardımcı olmak için ilgili güvenlik ekibinin önerdiği bilinen ayar grupları ve varsayılan değerlerdir. *MDM güvenlik temeli* veya *Microsoft Defender ATP temeli* gibi farklı temel kaynaklar aynı ayarları ve birbirinden farklı ayarları yönetebilir. Ayrıca, cihaz yapılandırma ilkeleriyle yönettiğiniz ayarların aynısını yönetebilirler. 
 
-In addition to Intune, it's possible that BitLocker settings are managed by other means like Group Policy, or manually set by a device user.
+Intune 'a ek olarak, BitLocker ayarlarının grup ilkesi gibi başka yollarla yönetilmesi veya bir cihaz kullanıcısı tarafından el ile ayarlanması mümkündür.
 
-No matter how settings are applied to a device, BitLocker policies make use of the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to configure encryption on the device. The BitLocker CSP is built into Windows and when Intune deploys a BitLocker policy to an assigned device, it's the BitLocker CSP on the device that writes the appropriate values to the Windows registry so that settings from the policy can take effect.
+Ayarların cihaza uygulanma biçimi ne olduğuna bakılmaksızın, BitLocker ilkeleri cihazda şifrelemeyi yapılandırmak için [BITLOCKER CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) 'yi kullanır. BitLocker CSP, Windows 'da yerleşiktir ve Intune atanan bir cihaza bir BitLocker ilkesi dağıttığında, ilkeden gelen ayarların etkili olabilmesi için Windows kayıt defterine uygun değerleri yazan cihazdaki BitLocker CSP 'dir.
 
-If you'd like to learn more about BitLocker, see the following resources:
+BitLocker hakkında daha fazla bilgi edinmek istiyorsanız, aşağıdaki kaynaklara bakın:
 
-- [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [BitLocker Overview and Requirements FAQ](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
+- [Kurulumu](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+- [BitLocker genel bakış ve gereksinimler SSS](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
 
-Now that you have a general understanding of what these policies do and how they work, look at how you can verify if the BitLocker settings successfully apply to a Windows client.
+Bu ilkelerin ne yaptığını ve bunların nasıl çalıştığını genel olarak anlayadığınıza göre, BitLocker ayarlarının bir Windows istemcisine başarıyla uygulandığını nasıl doğrulayabileceğinize göz atın.
 
-## <a name="verify-the-source-of-bitlocker-settings"></a>Verify the source of BitLocker settings
+## <a name="verify-the-source-of-bitlocker-settings"></a>BitLocker ayarları kaynağını doğrulama
 
-When you investigate a BitLocker issue on a Windows 10 device, it's important to first determine whether the issue is Intune-related or Windows-related. After the likely source of failure is known, you can then focus your troubleshooting efforts in the right place, and if necessary get support from the correct team.  
+Bir Windows 10 cihazında BitLocker sorununu araştırdığınızda, öncelikle sorunun Intune ile ilgili mi yoksa Windows ile ilgili mi olduğunu anlamak önemlidir. Hatanın olası bir kaynağı bilindikten sonra, sorun giderme çabalarınızı doğru yere odakladıktan sonra, gerekirse doğru takımdan destek alabilirsiniz.  
 
-As a first step, determine whether the Intune policy successfully deployed to the target device. In the following example, you have a device configuration policy that deploys the Windows Encryption (BitLocker) settings, as shown:
+İlk adım olarak, Intune ilkesinin hedef cihaza başarıyla dağıtılıp dağıtılmadığını saptayın. Aşağıdaki örnekte gösterildiği gibi Windows şifreleme (BitLocker) ayarlarını dağıtan bir cihaz yapılandırma ilkesine sahipsiniz:
 
-![Windows Encryption device configuration policy with the settings](./media/troubleshooting-bitlocker-policies/settings.png)
+![Ayarlarla Windows şifreleme cihaz yapılandırma ilkesi](./media/troubleshooting-bitlocker-policies/settings.png)
 
-How do you confirm that the settings have been applied to the targeted device? Following are a few ways to do that.
+Ayarların hedeflenen cihaza uygulandığını nasıl doğrulayabilirim? Bunu yapmak için birkaç yol aşağıda verilmiştir.
 
-### <a name="device-configuration-policy-device-status"></a>Device configuration policy device status  
+### <a name="device-configuration-policy-device-status"></a>Cihaz yapılandırma ilkesi cihaz durumu  
 
-When you use Device Configuration policy to configure BitLocker, you can check the status of the policy in the Intune portal.
+BitLocker 'ı yapılandırmak için cihaz yapılandırma ilkesi kullandığınızda, Intune portalında ilkenin durumunu denetleyebilirsiniz.
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Devices** > **Configuration profiles** and then select the profile that contains BitLocker settings.
+2. **Yapılandırma profilleri** > **cihazlar** ' ı seçin ve ardından BitLocker ayarlarını içeren profili seçin.
 
-3. After you select the profile you want to view, select **Device Status**. Devices assigned to the profile are listed, and the *Device status* column indicates if a device successfully deployed the profile.
+3. Görüntülemek istediğiniz profili seçtikten sonra **cihaz durumu**' nu seçin. Profile atanan cihazlar listelenir ve *cihaz durumu* sütunu, bir cihazın profili başarıyla dağıtmadığını gösterir.
 
-Remember, there can be a delay between a device receiving a BitLocker policy, and the drive being fully encrypted.  
+Bir BitLocker ilkesi alan bir cihaz ve sürücünün tamamen şifrelendiğinden bir gecikme olabileceğini unutmayın.  
 
-### <a name="use-control-panel-on-the-client"></a>Use Control Panel on the client  
+### <a name="use-control-panel-on-the-client"></a>İstemcide denetim masası 'nı kullanma  
 
-On a device that has enabled BitLocker and encrypted a drive, you can view the BitLocker status from a devices Control Panel. On the device, open **Control Panel** > **System and Security** > **BitLocker Drive Encryption**. Confirmation appears as seen in the following image.  
+BitLocker 'ı etkinleştirilen ve bir sürücüyü şifrelenen bir cihazda, BitLocker durumunu bir cihazlar denetim masasından görüntüleyebilirsiniz. Cihazda, **sistem ve güvenlik** > **BitLocker Sürücü Şifrelemesi** > **Denetim Masası** 'nı açın. Onay aşağıdaki görüntüde görüldüğü gibi görünür.  
 
-![BitLocker is turned on in Control Panel](./media/troubleshooting-bitlocker-policies/control-panel.png)
+![BitLocker, Denetim Masası 'nda açıktır](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
-### <a name="use-a-command-prompt"></a>Use a command prompt  
+### <a name="use-a-command-prompt"></a>Komut istemi kullanın  
 
-On a device that has enabled BitLocker and encrypted a drive, launch Command Prompt with admin credentials, and then run `manage-bde -status`. The results should resemble the following example:  
-![A result of the status command](./media/troubleshooting-bitlocker-policies/command.png)
+BitLocker 'ı etkinleştirilmiş ve bir sürücüyü şifrelenen bir cihazda, yönetici kimlik bilgileriyle komut Istemi ' ni başlatın ve ardından `manage-bde -status`çalıştırın. Sonuçlar aşağıdaki örneğe benzemelidir:  
+durum komutunun sonucunu ![](./media/troubleshooting-bitlocker-policies/command.png)
 
-In the example:
+Örnekte:
 
-- **BitLocker protection** is **On**
-- **Percentage Encrypted** is **100%**
-- **Encryption Method** is **XTS-AES 256**
+- **BitLocker koruması** **Açık**
+- **Şifreleme yüzdesi** **%100**
+- **Şifreleme yöntemi** **XTS-AES 256**
 
-You can also check **Key Protectors** by running the following command:
+Ayrıca, aşağıdaki komutu çalıştırarak **anahtar koruyucularını** denetleyebilirsiniz:
 
 ```cmd
 Manage-bde -protectors -get c:
 ```
 
-Or with PowerShell:
+Veya PowerShell ile:
 
 ```powershell
 Confirm-SecureBootUEFI
 ```
 
-### <a name="review-the-devices-registry-key-configuration"></a>Review the devices registry key configuration
+### <a name="review-the-devices-registry-key-configuration"></a>Cihazlar kayıt defteri anahtarı yapılandırmasını gözden geçirin
 
-After BitLocker policy successfully deploys to a device, view the following registry key on the device where you can review the configuration of BitLocker settings:  *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Örnek:
+BitLocker ilkesi bir cihaza başarıyla dağıtıldıktan sonra, cihazda BitLocker ayarlarının yapılandırmasını gözden geçirebileceğiniz aşağıdaki kayıt defteri anahtarını görüntüleyin: *HKEY_LOCAL_MACHINE \Software\microsoft\policymanager\current\devıcebitlocker*. Örnek:
 
-![BitLocker registry key](./media/troubleshooting-bitlocker-policies/registry.png)
+![BitLocker kayıt defteri anahtarı](./media/troubleshooting-bitlocker-policies/registry.png)
 
-These values are configured by the BitLocker CSP. Verify that the values of the keys match the settings specified in the source of your Intune Windows Encryption policy. For more information on each of these settings, see [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
+Bu değerler BitLocker CSP tarafından yapılandırılır. Anahtarların değerlerinin, Intune Windows şifreleme ilkenizin kaynağında belirtilen ayarlarla eşleştiğinden emin olun. Bu ayarların her biri hakkında daha fazla bilgi için bkz. [BITLOCKER CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
 
 > [!NOTE]
-> The Windows Event Viewer will also contain various information related to Bitlocker. There are too many to list here but searching for **Bitlocker API** will provide you with a lot of useful information.
+> Windows Olay Görüntüleyicisi, BitLocker ile ilgili çeşitli bilgileri de içerir. Burada listelemek için çok fazla yer vardır ancak **BitLocker API 'sine** yönelik arama size çok sayıda faydalı bilgi sağlayacaktır.
 
-### <a name="check-the-mdm-diagnostics-report"></a>Check the MDM diagnostics report
+### <a name="check-the-mdm-diagnostics-report"></a>MDM Tanılama raporunu denetleme
 
-On a device that has enabled BitLocker, you can generate and view an MDM diagnostic report from the targeted device to confirm that BitLocker policy is present. If you can see the policy settings in the report, it's another indication that the policy successfully deployed. The *Microsoft Helps* video at the following link explains how to capture an MDM diagnostic report from a Windows device.
+BitLocker 'ı etkinleştirilen bir cihazda, BitLocker ilkesinin mevcut olduğunu doğrulamak için hedeflenen cihazdan bir MDM tanılama raporu oluşturabilir ve görüntüleyebilirsiniz. İlke ayarlarını raporda görebiliyorsanız, ilkenin başarıyla dağıtıldığını gösteren bir bildirim vardır. *Microsoft* , aşağıdaki bağlantıda, bir Windows CIHAZıNDAN MDM Tanılama raporunun nasıl yakalanacağını açıklar.
 
 > [!VIDEO https://www.youtube.com/embed/WKxlcjV4TNE]
 
-When you analyze the MDM diagnostics report, the contents can seem a little confusing at first. Following is an example that shows how to correlate what's in the report with the settings in a policy:
+MDM Tanılama raporunu çözümlediğinizde, içerik ilk olarak biraz kafa karıştırıcı görünebilir. Aşağıda, rapordaki ayarlarla ilgili olarak bir ilkedeki ayarlarla nasıl bağıntı yapılacağı gösterilmektedir:
 
-![MDM diagnostics report example](./media/troubleshooting-bitlocker-policies/report.png)
+![MDM tanılama raporu örneği](./media/troubleshooting-bitlocker-policies/report.png)
 
-The output result shows the values that correspond to the values from your BitLocker policy:
+Çıktı sonucu, BitLocker ilkenizin değerlerine karşılık gelen değerleri gösterir:
 
-![Output result shows the values ](./media/troubleshooting-bitlocker-policies/output.png)
+![Çıktı sonucu değerleri gösterir ](./media/troubleshooting-bitlocker-policies/output.png)
 
-MDM diagnostics output results:
+MDM tanılama çıkış sonuçları:
 
 ```asciidoc
 EncryptionMethodWithXtsOsDropDown: 7 (The value 7 refers to the 256 bit encryption)
@@ -134,75 +134,75 @@ EncryptionMethodWithXtsFdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encryption)
 ```
 
-You can reference the [BitLocker CSP documentation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to see what each value means. For this example, a snippet is shared in the following image.
+Her bir değerin ne anlama geldiğini görmek için [BITLOCKER CSP belgelerine](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) başvurabilirsiniz. Bu örnekte, bir kod parçacığı aşağıdaki görüntüde paylaşılır.
 
-![Purposes of values](./media/troubleshooting-bitlocker-policies/shared-example.png)
+![Değerlerin amaçları](./media/troubleshooting-bitlocker-policies/shared-example.png)
 
-Similarly, you can see all the values and verify them from the BitLocker CSP link.
+Benzer şekilde, tüm değerleri görebilir ve bunları BitLocker CSP bağlantısından doğrulayabilirsiniz.
 
 > [!TIP]
-> The primary purpose of the MDM diagnostic report is to assist Microsoft Support when troubleshooting issues. If you open a support case for Intune and the problem involves Windows clients, it's always a good idea to gather this report and include it in your support request.
+> MDM Tanılama raporunun birincil amacı, sorun giderirken Microsoft Desteği yardımcı olur. Intune için bir destek durumu açarsanız ve sorun Windows istemcileri içeriyorsa, bu raporu toplamak ve destek isteğinize eklemek her zaman iyi bir fikirdir.
 
-## <a name="troubleshooting-bitlocker-policy"></a>Troubleshooting BitLocker Policy
+## <a name="troubleshooting-bitlocker-policy"></a>BitLocker Ilkesi sorunlarını giderme
 
-You should now have a good idea how to confirm that the BitLocker policy successfully deployed by Intune, which hands-off the configuration of BitLocker to the BitLocker CSP in WIndows.
+Artık, BitLocker 'ın WIndows 'daki BitLocker CSP 'ye yapılandırılması için BitLocker ilkesinin Intune tarafından başarıyla dağıtıldığını nasıl doğrulayabileceğiniz konusunda iyi bir fikir sahibi olmanız gerekir.
 
-**Policy fails to reach the device** - When your Intune policy isn't present in any capacity:
+Intune ilkeniz herhangi bir kapasitede mevcut olmadığında **, ilke cihaza ulaşamamalıdır** :
 
-- **Is the device properly enrolled into Microsoft Intune?** If not, you'll need to address that before troubleshooting anything specific to the policy. Help with troubleshooting Windows enrollment issues can be found [here](../enrollment/troubleshoot-windows-enrollment-errors.md).
+- **Cihaz Microsoft Intune 'e doğru kaydolmuş mi?** Aksi takdirde, ilkeye özgü herhangi bir şeyi gidermeye başlamadan önce bu sorunu ele almanız gerekir. Windows kayıt sorunlarını gidermeyle ilgili Yardım [burada](../enrollment/troubleshoot-windows-enrollment-errors.md)bulunabilir.
 
-- **Is there an active network connection on the device?** If the device is in airplane mode or turned off, or if the user has the device in a location with no service, the policy won't be delivered or apply until network connectivity is restored.
+- **Cihazda etkin bir ağ bağlantısı var mı?** Cihaz uçak modundayken veya kapatılmışsa veya Kullanıcı cihazı hizmet olmadan bir konumda içeriyorsa, ağ bağlantısı geri yüklenene kadar ilke teslim edilene veya uygulanmaz.
 
-- **Did the BitLocker policy deploy to the correct user or device group?** Check that the correct user or device is a member of the groups you target.
+- **BitLocker ilkesi doğru Kullanıcı veya cihaz grubuna dağıtıldı mı?** Doğru Kullanıcı veya cihazın hedeflediğiniz grupların bir üyesi olup olmadığını denetleyin.
 
-**Policy is present but not all settings configured successfully** - When your Intune policy reaches the device, but not all configurations are set:
+**İlke var ancak tüm ayarlar başarıyla yapılandırılmadı** -Intune ilkeniz cihaza ulaştığında, ancak tüm konfigürasyonlar ayarlanmadı:
 
-- **Does the deployment of the entire policy fail, or is it only certain settings that don't apply?** If you find yourself faced with a scenario where only some policy settings don't apply, check the following considerations:
+- **Tüm ilkenin dağıtımı başarısız mi veya yalnızca uygulanan belirli ayarlar mı?** Kendinizi yalnızca bazı ilke ayarlarının uygulandığı bir senaryoya göre görürseniz, aşağıdaki noktalara dikkat edin:
 
-  1. **Not all BitLocker settings are supported on all Windows versions**.
-     Policy comes down to a device as a single unit, so if some settings apply and others don't, you can be confident that the policy itself is received. In this scenario, it's possible that the version of Windows on the device doesn't support the problematic settings. See [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) in the Windows documentation for details on version requirements for each setting.
+  1. Tüm **Windows sürümlerinde tüm BitLocker ayarları desteklenmez**.
+     İlke tek bir birim olarak bir cihaza gelir. bu nedenle, bazı ayarlar uygulanır ve diğerleri yoksa, ilkenin kendine ait alındığından emin olabilirsiniz. Bu senaryoda, cihazdaki Windows sürümü sorunlu ayarları desteklemiyor olabilir. Her bir ayarın sürüm gereksinimleriyle ilgili ayrıntılar için bkz. Windows belgelerindeki [BITLOCKER CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) .
 
-  2. **BitLocker isn't supported on all hardware**.
-     Even if you have the right version of Windows, it's possible that the underlying device hardware doesn't meet the requirements for BitLocker encryption. You can find the [system requirements for BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) in the Windows documentation, but the main things to check are that the device has a compatible TPM chip (1.2 or later) and a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware.
+  2. **BitLocker tüm donanımlar üzerinde desteklenmez**.
+     Windows 'un doğru sürümüne sahip olsanız bile, temeldeki cihaz donanımının BitLocker şifrelemesi gereksinimlerini karşılamamanız mümkündür. Windows belgelerindeki [BitLocker için sistem gereksinimlerini](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) bulabilirsiniz, ancak denetlenecek ana şey, cihazın uyumlu bir TPM yongasına (1,2 veya üzeri) ve Trusted COMPUTING Group (TCG) uyumlu bir BIOS veya UEFI bellenimine sahip olması olabilir.
 
-**Example investigation**
+**Örnek araştırma**
 
-- You deploy a BitLocker policy to a Windows 10 device, and the **Encrypt devices** setting shows a status of **Error** in the portal.
+- Bir Windows 10 cihazına BitLocker ilkesi dağıtırsınız ve **cihazları şifreleyin** ayarı portalda **hata** durumunu gösterir.
 
-- As the name suggests, this setting allows an administrator to require encryption to be turned on by using *BitLocker > Device Encryption*. Using the troubleshooting tips mentioned earlier, you first check the MDM Diagnostics report. The report confirms that the correct policy was deployed on the device:
+- Adından da anlaşılacağı gibi, bu ayar yöneticinin *BitLocker > cihaz şifrelemesini*kullanarak şifrelemeyi açmasına izin verir. Daha önce bahsedilen sorun giderme ipuçlarını kullanarak, önce MDM Tanılama raporunu kontrol edersiniz. Rapor, cihazda doğru ilkenin dağıtıldığını onaylar:
 
-  ![Report confirms the correct policy is deployed on the device](./media/troubleshooting-bitlocker-policies/mdm-report.png)
+  ![Rapor, cihazda doğru ilkenin dağıtıldığını doğrular](./media/troubleshooting-bitlocker-policies/mdm-report.png)
 
-- You also verify success in the registry:
+- Ayrıca, kayıt defterindeki başarıyı doğrularsınız:
 
-  ![RequiredDeviceEncryption registry value shows 1](./media/troubleshooting-bitlocker-policies/registry-confirm.png)
+  ![RequiredDeviceEncryption kayıt defteri değeri 1 gösterir](./media/troubleshooting-bitlocker-policies/registry-confirm.png)
 
-- Next, you check the status of TPM using PowerShell and find that TPM isn't available on the device:
+- Daha sonra, PowerShell kullanarak TPM 'nin durumunu kontrol edersiniz ve TPM 'nin cihazda kullanılabilir olmadığını göreceksiniz:
 
-  ![Checked TPM status using PowerShell](./media/troubleshooting-bitlocker-policies/tpm-command.png)
+  ![PowerShell kullanılarak denetlenen TPM durumu](./media/troubleshooting-bitlocker-policies/tpm-command.png)
 
-- Because BitLocker relies on TPM, you could conclude that BitLocker doesn't fail because of a problem with Intune or the policy, but rather because the device itself doesn't have a TPM chip or TPM is disabled in the BIOS.
+- BitLocker TPM 'yi kullandığından, Intune veya ilkeyle ilgili bir sorun nedeniyle BitLocker 'ın başarısız olmaması, ancak cihazın bir TPM yongasına sahip olmaması veya BIOS 'ta TPM 'nin devre dışı bırakılması olabilir.
 
-  As an additional tip, you can confirm the same in the Windows Event Viewer under **Applications and Services log** > **Windows** > **BitLocker API**. In the **BitLocker API** event log, you'll find an Event ID 853 that means TPM isn't available:
+  Ek bir ipucu olarak Windows > **BITLOCKER apı** > **uygulamalar ve hizmetler günlüğü** **altında Windows Olay Görüntüleyicisi** aynı olduğunu doğrulayabilirsiniz. **BITLOCKER API** olay günlüğünde TPM 'nin kullanılamadığı anlamına gelen BIR olay kimliği 853 bulacaksınız:
 
-  ![Event ID 853](./media/troubleshooting-bitlocker-policies/event-error.png)
+  ![Olay KIMLIĞI 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 
   > [!NOTE]
-  > You can also check the TPM status by running **tpm.msc** on the device.
+  > Ayrıca, cihazda **TPM. msc** çalıştırarak TPM durumunu da denetleyebilirsiniz.
 
 ## <a name="summary"></a>Özet
 
-When you troubleshoot BitLocker policy issues with Intune and can confirm that policy reaches the intended device, it's safe to assume the problem isn't directly related to Intune. The problem is more likely an issue with the Windows OS or the hardware. In this case, start looking in other areas like the TPM configuration or UEFI and Secure boot).
+Intune ile BitLocker ilke sorunlarını giderirken ve bu ilkenin amaçlanan cihaza ulaştığını doğrulayabileceği takdirde, sorunun doğrudan Intune ile ilgili olmadığını varsaymak güvenlidir. Sorun, Windows işletim sistemi veya donanımla ilgili bir sorun olabilir. Bu durumda, TPM yapılandırması veya UEFı ve güvenli önyükleme gibi diğer alanlara bakmaya başlayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 
-The following are more resources that might help when you work with BitLocker:
+BitLocker ile çalışırken size yardımcı olabilecek daha fazla kaynak aşağıda verilmiştir:
 
-- [BitLocker product documentation](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [BitLocker system requirements](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)
-- [BitLocker frequently asked questions](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)
-- [BitLocker CSP documentation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
-- [Intune Windows Encryption policy settings](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)
-- [Hardware independent automatic BitLocker encryption using AAD/MDM](https://blogs.technet.microsoft.com/home_is_where_i_lay_my_head/2017/06/07/hardware-independent-automatic-bitlocker-encryption-using-aadmdm/)
-- [CSP Policy for BitLocker Encryption on Auto-Pilot Devices](https://techcommunity.microsoft.com/t5/Windows-10-security/CSP-policy-for-bitLocker-encryption-on-autopilot-devices/m-p/284537)
-- [Walkthrough creating and deploying BitLocker policy with Intune](https://blogs.technet.microsoft.com/cbernier/2017/07/11/windows-10-intune-windows-bitlocker-management-yes/)
+- [BitLocker ürün belgeleri](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+- [BitLocker sistem gereksinimleri](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)
+- [BitLocker hakkında sık sorulan sorular](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)
+- [BitLocker CSP belgeleri](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
+- [Intune Windows şifreleme ilkesi ayarları](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)
+- [AAD/MDM kullanan donanımdan bağımsız otomatik BitLocker şifrelemesi](https://blogs.technet.microsoft.com/home_is_where_i_lay_my_head/2017/06/07/hardware-independent-automatic-bitlocker-encryption-using-aadmdm/)
+- [Otomatik pilot cihazlarda BitLocker şifrelemesi için CSP Ilkesi](https://techcommunity.microsoft.com/t5/Windows-10-security/CSP-policy-for-bitLocker-encryption-on-autopilot-devices/m-p/284537)
+- [Intune ile BitLocker ilkesi oluşturma ve dağıtma ile ilgili izlenecek yol](https://blogs.technet.microsoft.com/cbernier/2017/07/11/windows-10-intune-windows-bitlocker-management-yes/)

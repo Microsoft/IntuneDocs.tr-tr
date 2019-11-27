@@ -1,7 +1,7 @@
 ---
-title: Troubleshooting iOS device enrollment problems in Microsoft Intune
+title: Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme
 titleSuffix: Microsoft Intune
-description: Suggestions for troubleshooting some of the most common problems when you enroll iOS devices in Intune.
+description: Intune 'A iOS cihazlarını kaydettiğinizde en yaygın sorunlardan bazılarının sorunlarını gidermeye yönelik öneriler.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -24,187 +24,187 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74199278"
 ---
-# <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Troubleshoot iOS device enrollment problems in Microsoft Intune
+# <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme
 
-This article helps Intune administrators understand and troubleshoot problems when enrolling iOS devices in Intune.
+Bu makale, Intune yöneticilerinin iOS cihazlarını Intune 'A kaydetme sırasında sorunları anlamalarına ve sorunlarını gidermenize yardımcı olur.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Before you start troubleshooting, it’s important to collect some basic information. This information can help you better understand the problem and reduce the time to find a resolution.
+Sorun gidermeye başlamadan önce bazı temel bilgilerin toplanması önemlidir. Bu bilgiler sorunu daha iyi anlamanıza ve çözüm bulma süresini azaltmanıza yardımcı olabilir.
 
-Collect the following information about the problem:
+Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 
-- What is the exact error message?
-- Where do you see the error message?
-- When did the problem start? Has enrollment ever worked?
-- What platform (Android, iOS, Windows) has the problem?
-- How many users are affected? Are all users affected or just some?
-- How many devices are affected? Are all devices affected or just some?
-- What is the MDM authority? If it's System Center Configuration Manager, what version of Configuration Manager are you using?
-- How is enrollment being performed? Is it “Bring your own device" (BYOD) or Apple Device Enrollment Program (DEP) with enrollment profiles?
+- Tam hata iletisi nedir?
+- Hata iletisini nerede görüyorsunuz?
+- Sorun ne zaman başladı? Kayıt hiç çalıştı mı?
+- Hangi platform (Android, iOS, Windows) soruna sahip?
+- Kaç Kullanıcı etkilendi? Tüm kullanıcılar mı etkilendi?
+- Kaç cihaz etkilendi? Tüm cihazlar etkileniyor mu ya da yalnızca bir şey var mı?
+- MDM yetkilisi nedir? System Center Configuration Manager, Configuration Manager hangi sürümü kullanıyorsunuz?
+- Kayıt nasıl gerçekleştirilir? Kayıt profilleriyle "kendi cihazını getir" (BYOD) veya Apple Aygıt Kayıt Programı (DEP) mi?
 
 ## <a name="error-messages"></a>Hata iletileri
 
-### <a name="profile-installation-failed-a-network-error-has-occurred"></a>Profile Installation Failed. A Network Error Has Occurred.
+### <a name="profile-installation-failed-a-network-error-has-occurred"></a>Profil yüklemesi başarısız oldu. Bir ağ hatası oluştu.
 
-**Cause:** There's an unspecified problem with iOS on the device.
+**Neden:** Cihazda iOS ile ilgili belirtilmeyen bir sorun var.
 
 #### <a name="resolution"></a>Çözüm
 
-1. To prevent data loss in the following steps (restoring iOS deletes all data on the device), make sure to back up your data.
-2. Put the device in recovery mode and then restore it. Make sure that you set it up as a new device. For more information about how to restore iOS devices, see [https://support.apple.com/HT201263](https://support.apple.com/HT201263).
-3. Re-enroll the device.
+1. Aşağıdaki adımlarda veri kaybını engellemek için (iOS geri yüklendiğinde cihazdaki tüm veriler silinir), verilerinizi yedeklediğinizden emin olun.
+2. Cihazı kurtarma moduna alın ve geri yükleyin. Bunu yeni bir cihaz olarak ayarladığınızdan emin olun. İOS cihazlarını geri yükleme hakkında daha fazla bilgi için bkz. [https://support.apple.com/HT201263](https://support.apple.com/HT201263).
+3. Cihazı yeniden kaydedin.
 
-### <a name="profile-installation-failed-connection-to-the-server-could-not-be-established"></a>Profile Installation Failed. Connection to the server could not be established.
+### <a name="profile-installation-failed-connection-to-the-server-could-not-be-established"></a>Profil yüklemesi başarısız oldu. Sunucuyla bağlantı kurulamadı.
 
-**Cause:** Your Intune tenant is configured to only allow corporate-owned devices. 
+**Neden:** Intune kiracınız yalnızca şirkete ait cihazlara izin verecek şekilde yapılandırılmıştır. 
 
 #### <a name="resolution"></a>Çözüm
 1. Azure portalında oturum açın.
-2. Select **More Services**, search for Intune, and then select **Intune**.
+2. **Diğer hizmetler**' i seçin, Intune ' u arayın ve ardından **Intune**' u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
-4. Under **Device Type Restrictions**, select the restriction that you want to set > **Properties** > **Select platforms** > select **Allow** for **iOS**, and then click **OK**.
-5. Select **Configure platforms**, select **Allow** for personally owned iOS devices, and then click **OK**.
-6. Re-enroll the device.
+4. **Cihaz türü kısıtlamaları**' nın altında, **özellikleri** > ayarlamak istediğiniz kısıtlamayı seçin > **platformları seçin** > **iOS**Için **izin ver** ' i seçin ve ardından **Tamam**' a tıklayın.
+5. **Platformları Yapılandır**' ı seçin, kişisel IOS cihazlarına **izin ver** ' i seçin ve ardından **Tamam**' a tıklayın.
+6. Cihazı yeniden kaydedin.
 
-**Cause:** The necessary CNAME records in DNS don't exist.
+**Neden:** DNS 'de gerekli CNAME kayıtları yok.
 
 #### <a name="resolution"></a>Çözüm
-Şirketinizin etki alanı için CNAME DNS kaynak kayıtları oluşturun. For example, if your company’s domain is contoso.com, create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to EnterpriseEnrollment-s.manage.microsoft.com.
+Şirketinizin etki alanı için CNAME DNS kaynak kayıtları oluşturun. Örneğin, şirketinizin etki alanı contoso.com ise, DNS 'de EnterpriseEnrollment.contoso.com EnterpriseEnrollment-s.manage.microsoft.com 'e yönlendiren bir CNAME oluşturun.
 
 CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. CNAME kaydı bulunamazsa, kullanıcıların MDM sunucu adını (enrollment.manage.microsoft.com) el ile girmesi istenir.
 
-If there's more than one verified domain, create a CNAME record for each domain. CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
+Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kaydı oluşturun. CNAME kaynak kayıtları, aşağıdaki bilgileri içermelidir:
 
 |TÜR|Konak adı|Şunu gösterir:|TTL|
 |------|------|------|------|
-|CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1 Hr|
-|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Hr|
+|CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1 sa|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 sa|
 
 Şirketiniz kullanıcı kimlik bilgileri için birden fazla etki alanı kullanıyorsa, her etki alanı için bir CNAME kaydı oluşturun.
 
 > [!NOTE]
 > DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yayılıncaya kadar DNS değişikliğini Intune'da doğrulayamazsınız.
 
-**Cause:** You enroll a device that was previously enrolled with a different user account, and the previous user was not appropriately removed from Intune.
+**Neden:** Daha önce farklı bir kullanıcı hesabıyla kaydedilmiş bir cihazı kaydeder ve önceki Kullanıcı Intune 'dan uygun şekilde kaldırılmadı.
 
 #### <a name="resolution"></a>Çözüm
-1. Cancel any current profile installation.
-2. Open [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) in Safari.
-3. Re-enroll the device.
+1. Geçerli profil yüklemesini iptal edin.
+2. Safari 'de [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) açın.
+3. Cihazı yeniden kaydedin.
 
 > [!NOTE]
-> If enrollment still fails, remove cookies in Safari (don't block cookies), then re-enroll the device.
+> Kayıt hala başarısız olursa, Safari 'de tanımlama bilgilerini kaldırın (tanımlama bilgilerini engellemez) ve ardından cihazı yeniden kaydedin.
 
-**Cause:** The device is already enrolled with another MDM provider.
-
-#### <a name="resolution"></a>Çözüm
-1. Open **Settings** on the iOS device, go to **General > Device Management**.
-2. Remove any existing management profile.
-3. Re-enroll the device.
-
-**Cause:** The user who is trying to enroll the device does not have a Microsoft Intune license.
+**Neden:** Cihaz zaten başka bir MDM sağlayıcısına kayıtlı.
 
 #### <a name="resolution"></a>Çözüm
-1. Go to the [Office 365 Admin Center](https://portal.office.com/adminportal/home#/homepage), and then choose **Users > Active Users**.
-2. Select the user account that you want to assign an Intune user license to, and then choose **Product licenses > Edit**.
-3. Switch the toggle to the **On** position for the license that you want to assign to this user, and then choose **Save**.
-4. Re-enroll the device.
+1. İOS cihazında **ayarları** açın, **Genel > cihaz yönetimi**' ne gidin.
+2. Var olan tüm yönetim profillerini kaldırın.
+3. Cihazı yeniden kaydedin.
 
-### <a name="this-service-is-not-supported-no-enrollment-policy"></a>This Service is not supported. No Enrollment Policy.
+**Neden:** Cihazı kaydetmeye çalışan kullanıcının Microsoft Intune lisansı yok.
 
-**Cause**: An Apple MDM push certificate isn't configured in Intune, or the certificate is invalid. 
+#### <a name="resolution"></a>Çözüm
+1. [Office 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **etkin kullanıcılar > Kullanıcılar**' ı seçin.
+2. Intune kullanıcı lisansı atamak istediğiniz kullanıcı hesabını seçin ve ardından **düzenle > ürün lisansları**' nı seçin.
+3. Bu kullanıcıya atamak istediğiniz lisansın konumunu **Açık** konumuna geçirin ve ardından **Kaydet**' i seçin.
+4. Cihazı yeniden kaydedin.
+
+### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Bu hizmet desteklenmiyor. Kayıt Ilkesi yok.
+
+**Neden**: Intune 'Da BIR Apple MDM anında iletme sertifikası yapılandırılmamış veya sertifika geçersiz. 
 
 #### <a name="resolution"></a>Çözüm
 
-- If the MDM push certificate isn't configured, follow the steps in [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md#steps-to-get-your-certificate).
-- If the MDM push certificate is invalid, follow the steps in [Renew Apple MDM push certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
+- MDM anında iletme sertifikası yapılandırılmamışsa, [bir Apple MDM anında iletme sertifikası edinme](apple-mdm-push-certificate-get.md#steps-to-get-your-certificate)bölümündeki adımları izleyin.
+- MDM anında iletme sertifikası geçersizse, [Apple MDM anında iletme sertifikasını yenileme](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate)bölümündeki adımları izleyin.
 
-### <a name="company-portal-temporarily-unavailable-the-company-portal-app-encountered-a-problem-if-the-problem-persists-contact-your-system-administrator"></a>Company Portal Temporarily Unavailable. The Company Portal app encountered a problem. If the problem persists, contact your system administrator.
+### <a name="company-portal-temporarily-unavailable-the-company-portal-app-encountered-a-problem-if-the-problem-persists-contact-your-system-administrator"></a>Şirket Portalı geçici olarak kullanılamıyor. Şirket Portalı uygulama bir sorunla karşılaştı. Sorun devam ederse sistem yöneticinize başvurun.
 
-**Cause:** The Company Portal app is out of date or corrupted.
+**Neden:** Şirket Portalı uygulama güncel değil veya bozuk.
 
 #### <a name="resolution"></a>Çözüm
-1. Remove the Company Portal app from the device.
-2. Download and install the **Microsoft Intune Company Portal** app from **App Store**.
-3. Re-enroll the device.
+1. Şirket Portalı uygulamayı cihazdan kaldırın.
+2. **Microsoft Intune şirket portalı** uygulamasını **App Store**'dan indirin ve yükleyin.
+3. Cihazı yeniden kaydedin.
  > [!NOTE]
-    > This error can also occur if the user is attempting to enroll more devices than device enrollment is configured to allow. Follow the resolutions steps for **Device Cap Reached** below if these steps do not resolve the issue.
+    > Bu hata, Kullanıcı cihaz kaydı izin verilecek şekilde yapılandırıldığından daha fazla cihaz kaydetmeye çalışıyorsa de oluşabilir. Bu adımlar sorunu gidermezse, aşağıda **ulaşılan cihaz sınırına** yönelik çözüm adımlarını izleyin.
 
-### <a name="device-cap-reached"></a>Device Cap Reached
+### <a name="device-cap-reached"></a>Cihaz sınırına ulaşıldı
 
-**Cause:** The user tries to enroll more devices than the device enrollment limit.
+**Neden:** Kullanıcı cihaz kayıt sınırından daha fazla cihaz kaydetmeye çalışır.
 
 #### <a name="resolution"></a>Çözüm
-1. Open the [Intune admin portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **Devices** > **All Devices**, and check the number of devices the user has enrolled.
+1. [Intune yönetim portalı](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **cihazları** > **tüm cihazlar**' ı açın ve kullanıcının kaydolduğu cihaz sayısını denetleyin.
     > [!NOTE]
-    > You should also have the affected user logon to the [Intune user portal](https://portal.manage.microsoft.com/) and check devices that have enrolled. There may be devices that appear in the [Intune user portal](https://portal.manage.microsoft.com/) but not in the [Intune admin portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview), such devices also count toward the device enrollment limit.
-2. Go to **Admin** > **Mobile Device Management** > **Enrollment Rules** > check the device enrollment limit. By default, the limit is set to 15. 
-3. If the number of devices enrolled has reached the limit, remove unnecessary devices, or increase the device enrollment limit. Because every enrolled device consumes an Intune license, we recommend that you always remove unnecessary devices first.
-4. Re-enroll the device.
+    > Ayrıca, etkilenen kullanıcının [Intune kullanıcı portalında](https://portal.manage.microsoft.com/) oturum açmasını ve kaydolmuş cihazları kontrol etmeniz gerekir. Intune [Kullanıcı portalında](https://portal.manage.microsoft.com/) görünen ancak [Intune yönetim portalında](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)yer alan cihazlar olabilir, bu da cihaz kayıt sınırına doğru sayılır.
+2. **Yönetim** > **mobil cihaz yönetimi** > **kayıt kuralları** ' na gidin > cihaz kayıt sınırını denetleyin. Varsayılan olarak, sınır 15 olarak ayarlanır. 
+3. Kaydedilen cihazların sayısı sınıra ulaştıysa, gereksiz cihazları kaldırın veya cihaz kayıt sınırını artırın. Kayıtlı her cihaz bir Intune lisansı kullandığından, önce gereksiz cihazları her zaman kaldırmanız önerilir.
+4. Cihazı yeniden kaydedin.
 
-### <a name="workplace-join-failed"></a>Workplace Join failed
+### <a name="workplace-join-failed"></a>Workplace Join başarısız oldu
 
-**Cause:** The Company Portal app is out of date or corrupted.  
-
-#### <a name="resolution"></a>Çözüm
-1. Remove the Company Portal app from the device.
-2. Download and install the **Microsoft Intune Company Portal** app from **App Store**.
-3. Re-enroll the device.
-
-### <a name="user-license-type-invalid"></a>User License Type Invalid
-
-**Cause:** The user who is trying to enroll the device does not have a valid Intune license.
+**Neden:** Şirket Portalı uygulama güncel değil veya bozuk.  
 
 #### <a name="resolution"></a>Çözüm
-1. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage), and then choose **Users** > **Active Users**.
-2. Select the affected user account > **Product licenses** > **Edit**.
-3. Verify that a valid Intune license is assigned to this user.
-4. Re-enroll the device.
+1. Şirket Portalı uygulamayı cihazdan kaldırın.
+2. **Microsoft Intune şirket portalı** uygulamasını **App Store**'dan indirin ve yükleyin.
+3. Cihazı yeniden kaydedin.
 
-### <a name="user-name-not-recognized-this-user-account-is-not-authorized-to-use-microsoft-intune-contact-your-system-administrator-if-you-think-you-have-received-this-message-in-error"></a>User Name Not Recognized. This user account is not authorized to use Microsoft Intune. Contact your system administrator if you think you have received this message in error.
+### <a name="user-license-type-invalid"></a>Kullanıcı Lisans türü geçersiz
 
-**Cause:** The user who is trying to enroll the device does not have a valid Intune license.
+**Neden:** Cihazı kaydetmeye çalışan kullanıcının geçerli bir Intune lisansı yok.
 
-1. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage), and then choose **Users** > **Active Users**.
-2. Select the affected user account, and then choose **Product licenses** > **Edit**.
-3. Verify that a valid Intune license is assigned to this user.
-4. Re-enroll the device.
+#### <a name="resolution"></a>Çözüm
+1. [Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **Kullanıcılar** > **etkin kullanıcılar**' ı seçin.
+2. Etkilenen Kullanıcı hesabını > **ürün lisansları** > **Düzenle**' yi seçin.
+3. Bu kullanıcıya geçerli bir Intune lisansının atandığını doğrulayın.
+4. Cihazı yeniden kaydedin.
 
-### <a name="profile-installation-failed-the-new-mdm-payload-does-not-match-the-old-payload"></a>Profile Installation Failed. The new MDM payload does not match the old payload.
+### <a name="user-name-not-recognized-this-user-account-is-not-authorized-to-use-microsoft-intune-contact-your-system-administrator-if-you-think-you-have-received-this-message-in-error"></a>Kullanıcı adı tanınmıyor. Bu Kullanıcı hesabının Microsoft Intune kullanma yetkisi yok. Bu iletiyi hata halinde aldığınızı düşünüyorsanız, sistem yöneticinize başvurun.
 
-**Cause:** A management profile is already installed on the device.
+**Neden:** Cihazı kaydetmeye çalışan kullanıcının geçerli bir Intune lisansı yok.
+
+1. [Microsoft 365 yönetim merkezine](https://portal.office.com/adminportal/home#/homepage)gidin ve ardından **Kullanıcılar** > **etkin kullanıcılar**' ı seçin.
+2. Etkilenen Kullanıcı hesabını seçin ve ardından **ürün lisansları** > **Düzenle**' yi seçin.
+3. Bu kullanıcıya geçerli bir Intune lisansının atandığını doğrulayın.
+4. Cihazı yeniden kaydedin.
+
+### <a name="profile-installation-failed-the-new-mdm-payload-does-not-match-the-old-payload"></a>Profil yüklemesi başarısız oldu. Yeni MDM yükü eski yük ile eşleşmiyor.
+
+**Neden:** Cihazda bir yönetim profili zaten yüklü.
 
 #### <a name="resolution"></a>Çözüm
 
-1. Open **Settings** on the iOS device > **General** > **Device Management**.
-2. Tap the existing management profile, and tap **Remove Management**.
-3. Re-enroll the device.
+1. İOS cihazında **ayarları** , **genel** > **cihaz yönetimi**> açın.
+2. Var olan yönetim profiline dokunun ve **yönetimi kaldır**' a dokunun.
+3. Cihazı yeniden kaydedin.
 
 ### <a name="noenrollmentpolicy"></a>NoEnrollmentPolicy
 
-**Cause:** The Apple Push Notification Service (APNs) certificate is missing, invalid, or expired.
+**Neden:** Apple Anında İletilen Bildirim Servisi (APNs) sertifikası eksik, geçersiz veya zaman aşımına uğradı.
 
 #### <a name="resolution"></a>Çözüm
-Verify that a valid APNs certificate is added to Intune. For more information, see [Set up iOS and Mac device management](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
+Intune 'a geçerli bir APNs sertifikası eklendiğini doğrulayın. Daha fazla bilgi için bkz. [iOS ve Mac cihaz yönetimini ayarlama](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
-**Cause:** There's a problem with the Apple Push Notification service (APNs) certificate configured in Intune.
+**Neden:** Intune 'da yapılandırılmış Apple Anında Iletilen bildirim hizmeti (APNs) sertifikasıyla ilgili bir sorun var.
 
 #### <a name="resolution"></a>Çözüm
-Renew the APNs certificate, and then re-enroll the device.
+APNs sertifikasını yenileyin ve sonra cihazı yeniden kaydedin.
 
 > [!IMPORTANT]
-> Make sure that you renew the APNs certificate. Don't replace the APNs certificate. If you replace the certificate, you have to re-enroll all iOS devices in Intune. 
+> APNs sertifikasını yenilediğinizden emin olun. APNs sertifikasını değiştirme. Sertifikayı değiştirirseniz, tüm iOS cihazlarını Intune 'a yeniden kaydetmeniz gerekir. 
 
-- To renew the APNs certificate in Intune standalone, see [Renew Apple MDM push certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
-- To renew the APNs certificate in Intune hybrid with Configuration Manager, see [Set up iOS hybrid device management with System Center Configuration Manager and Microsoft Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
-- To renew the APNs certificate in Office 365, see [Create an APNs Certificate for iOS devices](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
+- Tek başına Intune 'da APNs sertifikasını yenilemek için bkz. [Apple MDM anında iletme sertifikasını yenileme](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
+- Intune hibrit Configuration Manager ile APNs sertifikasını yenilemek için, bkz. [System Center Configuration Manager ve Microsoft Intune Ile iOS hibrit cihaz yönetimini ayarlama](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
+- Office 365 ' de APNs sertifikasını yenilemek için bkz. [iOS cihazları Için APNs sertifikası oluşturma](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
-### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR Connection invalid
+### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR bağlantı geçersiz
 
-When you turn on a DEP-managed device that is assigned an enrollment profile, enrollment fails, and you receive the following error message:
+Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, kayıt başarısız olur ve aşağıdaki hata iletisini alırsınız:
 
 ```
 asciidoc
@@ -214,35 +214,35 @@ iPhone com.apple.accessibility.AccessibilityUIServer(MobileAsset)[288] <Notice>:
 iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR Connection invalid <error: 0x1a49aebc0> { count = 1, transaction: 0, voucher = 0x0, contents = "XPCErrorDescription" => <string: 0x1a49aee18> { length = 18, contents = "Connection invalid" }
 ```
 
-**Cause:** There's a connection issue between the device and the Apple DEP service.
+**Neden:** Cihaz ve Apple DEP hizmeti arasında bir bağlantı sorunu var.
 
 #### <a name="resolution"></a>Çözüm
-Fix the connection issue, or use a different network connection to enroll the device. You may also have to contact Apple if the issue persists.
+Bağlantı sorununu giderip cihazı kaydetmek için farklı bir ağ bağlantısı kullanın. Sorun devam ederse Apple ile iletişim kurmanız da gerekebilir.
 
 
-## <a name="other-issues"></a>Other issues
+## <a name="other-issues"></a>Diğer sorunlar
 
-### <a name="dep-enrollment-doesnt-start"></a>DEP enrollment doesn't start
-When you turn on a DEP-managed device that is assigned an enrollment profile, the Intune enrollment process isn't initiated.
+### <a name="dep-enrollment-doesnt-start"></a>DEP kaydı başlamıyor
+Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, Intune kayıt işlemi başlatılmaz.
 
-**Cause:** The enrollment profile is created before the DEP token is uploaded to Intune.
-
-#### <a name="resolution"></a>Çözüm
-
-1. Edit the enrollment profile. You can make any change to the profile. The purpose is to update the modification time of the profile.
-2. Synchronize DEP-managed devices: Open the Intune portal > **Admin** > **Mobile Device Management** > **iOS** > **Device Enrollment Program** > **Sync now**. Apple'a bir eşitleme isteği gönderilir.
-
-### <a name="dep-enrollment-stuck-at-user-login"></a>DEP enrollment stuck at user login
-When you turn on a DEP-managed device that is assigned an enrollment profile, the initial setup sticks after you enter credentials.
-
-**Cause:** Multi-Factor authentication (MFA) is enabled. Currently MFA doesn't work during enrollment on DEP devices.
+**Neden:** Kayıt profili, DEP belirteci Intune 'a yüklenmeden önce oluşturulur.
 
 #### <a name="resolution"></a>Çözüm
-Disable MFA, and then re-enroll the device.
+
+1. Kayıt profilini düzenleyin. Profilde herhangi bir değişiklik yapabilirsiniz. Amaç, profilin değiştirilme saatini güncelleştirmedir.
+2. DEP ile yönetilen cihazları eşitleme: Intune portalını > **yönetici** > **mobil cihaz yönetimi** > **IOS** > **aygıt kayıt programı** > **Şimdi Eşitle**' ye açın. Apple'a bir eşitleme isteği gönderilir.
+
+### <a name="dep-enrollment-stuck-at-user-login"></a>DEP kaydı kullanıcı oturum açma sırasında takıldı
+Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, kimlik bilgilerini girdikten sonra ilk kurulum açılır.
+
+**Neden:** Multi-Factor Authentication (MFA) etkin. Şu anda MFA, DEP cihazlarında kayıt sırasında çalışmaz.
+
+#### <a name="resolution"></a>Çözüm
+MFA 'yı devre dışı bırakın ve ardından cihazı yeniden kaydedin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Intune’da cihaz kaydı sorunlarını giderme](../troubleshoot-device-enrollment-in-intune.md)
-- [Ask a question on the Intune forum](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Check the Microsoft Intune Support Team Blog](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-- [Check the Microsoft Enterprise Mobility and Security Blog](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
+- [Intune forumundan soru sorun](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
+- [Microsoft Intune destek ekibi blogunu denetleyin](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Microsoft Enterprise Mobility ve Security blogunu denetleyin](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)

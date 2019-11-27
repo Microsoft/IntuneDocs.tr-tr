@@ -1,6 +1,6 @@
 ---
-title: Configure proxy settings for the Intune Connector for Active Directory
-description: Covers how to configure the Intune Connector for Active Directory to work with existing on-premises proxy servers.
+title: Active Directory için Intune Bağlayıcısı için proxy ayarlarını yapılandırma
+description: Active Directory Intune bağlayıcısının mevcut şirket içi ara sunucularla çalışması için nasıl yapılandırılacağını ele alır.
 keywords: ''
 author: master11218
 ms.author: erikje
@@ -24,21 +24,21 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/25/2019
 ms.locfileid: "74465754"
 ---
-# <a name="work-with-existing-on-premises-proxy-servers"></a>Work with existing on-premises proxy servers
+# <a name="work-with-existing-on-premises-proxy-servers"></a>Mevcut şirket içi proxy sunucularıyla çalışma
 
-This article explains how to configure the Intune Connector for Active Directory to work with outbound proxy servers. It is intended for customers with network environments that have existing proxies.
+Bu makalede, Active Directory için Intune bağlayıcısının giden proxy sunucularıyla çalışacak şekilde nasıl yapılandırılacağı açıklanmaktadır. Mevcut proxy 'leri olan ağ ortamları olan müşterilere yöneliktir.
 
-For more information about how connectors work, see [Understand Azure AD Application Proxy connectors](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors).
+Bağlayıcıların nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Azure AD uygulama ara sunucusu bağlayıcıları anlama](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors).
 
-## <a name="bypass-outbound-proxies"></a>Bypass outbound proxies
+## <a name="bypass-outbound-proxies"></a>Giden proxy 'leri atla
 
-Connectors have underlying OS components that make outbound requests. These components automatically attempt to locate a proxy server on the network using Web Proxy Auto-Discovery (WPAD).
+Bağlayıcılar, giden istekleri yapan temel işletim sistemi bileşenlerine sahiptir. Bu bileşenler, Web proxy otomatik bulma (WPAD) kullanarak ağ üzerindeki bir proxy sunucusunu otomatik olarak bulmayı dener.
 
-The OS components attempt to locate a proxy server by carrying out a DNS lookup for wpad.domainsuffix. If the lookup resolves in DNS, an HTTP request is then made to the IP address for wpad.dat. This request becomes the proxy configuration script in your environment. The connector uses this script to select an outbound proxy server. However, connector traffic might still not go through, because of additional configuration settings needed on the proxy.
+İşletim sistemi bileşenleri, WPAD. domainsuffix için bir DNS araması gerçekleştirerek bir ara sunucu bulmaya çalışır. Arama DNS 'de çözümlenirse, WPAD. dat için IP adresine bir HTTP isteği yapılır. Bu istek, ortamınızda ara sunucu yapılandırma betiği haline gelir. Bağlayıcı, giden bir ara sunucu seçmek için bu betiği kullanır. Bununla birlikte, ara sunucuda gereken ek yapılandırma ayarları nedeniyle bağlayıcı trafiği yine de gidemeyebilir.
 
-You can configure the connector to bypass your on-premises proxy to ensure that it uses direct connectivity to the Azure services. We recommend this approach, as long as your network policy allows for it, because it means that you have one less configuration to maintain.
+Bağlayıcıyı, Azure hizmetlerine doğrudan bağlantı kullandığından emin olmak için şirket içi ara sunucusunu atlayacak şekilde yapılandırabilirsiniz. Bu yaklaşım, Ağ ilkeniz izin verdiği sürece, devam etmek için daha az bir yapılandırmaya sahip olduğunuz anlamına gelir.
 
-To disable outbound proxy usage for the connector, edit the :\Program Files\Microsoft Intune\ODJConnector\ODJConnectorUI\ODJConnectorUI.exe.config file and add the proxy address and proxy port in the section shown in this code sample:
+Bağlayıcı için giden proxy kullanımını devre dışı bırakmak için: \Program Files\Microsoft Intune\ODJConnector\ODJConnectorUI\ODJConnectorUI.exe.config dosyasını düzenleyin ve bu kod örneğinde gösterilen bölümünde proxy adresini ve proxy bağlantı noktasını ekleyin:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -66,7 +66,7 @@ To disable outbound proxy usage for the connector, edit the :\Program Files\Micr
 </configuration>
 ```
 
-To ensure that the Connector Updater service also bypasses the proxy, make a similar change to C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config.
+Bağlayıcı Güncelleştiricisi hizmetinin proxy 'yi de atlayacak emin olmak için, C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config. 'de benzer bir değişiklik yapın
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -85,17 +85,17 @@ To ensure that the Connector Updater service also bypasses the proxy, make a sim
 </configuration>
 ```
 
-Be sure to make copies of the original files, in case you need to revert to the default .config files.
+Varsayılan. config dosyalarına döndürmeniz gerekiyorsa, özgün dosyaların kopyalarını aldığınızdan emin olun.
 
-Once the configuration files have been modified, you will need to restart the Intune Connector service. 
+Yapılandırma dosyaları değiştirildikten sonra, Intune Bağlayıcısı hizmetini yeniden başlatmanız gerekir. 
 
-1. Open **services.msc**.
-2. Find and select the **Intune ODJConnector Service**.
-3. Select **Restart**.
+1. **Services. msc**dosyasını açın.
+2. **Intune ODJConnector hizmetini**bulun ve seçin.
+3. **Yeniden Başlat**' ı seçin.
 
-![Screenshot of service restart](./media/autopilot-hybrid-connector-proxy/service-restart.png)
+![Hizmetin yeniden başlatılması ekran görüntüsü](./media/autopilot-hybrid-connector-proxy/service-restart.png)
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Manage your devices](../remote-actions/device-management.md)
+[Cihazlarınızı yönetin](../remote-actions/device-management.md)

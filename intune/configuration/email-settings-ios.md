@@ -1,6 +1,6 @@
 ---
-title: Configure Email settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
-description: See a list of all the email settings you can configure and add to iOS devices in Microsoft Intune, including using Exchange servers, and getting attributes from Azure Active Directory. You can also enable SSL, authenticate users with certificates or username/password, and synchronize email on iOS devices using device configuration profiles in Microsoft Intune.
+title: Microsoft Intune-Azure 'da iOS cihazları için e-posta ayarlarını yapılandırma | Microsoft Docs
+description: Exchange sunucularını kullanma ve Azure Active Directory öznitelikleri alma dahil olmak üzere Microsoft Intune ' de iOS cihazlarına yapılandırabileceğiniz ve ekleyebileceğiniz tüm e-posta ayarlarının listesini görüntüleyin. Ayrıca, SSL 'yi etkinleştirebilir, sertifikalar veya Kullanıcı adı/parola ile kullanıcıların kimliğini doğrulayabilir ve Microsoft Intune ' deki cihaz yapılandırma profillerini kullanarak iOS cihazlarındaki e-postaları eşitleyebilir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,20 +22,20 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74390829"
 ---
-# <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Add e-mail settings for iOS devices in Microsoft Intune
+# <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihazları için e-posta ayarları ekleme
 
-In Microsoft Intune, you can create and configure email to connect to an email server, choose how users authenticate, use S/MIME for encryption, and more.
+Microsoft Intune, e-posta sunucusuna bağlanmak için e-posta oluşturup yapılandırabilir, kullanıcıların kimliğini nasıl doğrulayacağınızı, şifreleme için S/MIME 'yi kullanmayı ve daha fazlasını yapabilirsiniz.
 
-This article lists and describes all the email settings available for devices running iOS. You can create a device configuration profile to push or deploy these email settings to your iOS devices.
+Bu makalede iOS çalıştıran cihazlar için kullanılabilen tüm e-posta ayarları listelenir ve açıklanmaktadır. Bu e-posta ayarlarını iOS cihazlarınıza göndermek veya dağıtmak için bir cihaz yapılandırma profili oluşturabilirsiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Create a device configuration profile](../email-settings-configure.md).
+[Bir cihaz yapılandırma profili oluşturun](../email-settings-configure.md).
 
 > [!NOTE]
-> These settings are available for all enrollment types. For more information on the enrollment types, see [iOS enrollment](../ios-enroll.md).
+> Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](../ios-enroll.md).
 
-## <a name="exchange-activesync-account-settings"></a>Exchange ActiveSync account settings
+## <a name="exchange-activesync-account-settings"></a>Exchange ActiveSync hesap ayarları
 
 - **E-posta sunucusu**: Exchange sunucunuzun konak adını girin.
 - **Hesap adı**: E-posta hesabı için görünen adı girin. Bu ad, cihazlarda kullanıcılara gösterilir.
@@ -44,19 +44,19 @@ This article lists and describes all the email settings available for devices ru
   - **Birincil SMTP adresi**: Adı e-posta adresi biçiminde alır; örneğin `user1@contoso.com`
   - **sAM Hesap Adı**: Etki alanı gerektirir; örneğin `domain\user1`. Şunları da girin:  
     - **Kullanıcı etki alanı adı kaynağı**: **AAD** (Azure Active Directory) veya **Özel**’i seçin.
-      - **AAD**: Get the attributes from Azure AD. Şunları da girin:
-        - **User domain name attribute from AAD**: Choose to get the **Full domain name** (`contoso.com`) or the **NetBIOS name** (`contoso`) attribute of the user.
+      - **AAD**: Azure AD 'den öznitelikleri alın. Şunları da girin:
+        - **AAD 'Den Kullanıcı etki alanı adı özniteliği**: kullanıcının **tam etki alanı adını** (`contoso.com`) veya **NetBIOS adı** (`contoso`) özniteliğini almayı seçin.
 
-      - **Custom**: Get the attributes from a custom domain name. Şunları da girin:
-        - **Custom domain name to use**: Enter a value that Intune uses for the domain name, such as `contoso.com` or `contoso`.
+      - **Özel**: özel bir etki alanı adından öznitelikleri alın. Şunları da girin:
+        - **Kullanılacak özel etki alanı adı**: ıntune 'un `contoso.com` veya `contoso`gibi etki alanı adı için kullandığı bir değer girin.
 
 - **AAD’den e-posta adresi özniteliği**: Kullanıcı için e-posta adresinin nasıl oluşturulacağını seçin. Seçenekleriniz şunlardır:
-  - **User principal name**: Use the full principal name as the email address, such as `user1@contoso.com` or `user1`.
-  - **Primary SMTP address**: Use the primary SMTP address to sign in to Exchange, such as `user1@contoso.com`.
-- **Authentication method**: Choose how users to authenticate to the email server. Seçenekleriniz şunlardır:
-  - **Certificate**: Select a client SCEP or PKCS certificate profile you previously created to authenticate the Exchange connection. This option provides the most secure and seamless experience for your users.
-  - **Username and Password**: Users are prompted to enter their user name and password.
-  - **Derived credential**: Use a certificate that’s derived from a user’s smart card. For more information, see [Use derived credentials in Microsoft Intune](../protect/derived-credentials.md).
+  - **Kullanıcı asıl adı**: `user1@contoso.com` veya `user1`gibi, e-posta adresi olarak tam asıl adı kullanın.
+  - **BIRINCIL SMTP adresi**: Exchange 'de oturum açmak için, `user1@contoso.com`gıbı birincil SMTP adresini kullanın.
+- **Kimlik doğrulama yöntemi**: kullanıcıların e-posta sunucusunda kimliklerini nasıl doğrulayacağını seçin. Seçenekleriniz şunlardır:
+  - **Sertifika**: Exchange bağlantısının kimliğini doğrulamak için daha önce oluşturduğunuz istemci SCEP veya PKCS sertifika profilini seçin. Bu seçenek, kullanıcılarınız için en güvenli ve sorunsuz deneyim sağlar.
+  - Kullanıcı adı **ve parola**: kullanıcılardan Kullanıcı adını ve parolasını girmesi istenir.
+  - **Türetilmiş kimlik bilgileri**: kullanıcının akıllı kartından türetilmiş bir sertifika kullanın. Daha fazla bilgi için bkz. [Microsoft Intune türetilmiş kimlik bilgilerini kullanma](../protect/derived-credentials.md).
 
   >[!NOTE]
   > Azure çok faktörlü kimlik doğrulaması desteklenmez.
@@ -79,87 +79,87 @@ This article lists and describes all the email settings available for devices ru
   > 1. Hedeflenmiş cihazlara yeni bir profil verilir.
   > 2. Son kullanıcılardan kimlik bilgilerini yeniden girmeleri istenir.
 
-## <a name="exchange-activesync-profile-configuration"></a>Exchange ActiveSync profile configuration
+## <a name="exchange-activesync-profile-configuration"></a>Exchange ActiveSync profili yapılandırması
 
 > [!IMPORTANT]
-> Configuring these settings deploys a new profile to the device, even when an existing email profile is updated to include these settings. Users are prompted to enter their Exchange ActiveSync account password. These settings take affect when the password is entered.
+> Bu ayarları yapılandırmak, var olan bir e-posta profili bu ayarları içerecek şekilde güncellense bile, cihaza yeni bir profil dağıtır. Kullanıcılardan Exchange ActiveSync hesap parolalarını girmesi istenir. Bu ayarlar, parola girildiğinde etkili olur.
 
-- **Exchange data to sync**: When using Exchange ActiveSync, choose the Exchange services that are synced on the device: Calendar, Contacts, Reminders, Notes, and Email. Seçenekleriniz şunlardır:
-  - **All data** (default): Sync is enabled for all services.
-  - **Email only**: Sync is enabled for Email only. Sync is disabled for the other services.
-  - **Calendar only**: Sync is enabled for Calendar only. Sync is disabled for the other services.
-  - **Calendar and Contacts only**: Sync is enabled for Calendar and Contacts only. Sync is disabled for the other services.
-  - **Contacts only**: Sync is enabled for Contacts only. Sync is disabled for the other services.
+- **Eşitlenecek Exchange verileri**: Exchange ActiveSync kullanırken, cihazda eşitlenen Exchange hizmetlerini seçin: Takvim, kişiler, anımsatıcılar, notlar ve e-posta. Seçenekleriniz şunlardır:
+  - **Tüm veriler** (varsayılan): eşitleme tüm hizmetler için etkinleştirilmiştir.
+  - **Yalnızca e-posta**: eşitleme yalnızca e-posta için etkinleştirilir. Diğer hizmetler için eşitleme devre dışı bırakıldı.
+  - **Yalnızca takvim**: eşitleme yalnızca takvim için etkinleştirilmiştir. Diğer hizmetler için eşitleme devre dışı bırakıldı.
+  - **Yalnızca takvim ve kişiler**: eşitleme yalnızca takvim ve kişiler için etkindir. Diğer hizmetler için eşitleme devre dışı bırakıldı.
+  - **Yalnızca kişiler**: eşitleme yalnızca kişiler için etkinleştirilmiştir. Diğer hizmetler için eşitleme devre dışı bırakıldı.
 
   Bu özellik şu platformlarda geçerlidir:  
-  - iOS 13.0 and newer
-  - iPadOS 13.0 and newer
+  - iOS 13,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
-- **Allow users to change sync settings**: Choose if users can change the Exchange ActiveSync settings for the Exchange services on the device: Calendar, Contacts, Reminders, Notes, and Email. Seçenekleriniz şunlardır:
+- **Kullanıcıların eşitleme ayarlarını değiştirmesine Izin ver**: kullanıcıların cihazdaki Exchange hizmetleri Için Exchange ActiveSync ayarlarını değiştirip değiştirebir zaman seçin: Takvim, kişiler, anımsatıcılar, notlar ve e-posta. Seçenekleriniz şunlardır:
 
-  - **Yes** (default): Users can change the sync behavior of all services. Choosing **Yes** allows changes to *all* services.
-  - **No**: Users can't change the sync settings of all the services. Choosing **No** blocks changes to *all* services.
+  - **Evet** (varsayılan): kullanıcılar tüm hizmetlerin eşitleme davranışını değiştirebilir. **Evet** seçildiğinde *Tüm* hizmetlerde değişiklik yapılmasına izin verir.
+  - **Hayır**: kullanıcılar tüm hizmetlerin eşitleme ayarlarını değiştiremezler. *Tüm* hizmetlerde **hiçbir** blok değişikliği yapma.
 
   > [!TIP]
-  > If you configured the **Exchange data to sync** setting to sync only some services, we recommend selecting **No** for this setting. Choosing **No** prevents users from changing the Exchange service that's synced.
+  > **Exchange verilerini eşitleme** ayarını yalnızca bazı hizmetleri eşitlemek üzere yapılandırdıysanız, bu ayar için **Hayır** ' ı seçmeniz önerilir. **Hayır** seçilirse, kullanıcıların eşitlenmiş Exchange hizmetini değiştirmesini engeller.
 
   Bu özellik şu platformlarda geçerlidir:  
-  - iOS 13.0 and newer
-  - iPadOS 13.0 and newer
+  - iOS 13,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
-## <a name="exchange-activesync-email-settings"></a>Exchange ActiveSync email settings
+## <a name="exchange-activesync-email-settings"></a>Exchange ActiveSync e-posta ayarları
 
-- **S/MIME**: S/MIME uses email certificates that provide extra security to your email communications by signing, encrypting, and decrypting. When you use S/MIME with an email message, you confirm the authenticity of the sender, and the integrity and confidentiality of the message.
+- **S/MIME**: s/MIME, oturum açma, şifreleme ve şifre çözme yoluyla e-posta iletişimlerinizi ek güvenlik sağlayan e-posta sertifikaları kullanır. S/MIME 'yi bir e-posta iletisiyle birlikte kullandığınızda, gönderenin orijinalliğini ve iletinin bütünlüğünü ve gizliliğini onaylamanız gerekir.
 
   Seçenekleriniz şunlardır:
 
-  - **Disable S/MIME** (default): Doesn't use an S/MIME email certificate to sign, encrypt, or decrypt emails.
-  - **Enable S/MIME**: Allows users to sign and/or encrypt email in the iOS native mail application. Şunları da girin:
+  - **S/MIME 'Yi devre dışı bırak** (varsayılan): e-postaları imzalamak, şifrelemek veya şifresini çözmek için s/MIME e-posta sertifikası kullanmaz.
+  - **S/MIME 'Yi etkinleştir**: kullanıcıların iOS Native Mail uygulamasında e-postayı imzalayıp/veya şifrelemesine izin verir. Şunları da girin:
 
-    - **S/MIME signing enabled**: **Disable** (default) doesn't allow users to digitally sign the message. **Enable** allows users to digitally sign outgoing email for the account you entered. Signing helps users who receive messages be certain that the message came from the specific sender, and not from someone pretending to be the sender.
-      - **Allow user to change setting**: **Enable** allows users to change the signing options. **Disable** (default) prevents users from changing the signing, and forces users to use the signing you configured.
-      - **Signing certificate type**: Your options:
-        - **Not configured**: Intune doesn't update or change this setting.
-        - **None**: As an administrator, you don't force a specific certificate. Select this option so users can choose their own certificate.
-        - **Derived credential**: Use a certificate that’s derived from a user’s smart card. For more information, see [Use derived credentials in Microsoft Intune](../protect/derived-credentials.md).
-        - **Certificates**: Select an existing PKCS or SCEP certificate profile that's used for signing email messages.
-      - **Allow user to change setting**: **Enable** allows users to change the signing certificate. **Disable** (default) prevents users from changing the signing certificate, and forces users to use the certificate you configured.
-
-        Bu özellik şu platformlarda geçerlidir:  
-        - iOS 12 and newer
-        - iPadOS 12 and newer
-
-    - **Encrypt by default**: **Enable** encrypts all messages as the default behavior. **Disable** (default) doesn't encrypt all messages as the default behavior.
-      - **Allow user to change setting**: **Enable** allows users to change the default encryption behavior. **Disable** prevents users from changing the encryption default behavior, and forces users to use the encryption you configured.
+    - **S/MIME imzalama etkin**: **devre dışı bırak** (varsayılan), kullanıcıların iletiyi dijital olarak imzalamasına izin vermez. **Etkinleştir** ayarı, kullanıcıların girdiğiniz hesap için giden e-postayı dijital olarak imzalamasını sağlar. İmzalama, ileti alan kullanıcılara iletinin belirli bir gönderenden geldiğini ve gönderenin, gönderici olmaya hazır olmasını sağlar.
+      - **Kullanıcının ayarı değiştirmesine Izin ver**: **Etkinleştir** seçeneği, kullanıcıların imzalama seçeneklerini değiştirmesine izin verir. **Devre dışı bırak** (varsayılan), kullanıcıların imzalamayı değiştirmesini engeller ve kullanıcıların yapılandırdığınız imzalamayı kullanmasına zorlar.
+      - **İmza sertifikası türü**: seçenekleriniz:
+        - **Yapılandırılmadı**: Intune bu ayarı güncelleştirmez veya değiştirmez.
+        - **Hiçbiri**: yönetici olarak, belirli bir sertifikayı zorlarsınız. Kullanıcıların kendi sertifikasını seçebilmeleri için bu seçeneği belirleyin.
+        - **Türetilmiş kimlik bilgileri**: kullanıcının akıllı kartından türetilmiş bir sertifika kullanın. Daha fazla bilgi için bkz. [Microsoft Intune türetilmiş kimlik bilgilerini kullanma](../protect/derived-credentials.md).
+        - **Sertifikalar**: e-posta iletilerini imzalamak için kullanılan mevcut bir PKCS veya SCEP sertifika profilini seçin.
+      - **Kullanıcının ayarı değiştirmesine Izin ver**: **Etkinleştir** ayarı, kullanıcıların imza sertifikasını değiştirmesine izin verir. **Devre dışı bırak** (varsayılan), kullanıcıların imza sertifikasını değiştirmelerini engeller ve yapılandırdığınız sertifikayı kullanmaya zorlar.
 
         Bu özellik şu platformlarda geçerlidir:  
-        - iOS 12 and newer
-        - iPadOS 12 and newer
+        - iOS 12 ve üzeri
+        - ıpados 12 ve daha yeni
 
-    - **Force per-message encryption**: Per-message encryption allows users to choose which emails are encrypted before being sent.
-
-      **Enable** shows the per-message encryption option when creating a new email. Users can then choose to opt-in or opt-out of per-message encryption. If the **Encrypt by default** setting is also enabled, enabling per-message encryption allows users to opt out of encryption per message.
-
-      **Disable** (default) prevents the per-message encryption option from showing. If the **Encrypt by default** setting is also disabled, enabling per-message encryption allows users to opt in to encryption per message.
-
-      - **Encryption certificate type**: Your options:
-        - **Not configured**: Intune doesn't update or change this setting.
-        - **None**: As an administrator, you don't force a specific certificate. Select this option so users can choose their own certificate.
-        - **Derived credential**: Use a certificate that’s derived from a user’s smart card. For more information, see [Use derived credentials in Microsoft Intune](../protect/derived-credentials.md).
-        - **Certificates**: Select an existing PKCS or SCEP certificate profile that's used for signing email messages.
-      - **Allow user to change setting**: **Enable** allow users to change the encryption certificate. **Disable** (default) prevents users from changing the encryption certificate, and forces users to use the certificate you configured.
+    - **Varsayılan olarak şifreleyin**: **Etkinleştir** ayarı tüm iletileri varsayılan davranış olarak şifreler. **Devre dışı bırak** (varsayılan) tüm iletileri varsayılan davranış olarak şifrelemez.
+      - **Kullanıcının ayarı değiştirmesine Izin ver**: **Etkinleştir** ayarı, kullanıcıların varsayılan şifreleme davranışını değiştirmesine izin verir. **Devre dışı bırak ayarı** , kullanıcıların şifreleme varsayılan davranışını değiştirmesini engeller ve kullanıcıların yapılandırdığınız şifrelemeyi kullanmasına zorlar.
 
         Bu özellik şu platformlarda geçerlidir:  
-        - iOS 12 and newer
-        - iPadOS 12 and newer
+        - iOS 12 ve üzeri
+        - ıpados 12 ve daha yeni
+
+    - **İleti başına şifrelemeyi zorla**: ileti başına şifreleme, kullanıcıların gönderilmeden önce hangi e-postaların şifrelendiğini seçmesine olanak sağlar.
+
+      **Etkinleştir** seçeneği, yeni bir e-posta oluştururken ileti başına şifreleme seçeneğini gösterir. Kullanıcılar daha sonra ileti başına şifrelemeyi kabul edebilir veya devre dışı bırakabilirsiniz. **Varsayılan olarak şifreleyin** ayarı da etkinleştirildiyse, ileti başına şifrelemeyi etkinleştirmek, kullanıcıların ileti başına şifrelemeyi geri almasına izin verir.
+
+      **Devre dışı bırak** (varsayılan) ileti başına şifreleme seçeneğinin gösterilmesini engeller. **Varsayılan olarak şifreleyin** ayarı da devre dışıysa, ileti başına şifrelemeyi etkinleştirme, kullanıcıların ileti başına şifrelemeyi kabul etmesine olanak tanır.
+
+      - **Şifreleme sertifikası türü**: seçenekleriniz:
+        - **Yapılandırılmadı**: Intune bu ayarı güncelleştirmez veya değiştirmez.
+        - **Hiçbiri**: yönetici olarak, belirli bir sertifikayı zorlarsınız. Kullanıcıların kendi sertifikasını seçebilmeleri için bu seçeneği belirleyin.
+        - **Türetilmiş kimlik bilgileri**: kullanıcının akıllı kartından türetilmiş bir sertifika kullanın. Daha fazla bilgi için bkz. [Microsoft Intune türetilmiş kimlik bilgilerini kullanma](../protect/derived-credentials.md).
+        - **Sertifikalar**: e-posta iletilerini imzalamak için kullanılan mevcut bir PKCS veya SCEP sertifika profilini seçin.
+      - **Kullanıcının ayarı değiştirmesine Izin ver**: **Enable** kullanıcıların şifreleme sertifikasını değiştirmesine izin ver ' i etkinleştirin. **Devre dışı bırak** (varsayılan), kullanıcıların şifreleme sertifikasını değiştirmelerini engeller ve yapılandırdığınız sertifikayı kullanmaya zorlar.
+
+        Bu özellik şu platformlarda geçerlidir:  
+        - iOS 12 ve üzeri
+        - ıpados 12 ve daha yeni
 
 - **Eşitlenecek e-posta miktarı**: Eşitlemek istediğiniz e-posta için gün sayısını seçin. Veya **Sınırsız**’ı seçerek kullanılabilir tüm e-postaları eşitleyin.
-- **Allow messages to be moved to other email accounts**: **Enable** (default) allows users to move email messages between different accounts the users configured on their devices.
-- **Allow email to be sent from third-party applications**: **Enable** (default) allows users to select this profile as the default account for sending email. Üçüncü taraf uygulamaların, örneğin e-postaya dosya eklemek için yerel e-posta uygulamasında e-posta açmasına izin verilir.
-- **Synchronize recently used email addresses**: **Enable** (default) allows users to synchronize the list of email addresses that have been recently used on the device with the server.
+- **İletilerin diğer e-posta hesaplarına taşınmasına Izin ver**: **Etkinleştir** (varsayılan), kullanıcıların cihazlarında yapılandırılan farklı hesaplar arasında e-posta iletilerini taşımasına izin verir.
+- **Üçüncü taraf uygulamalardan e-posta gönderilmesine Izin ver**: **Etkinleştir** (varsayılan), kullanıcıların bu profili e-posta göndermek için varsayılan hesap olarak seçmesine izin verir. Üçüncü taraf uygulamaların, örneğin e-postaya dosya eklemek için yerel e-posta uygulamasında e-posta açmasına izin verilir.
+- **Son kullanılan e-posta adreslerini Eşitle**: **Etkinleştir** (varsayılan), kullanıcıların cihazda son kullanılan e-posta adresi listesini sunucuyla eşitlemesini sağlar.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Ardından [profili atayın](../device-profile-assign.md) ve [durumunu izleyin](../device-profile-monitor.md).
 
-Configure email settings on [Android](../email-settings-android.md), [Android Enterprise](../email-settings-android-enterprise.md), [Windows 10](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md) devices.
+[Android](../email-settings-android.md), [Android Enterprise](../email-settings-android-enterprise.md), [Windows 10](email-settings-windows-10.md)ve [Windows Phone 8,1](email-settings-windows-phone-8-1.md) cihazlarda e-posta ayarlarını yapılandırın.

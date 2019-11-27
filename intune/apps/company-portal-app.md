@@ -45,7 +45,7 @@ Bir Kullanıcı Şirket Portalı bir iOS uygulaması yüklerken bir istem alır.
 > Azure Kamu kullanıyorsanız, bir sorunla ilgili yardım alma sürecini başlattığında bunu nasıl paylaşacağına karar vermesi için son kullanıcıya uygulama günlükleri sunulur. Ancak Azure Kamu kullanmıyorsa, kullanıcı bir sorunla ilgili yardım alma sürecini başlattığında Windows 10 için Şirket Portalı uygulama günlüklerini doğrudan Microsoft'a gönderir. Uygulama günlüklerini Microsoft'a göndermek sorunları gidermeyi ve çözmeyi kolaylaştıracaktır. 
 
 ## <a name="company-information-and-privacy-statement"></a>Şirket bilgileri ve gizlilik bildirimi
-Şirket adı, Şirket Portalı’nın başlığı olarak görüntülenir. Gizlilik bildirimi, kullanıcı gizlilik bağlantısına tıkladığında görüntülenir.
+Şirket adı, Şirket Portalı’nın başlığı olarak görüntülenir. Gizlilik bildirimini, kullanıcı gizlilik bağlantısına tıkladığında görüntülenir.
 
 | Alan adı | Uzunluk üst sınırı | Daha fazla bilgi |
 |---|---|---|
@@ -69,7 +69,7 @@ Bir Kullanıcı Şirket Portalı bir iOS uygulaması yüklerken bir istem alır.
 
 
 ## <a name="company-identity-branding-customization"></a>Şirket kimliği marka özelleştirme
-Şirket Portalı''nızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz.
+Şirket Portalınızı şirket logonuz, şirket adınız, tema renginiz ve arka planınızla özelleştirebilirsiniz.
 
 ### <a name="theme-color-and-logo-in-the-company-portal"></a>Şirket Portalı’nda tema rengi ve logo
 Şirket Portalı’na bir tema rengi uygulayın. Standart renklerden birini seçin veya özel renk için alt basamaklı onaltılık kodu girin.
@@ -147,10 +147,10 @@ Son kullanıcılar, Windows Şirket Portalı’nda klavye kısayollarını (hız
 
 Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir.
 
-| Alan | Açıklama | Klavye kısayolu |
+| Alan | Description | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
 | Gezinti menüsü | Gezinti | Alt+M |
-|  | Ana Sayfası | Alt+H |
+|  | Giriş | Alt+H |
 |  | Tüm uygulamalar | Alt + A |
 |  | Yüklenen uygulamalar | Alt+I |
 |  | Geri bildirim gönder | Alt+F |
@@ -162,7 +162,7 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 | Cihaz ayrıntıları | Yeniden Adlandır | F2 |
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
-| Uygulama ayrıntıları | Yükleme | Ctrl+I |
+| Uygulama ayrıntıları | Yükle | Ctrl+I |
 | Cihazlar | Kullanılabilir | Ctrl+D |
 
 Son kullanıcılar, Windows Şirket Portalı uygulamasında kullanılabilen kısayolları da görebilir.

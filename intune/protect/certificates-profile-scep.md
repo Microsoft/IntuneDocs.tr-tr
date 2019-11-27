@@ -1,6 +1,6 @@
 ---
-title: Use SCEP certificate profiles with Microsoft Intune - Azure | Microsoft Docs
-description: Create and assign Simple Certificate Enrollment Protocol (SCEP) certificate profiles with Microsoft Intune.
+title: Azure Microsoft Intune SCEP sertifika profillerini kullanma | Microsoft Docs
+description: Microsoft Intune ile Basit Sertifika Kayıt Protokolü (SCEP) sertifika profilleri oluşturun ve atayın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -23,58 +23,58 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74390297"
 ---
-# <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Create and assign SCEP certificate profiles in Intune
+# <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
-After you [configure your infrastructure](certificates-scep-configure.md) to support Simple Certificate Enrollment Protocol (SCEP) certificates, you can create and then assign SCEP certificate profiles to users and devices in Intune.
+Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destekleyecek şekilde [yapılandırdıktan](certificates-scep-configure.md) sonra, Intune 'da kullanıcılara ve cihazlara SCEP sertifika profilleri oluşturup atayabilirsiniz.
 
 > [!IMPORTANT]  
-> Before you create SCEP certificate profiles, devices that will use a SCEP certificate profile must trust your Trusted Root Certification Authority (CA). Use a *trusted certificate profile* in Intune to provision the Trusted Root CA certificate to users and devices For information about the trusted certificate profile, see [Export the trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*.
+> SCEP sertifika profilleri oluşturmadan önce, SCEP sertifika profilini kullanacak cihazların güvenilen kök sertifika yetkilinizin (CA) güvenmesi gerekir. Intune 'da güvenilen bir *sertifika profili* kullanarak güvenilen sertifika profili hakkında bilgi edinmek Için GÜVENILEN kök CA sertifikasını kullanıcılara ve cihazlara sağlama konusuna bakın. [Güvenilen kök CA sertifikasını dışarı aktarma](certificates-configure.md#export-the-trusted-root-ca-certificate) ve [Güvenilen sertifika profilleri oluşturma](certificates-configure.md#create-trusted-certificate-profiles) ' da *Intune 'da kimlik doğrulaması için sertifikaları kullanma*.
 
 
 ## <a name="create-a-scep-certificate-profile"></a>Bir SCEP sertifika profili oluşturma
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Devices** > **Configuration profile** > **Create profile**.
+2. **Profil oluşturma** > **yapılandırma profili** > **cihazları** seçin.
 
 3. Aşağıdaki özellikleri girin:
 
 4. SCEP sertifika profili için bir **Ad** ve **Açıklama** girin.
 
-5. From the **Platform** drop-down list, select a [supported device platform](certificates-configure.md#supported-platforms-and-certificate-profiles) for this SCEP certificate.
+5. **Platform** açılan listesinde, bu SCEP sertifikası için desteklenen bir [Cihaz platformu](certificates-configure.md#supported-platforms-and-certificate-profiles) seçin.
 
-6. From the **Profile type** drop-down list, select **SCEP certificate**.  
+6. **Profil türü** açılan listesinden **SCEP sertifikası**' nı seçin.  
 
-   For the **Android Enterprise** platform, *Profile type* is divided into two categories, *Device Owner Only* and *Work Profile Only*. Be sure to select the correct SCEP certificate profile for the devices you manage.  
+   **Android kurumsal** platformu için *profil türü* , yalnızca *cihaz sahibi* ve *yalnızca iş profili*olmak üzere iki kategoriye ayrılmıştır. Yönettiğiniz cihazlar için doğru SCEP sertifika profilini seçtiğinizden emin olun.  
 
-   SCEP certificate profiles for the *Device Owner Only* profile have the following limitations:
+   *Yalnızca cihaz sahibi* profılı için SCEP sertifika profilleri aşağıdaki sınırlamalara sahiptir:
 
-   1. Under Monitoring, certificate reporting isn't available for Device Owner SCEP certificate profiles.
+   1. Izleme altında, sertifika raporlama cihaz sahibi SCEP sertifika profilleri için kullanılamaz.
 
-   2. You can't use Intune to revoke certificates that were provisioned by SCEP certificate profiles for Device Owners. You can manage revocation through an external process or directly with the certification authority. 
+   2. Cihaz sahipleri için SCEP sertifika profilleri tarafından sağlanan sertifikaları iptal etmek için Intune 'U kullanamazsınız. İptali bir dış işlem veya doğrudan sertifika yetkilisi ile yönetebilirsiniz. 
 
-   4. For Android Enterprise dedicated devices, SCEP certificate profiles are supported for Wi-Fi network configuration and authentication only.  SCEP certificate profiles on Android Enterprise dedicated devices are not supported for VPN or app authentication.   
+   4. Android kurumsal adanmış cihazlarda, SCEP sertifika profilleri yalnızca Wi-Fi ağ yapılandırması ve kimlik doğrulaması için desteklenir.  Android kurumsal adanmış cihazlarda SCEP sertifika profilleri VPN veya uygulama kimlik doğrulaması için desteklenmez.   
 
    
-7. Select **Settings**, and then complete the following configurations:
+7. **Ayarlar**' ı seçin ve ardından aşağıdaki konfigürasyonları doldurun:
 
-   - **Certificate type**:
+   - **Sertifika türü**:
 
-     *(Applies to:  Android, Android Enterprise, iOS, macOS, Windows 8.1 and later, and Windows 10 and later.)*
+     *(İçin geçerlidir: Android, Android Enterprise, iOS, macOS, Windows 8.1 ve üzeri ve Windows 10 ve üzeri.)*
 
-     Select a type depending on how you'll use the certificate profile:
+     Sertifika profilini nasıl kullanacağınızı gösteren bir tür seçin:
 
-     - **User**: *User* certificates can contain both user and device attributes in the subject and SAN of the certificate.  
-     - **Device**:  *Device* certificates can only contain device attributes in the subject and SAN of the certificate.
+     - **Kullanıcı**: *Kullanıcı* sertifikaları hem Kullanıcı hem de cihaz özniteliklerini, sertifikanın konu ve San 'ı içerebilir.  
+     - **Cihaz**: *cihaz* sertifikaları, sertifikanın konu ve San 'ı yalnızca cihaz özniteliklerini içerebilir.
 
-       Use **Device** for scenarios such as user-less devices, like kiosks, or for Windows devices. On Windows devices, the certificate is placed in the Local Computer certificate store.
+       **Cihazı** , kiosks gibi Kullanıcı-daha az cihazlar veya Windows cihazları gibi senaryolar için kullanın. Windows cihazlarında, sertifika yerel bilgisayar sertifika deposuna yerleştirilir.
 
-   - **Subject name format**:
+   - **Konu adı biçimi**:
 
-     Select how Intune automatically creates the subject name in the certificate request. Options for the subject name format depend on the Certificate type you select, either **User** or **Device**.
+     Intune 'un sertifika isteğinde konu adını otomatik olarak nasıl oluşturduğunu seçin. Konu adı biçimi için seçenekler, **Kullanıcı** veya **cihaz**' ı seçtiğiniz sertifika türüne bağlıdır.
 
      > [!NOTE]
-     > There is a [known issue](#avoid-certificate-signing-requests-with-escaped-special-characters) for using SCEP to get certificates when the subject name in the resulting Certificate Signing Request (CSR) includes one of the following characters as an escaped character (proceeded by a backslash \\):
+     > Elde edilen sertifika Imzalama Isteğindeki (CSR) konu adı, kaçış karakteri olarak şu karakterlerden birini içerdiğinde (bir ters eğik çizgi \\), sertifika almak için SCEP kullanmanın [bilinen bir sorunu](#avoid-certificate-signing-requests-with-escaped-special-characters) vardır:
      > - \+
      > - ;
      > - ,
@@ -82,7 +82,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
      - **Kullanıcı sertifika türü**
 
-       Format options for the *Subject name format* include:
+       *Konu adı biçimi* için biçim seçenekleri şunları içerir:
 
        - **Yapılandırılmadı**
        - **Ortak ad**
@@ -92,164 +92,164 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
        - **Seri numarası**
        - **Özel**: Bu seçeneği işaretlediğinizde bir **Özel** metin kutusu da gösterilir. Bu alanı, değişkenler dahil özel bir konu adı biçimi girmek için kullanın. Özel biçim, şu iki değişkeni destekler: **Ortak Ad (CN)** ve **E-posta (E)** . **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
 
-         - **CN={{UserName}}** : The user principal name of the user, such as janedoe@contoso.com.
+         - **CN = {{username}}** : kullanıcının janedoe@contoso.comgibi Kullanıcı asıl adı.
          - **CN={{AAD_Device_ID}}** : Azure Active Directory’ye (AD) yeni bir cihaz kaydettiğinizde atanan bir kimlik. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
-         - **CN={{SERIALNUMBER}}** : The unique serial number (SN) typically used by the manufacturer to identify a device.
-         - **CN={{IMEINumber}}** : The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone.
-         - **CN={{OnPrem_Distinguished_Name}}** : A sequence of relative distinguished names separated by comma, such as *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
+         - **CN = {{SERIALNUMBER}}** : genellikle üretici tarafından bir cihazı tanımlamak için kullanılan benzersiz seri numarası (sn).
+         - **CN = {{ımekarmsayı}}** : bir cep telefonu tanımlamak Için kullanılan uluslararası mobil ekipman KIMLIĞI (IMEI) benzersiz numarası.
+         - **CN = {{OnPrem_Distinguished_Name}}** : *CN = Gamze Etikan, OU = USERACCOUNTS, DC = Corp, DC = contoso, DC = com*gibi virgülle ayrılmış göreli ayırt edici adların sırası.
 
-           To use the *{{OnPrem_Distinguished_Name}}* variable, be sure to sync the *onpremisesdistinguishedname* user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+           *{{OnPrem_Distinguished_Name}}* değişkenini kullanmak Için, Azure AD 'nize [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak *onpremisesdistinguishedname* Kullanıcı özniteliğini eşitlediğinizden emin olun.
 
-         - **CN={{onPremisesSamAccountName}}** : Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called *onPremisesSamAccountName*. Intune can substitute that variable as part of a certificate issuance request in the subject of a certificate. The samAccountName attribute is the user sign-in name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user sign in name format is: *DomainName\testUser*, or only *testUser*.
+         - **CN = {{onPremisesSamAccountName}}** : Yöneticiler, *adlı BIR*özniteliğe Azure AD connect kullanarak sAMAccountName ÖZNITELIĞINI Active Directory 'den Azure AD 'ye eşitleyebilir. Intune, bu değişkeni bir sertifika konusunun sertifika verme isteğinin bir parçası olarak kullanabilir. SamAccountName özniteliği, Windows 'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan Kullanıcı oturum açma adıdır. Kullanıcı oturum açma adı biçimi: EtkiAlanıAdı \ *testuser*veya yalnızca *testuser*.
 
-            To use the *{{onPremisesSamAccountName}}* variable, be sure to sync the *onPremisesSamAccountName* user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+            *{{OnPremisesSamAccountName}}* değişkenini kullanmak Için, Azure AD 'nize [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak *onPremisesSamAccountName* User özniteliğini eşitlediğinizden emin olun.
 
          Bu değişkenlerin ve statik dizelerin bir veya birkaç tanesinin bir bileşimini kullanarak aşağıdaki gibi özel bir konu adı biçimi oluşturabilirsiniz:  
          - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
 
-         That example includes a subject name format that uses the CN and E variables, and strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), bu işlevi ve desteklenen dizelerini açıklar.
+         Bu örnekte, CN ve E değişkenlerini kullanan bir konu adı biçimi ve kuruluş birimi, kuruluş, konum, durum ve ülke değerleri için dizeler bulunur. [CertStrToName işlevi](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx), bu işlevi ve desteklenen dizelerini açıklar.
 
       - **Cihaz sertifika türü**
 
-        Format options for the Subject name format include the following variables:
+        Konu adı biçimi için biçim seçenekleri aşağıdaki değişkenleri içerir:
 
-        - **{{AAD_Device_ID}}** or **{{AzureADDeviceId}}** - Either variable can be used to identify a device by its Azure AD ID.
+        - **{{AAD_Device_ID}}** veya **{{azureaddeviceıd}}** -her iki değişken de BIR cihazı Azure AD kimliğine göre belirlemek için kullanılabilir.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
-        - **{{IMEINumber}}**
+        - **{{Imekarmsayı}}**
         - **{{WiFiMacAddress}}**
-        - **{{IMEI}}**
-        - **{{DeviceName}}**
-        - **{{FullyQualifiedDomainName}}** *(Only applicable for Windows and domain-joined devices)*
-        - **{{MEID}}**
+        - **{{IMEı}}**
+        - **{{Aygıtadı}}**
+        - **{{Fullyıqualifieddomainname}}** *(yalnızca Windows ve etki alanına katılmış cihazlar için geçerlidir)*
+        - **{{MEıD}}**
 
-        You can specify these variables, followed by the text for the variable, in the textbox. For example, the common name for a device named *Device1* can be added as **CN={{DeviceName}}Device1**.
+        Bu değişkenleri ve metin kutusu içinde değişkeni için metni belirtebilirsiniz. Örneğin, *Device1* adlı bir cihazın ortak adı **CN = {{aygıtadı}} Device1**olarak eklenebilir.
 
         > [!IMPORTANT]
-        > - When you specify a variable, enclose the variable name in curly brackets { } as seen in the example, to avoid an error.  
-        > - Device properties used in the *subject* or *SAN* of a device certificate, like **IMEI**, **SerialNumber**, and **FullyQualifiedDomainName**, are properties that could be spoofed by a person with access to the device.
-        > - A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if **{{IMEI}}** is used in the subject name of a SCEP profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install.
+        > - Bir değişken belirttiğinizde, bir hatadan kaçınmak için, değişken adını örnekte görüldüğü gibi küme ayraçları {} içine alın.  
+        > - **IMEI**, **SerialNumber**ve **fullyıqualifieddomainname**gibi bir cihaz sertifikasının *Konu* veya *San* 'ı üzerinde kullanılan cihaz özellikleri, cihaza erişimi olan bir kişi tarafından sızılmış özelliklerdir.
+        > - Bir cihazın, bu cihaza yüklemek için bir sertifika profilinde belirtilen tüm değişkenleri desteklemesi gerekir.  Örneğin, bir SCEP profilinin konu adında **{{IMEI}}** kullanılıyorsa ve IMEI numarası olmayan bir cihaza atanırsa, profil yüklenemez.
 
-   - **Subject alternative name**: Select how Intune automatically creates the subject alternative name (SAN) in the certificate request. Options for the SAN depend on the Certificate type you selected; either **User** or **Device**.
+   - **Konu diğer adı**: Intune 'un sertifika isteğinde konu alternatif adı 'Nı (San) otomatik olarak nasıl oluşturduğunu seçin. SAN seçenekleri seçtiğiniz sertifika türüne bağlıdır; **Kullanıcı** ya da **cihaz**.
 
       - **Kullanıcı sertifika türü**
 
-        Select from the available attributes:
+        Kullanılabilir özniteliklerden seçin:
 
         - **E-posta adresi**
-        - **User principal name (UPN)**
+        - **Kullanıcı asıl adı (UPN)**
 
-        For example, user certificate types can include the user principal name (UPN) in the subject alternative name. İstemci sertifikası bir Ağ İlkesi Sunucusunda kimlik doğrulamak için kullanılacaksa konu alternatif adını UPN'ye ayarlayın.
+        Örneğin, Kullanıcı sertifika türleri konu alternatif adına Kullanıcı asıl adını (UPN) içerebilir. İstemci sertifikası bir Ağ İlkesi Sunucusunda kimlik doğrulamak için kullanılacaksa konu alternatif adını UPN'ye ayarlayın.
 
       - **Cihaz sertifika türü**
 
-        Use the **Attribute** dropdown and select an attribute, assign a **Value**, and **Add** that to the certificate profile. You can add multiple values by selecting additional attributes.
+        **Öznitelik** açılan listesini kullanın ve bir öznitelik seçin, bir **değer**atayın ve bunu sertifika profiline **ekleyin** . Ek öznitelikler ' i seçerek birden çok değer ekleyebilirsiniz.
 
-        Available attributes include:
+        Kullanılabilir öznitelikler şunlardır:
 
         - **E-posta adresi**
-        - **User principal name (UPN)**
+        - **Kullanıcı asıl adı (UPN)**
         - **DNS**
 
         *Cihaz* sertifika türüyle değer için aşağıdaki cihaz sertifika değişkenlerini kullanabilirsiniz:
 
-        - **{{AAD_Device_ID}}** or **{{AzureADDeviceId}}** - Either variable can be used to identify a device by its Azure AD ID.
+        - **{{AAD_Device_ID}}** veya **{{azureaddeviceıd}}** -her iki değişken de BIR cihazı Azure AD kimliğine göre belirlemek için kullanılabilir.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
-        - **{{IMEINumber}}**
+        - **{{Imekarmsayı}}**
         - **{{WiFiMacAddress}}**
-        - **{{IMEI}}**
-        - **{{DeviceName}}**
-        - **{{FullyQualifiedDomainName}}**
-        - **{{MEID}}**
+        - **{{IMEı}}**
+        - **{{Aygıtadı}}**
+        - **{{Fullyıqualifieddomainname}}**
+        - **{{MEıD}}**
 
-        To specify a value for an attribute, include the variable name with curly brackets, followed by the text for that variable. For example, a value for the DNS attribute can be added **{{AzureADDeviceId}}.domain.com** where *.domain.com* is the text. For a user named *User1* an Email address might appear as {{FullyQualifiedDomainName}}User1@Contoso.com.
+        Bir özniteliğe ilişkin bir değer belirtmek için, değişken adını küme ayraçları ile, sonra da bu değişken için olan metinle birlikte ekleyin. Örneğin, DNS özniteliği için bir değer **{{Azureaddeviceıd}}. domain. com** ' u *. domain.com* ise metindir. *Kullanıcı1* adlı bir Kullanıcı Için e-posta adresi {{Fullyıqualifieddomainname}} olarak görünebilirUser1@Contoso.com.
 
         > [!IMPORTANT]
-        > - When using a device certificate variable, enclose the variable name in curly brackets { }.
-        > - Don’t use curly brackets **{ }** , pipe symbols **|** , and semicolons **;** , in the text that follows the variable.
-        > - Device properties used in the *subject* or *SAN* of a device certificate, like **IMEI**, **SerialNumber**, and **FullyQualifiedDomainName**, are properties that could be spoofed by a person with access to the device.
-        > - A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if **{{IMEI}}** is used in the SAN of a SCEP profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install.
+        > - Bir cihaz sertifikası değişkeni kullanırken, değişken adını kaşlı ayraçlar {} içine alın.
+        > - Değişkeni izleyen metinde süslü ayraçları **{}** , kanal sembolleri **|** ve noktalı virgül **;** kullanmayın.
+        > - **IMEI**, **SerialNumber**ve **fullyıqualifieddomainname**gibi bir cihaz sertifikasının *Konu* veya *San* 'ı üzerinde kullanılan cihaz özellikleri, cihaza erişimi olan bir kişi tarafından sızılmış özelliklerdir.
+        > - Bir cihazın, bu cihaza yüklemek için bir sertifika profilinde belirtilen tüm değişkenleri desteklemesi gerekir.  Örneğin, **{{IMEI}}** bir SCEP profilinin San 'ı içinde kullanılıyorsa ve IMEI numarası olmayan bir cihaza atanırsa, profil yüklenemez.
 
-   - **Certificate validity period**:
+   - **Sertifika geçerlilik süresi**:
 
-     Sertifika şablonundaki geçerlilik süresinden düşük bir değer girebilirsiniz ancak daha yüksek bir değer giremezsiniz. If you configured the certificate template to [support a custom value that can be set from within the Intune console](certificates-scep-configure.md#modify-the-validity-period-of-the-certificate-template), use this setting to specify the amount of remaining time before the certificate expires.
+     Sertifika şablonundaki geçerlilik süresinden düşük bir değer girebilirsiniz ancak daha yüksek bir değer giremezsiniz. Sertifika şablonunu [Intune konsolu içinden ayarlanılabilecek özel bir değeri destekleyecek](certificates-scep-configure.md#modify-the-validity-period-of-the-certificate-template)şekilde yapılandırdıysanız, sertifikanın süresi dolmadan önce kalan süreyi belirtmek için bu ayarı kullanın.
 
      Örneğin, sertifika şablonunda sertifika geçerlilik süresi iki yılsa beş yıl değerini giremezsiniz ancak bir yıl değerini girebilirsiniz. Değerin, yayımlayan sertifika yetkilisinin sertifikası için kalan geçerlilik süresinden de düşük olması gerekir.
 
-   - **Key storage provider (KSP)** :
+   - **Anahtar depolama sağlayıcısı (KSP)** :
 
-     *(Applies to:  Windows 8.1 and later, and Windows 10 and later)*
+     *(İçin geçerlidir: Windows 8.1 ve üzeri, ve Windows 10 ve üzeri)*
 
-     Specify where the key to the certificate is stored. Choose from the following values:
+     Sertifika anahtarının depolanacağı yeri belirtin. Aşağıdaki değerlerden birini seçin:
 
      - **Varsa Güvenilir Platform Modülü (TPM) KSP'sine, aksi halde Yazılım KSP'sine kaydol**
      - **Güvenilir Platform Modülü (TPM) KSP'sine kaydol, aksi halde hata ver**
      - **Passport'a kaydet, aksi halde hata ver (Windows 10 ve üzeri)**
      - **Software KSP’ye kaydol**
 
-   - **Key usage**:
+   - **Anahtar kullanımı**:
 
-     Select key usage options for the certificate:
+     Sertifika için anahtar kullanım seçeneklerini belirleyin:
 
-     - **Digital signature**: Allow key exchange only when a digital signature helps protect the key.
-     - **Key encipherment**: Allow key exchange only when the key is encrypted.
+     - **Dijital imza**: yalnızca anahtarın korunmasına bir dijital imza yardımcı olduğunda anahtar değişimine izin verir.
+     - **Anahtar şifreleme**: yalnızca anahtar şifreli olduğunda anahtar değişimine izin verir.
 
-   - **Key size (bits)** :
+   - **Anahtar boyutu (bit)** :
 
-     Select the number of bits contained in the key.
+     Anahtarda bulunan bitlerin sayısını seçin.
 
-   - **Hash algorithm**:
+   - **Karma algoritması**:
 
-     *(Applies to Android, Android enterprise, Windows Phone 8.1, Windows 8.1 and later, and Windows 10 and later)*
+     *(Android, Android Enterprise, Windows Phone 8,1, Windows 8.1 ve üzeri ve Windows 10 ve üzeri için geçerlidir)*
 
      Bu sertifika ile kullanmak için kullanılabilir karma algoritma türlerinden birini seçin. Bağlanan cihazların destekleyeceği en güçlü güvenlik düzeyini seçin.
 
-   - **Root Certificate**:
+   - **Kök sertifika**:
 
-     Select the *trusted certificate profile* you previously configured and assigned to applicable users and devices for this SCEP certificate profile. The trusted certificate profile is used to provision users and devices with the Trusted Root CA certificate. For information about the trusted certificate profile, see [Export your trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*. If you have a root Certification Authority and an issuing Certification Authority, select the Trusted Root certificate profile that is associated with the issuing Certification Authority.
+     Daha önce yapılandırdığınız ve bu SCEP sertifika profili için geçerli kullanıcılara ve cihazlara atadığınız *Güvenilen sertifika profilini* seçin. Güvenilen sertifika profili, kullanıcılara ve cihazlara güvenilen kök CA sertifikası sağlamak için kullanılır. Güvenilen sertifika profili hakkında daha fazla bilgi için bkz. *Intune 'da kimlik doğrulaması için sertifikaları kullanma*' da [Güvenilen kök CA sertifikanızı dışarı aktarma](certificates-configure.md#export-the-trusted-root-ca-certificate) ve [Güvenilen sertifika profilleri oluşturma](certificates-configure.md#create-trusted-certificate-profiles) . Kök sertifika yetkiliniz ve veren bir sertifika yetkiliniz varsa, sertifika verme yetkilisi ile ilişkili güvenilen kök sertifika profilini seçin.
 
-   - **Extended key usage**:
+   - **Genişletilmiş anahtar kullanımı**:
 
-     Add values for the certificate's intended purpose. In most cases, the certificate requires *client authentication* so that the user or device can authenticate to a server. You can add additional key usages as required.
+     Sertifikanın amaçlanan amacı için değer ekleyin. Çoğu durumda, Kullanıcı veya cihazın bir sunucuda kimliğini doğrulayabilmesi için sertifika *istemci kimlik doğrulaması* gerektirir. Gerektiğinde ek anahtar kullanımları ekleyebilirsiniz.
 
-   - **Renewal threshold (%)** :
+   - **Yenileme eşiği (%)** :
 
-     Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate. For example, if you enter 20, the renewal of the certificate will be attempted when the certificate is 80% expired. Renewal attempts continue until renewal is successful. Renewal generates a new certificate, which results in a new public/private key pair.
+     Cihazın sertifikayı yenilemeyi istemesi için kalan sertifika ömrünün yüzdesini girin. Örneğin, 20 girerseniz, sertifikanın %80 ' ı dolduğunda sertifikanın yenilenmesi denenir. Yenileme başarılı olana kadar yenileme denemeleri devam eder. Yenileme, yeni bir ortak/özel anahtar çifti ile sonuçlanan yeni bir sertifika oluşturur.
 
-   - **SCEP Server URLs**:
+   - **SCEP sunucu URL 'leri**:
 
-     Enter one or more URLs for the NDES Servers that issue certificates via SCEP. For example, enter something like *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . You can add additional SCEP URLs for load balancing as needed as URLs are randomly pushed to the device with the profile. If one of the SCEP servers isn't available, the SCEP request will fail and it's possible that on later device check-ins, the cert request could be made against the same server that is down.
+     SCEP aracılığıyla sertifika veren NDES sunucuları için bir veya daha fazla URL girin. Örneğin, *https://ndes.contoso.com/certsrv/mscep/mscep.dll* gibi bir ad girin. URL 'Ler, profille cihaza rastgele gönderildiğinden, yük dengeleme için gereken ek SCEP URL 'Leri ekleyebilirsiniz. SCEP sunucularından biri kullanılamıyorsa, SCEP isteği başarısız olur ve daha sonraki cihaz iadelerinde, sertifika isteği aşağı doğru aynı sunucuya göre yapılabilir.
 
-8. Select **OK**, and then select **Create**. The profile is created and appears on the *Device configuration - Profiles* list.
+8. **Tamam**' ı ve ardından **Oluştur**' u seçin. Profil oluşturulur ve *cihaz yapılandırması-profiller* listesinde görüntülenir.
 
-### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Avoid certificate signing requests with escaped special characters
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Kaçışlı özel karakterlerle sertifika imzalama isteklerinden kaçının
 
-There's a known issue for SCEP and PKCS certificate requests that include a Subject Name (CN) with one or more of the following special characters as an escaped character. Subject names that include one of the special characters as an escaped character result in a CSR with an incorrect subject name. An incorrect subject name results in the Intune SCEP challenge validation failing and no certificate issued.
+Bir kaçan karakter olarak aşağıdaki özel karakterlerden birini veya daha fazlasını içeren bir konu adı (CN) içeren SCEP ve PKCS sertifika istekleri için bilinen bir sorun vardır. Kaçış karakteri olarak özel karakterlerden birini içeren konu adları, yanlış konu adına sahip bir CSR 'de sonuçlanır. Yanlış konu adı, Intune SCEP sınama doğrulaması başarısız olur ve sertifika verilmemiş olur.
 
-The special characters are:
+Özel karakterler şunlardır:
 - \+
 - ,
 - ;
 - =
 
-When your subject name includes one of the special characters, use one of the following options to work around this limitation:
+Konu adınız özel karakterlerden birini içerdiğinde, bu sınırlamaya geçici bir çözüm bulmak için aşağıdaki seçeneklerden birini kullanın:
 
-- Encapsulate the CN value that contains the special character with quotes.  
-- Remove the special character from the CN value.
+- Tırnak işaretleriyle özel karakteri içeren CN değerini kapsülle.  
+- CN değerinden özel karakteri kaldırın.
 
-**For example**, you have a Subject Name that appears as *Test user (TestCompany, LLC)* .  A CSR that includes a CN that has the comma between *TestCompany* and *LLC* presents a problem.  The problem can be avoided by placing quotes around the entire CN, or by removing of the comma from between *TestCompany* and *LLC*:
+**Örneğin**, *test kullanıcısı (TESTCOMPANY, LLC)* olarak görünen bir konu adı vardır.  *Testcompany* ve *LLC* arasında virgül bulunan BIR CN içeren bir CSR bir sorun gösterir.  Bu sorun, tüm CN 'nin çevresine tırnak işareti koyarak veya tam olarak *Testcompany* ile *LLC*arasında virgül kaldırılarak önlenebilir:
 
-- **Add quotes**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
-- **Remove the comma**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Tırnak Işaretleri ekleme**: *CN =* "test kullanıcısı (testcompany, LLC)", OU = useraccounts, DC = Corp, DC = contoso, DC = com *
+- **Virgülü kaldırın**: *CN = test kullanıcısı (testcompany LLC), OU = useraccounts, DC = Corp, DC = contoso, DC = com*
 
- However, attempts to escape the comma by using a backslash character will fail with an error in the CRP logs:
+ Ancak, bir ters eğik çizgi karakterini kullanarak virgül kaçış girişimleri, CRP günlüklerinde hata vererek başarısız olur:
  
-- **Escaped comma**: *CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Atlanan virgül**: *CN = test kullanıcısı (TESTCOMPANY\\, LLC), OU = USERACCOUNTS, DC = Corp, DC = contoso, DC = com*
 
-The error is similar to the following error:
+Hata aşağıdaki hatayla benzerdir:
 
 ```
 Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
@@ -265,22 +265,22 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 
 ## <a name="assign-the-certificate-profile"></a>Sertifika profilini atama
 
-Assign SCEP certificate profiles the same way you [deploy device profiles](../configuration/device-profile-assign.md) for other purposes. However, consider the following before you continue:
+SCEP sertifika profillerini, diğer amaçlar için [Cihaz profillerini dağıttığınız](../configuration/device-profile-assign.md) şekilde atayın. Ancak, devam etmeden önce aşağıdakileri göz önünde bulundurun:
 
-- When you assign SCEP certificate profiles to groups, the Trusted Root CA certificate file (as specified in the *trusted certificate profile*) is installed on the device. The device uses the SCEP certificate profile to create a certificate request for that Trusted Root CA certificate.
+- Gruplara SCEP sertifika profilleri atadığınızda, güvenilen kök CA sertifika dosyası ( *Güvenilen sertifika profilinde*belirtildiği gibi) cihaza yüklenir. Cihaz, bu güvenilen kök CA sertifikasına yönelik bir sertifika isteği oluşturmak için SCEP sertifika profilini kullanır.
 
-- The SCEP certificate profile installs only on devices that run the platform you specified when you created the certificate profile.
+- SCEP sertifika profili yalnızca, sertifika profilini oluştururken belirttiğiniz platformu çalıştıran cihazlara yüklenir.
 
 - Sertifika profillerini kullanıcı koleksiyonlarına veya cihaz koleksiyonlarına atayabilirsiniz.
 
 - Cihaz kaydolduktan sonra cihaza hızlıca bir sertifika yayımlamak için sertifika profilini bir cihaz grubu yerine bir kullanıcı grubuna atayın. Bir cihaz grubuna atarsanız, ilkeleri almadan önce cihazın tam olarak kaydedilmesi gerekir.
 
-- If you use co-management for Intune and Configuration Manager, in Configuration Manager [set the workload slider](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) for Resource Access Policy to **Intune** or **Pilot Intune**. This setting allows Windows 10 clients to start the process of requesting the certificate.
+- Intune ve Configuration Manager için ortak yönetim kullanıyorsanız, Configuration Manager ' de kaynak erişim Ilkesi için [iş yükü kaydırıcısını](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) **Intune** veya **pilot Intune**'a ayarlayın. Bu ayar, Windows 10 istemcilerinin sertifika isteme işlemini başlatmasını sağlar.
 
-- Although you create and assign the trusted certificate profile and the SCEP certificate profile separately, both must be assigned. Without both installed on a device, the SCEP certificate policy fails. Ensure that any trusted root certificate profiles are also deployed to the same groups as the SCEP profile.
+- Güvenilen sertifika profilini ve SCEP sertifika profilini ayrı ayrı oluşturup atarsanız, her ikisi de atanmalıdır. Bir cihaza her ikisi de yüklü olmadan, SCEP sertifika ilkesi başarısız olur. Tüm güvenilen kök sertifika profillerinin Ayrıca SCEP profiliyle aynı gruplara dağıtıldığından emin olun.
 
 > [!NOTE]
-> On iOS devices, when a SCEP certificate profile is associated with an additional profile, like a Wi-Fi or VPN profile, the device receives a certificate for each of those additional profiles. This results in the iOS device having multiple certificates delivered by the SCEP certificate request.  If a single certificate is desired, you must use PKCS certificates instead of SCEP certificates.  This is due to differences in how SCEP and PKCS certificates are delivered to devices.
+> İOS cihazlarında, bir SCEP sertifika profili, Wi-Fi veya VPN profili gibi ek bir profille ilişkilendirildiğinde, cihaz bu ek profillerin her biri için bir sertifika alır. Bu, iOS cihazının SCEP sertifika isteği tarafından sunulan birden çok sertifikaya sahip olmasına neden olur.  Tek bir sertifika isteniyorsa, SCEP sertifikaları yerine PKCS sertifikalarını kullanmanız gerekir.  Bunun nedeni, SCEP ve PKCS sertifikalarının cihazlara nasıl teslim edileceği farklardır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

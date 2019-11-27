@@ -1,7 +1,7 @@
 ---
-title: Quickstart - Password compliance policy for Android devices
+title: Hızlı başlangıç-Android cihazları için parola uyumluluk ilkesi
 titleSuffix: Microsoft Intune
-description: In this quickstart, you will use Microsoft Intune to set the length of the password required for Android devices.
+description: Bu hızlı başlangıçta, Android cihazlar için gereken parola uzunluğunu ayarlamak üzere Microsoft Intune kullanacaksınız.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -27,9 +27,9 @@ ms.locfileid: "74409772"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Hızlı Başlangıç: Android cihazları için parola uyumluluk ilkesi oluşturma
 
-In this quickstart, you'll use Microsoft Intune to require your workforce's Android users to enter a password of a specific length before access is granted to information on their Android devices.
+Bu hızlı başlangıçta, iş gücünün Android kullanıcılarının Android cihazlarındaki bilgilere erişim verilmeden önce belirli bir uzunlukta parola girmesini gerektirmek için Microsoft Intune kullanacaksınız.
 
-Intune cihaz uyumluluk ilkesi, cihazların uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları belirtir. You can use compliance policies with Conditional Access to allow or block access to company resources. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz.
+Intune cihaz uyumluluk ilkesi, cihazların uyumlu olarak değerlendirilmesi için uyması gereken kuralları ve ayarları belirtir. Şirket kaynaklarına erişim izni vermek veya erişimi engellemek için, koşullu erişimle uyumluluk ilkelerini kullanabilirsiniz. Ayrıca cihaz raporları alabilir ve uyumsuzluk için eylemler uygulayabilirsiniz.
 
 > [!IMPORTANT]
 > İş gücünüzü korumak için parola ayarlarına ek olarak diğer sistem güvenlik ayarlarını da göz önünde bulundurmalısınız. Daha fazla bilgi için bkz. [Sistem güvenlik ayarları](compliance-policy-create-android-for-work.md).
@@ -38,33 +38,33 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
-Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) as a [Global administrator](../fundamentals/users-add.md#types-of-administrators) or an Intune [Service administrator](../fundamentals/users-add.md#types-of-administrators).
+[Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) [genel yönetici](../fundamentals/users-add.md#types-of-administrators) veya Intune [Hizmet Yöneticisi](../fundamentals/users-add.md#types-of-administrators)olarak oturum açın.
 
 ## <a name="create-a-device-compliance-policy"></a>Cihaz uyumluluğu ilkesi oluşturma
 
-Create a device compliance policy to require your workforce's Android users to enter a password of a specific length before access is granted to information on their Android devices.
+İş gücünün Android kullanıcılarının, Android cihazlarındaki bilgilere erişim verilmeden önce belirli bir uzunlukta parola girmesini gerektirmek için bir cihaz uyumluluk ilkesi oluşturun.
 
-1. In Intune, select **Devices** > **Compliance Policies** > **Create Policy**.
+1. Intune 'da **cihaz** > **Uyumluluk Ilkeleri** > **ilke oluştur**' u seçin.
 
 2. **Ad** olarak **Android uyumluluğu** yazın. Ayrıca bir **Açıklama** girin.
 
 3. **Platform** olarak **Android Kurumsal**’ı seçin.
 
-4. For **Profile type**, select **Work profile**.
+4. **Profil türü**için **iş profili**' ni seçin.
 
 5. **Ayarlar** > **Sistem Güvenliği**’ni seçerek Android **Sistem Güvenliği** dikey penceresini görüntüleyin.
 
 6. **Mobil cihazların kilidini açmak için parola gerektir** ayarını **Gerektir** olarak belirleyin.
 
-7. For **Required password type**, select **At least numeric**.
+7. **Gerekli parola türü**için **en az sayısal**' i seçin.
 
-8. For **Minimum password length**, enter **6**.
+8. **Minimum parola uzunluğu**için **6**girin.
 
     ![Microsoft Intune'da grup oluşturma işleminin ekran görüntüsü](./media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-9. When done, select **OK** > **OK** > **Create** to create the policy.
+9. İşiniz bittiğinde, ilkeyi oluşturmak için **tamam** ** > Tamam** > **Oluştur** ' u seçin.
 
-When you've successfully created the policy, it appears in your list of device complice policies.
+İlkeyi başarıyla oluşturduğunuzda cihaz Complice ilkeleri listenizde görünür.
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme
 

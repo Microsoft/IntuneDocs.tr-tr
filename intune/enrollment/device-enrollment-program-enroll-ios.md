@@ -68,7 +68,7 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 > [!NOTE]
 > Belirteci Azure’a geçirmeden önce klasik Intune portalında silerseniz Intune, silinen bir Apple DEP belirtecini geri yükleyebilir. DEP belirtecini Azure portalından tekrar silebilirsiniz.
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Adım 1. Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1\. Adım Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin.
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** **Ekle** > ' yi seçin.
 
@@ -103,13 +103,13 @@ DEP belirtecini oluşturmak için Apple DEP portalını kullanın. Cihazları y�
 
    Apple portalında **Dağıtım Programları** &gt; **Aygıt Kayıt Programı** &gt; **Atama Geçmişini Görüntüle**’ye giderek cihazların listesi ile MDM sunucu atamalarına göz atabilirsiniz.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3\. Adım. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3\. Adım Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
 
 [Microsoft Uç Nokta Yöneticisi Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), daha sonra başvurmak üzere Apple kimliğini sağlayın.
 
 ![Kayıt programı belirtecini oluşturmak için kullanılan Apple kimliğini belirtme ve kayıt programı belirtecine gözatma işleminin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>4\. adımı. Belirtecinizi karşıya yükleyin ve kapsam etiketlerini seçin.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>4\. Adım Belirtecinizi karşıya yükleyin ve kapsam etiketlerini seçin.
 
 1. **Apple belirteci** kutusunda sertifika (.pem) dosyasına göz atın ve **Aç**’ı seçin.
 2. Bu DEP belirtecine [kapsam etiketi](../fundamentals/scope-tags.md) uygulamak istiyorsanız **Kapsam (etiketler)** öğesini ve ardından istediğiniz kapsam etiketlerini seçin. Belirtece uygulanan kapsam etiketleri, bu belirtece eklenen profiller ve cihazlar tarafından devralınır.
@@ -166,7 +166,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
     Multi-Factor Authentication tek bir uygulama modunda kilitlenmiş tek bir cihazda desteklenmez. Bu sınırlama, cihazın ikinci kimlik doğrulama faktörünü tamamlaması için farklı bir uygulamaya geçiş yaptığından oluşur. Bu nedenle, tek bir App Mode cihazında çok faktörlü kimlik doğrulaması istiyorsanız ikinci faktör farklı bir cihazda olmalıdır.
 
-    Bu özellik yalnızca iOS 11.3.1 ve üzerinde desteklenir.
+    Bu özellik yalnızca iOS 11.3.1 ve üzeri sürümlerde desteklenir.
 
    ![Tek uygulama modunun ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
@@ -197,7 +197,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 15. **Kurulum Yardımcısı özelleştirmesi** sayfasında, aşağıdaki profil ayarlarını yapılandırın: kurulum yardımcısı özelleştirmesini ![.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    | Departman ayarları | Açıklama |
+    | Departman ayarları | Description |
     |---|---|
     | <strong>Departman Adı</strong> | Kullanıcı, etkinleştirme sırasında <strong>Yapılandırma Hakkında</strong> öğesine dokunduğunda görüntülenir. |
     |    <strong>Departman Telefonu</strong>     | Kullanıcı, etkinleştirme sırasında <strong>Yardım Gerekli</strong> düğmesine dokunduğunda görüntülenir. |

@@ -1,7 +1,7 @@
 ---
 title: Hızlı Başlangıç - Uyumsuz cihazlara bildirim gönderme
 titleSuffix: Microsoft Intune
-description: In this quickstart, you use Microsoft Intune to send email notifications to noncompliant devices.
+description: Bu hızlı başlangıçta, uyumsuz cihazlara e-posta bildirimleri göndermek için Microsoft Intune kullanırsınız.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -27,56 +27,56 @@ ms.locfileid: "74410227"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Hızlı Başlangıç: Uyumsuz cihazlara bildirim gönderme
 
-In this quickstart, you'll use Microsoft Intune to send an email notification to the members of your workforce that have noncompliant devices.
+Bu hızlı başlangıçta, uyumsuz cihazlara sahip olan iş gücünüzün üyelerine e-posta bildirimi göndermek için Microsoft Intune kullanacaksınız.
 
-Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Azure Active Directory (Azure AD) [Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device isn't compliant, Intune allows you to add actions for noncompliance, which gives you flexibility to decide what to do. Örneğin uyumsuz cihazları engellemeden önce kullanıcılara uyumlu olmaları için yetkisiz kullanım süresi sağlayabilirsiniz.
+Varsayılan olarak, Intune uyumlu olmayan bir cihaz algıladığında hemen cihazı uyumsuz olarak işaretler. Azure Active Directory (Azure AD) [koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) daha sonra cihazı engeller. Bir cihaz uyumlu olmadığında Intune, uyumsuzluk için Eylemler eklemenize olanak tanır. Bu, size ne yapacaklarınız için esneklik sağlar. Örneğin uyumsuz cihazları engellemeden önce kullanıcılara uyumlu olmaları için yetkisiz kullanım süresi sağlayabilirsiniz.
 
-One action to take when a device doesn't meet compliance is to send email to the devices user. You can also customize an email notification before sending it. Özellikle şirket logosu ve kişi bilgileri dahil olmak üzere alıcılar, konu ve ileti gövdesini özelleştirebilirsiniz. Intune also includes details about the noncompliant device in the email notification.
+Bir cihaz uyumluluğu karşılamıyorsa gerçekleştirilecek bir eylem, cihazlar kullanıcısına e-posta göndermektir. Göndermeden önce bir e-posta bildirimi de özelleştirebilirsiniz. Özellikle şirket logosu ve kişi bilgileri dahil olmak üzere alıcılar, konu ve ileti gövdesini özelleştirebilirsiniz. Intune, e-posta bildiriminde uyumsuz cihaz hakkındaki ayrıntıları da içerir.
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../fundamentals/free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-When using device compliance policies to block devices from corporate resources, Azure AD Conditional Access must be set up. If you've completed the [Create a device compliance policy](quickstart-set-password-length-android.md) quickstart, you're using Azure Active Directory. For more information about Azure AD, see [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) and [common ways to use Conditional Access with Intune](../protect/conditional-access-intune-common-ways-use.md).
+Cihazları kurumsal kaynaklardan engellemek için cihaz uyumluluk ilkelerini kullanırken, Azure AD koşullu erişiminin ayarlanması gerekir. [Cihaz uyumluluk Ilkesi oluşturma](quickstart-set-password-length-android.md) hızlı başlangıcı ' nı tamamladıysanız Azure Active Directory kullanıyorsunuz demektir. Azure AD hakkında daha fazla bilgi için bkz. [Azure Active Directory Koşullu erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ve [Intune ile koşullu erişim kullanmanın yaygın yolları](../protect/conditional-access-intune-common-ways-use.md).
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
-Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) as a [Global administrator](../fundamentals/users-add.md#types-of-administrators) or an Intune [Service administrator](../fundamentals/users-add.md#types-of-administrators). If you've created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
+[Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) [genel yönetici](../fundamentals/users-add.md#types-of-administrators) veya Intune [Hizmet Yöneticisi](../fundamentals/users-add.md#types-of-administrators)olarak oturum açın. Bir Intune deneme aboneliği oluşturduysanız, aboneliği oluşturduğunuz hesap genel yöneticime sahip olur.
 
 ## <a name="create-a-notification-message-template"></a>Bildirim iletisi şablonu oluşturma
 
 Kullanıcılarınıza e-posta göndermek için bir bildirim iletisi şablonu oluşturun. Cihazın uyumsuz olması durumunda, şablona girdiğiniz ayrıntılar kullanıcılarınıza gönderilen e-postada görüntülenir.
 
-1. In Intune, select **Devices** > **Compliance policies** > **Notifications** > **Create notification**.
+1. Intune 'da **cihaz** > **Uyumluluk Ilkeleri** > **Bildirimler** **Oluştur > bildirim oluştur**' u seçin.
 2. Aşağıdaki bilgileri girin:
 
    - **Ad**: *Contoso Yöneticisi*
    - **Konu**: *Cihaz uyumluluğu*
-   - **Message**: *Your device is currently not meeting our organization's compliance requirements.*
+   - **İleti**: *cihazınız şu anda kuruluşunuzun uyumluluk gereksinimlerini karşılamıyor.*
    - **E-posta üst bilgisi – Şirket logosunu ekle**: Kuruluşunuzun logosunu göstermek için **Etkin** olarak ayarlayın.
    - **E-posta alt bilgisi – Şirket adını ekle**: Kuruluşunuzun adını göstermek için **Etkin** olarak ayarlayın.
    - **E-posta alt bilgisi – Kişi bilgilerini ekle**: Kuruluşunuzdaki kişinin bilgilerini göstermek için **Etkin** olarak ayarlayın.
 
    ![Intune'da örnek uyumluluk bildirimi iletisi](./media/quickstart-send-notification/quickstart-send-notification-01.png)
 
-3. Select **Next** and review your notification. Select **Create** and the notification message template is ready to use.
+3. **İleri ' yi** seçin ve bildiriinizi gözden geçirin. **Oluştur** ' u seçin ve bildirim iletisi şablonu kullanıma hazırlanın.
 
    > [!NOTE]
    > Daha önceden oluşturulmuş bir Bildirim şablonunu da düzenleyebilirsiniz.
 
-For details about setting your company name, company contact information, and company logo, see the following articles:
+Şirketinizin adını, şirket iletişim bilgilerini ve Şirket logosunu ayarlama hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [Company information and privacy statement](../apps/company-portal-app.md#company-information-and-privacy-statement)
-- [Support information](../apps/company-portal-app.md#support-information)
-- [Company identity branding customization](../apps/company-portal-app.md#company-identity-branding-customization).
+- [Şirket bilgileri ve gizlilik bildirimi](../apps/company-portal-app.md#company-information-and-privacy-statement)
+- [Destek bilgileri](../apps/company-portal-app.md#support-information)
+- [Şirket kimliği marka özelleştirmesi](../apps/company-portal-app.md#company-identity-branding-customization).
 
 ## <a name="add-a-noncompliance-policy"></a>Uyumsuzluk ilkesi ekleme
 
-Cihaz uyumluluğu ilkesi oluşturduğunuzda, Intune uyumsuzluk için otomatik olarak bir eylem oluşturur. Intune then marks devices as noncompliant when they fail to meet your compliance policy. Cihazın ne kadar süreyle uyumsuz olarak işaretleneceğini ayarlayabilirsiniz. Ayrıca, uyumluluk ilkesi oluştururken veya mevcut uyumluluk ilkesini güncelleştirirken başka bir eylem ekleyebilirsiniz.
+Cihaz uyumluluğu ilkesi oluşturduğunuzda, Intune uyumsuzluk için otomatik olarak bir eylem oluşturur. Ardından Intune, uyumluluk ilkenize uyduklarında cihazları uyumsuz olarak işaretler. Cihazın ne kadar süreyle uyumsuz olarak işaretleneceğini ayarlayabilirsiniz. Ayrıca, uyumluluk ilkesi oluştururken veya mevcut uyumluluk ilkesini güncelleştirirken başka bir eylem ekleyebilirsiniz.
 
 Aşağıdaki adımlar, Windows 10 cihazları için uyumluluk ilkesi oluşturmayı gösterir.
 
-1. In Intune, select **Devices** > **Compliance Policies** > **Create Policy**.
+1. Intune 'da **cihaz** > **Uyumluluk Ilkeleri** > **ilke oluştur**' u seçin.
 
 2. Aşağıdaki bilgileri girin:
 
@@ -86,7 +86,7 @@ Aşağıdaki adımlar, Windows 10 cihazları için uyumluluk ilkesi oluşturmay�
 
 3. **Ayarlar** > **Sistem Güvenliği**’ni seçerek cihazın güvenlikle ilgili ayarlarını görüntüleyin.
 
-4. Configure the following options:
+4. Aşağıdaki seçenekleri yapılandırın:
 
    - **Mobil cihazların kilidini açmak için parola gerektir** ayarını **Gerekli Kıl** olarak belirleyin. Bu ayar, kullanıcılara mobil cihazlarındaki bilgilere erişim verilmeden önce bu kullanıcılardan parola istenip istenmeyeceğini belirtir.
 
@@ -94,21 +94,21 @@ Aşağıdaki adımlar, Windows 10 cihazları için uyumluluk ilkesi oluşturmay�
 
    ![Yeni bir uyumluluk ilkesi için Sistem Güvenliği ayarları](./media/quickstart-send-notification/system-security-settings-01.png)
 
-5. Select **OK** > **OK** > **Create** to create your compliance policy.
+5. Uyumluluk ilkenizi oluşturmak için **tamam** ** > Tamam** > **Oluştur** ' u seçin.
 
 6. **Özellikler** > **Uyumsuzluğa yönelik eylemler** > **Ekle**’yi seçin.
 
 7. Açılan **Eylem** kutusunda **Son kullanıcılara e-posta gönder** seçeneğinin belirlendiğini doğrulayın.
 
-8. Select **Message template**,  the template you created earlier in this article, and then **Select** to select the message template.
+8. **İleti şablonu**' nu, bu makalede daha önce oluşturduğunuz şablonu seçin **ve ardından ileti şablonunu seçin.**
 
-9. Select **ADD** > **OK** > **Save** to save your changes.
+9. Değişikliklerinizi **kaydetmek için > ** **Ekle** ' > **Tamam ' ı** seçin.
 
 ## <a name="assign-the-policy"></a>İlke atama
 
-Uyumluluk ilkesini belirli bir kullanıcı grubuna veya tüm kullanıcılara atayabilirsiniz. When Intune recognizes that a device is noncompliant, the user is notified that they must update their device to meet the compliance policy. Use the following steps to assign the policy.
+Uyumluluk ilkesini belirli bir kullanıcı grubuna veya tüm kullanıcılara atayabilirsiniz. Intune bir cihazın uyumsuz olduğunu tanırsa, kullanıcıya Uyumluluk ilkesini karşılamak üzere cihazlarını güncelleştirmesi gerektiğini bildirilir. İlkeyi atamak için aşağıdaki adımları kullanın.
 
-1. In Intune go to **Devices** > **Compliance Policies** and select the **Windows 10 compliance** policy that you created earlier.
+1. Intune ' da, **cihazlar** > **uyumluluk ilkeleri** ' ne gidin ve daha önce oluşturduğunuz **Windows 10 uyumluluk** ilkesini seçin.
 
 2. **Atamalar**’ı seçin.
 
@@ -119,7 +119,7 @@ Uyumluluk ilkesini belirli bir kullanıcı grubuna veya tüm kullanıcılara ata
 
 4. **Kaydet**'e tıklayın.
 
-When you've successfully created and saved the policy, it will appear in the list of **Compliance policies - Policies**. Listede **Atandı** ayarının **Evet** olarak belirlenmiş olduğuna dikkat edin.
+İlkeyi başarıyla oluşturup kaydettikten sonra, **uyumluluk ilkeleri**listesinde görünür. Listede **Atandı** ayarının **Evet** olarak belirlenmiş olduğuna dikkat edin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

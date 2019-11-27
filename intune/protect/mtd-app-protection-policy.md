@@ -1,7 +1,7 @@
 ---
-title: Create Mobile Threat Defense (MTD) app protection policy with Intune
+title: Intune ile Mobile Threat Defense (MTD) uygulama koruma ilkesi oluşturma
 titleSuffix: Microsoft Intune
-description: Create Mobile Threat Defense (MTD) app protection policy with Microsoft Intune.
+description: Microsoft Intune ile Mobile Threat Defense (MTD) uygulama koruma ilkesi oluşturun.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -25,48 +25,48 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188508"
 ---
-# <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Create Mobile Threat Defense app protection policy with Intune
+# <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Intune ile Mobile Threat Defense uygulama koruma ilkesi oluşturma
 
-Intune with Mobile Threat Defense (MTD) helps you detect threats and assess risk on mobile devices. You can create an Intune app protection policy that assesses risk to determine if the device is allowed to access corporate data or not.
+Mobile Threat Defense (MTD) ile Intune, tehditleri algılamanıza ve mobil cihazlarda riski değerlendirmenize yardımcı olur. Cihazın şirket verilerine erişmesine izin verilip verilmeyeceğini belirleme riskini değerlendirir eden bir Intune uygulama koruma ilkesi oluşturabilirsiniz.
 
 
 > [!NOTE]
-> This article applies to all Mobile Threat Defense partners that support app protection policies:
+> Bu makale, uygulama koruma ilkelerini destekleyen tüm Mobile Threat Defense iş ortakları için geçerlidir:
 >
-> - Better Mobile (Android)
-> - Zimperium (iOS)
+> - Daha iyi mobil (Android)
+> - Zyium (iOS)
 > - Lookout for Work (Android, iOS).
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-MTD kurulumunun parçası olarak, MTD iş ortağı konsolunda çeşitli tehditleri yüksek, orta ve düşük olarak sınıflandıran bir ilke oluşturdunuz. You now need to set the Mobile Threat Defense level in the Intune app protection policy.
+MTD kurulumunun parçası olarak, MTD iş ortağı konsolunda çeşitli tehditleri yüksek, orta ve düşük olarak sınıflandıran bir ilke oluşturdunuz. Artık, Intune uygulama koruma ilkesinde Mobile Threat Defense düzeyini ayarlamanız gerekir.
 
-Prerequisites for app protection policy with MTD:
+MTD ile uygulama koruma ilkesi önkoşulları:
 
-- Set up MTD integration with Intune. Without this integration, the MTD app protection policy will have no effect.
+- Intune ile MTD tümleştirmesini ayarlayın. Bu tümleştirme olmadan MTD uygulama koruma ilkesinin hiçbir etkisi olmayacaktır.
 
-## <a name="to-create-an-mtd-app-protection-policy"></a>To create an MTD app protection policy
+## <a name="to-create-an-mtd-app-protection-policy"></a>MTD uygulama koruma ilkesi oluşturmak için
 
-Use the procedure to [create an Application protection policy for either iOS/iPadOS or Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps), and use the following information on the *Apps*, *Conditional launch*, and *Assignments* pages:
+[İOS/ıpados veya Android için bir uygulama koruma ilkesi oluşturmak](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)üzere yordamını kullanın ve *uygulamalar*, *koşullu başlatma*ve *atamalar* sayfalarında aşağıdaki bilgileri kullanın:
 
-- **Apps**: Select the app for the Mobile Threat Defense partner you use.
-- **Conditional launch**:  Below *Device conditions*, use the drop-down box to select **Max allowed device threat level**.
+- **Uygulamalar**: kullandığınız Mobile Threat Defense iş ortağı için uygulamayı seçin.
+- **Koşullu başlatma**: *cihaz koşullarının*altında, **izin verilen en fazla cihaz tehdit düzeyini**seçmek için açılan kutuyu kullanın.
 
-  Options for the threat level **Value**:
+  Tehdit düzeyi **değeri**için seçenekler:
 
-  - **Güvenli**: En güvenli düzeydir. The device can't have any threats present and still access company resources. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
+  - **Güvenli**: En güvenli düzeydir. Cihazda herhangi bir tehdit yok ve şirket kaynaklarına erişmeye devam edemiyor. Herhangi bir tehdit bulunursa cihaz uyumsuz olarak değerlendirilir.
   - **Düşük**: Cihaz, yalnızca düşük düzeydeki tehditler varsa uyumludur. Daha yüksek bir tehdit düzeyi, cihazı uyumlu değil durumuna getirir.
   - **Orta**: Cihazda bulunan tehditler düşük veya orta düzeydeyse cihaz uyumludur. Yüksek düzeyde tehditler algılanırsa cihaz uyumsuz olarak değerlendirilir.
-  - **Yüksek**: Bu, en az güvenli düzeydir. This allows all threat levels and uses Mobile Threat Defense for reporting purposes only. Cihazlar, bu ayar ile MTD uygulamasının etkin olmasını gerektirir.
+  - **Yüksek**: Bu, en az güvenli düzeydir. Bu, tüm tehdit düzeylerine izin verir ve yalnızca raporlama amacıyla mobil tehdit savunması kullanır. Cihazlar, bu ayar ile MTD uygulamasının etkin olmasını gerektirir.
 
-  Options for **Action**:
+  **Eylem**seçenekleri:
 
-  - **Block access**
-  - **Wipe data**
+  - **Hizmete erişimi**
+  - **Verileri silme**
 
-- **Assignments**: Assign the policy to groups of users.  The devices used by the group’s members are evaluated for access to corporate data on targeted apps via Intune app protection.
+- **Atamalar**: ilkeyi Kullanıcı gruplarına atayın.  Grubun üyeleri tarafından kullanılan cihazlar, Intune uygulama koruması aracılığıyla hedeflenen uygulamalardaki şirket verilerine erişim için değerlendirilir.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 
-- Learn more about [Mobile Threat Defense](~/protect/mobile-threat-defense.md) in Microsoft Intune.
+- Microsoft Intune 'de [Mobile Threat](~/protect/mobile-threat-defense.md) Defense hakkında daha fazla bilgi edinin.

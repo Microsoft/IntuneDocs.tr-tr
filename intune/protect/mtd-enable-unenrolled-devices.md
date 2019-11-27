@@ -1,7 +1,7 @@
 ---
-title: Enable the Mobile Threat Defense connector for unenrolled devices
+title: Kayıtlı olmayan cihazlar için Mobile Threat Defense bağlayıcısını etkinleştirme
 titleSuffix: Microsoft Intune
-description: Enable the Mobile Threat Defense connector in Microsoft Intune for unenrolled devices.
+description: Kayıtlı olmayan cihazlar için Microsoft Intune mobil tehdit savunma bağlayıcısını etkinleştirin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -25,36 +25,36 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/25/2019
 ms.locfileid: "74478933"
 ---
-# <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Enable the Mobile Threat Defense connector in Intune for unenrolled devices
+# <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Kayıtlı olmayan cihazlar için Intune 'da Mobile Threat Defense bağlayıcısını etkinleştirme
 
-During Mobile Threat Defense (MTD) setup, you've configured a policy for classifying threats in your Mobile Threat Defense partner console and you've created the app protection policy in Intune. If you've already configured the Intune connector in the MTD partner console, you can now enable the MTD connection for MTD partner applications.
+Mobile Threat Defense (MTD) kurulumu sırasında, Mobile Threat Defense iş ortağı konsolinizdeki tehditleri sınıflandırmak için bir ilke yapılandırdınız ve Intune 'da uygulama koruma ilkesi oluşturdunuz. Intune bağlayıcısını MTD iş ortağı konsolunda zaten yapılandırdıysanız MTD iş ortağı uygulamaları için MTD bağlantısını etkinleştirebilirsiniz.
 
 > [!NOTE]
-> This article applies to all Mobile Threat Defense partners that support app protection policies: Better Mobile (Android), Zimperium (iOS), Lookout for Work (Android/iOS).
+> Bu makale, uygulama koruma ilkelerini destekleyen tüm Mobile Threat Defense iş ortakları için geçerlidir: daha Iyi mobil (Android), Zkusuren IUM (iOS), Lookout for Work (Android/iOS).
 
-## <a name="classic-conditional-access-policies-for-mtd-apps"></a>Classic conditional access policies for MTD apps
+## <a name="classic-conditional-access-policies-for-mtd-apps"></a>MTD uygulamaları için klasik koşullu erişim ilkeleri
 
-When you integrate a new application to Intune Mobile Threat Defense and enable the connection to Intune, Intune creates a classic conditional access policy in Azure Active Directory. Each MTD app you integrate, including [Defender ATP](advanced-threat-protection.md) or any of our additional [MTD partners](mobile-threat-defense.md#mobile-threat-defense-partners), creates a new classic conditional access policy. These policies can be ignored, but shouldn't be edited, deleted, or disabled.
+Yeni bir uygulamayı Intune mobil tehdit savunması ile tümleştirdiğinizde ve Intune bağlantısını etkinleştirdiğinizde, Intune Azure Active Directory içinde klasik bir koşullu erişim ilkesi oluşturur. [Defender ATP](advanced-threat-protection.md) veya ek [MTD iş ortaklarından](mobile-threat-defense.md#mobile-threat-defense-partners)herhangi biri dahil olmak üzere tümleştirilen her MTD uygulaması yeni bir klasik koşullu erişim ilkesi oluşturur. Bu ilkeler yoksayılabilir, ancak düzenlenmemelidir, silinemez veya devre dışı bırakılmalıdır.
 
-If the classic policy is deleted, you'll need to delete the connection to Intune that was responsible for its creation, and then set it up again. This process recreates the classic policy. It's not supported to migrate classic policies for MTD apps to the new policy type for conditional access.
+Klasik ilke silinirse, oluşturulduktan sorumlu olan Intune bağlantısını silmeniz ve sonra yeniden ayarlamanız gerekir. Bu işlem, klasik ilkeyi yeniden oluşturur. MTD uygulamaları için klasik ilkelerin, koşullu erişim için yeni ilke türüne geçirilmesi desteklenmez.
 
-Classic conditional access policies for MTD apps:
+MTD uygulamaları için klasik koşullu erişim ilkeleri:
 
-- Are used by Intune MTD to require that devices are registered in Azure AD so that they have a device ID before communicating to MTD partners. The ID is required so that devices and can successfully report their status to Intune.
+- , Cihazların Azure AD 'ye kaydolmasını gerektirmek için, MTD iş ortaklarıyla iletişim kurmadan önce cihaz KIMLIĞI olması için Intune MTD tarafından kullanılır. KIMLIK, cihazların ve durumlarını Intune 'a başarıyla bildirebileceği şekilde gereklidir.
 
-- Have no effect on any other Cloud apps or Resources.
+- Diğer bulut uygulamaları veya kaynakları üzerinde hiçbir etkisi yoktur.
 
-- Are distinct from conditional access policies you might create to help manage MTD.
+- , MTD 'leri yönetmeye yardımcı olmak için oluşturabileceğiniz koşullu erişim ilkelerinden farklıdır.
 
-- By default, don’t interact with other conditional access policies you use for evaluation.
+- Varsayılan olarak, değerlendirme için kullandığınız diğer koşullu erişim ilkeleriyle etkileşime geçin.
 
-To view classic conditional access policies, in [Azure](https://portal.azure.com/#home), go to **Azure Active Directory** > **Conditional Access** > **Classic policies**.
+Klasik koşullu erişim ilkelerini görüntülemek için [Azure](https://portal.azure.com/#home)'da **Azure Active Directory** > **koşullu erişim** > **Klasik ilkeleri**' ne gidin.
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD bağlayıcısını etkinleştirmek için
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. Select **Tenant administration** > **Connectors and tokens** > **Mobile Threat Defense**.
+2. **Mobil tehdit savunması** > **bağlayıcı ve belirteçler** > **Kiracı Yönetimi** ' ni seçin.
 
 3. **Mobile Threat Defense** bölmesinde **Ekle**’yi seçin.
 
@@ -64,17 +64,17 @@ To view classic conditional access policies, in [Azure](https://portal.azure.com
 
 5. Kuruluşunuzun gereksinimlerine göre geçiş seçeneklerini etkinleştirin. Görünen geçişli seçenekler MTD iş ortağına bağlı olarak değişir.
 
-## <a name="mobile-threat-defense-toggle-options"></a>Mobile Threat Defense toggle options
+## <a name="mobile-threat-defense-toggle-options"></a>Mobil tehdit savunma değiştirme seçenekleri
 
 Kuruluşunuzun gereksinimlerine göre hangi MTD geçiş seçeneklerini etkinleştirmeniz gerektiğine karar verebilirsiniz. Daha fazla ayrıntı aşağıdadır:
 
-**App Protection Policy Settings**
+**Uygulama koruma Ilkesi ayarları**
 
-- **Connect Android devices of version 4.4 and above to *\<MTD partner name>* for app protection policy evaluation**: When you enable this option, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector.
+- **4,4 ve üzeri sürüm Android cihazlarını uygulama koruma ilkesi değerlendirmesi için *\<MTD iş ortağı adı >* bağlayın**: Bu seçeneği etkinleştirdiğinizde, cihaz tehdit düzeyi kuralını kullanan uygulama koruma ilkeleri, bu bağlayıcıdaki veriler dahil olmak üzere cihazları değerlentirecektir.
 
-- **Connect iOS devices version 11 and above to *\<MTD partner name>* for app protection policy evaluation**: When you enable this option, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector.
+- ***\<MTD iş ortağı adı >* , uygulama koruma Ilkesi değerlendirmesi için iOS cihazları sürüm 11 ve üstünü bağlayın**: Bu seçeneği etkinleştirdiğinizde, cihaz tehdit düzeyi kuralını kullanan uygulama koruma ilkeleri, bu bağlayıcıdaki veriler dahil olmak üzere cihazları değerlendirir.
 
-**Common Shared Settings**
+**Ortak paylaşılan ayarlar**
 
 - **İş ortağının yanıt vermediği gün sayısı**: Bağlantı kesildiği için Intune’un iş ortağının yanıt vermiyor olarak değerlendirmesi için işlem yapılmadan geçmesi gereken gün sayısı. Intune, yanıt vermeyen MTD iş ortakları için uyumluluk durumunu yok sayar.
 
@@ -83,4 +83,4 @@ Kuruluşunuzun gereksinimlerine göre hangi MTD geçiş seçeneklerini etkinleş
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-- [Create Mobile Threat Defense (MTD) app protection policy with Intune](~/protect/mtd-app-protection-policy.md).
+- [Intune Ile Mobile Threat Defense (MTD) uygulama koruma Ilkesi oluşturun](~/protect/mtd-app-protection-policy.md).

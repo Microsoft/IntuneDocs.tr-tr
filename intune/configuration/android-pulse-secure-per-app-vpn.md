@@ -30,7 +30,7 @@ ms.locfileid: "74319850"
 Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama başına VPN profili oluşturabilirsiniz. İlk olarak, Pulse Secure veya Citrix bağlantı türlerinden birini kullanan bir VPN profili oluşturun. Ardından, VPN profilini belirli uygulamalarla ilişkilendiren özel bir yapılandırma ilkesi oluşturun.
 
 > [!NOTE]
-> To use per-app VPN on Android Enterprise devices, you can also use these steps. But, it's recommended to use an [app configuration policy](../apps/app-configuration-policies-use-android.md) for your VPN client app.
+> Android kurumsal cihazlarda uygulama başına VPN kullanmak için de bu adımları kullanabilirsiniz. Ancak, VPN istemci uygulamanız için bir [uygulama yapılandırma ilkesi](../apps/app-configuration-policies-use-android.md) kullanmanız önerilir.
 
 İlkeyi Android cihazınıza veya kullanıcı gruplarına atadıktan sonra kullanıcılar, Pulse Secure veya Citrix VPN istemcisini başlatmalıdır. VPN istemcisi bundan sonra yalnızca belirtilen uygulamalardan gelen trafiğin VPN bağlantısını kullanmasına izin verir.
 
@@ -40,50 +40,50 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 
 ## <a name="step-1-create-a-vpn-profile"></a>1\. Adım: VPN profili oluşturma
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **Devices** > **Configuration profiles** > **Create profile**.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
-    - **Name**: Enter a descriptive name for the profile. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. For example, a good profile name is **Android per-app VPN profile for entire company**.
+    - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı, **tüm şirket Için Android uygulama BAŞıNA VPN profilidir**.
     - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Platform**: Select **Android**.
-    - **Profile type**: Select **VPN**.
+    - **Platform**: **Android**' i seçin.
+    - **Profil türü**: **VPN**' yi seçin.
 
-4. **Ayarlar** > **Yapılandır**’ı seçin. Then, configure the VPN profile. For more information, see [How to configure VPN settings](vpn-settings-configure.md) and [Intune VPN settings for Android devices](vpn-settings-android.md).
+4. **Ayarlar** > **Yapılandır**’ı seçin. Ardından VPN profilini yapılandırın. Daha fazla bilgi için bkz. Android cihazları için [VPN ayarlarını](vpn-settings-configure.md) ve [Intune VPN ayarlarını](vpn-settings-android.md)yapılandırma.
 
 VPN profilini oluştururken, belirttiğiniz **Bağlantı Adı** değerini bir yere not edin. Bu ad sonraki adımda gerekli olacaktır. Örneğin, **UygulamaVpnProfilim**.
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>2\. Adım: Özel yapılandırma ilkesi oluşturma
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **Devices** > **Configuration profiles** > **Create profile**.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
-    - **Name**: Enter a descriptive name for the custom profile. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. For example, a good profile name is **Custom OMA-URI Android VPN profile for entire company**.
+    - **Ad**: özel profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı, **tüm şirket Için özel OMA-URI ANDROID VPN profilidir**.
     - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Platform**: Select **Android**.
-    - **Profile type**: Select **Custom**.
+    - **Platform**: **Android**' i seçin.
+    - **Profil türü**: **özel**' i seçin.
 
 4. **Ayarlar** > **Yapılandır**’ı seçin.
 5. **Özel OMA-URI Ayarları** bölmesinde **Ekle**’yi seçin.
-    - **Name**: Enter a name for your setting.
+    - **Ad**: ayarınız için bir ad girin.
     - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **OMA-URI**: Enter `./Vendor/MSFT/VPN/Profile/*Name*/PackageList`, where *Name* is the connection name you noted in Step 1. In this example, the string is `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList`.
-    - **Data type**: Enter **String**.
-    - **Value**: Enter a semicolon-separated list of packages to associate with the profile. For example, if you want Excel and the Google Chrome browser to use the VPN connection, enter `com.microsoft.office.excel;com.android.chrome`.
+    - **OMA-URI**: `./Vendor/MSFT/VPN/Profile/*Name*/PackageList`girin; burada *ad* , 1. adım 'da not ettiğiniz bağlantı adıdır. Bu örnekte, dize `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList`.
+    - **Veri türü**: **dize**girin.
+    - **Değer**: profille ilişkilendirilecek paketlerin noktalı virgülle ayrılmış bir listesini girin. Örneğin, Excel 'In ve Google Chrome tarayıcısının VPN bağlantısını kullanmasını istiyorsanız, `com.microsoft.office.excel;com.android.chrome`girin.
 
 ![Örnek Android uygulama başına VPN özel ilkesi](./media/android-pulse-secure-per-app-vpn/android_per_app_vpn_oma_uri.png)
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Uygulama listenizi kara liste veya beyaz liste olarak ayarlama (isteğe bağlı)
 
-Use the **BLACKLIST** value to enter a list of apps that *cannot* use the VPN connection. Diğer tüm uygulamalar VPN üzerinden bağlanır. Or, use the **WHITELIST** value to enter a list of apps that *can* use the VPN connection. Apps that aren't on the list don't connect through the VPN.
+VPN bağlantısını *kullanamaz* uygulamaların bir listesini girmek için **kara** liste değerini kullanın. Diğer tüm uygulamalar VPN üzerinden bağlanır. Ya da, VPN bağlantısını kullanan uygulamaların bir listesini girmek için **beyaz liste** değerini *kullanın.* Listede olmayan uygulamalar VPN üzerinden bağlanmazlar.
 
 1. **Özel OMA-URI Ayarları** bölmesinde **Ekle**’yi seçin.
 2. Bir ayar adı girin.
-3. In **OMA-URI**, enter `./Vendor/MSFT/VPN/Profile/*Name*/Mode`, where *Name* is the VPN profile name you noted in Step 1. In our example, the string is `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode`.
-4. In **Data type**, enter **String**.
+3. **OMA-URI**' de `./Vendor/MSFT/VPN/Profile/*Name*/Mode`girin; burada *ad* , 1. adım 'da not ettiğiniz VPN profili adıdır. Örneğimizde dize `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode`.
+4. **Veri türü**' nde **dize**girin.
 5. **Değer** alanına **KARA LİSTE** veya **BEYAZ LİSTE** girin.
 
 ## <a name="step-3-assign-both-policies"></a>3\. Adım: Her iki ilkeyi de atama
 
-[Assign both device profiles](device-profile-assign.md) to the required users or devices.
+Gerekli kullanıcılara veya cihazlara [her iki cihaz profilini de atayın](device-profile-assign.md) .

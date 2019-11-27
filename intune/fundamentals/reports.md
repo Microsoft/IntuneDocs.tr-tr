@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune reports
 titleSuffix: Microsoft Intune
-description: Intune provides specific report types with focused views that contain consistent and timely data.
+description: Intune, tutarlı ve zamanında veriler içeren odaklanmış görünümlerle belirli rapor türleri sağlar.
 keywords: ''
 author: erikre
 ms.author: erikre
@@ -22,134 +22,134 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74390936"
 ---
-# <a name="intune-reports"></a>Intune reports
-Microsoft Intune reports allows you to more effectively and proactively monitor the health and activity of endpoints across your organization, and also provides other reporting data across Intune. For example, you will be able to see reports about device compliance, device health, and device trends. In addition, you can create custom reports to obtain more specific data. 
+# <a name="intune-reports"></a>Intune raporları
+Microsoft Intune raporları, kuruluşunuzdaki uç noktaların sistem durumunu ve etkinliğini daha etkili ve verimli bir şekilde izlemenize olanak tanır ve ayrıca Intune genelinde diğer raporlama verileri sağlar. Örneğin, cihaz uyumluluğu, cihaz sistem durumu ve cihaz eğilimleri hakkındaki raporları görebileceksiniz. Ayrıca, daha belirli verileri almak için özel raporlar da oluşturabilirsiniz. 
 
 > [!NOTE]
-> The Intune reporting changes will roll out gradually over a period of time to help you prepare and adapt to the new structure.
+> Intune raporlama değişiklikleri, yeni yapıyı hazırlamaya ve uyarlanmanıza yardımcı olmak için bir süre içinde kademeli olarak zaman aşımına uğrar.
 
-The report types are organized into the following focus areas:
-- **Operational** - Provides timely, targeted data that helps you focus and take action. Admins, subject matter experts, and helpdesk will find these reports most helpful.
-- **Organizational** - Provides a broader summary of an overall view, such as device management state. Managers and admins will find these reports most helpful.
-- **Historical** - Provides patterns and trends over a period of time. Managers and admins will find these reports most helpful.
-- **Specialist** - Allows you to use raw data to create your own custom reports. Admins will find these reports most helpful.
+Rapor türleri aşağıdaki odak alanlarında düzenlenmiştir:
+- **İşletimsel** -odaklanmanıza ve işlem yapmanıza yardımcı olacak, zamanında, hedeflenen verileri sağlar. Yöneticiler, konu uzmanları ve yardım masası bu raporları en yararlı bulacaktır.
+- **Kuruluş** -cihaz yönetimi durumu gibi genel bir görünümün daha geniş bir özetini sağlar. Yöneticiler ve Yöneticiler bu raporları en yararlı bulacaktır.
+- **Geçmiş** -bir süre boyunca desenler ve eğilimler sağlar. Yöneticiler ve Yöneticiler bu raporları en yararlı bulacaktır.
+- **Uzman** -kendi özel raporlarınızı oluşturmak için ham verileri kullanmanıza olanak sağlar. Yöneticiler bu raporları en yararlı bulacaktır.
 
-The reporting framework provides a consistent and more comprehensive reporting experience. The available reports provide the following functionality:
-- **Search and sort** – You can search and sort across every column, no matter how large the dataset.
-- **Data paging** – You can scan your data based on paging, either page-by-page or by jumping to a specific page.
-- **Performance** - You can quickly generate and view reports created from large tenants.
-- **Export** – You can quickly export reporting data generated from large tenants.
+Raporlama çerçevesi, tutarlı ve daha kapsamlı bir raporlama deneyimi sağlar. Kullanılabilir raporlar aşağıdaki işlevleri sağlar:
+- **Arama ve sıralama** : veri kümesinin ne kadar büyük olduğuna bakılmaksızın, her sütunda arama ve sıralama yapabilirsiniz.
+- **Veri sayfalaması** : verileri sayfa sayfa veya belirli bir sayfaya atlayarak disk belleğine göre tarayabilirsiniz.
+- **Performans** -büyük kiracılardan oluşturulan raporları hızlıca oluşturabilir ve görüntüleyebilirsiniz.
+- **Dışarı aktar** – büyük kiracılardan oluşturulan raporlama verilerini hızlıca dışarı aktarabilirsiniz.
 
 ### <a name="who-can-access-the-data"></a>Verilere kimler erişebilir?
 
-Users with the following permissions can review logs:
+Aşağıdaki izinlere sahip kullanıcılar günlükleri gözden geçirebilir:
 
 - Genel Yönetici
 - Intune Hizmet Yöneticisi
-- Administrators assigned to an Intune role with **Read** permissions
+- **Okuma** Izinleriyle bir Intune rolüne atanan yöneticiler
 
-## <a name="non-compliant-devices-report-operational"></a>Non-compliant devices report (Operational)
-The Non-compliant devices report surfaces data typically used by Helpdesk or admin roles to identify problems and help remediate issues. The data found in these reports is timely, calls out unexpected behavior, and is meant to be actionable. The report is available alongside the workload, making the non-compliant devices report accessible without browsing away from active workflows. This report provides filtering, searching, paging, and sorting capabilities. Also, you can drill down to help troubleshoot.
+## <a name="non-compliant-devices-report-operational"></a>Uyumlu olmayan cihazlar raporu (Işletimsel)
+Uyumlu olmayan cihazlar, sorunları belirlemek ve sorunları düzeltmeye yardımcı olmak üzere yardım masası veya yönetici rolleri tarafından genellikle kullanılan yüzey verilerini rapor eder. Bu raporlarda bulunan veriler zamanında, beklenmeyen davranışı çağırır ve eyleme geçmek üzere tasarlanmıştır. Rapor, iş yüküyle birlikte kullanılabilir ve uyumlu olmayan cihazların etkin iş akışlarından göz atarak erişilebilir hale getirilmesi sağlanır. Bu rapor filtreleme, arama, sayfalama ve sıralama özellikleri sağlar. Ayrıca, sorun gidermeye yardımcı olmak için ayrıntıya gidebilirsiniz.
 
-You can view the **Noncompliant devices** report using the following steps:
+**Uyumsuz cihazlar** raporunu aşağıdaki adımları kullanarak görebilirsiniz:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device compliance** > **Noncompliant devices**.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. **Uyumsuz cihazlar** > **cihaz uyumluluğu** ' nu seçin.
 
-    ![Noncompliant device report](./media/intune-reports/intune-reports-02.png)
+    ![Uyumsuz cihaz raporu](./media/intune-reports/intune-reports-02.png)
 
-## <a name="device-compliance-report-organizational"></a>Device compliance report (Organizational)
-Device compliance reports are meant to be broad in nature and provide a more traditional reporting view of data to identify aggregated metrics. This report is designed to work with large datasets to get a full device compliance picture. For example, the device compliance report for device compliance shows all the compliance states for devices to give a broader view of the data, no matter how large the dataset. This report shows the full breakdown of records in addition to a convenient visualization of aggregated metrics. This report can be generated by applying filters on it and selecting the “Generate report” button. This will refresh the data to show the latest state with the ability to view the individual records that make up the aggregate data. Like most reports in the new framework, these records can be sorted and searched upon to focus on the information you need. 
+## <a name="device-compliance-report-organizational"></a>Cihaz uyumluluk raporu (kuruluş)
+Cihaz uyumluluk raporlarının doğası gereği, toplanan ölçümleri tanımlamak üzere verilerin daha geleneksel bir raporlama görünümünü sağlaması amaçlanmıştır. Bu rapor, tam cihaz uyumluluk resmi almak için büyük veri kümeleriyle çalışmak üzere tasarlanmıştır. Örneğin, cihaz uyumluluğuna yönelik cihaz uyumluluk raporu, veri kümesinin ne kadar büyük olduğuna bakılmaksızın, cihazların daha geniş bir görünümünü sağlamak için cihazlara yönelik tüm uyumluluk durumlarını gösterir. Bu rapor, toplu ölçümlerin uygun bir görselleştirmesine ek olarak kayıtların tam dökümünü gösterir. Bu rapor, üzerine filtre uygulanarak ve "rapor oluştur" düğmesi seçilerek oluşturulabilir. Bu işlem, toplanan verileri oluşturan tek tek kayıtları görüntüleme yeteneği ile en son durumu göstermek için verileri yeniler. Yeni çerçevede bulunan çoğu rapor gibi, bu kayıtlar, ihtiyacınız olan bilgilere odaklanmak için sıralanabilir ve aranabilir. 
 
-To see a generated report of device state, you can use the following steps:
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** to view the reports summary.
+Cihaz durumunun oluşturulmuş bir raporunu görmek için aşağıdaki adımları kullanabilirsiniz:
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. Raporların özetini görüntülemek için **raporlar** ' ı seçin.
 3. **Cihaz uyumluluğu**'nu seçin.
-4. Select the **Compliance status**, **OS**, and **Ownership** filters to refine your report.
-5. Click **Generate report** (or **Generate again**) to retrieve current data.
+4. Raporunuzu iyileştirmek için **uyumluluk durumu**, **Işletim sistemi**ve **sahiplik** filtrelerini seçin.
+5. Geçerli verileri almak için **rapor oluştur** (veya **yeniden oluştur**) seçeneğine tıklayın.
 
-    ![Device compliance report](./media/intune-reports/intune-reports-02a.png)
+    ![Cihaz uyumluluk raporu](./media/intune-reports/intune-reports-02a.png)
 
     > [!NOTE]
-    > This **Device compliance** report provides a time stamp of when the report was last generated. 
+    > Bu **cihaz uyumluluk** raporu, raporun en son ne zaman oluşturulduğu zaman damgasını sağlar. 
 
-For related information, see [Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](~/protect/advanced-threat-protection.md).
+İlgili bilgiler için bkz. [Intune 'Da koşullu erişimle Microsoft Defender ATP için uyumluluğu zorlama](~/protect/advanced-threat-protection.md).
 
-## <a name="reports-summary"></a>Reports summary 
+## <a name="reports-summary"></a>Rapor Özeti 
 
-The device compliance report is available as the summary report in the **Reports** workload. Use the following steps to view the device compliance report:
+Cihaz uyumluluk raporu, **raporlar** iş yükünde Özet rapor olarak kullanılabilir. Cihaz uyumluluk raporunu görüntülemek için aşağıdaki adımları kullanın:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** to view the reports summary.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. Raporların özetini görüntülemek için **raporlar** ' ı seçin.
 
-    ![Intune Reports summary](./media/intune-reports/intune-reports-01.png)
+    ![Intune raporları Özeti](./media/intune-reports/intune-reports-01.png)
 
-## <a name="device-compliance-trend-report-historical"></a>Device compliance trend report (Historical)
-Device compliance trend reports are more likely to be used by admins and architects to identify long term trends for device compliance. The aggregated data is displayed over a period of time, and is useful for making future investment decisions, driving process improvements, or prompting investigation into any anomalies. Filters can also be applied to see specific trends. The data provided by this report is a snapshot of the current tenant state (near real-time). 
+## <a name="device-compliance-trend-report-historical"></a>Cihaz uyumluluk eğilimi raporu (geçmiş)
+Cihaz uyumluluğu eğilimi raporlarının, cihaz uyumluluğuyla ilgili uzun süreli eğilimleri belirlemek için Yöneticiler ve mimarlar tarafından kullanılma olasılığı yüksektir. Toplanan veriler bir süre içinde görüntülenir ve gelecekteki yatırım kararları vermek, işlem geliştirmelerini gerçekleştirmek veya herhangi bir anormalde araştırma istemek için yararlıdır. Ayrıca, belirli eğilimleri görmek için filtreler uygulanabilir. Bu rapor tarafından belirtilen veriler, geçerli kiracı durumunun anlık görüntüsüdür (gerçek zamanlı). 
 
-A device compliance trend report for device compliance trends can show the trend of device compliance states over a period of time. You can identify where compliance peaks occurred and focus your time and effort accordingly.
+Cihaz uyumluluk eğilimleri için bir cihaz uyumluluk eğilimi raporu, cihaz uyumluluk durumlarının bir süre boyunca eğilimini gösterebilir. Uyumluluğun nerede oluştuğunu tanımlayabilir ve zaman ve çabalarınızı uygun şekilde odakla azaltabilirsiniz.
 
-You can view the **Trends** report using the following steps:
+Aşağıdaki adımları kullanarak **eğilimler** raporunu görüntüleyebilirsiniz:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** > **Trends** to view device compliance over a 60 day trend.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. Cihaz uyumluluğunu 60 günlük bir eğilim üzerinden görüntülemek için **raporlar** > **eğilimlerini** seçin.
 
-    ![Intune trend report](./media/intune-reports/intune-reports-03.png)
+    ![Intune eğilim raporu](./media/intune-reports/intune-reports-03.png)
 
-## <a name="azure-monitor-integration-reports-specialist"></a>Azure Monitor integration reports (Specialist)
-You can customize your own reports to get the data you want. The data in your reports will optionally be available via [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) using [Log Analytics](reports.md#log-analytics) and [Azure Monitor workbooks](reports.md#workbooks). These solutions allow you to create custom queries, configure alerts, and make dashboards to show the device compliance data in the manner you want. Additionally, you can retain the activity logs in your Azure storage account, integrate with the reports using [security information and event management (SIEM) tools](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration), and correlate the reports to Azure AD activity logs. Azure Monitor workbooks can be used in addition to importing dashboards for custom reporting needs.
+## <a name="azure-monitor-integration-reports-specialist"></a>Azure Izleyici tümleştirme raporları (uzman)
+İstediğiniz verileri almak için kendi raporlarınızı özelleştirebilirsiniz. Raporlarınızdaki veriler, [Log Analytics](reports.md#log-analytics) ve [Azure izleyici çalışma kitaplarını](reports.md#workbooks)kullanarak [Azure izleyici](https://docs.microsoft.com/azure/azure-monitor/overview) aracılığıyla isteğe bağlı olarak kullanılabilir. Bu çözümler, özel sorgular oluşturmanıza, uyarıları yapılandırmanıza ve cihaz uyumluluk verilerini istediğiniz şekilde göstermeye yönelik panolar yapmanıza olanak sağlar. Ayrıca, Azure Depolama hesabınızdaki etkinlik günlüklerini koruyabilir, [güvenlik bilgileri ve olay yönetimi (SıEM) araçlarını](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration)kullanarak raporlarla tümleştirebilir ve RAPORLARıN Azure ad etkinlik günlükleriyle ilişkilendirilmesi sağlayabilirsiniz. Azure Izleyici çalışma kitapları, özel raporlama ihtiyaçları için panoları içeri aktarmaya ek olarak kullanılabilir.
 
 > [!NOTE]
-> Complex reporting functionality require an Azure subscription.
+> Karmaşık raporlama işlevselliği, bir Azure aboneliği gerektirir.
 
-An example specialist report would corelate device ownership data with platform enrollment data in a custom report. Then, this custom report could be displayed on an existing dashboard in the Azure Active Directory portal.
+Örnek bir uzman raporu, cihaz sahipliği verilerini özel bir rapordaki platform kayıt verileriyle birlikte ilişkilendirir. Ardından, bu özel rapor Azure Active Directory portalındaki mevcut bir panoda görüntülenebilir.
 
-You can create and view custom reports using the following steps:
+Aşağıdaki adımları kullanarak özel raporlar oluşturabilir ve görüntüleyebilirsiniz:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** > **Diagnostic settings** add a [diagnostic setting](reports.md#diagnostic-settings).
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+2. **Tanılama ayarları** > **raporları** seçin [Tanılama ayarı](reports.md#diagnostic-settings)ekleyin.
 
-    ![Intune Reports summary](./media/intune-reports/intune-reports-04.png)
+    ![Intune raporları Özeti](./media/intune-reports/intune-reports-04.png)
 
-3. Click **Add diagnostic setting** to display the **Diagnostic settings** pane. 
-4. Add a **Name** for the diagnostic settings. 
-5. Select the **Send to Log Analytics** and **DeviceComplianceOrg** settings.
+3. Tanılama **ayarları** bölmesini göstermek için **Tanılama ayarı Ekle** ' ye tıklayın. 
+4. Tanılama ayarları için bir **ad** ekleyin. 
+5. **Log Analytics gönder** ve **Devicekarmaşıkanceorg** ayarlarını seçin.
 
-    ![Intune Reports summary](./media/intune-reports/intune-reports-04a.png)
+    ![Intune raporları Özeti](./media/intune-reports/intune-reports-04a.png)
 
 6. **Kaydet**'e tıklayın.
-7. Next, select **Log analytics** to create and run a new log query using [Log Analytics](reports.md#log-analytics).
+7. Sonra, [Log Analytics](reports.md#log-analytics)kullanarak yeni bir günlük sorgusu oluşturmak ve çalıştırmak için **Log Analytics** ' i seçin.
 
-   ![Log Analytics - Log query](./media/intune-reports/intune-reports-05.png)
+   ![Log Analytics-günlük sorgusu](./media/intune-reports/intune-reports-05.png)
 
-8. Select **Workbooks** to create or open an interactive report using [Azure Monitor workbooks](reports.md#workbooks).
+8. [Azure izleyici çalışma kitaplarını](reports.md#workbooks)kullanarak etkileşimli bir rapor oluşturmak veya açmak Için **çalışma kitaplarını** seçin.
 
-   ![Workbooks - Interactive reports](./media/intune-reports/intune-reports-07.png)
+   ![Çalışma kitapları-etkileşimli raporlar](./media/intune-reports/intune-reports-07.png)
 
-### <a name="diagnostic-settings"></a>Diagnostic settings
-Each Azure resource requires its own diagnostic setting. The diagnostic setting defines the following for a resource:
+### <a name="diagnostic-settings"></a>Tanılama ayarları
+Her Azure kaynağı kendi tanılama ayarını gerektirir. Tanılama ayarı bir kaynak için aşağıdakileri tanımlar:
 
-- Categories of logs and metric data sent to the destinations defined in the setting. The available categories will vary for different resource types.
-- One or more destinations to send the logs. Current destinations include Log Analytics workspace, Event Hubs, and Azure Storage.
-- Retention policy for data stored in Azure Storage.
+- Ayarda tanımlanan hedeflere gönderilen günlük kategorileri ve ölçüm verileri. Kullanılabilir Kategoriler farklı kaynak türleri için farklılık gösterir.
+- Günlükleri göndermek için bir veya daha fazla hedef. Geçerli hedeflere Log Analytics çalışma alanı, Event Hubs ve Azure Storage dahildir.
+- Azure depolama 'da depolanan veriler için bekletme ilkesi.
 
-A single diagnostic setting can define one of each of the destinations. If you want to send data to more than one of a particular destination type (for example, two different Log Analytics workspaces), then create multiple settings. Each resource can have up to 5 diagnostic settings.
+Tek bir tanılama ayarı, hedeflerin her birinden birini tanımlayabilir. Belirli bir hedef türünden birine (örneğin, iki farklı Log Analytics çalışma alanı) birden fazla veri göndermek istiyorsanız, daha sonra birden çok ayar oluşturun. Her kaynak en fazla 5 tanılama ayarlarına sahip olabilir.
 
-For more information, about diagnostic settings, see [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings).
+Tanılama ayarları hakkında daha fazla bilgi için bkz. [Azure 'da platform günlüklerini ve ölçümlerini toplamak için tanılama ayarı oluşturma](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings).
 
 ### <a name="log-analytics"></a>Log Analytics
-Log Analytics is the primary tool in the Azure portal for writing log queries and interactively analyzing the results of the queries. Even if a log query is used elsewhere in Azure Monitor, you'll typically write and test the query first using Log Analytics. For details about using Log Analytics and creating log queries, see [Overview of log queries in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview). 
+Log Analytics, günlük sorgularını yazmak ve sorguların sonuçlarını etkileşimli olarak çözümlemek için Azure portal birincil araçtır. Günlük sorgusu Azure Izleyici 'de başka bir yerde kullanılsa bile, genellikle Log Analytics kullanarak sorguyu yazın ve test edersiniz. Log Analytics kullanma ve günlük sorguları oluşturma hakkında ayrıntılar için bkz. [Azure izleyici 'de günlük sorgularına genel bakış](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview). 
 
-### <a name="workbooks"></a>Workbooks
-Workbooks combine text, Analytics queries, Azure Metrics, and parameters into rich interactive reports. Workbooks are editable by any other team members who have access to the same Azure resources. For more information about workbooks, see [Azure Monitor workbooks](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Also, you can work with and contribute to workbook templates. For more information, see [Azure Monitor Workbook Templates](https://go.microsoft.com/fwlink/?linkid=867045).
+### <a name="workbooks"></a>Kitabı
+Çalışma kitapları metin, analiz sorguları, Azure ölçümleri ve parametreleri zengin etkileşimli raporlarla birleştirir. Çalışma kitapları aynı Azure kaynaklarına erişimi olan diğer takım üyeleri tarafından düzenlenebilir. Çalışma kitapları hakkında daha fazla bilgi için bkz. [Azure izleyici çalışma kitapları](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Ayrıca, ile çalışarak çalışma kitabı şablonlarına katkıda bulunabilirsiniz. Daha fazla bilgi için bkz. [Azure Izleyici çalışma kitabı şablonları](https://go.microsoft.com/fwlink/?linkid=867045).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Learn more about the following technologies:
-- [Blog - Microsoft Intune reporting framework](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)
-- [Azure Monitor](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
-- [What is Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
-- [Log queries](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
-- [Get started with Log Analytics in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal)
-- [Azure Monitor workbooks](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks)
-- [Security information and event management (SIEM) tools](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration)
+Aşağıdaki teknolojiler hakkında daha fazla bilgi edinin:
+- [Blog-Microsoft Intune raporlama çerçevesi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)
+- [Azure Izleyici](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
+- [Log Analytics nedir?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
+- [Günlük sorguları](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
+- [Azure Izleyici 'de Log Analytics kullanmaya başlama](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal)
+- [Azure Izleyici çalışma kitapları](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks)
+- [Güvenlik bilgileri ve olay yönetimi (SıEM) araçları](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration)

@@ -1,5 +1,5 @@
 ---
-title: Reference for Application entities
+title: Uygulama varlıkları için başvuru
 titleSuffix: Microsoft Intune
 description: Intune Veri Ambarı API’sindeki varlık koleksiyonlarının Uygulama kategorisi için başvuru konusu.
 keywords: Intune Veri Ambarı
@@ -27,7 +27,7 @@ ms.locfileid: "74290957"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
-The **Application** category contains entities for devices that track information such as:
+**Uygulama** kategorisi, gibi bilgileri izleyen cihazlar için varlıklar içerir:
 
 - Uygulamanın sürümleri
 - Uygulamanın yükleme kaynağı
@@ -42,8 +42,8 @@ The **Application** category contains entities for devices that track informatio
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | appKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
-| applicationId |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| revision |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
+| Uygulama |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
+| uncaya |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
 | title |Uygulama başlığı. |Excel |
 | publisher |Uygulama yayımcısı. |Microsoft |
 | uploadState |Uygulamanın karşıya yüklenme durumu. |1 |
@@ -54,7 +54,7 @@ The **Application** category contains entities for devices that track informatio
 | boyut |İkili boyutu. | |
 | startDateInclusiveUTC |Bu uygulama düzeltmesi, veri ambarında oluşturulduğunda tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 | endDateExclusiveUTC |Bu uygulama düzeltmesi kullanımdan kalktığında tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
-| isCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir. |Doğru/Yanlış |
+| IsCurrent |Uygulama sürümünün, veri ambarında mevcut olup olmadığını gösterir. |Doğru/Yanlış |
 | rowLastModifiedDateTimeUTC |Bu uygulama sürümü, veri ambarında son değiştirildiğinde tarih ve UTC diliminde saat. |23.11.2016 12:00:00 |
 
 ## <a name="apptypes"></a>appTypes
@@ -63,7 +63,7 @@ The **Application** category contains entities for devices that track informatio
 
 | Özellik  | Description |
 |---------|------------|
-| appTypeID |Tür kimliği |
+| Apptypeıd |Tür kimliği |
 | appTypeKey |Anahtar için yedek anahtar |
 | appTypeName |Uygulama türü |
 
@@ -92,7 +92,7 @@ The **Application** category contains entities for devices that track informatio
 
 | Özellik  | Description |
 |---------|------------|
-| vppProgramTypeID | Tür kimliği. |
+| Vppprogramtypeıd | Tür kimliği. |
 | vppProgramTypeKey | Anahtar için vekil anahtar. |
 | vppProgramTypeName | VPP Program türü. |
 
@@ -106,9 +106,9 @@ The **Application** category contains entities for devices that track informatio
 
 
 
-## <a name="applicationinventories"></a>applicationInventories
+## <a name="applicationinventories"></a>Applicationenvanterler
 
-The **applicationInventory** entity lists the applications found on the device at the time of inventory collection.
+**Applicationınventory** varlığı, envanter koleksiyonu sırasında cihazda bulunan uygulamaları listeler.
 
 | Özellik  | Description |
 |---------|------------|
@@ -116,17 +116,17 @@ The **applicationInventory** entity lists the applications found on the device a
 | dateKey | Envanterin alındığı günü gösteren tarih tablosuna başvuru. |
 | applicationName | Uygulama adı. |
 | applicationVersion | Uygulamanın sürümü. |
-| bundleSize | Uygulamanın bayt cinsinden boyutu. |
+| Paketleme Taboyutu | Uygulamanın bayt cinsinden boyutu. |
 
 ## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-The **mobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
+**Mobileappınstallstate** varlığı, bir mobil uygulamanın cihaz, Kullanıcı veya her ikisini de içeren bir gruba atandıktan sonra yüklenmesi durumunu temsil eder.
 
 | Özellik | Description |
 |---|---|
-| appInstallStateKey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
-| appInstallState | Uygulama yükleme durumunun Enum değeri. |
-| appInstallStateName | Uygulama yükleme durumunun adı. |
+| Appınstallstatekey | Hesabınız için uygulama yükleme durumunun benzersiz kimliği. |
+| Appınstallstate | Uygulama yükleme durumunun Enum değeri. |
+| Appınstallstatename | Uygulama yükleme durumunun adı. |
 
 
 

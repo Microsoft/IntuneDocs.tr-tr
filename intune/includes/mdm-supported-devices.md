@@ -9,12 +9,12 @@ ms.locfileid: "74284170"
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS and iPadOS 11.0 and later
-- Mac OS X 10.12 and later
+- Apple iOS ve ıpados 11,0 ve üzeri
+- Mac OS X 10,12 ve üzeri
 
 ### <a name="google"></a>Google
-- Android 5.0 and later (including Samsung KNOX Standard 2.4 and higher: [requirements](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
-- Android enterprise: [requirements](https://support.google.com/work/android/topic/9428066)
+- Android 5,0 ve üzeri (Samsung KNOX Standard 2,4 ve üzeri dahil: [gereksinimler](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
+- Android Enterprise: [gereksinimler](https://support.google.com/work/android/topic/9428066)
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -22,7 +22,7 @@ ms.locfileid: "74284170"
 - Windows 10 (Home, S, Pro, Education ve Enterprise sürümleri)
 - Windows 10 Enterprise 2019 LTSC
 
-  For more information about managing devices running Windows 10 2019 LTSC, see [What's new in Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019)
+  Windows 10 2019 LTSC çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [Windows 10 Enterprise 2019 ltsc 'deki](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019) yenilikler
   
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
@@ -31,15 +31,15 @@ ms.locfileid: "74284170"
 
   Windows Holographic for Business çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [Window Holographic for Business desteği](../fundamentals/windows-holographic-for-business.md).
 
-- Windows 10 Teams (Surface Hub)
+- Windows 10 ekipleri (Surface Hub)
 
-   For more information about managing devices running Windows 10 Teams, see [Manage Surface Hub with MDM](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)
+   Windows 10 ekipleri çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [MDM ile Surface Hub yönetme](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)
 - Windows Phone 8.1, Windows 8.1 RT, Windows 8.1 (Sürdürme modu) çalıştıran bilgisayarlar
 
 > [!NOTE]
-> Not all Windows Editions support all available operating system features being configured through MDM. See the [Windows configuration service provider reference docs](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Each CSP highlights which Windows Editions are supported.
+> Tüm Windows sürümleri, MDM aracılığıyla yapılandırılmakta olan tüm kullanılabilir işletim sistemi özelliklerini desteklemez. Bkz. [Windows yapılandırma hizmeti sağlayıcısı başvuru belgeleri](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Her CSP, hangi Windows sürümlerinin desteklendiğini vurgular.
 
-Customers with Enterprise Management + Security  (EMS) can also use [Azure Active Directory (Azure AD) to register Windows 10 devices](/intune/windows-enroll).
+Enterprise Management + Security (EMS) kullanan müşteriler, [Windows 10 cihazlarını kaydetmek için Azure Active Directory (Azure AD)](/intune/windows-enroll)de kullanabilir.
 
-For guidelines on using Windows 10 virtual machines with Intune, see [Using Windows 10 virtual machines](../fundamentals/windows-10-virtual-machines.md).
+Intune ile Windows 10 sanal makinelerini kullanma hakkında yönergeler için bkz. [Windows 10 sanal makinelerini kullanma](../fundamentals/windows-10-virtual-machines.md).
 
