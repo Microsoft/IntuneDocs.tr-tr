@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f73434483c3b6b74f4d816dbc6f06b5dab2464
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 7e1d3c6a427dcbd4a7946c5f3e180de56e8cb955
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813524"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563516"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir iOS iş kolu uygulaması ekleme
 
@@ -38,11 +38,9 @@ Bir iOS iş kolu uygulamasını Microsoft Intune’a eklemek için bu makaledeki
 
 ## <a name="step-1-specify-the-software-setup-file"></a>1\. Adım: Yazılım kurulum dosyasını belirtme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
-5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
-6. **Uygulama Ekle** bölmesinde **İş kolu uygulaması**’nı seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama Ekle** bölmesinde, **uygulama türü**olarak **iş kolu uygulaması** ' nı seçin.
 
 ## <a name="step-2-configure-the-app-package-file"></a>2\. Adım: Uygulama paketi dosyasını yapılandırma
 

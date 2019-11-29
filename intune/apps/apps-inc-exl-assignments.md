@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547958"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563973"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune’da uygulama atamalarını dahil etme ve dışlama
 
@@ -55,34 +55,34 @@ Sonuç olarak, karışık gruplara uygulama atanması önerilmez.
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Uygulama atarken grupları dahil etme ve dışlama 
 Dahil etme ve dışlama atamasını kullanarak gruplara uygulama atamak için:
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** bölmesinde **Uygulamalar**’ı seçin. Eklenen uygulamalar listesi gösterilir.
-5. Atamak istediğiniz uygulamayı seçin. Bir panoda uygulama hakkındaki bilgiler görüntülenir. 
-6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin. 
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** > **uygulamalar** ' ı seçin. Eklenen uygulamalar listesi gösterilir.
+3. Atamak istediğiniz uygulamayı seçin. Bir panoda uygulama hakkındaki bilgiler görüntülenir. 
+4. Menünün **Yönet** bölümünde **Atamalar**’ı seçin. 
 
     ![Uygulama atarken uygulama atamalarını dahil etme](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. **Grup ekle**’yi seçerek uygulamaya atanmış kullanıcı gruplarını ekleyin. 
-8. **Grup ekle** bölmesindeki kullanılabilir atama türlerinden bir **Atama türü** seçin.
-9. Atama türü olarak **Kayıtlı veya kayıtsız olarak kullanılabilir**’i seçin.
+
+5. **Grup ekle**’yi seçerek uygulamaya atanmış kullanıcı gruplarını ekleyin. 
+6. **Grup ekle** bölmesindeki kullanılabilir atama türlerinden bir **Atama türü** seçin.
+7. Atama türü olarak **Kayıtlı veya kayıtsız olarak kullanılabilir**’i seçin.
 
     ![Intune uygulama atamaları - Grup ekle](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. **Dahil Edilen Gruplar**’a tıklayarak bu uygulamaya erişmesini istediğiniz kullanıcı gruplarını seçin.
+8. **Dahil Edilen Gruplar**’a tıklayarak bu uygulamaya erişmesini istediğiniz kullanıcı gruplarını seçin.
 
     > [!NOTE]
     > Grup eklerken, belirli bir atama türü için başka bir grup önceden dahil edilmişse, uygulama diğer dahil etme atama türleri için önceden seçilmiştir ve değiştirilemez. Kullanılmış olan grup, dahil edilmiş bir grup olarak kullanılamaz.
 
-11. **Evet**’i seçerek bu uygulamayı tüm kullanıcılar için kullanılabilir yapın.
+9. **Evet**’i seçerek bu uygulamayı tüm kullanıcılar için kullanılabilir yapın.
 
     ![Intune uygulama atamaları - Grup dahil et](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. Dahil edilecek grubu ayarlamak için **Tamam**’ı seçin.
-13. **Dışlanan Gruplar**’a tıklayarak bu uygulamaya erişmesini istemediğiniz kullanıcı gruplarını seçin. 
-14. Dışlanacak grupları seçin. Bu işlem, bu uygulamanın söz konusu gruplar için kullanılamaz olmasını sağlar.
+10. Dahil edilecek grubu ayarlamak için **Tamam**’ı seçin.
+11. **Dışlanan Gruplar**’a tıklayarak bu uygulamaya erişmesini istemediğiniz kullanıcı gruplarını seçin. 
+12. Dışlanacak grupları seçin. Bu işlem, bu uygulamanın söz konusu gruplar için kullanılamaz olmasını sağlar.
 
     ![Intune uygulama atamaları - Grup dışla](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. **Seç**’i seçerek grup seçiminizi tamamlayın.
-16. **Grup ekle** bölmesinde **Tamam**’ı seçin. Uygulamanın **Atamalar** listesi görüntülenir.
-17. **Kaydet**’e tıklayarak uygulama için grup atamalarınızı etkinleştirin.
+13. **Seç**’i seçerek grup seçiminizi tamamlayın.
+14. **Grup ekle** bölmesinde **Tamam**’ı seçin. Uygulamanın **Atamalar** listesi görüntülenir.
+15. **Kaydet**’e tıklayarak uygulama için grup atamalarınızı etkinleştirin.
 
 Grup atamaları yaparken, zaten atanmış olan gruplar değiştirilemez. Şu anda kullanılamaz durumda olan bir grubu seçmek isterseniz, önce uygulamanın atanmış listesinden uygulamayı kaldırın. 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3153a470649e86bbafc9e8295a1c68532fc27c63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec800064d109cca42878c79ade6777de9b782015
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497683"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563496"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Android mağazası uygulamalarını Microsoft Intune’a ekleme
 
@@ -35,12 +35,10 @@ Bir cihaza veya kullanıcı grubuna uygulama atamadan önce uygulamayı ilk olar
 
 Aşağıdakileri yaparak, Azure portalından Intune’a bir Android mağaza uygulaması ekleyebilirsiniz:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
-5. **Ekle**’yi seçin.
-6. **Uygulama Ekle** bölmesindeki kullanılabilir **Mağaza uygulaması** türlerinden **Android**’i seçin.
-7. Uygulama bilgilerini yapılandırmak için **Yapılandırma**’yı seçin ve ardından aşağıdaki bilgileri sağlayın. Android uygulamaları için [Google Play mağazası](https://play.google.com/store)’na gidin ve dağıtmak istediğiniz uygulamayı arayın. Uygulamayı seçin ve uygulama ayrıntılarını not edin. Seçtiğiniz uygulamaya bağlı olarak, bazı değerler otomatik olarak doldurulmuş olabilir:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama Ekle** bölmesindeki kullanılabilir **Mağaza uygulaması** türlerinden **Android**’i seçin.
+4. Uygulama bilgilerini yapılandırmak için **Yapılandırma**’yı seçin ve ardından aşağıdaki bilgileri sağlayın. Android uygulamaları için [Google Play mağazası](https://play.google.com/store)’na gidin ve dağıtmak istediğiniz uygulamayı arayın. Uygulamayı seçin ve uygulama ayrıntılarını not edin. Seçtiğiniz uygulamaya bağlı olarak, bazı değerler otomatik olarak doldurulmuş olabilir:
     - **Ad**: Şirket Portalı’nda görüntülendiği şekliyle uygulamanın adını girin. Kullandığınız uygulama adlarının benzersiz olduğundan emin olun. Bir uygulama adı iki kez kullanılırsa, Şirket Portalı’nda kullanıcılara yalnızca bir ad gösterilir.
     - **Açıklama**: Uygulama için bir açıklama girin. Bu açıklama Şirket Portalı’nda kullanıcılara görüntülenir.Açıklama şirket portalında kullanıcılara görüntülenir.
     - **Yayımcı**: Uygulama yayımcısının adını girin.
@@ -54,8 +52,8 @@ Aşağıdakileri yaparak, Azure portalından Intune’a bir Android mağaza uygu
     - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin, örneğin *İK departmanı*.
     - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: İsteğe bağlı olarak, uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
-8. **Tamam**’ı seçin.
-9. **Ekle**’yi seçin.
+5. **Tamam**’ı seçin.
+6. **Ekle**’yi seçin.
 
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. 
 

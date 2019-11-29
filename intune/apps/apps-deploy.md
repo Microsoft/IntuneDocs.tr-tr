@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540758"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563988"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -55,13 +55,12 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 
 ## <a name="assign-an-app"></a>Uygulama atama
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. Menünün **Yönet** bölümünde **Uygulamalar**’ı seçin.
-5. **Uygulamalar** bölmesinde atamak istediğiniz uygulamayı seçin.
-6. Menünün **Yönet** bölümünde **Atamalar**’ı seçin.
-7. Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
-8. Belirli bir uygulama için **atama türü** seçin:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** > **uygulamalar** ' ı seçin.
+3. **Uygulamalar** bölmesinde atamak istediğiniz uygulamayı seçin.
+4. Menünün **Yönet** bölümünde **Atamalar**’ı seçin.
+5. Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
+6. Belirli bir uygulama için **atama türü** seçin:
    - **Kayıtlı cihazlar Için kullanılabilir**: uygulamayı şirket portalı uygulamadan veya Web sitesinden yükleyebilen Kullanıcı gruplarına atayın.
    - **Kayıtlı veya kayıtsız olarak kullanılabilir**: Bu uygulamayı, cihazları Intune’a kayıtlı olmayan kullanıcı gruplarına atayın. Kullanıcılara Intune lisansı atanmış olmalıdır, bkz. [Intune Lisansları](../fundamentals/licenses.md).
    - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir. Bazı platformlarda yükleme başlamadan önce son kullanıcıya ek sorular ve bilgiler sunulabilir.
@@ -76,19 +75,19 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
      >
      > **Kayıtlı cihazlar Için kullanılabilir**: uygulama yalnızca şirket portalı oturum açmış olan Kullanıcı, cihazı kaydeden birincil kullanıcı ve uygulama cihaz için geçerliyse kullanılabilir olarak görüntülenir.
 
-9. Bu uygulama atamasından etkilenecek kullanıcı gruplarını belirtmek için, **Dahil Edilen Gruplar**'ı seçin.
-10. Dahil etmek üzere bir veya daha fazla grup belirttikten sonra **Seç** düğmesini seçin.
-11. Dahil edilen gruplar seçimini tamamlamak için **Ata** bölmesinde **Tamam**'ı seçin.
-12. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız, **Grupları Dışla**'yı seçin.
-13. Herhangi bir grubu dışlamayı seçtiyseniz, **Grupları seçin** alanında **Seç** düğmesini seçin.
-14. **Grup ekle** bölmesinde **Tamam**’ı seçin.
-15. Uygulamanın **Atamalar** bölmesinde **Kaydet**'i seçin.
+7. Bu uygulama atamasından etkilenecek kullanıcı gruplarını belirtmek için, **Dahil Edilen Gruplar**'ı seçin.
+8. Dahil etmek üzere bir veya daha fazla grup belirttikten sonra **Seç** düğmesini seçin.
+9. Dahil edilen gruplar seçimini tamamlamak için **Ata** bölmesinde **Tamam**'ı seçin.
+10. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız, **Grupları Dışla**'yı seçin.
+11. Herhangi bir grubu dışlamayı seçtiyseniz, **Grupları seçin** alanında **Seç** düğmesini seçin.
+12. **Grup ekle** bölmesinde **Tamam**’ı seçin.
+13. Uygulamanın **Atamalar** bölmesinde **Kaydet**'i seçin.
 
 Uygulama artık seçtiğiniz gruplara atanır. Uygulama atamalarını dahil etme ve dışlama hakkında daha fazla bilgi için bkz. [Uygulama atamalarını dahil etme ve dışlama](apps-inc-exl-assignments.md).
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Uygulama amaçları arasındaki çakışmalar nasıl çözümlenir
 
-Tek bir grubun birden çok uygulama atama amacı için hedeflenemez, ancak bir kullanıcı veya cihaz, her biri farklı hedeflerle atanmış birden çok grubun üyesiyse çakışmaya neden olur. Uygulamalar için atama çakışmalarının oluşturulması önerilmez.
+Tek bir grubun birden çok uygulama atama amacını hedeflediğinden, ancak bir kullanıcı veya cihaz farklı amaçlar ile atanan birden çok grubun üyesiyse çakışmaya neden olur. Uygulamalar için atama çakışmalarının oluşturulması önerilmez.
 Aşağıdaki tablodaki bilgiler, bir çakışma oluştuğunda ortaya çıkan amacı anlamanıza yardımcı olabilir:
 
 | Grup 1 amacı | Grup 2 amacı | Ortaya çıkan amaç |
@@ -142,7 +141,7 @@ Ayar için varsayılan değerler, yeni atamalar için aşağıdaki gibi önceden
 | İş kolu uygulaması | Evet |
 | Mağaza uygulaması | Hayır |
 | VPP uygulaması | Hayır |
-| Buit-ın uygulaması | Hayır |
+| Yerleşik uygulama | Hayır |
 
 >[!NOTE]
 >**"Kullanılabilir" atama türleri:** "Kayıtlı cihazlar için kullanılabilir" veya "kayıt olmaksızın kullanılabilir" grupları için bu ayarı güncelleştiriyorsanız, zaten yönetilen uygulamaya sahip olan kullanıcılar, cihazı Intune ile eşitlemeden ve uygulamayı yeniden yüklemeden, güncelleştirilmiş ayarı almaz. 

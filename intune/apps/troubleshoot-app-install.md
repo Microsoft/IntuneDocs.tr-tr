@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497051"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563479"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Uygulama yükleme sorunlarını giderme
 
@@ -32,8 +32,8 @@ Microsoft Intune MDM ile yönetilen cihazlarda bazen uygulama yüklemeleri başa
 
 Intune, belirli bir kullanıcının cihazında yüklü uygulamalar temelinde sorun giderme ayrıntıları sağlar.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **Sorun gider**’i seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+3. **Sorun gider + destek**' i seçin.
 4. Sorun gidermek üzere bir kullanıcı belirlemek için **Seçin**’e tıklayın. **Seçili kullanıcılar** bölmesi görüntülenir.
 5. Adını veya e-posta adresini yazarak bir kullanıcı seçin. Bölmenin altındaki **Seçin**’e tıklayın. Kullanıcı için sorun giderme bilgileri, **Sorun Giderme** bölmesinde görüntülenir. 
 6. **Cihazlar** listesinden sorun gidermek istediğiniz cihazı seçin.
@@ -57,12 +57,12 @@ Uygulamaları yüklerken sorun yaşadığınızda aşağıdaki eylemler göz ön
 - Uygulama Şirket Portalı görünmüyorsa, uygulamanın **kullanılabilir** amaç ile dağıtıldığından ve kullanıcının, uygulama tarafından desteklenen cihaz türüyle Şirket portalı eriştiğinden emin olun.
 - Windows BYOD cihazlarında, kullanıcının cihaza bir Iş hesabı eklemesi gerekir.
 - Kullanıcının AAD cihaz sınırının üzerinde olup olmadığını denetleyin:
-  1. [Azure Active Directory cihaz ayarları](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)' na gidin.
+  1. [Azure Active Directory cihaz ayarları](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId)' na gidin.
   2. **Kullanıcı başına en fazla cihaz**için ayarlanan değeri unutmayın.
-  3. [Azure Active Directory kullanıcılara](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)gidin.
+  3. [Azure Active Directory kullanıcılara](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)gidin.
   4. Etkilenen kullanıcıyı seçin ve **cihazlar**' a tıklayın.
   5. Kullanıcı ayarlanan sınırın üzerinde ise artık gerekli olmayan eski kayıtları silin.
-- İOS DEP cihazları için, kullanıcının Intune cihazına genel bakış dikey penceresinde **kayıtlı** olarak listelendiğinden emin olun. Varsa, Intune Şirket Portalı için bir yapılandırma ilkesi dağıtın. Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yapılandırma](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- İOS DEP cihazları için, kullanıcının Intune cihazına genel bakış bölmesinde **Kullanıcı tarafından kaydedilmiş** olarak listelendiğinden emin olun. Varsa, Intune Şirket Portalı için bir yapılandırma ilkesi dağıtın. Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yapılandırma](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 uygulaması yükleme sorunlarını giderme
 
@@ -75,7 +75,7 @@ Intune yönetim uzantısı kullanılarak dağıtılan Win32 uygulamasını seçi
 
 Win32 uygulama yükleme günlüklerinizi toplamak için öncelikle [uygulama sorun giderme ayrıntıları](troubleshoot-app-install.md#app-troubleshooting-details)bölümünde belirtilen adımları izleyin. Ardından, aşağıdaki adımlarla devam edin:
 
-1. **Yükleme ayrıntıları** dikey penceresinde **günlükleri topla** seçeneğine tıklayın.
+1. **Yükleme ayrıntıları** bölmesindeki **günlükleri topla** seçeneğine tıklayın.
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 
@@ -168,7 +168,7 @@ Bu bölüm hem Cihaz Yöneticisi (DA) hem de Samsung KNOX kaydı ile bahsetmekte
 
 |  Hata iletisi/kodu  |  Description  |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  0x80073CFF, 0x80CF201C (istemci hatası)  |  Bu uygulamayı yüklemek için dışarıdan yükleme özellikli bir sisteme sahip olmanız gerekir. Uygulama paketinin güvenilir bir imza ile imzalandığından ve **AllowAllTrustedApps** ilkesinin etkinleştirildiği bir etki alanına katılmış cihaza veya **AllowAllTrustedApps** ilkesiyle Windows dışarıdan yükleme lisansına sahip bir cihaza yüklenmiş olduğundan emin olun etkinletir. Daha fazla bilgi için bkz. [Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).   |
+|  0x80073CFF, 0x80CF201C (istemci hatası)  |  Bu uygulamayı yüklemek için dışarıdan yükleme özellikli bir sisteme sahip olmanız gerekir. Uygulama paketinin güvenilir bir imza ile imzalandığından ve **AllowAllTrustedApps** ilkesinin etkinleştirildiği bir etki alanına katılmış cihaza veya **AllowAllTrustedApps** Ilkesi etkinleştirilmiş bir Windows dışarıdan yükleme lisansına sahip bir cihaza yüklenmiş olduğundan emin olun. Daha fazla bilgi için bkz. [Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).   |
 |  0x80073CF0  |  Paket açılamadı. Olası nedenler:<ul><li> Paket imzasız.</li><li> Yayımcı adı imza sertifikası konusuyla eşleşmiyor.</li></ul> Bilgi için **Appxpackagingom** olay günlüğünü denetleyin. Daha fazla bilgi için bkz. [Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |
 |  0x80073CF3  |  Paket güncelleştirme, bağımlılık veya çakışma doğrulaması başarısız oldu. Olası nedenler:<ul><li> Gelen paket yüklü bir paketle çakışıyor.</li><li> Belirtilen bir paket bağımlılığı bulunamadı.</li><li> Paket doğru işlemci mimarisini desteklemiyor.</li></ul> Bilgi için **Appxdeployment-Server** olay günlüğünü denetleyin. Daha fazla bilgi için bkz. [Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |
 |  0x80073CFB  |  Belirtilen paket zaten yüklü ve paketin yeniden yüklenmesi engellendi. Zaten yüklü olan paketle aynı olmayan bir paket yüklüyorsanız bu hatayı alabilirsiniz. Dijital imzanın paketin bir parçası olduğunu da onaylayın. Bir paket yeniden oluşturulduğunda veya yeniden imzalandığında, bu paket artık önceden yüklenmiş paket ile aynı bit düzeyinde değildir. Bu hatayı düzeltmek için kullanılabilecek iki seçenek aşağıda belirtilmiştir:<ul><li> Uygulamanın sürüm numarasını artırın, ardından paketi yeniden oluşturup yeniden imzalayın.</li><li> Yeni paketi yüklemeden önce sistem üzerindeki her kullanıcı için eski paketi kaldırın.</li></ul> Daha fazla bilgi için bkz. [Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984098"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563820"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile Apple Volume Purchase Program aracılığıyla satın alınan iOS ve macOS uygulamalarını yönetme
 
@@ -82,8 +82,8 @@ Başlamadan önce Apple'dan bir VPP belirteci almanız ve Intune hesabınıza y�
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP belirtecini almak ve karşıya yüklemek için
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde, **Kurulum**altında **Istemci uygulamalar** > **Apple VPP belirteçleri** ' ni seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+3. **Apple VPP belirteçleri** > **bağlayıcı ve belirteçler** > **Kiracı Yönetimi** ' ni seçin.
 4. VPP belirteçleri listesi bölmesinde **Oluştur**’u seçin.
 5. **VPP belirteci oluştur** bölmesinde aşağıdaki bilgileri girin:
     - **VPP belirteç dosyası** - Henüz kaydolmadıysanız Volume Purchase Program for Business veya Education programına kaydolun. Kaydolduktan sonra hesabınıza yönelik Apple VPP belirtecini indirin ve burada seçin.
@@ -110,7 +110,7 @@ Belirteç, belirteçler listesi bölmesinde görüntülenir.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
-1. **Intune** bölmesinde **Yönet** altında bulunan **İstemci uygulamaları** > **Uygulamalar**’ı seçin.
+1. **Tüm uygulamalar** > **uygulamalar** ' ı seçin.
 2. Uygulama listesi bölmesinde atamak istediğiniz uygulamayı ve daha sonra **Atamalar**’ı seçin.
 3. ***Uygulama adı*** - **Atamalar** bölmesinde, **Grup ekle**’yi seçin, ardından **Grup ekle** bölmesinde bir **Atama türü** seçin ve uygulamayı atamak istediğiniz Azure AD kullanıcı veya cihaz gruplarını seçin.
 5. Seçtiğiniz her grup için aşağıdaki ayarları yapılandırın:
@@ -176,8 +176,8 @@ Apple Volume Purchase Program portalından yeni belirteç indirerek ve Intune'da
 
 Apple VPP belirteçlerine ve VPP uygulamalarına erişim, Intune 'daki özel yönetici rollerine atanan izinler kullanılarak bağımsız olarak denetlenebilir.
 
-* Bir Intune özel rolünün, **istemci uygulamaları** > **Apple VPP BELIRTEÇLERI**altında Apple VPP belirteçlerini yönetmesine Izin vermek için, **yönetilen uygulamalar**için izin atayın.
-* Bir Intune özel rolünün, **istemci uygulamaları** > **uygulama**altındaki iOS VPP belirteçleri kullanılarak satın alınan uygulamaları yönetmesine Izin vermek için, **mobil uygulamalar**için izin atayın. 
+* Intune özel rolünün, **Apple VPP belirteçlerini** > **uygulamalar** altında Apple VPP belirteçlerini yönetmesine Izin vermek için, **yönetilen uygulamalar**için izin atayın.
+* Intune özel rolünün, **uygulamalar** > **tüm uygulamalar**altında iOS VPP belirteçleri kullanılarak satın alınan uygulamaları yönetmesine Izin vermek için, **mobil uygulamalar**için izin atayın. 
 
 ## <a name="additional-information"></a>Ek bilgiler
 
@@ -196,7 +196,7 @@ Lisans, bir uygulama yüklendikten veya kaldırıldıktan sonra birkaç saat iç
 Evet. Intune yöneticisi bir uygulamaya fazladan abone atayabilir. Örneğin yönetici, XYZ uygulaması için 100 lisans satın alıp uygulamayı 500 üyelik bir gruba hedefler. Bu durumda ilk 100 üye (kullanıcı veya cihaz) kendilerine atanan lisansı alır, kalan üyeler lisans atamasında başarısız olur.
 
 ### <a name="how-frequently-does-intune-sync-vpp-tokens-with-apple"></a>Intune, VPP belirteçlerini Apple ile ne sıklıkta eşitler?
-Intune, VPP belirteçlerini ve lisansları Apple ile günde iki kez eşitler. Intune Yöneticisi **istemci uygulamaları** > **Apple VPP belirteçleri**altında el ile eşitleme başlatabilir.
+Intune, VPP belirteçlerini ve lisansları Apple ile günde iki kez eşitler. Intune Yöneticisi, **Apple VPP belirteçleri** > **uygulamalar** altında el ile eşitleme başlatabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

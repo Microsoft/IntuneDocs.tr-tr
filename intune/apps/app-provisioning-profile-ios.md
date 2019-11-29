@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 31bad59c33a34d0b92d93979b20b58f70fd042ef
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584942"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564091"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uygulamalarınızın süresinin dolmasını engellemek için iOS uygulama sağlama profillerini kullanma
 
@@ -44,8 +44,8 @@ Yönetici olarak, iOS uygulama sağlama yapılandırmasını atamak için güven
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS mobil uygulama sağlama profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Intune** bölmesinde, **Istemci uygulamaları**  > **iOS uygulama sağlama profilleri**  > **Profil oluştur**' u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluştur** > **iOS uygulama sağlama profilleri** > **uygulamalar** ' ı seçin.
 3. **Temel bilgiler** sayfasında, aşağıdaki değerleri ekleyin:
     - **Ad** - Bu mobil sağlama profiline bir ad verin.
     - **Açıklama** - İsteğe bağlı olarak, ilke için bir açıklama sağlayın.

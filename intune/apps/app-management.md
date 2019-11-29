@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507472"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564358"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -76,16 +76,16 @@ Intune, ihtiyacınız olan uygulamaları çalıştırmak istediğiniz cihazlara 
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 
-Aşağıda gösterilen yolla erişilen **İstemci uygulamaları** iş yükünde, uygulamayla ilgili bilgilerin çoğunu bulabilirsiniz:
+Uygulamalarla ilgili birçok bilgiyi **uygulamalar** iş yükünde bulabilirsiniz ve aşağıdakileri yaparak erişebilirsiniz:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Microsoft Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+3. **Uygulamalar**' ı seçin.
 
-    !["İstemci uygulamaları" iş yükü bölmesi](./media/app-management/apps-workload.png)
+    ![Uygulamalar iş yükü bölmesi](./media/app-management/apps-workload.png)
 
-Sıradaki dört bölüm, **İstemci uygulamaları** bölmesindeki kullanılabilir seçenekleri açıklar.
+Sonraki dört bölüm, **uygulamalar** bölmesinde bulunan seçenekleri anlatmaktadır.
 
-### <a name="manage"></a>Yönet
+### <a name="manage"></a>Bilgisayarlarda
 - **Uygulamalar**: İş gücünüz tarafından kullanılan uygulamaları eklemek, görüntülemek, atamak ve izlemek için bu seçeneği belirleyin. Daha fazla bilgi için bkz.:
   - [Uygulama ekleme](apps-add.md).
   - [Uygulama atama](apps-deploy.md).

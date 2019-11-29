@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635379"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563672"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Windows 10 cihazlarına Office 365 uygulamaları ekleme
 
@@ -49,11 +49,9 @@ Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
-5. **Ekle**’yi seçin.
-6. **Uygulama ekle** bölmesindeki **Uygulama türü** listesinde bulunan **Office 365 Suite**’in altında **Windows 10**’u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama ekle** bölmesindeki **Uygulama türü** listesinde bulunan **Office 365 Suite**’in altında **Windows 10**’u seçin.
 
 ## <a name="select-settings-format"></a>Ayarlar biçimini seçin
 
@@ -61,13 +59,13 @@ Bir **Ayarlar biçimi**seçerek uygulama ayarını yapılandırmak için bir yö
 - Yapılandırma Tasarımcısı
 - XML verilerini girme
 
-**Yapılandırma Tasarımcısı** ' nı seçtiğinizde, **Uygulama Ekle** dikey penceresi iki ek ayar seçeneği sunmak üzere değişecektir:
+**Yapılandırma Tasarımcısı** ' nı seçtiğinizde, **Uygulama Ekle** bölmesi iki ek ayar seçeneği sunmak üzere değişecektir:
 - Uygulama paketini Yapılandır
 - Uygulama paketi ayarları
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-**XML verisi gir** ' i SEÇTIĞINIZDE, **XML verisi gir** seçeneğini görüntüle seçeneği ile **Uygulama Ekle** dikey penceresine tıklayın. **Yapılandırma dosyası** dikey penceresini göstermek için bunu seçin. 
+**XML verisi gir** ' i seçtiğinizde, **Uygulama Ekle** bölmesinde **XML verisi gir** seçeneği görüntülenir. **Yapılandırma dosyası** bölmesini göstermek için bunu seçin. 
 
 ![Office 365 yapılandırma Tasarımcısı ekleme](./media/apps-add-office365/apps-add-office365-01.png)
     
@@ -94,7 +92,7 @@ Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune�
 
 ## <a name="configure-app-suite"></a>Uygulama paketini Yapılandır
 
-**Biçim biçimlendirme** açılan kutusu altında **yapılandırma Tasarımcısı** seçeneğini belirlediyseniz, **Uygulama Ekle** dikey penceresinde **uygulama paketi yapılandırma** seçeneğini görürsünüz. Cihazlara atamak istediğiniz Office uygulamalarını seçin.
+**Biçim biçimlendirme** açılan kutusu altında **yapılandırma Tasarımcısı** seçeneğini belirlediyseniz, **Uygulama Ekle** bölmesinde **uygulama paketi yapılandırma** seçeneğini görürsünüz. Cihazlara atamak istediğiniz Office uygulamalarını seçin.
 
 1. **Uygulama Ekle** bölmesinde **Uygulama Paketini Yapılandır**’ı seçin.
 2. **Uygulama Paketini Yapılandır** bölmesinde, cihazlara atamak istediğiniz standart Office uygulamalarını seçin.  
@@ -103,7 +101,7 @@ Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune�
 
 ## <a name="configure-app-suite-settings"></a>Uygulama paketi ayarlarını yapılandırma
 
-**Biçim biçimlendirme** açılan kutusu altında **yapılandırma Tasarımcısı** seçeneğini belirlediyseniz, **Uygulama Ekle** dikey penceresinde **uygulama paketi ayarları** seçeneğini görürsünüz. Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Pakete eklediğiniz tüm uygulamalar için bu ayarlar uygulanır.
+**Biçim biçimlendirme** açılan kutusu altında **yapılandırma Tasarımcısı** seçeneğini belirlediyseniz, **Uygulama Ekle** bölmesinde **uygulama paketi ayarları** seçeneğini görürsünüz. Bu adımda, uygulama paketi için yükleme seçeneklerini yapılandırın. Pakete eklediğiniz tüm uygulamalar için bu ayarlar uygulanır.
 
 1. **Uygulama Ekle** bölmesinde **Uygulama Paketi Ayarları**’nı seçin.
 2. **Uygulama Paketi Ayarları** bölmesinde aşağıdakileri yapın:
@@ -126,19 +124,19 @@ Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune�
     - **Uygulama son kullanıcı lisans sözleşmesini otomatik kabul edin**: Son kullanıcıların lisans sözleşmesini kabul etmesinin gerekli olmasını istemiyorsanız bunu seçin. Ardından Intune, sözleşmeyi otomatik olarak kabul eder.
     - **Paylaşımlı bilgisayar etkinleştirme kullanın**: Birden çok kullanıcı tek bir bilgisayarı kullanıyorsa bu seçeneği belirtin. Daha fazla bilgi için bkz. [Office 365 için paylaşılan bilgisayar etkinleştirmeye genel bakış](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Diller**: Office, son kullanıcının bilgisayarına Windows ile yüklenmiş olan tüm dillerde otomatik olarak yüklenir. Uygulama paketiyle birlikte ilave diller yüklemek istiyorsanız bunu seçin. <p></p>
-    Intune üzerinden yönetilen Office 365 Pro Plus uygulamaları için ek diller dağıtabilirsiniz. Kullanılabilir diller listesi, dil paketinin **Tür** bilgisini içerir (çekirdek, kısmı ve yazım denetleme). Azure portalında **Microsoft Intune** > **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçin. **Uygulama ekle** dikey penceresindeki **Uygulama türü** listesinde **Office 365 Paketi** altından **Windows 10**'u seçin. **Uygulama Paketi Ayarları** dikey penceresinde **Diller**'i seçin. Ek bilgi için bkz: [Office 365 ProPlus'ta dil dağıtmaya genel bakış](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+    Intune üzerinden yönetilen Office 365 Pro Plus uygulamaları için ek diller dağıtabilirsiniz. Kullanılabilir diller listesi, dil paketinin **Tür** bilgisini içerir (çekirdek, kısmı ve yazım denetleme). Azure portal **Microsoft Intune** > **uygulamalar** > **tüm uygulamalar** ' a > **Ekle**' yi seçin. **Uygulama Ekle** bölmesinin **uygulama türü** listesinde, **Office 365 paketi**altında **Windows 10** ' u seçin. **Uygulama paketi ayarları** bölmesinde **Diller** ' i seçin. Ek bilgi için bkz: [Office 365 ProPlus'ta dil dağıtmaya genel bakış](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
 ## <a name="select-scope-tags-optional"></a>Kapsam etiketlerini seçin (isteğe bağlı)
 Intune 'da istemci uygulama bilgilerini kimlerin görebileceğini anlamak için kapsam etiketlerini kullanabilirsiniz. Kapsam etiketleri hakkında tam Ayrıntılar için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi ve kapsam etiketleri kullanma](../fundamentals/scope-tags.md).
 
-1. **Kapsam (Etiketler)**  > **Ekle**' yi seçin.
+1. **Ekle** > **kapsam (Etiketler)** seçin.
 2. Kapsam etiketlerini aramak için **Seç** kutusunu kullanın.
 3. Bu uygulamaya atamak istediğiniz kapsam etiketlerinin yanındaki onay kutusunu işaretleyin.
 4. **Seç** > **Tamam**'ı seçin.
 
 ## <a name="enter-xml-format"></a>XML biçimi girin
 
-**Biçim biçimlendirme** açılan kutusu altında **XML verisi gir** seçeneğini belirlediyseniz, **Uygulama Ekle** dikey penceresinde **XML biçimi gir** seçeneğini görürsünüz. Daha fazla bilgi için bkz. [Office dağıtım aracı Için yapılandırma seçenekleri](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+**Biçim biçimlendirme** açılan kutusu altında **XML verisi gir** seçeneğini belirlediyseniz, **Uygulama Ekle** bölmesinde **XML biçimi gir** seçeneğini görürsünüz. Daha fazla bilgi için bkz. [Office dağıtım aracı Için yapılandırma seçenekleri](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Bitirme
 
@@ -161,7 +159,7 @@ Intune 'dan dağıtım ilkesi, [Office yapılandırma hizmeti sağlayıcısı (C
 O365 paketinin atanması gerekli olarak yapılandırılmışsa yükleme sessiz modda olur. Yükleme başarılı olduktan sonra indirilen yükleme dosyaları silinir. Atama **kullanılabilir**olarak yapılandırılmışsa, son kullanıcıların yüklemeyi el ile tetikleyebilmesi için Office uygulamaları şirket portalı uygulamasında görüntülenir.
 
 ## <a name="troubleshooting"></a>Sorun giderme
-Intune, Office [365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)'yi kullanarak Office 365 ProPlus 'ı istemci bilgisayarlarınıza indirip dağıtmak Için [Office dağıtım aracı](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) 'nı kullanır. Ağ yapılandırmanızın, istemcilerin, gereksiz noktaya giriş yapmaktan kaçınmak için merkezi proxy 'ler aracılığıyla CDN trafiğini yönlendirmek yerine doğrudan CDN 'ye erişmesine izin verdiğinden emin olmak için, [Office 365 uç noktalarını yönetme](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) bölümünde özetlenen en iyi yöntemlere başvurun dönemlerinde.
+Intune, Office [365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)'yi kullanarak Office 365 ProPlus 'ı istemci bilgisayarlarınıza indirip dağıtmak Için [Office dağıtım aracı](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) 'nı kullanır. Ağ yapılandırmanızın, istemcilerin, gereksiz gecikme süresine ulaşmaktan kaçınmak için merkezi proxy 'ler aracılığıyla CDN trafiğini yönlendirmek yerine doğrudan CDN 'ye erişmesine izin verdiğinden emin olmak için, [Office 365 uç noktalarını yönetme](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) bölümünde özetlenen en iyi yöntemlere başvurun.
 
 Yükleme veya çalışma zamanı sorunlarıyla karşılaşırsanız, hedeflenen bir cihazda [Office 365 için Microsoft desteği ve Kurtarma Yardımcısı](https://diagnostics.office.com) 'nı çalıştırın.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984013"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564131"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -33,16 +33,16 @@ Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından ş
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Koşullu başlatma eylemlerini kullanarak bir uygulama koruma ilkesi oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları** > **Uygulama koruma ilkeleri**’ni seçin.
-4. **İlke ekle**’ye tıklayın (Mevcut bir ilkeyi de düzenleyebilirsiniz). 
-5. İlke için yapılandırmaya uygun ayarların bir listesini görmek üzere **Gerekli ayarları yapılandır**’a tıklayın. 
-6. Ayarlar bölmesinde aşağı kaydırarak, düzenlenebilir tabloyla **koşullu başlatma** başlıklı bir bölüm görürsünüz.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Uygulama koruma ilkeleri** > **uygulamalar** ' ı seçin.
+3. **Ilke oluştur** ' a tıklayın ve ilkenizin için cihaz platformunu seçin. 
+4. İlke için yapılandırmaya uygun ayarların bir listesini görmek üzere **Gerekli ayarları yapılandır**’a tıklayın. 
+5. Ayarlar bölmesinde aşağı kaydırarak, düzenlenebilir tabloyla **koşullu başlatma** başlıklı bir bölüm görürsünüz.
 
     ![Intune uygulama koruma erişim eylemlerinin ekran görüntüsü](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. Bir **Ayar** seçin ve kullanıcıların şirket uygulamanızda oturum açması için karşılaması gereken bir **Değer** girin. 
-8. Gereksinimlerinizi karşılamayan kullanıcılar için bir **Eylem** seçin. Bazı durumlarda tek bir ayar için birden çok eylem yapılandırılabilir. Daha fazla bilgi için bkz. [Uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md).
+6. Bir **Ayar** seçin ve kullanıcıların şirket uygulamanızda oturum açması için karşılaması gereken bir **Değer** girin. 
+7. Gereksinimlerinizi karşılamayan kullanıcılar için bir **Eylem** seçin. Bazı durumlarda tek bir ayar için birden çok eylem yapılandırılabilir. Daha fazla bilgi için bkz. [Uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md).
 
 ## <a name="policy-settings"></a>İlke ayarları 
 
@@ -85,7 +85,7 @@ Android’de **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler
 - Min Şirket Portalı sürümü
 - İzin verilen en fazla cihaz tehdit düzeyi
 
-**Min Şirket portalı sürümünü**kullanarak, bir son kullanıcı cihazında zorlanan Şirket portalı için belirli bir en düşük tanımlı sürümü belirtebilirsiniz. Bu koşullu başlatma ayarı, her bir değer karşılanmazsa **erişimi engellemek**, **verileri silmek**ve olası eylemler olarak **uyarmak** için değerler ayarlamanıza olanak sağlar. Bu değer için olası biçimler *[ana] düzenine uyar. [ İkincil]*, *[birincil]. [ İkincil]. [Derleme]* veya *[birincil]. [ İkincil]. [Derleme]. [Düzeltme]*. Bazı son kullanıcılar, bir uygulama için bu şekilde zorlanan bir güncelleştirme tercih edemeyebilir, bu ayar yapılandırılırken ' warn ' seçeneği ideal olabilir. Google Play Store, uygulama güncelleştirmeleri için yalnızca Delta baytlarını göndermenin iyi bir işini yapar, ancak bu, kullanıcının güncelleştirme sırasında veriler üzerinde olmaları durumunda kullanmak istememe büyük miktarda veri olabilir. Güncelleştirme zorlamak ve böylece güncelleştirilmiş bir uygulamanın indirilmesi, güncelleştirme sırasında beklenmeyen veri ücretlerine neden olabilir. Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı sürüm 5.0.4560.0 ve gelecekteki tüm şirket portalı sürümlerini alan son kullanıcıları etkileyecektir. Bu ayarın, bu özelliğin yayımlandığı sürümden daha eski bir Şirket Portalı sürümünü kullanan kullanıcılar üzerinde hiçbir etkisi olmayacaktır. En son Şirket Portalı sürümünde olabilecekleri için, cihazlarından uygulama otomatik güncelleştirmelerini kullanan son kullanıcılar bu özellikten hiçbir iletişim kutusu görmeyecektir. Bu ayar yalnızca kayıtlı ve kayıtlı olmayan cihazlar için uygulama korumasıyla Android 'dir.
+**Min Şirket portalı sürümünü**kullanarak, bir son kullanıcı cihazında zorlanan Şirket portalı için belirli bir en düşük tanımlı sürümü belirtebilirsiniz. Bu koşullu başlatma ayarı, her bir değer karşılanmazsa **erişimi engellemek**, **verileri silmek**ve olası eylemler olarak **uyarmak** için değerler ayarlamanıza olanak sağlar. Bu değer için olası biçimler *[ana] düzenine uyar. [ İkincil]* , *[birincil]. [ İkincil]. [Derleme]* veya *[birincil]. [ İkincil]. [Derleme]. [Düzeltme]* . Bazı son kullanıcılar, bir uygulama için bu şekilde zorlanan bir güncelleştirme tercih edemeyebilir, bu ayar yapılandırılırken ' warn ' seçeneği ideal olabilir. Google Play Store, uygulama güncelleştirmeleri için yalnızca Delta baytlarını göndermenin iyi bir işini yapar, ancak bu, kullanıcının güncelleştirme sırasında veriler üzerinde olmaları durumunda kullanmak istememe büyük miktarda veri olabilir. Güncelleştirme zorlamak ve böylece güncelleştirilmiş bir uygulamanın indirilmesi, güncelleştirme sırasında beklenmeyen veri ücretlerine neden olabilir. Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı sürüm 5.0.4560.0 ve gelecekteki tüm şirket portalı sürümlerini alan son kullanıcıları etkileyecektir. Bu ayarın, bu özelliğin yayımlandığı sürümden daha eski bir Şirket Portalı sürümünü kullanan kullanıcılar üzerinde hiçbir etkisi olmayacaktır. En son Şirket Portalı sürümünde olabilecekleri için, cihazlarından uygulama otomatik güncelleştirmelerini kullanan son kullanıcılar bu özellikten hiçbir iletişim kutusu görmeyecektir. Bu ayar yalnızca kayıtlı ve kayıtlı olmayan cihazlar için uygulama korumasıyla Android 'dir.
 
 **Cihaz üreticileri** ayarını kullanmak için Android üreticilerinin noktalı virgülle ayrılmış bir listesini ekleyin. Bu değerler büyük/küçük harfe duyarlı değildir. Intune raporlama 'nın yanı sıra, cihaz ayarları altında bir cihazın Android üreticisini bulabilirsiniz. <br>
 Örnek giriş: *Üretici A;Üretici B* 

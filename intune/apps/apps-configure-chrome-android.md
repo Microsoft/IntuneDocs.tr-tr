@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801657"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564038"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune kullanarak Android cihazları için Google Chrome 'U yapılandırma 
 
@@ -36,8 +36,8 @@ Android cihazları için Google Chrome 'u yapılandırmak için bir Intune uygul
 
 ## <a name="add-the-google-chrome-app-to-intune"></a>Google Chrome uygulamasını Intune 'a ekleme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Intune** bölmesinde, **istemci uygulamaları** > **uygulama** >  ' ü seçin ve ardından **yönetilen Google Play** **uygulamasını ekleyin.**
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** > **uygulamalar** **' ı seçin** > ardından **yönetilen Google Play** uygulamasını ekleyin.
 3. Yönetilen Google Play gidin, **Google Chrome** ile arama yapın ve onaylayın.
 
     ![Google Chrome 'ı arama ve onaylama](~/apps/media/apps-configure-chrome-android/search.png)
@@ -48,7 +48,7 @@ Intune 'a yönetilen Google Play uygulaması ekleme hakkında daha fazla bilgi i
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>Yönetilen AE cihazları için uygulama yapılandırması Ekle
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) bölmesinde, **uygulama yapılandırma ilkeleri** > **Ekle**' yi seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) bölmesinde, **Ekle** > **uygulama yapılandırma ilkeleri** ' ni seçin.
 2. İlke adınızı ekleyin, cihaz kayıt türü ve platform altında **Android** altında **yönetilen cihazlar** ' ı seçin.
 
     ![Google Chrome yapılandırma ilkesi Ekle](~/apps/media/apps-configure-chrome-android/add-policy.png)

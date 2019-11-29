@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059766"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563618"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S modundaki cihazlarda Win32 uygulamalarını etkinleştirme
 
@@ -58,7 +58,7 @@ Win32 uygulamalarının bir Windows 10 cihazında S modunda çalışmasına izin
 Bir Windows 10 S modu ek ilkesi oluşturmak için aşağıdaki adımları kullanın:
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Intune** bölmesinde, **Ilke oluştur** > **istemci uygulamaları** > **S modu ek ilkeleri** ' ni seçin.
+2. **Ilke oluştur** > **uygulamalar** > **S mod ek ilkeleri** ' ni seçin.
 3. **İlke dosyasını**eklemeden önce, onu oluşturmanız ve imzalamanız gerekir. Daha fazla bilgi için bkz.:
     - [PowerShell araçlarını kullanarak bir WDAC ilkesi oluşturun ve bunu ikili biçime dönüştürün](https://go.microsoft.com/fwlink/?linkid=2095387)
     - [Device Guard Imzalama hizmeti 'ni kullanmayı imzala](https://go.microsoft.com/fwlink/?linkid=2095629) **(önerilir)**

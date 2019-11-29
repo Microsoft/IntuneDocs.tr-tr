@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713210"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564390"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -57,7 +57,7 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 > [!Note]  
 > Donanım ve yazılım envanteri, Intune hizmetinde her 7 günde bir yenilenir.
 
-|Ayrıntılarını|Description|Platfveyam| 
+|ayrıntılarını|Description|Platfveyam| 
 |--------------|----------------------|----|  
 |Ad|Cihazın adı.|Windows, iOS|
 |Yönetim adı|Yalnızca konsolda kullanılan cihaz adı. Bu adın değiştirilmesi, cihazdaki adı değiştirmez.|Windows, iOS|
@@ -84,7 +84,7 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 |ICCID|Entegre Devre Kart Tanımlayıcısı, yani bir SIM kartın benzersiz kimlik numarası.|Windows, iOS, Android|
 |Kaydolma tarihi|Cihazın Intune’a kaydedildiği tarih ve saat.|Windows, iOS, Android|
 |Son iletişim|Cihazın Intune’a son bağlandığı tarih ve saat.|Windows, iOS, Android|
-|Etkinleştirme kilidi atlama kodu|Etkinleştirme kilidini atlamak için kullanılabilecek kod.|Windows, iOS, Android|
+|Etkinleştirme kilidi atlama kodu|Etkinleştirme kilidini atlamak için kullanılabilecek kod.|iOS|
 |Azure AD kayıtlı|**Evet** ise cihaz Azure Directory’ye kayıtlıdır.|Windows, iOS, Android|
 |Intune kayıtlı|Yanıt **Evet**ise, cihaz Intune 'a kaydedilir|Windows, iOS, Android|
 |Uyumluluk|Cihazın uyumluluk durumu.|Windows, iOS, Android|

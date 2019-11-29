@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19d14b2f2cfa838d79af1c6fbb3c3500004e56e
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 3c13d7960c0bb5c73908a0a574ab7d6c169d6460
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548035"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563431"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store uygulamalarını Microsoft Intune’a ekleme
 
@@ -34,12 +34,10 @@ Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Intune
 ## <a name="add-an-app-to-intune"></a>Intune’a uygulama ekleme
 Aşağıdakileri yaparak Intune’a bir Microsoft Store uygulaması ekleyebilirsiniz:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
-5. **Uygulamalar** bölmesinde **Ekle**’yi seçin.
-6. **Uygulama ekle** bölmesinde, **Uygulama türü** olarak **Windows**’u ve **Uygulama bilgileri**’ni seçin.
-7. **Uygulama bilgileri** bölmesinde uygulama bilgilerini ekleyin. Seçtiğiniz uygulamaya bağlı olarak, bölmedeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama ekle** bölmesinde, **Uygulama türü** olarak **Windows**’u ve **Uygulama bilgileri**’ni seçin.
+4. **Uygulama bilgileri** bölmesinde uygulama bilgilerini ekleyin. Seçtiğiniz uygulamaya bağlı olarak, bölmedeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
     - **Ad**: Şirket Portalı’nda görüntülendiği şekliyle uygulamanın adını girin. Kullandığınız uygulama adlarının benzersiz olduğundan emin olun. Bir uygulama adı iki kez kullanılırsa, Şirket Portalı’nda kullanıcılara yalnızca bir ad gösterilir.
     - **Açıklama**: Uygulama için bir açıklama girin. Bu açıklama Şirket Portalı’nda kullanıcılara görüntülenir.Açıklama şirket portalında kullanıcılara görüntülenir.
     - **Yayımcı**: Uygulama yayımcısının adını girin.
@@ -52,8 +50,8 @@ Aşağıdakileri yaparak Intune’a bir Microsoft Store uygulaması ekleyebilirs
     - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin, örneğin *İK departmanı*.
     - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: İsteğe bağlı olarak, uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
-8. **Tamam**’ı seçin.
-9. **Ekle**’yi seçin.
+5. **Tamam**’ı seçin.
+6. **Ekle**’yi seçin.
 
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz. Microsoft Store uygulamaları, yalnızca **Kayıtlı cihazlar için kullanılabilir** atama türüne sahip gruplara atanabilir (kullanıcılar uygulamayı Şirket Portalı uygulamasından veya web sitesinden yükler).
 

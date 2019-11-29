@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74412018"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564199"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>İOS için Outlook ile S/MIME yapılandırma
 
@@ -62,14 +62,14 @@ Dijital olarak imzalanmış bir ileti, iletinin kurcalanmadığını ve göndere
 Endpoint Manager 'da iOS S/MIME için Outlook 'u, iOS 'un kullanabileceği S/MIME sertifikalarını otomatik olarak teslim etmek de dahil olmak üzere yapılandırmak için aşağıdaki adımları kullanın:
 
 ### <a name="add-the-microsoft-outlook-app"></a>Microsoft Outlook uygulamasını ekleme
-1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. İOS için Microsoft Outlook uygulamasını App Store 'dan Endpoint Manager 'a ekleyin veya iOS için Outlook 'U Apple Volume Purchase Program 'tan eşitleyin. Daha fazla bilgi için bkz. [Microsoft Intune iOS Mağazası uygulamaları ekleme](~/apps/store-apps-ios.md) veya [Microsoft Intune ile Apple Volume Purchase program aracılığıyla satın alınan IOS ve MacOS uygulamalarını yönetme](~/apps/vpp-apps-ios.md).
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>İOS S/MIME yapılandırma ilkesi için Outlook oluşturma
 
 Aşağıdaki adımlar, Endpoint Manager 'da iOS için Outlook/MIME ilkesini oluşturmanıza ve yapılandırmanıza olanak tanır. Bu ayarlar, imzalama ve şifreleme sertifikalarının otomatik olarak teslimini sağlar.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **uygulamalar** > **uygulamalar yapılandırma ilkeleri** > **Ekle**' yi seçin.<br>
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **ekle** > **uygulamalar > ** **uygulama yapılandırma ilkeleri** ' ni seçin.<br>
 **Yapılandırma Ilkesi Ekle** bölmesi görüntülenir.
 2. Yapılandırma ilkesinin **adını** ve **açıklamasını** girin.
 3. **Cihaz kayıt türü**olarak **yönetilen cihazlar** ' ı seçin.

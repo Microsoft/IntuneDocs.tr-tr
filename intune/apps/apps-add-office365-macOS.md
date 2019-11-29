@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498821"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564071"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune ile macOS cihazlara Office 365 atama
 
@@ -41,14 +41,12 @@ macOS cihazlarına Office 365’i eklemeye başlamadan önce aşağıdaki ayrın
 ## <a name="create-and-configure-the-app-suite"></a>Uygulama paketini oluşturma ve yapılandırma
 
 **Uygulamalar** bölmesinden Office 365 uygulamaları ekleyin.
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin. 
-5. **Ekle**’yi seçin.
-6. **Uygulama türü** listesinde, **Office 365 Paketi** grubundan **macOS** öğesini seçin.
-7. Uygulama paketi hakkında bilgi almak için **Uygulama Paketi Bilgileri**’ni seçin.  
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama türü** listesinde, **Office 365 Paketi** grubundan **macOS** öğesini seçin.
+4. Uygulama paketi hakkında bilgi almak için **Uygulama Paketi Bilgileri**’ni seçin.  
     Bu bilgiler, Intune’da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı’nda paketi bulması kolaylaşır.
-8. Aşağıdaki bilgileri girin:
+5. Aşağıdaki bilgileri girin:
     - **Paket Adı**: Uygulama paketinin Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm paket adlarının benzersiz olduğundan emin olun. Aynı uygulama paketi adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
     - **Paket Açıklaması**: Uygulama paketi için bir açıklama girin.
     - **Yayımcı**: Yayımcı olarak Microsoft gösterilir.
@@ -60,8 +58,8 @@ macOS cihazlarına Office 365’i eklemeye başlamadan önce aşağıdaki ayrın
     - **Sahip**: Sahip olarak Microsoft gösterilir.
     - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: Kullanıcılar şirket portalına göz attığında uygulamayla birlikte Office 365 logosu görüntülenir.
-9. **Tamam**’ı seçin.
-10. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.  
+6. **Tamam**’ı seçin.
+7. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.  
     Paket, uygulama listesinde tek bir girdi olarak gösterilir.
 
 ## <a name="configure-app-assignments"></a>Uygulama atamalarını yapılandırma

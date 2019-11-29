@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e827075b56d1751e837c25d85c304201bcafa01
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390417"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564012"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune tarafından yönetilen uygulamalardan kurumsal verileri temizleme
 
@@ -44,8 +44,8 @@ Windows Information Protection (WıP) ilkeleri, MDM kullanıcılarının Windows
 
 ## <a name="create-a-wipe-request"></a>Temizleme isteği oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. Intune bölmesinde, **uygulama seçmeli silme** > **silme Isteği oluştur** > **istemci uygulamaları** ' nı seçin.<br>
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Uygulama seçmeli silme** > **silme Isteği oluştur** > **uygulamalar** ' ı seçin.<br>
    **Temizleme Isteği oluştur** bölmesi görüntülenir.
 3. **Kullanıcı Seç**' e tıklayın, uygulama verilerini silmek istediğiniz kullanıcıyı seçin ve **Kullanıcı Seç** bölmesinin en altında bulunan **Seç** ' e tıklayın.
 
@@ -65,7 +65,7 @@ Hizmet, cihazdaki korunan her uygulama için ayrı bir silme isteği oluşturur 
 
 Temizleme isteğinin genel durumunu gösteren ve bekleyen isteklerle hataların sayısını içeren bir özet raporunuz olabilir. Daha fazla bilgi almak için şu adımları izleyin:
 
-1. **Istemci uygulamaları** > **uygulama seçmeli silme** bölmesinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
+1. **Uygulamalar** > **uygulama seçmeli silme** bölmesinde, isteklerinizin kullanıcılara göre gruplandırılmış listesini görebilirsiniz. Sistem, cihazda çalışan her korumalı uygulama için bir temizleme isteği oluşturduğundan, bir kullanıcı için birden çok istek görebilirsiniz. Durum, temizleme isteğinin **bekliyor**, **başarısız** veya **başarılı** olup olmadığını gösterir.
 
     ![Uygulama seçmeli silme bölmesinde temizleme isteği durumunun ekran görüntüsü](./media/apps-selective-wipe/wipe-request-status-1.png)
 

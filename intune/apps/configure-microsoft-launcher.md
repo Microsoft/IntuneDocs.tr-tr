@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497969"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563960"
 ---
 # <a name="configure-microsoft-launcher"></a>Microsoft Launcher’ı yapılandırma
 
@@ -33,7 +33,7 @@ Android kurumsal tam yönetilen cihazlarda, Başlatıcı, Kuruluş BT yöneticil
 
 ## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>Microsoft yönetilen giriş ekranı uygulamasını yapılandırma 
 
-Azure portal ' de Intune konsoluna gidin ve **istemci uygulamaları** > **uygulama yapılandırma ilkeleri**' ne gidin. **Android** çalıştıran **yönetilen cihazlar** için bir yapılandırma ilkesi ekleyin ve Ilişkili uygulama olarak **Microsoft başlatıcısı** ' nı seçin. Kullanılabilir farklı yönetilen giriş ekranı ayarlarını yapılandırmak için **yapılandırma ayarları** ' na tıklayın. 
+[Microsoft Endpoint Manager yönetim merkezine](https://go.microsoft.com/fwlink/?linkid=2109431) gidin ve **uygulama yapılandırma ilkeleri** > **uygulamalar** ' ı seçin. **Android** çalıştıran **yönetilen cihazlar** için bir yapılandırma ilkesi ekleyin ve Ilişkili uygulama olarak **Microsoft başlatıcısı** ' nı seçin. Kullanılabilir farklı yönetilen giriş ekranı ayarlarını yapılandırmak için **yapılandırma ayarları** ' na tıklayın. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Yapılandırma ayarları biçimi seçme 
 
@@ -63,7 +63,7 @@ Aşağıdaki tabloda, Microsoft başlatıcısı kullanılabilir yapılandırma a
 |    Cihaz duvar kağıdını ayarla    |    Dize    |    değer    |    Duvar kağıdı olarak ayarlamak istediğiniz görüntünün URL 'sini girerek tercih ettiğiniz bir duvar kağıdını ayarlamanıza olanak sağlar.<br><br>JSON anahtar adı:<br>`com.microsoft.launcher.Wallpaper.URL`    |
 |    Cihaz duvar kağıdı kullanıcı değişikliğine Izin verildi    |    Bool    |    True    |    Cihazın duvar kağıdını ayarla ayarının Son Kullanıcı tarafından değiştirilip değiştirilemeyeceğini belirtmenize olanak tanır.<ul><li>**True**olarak ayarlanırsa, ilkedeki duvar kağıdı yalnızca ilk dağıtım için zorunlu kılınır. Daha sonra, Kullanıcı yapmış olabileceği değişikliklere göre ilke zorlanmaz.</li><li>**False**olarak ayarlanırsa, bu duvar kağıdı her eşitlemede zorlanır.</li></ul><br>JSON anahtar adı:<br>`com.microsoft.launcher.Wallpaper.URL.UserChangeAllowed`        |
 |    Akış etkinleştir    |    Boole değeri    |    True    |    Kullanıcı ana ekranda sağa doğru geldiğinde, cihazda Başlatıcı akışını etkinleştirmenizi sağlar.<ul><li>**True**olarak ayarlanırsa akış etkinleştirilir.</li><li>**False**olarak ayarlanırsa akış devre dışı bırakılır.</li></ul><br>JSON anahtar adı:<br>`com.microsoft.launcher.Feed.Enabled`    |
-|    Akış etkinleştirme kullanıcı değişikliğine Izin verildi    |    Boole değeri    |    True    |     **Akış etkinleştirme** ayarının Son Kullanıcı tarafından değiştirilip değiştirilemeyeceğini belirtmenize olanak tanır.<ul><li>**True**olarak ayarlanırsa, akış yalnızca ilk dağıtım için zorlanır. Daha sonra, Kullanıcı yapmış olabileceği değişikliklere göre ilke zorlanmaz.</li><li>**False**olarak ayarlanırsa, akış her eşitlemede zorlanır.</li></ul><br>JSON anahtar adı: `com.microsoft.launcher.Feed.Enabled.UserChangeAllowed`    |
+|    Akış etkinleştirme kullanıcı değişikliğine Izin verildi    |    Boole değeri    |    True    |     **Akış etkinleştirme** ayarının Son Kullanıcı tarafından değiştirilip değiştirilemeyeceğini belirtmenize olanak tanır.<ul><li>**True**olarak ayarlanırsa, akış yalnızca ilk dağıtım için zorlanır. Daha sonra, Kullanıcı yapmış olabileceği değişikliklere göre ilke zorlanmaz.</li><li>**False**olarak ayarlanırsa, akış her eşitlemede zorlanır.</li></ul><br>JSON anahtar adı:`com.microsoft.launcher.Feed.Enabled.UserChangeAllowed`    |
 
 ## <a name="enter-json-data"></a>JSON verilerini girin
 
@@ -75,8 +75,8 @@ Yapılandırma Tasarımcısı tablosunda (yukarıda) listelenen yapılandırıla
 
 |    Yapılandırma Anahtarı    |    Değer türü    |    Varsayılan değer    |    Description     |
 |----------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Izin verilen uygulamaları ayarla<br>JSON anahtarı: `com.microsoft.launcher.HomeScreen.Applications`    |    Paketleme Learray    | Bkz. [izin verilen uygulamaları ayarla](configure-microsoft-launcher.md#set-allow-listed-applications)</sup>    |    , Cihazda yüklü uygulamalar arasından giriş ekranında görünür olan uygulama kümesini tanımlamanızı sağlar. Uygulamaları, görünür hale getirmek istediğiniz uygulamaların uygulama paketi adını girerek tanımlayabilirsiniz. Örneğin, `com.android.settings` ayarları giriş ekranında erişilebilir hale getirir. Bu bölümde izin verilen uygulamaların, ana ekranda görünür olması için cihazda zaten yüklü olması gerekir.<p>Özelliklerinin<ul><li>**Paket:** Uygulama paketi adı</li><li>**Sınıf:** Belirli bir uygulama sayfasına özgü olan uygulama etkinliği. Bu değer boşsa varsayılan uygulama sayfasını kullanır.</li></ul>      |
-|    Ana ekran uygulama sırası<br>JSON anahtarı: `com.microsoft.launcher.HomeScreen.AppOrder`    |    Paketleme Learray    |    Bkz: [giriş ekranı uygulama sırası](configure-microsoft-launcher.md#home-screen-app-order)      |    Ana ekranda uygulama sırasını belirtmenize izin verir.<p>Özelliklerinin<br><ul><li>**Şunu yazın:** Desteklenen tek tür `application` ' dir.</li><li>**Konum:** Ana ekrandaki uygulama simge yuvası. Bu, sol üstteki konum 1 ' den başlar ve yukarıdan aşağıya doğru aşağı doğru ilerler.</li><li>**Paket:** Uygulama paketi adı.</li><li>**Sınıf:** Belirli bir uygulama sayfasına özgü olan uygulama etkinliği. Varsayılan uygulama sayfası, bu değer boşsa kullanılacaktır.</li></ul>    |
+|    Izin verilen uygulamaları ayarla<br>JSON anahtarı:`com.microsoft.launcher.HomeScreen.Applications`    |    Paketleme Learray    | Bkz. [izin verilen uygulamaları ayarla](configure-microsoft-launcher.md#set-allow-listed-applications)</sup>    |    , Cihazda yüklü uygulamalar arasından giriş ekranında görünür olan uygulama kümesini tanımlamanızı sağlar. Uygulamaları, görünür hale getirmek istediğiniz uygulamaların uygulama paketi adını girerek tanımlayabilirsiniz; Örneğin, `com.android.settings`, ana ekranda ayarları erişilebilir hale getirir. Bu bölümde izin verilen uygulamaların, ana ekranda görünür olması için cihazda zaten yüklü olması gerekir.<p>Özelliklerinin<ul><li>**Paket:** Uygulama paketi adı</li><li>**Sınıf:** Belirli bir uygulama sayfasına özgü olan uygulama etkinliği. Bu değer boşsa varsayılan uygulama sayfasını kullanır.</li></ul>      |
+|    Ana ekran uygulama sırası<br>JSON anahtarı: `com.microsoft.launcher.HomeScreen.AppOrder`    |    Paketleme Learray    |    Bkz: [giriş ekranı uygulama sırası](configure-microsoft-launcher.md#home-screen-app-order)      |    Ana ekranda uygulama sırasını belirtmenize izin verir.<p>Özelliklerinin<br><ul><li>**Şunu yazın:** Desteklenen tek tür `application`.</li><li>**Konum:** Ana ekrandaki uygulama simge yuvası. Bu, sol üstteki konum 1 ' den başlar ve yukarıdan aşağıya doğru aşağı doğru ilerler.</li><li>**Paket:** Uygulama paketi adı.</li><li>**Sınıf:** Belirli bir uygulama sayfasına özgü olan uygulama etkinliği. Varsayılan uygulama sayfası, bu değer boşsa kullanılacaktır.</li></ul>    |
 
 ### <a name="set-allow-listed-applications"></a>İzin verilen uygulamaları ayarla
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585408"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563712"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -31,10 +31,9 @@ ms.locfileid: "72585408"
 
 Intune, yönettiğiniz uygulamanın özelliklerini izlemeniz ve uygulama atama durumunu yönetmeniz için birkaç yol sağlar.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. Menünün **Yönet** bölümünde **Uygulamalar**’ı seçin.
-5. Uygulama listesinde, izlenecek uygulamayı seçin. Cihaz durumuna ve kullanıcı durumuna genel bakışı içeren uygulama bölmesini göreceksiniz.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** > **uygulamalar** ' ı seçin.
+3. Uygulama listesinde, izlenecek uygulamayı seçin. Cihaz durumuna ve kullanıcı durumuna genel bakışı içeren uygulama bölmesini göreceksiniz.
 
 > [!NOTE]
 > **Kullanılabilir** olarak dağıtılan Android Mağazası uygulamaları yükleme durumlarını bildirmez.
@@ -52,7 +51,7 @@ Uygulama bölmesinde, ortamınızdaki bir uygulamanın durumu hakkındaki ayrın
 |------------------------|------------------------------------------------------------------|
 | **Yayımcı**          | Uygulamanın yayımcısı.                                            |
 | **İşletim Sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
-| **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat. <b>**Note**: Bu tarih değeri, bir BT Yöneticisi uygulama meta verilerini değiştirdiğinde, uygulama kategorisini veya uygulama açıklamasını değiştirme gibi güncelleştirilir.                        |
+| **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat. <b>**Note**: Bu tarih değeri, bir BT Yöneticisi uygulama meta verilerini değiştirdiğinde (uygulama kategorisi veya uygulama açıklaması gibi) güncelleştirilir.                        |
 | **Atanan**           | Uygulamanın atanıp atanmadığı (**Evet** veya **Hayır**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Cihaz ve kullanıcı durum grafikleri

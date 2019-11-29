@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712929"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563595"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune’a yerleşik uygulama ekleme
 
@@ -37,24 +37,20 @@ Intune konsolunun önceki sürümlerinde Intune, Outlook ve OneDrive gibi varsay
 ## <a name="add-a-built-in-app"></a>Yerleşik uygulama ekleme
 
 Microsoft Intune’da mümkün olan uygulamalara yerleşik uygulama eklemek için şunları yapın:
-1. Azure portalında oturum açın.
-2. **Diğer Hizmetler** > **İzleme + Yönetim** > **Intune**’u seçerek Microsoft Intune bölmesini görüntüleyin.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** bölmesinde **Yönet** altında **Uygulamalar**’ı seçin.
-5. **Ekle**’yi seçin.
-6. Uygulama **Ekle** bölmesindeki **Uygulama türü** listesinde **Yerleşik uygulama**’yı seçin.
-7. **Uygulama seç**’e tıklayın.
-8. **Yerleşik uygulama** bölmesinde dahil etmek istediğiniz uygulamaları seçin.
-9. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. Uygulama **Ekle** bölmesindeki **Uygulama türü** listesinde **Yerleşik uygulama**’yı seçin.
+4. **Uygulama seç**’e tıklayın.
+5. **Yerleşik uygulama** bölmesinde dahil etmek istediğiniz uygulamaları seçin.
+6. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.
 
 
 ## <a name="configure-app-information"></a>Uygulama bilgilerini yapılandırma
 
 Yerleşik uygulama hakkındaki bilgileri değiştirebilirsiniz. Bu bilgiler, uygulamayı Intune’da bulmanıza yardımcı olur ve kullanıcıların uygulamayı Şirket Portalı’nda bulması kolaylaşır.
-1. **İstemci uygulamalar - Uygulamalar** bölmesinde değiştirmek istediğiniz yerleşik uygulamayı seçin.  
-    Yerleşik uygulamaya ait bir bölme görüntülenecektir.
-2. **Yönet** altında **Özellikler** seçeneğine tıklayın.
-3. Yerleşik uygulama bilgilerini değiştirmek için **Yapılandır** seçeneğine tıklayın.
+1. **Tüm uygulamalar** > **uygulamalar** ' ı seçin ve değiştirmek istediğiniz yerleşik uygulamayı seçin.  
+   Yerleşik uygulamaya ait bir bölme görüntülenecektir.
+2. **Yapılandır** > **Özellikler** ' i seçin.
 4. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri değiştirebilirsiniz:
     - **Ad**: Yerleşik uygulamanın Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm adların benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
     - **Açıklama**: Uygulama için bir açıklama girin. 

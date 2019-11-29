@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754413"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563892"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -58,15 +58,15 @@ Microsoft Edge, Intune ilkesi ile hedeflenmediğinde, kullanıcılar, Office uyg
 Kullanıcılarınıza yalnızca Microsoft Edge aracılığıyla şirket içeriğine erişmek üzere yönlendirmek için Azure AD koşullu erişimi kullanabilirsiniz. Bu, mobil tarayıcı erişimini Azure AD ile bağlantılı Web uygulamalarına İlkeyle korunan Microsoft Edge 'e kısıtlar. Bu, Safari veya Chrome gibi korumasız tüm tarayıcılardan erişimi engeller. Exchange Online ve SharePoint Online gibi Azure kaynaklarına koşullu erişim, Microsoft 365 Yönetim Merkezi ve hatta [azure ad uygulama ara sunucusu](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)aracılığıyla dış kullanıcılara kullanıma sunulacak şirket içi siteler uygulayabilirsiniz.
 
 Azure AD bağlantılı web uygulamalarının iOS ve Android 'de Microsoft Edge 'i kullanacak şekilde kısıtlamak için:
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. Intune düğümü altında **koşullu erişim** > **Yeni ilke**' yi seçin.
-3. Dikey pencerenin **erişim denetimleri** bölümünden **ver** ' i seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. Intune düğümü altında, **koşullu erişim** > **Yeni ilke**' yi seçin.
+3. Bölmenin **erişim denetimleri** bölümünden **ver** ' i seçin.
 4. **Onaylı istemci uygulaması gerektir**’e tıklayın.
-5. **Izin ver** dikey penceresinde **Seç ' i** seçin. Bu ilke, yalnızca Intune Managed Browser uygulaması tarafından erişilebilir olmasını istediğiniz bulut uygulamalarına atanmalıdır.
+5. **İzin** bölmesinde **Seç ' i** seçin. Bu ilke, yalnızca Intune Managed Browser uygulaması tarafından erişilebilir olmasını istediğiniz bulut uygulamalarına atanmalıdır.
 
     ![Koşullu erişim ilkesi-verme ekran görüntüsü](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. Atamalar bölümünde,  > **istemci uygulaması** **Koşulları**' nı seçin. **İstemci uygulamaları** dikey penceresi görünür.
+6. Atamalar bölümünde, **uygulamalar** > **koşullar** ' ı seçin. **Uygulamalar** bölmesi görüntülenir.
 7. **Yapılandır**' ın altında, ilkeyi belirli istemci uygulamalarına uygulamak için **Evet** ' i seçin.
 8. **Tarayıcı**’nın bir istemci uygulaması olarak seçildiğini doğrulayın.
 
@@ -97,29 +97,29 @@ SSO, cihazınızın iOS cihazları için Microsoft Authenticator uygulaması vey
 
 Microsoft Edge için uygulama yapılandırması oluşturmak için:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **İstemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**' yi seçin.
-3. **Yapılandırma ilkesi ekle** dikey penceresinde, uygulama yapılandırma ayarları için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Ekle** > **uygulama yapılandırma ilkeleri** > **uygulamalar** ' ı seçin.
+3. **Yapılandırma Ilkesi Ekle** bölmesinde, uygulama yapılandırma ayarları Için bir **ad** ve isteğe bağlı bir **Açıklama** girin.
 4. **Cihaz kayıt** türü için **Yönetilen uygulamalar**’ı seçin.
-5. **Gerekli uygulamayı Seç ' i**seçin. Ardından, **hedeflenen uygulamalar** dikey penceresinde iOS için **Managed Browser** veya **kenarı** , Android için veya her ikisi için de seçin.
-6. **Yapılandırma Ilkesi Ekle** dikey penceresine dönmek için **Tamam ' ı** seçin.
-7. **Yapılandırma ayarlarını** seçin. **Yapılandırma** dikey penceresinde, Microsoft Edge yapılandırmalarını sağlamak için anahtar ve değer çiftleri tanımlarsınız. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
+5. **Gerekli uygulamayı Seç ' i**seçin. Ardından, **hedeflenen uygulamalar** bölmesinde iOS için **Managed Browser** veya **kenarı** , Android için veya her ikisi için de seçin.
+6. **Yapılandırma Ilkesi Ekle** bölmesine dönmek için **Tamam ' ı** seçin.
+7. **Yapılandırma ayarlarını** seçin. **Yapılandırma** bölmesinde, Microsoft Edge yapılandırmalarını sağlamak için anahtar ve değer çiftlerini tanımlarsınız. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
 
     > [!NOTE]
     > Microsoft Edge, Managed Browser ile aynı anahtar ve değer çiftini kullanır. Android 'de, uygulama yapılandırma ilkelerinin etkili olabilmesi için Microsoft Edge 'in uygulama koruma ilkelerini hedeflemeli olması gerekir.
 
 8. İşiniz bittiğinde **Tamam**' ı seçin.
-9. **Yapılandırma ilkesi ekle** dikey penceresinde, **Ekle**’yi seçin.<br>
-    Yeni yapılandırma oluşturulur ve **uygulama yapılandırması** dikey penceresinde görüntülenir.
+9. **Yapılandırma Ilkesi Ekle** bölmesinde **Ekle**' yi seçin.<br>
+    Yeni yapılandırma oluşturulur ve **uygulama yapılandırma** bölmesinde görüntülenir.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Oluşturduğunuz yapılandırma ayarlarını atama 
 
 Ayarları Azure AD 'deki Kullanıcı gruplarına atarsınız. Bu kullanıcı hedeflenen korumalı tarayıcı uygulamasını yüklemişse uygulama belirttiğiniz ayarlarla yönetiliyordur.
 
-1. Intune mobil uygulama yönetimi panosunun **istemci uygulamaları** dikey penceresinde, **uygulama yapılandırma ilkeleri**' ni seçin.
+1. Intune mobil uygulama yönetimi panosunun **uygulamalar** bölmesinde **uygulama yapılandırma ilkeleri**' ni seçin.
 2. Uygulama yapılandırmaları listesinden atamak istediğiniz birini seçin.
-3. Sonraki dikey pencerede **atamalar**' ı seçin.
-4. **Atamalar** dikey penceresinde, uygulama yapılandırmasını atamak ISTEDIĞINIZ Azure AD grubunu seçin ve ardından **Tamam**' ı seçin.
+3. Sonraki bölmede, **atamalar**' ı seçin.
+4. **Atamalar** bölmesinde, uygulama yapılandırmasını atamak ISTEDIĞINIZ Azure AD grubunu seçin ve ardından **Tamam**' ı seçin.
 
 ## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Kullanıcıları Intune Managed Browser yerine Microsoft Edge 'e yönlendirin 
 
@@ -181,7 +181,7 @@ Bir giriş sayfası kısayolunu yapılandırmak için aşağıdaki anahtar/değe
 
 |    Anahtar    |    Değer    |
 |-------------------------------------------------------------------|-------------|
-|    com. Microsoft. Intune. mam. managedbrowser. giriþ   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örnek:**  < `https://www.bing.com` >
+|    com. Microsoft. Intune. mam. managedbrowser. giriþ   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örnek:**  <`https://www.bing.com`>
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Microsoft Edge 'de yeni sekme sayfaları için kuruluşunuzun logosunu ve marka rengini yapılandırın
 
@@ -231,7 +231,7 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
 
 |    Anahtar    |    Değer    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Aşağıdakilerden birini seçin:<p>1. izin verilen URL 'Leri belirtin (yalnızca bu URL 'Lere izin verilir; başka sitelere erişilemez):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Engellenen URL 'Leri belirtin (diğer tüm sitelere erişilebilir):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Bir anahtara karşılık gelen değer bir URL listesidir. Tek bir değer olarak izin vermek veya engellemek istediğiniz tüm URL 'Leri `|` karakteriyle ayırarak girersiniz.<br>**Örnekler**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    Aşağıdakilerden birini seçin:<p>1. izin verilen URL 'Leri belirtin (yalnızca bu URL 'Lere izin verilir; başka sitelere erişilemez):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Engellenen URL 'Leri belirtin (diğer tüm sitelere erişilebilir):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Bir anahtara karşılık gelen değer bir URL listesidir. İzin vermek veya engellemek istediğiniz tüm URL 'Leri, kanal `|` karakteriyle ayırarak tek bir değer olarak girersiniz.<br>**Örnekler**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>İzin verilen ve engellenen site listesi için URL biçimleri 
 İzin verilen/Engellenen siteler listelerinizi oluşturmak için çeşitli URL biçimleri kullanabilirsiniz. Bu izin verilen desenler aşağıdaki tabloda ayrıntılı olarak verilmiştir. Başlamadan önce bazı notlar: 

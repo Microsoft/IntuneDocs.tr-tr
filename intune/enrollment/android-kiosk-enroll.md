@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390714"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563868"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android Kurumsal ayrılmış cihazları için Intune kaydını ayarlama
 
@@ -59,7 +59,7 @@ Android Kurumsal ayrılmış cihaz yönetimini ayarlamak için aşağıdaki adı
 
 Ayrılmış cihazlarınızı kaydedebilmek için bir kayıt profili oluşturmalısınız. Profil oluşturulduktan sonra size bir kayıt belirteci (rastgele dize) ve QR kodu sağlar. Cihazın Android işletim sistemi ve cihazın sürümüne bağlı olarak [ayrılmış cihazı kaydetmek](#enroll-the-dedicated-devices) için belirteci veya QR kodunu kullanabilirsiniz.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) ' nde oturum açın ve **cihaz kaydı** > **Android kaydı** > **şirkete ait adanmış cihazlar**' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) ' nde oturum açın ve **cihazlar** > **Android** > Android **kaydı** > **şirkete ait adanmış cihazlar**' ı seçin.
 2. **Oluştur**’u seçin ve gerekli alanları doldurun.
     - **Ad**: Profili dinamik cihaz grubuna atarken kullanacağınız bir ad yazın.
     - **Belirteç sona erme tarihi**: Belirteç süresinin dolduğu tarih. Google, en fazla 90 günü kabul eder.
@@ -92,7 +92,7 @@ Uygulama ve ilkeleri, atanmış veya dinamik cihaz gruplarına hedefleyebilirsin
 
 Bir belirteci/QR kodunu değiştirmek veya iptal etmek, önceden kaydedilmiş cihazları etkilemez.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) ' nde oturum açın ve **cihaz kaydı** > **Android kaydı** > **Coporate adanmış cihazlar**' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) ' nde oturum açın ve **cihazlar** > **Android** > **Android kayıt** > **ortak adanmış cihazlar**' ı seçin.
 2. Çalışmak istediğiniz profili seçin.
 3. **Belirteç**’i seçin.
 4. Belirteci değiştirmek için **Belirteci değiştir**’i seçin.

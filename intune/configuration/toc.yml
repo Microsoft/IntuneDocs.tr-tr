@@ -14,7 +14,11 @@
     - name: Profil oluşturma
       href: device-profile-create.md
     - name: Windows’ta yönetim şablonları
-      href: administrative-templates-windows.md
+      items:
+        - name: Windows’ta yönetim şablonları
+          href: administrative-templates-windows.md
+        - name: Yönetim şablonlarını kullanarak Office’i güncelleştirme
+          href: administrative-templates-update-office.md
     - name: iOS ve macOS üzerinde cihaz özellikleri
       href: device-features-configure.md
     - name: Cihaz ayarlarını ve özelliklerini kısıtlama
@@ -47,6 +51,8 @@
       items:
         - name: Önceden paylaşılan anahtar ile Wi-Fi
           href: wi-fi-profile-shared-key.md
+        - name: Wi-Fi sorunlarını giderme
+          href: troubleshoot-wi-fi-profiles.md
     - name: macOS üzerinde uzantılar
       href: kernel-extensions-overview-macos.md
     - name: Eğitim Sınav Zamanı uygulaması

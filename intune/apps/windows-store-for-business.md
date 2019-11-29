@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04bc1fac8d3362a173c4777cdf5228fed6b6349d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712530"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562504"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Toplu satın alınan uygulamaları Microsoft Store Iş için Microsoft Intune ile yönetme
 
@@ -51,7 +51,7 @@ ms.locfileid: "73712530"
 - Bu özelliğin kullanılabilmesi için cihazların Active Directory Etki Alanı Hizmetleri'ne veya çalışma alanına katılmış olması gerekir.
 - Kaydedilen cihazlar Windows 10’un 1511 sürümünü veya sonraki bir sürümü kullanıyor olmalıdır.
 
-Ayrıca, İş İçin Microsoft Store'dan eşitlenen ilgili kümeler ve Çevrimdışı Lisanslı uygulamalar artık kullanıcı arabiriminde tek bir uygulama girişinde birleştirilecektir. Tek paketlerden alınan tüm dağıtım ayrıntıları, tek girişe geçirilecektir. Azure portalında ilgili kümeleri görüntülemek için **İstemci uygulamaları** dikey penceresinden **Uygulama lisansları**’nı seçin.
+Ayrıca, İş İçin Microsoft Store'dan eşitlenen ilgili kümeler ve Çevrimdışı Lisanslı uygulamalar artık kullanıcı arabiriminde tek bir uygulama girişinde birleştirilecektir. Tek paketlerden alınan tüm dağıtım ayrıntıları, tek girişe geçirilecektir. Azure portal ilgili kümeleri görüntülemek için **uygulamalar** bölmesinden **uygulama lisansları** ' nı seçin.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>İş İçin Microsoft Mağazası hesabınızı Intune’la ilişkilendirme
 Intune konsolunda eşitlemeyi etkinleştirmek için, önce mağaza hesabınızı yönetim aracı olarak Intune’u kullanacak şekilde yapılandırmanız gerekir:
@@ -66,17 +66,16 @@ Artık devam edebilir ve Intune konsolunda eşitlemeyi ayarlayabilirsiniz.
 
 ## <a name="configure-synchronization"></a>Eşitlemeyi yapılandırma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-1. **İstemci uygulamaları** bölmesinde **Kurulum** > **İş İçin Microsoft Store**’u seçin.
-2. **Etkinleştir**'e tıklayın.
-3. Henüz yapmadıysanız İş İçin Microsoft Mağazası'na kaydolma bağlantısına tıklayın ve daha önce ayrıntı olarak açıklandığı gibi hesabınızı ilişkilendirin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Microsoft Store for Business** > **bağlayıcı ve belirteçler** > **Kiracı Yönetimi** ' ni seçin.
+3. **Etkinleştir**'e tıklayın.
+4. Henüz yapmadıysanız İş İçin Microsoft Mağazası'na kaydolma bağlantısına tıklayın ve daha önce ayrıntı olarak açıklandığı gibi hesabınızı ilişkilendirin.
 5. **Dil** açılan listesinden İş için Microsoft Store’dan alınan uygulamaların Azure portalında görüntülendiği dili seçin. Uygulamalar, görüntülendikleri dilden bağımsız olarak, mevcut olması durumunda son kullanıcının dilinde yüklenir.
 6. Microsoft Mağazası’ndan satın aldığınız uygulamaları Intune’a almak için **Eşitle**’ye tıklayın.
 
 ## <a name="synchronize-apps"></a>Uygulamaları eşitleme
 
-1. **İstemci uygulamaları** iş yükünde **Kurulum** > **İş İçin Microsoft Store**’u seçin.
+1. **Microsoft Store for Business** > **bağlayıcı ve belirteçler** > **Kiracı Yönetimi** ' ni seçin.
 2. Microsoft Mağazası’ndan satın aldığınız uygulamaları Intune’a almak için **Eşitle**’ye tıklayın.
 
 > [!NOTE]

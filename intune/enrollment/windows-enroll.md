@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
-ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
+ms.openlocfilehash: 5f12feca6d43a4194e7c60639a93747c7f389f93
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74098188"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558204"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
@@ -102,7 +102,7 @@ EnterpriseEnrollment-s.manage.microsoft.com, kayıt için tercih edilen FQDN de�
 CNAME yapılandırması haricinde bir yöntem kullanılması desteklenmez. Örneğin enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc bağlantısının enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc veya manage.microsoft.com/EnrollmentServer/Discovery.svc is adresine yönlendirilmesi desteklenmez.
 
 **2. Adım: CNAME'i doğrulama** (isteğe bağlı)<br>
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Windows kaydı** > **CNAME doğrulaması** > **cihaz kaydı** ' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **Windows > ** **windows kaydı** > **CNAME doğrulaması** > **cihazlar** ' ı seçin.
 2. **Etki Alanı** kutusuna şirket Web sitesini girin ve ardından **Test Et**'i seçin.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Kullanıcılara Windows cihazlarını nasıl kaydedeceklerini anlatma

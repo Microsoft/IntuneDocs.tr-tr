@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584989"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564261"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -34,7 +34,7 @@ Microsoft Intune içindeki uygulama yapılandırma ilkeleri, yönetilen Android 
 > [!NOTE]  
 > Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın uygulama yapılandırma ilkelerini destekleyip desteklemediğini görmek için uygulama geliştiricisine danışın.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'Da, **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** >  **Ekle**' yi seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'Da, **uygulama yapılandırma Ilkeleri** ** >  >  ** **Ekle**' yi seçin.
 2. Aşağıdaki özellikleri girin:
 
     - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı **tüm şirket Için Android kurumsal dokuz iş uygulaması ilkesidir**.
@@ -48,7 +48,7 @@ Microsoft Intune içindeki uygulama yapılandırma ilkeleri, yönetilen Android 
     - [Yapılandırma tasarımcısı](#use-the-configuration-designer)
     - [JSON düzenleyicisi](#enter-the-json-editor)
 
-5. **Tamam** > **Ekle**' yi seçin.
+5. **Ekle** > **Tamam ' ı** seçin.
 
 ## <a name="use-the-configuration-designer"></a>Yapılandırma tasarımcısını kullanma
 
@@ -72,7 +72,7 @@ Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim y
 | AAD cihaz KIMLIĞI | dc0dc142-11d8-4b12-bfea-cae2a8514c82 |
 | Hesap kimliği | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
 | Intune Cihaz Kimliği | b9841cd9-9843-405f-be28-b2265c59ef97 |
-| Etki Alanı | Contoso.com |
+| Etki Alanı | contoso.com |
 | Mail | john@contoso.com |
 | Kısmi UPN | john |
 | Kullanıcı KIMLIĞI | 3ec2c00f-b125-4519-acf0-302ac3761822 |
@@ -110,7 +110,7 @@ Ayrıca, Android cihaz özelliklerine erişmek için uygulama izinlerini öncede
 
 Örneğin, bir uygulama cihazın mikrofonunu kullanır. Kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'Da, **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** >  **Ekle**' yi seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'Da, **uygulama yapılandırma Ilkeleri** ** >  >  ** **Ekle**' yi seçin.
 2. Aşağıdaki özellikleri girin:
 
     - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı, **tüm şirket Için Android kurumsal istem izinleri uygulama ilkesidir**.
@@ -119,12 +119,12 @@ Ayrıca, Android cihaz özelliklerine erişmek için uygulama izinlerini öncede
     - **Platform**: **Android**' i seçin.
 
 3. **Ilişkili uygulama**' yı seçin. Yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçin. Onaylanan ve Intune ile eşitlenen Android iş profili uygulamaları listesinden seçim yapın.
-4. **Ekle** >  **izinleri** seçin. Listeden, kullanılabilir uygulama izinlerini seçin > **Tamam**' ı seçin.
+4. **Ekle** > **izinleri** seçin. Listeden, kullanılabilir uygulama izinlerini seçin > **Tamam**' ı seçin.
 5. Bu ilkeyle verilecek her izin için bir seçenek belirleyin:
     - **Sor**. Kullanıcıdan kabul etmesini veya reddetmesini isteme.
     - **Otomatik olarak izin ver**. Kullanıcıya bildirmeden otomatik olarak onayla.
     - **Otomatik olarak reddet**. Kullanıcıya bildirmeden otomatik olarak reddet.
-6. Uygulama yapılandırma ilkesini atamak için uygulama yapılandırma ilkesi > **atama** > **Grup Seç**' i seçin. Atanacak Kullanıcı gruplarını seçin > **seçin**.
+6. Uygulama yapılandırma ilkesini atamak için, uygulama yapılandırma ilkesi > **atama** > **grupları seçin**. Atanacak Kullanıcı gruplarını seçin > **seçin**.
 7. İlkeyi atamak için **Kaydet**’i seçin.
 
 ## <a name="additional-information"></a>Ek bilgiler

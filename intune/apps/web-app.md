@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 997cf043f8ea61133d6e61f4584ad9349aedbf73
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 514977be976c83f5cd8dcb8d56ab5c232ff0d193
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060034"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562472"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune’a web uygulamaları ekleme
 
@@ -41,13 +41,11 @@ Intune, kullanıcının cihazında Web uygulaması için bir kısayol oluşturur
 ## <a name="add-a-web-app-to-intune"></a>Intune’a bir web uygulaması ekleme
 Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
-5. **Uygulamalar** bölmesinde **Ekle**’yi seçin.
-6. **Uygulama ekle** bölmesinde, **Uygulama türü** açılan listesinden **Web bağlantısı** türünü seçin.
-7. **Yapılandır**’ı seçin.
-8. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri ekleyin:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama ekle** bölmesinde, **Uygulama türü** açılan listesinden **Web bağlantısı** türünü seçin.
+4. **Yapılandır**’ı seçin.
+5. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri ekleyin:
     - **Ad**: Şirket portalında görüntülendiği şekliyle uygulamanın adını girin. 
 
         > [!NOTE]
@@ -60,8 +58,8 @@ Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
     - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Bu seçenek uygulama paketini, kullanıcılar uygulamalara göz atarken Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüler.
     - **Bu bağlantının açılabilmesi için bir yönetilen tarayıcı gerektir**: Kullanıcılara, Intune ile yönetilen tarayıcıda açabilecekleri bir web sitesi veya web uygulaması bağlantısı atayın. Bu tarayıcı cihazlarında yüklü olmalıdır.
     - **Logo**: Uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
-9. **Tamam**’ı seçin.
-10. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.
+6. **Tamam**’ı seçin.
+7. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.
 
 > [!Note]
 > Android cihazlarına atanmış web uygulamalarını görüntüleyebilmek için kullanıcıların giriş ekranlarına Intune pencere öğesini eklemeleri gerekir.

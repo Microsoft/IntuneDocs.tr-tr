@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 81a084528fdc500bf9b6de0ca5fa847c2e0b3797
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117887"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563917"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>macOS iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 
@@ -52,7 +52,7 @@ Bu makaledeki bilgiler macOS iş kolu uygulamalarını Microsoft Intune’a ekle
 
 2. İndirilen Aracı yürütülebilir olarak işaretleyin:
    - Terminal uygulamasını başlatın.
-   - Dizini `IntuneAppUtil` ' ın bulunduğu konum olarak değiştirin.
+   - Dizini `IntuneAppUtil` bulunduğu konum olarak değiştirin.
    - Aracı yürütülebilir hale getirmek için aşağıdaki komutu çalıştırın:<br> 
        `chmod +x IntuneAppUtil`
 
@@ -71,11 +71,9 @@ Bu makaledeki bilgiler macOS iş kolu uygulamalarını Microsoft Intune’a ekle
 
 ## <a name="step-1---specify-the-software-setup-file"></a>1\. Adım - Yazılım kurulum dosyasını belirtme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükünde **Yönet** > **Uygulamalar**’ı seçin.
-5. Uygulama listesinin üst kısmında **Ekle**’yi seçin.
-6. **Uygulama Ekle** bölmesinde **İş kolu uygulaması**’nı seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama Ekle** bölmesinde, **uygulama türü**olarak **iş kolu uygulaması** ' nı seçin.
 
 ## <a name="step-2---configure-the-app-package-file"></a>Adım 2 - Uygulama paketi dosyasını yapılandırma
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: def975bc646a96a77646ac9103079b1f008f9c28
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164706"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564068"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme 
 
@@ -72,7 +72,7 @@ Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygu
 
 <sup>1</sup> Android Kurumsal ve Android iş profilleri hakkında daha fazla bilgi için aşağıdaki [Lisanslı uygulamaları anlama](apps-add.md#understanding-licensed-apps) bölümüne bakın.
 
-Microsoft Intune’da, **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçerek bir uygulama ekleyebilirsiniz. **Uygulama ekle** bölmesi görüntülenir ve **Uygulama türü**’nü seçmenize olanak tanır. 
+Microsoft Intune, **tüm uygulamalar** >  > **Ekle**' ye tıklayarak **bir uygulama ekleyebilirsiniz** . **Uygulama ekle** bölmesi görüntülenir ve **Uygulama türü**’nü seçmenize olanak tanır. 
 
 >[!TIP]
 > LOB uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Örneğin bir iOS LOB uygulaması yüklemek için **Uygulama ekle** bölmesinde **Uygulama türü** olarak **İş kolu uygulaması**’nı seçersiniz. Ardından uygulama paket dosyası uzantısını (.ipa) seçersiniz. Bu tür uygulamalar genellikle şirket içinde yazılanlardır.
@@ -159,9 +159,8 @@ Uygulama kategorileri, kullanıcıların uygulamaları şirket portalında daha 
 
 Uygulamayı Intune’a eklediğinizde, size istediğiniz kategoriyi belirtme seçeneği sağlanır. Uygulama eklemek ve kategorileri atamak için, platforma özgü konu başlıklarını kullanın. Kendi kategorilerinizi oluşturmak ve düzenlemek için aşağıdaki yordamı kullanın:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükünde, **Kurulum** altında **Uygulama kategorileri**’ni seçin.  
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+3. **Uygulama kategorilerini** > **uygulamalar** ' ı seçin.  
     **Uygulama kategorileri** bölmesi, mevcut kategoriler listesini görüntüler. 
 5. Aşağıdakilerden birini yapın:
     - Bir kategori eklemek için **Kategori ekle** bölmesinde **Ekle**’yi seçin ve kategori için bir ad girin.  

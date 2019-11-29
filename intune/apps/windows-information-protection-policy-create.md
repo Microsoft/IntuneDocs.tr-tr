@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a2575c0d4e6cdcfdffe09e37880f56647bc835
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d1a8ee3f6d5eb190fb2ee252dfb5f6c23a1cf16
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496440"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563765"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -71,53 +71,51 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 > Intune için WIP ilkeleri oluşturma hakkında, kullanılabilecek ayarlar ve bunların nasıl yapılandırıldığı dahil konuyla ilgili bilgiler için Windows Güvenlik belgeleri kitaplığındaki [Microsoft Intune için Azure portalını kullanarak MAM ile Windows Bilgi Koruması (WIP) ilkesi oluşturma](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) konusuna bakın. 
 
 
-1. [Azure portalı](https://portal.azure.com)’nda oturum açın.
-2. **Tüm Hizmetler** > **Intune**’u seçin.
-3. **Microsoft Intune** dikey penceresinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
-5. **İlke ekle** dikey penceresini görüntülemek için **İlke ekle**’yi seçin.
-6. Aşağıdaki değerleri ekleyin:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Ilke oluştur** > **uygulama koruma ilkeleri** > **uygulamalar** ' ı seçin.
+3. Aşağıdaki değerleri ekleyin:
     - **Adı:** Yeni ilkeniz için bir ad yazın (gereklidir).
     - **Açıklama:** (İsteğe bağlı) Bir açıklama yazın.
     - **Platform:** Uygulama koruma ilkeniz için desteklenen platform olarak **Windows 10**’u seçin.
     - **Kayıt durumu:** İlkeniz için kayıt durumu olarak **Kayıt olmadan**’ı seçin.
-7. **Oluştur**’u seçin. İlke oluşturulur ve **Uygulama koruma ilkeleri** dikey penceresindeki tabloda görüntülenir.
+4. **Oluştur**’u seçin. İlke oluşturulur ve **Uygulama koruma ilkeleri** bölmesindeki tabloda görüntülenir.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Korunan uygulamalar listenize önerilen uygulamalar eklemek için
 
-1. **Microsoft Intune** dikey penceresinde **İstemci uygulamaları**’nı seçin.
-2. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
-3. **Uygulama koruma ilkeleri** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. **Intune Uygulama Koruması** dikey penceresi görüntülenir.
-4. **Intune Uygulama Koruması** dikey penceresinden **Korunan uygulamalar**’ı seçin. **Korunan uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
-5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Uygulama koruma ilkeleri** > **uygulamalar** ' ı seçin.
+3. **Uygulama koruma ilkeleri** bölmesinde, değiştirmek istediğiniz ilkeyi seçin. **Intune uygulama koruması** bölmesi görüntülenir.
+4. **Intune uygulama koruması** bölmesinden **korumalı uygulamalar** ' ı seçin. **Korunan uygulamalar** bölmesi, bu uygulama koruma ilkesi için listede zaten bulunan tüm uygulamaları gösteren açılır.
+5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Bölmenin en üstündeki liste, liste filtresini değiştirmenize izin verir.
 6. Şirket verilerinize erişmesine izin vermek istediğiniz her uygulamayı seçin.
-7. **Tamam**'ı tıklatın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
+7. **Tamam**'ı tıklatın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
 8. **Kaydet**'e tıklayın.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir Store uygulaması eklemek için
 
 **Bir Mağaza uygulaması eklemek için**
-1. **Microsoft Intune** dikey penceresinde **İstemci uygulamaları**’nı seçin.
-2. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
-3. **Uygulama koruma ilkeleri** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. **Intune Uygulama Koruması** dikey penceresi görüntülenir.
-4. **Intune Uygulama Koruması** dikey penceresinden **Korunan uygulamalar**’ı seçin. **Korunan uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
-5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
+
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Uygulama koruma ilkeleri** > **uygulamalar** ' ı seçin.
+3. **Uygulama koruma ilkeleri** bölmesinde, değiştirmek istediğiniz ilkeyi seçin. **Intune uygulama koruması** bölmesi görüntülenir.
+4. **Intune uygulama koruması** bölmesinden **korumalı uygulamalar** ' ı seçin. **Korunan uygulamalar** bölmesi, bu uygulama koruma ilkesi için listede zaten bulunan tüm uygulamaları gösteren açılır.
+5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Bölmenin en üstündeki liste, liste filtresini değiştirmenize izin verir.
 6. Listeden **Mağaza uygulamaları**’nı seçin.
 7. **Ad**, **Yayımcı**, **Ürün Adı** ve **Eylem** için değerleri girin. Uygulamanın şirket verilerinize erişebilmesi için **Eylem** değerini **İzin Ver** olarak ayarladığınızdan emin olun.
-9. **Tamam**'ı tıklatın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
+9. **Tamam**'ı tıklatın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
 10. **Kaydet**'e tıklayın.
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir masaüstü uygulaması eklemek için
 
 **Bir masaüstü uygulaması ekleme**
-1. **Microsoft Intune** dikey penceresinde **İstemci uygulamaları**’nı seçin.
-2. **İstemci uygulamaları** dikey penceresinde **Uygulama koruma ilkeleri**’ni seçin.
-3. **Uygulama koruma ilkeleri** dikey penceresinde değiştirmek istediğiniz ilkeyi seçin. **Intune Uygulama Koruması** dikey penceresi görüntülenir.
-4. **Intune Uygulama Koruması** dikey penceresinden **Korunan uygulamalar**’ı seçin. **Korunan uygulamalar** dikey penceresi açılarak size bu uygulama koruma ilkesi için daha önceden listeye eklenmiş tüm uygulamaları gösterir.
-5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Dikey pencerenin üst kısmındaki liste, liste filtresini değiştirmenize izin verir.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Uygulama koruma ilkeleri** > **uygulamalar** ' ı seçin.
+3. **Uygulama koruma ilkeleri** bölmesinde, değiştirmek istediğiniz ilkeyi seçin. **Intune uygulama koruması** bölmesi görüntülenir.
+4. **Intune uygulama koruması** bölmesinden **korumalı uygulamalar** ' ı seçin. **Korunan uygulamalar** bölmesi, bu uygulama koruma ilkesi için listede zaten bulunan tüm uygulamaları gösteren açılır.
+5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Bölmenin en üstündeki liste, liste filtresini değiştirmenize izin verir.
 6. Listeden **Masaüstü uygulamaları**’nı seçin.
 7. **Ad**, **Yayımcı**, **Ürün Adı**, **Dosya**, **En Düşük Sürüm**, **En Yüksek Sürüm** ve **Eylem** için değerler girin. Uygulamanın şirket verilerinize erişebilmesi için **Eylem** değerini **İzin Ver** olarak ayarladığınızdan emin olun.
-9. **Tamam**'ı tıklatın. **Korunan uygulamalar** dikey penceresi güncelleştirilerek seçilen tüm uygulamaları gösterir.
+9. **Tamam**'ı tıklatın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
 10. **Kaydet**'e tıklayın.
 
 ## <a name="wip-learning"></a>WIP Öğrenme
@@ -150,7 +148,7 @@ WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiket
 
 ### <a name="add-a-protection-mode"></a>Koruma modu ekleme
 
-1. **Uygulama ilkesi** dikey penceresinden, ilkenizin adını, ardından **Gerekli ayarlar**’ı seçin.
+1. **Uygulama ilkesi** bölmesinden, ilkenizin adını seçin, ardından **gerekli ayarlar**' ı seçin.
 
     ![Öğrenme modu bölmesinin ekran görüntüsü](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
 
@@ -160,7 +158,7 @@ WIP’yi kapatmanızdan sonra yerel olarak bağlı sürücülerde WIP ile etiket
 
 1. [Azure portalı](https://portal.azure.com)’nı açın. **Tüm hizmetler**’i seçin. Metin kutusu filtresine **Intune** yazın.
 
-3. **Intune** > **İstemci uygulamaları**’nı seçin.
+3. **Intune** > **uygulamalar**' ı seçin.
 
 4. **Uygulama koruma durumu** > **Raporlar** > **Windows Bilgi Koruması öğrenme**’yi seçin.  
 
@@ -188,9 +186,9 @@ Bu uygulama koruma ilkesi seçeneği, Windows Bilgi Koruması ilkesinin **Geliş
 
 WIP uygulama koruma ilkenizi oluşturduktan sonra, bu ilkeyi MAM’yi kullanarak kuruluşunuza dağıtmanız gerekir.
 
-1. **Uygulama ilkesi** dikey penceresinde, yeni oluşturduğunuz uygulama koruma ilkesini ve **Kullanıcı grupları** > **Kullanıcı grubu ekle**’yi seçin.
+1. **Uygulama ilkesi** bölmesinde, yeni oluşturduğunuz uygulama koruma ilkenizi seçin, kullanıcı **grupları** > Kullanıcı **grubu Ekle**' yi seçin.
 
-    Azure Active Directory’nizdeki tüm güvenlik gruplarından oluşan kullanıcı grupları listesi, **Kullanıcı grubu ekle** dikey penceresinde açılır.
+    Azure Active Directory tüm güvenlik gruplarından oluşan Kullanıcı gruplarının listesi, **Kullanıcı grubu Ekle** bölmesinde açılır.
 
 2. İlkenizin uygulanmasını istediğiniz grubu seçin, ardından ilkeyi dağıtmak için **Seç** öğesini belirleyin.
 

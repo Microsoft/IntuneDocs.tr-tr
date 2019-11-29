@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059715"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563471"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarında PowerShell betikleri kullanma
 
@@ -62,7 +62,7 @@ Intune yönetim uzantısında aşağıdaki Önkoşullar bulunur. Önkoşullar ka
     
     - Kullanıcı, Azure AD hesabını kullanarak cihazda oturum açar ve ardından Intune 'da kaydolur.
 
-  - Configuration Manager ve Intune kullanan ortak yönetilen cihazlar. **Istemci uygulamaları** Iş yükünün **pilot Intune** veya **Intune**olarak ayarlandığından emin olun. Rehberlik için aşağıdaki makalelere bakın: 
+  - Configuration Manager ve Intune kullanan ortak yönetilen cihazlar. **Uygulamalar** Iş yükünün **pilot Intune** veya **Intune**olarak ayarlandığından emin olun. Rehberlik için aşağıdaki makalelere bakın: 
   
     - [Ortak yönetim nedir?](https://docs.microsoft.com/sccm/comanage/overview) 
     - [İstemci uygulamaları iş yükü](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -73,8 +73,8 @@ Intune yönetim uzantısında aşağıdaki Önkoşullar bulunur. Önkoşullar ka
 
 ## <a name="create-a-script-policy-and-assign-it"></a>Betik ilkesi oluşturma ve atama
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **PowerShell betikleri** > **Ekle**'yi seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Ekle** > **PowerShell betikleri** > **cihazları** seçin.
 
     ![Microsoft Intune PowerShell betikleri ekleme ve kullanma](./media/intune-management-extension/mgmt-extension-add-script.png)
 
@@ -134,7 +134,7 @@ Azure portalda kullanıcılar ve cihazlar için PowerShell betiklerinin çalış
 
 ## <a name="intune-management-extension-logs"></a>Intune yönetim uzantısı günlükleri
 
-İstemci makinesindeki Aracı günlükleri genellikle `\ProgramData\Microsoft\IntuneManagementExtension\Logs` ' dır. Bu günlük dosyalarını görüntülemek için [CMTrace. exe](https://docs.microsoft.com/sccm/core/support/tools) ' yi kullanabilirsiniz. 
+İstemci makinesindeki Aracı günlükleri genellikle `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Bu günlük dosyalarını görüntülemek için [CMTrace. exe](https://docs.microsoft.com/sccm/core/support/tools) ' yi kullanabilirsiniz. 
 
 ![Microsoft Intune ekran görüntüsü veya örnek CMTrace Aracısı günlükleri](./media/apps-win32-app-management/apps-win32-app-10.png)  
 
@@ -155,10 +155,10 @@ Azure portalda kullanıcılar ve cihazlar için PowerShell betiklerinin çalış
 
 Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları yapabilirsiniz:
 
-  1. Ayarlar  > **hesap** > **erişimli Iş veya okul** **ayarlarına**gidin.
+  1. **İş veya okula erişim** > **Ayarlar** > **hesaplar** ' a gidin.
   2. Birleşik hesap > **bilgilerini**seçin.
   3. **Gelişmiş tanılama raporu**altında **rapor oluştur**' u seçin.
-  4. Bir Web tarayıcısında `MDMDiagReport` ' yı açın.
+  4. `MDMDiagReport` bir Web tarayıcısında açın.
   5. **Mdmdevicewithaad** özelliğini arayın. Özellik varsa, cihaz otomatik olarak kaydedilir. Bu özellik yoksa, cihaz otomatik olarak kayıtlı değildir.
 
 [Windows 10 otomatik kaydını etkinleştir](../enrollment/windows-enroll.md#enable-windows-10-automatic-enrollment) ayarı, Intune 'da otomatik kayıt yapılandırma adımlarını içerir.
@@ -180,12 +180,12 @@ Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları y
 - Intune yönetim uzantısının `%ProgramFiles(x86)%\Microsoft Intune Management Extension`için yüklendiğini onaylayın.
 - Betikler, Surface Hub 'Larda veya Windows 10 ' da S modunda çalışmaz.
 - Tüm hatalar için günlükleri gözden geçirin. Bkz. [Intune yönetim uzantısı günlükleri](#intune-management-extension-logs) (Bu makalede).
-- Olası izin sorunları için, PowerShell betiğinin özelliklerinin `Run this script using the logged on credentials` olarak ayarlandığından emin olun. Ayrıca, oturum açan kullanıcının betiği çalıştırmak için uygun izinlere sahip olup olmadığını denetleyin.
+- Olası izin sorunları için, PowerShell betiğinin özelliklerinin `Run this script using the logged on credentials`olarak ayarlandığından emin olun. Ayrıca, oturum açan kullanıcının betiği çalıştırmak için uygun izinlere sahip olup olmadığını denetleyin.
 
 - Betik sorunlarını yalıtmak için şunları yapabilirsiniz:
 
   - Cihazlarınızda PowerShell yürütme yapılandırmasını gözden geçirin. Rehberlik için [PowerShell yürütme ilkesine](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) bakın.
-  - Intune yönetim uzantısını kullanarak bir örnek komut dosyası çalıştırın. Örneğin, `C:\Scripts` dizinini oluşturun ve herkese tam denetim sağlayın. Aşağıdaki betiği çalıştırın:
+  - Intune yönetim uzantısını kullanarak bir örnek komut dosyası çalıştırın. Örneğin, `C:\Scripts` dizini oluşturun ve herkese tam denetim verin. Aşağıdaki betiği çalıştırın:
 
     ```powershell
     write-output "Script worked" | out-file c:\Scripts\output.txt
@@ -205,7 +205,7 @@ Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları y
     echo "Forced Fail" | out-file c:\temp\Fail.txt
     ```
 
-    Betik başarılı bir şekilde bildirirse hata çıktısını onaylamak için `AgentExecutor.log` ' a bakın. Betik yürütülüyorsa, uzunluk > 2 olmalıdır.
+    Betik bir başarı bildirirse, hata çıktısını onaylamak için `AgentExecutor.log` bakın. Betik yürütülüyorsa, uzunluk > 2 olmalıdır.
 
   - . Error ve. Output dosyalarını yakalamak için aşağıdaki kod parçacığı, komut dosyasını PSx86 (`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`) olarak çalışır. Gözden geçirmeniz için günlükleri tutar. Betik yürütüldükten sonra Intune yönetim uzantısının günlükleri temizleyeceğini unutmayın:
   

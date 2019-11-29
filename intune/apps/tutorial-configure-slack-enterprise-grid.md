@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496730"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563391"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Öğretici: EMM ve uygulama yapılandırması için Intune 'U kullanmak üzere bolluk yapılandırma
 
@@ -55,7 +55,7 @@ Kuruluşunuzun iOS kullanıcılarının bir EMM sağlayıcısı olarak Intune il
 
 ### <a name="add-slack-for-emm-to-intune"></a>Intune 'a EMM için bolluk ekleme
 EMM için, Intune 'da yönetilen bir iOS uygulaması olarak bolluk ekleyin ve bolluk kullanıcılarınızı atayın. Uygulamalar platforma özgüdür, bu nedenle Android cihazlarda bolluk kullanıcılarınız için ayrı bir Intune uygulaması eklemeniz gerekir.
-1. Intune 'da, **istemci uygulamaları** > **uygulama** > **Ekle**' yi seçin.
+1. Intune 'da, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin.
 2. Uygulama türü altında **mağaza app-iOS**' ı seçin.
 3. **App Store’da Ara**’yı seçin. "EMM için bolluk" arama terimini girin ve uygulamayı seçin.
 4. **Uygulama bilgileri** ' ni seçin ve tüm değişiklikleri uygun gördüğünüz şekilde yapılandırın.
@@ -71,7 +71,7 @@ EMM için, Intune 'da yönetilen bir iOS uygulaması olarak bolluk ekleyin ve bo
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>EMM için bolluk için bir uygulama yapılandırma ilkesi ekleyin
 EMM iOS için bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgüdür. bu nedenle, Android cihazlarda bolluk kullanıcılarınıza ayrı bir ilke eklemeniz gerekir.
-1. Intune 'da, **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**' yi seçin.
+1. Intune 'da, **uygulama yapılandırma ilkeleri** ** >  > ** **Ekle**' yi seçin.
 2. Ad alanına bolluk uygulama yapılandırma ilkesi testi girin.
 3. Cihaz kayıt türü ' nün altında, **yönetilen cihazlar**' ı seçin.
 4. Platform altında **iOS**' u seçin.
@@ -107,7 +107,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 
 ### <a name="add-slack-to-intune"></a>Intune 'a bolluk ekleme
 Intune 'da bir yönetilen Google Play uygulaması olarak bolluk ekleyin ve bolluk kullanıcılarınızı atayın. Uygulamalar platforma özgüdür, bu nedenle iOS cihazlarında bolluk kullanıcılarınız için ayrı bir Intune uygulaması eklemeniz gerekir.
-1. Intune 'da, **istemci uygulamaları** > **uygulama** > **Ekle**' yi seçin.
+1. Intune 'da, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin.
 2. Uygulama türü altında **Mağaza uygulaması – yönetilen Google Play**seçin.
 3. **Yönetilen Google Play-Onayla**' yı seçin. "EMM için bolluk" arama terimini girin ve uygulamayı seçin.
 4. **Onayla**seçeneğini belirleyin.
@@ -122,7 +122,7 @@ Intune 'da bir yönetilen Google Play uygulaması olarak bolluk ekleyin ve bollu
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Bolluk için bir uygulama yapılandırma ilkesi ekleyin
 Bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgüdür, bu nedenle iOS cihazlarında bolluk kullanıcılarınıza ayrı bir ilke eklemeniz gerekir.
-1. Intune 'da, **istemci uygulamaları** > **uygulama yapılandırma ilkeleri** > **Ekle**' yi seçin.
+1. Intune 'da, **uygulama yapılandırma ilkeleri** ** >  > ** **Ekle**' yi seçin.
 2. Ad alanına bolluk uygulama yapılandırma ilkesi testi girin.
 3. Cihaz kayıt türü ' nün altında, **yönetilen cihazlar**' ı seçin.
 4. Platform altında **Android**' i seçin.

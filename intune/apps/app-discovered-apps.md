@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813371"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564255"
 ---
 # <a name="intune-discovered-apps"></a>Intune bulunan uygulamalar
 
@@ -33,18 +33,18 @@ Intune **bulunan uygulamalar** , Kiracınızdaki Intune 'a kayıtlı cihazlarda 
 
 Intune, kiracınızdaki Intune 'A kayıtlı cihazlarda algılanan uygulamaların toplanmış bir listesini sağlar.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Intune** bölmesinde, **istemci uygulamaları** > **bulunan uygulamalar**' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Uygulamalar** > **bulunan uygulamalar** > **izleme** ' yi seçin.
 
 >[!NOTE]
->**Bulunan uygulamalar dikey penceresinden** **dışarı aktar** ' i seçerek bulunan uygulamalar listesini bir. csv dosyasına dışarı aktarabilirsiniz.
+>**Bulunan uygulamalar bölmesinden** **dışarı aktar** ' i seçerek bulunan uygulamalar listesini bir. csv dosyasına dışarı aktarabilirsiniz.
 >
 >Bulunan Win32 uygulamaları için şu anda toplam sayım yok. Bu tür veriler yalnızca cihaz başına temelinde görüntülenebilir.
 
 Intune, kiracınızdaki ayrı bir cihaz için bulunan uygulamaların listesini de sağlar.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. Intune bölmesinde, **cihazlar** > **tüm cihazlar**' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm cihazlar** > **cihazları** seçin.
 3. Cihaz seçin.
 4. Bu cihaza yönelik algılanan uygulamaları görüntülemek için **izleyici** bölümünde **bulunan uygulamalar** ' ı seçin.
 
@@ -69,8 +69,8 @@ Aşağıdaki liste, uygulama platformu türünü, kişisel cihazlar için izlene
 
 Bulunan uygulamaların sayısı uygulama yükleme durumu sayısıyla eşleşmeyebilir. Tutarsızlıkların olası nedenleri:
 
-- Yüklü yönetilen uygulamada bir hedefleme değişikliği, durum dikey penceresindeki yükleme sayısının azalmasına neden olabilir ama algılanan uygulamalarda bildirilmeye devam eder.
-- Kiracıda aynı uygulamanın birden çok örneğinin hedeflenmesi, kullanıcı veya cihazların olası örtüşmesi nedeniyle farklı sayım sonuçları verebilir. Uygulamanın her örneği örtüşen kullanıcıları sayar ama bulunan uygulamaların yinelenen sayımları ortaya çıkar.
+- Yüklü yönetilen bir uygulamanın hedefleme değişikliği, durum bölmesindeki yükleme sayısının azaltılmasına neden olabilir, ancak algılanan uygulamalarda bildirilen olarak kalır.
+- Kiracıda aynı uygulamanın birden çok örneğinin hedeflenmesi, kullanıcı veya cihazların olası örtüşmesi nedeniyle farklı sayım sonuçları verebilir. Uygulamanın her bir örneği örtüşen kullanıcıları sayar ancak bulunan uygulamalarda yinelenen sayımlar olur.
 - Bulunan uygulamalarla uygulama durumu farklı zaman çerçevelerinde toplanır ve bu da uygulama sayılarında tutarsızlığa neden olabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar

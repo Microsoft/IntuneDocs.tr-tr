@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ddb9ec795b9cc8842cbc6c9d33897b5e0f45e88
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548002"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564285"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme
 
@@ -31,18 +31,15 @@ ms.locfileid: "74548002"
 
 Intune App SDK’sını destekleyen yönetilen uygulamalarla uygulama yapılandırma ilkelerini, kayıtlı olmayan cihazlarda dahi kullanabilirsiniz. 
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **İstemci uygulamaları** iş yükünü seçin.
-4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
-5. Aşağıdaki bilgileri ayarlayın:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2.  > **yönetilen uygulamalar** **eklemek** > **uygulama yapılandırma ilkeleri** > **uygulamalar** ' ı seçin.
+3. Aşağıdaki bilgileri ayarlayın:
     - **Ad**  
       Azure portalında görünecek profil adı.
     - **Açıklama**  
       Azure portalında görünecek profil açıklaması.
-    - **Cihaz kaydı türü**  
-      **Uygulamaları yönet**’i seçin.
-6. Yapılandıracağınız uygulamayı seçmek için **İlişkili uygulama**’yı seçin. Onayladığınız ve Intune ile eşitlenmiş uygulamalar listesinden uygulamayı seçin.
-7. Uygulamanın desteklediği her bir yapılandırma ayarı için **Ad** ve **Değer** yazın ve üç nokta simgesini ( **...** ) seçin.  
+4. Yapılandırmak istediğiniz uygulamayı seçmek için **ortak uygulamaları seçin** ya da **özel uygulamalar** ' ı seçin. Onayladığınız ve Intune ile eşitlenmiş uygulamalar listesinden uygulamayı seçin.
+5. Uygulamanın desteklediği her yapılandırma ayarı için, **adı** ve **değeri**yazın.  
     Bir yapılandırmayı silmek için üç nokta simgesini ( **…** ) seçip **Sil**’e tıklayın.  
     
 Intune Uygulama SDK’sı özellikli uygulamalar, anahtar/değer çiftlerinde yapılandırmaları destekler. Hangi anahtar-değer yapılandırmalarının desteklendiğini öğrenmek için uygulamaların kendi belgelerine bakın. Uygulama tarafından oluşturulan verilerle dinamik olarak doldurulacak belirteçler kullanabileceğinizi unutmayın. iOS için Outlook uygulama yapılandırma ilke ayarları hakkında daha fazla bilgi için bkz. [Microsoft Intune ile iOS için Outlook uygulama yapılandırması](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).

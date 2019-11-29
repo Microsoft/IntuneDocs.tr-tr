@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afd51fe27feb0c058ba703ed11e4a15a5ea2f0d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813417"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563422"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı Başlangıç: İstemci uygulaması ekleme ve atama
 
@@ -44,7 +44,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../
 Intune’un uygulama görünüşünü yönetebilmesi amacıyla herhangi bir uygulama Intune’a dahil edilebilir. 
 
 Intune’a bir uygulama eklemek için aşağıdaki adımları kullanın:
-1. [Intune](https://aka.ms/intuneportal)’da **İstemci uygulamaları** > **Uygulamalar** > **Ekle**’yi seçin. 
+1. [Intune](https://aka.ms/intuneportal)'Da, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin. 
 2. Açılan **Uygulama türü** kutusundaki **Office 365 Paketi** bölümünde **Windows 10**’u seçin.
 3. Office uygulamalarının Intune kullanıcısına atanması için **Uygulama Paketini yapılandır**’ı seçin.
 4. Varsayılan olarak seçili uygulamaları kabul etmek için **Tamam**’a tıklayın.
@@ -68,9 +68,9 @@ Microsoft Intune’a bir uygulama ekledikten sonra uygulamayı kullanıcı veya 
 > Bu hızlı başlangıç, bu serideki önceki hızlı başlangıçlarda oluşturulur. Ayrıntılar için lütfen bu hızlı başlangıçtaki [önkoşullar](quickstart-add-assign-app.md#prerequisites) kısmına bakın.
 
 Uygulamaları gruplara eklemek için aşağıdaki adımları kullanın:
-1. [Intune](https://aka.ms/intuneportal)’da **İstemci uygulamaları** > **Uygulamalar**’ı seçin. 
+1. [Intune](https://aka.ms/intuneportal)'da **tüm uygulamalar** > **uygulamalar** ' ı seçin. 
 2. Bir gruba atamak istediğiniz uygulamayı seçin.
-3. **Atamalar** > **Grup ekle**’yi seçerek **Grup ekle** dikey penceresini görüntüleyin.
+3. **Grup Ekle bölmesini göstermek** için **atamalar** > **Grup Ekle** ' ye tıklayın.
 4. Açılan **Atama türü** kutusunda **Kayıtlı cihazlar için kullanılabilir**’i seçin. 
 5. **Dahil Edilen Gruplar** > **Dahil edilecek grupları seçin** > **Contoso Sınama Aracı**’nı seçin.
 6. Grubu atamak için **Seçin** > **Tamam** > **Tamam** > **Kaydet**’e tıklayın.

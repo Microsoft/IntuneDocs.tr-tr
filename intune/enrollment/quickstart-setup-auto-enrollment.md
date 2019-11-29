@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709504"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562307"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Hızlı Başlangıç: Windows 10 cihazları için otomatik kayıt ayarlama
 
@@ -41,7 +41,7 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../
 
 Bu örnekte kurumsal ve kendi cihazını getir türü cihazların otomatik kaydolabilmesi için MDM kaydını kullanacaksınız. Ücretsiz bir Azure Active Directory Premium aboneliğine kaydolacaksınız.
 
-1. Azure’da **Azure Active Directory** > **Taşınabilirlik (MDM ve MAM)** seçeneklerine tıklayın.
+1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **Mobility (MDM ve MAM)** seçeneğini belirleyin.
 2. **Bu özelliği kullanmak için ücretsiz bir Premium deneme sürümü edinin**’i seçin. Bu seçeneğin belirlenmesi, Azure Active Directory ücretsiz Premium deneme sürümü kullanılarak otomatik kayıt yapılmasına imkan verir. 
 
     ![Azure Active Directory ücretsiz Premium deneme sürümünü seçin](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12218ec20f8cc00ebcf2294387f711ea39d79256
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3168d517ebbb59dc9d6fe5a9c262ad8e1c909619
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507067"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563816"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1 mağazası uygulamalarını Microsoft Intune’a ekleme
 
@@ -34,12 +34,10 @@ Bir cihaza veya kullanıcı grubuna uygulama atamadan önce uygulamayı ilk olar
 ## <a name="add-an-app-to-intune"></a>Intune’a uygulama ekleme
 Aşağıdakileri yaparak, Azure portalından Intune’a bir Windows Phone 8.1 mağaza uygulaması ekleyebilirsiniz:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **İstemci uygulamaları**’nı seçin.
-4. **İstemci uygulamaları** iş yükü bölmesindeki **Yönet**’in altında **Uygulamalar**’ı seçin.
-5. **Uygulamalar** bölmesinde **Ekle**’yi seçin.
-6. **Uygulama ekle** bölmesinde, **Uygulama türü** olarak **Windows Phone 8.1**’i ve **Uygulama bilgileri**’ni seçin.
-7. **Uygulama bilgileri** bölmesinde uygulama bilgilerini ekleyin. Seçtiğiniz uygulamaya bağlı olarak, bölmedeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama ekle** bölmesinde, **Uygulama türü** olarak **Windows Phone 8.1**’i ve **Uygulama bilgileri**’ni seçin.
+4. **Uygulama bilgileri** bölmesinde uygulama bilgilerini ekleyin. Seçtiğiniz uygulamaya bağlı olarak, bölmedeki değerlerden bazıları otomatik olarak doldurulmuş olabilir:
     - **Ad**: Şirket Portalı’nda görüntülendiği şekliyle uygulamanın adını girin. Kullandığınız uygulama adlarının benzersiz olduğundan emin olun. Bir uygulama adı iki kez kullanılırsa, Şirket Portalı’nda kullanıcılara yalnızca bir ad gösterilir.
     - **Açıklama**: Uygulama için bir açıklama girin. Bu açıklama Şirket Portalı’nda kullanıcılara görüntülenir.Açıklama şirket portalında kullanıcılara görüntülenir.
     - **Yayımcı**: Uygulama yayımcısının adını girin.
@@ -52,8 +50,8 @@ Aşağıdakileri yaparak, Azure portalından Intune’a bir Windows Phone 8.1 ma
     - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin, örneğin *İK departmanı*.
     - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: İsteğe bağlı olarak, uygulamayla ilişkilendirilecek bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
-8. **Tamam**’ı seçin.
-9. **Ekle**’yi seçin.
+5. **Tamam**’ı seçin.
+6. **Ekle**’yi seçin.
 
 Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygulamayı seçtiğiniz gruplara atayabilirsiniz.
 

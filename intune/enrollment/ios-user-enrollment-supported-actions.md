@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445307"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562419"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple Kullanıcı kaydıyla desteklenen Intune eylemleri ve seçenekleri
 
@@ -57,13 +57,18 @@ Kullanıcı kayıt cihazlarında, son kullanıcılar bu eylemleri cihazlarında 
 - Uzaktan Kilitleme
 - Durumu Denetle
 
+## <a name="app-deployment-options"></a>Uygulama dağıtım seçenekleri
+Aşağıdaki uygulama türleri, Kullanıcı kayıt cihazlarına dağıtılabilir:
+- Özel uygulamalar dahil Kullanıcı lisanslı birim satın alma planı (VPP) uygulamaları
+- İş kolu (LOB) uygulamaları
+- Web uygulamaları
+
 ## <a name="other-supported-options"></a>Desteklenen diğer seçenekler
 
 Apple Kullanıcı kaydı kullanılarak kaydedilen cihazlar için Intune 'da aşağıdaki seçenekler desteklenir:
 - Uygulama başına VPN. Bu destek, Kullanıcı kaydı Safari ayarlarını yapılandırmayı desteklemediğinden Safari etki alanlarını dışlar.
 - WiFi 
 - Kayıttan silme sonrasında kurumsal uygulama kaldırma
-- Kullanıcı lisanslı birim satın alma planı (VPP) aracılığıyla uygulama dağıtımı
 - Jailbreak algılama
 
 Aşağıdaki kısıtlamalar desteklenir:
@@ -94,9 +99,10 @@ Kullanıcı kaydıyla kaydedilen cihazlarda aşağıdaki seçenekler desteklenme
 - UıDıD ve diğer kalıcı cihaz tanımlayıcılarını toplayın.
 - Kullanıcı kaydı, kaydedilen her cihaz için benzersiz bir kayıt KIMLIĞINI destekler, ancak kayıt kaldırıldıktan sonra bu KIMLIK kalıcı olmaz.
 - Bu sınırlama nedeniyle aşağıdaki Intune özellikleri desteklenmez:
-- Seri Numin. r için konu adı biçimindeki SCEP Kullanıcı profilleri
+- Seri numarasının konu adı biçimindeki SCEP Kullanıcı profilleri.
 - Cihaz düzeyinde VPN.
 - Cihaz lisanslı VPP uygulama dağıtımı.
+- App Store uygulamalarını yönetilen uygulamalar olarak yükler.
 - Yönetilen APFS birimi dışındaki uygulamaların MDM denetimi.
 - Uygulama koruma Ilkeleri bu uygulamalar için uygulanmaya devam edecektir. Ancak, Kullanıcı bu uygulamaları cihazlarından silmedikleri takdirde yönetimi veya bu uygulamaların yönetilen bir sürümünü dağıtmanız mümkün olmayacaktır.
 - İşlemler, konfigürasyonlar, ayarlar ve gözetimvision gerektiren komutlar. 

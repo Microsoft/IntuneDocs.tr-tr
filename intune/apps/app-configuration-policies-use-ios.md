@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566174"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564157"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -51,8 +51,7 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **İstemci uygulamaları** iş yükünü seçin.
-4. **Yönet** grubunda bulunan **Uygulama yapılandırma ilkeleri**’ni seçip **Ekle**’ye tıklayın.
+3. **Ekle** > **uygulama yapılandırma ilkeleri** > **uygulamalar** ' ı seçin.
 5. Aşağıdaki bilgileri ayarlayın:
     - **Ad** - Azure portalında görünen profil adı.
     - **Açıklama** - Azure portalında görünen profil açıklaması.
@@ -74,7 +73,7 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 13. **Dışla** sekmesini seçin. 
 14. İlgili bölmeyi görüntülemek için **Dışlanacak grupları seçin**’e tıklayın.
 
-    ![İlke atamaları - Dışlanacak grupları seçin dikey penceresinin ekran görüntüsü](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![Ilke atamalarının ekran görüntüsü-dışlanacak grupları seçin bölmesi](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. Dışlamak istediğiniz grupları seçin ve **Seç**’e tıklayın.
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Ayrıca, Intune özellik listesinde aşağıdaki belirteç türlerini destekler:
 
 DEP (Apple Aygıt Kayıt Programı) kayıtları, Şirket Portalı uygulamasının App Store sürümü ile uyumlu değildir. Ancak, aşağıdaki adımları kullanarak Şirket Portalı uygulamasını iOS DEP cihazlarını destekleyecek şekilde yapılandırabilirsiniz.
 
-1. Intune Azure portal:
-    - Gerekirse Intune Şirket Portalı ekleyin, **ıntune** > **istemci uygulamalarına** > **uygulama** > **Ekle**' ye giderek.
-    - Şirket Portalı uygulamasına yönelik bir uygulama yapılandırma ilkesi oluşturmak için **istemci uygulamaları** > **uygulama yapılandırma ilkeleri**' ne gidin.
-2. Aşağıda XML ile bir uygulama yapılandırma ilkesi oluşturun. Uygulama yapılandırma ilkesi oluşturma ve XML verilerinin girilmesi hakkında daha fazla bilgi için, [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md) veya karma MDM Için, [System Center 'da uygulama yapılandırma ilkeleriyle ayarları iOS uygulamalarına uygulama hakkında daha fazla bilgi bulabilirsiniz. Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+1. Intune 'da, gerekirse Intune Şirket Portalı uygulamasını **ıntune** > **uygulamalar** > **tüm uygulamalar** > **Ekle**' ye giderek ekleyin.
+2. Şirket Portalı uygulamasına yönelik bir uygulama yapılandırma ilkesi oluşturmak için **uygulamalar** > **uygulama yapılandırma ilkeleri**' ne gidin.
+3. Aşağıda XML ile bir uygulama yapılandırma ilkesi oluşturun. Uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi ve XML verilerinin girilmesi, [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md) veya HIBRIT MDM için, [System Center Configuration Manager 'de uygulama yapılandırma ilkeleriyle ayarları iOS uygulamalarına](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)uygulama hakkında daha fazla bilgi bulabilirsiniz.
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ DEP (Apple Aygıt Kayıt Programı) kayıtları, Şirket Portalı uygulamasını
 4. Son kullanıcılara otomatik olarak yüklendiğinde Şirket Portalı uygulamasında oturum açmasını söyleyin.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Cihaz başına iOS uygulama yapılandırma durumunu izleme 
-Yapılandırma ilkesi atandıktan sonra, yönetilen her cihaz için iOS uygulama yapılandırma durumunu izleyebilirsiniz. Azure portalında **Microsoft Intune**'dan **Cihazlar** > **Tüm cihazlar**'ı seçin. Yönetilen cihaz listesinden belirli bir cihazı seçerek o cihazın dikey penceresini görüntüleyin. Cihaz dikey penceresinde **Uygulama yapılandırması**'nı seçin.  
+Yapılandırma ilkesi atandıktan sonra, yönetilen her cihaz için iOS uygulama yapılandırma durumunu izleyebilirsiniz. Azure portalında **Microsoft Intune**'dan **Cihazlar** > **Tüm cihazlar**'ı seçin. Yönetilen cihazlar listesinden cihaz için bir bölme göstermek üzere belirli bir cihaz seçin. Cihaz bölmesinde **uygulama yapılandırması**' nı seçin.  
 
 ## <a name="additional-information"></a>Ek bilgiler
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813491"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564219"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise için Microsoft tarafından yönetilen giriş ekranı uygulamasını yapılandırma
 
@@ -31,18 +31,18 @@ Yönetilen giriş ekranı, Intune ile kaydedilen ve çok uygulama bilgi noktası
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>Microsoft tarafından yönetilen giriş ekranı uygulamasının ne zaman yapılandırılacağı
 
-Genellikle, ayarlar cihaz yapılandırması aracılığıyla sizin için kullanılabilir ise, ayarları burada yapılandırın. Bunun yapılması zamandan tasarruf eder, hataları en aza indirir ve size daha iyi bir Intune destek deneyimi sağlar. Ancak, yönetilen giriş ekranı ayarlarından bazıları şu anda yalnızca Intune konsolundaki **uygulama yapılandırma ilkeleri** dikey penceresinde kullanılabilir. Yapılandırma tasarımcısını veya bir JSON betiği kullanarak farklı ayarların nasıl yapılandırılacağını öğrenmek için bu belgeyi kullanın. 
+Genellikle, ayarlar cihaz yapılandırması aracılığıyla sizin için kullanılabilir ise, ayarları burada yapılandırın. Bunun yapılması zamandan tasarruf eder, hataları en aza indirir ve size daha iyi bir Intune destek deneyimi sağlar. Ancak, yönetilen giriş ekranı ayarlarından bazıları şu anda yalnızca Intune konsolundaki **uygulama yapılandırma ilkeleri** bölmesi aracılığıyla kullanılabilir. Yapılandırma tasarımcısını veya bir JSON betiği kullanarak farklı ayarların nasıl yapılandırılacağını öğrenmek için bu belgeyi kullanın. 
 
 > [!NOTE]
-> **İstemci uygulamaları** ve **cihaz yapılandırması**aracılığıyla, izin verilen uygulamaları ve sabitlenmiş web bağlantılarını ayarlamak için şu anda mümkün ve önerilir. Yönetilen giriş ekranını etkileyen **cihaz yapılandırmasında** kullanılabilen ayarların tam listesi için bkz. [adanmış cihaz ayarları](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
+> **Uygulama** ve **cihaz yapılandırması**aracılığıyla, izin verilen uygulamaları ve sabitlenmiş web bağlantılarını ayarlamak için şu anda mümkün değildir ve önerilir. Yönetilen giriş ekranını etkileyen **cihaz yapılandırmasında** kullanılabilen ayarların tam listesi için bkz. [adanmış cihaz ayarları](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-İlk olarak, Azure portal Intune konsoluna gidin ve **istemci uygulamaları** > **uygulama yapılandırma ilkeleri**' ne gidin. **Android** çalıştıran **yönetilen cihazlar** için bir yapılandırma ilkesi ekleyin ve Ilişkili uygulama olarak **yönetilen giriş ekranı** ' nı seçin. Kullanılabilir farklı yönetilen giriş ekranı ayarlarını yapılandırmak için **yapılandırma ayarları** ' na tıklayın. 
+İlk olarak, [Microsoft Endpoint Manager yönetim merkezine](https://go.microsoft.com/fwlink/?linkid=2109431) gidin ve **uygulama yapılandırma ilkeleri** > **uygulamalar** ' ı seçin. **Android** çalıştıran **yönetilen cihazlar** için bir yapılandırma ilkesi ekleyin ve Ilişkili uygulama olarak **yönetilen giriş ekranı** ' nı seçin. Kullanılabilir farklı yönetilen giriş ekranı ayarlarını yapılandırmak için **yapılandırma ayarları** ' na tıklayın. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Yapılandırma ayarları biçimi seçme
 
 Yönetilen giriş ekranının yapılandırma ayarlarını tanımlamak için kullanabileceğiniz iki yöntem vardır:
 
-- **Yapılandırma Tasarımcısı** , özellikleri açık veya kapalı ve değerleri ayarlamanıza olanak tanıyan kullanımı kolay bir kullanıcı arabirimi ile ayarları yapılandırmanıza olanak tanır. Bu yöntemde, `BundleArray` değer türüne sahip birkaç devre dışı yapılandırma anahtarı vardır. Bu yapılandırma anahtarları yalnızca JSON verileri girilerek yapılandırılabilir. 
+- **Yapılandırma Tasarımcısı** , özellikleri açık veya kapalı ve değerleri ayarlamanıza olanak tanıyan kullanımı kolay bir kullanıcı arabirimi ile ayarları yapılandırmanıza olanak tanır. Bu yöntemde, `BundleArray`değer türünde birkaç devre dışı yapılandırma anahtarı vardır. Bu yapılandırma anahtarları yalnızca JSON verileri girilerek yapılandırılabilir. 
 - **JSON verileri** , bir JSON betiği kullanarak tüm olası yapılandırma anahtarlarını tanımlamanızı sağlar. 
 
 Yapılandırma Tasarımcısı ile Özellikler eklerseniz, **yapılandırma ayarları biçim** AÇıLAN listesinden **JSON verisi gir** ' i seçerek bu özellikleri otomatik olarak JSON 'a dönüştürebilirsiniz.
@@ -69,20 +69,20 @@ Aşağıdaki tablo, yönetilen giriş ekranı kullanılabilir yapılandırma ana
 | Cihaz telemetrisini etkinleştir | Bool | YANLÝÞ | Yönetilen giriş ekranı için yakalanan tüm Telemetriyi sunar. Bu ayarı etkinleştirirseniz, Microsoft, belirli bir uygulamanın bu cihazda başlatılma sayısı gibi cihaz kullanımı telemetrisini yakalayabilir. |
 | İzin verilen uygulamaları ayarla | Paketleme Learray | YANLÝÞ | , Cihazda yüklü uygulamalar arasından giriş ekranında görünür olan uygulama kümesini tanımlamanızı sağlar. Uygulamaları, görünür hale getirmek istediğiniz uygulamaların uygulama paketi adını girerek tanımlayabilirsiniz, örneğin com. Microsoft. emmx, ayarları giriş ekranında erişilebilir hale getirir. Bu bölümde izin verilen uygulamaların, ana ekranda görünür olması için cihazda zaten yüklü olması gerekir. |
 | Sabitlenmiş Web bağlantıları ayarla | Paketleme Learray | YANLÝÞ | Web sitelerini giriş ekranında hızlı başlatma simgeleri olarak sabitetmenize olanak tanır. Bu yapılandırmayla, URL 'YI tanımlayabilir ve son kullanıcının tarayıcıda tek bir dokunmayla başlatması için giriş ekranına ekleyebilirsiniz. |
-| Ekran koruyucuyu etkinleştir | Bool | YANLÝÞ | Ekran koruyucu modunu etkinleştirmek için. True olarak ayarlanırsa **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**ve **media_detect_screen_saver**yapılandırabilirsiniz. |
+| Ekran koruyucuyu etkinleştir | Bool | YANLÝÞ | Ekran koruyucu modunu etkinleştirmek için. True olarak ayarlanırsa, **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**ve **media_detect_screen_saver**yapılandırabilirsiniz. |
 | Ekran koruyucu görüntüsü | dize |   | Ekran koruyucu görüntüsünün URL 'sini ayarlayın. Hiçbir URL ayarlanmamışsa, ekran koruyucusu etkinleştirildiğinde cihazlar varsayılan ekran koruyucu görüntüsünü gösterir. Varsayılan görüntüde, yönetilen giriş ekranı uygulaması simgesi gösterilir.  |
 | Ekran koruyucunun zamanı gösterme | integer | 0 | Cihazın ekran koruyucu modu sırasında ekran koruyucuyu görüntüleyeceği süre miktarını saniye cinsinden ayarlama seçeneği sunar. 0 olarak ayarlanırsa, ekran koruyucusu cihaz etkin hale gelene kadar ekran koruyucu modunda süresiz olarak görünür.  |
 | Ekran koruyucuyu etkinleştirmek için etkin olmayan süre | integer | 30 | Ekran koruyucusunu tetiklemeden önce cihazın etkin olmayan saniye sayısı. 0 olarak ayarlanırsa cihaz, ekran koruyucu moduna hiçbir şekilde gitmeyecektir. |
-| Ekran koruyucuyu göstermeden önce Medya Algılama | Bool | DEĞERI | Cihazda ses/video oynatılırken cihaz ekranının ekran koruyucuyu gösterip göstermeyeceğini seçin. True olarak ayarlanırsa, **inactive_time_to_show_scree_saver**içindeki değerden bağımsız olarak cihaz ses/video oynamaz. False olarak ayarlanırsa, cihaz ekranı, **inactive_time_to_show_screen_saver**içinde ayarlanan değere göre ekran koruyucuyu gösterir.   |
+| Ekran koruyucuyu göstermeden önce Medya Algılama | Bool | DEĞERI | Cihazda ses/video oynatılırken cihaz ekranının ekran koruyucuyu gösterip göstermeyeceğini seçin. True olarak ayarlanırsa cihaz, **inactive_time_to_show_scree_saver**değerden bağımsız olarak ses/video oynamaz. False olarak ayarlanırsa, cihaz ekranı, **inactive_time_to_show_screen_saver**ayarlanan değere göre ekran koruyucuyu gösterir.   |
 | Sanal giriş düğmesini etkinleştir | Bool | YANLÝÞ | Son kullanıcının, kullanıcının içinde bulundukları geçerli görevden yönetilen giriş ekranına geri döndürdüğü bir yönetilen giriş ekranı giriş düğmesine erişmesine izin vermek için bu ayarı `True` olarak etkinleştirin.  |
 | Sanal giriş düğmesi türü | dize | swipe_up | Giriş düğmesine bir çekme hareketi ile erişmek için **swipe_up** kullanın. Son Kullanıcı tarafından ekran etrafında taşınabilecek yapışkan ve kalıcı bir giriş düğmesine erişmek için **float** kullanın. |
-| Pil ve sinyal gücü gösterge çubuğu | Bool | True  | Bu ayarın `True` ' a etkinleştirilmesi, pil ve sinyal gücü gösterge çubuğunu gösterir. |
+| Pil ve sinyal gücü gösterge çubuğu | Bool | True  | Bu ayarı `True` açmak, pil ve sinyal gücü gösterge çubuğunu gösterir. |
 | Kilit görev modu parolasıyla çık | dize |   | Sorun giderme için kilit görevi modunun geçici olarak devre dışı bırakması için kullanılacak 4-6 basamaklı bir kod girin. |
-| Wi-Fi ayarını göster | Bool | YANLÝÞ | Bu ayarın `True` ' a açılması, son kullanıcının Wi-Fi açmasına veya devre dışı olmasına ya da farklı Wi-Fi ağlarına bağlanmasına izin verir.  |
-| Bluetooth ayarını göster | Bool | YANLÝÞ | Bu ayarın `True` olarak ayarlanması, son kullanıcının Bluetooth 'u açmasına veya kapatılmasına ve Bluetooth özellikli farklı cihazlara bağlanmasına izin verir.   |
-| Klasördeki uygulamalar ada göre sıralanır | Bool | DEĞERI | Bu ayarın `False` ' a etkinleştirilmesi, bir klasördeki öğelerin belirtildikleri sırada görünmesine izin verir. Aksi takdirde, bu, klasörde alfabetik olarak görünürler.   |
-| Uygulama sırası etkin | Bool | YANLÝÞ | Bu ayarın `True` ' a etkinleştirilmesi, yönetilen giriş ekranındaki uygulamaların, Web bağlantılarının ve klasörlerin sırasını ayarlamanıza olanak sağlar. Etkinleştirildikten sonra, **app_order**ile sıralamayı ayarlayın. Son Kullanıcı Bluetooth 'u açıp kapatıp farklı Bluetooth özellikli cihazlara bağlanır.   |
-| Uygulama sırası | Paketleme Learray | YANLÝÞ | Yönetilen giriş ekranındaki uygulamaların, Web bağlantılarının ve klasörlerin sırasını belirtmenize olanak tanır. Bu ayarı kullanmak için, **kilit giriş ekranının** etkinleştirilmesi gerekir, **Izgara boyutunu ayarlama** tanımlanmalıdır ve **uygulama sırası etkin** olarak ayarlanmalıdır `True` olmalıdır.   |
+| Wi-Fi ayarını göster | Bool | YANLÝÞ | `True` için bu ayarı etkinleştirmek, son kullanıcının Wi-Fi açmasına veya devre dışı olmasına ya da farklı Wi-Fi ağlarına bağlanmasına izin verir.  |
+| Bluetooth ayarını göster | Bool | YANLÝÞ | `True` için bu ayarı etkinleştirmek, son kullanıcının Bluetooth 'u açmasına ve kapatmasına ve farklı Bluetooth özellikli cihazlara bağlanmasına izin verir.   |
+| Klasördeki uygulamalar ada göre sıralanır | Bool | DEĞERI | Bu ayarı `False` açmak bir klasördeki öğelerin belirtildikleri sırada görünmesine izin verir. Aksi takdirde, bu, klasörde alfabetik olarak görünürler.   |
+| Uygulama sırası etkin | Bool | YANLÝÞ | Bu ayarı `True` açmak, yönetilen giriş ekranındaki uygulamaların, Web bağlantılarının ve klasörlerin sırasını ayarlamanıza olanak sağlar. Etkinleştirildikten sonra, **app_order**ile sıralamayı ayarlayın. son kullanıcının Bluetooth 'u açıp kapatıp farklı Bluetooth özellikli cihazlara bağlanmasını sağlar.   |
+| Uygulama sırası | Paketleme Learray | YANLÝÞ | Yönetilen giriş ekranındaki uygulamaların, Web bağlantılarının ve klasörlerin sırasını belirtmenize olanak tanır. Bu ayarı kullanmak için, **kilit giriş ekranının** etkinleştirilmesi gerekir, **Izgara boyutunu ayarla** özelliği tanımlanmalıdır ve **uygulama sırası `True`etkin** olmalıdır.   |
 
 ## <a name="enter-json-data"></a>JSON verilerini girin
 

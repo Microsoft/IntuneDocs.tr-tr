@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199205"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563631"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -37,7 +37,7 @@ Microsoft Intune şirket portalı, kullanıcıların şirket verilerine erişti�
 > [!Tip]
 > Şirket Portalı’nı özelleştirdiğinizde, yapılandırmalar hem Şirket Portalı web sitesi hem de Şirket Portalı uygulamaları için geçerli olur. Şirket Portalı'na erişmek isteyen kullanıcılara Intune lisansı atanmış olmalıdır.
 
-Şirket Portalı’nı özelleştirerek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlanmasına yardımcı olabilirsiniz. Bunun için Intune portalında **İstemci uygulamaları** > **Markalama ve özelleştirme**'yi seçip gerekli ayarları yapılandırın.
+Şirket Portalı’nı özelleştirerek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlanmasına yardımcı olabilirsiniz. Bunu yapmak için, Intune portalında **uygulamalar** > **marka ve özelleştirme**' yı seçin ve gerekli ayarları yapılandırın.
 
 Bir Kullanıcı Şirket Portalı bir iOS uygulaması yüklerken bir istem alır. Bu durum, iOS uygulaması bir toplu satın alma programı (VPP) ile bağlantılı veya iş kolu (LOB) uygulamasına bağlanan bir App Store 'a bağlandığında oluşur. İstem, kullanıcıların eylemi kabul etmesine veya uygulamanın yönetimine izin veriyor. İstem şirketinizin adını gösterir veya şirketinizin adı kullanılamadığında **Şirket portalı** görüntülenir. 
 
@@ -92,7 +92,7 @@ Beyaz veya açık renk arka planlarda en iyi görünecek logoyu seçin.
 
 ### <a name="brand-image-for-company-portal"></a>Şirket Portalı için marka imajı
 
-Şirket markanızı yansıtan bir marka imajı kullanın. Değişikliklerinizi kaydettikten sonra, yapılandırmalarınızın nasıl görüneceğine bakmak için dikey pencerenin üst kısmındaki Intune Web Portalı’nda **Ayarlarınızın önizlemesini görüntüleyin** öğesini seçebilirsiniz. Marka imajını Intune Web Portalı’nda değil, yalnızca bir iOS cihazında görüntüleyebileceğinizi unutmayın. 
+Şirket markanızı yansıtan bir marka imajı kullanın. Değişikliklerinizi kaydettikten sonra, yapılandırımlarınızın nasıl görüneceğine bakmak için bölmenin en üstündeki Intune web portalında **ayarlarınızı önizleyin** ' i seçebilirsiniz. Marka imajını Intune Web Portalı’nda değil, yalnızca bir iOS cihazında görüntüleyebileceğinizi unutmayın. 
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
@@ -149,13 +149,13 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 
 | Alan | Description | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
-| Gezinti menüsü | Gezinti | Alt+M |
-|  | Giriş | Alt+H |
+| Gezinti menüsü | Gezinti | Alt + a |
+|  | Giriş | Alt + H |
 |  | Tüm uygulamalar | Alt + A |
 |  | Yüklenen uygulamalar | Alt+I |
-|  | Geri bildirim gönder | Alt+F |
-|  | Profilim | Alt+U |
-|  | Ayarlar | Alt+T |
+|  | Geri bildirim gönder | Alt + F |
+|  | Profilim | Alt + U |
+|  | Ayarlar | Alt + T |
 | Giriş - Cihaz kutucuğu | Yeniden Adlandır | F2 |
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
@@ -163,7 +163,7 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
 | Uygulama ayrıntıları | Yükle | Ctrl+I |
-| Cihazlar | Kullanılabilir | Ctrl+D |
+| Cihazlar | Kullanılabilir | CTRL + D |
 
 Son kullanıcılar, Windows Şirket Portalı uygulamasında kullanılabilen kısayolları da görebilir.
 
@@ -186,13 +186,13 @@ Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez
 
 |  | Windows 10<sup>(3)</sup> | iOS/ıpados<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Devre Dışı Bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
-| Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | NA | Kullanılabilir<sup>(7)</sup> |
+| Devre dışı bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
+| Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | YANA | Kullanılabilir<sup>(7)</sup> |
 | Yeniden Adlandır<sup>(4)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
 | Eşitleme | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
 | Uzaktan Kilitleme | Yalnızca Windows Phone | Kullanılabilir | Kullanılabilir | Kullanılabilir |
-| Geçiş kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir<sup>(8)</sup> | NA | Kullanılabilir<sup>(6)</sup> |
-| Anahtar Kurtarma | NA | NA | Kullanılabilir<sup>(2)</sup> | NA |
+| Geçiş kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir<sup>(8)</sup> | YANA | Kullanılabilir<sup>(6)</sup> |
+| Anahtar kurtarma | YANA | YANA | Kullanılabilir<sup>(2)</sup> | YANA |
 
 <sup>(1)</sup> **devre dışı BıRAKMA** , Azure AD 'ye katılmış Windows cihazlarında her zaman engellenir.<br>
 <sup>(2)</sup> MacOS Için **anahtar kurtarma** yalnızca Web portalı aracılığıyla kullanılabilir.<br>

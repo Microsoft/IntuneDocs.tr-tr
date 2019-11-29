@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e1ff8fd39d301bd685e9806c319f49e9189d7f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507408"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564234"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma 
 
@@ -33,13 +33,12 @@ Azure AD’de MAM sağlayıcısını ayarlayarak Windows 10 için mobil uygulama
 
 ## <a name="to-configure-the-mam-provider"></a>MAM sağlayıcısını yapılandırmak için
 
-1. Azure portalında oturum açın ve **Azure Active Directory** seçeneğini belirleyin.
-
-2. **Yönet** grubunda **Mobilite (MDM ve MAM)** öğesini seçin.
-
-3. **Microsoft Intune**’a tıklayın.
-
-4. **Yapılandır** dikey penceresinde **Varsayılan MAM URL’lerini geri yükle** grubundaki ayarları yapılandırın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm hizmetler** ' i seçin ve panoları değiştirmek için **M365 Azure Active Directory** seçin.
+3. **Azure Active Directory**seçin.
+4. **Yönet** grubunda **Mobilite (MDM ve MAM)** öğesini seçin.
+5. **Microsoft Intune**’a tıklayın.
+6. **Yapılandırma** BÖLMESINDEKI **varsayılan mam URL 'lerini geri yükle** grubundaki ayarları yapılandırın.
 
    **MAM kullanıcı kapsamı**  
    Çalışanlarınızın Windows cihazlarındaki kurumsal verileri yönetmek için MAM otomatik kaydı kullanın. MAM otomatik kayıt, kendi cihazını getir senaryoları için yapılandırılacaktır.<ul><li>**Yok.**<br>MAM’a kaydedilecek kullanıcı yoksa bunu seçin.</li><li>**Bazı**<br>MAM’a kayıt olacak kullanıcıları içeren Azure AD gruplarını seçin.</li><li>**Tümü**<br>Tüm kullanıcıların MAM’a kayıt olup olamayacağını seçin.</li></ul>
@@ -50,10 +49,10 @@ Azure AD’de MAM sağlayıcısını ayarlayarak Windows 10 için mobil uygulama
    **MDM bulma URL’si**  
    MAM hizmeti kayıt uç noktası URL'si. Kayıt uç noktası, cihazları MAM hizmetine yönetim için kaydetmek üzere kullanılır.
 
-   **MAM uyumluluğu URL’si**  
+   **MAM uyumluluk URL’si**  
    MAM uyumluluk URL’si Microsoft Intune’da desteklenmez. Koruma ilkelerinin uygulanması için bu giriş kutusu boş bırakılmalıdır. 
 
-5. **Kaydet**'e tıklayın.
+7. **Kaydet**'e tıklayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

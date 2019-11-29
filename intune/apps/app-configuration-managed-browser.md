@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592086"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564304"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune ilke korumalı tarayıcısını kullanarak web erişimini yönetme
 
@@ -91,29 +91,28 @@ Azure AD bağlantılı web uygulamalarının mobil platformlarda Intune Managed 
 > [!TIP]  
 > Koşullu Erişim, bir Azure Active Directory (Azure AD) teknolojisidir. *Intune*’dan erişilen Koşullu Erişim düğümü *Azure AD*’den erişilen düğümle aynıdır.  
 
-
-1. Intune portalında **koşullu erişim** > **Yeni ilke**' yi seçin. 
-2. Daha sonra, dikey pencerenin **Erişim denetimleri** bölümünden **İzin Ver**’i seçin. 
-3. **Onaylı istemci uygulaması gerektir**’e tıklayın. 
-4. **İzin Ver** dikey penceresinde **Seçin**’e tıklayın. Bu ilke, yalnızca Intune Managed Browser uygulaması tarafından erişilebilir olmasını istediğiniz bulut uygulamalarına atanmalıdır.
-
-    ![Azure AD-Managed Browser koşullu erişim ilkesi](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
-
-5. **Atamalar** bölümünde **Koşullar** > **İstemci uygulamaları**’nı seçin. **İstemci uygulamaları** dikey penceresi görüntülenir.
-6. Belirli istemci uygulamalarında ilkeyi uygulamak için **Yapılandır** altında **Evet**’e tıklayın.
-7. **Tarayıcı**’nın bir istemci uygulaması olarak seçildiğini doğrulayın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Yeni ilke** > **koşullu erişim** > **cihazları** seçin.
+3. İlke **adını**ekleyin. 
+4. **Atamalar** bölümünde **Koşullar** > **İstemci uygulamaları**’nı seçin. **İstemci uygulamaları** bölmesi görüntülenir.
+5. Belirli istemci uygulamalarında ilkeyi uygulamak için **Yapılandır** altında **Evet**’e tıklayın.
+6. **Tarayıcı**’nın bir istemci uygulaması olarak seçildiğini doğrulayın.
 
     ![Azure AD - Managed Browser - İstemci uygulamalarını seçme](./media/app-configuration-managed-browser/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
     > Bu bulut uygulamalarına erişebilecek yerel uygulamaları (tarayıcı olmayan uygulamalar) kısıtlamak için **Mobil uygulamalar ve masaüstü istemciler**’i de seçebilirsiniz.
 
-8. **Atamalar** bölümünde **Kullanıcılar ve gruplar**’ı seçin ve ardından bu ilkeyi atayacağınız kullanıcı veya grupları seçin. 
+7. Bitti ** > bitti** ' ye **tıklayın.**
+8. **Atamalar** bölümünde **Kullanıcılar ve gruplar** ' ı seçin ve bu ilkeyi atamak istediğiniz kullanıcıları veya grupları seçin. Bölmeyi kapatmak için **bitti** ' ye tıklayın.
+9. **Atamalar** bölümünde, bu ilkeyle korunacak uygulamaları seçmek için **bulut uygulamaları veya eylemler** ' i seçin. Bölmeyi kapatmak için **bitti** ' ye tıklayın.
+10. Bölmenin **erişim denetimleri** bölümünden **ver** ' i seçin. 
+11. **Erişim ver** ' e tıklayın ve ardından **onaylanan istemci uygulaması gerektir**' e tıklayın. 
+12. **İzin** bölmesinde **Seç** ' e tıklayın. Bu ilke, yalnızca Intune Managed Browser uygulaması tarafından erişilebilir olmasını istediğiniz bulut uygulamalarına atanmalıdır.
 
-    > [!NOTE]
-    > Kullanıcıların, Uygulama Yapılandırma ilkelerini alabilmeleri için ayrıca Intune Uygulama Koruması ilkesi ile hedeflenmeleri gerekir. Intune Uygulama Koruma ilkeleri oluşturma hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri nelerdir?](app-protection-policy.md)
+    ![Azure AD-Managed Browser koşullu erişim ilkesi](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
 
-9. **Atamalar** bölümünde **Bulut uygulamaları**’nı seçerek bu ilkeyle hangi uygulamaları koruyacağınızı seçin.
+
 
 Yukarıdaki ilke yapılandırıldıktan sonra kullanıcılar, bu ilkeyle koruduğunuz Azure AD bağlantılı web uygulamalarına erişmek için Intune Managed Browser’ı kullanmaya zorlanacaktır. Bu senaryoda kullanıcılar yönetilmeyen bir tarayıcı kullanmaya çalışırsa, Intune Managed Browser kullanmaları gerektiğine dair bir bildirim göreceklerdir.
 
@@ -133,27 +132,28 @@ SSO, cihazınızın iOS'de Microsoft Authenticator, Android'de Intune Şirket Po
 >[!IMPORTANT]
 >Uygulama yapılandırmalarının uygulanması için kullanıcının korumalı tarayıcısının veya cihazdaki başka bir uygulamanın [Intune uygulama koruma ilkesi]( ../app-protection-policy.md) tarafından yönetiliyor olması gerekir
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. Yönetim listesinin **İstemci uygulamaları** dikey penceresinde **Uygulama yapılandırma ilkeleri**’ni seçin.
-4. **Uygulama yapılandırma ilkeleri** dikey penceresinde, **Ekle**’yi seçin.
-5. **Yapılandırma ilkesi ekle** dikey penceresinde, uygulama yapılandırma ayarları için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
-6. **Cihaz kayıt** türü için **Yönetilen uygulamalar**’ı seçin.
-7. **Gerekli uygulamayı seçin** öğesini belirleyin ve ardından **Hedeflenen uygulamalar** dikey penceresinde iOS, Android veya her ikisi için **Managed Browser**’ı ve/veya **Edge**'i seçin.
-8. **Tamam**’ı seçerek **Yapılandırma ilkesi ekle** dikey penceresine dönün.
-9. **Yapılandırma ayarları**’nı seçin. **Yapılandırma** dikey penceresinde, Managed Browser için yapılandırmaları sağlamak üzere anahtar ve değer çiftlerini tanımlayın. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
-10. İşiniz bittiğinde **Tamam**’ı seçin.
-11. **Yapılandırma ilkesi ekle** dikey penceresinde, **Ekle**’yi seçin.
-12. Yeni yapılandırma oluşturulur ve **Uygulama yapılandırması** dikey penceresinde görüntülenir.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Uygulama yapılandırma ilkeleri** >  > **yönetilen uygulamalar** **eklemek** > **uygulamalar** ' ı seçin.
+3. **Uygulama yapılandırma Ilkesi oluştur** bölmesinin **temel bilgiler** sayfasında, uygulama yapılandırma ayarları için bir **ad** ve isteğe bağlı bir **Açıklama** girin.
+4. **Ortak uygulamayı Seç** ' i seçin ve IOS, Android veya her ikisi için **Managed Browser** ve/veya **kenarını** seçin.
+5. **Uygulama yapılandırma Ilkesi oluştur** bölmesine dönmek için **Seç** ' e tıklayın.
+6. **İleri** ' ye tıklayarak **Ayarlar** sayfasını görüntüleyin.
+7. **Ayarlar** sayfasında, uygulama için yapılandırma sağlamak üzere anahtar ve değer çiftleri tanımlarsınız. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
+8. **Atama** sayfasını göstermek için **İleri** ' ye tıklayın ve sonra **hariç tutulacak grupları**seçmek ve/veya seçmek **için grupları seçin** ' e tıklayın.
+9. **İleri** ' ye tıklayarak **gözden geçir + oluştur** sayfasını görüntüleyin.
+10. Uygulama yapılandırma ilkesini inceledikten sonra **Oluştur** ' a tıklayın.
+
+Yeni yapılandırma oluşturulur ve **uygulama yapılandırma ilkesi** bölmesinde görüntülenir.
 
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Oluşturduğunuz yapılandırma ayarlarını atama
 
 Ayarları Azure AD kullanıcı gruplarına atayın. Bu kullanıcı hedeflenen korumalı tarayıcı uygulamasını yüklemişse uygulama belirttiğiniz ayarlarla yönetiliyordur.
 
-1. Intune mobil uygulama yönetimi panosunun **İstemci uygulamaları** dikey penceresinde, **Yapılandırma ilkeleri ekle**’yi seçin.
+1. Intune mobil uygulama yönetimi panosunun **uygulamalar** bölmesinde **uygulama yapılandırma ilkeleri**' ni seçin.
 2. Uygulama yapılandırmaları listesinden atamak istediğiniz birini seçin.
-3. Sonraki dikey pencerede **Atamalar**’ı seçin.
-4. **Atamalar** dikey penceresinde, uygulama yapılandırmasını atamak istediğiniz Azure AD grubunu ve ardından **Tamam**’ı seçin.
+3. Sonraki bölmede, **atamalar**' ı seçin.
+4. **Atamalar** bölmesinde, uygulama yapılandırmasını atamak ISTEDIĞINIZ Azure AD grubunu seçin ve ardından **Tamam**' ı seçin.
 
 ## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>Microsoft Edge 'i kuruluşunuz için korumalı tarayıcı olarak ayarlama
 
@@ -170,7 +170,7 @@ Bu ayar "false" olarak ayarlanırsa:
 - Kullanıcılarınız Managed Browser **veya** Microsoft Edge indirdiyse **, bu** tarayıcı uygulaması başlatılır. 
 - Kullanıcılarınızın tarayıcı uygulaması indirilmezse, Managed Browser indirmesi istenir.
 
-Yukarıdaki yordamı kullanarak bir Microsoft Edge uygulama yapılandırması oluşturun. **Yapılandırma** dikey penceresinde **yapılandırma ayarlarını** seçerken aşağıdaki anahtar ve değer çiftini sağlayın (adım 9):
+Yukarıdaki yordamı kullanarak bir Microsoft Edge uygulama yapılandırması oluşturun. **Yapılandırma** bölmesinde **yapılandırma ayarlarını** seçerken aşağıdaki anahtar ve değer çiftini sağlayın (adım 9):
 
 | Anahtar                              |  Değer   |
 |----------------------------------|----------|
@@ -309,7 +309,7 @@ Microsoft Edge veya Managed Browser uygulama yapılandırması oluşturma yordam
 
 | Anahtar                                                                | Değer                                                 |
 |--------------------------------------------------------------------|-------------------------------------------------------|
-| **com. Microsoft. Intune. mam. managedbrowser. Allowgeçişli Tiononblock** | **False** , bu geçici geçişleri oluşumdan engeller |
+| **com. Microsoft. Intune. mam. managedbrowser. Allowgeçişli Tiononblock** | **False** , bu geçici geçişlerin oluşmasını engeller |
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS’ta Managed Browser kullanarak yönetilen uygulama günlüklerine erişme
 
