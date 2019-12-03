@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059338"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691718"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune 'da bilgi noktası olarak çalıştırılacak Windows 10 ve üzeri cihaz ayarları
 
@@ -67,7 +67,7 @@ Cihazda yalnızca bir uygulama çalıştırır.
     Bu seçenekler hakkında daha fazla bilgi için bkz. [Microsoft Edge bilgi noktası modunu dağıtma](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
     > [!NOTE]
-    > Bu ayar cihazda Microsoft Edge tarayıcısını sunar. Microsoft Edge 'e özgü ayarları yapılandırmak için bir cihaz yapılandırma**profili oluşturun (** **cihaz yapılandırma** > **profiller** >  > platform Için  > **Windows 10** **cihaz kısıtlamaları**  >  **Microsoft Edge tarayıcısı**). [Microsoft Edge tarayıcısı](device-restrictions-windows-10.md#microsoft-edge-browser) , kullanılabilir ayarları listeler ve açıklar.
+    > Bu ayar cihazda Microsoft Edge tarayıcısını sunar. Microsoft Edge 'e özgü ayarları yapılandırmak için bir cihaz yapılandırma **profili oluşturun (** **cihaz yapılandırma** > **profiller** >  > **Windows 10** platform > **cihaz kısıtlamaları** >  **Microsoft Edge tarayıcısı**). [Microsoft Edge tarayıcısı](device-restrictions-windows-10.md#microsoft-edge-browser) , kullanılabilir ayarları listeler ve açıklar.
 
   - **Bilgi noktası tarayıcısı Ekle**: **bilgi noktası tarayıcı ayarları**' nı seçin. Bu ayarlar bilgi noktasındaki web tarayıcısı uygulamasını denetler. [Bilgi noktası tarayıcı uygulamasını](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) mağazadan aldığınızdan emin olun, bunu bir [Istemci uygulaması](../apps/apps-add.md)olarak Intune 'a ekleyin. Ardından, uygulamayı bilgi noktası cihazlarına atayın.
 
@@ -83,16 +83,17 @@ Cihazda yalnızca bir uygulama çalıştırır.
 
     - **Boşta kalma süresi geçince tarayıcıyı yenile**: Bilgi noktası tarayıcısı temiz bir durumda yeniden başlatılana kadar geçecek oturum başka kalma süresini (1-1440 dakika) girin. Boşta kalma süresi, kullanıcının son etkileşiminden sonra geçen dakika sayısıdır. Varsayılan olarak değer boştur veya boşluktur ve bu, boşta kalma süresinin olmadığı anlamına gelir.
 
-    - **İzin verilen web siteleri**: Belirli Web sitelerinin açılmasına izin vermek için bu ayarı kullanın. Diğer bir deyişle, cihazda web sitelerine erişimi kısıtlamak veya tamamen önlemek için bu özelliği kullanın. Örneğin `http://contoso.com*` adresindeki tüm Web sitelerinin açılmasına izin verebilirsiniz. Varsayılan olarak tüm Web sitelerine izin verilir.
+    - **İzin verilen web siteleri**: Belirli Web sitelerinin açılmasına izin vermek için bu ayarı kullanın. Diğer bir deyişle, cihazda web sitelerine erişimi kısıtlamak veya tamamen önlemek için bu özelliği kullanın. Örneğin `http://contoso.com` adresindeki tüm Web sitelerinin açılmasına izin verebilirsiniz. Varsayılan olarak tüm Web sitelerine izin verilir.
 
-      Belirli web sitelerine izin vermek için izin verilecek web sitelerini ayrı satırlarda listeleyen bir dosyayı karşıya yükleyin. Bir dosya eklemezseniz tüm web sitelerine izin verilir. Intune, joker karakter olarak `*` (yıldız işareti) destekler.
+      Belirli web sitelerine izin vermek için izin verilecek web sitelerini ayrı satırlarda listeleyen bir dosyayı karşıya yükleyin. Bir dosya eklemezseniz tüm web sitelerine izin verilir. Varsayılan olarak Intune, joker karakter destekler. Bu nedenle, etki alanını girdiğinizde `sharepoint.com`gibi, alt etki alanlarına izin ver, `contoso.sharepoint.com`, `my.sharepoint.com`vb. gibi otomatik olarak izin verilir.
 
       Örnek dosyanız, aşağıdaki listeye benzer görünmelidir:
 
       `http://bing.com`  
       `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`
+      `http://contoso.com`  
+      `https://contoso.com`  
+      `office.com`
 
     > [!NOTE]
     > Microsoft bilgi noktası tarayıcısı kullanılarak otomatik oturum açma özelliği etkinleştirilmiş Windows 10 kiosks, Microsoft Store Iş için çevrimdışı bir lisans kullanmalıdır. Bu gereksinim, otomatik oturum açma 'nın Azure Active Directory (AD) kimlik bilgileri olmayan bir yerel kullanıcı hesabı kullanması nedeniyle oluşur. Bu nedenle, çevrimiçi lisanslar değerlendirilemiyor. Daha fazla bilgi için bkz. [çevrimdışı uygulamaları dağıtma](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
@@ -141,7 +142,7 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
       Bu seçenekler hakkında daha fazla bilgi için bkz. [Microsoft Edge bilgi noktası modunu dağıtma](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
       > [!NOTE]
-      > Bu ayar cihazda Microsoft Edge tarayıcısını sunar. Microsoft Edge 'e özgü ayarları yapılandırmak için bir cihaz yapılandırma**profili oluşturun (** **cihaz yapılandırma** > **profiller** >  > platform Için  > **Windows 10** **cihaz kısıtlamaları**  >  **Microsoft Edge tarayıcısı**). [Microsoft Edge tarayıcısı](device-restrictions-windows-10.md#microsoft-edge-browser) , kullanılabilir ayarları listeler ve açıklar.
+      > Bu ayar cihazda Microsoft Edge tarayıcısını sunar. Microsoft Edge 'e özgü ayarları yapılandırmak için bir cihaz yapılandırma **profili oluşturun (** **cihaz yapılandırma** > **profiller** >  > **Windows 10** platform > **cihaz kısıtlamaları** >  **Microsoft Edge tarayıcısı**). [Microsoft Edge tarayıcısı](device-restrictions-windows-10.md#microsoft-edge-browser) , kullanılabilir ayarları listeler ve açıklar.
 
     - **Bilgi noktası tarayıcısı Ekle**: Bu ayarlar, bilgi noktasında bir Web tarayıcısı uygulamasını denetler. Bilgi noktasına web tarayıcısı uygulamasını [İstemci Uygulamaları](../apps/apps-add.md)’nı kullanarak dağıttığınıza emin olun.
 

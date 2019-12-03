@@ -18,19 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a62a048ebb15bac620ad9aad57ed3903e9568cf
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712982"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691834"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager ile iOS cihaz kaydını ayarlama
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune'u
- [Apple School Manager](https://school.apple.com/) programı aracılığıyla satın alınan iOS cihazlarını kaydetmek üzere ayarlayabilirsiniz. Intune’u Apple School Manager ile birlikte kullanarak, çok sayıda iOS cihazını hiç dokunmadan kaydedebilirsiniz. Bir öğrenci veya öğretmen cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz yönetime kaydedilir.
+Artık [Apple School Manager](https://school.apple.com/) programı aracılığıyla satın alınan iOS cihazlarını Intune ile yönetebilirsiniz. Intune’u Apple School Manager ile birlikte kullanarak, çok sayıda iOS cihazını hiç dokunmadan kaydedebilirsiniz. Bir öğrenci veya öğretmen cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz yönetime kaydedilir.
 
 Apple School Manager kaydını etkinleştirmek için Intune ve Apple School Manager portallarını kullanmanız gerekir. Cihazlarınızı, Intune ile yönetilmek üzere atayabilmeniz için seri numaraları listesi veya sipariş numarası gereklidir. Kayıt sırasında cihazlara uygulanan ayarları içeren DEP kayıt profilleri oluşturun.
 
@@ -49,9 +48,9 @@ Apple School Manager kaydı [Apple Aygıt Kayıt Programı](device-enrollment-pr
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>1\. Adım Apple belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** **Ekle** > ' yi seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde, > iOS ** > ** IOS **kaydı** > **kayıt programı belirteçleri** **Ekle** > ' yi seçin.
 
-   ![Bir kayıt programı belirteci alın.](./media/apple-school-manager-set-up-ios/image01.png)
+   ![Bir kayıt programı belirteci alın.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. **Kayıt programı belirteci** dikey penceresinde, şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtarınızı indirin**’i seçin. .pem dosyası Apple School Manager portalından güven ilişkisi sertifikası istemek için kullanılır.
      ![Kayıt Programı Belirteci dikey penceresi.](./media/apple-school-manager-set-up-ios/image02.png)
@@ -82,7 +81,7 @@ Apple School Manager kaydı [Apple Aygıt Kayıt Programı](device-enrollment-pr
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
 Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri**' ni seçin.
+1. [Microsoft Uç Nokta Yöneticisi Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **iOS** > iOS **kaydı** > **kayıt programı belirteçleri** > **cihazları** seçin.
 2. Bir belirteç seçin, **Profiller**’e ve daha sonra **Profil oluştur**’a tıklayın.
 
 3. **Profil Oluştur**’un altında, yönetim amaçları doğrultusunda profil için bir **Ad** ve **Açıklama** girin. Kullanıcılar bu ayrıntıları göremez. Azure Active Directory’de dinamik bir grup oluşturmak için **Ad** alanını kullanabilirsiniz. enrollmentProfileName parametresini, bu kayıt profiliyle cihazlara atamak amacıyla tanımlamak için profil adını kullanın. [Azure Active Directory dinamik grupları](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices) hakkında daha fazla bilgi edinin.
@@ -101,7 +100,7 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
     > [!NOTE]
     > Aşağıdakilerden herhangi birini yapmak istiyorsanız, **Apple Kurulum Yardımcısı yerine Şirket Portalı ile kimliği doğrula** ayarını **Evet** değerine ayarlayın.
     >    - çok faktörlü kimlik doğrulaması kullanma
-    >    - parolalarını değiştirmesi gereken kullanıcılara ilk oturum açışlarında bu durumu bildirme
+    >    - ilk kez oturum açarken parolalarını değiştirmesi gereken kullanıcılara bunu bildirme
     >    - kayıt sırasında kullanıcılardan süresi dolmuş parolalarını sıfırlamalarını isteme
     >
     > Apple Kurulum Yardımcısı ile kimliği doğrularken bunlar desteklenmez.
@@ -156,7 +155,7 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
 ## <a name="connect-school-data-sync"></a>Okul Veri Eşitlemeye bağlanma
 (İsteğe bağlı) Apple School Manager, sınıf ad listesi verilerini Microsoft School Data Sync (SDS) kullanarak Azure Active Directory’ye (AD) eşitlemeyi destekler. Yalnızca bir belirteci SDS ile eşitleyebilirsiniz. School Data Sync ile başka bir belirteç ayarladıysanız, SDS daha önceki belirteçten kaldırılır. Geçerli belirtecin yerini yeni bir bağlantı alır. Okul verilerini eşitlemek üzere SDS kullanmak için aşağıdaki adımları tamamlayın.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri**' ni seçin.
+1. [Microsoft Uç Nokta Yöneticisi Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **iOS** > iOS **kaydı** > **kayıt programı belirteçleri** > **cihazları** seçin.
 2. Bir Apple School Manager belirtecini ve daha sonra **School Data Sync**’i seçin.
 3. **School Data Sync** altında **İzin Ver**’i seçin. Bu ayar, Intune’un Office 365'teki SDS’ye bağlanmasını sağlar.
 4. Apple Okul Yöneticisi ile Azure AD arasında bir bağlantıyı etkinleştirmek için **Microsoft okul veri eşitlemesini ayarla**' yı seçin. [Okul veri eşitlemesini ayarlama](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)hakkında daha fazla bilgi edinin.
@@ -166,7 +165,7 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
 
 Intune’a Apple School Manager cihazlarınızı yönetme izni verildikten sonra, yönetilen cihazlarınızı Intune’da görmek için Intune’u Apple hizmetiyle eşitleyin.
 
-[Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde) **cihaz kaydı** ** >  > ** **kayıt programı belirteçleri** ' ni seçin > listede bir belirteç seçin > **cihazlar** > **Eşitle**. Kayıt programı cihazları düğümünün ve eşitleme bağlantısının ekran görüntüsünü ![.](./media/apple-school-manager-set-up-ios/image06.png)
+[Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde), **iOS** > iOS **kaydı** > **kayıt programı belirteçleri** ' ni seçin > listede bir **belirteç seçin >** **cihazlar** ** >  > .** Kayıt programı cihazları düğümünün ve eşitleme bağlantısının ekran görüntüsünü ![.](./media/apple-school-manager-set-up-ios/image06.png)
 
 Intune, Apple’ın kabul edilebilir kayıt programı trafiği şartlarına uygun hareket etmek için aşağıdaki kısıtlamaları getirir:
 - Tam eşitleme en sık yedi günde bir çalıştırılabilir. Tam eşitleme sırasında Intune, kendine atanmış tüm Apple seri numaralarını yeniler. Önceki tam eşitlemenin üzerinden yedi gün geçmeden bir tam eşitleme girişiminde bulunulursa, Intune yalnızca henüz Intune’da listelenmeyen seri numaralarını yeniler.
@@ -179,7 +178,7 @@ Intune, Apple’ın kabul edilebilir kayıt programı trafiği şartlarına uygu
 ## <a name="assign-a-profile-to-devices"></a>Cihazlara profil atama
 Intune tarafından yönetilen Apple School Manager cihazları kaydedilmeden önce bu cihazlara bir kayıt profili atanmalıdır.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** ' ni seçin > listeden bir belirteç seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde, > **iOS** > iOS **kaydı** > **kayıt programı belirteçleri** ' ni seçin > listeden **bir belirteç seçin** .
 2. **Cihazlar** > listeden cihazları seçin > **Profil ata**’yı seçin.
 3. **Profil ata** altında cihazlar için bir profil seçin ve daha sonra **Ata**’ya tıklayın.
 
