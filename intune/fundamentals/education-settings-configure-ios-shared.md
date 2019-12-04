@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86b61f628dc559bf0520dbe16ef58644bd360269
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188442"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784264"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 
@@ -69,7 +69,7 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 ### <a name="configure-general-settings"></a>Genel ayarları yapılandırma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
+3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 5. Profiller bölmesinde **Profil oluştur**’u seçin.
 6. **Profil oluştur** bölmesinde, iOS eğitim profili için **Ad** ve **Açıklama** girin.
@@ -132,7 +132,7 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 ### <a name="complete-certificate-setup"></a>Sertifika Kurulumunu Tamamlama
 
 1. **Eğitim** bölmesinde **Tamam**'ı seçin.
-2. **Profil oluştur** bölmesinde **Oluştur**’u seçin.
+2. **Profil Oluştur** bölmesinde **Oluştur**’u seçin.
 
 Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 
@@ -179,7 +179,7 @@ Cihaz artık cihaz kategorisiyle ilişkilendirilmiştir. Bu işlemi, oluşturdu�
 ## <a name="step-6--create-classroom-profiles"></a>6\. Adım – Sınıf profilleri oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
+3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
 4. **Cihaz yapılandırması** bölmesinde **Yönet** > **Sepet Profilleri**'ni seçin.
 5. Profiller bölmesinde **Profil Oluştur**’u seçin.
 6. **İlişkilendirme Oluştur** bölmesinde, bir **Ad** ve **Açıklama** girin.
@@ -194,7 +194,7 @@ Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>7\. Adım - Sepet Profilini Sınıflara Atama
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Intune** bölmesinde **Cihaz yapılandırması**’nı seçin.
+3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
 4. **Cihaz yapılandırması** bölmesinde, **İzle** > **Atama durumu**'nu seçin.
 5. **Atama durumu** bölmesinde, oluşturduğunuz **Sepet Profili**'ni seçin.
 6. **Sepet Profili** bölmesinde **Atamalar**'ı seçin, sonra **Dahil Et**'in altından **Dahil edilecek grupları seç**'i seçin.

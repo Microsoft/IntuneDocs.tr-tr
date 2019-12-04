@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfe795a812572fa92c51a23b9e15b7fe48254174
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a167fa4f0ddc9832ea70b4281a42b5c0aae5bb81
+ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495773"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74694939"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için özel ayarlar kullanma
 
@@ -57,12 +57,12 @@ Bu makalede, Apple Configurator ve Apple Profile Manager kullanımı hakkında b
 ## <a name="custom-configuration-profile-settings"></a>Özel yapılandırma profili ayarları
 
 - **Özel yapılandırma profili adı**: İlke için bir ad girin. Bu ad, cihazda ve Intune durumunda gösterilir.
-- **Yapılandırma profili dosyası**: Apple Configurator veya Apple Profile Manager’ı kullanarak oluşturduğunuz yapılandırma profiline gidin. İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
+- **Yapılandırma profili dosyası**: Apple Configurator veya Apple Profile Manager’ı kullanarak oluşturduğunuz yapılandırma profiline gidin. En büyük dosya boyutu 1000000 bayttır (yalnızca 1MB ' in altında). İçeri aktardığınız dosya, **Dosya içeriği** alanında görüntülenir.
 
-  Ayrıca, özel yapılandırma dosyalarınıza cihaz belirteçleri ekleyebilirsiniz. Cihaz belirteçleri cihaza özgü bilgileri eklemek için kullanılır. Örneğin, seri numarasını göstermek için `{{serialnumber}}` girin. Cihazda, metin her bir cihaz için benzersiz olan `123456789ABC` ' a benzer şekilde görünür. Değişken girerken, `{{ }}` ' ı kullandığınızdan emin olun. [Uygulama yapılandırma belirteçleri](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) , kullanılabilecek değişkenlerin bir listesini içerir. @No__t-0 veya diğer cihaza özgü bir değeri de kullanabilirsiniz.
+  Ayrıca, özel yapılandırma dosyalarınıza cihaz belirteçleri ekleyebilirsiniz. Cihaz belirteçleri cihaza özgü bilgileri eklemek için kullanılır. Örneğin, seri numarasını göstermek için `{{serialnumber}}`girin. Cihazda, metin her bir cihaz için benzersiz olan `123456789ABC` benzer şekilde görünür. Değişken girerken `{{ }}`kaşlı ayraç kullandığınızdan emin olun. [Uygulama yapılandırma belirteçleri](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) , kullanılabilecek değişkenlerin bir listesini içerir. `deviceid` veya başka bir cihaza özgü değeri de kullanabilirsiniz.
 
   > [!NOTE]
-  > Değişkenler kullanıcı arabiriminde doğrulanmaz ve büyük/küçük harfe duyarlıdır. Sonuç olarak, yanlış girişle kaydedilmiş profiller görebilirsiniz. Örneğin, `{{deviceid}}` yerine `{{DeviceID}}` girerseniz, aygıtın benzersiz KIMLIĞI yerine değişmez dize gösterilir. Doğru bilgileri girdiğinizden emin olun.
+  > Değişkenler kullanıcı arabiriminde doğrulanmaz ve büyük/küçük harfe duyarlıdır. Sonuç olarak, yanlış girişle kaydedilmiş profiller görebilirsiniz. Örneğin, `{{deviceid}}`yerine `{{DeviceID}}` girerseniz, aygıtın benzersiz KIMLIĞI yerine değişmez dize gösterilir. Doğru bilgileri girdiğinizden emin olun.
 
 Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil oluşturulur ve profiller listesinde gösterilir.
 

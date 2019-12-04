@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dd9a97fdafff784bab2eae1d466855082fd397a
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 6814b4d98b8512ce95119b05cc299964e486ac64
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117830"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784230"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom uygulaması için Intune ayarlarını yapılandırma
 

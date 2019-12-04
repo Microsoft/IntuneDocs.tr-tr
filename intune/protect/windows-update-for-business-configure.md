@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291093"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691781"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune 'da Windows 10 yazılım güncelleştirmelerini yönetme
 
@@ -122,7 +122,7 @@ Bir halkanın Intune 'dan silinmesi, güncelleştirme halkasının atandığı c
 1. Bir güncelleştirme halkasının genel bakış sayfasını görüntülerken **Sil**' i seçin.
 2. **Tamam**’ı seçin.
 
-#### <a name="pause"></a>Duraklat
+#### <a name="pause"></a>Tamazsınız
 
 Atanan cihazların, halyi duraklatışınızda 35 güne kadar bir özellik güncelleştirmesi veya kalite güncelleştirmeleri almasını engellemek için **Duraklat** ' ı seçin. En fazla gün sayısı geçtikten sonra duraklatma işlevi otomatik olarak sona erer ve cihaz, kullanılabilecek güncelleştirmeleri bulmak için Windows Güncelleştirmeleri’ni tarar. Bu taramanın ardından güncelleştirmeleri yeniden duraklatabilirsiniz.
 Duraklatılmış bir güncelleştirme halkasını devam ettirdikten sonra bu halkayı yeniden duraklatabilirsiniz, duraklatma süresi 35 güne sıfırlanır.
@@ -138,7 +138,7 @@ Bir güncelleştirme türü duraklatıldığında, bu halkaya ilişkin genel bak
 > [!IMPORTANT]
 > Bir duraklatma komutu verdikten sonra, cihazlar bu komutu hizmete bir dahaki sefer denetduklarında alır. Bu nedenle, hizmete giriş yapmadan önce, zamanlanmış bir güncelleştirmenin yüklenmesi mümkündür. Ayrıca, hedeflenen bir cihaz duraklatma komutunu verdiğiniz sırada kapalıysa bu cihaz açıldığında Intune’u denetlemeden önce, zamanlanmış güncelleştirmeleri indirip yükleyebilir.
 
-#### <a name="resume"></a>Sürdür
+#### <a name="resume"></a>Bilmeniz
 
 Bir güncelleştirme halkası duraklatıldığında, bu halkaya yönelik özellik ve kalite güncelleştirmelerini etkin işleme geri yüklemek için **özgeçmişi** ' ı seçebilirsiniz. Bir güncelleştirme halkasını devam ettirdikten sonra, bu halkayı yeniden duraklatabilirsiniz.
 
@@ -148,7 +148,7 @@ Bir güncelleştirme halkası duraklatıldığında, bu halkaya yönelik özelli
 2. **Özelliklerin** veya **kalite** güncelleştirmelerinin her birini sürdürmesini sağlamak için kullanılabilir seçenekler arasından seçim yapın ve ardından **Tamam**' ı seçin.
 3. Bir güncelleştirme türüne devam ettikten sonra, diğer güncelleştirme türünü sürdürmek için yeniden devam etmeyi seçebilirsiniz.
 
-#### <a name="extend"></a>Genişletme  
+#### <a name="extend"></a>Genişletmeyi  
 
 Bir güncelleştirme halkası duraklatıldığında, bu güncelleştirme halkası için her iki özellik ve kalite güncelleştirmesi için de duraklatma süresini 35 gün olarak sıfırlamak için **Genişlet** ' i seçebilirsiniz.
 
@@ -214,9 +214,7 @@ Bir cihaz Windows 10 özellik güncelleştirmeleri ilkesi aldığında:
   - **Özellik Güncelleştirmesi erteleme süresi (gün)** **0**olarak ayarlanmalıdır.
   - Güncelleştirme halkası için özellik güncelleştirmeleri *çalışıyor*olmalıdır. Bunların duraklamaları gerekir.
 
-- *Windows 10 özellik güncelleştirmeleri* Ilkesi, Autopilot ile desteklenmez. Intune, ilkeyi şu şekilde dağıtmaz:
-  - Autopilot tarafından sağlanmakta olan cihazlar.
-  - Daha önce Autopilot ile sağlanmış olan cihazlar.
+- Windows 10 özellik güncelleştirme ilkeleri, ilk çalıştırma deneyimi (OOBE) sırasında uygulanamıyor ve yalnızca bir cihazın sağlama işlemini tamamladıktan (genellikle bir gün) sonra ilk Windows Update taramaya uygulanır. Ayrıca, AutoPilot ile sağlanan cihazlar ilkeyi almaz.
 
   Gelecekte desteklenip desteklenmediğini öğrenmek için bu sınırlama incelenmekte.
 

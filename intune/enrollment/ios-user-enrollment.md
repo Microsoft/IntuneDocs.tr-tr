@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e538204306ce80d6a13739fc981edf2748a622de
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713462"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691741"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>İOS ve ıpados Kullanıcı kaydını ayarlama (Önizleme)
 
@@ -43,7 +43,7 @@ Kullanıcı kaydında kullanılabilen seçenekler hakkında daha fazla bilgi iç
 
 Kayıt profili, kayıt sırasında bir cihaz grubuna uygulanan ayarları tanımlar. 
 
-1. [Microsoft Uç Nokta Yöneticisi Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** ** >  > ** **kayıt türleri (Önizleme)**  > **Profil oluştur** > **iOS**' u seçin. Bu profil, iOS ve ıpados son kullanıcılarınızın kurumsal bir Apple yöntemiyle kaydolmayan cihazlarda sahip olacağı kayıt deneyimini belirtebileceğiniz yerdir. Değişiklik yapmak isterseniz, bu profili oluşturduktan sonra düzenleyebilirsiniz.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, iOS** >  ** > iOS** **kaydı** > **kayıt türleri (Önizleme)**  > **Profil oluştur** > **iOS/ıpados**' ı seçin. Bu profil, iOS ve ıpados son kullanıcılarınızın kurumsal bir Apple yöntemiyle kaydolmayan cihazlarda sahip olacağı kayıt deneyimini belirtebileceğiniz yerdir. Değişiklik yapmak isterseniz, bu profili oluşturduktan sonra düzenleyebilirsiniz.
 
     ![Apple kayıt profili oluştur](./media/ios-user-enrollment/create-profile.png)
 
@@ -88,7 +88,7 @@ Kayıt profili, kayıt sırasında bir cihaz grubuna uygulanan ayarları tanıml
 
 Birden fazla kayıt türü profili oluşturduktan sonra, uygulandıkları öncelik sırasını değiştirebilirsiniz.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt türleri (Önizleme)** öğesini seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde, **iOS > IOS** **kaydı** > **kayıt türleri (Önizleme)**  > **cihazları** ' nı seçin.
 2. Listedeki profilleri, uygulanmasını istediğiniz sırada sürükleyip bırakın.
 
 Herhangi bir kullanıcının profilleri arasındaki çakışmalar söz konusu olduğunda, Kullanıcı için daha yüksek öncelikli profil uygulanır.

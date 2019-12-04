@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32893c231ae15591aa331bcf7699d9e624efd88
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563689"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781252"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS uygulama koruma ilkesi ayarları
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -88,7 +88,7 @@ Intune uygulama koruma ilkesinin, belirli senaryolarda veri aktarımına hedef v
 | <ul><ui> **En düşük PIN uzunluğunu seçin** | PIN dizisindeki basamak sayısı alt sınırını belirtin.  | **4**  |
 | <ul><ui> **Erişim için PIN yerine Touch ID (iOS 8+)** | Kullanıcının uygulama erişiminde PIN yerine [Touch ID](https://support.apple.com/HT201371) kullanmasına izin vermek için **İzin Ver**'i seçin.    | **İzin ver**  |
 |<ul><ui><ul><ui>**zaman aşımından sonra PIN Ile Touch ID 'Yi geçersiz kıl**|  Bu ayarı kullanmak için **Gerekli**'yi seçin ve boşta kalma zaman aşımını yapılandırın.  |**Gerekli**  |
-| <ul><ui><ul><ui><ul><ui> **Zaman aşımı (dakika olarak eylemsizlik)** |  Bir geçiş kodu veya sayısal (yapılandırılmış) PIN 'inin bir parmak izi kullanımını geçersiz kılabileceği dakika cinsinden bir süre belirtin. Bu zaman aşımı değeri, ' erişim gereksinimlerini sonra yeniden denetle (dakika dışı) ' altında belirtilen değerden büyük olmalıdır.  |**ila**  |
+| <ul><ui><ul><ui><ul><ui> **Zaman aşımı (dakika olarak eylemsizlik)** |  Bir geçiş kodu veya sayısal (yapılandırılmış) PIN 'inin, erişim yöntemi olarak parmak izi veya yüz kullanımını geçersiz kılabileceği dakika cinsinden bir süre belirtin. Bu zaman aşımı değeri, ' erişim gereksinimlerini sonra yeniden denetle (dakika dışı) ' altında belirtilen değerden büyük olmalıdır.  |**ila**  |
 | <ul><ui><ul>**erişim IÇIN PIN yerine yüz kimliği <ui>(iOS 11 +)** | iOS cihazlarında kullanıcıların kimliklerini doğrularken kullanıcının yüz tanıma teknolojisini kullanmasına izin vermek için **İzin Ver**'i seçin. İzin verilirse, Face ID özellikli cihazlarda uygulamaya erişmek için Face ID'nin kullanılması gerekir.    | **İzin ver**  |
 | <ul><ui>**Belirtilen sayıda gün sonra PIN sıfırlama** | Kullanıcıların gün olarak belirlenen bir süre sonunda uygulama PIN değerlerini değiştirmelerini zorunlu tutmak için **Evet**'i seçin.  <br><br>*Evet* olarak ayarlandığında, PIN'i sıfırlamak gerekmeden önce geçecek gün sayısını yapılandırırsınız. |**Hayır**  |  
 | <ul><ui><ul><ui>**Gün sayısı** | PIN'i sıfırlamak gerekmeden önce geçecek gün sayısını yapılandırın.  |**90**  |

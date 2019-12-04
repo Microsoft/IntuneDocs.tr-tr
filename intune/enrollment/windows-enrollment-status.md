@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: a3a470c9a92f7792af2b371acf873807ad344afb
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547992"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781116"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durumu sayfası ayarlama
  
@@ -200,7 +200,7 @@ Aşağıda bilinen sorunlar verilmiştir.
 - Microsoft Defender uygulama denetimi 'nin yapılandırılması, Autopilot sırasında yeniden başlatma istemi oluşmasına neden olur. Microsoft Defender uygulamasının (AppLocker CSP) yapılandırılması için yeniden başlatma gerekir. Bu ilke yapılandırıldığında, Autopilot sırasında cihazın yeniden başlatılmasına neden olabilir. Şu anda, yeniden başlatmayı bastırmayı veya ertelemeyi yapmanın bir yolu yoktur.
 - DeviceLock ilkesi (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), bir ESP profilinin bir parçası olarak etkinleştirildiğinde, iki nedenden dolayı OOBE veya Kullanıcı masaüstü oturum açma işlemi unexpectantly başarısız olabilir.
   - Cihaz, ESP cihaz kurulum aşamasından çıkmadan önce yeniden başlatmadıysanız, kullanıcıdan Azure AD kimlik bilgilerini girmesi istenebilir. Bu istem, kullanıcının Windows ilk oturum açma animasyonunu gördüğü başarılı bir otomatik oturum açma yerine oluşur.
-  - Kullanıcı Azure AD kimlik bilgilerini girdikten sonra, ancak ESP cihaz kurulum aşamasından çıkmadan önce, bir cihaz yeniden başlatıldığında, oto logn başarısız olur. Bu hata, ESP cihaz Kurulum aşaması hiç tamamlanmadığından oluşur. Geçici çözüm, cihazı sıfırlamadır.
+  - Kullanıcı Azure AD kimlik bilgilerini girdikten sonra, ancak ESP cihaz kurulum aşamasından çıkmadan önce yeniden oturum açma işlemi başarısız olur. Bu hata, ESP cihaz Kurulum aşaması hiç tamamlanmadığından oluşur. Geçici çözüm, cihazı sıfırlamadır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Windows kayıt sayfalarını ayarladıktan sonra, Windows cihazlarını nasıl yöneteceğinizi öğrenin. Daha fazla bilgi için bkz. [Microsoft Intune cihaz yönetimi nedir?](../remote-actions/device-management.md)

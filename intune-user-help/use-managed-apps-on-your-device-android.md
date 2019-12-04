@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501887"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781218"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android cihazınızdaki yönetilen uygulamaları kullanma
 Yönetilen uygulamalar, kuruluşunuzun güvenlik gereksinimlerini karşılamak ve iş veya okul verilerini korumak üzere yapılandırılmıştır. Bu uygulamalar, otomatik olarak yüklemeniz veya kullanmanız için cihazınızda sunulmuştur. 
@@ -39,9 +39,7 @@ Veri korumasını en üst düzeye çıkarmak için kuruluşunuz, birkaç yöneti
 Kuruluşlar, bir iş dosyasını açmak veya bir web bağlantısına erişmek gibi işlemler için yönetilen uygulamalar kullanmanızı gerektirebilir. Gereken uygulamaya sahip değilseniz işleme devam edemeyebilirsiniz. Bazı yönetilen uygulamalar yüklenmeye açık olsa da gerekli değildir.
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>Yönetilen uygulama kullandığımı nasıl anlarım?
-Yönetilen uygulamalarda iş veya okul verilerinize ilk eriştiğinizde, aşağıdaki ekran görüntüsündekine benzer bir ileti alırsınız. İleti, devam etmek için uygulamayı yeniden başlatmanızı ister.
-
-![Bir kullanıcı cihazında yönetilen uygulama açtığında görüntülenen iletinin ekran görüntüsü. İletide “Kuruluşunuz artık bu uygulama içerisindeki verilerini korumuyor. Devam etmek için uygulamayı yeniden başlatmanız gerekiyor.” ifadesi ve ardından Tamam düğmesi yer alır.](./media/managed-apps-message.png)
+Yönetilen bir uygulamadaki iş veya okul verilerine erişmeye çalıştığınızda, uygulamanın kuruluşunuz tarafından korunduğunu belirten bir ekran iletisi alırsınız. 
 
 ## <a name="commonly-managed-apps"></a>Yaygın olarak yönetilen uygulamalar  
 Okullar ve iş yerlerinde yaygın olarak gerekli veya kullanılabilir hale getirilen yönetilen uygulama örnekleri:

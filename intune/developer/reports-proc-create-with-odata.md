@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490481"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784281"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>OData akışından Power BI ile bir Intune raporu oluşturma
 
@@ -69,7 +69,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adres
 
     ![Kuruluş hesabı kimlik bilgileri](./media/reports-proc-create-with-odata/reports-create-02-org-account.png)
 
-10. **Bağlan**’ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
+10. **Bağlan**' ı seçin. Gezgin açılacak ve size Intune Veri Ambarı’ndaki tabloların listesini gösterecektir.
 
     ![Gezgin 'in ekran görüntüsü-veri ambarı tablolarının listesi](./media/reports-proc-create-with-odata/reports-create-02-loadentities.png)
 

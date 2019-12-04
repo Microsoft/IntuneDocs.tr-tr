@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 6fb025e6b698eba3deeabbda788fcd990a19105f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188169"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781184"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Windows 10 (ve üzeri) cihaz ayarları
 
@@ -186,6 +186,9 @@ Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-manag
 
 - **El ile kök sertifika yüklemesi** (yalnızca mobil): **blok** , son kullanıcıların kök sertifikaları ve ara Cap sertifikalarını el ile yüklemesini engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
 - **Kamera**: **blok** son kullanıcıların cihazdaki kamerayı kullanmasını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
+
+  [Kamera CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
+
 - **OneDrive dosya eşitleme**: **blok** son kullanıcıların dosyaları OneDrive 'a cihazdan eşitlemesini engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
 - **Çıkarılabilir depolama birimi**: **blok** , son kullanıcıların cihazla SD kartlar gibi dış depolama cihazlarını kullanmasını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
 - **Coğrafi konum**: **blok** son kullanıcıların cihazdaki konum hizmetlerini açmasını önler. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
@@ -364,7 +367,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
 - **Canlı kutucuk veri toplamaya Izin ver**: **Evet** (varsayılan), Microsoft Edge 'In Başlat menüsüne sabitlenmiş canlı kutucuktan bilgi toplamasına izin verir. **Hayır** , kullanıcılara sınırlı bir deneyim sağlayabilen bu bilgilerin toplanmasını engeller.
 - **Kullanıcı sertifika hatalarını geçersiz kılabilir**: **Evet** (varsayılan), kullanıcıların Güvenli Yuva Katmanı/Aktarım katmanı GÜVENLIĞI (SSL/TLS) hataları olan Web sitelerine erişmesine izin verir. **Hayır** (Artırılmış güvenlik için önerilir), kullanıcıların Web sitelerine SSL veya TLS hatalarıyla erişmesini önler.
 
-### <a name="additional"></a>Ek
+### <a name="additional"></a>Fazladan
 
 - **Microsoft Edge tarayıcısına Izin ver** (yalnızca mobil): **Evet** (varsayılan) mobil cihazda Microsoft Edge Web tarayıcısının kullanılmasına izin verir. **Hayır** , cihazda Microsoft Edge kullanımını engeller. **Hayır**' ı seçerseniz, diğer tek ayarlar yalnızca masaüstü için geçerlidir.
 - **Adres çubuğu açılır listesine Izin ver**: **Evet** (varsayılan), Microsoft Edge 'in adres çubuğu açılır listesini öneriler listesiyle göstermesini sağlar. **Hayır** , Microsoft Edge 'in, yazarken açılan listede öneriler listesi göstermesini engeller. **Hayır**olarak ayarlandığında, şunları yapabilirsiniz:
@@ -448,7 +451,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [DeviceLock ILKESI C
 - **Paket adı**: uygulama paketi aile adı.
 - **Uygulama adı**: uygulamanın adı.
 
-### <a name="exceptions"></a>Özel durumlar
+### <a name="exceptions"></a>Larý
 
 - **Hesap bilgileri**: Bu uygulamanın kullanıcı adına, resmine ve diğer kişi bilgilerine erişip erişemeyeceğini tanımlayın.
 - **Arka plan uygulamaları**: Bu uygulamanın arka planda çalıştırılıp çalıştırılamayacağını tanımlayın.
@@ -492,7 +495,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Gizlilik ILKESI CSP
 
 Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz. Ayrıca, **uygulama başına gizlilik özel durumlarını**kullanarak uygulama temelinde özel durumlar tanımlayın.
 
-### <a name="exceptions"></a>Özel durumlar
+### <a name="exceptions"></a>Larý
 
 - **Hesap bilgileri**: Bu uygulamanın kullanıcı adına, resmine ve diğer kişi bilgilerine erişip erişemeyeceğini tanımlayın.
 - **Arka plan uygulamaları**: Bu uygulamanın arka planda çalıştırılıp çalıştırılamayacağını tanımlayın.

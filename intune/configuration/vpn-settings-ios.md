@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059809"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781150"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihazlarına VPN ayarları ekleme
 
@@ -106,7 +106,7 @@ Aşağıdaki listede gösterilen ayarlar, seçtiğiniz VPN bağlantı türüne g
 
 ## <a name="ikev2-settings"></a>Ikev2 ayarları
 
-Bu ayarlar  >  Ikev2 **bağlantı türünü**seçtiğinizde geçerlidir.
+Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
 
 - **Uzak tanımlayıcı**: Ikev2 sunucusunun ağ IP ADRESINI, FQDN 'Sini, userfqdn 'SINI veya ASN1DN girin. Örneğin `10.0.0.3` veya `vpn.contoso.com` girin. Genellikle [**bağlantı adı**](#base-vpn-settings) ile aynı değeri girersiniz (Bu makalede). Ancak, Ikev2 Sunucu ayarlarınıza göre değişir.
 
@@ -136,8 +136,8 @@ Bu ayarlar  >  Ikev2 **bağlantı türünü**seçtiğinizde geçerlidir.
   - **Orta** (varsayılan): 10 dakikada bir canlı tutma iletisi gönderir.
   - **Yüksek**: her 60 saniyede bir KeepAlive iletisi gönderir.
 
-- **TLS sürüm aralığı en az**: kullanılacak en düşük TLS sürümünü girin. `1.0`, `1.1`veya `1.2`girin. Boş bırakılırsa, `1.0` ' ın varsayılan değeri kullanılır.
-- **En yüksek TLS sürüm aralığı**: kullanılacak en fazla TLS sürümünü girin. `1.0`, `1.1`veya `1.2`girin. Boş bırakılırsa, `1.2` ' ın varsayılan değeri kullanılır.
+- **TLS sürüm aralığı en az**: kullanılacak en düşük TLS sürümünü girin. `1.0`, `1.1`veya `1.2`girin. Boş bırakılırsa, `1.0` varsayılan değeri kullanılır.
+- **En yüksek TLS sürüm aralığı**: kullanılacak en fazla TLS sürümünü girin. `1.0`, `1.1`veya `1.2`girin. Boş bırakılırsa, `1.2` varsayılan değeri kullanılır.
 - **Kusursuz iletme gizliliği**: kusursuz iletme gizliliği 'NI (PFS) açmak için **Etkinleştir** ' i seçin. PFS, bir oturum anahtarının güvenliğinin tehlikeye girdiği etkiyi azaltan bir IP güvenlik özelliğidir. **Devre dışı bırak** (varsayılan) PFS kullanmaz.
 - **Sertifika iptal denetimi**: VPN bağlantısının başarılı olmasına izin vermeden önce sertifikaların iptal edilmediğinden emin olmak için **Etkinleştir** ' i seçin. Bu denetim en iyi çabadır. Sertifikanın iptal edilip edilmediğini belirlemekten önce VPN sunucusu zaman aşımına uğrarsa, erişim izni verilir. **Devre dışı bırak** (varsayılan) iptal edilen sertifikaları denetlemez.
 
@@ -155,8 +155,8 @@ Bu ayarlar  >  Ikev2 **bağlantı türünü**seçtiğinizde geçerlidir.
     - SHA2-256 (varsayılan)
     - SHA2-384
     - SHA2-512
-  - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2` ' dır.
-  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440` ' dır.
+  - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2`.
+  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440`.
 
 - **Alt güvenlik ilişkilendirmeleri için ayrı bir parametre kümesi yapılandırın**: IOS, Ike bağlantısı için ayrı parametreleri ve tüm alt bağlantıları yapılandırmanıza olanak tanır. 
 
@@ -174,12 +174,12 @@ Bu ayarlar  >  Ikev2 **bağlantı türünü**seçtiğinizde geçerlidir.
     - SHA2-256 (varsayılan)
     - SHA2-384
     - SHA2-512
-  - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2` ' dır.
-  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440` ' dır.
+  - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2`.
+  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Otomatik VPN ayarları
 
-- **Uygulama başına VPN**: Uygulama başına VPN’i etkinleştirir. Belirli uygulamalar açıldığında VPN bağlantısının otomatik olarak tetiklenmesine izin verir. Ayrıca uygulamaları bu VPN profiliyle ilişkilendirir. Daha fazla bilgi için bkz. [iOS için uygulama başına VPN ayarlama yönergeleri](vpn-setting-configure-per-app.md).
+- **Uygulama başına VPN**: Uygulama başına VPN’i etkinleştirir. Belirli uygulamalar açıldığında VPN bağlantısının otomatik olarak tetiklenmesine izin verir. Ayrıca uygulamaları bu VPN profiliyle ilişkilendirir. Ikev2 üzerinde uygulama başına VPN desteklenmez. Daha fazla bilgi için bkz. [iOS için uygulama başına VPN ayarlama yönergeleri](vpn-setting-configure-per-app.md). 
   - **Sağlayıcı Türü**: Yalnızca Pulse Secure ve Özel VPN için kullanılabilir.
   - Pulse Secure veya Özel VPN ile iOS **uygulama başına VPN** profillerini kullanırken uygulama katmanı tünelini (app-proxy) veya paket düzeyi tüneli (packet-tunnel) seçin. **ProviderType** değerini uygulama katmanı tüneli için **app-proxy** olarak veya paket katmanı tüneli için **packet-tunnel** ayarlayın. Hangi değeri kullanmanız gerektiğini bilmiyorsanız VPN sağlayıcınızın belgelerine bakın.
   - **Bu VPN’i tetikleyecek Safari URL’leri**: Bir veya daha fazla web sitesi URL’si ekleyin. Bu URL’ler cihazda Safari tarayıcıyla ziyaret edildiğinde, VPN bağlantısı otomatik olarak kurulur.

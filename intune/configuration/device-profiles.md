@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
+ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059890"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74694956"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune'daki cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama
 
@@ -49,7 +49,7 @@ Yöneticiler, bu şablonlar sayesinde grup ilkelerine benzeyen ancak tamamen bul
 
 Bu özellik şunları destekler:
 
-- Desteklenen bellenim üzerinde Windows 10 1809 ve üzeri.
+- Windows 10 ve üzeri
 
 ## <a name="certificates"></a>Sertifikalar
 
@@ -102,7 +102,7 @@ Bu özellik şunları destekler:
 
 Bu özellik şunları destekler:
 
-- Windows 10 ve üzeri
+- Desteklenen bellenim üzerinde Windows 10 1809 ve üzeri
 
 ## <a name="device-restrictions"></a>Cihaz kısıtlamaları
 

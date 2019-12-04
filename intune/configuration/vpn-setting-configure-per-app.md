@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059866"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781167"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune 'da iOS cihazları için uygulama başına sanal özel ağ (VPN) ayarlama
 
@@ -37,6 +37,9 @@ VPN 'nizin uygulama başına VPN 'i destekleyip desteklemediğini görmek için 
 Bu makalede, uygulama başına VPN profili oluşturma ve bu profili uygulamalarınıza atama işlemlerinin nasıl yapılacağı gösterilir. Son kullanıcılarınız için sorunsuz bir uygulama başına VPN deneyimi oluşturmak için bu adımları kullanın. Uygulama başına VPN 'yi destekleyen çoğu VPN için, Kullanıcı bir uygulama açar ve VPN 'ye otomatik olarak bağlanır.
 
 Bazı VPN 'Ler uygulama başına VPN ile Kullanıcı adı ve parola doğrulamasına izin verir. Yani, kullanıcıların VPN 'ye bağlanmak için bir Kullanıcı adı ve parola girmesi gerekir.
+
+> [!IMPORTANT]
+> İOS için IKEv2 VPN profilleri için uygulama başına VPN desteklenmez.
 
 ## <a name="per-app-vpn-with-zscaler"></a>Zscaler ile uygulama başına VPN
 
@@ -116,21 +119,21 @@ VPN profili, uygulama başına VPN özelliğinin iOS uygulaması tarafından kul
 
     ![Intune 'da iOS cihazlarda otomatik VPN 'yi uygulama başına VPN olarak ayarlayın](./media/vpn-setting-configure-per-app/vpn-per-app-automatic.png)
 
-6. **Tamam** > **Tamam** > **Oluştur**' u seçin.
+6.  > **Tamam** ' **ı seçin** > **Oluştur**' a tıklayın.
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Bir uygulamayı VPN profiliyle ilişkilendirme
 
 VPN profilinizi ekledikten sonra, uygulamayı ve Azure AD grubunu bu profil ile ilişkilendirin.
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), **uygulamalar** > **tüm uygulamalar**' ı seçin.
-2. > **Atamaları** > **Grup Ekle**listesinden bir uygulama seçin.
+2. Listeden bir uygulama seçin > **atamaları** > **Grup Ekle**' ye tıklayın.
 3. **Atama türü**' nde, **gerekli** veya **Kayıtlı cihazlar için kullanılabilir**' ı seçin.
 4. **Dahil edilen grupları** seçin > **dahil edilecek grupları** seçin > [oluşturduğunuz](#create-a-group-for-your-vpn-users) grubu seçin (Bu makalede) > **seçin**.
 5. **VPN**'lerde, [oluşturduğunuz](#create-a-per-app-vpn-profile) uygulama başına VPN profilini seçin (Bu makalede).
 
     ![Microsoft Intune içindeki uygulama başına VPN profiline bir uygulama atama](./media/vpn-setting-configure-per-app/vpn-per-app-app-to-vpn.png)
 
-6. **Tamam** > **Kaydet**' i seçin.
+6. **Kaydet** > **Tamam ' ı** seçin.
 
 Aşağıdaki koşulların tümü mevcut olduğunda, bir uygulama ile bir profil arasındaki ilişki sonraki cihaz iade işlemi sırasında kaldırılır:
 

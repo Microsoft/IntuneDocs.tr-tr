@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 514977be976c83f5cd8dcb8d56ab5c232ff0d193
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 68e2e768067a88b8ae58adeb38c17d90ac995a30
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562472"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781235"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune’a web uygulamaları ekleme
 
@@ -33,10 +33,13 @@ Intune, web uygulamaları da dahil olmak üzere çeşitli uygulama türlerini de
 
 Kullanıcılarınız için uygulamaları yönetebilmek ve atayabilmek için önce uygulamayı Intune’a ekleyin. 
 
-Intune, kullanıcının cihazında Web uygulaması için bir kısayol oluşturur. İOS cihazlarında, giriş ekranına Web uygulaması için bir kısayol eklenir. Android cihazlarda, Intune şirket portalı pencere öğesine Web uygulaması için bir kısayol eklenir ve pencere öğesinin Kullanıcı tarafından el ile sabitlenilmesi gerekir. Windows cihazlarında, Web uygulamasının bir kısayolu Başlat menüsüne yerleştirilir.
+Intune, kullanıcının cihazında Web uygulaması için bir kısayol oluşturur. İOS cihazlarında, giriş ekranına Web uygulaması için bir kısayol eklenir. Android Cihaz Yöneticisi cihazlarda, Intune şirket portalı pencere öğesine Web uygulaması için bir kısayol eklenir ve pencere öğesinin Kullanıcı tarafından el ile sabitlenilmesi gerekir. Windows cihazlarında, Web uygulamasının bir kısayolu Başlat menüsüne yerleştirilir.
 
 > [!Note]
 > Web uygulamalarını başlatmak için kullanıcının cihazında bir tarayıcı yüklü olmalıdır. 
+
+> [!Note]
+> Android Kurumsal cihazları için bkz. [yönetilen Google Play web bağlantıları](apps-add-android-for-work.md#managed-google-play-web-links)
 
 ## <a name="add-a-web-app-to-intune"></a>Intune’a bir web uygulaması ekleme
 Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
@@ -62,8 +65,6 @@ Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
 7. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.
 
 > [!Note]
-> Android cihazlarına atanmış web uygulamalarını görüntüleyebilmek için kullanıcıların giriş ekranlarına Intune pencere öğesini eklemeleri gerekir.
->
 > Şu anda Intune web uygulamalarının iOS cihazlara dağıtımı, yönetim profiliyle ilişkili ve el ile kaldırılamaz. Intune portalında dağıtım türünü **Kaldır** seçeneğine değiştirerek web uygulamasının otomatik olarak kaldırılmasını sağlayabilirsiniz. Ancak uygulama ataması amacını **Kaldır** seçeneğine değiştirmeden dağıtımı kaldırırsanız, cihazın kaydı Intune’dan kaldırılana kadar web uygulaması cihazda kalır.
 
 Son kullanıcılar, Web uygulamasını seçip **tarayıcıda aç**seçeneğini belirleyerek web uygulamalarını doğrudan Windows Şirket portalı uygulamasından başlatabilir. Yayınlanan Web URL 'SI doğrudan Web tarayıcısında açılır. 
