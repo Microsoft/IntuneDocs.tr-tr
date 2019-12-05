@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549528"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74828826"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
 
@@ -27,7 +27,7 @@ Bu iletiyi, raporumuz kuruluşunuzdaki bir veya daha fazla ilkeyi Intune için A
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Son kullanıcılarınıza ve yardım masasına bu değişikliğin haberdar olmasına izin verin. Intune ile ilgili sorulara yönelik bir kanal oluşturmak için [Şirket portalı destek bilgileri işlevselliğini](../apps/company-portal-app.md#support-information) kullanabilirsiniz.
 
-#### <a name="additional-information"></a>Ek bilgi
+#### <a name="additional-information"></a>Ek Bilgiler
 https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 
 
@@ -119,8 +119,8 @@ Android Cihaz Yöneticisi (bazen "eski" Android yönetimi ve Android 2,2 ile kul
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
 Google tarafından yapılan bu değişiklikler nedeniyle Intune kullanıcıları aşağıdaki yollarla etkilenecektir:  
-- Intune, 2020 yaz aracılığıyla yalnızca Android 10 ve üzeri (Android Q olarak da bilinir) çalıştıran cihaz yönetici tarafından yönetilen Android cihazları için destek sağlayabilecektir. Bu tarih, Android 'in bir sonraki ana sürümünün yayımlanması beklendiğinde oluşur.   
-- 2020 yaz sonrasında Android 10 veya üzerini çalıştıran Cihaz Yöneticisi tarafından yönetilen cihazlar artık tamamen yönetimeyecektir.       
+- Intune, yalnızca S2 CY2020 aracılığıyla Android 10 ve üzeri çalıştıran cihaz yönetici tarafından yönetilen Android cihazları için tam destek sağlayabilecektir. Cihaz Yöneticisi-bu süre sonunda Android 10 veya sonraki sürümleri çalıştıran yönetilen cihazlar tamamen yönetilemez. Özellikle, etkilenen cihazlar yeni parola gereksinimleri almaz.
+    - Bu zaman diliminde, Intune 'un Knox platformuyla tümleştirilmesi aracılığıyla genişletilmiş destek sağlandığı için Samsung KNOX cihazları etkilenmez. Bu, daha fazla zaman Cihaz Yöneticisi yönetimi 'nin geçişini planlamak için daha fazla zaman sağlar.    
 - Android 10 ' un altında kalan Android sürümlerinde kalan Cihaz Yöneticisi ile yönetilen Android cihazları etkilenmez ve cihaz yöneticisiyle tamamen yönetilmeye devam edebilir.    
 - Android 10 ve üzeri çalıştıran tüm cihazlarda, Google, Şirket Portalı gibi cihaz yönetici yönetim aracılarının cihaz tanımlayıcı bilgilerine erişmesine olanak sağlar. Bu kısıtlama, bir cihaz Android 10 veya sonraki bir sürüme güncelleştirildikten sonra aşağıdaki Intune özelliklerini etkiler:  
     - VPN için ağ erişim denetimi artık çalışmayacak.   
@@ -130,7 +130,7 @@ Google tarafından yapılan bu değişiklikler nedeniyle Intune kullanıcıları
         > Bu, yalnızca Android 10 ve üzeri cihazlarda cihaz yöneticisi tarafından yönetilen cihazları etkiler ve Android Enterprise olarak yönetilmekte olan cihazları etkilemez. 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-2020 tarihinde gelen işlevselliğin azalmasına engel olmak için şunları öneririz:
+S3 CY2020 ' de gelen işlevselliğin azalmasını önlemek için şunları yapmanızı öneririz:
 - Cihaz Yöneticisi yönetimine yeni cihaz eklemeyin.
 - Bir cihazın Android 10 güncelleştirmesi alması bekleniyorsa, cihazı Cihaz Yöneticisi yönetiminden Android kurumsal yönetim ve/veya uygulama koruma ilkelerine geçirin.
 

@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199278"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832569"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme
 
@@ -34,7 +34,7 @@ Sorun gidermeye başlamadan önce bazı temel bilgilerin toplanması önemlidir.
 
 Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 
-- Tam hata iletisi nedir?
+- Hata iletisinde tam olarak ne yazıyor?
 - Hata iletisini nerede görüyorsunuz?
 - Sorun ne zaman başladı? Kayıt hiç çalıştı mı?
 - Hangi platform (Android, iOS, Windows) soruna sahip?
@@ -111,7 +111,7 @@ Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kayd
 3. Bu kullanıcıya atamak istediğiniz lisansın konumunu **Açık** konumuna geçirin ve ardından **Kaydet**' i seçin.
 4. Cihazı yeniden kaydedin.
 
-### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Bu hizmet desteklenmiyor. Kayıt Ilkesi yok.
+### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Bu Hizmet desteklenmiyor. Kayıt Ilkesi yok.
 
 **Neden**: Intune 'Da BIR Apple MDM anında iletme sertifikası yapılandırılmamış veya sertifika geçersiz. 
 
@@ -131,15 +131,15 @@ Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kayd
  > [!NOTE]
     > Bu hata, Kullanıcı cihaz kaydı izin verilecek şekilde yapılandırıldığından daha fazla cihaz kaydetmeye çalışıyorsa de oluşabilir. Bu adımlar sorunu gidermezse, aşağıda **ulaşılan cihaz sınırına** yönelik çözüm adımlarını izleyin.
 
-### <a name="device-cap-reached"></a>Cihaz sınırına ulaşıldı
+### <a name="device-cap-reached"></a>Cihaz Sınırına Ulaşıldı
 
 **Neden:** Kullanıcı cihaz kayıt sınırından daha fazla cihaz kaydetmeye çalışır.
 
 #### <a name="resolution"></a>Çözüm
-1. [Intune yönetim portalı](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **cihazları** > **tüm cihazlar**' ı açın ve kullanıcının kaydolduğu cihaz sayısını denetleyin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihazlar** > **tüm cihazlar**' ı seçin ve kullanıcının kaydolduğu cihaz sayısını denetleyin.
     > [!NOTE]
     > Ayrıca, etkilenen kullanıcının [Intune kullanıcı portalında](https://portal.manage.microsoft.com/) oturum açmasını ve kaydolmuş cihazları kontrol etmeniz gerekir. Intune [Kullanıcı portalında](https://portal.manage.microsoft.com/) görünen ancak [Intune yönetim portalında](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)yer alan cihazlar olabilir, bu da cihaz kayıt sınırına doğru sayılır.
-2. **Yönetim** > **mobil cihaz yönetimi** > **kayıt kuralları** ' na gidin > cihaz kayıt sınırını denetleyin. Varsayılan olarak, sınır 15 olarak ayarlanır. 
+2. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **kayıt kısıtlamaları** ' nı seçin > cihaz kayıt sınırı ' nı işaretleyin. Varsayılan olarak, sınır 15 olarak ayarlanır. 
 3. Kaydedilen cihazların sayısı sınıra ulaştıysa, gereksiz cihazları kaldırın veya cihaz kayıt sınırını artırın. Kayıtlı her cihaz bir Intune lisansı kullandığından, önce gereksiz cihazları her zaman kaldırmanız önerilir.
 4. Cihazı yeniden kaydedin.
 
@@ -230,7 +230,7 @@ Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, Intune ka
 #### <a name="resolution"></a>Çözüm
 
 1. Kayıt profilini düzenleyin. Profilde herhangi bir değişiklik yapabilirsiniz. Amaç, profilin değiştirilme saatini güncelleştirmedir.
-2. DEP ile yönetilen cihazları eşitleme: Intune portalını > **yönetici** > **mobil cihaz yönetimi** > **IOS** > **aygıt kayıt programı** > **Şimdi Eşitle**' ye açın. Apple'a bir eşitleme isteği gönderilir.
+2. DEP ile yönetilen cihazları eşitleme: [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde, > **iOS** > iOS **kaydı** > **kayıt programı belirteçleri** ' ni seçin > bir belirteç > **Şimdi Eşitle**' yi seçin. Apple'a bir eşitleme isteği gönderilir.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP kaydı kullanıcı oturum açma sırasında takıldı
 Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, kimlik bilgilerini girdikten sonra ilk kurulum açılır.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9937fc25ffa3dc32c1addbf0acc2516000b055b
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: b957857702de10e10c581364f2c34c869026810d
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390892"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74819753"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
@@ -57,10 +57,10 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
 
 - [Cihaz envanterini görüntüleme](device-inventory.md)
 - Uzak cihaz eylemlerini çalıştırın:
-  - [Devre dışı bırak](devices-wipe.md#retire)
+  - [Devre Dışı Bırak](devices-wipe.md#retire)
   - [Silme](devices-wipe.md#wipe)
   - [Uzaktan kilitleme](device-remote-lock.md)
-  - [Geçiş kodunu sıfırla](device-passcode-reset.md)
+  - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
   - [Etkinleştirme Kilidini Atlama](device-activation-lock-bypass.md) (yalnızca iOS)
   - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
   - [Kayıp modu](device-lost-mode.md) (yalnızca iOS)
@@ -69,6 +69,7 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
   - [Windows 10 PIN sıfırlama](device-windows-pin-reset.md)
   - [Android için uzaktan denetim](teamviewer-support.md)
   - [Cihazı eşitleme](device-sync.md)
+  - [Cihazı yeniden adlandırma](device-rename.md)
   - [Özel bildirim gönderme](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
   - [BitLocker anahtar döndürme](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (yalnızca Windows)
 

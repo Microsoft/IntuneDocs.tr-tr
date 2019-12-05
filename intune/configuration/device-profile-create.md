@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: b1d6b88b2ff6404f6c60a1c27c167c0721fa82bf
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390881"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832586"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
@@ -39,7 +39,7 @@ Bu makalede:
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Aşağıdaki seçenekleriniz vardır:
+2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Aşağıdaki seçenekler mevcuttur:
 
     - **Genel bakış**: profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar.
     - **Yönetin**: cihaz profilleri oluşturun, profil içinde çalıştırılacak özel [PowerShell betikleri](../apps/intune-management-extension.md) yükleyin ve [esım](esim-device-configuration.md)kullanarak cihazlara veri planları ekleyin.
@@ -52,7 +52,7 @@ Bu makalede:
    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
    - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:  
 
-       - **Android**
+       - **Outlook Web Access (OWA)**
        - **Android kurumsal**
        - **iOS/ıpados**
        - **macOS**
@@ -105,7 +105,7 @@ Kapsam etiketleri ve yapabilecekleriniz hakkında daha fazla bilgi için bkz. [D
 
 ## <a name="applicability-rules"></a>Uygulanabilirlik kuralları
 
-Şunun için geçerlidir:
+Şunlara uygulanır
 
 - Windows 10 ve üzeri
 
@@ -134,7 +134,7 @@ Bu senaryolara yaklaşımak için şunları yapın:
 
 Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlevi görür ve yalnızca ölçütlerinizi karşılayan cihazları hedefleyin.
 
-### <a name="add-a-rule"></a>Kural Ekle
+### <a name="add-a-rule"></a>Kural ekleme
 
 1. **Uygulanabilirlik kuralları**' nı seçin. **Kural**, **özellik**ve **işletim sistemi sürümünü**seçebilirsiniz:
 
@@ -154,7 +154,7 @@ Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlev
 
 4. Değişikliklerinizi kaydetmek için **Ekle** ' yi seçin.
 
-## <a name="refresh-cycle-times"></a>Yenileme döngüsü süreleri
+## <a name="refresh-cycle-times"></a>Yenileme döngü süreleri
 
 Intune, yapılandırma profillerinin güncelleştirmelerini denetlemek için farklı yenileme döngüleri kullanır. Cihaz yakın zamanda kaydedildiyse, iade etme daha sık çalışır. [İlke ve profil yenileme döngüleri](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) tahmini yenileme zamanlarını listeler.
 
@@ -180,11 +180,13 @@ Profiller oluştururken aşağıdaki önerileri göz önünde bulundurun:
 
 - Kullanıcı ilkelerini cihaz ilkelerinden ayırın.
 
-  Örneğin, [Intune 'da Yönetim Şablonları](administrative-templates-windows.md) yüzlerce ADMX ayarı vardır. Bu şablon, bir ayarların kullanıcılar veya cihazlar için geçerli olup olmadığını gösterir. Yönetici şablonları oluştururken, kullanıcı ayarlarınızı bir kullanıcılar grubuna atayın ve cihaz ayarlarınızı bir cihaz grubuna atayın.
+  Örneğin, [Intune 'da Yönetim Şablonları](administrative-templates-windows.md) yüzlerce ADMX ayarı vardır. Bu şablonlar, bir ayarların kullanıcılar veya cihazlar için geçerli olup olmadığını gösterir. Yönetici şablonları oluştururken, kullanıcı ayarlarınızı bir kullanıcılar grubuna atayın ve cihaz ayarlarınızı bir cihaz grubuna atayın.
 
   Aşağıdaki görüntüde kullanıcılara uygulanabilecek ve/veya cihazlara uygulanabilecek bir ayarın örneği gösterilmektedir:
 
   ![Kullanıcı ve cihazlar için geçerli olan Intune yönetici şablonu](./media/device-profile-create/setting-applies-to-user-and-device.png)
+
+- Her kısıtlayıcı ilke oluşturduğunuzda, bu değişikliği kullanıcılarınıza iletişim kurun. Örneğin, geçiş kodu gereksinimini 4 karakterden 6 karaktere değiştiriyorsanız, ilke atamadan önce kullanıcılarınızın bunu bilmesini sağlayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

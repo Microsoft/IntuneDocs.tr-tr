@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564390"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74819784"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -57,7 +57,7 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 > [!Note]  
 > Donanım ve yazılım envanteri, Intune hizmetinde her 7 günde bir yenilenir.
 
-|ayrıntılarını|Description|Platfveyam| 
+|Ayrıntı|Description|Platfveyam| 
 |--------------|----------------------|----|  
 |Ad|Cihazın adı.|Windows, iOS|
 |Yönetim adı|Yalnızca konsolda kullanılan cihaz adı. Bu adın değiştirilmesi, cihazdaki adı değiştirmez.|Windows, iOS|
@@ -67,7 +67,7 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 |Paylaşılan cihaz|**Evet** ise cihaz birden fazla kullanıcı tarafından paylaşılır.|Windows, iOS|
 |Kullanıcı onaylı kayıt|Yanıt **Evet**ise, cihazın cihazdaki belirli güvenlik ayarlarını yönetmesine olanak tanıyan Kullanıcı onaylı kaydı vardır.|Windows, iOS|
 |İşletim sistemi|Cihazda kullanılan işletim sistemi.|Windows, iOS|
-|İşletim sistemi sürümü|Cihazdaki işletim sisteminin sürümü.|Windows, iOS|
+|İşletim sistemi sürümü|Cihazdaki işletim sistemi sürümü.|Windows, iOS|
 |İşletim sistemi dili|Cihazdaki işletim sisteminin dil kümesi.|Windows, iOS|
 |Yapı numarası|İşletim sisteminin yapı numarası.|Android|
 |Güvenlik Düzeltme eki düzeyi|Cihaz için güvenlik düzeltme eki düzeyi.|Android|
@@ -77,7 +77,7 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 |MEID|Cihazın mobil ekipman tanımlayıcısı.|Windows, iOS, Android|
 |Üretici|Cihazın üreticisi.|Windows, iOS, Android|
 |Model|Cihazın modeli.|Windows, iOS, Android|
-|Telefon numarası|Cihaza atanan telefon numarası.|Windows, iOS, Android|
+|Telefon numarası|Cihaza atanan telefon numarası.|Windows, iOS, Android *|
 |Abone operatör|Cihazın kablosuz operatörü.|Windows, iOS, Android|
 |Hücresel teknoloji|Cihaz tarafından kullanılan radyo sistemi.|Windows, iOS, Android|
 |Wi-Fi MAC|Cihazın Ortam Erişim Denetimi adresi.|Windows, iOS, Android|
@@ -91,9 +91,9 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 |EAS etkin|**Evet** ise cihaz Exchange posta kutusu ile eşitlenir.|Windows, iOS, Android|
 |EAS etkinleştirme kimliği|Cihazın Exchange ActiveSync tanımlayıcısı.|Windows, iOS, Android|
 |Denetimli|**Evet** ise yöneticiler cihaz üzerinde gelişmiş denetime sahiptir.|Windows, iOS, Android|
-|Memiştir|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
+|Şifreli|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
 
-
+Android 'de, tam olarak yönetilen ve adanmış cihazlar gibi Google Policy Manager ile kullanılamaz \*
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Intune ile [cihazlarınızı yönetmek](device-management.md) için başka neler yapabileceğinizi görün.

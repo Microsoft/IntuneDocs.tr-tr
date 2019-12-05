@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a7e58fc0ceafe428646b631c55c42a6d2b119e4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712207"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832668"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -46,6 +46,8 @@ ms.locfileid: "73712207"
 > Silme eylemi, Kullanıcı kaydıyla kaydedilen iOS cihazları için kullanılamaz.
 
 **Kayıt durumu ve kullanıcı hesabını koru** seçeneği yalnızca Windows 10 sürüm 1709 veya sonraki sürümlerde kullanılabilir.
+
+**Korumalı silme gerçekleştir** seçeneği, cihazı kapatarak Temizleme eyleminin atlalanamadığından emin olur. Korumalı silme işlemi başarılı olana kadar cihazı sıfırlamaya çalışmaya devam edecektir. Bazı yapılandırmalarda bu eylem, cihazın yeniden başlatılamamasından bırakabilir.
 
 MDM ilkeleri, cihazın Intune’a bir sonraki bağlanışında yeniden uygulanır.
 
@@ -76,7 +78,7 @@ Cihaz açık ve bağlı olduğu sürece, **Silme** eylemi 15 dakikadan kısa sü
 
 ## <a name="retire"></a>Devre dışı bırakma
 
-**Kullanımdan kaldırma** eylemi; yönetilen uygulama verilerini (varsa), ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Cihaz Intune yönetiminden kaldırılır. Bu durum cihazın bir sonraki kontrol amaçlı iletişiminde, uzaktan **Kullanımdan kaldırma** eylemi alındığında gerçekleşir. Cihaz, cihaz iade edilene kadar Intune 'da görünmeye devam eder. Eski cihazları hemen kaldırmak istiyorsanız, bunun yerine [silme eylemini](devices-wipe.md#delete-devices-from-the-intune-portal) kullanın.
+**Kullanımdan kaldırma** eylemi; yönetilen uygulama verilerini (varsa), ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Cihaz Intune yönetiminden kaldırılır. Bu durum cihaz iade etme işlemi gerçekleştirdiğinde ve **Kullanımdan kaldırma** uzak eylemini aldığında ortaya çıkar. Cihaz, cihaz iade edilene kadar Intune 'da görünmeye devam eder. Eski cihazları hemen kaldırmak istiyorsanız, bunun yerine [silme eylemini](devices-wipe.md#delete-devices-from-the-intune-portal) kullanın.
 
 **Kullanımdan kaldırma**, kullanıcının kişisel verilerini cihazda bırakır.  
 
@@ -88,7 +90,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 |-------------|-------|
 |Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket Portalı kullanılarak yüklenen uygulamalar:** Yönetim profiline sabitlenmiş uygulamalar için tüm uygulama verileri ve uygulamalar kaldırılır. Buna önceden App Store'dan yüklenmiş ve daha sonra şirket uygulaması olarak yönetilen uygulamalar dahildir. <br /><br /> **Mobil uygulama yönetimini kullanan ve App Store 'dan yüklenen Microsoft uygulamaları:** Şirket Portalı tarafından yönetilmeyen uygulamalarda, uygulama yerel depolama alanındaki mobil uygulama yönetimi (MAM) şifrelemesi tarafından korunan şirket uygulama verileri kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz. Kişisel uygulamalar ve bunların verileri kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
-|Wi-Fi ve VPN profili ayarları|Kaldırılır.|
+|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Yönetim profili kaldırılır.|
 |E-posta|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
@@ -98,13 +100,13 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 
 |Veri türü|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
-|Web bağlantıları|Kaldırılır.|Kaldırılır.|
+|Web bağlantıları|Kaldırıldı.|Kaldırıldı.|
 |Yönetilmeyen Google Play uygulamaları|Uygulamalar ve veriler yüklü kalır. <br /> <br />Yerel depolama alanında Mobil Uygulama Yönetimi (MAM) şifrelemesi ile korunan şirket uygulaması verileri kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz. |Uygulamalar ve veriler yüklü kalır. <br /> <br />Yerel depolama alanında Mobil Uygulama Yönetimi (MAM) şifrelemesi ile korunan şirket uygulaması verileri kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz.|
 |Yönetilmeyen iş kolu uygulamaları|Uygulamalar ve veriler yüklü kalır.|Uygulamalar kaldırılır ve uygulamada yerel olarak bulunan veriler kaldırılır. Uygulama dışındaki (örneğin, SD kartındaki) hiçbir veri kaldırılmaz.|
 |Yönetilen Google Play uygulamaları|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (örneğin, SD kartında) Mobil Uygulama Yönetimi (MAM) şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz.|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (örneğin, SD kartında) MAM şifrelemesi ile korunan veriler şifrelenmiş durumda kalır ama kaldırılmaz.|
 |Yönetilen iş kolu uygulamaları|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (örneğin, SD kartında) MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz.|Uygulama verileri kaldırılır. Uygulama kaldırılmaz. Uygulama dışında (örneğin, SD kartında) MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
-|Wi-Fi ve VPN profili ayarları|Kaldırılır.|Kaldırılır.|
+|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikaları iptal edilir ama kaldırılmaz.|Sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Cihaz Yöneticisi ayrıcalığı iptal edilir.|Cihaz Yöneticisi ayrıcalığı iptal edilir.|
 |E-posta|Yok (E-posta profilleri Android cihazları tarafından desteklenmez)|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|
@@ -116,7 +118,7 @@ Bir Android iş profili cihazdan şirket verilerinin kaldırılması, cihazdaki 
 
 ### <a name="android-enterprise-kiosk-devices"></a>Android kurumsal bilgi noktası cihazları
 
-Bilgi noktası cihazlarını yalnızca silebilirsiniz. Android bilgi noktası cihazlarını kullanımdan kaldıramazsınız.
+Yalnızca bilgi noktası cihazlarını silebilirsiniz. Android bilgi noktası cihazlarını kullanımdan kaldıramazsınız.
 
 
 ### <a name="macos"></a>Mac OS
@@ -124,7 +126,7 @@ Bilgi noktası cihazlarını yalnızca silebilirsiniz. Android bilgi noktası ci
 |Veri türü|Mac OS|
 |-------------|-------|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
-|Wi-Fi ve VPN profili ayarları|Kaldırılır.|
+|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|MDM üzerinden dağıtılan sertifikalar kaldırılır ve iptal edilir.|
 |Yönetim aracısı|Yönetim profili kaldırılır.|
 |Outlook|Koşullu erişim etkinse, cihaz yeni e-posta almaz.|
@@ -136,7 +138,7 @@ Bilgi noktası cihazlarını yalnızca silebilirsiniz. Android bilgi noktası ci
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|EFS tarafından korunan dosyalar için anahtarlar iptal edilir. Kullanıcı dosyaları açamaz.|Şirket uygulamaları kaldırılmaz.|Başlangıçta Şirket Portalı üzerinden yüklenen uygulamalar kaldırılır. Şirket uygulama verileri kaldırılır.|Uygulamalar kaldırılır. Dışarıdan yükleme anahtarları kaldırılır.<br>Windows 10 sürüm 1703 (Creators Update) ve üzerinde Office 365 ProPlus uygulamaları kaldırılmaz. Kaydı kaldırılan cihazlardaki Intune yönetim uzantısıyla yüklenmiş olan Win32 uygulamaları kaldırılmaz. Yöneticiler, KCG cihazlarına Win32 uygulamalarını sunmamak amacıyla bunları atamadan hariç tutma seçeneğini değerlendirebilir.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
-|Wi-Fi ve VPN profili ayarları|Kaldırılır.|Kaldırılır.|Not supported.|Kaldırılır.|
+|Wi-Fi ve VPN profili ayarları|Kaldırıldı.|Kaldırıldı.|Not supported.|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|Sertifikalar kaldırılır ve iptal edilir.|Not supported.|Sertifikalar kaldırılır ve iptal edilir.|
 |E-posta|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir.|Not supported.|Intune üzerinden sağlanan e-posta profilleri kaldırılır. Cihazın önbelleğindeki e-postalar silinir.|EFS'nin etkinleştirildiği e-postalar kaldırılır. Bunlar, Windows için Posta uygulamasındaki e-postalar ve eklerdir. Intune tarafından sağlanan posta hesaplarını kaldırır.|
 |Azure AD'den ayrılma|Hayır.|Hayır.|Azure AD kaydı kaldırılır.|Azure AD kaydı kaldırılır.|
@@ -164,7 +166,7 @@ Cihazları Intune portalından kaldırmak istiyorsanız, bunları belirli bir ci
 Intune’u etkin olmayan, eski veya yanıt vermeyen cihazları otomatik olarak silmek üzere yapılandırabilirsiniz. Bu temizleme kuralları, cihaz kayıtlarınızın güncel kalması için cihazınızı kesintisiz bir şekilde izler. Bu şekilde silinen cihazlar, Intune yönetiminden kaldırılır.
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** > **Cihaz temizleme kuralları** > **Evet**’i seçin.
-3. **Şu kadar gün boyunca kontrol amaçlı iletişim kurmayan cihazları sil** kutusuna 30 ile 270 arasında bir sayı girin.
+3. **Bu çok gün için iade edilmemiş cihazlarda silme** kutusuna 30 ile 270 arasında bir sayı girin.
 4. **Kaydet**’i seçin.
 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/04/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199182"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832610"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'deki cihaz ilkeleri ve profillerle ilgili yaygın sorular, sorunlar ve çözümler
 
@@ -50,7 +50,9 @@ Bazı ek öneriler:
 
 Intune, cihaza Intune hizmetini iade etme konusunda bilgilendirir. Bildirim süreleri, en fazla birkaç saate kadar değişir. Bu bildirim süreleri de platformlar arasında farklılık gösterir.
 
-Bir cihaz, ilk bildirimden sonra ilkeyi veya profili almak için iade vermezse, Intune üç denemeden daha fazlasını yapar. Kapalı veya bir ağa bağlı olmayan gibi çevrimdışı bir cihaz bildirimleri alamayabilir. Bu durumda cihaz, ilke veya profili, şu tarihte **Tahmini** olan Intune hizmeti ile bir sonraki zamanlanmış iadede alır:
+Bir cihaz, ilk bildirimden sonra ilkeyi veya profili almak için iade vermezse, Intune üç denemeden daha fazlasını yapar. Kapalı veya bir ağa bağlı olmayan gibi çevrimdışı bir cihaz bildirimleri alamayabilir. Bu durumda cihaz, ilkeyi veya profili Intune hizmeti ile bir sonraki zamanlanmış iadede alır. Aynı şekilde, uyumlu olmayan bir duruma geçiş yapan cihazlar dahil, uyumsuzluğun denetimi için de geçerlidir.
+
+**Tahmini** Sıklık:
 
 | Platfveyam | Döngü süresi|
 | --- | --- |
@@ -61,7 +63,7 @@ Bir cihaz, ilk bildirimden sonra ilkeyi veya profili almak için iade vermezse, 
 | Windows Phone | Her 8 saatte bir |
 | Windows 8.1 | Her 8 saatte bir |
 
-Cihaz son zamanlarda kaydedildiyse, uyumluluk ve yapılandırma iade etme işlemi daha sık çalışır ve bu da şu tarihte **tahmin** edilir:
+Cihaz son zamanlarda kaydedildiyse, uyumluluk, uyumsuzluk ve yapılandırma iadede daha sık çalışır ve bu da **tahmin** edilir:
 
 | Platfveyam | Sıklık |
 | --- | --- |
@@ -118,18 +120,18 @@ Bir profili sildiğinizde veya bir cihazı profilin bulunduğu bir gruptan kald�
   
     - Mobil cihazların kilidini açmak için bir parola gerektir
     - Basit parolalara izin ver
-    - Minimum parola uzunluğu
+    - Parola uzunluğu alt sınırı
     - Gerekli parola türü
-    - Parola geçerlilik süresi (gün)
+    - Parola zaman aşımı (gün sayısı)
     - Parola geçmişini anımsa
     - Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı
-    - Parola gerekmeden önce etkin olmama süresi (dakika)
+    - Parola istenmeden önce geçen işlem yapılmayan dakika sayısı
     - Gerekli parola türü – minimum karakter kümesi sayısı
     - Kameraya izin ver
     - Cihazda şifrelemeyi gerektir
     - Çıkarılabilir depolama birimine izin ver
     - Web tarayıcısına izin ver
-    - Uygulama depolamaya izin ver
+    - Uygulama mağazasına izin ver
     - Ekran yakalamaya izin ver
     - Coğrafi konuma izin ver
     - Microsoft Hesabına izin ver

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6b12bb0066c37eb470065a169a3ad7866c69a17
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 11b93d41ac09f637d6c75a3f2f4b7f4213cecec7
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503272"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74819770"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Windows cihazları için Intune kayıt yöntemi özellikleri
 [!INCLUDE[azure_portal](../includes/azure_portal.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "72503272"
 
 | **Yetenekler** | **[Azure AD'ye katılanlar](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD'ye Autopilot ile katılanlar (Kullanıcı sürümlü mod)](enrollment-autopilot.md)** |**[Azure AD'ye Autopilot ile katılanlar (Otomatik dağıtım modu)](enrollment-autopilot.md)** |**[Toplu](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[KCG](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[Ortak yönetim](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Conditional Access                                      |![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|
+|Conditional Access                                      |![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)\*\*|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|
 |Kullanıcılar cihazla ilişkilendirilir                    |![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|
 |Azure AD Premium gerektirir                               |![X](./media/enrollment-method-capab/xmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|
 |Cihaz CA tarafından korunan kaynakları değerlendirebilir             |![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|
@@ -53,7 +53,9 @@ ms.locfileid: "72503272"
 |Hibrit Azure AD'ye katılmadan sonra otomatik kaydı destekler|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|
 |Hibrit Azure AD'ye katılmadan sonra otomatik kaydı destekler       |![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![Onay işareti](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|
 
-Configuration Manager \* Istemci uygulaması iş yükleri, Intune pilot veya Intune 'a taşınmalıdır.
+\* Istemci uygulamaları iş yüklerinin Configuration Manager Intune pilot 'a veya Intune 'a taşınması gerekir.
+
+\** [cihaz, Windows 10 1803 + dışında koşullu erişim için engellenir.](device-enrollment-manager-enroll.md)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

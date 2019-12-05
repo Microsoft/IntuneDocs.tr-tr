@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5e52d1967ff6f5cf97334c099bc2b5b854ae87c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c83b47e70a6ef7f5eedb032846398dd669379c5c
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502691"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74819738"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune için ABD devlet uç noktaları
 
@@ -40,20 +40,40 @@ Yönetilen cihazlar, **Tüm Kullanıcıların** güvenlik duvarları üzerinden 
 
 Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hizmetler listelenir:
 
-|**Bkz**|**IP adresi**|
+|**Uç noktası**|**IP adresi**|
 |---------------------|-----------|
-|*. manage.microsoft.us | 52.243.26.209 <br> 52.247.173.11 <br> 52.227.183.12 <br>52.227.180.205 <br> 52.227.178.107 <br> 13.72.185.168 <br> 52.227.173.179 <br> 52.227.175.242 <br> 13.72.39.209 <br> 52.243.26.209 <br> 52.247.173.11 |
+|*.manage.microsoft.us | 52.243.26.209 <br> 52.247.173.11 <br> 52.227.183.12 <br>52.227.180.205 <br> 52.227.178.107 <br> 13.72.185.168 <br> 52.227.173.179 <br> 52.227.175.242 <br> 13.72.39.209 <br> 52.243.26.209 <br> 52.247.173.11 |
 | enterpriseregistration.microsoftonline.us | 13.72.188.239 <br> 13.72.55.179 |
 
 ## <a name="us-government-customer-designated-endpoints"></a>ABD devlet müşteri tarafından belirlenen uç noktalar:
-- Azure portal: https: \//Portal. Azure. us/ 
-- Office 365: https: \//Portal. office365. us/ 
-- Intune Şirket Portalı: https: \//Portal. Manage. Microsoft. us/ 
+- Azure portal: https:\//portal.azure.us/ 
+- Office 365: https:\//portal.office365.us/ 
+- Intune Şirket Portalı: https:\//portal.manage.microsoft.us/ 
 
 ## <a name="partner-service-endpoints-that-intune-depends-on"></a>Intune 'un bağımlı olduğu iş ortağı hizmeti uç noktaları:
-- AAD Eşitleme hizmeti: https: \//SyncService. gov. us. microsoftonline. com/DirectoryService. svc
-- EVO STS: https: \//Login. microsoftonline. us
-- Dizin proxy 'Si: https: \//directoryproxy. MicrosoftAzure. us/DirectoryProxy. svc
-- AAD Graf: https: \//Directory. MicrosoftAzure. us ve https: \//Graph. MicrosoftAzure. us
-- MS Graph: https: \//Graf. Microsoft. us
-- ADRS: https: \//enterpriseregistration. microsoftonline. us
+- AAD Eşitleme hizmeti: https:\//syncservice.gov.us.microsoftonline.com/DirectoryService.svc
+- EVO STS: https:\//login.microsoftonline.us
+- Dizin proxy 'Si: https:\//directoryproxy.microsoftazure.us/DirectoryProxy.svc
+- AAD grafiği: https:\//directory.microsoftazure.us ve https:\//graph.microsoftazure.us
+- MS Graph: https:\//graph.microsoft.us
+- ADRS: https:\//enterpriseregistration.microsoftonline.us
+
+## <a name="windows-push-notification-services"></a>Windows anında Iletme Bildirim Hizmetleri
+Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune tarafından yönetilen cihazlarda, cihaz eylemleri ve diğer anında etkinlikler için Windows PUsh Bildirim Hizmetleri (WNS) gereklidir. Daha fazla bilgi için bkz. [WNS trafiğini desteklemek Için kurumsal güvenlik duvarı ve proxy yapılandırması](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+
+## <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
+
+|**İçin kullanılan**|**Ana bilgisayar adı (IP adresi/alt ağ)**|**Protokolü**|**Bağlantı noktası**|
+|------------|-----------|------------|-----------|
+|Apple sunucularından içerik alma ve görüntüleme|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|istemcileri iki protokolü de kullandığından, proxy sunucusu hem|80|
+|APNS sunucularıyla iletişim|#-courier.push.apple.com<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|TCP|5223 ve 443|
+|Internet, iTunes Mağazası, macOS App Store, iCloud, mesajlaşma vb. gibi çeşitli işlevler|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 veya 443|
+
+Daha fazla bilgi için bkz.:
+
+- [Apple yazılım ürünleri tarafından kullanılan TCP ve UDP bağlantı noktaları](https://support.apple.com/HT202944)
+- [MacOS, iOS ve iTunes Server ana bilgisayar bağlantıları ve iTunes arka plan işlemi hakkında](https://support.apple.com/HT201999)
+- [MacOS ve iOS istemcileriniz Apple anında iletme bildirimleri almıyorsanız](https://support.apple.com/HT203609)
+
+## <a name="next-steps"></a>Sonraki adımlar
+[Microsoft Intune için ağ uç noktaları](intune-endpoints.md)

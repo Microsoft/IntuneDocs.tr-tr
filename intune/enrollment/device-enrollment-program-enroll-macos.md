@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f41caddc7ab9cc09c8d5403f67b6112d58c3ffd
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713544"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832693"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Aygıt Kayıt Programı veya Apple School Manager ile macOS cihazları otomatik olarak kaydedin
 
@@ -61,7 +61,7 @@ Belirteci oluşturmak için Apple portalını kullanabilirsiniz. Cihazları yön
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>1\. Adım Belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** **Ekle** > ' yi seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **macos** > **MacOS kaydı** > **kayıt programı belirteçleri** **Ekle** > ' yi seçin.
 
     ![Bir kayıt programı belirteci alın.](./media/device-enrollment-program-enroll-macos/image01.png)
 
@@ -103,7 +103,7 @@ Belirteci oluşturmak için Apple portalını kullanabilirsiniz. Cihazları yön
 
 Belirtecinizi yüklediğinize göre, cihazlar için kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri**' ni seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **macos** > **MacOS kaydı** > **kayıt programı belirteçleri**' ni seçin.
 2. Bir belirteç seçin, **Profiller**’e ve daha sonra **Profil oluştur**’a tıklayın.
 
     ![Profil oluşturma ekran görüntüsü.](./media/device-enrollment-program-enroll-macos/image04.png)
@@ -165,7 +165,7 @@ Belirtecinizi yüklediğinize göre, cihazlar için kayıt profili oluşturabili
 
 Artık Intune’a cihazlarınızı yönetme izni verildiğine göre, yönetilen cihazlarınızı Intune’da Azure portalında görmek için Intune’u Apple ile eşitleyebilirsiniz.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** ' ni seçin > listede bir belirteç seçin > **cihazlar** > **Eşitle**. Kayıt programı cihazları düğümünün seçili ve eşitleme bağlantısının seçildiği ![ekran görüntüsü.](./media/device-enrollment-program-enroll-macos/image06.png)
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **macos** > **MacOS kaydı** > **kayıt programı belirteçleri** ' ni seçin > > **cihazlarda** bir belirteç seçin > cihazlar **.** Kayıt programı cihazları düğümünün seçili ve eşitleme bağlantısının seçildiği ![ekran görüntüsü.](./media/device-enrollment-program-enroll-macos/image06.png)
 
    Intune, Apple’ın kabul edilebilir kayıt programı trafiği şartlarına uymak için aşağıdaki kısıtlamaları getirir:
    - Tam eşitleme en sık yedi günde bir çalıştırılabilir. Tam eşitleme sırasında Intune, Intune’a bağlı Apple MDM sunucusuna atanan seri numaraların tam güncelleştirilmiş bir listesini alır. Bir Kayıt Programı cihazı, cihaz ataması DEP portalında Apple MDM sunucusundan kaldırılmadan Intune portalından silinirse, tam eşitleme çalıştırılana kadar Intune’a tekrar içeri aktarılmaz.   
@@ -175,7 +175,7 @@ Artık Intune’a cihazlarınızı yönetme izni verildiğine göre, yönetilen 
 
 Cihazların kaydedilmesi için bunlara bir kayıt programı profili atamalısınız.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** ' ni seçin > listeden bir belirteç seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **macos** > **MacOS kaydı** > **kayıt programı belirteçleri** ' ni seçin > listeden bir belirteç seçin.
 2. **Cihazlar** > listeden cihazları seçin > **Profil ata**’yı seçin.
 3. **Profil ata**'nın altında cihazlar için bir profil seçin > **Ata**’ya tıklayın.
 
@@ -183,7 +183,7 @@ Cihazların kaydedilmesi için bunlara bir kayıt programı profili atamalısın
 
 Belirli bir belirteç ile kaydedilen tüm cihazlara uygulanacak varsayılan bir macOs ve iOS profili seçebilirsiniz. 
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz kaydı** > **Apple kaydı** > **kayıt programı belirteçleri** ' ni seçin > listeden bir belirteç seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **macos** > **MacOS kaydı** > **kayıt programı belirteçleri** ' ni seçin > listeden bir belirteç seçin.
 2. **Varsayılan Profil Ayarla**’yı seçin, açılan listeden bir profil seçin ve daha sonra **Kaydet**’e tıklayın. Profil, bu belirteçle kaydedilen tüm cihazlara uygulanacaktır.
 
 ## <a name="distribute-devices"></a>Cihazları dağıtma

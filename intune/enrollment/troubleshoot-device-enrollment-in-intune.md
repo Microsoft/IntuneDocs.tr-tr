@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713498"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832734"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydı sorunlarını giderme
 
@@ -64,7 +64,7 @@ Bu sorunlar, tüm cihaz platformlarında oluşabilir.
 
 Aşağıdaki adımları izleyerek kullanıcıya cihaz sayısı üst sınırını aşan sayıda cihaz atanıp atanmadığını denetleyin:
 
-1. [Microsoft Uç Nokta Yöneticisi Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), cihaz **kaydı** > **Kayıt kısıtlamaları** ' nı **cihaz sınırı kısıtlamaları** > ' nı seçin. **Cihaz sınırı** sütunundaki değeri not alın.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **Kayıt kısıtlamaları** > **cihaz sınırı kısıtlamaları**' nı seçin. **Cihaz sınırı** sütunundaki değeri not alın.
 
 2. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **Kullanıcılar** > **tüm kullanıcılar** ' ı seçin > Kullanıcı > **cihazlarını**seçin. Cihaz sayısını not alın.
 
@@ -374,7 +374,7 @@ Bu sorun şu koşullarda oluşabilir:
 4. Kullanıcıya kayıt işlemini yeniden başlatmasını söyleyin.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>VPP belirtecinde bir şeyin yanlış gidip gitmediğini belirleyin
-1. **Intune** > **Cihaz kaydı** > **Apple kaydı** > **Kayıt programı belirteçleri** > belirteç adı > **Profiller** > profil adı > **Yönet** > **Özellikler**'e gidin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **IOS** > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **profilleri** > profil adı > > **özelliklerini** **Yönet** ' i seçin.
 2. Aşağıdaki gibi bir hata olup olmadığını görmek özellikleri gözden geçirin:
     - Bu belirtecin süresi sona erdi.
     - Bu belirtecin Şirket Portalı lisansları bitti.
@@ -384,13 +384,13 @@ Bu sorun şu koşullarda oluşabilir:
 3. Belirtecin sorunlarını giderin.
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>VPP belirteci tarafından engellenen cihazları belirleme
-1. **Intune** > **Cihaz kaydı** > **Apple kaydı** > **Kayıt programı belirteçleri** > belirteç adı > **Cihazlar**'a giden.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **ios**k > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **cihazları**' nı seçin.
 2. **Profil durumu** sütununu **Engellendi**'ye göre filtreleyin.
 3. **Engellenen** tüm cihazların seri numaralarını not edin.
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>Engellenen cihazları uzaktan silme
 VPP belirteci ile sorunları düzelttikten sonra engellenen cihazları silmeniz gerekir.
-1. **Intune** > **Cihazlar** > **Tüm cihazlar** > **Sütunlar** > **Seri numaraları** > **Uygula**'ya gidin. 
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihazlar** > **tüm cihazlar** > **sütunlar** > **seri numarası** > **Uygula**' yı seçin. 
 2. Engellenen her cihazı **Tüm cihazlar** listesinde seçin, ardından **Sil** > **Evet**'i seçin.
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Kullanıcılara kayıt işlemini yeniden başlatmalarını söyleyin
@@ -414,8 +414,8 @@ Engellenen cihazları sildikten sonra kullanıcılara kayıt işlemini yeniden b
 - Kuruluşunuz, kişisel macOS cihazları engelleyen bazı kayıt kısıtlamaları etkinleştirdiyse, Intune’a [kişisel cihazın seri numarasını el ile eklemelisiniz](corporate-identifiers-add.md#manually-enter-corporate-identifiers).  
 - Cihaz hala Intune’da başka bir kullanıcıya atanmış durumdaysa, eski kullanıcı Şirket Portalı uygulamasını kullanarak cihazı kaldırmamış veya sıfırlamamış demektir. Eski cihaz kaydını Intune’dan kaldırmak için:  
 
-    1. [Azure portalda Intune](https://portal.manage.microsoft.com)’a gidin ve yönetici kimlik bilgilerinizle oturum açın.
-    2. Intune’a gidin > **Cihazlar** > **Tüm cihazlar**’ı seçin.  
+    1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), yönetici kimlik bilgilerinizle oturum açın.
+    2. **Tüm cihazlar** > **cihazları** seçin.  
     3. Kayıt sorunu yaşayan cihazı bulun. Sonuçları daraltmak için cihaz adına veya MAC/Donanım Adresine göre arayın.
     4. Cihazı seçin > **Sil**’e tıklayın. Cihazla ilişkili diğer tüm girişleri silin.  
 

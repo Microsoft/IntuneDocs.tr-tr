@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 59ba9ab5fb0ddeb527ed852de042568920cf38e1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509187"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74819721"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows cihazları için Intune kayıt yöntemleri
 
@@ -42,7 +42,7 @@ Kullanıcılar, aşağıdaki yöntemlerden herhangi birini kullanarak Windows ci
 Bir yönetici otomatik kaydı yapılandırmışsa (Azure AD Premium abonelikleri ile kullanılabilir), kullanıcının kimlik bilgilerini yalnızca bir kez girmesi gerekir. Aksi takdirde, yalnızca MDM kaydı aracılığıyla ayrı olarak kaydolmaları ve kimlik bilgilerini yeniden girmeniz gerekir.  
 - **Yalnızca MDM kaydı** , kullanıcıların var olan bir çalışma grubunu, Active Directory veya Azure Active Directory 'ye KATıLMıŞ bir bilgisayarı Intune 'a kaydetmelerini sağlar. Kullanıcılar, mevcut Windows bilgisayarındaki ayarlardan kaydolmasını ister. Bu yöntem, cihazı Azure Active Directory 'ye kaydetmediği için önerilmez. Koşullu erişim gibi özelliklerin kullanılmasını da engeller.
 - [Azure Active Directory (Azure AD) katılma](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) -cihazı Azure Active Directory ile birleştirir ve KULLANıCıLARıN Azure AD kimlik bilgileriyle Windows 'da oturum açmasını sağlar. Otomatik kayıt etkinse cihaz otomatik olarak Intune 'A kaydedilir. Otomatik kayıt 'nin avantajı, Kullanıcı için tek adımlı bir işlemdir. Aksi takdirde, yalnızca MDM kaydı aracılığıyla ayrı olarak kaydolmaları ve kimlik bilgilerini yeniden girmeniz gerekir. Kullanıcılar bu şekilde, ilk Windows OOBE veya ayarlardan bu şekilde kaydolmalarını ister. Cihaz, Intune 'da şirkete ait cihaz olarak işaretlenir.
-- [Autopilot](enrollment-autopilot.md) -Azure AD JOIN 'i otomatikleştirir ve şirkete ait yeni cihazları Intune 'a kaydeder. Bu yöntem, kullanıma hazır deneyimi basitleştirir ve cihazlara özel işletim sistemi görüntüleri uygulama gereksinimini ortadan kaldırır. Yöneticiler, Autopilot cihazlarını yönetmek için Intune 'u kullanırken, ilkeler, profiller, uygulamalar ve daha fazlasını kaydolduktan sonra yönetebilir.  Dört tür Autopilot dağıtımı vardır: [kendi kendine dağıtım modu](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (kiosks, dijital imza veya paylaşılan cihaz için), [Kullanıcı odaklı mod](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (geleneksel kullanıcılar Için), [White glove] (https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) ) iş ortaklarının veya BT PERSONELININ bir Windows 10 bilgisayarını önceden sağlamasını sağlar tam olarak yapılandırıldığından ve Business-Ready ve [var olan cihazlar için Autopilot] (https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices), Windows 10 ' un en son sürümünü mevcut cihazlarınıza kolayca dağıtmanızı sağlar.
+- [Autopilot](enrollment-autopilot.md) -Azure AD JOIN 'i otomatikleştirir ve şirkete ait yeni cihazları Intune 'a kaydeder. Bu yöntem, kullanıma hazır deneyimi basitleştirir ve cihazlara özel işletim sistemi görüntüleri uygulama gereksinimini ortadan kaldırır. Yöneticiler, Autopilot cihazlarını yönetmek için Intune 'u kullanırken, ilkeler, profiller, uygulamalar ve daha fazlasını kaydolduktan sonra yönetebilir.  Dört tür Autopilot dağıtımı vardır: [kendi kendine dağıtım modu](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (kiosks, dijital imza, veya paylaşılan bir cihaz için), [Kullanıcı odaklı mod](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (geleneksel KULLANıCıLAR için) ve BT personelinin, tam olarak yapılandırılması ve [mevcut cihazlara yönelik](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) olarak Windows 10 ' un en son sürümünü kolayca dağıtmanıza olanak sağlamak için bir Windows 10 PC 'nin ön [sağlamasını sağlar.](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Intune 'da yönetici tabanlı kayıt
 

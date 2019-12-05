@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 0e4f8768129ab035b4a935a900f62ab6f3379edd
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712849"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832639"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -34,7 +34,7 @@ Sorun gidermeye başlamadan önce bazı temel bilgilerin toplanması önemlidir.
 Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 - Kullanıcıya atanan geçerli bir Intune lisansı mı var? Kullanıcıların cihazlarını kaydedebilmesi için gerekli lisansın atanmış olması gerekir.
 - Windows cihaza en son güncelleştirme yüklendi mi? Intune 'daki bazı özellikler yalnızca Windows 'un en son sürümüyle çalışır. Windows Update aracılığıyla kullanılabilen bilinen sorunlara yönelik birçok düzeltme vardır. En son güncelleştirmelerin uygulanması, genellikle bir Windows cihaz kayıt sorununu düzeltir. 
-- Tam hata iletisi nedir?
+- Hata iletisinde tam olarak ne yazıyor?
 - Hata iletisini nerede görüyorsunuz?
 - Sorun ne zaman başladı? Kayıt hiç çalıştı mı? 
 - Hangi platform (Android, iOS, Windows) soruna sahip?
@@ -71,12 +71,12 @@ Bu soruna yönelik birkaç olası çözüm vardır:
 > Bu yöntem, yalnızca etkilenen kullanıcıyı değil, tüm kullanıcılar için cihaz kayıt sınırını artırır.
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-2. **Cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin ve **cihaz sınırı kısıtlamaları**' nı seçin.    
-3. **Cihaz sınırının**değerini artırın. 
+2. **Cihazlar** > **Kayıt kısıtlamaları** ' na gidin ** > (** **cihaz sınırı kısıtlamaları**' nın altında) > ** > ** **Özellikler** (cihaz **sınırının**yanında) >, **cihaz sınırını** (en fazla 15) > **Gözden geçirme + kaydet**' i yükseltin.    
+ 
 
 ##### <a name="check-device-type-restrictions"></a>Cihaz türü kısıtlamalarını denetle
 1. Genel yönetici hesabıyla [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın.
-2. **Cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin ve ardından **cihaz türü kısıtlamaları**' nın altında **varsayılan** kısıtlamayı seçin.    
+2. **Cihazlar** > **Kayıt kısıtlamaları**' na gidin ve ardından **cihaz türü kısıtlamaları**' nın altında **varsayılan** kısıtlamayı seçin.    
 3. **Platformlar**' ı seçin ve ardından Windows Için **ızın ver** **(MDM)** seçeneğini belirleyin.
 
     > [!IMPORTANT]
@@ -97,7 +97,7 @@ Hata 0x801c0003: "Bu kullanıcının kaydetmesine izin verilmiyor. Yeniden deney
 
 #### <a name="resolution"></a>Çözüm
 1. [Azure Portal](https://portal.azure.com/) yönetici olarak oturum açın.    
-2. **Azure Active Directory** > **cihazlar** > **cihaz ayarları**' na gidin.    
+2. **Cihaz ayarlarını** > **Azure Active Directory** > **cihazlar** ' a gidin.    
 3. **Kullanıcıları, cihazları Azure AD 'ye** bir **bütün**olarak birleştirebileceği şekilde ayarlayabilirsiniz.    
 4. Cihazı yeniden kaydedin.   
 
@@ -106,7 +106,7 @@ Hata 0x801c0003: "Bu kullanıcının kaydetmesine izin verilmiyor. Yeniden deney
 Hata 8018000a: "bir sorun oluştu. Cihaz zaten kayıtlı.  Sistem yöneticinize başvurarak 8018000a hata koduyla iletişim sağlayabilirsiniz.
 
 **Neden:** Aşağıdaki koşullardan biri doğru:
-- Farklı bir Kullanıcı cihazı Intune 'a zaten kaydettiniz veya cihazı Azure AD 'ye katıldı. Durumun bu olup olmadığını anlamak için **ayarlar** > **Hesap** > **iş erişimi**' ne gidin. Aşağıdakine benzer bir ileti arayın: "sistemdeki başka bir kullanıcı zaten bir iş veya okula bağlı. Lütfen bu iş veya okul bağlantısını kaldırın ve yeniden deneyin. "    
+- Farklı bir Kullanıcı cihazı Intune 'a zaten kaydettiniz veya cihazı Azure AD 'ye katıldı. Durumun bu olup olmadığını anlamak için, **ayarlar** > **hesaplar** > **iş erişimi**' ne gidin. Aşağıdakine benzer bir ileti arayın: "sistemdeki başka bir kullanıcı zaten bir iş veya okula bağlı. Lütfen bu iş veya okul bağlantısını kaldırın ve yeniden deneyin. "    
 - Configuration Manager istemci Aracısı bilgisayara yüklenir.    
 
 #### <a name="resolution"></a>Çözüm
@@ -115,7 +115,7 @@ Bu sorunu çözmek için aşağıdaki yöntemlerden birini kullanın:
 
 ##### <a name="remove-the-other-work-or-school-account"></a>Diğer iş veya okul hesabını kaldır
 1. Windows oturumunu kapatın ve ardından cihazda kayıtlı veya katılmış olan diğer hesabı kullanarak oturum açın.    
-2. **Ayarlar** > **Hesap** > **iş erişimi**' ne gidin, sonra iş veya okul hesabını kaldırın.
+2. **Ayarlar** > **hesaplar** > **iş erişimi**' ne gidin, sonra iş veya okul hesabını kaldırın.
 3. Windows oturumunu kapatın ve hesabınızı kullanarak oturum açın.    
 4. Cihazı Intune 'a kaydedin veya cihazı Azure AD 'ye katın. 
 
@@ -167,7 +167,7 @@ Bu sorunu gidermek için aşağıdaki yöntemlerden birini kullanın:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Azure 'da MDM otomatik kaydını devre dışı bırakın.
 1. [Azure portalı](https://portal.azure.com/)’nda oturum açın.    
-2. **Azure Active Directory** > **Mobility (MDM ve MAM)**  > **Microsoft Intune**sayfasına gidin.    
+2. **Azure Active Directory** > **Mobility (MDM ve MAM)**  > **Microsoft Intune**gidin.    
 3. **MDM Kullanıcı kapsamını** **none**olarak ayarlayın ve ardından **Kaydet**' e tıklayın.    
      
 ##### <a name="uninstall"></a>Kaldır
@@ -180,7 +180,7 @@ Hata: "yazılım yüklenemiyor, 0x80cf4017."
 **Neden:** İstemci yazılımı güncel değil.
 
 #### <a name="resolution"></a>Çözüm
-1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)oturum açın.    
+1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com) adresinde oturum açın.    
 2. **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
 3. Yükleme paketini kaydedin ve ardından istemci yazılımını yükleme. 
 
@@ -192,7 +192,7 @@ Hata: "hesap sertifikası geçerli değil ve zaman aşımına ermeyebilir, 0x80c
 **Neden:** İstemci yazılımı güncel değil.
 
 #### <a name="resolution"></a>Çözüm
-1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)oturum açın.    
+1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com) adresinde oturum açın.    
 2. **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
 3. Yükleme paketini kaydedin ve ardından istemci yazılımını yükleme.    
 
@@ -205,16 +205,15 @@ Hata: "bir sorun oluştu. Kuruluşunuz bu Windows sürümünü desteklemiyor.  (
 #### <a name="resolution"></a>Çözüm
 Tek başına bir Intune ortamında bu sorunu onarmak için aşağıdaki adımları izleyin: 
  
-1. [Azure Portal](https://portal.azure.com/) yönetici olarak oturum açın.    
-2. Sol taraftaki **Intune** ' u seçin ve ardından **cihaz kaydı** > **Kayıt kısıtlamaları**' na gidin.    
-3. **Cihaz türü kısıtlamaları**' nda **platformlar**' a ve ardından Windows için **ızın ver** ' i **(MDM)** seçin.    
-4. **Kaydet**'e tıklayın.    
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **kayıt kısıtlamaları** ' nı seçer > bir cihaz türü kısıtlayıcı seçin.    
+2.  > **Özellikler** ( **Platform ayarları**' nın yanında) **Windows (MDM)** > **izin ver** ' i seçin.    
+3. **Gözden geçir + kaydet**' e tıklayın.    
  
 Bu sorunu Intune ve Configuration Manager ile karma MDM 'de onarmak için aşağıdaki adımları izleyin: 
 1. Configuration Manager konsolunu açın.    
 2. **Yönetim**' i ve ardından **Cloud Services**' yi seçin.    
 3. **Microsoft Intune aboneliği**' ne sağ tıklayın ve ardından **Windows > platformları Yapılandır**' ı seçin.    
-4. **Windows kaydını etkinleştir** > **Tamam** > **Uygula** ' yı işaretleyin.  
+4. **Windows kaydını** > Etkinleştir > ' in Tamam '**ı**işaretleyin.  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Toplu kayıt sırasında bir kurulum hatası oluştu.
@@ -236,7 +235,7 @@ Okul bilgisayarlarını ayarlama uygulaması hakkında daha fazla bilgi için bk
 ### <a name="auto-mdm-enroll-failed"></a>Otomatik MDM kaydı: başarısız 
 
 Grup ilkesi kullanarak bir Windows 10 cihazını otomatik olarak kaydetmeyi denediğinizde aşağıdaki sorunlarla karşılaşırsınız: 
-- Görev Zamanlayıcı, **Microsoft** > **Windows** > **EnterpriseMgmt**altında, **kayıt istemcisi tarafından aad 'den MDM 'ye otomatik olarak kaydolmak için oluşturulan zamanlamanın** son çalıştırma sonucu şu şekildedir: **olay 76 Otomatik MDM kaydı: başarısız (bilinmeyen Win32 hata kodu: 0x8018002b)**       
+- Görev Zamanlayıcı, **Microsoft** > **Windows** > **EnterpriseMgmt**altında, **kayıt istemcisi tarafından aad 'den MDM 'yi otomatik olarak kaydetmek için oluşturulan zamanlamanın** son çalıştırma sonucu şu şekildedir: **olay 76 otomatik MDM kaydı: başarısız (bilinmeyen Win32 hata kodu: 0x8018002b)**       
 - Olay Görüntüleyicisi, aşağıdaki olay, **uygulamalar ve hizmetler günlükleri/Microsoft/Windows/DeviceManagement-Enterprise-Diagnostics-Provider/admin**altında günlüğe kaydedilir:   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -246,7 +245,7 @@ Grup ilkesi kullanarak bir Windows 10 cihazını otomatik olarak kaydetmeyi dene
     Description: Auto MDM Enroll: Failed (Unknown Win32 Error code: 0x80180002b)
     ```
 **Neden:** Aşağıdaki koşullardan biri doğru: 
-- UPN,. Local (joe@contoso.local gibi) doğrulanmamış veya yönlendirilemeyen bir etki alanı içerir.    
+- UPN,. Local (joe@contoso.localgibi) doğrulanmamış veya yönlendirilemeyen bir etki alanı içerir.    
 - **MDM Kullanıcı kapsamı** **none**olarak ayarlanır. 
 
 #### <a name="resolution"></a>Çözüm
@@ -336,7 +335,7 @@ Bu sorun, genellikle cihaz ilk oturum açma ekranında zaman aşımına uğrarsa
 
 #### <a name="resolution"></a>Çözüm
 
-1. **Windows kayıt** > **cihazları** > **Intune** >  **cihaz kaydı** ' na gidin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **Windows** > **Windows cihazları** > > **cihazları** ' nı seçin.
 2. Sorunu yaşayan cihazı seçin > en sağ taraftaki üç nokta (...) simgesine tıklayın.
 3. **Kullanıcı atamasını Kaldır** ' ı seçin ve işlemin bitmesini bekleyin.
 4. OOBE 'yi yeniden denemeden önce karma Azure AD Autopilot profilinin atandığını doğrulayın.
@@ -373,15 +372,15 @@ Bu sorun genellikle Windows Autopilot cihazlarının oluşturulduğu kuruluş bi
 
 1. **Active Directory Kullanıcıları ve bilgisayarları (dsa. msc)** açın.
 2. **Temsilci denetim**>, karma Azure AD 'ye katılmış bilgisayarları oluşturmak için kullanacağınız kurumsal birimi sağ tıklatın.
-3. **Denetim temsili** sihirbazında, **İleri**' yi seçin  >   > **nesne türleri** **ekleyin**.
+3. **Denetim temsili** sihirbazında, **İleri** ' yi seçerek > **nesne türleri** **ekleyin** > .
 4. **Nesne türleri** bölmesinde, **Tamam**> **bilgisayarlar** onay kutusunu seçin.
 5. **Kullanıcıları**, **bilgisayarları**veya **grupları** seçin bölmesinde **Seçilecek nesne adlarını girin** kutusuna bağlayıcının yüklendiği bilgisayarın adını girin.
-6. Girişinizi doğrulamak için **adları denetle** ' yi seçin ve**sonra**> **Tamam** > .
+6. Girişi doğrulamak için **adları denetle** ' yi seçin > **Tamam** > **İleri**' ye tıklayın.
 7.  > **devretmek için özel bir görev oluştur** ' u seçin.
 8. Klasör onay kutusunda **yalnızca şu nesneleri** seçin ve ardından **bilgisayar nesnelerini**seçin, **Bu klasörde seçili nesneleri oluşturun**ve **Seçili nesneleri bu klasörde silin** onay kutularını işaretleyin.
 9. **İleri**'yi seçin.
 10. **İzinler**altında **tam denetim** onay kutusunu seçin. Bu eylem diğer tüm seçenekleri seçer.
-11. **İleri** > **son**' u seçin.
+11. **Sonraki** > **Son** seçeneğini belirleyin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
