@@ -31,6 +31,8 @@
       href: quickstart-create-custom-role.md
 - name: Öğreticiler
   items:
+    - name: Microsoft Endpoint Manager’da Intune için izlenecek yol
+      href: tutorial-walkthrough-endpoint-manager.md
     - name: Azure portalında Intune’u gözden geçirme
       href: tutorial-walkthrough-intune-portal.md
 - name: Kavramlar
