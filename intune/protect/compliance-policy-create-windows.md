@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11cad62f0fd997610feba51a2d28dcfed5658806
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691699"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946674"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Cihazları Intune ile uyumlu veya uyumsuz olarak işaretlemek için Windows 10 ve üzeri ayarları
 
-Bu makalede, Intune 'da Windows 10 ve üzeri cihazlarda yapılandırabileceğiniz farklı uyumluluk ayarları listelenir ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak BitLocker 'ı gerektirmek, en düşük ve en yüksek işletim sistemi ayarlamak, Microsoft Defender Gelişmiş tehdit koruması (ATP) kullanarak bir risk düzeyi ayarlamak ve daha fazlasını yapmak için bu ayarları kullanın.
+Bu makalede, Intune 'da Windows 10 ve üzeri cihazlarda yapılandırabileceğiniz farklı uyumluluk ayarları listelenir ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları, BitLocker''ı gerektirmek, minimum ve maksimum işletim sistemi ayarlamak, Microsoft Defender Gelişmiş Tehdit Koruması (ATP) kullanarak bir risk düzeyi ayarlamak ve daha fazlası için kullanın.
 
 Bu özellik şu platformlarda geçerlidir:
 
@@ -199,7 +199,7 @@ Yalnızca Windows 10 ve üzeri çalıştıran ortak yönetilen cihazlar için ge
 
 - **Microsoft Defender kötü amaçlı yazılımdan koruma**:  
   - **Yapılandırılmadı** (*varsayılan*)-Intune hizmeti denetlemez ve var olan ayarları değiştirmez.
-  - **Gerektir** -Microsoft Defender kötü amaçlı yazılımdan koruma hizmetini etkinleştirin ve kullanıcıların bunu kapatmasını engelleyin. 
+  - **Gerektir** -Microsoft Defender kötü amaçlı yazılımdan koruma hizmetini etkinleştirin ve kullanıcıların bunu kapatmasını engelleyin.
 
 - **Microsoft Defender kötü amaçlı yazılımdan koruma en düşük sürümü**:  
   Microsoft Defender kötü amaçlı yazılımdan koruma hizmeti 'nin izin verilen en düşük sürümünü girin. Örneğin, şunu girin: `4.11.0.0`. Boş bırakılırsa, Microsoft Defender kötü amaçlı yazılımdan koruma hizmeti 'nin herhangi bir sürümü kullanılabilir.  
@@ -207,10 +207,12 @@ Yalnızca Windows 10 ve üzeri çalıştıran ortak yönetilen cihazlar için ge
   *Varsayılan olarak, sürüm yapılandırılmaz*.
 
 - **Microsoft Defender kötü amaçlı yazılımdan koruma güvenlik zekası güncel**:  
-  Cihazlarda Windows Güvenlik virüsü ve tehdit koruması güncelleştirmelerini denetler.  
+  Cihazlarda Windows Güvenlik virüsü ve tehdit koruması güncelleştirmelerini denetler.
   - **Yapılandırılmadı** (*varsayılan*)-Intune hiçbir gereksinimi zorlamaz.
-  - **Gerektir** -Microsoft Defender Güvenlik Intelligence 'ın güncel olmasını zorunlu kılın. 
+  - **Gerektir** -Microsoft Defender Güvenlik Intelligence 'ın güncel olmasını zorunlu kılın.
 
+  [Defender/Health/SignatureOutOfDate CSP](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   Daha fazla bilgi için bkz. [Microsoft Defender virüsten koruma ve diğer Microsoft Antimalware Için güvenlik zekası güncelleştirmeleri](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 - **Gerçek zamanlı koruma**:  
